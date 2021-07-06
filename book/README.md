@@ -1,2 +1,0 @@
-# Snyk User Documentation
-
