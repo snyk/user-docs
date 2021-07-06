@@ -1,4 +1,2 @@
-# Manually added this page
-
-asdf
+# Not homepage then
 
