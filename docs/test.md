@@ -1,2 +1,0 @@
-# Test page, man
-
