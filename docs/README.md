@@ -1,3 +1,2 @@
 # Snyk User Documentation
 
-
