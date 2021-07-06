@@ -1,4 +1,4 @@
-# Manually added this page.
+# Manually added this page
 
 asdf
 
