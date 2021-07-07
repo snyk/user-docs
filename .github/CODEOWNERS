@@ -1,1 +1,16 @@
-* <enter team name here>
+#           <-- comment
+# foo/bar/  <-- foo/bar/index.ts, and foo/bar/baz/index.ts
+# foo/bar/* <-- foo/bar/index.ts, but *not* foo/bar/baz/index.ts
+
+# The file is interpreted from end to start, only the first match is taken.
+# An entry of "foo/ @team1", then "foo/bar.txt @team2",
+# means that only @team2 is the owner of bar.txt.
+
+# Multiple owners means "request all, but only any one required".
+# Do not use multiple owners.
+
+# Please try and keep the file sorted.
+
+# https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners
+
+* @snyk/user-content
