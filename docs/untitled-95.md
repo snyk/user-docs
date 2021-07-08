@@ -1,4 +1,4 @@
-# Notification and ticketing system integrations – Docs Library
+# Notification and ticketing system integrations
 
 ### Notification and ticketing system integrations
 

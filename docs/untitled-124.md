@@ -1,4 +1,4 @@
-# Private registry gatekeeper plugins – Docs Library
+# Private registry gatekeeper plugins
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

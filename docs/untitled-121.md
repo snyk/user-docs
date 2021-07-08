@@ -1,4 +1,4 @@
-# Snyk CLI for Infrastructure as Code – Docs Library
+# Snyk CLI for Infrastructure as Code
 
 ##  Snyk CLI for Infrastructure as Code
 

@@ -1,4 +1,4 @@
-# CLI Advanced Functionalities – Docs Library
+# CLI Advanced Functionalities
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

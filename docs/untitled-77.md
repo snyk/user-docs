@@ -1,4 +1,4 @@
-# Language & package manager support – Docs Library
+# Language & package manager support
 
 ##  Language & package manager support
 

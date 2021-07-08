@@ -1,4 +1,4 @@
-# Git repository \(SCM\) integrations – Docs Library
+# Git repository \(SCM\) integrations
 
 ##  Git repository \(SCM\) integrations
 

@@ -1,4 +1,4 @@
-# CI/CD integrations – Docs Library
+# CI/CD integrations
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

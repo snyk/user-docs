@@ -1,4 +1,4 @@
-# Getting around the Snyk Container UI – Docs Library
+# Getting around the Snyk Container UI
 
 ##  Getting around the Snyk Container UI
 

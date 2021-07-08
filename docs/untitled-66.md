@@ -1,4 +1,4 @@
-# Managing your subscription – Docs Library
+# Managing your subscription
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

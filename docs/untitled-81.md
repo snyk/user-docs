@@ -1,4 +1,4 @@
-# Snyk CLI for container security – Docs Library
+# Snyk CLI for container security
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

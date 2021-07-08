@@ -1,4 +1,4 @@
-# Submit a request – Docs Library
+# Submit a request
 
 Your email address
 

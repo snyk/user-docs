@@ -1,4 +1,4 @@
-# Docker Hub image scanning – Docs Library
+# Docker Hub image scanning
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

@@ -1,4 +1,4 @@
-# CLI – Docs Library \| Snyk
+# CLI \| Snyk
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

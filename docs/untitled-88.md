@@ -1,4 +1,4 @@
-# ACR image scanning – Docs Library
+# ACR image scanning
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

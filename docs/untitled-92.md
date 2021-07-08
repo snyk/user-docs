@@ -1,4 +1,4 @@
-# IDE tools – Docs Library
+# IDE tools
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

@@ -1,4 +1,4 @@
-# Harbor image scanning – Docs Library
+# Harbor image scanning
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

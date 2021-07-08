@@ -1,4 +1,4 @@
-# Integrate self-hosted container registries – Docs Library
+# Integrate self-hosted container registries
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

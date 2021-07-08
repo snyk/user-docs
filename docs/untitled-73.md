@@ -1,4 +1,4 @@
-# Broker and on-prem – Docs Library
+# Broker and on-prem
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

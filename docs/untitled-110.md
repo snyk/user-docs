@@ -1,4 +1,4 @@
-# Setting up SSO for authentication – Docs Library
+# Setting up SSO for authentication
 
 ##  Setting up SSO for authentication
 

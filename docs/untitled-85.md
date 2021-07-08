@@ -1,4 +1,4 @@
-# Scan your Dockerfile – Docs Library
+# Scan your Dockerfile
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

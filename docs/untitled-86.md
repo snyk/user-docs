@@ -1,4 +1,4 @@
-# Container security basics – Docs Library
+# Container security basics
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

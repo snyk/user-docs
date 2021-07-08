@@ -1,4 +1,4 @@
-# Dependency management – Docs Library
+# Dependency management
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

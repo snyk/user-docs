@@ -1,4 +1,4 @@
-# Snyk projects – Docs Library
+# Snyk projects
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

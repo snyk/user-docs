@@ -1,4 +1,4 @@
-# Scan your Kubernetes configuration files – Docs Library
+# Scan your Kubernetes configuration files
 
 ##  Scan your Kubernetes configuration files
 

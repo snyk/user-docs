@@ -1,4 +1,4 @@
-# ECR image scanning – Docs Library
+# ECR image scanning
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

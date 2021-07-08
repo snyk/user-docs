@@ -1,4 +1,4 @@
-# Scan your Terraform files – Docs Library
+# Scan your Terraform files
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

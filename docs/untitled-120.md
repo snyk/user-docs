@@ -1,4 +1,4 @@
-# Open Source basics – Docs Library
+# Open Source basics
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

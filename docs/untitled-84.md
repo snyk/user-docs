@@ -1,4 +1,4 @@
-# Kubernetes workload and image scanning – Docs Library
+# Kubernetes workload and image scanning
 
 ##  Kubernetes workload and image scanning
 

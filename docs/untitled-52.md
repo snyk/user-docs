@@ -1,4 +1,4 @@
-# Snyk API – Docs Library
+# Snyk API
 
 Snyk API allows you to programatically integrate with Snyk products.
 

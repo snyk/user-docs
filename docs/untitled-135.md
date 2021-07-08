@@ -1,4 +1,4 @@
-# Scan your CloudFormation files – Docs Library
+# Scan your CloudFormation files
 
 ##  Scan your CloudFormation files
 

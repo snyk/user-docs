@@ -1,4 +1,4 @@
-# Snyk Broker – Docs Library
+# Snyk Broker
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

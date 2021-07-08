@@ -1,4 +1,4 @@
-# Test for vulnerabilities – Docs Library
+# Test for vulnerabilities
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

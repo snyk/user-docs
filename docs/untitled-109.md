@@ -1,4 +1,4 @@
-# Secure your projects in the long term – Docs Library
+# Secure your projects in the long term
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

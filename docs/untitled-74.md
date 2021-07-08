@@ -1,4 +1,4 @@
-# Troubleshooting issues when testing \(manifest files, dependency versions, etc.\) – Docs Library
+# Troubleshooting issues when testing \(manifest files, dependency versions, etc.\)
 
 ### Troubleshooting issues when testing \(manifest files, dependency versions, etc.\)
 

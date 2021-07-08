@@ -1,4 +1,4 @@
-# Install the Snyk CLI – Docs Library
+# Install the Snyk CLI
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

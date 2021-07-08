@@ -1,4 +1,4 @@
-# Managing your settings – Docs Library
+# Managing your settings
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

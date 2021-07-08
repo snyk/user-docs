@@ -1,4 +1,4 @@
-# Starting to fix vulnerabilities – Docs Library
+# Starting to fix vulnerabilities
 
 ##  Starting to fix vulnerabilities
 

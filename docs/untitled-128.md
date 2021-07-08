@@ -1,4 +1,4 @@
-# Snyk Code basics – Docs Library
+# Snyk Code basics
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

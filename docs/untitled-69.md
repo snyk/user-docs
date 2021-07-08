@@ -1,4 +1,4 @@
-# Importing projects – Docs Library
+# Importing projects
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

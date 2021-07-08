@@ -1,4 +1,4 @@
-# What data does Snyk use? – Docs Library
+# What data does Snyk use?
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

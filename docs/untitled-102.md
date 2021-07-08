@@ -1,4 +1,4 @@
-# Platform as a service integrations – Docs Library
+# Platform as a service integrations
 
 ##  Platform as a service integrations
 

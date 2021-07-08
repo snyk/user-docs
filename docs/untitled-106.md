@@ -1,4 +1,4 @@
-# Guides for our CLI – Docs Library
+# Guides for our CLI
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

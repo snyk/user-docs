@@ -1,4 +1,4 @@
-# Finding Vulnerabilities – Docs Library
+# Finding Vulnerabilities
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

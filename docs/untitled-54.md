@@ -1,4 +1,4 @@
-# Disclosing vulnerabilities – Docs Library
+# Disclosing vulnerabilities
 
 ### Disclosing vulnerabilities <a id="category-name"></a>
 

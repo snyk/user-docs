@@ -1,4 +1,4 @@
-# Infra and backend – Docs Library
+# Infra and backend
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

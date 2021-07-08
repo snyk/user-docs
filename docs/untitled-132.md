@@ -1,4 +1,4 @@
-# Quay image scanning – Docs Library
+# Quay image scanning
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

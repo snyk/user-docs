@@ -1,4 +1,4 @@
-# Introducing Snyk – Docs Library
+# Introducing Snyk
 
 * [ Snyk basics](/hc/en-us/sections/360001105078-Snyk-basics)
 * [ Core concepts](/hc/en-us/sections/4403576824337-Core-concepts)

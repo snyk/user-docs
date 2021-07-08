@@ -1,4 +1,4 @@
-# Private registry integrations – Docs Library
+# Private registry integrations
 
 ##  Private registry integrations
 

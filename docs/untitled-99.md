@@ -1,4 +1,4 @@
-# Managing groups & organizations – Docs Library
+# Managing groups & organizations
 
 ##  Managing groups & organizations
 

@@ -1,4 +1,4 @@
-# Authentication – Docs Library \| Snyk
+# Authentication \| Snyk
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

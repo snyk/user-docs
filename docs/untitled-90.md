@@ -1,4 +1,4 @@
-# GCR image scanning – Docs Library
+# GCR image scanning
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

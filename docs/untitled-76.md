@@ -1,4 +1,4 @@
-# Runtime monitoring – Docs Library
+# Runtime monitoring
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

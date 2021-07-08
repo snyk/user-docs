@@ -1,4 +1,4 @@
-# Managing integrations – Docs Library
+# Managing integrations
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

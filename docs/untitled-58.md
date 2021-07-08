@@ -1,4 +1,4 @@
-# Snyk Code – Docs Library
+# Snyk Code
 
 * [ Snyk Code basics](/hc/en-us/sections/360004918378-Snyk-Code-basics)
 

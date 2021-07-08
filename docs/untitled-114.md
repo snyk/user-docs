@@ -1,4 +1,4 @@
-# Getting started with the API – Docs Library
+# Getting started with the API
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

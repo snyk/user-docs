@@ -1,4 +1,4 @@
-# JFrog Artifactory image scanning – Docs Library
+# JFrog Artifactory image scanning
 
 ##  JFrog Artifactory image scanning
 

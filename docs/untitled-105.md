@@ -1,4 +1,4 @@
-# Managing users & permissions – Docs Library
+# Managing users & permissions
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

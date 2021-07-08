@@ -1,4 +1,4 @@
-# Fix vulnerabilities from the CLI – Docs Library
+# Fix vulnerabilities from the CLI
 
 ##  Fix vulnerabilities from the CLI
 

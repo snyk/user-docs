@@ -1,4 +1,4 @@
-# Policies – Docs Library \| Snyk
+# Policies \| Snyk
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

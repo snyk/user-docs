@@ -1,4 +1,4 @@
-# Getting started with Snyk products – Docs Library
+# Getting started with Snyk products
 
 ##  Getting started with Snyk products
 
