@@ -1,13 +1,6 @@
-# Snyk groups: switch between groups and orgs
+# Docker Hub image scanning – Docs Library
 
-1.  [Docs Library \| Snyk](/hc/en-us)
-2.  [User and group management](/hc/en-us/categories/360000599478-User-and-group-management)
-3.  [Managing groups & organizations](/hc/en-us/sections/360001139598-Managing-groups-organizations)
+Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 
-##  Snyk groups: switch between groups and orgs
+Ready to get started? [Sign up for free](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 
-To access your groups and organizations, click on the navigation switcher. The avatars displayed on the left are your groups, and the list on the right are the organizations that are within the group.
-
-Clicking the avatar on the bottom of the switcher will display the organizations within your personal group. \(This may not be visible to you depending on your enterprise’s setup.\)
-
-* 

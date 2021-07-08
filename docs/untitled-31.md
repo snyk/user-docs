@@ -1,8 +1,11 @@
-# Are contributing developers counted with a Broker setup?
+# Test your Kustomize files with our CLI tool
 
-Yes, we count contributing developers for your GitHub Enterprise, GitHub and GitLab integrations.
+You scan a Kustomize template by building the Kuberenetes manifest file and then scanning this using the Snyk IaC CLI. 
 
-To get started, ensure you've upgraded your Broker client agent to v4.60.0 at least. 
+```text
+kustomize build > kubernetes.yaml
+snyk iac test kubernetes.yaml
+```
 
-Developer counts are available in the **Usage** page. See [Usage page details](https://support.snyk.io/hc/en-us/articles/4403675138577-Usage-page-details) for more information.
+Depending on your kustomize templates, you may need to provide a name after the build argument. 
 

@@ -1,0 +1,2 @@
+# Connect Snyk to Heroku
+

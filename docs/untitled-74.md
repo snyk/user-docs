@@ -1,20 +1,19 @@
-# Configure integration for Amazon Elastic Container Registry \(ECR\)
+# Troubleshooting issues when testing \(manifest files, dependency versions, etc.\) – Docs Library
 
-##  Configure integration for Amazon Elastic Container Registry \(ECR\)
+### Troubleshooting issues when testing \(manifest files, dependency versions, etc.\)
 
-Enable integration between one Amazon ECR registry and a Snyk organization, and start managing your image security. To integrate with multiple registries, create a unique organization for each one.
+* [ Azure Pipelines fails to scan .Net sln files](/hc/en-us/articles/360010844337-Azure-Pipelines-fails-to-scan-Net-sln-files)
+* [ Failed to get merge data from Github ](/hc/en-us/articles/360005281837-Failed-to-get-merge-data-from-Github-)
+* [ Merge conflict error](/hc/en-us/articles/360005281098-Merge-conflict-error)
+* [ Unable to test scala project](/hc/en-us/articles/360001772877-Unable-to-test-scala-project)
+* [ Could not determine version for dependencies](/hc/en-us/articles/360001373178-Could-not-determine-version-for-dependencies)
+* [ Failed to read manifest file - Commit Status](/hc/en-us/articles/360000910517-Failed-to-read-manifest-file-Commit-Status)
 
-**Automated Process:**
+1.  [Docs Library \| Snyk](/hc/en-us)
+2.  [FAQs](/hc/en-us/categories/360000116697-FAQs)
+3.  [Troubleshooting issues when testing \(manifest files, dependency versions, etc.\)](/hc/en-us/sections/360000936037-Troubleshooting-issues-when-testing-manifest-files-dependency-versions-etc-)
 
-You have the option of establishing cross-account access to enable Snyk's Amazon ECR integration as a 1-click deployment. This options is available as an official [AWS Quick Start](https://github.com/aws-quickstart/quickstart-snyk-security) and eliminates the need for manual configuration. 
+##  Troubleshooting issues when testing \(manifest files, dependency versions, etc.\)
 
-You will need your Snyk **Organization ID** and AWS IAM [role ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) to complete the integration. The role ARN will be provided for you in the AWS CloudFormation Console's Output tab.
-
-**Manual Process:**
-
-To enable integration, you must first create a read-only AWS Identity and Access Management \(IAM\) role. The role delegates read-only access to all repositories in your registry for Snyk per organization by indicating the list of permitted Snyk-assigned organization IDs.
-
-Thereafter, when integrating additional organizations, you can simply add the additional organization IDs as necessary.
-
-Follow these steps to set up your integration:
+To get started, choose a subject from the left or use the search above
 

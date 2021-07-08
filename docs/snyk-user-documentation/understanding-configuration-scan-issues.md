@@ -1,0 +1,2 @@
+# Understanding configuration scan issues
+

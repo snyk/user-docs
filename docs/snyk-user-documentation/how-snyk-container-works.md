@@ -1,0 +1,2 @@
+# How Snyk Container works
+

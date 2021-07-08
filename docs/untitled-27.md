@@ -1,23 +1,39 @@
-# Custom file Name on Snyk UI
+# Choose a provisioning option
 
-####  [Submit a Support ticket](https://support.snyk.io/hc/en-us/requests/new) [Sign in to Support](https://support.snyk.io/hc/en-us/signin) [Sign up for free](https://snyk.io/login?cta=sign-up&loc=nav&page=support_docs_page)
+* [ Introduction to Snyk Single Sign-On \(SSO\)](/hc/en-us/articles/360018025297-Introduction-to-Snyk-Single-Sign-On-SSO-)
+* [ Choose a provisioning option](/hc/en-us/articles/360019607318-Choose-a-provisioning-option)
+* [ Set up Snyk Single Sign-On \(SSO\)](/hc/en-us/articles/360017753618-Set-up-Snyk-Single-Sign-On-SSO-)
+* [ Identity Provider \(IdP\) migration](/hc/en-us/articles/4402292397969-Identity-Provider-IdP-migration)
 
-###  [ ]() <a id="category-name"></a>
+##  Choose a provisioning option
 
-#### Managing your settings
+Determine how new users in your organization get access to Snyk:
 
-* [ Custom file Name on Snyk UI](/hc/en-us/articles/360002449318-Custom-file-Name-on-Snyk-UI)
-* [ How do I become or make someone a Snyk group admin?](/hc/en-us/articles/360001539698-How-do-I-become-or-make-someone-a-Snyk-group-admin-)
-* [ How do I change the email that Snyk uses to send me notifications when connected to a Github account?](/hc/en-us/articles/360001534978-How-do-I-change-the-email-that-Snyk-uses-to-send-me-notifications-when-connected-to-a-Github-account-)
+* [Open to all]()
+* [Invitation required]()
+* [Custom]()
 
-1.  [Docs Library \| Snyk](/hc/en-us)
-2.  [FAQs](/hc/en-us/categories/360000116697-FAQs)
-3.  [Managing your settings](/hc/en-us/sections/360000923298-Managing-your-settings)
+With the Open option, all users have automatic access to Snyk by using SSO to log in. They will have access to all organizations in your selected group. Their accounts will all be provisioned with the same role, with two options:
 
-##  Custom file Name on Snyk UI
+* The **administrator** role allows all new users to manage group admins, view group reports, and work with organizations within the group.
+* The **collaborator** role can access the organizations.
 
-You cannot customize your file names in the Snyk UI for importing. You can only do this only through the CLI as being mentioned [here](https://support.snyk.io/hc/en-us/articles/360002118098-How-do-I-specify-a-custom-manifest-file-name-for-snyk-test-). 
+Let Snyk Support know whether new users will have the **administrator** role or the **collaborator** role. The selected role applies for all users.
 
-Depending upon the package managers for your project we support the following manifest files with their appropriate names as being discussed [here](https://support.snyk.io/hc/en-us/articles/360000911957-Language-support).
+With the invitation required option, admins can invite users or users can request access to an organization.
 
-* 
+There are two ways to invite users to organizations. Invite members from the [Members Settings page](https://support.snyk.io/hc/en-us/articles/360004399238-Invite-and-collaborate-with-team-members) or automate the process using our [API endpoint.](https://snyk.docs.apiary.io/#reference/organizations/user-invitation-to-organization/invite-users)
+
+If users who have not been invited use SSO to log in, they will gain access to Snyk, but they will not see any projects until an admin invites them or manually adds them to the organization\(s\). You can show a list of organizations with the appropriate contact person so that new users can [request access](https://support.snyk.io/hc/en-us/articles/360016034417).
+
+**Feature availability**  
+This feature is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+
+You can provision user accounts with customized rules.
+
+You can configure SSO differently for each of your different Snyk groups. You can also map users to a specific organization and role assignment based on information from the identity provider.
+
+Work with your Customer Success Manager and Snyk Technical Services to prepare for implementing this SSO option.
+
+Read more about the next step, [set up single sign-on](/hc/en-us/articles/360017753618).
+

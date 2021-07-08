@@ -1,6 +1,11 @@
-# Is there a free version of container testing? Is so, whats the difference between the paid version a
+# Test your Helm Charts with our CLI tool
 
-Yes, scanning container images is available as part of the free plan. At the moment the limitations are limited to 100 container tests per month.
+You scan a Helm chart by converting the template to a rendered Kuberenetes manifest file and then scanning this using the Snyk IaC CLI. 
 
-You can see the details amongst the plans on [https://snyk.io/plans/](https://snyk.io/plans/)
+```text
+helm template ./iac-helm > helm.yaml
+snyk iac test helm.yaml
+```
+
+change \`iac-helm\` for your Helm chart name. 
 

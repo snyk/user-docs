@@ -1,84 +1,251 @@
-# How can I use Snyk behind a proxy?
+# Snyk CI/CD Integration: good practices
 
-* [ How efficient is our Vulnerability Database ?](/hc/en-us/articles/360003968978-How-efficient-is-our-Vulnerability-Database-)
-* [ What counts as a test?](/hc/en-us/articles/360000925418-What-counts-as-a-test-)
-* [ How can I use Snyk behind a proxy?](/hc/en-us/articles/360000925358-How-can-I-use-Snyk-behind-a-proxy-)
-* [ How are patches validated?](/hc/en-us/articles/360000925338-How-are-patches-validated-)
-* [ Does Snyk have an API?](/hc/en-us/articles/360000914857-Does-Snyk-have-an-API-)
-* [ I can't import projects from one of my GitHub organisations](/hc/en-us/articles/360000914837-I-can-t-import-projects-from-one-of-my-GitHub-organisations)
+##  Snyk CI/CD Integration: good practices
 
-##  How can I use Snyk behind a proxy?
+### Typical stages of adoption
 
-Some common issues when working behind a proxy:
+Developer teams typically adopt Snyk in the following stages:
 
-* Snyk CLI requests are not going through the proxy
-* Requests to app.snyk.io are blocked by the proxy
-* Snyk CLI does not recognize an authorized certificate and prevents generating insecure requests
+1. [Expose vulnerabilities]() \(snyk monitor\)
+2. [Use Snyk as a gatekeeper]() \(snyk test\)
+3. [Continuous monitoring]() \(snyk test + Snyk monitor\)
 
-### Snyk CLI requests are not going through the proxy
+ **Stage 1: Expose vulnerabilities \(Snyk monitor\)**
 
-First check what are the details of your proxy. In Windows, run a `ipconfig /all` command and look for your proxy settings. You must retrieve the following information:
+This is a typical initial approach, using Snyk results to expose to your team vulnerabilities during the development process, which increases visibility of these vulnerabilities amongst your team.
 
-* http or https
-* private IP of the proxy
-* port \(80, 8080 or 443 typically\).
+When you first implement Snyk in your pipeline, we recommend you use only the **snyk monitor** command, or if you use one of Snyk's CI plugins, to configure the plugin to not fail the build.  
+This is because all projects are vulnerable, and after you set Snyk to fail the build, every build will fail because of Snyk, which may cause problems with your team being quickly overwhelmed with failure messages.
 
-To run Snyk from behind a proxy, use an environment variable to point to your proxy.
+Using **snyk monitor** to expose results will provide information, without disrupting processes.
 
-Snyk supports a set of environment variables to enforce specific Proxy settings:
+ **Stage 2: Use Snyk as a gatekeeper \(snyk test\)**
 
-* HTTP\_PROXY / http\_proxy
-* HTTPS\_PROXY / https\_proxy
-* NO\_PROXY / no\_proxy
+This next approach prevents the introduction of new vulnerabilities \(sometimes known as "stopping the bleeding"\).
 
-For example, to configure a proxy and run a Snyk test with the new proxy value, run:
+After your teams understand the vulnerabilities in their applications, and develops a process for remediating them early in the development cycle, you can configure Snyk to fail your builds, to prevent introducing vulnerabilities into your applications..
+
+Add **snyk test** to your build or enable the fail functionality to make Snyk fail your builds, providing the results output to the console.  Your Devs or DevOps teams can use the results to decide whether to stop or continue the build.
+
+ **Stage 3: Continuous monitoring \(snyk test + Snyk monitor\)**
+
+After you configure Snyk to fail the build when vulnerabilities are detected, you can now configure Snyk to send a snapshot of your project's successful builds to Snyk for ongoing monitoring.
+
+To do  this, configure your pipeline to run **snyk monitor** if your **snyk test** returns a successful exit code.
+
+#### Pre-requisites
+
+To configure Snyk to run in a pipeline, retrieve key configuration inputs from your Snyk account.
+
+#### Define target organization
+
+When you run Snyk in your CI/CD platform, you will typically want to post the test results to Snyk, for review and ongoing monitoring.
+
+You can define the target organization in the Snyk CLI, by either URL slug or organization ID, using the **--org** CLI argument:
+
+* You can define the target organization using its URL slug, as displayed in the browser's address bar when viewing it in the Snyk UI: 
+* Or you can define the target organization using its **org id** in each organization's settings page:
+
+**Default organization**
+
+If you do not define a target organization, Snyk uses the default organization for the authentication token you use:
+
+* For user accounts, this is the user's preferred organization \(configurable in the user's settings\).
+* For organization service accounts, this is the organization in which the account was created.
+
+#### Snyk Authentication Token
+
+To run the snyk test, you need an authentication token with access to the desired target organization . While you can use any valid authentication token, we recommend using a service account. For more details, see [Service accounts](https://support.snyk.io/hc/en-us/articles/360004037597-Service-accounts).
+
+### Setting Up
+
+Snyk supports the following approaches to add tests to a build pipeline:
+
+* **Snyk integration plugins**: Snyk provides pre-built plugins for several CI servers, including [Jenkins](https://support.snyk.io/hc/en-us/articles/360004032217-Jenkins-integration-overview), [Team City](https://support.snyk.io/hc/en-us/articles/360004032297-TeamCity-integration-overview)[, Bitbucket Pipelines](https://support.snyk.io/hc/en-us/articles/360004032177-Bitbucket-Pipelines-integration-overview) and [Azure Pipelines. ](https://support.snyk.io/hc/en-us/articles/360004127677-Azure-Pipelines-integration) See the [Continuous Integration](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations) documentation for more details
+* **Snyk CLI:** For teams with more complex workflows, or using a build system without a Snyk pre-built plugin, you can use the Snyk CLI tool during CI/CD setups. See [Setting up using Snyk CLI]() for more details.
+* **Snyk API**: For teams with complex requirements, Snyk provides a REST API, which you can use for functions including initiating scans, onboarding new projects, and testing arbitrary libraries. See the [Snyk API documentation](https://snyk.docs.apiary.io/) for more details.
+
+#### Setting up using Snyk CLI
+
+Snyk CLI is a NodeJS application that can be scripted directly by developers for easy integration into most CI/CD environments, and is available as an NPM application, pre-packaged binary, or container image. See [Install the Snyk CLI](https://support.snyk.io/hc/en-us/articles/360003812538-Install-the-Snyk-CLI) for more details
+
+Snyk CLI can be configured to:
+
+* Return non-zero error codes only when certain criteria are met. For example, exit with an error code only if vulnerabilities of high severity are present.
+* Output all of its data into JSON for more flexibility.
+
+**Exit Codes**
+
+When using the Snyk CLI:
+
+* **snyk test** is a synchronous command, that ends with an exit code. Exit codes can then be used by your build system to either pass or fail the build based on the test results. See the [CLI reference guide](https://support.snyk.io/hc/en-us/articles/360003812578-CLI-reference) for details on exit statuses and their meanings.
+* **snyk monitor** \(which posts test results to the Snyk web UI\) is an asynchronous command, that does not end with exit code based on the vulnerability status. 
+
+Depending on your approach and goals, you may need to use both command sets in your pipeline.
+
+**CLI Examples**
+
+Examples of running the Snyk CLI in a build pipeline:
+
+1. Snyk monitor to surface vulnerabilities and post to the Snyk UI for ongoing monitoring:
+
+   ```text
+   snyk monitor --all-projects --org=snyk-apps
+   ```
+
+2. Snyk test to fail the build on high severity issues:
+
+   ```text
+   snyk test --all-projects --org=snyk-apps --severity-threshold=high
+   ```
+
+To view the full list of flags in the CLI, run the **snyk --help** or **snyk container --help**.
+
+#### Configuring failing build parameters
+
+You can add flags to the **snyk test** command to fine-tune parameters that will result in a failed build:
+
+* **--severity-threshold=high**: Fail the build only for High Severity issues: 
+* **--fail-on=upgradable**: Fail the build only for issues that are upgradable \(can be fixed with Snyk remediation advice\):  
+
+You can also fail the build for any other parameter in the Snyk JSON output \(such as CVSS score\), using a wrapper like [snyk-filter](https://github.com/snyk-tech-services/snyk-filter), or use additional tooling like [snyk-delta](https://support.snyk.io/hc/en-us/articles/360019979978) to fail the build only for issues found since the last build.
+
+#### Creating custom build artifacts
+
+You can use Snyk's JSON output to create custom test reports as build artifacts, using the [snyk-to-html](https://github.com/snyk/snyk-to-html) utility, or other custom processing you develop.
+
+#### Creating work items for new vulnerabilities
+
+Snyk allows you to automatically create new work items in JIRA \(see [Jira integration](https://support.snyk.io/hc/en-us/articles/360004002458-Jira) documentation\). You can customize this code for your specific requirements, or adapt it to work with other work management systems. 
+
+See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns) to get started.  
+or review the [API to create Jira tickets.](https://snyk.docs.apiary.io/#reference/projects/project-jira-issues/create-jira-issue)
+
+### Snyk Open Source-specific strategies
+
+These strategies are useful to teams using Snyk's SCA \(Software Composition Analysis\) testing features.
+
+#### Gradle & Scala 
+
+* For "multi-project" configurations, test all sub-projects, use the next flag with your monitor or test command **--all-sub-projects** 
+* To scan specific configurations, select certain values of configuration attributes to resolve the dependencies. Use the next flag with your test or monitor command **--configuration-attributes=&lt;string&gt;**
+
+#### Python
+
+* Snyk uses Python to scan and find your dependencies. Snyk needs the Python version to start scanning, and defaults to "python". If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.  
+  Use the next flag with your test or monitor cmd to specify the Python version **--command=&lt;string&gt;**. For example:
+
+  ```text
+  snyk test --command=python3
+  ```
+
+* If you scan a Pip project and use the **--file=** because your manifest file isn’t the standard of **requirement.txt**, then the next flag is mandatory to specify Pip as the package manager **--package-manager=pip** 
+
+#### .Net
+
+If you use a .sln file, you can specify the path to the file, and snyk will scan all the sub projects that are part of the repo. For example:
 
 ```text
-$ export https_proxy=https://my.corporate.proxy:8080
-$ snyk test
+snyk test --file=sln/.sln
 ```
 
-Notes:
+#### Yarn Workspace
 
-* The command to add an environment variable could differ between Windows CMD, Powershell, Mac terminal and Linux. 
-* `export https_proxy=value` sets a global env variable. If you prefer to set a local env variable you can use `set https_proxy=value` instead
+For Yarn workspaces use the **--yarn-workspaces** flag to test and monitor your packages. The root lockfile will be referenced when scanning all the packages. Use the -**-detection-depth** parameter to find sub-folders which are not auto discovered by default.
 
-### Requests to app.snyk.io are blocked by the proxy
+Note: Yarn workspaces support is for **snyk test** and **snyk monitor** commands only at this time.
 
-To check if this is the case, add a debugging option to the CLI, using:
+Example:
 
 ```text
-$ snyk test -d
+snyk test --yarn-workspaces --detection-depth=6 
 ```
 
-If you see a **timeout error** or a **econnrefused** error in the request, then **https://app.snyk.io** may be blocked by Snyk. 
+This scans only the packages that belong to any discovered workspaces this directory and 5 sub-directories deep.
 
-### Snyk CLI does not recognize an authorized certificate and prevents generating insecure requests
-
-To check if this is the case, you can tell Snyk to ignore insecure certificates, knowing that your proxy could be the reason for presenting a custom certificate to Snyk.
-
-You can test this by running:
+You can use a common **.snyk** policy file, if you maintain ignores/patches in one place to be applied for all detected workspaces, by providing the policy path:
 
 ```text
-$ snyk auth --insecure
-$ snyk test --insecure
+snyk test --yarn-workspaces --policy-path=src/.snyk
 ```
 
-If the **--insecure** flag helps, you may want to point Snyk towards your custom CA certs more permanently by exporting them \(Snyk CLI is a Node application and honors environmental variables\):
+#### Monorepo
 
-```text
-$ export NODE_EXTRA_CA_CERTS=/path-to-the-ca-cert.crt
-```
+Some customers have complex projects, with multiple languages, package managers, and projects, in a single repository. To facilitate this, you can take different approaches:
 
-You can also try a combination of the above to resolve the issues:
+* As you build each project/language, add a directive to run the snyk test and target a specific project file. For example:
 
-```text
-$ set https_proxy=<PROXY>:PORT
-$ snyk auth --insecure
-$ snyk test -d --insecure
-```
+  ```text
+  snyk test --file=package.json
+  ```
 
-### Also see
+   After you install the dependencies of each project, make a similar call pointing to the specific artifact \(such as **pom.xml**\). This is fast and efficient, but can be difficult to scale, especially if you are not familiar with the project.
 
-[How can we whtelist Snyk IP addresses?](https://support.snyk.io/hc/en-us/articles/360002153077-How-can-we-whitelist-Snyk-IP-addresses-)
+* Use the **--all-projects** and **--detection-depth** arguments, and the Snyk CLI or CI/CD plugin will search up to **--detection-depth** in the folder structure for any manifests that match the supported files types. Each project is scanned and has its own result. Similarly, if using **snyk-monitor**, a separate result is created for each project. This is a good way to automate scanning especially if you have projects spanning node, .net, python, and so on.
+
+**Specific to Gradle:**
+
+* For most Gradle projects, using **--all-projects** works, as it invokes gradle-specific options behind the scenes in the form of:  
+
+
+  ```text
+  snyk test --file=build.gradle --all-sub-projects
+  ```
+
+   when it finds the build file as part of the **--all-projects** search
+
+* Gradle may require additional configuration parameters. If so, to target the other artifacts using **--file=** for each manifest of the other languages/package-managers, as mentioned in the first option. You must then use **--all-sub-projects** and potentially **--configuration-matching** and --configuration-matching to scan a complex gradle project.
+
+See [Snyk for Java \(Gradle, Maven\)](https://support.snyk.io/hc/en-us/articles/360003817357-Java-for-Snyk) for more information.
+
+### Snyk Container-specific strategies
+
+The best stage to implement Snyk Container in your pipeline is after the container image is built \(after running the equivalent of “docker build”\), and before your image is either pushed into your registry \(“docker push”\) or deployed to your running infrastructure \(“helm install”, “kubectl apply” and so on\).
+
+Typically, the ways you run your container build-test-deploy pipeline depends on whether or not a Docker daemon is available to the build agent.
+
+**Running pipeline if a Docker daemon is available**
+
+If:
+
+* You are running your build tooling \(such as Jenkins\) directly on a host that has Docker natively installed.
+* Your pipeline tasks are run inside containers which have the Docker socket \[/var/run/docker.sock\] bind-mounted to the host.
+* You are running a Docker-inside-Docker setup.
+
+Snyk can help:
+
+* When you run **snyk container test $IMAGE\_NAME**, Snyk looks for that image in your local daemon’s storage, and if it does not exist, does the equivalent of a **docker pull** to download it from your upstream registry.
+* For registry authentication, Snyk uses the credentials you already configured \(with something like **docker login**\)
+* You can specify **--file=Dockerfile** on the command line to link the image vulnerability results with the Dockerfile that built it, to receive inline remediation advice and alternate base image suggestions.
+
+**Running pipeline if a Docker daemon is not available**
+
+If:
+
+* You containerize each build task but do not mount the Docker socket for security/performance reasons.
+* Pipeline tasks are split across hosts \(or even clusters\) and rely on artifacts to be handed off via a central volume or intermediate registry/object store.
+* You work exclusively in an ecosystem that only uses OCI-compliant container images
+
+Snyk can help:
+
+* Run either **snyk container test docker-archive:archive.tar** or **snyk container test oci-archive:archive.tar** to get Snyk vulnerability results against tar-formatted container images \(either in Docker or OCI format\) without relying on the Docker daemon.
+* The tar archive can be generated by your build process using the equivalent of **docker save** and stored in a shared volume or object store. This can then be accessed by the build agent container running the Snyk binary, with no other dependencies required
+
+#### Good practice recommendations
+
+* Regardless of how you integrate with container images during CI, run a Snyk Container scan as a separate build step from your Snyk Open Source \(application SCA\) test. This allows you to isolate build failures to vulnerabilities within either the container/OS layer or the application layer, respectively. This also enables more easily containerized build tasks.
+* Use CLI flags like **--fail-on** and **--severity-threshold** to customize the failure status for the build task. For more advanced usage, you can use **--json** to generate a JSON file containing the full vulnerability report, and set your own build failure status based on the JSON data.
+* Pass **--exclude-base-image-vulns** to only report vulnerabilities introduced by your user layers, rather than vulnerabilities that come from the container’s base image \(the image you specify in the FROM line in the Dockerfile\).
+* Run **snyk container monitor** following **snyk container test** \(or simply check the **Monitor** box on your plugin settings\), to keep a record of this container’s bill of materials within the Snyk UI and proactively monitor for new vulnerabilities on a daily basis. This is useful when pushing new releases into production environments. You can use **--project-name** to specify a unique identifier for the release to ensure production containers are tracked separately from others in your build process.
+
+### Snyk IaC-specific strategies
+
+The best stage to implement Snyk Infrastructure As Code in your pipeline as part of the stages, but after the SCA and the Containers stage.
+
+Snyk Infrastructure as Code supports:
+
+* Deployments, Pods and Services.
+* CronJobs, Jobs, StatefulSet, ReplicaSet, DaemonSet, and ReplicationController.
+
+See [Test your Kubernetes files with our CLI tool](https://support.snyk.io/hc/en-us/articles/360012429477-Test-your-Kubernetes-files-with-our-CLI-tool) for more details.
 

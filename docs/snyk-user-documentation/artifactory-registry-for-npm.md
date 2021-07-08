@@ -1,0 +1,2 @@
+# Artifactory Registry for npm
+

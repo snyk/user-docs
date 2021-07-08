@@ -1,56 +1,6 @@
-# How Snyk Container works
+# Managing your subscription – Docs Library
 
-##  How Snyk Container works
+Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 
-### What are container images?
-
-Container images comprise a layered file system and associated metadata, as defined by the [Open Container Initiative](https://opencontainers.org/) \(OCI\) specifications.
-
-Container images often include several layers containing third-party software from:
-
-* Operating system distributions, such as Debian, Ubuntu or CentOS.
-* Application package managers, such as npm, pip and RubyGems.
-
-### What Snyk Container detects
-
-When Snyk Container scans an image, using any of the available integrations, we first find the software installed in the image, including:
-
-* dpkg, rpm and apk operating systems packages.
-* Popular unmanaged software, ie. installed outside a package manager.
-* Application packages based on the presence of a manifest file.
-
-After we have the list of installed software, we look that up against our vulnerability database, which combines public sources with proprietary research.
-
-### Supported operating systems
-
-We detect vulnerabilities in images based on:
-
-* Debian
-* Ubuntu
-* Centos
-* Red Hat Enterprise Linux \(including UBI\)
-* Amazon Linux 2
-* SUSE Linux Enterprise Server
-* Alpine
-
-Check out the [Operating Systems Support](https://support.snyk.io/hc/en-us/articles/360017545417-Supported-operating-system-distributions) page for specific version support and our [updates](https://updates.snyk.io/) page for all the latest updates.
-
-#### Note
-
-Snyk also supports images using packages from those distributions but without the associated package manager, such as Distroless images.
-
-### Unmanaged software
-
-Some software components from upstream providers are not installed using a package manager, but are downloaded as executables from third-parties. Snyk uses file fingerprinting to detect versions of the following components:
-
-* Node.js
-* OpenJDK
-
-### Recurring scans
-
-New vulnerabilities are disclosed continuously., Snyk can alert you to new vulnerabilities in your image as they are announced, even when your image software installed has not changed.
-
-If you use an integration which saves a snapshot of the installed software on Snyk’s service, Snyk Container automatically rescans without accessing the image, alerting you to new vulnerabilities quicker.
-
-Learn more about [container security](https://snyk.io/learn/container-security/).
+Ready to get started? [Sign up for free](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 

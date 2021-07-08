@@ -1,20 +1,78 @@
-# Why do yarn and npm report more dependencies than snyk?
+# Snyk Customer Onboarding - Team Plan
 
-##  Why do yarn and npm report more dependencies than snyk?
+* [ Introduction to the Snyk Team plan](/hc/en-us/articles/360018365737-Introduction-to-the-Snyk-Team-plan)
+* [ Snyk Customer Onboarding - Team Plan](/hc/en-us/articles/360018935478-Snyk-Customer-Onboarding-Team-Plan)
+* [ Critical severity migration](/hc/en-us/articles/360020021058-Critical-severity-migration)
+* [ Snyk Preview](/hc/en-us/articles/360020514418-Snyk-Preview)
+* [ Snyk SCM integration: good practices](/hc/en-us/articles/360018010597-Snyk-SCM-integration-good-practices)
+* [ Snyk CI/CD Integration: good practices](/hc/en-us/articles/360018245398-Snyk-CI-CD-Integration-good-practices-)
 
-You'll often find that the number of dependencies that Snyk reports will vary from other tools such as NPM or Yarn.
+##  Snyk Customer Onboarding - Team Plan
 
-Tools like NPM and Yarn tend to count the number of dependencies in their tree, but not necessarily doing a distinct count - there tend to be many duplicates as packages tend to be called on several or even many times within the same project.
+Use this information to onboard your colleagues with the Snyk on the [Team plan](https://snyk.io/plans/), allowing your team to make the best use of Snyk to find and fix project vulnerabilities by:
 
-Snyk also by default does not scan dependencies in the devDependencies section of the package.json.
+* Developing rollout strategies for best adoption of Snyk to multiple users in your company, 
+* Making best use of reports, prioritizations and remediations to get quick results from Snyk adoption.
 
-### Enabling devDependencies in your scans
+This documentation assumes you have used Snyk, and are familiar with core Snyk functions. 
 
-In the CLI you can scan devDependencies by appending --dev at the end of your command, for example:
+#### More details
 
-```text
-$ snyk test --dev
-```
+* [Introduction to the Snyk Team plan](https://support.snyk.io/hc/en-us/articles/360018365737)
+* [Getting started with Snyk products](https://support.snyk.io/hc/en-us/sections/360004349758-Getting-started-with-Snyk-products) 
+* [Quick start guide and general overview](https://www.youtube.com/watch?v=PCculVmSPtg&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=6) \(video\)
 
-In the Snyk.io portal this can be configured in settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Languages**
+### Rollout strategy: good practices
+
+These good practice suggestions help you design your rollout plan to align to your team’s success criteria and targets.
+
+You may use different approaches, depending on your situation and the languages of your projects that you want to test.
+
+#### Work with early adopters
+
+Consider initially working with early-adopter teams and users, testing and monitoring their projects using the CLI. This should give you some quick results; you can then repeat the process with other teams and users. 
+
+Starting with a few users avoids issues you may encounter if you try to roll Snyk out all at once across your company.
+
+**More details**
+
+* Video: [How to find vulnerabilities using your CLI](https://www.youtube.com/watch?v=h9-pP6nOldo&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=2). 
+* Documentation: [Snyk CLI](https://support.snyk.io/hc/en-us/categories/360000456217-Snyk-CLI) 
+
+#### Integrate with an SCM integration
+
+Assuming these integrations are valid for your company, we recommend setting up early adopters with a Source Code Management \(SCM\) integration such as GitHub. 
+
+Starting with this integration makes it easy for developers to find and fix vulnerabilities, and to get alerted when new vulnerabilities have been discovered. After this is successful, these users can be used as internal advocates and can demonstrate the benefits of using Snyk.
+
+Note: This approach works for projects using Node, Java, Python and Ruby.  If support is needed for Go, PHP or .Net, the CLI should be used as the primary method of testing and monitoring projects.
+
+\*\* For Scala & Gradle \(only\) we recommend scanning the projects only in the CLI or CI/CD, to get accurate results. 
+
+**More details**
+
+* [Snyk SCM integration: good practices](https://support.snyk.io/hc/en-us/articles/360018010597)
+* [How to add your Git Repos to Snyk](https://www.youtube.com/watch?v=Krs8IOGy87Q&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=2&t=4s) \(video\)
+
+#### Integrate into your CI/CD pipeline
+
+A further step in rollout is to integrate Snyk into your CI/CD pipeline across all teams and projects, to add Snyk to your build system.
+
+This approach allows you to get coverage of your codebase quickly, as CI/CD pipelines are often common and usually maintained by relatively few people. This will give you visibility into the state of your Open Source Vulnerability exposure.
+
+You can also decide if you want to simply report on the vulnerabilities, or break the build when a vulnerability is discovered. A typical approach is to start with reporting, and then once you have visibility, you can roll out the next phase of addressing the vulnerabilities.
+
+**More details**
+
+* [Snyk CI/CD Integration: good practices](https://support.snyk.io/hc/en-us/articles/360018245398)
+* [Snyk CI/CD integration examples on GitHub](https://github.com/snyk-labs/snyk-cicd-integration-examples) 
+
+Snyk automatically notifies you when new issues are found in the projects you're monitoring, to help make you aware of new risks:
+
+You can customize the emails all your organization’s members receive, and individual users can set defaults in their own account settings.
+
+#### More details
+
+* [Notification management](https://support.snyk.io/hc/en-us/articles/360004037657-Notification-management)
+* [How to configure your Snyk notification settings](https://www.youtube.com/watch?v=MyLgmcHUrL4&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=5) \(video\)
 

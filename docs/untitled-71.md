@@ -1,21 +1,6 @@
-# Add Artifactory images to Snyk
+# What data does Snyk use? – Docs Library
 
-* [ Container security with JFrog Artifactory](/hc/en-us/articles/360004302837-Container-security-with-JFrog-Artifactory)
-* [ Configuring your JFrog Artifactory container registry integration](/hc/en-us/articles/360003915998-Configuring-your-JFrog-Artifactory-container-registry-integration)
-* [ Add Artifactory images to Snyk](/hc/en-us/articles/360003916018-Add-Artifactory-images-to-Snyk)
+Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 
-##  Add Artifactory images to Snyk
-
-Snyk tests and monitors your Artifactory container images by evaluating its tags in your repositories.
-
-**To add images to Snyk**:
-
-**Prerequisites:**
-
-* You must have an account with Snyk and be onboarded to your organization by an administrator.
-* The integration must be configured between Snyk and your Artifactory environment.
-
-Images are indicated with a unique icon , and you can also filter to view only the Artifactory projects:
-
-Artifactory integration works similarly to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages in our docs.
+Ready to get started? [Sign up for free](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 

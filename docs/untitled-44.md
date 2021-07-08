@@ -1,20 +1,12 @@
-# Snyk runtime monitoring: introduction
+# What do we do when Snyk finds vulnerabilities for which there is no fix available?
 
-##  Snyk runtime monitoring: introduction
+##  What do we do when Snyk finds vulnerabilities for which there is no fix available?
 
-Snyk Runtime Monitoring does a couple of important things for your open source components during runtime. It:
+Sometimes you will find vulnerabilities for which there is no current known fix available yet and some folks come to us asking what to do in these cases.
 
-* Determines whether a vulnerable dependency is indeed being used at runtime in a way that can be exploited
-* Flags vulnerable dependencies identified at runtime, and prioritizes them first by whether those dependencies were called at runtime and then by severity
+Ultimately, the decision is up to the end user or developer - Snyk is an information tool first and foremost. Not all "fixes" should or can be performed by an upgrade. One of the reasons why we tell developers about vulnerabilities early in such a way that is formatted to them is so that they can make informed, actionable decisions themselves.
 
-With the data Snyk retrieves and highlights for you, you can focus your remediation efforts where they matter the most - fixing the vulnerabilities whose vulnerable functions are actually invoked at runtime.
+Even _if_ a dependency has an upgrade available, the developer might still choose to remediate by removing the library altogether or changing it out with a different package entirely. Maybe you mitigate using other services such as a WAF or other reverse proxy configuration.
 
-###  Snyk runtime monitoring: how it works
-
-The Snyk runtime agent does the following:
-
-1. The agent inspects every dependency of your application.
-2. It then creates an execution hook on vulnerable functions in relevant dependencies.
-3. Using these hooks, the agent detects the actual use of vulnerable functions.
-4. The agent sends this data in beacons to Snyk, adding relevant data to the Snyk project.
+Remember that Snyk is short for "_**S**o **N**ow **Y**ou **K**now_" :-\) 
 

@@ -1,0 +1,2 @@
+# Switch between Snyk organizations
+

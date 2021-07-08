@@ -1,22 +1,29 @@
-# Unable to test scala project
+# Why can't I open a Pull Request / Merge Request for issues found by Snyk ?
 
-##  Unable to test scala project
+####  [Submit a Support ticket](https://support.snyk.io/hc/en-us/requests/new) [Sign in to Support](https://support.snyk.io/hc/en-us/signin) [Sign up for free](https://snyk.io/login?cta=sign-up&loc=nav&page=support_docs_page)
 
-Snyk currently supports vulnerability scanning for Scala / SBT projects using the **build.sbt** file. To read more and get up-to-date support information, please see this page on our Docs: [https://snyk.io/docs/snyk-for-scala/](https://snyk.io/docs/snyk-for-scala/)
+###  [ ]() <a id="category-name"></a>
 
-To be able to test scala projects, you need to use the **sbt-dependency-graph** plugin for sbt. To read more about sbt-dependency-graph, go here: [https://github.com/jrudolph/sbt-dependency-graph](https://github.com/jrudolph/sbt-dependency-graph)
+#### Starting to fix vulnerabilities
 
-We recommend that you install it as a global plugin, although it can be installed by project as well.
+* [ Prioritizing Snyk issues](/hc/en-us/articles/360009884837-Prioritizing-Snyk-issues)
+* [ Why can't I open a Pull Request / Merge Request for issues found by Snyk ?](/hc/en-us/articles/360018829997-Why-can-t-I-open-a-Pull-Request-Merge-Request-for-issues-found-by-Snyk-)
+* [ How Snyk finds out about new vulnerabilities](/hc/en-us/articles/360003923877-How-Snyk-finds-out-about-new-vulnerabilities)
+* [ What languages do we support Fix Pull Requests or Merge Requests?](/hc/en-us/articles/360003044737-What-languages-do-we-support-Fix-Pull-Requests-or-Merge-Requests-)
+* [ Fix your vulnerabilities](/hc/en-us/articles/360003891038-Fix-your-vulnerabilities)
+* [ Upgrading package versions to fix vulnerabilities](/hc/en-us/articles/360003891058-Upgrading-package-versions-to-fix-vulnerabilities)
+* [ Snyk patches to fix vulnerabilities](/hc/en-us/articles/360003891078-Snyk-patches-to-fix-vulnerabilities)
+* [ Introduction to ignoring issues](/hc/en-us/articles/360003891098-Introduction-to-ignoring-issues)
+* [ Merge advice](/hc/en-us/articles/360007389537-Merge-advice)
 
-Install sbt here: [https://www.scala-sbt.org/1.x/docs/Setup.html](https://www.scala-sbt.org/1.x/docs/Setup.html)
+1.  [Docs Library \| Snyk](/hc/en-us)
+2.  [Fixing and prioritizing issues](/hc/en-us/categories/360001328418-Fixing-and-prioritizing-issues)
+3.  [Starting to fix vulnerabilities](/hc/en-us/sections/360001106758-Starting-to-fix-vulnerabilities)
 
-Using sbt plugins: [https://www.scala-sbt.org/0.13/docs/Using-Plugins.html](https://www.scala-sbt.org/0.13/docs/Using-Plugins.html)
+##  Why can't I open a Pull Request / Merge Request for issues found by Snyk ?
 
-**NOTE**: Upon initial install of sbt, the _~./sbt/&lt;version&gt;/plugins/plugins.sbt_ file and folder will not exist, you will have to create it.
+You would not necessarily get a Fix PR button for your project whenever you import it from your Source Control tool or run a scan. Snyk only opens PR for direct dependencies. 
 
-The _~./sbt/&lt;version&gt;/plugins/plugins.sbt_ file should be updated with the following line:
+If your project has transitive dependencies that contains vulnerabilities, Snyk would not open PRs against them.
 
-```text
-addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.9.2")
-```
-
+* 

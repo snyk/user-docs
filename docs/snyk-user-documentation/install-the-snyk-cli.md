@@ -1,0 +1,2 @@
+# Install the Snyk CLI
+

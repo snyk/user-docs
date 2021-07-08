@@ -1,40 +1,32 @@
-# Snyk runtime monitoring: an overview of the app interface
+# Configure your integration to find security issues in your CloudFormation files
 
-####  [Submit a Support ticket](https://support.snyk.io/hc/en-us/requests/new) [Sign in to Support](https://support.snyk.io/hc/en-us/signin) [Sign up for free](https://snyk.io/login?cta=sign-up&loc=nav&page=support_docs_page)
+* [ Configure your integration to find security issues in your CloudFormation files](/hc/en-us/articles/4402937668241-Configure-your-integration-to-find-security-issues-in-your-CloudFormation-files)
+* [ Scan and fix security issues in your CloudFormation files](/hc/en-us/articles/4402971349009-Scan-and-fix-security-issues-in-your-CloudFormation-files)
+* [ Detecting CloudFormation configuration files using a broker](/hc/en-us/articles/4402964063377-Detecting-CloudFormation-configuration-files-using-a-broker)
 
-###  [ ]() <a id="category-name"></a>
+##  Configure your integration to find security issues in your CloudFormation files
 
-#### Runtime monitoring
+Snyk tests and monitors CloudFormation files from source code repositories. It gives advice on how to better secure cloud environments by catching misconfigurations before they are pushed to production along with assistance on how best to fix them.
 
-* [ Snyk runtime monitoring: introduction](/hc/en-us/articles/360003737297-Snyk-runtime-monitoring-introduction)
-* [ Snyk runtime monitoring: an overview of the app interface](/hc/en-us/articles/360003699038-Snyk-runtime-monitoring-an-overview-of-the-app-interface)
-* [ Snyk runtime monitoring: prerequisites for configuration](/hc/en-us/articles/360003737317-Snyk-runtime-monitoring-prerequisites-for-configuration)
-* [ Snyk runtime monitoring: install the Snyk agent for Node.js](/hc/en-us/articles/360003699058-Snyk-runtime-monitoring-install-the-Snyk-agent-for-Node-js)
-* [ Snyk runtime monitoring: upgrade the Snyk agent for Node.js](/hc/en-us/articles/360003737337-Snyk-runtime-monitoring-upgrade-the-Snyk-agent-for-Node-js)
-* [ Snyk runtime monitoring: disable the Snyk agent](/hc/en-us/articles/360003699078-Snyk-runtime-monitoring-disable-the-Snyk-agent)
-* [ Snyk runtime monitoring: uninstall the Snyk agent for Node.js](/hc/en-us/articles/360003737357-Snyk-runtime-monitoring-uninstall-the-Snyk-agent-for-Node-js)
-* [ Snyk runtime: what data is used when monitoring my Node.js projects?](/hc/en-us/articles/360003699098-Snyk-runtime-what-data-is-used-when-monitoring-my-Node-js-projects-)
-* [ Snyk runtime monitoring: install the Snyk agent for Java](/hc/en-us/articles/360003699118-Snyk-runtime-monitoring-install-the-Snyk-agent-for-Java)
-* [ Snyk runtime monitoring: upgrade the Snyk agent for Java](/hc/en-us/articles/360003699138-Snyk-runtime-monitoring-upgrade-the-Snyk-agent-for-Java)
+#### Supported Git repositories and file formats
 
- [See more](/hc/en-us/sections/360001051838-Runtime-monitoring)
+Snyk currently scans CloudFormation files in `JSON` and `YAML` format when imported from an integrated Git repository. Scan a CloudFormation module repository by either importing the repo that holds the module from an SCM or by using the directory itself with the `snyk iac test` command. 
 
-1.  [Docs Library \| Snyk](/hc/en-us)
-2.  [Reports](/hc/en-us/categories/360000598418-Reports)
-3.  [Runtime monitoring](/hc/en-us/sections/360001051838-Runtime-monitoring)
+Scanning CloudFormation provides security feedback on everything that is statically configured in the module. To benefit from recurring/scheduled testing, it's best practice to import custom modules directly from an SCM.
 
-##  Snyk runtime monitoring: an overview of the app interface
+#### Configure Snyk to scan your CloudFormation configuration files
 
-When Snyk runtime monitoring is successfully monitoring your projects, there are a few positive indications in the app:
+**Prerequisites**
 
-* From the **Projects** tab, an animated indicator appears on the rows for all projects monitored at runtime:
+* You must be an administrator for the organization you're configuring in Snyk.
+* Ensure you’ve already integrated your Git repository; if you haven’t done this yet, check out the [Git repository \(SCM\) integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations).
 
-From within a project that is monitored at runtime:
+**Configure Snyk**
 
-* **Monitored at Runtime** appears at the top of the project page.
-* **Runtime agent upgrade available**, indicates we've updated the Snyk agent and we recommend you upgrade.
-* **Live runtime agents**, displays the number of application instances running and monitored by Snyk at runtime
-* **Called At Runtime** indicates that vulnerable functions were recently invoked in a monitored application instance. This tag appears only when vulnerable functions are called for a monitored project.
-* Per vulnerability, the vulnerable functions are listed and **Monitored** appears next to those functions being watched at runtime.
-* An indicator also displays how long it has been since one of the vulnerable functions was last called.
-* 
+1. **Note**
+
+   Integrations are managed per organization.
+
+2. Enable Snyk to detect Infrastructure as code files as follows:
+3. If needed, review and adjust settings in the **Infrastructure as code** settings area:
+

@@ -1,38 +1,16 @@
-# Licenses overview
+# Identity Provider \(IdP\) migration
 
-##  Licenses overview
+When migrating from a legacy IdP to a new IdP, new IdP metadata information must be submitted to Snyk.
 
-**Feature availability**  
-Licenses are available to all paid plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+To migrate identity providers:
 
-Every time you test your projects either with the CLI or from our app, your projects are scanned for not only vulnerabilities but also for license compliance. This includes all of your direct and indirect dependencies. Snyk scans your manifest files, and then checks for license issues against Snyk’s known licenses.
+1. Download the correct [Worksheet](https://support.snyk.io/hc/en-us/articles/360017753618-Set-up-Snyk-Single-Sign-On-SSO-#Resources)
+2. Fill out Worksheet with the IdP metadata information
+3. Submit Worksheet via a [Support ticket](https://support.snyk.io/hc/en-us/requests/new)
 
-In order to enable customers to get started with license compliance faster, we’ve created an out of the box default policy. The default policy is a baseline which tries to answer the requirements of multiple types of applications \(SaaS, distributed, etc.\), and may be used as a starting point to calibrate additional license policies. The default policy doesn’t endorse or criticize any license.  
-Different customers may have different needs and tolerance for different license types. We encourage you to make sure you made the needed changes or created new policies that fit your company’s specific requirements.
+To prevent new users from being created within Snyk, you’ll need to maintain your SAML protocol and use both the same Entity ID and ACS URL. If you are changing SAML protocols, please contact Snyk Support.
 
-By [default](/hc/en-us/articles/360007476397) we determine the severity of licenses in the following way:
+After this is done, the Support team will contact you and confirm the updated metadata has granted access through the new IdP.
 
-* High severity - licenses that definitely present issues for commercial software.
-* Medium severity - licenses that have clauses that may be of concern and should be reviewed.
-
-New licenses added by Snyk will inherit the Unknown license type severity. In cases where this severity was not set to None, newly added licenses will appear in the licenses compliance results.
-
-In case you notice a license with the wrong license assigned to it, you can reach out to our support team. We will investigate the request and update the license if needed.
-
-To facilitate onboarding of your developers, we recommend that your teams check these defaults, update severities and add instructions per license type based on the policies outlined specifically by your Legal teams. Once updated, when Snyk detects a license violation it displays the violation for all users in the organization from our UI project area, or from the CLI Snyk test results, in the same way as a security vulnerability, and including the severity and instructions you configured.
-
-**An inventory of your licenses**
-
-Within the **Reports** area you can view an inventory of all of your licenses across all your projects. Snyk also lists packages that have dual licenses and multiple licenses. See [here](/hc/articles/360003557857#UUID-627d8387-74c4-9228-477b-263417eb2a61) for more information.
-
-**Supported package managers**
-
-* npm
-* RubyGems
-* Maven
-* Pip
-* Nuget
-* Go
-* Composer
-* Cocoapods
+For more information, see [Setting up Snyk Single Sign-On \(SSO\)](https://support.snyk.io/hc/en-us/articles/360017753618-Set-up-Snyk-Single-Sign-On-SSO-).
 

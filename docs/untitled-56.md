@@ -1,33 +1,9 @@
-# Test public repositories before use
+# Introducing Snyk – Docs Library
 
-1.  [Docs Library \| Snyk](/hc/en-us)
-2.  [Snyk CLI](/hc/en-us/categories/360000456217-Snyk-CLI)
-3.  [Test for vulnerabilities](/hc/en-us/sections/360001100837-Test-for-vulnerabilities)
+* [ Snyk basics](/hc/en-us/sections/360001105078-Snyk-basics)
+* [ Core concepts](/hc/en-us/sections/4403576824337-Core-concepts)
 
-##  Test public repositories before use
+##  Introducing Snyk
 
-To test a public Github, BitBucket or GitLab repository, run `snyk test` and include the Github URL to the repo.
+Introducing Snyk: the platform developers choose to build cloud native applications securely, providing a range of developer-first security products.
 
-```text
-$ snyk test https://github.com/snyk/snyk
-```
-
-The following git URL formats are supported:
-
-* `git://github.com/user/project.git#commit-ish`
-* `https://github.com/user/project#commit-ish`
-* `user/project#commit-ish`
-
-This also works for Bitbucket and GitLab.
-
-You can also test a public npm package or Github project via the Test page on [snyk.io](https://snyk.io/test/)
-
-See also
-
-* [Getting started with the CLI](/hc/articles/360003812458#UUID-19fc37f2-b686-11ed-b85c-4789e90c8dfc)
-* [Our full CLI reference](/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0)
-* [Set severity thresholds for CLI tests](/hc/articles/360003851337#UUID-844be978-191f-c813-ccd0-2221c04ca510)
-* [Test your code from the CLI](/hc/articles/360003812478#UUID-2e8464f9-1d8a-5f79-466d-2ca5c5cf9f22)
-* [Test dev dependencies](/hc/articles/360003812478#UUID-1070ae3e-5f30-cb4e-6350-a1c3f5c67511)
-* [Test public npm packages before use](/hc/articles/360003812498#UUID-0ab434a8-c1b5-873d-cbf6-7a61a07c4ad8)
-* 

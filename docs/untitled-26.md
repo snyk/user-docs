@@ -1,11 +1,15 @@
-# How can we whitelist Snyk IP addresses?
+# How to test Github Rate limiting
 
-* [ Unable to get Issuer Certificates Locally](/hc/en-us/articles/360002618657-Unable-to-get-Issuer-Certificates-Locally)
-* [ How can we whitelist Snyk IP addresses?](/hc/en-us/articles/360002153077-How-can-we-whitelist-Snyk-IP-addresses-)
+```text
+curl -i -H "Authorization: token $token" https://api.github.com/user
+```
 
-##  How can we whitelist Snyk IP addresses?
+You should receive a response similar to:
 
-Snyk is delivered over a content delivery network \(CDN\) which rotates IP addresses and entire IP ranges on an ongoing basis.  If you must be able to whitelist Snyk IPs for your project, then contact us to discuss our on-premise solution, which might be what you need.
-
-Generally, it is advised to whitelist traffic to \*.snyk.io on 443 \(HTTPS\).
+```text
+x-ratelimit-limit: 5000
+x-ratelimit-remaining: 4999
+x-ratelimit-reset: 1617899264
+x-ratelimit-used: 1
+```
 

@@ -1,27 +1,24 @@
-# Is a GitHub webhook required in order for a repo to be automatically scanned by Snyk on Pull and Pus
+# Unauthorized access or Resource does not exist : Dockerhub
 
 ####  [Submit a Support ticket](https://support.snyk.io/hc/en-us/requests/new) [Sign in to Support](https://support.snyk.io/hc/en-us/signin) [Sign up for free](https://snyk.io/login?cta=sign-up&loc=nav&page=support_docs_page)
 
 ###  [ ]() <a id="category-name"></a>
 
-#### What data does Snyk use?
+#### Docker Hub image scanning
 
-* [ What data does Snyk use and store when counting developers?](/hc/en-us/articles/360002697038-What-data-does-Snyk-use-and-store-when-counting-developers-)
-* [ Is a GitHub webhook required in order for a repo to be automatically scanned by Snyk on Pull and Push requests?](/hc/en-us/articles/360002617277-Is-a-GitHub-webhook-required-in-order-for-a-repo-to-be-automatically-scanned-by-Snyk-on-Pull-and-Push-requests-)
-* [ Snyk API reports 404 Error: unsupported url](/hc/en-us/articles/360001793538-Snyk-API-reports-404-Error-unsupported-url)
-* [ Satisfying version not found for cousin dependencies](/hc/en-us/articles/360001735097-Satisfying-version-not-found-for-cousin-dependencies)
-* [ What does Snyk access and store when scanning a project?](/hc/en-us/articles/360000925438-What-does-Snyk-access-and-store-when-scanning-a-project-)
-* [ Manifest not found](/hc/en-us/articles/360000910537-Manifest-not-found)
+* [ Unauthorized access or Resource does not exist : Dockerhub](/hc/en-us/articles/360019771598-Unauthorized-access-or-Resource-does-not-exist-Dockerhub)
+* [ Container security: integrate and test Docker Hub](/hc/en-us/articles/360003916038-Container-security-integrate-and-test-Docker-Hub)
+* [ Configure integration for Docker Hub](/hc/en-us/articles/360003916058-Configure-integration-for-Docker-Hub)
+* [ Docker Hub: add projects and images to the Snyk UI](/hc/en-us/articles/360003946977-Docker-Hub-add-projects-and-images-to-the-Snyk-UI)
 
 1.  [Docs Library \| Snyk](/hc/en-us)
-2.  [FAQs](/hc/en-us/categories/360000116697-FAQs)
-3.  [What data does Snyk use?](/hc/en-us/sections/360000935457-What-data-does-Snyk-use-)
+2.  [Snyk Container](/hc/en-us/categories/360000583498-Snyk-Container)
+3.  [Docker Hub image scanning](/hc/en-us/sections/360001114198-Docker-Hub-image-scanning)
 
-##  Is a GitHub webhook required in order for a repo to be automatically scanned by Snyk on Pull and Push requests?
+##  Unauthorized access or Resource does not exist : Dockerhub
 
-You do not have to create the webhook in GitHub.
+**Problem Statement:** Import fails with the error _Unauthorized access or Resource does not exist_ when importing images from Dockerhub
 
-The settings can be configured  in the **Default Snyk test for pull requests** section from the URL:  
-`https://app.snyk.io/yourorgname/manage/integrations/github`
+**Resolution:** This is because your image is private on your Dockerhub account. To resolve this make your image public in the settings&gt;Visibility settings section of your repository.
 
 * 

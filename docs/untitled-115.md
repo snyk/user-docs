@@ -1,8 +1,6 @@
-# The page you were looking for doesn't exist – Docs Library
+# Dependency management – Docs Library
 
-You may have mistyped the address or the page may have moved
+Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 
-Oh no! It looks like we might have moved that article. Check out our main menu, and our great search. Still need help? Contact us and we're happy to help.
-
- [Take me back to the home page](/hc/en-us)
+Ready to get started? [Sign up for free](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 

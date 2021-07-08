@@ -1,0 +1,2 @@
+# How are patches validated?
+
