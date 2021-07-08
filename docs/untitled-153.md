@@ -1,19 +1,19 @@
 # Snyk for .NET
 
-* [ Language support summary](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360020352437-Language-support-summary/README.md)
-* [ Snyk for JavaScript](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004712477-Snyk-for-JavaScript/README.md)
-* [ Snyk for Java \(Gradle, Maven\)](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360003817357-Snyk-for-Java-Gradle-Maven-/README.md)
-* [ Snyk for .NET](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004519138-Snyk-for-NET/README.md)
-* [ Snyk for Python](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004699377-Snyk-for-Python/README.md)
-* [ Snyk for Golang](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360003817417-Snyk-for-Golang/README.md)
-* [ Snyk for Swift and Objective-C \(CocoaPods\)](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004701658-Snyk-for-Swift-and-Objective-C-CocoaPods-/README.md)
-* [ Snyk for Scala](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360003781318-Snyk-for-Scala/README.md)
-* [ Snyk for Ruby](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360003781298-Snyk-for-Ruby/README.md)
-* [ Snyk for PHP](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360003817397-Snyk-for-PHP/README.md)
+* [ Language support summary](/hc/en-us/articles/360020352437-Language-support-summary)
+* [ Snyk for JavaScript](/hc/en-us/articles/360004712477-Snyk-for-JavaScript)
+* [ Snyk for Java \(Gradle, Maven\)](/hc/en-us/articles/360003817357-Snyk-for-Java-Gradle-Maven-)
+* [ Snyk for .NET](/hc/en-us/articles/360004519138-Snyk-for-NET)
+* [ Snyk for Python](/hc/en-us/articles/360004699377-Snyk-for-Python)
+* [ Snyk for Golang](/hc/en-us/articles/360003817417-Snyk-for-Golang)
+* [ Snyk for Swift and Objective-C \(CocoaPods\)](/hc/en-us/articles/360004701658-Snyk-for-Swift-and-Objective-C-CocoaPods-)
+* [ Snyk for Scala](/hc/en-us/articles/360003781318-Snyk-for-Scala)
+* [ Snyk for Ruby](/hc/en-us/articles/360003781298-Snyk-for-Ruby)
+* [ Snyk for PHP](/hc/en-us/articles/360003817397-Snyk-for-PHP)
 
-  [See more](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/sections/360001087857-Language-package-manager-support/README.md)
+ [See more](/hc/en-us/sections/360001087857-Language-package-manager-support)
 
-## Snyk for .NET
+##  Snyk for .NET
 
 Snyk offers security scanning to test your projects for vulnerabilities, both through your CLI and through different integrations from our UI.
 
@@ -25,7 +25,7 @@ Features might not be available, depending on your subscription plan.
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-|  | [NuGet](https://www.nuget.org/) | ✔︎ | ✔︎ | ✔︎ |  |  |
+|  | [NuGet](https://www.nuget.org/)  | ✔︎ | ✔︎ | ✔︎ |  |  |
 |  | [Paket](https://fsprojects.github.io/Paket/index.html) | ✔︎ |  | ✔︎ |  |  |
 
 #### Snyk CLI tool for .NET projects <a id="h_01ED93MRAVCCCSMJTFJM4595T5"></a>
@@ -36,7 +36,7 @@ The following manifest files are supported:
 
 **Nuget**
 
-Follow the same instructions as [Snyk CLI tool for .NET projects](untitled-153.md)
+ Follow the same instructions as [Snyk CLI tool for .NET projects]()
 
 In order to build the dependency tree, Snyk analyzes the **paket.dependencies** and **paket.lock** files.
 
@@ -92,6 +92,7 @@ From the Snyk UI, you can configure whether Snyk should scan your entire project
 
 **Update language preferences**
 
-1. 1. Go to settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; and click for .NET
-      * If checked, Snyk scans all development dependencies.
+1. 2. Go to settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt;  and click for .NET
+
+    - If checked, Snyk scans all development dependencies.
 

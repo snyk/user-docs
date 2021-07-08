@@ -1,6 +1,6 @@
 # Install the Snyk controller on Amazon Elastic Kubernetes Service \(Amazon EKS\)
 
-## Install the Snyk controller on Amazon Elastic Kubernetes Service \(Amazon EKS\)
+##  Install the Snyk controller on Amazon Elastic Kubernetes Service \(Amazon EKS\)
 
 Installing the Snyk controller enables you to import and test your running EKS workloads and identify vulnerabilities in their associated images and configurations that might make those workloads less secure. Once imported, Snyk continues to monitor those workloads, identifying additional security issues as new images are deployed and the workload configuration changes.
 
@@ -8,11 +8,11 @@ You have the option of deploying the Snyk controller for Amazon EKS as an offici
 
 There are three deployment options to match most common use cases. These are as follows:
 
-**1.** If you already have an Amazon EKS cluster running in your AWS account
+**1.** If you already have an Amazon EKS cluster running in your AWS account 
 
-**2.** If you already have anAmazon Virtual Private Cloud \(Amazon VPC\) but need an Amazon EKS cluster _**with**_ the Snyk controller deployed to the cluster
+**2.** If you already have anAmazon Virtual Private Cloud \(Amazon VPC\) but need an Amazon EKS cluster _**with**_ the Snyk controller deployed to the cluster 
 
-**3.** If you have neither an Amazon VPC or Amazon EKS cluster and need all services _**with**_ the Snyk controller deployed to the cluster
+**3.** If you have neither an Amazon VPC or Amazon EKS cluster and need all services _**with**_ the Snyk controller deployed to the cluster 
 
 ### Configure snyk-monitor to pull and scan images from ECR
 

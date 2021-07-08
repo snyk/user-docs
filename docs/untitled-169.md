@@ -1,12 +1,12 @@
 # Remediate your vulnerabilities
 
-* [ Evaluating and prioritizing vulnerabilities](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360006113978-Evaluating-and-prioritizing-vulnerabilities/README.md)
-* [ Remediate your vulnerabilities](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360006113798-Remediate-your-vulnerabilities/README.md)
-* [ Upgrading package versions to fix](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360005993658-Upgrading-package-versions-to-fix/README.md)
-* [ Snyk patches to fix](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004032437-Snyk-patches-to-fix/README.md)
-* [ Ignoring issues not prioritized for your project](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004002718-Ignoring-issues-not-prioritized-for-your-project/README.md)
+* [ Evaluating and prioritizing vulnerabilities](/hc/en-us/articles/360006113978-Evaluating-and-prioritizing-vulnerabilities)
+* [ Remediate your vulnerabilities](/hc/en-us/articles/360006113798-Remediate-your-vulnerabilities)
+* [ Upgrading package versions to fix](/hc/en-us/articles/360005993658-Upgrading-package-versions-to-fix)
+* [ Snyk patches to fix](/hc/en-us/articles/360004032437-Snyk-patches-to-fix)
+* [ Ignoring issues not prioritized for your project](/hc/en-us/articles/360004002718-Ignoring-issues-not-prioritized-for-your-project)
 
-## Remediate your vulnerabilities
+##  Remediate your vulnerabilities
 
 Snyk helps you to fix vulnerabilities in two ways. Either by upgrading the direct dependencies to a vulnerability free version or by patching the vulnerability.
 
@@ -48,6 +48,7 @@ From our app, for each tab \(upgrade and patch\) in the Remediation Advice area 
 
 The Remediation Advice area appears in the project details page near the top, similar to the following examples:
 
+  
 Upgrade and Patchable issues tabs
 
 You can also find additional advice and details farther down in the Project details page:

@@ -1,6 +1,6 @@
 # Fixing vulnerabilities
 
-## Fixing vulnerabilities
+##  Fixing vulnerabilities
 
 Snyk provides actionable remediation advice to fix vulnerabilities. For more details, see [Remediate your vulnerabilities](https://support.snyk.io/hc/en-us/articles/360006113798-Remediate-your-vulnerabilities).
 

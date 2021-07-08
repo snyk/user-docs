@@ -1,15 +1,15 @@
 # Upgrading dependencies with automatic PRs
 
-* [ Keep your dependencies healthy](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360006583238-Keep-your-dependencies-healthy/README.md)
-* [ Upgrading dependencies with automatic PRs](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360006581898-Upgrading-dependencies-with-automatic-PRs/README.md)
+* [ Keep your dependencies healthy](/hc/en-us/articles/360006583238-Keep-your-dependencies-healthy)
+* [ Upgrading dependencies with automatic PRs](/hc/en-us/articles/360006581898-Upgrading-dependencies-with-automatic-PRs)
 
-## Upgrading dependencies with automatic PRs
+##  Upgrading dependencies with automatic PRs
 
 Once you have imported your preferred Git repositories, Snyk monitors those repos, regularly scanning them for vulnerability, license and dependency health issues. In addition to remediation advice, Snyk can then also automatically create pull requests \(PRs\) on your behalf in order to upgrade your dependencies based on the scan results.
 
 Snyk currently supports this feature for npm, Yarn and Maven-Central projects through GitHub, GitHub Enterprise Server and BitBucket Cloud. For use with the Broker, your admin should first upgrade to v4.55.0 or later. See our docs for additional assistance when upgrading Broker.
 
-1. Integration is configured and users enable automatic upgrade PRs \(within the integration settings or [in the project settings](untitled-178.md)\).
+1. Integration is configured and users enable automatic upgrade PRs \(within the integration settings or [in the project settings]()\).
 2. Snyk scans your projects as you import them and continues to monitor your projects, scanning on a regular basis thereafter.
 3. Per scan, when new versions for your dependencies are identified, Snyk does the following:
    * Snyk creates automatic upgrade PRs \(frequency based on Snyk project settings\)

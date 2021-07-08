@@ -6,9 +6,9 @@ A condition is the variable to set a rule on. Condition categories include:
 
 **CWE**
 
-After you select a condition category, you are prompted to select **Includes** or **Does not include** and the desired condition \(for example: Mature, CWE-1234\).
+After you select a condition category, you are prompted to select **Includes** or **Does not include** and the desired condition \(for example: Mature, CWE-1234\). 
 
-You can stack multiple conditions in the same rule using the **AND** function.
+You can stack multiple conditions in the same rule using the **AND** function. 
 
 | **Condition Category** | **Condition Variables/Definitions** |
 | :--- | :--- |

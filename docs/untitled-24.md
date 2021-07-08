@@ -1,20 +1,20 @@
-# Why do yarn and npm report more dependencies than snyk?
+# Snyk Customer Onboarding - Team Plan
 
-* [ Introduction to the Snyk Team plan](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360018365737-Introduction-to-the-Snyk-Team-plan/README.md)
-* [ Snyk Customer Onboarding - Team Plan](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360018935478-Snyk-Customer-Onboarding-Team-Plan/README.md)
-* [ Critical severity migration](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360020021058-Critical-severity-migration/README.md)
-* [ Snyk Preview](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360020514418-Snyk-Preview/README.md)
-* [ Snyk SCM integration: good practices](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360018010597-Snyk-SCM-integration-good-practices/README.md)
-* [ Snyk CI/CD Integration: good practices](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360018245398-Snyk-CI-CD-Integration-good-practices-/README.md)
+* [ Introduction to the Snyk Team plan](/hc/en-us/articles/360018365737-Introduction-to-the-Snyk-Team-plan)
+* [ Snyk Customer Onboarding - Team Plan](/hc/en-us/articles/360018935478-Snyk-Customer-Onboarding-Team-Plan)
+* [ Critical severity migration](/hc/en-us/articles/360020021058-Critical-severity-migration)
+* [ Snyk Preview](/hc/en-us/articles/360020514418-Snyk-Preview)
+* [ Snyk SCM integration: good practices](/hc/en-us/articles/360018010597-Snyk-SCM-integration-good-practices)
+* [ Snyk CI/CD Integration: good practices](/hc/en-us/articles/360018245398-Snyk-CI-CD-Integration-good-practices-)
 
-## Snyk Customer Onboarding - Team Plan
+##  Snyk Customer Onboarding - Team Plan
 
 Use this information to onboard your colleagues with the Snyk on the [Team plan](https://snyk.io/plans/), allowing your team to make the best use of Snyk to find and fix project vulnerabilities by:
 
 * Developing rollout strategies for best adoption of Snyk to multiple users in your company, 
 * Making best use of reports, prioritizations and remediations to get quick results from Snyk adoption.
 
-This documentation assumes you have used Snyk, and are familiar with core Snyk functions.
+This documentation assumes you have used Snyk, and are familiar with core Snyk functions. 
 
 #### More details
 
@@ -30,7 +30,7 @@ You may use different approaches, depending on your situation and the languages 
 
 #### Work with early adopters
 
-Consider initially working with early-adopter teams and users, testing and monitoring their projects using the CLI. This should give you some quick results; you can then repeat the process with other teams and users.
+Consider initially working with early-adopter teams and users, testing and monitoring their projects using the CLI. This should give you some quick results; you can then repeat the process with other teams and users. 
 
 Starting with a few users avoids issues you may encounter if you try to roll Snyk out all at once across your company.
 
@@ -41,13 +41,13 @@ Starting with a few users avoids issues you may encounter if you try to roll Sny
 
 #### Integrate with an SCM integration
 
-Assuming these integrations are valid for your company, we recommend setting up early adopters with a Source Code Management \(SCM\) integration such as GitHub.
+Assuming these integrations are valid for your company, we recommend setting up early adopters with a Source Code Management \(SCM\) integration such as GitHub. 
 
 Starting with this integration makes it easy for developers to find and fix vulnerabilities, and to get alerted when new vulnerabilities have been discovered. After this is successful, these users can be used as internal advocates and can demonstrate the benefits of using Snyk.
 
-Note: This approach works for projects using Node, Java, Python and Ruby. If support is needed for Go, PHP or .Net, the CLI should be used as the primary method of testing and monitoring projects.
+Note: This approach works for projects using Node, Java, Python and Ruby.  If support is needed for Go, PHP or .Net, the CLI should be used as the primary method of testing and monitoring projects.
 
-\*\* For Scala & Gradle \(only\) we recommend scanning the projects only in the CLI or CI/CD, to get accurate results.
+\*\* For Scala & Gradle \(only\) we recommend scanning the projects only in the CLI or CI/CD, to get accurate results. 
 
 **More details**
 

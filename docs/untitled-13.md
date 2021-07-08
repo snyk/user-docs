@@ -1,9 +1,9 @@
-# What counts as a test?
+# Scan container images from Quay in Snyk
 
-* [ Container security with Quay integration](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360018445398-Container-security-with-Quay-integration/README.md)
-* [ Scan container images from Quay in Snyk](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360018308097-Scan-container-images-from-Quay-in-Snyk/README.md)
+* [ Container security with Quay integration](/hc/en-us/articles/360018445398-Container-security-with-Quay-integration)
+* [ Scan container images from Quay in Snyk](/hc/en-us/articles/360018308097-Scan-container-images-from-Quay-in-Snyk)
 
-## Scan container images from Quay in Snyk
+##  Scan container images from Quay in Snyk
 
 Snyk tests and monitors your Quay container images by evaluating its tags in your repositories. Once imported to Snyk, your image vulnerabilities are surfaced and can be triaged easily.
 
@@ -12,7 +12,7 @@ To add images from Quay to Snyk:
 **Prerequisites**:
 
 * Have a Snyk account with access to the relevant organization \(given by an administrator\).
-* Quay integration configured. To learn more about that, follow the steps in [Container security with Quay integration](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360018445398/README.md)
+* Quay integration configured. To learn more about that, follow the steps in [Container security with Quay integration](/hc/en-us/articles/360018445398)
 
 **Steps:**
 

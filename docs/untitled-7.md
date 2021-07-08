@@ -1,4 +1,4 @@
-# Why do some tests stop running when I have used my limit?
+# Monitored projects are overwriting each other in the UI
 
 When you run `snyk monitor`, we use the `name` of the root package to find the appropriate project. The CLI will use the directory base-name if the root package has no name so if you are using the same default working directory for all your CI jobs then this could mean they are overwritten in the UI due to Snyk matching them to the wrong existing project.
 

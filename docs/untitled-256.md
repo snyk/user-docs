@@ -1,6 +1,6 @@
 # Fix PR failed for Bitbucket Cloud integration
 
-## Fix PR failed for Bitbucket Cloud integration
+##  Fix PR failed for Bitbucket Cloud integration
 
 A fix PR opened from within Snyk Fails without an obvious error, you may receive a notification email saying failed to create automatic fix PR.
 

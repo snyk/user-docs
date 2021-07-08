@@ -1,16 +1,16 @@
-# How can I use Snyk behind a proxy?
+# Snyk CI/CD Integration: good practices
 
-## Snyk CI/CD Integration: good practices
+##  Snyk CI/CD Integration: good practices
 
 ### Typical stages of adoption
 
 Developer teams typically adopt Snyk in the following stages:
 
-1. [Expose vulnerabilities](untitled-12.md) \(snyk monitor\)
-2. [Use Snyk as a gatekeeper](untitled-12.md) \(snyk test\)
-3. [Continuous monitoring](untitled-12.md) \(snyk test + Snyk monitor\)
+1. [Expose vulnerabilities]() \(snyk monitor\)
+2. [Use Snyk as a gatekeeper]() \(snyk test\)
+3. [Continuous monitoring]() \(snyk test + Snyk monitor\)
 
-   **Stage 1: Expose vulnerabilities \(Snyk monitor\)**
+ **Stage 1: Expose vulnerabilities \(Snyk monitor\)**
 
 This is a typical initial approach, using Snyk results to expose to your team vulnerabilities during the development process, which increases visibility of these vulnerabilities amongst your team.
 
@@ -19,19 +19,19 @@ This is because all projects are vulnerable, and after you set Snyk to fail the 
 
 Using **snyk monitor** to expose results will provide information, without disrupting processes.
 
-**Stage 2: Use Snyk as a gatekeeper \(snyk test\)**
+ **Stage 2: Use Snyk as a gatekeeper \(snyk test\)**
 
 This next approach prevents the introduction of new vulnerabilities \(sometimes known as "stopping the bleeding"\).
 
 After your teams understand the vulnerabilities in their applications, and develops a process for remediating them early in the development cycle, you can configure Snyk to fail your builds, to prevent introducing vulnerabilities into your applications..
 
-Add **snyk test** to your build or enable the fail functionality to make Snyk fail your builds, providing the results output to the console. Your Devs or DevOps teams can use the results to decide whether to stop or continue the build.
+Add **snyk test** to your build or enable the fail functionality to make Snyk fail your builds, providing the results output to the console.  Your Devs or DevOps teams can use the results to decide whether to stop or continue the build.
 
-**Stage 3: Continuous monitoring \(snyk test + Snyk monitor\)**
+ **Stage 3: Continuous monitoring \(snyk test + Snyk monitor\)**
 
 After you configure Snyk to fail the build when vulnerabilities are detected, you can now configure Snyk to send a snapshot of your project's successful builds to Snyk for ongoing monitoring.
 
-To do this, configure your pipeline to run **snyk monitor** if your **snyk test** returns a successful exit code.
+To do  this, configure your pipeline to run **snyk monitor** if your **snyk test** returns a successful exit code.
 
 #### Pre-requisites
 
@@ -62,7 +62,7 @@ To run the snyk test, you need an authentication token with access to the desire
 Snyk supports the following approaches to add tests to a build pipeline:
 
 * **Snyk integration plugins**: Snyk provides pre-built plugins for several CI servers, including [Jenkins](https://support.snyk.io/hc/en-us/articles/360004032217-Jenkins-integration-overview), [Team City](https://support.snyk.io/hc/en-us/articles/360004032297-TeamCity-integration-overview)[, Bitbucket Pipelines](https://support.snyk.io/hc/en-us/articles/360004032177-Bitbucket-Pipelines-integration-overview) and [Azure Pipelines. ](https://support.snyk.io/hc/en-us/articles/360004127677-Azure-Pipelines-integration) See the [Continuous Integration](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations) documentation for more details
-* **Snyk CLI:** For teams with more complex workflows, or using a build system without a Snyk pre-built plugin, you can use the Snyk CLI tool during CI/CD setups. See [Setting up using Snyk CLI](untitled-12.md) for more details.
+* **Snyk CLI:** For teams with more complex workflows, or using a build system without a Snyk pre-built plugin, you can use the Snyk CLI tool during CI/CD setups. See [Setting up using Snyk CLI]() for more details.
 * **Snyk API**: For teams with complex requirements, Snyk provides a REST API, which you can use for functions including initiating scans, onboarding new projects, and testing arbitrary libraries. See the [Snyk API documentation](https://snyk.docs.apiary.io/) for more details.
 
 #### Setting up using Snyk CLI
@@ -116,7 +116,7 @@ You can use Snyk's JSON output to create custom test reports as build artifacts,
 
 #### Creating work items for new vulnerabilities
 
-Snyk allows you to automatically create new work items in JIRA \(see [Jira integration](https://support.snyk.io/hc/en-us/articles/360004002458-Jira) documentation\). You can customize this code for your specific requirements, or adapt it to work with other work management systems.
+Snyk allows you to automatically create new work items in JIRA \(see [Jira integration](https://support.snyk.io/hc/en-us/articles/360004002458-Jira) documentation\). You can customize this code for your specific requirements, or adapt it to work with other work management systems. 
 
 See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns) to get started.  
 or review the [API to create Jira tickets.](https://snyk.docs.apiary.io/#reference/projects/project-jira-issues/create-jira-issue)
@@ -125,7 +125,7 @@ or review the [API to create Jira tickets.](https://snyk.docs.apiary.io/#referen
 
 These strategies are useful to teams using Snyk's SCA \(Software Composition Analysis\) testing features.
 
-#### Gradle & Scala
+#### Gradle & Scala 
 
 * For "multi-project" configurations, test all sub-projects, use the next flag with your monitor or test command **--all-sub-projects** 
 * To scan specific configurations, select certain values of configuration attributes to resolve the dependencies. Use the next flag with your test or monitor command **--configuration-attributes=&lt;string&gt;**
@@ -139,7 +139,7 @@ These strategies are useful to teams using Snyk's SCA \(Software Composition Ana
   snyk test --command=python3
   ```
 
-* If you scan a Pip project and use the **--file=** because your manifest file isn’t the standard of **requirement.txt**, then the next flag is mandatory to specify Pip as the package manager **--package-manager=pip**
+* If you scan a Pip project and use the **--file=** because your manifest file isn’t the standard of **requirement.txt**, then the next flag is mandatory to specify Pip as the package manager **--package-manager=pip** 
 
 #### .Net
 
@@ -158,7 +158,7 @@ Note: Yarn workspaces support is for **snyk test** and **snyk monitor** commands
 Example:
 
 ```text
-snyk test --yarn-workspaces --detection-depth=6
+snyk test --yarn-workspaces --detection-depth=6 
 ```
 
 This scans only the packages that belong to any discovered workspaces this directory and 5 sub-directories deep.
@@ -179,7 +179,7 @@ Some customers have complex projects, with multiple languages, package managers,
   snyk test --file=package.json
   ```
 
-  After you install the dependencies of each project, make a similar call pointing to the specific artifact \(such as **pom.xml**\). This is fast and efficient, but can be difficult to scale, especially if you are not familiar with the project.
+   After you install the dependencies of each project, make a similar call pointing to the specific artifact \(such as **pom.xml**\). This is fast and efficient, but can be difficult to scale, especially if you are not familiar with the project.
 
 * Use the **--all-projects** and **--detection-depth** arguments, and the Snyk CLI or CI/CD plugin will search up to **--detection-depth** in the folder structure for any manifests that match the supported files types. Each project is scanned and has its own result. Similarly, if using **snyk-monitor**, a separate result is created for each project. This is a good way to automate scanning especially if you have projects spanning node, .net, python, and so on.
 
@@ -187,11 +187,12 @@ Some customers have complex projects, with multiple languages, package managers,
 
 * For most Gradle projects, using **--all-projects** works, as it invokes gradle-specific options behind the scenes in the form of:  
 
-```text
-  snyk test --file=build.gradle --all-sub-projects
-```
 
-when it finds the build file as part of the **--all-projects** search
+  ```text
+  snyk test --file=build.gradle --all-sub-projects
+  ```
+
+   when it finds the build file as part of the **--all-projects** search
 
 * Gradle may require additional configuration parameters. If so, to target the other artifacts using **--file=** for each manifest of the other languages/package-managers, as mentioned in the first option. You must then use **--all-sub-projects** and potentially **--configuration-matching** and --configuration-matching to scan a complex gradle project.
 

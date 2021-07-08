@@ -1,6 +1,6 @@
 # Apiary - API server took too long to respond
 
-Some API requests may take longer than the default timeout in Apiary.
+Some API requests may take longer than the default timeout in Apiary. 
 
 In a case like this you could use a command like this to get your results:
 

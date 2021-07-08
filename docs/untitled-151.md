@@ -1,14 +1,14 @@
 # Invite and collaborate with team members
 
-* [ What’s a Snyk group?](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004037617-What-s-a-Snyk-group-/README.md)
-* [ Snyk groups overview](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004008378-Snyk-groups-overview/README.md)
-* [ Create a new Snyk group](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004008398-Create-a-new-Snyk-group/README.md)
-* [ What’s a Snyk organization?](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004037637-What-s-a-Snyk-organization-/README.md)
-* [ Snyk groups: switch between groups and orgs](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360003946717-Snyk-groups-switch-between-groups-and-orgs/README.md)
-* [ Invite and collaborate with team members](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004399238-Invite-and-collaborate-with-team-members/README.md)
-* [ Manage Snyk organizations](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004008418-Manage-Snyk-organizations/README.md)
+* [ What’s a Snyk group?](/hc/en-us/articles/360004037617-What-s-a-Snyk-group-)
+* [ Snyk groups overview](/hc/en-us/articles/360004008378-Snyk-groups-overview)
+* [ Create a new Snyk group](/hc/en-us/articles/360004008398-Create-a-new-Snyk-group)
+* [ What’s a Snyk organization?](/hc/en-us/articles/360004037637-What-s-a-Snyk-organization-)
+* [ Snyk groups: switch between groups and orgs](/hc/en-us/articles/360003946717-Snyk-groups-switch-between-groups-and-orgs)
+* [ Invite and collaborate with team members](/hc/en-us/articles/360004399238-Invite-and-collaborate-with-team-members)
+* [ Manage Snyk organizations](/hc/en-us/articles/360004008418-Manage-Snyk-organizations)
 
-## Invite and collaborate with team members
+##  Invite and collaborate with team members
 
 Click settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Members** to invite new team members:
 

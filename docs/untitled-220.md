@@ -1,6 +1,6 @@
 # Understanding configuration scan issues
 
-## Understanding configuration scan issues
+##  Understanding configuration scan issues
 
 Snyk analyzes your provided configuration file for issues and provides advice on how to resolve the issue directly from the CLI.
 
@@ -31,4 +31,6 @@ The path of this issue is specified as
 ```
 
 In this screenshot you can see the highlighted line represents the identified issue.
+
+#### 
 

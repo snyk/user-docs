@@ -1,31 +1,31 @@
 # Could not Connect to Bitbucket Cloud Integration
 
-#### [Submit a Support ticket](https://support.snyk.io/hc/en-us/requests/new) [Sign in to Support](https://support.snyk.io/hc/en-us/signin) [Sign up for free](https://snyk.io/login?cta=sign-up&loc=nav&page=support_docs_page)
+####  [Submit a Support ticket](https://support.snyk.io/hc/en-us/requests/new) [Sign in to Support](https://support.snyk.io/hc/en-us/signin) [Sign up for free](https://snyk.io/login?cta=sign-up&loc=nav&page=support_docs_page)
 
-### [ ](untitled-225.md) <a id="category-name"></a>
+###  [ ]() <a id="category-name"></a>
 
 #### Integrations
 
-* [ How to test Github Rate limiting](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360019183838-How-to-test-Github-Rate-limiting/README.md)
-* [ Setting up Github Enterprise Cloud integration with Snyk](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015863578-Setting-up-Github-Enterprise-Cloud-integration-with-Snyk/README.md)
-* [ Fix PR failed for Bitbucket Cloud integration](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015665077-Fix-PR-failed-for-Bitbucket-Cloud-integration/README.md)
-* [ How to install a Beta version of the Eclipse plugin?](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015543938-How-to-install-a-Beta-version-of-the-Eclipse-plugin-/README.md)
-* [ Why are Snyk checks still occurring after removing Webhooks?](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360013813997-Why-are-Snyk-checks-still-occurring-after-removing-Webhooks-/README.md)
-* [ Could not Connect to Bitbucket Cloud Integration](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360013324857-Could-not-Connect-to-Bitbucket-Cloud-Integration/README.md)
-* [ GitHub License/Secuirty PR Test stuck on Expected](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360007716157-GitHub-License-Secuirty-PR-Test-stuck-on-Expected/README.md)
-* [ Unable to add Webhooks for Gitlab project](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360007549597-Unable-to-add-Webhooks-for-Gitlab-project/README.md)
-* [ Skipping Snyk Pull Request Checks](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360007301698-Skipping-Snyk-Pull-Request-Checks/README.md)
-* [ Heroku Snyk Add-on](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360006806618-Heroku-Snyk-Add-on/README.md)
+* [ How to test Github Rate limiting](/hc/en-us/articles/360019183838-How-to-test-Github-Rate-limiting)
+* [ Setting up Github Enterprise Cloud integration with Snyk](/hc/en-us/articles/360015863578-Setting-up-Github-Enterprise-Cloud-integration-with-Snyk)
+* [ Fix PR failed for Bitbucket Cloud integration](/hc/en-us/articles/360015665077-Fix-PR-failed-for-Bitbucket-Cloud-integration)
+* [ How to install a Beta version of the Eclipse plugin?](/hc/en-us/articles/360015543938-How-to-install-a-Beta-version-of-the-Eclipse-plugin-)
+* [ Why are Snyk checks still occurring after removing Webhooks?](/hc/en-us/articles/360013813997-Why-are-Snyk-checks-still-occurring-after-removing-Webhooks-)
+* [ Could not Connect to Bitbucket Cloud Integration](/hc/en-us/articles/360013324857-Could-not-Connect-to-Bitbucket-Cloud-Integration)
+* [ GitHub License/Secuirty PR Test stuck on Expected](/hc/en-us/articles/360007716157-GitHub-License-Secuirty-PR-Test-stuck-on-Expected)
+* [ Unable to add Webhooks for Gitlab project](/hc/en-us/articles/360007549597-Unable-to-add-Webhooks-for-Gitlab-project)
+* [ Skipping Snyk Pull Request Checks](/hc/en-us/articles/360007301698-Skipping-Snyk-Pull-Request-Checks)
+* [ Heroku Snyk Add-on](/hc/en-us/articles/360006806618-Heroku-Snyk-Add-on)
 
-  [See more](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/sections/360000935857-Integrations/README.md)
+ [See more](/hc/en-us/sections/360000935857-Integrations)
 
-* [Docs Library \| Snyk](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/README.md)
-* [FAQs](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/categories/360000116697-FAQs/README.md)
-* [Integrations](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/sections/360000935857-Integrations/README.md)
+1.  [Docs Library \| Snyk](/hc/en-us)
+2.  [FAQs](/hc/en-us/categories/360000116697-FAQs)
+3.  [Integrations](/hc/en-us/sections/360000935857-Integrations)
 
-## Could not Connect to Bitbucket Cloud Integration
+##  Could not Connect to Bitbucket Cloud Integration
 
-While Integrating **Snyk with Bitbucket cloud account** please make sure your username is the same as what appears here [https://bitbucket.org/account](https://bitbucket.org/account).
+While Integrating **Snyk with Bitbucket cloud account** please make sure your username is the same as what appears here **https://bitbucket.org/account**.
 
 Also, make sure the App password is copy/pasted without any extra spaces or characters.
 

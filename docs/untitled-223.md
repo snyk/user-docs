@@ -1,14 +1,14 @@
 # Brinqa
 
-* [ Code Dx Enterprise](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360018848798--Code-Dx-Enterprise/README.md)
-* [ Brinqa](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360012728717-Brinqa/README.md)
-* [ Fortify SSC integration](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360005507838-Fortify-SSC-integration/README.md)
-* [ Kenna Security](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360013620217-Kenna-Security/README.md)
-* [ Nucleus Security](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360012502818-Nucleus-Security/README.md)
-* [ RiskSense](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015069418-RiskSense/README.md)
-* [ Vulcan-Cyber](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360012981478-Vulcan-Cyber/README.md)
+* [ Code Dx Enterprise](/hc/en-us/articles/360018848798--Code-Dx-Enterprise)
+* [ Brinqa](/hc/en-us/articles/360012728717-Brinqa)
+* [ Fortify SSC integration](/hc/en-us/articles/360005507838-Fortify-SSC-integration)
+* [ Kenna Security](/hc/en-us/articles/360013620217-Kenna-Security)
+* [ Nucleus Security](/hc/en-us/articles/360012502818-Nucleus-Security)
+* [ RiskSense](/hc/en-us/articles/360015069418-RiskSense)
+* [ Vulcan-Cyber](/hc/en-us/articles/360012981478-Vulcan-Cyber)
 
-## Brinqa
+##  Brinqa
 
 ### Introduction to Snyk and Brinqa Integration
 
@@ -16,7 +16,7 @@ Brinqa’s integration with Snyk makes it easy to incorporate your software comp
 
 ### How it Works
 
-**Note:** This integration relies on the Snyk API which is only available to paid Snyk plans. [Find out more about the API](https://snyk.docs.apiary.io/#), or [review your own plan and start a free trial](https://app.snyk.io/manage/billing) to experience the full value Snyk offers.
+**Note:** This integration relies on the Snyk API which is only available to paid Snyk plans. [Find out more about the API](https://snyk.docs.apiary.io/#), or [review your own plan and start a free trial](https://app.snyk.io/manage/billing) to experience the full value Snyk offers. 
 
 1. Create a service account in snyk - [Service Accounts page](https://support.snyk.io/hc/en-us/articles/360004037597)
 2. Open your Brinqa instance and navigate to Administration &gt; Data Integration &gt; Data Sources. Locate the Snyk connector listed in the ‘Application Security’ section. If you don’t see the connector listed, please contact your Brinqa account representative to enable the Snyk integration.

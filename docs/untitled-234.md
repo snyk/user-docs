@@ -1,8 +1,8 @@
 # How to create a security policy and set rules
 
-## How to create a security policy and set rules
+##  How to create a security policy and set rules 
 
-To create a new security policy, click **Add a new policy** in the security policy menu.
+To create a new security policy, click **Add a new policy** in the security policy menu. 
 
 Security policy rules follow an “if, then” framework, with one or more conditions, and an action. For example:
 
@@ -14,5 +14,5 @@ To add a new blank rule, click on **+** below the previous rule, as seen in the 
 
 To delete or duplicate a rule, click the **…** on the right hand side of each rule box, as seen in the screenshot above.
 
-The order of your rules sets the precedence; if there is a conflict, the rule closest to the top supersedes any subsequent rules.
+The order of your rules sets the precedence; if there is a conflict, the rule closest to the top supersedes any subsequent rules. 
 

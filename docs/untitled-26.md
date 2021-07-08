@@ -1,4 +1,4 @@
-# How can we whitelist Snyk IP addresses?
+# How to test Github Rate limiting
 
 ```text
 curl -i -H "Authorization: token $token" https://api.github.com/user

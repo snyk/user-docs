@@ -1,9 +1,9 @@
 # Disclose a vulnerability in Snyk services
 
-* [ Disclose a vulnerability in Snyk services](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360005918418-Disclose-a-vulnerability-in-Snyk-services/README.md)
-* [ Disclose a vulnerability in an open source package](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360005933037-Disclose-a-vulnerability-in-an-open-source-package/README.md)
+* [ Disclose a vulnerability in Snyk services](/hc/en-us/articles/360005918418-Disclose-a-vulnerability-in-Snyk-services)
+* [ Disclose a vulnerability in an open source package](/hc/en-us/articles/360005933037-Disclose-a-vulnerability-in-an-open-source-package)
 
-## Disclose a vulnerability in Snyk services
+##  Disclose a vulnerability in Snyk services
 
 If you believe you have found a [security vulnerability](https://snyk.io/learn/security-vulnerability-exploits-threats/) on Snyk, we encourage you to let us know right away by emailing us at security@snyk.io. We will investigate all legitimate reports and do our best to quickly fix the problem. Before reporting though, please review this page including our responsible disclosure policy.
 

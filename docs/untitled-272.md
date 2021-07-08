@@ -1,14 +1,14 @@
 # Introduction to Snyk Code
 
-* [ Introduction to Snyk Code](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360017059758-Introduction-to-Snyk-Code/README.md)
-* [ Snyk Code language and framework support](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360016973477-Snyk-Code-language-and-framework-support/README.md)
-* [ Using Snyk Code \(web\)](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360017147558-Using-Snyk-Code-web-/README.md)
+* [ Introduction to Snyk Code](/hc/en-us/articles/360017059758-Introduction-to-Snyk-Code)
+* [ Snyk Code language and framework support](/hc/en-us/articles/360016973477-Snyk-Code-language-and-framework-support)
+* [ Using Snyk Code \(web\)](/hc/en-us/articles/360017147558-Using-Snyk-Code-web-)
 
-## Introduction to Snyk Code
+##  Introduction to Snyk Code
 
 #### Integrated platform
 
-Snyk Code expands the Snyk cloud-native application security platform, supporting all elements for a modern software supply chain. For a cloud-native application, this provides security for:
+Snyk Code expands the Snyk cloud-native application security platform, supporting all elements for a modern software supply chain. For a cloud-native application, this provides security for: 
 
 * [**Snyk Code**](https://support.snyk.io/hc/en-us/categories/360003257537-Snyk-Code): the application’s proprietary code.
 * [**Snyk Open Source**](https://support.snyk.io/hc/en-us/categories/360003049458-Snyk-Open-Source): the open-source libraries it leverages.

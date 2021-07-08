@@ -1,12 +1,12 @@
 # Shared Policies Overview
 
-* [ Shared Policies Overview](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360007476397-Shared-Policies-Overview/README.md)
-* [ Creating and editing policies](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360007547397-Creating-and-editing-policies/README.md)
-* [ Assign a policy to organizations](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360007590198-Assign-a-policy-to-organizations/README.md)
-* [ Assign a policy to project attributes](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360018220857-Assign-a-policy-to-project-attributes/README.md)
-* [ The .snyk file](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360007487097-The-snyk-file/README.md)
+* [ Shared Policies Overview](/hc/en-us/articles/360007476397-Shared-Policies-Overview)
+* [ Creating and editing policies](/hc/en-us/articles/360007547397-Creating-and-editing-policies)
+* [ Assign a policy to organizations](/hc/en-us/articles/360007590198-Assign-a-policy-to-organizations)
+* [ Assign a policy to project attributes](/hc/en-us/articles/360018220857-Assign-a-policy-to-project-attributes)
+* [ The .snyk file](/hc/en-us/articles/360007487097-The-snyk-file)
 
-## Shared Policies Overview
+##  Shared Policies Overview
 
 ### Prerequisites
 
@@ -19,11 +19,11 @@ This feature is available to Enterprise customers. See [Pricing plans](https://s
 
 1. Log in to Snyk 
 2. Navigate to your group
-3. Click on the Policies tab in the navigation bar to see all the policies that exist within your group, broken out by category. This list will include the [default policy](untitled-184.md), which is automatically created for new groups for each policy category and cannot be removed.
+3. Click on the Policies tab in the navigation bar to see all the policies that exist within your group, broken out by category. This list will include the [default policy](), which is automatically created for new groups for each policy category and cannot be removed.
 
 ![](https://lh5.googleusercontent.com/TJiXBfHn_kNyveLBkYt1ePjTN9uDJQ101mHim_KhdWzsXVDBvRn1FjMtwKqEbeRY8lQcWpw367XHCoUiUQj2l86j2zSaTmRIGv7asjL4vDSvErQ1fvDGMnSk8d6tAZuFNE6BJmVH)
 
-The Policy manager appears similar to the following:
+The Policy manager appears similar to the following: 
 
 ### Default policies <a id="h_01F2R7AA82B5249CFE8KPG4J7N"></a>
 
@@ -31,7 +31,7 @@ Each policy category has its own default policy. Default policies can only be ap
 
 When you create a **new** **organization**, it will automatically be added to the default policy, unless you have selected to copy an existing organization's settings. Organizations can be moved to a different policy if desired.
 
-The default policy cannot be deleted; however, the default policy name, description, and the rules can be edited to match your preferences. A default policy can also contain no rules if you'd prefer.
+The default policy cannot be deleted; however, the default policy name, description, and the rules can be edited to match your preferences. A default policy can also contain no rules if you'd prefer. 
 
-To learn more about how to add and remove organizations to the default policy, read more about it [here](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360007590198/README.md).
+To learn more about how to add and remove organizations to the default policy, read more about it [here](/hc/en-us/articles/360007590198).
 

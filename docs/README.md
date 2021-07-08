@@ -1,2 +1,2 @@
-# Snyk User Documentation
+# Introduction
 

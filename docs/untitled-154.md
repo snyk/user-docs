@@ -1,6 +1,6 @@
 # What is the "Minimal upgrade required" and how is it determined?
 
-## What is the "Minimal upgrade required" and how is it determined?
+##  What is the "Minimal upgrade required" and how is it determined?
 
 For our security fixes, we recommend the lowest non-vulnerable version that is compatible with their project.
 

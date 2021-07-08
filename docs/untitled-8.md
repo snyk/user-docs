@@ -1,6 +1,6 @@
-# Can I update my email address?
+# Snyk SCM integration: good practices
 
-## Snyk SCM integration: good practices
+##  Snyk SCM integration: good practices
 
 You can integrate Snyk with your Source Control Manager \(SCM\) to quickly and easily gain visibility across all your projects.
 
@@ -30,7 +30,7 @@ If you try to implement all the SCM integration features at the same time, you r
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p><a href="untitled-8.md">Stage 1</a>
+        <p><a href>Stage 1</a>
         </p>
         <p>Set up your SCM integration</p>
       </td>
@@ -40,7 +40,7 @@ If you try to implement all the SCM integration features at the same time, you r
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><a href="untitled-8.md">Stage 2</a>
+        <p><a href>Stage 2</a>
         </p>
         <p>Import all of the projects from your SCM.</p>
       </td>
@@ -57,7 +57,7 @@ If you try to implement all the SCM integration features at the same time, you r
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><a href="untitled-8.md">Stage 3</a>
+        <p><a href>Stage 3</a>
         </p>
         <p>Developer and Security teams use Snyk prioritization reporting capabilities
           to build a remediation plan.</p>
@@ -69,7 +69,7 @@ If you try to implement all the SCM integration features at the same time, you r
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><a href="untitled-8.md">Stage 4</a>
+        <p><a href>Stage 4</a>
         </p>
         <p>Alert developers to issues in real-time, and educate them on available
           fixes.</p>
@@ -84,7 +84,7 @@ If you try to implement all the SCM integration features at the same time, you r
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><a href="untitled-8.md">Stage 5</a>
+        <p><a href>Stage 5</a>
         </p>
         <p>Prevent developers from introducing any new vulnerabilities</p>
       </td>
@@ -96,7 +96,7 @@ If you try to implement all the SCM integration features at the same time, you r
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><a href="untitled-8.md">Stage 6</a>
+        <p><a href>Stage 6</a>
         </p>
         <p>Reduce technical security debt</p>
       </td>
@@ -111,7 +111,7 @@ If you try to implement all the SCM integration features at the same time, you r
 
 Snyk has pre-built integrations for SCMs including GitHub, GitHub Enterprise, Bitbucket Cloud and others. See [GIT repository \(SCM\) integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) for a full list.
 
-To check if an SCM is already configured for your Org, navigate to the **Integrations** tab. Configured SCMs are shown as **Configured**.
+To check if an SCM is already configured for your Org, navigate to the **Integrations** tab. Configured SCMs are shown as **Configured**. 
 
 If your SCM is already configured, go to the next stage.
 
@@ -125,13 +125,13 @@ Below is an example of how you would set up your an integration for **Github.com
 
 **SCM permissions on repositories**
 
-Operations triggered using the Snyk UI \(such as opening a Fix PR or retesting a project\) are performed for the acting user. So to perform these operation, you must connect your own SCM user or service account. This gives Snyk the required permissions for the repositories for where you would like to perform these operations.
+Operations triggered using the Snyk UI \(such as opening a Fix PR or retesting a project\) are performed for the acting user. So to perform these operation, you must connect your own SCM user or service account. This gives Snyk the required permissions for the repositories for where you would like to perform these operations. 
 
 For example, in GitHub, the accounts connected to Snyk need the following access on the target repositories:
 
 | **Action** | **Why?** | **Required permissions on the repository** |
 | :--- | :--- | :--- |
-| **Daily / weekly tests** | For reading manifest files in private repos | _**Write**_ or above |
+| **Daily / weekly tests**  | For reading manifest files in private repos | _**Write**_ or above  |
 | **Snyk tests on pull requests** | For sending pull request status checks whenever a new PR is created / an existing PR is updated |  |
 | **Opening fix and upgrade pull requests** | For creating fix / upgrade PRs in the monitored repos |  |
 | **Snyk tests on pull requests - initial configuration** | For adding Snyk's webhooks to the imported repos, so Snyk will be informed whenever pull requests are created or updated and be able to trigger scans | _**Admin**_ |
@@ -140,13 +140,13 @@ For example, in GitHub, the accounts connected to Snyk need the following access
 
 By default, Snyk emails every Org User when a new issue or remediation in a project’s dependencies is found, and provides you with a weekly update of your security status across your organization. If you plan to import many projects to an Org, consider disabling all the notifications for that Org, to avoid too many email notifications sent to users.
 
-To customize the emails your Org users receive, navigate to the Org’s settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Notifications**. Any changes you make here here affect all of your organization’s members, although Org users can override these default settings in their user-level account settings.
+To customize the emails your Org users receive, navigate to the Org’s settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Notifications**.  Any changes you make here here affect all of your organization’s members, although Org users can override these default settings in their user-level account settings.
 
 To disable notifications for all the users in an Org ahead of your import, uncheck the appropriate notification boxes:
 
 1. Navigate to the **Projects** page in the Snyk UI, select **Add projects**, select the repos to import to Snyk, then click **Add selected repositories**.
 2. Snyk starts scanning the selected repos for dependency files \(for example, **package.json**\) in the entire directory tree and imports these files as projects:
-3. Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.
+3.  Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.
 4. Snyk detects the manifest files \(projects\), tests them, then displays the results. Imported projects appear underneath the repository name.  \(Projects are continuously checked for vulnerabilities after being imported\)
 5. To see if a project was imported, navigate to the projects import page. Imported projects have a  ✔ icon by the repo name.         
 
@@ -171,7 +171,7 @@ Administrators can manage settings for Snyk PR tests at the organization level t
 
 To configure the PR test settings for your organization:
 
-1. Navigate to **Org** &gt; settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) **\*\*&gt;** Integrations &gt; Edit Settings\*\*.
+1. Navigate to **Org** &gt; settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) ****&gt; **Integrations &gt; Edit Settings**.
 2. Set the the toggle to **Enabled** and set the **Fail conditions** as needed: 
 3. Click **Update settings**.
 
@@ -233,7 +233,7 @@ When your group is ready to start tackling security technical debt, you can conf
 
 **Supported languages and repos**
 
-Snyk currently supports this feature for npm, Yarn and Maven-Central projects through GitHub, GitHub Enterprise Server and BitBucket Cloud, including use of the Snyk Broker. For use with the Broker, your admin should first upgrade to v4.55.0 or later.
+Snyk currently supports this feature for npm, Yarn and Maven-Central projects through GitHub, GitHub Enterprise Server and BitBucket Cloud, including use of the Snyk Broker. For use with the Broker, your admin should first upgrade to v4.55.0 or later. 
 
 **Enable automatic dependency upgrade PRs for a specific project**
 

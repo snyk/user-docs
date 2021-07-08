@@ -1,6 +1,6 @@
 # Disclose a vulnerability in an open source package
 
-## Disclose a vulnerability in an open source package
+##  Disclose a vulnerability in an open source package
 
 We at Snyk value the security community and believe that responsible disclosure of security vulnerabilities in open source packages helps us ensure the security and privacy of our users. We aim to provide a disclosure program for the security community by which you can report security issues found within managed open source code, within these languages: JavaScript, Java, Python, .NET, Go, Ruby and PHP.
 
@@ -8,11 +8,11 @@ Our responsible disclosure program aims to protect both the maintainer and the r
 
 The primary steps of our vulnerability disclosure program:
 
-1. Any researcher/developer is invited to submit a [report](untitled-167.md) regarding an open-source [security vulnerability](https://snyk.io/learn/security-vulnerability-exploits-threats/) with full details.
-2. Our Snyk Security team validates the claims in the report and the severity of the associated risks. See [Triaging and validation](untitled-167.md)for details.
-3. We contact the owner or maintainer of the affected project, through multiple channels. See [Notification of the maintainer](untitled-167.md) for details.
-4. We relay the vulnerability details, advise on potential remediation, and collaborate on a public disclosure timeline with the maintainer. See [Remediation assistance](untitled-167.md) for details.
-5. We publicly disclose the vulnerability, giving full credit to the researcher. See [Public disclosure](untitled-167.md) for details.
+1. Any researcher/developer is invited to submit a [report]() regarding an open-source [security vulnerability](https://snyk.io/learn/security-vulnerability-exploits-threats/) with full details.
+2. Our Snyk Security team validates the claims in the report and the severity of the associated risks. See [Triaging and validation]()for details.
+3. We contact the owner or maintainer of the affected project, through multiple channels. See [Notification of the maintainer]() for details.
+4. We relay the vulnerability details, advise on potential remediation, and collaborate on a public disclosure timeline with the maintainer. See [Remediation assistance]() for details.
+5. We publicly disclose the vulnerability, giving full credit to the researcher. See [Public disclosure]() for details.
 6. Snyk, as an officially recognized CVE Central Naming Authority \(CNA\), assigns a CVE to the vulnerability.
 
 Vulnerability reports can be submitted by a researcher to report@snyk.io \(`<`[`report@snyk.io`](mailto:report@snyk.io)`>`\) directly, or via the Snyk Vulnerability Disclosure form: [https://snyk.io/vulnerability-disclosure/.](https://snyk.io/vulnerability-disclosure/) A submitted vulnerability report should contain the following details at a minimum:

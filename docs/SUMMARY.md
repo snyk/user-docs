@@ -1,9 +1,9 @@
 # Table of contents
 
 * [Snyk User Documentation](README.md)
+* [Manifest not found](untitled.md)
 * [Getting started with Snyk and Heroku](untitled-1.md)
-* [Single sign-on](untitled-2/README.md)
-  * [Manifest not found](untitled-2/untitled.md)
+* [Single sign-on](untitled-2.md)
 * [What is a Snyk Patch?](untitled-3.md)
 * [When I can choose, how should I decide whether to upgrade or patch?](untitled-4.md)
 * [I can't import projects from one of my GitHub organisations](untitled-5.md)

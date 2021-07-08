@@ -1,4 +1,4 @@
-# Does Snyk have an API?
+# Image layer information
 
 When you scan a Docker image in Snyk, you can see information for the **Image layer**:
 

@@ -1,11 +1,12 @@
 # Snyk integration to self-hosted container registries
 
-## Snyk integration to self-hosted container registries
+##  Snyk integration to self-hosted container registries
 
 **Feature availability**  
 This feature is currently in beta and is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
 
-Snyk can integrate to private container registries you host \(currently in open beta\), and help you to better secure container images in those registries.
+Snyk can integrate to private container registries you host \(currently in open beta\), and help you to better secure container images in those registries.   
+
 
 To enable and configure your hosted container registry, contact our support team at [support@snyk.io](mailto:support@snyk.io)
 
@@ -21,7 +22,7 @@ Integration with private container registries allows you to:
 * Broker server: running on Snyk SaaS backend
 * Broker client & Container Registry Agent: Two Docker images deployed in your infrastructure, creating two separate services, responsible for sampling your container registries in a secured manner and sending the allowed information to Snyk.
 
-The Broker client provides the Agent with the connection details. The Agent uses these details to connect to the container registry, scan the images, and send the scan results through the brokered communication using callbacks. The brokered communication happens when a Broker Client connects \(using your Broker ID\) to a Broker server which runs in Snyk environment. See [Snyk Broker](https://support.snyk.io/hc/en-us/sections/360001138138-Snyk-Broker) documentation for more details.
+The Broker client provides the Agent with the connection details. The Agent uses these details to connect to the container registry, scan the images, and send the scan results through the brokered communication using callbacks. The brokered communication happens when a Broker Client connects \(using your Broker ID\) to a Broker server which runs in Snyk environment. See [Snyk Broker](https://support.snyk.io/hc/en-us/sections/360001138138-Snyk-Broker) documentation for more details.  
 
 **Supported Container registries**
 
@@ -57,13 +58,13 @@ If such a requirement is not relevant for you, you do not need the architecture 
 **Set up the remote connection**
 
 To use the Broker client with a container registry agent deployment, run  
-\`docker pull snyk/broker:container-registry-agent\`.
+\`docker pull snyk/broker:container-registry-agent\`. 
 
 The following environment variables are mandatory to configure the Broker client:
 
 * \`BROKER\_TOKEN\` - The Snyk Broker token, obtained from your Container registry integration \(provided by Snyk support\)
-* \`BROKER\_CLIENT\_URL\` - The URL of your broker client \(including scheme and - port\) used by the container registry agent to call back to Snyk, for example: "[http://my.broker.client:8000](http://my.broker.client:8000)".
-* \`CR\_AGENT\_URL\` - The URL of your container registry agent, for example "[http://my.container-registry-agent](http://my.container-registry-agent)".
+* \`BROKER\_CLIENT\_URL\` - The URL of your broker client \(including scheme and - port\) used by the container registry agent to call back to Snyk, for example: "http://my.broker.client:8000".
+* \`CR\_AGENT\_URL\` - The URL of your container registry agent, for example "http://my.container-registry-agent".
 * \`CR\_TYPE\` - The container registry type as listed in supporter registries, for example "DockerHub", "GoogleCR", "ArtifactoryCR".
 * \`CR\_BASE\` - The hostname of the container registry api to connect to, for example: "cr.host.com".
 * \`CR\_USERNAME\` - The username for authenticating to container registry api. Not used for DigitalOcean container registry.

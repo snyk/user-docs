@@ -1,12 +1,12 @@
 # Managing permissions
 
-* [ Managing permissions](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360006548637-Managing-permissions/README.md)
-* [ Organization access requests](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360016034417-Organization-access-requests/README.md)
-* [ Session length](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004008358-Session-length/README.md)
-* [ Switch between Snyk organizations](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360003915618-Switch-between-Snyk-organizations/README.md)
-* [ Audit logs](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004133117-Audit-logs/README.md)
+* [ Managing permissions](/hc/en-us/articles/360006548637-Managing-permissions)
+* [ Organization access requests](/hc/en-us/articles/360016034417-Organization-access-requests)
+* [ Session length](/hc/en-us/articles/360004008358-Session-length)
+* [ Switch between Snyk organizations](/hc/en-us/articles/360003915618-Switch-between-Snyk-organizations)
+* [ Audit logs](/hc/en-us/articles/360004133117-Audit-logs)
 
-## Managing permissions
+##  Managing permissions
 
 Click settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Members** to invite new team members.
 

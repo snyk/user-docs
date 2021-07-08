@@ -1,10 +1,10 @@
 # Setting a license policy
 
-* [ Getting started: License policies](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360007590238-Getting-started-License-policies/README.md)
-* [ Setting a license policy](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360007590258-Setting-a-license-policy/README.md)
-* [ License policies: What collaborators see](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360007547577-License-policies-What-collaborators-see/README.md)
+* [ Getting started: License policies](/hc/en-us/articles/360007590238-Getting-started-License-policies)
+* [ Setting a license policy](/hc/en-us/articles/360007590258-Setting-a-license-policy)
+* [ License policies: What collaborators see](/hc/en-us/articles/360007547577-License-policies-What-collaborators-see)
 
-## Setting a license policy
+##  Setting a license policy
 
 Administrators can configure the following per license:
 
