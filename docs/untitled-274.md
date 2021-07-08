@@ -1,10 +1,10 @@
 # Using Snyk Code \(web\)
 
-* [ Introduction to Snyk Code](/hc/en-us/articles/360017059758-Introduction-to-Snyk-Code)
-* [ Snyk Code language and framework support](/hc/en-us/articles/360016973477-Snyk-Code-language-and-framework-support)
-* [ Using Snyk Code \(web\)](/hc/en-us/articles/360017147558-Using-Snyk-Code-web-)
+* [ Introduction to Snyk Code](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360017059758-Introduction-to-Snyk-Code/README.md)
+* [ Snyk Code language and framework support](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360016973477-Snyk-Code-language-and-framework-support/README.md)
+* [ Using Snyk Code \(web\)](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360017147558-Using-Snyk-Code-web-/README.md)
 
-##  Using Snyk Code \(web\)
+## Using Snyk Code \(web\)
 
 Use Snyk Code with the standard Snyk web interface to find and fix vulnerabilities in your code.
 
@@ -30,7 +30,7 @@ Vulnerability card details include:
 * A snippet of your code showing the exact area that is vulnerable.
 * A clear and helpful text description of the vulnerability.
 
-Click **Full details** from a vulnerability card to view more information. See [View full details]().
+Click **Full details** from a vulnerability card to view more information. See [View full details](untitled-274.md).
 
 Click **Full details** from a vulnerability card to view more information:
 
@@ -38,7 +38,7 @@ Full details include all the information in the vulnerability card, plus:
 
 * **Data flow**: this area on the left shows the full taint flow of the issue in the code, from the source \(the user input\) to the sink \(the operation that needs to receive clean input and can be exploited otherwise\). In the above example, the developer has not sanitized the input, allowing an attacker to do a pass traversal to potentially access any file on the file system, including sensitive data such as password files.
 * **Fix analysis:** insight into the remediation and background of the issue itself. Developers are able to see fix-related information, vulnerability overview information \(understanding and approach\), and fix examples for this vulnerability type.
-* A link to the source file, which you can open to make changes directly \(see [Open the source code file]()\).
+* A link to the source file, which you can open to make changes directly \(see [Open the source code file](untitled-274.md)\).
 * A full window showing the code affected, with specific lines highlighted to accompany the **Data flow** information.
 
 ### Example: Cross-site Scripting \(XSS\)

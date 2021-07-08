@@ -1,10 +1,10 @@
 # Reachable Vulnerabilities
 
-* [ Reachable Vulnerabilities](/hc/en-us/articles/360010554837-Reachable-Vulnerabilities-)
+* [ Reachable Vulnerabilities](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360010554837-Reachable-Vulnerabilities-/README.md)
 
-##  Reachable Vulnerabilities
+## Reachable Vulnerabilities
 
-The first step of scanning apps for open source vulnerabilities is to identify the packages used by the app. 
+The first step of scanning apps for open source vulnerabilities is to identify the packages used by the app.
 
 The next step is to see which of the identified packages contains a vulnerability, whether or not if the vulnerability affects the apps’ code. This can easily lead to thousands of vulnerabilities when you look at the organization level, so you need to identify where to start.
 

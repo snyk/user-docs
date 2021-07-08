@@ -6,7 +6,7 @@ Synk and Kenna.VM provides direct insight into security flaws in open source cod
 
 ## How it Works
 
-The connector leverages the Kenna Security [toolkit](https://github.com/KennaPublicSamples/toolkit) and the [Kenna Data Importer](https://help.kennasecurity.com/hc/en-us/articles/360026413111-Kenna-Data-Importer-JSON-Connector-) format. The Kenna toolkit uses the Snyk API to retrieve project issues, format the results, and ingest it into Kenna.VM. Follow these steps to get started: 
+The connector leverages the Kenna Security [toolkit](https://github.com/KennaPublicSamples/toolkit) and the [Kenna Data Importer](https://help.kennasecurity.com/hc/en-us/articles/360026413111-Kenna-Data-Importer-JSON-Connector-) format. The Kenna toolkit uses the Snyk API to retrieve project issues, format the results, and ingest it into Kenna.VM. Follow these steps to get started:
 
 1. Retrieve the Snyk API Key from the Synk UI - [Service Account page](https://support.snyk.io/hc/en-us/articles/360004037597)
 2. Retrieve the [Kenna API Key](https://help.kennasecurity.com/hc/en-us/articles/360029111331-API-Key-Generation-and-Permissions) from the Kenna UI

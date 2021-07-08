@@ -1,11 +1,11 @@
-# Visual Studio Code extension for Snyk Code
+# Cannot create a Fix PR
 
-* [ Eclipse plugin](/hc/en-us/articles/360004032337-Eclipse-plugin)
-* [ JetBrains plugins](/hc/en-us/articles/360004032317-JetBrains-plugins)
-* [ Visual Studio extension](/hc/en-us/articles/360020073958-Visual-Studio-extension)
-* [ Visual Studio Code extension for Snyk Code](/hc/en-us/articles/360018585717-Visual-Studio-Code-extension-for-Snyk-Code-)
+* [ Eclipse plugin](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004032337-Eclipse-plugin/README.md)
+* [ JetBrains plugins](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004032317-JetBrains-plugins/README.md)
+* [ Visual Studio extension](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360020073958-Visual-Studio-extension/README.md)
+* [ Visual Studio Code extension for Snyk Code](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360018585717-Visual-Studio-Code-extension-for-Snyk-Code-/README.md)
 
-##  Visual Studio Code extension for Snyk Code
+## Visual Studio Code extension for Snyk Code
 
 Use this documentation to get started with the Visual Studio Code extension for [Snyk Code](https://support.snyk.io/hc/en-us/categories/360003257537-Snyk-Code).
 
@@ -24,7 +24,7 @@ You can find the Snyk Extension in the Visual Studio Code Marketplace. To instal
 * Navigate to the [Snyk Extension on the Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner) and follow the instructions for the Snyk extension. The docs from VS Code help you trigger the installation process from Visual Studio Code and guide you through the installation steps.
 * Browse for the extension as advised [here](https://code.visualstudio.com/docs/editor/extension-gallery#_browse-for-extensions) and search for Snyk, then install \(as described [here](https://code.visualstudio.com/docs/editor/extension-gallery#_install-an-extension)\).
 
-Once installed you can find a Snyk icon in the sidebar. 
+Once installed you can find a Snyk icon in the sidebar.
 
 Snyk’s extension provides all the suggestions in a concise and clean view containing all information you need to decide how to fix or act upon:
 
@@ -52,11 +52,11 @@ To manually trigger a scan, either Save or manually rescan using the rescan icon
 
 Snyk Code analysis shows a list of security vulnerabilities and code issues found in the application code. For more details and examples of how others fixed the issue, select a security vulnerability or a code security issue. Once selected you will see the Snyk suggestion information in a panel on the right side:
 
-### Snyk panel 
+### Snyk panel
 
-The Snyk analysis panel \(on the left of the code screen in the above screenshot\) shows how much time the analysis took plus a list of files with the suggestions found for them. 
+The Snyk analysis panel \(on the left of the code screen in the above screenshot\) shows how much time the analysis took plus a list of files with the suggestions found for them.
 
-The icons here mean: 
+The icons here mean:
 
 ### Editor window
 

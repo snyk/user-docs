@@ -1,14 +1,14 @@
 # Prepare Snyk Broker for deployment
 
-* [ Broker introduction](/hc/en-us/articles/360015367178-Broker-introduction)
-* [ Set up Snyk Broker](/hc/en-us/articles/360015296637-Set-up-Snyk-Broker)
-* [ Prepare Snyk Broker for deployment](/hc/en-us/articles/360015296717-Prepare-Snyk-Broker-for-deployment)
-* [ Enable permissions for Snyk Broker from your third-party tool](/hc/en-us/articles/360015296737-Enable-permissions-for-Snyk-Broker-from-your-third-party-tool)
-* [ Retrieve a unique Broker client token](/hc/en-us/articles/360015367278-Retrieve-a-unique-Broker-client-token)
-* [ How to install and configure your Snyk Broker client](/hc/en-us/articles/360015296937-How-to-install-and-configure-your-Snyk-Broker-client)
-* [ Upgrade your Snyk Broker client](/hc/en-us/articles/360015367458-Upgrade-your-Snyk-Broker-client)
+* [ Broker introduction](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015367178-Broker-introduction/README.md)
+* [ Set up Snyk Broker](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015296637-Set-up-Snyk-Broker/README.md)
+* [ Prepare Snyk Broker for deployment](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015296717-Prepare-Snyk-Broker-for-deployment/README.md)
+* [ Enable permissions for Snyk Broker from your third-party tool](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015296737-Enable-permissions-for-Snyk-Broker-from-your-third-party-tool/README.md)
+* [ Retrieve a unique Broker client token](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015367278-Retrieve-a-unique-Broker-client-token/README.md)
+* [ How to install and configure your Snyk Broker client](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015296937-How-to-install-and-configure-your-Snyk-Broker-client/README.md)
+* [ Upgrade your Snyk Broker client](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015367458-Upgrade-your-Snyk-Broker-client/README.md)
 
-##  Prepare Snyk Broker for deployment
+## Prepare Snyk Broker for deployment
 
 * Client machine system requirements: 1 CPU, 256MB of Ram.
 * Access to the on-prem Git deployment 

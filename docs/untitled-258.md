@@ -1,6 +1,6 @@
 # Unable to test Go Modules repository using CLI
 
-##  Unable to test Go Modules repository using CLI
+## Unable to test Go Modules repository using CLI
 
 When attempting to test your Go Modules repository you may encounter the following error:
 
@@ -11,7 +11,7 @@ Please see our documentation for supported languages and target files: https://s
 
 This is generally because you do not have a `Go.mod` file present in this repo.
 
-You can read more about our [Go package manager support](/hc/en-us/articles/360001378818) page.
+You can read more about our [Go package manager support](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360001378818/README.md) page.
 
 ### Creating a Go.mod <a id="bb30"></a>
 

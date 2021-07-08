@@ -1,14 +1,14 @@
 # Broker introduction
 
-* [ Broker introduction](/hc/en-us/articles/360015367178-Broker-introduction)
-* [ Set up Snyk Broker](/hc/en-us/articles/360015296637-Set-up-Snyk-Broker)
-* [ Prepare Snyk Broker for deployment](/hc/en-us/articles/360015296717-Prepare-Snyk-Broker-for-deployment)
-* [ Enable permissions for Snyk Broker from your third-party tool](/hc/en-us/articles/360015296737-Enable-permissions-for-Snyk-Broker-from-your-third-party-tool)
-* [ Retrieve a unique Broker client token](/hc/en-us/articles/360015367278-Retrieve-a-unique-Broker-client-token)
-* [ How to install and configure your Snyk Broker client](/hc/en-us/articles/360015296937-How-to-install-and-configure-your-Snyk-Broker-client)
-* [ Upgrade your Snyk Broker client](/hc/en-us/articles/360015367458-Upgrade-your-Snyk-Broker-client)
+* [ Broker introduction](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015367178-Broker-introduction/README.md)
+* [ Set up Snyk Broker](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015296637-Set-up-Snyk-Broker/README.md)
+* [ Prepare Snyk Broker for deployment](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015296717-Prepare-Snyk-Broker-for-deployment/README.md)
+* [ Enable permissions for Snyk Broker from your third-party tool](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015296737-Enable-permissions-for-Snyk-Broker-from-your-third-party-tool/README.md)
+* [ Retrieve a unique Broker client token](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015367278-Retrieve-a-unique-Broker-client-token/README.md)
+* [ How to install and configure your Snyk Broker client](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015296937-How-to-install-and-configure-your-Snyk-Broker-client/README.md)
+* [ Upgrade your Snyk Broker client](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015367458-Upgrade-your-Snyk-Broker-client/README.md)
 
-##  Broker introduction
+## Broker introduction
 
 Snyk Broker is an open-source tool, that can act as a proxy between Snyk and integrations including:
 
@@ -37,7 +37,7 @@ All data, both in transit and at rest, is encrypted. Communication between the c
 
 ### Using inbound and outbound connections
 
-* There is no direct inbound connection from Snyk to the Broker client. The broker client makes an outbound connection to **https://broker.snyk.io**, which establishes a WebSocket connection to allow communication with the Broker server. This way, there is no need to grant permissions to specific IPs.
+* There is no direct inbound connection from Snyk to the Broker client. The broker client makes an outbound connection to [https://broker.snyk.io](https://broker.snyk.io), which establishes a WebSocket connection to allow communication with the Broker server. This way, there is no need to grant permissions to specific IPs.
 * The Broker client initiates the outbound connection to establish the WebSocket. After the websocket is established, that allows inbound requests from Snyk via the WebSocket, with no need to allow inbound connectivity to the world or to Snyk specific IP addresses.
 
 The Broker client maintains an approved data list for inbound and outbound data requests. Only requests included in this approved list are allowed.

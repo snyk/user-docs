@@ -1,24 +1,23 @@
 # How to install and configure your Snyk Broker client
 
-####  [Submit a Support ticket](https://support.snyk.io/hc/en-us/requests/new) [Sign in to Support](https://support.snyk.io/hc/en-us/signin) [Sign up for free](https://snyk.io/login?cta=sign-up&loc=nav&page=support_docs_page)
+#### [Submit a Support ticket](https://support.snyk.io/hc/en-us/requests/new) [Sign in to Support](https://support.snyk.io/hc/en-us/signin) [Sign up for free](https://snyk.io/login?cta=sign-up&loc=nav&page=support_docs_page)
 
-###  [ ]() <a id="category-name"></a>
+### [ ](untitled-250.md) <a id="category-name"></a>
 
 #### Snyk Broker
 
-* [ Broker introduction](/hc/en-us/articles/360015367178-Broker-introduction)
-* [ Set up Snyk Broker](/hc/en-us/articles/360015296637-Set-up-Snyk-Broker)
-* [ Prepare Snyk Broker for deployment](/hc/en-us/articles/360015296717-Prepare-Snyk-Broker-for-deployment)
-* [ Enable permissions for Snyk Broker from your third-party tool](/hc/en-us/articles/360015296737-Enable-permissions-for-Snyk-Broker-from-your-third-party-tool)
-* [ Retrieve a unique Broker client token](/hc/en-us/articles/360015367278-Retrieve-a-unique-Broker-client-token)
-* [ How to install and configure your Snyk Broker client](/hc/en-us/articles/360015296937-How-to-install-and-configure-your-Snyk-Broker-client)
-* [ Upgrade your Snyk Broker client](/hc/en-us/articles/360015367458-Upgrade-your-Snyk-Broker-client)
+* [ Broker introduction](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015367178-Broker-introduction/README.md)
+* [ Set up Snyk Broker](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015296637-Set-up-Snyk-Broker/README.md)
+* [ Prepare Snyk Broker for deployment](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015296717-Prepare-Snyk-Broker-for-deployment/README.md)
+* [ Enable permissions for Snyk Broker from your third-party tool](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015296737-Enable-permissions-for-Snyk-Broker-from-your-third-party-tool/README.md)
+* [ Retrieve a unique Broker client token](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015367278-Retrieve-a-unique-Broker-client-token/README.md)
+* [ How to install and configure your Snyk Broker client](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015296937-How-to-install-and-configure-your-Snyk-Broker-client/README.md)
+* [ Upgrade your Snyk Broker client](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015367458-Upgrade-your-Snyk-Broker-client/README.md)
+* [Docs Library \| Snyk](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/README.md)
+* [Integrations](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/categories/360000598398-Integrations/README.md)
+* [Snyk Broker](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/sections/360001138138-Snyk-Broker/README.md)
 
-1.  [Docs Library \| Snyk](/hc/en-us)
-2.  [Integrations](/hc/en-us/categories/360000598398-Integrations)
-3.  [Snyk Broker](/hc/en-us/sections/360001138138-Snyk-Broker)
-
-##  How to install and configure your Snyk Broker client
+## How to install and configure your Snyk Broker client
 
 Snyk’s recommended and supported method of running the Snyk Broker client is using Docker.
 
@@ -31,5 +30,4 @@ To install and configure your client:
 3. After the broker is running, **identifying Broker server** appears towards the end of the log results, showing that a connection to Snyk has been established
 4. Visit the settings for your brokered integration in [the Snyk application](https://app.snyk.io/) to see a message like the following: 
 5. You can now use Snyk as normal.
-
-* 
+6. 

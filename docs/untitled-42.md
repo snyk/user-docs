@@ -1,4 +1,4 @@
-# Detecting CloudFormation configuration files using a broker
+# Snyk runtime monitoring: install the Snyk agent for Node.js
 
 When using a privately hosted Git repository, Snyk Broker must be used to connect with Snyk products. See the [broker documentation](https://support.snyk.io/hc/en-us/articles/360004032397-Broker) for details.
 
@@ -12,7 +12,7 @@ The CloudFormation scanning features require access to the YAML or JSON files in
 
 1. Find and download the appropriate accept.json sample file for the correct source control system [from the Broker repository](https://github.com/snyk/broker/tree/master/client-templates).
 2. Rename it `accept.json` and add the rules below for the appropriate SCM to the **private** array in the JSON file.
-3. Follow the [Configuring the broker]() instructions.
+3. Follow the [Configuring the broker](untitled-42.md) instructions.
 
 ### GitHub & GitHub Enterprise rules
 
@@ -167,7 +167,7 @@ The CloudFormation scanning features require access to the YAML or JSON files in
 },
 ```
 
- The broker takes the path to the accept.json file \(with the rules above added\) in the ACCEPT environment variable. The example of passing that to the GitHub broker is displayed below.
+The broker takes the path to the accept.json file \(with the rules above added\) in the ACCEPT environment variable. The example of passing that to the GitHub broker is displayed below.
 
 ```text
 docker run --restart=always \

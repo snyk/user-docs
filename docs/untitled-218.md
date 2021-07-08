@@ -1,10 +1,10 @@
 # Integrations and languages
 
-1.  [Docs Library \| Snyk](/hc/en-us)
-2.  [Introducing Snyk](/hc/en-us/categories/360003008778-Introducing-Snyk)
-3.  [Snyk basics](/hc/en-us/sections/360001105078-Snyk-basics)
+1. [Docs Library \| Snyk](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/README.md)
+2. [Introducing Snyk](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/categories/360003008778-Introducing-Snyk/README.md)
+3. [Snyk basics](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/sections/360001105078-Snyk-basics/README.md)
 
-##  Integrations and languages
+## Integrations and languages
 
 ### Snyk integrations
 

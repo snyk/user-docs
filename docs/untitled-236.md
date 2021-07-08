@@ -2,11 +2,11 @@
 
 A newly assigned policy, or changes to a policy, apply when the project is retested. This is what project collaborators see when an action is applied to a vulnerability:
 
-| **Action** | **What project collaborators see**  |
+| **Action** | **What project collaborators see** |
 | :--- | :--- |
 | Customize severity | The new, custom severity, as well as the originally assigned severity |
 
-## **Examples:** 
+## **Examples:**
 
 **Custom and original severity in the CLI**
 

@@ -1,19 +1,19 @@
 # Snyk for JavaScript
 
-* [ Language support summary](/hc/en-us/articles/360020352437-Language-support-summary)
-* [ Snyk for JavaScript](/hc/en-us/articles/360004712477-Snyk-for-JavaScript)
-* [ Snyk for Java \(Gradle, Maven\)](/hc/en-us/articles/360003817357-Snyk-for-Java-Gradle-Maven-)
-* [ Snyk for .NET](/hc/en-us/articles/360004519138-Snyk-for-NET)
-* [ Snyk for Python](/hc/en-us/articles/360004699377-Snyk-for-Python)
-* [ Snyk for Golang](/hc/en-us/articles/360003817417-Snyk-for-Golang)
-* [ Snyk for Swift and Objective-C \(CocoaPods\)](/hc/en-us/articles/360004701658-Snyk-for-Swift-and-Objective-C-CocoaPods-)
-* [ Snyk for Scala](/hc/en-us/articles/360003781318-Snyk-for-Scala)
-* [ Snyk for Ruby](/hc/en-us/articles/360003781298-Snyk-for-Ruby)
-* [ Snyk for PHP](/hc/en-us/articles/360003817397-Snyk-for-PHP)
+* [ Language support summary](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360020352437-Language-support-summary/README.md)
+* [ Snyk for JavaScript](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004712477-Snyk-for-JavaScript/README.md)
+* [ Snyk for Java \(Gradle, Maven\)](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360003817357-Snyk-for-Java-Gradle-Maven-/README.md)
+* [ Snyk for .NET](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004519138-Snyk-for-NET/README.md)
+* [ Snyk for Python](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004699377-Snyk-for-Python/README.md)
+* [ Snyk for Golang](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360003817417-Snyk-for-Golang/README.md)
+* [ Snyk for Swift and Objective-C \(CocoaPods\)](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004701658-Snyk-for-Swift-and-Objective-C-CocoaPods-/README.md)
+* [ Snyk for Scala](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360003781318-Snyk-for-Scala/README.md)
+* [ Snyk for Ruby](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360003781298-Snyk-for-Ruby/README.md)
+* [ Snyk for PHP](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360003817397-Snyk-for-PHP/README.md)
 
- [See more](/hc/en-us/sections/360001087857-Language-package-manager-support)
+  [See more](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/sections/360001087857-Language-package-manager-support/README.md)
 
-##  Snyk for JavaScript
+## Snyk for JavaScript
 
 You can use Snyk to scan your JavaScript projects.
 
@@ -25,7 +25,7 @@ Features might not be available, depending on your subscription plan.
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 |  | npm | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
 |  | Yarn | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
-|  |  Yarn Workspaces | ✔︎  | ✔︎  |  ✔︎ | ✔︎ \(advice\) |  ✔︎ |
+|  | Yarn Workspaces | ✔︎ | ✔︎ | ✔︎ | ✔︎ \(advice\) | ✔︎ |
 
 After Snyk builds a dependency tree, we use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in that tree.
 
@@ -35,8 +35,8 @@ The way Snyk analyzes and builds the tree varies depending on the language and p
 
 See:
 
-* [Snyk CLI tool for JavaScript projects]()
-* [Git services for JavaScript projects]()
+* [Snyk CLI tool for JavaScript projects](untitled-159.md)
+* [Git services for JavaScript projects](untitled-159.md)
 
 ### Snyk CLI tool for JavaScript projects
 
@@ -48,7 +48,7 @@ npm versions 6.x, 7.x are supported in the Snyk CLI.
 
 Workspaces npm 7.x is not supported.
 
-We analyze your `package.json` and `package-lock.json` files, to build a full structured dependency tree. If the `package-lock.json` is missing, we analyze your `node_modules` folder. 
+We analyze your `package.json` and `package-lock.json` files, to build a full structured dependency tree. If the `package-lock.json` is missing, we analyze your `node_modules` folder.
 
 Snyk can apply previously selected patches using the GNU patch utility. Patches are saved to the .snyk policy file.
 
@@ -56,7 +56,7 @@ Snyk can apply previously selected patches using the GNU patch utility. Patches 
 
 Yarn versions 1 & 2 are supported in the Snyk CLI.
 
-We analyze your `package.json` and `yarn.lock` files, to build a full structured dependency tree. If the `yarn.lock` is missing, we analyze your `node_modules` folder. 
+We analyze your `package.json` and `yarn.lock` files, to build a full structured dependency tree. If the `yarn.lock` is missing, we analyze your `node_modules` folder.
 
 Snyk supports resolutions only in Yarn v2 in repositories _without_ workspaces. We do not support resolutions for Yarn v1.
 
@@ -77,7 +77,7 @@ Note that we do not support workspaces for Yarn v2.
 
 #### CLI parameters for JavaScript
 
-Prerequisites 
+Prerequisites
 
 * Install the relevant package manager.
 * Include the relevant manifest files supported by Snyk.
@@ -203,7 +203,7 @@ If you reference the locally installed packages which do not appear in a lockfil
 
 **Preferences**
 
-From the Snyk UI, use these parameters to customize your language preferences for JavaScript-based projects: 
+From the Snyk UI, use these parameters to customize your language preferences for JavaScript-based projects:
 
 | Option | Description |
 | :--- | :--- |

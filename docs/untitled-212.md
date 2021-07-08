@@ -1,11 +1,11 @@
 # Integrate Snyk into your workflow
 
-* [ Fixing vulnerabilities](/hc/en-us/articles/360011484018-Fixing-vulnerabilities)
-* [ Fix pull requests for new vulnerabilities](/hc/en-us/articles/360017186498-Fix-pull-requests-for-new-vulnerabilities)
-* [ Fix pull requests for known vulnerabilities \(backlog\)](/hc/en-us/articles/360017186958-Fix-pull-requests-for-known-vulnerabilities-backlog-)
-* [ Integrate Snyk into your workflow](/hc/en-us/articles/360011377157-Integrate-Snyk-into-your-workflow)
+* [ Fixing vulnerabilities](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360011484018-Fixing-vulnerabilities/README.md)
+* [ Fix pull requests for new vulnerabilities](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360017186498-Fix-pull-requests-for-new-vulnerabilities/README.md)
+* [ Fix pull requests for known vulnerabilities \(backlog\)](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360017186958-Fix-pull-requests-for-known-vulnerabilities-backlog-/README.md)
+* [ Integrate Snyk into your workflow](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360011377157-Integrate-Snyk-into-your-workflow/README.md)
 
-##  Integrate Snyk into your workflow
+## Integrate Snyk into your workflow
 
 This example shows how Snyk can integrate into your GitHub-based workflow.
 
@@ -13,18 +13,16 @@ This example shows how Snyk can integrate into your GitHub-based workflow.
 
 1. Open up [Snyk CLI](https://support.snyk.io/hc/en-us/categories/360000456217-Snyk-CLI), and run a git clone command on the **goof** repository.  
 
-
-   ```text
+```text
    git clone https://github.com/snyk/goof.git
-   ```
+```
 
-2. Create a new branch, add vulnerabilities on this branch, then merge changes back to GitHub as a Pull Request:  
+1. Create a new branch, add vulnerabilities on this branch, then merge changes back to GitHub as a Pull Request:  
 
-
-   ```text
+```text
    git branch add_vulns
    git checkout add_vulns
-   ```
+```
 
 ### Step 2: Add a open source dependency
 
@@ -36,8 +34,7 @@ To add the dependency:
 
 1. Add the **tinymce 4.1.0** library at the bottom of the dependencies list:  
 
-
-   ```text
+```text
    {
    "name": "goof",
    ...
@@ -48,11 +45,11 @@ To add the dependency:
    "tinymce": "4.1.0"
    },
    ...
-   ```
+```
 
-   Tip: remember to place a comma after the previous dependency.
+Tip: remember to place a comma after the previous dependency.
 
-2. Create a [lock file](https://docs.npmjs.com/files/package-lock.json) for our Node application:
+1. Create a [lock file](https://docs.npmjs.com/files/package-lock.json) for our Node application:
 
    ```text
    npm install --package-lock
@@ -64,23 +61,23 @@ To add the dependency:
 
 1. Commit your change locally, checking the status of the change in our local git repository, then adding the change to our local git, then committing it:  
 
-
-   ```text
+```text
    git status
    git add package*
    git commit -m "adding tinymce v4.1.0"
-   ```
+```
 
-2. Commit your local code change to GitHub, transferring the files and history to your upstream git repository on GitHub:  
+1. Commit your local code change to GitHub, transferring the files and history to your upstream git repository on GitHub:  
 
-
-   ```text
+```text
    git push --set-upstream origin add_vulns
-   ```
+```
 
-    GitHub has received your changes on your **add\_vulns** branch.
+```text
+GitHub has received your changes on your **add\_vulns** branch.
+```
 
-3. In GitHub, click **Compare & pull request** to compare the **add\_vulns** branch with the **master** branch and generate a pull request:  
+1. In GitHub, click **Compare & pull request** to compare the **add\_vulns** branch with the **master** branch and generate a pull request:  
 
 ### Step 4: Snyk tests pull request checks
 

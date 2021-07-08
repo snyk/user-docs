@@ -1,11 +1,11 @@
 # Service accounts
 
-* [ Service accounts](/hc/en-us/articles/360004037597-Service-accounts)
-* [ Managing integrations](/hc/en-us/articles/360004002498-Managing-integrations)
-* [ Clone an integration across your Snyk orgs](/hc/en-us/articles/360004008298-Clone-an-integration-across-your-Snyk-orgs)
-* [ Disable a git integration](/hc/en-us/articles/360004008318-Disable-a-git-integration)
+* [ Service accounts](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004037597-Service-accounts/README.md)
+* [ Managing integrations](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004002498-Managing-integrations/README.md)
+* [ Clone an integration across your Snyk orgs](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004008298-Clone-an-integration-across-your-Snyk-orgs/README.md)
+* [ Disable a git integration](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004008318-Disable-a-git-integration/README.md)
 
-##  Service accounts
+## Service accounts
 
 You can set up a service account to be used for continuous integration \(CI\) and other automation purposes without using an actual Snyk user’s token. Service accounts are a special type of system user that has only an API token associated with it, substituting for standard user credentials. Use this token to provide credentials for accessing your Snyk account when setting up integration with your development tools and when working with our CLI and API. For more information about our APIs, see our API documentation.
 
@@ -48,13 +48,13 @@ This process describes all options.
    * Admin enables full administrator access.
 6. Click Create. The token is generated and displayed from the same area, similar to the following:
 
-    Make sure you copy this token as you won’t see it again. You can click Close and Hide once you've copied the token; either way, when you navigate away from this page it will no longer be accessible. This is a security standard to keep your tokens safe. The new token is also added to your Existing service accounts list, similar to the following image:  
-  
-   Furthermore, if you created the token for the entire group with an Admin role, the token also appears in the Existing service accounts list for each of its organizations, though it can only be edited from the Group level.  
-  
-   If you created the token from an organization that is part of a group, the token now also appears in the Existing service account list on the group level, where the group admin can also change the token name or even delete it.  
+   Make sure you copy this token as you won’t see it again. You can click Close and Hide once you've copied the token; either way, when you navigate away from this page it will no longer be accessible. This is a security standard to keep your tokens safe. The new token is also added to your Existing service accounts list, similar to the following image:
 
-7. Click any of the links to update the names for a service account token - for Group-level tokens, from the Group level only; for Organization-level tokens, from the relevant organization and also from the Group level: 
+   Furthermore, if you created the token for the entire group with an Admin role, the token also appears in the Existing service accounts list for each of its organizations, though it can only be edited from the Group level.
+
+   If you created the token from an organization that is part of a group, the token now also appears in the Existing service account list on the group level, where the group admin can also change the token name or even delete it.
+
+7. Click any of the links to update the names for a service account token - for Group-level tokens, from the Group level only; for Organization-level tokens, from the relevant organization and also from the Group level:
 8. Repeat these steps to create multiple tokens for the same or any other organization or group.
 
 ### Edit and delete a service account

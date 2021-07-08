@@ -1,12 +1,12 @@
-# Set up Snyk Single Sign-On \(SSO\)
+# I can't import projects from one of my GitHub organisations
 
-##  Set up Snyk Single Sign-On \(SSO\)
+## Set up Snyk Single Sign-On \(SSO\)
 
 Set up single sign-on to allow your developers and teams easy access to Snyk through your existing SSO provider, so they can see the status of their projects, view reports, resolve vulnerabilities, and more.
 
 The information you need to establish trust between Snyk and the identity provider depends on which type of SSO you are using.
 
-Ensure you have at least one group and organization to indicate where new users will be assigned. See [Groups, Organizations and Users](https://support.snyk.io/hc/en-us/articles/360011418638-Groups-Organizations-and-Users). 
+Ensure you have at least one group and organization to indicate where new users will be assigned. See [Groups, Organizations and Users](https://support.snyk.io/hc/en-us/articles/360011418638-Groups-Organizations-and-Users).
 
 ### Overview
 
@@ -33,8 +33,8 @@ Use these details to set up the connection with your Identity provider \(IdP\):
 
 | Entity ID | **urn:auth0:snyk:saml-**_**{customer\_name}**_ \(Replace _{customer\_name}_ with a name for your company.\) |
 | :--- | :--- |
-| ACS URL | **https://snyk.auth0.com/login/callback?connection=saml-**_**{customer\_name}**_ \(Replace _{customer\_name}_ with the same name for your company.\) |
-| Signing certificate | https://snyk.auth0.com/pem |
+| ACS URL | [https://snyk.auth0.com/login/callback?connection=saml-](https://snyk.auth0.com/login/callback?connection=saml-)_**{customer\_name}**_ \(Replace _{customer\_name}_ with the same name for your company.\) |
+| Signing certificate | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem) |
 
 To map information from your Identity provider to Snyk, name your user attributes as follows \(using the same capitalization and spelling\):
 
@@ -93,7 +93,7 @@ Obtain the following information from your identity provider and organization. P
 
 When using OIDC for the connection between your Identity provider and Snyk, add the Callback/Redirect URIs and OAuth Grant Type in your identity provider to establish trust with Snyk.
 
-| Callback/Redirect URIs | **https://snyk.auth0.com/login/callback** |
+| Callback/Redirect URIs | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback) |
 | :--- | :--- |
 | OAuth Grant Type | Implicit \(or Authorization Code\) |
 
@@ -111,7 +111,7 @@ Obtain the following information from your identity provider and organization. P
 
 When using Azure AD for the connection between your Identity provider and Snyk, you'll need to add the Redirect URIs in your Identity provider to establish trust with Snyk.
 
-| Redirect URIs | **https://snyk.auth0.com/login/callback** |
+| Redirect URIs | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback) |
 | :--- | :--- |
 
 
@@ -121,15 +121,15 @@ Obtain the following information from your identity provider and organization. P
 
 | Client ID | The public identifier unique for your authorization server |
 | :--- | :--- |
-| Client Secret | The secret for your authorization that grants tokens to authorized requestors  |
+| Client Secret | The secret for your authorization that grants tokens to authorized requestors |
 | Microsoft Azure AD Domain | The numbers and letters shown in the Directory \(tenant\) ID, which can be found from the Snyk app you created under Overview |
 
 When using ADFS for the connection between your Identity provider and Snyk, add the Realm Identifier, a Callback URL, and a Signing certificate in your Identity provider to establish trust with Snyk.
 
 | Realm Identifier | **urn:auth0:snyk** |
 | :--- | :--- |
-| Callback URL | **https://snyk.auth0.com/login/callback** |
-| Signing cert | **https://snyk.auth0.com/pem** \(add as a signature and not encryption\) |
+| Callback URL | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback) |
+| Signing cert | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem) \(add as a signature and not encryption\) |
 
 #### ADFS information to provide to Snyk
 
@@ -137,7 +137,7 @@ Obtain the following information from your Identity provider and organization. Y
 
 * ADFS URL or Federation Metadata XML file
 
-For Enterprise plans, Snyk can map new users to a specific organization and role when they first sign in using SSO. This option requires additional configuration, including specific naming conventions for organizations. 
+For Enterprise plans, Snyk can map new users to a specific organization and role when they first sign in using SSO. This option requires additional configuration, including specific naming conventions for organizations.
 
 Work with your Customer Success Manager and Snyk Technical Services to prepare for implementing this SSO option.
 

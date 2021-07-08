@@ -1,14 +1,14 @@
 # How can I find which projects imported into Snyk have been archived in Github?
 
-* [ Project import errors](/hc/en-us/articles/360001373118-Project-import-errors)
-* [ Monitored projects are overwriting each other in the UI](/hc/en-us/articles/360017785398-Monitored-projects-are-overwriting-each-other-in-the-UI)
-* [ How can I find which projects imported into Snyk have been archived in Github?](/hc/en-us/articles/360007937497-How-can-I-find-which-projects-imported-into-Snyk-have-been-archived-in-Github-)
-* [ What are docker scratch based images?](/hc/en-us/articles/360004012857-What-are-docker-scratch-based-images-)
-* [ My project appears as /file://nothing in Snyk](/hc/en-us/articles/360003897778-My-project-appears-as-file-nothing-in-Snyk)
-* [ Project takes too long to import into the Snyk UI \(Yarn Workspaces\)](/hc/en-us/articles/360002865538-Project-takes-too-long-to-import-into-the-Snyk-UI-Yarn-Workspaces-)
-* [ Project owner and importer information](/hc/en-us/articles/360002827197-Project-owner-and-importer-information)
+* [ Project import errors](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360001373118-Project-import-errors/README.md)
+* [ Monitored projects are overwriting each other in the UI](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360017785398-Monitored-projects-are-overwriting-each-other-in-the-UI/README.md)
+* [ How can I find which projects imported into Snyk have been archived in Github?](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360007937497-How-can-I-find-which-projects-imported-into-Snyk-have-been-archived-in-Github-/README.md)
+* [ What are docker scratch based images?](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004012857-What-are-docker-scratch-based-images-/README.md)
+* [ My project appears as /file://nothing in Snyk](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360003897778-My-project-appears-as-file-nothing-in-Snyk/README.md)
+* [ Project takes too long to import into the Snyk UI \(Yarn Workspaces\)](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360002865538-Project-takes-too-long-to-import-into-the-Snyk-UI-Yarn-Workspaces-/README.md)
+* [ Project owner and importer information](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360002827197-Project-owner-and-importer-information/README.md)
 
-##  How can I find which projects imported into Snyk have been archived in Github?
+## How can I find which projects imported into Snyk have been archived in Github?
 
 Thanks to **Jake Champion** for sharing this great tip!
 
@@ -24,8 +24,7 @@ Currently, Snyk does not have a feature to do this in an automated fashion, but 
 Array.from(document.querySelectorAll('label [d="M3.5 7.52h17V20.1a1 1 0 0 1-1 1h-15a1 1 0 0 1-1-1V7.52zm6.5 4.53h4a1 1 0 0 0 1-1 1 1 0 0 0-1-1.01h-4a1 1 0 0 0 0 2.01zM21 3a1 1 0 0 1 1 1v2.02a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4A1 1 0 0 1 3 3h18z"]')).filter(a => a.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.querySelectorAll('[d="M9.3 19.7L3 13.4l1.9-2L9.3 16 20.1 5.1l1.9 2z"]').length).map(a=>a.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('span').innerText)
 ```
 
-  
-4. Press Enter
+1. Press Enter
 
 You'll be presented with a list of Orgs that are Imported and Archived:
 

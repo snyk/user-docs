@@ -1,10 +1,10 @@
 # Detecting application vulnerabilities in container images
 
-* [ Detecting application vulnerabilities in container images](/hc/en-us/articles/360008593457-Detecting-application-vulnerabilities-in-container-images)
-* [ Analysis and remediation for your images from the Snyk app](/hc/en-us/articles/360003915938-Analysis-and-remediation-for-your-images-from-the-Snyk-app)
-* [ Image layer information](/hc/en-us/articles/360017757277-Image-layer-information)
+* [ Detecting application vulnerabilities in container images](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360008593457-Detecting-application-vulnerabilities-in-container-images/README.md)
+* [ Analysis and remediation for your images from the Snyk app](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360003915938-Analysis-and-remediation-for-your-images-from-the-Snyk-app/README.md)
+* [ Image layer information](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360017757277-Image-layer-information/README.md)
 
-##  Detecting application vulnerabilities in container images
+## Detecting application vulnerabilities in container images
 
 The feature is currently supported for Node, Ruby, PHP, Python, Go binaries and Java.
 

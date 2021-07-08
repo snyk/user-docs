@@ -1,19 +1,19 @@
 # Artifactory Registry for Maven
 
-* [ Artifactory Registry Setup](/hc/en-us/articles/360013805638-Artifactory-Registry-Setup)
-* [ Artifactory Registry for Maven](/hc/en-us/articles/360005507418-Artifactory-Registry-for-Maven)
-* [ Artifactory Registry for npm](/hc/en-us/articles/360007537418-Artifactory-Registry-for-npm)
-* [ npm Teams & npm Enterprise for npm](/hc/en-us/articles/360009411777-npm-Teams-npm-Enterprise-for-npm)
-* [ Private Gem Sources for Ruby](/hc/en-us/articles/360013742557-Private-Gem-Sources-for-Ruby)
+* [ Artifactory Registry Setup](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360013805638-Artifactory-Registry-Setup/README.md)
+* [ Artifactory Registry for Maven](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360005507418-Artifactory-Registry-for-Maven/README.md)
+* [ Artifactory Registry for npm](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360007537418-Artifactory-Registry-for-npm/README.md)
+* [ npm Teams & npm Enterprise for npm](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360009411777-npm-Teams-npm-Enterprise-for-npm/README.md)
+* [ Private Gem Sources for Ruby](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360013742557-Private-Gem-Sources-for-Ruby/README.md)
 
-##  Artifactory Registry for Maven
+## Artifactory Registry for Maven
 
 **Feature availability**  
 This feature is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
 
 Snyk can be configured to use custom package registries under specific conditions, allowing insight into dependencies that are not hosted in canonical registries.
 
-The custom package registry feature currently supports [Artifactory](/hc/en-us/articles/360013805638) with Maven.
+The custom package registry feature currently supports [Artifactory](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360013805638/README.md) with Maven.
 
 Maven analysis can be configured to mirror all requests through a custom package repository, or you can specify additional repositories to use alongside Maven Central.
 
@@ -37,7 +37,7 @@ If using Type 'Integration', you will need to choose an integration type and pro
 
 The Repository Name should be set as whatever comes after 'artifactory/' in the internal repository URL.
 
-For example, if the URL is 'http://artifactory.company.io/artifactory/libs-release'[,](http://artifactory.company.io/artifactory/jcenter',) Repository Name should be set as 'libs-release'.
+For example, if the URL is '[http://artifactory.company.io/artifactory/libs-release'\[,\]\(http://artifactory.company.io/artifactory/jcenter](http://artifactory.company.io/artifactory/libs-release'[,]%28http://artifactory.company.io/artifactory/jcenter)',\) Repository Name should be set as 'libs-release'.
 
 **Repositories**
 

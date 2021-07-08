@@ -1,6 +1,6 @@
 # Set up Snyk Broker
 
-The Broker client is installed and configured as a Docker image. 
+The Broker client is installed and configured as a Docker image.
 
 You can customize the configuration using the environment variables in the Docker images. For this reason, install separate, multiple instances of the client for different integration types to ensure proper configuration as well as redundancy.
 

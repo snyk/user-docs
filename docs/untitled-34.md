@@ -1,6 +1,6 @@
-# Snyk Preview
+# Project takes too long to import into the Snyk UI \(Yarn Workspaces\)
 
-##  Snyk Preview
+## Snyk Preview
 
 Snyk Preview lets you enable new features, at an "opt-in" level. For example, these may be features that have not yet been rolled out by default for all customers.
 

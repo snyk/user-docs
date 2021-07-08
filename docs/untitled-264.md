@@ -1,10 +1,10 @@
 # Using the Integrations API to share Broker tokens between Snyk organizations
 
-* [ Using the Integrations API to share Broker tokens between Snyk organizations](/hc/en-us/articles/360016692397-Using-the-Integrations-API-to-share-Broker-tokens-between-Snyk-organizations)
-* [ API - Maven test using a different repository](/hc/en-us/articles/360004661298-API-Maven-test-using-a-different-repository)
-* [ Apiary - API server took too long to respond](/hc/en-us/articles/360004661218-Apiary-API-server-took-too-long-to-respond)
+* [ Using the Integrations API to share Broker tokens between Snyk organizations](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360016692397-Using-the-Integrations-API-to-share-Broker-tokens-between-Snyk-organizations/README.md)
+* [ API - Maven test using a different repository](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004661298-API-Maven-test-using-a-different-repository/README.md)
+* [ Apiary - API server took too long to respond](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360004661218-Apiary-API-server-took-too-long-to-respond/README.md)
 
-##  Using the Integrations API to share Broker tokens between Snyk organizations
+## Using the Integrations API to share Broker tokens between Snyk organizations
 
 A common [Snyk Broker](https://support.snyk.io/hc/en-us/sections/360001138138-Snyk-Broker) architecture is to use the same single Broker client for multiple Snyk organizations:
 
@@ -23,7 +23,7 @@ To create an integration with a shared Broker token:
    POST https://snyk.io/api/v1/org/orgId/integrations
    ```
 
-    with the following body:
+   with the following body:
 
    ```text
    {
@@ -34,33 +34,31 @@ To create an integration with a shared Broker token:
    }
    ```
 
-    The call returns the following response, that contains the new integration id and Broker token:   
+   The call returns the following response, that contains the new integration id and Broker token:
 
-
-   ```text
+```text
    {
        "id": "9a3e5d90-b782-468a-a042-9a2073736f0b",
        "brokerToken": "4a18d42f-0706-4ad0-b127-24078731fbed"
-   }  
-   ```
+   }
+```
 
-2. Clone the new integration to the other organizations that you want to share the token with, using the [clone-an-integration](https://snyk.docs.apiary.io/#reference/integrations/integration-cloning/clone-an-integration-%28with-settings-and-credentials%29) API.
-3. Use the previously returned integration id to make the following call:
+1. Clone the new integration to the other organizations that you want to share the token with, using the [clone-an-integration](https://snyk.docs.apiary.io/#reference/integrations/integration-cloning/clone-an-integration-%28with-settings-and-credentials%29) API.
+2. Use the previously returned integration id to make the following call:
 
    ```text
    POST https://snyk.io/api/v1/org/orgId/integrations/integrationId/clone
    ```
 
-    The call returns the following response, that contains the new integration id:  
+   The call returns the following response, that contains the new integration id:
 
-
-   ```text
+```text
    {
        "newIntegrationId": "9a3e5d90-b782-468a-a042-9a2073736f0b"
    }
-   ```
+```
 
-4. Run the Broker client within your infrastructure, using the newly generated Broker token that was returned in the first step.
+1. Run the Broker client within your infrastructure, using the newly generated Broker token that was returned in the first step.
 
 ### Step 2: Rotate a shared Broker token
 
@@ -73,7 +71,7 @@ To rotate a shared Broker token without causing downtime:
    POST https://snyk.io/api/v1/org/orgId/integrations/integrationId/authentication/provision-token
    ```
 
-    The call returns the following response, that contains the newly provisioned token:
+   The call returns the following response, that contains the newly provisioned token:
 
    ```text
    {
@@ -82,7 +80,7 @@ To rotate a shared Broker token without causing downtime:
    }
    ```
 
-    Make sure there is no other token that is currently provisioned within the group, otherwise, this operation will fail.
+   Make sure there is no other token that is currently provisioned within the group, otherwise, this operation will fail.
 
 2. Rerun your Broker client with the newly provisioned token.
 3. Switch the existing shared broker tokens with the provisioned token, using the [switch-between-broker-tokens](https://snyk.docs.apiary.io/#reference/integrations/integration-broker-token-switching/switch-between-broker-tokens) API.  
@@ -92,6 +90,6 @@ To rotate a shared Broker token without causing downtime:
    POST https://snyk.io/api/v1/org/orgId/integrations/integrationId/authentication/switch-token
    ```
 
-    This action switches the Broker token for the specified integration, and for all integration within the group that share the same Broker token.  
+   This action switches the Broker token for the specified integration, and for all integration within the group that share the same Broker token.  
    **Note**: this action requires a provisioned token for this integration within the group.
 

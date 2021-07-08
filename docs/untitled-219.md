@@ -1,6 +1,6 @@
 # Test your Kubernetes files with our CLI tool
 
-##  Test your Kubernetes files with our CLI tool
+## Test your Kubernetes files with our CLI tool
 
 With Snyk Infrastructure as Code, you can test your configuration files directly from the CLI.
 
@@ -31,23 +31,23 @@ snyk iac test file-1.yaml file-2.yaml
 
 ### To scan a Helm chart using the CLI
 
-You scan a Helm chart by converting the template to a rendered Kuberenetes manifest file and then scanning this using the Snyk IaC CLI. 
+You scan a Helm chart by converting the template to a rendered Kuberenetes manifest file and then scanning this using the Snyk IaC CLI.
 
 ```text
 helm template ./iac-helm > helm.yaml
 snyk iac test helm.yaml
 ```
 
-change \`iac-helm\` for your Helm chart name. 
+change \`iac-helm\` for your Helm chart name.
 
 ### To scan a Kustomize template using the CLI
 
-You scan a Kustomize template by building the Kuberenetes manifest file and then scanning this using the Snyk IaC CLI. 
+You scan a Kustomize template by building the Kuberenetes manifest file and then scanning this using the Snyk IaC CLI.
 
 ```text
 kustomize build > kubernetes.yaml
 snyk iac test kubernetes.yaml
 ```
 
-Depending on your kustomize templates, you may need to provide a name after the build argument. 
+Depending on your kustomize templates, you may need to provide a name after the build argument.
 

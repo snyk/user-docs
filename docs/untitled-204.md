@@ -10,7 +10,7 @@ The Kubernetes scanning features need access to the YAML or JSON files from the 
 
 1. Find and download the appropriate accept.json sample file for your source control system [from the Broker repository](https://github.com/snyk/broker/tree/master/client-templates).
 2. Rename it to `accept.json` and add the below rules, appropriate to your SCM, to the **private** array in the JSON file.
-3. Follow the [Configuring the broker]() instructions.
+3. Follow the [Configuring the broker](untitled-204.md) instructions.
 
 ### GitHub & GitHub Enterprise rules
 
@@ -211,7 +211,7 @@ The Kubernetes scanning features need access to the YAML or JSON files from the 
 },
 ```
 
- The broker takes the path to the accept.json file \(with the rules above added\) in the ACCEPT environment variable. You can see an example of passing that to the GitHub broker below.
+The broker takes the path to the accept.json file \(with the rules above added\) in the ACCEPT environment variable. You can see an example of passing that to the GitHub broker below.
 
 ```text
 docker run --restart=always \

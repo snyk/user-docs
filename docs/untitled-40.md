@@ -1,6 +1,6 @@
-# Scan all unmanaged jar files
+# Reports: Licenses tab
 
-##  Scan all unmanaged jar files
+## Scan all unmanaged jar files
 
 Snyk CLI is able to scan unmanaged jar files in [Java applications](https://support.snyk.io/hc/en-us/articles/360003817357-Snyk-for-Java-Gradle-Maven-). The package name, version, and vulnerabilities are identified by the CLI only if the jar file matches the Maven Central jar file.
 
@@ -22,7 +22,7 @@ Below is a Linux/Mac BASH script that will iterate through all subfolders starti
 find . -type f -name '*.jar' | uniq | xargs -I {} snyk monitor --file={} --scan-unmanaged --remote-repo-url=PROJECT_NAME_HERE
 ```
 
-The following is a Windows Batch script. The batch script is run from a **scanjar.bat** file. 
+The following is a Windows Batch script. The batch script is run from a **scanjar.bat** file.
 
 ```text
 REM Usage: <this_bat_file> <PATH_TO_APP_ROOT_FOLDER> <PROJECT_NAME_FOR_SNYK> 

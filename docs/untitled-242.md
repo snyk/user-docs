@@ -1,15 +1,15 @@
 # Getting started with Snyk Container
 
-* [ Create a Snyk account](/hc/en-us/articles/360017098237-Create-a-Snyk-account)
-* [ Select a Snyk product / tool](/hc/en-us/articles/360014959818-Select-a-Snyk-product-tool)
-* [ Getting started with Snyk Open Source](/hc/en-us/articles/360014875297-Getting-started-with-Snyk-Open-Source)
-* [ Getting started with Snyk Code](/hc/en-us/articles/360016765157-Getting-started-with-Snyk-Code)
-* [ Getting started with Snyk Container](/hc/en-us/articles/360014877957-Getting-started-with-Snyk-Container)
-* [ Getting started with Snyk Infrastructure as Code \(IaC\)](/hc/en-us/articles/360014938398-Getting-started-with-Snyk-Infrastructure-as-Code-IaC-)
-* [ Getting Started with Snyk License Compliance Management](/hc/en-us/articles/360015235618-Getting-Started-with-Snyk-License-Compliance-Management)
-* [ Getting started with Snyk intel vulnerability DB access](/hc/en-us/articles/360015452178-Getting-started-with-Snyk-intel-vulnerability-DB-access)
+* [ Create a Snyk account](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360017098237-Create-a-Snyk-account/README.md)
+* [ Select a Snyk product / tool](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360014959818-Select-a-Snyk-product-tool/README.md)
+* [ Getting started with Snyk Open Source](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360014875297-Getting-started-with-Snyk-Open-Source/README.md)
+* [ Getting started with Snyk Code](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360016765157-Getting-started-with-Snyk-Code/README.md)
+* [ Getting started with Snyk Container](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360014877957-Getting-started-with-Snyk-Container/README.md)
+* [ Getting started with Snyk Infrastructure as Code \(IaC\)](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360014938398-Getting-started-with-Snyk-Infrastructure-as-Code-IaC-/README.md)
+* [ Getting Started with Snyk License Compliance Management](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015235618-Getting-Started-with-Snyk-License-Compliance-Management/README.md)
+* [ Getting started with Snyk intel vulnerability DB access](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015452178-Getting-started-with-Snyk-intel-vulnerability-DB-access/README.md)
 
-##  Getting started with Snyk Container
+## Getting started with Snyk Container
 
 Get started with Snyk Container to help you find and fix vulnerabilities in container images. See [Container security overview](https://support.snyk.io/hc/en-us/articles/360003946897-Container-security-overview) and [Snyk Container](https://solutions.snyk.io/snyk-academy/container) for details.
 
@@ -30,15 +30,14 @@ Choose a container registry integration, to connect the registry with Snyk:
 4. Click the entry to integrate with Snyk: 
 5. Fill in the account credentials and other details as prompted, then save the changes, to integrate this entry with Snyk:
 
-Add projects for your selected container, to start scanning with Snyk. 
+Add projects for your selected container, to start scanning with Snyk.
 
 1. Click **Add Project**, and select the integration registry entry to add from: 
 2. Select the container repository and tags to import, then click **Add selected repositories** to import them into your projects:  
 
+Importing also sets Snyk to run a daily check on the repositories for vulnerabilities.
 
-   Importing also sets Snyk to run a daily check on the repositories for vulnerabilities.
-
-3. A progress bar appears: click **View log** to see log results. 
+1. A progress bar appears: click **View log** to see log results. 
 
 If you encounter any errors during import, see the [Importing projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects) information.
 

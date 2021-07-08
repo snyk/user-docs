@@ -1,6 +1,6 @@
-# Assign a policy to project attributes
+# How are patches validated?
 
-##  Assign a policy to project attributes
+## Assign a policy to project attributes
 
 After applying [project attributes](https://support.snyk.io/hc/en-us/articles/360012703537-Project-Attributes) to your projects, you can create policies that apply to those attributes. Projects and policies are linked based on the attributes assigned to the policy.
 
@@ -14,7 +14,7 @@ Reminder: Policies assigned to project attributes apply when running **snyk moni
 
 To add an attribute, click on the desired attribute checkbox\(es\) from the attribute selector panel.
 
-To remove an attribute from a policy, uncheck the desired attribute checkbox\(es\) from the attribute selector panel. 
+To remove an attribute from a policy, uncheck the desired attribute checkbox\(es\) from the attribute selector panel.
 
 You can create and save a policy where no attributes are selected, for example, if you have not yet decided which attributes should be associated with that policy. This policy does not apply to projects where all attributes are left blank.
 
@@ -25,7 +25,7 @@ To be associated with a policy, a project must have all the attributes listed on
 For example, if you have a policy assigned to `Critical`, `External`, and `Frontend`, this policy applies to projects which includes those same attributes, but not to a project with the attributes `Critical` and `External`.  
 Here is our sample policy:
 
-Here is a project that will inherit the policy: 
+Here is a project that will inherit the policy:
 
 Here is a project that will not inherit the policy:
 

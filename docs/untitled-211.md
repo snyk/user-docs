@@ -1,10 +1,10 @@
 # Reporting
 
-* [ Groups, Organizations and Users](/hc/en-us/articles/360011418638-Groups-Organizations-and-Users)
-* [ Notifications](/hc/en-us/articles/360011633117-Notifications)
-* [ Reporting](/hc/en-us/articles/360011318037-Reporting)
+* [ Groups, Organizations and Users](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360011418638-Groups-Organizations-and-Users/README.md)
+* [ Notifications](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360011633117-Notifications/README.md)
+* [ Reporting](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360011318037-Reporting/README.md)
 
-##  Reporting
+## Reporting
 
 Snyk reports show the status of all of your projects, issues, dependencies, and licenses, for your organization or group. For more details, see [Reports](https://support.snyk.io/hc/en-us/sections/360001138198-Reports).
 
@@ -15,7 +15,7 @@ Snyk reporting acts as a Bill of Materials \(BOM\) to quickly and easily identif
 
 See [Dependencies tab](https://support.snyk.io/hc/en-us/articles/360004002618-Dependencies-tab).
 
-The Licenses area displays all licenses that are currently used in your project, and allows you to understand which project and dependency use a license. 
+The Licenses area displays all licenses that are currently used in your project, and allows you to understand which project and dependency use a license.
 
 See [Licenses tab](https://support.snyk.io/hc/en-us/articles/360004002638-Licenses-tab).
 

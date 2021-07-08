@@ -1,10 +1,10 @@
 # Introduction to Snyk
 
-* [ Introduction to Snyk](/hc/en-us/articles/360011378558-Introduction-to-Snyk)
-* [ Integrations and languages](/hc/en-us/articles/360011733538-Integrations-and-languages)
-* [ Snyk Glossary](/hc/en-us/articles/360017682058-Snyk-Glossary)
+* [ Introduction to Snyk](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360011378558-Introduction-to-Snyk/README.md)
+* [ Integrations and languages](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360011733538-Integrations-and-languages/README.md)
+* [ Snyk Glossary](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360017682058-Snyk-Glossary/README.md)
 
-##  Introduction to Snyk
+## Introduction to Snyk
 
 Snyk tests for vulnerabilities in [your own code](https://snyk.io/product/snyk-code/), [open source dependencies](https://support.snyk.io/hc/en-us/categories/360003049458-Snyk-Open-Source), [Container images](https://support.snyk.io/hc/en-us/categories/360000583498-Snyk-Container), and [Infrastructure as Code \(IaC\) configurations](https://snyk.io/product/infrastructure-as-code-security/), and offers context, prioritization, and remediation.
 

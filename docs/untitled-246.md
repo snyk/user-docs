@@ -1,8 +1,8 @@
 # Pending tasks on the Snyk Dashboard
 
-* [ Pending tasks on the Snyk Dashboard](/hc/en-us/articles/360015087517-Pending-tasks-on-the-Snyk-Dashboard)
+* [ Pending tasks on the Snyk Dashboard](https://github.com/snyk/user-docs/tree/53fce7f51125484bfae446936b09a98076f1d418/hc/en-us/articles/360015087517-Pending-tasks-on-the-Snyk-Dashboard/README.md)
 
-##  Pending tasks on the Snyk Dashboard
+## Pending tasks on the Snyk Dashboard
 
 ### Pending Tasks
 

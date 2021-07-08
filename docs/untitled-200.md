@@ -1,6 +1,6 @@
 # Prioritizing Snyk issues
 
-##  Prioritizing Snyk issues
+## Prioritizing Snyk issues
 
 Snyk offers a priority score to make the prioritization of issues as quick and easy as possible, allowing you to have the biggest impact with the least effort.
 
@@ -36,6 +36,5 @@ Read more about the relevant API calls:
 
 **Settings**
 
-There are no settings related to the priority score. They have no active impact, so are just extra metadata, so they cannot be disabled or hidden.  
-
+There are no settings related to the priority score. They have no active impact, so are just extra metadata, so they cannot be disabled or hidden.
 
