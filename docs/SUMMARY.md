@@ -331,7 +331,7 @@
 * [Snyk API – Docs Library](untitled-327.md)
 * [Fixing and prioritizing issues – Docs Library](untitled-328.md)
 * [Disclosing vulnerabilities – Docs Library](untitled-329.md)
-* [Snyk Open Source – Docs Library](snyk-open-source-docs-library.md)
+* [Snyk Open Source – Docs Library](snyk-open-source.md)
 * [Infrastructure as code – Docs Library](untitled-330.md)
 * [Introducing Snyk – Docs Library](untitled-331.md)
 * [Snyk Code – Docs Library](untitled-333.md)
