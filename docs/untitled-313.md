@@ -1,6 +1,6 @@
 # AWS CodePipeline integration
 
-##  AWS CodePipeline integration
+## AWS CodePipeline integration
 
 ## About the integration
 

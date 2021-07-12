@@ -1,4 +1,4 @@
-# Test your configuration files
+# Satisfying version not found for cousin dependencies
 
 With Snyk Infrastructure as Code, you can test your configuration files directly from the CLI.
 

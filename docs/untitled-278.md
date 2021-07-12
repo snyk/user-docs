@@ -1,13 +1,13 @@
 # Supported operating system distributions
 
-* [ Snyk Container security overview](/hc/en-us/articles/360003946897-Snyk-Container-security-overview)
-* [ How Snyk Container works](/hc/en-us/articles/360003915918-How-Snyk-Container-works)
-* [ Supported operating system distributions](/hc/en-us/articles/360017545417-Supported-operating-system-distributions)
-* [ Understanding Linux vulnerability severity](/hc/en-us/articles/360013304357-Understanding-Linux-vulnerability-severity)
+* [ Snyk Container security overview](https://github.com/snyk/user-docs/tree/75cbddc84902693171786610d68edd1dc502bd55/hc/en-us/articles/360003946897-Snyk-Container-security-overview/README.md)
+* [ How Snyk Container works](https://github.com/snyk/user-docs/tree/75cbddc84902693171786610d68edd1dc502bd55/hc/en-us/articles/360003915918-How-Snyk-Container-works/README.md)
+* [ Supported operating system distributions](https://github.com/snyk/user-docs/tree/75cbddc84902693171786610d68edd1dc502bd55/hc/en-us/articles/360017545417-Supported-operating-system-distributions/README.md)
+* [ Understanding Linux vulnerability severity](https://github.com/snyk/user-docs/tree/75cbddc84902693171786610d68edd1dc502bd55/hc/en-us/articles/360013304357-Understanding-Linux-vulnerability-severity/README.md)
 
-##  Supported operating system distributions
+## Supported operating system distributions
 
-Snyk Container supports the following operating system distributions. 
+Snyk Container supports the following operating system distributions.
 
 If you use an unsupported distribution, such as one which has reached its End of life \(EOL\) and is no longer being maintained, Snyk provides a message to tell you this is unsupported.
 
@@ -21,7 +21,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * alpine:3.11
 * alpine:3.10
 
- End of life
+  End of life
 
 * alpine:3.9
 * alpine:3.8
@@ -39,14 +39,14 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * centos:7
 * centos:6
 
- End of life:
+  End of life:
 
 * centos:5
 * debian:11
 * debian:10
 * debian:9
 
- End of life:
+  End of life:
 
 * debian:8
 * debian:7
@@ -55,7 +55,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * oracle:7
 * oracle:6
 
- End of life:
+  End of life:
 
 * oracle:5
 * oracle:4
@@ -64,7 +64,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * rhel:7
 * rhel:6
 
- End of life:
+  End of life:
 
 * rhel:5
 * ubuntu:21.04
@@ -74,7 +74,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * ubuntu:18.04
 * ubuntu:16.04
 
- End of life
+  End of life
 
 * ubuntu:19.10
 * ubuntu:19.04

@@ -1,16 +1,16 @@
 # Snyk Code language and framework support
 
-* [ Introduction to Snyk Code](/hc/en-us/articles/360017059758-Introduction-to-Snyk-Code)
-* [ Snyk Code language and framework support](/hc/en-us/articles/360016973477-Snyk-Code-language-and-framework-support)
-* [ Using Snyk Code \(web\)](/hc/en-us/articles/360017147558-Using-Snyk-Code-web-)
+* [ Introduction to Snyk Code](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360017059758-Introduction-to-Snyk-Code/README.md)
+* [ Snyk Code language and framework support](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360016973477-Snyk-Code-language-and-framework-support/README.md)
+* [ Using Snyk Code \(web\)](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360017147558-Using-Snyk-Code-web-/README.md)
 
-##  Snyk Code language and framework support
+## Snyk Code language and framework support
 
 Snyk Code currently supports:
 
-* [Java]()
-* [JavaScript and TypeScript]()
-* [Python]()
+* [Java](untitled-269.md)
+* [JavaScript and TypeScript](untitled-269.md)
+* [Python](untitled-269.md)
 
 ### Language type and framework support
 

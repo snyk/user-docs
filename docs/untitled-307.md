@@ -1,11 +1,11 @@
 # Visual Studio extension
 
-* [ Eclipse plugin](/hc/en-us/articles/360004032337-Eclipse-plugin)
-* [ JetBrains plugins](/hc/en-us/articles/360004032317-JetBrains-plugins)
-* [ Visual Studio extension](/hc/en-us/articles/360020073958-Visual-Studio-extension)
-* [ Visual Studio Code extension for Snyk Code](/hc/en-us/articles/360018585717-Visual-Studio-Code-extension-for-Snyk-Code-)
+* [ Eclipse plugin](https://github.com/snyk/user-docs/tree/75cbddc84902693171786610d68edd1dc502bd55/hc/en-us/articles/360004032337-Eclipse-plugin/README.md)
+* [ JetBrains plugins](https://github.com/snyk/user-docs/tree/75cbddc84902693171786610d68edd1dc502bd55/hc/en-us/articles/360004032317-JetBrains-plugins/README.md)
+* [ Visual Studio extension](https://github.com/snyk/user-docs/tree/75cbddc84902693171786610d68edd1dc502bd55/hc/en-us/articles/360020073958-Visual-Studio-extension/README.md)
+* [ Visual Studio Code extension for Snyk Code](https://github.com/snyk/user-docs/tree/75cbddc84902693171786610d68edd1dc502bd55/hc/en-us/articles/360018585717-Visual-Studio-Code-extension-for-Snyk-Code-/README.md)
 
-##  Visual Studio extension
+## Visual Studio extension
 
 This documentation describes the Visual Studio extension for Snyk Open Source.
 
@@ -18,7 +18,6 @@ This documentation describes the Visual Studio extension for Snyk Open Source.
 
 Open your solution, then click **run scan** to run a Snyk scan:
 
-  
 When the scan completes, the results appear in the Snyk window:
 
 You must have successfully built your solution for the Snyk to find the dependencies and vulnerabilities.
@@ -32,7 +31,7 @@ You can filter vulnerabilities by name or by severity.
 
 ### Configure Snyk extension \(Project settings\)
 
-The **Scan all projects** option is enabled  by default. It adds the **--all-projects** option for Snyk CLI, scanning all projects by default:
+The **Scan all projects** option is enabled by default. It adds the **--all-projects** option for Snyk CLI, scanning all projects by default:
 
 If you see the message: **Could not detect supported target files**, then ensure **Scan all projects** is enabled.
 

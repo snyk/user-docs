@@ -1,10 +1,10 @@
 # Test your CloudFormation files with our CLI tool
 
-##  Test your CloudFormation files with our CLI tool
+## Test your CloudFormation files with our CLI tool
 
 With Snyk Infrastructure as Code, you can test your configuration files directly from the CLI.
 
-Snyk Infrastructure as Code for CloudFormation supports scanning yaml & json formats. 
+Snyk Infrastructure as Code for CloudFormation supports scanning yaml & json formats.
 
 You can use the CLI as follows:
 

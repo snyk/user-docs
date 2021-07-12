@@ -1,4 +1,4 @@
-# Test your CloudFormation files with our CLI tool
+# How does Snyk aggregate .NET Projects?
 
 ##  Test your CloudFormation files with our CLI tool
 

@@ -1,4 +1,4 @@
-# Automatic import/deletion of Kubernetes workloads projects
+# Are Snyk patches available indefinitely to apply/view through Snyk's website ?
 
 * [ Kubernetes integration overview](/hc/en-us/articles/360003916138-Kubernetes-integration-overview)
 * [ Install the Snyk controller with Helm](/hc/en-us/articles/360003916158-Install-the-Snyk-controller-with-Helm)

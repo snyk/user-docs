@@ -1,4 +1,4 @@
-# Visual Studio Code extension for Snyk Code
+# Cannot create a Fix PR
 
 * [ Eclipse plugin](/hc/en-us/articles/360004032337-Eclipse-plugin)
 * [ JetBrains plugins](/hc/en-us/articles/360004032317-JetBrains-plugins)

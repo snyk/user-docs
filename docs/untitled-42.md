@@ -1,4 +1,4 @@
-# Detecting CloudFormation configuration files using a broker
+# Snyk runtime monitoring: install the Snyk agent for Node.js
 
 When using a privately hosted Git repository, Snyk Broker must be used to connect with Snyk products. See the [broker documentation](https://support.snyk.io/hc/en-us/articles/360004032397-Broker) for details.
 

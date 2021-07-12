@@ -1,9 +1,9 @@
 # Nexus Repository Manager Gatekeeper plugin
 
-* [ Artifactory Gatekeeper plugin overview](/hc/en-us/articles/360004032417-Artifactory-Gatekeeper-plugin-overview)
-* [ Nexus Repository Manager Gatekeeper plugin](/hc/en-us/articles/360004127697-Nexus-Repository-Manager-Gatekeeper-plugin)
+* [ Artifactory Gatekeeper plugin overview](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004032417-Artifactory-Gatekeeper-plugin-overview/README.md)
+* [ Nexus Repository Manager Gatekeeper plugin](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004127697-Nexus-Repository-Manager-Gatekeeper-plugin/README.md)
 
-##  Nexus Repository Manager Gatekeeper plugin
+## Nexus Repository Manager Gatekeeper plugin
 
 ### Nexus Gatekeeper plugin: overview
 

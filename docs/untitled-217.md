@@ -1,10 +1,10 @@
 # Notifications
 
-* [ Groups, Organizations and Users](/hc/en-us/articles/360011418638-Groups-Organizations-and-Users)
-* [ Notifications](/hc/en-us/articles/360011633117-Notifications)
-* [ Reporting](/hc/en-us/articles/360011318037-Reporting)
+* [ Groups, Organizations and Users](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360011418638-Groups-Organizations-and-Users/README.md)
+* [ Notifications](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360011633117-Notifications/README.md)
+* [ Reporting](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360011318037-Reporting/README.md)
 
-##  Notifications
+## Notifications
 
 Snyk automatically notifies you when new issues are found in the projects you are monitoring, to help make you aware of new risks in these projects.
 

@@ -1,4 +1,4 @@
-# Issue card information
+# What if there is no upgrade or patch available?
 
 * [ Introduction to projects](/hc/en-us/articles/360019058297-Introduction-to-projects)
 * [ View project information](/hc/en-us/articles/360011450838-View-project-information)

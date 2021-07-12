@@ -1,4 +1,4 @@
-# Open pull requests to fix vulnerable base images in your Dockerfile
+# How do I change the email that Snyk uses to send me notifications when connected to a Github account
 
 ##  Open pull requests to fix vulnerable base images in your Dockerfile
 

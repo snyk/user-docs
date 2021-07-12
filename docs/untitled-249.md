@@ -1,10 +1,10 @@
 # Enable permissions for Snyk Broker from your third-party tool
 
-1.  [Docs Library \| Snyk](/hc/en-us)
-2.  [Integrations](/hc/en-us/categories/360000598398-Integrations)
-3.  [Snyk Broker](/hc/en-us/sections/360001138138-Snyk-Broker)
+1. [Docs Library \| Snyk](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/README.md)
+2. [Integrations](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/categories/360000598398-Integrations/README.md)
+3. [Snyk Broker](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/sections/360001138138-Snyk-Broker/README.md)
 
-##  Enable permissions for Snyk Broker from your third-party tool
+## Enable permissions for Snyk Broker from your third-party tool
 
 ### Assign permissions components
 

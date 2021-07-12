@@ -1,4 +1,4 @@
-# Advanced failing of your builds with Snyk CLI
+# Unable to get Issuer Certificates Locally
 
 The Snyk CLI provides the following options when failing your builds:
 

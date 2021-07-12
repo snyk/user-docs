@@ -1,4 +1,4 @@
-# Introduction to projects
+# Snyk changed the "resolved" URL's in my Lock file
 
 * [ Introduction to projects](/hc/en-us/articles/360019058297-Introduction-to-projects)
 * [ View project information](/hc/en-us/articles/360011450838-View-project-information)

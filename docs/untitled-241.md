@@ -1,15 +1,15 @@
 # Getting started with Snyk Open Source
 
-* [ Create a Snyk account](/hc/en-us/articles/360017098237-Create-a-Snyk-account)
-* [ Select a Snyk product / tool](/hc/en-us/articles/360014959818-Select-a-Snyk-product-tool)
-* [ Getting started with Snyk Open Source](/hc/en-us/articles/360014875297-Getting-started-with-Snyk-Open-Source)
-* [ Getting started with Snyk Code](/hc/en-us/articles/360016765157-Getting-started-with-Snyk-Code)
-* [ Getting started with Snyk Container](/hc/en-us/articles/360014877957-Getting-started-with-Snyk-Container)
-* [ Getting started with Snyk Infrastructure as Code \(IaC\)](/hc/en-us/articles/360014938398-Getting-started-with-Snyk-Infrastructure-as-Code-IaC-)
-* [ Getting Started with Snyk License Compliance Management](/hc/en-us/articles/360015235618-Getting-Started-with-Snyk-License-Compliance-Management)
-* [ Getting started with Snyk intel vulnerability DB access](/hc/en-us/articles/360015452178-Getting-started-with-Snyk-intel-vulnerability-DB-access)
+* [ Create a Snyk account](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360017098237-Create-a-Snyk-account/README.md)
+* [ Select a Snyk product / tool](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360014959818-Select-a-Snyk-product-tool/README.md)
+* [ Getting started with Snyk Open Source](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360014875297-Getting-started-with-Snyk-Open-Source/README.md)
+* [ Getting started with Snyk Code](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360016765157-Getting-started-with-Snyk-Code/README.md)
+* [ Getting started with Snyk Container](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360014877957-Getting-started-with-Snyk-Container/README.md)
+* [ Getting started with Snyk Infrastructure as Code \(IaC\)](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360014938398-Getting-started-with-Snyk-Infrastructure-as-Code-IaC-/README.md)
+* [ Getting Started with Snyk License Compliance Management](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360015235618-Getting-Started-with-Snyk-License-Compliance-Management/README.md)
+* [ Getting started with Snyk intel vulnerability DB access](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360015452178-Getting-started-with-Snyk-intel-vulnerability-DB-access/README.md)
 
-##  Getting started with Snyk Open Source
+## Getting started with Snyk Open Source
 
 Get started with Snyk Open Source to inspect, find and fix vulnerabilities in your code.
 
@@ -30,7 +30,7 @@ See [Getting started with the CLI](https://support.snyk.io/hc/en-us/articles/360
 
 if you already have an integration set up, you can go to Step 3.
 
-Choose a source code integration, to allow Snyk to work on a project. 
+Choose a source code integration, to allow Snyk to work on a project.
 
 1. Log in to Snyk.io.
 2. Select **Integrations &gt; Source control**.
@@ -59,7 +59,7 @@ You can now view vulnerability results for imported projects. The **Projects** t
 1. Click on an imported project to see vulnerability information for that project, including the number of issues found, grouped by severity level:
 2. Click on an entry to open the issues view for that entry, including the module, where it was introduced, and the remediation to fix it, plus more details about the vulnerability itself: 
 
-See  [View project information](https://support.snyk.io/hc/en-us/articles/360011450838-View-project-information) for more details.
+See [View project information](https://support.snyk.io/hc/en-us/articles/360011450838-View-project-information) for more details.
 
 #### Stage 4: Fix vulnerabilities
 
@@ -69,7 +69,7 @@ For JavaScript, Ruby and Java projects, Snyk can remediate your vulnerabilities 
 
    Click **Fix this vulnerability** to upgrade \(or patch\) to fix an individual issue, or click **Fix these vulnerabilities** to to fix multiple issues at once.
 
-2. The **Open a Fix PR** screen opens and indicates the vulnerabilities you selected: 
+2. The **Open a Fix PR** screen opens and indicates the vulnerabilities you selected:
 3. Check any additional issues you want to fix, or uncheck items to remove them from the fix.
 4. Scroll down to the bottom of the screen and click **Open a Fix PR**.
 5. Snyk now actions this PR, then a results screen appears: 

@@ -1,6 +1,6 @@
 # Snyk reports an invalid Gradle dependency or dependency version in CLI
 
-##  Snyk reports an invalid Gradle dependency or dependency version in CLI
+## Snyk reports an invalid Gradle dependency or dependency version in CLI
 
 **Problem**:
 

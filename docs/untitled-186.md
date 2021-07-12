@@ -1,12 +1,12 @@
 # Artifactory Registry for npm
 
-* [ Artifactory Registry Setup](/hc/en-us/articles/360013805638-Artifactory-Registry-Setup)
-* [ Artifactory Registry for Maven](/hc/en-us/articles/360005507418-Artifactory-Registry-for-Maven)
-* [ Artifactory Registry for npm](/hc/en-us/articles/360007537418-Artifactory-Registry-for-npm)
-* [ npm Teams & npm Enterprise for npm](/hc/en-us/articles/360009411777-npm-Teams-npm-Enterprise-for-npm)
-* [ Private Gem Sources for Ruby](/hc/en-us/articles/360013742557-Private-Gem-Sources-for-Ruby)
+* [ Artifactory Registry Setup](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360013805638-Artifactory-Registry-Setup/README.md)
+* [ Artifactory Registry for Maven](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360005507418-Artifactory-Registry-for-Maven/README.md)
+* [ Artifactory Registry for npm](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360007537418-Artifactory-Registry-for-npm/README.md)
+* [ npm Teams & npm Enterprise for npm](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360009411777-npm-Teams-npm-Enterprise-for-npm/README.md)
+* [ Private Gem Sources for Ruby](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360013742557-Private-Gem-Sources-for-Ruby/README.md)
 
-##  Artifactory Registry for npm
+## Artifactory Registry for npm
 
 ### Overview
 
@@ -26,7 +26,7 @@ This feature is available with Enterprise plans. See [Pricing plans](https://sny
 ### JavaScript Language Settings
 
 1. Go to settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **&gt; Languages &gt; JavaScript** and either the npm or yarn settings depending on your project types \(yarn shown in screenshots below\)
-2. If you have not previously connected to Artifactory you will be asked to configure an integration first, see [Artifactory Registry Setup.](/hc/en-us/articles/360013805638) 
+2. If you have not previously connected to Artifactory you will be asked to configure an integration first, see [Artifactory Registry Setup.](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360013805638/README.md) 
 3. Select “Add registry configuration”   
    1. Select "Artifactory" as the Package source
    2. If you want to configure this registry as **default registry url**, then leave scope blank

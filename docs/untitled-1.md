@@ -1,4 +1,4 @@
-# Fix pull requests for known vulnerabilities \(backlog\)
+# Getting started with Snyk and Heroku
 
 * [ Fixing vulnerabilities](/hc/en-us/articles/360011484018-Fixing-vulnerabilities)
 * [ Fix pull requests for new vulnerabilities](/hc/en-us/articles/360017186498-Fix-pull-requests-for-new-vulnerabilities)

@@ -1,4 +1,4 @@
-# What do we do when Snyk finds vulnerabilities for which there is no fix available?
+# Snyk runtime monitoring: introduction
 
 ##  What do we do when Snyk finds vulnerabilities for which there is no fix available?
 

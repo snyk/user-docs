@@ -1,4 +1,4 @@
-# Snyk SCM integration: good practices
+# Can I update my email address?
 
 ##  Snyk SCM integration: good practices
 

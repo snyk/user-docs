@@ -1,14 +1,14 @@
 # Snyk Glossary
 
-[A]() \| [B]() \| [C]() \| [D]() \| [F]() \| [G]() \| [I]() \| [L]() \| [M]() \| [O]() \| [P]() \| [R]() \| [S]() \| [V]() \| [W]()
+[A](untitled-279.md) \| [B](untitled-279.md) \| [C](untitled-279.md) \| [D](untitled-279.md) \| [F](untitled-279.md) \| [G](untitled-279.md) \| [I](untitled-279.md) \| [L](untitled-279.md) \| [M](untitled-279.md) \| [O](untitled-279.md) \| [P](untitled-279.md) \| [R](untitled-279.md) \| [S](untitled-279.md) \| [V](untitled-279.md) \| [W](untitled-279.md)
 
 ## API
 
-Application Programming Interface. See [Snyk API]().
+Application Programming Interface. See [Snyk API](untitled-279.md).
 
 ## Broker
 
-See [Snyk Broker]().
+See [Snyk Broker](untitled-279.md).
 
 ## Build System
 
@@ -31,7 +31,7 @@ Continuous integration \(CI\), continuous delivery \(CD\) and continuous deploym
 
 ## CLI
 
-Command Line Interface. See [Snyk CLI]().
+Command Line Interface. See [Snyk CLI](untitled-279.md).
 
 ## Cloud Native Application Security
 
@@ -39,7 +39,7 @@ Implementing security throughout the CI/CD pipeline, automating security embeddi
 
 ## Container
 
-A standard unit of software, in runtime, that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. Containers isolate software from its environment, so the software works uniformly despite differences, for instance between development and staging. Also see [Snyk Container.]()
+A standard unit of software, in runtime, that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. Containers isolate software from its environment, so the software works uniformly despite differences, for instance between development and staging. Also see [Snyk Container.](untitled-279.md)
 
 ## Container engine
 
@@ -98,7 +98,7 @@ A web-based version control platform for Git.
 
 ## IAC
 
-Infrastructure as Code. See [Snyk Infrastructure as Code.]()
+Infrastructure as Code. See [Snyk Infrastructure as Code.](untitled-279.md)
 
 ## IDE
 
@@ -166,7 +166,7 @@ An external item that Snyk scans, with configuration to define how to run that s
 
 ## Registry
 
-See [Container registry]() or [Package registry]().
+See [Container registry](untitled-279.md) or [Package registry](untitled-279.md).
 
 ## Reports
 

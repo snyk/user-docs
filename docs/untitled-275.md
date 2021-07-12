@@ -1,11 +1,11 @@
 # Fix pull requests for new vulnerabilities
 
-* [ Fixing vulnerabilities](/hc/en-us/articles/360011484018-Fixing-vulnerabilities)
-* [ Fix pull requests for new vulnerabilities](/hc/en-us/articles/360017186498-Fix-pull-requests-for-new-vulnerabilities)
-* [ Fix pull requests for known vulnerabilities \(backlog\)](/hc/en-us/articles/360017186958-Fix-pull-requests-for-known-vulnerabilities-backlog-)
-* [ Integrate Snyk into your workflow](/hc/en-us/articles/360011377157-Integrate-Snyk-into-your-workflow)
+* [ Fixing vulnerabilities](https://github.com/snyk/user-docs/tree/75cbddc84902693171786610d68edd1dc502bd55/hc/en-us/articles/360011484018-Fixing-vulnerabilities/README.md)
+* [ Fix pull requests for new vulnerabilities](https://github.com/snyk/user-docs/tree/75cbddc84902693171786610d68edd1dc502bd55/hc/en-us/articles/360017186498-Fix-pull-requests-for-new-vulnerabilities/README.md)
+* [ Fix pull requests for known vulnerabilities \(backlog\)](https://github.com/snyk/user-docs/tree/75cbddc84902693171786610d68edd1dc502bd55/hc/en-us/articles/360017186958-Fix-pull-requests-for-known-vulnerabilities-backlog-/README.md)
+* [ Integrate Snyk into your workflow](https://github.com/snyk/user-docs/tree/75cbddc84902693171786610d68edd1dc502bd55/hc/en-us/articles/360011377157-Integrate-Snyk-into-your-workflow/README.md)
 
-##  Fix pull requests for new vulnerabilities
+## Fix pull requests for new vulnerabilities
 
 The following rules are applied to automatic PR creation for vulnerabilities:
 

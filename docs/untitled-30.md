@@ -1,4 +1,4 @@
-# Critical severity migration
+# What data does Snyk use and store when counting developers?
 
 ##  Critical severity migration
 

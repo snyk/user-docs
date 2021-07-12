@@ -1,4 +1,4 @@
-# Snyk Customer Onboarding - Team Plan
+# Why do yarn and npm report more dependencies than snyk?
 
 * [ Introduction to the Snyk Team plan](/hc/en-us/articles/360018365737-Introduction-to-the-Snyk-Team-plan)
 * [ Snyk Customer Onboarding - Team Plan](/hc/en-us/articles/360018935478-Snyk-Customer-Onboarding-Team-Plan)

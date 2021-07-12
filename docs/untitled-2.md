@@ -1,4 +1,4 @@
-# View your Infrastructure as Code issues
+# Single sign-on
 
 * [ View your Infrastructure as Code issues](/hc/en-us/articles/360017495297-View-your-Infrastructure-as-Code-issues)
 

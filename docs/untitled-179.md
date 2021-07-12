@@ -1,19 +1,19 @@
 # Snyk checks on pull requests
 
-* [ GitHub integration](/hc/en-us/articles/360004032117-GitHub-integration)
-* [ GitHub Enterprise Integration](/hc/en-us/articles/360015951318-GitHub-Enterprise-Integration)
-* [ Bitbucket Cloud integration](/hc/en-us/articles/360004032097-Bitbucket-Cloud-integration)
-* [ Bitbucket Data Center / Server integration](/hc/en-us/articles/360004002218-Bitbucket-Data-Center-Server-integration)
-* [ GitLab integration](/hc/en-us/articles/360004002238-GitLab-integration)
-* [ Azure Repos integration](/hc/en-us/articles/360004002198-Azure-Repos-integration)
-* [ GitHub Read-Only Projects](/hc/en-us/articles/360010766557-GitHub-Read-Only-Projects)
-* [ Opening fix and upgrade pull requests from a fixed GitHub account](/hc/en-us/articles/360010843797-Opening-fix-and-upgrade-pull-requests-from-a-fixed-GitHub-account-)
-* [ Test your PRs for vulnerabilities before merging](/hc/en-us/articles/360006528057-Test-your-PRs-for-vulnerabilities-before-merging)
-* [ Snyk checks on pull requests](/hc/en-us/articles/360006581938-Snyk-checks-on-pull-requests)
+* [ GitHub integration](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004032117-GitHub-integration/README.md)
+* [ GitHub Enterprise Integration](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360015951318-GitHub-Enterprise-Integration/README.md)
+* [ Bitbucket Cloud integration](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004032097-Bitbucket-Cloud-integration/README.md)
+* [ Bitbucket Data Center / Server integration](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004002218-Bitbucket-Data-Center-Server-integration/README.md)
+* [ GitLab integration](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004002238-GitLab-integration/README.md)
+* [ Azure Repos integration](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004002198-Azure-Repos-integration/README.md)
+* [ GitHub Read-Only Projects](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360010766557-GitHub-Read-Only-Projects/README.md)
+* [ Opening fix and upgrade pull requests from a fixed GitHub account](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360010843797-Opening-fix-and-upgrade-pull-requests-from-a-fixed-GitHub-account-/README.md)
+* [ Test your PRs for vulnerabilities before merging](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360006528057-Test-your-PRs-for-vulnerabilities-before-merging/README.md)
+* [ Snyk checks on pull requests](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360006581938-Snyk-checks-on-pull-requests/README.md)
 
- [See more](/hc/en-us/sections/360001138098-Git-repository-SCM-integrations)
+  [See more](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/sections/360001138098-Git-repository-SCM-integrations/README.md)
 
-##  Snyk checks on pull requests
+## Snyk checks on pull requests
 
 By default, Snyk scans every pull request submitted on your monitored repositories, displaying the results and recommendations grouped together in a single security check and a single license check, regardless of the number of manifest files in the repository.
 

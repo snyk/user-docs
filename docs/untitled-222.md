@@ -1,12 +1,12 @@
 # Unable to add Webhook to Gitlab brokered instance
 
-##  Unable to add Webhook to Gitlab brokered instance
+## Unable to add Webhook to Gitlab brokered instance
 
 **Problem**:
 
 When attempting to add a Webhook to a Gitlab project while using the Snyk broker, you may encounter an error.
 
-In addition to this, in the Snyk logs we will see an 
+In addition to this, in the Snyk logs we will see an
 
 ```text
 Invalid url given

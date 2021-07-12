@@ -1,4 +1,4 @@
-# Container security with Quay integration
+# How do I become or make someone a Snyk group admin?
 
 * [ Container security with Quay integration](/hc/en-us/articles/360018445398-Container-security-with-Quay-integration)
 * [ Scan container images from Quay in Snyk](/hc/en-us/articles/360018308097-Scan-container-images-from-Quay-in-Snyk)

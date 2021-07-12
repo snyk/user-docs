@@ -1,4 +1,4 @@
-# Choose a provisioning option
+# Custom file Name on Snyk UI
 
 * [ Introduction to Snyk Single Sign-On \(SSO\)](/hc/en-us/articles/360018025297-Introduction-to-Snyk-Single-Sign-On-SSO-)
 * [ Choose a provisioning option](/hc/en-us/articles/360019607318-Choose-a-provisioning-option)

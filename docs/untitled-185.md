@@ -29,12 +29,12 @@ The `.snyk` file can be created in a number of ways
 * **Snyk CLI Wizard** - the CLI allows users to generate a `.snyk` policy \(_currently available for NPM/Yarn only_\)
 * **Snyk CLI** - utilizing the `snyk ignore` command \(.snyk file must exist\)
 * **Manual creation** - a user may decide to create the file manually. Simply create a new  
+
   `.snyk` file and populate it with the following. Note that in order to ignore by path--_manual editing is required except for where the `snyk wizard` is used_  
 
-
-  ```text
+```text
   # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.version: v1.14.0
-  ```
+```
 
 ## Syntax
 
@@ -45,7 +45,7 @@ The `.snyk` file
 version: v1.14.0
 language-settings:
 ignore: 
-patch: 
+patch:
 ```
 
 Where patch is in the form of
@@ -78,7 +78,7 @@ Your complete statement should be `snyk ignore --id=IssueID [--expiry=expiry] [-
 
 Ignores can be specified in the web interface, only after an issue is detected and monitored, so the advantage of using the policy file is to reduce friction and be proactive.
 
-The ignore rules can be overridden if admin users only is enabled \(click on  **Settings** &gt; **General** &gt; Ignores\) for the relevant organization.
+The ignore rules can be overridden if admin users only is enabled \(click on **Settings** &gt; **General** &gt; Ignores\) for the relevant organization.
 
 ## Examples
 
@@ -107,7 +107,7 @@ version: v1.14.0
 language-settings: python: "2.7"
 ```
 
- **Manually modifying the `.snyk` file for setting analysis for the project at Python 3.6.2 \***
+**Manually modifying the `.snyk` file for setting analysis for the project at Python 3.6.2 \***
 
 ```text
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
@@ -115,7 +115,7 @@ version: v1.14.0
 language-settings: python: "3.6.2"
 ```
 
-Note by including the `.snyk` file in your code repository, when running code repository scans, this has an added advantage of creating project level python languages settings when the language-setting value is set 
+Note by including the `.snyk` file in your code repository, when running code repository scans, this has an added advantage of creating project level python languages settings when the language-setting value is set
 
 ### Setting Vulnerability Ignore Rules
 
@@ -129,7 +129,7 @@ ignore:
         expires: '2020-06-19T20:36:54.553Z'
 ```
 
-**Ignore Example - Ignore a vuln for all paths** 
+**Ignore Example - Ignore a vuln for all paths**
 
 ```text
 ignore:
@@ -201,7 +201,7 @@ The `.snyk` file should be versioned in the code repository, like other applicat
 ## Additional Articles
 
 Support KB - [Ignore Vulnerabilities](https://support.snyk.io/hc/en-us/articles/360003851317-Ignore-vulnerabilities)  
-Support KB - [Ignoring via the CLI is not enabled for this organization](/hc/en-us/articles/360001558598)  
-Support KB - [CLI reference](/hc/en-us/articles/360003812578)  
-Support KB - [Manage Vulnerabilities with the Snyk Wizard in the CLI](/hc/en-us/articles/360003851357) \(NPM/Yarn Only\)
+Support KB - [Ignoring via the CLI is not enabled for this organization](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360001558598/README.md)  
+Support KB - [CLI reference](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360003812578/README.md)  
+Support KB - [Manage Vulnerabilities with the Snyk Wizard in the CLI](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360003851357/README.md) \(NPM/Yarn Only\)
 

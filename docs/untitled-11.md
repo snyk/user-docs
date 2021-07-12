@@ -1,4 +1,4 @@
-# Assign a policy to project attributes
+# How are patches validated?
 
 ##  Assign a policy to project attributes
 

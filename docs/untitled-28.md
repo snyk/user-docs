@@ -1,4 +1,4 @@
-# Unauthorized access or Resource does not exist : Dockerhub
+# Is a GitHub webhook required in order for a repo to be automatically scanned by Snyk on Pull and Pus
 
 ####  [Submit a Support ticket](https://support.snyk.io/hc/en-us/requests/new) [Sign in to Support](https://support.snyk.io/hc/en-us/signin) [Sign up for free](https://snyk.io/login?cta=sign-up&loc=nav&page=support_docs_page)
 

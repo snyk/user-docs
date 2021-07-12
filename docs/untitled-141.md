@@ -1,6 +1,6 @@
 # What’s a Snyk organization?
 
-##  What’s a Snyk organization?
+## What’s a Snyk organization?
 
 An organization groups projects, and can have team members who can access these projects.
 

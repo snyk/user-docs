@@ -1,4 +1,4 @@
-# Introduction to Snyk Single Sign-On \(SSO\)
+# How can I delete my account?
 
 * [ Introduction to Snyk Single Sign-On \(SSO\)](/hc/en-us/articles/360018025297-Introduction-to-Snyk-Single-Sign-On-SSO-)
 * [ Choose a provisioning option](/hc/en-us/articles/360019607318-Choose-a-provisioning-option)

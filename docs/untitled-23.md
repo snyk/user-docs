@@ -1,4 +1,4 @@
-# Code Dx Enterprise
+# Snyk API reports 404 Error: unsupported url
 
 * [ Code Dx Enterprise](/hc/en-us/articles/360018848798--Code-Dx-Enterprise)
 * [ Brinqa](/hc/en-us/articles/360012728717-Brinqa)

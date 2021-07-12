@@ -1,12 +1,12 @@
 # Private Gem Sources for Ruby
 
-* [ Artifactory Registry Setup](/hc/en-us/articles/360013805638-Artifactory-Registry-Setup)
-* [ Artifactory Registry for Maven](/hc/en-us/articles/360005507418-Artifactory-Registry-for-Maven)
-* [ Artifactory Registry for npm](/hc/en-us/articles/360007537418-Artifactory-Registry-for-npm)
-* [ npm Teams & npm Enterprise for npm](/hc/en-us/articles/360009411777-npm-Teams-npm-Enterprise-for-npm)
-* [ Private Gem Sources for Ruby](/hc/en-us/articles/360013742557-Private-Gem-Sources-for-Ruby)
+* [ Artifactory Registry Setup](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360013805638-Artifactory-Registry-Setup/README.md)
+* [ Artifactory Registry for Maven](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360005507418-Artifactory-Registry-for-Maven/README.md)
+* [ Artifactory Registry for npm](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360007537418-Artifactory-Registry-for-npm/README.md)
+* [ npm Teams & npm Enterprise for npm](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360009411777-npm-Teams-npm-Enterprise-for-npm/README.md)
+* [ Private Gem Sources for Ruby](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360013742557-Private-Gem-Sources-for-Ruby/README.md)
 
-##  Private Gem Sources for Ruby
+## Private Gem Sources for Ruby
 
 ### Overview
 

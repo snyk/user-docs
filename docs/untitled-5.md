@@ -1,4 +1,4 @@
-# Set up Snyk Single Sign-On \(SSO\)
+# I can't import projects from one of my GitHub organisations
 
 ##  Set up Snyk Single Sign-On \(SSO\)
 

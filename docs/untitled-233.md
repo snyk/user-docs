@@ -1,6 +1,6 @@
 # Advanced Snyk Container CLI usage
 
-##  Advanced Snyk Container CLI usage
+## Advanced Snyk Container CLI usage
 
 ### Testing archives
 

@@ -1,4 +1,4 @@
-# Visual Studio extension
+# Does snyk support multi factor authentication \(MFA\) when customers set up SSO \(Single sign on\)
 
 * [ Eclipse plugin](/hc/en-us/articles/360004032337-Eclipse-plugin)
 * [ JetBrains plugins](/hc/en-us/articles/360004032317-JetBrains-plugins)

@@ -1,4 +1,4 @@
-# Snyk Glossary
+# When I can choose, how should I decide whether to upgrade or patch?
 
 [A]() \| [B]() \| [C]() \| [D]() \| [F]() \| [G]() \| [I]() \| [L]() \| [M]() \| [O]() \| [P]() \| [R]() \| [S]() \| [V]() \| [W]()
 

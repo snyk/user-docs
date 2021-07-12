@@ -1,4 +1,4 @@
-# Introduction to the Snyk Team plan
+# What does Snyk access and store when scanning a project?
 
 ##  Introduction to the Snyk Team plan
 

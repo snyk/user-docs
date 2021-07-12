@@ -1,4 +1,4 @@
-# Test your Kustomize files with our CLI tool
+# Are contributing developers counted with a Broker setup?
 
 You scan a Kustomize template by building the Kuberenetes manifest file and then scanning this using the Snyk IaC CLI. 
 

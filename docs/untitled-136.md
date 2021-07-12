@@ -1,4 +1,4 @@
-# Docs Library \| Snyk
+# Authentication for third-party tools
 
 Copyright © 2021. [Docs Library \| Snyk](/hc/en-us). All Rights Reserved.
 

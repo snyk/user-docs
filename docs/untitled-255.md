@@ -1,19 +1,19 @@
 # Which projects must be built before testing with CLI?
 
-* [ Clojure Projects](/hc/en-us/articles/360016431777-Clojure-Projects)
-* [ Snyk reports an invalid Gradle dependency or dependency version in CLI](/hc/en-us/articles/360016003758-Snyk-reports-an-invalid-Gradle-dependency-or-dependency-version-in-CLI)
-* [ Which projects must be built before testing with CLI?](/hc/en-us/articles/360015552617-Which-projects-must-be-built-before-testing-with-CLI-)
-* [ Snyk test - Could not find or load main class org.gradle.wrapper.GradleWrapperMain](/hc/en-us/articles/360007745957-Snyk-test-Could-not-find-or-load-main-class-org-gradle-wrapper-GradleWrapperMain)
-* [ Required packages missing when testing a Python project with pip](/hc/en-us/articles/360007419257-Required-packages-missing-when-testing-a-Python-project-with-pip)
-* [ Failing with exit code : Generic Error](/hc/en-us/articles/360006786558-Failing-with-exit-code-Generic-Error)
-* [ How do I test a different branch of a project via the CLI?](/hc/en-us/articles/360006052837-How-do-I-test-a-different-branch-of-a-project-via-the-CLI-)
-* [ What version of Node is required for Snyk?](/hc/en-us/articles/360004183317-What-version-of-Node-is-required-for-Snyk-)
-* [ Out of Memory Error when testing Scala \(SBT\) project](/hc/en-us/articles/360003143417-Out-of-Memory-Error-when-testing-Scala-SBT-project)
-* [ My local build is working but when using the CLI tool it fails](/hc/en-us/articles/360002879278-My-local-build-is-working-but-when-using-the-CLI-tool-it-fails)
+* [ Clojure Projects](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360016431777-Clojure-Projects/README.md)
+* [ Snyk reports an invalid Gradle dependency or dependency version in CLI](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360016003758-Snyk-reports-an-invalid-Gradle-dependency-or-dependency-version-in-CLI/README.md)
+* [ Which projects must be built before testing with CLI?](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360015552617-Which-projects-must-be-built-before-testing-with-CLI-/README.md)
+* [ Snyk test - Could not find or load main class org.gradle.wrapper.GradleWrapperMain](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360007745957-Snyk-test-Could-not-find-or-load-main-class-org-gradle-wrapper-GradleWrapperMain/README.md)
+* [ Required packages missing when testing a Python project with pip](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360007419257-Required-packages-missing-when-testing-a-Python-project-with-pip/README.md)
+* [ Failing with exit code : Generic Error](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360006786558-Failing-with-exit-code-Generic-Error/README.md)
+* [ How do I test a different branch of a project via the CLI?](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360006052837-How-do-I-test-a-different-branch-of-a-project-via-the-CLI-/README.md)
+* [ What version of Node is required for Snyk?](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004183317-What-version-of-Node-is-required-for-Snyk-/README.md)
+* [ Out of Memory Error when testing Scala \(SBT\) project](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360003143417-Out-of-Memory-Error-when-testing-Scala-SBT-project/README.md)
+* [ My local build is working but when using the CLI tool it fails](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360002879278-My-local-build-is-working-but-when-using-the-CLI-tool-it-fails/README.md)
 
- [See more](/hc/en-us/sections/360000923118-CLI)
+  [See more](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/sections/360000923118-CLI/README.md)
 
-##  Which projects must be built before testing with CLI?
+## Which projects must be built before testing with CLI?
 
 ### Introduction
 

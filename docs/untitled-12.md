@@ -1,4 +1,4 @@
-# Snyk CI/CD Integration: good practices
+# How can I use Snyk behind a proxy?
 
 ##  Snyk CI/CD Integration: good practices
 

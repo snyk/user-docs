@@ -1,11 +1,11 @@
 # Understanding Linux vulnerability severity
 
-* [ Snyk Container security overview](/hc/en-us/articles/360003946897-Snyk-Container-security-overview)
-* [ How Snyk Container works](/hc/en-us/articles/360003915918-How-Snyk-Container-works)
-* [ Supported operating system distributions](/hc/en-us/articles/360017545417-Supported-operating-system-distributions)
-* [ Understanding Linux vulnerability severity](/hc/en-us/articles/360013304357-Understanding-Linux-vulnerability-severity)
+* [ Snyk Container security overview](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360003946897-Snyk-Container-security-overview/README.md)
+* [ How Snyk Container works](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360003915918-How-Snyk-Container-works/README.md)
+* [ Supported operating system distributions](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360017545417-Supported-operating-system-distributions/README.md)
+* [ Understanding Linux vulnerability severity](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360013304357-Understanding-Linux-vulnerability-severity/README.md)
 
-##  Understanding Linux vulnerability severity
+## Understanding Linux vulnerability severity
 
 A single vulnerability can impact different Linux distributions in different ways, giving both a general severity value, and specific severity data based on specific Linux security advisories.
 
@@ -26,6 +26,6 @@ We currently support Ubuntu and Debian. More Linux distributions to follow.
 We use the following external sources to provide this information for Debian and Ubuntu:
 
 * [NVD severity](https://nvd.nist.gov/vuln)
-*  [Debian urgency score](https://security-team.debian.org/security_tracker.html#severity-levels)
-*  [Ubuntu priority score](https://people.canonical.com/~ubuntu-security/cve/priority.html)
+* [Debian urgency score](https://security-team.debian.org/security_tracker.html#severity-levels)
+* [Ubuntu priority score](https://people.canonical.com/~ubuntu-security/cve/priority.html)
 

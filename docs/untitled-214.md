@@ -1,10 +1,10 @@
 # Groups, Organizations and Users
 
-* [ Groups, Organizations and Users](/hc/en-us/articles/360011418638-Groups-Organizations-and-Users)
-* [ Notifications](/hc/en-us/articles/360011633117-Notifications)
-* [ Reporting](/hc/en-us/articles/360011318037-Reporting)
+* [ Groups, Organizations and Users](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360011418638-Groups-Organizations-and-Users/README.md)
+* [ Notifications](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360011633117-Notifications/README.md)
+* [ Reporting](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360011318037-Reporting/README.md)
 
-##  Groups, Organizations and Users
+## Groups, Organizations and Users
 
 **Feature availability**  
 Some functions \(such as Groups\) are only available on certain plans. See [Pricing plans](https://snyk.io/plans/) for more details.
@@ -31,7 +31,7 @@ Organizations can contain multiple projects. For example, if an organization rep
 
 When you sign up to Snyk using a social login, you have a default organization. Any projects you add appear in this organization by default.
 
-See [What’s a Snyk organization?](https://support.snyk.io/hc/en-us/articles/360004037637-What-s-a-Snyk-organization-) 
+See [What’s a Snyk organization?](https://support.snyk.io/hc/en-us/articles/360004037637-What-s-a-Snyk-organization-)
 
 #### Snyk projects
 

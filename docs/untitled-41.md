@@ -1,4 +1,4 @@
-# Configure your integration to find security issues in your CloudFormation files
+# Snyk runtime monitoring: an overview of the app interface
 
 * [ Configure your integration to find security issues in your CloudFormation files](/hc/en-us/articles/4402937668241-Configure-your-integration-to-find-security-issues-in-your-CloudFormation-files)
 * [ Scan and fix security issues in your CloudFormation files](/hc/en-us/articles/4402971349009-Scan-and-fix-security-issues-in-your-CloudFormation-files)

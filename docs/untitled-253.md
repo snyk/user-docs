@@ -1,14 +1,14 @@
 # Retrieve a unique Broker client token
 
-* [ Broker introduction](/hc/en-us/articles/360015367178-Broker-introduction)
-* [ Set up Snyk Broker](/hc/en-us/articles/360015296637-Set-up-Snyk-Broker)
-* [ Prepare Snyk Broker for deployment](/hc/en-us/articles/360015296717-Prepare-Snyk-Broker-for-deployment)
-* [ Enable permissions for Snyk Broker from your third-party tool](/hc/en-us/articles/360015296737-Enable-permissions-for-Snyk-Broker-from-your-third-party-tool)
-* [ Retrieve a unique Broker client token](/hc/en-us/articles/360015367278-Retrieve-a-unique-Broker-client-token)
-* [ How to install and configure your Snyk Broker client](/hc/en-us/articles/360015296937-How-to-install-and-configure-your-Snyk-Broker-client)
-* [ Upgrade your Snyk Broker client](/hc/en-us/articles/360015367458-Upgrade-your-Snyk-Broker-client)
+* [ Broker introduction](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360015367178-Broker-introduction/README.md)
+* [ Set up Snyk Broker](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360015296637-Set-up-Snyk-Broker/README.md)
+* [ Prepare Snyk Broker for deployment](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360015296717-Prepare-Snyk-Broker-for-deployment/README.md)
+* [ Enable permissions for Snyk Broker from your third-party tool](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360015296737-Enable-permissions-for-Snyk-Broker-from-your-third-party-tool/README.md)
+* [ Retrieve a unique Broker client token](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360015367278-Retrieve-a-unique-Broker-client-token/README.md)
+* [ How to install and configure your Snyk Broker client](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360015296937-How-to-install-and-configure-your-Snyk-Broker-client/README.md)
+* [ Upgrade your Snyk Broker client](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360015367458-Upgrade-your-Snyk-Broker-client/README.md)
 
-##  Retrieve a unique Broker client token
+## Retrieve a unique Broker client token
 
 To retrieve the token enabling you to install the Broker:
 

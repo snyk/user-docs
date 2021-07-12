@@ -2,7 +2,7 @@
 
 Snyk provides security scanning on projects for vulnerabilities through our CLI and the application UI \(app.snyk.io\).
 
-The following describes how to use Snyk to scan Python projects: 
+The following describes how to use Snyk to scan Python projects:
 
 Features might not be available, depending on your subscription plan.
 
@@ -35,7 +35,7 @@ In order to scan the full dependency tree, Snyk analyzes the installed packages 
 
 ### Pipenv
 
- In order to build the dependency tree, run `pipenv install` as Snyk needs this to create the `pipenv graph` which is then used for the dependency scan to fulfil itself.
+In order to build the dependency tree, run `pipenv install` as Snyk needs this to create the `pipenv graph` which is then used for the dependency scan to fulfil itself.
 
 Snyk uses the built dependency tree to analyze the `Pipfile`.
 
@@ -85,11 +85,12 @@ When scanning your Python project for vulnerabilities, use these options to modi
           the correct Python command for execution.</p>
         <p>For example: <code>snyk test --command=python3</code>
         </p>
-        <p>See <a href>Using different Python versions</a> for more details</p>
+        <p>See <a href="untitled-157.md">Using different Python versions</a> for more
+          details</p>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>--skip-unresolved=&lt;true|false&gt; </code>
+      <td style="text-align:left"><code>--skip-unresolved=&lt;true|false&gt;</code>
       </td>
       <td style="text-align:left">Skip packages when they can&#x2019;t be found in the environment (for
         example, private packages that can&#x2019;t be accessed from the machine
@@ -120,13 +121,13 @@ When scanning your Python project for vulnerabilities, use these options to modi
 
 ## Git services for Python projects
 
-Python projects can be imported from any of the Git repositories we support. 
+Python projects can be imported from any of the Git repositories we support.
 
 In order to test your Python projects using pip as a package manager, we analyze your `requirements.txt` file, and so you must have this file in your repository before importing.
 
 If you’ve renamed your `requirements.txt` files \(for example, if you have renamed a file to `requirements-dev.txt)`, we try to import every file that follows the `**/*req*.txt` convention as a Python project.
 
-If you've placed your files in a requirements folder \(for example, if you have placed your file under `requirements/requirements.txt`\) we try to import every file that follows the `**/requirements/*.txt`convention as a Python project. 
+If you've placed your files in a requirements folder \(for example, if you have placed your file under `requirements/requirements.txt`\) we try to import every file that follows the `**/requirements/*.txt`convention as a Python project.
 
 If you are using a package manager that creates different manifest file formats other than `requirements.txt`, then either convert or import \(depending on the package manager/supported files\) the manifest file to the `requirements.txt` format.
 
@@ -150,11 +151,11 @@ Add the following parameter to `snyk test` or `snyk monitor`
 --command=python3
 ```
 
-You can also set a specific Python version by adding the following to a `.snyk` [policy file](/hc/en-us/articles/360007487097).
+You can also set a specific Python version by adding the following to a `.snyk` [policy file](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360007487097/README.md).
 
 ```text
 language-settings:
-python: '3.7.2' 
+python: '3.7.2'
 ```
 
 ### Setting Python version in Git projects
@@ -163,13 +164,13 @@ When testing projects imported from Git, Snyk uses a recent version of either Py
 
 By default Snyk tests using Python 2.
 
-To define which Python major version Snyk uses to test your Git imported projects, use either organization settings, or a `.snyk` [policy file](/hc/en-us/articles/360007487097).
+To define which Python major version Snyk uses to test your Git imported projects, use either organization settings, or a `.snyk` [policy file](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360007487097/README.md).
 
 To define Python version for all projects in an organization:
 
-1. 2. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Languages**. 
-3. Click **Edit settings** for **Python**.
-4. Select to use **Python 2** or **Python 3** when testing projects for this organization 
+1. 1. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Languages**. 
+2. Click **Edit settings** for **Python**.
+3. Select to use **Python 2** or **Python 3** when testing projects for this organization 
 
 We recommend you create different organizations to work with different Python versions.
 
@@ -185,7 +186,7 @@ For example, for projects imported via Git:
 
 ```text
 language-settings:
-python: '3.7.2' 
+python: '3.7.2'
 ```
 
 This example tells Snyk to use a recent version of Python 3, but Snyk will not use the exact minor and patch version specified.

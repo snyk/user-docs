@@ -1,12 +1,12 @@
 # Organization access requests
 
-* [ Managing permissions](/hc/en-us/articles/360006548637-Managing-permissions)
-* [ Organization access requests](/hc/en-us/articles/360016034417-Organization-access-requests)
-* [ Session length](/hc/en-us/articles/360004008358-Session-length)
-* [ Switch between Snyk organizations](/hc/en-us/articles/360003915618-Switch-between-Snyk-organizations)
-* [ Audit logs](/hc/en-us/articles/360004133117-Audit-logs)
+* [ Managing permissions](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360006548637-Managing-permissions/README.md)
+* [ Organization access requests](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360016034417-Organization-access-requests/README.md)
+* [ Session length](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004008358-Session-length/README.md)
+* [ Switch between Snyk organizations](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360003915618-Switch-between-Snyk-organizations/README.md)
+* [ Audit logs](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004133117-Audit-logs/README.md)
 
-##  Organization access requests
+## Organization access requests
 
 Organization access requests allows a user to request access to a Snyk org that they're not a member of \(and so don't have access to\). Administrators will be notified of the new request by email, and can choose to invite the user to join the organization.
 

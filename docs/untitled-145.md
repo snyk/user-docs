@@ -1,19 +1,19 @@
 # Azure Pipelines integration
 
-* [ Configure your Continuous Integration](/hc/en-us/articles/360004002258-Configure-your-Continuous-Integration)
-* [ Continuous Integration: language support](/hc/en-us/articles/360004032157-Continuous-Integration-language-support)
-* [ AWS CodePipeline integration](/hc/en-us/articles/4402158184081-AWS-CodePipeline-integration)
-* [ Azure Pipelines integration](/hc/en-us/articles/360004127677-Azure-Pipelines-integration)
-* [ Bitbucket Pipelines integration overview](/hc/en-us/articles/360004032177-Bitbucket-Pipelines-integration-overview)
-* [ CircleCI integration overview](/hc/en-us/articles/360004002278-CircleCI-integration-overview)
-* [ Configure your CircleCI integration](/hc/en-us/articles/360004002298-Configure-your-CircleCI-integration)
-* [ Getting Snyk Orb details from the CircleCI registry](/hc/en-us/articles/360004032197-Getting-Snyk-Orb-details-from-the-CircleCI-registry)
-* [ GitHub Actions integration](/hc/en-us/articles/360019718618-GitHub-Actions-integration)
-* [ Bitbucket Pipelines integration](/hc/en-us/articles/360000921778-Bitbucket-Pipelines-integration)
+* [ Configure your Continuous Integration](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004002258-Configure-your-Continuous-Integration/README.md)
+* [ Continuous Integration: language support](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004032157-Continuous-Integration-language-support/README.md)
+* [ AWS CodePipeline integration](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/4402158184081-AWS-CodePipeline-integration/README.md)
+* [ Azure Pipelines integration](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004127677-Azure-Pipelines-integration/README.md)
+* [ Bitbucket Pipelines integration overview](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004032177-Bitbucket-Pipelines-integration-overview/README.md)
+* [ CircleCI integration overview](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004002278-CircleCI-integration-overview/README.md)
+* [ Configure your CircleCI integration](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004002298-Configure-your-CircleCI-integration/README.md)
+* [ Getting Snyk Orb details from the CircleCI registry](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004032197-Getting-Snyk-Orb-details-from-the-CircleCI-registry/README.md)
+* [ GitHub Actions integration](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360019718618-GitHub-Actions-integration/README.md)
+* [ Bitbucket Pipelines integration](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360000921778-Bitbucket-Pipelines-integration/README.md)
 
- [See more](/hc/en-us/sections/360001152577-CI-CD-integrations)
+  [See more](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/sections/360001152577-CI-CD-integrations/README.md)
 
-##  Azure Pipelines integration
+## Azure Pipelines integration
 
 Snyk enables security across the Microsoft Azure ecosystem, including for Azure Pipelines, automatically finding and fixing application and container vulnerabilities.
 
@@ -54,8 +54,8 @@ To start using our task as part of your pipeline build, first install the extens
 3. For paid plans, navigate to the organization you’d like to integrate with, then go to **Settings** to create a new service account token. Copy and save it on the side.
 4. Access your Azure DevOps account and navigate to **Extensions -&gt; Browse marketplace.**
 5. Search for the **Snyk Security Scan** extension, click **Get it free** .
-6.  Create a new _Service Connection_ in your project via **Project Settings** —&gt; **Pipelines** —&gt; **Service Connections**
-7.  Select "**Snyk Authentication**" service connection: 
+6. Create a new _Service Connection_ in your project via **Project Settings** —&gt; **Pipelines** —&gt; **Service Connections**
+7. Select "**Snyk Authentication**" service connection: 
 8. In the Snyk Authentication service connection form, enter the **Server URL** and the **Snyk API Token** along with a **Service connection name**: 
 9. Click on **Save**, ensuring the new service connection appears in your list of service connections.
 
@@ -77,7 +77,7 @@ This extension requires that Node.js and npm be installed on the build agent. Th
 1. Add the Snyk Security Scan task when you create your pipeline or while editing an existing one. See the [Azure Pipelines documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops)
 2. From Azure, access the pipeline that you’d like to scan for vulnerabilities, open it for editing and check that the Build step is included just before the point at which you’d like to insert the Snyk task \(this is not required but is considered best practice for consistency across projects\).
 3. Open the **assistant**, search for the Snyk Security Scan task and click it. The configuration panel opens on top of the assistant. 
-4. Complete the fields in the configuration. Find full details about the parameters in this article: [Snyk Security Scan task parameters and values]().
+4. Complete the fields in the configuration. Find full details about the parameters in this article: [Snyk Security Scan task parameters and values](untitled-145.md).
 
    If the **Fail build if Snyk finds issue** option is checked, then if the build fails, the pipeline will not be pushed to Snyk even if the **Run Snyk monitor after test?**
 

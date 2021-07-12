@@ -1,14 +1,14 @@
 # Nucleus Security
 
-* [ Code Dx Enterprise](/hc/en-us/articles/360018848798--Code-Dx-Enterprise)
-* [ Brinqa](/hc/en-us/articles/360012728717-Brinqa)
-* [ Fortify SSC integration](/hc/en-us/articles/360005507838-Fortify-SSC-integration)
-* [ Kenna Security](/hc/en-us/articles/360013620217-Kenna-Security)
-* [ Nucleus Security](/hc/en-us/articles/360012502818-Nucleus-Security)
-* [ RiskSense](/hc/en-us/articles/360015069418-RiskSense)
-* [ Vulcan-Cyber](/hc/en-us/articles/360012981478-Vulcan-Cyber)
+* [ Code Dx Enterprise](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360018848798--Code-Dx-Enterprise/README.md)
+* [ Brinqa](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360012728717-Brinqa/README.md)
+* [ Fortify SSC integration](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360005507838-Fortify-SSC-integration/README.md)
+* [ Kenna Security](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360013620217-Kenna-Security/README.md)
+* [ Nucleus Security](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360012502818-Nucleus-Security/README.md)
+* [ RiskSense](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360015069418-RiskSense/README.md)
+* [ Vulcan-Cyber](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360012981478-Vulcan-Cyber/README.md)
 
-##  Nucleus Security
+## Nucleus Security
 
 ### Introduction to Snyk and Nucleus Integration
 
@@ -26,7 +26,7 @@ Users can continue to use Snyk just as they do today. From the Nucleus console, 
 
 To display the Snyk data in Nucleus:
 
-1. Create a service account in snyk - [Service Accounts page](/hc/en-us/articles/360004037597)
+1. Create a service account in snyk - [Service Accounts page](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004037597/README.md)
 2. Copy the API key that is generated for the service account
 3. Open up the Nucleus console and follow the [instructions](https://support.nucleussec.com/hc/en-us/articles/360016559492-Snyk) to set up the Snyk connector
 4. Navigate in the Nucleus app to the “Import Via Connector” page and select which projects from Snyk to sync to Nucleus

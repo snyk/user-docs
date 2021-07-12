@@ -1,4 +1,4 @@
-# Supported operating system distributions
+# What is a Snyk Patch?
 
 * [ Snyk Container security overview](/hc/en-us/articles/360003946897-Snyk-Container-security-overview)
 * [ How Snyk Container works](/hc/en-us/articles/360003915918-How-Snyk-Container-works)

@@ -1,4 +1,4 @@
-# Scan container images from Harbor in Snyk
+# Could not determine version for dependencies
 
 * [ Container security with Harbor integration](/hc/en-us/articles/360018401678-Container-security-with-Harbor-integration)
 * [ Scan container images from Harbor in Snyk](/hc/en-us/articles/360018439098-Scan-container-images-from-Harbor-in-Snyk)

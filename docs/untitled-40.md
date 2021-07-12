@@ -1,4 +1,4 @@
-# Scan all unmanaged jar files
+# Reports: Licenses tab
 
 ##  Scan all unmanaged jar files
 

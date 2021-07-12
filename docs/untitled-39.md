@@ -1,4 +1,4 @@
-# Identity Provider \(IdP\) migration
+# Licenses overview
 
 When migrating from a legacy IdP to a new IdP, new IdP metadata information must be submitted to Snyk.
 

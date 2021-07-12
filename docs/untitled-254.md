@@ -1,6 +1,6 @@
 # How to install a Beta version of the Eclipse plugin?
 
-##  How to install a Beta version of the Eclipse plugin?
+## How to install a Beta version of the Eclipse plugin?
 
 More details: [https://stackoverflow.com/questions/31553376/eclipse-how-to-install-a-plugin-manually](https://stackoverflow.com/questions/31553376/eclipse-how-to-install-a-plugin-manually)
 

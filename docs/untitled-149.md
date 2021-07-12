@@ -1,10 +1,10 @@
 # Enable permissions to access GCR
 
-* [ Container security with GCR](/hc/en-us/articles/360003916098-Container-security-with-GCR)
-* [ Enable permissions to access GCR](/hc/en-us/articles/360004191777-Enable-permissions-to-access-GCR)
-* [ Configure integration for GCR](/hc/en-us/articles/360003916118-Configure-integration-for-GCR)
+* [ Container security with GCR](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360003916098-Container-security-with-GCR/README.md)
+* [ Enable permissions to access GCR](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360004191777-Enable-permissions-to-access-GCR/README.md)
+* [ Configure integration for GCR](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/en-us/articles/360003916118-Configure-integration-for-GCR/README.md)
 
-##  Enable permissions to access GCR
+## Enable permissions to access GCR
 
 **Prerequisites:**
 
@@ -30,5 +30,5 @@ From the relevant project in Google, ensure the you've created a service account
 
 **Next steps:**
 
-Now, configure the integration: [Configure integration for GCR](/hc/articles/360003916118#UUID-9e0df3f8-0780-b593-573b-5185bdca4a6d).
+Now, configure the integration: [Configure integration for GCR](https://github.com/snyk/user-docs/tree/58f91d848e16ddf2ffcca3711d6b8852412be402/hc/articles/360003916118/README.md#UUID-9e0df3f8-0780-b593-573b-5185bdca4a6d).
 

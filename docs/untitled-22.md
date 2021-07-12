@@ -1,4 +1,4 @@
-# Why can't I open a Pull Request / Merge Request for issues found by Snyk ?
+# Unable to test scala project
 
 ####  [Submit a Support ticket](https://support.snyk.io/hc/en-us/requests/new) [Sign in to Support](https://support.snyk.io/hc/en-us/signin) [Sign up for free](https://snyk.io/login?cta=sign-up&loc=nav&page=support_docs_page)
 
