@@ -218,7 +218,6 @@
 * [Introduction to Snyk](untitled-213.md)
 * [Groups, Organizations and Users](untitled-214.md)
 * [View project information](untitled-215.md)
-* [Fixing vulnerabilities](untitled-216.md)
 * [Notifications](untitled-217.md)
 * [Integrations and languages](untitled-218.md)
 * [Test your Kubernetes files with our CLI tool](untitled-219.md)
@@ -416,6 +415,7 @@
 
 ## Snyk Open Source <a id="snyk-open-source-1"></a>
 
-* [Open Source basics – Docs Library](snyk-open-source-1/untitled-395.md)
+* [Open Source basics – Docs Library](snyk-open-source-1/untitled-395/README.md)
+  * [Fixing vulnerabilities](snyk-open-source-1/untitled-395/untitled-216.md)
 * [Untitled](snyk-open-source-1/untitled.md)
 
