@@ -397,7 +397,6 @@
 * [License Policies – Docs Library](untitled-392.md)
 * [Prioritizing issues – Docs Library](untitled-393.md)
 * [Scan your Terraform files – Docs Library](untitled-394.md)
-* [Open Source basics – Docs Library](untitled-395.md)
 * [Snyk CLI for Infrastructure as Code – Docs Library](untitled-396.md)
 * [Vulnerability Management Tools – Docs Library](untitled-397.md)
 * [Security Policies – Docs Library](untitled-398.md)
@@ -417,5 +416,6 @@
 
 ## Snyk Open Source <a id="snyk-open-source-1"></a>
 
+* [Open Source basics – Docs Library](snyk-open-source-1/untitled-395.md)
 * [Untitled](snyk-open-source-1/untitled.md)
 
