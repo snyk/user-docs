@@ -8,6 +8,8 @@
   * [Fixing vulnerabilities](snyk-open-source/untitled-395/untitled-216.md)
   * [Fix pull requests for new vulnerabilities](snyk-open-source/untitled-395/untitled-275.md)
   * [Fix pull requests for known vulnerabilities \(backlog\)](snyk-open-source/untitled-395/untitled-276.md)
+  * [Integrate Snyk into your workflow](snyk-open-source/untitled-395/untitled-212.md)
+* [Language & package manager support – Docs Library](snyk-open-source/untitled-352/README.md)
 
 ## unsorted <a id="unsorted"></a>
 * [Manifest not found](unsorted/untitled.md)
@@ -222,7 +224,6 @@
 * [Configure your integration to find security issues in your Terraform files](unsorted/untitled-209.md)
 * [Install the Snyk controller on Amazon Elastic Kubernetes Service \(Amazon EKS\)](unsorted/untitled-210.md)
 * [Reporting](unsorted/untitled-211.md)
-* [Integrate Snyk into your workflow](unsorted/untitled-212.md)
 * [Introduction to Snyk](unsorted/untitled-213.md)
 * [Groups, Organizations and Users](unsorted/untitled-214.md)
 * [View project information](unsorted/untitled-215.md)
@@ -359,7 +360,6 @@
 * [Troubleshooting issues when testing \(manifest files, dependency versions, etc.\) – Docs Library](unsorted/untitled-349.md)
 * [Licenses – Docs Library \| Snyk](unsorted/untitled-350.md)
 * [Runtime monitoring – Docs Library](unsorted/untitled-351.md)
-* [Language & package manager support – Docs Library](unsorted/untitled-352.md)
 * [Test for vulnerabilities – Docs Library](unsorted/untitled-353.md)
 * [Snyk basics – Docs Library](unsorted/untitled-354.md)
 * [Starting to fix vulnerabilities – Docs Library](unsorted/untitled-355.md)
