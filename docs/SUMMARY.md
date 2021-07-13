@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Snyk User Documentation](README.md)
+* [Main](main.md)
 * [Manifest not found](untitled.md)
 * [Getting started with Snyk and Heroku](untitled-1.md)
 * [Single sign-on](untitled-2.md)
