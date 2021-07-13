@@ -276,8 +276,6 @@
 * [Introduction to Snyk Code](untitled-272.md)
 * [Create a Snyk account](untitled-273.md)
 * [Using Snyk Code \(web\)](untitled-274.md)
-* [Fix pull requests for new vulnerabilities](untitled-275.md)
-* [Fix pull requests for known vulnerabilities \(backlog\)](untitled-276.md)
 * [View your Infrastructure as Code issues](untitled-277.md)
 * [Supported operating system distributions](untitled-278.md)
 * [Snyk Glossary](untitled-279.md)
@@ -417,5 +415,7 @@
 
 * [Open Source basics – Docs Library](snyk-open-source-1/untitled-395/README.md)
   * [Fixing vulnerabilities](snyk-open-source-1/untitled-395/untitled-216.md)
+  * [Fix pull requests for new vulnerabilities](snyk-open-source-1/untitled-395/untitled-275.md)
+  * [Fix pull requests for known vulnerabilities \(backlog\)](snyk-open-source-1/untitled-395/untitled-276.md)
 * [Untitled](snyk-open-source-1/untitled.md)
 
