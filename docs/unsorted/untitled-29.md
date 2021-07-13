@@ -15,19 +15,19 @@ Only report vulnerabilities of provided level or higher.
 Only fail when there are vulnerabilities that can be fixed.
 
 ```text
---fail-on=all 
+--fail-on=all
 ```
 
 fails when there is at least one vulnerability that can be either upgraded or patched.
 
 ```text
---fail-on=upgradable 
+--fail-on=upgradable
 ```
 
 fails when there is at least one vulnerability that can be upgraded.
 
 ```text
---fail-on=patchable 
+--fail-on=patchable
 ```
 
 fails when there is at least one vulnerability that can be patched. If vulnerabilities do not have a fix and this option is being used, tests will pass.

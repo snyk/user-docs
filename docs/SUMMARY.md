@@ -18,8 +18,11 @@
   * [Snyk for Golang](snyk-open-source/untitled-352/untitled-55.md)
   * [Snyk for Swift and Objective-C \(CocoaPods\)](snyk-open-source/untitled-352/untitled-158.md)
   * [Snyk for Scala](snyk-open-source/untitled-352/untitled-1.md)
+  * [Snyk for Ruby](snyk-open-source/untitled-352/untitled-2.md)
+  * [Snyk for PHP](snyk-open-source/untitled-352/untitled-3.md)
 
 ## unsorted
+
 * [Manifest not found](unsorted/untitled.md)
 * [Getting started with Snyk and Heroku](unsorted/untitled-1.md)
 * [Single sign-on](unsorted/untitled-2.md)
@@ -340,7 +343,7 @@
 * [Snyk API – Docs Library](unsorted/untitled-327.md)
 * [Fixing and prioritizing issues – Docs Library](unsorted/untitled-328.md)
 * [Disclosing vulnerabilities – Docs Library](unsorted/untitled-329.md)
-* [Snyk Open Source – Docs Library](unsorted/snyk-open-source.md)
+* [Snyk Open Source – Docs Library](unsorted/snyk-open-source-docs-library.md)
 * [Infrastructure as code – Docs Library](unsorted/untitled-330.md)
 * [Introducing Snyk – Docs Library](unsorted/untitled-331.md)
 * [Snyk Code – Docs Library](unsorted/untitled-333.md)

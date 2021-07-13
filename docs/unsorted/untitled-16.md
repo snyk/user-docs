@@ -1,9 +1,9 @@
 # Could not determine version for dependencies
 
-* [ Container security with Harbor integration](/hc/en-us/articles/360018401678-Container-security-with-Harbor-integration)
-* [ Scan container images from Harbor in Snyk](/hc/en-us/articles/360018439098-Scan-container-images-from-Harbor-in-Snyk)
+* [ Container security with Harbor integration](https://github.com/snyk/user-docs/tree/caef522cc2da817b75170d43049a1e6dd9d856fb/hc/en-us/articles/360018401678-Container-security-with-Harbor-integration/README.md)
+* [ Scan container images from Harbor in Snyk](https://github.com/snyk/user-docs/tree/caef522cc2da817b75170d43049a1e6dd9d856fb/hc/en-us/articles/360018439098-Scan-container-images-from-Harbor-in-Snyk/README.md)
 
-##  Scan container images from Harbor in Snyk
+## Scan container images from Harbor in Snyk
 
 Snyk tests and monitors your Harbor container images by evaluating its tags in your repositories. Once imported to Snyk, your image vulnerabilities are surfaced and can be triaged easily.
 

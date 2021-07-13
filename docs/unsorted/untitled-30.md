@@ -1,6 +1,6 @@
 # What data does Snyk use and store when counting developers?
 
-##  Critical severity migration
+## Critical severity migration
 
 A new **Critical** severity level is assigned to vulnerabilities with a [CVSS](https://www.first.org/cvss/) score between 9.0-10.0.
 
@@ -42,7 +42,7 @@ Also, this change affects automated CLI/API-based pipelines, so consider if you 
 
 Before enabling the feature, ensure you are using the latest version of the Snyk CLI, CI/CD plugins, and IDE Extensions. If you use the API, or parse the JSON output from the CLI, also update your workflow to accept the new values.
 
-To enable the feature during the "opt-in" period, click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Snyk Preview**, then enable the critical severity feature. 
+To enable the feature during the "opt-in" period, click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Snyk Preview**, then enable the critical severity feature.
 
 Snyk Preview is available at the Group and Organization levels. If you enable the feature in the Group settings, the feature will be enabled for all Organizations within the same Group.
 
@@ -143,13 +143,13 @@ For example, for List of all Aggregated endpoint, you should add to the POST mes
 ```text
 {  
   "filters": {    
-	"severities": [  
-		"critical",   
-		"high",    
-		"medium",     
-		"low"
-		],
-	}
+    "severities": [  
+        "critical",   
+        "high",    
+        "medium",     
+        "low"
+        ],
+    }
 }
 ```
 

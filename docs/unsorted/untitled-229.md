@@ -68,6 +68,5 @@ Contact [support@snyk.io](mailto:support@snyk.io) if you want to add a private r
    2. **Basic auth**: URL encode both `<username>` and `<password>` user info to avoid errors that will prevent authentication
    3. **No basic auth**: Omit `<username>:<password>@` credentials 
 
-3. `RES_BODY_URL_SUB` is the URL of the Artifactory without credentials, and with http protocol and is required for NPM integration
-   1. Check connection status by refreshing Artifactory Integration Settings page, no connection error should be displayed
+3. `RES_BODY_URL_SUB` is the URL of the Artifactory without credentials, and with http protocol and is required for NPM integration 1. Check connection status by refreshing Artifactory Integration Settings page, no connection error should be displayed
 
