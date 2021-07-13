@@ -2,7 +2,7 @@
 
 * [Snyk User Documentation](README.md)
 
-## Snyk Open Source <a id="snyk-open-source"></a>
+## Snyk Open Source
 
 * [Open Source basics – Docs Library](snyk-open-source/untitled-395/README.md)
   * [Fixing vulnerabilities](snyk-open-source/untitled-395/untitled-216.md)
@@ -10,8 +10,11 @@
   * [Fix pull requests for known vulnerabilities \(backlog\)](snyk-open-source/untitled-395/untitled-276.md)
   * [Integrate Snyk into your workflow](snyk-open-source/untitled-395/untitled-212.md)
 * [Language & package manager support – Docs Library](snyk-open-source/untitled-352/README.md)
+  * [Language support summary](snyk-open-source/untitled-352/untitled.md)
+  * [Snyk for Scala](snyk-open-source/untitled-352/untitled-1.md)
 
-## unsorted <a id="unsorted"></a>
+## unsorted
+
 * [Manifest not found](unsorted/untitled.md)
 * [Getting started with Snyk and Heroku](unsorted/untitled-1.md)
 * [Single sign-on](unsorted/untitled-2.md)
@@ -338,7 +341,7 @@
 * [Snyk API – Docs Library](unsorted/untitled-327.md)
 * [Fixing and prioritizing issues – Docs Library](unsorted/untitled-328.md)
 * [Disclosing vulnerabilities – Docs Library](unsorted/untitled-329.md)
-* [Snyk Open Source – Docs Library](snyk-open-source.md)
+* [Snyk Open Source – Docs Library](unsorted/snyk-open-source.md)
 * [Infrastructure as code – Docs Library](unsorted/untitled-330.md)
 * [Introducing Snyk – Docs Library](unsorted/untitled-331.md)
 * [Snyk Code – Docs Library](unsorted/untitled-333.md)
@@ -418,3 +421,4 @@
 * [CLI Advanced Functionalities – Docs Library](unsorted/untitled-409.md)
 * [Scan your CloudFormation files – Docs Library](unsorted/untitled-410.md)
 * [Docs Library \| Snyk](unsorted/untitled-411.md)
+

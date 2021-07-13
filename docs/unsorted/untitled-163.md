@@ -37,7 +37,7 @@ If using Type 'Integration', you will need to choose an integration type and pro
 
 The Repository Name should be set as whatever comes after 'artifactory/' in the internal repository URL.
 
-For example, if the URL is '[http://artifactory.company.io/artifactory/libs-release'\[,\]\(http://artifactory.company.io/artifactory/jcenter](http://artifactory.company.io/artifactory/libs-release'[,]%28http://artifactory.company.io/artifactory/jcenter)',\) Repository Name should be set as 'libs-release'.
+For example, if the URL is '\[[http://artifactory.company.io/artifactory/libs-release'\[,\]\(http://artifactory.company.io/artifactory/jcenter\]\(http://artifactory.company.io/artifactory/libs-release'\[,\]%28http://artifactory.company.io/artifactory/jcenter\)',\](http://artifactory.company.io/artifactory/libs-release'[,]%28http://artifactory.company.io/artifactory/jcenter]%28http://artifactory.company.io/artifactory/libs-release'[,]%28http://artifactory.company.io/artifactory/jcenter%29',\)\) Repository Name should be set as 'libs-release'.
 
 **Repositories**
 

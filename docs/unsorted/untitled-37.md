@@ -1,17 +1,17 @@
 # Are Snyk patches available indefinitely to apply/view through Snyk's website ?
 
-* [ Kubernetes integration overview](/hc/en-us/articles/360003916138-Kubernetes-integration-overview)
-* [ Install the Snyk controller with Helm](/hc/en-us/articles/360003916158-Install-the-Snyk-controller-with-Helm)
-* [ Automatic import/deletion of Kubernetes workloads projects](/hc/en-us/articles/360020835037-Automatic-import-deletion-of-Kubernetes-workloads-projects)
-* [ Install the Snyk controller with OpenShift 4 and OperatorHub](/hc/en-us/articles/360006548317-Install-the-Snyk-controller-with-OpenShift-4-and-OperatorHub)
-* [ Install the Snyk controller on Amazon Elastic Kubernetes Service \(Amazon EKS\)](/hc/en-us/articles/360011128137-Install-the-Snyk-controller-on-Amazon-Elastic-Kubernetes-Service-Amazon-EKS-)
-* [ Adding Kubernetes workloads for security scanning](/hc/en-us/articles/360003947117-Adding-Kubernetes-workloads-for-security-scanning)
-* [ Viewing project details and test results](/hc/en-us/articles/360003916178-Viewing-project-details-and-test-results)
-* [ Snyk Priority Score and Kubernetes](/hc/en-us/articles/360010906897-Snyk-Priority-Score-and-Kubernetes)
-* [ Viewing your Kubernetes integration settings](/hc/en-us/articles/360006368657-Viewing-your-Kubernetes-integration-settings)
-* [ Disable the Kubernetes integration](/hc/en-us/articles/360003947137-Disable-the-Kubernetes-integration)
+* [ Kubernetes integration overview](https://github.com/snyk/user-docs/tree/47fd9f2f147240c5e52bc9f7ae8343ab5a8fa0d8/hc/en-us/articles/360003916138-Kubernetes-integration-overview/README.md)
+* [ Install the Snyk controller with Helm](https://github.com/snyk/user-docs/tree/47fd9f2f147240c5e52bc9f7ae8343ab5a8fa0d8/hc/en-us/articles/360003916158-Install-the-Snyk-controller-with-Helm/README.md)
+* [ Automatic import/deletion of Kubernetes workloads projects](https://github.com/snyk/user-docs/tree/47fd9f2f147240c5e52bc9f7ae8343ab5a8fa0d8/hc/en-us/articles/360020835037-Automatic-import-deletion-of-Kubernetes-workloads-projects/README.md)
+* [ Install the Snyk controller with OpenShift 4 and OperatorHub](https://github.com/snyk/user-docs/tree/47fd9f2f147240c5e52bc9f7ae8343ab5a8fa0d8/hc/en-us/articles/360006548317-Install-the-Snyk-controller-with-OpenShift-4-and-OperatorHub/README.md)
+* [ Install the Snyk controller on Amazon Elastic Kubernetes Service \(Amazon EKS\)](https://github.com/snyk/user-docs/tree/47fd9f2f147240c5e52bc9f7ae8343ab5a8fa0d8/hc/en-us/articles/360011128137-Install-the-Snyk-controller-on-Amazon-Elastic-Kubernetes-Service-Amazon-EKS-/README.md)
+* [ Adding Kubernetes workloads for security scanning](https://github.com/snyk/user-docs/tree/47fd9f2f147240c5e52bc9f7ae8343ab5a8fa0d8/hc/en-us/articles/360003947117-Adding-Kubernetes-workloads-for-security-scanning/README.md)
+* [ Viewing project details and test results](https://github.com/snyk/user-docs/tree/47fd9f2f147240c5e52bc9f7ae8343ab5a8fa0d8/hc/en-us/articles/360003916178-Viewing-project-details-and-test-results/README.md)
+* [ Snyk Priority Score and Kubernetes](https://github.com/snyk/user-docs/tree/47fd9f2f147240c5e52bc9f7ae8343ab5a8fa0d8/hc/en-us/articles/360010906897-Snyk-Priority-Score-and-Kubernetes/README.md)
+* [ Viewing your Kubernetes integration settings](https://github.com/snyk/user-docs/tree/47fd9f2f147240c5e52bc9f7ae8343ab5a8fa0d8/hc/en-us/articles/360006368657-Viewing-your-Kubernetes-integration-settings/README.md)
+* [ Disable the Kubernetes integration](https://github.com/snyk/user-docs/tree/47fd9f2f147240c5e52bc9f7ae8343ab5a8fa0d8/hc/en-us/articles/360003947137-Disable-the-Kubernetes-integration/README.md)
 
-##  Automatic import/deletion of Kubernetes workloads projects
+## Automatic import/deletion of Kubernetes workloads projects
 
 This feature is currently in beta. We would appreciate any feedback you might have.
 
@@ -23,9 +23,9 @@ The Helm chart of the Snyk controller is already provisioned with a default Rego
 
 ```text
 helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \\
-	--namespace snyk-monitor \\
-	--set clusterName="Production cluster" \\
-	--set policyOrgs={19982df2-0ed5-4a16-b355-e6535cfc41ef}
+    --namespace snyk-monitor \\
+    --set clusterName="Production cluster" \\
+    --set policyOrgs={19982df2-0ed5-4a16-b355-e6535cfc41ef}
 ```
 
 Note that _**policyOrgs**_ is a list of organization public IDs. You can add more than one Organization to use the auto-import and auto-delete capabilities. You can locate this public ID under your organization's settings page.
@@ -55,7 +55,7 @@ package snyk
 orgs := ["19982df2-0ed5-4a16-b355-e6535cfc41ef"]
 default workload_events = false
 workload_events {
-	input.metadata.namespace == "default"
+    input.metadata.namespace == "default"
 }
 ```
 
@@ -68,7 +68,7 @@ package snyk
 orgs := ["19982df2-0ed5-4a16-b355-e6535cfc41ef"]
 default workload_events = false
 workload_events {
-	input.metadata.annotations.team == "apollo"
+    input.metadata.annotations.team == "apollo"
 }
 ```
 
@@ -81,7 +81,7 @@ package snyk
 orgs := ["19982df2-0ed5-4a16-b355-e6535cfc41ef"]
 default workload_events = false
 workload_events {
-	input.kind != "Job"
+    input.kind != "Job"
 }
 ```
 
@@ -89,12 +89,12 @@ workload_events {
 
 ```text
 kubectl create configmap snyk-monitor-custom-policies \\
-	-n snyk-monitor \\
-	--from-file=workload-events.rego # This name is hardcoded
+    -n snyk-monitor \\
+    --from-file=workload-events.rego # This name is hardcoded
 helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \\
-	--namespace snyk-monitor \\
-	--set clusterName="Production cluster" \\
-	--set workloadPoliciesMap=snyk-monitor-custom-policies
+    --namespace snyk-monitor \\
+    --set clusterName="Production cluster" \\
+    --set workloadPoliciesMap=snyk-monitor-custom-policies
 ```
 
 **Note**: Ensure the file is named **workload-events.rego**.

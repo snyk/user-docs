@@ -1,17 +1,17 @@
 # Custom file Name on Snyk UI
 
-* [ Introduction to Snyk Single Sign-On \(SSO\)](/hc/en-us/articles/360018025297-Introduction-to-Snyk-Single-Sign-On-SSO-)
-* [ Choose a provisioning option](/hc/en-us/articles/360019607318-Choose-a-provisioning-option)
-* [ Set up Snyk Single Sign-On \(SSO\)](/hc/en-us/articles/360017753618-Set-up-Snyk-Single-Sign-On-SSO-)
-* [ Identity Provider \(IdP\) migration](/hc/en-us/articles/4402292397969-Identity-Provider-IdP-migration)
+* [ Introduction to Snyk Single Sign-On \(SSO\)](https://github.com/snyk/user-docs/tree/47fd9f2f147240c5e52bc9f7ae8343ab5a8fa0d8/hc/en-us/articles/360018025297-Introduction-to-Snyk-Single-Sign-On-SSO-/README.md)
+* [ Choose a provisioning option](https://github.com/snyk/user-docs/tree/47fd9f2f147240c5e52bc9f7ae8343ab5a8fa0d8/hc/en-us/articles/360019607318-Choose-a-provisioning-option/README.md)
+* [ Set up Snyk Single Sign-On \(SSO\)](https://github.com/snyk/user-docs/tree/47fd9f2f147240c5e52bc9f7ae8343ab5a8fa0d8/hc/en-us/articles/360017753618-Set-up-Snyk-Single-Sign-On-SSO-/README.md)
+* [ Identity Provider \(IdP\) migration](https://github.com/snyk/user-docs/tree/47fd9f2f147240c5e52bc9f7ae8343ab5a8fa0d8/hc/en-us/articles/4402292397969-Identity-Provider-IdP-migration/README.md)
 
-##  Choose a provisioning option
+## Choose a provisioning option
 
 Determine how new users in your organization get access to Snyk:
 
-* [Open to all]()
-* [Invitation required]()
-* [Custom]()
+* [Open to all](untitled-27.md)
+* [Invitation required](untitled-27.md)
+* [Custom](untitled-27.md)
 
 With the Open option, all users have automatic access to Snyk by using SSO to log in. They will have access to all organizations in your selected group. Their accounts will all be provisioned with the same role, with two options:
 
@@ -35,5 +35,5 @@ You can configure SSO differently for each of your different Snyk groups. You ca
 
 Work with your Customer Success Manager and Snyk Technical Services to prepare for implementing this SSO option.
 
-Read more about the next step, [set up single sign-on](/hc/en-us/articles/360017753618).
+Read more about the next step, [set up single sign-on](https://github.com/snyk/user-docs/tree/47fd9f2f147240c5e52bc9f7ae8343ab5a8fa0d8/hc/en-us/articles/360017753618/README.md).
 
