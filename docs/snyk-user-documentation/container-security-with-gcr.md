@@ -1,2 +1,0 @@
-# Container security with GCR
-

@@ -1,2 +1,0 @@
-# Artifactory Gatekeeper plugin overview
-

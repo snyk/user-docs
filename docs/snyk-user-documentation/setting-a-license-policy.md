@@ -1,2 +1,0 @@
-# Setting a license policy
-

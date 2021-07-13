@@ -1,2 +1,0 @@
-# Using Snyk Code \(web\)
-

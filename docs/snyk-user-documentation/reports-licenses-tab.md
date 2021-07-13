@@ -1,2 +1,0 @@
-# Reports: Licenses tab
-

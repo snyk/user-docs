@@ -1,2 +1,0 @@
-# Evaluating and prioritizing vulnerabilities
-

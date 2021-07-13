@@ -1,2 +1,0 @@
-# Authentication for API
-

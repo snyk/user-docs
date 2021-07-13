@@ -1,2 +1,0 @@
-# Prioritizing Snyk issues
-

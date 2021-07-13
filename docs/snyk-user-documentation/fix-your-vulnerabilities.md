@@ -1,2 +1,0 @@
-# Fix your vulnerabilities
-

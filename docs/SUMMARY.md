@@ -2,6 +2,16 @@
 
 * [Snyk User Documentation](README.md)
 * [Main](main.md)
+
+## Snyk Open Source <a id="snyk-open-source-1"></a>
+
+* [Open Source basics – Docs Library](snyk-open-source-1/untitled-395/README.md)
+  * [Fixing vulnerabilities](snyk-open-source-1/untitled-395/untitled-216.md)
+  * [Fix pull requests for new vulnerabilities](snyk-open-source-1/untitled-395/untitled-275.md)
+  * [Fix pull requests for known vulnerabilities \(backlog\)](snyk-open-source-1/untitled-395/untitled-276.md)
+* [Untitled](snyk-open-source-1/untitled.md)
+
+## unsorted <a id="unsorted"></a>
 * [Manifest not found](untitled.md)
 * [Getting started with Snyk and Heroku](untitled-1.md)
 * [Single sign-on](untitled-2.md)
@@ -410,12 +420,3 @@
 * [CLI Advanced Functionalities – Docs Library](untitled-409.md)
 * [Scan your CloudFormation files – Docs Library](untitled-410.md)
 * [Docs Library \| Snyk](untitled-411.md)
-
-## Snyk Open Source <a id="snyk-open-source-1"></a>
-
-* [Open Source basics – Docs Library](snyk-open-source-1/untitled-395/README.md)
-  * [Fixing vulnerabilities](snyk-open-source-1/untitled-395/untitled-216.md)
-  * [Fix pull requests for new vulnerabilities](snyk-open-source-1/untitled-395/untitled-275.md)
-  * [Fix pull requests for known vulnerabilities \(backlog\)](snyk-open-source-1/untitled-395/untitled-276.md)
-* [Untitled](snyk-open-source-1/untitled.md)
-

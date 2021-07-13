@@ -1,2 +1,0 @@
-# Groups, Organizations and Users
-

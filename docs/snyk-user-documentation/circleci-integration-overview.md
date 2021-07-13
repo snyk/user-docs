@@ -1,2 +1,0 @@
-# CircleCI integration overview
-

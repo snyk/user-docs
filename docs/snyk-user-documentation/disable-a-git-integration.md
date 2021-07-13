@@ -1,2 +1,0 @@
-# Disable a git integration
-

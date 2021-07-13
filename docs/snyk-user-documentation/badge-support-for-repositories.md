@@ -1,2 +1,0 @@
-# Badge Support for Repositories
-

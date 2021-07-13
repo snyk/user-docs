@@ -1,2 +1,0 @@
-# Snyk for JavaScript
-

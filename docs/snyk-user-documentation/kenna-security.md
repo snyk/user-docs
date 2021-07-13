@@ -1,2 +1,0 @@
-# Kenna Security
-

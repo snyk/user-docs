@@ -1,2 +1,0 @@
-# GitHub Read-Only Projects
-

@@ -1,2 +1,0 @@
-# Snyk Container security overview
-

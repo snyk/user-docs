@@ -1,2 +1,0 @@
-# Snyk Vs NPM Audit
-

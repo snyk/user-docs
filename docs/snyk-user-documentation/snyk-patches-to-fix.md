@@ -1,2 +1,0 @@
-# Snyk patches to fix
-

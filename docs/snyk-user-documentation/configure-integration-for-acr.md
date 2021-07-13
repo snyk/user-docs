@@ -1,2 +1,0 @@
-# Configure integration for ACR
-

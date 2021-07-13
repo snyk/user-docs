@@ -1,2 +1,0 @@
-# Azure DevOps Configurational Changes
-

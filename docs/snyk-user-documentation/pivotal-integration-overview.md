@@ -1,2 +1,0 @@
-# Pivotal integration overview
-
