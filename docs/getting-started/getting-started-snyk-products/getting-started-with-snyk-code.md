@@ -15,7 +15,7 @@ Snyk Code is disabled by default, so you must enable it for each organization:
 
 1. Log in to [Snyk.io](http://snyk.io/).
 2. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png)  &gt; **Snyk Code**.
-3. Under **Enable Snyk Code**, change **Disabled** to **Enabled:** 
+3. Under **Enable Snyk Code**, change **Disabled** to **Enabled:** ![enable-snyk-code.png](https://support.snyk.io/hc/article_attachments/360019769157/enable-snyk-code.png)
 4. Click **Save changes**.
 
 #### Stage 2: Add source control integration
@@ -27,6 +27,9 @@ Choose a source code integration, to allow Snyk to work on a project.
 1. Log in to [Snyk.io](http://snyk.io/).
 2. Select **Integrations &gt; Source control**.
 3. Click the source control system \(for example, GitHub\) to integrate with Snyk:
+
+   ![Screenshot\_2021-06-22\_at\_10.58.18.png](https://support.snyk.io/hc/article_attachments/4402938011409/Screenshot_2021-06-22_at_10.58.18.png)
+
 4. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
 
 See [DevOps integrations & languages](https://support.snyk.io/hc/en-us/articles/360011733538-DevOps-integrations-languages) for more details
@@ -51,7 +54,10 @@ See [Snyk projects](https://support.snyk.io/hc/en-us/sections/360004724958-Snyk-
 You can now view vulnerability results for imported projects. The **Projects** tab appears by default after import, showing vulnerability information for projects you've imported.
 
 1. Click on an imported project to see vulnerability information for that project, including the number of issues found, grouped by severity :
-2. Click on an entry to open the issues view for that entry. For each issue, this shows the exploitable code snippet and a description of the code flaw that may lead to this vulnerability if not fixed: 
+
+   ![View-Vulns1.png](https://support.snyk.io/hc/article_attachments/360015653898/View-Vulns1.png)
+
+2. Click on an entry to open the issues view for that entry. For each issue, this shows the exploitable code snippet and a description of the code flaw that may lead to this vulnerability if not fixed: ![View-Vulns2.png](https://support.snyk.io/hc/article_attachments/360015653998/View-Vulns2.png)
 
 See [View project information](https://support.snyk.io/hc/en-us/articles/360011450838-View-project-information) for more details.
 

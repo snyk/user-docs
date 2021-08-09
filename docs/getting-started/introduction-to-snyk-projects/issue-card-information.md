@@ -1,0 +1,59 @@
+# Issue card information
+
+Issue cards appear in the details page for your project - see [View project information](https://support.snyk.io/hc/en-us/articles/360011450838-View-project-information).
+
+Issue cards show details for a specific vulnerability or license issue, and actions you can take with it.
+
+![Screenshot\_2021-03-01\_at\_16.19.01.png](https://support.snyk.io/hc/article_attachments/360017491618/Screenshot_2021-03-01_at_16.19.01.png)
+
+Header section information:
+
+![issue-card-header.png](https://support.snyk.io/hc/article_attachments/4404276705681/issue-card-header.png)
+
+* [Severity level](https://support.snyk.io/hc/en-us/articles/4403987394961-Severity-levels): for example, **H** \(High\)
+* **Issue name**: for example, **Open**.
+* **Score**: [Priority score](https://support.snyk.io/hc/en-us/articles/360009884837-Snyk-Priority-Score): 0 - 1,000.
+* **Type**: VULNERABILITY or LICENSE ISSUE.
+* Links to [CWE](https://cwe.mitre.org/index.html) \(Common Weakness Evaluation\), [CVSS](https://www.first.org/cvss/calculator/3.1) \(Common Vulnerability Scoring System\), and Snyk [Intel Vulnerability DB](https://snyk.io/vuln) information for that issue.
+* **Social Trends**: Snyk shows a [Trending banner](https://support.snyk.io/hc/en-us/articles/4404328187921) on issues that are being actively discussed in Twitter.
+
+Body section information:
+
+![issue-card-body.png](https://support.snyk.io/hc/article_attachments/4404276956561/issue-card-body.png)
+
+* **Introduced through**: The path the vulnerability or license was introduced through
+* **Fixed in:** The file the vulnerability is fixed in
+* [Exploit maturity](https://support.snyk.io/hc/en-us/articles/360006113978-Evaluating-and-prioritizing-vulnerabilities): for example, **Proof Of Concept**.
+* [Reachability](https://support.snyk.io/hc/en-us/articles/360010554837-Reachable-Vulnerabilities-): for example, **Reachable**.
+
+When you expand the issue card for more information, you can see the following information: 
+
+![Screenshot\_2021-03-01\_at\_16.08.49.png](https://support.snyk.io/hc/article_attachments/360017425377/Screenshot_2021-03-01_at_16.08.49.png)
+
+This information includes:
+
+* Detailed path information
+* Remediation advice
+* Overview of the vulnerability
+* Any vulnerable functions within the vulnerability
+
+You can apply multiple filters to a project to show a set of issues: 
+
+* If they are a vulnerability or a license issue
+* With a specific severity 
+* Within a range of the priority score 
+* Based on whether it has an exploit, and how mature the exploit is
+* That are open, or have been patched or ignored 
+
+The issue cards in a project can be sorted based on their priority score or severity. 
+
+### Card actions
+
+You can perform the following actions on the issue card: 
+
+* [**Ignore the issue**](https://support.snyk.io/hc/en-us/articles/360003891098-Ignoring-issues-not-prioritized-for-your-project): if you do not need to take an action on an issue, or it does not need to appear on your reports, you can ignore it.
+* [**Create a Jira ticket**](https://support.snyk.io/hc/en-us/articles/360004002458-Jira): if you have the [Jira integration](https://support.snyk.io/hc/en-us/articles/360004002458-Jira), you can link your issue boards to Snyk and create Jira tickets directly from the project details page to fix vulnerabilities.
+* [**Fix the vulnerability**](https://support.snyk.io/hc/en-us/articles/360011484018-Fixing-vulnerabilities): if a fix is available for vulnerabilities, you can fix individual vulnerabilities.
+* **View more information about the CWE, CVE, and CVSS score**: navigate from the issue card to further information about these scores.
+* **View the Snyk vulnerability database:** navigate to the Snyk vulnerability database about a specific vulnerability from its issue card.
+

@@ -1,0 +1,51 @@
+# View project issues, remediations, and dependencies
+
+For your project, you can view the following displays:
+
+* [Issues](): the number of vulnerabilities and license issues.
+* [Remediation](): remediation advice.
+* [Dependencies](): the total number of direct and transitive \(nested\) dependencies.
+
+Below the project summary details, you can see vulnerabilities and licensing issues, in the **Issues** tab:
+
+![image7.png](https://support.snyk.io/hc/article_attachments/360015738537/image7.png)
+
+Use the left-hand area to filter and search issues. Click the checkboxes to filter issues by **Issue type**, **Severity**, **Exploit Maturity**, and **Status**. You can also edit the **Priority Score** slider to change the range displayed \(by default this is set from 0 - 1000\).
+
+Issues details appear in the main area, sorted by priority score. See **View Issue Details.**
+
+### Fix issues \(Fix PR\)
+
+Snyk provides powerful features to fix issues identified during scanning, as shown in the **Open a fix PR** section of the **Issues** and **Remediation** displays:
+
+![image27.png](https://support.snyk.io/hc/article_attachments/360015738617/image27.png)
+
+You can also select to fix a specific issue, clicking **Fix this vulnerability** on a specific issue: 
+
+![image26.png](https://support.snyk.io/hc/article_attachments/360015813558/image26.png)
+
+See [Fixing vulnerabilities](https://support.snyk.io/hc/en-us/articles/360011484018-Fixing-vulnerabilities) for an overview.  
+See [Fixing and prioritizing issues](https://support.snyk.io/hc/en-us/categories/360001328418-Fixing-and-prioritizing-issues) for more details.
+
+### View issue details
+
+For each issue, this display shows details about the vulnerability including its priority score \(see [Prioritizing Snyk issues](https://support.snyk.io/hc/en-us/articles/360009884837-Prioritizing-Snyk-issues)\):
+
+![image12.png](https://support.snyk.io/hc/article_attachments/360015813598/image12.png)
+
+Click **More about this issue** to view detailed information about the vulnerability using [Snyk's vulnerability database](https://snyk.io/product/vulnerability-database/), giving you a deeper insight into the issue, including its CVSS score:
+
+![image15.png](https://support.snyk.io/hc/article_attachments/360015813618/image15.png)
+
+Snyk's knowledge of the transitive dependencies in your project make it possible for Snyk to offer remediation advice, in the **Remediation** tab:
+
+![image19.png](https://support.snyk.io/hc/article_attachments/360015813658/image19.png)
+
+See [Remediate your vulnerabilities](https://support.snyk.io/hc/en-us/articles/360006113798-Remediate-your-vulnerabilities) for details.
+
+Synk uses the package manager of your application to build the dependency tree and display it in the **dependency** tab of the project view. This shows which components introduce a vulnerability, to show how the dependency was introduced to the application:
+
+![image23.png](https://support.snyk.io/hc/article_attachments/360015814258/image23.png)
+
+For example, the above screenshot shows a vulnerability based on the transitive dependency **qs@2.2.4**, brought in from the direct dependency **body-parser@ 1.9.0**.
+
