@@ -1,6 +1,6 @@
 # Getting started with Snyk dashboard
 
-**Pending tasks on dashboard**
+**Pending tasks on the Snyk dashboard**
 
 The **Pending tasks** section of the dashboard shows recommended outstanding work to consider around projects in a Snyk organization:
 
