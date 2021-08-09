@@ -27,5 +27,6 @@
     * [View project history](getting-started/introduction-to-snyk-projects/view-project-history.md)
     * [Issue card information](getting-started/introduction-to-snyk-projects/issue-card-information.md)
     * [Project tags](getting-started/introduction-to-snyk-projects/project-tags.md)
-    * [Project attributes](getting-started/introduction-to-snyk-projects/untitled.md)
+    * [Project attributes](getting-started/introduction-to-snyk-projects/project-attributes.md)
+  * [Getting started with Snyk dashboard](getting-started/getting-started-with-snyk-dashboard.md)
 
