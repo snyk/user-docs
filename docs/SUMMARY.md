@@ -6,5 +6,6 @@
   * [Snyk Glossary](introduction-to-snyk/glossary.md)
 * [Getting started guide](getting-started-guide/README.md)
   * [Select a Snyk product/tool](getting-started-guide/select-snyk-product-tool.md)
-  * [Getting started with Snyk Open Source](getting-started-guide/untitled.md)
+  * [Getting started with Snyk Open Source](getting-started-guide/getting-started-snyk-open-source.md)
+  * [Getting started with Snyk Code](getting-started-guide/untitled.md)
 

@@ -1,102 +1,70 @@
-# Getting started with Snyk Open Source
+# Getting started with Snyk Code
 
-## Getting started with Snyk Open Source
+Get started with [Snyk Code](https://snyk.io/product/snyk-code/) to find, prioritize and fix potential vulnerabilities in your proprietary code.
 
-Get started with Snyk Open Source to inspect, find and fix vulnerabilities in your code.
+This documentation describes using Snyk Code with the Web UI. You can also use Snyk Code as a plugin to your JetBrains IDE; see [JetBrains IDE Plugins](https://support.snyk.io/hc/en-us/articles/360004032317-JetBrains-IDE-Plugins) for more details.
 
-This process describes using the Snyk.io UI and a source code management system.  
-You can also use an [IDE tool](https://support.snyk.io/hc/en-us/sections/360001138118-IDE-tools) or a [CI/CD integration](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations). See [Integrations](https://support.snyk.io/hc/en-us/categories/360000598398-Integrations) for more details.
+* A Snyk account.
+* [Snyk Open Source](https://support.snyk.io/hc/en-us/categories/360003049458-Snyk-Open-Source) or [Snyk Container](https://support.snyk.io/hc/en-us/categories/360000583498-Snyk-Container) installed \(as currently Snyk Code is distributed as an add-on\).
+* Projects that include code in [a supported language](https://support.snyk.io/hc/en-us/articles/360016973477-Snyk-Code-language-and-framework-support) \(currently Java, JavaScript, and Python\).
+* One of the following supported source code management systems \(SCMs\): GitHub cloud, BitBucket cloud, Gitlab cloud.
 
-**Using the CLI tool**
+#### Stage 1: Enable Snyk Code
 
-The [Snyk CLI tool](https://support.snyk.io/hc/en-us/articles/360003812458-Getting-started-with-the-CLI) allows you to get started using the command line - for example, to install on npm:
+Snyk Code is disabled by default, so you must enable it for each organization:
 
-```text
-npm install -g snyk
-```
+1. Log in to [Snyk.io](http://snyk.io/).
+2. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png)  &gt; **Snyk Code**.
+3. Under **Enable Snyk Code**, change **Disabled** to **Enabled:** 
+4. Click **Save changes**.
 
-See [Getting started with the CLI](https://support.snyk.io/hc/en-us/articles/360003812458-Getting-started-with-the-CLI) for details.
+#### Stage 2: Add source control integration
 
-#### Stage 1: Add source control integration
+if you already have an integration set up, you can skip this step.
 
-if you already have an integration set up, you can go to Step 3.
+Choose a source code integration, to allow Snyk to work on a project.
 
-Choose a source code integration, to allow Snyk to work on a project. 
-
-1. Log in to Snyk.io.
+1. Log in to [Snyk.io](http://snyk.io/).
 2. Select **Integrations &gt; Source control**.
 3. Click the source control system \(for example, GitHub\) to integrate with Snyk:
-
-![](../.gitbook/assets/screenshot-2021-06-22-at-10.58.18.png)
-
-1. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
+4. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
 
 See [DevOps integrations & languages](https://support.snyk.io/hc/en-us/articles/360011733538-DevOps-integrations-languages) for more details
 
+if you already have projects added, you can skip this step.
+
 Add projects to test with Snyk, by choosing repositories for Snyk to test and monitor.
 
-1. Select **Projects** from snyk.io.
-2. Select the tool to add the project from \(for example GitHub\):
+1. Select **Projects** from [snyk.io](http://snyk.io/).
+2. Select the tool to add the project from \(for example GitHub\): ![https://support.snyk.io/hc/article\_attachments/360012555458/Open-Source-Add-Projects.png](https://support.snyk.io/hc/article_attachments/360012555458/Open-Source-Add-Projects.png)
+3. In **Personal and Organization repositories**, select the repositories to use: ![https://support.snyk.io/hc/article\_attachments/360012555518/IaC\_-\_select\_repo.png](https://support.snyk.io/hc/article_attachments/360012555518/IaC_-_select_repo.png)
+4. Click **Add selected repositories** to import the selected repositories into your projects. This sets Snyk to run a regular check \(daily by default\) for your proprietary code vulnerabilities.
+5. A progress bar appears: click **View log** to see log results.
+6. Project import completes.
 
-![](../.gitbook/assets/open-source-add-projects.png)
+Currently Snyk Code does not support the **Exclude folders** option during import. Please contact us if you need more information.
 
-1. In **Personal and Organization repositories**, select the repositories to use:
+See [Snyk projects](https://support.snyk.io/hc/en-us/sections/360004724958-Snyk-projects) for more details.
 
-![](../.gitbook/assets/screenshot-2021-04-09-at-17.08.24.png)
+#### Stage 4: View vulnerabilities
 
-1. Click **Add selected repositories** to import the selected repositories into your projects. This also:
-   * Sets Snyk to run a regular check \(daily by default\) for vulnerabilities.
-   * Creates a Webhook, so when you change code, Snyk tests your pull / merge requests, to check that new dependencies do not introduce more vulnerabilities.
-2. A progress bar appears: click **View log** to see log results. 
-3. Project import completes.
+You can now view vulnerability results for imported projects. The **Projects** tab appears by default after import, showing vulnerability information for projects you've imported.
 
-If you encounter any errors during import, see the [Importing projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects) information.
+1. Click on an imported project to see vulnerability information for that project, including the number of issues found, grouped by severity :
+2. Click on an entry to open the issues view for that entry. For each issue, this shows the exploitable code snippet and a description of the code flaw that may lead to this vulnerability if not fixed: 
 
-#### Stage 3: View vulnerabilities
+See [View project information](https://support.snyk.io/hc/en-us/articles/360011450838-View-project-information) for more details.
 
-You can now view vulnerability results for imported projects. The **Projects** tab appears by default after import, showing vulnerability information for project you've imported.
+#### Stage 5: View issue details
 
-* Click on an imported project to see vulnerability information for that project, including the number of issues found, grouped by severity level:
+Click **Full Details** on an issue to view more details about it, such as:
 
-![](../.gitbook/assets/view-vulns-overview.png)
-
-* Click on an entry to open the issues view for that entry, including the module, where it was introduced, and the remediation to fix it, plus more details about the vulnerability itself:
-
-![](../.gitbook/assets/detailed-vuln-information.png)
-
-See  [View project information](https://support.snyk.io/hc/en-us/articles/360011450838-View-project-information) for more details.
-
-#### Stage 4: Fix vulnerabilities
-
-For JavaScript, Ruby and Java projects, Snyk can remediate your vulnerabilities via fix pull/merge requests:
-
-* Open the issues view for a project
-
-![](../.gitbook/assets/screenshot-2021-04-09-at-17.35.25.png)
-
-Click **Fix this vulnerability** to upgrade \(or patch\) to fix an individual issue, or click **Fix these vulnerabilities** to to fix multiple issues at once.
-
-* The **Open a Fix PR** screen opens and indicates the vulnerabilities you selected:
-
-![](../.gitbook/assets/screenshot-2021-04-09-at-17.40.00.png)
-
-* Check any additional issues you want to fix, or uncheck items to remove them from the fix.
-* Scroll down to the bottom of the screen and click **Open a Fix PR**.
-* Snyk now actions this PR, then a results screen appears:
-
-![](../.gitbook/assets/screenshot-2021-04-09-at-17.44.26.png)
-
-
-
-* Optionally, select the **Files changed** tab to see details of the changes made.
-
-![](../.gitbook/assets/screenshot-2021-04-09-at-17.46.22.png)
-
-See [Fixing vulnerabilities](https://support.snyk.io/hc/en-us/articles/360011484018-Fixing-vulnerabilities) for more details.
+* **Data Flow**: The issue's taint flow from the source \(the user input\) to the sink \(the operation that needs to receive clean input and can be exploited otherwise\).
+* **Remediation Strategy**: An area that focuses on how to fix the problem with more details, references and code samples related to it.
 
 ### For more information
 
-See [Snyk Open Source](https://support.snyk.io/hc/en-us/categories/360003049458-Snyk-Open-Source).
-
-
+* [Snyk Code](https://support.snyk.io/hc/en-us/categories/360003257537-Snyk-Code)
+* [Developer-first SAST with Snyk Code](https://snyk.io/blog/developer-first-sast-with-snyk-code/)
+* [SAST vs DAST](https://snyk.io/learn/sast-vs-dast/)
 
