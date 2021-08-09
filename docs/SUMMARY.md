@@ -37,8 +37,9 @@
     * [Project attributes](getting-started/introduction-to-snyk-projects/project-attributes.md)
   * [Getting started with Snyk dashboard](getting-started/getting-started-with-snyk-dashboard.md)
 * [Snyk Open Source](snyk-open-source/README.md)
-  * [Fixing vulnerabilities](snyk-open-source/fixing-vulnerabilities.md)
-  * [Fix pull requests for new vulnerabilities](snyk-open-source/fix-pull-requests-for-new-vulnerabilities.md)
-  * [Fix pull requests for known vulnerabilities \(backlog\)](snyk-open-source/fix-pull-requests-for-known-vulnerabilities-backlog.md)
-  * [Integrate Snyk into your workflow](snyk-open-source/integrate-snyk-into-your-workflow.md)
+  * [Open Source basics](snyk-open-source/open-source-basics/README.md)
+    * [Fixing vulnerabilities](snyk-open-source/open-source-basics/fixing-vulnerabilities.md)
+    * [Fix pull requests for new vulnerabilities](snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md)
+    * [Fix pull requests for known vulnerabilities \(backlog\)](snyk-open-source/open-source-basics/fix-pull-requests-for-known-vulnerabilities-backlog.md)
+    * [Integrate Snyk into your workflow](snyk-open-source/open-source-basics/integrate-snyk-into-your-workflow.md)
 
