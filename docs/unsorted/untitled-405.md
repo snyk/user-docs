@@ -1,2 +1,0 @@
-# Onboarding Snyk – Docs Library
-
