@@ -10,7 +10,7 @@
     * [Notifications](introducing-snyk/snyks-core-concepts/notifications.md)
     * [Reporting](introducing-snyk/snyks-core-concepts/reporting.md)
     * [Running tests](introducing-snyk/snyks-core-concepts/running-tests.md)
-    * [Snyk settings](introducing-snyk/snyks-core-concepts/untitled.md)
+    * [Snyk settings](introducing-snyk/snyks-core-concepts/snyk-settings.md)
 * [Getting started](getting-started/README.md)
   * [Getting started with Snyk products](getting-started/getting-started-snyk-products/README.md)
     * [Select a Snyk product/tool](getting-started/getting-started-snyk-products/select-snyk-product-tool.md)
@@ -36,4 +36,9 @@
     * [Project tags](getting-started/introduction-to-snyk-projects/project-tags.md)
     * [Project attributes](getting-started/introduction-to-snyk-projects/project-attributes.md)
   * [Getting started with Snyk dashboard](getting-started/getting-started-with-snyk-dashboard.md)
+* [Snyk Open Source](snyk-open-source/README.md)
+  * [Fixing vulnerabilities](snyk-open-source/fixing-vulnerabilities.md)
+  * [Fix pull requests for new vulnerabilities](snyk-open-source/fix-pull-requests-for-new-vulnerabilities.md)
+  * [Fix pull requests for known vulnerabilities \(backlog\)](snyk-open-source/fix-pull-requests-for-known-vulnerabilities-backlog.md)
+  * [Integrate Snyk into your workflow](snyk-open-source/integrate-snyk-into-your-workflow.md)
 
