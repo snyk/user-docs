@@ -1,4 +1,4 @@
-# Snyk Code basics
+# Snyk Code
 
 **Integrated platform**
 
