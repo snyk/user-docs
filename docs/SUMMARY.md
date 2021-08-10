@@ -52,4 +52,11 @@
     * [Snyk for Scala](snyk-open-source/language-and-package-manager-support/snyk-for-scala.md)
     * [Snyk for Ruby](snyk-open-source/language-and-package-manager-support/snyk-for-ruby.md)
     * [Snyk for PHP](snyk-open-source/language-and-package-manager-support/snyk-for-php.md)
+  * [Licenses](snyk-open-source/licenses/README.md)
+    * [Reports: Licenses tab](snyk-open-source/licenses/reports-licenses-tab.md)
+  * [License policies](snyk-open-source/license-policies/README.md)
+    * [Setting a license policy](snyk-open-source/license-policies/setting-a-license-policy.md)
+    * [License policies: What collaborators see](snyk-open-source/license-policies/license-policies-what-collaborators-see.md)
+  * [Dependency management](snyk-open-source/dependency-management/README.md)
+    * [Upgrading dependencies with automatic PRs](snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs.md)
 
