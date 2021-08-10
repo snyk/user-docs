@@ -1,0 +1,2 @@
+# JFrog Artifactory image scanning
+
