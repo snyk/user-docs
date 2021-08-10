@@ -59,4 +59,8 @@
     * [License policies: What collaborators see](snyk-open-source/license-policies/license-policies-what-collaborators-see.md)
   * [Dependency management](snyk-open-source/dependency-management/README.md)
     * [Upgrading dependencies with automatic PRs](snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs.md)
+* [Snyk Code basics](snyk-code-basics/README.md)
+  * [Using Snyk Code \(web\)](snyk-code-basics/using-snyk-code-web.md)
+  * [Snyk Code local git support](snyk-code-basics/snyk-code-local-git-support.md)
+  * [Snyk Code language and framework support](snyk-code-basics/snyk-code-language-and-framework-support.md)
 
