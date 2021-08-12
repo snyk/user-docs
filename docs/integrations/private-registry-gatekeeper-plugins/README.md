@@ -1,0 +1,2 @@
+# Private registry gatekeeper plugins
+
