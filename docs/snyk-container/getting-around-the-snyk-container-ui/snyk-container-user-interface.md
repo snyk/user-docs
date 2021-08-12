@@ -1,6 +1,4 @@
-# Snyk Container User Interface
-
-### Detecting application vulnerabilities in container images
+# Detecting application vulnerabilities in container images
 
 The feature is currently supported for Node, Ruby, PHP, Python, Go binaries and Java.
 
