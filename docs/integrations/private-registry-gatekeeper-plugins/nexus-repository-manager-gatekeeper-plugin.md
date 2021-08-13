@@ -3,7 +3,7 @@
 **Nexus Gatekeeper plugin: overview**
 
 **Feature availability**  
-This feature is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 
 Install Snyk plugin directly on the Nexus instance to track open source vulnerabilities and license details in your artifacts based on your configurations.
 
