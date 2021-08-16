@@ -89,7 +89,7 @@ A demonstration of how a vulnerability can be taken advantage of. When an exploi
 
 ### Exploit Maturity
 
-A measure of how practical an exploit for a vulnerability is, based on whether the exploit is in the wild, and how "helpful" the exploit is to attackers. See [Evaluating and prioritizing vulnerabilities](https://support.snyk.io/hc/en-us/articles/360006113978-Evaluating-and-prioritizing-vulnerabilities)
+A measure of how practical an exploit for a vulnerability is, based on whether the exploit is in the wild, and how "helpful" the exploit is to attackers. See [Evaluating and prioritizing vulnerabilities](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/evaluating-and-prioritizing-vulnerabilities)
 
 ### Git
 
@@ -169,7 +169,7 @@ Snyk scores issues \(vulnerabilities and licenses\), to help prioritze treatment
 
 ### Project
 
-An external item that Snyk scans, with configuration to define how to run that scan. Projects appear on the **Projects** menu on the Snyk dashboard. See [Introduction to projects](https://support.snyk.io/hc/en-us/articles/360019058297-Introduction-to-projects).
+An external item that Snyk scans, with configuration to define how to run that scan. Projects appear on the **Projects** menu on the Snyk dashboard. See [Introduction to projects](https://docs.snyk.io/getting-started/introduction-to-snyk-projects).
 
 ### SARIF
 
@@ -229,23 +229,23 @@ A client/server system that serves as an agent / proxy, allowing Snyk to scan pr
 
 ### Snyk CLI
 
-A Snyk platform tool. Snyk CLI enables developers to find and fix known vulnerabilities in dependencies, using a command line interface. See [Snyk CLI documentation](https://support.snyk.io/hc/en-us/categories/360000456217-Snyk-CLI).
+A Snyk platform tool. Snyk CLI enables developers to find and fix known vulnerabilities in dependencies, using a command line interface. See [Snyk CLI documentation](https://docs.snyk.io/snyk-cli).
 
 ### Snyk Code
 
-A Snyk product. A SAST product enabling developers to find and fix vulnerabilities in your proprietary application code. See [Snyk Code documentation](https://support.snyk.io/hc/en-us/categories/360003257537-Snyk-Code).
+A Snyk product. A SAST product enabling developers to find and fix vulnerabilities in your proprietary application code. See [Snyk Code documentation](https://docs.snyk.io/snyk-code).
 
 ### Snyk Container
 
-A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Snyk Container documentation](https://support.snyk.io/hc/en-us/categories/360000583498-Snyk-Container).
+A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Snyk Container documentation](https://docs.snyk.io/snyk-container).
 
 ### Snyk Infrastructure as Code
 
-A Snyk product. Enables developers to find and fix vulnerabilities in your Kubernetes, Helm and Terraform configuration files. See [Snyk IaC documentation](https://support.snyk.io/hc/en-us/categories/360001342678-Infrastructure-as-code).
+A Snyk product. Enables developers to find and fix vulnerabilities in your Kubernetes, Helm and Terraform configuration files. See [Snyk IaC documentation](https://docs.snyk.io/snyk-infrastructure-as-code).
 
 ### Snyk Open Source
 
-A Snyk product. Enables developers to find and fix open source vulnerabilities. See [Snyk Open Source documentation](https://support.snyk.io/hc/en-us/categories/360003049458-Snyk-Open-Source).
+A Snyk product. Enables developers to find and fix open source vulnerabilities. See [Snyk Open Source documentation](https://docs.snyk.io/snyk-open-source).
 
 ### Snyk plugin
 

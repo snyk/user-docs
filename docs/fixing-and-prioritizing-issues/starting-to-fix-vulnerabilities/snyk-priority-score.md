@@ -19,7 +19,7 @@ Currently, these factors include:
 * [**Reachability**](https://snyk.io/blog/optimizing-prioritization-with-deep-application-level-context/): by looking at the code paths called within a project, Snyk identifies which vulnerabilities are reachable from the code.
 * [**Fixability**](https://support.snyk.io/hc/en-us/articles/4405034808209) \(availability of a fix\): without a safer version to upgrade to, or a Snyk patch available, developers must either fix the code themselves or use an alternative package. So vulnerabilities with fixes are given higher priorities.
 * **Time**: new vulnerabilities are likely to be an increased risk, so increasing priority score.
-* [**Social Trends**](https://support.snyk.io/hc/en-us/articles/4404328187921-Prioritize-by-Social-Trends): Snyk monitors mentions of known vulnerabilities in Twitter, calculating the trend of tweets and reactions.
+* [**Social Trends**](https://docs.snyk.io/fixing-and-prioritizing-issues/prioritizing-issues/prioritize-by-social-trends): Snyk monitors mentions of known vulnerabilities in Twitter, calculating the trend of tweets and reactions.
 * Malicious Packages: Snyk will prioritize vulnerabilities originating from malicious packages.
 
 #### Priority calculation for Kubernetes
@@ -37,7 +37,7 @@ A number of specific factors contribute to priority calculation for Snyk Code, i
 * **Hot files**: if the vuln is in the source file, or inside a code flow
 * **Fixability**: If we have fix examples available for this issue
 
-See [Snyk Code](https://support.snyk.io/hc/en-us/categories/360003257537-Snyk-Code) documentation for more details.
+See [Snyk Code](https://docs.snyk.io/snyk-code) documentation for more details.
 
 Scores can be seen on each issue in the projects view, with all issues now sorted by the Priority Score, to show you the most pressing issues first.
 

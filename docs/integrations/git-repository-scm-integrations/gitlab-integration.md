@@ -7,7 +7,7 @@ Snyk's Gitlab integration supports Gitlab versions 9.5 and above \(API v4\).
 **Feature availability**  
 On-premise Gitlab integrations are available for customers on Enterprise plans and above. See [pricing plans](https://snyk.io/plans/) for more details.
 
-This integration only works with GitLab instances that are publicly reachable \(not on a private network\). A [Snyk Broker](https://support.snyk.io/hc/en-us/articles/360015296637-Set-up-Snyk-Broker) environment is required for private network instances.
+This integration only works with GitLab instances that are publicly reachable \(not on a private network\). A [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker) environment is required for private network instances.
 
 **Steps:**
 

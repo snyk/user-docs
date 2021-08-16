@@ -3,17 +3,17 @@
 Get started with Snyk Open Source to inspect, find and fix vulnerabilities in your code.
 
 This process describes using the Snyk.io UI and a source code management system.  
-You can also use an [IDE tool](https://support.snyk.io/hc/en-us/sections/360001138118-IDE-tools) or a [CI/CD integration](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations). See [Integrations](https://support.snyk.io/hc/en-us/categories/360000598398-Integrations) for more details.
+You can also use an [IDE tool](https://support.snyk.io/hc/en-us/sections/360001138118-IDE-tools) or a [CI/CD integration](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations). See [Integrations](https://docs.snyk.io/integrations) for more details.
 
 **Using the CLI tool**
 
-The [Snyk CLI tool](https://support.snyk.io/hc/en-us/articles/360003812458-Getting-started-with-the-CLI) allows you to get started using the command line - for example, to install on npm:
+The [Snyk CLI tool](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli) allows you to get started using the command line - for example, to install on npm:
 
 ```text
 npm install -g snyk
 ```
 
-See [Getting started with the CLI](https://support.snyk.io/hc/en-us/articles/360003812458-Getting-started-with-the-CLI) for details.
+See [Getting started with the CLI](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli) for details.
 
 #### Stage 1: Add source control integration
 
@@ -51,7 +51,7 @@ You can now view vulnerability results for imported projects. The **Projects** t
 
 2. Click on an entry to open the issues view for that entry, including the module, where it was introduced, and the remediation to fix it, plus more details about the vulnerability itself: ![Detailed\_vuln\_information.png](https://support.snyk.io/hc/article_attachments/360012555638/Detailed_vuln_information.png)
 
-See  [View project information](https://support.snyk.io/hc/en-us/articles/360011450838-View-project-information) for more details.
+See  [View project information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information) for more details.
 
 #### Stage 4: Fix vulnerabilities
 
@@ -69,9 +69,9 @@ For JavaScript, Ruby and Java projects, Snyk can remediate your vulnerabilities 
 5. Snyk now actions this PR, then a results screen appears: ![Screenshot\_2021-04-09\_at\_17.44.26.png](https://support.snyk.io/hc/article_attachments/360018815277/Screenshot_2021-04-09_at_17.44.26.png)
 6. Optionally, select the **Files changed** tab to see details of the changes made. ![Screenshot\_2021-04-09\_at\_17.46.22.png](https://support.snyk.io/hc/article_attachments/360018815297/Screenshot_2021-04-09_at_17.46.22.png)
 
-See [Fixing vulnerabilities](https://support.snyk.io/hc/en-us/articles/360011484018-Fixing-vulnerabilities) for more details.
+See [Fixing vulnerabilities](https://docs.snyk.io/snyk-open-source/open-source-basics/fixing-vulnerabilities) for more details.
 
 ### For more information
 
-See [Snyk Open Source](https://support.snyk.io/hc/en-us/categories/360003049458-Snyk-Open-Source).
+See [Snyk Open Source](https://docs.snyk.io/snyk-open-source).
 

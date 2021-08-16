@@ -13,7 +13,7 @@ To view IaC issues only, select **Configuration** from the **Summary filters** d
 
 ![Screenshot\_2021-02-17\_at\_14.22.50.png](https://support.snyk.io/hc/article_attachments/360017012177/Screenshot_2021-02-17_at_14.22.50.png)
 
-For more details on the summary tab, see [Summary tab](https://support.snyk.io/hc/en-us/articles/360004002578-Summary-tab) documentation.
+For more details on the summary tab, see [Summary tab](https://docs.snyk.io/reports-1/reports/summary-tab) documentation.
 
 Select the **Issues** page to see detailed information on open issues across all of your projects.
 
@@ -27,7 +27,7 @@ You can also view the issues ungrouped; this shows more information about the pr
 
 ![image2.png](https://support.snyk.io/hc/article_attachments/360016644818/image2.png)
 
-For more details on the issues tab, see [Issues tab](https://support.snyk.io/hc/en-us/articles/360004002598-Issues-tab) documentation.
+For more details on the issues tab, see [Issues tab](https://docs.snyk.io/reports-1/reports/issues-tab) documentation.
 
 Issues can be exported as a CSV file in the same format as your vulnerabilities, using the **Export** button.
 

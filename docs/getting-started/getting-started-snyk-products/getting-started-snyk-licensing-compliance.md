@@ -13,7 +13,7 @@ Each policy contains rules, detailing which licenses are acceptable and which ar
 
 ![license-policy.png](https://support.snyk.io/hc/article_attachments/360012847498/license-policy.png)
 
-See [Licenses overview](https://support.snyk.io/hc/en-us/articles/360003557837-Licenses-overview) and [Setting a license policy](https://support.snyk.io/hc/en-us/articles/360007590258-Setting-a-license-policy).
+See [Licenses overview](https://docs.snyk.io/snyk-open-source/licenses) and [Setting a license policy](https://docs.snyk.io/snyk-open-source/license-policies/setting-a-license-policy).
 
 Snyk’s [Git-based integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab:
 

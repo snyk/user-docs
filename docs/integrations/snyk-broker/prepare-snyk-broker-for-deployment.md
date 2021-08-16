@@ -5,7 +5,7 @@
 * Network access: an outbound TLS \(443\) to [https://broker.snyk.io](https://broker.snyk.io/) that is also allowed by any firewalls installed on your network.
 * A Snyk account 
 * Self-enabled Broker integration using the Snyk API, or enabled by contacting Snyk support at **support@snyk.io**. 
-* A unique UUID token. See [Retrieve a unique Broker client token](https://support.snyk.io/hc/en-us/articles/360015367278-Retrieve-a-unique-Broker-client-token).
+* A unique UUID token. See [Retrieve a unique Broker client token](https://docs.snyk.io/integrations/snyk-broker/retrieve-a-unique-broker-client-token).
 * Docker configured to pull images from Docker Hub.
 
 ### Prepare hosts for installation

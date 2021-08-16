@@ -13,7 +13,7 @@ In addition, the Team plan provides [license compliance features](), [IaC scanni
 #### More details
 
 * See [Getting started with Snyk products](https://support.snyk.io/hc/en-us/sections/360004349758-Getting-started-with-Snyk-products) for individual quickstart guides for Snyk products.
-* See [Snyk Customer Onboarding - Team Plan](https://support.snyk.io/hc/en-us/articles/360018935478-Snyk-Customer-Onboarding-Team-Plan) for more detailed instructions on onboarding your team with the Team plan.
+* See [Snyk Customer Onboarding - Team Plan](https://docs.snyk.io/getting-started/snyk-billing-plan-onboarding/snyk-customer-onboarding-team-plan) for more detailed instructions on onboarding your team with the Team plan.
 
 Testing at every stage of the development lifecycle requires a lot of automated testing. This is where the unlimited testing capability of the Team plan becomes so valuable.  
 Using Snyk at multiple stages allows you to:
@@ -27,7 +27,7 @@ Each of these stages allows Snyk to do something different to help keep you secu
 All of the following stages have integrations that can be found on the [Snyk integrations page](https://app.snyk.io/integrations):  
 ![integrations-page.png](https://support.snyk.io/hc/article_attachments/4402318533265/integrations-page.png)
 
-See [Integrations](https://support.snyk.io/hc/en-us/categories/360000598398-Integrations) for more details.
+See [Integrations](https://docs.snyk.io/integrations) for more details.
 
 The earliest chance you have to catch vulnerabilities is in the IDE, when the code is being written. Use Snyk at the IDE stage to ensure developers select versions of dependencies or container base images that include the least vulnerabilities possible:
 
@@ -60,7 +60,7 @@ Snyk supports various different container registries, allowing you to scan all y
 
 ![container.png](https://support.snyk.io/hc/article_attachments/360017918757/container.png)
 
-See [Snyk Container](https://support.snyk.io/hc/en-us/categories/360000583498-Snyk-Container) for more details.
+See [Snyk Container](https://docs.snyk.io/snyk-container) for more details.
 
 Our support for Kubernetes allows you to find any vulnerabilities in running workloads. It also allows Snyk to access a lot of information that can help prioritize what to fix first. This can help reduce the noise, leaving you with a clearer picture of what really needs your attention.
 
@@ -72,13 +72,13 @@ See [Kubernetes workload and image scanning](https://support.snyk.io/hc/en-us/se
 
 Snyk Infrastructure as Code \(IaC\) helps developers write secure configurations, well before code reaches production. Snyk’s developer-first approach meets developers where they work, and provides fixes that can be directly merged into code.
 
-See [Infrastructure as Code](https://support.snyk.io/hc/en-us/categories/360001342678-Infrastructure-as-code) for details.
+See [Infrastructure as Code](https://docs.snyk.io/snyk-infrastructure-as-code) for details.
 
 An added bonus of the Team plan is license compliance management, allowing Snyk to identify potentially misused licenses. License compliance does not stop you getting hacked, but it can help protect you from legal issues \(which can be just as costly\).
 
 ![license-compliance.png](https://support.snyk.io/hc/article_attachments/360017983058/license-compliance.png)
 
-See [Getting Started with Snyk License Compliance Management](https://support.snyk.io/hc/en-us/articles/360015235618-Getting-Started-with-Snyk-License-Compliance-Management) for details.
+See [Getting Started with Snyk License Compliance Management](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-snyk-licensing-compliance) for details.
 
 The Team plan also includes the Snyk Jira integration, allowing you to manually raise Jira issues in the Snyk UI for vulnerabilities or license issues.
 
@@ -86,5 +86,5 @@ The Team plan also includes the Snyk Jira integration, allowing you to manually 
 
 Snyk’s Jira integration is yet another way in which Snyk is able to fit into your existing processes, ensuring that work to become more secure is properly managed and accounted for.
 
-See [setting up Snyk with Jira](https://support.snyk.io/hc/en-us/articles/360004002458-Jira) for more details and instructions.
+See [setting up Snyk with Jira](https://docs.snyk.io/integrations/untitled-3/jira) for more details and instructions.
 

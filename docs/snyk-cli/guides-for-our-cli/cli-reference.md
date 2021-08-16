@@ -21,7 +21,7 @@ For more information see https://snyk.io
 
 ### COMMANDS <a id="COMMANDS"></a>
 
-To see command-specific flags and usage, see `help` command, e.g. `snyk container --help` \(available in [Advanced Snyk Container CLI usage](https://support.snyk.io/hc/en-us/articles/360014440037-Advanced-Snyk-Container-CLI-usage)\).
+To see command-specific flags and usage, see `help` command, e.g. `snyk container --help` \(available in [Advanced Snyk Container CLI usage](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)\).
 
 Available top-level CLI commands:`auth` \[API\_TOKEN\]Authenticate Snyk CLI with a Snyk account`test`Test local project for vulnerabilities`monitor`Snapshot and continuously monitor your project`container`Test container images for vulnerabilities. See `snyk container --help` for full instructions.`iac`Find security issues in your Infrastructure as Code files. See `snyk iac --help` for full instructions.`config`Manage Snyk CLI configuration`protect`Applies the patches specified in your .snyk file to the local file system`policy`Display the .snyk policy for a package.`ignore`Modifies the .snyk policy to ignore stated issues`wizard`Configure your policy file to update, auto patch, and ignore vulnerabilities. Snyk wizard updates your .snyk file.
 

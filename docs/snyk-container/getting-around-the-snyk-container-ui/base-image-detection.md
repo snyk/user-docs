@@ -2,7 +2,7 @@
 
 Detecting vulnerable base images allows you to identify the source of your vulnerabilities and remediate by updating the base image according to recommendation.
 
-After you configure a [container integration](https://support.snyk.io/hc/en-us/categories/360000583498-Snyk-Container) \(such as the CLI\) or a container registry integration, you can detect your base image.
+After you configure a [container integration](https://docs.snyk.io/snyk-container) \(such as the CLI\) or a container registry integration, you can detect your base image.
 
 To identify vulnerable base images, you can use on of these methods:
 
@@ -19,7 +19,7 @@ This allows you to see vulnerability counts in minor and major upgrades, as well
 
 ![](../../.gitbook/assets/base-image2.png)
 
-See [Analysis and remediation for your images from the Snyk app](https://support.snyk.io/hc/en-us/articles/360003915938-Analysis-and-remediation-for-your-images-from-the-Snyk-app) for more details. 
+See [Analysis and remediation for your images from the Snyk app](https://docs.snyk.io/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app) for more details. 
 
 You can find the base image vulnerabilities in your project, among the vulnerabilities added by your instructions, sorted by their priority score. You can also filter only the base image vulnerabilities, with the **Base image** option under the **Image Layer** handy filter. See [image layer information](https://support.snyk.io/hc/en-us/articles/360017757277-Image-layer-information) for more details.
 

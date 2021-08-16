@@ -44,7 +44,7 @@ To perform Reachable Vulnerabilities analysis, you can:
 
 #### Scanning for Reachable Vulnerabilities using Git Integrations
 
-1. Set up your [GitHub integration](https://support.snyk.io/hc/en-us/articles/360004032117-GitHub-integration).
+1. Set up your [GitHub integration](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration).
 2. Opt-in to Reachable Vulnerabilities analysis in GitHub’s integration settings:
    * In **Organization** settings, go to the **Integrations** section.
    * Click on **gitHub**.

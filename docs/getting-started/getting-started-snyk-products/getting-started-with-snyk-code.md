@@ -5,8 +5,8 @@ Get started with [Snyk Code](https://snyk.io/product/snyk-code/) to find, priori
 This documentation describes using Snyk Code with the Web UI. You can also use Snyk Code as a plugin to your JetBrains IDE; see [JetBrains IDE Plugins](https://support.snyk.io/hc/en-us/articles/360004032317-JetBrains-IDE-Plugins) for more details.
 
 * A Snyk account.
-* [Snyk Open Source](https://support.snyk.io/hc/en-us/categories/360003049458-Snyk-Open-Source) or [Snyk Container](https://support.snyk.io/hc/en-us/categories/360000583498-Snyk-Container) installed \(as currently Snyk Code is distributed as an add-on\).
-* Projects that include code in [a supported language](https://support.snyk.io/hc/en-us/articles/360016973477-Snyk-Code-language-and-framework-support) \(currently Java, JavaScript, and Python\).
+* [Snyk Open Source](https://docs.snyk.io/snyk-open-source) or [Snyk Container](https://docs.snyk.io/snyk-container) installed \(as currently Snyk Code is distributed as an add-on\).
+* Projects that include code in [a supported language](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support) \(currently Java, JavaScript, and Python\).
 * One of the following supported source code management systems \(SCMs\): GitHub cloud, BitBucket cloud, Gitlab cloud.
 
 #### Stage 1: Enable Snyk Code
@@ -59,7 +59,7 @@ You can now view vulnerability results for imported projects. The **Projects** t
 
 2. Click on an entry to open the issues view for that entry. For each issue, this shows the exploitable code snippet and a description of the code flaw that may lead to this vulnerability if not fixed: ![View-Vulns2.png](https://support.snyk.io/hc/article_attachments/360015653998/View-Vulns2.png)
 
-See [View project information](https://support.snyk.io/hc/en-us/articles/360011450838-View-project-information) for more details.
+See [View project information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information) for more details.
 
 #### Stage 5: View issue details
 
@@ -70,7 +70,7 @@ Click **Full Details** on an issue to view more details about it, such as:
 
 ### For more information
 
-* [Snyk Code](https://support.snyk.io/hc/en-us/categories/360003257537-Snyk-Code)
+* [Snyk Code](https://docs.snyk.io/snyk-code)
 * [Developer-first SAST with Snyk Code](https://snyk.io/blog/developer-first-sast-with-snyk-code/)
 * [SAST vs DAST](https://snyk.io/learn/sast-vs-dast/)
 

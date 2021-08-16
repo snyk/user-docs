@@ -5,7 +5,7 @@ Get started with Snyk Container to help you find and fix vulnerabilities in cont
 Ensure you have:
 
 1. Access to a relevant container registry to use with Snyk. Snyk supports registries including , Amazon Elastic Container Registry \([ECR](https://support.snyk.io/hc/en-us/sections/360001114218-ECR-image-scanning)\), Google Container Registry \([GCR](https://support.snyk.io/hc/en-us/sections/360001127497-GCR-image-scanning)\), Microsoft Azure Container Registry \([ACR](https://support.snyk.io/hc/en-us/sections/360001127457-ACR-image-scanning)\), and [JFrog Artifactory](https://support.snyk.io/hc/en-us/sections/360001127477-JFrog-Artifactory-image-scanning). Alternatively, access to [Kubernetes](https://support.snyk.io/hc/en-us/sections/360001114238-Kubernetes-workload-and-image-scanning) if you select that as an integration.
-2. A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](https://support.snyk.io/hc/en-us/articles/360017098237-Create-a-Snyk-account) for details\).
+2. A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](https://docs.snyk.io/getting-started/getting-started-snyk-products) for details\).
 
 See [Prerequisites](https://solutions.snyk.io/snyk-academy/container/prerequisites) for more details.
 
@@ -42,7 +42,7 @@ You can now see vulnerability results for imported projects.
 
    ![image5.png](https://support.snyk.io/hc/article_attachments/360012884458/image5.png)
 
-See [Analysis and remediation for your images from the Snyk app](https://support.snyk.io/hc/en-us/articles/360003915938-Analysis-and-remediation-for-your-images-from-the-Snyk-app) for more details.
+See [Analysis and remediation for your images from the Snyk app](https://docs.snyk.io/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app) for more details.
 
 1. Fix issues found, based on Snyk recommendations.
 2. Rebuild your image.
@@ -50,5 +50,5 @@ See [Analysis and remediation for your images from the Snyk app](https://support
 
 ### For more information
 
-See [Snyk Container](https://support.snyk.io/hc/en-us/categories/360000583498-Snyk-Container).
+See [Snyk Container](https://docs.snyk.io/snyk-container).
 

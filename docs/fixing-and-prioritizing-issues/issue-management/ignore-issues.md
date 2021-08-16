@@ -65,7 +65,7 @@ For example, if you wanted to ignore the vulnerability with SNYK ID [SNYK-RUBY-F
 
 ![null](https://uploads.intercomcdn.com/i/o/23911290/a6da5a57db28311a01a1d43e/Screen+Shot+2017-05-10+at+11.17.26+AM.png)
 
-See [The .snyk file](https://support.snyk.io/hc/en-us/articles/360007487097-The-snyk-file) for more details.
+See [The .snyk file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file) for more details.
 
 ### Set who can configure ignore settings
 
@@ -75,11 +75,11 @@ You can also choose to set the more details field to be a compulsory field when 
 
 If you have access to our Reports feature, you will also be able to see an overview of how many issues in your organization’s projects are ignored, along with an option to filter these so you can drill down into each one. If the issue was ignored in our UI, we include a credit for additional accountability, so you can see who initiated it.
 
-See [Reports](https://support.snyk.io/hc/en-us/categories/360000598418-Reports) for more details.
+See [Reports](https://docs.snyk.io/reports-1) for more details.
 
 ### Ignoring issues in Snyk Code
 
-For [Snyk Code](https://support.snyk.io/hc/en-us/categories/360003257537-Snyk-Code), ignore functionality may capture a wider range of issues than other products.
+For [Snyk Code](https://docs.snyk.io/snyk-code), ignore functionality may capture a wider range of issues than other products.
 
 Snyk Code's static code analysis transforms the input code into an **intermediate representation**, which captures the flow of code, but abstracts away some details. Snyk Code uses this representation to recognize the same issue even when you refactor your code or rename a variable.
 

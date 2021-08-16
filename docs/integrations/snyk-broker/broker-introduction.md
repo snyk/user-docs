@@ -6,7 +6,7 @@ Snyk Broker is an open-source tool, that can act as a proxy between Snyk and int
 * Your publically-accessible Git-based repositories, allowing you to view and control Snyk activity in those repositories for increased data security.
 * Your on-premise Jira installation.
 * Artifactory for open source registry or container registry integrations.
-* [Kubernetes configuration files](https://support.snyk.io/hc/en-us/articles/360010797537-Detecting-Kubernetes-configuration-files-using-a-broker) using Snyk Infrastructure as Code \(IaC\).
+* [Kubernetes configuration files](https://docs.snyk.io/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/detecting-kubernetes-configuration-files-using-a-broker) using Snyk Infrastructure as Code \(IaC\).
 
 Snyk Broker is an open-source project, hosted at [GitHub](https://github.com/snyk/broker), and published as a set of Docker images for specific integrations. See the [Github broker documentation](https://github.com/snyk/broker/blob/master/README.md).
 

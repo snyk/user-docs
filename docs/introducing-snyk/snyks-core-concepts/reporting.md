@@ -7,9 +7,9 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
 
 Snyk reporting acts as a Bill of Materials \(BOM\) to quickly and easily identify which projects have a specific version of a dependency. Dependency reports identify each individual open source dependency by name, along with version, vulnerabilities, and related projects.
 
-See [Dependencies tab](https://support.snyk.io/hc/en-us/articles/360004002618-Dependencies-tab).
+See [Dependencies tab](https://docs.snyk.io/reports-1/reports/dependencies-tab).
 
 The Licenses area displays all licenses that are currently used in your project, and allows you to understand which project and dependency use a license. 
 
-See [Licenses tab](https://support.snyk.io/hc/en-us/articles/360004002638-Licenses-tab).
+See [Licenses tab](https://docs.snyk.io/reports-1/reports/licenses-tab).
 

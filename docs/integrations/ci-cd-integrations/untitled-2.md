@@ -1,14 +1,14 @@
 # Install the Snyk plugin on your Jenkins account
 
-* [ Configure your Continuous Integration](https://support.snyk.io/hc/en-us/articles/360004002258-Configure-your-Continuous-Integration)
-* [ Continuous Integration: language support](https://support.snyk.io/hc/en-us/articles/360004032157-Continuous-Integration-language-support)
-* [ AWS CodePipeline integration](https://support.snyk.io/hc/en-us/articles/4402158184081-AWS-CodePipeline-integration)
-* [ Azure Pipelines integration](https://support.snyk.io/hc/en-us/articles/360004127677-Azure-Pipelines-integration)
-* [ Bitbucket Pipelines integration overview](https://support.snyk.io/hc/en-us/articles/360004032177-Bitbucket-Pipelines-integration-overview)
-* [ CircleCI integration overview](https://support.snyk.io/hc/en-us/articles/360004002278-CircleCI-integration-overview)
-* [ Configure your CircleCI integration](https://support.snyk.io/hc/en-us/articles/360004002298-Configure-your-CircleCI-integration)
-* [ Getting Snyk Orb details from the CircleCI registry](https://support.snyk.io/hc/en-us/articles/360004032197-Getting-Snyk-Orb-details-from-the-CircleCI-registry)
-* [ GitHub Actions integration](https://support.snyk.io/hc/en-us/articles/360019718618-GitHub-Actions-integration)
+* [ Configure your Continuous Integration](https://docs.snyk.io/integrations/ci-cd-integrations/configure-your-continuous-integration)
+* [ Continuous Integration: language support](https://docs.snyk.io/integrations/ci-cd-integrations/continuous-integration-language-support)
+* [ AWS CodePipeline integration](https://docs.snyk.io/integrations/ci-cd-integrations/aws-codepipeline-integration)
+* [ Azure Pipelines integration](https://docs.snyk.io/integrations/ci-cd-integrations/azure-pipelines-integration)
+* [ Bitbucket Pipelines integration overview](https://docs.snyk.io/integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview)
+* [ CircleCI integration overview](https://docs.snyk.io/integrations/ci-cd-integrations/circleci-integration-overview)
+* [ Configure your CircleCI integration](https://docs.snyk.io/integrations/ci-cd-integrations/configure-your-circleci-integration)
+* [ Getting Snyk Orb details from the CircleCI registry](https://docs.snyk.io/integrations/ci-cd-integrations/getting-snyk-orb-details-from-the-circleci-registry)
+* [ GitHub Actions integration](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration)
 * [ Bitbucket Pipelines integration](https://support.snyk.io/hc/en-us/articles/360000921778-Bitbucket-Pipelines-integration)
 
  [See more](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations)

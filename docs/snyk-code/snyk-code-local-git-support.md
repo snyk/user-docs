@@ -16,7 +16,7 @@ The Broker client provides the Agent with the connection details. The Agent uses
 
 ![local-git.png](https://support.snyk.io/hc/article_attachments/4404137555985/local-git.png)
 
-See [Snyk Broker](https://support.snyk.io/hc/en-us/articles/360015367178-Broker-introduction) documentation for more details.
+See [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker/broker-introduction) documentation for more details.
 
 ### Prerequisites
 

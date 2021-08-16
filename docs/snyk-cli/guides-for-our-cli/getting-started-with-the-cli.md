@@ -6,8 +6,8 @@ See [Language Support](https://support.snyk.io/hc/en-us/articles/360000911957-La
 
 ### Install and authenticate the Snyk CLI
 
-1. Install the Snyk CLI using npm, Homebrew, Scoop or a manual installer from Snyk’s GitHub. See [Install the Snyk CLI](https://support.snyk.io/hc/en-us/articles/360003812538-Install-the-Snyk-CLI). 
-2. To associate your Snyk account with the CLI, authenticate your account, either through your browser or using your API token. See [Authenticate the CLI with your account](https://support.snyk.io/hc/en-us/articles/360004008258-Authenticate-the-CLI-with-your-account).
+1. Install the Snyk CLI using npm, Homebrew, Scoop or a manual installer from Snyk’s GitHub. See [Install the Snyk CLI](https://docs.snyk.io/snyk-cli/install-the-snyk-cli). 
+2. To associate your Snyk account with the CLI, authenticate your account, either through your browser or using your API token. See [Authenticate the CLI with your account](https://docs.snyk.io/snyk-cli/install-the-snyk-cli/authenticate-the-cli-with-your-account).
 
 ### Build your project
 

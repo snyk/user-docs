@@ -4,7 +4,7 @@ Set up single sign-on to allow your developers and teams easy access to Snyk thr
 
 The information you need to establish trust between Snyk and the identity provider depends on which type of SSO you are using.
 
-Ensure you have at least one group and organization to indicate where new users will be assigned. See [Groups, Organizations and Users](https://support.snyk.io/hc/en-us/articles/360011418638-Groups-Organizations-and-Users). 
+Ensure you have at least one group and organization to indicate where new users will be assigned. See [Groups, Organizations and Users](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/groups-organizations-and-users). 
 
 Once you have gathered the requested information \(detailed below\), create a support ticket to request SSO set up.
 

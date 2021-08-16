@@ -23,12 +23,12 @@ Each vulnerability card shows specific details about that vulnerability:
 
 Card details include:
 
-* The level \(for example, **H** for high\), the name \(for example, **Cross-site Scripting**\), and the [Priority Score](https://support.snyk.io/hc/en-us/articles/360009884837-Snyk-Priority-Score) value.
+* The level \(for example, **H** for high\), the name \(for example, **Cross-site Scripting**\), and the [Priority Score](https://docs.snyk.io/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score) value.
 * The [CWE type:](https://cwe.mitre.org/data/index.html) click the link to view more information about that type of vulnerability.
 * A snippet of your code showing the exact area that is vulnerable.
 * A clear and helpful text description of the vulnerability.
 
-See [Issue card information](https://support.snyk.io/hc/en-us/articles/360018049037-Issue-card-information) for more details.
+See [Issue card information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/issue-card-information) for more details.
 
 * Click **Ignore** to ignore this vulnerability \(see [Ignore a vulnerability]()\)
 * Click **Full details** to view more information \(see [View full details]()\).

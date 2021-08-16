@@ -33,7 +33,7 @@ We detect vulnerabilities in images based on:
 * SUSE Linux Enterprise Server
 * Alpine
 
-Check out the [Operating Systems Support](https://support.snyk.io/hc/en-us/articles/360017545417-Supported-operating-system-distributions) page for specific version support and our [updates](https://updates.snyk.io/) page for all the latest updates.
+Check out the [Operating Systems Support](https://docs.snyk.io/snyk-container/snyk-container-security-basics/supported-operating-system-distributions) page for specific version support and our [updates](https://updates.snyk.io/) page for all the latest updates.
 
 #### Note
 

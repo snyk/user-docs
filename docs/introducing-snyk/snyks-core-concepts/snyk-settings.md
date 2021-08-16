@@ -6,19 +6,19 @@
 
  **Docs**
 
- [Members](https://support.snyk.io/hc/en-us/articles/360004399238-Invite-and-collaborate-with-team-members)
+ [Members](https://docs.snyk.io/user-and-group-management/managing-groups-and-organizations/invite-and-collaborate-with-team-members)
 
- [Integrations](https://support.snyk.io/hc/en-us/categories/360000598398-Integrations)
+ [Integrations](https://docs.snyk.io/integrations)
 
  [Languages](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support)
 
- [Snyk Code](https://support.snyk.io/hc/en-us/categories/360003257537-Snyk-Code)
+ [Snyk Code](https://docs.snyk.io/snyk-code)
 
- [Infrastructure as Code](https://support.snyk.io/hc/en-us/categories/360001342678-Infrastructure-as-code)
+ [Infrastructure as Code](https://docs.snyk.io/snyk-infrastructure-as-code)
 
- [Usage](https://support.snyk.io/hc/en-us/articles/4403675138577-Usage-page-details)
+ [Usage](https://docs.snyk.io/user-and-group-management/managing-settings/usage-page-details)
 
- [Notifications](https://support.snyk.io/hc/en-us/articles/360004037657-Notification-management)
+ [Notifications](https://docs.snyk.io/user-and-group-management/notifications/notification-management)
 
- [Snyk Preview](https://support.snyk.io/hc/en-us/articles/360020514418-Snyk-Preview)
+ [Snyk Preview](https://docs.snyk.io/getting-started/snyk-billing-plan-onboarding/snyk-preview)
 

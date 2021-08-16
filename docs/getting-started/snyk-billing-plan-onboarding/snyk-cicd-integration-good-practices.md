@@ -55,19 +55,19 @@ If you do not define a target organization, Snyk uses the default organization f
 
 #### Snyk Authentication Token
 
-To run the snyk test, you need an authentication token with access to the desired target organization . While you can use any valid authentication token, we recommend using a service account. For more details, see [Service accounts](https://support.snyk.io/hc/en-us/articles/360004037597-Service-accounts).
+To run the snyk test, you need an authentication token with access to the desired target organization . While you can use any valid authentication token, we recommend using a service account. For more details, see [Service accounts](https://docs.snyk.io/integrations/managing-integrations/service-accounts).
 
 ### Setting Up
 
 Snyk supports the following approaches to add tests to a build pipeline:
 
-* **Snyk integration plugins**: Snyk provides pre-built plugins for several CI servers, including [Jenkins](https://support.snyk.io/hc/en-us/articles/360004032217-Jenkins-integration-overview), [Team City](https://support.snyk.io/hc/en-us/articles/360004032297-TeamCity-integration-overview)[, Bitbucket Pipelines](https://support.snyk.io/hc/en-us/articles/360004032177-Bitbucket-Pipelines-integration-overview) and [Azure Pipelines. ](https://support.snyk.io/hc/en-us/articles/360004127677-Azure-Pipelines-integration) See the [Continuous Integration](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations) documentation for more details
+* **Snyk integration plugins**: Snyk provides pre-built plugins for several CI servers, including [Jenkins](https://docs.snyk.io/integrations/ci-cd-integrations/jenkins-integration-overview), [Team City](https://docs.snyk.io/integrations/ci-cd-integrations/teamcity-integration-overview)[, Bitbucket Pipelines](https://docs.snyk.io/integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview) and [Azure Pipelines. ](https://docs.snyk.io/integrations/ci-cd-integrations/azure-pipelines-integration) See the [Continuous Integration](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations) documentation for more details
 * **Snyk CLI:** For teams with more complex workflows, or using a build system without a Snyk pre-built plugin, you can use the Snyk CLI tool during CI/CD setups. See [Setting up using Snyk CLI]() for more details.
 * **Snyk API**: For teams with complex requirements, Snyk provides a REST API, which you can use for functions including initiating scans, onboarding new projects, and testing arbitrary libraries. See the [Snyk API documentation](https://snyk.docs.apiary.io/) for more details.
 
 #### Setting up using Snyk CLI
 
-Snyk CLI is a NodeJS application that can be scripted directly by developers for easy integration into most CI/CD environments, and is available as an NPM application, pre-packaged binary, or container image. See [Install the Snyk CLI](https://support.snyk.io/hc/en-us/articles/360003812538-Install-the-Snyk-CLI) for more details
+Snyk CLI is a NodeJS application that can be scripted directly by developers for easy integration into most CI/CD environments, and is available as an NPM application, pre-packaged binary, or container image. See [Install the Snyk CLI](https://docs.snyk.io/snyk-cli/install-the-snyk-cli) for more details
 
 Snyk CLI can be configured to:
 
@@ -78,7 +78,7 @@ Snyk CLI can be configured to:
 
 When using the Snyk CLI:
 
-* **snyk test** is a synchronous command, that ends with an exit code. Exit codes can then be used by your build system to either pass or fail the build based on the test results. See the [CLI reference guide](https://support.snyk.io/hc/en-us/articles/360003812578-CLI-reference) for details on exit statuses and their meanings.
+* **snyk test** is a synchronous command, that ends with an exit code. Exit codes can then be used by your build system to either pass or fail the build based on the test results. See the [CLI reference guide](https://docs.snyk.io/snyk-cli/guides-for-our-cli/cli-reference) for details on exit statuses and their meanings.
 * **snyk monitor** \(which posts test results to the Snyk web UI\) is an asynchronous command, that does not end with exit code based on the vulnerability status. 
 
 Depending on your approach and goals, you may need to use both command sets in your pipeline.
@@ -116,7 +116,7 @@ You can use Snyk's JSON output to create custom test reports as build artifacts,
 
 #### Creating work items for new vulnerabilities
 
-Snyk allows you to automatically create new work items in JIRA \(see [Jira integration](https://support.snyk.io/hc/en-us/articles/360004002458-Jira) documentation\). You can customize this code for your specific requirements, or adapt it to work with other work management systems. 
+Snyk allows you to automatically create new work items in JIRA \(see [Jira integration](https://docs.snyk.io/integrations/untitled-3/jira) documentation\). You can customize this code for your specific requirements, or adapt it to work with other work management systems. 
 
 See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns) to get started.  
 or review the [API to create Jira tickets.](https://snyk.docs.apiary.io/#reference/projects/project-jira-issues/create-jira-issue)
@@ -247,5 +247,5 @@ Snyk Infrastructure as Code supports:
 * Deployments, Pods and Services.
 * CronJobs, Jobs, StatefulSet, ReplicaSet, DaemonSet, and ReplicationController.
 
-See [Test your Kubernetes files with our CLI tool](https://support.snyk.io/hc/en-us/articles/360012429477-Test-your-Kubernetes-files-with-our-CLI-tool) for more details.
+See [Test your Kubernetes files with our CLI tool](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kubernetes-files-with-our-cli-tool) for more details.
 

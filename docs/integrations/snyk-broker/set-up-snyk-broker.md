@@ -6,8 +6,8 @@ You can customize the configuration using the environment variables in the Docke
 
 To install, configure and roll out your Broker client and repository integrations:
 
-1. [Prepare for deployment](https://support.snyk.io/hc/en-us/articles/360015296717-Prepare-Snyk-Broker-for-deployment)
-2. [Enable permissions for Snyk from your third-party tool](https://support.snyk.io/hc/en-us/articles/360015296737-Enable-permissions-for-Snyk-Broker-from-your-third-party-tool)
-3. [Retrieve a unique Broker client token](https://support.snyk.io/hc/en-us/articles/360015367278-Retrieve-a-unique-Broker-client-token)
-4. [Install and configure the client](https://support.snyk.io/hc/en-us/articles/360015296937-How-to-install-and-configure-your-Snyk-Broker-client)
+1. [Prepare for deployment](https://docs.snyk.io/integrations/snyk-broker/prepare-snyk-broker-for-deployment)
+2. [Enable permissions for Snyk from your third-party tool](https://docs.snyk.io/integrations/snyk-broker/enable-permissions-for-snyk-broker-from-your-third-party-tool)
+3. [Retrieve a unique Broker client token](https://docs.snyk.io/integrations/snyk-broker/retrieve-a-unique-broker-client-token)
+4. [Install and configure the client](https://docs.snyk.io/integrations/snyk-broker/how-to-install-and-configure-your-snyk-broker-client)
 

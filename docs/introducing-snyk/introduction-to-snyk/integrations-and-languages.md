@@ -2,10 +2,10 @@
 
 ### Snyk integrations
 
-[Snyk integrations](https://support.snyk.io/hc/en-us/categories/360000598398-Integrations) for your software development process include:
+[Snyk integrations](https://docs.snyk.io/integrations) for your software development process include:
 
 * **Source control:** cloud and self-hosted SCMs such as Github. See [Git repository SCM integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations).
-* **Container registries & Kubernetes:** container registries such as Docker Hub, and Kubernetes. See [Snyk Container](https://support.snyk.io/hc/en-us/categories/360000583498-Snyk-Container).
+* **Container registries & Kubernetes:** container registries such as Docker Hub, and Kubernetes. See [Snyk Container](https://docs.snyk.io/snyk-container).
 * **Continuous integration**: such as Jenkins or TeamCity. See [CI/CD Integrations](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations)
 * **IDE plugins:** using IDE tools such as Eclipse. See [IDE tools](https://support.snyk.io/hc/en-us/sections/360001138118-IDE-tools).
 * **Artifact repositories:** such as Artifactory. See [Private registry gatekeeper plugins](https://support.snyk.io/hc/en-us/sections/360004237917-Private-registry-gatekeeper-plugins) and [Private registry integrations](https://support.snyk.io/hc/en-us/sections/360001138158-Private-registry-integrations).

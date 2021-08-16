@@ -1,8 +1,8 @@
 # Visual Studio Code extension for Snyk Code
 
-Use this documentation to get started with the Visual Studio Code extension for [Snyk Code](https://support.snyk.io/hc/en-us/categories/360003257537-Snyk-Code).
+Use this documentation to get started with the Visual Studio Code extension for [Snyk Code](https://docs.snyk.io/snyk-code).
 
-A Visual Studio extension is also available for Snyk Open Source. See [Visual Studio extension](https://support.snyk.io/hc/en-us/articles/360020073958-Visual-Studio-extension).
+A Visual Studio extension is also available for Snyk Open Source. See [Visual Studio extension](https://docs.snyk.io/integrations/untitled/visual-studio-extension).
 
 ### Supported languages
 
@@ -10,7 +10,7 @@ Currently supported languages for Snyk Code are JavaScript, TypeScript, Java and
 
 * .es, .es6, .htm, .html, .java, .js, .jsx, .py, .ts, .tsx, .vue
 
-See [Snyk Code language and framework support](https://support.snyk.io/hc/en-us/articles/360016973477-Snyk-Code-language-and-framework-support) for more information.
+See [Snyk Code language and framework support](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support) for more information.
 
 You can find the Snyk Extension in the Visual Studio Code Marketplace. To install, either:
 

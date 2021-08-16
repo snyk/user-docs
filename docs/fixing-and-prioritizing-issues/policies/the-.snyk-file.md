@@ -174,7 +174,7 @@ ignore:
         expires: 2020-11-07T11:38:28.614Z
 ```
 
-**Note:** For IaC ignore rules see [IaC ignores using the .snyk policy file](https://support.snyk.io/hc/en-us/articles/4405381463313-IaC-ignores-using-the-snyk-policy-file).
+**Note:** For IaC ignore rules see [IaC ignores using the .snyk policy file](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file).
 
 ## .snyk related CLI commands
 

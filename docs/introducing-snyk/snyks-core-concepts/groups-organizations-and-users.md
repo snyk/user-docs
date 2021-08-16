@@ -45,5 +45,5 @@ Snyk provides four different types of members or users:
 **Feature availability**  
 Group administrators and collaborators are available with Business and Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 
-More on [user and group management](https://support.snyk.io/hc/en-us/categories/360000599478-User-and-group-management).
+More on [user and group management](https://docs.snyk.io/user-and-group-management).
 
