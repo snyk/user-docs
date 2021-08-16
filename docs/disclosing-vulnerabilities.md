@@ -1,2 +1,0 @@
-# Disclosing vulnerabilities
-

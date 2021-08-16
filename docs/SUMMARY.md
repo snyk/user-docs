@@ -353,6 +353,7 @@
     * [Snyk runtime monitoring: uninstall the Snyk agent for Java](reports-1/runtime-monitoring/snyk-runtime-monitoring-uninstall-the-snyk-agent-for-java.md)
     * [Snyk runtime: what data is used when monitoring my Java projects?](reports-1/runtime-monitoring/snyk-runtime-what-data-is-used-when-monitoring-my-java-projects.md)
     * [Snyk runtime: deployment metrics](reports-1/runtime-monitoring/snyk-runtime-deployment-metrics.md)
-* [Disclosing vulnerabilities](disclosing-vulnerabilities.md)
-* [Partner workshops](partner-workshops.md)
+* [Disclosing vulnerabilities](disclosing-vulnerabilities/README.md)
+  * [Disclose a vulnerability in Snyk services](disclosing-vulnerabilities/disclose-a-vulnerability-in-snyk-services.md)
+  * [Disclose a vulnerability in an open source package](disclosing-vulnerabilities/disclose-a-vulnerability-in-an-open-source-package.md)
 
