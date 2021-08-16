@@ -356,4 +356,5 @@
 * [Disclosing vulnerabilities](disclosing-vulnerabilities/README.md)
   * [Disclose a vulnerability in Snyk services](disclosing-vulnerabilities/disclose-a-vulnerability-in-snyk-services.md)
   * [Disclose a vulnerability in an open source package](disclosing-vulnerabilities/disclose-a-vulnerability-in-an-open-source-package.md)
+* [Partner Workshops](partner-workshops.md)
 
