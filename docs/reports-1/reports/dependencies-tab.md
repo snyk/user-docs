@@ -2,7 +2,7 @@
 
 The Dependencies area of Reports acts as a bill of materials for all the direct dependencies in all of the projects in the selected organization, similar to the following:
 
-![mceclip0.png](https://support.snyk.io/hc/article_attachments/360020563478/mceclip0.png)
+![](../../.gitbook/assets/dependencies-tab.png)
 
 This area assists in determining dependency health—or in other words, the health of your packages, by displaying important details per package.
 
