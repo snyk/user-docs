@@ -17,7 +17,7 @@ This view is beneficial in providing additional details about:
 
 This view can be seen in the Elements column below, where all the elements of both views are described.
 
-### Note
+## Note
 
 Data in each of the four tabs is displayed based on the filters you've applied from the top of the Reports area, as well as the group or organization that you're viewing from.
 
@@ -213,7 +213,7 @@ These controls appear above the table:
 
 **Search issues**—this search capability allows users to search based on CVE, CWE or identifier name \(i.e. DDoS\). When searching by CVE or CWE, you must provide an exact value \(for example CVE-1234\) whereas, for identifier name, typing in a piece of the word will return results.
 
-**Issue filters**—mark the issues to be displayed by selecting a range of priority scores, specific issue types, exploit maturity, status, fixable values and reachability. 
+**Issue filters**—mark the issues to be displayed by selecting a range of priority scores, specific issue types, exploit maturity, status, fixable values and reachability.
 
 ![Screenshot\_2020-07-30\_at\_11.30.19\_am.png](https://support.snyk.io/hc/article_attachments/360010322577/Screenshot_2020-07-30_at_11.30.19_am.png)
 
@@ -222,7 +222,7 @@ These controls appear above the table:
 * CSV
 * Print/generate a preview from the Print dialog box in your local environment. Once you click the initial Print button, in the backend we load all the issues into one page. This process can take a few seconds. Make sure you don’t close your tab/browser or refresh the page while we prepare the document. Once ready, you get a new dialog box informing you that the document is ready to print. Within the print dialog, you select to save as PDF or print directly.
 
-### Note
+## Note
 
 Only 2000 issues can be generated at once. The number of issues you’re currently viewing is displayed on the Issues tab, as described in the Elements table.
 

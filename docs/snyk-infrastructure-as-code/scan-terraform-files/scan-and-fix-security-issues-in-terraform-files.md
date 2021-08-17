@@ -10,9 +10,7 @@ Snyk scans your Terraform code for misconfigurations and security issues as well
 
 ## Scan and fix your configuration files
 
-1. ![Screenshot\_2020-07-09\_at\_12.44.03.png](https://support.snyk.io/hc/article_attachments/360009907118/Screenshot_2020-07-09_at_12.44.03.png)
-   ![Screenshot\_2020-07-09\_at\_12.44.03.png](https://support.snyk.io/hc/article_attachments/360009907118/Screenshot_2020-07-09_at_12.44.03.png)
-
+1. ![Screenshot\_2020-07-09\_at\_12.44.03.png](https://support.snyk.io/hc/article_attachments/360009907118/Screenshot_2020-07-09_at_12.44.03.png) ![Screenshot\_2020-07-09\_at\_12.44.03.png](https://support.snyk.io/hc/article_attachments/360009907118/Screenshot_2020-07-09_at_12.44.03.png)
 2. Every time a repository is scanned:
    * Every Terraform file is imported as a separate project, grouped together per repository, similar to this example:
 

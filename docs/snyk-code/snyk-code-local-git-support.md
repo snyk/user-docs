@@ -150,7 +150,7 @@ For Gitlab:
 }
 ```
 
- For BitBucket Server:
+For BitBucket Server:
 
 ```text
 {

@@ -2,7 +2,7 @@
 
 Snyk offers the ability to monitor a public GitHub repository without granting any permissions through your own Snyk account.
 
-### How it works:
+## How it works:
 
 This allows you to track the vulnerabilities in a project you are considering using as a dependency, are using as a stand-alone independent tool within your business, or any other public repository where you do not need to actively prevent or fix issues using Snyk's tool.
 
@@ -18,11 +18,11 @@ Unlike projects imported through the Snyk GitHub integration, projects imported/
 * Automated dependency upgrade PRs, to keep dependencies up to date and help avoid new vulnerabilities and simplify fixing those that are found.
 * Manual Fix PRs generated through Snyk to address specific issues chosen by the user
 
-Projects can be imported in this way both [during onboarding](), or [post-onboarding to Snyk]() \(during normal ongoing use\).
+Projects can be imported in this way both [during onboarding](github-read-only-projects.md), or [post-onboarding to Snyk](github-read-only-projects.md) \(during normal ongoing use\).
 
-### During onboarding to Snyk: <a id="h_01EC9SPRTJQ0AMGHV8PWXGR2WD"></a>
+## During onboarding to Snyk: <a id="h_01EC9SPRTJQ0AMGHV8PWXGR2WD"></a>
 
-During onboarding, selecting GitHub as the source from which to import projects allows you to set up the full GitHub integration \(and take advantage of the vulnerability prevention and fix functionality available\), or opt to proceed without granting Snyk permissions via the link at the bottom. 
+During onboarding, selecting GitHub as the source from which to import projects allows you to set up the full GitHub integration \(and take advantage of the vulnerability prevention and fix functionality available\), or opt to proceed without granting Snyk permissions via the link at the bottom.
 
 ![Screenshot\_2020-07-03\_at\_08.02.29.png](https://support.snyk.io/hc/article_attachments/360009681197/Screenshot_2020-07-03_at_08.02.29.png)
 
@@ -30,15 +30,15 @@ Enter a repository to monitor, in the format of "owner/repository":
 
 ![Screenshot\_2020-07-03\_at\_08.01.41.png](https://support.snyk.io/hc/article_attachments/360009681217/Screenshot_2020-07-03_at_08.01.41.png)
 
-When a valid repository name is entered, click "+ Add repo", and the repo will be quickly tested for a supported manifest file. 
+When a valid repository name is entered, click "+ Add repo", and the repo will be quickly tested for a supported manifest file.
 
 Enter as many repositories as needed, and click "Import X repository/ies".
 
 ![Screenshot\_2020-07-03\_at\_08.01.52.png](https://support.snyk.io/hc/article_attachments/360009779538/Screenshot_2020-07-03_at_08.01.52.png)
 
-### Post-onboarding <a id="h_01EC9SQ1XZNWWXJ877FNVMRZWV"></a>
+## Post-onboarding <a id="h_01EC9SQ1XZNWWXJ877FNVMRZWV"></a>
 
-Read only projects can be imported regardless of whether full GitHub integration is set up, as they do not rely on your GitHub permissions to do so. 
+Read only projects can be imported regardless of whether full GitHub integration is set up, as they do not rely on your GitHub permissions to do so.
 
 This can be done via the "Add projects" dropdown on the dashboard, or by going to [https://app.snyk.io/add/github-readonly](https://app.snyk.io/add/github-readonly).
 
@@ -48,7 +48,7 @@ Enter a repository to monitor, in the format of "owner/repository":
 
 ![Screenshot\_2020-07-03\_at\_08.01.41.png](https://support.snyk.io/hc/article_attachments/360009681217/Screenshot_2020-07-03_at_08.01.41.png)
 
-When a valid repository name is entered, click "+ Add repo", and the repo will be quickly tested for a supported manifest file. 
+When a valid repository name is entered, click "+ Add repo", and the repo will be quickly tested for a supported manifest file.
 
 Enter as many repositories as needed, and click "Import X repository/ies".
 

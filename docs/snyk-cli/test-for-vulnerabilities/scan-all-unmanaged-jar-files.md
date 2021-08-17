@@ -22,7 +22,7 @@ Below is a Linux/Mac BASH script that will iterate through all subfolders starti
 find . -type f -name '*.jar' | uniq | xargs -I {} snyk monitor --file={} --scan-unmanaged --remote-repo-url=PROJECT_NAME_HERE
 ```
 
-The following is a Windows Batch script. The batch script is run from a **scanjar.bat** file. 
+The following is a Windows Batch script. The batch script is run from a **scanjar.bat** file.
 
 ```text
 REM Usage:    

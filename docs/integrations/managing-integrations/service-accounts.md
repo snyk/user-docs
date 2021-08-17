@@ -17,7 +17,7 @@ Service accounts cannot currently be used for GitHub integrations.
 
 Generate single or multiple tokens on the organization or group levels to manage your integrations.
 
-### Prerequisites
+## Prerequisites
 
 **Feature availability**  
 This feature is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
@@ -26,7 +26,7 @@ To create a group service account you must be a group admin. To create an org se
 
 This process describes all options.
 
-### How to set up a service account
+## How to set up a service account
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
 2. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Service accounts** to view existing service accounts and their details.
@@ -41,20 +41,20 @@ This process describes all options.
    * Admin enables full administrator access.
 6. Click Create. The token is generated and displayed from the same area, similar to the following:
 
-    Make sure you copy this token as you won’t see it again. You can click Close and Hide once you've copied the token; either way, when you navigate away from this page it will no longer be accessible. This is a security standard to keep your tokens safe. The new token is also added to your Existing service accounts list, similar to the following image:  
-  
-   Furthermore, if you created the token for the entire group with an Admin role, the token also appears in the Existing service accounts list for each of its organizations, though it can only be edited from the Group level.  
-  
-   If you created the token from an organization that is part of a group, the token now also appears in the Existing service account list on the group level, where the group admin can also change the token name or even delete it.  
+   Make sure you copy this token as you won’t see it again. You can click Close and Hide once you've copied the token; either way, when you navigate away from this page it will no longer be accessible. This is a security standard to keep your tokens safe. The new token is also added to your Existing service accounts list, similar to the following image:
 
-7. Click any of the links to update the names for a service account token - for Group-level tokens, from the Group level only; for Organization-level tokens, from the relevant organization and also from the Group level: 
+   Furthermore, if you created the token for the entire group with an Admin role, the token also appears in the Existing service accounts list for each of its organizations, though it can only be edited from the Group level.
+
+   If you created the token from an organization that is part of a group, the token now also appears in the Existing service account list on the group level, where the group admin can also change the token name or even delete it.
+
+7. Click any of the links to update the names for a service account token - for Group-level tokens, from the Group level only; for Organization-level tokens, from the relevant organization and also from the Group level:
 8. Repeat these steps to create multiple tokens for the same or any other organization or group.
 
-### Edit and delete a service account
+## Edit and delete a service account
 
 Administrators can change token names and delete tokens. When you delete a service account, the API token associated with it becomes immediately invalidated. When an account is managed with groups, the organization and the group admins can delete tokens for the organization; only group admins can view and manage tokens on the group level. Deleting a service account is the same as revoking the API token.
 
-#### How to edit and delete a service account
+### How to edit and delete a service account
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
 

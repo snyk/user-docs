@@ -6,7 +6,7 @@ We recommend running a build with the Snyk Security step before deployment, to e
 
 For additional information with TeamCity and its features, refer to their documentation.
 
-### How to configure your build with a Snyk step
+## How to configure your build with a Snyk step
 
 1. Add the step to a new or existing project:
    * For new projects, after configuring the Git repo from which to create the build, activate the auto-detect feature to automatically identify relevant steps for your project build.

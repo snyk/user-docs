@@ -4,7 +4,7 @@ Enable integration between your deployed AWS Lambda resources and a Snyk organiz
 
 **Automated Process:**
 
-You have the option of establishing cross-account access to enable Snyk's AWS Lambda integration as a 1-click deployment. This options is available as an official [AWS Quick Start](https://github.com/aws-quickstart/quickstart-snyk-security) and eliminates the need for manual configuration. 
+You have the option of establishing cross-account access to enable Snyk's AWS Lambda integration as a 1-click deployment. This options is available as an official [AWS Quick Start](https://github.com/aws-quickstart/quickstart-snyk-security) and eliminates the need for manual configuration.
 
 ![quickstart-snyk-security-lambda.png](https://support.snyk.io/hc/article_attachments/360010020397/quickstart-snyk-security-lambda.png)
 
@@ -29,11 +29,11 @@ You must be the owner or an administrator of the Snyk account you’re integrati
 4. Snyk communicates directly with Lambda for each test it runs to determine exactly what code is currently deployed and what dependencies are being used. Each dependency is tested against Snyk’s vulnerability database to see if it contains any known vulnerabilities.
 5. Based on your configurations, if vulnerabilities are found, Snyk notifies you via email or Slack so that you can take immediate remediation action.
 
-### Supported repos and languages
+## Supported repos and languages
 
 Snyk currently supports integration with AWS Lambda for Node, Ruby and Java projects.
 
-### Configure your integration with Snyk
+## Configure your integration with Snyk
 
 1. Allow a few minutes for AWS to update the role on their servers.
 2. From AWS, copy the **Role ARN** key that appears at the top of the **Summary** section \(inside the **Role** area still; in the format arn:aws:iam:::role/\). Save this value to paste in Snyk soon.
@@ -60,13 +60,9 @@ The role delegates read-only access to all of your Lamda resources by Snyk per o
 This section generally describes how to navigate the AWS IAM Console for these purposes. For more assistance, see the [AWS documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage.html).
 
 1. From your Snyk account, navigate to the organization you’d like to integrate with, go to **Settings** and when the General Settings load for the group, scroll down and copy your Organization ID. Save this for use later in this process.
-2. Now, click [here](https://console.aws.amazon.com/iam/home?#/policies) to log in to the **AWS Management Console,** navigate to the **Policies** page, and create a new policy for the role by updating the related JSON file **only**, as follows:
-   1. From the **Policies** area of the AWS Management Console, create a new policy.
-   2. Navigate to the **JSON** tab.
-   3. Select and delete all of the default text in the JSON file.
-   4. Copy the following script and paste it inside the JSON file:
+2. Now, click [here](https://console.aws.amazon.com/iam/home?#/policies) to log in to the **AWS Management Console,** navigate to the **Policies** page, and create a new policy for the role by updating the related JSON file **only**, as follows: 1. From the **Policies** area of the AWS Management Console, create a new policy. 2. Navigate to the **JSON** tab. 3. Select and delete all of the default text in the JSON file. 4. Copy the following script and paste it inside the JSON file:
 
-      ```text
+   ```text
       {
           "Version": "2012-10-17",
           "Statement": [
@@ -82,7 +78,8 @@ This section generally describes how to navigate the AWS IAM Console for these p
               }
           ]
       }
-      ```
+   ```
+
 3. Click **Review policy**.
 4. Name the policy **SnykReadOnlyForLambda**.
 5. Skip any other steps, finish the wizard and create the policy. The policy is now available in the list of your existing policies.

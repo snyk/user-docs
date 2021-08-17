@@ -23,13 +23,13 @@ Details displayed include:
 
     ![Reports\_Dependencies\_VersionLastVersion.png](https://support.snyk.io/hc/article_attachments/360006948897/uuid-095a82e8-5858-4247-78a5-da9e80d3e291-en.png)
 
-These and more details are fully described in [Elements]().
+These and more details are fully described in [Elements](dependencies-tab.md).
 
-### Note
+## Note
 
 Data in each of the four tabs is displayed based on the filters you've applied from the top of the Reports area, as well as the group or organization that you're viewing from.
 
-#### Dependencies tab elements
+### Dependencies tab elements
 
 Following is a close-up of the first four columns of the Reports area:
 

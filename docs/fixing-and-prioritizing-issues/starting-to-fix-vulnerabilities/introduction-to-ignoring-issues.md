@@ -2,13 +2,13 @@
 
 See [Ignoring issues not prioritized for your project](https://support.snyk.io/hc/en-us/articles/360004002718-Ignoring-issues-not-prioritized-for-your-project) for more details of ignoring issues.
 
-### Snyk UI
+## Snyk UI
 
 Each issue card has an **Ignore** button allowing you to ignore that issue:
 
 ![](https://support.snyk.io/hc/article_attachments/360018241838/new-ignore-2.png)
 
-### Snyk CLI
+## Snyk CLI
 
 In the Snyk CLI, you can ignore issues using **snyk ignore**. For example:
 

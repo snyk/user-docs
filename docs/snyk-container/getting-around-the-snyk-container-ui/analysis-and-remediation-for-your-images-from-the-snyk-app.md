@@ -36,7 +36,7 @@ The following information is displayed:
   * a specific binary or by OS packages \(for binaries/packages containing issues\)
   * Dockerfile instructions - if you attach your Dockerfile, then you can filter to view issues associated only with the base image, or to view Dockerfile-related advice \(user instruction\), or both
 
-### Note
+## Note
 
 If there is only one category of issues in your container, such as Node binary vulnerabilities only or OS packages only, this filter does not appear.
 

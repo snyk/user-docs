@@ -12,7 +12,7 @@ You can edit settings including:
 * Update test frequency
 * Retrieve the unique project ID
 
-### Deactivate a project
+## Deactivate a project
 
 Deactivating a project will:
 
@@ -21,7 +21,7 @@ Deactivating a project will:
 * Disable Fix pull request from being opened for newly disclosed vulnerabilities.
 * Disable recurring tests - email alerts about newly disclosed vulnerabilities will be turned off
 
-### Delete a project
+## Delete a project
 
 Deleting a project will:
 

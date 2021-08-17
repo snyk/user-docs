@@ -14,7 +14,7 @@ could give an output as follows
 
 This example is of output from a Kubernetes file, but this guide applies to any file format including Terraform.
 
-### List of vulnerabilities—sorted by severity, where each is detailed as follows:
+## List of vulnerabilities—sorted by severity, where each is detailed as follows:
 
 **A clear heading line** - specifying the issue that has been detected, the severity of that issue and the Snyk code for that particular issue
 
@@ -22,7 +22,7 @@ This example is of output from a Kubernetes file, but this guide applies to any 
 
 **Description** - an explanation of the issue and its associated impact
 
-#### **As an example:**
+### **As an example:**
 
 ![issue.png](https://support.snyk.io/hc/article_attachments/360010980798/issue.png)
 
@@ -34,5 +34,5 @@ The path of this issue is specified as
 
 In this screenshot you can see the highlighted line represents the identified issue.
 
-#### ![Screenshot\_2020-08-07\_at\_14.27.04.png](https://support.snyk.io/hc/article_attachments/360010905497/Screenshot_2020-08-07_at_14.27.04.png)
+### ![Screenshot\_2020-08-07\_at\_14.27.04.png](https://support.snyk.io/hc/article_attachments/360010905497/Screenshot_2020-08-07_at_14.27.04.png)
 

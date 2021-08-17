@@ -25,13 +25,13 @@ We also present the total dependencies with known vulnerabilities, and the total
 
 ![clisummary.png](https://support.snyk.io/hc/article_attachments/360012332078/clisummary.png)
 
-#### Note
+### Note
 
 Snyk groups the same vulnerability discovered in multiple different packages together. This helps you focus on the number of vulnerabilities, not just the instances.
 
-### Base image recommendations
+## Base image recommendations
 
-If Snyk determines the base image used, and the image uses an [Official Docker image](https://docs.docker.com/docker-hub/official_images/), the output includes recommendations for upgrades tol resolve some of the discovered vulnerabilities. 
+If Snyk determines the base image used, and the image uses an [Official Docker image](https://docs.docker.com/docker-hub/official_images/), the output includes recommendations for upgrades tol resolve some of the discovered vulnerabilities.
 
 ![clirecommendations.png](https://support.snyk.io/hc/article_attachments/360012332098/clirecommendations.png)
 

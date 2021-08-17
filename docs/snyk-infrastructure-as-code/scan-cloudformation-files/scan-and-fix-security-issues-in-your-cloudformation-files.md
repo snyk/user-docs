@@ -2,7 +2,7 @@
 
 Snyk scans CloudFormation code for misconfigurations and security issues. For configuration files, once scanned, Snyk reports on any misconfigurations based on the settings administrators implement and makes recommendations for fixes accordingly.
 
-### Scan and fix configuration files
+## Scan and fix configuration files
 
 * Log in to the account and navigate to the relevant group and organization.
 

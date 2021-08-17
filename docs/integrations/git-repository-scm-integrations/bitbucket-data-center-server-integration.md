@@ -4,7 +4,7 @@
 
    **Important**
 
-    Make sure the newly created user has **Admin** permissions to all the repositories you need to monitor with Snyk.
+   Make sure the newly created user has **Admin** permissions to all the repositories you need to monitor with Snyk.
 
 2. In Snyk, go to the **Integrations** page and click on **Bitbucket Server** card:![111.png](https://support.snyk.io/hc/article_attachments/360012150538/111.png)
 3. Enter your Bitbucket DC/Server URL, and the username and password for the service account you created: ![222.png](https://support.snyk.io/hc/article_attachments/360012150578/222.png)
@@ -18,7 +18,7 @@
 
 After the integration is done, you can use the following capabilities:
 
-#### **Project level security reports**
+### **Project level security reports**
 
 Snyk produces advanced security reports, allowing you to explore the vulnerabilities found in your repositories, and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
 
@@ -26,15 +26,15 @@ This is an example of a project level security report:
 
 ![555.png](https://support.snyk.io/hc/article_attachments/360012150658/555.png)
 
-#### **Projects monitoring and automatic fix pull requests**
+### **Projects monitoring and automatic fix pull requests**
 
- Snyk frequently scans your projects on either a daily or a weekly basis. When new vulnerabilities are found, it notifies you by email and by opening an automated pull requests with fixes to repositories.
+Snyk frequently scans your projects on either a daily or a weekly basis. When new vulnerabilities are found, it notifies you by email and by opening an automated pull requests with fixes to repositories.
 
 Here is an example of a fix pull request opened by Snyk:![666.png](https://support.snyk.io/hc/article_attachments/360012150698/666.png)
 
 To review and adjust the automatic fix pull request settings:
 
-#### **Pull request tests**
+### **Pull request tests**
 
 Snyk tests any newly created pull request in your repositories for security vulnerabilities, and sends a build check to Bitbucket DC/Server. You can to see whether the pull request introduces new security issues, directly from Bitbucket DC/Server.
 

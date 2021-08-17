@@ -13,23 +13,23 @@ Once configured, Snyk will use this information to access private dependencies w
 **Feature availability**  
 This feature is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
 
-### JavaScript Language Settings
+## JavaScript Language Settings
 
 1. Go to settings  &gt; **Languages &gt; JavaScript** and either the npm or yarn settings depending on your project types \(yarn shown in screenshots below\)
-2. If you have not previously connected to npm Teams or npm Enterprise you will be asked to configure an integration first, see [npm Teams & npm Enterprise Registry Settings]() below
+2. If you have not previously connected to npm Teams or npm Enterprise you will be asked to configure an integration first, see [npm Teams & npm Enterprise Registry Settings](npm-teams-and-npm-enterprise-for-npms.md) below
 3. Once you have set up the integration, select **Add registry configuration**  
    * Select "npm" as the Package source
    * If you want to configure this registry as **default registry url**, then leave scope blank
    * If you want to configure **only scoped packages** to use this registry then add a scope
    * If you want to add a mix of **default registry url** and **scoped packages**, add multiple configurations - one for the default and one per scope.
 4. When you have added all the registries and scopes you want, click **Update settings**.
-5. Now test it out - open a Pull/Merge Request on a project that contains private dependencies to see a lockfile updated and included in the Snyk Fix Pull Request where previously none was generated. ****
+5. Now test it out - open a Pull/Merge Request on a project that contains private dependencies to see a lockfile updated and included in the Snyk Fix Pull Request where previously none was generated. _\*\*_
 
-### npm Teams & npm Enterprise Registry Settings <a id="h_bab29371-80cb-4e6e-ad3b-e930b24700b1"></a>
+## npm Teams & npm Enterprise Registry Settings <a id="h_bab29371-80cb-4e6e-ad3b-e930b24700b1"></a>
 
 You can configure token based authentication for npm Teams and npm Enterprise integrations.
 
-#### Getting started
+### Getting started
 
 1. Go to settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Integrations &gt; Package Repositories &gt; npm**
 2. You should see this screen at the beginning.

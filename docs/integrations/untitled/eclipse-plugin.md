@@ -10,15 +10,15 @@ Once installed and configured, every time you run the plugin, Snyk scans your pr
 
 The Snyk plugin enables you to track and identify issues that risk your application’s security and avoid ever adding those issues to your shared repo.
 
-### Note
+## Note
 
 Both Snyk Broker and on-prem solutions support the Eclipse plugin.
 
-#### Supported languages and repos
+### Supported languages and repos
 
 Snyk supports all languages that are supported by both Eclipse and Snyk. Additionally, the Snyk plugin can also be implemented with our Broker and on-prem solutions.
 
-#### Installing the Eclipse Snyk plugin
+### Installing the Eclipse Snyk plugin
 
 1. Navigate to the Marketplace from within your running Eclipse instance.
 2. Search for Snyk and click Install.
@@ -30,7 +30,7 @@ Snyk supports all languages that are supported by both Eclipse and Snyk. Additio
 
    ![image7.png](https://support.snyk.io/hc/article_attachments/360007145898/uuid-928012b7-8e49-fe6f-4965-77c5db026784-en.png)
 
-#### Use the Snyk plugin to secure your Eclipse projects
+### Use the Snyk plugin to secure your Eclipse projects
 
 From the Snyk results click ![image10.png](https://support.snyk.io/hc/article_attachments/360007064317/uuid-aa090aa8-d4fe-eb5d-2505-54a0b1555be9-en.png) whenever you are ready to scan your projects. It shouldn’t take too long for the results to appear—but no worries! You can continue to work as usual in the meantime anyway.
 

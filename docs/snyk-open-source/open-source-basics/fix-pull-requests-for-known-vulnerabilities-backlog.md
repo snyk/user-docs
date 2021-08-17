@@ -1,6 +1,6 @@
 # Fix pull requests for known vulnerabilities \(backlog\)
 
-**Known vulnerabilities** retrieve vulnerabilities from the project's backlog. These are the previously declared vulnerabilities. 
+**Known vulnerabilities** retrieve vulnerabilities from the project's backlog. These are the previously declared vulnerabilities.
 
 The following rules are applied to automatic PR creation for vulnerabilities:
 
@@ -14,7 +14,7 @@ To know when your last 24-hour window was kicked off, check the project page for
 
 ![OS2.png](https://support.snyk.io/hc/article_attachments/4402318023057/OS2.png)
 
-### Enable or disable pull requests for integrations
+## Enable or disable pull requests for integrations
 
 To enable at the global integration level:
 
@@ -26,7 +26,7 @@ To enable at the global integration level:
 
 ![Screen\_Shot\_2021-05-24\_at\_12.23.38\_PM.png](https://support.snyk.io/hc/article_attachments/360020610318/Screen_Shot_2021-05-24_at_12.23.38_PM.png)
 
-### Enable or disable pull requests for a single project
+## Enable or disable pull requests for a single project
 
 Enabling/disabling at a project level will override this single project rather than inheriting it from the global integration setting.
 

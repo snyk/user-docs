@@ -7,24 +7,24 @@ The user generates a unique Azure DevOps personal access token \(PAT\) generated
 3. Snyk communicates directly with your repository for each test it runs to determine exactly what code is currently pushed and what dependencies are being used. Each dependency is tested against Snyk’s vulnerability database to see if it contains any known vulnerabilities.
 4. Based on your configurations, if vulnerabilities are found, Snyk notifies you via email or Slack so that you can take immediate remediation action.
 
-### Add projects to Snyk for Azure Repos
+## Add projects to Snyk for Azure Repos
 
 Snyk tests and monitors Azure Repos that are in any of our supported languages by evaluating root folders and custom file locations.
 
-#### Adding custom file location
+### Adding custom file location
 
-#### Excluding folders from import
+### Excluding folders from import
 
 This integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages in our Docs.
 
-### Configure your integration for Azure Repos
+## Configure your integration for Azure Repos
 
 **Feature availability**  
 Integration with Azure Repos Cloud is available for all of our pricing plans. Integration with Azure Repos Server v2018 Update 2 and above \(also known as TFS\) is available with Enterprise and Business plans. See [Pricing plans](https://snyk.io/plans/) for more details.
 
 Snyk integrates with Microsoft Azure Repos to enable you to import your projects and monitor the source code for your repositories. Snyk tests the projects you’ve imported for any known security vulnerabilities found in the application’s dependencies, testing at a frequency you control.
 
-#### How to configure your integration
+### How to configure your integration
 
 Enable integration between Azure Repos and Snyk, and start managing your vulnerabilities.
 
@@ -46,7 +46,7 @@ Ensure you have set up your Azure Repos account and your Snyk account.
 
    ![image1.png](https://support.snyk.io/hc/article_attachments/360007145058/uuid-759cd7dc-c095-dd7d-22d3-27f842ebd696-en.png)
 
-7. From the **Settings** page in the **Integrations** area, enter the Azure DevOps organization that you want to integrate with \(i.e. https://dev.azure.com/{org-name}\) and the personal access token that you just generated.  
+7. From the **Settings** page in the **Integrations** area, enter the Azure DevOps organization that you want to integrate with \(i.e. [https://dev.azure.com/{org-name}\](https://dev.azure.com/{org-name}\)\) and the personal access token that you just generated.  
    ![settings.png](https://support.snyk.io/hc/article_attachments/4402466776209/settings.png)
 
    \* Enterprise customers can also provide a custom URL for Azure Repos Server private instance which is publicly reachable.

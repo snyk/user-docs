@@ -23,16 +23,15 @@ The **Exploit maturity** filter is available from any detailed **Projects** page
 
    ![image5.gif](https://support.snyk.io/hc/article_attachments/360007031498/uuid-414712da-c99d-1416-4948-e5859438d11d-en.gif)
 
-3. Work with and remediate vulnerabilities from the **Issues** tab of the **Reports** area as well:
-   1. Filter reports by exploit maturity:
+3. Work with and remediate vulnerabilities from the **Issues** tab of the **Reports** area as well: 1. Filter reports by exploit maturity:
 
-      ![image2.png](https://support.snyk.io/hc/article_attachments/360007031518/uuid-159624f9-b94f-34e9-03d5-005bd12b5209-en.png)
+   ![image2.png](https://support.snyk.io/hc/article_attachments/360007031518/uuid-159624f9-b94f-34e9-03d5-005bd12b5209-en.png)
 
-   2. View exploit maturity data from the **Issues** list in **Grouped** mode:
+   1. View exploit maturity data from the **Issues** list in **Grouped** mode:
 
       ![image4.png](https://support.snyk.io/hc/article_attachments/360007031538/uuid-626f2c23-462f-8de6-4576-ddfa67f2cd2b-en.png)
 
-   3. View exploit maturity data from the **Issues** list in **Ungrouped** mode:
+   2. View exploit maturity data from the **Issues** list in **Ungrouped** mode:
 
       ![image3.png](https://support.snyk.io/hc/article_attachments/360007031558/uuid-04c57adc-4aa1-2af7-82a4-e3c35f3e5fc5-en.png)
 

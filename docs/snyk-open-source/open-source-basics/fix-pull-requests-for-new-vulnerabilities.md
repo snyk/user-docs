@@ -18,7 +18,7 @@ Pull requests for new vulnerabilities are enabled by default for new integration
 
 See [Git repository SCM integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) for full details of supported integrations.
 
-### Enable or disable pull requests for an integration
+## Enable or disable pull requests for an integration
 
 Enable at the global integration level:
 
@@ -30,7 +30,7 @@ Enable at the global integration level:
 
 ![global-pr-setting.png](https://support.snyk.io/hc/article_attachments/360020496137/global-pr-setting.png)
 
-### Enable or disable pull requests for a single project
+## Enable or disable pull requests for a single project
 
 Enabling/disabling at a project level will override this single project rather than inheriting it from the global integration setting.
 

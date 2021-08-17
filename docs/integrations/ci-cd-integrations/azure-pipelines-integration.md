@@ -23,7 +23,7 @@ After the Snyk Security Scan task is added to a pipeline, then each time the pip
 
 After the **snyk test** is complete, you have the option of doing **snyk monitor**. **snyk monitor** will save a snapshot of the project dependencies in your [snyk.io](https://snyk.io/) account, where you can see the dependency tree with all of the issues and be alerted if and when new issues are found in the dependencies.
 
-### Install the Snyk extension for your Azure pipelines
+## Install the Snyk extension for your Azure pipelines
 
 To start using our task as part of your pipeline build, first install the extension into your Azure DevOps instance per organization, from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Snyk.snyk-security-scan).
 
@@ -39,12 +39,12 @@ To start using our task as part of your pipeline build, first install the extens
 3. For paid plans, navigate to the organization you’d like to integrate with, then go to **Settings** to create a new service account token. Copy and save it on the side.
 4. Access your Azure DevOps account and navigate to **Extensions -&gt; Browse marketplace.**
 5. Search for the **Snyk Security Scan** extension, click **Get it free** .
-6.  Create a new _Service Connection_ in your project via **Project Settings** —&gt; **Pipelines** —&gt; **Service Connections**
-7.  Select "**Snyk Authentication**" service connection: ![ap\_-\_search.jpg](https://support.snyk.io/hc/article_attachments/360008696738/ap_-_search.jpg)
+6. Create a new _Service Connection_ in your project via **Project Settings** —&gt; **Pipelines** —&gt; **Service Connections**
+7. Select "**Snyk Authentication**" service connection: ![ap\_-\_search.jpg](https://support.snyk.io/hc/article_attachments/360008696738/ap_-_search.jpg)
 8. In the Snyk Authentication service connection form, enter the **Server URL** and the **Snyk API Token** along with a **Service connection name**: ![ap\_-\_config.jpg](https://support.snyk.io/hc/article_attachments/360008621717/ap_-_config.jpg)
 9. Click on **Save**, ensuring the new service connection appears in your list of service connections.
 
-### Add the Snyk Security Task to your pipelines
+## Add the Snyk Security Task to your pipelines
 
 **Prerequisites**
 
@@ -62,7 +62,7 @@ This extension requires that Node.js and npm be installed on the build agent. Th
 1. Add the Snyk Security Scan task when you create your pipeline or while editing an existing one. See the [Azure Pipelines documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops)
 2. From Azure, access the pipeline that you’d like to scan for vulnerabilities, open it for editing and check that the Build step is included just before the point at which you’d like to insert the Snyk task \(this is not required but is considered best practice for consistency across projects\).
 3. Open the **assistant**, search for the Snyk Security Scan task and click it. The configuration panel opens on top of the assistant. ![Azure.png](https://support.snyk.io/hc/article_attachments/360017779998/Azure.png)
-4. Complete the fields in the configuration. Find full details about the parameters in the [GitHub repo](https://github.com/snyk/snyk-azure-pipelines-task#task-parameters) or in this section below: [Snyk Security Scan task parameters and values]().
+4. Complete the fields in the configuration. Find full details about the parameters in the [GitHub repo](https://github.com/snyk/snyk-azure-pipelines-task#task-parameters) or in this section below: [Snyk Security Scan task parameters and values](azure-pipelines-integration.md).
 
    If the **Fail build if Snyk finds issue** option is checked, then if the build fails, the pipeline job will be failed by the Snyk task.
 
@@ -92,7 +92,7 @@ This extension requires that Node.js and npm be installed on the build agent. Th
 
    If the Snyk task fails the build, an error message appears in the results indicating that the build failed due to `snyk test`.
 
-### Snyk Security Scan task parameters and values
+## Snyk Security Scan task parameters and values
 
 This section describes the Snyk task parameters for Azure Pipelines integration, their parallel configuration fields \(from the configuration panel in Azure Pipelines\) and their valid values:
 

@@ -9,7 +9,6 @@ While using the **snyk test** command, actionable remediation for supported ecos
 Please ensure you use the latest version of CLI \([v1.652.0](https://github.com/snyk/snyk/releases/tag/v1.652.0) or later\) to use **snyk fix**.
 
 ```text
-
 Tested 78 dependencies for known issues, found 34 issues, 145 vulnerable paths.Issues to fix by upgrading dependencies:  Upgrade django@2.2.13 to django@2.2.22 to fix
   ✗ HTTP Header Injection [High Severity][https://app.snyk.io/vuln/SNYK-PYTHON-DJANGO-1290072] in django@2.2.13
     introduced by django@2.2.13 and 13 other path(s)
@@ -44,7 +43,7 @@ Here is the example output of running **snyk fix**:
 * Only successful test results are forwarded into **snyk fix**
 * All unsupported ecosystem test results will be skipped
 
-### Enabling snyk fix
+## Enabling snyk fix
 
 To enable snyk fix during the beta period, click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Snyk Preview**, then enable the snyk fix feature and click **Save changes**.
 
@@ -59,7 +58,7 @@ Additional parameters:
 
 Support is available for the following.
 
-#### Python
+### Python
 
 * **Pip** projects with **requirements.txt** files \(or custom named files, for example **prod.txt**\)
 * **Pipenv** projects with **Pipfile & Pipfile.lock** files
@@ -68,9 +67,9 @@ Support is available for the following.
 * **snyk fix --file=base.txt --package-manager=pip**
 * **snyk fix --all-projects**
 
-### Python \(pip\)
+## Python \(pip\)
 
-#### Requirements with \`-r\` directives
+### Requirements with \`-r\` directives
 
 Where the **requirements.txt** looks like this, both **base.txt** and **requirements.txt** will be updated if needed:
 
@@ -83,15 +82,15 @@ django===1.6.1
 
 Applied in the relevant files. All files referenced are found and updated
 
-**Pins \(transitive dependencies that are pulled in via direct dependencies\)** 
+**Pins \(transitive dependencies that are pulled in via direct dependencies\)**
 
-Pins are applied in **the manifest file that was tested**. 
+Pins are applied in **the manifest file that was tested**.
 
-If multiple files are tested but are related \(for example one requires the other\), we start to apply changes to the files higher up in the directory structure. 
+If multiple files are tested but are related \(for example one requires the other\), we start to apply changes to the files higher up in the directory structure.
 
 We detect previously fixed files and skip applying fixes to them again.
 
-#### Projects which use constraints.txt
+### Projects which use constraints.txt
 
 Constraints files are requirements files that only control which version of a dependency is installed, not whether it is installed or not. Their syntax and contents are nearly identical to Requirements Files. There is one key difference: Including a package in a constraints file does not trigger installation of the package. More info at: [User Guide - pip documentation v21.0.1](https://pip.pypa.io/en/stable/user_guide/#constraints-files)
 
@@ -99,15 +98,15 @@ Constraints files are requirements files that only control which version of a de
 
 Applied in the relevant files. All files referenced are found and updated
 
-**Pins \(transitive dependencies that are pulled in via direct dependencies\)** 
+**Pins \(transitive dependencies that are pulled in via direct dependencies\)**
 
 All transitive dependencies are pinned in **constraints.txt** file if referenced via **-c** directive in requirements manifest file.
 
-### Python \(pipenv\)
+## Python \(pipenv\)
 
 Snyk delegates to \`pipenv\` directly to update dependencies to the specified recommended versions. All \`pipenv\` environment variables and behaviours are preserved as much as possible.
 
-### Python \(poetry\)
+## Python \(poetry\)
 
 Snyk delegates to \`poetry\` directly to update dependencies to the specified recommended versions. All \`poetry\` environment variables and behaviours are preserved as much as possible.
 

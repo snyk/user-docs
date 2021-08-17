@@ -6,7 +6,7 @@ The main dashboard of the Reports area displays a birds-eye view of all of the i
 * License issues
 * Your overall project activity—a summary of all of your projects, tests and issues
 
-### Note
+## Note
 
 Data in each of the four tabs is displayed based on the filters you've applied from the top of the Reports area, as well as the group or organization that you're viewing from.
 

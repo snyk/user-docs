@@ -14,7 +14,7 @@ To filter by vulnerability severities and by project types, open the Filters dro
 
 ![mceclip0.png](https://support.snyk.io/hc/article_attachments/360020462117/mceclip0.png)
 
-### How to navigate and view data for groups and organizations
+## How to navigate and view data for groups and organizations
 
 To view data for a single organization you need to be an administrator for the organization.
 
@@ -24,7 +24,7 @@ To view data for a single organization you need to be an administrator for the o
 2. Navigate to Reports.
 3. Data appears only for the organization you selected.
 
-### View data for multiple organizations
+## View data for multiple organizations
 
 **Feature availability**  
 This feature is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.

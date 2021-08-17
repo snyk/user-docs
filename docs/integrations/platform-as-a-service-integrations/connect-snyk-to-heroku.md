@@ -10,7 +10,7 @@ This will take you to a page where you’ll be prompted to enter your Heroku API
 
 Instructions for how to generate and locate your Heroku API key are below.
 
-### Generate your Heroku API key
+## Generate your Heroku API key
 
 You can find and generate your Heroku API key in your “Account Settings” section of your Heroku Account.
 
@@ -20,7 +20,7 @@ Alternatively, you can use the Heroku CLI to generate your API key and copy it d
 
 From there you can login to your Snyk account and paste in your Heroku credentials.
 
-### Heroku: check your connection status
+## Heroku: check your connection status
 
 At any time after you’ve entered your Heroku credentials, you can check on the connection status in one of two places.
 
@@ -36,7 +36,7 @@ If you are unable to connect, please re-enter your account credentials to verify
 
 ![image7.png](https://support.snyk.io/hc/article_attachments/360007064497/uuid-f49dfc90-5951-c28f-3efb-32709c051b56-en.png)
 
-### Add a Snyk-specific user to Heroku
+## Add a Snyk-specific user to Heroku
 
 On Heroku, each user is limited to one API key so we suggest adding a dedicated user for your Snyk org. That way if at some point you need to revoke the key for any reason, you can do so without impacting anyone within your org.
 
@@ -46,9 +46,9 @@ This can be accomplished through the Heroku admin interface, or from the command
 
 You can learn more about how to add another user to your application on the [Heroku documentation](https://devcenter.heroku.com/articles/collaborating).
 
-### Disable the Heroku integration
+## Disable the Heroku integration
 
-### Add Heroku projects to Snyk
+## Add Heroku projects to Snyk
 
 Once you’ve successfully connected Snyk to your Heroku account, you’ll be able to select Heroku projects that you would like Snyk to monitor. You can do this either using the “Add projects” button on the integrations page or directly from the Heroku integration settings page.
 

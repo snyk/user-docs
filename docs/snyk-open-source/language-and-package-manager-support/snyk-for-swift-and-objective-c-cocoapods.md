@@ -4,15 +4,15 @@ Snyk offers security scanning to test your projects for vulnerabilities, both th
 
 The following describes how to use Snyk to scan your CocoaPods projects:
 
-### Note
+## Note
 
 Features might not be available, depending on your subscription plan.
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![i\_icon\_cocoapods.png](https://support.snyk.io/hc/article_attachments/360007259038/uuid-6de05da9-de7e-11cc-4316-8459517aaf57-en.png) | Cocoapods | ✔︎ | ✔︎  | ✔︎  |  |  |
+| ![i\_icon\_cocoapods.png](https://support.snyk.io/hc/article_attachments/360007259038/uuid-6de05da9-de7e-11cc-4316-8459517aaf57-en.png) | Cocoapods | ✔︎ | ✔︎ | ✔︎ |  |  |
 
-#### Snyk CLI tool for CocoaPods projects
+### Snyk CLI tool for CocoaPods projects
 
 **CLI parameters for Swift and Objective-C**
 
@@ -37,7 +37,7 @@ When working with Swift and Objective-C projects from our CLI, you can prevent t
   </tbody>
 </table>
 
-#### Git services for CocoaPods projects
+### Git services for CocoaPods projects
 
 Swift and Objective-C projects managed by CocoaPods can be imported from any of the Git repositories we support. In order to test your projects, we analyze your Podfile and Podfile.lock files.
 

@@ -2,7 +2,7 @@
 
 **Overview**
 
-#### Note
+### Note
 
 This guide is relevant for Snyk UI integrations only, the CLI already supports yarn and npm projects with private Artifactory registries
 
@@ -15,7 +15,7 @@ Once configured, Snyk will use this information to access private dependencies w
 **Feature availability**  
 This feature is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
 
-### JavaScript Language Settings
+## JavaScript Language Settings
 
 1. Go to settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **&gt; Languages &gt; JavaScript** and either the npm or yarn settings depending on your project types \(yarn shown in screenshots below\)
 2. If you have not previously connected to Artifactory you will be asked to configure an integration first, see [Artifactory Registry Setup.](https://support.snyk.io/hc/en-us/articles/360013805638) 

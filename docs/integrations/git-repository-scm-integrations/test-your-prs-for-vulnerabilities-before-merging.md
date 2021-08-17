@@ -16,7 +16,7 @@ Administrators can manage settings for Snyk PR tests from our app on both the or
 
 Settings on the project level override the settings on the organization level. Currently, we support all languages supported by the Git repositories that we integrate with: GitHub, GitLab, Bitbucket and Azure repos.
 
-### Configure the pull request test settings for your organization
+## Configure the pull request test settings for your organization
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
 2. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Integrations**.
@@ -33,7 +33,7 @@ Settings on the project level override the settings on the organization level. C
 
 We recommend that you set Snyk status checks to be mandatory for merging pull requests from the relevant repository. See your Git repository documentation for addfitional help with this.
 
-### Configure pull request test settings for a project
+## Configure pull request test settings for a project
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
 2. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Integrations**, 

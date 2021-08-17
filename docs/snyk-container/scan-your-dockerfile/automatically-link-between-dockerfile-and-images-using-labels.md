@@ -17,17 +17,17 @@ At the point of import \(or re-test\), the image is analysed, scanned for vulner
 
 If the above applies, Snyk automatically creates a link between the image and dockerfile projects.
 
-### Automatic update/removal of links
+## Automatic update/removal of links
 
 Links are automatically updated if the Dockerfile labels are updated and are targeting new location. This can happen at the time of retest or when a recurring test runs.
 
-Links are removed if either the image project or Dockerfile project are deleted, if the Dockerfile labels are updated so that they target Dockerfile location without an existing project in Snyk, or if the Dockerfile labels are removed. 
+Links are removed if either the image project or Dockerfile project are deleted, if the Dockerfile labels are updated so that they target Dockerfile location without an existing project in Snyk, or if the Dockerfile labels are removed.
 
-### Linking in brokered SCM integrations
+## Linking in brokered SCM integrations
 
 For a link to be created, Snyk needs to be able to map the Dockerfile repository URL to the right SCM org source. For brokered integrations this is a bit more complex, as this URL is not available by default.
 
-To create automatic links between container images to Dockerfiles stored in brokered SCMs, enter the URL in the integration page settings: 
+To create automatic links between container images to Dockerfiles stored in brokered SCMs, enter the URL in the integration page settings:
 
 ![mceclip0.png](https://support.snyk.io/hc/article_attachments/4405328176401/mceclip0.png)
 

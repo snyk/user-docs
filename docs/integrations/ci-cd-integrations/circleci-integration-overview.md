@@ -11,7 +11,7 @@ Getting started with CircleCI from scratch to a green build with Snyk is simple!
 * [Our Circle CI README](https://circleci.com/orbs/registry/orb/snyk/snyk) - the page includes all the info that you need in order to set your CI/CD with Snyk including a list of parameters and samples.
 * [A Circle CI blog](https://circleci.com/blog/adding-application-and-image-scanning-to-your-cicd-pipeline/) - discussing how to set up a secure pipeline with the Snyk orb.
 
-### Configure your CircleCI integration
+## Configure your CircleCI integration
 
 Once the user adds a project to CircleCI and adds the Snyk Orb to the configuration file, every time that a build will run, the Snyk Orb will be used as well.
 
@@ -21,7 +21,7 @@ Once the user adds a project to CircleCI and adds the Snyk Orb to the configurat
 4. Make sure your configuration \(`config.yml`\) file follows version 2.1.
 5. Add the required variables to CircleCI \(e.g. Snyk API token as `API_TOKEN`\)
 
-### Getting Snyk Orb details from the CircleCI registry
+## Getting Snyk Orb details from the CircleCI registry
 
 1. From the [Orbs registry](https://circleci.com/orbs/registry/), CircleCI displays a list of available Orbs customized for you directly, similar to the following image:
 

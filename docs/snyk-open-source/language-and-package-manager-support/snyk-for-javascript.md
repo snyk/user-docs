@@ -2,7 +2,7 @@
 
 You can use Snyk to scan your JavaScript projects.
 
-#### Note
+### Note
 
 Features might not be available, depending on your subscription plan.
 
@@ -10,7 +10,7 @@ Features might not be available, depending on your subscription plan.
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | ![i\_icon\_npm.png](https://support.snyk.io/hc/article_attachments/360007183097/uuid-aa98c079-4d3e-5e58-f450-08985b5d4b8b-en.png) | npm | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
 | ![i\_icon\_yarn.png](https://support.snyk.io/hc/article_attachments/360007259138/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) | Yarn | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
-| ![i\_icon\_yarn.png](https://support.snyk.io/hc/article_attachments/360007259138/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) |  Yarn Workspaces | ✔︎  | ✔︎  |  ✔︎ | ✔︎ \(advice\) |  ✔︎ |
+| ![i\_icon\_yarn.png](https://support.snyk.io/hc/article_attachments/360007259138/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) | Yarn Workspaces | ✔︎ | ✔︎ | ✔︎ | ✔︎ \(advice\) | ✔︎ |
 
 After Snyk builds a dependency tree, we use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in that tree.
 
@@ -20,32 +20,32 @@ The way Snyk analyzes and builds the tree varies depending on the language and p
 
 See:
 
-* [Snyk CLI tool for JavaScript projects]()
-* [Git services for JavaScript projects]()
+* [Snyk CLI tool for JavaScript projects](snyk-for-javascript.md)
+* [Git services for JavaScript projects](snyk-for-javascript.md)
 
-### Snyk CLI tool for JavaScript projects
+## Snyk CLI tool for JavaScript projects
 
 The way Snyk analyzes and builds the tree varies based on the package manager of the project.
 
-#### npm
+### npm
 
 npm versions 6.x, 7.x are supported in the Snyk CLI.
 
 Workspaces npm 7.x is not supported.
 
-We analyze your `package.json` and `package-lock.json` files, to build a full structured dependency tree. If the `package-lock.json` is missing, we analyze your `node_modules` folder. 
+We analyze your `package.json` and `package-lock.json` files, to build a full structured dependency tree. If the `package-lock.json` is missing, we analyze your `node_modules` folder.
 
 Snyk can apply previously selected patches using the GNU patch utility. Patches are saved to the .snyk policy file.
 
-#### Yarn
+### Yarn
 
 Yarn versions 1 & 2 are supported in the Snyk CLI.
 
-We analyze your `package.json` and `yarn.lock` files, to build a full structured dependency tree. If the `yarn.lock` is missing, we analyze your `node_modules` folder. 
+We analyze your `package.json` and `yarn.lock` files, to build a full structured dependency tree. If the `yarn.lock` is missing, we analyze your `node_modules` folder.
 
 Snyk supports resolutions only in Yarn v2 in repositories _without_ workspaces. We do not support resolutions for Yarn v1.
 
-#### Yarn workspaces
+### Yarn workspaces
 
 Yarn v1 workspaces support is for `snyk test` and `snyk monitor` commands only at this time. We do not support workspaces for Yarn v2.
 
@@ -58,9 +58,9 @@ You may use a common **.snyk** policy file if you maintain ignores/patches in on
 
 `snyk test --yarn-workspaces --strict-out-of-sync=false --policy-path=src/.snyk`
 
-#### CLI parameters for JavaScript
+### CLI parameters for JavaScript
 
-Prerequisites 
+Prerequisites
 
 * Install the relevant package manager.
 * Include the relevant manifest files supported by Snyk.
@@ -138,11 +138,11 @@ Use the following options to refine the scan:
   </tbody>
 </table>
 
-### Git services for JavaScript projects
+## Git services for JavaScript projects
 
 JavaScript projects can be imported from any of the Git services we support. After import, Snyk analyzes your projects based on their supported manifest files.
 
-#### npm
+### npm
 
 npm versions 6.x, 7.x are supported in Git services.
 
@@ -153,7 +153,7 @@ We build the dependency tree based on these files:
 * `package.json`
 * `package-lock.json`
 
-#### Yarn
+### Yarn
 
 Yarn version 1 is supported in Git services.
 
@@ -162,9 +162,9 @@ We build the dependency tree based on these files:
 * `package.json`
 * `yarn.lock`
 
-#### Yarn Workspaces
+### Yarn Workspaces
 
-#### Note
+### Note
 
 Git support for Yarn Workspaces is enabled for all projects in organisations created after March 3rd 2021. To enable this feature for organisations created before this date please contact support@snyk.io.
 
@@ -176,17 +176,17 @@ Commit status checks fail if the `package.json` and the root `yarn.lock` are out
 
 Commit status checks always use the root level `yarn.lock` and workspace `package.json` for tests.
 
-#### Warning
+### Warning
 
 If your `package.json` and root `yarn.lock` are out of sync, we will have issues re-testing the projects. Snyk shows errors on project page and import logs when this happens.
 
 If you reference the locally installed packages which do not appear in a lockfile, you can disable the **Require package.json and yarn.lock files to be in sync** setting, on the **Languages Settings** page for JavaScript.
 
-#### Git settings for JavaScript
+### Git settings for JavaScript
 
 **Preferences**
 
-From the Snyk UI, use these parameters to customize your language preferences for JavaScript-based projects: 
+From the Snyk UI, use these parameters to customize your language preferences for JavaScript-based projects:
 
 | Option | Description |
 | :--- | :--- |
@@ -194,7 +194,7 @@ From the Snyk UI, use these parameters to customize your language preferences fo
 | **Require package.json and package-lock.json to be in sync** | When selected if the package.json and package.lock files are out-of-sync, Snyk fails the import. |
 | **Exclude package-lock.json from being generated when fixing vulnerabilities** | If you are using private mirrors or registries, a Snyk generated lockfile might not be appropriate for you because Snyk uses the npm registry to update the lockfile. This setting allows you to opt-out of getting lockfiles generated for you in our fix pull requests / merge requests. |
 
-#### Update language preferences
+### Update language preferences
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
 

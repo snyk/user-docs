@@ -6,7 +6,7 @@ Snyk allows detection of vulnerabilities in your application dependencies from c
 
 After you integrate with a container registry and import your projects, we scan your image and test for vulnerabilities.
 
-### Enable application vulnerabilities scan from container images
+## Enable application vulnerabilities scan from container images
 
 1. Navigate to your container registry integration settings
 
@@ -16,7 +16,7 @@ After you integrate with a container registry and import your projects, we scan 
 
    ![mceclip1.png](https://support.snyk.io/hc/article_attachments/360008399658/mceclip1.png)
 
-### View vulnerabilities and licensing issues
+## View vulnerabilities and licensing issues
 
 After the feature is enabled, you can see:
 

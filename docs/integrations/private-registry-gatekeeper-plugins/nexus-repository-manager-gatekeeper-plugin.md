@@ -28,7 +28,7 @@ Use the Snyk capability with your Nexus Repository Manager to test your artifact
 4. Based on the severity thresholds configured for the Snyk Security Configuration capability, the package is blocked.
 5. The error appears in the developer’s CLI \(including a link to the error with full details\) and from the Nexus interface for administrators, detailing the number of known issues for vulnerabilities and licenses.
 
-### Administrators’ guide for the Snyk Nexus Gatekeeper plugin
+## Administrators’ guide for the Snyk Nexus Gatekeeper plugin
 
 To set up and configure the plugin, start scanning and managing your organization's artifacts for vulnerabilities, check out this information:
 
@@ -38,7 +38,7 @@ To set up and configure the plugin, start scanning and managing your organizatio
   * Nexus Repository Manager OSS
   * Nexus Repository Manager Pro v3.15.0 or greater
 
-#### Install the plugin on your Nexus server
+### Install the plugin on your Nexus server
 
 1. Download the bundle from [our GitHub repository](https://github.com/snyk/nexus-snyk-security-plugin/releases).
 2. Copy the `nexus-snyk-security-plugin.kar` file from the bundle onto your Nexus server at`/deploy`.
@@ -54,7 +54,7 @@ To set up and configure the plugin, start scanning and managing your organizatio
 7. Shut down the Nexus service instance and then restart it.
 8. Log in to your Nexus instance and double check that the Snyk bundle has been installed successfully.
 
-#### Track vulnerabilities in your team's artifacts
+### Track vulnerabilities in your team's artifacts
 
 1. Once installed, every time a developer requests to download an artifact, the following occurs:
    * Based on the severity thresholds that you configured, the download is blocked.

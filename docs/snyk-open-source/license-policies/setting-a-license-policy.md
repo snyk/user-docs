@@ -12,7 +12,7 @@ Administrators can configure the following per license:
 **Feature availability**  
 For customers with a Business plan: if no group is available, org administrators can make license policy changes; if a group is available, group administrators can make license policy changes. For customers with an Enterprise plan, group administrators can create or modify a policy. See [Pricing plans](https://snyk.io/plans/) for more details.
 
-### Assign rules and severities
+## Assign rules and severities
 
 1. From the Policy modal, click in the **Severity** box on the right hand side to set the severity for specific licenses
 2. To enter an explanation and recommendations for remediation, click the **Instructions** icon and enter your text 

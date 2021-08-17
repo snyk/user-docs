@@ -9,7 +9,7 @@ The custom package registry feature currently supports [Artifactory](https://sup
 
 Maven analysis can be configured to mirror all requests through a custom package repository, or you can specify additional repositories to use alongside Maven Central.
 
-### **Setup custom Maven package registries**
+## **Setup custom Maven package registries**
 
 If authentication is required to access your custom registry you will need to first configure the Artifactory package repository integration, see [Artifactory Registry Setup.](https://support.snyk.io/hc/en-us/articles/360013805638)
 
@@ -31,7 +31,7 @@ If using Type 'Integration', you will need to choose an integration type and pro
 
 The Repository Name should be set as whatever comes after 'artifactory/' in the internal repository URL.
 
-For example, if the URL is 'http://artifactory.company.io/artifactory/libs-release'[,](http://artifactory.company.io/artifactory/jcenter',) Repository Name should be set as 'libs-release'.
+For example, if the URL is '[http://artifactory.company.io/artifactory/libs-release'\[,\]\(http://artifactory.company.io/artifactory/jcenter](http://artifactory.company.io/artifactory/libs-release'[,]%28http://artifactory.company.io/artifactory/jcenter)',\) Repository Name should be set as 'libs-release'.
 
 ![image1.png](https://support.snyk.io/hc/article_attachments/360007064697/uuid-293cfd2b-2cd5-b8a3-0671-bf6d2798a3bc-en.png)
 

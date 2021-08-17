@@ -1,6 +1,6 @@
 # Cloud Foundry integration overview
 
-##  Cloud Foundry integration overview
+## Cloud Foundry integration overview
 
 Snyk’s Cloud Foundry integration lets you monitor the deployed code of your Java, Node.js, PHP and Ruby Cloud Foundry applications for any known vulnerabilities found in the application’s dependencies, testing at a frequency you control.
 
@@ -29,7 +29,7 @@ Instructions for how to locate your Cloud Foundry API URL are below.
 
 You can find your Cloud Foundry API URL from the [cf CLI](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html) tool.
 
-`$ cf api API` endpoint: https://api.example.com \(API version: 2.2.0\)
+`$ cf api API` endpoint: [https://api.example.com](https://api.example.com) \(API version: 2.2.0\)
 
 From there you can login to your Snyk account and enter your Cloud Foundry credentials.
 

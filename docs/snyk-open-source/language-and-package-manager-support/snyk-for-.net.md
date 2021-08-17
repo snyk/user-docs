@@ -10,7 +10,7 @@ Features might not be available, depending on your subscription plan.
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![i\_icon\_nuget.png](https://support.snyk.io/hc/article_attachments/360007259058/uuid-b997ca27-61ff-f00b-941c-16bf3aa4a0e0-en.png) | [NuGet](https://www.nuget.org/)  | ✔︎ | ✔︎ | ✔︎ |  |  |
+| ![i\_icon\_nuget.png](https://support.snyk.io/hc/article_attachments/360007259058/uuid-b997ca27-61ff-f00b-941c-16bf3aa4a0e0-en.png) | [NuGet](https://www.nuget.org/) | ✔︎ | ✔︎ | ✔︎ |  |  |
 | ![i\_icon\_paket.png](https://support.snyk.io/hc/article_attachments/360007259078/uuid-d8e44fe4-c0ea-e3ea-de3b-1e15e4a6b391-en.png) | [Paket](https://fsprojects.github.io/Paket/index.html) | ✔︎ |  | ✔︎ |  |  |
 
 ### Snyk CLI tool for .NET projects <a id="h_01ED93MRAVCCCSMJTFJM4595T5"></a>
@@ -37,7 +37,7 @@ Examples of supported project files that resolve into **packages** include:
 
 * packages.config
 
- **Note**: whilst you should also be able to run `snyk test` without previously installing dependencies this will result in less accurate vulnerability results 
+  **Note**: whilst you should also be able to run `snyk test` without previously installing dependencies this will result in less accurate vulnerability results
 
 ### Dependencies managed by Paket
 
@@ -47,7 +47,7 @@ To use Paket a **paket.lock** file is required in combination with a **paket.dep
 
 #### Nuget
 
- Follow the same instructions as [Snyk CLI tool for .NET projects]()
+Follow the same instructions as [Snyk CLI tool for .NET projects](snyk-for-.net.md)
 
 In order to build the dependency tree, Snyk analyzes the **paket.dependencies** and **paket.lock** files.
 
@@ -105,7 +105,6 @@ From the Snyk UI, you can configure whether Snyk should scan your entire project
 
 **Update language preferences**
 
-1. 2. Go to settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt;  and click for .NET
-
-    - If checked, Snyk scans all development dependencies.
+1. 1. Go to settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; and click for .NET
+      * If checked, Snyk scans all development dependencies.
 

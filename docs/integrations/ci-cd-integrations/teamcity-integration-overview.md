@@ -4,13 +4,13 @@ Integrate the Snyk Security plugin with JetBrains’ continuous integration \(CI
 
 By scanning as part of your build and then displaying those test results directly from the TeamCity UI, the Snyk plugin enables you to more quickly track, identify and remediate issues that risk your application’s security posture over time, as fixes are made available for vulnerabilities or new vulnerabilities are disclosed.
 
-#### Supported languages and repos
+### Supported languages and repos
 
 Snyk supports all TeamCity projects regardless of which Git repo is used.
 
 All languages supported by both TeamCity and Snyk can be scanned for vulnerabilities by this plugin.
 
-#### TeamCity integration: how it works
+### TeamCity integration: how it works
 
 Use the Snyk plugin with your TeamCity projects to test and monitor your code for vulnerabilities on an ongoing basis, breaking builds when newly disclosed vulnerabilities related to your project are announced and receiving relevant notifications—all based on your configurations.
 
@@ -34,7 +34,7 @@ Use the Snyk plugin with your TeamCity projects to test and monitor your code fo
 18. If the severity threshold was defined for a severity that is assigned to any vulnerability in your project, TeamCity breaks the build.
 19. Once the snapshot is pushed to the Snyk UI, Snyk continues to monitor your project as new vulnerabilities are disclosed. Based on your configurations, if vulnerabilities are found, Snyk notifies you via email or Slack so that you can take immediate remediation action.
 
-#### TeamCity integration: use Snyk in your build
+### TeamCity integration: use Snyk in your build
 
 For any project, you can add Snyk to your build to scan the code while you build and to fail the build for vulnerabilities, based on your configurations.
 
@@ -66,11 +66,11 @@ For additional information with TeamCity and its features, refer to their docume
 
 7. From the top of the report, click View on Snyk.io to view the snapshot and vulnerability information directly from our app.
 
-#### TeamCity integration: install the Snyk plugin
+### TeamCity integration: install the Snyk plugin
 
 Install or upgrade the Snyk Security plugin with these steps. Once complete, you’re all set to add a Snyk step to your projects.
 
-### Warning
+## Warning
 
 You must sign up for an account with Snyk before you begin.
 
@@ -85,7 +85,7 @@ You must sign up for an account with Snyk before you begin.
 4. When the installation ends, the Administration Plugins List loads, notifying the plugin has been uploaded.
 5. Ensure the plugin is enabled.
 
-#### TeamCity configuration parameters
+### TeamCity configuration parameters
 
 <table>
   <thead>
