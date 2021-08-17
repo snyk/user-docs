@@ -1,5 +1,9 @@
 # Snyk runtime monitoring: introduction
 
+{% hint style="info" %}
+This feature is deprecated.
+{% endhint %}
+
 Snyk Runtime Monitoring does a couple of important things for your open source components during runtime. It:
 
 * Determines whether a vulnerable dependency is indeed being used at runtime in a way that can be exploited
