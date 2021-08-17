@@ -1,6 +1,6 @@
 # Snyk API info
 
-Our API docs live at [https://snyk.docs.apiary.io/](https://snyk.docs.apiary.io/)
+Our API docs live at [Snyk API](https://docs.snyk.io/snyk-api-info)
 
 **Feature availability**  
 This feature is available with Business and Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
