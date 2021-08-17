@@ -9,7 +9,7 @@ Snyk has a hierarchy that allows you to control access to features such as repor
 * **Organization:** the second level of grouping; for example, your team.
 * **Projects:** the lowest level for individual projects; for example, a container image.
 
-#### Snyk groups
+### Snyk groups
 
 Typically, a Snyk group represents the entire company or business division.
 
@@ -17,7 +17,7 @@ Groups can contain multiple organizations, allowing you to collaborate with mult
 
 See [What’s a Snyk group?](https://support.snyk.io/hc/en-us/articles/360004037617-What-s-a-Snyk-group-)
 
-#### Snyk organizations
+### Snyk organizations
 
 Organizations are contained in groups. Based on your company requirements, you can define organizations to represent business areas such as teams, products or environments.
 
@@ -25,15 +25,15 @@ Organizations can contain multiple projects. For example, if an organization rep
 
 When you sign up to Snyk using a social login, you have a default organization. Any projects you add appear in this organization by default.
 
-See [What’s a Snyk organization?](https://support.snyk.io/hc/en-us/articles/360004037637-What-s-a-Snyk-organization-) 
+See [What’s a Snyk organization?](https://support.snyk.io/hc/en-us/articles/360004037637-What-s-a-Snyk-organization-)
 
-#### Snyk projects
+### Snyk projects
 
 Projects are contained in organizations. Snyk projects can include manifest files, configuration files, and container images.
 
 See [Snyk projects](https://support.snyk.io/hc/en-us/sections/360004724958-Snyk-projects).
 
-### User access: member types
+## User access: member types
 
 Snyk provides four different types of members or users:
 

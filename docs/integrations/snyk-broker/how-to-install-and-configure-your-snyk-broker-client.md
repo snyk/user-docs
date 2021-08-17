@@ -1,6 +1,6 @@
 # How to install and configure your Snyk Broker client
 
-#### Snyk’s recommended and supported method of running the Snyk Broker client is using Docker.
+## Snyk’s recommended and supported method of running the Snyk Broker client is using Docker.
 
 To install and configure your client:
 

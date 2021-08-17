@@ -27,9 +27,9 @@ Snyk Broker has a client and a server component:
 
 All data, both in transit and at rest, is encrypted. Communication between the client and server takes place over a secure WebSocket connection. On startup, it dials out and establishes a two way communication path. It does not require opening incoming ports.
 
-### Using inbound and outbound connections
+## Using inbound and outbound connections
 
-* There is no direct inbound connection from Snyk to the Broker client. The broker client makes an outbound connection to **https://broker.snyk.io**, which establishes a WebSocket connection to allow communication with the Broker server. This way, there is no need to grant permissions to specific IPs.
+* There is no direct inbound connection from Snyk to the Broker client. The broker client makes an outbound connection to [https://broker.snyk.io](https://broker.snyk.io), which establishes a WebSocket connection to allow communication with the Broker server. This way, there is no need to grant permissions to specific IPs.
 * The Broker client initiates the outbound connection to establish the WebSocket. After the websocket is established, that allows inbound requests from Snyk via the WebSocket, with no need to allow inbound connectivity to the world or to Snyk specific IP addresses.
 
 The Broker client maintains an approved data list for inbound and outbound data requests. Only requests included in this approved list are allowed.

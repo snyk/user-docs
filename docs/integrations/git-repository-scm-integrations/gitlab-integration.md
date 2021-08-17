@@ -2,7 +2,7 @@
 
 Snyk's Gitlab integration supports Gitlab versions 9.5 and above \(API v4\).
 
-### Set up GitLab integration
+## Set up GitLab integration
 
 **Feature availability**  
 On-premise Gitlab integrations are available for customers on Enterprise plans and above. See [pricing plans](https://snyk.io/plans/) for more details.
@@ -17,9 +17,9 @@ This integration only works with GitLab instances that are publicly reachable \(
 
    ![image1.png](https://support.snyk.io/hc/article_attachments/360007145478/uuid-aa58b5a9-dd17-3219-6067-4ee6e3f4b384-en.png)
 
-**Note**: when using GitLab Enterprise integration, it is important to use the correct URL. For example, use [https://gitlab.yourcompany.com/](https://gitlab.yum.com/kfc-commerce/kfc-mobile) instead of [https://gitlab.yourcompany.com/subfolder1/...](https://gitlab.yum.com/kfc-commerce/kfc-mobile) The PAT will provide access to any of the repositories that have access granted to them. 
+**Note**: when using GitLab Enterprise integration, it is important to use the correct URL. For example, use [https://gitlab.yourcompany.com/](https://gitlab.yum.com/kfc-commerce/kfc-mobile) instead of [https://gitlab.yourcompany.com/subfolder1/...](https://gitlab.yum.com/kfc-commerce/kfc-mobile) The PAT will provide access to any of the repositories that have access granted to them.
 
-#### Required permissions and roles
+### Required permissions and roles
 
 There are two ways to integrate Snyk with GitLab, either via our Broker or directly. Our Broker enables organizations to integrate from within their private network. This article describes the permissions needed for direct integration \(when Broker is not implemented\).
 
@@ -36,7 +36,7 @@ To integrate with GitLab, as a Snyk admin user or as a member of the organizatio
 
 When the first user in a Snyk organization \(a Snyk admin account user\) sets up an integration with a GitLab personal token, the token is authenticated with GitLab, enabling Snyk access to the repositories in that account. Thereafter, all users in that Snyk organization can add and work with any related projects, while the merge requests themselves will appear in GitLab as having been opened by the original GitLab user \(the Snyk admin who set up the configuration\)
 
-### **Fix vulnerabilities with Snyk merge requests in GitLab**
+## **Fix vulnerabilities with Snyk merge requests in GitLab**
 
 When viewing a Snyk test report for a project that you own, or when looking at a project that you are watching with Snyk, you’ll see two options for fixing a vulnerability:
 
@@ -49,13 +49,13 @@ When you open a merge request via snyk.io, we will give you a heads-up when this
 
 Here’s an example for the merge request:
 
-### Get a Snyk merge request for newly disclosed vulnerabilities that affect you
+## Get a Snyk merge request for newly disclosed vulnerabilities that affect you
 
 Whenever a vulnerability is disclosed that affects a project you’re watching, Snyk will not only email you about it but also generate a Snyk merge request that addresses the vulnerabilities. You’ll receive a merge request similar to the example above.
 
-### Get a Snyk merge request when new upgrades or patches are available
+## Get a Snyk merge request when new upgrades or patches are available
 
 When no upgrade is available, you can ignore or patch the vulnerability \(patching is only available for Node.js projects\). When a better remediation option has become available, for example, an upgrade for a vulnerability you previously ignored, Snyk notifies you about this via email and also generates a merge request with the new fix.
 
-### Disable the GitLab integration
+## Disable the GitLab integration
 

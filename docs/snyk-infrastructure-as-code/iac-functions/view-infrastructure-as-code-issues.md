@@ -1,11 +1,11 @@
 # View Infrastructure as Code issues
 
-You can view configuration issues in your Infrastructure as Code configuration files, using [Snyk reports](https://support.snyk.io/hc/en-us/sections/360001138198-Reports). 
+You can view configuration issues in your Infrastructure as Code configuration files, using [Snyk reports](https://support.snyk.io/hc/en-us/sections/360001138198-Reports).
 
 **Feature availability**  
 This feature is available with all paid plans. See [Pricing plans](https://snyk.io/plans/) for more details.
 
-Infrastructure as Code configuration issues appear in the summary statistics and graphs by default, showing  all of the open issues across your projects and issue types:
+Infrastructure as Code configuration issues appear in the summary statistics and graphs by default, showing all of the open issues across your projects and issue types:
 
 ![image4.png](https://support.snyk.io/hc/article_attachments/360016579057/image4.png)
 
@@ -21,7 +21,7 @@ To view IaC issues only, select **Configuration** in the **Issue filters** drop 
 
 ![image3.png](https://support.snyk.io/hc/article_attachments/360016579157/image3.png)
 
-This shows the title of each issue and type, and the severity. 
+This shows the title of each issue and type, and the severity.
 
 You can also view the issues ungrouped; this shows more information about the project file that the issue is found in, and details on when it was first introduced:
 

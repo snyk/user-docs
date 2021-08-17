@@ -15,11 +15,11 @@ npm install -g snyk
 
 See [Getting started with the CLI](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli) for details.
 
-#### Stage 1: Add source control integration
+### Stage 1: Add source control integration
 
 if you already have an integration set up, you can go to Step 3.
 
-Choose a source code integration, to allow Snyk to work on a project. 
+Choose a source code integration, to allow Snyk to work on a project.
 
 1. Log in to Snyk.io.
 2. Select **Integrations &gt; Source control**.
@@ -41,7 +41,7 @@ Add projects to test with Snyk, by choosing repositories for Snyk to test and mo
 
 If you encounter any errors during import, see the [Importing projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects) information.
 
-#### Stage 3: View vulnerabilities
+### Stage 3: View vulnerabilities
 
 You can now view vulnerability results for imported projects. The **Projects** tab appears by default after import, showing vulnerability information for project you've imported.
 
@@ -51,9 +51,9 @@ You can now view vulnerability results for imported projects. The **Projects** t
 
 2. Click on an entry to open the issues view for that entry, including the module, where it was introduced, and the remediation to fix it, plus more details about the vulnerability itself: ![Detailed\_vuln\_information.png](https://support.snyk.io/hc/article_attachments/360012555638/Detailed_vuln_information.png)
 
-See  [View project information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information) for more details.
+See [View project information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information) for more details.
 
-#### Stage 4: Fix vulnerabilities
+### Stage 4: Fix vulnerabilities
 
 For JavaScript, Ruby and Java projects, Snyk can remediate your vulnerabilities via fix pull/merge requests:
 
@@ -71,7 +71,7 @@ For JavaScript, Ruby and Java projects, Snyk can remediate your vulnerabilities 
 
 See [Fixing vulnerabilities](https://docs.snyk.io/snyk-open-source/open-source-basics/fixing-vulnerabilities) for more details.
 
-### For more information
+## For more information
 
 See [Snyk Open Source](https://docs.snyk.io/snyk-open-source).
 

@@ -1,8 +1,8 @@
 # IaC ignores using the .snyk policy file
 
-When scanning your IaC configuration files using the Snyk CLI with **snyk iac test** you can ignore issues that are not relevant to you. 
+When scanning your IaC configuration files using the Snyk CLI with **snyk iac test** you can ignore issues that are not relevant to you.
 
-You can do this by using the [.snyk policy file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file), which we recommend is stored and versioned in the root of your working directory for where you store your IaC configuration files. 
+You can do this by using the [.snyk policy file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file), which we recommend is stored and versioned in the root of your working directory for where you store your IaC configuration files.
 
 ## Ignore paths
 
@@ -34,7 +34,7 @@ ignore:
         created: 2021-07-27T08:40:35.251Z
 ```
 
-This file can be created with the **snyk ignore** command, See [Ignore vulnerabilities](https://support.snyk.io/hc/en-us/articles/360003851317-Ignore-vulnerabilities).  
+This file can be created with the **snyk ignore** command, See [Ignore vulnerabilities](https://support.snyk.io/hc/en-us/articles/360003851317-Ignore-vulnerabilities).
 
 The \`\*\` object key causes the CLI to ignore all instances of the SNYK-CC-K8S-1 vulnerability. You can add multiple entries, keyed by the IaC issue ID, to ignore multiple vulnerabilities.
 
@@ -92,5 +92,5 @@ The CLI accepts a flag **--policy-path=..**., which overrides the location of po
 
 Policies are not loaded automatically when the argument to **snyk iac test** is a file rather than a directory. In this case, **--policy-path** must be specified in order to load policies.
 
-The CLI accepts a flag  **--ignore-policy**, which will cause any found **.snyk** policy files to be ignored.
+The CLI accepts a flag **--ignore-policy**, which will cause any found **.snyk** policy files to be ignored.
 

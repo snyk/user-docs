@@ -9,7 +9,7 @@ Snyk Container:
 
 Read more about how we scan images for vulnerabilities in Container image scanning.
 
-### Snyk Container integrations
+## Snyk Container integrations
 
 ![projects.png](https://support.snyk.io/hc/article_attachments/360012332378/projects.png)
 
@@ -27,5 +27,5 @@ The integrations you use depends on your requirements and workflow. You can star
 
 For example, it’s common to use our CI integrations to provide fast feedback to development teams when you build an image, then use the Kubernetes integration to provide assurance around running images in production.
 
-Learn more about [container security](https://snyk.io/learn/container-security/). 
+Learn more about [container security](https://snyk.io/learn/container-security/).
 

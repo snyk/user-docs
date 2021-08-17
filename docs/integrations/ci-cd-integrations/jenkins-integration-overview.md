@@ -9,5 +9,5 @@ The Jenkins plugin supports:
 * All Jenkins freestyle projects and pipelines regardless of which **Source Code Management** is configured
 * All languages that [supported by Snyk CLI](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support) and Jenkins
 
-For more info about the plugin works and usage instructions, visit  the [Jenkins plugin repository](https://github.com/jenkinsci/snyk-security-scanner-plugin).
+For more info about the plugin works and usage instructions, visit the [Jenkins plugin repository](https://github.com/jenkinsci/snyk-security-scanner-plugin).
 

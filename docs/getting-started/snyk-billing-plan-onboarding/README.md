@@ -1,6 +1,6 @@
 # Snyk billing plan onboarding
 
-### Overview
+## Overview
 
 Snyk provides a free trial for our [Team plan](https://snyk.io/plans/). This trial allows you to experience more value using Snyk.
 
@@ -8,9 +8,9 @@ The Snyk Team plan gives you unlimited tests, giving you far greater capacity to
 
 Unlimited tests allow you to import, test and monitor all of your projects, and crucially to monitor them at various stages of your software development lifecycle. This reduces the chances of something slipping through the cracks, while at the same time shifting left as much of the finding-and-fixing process.
 
-In addition, the Team plan provides [license compliance features](), [IaC scanning](), and [Jira integration]().
+In addition, the Team plan provides [license compliance features](./), [IaC scanning](./), and [Jira integration](./).
 
-#### More details
+### More details
 
 * See [Getting started with Snyk products](https://support.snyk.io/hc/en-us/sections/360004349758-Getting-started-with-Snyk-products) for individual quickstart guides for Snyk products.
 * See [Snyk Customer Onboarding - Team Plan](https://docs.snyk.io/getting-started/snyk-billing-plan-onboarding/snyk-customer-onboarding-team-plan) for more detailed instructions on onboarding your team with the Team plan.
@@ -33,11 +33,11 @@ The earliest chance you have to catch vulnerabilities is in the IDE, when the co
 
 ![IDEs-support.png](https://support.snyk.io/hc/article_attachments/360017917937/IDEs-support.png)
 
-Snyk supports many of the popular IDEs, with even more support coming soon. 
+Snyk supports many of the popular IDEs, with even more support coming soon.
 
 See [IDE tools](https://support.snyk.io/hc/en-us/sections/360001138118-IDE-tools) for more details.
 
-At the next stage is code storage, usually some kind of SCM \(Source Code Management\) system. Snyk supports many popular SCMs including GitHub, GitLab, Bitbucket, and Azure Repos. 
+At the next stage is code storage, usually some kind of SCM \(Source Code Management\) system. Snyk supports many popular SCMs including GitHub, GitLab, Bitbucket, and Azure Repos.
 
 Using Snyk with SCM integrations allows Snyk to:
 
@@ -66,9 +66,9 @@ Our support for Kubernetes allows you to find any vulnerabilities in running wor
 
 ![kubernetes.png](https://support.snyk.io/hc/article_attachments/360017918777/kubernetes.png)
 
-See [Kubernetes workload and image scanning](https://support.snyk.io/hc/en-us/sections/360001114238-Kubernetes-workload-and-image-scanning) for more details. 
+See [Kubernetes workload and image scanning](https://support.snyk.io/hc/en-us/sections/360001114238-Kubernetes-workload-and-image-scanning) for more details.
 
-### Infrastructure as Code scanning
+## Infrastructure as Code scanning
 
 Snyk Infrastructure as Code \(IaC\) helps developers write secure configurations, well before code reaches production. Snyk’s developer-first approach meets developers where they work, and provides fixes that can be directly merged into code.
 

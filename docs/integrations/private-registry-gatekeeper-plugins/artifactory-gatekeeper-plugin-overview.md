@@ -10,13 +10,13 @@ Once installed, the Snyk plugin runs in the background and automatically:
 1. Blocks devs from downloading packages with vuln/license issues according to a predefined threshold that the admin sets
 2. Adds vuln and license data from Snyk as properties in artifact
 
-### Note
+## Note
 
- This article refers to the Artifactory _Plugin_, an independent piece of software that is installed on the Artifactory machine and serves as a gatekeeper, blocking vulnerable packages from being downloaded from the Artifactory instance rather than the [Artifactory _Integration_](https://docs.snyk.io/integrations/private-registry-integrations/artifactory-registry-for-maven) - an internal integration in Snyk app, that allows configuring SCM / CLI scans to use custom package registries.
+This article refers to the Artifactory _Plugin_, an independent piece of software that is installed on the Artifactory machine and serves as a gatekeeper, blocking vulnerable packages from being downloaded from the Artifactory instance rather than the [Artifactory _Integration_](https://docs.snyk.io/integrations/private-registry-integrations/artifactory-registry-for-maven) - an internal integration in Snyk app, that allows configuring SCM / CLI scans to use custom package registries.
 
 By scanning artifacts as part of your workflow and then displaying those test results directly from the Artifactory UI, the Snyk plugin enables you to more quickly track and identify issues that risk your application’s security and avoid using those artifacts in your projects.
 
-#### Artifactory Gatekeeper plugin: supported languages and repos
+### Artifactory Gatekeeper plugin: supported languages and repos
 
 Our Artifactory plugin is supported for the following:
 
@@ -26,7 +26,7 @@ Our Artifactory plugin is supported for the following:
 * sbt \(.jar files\)
 * pip
 
-#### Install the Artifactory Gatekeeper plugin
+### Install the Artifactory Gatekeeper plugin
 
 Install or upgrade the Snyk Security plugin with these steps. Once complete, Snyk automatically scans your artifacts every time you request to download them.
 
@@ -84,7 +84,7 @@ Install or upgrade the Snyk Security plugin with these steps. Once complete, Sny
 
     ![image2.png](https://support.snyk.io/hc/article_attachments/360007146298/uuid-018348b6-2153-20e7-27d8-71aca312f6eb-en.png)
 
-#### Artifactory plugin: use Snyk for your artifacts
+### Artifactory plugin: use Snyk for your artifacts
 
 Snyk runs in the background and whenever a download is requested from the UI or from the CLI, Snyk automatically scans the artifact to evaluate vulnerabilities and license issues.
 
@@ -96,7 +96,7 @@ When the scan fails, based on the configurations that were set during installati
 
 When your setup blocks downloads with issues, you can override this configuration at the artifact level—enabling downloads even when issues are identified, per artifact.
 
-#### Artifactory: understanding the Snyk test results
+### Artifactory: understanding the Snyk test results
 
 From the UI, the Snyk properties are displayed similar to the following:
 

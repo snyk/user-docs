@@ -9,7 +9,7 @@ This documentation describes using Snyk Code with the Web UI. You can also use S
 * Projects that include code in [a supported language](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support) \(currently Java, JavaScript, and Python\).
 * One of the following supported source code management systems \(SCMs\): GitHub cloud, BitBucket cloud, Gitlab cloud.
 
-#### Stage 1: Enable Snyk Code
+### Stage 1: Enable Snyk Code
 
 Snyk Code is disabled by default, so you must enable it for each organization:
 
@@ -18,7 +18,7 @@ Snyk Code is disabled by default, so you must enable it for each organization:
 3. Under **Enable Snyk Code**, change **Disabled** to **Enabled:** ![enable-snyk-code.png](https://support.snyk.io/hc/article_attachments/360019769157/enable-snyk-code.png)
 4. Click **Save changes**.
 
-#### Stage 2: Add source control integration
+### Stage 2: Add source control integration
 
 if you already have an integration set up, you can skip this step.
 
@@ -49,7 +49,7 @@ Currently Snyk Code does not support the **Exclude folders** option during impor
 
 See [Snyk projects](https://support.snyk.io/hc/en-us/sections/360004724958-Snyk-projects) for more details.
 
-#### Stage 4: View vulnerabilities
+### Stage 4: View vulnerabilities
 
 You can now view vulnerability results for imported projects. The **Projects** tab appears by default after import, showing vulnerability information for projects you've imported.
 
@@ -61,14 +61,14 @@ You can now view vulnerability results for imported projects. The **Projects** t
 
 See [View project information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information) for more details.
 
-#### Stage 5: View issue details
+### Stage 5: View issue details
 
 Click **Full Details** on an issue to view more details about it, such as:
 
 * **Data Flow**: The issue's taint flow from the source \(the user input\) to the sink \(the operation that needs to receive clean input and can be exploited otherwise\).
 * **Remediation Strategy**: An area that focuses on how to fix the problem with more details, references and code samples related to it.
 
-### For more information
+## For more information
 
 * [Snyk Code](https://docs.snyk.io/snyk-code)
 * [Developer-first SAST with Snyk Code](https://snyk.io/blog/developer-first-sast-with-snyk-code/)

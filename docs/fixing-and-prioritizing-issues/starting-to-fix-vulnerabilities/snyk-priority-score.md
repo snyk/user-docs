@@ -6,7 +6,7 @@ Snyk created a Priority Score to make the prioritization of issues as quick and 
 
 Snyk's security group found a significant correlation between trending vulnerabilities and exploits or proof of concept's that can be found in the wild. Social trends are calculated and shown for all issues, vulnerabilities and licenses and range from 0 to 1,000 \(0 is considered low risk and 1,000 is considered critical\). This gives users a high degree of granularity that reflects the many considerations taken into account. The granularity avoids having too many issues ending up with the same score so users can determine priority at a glance with a high degree of accuracy.
 
-Snyk does not use the CVSS score alone to determine priority: Snyk’s Priority Score is a comprehensive scoring system that processes multiple factors, including the CVSS score, the availability of a fix, known exploits, how new the vulnerability is, and whether it is reachable or not. See [How it works]() section for details.
+Snyk does not use the CVSS score alone to determine priority: Snyk’s Priority Score is a comprehensive scoring system that processes multiple factors, including the CVSS score, the availability of a fix, known exploits, how new the vulnerability is, and whether it is reachable or not. See [How it works](snyk-priority-score.md) section for details.
 
 For each issue, Snyk processes and weighs several factors in a proprietary algorithm, to produce the score for that issue.
 
@@ -22,11 +22,11 @@ Currently, these factors include:
 * [**Social Trends**](https://docs.snyk.io/fixing-and-prioritizing-issues/prioritizing-issues/prioritize-by-social-trends): Snyk monitors mentions of known vulnerabilities in Twitter, calculating the trend of tweets and reactions.
 * Malicious Packages: Snyk will prioritize vulnerabilities originating from malicious packages.
 
-#### Priority calculation for Kubernetes
+### Priority calculation for Kubernetes
 
 Kubernetes configs images imported from the Kubernetes integration have a number of additional contributing factors for priority score calculation. See [Snyk Priority Score and Kubernetes](https://support.snyk.io/hc/en-us/articles/360010906897-Snyk-Priority-Score-and-Kubernetes).
 
-#### Priority calculation for Snyk Code
+### Priority calculation for Snyk Code
 
 A number of specific factors contribute to priority calculation for Snyk Code, including:
 
@@ -45,7 +45,7 @@ Issues can be filtered on the left.
 
 ![Screen\_Shot\_2021-07-14\_at\_1.41.24\_PM.png](https://support.snyk.io/hc/article_attachments/4404034272273/Screen_Shot_2021-07-14_at_1.41.24_PM.png)
 
-### View scores in the Reports
+## View scores in the Reports
 
 The **Issues** tab in the reports includes the Priority Score as it's own sortable column. By default the table is already sorted by the score, to show you the most pressing issues first.
 

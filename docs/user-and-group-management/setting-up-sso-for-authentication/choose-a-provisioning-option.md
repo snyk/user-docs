@@ -2,11 +2,11 @@
 
 Determine how new users in your organization get access to Snyk:
 
-* [Open to all]()
-* [Invitation required]()
-* [Custom]()
+* [Open to all](choose-a-provisioning-option.md)
+* [Invitation required](choose-a-provisioning-option.md)
+* [Custom](choose-a-provisioning-option.md)
 
-{% embed url="https://youtu.be/VOGYgcv9Xmc" %}
+{% embed url="https://youtu.be/VOGYgcv9Xmc" caption="" %}
 
 With the Open option, all users have automatic access to Snyk by using SSO to log in. They will have access to all organizations in your selected group. Their accounts will all be provisioned with the same role, with two options:
 

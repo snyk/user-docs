@@ -4,7 +4,7 @@ Use Snyk Code with the standard Snyk web interface to find and fix vulnerabiliti
 
 ![Screenshot\_2021-06-17\_at\_13.23.19.png](https://support.snyk.io/hc/article_attachments/4402731192465/Screenshot_2021-06-17_at_13.23.19.png)
 
-### View project vulnerabilities
+## View project vulnerabilities
 
 1. In your **Projects** area, select the project to open: ![select-project.png](https://support.snyk.io/hc/article_attachments/360015998637/select-project.png)
 2. Snyk Code displays information and vulnerability cards for that project: ![SnykCofe\_Priority\_Score.png](https://support.snyk.io/hc/article_attachments/4405144366353/SnykCofe_Priority_Score.png)
@@ -15,7 +15,7 @@ Information available shows standard Snyk project information \(see [Snyk projec
 * **Overview**, **History** and **Settings** information. For example, use the **History** section to view previous snapshots of projects.
 * Filters on the left of the screen.
 
-#### Vulnerability card details
+### Vulnerability card details
 
 Each vulnerability card shows specific details about that vulnerability:
 
@@ -30,10 +30,10 @@ Card details include:
 
 See [Issue card information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/issue-card-information) for more details.
 
-* Click **Ignore** to ignore this vulnerability \(see [Ignore a vulnerability]()\)
-* Click **Full details** to view more information \(see [View full details]()\).
+* Click **Ignore** to ignore this vulnerability \(see [Ignore a vulnerability](using-snyk-code-web.md)\)
+* Click **Full details** to view more information \(see [View full details](using-snyk-code-web.md)\).
 
-### Ignore a vulnerability
+## Ignore a vulnerability
 
 Ignore functionality is not offered for Open Source repositories.
 
@@ -65,10 +65,10 @@ Full details include all the information in the vulnerability card, plus:
 
 * **Data flow**: this area on the left shows the full taint flow of the issue in the code, from the source \(the user input\) to the sink \(the operation that needs to receive clean input and can be exploited otherwise\). In the above example, the developer has not sanitized the input, allowing an attacker to do a pass traversal to potentially access any file on the file system, including sensitive data such as password files.
 * **Fix analysis:** insight into the remediation and background of the issue itself. Developers are able to see fix-related information, vulnerability overview information \(understanding and approach\), and fix examples for this vulnerability type.
-* A link to the source file, which you can open to make changes directly \(see [Open the source code file]()\).
+* A link to the source file, which you can open to make changes directly \(see [Open the source code file](using-snyk-code-web.md)\).
 * A full window showing the code affected, with specific lines highlighted to accompany the **Data flow** information.
 
-### Example: Cross-site Scripting \(XSS\)
+## Example: Cross-site Scripting \(XSS\)
 
 This shows an example of a common vulnerability, Cross-site Scripting \(XSS\). XSS vulnerabilities allow attackers to compromise the interactions users have with your application, including gaining control over the application's functionality and data.
 

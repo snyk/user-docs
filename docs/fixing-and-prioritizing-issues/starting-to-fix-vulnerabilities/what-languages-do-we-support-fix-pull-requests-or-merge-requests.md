@@ -2,7 +2,7 @@
 
 When integrations are created within Snyk where the user has read and write permissions from respective integrations, Snyk can provide Fix PRs or MRs for dependencies that may have a patch or an upgrade which would fix a vulnerability.
 
-Snyk currently supports the ability to create Fix Pull Requests \(Fix PRs\) or Merge Requests \(MRs\) via [Integration](https://docs.snyk.io/integrations) in the following package managers: 
+Snyk currently supports the ability to create Fix Pull Requests \(Fix PRs\) or Merge Requests \(MRs\) via [Integration](https://docs.snyk.io/integrations) in the following package managers:
 
 * [NPM](https://docs.snyk.io/snyk-open-source/language-and-package-manager-support/snyk-for-javascript)
 * [Yarn](https://docs.snyk.io/snyk-open-source/language-and-package-manager-support/snyk-for-javascript)

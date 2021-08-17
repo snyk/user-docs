@@ -9,7 +9,7 @@ Ensure you have:
 
 See [Prerequisites](https://solutions.snyk.io/snyk-academy/container/prerequisites) for more details.
 
-#### Stage 1: Add container registry integration
+### Stage 1: Add container registry integration
 
 Choose a container registry integration, to connect the registry with Snyk:
 
@@ -21,7 +21,7 @@ Choose a container registry integration, to connect the registry with Snyk:
 
    ![Container-Account-credentials.png](https://support.snyk.io/hc/article_attachments/360012609198/Container-Account-credentials.png)
 
-Add projects for your selected container, to start scanning with Snyk. 
+Add projects for your selected container, to start scanning with Snyk.
 
 1. Click **Add Project**, and select the integration registry entry to add from: ![Containers-\_Add\_projects.png](https://support.snyk.io/hc/article_attachments/360012557818/Containers-_Add_projects.png)
 2. Select the container repository and tags to import, then click **Add selected repositories** to import them into your projects:  
@@ -29,11 +29,11 @@ Add projects for your selected container, to start scanning with Snyk.
 
    Importing also sets Snyk to run a daily check on the repositories for vulnerabilities.
 
-3. A progress bar appears: click **View log** to see log results. 
+3. A progress bar appears: click **View log** to see log results.
 
 If you encounter any errors during import, see the [Importing projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects) information.
 
-#### Stage 3: View vulnerabilities
+### Stage 3: View vulnerabilities
 
 You can now see vulnerability results for imported projects.
 
@@ -48,7 +48,7 @@ See [Analysis and remediation for your images from the Snyk app](https://docs.sn
 2. Rebuild your image.
 3. Snyk automatically rescans your new image after it is pushed.
 
-### For more information
+## For more information
 
 See [Snyk Container](https://docs.snyk.io/snyk-container).
 

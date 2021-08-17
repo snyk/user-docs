@@ -7,7 +7,7 @@ Snyk supports workflows to fix vulnerabilities using:
 * Automatic pull / merge requests \(PRs / MRs\).
 * Manual pull / merge requests.
 
-### Manual pull / merge requests for a project code
+## Manual pull / merge requests for a project code
 
 To generate a PR / MR directly from your project, using the Snyk UI:
 

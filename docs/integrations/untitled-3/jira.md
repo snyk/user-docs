@@ -3,11 +3,11 @@
 **Feature availability**  
 This feature is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.
 
-#### **Set up your Jira integration**
+### **Set up your Jira integration**
 
 Our Jira integration allows you to manually raise Jira issues in the Snyk UI for vulnerabilities or license issues, and also includes an API \([see our API docs](https://snyk.docs.apiary.io/#reference/projects/project-jira-issues)\).
 
-### Caution
+## Caution
 
 if your Jira instance is private, you'll need to set up with Snyk Broker and then follow our brokered Jira setup instructions.
 
@@ -35,7 +35,7 @@ You can also see which Jira issues have been created from the Issues view in you
 
 ![image4.png](https://support.snyk.io/hc/article_attachments/360007146598/uuid-cd4e8cae-2528-a922-5a03-5f23c42d4ac2-en.png)
 
-### See also:
+## See also:
 
 [Enable permissions for Snyk Broker from your third-party tool](https://docs.snyk.io/integrations/snyk-broker/enable-permissions-for-snyk-broker-from-your-third-party-tool)
 

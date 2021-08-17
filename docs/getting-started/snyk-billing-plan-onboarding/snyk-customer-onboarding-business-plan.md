@@ -38,7 +38,7 @@ Learn more about [Snyk CI/CD integration good practices](https://support.snyk.io
 
 ### Add Docker scanning
 
-Snyk supports testing and monitoring Docker images that have their dependencies managed by Debian, RPM, or APK. Docker scanning is available via the CLI. 
+Snyk supports testing and monitoring Docker images that have their dependencies managed by Debian, RPM, or APK. Docker scanning is available via the CLI.
 
 Learn about [Snyk Container](https://docs.snyk.io/snyk-container).
 
@@ -64,9 +64,9 @@ Learn more about [groups and organizations](https://support.snyk.io/hc/en-us/art
 
 ## Use Single Sign-on
 
-The Business plan allows you to use your single sign-on \(SSO\) provider to simplify new user provisioning and access to Snyk. 
+The Business plan allows you to use your single sign-on \(SSO\) provider to simplify new user provisioning and access to Snyk.
 
-Snyk can integrate with different types of identity providers, such as SAML, OIDC, or even ADFS. 
+Snyk can integrate with different types of identity providers, such as SAML, OIDC, or even ADFS.
 
 On the Business plan, there are two user provisioning options you can implement with SSO.
 
@@ -75,11 +75,11 @@ On the Business plan, there are two user provisioning options you can implement 
 
 To set up SSO, you configure a few SSO details with your identity provider, and provide information from your identity provider to Snyk Support so they can finalize the configuration.
 
-Learn more about [setting up SSO](https://support.snyk.io/hc/en-us/articles/360018025297-Introduction-to-Snyk-Single-Sign-On-SSO-). 
+Learn more about [setting up SSO](https://support.snyk.io/hc/en-us/articles/360018025297-Introduction-to-Snyk-Single-Sign-On-SSO-).
 
 ## Integrate Snyk with Jira
 
-Integrate Snyk with Jira to manage the work of resolving issues. Use our Jira integration API or open Jira tickets with a button on Snyk project issue cards. Jira tickets collect details your engineers will need to resolve vulnerabilities. 
+Integrate Snyk with Jira to manage the work of resolving issues. Use our Jira integration API or open Jira tickets with a button on Snyk project issue cards. Jira tickets collect details your engineers will need to resolve vulnerabilities.
 
 Learn more about [configuring the Snyk Jira integration](https://docs.snyk.io/integrations/untitled-3/jira).
 
@@ -105,7 +105,7 @@ Learn more about [fixing vulnerabilities](https://docs.snyk.io/fixing-and-priori
 
 ## Prioritize issues
 
-Snyk lists the issues found in your project. There are different types of filters available to help you focus your attention on the most important vulnerabilities. 
+Snyk lists the issues found in your project. There are different types of filters available to help you focus your attention on the most important vulnerabilities.
 
 ![filters.png](https://support.snyk.io/hc/article_attachments/360019239018/filters.png)
 
@@ -135,13 +135,13 @@ Learn more about [Snyk APIs](https://snyk.docs.apiary.io/#).
 
 To get help, navigate to snyk.io and use the help agent in the bottom right corner.
 
-Make sure you provide an email address to help our team communicate with you. Or email support@snyk.io directly. Note that some issues may have a longer response time. 
+Make sure you provide an email address to help our team communicate with you. Or email support@snyk.io directly. Note that some issues may have a longer response time.
 
 ![pasted\_image\_0\_\_4\_.png](https://support.snyk.io/hc/article_attachments/360011776277/pasted_image_0__4_.png)
 
-## More about best practices 
+## More about best practices
 
-Read more about best practices for using Snyk in your CI/CD or the git integration 
+Read more about best practices for using Snyk in your CI/CD or the git integration
 
 * [Snyk SCM integration: good practices](https://support.snyk.io/hc/en-us/articles/360018010597)
 * [Snyk CI/CD Integration: good practices](https://support.snyk.io/hc/en-us/articles/360018245398)

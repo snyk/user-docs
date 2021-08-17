@@ -8,7 +8,7 @@
 * A unique UUID token. See [Retrieve a unique Broker client token](https://docs.snyk.io/integrations/snyk-broker/retrieve-a-unique-broker-client-token).
 * Docker configured to pull images from Docker Hub.
 
-### Prepare hosts for installation
+## Prepare hosts for installation
 
 We recommend configuring at least two separate instances of the Broker client for each integration, either on different hosts or installed via a Kubernetes system. This ensures that you always have at least two instances running for redundancy.
 

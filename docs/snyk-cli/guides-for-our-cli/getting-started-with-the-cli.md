@@ -2,14 +2,14 @@
 
 The Snyk Command Line Interface \(CLI\) helps you find and fix known vulnerabilities in your dependencies, both manually and as part of your Continuous Integration \(CI\) build system.
 
-See [Language Support](https://support.snyk.io/hc/en-us/articles/360000911957-Language-support) for details about package managers and languages that the CLI supports. 
+See [Language Support](https://support.snyk.io/hc/en-us/articles/360000911957-Language-support) for details about package managers and languages that the CLI supports.
 
-### Install and authenticate the Snyk CLI
+## Install and authenticate the Snyk CLI
 
 1. Install the Snyk CLI using npm, Homebrew, Scoop or a manual installer from Snyk’s GitHub. See [Install the Snyk CLI](https://docs.snyk.io/snyk-cli/install-the-snyk-cli). 
 2. To associate your Snyk account with the CLI, authenticate your account, either through your browser or using your API token. See [Authenticate the CLI with your account](https://docs.snyk.io/snyk-cli/install-the-snyk-cli/authenticate-the-cli-with-your-account).
 
-### Build your project
+## Build your project
 
 Before testing for vulnerabilities you must build your project, unless it has one of the following lock files:
 
@@ -31,7 +31,7 @@ Examples of how to build/install your project:
 `dotnet restore`  
 `dep ensure`
 
-### Test for vulnerabilities
+## Test for vulnerabilities
 
 Once installed and authenticated, change directory into a folder containing a supported package manifest file \(package.json, pom.xml, composer.lock, etc.\) and run:
 

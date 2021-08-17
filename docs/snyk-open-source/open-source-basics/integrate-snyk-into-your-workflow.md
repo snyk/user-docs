@@ -2,24 +2,22 @@
 
 This example shows how Snyk can integrate into your GitHub-based workflow.
 
-### Step 1: Set up environment
+## Step 1: Set up environment
 
 1. Open up [Snyk CLI](https://docs.snyk.io/snyk-cli), and run a git clone command on the **goof** repository.  
 
-
-   ```text
+```text
    git clone https://github.com/snyk/goof.git
-   ```
+```
 
-2. Create a new branch, add vulnerabilities on this branch, then merge changes back to GitHub as a Pull Request:  
+1. Create a new branch, add vulnerabilities on this branch, then merge changes back to GitHub as a Pull Request:  
 
-
-   ```text
+```text
    git branch add_vulns
    git checkout add_vulns
-   ```
+```
 
-### Step 2: Add a open source dependency
+## Step 2: Add a open source dependency
 
 Review the **package.json** manifest file in your cloned goof application, to see multiple direct dependencies listed:
 
@@ -31,8 +29,7 @@ To add the dependency:
 
 1. Add the **tinymce 4.1.0** library at the bottom of the dependencies list:  
 
-
-   ```text
+```text
    {
    "name": "goof",
    ...
@@ -43,11 +40,11 @@ To add the dependency:
    "tinymce": "4.1.0"
    },
    ...
-   ```
+```
 
-   Tip: remember to place a comma after the previous dependency.
+Tip: remember to place a comma after the previous dependency.
 
-2. Create a [lock file](https://docs.npmjs.com/files/package-lock.json) for our Node application:
+1. Create a [lock file](https://docs.npmjs.com/files/package-lock.json) for our Node application:
 
    ```text
    npm install --package-lock
@@ -55,29 +52,29 @@ To add the dependency:
 
    Tip: if this file already exists, run rm package-lock.json to remove it.
 
-### Step 3: Commit and review changes
+## Step 3: Commit and review changes
 
 1. Commit your change locally, checking the status of the change in our local git repository, then adding the change to our local git, then committing it:  
 
-
-   ```text
+```text
    git status
    git add package*
    git commit -m "adding tinymce v4.1.0"
-   ```
+```
 
-2. Commit your local code change to GitHub, transferring the files and history to your upstream git repository on GitHub:  
+1. Commit your local code change to GitHub, transferring the files and history to your upstream git repository on GitHub:  
 
-
-   ```text
+```text
    git push --set-upstream origin add_vulns
-   ```
+```
 
-    GitHub has received your changes on your **add\_vulns** branch.
+```text
+GitHub has received your changes on your **add\_vulns** branch.
+```
 
-3. In GitHub, click **Compare & pull request** to compare the **add\_vulns** branch with the **master** branch and generate a pull request:  ![click-compare.png](https://support.snyk.io/hc/article_attachments/360016512098/click-compare.png)
+1. In GitHub, click **Compare & pull request** to compare the **add\_vulns** branch with the **master** branch and generate a pull request:  ![click-compare.png](https://support.snyk.io/hc/article_attachments/360016512098/click-compare.png)
 
-### Step 4: Snyk tests pull request checks
+## Step 4: Snyk tests pull request checks
 
 Snyk automatically tests your pull request for vulnerability and license checks in the merge process:
 

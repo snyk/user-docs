@@ -2,13 +2,13 @@
 
 Snyk offers security scanning to test your projects for vulnerabilities, both through your CLI and through different integrations from our UI.
 
- **Supported versions:** For officially supported Java versions, operating systems, and Node.js versions see the [Gradle support](https://github.com/snyk/snyk-gradle-plugin#support) and [Maven support](https://github.com/snyk/snyk-mvn-plugin#support) tables.
+**Supported versions:** For officially supported Java versions, operating systems, and Node.js versions see the [Gradle support](https://github.com/snyk/snyk-gradle-plugin#support) and [Maven support](https://github.com/snyk/snyk-mvn-plugin#support) tables.
 
 The following table provides a general outline of the general features we offer by language. In addition to these features, we also offer additional functionality related to the specific integrations you configure and more.
 
 Some features might not be available, depending on your pricing plan. See [pricing plans](https://snyk.io/plans/) for more details.
 
-| Package managers / Features  | CLI support  | Git support  | License scanning  | Remediation  | Runtime monitoring  |
+| Package managers / Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | [Maven](https://maven.apache.org/) | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
 | [Gradle](https://gradle.org/) | ✔︎ | ✔︎ | ✔︎ | ✔︎ \(advice\) |  |
@@ -53,15 +53,15 @@ By default, Snyk CLI scans only the current project \(the project in the root of
 * To scan all projects at once \(recommended\), use the `--all-sub-projects` flag:
 
   ```text
-  snyk test --all-sub-projects 
+  snyk test --all-sub-projects
   ```
 
-   _Note: Each of the individual sub-projects appears as a separate Snyk project in the UI._
+  _Note: Each of the individual sub-projects appears as a separate Snyk project in the UI._
 
 * To scan a specific project \(for example, _myapp_\):
 
   ```text
-  snyk test --sub-project=myapp 
+  snyk test --sub-project=myapp
   ```
 
 #### Solving Issues on Gradle CLI Projects with lockfile
@@ -80,7 +80,7 @@ This will **ignore compileOnly** and save only the necessary information to anal
 
 #### Configurations
 
-Gradle dependencies are declared for a particular scope, each scope is represented by Gradle with the help of [Configurations](https://docs.gradle.org/current/userguide/declaring_dependencies.html#sec:what-are-dependency-configurations). For example: 
+Gradle dependencies are declared for a particular scope, each scope is represented by Gradle with the help of [Configurations](https://docs.gradle.org/current/userguide/declaring_dependencies.html#sec:what-are-dependency-configurations). For example:
 
 * **compileOnly** configuration for development dependencies
 * **compile** configuration that includes compile and runtime dependencies
@@ -112,21 +112,20 @@ In such cases, Snyk scan fails with an error from Gradle which may contain one o
 
 To avoid such conflicts:
 
-* **Use a specific configuration\(s\):** if you know of a build configuration that has all the required attributes and the configuration is identical across all sub-projects included in the test, specify that configuration.   
+* **Use a specific configuration\(s\):** if you know of a build configuration that has all the required attributes and the configuration is identical across all sub-projects included in the test, specify that configuration.  
   For example:
 
   ```text
   --configuration-matching=prodReleaseRuntimeClasspath
   ```
 
-* **Explicitly specify the dependency configuration:** modify intra-project dependencies in your build.gradle file\(s\) to use a specific configuration:  
+* **Explicitly specify the dependency configuration:** modify intra-project dependencies in your build.gradle file\(s\) to use a specific configuration:
 
-
-  ```text
+```text
   dependencies {
       implementation project(path: ':mymodulewithvariants', configuration: 'default')
   }
-  ```
+```
 
 * **Suggest configuration attributes:** if you receive an error when running the command, the error may indicate which attribute values are available, while the error details from Gradle also indicate which dependency variants match which attributes. Using these details, add the attribute filter option.  
   For example:
@@ -135,14 +134,14 @@ To avoid such conflicts:
   snyk test --configuration-attributes=buildtype:release,usage:java-runtime,mode:demo
   ```
 
-   matches the variants using `com.android.build.api.attributes.BuildTypeAttr=release` and  `org.gradle.usage=java-runtime` 
+  matches the variants using `com.android.build.api.attributes.BuildTypeAttr=release` and `org.gradle.usage=java-runtime`
 
 #### Pass extra arguments directly to Gradle or Maven via Snyk CLI
 
 You can pass any extra Gradle or Maven arguments directly to **gradle** or **mvn** by providing them after a Snyk command like so:
 
 ```text
-snyk test -- --build-cache 
+snyk test -- --build-cache
 ```
 
 **Examples of how you can use Maven arguments with the Snyk CLI**
@@ -153,7 +152,7 @@ Test a specific Maven profile called “prod”.
 snyk test -- -prod
 ```
 
-Add a system property from your pom.xml file. 
+Add a system property from your pom.xml file.
 
 For example:
 
@@ -198,11 +197,11 @@ Gradle lockfiles are an opt-in feature that, among other benefits, enable reprod
 
 ## Git services for maven projects
 
-After you select a project for import, we build the dependency tree based on the `pom.xml` file. 
+After you select a project for import, we build the dependency tree based on the `pom.xml` file.
 
 ### Git settings for Java
 
-From the Snyk UI you can customize the specific mirror or repository from which you’d like to resolve packages in Artifactory for Maven. If you specify the connection, you must also configure the relevant repository integration. 
+From the Snyk UI you can customize the specific mirror or repository from which you’d like to resolve packages in Artifactory for Maven. If you specify the connection, you must also configure the relevant repository integration.
 
 #### Git settings for Java - custom Maven package registries for Artifactory
 

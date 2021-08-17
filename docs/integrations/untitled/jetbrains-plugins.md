@@ -2,7 +2,7 @@
 
 Snyk has a plugin for Jetbrains IDEs, for both [Snyk Open Source](https://docs.snyk.io/snyk-open-source) and [Snyk Code](https://docs.snyk.io/snyk-code). Use this plugin to test your projects and get remediation advice and example code fixes during development within the IDE.
 
-### Supported JetBrains IDEs
+## Supported JetBrains IDEs
 
 JetBrains plugin versions: we support plugin versions from version 2020.2 on.
 
@@ -36,7 +36,7 @@ The installation is done via the IDE:
 
 ![IDE.png](https://support.snyk.io/hc/article_attachments/360018699277/IDE.png)
 
-#### Authentication
+### Authentication
 
 The first time it is needed, the plugin automatically downloads the CLI in the background.
 
@@ -53,25 +53,25 @@ Make sure your project file \(for example, requirements.txt\) is saved before ru
 To trigger an analysis during your daily coding workflow, click either the run \(play\) button, or **Run scan**.  
 ![play-run.png](https://support.snyk.io/hc/article_attachments/360018699357/play-run.png)
 
-#### Analysis results: Snyk Open Source
+### Analysis results: Snyk Open Source
 
 Snyk Open Source analysis shows a list of vulnerabilities and licence issues found in the manifest file. For more detailed information, you can select a vulnerability / licence issue.
 
 ![results-OS.png](https://support.snyk.io/hc/article_attachments/360018699377/results-OS.png)
 
-#### Analysis results: Snyk Code
+### Analysis results: Snyk Code
 
-Snyk Code analysis shows a list of security vulnerabilities and code issues found in your application code. For more details and examples fixes on how others fixed the issue, you just need to  select the security vulnerability or the code security issue:
+Snyk Code analysis shows a list of security vulnerabilities and code issues found in your application code. For more details and examples fixes on how others fixed the issue, you just need to select the security vulnerability or the code security issue:
 
 ![results-code.png](https://support.snyk.io/hc/article_attachments/360018744138/results-code.png)
 
-#### Filter by severity
+### Filter by severity
 
 Snyk delivers Critical, High, Medium and Low severities. You can filter for the severity you need by selecting the value from the dropdown as shown below. By default all levels are selected. You must select at least one.
 
 ![filter-severity.png](https://support.snyk.io/hc/article_attachments/360018744178/filter-severity.png)
 
-#### Filter by issue type
+### Filter by issue type
 
 Snyk delivers the following types of issues:
 

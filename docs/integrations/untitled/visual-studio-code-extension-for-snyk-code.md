@@ -4,7 +4,7 @@ Use this documentation to get started with the Visual Studio Code extension for 
 
 A Visual Studio extension is also available for Snyk Open Source. See [Visual Studio extension](https://docs.snyk.io/integrations/untitled/visual-studio-extension).
 
-### Supported languages
+## Supported languages
 
 Currently supported languages for Snyk Code are JavaScript, TypeScript, Java and Python. We also provide coverage for frameworks like Vue and React. We analyze the following file types:
 
@@ -17,13 +17,13 @@ You can find the Snyk Extension in the Visual Studio Code Marketplace. To instal
 * Navigate to the [Snyk Extension on the Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner) and follow the instructions for the Snyk extension. The docs from VS Code help you trigger the installation process from Visual Studio Code and guide you through the installation steps.
 * Browse for the extension as advised [here](https://code.visualstudio.com/docs/editor/extension-gallery#_browse-for-extensions) and search for Snyk, then install \(as described [here](https://code.visualstudio.com/docs/editor/extension-gallery#_install-an-extension)\).
 
-Once installed you can find a Snyk icon in the sidebar. 
+Once installed you can find a Snyk icon in the sidebar.
 
 Snyk’s extension provides all the suggestions in a concise and clean view containing all information you need to decide how to fix or act upon:
 
 ![image3.png](https://support.snyk.io/hc/article_attachments/360018245578/image3.png)
 
-### Authentication
+## Authentication
 
 To authenticate follow the steps:
 
@@ -55,17 +55,17 @@ Snyk Code analysis shows a list of security vulnerabilities and code issues foun
 
 ![image3.png](https://support.snyk.io/hc/article_attachments/360018245578/image3.png)
 
-### Snyk panel 
+## Snyk panel
 
-The Snyk analysis panel \(on the left of the code screen in the above screenshot\) shows how much time the analysis took plus a list of files with the suggestions found for them. 
+The Snyk analysis panel \(on the left of the code screen in the above screenshot\) shows how much time the analysis took plus a list of files with the suggestions found for them.
 
-The icons here mean: 
+The icons here mean:
 
-### Editor window
+## Editor window
 
 The editor window \(in the middle of the results screen\) shows the code that is inspected. This ensures that when you are inspecting a Snyk issue, you always have the code context close to the issue.
 
-### Snyk suggestions window
+## Snyk suggestions window
 
 The Snyk Suggestion panel \(on the right of the results screen\) shows the argumentation of the Snyk engine using for example variable names of your code and the line numbers in red. You can also see:
 
@@ -81,7 +81,7 @@ After the plugin is installed, you can set the following configurations for the 
 * **Advanced mode**: toggles a panel to allow the user to manually control when the analysis should be run.
 * **Token**: the token the extension uses to connect to Snyk. You can manually replace it, if you need to switch to another account.
 
-### Create a .dcignore file
+## Create a .dcignore file
 
 To ignore certain files and directories \(for example, **node\_modules**\), create a **.dcignore** file. You can create it in any directory on any level starting from the directory where your project resides. The file syntax is identical to .gitignore.
 

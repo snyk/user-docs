@@ -26,7 +26,7 @@ Body section information:
 * [Exploit maturity](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/evaluating-and-prioritizing-vulnerabilities): for example, **Proof Of Concept**.
 * [Reachability](https://support.snyk.io/hc/en-us/articles/360010554837-Reachable-Vulnerabilities-): for example, **Reachable**.
 
-When you expand the issue card for more information, you can see the following information: 
+When you expand the issue card for more information, you can see the following information:
 
 ![Screenshot\_2021-03-01\_at\_16.08.49.png](https://support.snyk.io/hc/article_attachments/360017425377/Screenshot_2021-03-01_at_16.08.49.png)
 
@@ -37,7 +37,7 @@ This information includes:
 * Overview of the vulnerability
 * Any vulnerable functions within the vulnerability
 
-You can apply multiple filters to a project to show a set of issues: 
+You can apply multiple filters to a project to show a set of issues:
 
 * If they are a vulnerability or a license issue
 * With a specific severity 
@@ -45,11 +45,11 @@ You can apply multiple filters to a project to show a set of issues:
 * Based on whether it has an exploit, and how mature the exploit is
 * That are open, or have been patched or ignored 
 
-The issue cards in a project can be sorted based on their priority score or severity. 
+The issue cards in a project can be sorted based on their priority score or severity.
 
-### Card actions
+## Card actions
 
-You can perform the following actions on the issue card: 
+You can perform the following actions on the issue card:
 
 * [**Ignore the issue**](https://support.snyk.io/hc/en-us/articles/360003891098-Ignoring-issues-not-prioritized-for-your-project): if you do not need to take an action on an issue, or it does not need to appear on your reports, you can ignore it.
 * [**Create a Jira ticket**](https://docs.snyk.io/integrations/untitled-3/jira): if you have the [Jira integration](https://docs.snyk.io/integrations/untitled-3/jira), you can link your issue boards to Snyk and create Jira tickets directly from the project details page to fix vulnerabilities.

@@ -1,6 +1,6 @@
 # Integrations and languages
 
-### Snyk integrations
+## Snyk integrations
 
 [Snyk integrations](https://docs.snyk.io/integrations) for your software development process include:
 
@@ -14,7 +14,7 @@
 * **Notifications**: such as Slack. See [Notification and ticketing system-integrations](https://support.snyk.io/hc/en-us/sections/360001138178-Notification-and-ticketing-system-integrations).
 * **Vulnerability tools**: such as RiskSense. See [Vulnerability Management Tools](https://support.snyk.io/hc/en-us/sections/360003642858-Vulnerability-Management-Tools).
 
-### Snyk language support
+## Snyk language support
 
 Snyk supports a wide range of languages including Java, JavaScript, .NET, Python, Golang, Swift, Objective-C, Ruby, Scala, PHP and Elixir.  
 See [Language Support.](https://support.snyk.io/hc/en-us/categories/360000456257-Language-support)

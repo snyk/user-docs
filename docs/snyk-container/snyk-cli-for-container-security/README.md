@@ -46,7 +46,7 @@ You can use Snyk to test any image that you can pull from a remote registry, or 
 snyk container test :
 ```
 
-If you use a Dockerfile to build your image, you can provide that when running Snyk. 
+If you use a Dockerfile to build your image, you can provide that when running Snyk.
 
 ```text
 snyk container test : --file=Dockerfile

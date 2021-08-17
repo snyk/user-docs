@@ -2,7 +2,7 @@
 
 Get started with Snyk IaC to inspect, find and fix issues in configuration files for Terraform or Kubernetes \(including Helm\) environments. For more information, see [Scan your Kubernetes configuration files](https://support.snyk.io/hc/en-us/sections/360001881957-Scan-your-Kubernetes-configuration-files) and [Scan your Terraform files](https://support.snyk.io/hc/en-us/sections/360003156537-Scan-your-Terraform-files).
 
-#### Stage 2: View configuration file issues
+### Stage 2: View configuration file issues
 
 View results for configuration files in imported projects.
 
@@ -11,7 +11,7 @@ View results for configuration files in imported projects.
 
 If you encounter any errors during import, see the [Importing projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects) information.
 
-#### Stage 3: View and fix config files
+### Stage 3: View and fix config files
 
 Act on the recommendations produced by Snyk IaC.
 
@@ -26,7 +26,7 @@ Act on the recommendations produced by Snyk IaC.
 3. Edit the configuration file to fix the issue identified, based on the recommendations, then commit the change.
 4. Snyk automatically rescans the changed file, and you can see the change reflected in the issue display.
 
-### For more information
+## For more information
 
 See [Infrastructure as Code](https://docs.snyk.io/snyk-infrastructure-as-code).
 

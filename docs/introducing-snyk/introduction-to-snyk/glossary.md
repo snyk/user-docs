@@ -1,6 +1,6 @@
 # Glossary
 
-[A]() \| [B]() \| [C]() \| [D]() \| [E]() \| [F]() \| [G]() \| [I]() \| [L]() \| [M]() \| [O]() \| [P]() \| [R]() \| [S]() \| [U]() \| [V]() \| [W]()
+[A](glossary.md) \| [B](glossary.md) \| [C](glossary.md) \| [D](glossary.md) \| [E](glossary.md) \| [F](glossary.md) \| [G](glossary.md) \| [I](glossary.md) \| [L](glossary.md) \| [M](glossary.md) \| [O](glossary.md) \| [P](glossary.md) \| [R](glossary.md) \| [S](glossary.md) \| [U](glossary.md) \| [V](glossary.md) \| [W](glossary.md)
 
 ### Base image
 
@@ -8,7 +8,7 @@ The parent image used to construct a container image, usually defined in the FRO
 
 ### Broker
 
-See [Snyk Broker]().
+See [Snyk Broker](glossary.md).
 
 ### Build System
 
@@ -20,7 +20,7 @@ Continuous integration \(CI\), continuous delivery \(CD\) and continuous deploym
 
 ### CLI
 
-Command Line Interface. See [Snyk CLI]().
+Command Line Interface. See [Snyk CLI](glossary.md).
 
 ### Cloud Native Application Security
 
@@ -97,7 +97,7 @@ A distributed version-control system for tracking changes in source code during 
 
 ### IAC
 
-Infrastructure as Code. See [Snyk Infrastructure as Code.]()
+Infrastructure as Code. See [Snyk Infrastructure as Code.](glossary.md)
 
 ### IAST
 

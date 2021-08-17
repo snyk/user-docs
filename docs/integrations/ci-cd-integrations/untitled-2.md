@@ -11,9 +11,9 @@
 * [ GitHub Actions integration](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration)
 * [ Bitbucket Pipelines integration](https://support.snyk.io/hc/en-us/articles/360000921778-Bitbucket-Pipelines-integration)
 
- [See more](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations)
+  [See more](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations)
 
-##  Install the Snyk plugin on your Jenkins account
+## Install the Snyk plugin on your Jenkins account
 
 The Snyk plugin for Jenkins is [maintained and documented](https://plugins.jenkins.io/snyk-security-scanner) from within Jenkins. Regardless of the kinds of projects you mostly manage from Jenkins \(freestyle or pipeline\), install the Snyk security task on your Jenkins account with these steps. Once complete, the plugin is available for configuration for any of your freestyle projects and pipelines.
 

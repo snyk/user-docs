@@ -8,13 +8,13 @@ The Snyk CLI requires you to authenticate with your account before using it. See
 
 Install the Snyk CLI using one of these options:
 
-* [Install the Snyk CLI with npm]()
-* [Install the Snyk CLI using  the prebuilt binaries]()
-* [Install the Snyk CLI tool with a container]()
-* [Install the Snyk CLI with Homebrew]()
-* [Install the Snyk CLI with the Windows Scoop package manager]()
+* [Install the Snyk CLI with npm](./)
+* [Install the Snyk CLI using  the prebuilt binaries](./)
+* [Install the Snyk CLI tool with a container](./)
+* [Install the Snyk CLI with Homebrew](./)
+* [Install the Snyk CLI with the Windows Scoop package manager](./)
 
-### Install the Snyk CLI with npm
+## Install the Snyk CLI with npm
 
 Install our Snyk CLI tool using npm.
 
@@ -52,19 +52,19 @@ snyk test ionic
 
 As you can see, Snyk found and reported several vulnerabilities in the package. For each issue found, Snyk provides the severity of the issue, a link to a detailed description, the path through which the vulnerable module got into your system, and guidance on how to fix the problem.
 
-### Install the Snyk CLI using the prebuilt binaries
+## Install the Snyk CLI using the prebuilt binaries
 
 You can download and use Snyk's prebuilt binaries already containing npm, the Snyk CLI and other necessary components. To download the prebuilt binary, visit the [**Releases tab**](https://github.com/snyk/snyk/releases) in the CLI repository page in GitHub:
 
 Once you've completed installation, get started testing and remediating your vulnerabilities with our [Getting started](https://support.snyk.io/hc/articles/360003812458#UUID-19fc37f2-b686-11ed-b85c-4789e90c8dfc) guide and [our full list](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0) of our CLI commands, options and arguments.
 
-### Install the Snyk CLI tool with a container
+## Install the Snyk CLI tool with a container
 
 You can use a Snyk created Docker container already containing npm, the Snyk CLI and other necessary components. Follow the detailed instructions here [https://hub.docker.com/r/snyk/snyk-cli](https://hub.docker.com/r/snyk/snyk-cli)
 
 Once you've completed installation, get started testing and remediating your vulnerabilities with our [Getting started](https://support.snyk.io/hc/articles/360003812458#UUID-19fc37f2-b686-11ed-b85c-4789e90c8dfc) guide and [our full list](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0)[ ](https://docs.snyk.io/snyk-cli/guides-for-our-cli/cli-reference)of our CLI commands, options and arguments.
 
-### Install the Snyk CLI with Homebrew
+## Install the Snyk CLI with Homebrew
 
 From MAC OSx and Linux environments, you can use Homebrew to install our Snyk CLI tool. The repository for installation is stored in [our GitHub](https://github.com/snyk/homebrew-tap).
 
@@ -85,7 +85,7 @@ From MAC OSx and Linux environments, you can use Homebrew to install our Snyk CL
    brew install snyk
    ```
 
-### Install the Snyk CLI with the Windows Scoop package manager
+## Install the Snyk CLI with the Windows Scoop package manager
 
 From Windows environments, you can use Scoop to install our Snyk CLI tool. The repository for installation is stored in [our GitHub](https://github.com/snyk/scoop-snyk).
 

@@ -4,12 +4,12 @@ The Visual Studio extension \(Snyk’s Vulnerability Scanner\) helps you find an
 
 Use this documentation to get started with the Visual Studio extension for [Snyk Open Source](https://snyk.io/product/open-source-security-management/).
 
-#### Software requirements
+### Software requirements
 
 * Operating system - Windows.
 * Supported versions of Visual Studio: 2015, 2017, 2019. Compatible with Community, Professional and Enterprise.
 
-#### Supported languages
+### Supported languages
 
 Currently supported languages for Snyk Open Source are C\#, JavaScript, TypeScript, Java, Go, Ruby, Python, PHP, Scala, Swift, Objective-C. See [Snyk Open Source language and framework support](https://docs.snyk.io/snyk-open-source/language-and-package-manager-support).
 
@@ -29,7 +29,7 @@ Once the tool window appears, wait while Snyk extension downloads the latest Sny
 
 By now you should have the extension installed and the Snyk CLI downloaded. Time to authenticate. The first way is to click "Connect Visual Studio to Snyk" link.
 
-### **Authentication**
+## **Authentication**
 
 Authenticate using _"Connect Visual Studio to Snyk"_ link on Overview page.
 
@@ -43,10 +43,10 @@ Authentication can be triggered by pressing the “Authenticate” button. If fo
 
 If, however, the automated authentication doesn’t work for some reason, please reach out to us. We would be happy to investigate!
 
-![readme\_image\_2\_6.png](https://support.snyk.io/hc/article_attachments/4404221012241/readme_image_2_6.png)   
+![readme\_image\_2\_6.png](https://support.snyk.io/hc/article_attachments/4404221012241/readme_image_2_6.png)  
 ![install-5-A.png](https://support.snyk.io/hc/article_attachments/360020005878/install-5-A.png)
 
-You will be taken to the website to verify your identity and connect the IDE extension. Click the **Authenticate** button. 
+You will be taken to the website to verify your identity and connect the IDE extension. Click the **Authenticate** button.
 
 ![install-6.png](https://support.snyk.io/hc/article_attachments/360020005978/install-6.png)
 
@@ -66,7 +66,7 @@ Open your solution and run Snyk scan. Depending on the size of your solution, ti
 
 ![readme\_image\_3\_1\_2.png](https://support.snyk.io/hc/article_attachments/4404213523729/readme_image_3_1_2.png)
 
-### View analysis results
+## View analysis results
 
 You could filter vulnerabilities by name or by severity.
 
@@ -94,13 +94,13 @@ After the plugin is installed, you can set the following configurations for the 
 * **Project settings**: Specify any additional Snyk CLI parameters.
 * **Scan all projects**: Auto-detect all projects in the working directory. It's enabled by default.
 
-#### Could not detect supported target files
+### Could not detect supported target files
 
 **Solution** Open Visual Studio Options to go to the Project Settings of the Snyk extension and check Scan all projects.
 
 ![readme\_image\_4\_1.png](https://support.snyk.io/hc/article_attachments/4404221055889/readme_image_4_1.png)
 
-#### How to find the log files
+### How to find the log files
 
 Run Visual Studio with ‘/log’ parameter and path where do you want to save log file.
 
@@ -114,7 +114,7 @@ As an example, for Visual Studio 2019 it could be
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe /log "C:\Temp\MyVSLog.xml"
 ```
 
-#### Build process
+### Build process
 
 Close this repository to local machine:
 

@@ -7,7 +7,7 @@ Get started with Snyk license compliance management, to check compliance for the
 
 To take effective action based on license issues, you need to define policies defining these actions, based on license types. Policies provide a way to capture different requirements within an organization, based on factors such as line of business. Work with your legal team to create policies which are specific to your company.
 
-#### Create policy rules
+### Create policy rules
 
 Each policy contains rules, detailing which licenses are acceptable and which are forbidden for use, together with a severity level which indicates how severe the license violation is. For example, severity levels for internal-only license issues may be less severe than for those released externally.
 
@@ -46,7 +46,7 @@ You can now take actions to resolve the license issues identified during the sca
 
 The actions you take depend on the license conditions and on your policies. For example, if a license violation is surfaced, this issue can be mitigated by either approaching your legal team, or by replacing the dependency which added the violation.
 
-### For more information
+## For more information
 
 See [Licenses](https://support.snyk.io/hc/en-us/sections/360001010457-Licenses).
 
