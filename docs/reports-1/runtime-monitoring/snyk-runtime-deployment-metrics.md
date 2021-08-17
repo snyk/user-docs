@@ -1,5 +1,9 @@
 # Snyk runtime: deployment metrics
 
+{% hint style="info" %}
+This feature is deprecated.
+{% endhint %}
+
 The following table describes Snyk agent deployment metrics based on different scenarios when using Snyk runtime monitoring.
 
 <table>

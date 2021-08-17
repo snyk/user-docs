@@ -1,5 +1,9 @@
 # Snyk runtime monitoring: prerequisites for configuration
 
+{% hint style="info" %}
+This feature is deprecated.
+{% endhint %}
+
 * Ensure Snyk is already monitoring the necessary project.
 * Configure the runtime agent using the relevant project ID. Locate the project ID by inspecting the settings page of your project, such as in the following image:
 

@@ -1,5 +1,9 @@
 # Snyk runtime monitoring: install the Snyk agent for Node.js
 
+{% hint style="info" %}
+This feature is deprecated.
+{% endhint %}
+
 Snyk supports Node.js v8 and above.
 
 1. Add [@snyk/nodejs-runtime-agent](https://www.npmjs.com/package/@snyk/nodejs-runtime-agent) as a dependency to your project in order to start using Snyk Runtime Monitoring for your Node.js applications.

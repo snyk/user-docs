@@ -1,5 +1,9 @@
 # Snyk runtime monitoring: an overview of the app interface
 
+{% hint style="info" %}
+This feature is deprecated.
+{% endhint %}
+
 When Snyk runtime monitoring is successfully monitoring your projects, there are a few positive indications in the app:
 
 * From the **Projects** tab, an animated indicator appears on the rows for all projects monitored at runtime:

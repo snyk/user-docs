@@ -1,5 +1,9 @@
 # Snyk runtime: what data is used when monitoring my Node.js projects?
 
+{% hint style="info" %}
+This feature is deprecated.
+{% endhint %}
+
 Once you have installed the Snyk agent to monitor your projects at runtime, Snyk takes the following data from your deployment in order to properly monitor and offer remediation.
 
 | Category | Parameter | Description |
