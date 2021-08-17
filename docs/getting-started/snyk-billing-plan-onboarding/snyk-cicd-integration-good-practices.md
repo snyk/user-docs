@@ -63,7 +63,7 @@ Snyk supports the following approaches to add tests to a build pipeline:
 
 * **Snyk integration plugins**: Snyk provides pre-built plugins for several CI servers, including [Jenkins](https://docs.snyk.io/integrations/ci-cd-integrations/jenkins-integration-overview), [Team City](https://docs.snyk.io/integrations/ci-cd-integrations/teamcity-integration-overview)[, Bitbucket Pipelines](https://docs.snyk.io/integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview) and [Azure Pipelines. ](https://docs.snyk.io/integrations/ci-cd-integrations/azure-pipelines-integration) See the [Continuous Integration](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations) documentation for more details
 * **Snyk CLI:** For teams with more complex workflows, or using a build system without a Snyk pre-built plugin, you can use the Snyk CLI tool during CI/CD setups. See [Setting up using Snyk CLI](snyk-cicd-integration-good-practices.md) for more details.
-* **Snyk API**: For teams with complex requirements, Snyk provides a REST API, which you can use for functions including initiating scans, onboarding new projects, and testing arbitrary libraries. See the [Snyk API documentation](https://snyk.docs.apiary.io/) for more details.
+* **Snyk API**: For teams with complex requirements, Snyk provides a REST API, which you can use for functions including initiating scans, onboarding new projects, and testing arbitrary libraries. See the [Snyk API documentation](/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices) for more details.
 
 ### Setting up using Snyk CLI
 
@@ -119,7 +119,7 @@ You can use Snyk's JSON output to create custom test reports as build artifacts,
 Snyk allows you to automatically create new work items in JIRA \(see [Jira integration](https://docs.snyk.io/integrations/untitled-3/jira) documentation\). You can customize this code for your specific requirements, or adapt it to work with other work management systems.
 
 See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns) to get started.  
-or review the [API to create Jira tickets.](https://snyk.docs.apiary.io/#reference/projects/project-jira-issues/create-jira-issue)
+or review the [API to create Jira tickets.](/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices#reference/projects/project-jira-issues/create-jira-issue)
 
 ## Snyk Open Source-specific strategies
 

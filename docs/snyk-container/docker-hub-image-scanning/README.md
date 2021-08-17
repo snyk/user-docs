@@ -1,0 +1,2 @@
+# Docker Hub image scanning
+

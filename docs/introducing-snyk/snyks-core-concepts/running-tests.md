@@ -25,7 +25,7 @@ See [Getting started with Snyk products](https://support.snyk.io/hc/en-us/sectio
 
 Tests are counted when calls are made to the [**https://snyk.io/api/v1/test**](https://snyk.io/api/v1/test) endpoint.
 
-See [API documentation](https://snyk.docs.apiary.io/#) for details.
+See [API documentation](/introducing-snyk/snyks-core-concepts/running-tests#) for details.
 
 ## Run tests automatically
 

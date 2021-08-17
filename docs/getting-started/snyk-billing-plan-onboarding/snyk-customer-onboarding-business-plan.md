@@ -129,7 +129,7 @@ Learn more about [reports](https://docs.snyk.io/reports-1/reports/reports-overvi
 
 All reporting data is available via APIs, so you can choose to present the information in your own dashboard or tooling.
 
-Learn more about [Snyk APIs](https://snyk.docs.apiary.io/#).
+Learn more about [Snyk APIs](/getting-started/snyk-billing-plan-onboarding/snyk-customer-onboarding-business-plan#).
 
 ## How to get help
 
