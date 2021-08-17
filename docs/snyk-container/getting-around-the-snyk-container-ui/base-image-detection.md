@@ -2,12 +2,12 @@
 
 Detecting vulnerable base images allows you to identify the source of your vulnerabilities and remediate by updating the base image according to recommendation.
 
-After you configure a [container integration](https://docs.snyk.io/snyk-container) \(such as the CLI\) or a container registry integration, you can detect your base image.
+After you configure a [container integration](https://docs.snyk.io/snyk-container) \(such as the CLI or a container registry integration\), you can detect your base image.
 
-To identify vulnerable base images, you can use on of these methods:
+To identify vulnerable base images, you can use one of these methods:
 
 * **Auto-detection**: When Snyk analyses your container image, relevant metadata is extracted from the image manifest, and the base image is automatically detected. This method analyses **rootfs** layers from the image manifest, which can be equivalent to more than one images/ image tags in DockerHub.
-* **Dockerfile**: Snyk can also detect vulnerable base images with the use of your Dockerfile. It can either be attached with a **--file** flag to your CLI **snyk container** scan, linked through your project settings, or the Dockerfile can be detected and scanned when you import a Git repository. This method can be more accurate, but requires an additional step compared to auto-detection.
+* **Dockerfile**: Snyk can also detect vulnerable base images with the use of your Dockerfile. It can either be attached with a **--file** flag to your CLI **snyk container** scan, linked from an SCM through your project settings, or the Dockerfile can be detected and scanned when you import a Git repository. This method can be more accurate, but requires an additional step compared to auto-detection.
 
 For either method, a “project” in the Snyk UI is created.
 
