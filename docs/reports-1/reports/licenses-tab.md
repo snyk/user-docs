@@ -22,5 +22,8 @@ These controls appear at the top of the window:
 
 * **Search for Licenses**—the dynamic search field enables you to enter free text and begins searching with the first character you type; alternatively, select multiple packages from the dropdown list that opens when you click in the field. In addition, click the Select All or Deselect All links that dynamically appear in the upper right-hand corner of the dropdown list.
 * **License filters**—mark the packages to be displayed by selecting specific project types. Only issues matching all selected criteria are displayed.
+
+![](../../.gitbook/assets/uuid-53b0da21-ca9b-a04c-354a-97219ae7c05b-en.png)
+
 * **Export as CSV**—export issue data in CSV file format.
 
