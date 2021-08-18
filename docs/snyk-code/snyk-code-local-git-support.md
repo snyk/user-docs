@@ -2,8 +2,6 @@
 
 You can natively connect Snyk Code to your local git server. This allows customers who are using a self-hosted git provider such as GitHub Enterprise to find, prioritize and fix potential vulnerabilities in their 1st-party code.
 
-This solution currently supports GitHub Enterprise Server and Gitlab Server only. In addition, Data flow visualization snippets are not currently available in the UI.
-
 * **Broker server**: Running on Snyk SaaS backend
 * **Broker client**: A [Docker image](https://hub.docker.com/r/snyk/broker/) deployed in your infrastructure.
 * **Code agent**: Another [Docker image](https://hub.docker.com/r/snyk/code-agent/) that is deployed in your infrastructure.
