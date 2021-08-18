@@ -44,7 +44,7 @@ You can define the target organization in the Snyk CLI, by either URL slug or or
 * You can define the target organization using its URL slug, as displayed in the browser's address bar when viewing it in the Snyk UI: 
 * Or you can define the target organization using its **org id** in each organization's settings page:
 
-![image1.png](https://support.snyk.io/hc/article_attachments/360017563677/image1.png)
+![](../../.gitbook/assets/image1.png)
 
 **Default organization**
 
