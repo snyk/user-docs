@@ -20,15 +20,15 @@ The Group and Organization admins can perform all actions, while a Collaborator 
 
 To create a new tag for a project:
 
-1. On the project issues page, click "Add a key/value..."![Screenshot\_2020-09-29\_at\_17.39.02.png](https://support.snyk.io/hc/article_attachments/360011820818/Screenshot_2020-09-29_at_17.39.02.png)
-2. Enter your new key, and then click enter![Screenshot\_2020-09-29\_at\_17.53.20.png](https://support.snyk.io/hc/article_attachments/360011735637/Screenshot_2020-09-29_at_17.53.20.png)
+1. On the project issues page, click "Add a key/value..."![Screenshot\_2020-09-29\_at\_17.39.02.png](../../.gitbook/assets/screenshot_2020-09-29_at_17.39.02.png)
+2. Enter your new key, and then click enter![Screenshot\_2020-09-29\_at\_17.53.20.png](../../.gitbook/assets/screenshot_2020-09-29_at_17.53.20.png)
 3. Enter your new value, and then click enter
 
-You have created a new tag. Upon creating a new tag, it will be automatically assigned to the project it was created in. The tag is also usable on any other project within your group. ![Screenshot\_2020-09-29\_at\_17.58.47.png](https://support.snyk.io/hc/article_attachments/360011735977/Screenshot_2020-09-29_at_17.58.47.png)
+You have created a new tag. Upon creating a new tag, it will be automatically assigned to the project it was created in. The tag is also usable on any other project within your group. ![Screenshot\_2020-09-29\_at\_17.58.47.png](../../.gitbook/assets/screenshot_2020-09-29_at_17.58.47.png)
 
 You can also apply multiple values to the same key:
 
-![Screenshot\_2020-09-29\_at\_18.04.30.png](https://support.snyk.io/hc/article_attachments/360011821678/Screenshot_2020-09-29_at_18.04.30.png)
+![](../../.gitbook/assets/screenshot_2020-09-29_at_18.04.30.png)
 
 **Assigning and removing tags from a project**
 
@@ -36,7 +36,7 @@ If a tag exists in your group, you can apply it to any project.
 
 1. Click the "+" icon in the tags section
 2. You can either select a key from the list of recently used keys, or type out the key which is part of the tag you would like to assign to your project 
-3. You can either select a value from the list of recently used values, or type out the value which is part of the tag you would like to assign to your project ![Screenshot\_2020-09-29\_at\_18.14.44.png](https://support.snyk.io/hc/article_attachments/360011736237/Screenshot_2020-09-29_at_18.14.44.png)
+3. You can either select a value from the list of recently used values, or type out the value which is part of the tag you would like to assign to your project ![Screenshot\_2020-09-29\_at\_18.14.44.png](../../.gitbook/assets/screenshot_2020-09-29_at_18.14.44.png)
 4. After you select the value, the tag will be assigned to your project. To remove a tag from a project, click the "X" icon on the tag 
 
 You have successfully assigned and removed tags from your project.
