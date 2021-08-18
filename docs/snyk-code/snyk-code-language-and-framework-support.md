@@ -2,10 +2,10 @@
 
 Snyk Code currently supports:
 
-* [Java]()
-* [JavaScript and TypeScript]()
-* [Python]()
-* [C\#]()
+* Java
+* JavaScript and TypeScript
+* Python
+* C\#
 
 ### Language type and framework support
 
@@ -95,6 +95,6 @@ The AI engine can analyze the following in your code:
 * **Value ranges**: infers possible values for variables used to call functions to track off-by-one errors in arrays, division-by-zero, and null dereferences.
 * **Data flow**: follows the flow of data within the application, from the source to the sink. Combined with AI-based learning of external insecure data source, data sinks, and sanitation functions, this enables a strong taint analysis.
 * **Use of APIs**: using open source or the documentation of frameworks to learn how functions need to be used, can identify API misuse such as using the wrong parameter type or calling with the wrong value range. This mechanism can also identify use of insecure functions.
-* **Control Flow**: identifies null dereference or race conditions by modelling each possible control flow in the application.
-* **Point-to Analysis**: identifies multiple possible issues including from buffer overruns, null dereferences, and type mismatches, by modelling the usage of memory in variables and references.
+* **Control Flow**: identifies null dereference or race conditions by modeling each possible control flow in the application.
+* **Point-to Analysis**: identifies multiple possible issues including from buffer overruns, null dereferences, and type mismatches, by modeling the usage of memory in variables and references.
 
