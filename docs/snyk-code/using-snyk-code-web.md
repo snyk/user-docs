@@ -2,12 +2,12 @@
 
 Use Snyk Code with the standard Snyk web interface to find and fix vulnerabilities in your code.
 
-![Screenshot\_2021-06-17\_at\_13.23.19.png](https://support.snyk.io/hc/article_attachments/4402731192465/Screenshot_2021-06-17_at_13.23.19.png)
+![](../.gitbook/assets/screenshot_2021-06-17_at_13.23.19.png)
 
 ## View project vulnerabilities
 
-1. In your **Projects** area, select the project to open: ![select-project.png](https://support.snyk.io/hc/article_attachments/360015998637/select-project.png)
-2. Snyk Code displays information and vulnerability cards for that project: ![SnykCofe\_Priority\_Score.png](https://support.snyk.io/hc/article_attachments/4405144366353/SnykCofe_Priority_Score.png)
+1. In your **Projects** area, select the project to open: ![select-project.png](../.gitbook/assets/select-project.png)
+2. Snyk Code displays information and vulnerability cards for that project: ![SnykCofe\_Priority\_Score.png](../.gitbook/assets/snykcofe_priority_score.png)
 
 Information available shows standard Snyk project information \(see [Snyk projects](https://support.snyk.io/hc/en-us/sections/360004724958-Snyk-projects)\), including:
 
@@ -19,7 +19,7 @@ Information available shows standard Snyk project information \(see [Snyk projec
 
 Each vulnerability card shows specific details about that vulnerability:
 
-![SnykCode\_Issue\_Card.png](https://support.snyk.io/hc/article_attachments/4405144183953/SnykCode_Issue_Card.png)
+![](../.gitbook/assets/snykcode_issue_card.png)
 
 Card details include:
 
@@ -41,7 +41,7 @@ Use the **Ignore** button to suppress specific warnings, ignoring suggestions fo
 
 After you click **Ignore**, you are prompted to provide more details:
 
-![SnykCode-Ignore-Pic2.png](https://support.snyk.io/hc/article_attachments/4405144233873/SnykCode-Ignore-Pic2.png)
+![](../.gitbook/assets/snykcode-ignore-pic2.png)
 
 Select:
 
@@ -59,7 +59,7 @@ See [Ignoring issues in Snyk Code](https://support.snyk.io/hc/en-us/articles/360
 
 Click **Full details** from a vulnerability card to view more information:
 
-![Data flow page preview.](https://support.snyk.io/hc/article_attachments/4402111205649/data-flow.png) ![Fix analysis page preview.](https://support.snyk.io/hc/article_attachments/4402115159441/fix-analysis.png)
+![Data flow page preview.](../.gitbook/assets/data-flow.png) ![Fix analysis page preview.](../.gitbook/assets/fix-analysis.png)
 
 Full details include all the information in the vulnerability card, plus:
 
@@ -74,11 +74,11 @@ This shows an example of a common vulnerability, Cross-site Scripting \(XSS\). X
 
 The vulnerability card shows key information about this vulnerability:
 
-![SnykCode\_Issue\_Card.png](https://support.snyk.io/hc/article_attachments/4405144183953/SnykCode_Issue_Card.png)
+![](../.gitbook/assets/snykcode_issue_card.png)
 
 Click **Full details** to see more information about this vulnerability:
 
-![XSS-2.png](https://support.snyk.io/hc/article_attachments/360016062918/XSS-2.png)
+![](../.gitbook/assets/xss-2.png)
 
 \(This example shows that an unsanitized HTTP input flows into a **write** response returned by the server, so could be running malicious code.\)
 
