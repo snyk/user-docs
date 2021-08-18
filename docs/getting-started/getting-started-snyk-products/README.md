@@ -10,7 +10,7 @@ To create a Snyk account:
 
 * When prompted, select your preferred way to log in:
 
-![](../../.gitbook/assets/login1.png)
+![](../../.gitbook/assets/screenshot-2021-08-17-at-14.46.49.png)
 
 * Enter your login credentials \(or create a new account\). For example, for Google:
 
