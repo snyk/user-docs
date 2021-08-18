@@ -2,7 +2,7 @@
 
 Click **Settings** from your project, to view and edit project settings:
 
-![Screenshot\_2021-04-14\_at\_09.23.38.png](https://support.snyk.io/hc/article_attachments/360018941637/Screenshot_2021-04-14_at_09.23.38.png)
+![](../../.gitbook/assets/screenshot_2021-04-14_at_09.23.38.png)
 
 Click the **GitHub integration** section to edit SCM-specific settings \(applicable also to other SCMs\).
 
