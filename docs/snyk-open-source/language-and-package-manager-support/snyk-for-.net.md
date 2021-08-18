@@ -10,8 +10,8 @@ Features might not be available, depending on your subscription plan.
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![i\_icon\_nuget.png](https://support.snyk.io/hc/article_attachments/360007259058/uuid-b997ca27-61ff-f00b-941c-16bf3aa4a0e0-en.png) | [NuGet](https://www.nuget.org/) | ✔︎ | ✔︎ | ✔︎ |  |  |
-| ![i\_icon\_paket.png](https://support.snyk.io/hc/article_attachments/360007259078/uuid-d8e44fe4-c0ea-e3ea-de3b-1e15e4a6b391-en.png) | [Paket](https://fsprojects.github.io/Paket/index.html) | ✔︎ |  | ✔︎ |  |  |
+| ![i\_icon\_nuget.png](../../.gitbook/assets/uuid-b997ca27-61ff-f00b-941c-16bf3aa4a0e0-en.png) | [NuGet](https://www.nuget.org/) | ✔︎ | ✔︎ | ✔︎ |  |  |
+| ![i\_icon\_paket.png](../../.gitbook/assets/uuid-d8e44fe4-c0ea-e3ea-de3b-1e15e4a6b391-en.png) | [Paket](https://fsprojects.github.io/Paket/index.html) | ✔︎ |  | ✔︎ |  |  |
 
 ### Snyk CLI tool for .NET projects <a id="h_01ED93MRAVCCCSMJTFJM4595T5"></a>
 
@@ -97,7 +97,7 @@ This section describes the unique CLI options available when working with .NET-b
 
 Once imported, Snyk analyzes your projects based on their supported manifest files and then builds the dependency tree and displays it from our app, similar to the following:
 
-![dependency\_tree.png](https://support.snyk.io/hc/article_attachments/360007259098/uuid-c995621c-85c8-c79f-accd-f014e2293921-en.png)
+![](../../.gitbook/assets/uuid-c995621c-85c8-c79f-accd-f014e2293921-en.png)
 
 No import support currently.
 
@@ -105,6 +105,6 @@ From the Snyk UI, you can configure whether Snyk should scan your entire project
 
 **Update language preferences**
 
-1. 1. Go to settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; and click for .NET
+1. 1. Go to settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; and click for .NET
       * If checked, Snyk scans all development dependencies.
 
