@@ -21,7 +21,7 @@ This example shows how Snyk can integrate into your GitHub-based workflow.
 
 Review the **package.json** manifest file in your cloned goof application, to see multiple direct dependencies listed:
 
-![dependencies.png](https://support.snyk.io/hc/article_attachments/360016512078/dependencies.png)
+![](../../.gitbook/assets/dependencies.png)
 
 These direct dependencies can also have additional transitive dependencies; libraries that they depend on.
 
@@ -72,13 +72,13 @@ Tip: remember to place a comma after the previous dependency.
 GitHub has received your changes on your **add\_vulns** branch.
 ```
 
-1. In GitHub, click **Compare & pull request** to compare the **add\_vulns** branch with the **master** branch and generate a pull request:  ![click-compare.png](https://support.snyk.io/hc/article_attachments/360016512098/click-compare.png)
+1. In GitHub, click **Compare & pull request** to compare the **add\_vulns** branch with the **master** branch and generate a pull request:  ![click-compare.png](../../.gitbook/assets/click-compare.png)
 
 ## Step 4: Snyk tests pull request checks
 
 Snyk automatically tests your pull request for vulnerability and license checks in the merge process:
 
-![snyk\_vuln\_lic\_check.png](https://support.snyk.io/hc/article_attachments/360010457697/snyk_vuln_lic_check.png)
+![](../../.gitbook/assets/snyk_vuln_lic_check.png)
 
 As the PR workflow completed, Snyk validated the vulnerability and license policy set for the project. Based on the policy, the checks either passed or failed; this is shown in GitHub.
 
