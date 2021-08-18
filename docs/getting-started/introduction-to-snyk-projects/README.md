@@ -9,7 +9,7 @@ A project includes:
 
 Projects appear on the **Projects** menu on the Snyk dashboard:
 
-![Code1.png](https://support.snyk.io/hc/article_attachments/4402324811665/Code1.png)
+![](../../.gitbook/assets/code1.png)
 
 ## Target
 
