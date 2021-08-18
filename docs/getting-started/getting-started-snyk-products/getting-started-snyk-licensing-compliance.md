@@ -11,25 +11,25 @@ To take effective action based on license issues, you need to define policies de
 
 Each policy contains rules, detailing which licenses are acceptable and which are forbidden for use, together with a severity level which indicates how severe the license violation is. For example, severity levels for internal-only license issues may be less severe than for those released externally.
 
-![license-policy.png](https://support.snyk.io/hc/article_attachments/360012847498/license-policy.png)
+![](../../.gitbook/assets/license-policy.png)
 
 See [Licenses overview](https://docs.snyk.io/snyk-open-source/licenses) and [Setting a license policy](https://docs.snyk.io/snyk-open-source/license-policies/setting-a-license-policy).
 
 Snyk’s [Git-based integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab:
 
-![image3.png](https://support.snyk.io/hc/article_attachments/360012774437/image3.png)
+![](../../.gitbook/assets/image3%20%281%29.png)
 
 This example shows a high-severity issue for a GPL-2.0 license, with accompanying instructions as defined in policies for that license.
 
 You can also view license issues using the Snyk CLI tool, after running **snyk test**:
 
-![image2.png](https://support.snyk.io/hc/article_attachments/360012774837/image2.png)
+![](../../.gitbook/assets/image2-1-.png)
 
 **View dependencies**
 
 Snyk shows license issues in both your direct and transitive dependencies, in a full dependency tree to show what dependency introduced the license issue.
 
-![image4.png](https://support.snyk.io/hc/article_attachments/360012775137/image4.png)
+![](../../.gitbook/assets/image4%20%281%29.png)
 
 This example includes two high severity license policy violations, caused by:
 
@@ -40,7 +40,7 @@ This example includes two high severity license policy violations, caused by:
 
 You can view and share detailed lists of licenses being used, and see a report that lists all the open source components and licenses along with copyright information.
 
-![copyright.png](https://support.snyk.io/hc/article_attachments/360013041917/copyright.png)
+![](../../.gitbook/assets/copyright.png)
 
 You can now take actions to resolve the license issues identified during the scan, to help you build and deploy your application without outstanding licensing issues.
 
