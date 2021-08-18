@@ -38,7 +38,7 @@ Snyk Code is significantly faster and more accurate than other conventional SAST
 
 Snyk Code includes secret detection capabilities that scan and highlight secrets like keys, credentials, PII, and sensitive information in your source code. Unlike tools that use entropy checks or regular expressions, Snyk Code uses machine learning and is able to learn from experience, improving the odds of accurately detecting secrets while minimizing false positives.
 
-![image5.png](https://support.snyk.io/hc/article_attachments/360015931478/image5.png)
+![](../.gitbook/assets/image5.png)
 
 ### Issue code flow visualization
 
@@ -46,7 +46,7 @@ Snyk products all provide a developer-friendly experience, so Snyk Code helps de
 
 For every issue, Code also provides a link to the lines in the relevant files, to view more details on the problem like the CWE, and how to approach it.
 
-![image2.png](https://support.snyk.io/hc/article_attachments/360015861557/image2.png)
+![](../.gitbook/assets/image2-2-.png)
 
 Snyk Code also provides rich curated additional information for many suggestions.
 
@@ -67,7 +67,7 @@ This integration allows you to:
 * View and prioritize security issues found in the source code
 * Run a retest of a project and see history snapshots of a project
 
-![image4.png](https://support.snyk.io/hc/article_attachments/360015861577/image4.png)
+![](../.gitbook/assets/image4-1-.png)
 
 ## Snyk Code IDE plugins
 
@@ -77,7 +77,7 @@ IDE integrations use Snyk Code’s fast analysis and response, allowing you to s
 
 Snyk Code supports a JetBrains plugin to support issue finding and fixing, directly from the IDE:
 
-![results-code.png](https://support.snyk.io/hc/article_attachments/4402739479313/results-code.png)
+![](../.gitbook/assets/results-code.png)
 
 For more details, see [JetBrains IDE Plugins](https://support.snyk.io/hc/en-us/articles/360004032317-JetBrains-IDE-Plugins).
 
@@ -85,7 +85,7 @@ For more details, see [JetBrains IDE Plugins](https://support.snyk.io/hc/en-us/a
 
 Snyk Code supports a Visual Studio Code plugin to support issue finding and fixing, directly from the IDE:
 
-![VSCodeIDE.png](https://support.snyk.io/hc/article_attachments/360020036958/VSCodeIDE.png)
+![](../.gitbook/assets/vscodeide.png)
 
 For more details, see the [Visual Studio Code extension for Snyk Code](https://support.snyk.io/hc/en-us/articles/360018585717-Visual-Studio-Code-extension-for-Snyk-Code-).
 
