@@ -9,13 +9,6 @@ The Dep Graph API requires additional permissions. Please contact support@snyk.i
 
 The following describes how to use Snyk to test your Bazel projects:
 
-* [Bazel Overview]()
-* [How it works]()
-* [Snyk Dep Graph Test API]()
-* [Snyk Dep Graph JSON Syntax]()
-* [Snyk Dep Graph Test API Response]()
-* [Examples]()
-
 ## Bazel Overview <a id="h_01EEWE3TCNQC2HGFRPH8JBWAK0"></a>
 
 According to [https://docs.bazel.build/versions/master/bazel-overview.html  

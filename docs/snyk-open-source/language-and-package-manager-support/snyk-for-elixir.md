@@ -2,13 +2,9 @@
 
 Snyk offers security scanning to test your [Elixir](https://www.notion.so/Elixir-7c925900bf774c84b83b65c14084e80e) projects for vulnerabilities using the CLI. 
 
-* [Features]()
-* [How it works]()
-* [Snyk CLI tool for Elixir projects]()
-
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![hex\_80x80.png](https://support.snyk.io/hc/article_attachments/360019170338/hex_80x80.png) | [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm/) | ✔︎ |  |  |  |  |
+| ![hex\_80x80.png](../../.gitbook/assets/hex_80x80.png) | [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm/) | ✔︎ |  |  |  |  |
 
 Snyk builds a dependency tree for your project by analyzing your manifest and lock files.
 

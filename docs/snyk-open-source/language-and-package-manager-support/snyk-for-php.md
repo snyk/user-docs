@@ -10,7 +10,7 @@ Features might not be available, depending on your subscription plan.
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![composer-logo.svg](https://support.snyk.io/hc/article_attachments/360007258958/uuid-3415efde-9bfb-2b07-3781-8169e25a2fcd-en.png) | [Composer](https://getcomposer.org/) | ✔︎ | ✔︎ | ✔︎ |  |  |
+| ![composer-logo.svg](../../.gitbook/assets/uuid-3415efde-9bfb-2b07-3781-8169e25a2fcd-en.png) | [Composer](https://getcomposer.org/) | ✔︎ | ✔︎ | ✔︎ |  |  |
 
 ### Snyk CLI tool for PHP projects
 
@@ -31,7 +31,7 @@ By default, Snyk scans your production dependencies. From the Snyk UI you can co
 
 **To update language preferences:**
 
-1. 1. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt;  **Languages**.
+1. 1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt;  **Languages**.
 2. Click **Edit settings** for PHP and select Scan dev dependencies to set for your PHP projects in the specific organization to include both development and production dependencies.
 3. Click Update settings.
 
