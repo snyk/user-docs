@@ -8,11 +8,6 @@ Following the acquisition of [FossID](https://fossid.com/), Snyk can also identi
 
 This page describes our language support. For more information, see specific articles in [Language and package manager support](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support).
 
-* [By language and package manager/build tool]()
-* [By language and framework]()
-* [Supported archives \(available on FossID]()\)
-* [By language and supported extensions \(available on FossID\)]()
-
 ### By language and package manager/build tool
 
 | **Development Language** | **Package manager/build tool** |
