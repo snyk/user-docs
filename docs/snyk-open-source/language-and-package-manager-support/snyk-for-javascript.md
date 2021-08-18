@@ -8,9 +8,9 @@ Features might not be available, depending on your subscription plan.
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![i\_icon\_npm.png](https://support.snyk.io/hc/article_attachments/360007183097/uuid-aa98c079-4d3e-5e58-f450-08985b5d4b8b-en.png) | npm | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
-| ![i\_icon\_yarn.png](https://support.snyk.io/hc/article_attachments/360007259138/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) | Yarn | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
-| ![i\_icon\_yarn.png](https://support.snyk.io/hc/article_attachments/360007259138/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) | Yarn Workspaces | ✔︎ | ✔︎ | ✔︎ | ✔︎ \(advice\) | ✔︎ |
+| ![i\_icon\_npm.png](../../.gitbook/assets/uuid-aa98c079-4d3e-5e58-f450-08985b5d4b8b-en.png) | npm | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
+| ![i\_icon\_yarn.png](../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) | Yarn | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
+| ![i\_icon\_yarn.png](../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) | Yarn Workspaces | ✔︎ | ✔︎ | ✔︎ | ✔︎ \(advice\) | ✔︎ |
 
 After Snyk builds a dependency tree, we use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in that tree.
 
@@ -198,8 +198,8 @@ From the Snyk UI, use these parameters to customize your language preferences fo
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
 
-   ![AddProjectMenu.gif](https://support.snyk.io/hc/article_attachments/360007259158/uuid-da316a4a-c823-cf03-f37f-5305446dc970-en.gif)
+   ![AddProjectMenu.gif](../../.gitbook/assets/uuid-da316a4a-c823-cf03-f37f-5305446dc970-en.gif)
 
-2. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Languages.**
+2. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Languages.**
 3. Click **Edit settings** for JavaScript to configure preferences for your JavaScript \(npm and Yarn\) projects in this organization.
 
