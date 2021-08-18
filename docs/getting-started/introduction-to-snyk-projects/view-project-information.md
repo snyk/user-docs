@@ -32,4 +32,4 @@ The summary information shows:
   * The time when the project was first imported to Snyk.
   * The time when an up-to-date snapshot of the file was fetched from the SCM and tested.
 * Predefined [project attributes](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/assign-a-policy-to-project-attributes), and any additional [project tag](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/project-tags) metadata.
-* 
+
