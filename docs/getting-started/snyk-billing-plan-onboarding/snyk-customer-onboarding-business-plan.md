@@ -58,7 +58,7 @@ Your Snyk account is organized using a multi-level hierarchy:
 * **Organization** - a collection of projects that share integration configuration and access controls
 * **Projects** - the basic representation of configuration and test results for an application
 
-![groups\_and\_orgs.png](https://support.snyk.io/hc/article_attachments/360019181237/groups_and_orgs.png)
+![](../../.gitbook/assets/groups-and-orgs.png)
 
 Learn more about [groups and organizations](https://support.snyk.io/hc/en-us/articles/360004037617-What-s-a-Snyk-group-).
 
@@ -107,7 +107,7 @@ Learn more about [fixing vulnerabilities](https://docs.snyk.io/fixing-and-priori
 
 Snyk lists the issues found in your project. There are different types of filters available to help you focus your attention on the most important vulnerabilities.
 
-![filters.png](https://support.snyk.io/hc/article_attachments/360019239018/filters.png)
+![](../../.gitbook/assets/filters.png)
 
 Learn more about [prioritizing Snyk issues](https://support.snyk.io/hc/en-us/articles/360009884837-Prioritizing-Snyk-issues).
 
@@ -117,7 +117,7 @@ Snyk allows you to ignore vulnerabilities that don’t meet your criteria for fi
 
 You can determine whether developers can ignore an issue or only admins.
 
-![ignores.png](https://support.snyk.io/hc/article_attachments/360019182057/ignores.png)
+![](../../.gitbook/assets/ignores.png)
 
 Learn more about [ignoring issues.](https://docs.snyk.io/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/introduction-to-ignoring-issues)
 
@@ -137,7 +137,7 @@ To get help, navigate to snyk.io and use the help agent in the bottom right corn
 
 Make sure you provide an email address to help our team communicate with you. Or email support@snyk.io directly. Note that some issues may have a longer response time.
 
-![pasted\_image\_0\_\_4\_.png](https://support.snyk.io/hc/article_attachments/360011776277/pasted_image_0__4_.png)
+![](../../.gitbook/assets/pasted-image-0-4-.png)
 
 ## More about best practices
 
