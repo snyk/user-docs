@@ -8,11 +8,11 @@ The following rules are applied to automatic PR creation for vulnerabilities:
 * The vulnerability must be new since the last scan and have a fix
 * If the vulnerability is known \(backlog\) it will have a PR created when this setting is enabled only when a new fix has been released since the last scan and is considered a **new** vulnerability
 
-![OS1.png](https://support.snyk.io/hc/article_attachments/4402318126481/OS1.png)
+![](../../.gitbook/assets/os1.png)
 
 To know when your last 24-hour window was kicked off, check the project page for **Snapshot taken by recurring test**--also check your email for **\[snyk\] Vulnerability alert** for specific scan results:
 
-![OS2.png](https://support.snyk.io/hc/article_attachments/4402318129425/OS2.png)
+![](../../.gitbook/assets/os2.png)
 
 Pull requests for new vulnerabilities are enabled by default for new integrations.
 
@@ -22,13 +22,13 @@ See [Git repository SCM integrations](https://support.snyk.io/hc/en-us/sections/
 
 Enable at the global integration level:
 
-1. Navigate to settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Integrations**.
+1. Navigate to settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
 2. Select an SCM integration \(for example, GitHub\).
 3. Enable **New vulnerabilities**
 
 **Apply changes to all overridden projects** will update all of the individual project settings for "Automatic fix pull requests". If a project previously had its own settings for this, clicking on this button will override it with the global setting.
 
-![global-pr-setting.png](https://support.snyk.io/hc/article_attachments/360020496137/global-pr-setting.png)
+![](../../.gitbook/assets/global-pr-setting.png)
 
 ## Enable or disable pull requests for a single project
 
@@ -41,5 +41,5 @@ Enabling/disabling at a project level will override this single project rather t
    * Enable **New vulnerabilities**
    * Select **Save changes**
 
-![OS3.png](https://support.snyk.io/hc/article_attachments/4402318137361/OS3.png)
+![](../../.gitbook/assets/os3.png)
 
