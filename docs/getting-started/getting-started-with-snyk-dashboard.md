@@ -4,7 +4,7 @@
 
 The **Pending tasks** section of the dashboard shows recommended outstanding work to consider around projects in a Snyk organization:
 
-![pending-tasks.png](https://support.snyk.io/hc/article_attachments/360012777738/pending-tasks.png)
+![](../.gitbook/assets/pending-tasks.png)
 
 This information includes:
 
