@@ -10,7 +10,7 @@ Features might not be available, depending on your subscription plan.
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![i\_icon\_cocoapods.png](https://support.snyk.io/hc/article_attachments/360007259038/uuid-6de05da9-de7e-11cc-4316-8459517aaf57-en.png) | Cocoapods | ✔︎ | ✔︎ | ✔︎ |  |  |
+| ![i\_icon\_cocoapods.png](../../.gitbook/assets/uuid-6de05da9-de7e-11cc-4316-8459517aaf57-en.png) | Cocoapods | ✔︎ | ✔︎ | ✔︎ |  |  |
 
 ### Snyk CLI tool for CocoaPods projects
 
