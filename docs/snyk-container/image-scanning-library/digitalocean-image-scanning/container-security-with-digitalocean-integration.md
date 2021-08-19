@@ -15,9 +15,9 @@ Prerequisites
 
 **Configure integration**
 
-1. In your Snyk account, navigate to Integrations from the menu bar at the top. Under the Container Registries section, find the **DigitalOcean** option and click it.![mceclip0.png](https://support.snyk.io/hc/article_attachments/4403551832209/mceclip0.png)
+1. In your Snyk account, navigate to Integrations from the menu bar at the top. Under the Container Registries section, find the **DigitalOcean** option and click it.![mceclip0.png](../../../.gitbook/assets/mceclip0-9-.png)
 2. In the **Account credentials** section, enter your DigitalOcean personal access token as the login credential. Detailed instructions to create the access token can be found in the integration page. To finish, click **Save**.  
-   ![mceclip0.png](https://support.snyk.io/hc/article_attachments/4403566571537/mceclip0.png)  
+   ![mceclip0.png](../../../.gitbook/assets/mceclip0-10-.png)  
    In case you are using a self-hosted DigitalOcean, contact us to provide you with a token. You can read more about setting up private registry integration [here](https://support.snyk.io/hc/en-us/articles/360017040957).  
 
 
