@@ -80,7 +80,7 @@ monitor will:
 3. Send that build of materials to the Snyk Service
 4. Return a link to the Snyk service where you can see the results
 
-![monitor.png](https://support.snyk.io/hc/article_attachments/360012331998/monitor.png)
+![](../../.gitbook/assets/monitor.png)
 
 #### Note
 

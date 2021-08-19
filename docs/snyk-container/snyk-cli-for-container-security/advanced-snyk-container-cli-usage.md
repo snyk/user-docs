@@ -17,7 +17,7 @@ Some repositories represent multi-manifests, pointing to several different image
 snyk container test --platform=linux/arm64 debian
 ```
 
-![platform.png](https://support.snyk.io/hc/article_attachments/360012332298/platform.png)
+![](../../.gitbook/assets/platform.png)
 
 The `--platform` flag should contain one of:
 
