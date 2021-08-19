@@ -4,7 +4,7 @@ Installing the Snyk controller enables you to import and test your running EKS w
 
 You have the option of deploying the Snyk controller for Amazon EKS as an official [AWS Quick Start](https://github.com/aws-quickstart/quickstart-eks-snyk). This option eliminates the need for manual configuration. Deploying this Quick Start with default parameters into an existing Amazon EKS cluster builds the following environment.
 
-![architecture.png](https://support.snyk.io/hc/article_attachments/360010020657/architecture.png)
+![](../../../.gitbook/assets/architecture.png)
 
 There are three deployment options to match most common use cases. These are as follows:
 

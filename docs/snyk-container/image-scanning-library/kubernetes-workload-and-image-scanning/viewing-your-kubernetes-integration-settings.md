@@ -2,9 +2,9 @@
 
 #### In the relevant organization:
 
-1. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Integrations**.
+1. Click on settings ![cog\_icon.png](../../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
 2. Navigate to Kubernetes and click **Edit** **Settings**.
-3. Navigate to the **Integration ID** and other integration settings: ![controller\_settings.gif](https://support.snyk.io/hc/article_attachments/360007066297/uuid-03a03790-d87e-6260-4ffc-dc474ce014fa-en.gif)
+3. Navigate to the **Integration ID** and other integration settings: ![controller\_settings.gif](../../../.gitbook/assets/uuid-03a03790-d87e-6260-4ffc-dc474ce014fa-en.gif)
 
 From this window, you can access and work with the following:
 
@@ -15,4 +15,3 @@ From this window, you can access and work with the following:
 | Snyk controller versions | Check the version of the Snyk controller that you've installed on your clusters from this area. |
 | Disconnect from Kubernetes | To remove this integration from this organization, click Disconnect. |
 
-* 
