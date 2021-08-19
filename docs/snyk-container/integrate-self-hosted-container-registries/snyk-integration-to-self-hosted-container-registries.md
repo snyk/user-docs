@@ -21,7 +21,7 @@ Integration with private container registries allows you to:
 
 The Broker client provides the Agent with the connection details. The Agent uses these details to connect to the container registry, scan the images, and send the scan results through the brokered communication using callbacks. The brokered communication happens when a Broker Client connects \(using your Broker ID\) to a Broker server which runs in Snyk environment. See [Snyk Broker](https://support.snyk.io/hc/en-us/sections/360001138138-Snyk-Broker) documentation for more details.
 
-![mceclip0.png](https://support.snyk.io/hc/article_attachments/360016081258/mceclip0.png)
+![](../../.gitbook/assets/mceclip0-8-.png)
 
 **Supported Container registries**
 
