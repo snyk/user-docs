@@ -17,11 +17,11 @@ Snyk tests and monitors your Artifactory container images by evaluating its tags
 
 * Go to Projects, and click Add projects. The list of integrations already configured on your account opens, similar to the following:
 
-![AddProjectMenu.png](https://support.snyk.io/hc/article_attachments/360007065837/uuid-dd01aab7-482f-0fc2-01de-c2427a14a0e0-en.png)
+![AddProjectMenu.png](../../../.gitbook/assets/uuid-dd01aab7-482f-0fc2-01de-c2427a14a0e0-en.png)
 
 * The Which images do you want to test? view appears, displaying all of the available images for the registry to which you connected, grouped by each of your repositories, similar to the following:
 
-![AddImages.png](https://support.snyk.io/hc/article_attachments/360007065857/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en.png)
+![AddImages.png](../../../.gitbook/assets/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en.png)
 
 * Select single or multiple images with any or all of the following methods:
   * Type the name of a single image for import in the Image Name field \(\#1 in the image above\),
@@ -36,7 +36,7 @@ Snyk tests and monitors your Artifactory container images by evaluating its tags
 
 Images are indicated with a unique icon ![image4.png](https://support.snyk.io/hc/article_attachments/360007147198/uuid-d083d5fe-780a-cf2f-18db-42720db8c5a1-en.png), and you can also filter to view only the Artifactory projects:
 
-![Artifactory\_projects.png](https://support.snyk.io/hc/article_attachments/360007065877/uuid-5c95894c-97d8-a6a9-0969-7c5fee541211-en.png)
+![](../../../.gitbook/assets/uuid-5c95894c-97d8-a6a9-0969-7c5fee541211-en.png)
 
 Artifactory integration works similarly to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages in our docs.
 
