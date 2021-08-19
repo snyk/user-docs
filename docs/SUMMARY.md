@@ -147,7 +147,7 @@
 * [Snyk Infrastructure as Code](snyk-infrastructure-as-code/README.md)
   * [Scan Terraform files](snyk-infrastructure-as-code/scan-terraform-files/README.md)
     * [Configure your integration to find security issues in your Terraform filess](snyk-infrastructure-as-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess.md)
-    * [Scan and fix security issues in Terraform files](snyk-infrastructure-as-code/scan-terraform-files/scan-and-fix-security-issues-in-terraform-files.md)
+    * [Scan and fix security issues in Terraform  files](snyk-infrastructure-as-code/scan-terraform-files/scan-and-fix-security-issues-in-terraform-files.md)
     * [Detecting Terraform configuration files using a broker](snyk-infrastructure-as-code/scan-terraform-files/detecting-terraform-configuration-files-using-a-broker.md)
   * [Scan CloudFormation files](snyk-infrastructure-as-code/scan-cloudformation-files/README.md)
     * [Configure your integration to find security issues in your CloudFormation files](snyk-infrastructure-as-code/scan-cloudformation-files/configure-your-integration-to-find-security-issues-in-your-cloudformation-files.md)
