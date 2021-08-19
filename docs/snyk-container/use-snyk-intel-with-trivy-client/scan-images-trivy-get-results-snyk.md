@@ -18,7 +18,7 @@ trivy client --remote http://api.snyk.io/trivy --token
 
 Once running the above command with the desired image to scan, Snyk results are displayed as the output, demonstrating the issues and in which version they were fixed.
 
-![mceclip0.png](https://support.snyk.io/hc/article_attachments/4404414577937/mceclip0.png)
+![](../../.gitbook/assets/mceclip0-20-.png)
 
 ## **Supported CLI options**
 
