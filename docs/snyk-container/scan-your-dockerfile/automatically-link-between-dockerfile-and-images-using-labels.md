@@ -4,7 +4,7 @@ Snyk allows you to manually or automatically link from a Dockerfile to all conta
 
 This information appears in the **LINKED IMAGES** section of the details for a project:
 
-![mceclip3.png](https://support.snyk.io/hc/article_attachments/360012839537/mceclip3.png)
+![](../../.gitbook/assets/mceclip3.png)
 
 You can get automatic links between imported images \(via container registry integration\) to existing Dockerfile projects. This is done by checking whether the OCI label in the image matches the path of a Dockerfile that exists in the org in Snyk.
 
@@ -29,7 +29,7 @@ For a link to be created, Snyk needs to be able to map the Dockerfile repository
 
 To create automatic links between container images to Dockerfiles stored in brokered SCMs, enter the URL in the integration page settings:
 
-![mceclip0.png](https://support.snyk.io/hc/article_attachments/4405328176401/mceclip0.png)
+![](../../.gitbook/assets/mceclip0-4-.png)
 
 Once available, Snyk can use that for linking generation.
 
