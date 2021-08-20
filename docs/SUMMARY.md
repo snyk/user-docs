@@ -9,6 +9,7 @@
     * [Groups, organizations, and users](introducing-snyk/snyks-core-concepts/groups-organizations-and-users.md)
     * [Notifications](introducing-snyk/snyks-core-concepts/notifications.md)
     * [Reporting](introducing-snyk/snyks-core-concepts/reporting.md)
+    * [Severity levels](introducing-snyk/snyks-core-concepts/severity-levels.md)
     * [Running tests](introducing-snyk/snyks-core-concepts/running-tests.md)
     * [Snyk settings](introducing-snyk/snyks-core-concepts/snyk-settings.md)
 * [Getting started](getting-started/README.md)
