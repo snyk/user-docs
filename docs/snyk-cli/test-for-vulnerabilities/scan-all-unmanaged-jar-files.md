@@ -10,7 +10,7 @@ Java apps typically have jar files in a number of locations within an applicatio
 
 To view version differences:
 
-![Untitled\_\_1\_.png](https://support.snyk.io/hc/article_attachments/4402912056081/Untitled__1_.png)
+![](../../.gitbook/assets/untitled__1_.png)
 
 Snyk CLI looks through all JAR files in a single folder to match any dependencies hosted on Maven central using the `snyk test —scan-all-unmanaged` command. However, this functionality may be problematic if an application wasn’t built using a package manager like Gradle or Maven in the first place as it may lead to dependency conflicts. This is especially relevant for applications built using Ant.
 
@@ -34,5 +34,5 @@ for /R %workspace% %%f in (*.jar) do cmd /c snyk monitor --scan-unmanaged --remo
 
 Here's what the end result should look like in Snyk UI for an app with **—remote-repo-url=econnect**
 
-![Untitled.png](https://support.snyk.io/hc/article_attachments/4402908073745/Untitled.png)
+![](../../.gitbook/assets/untitled.png)
 

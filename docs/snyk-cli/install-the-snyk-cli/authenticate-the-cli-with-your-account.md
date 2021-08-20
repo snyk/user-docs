@@ -4,8 +4,8 @@ To associate your Snyk account with the CLI, you must first authenticate your ma
 
 You can authenticate:
 
-* [Through your browser]()
-* [Using your API token]()
+* Through your browser
+* Using your API token
 
 ### Authenticate using your API token
 

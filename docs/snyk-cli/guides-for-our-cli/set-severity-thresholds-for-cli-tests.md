@@ -19,4 +19,4 @@ See also
 * [Test public repositories before use](https://support.snyk.io/hc/articles/360003851277#UUID-ba99a73f-110d-1f1d-9e7a-1bad66bf0996)
 * [Test public npm packages before use](https://support.snyk.io/hc/articles/360003812498#UUID-0ab434a8-c1b5-873d-cbf6-7a61a07c4ad8)
 * [Manage vulnerability results with the Snyk CLI wizard](https://support.snyk.io/hc/articles/360003851357#UUID-b401cc8a-a55a-2b74-d9e5-c92dd49ed58c)
-* 
+
