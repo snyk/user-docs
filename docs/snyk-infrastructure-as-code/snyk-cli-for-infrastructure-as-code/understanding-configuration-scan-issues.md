@@ -10,7 +10,7 @@ snyk iac test privilegedDeployment.yaml
 
 could give an output as follows
 
-![Screenshot\_2020-08-25\_at\_11.18.45.png](https://support.snyk.io/hc/article_attachments/360010905417/Screenshot_2020-08-25_at_11.18.45.png)
+![](../../.gitbook/assets/screenshot_2020-08-25_at_11.18.45.png)
 
 This example is of output from a Kubernetes file, but this guide applies to any file format including Terraform.
 
@@ -24,7 +24,7 @@ This example is of output from a Kubernetes file, but this guide applies to any 
 
 ### **As an example:**
 
-![issue.png](https://support.snyk.io/hc/article_attachments/360010980798/issue.png)
+![](../../.gitbook/assets/issue.png)
 
 The path of this issue is specified as
 
@@ -34,5 +34,5 @@ The path of this issue is specified as
 
 In this screenshot you can see the highlighted line represents the identified issue.
 
-### ![Screenshot\_2020-08-07\_at\_14.27.04.png](https://support.snyk.io/hc/article_attachments/360010905497/Screenshot_2020-08-07_at_14.27.04.png)
+### ![Screenshot\_2020-08-07\_at\_14.27.04.png](../../.gitbook/assets/screenshot_2020-08-07_at_14.27.04.png)
 
