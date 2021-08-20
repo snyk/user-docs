@@ -29,7 +29,7 @@ This process describes all options.
 ## How to set up a service account
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
-2. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Service accounts** to view existing service accounts and their details.
+2. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Service accounts** to view existing service accounts and their details.
 3. Click **Create a service account** to create a new one. The screen that loads varies a little, depending on if you chose a group \(left\) or an organization \(right\):
 
    |  |  |
@@ -60,7 +60,7 @@ Administrators can change token names and delete tokens. When you delete a servi
 
    For group tokens, navigate to the group level. For organization tokens, group admins can delete from either the group or the relevant organization; organization admins should navigate to the relevant organization.
 
-2. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Service accounts**.
+2. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Service accounts**.
 3. Scroll to find the list of existing service accounts: 
 4. From the list of existing tokens:
    * Click **Delete** to delete a token and invalidate it immediately. When prompted, click **OK**. Remember that you cannot re-generate the same token!
