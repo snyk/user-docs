@@ -15,31 +15,31 @@ Snyk produces advanced security reports, allowing you to explore the vulnerabili
 
 This is an example of a project level security report:
 
-![555.png](https://support.snyk.io/hc/article_attachments/360012150658/555.png)
+![](../../.gitbook/assets/555.png)
 
 ### Projects monitoring and automatic fix pull requests
 
 Snyk frequently scans your projects on either a daily or a weekly basis. When new vulnerabilities are found, it notifies you by email and by opening an automated pull requests with fixes to repositories.
 
-Here is an example of a fix pull request opened by Snyk:![666.png](https://support.snyk.io/hc/article_attachments/360012150698/666.png)
+Here is an example of a fix pull request opened by Snyk:![666.png](../../.gitbook/assets/666.png)
 
 To review and adjust the automatic fix pull request settings:
 
-1. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Integrations**.
+1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
 2. Select **Edit Settings** for Bitbucket Cloud.
-3. Navigate to **Automatic fix pull requests**: ![777.png](https://support.snyk.io/hc/article_attachments/360012150718/777.png)
+3. Navigate to **Automatic fix pull requests**: ![777.png](../../.gitbook/assets/777.png)
 
 ### Pull request tests
 
 Snyk tests any newly created pull request in your repositories for security vulnerabilities, and sends a build check to Bitbucket Cloud. You can to see whether the pull request introduces new security issues, directly from Bitbucket Cloud.
 
-This is how Snyk pull request build check appears in the **Pull Request** page in Bitbucket Cloud:![888.png](https://support.snyk.io/hc/article_attachments/360012150738/888.png)
+This is how Snyk pull request build check appears in the **Pull Request** page in Bitbucket Cloud:![888.png](../../.gitbook/assets/888.png)
 
 To review and adjust the pull request tests settings,
 
-1. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Integrations**.
+1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
 2. Select **Edit Settings** for Bitbucket Cloud.
-3. Navigate to **Default Snyk test for pull requests**: ![999.png](https://support.snyk.io/hc/article_attachments/360012064337/999.png)
+3. Navigate to **Default Snyk test for pull requests**: ![999.png](../../.gitbook/assets/999.png)
 
 ## Required permissions scope for the Bitbucket Cloud integration
 
@@ -71,13 +71,13 @@ The Connect App integration is a layer on top of the regular App Password integr
 
 By adding the Connect App to your Bitbucket workspaces, your workspaces members can import repos and see the security data in a dedicated Snyk tab in Bitbucket Cloud:
 
-![mceclip1.png](https://support.snyk.io/hc/article_attachments/4402401315729/mceclip1.png)
+![](../../.gitbook/assets/mceclip1-13-.png)
 
 ### Installing the Connect App
 
 To install the app, navigate to the **Security** tab in one of your workspace's repos in Bitbucket Cloud, then click **Try now**:
 
-![mceclip2.png](https://support.snyk.io/hc/article_attachments/4402409117329/mceclip2.png)
+![](../../.gitbook/assets/mceclip2-3-.png)
 
 ### Uninstalling the Connect App
 
@@ -93,15 +93,15 @@ The Connect App is associated to a specific Snyk account and organization, as de
 
 To change these settings later, navigate to the workspace settings and select **Security for Bitbucket Cloud Integration Settings**:
 
-![mceclip0.png](https://support.snyk.io/hc/article_attachments/4402409293841/mceclip0.png)
+![](../../.gitbook/assets/mceclip0-23-.png)
 
 ## Disabling the Bitbucket Cloud integration
 
 To disable this integration:
 
-1. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Integrations** in Snyk.
+1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations** in Snyk.
 2. Find the specific integration to deactivate in your list of integrations, and click Edit settings. 
-3. A page appears showing the current status of your integration and a place to update your credentials, specific to each integration \(credentials, API key, Service Principal, or connection details\): ![mceclip2.png](https://support.snyk.io/hc/article_attachments/360019961498/mceclip2.png)
+3. A page appears showing the current status of your integration and a place to update your credentials, specific to each integration \(credentials, API key, Service Principal, or connection details\): ![mceclip2.png](../../.gitbook/assets/mceclip2-4-.png)
 4. Click **Disconnect**.
 
 Your credentials are removed from Snyk and any integration-specific projects Snyk is monitoring are deactivated on Snyk.  
