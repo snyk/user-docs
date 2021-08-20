@@ -9,8 +9,10 @@ Administrators can configure the following per license:
   * We recommend describing your company’s specific policy, explaining the need for collaboration from your developers as well as providing them step-by-step instructions if any are needed
   * Legal instructions will appear in the CLI results and on issue cards within the project view
 
+{% hint style="info" %}
 **Feature availability**  
 For customers with a Business plan: if no group is available, org administrators can make license policy changes; if a group is available, group administrators can make license policy changes. For customers with an Enterprise plan, group administrators can create or modify a policy. See [Pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 ## Assign rules and severities
 

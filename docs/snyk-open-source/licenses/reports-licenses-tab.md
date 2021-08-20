@@ -8,8 +8,6 @@ The **Licenses** area displays all licenses that are currently used in your proj
 
 The following table describes the different parts of the **Licenses** area:
 
-![](../../.gitbook/assets/uuid-8399334e-74b7-0649-d55c-e0ddecb54272-en.png)
-
 | **Element** | **Description** |
 | :--- | :--- |
 | License | The full official name of the license, linked to additional details and information. SPDX licenses are linked to the [SPDX](https://spdx.org/) site, while non-SPDX licenses are linked to their respective site. |
@@ -19,6 +17,8 @@ The following table describes the different parts of the **Licenses** area:
 **Licenses tab actions**
 
 These controls appear at the top of the window:
+
+![](../../.gitbook/assets/uuid-8399334e-74b7-0649-d55c-e0ddecb54272-en.png)
 
 * **Search for Licenses**—the dynamic search field enables you to enter free text and begins searching with the first character you type; alternatively, select multiple packages from the dropdown list that opens when you click in the field. In addition, click the Select All or Deselect All links that dynamically appear in the upper right-hand corner of the dropdown list.
 * **Search for Projects**—the dynamic search field enables you to enter free text and begins searching with the first character you type; alternatively, select multiple packages from the dropdown list that opens when you click in the field. In addition, click the Select All or Deselect All links that dynamically appear in the upper right-hand corner of the dropdown list.
