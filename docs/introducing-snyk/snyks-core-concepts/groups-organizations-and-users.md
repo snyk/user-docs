@@ -1,7 +1,9 @@
 # Groups, organizations, and users
 
+{% hint style="info" %}
 **Feature availability**  
 Some functions \(such as Groups\) are only available on certain plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 Snyk has a hierarchy that allows you to control access to features such as reports. This hierarchy is as follows:
 
@@ -23,7 +25,9 @@ Organizations are contained in groups. Based on your company requirements, you c
 
 Organizations can contain multiple projects. For example, if an organization represents an engineering team, this allows each team to see the applications they are working on.
 
+{% hint style="info" %}
 When you sign up to Snyk using a social login, you have a default organization. Any projects you add appear in this organization by default.
+{% endhint %}
 
 See [What’s a Snyk organization?](https://support.snyk.io/hc/en-us/articles/360004037637-What-s-a-Snyk-organization-)
 
@@ -42,8 +46,10 @@ Snyk provides four different types of members or users:
 * Group member
 * Group administrator
 
+{% hint style="info" %}
 **Feature availability**  
 Group administrators and collaborators are available with Business and Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 More on [user and group management](https://docs.snyk.io/user-and-group-management).
 

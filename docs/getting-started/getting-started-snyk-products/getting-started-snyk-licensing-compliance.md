@@ -1,9 +1,25 @@
 # Getting Started with Snyk License Compliance Management
 
+{% hint style="info" %}
 **Feature availability**  
 Basic license policy configuration on a single default license policy is available with Business plans. Full policy creation and management is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 Get started with Snyk license compliance management, to check compliance for the [open source licenses](https://snyk.io/learn/open-source-licenses/) in your code, as part of your [Snyk Open Source](https://support.snyk.io/hc/en-us/sections/360003454998-Open-source) solution.
+
+{% hint style="info" %}
+This process describes using the Snyk UI and a [supported source code management](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) system.  
+You can also use an [IDE tool](https://support.snyk.io/hc/en-us/sections/360001138118-IDE-tools) or a [CI/CD integration](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations), or use the [Snyk CLI tool](https://support.snyk.io/hc/en-us/articles/360003812458-Getting-started-with-the-CLI) to get started using the command line.
+{% endhint %}
+
+### **Prerequisites**
+
+Ensure you have:
+
+1. A Snyk [paid plan](https://snyk.io/plans/).
+2. Integrated and installed your projects, as described for [Snyk Open Source](https://support.snyk.io/hc/en-us/articles/360014875297-Getting-started-with-Snyk-Open-Source).
+
+## **Stage 1: Define policies**
 
 To take effective action based on license issues, you need to define policies defining these actions, based on license types. Policies provide a way to capture different requirements within an organization, based on factors such as line of business. Work with your legal team to create policies which are specific to your company.
 
@@ -14,6 +30,8 @@ Each policy contains rules, detailing which licenses are acceptable and which ar
 ![](../../.gitbook/assets/license-policy.png)
 
 See [Licenses overview](https://docs.snyk.io/snyk-open-source/licenses) and [Setting a license policy](https://docs.snyk.io/snyk-open-source/license-policies/setting-a-license-policy).
+
+## Stage 2: View issues
 
 Snyk’s [Git-based integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab:
 
@@ -41,6 +59,8 @@ This example includes two high severity license policy violations, caused by:
 You can view and share detailed lists of licenses being used, and see a report that lists all the open source components and licenses along with copyright information.
 
 ![](../../.gitbook/assets/copyright.png)
+
+## **Stage 3: Process issues**
 
 You can now take actions to resolve the license issues identified during the scan, to help you build and deploy your application without outstanding licensing issues.
 

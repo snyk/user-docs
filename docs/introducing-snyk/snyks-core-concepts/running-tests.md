@@ -5,6 +5,8 @@ You can use Snyk to test your code in multiple ways.
 * Manually; using the [Snyk CLI](running-tests.md), the [Snyk app](running-tests.md), and the [Snyk API](running-tests.md).
 * Snyk can also [run tests automatically](running-tests.md); on a recurring basis, or when a relevant repo change is made.
 
+## Run tests manually
+
 ### Run tests with the CLI
 
 With our [**CLI**](https://snyk.io/docs/using-snyk): you can use the following commands:

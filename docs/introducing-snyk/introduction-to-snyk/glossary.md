@@ -187,7 +187,9 @@ Software Bill Of Materials. A list of components in a piece of software.
 
 Software Composition Analysis. Technology used to identify open-source and third-party components in use in an application, including their known security vulnerabilities, and typically adversarial license restrictions.
 
+{% hint style="info" %}
 Not to be confused with static code analysis \(a method of debugging by examining source code before a program is run\).
+{% endhint %}
 
 ### SCM
 

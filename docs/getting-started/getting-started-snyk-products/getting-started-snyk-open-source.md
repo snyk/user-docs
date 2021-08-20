@@ -2,8 +2,10 @@
 
 Get started with Snyk Open Source to inspect, find and fix vulnerabilities in your code.
 
+{% hint style="info" %}
 This process describes using the Snyk.io UI and a source code management system.  
 You can also use an [IDE tool](https://support.snyk.io/hc/en-us/sections/360001138118-IDE-tools) or a [CI/CD integration](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations). See [Integrations](https://docs.snyk.io/integrations) for more details.
+{% endhint %}
 
 **Using the CLI tool**
 
@@ -15,9 +17,18 @@ npm install -g snyk
 
 See [Getting started with the CLI](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli) for details.
 
-### Stage 1: Add source control integration
+#### **Prerequisites**
 
+Ensure you have:
+
+1. A code project using open source packages, on a [supported source code management system](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) \(such as GitHub\), with a supported [language & package manager](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support) \(such as Java\).
+2. A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](https://support.snyk.io/hc/en-us/articles/360017098237-Create-a-Snyk-account) for details\).
+
+## Stage 1: Add source control integration
+
+{% hint style="info" %}
 if you already have an integration set up, you can go to Step 3.
+{% endhint %}
 
 Choose a source code integration, to allow Snyk to work on a project.
 
@@ -27,6 +38,8 @@ Choose a source code integration, to allow Snyk to work on a project.
 4. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
 
 See [DevOps integrations & languages](https://support.snyk.io/hc/en-us/articles/360011733538-DevOps-integrations-languages) for more details
+
+## Stage 2: Add Projects
 
 Add projects to test with Snyk, by choosing repositories for Snyk to test and monitor.
 
@@ -39,9 +52,11 @@ Add projects to test with Snyk, by choosing repositories for Snyk to test and mo
 5. A progress bar appears: click **View log** to see log results. 
 6. Project import completes.
 
+{% hint style="info" %}
 If you encounter any errors during import, see the [Importing projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects) information.
+{% endhint %}
 
-### Stage 3: View vulnerabilities
+## Stage 3: View vulnerabilities
 
 You can now view vulnerability results for imported projects. The **Projects** tab appears by default after import, showing vulnerability information for project you've imported.
 
@@ -68,6 +83,10 @@ For JavaScript, Ruby and Java projects, Snyk can remediate your vulnerabilities 
 4. Scroll down to the bottom of the screen and click **Open a Fix PR**.
 5. Snyk now actions this PR, then a results screen appears: ![Screenshot\_2021-04-09\_at\_17.44.26.png](../../.gitbook/assets/screenshot_2021-04-09_at_17.44.26%20%281%29.png)
 6. Optionally, select the **Files changed** tab to see details of the changes made. ![Screenshot\_2021-04-09\_at\_17.46.22.png](../../.gitbook/assets/screenshot_2021-04-09_at_17.46.22.png)
+
+{% hint style="info" %}
+If no package upgrade is available, you may be able to use Snyk patches to fix vulnerabilities.
+{% endhint %}
 
 See [Fixing vulnerabilities](https://docs.snyk.io/snyk-open-source/open-source-basics/fixing-vulnerabilities) for more details.
 

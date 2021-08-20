@@ -2,6 +2,12 @@
 
 Get started with Snyk Container to help you find and fix vulnerabilities in container images. See [Container security overview](https://support.snyk.io/hc/en-us/articles/360003946897-Container-security-overview) and [Snyk Container](https://solutions.snyk.io/snyk-academy/container) for details.
 
+{% hint style="info" %}
+This process uses the Snyk.io UI. For details of Snyk Container using the Snyk CLI \(Command-Line Interface\) tool, see **Snyk CLI for container security** and **Test your container images with our CLI tool**.
+{% endhint %}
+
+### Prerequisites
+
 Ensure you have:
 
 1. Access to a relevant container registry to use with Snyk. Snyk supports registries including , Amazon Elastic Container Registry \([ECR](https://support.snyk.io/hc/en-us/sections/360001114218-ECR-image-scanning)\), Google Container Registry \([GCR](https://support.snyk.io/hc/en-us/sections/360001127497-GCR-image-scanning)\), Microsoft Azure Container Registry \([ACR](https://support.snyk.io/hc/en-us/sections/360001127457-ACR-image-scanning)\), and [JFrog Artifactory](https://support.snyk.io/hc/en-us/sections/360001127477-JFrog-Artifactory-image-scanning). Alternatively, access to [Kubernetes](https://support.snyk.io/hc/en-us/sections/360001114238-Kubernetes-workload-and-image-scanning) if you select that as an integration.
@@ -9,7 +15,7 @@ Ensure you have:
 
 See [Prerequisites](https://solutions.snyk.io/snyk-academy/container/prerequisites) for more details.
 
-### Stage 1: Add container registry integration
+## Stage 1: Add container registry integration
 
 Choose a container registry integration, to connect the registry with Snyk:
 
@@ -21,6 +27,8 @@ Choose a container registry integration, to connect the registry with Snyk:
 
    ![Container-Account-credentials.png](../../.gitbook/assets/container-account-credentials.png)
 
+## Stage 2: Add projects
+
 Add projects for your selected container, to start scanning with Snyk.
 
 1. Click **Add Project**, and select the integration registry entry to add from: ![Containers-\_Add\_projects.png](../../.gitbook/assets/containers-_add_projects.png)
@@ -31,9 +39,11 @@ Add projects for your selected container, to start scanning with Snyk.
 
 3. A progress bar appears: click **View log** to see log results.
 
+{% hint style="info" %}
 If you encounter any errors during import, see the [Importing projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects) information.
+{% endhint %}
 
-### Stage 3: View vulnerabilities
+## Stage 3: View vulnerabilities
 
 You can now see vulnerability results for imported projects.
 
@@ -43,6 +53,8 @@ You can now see vulnerability results for imported projects.
    ![image5.png](../../.gitbook/assets/image5-1-.png)
 
 See [Analysis and remediation for your images from the Snyk app](https://docs.snyk.io/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app) for more details.
+
+## Stage 4: Fix and review
 
 1. Fix issues found, based on Snyk recommendations.
 2. Rebuild your image.

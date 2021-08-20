@@ -2,10 +2,16 @@
 
 Snyk reports show the status of all of your projects, issues, dependencies, and licenses, for your organization or group. For more details, see [Reports](https://support.snyk.io/hc/en-us/sections/360001138198-Reports).
 
+{% hint style="info" %}
 **Feature availability**  
 This feature is available with all paid plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
+
+#### Dependency reports
 
 Snyk reporting acts as a Bill of Materials \(BOM\) to quickly and easily identify which projects have a specific version of a dependency. Dependency reports identify each individual open source dependency by name, along with version, vulnerabilities, and related projects.
+
+#### License reports
 
 See [Dependencies tab](https://docs.snyk.io/reports-1/reports/dependencies-tab).
 

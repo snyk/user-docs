@@ -2,14 +2,18 @@
 
 Get started with [Snyk Code](https://snyk.io/product/snyk-code/) to find, prioritize and fix potential vulnerabilities in your proprietary code.
 
+{% hint style="info" %}
 This documentation describes using Snyk Code with the Web UI. You can also use Snyk Code as a plugin to your JetBrains IDE; see [JetBrains IDE Plugins](https://support.snyk.io/hc/en-us/articles/360004032317-JetBrains-IDE-Plugins) for more details.
+{% endhint %}
+
+### Prerequisites
 
 * A Snyk account.
 * [Snyk Open Source](https://docs.snyk.io/snyk-open-source) or [Snyk Container](https://docs.snyk.io/snyk-container) installed \(as currently Snyk Code is distributed as an add-on\).
 * Projects that include code in [a supported language](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support) \(currently Java, JavaScript, and Python\).
 * One of the following supported source code management systems \(SCMs\): GitHub cloud, BitBucket cloud, Gitlab cloud.
 
-### Stage 1: Enable Snyk Code
+## Stage 1: Enable Snyk Code
 
 Snyk Code is disabled by default, so you must enable it for each organization:
 
@@ -18,9 +22,11 @@ Snyk Code is disabled by default, so you must enable it for each organization:
 3. Under **Enable Snyk Code**, change **Disabled** to **Enabled:** ![enable-snyk-code.png](../../.gitbook/assets/enable-snyk-code.png)
 4. Click **Save changes**.
 
-### Stage 2: Add source control integration
+## Stage 2: Add source control integration
 
-if you already have an integration set up, you can skip this step.
+{% hint style="info" %}
+If you already have an integration set up, you can skip this step
+{% endhint %}
 
 Choose a source code integration, to allow Snyk to work on a project.
 
@@ -32,9 +38,13 @@ Choose a source code integration, to allow Snyk to work on a project.
 
 4. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
 
-See [DevOps integrations & languages](https://support.snyk.io/hc/en-us/articles/360011733538-DevOps-integrations-languages) for more details
+See [DevOps integrations & languages](https://support.snyk.io/hc/en-us/articles/360011733538-DevOps-integrations-languages) for more details.
 
-if you already have projects added, you can skip this step.
+## Stage 3: Add projects
+
+{% hint style="info" %}
+If you already have projects added, you can skip this step.
+{% endhint %}
 
 Add projects to test with Snyk, by choosing repositories for Snyk to test and monitor.
 
@@ -45,11 +55,13 @@ Add projects to test with Snyk, by choosing repositories for Snyk to test and mo
 5. A progress bar appears: click **View log** to see log results.
 6. Project import completes.
 
+{% hint style="info" %}
 Currently Snyk Code does not support the **Exclude folders** option during import. Please contact us if you need more information.
+{% endhint %}
 
 See [Snyk projects](https://support.snyk.io/hc/en-us/sections/360004724958-Snyk-projects) for more details.
 
-### Stage 4: View vulnerabilities
+## Stage 4: View vulnerabilities
 
 You can now view vulnerability results for imported projects. The **Projects** tab appears by default after import, showing vulnerability information for projects you've imported.
 
@@ -57,11 +69,11 @@ You can now view vulnerability results for imported projects. The **Projects** t
 
    ![View-Vulns1.png](../../.gitbook/assets/view-vulns1.png)
 
-2. Click on an entry to open the issues view for that entry. For each issue, this shows the exploitable code snippet and a description of the code flaw that may lead to this vulnerability if not fixed: ![View-Vulns2.png](../../.gitbook/assets/view-vulns2.png)
+2. Click on an entry to open the issues view for that entry. For each issue, this shows the exploitable code snippet and a description of the code flaw that may lead to this vulnerability if not fixed:  ![View-Vulns2.png](../../.gitbook/assets/view-vulns2.png)
 
 See [View project information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information) for more details.
 
-### Stage 5: View issue details
+## Stage 5: View issue details
 
 Click **Full Details** on an issue to view more details about it, such as:
 
