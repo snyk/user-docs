@@ -12,7 +12,7 @@ From the build directory, Bitbucket Pipelines displays a list of available pipes
 
 From this list, find and click **Snyk** to view the pipe, examples, parameters, and values:
 
-![mceclip0.png](https://support.snyk.io/hc/article_attachments/360020076357/mceclip0.png)
+![](../../.gitbook/assets/mceclip0-25-.png)
 
 Snyk integration with Bitbucket pipes is supported for the following languages:
 
@@ -44,7 +44,7 @@ To enable Snyk to test and monitor your code as an integral part of your CI/CD w
 * Once included in your pipeline commands, Snyk looks for the manifest files in that repository \(package.json, package-lock.json\) and performs the scan.
 * Results appear in the Bitbucket Pipelines output interface, similar to the following:
 
-  ![image3.png](https://support.snyk.io/hc/article_attachments/360007145678/uuid-dbbc4153-d3ff-5cbb-9ddd-affa138387b7-en.png)
+  ![image3.png](../../.gitbook/assets/uuid-dbbc4153-d3ff-5cbb-9ddd-affa138387b7-en.png)
 
 ## Note
 
@@ -111,7 +111,7 @@ The following table describes the Snyk pipe parameters.
             <p>From the pipeline YAML file that you&apos;re building, enter $SNYK_TOKEN
               as the value for the SNYK_TOKEN parameter in the Snyk pipe.</p>
             <p>
-              <img src="https://support.snyk.io/hc/article_attachments/360007145698/uuid-6ce8d058-882c-c810-f303-c59dcaeeeda8-en.png"
+              <img src="../../.gitbook/assets/uuid-6ce8d058-882c-c810-f303-c59dcaeeeda8-en (1).png"
               alt="Snyk_token_in_pipeline.png" />
             </p>
           </li>

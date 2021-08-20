@@ -22,7 +22,7 @@ For any pipeline project, you can add a Snyk step to your build at any point in 
    * From the Advanced area, leave the Snyk installation default. Enter any additional valid Snyk CLI arguments and their values in the Arguments box.
    * Click Generate Pipeline Script. The pipe syntax is generated and displayed in the window below.
 
-     ![image8.png](https://support.snyk.io/hc/article_attachments/360006275658/uuid-0291a859-7607-138a-b61c-0dbdc395e4c5-en.png)
+     ![image8.png](../../.gitbook/assets/uuid-0291a859-7607-138a-b61c-0dbdc395e4c5-en.png)
 2. Copy the generated pipe syntax.
 3. Navigate to the Configure area of your pipeline and go to the Pipeline part. Paste the Snyk step syntax in your pipeline as part of an existing stage or as a new separate stage.
 
@@ -30,7 +30,7 @@ For any pipeline project, you can add a Snyk step to your build at any point in 
 
    You can also choose to add the stage to your `Jenkinsfile` directly from the Git.
 
-   ![image9.png](https://support.snyk.io/hc/article_attachments/360006212957/uuid-ab230996-8e5a-af77-6d44-36f67e2d827d-en.png)
+   ![image9.png](../../.gitbook/assets/uuid-ab230996-8e5a-af77-6d44-36f67e2d827d-en.png)
 
 4. Now, every time you run your project build:
 
@@ -50,9 +50,9 @@ For any pipeline project, you can add a Snyk step to your build at any point in 
      * If a severity threshold was defined for a severity that is assigned to any vulnerability in your project, Jenkins breaks the build.
      * Otherwise, Jenkins continues to run the build to completion \(success or failure\) and Snyk activity ends.
 
-       ![image7.png](https://support.snyk.io/hc/article_attachments/360006275698/uuid-125bcaea-cfe7-6fa6-59df-f677d6d412f7-en.png)
+       ![image7.png](../../.gitbook/assets/uuid-125bcaea-cfe7-6fa6-59df-f677d6d412f7-en.png)
 
      * From the top of the report, right-click View on Snyk.io to view the snapshot and vulnerability information directly from our app:
 
-       ![image10.png](https://support.snyk.io/hc/article_attachments/360006212997/uuid-810f5c24-fc0d-7996-1fea-6f67b52ee631-en.png)
+       ![image10.png](../../.gitbook/assets/uuid-810f5c24-fc0d-7996-1fea-6f67b52ee631-en.png)
 

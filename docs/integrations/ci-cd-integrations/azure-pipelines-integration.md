@@ -40,8 +40,8 @@ To start using our task as part of your pipeline build, first install the extens
 4. Access your Azure DevOps account and navigate to **Extensions -&gt; Browse marketplace.**
 5. Search for the **Snyk Security Scan** extension, click **Get it free** .
 6. Create a new _Service Connection_ in your project via **Project Settings** —&gt; **Pipelines** —&gt; **Service Connections**
-7. Select "**Snyk Authentication**" service connection: ![ap\_-\_search.jpg](https://support.snyk.io/hc/article_attachments/360008696738/ap_-_search.jpg)
-8. In the Snyk Authentication service connection form, enter the **Server URL** and the **Snyk API Token** along with a **Service connection name**: ![ap\_-\_config.jpg](https://support.snyk.io/hc/article_attachments/360008621717/ap_-_config.jpg)
+7. Select "**Snyk Authentication**" service connection: ![ap\_-\_search.jpg](../../.gitbook/assets/ap_-_search.jpg)
+8. In the Snyk Authentication service connection form, enter the **Server URL** and the **Snyk API Token** along with a **Service connection name**: ![ap\_-\_config.jpg](../../.gitbook/assets/ap_-_config.jpg)
 9. Click on **Save**, ensuring the new service connection appears in your list of service connections.
 
 ## Add the Snyk Security Task to your pipelines
@@ -61,7 +61,7 @@ This extension requires that Node.js and npm be installed on the build agent. Th
 
 1. Add the Snyk Security Scan task when you create your pipeline or while editing an existing one. See the [Azure Pipelines documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops)
 2. From Azure, access the pipeline that you’d like to scan for vulnerabilities, open it for editing and check that the Build step is included just before the point at which you’d like to insert the Snyk task \(this is not required but is considered best practice for consistency across projects\).
-3. Open the **assistant**, search for the Snyk Security Scan task and click it. The configuration panel opens on top of the assistant. ![Azure.png](https://support.snyk.io/hc/article_attachments/360017779998/Azure.png)
+3. Open the **assistant**, search for the Snyk Security Scan task and click it. The configuration panel opens on top of the assistant. ![Azure.png](../../.gitbook/assets/azure.png)
 4. Complete the fields in the configuration. Find full details about the parameters in the [GitHub repo](https://github.com/snyk/snyk-azure-pipelines-task#task-parameters) or in this section below: [Snyk Security Scan task parameters and values](azure-pipelines-integration.md).
 
    If the **Fail build if Snyk finds issue** option is checked, then if the build fails, the pipeline job will be failed by the Snyk task.
@@ -88,7 +88,7 @@ This extension requires that Node.js and npm be installed on the build agent. Th
 
 7. Once included in your pipeline, the task runs each time the pipeline runs, and the results appear in the Azure Pipelines output view:
 
-   ![image2.png](https://support.snyk.io/hc/article_attachments/360007145578/uuid-d570e34b-3973-2044-598b-cb89c82a1db0-en.png)
+   ![image2.png](../../.gitbook/assets/uuid-d570e34b-3973-2044-598b-cb89c82a1db0-en.png)
 
    If the Snyk task fails the build, an error message appears in the results indicating that the build failed due to `snyk test`.
 
@@ -122,7 +122,7 @@ This section describes the Snyk task parameters for Azure Pipelines integration,
           connections.</p>
         <p>The configuration panel displays all available Snyk service connections
           from a dropdown list like the following:
-          <img src="https://support.snyk.io/hc/article_attachments/360007063837/uuid-9c6a12b4-2c03-2248-ad0e-c7437a35e142-en.png"
+          <img src="../../.gitbook/assets/uuid-9c6a12b4-2c03-2248-ad0e-c7437a35e142-en.png"
           alt="image3.png" />
         </p>
         <p>If multiple Snyk service connections are available from the dropdown list,
@@ -263,11 +263,11 @@ This section displays examples of Snyk Security Scan task configurations and \[p
 
 The configuration panel appears as follows:
 
-![mceclip0.png](https://support.snyk.io/hc/article_attachments/4405203300497/mceclip0.png)
+![](../../.gitbook/assets/mceclip0-24-.png)
 
 Click **add** and it is added to your pipeline as follows:
 
-![mceclip1.png](https://support.snyk.io/hc/article_attachments/4405193195665/mceclip1.png)
+![](../../.gitbook/assets/mceclip1-15-.png)
 
 **Simple Application Testing Example**
 
@@ -286,11 +286,11 @@ The following is an example of the Snyk Security Scan task within the script for
 
 When populated with the most common settings, the configuration panel in Azure appears similar to the following:
 
-![mceclip2.png](https://support.snyk.io/hc/article_attachments/4405203307153/mceclip2.png)
+![](../../.gitbook/assets/mceclip2-5-.png)
 
 Following is an example of the same configuration once you've added it to your pipeline.
 
-![mceclip3.png](https://support.snyk.io/hc/article_attachments/4405193201809/mceclip3.png)
+![](../../.gitbook/assets/mceclip3-1-.png)
 
 **Simple Container Image Testing Example**
 

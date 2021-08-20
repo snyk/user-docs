@@ -48,7 +48,7 @@
           when imported to the UI.</p>
         <p>Copy the Organization ID from the Snyk UI in the Settings area.</p>
         <p>
-          <img src="https://support.snyk.io/hc/article_attachments/360006213117/uuid-dfede20b-acb5-fc08-8d1d-59e8476240a5-en.png"
+          <img src="../../.gitbook/assets/uuid-dfede20b-acb5-fc08-8d1d-59e8476240a5-en.png"
           alt="image6.png" />
         </p>
       </td>
@@ -81,11 +81,11 @@
           or create a service account. This is the token used to authenticate your
           Snyk account when connecting to TeamCity.</p>
         <p>
-          <img src="https://support.snyk.io/hc/article_attachments/360006213137/uuid-c27d25fc-00a7-f0f4-261c-d0d9f8653d1d-en.png"
+          <img src="../../.gitbook/assets/uuid-c27d25fc-00a7-f0f4-261c-d0d9f8653d1d-en.png"
           alt="image7.png" />
         </p>
         <p>
-          <img src="https://support.snyk.io/hc/article_attachments/360006275778/uuid-be0e9602-023b-99a4-f08c-eded5ea77dac-en.png"
+          <img src="../../.gitbook/assets/uuid-be0e9602-023b-99a4-f08c-eded5ea77dac-en.png"
           alt="image8.png" />
         </p>
       </td>

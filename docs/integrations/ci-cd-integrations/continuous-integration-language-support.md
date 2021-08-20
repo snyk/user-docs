@@ -22,4 +22,3 @@ Configure the CI for different languages as follows.
 2. Install the [sbt-dependency-graph plugin](https://github.com/jrudolph/sbt-dependency-graph).
 3. Add `snyk test` to your CI test platform.
 
-* 
