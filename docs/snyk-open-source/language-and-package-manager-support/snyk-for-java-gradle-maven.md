@@ -4,9 +4,13 @@ Snyk offers security scanning to test your projects for vulnerabilities, both th
 
 **Supported versions:** For officially supported Java versions, operating systems, and Node.js versions see the [Gradle support](https://github.com/snyk/snyk-gradle-plugin#support) and [Maven support](https://github.com/snyk/snyk-mvn-plugin#support) tables.
 
+### Features
+
 The following table provides a general outline of the general features we offer by language. In addition to these features, we also offer additional functionality related to the specific integrations you configure and more.
 
+{% hint style="info" %}
 Some features might not be available, depending on your pricing plan. See [pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 | Package managers / Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -207,16 +211,22 @@ From the Snyk UI you can customize the specific mirror or repository from which 
 
 From the Snyk UI you can customize the specific mirror or repository \(custom package registries, under specific conditions\) from which you’d like to resolve packages in Artifactory for Maven, allowing insight into dependencies that are not hosted in canonical registries.
 
+{% hint style="info" %}
 If you specify the connection, you must also configure the relevant repository integration.
+{% endhint %}
 
 The custom package registry feature currently supports Artifactory with Maven.
 
+{% hint style="info" %}
 **Feature availability**  
 The custom package registry feature is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 Maven analysis can be configured to mirror all requests through a custom package repository, or you can specify additional repositories to use alongside Maven Central.
 
+{% hint style="info" %}
 Custom package registries do not currently work with brokered integrations. If you currently use a brokered integration or need support for other package managers please email contact@snyk.io and we will send you an announcement as soon as support is available.
+{% endhint %}
 
 #### Setup custom package registries
 

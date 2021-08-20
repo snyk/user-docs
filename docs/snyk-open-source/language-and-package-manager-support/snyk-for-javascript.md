@@ -2,9 +2,12 @@
 
 You can use Snyk to scan your JavaScript projects.
 
-### Note
+### Features
 
+{% hint style="info" %}
+**Note**  
 Features might not be available, depending on your subscription plan.
+{% endhint %}
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -12,9 +15,13 @@ Features might not be available, depending on your subscription plan.
 | ![i\_icon\_yarn.png](../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) | Yarn | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
 | ![i\_icon\_yarn.png](../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) | Yarn Workspaces | ✔︎ | ✔︎ | ✔︎ | ✔︎ \(advice\) | ✔︎ |
 
+### How it works
+
 After Snyk builds a dependency tree, we use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in that tree.
 
+{% hint style="info" %}
 To scan your dependencies, ensure you install the relevant package manager, and that your project contains the supported manifest files.
+{% endhint %}
 
 The way Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project.
 
@@ -31,7 +38,9 @@ The way Snyk analyzes and builds the tree varies based on the package manager of
 
 npm versions 6.x, 7.x are supported in the Snyk CLI.
 
+{% hint style="info" %}
 Workspaces npm 7.x is not supported.
+{% endhint %}
 
 We analyze your `package.json` and `package-lock.json` files, to build a full structured dependency tree. If the `package-lock.json` is missing, we analyze your `node_modules` folder.
 
@@ -47,7 +56,9 @@ Snyk supports resolutions only in Yarn v2 in repositories _without_ workspaces. 
 
 ### Yarn workspaces
 
+{% hint style="info" %}
 Yarn v1 workspaces support is for `snyk test` and `snyk monitor` commands only at this time. We do not support workspaces for Yarn v2.
+{% endhint %}
 
 For Yarn workspaces use the `--yarn-workspaces` flag to test and monitor your packages. The root lockfile is referenced when scanning all the packages. Use the `--detection-depth` parameter to find sub-folders which are not auto discovered by default.
 
@@ -68,7 +79,9 @@ Prerequisites
 
 Run `npm install` or `yarn install,` depending on the package manager you use for your JavaScript projects.
 
+{% hint style="info" %}
 As snyk test looks at the locally installed modules, it needs to be run after npm install or yarn install, and will seamlessly work with shrinkwrap, npm enterprise or any other custom installation logic you have.
+{% endhint %}
 
 **Parameters**
 
@@ -146,7 +159,9 @@ JavaScript projects can be imported from any of the Git services we support. Aft
 
 npm versions 6.x, 7.x are supported in Git services.
 
+{% hint style="info" %}
 Workspaces npm 7.x is not supported.
+{% endhint %}
 
 We build the dependency tree based on these files:
 
@@ -164,9 +179,10 @@ We build the dependency tree based on these files:
 
 ### Yarn Workspaces
 
-### Note
-
+{% hint style="info" %}
+**Note**  
 Git support for Yarn Workspaces is enabled for all projects in organisations created after March 3rd 2021. To enable this feature for organisations created before this date please contact support@snyk.io.
+{% endhint %}
 
 For Yarn Workspaces we scan each `package.json` that matches the `packages` pattern from the root level `package.json` and root level `yarn.lock`.
 
@@ -178,9 +194,11 @@ Commit status checks always use the root level `yarn.lock` and workspace `packag
 
 ### Warning
 
-If your `package.json` and root `yarn.lock` are out of sync, we will have issues re-testing the projects. Snyk shows errors on project page and import logs when this happens.
-
+{% hint style="info" %}
+**Warning**  
+If your `package.json` and root `yarn.lock` are out of sync, we will have issues re-testing the projects. Snyk shows errors on project page and import logs when this happens.  
 If you reference the locally installed packages which do not appear in a lockfile, you can disable the **Require package.json and yarn.lock files to be in sync** setting, on the **Languages Settings** page for JavaScript.
+{% endhint %}
 
 ### Git settings for JavaScript
 

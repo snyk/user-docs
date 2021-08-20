@@ -6,9 +6,10 @@ The following describes how to use Snyk to scan your Go projects:
 
 #### Features <a id="h_01ESM3GFNMN0F7ART59AEK97TM"></a>
 
-### Note
-
+{% hint style="info" %}
+**Note**  
 Features might not be available, depending on your subscription plan.
+{% endhint %}
 
 | Package managers / Features  | CLI support  | Git support  | License scanning  | Remediation  | Runtime monitoring  |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -16,7 +17,18 @@ Features might not be available, depending on your subscription plan.
 | [dep](https://github.com/golang/dep) | ✔︎ | ✔︎ | ✔︎ |  |  |
 | [govendor](https://github.com/kardianos/govendor) | ✔︎ | ✔︎ | ✔︎ |  |  |
 
-#### Snyk CLI tool for Go projects <a id="h_01EFH2JV0VNYKTDCNVKCCY6SVB"></a>
+### **How it works**
+
+Once we've built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the modules or packages anywhere in the dependency tree.
+
+{% hint style="info" %}
+**Note**  
+In order to scan your dependencies in the CLI, you must ensure you have first installed the relevant package manager, and that your project contains the supported manifest files.
+{% endhint %}
+
+The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project.
+
+## Snyk CLI tool for Go projects
 
 **Go Modules**
 
@@ -24,15 +36,17 @@ In order to build the dependency tree Snyk uses the `go list -json -deps` comman
 
 ### Note
 
-Snyk scans Go Modules projects in the CLI at the _package_ level rather than on the _module_ level, as we have full access to your project source code.
-
+{% hint style="info" %}
+Note:  
+Snyk scans Go Modules projects in the CLI at the _package_ level rather than on the _module_ level, as we have full access to your project source code.  
 This is beneficial since you might use a vulnerable module but not the vulnerable package.
+{% endhint %}
 
 When testing Go Modules projects via the CLI Snyk does not require dependencies to be installed, but you must have a `go.mod` file at the root of your project, `go list` uses this and your project source code to build a complete dependency tree.
 
-### Note
-
+{% hint style="info" %}
 Different versions of the Go \(i.e. 1.15 vs 1.16\) will generate different results for the \`go list -json -deps\` command. This will likely affect the dependency tree and in turn, the vulnerabilities that the Snyk CLI will find.
+{% endhint %}
 
 **Dep**
 
@@ -52,9 +66,10 @@ When testing Govendor projects via the CLI Snyk requires dependencies to be inst
 
 ### Note
 
-For Go Modules projects imported via Git, dependencies are resolved at the _module_ level rather than the _package_ level, as we do not have full access to your project source code.
-
+{% hint style="info" %}
+For Go Modules projects imported via Git, dependencies are resolved at the _module_ level rather than the _package_ level, as we do not have full access to your project source code.   
 This means you may see more issues reported than for projects tested in the CLI, as we report all vulnerabilities for each module not just the package\(s\) referenced in your source code.
+{% endhint %}
 
 In order to build the dependency tree Snyk runs the `go mod graph` command using the `go.mod` files in the selected repository.
 

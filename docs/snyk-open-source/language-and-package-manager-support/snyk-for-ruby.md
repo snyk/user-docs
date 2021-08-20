@@ -8,9 +8,13 @@ If your Gemfile needs access to private Gem sources please [see below.]()
 
 The following manifest files are supported:
 
-### Note
+* `Gemfile`
+* `Gemfile.lock`
 
-Snyk requires both files to be present in order to correctly test, monitor & fix Ruby projects.
+{% hint style="info" %}
+**Note**  
+Snyk requires both files to be present in order to correctly test, monitor & fix Ruby projects
+{% endhint %}
 
 #### Fixing vulnerabilities in your Ruby projects
 
@@ -19,4 +23,11 @@ Snyk can fix vulnerabilities by updating vulnerable gems, using bundle update, a
 This means that in some scenarios we won’t be able to upgrade all dependencies to non-vulnerable versions. In this case, you should consider updating the rules in your Gemfile.
 
 In future releases, we are planning to provide suggestions to make this easier.
+
+#### **Private Gem Sources**
+
+If you use private Gem sources this should work as normal when testing via the Snyk CLI.
+
+You must take additional steps to [configure private Gem sources for projects imported from Git](https://support.snyk.io/hc/en-us/articles/360013742557).   
+
 

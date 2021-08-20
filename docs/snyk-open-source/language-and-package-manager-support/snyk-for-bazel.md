@@ -2,19 +2,24 @@
 
 Snyk supports testing projects that have their dependencies managed by Bazel. Support is available via the Snyk API.
 
+{% hint style="info" %}
+Snyk API docs live at [https://snyk.docs.apiary.io/](https://snyk.docs.apiary.io/)
+{% endhint %}
+
+{% hint style="info" %}
 **Feature availability**  
 The Snyk API is available with Business and Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 The Dep Graph API requires additional permissions. Please contact support@snyk.io to request access.
 
-The following describes how to use Snyk to test your Bazel projects:
+The following describes how to use Snyk to test your Bazel projects.
 
 ## Bazel Overview <a id="h_01EEWE3TCNQC2HGFRPH8JBWAK0"></a>
 
-According to [https://docs.bazel.build/versions/master/bazel-overview.html  
-](https://docs.bazel.build/versions/master/bazel-overview.html)
+According to [https://docs.bazel.build/versions/master/bazel-overview.html](https://docs.bazel.build/versions/master/bazel-overview.html)
 
-_Bazel is an open-source build and test tool similar to Make, Maven, and Gradle. It uses a human-readable, high-level build language. Bazel supports projects in multiple languages and builds outputs for multiple platforms. Bazel supports large codebases across multiple repositories, and large numbers of users._
+> _Bazel is an open-source build and test tool similar to Make, Maven, and Gradle. It uses a human-readable, high-level build language. Bazel supports projects in multiple languages and builds outputs for multiple platforms. Bazel supports large codebases across multiple repositories, and large numbers of users_
 
 Bazel does not have dependency manifest files or lock files that package managers such as npm have. Instead, build configuration is managed in [BUILD](https://docs.bazel.build/versions/master/build-ref.html#BUILD_files) files, using [Starlark](https://docs.bazel.build/versions/master/skylark/language.html), a domain specific language based on Python3.
 
@@ -26,12 +31,10 @@ Because Bazel dependencies are specified as code in BUILD files using Starlark, 
 
 The recommended approach is to test your dependencies via the [Snyk Dep Graph Test API]().
 
-## How it works <a id="h_01EEWE711N3CR0GCRBTCWEFTTX"></a>
+### How it works
 
-1. For each type of dependency \(e.g. Maven, Cocoapods\), create a [Dep Graph JSON object]() listing all the dependency packages and versions \(see below\)
-2. As part of a Bazel test rule, send this object as a POST request to the [Dep Graph Test API](), \(along with your [auth token](https://support.snyk.io/hc/en-us/articles/360004037557-Authentication-for-API)\), example curl request:  
-  
-
+1. For each type of dependency \(e.g. Maven, Cocoapods\), create a  [Dep Graph JSON object](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h_01EEWE7K497ZVFKVHVKYG5YHB4) listing all the dependency packages and versions \(see below\)
+2. As part of a Bazel test rule, send this object as a POST request to the  [Dep Graph Test API](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h_01EEWFQJFTCWFQBMQR0X32J8B8), \(along with your [auth token](https://support.snyk.io/hc/en-us/articles/360004037557-Authentication-for-API)\), example curl request:
 
    ```text
    curl -X POST 'https://snyk.io/api/v1/test/dep-graph' \
@@ -40,7 +43,7 @@ The recommended approach is to test your dependencies via the [Snyk Dep Graph Te
      -d @dep-graph.json
    ```
 
-3. Check the [API response]() for pass/fail status and any resulting vulnerabilities
+3. Check the  [API response](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h_01EEWP8F4MK9MFJT5X0A4ZGS93) for pass/fail status and any resulting vulnerabilities
 
 ## Snyk Dep Graph Test API <a id="h_01EEWFQJFTCWFQBMQR0X32J8B8"></a>
 
@@ -206,6 +209,11 @@ Here is an example response with a single vulnerability.
 * `issues` - an simple array of mappings from vulnerabilities in `issuesData` to package. As a vulnerability may be relevant to multiple packages, this mapping is used to keep the response length as short as possible
 
 ## Examples  <a id="h_01EEWE7S3TENTVGR2KV8YCMM0F"></a>
+
+{% hint style="info" %}
+**Note**  
+See [https://github.com/snyk/bazel-simple-app](https://github.com/snyk/bazel-simple-app) for a full example Bazel Java project, and corresponding Snyk Dep Graph object.
+{% endhint %}
 
 For a simple Bazel project with a single dependency on a Maven package, you may specify the dependency like this:
 
