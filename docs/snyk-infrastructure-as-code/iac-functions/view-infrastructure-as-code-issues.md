@@ -7,11 +7,11 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
 
 Infrastructure as Code configuration issues appear in the summary statistics and graphs by default, showing all of the open issues across your projects and issue types:
 
-![image4.png](https://support.snyk.io/hc/article_attachments/360016579057/image4.png)
+![](../../.gitbook/assets/image4.png)
 
 To view IaC issues only, select **Configuration** from the **Summary filters** drop down:
 
-![Screenshot\_2021-02-17\_at\_14.22.50.png](https://support.snyk.io/hc/article_attachments/360017012177/Screenshot_2021-02-17_at_14.22.50.png)
+![](../../.gitbook/assets/screenshot_2021-02-17_at_14.22.50.png)
 
 For more details on the summary tab, see [Summary tab](https://docs.snyk.io/reports-1/reports/summary-tab) documentation.
 
@@ -19,13 +19,13 @@ Select the **Issues** page to see detailed information on open issues across all
 
 To view IaC issues only, select **Configuration** in the **Issue filters** drop down.
 
-![image3.png](https://support.snyk.io/hc/article_attachments/360016579157/image3.png)
+![](../../.gitbook/assets/image3.png)
 
 This shows the title of each issue and type, and the severity.
 
 You can also view the issues ungrouped; this shows more information about the project file that the issue is found in, and details on when it was first introduced:
 
-![image2.png](https://support.snyk.io/hc/article_attachments/360016644818/image2.png)
+![](../../.gitbook/assets/image2-3-.png)
 
 For more details on the issues tab, see [Issues tab](https://docs.snyk.io/reports-1/reports/issues-tab) documentation.
 
