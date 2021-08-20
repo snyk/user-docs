@@ -14,17 +14,17 @@ Snyk scans Helm Charts, in addition to Kubernetes configuration files, for misco
 
 ## Scan and fix your Charts
 
-1. ![2.2.png](https://support.snyk.io/hc/article_attachments/360010755737/2.2.png)
-   ![2.2.png](https://support.snyk.io/hc/article_attachments/360010755737/2.2.png)
+1. ![2.2.png](../../.gitbook/assets/2.2.png)
+   ![2.2.png](../../.gitbook/assets/2.2.png)
 
 2. Every time a repository is scanned:
    * Each template in your Helm Chart creates a Snyk a project, grouped together by repository, similar to this example:
 
-     ![Screenshot\_2020-04-24\_at\_08.50.36.png](https://support.snyk.io/hc/article_attachments/360007923577/Screenshot_2020-04-24_at_08.50.36.png)
+     ![Screenshot\_2020-04-24\_at\_08.50.36.png](../../.gitbook/assets/screenshot_2020-04-24_at_08.50.36.png)
 
    * If you re-imported the repository in order to import the cloud configuration files, then Snyk imports and tests the configuration files and also re-tests the already imported application manifest files - displaying the test time as "now".
 3. Click the project link you're interested in, to view the scan results and to correct your configuration files accordingly:
    * Projects that were created from external dependencies will also be scanned and issues shown.
 
-     ![Screenshot\_2020-04-24\_at\_08.51.18.png](https://support.snyk.io/hc/article_attachments/360008006638/Screenshot_2020-04-24_at_08.51.18.png)
+     ![Screenshot\_2020-04-24\_at\_08.51.18.png](../../.gitbook/assets/screenshot_2020-04-24_at_08.51.18.png)
 

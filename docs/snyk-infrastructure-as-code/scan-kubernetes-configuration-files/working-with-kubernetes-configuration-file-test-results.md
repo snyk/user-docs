@@ -6,5 +6,5 @@ Click the project link to view test results and resolve any misconfigurations th
 
 The results page appears similar to the following:
 
-![cloud\_config\_results.png](https://support.snyk.io/hc/article_attachments/360006701837/uuid-ab412f8f-32f3-ab39-4615-1a45f42e7d0f-en.png)
+![](../../.gitbook/assets/uuid-ab412f8f-32f3-ab39-4615-1a45f42e7d0f-en.png)
 
