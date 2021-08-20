@@ -15,7 +15,7 @@ This integration only works with GitLab instances that are publicly reachable \(
 2. Go to Snyk’s [integrations](https://app.snyk.io/integrations) page and click “Connect to GitLab”.
 3. Add your account credentials and the token you just generated to the GitLab integration settings area in Snyk.
 
-   ![image1.png](https://support.snyk.io/hc/article_attachments/360007145478/uuid-aa58b5a9-dd17-3219-6067-4ee6e3f4b384-en.png)
+   ![image1.png](../../.gitbook/assets/uuid-aa58b5a9-dd17-3219-6067-4ee6e3f4b384-en.png)
 
 **Note**: when using GitLab Enterprise integration, it is important to use the correct URL. For example, use [https://gitlab.yourcompany.com/](https://gitlab.yum.com/kfc-commerce/kfc-mobile) instead of [https://gitlab.yourcompany.com/subfolder1/...](https://gitlab.yum.com/kfc-commerce/kfc-mobile) The PAT will provide access to any of the repositories that have access granted to them.
 
@@ -25,7 +25,7 @@ There are two ways to integrate Snyk with GitLab, either via our Broker or direc
 
 To integrate with GitLab, as a Snyk admin user or as a member of the organization:
 
-1. Generate a personal access token enabling the _**API scope**_ for access:![gitlab\_token.png](https://support.snyk.io/hc/article_attachments/360009078218/gitlab_token.png)
+1. Generate a personal access token enabling the _**API scope**_ for access:![gitlab\_token.png](../../.gitbook/assets/gitlab_token.png)
 2. Ensure that the Gitlab user that you've just generated the access token from, is either the owner of the projects \(repos\) you'd like to monitor with Snyk or has **Maintainer** permissions to them.
 
 **This scope enables:**
