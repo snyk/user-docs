@@ -6,6 +6,10 @@ Use Snyk Code with the standard Snyk web interface to find and fix vulnerabiliti
 
 ## View project vulnerabilities
 
+{% hint style="info" %}
+See [Getting started with Snyk Code](https://support.snyk.io/hc/en-us/articles/360016765157-Getting-started-with-Snyk-Code) for details of how to import and scan projects.
+{% endhint %}
+
 1. In your **Projects** area, select the project to open: ![select-project.png](../.gitbook/assets/select-project.png)
 2. Snyk Code displays information and vulnerability cards for that project: ![SnykCofe\_Priority\_Score.png](../.gitbook/assets/snykcofe_priority_score.png)
 
@@ -35,7 +39,9 @@ See [Issue card information](https://docs.snyk.io/getting-started/introduction-t
 
 ## Ignore a vulnerability
 
+{% hint style="info" %}
 Ignore functionality is not offered for Open Source repositories.
+{% endhint %}
 
 Use the **Ignore** button to suppress specific warnings, ignoring suggestions for fixes for that issue. For example, you may have deliberately used hard coded passwords to test your routines in test code, or you are aware of an issue but have decided not to fix it.
 
@@ -51,11 +57,15 @@ Select:
 
 Click **Save** to ignore this issue with the parameters selected. Afer you select to ignore an issue, it does not appear in scan results.
 
+{% hint style="info" %}
 There is a status selector for ignored issues on the left side, and you can include those \(and remove or edit the ignore flag\) if you want to review ignored results.
+{% endhint %}
 
 See [Ignoring issues not prioritized for your project](https://support.snyk.io/hc/en-us/articles/360004002718-Ignoring-issues-not-prioritized-for-your-project) for full details of using the Ignore function.
 
 See [Ignoring issues in Snyk Code](https://support.snyk.io/hc/en-us/articles/360004002718-Ignoring-issues-not-prioritized-for-your-project#Ignore-Snyk-Code) for specific details of how Snyk Code processes the Ignore function.
+
+### View full details
 
 Click **Full details** from a vulnerability card to view more information:
 
@@ -67,6 +77,12 @@ Full details include all the information in the vulnerability card, plus:
 * **Fix analysis:** insight into the remediation and background of the issue itself. Developers are able to see fix-related information, vulnerability overview information \(understanding and approach\), and fix examples for this vulnerability type.
 * A link to the source file, which you can open to make changes directly \(see [Open the source code file](using-snyk-code-web.md)\).
 * A full window showing the code affected, with specific lines highlighted to accompany the **Data flow** information.
+
+### Open the source code file
+
+1. Click the code link to open the source code file itself \(in this example, in GitHub\): ![Open-code1.png](https://support.snyk.io/hc/article_attachments/360015998577/Open-code1.png)
+2. The file opens, showing you exactly where to fix the vulnerability \(in this example, by adding the sanitation required to the input\).![Open-code2.png](https://support.snyk.io/hc/article_attachments/360015999237/Open-code2.png)
+3. You can now make the fix as required, to address the vulnerability in your code.
 
 ## Example: Cross-site Scripting \(XSS\)
 

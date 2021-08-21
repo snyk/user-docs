@@ -42,13 +42,19 @@ To support a specific framework, Snyk Code needs to both support the relevant la
 
 #### JavaScript frameworks
 
+{% hint style="info" %}
 These are some of the supported frameworks for JavaScript; contact Snyk for a full list of supported frameworks.
+{% endhint %}
 
 * **React**: Open-source, front end, JavaScript library for building user interfaces or UI components for websites and mobile applications.
 * **Vue.js**: Open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications.
 * **Express**: Back-end web application framework for Node.js, released as free and open-source software.It has been called the de facto standard server framework for Node.js.
 
+#### java frameworks
+
+{% hint style="info" %}
 These are some of the supported frameworks for Java; contact Snyk for a full list of supported frameworks.
+{% endhint %}
 
 * **Apache Camel**: Open source framework for message-oriented middleware with a rule-based routing and mediation engine.
 * **Apache Struts**: Open-source, MVC framework for creating elegant, modern Java web applications.
@@ -56,21 +62,29 @@ These are some of the supported frameworks for Java; contact Snyk for a full lis
 * **Spring JDBC**: The Spring JDBC data access layer, a simple ORM.
 * **Jakarta XML Services**: Framework to implement XML-based Web Services.
 
-These are some of the supported frameworks for Python; contact Snyk for a full list of supported frameworks
+#### Python frameworks
+
+{% hint style="info" %}
+These are some of the supported frameworks for Python; contact Snyk for a full list of supported frameworks.
+{% endhint %}
 
 * [Django](https://www.djangoproject.com/): a framework for full-stack web application development and server development.
 * [Flask](https://palletsprojects.com/p/flask/) a lightweight [WSGI](https://wsgi.readthedocs.io/) web application framework
 
 #### C\# frameworks
 
+{% hint style="info" %}
 These are some of the supported frameworks for C\#; contact Snyk for a full list of supported frameworks.
+{% endhint %}
 
 * **.NET framework**: .NET is an open source developer platform, created by Microsoft and used to build a variety of application types. While .NET supports different languages, Snyk Code supports .NET using the C\# interface.
 * **ASP.NET \(version 4.x\)**: ASP.NET is a free and open source framework to build web apps and services using .NET. Snyk Code supports version 4.x.
 * **.NET Core**: Microsoft created .NET Core to make the .NET framework cross-platform and enable a number of scenarios. The .NET framework and .NET Core share many components and code can be exchanged. \(Microsoft [provides guidance](https://docs.microsoft.com/en-us/dotnet/standard/choosing-core-framework-server) when to choose which\)
 * **ASP.NET Core**: ASP.NET Core is cross platform and comparable to .NET Core versus .NET. \(Microsoft [provides guidance](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/choose-aspnet-framework) when to use which\)
 
+{% hint style="info" %}
 The framework support is always determined by the file extensions known to the engine. For example, the engine does not scan **\*.cshtml** files, but scans the associated **\*.cshtml.cs** files.
+{% endhint %}
 
 ### Language support with Snyk Code AI Engine
 

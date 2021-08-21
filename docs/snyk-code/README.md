@@ -69,6 +69,12 @@ This integration allows you to:
 
 ![](../.gitbook/assets/image4-1-.png)
 
+## Supported languages
+
+Snyk Code supports Java, JavaScript \(including TypeScript\), Python and C\#.
+
+See [Snyk Code language support](https://support.snyk.io/hc/en-us/articles/360016973477-Snyk-Code-language-support) for more information.
+
 ## Snyk Code IDE plugins
 
 IDE integrations use Snyk Code’s fast analysis and response, allowing you to spot an issue, understand and learn more about it, and fix it, as you write the code before you check the code in. So you can find possible security flaws in your code as you write it, on a line-by-line basis.
