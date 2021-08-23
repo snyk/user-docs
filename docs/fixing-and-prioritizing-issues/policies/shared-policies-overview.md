@@ -13,9 +13,9 @@ This feature is available to Enterprise customers. See [Pricing plans](https://s
 2. Navigate to your group
 3. Click on the Policies tab in the navigation bar to see all the policies that exist within your group, broken out by category. This list will include the [default policy](shared-policies-overview.md), which is automatically created for new groups for each policy category and cannot be removed.
 
-![Screen\_Shot\_2021-08-11\_at\_2.15.48\_PM.png](https://support.snyk.io/hc/article_attachments/4405500238865/Screen_Shot_2021-08-11_at_2.15.48_PM.png)
+![](../../.gitbook/assets/screen_shot_2021-08-11_at_2.15.48_pm.png)
 
-The Policy manager appears similar to the following: ![Screenshot\_2021-03-26\_at\_11.04.50\_am.png](https://support.snyk.io/hc/article_attachments/360018398397/Screenshot_2021-03-26_at_11.04.50_am.png)
+The Policy manager appears similar to the following: ![Screenshot\_2021-03-26\_at\_11.04.50\_am.png](../../.gitbook/assets/screenshot_2021-03-26_at_11.04.50_am.png)
 
 ## Default policies <a id="h_01F2R7AA82B5249CFE8KPG4J7N"></a>
 

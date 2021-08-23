@@ -10,21 +10,21 @@ Click on the associated check box from the organization selector panel.
 
 If this organization is already assigned to another policy, you will be able to see which policy it is applied to from this selector and the pill next to the organization name will be grey
 
-![mceclip3.png](https://support.snyk.io/hc/article_attachments/360007934458/mceclip3.png)
+![](../../.gitbook/assets/mceclip3-2-.png)
 
 If an organization is assigned to the policy you are currently viewing, that policy name will appear in a yellow pill next to the organization name
 
-![mceclip2.png](https://support.snyk.io/hc/article_attachments/360007850817/mceclip2.png)
+![](../../.gitbook/assets/mceclip2-6-.png)
 
 If you are moving an organization from one policy to another, 2 pills will appear to show which policy is currently applied \(yellow\) and which policy you will be applying \(grey\)
 
-## ![mceclip1.png](https://support.snyk.io/hc/article_attachments/360007934258/mceclip1.png)
+## ![mceclip1.png](../../.gitbook/assets/mceclip1-16-.png)
 
 ## To remove an organization from a policy:
 
 Uncheck the desired organization check box from the organization selector panel.
 
-![Untitled.png](https://support.snyk.io/hc/article_attachments/360010813917/Untitled.png)
+![](../../.gitbook/assets/untitled-2-.png)
 
 The unchecked organization\(s\) will now revert back to the default policy.
 
