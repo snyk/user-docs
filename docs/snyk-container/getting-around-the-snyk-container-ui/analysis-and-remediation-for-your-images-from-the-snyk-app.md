@@ -8,6 +8,8 @@ From the **Projects** page, if the project is imported from a registry integrati
 
 You can filter for all container projects, similar to the following example:
 
+![](../../.gitbook/assets/image%20%2810%29.png)
+
 When you open any container project, the resulting analysis and remediation advice are displayed from the Snyk UI similar to the following:
 
 ![](../../.gitbook/assets/uuid-069520cd-66e8-9f80-5bcf-c7845009ff54-en.png)
@@ -38,9 +40,11 @@ The following information is displayed:
 
 ## Note
 
-If there is only one category of issues in your container, such as Node binary vulnerabilities only or OS packages only, this filter does not appear.
-
-If there is no Dockerfile attached for additional advice, the Dockerfile instruction filter does not appear.
+{% hint style="info" %}
+Note  
+If there is only one category of issues in your container, such as Node binary vulnerabilities only or OS packages only, this filter does not appear.  
+If there is no Dockerfile attached for additional advice, the Dockerfile instruction filter does not appear
+{% endhint %}
 
 * Issues tab—List of vulnerabilities, including origins, paths, and an overview of the vulnerability
 * Dependencies tab—a tree view of package hierarchy inside the image

@@ -64,8 +64,10 @@ Snyk Container also has the concept of monitoring an image. This provides the fo
 
 You can also access aggregate reports of vulnerabilities across all of your projects.
 
+{% hint style="info" %}
 **Feature availability**  
 This aggregate reports feature is available with all paid plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 To monitor an image run:
 
@@ -82,9 +84,10 @@ monitor will:
 
 ![](../../.gitbook/assets/monitor.png)
 
-#### Note
-
+{% hint style="info" %}
+**Note**  
 It’s common to use both test and monitor with Snyk. test is great for quick checks, monitor can be used for ongoing assurance and easier sharing of results.
+{% endhint %}
 
 ### More information
 

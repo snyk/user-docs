@@ -6,14 +6,18 @@ As with any Kubernetes deployment, the Snyk controller runs within a single name
 
 #### Prerequisites
 
+{% hint style="info" %}
 **Feature availability**  
 This feature is available with all paid plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 * The Snyk controller is installed using OperatorHub through RedHat OpenShift 4.
 * Set up your Snyk account before getting started.
 * To configure the integration from Snyk, you must be an administrator for the account.
 * A minimum 50 GB of storage must be available in the form of an [emptyDir](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir) on the cluster and the person configuring the cluster must be an administrator.
 * External internet access must be available from the Kubernetes cluster.
+
+### Steps
 
 1. Ensure that your Kubernetes command-line tool \(`kubectl`\) points to the relevant cluster.
 2. Create a unique namespace for the Snyk controller with Cluster scope to enable the controller to monitor all of its deployments:

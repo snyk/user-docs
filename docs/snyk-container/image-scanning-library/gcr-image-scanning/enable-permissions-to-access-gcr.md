@@ -10,11 +10,11 @@ From the relevant project in Google, ensure the you've created a service account
 
 1. Go to the Google Cloud Platform Console [Credentials](https://console.cloud.google.com/apis/credentials) page, select the project that you want to integrate with, and then select to set up a new service account key.
 2. From the view that loads, choose the service account from the dropdown list that you created for this integration, and configure a new key for that account with these values:
-   * Service account name - assign a unique name for the account in order to remember its uses later on.
-   * Role - Storage Object Viewer \(roles/storage.objectViewer\).
-   * Service account ID - leave empty
-   * Key type - JSON
-3. Click Create.
+   * **Service account name** - assign a unique name for the account in order to remember its uses later on.
+   * **Role** - Storage Object Viewer \(roles/storage.objectViewer\).
+   * **Service account ID** - leave empty
+   * **Key type** - JSON
+3. Click **Create**.
 
    The key is generated for your project.
 

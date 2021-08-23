@@ -47,8 +47,9 @@ Note that the flags take precedence over the environment variables in the case b
 
 Some useful CLI options include:
 
-| `--json` | Output the results as a JSON document, useful for integrating with other tools |
+| Option | Description |
 | :--- | :--- |
+| `--json` | Output the results as a JSON document, useful for integrating with other tools |
 | `--sarif` | Output the results as a [SARIF](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=sarif) document, useful for integrating with other tools. Note this requires the test to be run with --file as well |
 | `--exclude-base-image-vulns` | Don’t show vulnerabilities only introduced by the base image. Available when using `snyk container test` only. |
 | `--severity-threshold` | Only show a subset of vulnerabilities which match the severity or higher |

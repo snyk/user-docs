@@ -9,8 +9,10 @@ This section covers:
 
 **Prerequisites**
 
+{% hint style="info" %}
 **Feature availability**  
 This feature is available with all paid plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 * An administrator account for your Snyk organization.
 * A minimum of 50 GB of storage must be available in the form of an [emptyDir](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir) on the cluster.
@@ -31,9 +33,7 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
    kubectl create namespace snyk-monitor
    ```
 
-   **Tip**
-
-   Use a unique namespace to isolate the controller resources more easily. This is generally good practice for Kubernetes applications. Notice our namespace is called snyk-monitor, you’ll need this later when configuring other resources.
+   **Tip:** Use a unique namespace to isolate the controller resources more easily. This is generally good practice for Kubernetes applications. Notice our namespace is called snyk-monitor, you’ll need this later when configuring other resources.
 
 3. Now, log in to your Snyk account and navigate to **Integrations**.
 4. Search for and click **Kubernetes**.
@@ -113,8 +113,6 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
                  --set clusterName="Production cluster" \
                  --set integrationApi=/kubernetes-upstream
     ```
-
-    **Tip**
 
     **Tip**: Replace the name **Production cluster** with a name based on the cluster you are monitoring. You’ll use this label to find workloads in Snyk later.  
     Also, to avoid naming the cluster on every update, you can use Helm's existing option for **--reuse-values.** This means that when upgrading, it'll reuse the last release's values and merge in any overrides from the command line via **--set** and -f. If '**--reset-values**' is specified, this is ignored.

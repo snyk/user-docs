@@ -1,7 +1,9 @@
 # Container security with Harbor integration
 
+{% hint style="info" %}
 **Feature availability**  
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 Snyk integrates with Harbor Container Registry to enable you to import your container images and monitor them for vulnerabilities. 
 
@@ -16,7 +18,7 @@ Prerequisites
 
 **Configure integration**
 
-1. **In your Snyk account, navigate to Integrations from the menu bar at the top. Under the Container Registries section, find the Harbor option and click it.**![mceclip0.png](../../../.gitbook/assets/mceclip0-15-.png)
+1. In your Snyk account, navigate to Integrations from the menu bar at the top. Under the Container Registries section, find the Harbor option and click it. ****![mceclip0.png](../../../.gitbook/assets/mceclip0-15-.png)
 2. In the **Account credentials** section, enter your Harbor username and password login credentials. In the **container registry name** fill in the full URL to the registry you want to integrate with. To finish, click **Save**.  
    ![mceclip2.png](../../../.gitbook/assets/mceclip2-1-.png)  
   

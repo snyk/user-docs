@@ -35,9 +35,10 @@ We detect vulnerabilities in images based on:
 
 Check out the [Operating Systems Support](https://docs.snyk.io/snyk-container/snyk-container-security-basics/supported-operating-system-distributions) page for specific version support and our [updates](https://updates.snyk.io/) page for all the latest updates.
 
-### Note
-
+{% hint style="info" %}
+**Note**  
 Snyk also supports images using packages from those distributions but without the associated package manager, such as Distroless images.
+{% endhint %}
 
 ## Unmanaged software
 

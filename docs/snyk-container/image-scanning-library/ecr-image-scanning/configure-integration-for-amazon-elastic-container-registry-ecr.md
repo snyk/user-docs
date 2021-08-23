@@ -20,3 +20,7 @@ Thereafter, when integrating additional organizations, you can simply add the ad
 
 Follow these steps to set up your integration:
 
+* [Enable permissions to access Amazon ECR for the first time](https://support.snyk.io/hc/articles/360003947017#UUID-a8420931-6623-3dd4-faac-b5245b325ebf)
+* [Add additional organizations to your AWS IAM role for Snyk authentication](https://support.snyk.io/hc/articles/360003947037#UUID-4e0116d9-dbb0-0a25-24de-406e3658c6ae)
+* [Amazon ECR: configure your integration with Snyk](https://support.snyk.io/hc/articles/360003947057#UUID-2f4b05ad-e072-0883-b6e8-453f8a2702ea)
+

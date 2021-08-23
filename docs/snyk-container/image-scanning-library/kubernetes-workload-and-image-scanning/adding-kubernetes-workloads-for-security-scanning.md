@@ -2,6 +2,11 @@
 
 Once an administrator for your Snyk account has installed the Snyk controller on your Kubernetes cluster, add workloads for testing as follows:
 
+* [Snyk collaborators can manually add new Kubernetes projects](https://support.snyk.io/hc/en-us/articles/360003947117-Adding-Kubernetes-workloads-for-security-scanning#UUID-70ce2ab5-fca2-c9e5-6b8f-d6920240a073)
+* [Kubernetes collaborators can mark workloads from the cluster to be automatically added to Snyk](https://support.snyk.io/hc/en-us/articles/360003947117-Adding-Kubernetes-workloads-for-security-scanning#UUID-38239f46-6777-97c6-61a1-2074ff981f65)
+
+#### Prerequisites
+
 You must have an account with Snyk and be onboarded to your organization by an administrator.
 
 In addition, the integration must be configured between Snyk and your Kubernetes environment per organization. To verify the integration is configured, ensure you have an Integration ID:
@@ -15,9 +20,10 @@ In addition, the integration must be configured between Snyk and your Kubernetes
 
 Once you’ve configured the integration between Snyk and your cluster, you can annotate your workloads in order to have them automatically added as projects for testing in Snyk.
 
-The annotated import happens when the **image** itself changes \(rescans the workload due to image change\) or when the **workload details** change \(which creates a new revision of the workload\). Changing the annotation for the workload will not cause a workload change. 
-
- If the workload is only annotated after it has been scanned by `snyk monitor`--the annotation will not be recognized until a significant change takes place that causes a full rescan. Terminating the `snyk monitor` pod is one way to force a rescan.
+{% hint style="info" %}
+The annotated import happens when the **image** itself changes \(rescans the workload due to image change\) or when the **workload details** change \(which creates a new revision of the workload\). Changing the annotation for the workload will not cause a workload change.   
+If the workload is only annotated after it has been scanned by `snyk monitor`--the annotation will not be recognized until a significant change takes place that causes a full rescan. Terminating the `snyk monitor` pod is one way to force a rescan.
+{% endhint %}
 
 Annotate any of the following workload types:
 
@@ -60,7 +66,10 @@ Annotate any of the following workload types:
    To annotate for multiple organizations, use a comma-separated list.
 
 6. Once imported, the project remains in your Snyk organization even if you remove the annotation. To remove the project from Snyk, you should delete the annotation and delete it from the Snyk UI or [with the API](https://snyk.docs.apiary.io/#reference/projects/individual-project/delete-a-project).
-7. Go to the **Projects page**, click **Add project** and select the **Kubernetes** option.
+
+#### Manually add workloads
+
+1. Go to the **Projects page**, click **Add project** and select the **Kubernetes** option.
 
    ![AddWorkspace.png](../../../.gitbook/assets/uuid-619a153d-6c77-f7dc-854c-ff77b3173191-en.png)
 
@@ -78,15 +87,17 @@ Annotate any of the following workload types:
    --set excludedNamespaces={kube-node-lease,local-path-storage,some_namespace}
    ```
 
-8. Select one or multiple namespaces from the left side and for each namespace, select one or multiple workloads to import from the right side.
+2. Select one or multiple namespaces from the left side and for each namespace, select one or multiple workloads to import from the right side.
 
    ![Select\_namespace.gif](../../../.gitbook/assets/uuid-27db0a60-f18d-5ab0-9215-5a81e467f013-en.gif)
 
-9. When ready, click **Add selected workloads** from the top right of the screen. When the import completes, the Projects page loads and all workloads that you’ve imported appear, with a unique Kubernetes icon:
+3. When ready, click **Add selected workloads** from the top right of the screen. When the import completes, the Projects page loads and all workloads that you’ve imported appear, with a unique Kubernetes icon:
 
    ![image4.png](../../../.gitbook/assets/uuid-24e0b69a-01c3-9434-9dac-9b44864bd269-en.png)
 
    Each item is named according to its Kubernetes metadata as follows:**//**.
 
    You can filter for Kubernetes projects only:
+
+![](../../../.gitbook/assets/image%20%285%29.png)
 

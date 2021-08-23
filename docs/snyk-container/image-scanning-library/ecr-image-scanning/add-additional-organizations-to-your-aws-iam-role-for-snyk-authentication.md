@@ -4,7 +4,7 @@ Once you've created an AWS IAM role for Snyk, you can add additional organizatio
 
 1. In [Snyk](https://app.snyk.io/), retrieve, copy the IDs for any additional Snyk organizations that you want to integrate and save them on the side. You'll need to paste them into a script in the coming steps.
 2. In AWS, navigate to the Trust relationships tab for the role you would like to update with additional organizations.
-3. Click Edit trust relationship.
+3. Click **Edit trust relationship**.
 
    Make sure the value of "sts:ExternalId" is enclosed with square brackets and insert the additional organization ID inside those brackets. Use a comma \( , \) to separate between organization ID values. For example:
 

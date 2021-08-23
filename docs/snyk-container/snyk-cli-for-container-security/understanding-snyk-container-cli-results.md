@@ -25,9 +25,10 @@ We also present the total dependencies with known vulnerabilities, and the total
 
 ![](../../.gitbook/assets/clisummary.png)
 
-### Note
-
+{% hint style="info" %}
+Note  
 Snyk groups the same vulnerability discovered in multiple different packages together. This helps you focus on the number of vulnerabilities, not just the instances.
+{% endhint %}
 
 ## Base image recommendations
 

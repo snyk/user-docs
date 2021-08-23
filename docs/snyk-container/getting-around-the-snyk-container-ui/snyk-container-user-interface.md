@@ -1,6 +1,8 @@
 # Detecting application vulnerabilities in container images
 
+{% hint style="info" %}
 The feature is currently supported for Node, Ruby, PHP, Python, Go binaries and Java.
+{% endhint %}
 
 Snyk allows detection of vulnerabilities in your application dependencies from container images, as well as from the operating system, all in one single scan.
 
@@ -29,9 +31,44 @@ With this feature enabled, you can also see nested manifest files detected in th
 
 ![](../../.gitbook/assets/mceclip2%20%281%29.png)
 
+#### Automated scanning
+
 Snyk scans the image regularly based on your project’s settings, and updates you via email or Slack - based on your configuration - when any new vulnerabilities are identified in both the operating system and application dependencies.
 
 For each project, you can choose the test frequency under its settings \(the default is daily testing\).
 
 ![](../../.gitbook/assets/mceclip3%20%281%29.png)
+
+**Supported registries**
+
+This is supported across the following container registries:
+
+* [ACR](https://support.snyk.io/hc/en-us/sections/360001127457-ACR-image-scanning)
+* [Amazon ECR](https://support.snyk.io/hc/en-us/sections/360001114218-ECR-image-scanning) 
+* [JFrog Artifactory](https://support.snyk.io/hc/en-us/sections/360001127477-JFrog-Artifactory-image-scanning)
+* [Docker Hub](https://support.snyk.io/hc/en-us/sections/360001114198-Docker-Hub-image-scanning) 
+* [GCR](https://support.snyk.io/hc/en-us/sections/360001127497-GCR-image-scanning)
+
+**Supported Integrations**
+
+The supported languages work on the following integrations:
+
+| **Language** | **Container Registry** | **CLI** | **Kubernetes** |
+| :--- | :--- | :--- | :--- |
+| Node | Yes | Yes | Yes |
+| Ruby | Yes |  |  |
+| PHP | Yes |  |  |
+| Python | Yes |  |  |
+| Go Binaries | Yes | Yes | Yes |
+| Java | Yes | Yes | Yes |
+
+**Language Limitations**
+
+These are the current limitations of the language support:
+
+**Java**
+
+* Scan only the top level JAR - we do not currently unpack the JAR
+
+
 

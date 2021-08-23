@@ -4,9 +4,13 @@ Snyk Container supports the following operating system distributions.
 
 If you use an unsupported distribution, such as one which has reached its End of life \(EOL\) and is no longer being maintained, Snyk provides a message to tell you this is unsupported.
 
+{% hint style="info" %}
 For unsupported distributions, you may not receive any notifications of vulnerabilities due to a lack of security updates: this does not mean that your image is secure.
+{% endhint %}
 
 ### Supported distributions
+
+#### Alpine
 
 * alpine:3.14
 * alpine:3.13
@@ -28,13 +32,27 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * alpine:3.0
 * alpine:2.7
 * alpine:2.6
+
+#### Amazon Linux
+
+* amzn:2018.03
+* amzn:2
+
+#### CentOS
+
 * centos:8
 * centos:7
 * centos:6
 
- End of life:
+End of life:
 
 * centos:5
+
+
+
+End of life:
+
+* debian:12
 * debian:11
 * debian:10
 * debian:9
@@ -44,6 +62,9 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * debian:8
 * debian:7
 * debian:6
+
+#### Oracle Linux
+
 * oracle:8
 * oracle:7
 * oracle:6
@@ -53,6 +74,9 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * oracle:5
 * oracle:4
 * oracle:3
+
+#### Red Hat Enterprise Linux
+
 * rhel:8
 * rhel:7
 * rhel:6
@@ -60,6 +84,9 @@ For unsupported distributions, you may not receive any notifications of vulnerab
  End of life:
 
 * rhel:5
+
+#### Ubuntu
+
 * ubuntu:21.04
 * ubuntu:20.10
 * ubuntu:20.04
@@ -101,7 +128,9 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 
 The following operating system distributions are currently available as beta. If you use a beta distribution, Snyk provides you a message to notify you.
 
-For beta distributions, Vulnerability detection may be affected while we keep on improving the data
+{% hint style="info" %}
+For beta distributions, vulnerability detection may be affected while we keep on improving the data.
+{% endhint %}
 
 #### SUSE Linux Enterprise Server
 

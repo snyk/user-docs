@@ -20,6 +20,20 @@ There are three deployment options to match most common use cases. These are as 
 
 [![cloudformation-launch-stack.png](https://support.snyk.io/hc/article_attachments/360010020737/cloudformation-launch-stack.png)](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/template?stackName=Amazon-EKS-with-Snyk&templateURL=https://aws-quickstart.s3.us-east-1.amazonaws.com/quickstart-amazon-eks/templates/amazon-eks-master.template.yaml)
 
+#### **Prerequisites**
+
+{% hint style="info" %}
+**Feature availability**  
+This feature is available with all paid plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
+
+* An administrator account for your Snyk organization.
+* A minimum of 50 GB of storage must be available in the form of an [emptyDir](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir) on the cluster.
+* Your Kubernetes cluster needs to be able to communicate with Snyk outbound over HTTPS.
+* When configuring Snyk to integrate with an Amazon Elastic Kubernetes Services \(EKS\) cluster, if you wish to scan images hosted on your Amazon Elastic Container Registry \(ECR\), you may also deploy our Quick Start, [Snyk Security on AWS](https://aws.amazon.com/quickstart/architecture/snyk-security/) to enable this integration.
+
+![snyk\_rocket.png](https://support.snyk.io/hc/article_attachments/4405784536593/snyk_rocket.png) [Deployment Guide](https://aws-quickstart.github.io/quickstart-eks-snyk/)
+
 ### Configure snyk-monitor to pull and scan images from ECR
 
 For all the options above, **add** **the IAM policy** that can be found [here](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_on_EKS.html) to your EKS worker nodes in order for the snyk-monitor to pull private images when running on those worker nodes.
