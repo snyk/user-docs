@@ -8,7 +8,7 @@ When Snyk runtime monitoring is successfully monitoring your projects, there are
 
 * From the **Projects** tab, an animated indicator appears on the rows for all projects monitored at runtime:
 
-  ![ProjectsPage\_Filter\_GitHub.gif](https://support.snyk.io/hc/article_attachments/360004788978/uuid-520448e8-52c7-250a-be13-df4e4518560c-en.gif)
+  ![ProjectsPage\_Filter\_GitHub.gif](../../.gitbook/assets/uuid-520448e8-52c7-250a-be13-df4e4518560c-en.gif)
 
 From within a project that is monitored at runtime:
 
@@ -19,6 +19,5 @@ From within a project that is monitored at runtime:
 * Per vulnerability, the vulnerable functions are listed and **Monitored** appears next to those functions being watched at runtime.
 * An indicator also displays how long it has been since one of the vulnerable functions was last called.
 
-  ![Runtime\_ProjectDetailsExample.png](https://support.snyk.io/hc/article_attachments/360004788998/uuid-6e84ffa7-04bd-413e-4bbb-3bd5de1d9092-en.png)
+  ![Runtime\_ProjectDetailsExample.png](../../.gitbook/assets/uuid-6e84ffa7-04bd-413e-4bbb-3bd5de1d9092-en.png)
 
-* 
