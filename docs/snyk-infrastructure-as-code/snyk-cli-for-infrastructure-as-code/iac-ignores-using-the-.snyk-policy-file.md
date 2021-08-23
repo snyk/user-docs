@@ -15,10 +15,12 @@ For test runs from imported git repositories:
 
 ## .snyk file semantics
 
+{% hint style="info" %}
 The **.snyk** file has some limitations for IaC projects \(see [The .snyk file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file) for standard functionality\):
 
 * The **patches** section is not yet supported and will be ignored.
 * There are no IaC-supported language settings. This section will be ignored.
+{% endhint %}
 
 When running **snyk iac test** against a directory, either by passing in one or more directories or using the default argument of the current working directory, the Snyk CLI looks for a file named **.snyk** in each of those directories.
 

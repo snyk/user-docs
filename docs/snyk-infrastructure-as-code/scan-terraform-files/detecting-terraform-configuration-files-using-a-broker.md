@@ -71,6 +71,8 @@ The Terraform scanning features need access to the `.tf` files from the reposito
 },
 ```
 
+### Configuring the broker
+
 The broker takes the path to the accept.json file \(with the rules above added\) in the ACCEPT environment variable. You can see an example of passing that to the GitHub broker below.
 
 ```text

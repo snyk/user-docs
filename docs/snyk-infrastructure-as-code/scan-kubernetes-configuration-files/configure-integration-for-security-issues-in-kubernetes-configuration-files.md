@@ -8,9 +8,15 @@ Snyk currently scans your Kubernetes configuration files in JSON and YAML format
 
 ## Configure Snyk to scan Kubernetes configuration files
 
+**Prerequisites**
+
+* Administrator access for the organization
+* Check Git repository access and authorization--more info at [Git repository \(SCM\) integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations).
+
 **Configure Snyk**
 
-1. 1. Navigate to the relevant group and organization that you want to manage
+1. Log in to [app.snyk.io](https://app.snyk.io/)
+2. Navigate to the relevant group and organization that you want to manage
 
    ![AddProjectMenu.gif](../../.gitbook/assets/uuid-da316a4a-c823-cf03-f37f-5305446dc970-en.gif)
 
@@ -18,11 +24,11 @@ Snyk currently scans your Kubernetes configuration files in JSON and YAML format
 
    Integrations are managed per organization.
 
-2. Enable Snyk to detect Kubernetes configuration files by enabling the flag in the settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Infrastructure as code** page:
+3. Enable Snyk to detect Kubernetes configuration files by enabling the flag in the settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Infrastructure as code** page:
 
    ![Screenshot\_2020-08-18\_at\_17.29.49.png](../../.gitbook/assets/screenshot_2020-08-18_at_17.29.49.png)
 
-3. If needed, review and adjust settings in the **Infrastructure as code** settings:
+4. If needed, review and adjust settings in the **Infrastructure as code** settings:
 
    ![Configure-Policies.png](../../.gitbook/assets/uuid-34af73f5-ffde-39bb-ffa4-364884089b2e-en.png)
 

@@ -167,6 +167,8 @@ The CloudFormation scanning features require access to the YAML or JSON files in
 },
 ```
 
+## Configuring the broker
+
  The broker takes the path to the accept.json file \(with the rules above added\) in the ACCEPT environment variable. The example of passing that to the GitHub broker is displayed below.
 
 ```text
