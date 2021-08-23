@@ -124,7 +124,84 @@ Go to GitHub's Integration _**Settings**_ page in Snyk \(Settings --&gt; Integra
 
 **Enable for one project**
 
-Go to the project's settings, and the Integration settings tab within the project settings:
+Go to the project's settings, and the **Integration settings** tab within the project settings:
 
 ![](../../.gitbook/assets/code-assigness-project.png)
+
+### Disconnecting the GitHub integration
+
+Snyk’s GitHub SCM integration leverages the oAuth app integration. In case you integrated to GitHub without using the Broker, you can simply disconnect it by following these steps:  
+
+1. Log into the GitHub account which the integration was originally created with.
+2. Navigate to the account settings and select the **Applications** tab in the right sidebar.
+3. Select the **Authorized OAuth Apps** tab You can also reach the the [Authorized OaAuth Apps tab directly](https://github.com/settings/applications).
+4. Find the **Snyk** app, click on the 3 dots on the right and select **Revoke**.
+
+Revoking this access effectively disconnects Snyk’s access to that GitHub account.  Existing imported snapshots will persist in Snyk and continue to rescan based on the existing snapshots until deleted, but Snyk will no longer be able to import new projects from the GitHub integration and will no longer re-scan on new code merges.
+
+Additionally, it is required to confirm that Snyk is not enabled on any existing "Branch protection rules": GitHub - Repository -&gt; Settings -&gt; Branches -&gt; Branch protection rules -&gt; Status checks found in the last week for this repository.
+
+### GitHub badges
+
+Once you’re vulnerability free, you can put a badge on your README showing your package has no known security holes. This will show your users you care about security, and tell them that they should care too.
+
+If there are no vulnerabilities, this is indicated by a green badge.![image5.png](../../.gitbook/assets/uuid-cb438aa4-226e-2109-f901-c59ca233732e-en.png)
+
+If vulnerabilities have been found, the red badge will show the number of vulnerabilities.![image13.png](../../.gitbook/assets/uuid-96d6b4d1-afb7-a2bd-093d-eaa96e2ac2c1-en.png)
+
+To show a badge for a given Node.js, Ruby or Java GitHub repository, copy the relevant snippet below and replace “{username}/{repo}” with the GitHub username and repo you want to test.
+
+**HTML:**
+
+`<*a href="https://snyk.io/test/github/{username}/{repo}">`![image2.png](../../.gitbook/assets/uuid-2678b218-659f-61c6-8e14-57964dfb2bc6-en.png)
+
+**Markdown:**
+
+`[![Known Vulnerabilities](https://snyk.io/test/github/{username}/{repo}/badge.svg)](https://snyk.io/test/github/{username}/{repo})`
+
+The badge will reflect the vulnerability state of the latest commit on the master branch. To show the vulnerability state of a specific branch, release or tag, simply add its name after the repo name in the URL.
+
+For example, to show a badge for the 4.x branch of the express repo, use the URL https://snyk.io/test/github/expressjs/express/4.x/badge.svg.
+
+**Styles**
+
+To change the style of the badge, you can add the following query parameters after badge.svg:![image1.png](../../.gitbook/assets/uuid-cb438aa4-226e-2109-f901-c59ca233732e-en.png)
+
+`?style=flat-square`![image1.png](../../.gitbook/assets/uuid-cb438aa4-226e-2109-f901-c59ca233732e-en.png)
+
+`style=plastic` 
+
+**npm badges**
+
+To show a badge for a given npm package, copy the relevant snippet below and replace “{name}” with the name of your package.
+
+**HTML**
+
+`<*img src="https://snyk.io/test/npm/{name}/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/npm/{name}" style="max-width:100%;"/>`
+
+**Markdown**
+
+`[![Known Vulnerabilities](https://snyk.io/test/npm/{name}/badge.svg)](https://snyk.io/test/npm/{name})`
+
+The badge will reflect the vulnerability state of the latest version of this package. To show the vulnerability state of a specific package, you can specify the specific version in the URL.
+
+For example, to test version 1.2.3 of package name, use the URL https://snyk.io/test/npm/name/1.2.3/badge.svg. 
+
+**Private packages and repos**
+
+Badges currently only work for public npm packages and GitHub repositories, and will fail if pointed at a private repository.To continuously watch for vulnerabilities in your GitHub repositories, both public and private, consider integrating them with Snyk. 
+
+**Custom manifest file locations**
+
+By default, the badge will test against the first [valid manifest file](../../snyk-open-source/language-and-package-manager-support/) it detects in the root of your project.
+
+If your manifest file is in another location other than the root of the repository, or if you have multiple manifest files that you would like to show a badge for, you can pass a targetFile query string parameter to direct the badge to test against another supported manifest file.
+
+**HTML:**
+
+`<*a href="https://snyk.io/test/github/{username}/{repo}">`
+
+**Markdown:**
+
+`[![Known Vulnerabilities](https://snyk.io/test/github/{username}/{repo}/badge.svg?targetFile={path-to-target-file})](https://snyk.io/test/github/{username}/{repo})`
 
