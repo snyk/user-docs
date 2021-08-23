@@ -35,7 +35,7 @@ This article refers to the Artifactory _Plugin_, an independent piece of softwar
 ## Installation
 
 1. Log in to your Snyk account.
-2. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **General** to locate, copy and save the following on the side:
+2. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **General** to locate, copy and save the following on the side:
 
    * service account token or Organization API token:
    * the Organization ID for \(any\) one of your organizations
@@ -80,7 +80,7 @@ If a scan finds issues, based on your configuration, the download request can be
 
 You can find the results of a scan under the artifact's properties where you can decide to ignore the issues and allow downloads. To find the artifact, use Artifactory's Search Bar or navigate the tree view.
 
-![image3.png](https://support.snyk.io/hc/article_attachments/360007064677/uuid-c6d4c41d-5c98-079d-31e7-f4fb5c788d4c-en.png)
+![](../../.gitbook/assets/uuid-c6d4c41d-5c98-079d-31e7-f4fb5c788d4c-en.png)
 
 ## Artifact properties
 
