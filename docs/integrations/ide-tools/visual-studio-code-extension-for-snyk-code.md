@@ -21,23 +21,23 @@ Once installed you can find a Snyk icon in the sidebar.
 
 Snyk’s extension provides all the suggestions in a concise and clean view containing all information you need to decide how to fix or act upon:
 
-![image3.png](https://support.snyk.io/hc/article_attachments/360018245578/image3.png)
+![](../../.gitbook/assets/image3-1-.png)
 
 ## Authentication
 
 To authenticate follow the steps:
 
-1. Once the plugin is installed, click on the Snyk Icon in the left navigation bar, to show the following screen: ![image8.png](https://support.snyk.io/hc/article_attachments/360018185977/image8.png)
-2. Click **Connect VS Code with Snyk**. The plugin relies on the Snyk authentication API and it will ask you to authenticate you against Snyk’s web application: ![authenticate.png](https://support.snyk.io/hc/article_attachments/360018186057/authenticate.png)
+1. Once the plugin is installed, click on the Snyk Icon in the left navigation bar, to show the following screen: ![image8.png](../../.gitbook/assets/image8.png)
+2. Click **Connect VS Code with Snyk**. The plugin relies on the Snyk authentication API and it will ask you to authenticate you against Snyk’s web application: ![authenticate.png](../../.gitbook/assets/authenticate.png)
 3. Click **Authenticate**.
-4. After successful authentication, you will see a confirmation message: ![authentiacated.png](https://support.snyk.io/hc/article_attachments/360018186117/authentiacated.png)
+4. After successful authentication, you will see a confirmation message: ![authentiacated.png](../../.gitbook/assets/authentiacated.png)
 5. Close the browser window and return to the IDE. The IDE is now reading and saving the authentication on your local machine.
 
 In the IDE you will notice that the extension is already picking up the files and uploading them for analysis.
 
 Snyk Code analysis runs quickly, so results may even already be available:
 
-![analysis-done.png](https://support.snyk.io/hc/article_attachments/360018186277/analysis-done.png)
+![](../../.gitbook/assets/analysis-done.png)
 
 Snyk's analysis runs automatically when you open a folder or project, or when you save your work.
 
@@ -45,15 +45,15 @@ Snyk's analysis runs automatically when you open a folder or project, or when yo
 
 To manually perform the analysis, in the configuration of the extension, you can enable Advanced Mode which enables you to control the scanning process:
 
-![advanced-mode.png](https://support.snyk.io/hc/article_attachments/360018186377/advanced-mode.png)
+![](../../.gitbook/assets/advanced-mode.png)
 
 To manually trigger a scan, either Save or manually rescan using the rescan icon:
 
-![rescan.png](https://support.snyk.io/hc/article_attachments/360018186417/rescan.png)
+![](../../.gitbook/assets/rescan.png)
 
 Snyk Code analysis shows a list of security vulnerabilities and code issues found in the application code. For more details and examples of how others fixed the issue, select a security vulnerability or a code security issue. Once selected you will see the Snyk suggestion information in a panel on the right side:
 
-![image3.png](https://support.snyk.io/hc/article_attachments/360018245578/image3.png)
+![](../../.gitbook/assets/image3-2-.png)
 
 ## Snyk panel
 
