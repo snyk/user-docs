@@ -31,7 +31,7 @@ You can configure token based authentication for npm Teams and npm Enterprise in
 
 ### Getting started
 
-1. Go to settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Integrations &gt; Package Repositories &gt; npm**
+1. Go to settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations &gt; Package Repositories &gt; npm**
 2. You should see this screen at the beginning.
 3. Enter **Public URL** and **Token** values.
 4. Click **Save**.
