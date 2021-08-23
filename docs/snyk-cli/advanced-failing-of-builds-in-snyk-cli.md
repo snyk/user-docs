@@ -32,7 +32,7 @@ fails when there is at least one vulnerability that can be upgraded.
 
 fails when there is at least one vulnerability that can be patched. If vulnerabilities do not have a fix and this option is being used, tests will pass.
 
-The Snyk CLI on its' own does not currently have the capability natively to fail tests on more complex use cases. Here are some ways to achieve more complex pass/fail criteria.
+The Snyk CLI on its own does not currently have the capability natively to fail tests on more complex use cases. Here are some ways to achieve more complex pass/fail criteria.
 
 ## Combining security policies with --severity-threshold
 
@@ -44,9 +44,11 @@ The Snyk CLI on its' own does not currently have the capability natively to fail
 
 this previously high severity vulnerability will no longer fail the build.
 
+{% hint style="info" %}
 Security policies do not have all attributes available for criteria matching. Please refer to the security policy configuration for what's available as it will be added to over time.
+{% endhint %}
 
-Here is an example of a snyk test, using --severity-threshold=high running against a default organization with _no policy_ applied to it.
+Here is an example of a snyk test, using --severity-threshold=high running against a default organization with no policy applied to it.
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MVXKdrh-jY3KDGPs8lQ%2F-MZT_W3O1oFyMAzF9g3s%2F-MZTrc0D6NjT6VlS1jmU%2Fimage.png?alt=media&token=27e0ee8c-147f-4942-ada4-08de07f67c40)
 
@@ -109,5 +111,7 @@ snyk-filter can utilize any combination of criteria available in the snyk test J
 
 You may also have different criteria for display from what will fail the build. This allows you to do things like display all vulns in the test output, while failing only on some specific criteria.
 
+{% hint style="info" %}
 Examples are provided in the snyk-filter project on Github [here](https://github.com/snyk-tech-services/snyk-filter). Please refer to the [snyk-filter project on GitHub](https://github.com/snyk-tech-services/snyk-filter) for more information.
+{% endhint %}
 

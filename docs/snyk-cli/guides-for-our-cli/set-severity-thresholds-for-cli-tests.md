@@ -6,9 +6,10 @@ To have better control over your tests, you can pass the severity-threshold flag
 $ snyk test --severity-threshold=medium
 ```
 
-### Note
-
+{% hint style="info" %}
+**Note**  
 Setting severity threshold to _Low_ currently has the same effect as running without specifying the threshold at all: all vulnerabilities are reported.
+{% endhint %}
 
 See also
 
