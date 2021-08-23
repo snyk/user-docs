@@ -2,11 +2,11 @@
 
 In order for Snyk to be able to monitor your deployed Heroku applications, you’ll first need to connect Snyk to your Heroku account. You can do this by navigating to the [Integrations page](https://app.snyk.io/integrations) and clicking on “Connect to Heroku”.
 
-![image1.png](https://support.snyk.io/hc/article_attachments/360007064437/uuid-e7c43047-5065-ad28-db37-1c56e8796a8b-en.png)
+![](../../.gitbook/assets/uuid-e7c43047-5065-ad28-db37-1c56e8796a8b-en%20%281%29.png)
 
 This will take you to a page where you’ll be prompted to enter your Heroku API Key. There is only one API Key per Heroku user so we recommend setting up a dedicated user for your Snyk organization.
 
-![image2.png](https://support.snyk.io/hc/article_attachments/360007064457/uuid-b571c9a8-8f33-e6a1-bbb3-e37e482562bc-en.png)
+![](../../.gitbook/assets/uuid-b571c9a8-8f33-e6a1-bbb3-e37e482562bc-en.png)
 
 Instructions for how to generate and locate your Heroku API key are below.
 
@@ -26,15 +26,15 @@ At any time after you’ve entered your Heroku credentials, you can check on the
 
 The first is on your integration settings page, where you’ll see your current integrations listed as well as their connection status.
 
-![image5.png](https://support.snyk.io/hc/article_attachments/360007146138/uuid-fb1cad51-f7f5-34ae-1142-f24fab0b0751-en.png)
+![](../../.gitbook/assets/uuid-fb1cad51-f7f5-34ae-1142-f24fab0b0751-en.png)
 
 The connection status is also displayed directly on the Heroku integration settings page \(found by clicking “Edit settings” on the integration settings page shown above\). If you’ve entered credentials, you’ll see a box indicating whether or not Snyk is able to correctly connect to Heroku.
 
-![image6.png](https://support.snyk.io/hc/article_attachments/360007064477/uuid-36c5692a-e30e-973d-2ad4-548e38b9af93-en.png)
+![](../../.gitbook/assets/uuid-36c5692a-e30e-973d-2ad4-548e38b9af93-en.png)
 
 If you are unable to connect, please re-enter your account credentials to verify that they are correct.
 
-![image7.png](https://support.snyk.io/hc/article_attachments/360007064497/uuid-f49dfc90-5951-c28f-3efb-32709c051b56-en.png)
+![](../../.gitbook/assets/uuid-f49dfc90-5951-c28f-3efb-32709c051b56-en.png)
 
 ## Add a Snyk-specific user to Heroku
 
@@ -54,11 +54,11 @@ Once you’ve successfully connected Snyk to your Heroku account, you’ll be ab
 
 In either case, you’ll see a list of any available projects on the Heroku account you connected. Select the ones you want to monitor and click the “add to Snyk” button.
 
-![image3.png](https://support.snyk.io/hc/article_attachments/360007064537/uuid-ad9e6940-96f8-4e22-787a-03d3e7cf99dd-en.png)
+![](../../.gitbook/assets/uuid-ad9e6940-96f8-4e22-787a-03d3e7cf99dd-en.png)
 
 As soon as you’ve added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Heroku applications in your [project dashboard](https://app.snyk.io/projects). You’ll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to remediate.
 
-![image4.png](https://support.snyk.io/hc/article_attachments/360007064557/uuid-702795f8-5943-3dba-06a0-095d6bdc6f0c-en.png)
+![](../../.gitbook/assets/uuid-702795f8-5943-3dba-06a0-095d6bdc6f0c-en.png)
 
 Snyk will now continuously monitor each of those projects for known vulnerabilities. You can add more projects at any time.
 

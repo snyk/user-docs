@@ -17,11 +17,11 @@ In order to turn on the Cloud Foundry integration you’ll need to:
 
 In order for Snyk to be able to monitor your deployed Cloud Foundry applications, you’ll first need to connect Snyk to your Cloud Foundry account. You can do this by navigating to the [Integrations page](https://app.snyk.io/integrations) and clicking on “Connect to Cloud Foundry”.
 
-![image1.png](https://support.snyk.io/hc/article_attachments/360007146018/uuid-e7c43047-5065-ad28-db37-1c56e8796a8b-en.png)
+![](../../.gitbook/assets/uuid-e7c43047-5065-ad28-db37-1c56e8796a8b-en%20%281%29.png)
 
 This will take you to a page where you’ll be prompted to enter your Cloud Foundry API URL, username and password. We recommend setting up a dedicated user for your Snyk organization.
 
-![image2.png](https://support.snyk.io/hc/article_attachments/360007064397/uuid-9710041e-427e-d577-ec40-5d3d1c818b5d-en.png)
+![](../../.gitbook/assets/uuid-9710041e-427e-d577-ec40-5d3d1c818b5d-en%20%281%29.png)
 
 Instructions for how to locate your Cloud Foundry API URL are below.
 
@@ -39,15 +39,15 @@ At any time after you’ve entered your Cloud Foundry credentials, you can check
 
 The first is on your integration settings page, where you’ll see your current integrations listed as well as their connection status.
 
-![image5.png](https://support.snyk.io/hc/article_attachments/360007146038/uuid-fb1cad51-f7f5-34ae-1142-f24fab0b0751-en.png)
+![](../../.gitbook/assets/uuid-fb1cad51-f7f5-34ae-1142-f24fab0b0751-en.png)
 
 The connection status is also displayed directly on the Cloud Foundry integration settings page \(found by clicking “Edit settings” on the integration settings page shown above\). If you’ve entered credentials, you’ll see a box indicating whether or not Snyk is able to correctly connect to Cloud Foundry.
 
-![image6.png](https://support.snyk.io/hc/article_attachments/360007146058/uuid-f1a60a5d-1aa6-4983-956f-1e4fcecb9892-en.png)
+![](../../.gitbook/assets/uuid-f1a60a5d-1aa6-4983-956f-1e4fcecb9892-en.png)
 
 If you are unable to connect, please re-enter your account credentials to verify that they are correct.
 
-![image7.png](https://support.snyk.io/hc/article_attachments/360007064417/uuid-d78f594d-75a9-3cf3-2685-c96c63596ea0-en.png)
+![](../../.gitbook/assets/uuid-d78f594d-75a9-3cf3-2685-c96c63596ea0-en.png)
 
 ### Disable the Cloud Foundry integration
 
@@ -71,11 +71,11 @@ Once you’ve successfully connected Snyk to your Cloud Foundry account, you’l
 
 In either case, you’ll see a list of any available projects on the Cloud Foundry account you connected. Select the ones you want to monitor and click the “add to Snyk” button.
 
-![image3.png](https://support.snyk.io/hc/article_attachments/360007146098/uuid-d7a81cd8-f968-97d1-dcf8-d77a3b7df2fb-en.png)
+![](../../.gitbook/assets/uuid-d7a81cd8-f968-97d1-dcf8-d77a3b7df2fb-en.png)
 
 As soon as you’ve added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Cloud Foundry applications in your [project dashboard](https://app.snyk.io/projects). You’ll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to remediate.
 
-![image4.png](https://support.snyk.io/hc/article_attachments/360007146118/uuid-de93d111-acb5-8792-2c6d-27bfece48315-en.png)
+![](../../.gitbook/assets/uuid-de93d111-acb5-8792-2c6d-27bfece48315-en.png)
 
 Snyk will now continuously monitor each of those projects for known vulnerabilities. You can add more projects at any time.
 
