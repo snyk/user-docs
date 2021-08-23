@@ -6,9 +6,9 @@ Within the group overview, you can also view all of a group’s members. Note th
 
 From the group overview, the vulnerability status of all of a group’s organizations are visible in one place as a report. You can select which organizations you wish to compare via the filter dropdown. This will set the context for all the tabs within the reports, where you can continue to filter other values such as type, status and package manager.
 
-![Screen\_Shot\_2021-07-02\_at\_2.07.01\_PM.png](https://support.snyk.io/hc/article_attachments/4403440798865/Screen_Shot_2021-07-02_at_2.07.01_PM.png)
+![](../../.gitbook/assets/screen_shot_2021-07-02_at_2.07.01_pm.png)
 
 Organization filters can be created, saved, and selected quickly via the **Organization Filters** dropdown.
 
-![Screen\_Shot\_2021-07-02\_at\_2.05.50\_PM.png](https://support.snyk.io/hc/article_attachments/4403440807313/Screen_Shot_2021-07-02_at_2.05.50_PM.png)
+![](../../.gitbook/assets/screen_shot_2021-07-02_at_2.05.50_pm.png)
 

@@ -26,5 +26,5 @@ This feature is available to plans that support groups. See [Pricing plans](http
 3. From the **Session expiration** area, enter values for the session length. valid value ranges are as follows:
 4. Days - 0-30
 5. Hours - 0-23
-6. Minutes - 0-59 ![image1.png](https://support.snyk.io/hc/article_attachments/360006848857/uuid-21093b2a-7003-b47a-cb62-2e6dd147323e-en.png)
+6. Minutes - 0-59 ![image1.png](../../.gitbook/assets/uuid-21093b2a-7003-b47a-cb62-2e6dd147323e-en.png)
 
