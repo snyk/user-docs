@@ -7,5 +7,5 @@ Security policies allow you to set custom rules to automatically prioritize or d
 
 Group administrators can access and set security policy rules using the [**Policies**](https://support.snyk.io/hc/en-us/articles/360007476397) tab.
 
-![](https://support.snyk.io/hc/article_attachments/360012345498/Screenshot_2020-10-20_at_10.01.49_am.png)
+![](../../.gitbook/assets/screenshot_2020-10-20_at_10.01.49_am.png)
 
