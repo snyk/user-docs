@@ -29,7 +29,7 @@ Reachable Vulnerabilities analysis is available for Java \(Maven and Gradle\) ap
 * Maven 3.6.\*
 * Gradle \(see matrix below\)
 
-![image1.png](https://support.snyk.io/hc/article_attachments/360016028857/image1.png)
+![](../../.gitbook/assets/image1-1-.png)
 
 To perform Reachable Vulnerabilities analysis, you can:
 
@@ -49,7 +49,7 @@ To perform Reachable Vulnerabilities analysis, you can:
    * In **Organization** settings, go to the **Integrations** section.
    * Click on **gitHub**.
    * Go to the **Reachable vulnerabilities analysis** section.
-   * Opt-in to the **Reachable vulnerabilities analysis** and save your changes.![image2.png](https://support.snyk.io/hc/article_attachments/360016029197/image2.png)
+   * Opt-in to the **Reachable vulnerabilities analysis** and save your changes.![image2.png](../../.gitbook/assets/image2-5-.png)
 3. Go to the **import projects** page and choose the repositories to import to Snyk.
 4. Selected projects are imported and analyzed for Reachable Vulnerabilities issues.
 
@@ -60,7 +60,7 @@ When running **snyk test --reachable**_,_ the CLI output includes:
 1. The number of tested dependencies, the number of found vulnerabilities and how many of them are reachable.
 2. The reachability level appears next to the relevant vulnerability, and the path from the app’s code to the vulnerable function appears below.
 
-![](https://support.snyk.io/hc/article_attachments/360009576797/Screen_Shot_2020-06-30_at_12.59.23.png)
+![](../../.gitbook/assets/screen-shot-2020-06-30-at-12.59.23.png)
 
 ### Project page
 
@@ -70,7 +70,7 @@ After running **snyk monitor** in the CLI, or importing a project via Snyk UI, t
 2. **Reachability badge** - Allows you to quickly understand the reachability level of vulnerabilities.
 3. **Call path** - Allows you to see the path from your code to the vulnerable function in order to validate the result.
 
-![project.png](https://support.snyk.io/hc/article_attachments/360010114097/project.png)
+![](../../.gitbook/assets/project.png)
 
 ### Reports
 
@@ -78,5 +78,5 @@ The reachability information can be reviewed next to each issue under the Report
 
 You can filter by reachability status, to quickly show the issues which are reachable.
 
-![blobid0.png](https://support.snyk.io/hc/article_attachments/360011831897/blobid0.png)
+![](../../.gitbook/assets/blobid0.png)
 
