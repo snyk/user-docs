@@ -15,7 +15,7 @@ Please note, GitHub integrates per user rather than per org. Setting up this int
 
    ![mceclip0.png](../../.gitbook/assets/mceclip0-21-.png)
 
-4. Select the repos you'd like to import to Snyk. When done, click on the Add selected repositories button, at the top of the page. Once clicked, Snyk will start scanning the selected repos for dependency files \(i.e. package.json, pom.xml, etc\) in the entire directory tree and import them to Snyk as projects:
+4. Select the repos you'd like to import to Snyk. When done, click on the **Add selected repositories** button, at the top of the page. Once clicked, Snyk will start scanning the selected repos for dependency files \(i.e. package.json, pom.xml, etc\) in the entire directory tree and import them to Snyk as projects:
 
    ![uuid-b744bfb4-4a09-3f09-3275-986c855ee5be-en.jpg](../../.gitbook/assets/uuid-b744bfb4-4a09-3f09-3275-986c855ee5be-en.jpeg)
 
@@ -52,7 +52,7 @@ This is how Snyk pull request checks appear in the Pull Request page in GitHub:
 
 ### ![image10.png](../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en.png)
 
-You can review and adjust the pull request tests settings by navigating to the GitHub's Integration Settings page in Snyk \(Settings --&gt; Integration --&gt; GitHub\):
+You can review and adjust the pull request tests settings by navigating to the GitHub's Integration **Settings** page in Snyk \(Settings --&gt; Integration --&gt; GitHub\):
 
 ![](../../.gitbook/assets/mceclip5%20%281%29.png)
 
@@ -63,7 +63,7 @@ You can review and adjust the pull request tests settings by navigating to the G
 1. Operations that are triggered via the Snyk UI, for example, opening a Fix PR or retesting a project are performed on behalf of the acting user. Therefore, a user that wants to perform this operation in GitHub via the Snyk UI, must connect their GitHub account to Snyk and have the required permissions scope for the repositories they would like to perform these operations for, [see this for more details](github-integration.md).
 2. Operations which are not triggered via the UI, as daily / weekly tests and automatic PRs \(fix and upgrade\) are performed on behalf of a random Snyk organization members who have connected their GitHub accounts to Snyk and have the required permissions scope for the repository.
 
-**Note:** a Snyk organization admin can [configure a specific GitHub account on whose behalf the PRs will be opened](https://support.snyk.io/hc/en-us/articles/360010843797). In this case, Snyk will continue using a random Snyk organization member’s GitHub account to perform all the other operations. Therefore, using this feature does not eliminate the need for connecting users’ GitHub accounts to Snyk.
+**Note:** a Snyk organization admin can configure a [specific GitHub account on whose behalf the PRs will be opened](opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md). In this case, Snyk will continue using a random Snyk organization member’s GitHub account to perform all the other operations. Therefore, using this feature does not eliminate the need for connecting users’ GitHub accounts to Snyk.
 
 ### Brokered GitHub Integrations
 
@@ -89,6 +89,23 @@ In order for Snyk to be able to perform the required operation on monitor reposi
 | Opening fix and upgrade pull requests | For creating fix / upgrade PRs in the monitored repos |  |
 | Snyk tests on pull requests - initial configuration | For adding Snyk's webhooks to the imported repos, so Snyk will be informed whenever pull requests are created or updated and be able to trigger scans | _Admin_ |
 
+**1. Opening fix and upgrade pull requests from a fixed GitHub account**
+
+Snyk allows you to configure a specific GitHub account on whose behalf the fix and upgrade PRs will be opened. Please note that the configured account is only used for opening PRs. All the other operation will still be performed on behalf of a random Snyk organization members who have connected their GitHub accounts to Snyk.
+
+In order to use this feature, you'll need to do the following:
+
+1. Open GitHub's Integrations Settings page in Snyk app by clicking on _Settings_ → _Integrations_ →  _GitHub_
+2. Enable the toggle button under the _Open fix and upgrade pull requests from a fixed GitHub_ _account_  setting: ![Screen\_Shot\_2020-09-29\_at\_21.27.30.png](../../.gitbook/assets/screen-shot-2020-09-29-at-21.27.30.png)
+3. Follow the in-page instructions for creating a personal access token in GitHub
+4. Provide the newly generated token to Snyk so it can be used to perform operations in GitHub \(i.e. opening Fix PRs and etc\)
+
+**Important note:**
+
+Make sure that the GitHub account for which the token is provided, has _**write**_ level permissions or above, to the repos you'd like to monitor with Snyk.
+
+Read more about [repository permission levels in GitHub](github-integration.md#required-permissions-scope-for-the-github-integration).   
+
 ### **2. Pull request assignees** <a id="pr-assignment"></a>
 
 Snyk can automatically assign pull requests it creates to help ensure that they are actioned by the right people.
@@ -99,7 +116,7 @@ Users can either be manually specified \(and all will be assigned\) or automatic
 
 **Enabling for all projects within the Github integration**
 
-Go to GitHub's Integration Settings page in Snyk \(Settings --&gt; Integration --&gt; GitHub\):
+Go to GitHub's Integration _Settings_ page in Snyk \(Settings --&gt; Integration --&gt; GitHub\):
 
 ![](../../.gitbook/assets/code-assignees-disabled.png)
 
