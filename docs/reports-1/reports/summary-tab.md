@@ -12,7 +12,7 @@ Data in each of the four tabs is displayed based on the filters you've applied f
 
 The dashboard appears similar to the following image:
 
-![mceclip0.png](https://support.snyk.io/hc/article_attachments/360020461777/mceclip0.png)
+![](../../.gitbook/assets/mceclip0-30-.png)
 
 To quickly view additional data for a specific period in time, hover over the relevant graph and check out the pop-up.
 

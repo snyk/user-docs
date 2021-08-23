@@ -4,7 +4,7 @@ The Issues tab displays all known vulnerability and license discrepancies across
 
 By default, issues are grouped together per issue, similar to the following example:
 
-![mceclip0.png](https://support.snyk.io/hc/article_attachments/360020462137/mceclip0.png)
+![](../../.gitbook/assets/mceclip0-31-.png)
 
 Get an overview of the general health of your organization on the whole by inspecting the number of projects affected per issue and the number and kinds of issues affecting your projects.
 
@@ -25,7 +25,7 @@ Just under the **Export** button, click the **View issues ungrouped** or **View 
 
 The Issues area appears similar to this image when viewing issues ungrouped:
 
-![Report\_Issues\_ungroup.jpg](https://support.snyk.io/hc/article_attachments/360007031278/uuid-e02b41ac-13ff-99e8-1028-69cd24310313-en.png)
+![](../../.gitbook/assets/uuid-e02b41ac-13ff-99e8-1028-69cd24310313-en.png)
 
 The following table describes the different parts of the Issues area as displayed when viewing issues either grouped or ungrouped:
 
@@ -51,17 +51,13 @@ The following table describes the different parts of the Issues area as displaye
       <td style="text-align:left">The icon of the associated severity for this issue.</td>
       <td style="text-align:left">
         <p>
-          <img src="https://support.snyk.io/hc/article_attachments/360020461917/mceclip2.png"
-          alt="mceclip2.png" />Critical</p>
+          <img src="../../.gitbook/assets/mceclip2-7-.png" alt="mceclip2.png" />Critical</p>
         <p>
-          <img src="https://support.snyk.io/hc/article_attachments/360020563518/mceclip3.png"
-          alt="mceclip3.png" />High</p>
+          <img src="../../.gitbook/assets/mceclip3-3-.png" alt="mceclip3.png" />High</p>
         <p>
-          <img src="https://support.snyk.io/hc/article_attachments/360020563578/mceclip4.png"
-          alt="mceclip4.png" />Medium</p>
+          <img src="../../.gitbook/assets/mceclip4-2-.png" alt="mceclip4.png" />Medium</p>
         <p>
-          <img src="https://support.snyk.io/hc/article_attachments/360020461957/mceclip6.png"
-          alt="mceclip6.png" />Low</p>
+          <img src="../../.gitbook/assets/mceclip6 (1).png" alt="mceclip6.png" />Low</p>
       </td>
     </tr>
     <tr>
@@ -215,7 +211,7 @@ These controls appear above the table:
 
 **Issue filters**—mark the issues to be displayed by selecting a range of priority scores, specific issue types, exploit maturity, status, fixable values and reachability.
 
-![Screenshot\_2020-07-30\_at\_11.30.19\_am.png](https://support.snyk.io/hc/article_attachments/360010322577/Screenshot_2020-07-30_at_11.30.19_am.png)
+![](../../.gitbook/assets/screenshot_2020-07-30_at_11.30.19_am.png)
 
 **Export**—click the button to choose which format you’d like to export issue data in:
 
