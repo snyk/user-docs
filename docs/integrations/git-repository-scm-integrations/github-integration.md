@@ -116,7 +116,7 @@ Users can either be manually specified \(and all will be assigned\) or automatic
 
 **Enabling for all projects within the Github integration**
 
-Go to GitHub's Integration _Settings_ page in Snyk \(Settings --&gt; Integration --&gt; GitHub\):
+Go to GitHub's Integration _**Settings**_ page in Snyk \(Settings --&gt; Integration --&gt; GitHub\):
 
 ![](../../.gitbook/assets/code-assignees-disabled.png)
 
@@ -124,7 +124,7 @@ Go to GitHub's Integration _Settings_ page in Snyk \(Settings --&gt; Integration
 
 **Enable for one project**
 
-Go to the project's settings, and the "Integration settings" tab within the project settings:
+Go to the project's settings, and the Integration settings tab within the project settings:
 
 ![](../../.gitbook/assets/code-assigness-project.png)
 
