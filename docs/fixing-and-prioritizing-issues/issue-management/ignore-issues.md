@@ -59,11 +59,11 @@ The same repo imported from the SCM is considered as a different project, and an
 
 For all projects, you can ignore the vulnerability by creating a `.snyk` YAML file.
 
-![null](https://uploads.intercomcdn.com/i/o/23911244/1eeea9dbbaa687703958ce9e/Screen+Shot+2017-05-10+at+11.16.57+AM.png)
+![](../../.gitbook/assets/screen+shot+2017-05-10+at+11.16.57+am.png)
 
 For example, if you wanted to ignore the vulnerability with SNYK ID [SNYK-RUBY-FASTREADER-20085](https://snyk.io/vuln/SNYK-RUBY-FASTREADER-20085) in `fastreader`, with the reason “No remediation available” until 01 Jan 2017, you would write:
 
-![null](https://uploads.intercomcdn.com/i/o/23911290/a6da5a57db28311a01a1d43e/Screen+Shot+2017-05-10+at+11.17.26+AM.png)
+![](../../.gitbook/assets/screen+shot+2017-05-10+at+11.17.26+am.png)
 
 See [The .snyk file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file) for more details.
 
