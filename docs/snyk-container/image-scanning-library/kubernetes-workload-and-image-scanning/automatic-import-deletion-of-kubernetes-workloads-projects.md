@@ -63,9 +63,9 @@ workload_events {
 }
 ```
 
-#### Excluding Jobs
+#### Excluding workload types 
 
-You should exclude Jobs from workload events \(creation/deletion\) as they can be really noisy and can generate lots of workload imports in your Snyk organization. You can do this with the following example policy:
+As best practice, we recommend excluding specific workload types such as Pods and Jobs from workload events \(creation/deletion\), as they can be really noisy and can generate lots of workload imports in your Snyk organization. You can do this with the following example policy:
 
 ```text
 package snyk
@@ -73,6 +73,7 @@ orgs := ["19982df2-0ed5-4a16-b355-e6535cfc41ef"]
 default workload_events = false
 workload_events {
 	input.kind != "Job"
+	input.kind != "Pod"
 }
 ```
 
