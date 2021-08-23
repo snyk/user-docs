@@ -55,6 +55,8 @@ Snyk tests any newly created pull request in your repositories for security vuln
 
 This is how Snyk pull request checks appear in the Pull Request page in GitHub Enterprise:
 
+![](../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en%20%281%29.png)
+
 To review and adjust the pull request tests settings:
 
 1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
