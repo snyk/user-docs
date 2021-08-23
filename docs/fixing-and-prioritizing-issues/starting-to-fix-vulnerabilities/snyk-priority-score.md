@@ -43,7 +43,7 @@ Scores can be seen on each issue in the projects view, with all issues now sorte
 
 Issues can be filtered on the left.
 
-![Screen\_Shot\_2021-07-14\_at\_1.41.24\_PM.png](https://support.snyk.io/hc/article_attachments/4404034272273/Screen_Shot_2021-07-14_at_1.41.24_PM.png)
+![](../../.gitbook/assets/screen_shot_2021-07-14_at_1.41.24_pm.png)
 
 ## View scores in the Reports
 
@@ -51,7 +51,7 @@ The **Issues** tab in the reports includes the Priority Score as it's own sortab
 
 Issues can also be filtered by the score.
 
-![Screen\_Shot\_2021-07-14\_at\_1.43.32\_PM.png](https://support.snyk.io/hc/article_attachments/4404034284817/Screen_Shot_2021-07-14_at_1.43.32_PM.png)
+![](../../.gitbook/assets/screen_shot_2021-07-14_at_1.43.32_pm.png)
 
 There are no settings related to the Priority Score. They have no active impact, so are just extra metadata, so they cannot be disabled or hidden.
 

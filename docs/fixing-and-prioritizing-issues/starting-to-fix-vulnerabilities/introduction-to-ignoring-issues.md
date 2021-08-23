@@ -6,7 +6,7 @@ See [Ignoring issues not prioritized for your project](https://support.snyk.io/h
 
 Each issue card has an **Ignore** button allowing you to ignore that issue:
 
-![](https://support.snyk.io/hc/article_attachments/360018241838/new-ignore-2.png)
+![](../../.gitbook/assets/new-ignore-2.png)
 
 ## Snyk CLI
 
