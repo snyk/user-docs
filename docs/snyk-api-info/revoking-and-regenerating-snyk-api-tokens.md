@@ -1,6 +1,8 @@
 # Revoking and regenerating Snyk API tokens
 
+{% hint style="info" %}
 When an API token is revoked, all integrations using that key will immediately stop working. Proceed with caution!
+{% endhint %}
 
 If you suspect an API token has been leaked, it's good practice to revoke it and generate a new one to use in its place.
 
