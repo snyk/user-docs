@@ -23,7 +23,7 @@ Snyk Broker has a client and a server component:
 * Broker client: a [Docker image](https://hub.docker.com/r/snyk/broker/) deployed in your infrastructure.
 * Broker server: running on Snyk SaaS backend
 
-![image2.png](https://support.snyk.io/hc/article_attachments/360014621818/image2.png)
+![](../../.gitbook/assets/image2-4-.png)
 
 All data, both in transit and at rest, is encrypted. Communication between the client and server takes place over a secure WebSocket connection. On startup, it dials out and establishes a two way communication path. It does not require opening incoming ports.
 
