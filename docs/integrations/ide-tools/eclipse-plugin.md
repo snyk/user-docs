@@ -23,18 +23,18 @@ Snyk supports all languages that are supported by both Eclipse and Snyk. Additio
 1. Navigate to the Marketplace from within your running Eclipse instance.
 2. Search for Snyk and click Install.
 
-   ![image6.png](https://support.snyk.io/hc/article_attachments/360007145878/uuid-01198b42-f020-2cc5-c20f-93817eeb44a4-en.png)
+   ![image6.png](../../.gitbook/assets/uuid-01198b42-f020-2cc5-c20f-93817eeb44a4-en.png)
 
 3. When prompted accept the license agreement and the Snyk Security certificate to complete the installation.
 4. Restart the Eclipse instance and navigate to Eclipse Preferences to ensure Snyk Vuln Scanner now appears in the list:
 
-   ![image7.png](https://support.snyk.io/hc/article_attachments/360007145898/uuid-928012b7-8e49-fe6f-4965-77c5db026784-en.png)
+   ![image7.png](../../.gitbook/assets/uuid-928012b7-8e49-fe6f-4965-77c5db026784-en.png)
 
 ### Use the Snyk plugin to secure your Eclipse projects
 
 From the Snyk results click ![image10.png](https://support.snyk.io/hc/article_attachments/360007064317/uuid-aa090aa8-d4fe-eb5d-2505-54a0b1555be9-en.png) whenever you are ready to scan your projects. It shouldn’t take too long for the results to appear—but no worries! You can continue to work as usual in the meantime anyway.
 
-If for any reason you need to stop the scan before the build ends, click ![image11.png](https://support.snyk.io/hc/article_attachments/360007145938/uuid-29be01e6-6913-25f8-15ed-a8cf47230fa0-en.png).
+If for any reason you need to stop the scan before the build ends, click ![image11.png](../../.gitbook/assets/uuid-29be01e6-6913-25f8-15ed-a8cf47230fa0-en.png).
 
 If you only want to scan a single project in your workspace, navigate to the Package Explorer panel, right-click the root of the project you want to test, and then choose Snyk test.
 
@@ -116,7 +116,7 @@ Work with Snyk results from Eclipse as follows:
           that actually contains the vulnerability) columns both display the name
           of the same package:</p>
         <p>
-          <img src="https://support.snyk.io/hc/article_attachments/360007145978/uuid-e7accdc1-7495-e7a5-7a64-2403b066cb03-en.png"
+          <img src="../../.gitbook/assets/uuid-e7accdc1-7495-e7a5-7a64-2403b066cb03-en.png"
           alt="image13.png" />
         </p>
       </td>
@@ -133,7 +133,7 @@ Work with Snyk results from Eclipse as follows:
         <p>An arrow appears on the row, grouping together all relevant details, similar
           to the following examples:</p>
         <p>
-          <img src="https://support.snyk.io/hc/article_attachments/360007145998/uuid-c71f67d1-80a3-7485-b33b-e602a1a5050e-en.png"
+          <img src="../../.gitbook/assets/uuid-c71f67d1-80a3-7485-b33b-e602a1a5050e-en.png"
           alt="image14.png" />
         </p>
         <p>For example:</p>
@@ -153,7 +153,7 @@ Work with Snyk results from Eclipse as follows:
         <p>Click the arrow on the row to expand and view the full path from the direct
           dependency to the actual vulnerable package.</p>
         <p>
-          <img src="https://support.snyk.io/hc/article_attachments/360007064357/uuid-35658aaf-3359-80c2-c094-41a34c7863cc-en.png"
+          <img src="../../.gitbook/assets/uuid-35658aaf-3359-80c2-c094-41a34c7863cc-en.png"
           alt="image15.png" />
         </p>
         <p>In the example above, the full path would appear as:</p>
