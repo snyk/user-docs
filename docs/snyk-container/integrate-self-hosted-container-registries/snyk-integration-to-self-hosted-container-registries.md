@@ -36,14 +36,11 @@ The Broker client provides the Agent with the connection details. The Agent uses
 * DigitalOcean \(type: digitalocean-cr\)
 * GitLab \(type: gitlab-cr\)
 
----
 **NOTE**
 
 The integration pattern using broker with open source container registries from the above list is designed for users who require images to be scanned in their own environment, instead of inside the Snyk service.
 
 If such a requirement is not relevant for you, you do not need the architecture described in this article, and can integrate to it in the standard way from the integrations page.
-
----
 
 **Settings prerequisites**
 

@@ -2,16 +2,13 @@
 
 The Snyk plugin for Jenkins is [maintained and documented](https://plugins.jenkins.io/snyk-security-scanner) from within Jenkins. Regardless of the kinds of projects you mostly manage from Jenkins \(freestyle or pipeline\), install the Snyk security task on your Jenkins account with these steps. Once complete, the plugin is available for configuration for any of your freestyle projects and pipelines.
 
-### Note
+## Note
 
----
 **NOTE**
 
 steps supported solely by Jenkins are in high-level only. See [Jenkins documentation](https://jenkins.io/doc/) for additional assistance.
 
----
-
-#### How to install the Snyk plugin
+### How to install the Snyk plugin
 
 1. Navigate to the Manage Jenkins=&gt;Manage Plugins area of Jenkins to install the Snyk Security plugin for Jenkins. See the [Jenkins documentation](https://jenkins.io/doc/) for additional information.
 

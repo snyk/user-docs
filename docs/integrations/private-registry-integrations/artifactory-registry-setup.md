@@ -16,13 +16,10 @@ Brokered Artifactory is currently supported for [Maven](https://support.snyk.io/
 
    ![Screenshot\_2020-04-17\_at\_14.38.12.png](../../.gitbook/assets/screenshot_2020-04-17_at_14.38.12.png)
 
----
 **NOTE**
 
 If you do not see the “Publicly accessible” switch you do not have the necessary permissions and can only add a publicly accessible instance.  
 Contact [support@snyk.io](mailto:support@snyk.io) if you want to add a private registry
-
----
 
 ## Set up publicly accessible instances
 
@@ -65,6 +62,5 @@ Contact [support@snyk.io](mailto:support@snyk.io) if you want to add a private r
    2. **Basic auth**: URL encode both and user info to avoid errors that will prevent authentication
    3. **No basic auth**: Omit`:@` credentials 
 
-3. `RES_BODY_URL_SUB` is the URL of the Artifactory without credentials, and with http protocol and is required for NPM integration
-   1. Check connection status by refreshing Artifactory Integration Settings page, no connection error should be displayed
+3. `RES_BODY_URL_SUB` is the URL of the Artifactory without credentials, and with http protocol and is required for NPM integration 1. Check connection status by refreshing Artifactory Integration Settings page, no connection error should be displayed
 

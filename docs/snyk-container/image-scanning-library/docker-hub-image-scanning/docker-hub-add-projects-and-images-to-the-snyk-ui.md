@@ -13,7 +13,7 @@ Snyk tests and monitors Docker Hub repositories and images by evaluating root fo
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
 
-   ![AddProjectMenu.gif](../../../.gitbook/assets/uuid-da316a4a-c823-cf03-f37f-5305446dc970-en.gif)
+   ![AddProjectMenu.gif](../../../.gitbook/assets/add-artifactory-images%20%281%29%20%283%29.gif)
 
 2. Go to Projects, and click Add projects. The list of integrations already configured on your account opens, similar to the following:
 

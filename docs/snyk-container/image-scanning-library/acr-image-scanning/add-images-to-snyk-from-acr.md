@@ -29,7 +29,7 @@ Snyk tests and monitors ACR container images by evaluating root folders and cust
 
 ACR files are indicated with a unique icon ![image7.png](https://support.snyk.io/hc/article_attachments/360007065757/uuid-5d10608d-d674-d4ee-d6c2-6faadd6fc8ea-en.png). You can now also filter to view only those projects:
 
-![](../../../.gitbook/assets/image%20%284%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%281%29.png)
 
 ACR integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages, also in our docs.
 

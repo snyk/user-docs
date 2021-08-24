@@ -7,14 +7,9 @@ $ snyk test --severity-threshold=medium
 ```
 
 {% hint style="info" %}
-
----
-**NOTE**  
+**NOTE**
 
 Setting severity threshold to _Low_ currently has the same effect as running without specifying the threshold at all: all vulnerabilities are reported.
-
----
-
 {% endhint %}
 
 See also

@@ -27,14 +27,14 @@ Bazel has limited native integration with package registries such as npmjs.org o
 
 However, in many cases users must manually specify their dependency information \(package name, location & version\), including all transitives. These can then be fetched by Bazel during builds.
 
-Because Bazel dependencies are specified as code in BUILD files using Starlark, Snyk cannot easily discover which dependencies a project has. 
+Because Bazel dependencies are specified as code in BUILD files using Starlark, Snyk cannot easily discover which dependencies a project has.
 
-The recommended approach is to test your dependencies via the [Snyk Dep Graph Test API]().
+The recommended approach is to test your dependencies via the [Snyk Dep Graph Test API](snyk-for-bazel.md).
 
 ### How it works
 
 1. For each type of dependency \(e.g. Maven, Cocoapods\), create a  [Dep Graph JSON object](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h_01EEWE7K497ZVFKVHVKYG5YHB4) listing all the dependency packages and versions \(see below\)
-2. As part of a Bazel test rule, send this object as a POST request to the  [Dep Graph Test API](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h_01EEWFQJFTCWFQBMQR0X32J8B8), \(along with your [auth token](https://support.snyk.io/hc/en-us/articles/360004037557-Authentication-for-API)\), example curl request:
+2. As part of a Bazel test rule, send this object as a POST request to the [Dep Graph Test API](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h_01EEWFQJFTCWFQBMQR0X32J8B8), \(along with your [auth token](https://support.snyk.io/hc/en-us/articles/360004037557-Authentication-for-API)\), example curl request:
 
    ```text
    curl -X POST 'https://snyk.io/api/v1/test/dep-graph' \
@@ -43,7 +43,7 @@ The recommended approach is to test your dependencies via the [Snyk Dep Graph Te
      -d @dep-graph.json
    ```
 
-3. Check the  [API response](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h_01EEWP8F4MK9MFJT5X0A4ZGS93) for pass/fail status and any resulting vulnerabilities
+3. Check the [API response](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h_01EEWP8F4MK9MFJT5X0A4ZGS93) for pass/fail status and any resulting vulnerabilities
 
 ## Snyk Dep Graph Test API <a id="h_01EEWFQJFTCWFQBMQR0X32J8B8"></a>
 
@@ -202,22 +202,18 @@ Here is an example response with a single vulnerability.
 }
 ```
 
- Here are some further notes on specific components in the response object:
+Here are some further notes on specific components in the response object:
 
 * `ok` - boolean value summarising whether Snyk found any vulnerabilities in the supplied dependencies. You can use this for a quick pass/fail test
 * `issuesData` - a hash of each unique vulnerability found. Each vulnerability contains many useful properties, such as `title`, `description`, `identifiers`, `publicationTime`, `severity` etc
 * `issues` - an simple array of mappings from vulnerabilities in `issuesData` to package. As a vulnerability may be relevant to multiple packages, this mapping is used to keep the response length as short as possible
 
-## Examples  <a id="h_01EEWE7S3TENTVGR2KV8YCMM0F"></a>
+## Examples <a id="h_01EEWE7S3TENTVGR2KV8YCMM0F"></a>
 
-{% hint style="info" %}
----
+## {% hint style="info" %}
+
 **NOTE**  
 See [https://github.com/snyk/bazel-simple-app](https://github.com/snyk/bazel-simple-app) for a full example Bazel Java project, and corresponding Snyk Dep Graph object.
-
----
-
-{% endhint %}
 
 For a simple Bazel project with a single dependency on a Maven package, you may specify the dependency like this:
 
@@ -229,7 +225,7 @@ maven_jar(
 )
 ```
 
-From this you could construct the following Dep Graph JSON object: 
+From this you could construct the following Dep Graph JSON object:
 
 ```text
 {

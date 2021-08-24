@@ -32,9 +32,9 @@ The `.snyk` file can be created in a number of ways
 * **Snyk vulnerability Fix Pull Request \(PR\)** - When a user selects to _fix a vulnerability_ button on a git code repository scan, and a Snyk Patch is available when an upgrade is not possible, a `.snyk` file is added to the pull request \(c_urrently Snyk Patches are for NPM and Yarn only\)_
 * **Snyk CLI Wizard** - the CLI allows users to generate a `.snyk` policy \(_currently available for NPM/Yarn only_\)
 * **Snyk CLI** - utilizing the `snyk ignore` command \(.snyk file must exist\)
-* **Manual creation** - a user may decide to create the file manually. Simply create a new  
+* **Manual creation** - a user may decide to create the file manually. Simply create a new
 
-  `.snyk` file and populate it with the following. Note that in order to ignore by path--_manual editing is required except for where the `snyk wizard` is used_  
+  `.snyk` file and populate it with the following. Note that in order to ignore by path--_manual editing is required except for where the `snyk wizard` is used_
 
 ```text
   # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.version: v1.14.0
@@ -178,12 +178,9 @@ ignore:
         expires: 2020-11-07T11:38:28.614Z
 ```
 
----
 **NOTE**
 
 For IaC ignore rules see [IaC ignores using the .snyk policy file](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file).
-
----
 
 ## .snyk related CLI commands
 

@@ -23,12 +23,9 @@ When you click on this, a Jira issue creation form will appear with the Snyk iss
 
 Select which Jira project you’d like to send the issue to. The fields that we display below are based on the fields that the project has, so switching between projects may show different options.
 
----
 **NOTE**
 
 Snyk currently supports non-Epic Jira ticket creation. Epics will need to be added manually to the ticket once it has been created.
-
----
 
 ![](../../.gitbook/assets/uuid-67202f8e-7f70-1e84-6044-f65ec36138b3-en.png)
 

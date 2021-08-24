@@ -11,7 +11,7 @@ To add images from DigitalOcean to Snyk:
 
 **Steps:**
 
-1. Log in to your account and navigate to the relevant group and organization that you want to manage.![AddProjectMenu.gif](../../../.gitbook/assets/uuid-da316a4a-c823-cf03-f37f-5305446dc970-en-1-.gif)
+1. Log in to your account and navigate to the relevant group and organization that you want to manage.![AddProjectMenu.gif](../../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29.gif)
 2. Under the **Projects** tab, click **Add project**. The list of integrations already configured on your account opens. Select the **DigitalOcean** option or **Other** if **DigitalOcean** doesn’t appear.
 3. The **Which images do you want to test?** view appears, displaying all of the available images for your connected registry, grouped by each of your repositories, similar to the following: ![mceclip1.png](../../../.gitbook/assets/mceclip1-3-.png) 
 4. Select single or multiple images to be imported to Snyk. Selection can be done by choosing a specific image or selecting an entire repository. You can also search by image name to find specific images to import. To finish, click **Add selected repositories** on the top-right. 

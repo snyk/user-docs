@@ -45,7 +45,7 @@ Add projects to test with Snyk, by choosing repositories for Snyk to test and mo
 
 1. Select **Projects** from snyk.io.
 2. Select the tool to add the project from \(for example GitHub\): ![Open-Source-Add-Projects.png](../../.gitbook/assets/open-source-add-projects%20%281%29.png)
-3. In **Personal and Organization repositories**, select the repositories to use: ![Screenshot\_2021-04-09\_at\_17.08.24.png](../../.gitbook/assets/screenshot_2021-04-09_at_17.08.24%20%281%29.png)
+3. In **Personal and Organization repositories**, select the repositories to use: ![Screenshot\_2021-04-09\_at\_17.08.24.png](../../.gitbook/assets/screenshot_2021-04-09_at_17.08.24%20%281%29%20%281%29.png)
 4. Click **Add selected repositories** to import the selected repositories into your projects. This also:
    * Sets Snyk to run a regular check \(daily by default\) for vulnerabilities.
    * Creates a Webhook, so when you change code, Snyk tests your pull / merge requests, to check that new dependencies do not introduce more vulnerabilities.

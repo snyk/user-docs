@@ -102,18 +102,14 @@ You must be added as a collaborator to the Snyk organization you’d like to wor
 
 1. Go to **Projects**, click **Add projects** and select **AWS Lambda.**
 
-   ![image5.png](../../.gitbook/assets/uuid-89dfeb36-7726-1f89-5366-b7aa603a5898-en.png)  
----
+   ![image5.png](../../.gitbook/assets/uuid-89dfeb36-7726-1f89-5366-b7aa603a5898-en.png)
 
-**NOTE**
-If you can’t see that icon, click the+** option and then from the **Integrations** page, find and click the **Lambda** option.
+**NOTE** If you can’t see that icon, click the+ **option and then from the** Integrations **page, find and click the** Lambda\*\* option.
 
----
-
-2. Select the repositories and their relevant functions you’d like to test and click **Add selected repositories**.![image8.png](../../.gitbook/assets/uuid-e21c5832-5a84-a635-27c1-2ea9726bce64-en.png)
-3. Snyk evaluates root folders and custom file locations. If no manifest files are found on the root level or in the paths you configure, Snyk notifies you that no files can be imported.
-4. Once repositories are imported, a confirmation appears in green at the top of the screen.  ![image3.png](https://support.snyk.io/hc/article_attachments/360007146458/uuid-ee5c7842-1773-a590-7b75-aa5e960b8108-en.png)
-5. Refresh the page to view the added functions. AWS ECR images are indicated with a unique icon ![image2.png](../../.gitbook/assets/uuid-1275abc5-312a-ce0b-b6d9-2caf3e83584a-en.png), they are grouped and named by repo, and you can now also filter to view only those projects:  ![image7.png](../../.gitbook/assets/uuid-8f54b49d-23ee-637e-45a9-47ca61fe2b9e-en.png)
+1. Select the repositories and their relevant functions you’d like to test and click **Add selected repositories**.![image8.png](../../.gitbook/assets/uuid-e21c5832-5a84-a635-27c1-2ea9726bce64-en.png)
+2. Snyk evaluates root folders and custom file locations. If no manifest files are found on the root level or in the paths you configure, Snyk notifies you that no files can be imported.
+3. Once repositories are imported, a confirmation appears in green at the top of the screen.  ![image3.png](https://support.snyk.io/hc/article_attachments/360007146458/uuid-ee5c7842-1773-a590-7b75-aa5e960b8108-en.png)
+4. Refresh the page to view the added functions. AWS ECR images are indicated with a unique icon ![image2.png](../../.gitbook/assets/uuid-1275abc5-312a-ce0b-b6d9-2caf3e83584a-en.png), they are grouped and named by repo, and you can now also filter to view only those projects:  ![image7.png](../../.gitbook/assets/uuid-8f54b49d-23ee-637e-45a9-47ca61fe2b9e-en.png)
 
 AWS Lambda integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages in our docs.
 

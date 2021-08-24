@@ -14,20 +14,13 @@ Features might not be available, depending on your subscription plan.
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | ![composer-logo.svg](../../.gitbook/assets/uuid-3415efde-9bfb-2b07-3781-8169e25a2fcd-en.png) | [Composer](https://getcomposer.org/) | ✔︎ | ✔︎ | ✔︎ |  |  |
 
-### 
-
-###  **How it works**
+### **How it works**
 
 Once we’ve built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in the dependency tree.
 
 {% hint style="info" %}
-
----
 **NOTE**  
 In order to scan your dependencies, you must ensure you have first installed the relevant package manager, and that your project contains the supported manifest files.
-
----
-
 {% endhint %}
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project:
@@ -53,7 +46,7 @@ In order to build the dependency tree Snyk analyzes the `composer.json` and `com
 
 There are no unique parameters when running Snyk for PHP.
 
-Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81). 
+Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81).
 
 ## Git services for PHP projects
 
@@ -86,7 +79,7 @@ The following error messages may appear for you when working with your PHP proje
 * Lockfile missing packages property
 * Lockfile or manifest file is not a valid JSON
 
-### Support 
+### Support
 
 If you run across any of these, or other issues, please send the following files to us at [support@snyk.io](mailto:support@snyk.io) and we'll help you out:
 

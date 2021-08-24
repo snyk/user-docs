@@ -12,7 +12,7 @@ The CloudFormation scanning features require access to the YAML or JSON files in
 
 1. Find and download the appropriate accept.json sample file for the correct source control system [from the Broker repository](https://github.com/snyk/broker/tree/master/client-templates).
 2. Rename it `accept.json` and add the rules below for the appropriate SCM to the **private** array in the JSON file.
-3. Follow the [Configuring the broker]() instructions.
+3. Follow the [Configuring the broker](detecting-cloudformation-configuration-files-using-a-broker.md) instructions.
 
 ### GitHub & GitHub Enterprise rules
 
@@ -169,7 +169,7 @@ The CloudFormation scanning features require access to the YAML or JSON files in
 
 ## Configuring the broker
 
- The broker takes the path to the accept.json file \(with the rules above added\) in the ACCEPT environment variable. The example of passing that to the GitHub broker is displayed below.
+The broker takes the path to the accept.json file \(with the rules above added\) in the ACCEPT environment variable. The example of passing that to the GitHub broker is displayed below.
 
 ```text
 docker run --restart=always \
@@ -182,7 +182,6 @@ docker run --restart=always \
   -v /local/path/to/private:/private \
   snyk/broker:github-com
 ```
----
+
 **NOTE**: This gives Snyk the ability to query for any `.yaml`, `.yml`, or `.json` files. If you would prefer to be stricter you can alter the paths in the examples above to be more restrictive to certain projects or file layouts.
 
----

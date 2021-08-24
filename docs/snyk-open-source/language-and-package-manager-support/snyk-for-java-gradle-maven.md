@@ -60,12 +60,9 @@ By default, Snyk CLI scans only the current project \(the project in the root of
   snyk test --all-sub-projects
   ```
 
----
 **NOTE**
 
 Each of the individual sub-projects appears as a separate Snyk project in the UI.
-
----
 
 * To scan a specific project \(for example, _myapp_\):
 

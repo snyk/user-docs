@@ -46,20 +46,16 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
    ```text
    kubectl create secret generic snyk-monitor -n snyk-monitor \
            --from-literal=dockercfg.json={} \
-           --from-literal=integrationId=abcd1234-abcd-1234-abcd-1234abcd1234 
+           --from-literal=integrationId=abcd1234-abcd-1234-abcd-1234abcd1234
    ```
 
----
 **NOTE**
 
 The secret must be called `snyk-monitor` in order for the integration to work.
 
----
+1. If any of the images you need to scan are located in private registries, you need to provide credentials to access those registries by creating a secret \(which must be called snyk-monitor\) using both the Snyk Integration ID as well as a dockercfg file. The dockercfg file is necessary to allow the monitor to look up images in private registries. Usually, a copy of the dockercfg resides in $HOME/.docker/config.json. 1. Create a `dockercfg` configuration file:
 
-7. If any of the images you need to scan are located in private registries, you need to provide credentials to access those registries by creating a secret \(which must be called snyk-monitor\) using both the Snyk Integration ID as well as a dockercfg file. The dockercfg file is necessary to allow the monitor to look up images in private registries. Usually, a copy of the dockercfg resides in $HOME/.docker/config.json.
-   1. Create a `dockercfg` configuration file:
-
-      ```text
+   ```text
       { 
         "auths": { 
           "gcr.io": { 
@@ -68,23 +64,24 @@ The secret must be called `snyk-monitor` in order for the integration to work.
           // Add other registries as necessary 
         } 
       }
-      ```
+   ```
 
-   2. Create a secret with the file added:
+   1. Create a secret with the file added:
 
       ```text
       kubectl create secret generic snyk-monitor \
               -n snyk-monitor --from-file=dockercfg.json \
               --from-literal=integrationId=abcd1234-abcd-1234-abcd-1234abcd1234
       ```
-8. If your registry is using self-signed or other additional certificates you must make those available to Snyk monitor. First place the `.crt`, `.cert`, and/or `.key` files in a directory and create a ConfigMap:
+
+2. If your registry is using self-signed or other additional certificates you must make those available to Snyk monitor. First place the `.crt`, `.cert`, and/or `.key` files in a directory and create a ConfigMap:
 
    ```text
    kubectl create configmap snyk-monitor-certs \
            -n snyk-monitor --from-file=
    ```
 
-9. If you are using an insecure registry or your registry is using unqualified images, you can provide a `registries.conf` file.
+3. If you are using an insecure registry or your registry is using unqualified images, you can provide a `registries.conf` file.
 
    ```text
    [[registry]]
@@ -100,105 +97,105 @@ The secret must be called `snyk-monitor` in order for the integration to work.
            --from-file=
    ```
 
-10. Install the Snyk Helm chart:
+4. Install the Snyk Helm chart:
 
-    ```text
-    helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
-                 --namespace snyk-monitor \
-                 --set clusterName="Production cluster" 
-    ```
+   ```text
+   helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
+                --namespace snyk-monitor \
+                --set clusterName="Production cluster"
+   ```
 
-    If you are running your own instance of Snyk you need to specify the API endpoint when installing the controller. Replace below with the full hostname of your Snyk instance.
+   If you are running your own instance of Snyk you need to specify the API endpoint when installing the controller. Replace below with the full hostname of your Snyk instance.
 
-    ```text
-    helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
-                 --namespace snyk-monitor \
-                 --set clusterName="Production cluster" \
-                 --set integrationApi=/kubernetes-upstream
-    ```
+   ```text
+   helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
+                --namespace snyk-monitor \
+                --set clusterName="Production cluster" \
+                --set integrationApi=/kubernetes-upstream
+   ```
 
-    **Tip**: Replace the name **Production cluster** with a name based on the cluster you are monitoring. You’ll use this label to find workloads in Snyk later.  
-    Also, to avoid naming the cluster on every update, you can use Helm's existing option for **--reuse-values.** This means that when upgrading, it'll reuse the last release's values and merge in any overrides from the command line via **--set** and -f. If '**--reset-values**' is specified, this is ignored.
+   **Tip**: Replace the name **Production cluster** with a name based on the cluster you are monitoring. You’ll use this label to find workloads in Snyk later.  
+   Also, to avoid naming the cluster on every update, you can use Helm's existing option for **--reuse-values.** This means that when upgrading, it'll reuse the last release's values and merge in any overrides from the command line via **--set** and -f. If '**--reset-values**' is specified, this is ignored.
 
-11. If you are using a proxy for the outbound connection to Snyk then you need to configure the integration to use that proxy. To configure the proxy set the following values provided in the Helm chart:
+5. If you are using a proxy for the outbound connection to Snyk then you need to configure the integration to use that proxy. To configure the proxy set the following values provided in the Helm chart:
 
-    * `http_proxy`
-    * `https_proxy`
-    * `no_proxy`
+   * `http_proxy`
+   * `https_proxy`
+   * `no_proxy`
 
-    For instance:
+   For instance:
 
-    ```text
-    helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
-      --namespace snyk-monitor \
-      --set clusterName="Production cluster" \
-      --set https_proxy=http://192.168.99.100:8080
-    ```
+   ```text
+   helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
+     --namespace snyk-monitor \
+     --set clusterName="Production cluster" \
+     --set https_proxy=http://192.168.99.100:8080
+   ```
 
-    Note that the integration does not support CIDR address ranges or wildcards in the `no_proxy` value. Only exact matches are supported.
+   Note that the integration does not support CIDR address ranges or wildcards in the `no_proxy` value. Only exact matches are supported.
 
-12. If you would like to alter the logging verbosity you can do so as follows. Valid levels are `INFO`, `WARN` and `ERROR`. We default to `INFO`.
+6. If you would like to alter the logging verbosity you can do so as follows. Valid levels are `INFO`, `WARN` and `ERROR`. We default to `INFO`.
 
-    ```text
-    helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
-      --namespace snyk-monitor \
-      --set clusterName="Production cluster" \
-      --set log_level="WARN"
-    ```
+   ```text
+   helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
+     --namespace snyk-monitor \
+     --set clusterName="Production cluster" \
+     --set log_level="WARN"
+   ```
 
-13. By default the controller will run without a [Pod Security Policy](https://kubernetes.io/docs/concepts/policy/pod-security-policy/). However, this can be enabled by passing a setting.
+7. By default the controller will run without a [Pod Security Policy](https://kubernetes.io/docs/concepts/policy/pod-security-policy/). However, this can be enabled by passing a setting.
 
-    ```text
-    helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
-      --namespace snyk-monitor \
-      --set clusterName="Production cluster" \
-      --set psp.enabled=true
-    ```
+   ```text
+   helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
+     --namespace snyk-monitor \
+     --set clusterName="Production cluster" \
+     --set psp.enabled=true
+   ```
 
-    You can also reuse an existing Pod Security Policy by specifying the name. If you don't specify a name then a new policy will be automatically created.
+   You can also reuse an existing Pod Security Policy by specifying the name. If you don't specify a name then a new policy will be automatically created.
 
-    ```text
-    helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
-      --namespace snyk-monitor \
-      --set clusterName="Production cluster" \
-      --set psp.enabled=true \
-      --set psp.name=something
-    ```
+   ```text
+   helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
+     --namespace snyk-monitor \
+     --set clusterName="Production cluster" \
+     --set psp.enabled=true \
+     --set psp.name=something
+   ```
 
-14. You can also configure the Snyk controller to use a **PersistentVolumeClaim** \(PVC\) instead of the default emptyDir storage medium for temporarily pulling images. The PVC can either be created by the Helm template provided by the Snyk chart or you can use an already provisioned PVC.
+8. You can also configure the Snyk controller to use a **PersistentVolumeClaim** \(PVC\) instead of the default emptyDir storage medium for temporarily pulling images. The PVC can either be created by the Helm template provided by the Snyk chart or you can use an already provisioned PVC.
 
-    Use the following flags to control the PVC:
+   Use the following flags to control the PVC:
 
-    * pvc.enabled - instructs the Helm chart to use a PVC instead of an emptyDir
-    * pvc.create - whether to create the PVC - this is useful when provisioning for the first time
-    * pvc.storageClassName - controls the StorageClass of the PVC
-    * pvc.name - the name of the PVC to use in Kubernetes
+   * pvc.enabled - instructs the Helm chart to use a PVC instead of an emptyDir
+   * pvc.create - whether to create the PVC - this is useful when provisioning for the first time
+   * pvc.storageClassName - controls the StorageClass of the PVC
+   * pvc.name - the name of the PVC to use in Kubernetes
 
-    For example, you can run the following command on installation to provision/create the PVC:
+   For example, you can run the following command on installation to provision/create the PVC:
 
-    ```text
-    helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
-    --namespace snyk-monitor \
-    --set pvc.enabled=true \
-    --set pvc.create=true \
-    --set pvc.name="snyk-monitor-pvc"
-    ```
+   ```text
+   helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
+   --namespace snyk-monitor \
+   --set pvc.enabled=true \
+   --set pvc.create=true \
+   --set pvc.name="snyk-monitor-pvc"
+   ```
 
-    On subsequent upgrades you can drop the "pvc.create" flag because the PVC already exists:
+   On subsequent upgrades you can drop the "pvc.create" flag because the PVC already exists:
 
-    ```text
-    helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
-    --namespace snyk-monitor \
-    --set pvc.enabled=true \
-    --set pvc.name="snyk-monitor-pvc"
-    ```
+   ```text
+   helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
+   --namespace snyk-monitor \
+   --set pvc.enabled=true \
+   --set pvc.name="snyk-monitor-pvc"
+   ```
 
-15. By default, we purposely ignore scanning certain namespaces which we believe are internal to Kubernetes \(any namespace starting with _**kube-\*,**_ full list can be found [here](https://github.com/snyk/kubernetes-monitor/blob/master/src/supervisor/watchers/internal-namespaces.ts)\). If you wish to change that, we allow configuring the excluded namespaces.  
-    By adding your own list of namespaces to exclude using _excludedNamespaces_ setting, we will override our default settings and use the list of namespaces you provide.
+9. By default, we purposely ignore scanning certain namespaces which we believe are internal to Kubernetes \(any namespace starting with _**kube-\*,**_ full list can be found [here](https://github.com/snyk/kubernetes-monitor/blob/master/src/supervisor/watchers/internal-namespaces.ts)\). If you wish to change that, we allow configuring the excluded namespaces.  
+   By adding your own list of namespaces to exclude using _excludedNamespaces_ setting, we will override our default settings and use the list of namespaces you provide.
 
-    ```text
-    helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
-    --namespace snyk-monitor \
-    --set excludedNamespaces={kube-node-lease,local-path-storage,some_namespace}
-    ```
+   ```text
+   helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
+   --namespace snyk-monitor \
+   --set excludedNamespaces={kube-node-lease,local-path-storage,some_namespace}
+   ```
 

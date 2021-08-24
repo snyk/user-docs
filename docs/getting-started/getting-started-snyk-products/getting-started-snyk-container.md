@@ -47,7 +47,7 @@ If you encounter any errors during import, see the [Importing projects](https://
 
 You can now see vulnerability results for imported projects.
 
-1. Select **Projects**, then click on the imported project entry under its registry record, to see vulnerability information for that project. ![image2.png](../../.gitbook/assets/image2%20%281%29.png) Here you can see a summary of the severity of the detected vulnerabilities.
+1. Select **Projects**, then click on the imported project entry under its registry record, to see vulnerability information for that project. ![image2.png](../../.gitbook/assets/mceclip2%20%281%29.png) Here you can see a summary of the severity of the detected vulnerabilities.
 2. Click on an entry to see details of vulnerabilities found:
 
    ![image5.png](../../.gitbook/assets/image5-1-.png)

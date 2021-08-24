@@ -4,7 +4,7 @@ Snyk offers security scanning to test your projects for vulnerabilities, both th
 
 The following describes how to use Snyk to scan your CocoaPods projects:
 
-### Features
+## Features
 
 {% hint style="info" %}
 Features might not be available, depending on your subscription plan.
@@ -14,20 +14,13 @@ Features might not be available, depending on your subscription plan.
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | ![i\_icon\_cocoapods.png](../../.gitbook/assets/uuid-6de05da9-de7e-11cc-4316-8459517aaf57-en.png) | Cocoapods | ✔︎ | ✔︎ | ✔︎ |  |  |
 
-### 
-
-### **How it works**
+## **How it works**
 
 Once we’ve built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in the dependency tree.
 
 {% hint style="info" %}
-
----
 **NOTE**  
 In order to scan your dependencies, you must ensure you have first installed the relevant package manager, and that your project contains the supported manifest files.
-
----
-
 {% endhint %}
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project:
@@ -35,7 +28,7 @@ The way by which Snyk analyzes and builds the tree varies depending on the langu
 * [analysis with our CLI tool](https://support.snyk.io/hc/en-us/articles/360004701658-Snyk-for-Swift-and-Objective-C-CocoaPods-#UUID-2f6bc912-9512-0d39-56f9-01b0926ef65d)
 * [import from our app](https://support.snyk.io/hc/en-us/articles/360004701658-Snyk-for-Swift-and-Objective-C-CocoaPods-#UUID-3276e078-ac51-90e8-3204-3cbc39b81034)
 
-### Snyk CLI tool for CocoaPods projects
+## Snyk CLI tool for CocoaPods projects
 
 We scan CocoaPods projects and examine your Podfile and Podfile.lock files. We then compare the specific versions of every direct and deep dependency in your project against our vulnerability database in order to build the project dependency tree accordingly.
 
@@ -70,7 +63,7 @@ When working with Swift and Objective-C projects from our CLI, you can prevent t
   </tbody>
 </table>
 
-### Git services for CocoaPods projects
+## Git services for CocoaPods projects
 
 We scan CocoaPods projects and examine your Podfile and Podfile.lock files. We then compare the specific versions of every direct and deep dependency in your project against our vulnerability database in order to build the project dependency tree accordingly.
 

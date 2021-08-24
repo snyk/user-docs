@@ -29,12 +29,7 @@ Once running the above command with the desired image to scan, Snyk results are 
 | `--help, -h` | Shows help options. Default is false. |
 
 {% hint style="info" %}
-
----
 **NOTE**  
 Trivy supports [**TEMP**](https://security-tracker.debian.org/tracker/data/fake-names) vulnerabilities, whereas Snyk only supports **CVE** vulnerabilities, so you might see differences in the output between the two tools.
-
----
-
 {% endhint %}
 

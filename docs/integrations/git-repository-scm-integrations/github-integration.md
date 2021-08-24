@@ -63,12 +63,9 @@ You can review and adjust the pull request tests settings by navigating to the G
 1. Operations that are triggered via the Snyk UI, for example, opening a Fix PR or retesting a project are performed on behalf of the acting user. Therefore, a user that wants to perform this operation in GitHub via the Snyk UI, must connect their GitHub account to Snyk and have the required permissions scope for the repositories they would like to perform these operations for, [see this for more details](github-integration.md).
 2. Operations which are not triggered via the UI, as daily / weekly tests and automatic PRs \(fix and upgrade\) are performed on behalf of a random Snyk organization members who have connected their GitHub accounts to Snyk and have the required permissions scope for the repository.
 
----
 **NOTE**
 
 a Snyk organization admin can configure a [specific GitHub account on whose behalf the PRs will be opened](opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md). In this case, Snyk will continue using a random Snyk organization member’s GitHub account to perform all the other operations. Therefore, using this feature does not eliminate the need for connecting users’ GitHub accounts to Snyk.
-
----
 
 ### Brokered GitHub Integrations
 
@@ -109,7 +106,7 @@ In order to use this feature, you'll need to do the following:
 
 Make sure that the GitHub account for which the token is provided, has _**write**_ level permissions or above, to the repos you'd like to monitor with Snyk.
 
-Read more about [repository permission levels in GitHub](github-integration.md#required-permissions-scope-for-the-github-integration).   
+Read more about [repository permission levels in GitHub](github-integration.md#required-permissions-scope-for-the-github-integration).
 
 ### **2. Pull request assignees** <a id="pr-assignment"></a>
 
@@ -135,14 +132,14 @@ Go to the project's settings, and the **Integration settings** tab within the pr
 
 ### Disconnecting the GitHub integration
 
-Snyk’s GitHub SCM integration leverages the oAuth app integration. In case you integrated to GitHub without using the Broker, you can simply disconnect it by following these steps:  
+Snyk’s GitHub SCM integration leverages the oAuth app integration. In case you integrated to GitHub without using the Broker, you can simply disconnect it by following these steps:
 
 1. Log into the GitHub account which the integration was originally created with.
 2. Navigate to the account settings and select the **Applications** tab in the right sidebar.
 3. Select the **Authorized OAuth Apps** tab You can also reach the the [Authorized OaAuth Apps tab directly](https://github.com/settings/applications).
 4. Find the **Snyk** app, click on the 3 dots on the right and select **Revoke**.
 
-Revoking this access effectively disconnects Snyk’s access to that GitHub account.  Existing imported snapshots will persist in Snyk and continue to rescan based on the existing snapshots until deleted, but Snyk will no longer be able to import new projects from the GitHub integration and will no longer re-scan on new code merges.
+Revoking this access effectively disconnects Snyk’s access to that GitHub account. Existing imported snapshots will persist in Snyk and continue to rescan based on the existing snapshots until deleted, but Snyk will no longer be able to import new projects from the GitHub integration and will no longer re-scan on new code merges.
 
 Additionally, it is required to confirm that Snyk is not enabled on any existing "Branch protection rules": GitHub - Repository -&gt; Settings -&gt; Branches -&gt; Branch protection rules -&gt; Status checks found in the last week for this repository.
 
@@ -166,7 +163,7 @@ To show a badge for a given Node.js, Ruby or Java GitHub repository, copy the re
 
 The badge will reflect the vulnerability state of the latest commit on the master branch. To show the vulnerability state of a specific branch, release or tag, simply add its name after the repo name in the URL.
 
-For example, to show a badge for the 4.x branch of the express repo, use the URL https://snyk.io/test/github/expressjs/express/4.x/badge.svg.
+For example, to show a badge for the 4.x branch of the express repo, use the URL [https://snyk.io/test/github/expressjs/express/4.x/badge.svg](https://snyk.io/test/github/expressjs/express/4.x/badge.svg).
 
 **Styles**
 
@@ -174,7 +171,7 @@ To change the style of the badge, you can add the following query parameters aft
 
 `?style=flat-square`![image1.png](../../.gitbook/assets/uuid-cb438aa4-226e-2109-f901-c59ca233732e-en.png)
 
-`style=plastic` 
+`style=plastic`
 
 **npm badges**
 
@@ -190,11 +187,11 @@ To show a badge for a given npm package, copy the relevant snippet below and rep
 
 The badge will reflect the vulnerability state of the latest version of this package. To show the vulnerability state of a specific package, you can specify the specific version in the URL.
 
-For example, to test version 1.2.3 of package name, use the URL https://snyk.io/test/npm/name/1.2.3/badge.svg. 
+For example, to test version 1.2.3 of package name, use the URL [https://snyk.io/test/npm/name/1.2.3/badge.svg](https://snyk.io/test/npm/name/1.2.3/badge.svg).
 
 **Private packages and repos**
 
-Badges currently only work for public npm packages and GitHub repositories, and will fail if pointed at a private repository.To continuously watch for vulnerabilities in your GitHub repositories, both public and private, consider integrating them with Snyk. 
+Badges currently only work for public npm packages and GitHub repositories, and will fail if pointed at a private repository.To continuously watch for vulnerabilities in your GitHub repositories, both public and private, consider integrating them with Snyk.
 
 **Custom manifest file locations**
 

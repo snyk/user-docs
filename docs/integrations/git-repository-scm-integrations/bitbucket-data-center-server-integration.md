@@ -24,7 +24,7 @@ Snyk produces advanced security reports, allowing you to explore the vulnerabili
 
 This is an example of a project level security report:
 
-![](../../.gitbook/assets/555.png)
+![](../../.gitbook/assets/mceclip0-22-%20%281%29.png)
 
 ### **Projects monitoring and automatic fix pull requests**
 

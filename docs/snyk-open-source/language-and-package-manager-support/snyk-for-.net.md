@@ -5,12 +5,8 @@ Snyk offers security scanning to test your projects for vulnerabilities, both th
 The following describes how to use Snyk to scan your .NET projects:
 
 {% hint style="info" %}
-
----
 **NOTE**  
 Features might not be available, depending on your subscription plan.
-
----
 {% endhint %}
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
@@ -43,12 +39,9 @@ Examples of supported project files that resolve into **project.assets.json** in
 * \*.vbproj
 * \*.fsproj
 
----
 **NOTE**
 
 Project files can be combined with [lock files](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files#locking-dependencies) for a more deterministic **project.assets.json** resolution
-
----
 
 ### Dependencies managed by packages.config
 
@@ -60,11 +53,7 @@ Examples of supported project files that resolve into **packages** include:
 
 * packages.config
 
----
-**NOTE**
-While you should also be able to run `snyk test` without previously installing dependencies this will result in less accurate vulnerability results
-
----
+**NOTE** While you should also be able to run `snyk test` without previously installing dependencies this will result in less accurate vulnerability results
 
 ### Dependencies managed by Paket
 
@@ -97,7 +86,7 @@ This section describes the unique CLI options available when working with .NET-b
   * Ensure you've included the relevant manifest files supported by Snyk before testing.
   * Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81) as well.
 
-#### **Parameters** 
+#### **Parameters**
 
 <table>
   <thead>
@@ -145,9 +134,9 @@ Once imported, Snyk analyzes your projects based on their supported manifest fil
 
 ![](../../.gitbook/assets/uuid-c995621c-85c8-c79f-accd-f014e2293921-en.png)
 
-#### **Nuget** 
+#### **Nuget**
 
-Once you select a project for import, we build the dependency tree based on these manifest files: 
+Once you select a project for import, we build the dependency tree based on these manifest files:
 
 * For .NET Core, the **\*.proj** files 
 * For .NET Framework, the **\*.proj** file, and **packages.config** 
@@ -158,7 +147,7 @@ Examples of supported project files include:
 * \*.vbproj
 * \*.fsproj
 
-A .NET project can target multiple target frameworks. Snyk creates a separate dependency tree for each target framework, displaying each as a separate Snyk project from the interface. In this way, it’s easier to understand why a dependency is being used and also to assess the fix strategy.  
+A .NET project can target multiple target frameworks. Snyk creates a separate dependency tree for each target framework, displaying each as a separate Snyk project from the interface. In this way, it’s easier to understand why a dependency is being used and also to assess the fix strategy.
 
 #### **Paket**
 
@@ -170,5 +159,5 @@ From the Snyk UI, you can configure whether Snyk should scan your entire project
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
 2. Go to settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; and click for .NET
-   * Scan build dependencies - ****If checked, Snyk scans all development dependencies.
+   * Scan build dependencies - _\*\*_If checked, Snyk scans all development dependencies.
 
