@@ -6,6 +6,8 @@ CircleCI enables users to easily create CI/CD workflows using a group of ready-t
 
 With the Snyk Orb, you can quickly add Snyk scanning to your CI/CD in order to test and monitor for open source vulnerabilities, based on your configurations. Results are then displayed from the CircleCI output view and can also be monitored from [Snyk.io](http://app.snyk.io/).
 
+### Getting started
+
 Getting started with CircleCI from scratch to a green build with Snyk is simple! You can read all about the Snyk Orb here:
 
 * [Our Circle CI README](https://circleci.com/orbs/registry/orb/snyk/snyk) - the page includes all the info that you need in order to set your CI/CD with Snyk including a list of parameters and samples.
@@ -14,6 +16,23 @@ Getting started with CircleCI from scratch to a green build with Snyk is simple!
 ## Configure your CircleCI integration
 
 Once the user adds a project to CircleCI and adds the Snyk Orb to the configuration file, every time that a build will run, the Snyk Orb will be used as well.
+
+#### Scan
+
+1. Scans app dependencies or container images for vulnerabilities or licensing issues, and lists them.
+2. If Snyk finds vulnerabilities, it does one of the following \(based on configuration\):
+   * Fails the build
+   * Lets the build complete
+
+#### **Monitor**
+
+Optionally, if the build completes successfully and MONITOR is set to True in the Snyk step, then Snyk saves a snapshot of the project dependencies from the Snyk app, where you can view the dependency tree displaying all of the issues, and you can receive alerts for new issues found in the existing app version. 
+
+#### **Protect \(optional\)**
+
+\(For Node.js projects only\) Optionally, set PROTECT to True and if a .snyk policy file exists, Snyk applies patches specified in the policy file. 
+
+#### **Prerequisites**
 
 1. Create a Snyk account and retrieve the Snyk API token from your Account settings.
 2. Import the relevant repo into CircleCI.
