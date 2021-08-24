@@ -19,7 +19,7 @@ Please see read our blog post about the ability to interpolate variables: [Snyk 
 
 **Configure Snyk**
 
-1. **Note**
+1. **NOTE**
 
    Integrations are managed per organization.
 

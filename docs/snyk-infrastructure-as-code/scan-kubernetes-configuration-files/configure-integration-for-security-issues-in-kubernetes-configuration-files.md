@@ -20,9 +20,12 @@ Snyk currently scans your Kubernetes configuration files in JSON and YAML format
 
    ![AddProjectMenu.gif](../../.gitbook/assets/uuid-da316a4a-c823-cf03-f37f-5305446dc970-en.gif)
 
-   **Note**
+---
+**NOTE**
 
-   Integrations are managed per organization.
+Integrations are managed per organization.
+
+---
 
 3. Enable Snyk to detect Kubernetes configuration files by enabling the flag in the settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Infrastructure as code** page:
 

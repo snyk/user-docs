@@ -7,8 +7,12 @@ The following describes how to use Snyk to scan your Go projects:
 #### Features <a id="h_01ESM3GFNMN0F7ART59AEK97TM"></a>
 
 {% hint style="info" %}
-**Note**  
+
+---
+**NOTE**  
 Features might not be available, depending on your subscription plan.
+
+---
 {% endhint %}
 
 | Package managers / Features  | CLI support  | Git support  | License scanning  | Remediation  | Runtime monitoring  |
@@ -22,8 +26,13 @@ Features might not be available, depending on your subscription plan.
 Once we've built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the modules or packages anywhere in the dependency tree.
 
 {% hint style="info" %}
-**Note**  
+
+---
+**NOTE**  
 In order to scan your dependencies in the CLI, you must ensure you have first installed the relevant package manager, and that your project contains the supported manifest files.
+
+---
+
 {% endhint %}
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project.

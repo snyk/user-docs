@@ -12,7 +12,9 @@ When working with Snyk from within any third-party tool, Snyk first requires aut
 
 4. From the third party interface, configure your integration, pasting your Snyk token when prompted.
 
-   **Note**
+---
+**NOTE**
 
-   Additional instructions can be found in our different [Integration](https://support.snyk.io/hc/articles/360004002498#UUID-98f9378c-bc0f-d01b-8d81-dbd38d69a915) articles.
+Additional instructions can be found in our different [Integration](https://support.snyk.io/hc/articles/360004002498#UUID-98f9378c-bc0f-d01b-8d81-dbd38d69a915) articles.
 
+---

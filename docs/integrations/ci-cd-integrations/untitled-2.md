@@ -4,7 +4,12 @@ The Snyk plugin for Jenkins is [maintained and documented](https://plugins.jenki
 
 ### Note
 
-Note: steps supported solely by Jenkins are in high-level only. See [Jenkins documentation](https://jenkins.io/doc/) for additional assistance.
+---
+**NOTE**
+
+steps supported solely by Jenkins are in high-level only. See [Jenkins documentation](https://jenkins.io/doc/) for additional assistance.
+
+---
 
 #### How to install the Snyk plugin
 

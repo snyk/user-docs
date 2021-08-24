@@ -90,7 +90,14 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
 ```
 
 {% hint style="info" %}
-**Note**: Ensure the file is named **workload-events.rego**.
+
+---
+**NOTE**
+
+Ensure the file is named **workload-events.rego**.
+
+---
+
 {% endhint %}
 
 Now you can deploy the Snyk controller, or restart it if it is already running in order to pick up the policy.

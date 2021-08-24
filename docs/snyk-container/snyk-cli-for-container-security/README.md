@@ -85,8 +85,13 @@ monitor will:
 ![](../../.gitbook/assets/monitor.png)
 
 {% hint style="info" %}
-**Note**  
+
+---
+**NOTE**  
+
 It’s common to use both test and monitor with Snyk. test is great for quick checks, monitor can be used for ongoing assurance and easier sharing of results.
+
+---
 {% endhint %}
 
 ### More information

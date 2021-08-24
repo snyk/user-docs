@@ -104,7 +104,14 @@ Below are flags that are influencing CLI behavior for specific projects, languag
 
 #### Maven options <a id="Maven-options"></a>
 
-`--scan-all-unmanaged`Auto-detects maven jar, war, and aar files in a given directory.**Note:** custom-built jar files, even with open source dependencies, are out of scope. 
+`--scan-all-unmanaged`Auto-detects maven jar, war, and aar files in a given directory.
+
+---
+**NOTE**
+
+custom-built jar files, even with open source dependencies, are out of scope. 
+
+---
 
 `--scan-unmanaged`Auto-detects maven jar, war, and aar files in a given directory, and individual testing can be done with `--file`=FILE\_NAME
 

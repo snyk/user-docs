@@ -70,11 +70,21 @@ Once you've successfully connected Snyk to your Azure account, you'll be able to
 
 In either case, you'll see a list of any available Function apps on the Azure account you connected. Select the ones you want to monitor and click the "**Add to Snyk**" button.
 
-_Note: We currently support importing only v2 functions. v1 functions will be ignored._
+---
+**NOTE**
+
+We currently support importing only v2 functions. v1 functions will be ignored.
+
+---
 
 As soon as you've added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Azure functions in your [project dashboard](https://app.snyk.io/projects). You'll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to remediate.
 
 Snyk will now continuously monitor each of those functions for known vulnerabilities. You can add more functions at any time.
 
-_Note: for Node.js and .Net, dev dependencies will be ignored._
+---
+**NOTE**
+
+for Node.js and .Net, dev dependencies will be ignored.
+
+---
 

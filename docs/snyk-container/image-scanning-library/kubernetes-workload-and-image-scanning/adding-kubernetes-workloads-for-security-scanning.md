@@ -77,9 +77,12 @@ Annotate any of the following workload types:
 
    ![ChooseNamespace.png](../../../.gitbook/assets/uuid-3a8568e0-b5a4-34af-d612-83466b206882-en.png)
 
-   **Note**
+---
+**NOTE**
 
-   We purposely ignore scanning certain namespaces which we believe are internal to Kubernetes \(any namespace starting with _**kube-\***_\), therefore you won't see those namespaces in the list, as well as the workloads they contain.
+We purposely ignore scanning certain namespaces which we believe are internal to Kubernetes \(any namespace starting with _**kube-\***_\), therefore you won't see those namespaces in the list, as well as the workloads they contain.
+
+---
 
    The full list of ignored namespaces can be found [here](https://github.com/snyk/kubernetes-monitor/blob/master/src/supervisor/watchers/internal-namespaces.ts). This can be configured by adding the following to helm when setting up the snyk-monitor:
 

@@ -22,10 +22,12 @@ Prerequisites
   
 
 
-   **Note**
+---
+**NOTE**
 
-   [Quay.io](http://quay.io/) is [deprecating](https://access.redhat.com/articles/5925591) the usage of Quay login by end of June, 2021. From that point, the credentials can no longer be Quay username and password, but rather Quay robot account credentials \(username and token\), that has at least 'read' permissions to the desired repo.  
+[Quay.io](http://quay.io/) is [deprecating](https://access.redhat.com/articles/5925591) the usage of Quay login by end of June, 2021. From that point, the credentials can no longer be Quay username and password, but rather Quay robot account credentials \(username and token\), that has at least 'read' permissions to the desired repo.  
   
+---
   
    Snyk tests the connection values and the page reloads, now displaying Quay integration information, and the **Add your Quay images to Snyk** button becomes available. In case the connection to Quay failed, notification appears under the **Connected to Quay** section.  
    Now you can use Snyk to scan your images from Quay.

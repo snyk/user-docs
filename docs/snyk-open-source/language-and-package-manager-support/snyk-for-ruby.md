@@ -12,8 +12,12 @@ The following manifest files are supported:
 * `Gemfile.lock`
 
 {% hint style="info" %}
-**Note**  
+
+---
+**NOTE**  
 Snyk requires both files to be present in order to correctly test, monitor & fix Ruby projects
+
+---
 {% endhint %}
 
 #### Fixing vulnerabilities in your Ruby projects

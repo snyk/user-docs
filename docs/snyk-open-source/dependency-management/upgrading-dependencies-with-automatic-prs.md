@@ -38,8 +38,12 @@ Enable Snyk to regularly check your dependency health, recommend dependency upgr
 Once configured, Snyk automatically creates PRs for all necessary dependencies as upgrades become available for the specific project.
 
 {% hint style="info" %}
-**Note**  
+
+---
+**NOTE**  
 Settings on the project level override the settings on the organization level. Currently, we support all languages supported by the Git repositories that we integrate with: GitHub, GitLab, Bitbucket and Azure repos.
+
+---
 {% endhint %}
 
 **To configure automatic upgrade PRs for a specific project:**
@@ -54,7 +58,12 @@ Settings on the project level override the settings on the organization level. C
 2. Navigate to the relevant project and click the Settings cog ![image2.png](https://support.snyk.io/hc/article_attachments/360006931278/uuid-989935f3-80d9-80c8-c984-1472b49bce15-en.png).
 3. From the Settings area, click on the integration settings from the left panel menu.
 
-   **Note:** These settings only apply to integration for that one project
+---
+**NOTE**
+
+These settings only apply to integration for that one project
+
+---
 
 4. From settings that load, scroll to the Automatic dependency upgrade pull requests and click Disabled.
 5. From the options that appear:
