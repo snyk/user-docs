@@ -46,23 +46,24 @@ This article refers to the Artifactory _Plugin_, an independent piece of softwar
 3. Go to [our repo in GitHub](https://github.com/snyk/artifactory-snyk-security-plugin) and navigate to the **Releases**.
 4. From the most current release, expand the **Assets** section to download the artifactory-snyk-security-plugin-&lt;version&gt;.zip archive.
 5. Extract the archive. It should have the following structure:
+   1. plugins \(directory\)
 
-plugins \(directory\)
+          snykSecurityPlugin.groovy — plugin
 
-* snykSecurityPlugin.groovy — plugin
-* snykSecurityPlugin.properties — plugin configuration
-* lib \(directory\)
-  * artifactory-snyk-security-core.jar - plugin library
-  * snykSecurityPlugin.version - plugin version 
-* Open "snykSecurityPlugin.properties" in a text editor. 1. Set the API Token and Organization ID from the above steps as "snyk.api.token" and "snyk.api.organization" respectively. 2. Configure the rest of the properties as needed or leave them as defaults. 3. For a full list of properties, [view the file on GitHub](https://github.com/snyk/artifactory-snyk-security-plugin/blob/master/core/src/main/groovy/io/snyk/plugins/artifactory/snykSecurityPlugin.properties).
-* Place all the files under "${ARTIFACTORY\_HOME}/etc/plugins/"
-* Restart your Artifactory server.  
+          snykSecurityPlugin.properties — plugin configuration
 
-**NOTE**
+          lib \(directory\)
 
-Refresh now or Reload is not sufficient. Artifactory must be restarted.
+              artifactory-snyk-security-core.jar - plugin library
 
-1. Log in to your Artifactory instance and navigate to the **System Logs** to double-check Snyk has been installed successfully.
+              snykSecurityPlugin.version - plugin version 
+6. Open "snykSecurityPlugin.properties" in a text editor. 
+   1. Set the API Token and Organization ID from the above steps as "snyk.api.token" and "snyk.api.organization" respectively.
+   2. Configure the rest of the properties as needed or leave them as defaults. 
+   3. For a full list of properties, [view the file on GitHub](https://github.com/snyk/artifactory-snyk-security-plugin/blob/master/core/src/main/groovy/io/snyk/plugins/artifactory/snykSecurityPlugin.properties).
+7. Place all the files under "${ARTIFACTORY\_HOME}/etc/plugins/"
+8. Restart your Artifactory server.   **NOTE: Refresh now** or **Reload** is not sufficient. Artifactory must be restarted.
+9. Log in to your Artifactory instance and navigate to the **System Logs** to double-check Snyk has been installed successfully.
 
 ![](../../.gitbook/assets/artifactory-system-logs.png)
 
@@ -70,7 +71,7 @@ Refresh now or Reload is not sufficient. Artifactory must be restarted.
 
 Whenever a download is requested from Artifactory whether from a package manager or a URL, Snyk will automatically scan the artifact for vulnerabilities and license issues.
 
-To view details about download status, open the System Logs:
+To view details about download status, open the **System Logs**:
 
 ![](../../.gitbook/assets/image.png)
 

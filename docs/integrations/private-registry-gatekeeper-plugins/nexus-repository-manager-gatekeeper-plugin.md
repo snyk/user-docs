@@ -1,9 +1,11 @@
 # Nexus Repository Manager Gatekeeper plugin
 
-**Nexus Gatekeeper plugin: overview**
+### **Nexus Gatekeeper plugin: overview**
 
+{% hint style="info" %}
 **Feature availability**  
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 Install Snyk plugin directly on the Nexus instance to track open source vulnerabilities and license details in your artifacts based on your configurations.
 
@@ -43,16 +45,19 @@ To set up and configure the plugin, start scanning and managing your organizatio
 1. Download the bundle from [our GitHub repository](https://github.com/snyk/nexus-snyk-security-plugin/releases).
 2. Copy the `nexus-snyk-security-plugin.kar` file from the bundle onto your Nexus server at`/deploy`.
 3. From the Nexus interface, enable the Snyk Security Configuration from the Capabilities area. For more information about this, see the [Sonatype documentation](https://help.sonatype.com/repomanager2/configuration/accessing-and-configuring-capabilities).
-4. Go to your Snyk account to copy and save your personal API token or your service account token, and an **Organization ID**. Both a token and an organization ID are mandatory and must be configured in order for Snyk to authenticate your account. Because this plugin does not import any data to Snyk, you can use any of your organization IDs.
-5. From your Nexus instance, navigate to the Capabilities section and select to edit the **Snyk Security Configuration** from the list.
-6. Ensure **Enable this capability** is checked, and enter details for the remaining fields as follows:
+
+### **Configure the capability**
+
+1. Go to your Snyk account to copy and save your personal API token or your service account token, and an **Organization ID**. Both a token and an organization ID are mandatory and must be configured in order for Snyk to authenticate your account. Because this plugin does not import any data to Snyk, you can use any of your organization IDs.
+2. From your Nexus instance, navigate to the Capabilities section and select to edit the **Snyk Security Configuration** from the list.
+3. Ensure **Enable this capability** is checked, and enter details for the remaining fields as follows:
    * **Snyk API URL** - enter the API endpoint if you’re setting up on-prem or Broker for Snyk
    * **Snyk API token** - paste the token value you saved from step 1
    * **Snyk Organization ID** - paste the token value you saved from step 1
    * **Vulnerability Threshold**—default is \*low\*. Valid values include low, medium, high. Manually update the configuration based on your needs.
-   * **License Threshold**—default is \*low\*. Valid values include low, medium, high. Manually update the configuration based on your needs. ![image1.png](../../.gitbook/assets/uuid-9745b82a-ed7e-bce0-75dd-0070514f274d-en.png)
-7. Shut down the Nexus service instance and then restart it.
-8. Log in to your Nexus instance and double check that the Snyk bundle has been installed successfully.
+   * **License Threshold**—default is \*low\*. Valid values include low, medium, high. Manually update the configuration based on your needs.  ![image1.png](../../.gitbook/assets/uuid-9745b82a-ed7e-bce0-75dd-0070514f274d-en.png)
+4. Shut down the Nexus service instance and then restart it.
+5. Log in to your Nexus instance and double check that the Snyk bundle has been installed successfully.
 
 ### Track vulnerabilities in your team's artifacts
 
@@ -64,6 +69,8 @@ To set up and configure the plugin, start scanning and managing your organizatio
 
    * Results are stored in the Snyk Security part of the Attributes section from the Nexus interface for the artifact:
 
+![](../../.gitbook/assets/image%20%2833%29.png)
+
 By reviewing the results, you can evaluate the issues found in your artifact and determine a course of action.
 
 Work with Snyk properties from Nexus as follows:
@@ -74,11 +81,15 @@ Work with Snyk properties from Nexus as follows:
 | issues\_url | This is the URL to our database and explanation of the vulnerability, including specific details about vulnerable versions, available upgrades and Snyk patches as well. |
 | issues\_vulnerabilities | Regardless of the thresholds configured, this row displays vulnerability summary scan results. |
 
+#### Troubleshooting
+
 If your connection to Snyk is unsuccessful, try checking the following points or contact us at snyk@support.io \(`<`[`snyk@support.io`](mailto:snyk@support.io)`>`\):
 
 * Check Nexus logs for any related errors.
 * Ensure you’ve entered the API URL correctly for the configuration of the capability.
 * For on-prem and Broker configurations, ensure the Snyk service is running.
+
+### **Use Snyk in your build**
 
 Snyk continuously runs in the background on the Nexus instance, and whenever any team member requests a download, Snyk automatically scans the artifact to evaluate vulnerabilities and license issues and blocks the request based on your administrator’s configurations.
 
