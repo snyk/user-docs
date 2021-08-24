@@ -10,9 +10,11 @@ Once installed and configured, every time you run the plugin, Snyk scans your pr
 
 The Snyk plugin enables you to track and identify issues that risk your application’s security and avoid ever adding those issues to your shared repo.
 
+{% hint style="info" %}
 ## Note
 
 Both Snyk Broker and on-prem solutions support the Eclipse plugin.
+{% endhint %}
 
 ### Supported languages and repos
 
@@ -32,13 +34,15 @@ Snyk supports all languages that are supported by both Eclipse and Snyk. Additio
 
 ### Use the Snyk plugin to secure your Eclipse projects
 
-From the Snyk results click ![image10.png](https://support.snyk.io/hc/article_attachments/360007064317/uuid-aa090aa8-d4fe-eb5d-2505-54a0b1555be9-en.png) whenever you are ready to scan your projects. It shouldn’t take too long for the results to appear—but no worries! You can continue to work as usual in the meantime anyway.
+From the Snyk results click ![image10.png](../../.gitbook/assets/uuid-aa090aa8-d4fe-eb5d-2505-54a0b1555be9-en.png) whenever you are ready to scan your projects. It shouldn’t take too long for the results to appear—but no worries! You can continue to work as usual in the meantime anyway.
 
 If for any reason you need to stop the scan before the build ends, click ![image11.png](../../.gitbook/assets/uuid-29be01e6-6913-25f8-15ed-a8cf47230fa0-en.png).
 
-If you only want to scan a single project in your workspace, navigate to the Package Explorer panel, right-click the root of the project you want to test, and then choose Snyk test.
+If you only want to scan a single project in your workspace, navigate to the Package Explorer panel, right-click the root of the project you want to test, and then choose **Snyk test**.
 
-When the scan ends, results and any relevant error messages as well, are displayed from the Snyk results, grouped by project similar to the following:
+When the scan ends, results and any relevant error messages as well, are displayed from the **Snyk results**, grouped by project similar to the following:
+
+![](../../.gitbook/assets/uuid-e868f739-eb55-9bd6-be33-acbb230ec1fa-en.png)
 
 Work with Snyk results from Eclipse as follows:
 
