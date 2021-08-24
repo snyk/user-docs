@@ -12,9 +12,13 @@ By default, Snyk scans every pull request submitted on your monitored repositori
 
 Administrators can manage settings for Snyk PR tests from our app on both the organization and the project levels, configuring whether the feature is on \(enabled by default\) and under what conditions Snyk should fail your PR checks.
 
+### **Prerequisites**
+
 * You must already have a Snyk account, you must be the owner or administrator of the specific organization and you must already have set up the integration for the Git repository with which you'd like to work.
 
+{% hint style="info" %}
 Settings on the project level override the settings on the organization level. Currently, we support all languages supported by the Git repositories that we integrate with: GitHub, GitLab, Bitbucket and Azure repos.
+{% endhint %}
 
 ## Configure the pull request test settings for your organization
 
@@ -31,7 +35,9 @@ Settings on the project level override the settings on the organization level. C
 7. Click **Update settings** to update settings and apply them to all future projects and to all existing projects currently using your default settings. Click **Update settings & apply to existing projects** to update settings and apply them to all existing and new projects, including those projects that had been customized.
 8. Settings are saved. Every time any of your collaborators submit pull requests, checks are run based on these settings, combined with the settings you've configured on the side of your Git repository.
 
-We recommend that you set Snyk status checks to be mandatory for merging pull requests from the relevant repository. See your Git repository documentation for addfitional help with this.
+{% hint style="info" %}
+We recommend that you set Snyk status checks to be mandatory for merging pull requests from the relevant repository. See your Git repository documentation for additional help with this.
+{% endhint %}
 
 ## Configure pull request test settings for a project
 
