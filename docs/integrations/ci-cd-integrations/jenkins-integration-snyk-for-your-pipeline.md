@@ -26,23 +26,27 @@ For any pipeline project, you can add a Snyk step to your build at any point in 
 2. Copy the generated pipe syntax.
 3. Navigate to the Configure area of your pipeline and go to the Pipeline part. Paste the Snyk step syntax in your pipeline as part of an existing stage or as a new separate stage.
 
+{% hint style="info" %}
 **NOTE:**
 
 You can also choose to add the stage to your `Jenkinsfile` directly from the Git.
+{% endhint %}
 
 ![image9.png](../../.gitbook/assets/uuid-ab230996-8e5a-af77-6d44-36f67e2d827d-en.png)
 
-1. Now, every time you run your project build:
-
+{% hint style="info" %}
 **NOTE**
 
 If you updated the `Jenkinsfile` from the Git and external to Jenkins, then when Jenkins fetches that file to run the build, it receives the edited pipeline, now including the newly added Snyk step.
+{% endhint %}
+
+Now, every time you run your project build:
 
 * Snyk verifies the plugin installation \(if necessary, and as based on your policy configuration\).
 * Snyk runs the snyk test command, analyzing the manifest file of your project to find its direct and transitive dependencies and testing your pipeline against the Snyk vulnerability database for known vulnerabilities.
-* From the Jenkins Console Output, the test results summary is displayed, indicating the number of known issues and the number of associated dependency paths identified.
-* Based on the Monitor project on build configuration for this project:
-  * If you did not choose Monitor project on build, then Snyk displays all vulnerability results and details from the Snyk Security Report area of the **Build** menu.
+* From the **Jenkins Console Output**, the test results summary is displayed, indicating the number of known issues and the number of associated dependency paths identified.
+* Based on the **Monitor project on build configuration** for this project:
+  * If you did not choose **Monitor project on build**, then Snyk displays all vulnerability results and details from the **Snyk Security Report** area of the **Build** menu.
   * If a severity threshold was defined for a severity that is assigned to any vulnerability in your project, Jenkins breaks the build.
   * Otherwise, Jenkins continues to run the build to completion \(success or failure\) and Snyk activity ends.
   * If you checkmarked the Monitor project on build option, then Snyk displays all vulnerability results and details from the Snyk Security Report area of the Build menu and also pushes a snapshot for continuous monitoring to the Snyk UI.
