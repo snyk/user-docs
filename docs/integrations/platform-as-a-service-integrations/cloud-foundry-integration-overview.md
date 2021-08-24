@@ -1,6 +1,6 @@
 # Cloud Foundry integration overview
 
-## Cloud Foundry integration overview
+### Cloud Foundry integration overview
 
 Snyk’s Cloud Foundry integration lets you monitor the deployed code of your Java, Node.js, PHP and Ruby Cloud Foundry applications for any known vulnerabilities found in the application’s dependencies, testing at a frequency you control.
 
@@ -50,6 +50,15 @@ If you are unable to connect, please re-enter your account credentials to verify
 ![](../../.gitbook/assets/uuid-d78f594d-75a9-3cf3-2685-c96c63596ea0-en.png)
 
 ### Disable the Cloud Foundry integration
+
+If you decide to disable this integration for any reason, you can accomplish this from the Integrations page in your Settings.
+
+You need to find the specific integration you wish to deactivate in your list of integrations and click Edit settings. You are taken to a page that shows the current status of your integration, a place to update your credentials, specific to each integration \(credentials, API key, Service Principal, or connection details\), and a red box at the bottom to disconnect this integration, like in the example seen below:  
+![image8.png](../../.gitbook/assets/uuid-b3a98f2c-4cc8-7753-8efa-396e9ec1e717-en%20%281%29.png)
+
+If you choose to disconnect, your credentials will be removed from Snyk and any integration-specific projects we had been monitoring will be deactivated on Snyk.
+
+If you choose to re-enable this integration at any time, you need to re-enter your credentials and activate your projects.
 
 ### Add a Snyk-specific user to Cloud Foundry
 
