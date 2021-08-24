@@ -2,15 +2,19 @@
 
 Use this documentation to get started with the Visual Studio Code extension for [Snyk Code](https://docs.snyk.io/snyk-code).
 
+{% hint style="info" %}
 A Visual Studio extension is also available for Snyk Open Source. See [Visual Studio extension](https://docs.snyk.io/integrations/untitled/visual-studio-extension).
+{% endhint %}
 
-## Supported languages
+### Supported languages
 
 Currently supported languages for Snyk Code are JavaScript, TypeScript, Java and Python. We also provide coverage for frameworks like Vue and React. We analyze the following file types:
 
 * .es, .es6, .htm, .html, .java, .js, .jsx, .py, .ts, .tsx, .vue
 
 See [Snyk Code language and framework support](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support) for more information.
+
+### Install the plugin
 
 You can find the Snyk Extension in the Visual Studio Code Marketplace. To install, either:
 
@@ -23,7 +27,7 @@ Snyk’s extension provides all the suggestions in a concise and clean view cont
 
 ![](../../.gitbook/assets/image3-2-%20%282%29.png)
 
-## Authentication
+### Authentication
 
 To authenticate follow the steps:
 
@@ -33,11 +37,13 @@ To authenticate follow the steps:
 4. After successful authentication, you will see a confirmation message: ![authentiacated.png](../../.gitbook/assets/authentiacated.png)
 5. Close the browser window and return to the IDE. The IDE is now reading and saving the authentication on your local machine.
 
+### Run analysis
+
 In the IDE you will notice that the extension is already picking up the files and uploading them for analysis.
 
 Snyk Code analysis runs quickly, so results may even already be available:
 
-![](../../.gitbook/assets/analysis-done.png)
+![](../../.gitbook/assets/run-analysis_results.png)
 
 Snyk's analysis runs automatically when you open a folder or project, or when you save your work.
 
@@ -51,21 +57,32 @@ To manually trigger a scan, either Save or manually rescan using the rescan icon
 
 ![](../../.gitbook/assets/rescan.png)
 
+If you only need the Code Quality or Code Security portion of the Snyk Code findings, you can easily hide the view with the results you don't want to see:
+
+![](../../.gitbook/assets/configure-snyk-code-quality-code-security.png)
+
+### View analysis results
+
 Snyk Code analysis shows a list of security vulnerabilities and code issues found in the application code. For more details and examples of how others fixed the issue, select a security vulnerability or a code security issue. Once selected you will see the Snyk suggestion information in a panel on the right side:
 
-![](../../.gitbook/assets/image3-2-.png)
+![](../../.gitbook/assets/install-the-plugin_suggestion-example-1-.png)
 
 ## Snyk panel
 
 The Snyk analysis panel \(on the left of the code screen in the above screenshot\) shows how much time the analysis took plus a list of files with the suggestions found for them.
 
-The icons here mean:
+The icons here mean: 
 
-## Editor window
+| ![image7.png](../../.gitbook/assets/image7%20%281%29.png) | Critical suggestion - should be addressed. |
+| :--- | :--- |
+| ![image2.png](../../.gitbook/assets/image2-6-.png) | Warning suggestion -  likely a coding error. |
+| ![image4.png](../../.gitbook/assets/image4-4-.png) | Information suggestion - points to style glitches or logical issues. |
+
+### Editor window
 
 The editor window \(in the middle of the results screen\) shows the code that is inspected. This ensures that when you are inspecting a Snyk issue, you always have the code context close to the issue.
 
-## Snyk suggestions window
+### Snyk suggestions window
 
 The Snyk Suggestion panel \(on the right of the results screen\) shows the argumentation of the Snyk engine using for example variable names of your code and the line numbers in red. You can also see:
 
@@ -76,12 +93,14 @@ The Snyk Suggestion panel \(on the right of the results screen\) shows the argum
 
 We also include a feedback mechanism to report false positives so you others do not see the same issue.
 
+### Extension configuration
+
 After the plugin is installed, you can set the following configurations for the extension :
 
 * **Advanced mode**: toggles a panel to allow the user to manually control when the analysis should be run.
 * **Token**: the token the extension uses to connect to Snyk. You can manually replace it, if you need to switch to another account.
 
-## Create a .dcignore file
+### Create a .dcignore file
 
 To ignore certain files and directories \(for example, **node\_modules**\), create a **.dcignore** file. You can create it in any directory on any level starting from the directory where your project resides. The file syntax is identical to .gitignore.
 
