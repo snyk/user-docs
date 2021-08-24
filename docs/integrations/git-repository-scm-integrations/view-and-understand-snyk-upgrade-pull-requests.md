@@ -4,9 +4,10 @@ In addition to remediation advice, Snyk can automatically create pull requests \
 
 For use with the Broker, your administrator should first upgrade to v4.55.0 or later.
 
-## Note
-
+{% hint style="info" %}
+**NOTE**  
 Administrators and account owners manage settings for Snyk upgrade pull requests from our app on both the organization and the project levels, configuring whether the feature is on \(enabled by default\) and under what conditions Snyk should submit upgrade pull requests, if at all.
+{% endhint %}
 
 ### Viewing pull request details before merging
 
