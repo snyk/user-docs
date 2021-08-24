@@ -8,7 +8,7 @@ By default, issues are grouped together per issue, similar to the following exam
 
 Get an overview of the general health of your organization on the whole by inspecting the number of projects affected per issue and the number and kinds of issues affecting your projects.
 
-Alternatively, you can ungroup data, viewing a separate line for each project in which the issue occurs—meaning the same issue can appear multiple times if it affects multiple projects. Click the View issues ungrouped or View issues grouped link to toggle between views.
+Alternatively, you can ungroup data, viewing a separate line for each project in which the issue occurs—meaning the same issue can appear multiple times if it affects multiple projects. Click the **View issues ungrouped** or **View issues grouped** link to toggle between views.
 
 This view is beneficial in providing additional details about:
 
@@ -17,9 +17,12 @@ This view is beneficial in providing additional details about:
 
 This view can be seen in the Elements column below, where all the elements of both views are described.
 
-## Note
-
+{% hint style="info" %}
+**Note**  
 Data in each of the four tabs is displayed based on the filters you've applied from the top of the Reports area, as well as the group or organization that you're viewing from.
+{% endhint %}
+
+## Issues tab elements
 
 Just under the **Export** button, click the **View issues ungrouped** or **View issues grouped** link to toggle between views.
 
@@ -74,9 +77,9 @@ The following table describes the different parts of the Issues area as displaye
     <tr>
       <td style="text-align:left">Issue</td>
       <td style="text-align:left">The full officially recognized name of the issue and a list of all affected
-        packages that are contained by your projects. The issue is linked to the
-        Package page.</td>
-      <td style="text-align:left"></td>
+        packages that are contained by your projects. The issue is linked to the <b>Package</b> page.</td>
+      <td
+      style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">Identifiers</td>
@@ -203,6 +206,8 @@ Following are the project level details that appear only when viewing issues ung
   </tbody>
 </table>
 
+## Issues tab actions
+
 These controls appear above the table:
 
 ![Reports\_Issues\_filters](https://support.snyk.io/hc/article_attachments/360007031338/uuid-ef7a494d-8b10-9b28-dc63-3f9224519070-en.png)
@@ -216,11 +221,12 @@ These controls appear above the table:
 **Export**—click the button to choose which format you’d like to export issue data in:
 
 * CSV
-* Print/generate a preview from the Print dialog box in your local environment. Once you click the initial Print button, in the backend we load all the issues into one page. This process can take a few seconds. Make sure you don’t close your tab/browser or refresh the page while we prepare the document. Once ready, you get a new dialog box informing you that the document is ready to print. Within the print dialog, you select to save as PDF or print directly.
+* Print/generate a preview from the Print dialog box in your local environment. Once you click the initial **Print** button, in the backend we load all the issues into one page. This process can take a few seconds. Make sure you don’t close your tab/browser or refresh the page while we prepare the document. Once ready, you get a new dialog box informing you that the document is ready to print. Within the print dialog, you select to save as PDF or print directly.
 
-## Note
-
+{% hint style="info" %}
+**Note**  
 Only 2000 issues can be generated at once. The number of issues you’re currently viewing is displayed on the Issues tab, as described in the Elements table.
+{% endhint %}
 
 **View issues ungrouped/View issues grouped**—toggle between views. When viewing “grouped”, each issue appears once only, grouping together all affected projects; when viewing “ungrouped”, each issue appears once per project that is affected by it.
 

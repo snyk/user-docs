@@ -1,6 +1,6 @@
 # Dependencies tab
 
-The Dependencies area of Reports acts as a bill of materials for all the direct dependencies in all of the projects in the selected organization, similar to the following:
+The **Dependencies** area of **Reports** acts as a bill of materials for all the direct dependencies in all of the projects in the selected organization, similar to the following:
 
 ![](../../.gitbook/assets/dependencies-tab.png)
 
@@ -25,11 +25,12 @@ Details displayed include:
 
 These and more details are fully described in [Elements](dependencies-tab.md).
 
-## Note
-
+{% hint style="info" %}
+**Note**  
 Data in each of the four tabs is displayed based on the filters you've applied from the top of the Reports area, as well as the group or organization that you're viewing from.
+{% endhint %}
 
-### Dependencies tab elements
+## Dependencies tab elements
 
 Following is a close-up of the first four columns of the Reports area:
 
@@ -64,8 +65,11 @@ The following table describes the different parts of the Dependencies area as di
       <td style="text-align:left"></td>
       <td style="text-align:left">
         <p>If a package is deprecated, a warning icon appears next to the package
-          name.</p>
-        <p>This field currently only provides data for JavaScript projects.</p>
+          name.
+          <br />
+        </p>
+        <p><b>Note:</b>
+          <br />This field currently only provides data for JavaScript projects.</p>
       </td>
     </tr>
     <tr>
@@ -85,8 +89,9 @@ The following table describes the different parts of the Dependencies area as di
           repository.</p>
         <p><em>For example: 7.3.0</em>
         </p>
-        <p>This field currently only provides data for JavaScript, Maven and PIP
-          projects.</p>
+        <p>
+          <br /><b>Note:<br /></b>This field currently only provides data for JavaScript,
+          Maven and PIP projects.</p>
       </td>
     </tr>
     <tr>
@@ -94,10 +99,10 @@ The following table describes the different parts of the Dependencies area as di
       <td style="text-align:left"></td>
       <td style="text-align:left">
         <p>The last time a new version of the package was published by a maintainer.</p>
-        <p><em>For example: 7 months ago</em>
+        <p><em>For example: 7 months ago<br /></em>
         </p>
-        <p>This field currently only provides data for JavaScript, Maven and PIP
-          projects.</p>
+        <p><b>Note:<br /></b>This field currently only provides data for JavaScript,
+          Maven and PIP projects.</p>
       </td>
     </tr>
     <tr>
@@ -137,6 +142,8 @@ The following table describes the different parts of the Dependencies area as di
     </tr>
   </tbody>
 </table>
+
+## Dependencies tab actions
 
 These controls appear at the top of the window:
 

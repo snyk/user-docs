@@ -1,5 +1,9 @@
 # Snyk runtime monitoring: uninstall the Snyk agent for Node.js
 
+{% hint style="info" %}
+This feature is deprecated.
+{% endhint %}
+
 1. From the project CLI, remove the agent as a dependency to your project by running the following command
 
    `npm uninstall @snyk/nodejs-runtime-agent`

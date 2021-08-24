@@ -1,13 +1,15 @@
 # Reports overview
 
+{% hint style="info" %}
 **Feature availability**  
 This feature is available with Enterprise and Business plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
-The Reports area offers data and analytics across all of your projects, displaying historical and aggregated data about projects, issues, dependencies, and licenses. Data in each of the four tabs \(seen below\) is displayed based on the organization in which you are working, and you can filter this data with different parameters depending on the tab you're viewing.
+The **Reports** area offers data and analytics across all of your projects, displaying historical and aggregated data about projects, issues, dependencies, and licenses. Data in each of the four tabs \(seen below\) is displayed based on the organization in which you are working, and you can filter this data with different parameters depending on the tab you're viewing.
 
-Additionally, if your account is managed with groups, aggregated data for all of your organizations is displayed when you navigate to Reports from the Group level.
+Additionally, if your account is managed with groups, aggregated data for all of your organizations is displayed when you navigate to **Reports** from the **Group** level.
 
-From the Group level, you can filter to view data for multiple organizations, similar to this example:
+From the **Group** level, you can filter to view data for multiple organizations, similar to this example:
 
 ![](../../.gitbook/assets/mceclip0-28-.png)
 
@@ -29,7 +31,11 @@ The Reports area comprises these tabs:
 
 Report data can also be generated and retrieved with our APIs. For more information about this, see our [API documentation](https://snyk.docs.apiary.io/#introduction).
 
+{% hint style="info" %}
 There may be a delay from the time a project is tested and until that data appears in the Reports area. If you find that there is more than a 1-hour delay, please contact support.
+{% endhint %}
 
+{% hint style="info" %}
 Read-only projects and the respective results will not appear in the Reports area.
+{% endhint %}
 
