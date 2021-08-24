@@ -11,16 +11,45 @@ The user generates a unique Azure DevOps personal access token \(PAT\) generated
 
 Snyk tests and monitors Azure Repos that are in any of our supported languages by evaluating root folders and custom file locations.
 
+**Adding projects to Snyk**
+
+1. Go to **Projects** and click **Add projects**. Choose the tool from which to import your projects:![image1.png](../../.gitbook/assets/uuid-55436a38-bdce-2011-6bb7-6c2d8ed47abe-en.png)
+2. A popup screen opens with all the available repositories under the selected integration:![image2.png](../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en.png)
+3. Select the repos that you would like to import to Snyk to monitor them for security/license issues. To import all repos for a specific organization, checkmark the organization.
+4. Click **Add selected repositories**. Snyk will now scan the entire file tree for dependency files and import them to Snyk as Projects.
+
 ### Adding custom file location
+
+1. From the Add custom file location dropdown list, select the relevant repo for which you would like to configure a custom path. The repo must first be selected from the Add Projects view, as described in the previous step.
+2. In the text field, enter the relative path in which the manifest file is located, as demonstrated in the image above.
+
+{% hint style="info" %}
+**NOTE**  
+This field is case-sensitive.
+{% endhint %}
 
 ### Excluding folders from import
 
 This integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages in our Docs.
 
+{% hint style="info" %}
+NOTE  
+This field is case-sensitive and the pattern applies for all repos.
+{% endhint %}
+
+**Next steps**
+
+Once repositories are imported, a confirmation appears in green at the top of the screen. The selected files are indicated with a unique icon, they are named by organization/repo, and you can now also filter to view only those projects, as seen in the example below:  
+[![image7.png](../../.gitbook/assets/uuid-141d5609-ab7e-6810-f9ad-94d4413984cd-en.png)](https://support.snyk.io/hc/article_attachments/360007063497/uuid-141d5609-ab7e-6810-f9ad-94d4413984cd-en.png)
+
+This integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages in our Docs.
+
 ## Configure your integration for Azure Repos
 
+{% hint style="info" %}
 **Feature availability**  
-Integration with Azure Repos Cloud is available for all of our pricing plans. Integration with Azure Repos Server v2018 Update 2 and above \(also known as TFS\) is available with Enterprise and Business plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+Integration with Azure Repos Cloud is available for all of our pricing plans. Integration with Azure Repos Server v2018 Update 2 and above \(also known as TFS\) is available with Enterprise and Business plans. See [**p**ricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 Snyk integrates with Microsoft Azure Repos to enable you to import your projects and monitor the source code for your repositories. Snyk tests the projects you’ve imported for any known security vulnerabilities found in the application’s dependencies, testing at a frequency you control.
 
@@ -55,4 +84,8 @@ Ensure you have set up your Azure Repos account and your Snyk account.
 9. Snyk tests the connection values and the page reloads, now displaying Azure Repos integration information. A confirmation message that the details were saved also appears in green at the top of the screen. In addition, if the connection to Azure failed, a notification appears under the Connected to Azure Repos section.
 
    ![Screen\_Shot\_2020-05-19\_at\_17.16.24.png](../../.gitbook/assets/screen_shot_2020-05-19_at_17.16.24.png)
+
+{% hint style="info" %}
+**Note**: it is important that a Snyk admin user configure the integration within the UI. Collaborator users won't be able to complete this task and they may get the following error: _“We're having trouble connecting to Azure Repos. Please try again or_ [_contact support_](mailto:support@snyk.io)_."_
+{% endhint %}
 
