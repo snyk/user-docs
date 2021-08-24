@@ -1,8 +1,10 @@
 # npm Teams & npm Enterprise for npms
 
-**Overview**
+### **Overview**
 
-This guide is relevant for Snyk UI integrations only, the CLI already supports yarn and npm projects with private npm Teams and npm Enterprise registries
+{% hint style="info" %}
+This guide is relevant for Snyk UI integrations only, the CLI already supports yarn and npm projects with private npm Teams and npm Enterprise registries.
+{% endhint %}
 
 You can add configuration to tell Snyk where your private npm Teams and npm Enterprise Node.js packages are hosted and what scope they are under.
 
@@ -10,18 +12,24 @@ This is the same information you would normally add in your `.yarnrc` or `.npmrc
 
 Once configured, Snyk will use this information to access private dependencies when creating Pull/Merge Requests**,** by allowing yarn/npm to reach those deps in order to regenerate the lockfile.
 
+{% hint style="info" %}
 **Feature availability**  
 This feature is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 ## JavaScript Language Settings
 
-1. Go to settings  &gt; **Languages &gt; JavaScript** and either the npm or yarn settings depending on your project types \(yarn shown in screenshots below\)
+1. Go to settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)**&gt; Languages &gt; JavaScript** and either the npm or yarn settings depending on your project types \(yarn shown in screenshots below\)
 2. If you have not previously connected to npm Teams or npm Enterprise you will be asked to configure an integration first, see [npm Teams & npm Enterprise Registry Settings](npm-teams-and-npm-enterprise-for-npms.md) below
 3. Once you have set up the integration, select **Add registry configuration**  
+
+   ![](../../.gitbook/assets/image%20%2834%29.png)
+
    * Select "npm" as the Package source
    * If you want to configure this registry as **default registry url**, then leave scope blank
    * If you want to configure **only scoped packages** to use this registry then add a scope
    * If you want to add a mix of **default registry url** and **scoped packages**, add multiple configurations - one for the default and one per scope.
+
 4. When you have added all the registries and scopes you want, click **Update settings**.
 5. Now test it out - open a Pull/Merge Request on a project that contains private dependencies to see a lockfile updated and included in the Snyk Fix Pull Request where previously none was generated. _\*\*_
 
@@ -32,7 +40,10 @@ You can configure token based authentication for npm Teams and npm Enterprise in
 ### Getting started
 
 1. Go to settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations &gt; Package Repositories &gt; npm**
-2. You should see this screen at the beginning.
+2. You should see this screen at the beginning:
+
+   ![](../../.gitbook/assets/image%20%2835%29.png)
+
 3. Enter **Public URL** and **Token** values.
 4. Click **Save**.
 
