@@ -17,7 +17,7 @@ Scanning CloudFormation provides security feedback on everything that is statica
 
 **Configure Snyk**
 
-1. **Note**
+1. **NOTE**
 
    Integrations are managed per organization.
 

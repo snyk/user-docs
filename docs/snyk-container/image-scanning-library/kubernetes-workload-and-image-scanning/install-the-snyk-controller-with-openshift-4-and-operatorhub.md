@@ -46,9 +46,12 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
 
    Now, skip the next step if you're not working with any private registries.
 
-   **Note**
+---
+**NOTE**
 
-   The secret must be called `snyk-monitor` in order for the integration to work.
+The secret must be called `snyk-monitor` in order for the integration to work.
+
+---
 
 8. If any of the images you need to scan are located in private registries, provide credentials to access those registries by creating a secret \(which must be called `snyk-monitor`\) using both the Snyk Integration ID as well as a `dockercfg` file.
 
@@ -105,9 +108,12 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
 
        Cluster scope is the default scope and we recommend you use this when installing the namespace so that we can scan the entire cluster. You can choose Namespaced scope, in which case the Snyk controller will watch for workloads only in the namespace in which it is deployed!
 
-       **Note**
+---
+**NOTE**
 
-       Snyk always uses a stable channel when scanning your workloads
+Snyk always uses a stable channel when scanning your workloads
+
+---
 
     2. Leave the remaining default configurations as they are.
     3. Click Subscribe to make the Operator available to the namespaces on this OpenShift Container Platform cluster.

@@ -17,7 +17,12 @@ This integration only works with GitLab instances that are publicly reachable \(
 
    ![image1.png](../../.gitbook/assets/uuid-aa58b5a9-dd17-3219-6067-4ee6e3f4b384-en.png)
 
-**Note**: when using GitLab Enterprise integration, it is important to use the correct URL. For example, use [https://gitlab.yourcompany.com/](https://gitlab.yum.com/kfc-commerce/kfc-mobile) instead of [https://gitlab.yourcompany.com/subfolder1/...](https://gitlab.yum.com/kfc-commerce/kfc-mobile) The PAT will provide access to any of the repositories that have access granted to them.
+---
+**NOTE** 
+
+When using GitLab Enterprise integration, it is important to use the correct URL. For example, use [https://gitlab.yourcompany.com/](https://gitlab.yum.com/kfc-commerce/kfc-mobile) instead of [https://gitlab.yourcompany.com/subfolder1/...](https://gitlab.yum.com/kfc-commerce/kfc-mobile) The PAT will provide access to any of the repositories that have access granted to them.
+
+---
 
 ### Required permissions and roles
 

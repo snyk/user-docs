@@ -36,7 +36,12 @@ Assuming these integrations are valid for your company, we recommend setting up 
 
 Starting with this integration makes it easy for developers to find and fix vulnerabilities, and to get alerted when new vulnerabilities have been discovered. After this is successful, these users can be used as internal advocates and can demonstrate the benefits of using Snyk.
 
-Note: This approach works for projects using Node, Java, Python and Ruby. If support is needed for Go, PHP or .Net, the CLI should be used as the primary method of testing and monitoring projects.
+---
+**NOTE**
+
+This approach works for projects using Node, Java, Python and Ruby. If support is needed for Go, PHP or .Net, the CLI should be used as the primary method of testing and monitoring projects.
+
+---
 
 \*\* For Scala & Gradle \(only\) we recommend scanning the projects only in the CLI or CI/CD, to get accurate results.
 

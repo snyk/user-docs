@@ -15,8 +15,13 @@ Snyk analyzes only your manifest files, based on which we then create a hierarch
 When `snyk test` runs, it tries to autodetect your project type by looking for the following files, in this order, and then analyzing the first of the files that it finds:
 
 {% hint style="info" %}
-**Note**  
+
+---
+**NOTE**  
 To analyze multiple manifest files, manually specify the file that Snyk should inspect for package information, as described later in this article.
+
+---
+
 {% endhint %}
 
 1. yarn.lock
@@ -44,8 +49,13 @@ The way by which Snyk analyzes and builds the tree then varies depending on the 
 ## Note
 
 {% hint style="info" %}
-**Note**  
+
+---
+**NOTE**  
 Additional and more specific details are provided per language, in [Language support](https://support.snyk.io/hc/en-us/categories/360000456257-Language-package-manager-support).
+
+---
+
 {% endhint %}
 
 _Monorepos and projects with multiple manifest files_
@@ -73,7 +83,12 @@ $ snyk test --dev
 ```
 
 {% hint style="info" %}
-**Note**  
+
+---
+**NOTE**  
 Additional and more specific details are provided per language, in [Language support](https://support.snyk.io/hc/en-us/categories/360000456257-Language-package-manager-support).
+
+---
+
 {% endhint %}
 

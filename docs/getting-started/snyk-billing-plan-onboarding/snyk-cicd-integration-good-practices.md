@@ -153,7 +153,12 @@ snyk test --file=sln/.sln
 
 For Yarn workspaces use the **--yarn-workspaces** flag to test and monitor your packages. The root lockfile will be referenced when scanning all the packages. Use the -**-detection-depth** parameter to find sub-folders which are not auto discovered by default.
 
-Note: Yarn workspaces support is for **snyk test** and **snyk monitor** commands only at this time.
+---
+**NOTE**
+
+Yarn workspaces support is for **snyk test** and **snyk monitor** commands only at this time.
+
+---
 
 Example:
 

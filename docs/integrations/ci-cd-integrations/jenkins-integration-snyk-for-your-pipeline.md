@@ -26,17 +26,23 @@ For any pipeline project, you can add a Snyk step to your build at any point in 
 2. Copy the generated pipe syntax.
 3. Navigate to the Configure area of your pipeline and go to the Pipeline part. Paste the Snyk step syntax in your pipeline as part of an existing stage or as a new separate stage.
 
-   **Note**
+---
+**NOTE:**
 
-   You can also choose to add the stage to your `Jenkinsfile` directly from the Git.
+You can also choose to add the stage to your `Jenkinsfile` directly from the Git.
+
+---
 
    ![image9.png](../../.gitbook/assets/uuid-ab230996-8e5a-af77-6d44-36f67e2d827d-en.png)
 
-4. Now, every time you run your project build:
+6. Now, every time you run your project build:
 
-   **Note**
+---
+**NOTE**
 
-   If you updated the `Jenkinsfile` from the Git and external to Jenkins, then when Jenkins fetches that file to run the build, it receives the edited pipeline, now including the newly added Snyk step.
+If you updated the `Jenkinsfile` from the Git and external to Jenkins, then when Jenkins fetches that file to run the build, it receives the edited pipeline, now including the newly added Snyk step.
+
+---
 
    * Snyk verifies the plugin installation \(if necessary, and as based on your policy configuration\).
    * Snyk runs the snyk test command, analyzing the manifest file of your project to find its direct and transitive dependencies and testing your pipeline against the Snyk vulnerability database for known vulnerabilities.

@@ -49,9 +49,12 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
            --from-literal=integrationId=abcd1234-abcd-1234-abcd-1234abcd1234 
    ```
 
-   **Note**
+---
+**NOTE**
 
-   The secret must be called `snyk-monitor` in order for the integration to work.
+The secret must be called `snyk-monitor` in order for the integration to work.
+
+---
 
 7. If any of the images you need to scan are located in private registries, you need to provide credentials to access those registries by creating a secret \(which must be called snyk-monitor\) using both the Snyk Integration ID as well as a dockercfg file. The dockercfg file is necessary to allow the monitor to look up images in private registries. Usually, a copy of the dockercfg resides in $HOME/.docker/config.json.
    1. Create a `dockercfg` configuration file:

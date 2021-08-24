@@ -5,8 +5,12 @@ You can use Snyk to scan your JavaScript projects.
 ### Features
 
 {% hint style="info" %}
-**Note**  
+
+---
+**NOTE**  
 Features might not be available, depending on your subscription plan.
+
+---
 {% endhint %}
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
@@ -145,7 +149,7 @@ Use the following options to refine the scan:
       <td style="text-align:left">
         <p>Provide this flag to signal that the scanned project is a Yarn workspace
           so the root level lockfile can be used for all packages.</p>
-        <p>Note: <code>snyk test</code> and<code>snyk monitor</code> commands only.</p>
+        <p>Note:<code> snyk test</code> and<code>snyk monitor</code> commands only.</p>
       </td>
     </tr>
   </tbody>
@@ -180,8 +184,12 @@ We build the dependency tree based on these files:
 ### Yarn Workspaces
 
 {% hint style="info" %}
-**Note**  
+
+---
+**NOTE**  
 Git support for Yarn Workspaces is enabled for all projects in organisations created after March 3rd 2021. To enable this feature for organisations created before this date please contact support@snyk.io.
+
+---
 {% endhint %}
 
 For Yarn Workspaces we scan each `package.json` that matches the `packages` pattern from the root level `package.json` and root level `yarn.lock`.

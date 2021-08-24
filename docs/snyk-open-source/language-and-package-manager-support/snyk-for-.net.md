@@ -5,8 +5,12 @@ Snyk offers security scanning to test your projects for vulnerabilities, both th
 The following describes how to use Snyk to scan your .NET projects:
 
 {% hint style="info" %}
-**Note**  
+
+---
+**NOTE**  
 Features might not be available, depending on your subscription plan.
+
+---
 {% endhint %}
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
@@ -39,7 +43,12 @@ Examples of supported project files that resolve into **project.assets.json** in
 * \*.vbproj
 * \*.fsproj
 
-**Note:** Project files can be combined with [lock files](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files#locking-dependencies) for a more deterministic **project.assets.json** resolution
+---
+**NOTE**
+
+Project files can be combined with [lock files](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files#locking-dependencies) for a more deterministic **project.assets.json** resolution
+
+---
 
 ### Dependencies managed by packages.config
 
@@ -51,7 +60,11 @@ Examples of supported project files that resolve into **packages** include:
 
 * packages.config
 
-  **Note**: whilst you should also be able to run `snyk test` without previously installing dependencies this will result in less accurate vulnerability results
+---
+**NOTE**
+While you should also be able to run `snyk test` without previously installing dependencies this will result in less accurate vulnerability results
+
+---
 
 ### Dependencies managed by Paket
 

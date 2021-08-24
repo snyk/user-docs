@@ -21,8 +21,13 @@ Features might not be available, depending on your subscription plan.
 Once we’ve built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in the dependency tree.
 
 {% hint style="info" %}
-**Note**  
+
+---
+**NOTE**  
 In order to scan your dependencies, you must ensure you have first installed the relevant package manager, and that your project contains the supported manifest files.
+
+---
+
 {% endhint %}
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project:

@@ -15,14 +15,21 @@ On-premise GHE integrations are not currently supported. However, some on-premis
 2. Generate a personal access token for that account, with **repo \(all\)**, **admin:read:org**, and **admin:repo\_hooks \(read & write\)** permissions scope. See [GitHub Enterprise documentation ](https://docs.github.com/en/enterprise-server@2.22/github/authenticating-to-github/creating-a-personal-access-token)for details.
 3. **Authorize** your personal access token and Enable SSO: ![Screen\_Shot\_2021-06-01\_at\_2.13.08\_PM.png](../../.gitbook/assets/screen_shot_2021-06-01_at_2.13.08_pm.png)
 4. Go to the **Integrations** page in Snyk and click on **GitHub Enterprise**: ![GitHub.png](../../.gitbook/assets/github.png)
-5. Enter your Github Enterprise URL, and the personal access token for the service account you created:![mceclip2.png](../../.gitbook/assets/mceclip2-2-.png) **Note:** You can use this integration to integrate to your GitHub Enterprise Cloud, by providing the following URL [https://api.github.com](https://api.github.com). 
+5. Enter your Github Enterprise URL, and the personal access token for the service account you created:![mceclip2.png](../../.gitbook/assets/mceclip2-2-.png) ---
+---
+**NOTE**
+
+You can use this integration to integrate to your GitHub Enterprise Cloud, by providing the following URL [https://api.github.com](https://api.github.com).
+
+---
+
 6. Click **Save**. Snyk connects to your GitHub Enterprise instance. When the connection succeeds, the following indications appear: ![mceclip4.png](../../.gitbook/assets/mceclip4-1-.png)
 7. Select the repos to import to Snyk, then click **Add selected repositories**.
 8. Snyk starts scanning the selected repos for dependency files \(such as package.json\) in the entire directory tree and imports them to Snyk as projects:
 
-   ![uuid-b744bfb4-4a09-3f09-3275-986c855ee5be-en.jpg](../../.gitbook/assets/uuid-b744bfb4-4a09-3f09-3275-986c855ee5be-en%20%281%29.jpeg)
+    ![uuid-b744bfb4-4a09-3f09-3275-986c855ee5be-en.jpg](../../.gitbook/assets/uuid-b744bfb4-4a09-3f09-3275-986c855ee5be-en%20%281%29.jpeg)
 
-9. The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
+11. The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
 ## GitHub Enterprise Integration Features
 

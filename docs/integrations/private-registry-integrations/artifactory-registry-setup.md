@@ -16,10 +16,13 @@ Brokered Artifactory is currently supported for [Maven](https://support.snyk.io/
 
    ![Screenshot\_2020-04-17\_at\_14.38.12.png](../../.gitbook/assets/screenshot_2020-04-17_at_14.38.12.png)
 
-**Note**
+---
+**NOTE**
 
 If you do not see the “Publicly accessible” switch you do not have the necessary permissions and can only add a publicly accessible instance.  
 Contact [support@snyk.io](mailto:support@snyk.io) if you want to add a private registry
+
+---
 
 ## Set up publicly accessible instances
 

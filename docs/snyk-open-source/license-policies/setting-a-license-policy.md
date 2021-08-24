@@ -25,7 +25,11 @@ For customers with a Business plan: if no group is available, org administrators
 
 ![](../../.gitbook/assets/screenshot_2020-08-21_at_11.58.10_am.png)
 
-**Note:** _if your company's account has a group \(or more\), to access the License policy settings, please go to the Group's Overview \(from the top left dropdown\) and go to **Policies** to select the organization\(s\) to update the Licenses policy._
+---
+**NOTE**
+_if your company's account has a group \(or more\), to access the License policy settings, please go to the Group's Overview \(from the top left dropdown\) and go to **Policies** to select the organization\(s\) to update the Licenses policy._
+
+---
 
 ![](../../.gitbook/assets/mceclip0-1-.png)
 
