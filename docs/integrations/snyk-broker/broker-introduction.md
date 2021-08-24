@@ -10,13 +10,19 @@ Snyk Broker is an open-source tool, that can act as a proxy between Snyk and int
 
 Snyk Broker is an open-source project, hosted at [GitHub](https://github.com/snyk/broker), and published as a set of Docker images for specific integrations. See the [Github broker documentation](https://github.com/snyk/broker/blob/master/README.md).
 
+{% hint style="info" %}
 **Feature availability**  
 Snyk Broker is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
+
+## Broker benefits
 
 Snyk Broker allows you to:
 
 * Keep sensitive data such as your access tokens inside your private network, never sharing that information with Snyk.
 * Provide controlled access to the network by Snyk, limiting the files Snyk can access, and the actions that Snyk can perform.
+
+## Broker components
 
 Snyk Broker has a client and a server component:
 
@@ -32,6 +38,8 @@ All data, both in transit and at rest, is encrypted. Communication between the c
 * There is no direct inbound connection from Snyk to the Broker client. The broker client makes an outbound connection to [https://broker.snyk.io](https://broker.snyk.io), which establishes a WebSocket connection to allow communication with the Broker server. This way, there is no need to grant permissions to specific IPs.
 * The Broker client initiates the outbound connection to establish the WebSocket. After the websocket is established, that allows inbound requests from Snyk via the WebSocket, with no need to allow inbound connectivity to the world or to Snyk specific IP addresses.
 
+## **Approved data list**
+
 The Broker client maintains an approved data list for inbound and outbound data requests. Only requests included in this approved list are allowed.
 
 The default approved list limits requests as follows:
@@ -39,9 +47,24 @@ The default approved list limits requests as follows:
 * Inbound: Snyk.io is only allowed to fetch and view dependency manifest files and the Snyk policy file. No other source code is viewed, extracted, or modified. Additional files \(.snyk files\) may be checked in to support our patch mechanism and for any ignore instructions included in your vulnerability policy.
 * Outbound: Git repo webhooks are set when you configure your Broker setup, to enable automatic Snyk scans triggered when new pull requests or merge events are submitted by your developers. Webhook notifications are delivered to Snyk via the Broker client for only events relevant to Snyk actions \(push to branch, pull request opened\), and only when the event data also includes a dependency manifest file or a Snyk policy file.
 
+## **Supported integrations**
+
+Snyk Broker currently integrates with these [Git Repository](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) systems:
+
+* [GitHub](https://support.snyk.io/hc/en-us/articles/360004032117-GitHub-integration) and [GitHub Enterprise](https://support.snyk.io/hc/en-us/articles/360015951318-GitHub-Enterprise-Server-Integration)
+* [GitLab](https://support.snyk.io/hc/en-us/articles/360004002238-GitLab-integration)
+* [Bitbucket Server](https://support.snyk.io/hc/en-us/articles/360004002218-Bitbucket-Server-integration) and Bitbucket Data Center
+* [Azure Repos](https://support.snyk.io/hc/en-us/articles/360004002198-Azure-Repos-integration)
+
+In addition, Snyk Broker integrates with [Jira Server](https://support.snyk.io/hc/en-us/articles/360004002458-Jira), Jira Data Center and [Artifactory](https://support.snyk.io/hc/en-us/articles/360013805638-Artifactory-Registry-Setup).
+
+## **Supported manifest files**
+
 Snyk.io fetches and views dependency manifest files to analyze and deliver vulnerability results. To get proper test results and to create Snyk projects, one or more supported manifest files must be present in the tested folder \(for integration with CLI\), or in the repository \(for integration with Git\).
 
 See [Language support](https://support.snyk.io/hc/en-us/categories/360000456257-Language-support) for details of supported manifest files for different languages.
+
+## **Broker usage**
 
 When set up, developers can use Snyk Broker to enable standard Snyk product usage \(such as Snyk Open Source\), with the Broker validating all in / outbound requests, based on the approved list.
 
