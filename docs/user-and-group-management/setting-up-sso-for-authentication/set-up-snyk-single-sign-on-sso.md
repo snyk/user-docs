@@ -6,7 +6,9 @@ The information you need to establish trust between Snyk and the identity provid
 
 Ensure you have at least one group and organization to indicate where new users will be assigned. See [Groups, Organizations and Users](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/groups-organizations-and-users).
 
+{% hint style="info" %}
 Once you have gathered the requested information \(detailed below\), create a support ticket to request SSO set up.
+{% endhint %}
 
 ## Overview
 
@@ -128,6 +130,8 @@ Obtain the following information from your identity provider and organization. P
 | Client Secret | The secret for your authorization that grants tokens to authorized requestors |
 | Microsoft Azure AD Domain | The numbers and letters shown in the Directory \(tenant\) ID, which can be found from the Snyk app you created under Overview |
 
+## Use ADFS as SSO
+
 When using ADFS for the connection between your Identity provider and Snyk, add the Realm Identifier, a Callback URL, and a Signing certificate in your Identity provider to establish trust with Snyk.
 
 | Realm Identifier | **urn:auth0:snyk** |
@@ -140,6 +144,8 @@ When using ADFS for the connection between your Identity provider and Snyk, add 
 Obtain the following information from your Identity provider and organization. You'll provide this information to Snyk in order to establish trust on the service-provider side.
 
 * ADFS URL or Federation Metadata XML file
+
+### Map Enterprise users
 
 For Enterprise plans, Snyk can map new users to a specific organization and role when they first sign in using SSO. This option requires additional configuration, including specific naming conventions for organizations.
 
@@ -163,5 +169,16 @@ To complete your log in:
 3. Log in with your identity provider as you would for other applications.
 4. Let Snyk Support know which user to promote as the Group administrator.
 
+## Resources
+
 These worksheets include the information to enter in your Identity provider and the information you need to collect before submitting a ticket to Snyk Support to request single sign-on.
+
+These worksheets include the information to enter in your Identity provider and the information you need to collect before submitting a ticket to Snyk Support to request single sign-on.
+
+* [SSO OIDC Worksheet.pdf](https://support.snyk.io/hc/en-us/article_attachments/360019345258/SSO_OIDC_Worksheet.pdf)
+* [SSO Azure Worksheet.pdf](https://support.snyk.io/hc/en-us/article_attachments/360019280457/SSO_Azure_Worksheet.pdf)
+* [SSO ADFS Worksheet.pdf](https://support.snyk.io/hc/en-us/article_attachments/360019345278/SSO_ADFS_Worksheet.pdf)
+* [SSO SAML Worksheet.pdf](https://support.snyk.io/hc/en-us/article_attachments/360020511338/SSO_SAML_Worksheet.pdf)
+
+
 
