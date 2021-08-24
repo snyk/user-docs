@@ -2,9 +2,11 @@
 
 To continuously avoid known vulnerabilities in your dependencies, integrate Snyk into your continuous integration \(a.k.a. build\) system. In addition to the documentation here, you're also invited to check out our [integration configuration examples](https://github.com/snyk-samples/snyk-cicd-integration-examples) in our GitHub repository.
 
-## Set up automatic monitoring
+### Set up automatic monitoring
 
 If you monitor a project with Snyk, you’ll get notified if your project’s dependencies are affected by newly disclosed vulnerabilities. To make sure the list of dependencies we have for your project is up to date, refresh it continuously by running Snyk monitor in your deployment process. Configure your environment to include the SNYK\_TOKEN environment variable. You can find your API token on the dashboard after logging in.
+
+### API token configuration
 
 Make sure you don’t check your API token into source control, to avoid exposing it to others. Instead, use your CI environment variables to configure it.
 
