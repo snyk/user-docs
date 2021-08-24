@@ -2,10 +2,19 @@
 
 Snyk's Gitlab integration supports Gitlab versions 9.5 and above \(API v4\).
 
+### Integration features
+
+The integration allows you to:
+
+1. See Snyk tests in your pull requests that check for vulnerabilities.
+2. Get email alerts and a Snyk pull request with fixes when new vulnerabilities that affect your repo are disclosed.
+3. Get email alerts and a Snyk pull request if a new upgrade or patch is available for a vulnerability that affects you.
+4. Trigger a Snyk pull request with fixes yourself from the test report page or the project page for your repo on snyk.io.
+
 ## Set up GitLab integration
 
-**Feature availability**  
-On-premise Gitlab integrations are available for customers on Enterprise plans and above. See [pricing plans](https://snyk.io/plans/) for more details.
+> **Feature availability**  
+> On-premise Gitlab integrations are available for customers on Enterprise plans and above. See [pricing plans](https://snyk.io/plans/) for more details.
 
 This integration only works with GitLab instances that are publicly reachable \(not on a private network\). A [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker) environment is required for private network instances.
 
@@ -17,9 +26,7 @@ This integration only works with GitLab instances that are publicly reachable \(
 
    ![image1.png](../../.gitbook/assets/uuid-aa58b5a9-dd17-3219-6067-4ee6e3f4b384-en.png)
 
-**NOTE**
-
-When using GitLab Enterprise integration, it is important to use the correct URL. For example, use [https://gitlab.yourcompany.com/](https://gitlab.yum.com/kfc-commerce/kfc-mobile) instead of [https://gitlab.yourcompany.com/subfolder1/...](https://gitlab.yum.com/kfc-commerce/kfc-mobile) The PAT will provide access to any of the repositories that have access granted to them.
+**NOTE:** When using GitLab Enterprise integration, it is important to use the correct URL. For example, use https://gitlab.yourcompany.com/ instead of https://gitlab.yourcompany.com/subfolder1/... The PAT will provide access to any of the repositories that have access granted to them.
 
 ### Required permissions and roles
 
@@ -47,9 +54,13 @@ When viewing a Snyk test report for a project that you own, or when looking at a
 
 You can review the vulnerabilities that will be fixed, change your selection, and choose to ignore any vulnerabilities that can’t be fixed right now before opening the merge request on the **Open a fix Merge Request** page.
 
+![](../../.gitbook/assets/uuid-8d2ef9cb-cd32-bf48-a827-32bb358a10ab-en.png)
+
 When you open a merge request via snyk.io, we will give you a heads-up when this is the case.
 
 Here’s an example for the merge request:
+
+![](../../.gitbook/assets/uuid-5e9a4b58-4d87-06fb-0479-a308515d4b12-en.png)
 
 ## Get a Snyk merge request for newly disclosed vulnerabilities that affect you
 
@@ -60,4 +71,12 @@ Whenever a vulnerability is disclosed that affects a project you’re watching, 
 When no upgrade is available, you can ignore or patch the vulnerability \(patching is only available for Node.js projects\). When a better remediation option has become available, for example, an upgrade for a vulnerability you previously ignored, Snyk notifies you about this via email and also generates a merge request with the new fix.
 
 ## Disable the GitLab integration
+
+> **WARNING:** 
+>
+> Disabling a GitLab integration effectively removes all Snyk integrations, webhooks, as well as removal of the Snyk credentials and deactivation of the GitLab projects in the Snyk app.
+
+The project will be set to inactive and you’ll no longer get alerts, pull requests or Snyk tests on your pull requests. Again, the webhook that enables the integration for this repo will be removed.
+
+You can restart watching at any time; however, re-initiating GitLab projects for monitoring would require setting up the integration again.
 
