@@ -6,9 +6,10 @@ Sometimes there is no direct upgrade that can address the vulnerability or an up
 
 For such cases Snyk can help you [protect your code with patches](https://support.snyk.io/hc/en-us/articles/360003812558#UUID-ebd02c05-2d0d-b051-611b-e304c8c8bbba). This option will make the minimal modifications to your locally installed`node_modules` files to fix the vulnerability. It will also update the policy to patch this issue when running [snyk protect](https://snyk.io/docs/using-snyk#protect). 
 
-### Caution
-
+{% hint style="info" %}
+**Caution**  
 Patching is currently supported for **Node.js** projects only.
+{% endhint %}
 
 Patches are applicable in the following scenarios:
 
@@ -18,7 +19,7 @@ Patches are applicable in the following scenarios:
 
 Patches are available via the source code integrations and the [Snyk CLI](https://support.snyk.io/hc/en-us/articles/360003812578-Our-full-CLI-reference).
 
-#### Getting started with Snyk Open Source: the process for creating patches
+### Getting started with Snyk Open Source: the process for creating patches
 
 Patches are created and maintained by Snyk. If the package owner has made code changes to fix the issues, our patch is based on this official fix, and we remove any cosmetic or unrelated changes. If a package owner has not addressed the vulnerability yet, we write a patch from scratch.
 
@@ -26,7 +27,7 @@ Before releasing it, we verify the patch, backport it to older versions, and tes
 
 The patches are a part of [Snyk’s open source vulnerability database](https://github.com/Snyk/vulndb/), so you can check them out before applying them. For example, the patches for the [ms ReDoS vulnerability](https://github.com/Snyk/vulndb/tree/master/data/npm/ms/20151024). We don’t have patches for every case - if you need one that’s missing, let us know.
 
-#### How and when are Snyk patches created?
+### How and when are Snyk patches created?
 
 Snyk creates patches for high impact vulnerabilities, a vulnerability is determined as high impact if it is a serious vulnerability in a popular package that affects many users.
 
@@ -42,7 +43,7 @@ All patches are available for download and review by the community and we welcom
 
 For unmaintained packages, we will create a patch and open a pull request to the project for it to be merged.
 
-#### How do patches work when using the Snyk CLI?
+### How do patches work when using the Snyk CLI?
 
 If you use the Snyk CLI to fix your vulnerable Node.js project by running `snyk wizard` and choose to apply a patch then following two things will happen:
 
@@ -57,7 +58,7 @@ If you use the Snyk CLI to fix your vulnerable Node.js project by running `snyk 
 
 Since running`snyk protect` is the way to repeatedly apply patches, it needs to be run every time you re-install your dependencies. Common integration points would be in your CI/CD \(build system or deployment system\), and adding it as a post-install step in the `package.json`.
 
-#### How do patches work when using the source code integrations?
+### How do patches work when using the source code integrations?
 
 When you choose to use a patch to fix a vulnerability, `snyk` is added as a dependency and a `.snyk` file is created which contains the list of patches to apply.
 

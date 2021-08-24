@@ -1,5 +1,7 @@
 # Reachable vulnerabilities
 
+## Introduction 
+
 The first step of scanning apps for open source vulnerabilities is to identify the packages used by the app.
 
 The next step is to see which of the identified packages contains a vulnerability, whether or not if the vulnerability affects the apps’ code. This can easily lead to thousands of vulnerabilities when you look at the organization level, so you need to identify where to start.
@@ -11,19 +13,21 @@ Many vulnerabilities may not affect your code, as you may not use the vulnerable
 
 By looking deeper into how the app is using the open-source dependencies, and how the open-source dependencies interact with each other, we can add the needed context around the found vulnerabilities. This reachability helps you decide how to prioritize which vulnerabilities to fix.
 
+## How it works
+
 To provide as accurate results as possible, we use multiple algorithms to build a call graph from your app to the open-source dependencies you use. After we have that call graph, we can identify which vulnerabilities have a path leading from the app’s code down to the vulnerable function or package.
 
 We split the results into he following areas:
 
-1. Reachable - A clear path from the code to vulnerable functions was found. Fixing those vulnerabilities first is recommended.
-2. Potentially reachable - Indication that the vulnerability might be reachable was found. Further review is recommended.
-3. No path found - Direct calls from the code to vulnerable functions could not be found.
+1. **Reachable** - A clear path from the code to vulnerable functions was found. Fixing those vulnerabilities first is recommended.
+2. **Potentially reachable** - Indication that the vulnerability might be reachable was found. Further review is recommended.
+3. **No path found** - Direct calls from the code to vulnerable functions could not be found.
 
 ## Supported languages and prerequisites
 
 Reachable Vulnerabilities analysis is available for Java \(Maven and Gradle\) apps using Snyk CLI. In addition, Java Maven GitHub projects are supported, using Snyk UI.
 
-### Java support
+#### Java support
 
 * Java 8 to 13.
 * Maven 3.6.\*
@@ -31,9 +35,11 @@ Reachable Vulnerabilities analysis is available for Java \(Maven and Gradle\) ap
 
 ![](../../.gitbook/assets/image1-1-.png)
 
+## How to use it
+
 To perform Reachable Vulnerabilities analysis, you can:
 
-* Test your apps for reachability issues on repositories imported to Snyk from Git, using our Git integrations. Reachability is conducted as a part of the checks performed by Snyk \(currently, GitHub is supported\)._**Note**: Using this method clones your repository to Snyk, to run the analysis. The repo will be deleted from our servers after the analysis is complete._
+* Test your apps for reachability issues on repositories imported to Snyk from Git, using our Git integrations. Reachability is conducted as a part of the checks performed by Snyk \(currently, GitHub is supported\). _**Note**: Using this method clones your repository to Snyk, to run the analysis. The repo will be deleted from our servers after the analysis is complete._
 * Analyze your code for reachability issues using Snyk CLI. To run it using Snyk CLI, you must have the app already built \(compiled\), and the bytecode of the app should be available.
 
 ### Scanning for Reachable Vulnerabilities using Snyk CLI
@@ -52,6 +58,8 @@ To perform Reachable Vulnerabilities analysis, you can:
    * Opt-in to the **Reachable vulnerabilities analysis** and save your changes.![image2.png](../../.gitbook/assets/image2-5-.png)
 3. Go to the **import projects** page and choose the repositories to import to Snyk.
 4. Selected projects are imported and analyzed for Reachable Vulnerabilities issues.
+
+## Viewing the results
 
 ### CLI
 

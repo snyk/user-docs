@@ -6,6 +6,10 @@ The file can be generated in a number of ways and can be used in a number of dif
 
 This article will help you understand the `.snyk` file.
 
+{% hint style="info" %}
+You can create and save a policy where no attributes are selected, for example, if you have not yet decided which attributes should be associated with that policy. This policy does not apply to projects where all attributes are left blank.
+{% endhint %}
+
 ## Capabilities and behaviors
 
 When present, the `.snyk` policy is used to apply ignores and other settings for `snyk test`, `snyk protect` and `snyk monitor` commands as well as any tests via the API or website.

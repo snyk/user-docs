@@ -9,6 +9,8 @@ Fixing with Snyk can either be performed in 4 different ways
 3. automatic pull requests - When new remediation becomes available that helps you to fix a vulnerability Snyk can open an automated pull request.
 4. by using the CLI and running the `snyk wizard` command to fix node.js projects.
 
+### How it works
+
 When a new fixable vulnerability is found, Snyk attempts to open a new pull request on your behalf \(in a repository for which we support automatic fix pull requests\), or suggests you open one manually based on your settings.
 
 When Snyk automates the fix, we check if there are an existing branch and pull request for the exact fix; if there is, we reopen the existing, already closed pull request on that branch.
@@ -40,13 +42,16 @@ From our app, for each tab \(upgrade and patch\) in the Remediation Advice area 
 
 The Remediation Advice area appears in the project details page near the top, similar to the following examples:
 
-  
+![](../../.gitbook/assets/image%20%2813%29.png)
+
+![](../../.gitbook/assets/image%20%2816%29.png)
+
 Upgrade and Patchable issues tabs
 
 You can also find additional advice and details farther down in the Project details page:
 
-* from the Issues, tab, a full description per vulnerability
-* from the Dependencies tab, the entire tree of your project dependencies, enabling you to clearly visualize affected paths
+* from the **Issues**, tab, a full description per vulnerability
+* from the **Dependencies** tab, the entire tree of your project dependencies, enabling you to clearly visualize affected paths
 
 #### Actionable advice from our CLI tool
 
@@ -56,6 +61,8 @@ From the CLI, for each list \(upgrade and patch\), results are displayed in grou
 * links to full descriptions of each vulnerability
 
 Upgrade and patch results appear similar to the following:
+
+![](../../.gitbook/assets/image%20%2817%29.png)
 
 Patch recommendations with some and with all paths:
 

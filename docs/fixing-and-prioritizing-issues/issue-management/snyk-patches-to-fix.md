@@ -1,6 +1,6 @@
 # Snyk patches to fix
 
-How do patches work when using the Snyk CLI?
+### How do patches work when using the Snyk CLI?
 
 If you use the Snyk CLI to fix your vulnerable node project by running `snyk wizard` and choose to apply a patch then two things happen:
 

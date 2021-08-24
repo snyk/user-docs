@@ -4,8 +4,10 @@
 
 * You must be a group administrator of the group in order to update **Policy** settings
 
+{% hint style="info" %}
 **Feature availability**  
 This feature is available to Enterprise customers. See [Pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 ### Navigate to the Policy manager
 

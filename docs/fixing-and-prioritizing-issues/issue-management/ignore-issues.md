@@ -2,6 +2,8 @@
 
 If you do not want to fix a vulnerability or license issue, and don't want to see that issue in scan results, Snyk allows you to ignore it, either temporarily or permanently.
 
+## When to ignore issues
+
 Issues can be ignored and viewed via the snyk.io UI, the Snyk APIs, the Snyk CLI and using the .snyk file.
 
 Ignoring security issues should not be the default action, but it is sometimes necessary. The best practice is to fix or patch vulnerabilities, or to remove the vulnerable dependency, but there may still be reasons why you would want to suppress an issue – for example, if an issue doesn’t currently have a fix, you might want to ignore it until it does.
@@ -12,13 +14,21 @@ Some issues are irrelevant for certain projects \(e.g. a DDOS attack for an inte
 
 Each issue card has an **Ignore** button that opens up a dialog where you can select why you want to ignore the issue, and how long to ignore it.
 
+![](../../.gitbook/assets/image%20%2821%29.png)
+
 If you select **Ignore temporarily,** then you can check the **Until fix is available** checkbox:
+
+![](../../.gitbook/assets/image%20%2819%29.png)
 
 This will resurface the vulnerability as soon as we have a fix for it, and you can optionally give additional details on why you’re ignoring the issue. This is checked by default if there is currently no remediation available for this issue.
 
+{% hint style="info" %}
 An issue is ignored until ANY of the conditions happen - either the ignore period expires, OR the vuln becomes fixable.
+{% endhint %}
 
 When you ignore an issue in our UI, it will show who ignored it and allow you to edit or unignore it.
+
+![](../../.gitbook/assets/image%20%2814%29.png)
 
 ## Ignoring issues in the CLI
 
@@ -47,9 +57,15 @@ Ignores between a CLI \(or CI/CD run\) and the Snyk UI are synchronized. So the 
 
 For example:
 
+![](../../.gitbook/assets/image%20%2815%29.png)
+
 **snyk test** before ignoring in the UI:
 
+![](../../.gitbook/assets/image%20%2818%29.png)
+
 **snyk test** after ignoring in the UI:
+
+![](../../.gitbook/assets/image%20%2820%29.png)
 
 It is important that the above is true if you ignore the project imported by **snyk monitor** from the CLI or CI/CD.
 
@@ -72,6 +88,8 @@ See [The .snyk file](https://docs.snyk.io/fixing-and-prioritizing-issues/policie
 Since suppressing vulnerabilities carries a level of risk, you can make this available to admins only: go to your organization settings &gt; **General**, and select **Admin users only** in the **Ignores** section \(this also disables ignores from being added via the CLI\).
 
 You can also choose to set the more details field to be a compulsory field when an issue is being ignored, requiring the user to enter a reason for each ignore.
+
+## Using ignores in reports
 
 If you have access to our Reports feature, you will also be able to see an overview of how many issues in your organization’s projects are ignored, along with an option to filter these so you can drill down into each one. If the issue was ignored in our UI, we include a credit for additional accountability, so you can see who initiated it.
 

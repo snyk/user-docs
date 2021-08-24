@@ -14,5 +14,7 @@ To add a new blank rule, click on **+** below the previous rule, as seen in the 
 
 To delete or duplicate a rule, click the **…** on the right hand side of each rule box, as seen in the screenshot above.
 
+{% hint style="info" %}
 The order of your rules sets the precedence; if there is a conflict, the rule closest to the top supersedes any subsequent rules.
+{% endhint %}
 

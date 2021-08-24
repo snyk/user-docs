@@ -6,11 +6,17 @@ Snyk created a Priority Score to make the prioritization of issues as quick and 
 
 Snyk's security group found a significant correlation between trending vulnerabilities and exploits or proof of concept's that can be found in the wild. Social trends are calculated and shown for all issues, vulnerabilities and licenses and range from 0 to 1,000 \(0 is considered low risk and 1,000 is considered critical\). This gives users a high degree of granularity that reflects the many considerations taken into account. The granularity avoids having too many issues ending up with the same score so users can determine priority at a glance with a high degree of accuracy.
 
+{% hint style="info" %}
 Snyk does not use the CVSS score alone to determine priority: Snyk’s Priority Score is a comprehensive scoring system that processes multiple factors, including the CVSS score, the availability of a fix, known exploits, how new the vulnerability is, and whether it is reachable or not. See [How it works](snyk-priority-score.md) section for details.
+{% endhint %}
+
+## How it works
 
 For each issue, Snyk processes and weighs several factors in a proprietary algorithm, to produce the score for that issue.
 
+{% hint style="info" %}
 Snyk continually refines our prioritization algorithm to include new factors, and updates weighting of factors, to always provide the most accurate and up-to-date representation of priority given the latest information.
+{% endhint %}
 
 Currently, these factors include:
 
@@ -39,6 +45,8 @@ A number of specific factors contribute to priority calculation for Snyk Code, i
 
 See [Snyk Code](https://docs.snyk.io/snyk-code) documentation for more details.
 
+## View scores in projects
+
 Scores can be seen on each issue in the projects view, with all issues now sorted by the Priority Score, to show you the most pressing issues first.
 
 Issues can be filtered on the left.
@@ -52,6 +60,18 @@ The **Issues** tab in the reports includes the Priority Score as it's own sortab
 Issues can also be filtered by the score.
 
 ![](../../.gitbook/assets/screen_shot_2021-07-14_at_1.43.32_pm.png)
+
+## View scores in the Snyk API
+
+Various issue-related API calls now include the scores in the response, and support filtering by the score.
+
+Read more about the relevant API calls:
+
+* [https://snyk.docs.apiary.io/\#reference/reporting-api/latest-issues/get-list-of-latest-issues](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues)
+* [https://snyk.docs.apiary.io/\#reference/reporting-api/get-list-of-issues](https://snyk.docs.apiary.io/#reference/reporting-api/get-list-of-issues)
+* [https://snyk.docs.apiary.io/\#reference/projects/all-projects/list-all-issues](https://snyk.docs.apiary.io/#reference/projects/all-projects/list-all-issues)
+
+## Settings
 
 There are no settings related to the Priority Score. They have no active impact, so are just extra metadata, so they cannot be disabled or hidden.
 

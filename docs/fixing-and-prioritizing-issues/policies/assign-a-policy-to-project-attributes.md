@@ -2,7 +2,9 @@
 
 After applying [project attributes](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/assign-a-policy-to-project-attributes) to your projects, you can create policies that apply to those attributes. Projects and policies are linked based on the attributes assigned to the policy.
 
+{% hint style="info" %}
 Policies assigned to attributes always take precedence over policies assigned to organizations.
+{% endhint %}
 
 A policy can be applied to one or multiple project attributes; but a set of attributes can only be assigned to one policy. For example, if there is already a policy applied to `Critical`**,** `Production`,`Frontend`, you cannot create another policy that matches _only_ these exact attributes.
 
@@ -16,7 +18,9 @@ To remove an attribute from a policy, uncheck the desired attribute checkbox\(es
 
 ![](../../.gitbook/assets/screenshot_2021-03-11_at_1.20.42_pm.png)
 
+{% hint style="info" %}
 You can create and save a policy where no attributes are selected, for example, if you have not yet decided which attributes should be associated with that policy. This policy does not apply to projects where all attributes are left blank.
+{% endhint %}
 
 ## Matching projects and policies
 
