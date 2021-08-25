@@ -14,15 +14,26 @@ You can add a single Dockerfile to each image that you've imported.
 **Steps:**
 
 1. From the Project tab, filter for your project and then click the settings cog to access the settings to add a Dockerfile:
+
+   ![](../../.gitbook/assets/image%20%2837%29.png)
+
 2. From the Project settings page, click Configure Dockerfile and then select the relevant Git:
 
    ![mceclip0.png](../../.gitbook/assets/mceclip0-7-.png)
 
-3. The Add Projects view appears, displaying all repositories from the Git account with which you integrated, grouped per organization and personal account:
+3. The **Add Projects** view appears, displaying all repositories from the Git account with which you integrated, grouped per organization and personal account:  
+
+
+   ![](../../.gitbook/assets/image%20%2841%29.png)
+
 4. Checkmark the relevant repo from which to import the Dockerfile.
-5. Step 2 loads:
+5. Step 2 loads:  
+
+
+   ![](../../.gitbook/assets/image%20%2845%29.png)
+
 6. Enter the relative path in the Path to your Dockerfile field in the following format: /path/dockerfile.
-7. Click Save.
+7. Click **Save**.
 
 Snyk tests the project again, this time producing any relevant base image remediation advice such as in the following example:
 

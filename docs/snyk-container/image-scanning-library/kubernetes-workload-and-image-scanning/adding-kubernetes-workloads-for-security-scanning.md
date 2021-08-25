@@ -75,23 +75,20 @@ Annotate any of the following workload types:
 
    The import screen loads, similar to the one below, displaying all namespaces from the Kubernetes environment on the left and relevant namespace workloads on the right:
 
-   ![ChooseNamespace.png](../../../.gitbook/assets/uuid-3a8568e0-b5a4-34af-d612-83466b206882-en.png)
+   ![ChooseNamespace.png](../../../.gitbook/assets/uuid-3a8568e0-b5a4-34af-d612-83466b206882-en.png)  
+  
+   We purposely ignore scanning certain namespaces which we believe are internal to Kubernetes \(any namespace starting with _**kube-\***_\), therefore you won't see those namespaces in the list, as well as the workloads they contain.  
+   The full list of ignored namespaces can be found [here](https://github.com/snyk/kubernetes-monitor/blob/master/src/supervisor/watchers/internal-namespaces.ts). This can be configured by adding the following to helm when setting up the snyk-monitor:
 
-**NOTE**
+   ```text
+      --set excludedNamespaces={kube-node-lease,local-path-storage,some_namespace}
+   ```
 
-We purposely ignore scanning certain namespaces which we believe are internal to Kubernetes \(any namespace starting with _**kube-\***_\), therefore you won't see those namespaces in the list, as well as the workloads they contain.
-
-The full list of ignored namespaces can be found [here](https://github.com/snyk/kubernetes-monitor/blob/master/src/supervisor/watchers/internal-namespaces.ts). This can be configured by adding the following to helm when setting up the snyk-monitor:
-
-```text
-   --set excludedNamespaces={kube-node-lease,local-path-storage,some_namespace}
-```
-
-1. Select one or multiple namespaces from the left side and for each namespace, select one or multiple workloads to import from the right side.
+2. Select one or multiple namespaces from the left side and for each namespace, select one or multiple workloads to import from the right side.
 
    ![Select\_namespace.gif](../../../.gitbook/assets/uuid-27db0a60-f18d-5ab0-9215-5a81e467f013-en.gif)
 
-2. When ready, click **Add selected workloads** from the top right of the screen. When the import completes, the Projects page loads and all workloads that you’ve imported appear, with a unique Kubernetes icon:
+3. When ready, click **Add selected workloads** from the top right of the screen. When the import completes, the Projects page loads and all workloads that you’ve imported appear, with a unique Kubernetes icon:
 
    ![image4.png](../../../.gitbook/assets/uuid-24e0b69a-01c3-9434-9dac-9b44864bd269-en.png)
 

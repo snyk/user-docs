@@ -2,11 +2,15 @@
 
 Snyk allows you to manually or automatically link from a Dockerfile to all container images built from it. You can use this to understand the security impact on your running applications, and understand which images can be better secured, or need to be rebuilt, when taking action and updating the Dockerfile base image.
 
+### Viewing linked images
+
 This information appears in the **LINKED IMAGES** section of the details for a project:
 
 ![](../../.gitbook/assets/mceclip3.png)
 
 You can get automatic links between imported images \(via container registry integration\) to existing Dockerfile projects. This is done by checking whether the OCI label in the image matches the path of a Dockerfile that exists in the org in Snyk.
+
+## How it works
 
 At the point of import \(or re-test\), the image is analysed, scanned for vulnerabilities and image labels are also retrieved from image manifest. Snyk then checks whether:
 

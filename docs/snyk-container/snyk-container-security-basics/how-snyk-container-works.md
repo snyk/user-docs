@@ -17,9 +17,7 @@ When Snyk Container scans an image, using any of the available integrations, we 
 * Popular unmanaged software, ie. installed outside a package manager.
 * Application packages based on the presence of a manifest file.
 
-**NOTE**
-
-the container does not need to be run as Snyk reads the info from the file system; therefore, no container or foreign code needs to be run in order to successfully scan.
+**Note:** the container does not need to be run as Snyk reads the info from the file system; therefore, no container or foreign code needs to be run in order to successfully scan.
 
 After we have the list of installed software, we look that up against our vulnerability database, which combines public sources with proprietary research.
 
@@ -37,11 +35,9 @@ We detect vulnerabilities in images based on:
 
 Check out the [Operating Systems Support](https://docs.snyk.io/snyk-container/snyk-container-security-basics/supported-operating-system-distributions) page for specific version support and our [updates](https://updates.snyk.io/) page for all the latest updates.
 
-## {% hint style="info" %}
-
-**NOTE**
-
-Snyk also supports images using packages from those distributions but without the associated package manager, such as Distroless images.
+{% hint style="info" %}
+**Note:** Snyk also supports images using packages from those distributions but without the associated package manager, such as Distroless images.
+{% endhint %}
 
 ## Unmanaged software
 

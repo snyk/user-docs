@@ -38,15 +38,15 @@ Severity levels are displayed throughout Snyk, to show this information at all t
 
 For example, in the initial dashboard:
 
-![](../../.gitbook/assets/image%20%2838%29.png)
+![](../../.gitbook/assets/image%20%2846%29.png)
 
 For your projects:
 
-![](../../.gitbook/assets/image%20%2837%29.png)
+![](../../.gitbook/assets/image%20%2843%29.png)
 
 And for each vulnerability in a project:
 
-![](../../.gitbook/assets/image%20%2836%29.png)
+![](../../.gitbook/assets/image%20%2839%29.png)
 
 See [Getting started](https://support.snyk.io/hc/en-us/categories/360000449098-Getting-started) documentation for more details of using Snyk.
 

@@ -12,7 +12,8 @@ Snyk tests and monitors ACR container images by evaluating root folders and cust
 ### Steps
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage. [![AddProjectMenu.gif](https://support.snyk.io/hc/article_attachments/360007147078/uuid-da316a4a-c823-cf03-f37f-5305446dc970-en.gif)](https://support.snyk.io/hc/article_attachments/360007147078/uuid-da316a4a-c823-cf03-f37f-5305446dc970-en.gif)
-2. Go to **Projects**, and click **Add projects**. The list of integrations already configured on your account opens, similar to the following:[![AddProjectMenu.png](https://support.snyk.io/hc/article_attachments/360007147098/uuid-dd01aab7-482f-0fc2-01de-c2427a14a0e0-en.png)](https://support.snyk.io/hc/article_attachments/360007147098/uuid-dd01aab7-482f-0fc2-01de-c2427a14a0e0-en.png)
+2. Go to **Projects**, and click **Add projects**. The list of integrations already configured on your account opens, similar to the following:  
+   [![AddProjectMenu.png](https://support.snyk.io/hc/article_attachments/360007147098/uuid-dd01aab7-482f-0fc2-01de-c2427a14a0e0-en.png)](https://support.snyk.io/hc/article_attachments/360007147098/uuid-dd01aab7-482f-0fc2-01de-c2427a14a0e0-en.png)
 
    The **Which images do you want to test?** view appears, displaying all of the available images for the registry to which you connected, grouped by each of your repositories, similar to the following:[![AddImages.png](https://support.snyk.io/hc/article_attachments/360007147118/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en.png)](https://support.snyk.io/hc/article_attachments/360007147118/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en.png)
 

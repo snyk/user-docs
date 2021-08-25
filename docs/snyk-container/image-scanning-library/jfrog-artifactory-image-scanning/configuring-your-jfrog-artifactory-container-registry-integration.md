@@ -22,7 +22,7 @@ Enable integration between one Artifactory instance as a container registry and 
 4. Enter credentials as follows:
    1. **Username and Password**—use your Artifactory login credentials.
    2. **Container registry name -** the _full URL_ for the registry you’d like to integrate with.
-5. Click Saved.
+5. Click **Saved**.
 
    ![Artifactory\_successful.png](../../../.gitbook/assets/uuid-3b329a90-394f-5ab3-af84-658b41a1edc0-en.png)
 

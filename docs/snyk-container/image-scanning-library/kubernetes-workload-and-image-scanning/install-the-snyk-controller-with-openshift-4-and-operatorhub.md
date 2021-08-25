@@ -44,13 +44,10 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
    kubectl create secret generic snyk-monitor -n snyk-monitor --from-literal=dockercfg.json={} --from-literal=integrationId=abcd1234-abcd-1234-abcd-1234abcd1234
    ```
 
-   Now, skip the next step if you're not working with any private registries.
+   Now, skip the next step if you're not working with any private registries.  
+   **Note**: The secret must be called `snyk-monitor` in order for the integration to work.
 
-**NOTE**
-
-The secret must be called `snyk-monitor` in order for the integration to work.
-
-1. If any of the images you need to scan are located in private registries, provide credentials to access those registries by creating a secret \(which must be called `snyk-monitor`\) using both the Snyk Integration ID as well as a `dockercfg` file.
+8. If any of the images you need to scan are located in private registries, provide credentials to access those registries by creating a secret \(which must be called `snyk-monitor`\) using both the Snyk Integration ID as well as a `dockercfg` file.
 
    The `dockercfg` file is necessary to allow the monitor to look up images in private registries. Usually a copy of the `dockercfg` resides in `$HOME/.docker/config.json`.
 
@@ -73,44 +70,66 @@ The secret must be called `snyk-monitor` in order for the integration to work.
       kubectl create secret generic snyk-monitor -n snyk-monitor --from-file=dockercfg.json --from-literal=integrationId=abcd1234-abcd-1234-abcd-1234abcd1234
       ```
 
-2. If your registry is using self-signed or other additional certificates you must make those available to Snyk monitor. First place the `.crt`, `.cert`, and/or `.key` files in a directory and create a ConfigMap:
+9. If your registry is using self-signed or other additional certificates you must make those available to Snyk monitor. First place the `.crt`, `.cert`, and/or `.key` files in a directory and create a ConfigMap:
 
    ```text
    kubectl create configmap snyk-monitor-certs \
            -n snyk-monitor --from-file=
    ```
 
-3. If you are using an insecure registry or your registry is using unqualified images, you can provide a `registries.conf` file.
+10. If you are using an insecure registry or your registry is using unqualified images, you can provide a `registries.conf` file.
 
-   ```text
-   [[registry]]
-   location = "internal-registry-for-example.net/bar"
-   insecure = true
-   ```
+    ```text
+    [[registry]]
+    location = "internal-registry-for-example.net/bar"
+    insecure = true
+    ```
 
-   See the [documentation](https://github.com/containers/image/blob/master/docs/containers-registries.conf.5.md) for information on the format and further examples. Once you've created the file, you can use it to create the following ConfigMap:
+    See the [documentation](https://github.com/containers/image/blob/master/docs/containers-registries.conf.5.md) for information on the format and further examples. Once you've created the file, you can use it to create the following ConfigMap:
 
-   ```text
-   kubectl create configmap snyk-monitor-registries-conf \
-           -n snyk-monitor \
-           --from-file=
-   ```
+    ```text
+    kubectl create configmap snyk-monitor-registries-conf \
+            -n snyk-monitor \
+            --from-file=
+    ```
 
-4. Log in to your OpenShift Container Platform \(OCP\) web console, navigate to OperatorHub and then search for Snyk to install the Snyk Operator.
-5. Double-check installation was successful from the Installed Operators area:
-6. Now, from the Subscription tab, create an Operator Subscription for the Snyk controller. 1. Select "A specfic namespace on the cluster" or leave the default “All namespaces on the cluster” based on your needs.
+11. Log in to your OpenShift Container Platform \(OCP\) web console, navigate to OperatorHub and then search for Snyk to install the Snyk Operator:  
 
-   **Tip**
 
-   Cluster scope is the default scope and we recommend you use this when installing the namespace so that we can scan the entire cluster. You can choose Namespaced scope, in which case the Snyk controller will watch for workloads only in the namespace in which it is deployed!
+    ![](../../../.gitbook/assets/image%20%2847%29.png)
 
-**NOTE**
+12. Double-check installation was successful from the Installed Operators area:  
 
-Snyk always uses a stable channel when scanning your workloads
 
-1. Leave the remaining default configurations as they are.
-2. Click Subscribe to make the Operator available to the namespaces on this OpenShift Container Platform cluster.
-   1. Now, create an instance of the Snyk Monitor. From the Snyk Monitor custom resource, click Create instance.
-   2. Double-check successful installation from the cluster:
-   3. After successfully installing the Snyk Operator and the instance of a Snyk Monitor, you can also view your cluster in Snyk.
+    ![](../../../.gitbook/assets/image%20%2842%29.png)  
+
+13. Now, from the Subscription tab, create an Operator Subscription for the Snyk controller:  
+
+
+    ![](../../../.gitbook/assets/image%20%2838%29.png)
+
+  
+
+
+    1.  Select "A specfic namespace on the cluster" or leave the default “All namespaces on the cluster” based on your needs.
+
+       **Tip**
+
+       Cluster scope is the default scope and we recommend you use this when installing the namespace so that we can scan the entire cluster. You can choose Namespaced scope, in which case the Snyk controller will watch for workloads only in the namespace in which it is deployed!  
+       **Note**: Snyk always uses a stable channel when scanning your workloads 
+
+    2. Leave the remaining default configurations as they are.
+    3. Click Subscribe to make the Operator available to the namespaces on this OpenShift Container Platform cluster.
+
+14. Now, create an instance of the **Snyk Monitor**. From the **Snyk Monitor** custom resource, click Create instance:  
+
+
+    ![](../../../.gitbook/assets/image%20%2844%29.png)
+
+15. Double-check successful installation from the cluster:  
+
+
+    ![](../../../.gitbook/assets/image%20%2840%29.png)
+
+16. After successfully installing the **Snyk Operator** and the instance of a **Snyk Monitor**, you can also view your cluster in Snyk.
 
