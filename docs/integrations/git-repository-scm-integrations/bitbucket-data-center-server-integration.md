@@ -11,7 +11,7 @@ Snyk's Bitbucket Data Center / Server integration allows you to continuously per
 > Make sure the newly created user has **Admin** permissions to all the repositories you need to monitor with Snyk.
 
 1. To give Snyk access to your Bitbucket DC/Server account, set up up a dedicated service account in Bitbucket DC/Server, with admin permissions. Visit [Bitbucket Server documentation ](https://confluence.atlassian.com/bitbucketserver/users-and-groups-776640439.html#Usersandgroups-Creatingauser)to learn more about creating users.
-2. In Snyk, go to the **Integrations** page and click on **Bitbucket Server** card: ![111.png](../../.gitbook/assets/111.png)
+2. In Snyk, go to the **Integrations** page and click on **Bitbucket Server** card: ![111.png](../../.gitbook/assets/111%20%281%29.png)
 3. Enter your Bitbucket DC/Server URL, and the username and password for the service account you created: ![222.png](../../.gitbook/assets/222.png)
 4. Click **Save**. Snyk connects to your Bitbucket DC/Server instance. When the connection succeeds, the following indications appear: ![333.png](../../.gitbook/assets/333.png)  You can now select the repositories for Snyk to monitor.
 5. Click **Add your Bitbucket Server repositories to Snyk** to start importing repositories to Snyk.
@@ -29,7 +29,7 @@ Snyk produces advanced security reports, allowing you to explore the vulnerabili
 
 This is an example of a project level security report:
 
-![](../../.gitbook/assets/mceclip0-22-%20%281%29.png)
+![](../../.gitbook/assets/mceclip0-22-%20%281%29%20%281%29.png)
 
 ### **Projects monitoring and automatic fix pull requests**
 
@@ -41,7 +41,7 @@ To review and adjust the automatic fix pull request settings:
 
 1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
 2. Select **Edit Settings** for Bitbucket Server
-3. Navigate to **Automatic fix pull requests**: ![777.png](../../.gitbook/assets/777.png)
+3. Navigate to **Automatic fix pull requests**: ![777.png](../../.gitbook/assets/mceclip4%20%281%29%20%282%29.png)
 
 
 

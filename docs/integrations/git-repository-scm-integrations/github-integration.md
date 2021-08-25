@@ -9,15 +9,15 @@ Please note, GitHub integrates per user rather than per org. Setting up this int
 1. Go to the Integrations page and click on “GitHub”:![mceclip1.png](../../.gitbook/assets/mceclip1-12-.png)
 2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories:
 
-   ![image16.png](../../.gitbook/assets/uuid-30383c92-fc68-c8cc-0ffe-b731c92b9967-en%20%281%29.png)
+   ![image16.png](../../.gitbook/assets/uuid-30383c92-fc68-c8cc-0ffe-b731c92b9967-en%20%282%29%20%281%29.png)
 
 3. When the GitHub authorization screen opens, click on "Authorize snyk" to provide it with an access to your repositories:
 
-   ![mceclip0.png](../../.gitbook/assets/mceclip0-21-.png)
+   ![mceclip0.png](../../.gitbook/assets/authorize%20%281%29.png)
 
 4. Select the repos you'd like to import to Snyk. When done, click on the **Add selected repositories** button, at the top of the page. Once clicked, Snyk will start scanning the selected repos for dependency files \(i.e. package.json, pom.xml, etc\) in the entire directory tree and import them to Snyk as projects:
 
-   ![uuid-b744bfb4-4a09-3f09-3275-986c855ee5be-en.jpg](../../.gitbook/assets/uuid-b744bfb4-4a09-3f09-3275-986c855ee5be-en.jpeg)
+   ![uuid-b744bfb4-4a09-3f09-3275-986c855ee5be-en.jpg](../../.gitbook/assets/which_repos%20%283%29%20%283%29.jpg)
 
 5. The imported projects now appear in your Projects page and are continuously checked for vulnerabilities.
 
@@ -31,7 +31,7 @@ Snyk will produce advanced security reports, allowing you to explore the vulnera
 
 This is an example of a project level security report:
 
-![](../../.gitbook/assets/mceclip0-22-.png)
+![](../../.gitbook/assets/mceclip0-22-%20%281%29.png)
 
 ### **2. Projects monitoring and automatic fix pull requests**
 
@@ -50,7 +50,7 @@ Snyk will test any newly created pull request in your repositories for security 
 
 This is how Snyk pull request checks appear in the Pull Request page in GitHub:
 
-### ![image10.png](../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en.png)
+### ![image10.png](../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en%20%282%29.png)
 
 You can review and adjust the pull request tests settings by navigating to the GitHub's Integration **Settings** page in Snyk \(Settings --&gt; Integration --&gt; GitHub\):
 

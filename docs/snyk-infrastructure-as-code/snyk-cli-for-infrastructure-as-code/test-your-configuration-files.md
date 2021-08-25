@@ -10,7 +10,7 @@ You can find more detailed information here
 * [Kubernetes](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kubernetes-files-with-our-cli-tool)
 
 {% hint style="info" %}
-As of version \`1.594.0 all configuration files are processed locally, ensuring that they do not leave your machine.  
+As of version 1.594.0 all configuration files are processed locally, ensuring that they do not leave your machine.  
 Earlier versions by default will send the configuration files to Snyk to be processed. We recommend you upgrade to the latest version of the CLI.
 {% endhint %}
 

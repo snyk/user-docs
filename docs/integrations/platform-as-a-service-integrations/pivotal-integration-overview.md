@@ -15,7 +15,7 @@ In order to turn on the Pivotal Web Services integration you’ll need to:
 
 In order for Snyk to be able to monitor your deployed Pivotal Web Services applications, you’ll first need to connect Snyk to your Pivotal Web Services account. You can do this by navigating to the [Integrations page](https://app.snyk.io/integrations) and clicking on “Connect to Pivotal Web Services”.
 
-![](../../.gitbook/assets/uuid-e7c43047-5065-ad28-db37-1c56e8796a8b-en-1-.png)
+![](../../.gitbook/assets/uuid-e7c43047-5065-ad28-db37-1c56e8796a8b-en-1-%20%281%29.png)
 
 This will take you to a page where you’ll be prompted to enter your Pivotal Web Services username and password. We recommend setting up a dedicated user for your Snyk organisation.
 
@@ -43,7 +43,7 @@ Once you’ve successfully connected Snyk to your Pivotal Web Services account, 
 
 In either case, you’ll see a list of any available projects on the Pivotal Web Services account you connected. Select the ones you want to monitor and click the “add to Snyk” button.
 
-![](../../.gitbook/assets/uuid-3ab9deaa-2fca-d4b8-854e-64348b9b9cee-en%20%281%29.png)
+![](../../.gitbook/assets/uuid-3ab9deaa-2fca-d4b8-854e-64348b9b9cee-en%20%281%29%20%281%29.png)
 
 As soon as you’ve added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Pivotal Web Services applications in your [project dashbard](https://app.snyk.io/projects). You’ll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to remediate.
 

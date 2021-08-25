@@ -18,7 +18,7 @@ Snyk currently scans your Kubernetes configuration files in JSON and YAML format
 1. Log in to [app.snyk.io](https://app.snyk.io/)
 2. Navigate to the relevant group and organization that you want to manage
 
-   ![AddProjectMenu.gif](../../.gitbook/assets/uuid-da316a4a-c823-cf03-f37f-5305446dc970-en.gif)
+   ![AddProjectMenu.gif](../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29.gif)
 
 **NOTE**
 

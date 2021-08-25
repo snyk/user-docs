@@ -29,7 +29,7 @@ When an image is imported to Snyk, it appears under its registry record in the *
 
 With this feature enabled, you can also see nested manifest files detected in the image and their vulnerabilities and licensing issues.
 
-![](../../.gitbook/assets/mceclip2%20%281%29%20%281%29.png)
+![](../../.gitbook/assets/mceclip2%20%281%29%20%281%29%20%281%29.png)
 
 #### Automated scanning
 

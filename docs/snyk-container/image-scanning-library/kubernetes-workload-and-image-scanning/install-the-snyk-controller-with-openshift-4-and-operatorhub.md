@@ -124,7 +124,7 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
 14. Now, create an instance of the **Snyk Monitor**. From the **Snyk Monitor** custom resource, click Create instance:  
 
 
-    ![](../../../.gitbook/assets/image%20%2844%29.png)
+    ![](../../../.gitbook/assets/image%20%2842%29%20%281%29.png)
 
 15. Double-check successful installation from the cluster:  
 

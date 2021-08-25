@@ -10,7 +10,7 @@ Snyk's Bitbucket Cloud integration allows you to continuously perform security s
 > Make sure the newly created user has **Admin** permissions to all the repositories you need to monitor with Snyk.
 
 1. To give Snyk access to your Bitbucket account, set up up a dedicated service account in Bitbucket, with admin permissions. Visit [Bitbucket documentation ](https://support.atlassian.com/bitbucket-cloud/docs/grant-access-to-a-workspace/)to learn more about creating users.
-2. In Snyk, go to the **Integrations** page and click on **Bitbucket Cloud** card: ![111.png](../../.gitbook/assets/111%20%281%29.png)
+2. In Snyk, go to the **Integrations** page and click on **Bitbucket Cloud** card: ![111.png](../../.gitbook/assets/111%20%281%29%20%281%29.png)
 3. Access your Bitbucket Cloud account and create a unique App Password for Snyk with the following permissions: **Account: Email & Read** **Workspace membership: Read Projects: Read Repositories: Read & Write Pull requests: Read & Write Webhooks: Read & Write** Follow [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html) to learn how to do it.
 4. Enter the username and the App Password for the service account you created: ![mceclip0.png](../../.gitbook/assets/mceclip0-32-.png)
 5. Click **Save**. Snyk connects to your Bitbucket Cloud account. When the connection succeeds, the following indications appear: ![mceclip1.png](../../.gitbook/assets/mceclip1-17-.png) You can now select the repositories for Snyk to monitor.
@@ -29,7 +29,7 @@ Snyk produces advanced security reports, allowing you to explore the vulnerabili
 
 This is an example of a project level security report:
 
-![](../../.gitbook/assets/mceclip0-22-%20%281%29.png)
+![](../../.gitbook/assets/mceclip0-22-%20%281%29%20%281%29.png)
 
 ### Projects monitoring and automatic fix pull requests
 

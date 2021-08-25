@@ -25,7 +25,7 @@ Once installed you can find a Snyk icon in the sidebar.
 
 Snyk’s extension provides all the suggestions in a concise and clean view containing all information you need to decide how to fix or act upon:
 
-![](../../.gitbook/assets/image3-2-%20%282%29.png)
+![](../../.gitbook/assets/image3-2-%20%282%29%20%282%29.png)
 
 ### Authentication
 
