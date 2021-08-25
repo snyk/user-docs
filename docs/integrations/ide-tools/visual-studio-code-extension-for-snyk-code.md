@@ -31,10 +31,16 @@ Snyk’s extension provides all the suggestions in a concise and clean view cont
 
 To authenticate follow the steps:
 
-1. Once the plugin is installed, click on the Snyk Icon in the left navigation bar, to show the following screen: ![image8.png](../../.gitbook/assets/image8.png)
-2. Click **Connect VS Code with Snyk**. The plugin relies on the Snyk authentication API and it will ask you to authenticate you against Snyk’s web application: ![authenticate.png](../../.gitbook/assets/authenticate.png)
+1. Once the plugin is installed, click on the Snyk Icon in the left navigation bar, to show the following screen:
+
+![image8.png](../../.gitbook/assets/image8.png)
+2. Click **Connect VS Code with Snyk**. The plugin relies on the Snyk authentication API and it will ask you to authenticate you against Snyk’s web application:
+
+![authenticate.png](../../.gitbook/assets/authenticate.png)
 3. Click **Authenticate**.
-4. After successful authentication, you will see a confirmation message: ![authentiacated.png](../../.gitbook/assets/authentiacated.png)
+4. After successful authentication, you will see a confirmation message:
+
+![authentiacated.png](../../.gitbook/assets/authentiacated.png)
 5. Close the browser window and return to the IDE. The IDE is now reading and saving the authentication on your local machine.
 
 ### Run analysis

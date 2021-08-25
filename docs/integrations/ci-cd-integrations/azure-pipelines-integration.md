@@ -42,8 +42,12 @@ To start using our task as part of your pipeline build, first install the extens
 4. Access your Azure DevOps account and navigate to **Extensions -&gt; Browse marketplace.**
 5. Search for the **Snyk Security Scan** extension, click **Get it free**.
 6. Create a new _Service Connection_ in your project via **Project Settings** —&gt; **Pipelines** —&gt; **Service Connections**
-7. Select "**Snyk Authentication**" service connection: ![ap\_-\_search.jpg](../../.gitbook/assets/ap_-_search.jpg)
-8. In the Snyk Authentication service connection form, enter the **Server URL** and the **Snyk API Token** along with a **Service connection name**: ![ap\_-\_config.jpg](../../.gitbook/assets/ap_-_config.jpg)
+7. Select "**Snyk Authentication**" service connection:
+
+![ap\_-\_search.jpg](../../.gitbook/assets/ap_-_search.jpg)
+8. In the Snyk Authentication service connection form, enter the **Server URL** and the **Snyk API Token** along with a **Service connection name**:
+
+![ap\_-\_config.jpg](../../.gitbook/assets/ap_-_config.jpg)
 9. Click on **Save**, ensuring the new service connection appears in your list of service connections.
 
 ### Add the Snyk Security Task to your pipelines

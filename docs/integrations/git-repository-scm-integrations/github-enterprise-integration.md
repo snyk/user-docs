@@ -13,15 +13,21 @@ On-premise GHE integrations are not currently supported. However, some on-premis
 
 1. Create a dedicated service account in GitHub Enterprise, with _**write**_ level or above permissions, to the repos you want to monitor with Snyk permissions. See [Required permissions scope for the GitHub integration](github-enterprise-integration.md) for details.
 2. Generate a personal access token for that account, with **repo \(all\)**, **admin:read:org**, and **admin:repo\_hooks \(read & write\)** permissions scope. See [GitHub Enterprise documentation ](https://docs.github.com/en/enterprise-server@2.22/github/authenticating-to-github/creating-a-personal-access-token)for details.
-3. **Authorize** your personal access token and Enable SSO: ![Screen\_Shot\_2021-06-01\_at\_2.13.08\_PM.png](../../.gitbook/assets/screen_shot_2021-06-01_at_2.13.08_pm.png)
-4. Go to the **Integrations** page in Snyk and click on **GitHub Enterprise**: ![GitHub.png](../../.gitbook/assets/github.png)
+3. **Authorize** your personal access token and Enable SSO:
+
+![Screen\_Shot\_2021-06-01\_at\_2.13.08\_PM.png](../../.gitbook/assets/screen_shot_2021-06-01_at_2.13.08_pm.png)
+4. Go to the **Integrations** page in Snyk and click on **GitHub Enterprise**:
+
+![GitHub.png](../../.gitbook/assets/github.png)
 5. Enter your Github Enterprise URL, and the personal access token for the service account you created:![mceclip2.png](../../.gitbook/assets/mceclip2-2-.png) ---
 
 **NOTE**
 
 You can use this integration to integrate to your GitHub Enterprise Cloud, by providing the following URL [https://api.github.com](https://api.github.com).
 
-1. Click **Save**. Snyk connects to your GitHub Enterprise instance. When the connection succeeds, the following indications appear: ![mceclip4.png](../../.gitbook/assets/mceclip4-1-.png)
+1. Click **Save**. Snyk connects to your GitHub Enterprise instance. When the connection succeeds, the following indications appear:
+
+![mceclip4.png](../../.gitbook/assets/mceclip4-1-.png)
 2. Select the repos to import to Snyk, then click **Add selected repositories**.
 3. Snyk starts scanning the selected repos for dependency files \(such as package.json\) in the entire directory tree and imports them to Snyk as projects:
 
@@ -52,7 +58,9 @@ To review and adjust the automatic fix pull request settings:
 
 1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
 2. Select **Edit Settings** for GitHub Enterprise.
-3. Navigate to **Automatic fix pull requests**: ![mceclip4.png](../../.gitbook/assets/mceclip4%20%281%29.png)
+3. Navigate to **Automatic fix pull requests**:
+
+![mceclip4.png](../../.gitbook/assets/mceclip4%20%281%29.png)
 
 **Pull request testing**
 
@@ -66,7 +74,9 @@ To review and adjust the pull request tests settings:
 
 1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
 2. Select **Edit Settings** for GitHub Enterprise.
-3. Navigate to **Default Snyk test for pull requests**: ![mceclip5.png](../../.gitbook/assets/mceclip5%20%281%29.png)
+3. Navigate to **Default Snyk test for pull requests**:
+
+![mceclip5.png](../../.gitbook/assets/mceclip5%20%281%29.png)
 
 ## Required permissions scope for the GitHub integration <a id="h_01ER1W3EZ4DXGHGKT12DWQEJV2"></a>
 

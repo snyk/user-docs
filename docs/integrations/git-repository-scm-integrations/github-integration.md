@@ -98,7 +98,9 @@ Snyk allows you to configure a specific GitHub account on whose behalf the fix a
 In order to use this feature, you'll need to do the following:
 
 1. Open GitHub's Integrations Settings page in Snyk app by clicking on _Settings_ → _Integrations_ →  _GitHub_
-2. Enable the toggle button under the _Open fix and upgrade pull requests from a fixed GitHub_ _account_  setting: ![Screen\_Shot\_2020-09-29\_at\_21.27.30.png](../../.gitbook/assets/screen-shot-2020-09-29-at-21.27.30.png)
+2. Enable the toggle button under the _Open fix and upgrade pull requests from a fixed GitHub_ _account_  setting:
+
+![Screen\_Shot\_2020-09-29\_at\_21.27.30.png](../../.gitbook/assets/screen-shot-2020-09-29-at-21.27.30.png)
 3. Follow the in-page instructions for creating a personal access token in GitHub
 4. Provide the newly generated token to Snyk so it can be used to perform operations in GitHub \(i.e. opening Fix PRs and etc\)
 

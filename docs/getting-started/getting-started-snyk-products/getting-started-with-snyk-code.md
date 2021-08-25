@@ -49,8 +49,12 @@ If you already have projects added, you can skip this step.
 Add projects to test with Snyk, by choosing repositories for Snyk to test and monitor.
 
 1. Select **Projects** from [snyk.io](http://snyk.io/).
-2. Select the tool to add the project from \(for example GitHub\): ![https://support.snyk.io/hc/article\_attachments/360012555458/Open-Source-Add-Projects.png](../../.gitbook/assets/open-source-add-projects%20%282%29.png)
-3. In **Personal and Organization repositories**, select the repositories to use: ![https://support.snyk.io/hc/article\_attachments/360012555518/IaC\_-\_select\_repo.png](../../.gitbook/assets/iac_-_select_repo.png)
+2. Select the tool to add the project from \(for example GitHub\):
+
+![https://support.snyk.io/hc/article\_attachments/360012555458/Open-Source-Add-Projects.png](../../.gitbook/assets/open-source-add-projects%20%282%29.png)
+3. In **Personal and Organization repositories**, select the repositories to use:
+
+![https://support.snyk.io/hc/article\_attachments/360012555518/IaC\_-\_select\_repo.png](../../.gitbook/assets/iac_-_select_repo.png)
 4. Click **Add selected repositories** to import the selected repositories into your projects. This sets Snyk to run a regular check \(daily by default\) for your proprietary code vulnerabilities.
 5. A progress bar appears: click **View log** to see log results.
 6. Project import completes.

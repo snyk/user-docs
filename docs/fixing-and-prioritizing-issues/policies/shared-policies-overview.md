@@ -17,7 +17,9 @@ This feature is available to Enterprise customers. See [Pricing plans](https://s
 
 ![](../../.gitbook/assets/screen_shot_2021-08-11_at_2.15.48_pm.png)
 
-The Policy manager appears similar to the following: ![Screenshot\_2021-03-26\_at\_11.04.50\_am.png](../../.gitbook/assets/screenshot_2021-03-26_at_11.04.50_am.png)
+The Policy manager appears similar to the following:
+
+![Screenshot\_2021-03-26\_at\_11.04.50\_am.png](../../.gitbook/assets/screenshot_2021-03-26_at_11.04.50_am.png)
 
 ## Default policies <a id="h_01F2R7AA82B5249CFE8KPG4J7N"></a>
 
