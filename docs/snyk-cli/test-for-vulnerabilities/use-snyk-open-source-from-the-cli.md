@@ -41,8 +41,6 @@ The way by which Snyk analyzes and builds the tree then varies depending on the 
 * analysis with our CLI tool 
 * import from our app
 
-## Note
-
 {% hint style="info" %}
 **NOTE**  
 Additional and more specific details are provided per language, in [Language support](https://support.snyk.io/hc/en-us/categories/360000456257-Language-package-manager-support).

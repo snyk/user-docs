@@ -172,6 +172,7 @@
     * [Understanding configuration scan issues](snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-configuration-scan-issues.md)
   * [IaC functions](snyk-infrastructure-as-code/iac-functions/README.md)
     * [View Infrastructure as Code issues](snyk-infrastructure-as-code/iac-functions/view-infrastructure-as-code-issues.md)
+    * [Untitled](snyk-infrastructure-as-code/iac-functions/untitled.md)
 * [Snyk CLI](snyk-cli/README.md)
   * [Guides for our CLI](snyk-cli/guides-for-our-cli/README.md)
     * [Getting started with the CLI](snyk-cli/guides-for-our-cli/getting-started-with-the-cli.md)

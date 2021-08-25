@@ -1,12 +1,16 @@
 # Automatic remediation with snyk fix
 
+{% hint style="info" %}
 This feature is currently in beta. We would appreciate any feedback you might have - contact us at [snyk-fix-feedback@snyk.io](mailto:snyk-fix-feedback@snyk.io).
+{% endhint %}
 
 While using the **snyk test** command, actionable remediation for supported ecosystems is shown in the scan results.
 
 **snyk fix** is a new CLI command that aims to automatically apply the recommended updates for supported ecosystems.
 
+{% hint style="info" %}
 Please ensure you use the latest version of CLI \([v1.652.0](https://github.com/snyk/snyk/releases/tag/v1.652.0) or later\) to use **snyk fix**.
+{% endhint %}
 
 ```text
 Tested 78 dependencies for known issues, found 34 issues, 145 vulnerable paths.Issues to fix by upgrading dependencies:  Upgrade django@2.2.13 to django@2.2.22 to fix
@@ -63,9 +67,14 @@ Support is available for the following.
 * **Pip** projects with **requirements.txt** files \(or custom named files, for example **prod.txt**\)
 * **Pipenv** projects with **Pipfile & Pipfile.lock** files
 * **Poetry** projects with **pyproject.toml & Poetry.lock** files
+
+### Usage examples
+
 * **snyk fix --file=requirements.txt**
 * **snyk fix --file=base.txt --package-manager=pip**
 * **snyk fix --all-projects**
+
+## Remediation notes
 
 ## Python \(pip\)
 
@@ -109,6 +118,8 @@ Snyk delegates to \`pipenv\` directly to update dependencies to the specified re
 ## Python \(poetry\)
 
 Snyk delegates to \`poetry\` directly to update dependencies to the specified recommended versions. All \`poetry\` environment variables and behaviours are preserved as much as possible.
+
+## Troubleshooting
 
 Run in debug mode to get more information on any errors.
 

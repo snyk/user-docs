@@ -1,7 +1,5 @@
 # Install the Snyk CLI
 
-Install the Snyk CLI
-
 Use our Snyk CLI tool to find and fix known vulnerabilities in your dependencies, both ad hoc and as part of your CI \(Build\) system.
 
 The Snyk CLI requires you to authenticate with your account before using it. See [Authenticate the CLI with your account.](https://support.snyk.io/hc/en-us/articles/360004008258)
@@ -36,6 +34,8 @@ Once installed, you need to authenticate with your Snyk account:
 ```text
 snyk auth
 ```
+
+![gif\_authenticate\_CLI.gif](https://support.snyk.io/hc/article_attachments/360006979538/uuid-7f427e54-45f8-910e-98c5-2016a27d29b0-en.gif)
 
 To test your installation change directory into a folder containing a supported package manifest file \(package.json, pom.xml, composer.lock, etc.\) and run:
 
@@ -107,4 +107,9 @@ From Windows environments, you can use Scoop to install our Snyk CLI tool. The r
    ```text
    scoop install snyk
    ```
+
+## See also
+
+* [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-19fc37f2-b686-11ed-b85c-4789e90c8dfc)
+*  [CLI reference](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0)
 
