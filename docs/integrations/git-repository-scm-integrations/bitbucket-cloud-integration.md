@@ -12,13 +12,29 @@ Snyk's Bitbucket Cloud integration allows you to continuously perform security s
 1. To give Snyk access to your Bitbucket account, set up up a dedicated service account in Bitbucket, with admin permissions. Visit [Bitbucket documentation ](https://support.atlassian.com/bitbucket-cloud/docs/grant-access-to-a-workspace/)to learn more about creating users.
 2. In Snyk, go to the **Integrations** page and click on **Bitbucket Cloud** card:
 
-![111.png](../../.gitbook/assets/111%20%281%29%20%281%29.png) 3. Access your Bitbucket Cloud account and create a unique App Password for Snyk with the following permissions: **Account: Email & Read** **Workspace membership: Read Projects: Read Repositories: Read & Write Pull requests: Read & Write Webhooks: Read & Write** Follow [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html) to learn how to do it. 4. Enter the username and the App Password for the service account you created:
+![111.png](../../.gitbook/assets/111%20%281%29%20%281%29.png)
 
-![mceclip0.png](../../.gitbook/assets/mceclip0-32-.png) 5. Click **Save**. Snyk connects to your Bitbucket Cloud account. When the connection succeeds, the following indications appear:
+3. Access your Bitbucket Cloud account and create a unique App Password for Snyk with the following permissions: **Account: Email & Read** **Workspace membership: Read Projects: Read Repositories: Read & Write Pull requests: Read & Write Webhooks: Read & Write** Follow [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html) to learn how to do it. 
 
-![mceclip1.png](../../.gitbook/assets/mceclip1-17-.png) You can now select the repositories for Snyk to monitor. 6. Click **Add your Bitbucket Cloud repositories to Snyk** to start importing repositories to Snyk. 7. Select the repositories to import to Snyk when prompted, then click **Add selected repositories**. 8. Snyk scans the selected repositories for dependency files \(such as package.json and pom.xml\) in the entire directory tree, and import them to Snyk as projects:
+4. Enter the username and the App Password for the service account you created:
 
-![444.png](../../.gitbook/assets/444%20%282%29%20%284%29.png) 9. The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
+![mceclip0.png](../../.gitbook/assets/mceclip0-32-.png)
+
+5. Click **Save**. Snyk connects to your Bitbucket Cloud account. When the connection succeeds, the following indications appear:
+
+![mceclip1.png](../../.gitbook/assets/mceclip1-17-.png)
+
+You can now select the repositories for Snyk to monitor. 
+
+6. Click **Add your Bitbucket Cloud repositories to Snyk** to start importing repositories to Snyk. 
+
+7. Select the repositories to import to Snyk when prompted, then click **Add selected repositories**. 
+
+8. Snyk scans the selected repositories for dependency files \(such as package.json and pom.xml\) in the entire directory tree, and import them to Snyk as projects:
+
+![444.png](../../.gitbook/assets/444%20%282%29%20%284%29.png)
+
+9. The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
 ## Bitbucket Cloud Integration Features
 
@@ -36,7 +52,9 @@ This is an example of a project level security report:
 
 Snyk frequently scans your projects on either a daily or a weekly basis. When new vulnerabilities are found, it notifies you by email and by opening an automated pull requests with fixes to repositories.
 
-Here is an example of a fix pull request opened by Snyk:![666.png](../../.gitbook/assets/666.png)
+Here is an example of a fix pull request opened by Snyk:
+
+![666.png](../../.gitbook/assets/666.png)
 
 To review and adjust the automatic fix pull request settings:
 
@@ -50,7 +68,9 @@ To review and adjust the automatic fix pull request settings:
 
 Snyk tests any newly created pull request in your repositories for security vulnerabilities, and sends a build check to Bitbucket Cloud. You can to see whether the pull request introduces new security issues, directly from Bitbucket Cloud.
 
-This is how Snyk pull request build check appears in the **Pull Request** page in Bitbucket Cloud:![888.png](../../.gitbook/assets/888.png)
+This is how Snyk pull request build check appears in the **Pull Request** page in Bitbucket Cloud:
+
+![888.png](../../.gitbook/assets/888.png)
 
 To review and adjust the pull request tests settings,
 
