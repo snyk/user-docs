@@ -21,7 +21,6 @@ Contact Snyk for a full list of support for frameworks, libraries and vulnerabil
 
 The following are the supported extensions:
 
-* ASPX
 * CS
 * ejs
 * es
@@ -39,6 +38,8 @@ The following are the supported extensions:
 #### Framework support
 
 To support a specific framework, Snyk Code needs to both support the relevant language, and to be trained on projects using the framework. The found patterns are then annotated by our security team and extended by curated content.
+
+While Snyk Code supports ASP.NET and ASP.NET Core frameworks, it does not currently analyze .aspx or .cshtml files for vulnerabilities
 
 #### JavaScript frameworks
 

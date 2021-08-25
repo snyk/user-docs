@@ -11,14 +11,14 @@ To add images from GitHub container registry to Snyk:
 
 **Steps:**
 
-1. Log in to your account and navigate to the relevant group and organization that you want to manage.  ![AddProjectMenu.gif](../../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29.gif)
+1. Log in to your account and navigate to the relevant group and organization that you want to manage.  ![AddProjectMenu.gif](../../../.gitbook/assets/uuid-da316a4a-c823-cf03-f37f-5305446dc970-en.gif)
 2. Under the **Projects** tab, click **Add project**. The list of integrations already configured on your account opens. Select the **GitHub container registry** option or **Other** if **GitHub container registry** doesn’t appear.
-3. The **Which images do you want to test?** view appears, displaying all of the available images for your connected registry, grouped by each of your repositories, similar to the following:  
+3. The **Which images do you want to test?** view appears, displaying all of the available images for your connected registry, grouped by each of your repositories, similar to the following:
 
-   ![mceclip0.png](../../../.gitbook/assets/mceclip0-13-.png)    
+   ![mceclip0.png](../../../.gitbook/assets/mceclip0-13-.png)  
    **Note**: GitHub Container Registry doesn't follow docker v2 API, therefore it is not possible to list images in repos. Due to that, you will need to manually specify the images you wish to scan.
 
-4. Select single or multiple images to be imported to Snyk. Selection can be done by choosing a specific image or selecting an entire repository. You can also search by image name to find specific images to import. To finish, click **Add selected repositories** on the top-right. 
+4. Select single or multiple images to be imported to Snyk. Selection can be done by choosing a specific image or selecting an entire repository. You can also search by image name to find specific images to import. To finish, click **Add selected repositories** on the top-right.
 5. A status bar appears at the top of the page as the images are imported; you can continue working in the meantime.
 6. When the import ends:
    * You can view the newly imported image in the **Projects** page \(marked with a **NEW** tag\). Images are grouped by repository and are each linked individually to a detailed **Project** page.

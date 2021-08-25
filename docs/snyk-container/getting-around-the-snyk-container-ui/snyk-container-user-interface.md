@@ -29,9 +29,9 @@ When an image is imported to Snyk, it appears under its registry record in the *
 
 With this feature enabled, you can also see nested manifest files detected in the image and their vulnerabilities and licensing issues.
 
-![](../../.gitbook/assets/mceclip2%20%281%29%20%281%29%20%281%29.png)
+![](../../.gitbook/assets/mceclip2%20%281%29%20%281%29.png)
 
-#### Automated scanning
+### Automated scanning
 
 Snyk scans the image regularly based on your project’s settings, and updates you via email or Slack - based on your configuration - when any new vulnerabilities are identified in both the operating system and application dependencies.
 
@@ -69,6 +69,4 @@ These are the current limitations of the language support:
 **Java**
 
 * Scan only the top level JAR - we do not currently unpack the JAR
-
-
 
