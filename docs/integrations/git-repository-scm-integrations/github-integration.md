@@ -6,18 +6,21 @@ Please note, GitHub integrates per user rather than per org. Setting up this int
 
 ## Setting up a GitHub Integration
 
-1. Go to the Integrations page and click on “GitHub”:![mceclip1.png](../../.gitbook/assets/mceclip1-12-.png)
+1. Go to the Integrations page and click on “GitHub”:
+
+![mceclip1.png](../../.gitbook/assets/mceclip1-12-.png)
+
 2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories:
 
-   ![image16.png](../../.gitbook/assets/uuid-30383c92-fc68-c8cc-0ffe-b731c92b9967-en%20%282%29%20%281%29.png)
+![image16.png](../../.gitbook/assets/uuid-30383c92-fc68-c8cc-0ffe-b731c92b9967-en%20%282%29%20%281%29.png)
 
 3. When the GitHub authorization screen opens, click on "Authorize snyk" to provide it with an access to your repositories:
 
-   ![mceclip0.png](../../.gitbook/assets/authorize%20%281%29.png)
+![mceclip0.png](../../.gitbook/assets/authorize%20%281%29.png)
 
 4. Select the repos you'd like to import to Snyk. When done, click on the **Add selected repositories** button, at the top of the page. Once clicked, Snyk will start scanning the selected repos for dependency files \(i.e. package.json, pom.xml, etc\) in the entire directory tree and import them to Snyk as projects:
 
-   ![uuid-b744bfb4-4a09-3f09-3275-986c855ee5be-en.jpg](../../.gitbook/assets/which_repos%20%283%29%20%283%29.jpg)
+![uuid-b744bfb4-4a09-3f09-3275-986c855ee5be-en.jpg](../../.gitbook/assets/which_repos%20%283%29%20%283%29.jpg)
 
 5. The imported projects now appear in your Projects page and are continuously checked for vulnerabilities.
 
@@ -36,6 +39,7 @@ This is an example of a project level security report:
 ### **2. Projects monitoring and automatic fix pull requests**
 
 Snyk will frequently scan your projects on either a daily or a weekly basis. When new vulnerabilities are found, it will notify you by email and by opening an automated pull requests with fixes to repositories. Here is an example of a fix pull request opened by Snyk:  
+
 ![image7.png](../../.gitbook/assets/uuid-6cfdaf0b-c349-468d-fe65-4f80bad110ea-en.png)
 
 You can review and adjust the automatic fix pull request settings by navigating to the GitHub's Integration Settings page in Snyk \(Settings --&gt; Integration --&gt; GitHub\):
@@ -50,7 +54,7 @@ Snyk will test any newly created pull request in your repositories for security 
 
 This is how Snyk pull request checks appear in the Pull Request page in GitHub:
 
-### ![image10.png](../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en%20%282%29.png)
+![image10.png](../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en%20%282%29.png)
 
 You can review and adjust the pull request tests settings by navigating to the GitHub's Integration **Settings** page in Snyk \(Settings --&gt; Integration --&gt; GitHub\):
 
@@ -63,9 +67,12 @@ You can review and adjust the pull request tests settings by navigating to the G
 1. Operations that are triggered via the Snyk UI, for example, opening a Fix PR or retesting a project are performed on behalf of the acting user. Therefore, a user that wants to perform this operation in GitHub via the Snyk UI, must connect their GitHub account to Snyk and have the required permissions scope for the repositories they would like to perform these operations for, [see this for more details](github-integration.md).
 2. Operations which are not triggered via the UI, as daily / weekly tests and automatic PRs \(fix and upgrade\) are performed on behalf of a random Snyk organization members who have connected their GitHub accounts to Snyk and have the required permissions scope for the repository.
 
+---
 **NOTE**
 
 a Snyk organization admin can configure a [specific GitHub account on whose behalf the PRs will be opened](opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md). In this case, Snyk will continue using a random Snyk organization member’s GitHub account to perform all the other operations. Therefore, using this feature does not eliminate the need for connecting users’ GitHub accounts to Snyk.
+
+---
 
 ### Brokered GitHub Integrations
 
@@ -101,6 +108,7 @@ In order to use this feature, you'll need to do the following:
 2. Enable the toggle button under the _Open fix and upgrade pull requests from a fixed GitHub_ _account_  setting:
 
 ![Screen\_Shot\_2020-09-29\_at\_21.27.30.png](../../.gitbook/assets/screen-shot-2020-09-29-at-21.27.30.png)
+
 3. Follow the in-page instructions for creating a personal access token in GitHub
 4. Provide the newly generated token to Snyk so it can be used to perform operations in GitHub \(i.e. opening Fix PRs and etc\)
 
@@ -149,9 +157,13 @@ Additionally, it is required to confirm that Snyk is not enabled on any existing
 
 Once you’re vulnerability free, you can put a badge on your README showing your package has no known security holes. This will show your users you care about security, and tell them that they should care too.
 
-If there are no vulnerabilities, this is indicated by a green badge.![image5.png](../../.gitbook/assets/uuid-cb438aa4-226e-2109-f901-c59ca233732e-en.png)
+If there are no vulnerabilities, this is indicated by a green badge.
 
-If vulnerabilities have been found, the red badge will show the number of vulnerabilities.![image13.png](../../.gitbook/assets/uuid-96d6b4d1-afb7-a2bd-093d-eaa96e2ac2c1-en.png)
+![image5.png](../../.gitbook/assets/uuid-cb438aa4-226e-2109-f901-c59ca233732e-en.png)
+
+If vulnerabilities have been found, the red badge will show the number of vulnerabilities.
+
+![image13.png](../../.gitbook/assets/uuid-96d6b4d1-afb7-a2bd-093d-eaa96e2ac2c1-en.png)
 
 To show a badge for a given Node.js, Ruby or Java GitHub repository, copy the relevant snippet below and replace “{username}/{repo}” with the GitHub username and repo you want to test.
 
@@ -169,9 +181,13 @@ For example, to show a badge for the 4.x branch of the express repo, use the URL
 
 **Styles**
 
-To change the style of the badge, you can add the following query parameters after badge.svg:![image1.png](../../.gitbook/assets/uuid-cb438aa4-226e-2109-f901-c59ca233732e-en.png)
+To change the style of the badge, you can add the following query parameters after badge.svg:
 
-`?style=flat-square`![image1.png](../../.gitbook/assets/uuid-cb438aa4-226e-2109-f901-c59ca233732e-en.png)
+![image1.png](../../.gitbook/assets/uuid-cb438aa4-226e-2109-f901-c59ca233732e-en.png)
+
+`?style=flat-square`
+
+![image1.png](../../.gitbook/assets/uuid-cb438aa4-226e-2109-f901-c59ca233732e-en.png)
 
 `style=plastic`
 
