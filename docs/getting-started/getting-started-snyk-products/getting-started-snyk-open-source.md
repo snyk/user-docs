@@ -35,7 +35,9 @@ Choose a source code integration, to allow Snyk to work on a project.
 1. Log in to Snyk.io.
 2. Select **Integrations &gt; Source control**.
 3. Click the source control system \(for example, GitHub\) to integrate with Snyk: 
+
 ![Screenshot\_2021-06-22\_at\_10.58.18.png](../../.gitbook/assets/screenshot-2021-06-22-at-10.58.18.png)
+
 4. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
 
 See [DevOps integrations & languages](https://support.snyk.io/hc/en-us/articles/360011733538-DevOps-integrations-languages) for more details
