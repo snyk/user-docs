@@ -1,6 +1,6 @@
 # Snyk Code
 
-**Integrated platform**
+## **Integrated platform**
 
 Snyk Code expands the Snyk cloud-native application security platform, supporting all elements for a modern software supply chain. For a cloud-native application, this provides security for:
 
@@ -49,6 +49,8 @@ For every issue, Code also provides a link to the lines in the relevant files, t
 ![](../.gitbook/assets/image2-2-.png)
 
 Snyk Code also provides rich curated additional information for many suggestions.
+
+## Supported integrations
 
 Snyk Code integrates with the cloud versions of:
 

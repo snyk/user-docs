@@ -10,7 +10,7 @@ Use Snyk Code with the standard Snyk web interface to find and fix vulnerabiliti
 See [Getting started with Snyk Code](https://support.snyk.io/hc/en-us/articles/360016765157-Getting-started-with-Snyk-Code) for details of how to import and scan projects.
 {% endhint %}
 
-1. In your **Projects** area, select the project to open: ![select-project.png](../.gitbook/assets/select-project.png)
+1. In your **Projects** area, select the project to open:  ![select-project.png](../.gitbook/assets/select-project.png)
 2. Snyk Code displays information and vulnerability cards for that project: ![SnykCofe\_Priority\_Score.png](../.gitbook/assets/snykcofe_priority_score.png)
 
 Information available shows standard Snyk project information \(see [Snyk projects](https://support.snyk.io/hc/en-us/sections/360004724958-Snyk-projects)\), including:
@@ -69,7 +69,9 @@ See [Ignoring issues in Snyk Code](https://support.snyk.io/hc/en-us/articles/360
 
 Click **Full details** from a vulnerability card to view more information:
 
-![Data flow page preview.](../.gitbook/assets/data-flow.png) ![Fix analysis page preview.](../.gitbook/assets/fix-analysis.png)
+![Data flow page preview.](../.gitbook/assets/data-flow.png)
+
+![Fix analysis page preview.](../.gitbook/assets/fix-analysis.png)
 
 Full details include all the information in the vulnerability card, plus:
 
@@ -81,7 +83,7 @@ Full details include all the information in the vulnerability card, plus:
 ### Open the source code file
 
 1. Click the code link to open the source code file itself \(in this example, in GitHub\): ![Open-code1.png](https://support.snyk.io/hc/article_attachments/360015998577/Open-code1.png)
-2. The file opens, showing you exactly where to fix the vulnerability \(in this example, by adding the sanitation required to the input\).![Open-code2.png](https://support.snyk.io/hc/article_attachments/360015999237/Open-code2.png)
+2. The file opens, showing you exactly where to fix the vulnerability \(in this example, by adding the sanitation required to the input\). ![Open-code2.png](https://support.snyk.io/hc/article_attachments/360015999237/Open-code2.png)
 3. You can now make the fix as required, to address the vulnerability in your code.
 
 ## Example: Cross-site Scripting \(XSS\)
