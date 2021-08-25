@@ -60,9 +60,7 @@ By default, Snyk CLI scans only the current project \(the project in the root of
   snyk test --all-sub-projects
   ```
 
-**NOTE**
-
-Each of the individual sub-projects appears as a separate Snyk project in the UI.
+**Note:** Each of the individual sub-projects appears as a separate Snyk project in the UI.
 
 * To scan a specific project \(for example, _myapp_\):
 
@@ -125,13 +123,13 @@ To avoid such conflicts:
   --configuration-matching=prodReleaseRuntimeClasspath
   ```
 
-* **Explicitly specify the dependency configuration:** modify intra-project dependencies in your build.gradle file\(s\) to use a specific configuration:
+* **Explicitly specify the dependency configuration:** modify intra-project dependencies in your build.gradle file\(s\) to use a specific configuration
 
-```text
-  dependencies {
-      implementation project(path: ':mymodulewithvariants', configuration: 'default')
-  }
-```
+  ```text
+    dependencies {
+        implementation project(path: ':mymodulewithvariants', configuration: 'default')
+    }
+  ```
 
 * **Suggest configuration attributes:** if you receive an error when running the command, the error may indicate which attribute values are available, while the error details from Gradle also indicate which dependency variants match which attributes. Using these details, add the attribute filter option.  
   For example:

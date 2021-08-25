@@ -10,7 +10,7 @@ For customers who already have their own products, you can still benefit from Sn
 
 1. Snyk helps you to set an integration up for your company.
 2. Snyk provides documentation with instructions for access.
-3. Snyk sends you DB information, typically as a JSON file, containing the DB information \(see [sample code](https://snyk.io/partners/api/v4/vulndb/sample.json)\) **NOTE**: we recommend that you save the file in a database.
+3. Snyk sends you DB information, typically as a JSON file, containing the DB information \(see [sample code](https://snyk.io/partners/api/v4/vulndb/sample.json)\)  **Note**: we recommend that you save the file in a database.
 4. You write code to use the DB information in your systems.
 
 ## About the DB

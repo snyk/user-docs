@@ -5,7 +5,7 @@ Snyk offers security scanning to test your projects for vulnerabilities, both th
 The following describes how to use Snyk to scan your .NET projects:
 
 {% hint style="info" %}
-**NOTE**  
+**Note**  
 Features might not be available, depending on your subscription plan.
 {% endhint %}
 
@@ -19,6 +19,7 @@ Features might not be available, depending on your subscription plan.
 Once we’ve built the tree, we can use our [vulnerability database ](https://snyk.io/vuln)to find vulnerabilities in any of the packages anywhere in the dependency tree.
 
 {% hint style="info" %}
+**Note**  
 In order to scan your dependencies, you must ensure you have first installed the relevant package manager, and that your project contains the supported manifest files
 {% endhint %}
 
@@ -39,9 +40,7 @@ Examples of supported project files that resolve into **project.assets.json** in
 * \*.vbproj
 * \*.fsproj
 
-**NOTE**
-
-Project files can be combined with [lock files](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files#locking-dependencies) for a more deterministic **project.assets.json** resolution
+**Note:** Project files can be combined with [lock files](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files#locking-dependencies) for a more deterministic **project.assets.json** resolution
 
 ### Dependencies managed by packages.config
 
@@ -53,7 +52,7 @@ Examples of supported project files that resolve into **packages** include:
 
 * packages.config
 
-**NOTE** While you should also be able to run `snyk test` without previously installing dependencies this will result in less accurate vulnerability results
+**Note:** While you should also be able to run `snyk test` without previously installing dependencies this will result in less accurate vulnerability results
 
 ### Dependencies managed by Paket
 
@@ -153,7 +152,22 @@ A .NET project can target multiple target frameworks. Snyk creates a separate de
 
 No import support currently.
 
+#### **Git settings for .NET**
+
 From the Snyk UI, you can configure whether Snyk should scan your entire project, including the build dependencies, or if the build dependencies should be skipped.
+
+**Prerequisites**
+
+* A .NET build file is required for the Snyk test so that Snyk can analyze target frameworks for this project.
+* **For CLI:** When running Snyk test, we check the first file we find for testing. If you want to check all of the .NET manifest files included in a single solution, then use the --file parameter, similar to the following:
+
+  ```text
+  $ snyk test --file=myApp.sln
+  ```
+
+  * Ensure you've installed the relevant package manager before you begin using the Snyk CLI tool.
+  * Ensure you've included the relevant manifest files supported by Snyk before testing.
+  * Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81) as well.
 
 **Update language preferences**
 

@@ -6,16 +6,16 @@ This example shows how Snyk can integrate into your GitHub-based workflow.
 
 1. Open up [Snyk CLI](https://docs.snyk.io/snyk-cli), and run a git clone command on the **goof** repository.  
 
-```text
-   git clone https://github.com/snyk/goof.git
-```
+   ```text
+      git clone https://github.com/snyk/goof.git
+   ```
 
-1. Create a new branch, add vulnerabilities on this branch, then merge changes back to GitHub as a Pull Request:  
+2. Create a new branch, add vulnerabilities on this branch, then merge changes back to GitHub as a Pull Request: 
 
-```text
-   git branch add_vulns
-   git checkout add_vulns
-```
+   ```text
+      git branch add_vulns
+      git checkout add_vulns
+   ```
 
 ## Step 2: Add an open source dependency
 
@@ -78,7 +78,9 @@ Tip: if this file already exists, run rm package-lock.json to remove it**.**
 GitHub has received your changes on your **add\_vulns** branch.
 ```
 
-* In GitHub, click **Compare & pull request** to compare the **add\_vulns** branch with the **master** branch and generate a pull request:  ![click-compare.png](../../.gitbook/assets/click-compare.png)
+* In GitHub, click **Compare & pull request** to compare the **add\_vulns** branch with the **master** branch and generate a pull request:
+
+![click-compare.png](../../.gitbook/assets/click-compare.png)
 
 ## Step 4: Snyk tests pull request checks
 

@@ -22,7 +22,7 @@ Choose a container registry integration, to connect the registry with Snyk:
 1. Log in to Snyk.io.
 2. Select **Integrations**.
 3. Select a **Container registries** entry.
-4. Click the entry to integrate with Snyk: ![container-select-integration.png](../../.gitbook/assets/container-select-integration.png)
+4. Click the entry to integrate with Snyk:  ![container-select-integration.png](../../.gitbook/assets/container-select-integration.png)
 5. Fill in the account credentials and other details as prompted, then save the changes, to integrate this entry with Snyk:
 
    ![Container-Account-credentials.png](../../.gitbook/assets/container-account-credentials.png)
@@ -47,7 +47,7 @@ If you encounter any errors during import, see the [Importing projects](https://
 
 You can now see vulnerability results for imported projects.
 
-1. Select **Projects**, then click on the imported project entry under its registry record, to see vulnerability information for that project. ![image2.png](../../.gitbook/assets/mceclip2%20%281%29.png) Here you can see a summary of the severity of the detected vulnerabilities.
+1. Select **Projects**, then click on the imported project entry under its registry record, to see vulnerability information for that project.  ![image2.png](../../.gitbook/assets/mceclip2%20%281%29.png)  Here you can see a summary of the severity of the detected vulnerabilities.
 2. Click on an entry to see details of vulnerabilities found:
 
    ![image5.png](../../.gitbook/assets/image5-1-.png)

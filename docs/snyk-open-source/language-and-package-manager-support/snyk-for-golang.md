@@ -7,7 +7,7 @@ The following describes how to use Snyk to scan your Go projects:
 #### Features <a id="h_01ESM3GFNMN0F7ART59AEK97TM"></a>
 
 {% hint style="info" %}
-**NOTE**  
+**Note**  
 Features might not be available, depending on your subscription plan.
 {% endhint %}
 
@@ -60,13 +60,12 @@ In order to build the dependency tree Snyk analyzes your `vendor/vendor.json` fi
 
 When testing Govendor projects via the CLI Snyk requires dependencies to be installed, run `govendor sync` to achieve this.
 
-#### Git services for Go projects <a id="h_01EFH2KBK8MDKV4M7YW8CTE25Z"></a>
+### Git services for Go projects
 
-**Go Modules**
-
-### Note
+#### **Go Modules**
 
 {% hint style="info" %}
+**Note**  
 For Go Modules projects imported via Git, dependencies are resolved at the _module_ level rather than the _package_ level, as we do not have full access to your project source code.  
 This means you may see more issues reported than for projects tested in the CLI, as we report all vulnerabilities for each module not just the package\(s\) referenced in your source code.
 {% endhint %}

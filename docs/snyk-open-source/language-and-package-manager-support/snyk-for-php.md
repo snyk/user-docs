@@ -4,9 +4,10 @@ Snyk offers security scanning to test your projects for vulnerabilities, both th
 
 The following describes how to use Snyk to scan your PHP projects:
 
-## Note
+## Features
 
 {% hint style="info" %}
+**Note**  
 Features might not be available, depending on your subscription plan.
 {% endhint %}
 
@@ -19,7 +20,7 @@ Features might not be available, depending on your subscription plan.
 Once we’ve built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in the dependency tree.
 
 {% hint style="info" %}
-**NOTE**  
+**Note**  
 In order to scan your dependencies, you must ensure you have first installed the relevant package manager, and that your project contains the supported manifest files.
 {% endhint %}
 
@@ -65,12 +66,14 @@ By default, Snyk scans your production dependencies. From the Snyk UI you can co
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage
 2. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt;  **Languages**.
-3. Click **Edit settings** for PHP and select Scan dev dependencies to set for your PHP projects in the specific organization to include both development and production dependencies.
+3. Click **Edit settings** for PHP and select **Scan dev dependencies** to set for your PHP projects in the specific organization to include both development and production dependencies.
 4. Click **Update settings**.
 
    These settings will then be applied to all newly imported projects, and once re-tested, to all existing projects.
 
 ## Troubleshooting for your PHP projects
+
+### Error messages
 
 The following error messages may appear for you when working with your PHP projects:
 

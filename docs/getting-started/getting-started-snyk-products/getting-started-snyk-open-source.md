@@ -7,7 +7,7 @@ This process describes using the Snyk.io UI and a source code management system.
 You can also use an [IDE tool](https://support.snyk.io/hc/en-us/sections/360001138118-IDE-tools) or a [CI/CD integration](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations). See [Integrations](https://docs.snyk.io/integrations) for more details.
 {% endhint %}
 
-**Using the CLI tool**
+### **Using the CLI tool**
 
 The [Snyk CLI tool](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli) allows you to get started using the command line - for example, to install on npm:
 
@@ -68,7 +68,7 @@ You can now view vulnerability results for imported projects. The **Projects** t
 
 See [View project information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information) for more details.
 
-### Stage 4: Fix vulnerabilities
+## Stage 4: Fix vulnerabilities
 
 For JavaScript, Ruby and Java projects, Snyk can remediate your vulnerabilities via fix pull/merge requests:
 

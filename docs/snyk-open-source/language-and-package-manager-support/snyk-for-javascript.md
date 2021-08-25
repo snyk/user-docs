@@ -180,7 +180,7 @@ We build the dependency tree based on these files:
 ### Yarn Workspaces
 
 {% hint style="info" %}
-**NOTE**  
+**Note**  
 Git support for Yarn Workspaces is enabled for all projects in organisations created after March 3rd 2021. To enable this feature for organisations created before this date please contact support@snyk.io.
 {% endhint %}
 
@@ -191,8 +191,6 @@ Fix Pull/Merge Requests are not supported for Yarn Workspaces. The remediation a
 Commit status checks fail if the `package.json` and the root `yarn.lock` are out of sync.
 
 Commit status checks always use the root level `yarn.lock` and workspace `package.json` for tests.
-
-### Warning
 
 {% hint style="info" %}
 **Warning**  

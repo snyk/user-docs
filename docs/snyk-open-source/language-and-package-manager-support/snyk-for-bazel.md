@@ -210,10 +210,10 @@ Here are some further notes on specific components in the response object:
 
 ## Examples <a id="h_01EEWE7S3TENTVGR2KV8YCMM0F"></a>
 
-## {% hint style="info" %}
-
-**NOTE**  
+{% hint style="info" %}
+**Note**  
 See [https://github.com/snyk/bazel-simple-app](https://github.com/snyk/bazel-simple-app) for a full example Bazel Java project, and corresponding Snyk Dep Graph object.
+{% endhint %}
 
 For a simple Bazel project with a single dependency on a Maven package, you may specify the dependency like this:
 

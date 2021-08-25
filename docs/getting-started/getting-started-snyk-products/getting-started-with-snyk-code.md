@@ -19,7 +19,7 @@ Snyk Code is disabled by default, so you must enable it for each organization:
 
 1. Log in to [Snyk.io](http://snyk.io/).
 2. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png)  &gt; **Snyk Code**.
-3. Under **Enable Snyk Code**, change **Disabled** to **Enabled:** ![enable-snyk-code.png](../../.gitbook/assets/enable-snyk-code.png)
+3. Under **Enable Snyk Code**, change **Disabled** to **Enabled:**  ![enable-snyk-code.png](../../.gitbook/assets/enable-snyk-code.png)
 4. Click **Save changes**.
 
 ## Stage 2: Add source control integration
