@@ -126,7 +126,7 @@ Below is an example of how you would set up your an integration for **Github.com
 
 3. Click **Authorize snyk** to provide Snyk with access to your repositories:
 
-![authorize.png](../../.gitbook/assets/authorize%20%281%29%20%281%29.png)
+![authorize.png](../../.gitbook/assets/authorize%20%281%29%20%282%29%20%282%29.png)
 
 **SCM permissions on repositories**
 
@@ -184,8 +184,7 @@ To configure the PR test settings for your organization:
 1. Navigate to **Org** &gt; settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) **&gt;** Integrations &gt; Edit Settings.
 2. Set the the toggle to **Enabled** and set the **Fail conditions** as needed:
 
-![image13.png](../../.gitbook/assets/image13.png)
-3. Click **Update settings**.
+![image13.png](../../.gitbook/assets/image13.png) 3. Click **Update settings**.
 
 To configure the pull request test settings for a specific project, navigate to **Projects Page**&gt; **Projects Settings &gt; Edit Settings** and set conditions similarly:
 
@@ -228,11 +227,11 @@ We suggest you exclude patches from the auto fix PRs, if your developers are not
 
 You should ask your developers to consider the merge advice label that appears on the auto fix PRs:
 
-![](../../.gitbook/assets/merge-advice-review-recommended%20%282%29.png)
+![](../../.gitbook/assets/merge-advice-review-recommended%20%282%29%20%282%29%20%283%29.png)
 
-![](../../.gitbook/assets/advice-green%20%281%29%20%282%29.png)
+![](../../.gitbook/assets/advice-green%20%281%29%20%282%29%20%282%29%20%281%29.png)
 
-![](../../.gitbook/assets/merge-advice%20%282%29.png)
+![](../../.gitbook/assets/merge-advice%20%282%29%20%282%29%20%282%29.png)
 
 Snyk auto fix PRs are only generated for new issues.
 

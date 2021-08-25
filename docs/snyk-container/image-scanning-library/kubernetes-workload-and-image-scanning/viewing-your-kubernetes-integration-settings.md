@@ -1,6 +1,6 @@
 # Viewing your Kubernetes integration settings
 
-#### In the relevant organization:
+## In the relevant organization:
 
 1. Click on settings ![cog\_icon.png](../../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
 2. Navigate to Kubernetes and click **Edit** **Settings**.

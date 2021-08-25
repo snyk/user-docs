@@ -115,7 +115,7 @@ The following table describes the different parts of the Dependencies area as di
           <img src="../../.gitbook/assets/mceclip3-3-.png" alt="mceclip3.png" />
         </p>
         <p>
-          <img src="../../.gitbook/assets/mceclip4 (2) (1).png" alt="mceclip4.png"
+          <img src="../../.gitbook/assets/mceclip4 (2) (1) (1).png" alt="mceclip4.png"
           />
         </p>
         <p>

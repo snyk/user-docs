@@ -54,7 +54,7 @@ Now, every time you run your project build:
   * If a severity threshold was defined for a severity that is assigned to any vulnerability in your project, Jenkins breaks the build.
   * Otherwise, Jenkins continues to run the build to completion \(success or failure\) and Snyk activity ends.
 
-    ![image7.png](../../.gitbook/assets/ci-cd%20%282%29.png)
+    ![image7.png](../../.gitbook/assets/ci-cd%20%282%29%20%282%29.png)
 
   * From the top of the report, right-click View on Snyk.io to view the snapshot and vulnerability information directly from our app:
 

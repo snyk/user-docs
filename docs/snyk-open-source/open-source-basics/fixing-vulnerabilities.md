@@ -24,6 +24,5 @@ To generate a PR / MR directly from your project, using the Snyk UI:
 3. Select **Open a Fix PR/MR** or **Fix this vulnerability**:  ![image21.png](../../.gitbook/assets/image21.png)
 4. A preview screen appears, showing you what fixes will be applied:
 
-![image18.png](../../.gitbook/assets/image18.png)
-5. Click **Open a Fix PR** on this screen to generate the pull request.
+![image18.png](../../.gitbook/assets/image18.png) 5. Click **Open a Fix PR** on this screen to generate the pull request.
 

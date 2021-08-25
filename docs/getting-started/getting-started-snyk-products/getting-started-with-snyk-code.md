@@ -51,13 +51,9 @@ Add projects to test with Snyk, by choosing repositories for Snyk to test and mo
 1. Select **Projects** from [snyk.io](http://snyk.io/).
 2. Select the tool to add the project from \(for example GitHub\):
 
-![https://support.snyk.io/hc/article\_attachments/360012555458/Open-Source-Add-Projects.png](../../.gitbook/assets/open-source-add-projects%20%282%29.png)
-3. In **Personal and Organization repositories**, select the repositories to use:
+![https://support.snyk.io/hc/article\_attachments/360012555458/Open-Source-Add-Projects.png](../../.gitbook/assets/open-source-add-projects%20%283%29.png) 3. In **Personal and Organization repositories**, select the repositories to use:
 
-![https://support.snyk.io/hc/article\_attachments/360012555518/IaC\_-\_select\_repo.png](../../.gitbook/assets/iac_-_select_repo.png)
-4. Click **Add selected repositories** to import the selected repositories into your projects. This sets Snyk to run a regular check \(daily by default\) for your proprietary code vulnerabilities.
-5. A progress bar appears: click **View log** to see log results.
-6. Project import completes.
+![https://support.snyk.io/hc/article\_attachments/360012555518/IaC\_-\_select\_repo.png](../../.gitbook/assets/iac_-_select_repo.png) 4. Click **Add selected repositories** to import the selected repositories into your projects. This sets Snyk to run a regular check \(daily by default\) for your proprietary code vulnerabilities. 5. A progress bar appears: click **View log** to see log results. 6. Project import completes.
 
 {% hint style="info" %}
 Currently Snyk Code does not support the **Exclude folders** option during import. Please contact us if you need more information.
@@ -73,7 +69,7 @@ You can now view vulnerability results for imported projects. The **Projects** t
 
    ![View-Vulns1.png](../../.gitbook/assets/view-vulns1.png)
 
-2. Click on an entry to open the issues view for that entry. For each issue, this shows the exploitable code snippet and a description of the code flaw that may lead to this vulnerability if not fixed:  ![View-Vulns2.png](../../.gitbook/assets/view-vulns2.png)
+2. Click on an entry to open the issues view for that entry. For each issue, this shows the exploitable code snippet and a description of the code flaw that may lead to this vulnerability if not fixed: ![View-Vulns2.png](../../.gitbook/assets/view-vulns2.png)
 
 See [View project information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information) for more details.
 

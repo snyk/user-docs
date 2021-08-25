@@ -18,7 +18,7 @@ steps supported solely by Jenkins are in high-level only. See [Jenkins documenta
 
    ![image2.png](../../.gitbook/assets/uuid-58fedef0-524e-ba88-e4f9-2ce8fd1b2430-en%20%281%29.png)
 
-   ![image3.png](../../.gitbook/assets/uuid-253d3b55-1301-e97c-636b-2c25b90089e2-en%20%281%29%20%281%29.png)
+   ![image3.png](../../.gitbook/assets/uuid-253d3b55-1301-e97c-636b-2c25b90089e2-en%20%281%29%20%281%29%20%281%29.png)
 
 3. Enter a unique name.
 4. Ensure **Install automatically** is selected.

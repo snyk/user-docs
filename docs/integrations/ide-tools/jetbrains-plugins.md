@@ -2,7 +2,7 @@
 
 Snyk has a plugin for Jetbrains IDEs, for both [Snyk Open Source](https://docs.snyk.io/snyk-open-source) and [Snyk Code](https://docs.snyk.io/snyk-code). Use this plugin to test your projects and get remediation advice and example code fixes during development within the IDE.
 
-### Supported JetBrains IDEs
+## Supported JetBrains IDEs
 
 {% hint style="info" %}
 JetBrains plugin versions: we support plugin versions from version 2020.2 on.
@@ -38,25 +38,19 @@ The installation is done via the IDE:
 
 ![](../../.gitbook/assets/ide.png)
 
-### Authentication
+## Authentication
 
 The first time it is needed, the plugin automatically downloads the CLI in the background.
 
 1. After the plugin installs, you are prompted to authenticate:
 
-![connect-to-snyk.png](../../.gitbook/assets/connect-to-snyk.png)
-2. Click **Connect IntelliJ to Snyk**. The plugin relies on the Snyk CLI, which authenticates you against Snyk’s web application:
+![connect-to-snyk.png](../../.gitbook/assets/connect-to-snyk.png) 2. Click **Connect IntelliJ to Snyk**. The plugin relies on the Snyk CLI, which authenticates you against Snyk’s web application:
 
-![auth-progress.png](../../.gitbook/assets/auth-progress.png)
-3. Click **Authenticate** when prompted by Snyk:
+![auth-progress.png](../../.gitbook/assets/auth-progress.png) 3. Click **Authenticate** when prompted by Snyk:
 
-![authenticate.png](../../.gitbook/assets/authenticate.png)
-4. After authentication you see a confirmation message for successful authentication.
-5. Close the browser window and return to the IDE. The IDE then reads and saves the authentication on your local machine.
-6. In the IDE, you can select which Snyk products to use \(Snyk Open Source, Snyk Code or both\). 
-7. You can start the analysis by pressing the **Analyze now!** button:  ![analyze-now.png](../../.gitbook/assets/analyze-now.png)
+![authenticate.png](../../.gitbook/assets/authenticate.png) 4. After authentication you see a confirmation message for successful authentication. 5. Close the browser window and return to the IDE. The IDE then reads and saves the authentication on your local machine. 6. In the IDE, you can select which Snyk products to use \(Snyk Open Source, Snyk Code or both\). 7. You can start the analysis by pressing the **Analyze now!** button: ![analyze-now.png](../../.gitbook/assets/analyze-now.png)
 
-### Run an analysis
+## Run an analysis
 
 {% hint style="info" %}
 Make sure your project file \(for example, requirements.txt\) is saved before running an analysis.
@@ -65,27 +59,27 @@ Make sure your project file \(for example, requirements.txt\) is saved before ru
 To trigger an analysis during your daily coding workflow, click either the run \(play\) button, or **Run scan**.  
 ![play-run.png](../../.gitbook/assets/play-run.png)
 
-### Analysis results: Snyk Open Source
+## Analysis results: Snyk Open Source
 
 Snyk Open Source analysis shows a list of vulnerabilities and license issues found in the manifest file. For more detailed information, you can select a vulnerability/license issue.
 
 ![](../../.gitbook/assets/results-os.png)
 
-### Analysis results: Snyk Code
+## Analysis results: Snyk Code
 
 Snyk Code analysis shows a list of security vulnerabilities and code issues found in your application code. For more details and examples fixes on how others fixed the issue, you just need to select the security vulnerability or the code security issue:
 
 ![](../../.gitbook/assets/results-code.png)
 
-### Filter results
+## Filter results
 
-#### Filter by severity
+### Filter by severity
 
 Snyk delivers Critical, High, Medium and Low severities. You can filter for the severity you need by selecting the value from the dropdown as shown below. By default all levels are selected. You must select at least one.
 
 ![](../../.gitbook/assets/filter-severity.png)
 
-#### Filter by issue type
+### Filter by issue type
 
 Snyk delivers the following types of issues:
 
@@ -97,7 +91,7 @@ You can filter for each one of them by selecting the value from the dropdown as 
 
 ![](../../.gitbook/assets/fillter-issuetype.png)
 
-#### Plugin configuration
+### Plugin configuration
 
 After the plugin is installed, you can set the following configurations for the plugin, using **Preferences → Tools → Snyk**:
 
