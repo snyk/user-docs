@@ -33,7 +33,10 @@ Add projects for your selected container, to start scanning with Snyk.
 
 1. Click **Add Project**, and select the integration registry entry to add from:
 
-![Containers-\_Add\_projects.png](../../.gitbook/assets/containers-_add_projects.png) 2. Select the container repository and tags to import, then click **Add selected repositories** to import them into your projects:  
+![Containers-\_Add\_projects.png](../../.gitbook/assets/containers-_add_projects.png) 
+
+2. Select the container repository and tags to import, then click **Add selected repositories** to import them into your projects:  
+
 ![image5.png](../../.gitbook/assets/image5%20%281%29.png)
 
 Importing also sets Snyk to run a daily check on the repositories for vulnerabilities.
@@ -48,10 +51,14 @@ If you encounter any errors during import, see the [Importing projects](https://
 
 You can now see vulnerability results for imported projects.
 
-1. Select **Projects**, then click on the imported project entry under its registry record, to see vulnerability information for that project.  ![image2.png](../../.gitbook/assets/mceclip2%20%281%29%20%281%29%20%281%29%20%282%29.png)  Here you can see a summary of the severity of the detected vulnerabilities.
-2. Click on an entry to see details of vulnerabilities found:
+1. Select **Projects**, then click on the imported project entry under its registry record, to see vulnerability information for that project.  
 
-   ![image5.png](../../.gitbook/assets/image5-1-.png)
+![image2.png](../../.gitbook/assets/mceclip2%20%281%29%20%281%29%20%281%29%20%282%29.png)  
+
+Here you can see a summary of the severity of the detected vulnerabilities.
+3. Click on an entry to see details of vulnerabilities found:
+
+![image5.png](../../.gitbook/assets/image5-1-.png)
 
 See [Analysis and remediation for your images from the Snyk app](https://docs.snyk.io/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app) for more details.
 

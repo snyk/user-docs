@@ -26,16 +26,27 @@ Import projects to test with Snyk, by choosing repositories for Snyk to test and
 1. Select **Projects** from Snyk.io.
 2. Select the tool to add the project from \(for example GitHub\):
 
-![IaC\_-\_select\_project.png](https://support.snyk.io/hc/article_attachments/360012552918/IaC_-_select_project.png) 3. In **Personal and Organization repositories**, select the repositories to use. 4. Click **Add selected repositories** to import the selected repositories into your projects. ![IaC\_-\_select\_repo.png](https://support.snyk.io/hc/article_attachments/360012553018/IaC_-_select_repo.png) 5. A progress bar appears: click **View log** to see import log results - for example:
+![IaC\_-\_select\_project.png](https://support.snyk.io/hc/article_attachments/360012552918/IaC_-_select_project.png) 
 
-![IaC\_-\_import\_log.png](https://support.snyk.io/hc/article_attachments/360012553078/IaC_-_import_log.png) \(you can scan both Kubernetes and Terraform files simultaneously, as in this example.\) 6. Project import completes.
+3. In **Personal and Organization repositories**, select the repositories to use. 4. Click **Add selected repositories** to import the selected repositories into your projects. 
+
+![IaC\_-\_select\_repo.png](https://support.snyk.io/hc/article_attachments/360012553018/IaC_-_select_repo.png) 
+
+4. A progress bar appears: click **View log** to see import log results - for example:
+
+![IaC\_-\_import\_log.png](https://support.snyk.io/hc/article_attachments/360012553078/IaC_-_import_log.png) 
+
+\(you can scan both Kubernetes and Terraform files simultaneously, as in this example.\) 
+5. Project import completes.
 
 ### Stage 2: View configuration file issues
 
 View results for configuration files in imported projects.
 
 1. Select **Projects**, then click on the imported project entry, to see information for scanned configuration files, including the number of high, medium and low severity issues found. For example:  ![IaC\_-\_issues\_list.png](../../.gitbook/assets/iac_-_issues_list.png)  \(Issues are sorted into project types: Helm, Kubernetes and Terraform.\)
-2. Click on a project to see more information and details of the issues in a configuration file:  ![IaC\_-\_select\_config\_file.png](../../.gitbook/assets/iac_-_select_config_file.png)
+2. Click on a project to see more information and details of the issues in a configuration file:  
+
+![IaC\_-\_select\_config\_file.png](../../.gitbook/assets/iac_-_select_config_file.png)
 
 {% hint style="info" %}
 If you encounter any errors during import, see the [Importing projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects) information.
