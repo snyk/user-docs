@@ -39,11 +39,11 @@ You can now select the repositories for Snyk to monitor.
 
 8. The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
-## Bitbucket DC/Server Integration Features
+### Bitbucket DC/Server Integration Features
 
 After the integration is done, you can use the following capabilities:
 
-### **Project level security reports**
+#### **Project level security reports**
 
 Snyk produces advanced security reports, allowing you to explore the vulnerabilities found in your repositories, and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
 
@@ -51,7 +51,7 @@ This is an example of a project level security report:
 
 ![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%281%29.png)
 
-### **Projects monitoring and automatic fix pull requests**
+#### **Projects monitoring and automatic fix pull requests**
 
 Snyk frequently scans your projects on either a daily or a weekly basis. When new vulnerabilities are found, notifications are sent both by email and by opening an automated pull requests with fixes to repositories.
 
@@ -67,7 +67,7 @@ To review and adjust the automatic fix pull request settings:
 
 ![777.png](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%282%29.png)
 
-### **Pull request tests**
+#### **Pull request tests**
 
 Snyk tests any newly created pull request in your repositories for security vulnerabilities, and sends a build check to Bitbucket DC/Server. You can to see whether the pull request introduces new security issues, directly from Bitbucket DC/Server.
 
@@ -83,7 +83,7 @@ To review and adjust the pull request tests settings:
 
 ![999.png](../../.gitbook/assets/999.png)
 
-### Required permissions scope for the Bitbucket DC/Server integration
+#### Required permissions scope for the Bitbucket DC/Server integration
 
 Snyk performs all the operations in Bitbucket DC/Server on behalf of the integrated service account.
 
@@ -96,7 +96,7 @@ For Snyk to perform the required operations on monitored repositories \(such as 
 | Opening fix and upgrade pull requests | To create fix PRs in monitored repositories. |  |
 | Snyk tests on pull requests - initial configuration | To add Snyk's webhooks to the imported repos, so Snyk is informed when pull requests are created or updated, and can trigger scans. | **Admin** |
 
-**Disabling the Bitbucket DC/Server integration**
+#### **Disabling the Bitbucket DC/Server integration**
 
 To disable this integration:
 
