@@ -1,6 +1,11 @@
 # Glossary
 
-[A](glossary.md) \| [B](glossary.md) \| [C](glossary.md) \| [D](glossary.md) \| [E](glossary.md) \| [F](glossary.md) \| [G](glossary.md) \| [I](glossary.md) \| [L](glossary.md) \| [M](glossary.md) \| [O](glossary.md) \| [P](glossary.md) \| [R](glossary.md) \| [S](glossary.md) \| [U](glossary.md) \| [V](glossary.md) \| [W](glossary.md)
+## A
+
+### Advisor
+
+See [Snyk Advisor](https://support.snyk.io/hc/en-us/articles/360017682058-Snyk-Glossary#SnykAdvisor).  
+
 
 ### Base image
 
@@ -89,11 +94,26 @@ A demonstration of how a vulnerability can be taken advantage of. When an exploi
 
 ### Exploit Maturity
 
-A measure of how practical an exploit for a vulnerability is, based on whether the exploit is in the wild, and how "helpful" the exploit is to attackers. See [Evaluating and prioritizing vulnerabilities](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/evaluating-and-prioritizing-vulnerabilities)
+A measure of how practical an exploit for a vulnerability is, based on whether the exploit is in the wild, and how "helpful" the exploit is to attackers. See [Evaluating and prioritizing vulnerabilities](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/evaluating-and-prioritizing-vulnerabilities).
+
+## F
+
+### Fixable / Partially fixable
+
+A measure of whether a vulnerability can be fixed by Snyk, by applying a patch, upgrade, or pin. See [Fixed in version vs. fixable attributes in vulnerabilities](https://support.snyk.io/hc/en-us/articles/4405034808209).  
+
+
+### Fix PR
+
+A pull request with an automatic fix for vulnerabilities found that Snyk can offer the user.
+
+## G
 
 ### Git
 
 A distributed version-control system for tracking changes in source code during software development.
+
+## I
 
 ### IAC
 
@@ -123,9 +143,13 @@ Third-party products, applications and platforms that Snyk works with, for examp
 
 A license problem or vulnerability identified and lists by Snyk.
 
+## L
+
 ### Library
 
 A specific type of a package.
+
+## M
 
 ### Manifest
 
@@ -135,6 +159,8 @@ A file containing metadata about other files in a package.
 
 A run of the **snyk monitor** command that tests the project and uploads results to Snyk.
 
+## O
+
 ### OCI
 
 Open Container Initiative. An independent body set up to facilitate collaboration around standards for containers, to ensure they are interoperable between vendor solutions.
@@ -142,6 +168,8 @@ Open Container Initiative. An independent body set up to facilitate collaboratio
 ### Organization
 
 An organization in Snyk is a way to collect and organize your projects. Members of organizations can then access these projects.
+
+## P
 
 ### Package
 
@@ -170,6 +198,22 @@ Snyk scores issues \(vulnerabilities and licenses\), to help prioritze treatment
 ### Project
 
 An external item that Snyk scans, with configuration to define how to run that scan. Projects appear on the **Projects** menu on the Snyk dashboard. See [Introduction to projects](https://docs.snyk.io/getting-started/introduction-to-snyk-projects).
+
+## R
+
+### Reachability
+
+Whether an application contains code which will hit a vulnerable code path during execution. See [Reachable vulnerabilities](https://support.snyk.io/hc/en-us/articles/360010554837-Reachable-Vulnerabilities-).
+
+### Registry
+
+See [Container registry](https://support.snyk.io/hc/en-us/articles/360017682058-Snyk-Glossary#ContainerRegistry) or [Package registry](https://support.snyk.io/hc/en-us/articles/360017682058-Snyk-Glossary#PackageRegistry).
+
+### Repository
+
+A storage area that contains all elements necessary for the distribution of an application.
+
+## S 
 
 ### SARIF
 
@@ -266,9 +310,20 @@ Snyk shows a Trending banner on issues that are being actively discussed in Twit
 
 Software Package Data Exchange. A file format used to document information on the software licenses under which a piece of computer software is distributed.
 
+## U
+
 ### Upgradable / Patchable
 
 A fix type: a problem can be fixed by upgrading a version of a package, or by applying a patch.
+
+## V
+
+### Vulnerability
+
+A security vulnerability, identified by Snyk. See [Remediate your vulnerabilities](https://support.snyk.io/hc/en-us/articles/360006113798-Remediate-your-vulnerabilities).  
+
+
+## W
 
 ### Webhook
 

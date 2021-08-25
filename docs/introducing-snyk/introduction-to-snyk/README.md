@@ -12,9 +12,13 @@ Taking a developer-first approach to security, [Snyk integrates](https://docs.sn
 
 Our [security intelligence database](https://snyk.io/snyk-intelligence-security/), also known as the Snyk Intel Vulnerability Database is maintained by a dedicated research team that combines public sources, contributions from the developer community, proprietary research, and machine learning to continuously adapt to the changing and expanding nature of security threats.
 
+## Snyk CLI
+
 You can use the Snyk CLI \(Command Line Interface\) to scan and monitor on your local machine, and integrate it into your pipeline. You can use the Snyk CLI to scan your applications, containers, and infrastructure as code for security vulnerabilities. You can install the CLI via npm, Homebrew, Scoop, or manually.
 
 [Get started with the Snyk CLI](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli).
+
+## Snyk API
 
 Snyk’s extensibility and API enable developers to tune Snyk’s security automation to their specific workflows, ensuring both developer experience and consistent platform governance. Learn more in our [Snyk API documentation](https://support.snyk.io/hc/en-us/articles/360000914857-Does-Snyk-have-an-API-) and see how our customers like [Twilio and Spotify](https://snyk.io/blog/snyk-watcher-keep-snyk-in-sync/) use the Snyk API in their workflows.
 
@@ -26,3 +30,13 @@ Snyk’s extensibility and API enable developers to tune Snyk’s security autom
 * [Snyk Infrastructure as Code \(IaC\)](https://docs.snyk.io/snyk-infrastructure-as-code): Find and fix insecure configurations in Terraform and Kubernetes code.
 * [Snyk Intel Vulnerability Database](https://snyk.io/product/vulnerability-database/): Comprehensive and actionable open source and container vulnerability data.
 
+## Get started with Snyk
+
+To get started with Snyk products now, see our [Getting started guides](https://support.snyk.io/hc/en-us/categories/360000449098-Getting-started):
+
+* [Get started with Snyk Open Source](https://support.snyk.io/hc/en-us/articles/360014875297-Getting-started-with-Snyk-Open-Source). 
+* [Get started with Snyk License Compliance](https://support.snyk.io/hc/en-us/articles/360015235618-Getting-Started-with-Snyk-License-Compliance-Management).
+* [Get started with Snyk Code](https://support.snyk.io/hc/en-us/articles/360016765157-Getting-started-with-Snyk-Code).
+* [Get started with Snyk Container](https://support.snyk.io/hc/en-us/articles/360014877957-Getting-started-with-Snyk-Container).
+* [Get started with Snyk IaC](https://support.snyk.io/hc/en-us/articles/360014938398-Getting-started-with-Snyk-Infrastructure-as-Code-IaC-).
+* 

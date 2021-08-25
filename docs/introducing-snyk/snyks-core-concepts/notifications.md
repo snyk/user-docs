@@ -11,5 +11,7 @@ Snyk also sends you a weekly update summarizing your security status across all 
 
 \(\*\) It is important to disable notifications for both, active and non-active projects. Setting the projects to inactive will not stop Snyk from sending emails about vulnerabilities / licences issues.
 
+### **Managing notifications**
+
 Snyk includes a range of controls to manage your notifications. If you are an organization administrator, you can also manage the notification defaults for others in the organization. See [Notification management](https://docs.snyk.io/user-and-group-management/notifications/notification-management)
 

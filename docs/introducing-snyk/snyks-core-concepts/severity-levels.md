@@ -7,6 +7,10 @@ A severity level is applied to a vulnerability, to indicate the risk for that vu
 * **High:** may allow attackers to access sensitive data on your application.
 * **Critical:** may allow attackers to access sensitive data and run code on your application.
 
+{% hint style="info" %}
+Severity levels also apply to license issues. See [Licenses overview](https://support.snyk.io/hc/en-us/articles/360003557837-Licenses-overview).
+{% endhint %}
+
 #### Determining severity levels
 
 The **Common Vulnerability Scoring System** \(**CVSS**\) determines the severity level of a vulnerability.
@@ -34,9 +38,15 @@ Severity levels are displayed throughout Snyk, to show this information at all t
 
 For example, in the initial dashboard:
 
+![](../../.gitbook/assets/image%20%2838%29.png)
+
 For your projects:
 
+![](../../.gitbook/assets/image%20%2837%29.png)
+
 And for each vulnerability in a project:
+
+![](../../.gitbook/assets/image%20%2836%29.png)
 
 See [Getting started](https://support.snyk.io/hc/en-us/categories/360000449098-Getting-started) documentation for more details of using Snyk.
 

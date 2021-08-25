@@ -5,6 +5,10 @@ You can use Snyk to test your code in multiple ways.
 * Manually; using the [Snyk CLI](running-tests.md), the [Snyk app](running-tests.md), and the [Snyk API](running-tests.md).
 * Snyk can also [run tests automatically](running-tests.md); on a recurring basis, or when a relevant repo change is made.
 
+{% hint style="info" %}
+Tests may be limited on your account; see [What counts as a test?](https://support.snyk.io/hc/en-us/articles/360000925418-What-counts-as-a-test-) for more information.
+{% endhint %}
+
 ## Run tests manually
 
 ### Run tests with the CLI
@@ -33,7 +37,9 @@ See [API documentation](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d4
 
 Snyk provides automatic scanning functions with recurring tests, allowing you to catch new vulnerabilities automatically. After you import a project, Snyk automatically runs periodic checks to see if your code is affected by newly disclosed vulnerabilities.
 
+{% hint style="info" %}
 Test frequency is set to daily by default. To change frequency, go to either the **Usage** page \(see [Usage page details](https://docs.snyk.io/user-and-group-management/managing-settings/usage-page-details)\) or the project **Settings** page \(see [View project settings](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-settings)\).
+{% endhint %}
 
 ### Snyk monitor
 
