@@ -10,11 +10,9 @@ You can filter for all container projects, similar to the following example:
 
 ![](../../.gitbook/assets/image%20%2810%29.png)
 
-
 When you open any container project, the resulting analysis and remediation advice are displayed from the Snyk UI similar to the following:
 
 ![](../../.gitbook/assets/uuid-069520cd-66e8-9f80-5bcf-c7845009ff54-en.png)
-
 
 The following information is displayed:
 
@@ -26,7 +24,6 @@ The following information is displayed:
 * Remediation advice—if you included your Dockerfile for monitoring, then any available actionable remediation advice is displayed. To view all advice, click the Show more upgrade types link. The advice offered is dependent on available remediation, and appears similar to the following image:
 
 ![](../../.gitbook/assets/uuid-431ce2b1-e5f0-0025-7932-0171b35cb9bb-en.png)
-
 
 * Upgrade suggestions can include:
   * Minor upgrades—the safest and best minor upgrade available

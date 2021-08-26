@@ -1,6 +1,8 @@
 # Viewing project details and test results
 
-All workloads that you and your team have imported for monitoring appear on your **Projects** page marked with a unique Kubernetes icon ![image4.png](../../../.gitbook/assets/uuid-24e0b69a-01c3-9434-9dac-9b44864bd269-en.png)
+All workloads that you and your team have imported for monitoring appear on your **Projects** page marked with a unique Kubernetes icon
+
+![image4.png](../../../.gitbook/assets/uuid-24e0b69a-01c3-9434-9dac-9b44864bd269-en.png)
 
 .
 

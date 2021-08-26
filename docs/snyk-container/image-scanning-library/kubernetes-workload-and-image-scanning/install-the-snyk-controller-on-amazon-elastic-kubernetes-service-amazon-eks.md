@@ -6,7 +6,6 @@ You have the option of deploying the Snyk controller for Amazon EKS as an offici
 
 ![](../../../.gitbook/assets/architecture.png)
 
-
 There are three deployment options to match most common use cases. These are as follows:
 
 **1.** If you already have an Amazon EKS cluster running in your AWS account

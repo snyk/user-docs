@@ -6,7 +6,6 @@ The **Pending tasks** section of the dashboard shows recommended outstanding wor
 
 ![](../.gitbook/assets/pending-tasks.png)
 
-
 This information includes:
 
 * Pull Requests \(PRs\) that could be raised to fix vulnerabilities in some of the most vulnerable projects.

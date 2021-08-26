@@ -15,16 +15,13 @@ Snyk tests and monitors Docker Hub repositories and images by evaluating root fo
 
 ![AddProjectMenu.gif](../../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%284%29.gif)
 
-
 2. Go to Projects, and click Add projects. The list of integrations already configured on your account opens, similar to the following:
 
 ![AddProjectMenu.png](../../../.gitbook/assets/uuid-dd01aab7-482f-0fc2-01de-c2427a14a0e0-en.png)
 
-
    The Which images do you want to test? view appears, displaying all of the available images for the registry to which you connected, grouped by each of your repositories, similar to the following:
 
 ![AddImages.png](../../../.gitbook/assets/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en.png)
-
 
 3. Select single or multiple images with any or all of the following methods:
    * Type the name of a single image for import in the Image Name field \(\#1 in the image above\),
@@ -41,8 +38,9 @@ You can now also filter to view only those projects:
 
 ![image21.png](../../../.gitbook/assets/uuid-ce306bb8-1d6d-c895-bdb5-3a7cd551977b-en.png)
 
+Once repositories and images are imported, a confirmation appears in green at the top of the screen. Docker Hub files are indicated with a unique icon
 
-Once repositories and images are imported, a confirmation appears in green at the top of the screen. Docker Hub files are indicated with a unique icon ![image13.png](https://support.snyk.io/hc/article_attachments/360007147278/uuid-dde0b6df-e45a-b01f-827f-79c1b8a7524b-en.png)
+![image13.png](https://support.snyk.io/hc/article_attachments/360007147278/uuid-dde0b6df-e45a-b01f-827f-79c1b8a7524b-en.png)
 
 .
 

@@ -1,6 +1,8 @@
 # Managing permissions
 
-Click settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
+Click settings
+
+![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
 
  &gt; **Members** to invite new team members.
 

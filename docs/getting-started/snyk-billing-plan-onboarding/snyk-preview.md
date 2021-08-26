@@ -6,7 +6,9 @@ Users with Admin permissions can use this option at the org and group level.
 
 To enable a feature using Snyk Preview:
 
-1. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png)
+1. Click on settings
+
+![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png)
 
  &gt; **Snyk Preview**:
 

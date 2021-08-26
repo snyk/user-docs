@@ -31,10 +31,16 @@ Snyk’s extension provides all the suggestions in a concise and clean view cont
 
 To authenticate follow the steps:
 
-1. Once the plugin is installed, click on the Snyk Icon in the left navigation bar, to show the following screen: ![image8.png](../../.gitbook/assets/image8.png) 
-2. Click **Connect VS Code with Snyk**. The plugin relies on the Snyk authentication API and it will ask you to authenticate you against Snyk’s web application: ![authenticate.png](../../.gitbook/assets/authenticate.png) 
+1. Once the plugin is installed, click on the Snyk Icon in the left navigation bar, to show the following screen:
+
+![image8.png](../../.gitbook/assets/image8.png) 
+2. Click **Connect VS Code with Snyk**. The plugin relies on the Snyk authentication API and it will ask you to authenticate you against Snyk’s web application:
+
+![authenticate.png](../../.gitbook/assets/authenticate.png) 
 3. Click **Authenticate**. 
-4. After successful authentication, you will see a confirmation message: ![authentiacated.png](../../.gitbook/assets/authentiacated.png) 
+4. After successful authentication, you will see a confirmation message:
+
+![authentiacated.png](../../.gitbook/assets/authentiacated.png) 
 5. Close the browser window and return to the IDE.  The IDE is now reading and saving the authentication on your local machine.
 
 ### Run analysis
@@ -73,10 +79,16 @@ The Snyk analysis panel \(on the left of the code screen in the above screenshot
 
 The icons here mean:
 
-| ![image7.png](../../.gitbook/assets/image7%20%281%29.png) | Critical suggestion - should be addressed. |
+|
+
+![image7.png](../../.gitbook/assets/image7%20%281%29.png) | Critical suggestion - should be addressed. |
 | :--- | :--- |
-| ![image2.png](../../.gitbook/assets/image2-6-.png) | Warning suggestion -  likely a coding error. |
-| ![image4.png](../../.gitbook/assets/image4-4-.png) | Information suggestion - points to style glitches or logical issues. |
+|
+
+![image2.png](../../.gitbook/assets/image2-6-.png) | Warning suggestion -  likely a coding error. |
+|
+
+![image4.png](../../.gitbook/assets/image4-4-.png) | Information suggestion - points to style glitches or logical issues. |
 
 ### Editor window
 

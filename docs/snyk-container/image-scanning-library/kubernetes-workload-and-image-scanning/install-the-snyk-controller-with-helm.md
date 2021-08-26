@@ -41,7 +41,6 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
 
 ![kub\_integrationID.gif](../../../.gitbook/assets/uuid-26f9c2cd-2755-07d5-61a0-bdb0261d87ab-en.gif)
 
-
 6. Snyk monitor runs by using your Snyk **Integration ID**, and using a `dockercfg` file. If you are not using any private registries, create a Kubernetes secret called `snyk-monitor` containing the Snyk **Integration ID** from the previous step and run the following command:
 
    ```text

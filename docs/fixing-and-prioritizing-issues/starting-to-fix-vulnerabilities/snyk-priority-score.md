@@ -53,7 +53,6 @@ Issues can be filtered on the left.
 
 ![](../../.gitbook/assets/screen_shot_2021-07-14_at_1.41.24_pm.png)
 
-
 ## View scores in the Reports
 
 The **Issues** tab in the reports includes the Priority Score as it's own sortable column. By default the table is already sorted by the score, to show you the most pressing issues first.
@@ -61,7 +60,6 @@ The **Issues** tab in the reports includes the Priority Score as it's own sortab
 Issues can also be filtered by the score.
 
 ![](../../.gitbook/assets/screen_shot_2021-07-14_at_1.43.32_pm.png)
-
 
 ## View scores in the Snyk API
 

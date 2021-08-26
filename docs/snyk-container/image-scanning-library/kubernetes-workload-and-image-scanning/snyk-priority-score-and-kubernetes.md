@@ -4,15 +4,15 @@ All issues in Snyk have a [Priority Score](https://support.snyk.io/hc/en-us/arti
 
 ![](../../../.gitbook/assets/screenshot_2020-06-23_at_09.09.52.png)
 
-
 ### How well configured is your workload?
 
 The Kubernetes integration collects information about how workloads are configured, focusing on options which can lead to security issues. We show this summary on the project page:
 
 ![screenshot\_2020-06-23\_at\_09.10.39.png](../../../.gitbook/assets/screenshot_2020-06-23_at_09.10.39.png)
 
-.    ![image-1.png](../../../.gitbook/assets/image-1.png)
+.   
 
+![image-1.png](../../../.gitbook/assets/image-1.png)
 
 We also use this information to contribute to the Priority Score, based on the idea that a vulnerability present in a workload that is poorly configured scores higher than the same vulnerability in a well configured one.
 

@@ -20,11 +20,15 @@ This feature is available with Enterprise plans. See [Pricing plans](https://sny
 
 ## JavaScript Language Settings
 
-1. Go to settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
+1. Go to settings
+
+![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
 
  **&gt; Languages &gt; JavaScript** and either the npm or yarn settings depending on your project types \(yarn shown in screenshots below\)
 2. If you have not previously connected to Artifactory you will be asked to configure an integration first, see [Artifactory Registry Setup.](https://support.snyk.io/hc/en-us/articles/360013805638) 
-3. Select “Add registry configuration”    ![Screenshot\_2020-06-03\_at\_17.19.41.png](../../.gitbook/assets/screenshot_2020-06-03_at_17.19.41.png)
+3. Select “Add registry configuration”   
+
+![Screenshot\_2020-06-03\_at\_17.19.41.png](../../.gitbook/assets/screenshot_2020-06-03_at_17.19.41.png)
 
    1. Select "Artifactory" as the Package source
    2. If you want to configure this registry as **default registry url**, then leave scope blank
@@ -35,5 +39,4 @@ This feature is available with Enterprise plans. See [Pricing plans](https://sny
 6. Now test it out - open a Pull/Merge Request on a project that contains private dependencies that are hosted in Artifactory to see **a lockfile updated and included in the Snyk Fix Pull Request where previously none was generated**
 
 ![image4.png](../../.gitbook/assets/image4-3-.png)
-
 

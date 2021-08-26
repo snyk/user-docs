@@ -10,7 +10,6 @@ Each issue card has an **Ignore** button allowing you to ignore that issue:
 
 ![](../../.gitbook/assets/new-ignore-2.png)
 
-
 ## Snyk CLI
 
 In the Snyk CLI, you can ignore issues using **snyk ignore**. For example:

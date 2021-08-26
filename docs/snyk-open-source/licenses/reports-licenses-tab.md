@@ -4,7 +4,6 @@ The **Licenses** area displays all licenses that are currently used in your proj
 
 ![](../../.gitbook/assets/uuid-a6504677-415d-2241-f92c-f7c028795e7f-en.png)
 
-
 **Licenses tab elements**
 
 The following table describes the different parts of the **Licenses** area:
@@ -21,13 +20,11 @@ These controls appear at the top of the window:
 
 ![](../../.gitbook/assets/uuid-8399334e-74b7-0649-d55c-e0ddecb54272-en.png)
 
-
 * **Search for Licenses**—the dynamic search field enables you to enter free text and begins searching with the first character you type; alternatively, select multiple packages from the dropdown list that opens when you click in the field. In addition, click the Select All or Deselect All links that dynamically appear in the upper right-hand corner of the dropdown list.
 * **Search for Projects**—the dynamic search field enables you to enter free text and begins searching with the first character you type; alternatively, select multiple packages from the dropdown list that opens when you click in the field. In addition, click the Select All or Deselect All links that dynamically appear in the upper right-hand corner of the dropdown list.
 * **License filters**—mark the packages to be displayed by selecting specific project types. Only issues matching all selected criteria are displayed.
 
 ![](../../.gitbook/assets/uuid-53b0da21-ca9b-a04c-354a-97219ae7c05b-en-1-.png)
-
 
 * **Export as CSV**—export issue data in CSV file format.
 

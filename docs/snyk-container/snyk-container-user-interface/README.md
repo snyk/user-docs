@@ -14,11 +14,9 @@ After you integrate with a container registry and import your projects, we scan 
 
 ![mceclip0.png](https://support.snyk.io/hc/article_attachments/360008399638/mceclip0.png)
 
-
 2. Enable the _**Detect application vulnerabilities**_ capability and save the changes:
 
 ![mceclip1.png](https://support.snyk.io/hc/article_attachments/360008399658/mceclip1.png)
-
 
 ### View vulnerabilities and licensing issues
 
@@ -33,11 +31,9 @@ With this feature enabled, you can also see nested manifest files detected in th
 
 ![mceclip2.png](https://support.snyk.io/hc/article_attachments/360008315557/mceclip2.png)
 
-
 Snyk scans the image regularly based on your project’s settings, and updates you via email or Slack - based on your configuration - when any new vulnerabilities are identified in both the operating system and application dependencies.
 
 For each project, you can choose the test frequency under its settings \(the default is daily testing\).
 
 ![mceclip3.png](https://support.snyk.io/hc/article_attachments/360008399678/mceclip3.png)
-
 

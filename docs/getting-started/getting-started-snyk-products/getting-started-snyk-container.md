@@ -22,10 +22,12 @@ Choose a container registry integration, to connect the registry with Snyk:
 1. Log in to Snyk.io.
 2. Select **Integrations**.
 3. Select a **Container registries** entry.
-4. Click the entry to integrate with Snyk:  ![container-select-integration.png](../../.gitbook/assets/container-select-integration.png)
+4. Click the entry to integrate with Snyk: 
+
+![container-select-integration.png](../../.gitbook/assets/container-select-integration.png)
 5. Fill in the account credentials and other details as prompted, then save the changes, to integrate this entry with Snyk:
 
-   ![Container-Account-credentials.png](../../.gitbook/assets/container-account-credentials.png)
+![Container-Account-credentials.png](../../.gitbook/assets/container-account-credentials.png)
 
 ## Stage 2: Add projects
 

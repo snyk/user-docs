@@ -24,7 +24,5 @@ You can authenticate:
 
 ![](../../.gitbook/assets/image%20%2811%29.png)
 
-
 3. In the CLI, run `snyk config set api=XXXXXXXX`
-
 

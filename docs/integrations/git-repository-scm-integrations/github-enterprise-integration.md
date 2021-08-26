@@ -64,12 +64,13 @@ Snyk frequently scans your projects on either a daily or a weekly basis. When ne
 
 This is an example of a fix pull request opened by Snyk:  
 
-
 ![image7.png](../../.gitbook/assets/uuid-6cfdaf0b-c349-468d-fe65-4f80bad110ea-en.png)
 
 To review and adjust the automatic fix pull request settings:
 
-1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
+1. Click on settings
+
+![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
 2. Select **Edit Settings** for GitHub Enterprise.
 3. Navigate to **Automatic fix pull requests**:
 
@@ -85,7 +86,9 @@ This is how Snyk pull request checks appear in the Pull Request page in GitHub E
 
 To review and adjust the pull request tests settings:
 
-1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
+1. Click on settings
+
+![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
 2. Select **Edit Settings** for GitHub Enterprise.
 3. Navigate to **Default Snyk test for pull requests**:
 

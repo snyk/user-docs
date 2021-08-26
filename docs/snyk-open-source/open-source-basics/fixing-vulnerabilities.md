@@ -20,9 +20,13 @@ For projects imported via an SCM \(Source Code Manager\), Snyk offers the follow
 To generate a PR / MR directly from your project, using the Snyk UI:
 
 1. Navigate to your project from the project list.
-2. Select the file.  ![image22.png](../../.gitbook/assets/image22.png)
+2. Select the file. 
 
-3. Select **Open a Fix PR/MR** or **Fix this vulnerability**:  ![image21.png](../../.gitbook/assets/image21.png)
+![image22.png](../../.gitbook/assets/image22.png)
+
+3. Select **Open a Fix PR/MR** or **Fix this vulnerability**: 
+
+![image21.png](../../.gitbook/assets/image21.png)
 
 4. A preview screen appears, showing you what fixes will be applied:
 

@@ -14,14 +14,11 @@ Note: steps supported solely by Jenkins are in high-level only. See [Jenkins doc
 
 ![image1.png](../../.gitbook/assets/uuid-a1504227-4c48-ab40-d363-ab5dc74b1c71-en%20%281%29.png)
 
-
 2. Navigate to **Manage Jenkins=&gt;Global Tool Configuration** and click **Snyk installations ...** to add a Snyk installation.
 
 ![image2.png](../../.gitbook/assets/uuid-58fedef0-524e-ba88-e4f9-2ce8fd1b2430-en.png)
 
-
 ![image3.png](../../.gitbook/assets/uuid-253d3b55-1301-e97c-636b-2c25b90089e2-en%20%281%29%20%281%29%20%281%29.png)
-
 
 3. Enter a unique name.
 4. Ensure **Install automatically** is selected.
@@ -32,7 +29,9 @@ Note: steps supported solely by Jenkins are in high-level only. See [Jenkins doc
    * Update policy interval \(hours\)—this is a Jenkins parameter by which Jenkins checks the version of the installed plugin based on the value of this parameter and the frequency of your builds, updating the installation as necessary as part of the Snyk security task step if no other builds have triggered update checks already for that installation during that time interval. We recommend a policy of 24 hour intervals.
 7. Save the changes.
 8. From the Snyk app, retrieve your Snyk API token:
-   * From your Snyk account, navigate to settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
+   * From your Snyk account, navigate to settings
+
+![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
 
  &gt; **General**.
    * If you are a member of an organization, copy the **Organization API** key; if yours is a personal account, then copy the **Personal access token**.

@@ -20,7 +20,6 @@ Once running the above command with the desired image to scan, Snyk results are 
 
 ![](../../.gitbook/assets/mceclip0-20-.png)
 
-
 ## **Supported CLI options**
 
 | `Option` | Description |

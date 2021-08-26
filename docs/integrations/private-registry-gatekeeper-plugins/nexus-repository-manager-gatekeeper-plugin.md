@@ -55,7 +55,9 @@ To set up and configure the plugin, start scanning and managing your organizatio
    * **Snyk API token** - paste the token value you saved from step 1
    * **Snyk Organization ID** - paste the token value you saved from step 1
    * **Vulnerability Threshold**—default is \*low\*. Valid values include low, medium, high. Manually update the configuration based on your needs.
-   * **License Threshold**—default is \*low\*. Valid values include low, medium, high. Manually update the configuration based on your needs.  ![image1.png](../../.gitbook/assets/uuid-9745b82a-ed7e-bce0-75dd-0070514f274d-en.png)
+   * **License Threshold**—default is \*low\*. Valid values include low, medium, high. Manually update the configuration based on your needs. 
+
+![image1.png](../../.gitbook/assets/uuid-9745b82a-ed7e-bce0-75dd-0070514f274d-en.png)
 
 4. Shut down the Nexus service instance and then restart it.
 5. Log in to your Nexus instance and double check that the Snyk bundle has been installed successfully.
@@ -66,13 +68,13 @@ To set up and configure the plugin, start scanning and managing your organizatio
    * Based on the severity thresholds that you configured, the download is blocked.
    * Scan results are displayed for the developer with a link to full details for the error:
 
-     ![cli\_output.png](../../.gitbook/assets/uuid-a2c354a2-21ca-bdfb-7862-a2ef26eec59e-en.png)
+    
 
+![cli\_output.png](../../.gitbook/assets/uuid-a2c354a2-21ca-bdfb-7862-a2ef26eec59e-en.png)
 
    * Results are stored in the Snyk Security part of the Attributes section from the Nexus interface for the artifact:
 
 ![](../../.gitbook/assets/image%20%2833%29.png)
-
 
 By reviewing the results, you can evaluate the issues found in your artifact and determine a course of action.
 
@@ -99,7 +101,6 @@ Snyk continuously runs in the background on the Nexus instance, and whenever any
 When the scan ends, you get an error message if the download was blocked, with a link to the full details for the known vulnerabilities found in that artifact, similar to the following example:
 
 ![](../../.gitbook/assets/uuid-a2c354a2-21ca-bdfb-7862-a2ef26eec59e-en.png)
-
 
 Click the link to view details, itemizing the number of vulnerabilities found in the artifact, and their severities.
 

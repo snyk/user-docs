@@ -6,7 +6,6 @@ Snyk shows a **Trending** banner on issues that are being actively discussed in 
 
 ![social-trends.gif](../../.gitbook/assets/social-trends.gif)
 
-
 Social Trends are calculated into the priority score by default. You can look at the top tweets mentioning this vulnerability by clicking on **View Tweets**.
 
 How does Snyk determine if a vulnerability is trending?

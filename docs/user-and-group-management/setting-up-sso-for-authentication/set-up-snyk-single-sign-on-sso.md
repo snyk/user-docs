@@ -179,4 +179,3 @@ These worksheets include the information to enter in your Identity provider and 
 * [SSO ADFS Worksheet.pdf](https://support.snyk.io/hc/en-us/article_attachments/360019345278/SSO_ADFS_Worksheet.pdf)
 * [SSO SAML Worksheet.pdf](https://support.snyk.io/hc/en-us/article_attachments/360020511338/SSO_SAML_Worksheet.pdf)
 
-

@@ -12,7 +12,9 @@ You must have an account with Snyk and be onboarded to your organization by an a
 In addition, the integration must be configured between Snyk and your Kubernetes environment per organization. To verify the integration is configured, ensure you have an Integration ID:
 
 1. Navigate to the relevant organization.
-2. Click on settings ![cog\_icon.png](../../../.gitbook/assets/cog_icon.png)
+2. Click on settings
+
+![cog\_icon.png](../../../.gitbook/assets/cog_icon.png)
 
  &gt; **Integrations**.
 3. In the Kubernetes section, click **Edit Settings**.
@@ -41,7 +43,9 @@ Annotate any of the following workload types:
 **Steps**
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
-2. Click on settings ![cog\_icon.png](../../../.gitbook/assets/cog_icon.png)
+2. Click on settings
+
+![cog\_icon.png](../../../.gitbook/assets/cog_icon.png)
 
  &gt; **General**.
 3. Copy the **Organization ID** value.
@@ -77,7 +81,6 @@ Annotate any of the following workload types:
 
 ![AddWorkspace.png](../../../.gitbook/assets/uuid-619a153d-6c77-f7dc-854c-ff77b3173191-en.png)
 
-
    The import screen loads, similar to the one below, displaying all namespaces from the Kubernetes environment on the left and relevant namespace workloads on the right:
 
 ![ChooseNamespace.png](../../../.gitbook/assets/uuid-3a8568e0-b5a4-34af-d612-83466b206882-en.png)
@@ -95,16 +98,13 @@ Annotate any of the following workload types:
 
 ![Select\_namespace.gif](../../../.gitbook/assets/uuid-27db0a60-f18d-5ab0-9215-5a81e467f013-en.gif)
 
-
 3. When ready, click **Add selected workloads** from the top right of the screen. When the import completes, the Projects page loads and all workloads that you’ve imported appear, with a unique Kubernetes icon:
 
 ![image4.png](../../../.gitbook/assets/uuid-24e0b69a-01c3-9434-9dac-9b44864bd269-en.png)
-
 
    Each item is named according to its Kubernetes metadata as follows:**//**.
 
    You can filter for Kubernetes projects only:
 
 ![](../../../.gitbook/assets/image%20%285%29.png)
-
 

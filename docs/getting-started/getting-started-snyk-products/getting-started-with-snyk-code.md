@@ -18,8 +18,12 @@ This documentation describes using Snyk Code with the Web UI. You can also use S
 Snyk Code is disabled by default, so you must enable it for each organization:
 
 1. Log in to [Snyk.io](http://snyk.io/).
-2. Click on settings ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png)  &gt; **Snyk Code**.
-3. Under **Enable Snyk Code**, change **Disabled** to **Enabled:**  ![enable-snyk-code.png](../../.gitbook/assets/enable-snyk-code.png)
+2. Click on settings
+
+![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png)  &gt; **Snyk Code**.
+3. Under **Enable Snyk Code**, change **Disabled** to **Enabled:** 
+
+![enable-snyk-code.png](../../.gitbook/assets/enable-snyk-code.png)
 4. Click **Save changes**.
 
 ## Stage 2: Add source control integration
@@ -34,7 +38,7 @@ Choose a source code integration, to allow Snyk to work on a project.
 2. Select **Integrations &gt; Source control**.
 3. Click the source control system \(for example, GitHub\) to integrate with Snyk:
 
-   ![Screenshot\_2021-06-22\_at\_10.58.18.png](../../.gitbook/assets/screenshot-2021-06-22-at-10.58.18.png)
+![Screenshot\_2021-06-22\_at\_10.58.18.png](../../.gitbook/assets/screenshot-2021-06-22-at-10.58.18.png)
 
 4. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
 
@@ -67,9 +71,11 @@ You can now view vulnerability results for imported projects. The **Projects** t
 
 1. Click on an imported project to see vulnerability information for that project, including the number of issues found, grouped by severity :
 
-   ![View-Vulns1.png](../../.gitbook/assets/view-vulns1.png)
+![View-Vulns1.png](../../.gitbook/assets/view-vulns1.png)
 
-2. Click on an entry to open the issues view for that entry. For each issue, this shows the exploitable code snippet and a description of the code flaw that may lead to this vulnerability if not fixed: ![View-Vulns2.png](../../.gitbook/assets/view-vulns2.png)
+2. Click on an entry to open the issues view for that entry. For each issue, this shows the exploitable code snippet and a description of the code flaw that may lead to this vulnerability if not fixed:
+
+![View-Vulns2.png](../../.gitbook/assets/view-vulns2.png)
 
 See [View project information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information) for more details.
 

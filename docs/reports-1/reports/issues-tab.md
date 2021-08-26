@@ -6,7 +6,6 @@ By default, issues are grouped together per issue, similar to the following exam
 
 ![](../../.gitbook/assets/mceclip0-31-.png)
 
-
 Get an overview of the general health of your organization on the whole by inspecting the number of projects affected per issue and the number and kinds of issues affecting your projects.
 
 Alternatively, you can ungroup data, viewing a separate line for each project in which the issue occurs—meaning the same issue can appear multiple times if it affects multiple projects. Click the **View issues ungrouped** or **View issues grouped** link to toggle between views.
@@ -30,7 +29,6 @@ Just under the **Export** button, click the **View issues ungrouped** or **View 
 The Issues area appears similar to this image when viewing issues ungrouped:
 
 ![](../../.gitbook/assets/uuid-e02b41ac-13ff-99e8-1028-69cd24310313-en.png)
-
 
 The following table describes the different parts of the Issues area as displayed when viewing issues either grouped or ungrouped:
 
@@ -215,13 +213,11 @@ These controls appear above the table:
 
 ![Reports\_Issues\_filters](https://support.snyk.io/hc/article_attachments/360007031338/uuid-ef7a494d-8b10-9b28-dc63-3f9224519070-en.png)
 
-
 **Search issues**—this search capability allows users to search based on CVE, CWE or identifier name \(i.e. DDoS\). When searching by CVE or CWE, you must provide an exact value \(for example CVE-1234\) whereas, for identifier name, typing in a piece of the word will return results.
 
 **Issue filters**—mark the issues to be displayed by selecting a range of priority scores, specific issue types, exploit maturity, status, fixable values and reachability.
 
 ![](../../.gitbook/assets/screenshot_2020-07-30_at_11.30.19_am.png)
-
 
 **Export**—click the button to choose which format you’d like to export issue data in:
 

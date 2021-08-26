@@ -8,7 +8,6 @@ Once you create or update an IAM role, allow a few minutes for AWS to update the
 
 ![image14.png](https://support.snyk.io/hc/article_attachments/360007147298/uuid-0441cf5d-a461-60e3-5d6e-57eed624d445-en.png)
 
-
    The Amazon ECR configuration page in the Settings area loads.
 
    Enter credentials as follows:
@@ -28,7 +27,6 @@ Once you create or update an IAM role, allow a few minutes for AWS to update the
 Snyk tests the connection values and the page reloads, now displaying Amazon ECR integration details as you entered them. A confirmation message that the details were saved also appears in green at the top of the screen.
 
 ![image3.png](https://support.snyk.io/hc/article_attachments/360007065997/uuid-49671392-b5d5-389d-66c8-86b3daf9a2e1-en.png)
-
 
 In addition, if the connection to AWS failed, notification appears under the **Connected to Amazon ECR** section.
 

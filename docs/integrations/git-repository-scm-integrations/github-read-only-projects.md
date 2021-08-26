@@ -26,18 +26,15 @@ During onboarding, selecting GitHub as the source from which to import projects 
 
 ![](../../.gitbook/assets/screenshot_2020-07-03_at_08.02.29.png)
 
-
 Enter a repository to monitor, in the format of "owner/repository":
 
 ![](../../.gitbook/assets/screenshot_2020-07-03_at_08.01.41.png)
-
 
 When a valid repository name is entered, click "+ Add repo", and the repo will be quickly tested for a supported manifest file.
 
 Enter as many repositories as needed, and click "Import X repository/ies".
 
 ![](../../.gitbook/assets/screenshot_2020-07-03_at_08.01.52.png)
-
 
 ## Post-onboarding <a id="h_01EC9SQ1XZNWWXJ877FNVMRZWV"></a>
 
@@ -47,16 +44,13 @@ This can be done via the "Add projects" dropdown on the dashboard, or by going t
 
 ![](../../.gitbook/assets/screen_shot_2020-06-09_at_14.27.40.png)
 
-
 Enter a repository to monitor, in the format of "owner/repository":
 
 ![](../../.gitbook/assets/screenshot_2020-07-03_at_08.01.41.png)
-
 
 When a valid repository name is entered, click "+ Add repo", and the repo will be quickly tested for a supported manifest file.
 
 Enter as many repositories as needed, and click "Import X repository/ies".
 
 ![](../../.gitbook/assets/screenshot_2020-07-03_at_08.01.52.png)
-
 

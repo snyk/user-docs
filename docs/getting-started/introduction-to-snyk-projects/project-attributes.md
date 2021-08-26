@@ -33,7 +33,9 @@ The ability to assign and remove values from attributes, and filter projects by 
 
 **Assigning values to attributes**
 
-1. On the project page, click the “+” icon below the attribute you want to assign a value to.  ![GS1.png](../../.gitbook/assets/gs1.png)
+1. On the project page, click the “+” icon below the attribute you want to assign a value to. 
+
+![GS1.png](../../.gitbook/assets/gs1.png)
 
  
 2. Select a value from the list available.
@@ -42,7 +44,6 @@ You have assigned a value to the attribute, and it will appear on the project li
 
 ![](../../.gitbook/assets/gs2.png)
 
-
 **Removing values from attributes**
 
 1. Select the attribute you want to remove a value from
@@ -50,18 +51,15 @@ You have assigned a value to the attribute, and it will appear on the project li
 
 ![](../../.gitbook/assets/gs3.png)
 
-
 The value has been removed from the attribute.
 
 ![](../../.gitbook/assets/gs4.png)
-
 
 **Filtering values in the project listing page**
 
 1. On the left of the project listing page, select the values for the attributes that you want to filter projects by.
 
 ![GS5.png](../../.gitbook/assets/gs5.png)
-
 
 2. When you filter by multiple values on a single attribute, you will return projects that have been assigned one or more of the values in the filter
 3. When you filter by multiple attributes, you will return projects which have been assigned values of both attributes in the filter. 

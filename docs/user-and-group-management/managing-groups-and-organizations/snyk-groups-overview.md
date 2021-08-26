@@ -12,11 +12,9 @@ From the group overview, the vulnerability status of all of a group’s organiza
 
 ![](../../.gitbook/assets/screen_shot_2021-07-02_at_2.07.01_pm.png)
 
-
 ## Organization filters
 
 Organization filters can be created, saved, and selected quickly via the **Organization Filters** dropdown.
 
 ![](../../.gitbook/assets/screen_shot_2021-07-02_at_2.05.50_pm.png)
-
 

@@ -31,7 +31,6 @@ Snyk Broker has a client and a server component:
 
 ![](../../.gitbook/assets/image2-4-.png)
 
-
 All data, both in transit and at rest, is encrypted. Communication between the client and server takes place over a secure WebSocket connection. On startup, it dials out and establishes a two way communication path. It does not require opening incoming ports.
 
 ## Using inbound and outbound connections

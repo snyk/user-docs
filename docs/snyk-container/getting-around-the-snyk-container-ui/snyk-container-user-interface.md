@@ -12,11 +12,11 @@ After you integrate with a container registry and import your projects, we scan 
 
 1. Navigate to your container registry integration settings
 
-   ![mceclip0.png](../../.gitbook/assets/mceclip0-3-.png)
+![mceclip0.png](../../.gitbook/assets/mceclip0-3-.png)
 
 2. Enable the _**Detect application vulnerabilities**_ capability and save the changes:
 
-   ![mceclip1.png](../../.gitbook/assets/mceclip1%20%281%29.png)
+![mceclip1.png](../../.gitbook/assets/mceclip1%20%281%29.png)
 
 ## View vulnerabilities and licensing issues
 

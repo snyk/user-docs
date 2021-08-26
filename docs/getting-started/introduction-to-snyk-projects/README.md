@@ -11,7 +11,6 @@ Projects appear on the **Projects** menu on the Snyk dashboard:
 
 ![](../../.gitbook/assets/code1.png)
 
-
 ## Target
 
 The address of the item to scan \(external to Snyk\), such as a Kubernetes cluster or a GitHub repo. One target may relate to many projects. The structure of the target depends on the origin.

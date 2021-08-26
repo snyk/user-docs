@@ -7,7 +7,9 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
 
 **For Business customers:**
 
-Organization administrators can [access and set license policy rules](https://support.snyk.io/hc/en-us/articles/360007590258) via settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
+Organization administrators can [access and set license policy rules](https://support.snyk.io/hc/en-us/articles/360007590258) via settings
+
+![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
 
  **&gt;** Licenses
 

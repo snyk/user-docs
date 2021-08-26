@@ -23,7 +23,6 @@ Review the **package.json** manifest file in your cloned goof application, to se
 
 ![](../../.gitbook/assets/dependencies.png)
 
-
 {% hint style="info" %}
 These direct dependencies can also have additional transitive dependencies; libraries that they depend on.
 {% endhint %}
@@ -83,13 +82,11 @@ GitHub has received your changes on your **add\_vulns** branch.
 
 ![click-compare.png](../../.gitbook/assets/click-compare.png)
 
-
 ## Step 4: Snyk tests pull request checks
 
 Snyk automatically tests your pull request for vulnerability and license checks in the merge process:
 
 ![](../../.gitbook/assets/snyk_vuln_lic_check.png)
-
 
 As the PR workflow completed, Snyk validated the vulnerability and license policy set for the project. Based on the policy, the checks either passed or failed; this is shown in GitHub.
 

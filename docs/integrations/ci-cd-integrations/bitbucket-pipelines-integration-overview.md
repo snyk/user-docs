@@ -12,11 +12,9 @@ From the build directory, Bitbucket Pipelines displays a list of available pipes
 
 ![](../../.gitbook/assets/uuid-6fff2668-6e2e-22ae-200f-124c8a240b02-en.png)
 
-
 From this list, find and click **Snyk** to view the pipe, examples, parameters, and values:
 
 ![](../../.gitbook/assets/mceclip0-25-.png)
-
 
 ### Language support
 
@@ -72,8 +70,9 @@ To enable Snyk to test and monitor your code as an integral part of your CI/CD w
 * Once included in your pipeline commands, Snyk looks for the manifest files in that repository \(package.json, package-lock.json\) and performs the scan.
 * Results appear in the Bitbucket Pipelines output interface, similar to the following:
 
-  ![image3.png](../../.gitbook/assets/uuid-dbbc4153-d3ff-5cbb-9ddd-affa138387b7-en.png)
+ 
 
+![image3.png](../../.gitbook/assets/uuid-dbbc4153-d3ff-5cbb-9ddd-affa138387b7-en.png)
 
 {% hint style="info" %}
 **Note**  
@@ -260,12 +259,9 @@ Following is an example of the Snyk pipe set up for a Docker image:
 
 ![](../../.gitbook/assets/uuid-ad76fa92-0b15-da5c-bd27-a1cc250a3ae0-en.png)
 
-
 **Example of a Snyk pipe for npm**
 
 Following is an example of the Snyk pipe set up for npm:
 
 ![](../../.gitbook/assets/uuid-6e06670a-3217-2ff5-bf56-1e06a309d06c-en.png)
-
-
 

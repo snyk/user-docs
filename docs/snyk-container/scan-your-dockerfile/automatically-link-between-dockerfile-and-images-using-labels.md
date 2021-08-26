@@ -8,7 +8,6 @@ This information appears in the **LINKED IMAGES** section of the details for a p
 
 ![](../../.gitbook/assets/mceclip3.png)
 
-
 You can get automatic links between imported images \(via container registry integration\) to existing Dockerfile projects. This is done by checking whether the OCI label in the image matches the path of a Dockerfile that exists in the org in Snyk.
 
 ## How it works
@@ -35,7 +34,6 @@ For a link to be created, Snyk needs to be able to map the Dockerfile repository
 To create automatic links between container images to Dockerfiles stored in brokered SCMs, enter the URL in the integration page settings:
 
 ![](../../.gitbook/assets/mceclip0-4-.png)
-
 
 Once available, Snyk can use that for linking generation.
 

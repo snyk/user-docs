@@ -58,7 +58,9 @@ Here is an example of a fix pull request opened by Snyk:
 
 To review and adjust the automatic fix pull request settings:
 
-1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
+1. Click on settings
+
+![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
 2. Select **Edit Settings** for Bitbucket Cloud.
 3. Navigate to **Automatic fix pull requests**:
 
@@ -74,7 +76,9 @@ This is how Snyk pull request build check appears in the **Pull Request** page i
 
 To review and adjust the pull request tests settings,
 
-1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
+1. Click on settings
+
+![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
 2. Select **Edit Settings** for Bitbucket Cloud.
 3. Navigate to **Default Snyk test for pull requests**:
 
@@ -140,7 +144,9 @@ To change these settings later, navigate to the workspace settings and select **
 
 To disable this integration:
 
-1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations** in Snyk.
+1. Click on settings
+
+![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations** in Snyk.
 2. Find the specific integration to deactivate in your list of integrations, and click Edit settings. 
 3. A page appears showing the current status of your integration and a place to update your credentials, specific to each integration \(credentials, API key, Service Principal, or connection details\):
 

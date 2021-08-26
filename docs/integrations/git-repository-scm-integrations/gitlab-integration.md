@@ -26,7 +26,6 @@ This integration only works with GitLab instances that are publicly reachable \(
 
 ![image1.png](../../.gitbook/assets/uuid-aa58b5a9-dd17-3219-6067-4ee6e3f4b384-en.png)
 
-
 **NOTE:** When using GitLab Enterprise integration, it is important to use the correct URL. For example, use https://gitlab.yourcompany.com/ instead of https://gitlab.yourcompany.com/subfolder1/... The PAT will provide access to any of the repositories that have access granted to them.
 
 ### Required permissions and roles
@@ -39,7 +38,6 @@ To integrate with GitLab, as a Snyk admin user or as a member of the organizatio
 2. Ensure that the Gitlab user that you've just generated the access token from, is either the owner of the projects \(repos\) you'd like to monitor with Snyk or has **Maintainer** permissions to them.
 
 ![gitlab\_token.png](../../.gitbook/assets/gitlab_token.png)
-
 
 **This scope enables:**
 
@@ -60,13 +58,11 @@ You can review the vulnerabilities that will be fixed, change your selection, an
 
 ![](../../.gitbook/assets/uuid-8d2ef9cb-cd32-bf48-a827-32bb358a10ab-en.png)
 
-
 When you open a merge request via snyk.io, we will give you a heads-up when this is the case.
 
 Here’s an example for the merge request:
 
 ![](../../.gitbook/assets/uuid-5e9a4b58-4d87-06fb-0479-a308515d4b12-en.png)
-
 
 ### Get a Snyk merge request for newly disclosed vulnerabilities that affect you
 

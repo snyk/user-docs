@@ -4,7 +4,6 @@ Click **Settings** from your project, to view and edit project settings:
 
 ![](../../.gitbook/assets/screenshot_2021-04-14_at_09.23.38.png)
 
-
 Click the **GitHub integration** section to edit SCM-specific settings \(applicable also to other SCMs\).
 
 You can edit settings including:

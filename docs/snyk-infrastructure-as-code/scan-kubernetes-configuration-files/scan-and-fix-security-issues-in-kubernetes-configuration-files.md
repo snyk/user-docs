@@ -19,19 +19,17 @@ Snyk Infrastructure as Code supports:
 
 ![2.1.png](../../.gitbook/assets/2.1.png)
 
-
 ![2.2.png](../../.gitbook/assets/2.2.png)
-
 
 3. Every time a repository is scanned:
    * Every supported manifest file and every supported configuration file is imported as a separate project, grouped together per repository, similar to this example:
 
-     ![3.png](../../.gitbook/assets/3.png)
+    
 
+![3.png](../../.gitbook/assets/3.png)
 
    * If you re-imported the repository in order to import the cloud configuration files, then Snyk imports and tests the configuration files and also re-tests the already imported application manifest files - displaying the test time as "now".
 4. Click the project link you're interested in, to view the scan results and to correct your configuration files accordingly:
 
 ![4.png](../../.gitbook/assets/4.png)
-
 

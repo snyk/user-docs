@@ -46,7 +46,6 @@ You can define the target organization in the Snyk CLI, by either URL slug or or
 
 ![](../../.gitbook/assets/image1.png)
 
-
 **Default organization**
 
 If you do not define a target organization, Snyk uses the default organization for the authentication token you use:

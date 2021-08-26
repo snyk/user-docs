@@ -21,13 +21,11 @@ Click **Edit**, and **add a scan stage**.
 
 ![](../../.gitbook/assets/aws-cp-add-stage.png)
 
-
 #### Step 2: Add action group
 
 Click **Add an Action Group** to open the **Edit Action** window:
 
 ![](../../.gitbook/assets/aws-cp-edit-action.png)
-
 
 Name the action, then select **Snyk** as the **Action Provider**.
 
@@ -39,13 +37,11 @@ Select how you would like to authenticate with Snyk to give AWS CodePipeline per
 
 ![](../../.gitbook/assets/snyk-cp-int-config.png)
 
-
 #### Step 4: Configure settings
 
 The following options are available for configuration:
 
 ![](../../.gitbook/assets/configure.png)
-
 
 1. **Snyk Organization:** Select the Snyk organization where findings reports are saved.
 2. **Vulnerability handling**: Select to fail a pipeline if a vulnerability is found. If Fail on issues is selected, the pipeline will fail depending on the sub-options selected. The sub options available are:
@@ -63,7 +59,6 @@ Confirm the connection to Snyk when prompted.
 
 ![](../../.gitbook/assets/aws-cp-confirm-oauth.png)
 
-
 Save the pipeline after successfully connecting to Snyk.
 
 This configures your Snyk stage in the CodePipeline, so you can test your application. Users should release the latest changes through the CodePipeline options for the latest changes to take effect.
@@ -74,18 +69,15 @@ You can view scan results in the AWS CodePipeline console, by clicking **Details
 
 ![](../../.gitbook/assets/aws-cp-findings-report.png)
 
-
 Click **Link to execution details** to view your detailed vulnerability report.
 
 ![](../../.gitbook/assets/image4-2-.png)
-
 
 ### Test report details
 
 Snyk analyzes the application’s manifest file and correlates the list of dependencies with Snyk’s vulnerability database. Snyk provides [detailed reports](https://support.snyk.io/hc/en-us/categories/360000598418-Reports-and-remediation) for your open source code. By analyzing the application’s manifest file, Snyk builds a full dependency tree, accurately identifying both direct and transitive dependencies \(transitives account for 78% of the vulnerabilities detected by Snyk\). This enables Snyk to show exactly how a vulnerability was introduced into the application.
 
 ![](../../.gitbook/assets/prototype.png)
-
 
 {% hint style="info" %}
 Reports are stored for 14 days before they expire. Subsequent pipeline runs will update the report and reset the retention period.

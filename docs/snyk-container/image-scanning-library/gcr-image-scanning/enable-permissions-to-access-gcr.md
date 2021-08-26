@@ -22,7 +22,6 @@ From the relevant project in Google, ensure the you've created a service account
 
 ![GCR\_key\_file\_contents.png](../../../.gitbook/assets/uuid-c4e3b781-e575-5ab8-6cea-b0a8654068c4-en.png)
 
-
    Save the data you copied in order to paste it when configuring the integration with Snyk.
 
 **Next steps:**

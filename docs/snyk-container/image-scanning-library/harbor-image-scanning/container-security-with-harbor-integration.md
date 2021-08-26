@@ -23,7 +23,6 @@ Prerequisites
 2. In the **Account credentials** section, enter your Harbor username and password login credentials. In the **container registry name** fill in the full URL to the registry you want to integrate with. To finish, click **Save**.  
 ![mceclip2.png](../../../.gitbook/assets/mceclip2-1-.png)
 
-
    In case you are using a self-hosted Harbor registry, contact us to provide you with a token. You can read more about setting up private registry integration [here](https://support.snyk.io/hc/en-us/articles/360017040957).
 
 {% hint style="info" %}
@@ -32,7 +31,6 @@ To set up the integration, the Harbor user should be an admin user. It currently
 {% endhint %}
 
 ![mceclip1.png](../../../.gitbook/assets/mceclip1-8-.png)
-
 
 Snyk tests the connection values and the page reloads, now displaying Harbor integration information, and the **Add your Harbor images to Snyk** button becomes available. In case the connection to Harbor failed, notification appears under the **Connected to Harbor** section.  
 Now you can use Snyk to scan your images from Harbor.

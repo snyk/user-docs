@@ -6,7 +6,6 @@ You need to find the specific integration you wish to deactivate in your list of
 
 ![](../../.gitbook/assets/uuid-b3a98f2c-4cc8-7753-8efa-396e9ec1e717-en-2-%20%283%29%20%281%29.png)
 
-
 If you choose to disconnect, your credentials will be removed from Snyk and any integration-specific projects we had been monitoring will be deactivated on Snyk.
 
 If you choose to re-enable this integration at any time, you need to re-enter your credentials and activate your projects.
