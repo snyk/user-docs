@@ -11,7 +11,7 @@ Brokered Artifactory is currently supported for [Maven](https://support.snyk.io/
 
 ## Getting started
 
-1. Go to settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **&gt; Integrations &gt; Package Repositories &gt; Artifactory**
+1. Go to settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations &gt; Package Repositories &gt; Artifactory**
 2. You should see this screen at the beginning.
 
    ![Screenshot\_2020-04-17\_at\_14.38.12.png](../../.gitbook/assets/screenshot_2020-04-17_at_14.38.12.png)
@@ -64,5 +64,6 @@ Contact [support@snyk.io](mailto:support@snyk.io) if you want to add a private r
       3. **Protocol**: If left empty, protocol will default to \[[https://\]--this](https://]--this) should only be specified when no certificate is present and http is required instead for your instance
       4. **Basic auth**: URL encode both and user info to avoid errors that will prevent authentication
       5. **No basic auth**: Omit`:@` credentials 
-   3. `RES_BODY_URL_SUB` is the URL of the Artifactory without credentials, and with http protocol and is required for NPM integration 1. Check connection status by refreshing Artifactory Integration Settings page, no connection error should be displayed
+   3. `RES_BODY_URL_SUB` is the URL of the Artifactory without credentials, and with http protocol and is required for NPM integration 
+   4. Check connection status by refreshing Artifactory Integration Settings page, no connection error should be displayed
 

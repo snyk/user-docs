@@ -31,7 +31,7 @@ This feature is available with Enterprise plans. See [Pricing plans](https://sny
    * If you want to add a mix of **default registry url** and **scoped packages**, add multiple configurations - one for the default and one per scope.
 
 4. When you have added all the registries and scopes you want, click **Update settings**.
-5. Now test it out - open a Pull/Merge Request on a project that contains private dependencies to see a lockfile updated and included in the Snyk Fix Pull Request where previously none was generated. _\*\*_
+5. Now test it out - open a Pull/Merge Request on a project that contains private dependencies to see a lockfile updated and included in the Snyk Fix Pull Request where previously none was generated.
 
 ## npm Teams & npm Enterprise Registry Settings <a id="h_bab29371-80cb-4e6e-ad3b-e930b24700b1"></a>
 
