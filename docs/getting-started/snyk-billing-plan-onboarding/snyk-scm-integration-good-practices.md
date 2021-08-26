@@ -126,7 +126,7 @@ Below is an example of how you would set up your an integration for **Github.com
 
 3. Click **Authorize snyk** to provide Snyk with access to your repositories:
 
-![authorize.png](../../.gitbook/assets/authorize%20%281%29%20%282%29%20%282%29.png)
+![authorize.png](../../.gitbook/assets/authorize%20%281%29%20%282%29%20%286%29%20%283%29.png)
 
 **SCM permissions on repositories**
 
@@ -152,7 +152,7 @@ To disable notifications for all the users in an Org ahead of your import, unche
 1. Navigate to the **Projects** page in the Snyk UI, select **Add projects**, select the repos to import to Snyk, then click **Add selected repositories**.
 2. Snyk starts scanning the selected repos for dependency files \(for example, **package.json**\) in the entire directory tree and imports these files as projects:
 
-   ![which\_repos.jpg](../../.gitbook/assets/which_repos%20%283%29%20%285%29.jpg)
+   ![which\_repos.jpg](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29.jpg)
 
 3. Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.
 4. Snyk detects the manifest files \(projects\), tests them, then displays the results. Imported projects appear underneath the repository name. ![Int3.png](../../.gitbook/assets/int3.png) \(Projects are continuously checked for vulnerabilities after being imported\)
@@ -227,11 +227,11 @@ We suggest you exclude patches from the auto fix PRs, if your developers are not
 
 You should ask your developers to consider the merge advice label that appears on the auto fix PRs:
 
-![](../../.gitbook/assets/merge-advice-review-recommended%20%282%29%20%282%29%20%283%29.png)
+![](../../.gitbook/assets/merge-advice-review-recommended%20%282%29%20%282%29%20%282%29%20%283%29.png)
 
-![](../../.gitbook/assets/advice-green%20%281%29%20%282%29%20%282%29%20%281%29.png)
+![](../../.gitbook/assets/advice-green%20%281%29%20%282%29%20%282%29%20%284%29%20%281%29.png)
 
-![](../../.gitbook/assets/merge-advice%20%282%29%20%282%29%20%282%29.png)
+![](../../.gitbook/assets/merge-advice%20%282%29%20%282%29%20%284%29%20%282%29.png)
 
 Snyk auto fix PRs are only generated for new issues.
 

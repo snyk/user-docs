@@ -8,9 +8,6 @@ We currently offer scanning for Node, Ruby Gems, Composer and Pip.
 This integration is currently available in AWS’s us-east-1 region, but we are working on expanding to additional regions soon after release
 {% endhint %}
 
-You can initiate Snyk’s AWS CodePipeline integration directly from the AWS CodePipeline console.  
-Add Snyk to a new or existing pipeline using the following steps.
-
 ### Setup
 
 You can initiate Snyk’s AWS CodePipeline integration directly from the AWS CodePipeline console.  

@@ -73,8 +73,7 @@ To enable Snyk to test and monitor your code as an integral part of your CI/CD w
   ![image3.png](../../.gitbook/assets/uuid-dbbc4153-d3ff-5cbb-9ddd-affa138387b7-en.png)
 
 {% hint style="info" %}
-## Note
-
+**Note**  
 If the build fails, even if **MONITOR** is set to **True**, Snyk does not continue to the Monitor stage \(because no projects are deployed until the build succeeds\). To enable monitoring on Snyk.io of projects with vulnerabilities, set **DONT\_BREAK\_BUILD** to **True**. You can use **SEVERITY\_THRESHOLD** to tell the pipe the severity threshold from which to fail the pipe at the scanning stage. See Snyk pipe parameters and values for more information.
 {% endhint %}
 

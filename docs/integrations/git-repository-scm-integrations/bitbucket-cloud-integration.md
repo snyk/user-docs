@@ -12,7 +12,7 @@ Snyk's Bitbucket Cloud integration allows you to continuously perform security s
 1. To give Snyk access to your Bitbucket account, set up up a dedicated service account in Bitbucket, with admin permissions. Visit [Bitbucket documentation ](https://support.atlassian.com/bitbucket-cloud/docs/grant-access-to-a-workspace/)to learn more about creating users.
 2. In Snyk, go to the **Integrations** page and click on **Bitbucket Cloud** card:
 
-![111.png](../../.gitbook/assets/111%20%281%29%20%281%29.png)
+![111.png](../../.gitbook/assets/111%20%281%29%20%281%29%20%283%29.png)
 
 3. Access your Bitbucket Cloud account and create a unique App Password for Snyk with the following permissions: **Account: Email & Read** **Workspace membership: Read Projects: Read Repositories: Read & Write Pull requests: Read & Write Webhooks: Read & Write** Follow [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html) to learn how to do it. 
 
@@ -32,7 +32,7 @@ You can now select the repositories for Snyk to monitor.
 
 8. Snyk scans the selected repositories for dependency files \(such as package.json and pom.xml\) in the entire directory tree, and import them to Snyk as projects:
 
-![444.png](../../.gitbook/assets/444%20%282%29%20%284%29.png)
+![444.png](../../.gitbook/assets/444%20%282%29%20%284%29%20%284%29.png)
 
 9. The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
@@ -46,7 +46,7 @@ Snyk produces advanced security reports, allowing you to explore the vulnerabili
 
 This is an example of a project level security report:
 
-![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29.png)
+![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%286%29.png)
 
 ### Projects monitoring and automatic fix pull requests
 
@@ -62,7 +62,7 @@ To review and adjust the automatic fix pull request settings:
 2. Select **Edit Settings** for Bitbucket Cloud.
 3. Navigate to **Automatic fix pull requests**:
 
-![777.png](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%283%29.png)
+![777.png](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%284%29.png)
 
 ### Pull request tests
 

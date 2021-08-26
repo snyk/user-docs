@@ -17,7 +17,7 @@ In order to turn on the Cloud Foundry integration you’ll need to:
 
 In order for Snyk to be able to monitor your deployed Cloud Foundry applications, you’ll first need to connect Snyk to your Cloud Foundry account. You can do this by navigating to the [Integrations page](https://app.snyk.io/integrations) and clicking on “Connect to Cloud Foundry”.
 
-![](../../.gitbook/assets/uuid-e7c43047-5065-ad28-db37-1c56e8796a8b-en-1-%20%282%29.png)
+![](../../.gitbook/assets/uuid-e7c43047-5065-ad28-db37-1c56e8796a8b-en-1-%20%282%29%20%282%29.png)
 
 This will take you to a page where you’ll be prompted to enter your Cloud Foundry API URL, username and password. We recommend setting up a dedicated user for your Snyk organization.
 

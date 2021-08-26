@@ -51,7 +51,8 @@ Authentication can be triggered by pressing the “Authenticate” button. If fo
 
 If, however, the automated authentication doesn’t work for some reason, please reach out to us. We would be happy to investigate!
 
-![readme\_image\_2\_6.png](../../.gitbook/assets/readme_image_2_6.png)  
+![readme\_image\_2\_6.png](../../.gitbook/assets/readme_image_2_6.png)
+
 ![install-5-A.png](../../.gitbook/assets/install-5-a.png)
 
 You will be taken to the website to verify your identity and connect the IDE extension. Click the **Authenticate** button.
