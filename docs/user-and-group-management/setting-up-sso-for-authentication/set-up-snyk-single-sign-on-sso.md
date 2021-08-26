@@ -10,7 +10,7 @@ Ensure you have at least one group and organization to indicate where new users 
 Once you have gathered the requested information \(detailed below\), create a support ticket to request SSO set up.
 {% endhint %}
 
-## Overview
+### Overview
 
 The process of establishing trust between your identity provider \(IdP\) and Snyk requires a few separate steps, coordinated between your SSO administrator and Snyk Support.
 
@@ -27,7 +27,7 @@ Each type of SSO connection requires different details for establishing the trus
 
 {% embed url="https://youtu.be/wqq4rdmqLEE" caption="" %}
 
-## Use SAML for SSO
+### Use SAML for SSO
 
 To establish trust with Snyk, add an Entity ID, an ACS URL, and a Signing certificate in your identity provider.
 
@@ -95,7 +95,7 @@ Obtain the following information from your identity provider and organization. P
   </tbody>
 </table>
 
-## Use OpenID Connect \(OIDC\) for SSO
+### Use OpenID Connect \(OIDC\) for SSO
 
 When using OIDC for the connection between your Identity provider and Snyk, add the Callback/Redirect URIs and OAuth Grant Type in your identity provider to establish trust with Snyk.
 
@@ -113,7 +113,7 @@ Obtain the following information from your identity provider and organization. P
 | Client Secret | Only needed if the IdP does not allow the Implicit grant type |
 | Email domains and subdomains | The email domains and subdomains that need access to the SSO |
 
-## Use Azure AD as SSO \(via App Registration/OIDC\)
+### Use Azure AD as SSO \(via App Registration/OIDC\)
 
 When using Azure AD for the connection between your Identity provider and Snyk, you'll need to add the Redirect URIs in your Identity provider to establish trust with Snyk.
 
@@ -130,7 +130,7 @@ Obtain the following information from your identity provider and organization. P
 | Client Secret | The secret for your authorization that grants tokens to authorized requestors |
 | Microsoft Azure AD Domain | The numbers and letters shown in the Directory \(tenant\) ID, which can be found from the Snyk app you created under Overview |
 
-## Use ADFS as SSO
+### Use ADFS as SSO
 
 When using ADFS for the connection between your Identity provider and Snyk, add the Realm Identifier, a Callback URL, and a Signing certificate in your Identity provider to establish trust with Snyk.
 
@@ -151,7 +151,7 @@ For Enterprise plans, Snyk can map new users to a specific organization and role
 
 Work with your Customer Success Manager and Snyk Technical Services to prepare for implementing this SSO option.
 
-## Complete SSO connection
+### Complete SSO connection
 
 After you set up the connection with your Identity provider and provide the necessary details to Snyk Support, Snyk sends you a link to generate a payload.
 
@@ -169,14 +169,17 @@ To complete your log in:
 3. Log in with your identity provider as you would for other applications.
 4. Let Snyk Support know which user to promote as the Group administrator.
 
-## Resources
+### Resources
 
 These worksheets include the information to enter in your Identity provider and the information you need to collect before submitting a ticket to Snyk Support to request single sign-on.
 
 These worksheets include the information to enter in your Identity provider and the information you need to collect before submitting a ticket to Snyk Support to request single sign-on.
 
-* [SSO OIDC Worksheet.pdf](https://support.snyk.io/hc/en-us/article_attachments/360019345258/SSO_OIDC_Worksheet.pdf)
-* [SSO Azure Worksheet.pdf](https://support.snyk.io/hc/en-us/article_attachments/360019280457/SSO_Azure_Worksheet.pdf)
-* [SSO ADFS Worksheet.pdf](https://support.snyk.io/hc/en-us/article_attachments/360019345278/SSO_ADFS_Worksheet.pdf)
-* [SSO SAML Worksheet.pdf](https://support.snyk.io/hc/en-us/article_attachments/360020511338/SSO_SAML_Worksheet.pdf)
+{% file src="../../.gitbook/assets/sso-oidc-worksheet-1-.pdf" caption="SSO OIDC Worksheet" %}
+
+{% file src="../../.gitbook/assets/sso-adfs-worksheet.pdf" caption="SSO ADFS Worksheet" %}
+
+{% file src="../../.gitbook/assets/sso-azure-worksheet.pdf" caption="SSO Azure Worksheet" %}
+
+{% file src="../../.gitbook/assets/sso-saml-worksheet.pdf" caption="SSO SAML Worksheet" %}
 
