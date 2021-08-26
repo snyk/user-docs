@@ -11,8 +11,12 @@ Features might not be available, depending on your subscription plan.
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![i\_icon\_nuget.png](../../.gitbook/assets/uuid-b997ca27-61ff-f00b-941c-16bf3aa4a0e0-en.png) | [NuGet](https://www.nuget.org/) | ✔︎ | ✔︎ | ✔︎ |  |  |
-| ![i\_icon\_paket.png](../../.gitbook/assets/uuid-d8e44fe4-c0ea-e3ea-de3b-1e15e4a6b391-en.png) | [Paket](https://fsprojects.github.io/Paket/index.html) | ✔︎ |  | ✔︎ |  |  |
+| ![i\_icon\_nuget.png](../../.gitbook/assets/uuid-b997ca27-61ff-f00b-941c-16bf3aa4a0e0-en.png)
+
+ | [NuGet](https://www.nuget.org/) | ✔︎ | ✔︎ | ✔︎ |  |  |
+| ![i\_icon\_paket.png](../../.gitbook/assets/uuid-d8e44fe4-c0ea-e3ea-de3b-1e15e4a6b391-en.png)
+
+ | [Paket](https://fsprojects.github.io/Paket/index.html) | ✔︎ |  | ✔︎ |  |  |
 
 ### **How it works**
 
@@ -133,6 +137,7 @@ Once imported, Snyk analyzes your projects based on their supported manifest fil
 
 ![](../../.gitbook/assets/uuid-c995621c-85c8-c79f-accd-f014e2293921-en.png)
 
+
 #### **Nuget**
 
 Once you select a project for import, we build the dependency tree based on these manifest files:
@@ -172,6 +177,8 @@ From the Snyk UI, you can configure whether Snyk should scan your entire project
 **Update language preferences**
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
-2. Go to settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; and click for .NET
+2. Go to settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
+
+ &gt; and click for .NET
    * Scan build dependencies - _\*\*_If checked, Snyk scans all development dependencies.
 

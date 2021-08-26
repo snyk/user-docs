@@ -2,7 +2,9 @@
 
 **Create a policy**
 
-1. Click ![mceclip0.png](../../.gitbook/assets/mceclip0-27-.png)from the Policy Manager, and a modal will appear where you can create your policy 
+1. Click ![mceclip0.png](../../.gitbook/assets/mceclip0-27-.png)
+
+from the Policy Manager, and a modal will appear where you can create your policy 
 2. Set a policy name and a description to help you quickly identify a policy
 
 **NOTE**
@@ -17,6 +19,7 @@ Policies **cannot** be saved without a policy name applied
 4. Once you've added your rules, make sure to click **Submit** in the top right hand corner
 
 ![](../../.gitbook/assets/screenshot_2020-05-26_at_9.47.26_am.png)
+
 
 ## Edit a policy
 
@@ -33,4 +36,5 @@ Deleting a policy cannot be undone. If you delete a policy that has organization
 Duplicating a policy will copy over the rules of a policy, but not the assigned organizations or attributes. The new policy will automatically be called ‘Copy of \(Policy Name\)…” and can be edited.
 
 ![](../../.gitbook/assets/screen_shot_2021-08-11_at_2.11.06_pm.png)
+
 

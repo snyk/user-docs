@@ -37,6 +37,7 @@ snyk auth
 
 ![gif\_authenticate\_CLI.gif](https://support.snyk.io/hc/article_attachments/360006979538/uuid-7f427e54-45f8-910e-98c5-2016a27d29b0-en.gif)
 
+
 To test your installation change directory into a folder containing a supported package manifest file \(package.json, pom.xml, composer.lock, etc.\) and run:
 
 ```text
@@ -57,6 +58,7 @@ As you can see, Snyk found and reported several vulnerabilities in the package. 
 You can download and use Snyk's prebuilt binaries already containing npm, the Snyk CLI and other necessary components. To download the prebuilt binary, visit the [**Releases tab**](https://github.com/snyk/snyk/releases) in the CLI repository page in GitHub:
 
 ![](../../.gitbook/assets/image%20%2812%29.png)
+
 
 Once you've completed installation, get started testing and remediating your vulnerabilities with our [Getting started](https://support.snyk.io/hc/articles/360003812458#UUID-19fc37f2-b686-11ed-b85c-4789e90c8dfc) guide and [our full list](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0) of our CLI commands, options and arguments.
 

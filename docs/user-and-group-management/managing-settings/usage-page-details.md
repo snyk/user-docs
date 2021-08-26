@@ -1,6 +1,8 @@
 # Usage page details
 
-Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Usage** to view:
+Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
+
+ &gt; **Usage** to view:
 
 * [Test usage](usage-page-details.md): the numbers of tests used.
 * [Contributing developers](usage-page-details.md) number of developers contributing to projects.
@@ -38,6 +40,7 @@ For example:
 
 ![image\_\_10\_.png](https://support.snyk.io/hc/article_attachments/4403676877585/image__10_.png)
 
+
 The **total unique contributors across all integrations** count shows the number of contributors across all the integrations in your Snyk account. Contributing developers are only counted once, even if they have contributed to multiple integrations or multiple repositories.
 
 The **Breakdown by integration** section shows the number of contributors, orgs, and repos in that integration.
@@ -60,6 +63,7 @@ For **Bulk actions**, select relevant projects, then select to **Delete**, **Act
 
 ![Usage-projects-bulk-actions.png](https://support.snyk.io/hc/article_attachments/4403674675985/Usage-projects-bulk-actions.png)
 
+
 ### Set test frequency
 
 You can set the frequency of testing for each project.
@@ -67,6 +71,7 @@ You can set the frequency of testing for each project.
 For each entry, you can select the frequency of testing for that project \(never, daily, or weekly\)
 
 ![usage-projects-single.png](https://support.snyk.io/hc/article_attachments/4403676922769/usage-projects-single.png)
+
 
 Click **Deactivate** to never test, and also remove webhooks and stop showing the project’s results in reporting.
 

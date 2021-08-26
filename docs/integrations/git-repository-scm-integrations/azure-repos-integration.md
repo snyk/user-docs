@@ -15,12 +15,14 @@ Snyk tests and monitors Azure Repos that are in any of our supported languages b
 
 ![image1.png](../../.gitbook/assets/uuid-55436a38-bdce-2011-6bb7-6c2d8ed47abe-en.png)
 
+
 1. Go to **Projects** and click **Add projects**. Choose the tool from which to import your projects:
 2. A popup screen opens with all the available repositories under the selected integration:
 3. Select the repos that you would like to import to Snyk to monitor them for security/license issues. To import all repos for a specific organization, checkmark the organization.
 4. Click **Add selected repositories**. Snyk will now scan the entire file tree for dependency files and import them to Snyk as Projects.
 
 ![image2.png](../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en.png)
+
 
 ### Adding custom file location
 
@@ -45,8 +47,8 @@ This field is case-sensitive and the pattern applies for all repos.
 
 Once repositories are imported, a confirmation appears in green at the top of the screen. The selected files are indicated with a unique icon, they are named by organization/repo, and you can now also filter to view only those projects, as seen in the example below:  
 
-
 ![image7.png](../../.gitbook/assets/uuid-141d5609-ab7e-6810-f9ad-94d4413984cd-en.png)
+
 
 This integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages in our Docs.
 
@@ -79,17 +81,20 @@ Ensure you have set up your Azure Repos account and your Snyk account.
 5. Navigate to **Integrations** from the menu bar at the top.
 6. From the **Integrations** page under the Azure Repos logo, click the **Connect to Azure Repos button:**
 
-   ![image1.png](../../.gitbook/assets/uuid-759cd7dc-c095-dd7d-22d3-27f842ebd696-en.png)
+![image1.png](../../.gitbook/assets/uuid-759cd7dc-c095-dd7d-22d3-27f842ebd696-en.png)
+
 
 7. From the **Settings** page in the **Integrations** area, enter the Azure DevOps organization that you want to integrate with \(i.e. [https://dev.azure.com/{org-name}\](https://dev.azure.com/{org-name}\)\) and the personal access token that you just generated.  
-   ![settings.png](../../.gitbook/assets/settings.png)
+![settings.png](../../.gitbook/assets/settings.png)
+
 
    \* Enterprise customers can also provide a custom URL for Azure Repos Server private instance which is publicly reachable.
 
 8. Click **Save**.
 9. Snyk tests the connection values and the page reloads, now displaying Azure Repos integration information. A confirmation message that the details were saved also appears in green at the top of the screen. In addition, if the connection to Azure failed, a notification appears under the Connected to Azure Repos section.
 
-   ![Screen\_Shot\_2020-05-19\_at\_17.16.24.png](../../.gitbook/assets/screen_shot_2020-05-19_at_17.16.24.png)
+![Screen\_Shot\_2020-05-19\_at\_17.16.24.png](../../.gitbook/assets/screen_shot_2020-05-19_at_17.16.24.png)
+
 
 {% hint style="info" %}
 **Note**: it is important that a Snyk admin user configure the integration within the UI. Collaborator users won't be able to complete this task and they may get the following error: _“We're having trouble connecting to Azure Repos. Please try again or_ [_contact support_](mailto:support@snyk.io)_."_

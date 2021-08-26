@@ -39,7 +39,8 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
 4. Search for and click **Kubernetes**.
 5. Click **Connect** from the page that loads, copy the **Integration ID.** The Snyk **Integration ID** is a UUID, similar to this format: `abcd1234-abcd-1234-abcd-1234abcd1234`. Save it for use from your Kubernetes environment in the next step.
 
-   ![kub\_integrationID.gif](../../../.gitbook/assets/uuid-26f9c2cd-2755-07d5-61a0-bdb0261d87ab-en.gif)
+![kub\_integrationID.gif](../../../.gitbook/assets/uuid-26f9c2cd-2755-07d5-61a0-bdb0261d87ab-en.gif)
+
 
 6. Snyk monitor runs by using your Snyk **Integration ID**, and using a `dockercfg` file. If you are not using any private registries, create a Kubernetes secret called `snyk-monitor` containing the Snyk **Integration ID** from the previous step and run the following command:
 

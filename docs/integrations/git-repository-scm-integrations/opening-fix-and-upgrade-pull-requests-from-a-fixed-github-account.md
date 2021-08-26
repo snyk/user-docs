@@ -8,7 +8,9 @@ Other operations not performed by the UI, such as daily / weekly tests, are stil
 
 To use this feature:
 
-1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
+1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
+
+ &gt; **Integrations**.
 2. For the GitHub entry, click **Edit Settings**.
 3. Enable the toggle button under the **Open fix and upgrade pull requests from a fixed GitHub account** setting
 4. Follow the in-page instructions for creating a personal access token in GitHub.

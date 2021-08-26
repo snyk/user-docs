@@ -15,6 +15,7 @@ The dashboard appears similar to the following image:
 
 ![](../../.gitbook/assets/mceclip0-30-.png)
 
+
 To quickly view additional data for a specific period in time, hover over the relevant graph and check out the pop-up.
 
 ## **Summary tab elements**
@@ -143,6 +144,7 @@ For the **Activity** area, the following are the parameters and their descriptio
 These controls appear at the top of the window:
 
 ![mceclip1.png](https://support.snyk.io/hc/article_attachments/360020461797/mceclip1.png)
+
 
 **Summary filters**—mark the issues to be displayed by selecting the relevant issue type and then click the list arrow again to close it.  
 

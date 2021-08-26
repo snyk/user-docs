@@ -19,6 +19,7 @@ snyk container test --platform=linux/arm64 debian
 
 ![](../../.gitbook/assets/platform.png)
 
+
 The `--platform` flag should contain one of:
 
 * linux/amd64

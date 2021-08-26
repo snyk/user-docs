@@ -12,6 +12,7 @@ To view version differences:
 
 ![](../../.gitbook/assets/untitled__1_.png)
 
+
 Snyk CLI looks through all JAR files in a single folder to match any dependencies hosted on Maven central using the `snyk test —scan-all-unmanaged` command. However, this functionality may be problematic if an application wasn’t built using a package manager like Gradle or Maven in the first place as it may lead to dependency conflicts. This is especially relevant for applications built using Ant.
 
 It is, therefore, best to test each JAR file individually using `snyk test —scan-unmanaged —file=/path/to/file`. Testing each JAR file individually will also have a side-effect of Snyk Web UI showing the name of the JAR file that was scanned while running a scan using `—scan-all-unmanaged` doesn't do that. In order to find and test JAR files in all sub-folders of an application, a simple wrapper is required. Results can then be grouped in Snyk UI using `—remote-repo-url=AppName` argument.
@@ -35,4 +36,5 @@ for /R %workspace% %%f in (*.jar) do cmd /c snyk monitor --scan-unmanaged --remo
 Here's what the end result should look like in Snyk UI for an app with **—remote-repo-url=econnect**
 
 ![](../../.gitbook/assets/untitled.png)
+
 

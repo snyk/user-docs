@@ -11,10 +11,13 @@ Brokered Artifactory is currently supported for [Maven](https://support.snyk.io/
 
 ## Getting started
 
-1. Go to settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations &gt; Package Repositories &gt; Artifactory**
+1. Go to settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
+
+ &gt; **Integrations &gt; Package Repositories &gt; Artifactory**
 2. You should see this screen at the beginning.
 
-   ![Screenshot\_2020-04-17\_at\_14.38.12.png](../../.gitbook/assets/screenshot_2020-04-17_at_14.38.12.png)
+![Screenshot\_2020-04-17\_at\_14.38.12.png](../../.gitbook/assets/screenshot_2020-04-17_at_14.38.12.png)
+
 
 {% hint style="info" %}
 **Note**  
@@ -32,6 +35,7 @@ Contact [support@snyk.io](mailto:support@snyk.io) if you want to add a private r
 ## Set up brokered instances
 
 1. Toggle **Artifactory \(publicly accessible\)** switch, you should now see a form for generating an Artifactory Broker token.   ![Screenshot\_2020-04-17\_at\_14.38.26.png](../../.gitbook/assets/screenshot_2020-04-17_at_14.38.26.png)
+
 2. Click on **Generate and Save** button
 3. Copy the token that was generated for you, it will be needed to set up a new Broker Client
 4. Set up a new [Broker Client](https://support.snyk.io/hc/en-us/articles/360004032397) in your prod environment:

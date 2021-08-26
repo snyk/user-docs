@@ -16,9 +16,11 @@ Each issue card has an **Ignore** button that opens up a dialog where you can se
 
 ![](../../.gitbook/assets/image%20%2821%29.png)
 
+
 If you select **Ignore temporarily,** then you can check the **Until fix is available** checkbox:
 
 ![](../../.gitbook/assets/image%20%2819%29.png)
+
 
 This will resurface the vulnerability as soon as we have a fix for it, and you can optionally give additional details on why you’re ignoring the issue. This is checked by default if there is currently no remediation available for this issue.
 
@@ -29,6 +31,7 @@ An issue is ignored until ANY of the conditions happen - either the ignore perio
 When you ignore an issue in our UI, it will show who ignored it and allow you to edit or unignore it.
 
 ![](../../.gitbook/assets/image%20%2814%29.png)
+
 
 ## Ignoring issues in the CLI
 
@@ -59,13 +62,16 @@ For example:
 
 ![](../../.gitbook/assets/image%20%2815%29.png)
 
+
 **snyk test** before ignoring in the UI:
 
 ![](../../.gitbook/assets/image%20%2818%29.png)
 
+
 **snyk test** after ignoring in the UI:
 
 ![](../../.gitbook/assets/image%20%2820%29.png)
+
 
 It is important that the above is true if you ignore the project imported by **snyk monitor** from the CLI or CI/CD.
 
@@ -77,9 +83,11 @@ For all projects, you can ignore the vulnerability by creating a `.snyk` YAML fi
 
 ![](../../.gitbook/assets/screen+shot+2017-05-10+at+11.16.57+am.png)
 
+
 For example, if you wanted to ignore the vulnerability with SNYK ID [SNYK-RUBY-FASTREADER-20085](https://snyk.io/vuln/SNYK-RUBY-FASTREADER-20085) in `fastreader`, with the reason “No remediation available” until 01 Jan 2017, you would write:
 
 ![](../../.gitbook/assets/screen+shot+2017-05-10+at+11.17.26+am.png)
+
 
 See [The .snyk file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file) for more details.
 

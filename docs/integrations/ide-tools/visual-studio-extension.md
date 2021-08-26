@@ -25,15 +25,19 @@ The Snyk extension can be installed directly from IDE. To install it open _Exten
 
 ![](../../.gitbook/assets/readme_image_2_1_1.png)
 
+
 Search for _Snyk_ and **Download** to download the Snyk extension_._
 
 ![](../../.gitbook/assets/search-for-snyk.png)
+
 
 Once installed, open the Snyk tool window by going to _View &gt; Other Windows_ as shown in the screenshot below.
 
 ![](../../.gitbook/assets/install2.png)
 
+
 Once the tool window appears, wait while Snyk extension downloads the latest Snyk CLI version.![readme\_image\_2\_3.png](../../.gitbook/assets/readme_image_2_3.png)
+
 
 By now you should have the extension installed and the Snyk CLI downloaded. Time to authenticate. The first way is to click "Connect Visual Studio to Snyk" link.
 
@@ -43,9 +47,11 @@ Authenticate using _"Connect Visual Studio to Snyk"_ link on Overview page.
 
 ![](../../.gitbook/assets/readme_image_2_4.png)
 
+
 Or authenticate via Options. Open Visual Studio _Options_ and go to the _General Settings_ of the Snyk extension or use _Settings_ button in toolbar.
 
 ![](../../.gitbook/assets/readme_image_2_5.png)
+
 
 Authentication can be triggered by pressing the “Authenticate” button. If for some reason the automated way doesn’t work or input user API token by hand.
 
@@ -53,15 +59,19 @@ If, however, the automated authentication doesn’t work for some reason, please
 
 ![readme\_image\_2\_6.png](../../.gitbook/assets/readme_image_2_6.png)
 
+
 ![install-5-A.png](../../.gitbook/assets/install-5-a.png)
+
 
 You will be taken to the website to verify your identity and connect the IDE extension. Click the **Authenticate** button.
 
 ![](../../.gitbook/assets/install-6.png)
 
+
 Once the authentication has been confirmed, please feel free to close the browser and go back to the IDE extension. The Token field should have been populated with the authentication token. With that the authentication part should be done!
 
 ![](../../.gitbook/assets/readme_image_2_8.png)
+
 
 #### Run analysis
 
@@ -75,7 +85,9 @@ Open your solution and run Snyk scan. Depending on the size of your solution, ti
 
 ![](../../.gitbook/assets/readme_image_3_1_1.png)
 
+
 ![](../../.gitbook/assets/readme_image_3_1_2.png)
+
 
 ### View analysis results
 
@@ -85,15 +97,18 @@ You could filter vulnerabilities by name or by severity.
 
 ![](../../.gitbook/assets/readme_image_3_2_1.png)
 
+
 * Filter by severity by selecting one or more of the the severities when you open the search bar filter.
 
 ![](../../.gitbook/assets/readme_image_3_2_2.png)
+
 
 Users could configure Snyk extension by _Project settings_.
 
 * Note that the “Scan all projects” option is enabled by default. It adds --all-projects option for Snyk CLI. This option scans all projects by default.
 
 ![](../../.gitbook/assets/readme_image_3_3.png)
+
 
 ### Extension configuration
 
@@ -114,6 +129,7 @@ After the plugin is installed, you can set the following configurations for the 
 **Solution** Open Visual Studio Options to go to the Project Settings of the Snyk extension and check Scan all projects.
 
 ![](../../.gitbook/assets/readme_image_4_1.png)
+
 
 ### How to
 

@@ -8,13 +8,16 @@ At the organization level, from the top of the Reports area, you can search for 
 
 ![](../../.gitbook/assets/uuid-8769c471-9788-dfdf-e3a7-2ffd28ea1011-en.png)
 
+
 To search for and filter specific projects, open the dropdown from the Projects search field; additionally or alternatively, start typing any part of the project names:
 
 ![](../../.gitbook/assets/uuid-d8df9018-387d-26f4-c735-b50a312b9eb0-en.png)
 
+
 To filter by vulnerability severities and by project types, open the **Filters** dropdown:
 
 ![](../../.gitbook/assets/mceclip0-29-.png)
+
 
 ## How to navigate and view data for groups and organizations
 

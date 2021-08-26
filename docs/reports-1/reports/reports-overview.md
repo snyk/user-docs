@@ -13,6 +13,7 @@ From the **Group** level, you can filter to view data for multiple organizations
 
 ![](../../.gitbook/assets/mceclip0-28-.png)
 
+
 You can also use the **Organization Filters** to save and store pre-filtered reports for selected groups of organizations. For more information about this, see our [Snyk groups overview](https://support.snyk.io/hc/en-us/articles/360004008378).
 
 Additionally, at the Organization level see [General actions](https://support.snyk.io/hc/articles/360004002658#UUID-10af5802-8724-3222-473d-cf3f6e8a3af8) to filter for:

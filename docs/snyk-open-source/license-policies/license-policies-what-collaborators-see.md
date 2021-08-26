@@ -6,9 +6,11 @@ If you changed severity, **Dashboard** statistics update based on severity chang
 
 ![](../../.gitbook/assets/mceclip0-2-.png)
 
+
 The results update accordingly too, including any instructions or severity changes you made:![](https://lh5.googleusercontent.com/3gDD-OLLW2ynYFYQ5wRavHT1ejCt5SbxrpqvB6iL6qvrfRLCoPKjRV3xiS8shsL5bhbuCxUBHi_0WCJi3_RKNIVe2IzW-A62nf_7wpWKUXsnQQxTpPYjzmFueFVTji2rus2UghLO)
 
 Results in the CLI update accordingly as well:
 
 ![](../../.gitbook/assets/mceclip1.png)
+
 

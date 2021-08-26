@@ -6,6 +6,7 @@ Snyk currently supports this feature for npm, Yarn and Maven-Central projects th
 
 ![](../../.gitbook/assets/image%20%288%29%20%282%29%20%284%29.png)
 
+
 ## How it works
 
 1. Integration is configured and users enable automatic upgrade PRs \(within the integration settings or [in the project settings](upgrading-dependencies-with-automatic-prs.md)\).
@@ -31,6 +32,7 @@ Snyk currently supports this feature for npm, Yarn and Maven-Central projects th
 
 ![](../../.gitbook/assets/image%20%288%29%20%282%29%20%284%29%20%282%29.png)
 
+
 ## Enable automatic dependency upgrade PRs for a specific project
 
 Enable Snyk to regularly check your dependency health, recommend dependency upgrades and automatically submit PRs for upgrades on your behalf for a specific project.
@@ -51,14 +53,19 @@ Settings on the project level override the settings on the organization level. C
 **Steps:**
 
 1. Navigate to the organization for which you would like to enable automatic upgrade PRs and then click Projects.
-2. Navigate to the relevant project and click the Settings cog ![image2.png](https://support.snyk.io/hc/article_attachments/360006931278/uuid-989935f3-80d9-80c8-c984-1472b49bce15-en.png).
+2. Navigate to the relevant project and click the Settings cog ![image2.png](https://support.snyk.io/hc/article_attachments/360006931278/uuid-989935f3-80d9-80c8-c984-1472b49bce15-en.png)
+
+.
 3. From the Settings area, click on the integration settings from the left panel menu. **Note:** These settings only apply to integration for that one project.
 4. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled.
 5. From the options that appear:
    * Snyk creates PRs up to a maximum of 10 open simultaneously - per repo. To limit this number further, select the maximum number of PRs from the dropdown list. For further information about this, read more about how it works.
    * In the Dependencies to ignore field, enter the exact name of any dependencies that should not be handled as part of the automatic functionality. This field accepts only lower case letters.
    * ![](../../.gitbook/assets/image%20%287%29.png)
-6. Click ![image4.png](../../.gitbook/assets/uuid-a32f41fa-2cb8-f1e5-afc0-26ad43b84470-en.png).
+
+6. Click ![image4.png](../../.gitbook/assets/uuid-a32f41fa-2cb8-f1e5-afc0-26ad43b84470-en.png)
+
+.
 7. Settings are saved.
 
    Every time Snyk scans this project now, it automatically submits upgrade PRs based on results. If a newer version is released for an existing Snyk upgrade PR or for an existing fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.

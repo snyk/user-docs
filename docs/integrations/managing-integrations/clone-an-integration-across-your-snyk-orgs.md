@@ -9,12 +9,16 @@ You can choose to use the same brokered Git integration across multiple organiza
 
 ![](../../.gitbook/assets/create-new-org.png)
 
+
 * From the page that loads, enter a name for the new organization that you are creating.
 * From the **Copy across all settings and integrations?** area, select the organization that you've already configured for the Broker token and then click **Create organization**.
 
 ![](../../.gitbook/assets/create-new-org2.png)
 
+
 * The browser navigates to the **Dashboard** for the organization that you just created. The Broker integration is duplicated and setup, and the Broker token is identical to the token for the original organization.
-* To double-check your cloned configuration, click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations.**
+* To double-check your cloned configuration, click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
+
+ &gt; **Integrations.**
 * From the row for the integration you’re setting up, click **Edit settings** to see the cloned Broker integration.
 

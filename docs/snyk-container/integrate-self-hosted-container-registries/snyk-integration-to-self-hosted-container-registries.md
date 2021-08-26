@@ -25,6 +25,7 @@ The Broker client provides the Agent with the connection details. The Agent uses
 
 ![](../../.gitbook/assets/mceclip0-8-.png)
 
+
 **Supported Container registries**
 
 * Artifactory \(type: ArtifactoryCR\)

@@ -16,6 +16,7 @@ Your Snyk account is organized using a multi-level hierarchy:
 
 ![](../../.gitbook/assets/groups-and-orgs.png)
 
+
 Learn more about [groups and organizations](https://support.snyk.io/hc/en-us/articles/360004037617-What-s-a-Snyk-group-).
 
 ## Use Single Sign-on

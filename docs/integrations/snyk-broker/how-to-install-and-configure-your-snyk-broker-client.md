@@ -12,5 +12,6 @@ To install and configure your client:
       2. Ensure that you have the necessary permissions granted to your API credentials for the integration you are using by following [one of our integration guides.](https://docs.snyk.io/integrations)
 3. After the broker is running, **identifying Broker server** appears towards the end of the log results, showing that a connection to Snyk has been established
 4. Visit the settings for your brokered integration in [the Snyk application](https://app.snyk.io/) to see a message like the following:  ![image3.png](../../.gitbook/assets/image3-3-.png)
+
 5. You can now use Snyk as normal.
 

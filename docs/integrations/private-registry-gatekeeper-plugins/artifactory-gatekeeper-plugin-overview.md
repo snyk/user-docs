@@ -35,12 +35,15 @@ This article refers to the Artifactory _Plugin_, an independent piece of softwar
 ## Installation
 
 1. Log in to your Snyk account.
-2. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **General** to locate, copy and save the following on the side:
+2. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
+
+ &gt; **General** to locate, copy and save the following on the side:
 
    * service account token or Organization API token:
    * the Organization ID for \(any\) one of your organizations
 
-   ![](../../.gitbook/assets/artifactory-install.png)
+![](../../.gitbook/assets/artifactory-install.png)
+
 
 3. Go to [our repo in GitHub](https://github.com/snyk/artifactory-snyk-security-plugin) and navigate to the **Releases**.
 4. From the most current release, expand the **Assets** section to download the artifactory-snyk-security-plugin-&lt;version&gt;.zip archive.
@@ -66,6 +69,7 @@ This article refers to the Artifactory _Plugin_, an independent piece of softwar
 
 ![](../../.gitbook/assets/artifactory-system-logs.png)
 
+
 ## How it works
 
 Whenever a download is requested from Artifactory whether from a package manager or a URL, Snyk will automatically scan the artifact for vulnerabilities and license issues.
@@ -74,11 +78,13 @@ To view details about download status, open the **System Logs**:
 
 ![](../../.gitbook/assets/image.png)
 
+
 If a scan finds issues, based on your configuration, the download request can be blocked with a HTTP status code "403 Forbidden".
 
 You can find the results of a scan under the artifact's properties where you can decide to ignore the issues and allow downloads. To find the artifact, use Artifactory's Search Bar or navigate the tree view.
 
 ![](../../.gitbook/assets/uuid-c6d4c41d-5c98-079d-31e7-f4fb5c788d4c-en.png)
+
 
 ## Artifact properties
 

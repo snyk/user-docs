@@ -29,6 +29,7 @@ Each policy contains rules, detailing which licenses are acceptable and which ar
 
 ![](../../.gitbook/assets/license-policy.png)
 
+
 See [Licenses overview](https://docs.snyk.io/snyk-open-source/licenses) and [Setting a license policy](https://docs.snyk.io/snyk-open-source/license-policies/setting-a-license-policy).
 
 ## Stage 2: View issues
@@ -37,17 +38,20 @@ Snyk’s [Git-based integrations](https://support.snyk.io/hc/en-us/sections/3600
 
 ![](../../.gitbook/assets/image3%20%281%29.png)
 
+
 This example shows a high-severity issue for a GPL-2.0 license, with accompanying instructions as defined in policies for that license.
 
 You can also view license issues using the Snyk CLI tool, after running **snyk test**:
 
 ![](../../.gitbook/assets/image2-1-.png)
 
+
 **View dependencies**
 
 Snyk shows license issues in both your direct and transitive dependencies, in a full dependency tree to show what dependency introduced the license issue.
 
 ![](../../.gitbook/assets/image4%20%281%29.png)
+
 
 This example includes two high severity license policy violations, caused by:
 
@@ -59,6 +63,7 @@ This example includes two high severity license policy violations, caused by:
 You can view and share detailed lists of licenses being used, and see a report that lists all the open source components and licenses along with copyright information.
 
 ![](../../.gitbook/assets/copyright.png)
+
 
 ## **Stage 3: Process issues**
 

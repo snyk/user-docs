@@ -23,11 +23,15 @@ Settings on the project level override the settings on the organization level. C
 ## Configure the pull request test settings for your organization
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
-2. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
+2. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
+
+ &gt; **Integrations**.
 3. Click **Edit Settings** for integration required.
 4. Navigate to the **Default Snyk test for pull requests** section:
 
-![settings.png](../../.gitbook/assets/uuid-332c4a2e-5425-573a-5057-53eb37608e46-en.png) 5. Choose settings from the dropdown list as follows:
+![settings.png](../../.gitbook/assets/uuid-332c4a2e-5425-573a-5057-53eb37608e46-en.png)
+
+ 5. Choose settings from the dropdown list as follows:
 
 * **Only fail when the PR is adding a dependency with issues** - only fail the license or security check on the pull request if the pull request aims to add a new dependency that contains issues
 * **Fail if the repo has any issues** - fail the license or security check on the pull request if there are any issues at all in the repository
@@ -44,11 +48,15 @@ We recommend that you set Snyk status checks to be mandatory for merging pull re
 ## Configure pull request test settings for a project
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
-2. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**, 
+2. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
+
+ &gt; **Integrations**, 
 3. Click **Edit Settings** for integration required.
 4. Navigate to the **Default Snyk test for pull requests** section:
 
-![mceclip1.png](../../.gitbook/assets/mceclip1-14-.png) 5. Choose:
+![mceclip1.png](../../.gitbook/assets/mceclip1-14-.png)
+
+ 5. Choose:
 
 * Inherit from Integration settings for the project to use the settings set at the Organization level
 * Custom and then click the slider to enable the functionality.

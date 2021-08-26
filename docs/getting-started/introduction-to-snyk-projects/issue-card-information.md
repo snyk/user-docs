@@ -6,9 +6,11 @@ Issue cards show details for a specific vulnerability or license issue, and acti
 
 ![](../../.gitbook/assets/screenshot_2021-03-01_at_16.19.01.png)
 
+
 Header section information:
 
 ![](../../.gitbook/assets/issue-card-header.png)
+
 
 * [Severity level](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/severity-levels): for example, **H** \(High\)
 * **Issue name**: for example, **Open**.
@@ -21,6 +23,7 @@ Body section information:
 
 ![](../../.gitbook/assets/issue-card-body.png)
 
+
 * **Introduced through**: The path the vulnerability or license was introduced through
 * **Fixed in:** The file the vulnerability is fixed in
 * [Exploit maturity](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/evaluating-and-prioritizing-vulnerabilities): for example, **Proof Of Concept**.
@@ -29,6 +32,7 @@ Body section information:
 When you expand the issue card for more information, you can see the following information:
 
 ![](../../.gitbook/assets/screenshot_2021-03-01_at_16.08.49.png)
+
 
 This information includes:
 

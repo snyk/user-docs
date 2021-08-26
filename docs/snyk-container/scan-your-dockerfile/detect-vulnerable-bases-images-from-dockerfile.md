@@ -8,11 +8,13 @@ After you [integrate your Git repository to Snyk](https://support.snyk.io/hc/en-
 
 ![](../../.gitbook/assets/mceclip0-5-.png)
 
+
 ### Linking from a Dockerfile to its container images
 
 You can also link from a Dockerfile to all container images built from it. This can be used to understand the security impact on your running applications, and understand which images can be better secured or need to be rebuilt when taking action and updating the Dockerfile base image.
 
 ![](../../.gitbook/assets/mceclip3.png)
+
 
 See [Base image detection](https://docs.snyk.io/snyk-container/getting-around-the-snyk-container-ui/base-image-detection) for more details about detecting vulnerable base images and remediation recommendations
 

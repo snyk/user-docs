@@ -31,16 +31,21 @@ This process describes all options.
 ## How to set up a service account
 
 * Log in to your account and navigate to the relevant group and organization that you want to manage.
-* Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Service accounts** to view existing service accounts and their details.
+* Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
+
+ &gt; **Service accounts** to view existing service accounts and their details.
 * Click **Create a service account** to create a new one. The screen that loads varies a little, depending on if you chose a group \(left\) or an organization \(right\):
 
 ![](../../.gitbook/assets/uuid-115442e7-a8bd-44df-43f8-8867a4cdc6ba-en.png)
 
+
 ![](../../.gitbook/assets/uuid-632ed37e-ed7a-519d-dade-a245a35e6ac6-en.png)
+
 
 * From the **Service Account** name field, enter a unique name for this token. Remember this name can be used only once for tokens in the same area, either per organization or per group.
 
 ![](../../.gitbook/assets/uuid-01c4cc98-23c9-3cb1-4972-1aa4f83ad98e-en.png)
+
 
 * From the **Role** dropdown list, select **Viewer** or **Admin** to configure the scope of the token:
   * Viewer enables read-only access.
@@ -51,17 +56,21 @@ This process describes all options.
 
 ![](../../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en%20%281%29.png)
 
+
 * Furthermore, if you created the token for the entire group with an **Admin** role, the token also appears in the **Existing service accounts** list for each of its organizations, though it can only be edited from the **Group** level.
 
 ![](../../.gitbook/assets/uuid-1110723e-74e7-3090-3e69-da65f93acfcc-en.png)
+
 
 * If you created the token from an organization that is part of a group, the token now also appears in the **Existing service account** list on the group level, where the group admin can also change the token name or even delete it.
 
 ![](../../.gitbook/assets/uuid-50563edb-6a75-9f37-2040-cd814fdf9ead-en.png)
 
+
 * Click any of the links to update the names for a service account token - for Group-level tokens, from the Group level only; for Organization-level tokens, from the relevant organization and also from the Group level:
 
 ![](../../.gitbook/assets/uuid-b34e3d10-bb0c-b608-bc08-12f2bf0a4fc0-en.png)
+
 
 * Repeat these steps to create multiple tokens for the same or any other organization or group.
 
@@ -75,10 +84,13 @@ Administrators can change token names and delete tokens. When you delete a servi
 
   For group tokens, navigate to the group level. For organization tokens, group admins can delete from either the group or the relevant organization; organization admins should navigate to the relevant organization.
 
-* Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Service accounts**.
+* Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
+
+ &gt; **Service accounts**.
 * Scroll to find the list of existing service accounts: 
 
 ![](../../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en.png)
+
 
 * From the list of existing tokens:
   * Click **Delete** to delete a token and invalidate it immediately. When prompted, click **OK**. Remember that you cannot re-generate the same token!

@@ -44,7 +44,9 @@ The Remediation Advice area appears in the project details page near the top, si
 
 ![](../../.gitbook/assets/image%20%2813%29.png)
 
+
 ![](../../.gitbook/assets/image%20%2816%29.png)
+
 
 Upgrade and Patchable issues tabs
 
@@ -64,11 +66,14 @@ Upgrade and patch results appear similar to the following:
 
 ![](../../.gitbook/assets/image%20%2817%29.png)
 
+
 ![](../../.gitbook/assets/image%20%2849%29.png)
+
 
 Patch recommendations with some and with all paths:
 
 ![image3.png](https://support.snyk.io/hc/article_attachments/360006949057/uuid-1afca091-a9a5-d42c-40b6-f48aa0e72584-en.png)
+
 
 ![](../../.gitbook/assets/image%20%283%29.png)
 

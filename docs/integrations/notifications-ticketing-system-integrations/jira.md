@@ -29,6 +29,7 @@ Once you’ve set up the connection, visit one of your Snyk projects. You’ll n
 
 ![](../../.gitbook/assets/uuid-07abf9db-45cb-cdcd-537b-328a0c4b891e-en.png)
 
+
 When you click on this, a Jira issue creation form will appear with the Snyk issue details copied across into the relevant fields. You can review and edit this before creating the issue.
 
 Select which Jira project you’d like to send the issue to. The fields that we display below are based on the fields that the project has, so switching between projects may show different options.
@@ -38,13 +39,16 @@ Snyk currently supports non-Epic Jira ticket creation. Epics will need to be add
 
 ![](../../.gitbook/assets/uuid-67202f8e-7f70-1e84-6044-f65ec36138b3-en.png)
 
+
 Once you’ve created a Jira issue, the Jira key with a link will display on the issue card. If you’re using the Jira API, you can generate multiple Jira issues for the same issue in Snyk.
 
 ![](../../.gitbook/assets/uuid-5283ddbe-913b-1aa1-ec74-e384b0e2929b-en.png)
 
+
 You can also see which Jira issues have been created from the Issues view in your reports.
 
 ![](../../.gitbook/assets/uuid-cd4e8cae-2528-a922-5a03-5f23c42d4ac2-en.png)
+
 
 ## See also:
 

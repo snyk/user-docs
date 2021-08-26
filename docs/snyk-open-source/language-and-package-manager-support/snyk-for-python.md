@@ -12,9 +12,15 @@ Features might not be available, depending on your subscription plan.
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![i\_icon\_pip.jpeg](../../.gitbook/assets/uuid-9baa98b7-dd1d-8cf6-03d5-691c94aeef66-en.jpeg) | [Pip and PyPI](https://pypi.org/project/pip/) | ✔︎ | ✔︎ | ✔︎ | ✔︎ |  |
-| ![i\_icon\_pipenv.jpeg](https://support.snyk.io/hc/article_attachments/360007183037/uuid-f1ec5441-4e64-a095-ca75-af9bb8d2d110-en.jpeg) | [pipenv](https://pipenv.kennethreitz.org/en/latest/) | ✔︎ |  | ✔︎ |  |  |
-| ![i\_icon\_pip.jpeg](../../.gitbook/assets/uuid-9baa98b7-dd1d-8cf6-03d5-691c94aeef66-en.jpeg) | setup.py | ✔︎ |  | ✔︎ | ✔︎ |  |
+| ![i\_icon\_pip.jpeg](../../.gitbook/assets/uuid-9baa98b7-dd1d-8cf6-03d5-691c94aeef66-en.jpeg)
+
+ | [Pip and PyPI](https://pypi.org/project/pip/) | ✔︎ | ✔︎ | ✔︎ | ✔︎ |  |
+| ![i\_icon\_pipenv.jpeg](https://support.snyk.io/hc/article_attachments/360007183037/uuid-f1ec5441-4e64-a095-ca75-af9bb8d2d110-en.jpeg)
+
+ | [pipenv](https://pipenv.kennethreitz.org/en/latest/) | ✔︎ |  | ✔︎ |  |  |
+| ![i\_icon\_pip.jpeg](../../.gitbook/assets/uuid-9baa98b7-dd1d-8cf6-03d5-691c94aeef66-en.jpeg)
+
+ | setup.py | ✔︎ |  | ✔︎ | ✔︎ |  |
 | ![poetry-logo-origami.svg](https://support.snyk.io/hc/article_attachments/360012694258/poetry-logo-origami.svg) | [Poetry](https://python-poetry.org/) | ✔︎ |  | ✔︎ | ✔︎ |  |
 
 {% hint style="info" %}
@@ -189,9 +195,12 @@ To define which Python major version Snyk uses to test your Git imported project
 To define Python version for all projects in an organization:
 
 1. Log in to your account and navigate to the relevant group and organization to manage.
-2. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Languages**. 
+2. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
+
+ &gt; **Languages**. 
 3. Click **Edit settings** for **Python**.
 4. Select to use **Python 2** or **Python 3** when testing projects for this organization ![mceclip1.png](https://support.snyk.io/hc/article_attachments/360012151178/mceclip1.png)
+
 
 We recommend you create different organizations to work with different Python versions.
 

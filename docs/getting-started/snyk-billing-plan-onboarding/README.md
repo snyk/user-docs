@@ -27,11 +27,13 @@ Each of these stages allows Snyk to do something different to help keep you secu
 All of the following stages have integrations that can be found on the [Snyk integrations page](https://app.snyk.io/integrations):  
 ![integrations-page.png](../../.gitbook/assets/integrations-page.png)
 
+
 See [Integrations](https://docs.snyk.io/integrations) for more details.
 
 The earliest chance you have to catch vulnerabilities is in the IDE, when the code is being written. Use Snyk at the IDE stage to ensure developers select versions of dependencies or container base images that include the least vulnerabilities possible:
 
 ![](../../.gitbook/assets/ides-support.png)
+
 
 Snyk supports many of the popular IDEs, with even more support coming soon.
 
@@ -48,11 +50,13 @@ Snyk’s SCM integrations also support commit status checks, so as your develope
 
 ![](../../.gitbook/assets/source-control.png)
 
+
 See [Git repository \(SCM\) integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) for more details
 
 Use Snyk CI/CD integrations to prevent new vulnerabilities from passing through the build process, by adding an automated Snyk test to your CI/CD process:
 
 ![](../../.gitbook/assets/ci-cd%20%282%29%20%282%29%20%281%29.png)
+
 
 See [CI/CD integrations](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations) for more details.
 
@@ -60,11 +64,13 @@ Snyk supports various different container registries, allowing you to scan all y
 
 ![](../../.gitbook/assets/image%20%284%29.png)
 
+
 See [Snyk Container](https://docs.snyk.io/snyk-container) for more details.
 
 Our support for Kubernetes allows you to find any vulnerabilities in running workloads. It also allows Snyk to access a lot of information that can help prioritize what to fix first. This can help reduce the noise, leaving you with a clearer picture of what really needs your attention.
 
 ![](../../.gitbook/assets/kubernetes.png)
+
 
 See [Kubernetes workload and image scanning](https://support.snyk.io/hc/en-us/sections/360001114238-Kubernetes-workload-and-image-scanning) for more details.
 
@@ -78,11 +84,13 @@ An added bonus of the Team plan is license compliance management, allowing Snyk 
 
 ![](../../.gitbook/assets/license-compliance.png)
 
+
 See [Getting Started with Snyk License Compliance Management](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-snyk-licensing-compliance) for details.
 
 The Team plan also includes the Snyk Jira integration, allowing you to manually raise Jira issues in the Snyk UI for vulnerabilities or license issues.
 
 ![](../../.gitbook/assets/uuid-07abf9db-45cb-cdcd-537b-328a0c4b891e-en.png)
+
 
 Snyk’s Jira integration is yet another way in which Snyk is able to fit into your existing processes, ensuring that work to become more secure is properly managed and accounted for.
 

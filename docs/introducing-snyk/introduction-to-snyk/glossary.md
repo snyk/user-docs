@@ -6,7 +6,6 @@
 
 See [Snyk Advisor](https://support.snyk.io/hc/en-us/articles/360017682058-Snyk-Glossary#SnykAdvisor).  
 
-
 ### Base image
 
 The parent image used to construct a container image, usually defined in the FROM directive in a Dockerfile. Base images themselves can be constructed from other base images.
@@ -101,7 +100,6 @@ A measure of how practical an exploit for a vulnerability is, based on whether t
 ### Fixable / Partially fixable
 
 A measure of whether a vulnerability can be fixed by Snyk, by applying a patch, upgrade, or pin. See [Fixed in version vs. fixable attributes in vulnerabilities](https://support.snyk.io/hc/en-us/articles/4405034808209).  
-
 
 ### Fix PR
 
@@ -321,7 +319,6 @@ A fix type: a problem can be fixed by upgrading a version of a package, or by ap
 ### Vulnerability
 
 A security vulnerability, identified by Snyk. See [Remediate your vulnerabilities](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities).  
-
 
 ## W
 

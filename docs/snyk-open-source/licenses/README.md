@@ -25,6 +25,7 @@ To facilitate onboarding of your developers, we recommend that your teams check 
 
 ![](../../.gitbook/assets/image%20%282%29.png)
 
+
 ### **An inventory of your licenses**
 
 Within the **Reports** area you can view an inventory of all of your licenses across all your projects. Snyk also lists packages that have dual licenses and multiple licenses. See [here](https://support.snyk.io/hc/articles/360003557857#UUID-627d8387-74c4-9228-477b-263417eb2a61) for more information.

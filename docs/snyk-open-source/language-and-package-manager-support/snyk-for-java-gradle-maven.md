@@ -234,7 +234,9 @@ If authentication is required to access your custom registry you will need to fi
 
 To configure the Artifactory integration go to Integrations &gt; Artifactory and click ‘Connect to Artifactory’ and complete the fields - URL to your Artifactory, username, and password.
 
-After the integration is set up you can configure Maven settings by navigating to settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Languages** &gt; **Java**.
+After the integration is set up you can configure Maven settings by navigating to settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
+
+ &gt; **Languages** &gt; **Java**.
 
 You can choose whether to use Artifactory as a mirror or as an additional repository where your artifacts will reside. These settings will be very similar to what you have in `~/.m2/settings.xml`.
 
@@ -246,9 +248,11 @@ The mirror of value can either be a \* to mirror everything or you can type in a
 
 ![](../../.gitbook/assets/uuid-293cfd2b-2cd5-b8a3-0671-bf6d2798a3bc-en.png)
 
+
 If using the integration, you will need to choose an integration type and provide the repository name and mirror of details.
 
 ![](../../.gitbook/assets/uuid-fd027725-33b3-7f12-a921-d7fba9cedad8-en.png)
+
 
 **Repositories**
 

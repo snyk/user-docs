@@ -120,7 +120,6 @@ When using Azure AD for the connection between your Identity provider and Snyk, 
 | Redirect URIs | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback) |
 | :--- | :--- |
 
-
 ### Azure AD information to provide to Snyk
 
 Obtain the following information from your identity provider and organization. Provide this information to Snyk to establish trust on the service-provider side.
@@ -179,6 +178,5 @@ These worksheets include the information to enter in your Identity provider and 
 * [SSO Azure Worksheet.pdf](https://support.snyk.io/hc/en-us/article_attachments/360019280457/SSO_Azure_Worksheet.pdf)
 * [SSO ADFS Worksheet.pdf](https://support.snyk.io/hc/en-us/article_attachments/360019345278/SSO_ADFS_Worksheet.pdf)
 * [SSO SAML Worksheet.pdf](https://support.snyk.io/hc/en-us/article_attachments/360020511338/SSO_SAML_Worksheet.pdf)
-
 
 

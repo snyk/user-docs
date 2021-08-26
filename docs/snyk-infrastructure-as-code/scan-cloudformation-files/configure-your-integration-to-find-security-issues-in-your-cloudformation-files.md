@@ -17,8 +17,11 @@ Scanning CloudFormation provides security feedback on everything that is statica
 
 **Configure Snyk**
 
-1. Enable Snyk to detect Infrastructure as code files as follows:![Enable\_Snyk\_to\_detect\_Kubernetes\_configuration\_files.gif](../../.gitbook/assets/enable_snyk_to_detect_kubernetes_configuration_files.gif) **Note**: Integrations are managed per organization.
+1. Enable Snyk to detect Infrastructure as code files as follows:![Enable\_Snyk\_to\_detect\_Kubernetes\_configuration\_files.gif](../../.gitbook/assets/enable_snyk_to_detect_kubernetes_configuration_files.gif)
+
+ **Note**: Integrations are managed per organization.
 2. If needed, review and adjust settings in the **Infrastructure as code** settings area:
 
-   ![Screen\_Shot\_2021-06-22\_at\_11.44.07.png](../../.gitbook/assets/screen_shot_2021-06-22_at_11.44.07.png)
+![Screen\_Shot\_2021-06-22\_at\_11.44.07.png](../../.gitbook/assets/screen_shot_2021-06-22_at_11.44.07.png)
+
 

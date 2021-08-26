@@ -6,9 +6,11 @@ Snyk displays your application vulnerabilities and licensing issues for files in
 
 ![](../../.gitbook/assets/application-vuln.png)
 
+
 Click on the entry to view detailed information:
 
 ![](../../.gitbook/assets/project-page.png)
+
 
 Where:
 
@@ -22,6 +24,7 @@ Where:
 ## View project summary information
 
 ![](../../.gitbook/assets/proj-summ.png)
+
 
 The summary information shows:
 

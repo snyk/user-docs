@@ -12,6 +12,7 @@ could give an output as follows
 
 ![](../../.gitbook/assets/screenshot_2020-08-25_at_11.18.45.png)
 
+
 This example is of output from a Kubernetes file, but this guide applies to any file format including Terraform.
 
 ## List of vulnerabilities—sorted by severity, where each is detailed as follows:
@@ -26,6 +27,7 @@ This example is of output from a Kubernetes file, but this guide applies to any 
 
 ![](../../.gitbook/assets/issue.png)
 
+
 The path of this issue is specified as
 
 ```text
@@ -35,4 +37,5 @@ The path of this issue is specified as
 In this screenshot you can see the highlighted line represents the identified issue.
 
 ### ![Screenshot\_2020-08-07\_at\_14.27.04.png](../../.gitbook/assets/screenshot_2020-08-07_at_14.27.04.png)
+
 

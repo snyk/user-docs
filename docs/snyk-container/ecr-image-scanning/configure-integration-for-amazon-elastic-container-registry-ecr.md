@@ -8,9 +8,12 @@ You have the option of establishing cross-account access to enable Snyk's Amazon
 
 ![quickstart-snyk-security-ecr.png](https://support.snyk.io/hc/article_attachments/360010020557/quickstart-snyk-security-ecr.png)
 
+
 You will need your Snyk **Organization ID** and AWS IAM [role ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) to complete the integration. The role ARN will be provided for you in the AWS CloudFormation Console's Output tab.
 
-[![cloudformation-launch-stack.png](https://support.snyk.io/hc/article_attachments/360010120798/cloudformation-launch-stack.png)](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/template?stackName=Snyk-Security-ECR&templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-snyk-security/templates/snyk-ecr.yaml)
+[![cloudformation-launch-stack.png](https://support.snyk.io/hc/article_attachments/360010120798/cloudformation-launch-stack.png)
+
+](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/template?stackName=Snyk-Security-ECR&templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-snyk-security/templates/snyk-ecr.yaml)
 
 **Manual Process:**
 

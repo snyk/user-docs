@@ -10,5 +10,6 @@ To revoke your Snyk user API token, navigate to your User Account Settings at [a
 
 ![api token screen; revoke; regenerate; click to show](../.gitbook/assets/uuid-8d94edf8-b42b-e5b3-ada1-e157d18ff884-en.png)
 
+
 Click the **Revoke & Regenerate** button to revoke your API token. A new one will be generated in its place. You can now grab the newly generated API token and update integrations that used the old key.
 
