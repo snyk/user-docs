@@ -36,7 +36,7 @@ Snyk tests and monitors your Artifactory container images by evaluating its tags
 
 Images are indicated with a unique icon
 
-![image4.png](https://support.snyk.io/hc/article_attachments/360007147198/uuid-d083d5fe-780a-cf2f-18db-42720db8c5a1-en.png)
+![image4.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007147198/uuid-d083d5fe-780a-cf2f-18db-42720db8c5a1-en.png)
 
 , and you can also filter to view only the Artifactory projects:
 

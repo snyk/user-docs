@@ -13,15 +13,15 @@ Snyk tests and monitors your Amazon ECR container images by evaluating its tags 
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
 
-![AddProjectMenu.gif](https://support.snyk.io/hc/article_attachments/360007147318/uuid-da316a4a-c823-cf03-f37f-5305446dc970-en.gif)
+![AddProjectMenu.gif - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007147318/uuid-da316a4a-c823-cf03-f37f-5305446dc970-en.gif)
 
 2. Go to Projects, and click Add projects. The list of integrations already configured on your account opens, similar to the following:
 
-![AddProjectMenu.png](https://support.snyk.io/hc/article_attachments/360007066017/uuid-dd01aab7-482f-0fc2-01de-c2427a14a0e0-en.png)
+![AddProjectMenu.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007066017/uuid-dd01aab7-482f-0fc2-01de-c2427a14a0e0-en.png)
 
    The Which images do you want to test? view appears, displaying all of the available images for the registry to which you connected, grouped by each of your repositories, similar to the following:
 
-![AddImages.png](https://support.snyk.io/hc/article_attachments/360007147338/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en.png)
+![AddImages.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007147338/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en.png)
 
 3. Select single or multiple images with any or all of the following methods:
    * Type the name of a single image for import in the Image Name field \(\#1 in the image above\),
@@ -36,13 +36,13 @@ Snyk tests and monitors your Amazon ECR container images by evaluating its tags 
 
 ECR files are indicated with a unique icon
 
-![image6.png](https://support.snyk.io/hc/article_attachments/360007147358/uuid-31aa2b29-8686-5389-b5fc-1d3bd1176f9c-en.png)
+![image6.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007147358/uuid-31aa2b29-8686-5389-b5fc-1d3bd1176f9c-en.png)
 
 ,
 
 You can now filter to view only those projects:
 
-![image19.png](https://support.snyk.io/hc/article_attachments/360007066037/uuid-439e3f37-6e4f-0ffa-0c3c-63c56b45ba5a-en.png)
+![image19.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007066037/uuid-439e3f37-6e4f-0ffa-0c3c-63c56b45ba5a-en.png)
 
 Amazon ECR integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages, also in our docs.
 

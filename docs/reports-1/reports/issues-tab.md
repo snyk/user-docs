@@ -212,7 +212,7 @@ Following are the project level details that appear only when viewing issues ung
 
 These controls appear above the table:
 
-![Reports\_Issues\_filters](https://support.snyk.io/hc/article_attachments/360007031338/uuid-ef7a494d-8b10-9b28-dc63-3f9224519070-en.png)
+![Reports\_Issues\_filters - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007031338/uuid-ef7a494d-8b10-9b28-dc63-3f9224519070-en.png)
 
 **Search issues**—this search capability allows users to search based on CVE, CWE or identifier name \(i.e. DDoS\). When searching by CVE or CWE, you must provide an exact value \(for example CVE-1234\) whereas, for identifier name, typing in a piece of the word will return results.
 

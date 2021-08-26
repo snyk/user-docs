@@ -10,7 +10,7 @@ You have the option of establishing cross-account access to enable Snyk's AWS La
 
 You will need your Snyk **Organization ID** and AWS IAM [role ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) to complete the integration. The role ARN will be provided for you in the AWS CloudFormation Console's Output tab.
 
-![cloudformation-launch-stack.png](https://support.snyk.io/hc/article_attachments/360010020437/cloudformation-launch-stack.png)
+![cloudformation-launch-stack.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360010020437/cloudformation-launch-stack.png)
 
 **Manual Process:**
 

@@ -6,7 +6,7 @@ Enable integration between Docker Hub and Snyk, and start managing your vulnerab
 2. Click **Docker Hub**.
 3. Enter your Docker Hub username and Access Token and then click **Save**:
 
-![mceclip0.png](https://support.snyk.io/hc/article_attachments/360007818037/mceclip0.png)
+![mceclip0.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007818037/mceclip0.png)
 
  
 
