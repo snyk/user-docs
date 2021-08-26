@@ -15,8 +15,7 @@ Once installed, the plugin runs in the background and can automatically:
 By scanning artifacts as part of your workflow and then displaying those test results directly from the Artifactory UI, the Snyk Artifactory Plugin enables you to more quickly track and identify issues that risk your application’s security and avoid using those artifacts in your projects.
 
 {% hint style="info" %}
-**NOTE**
-
+**Note**  
 This article refers to the Artifactory _Plugin_, an independent piece of software that is installed on the Artifactory machine and serves as a gatekeeper, blocking vulnerable packages from being downloaded from the Artifactory instance rather than the [Artifactory _Integration_](https://docs.snyk.io/integrations/private-registry-integrations/artifactory-registry-for-maven) - an internal integration in Snyk app, that allows configuring SCM / CLI scans to use custom package registries
 {% endhint %}
 
