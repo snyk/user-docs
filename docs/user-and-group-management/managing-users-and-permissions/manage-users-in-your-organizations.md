@@ -18,9 +18,9 @@ The following tasks can be performed if your role has the correct set of permiss
 4. Add multiple users by separating each email addresses with a comma 
 5. Click **Send invite**
 
-**NOTE**
-
+{% hint style="info" %}
 Any users who have been invited will be assigned the “Collaborator” role by default. Update user roles in the member’s tab via the dropdown under the **Existing members** section.
+{% endhint %}
 
 The user you have specified will have the invite in their inbox.
 
@@ -55,7 +55,7 @@ The user has been successfully removed from the organization.
 2. Select the new role from the drop down, the change is automatically saved
 3. The user is then assigned the newly selected role. 
 
-Additional actions
+## Additional actions
 
 Filtering is available through users by the following fields:
 

@@ -16,15 +16,19 @@ The default session length that is applied for members of a group is 30 days. Gr
 
 You must be an administrator of the group in order to update the session length.
 
+{% hint style="info" %}
 **Feature availability**  
 This feature is available to plans that support groups. See [Pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 **Steps**
 
 1. Log in to your Snyk account and navigate to the group for which you’d like to configure session length.
 2. Navigate to **Settings** to update the Group settings.
 3. From the **Session expiration** area, enter values for the session length. valid value ranges are as follows:
-4. Days - 0-30
-5. Hours - 0-23
-6. Minutes - 0-59 ![image1.png](../../.gitbook/assets/uuid-21093b2a-7003-b47a-cb62-2e6dd147323e-en.png)
+   1. Days - 0-30
+   2. Hours - 0-23
+   3. Minutes - 0-59
+
+![image1.png](../../.gitbook/assets/uuid-21093b2a-7003-b47a-cb62-2e6dd147323e-en.png)
 

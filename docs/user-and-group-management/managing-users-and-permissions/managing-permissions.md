@@ -5,8 +5,10 @@ Click settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Membe
 1. The Free plan only has administrators.
 2. Enterprise plans have administrators and collaborators.
 
+{% hint style="info" %}
 **Feature availability**  
 Our free subscription plan allows you to send up to 200 pending invitations every 7 days. If you have already reached that limit and try to invite additional folks to join you, we'll display an error message for you. Don't worry though! You can send more the next week, or whenever some of the currently pending ones have been accepted. See [Pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 | **User permissions in an organization** | **Administrator** | **Collaborator** |
 | :--- | :--- | :--- |

@@ -1,6 +1,6 @@
 # Manage Snyk organizations
 
-In the Manage organization section, you can:
+In the **Manage organization** section, you can:
 
 * see how many private, public and inactive projects are in the organization.
 * see and manage team members.

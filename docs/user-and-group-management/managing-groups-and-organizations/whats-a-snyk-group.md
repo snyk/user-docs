@@ -1,7 +1,9 @@
 # What’s a Snyk group?
 
+{% hint style="info" %}
 **Feature availability**  
 This feature is available with Enterprise and Business plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 Groups is a feature that makes it easier for you to work within teams. Groups can hold many organizations, and each organization can contain many collaborators.
 

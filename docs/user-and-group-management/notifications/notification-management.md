@@ -2,6 +2,8 @@
 
 By default, Snyk emails you when a new issue or remediation in a project’s dependencies is found and provides you with a weekly update of your security status across your organization. You can customize the content of these emails in your account settings. If you’re an organization administrator, you can also set email notification defaults for all the members within it.
 
+![](../../.gitbook/assets/image%20%288%29.png)
+
 ## Setting email defaults for all members of an organization
 
 To customize the emails all your organization’s members receive, head over to your organization settings area. customizing options here will trickle down to all of your organization’s members. However, a member of this organization can override these default settings in their own account settings if they wish.
