@@ -1,6 +1,6 @@
 # Security policies: What collaborators see
 
-![Screenshot\_2020-10-21\_at\_9.30.03\_am.png](https://support.snyk.io/hc/article_attachments/360012380298/Screenshot_2020-10-21_at_9.30.03_am.png)
+![](../../.gitbook/assets/screenshot_2020-10-21_at_9.30.03_am.png)
 
 A newly assigned policy, or changes to a policy, apply when the project is retested. This is what project collaborators see when an action is applied to a vulnerability:
 
