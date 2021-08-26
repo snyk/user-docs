@@ -10,11 +10,11 @@ Use Snyk Code with the standard Snyk web interface to find and fix vulnerabiliti
 See [Getting started with Snyk Code](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-with-snyk-code) for details of how to import and scan projects.
 {% endhint %}
 
-1. In your **Projects** area, select the project to open: 
+  1. In your **Projects** area, select the project to open: 
 
 ![select-project.png](../.gitbook/assets/select-project.png)
 
-1. Snyk Code displays information and vulnerability cards for that project:
+  2. Snyk Code displays information and vulnerability cards for that project:
 
 ![SnykCofe\_Priority\_Score.png](../.gitbook/assets/snykcofe_priority_score.png)
 
@@ -42,7 +42,7 @@ See [Issue card information](https://docs.snyk.io/getting-started/introduction-t
 * Click **Ignore** to ignore this vulnerability \(see [Ignore a vulnerability](using-snyk-code-web.md)\)
 * Click **Full details** to view more information \(see [View full details](using-snyk-code-web.md)\).
 
-## Ignore a vulnerability
+### Ignore a vulnerability
 
 {% hint style="info" %}
 Ignore functionality is not offered for Open Source repositories.
@@ -87,15 +87,15 @@ Full details include all the information in the vulnerability card, plus:
 
 ### Open the source code file
 
-1. Click the code link to open the source code file itself \(in this example, in GitHub\):
+  1. Click the code link to open the source code file itself \(in this example, in GitHub\):
 
-![Open-code1.png](https://support.snyk.io/hc/article_attachments/360015998577/Open-code1.png)
+![](../.gitbook/assets/open-code1.png)
 
-1. The file opens, showing you exactly where to fix the vulnerability \(in this example, by adding the sanitation required to the input\). 
+  2. The file opens, showing you exactly where to fix the vulnerability \(in this example, by adding the sanitation required to the input\). 
 
-![Open-code2.png](https://support.snyk.io/hc/article_attachments/360015999237/Open-code2.png)
+![](../.gitbook/assets/open-code2.png)
 
-1. You can now make the fix as required, to address the vulnerability in your code.
+  3. You can now make the fix as required, to address the vulnerability in your code.
 
 ## Example: Cross-site Scripting \(XSS\)
 
@@ -109,7 +109,7 @@ Click **Full details** to see more information about this vulnerability:
 
 ![](../.gitbook/assets/xss-2.png)
 
-\(This example shows that an unsanitized HTTP input flows into a **write** response returned by the server, so could be running malicious code.\)
+\(This example shows a non-sanitized, HTTP input flows into a **write** response returned by the server, so could be running malicious code.\)
 
 Cick the code link to open the source code file directly, then make changes to fix this vulnerability.
 
