@@ -148,7 +148,7 @@ By default, Snyk emails every Org User when a new issue or remediation in a proj
 
 To customize the emails your Org users receive, navigate to the Org’s settings
 
-![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) &gt; **Notifications**. Any changes you make here here affect all of your organization’s members, although Org users can override these default settings in their user-level account settings.
+![](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MdwVZ6HOZriajCf5nXH%2F-MhJCQmI7SUlY6let0XH%2F-MhJNWnj1-nYQpgnA8YS%2Fcog_icon.png?alt=media&token=7dca2b4d-1b18-4205-a325-213e33a31530) &gt; **Notifications**. Any changes you make here here affect all of your organization’s members, although Org users can override these default settings in their user-level account settings.
 
 To disable notifications for all the users in an Org ahead of your import, uncheck the appropriate notification boxes:
 
@@ -191,7 +191,7 @@ To configure the PR test settings for your organization:
 
 1. Navigate to **Org** &gt; settings
 
-![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) **&gt;** Integrations &gt; Edit Settings. 2. Set the the toggle to **Enabled** and set the **Fail conditions** as needed:
+![](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MdwVZ6HOZriajCf5nXH%2F-MhJCQmI7SUlY6let0XH%2F-MhJNWnj1-nYQpgnA8YS%2Fcog_icon.png?alt=media&token=7dca2b4d-1b18-4205-a325-213e33a31530) **&gt;** Integrations &gt; Edit Settings. 2. Set the the toggle to **Enabled** and set the **Fail conditions** as needed:
 
 ![image13.png](../../.gitbook/assets/image13.png) 3. Click **Update settings**.
 

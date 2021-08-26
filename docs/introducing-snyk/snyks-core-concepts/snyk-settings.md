@@ -2,7 +2,7 @@
 
 Click on settings
 
-![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png)
+![](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MdwVZ6HOZriajCf5nXH%2F-MhJCQmI7SUlY6let0XH%2F-MhJNWnj1-nYQpgnA8YS%2Fcog_icon.png?alt=media&token=7dca2b4d-1b18-4205-a325-213e33a31530)
 
 to view Snyk application settings:
 
