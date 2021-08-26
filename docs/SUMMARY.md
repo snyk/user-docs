@@ -75,7 +75,7 @@
     * [Understanding Snyk Container CLI results](snyk-container/snyk-cli-for-container-security/understanding-snyk-container-cli-results.md)
     * [Advanced Snyk Container CLI usage](snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage.md)
   * [Getting around the Snyk Container UI](snyk-container/getting-around-the-snyk-container-ui/README.md)
-    * [Detecting application vulnerabilities in container images](snyk-container/getting-around-the-snyk-container-ui/snyk-container-user-interface.md)
+    * [Detecting application vulnerabilities in container images](snyk-container/getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images.md)
     * [Analysis and remediation for your images from the Snyk app](snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app.md)
     * [Base image detection](snyk-container/getting-around-the-snyk-container-ui/base-image-detection.md)
     * [Image layer information](snyk-container/getting-around-the-snyk-container-ui/image-layer-information.md)
