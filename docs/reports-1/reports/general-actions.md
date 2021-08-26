@@ -12,7 +12,7 @@ To search for and filter specific projects, open the dropdown from the Projects 
 
 ![](../../.gitbook/assets/uuid-d8df9018-387d-26f4-c735-b50a312b9eb0-en.png)
 
-To filter by vulnerability severities and by project types, open the Filters dropdown:
+To filter by vulnerability severities and by project types, open the **Filters** dropdown:
 
 ![](../../.gitbook/assets/mceclip0-29-.png)
 
