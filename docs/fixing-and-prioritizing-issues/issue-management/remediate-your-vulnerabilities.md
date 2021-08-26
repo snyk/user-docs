@@ -9,7 +9,7 @@ Fixing with Snyk can either be performed in 4 different ways
 3. automatic pull requests - When new remediation becomes available that helps you to fix a vulnerability Snyk can open an automated pull request.
 4. by using the CLI and running the `snyk wizard` command to fix node.js projects.
 
-## How it works
+### How it works
 
 When a new fixable vulnerability is found, Snyk attempts to open a new pull request on your behalf \(in a repository for which we support automatic fix pull requests\), or suggests you open one manually based on your settings.
 
@@ -17,7 +17,7 @@ When Snyk automates the fix, we check if there are an existing branch and pull r
 
 When there’s no existing branch and pull request for the issue a new branch and pull request are created.
 
-## Actionable remediation advice
+### Actionable remediation advice
 
 Once Snyk tests your manifest files, we then provide summary and detailed remediation advice for vulnerabilities that have fixes available, enabling you to resolve those vulnerabilities in your code with the help of clear suggestions and explanations.
 
@@ -68,7 +68,7 @@ Upgrade and patch results appear similar to the following:
 
 Patch recommendations with some and with all paths:
 
-![image3.png](https://support.snyk.io/hc/article_attachments/360006949057/uuid-1afca091-a9a5-d42c-40b6-f48aa0e72584-en.png)
+![](../../.gitbook/assets/uuid-1afca091-a9a5-d42c-40b6-f48aa0e72584-en.png)
 
 ![](../../.gitbook/assets/image%20%283%29.png)
 
