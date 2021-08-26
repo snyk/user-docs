@@ -2,7 +2,7 @@
 
 **Overview of Snyk Social Trends prioritization**
 
-Snyk shows a **Trending** banner on issues that are being actively discussed in Twitter.  
+Snyk shows a **Trending** banner on issues that are being actively discussed in Twitter.
 
 ![social-trends.gif](../../.gitbook/assets/social-trends.gif)
 

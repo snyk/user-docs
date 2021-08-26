@@ -4,7 +4,7 @@ Click on settings
 
 ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
 
- &gt; **Usage** to view:
+&gt; **Usage** to view:
 
 * [Test usage](usage-page-details.md): the numbers of tests used.
 * [Contributing developers](usage-page-details.md) number of developers contributing to projects.

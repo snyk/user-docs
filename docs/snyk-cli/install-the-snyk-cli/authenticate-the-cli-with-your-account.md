@@ -7,7 +7,7 @@ You can authenticate:
 * Through your browser
 * Using your API token
 
-### Authenticate through your browser
+## Authenticate through your browser
 
 1. Run `snyk auth` from the CLI.
 
@@ -17,12 +17,12 @@ You can authenticate:
 
    The authentication ends and you can go back to your terminal to continue working.
 
-### Authenticate using your API token
+## Authenticate using your API token
 
 1. Visit [your Snyk account](https://app.snyk.io/account) \(**Account Settings &gt; API Token** section\).
 2. In the **KEY** field, click **click to show**, then select and copy your API token:  
 
 ![](../../.gitbook/assets/image%20%2811%29.png)
 
-3. In the CLI, run `snyk config set api=XXXXXXXX`
+1. In the CLI, run `snyk config set api=XXXXXXXX`
 

@@ -34,7 +34,5 @@ The path of this issue is specified as
 
 In this screenshot you can see the highlighted line represents the identified issue.
 
-###
-
 ![Screenshot\_2020-08-07\_at\_14.27.04.png](../../.gitbook/assets/screenshot_2020-08-07_at_14.27.04.png)
 

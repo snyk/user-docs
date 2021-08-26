@@ -82,7 +82,7 @@ You need to find the specific integration you wish to deactivate in your list of
 
 If you choose to disconnect, your credentials will be removed from Snyk and any integration-specific projects we had been monitoring will be deactivated on Snyk.
 
-If you choose to re-enable this integration at any time, you need to re-enter your credentials and activate your projects.  
+If you choose to re-enable this integration at any time, you need to re-enter your credentials and activate your projects.
 
 ## **Add Azure Functions to Snyk**
 

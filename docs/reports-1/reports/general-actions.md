@@ -43,7 +43,7 @@ Group administrators can view report data for one, some or all of the organizati
 4. Check or uncheck the organizations you wish to view.
 5. To save the selected organizations as a quick filter, assign a unique name and then click **Save**.
 
-## Sorting 
+## Sorting
 
 Columns that allow the data to be sorted have arrows next to their headings. Click the arrows to sort the data in descending order by the relevant category. Click again to switch the order to ascending.
 

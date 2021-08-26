@@ -26,11 +26,11 @@ Once the user adds a project to CircleCI and adds the Snyk Orb to the configurat
 
 #### **Monitor**
 
-Optionally, if the build completes successfully and MONITOR is set to True in the Snyk step, then Snyk saves a snapshot of the project dependencies from the Snyk app, where you can view the dependency tree displaying all of the issues, and you can receive alerts for new issues found in the existing app version. 
+Optionally, if the build completes successfully and MONITOR is set to True in the Snyk step, then Snyk saves a snapshot of the project dependencies from the Snyk app, where you can view the dependency tree displaying all of the issues, and you can receive alerts for new issues found in the existing app version.
 
 #### **Protect \(optional\)**
 
-\(For Node.js projects only\) Optionally, set PROTECT to True and if a .snyk policy file exists, Snyk applies patches specified in the policy file. 
+\(For Node.js projects only\) Optionally, set PROTECT to True and if a .snyk policy file exists, Snyk applies patches specified in the policy file.
 
 #### **Prerequisites**
 
@@ -46,7 +46,7 @@ Optionally, if the build completes successfully and MONITOR is set to True in th
 
 ![image1.png](../../.gitbook/assets/uuid-10d3ba7f-799b-45a9-5c8e-b2abe9aab955-en.png)
 
-2. From this list, find and click the relevant \#Snyk line to view the Orb's information with examples, parameters, and values:
+1. From this list, find and click the relevant \#Snyk line to view the Orb's information with examples, parameters, and values:
 
 ![image2.png](../../.gitbook/assets/uuid-ce212e67-b7ac-3cf7-4772-c84f6897aed9-en.png)
 

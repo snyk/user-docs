@@ -7,8 +7,6 @@ This feature is deprecated.
 * Ensure Snyk is already monitoring the necessary project.
 * Configure the runtime agent using the relevant project ID. Locate the project ID by inspecting the settings page of your project, such as in the following image:
 
- 
-
 ![Runtime\_ProjectID.png](../../.gitbook/assets/uuid-9cd785d5-bdd0-d8cf-347b-f7d89f4bac7b-en.png)
 
 * Alternatively, you can use the Snyk [projects API](https://snyk.docs.apiary.io/#reference/projects/projects-by-organisation/list-all-projects) to retrieve the project ID.

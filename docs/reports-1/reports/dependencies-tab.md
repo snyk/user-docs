@@ -13,19 +13,13 @@ Details displayed include:
 * For supported packages, dependency health details about the package are displayed, not only for the version used in your projects but also for the overall health of the package, as follows:
   * A warning icon is displayed for packages that are deprecated, meaning the maintainers are no longer updating it.
 
-   
-
 ![Reports\_DependenciesDeprecated.png](../../.gitbook/assets/uuid-11be17d2-361f-7354-3c87-535f46cd2324-en.png)
 
-  * The Latest Version and Latest Publish dates. With these dates, you can more easily determine maturity of the package, as well as activity frequency.
-
-   
+* The Latest Version and Latest Publish dates. With these dates, you can more easily determine maturity of the package, as well as activity frequency.
 
 ![Reports\_Dependencies\_LastVersionLastPublish.png](../../.gitbook/assets/uuid-a1fa7b20-b64d-6aa6-72be-54477241b434-en.png)
 
-  * The version used in your project \(Version\) and the Latest Version available are both listed, enabling you understand the delta between your current package version and the most recent package version available, and evaluate outdatedness.
-
-   
+* The version used in your project \(Version\) and the Latest Version available are both listed, enabling you understand the delta between your current package version and the most recent package version available, and evaluate outdatedness.
 
 ![Reports\_Dependencies\_VersionLastVersion.png](../../.gitbook/assets/uuid-095a82e8-5858-4247-78a5-da9e80d3e291-en.png)
 

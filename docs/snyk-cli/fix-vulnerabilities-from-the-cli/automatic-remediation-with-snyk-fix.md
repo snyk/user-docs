@@ -53,7 +53,7 @@ To enable snyk fix during the beta period, click on settings
 
 ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
 
- &gt; **Snyk Preview**, then enable the snyk fix feature and click **Save changes**.
+&gt; **Snyk Preview**, then enable the snyk fix feature and click **Save changes**.
 
 ![](../../.gitbook/assets/cleanshot_2021-07-02_at_11.39.43_2x.png)
 

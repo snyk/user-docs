@@ -15,29 +15,29 @@ The Snyk plugin enables you to track and identify issues that risk your applicat
 Both Snyk Broker and on-prem solutions support the Eclipse plugin.
 {% endhint %}
 
-### Supported languages and repos
+## Supported languages and repos
 
 Snyk supports all languages that are supported by both Eclipse and Snyk. Additionally, the Snyk plugin can also be implemented with our Broker and on-prem solutions.
 
-### Installing the Eclipse Snyk plugin
+## Installing the Eclipse Snyk plugin
 
 1. Navigate to the Marketplace from within your running Eclipse instance.
 2. Search for Snyk and click Install.
 
 ![image6.png](../../.gitbook/assets/uuid-01198b42-f020-2cc5-c20f-93817eeb44a4-en.png)
 
-3. When prompted accept the license agreement and the **Snyk Security** certificate to complete the installation.
-4. Restart the Eclipse instance and navigate to **Eclipse Preferences** to ensure **Snyk Vuln Scanner** now appears in the list:
+1. When prompted accept the license agreement and the **Snyk Security** certificate to complete the installation.
+2. Restart the Eclipse instance and navigate to **Eclipse Preferences** to ensure **Snyk Vuln Scanner** now appears in the list:
 
 ![image7.png](../../.gitbook/assets/uuid-928012b7-8e49-fe6f-4965-77c5db026784-en.png)
 
-### Use the Snyk plugin to secure your Eclipse projects
+## Use the Snyk plugin to secure your Eclipse projects
 
 From the Snyk results click
 
 ![image10.png](../../.gitbook/assets/uuid-aa090aa8-d4fe-eb5d-2505-54a0b1555be9-en.png)
 
- whenever you are ready to scan your projects. It shouldn’t take too long for the results to appear—but no worries! You can continue to work as usual in the meantime anyway.
+whenever you are ready to scan your projects. It shouldn’t take too long for the results to appear—but no worries! You can continue to work as usual in the meantime anyway.
 
 If for any reason you need to stop the scan before the build ends, click
 

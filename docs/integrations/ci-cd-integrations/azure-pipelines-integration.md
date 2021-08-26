@@ -48,13 +48,11 @@ To start using our task as part of your pipeline build, first install the extens
 
 ![ap\_-\_search.jpg](../../.gitbook/assets/ap_-_search.jpg)
 
- 
-8. In the Snyk Authentication service connection form, enter the **Server URL** and the **Snyk API Token** along with a **Service connection name**:
+1. In the Snyk Authentication service connection form, enter the **Server URL** and the **Snyk API Token** along with a **Service connection name**:
 
 ![ap\_-\_config.jpg](../../.gitbook/assets/ap_-_config.jpg)
 
- 
-9. Click on **Save**, ensuring the new service connection appears in your list of service connections.
+1. Click on **Save**, ensuring the new service connection appears in your list of service connections.
 
 ### Add the Snyk Security Task to your pipelines
 
@@ -77,9 +75,9 @@ This extension requires that Node.js and npm be installed on the build agent. Th
 
 ![Azure.png](../../.gitbook/assets/azure.png)
 
-4. Complete the fields in the configuration. Find full details about the parameters in the [GitHub repo](https://github.com/snyk/snyk-azure-pipelines-task#task-parameters) or in this section below: [Snyk Security Scan task parameters and values](azure-pipelines-integration.md).   **Note:** If the **Fail build if Snyk finds issue** option is checked, then if the build fails, the pipeline job will be failed by the Snyk task. If you remove the checkmark from the **Fail build if Snyk finds issue** option, the Snyk task tests for vulnerabilities, but does not cause the pipeline job to fail. When testing a container image, you can specify the path to the Dockerfile with the dockerfilePath property in order to receive additional information about issues in your base image. To add your Dockerfile for additional base image data when testing your container, ensure the image has first been built.
-5. Place your cursor inside the pipeline, ensuring you place it before a deployment step, such as **npm publish** or **docker push**.   **Note** You can have multiple instances of the Snyk Security Scan task within your pipeline. This might be useful, for example, if you have multiple project manifest files you want to test or if you want to test both the application and the container images.
-6. From the configuration panel, click **Add**. The task is inserted into your pipeline where your cursor was placed, appearing similar to the following:
+1. Complete the fields in the configuration. Find full details about the parameters in the [GitHub repo](https://github.com/snyk/snyk-azure-pipelines-task#task-parameters) or in this section below: [Snyk Security Scan task parameters and values](azure-pipelines-integration.md).   **Note:** If the **Fail build if Snyk finds issue** option is checked, then if the build fails, the pipeline job will be failed by the Snyk task. If you remove the checkmark from the **Fail build if Snyk finds issue** option, the Snyk task tests for vulnerabilities, but does not cause the pipeline job to fail. When testing a container image, you can specify the path to the Dockerfile with the dockerfilePath property in order to receive additional information about issues in your base image. To add your Dockerfile for additional base image data when testing your container, ensure the image has first been built.
+2. Place your cursor inside the pipeline, ensuring you place it before a deployment step, such as **npm publish** or **docker push**.   **Note** You can have multiple instances of the Snyk Security Scan task within your pipeline. This might be useful, for example, if you have multiple project manifest files you want to test or if you want to test both the application and the container images.
+3. From the configuration panel, click **Add**. The task is inserted into your pipeline where your cursor was placed, appearing similar to the following:
 
    ```text
    - task: SnykSecurityScan@1
@@ -89,11 +87,11 @@ This extension requires that Node.js and npm be installed on the build agent. Th
        failOnIssues: true
    ```
 
-7. Once included in your pipeline, the task runs each time the pipeline runs, and the results appear in the Azure Pipelines output view:
+4. Once included in your pipeline, the task runs each time the pipeline runs, and the results appear in the Azure Pipelines output view:
 
 ![image2.png](../../.gitbook/assets/uuid-d570e34b-3973-2044-598b-cb89c82a1db0-en.png)
 
-   > If the Snyk task fails the build, an error message appears in the results indicating that the build failed due to `snyk test`.
+> If the Snyk task fails the build, an error message appears in the results indicating that the build failed due to `snyk test`.
 
 ## Snyk Security Scan task parameters and values
 

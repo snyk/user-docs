@@ -7,7 +7,7 @@ Snyk Container:
 * Provides tools and integrations to quickly find and fix these vulnerabilities.
 * Allows you to create images with security built-in from the start.
 
-Read more about how we scan images for vulnerabilities in Container image scanning. 
+Read more about how we scan images for vulnerabilities in Container image scanning.
 
 ## Snyk Container integrations
 

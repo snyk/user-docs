@@ -8,12 +8,12 @@ We currently offer scanning for Node, Ruby Gems, Composer and Pip.
 This integration is currently available in AWS’s us-east-1 region, but we are working on expanding to additional regions soon after release
 {% endhint %}
 
-### Setup
+## Setup
 
 You can initiate Snyk’s AWS CodePipeline integration directly from the AWS CodePipeline console.  
 Add Snyk to a new or existing pipeline using the following steps.
 
-#### Step 1: Add stage
+### Step 1: Add stage
 
 At any point after the Source stage, you can add a Snyk scan stage, allowing you to test your application at different stages of the CI/CD pipeline.
 
@@ -21,7 +21,7 @@ Click **Edit**, and **add a scan stage**.
 
 ![](../../.gitbook/assets/aws-cp-add-stage.png)
 
-#### Step 2: Add action group
+### Step 2: Add action group
 
 Click **Add an Action Group** to open the **Edit Action** window:
 
@@ -31,13 +31,13 @@ Name the action, then select **Snyk** as the **Action Provider**.
 
 Click **Connect with Snyk** to begin the connection process.
 
-#### Step 3: Connect to Snyk
+### Step 3: Connect to Snyk
 
 Select how you would like to authenticate with Snyk to give AWS CodePipeline permission to begin scanning your open source code.
 
 ![](../../.gitbook/assets/snyk-cp-int-config.png)
 
-#### Step 4: Configure settings
+### Step 4: Configure settings
 
 The following options are available for configuration:
 
@@ -63,7 +63,7 @@ Save the pipeline after successfully connecting to Snyk.
 
 This configures your Snyk stage in the CodePipeline, so you can test your application. Users should release the latest changes through the CodePipeline options for the latest changes to take effect.
 
-### View scan results
+## View scan results
 
 You can view scan results in the AWS CodePipeline console, by clicking **Details** in the Scan stage:
 
@@ -73,7 +73,7 @@ Click **Link to execution details** to view your detailed vulnerability report.
 
 ![](../../.gitbook/assets/image4-2-.png)
 
-### Test report details
+## Test report details
 
 Snyk analyzes the application’s manifest file and correlates the list of dependencies with Snyk’s vulnerability database. Snyk provides [detailed reports](https://support.snyk.io/hc/en-us/categories/360000598418-Reports-and-remediation) for your open source code. By analyzing the application’s manifest file, Snyk builds a full dependency tree, accurately identifying both direct and transitive dependencies \(transitives account for 78% of the vulnerabilities detected by Snyk\). This enables Snyk to show exactly how a vulnerability was introduced into the application.
 

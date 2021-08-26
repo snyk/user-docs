@@ -16,6 +16,6 @@ You must sign up for an account with Snyk before you begin.
 
 ![image1.png](../../.gitbook/assets/uuid-fe65f4bc-9578-016c-00dd-6ddb97d2ead7-en.png)
 
-4. When the installation ends, the Administration Plugins List loads, notifying the plugin has been uploaded.
-5. Ensure the plugin is enabled.
+1. When the installation ends, the Administration Plugins List loads, notifying the plugin has been uploaded.
+2. Ensure the plugin is enabled.
 

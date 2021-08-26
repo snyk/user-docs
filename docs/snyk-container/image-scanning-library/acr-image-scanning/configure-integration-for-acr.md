@@ -10,12 +10,12 @@ Enable integration between an ACR registry and a Snyk organization, and start ma
 
 ![](../../../.gitbook/assets/image%20%2836%29.png)
 
-4. The ACR configuration page in the Settings area loads:
+1. The ACR configuration page in the Settings area loads:
 
 ![](../../../.gitbook/assets/image%20%289%29.png)
 
-5. Enter the user name, password and container registry name \(myregistry.azurecr.io\) that you received when you generated a service principal for this integration.
-6. Click **Save**.
+1. Enter the user name, password and container registry name \(myregistry.azurecr.io\) that you received when you generated a service principal for this integration.
+2. Click **Save**.
 
    Snyk tests the connection values and the page reloads, now displaying ACR integration information. A confirmation message that the details were saved also appears in green at the top of the screen. In addition, if the connection to Azure failed, notification appears under the Connected to ACR section.
 

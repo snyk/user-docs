@@ -10,9 +10,9 @@ You have the option of establishing cross-account access to enable Snyk's AWS La
 
 You will need your Snyk **Organization ID** and AWS IAM [role ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) to complete the integration. The role ARN will be provided for you in the AWS CloudFormation Console's Output tab.
 
-[![cloudformation-launch-stack.png](https://support.snyk.io/hc/article_attachments/360010020437/cloudformation-launch-stack.png)
+\[![cloudformation-launch-stack.png](https://support.snyk.io/hc/article_attachments/360010020437/cloudformation-launch-stack.png)
 
-](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/template?stackName=Snyk-Security-Lambda&templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-snyk-security/templates/snyk-lambda.yaml)
+\]\([https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2\#/stacks/create/template?stackName=Snyk-Security-Lambda&templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-snyk-security/templates/snyk-lambda.yaml](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/template?stackName=Snyk-Security-Lambda&templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-snyk-security/templates/snyk-lambda.yaml)\)
 
 **Manual Process:**
 
@@ -46,18 +46,18 @@ Snyk currently supports integration with AWS Lambda for Node, Ruby and Java proj
 
 ![image1.png](../../.gitbook/assets/uuid-f045ee35-1ddd-34e1-bbe3-f225bb9426e4-en.png)
 
-   The **AWSLambda** configuration page in the **Settings** area loads, with the **External ID** value automatically populated for you based on the Snyk organization that you’re configuring.
+The **AWSLambda** configuration page in the **Settings** area loads, with the **External ID** value automatically populated for you based on the Snyk organization that you’re configuring.
 
 ![image6.png](../../.gitbook/assets/uuid-21b8f9b0-7756-3492-31fe-48ed1777a83c-en.png)
 
-5. Paste the **Role ARN** that you saved on the side into the **ARN** field.
-6. Click **Save**. Snyk tests the connection values and the page reloads, now displaying AWS Lambda integration details as you entered them. A confirmation message that the details were saved also appears in green at the top of the screen.
+1. Paste the **Role ARN** that you saved on the side into the **ARN** field.
+2. Click **Save**. Snyk tests the connection values and the page reloads, now displaying AWS Lambda integration details as you entered them. A confirmation message that the details were saved also appears in green at the top of the screen.
 
 ![image4.png](../../.gitbook/assets/uuid-66a8f525-f274-1db4-f691-ca8112fbd8af-en.png)
 
-   In addition, if the connection to AWS failed, notification appears under the **Connected to AWS Lambda** section accordingly.
+In addition, if the connection to AWS failed, notification appears under the **Connected to AWS Lambda** section accordingly.
 
-#### Enable permissions
+### Enable permissions
 
 Enable permissions to access AWS Lambda for the first time by creating a new read-only policy-based role from the AWS Identity and Access Management \(IAM\) console and updating the policy directly from the associated JSON file as necessary.
 
@@ -66,13 +66,9 @@ The role delegates read-only access to all of your Lamda resources by Snyk per o
 This section generally describes how to navigate the AWS IAM Console for these purposes. For more assistance, see the [AWS documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage.html).
 
 1. From your Snyk account, navigate to the organization you’d like to integrate with, go to **Settings** and when the General Settings load for the group, scroll down and copy your Organization ID. Save this for use later in this process.
-2. Now, click [here](https://console.aws.amazon.com/iam/home?#/policies) to log in to the **AWS Management Console,** navigate to the **Policies** page, and create a new policy for the role by updating the related JSON file **only**, as follows:
-   1. From the **Policies** area of the AWS Management Console, create a new policy.
-   2. Navigate to the **JSON** tab. 
-   3. Select and delete all of the default text in the JSON file. 
-   4. Copy the following script and paste it inside the JSON file:
+2. Now, click [here](https://console.aws.amazon.com/iam/home?#/policies) to log in to the **AWS Management Console,** navigate to the **Policies** page, and create a new policy for the role by updating the related JSON file **only**, as follows: 1. From the **Policies** area of the AWS Management Console, create a new policy. 2. Navigate to the **JSON** tab. 3. Select and delete all of the default text in the JSON file. 4. Copy the following script and paste it inside the JSON file:
 
-      ```text
+   ```text
          {
              "Version": "2012-10-17",
              "Statement": [
@@ -88,7 +84,8 @@ This section generally describes how to navigate the AWS IAM Console for these p
                  }
              ]
          }
-      ```
+   ```
+
 3. Click **Review policy**.
 4. Name the policy **SnykReadOnlyForLambda**.
 5. Skip any other steps, finish the wizard and create the policy. The policy is now available in the list of your existing policies.
@@ -115,23 +112,22 @@ You must be added as a collaborator to the Snyk organization you’d like to wor
 
 ![image5.png](../../.gitbook/assets/uuid-89dfeb36-7726-1f89-5366-b7aa603a5898-en.png)
 
-  
-   **NOTE** If you can’t see that icon, click the+ **option and then from the** Integrations **page, find and click the** Lambda\*\* option.
+**NOTE** If you can’t see that icon, click the+ **option and then from the** Integrations **page, find and click the** Lambda\*\* option.
 
-2. Select the repositories and their relevant functions you’d like to test and click **Add selected repositories**.
+1. Select the repositories and their relevant functions you’d like to test and click **Add selected repositories**.
 
 ![image8.png](../../.gitbook/assets/uuid-e21c5832-5a84-a635-27c1-2ea9726bce64-en.png)
 
-3. Snyk evaluates root folders and custom file locations. If no manifest files are found on the root level or in the paths you configure, Snyk notifies you that no files can be imported.
-4. Once repositories are imported, a confirmation appears in green at the top of the screen. 
+1. Snyk evaluates root folders and custom file locations. If no manifest files are found on the root level or in the paths you configure, Snyk notifies you that no files can be imported.
+2. Once repositories are imported, a confirmation appears in green at the top of the screen. 
 
 ![image3.png](https://support.snyk.io/hc/article_attachments/360007146458/uuid-ee5c7842-1773-a590-7b75-aa5e960b8108-en.png)
 
-5. Refresh the page to view the added functions. AWS ECR images are indicated with a unique icon
+1. Refresh the page to view the added functions. AWS ECR images are indicated with a unique icon
 
 ![image2.png](../../.gitbook/assets/uuid-1275abc5-312a-ce0b-b6d9-2caf3e83584a-en.png)
 
-, they are grouped and named by repo, and you can now also filter to view only those projects: 
+, they are grouped and named by repo, and you can now also filter to view only those projects:
 
 ![image7.png](../../.gitbook/assets/uuid-8f54b49d-23ee-637e-45a9-47ca61fe2b9e-en.png)
 

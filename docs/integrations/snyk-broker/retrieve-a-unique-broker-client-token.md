@@ -7,12 +7,12 @@ To retrieve the token enabling you to install the Broker:
 
 ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
 
- &gt; **Integrations** for that specific integration update to see the Broker token.
+&gt; **Integrations** for that specific integration update to see the Broker token.
 
 ![Integrations.png](../../.gitbook/assets/integrations.png)
 
-3. From the row for the integration you’re setting up, click **Edit settings**. \(As you have not yet installed and configured the client, the notification from this screen correctly displays “Could not connect to…”.\)
-4. Copy and paste the credentials / token in a file on the desktop to use in the environment variables of the command line argument when you install the client.
+1. From the row for the integration you’re setting up, click **Edit settings**. \(As you have not yet installed and configured the client, the notification from this screen correctly displays “Could not connect to…”.\)
+2. Copy and paste the credentials / token in a file on the desktop to use in the environment variables of the command line argument when you install the client.
 
 ## Enabling across multiple organizations
 

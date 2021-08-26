@@ -1,6 +1,6 @@
 # Cloud Foundry integration overview
 
-### Cloud Foundry integration overview
+## Cloud Foundry integration overview
 
 Snyk’s Cloud Foundry integration lets you monitor the deployed code of your Java, Node.js, PHP and Ruby Cloud Foundry applications for any known vulnerabilities found in the application’s dependencies, testing at a frequency you control.
 
@@ -13,7 +13,7 @@ In order to turn on the Cloud Foundry integration you’ll need to:
 1. Connect to Cloud Foundry from the integrations page
 2. Select the projects you want to monitor and click “Add to Snyk”
 
-### Connect Snyk to Cloud Foundry
+## Connect Snyk to Cloud Foundry
 
 In order for Snyk to be able to monitor your deployed Cloud Foundry applications, you’ll first need to connect Snyk to your Cloud Foundry account. You can do this by navigating to the [Integrations page](https://app.snyk.io/integrations) and clicking on “Connect to Cloud Foundry”.
 
@@ -25,7 +25,7 @@ This will take you to a page where you’ll be prompted to enter your Cloud Foun
 
 Instructions for how to locate your Cloud Foundry API URL are below.
 
-### Cloud Foundry: locate your API URL
+## Cloud Foundry: locate your API URL
 
 You can find your Cloud Foundry API URL from the [cf CLI](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html) tool.
 
@@ -33,7 +33,7 @@ You can find your Cloud Foundry API URL from the [cf CLI](https://docs.cloudfoun
 
 From there you can login to your Snyk account and enter your Cloud Foundry credentials.
 
-### Cloud Foundry: check your connection status
+## Cloud Foundry: check your connection status
 
 At any time after you’ve entered your Cloud Foundry credentials, you can check on the connection status in one of two places.
 
@@ -49,7 +49,7 @@ If you are unable to connect, please re-enter your account credentials to verify
 
 ![](../../.gitbook/assets/uuid-d78f594d-75a9-3cf3-2685-c96c63596ea0-en.png)
 
-### Disable the Cloud Foundry integration
+## Disable the Cloud Foundry integration
 
 If you decide to disable this integration for any reason, you can accomplish this from the Integrations page in your Settings.
 
@@ -60,7 +60,7 @@ If you choose to disconnect, your credentials will be removed from Snyk and any 
 
 If you choose to re-enable this integration at any time, you need to re-enter your credentials and activate your projects.
 
-### Add a Snyk-specific user to Cloud Foundry
+## Add a Snyk-specific user to Cloud Foundry
 
 We suggest adding a dedicated user to Cloud Foundry for your Snyk org. That way if at some point you need to revoke access for any reason, you can do so without impacting anyone within your org.
 
@@ -74,7 +74,7 @@ You can create a new user with these permissions from the command line using the
 
 You can learn more about how to add another user to your application on the [Cloud Foundry documentation](https://docs.cloudfoundry.org/adminguide/cli-user-management.html).
 
-### Add Cloud Foundry apps to Snyk
+## Add Cloud Foundry apps to Snyk
 
 Once you’ve successfully connected Snyk to your Cloud Foundry account, you’ll be able to select Cloud Foundry apps that you would like Snyk to monitor. You can do this either using the “Add projects” button on the integrations page or directly from the Cloud Foundry integration settings page.
 

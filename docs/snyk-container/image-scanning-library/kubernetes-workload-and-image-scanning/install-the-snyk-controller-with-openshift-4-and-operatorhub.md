@@ -97,15 +97,12 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
 
 ```text
 ![](../../../.gitbook/assets/image%20%2847%29.png)
-
 ```
 
 1. Double-check installation was successful from the Installed Operators area:  
 
 ```text
 ![](../../../.gitbook/assets/image%20%2842%29.png)
-
-  
 ```
 
 1. Now, from the Subscription tab, create an Operator Subscription for the Snyk controller:  
@@ -128,14 +125,12 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
 
 ```text
 ![](../../../.gitbook/assets/image%20%2844%29.png)
-
 ```
 
 1. Double-check successful installation from the cluster:  
 
 ```text
 ![](../../../.gitbook/assets/image%20%2840%29.png)
-
 ```
 
 1. After successfully installing the **Snyk Operator** and the instance of a **Snyk Monitor**, you can also view your cluster in Snyk.

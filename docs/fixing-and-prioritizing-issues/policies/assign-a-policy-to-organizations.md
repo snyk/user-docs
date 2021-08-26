@@ -18,8 +18,6 @@ If an organization is assigned to the policy you are currently viewing, that pol
 
 If you are moving an organization from one policy to another, 2 pills will appear to show which policy is currently applied \(yellow\) and which policy you will be applying \(grey\)
 
-##
-
 ![mceclip1.png](../../.gitbook/assets/mceclip1-16-.png)
 
 ## To remove an organization from a policy:

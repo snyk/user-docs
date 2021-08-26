@@ -26,7 +26,7 @@ This integration only works with GitLab instances that are publicly reachable \(
 
 ![image1.png](../../.gitbook/assets/uuid-aa58b5a9-dd17-3219-6067-4ee6e3f4b384-en.png)
 
-**NOTE:** When using GitLab Enterprise integration, it is important to use the correct URL. For example, use https://gitlab.yourcompany.com/ instead of https://gitlab.yourcompany.com/subfolder1/... The PAT will provide access to any of the repositories that have access granted to them.
+**NOTE:** When using GitLab Enterprise integration, it is important to use the correct URL. For example, use [https://gitlab.yourcompany.com/](https://gitlab.yourcompany.com/) instead of [https://gitlab.yourcompany.com/subfolder1/](https://gitlab.yourcompany.com/subfolder1/)... The PAT will provide access to any of the repositories that have access granted to them.
 
 ### Required permissions and roles
 
@@ -74,7 +74,7 @@ When no upgrade is available, you can ignore or patch the vulnerability \(patchi
 
 ### Disable the GitLab integration
 
-> **WARNING:** 
+> **WARNING:**
 >
 > Disabling a GitLab integration effectively removes all Snyk integrations, webhooks, as well as removal of the Snyk credentials and deactivation of the GitLab projects in the Snyk app.
 

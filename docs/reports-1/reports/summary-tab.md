@@ -128,7 +128,6 @@ For the **Activity** area, the following are the parameters and their descriptio
           filtered to those ignored issues only. Clicking on the fixable number from
           the same box navigates to the <b>Issues</b> tab, filtered to those fixable,
           yet ignored, issues only.</p>
-        <p></p>
         <p><b>Note:</b>
         </p>
         <p>Once you ignore an issue, it may take up to one hour before synchronizing
@@ -144,5 +143,5 @@ These controls appear at the top of the window:
 
 ![mceclip1.png](https://support.snyk.io/hc/article_attachments/360020461797/mceclip1.png)
 
-**Summary filters**—mark the issues to be displayed by selecting the relevant issue type and then click the list arrow again to close it.  
+**Summary filters**—mark the issues to be displayed by selecting the relevant issue type and then click the list arrow again to close it.
 

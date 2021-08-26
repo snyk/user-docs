@@ -4,13 +4,13 @@ This example shows how Snyk can integrate into your GitHub-based workflow.
 
 ## Step 1: Set up environment
 
-1. Open up [Snyk CLI](https://docs.snyk.io/snyk-cli), and run a git clone command on the **goof** repository.  
+1. Open up [Snyk CLI](https://docs.snyk.io/snyk-cli), and run a git clone command on the **goof** repository.
 
    ```text
       git clone https://github.com/snyk/goof.git
    ```
 
-2. Create a new branch, add vulnerabilities on this branch, then merge changes back to GitHub as a Pull Request: 
+2. Create a new branch, add vulnerabilities on this branch, then merge changes back to GitHub as a Pull Request:
 
    ```text
       git branch add_vulns

@@ -121,12 +121,11 @@ Below is an example of how you would set up your an integration for **Github.com
 
 1. Go to the **Integrations** tab, and click on “GitHub”.
 
-![Int2.png](../../.gitbook/assets/int2.png)
-2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories:
+![Int2.png](../../.gitbook/assets/int2.png) 2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories:
 
 ![select-github.png](../../.gitbook/assets/select-github.png)
 
-3. Click **Authorize snyk** to provide Snyk with access to your repositories:
+1. Click **Authorize snyk** to provide Snyk with access to your repositories:
 
 ![authorize.png](../../.gitbook/assets/authorize%20%281%29%20%282%29%20%286%29%20%281%29%20%283%29.png)
 
@@ -158,13 +157,12 @@ To disable notifications for all the users in an Org ahead of your import, unche
 
 ![which\_repos.jpg](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29%20%287%29.jpg)
 
-3. Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.
-4. Snyk detects the manifest files \(projects\), tests them, then displays the results. Imported projects appear underneath the repository name.
+1. Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.
+2. Snyk detects the manifest files \(projects\), tests them, then displays the results. Imported projects appear underneath the repository name.
 
-![Int3.png](../../.gitbook/assets/int3.png) \(Projects are continuously checked for vulnerabilities after being imported\)
-5. To see if a project was imported, navigate to the projects import page. Imported projects have a  ✔ icon by the repo name. 
+![Int3.png](../../.gitbook/assets/int3.png) \(Projects are continuously checked for vulnerabilities after being imported\) 5. To see if a project was imported, navigate to the projects import page. Imported projects have a ✔ icon by the repo name.
 
-![aws-sdk.png](../../.gitbook/assets/aws-sdk.png)       
+![aws-sdk.png](../../.gitbook/assets/aws-sdk.png)
 
 ### Stage 3: Enable Snyk test on PRs
 
@@ -193,8 +191,7 @@ To configure the PR test settings for your organization:
 
 1. Navigate to **Org** &gt; settings
 
-![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) **&gt;** Integrations &gt; Edit Settings.
-2. Set the the toggle to **Enabled** and set the **Fail conditions** as needed:
+![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png) **&gt;** Integrations &gt; Edit Settings. 2. Set the the toggle to **Enabled** and set the **Fail conditions** as needed:
 
 ![image13.png](../../.gitbook/assets/image13.png) 3. Click **Update settings**.
 
@@ -282,16 +279,12 @@ To set PR Settings on the project level, overriding the PR settings on the organ
 2. Click **Projects**.
 3. Navigate to the relevant project and click the **Settings** cog:  
 
-![Int4.png](../../.gitbook/assets/int4.png)
-4. From the Settings area, click on the integration settings from the left panel menu to apply unique settings for that one project.  
-5. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled.
-6. From the options that appear:
-7. * Snyk creates PRs up to a maximum of 10 open simultaneously - per repo. To limit this number further, select the maximum number of PRs from the dropdown list. For more details, see [Upgrading dependencies with automatic PRs](https://docs.snyk.io/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs).
-   * In the Dependencies to ignore field, enter the exact name of any dependencies that should not be handled as part of the automatic functionality. This field accepts only lower case letters.
+![Int4.png](../../.gitbook/assets/int4.png) 4. From the Settings area, click on the integration settings from the left panel menu to apply unique settings for that one project.  
+5. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled. 6. From the options that appear: 7. \* Snyk creates PRs up to a maximum of 10 open simultaneously - per repo. To limit this number further, select the maximum number of PRs from the dropdown list. For more details, see [Upgrading dependencies with automatic PRs](https://docs.snyk.io/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs).
 
-    
+* In the Dependencies to ignore field, enter the exact name of any dependencies that should not be handled as part of the automatic functionality. This field accepts only lower case letters.
 
 ![general-GitHub\_integration.png](../../.gitbook/assets/general-github_integration.png)
 
-   * Once you click ‘Upgrade dependency settings’ every time Snyk scans this project, it will automatically submit upgrade PRs based on results. If a newer version is released for an existing Snyk upgrade PR or for an existing fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.
+* Once you click ‘Upgrade dependency settings’ every time Snyk scans this project, it will automatically submit upgrade PRs based on results. If a newer version is released for an existing Snyk upgrade PR or for an existing fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.
 

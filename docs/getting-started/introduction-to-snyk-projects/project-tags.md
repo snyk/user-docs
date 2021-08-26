@@ -21,9 +21,7 @@ The Group and Organization admins can perform all actions, while a Collaborator 
 To create a new tag for a project:
 
 1. On the project issues page, click "Add a key/value..."![Screenshot\_2020-09-29\_at\_17.39.02.png](../../.gitbook/assets/screenshot_2020-09-29_at_17.39.02.png)
-
 2. Enter your new key, and then click enter![Screenshot\_2020-09-29\_at\_17.53.20.png](../../.gitbook/assets/screenshot_2020-09-29_at_17.53.20.png)
-
 3. Enter your new value, and then click enter
 
 You have created a new tag. Upon creating a new tag, it will be automatically assigned to the project it was created in. The tag is also usable on any other project within your group.
@@ -44,7 +42,7 @@ If a tag exists in your group, you can apply it to any project.
 
 ![Screenshot\_2020-09-29\_at\_18.14.44.png](../../.gitbook/assets/screenshot_2020-09-29_at_18.14.44.png)
 
-4. After you select the value, the tag will be assigned to your project. To remove a tag from a project, click the "X" icon on the tag 
+1. After you select the value, the tag will be assigned to your project. To remove a tag from a project, click the "X" icon on the tag 
 
 You have successfully assigned and removed tags from your project.
 

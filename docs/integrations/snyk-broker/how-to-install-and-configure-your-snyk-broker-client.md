@@ -15,5 +15,5 @@ To install and configure your client:
 
 ![image3.png](../../.gitbook/assets/image3-3-.png)
 
-5. You can now use Snyk as normal.
+1. You can now use Snyk as normal.
 

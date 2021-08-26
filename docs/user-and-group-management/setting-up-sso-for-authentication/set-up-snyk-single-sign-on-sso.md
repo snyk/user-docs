@@ -120,6 +120,7 @@ When using Azure AD for the connection between your Identity provider and Snyk, 
 | Redirect URIs | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback) |
 | :--- | :--- |
 
+
 ### Azure AD information to provide to Snyk
 
 Obtain the following information from your identity provider and organization. Provide this information to Snyk to establish trust on the service-provider side.

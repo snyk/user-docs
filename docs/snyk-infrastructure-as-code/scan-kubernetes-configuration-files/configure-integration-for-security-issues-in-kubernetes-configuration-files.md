@@ -28,11 +28,11 @@ Integrations are managed per organization.
 
 ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
 
- &gt; **Infrastructure as code** page:
+&gt; **Infrastructure as code** page:
 
 ![Screenshot\_2020-08-18\_at\_17.29.49.png](../../.gitbook/assets/screenshot_2020-08-18_at_17.29.49.png)
 
-2. If needed, review and adjust settings in the **Infrastructure as code** settings:
+1. If needed, review and adjust settings in the **Infrastructure as code** settings:
 
 ![Configure-Policies.png](../../.gitbook/assets/uuid-34af73f5-ffde-39bb-ffa4-364884089b2e-en.png)
 

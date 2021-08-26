@@ -19,7 +19,7 @@ Once the integration is set up you can configure Maven settings by navigating to
 
 ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
 
- &gt; Languages &gt; Java.
+&gt; Languages &gt; Java.
 
 You can choose whether to use Artifactory as a mirror or as an additional repository where your artifacts will reside. These settings will be very similar to what you have in `~/.m2/settings.xml`.
 
@@ -37,7 +37,7 @@ If using Type 'Integration', you will need to choose an integration type and pro
 
 The Repository Name should be set as whatever comes after 'artifactory/' in the internal repository URL.
 
-For example, if the URL is '[http://artifactory.company.io/artifactory/libs-release'\[,\]\(http://artifactory.company.io/artifactory/jcenter](http://artifactory.company.io/artifactory/libs-release'[,]%28http://artifactory.company.io/artifactory/jcenter)',\) Repository Name should be set as 'libs-release'.
+For example, if the URL is '\[[http://artifactory.company.io/artifactory/libs-release'\[,\]\(http://artifactory.company.io/artifactory/jcenter\]\(http://artifactory.company.io/artifactory/libs-release'\[,\]%28http://artifactory.company.io/artifactory/jcenter\)',\](http://artifactory.company.io/artifactory/libs-release'[,]%28http://artifactory.company.io/artifactory/jcenter]%28http://artifactory.company.io/artifactory/libs-release'[,]%28http://artifactory.company.io/artifactory/jcenter%29',\)\) Repository Name should be set as 'libs-release'.
 
 ![](../../.gitbook/assets/uuid-293cfd2b-2cd5-b8a3-0671-bf6d2798a3bc-en.png)
 

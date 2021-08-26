@@ -8,8 +8,6 @@ Enable integration between Docker Hub and Snyk, and start managing your vulnerab
 
 ![mceclip0.png](../../../.gitbook/assets/mceclip0-12-.png)
 
- 
-
 _As the access token, you can either use your DockerHub password or a an access token_ [_created_](https://docs.docker.com/docker-hub/access-tokens/) _in DockerHub. In case 2FA is activated on your account, access token **only** is applicable._
 
 Snyk tests the connection values and the page reloads, now displaying Docker Hub integration information and the Add your Docker Hub images to Snyk button.

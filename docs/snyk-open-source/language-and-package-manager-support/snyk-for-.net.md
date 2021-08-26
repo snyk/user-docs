@@ -11,16 +11,15 @@ Features might not be available, depending on your subscription plan.
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-|
+|  |  |  |  |  |  |  |
 
 ![i\_icon\_nuget.png](../../.gitbook/assets/uuid-b997ca27-61ff-f00b-941c-16bf3aa4a0e0-en.png)
 
- | [NuGet](https://www.nuget.org/) | ✔︎ | ✔︎ | ✔︎ |  |  |
-|
+\| [NuGet](https://www.nuget.org/) \| ✔︎ \| ✔︎ \| ✔︎ \| \| \| \|
 
 ![i\_icon\_paket.png](../../.gitbook/assets/uuid-d8e44fe4-c0ea-e3ea-de3b-1e15e4a6b391-en.png)
 
- | [Paket](https://fsprojects.github.io/Paket/index.html) | ✔︎ |  | ✔︎ |  |  |
+\| [Paket](https://fsprojects.github.io/Paket/index.html) \| ✔︎ \| \| ✔︎ \| \| \|
 
 ### **How it works**
 
@@ -184,6 +183,7 @@ From the Snyk UI, you can configure whether Snyk should scan your entire project
 
 ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
 
- &gt; and click for .NET
-   * Scan build dependencies - _\*\*_If checked, Snyk scans all development dependencies.
+&gt; and click for .NET
+
+* Scan build dependencies - \_\*\*\_If checked, Snyk scans all development dependencies.
 

@@ -43,7 +43,7 @@ This field is case-sensitive and the pattern applies for all repos.
 
 **Next steps**
 
-Once repositories are imported, a confirmation appears in green at the top of the screen. The selected files are indicated with a unique icon, they are named by organization/repo, and you can now also filter to view only those projects, as seen in the example below:  
+Once repositories are imported, a confirmation appears in green at the top of the screen. The selected files are indicated with a unique icon, they are named by organization/repo, and you can now also filter to view only those projects, as seen in the example below:
 
 ![image7.png](../../.gitbook/assets/uuid-141d5609-ab7e-6810-f9ad-94d4413984cd-en.png)
 
@@ -80,13 +80,13 @@ Ensure you have set up your Azure Repos account and your Snyk account.
 
 ![image1.png](../../.gitbook/assets/uuid-759cd7dc-c095-dd7d-22d3-27f842ebd696-en.png)
 
-7. From the **Settings** page in the **Integrations** area, enter the Azure DevOps organization that you want to integrate with \(i.e. [https://dev.azure.com/{org-name}\](https://dev.azure.com/{org-name}\)\) and the personal access token that you just generated.  
-![settings.png](../../.gitbook/assets/settings.png)
+1. From the **Settings** page in the **Integrations** area, enter the Azure DevOps organization that you want to integrate with \(i.e. [https://dev.azure.com/{org-name}\](https://dev.azure.com/{org-name}%29\) and the personal access token that you just generated.  
+   ![settings.png](../../.gitbook/assets/settings.png)
 
    \* Enterprise customers can also provide a custom URL for Azure Repos Server private instance which is publicly reachable.
 
-8. Click **Save**.
-9. Snyk tests the connection values and the page reloads, now displaying Azure Repos integration information. A confirmation message that the details were saved also appears in green at the top of the screen. In addition, if the connection to Azure failed, a notification appears under the Connected to Azure Repos section.
+2. Click **Save**.
+3. Snyk tests the connection values and the page reloads, now displaying Azure Repos integration information. A confirmation message that the details were saved also appears in green at the top of the screen. In addition, if the connection to Azure failed, a notification appears under the Connected to Azure Repos section.
 
 ![Screen\_Shot\_2020-05-19\_at\_17.16.24.png](../../.gitbook/assets/screen_shot_2020-05-19_at_17.16.24.png)
 

@@ -10,7 +10,7 @@ When working with Snyk from within any third-party tool, Snyk first requires aut
 
 ![api token screen; revoke; regenerate; click to show](../../.gitbook/assets/uuid-8d94edf8-b42b-e5b3-ada1-e157d18ff884-en.png)
 
-4. From the third party interface, configure your integration, pasting your Snyk token when prompted.
+1. From the third party interface, configure your integration, pasting your Snyk token when prompted.
 
 {% hint style="info" %}
 **Note**  

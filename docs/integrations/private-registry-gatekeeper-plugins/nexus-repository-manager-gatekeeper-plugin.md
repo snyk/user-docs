@@ -59,8 +59,8 @@ To set up and configure the plugin, start scanning and managing your organizatio
 
 ![image1.png](../../.gitbook/assets/uuid-9745b82a-ed7e-bce0-75dd-0070514f274d-en.png)
 
-4. Shut down the Nexus service instance and then restart it.
-5. Log in to your Nexus instance and double check that the Snyk bundle has been installed successfully.
+1. Shut down the Nexus service instance and then restart it.
+2. Log in to your Nexus instance and double check that the Snyk bundle has been installed successfully.
 
 ### Track vulnerabilities in your team's artifacts
 
@@ -68,11 +68,9 @@ To set up and configure the plugin, start scanning and managing your organizatio
    * Based on the severity thresholds that you configured, the download is blocked.
    * Scan results are displayed for the developer with a link to full details for the error:
 
-    
-
 ![cli\_output.png](../../.gitbook/assets/uuid-a2c354a2-21ca-bdfb-7862-a2ef26eec59e-en.png)
 
-   * Results are stored in the Snyk Security part of the Attributes section from the Nexus interface for the artifact:
+* Results are stored in the Snyk Security part of the Attributes section from the Nexus interface for the artifact:
 
 ![](../../.gitbook/assets/image%20%2833%29.png)
 

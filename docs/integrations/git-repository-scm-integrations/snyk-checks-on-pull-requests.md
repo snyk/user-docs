@@ -6,7 +6,7 @@ By default, Snyk scans every pull request submitted on your monitored repositori
 Administrators and account owners manage settings for Snyk PR tests from our app on both the organization and the project levels, configuring whether the feature is on \(enabled by default\) and under what conditions Snyk should fail your PR checks.
 {% endhint %}
 
-### Viewing check details
+## Viewing check details
 
 If a test fails for any of the lines in your pull request, the check itself appears as failed from the pull request; if all of the tests pass, the check itself appears as successful from the pull request:
 
@@ -22,8 +22,6 @@ From this view, click the links for additional information as follows:
 * Click the Organization link \(2\) to view all projects in this Snyk organization
 * Click the manifest file link \(3\) to view the Project details page with full details for all vulnerabilities affecting this project
 * Click the View test page link \(4\) to view full details regarding this pull request and the issues preventing the check from passing
-
- 
 
 ![TestDetails.jpg](../../.gitbook/assets/uuid-617d6ed9-3571-1913-ca32-f30d2f0b3138-en.jpg)
 

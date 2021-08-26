@@ -111,5 +111,5 @@ From Windows environments, you can use Scoop to install our Snyk CLI tool. The r
 ## See also
 
 * [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-19fc37f2-b686-11ed-b85c-4789e90c8dfc)
-*  [CLI reference](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0)
+* [CLI reference](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0)
 

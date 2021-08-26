@@ -4,7 +4,7 @@ Click on settings
 
 ![cog\_icon.png](https://support.snyk.io/hc/article_attachments/4402908592145/cog_icon.png)
 
- to view Snyk application settings:
+to view Snyk application settings:
 
 ![](../../.gitbook/assets/screenshot_2021-07-19_at_15.52.02.png)
 

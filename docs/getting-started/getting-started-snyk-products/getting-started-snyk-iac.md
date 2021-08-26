@@ -46,8 +46,7 @@ View results for configuration files in imported projects.
 
 ![IaC\_-\_issues\_list.png](../../.gitbook/assets/iac_-_issues_list.png)
 
-  \(Issues are sorted into project types: Helm, Kubernetes and Terraform.\)
-2. Click on a project to see more information and details of the issues in a configuration file:  
+\(Issues are sorted into project types: Helm, Kubernetes and Terraform.\) 2. Click on a project to see more information and details of the issues in a configuration file:
 
 ![IaC\_-\_select\_config\_file.png](../../.gitbook/assets/iac_-_select_config_file.png)
 
@@ -63,12 +62,12 @@ Act on the recommendations produced by Snyk IaC.
 
 ![IaC\_-\_issue\_details.png](../../.gitbook/assets/iac_-_issue_details.png)
 
-2. Click on an issue to see the details for that issue, and specific recommendations from Snyk IaC. For example:
+1. Click on an issue to see the details for that issue, and specific recommendations from Snyk IaC. For example:
 
 ![IaC\_-\_corrected.png](../../.gitbook/assets/iac_-_corrected.png)
 
-3. Edit the configuration file to fix the issue identified, based on the recommendations, then commit the change.
-4. Snyk automatically rescans the changed file, and you can see the change reflected in the issue display.
+1. Edit the configuration file to fix the issue identified, based on the recommendations, then commit the change.
+2. Snyk automatically rescans the changed file, and you can see the change reflected in the issue display.
 
 ## For more information
 

@@ -11,7 +11,7 @@ Organization administrators can [access and set license policy rules](https://su
 
 ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
 
- **&gt;** Licenses
+**&gt;** Licenses
 
 **For Enterprise customers:**
 

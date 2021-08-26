@@ -6,8 +6,7 @@
 
 ![mceclip0.png](../../.gitbook/assets/mceclip0-27-.png)
 
-from the Policy Manager, and a modal will appear where you can create your policy 
-2. Set a policy name and a description to help you quickly identify a policy
+from the Policy Manager, and a modal will appear where you can create your policy 2. Set a policy name and a description to help you quickly identify a policy
 
 **NOTE**
 

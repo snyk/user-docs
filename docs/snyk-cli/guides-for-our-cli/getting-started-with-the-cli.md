@@ -55,5 +55,5 @@ Snyk uses monitoring to regularly test your code and notify you when new vulnera
 
 Run `snyk help` or see [Our full CLI reference](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0).
 
-We also have [a handy cheat sheet](https://res.cloudinary.com/snyk/image/upload/v1551195097/Snyk_CLI_Cheat_Sheet.pdf) available and a [video tutorial](https://www.youtube.com/watch?v=xp_LtchEkT8).  
+We also have [a handy cheat sheet](https://res.cloudinary.com/snyk/image/upload/v1551195097/Snyk_CLI_Cheat_Sheet.pdf) available and a [video tutorial](https://www.youtube.com/watch?v=xp_LtchEkT8).
 

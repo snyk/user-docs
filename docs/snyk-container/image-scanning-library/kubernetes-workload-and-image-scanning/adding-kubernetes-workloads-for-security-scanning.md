@@ -16,9 +16,7 @@ In addition, the integration must be configured between Snyk and your Kubernetes
 
 ![cog\_icon.png](../../../.gitbook/assets/cog_icon.png)
 
- &gt; **Integrations**.
-3. In the Kubernetes section, click **Edit Settings**.
-4. Scroll to the **Integration ID** entry and check this is set.
+&gt; **Integrations**. 3. In the Kubernetes section, click **Edit Settings**. 4. Scroll to the **Integration ID** entry and check this is set.
 
 ## Automatically add, update and remove workloads
 
@@ -47,13 +45,11 @@ Annotate any of the following workload types:
 
 ![cog\_icon.png](../../../.gitbook/assets/cog_icon.png)
 
- &gt; **General**.
-3. Copy the **Organization ID** value.
-4. Add an annotation to the workload with the key `orgs.k8s.snyk.io/v1` , entering the Organization ID as the value, in a comma-separated list.
+&gt; **General**. 3. Copy the **Organization ID** value. 4. Add an annotation to the workload with the key `orgs.k8s.snyk.io/v1` , entering the Organization ID as the value, in a comma-separated list.
 
-   You can also annotate a single workload to be added to multiple organizations.
+You can also annotate a single workload to be added to multiple organizations.
 
-5. Now, the Snyk controller automatically picks up on the changes to your workload and ensures that the workload is automatically imported to Snyk as a Snyk project.
+1. Now, the Snyk controller automatically picks up on the changes to your workload and ensures that the workload is automatically imported to Snyk as a Snyk project.
 
    Example 1. Example of a Deployment YAML file annotated to be automatically imported into an organization
 
@@ -73,7 +69,7 @@ Annotate any of the following workload types:
 
    To annotate for multiple organizations, use a comma-separated list.
 
-6. Once imported, the project remains in your Snyk organization even if you remove the annotation. To remove the project from Snyk, you should delete the annotation and delete it from the Snyk UI or [with the API](https://snyk.docs.apiary.io/#reference/projects/individual-project/delete-a-project).
+2. Once imported, the project remains in your Snyk organization even if you remove the annotation. To remove the project from Snyk, you should delete the annotation and delete it from the Snyk UI or [with the API](https://snyk.docs.apiary.io/#reference/projects/individual-project/delete-a-project).
 
 ## Manually add workloads
 
@@ -81,30 +77,28 @@ Annotate any of the following workload types:
 
 ![AddWorkspace.png](../../../.gitbook/assets/uuid-619a153d-6c77-f7dc-854c-ff77b3173191-en.png)
 
-   The import screen loads, similar to the one below, displaying all namespaces from the Kubernetes environment on the left and relevant namespace workloads on the right:
+The import screen loads, similar to the one below, displaying all namespaces from the Kubernetes environment on the left and relevant namespace workloads on the right:
 
 ![ChooseNamespace.png](../../../.gitbook/assets/uuid-3a8568e0-b5a4-34af-d612-83466b206882-en.png)
 
-  
-  
-   We purposely ignore scanning certain namespaces which we believe are internal to Kubernetes \(any namespace starting with _**kube-\***_\), therefore you won't see those namespaces in the list, as well as the workloads they contain.  
-   The full list of ignored namespaces can be found [here](https://github.com/snyk/kubernetes-monitor/blob/master/src/supervisor/watchers/internal-namespaces.ts). This can be configured by adding the following to helm when setting up the snyk-monitor:
+We purposely ignore scanning certain namespaces which we believe are internal to Kubernetes \(any namespace starting with _**kube-\***_\), therefore you won't see those namespaces in the list, as well as the workloads they contain.  
+The full list of ignored namespaces can be found [here](https://github.com/snyk/kubernetes-monitor/blob/master/src/supervisor/watchers/internal-namespaces.ts). This can be configured by adding the following to helm when setting up the snyk-monitor:
 
-   ```text
+```text
       --set excludedNamespaces={kube-node-lease,local-path-storage,some_namespace}
-   ```
+```
 
-2. Select one or multiple namespaces from the left side and for each namespace, select one or multiple workloads to import from the right side.
+1. Select one or multiple namespaces from the left side and for each namespace, select one or multiple workloads to import from the right side.
 
 ![Select\_namespace.gif](../../../.gitbook/assets/uuid-27db0a60-f18d-5ab0-9215-5a81e467f013-en.gif)
 
-3. When ready, click **Add selected workloads** from the top right of the screen. When the import completes, the Projects page loads and all workloads that you’ve imported appear, with a unique Kubernetes icon:
+1. When ready, click **Add selected workloads** from the top right of the screen. When the import completes, the Projects page loads and all workloads that you’ve imported appear, with a unique Kubernetes icon:
 
 ![image4.png](../../../.gitbook/assets/uuid-24e0b69a-01c3-9434-9dac-9b44864bd269-en.png)
 
-   Each item is named according to its Kubernetes metadata as follows:**//**.
+Each item is named according to its Kubernetes metadata as follows:**//**.
 
-   You can filter for Kubernetes projects only:
+You can filter for Kubernetes projects only:
 
 ![](../../../.gitbook/assets/image%20%285%29.png)
 

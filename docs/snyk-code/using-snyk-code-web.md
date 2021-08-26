@@ -14,7 +14,7 @@ See [Getting started with Snyk Code](https://docs.snyk.io/getting-started/gettin
 
 ![select-project.png](../.gitbook/assets/select-project.png)
 
-2. Snyk Code displays information and vulnerability cards for that project:
+1. Snyk Code displays information and vulnerability cards for that project:
 
 ![SnykCofe\_Priority\_Score.png](../.gitbook/assets/snykcofe_priority_score.png)
 
@@ -91,13 +91,11 @@ Full details include all the information in the vulnerability card, plus:
 
 ![Open-code1.png](https://support.snyk.io/hc/article_attachments/360015998577/Open-code1.png)
 
- 
-2. The file opens, showing you exactly where to fix the vulnerability \(in this example, by adding the sanitation required to the input\). 
+1. The file opens, showing you exactly where to fix the vulnerability \(in this example, by adding the sanitation required to the input\). 
 
 ![Open-code2.png](https://support.snyk.io/hc/article_attachments/360015999237/Open-code2.png)
 
- 
-3. You can now make the fix as required, to address the vulnerability in your code.
+1. You can now make the fix as required, to address the vulnerability in your code.
 
 ## Example: Cross-site Scripting \(XSS\)
 
