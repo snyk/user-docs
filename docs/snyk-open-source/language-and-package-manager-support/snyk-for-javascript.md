@@ -9,21 +9,66 @@ You can use Snyk to scan your JavaScript projects.
 Features might not be available, depending on your subscription plan.
 {% endhint %}
 
-|  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-|  |  |  |  |  |  |  |
-
-![i\_icon\_npm.png](../../.gitbook/assets/uuid-aa98c079-4d3e-5e58-f450-08985b5d4b8b-en.png)
-
-\| npm \| ✔︎ \| ✔︎ \| ✔︎ \| ✔︎ \| ✔︎ \| \|
-
-![i\_icon\_yarn.png](../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png)
-
-\| Yarn \| ✔︎ \| ✔︎ \| ✔︎ \| ✔︎ \| ✔︎ \| \|
-
-![i\_icon\_yarn.png](../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png)
-
-\| Yarn Workspaces \| ✔︎ \| ✔︎ \| ✔︎ \| ✔︎ \(advice\) \| ✔︎ \|
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"></th>
+      <th style="text-align:left">Package managers/Features</th>
+      <th style="text-align:left">CLI support</th>
+      <th style="text-align:left">Git support</th>
+      <th style="text-align:left">License scanning</th>
+      <th style="text-align:left">Remediation</th>
+      <th style="text-align:left">Runtime monitoring</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p></p>
+        <p>
+          <img src="../../.gitbook/assets/uuid-aa98c079-4d3e-5e58-f450-08985b5d4b8b-en.png"
+          alt="i_icon_npm.png" />
+        </p>
+      </td>
+      <td style="text-align:left">npm</td>
+      <td style="text-align:left">&#x2714;&#xFE0E;</td>
+      <td style="text-align:left">&#x2714;&#xFE0E;</td>
+      <td style="text-align:left">&#x2714;&#xFE0E;</td>
+      <td style="text-align:left">&#x2714;</td>
+      <td style="text-align:left">&#x2714;&#xFE0E;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p></p>
+        <p>
+          <img src="../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png"
+          alt="i_icon_yarn.png" />
+        </p>
+      </td>
+      <td style="text-align:left">Yarn</td>
+      <td style="text-align:left">&#x2714;&#xFE0E;</td>
+      <td style="text-align:left">&#x2714;&#xFE0E;</td>
+      <td style="text-align:left">&#x2714;&#xFE0E;</td>
+      <td style="text-align:left">&#x2714;&#xFE0E;</td>
+      <td style="text-align:left">&#x2714;&#xFE0E;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p></p>
+        <p>
+          <img src="../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png"
+          alt="i_icon_yarn.png" />
+        </p>
+      </td>
+      <td style="text-align:left">Yarn Workspaces</td>
+      <td style="text-align:left">&#x2714;&#xFE0E;</td>
+      <td style="text-align:left">&#x2714;&#xFE0E;</td>
+      <td style="text-align:left">&#x2714;&#xFE0E;</td>
+      <td style="text-align:left">&#x2714;&#xFE0E;</td>
+      <td style="text-align:left">&#x2714;&#xFE0E;</td>
+    </tr>
+  </tbody>
+</table>
 
 ### How it works
 
