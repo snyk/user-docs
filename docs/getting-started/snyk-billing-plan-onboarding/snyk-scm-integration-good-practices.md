@@ -1,6 +1,6 @@
 # Snyk SCM integration: good practices
 
-## You can integrate Snyk with your Source Control Manager \(SCM\) to quickly and easily gain visibility across all your projects.
+You can integrate Snyk with your Source Control Manager \(SCM\) to quickly and easily gain visibility across all your projects.
 
 [Snyk SCM integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) allow you to:
 
@@ -121,7 +121,9 @@ Below is an example of how you would set up your an integration for **Github.com
 
 1. Go to the **Integrations** tab, and click on “GitHub”.
 
-![Int2.png](../../.gitbook/assets/int2.png) 2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories:
+![Int2.png](../../.gitbook/assets/int2.png)
+
+  2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories:
 
 ![select-github.png](../../.gitbook/assets/select-github.png)
 
@@ -146,9 +148,7 @@ For example, in GitHub, the accounts connected to Snyk need the following access
 
 By default, Snyk emails every Org User when a new issue or remediation in a project’s dependencies is found, and provides you with a weekly update of your security status across your organization. If you plan to import many projects to an Org, consider disabling all the notifications for that Org, to avoid too many email notifications sent to users.
 
-To customize the emails your Org users receive, navigate to the Org’s settings
-
-![](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MdwVZ6HOZriajCf5nXH%2F-MhJCQmI7SUlY6let0XH%2F-MhJNWnj1-nYQpgnA8YS%2Fcog_icon.png?alt=media&token=7dca2b4d-1b18-4205-a325-213e33a31530) &gt; **Notifications**. Any changes you make here here affect all of your organization’s members, although Org users can override these default settings in their user-level account settings.
+To customize the emails your Org users receive, navigate to the Org’s settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Notifications**. Any changes you make here here affect all of your organization’s members, although Org users can override these default settings in their user-level account settings.
 
 To disable notifications for all the users in an Org ahead of your import, uncheck the appropriate notification boxes:
 
@@ -160,7 +160,9 @@ To disable notifications for all the users in an Org ahead of your import, unche
 1. Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.
 2. Snyk detects the manifest files \(projects\), tests them, then displays the results. Imported projects appear underneath the repository name.
 
-![Int3.png](../../.gitbook/assets/int3.png) \(Projects are continuously checked for vulnerabilities after being imported\) 5. To see if a project was imported, navigate to the projects import page. Imported projects have a ✔ icon by the repo name.
+![Int3.png](../../.gitbook/assets/int3.png)
+
+\(Projects are continuously checked for vulnerabilities after being imported\) 5. To see if a project was imported, navigate to the projects import page. Imported projects have a ✔ icon by the repo name.
 
 ![aws-sdk.png](../../.gitbook/assets/aws-sdk.png)
 
@@ -189,11 +191,11 @@ Administrators can manage settings for Snyk PR tests at the organization level t
 
 To configure the PR test settings for your organization:
 
-1. Navigate to **Org** &gt; settings
+1. Navigate to **Org** &gt; settings ![](../../.gitbook/assets/cog_icon.png) **&gt;** Integrations &gt; Edit Settings. 2. Set the the toggle to **Enabled** and set the **Fail conditions** as needed:
 
-![](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MdwVZ6HOZriajCf5nXH%2F-MhJCQmI7SUlY6let0XH%2F-MhJNWnj1-nYQpgnA8YS%2Fcog_icon.png?alt=media&token=7dca2b4d-1b18-4205-a325-213e33a31530) **&gt;** Integrations &gt; Edit Settings. 2. Set the the toggle to **Enabled** and set the **Fail conditions** as needed:
+![image13.png](../../.gitbook/assets/image13.png)
 
-![image13.png](../../.gitbook/assets/image13.png) 3. Click **Update settings**.
+3. Click **Update settings**.
 
 To configure the pull request test settings for a specific project, navigate to **Projects Page**&gt; **Projects Settings &gt; Edit Settings** and set conditions similarly:
 
@@ -228,9 +230,7 @@ Here is an example of a fix pull request opened by Snyk:
 
 ![](../../.gitbook/assets/mceclip0%20%281%29.png)
 
-To configure the PR test settings for specific projects, navigate to **Org** &gt; settings
-
-![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations &gt; Edit Settings**
+To configure the PR test settings for specific projects, navigate to **Org** &gt; settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Integrations &gt; Edit Settings**
 
 ![](../../.gitbook/assets/automatic.png)
 
@@ -279,8 +279,15 @@ To set PR Settings on the project level, overriding the PR settings on the organ
 2. Click **Projects**.
 3. Navigate to the relevant project and click the **Settings** cog:  
 
-![Int4.png](../../.gitbook/assets/int4.png) 4. From the Settings area, click on the integration settings from the left panel menu to apply unique settings for that one project.  
-5. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled. 6. From the options that appear: 7. \* Snyk creates PRs up to a maximum of 10 open simultaneously - per repo. To limit this number further, select the maximum number of PRs from the dropdown list. For more details, see [Upgrading dependencies with automatic PRs](https://docs.snyk.io/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs).
+![Int4.png](../../.gitbook/assets/int4.png)
+
+  4. From the Settings area, click on the integration settings from the left panel menu to apply unique settings for that one project.
+
+  5. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled. 
+
+  6. From the options that appear: 
+
+  7. \* Snyk creates PRs up to a maximum of 10 open simultaneously - per repo. To limit this number further, select the maximum number of PRs from the dropdown list. For more details, see [Upgrading dependencies with automatic PRs](https://docs.snyk.io/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs).
 
 * In the Dependencies to ignore field, enter the exact name of any dependencies that should not be handled as part of the automatic functionality. This field accepts only lower case letters.
 
