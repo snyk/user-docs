@@ -34,11 +34,7 @@ Snyk tests and monitors your Artifactory container images by evaluating its tags
 * When the import ends, notification of success, or failure, appears at the top of the page. Click Refresh to view the Projects page with the newly imported images. Images are grouped by repository and are each linked individually to a detailed Projects page.
 * You can now connect your Git repo to this project in order to use your Dockerfile for enriched remediation advice. For more info, see [Adding your Dockerfile and test your base image](https://support.snyk.io/hc/articles/360003916218#UUID-9ab347a6-8af0-ef6c-5ebd-cec21fbfab29).
 
-Images are indicated with a unique icon
-
-![image4.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007147198/uuid-d083d5fe-780a-cf2f-18db-42720db8c5a1-en.png)
-
-, and you can also filter to view only the Artifactory projects:
+Images are indicated with a unique icon ![](../../../.gitbook/assets/uuid-d083d5fe-780a-cf2f-18db-42720db8c5a1-en.png) , and you can also filter to view only the Artifactory projects:
 
 ![](../../../.gitbook/assets/uuid-5c95894c-97d8-a6a9-0969-7c5fee541211-en.png)
 

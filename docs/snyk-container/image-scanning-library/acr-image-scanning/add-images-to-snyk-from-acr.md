@@ -9,7 +9,7 @@ Snyk tests and monitors ACR container images by evaluating root folders and cust
 * You must have an account with Snyk and be onboarded to your organization by an administrator.
 * The integration must be configured between Snyk and your ACR repository.
 
-## Steps
+### Steps
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
 2. Go to **Projects**, and click **Add projects**. The list of integrations already configured on your account opens, similar to the following:
