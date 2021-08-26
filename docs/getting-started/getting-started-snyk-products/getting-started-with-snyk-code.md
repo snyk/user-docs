@@ -53,7 +53,7 @@ Add projects to test with Snyk, by choosing repositories for Snyk to test and mo
 1. Select **Projects** from [snyk.io](http://snyk.io/).
 2. Select the tool to add the project from \(for example GitHub\):
 
-![](../../.gitbook/assets/open-source-add-projects%20%283%29%20%285%29%20%285%29.png)
+![](../../.gitbook/assets/open-source-add-projects%20%283%29%20%285%29%20%285%29%20%285%29%20%283%29.png)
 
 3. In **Personal and Organization repositories**, select the repositories to use:
 

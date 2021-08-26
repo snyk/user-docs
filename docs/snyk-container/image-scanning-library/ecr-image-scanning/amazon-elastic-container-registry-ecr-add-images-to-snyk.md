@@ -13,7 +13,7 @@ Snyk tests and monitors your Amazon ECR container images by evaluating its tags 
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
 
-![AddProjectMenu.gif](../../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%284%29%20%281%29.gif)
+![AddProjectMenu.gif](../../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%2817%29.gif)
 
 1. Go to **Projects**, and click **Add projects**. The list of integrations already configured on your account opens, similar to the following:
 

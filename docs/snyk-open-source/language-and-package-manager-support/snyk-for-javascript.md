@@ -269,7 +269,7 @@ From the Snyk UI, use these parameters to customize your language preferences fo
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
 
-![AddProjectMenu.gif](../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29.gif)
+![AddProjectMenu.gif](../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%281%29.gif)
 
 1. Click on settings
 

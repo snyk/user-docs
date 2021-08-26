@@ -6,11 +6,7 @@ Users with Admin permissions can use this option at the org and group level.
 
 To enable a feature using Snyk Preview:
 
-1. Click on settings
-
-![](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MdwVZ6HOZriajCf5nXH%2F-MhJCQmI7SUlY6let0XH%2F-MhJNWnj1-nYQpgnA8YS%2Fcog_icon.png?alt=media&token=7dca2b4d-1b18-4205-a325-213e33a31530)
-
-&gt; **Snyk Preview**:
+1. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Snyk Preview**:
 
 ![SnykPreview.png](../../.gitbook/assets/snykpreview.png)
 

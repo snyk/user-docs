@@ -42,7 +42,7 @@ ACR files are indicated with a unique icon
 
 . You can now also filter to view only those projects:
 
-![](../../../.gitbook/assets/image%20%284%29%20%281%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%283%29%20%283%29.png)
 
 ACR integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages, also in our docs.
 
