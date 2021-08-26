@@ -8,9 +8,9 @@ The Snyk plugin for Jenkins is [maintained and documented](https://plugins.jenki
 Note: steps supported solely by Jenkins are in high-level only. See [Jenkins documentation](https://jenkins.io/doc/) for additional assistance.
 {% endhint %}
 
-#### How to install the Snyk plugin
+### How to install the Snyk plugin
 
-1. Navigate to the Manage Jenkins=&gt;Manage Plugins area of Jenkins to install the Snyk Security plugin for Jenkins. See the [Jenkins documentation](https://jenkins.io/doc/) for additional information.
+1. Navigate to the Manage Jenkins =&gt; Manage Plugins area of Jenkins to install the Snyk Security plugin for Jenkins. See the [Jenkins documentation](https://jenkins.io/doc/) for additional information.
 
    ![image1.png](../../.gitbook/assets/uuid-a1504227-4c48-ab40-d363-ab5dc74b1c71-en%20%281%29.png)
 
