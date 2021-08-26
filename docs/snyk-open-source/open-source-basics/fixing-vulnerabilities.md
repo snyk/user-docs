@@ -13,7 +13,7 @@ For projects imported via an SCM \(Source Code Manager\), Snyk offers the follow
 
 * [Fix pull requests for new vulnerabilities](https://support.snyk.io/hc/en-us/articles/360017186498-Fix-PRs-for-new-vulnerabilities)
 * [Fix pull requests to clear the backlog of vulnerabilities in priority order](https://support.snyk.io/hc/en-us/articles/360017186958-Fix-PRs-to-clear-the-backlog-of-vulnerabilities-in-priority-order)
-* [Dependency upgrade pull requests](https://support.snyk.io/hc/en-us/articles/360006581898-Upgrading-dependencies-with-automatic-PRs)
+* [Dependency upgrade pull requests](https://docs.snyk.io/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs)
 
 ## Manual pull / merge requests for a project code
 

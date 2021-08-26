@@ -7,7 +7,7 @@ Use Snyk Code with the standard Snyk web interface to find and fix vulnerabiliti
 ## View project vulnerabilities
 
 {% hint style="info" %}
-See [Getting started with Snyk Code](https://support.snyk.io/hc/en-us/articles/360016765157-Getting-started-with-Snyk-Code) for details of how to import and scan projects.
+See [Getting started with Snyk Code](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-with-snyk-code) for details of how to import and scan projects.
 {% endhint %}
 
 1. In your **Projects** area, select the project to open:  ![select-project.png](../.gitbook/assets/select-project.png)

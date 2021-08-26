@@ -51,12 +51,12 @@ The default approved list limits requests as follows:
 
 Snyk Broker currently integrates with these [Git Repository](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) systems:
 
-* [GitHub](https://support.snyk.io/hc/en-us/articles/360004032117-GitHub-integration) and [GitHub Enterprise](https://support.snyk.io/hc/en-us/articles/360015951318-GitHub-Enterprise-Server-Integration)
-* [GitLab](https://support.snyk.io/hc/en-us/articles/360004002238-GitLab-integration)
+* [GitHub](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration) and [GitHub Enterprise](https://support.snyk.io/hc/en-us/articles/360015951318-GitHub-Enterprise-Server-Integration)
+* [GitLab](https://docs.snyk.io/integrations/git-repository-scm-integrations/gitlab-integration)
 * [Bitbucket Server](https://support.snyk.io/hc/en-us/articles/360004002218-Bitbucket-Server-integration) and Bitbucket Data Center
-* [Azure Repos](https://support.snyk.io/hc/en-us/articles/360004002198-Azure-Repos-integration)
+* [Azure Repos](https://docs.snyk.io/integrations/git-repository-scm-integrations/azure-repos-integration)
 
-In addition, Snyk Broker integrates with [Jira Server](https://support.snyk.io/hc/en-us/articles/360004002458-Jira), Jira Data Center and [Artifactory](https://support.snyk.io/hc/en-us/articles/360013805638-Artifactory-Registry-Setup).
+In addition, Snyk Broker integrates with [Jira Server](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira), Jira Data Center and [Artifactory](https://docs.snyk.io/integrations/private-registry-integrations/artifactory-registry-setup).
 
 ## **Supported manifest files**
 

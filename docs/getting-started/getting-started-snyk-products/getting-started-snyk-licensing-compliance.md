@@ -9,7 +9,7 @@ Get started with Snyk license compliance management, to check compliance for the
 
 {% hint style="info" %}
 This process describes using the Snyk UI and a [supported source code management](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) system.  
-You can also use an [IDE tool](https://support.snyk.io/hc/en-us/sections/360001138118-IDE-tools) or a [CI/CD integration](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations), or use the [Snyk CLI tool](https://support.snyk.io/hc/en-us/articles/360003812458-Getting-started-with-the-CLI) to get started using the command line.
+You can also use an [IDE tool](https://docs.snyk.io/integrations/ide-tools) or a [CI/CD integration](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations), or use the [Snyk CLI tool](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli) to get started using the command line.
 {% endhint %}
 
 ### **Prerequisites**
@@ -17,7 +17,7 @@ You can also use an [IDE tool](https://support.snyk.io/hc/en-us/sections/3600011
 Ensure you have:
 
 1. A Snyk [paid plan](https://snyk.io/plans/).
-2. Integrated and installed your projects, as described for [Snyk Open Source](https://support.snyk.io/hc/en-us/articles/360014875297-Getting-started-with-Snyk-Open-Source).
+2. Integrated and installed your projects, as described for [Snyk Open Source](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-snyk-open-source).
 
 ## **Stage 1: Define policies**
 

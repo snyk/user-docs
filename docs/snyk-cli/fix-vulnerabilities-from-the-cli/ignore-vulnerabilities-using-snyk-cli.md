@@ -1,10 +1,10 @@
 # Ignore vulnerabilities using Snyk CLI
 
 {% hint style="info" %}
-For [Snyk Open Source, ](https://support.snyk.io/hc/en-us/categories/360003049458-Snyk-Open-Source)these commands work by default.  
-For [Snyk Container](https://support.snyk.io/hc/en-us/categories/360000583498-Snyk-Container), these commands also work, but after registering an ignore, when you call **snyk test** or **snyk monitor**, you must use the **--policy-file=** argument: for example: **snyk container test node --policy-file=.snyk**  
-For [Snyk Infrastructure as Code](https://support.snyk.io/hc/en-us/categories/360001342678-Infrastructure-as-code), see [IaC ignores using the snyk policy file](https://support.snyk.io/hc/en-us/articles/4405381463313-IaC-ignores-using-the-snyk-policy-file).  
-For  [Snyk Code](https://support.snyk.io/hc/en-us/categories/360003257537-Snyk-Code), these commands are not yet implemented.
+For [Snyk Open Source, ](https://docs.snyk.io/snyk-open-source)these commands work by default.  
+For [Snyk Container](https://docs.snyk.io/snyk-container), these commands also work, but after registering an ignore, when you call **snyk test** or **snyk monitor**, you must use the **--policy-file=** argument: for example: **snyk container test node --policy-file=.snyk**  
+For [Snyk Infrastructure as Code](https://support.snyk.io/hc/en-us/categories/360001342678-Infrastructure-as-code), see [IaC ignores using the snyk policy file](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file).  
+For  [Snyk Code](https://docs.snyk.io/snyk-code), these commands are not yet implemented.
 {% endhint %}
 
 Sometimes, Snyk may alert you to a vulnerability that has no update or Snyk patch available, or that you do not believe to be currently exploitable in your application. In this case, you may want to tell Snyk to ignore the vulnerability for a certain period of time.

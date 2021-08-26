@@ -10,7 +10,7 @@ Header section information:
 
 ![](../../.gitbook/assets/issue-card-header.png)
 
-* [Severity level](https://support.snyk.io/hc/en-us/articles/4403987394961-Severity-levels): for example, **H** \(High\)
+* [Severity level](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/severity-levels): for example, **H** \(High\)
 * **Issue name**: for example, **Open**.
 * **Score**: [Priority score](https://docs.snyk.io/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score): 0 - 1,000.
 * **Type**: VULNERABILITY or LICENSE ISSUE.

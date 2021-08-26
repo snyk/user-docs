@@ -32,11 +32,11 @@ Snyk’s extensibility and API enable developers to tune Snyk’s security autom
 
 ## Get started with Snyk
 
-To get started with Snyk products now, see our [Getting started guides](https://support.snyk.io/hc/en-us/categories/360000449098-Getting-started):
+To get started with Snyk products now, see our [Getting started guides](https://docs.snyk.io/getting-started):
 
-* [Get started with Snyk Open Source](https://support.snyk.io/hc/en-us/articles/360014875297-Getting-started-with-Snyk-Open-Source). 
-* [Get started with Snyk License Compliance](https://support.snyk.io/hc/en-us/articles/360015235618-Getting-Started-with-Snyk-License-Compliance-Management).
-* [Get started with Snyk Code](https://support.snyk.io/hc/en-us/articles/360016765157-Getting-started-with-Snyk-Code).
-* [Get started with Snyk Container](https://support.snyk.io/hc/en-us/articles/360014877957-Getting-started-with-Snyk-Container).
+* [Get started with Snyk Open Source](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-snyk-open-source). 
+* [Get started with Snyk License Compliance](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-snyk-licensing-compliance).
+* [Get started with Snyk Code](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-with-snyk-code).
+* [Get started with Snyk Container](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-snyk-container).
 * [Get started with Snyk IaC](https://support.snyk.io/hc/en-us/articles/360014938398-Getting-started-with-Snyk-Infrastructure-as-Code-IaC-).
 * 

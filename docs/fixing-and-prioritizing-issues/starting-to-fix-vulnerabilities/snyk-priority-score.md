@@ -20,7 +20,7 @@ Snyk continually refines our prioritization algorithm to include new factors, an
 
 Currently, these factors include:
 
-* [**Severity levels**](https://support.snyk.io/hc/en-us/articles/4403987394961-Severity-levels): calculated using CVSS scores for that issue.
+* [**Severity levels**](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/severity-levels): calculated using CVSS scores for that issue.
 * [**Exploit Maturity**](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/): determined by Snyk’s industry-leading security team using manual and automated methods to track which vulnerabilities are exploitable, and to what extent.
 * [**Reachability**](https://snyk.io/blog/optimizing-prioritization-with-deep-application-level-context/): by looking at the code paths called within a project, Snyk identifies which vulnerabilities are reachable from the code.
 * [**Fixability**](https://support.snyk.io/hc/en-us/articles/4405034808209) \(availability of a fix\): without a safer version to upgrade to, or a Snyk patch available, developers must either fix the code themselves or use an alternative package. So vulnerabilities with fixes are given higher priorities.

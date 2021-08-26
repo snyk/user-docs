@@ -4,7 +4,7 @@ Get started with Snyk Open Source to inspect, find and fix vulnerabilities in yo
 
 {% hint style="info" %}
 This process describes using the Snyk.io UI and a source code management system.  
-You can also use an [IDE tool](https://support.snyk.io/hc/en-us/sections/360001138118-IDE-tools) or a [CI/CD integration](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations). See [Integrations](https://docs.snyk.io/integrations) for more details.
+You can also use an [IDE tool](https://docs.snyk.io/integrations/ide-tools) or a [CI/CD integration](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations). See [Integrations](https://docs.snyk.io/integrations) for more details.
 {% endhint %}
 
 ### **Using the CLI tool**
@@ -22,7 +22,7 @@ See [Getting started with the CLI](https://docs.snyk.io/snyk-cli/guides-for-our-
 Ensure you have:
 
 1. A code project using open source packages, on a [supported source code management system](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) \(such as GitHub\), with a supported [language & package manager](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support) \(such as Java\).
-2. A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](https://support.snyk.io/hc/en-us/articles/360017098237-Create-a-Snyk-account) for details\).
+2. A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](https://docs.snyk.io/getting-started/getting-started-snyk-products) for details\).
 
 ## Stage 1: Add source control integration
 

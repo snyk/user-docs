@@ -249,7 +249,7 @@ A method to provide pay-as-you-use backend computing services, allowing applicat
 
 ### Severity
 
-A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](https://support.snyk.io/hc/en-us/articles/4403987394961-Severity-levels).
+A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/severity-levels).
 
 ### Snapshot
 
@@ -320,7 +320,7 @@ A fix type: a problem can be fixed by upgrading a version of a package, or by ap
 
 ### Vulnerability
 
-A security vulnerability, identified by Snyk. See [Remediate your vulnerabilities](https://support.snyk.io/hc/en-us/articles/360006113798-Remediate-your-vulnerabilities).  
+A security vulnerability, identified by Snyk. See [Remediate your vulnerabilities](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities).  
 
 
 ## W

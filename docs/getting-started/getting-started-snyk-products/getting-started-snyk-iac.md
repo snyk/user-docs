@@ -10,14 +10,14 @@ This article describes a process using the Snyk.io UI. For details of using IaC 
 
 Ensure you have:
 
-1. A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](https://support.snyk.io/hc/en-us/articles/360017098237-Create-a-Snyk-account) for details\).
+1. A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](https://docs.snyk.io/getting-started/getting-started-snyk-products) for details\).
 2. An existing Kubernetes or Terraform environment to work in.
 3. Integrated your Git repository as for other Snyk products - see [Git repository \(SCM integrations\)](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) for more details.
 
 For more details, see:
 
-* [Configure your integration to find security issues in your Kubernetes configuration files](https://support.snyk.io/hc/en-us/articles/360006402818-Configure-your-integration-to-find-security-issues-in-your-Kubernetes-configuration-files)
-* [Configure your integration to find security issues in your Terraform files](https://support.snyk.io/hc/en-us/articles/360011018938-Configure-your-integration-to-find-security-issues-in-your-Terraform-files).
+* [Configure your integration to find security issues in your Kubernetes configuration files](https://docs.snyk.io/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/configure-integration-for-security-issues-in-kubernetes-configuration-files)
+* [Configure your integration to find security issues in your Terraform files](https://docs.snyk.io/snyk-infrastructure-as-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess).
 
 ## Stage 1: Import projects
 

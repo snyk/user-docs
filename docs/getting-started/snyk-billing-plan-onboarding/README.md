@@ -35,7 +35,7 @@ The earliest chance you have to catch vulnerabilities is in the IDE, when the co
 
 Snyk supports many of the popular IDEs, with even more support coming soon.
 
-See [IDE tools](https://support.snyk.io/hc/en-us/sections/360001138118-IDE-tools) for more details.
+See [IDE tools](https://docs.snyk.io/integrations/ide-tools) for more details.
 
 At the next stage is code storage, usually some kind of SCM \(Source Code Management\) system. Snyk supports many popular SCMs including GitHub, GitLab, Bitbucket, and Azure Repos.
 
