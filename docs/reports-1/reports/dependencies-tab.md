@@ -115,11 +115,12 @@ The following table describes the different parts of the Dependencies area as di
           <img src="../../.gitbook/assets/mceclip3-3-.png" alt="mceclip3.png" />
         </p>
         <p>
-          <img src="../../.gitbook/assets/mceclip4 (2) (1) (1) (4) (1).png" alt="mceclip4.png"
-          />
+          <img src="../../.gitbook/assets/mceclip4 (2) (1) (1) (4) (5) (1).png"
+          alt="mceclip4.png" />
         </p>
         <p>
-          <img src="../../.gitbook/assets/mceclip6 (4).png" alt="mceclip6.png" />
+          <img src="../../.gitbook/assets/mceclip6 (4) (5).png" alt="mceclip6.png"
+          />
         </p>
       </td>
       <td style="text-align:left">The icon of the associated severity (critical/high/medium/low) for this

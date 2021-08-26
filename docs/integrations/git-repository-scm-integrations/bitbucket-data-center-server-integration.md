@@ -13,7 +13,7 @@ Snyk's Bitbucket Data Center / Server integration allows you to continuously per
 1. To give Snyk access to your Bitbucket DC/Server account, set up up a dedicated service account in Bitbucket DC/Server, with admin permissions. Visit [Bitbucket Server documentation ](https://confluence.atlassian.com/bitbucketserver/users-and-groups-776640439.html#Usersandgroups-Creatingauser)to learn more about creating users.
 2. In Snyk, go to the **Integrations** page and click on **Bitbucket Server** card:
 
-![111.png](../../.gitbook/assets/111%20%281%29%20%281%29%20%283%29%20%283%29%20%283%29%20%285%29%20%287%29.png)
+![111.png](../../.gitbook/assets/111%20%281%29%20%281%29%20%283%29%20%283%29%20%283%29%20%285%29%20%285%29%20%287%29.png)
 
 1. Enter your Bitbucket DC/Server URL, and the username and password for the service account you created:
 
@@ -29,7 +29,7 @@ You can now select the repositories for Snyk to monitor.
 2. Select the repositories to import to Snyk when prompted, then click **Add selected repositories**.
 3. Snyk scans the selected repositories for dependency files \(such as package.json and pom.xml\) in the entire directory tree, and import them to Snyk as projects:
 
-![444.png](../../.gitbook/assets/444%20%282%29%20%284%29%20%284%29%20%284%29%20%285%29.png)
+![444.png](../../.gitbook/assets/444%20%282%29%20%284%29%20%284%29%20%284%29%20%285%29%20%284%29.png)
 
 1. The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 

@@ -12,11 +12,11 @@ Please note, GitHub integrates per user rather than per org. Setting up this int
 
 1. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories:
 
-![image16.png](../../.gitbook/assets/uuid-30383c92-fc68-c8cc-0ffe-b731c92b9967-en%20%282%29%20%282%29%20%284%29%20%285%29%20%285%29%20%286%29%20%284%29.png)
+![image16.png](../../.gitbook/assets/uuid-30383c92-fc68-c8cc-0ffe-b731c92b9967-en%20%282%29%20%282%29%20%284%29%20%285%29%20%285%29%20%286%29%20%286%29%20%284%29.png)
 
 1. When the GitHub authorization screen opens, click on "Authorize snyk" to provide it with an access to your repositories:
 
-![mceclip0.png](../../.gitbook/assets/authorize%20%281%29%20%282%29%20%286%29%20%281%29%20%287%29.png)
+![mceclip0.png](../../.gitbook/assets/authorize%20%281%29%20%282%29%20%286%29%20%281%29%20%286%29.png)
 
 1. Select the repos you'd like to import to Snyk. When done, click on the **Add selected repositories** button, at the top of the page. Once clicked, Snyk will start scanning the selected repos for dependency files \(i.e. package.json, pom.xml, etc\) in the entire directory tree and import them to Snyk as projects:
 

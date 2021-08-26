@@ -6,7 +6,7 @@ Once you create or update an IAM role, allow a few minutes for AWS to update the
 2. Now, log in to your Snyk account.
 3. Navigate to **Integrations** from the menu bar at the top, find and click the Amazon ECR option:
 
-![image14.png](../../../.gitbook/assets/uuid-0441cf5d-a461-60e3-5d6e-57eed624d445-en.png)
+![](../../../.gitbook/assets/uuid-0441cf5d-a461-60e3-5d6e-57eed624d445-en.png)
 
 The Amazon ECR configuration page in the Settings area loads.
 

@@ -54,7 +54,7 @@ You can now see vulnerability results for imported projects.
 
 1. Select **Projects**, then click on the imported project entry under its registry record, to see vulnerability information for that project.  
 
-![image2.png](../../.gitbook/assets/mceclip2%20%281%29%20%281%29%20%281%29%20%283%29%20%283%29%20%284%29%20%286%29%20%281%29.png)
+![image2.png](../../.gitbook/assets/mceclip2%20%281%29%20%281%29%20%281%29%20%283%29%20%283%29%20%284%29%20%286%29%20%281%29%20%281%29.png)
 
 Here you can see a summary of the severity of the detected vulnerabilities. 3. Click on an entry to see details of vulnerabilities found:
 

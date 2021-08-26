@@ -141,7 +141,7 @@ For the **Activity** area, the following are the parameters and their descriptio
 
 These controls appear at the top of the window:
 
-![mceclip1.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360020461797/mceclip1.png)
+![](../../.gitbook/assets/mceclip1-19-.png)
 
 **Summary filters**—mark the issues to be displayed by selecting the relevant issue type and then click the list arrow again to close it.
 

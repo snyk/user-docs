@@ -12,7 +12,7 @@ Note: steps supported solely by Jenkins are in high-level only. See [Jenkins doc
 
 1. Navigate to the Manage Jenkins =&gt; Manage Plugins area of Jenkins to install the Snyk Security plugin for Jenkins. See the [Jenkins documentation](https://jenkins.io/doc/) for additional information.
 
-![image1.png](../../.gitbook/assets/uuid-a1504227-4c48-ab40-d363-ab5dc74b1c71-en%20%283%29%20%281%29.png)
+![image1.png](../../.gitbook/assets/uuid-a1504227-4c48-ab40-d363-ab5dc74b1c71-en%20%283%29%20%283%29%20%281%29.png)
 
 1. Navigate to **Manage Jenkins=&gt;Global Tool Configuration** and click **Snyk installations ...** to add a Snyk installation.
 

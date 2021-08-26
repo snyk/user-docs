@@ -67,7 +67,7 @@ You can now view vulnerability results for imported projects. The **Projects** t
 
 1. Click on an entry to open the issues view for that entry, including the module, where it was introduced, and the remediation to fix it, plus more details about the vulnerability itself:
 
-![Detailed\_vuln\_information.png](../../.gitbook/assets/detailed-vuln-information%20%283%29%20%284%29%20%284%29%20%284%29%20%286%29%20%281%29.png)
+![Detailed\_vuln\_information.png](../../.gitbook/assets/detailed-vuln-information%20%283%29%20%284%29%20%284%29%20%284%29%20%286%29%20%287%29%20%281%29.png)
 
 See [View project information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information) for more details.
 
