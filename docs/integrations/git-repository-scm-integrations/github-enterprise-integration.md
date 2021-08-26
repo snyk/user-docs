@@ -21,16 +21,13 @@ On-premise GHE integrations are not currently supported. However, some on-premis
 
 ![Screen\_Shot\_2021-06-01\_at\_2.13.08\_PM.png](../../.gitbook/assets/screen_shot_2021-06-01_at_2.13.08_pm.png)
 
-
  
 
 ![GitHub.png](../../.gitbook/assets/github.png)
 
-
 5. Enter your Github Enterprise URL, and the personal access token for the service account you created:
 
 ![mceclip2.png](../../.gitbook/assets/mceclip2-2-.png)
-
 
 {% hint style="info" %}
 **NOTE**  
@@ -41,13 +38,11 @@ You can use this integration to integrate to your GitHub Enterprise Cloud, by pr
 
 ![mceclip4.png](../../.gitbook/assets/mceclip4-1-.png)
 
-
 2. Select the repos to import to Snyk, then click **Add selected repositories**. 
 
 3. Snyk starts scanning the selected repos for dependency files \(such as package.json\) in the entire directory tree and imports them to Snyk as projects:
 
-![uuid-b744bfb4-4a09-3f09-3275-986c855ee5be-en.jpg](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29%20%282%29.jpg)
-
+![uuid-b744bfb4-4a09-3f09-3275-986c855ee5be-en.jpg](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29%20%287%29%20%282%29.jpg)
 
 4. The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
@@ -61,8 +56,7 @@ Snyk produces advanced security reports, allowing you to explore the vulnerabili
 
 This is an example of a project-level security report:
 
-![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%281%29.png)
-
+![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%286%29%20%281%29.png)
 
 **Projects monitoring and automatic fix pull requests**
 
@@ -70,19 +64,16 @@ Snyk frequently scans your projects on either a daily or a weekly basis. When ne
 
 This is an example of a fix pull request opened by Snyk:  
 
-![image7.png](../../.gitbook/assets/uuid-6cfdaf0b-c349-468d-fe65-4f80bad110ea-en.png)
 
+![image7.png](../../.gitbook/assets/uuid-6cfdaf0b-c349-468d-fe65-4f80bad110ea-en.png)
 
 To review and adjust the automatic fix pull request settings:
 
-1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
-
- &gt; **Integrations**.
+1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
 2. Select **Edit Settings** for GitHub Enterprise.
 3. Navigate to **Automatic fix pull requests**:
 
-![mceclip4.png](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%284%29.png)
-
+![mceclip4.png](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%287%29%20%284%29.png)
 
 **Pull request testing**
 
@@ -90,19 +81,15 @@ Snyk tests any newly created pull request in your repositories for security vuln
 
 This is how Snyk pull request checks appear in the Pull Request page in GitHub Enterprise:
 
-![](../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en%20%282%29%20%282%29%20%286%29%20%284%29.png)
-
+![](../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en%20%282%29%20%282%29%20%286%29%20%285%29%20%284%29.png)
 
 To review and adjust the pull request tests settings:
 
-1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
-
- &gt; **Integrations**.
+1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
 2. Select **Edit Settings** for GitHub Enterprise.
 3. Navigate to **Default Snyk test for pull requests**:
 
 ![mceclip5.png](../../.gitbook/assets/mceclip5%20%281%29.png)
-
 
 ## Required permissions scope for the GitHub integration <a id="h_01ER1W3EZ4DXGHGKT12DWQEJV2"></a>
 

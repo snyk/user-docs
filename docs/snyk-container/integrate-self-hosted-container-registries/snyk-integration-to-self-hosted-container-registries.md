@@ -25,7 +25,6 @@ The Broker client provides the Agent with the connection details. The Agent uses
 
 ![](../../.gitbook/assets/mceclip0-8-.png)
 
-
 **Supported Container registries**
 
 * Artifactory \(type: ArtifactoryCR\)
@@ -40,7 +39,7 @@ The Broker client provides the Agent with the connection details. The Agent uses
 * GitLab \(type: gitlab-cr\)
 
 {% hint style="info" %}
-**Note:**   
+**Note:**  
 The integration pattern using broker with open source container registries from the above list is designed for users who require images to be scanned in their own environment, instead of inside the Snyk service**.**
 {% endhint %}
 
@@ -74,7 +73,7 @@ There are different environment variable required to configure the Broker client
 
 The following environment variables are mandatory to configure the Broker client:
 
-**For DigitalOcean, GCR and Google Artifact Registry, there are a few values to notice. Specifications to follow.** 
+**For DigitalOcean, GCR and Google Artifact Registry, there are a few values to notice. Specifications to follow.**
 
 * \`BROKER\_TOKEN\` - The Snyk Broker token, obtained from your Container registry integration \(provided by Snyk support\)
 * \`BROKER\_CLIENT\_URL\` - The URL of your broker client \(including scheme and - port\) used by the container registry agent to call back to Snyk, for example: "[http://my.broker.client:8000](http://my.broker.client:8000)".
@@ -88,14 +87,14 @@ The following environment variables are mandatory to configure the Broker client
 
 #### **DigitalOcean**
 
-To set up Broker Client for **DigitalOcean**,```CR_USERNAME``` and ```CR_PASSWORD``` are not required. Instead, you need to specify ```CR_TOKEN``` - authentication token for DigitalOcean container registry.
+To set up Broker Client for **DigitalOcean**,`CR_USERNAME` and `CR_PASSWORD` are not required. Instead, you need to specify `CR_TOKEN` - authentication token for DigitalOcean container registry.
 
 #### **GCR and Google Artifact Registry**
 
-To set up the Broker Client for those container registries, all the above applies.  The only thing to note is that ```CR_USERNAME``` value is permanent and should be `_json_key`, and the ```CR_PASSWORD``` value should be the JSON key used to authenticate to google. 
+To set up the Broker Client for those container registries, all the above applies. The only thing to note is that `CR_USERNAME` value is permanent and should be `_json_key`, and the `CR_PASSWORD` value should be the JSON key used to authenticate to google.
 
 {% hint style="info" %}
-**NOTE for Artifactory users:**   
+**NOTE for Artifactory users:**  
 In case you are using **Repository path** as your Docker access method, the container registry hostname in CR\_BASE variable should be set in this structure:_/artifactory/api/docker/_
 {% endhint %}
 
@@ -132,8 +131,8 @@ In order to use it, specify the following environment variable when running the 
 BROKER\_CLIENT\_VALIDATION\_URL = "&lt;agent-url&gt;/healthcheck"
 
 {% hint style="info" %}
-**Note:**   
-The /systemcheck endpoint is not mandatory for the brokered integration to function. More information can be found here: https://github.com/snyk/broker\#systemcheck
+**Note:**  
+The /systemcheck endpoint is not mandatory for the brokered integration to function. More information can be found here: [https://github.com/snyk/broker\#systemcheck](https://github.com/snyk/broker#systemcheck)
 {% endhint %}
 
 **Secure your images:**

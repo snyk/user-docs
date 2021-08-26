@@ -13,11 +13,9 @@ Infrastructure as Code configuration issues appear in the summary statistics and
 
 ![](../../.gitbook/assets/image4.png)
 
-
 To view IaC issues only, select **Configuration** from the **Summary filters** drop down:
 
 ![](../../.gitbook/assets/screenshot_2021-02-17_at_14.22.50.png)
-
 
 For more details on the summary tab, see [Summary tab](https://docs.snyk.io/reports-1/reports/summary-tab) documentation.
 
@@ -29,13 +27,11 @@ To view IaC issues only, select **Configuration** in the **Issue filters** drop 
 
 ![](../../.gitbook/assets/image3.png)
 
-
 This shows the title of each issue and type, and the severity.
 
 You can also view the issues ungrouped; this shows more information about the project file that the issue is found in, and details on when it was first introduced:
 
-![](../../.gitbook/assets/image2-3-%20%281%29%20%282%29.png)
-
+![](../../.gitbook/assets/image2-3-%20%281%29%20%282%29%20%282%29.png)
 
 For more details on the issues tab, see [Issues tab](https://docs.snyk.io/reports-1/reports/issues-tab) documentation.
 

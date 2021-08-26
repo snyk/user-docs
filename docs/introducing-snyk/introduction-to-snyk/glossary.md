@@ -4,7 +4,7 @@
 
 ### Advisor
 
-See [Snyk Advisor](https://support.snyk.io/hc/en-us/articles/360017682058-Snyk-Glossary#SnykAdvisor).  
+See [Snyk Advisor](https://support.snyk.io/hc/en-us/articles/360017682058-Snyk-Glossary#SnykAdvisor).
 
 ### Base image
 
@@ -99,7 +99,7 @@ A measure of how practical an exploit for a vulnerability is, based on whether t
 
 ### Fixable / Partially fixable
 
-A measure of whether a vulnerability can be fixed by Snyk, by applying a patch, upgrade, or pin. See [Fixed in version vs. fixable attributes in vulnerabilities](https://support.snyk.io/hc/en-us/articles/4405034808209).  
+A measure of whether a vulnerability can be fixed by Snyk, by applying a patch, upgrade, or pin. See [Fixed in version vs. fixable attributes in vulnerabilities](https://support.snyk.io/hc/en-us/articles/4405034808209).
 
 ### Fix PR
 
@@ -211,7 +211,7 @@ See [Container registry](https://support.snyk.io/hc/en-us/articles/360017682058-
 
 A storage area that contains all elements necessary for the distribution of an application.
 
-## S 
+## S
 
 ### SARIF
 
@@ -318,7 +318,7 @@ A fix type: a problem can be fixed by upgrading a version of a package, or by ap
 
 ### Vulnerability
 
-A security vulnerability, identified by Snyk. See [Remediate your vulnerabilities](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities).  
+A security vulnerability, identified by Snyk. See [Remediate your vulnerabilities](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities).
 
 ## W
 

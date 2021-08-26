@@ -15,8 +15,7 @@ Snyk's Bitbucket Data Center / Server integration allows you to continuously per
 
  
 
-![111.png](../../.gitbook/assets/111%20%281%29%20%281%29%20%283%29%20%282%29.png)
-
+![111.png](../../.gitbook/assets/111%20%281%29%20%281%29%20%283%29%20%283%29%20%282%29.png)
 
 3. Enter your Bitbucket DC/Server URL, and the username and password for the service account you created:
 
@@ -24,12 +23,9 @@ Snyk's Bitbucket Data Center / Server integration allows you to continuously per
 
 ![222.png](../../.gitbook/assets/222.png)
 
-
 4. Click **Save**. Snyk connects to your Bitbucket DC/Server instance. When the connection succeeds, the following indications appear:
 
-![333.png](../../.gitbook/assets/333.png)
-
- 
+![333.png](../../.gitbook/assets/333.png) 
 
 You can now select the repositories for Snyk to monitor. 
 
@@ -39,8 +35,7 @@ You can now select the repositories for Snyk to monitor.
 
 7. Snyk scans the selected repositories for dependency files \(such as package.json and pom.xml\) in the entire directory tree, and import them to Snyk as projects:
 
-![444.png](../../.gitbook/assets/444%20%282%29%20%284%29.png)
-
+![444.png](../../.gitbook/assets/444%20%282%29%20%284%29%20%284%29.png)
 
 8. The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
@@ -54,8 +49,7 @@ Snyk produces advanced security reports, allowing you to explore the vulnerabili
 
 This is an example of a project level security report:
 
-![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%282%29.png)
-
+![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%286%29%20%282%29.png)
 
 #### **Projects monitoring and automatic fix pull requests**
 
@@ -65,17 +59,13 @@ Here is an example of a fix pull request opened by Snyk:
 
 ![666.png](../../.gitbook/assets/666.png)
 
-
 To review and adjust the automatic fix pull request settings:
 
-1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
-
- &gt; **Integrations**.
+1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
 2. Select **Edit Settings** for Bitbucket Server
 3. Navigate to **Automatic fix pull requests**:
 
-![777.png](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%283%29.png)
-
+![777.png](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%287%29%20%283%29.png)
 
 #### **Pull request tests**
 
@@ -85,17 +75,13 @@ This is how Snyk pull request build check appears in the **Pull Request** page i
 
 ![888.png](../../.gitbook/assets/888.png)
 
-
 To review and adjust the pull request tests settings:
 
-1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
-
- &gt; **Integrations**.
+1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
 2. Select **Edit Settings** for Bitbucket Server
 3. Navigate to **Default Snyk test for pull requests**:
 
 ![999.png](../../.gitbook/assets/999.png)
-
 
 #### Required permissions scope for the Bitbucket DC/Server integration
 
@@ -114,15 +100,12 @@ For Snyk to perform the required operations on monitored repositories \(such as 
 
 To disable this integration:
 
-1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
-
- &gt; **Integrations**.
+1. Click on settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
 2. Find the specific integration to deactivate in your list of integrations, and click Edit settings. 
 3. A page appears showing the current status of your integration and a place to update your credentials, specific to each integration \(credentials, API key, Service Principal, or connection details\):
 4. Click **Disconnect**.
 
 ![101010.png](../../.gitbook/assets/101010.png)
-
 
 > **WARNING**  
 > Your credentials are removed from Snyk and any integration-specific projects Snyk is monitoring are deactivated on Snyk.  

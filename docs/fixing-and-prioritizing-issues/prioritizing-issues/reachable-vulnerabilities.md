@@ -35,7 +35,6 @@ Reachable Vulnerabilities analysis is available for Java \(Maven and Gradle\) ap
 
 ![](../../.gitbook/assets/image1-1-.png)
 
-
 ## How to use it
 
 To perform Reachable Vulnerabilities analysis, you can:
@@ -57,7 +56,6 @@ To perform Reachable Vulnerabilities analysis, you can:
    * Click on **gitHub**.
    * Go to the **Reachable vulnerabilities analysis** section.
    * Opt-in to the **Reachable vulnerabilities analysis** and save your changes.![image2.png](../../.gitbook/assets/image2-5-.png)
-
 3. Go to the **import projects** page and choose the repositories to import to Snyk.
 4. Selected projects are imported and analyzed for Reachable Vulnerabilities issues.
 
@@ -70,8 +68,7 @@ When running **snyk test --reachable**_,_ the CLI output includes:
 1. The number of tested dependencies, the number of found vulnerabilities and how many of them are reachable.
 2. The reachability level appears next to the relevant vulnerability, and the path from the app’s code to the vulnerable function appears below.
 
-![](../../.gitbook/assets/screen_shot_2020-06-30_at_12.59.23%20%282%29%20%282%29%20%282%29.png)
-
+![](../../.gitbook/assets/screen_shot_2020-06-30_at_12.59.23%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
 ### Project page
 
@@ -83,7 +80,6 @@ After running **snyk monitor** in the CLI, or importing a project via Snyk UI, t
 
 ![](../../.gitbook/assets/project.png)
 
-
 ### Reports
 
 The reachability information can be reviewed next to each issue under the Reports **Issues** tab \(ungrouped view\).
@@ -91,5 +87,4 @@ The reachability information can be reviewed next to each issue under the Report
 You can filter by reachability status, to quickly show the issues which are reachable.
 
 ![](../../.gitbook/assets/blobid0.png)
-
 

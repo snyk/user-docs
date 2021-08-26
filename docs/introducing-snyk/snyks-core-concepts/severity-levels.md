@@ -11,7 +11,7 @@ A severity level is applied to a vulnerability, to indicate the risk for that vu
 Severity levels also apply to license issues. See [Licenses overview](https://docs.snyk.io/snyk-open-source/licenses).
 {% endhint %}
 
-#### Determining severity levels
+### Determining severity levels
 
 The **Common Vulnerability Scoring System** \(**CVSS**\) determines the severity level of a vulnerability.
 
@@ -26,13 +26,13 @@ At Snyk, we use [CVSS framework version 3.1](https://www.first.org/cvss/v3-1/) t
 
 See [Scoring security vulnerabilities 101: Introducing CVSS for CVEs](https://snyk.io/blog/scoring-security-vulnerabilities-101-introducing-cvss-for-cve/).
 
-#### Severity and priority scoring
+### Severity and priority scoring
 
 Severity levels are one factor feeding into Snyk's Priority Score for each vulnerability, along with factors such as [Snyk’s Exploit Maturity](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/) and [Reachable Vulnerabilities](https://snyk.io/blog/optimizing-prioritization-with-deep-application-level-context/) information. Together, this scoring helps developers determine which vulnerabilities should be addressed first.
 
 See [Snyk Priority Score](https://support.snyk.io/hc/en-us/articles/360009884837-Prioritizing-Snyk-issues) for details of how severity levels are used in Snyk's priority scores.
 
-### Viewing severity levels in Snyk
+## Viewing severity levels in Snyk
 
 Severity levels are displayed throughout Snyk, to show this information at all times.
 
@@ -40,16 +40,13 @@ For example, in the initial dashboard:
 
 ![](../../.gitbook/assets/image%20%2846%29.png)
 
-
 For your projects:
 
 ![](../../.gitbook/assets/image%20%2843%29.png)
 
-
 And for each vulnerability in a project:
 
 ![](../../.gitbook/assets/image%20%2839%29.png)
-
 
 See [Getting started](https://docs.snyk.io/getting-started) documentation for more details of using Snyk.
 

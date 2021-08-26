@@ -40,7 +40,6 @@ Snyk Code includes secret detection capabilities that scan and highlight secrets
 
 ![](../.gitbook/assets/image5.png)
 
-
 ### Issue code flow visualization
 
 Snyk products all provide a developer-friendly experience, so Snyk Code helps developers to quickly understand the problem, learn the background, and how to approach it. Snyk Code helps you understand the dangerous code flow step-by-step.
@@ -48,7 +47,6 @@ Snyk products all provide a developer-friendly experience, so Snyk Code helps de
 For every issue, Code also provides a link to the lines in the relevant files, to view more details on the problem like the CWE, and how to approach it.
 
 ![](../.gitbook/assets/image2-2-.png)
-
 
 Snyk Code also provides rich curated additional information for many suggestions.
 
@@ -73,7 +71,6 @@ This integration allows you to:
 
 ![](../.gitbook/assets/image4-1-.png)
 
-
 ## Supported languages
 
 Snyk Code supports Java, JavaScript \(including TypeScript\), Python and C\#.
@@ -90,15 +87,13 @@ Snyk Code supports a JetBrains plugin to support issue finding and fixing, direc
 
 ![](../.gitbook/assets/results-code.png)
 
-
 For more details, see [JetBrains IDE Plugins](https://support.snyk.io/hc/en-us/articles/360004032317-JetBrains-IDE-Plugins).
 
 ### VS Code IDE plugin
 
 Snyk Code supports a Visual Studio Code plugin to support issue finding and fixing, directly from the IDE:
 
-![](../.gitbook/assets/image3-2-%20%282%29%20%282%29%20%284%29%20%284%29.png)
-
+![](../.gitbook/assets/image3-2-%20%282%29%20%282%29%20%284%29%20%284%29%20%284%29.png)
 
 For more details, see the [Visual Studio Code extension for Snyk Code](https://support.snyk.io/hc/en-us/articles/360018585717-Visual-Studio-Code-extension-for-Snyk-Code-).
 
