@@ -84,9 +84,9 @@ Full details include all the information in the vulnerability card, plus:
 
 ### Open the source code file
 
-1. Click the code link to open the source code file itself \(in this example, in GitHub\):
-
-![Open-code1.png](https://support.snyk.io/hc/article_attachments/360015998577/Open-code1.png) 2. The file opens, showing you exactly where to fix the vulnerability \(in this example, by adding the sanitation required to the input\). ![Open-code2.png](https://support.snyk.io/hc/article_attachments/360015999237/Open-code2.png) 3. You can now make the fix as required, to address the vulnerability in your code.
+1. Click the code link to open the source code file itself \(in this example, in GitHub\): ![Open-code1.png](https://support.snyk.io/hc/article_attachments/360015998577/Open-code1.png) 
+2. The file opens, showing you exactly where to fix the vulnerability \(in this example, by adding the sanitation required to the input\).  ![Open-code2.png](https://support.snyk.io/hc/article_attachments/360015999237/Open-code2.png) 
+3. You can now make the fix as required, to address the vulnerability in your code.
 
 ## Example: Cross-site Scripting \(XSS\)
 
