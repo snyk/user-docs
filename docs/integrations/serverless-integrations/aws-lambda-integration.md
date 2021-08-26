@@ -10,9 +10,7 @@ You have the option of establishing cross-account access to enable Snyk's AWS La
 
 You will need your Snyk **Organization ID** and AWS IAM [role ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) to complete the integration. The role ARN will be provided for you in the AWS CloudFormation Console's Output tab.
 
-\[![cloudformation-launch-stack.png](https://support.snyk.io/hc/article_attachments/360010020437/cloudformation-launch-stack.png)
-
-\]\([https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2\#/stacks/create/template?stackName=Snyk-Security-Lambda&templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-snyk-security/templates/snyk-lambda.yaml](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/template?stackName=Snyk-Security-Lambda&templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-snyk-security/templates/snyk-lambda.yaml)\)
+![cloudformation-launch-stack.png](https://support.snyk.io/hc/article_attachments/360010020437/cloudformation-launch-stack.png)
 
 **Manual Process:**
 
@@ -25,7 +23,7 @@ Configure the integration with these two parts:
 
 You must be the owner or an administrator of the Snyk account you’re integrating.
 
-## **How it works**
+### **How it works**
 
 1. The user creates a policy-based role, called a **Role ARN**, in the format arn:aws:iam:::role/. The role enables read-only access to the user’s Lambda services. The user configures Snyk for integration with AWS Lambda using the credentials for the role they created.
 2. The user requests to import functions to Snyk \(for testing and monitoring\).
@@ -33,11 +31,11 @@ You must be the owner or an administrator of the Snyk account you’re integrati
 4. Snyk communicates directly with Lambda for each test it runs to determine exactly what code is currently deployed and what dependencies are being used. Each dependency is tested against Snyk’s vulnerability database to see if it contains any known vulnerabilities.
 5. Based on your configurations, if vulnerabilities are found, Snyk notifies you via email or Slack so that you can take immediate remediation action.
 
-## Supported repos and languages
+### Supported repos and languages
 
 Snyk currently supports integration with AWS Lambda for Node, Ruby and Java projects.
 
-## Configure your integration with Snyk
+### Configure your integration with Snyk
 
 1. Allow a few minutes for AWS to update the role on their servers.
 2. From AWS, copy the **Role ARN** key that appears at the top of the **Summary** section \(inside the **Role** area still; in the format arn:aws:iam:::role/\). Save this value to paste in Snyk soon.
@@ -98,7 +96,7 @@ This section generally describes how to navigate the AWS IAM Console for these p
    6. Skip to the last step **\(Review\)** of the process.
    7. Name the role **SnykLambdaServiceRole** and then finish creating it.
 
-## **Add projects to Snyk**
+### **Add projects to Snyk**
 
 Add functions to your Snyk projects. Snyk then tests and monitors your AWS Lambda applications to identify vulnerabilities in your deployed code.
 
@@ -121,7 +119,7 @@ You must be added as a collaborator to the Snyk organization you’d like to wor
 1. Snyk evaluates root folders and custom file locations. If no manifest files are found on the root level or in the paths you configure, Snyk notifies you that no files can be imported.
 2. Once repositories are imported, a confirmation appears in green at the top of the screen. 
 
-![image3.png](https://support.snyk.io/hc/article_attachments/360007146458/uuid-ee5c7842-1773-a590-7b75-aa5e960b8108-en.png)
+![](../../.gitbook/assets/uuid-ee5c7842-1773-a590-7b75-aa5e960b8108-en.png)
 
 1. Refresh the page to view the added functions. AWS ECR images are indicated with a unique icon
 
