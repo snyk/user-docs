@@ -55,7 +55,9 @@ To perform Reachable Vulnerabilities analysis, you can:
    * In **Organization** settings, go to the **Integrations** section.
    * Click on **gitHub**.
    * Go to the **Reachable vulnerabilities analysis** section.
-   * Opt-in to the **Reachable vulnerabilities analysis** and save your changes.![image2.png](../../.gitbook/assets/image2-5-.png)
+   * Opt-in to the **Reachable vulnerabilities analysis** and save your changes.
+
+     ![](../../.gitbook/assets/image%20%2854%29.png)
 3. Go to the **import projects** page and choose the repositories to import to Snyk.
 4. Selected projects are imported and analyzed for Reachable Vulnerabilities issues.
 
