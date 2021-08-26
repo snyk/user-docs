@@ -34,13 +34,7 @@ The **Which images do you want to test?** view appears, displaying all of the av
 3. When the import ends, notification of success, or failure, appears at the top of the page. Click Refresh to view the Projects page with the newly imported images. Images are grouped by repository and are each linked individually to a detailed Projects page.
 4. You can now connect your Git repo to this project in order to use your Dockerfile for enriched remediation advice. For more info, see [Adding your Dockerfile and test your base image](https://support.snyk.io/hc/articles/360003916218#UUID-9ab347a6-8af0-ef6c-5ebd-cec21fbfab29).
 
-ECR files are indicated with a unique icon
-
-![image6.png](https://support.snyk.io/hc/article_attachments/360007147358/uuid-31aa2b29-8686-5389-b5fc-1d3bd1176f9c-en.png)
-
-,
-
-You can now filter to view only those projects:
+ECR files are indicated with a unique icon ![](../../../.gitbook/assets/uuid-31aa2b29-8686-5389-b5fc-1d3bd1176f9c-en.png)--you can now filter to view only those projects:
 
 ![](../../../.gitbook/assets/uuid-439e3f37-6e4f-0ffa-0c3c-63c56b45ba5a-en.png)
 
