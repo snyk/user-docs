@@ -8,17 +8,17 @@ Snyk allows detection of vulnerabilities in your application dependencies from c
 
 After you integrate with a container registry and import your projects, we scan your image and test for vulnerabilities.
 
-## Enable application vulnerabilities scan from container images
+### Enable application vulnerabilities scan from container images
 
 1. Navigate to your container registry integration settings
 
-![mceclip0.png](../../.gitbook/assets/mceclip0-3-.png)
+![](../../.gitbook/assets/mceclip0-3-.png)
 
 1. Enable the _**Detect application vulnerabilities**_ capability and save the changes:
 
-![mceclip1.png](../../.gitbook/assets/mceclip1%20%281%29.png)
+![](../../.gitbook/assets/mceclip1%20%281%29.png)
 
-## View vulnerabilities and licensing issues
+### View vulnerabilities and licensing issues
 
 After the feature is enabled, you can see:
 
@@ -68,5 +68,5 @@ These are the current limitations of the language support:
 
 **Java**
 
-* Scan only the top level JAR - we do not currently unpack the JAR
+Scan only the top level JAR - we do not currently unpack the JAR
 
