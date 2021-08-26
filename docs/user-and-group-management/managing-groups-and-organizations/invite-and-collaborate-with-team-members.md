@@ -2,7 +2,7 @@
 
 Click settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Members** to invite new team members:
 
-![](../../.gitbook/assets/image%20%283%29.png)
+![](../../.gitbook/assets/image%20%288%29.png)
 
 {% hint style="info" %}
 **Feature availability**  

@@ -53,7 +53,8 @@ If you use the Snyk CLI to fix your vulnerable Node.js project by running `snyk 
  This means that whenever the project dependencies are installed with `npm install` or `yarn install` then the hook can trigger `snyk protect` to run and patch the necessary dependencies, on completion you will see a success message in the output:
 
 ```text
-> snyk protectSuccessfully applied Snyk patches
+> snyk protect
+Successfully applied Snyk patches
 ```
 
 Since running`snyk protect` is the way to repeatedly apply patches, it needs to be run every time you re-install your dependencies. Common integration points would be in your CI/CD \(build system or deployment system\), and adding it as a post-install step in the `package.json`.

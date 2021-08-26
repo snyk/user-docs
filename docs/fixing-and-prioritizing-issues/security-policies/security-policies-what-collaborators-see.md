@@ -20,9 +20,13 @@ An issue in a project page that’s been ignored by a security policy.
 
 ![](../../.gitbook/assets/unnamed.png)
 
-**Custom and original severity in Project Page UI**![unnamed-1.png](../../.gitbook/assets/unnamed-1.png)
+**Custom and original severity in Project Page UI**
 
-**Custom and original severity in Open Fix PR UI**![unnamed-2.png](../../.gitbook/assets/unnamed-2.png)
+![unnamed-1.png](../../.gitbook/assets/unnamed-1.png)
+
+**Custom and original severity in Open Fix PR UI**
+
+![unnamed-2.png](../../.gitbook/assets/unnamed-2.png)
 
 **Custom and original severity in Reports**
 

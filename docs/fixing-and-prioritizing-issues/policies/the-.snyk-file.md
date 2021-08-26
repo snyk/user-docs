@@ -178,9 +178,10 @@ ignore:
         expires: 2020-11-07T11:38:28.614Z
 ```
 
-**NOTE**
-
+{% hint style="info" %}
+**Note**  
 For IaC ignore rules see [IaC ignores using the .snyk policy file](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file).
+{% endhint %}
 
 ## .snyk related CLI commands
 
