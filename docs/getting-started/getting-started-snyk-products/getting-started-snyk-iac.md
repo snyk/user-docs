@@ -26,15 +26,15 @@ Import projects to test with Snyk, by choosing repositories for Snyk to test and
 1. Select **Projects** from Snyk.io.
 2. Select the tool to add the project from \(for example GitHub\):
 
-![IaC\_-\_select\_project.png](https://support.snyk.io/hc/article_attachments/360012552918/IaC_-_select_project.png)
+![](../../.gitbook/assets/iac-select-project.png)
 
 1. In **Personal and Organization repositories**, select the repositories to use. 4. Click **Add selected repositories** to import the selected repositories into your projects. 
 
-![IaC\_-\_select\_repo.png](https://support.snyk.io/hc/article_attachments/360012553018/IaC_-_select_repo.png)
+![](../../.gitbook/assets/iac_-_select_repo.png)
 
 1. A progress bar appears: click **View log** to see import log results - for example:
 
-![IaC\_-\_import\_log.png](https://support.snyk.io/hc/article_attachments/360012553078/IaC_-_import_log.png)
+![](../../.gitbook/assets/iac-import-log.png)
 
 \(you can scan both Kubernetes and Terraform files simultaneously, as in this example.\) 5. Project import completes.
 
