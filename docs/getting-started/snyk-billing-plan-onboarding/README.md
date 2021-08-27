@@ -58,7 +58,7 @@ See [CI/CD integrations](https://support.snyk.io/hc/en-us/sections/360001152577-
 
 Snyk supports various different container registries, allowing you to scan all your images and monitor them over time for newly found vulnerabilities, whether the images are used in Prod, retired from use, or queued up for a big release.
 
-![](../../.gitbook/assets/image%20%284%29%20%283%29%20%283%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%283%29%20%283%29%20%283%29.png)
 
 See [Snyk Container](https://docs.snyk.io/snyk-container) for more details.
 

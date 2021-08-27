@@ -22,7 +22,7 @@ Snyk Code is disabled by default, so you must enable it for each organization:
 
 ![enable-snyk-code.png](../../.gitbook/assets/enable-snyk-code.png)
 
-  3. Click **Save changes**.
+1. Click **Save changes**.
 
 ## Stage 2: Add source control integration
 
@@ -38,7 +38,7 @@ Choose a source code integration, to allow Snyk to work on a project.
 
 ![Screenshot\_2021-06-22\_at\_10.58.18.png](../../.gitbook/assets/screenshot-2021-06-22-at-10.58.18.png)
 
-4. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
+1. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
 
 See [DevOps integrations & languages](https://support.snyk.io/hc/en-us/articles/360011733538-DevOps-integrations-languages) for more details.
 
@@ -55,11 +55,11 @@ Add projects to test with Snyk, by choosing repositories for Snyk to test and mo
 
 ![](../../.gitbook/assets/open-source-add-projects%20%283%29%20%285%29%20%285%29%20%285%29%20%283%29.png)
 
-3. In **Personal and Organization repositories**, select the repositories to use:
+1. In **Personal and Organization repositories**, select the repositories to use:
 
 ![](../../.gitbook/assets/iac_-_select_repo.png)
 
-4. Click **Add selected repositories** to import the selected repositories into your projects. 
+1. Click **Add selected repositories** to import the selected repositories into your projects. 
 
 This sets Snyk to run a regular check \(daily by default\) for your proprietary code vulnerabilities. 5. A progress bar appears: click **View log** to see log results. 6. Project import completes.
 
