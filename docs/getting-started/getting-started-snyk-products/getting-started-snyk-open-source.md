@@ -37,7 +37,6 @@ Choose a source code integration, to allow Snyk to work on a project.
 3. Click the source control system \(for example, GitHub\) to integrate with Snyk:   
 
 ![Screenshot\_2021-06-22\_at\_10.58.18.png](../../.gitbook/assets/screenshot-2021-06-22-at-10.58.18.png)
-
 1. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
 
 See [DevOps integrations & languages](https://support.snyk.io/hc/en-us/articles/360011733538-DevOps-integrations-languages) for more details
@@ -64,7 +63,6 @@ You can now view vulnerability results for imported projects. The **Projects** t
 1. Click on an imported project to see vulnerability information for that project, including the number of issues found, grouped by severity level:
 
 ![View\_vulns\_\_overview.png](../../.gitbook/assets/view_vulns__overview.png)
-
 1. Click on an entry to open the issues view for that entry, including the module, where it was introduced, and the remediation to fix it, plus more details about the vulnerability itself:
 
 ![Detailed\_vuln\_information.png](../../.gitbook/assets/detailed-vuln-information%20%283%29%20%284%29%20%284%29%20%284%29%20%286%29%20%287%29%20%285%29%20%281%29.png)

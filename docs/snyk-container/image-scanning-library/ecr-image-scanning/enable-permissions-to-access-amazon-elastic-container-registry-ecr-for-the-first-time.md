@@ -6,10 +6,7 @@ This process describes how to set up a resource role in AWS and the necessary po
    1. Create a new policy.
    2. Navigate to the JSON tab.
    3. Select and delete all of the default text in the JSON file.
-   4. Copy script as it is displayed from the UI in your Snyk account and paste it inside the JSON file:
-
-![SCRIPT1.png](../../../.gitbook/assets/uuid-31a073be-e145-f147-01d8-f235026e0f0b-en.png)
-
+   4. Copy script as it is displayed from the UI in your Snyk account and paste it inside the JSON file: ![SCRIPT1.png](../../../.gitbook/assets/uuid-31a073be-e145-f147-01d8-f235026e0f0b-en.png)
 1. Set **AmazonEC2ContainerRegistryReadOnlyForSnyk** as the **Name**.
 2. Enter Provides Snyk with read-only access to Amazon EC2 Container Registry repositories as the Description.
 3. Click Create Policy.
@@ -23,7 +20,5 @@ This process describes how to set up a resource role in AWS and the necessary po
    1. Harden the usability scope for the role:
 10. Again from the Roles page, find and click the link for the role you just created to update its configurations and navigate to the Trust relationships tab.
 11. Click Edit trust relationship.
-12. In the Policy Document, select and delete the entire script and then copy the following script as it is displayed from the UI in your Snyk account and paste:
-
-![ecrGIF2.gif](../../../.gitbook/assets/uuid-4b683f44-0a5e-0d13-f369-f7edecf98ce9-en.gif)
+12. In the Policy Document, select and delete the entire script and then copy the following script as it is displayed from the UI in your Snyk account and paste: ![ecrGIF2.gif](../../../.gitbook/assets/uuid-4b683f44-0a5e-0d13-f369-f7edecf98ce9-en.gif)
 

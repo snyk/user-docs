@@ -46,11 +46,9 @@ The first time it is needed, the plugin automatically downloads the CLI in the b
 2. Click **Connect IntelliJ to Snyk**. The plugin relies on the Snyk CLI, which authenticates you against Snyk’s web application:
 
 ![auth-progress.png](../../.gitbook/assets/auth-progress.png)
-
 1. Click **Authenticate** when prompted by Snyk:
 
 ![authenticate.png](../../.gitbook/assets/authenticate.png)
-
 1. After authentication you see a confirmation message for successful authentication.
 2. Close the browser window and return to the IDE. The IDE then reads and saves the authentication on your local machine. 
 3. In the IDE, you can select which Snyk products to use \(Snyk Open Source, Snyk Code or both\). 

@@ -11,18 +11,13 @@ Snyk tests and monitors your Amazon ECR container images by evaluating its tags 
 
 **Steps:**
 
-1. Log in to your account and navigate to the relevant group and organization that you want to manage.
+1. Log in to your account and navigate to the relevant group and organization that you want to manage. ![AddProjectMenu.gif](../../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%2818%29.gif)
 
-![AddProjectMenu.gif](../../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%2818%29.gif)
-
-1. Go to **Projects**, and click **Add projects**. The list of integrations already configured on your account opens, similar to the following:
-
-![AddProjectMenu.png](../../../.gitbook/assets/uuid-dd01aab7-482f-0fc2-01de-c2427a14a0e0-en.png)
+1. Go to **Projects**, and click **Add projects**. The list of integrations already configured on your account opens, similar to the following: ![AddProjectMenu.png](../../../.gitbook/assets/uuid-dd01aab7-482f-0fc2-01de-c2427a14a0e0-en.png)
 
 The **Which images do you want to test?** view appears, displaying all of the available images for the registry to which you connected, grouped by each of your repositories, similar to the following:
 
 ![AddImages.png](../../../.gitbook/assets/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en%20%281%29%20%281%29.png)
-
 1. Select single or multiple images with any or all of the following methods:
    * Type the name of a single image for import in the **Image Name** field \(\#1 in the image above\),
    * Select any of the repositories if you want to import all of the associated images \(\#2 in the image above\).

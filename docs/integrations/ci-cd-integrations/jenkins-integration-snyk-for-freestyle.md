@@ -8,7 +8,6 @@ For any Freestyle project, you can add Snyk to your build to scan the code while
 2. From the dropdown list in the Build section, add the Invoke Snyk Security task as an additional step in your build.
 
 ![image5.png](../../.gitbook/assets/uuid-f93cec82-7ac1-1707-0404-40208772918a-en.png)
-
 1. Configure the security task as follows:
    * **When issues are found:**
      * **Fail the build, if severity at or above**—fails the build when a single vulnerability of the severity level selected from the dropdown is identified in the project

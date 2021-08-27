@@ -15,10 +15,7 @@ Prerequisites
 
 **Configure integration**
 
-1. In your Snyk account, navigate to **Integrations** from the menu bar at the top. Under the **Container Registries** section, find the **Quay** option and click it.
-
-![mceclip2.png](../../../.gitbook/assets/mceclip0-15-.png)
-
+1. In your Snyk account, navigate to **Integrations** from the menu bar at the top. Under the **Container Registries** section, find the **Quay** option and click it. ![mceclip2.png](../../../.gitbook/assets/mceclip0-15-.png)
 1. In the **Account credentials** section, enter your Quay username and password login credentials. In the **container registry name** fill in the full URL to the registry you want to integrate with. This can be a cloud-based Quay, or a private host. To finish, click **Save**.  
 
 ![mceclip1.png](../../../.gitbook/assets/mceclip1-10-.png)

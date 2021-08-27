@@ -25,7 +25,6 @@ Snyk supports all languages that are supported by both Eclipse and Snyk. Additio
 2. Search for Snyk and click Install.
 
 ![image6.png](../../.gitbook/assets/uuid-01198b42-f020-2cc5-c20f-93817eeb44a4-en.png)
-
 1. When prompted accept the license agreement and the **Snyk Security** certificate to complete the installation.
 2. Restart the Eclipse instance and navigate to **Eclipse Preferences** to ensure **Snyk Vuln Scanner** now appears in the list:
 

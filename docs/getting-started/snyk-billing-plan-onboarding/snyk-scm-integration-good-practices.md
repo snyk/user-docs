@@ -126,7 +126,6 @@ Below is an example of how you would set up your an integration for **Github.com
   2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories:
 
 ![select-github.png](../../.gitbook/assets/select-github.png)
-
 1. Click **Authorize snyk** to provide Snyk with access to your repositories:
 
 ![authorize.png](../../.gitbook/assets/authorize%20%281%29%20%282%29%20%286%29%20%281%29%20%287%29.png)
@@ -194,7 +193,6 @@ To configure the PR test settings for your organization:
 1. Navigate to **Org** &gt; settings ![](../../.gitbook/assets/cog_icon.png) **&gt;** Integrations &gt; Edit Settings. 2. Set the the toggle to **Enabled** and set the **Fail conditions** as needed:
 
 ![image13.png](../../.gitbook/assets/image13.png)
-
 3. Click **Update settings**.
 
 To configure the pull request test settings for a specific project, navigate to **Projects Page**&gt; **Projects Settings &gt; Edit Settings** and set conditions similarly:

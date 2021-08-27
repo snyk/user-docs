@@ -15,10 +15,7 @@ Prerequisites
 
 **Configure integration**
 
-1. In your Snyk account, navigate to Integrations from the menu bar at the top. Under the Container Registries section, find the GitLab container registry option and click it.
-
-![mceclip0.png](../../../.gitbook/assets/mceclip0-9-.png)
-
+1. In your Snyk account, navigate to Integrations from the menu bar at the top. Under the Container Registries section, find the GitLab container registry option and click it. ![mceclip0.png](../../../.gitbook/assets/mceclip0-9-.png)
 1. In the **Account credentials** section, enter your GitLab container registry username and password login credentials. In the **container registry name** fill in the full URL to the registry you want to integrate with. To finish, click **Save**.
 
 ![mceclip1.png](../../../.gitbook/assets/mceclip1-6-.png)

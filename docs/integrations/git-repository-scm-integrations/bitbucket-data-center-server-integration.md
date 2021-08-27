@@ -11,17 +11,9 @@ Snyk's Bitbucket Data Center / Server integration allows you to continuously per
 > Make sure the newly created user has **Admin** permissions to all the repositories you need to monitor with Snyk.
 
 1. To give Snyk access to your Bitbucket DC/Server account, set up up a dedicated service account in Bitbucket DC/Server, with admin permissions. Visit [Bitbucket Server documentation ](https://confluence.atlassian.com/bitbucketserver/users-and-groups-776640439.html#Usersandgroups-Creatingauser)to learn more about creating users.
-2. In Snyk, go to the **Integrations** page and click on **Bitbucket Server** card:
-
-![111.png](../../.gitbook/assets/111%20%281%29%20%281%29%20%283%29%20%283%29%20%283%29%20%285%29%20%285%29%20%287%29.png)
-
-1. Enter your Bitbucket DC/Server URL, and the username and password for the service account you created:
-
-![222.png](../../.gitbook/assets/222.png)
-
-1. Click **Save**. Snyk connects to your Bitbucket DC/Server instance. When the connection succeeds, the following indications appear:
-
-![333.png](../../.gitbook/assets/333.png)
+2. In Snyk, go to the **Integrations** page and click on **Bitbucket Server** card: ![111.png](../../.gitbook/assets/111%20%281%29%20%281%29%20%283%29%20%283%29%20%283%29%20%285%29%20%285%29%20%287%29.png)
+3. Enter your Bitbucket DC/Server URL, and the username and password for the service account you created: ![222.png](../../.gitbook/assets/222.png)
+4. Click **Save**. Snyk connects to your Bitbucket DC/Server instance. When the connection succeeds, the following indications appear: ![333.png](../../.gitbook/assets/333.png)
 
 You can now select the repositories for Snyk to monitor.
 
@@ -30,7 +22,6 @@ You can now select the repositories for Snyk to monitor.
 3. Snyk scans the selected repositories for dependency files \(such as package.json and pom.xml\) in the entire directory tree, and import them to Snyk as projects:
 
 ![444.png](../../.gitbook/assets/444%20%282%29%20%284%29%20%284%29%20%284%29%20%285%29%20%284%29.png)
-
 1. The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
 ## Bitbucket DC/Server Integration Features

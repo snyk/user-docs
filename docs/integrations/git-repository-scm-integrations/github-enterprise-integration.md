@@ -21,7 +21,6 @@ On-premise GHE integrations are not currently supported. However, some on-premis
 ![Screen\_Shot\_2021-06-01\_at\_2.13.08\_PM.png](../../.gitbook/assets/screen_shot_2021-06-01_at_2.13.08_pm.png)
 
 ![GitHub.png](../../.gitbook/assets/github.png)
-
 1. Enter your Github Enterprise URL, and the personal access token for the service account you created:
 
 ![mceclip2.png](../../.gitbook/assets/mceclip2-2-.png)
@@ -34,7 +33,6 @@ You can use this integration to integrate to your GitHub Enterprise Cloud, by pr
 1. Click **Save**. Snyk connects to your GitHub Enterprise instance. When the connection succeeds, the following indications appear:
 
 ![mceclip4.png](../../.gitbook/assets/mceclip4-1-.png)
-
 1. Select the repos to import to Snyk, then click **Add selected repositories**.
 2. Snyk starts scanning the selected repos for dependency files \(such as package.json\) in the entire directory tree and imports them to Snyk as projects:
 

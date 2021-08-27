@@ -18,9 +18,7 @@ Prerequisites
 
 **Configure integration**
 
-1. In your Snyk account, navigate to **Integrations** from the menu bar at the top. **\*\*Under the** Container Registries **section, find the** Nexus\*\* option and click it.
-
-![](../../../.gitbook/assets/mceclip0-9-.png)
+1. In your Snyk account, navigate to **Integrations** from the menu bar at the top. **\*\*Under the** Container Registries **section, find the** Nexus\*\* option and click it. ![](../../../.gitbook/assets/mceclip0-9-.png)
 
 In the **Account credentials** section, enter your Nexus username and password login credentials. In the **container registry name** fill in the full URL to the registry you want to integrate with. To finish, click **Save**.
 

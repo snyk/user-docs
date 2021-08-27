@@ -6,14 +6,8 @@ Enable integration between an ACR registry and a Snyk organization, and start ma
 
 1. Access your ACR account and retrieve unique service principal credentials for use by Snyk with the AcrPull role. For help doing this, see the [ACR documentation](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-service-principal).
 2. Log in to your Snyk account.
-3. Navigate to **Integrations** from the menu bar at the top, find and click the **ACR** option:  
-
-![](../../../.gitbook/assets/image%20%2836%29.png)
-
-1. The ACR configuration page in the Settings area loads:
-
-![](../../../.gitbook/assets/image%20%289%29.png)
-
+3. Navigate to **Integrations** from the menu bar at the top, find and click the **ACR** option:   ![](../../../.gitbook/assets/image%20%2836%29.png)
+1. The ACR configuration page in the Settings area loads: ![](../../../.gitbook/assets/image%20%289%29.png)
 1. Enter the user name, password and container registry name \(myregistry.azurecr.io\) that you received when you generated a service principal for this integration.
 2. Click **Save**.
 

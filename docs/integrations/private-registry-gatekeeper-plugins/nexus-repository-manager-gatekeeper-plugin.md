@@ -58,7 +58,6 @@ To set up and configure the plugin, start scanning and managing your organizatio
    * **License Threshold**—default is \*low\*. Valid values include low, medium, high. Manually update the configuration based on your needs. 
 
 ![image1.png](../../.gitbook/assets/uuid-9745b82a-ed7e-bce0-75dd-0070514f274d-en.png)
-
 1. Shut down the Nexus service instance and then restart it.
 2. Log in to your Nexus instance and double check that the Snyk bundle has been installed successfully.
 

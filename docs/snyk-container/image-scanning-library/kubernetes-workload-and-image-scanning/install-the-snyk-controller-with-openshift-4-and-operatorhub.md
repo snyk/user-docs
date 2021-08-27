@@ -109,7 +109,6 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
 
 ```text
 ![](../../../.gitbook/assets/image%20%2838%29.png)
-
 1.  Select "A specfic namespace on the cluster" or leave the default “All namespaces on the cluster” based on your needs.
 
    **Tip**

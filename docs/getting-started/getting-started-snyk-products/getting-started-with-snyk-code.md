@@ -21,7 +21,6 @@ Snyk Code is disabled by default, so you must enable it for each organization:
 2. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Snyk Code**. 3. Under **Enable Snyk Code**, change **Disabled** to **Enabled:**
 
 ![enable-snyk-code.png](../../.gitbook/assets/enable-snyk-code.png)
-
 1. Click **Save changes**.
 
 ## Stage 2: Add source control integration
@@ -37,7 +36,6 @@ Choose a source code integration, to allow Snyk to work on a project.
 3. Click the source control system \(for example, GitHub\) to integrate with Snyk:
 
 ![Screenshot\_2021-06-22\_at\_10.58.18.png](../../.gitbook/assets/screenshot-2021-06-22-at-10.58.18.png)
-
 1. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
 
 See [DevOps integrations & languages](https://support.snyk.io/hc/en-us/articles/360011733538-DevOps-integrations-languages) for more details.
@@ -54,11 +52,9 @@ Add projects to test with Snyk, by choosing repositories for Snyk to test and mo
 2. Select the tool to add the project from \(for example GitHub\):
 
 ![](../../.gitbook/assets/open-source-add-projects%20%283%29%20%285%29%20%285%29%20%285%29%20%283%29.png)
-
 1. In **Personal and Organization repositories**, select the repositories to use:
 
 ![](../../.gitbook/assets/iac_-_select_repo.png)
-
 1. Click **Add selected repositories** to import the selected repositories into your projects. 
 
 This sets Snyk to run a regular check \(daily by default\) for your proprietary code vulnerabilities. 5. A progress bar appears: click **View log** to see log results. 6. Project import completes.
@@ -76,7 +72,6 @@ You can now view vulnerability results for imported projects. The **Projects** t
 1. Click on an imported project to see vulnerability information for that project, including the number of issues found, grouped by severity :
 
 ![View-Vulns1.png](../../.gitbook/assets/view-vulns1.png)
-
 1. Click on an entry to open the issues view for that entry. For each issue, this shows the exploitable code snippet and a description of the code flaw that may lead to this vulnerability if not fixed:
 
 ![](../../.gitbook/assets/view-vulns2.png)

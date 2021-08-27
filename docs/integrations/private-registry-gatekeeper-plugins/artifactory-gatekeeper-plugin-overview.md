@@ -45,7 +45,6 @@ This article refers to the Artifactory _Plugin_, an independent piece of softwar
 * the Organization ID for \(any\) one of your organizations
 
 ![](../../.gitbook/assets/artifactory-install.png)
-
 1. Go to [our repo in GitHub](https://github.com/snyk/artifactory-snyk-security-plugin) and navigate to the **Releases**.
 2. From the most current release, expand the **Assets** section to download the artifactory-snyk-security-plugin-&lt;version&gt;.zip archive.
 3. Extract the archive. It should have the following structure: 1. plugins \(directory\)

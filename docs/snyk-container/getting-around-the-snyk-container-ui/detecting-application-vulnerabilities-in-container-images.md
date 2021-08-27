@@ -13,7 +13,6 @@ After you integrate with a container registry and import your projects, we scan 
 1. Navigate to your container registry integration settings
 
 ![](../../.gitbook/assets/mceclip0-3-.png)
-
 1. Enable the _**Detect application vulnerabilities**_ capability and save the changes:
 
 ![](../../.gitbook/assets/mceclip1%20%281%29.png)

@@ -37,11 +37,9 @@ The **Exploit maturity** filter is available from any detailed **Projects** page
    1. Filter reports by exploit maturity:
 
 ![image2.png](../../.gitbook/assets/uuid-159624f9-b94f-34e9-03d5-005bd12b5209-en.png)
-
 1. View exploit maturity data from the **Issues** list in **Grouped** mode:
 
 ![image4.png](../../.gitbook/assets/uuid-626f2c23-462f-8de6-4576-ddfa67f2cd2b-en.png)
-
 1. View exploit maturity data from the **Issues** list in **Ungrouped** mode:
 
 ![image3.png](../../.gitbook/assets/uuid-04c57adc-4aa1-2af7-82a4-e3c35f3e5fc5-en.png)

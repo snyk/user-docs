@@ -10,10 +10,7 @@ After you integrate with a container registry and import your projects, we scan 
 
 ### Enable application vulnerabilities scan from container images
 
-1. Navigate to your container registry integration settings
-
-![mceclip0.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360008399638/mceclip0.png)
-
+1. Navigate to your container registry integration settings ![mceclip0.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360008399638/mceclip0.png)
 2. Enable the _**Detect application vulnerabilities**_ capability and save the changes:
 
 ![mceclip1.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360008399658/mceclip1.png)

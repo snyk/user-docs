@@ -41,7 +41,6 @@ If a tag exists in your group, you can apply it to any project.
 3. You can either select a value from the list of recently used values, or type out the value which is part of the tag you would like to assign to your project
 
 ![Screenshot\_2020-09-29\_at\_18.14.44.png](../../.gitbook/assets/screenshot_2020-09-29_at_18.14.44.png)
-
 1. After you select the value, the tag will be assigned to your project. To remove a tag from a project, click the "X" icon on the tag 
 
 You have successfully assigned and removed tags from your project.

@@ -20,7 +20,6 @@ Snyk scans Helm Charts, in addition to Kubernetes configuration files, for misco
 ![2.1.png](../../.gitbook/assets/2.1.png)
 
 ![2.2.png](../../.gitbook/assets/2.2.png)
-
 1. Every time a repository is scanned:
    * Each template in your Helm Chart creates a Snyk a project, grouped together by repository, similar to this example:
 

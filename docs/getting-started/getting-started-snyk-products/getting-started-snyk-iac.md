@@ -27,11 +27,9 @@ Import projects to test with Snyk, by choosing repositories for Snyk to test and
 2. Select the tool to add the project from \(for example GitHub\):
 
 ![](../../.gitbook/assets/iac-select-project.png)
-
 1. In **Personal and Organization repositories**, select the repositories to use. 4. Click **Add selected repositories** to import the selected repositories into your projects. 
 
 ![](../../.gitbook/assets/iac_-_select_repo.png)
-
 1. A progress bar appears: click **View log** to see import log results - for example:
 
 ![](../../.gitbook/assets/iac-import-log.png)
@@ -61,11 +59,9 @@ Act on the recommendations produced by Snyk IaC.
 1. IaC results appear as direct issues in the relevant scanned configuration files. For example:
 
 ![IaC\_-\_issue\_details.png](../../.gitbook/assets/iac_-_issue_details.png)
-
 1. Click on an issue to see the details for that issue, and specific recommendations from Snyk IaC. For example:
 
 ![IaC\_-\_corrected.png](../../.gitbook/assets/iac_-_corrected.png)
-
 1. Edit the configuration file to fix the issue identified, based on the recommendations, then commit the change.
 2. Snyk automatically rescans the changed file, and you can see the change reflected in the issue display.
 

@@ -16,18 +16,11 @@ Snyk Infrastructure as Code supports:
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
 2. If you already imported your repositories for testing before cloud configuration file detection was enabled by your administrator, then you should re-import that repository again in order to import the relevant JSON or YAML configuration files:
-
-![2.1.png](../../.gitbook/assets/2.1.png)
-
-![2.2.png](../../.gitbook/assets/2.2.png)
-
-1. Every time a repository is scanned:
-   * Every supported manifest file and every supported configuration file is imported as a separate project, grouped together per repository, similar to this example:
-
-![3.png](../../.gitbook/assets/3.png)
-
-* If you re-imported the repository in order to import the cloud configuration files, then Snyk imports and tests the configuration files and also re-tests the already imported application manifest files - displaying the test time as "now".
-  1. Click the project link you're interested in, to view the scan results and to correct your configuration files accordingly:
-
-![4.png](../../.gitbook/assets/4.png)
+   1. ![2.1.png](../../.gitbook/assets/2.1.png)
+   2. ![2.2.png](../../.gitbook/assets/2.2.png)
+3. Every time a repository is scanned:
+   1. Every supported manifest file and every supported configuration file is imported as a separate project, grouped together per repository, similar to this example:
+   2. ![3.png](../../.gitbook/assets/3.png)
+4. If you re-imported the repository in order to import the cloud configuration files, then Snyk imports and tests the configuration files and also re-tests the already imported application manifest files - displaying the test time as "now".
+5. Click the project link you're interested in, to view the scan results and to correct your configuration files accordingly: ![4.png](../../.gitbook/assets/4.png)
 

@@ -34,7 +34,6 @@ Add projects for your selected container, to start scanning with Snyk.
 1. Click **Add Project**, and select the integration registry entry to add from:
 
 ![Containers-\_Add\_projects.png](../../.gitbook/assets/containers-_add_projects.png)
-
 1. Select the container repository and tags to import, then click **Add selected repositories** to import them into your projects:  
 
 ![image5.png](../../.gitbook/assets/image5%20%281%29.png)

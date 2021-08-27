@@ -15,7 +15,6 @@ You must sign up for an account with Snyk before you begin.
 3. When the following prompt appears, click **Install**.
 
 ![image1.png](../../.gitbook/assets/uuid-fe65f4bc-9578-016c-00dd-6ddb97d2ead7-en.png)
-
 1. When the installation ends, the Administration Plugins List loads, notifying the plugin has been uploaded.
 2. Ensure the plugin is enabled.
 

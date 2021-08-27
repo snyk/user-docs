@@ -9,7 +9,6 @@ To enable a feature using Snyk Preview:
 1. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Snyk Preview**:
 
 ![SnykPreview.png](../../.gitbook/assets/snykpreview.png)
-
 1. Click **Disabled** to enable the relevant feature. 3. Click **Save changes**.
 
 After the feature is enabled at the group level, all orgs within the group have this feature, and it cannot be disabled individually for these orgs.

@@ -19,7 +19,6 @@ To add images from DigitalOcean to Snyk:
 2. The **Which images do you want to test?** view appears, displaying all of the available images for your connected registry, grouped by each of your repositories, similar to the following:
 
 ![mceclip1.png](../../../.gitbook/assets/mceclip1-3-.png)
-
 1. Select single or multiple images to be imported to Snyk. Selection can be done by choosing a specific image or selecting an entire repository. You can also search by image name to find specific images to import. To finish, click **Add selected repositories** on the top-right. 5. A status bar appears at the top of the page as the images are imported; you can continue working in the meantime. 6. When the import ends:
 
 * You can view the newly imported image in the **Projects** page \(marked with a **NEW** tag\). Images are grouped by repository and are each linked individually to a detailed **Project** page.

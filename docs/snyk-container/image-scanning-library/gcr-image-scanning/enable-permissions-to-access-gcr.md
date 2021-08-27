@@ -14,11 +14,8 @@ From the relevant project in Google, ensure the you've created a service account
    * **Role** - Storage Object Viewer \(roles/storage.objectViewer\).
    * **Service account ID** - leave empty
    * **Key type** - JSON
-3. Click **Create**.
-
-   The key is generated for your project.
-
-4. Copy _the entire contents_ of the JSON file, which appears similar to the following:
+3. Click **Create** The key is generated for your project. 
+4. Copy _the entire contents_ of the JSON file, which appears similar to the following: 
 
 ![GCR\_key\_file\_contents.png](../../../.gitbook/assets/uuid-c4e3b781-e575-5ab8-6cea-b0a8654068c4-en.png)
 

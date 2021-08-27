@@ -48,7 +48,6 @@ You can configure token based authentication for npm Teams and npm Enterprise in
 &gt; **Integrations &gt; Package Repositories &gt; npm** 2. You should see this screen at the beginning:
 
 ![](../../.gitbook/assets/image%20%2835%29.png)
-
 1. Enter **Public URL** and **Token** values.
 2. Click **Save**.
 

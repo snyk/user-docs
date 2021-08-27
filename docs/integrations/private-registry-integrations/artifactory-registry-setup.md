@@ -37,7 +37,6 @@ Contact [support@snyk.io](mailto:support@snyk.io) if you want to add a private r
 1. Toggle **Artifactory \(publicly accessible\)** switch, you should now see a form for generating an Artifactory Broker token.  
 
 ![Screenshot\_2020-04-17\_at\_14.38.26.png](../../.gitbook/assets/screenshot_2020-04-17_at_14.38.26.png)
-
 1. Click on **Generate and Save** button
 2. Copy the token that was generated for you, it will be needed to set up a new Broker Client
 3. Set up a new [Broker Client](https://support.snyk.io/hc/en-us/articles/360004032397) in your prod environment:

@@ -22,7 +22,6 @@ This guide is relevant for Snyk UI integrations only, the CLI supports Ruby proj
 &gt; **General**. 2. Find the `RubyGems Bundler environment variables` section
 
 ![94445628-8fdd3980-019f-11eb-816e-2c61c5b99c5c.png](../../.gitbook/assets/94445628-8fdd3980-019f-11eb-816e-2c61c5b99c5c.png)
-
 1. Add environment variable names and values to define credentials for gem sources \(these are generally the same as the values you set on your developer machine and/or CI environments\), for example: Name: `BUNDLE_GITHUB__COM`, Value: `abcd0123generatedtoken:x-oauth-basic`
 2. Now test it out - open a Pull/Merge Request on a project that contains gems from your private registries to see a lockfile updated and included in the Snyk Fix Pull Request
 
