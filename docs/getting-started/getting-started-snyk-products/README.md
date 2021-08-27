@@ -19,7 +19,3 @@ To create a Snyk account:
 
 ![](../../.gitbook/assets/login6.png)
 
-### For more information
-
-See [Getting started with Snyk products](https://support.snyk.io/hc/en-us/sections/360004349758-Getting-started-with-Snyk-products) for more details.
-
