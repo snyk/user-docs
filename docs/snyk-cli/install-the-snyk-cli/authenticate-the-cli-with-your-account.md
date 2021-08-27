@@ -22,6 +22,5 @@ You can authenticate:
 1. Visit [your Snyk account](https://app.snyk.io/account) \(**Account Settings &gt; API Token** section\).
 2. In the **KEY** field, click **click to show**, then select and copy your API token:  
 
-![](../../.gitbook/assets/image%20%2811%29.png)
-1. In the CLI, run `snyk config set api=XXXXXXXX`
+![](../../.gitbook/assets/image%20%2811%29.png) 1. In the CLI, run `snyk config set api=XXXXXXXX`
 

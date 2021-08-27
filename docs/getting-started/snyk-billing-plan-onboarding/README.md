@@ -52,13 +52,13 @@ See [Git repository \(SCM\) integrations](https://support.snyk.io/hc/en-us/secti
 
 Use Snyk CI/CD integrations to prevent new vulnerabilities from passing through the build process, by adding an automated Snyk test to your CI/CD process:
 
-![](../../.gitbook/assets/ci-cd%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29%20%287%29.png)
+![](../../.gitbook/assets/ci-cd%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29%20%288%29.png)
 
 See [CI/CD integrations](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations) for more details.
 
 Snyk supports various different container registries, allowing you to scan all your images and monitor them over time for newly found vulnerabilities, whether the images are used in Prod, retired from use, or queued up for a big release.
 
-![](../../.gitbook/assets/image%20%284%29%20%283%29%20%283%29%20%283%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%283%29%20%283%29%20%283%29%20%283%29%20%281%29.png)
 
 See [Snyk Container](https://docs.snyk.io/snyk-container) for more details.
 

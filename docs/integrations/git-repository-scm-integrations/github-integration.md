@@ -7,11 +7,11 @@ Please note, GitHub integrates per user rather than per org. Setting up this int
 ## Setting up a GitHub Integration
 
 1. Go to the Integrations page and click on “GitHub”: ![mceclip1.png](../../.gitbook/assets/mceclip1-12-.png)
-1. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories: ![image16.png](../../.gitbook/assets/uuid-30383c92-fc68-c8cc-0ffe-b731c92b9967-en%20%282%29%20%282%29%20%284%29%20%285%29%20%285%29%20%286%29%20%286%29%20%284%29.png)
-1. When the GitHub authorization screen opens, click on "Authorize snyk" to provide it with an access to your repositories: ![mceclip0.png](../../.gitbook/assets/authorize%20%281%29%20%282%29%20%286%29%20%281%29%20%286%29.png)
-1. Select the repos you'd like to import to Snyk. When done, click on the **Add selected repositories** button, at the top of the page. Once clicked, Snyk will start scanning the selected repos for dependency files \(i.e. package.json, pom.xml, etc\) in the entire directory tree and import them to Snyk as projects:
+2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories: ![image16.png](../../.gitbook/assets/uuid-30383c92-fc68-c8cc-0ffe-b731c92b9967-en%20%282%29%20%282%29%20%284%29%20%285%29%20%285%29%20%286%29%20%286%29%20%283%29.png)
+3. When the GitHub authorization screen opens, click on "Authorize snyk" to provide it with an access to your repositories: ![mceclip0.png](../../.gitbook/assets/authorize%20%281%29%20%282%29%20%286%29%20%281%29%20%283%29.png)
+4. Select the repos you'd like to import to Snyk. When done, click on the **Add selected repositories** button, at the top of the page. Once clicked, Snyk will start scanning the selected repos for dependency files \(i.e. package.json, pom.xml, etc\) in the entire directory tree and import them to Snyk as projects:
 
-![uuid-b744bfb4-4a09-3f09-3275-986c855ee5be-en.jpg](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29%20%287%29%20%281%29.jpg)
+![uuid-b744bfb4-4a09-3f09-3275-986c855ee5be-en.jpg](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29%20%287%29%20%2810%29.jpg)
 
 1. The imported projects now appear in your Projects page and are continuously checked for vulnerabilities.
 
@@ -25,7 +25,7 @@ Snyk will produce advanced security reports, allowing you to explore the vulnera
 
 This is an example of a project level security report:
 
-![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%286%29%20%281%29%20%281%29.png)
+![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%286%29%20%281%29%20%2810%29.png)
 
 ### **2. Projects monitoring and automatic fix pull requests**
 
@@ -95,9 +95,7 @@ In order to use this feature, you'll need to do the following:
 1. Open GitHub's Integrations Settings page in Snyk app by clicking on _Settings_ → _Integrations_ →  _GitHub_
 2. Enable the toggle button under the _Open fix and upgrade pull requests from a fixed GitHub_ _account_  setting:
 
-![Screen\_Shot\_2020-09-29\_at\_21.27.30.png](../../.gitbook/assets/screen-shot-2020-09-29-at-21.27.30.png)
-1. Follow the in-page instructions for creating a personal access token in GitHub
-2. Provide the newly generated token to Snyk so it can be used to perform operations in GitHub \(i.e. opening Fix PRs and etc\)
+![Screen\_Shot\_2020-09-29\_at\_21.27.30.png](../../.gitbook/assets/screen-shot-2020-09-29-at-21.27.30.png) 1. Follow the in-page instructions for creating a personal access token in GitHub 2. Provide the newly generated token to Snyk so it can be used to perform operations in GitHub \(i.e. opening Fix PRs and etc\)
 
 **Important note:**
 

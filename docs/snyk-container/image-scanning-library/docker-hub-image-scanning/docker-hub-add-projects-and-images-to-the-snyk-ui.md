@@ -11,7 +11,7 @@ Snyk tests and monitors Docker Hub repositories and images by evaluating root fo
 
 **Steps:**
 
-1. Log in to your account and navigate to the relevant group and organization that you want to manage. ![](../../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%2820%29.gif)
+1. Log in to your account and navigate to the relevant group and organization that you want to manage. ![](../../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%2816%29.gif)
 2. Go to Projects, and click Add projects. The list of integrations already configured on your account opens, similar to the following: ![AddProjectMenu.png](../../../.gitbook/assets/uuid-dd01aab7-482f-0fc2-01de-c2427a14a0e0-en.png)
    1. The Which images do you want to test? view appears, displaying all of the available images for the registry to which you connected, grouped by each of your repositories, similar to the following:
    2. ![](../../../.gitbook/assets/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en%20%281%29%20%281%29%20%282%29.png)
@@ -28,7 +28,7 @@ Snyk tests and monitors Docker Hub repositories and images by evaluating root fo
 
 You can now also filter to view only those projects:
 
-![](../../../.gitbook/assets/uuid-ce306bb8-1d6d-c895-bdb5-3a7cd551977b-en-1-%20%281%29%20%281%29%20%281%29.png)
+![](../../../.gitbook/assets/uuid-ce306bb8-1d6d-c895-bdb5-3a7cd551977b-en-1-%20%281%29%20%281%29%20%282%29.png)
 
 Once repositories and images are imported, a confirmation appears in green at the top of the screen. Docker Hub files are indicated with a unique icon ![](../../../.gitbook/assets/docker-hub-logo.png) .
 

@@ -8,16 +8,15 @@ Snyk allows detection of vulnerabilities in your application dependencies from c
 
 After you integrate with a container registry and import your projects, we scan your image and test for vulnerabilities.
 
-### Enable application vulnerabilities scan from container images
+## Enable application vulnerabilities scan from container images
 
 1. Navigate to your container registry integration settings
 
-![](../../.gitbook/assets/mceclip0-3-.png)
-1. Enable the _**Detect application vulnerabilities**_ capability and save the changes:
+![](../../.gitbook/assets/mceclip0-3-.png) 1. Enable the _**Detect application vulnerabilities**_ capability and save the changes:
 
 ![](../../.gitbook/assets/mceclip1%20%281%29.png)
 
-### View vulnerabilities and licensing issues
+## View vulnerabilities and licensing issues
 
 After the feature is enabled, you can see:
 
@@ -28,9 +27,9 @@ When an image is imported to Snyk, it appears under its registry record in the *
 
 With this feature enabled, you can also see nested manifest files detected in the image and their vulnerabilities and licensing issues.
 
-![](../../.gitbook/assets/mceclip2%20%281%29%20%281%29%20%281%29%20%283%29%20%283%29%20%284%29%20%286%29%20%281%29%20%289%29.png)
+![](../../.gitbook/assets/mceclip2%20%281%29%20%281%29%20%281%29%20%283%29%20%283%29%20%284%29%20%286%29%20%281%29%20%282%29.png)
 
-### Automated scanning
+## Automated scanning
 
 Snyk scans the image regularly based on your project’s settings, and updates you via email or Slack - based on your configuration - when any new vulnerabilities are identified in both the operating system and application dependencies.
 

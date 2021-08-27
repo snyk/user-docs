@@ -138,7 +138,7 @@ The following table describes the Snyk pipe parameters.
             <p>From the pipeline YAML file that you&apos;re building, enter $SNYK_TOKEN
               as the value for the SNYK_TOKEN parameter in the Snyk pipe.</p>
             <p>
-              <img src="../../.gitbook/assets/uuid-6ce8d058-882c-c810-f303-c59dcaeeeda8-en (3) (3) (3).png"
+              <img src="../../.gitbook/assets/uuid-6ce8d058-882c-c810-f303-c59dcaeeeda8-en (3) (3) (3) (3).png"
               alt="Snyk_token_in_pipeline.png" />
             </p>
           </li>

@@ -41,14 +41,7 @@ Select how you would like to authenticate with Snyk to give AWS CodePipeline per
 
 The following options are available for configuration:
 
-![](../../.gitbook/assets/configure.png)
-1. **Snyk Organization:** Select the Snyk organization where findings reports are saved.
-2. **Vulnerability handling**: Select to fail a pipeline if a vulnerability is found. If Fail on issues is selected, the pipeline will fail depending on the sub-options selected. The sub options available are:
-   1. **All**: Selecting all fails when there is at least one vulnerability that can be either upgraded or patched.
-   2. **Upgradable**: Selecting upgradable fails when there is at least one vulnerability that can be upgraded.
-   3. **Patchable**: Selecting patchable fails when there is at least one vulnerability that can be patched.
-3. **Block deployment for vulnerabilities of type**
-4. **Block deployment for vulnerabilities with a minimum severity of**: \(**low**\|**medium**\|**high**\|**critical**\) Only report vulnerabilities of provided level or higher.
+![](../../.gitbook/assets/configure.png) 1. **Snyk Organization:** Select the Snyk organization where findings reports are saved. 2. **Vulnerability handling**: Select to fail a pipeline if a vulnerability is found. If Fail on issues is selected, the pipeline will fail depending on the sub-options selected. The sub options available are: 1. **All**: Selecting all fails when there is at least one vulnerability that can be either upgraded or patched. 2. **Upgradable**: Selecting upgradable fails when there is at least one vulnerability that can be upgraded. 3. **Patchable**: Selecting patchable fails when there is at least one vulnerability that can be patched. 3. **Block deployment for vulnerabilities of type** 4. **Block deployment for vulnerabilities with a minimum severity of**: \(**low**\|**medium**\|**high**\|**critical**\) Only report vulnerabilities of provided level or higher.
 
 {% hint style="info" %}
 You can change the Configuration settings of a previously-configured stage, by clicking on the **Snyk** link.

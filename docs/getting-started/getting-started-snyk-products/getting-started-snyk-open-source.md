@@ -36,8 +36,7 @@ Choose a source code integration, to allow Snyk to work on a project.
 2. Select **Integrations &gt; Source control**.
 3. Click the source control system \(for example, GitHub\) to integrate with Snyk:   
 
-![Screenshot\_2021-06-22\_at\_10.58.18.png](../../.gitbook/assets/screenshot-2021-06-22-at-10.58.18.png)
-1. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
+![Screenshot\_2021-06-22\_at\_10.58.18.png](../../.gitbook/assets/screenshot-2021-06-22-at-10.58.18.png) 1. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
 
 See [DevOps integrations & languages](https://support.snyk.io/hc/en-us/articles/360011733538-DevOps-integrations-languages) for more details
 
@@ -48,7 +47,7 @@ Add projects to test with Snyk, by choosing repositories for Snyk to test and mo
 1. Select **Projects** from snyk.io.
 2. Select the tool to add the project from \(for example GitHub\):
 
-![Open-Source-Add-Projects.png](../../.gitbook/assets/open-source-add-projects%20%283%29%20%285%29%20%285%29%20%285%29%20%281%29.png) 3. In **Personal and Organization repositories**, select the repositories to use:
+![Open-Source-Add-Projects.png](../../.gitbook/assets/open-source-add-projects%20%283%29%20%285%29%20%285%29%20%285%29%20%2812%29.png) 3. In **Personal and Organization repositories**, select the repositories to use:
 
 ![Screenshot\_2021-04-09\_at\_17.08.24.png](../../.gitbook/assets/screenshot_2021-04-09_at_17.08.24%20%281%29%20%281%29.png) 4. Click **Add selected repositories** to import the selected repositories into your projects. This also: 5. Sets Snyk to run a regular check \(daily by default\) for vulnerabilities. 6. Creates a Webhook, so when you change code, Snyk tests your pull / merge requests, to check that new dependencies do not introduce more vulnerabilities. 1. A progress bar appears: click **View log** to see log results. 2. Project import completes.
 
@@ -62,8 +61,7 @@ You can now view vulnerability results for imported projects. The **Projects** t
 
 1. Click on an imported project to see vulnerability information for that project, including the number of issues found, grouped by severity level:
 
-![View\_vulns\_\_overview.png](../../.gitbook/assets/view_vulns__overview.png)
-1. Click on an entry to open the issues view for that entry, including the module, where it was introduced, and the remediation to fix it, plus more details about the vulnerability itself:
+![View\_vulns\_\_overview.png](../../.gitbook/assets/view_vulns__overview.png) 1. Click on an entry to open the issues view for that entry, including the module, where it was introduced, and the remediation to fix it, plus more details about the vulnerability itself:
 
 ![Detailed\_vuln\_information.png](../../.gitbook/assets/detailed-vuln-information%20%283%29%20%284%29%20%284%29%20%284%29%20%286%29%20%287%29%20%285%29%20%281%29.png)
 
@@ -81,7 +79,7 @@ Click **Fix this vulnerability** to upgrade \(or patch\) to fix an individual is
 
 1. The **Open a Fix PR** screen opens and indicates the vulnerabilities you selected:
 
-![Screenshot\_2021-04-09\_at\_17.40.00.png](../../.gitbook/assets/screenshot_2021-04-09_at_17.40.00%20%283%29%20%284%29%20%284%29%20%284%29%20%285%29%20%287%29.png) 3. Check any additional issues you want to fix, or uncheck items to remove them from the fix. 4. Scroll down to the bottom of the screen and click **Open a Fix PR**. 5. Snyk now actions this PR, then a results screen appears:
+![Screenshot\_2021-04-09\_at\_17.40.00.png](../../.gitbook/assets/screenshot_2021-04-09_at_17.40.00%20%283%29%20%284%29%20%284%29%20%284%29%20%285%29%20%285%29.png) 3. Check any additional issues you want to fix, or uncheck items to remove them from the fix. 4. Scroll down to the bottom of the screen and click **Open a Fix PR**. 5. Snyk now actions this PR, then a results screen appears:
 
 ![Screenshot\_2021-04-09\_at\_17.44.26.png](../../.gitbook/assets/screenshot_2021-04-09_at_17.44.26%20%281%29.png) 6. Optionally, select the **Files changed** tab to see details of the changes made.
 

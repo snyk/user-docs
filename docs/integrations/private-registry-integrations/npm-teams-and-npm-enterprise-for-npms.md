@@ -31,9 +31,8 @@ This feature is available with Enterprise plans. See [Pricing plans](https://sny
 * If you want to configure this registry as **default registry url**, then leave scope blank
 * If you want to configure **only scoped packages** to use this registry then add a scope
 * If you want to add a mix of **default registry url** and **scoped packages**, add multiple configurations - one for the default and one per scope.
-
-1. When you have added all the registries and scopes you want, click **Update settings**.
-2. Now test it out - open a Pull/Merge Request on a project that contains private dependencies to see a lockfile updated and included in the Snyk Fix Pull Request where previously none was generated.
+* When you have added all the registries and scopes you want, click **Update settings**.
+* Now test it out - open a Pull/Merge Request on a project that contains private dependencies to see a lockfile updated and included in the Snyk Fix Pull Request where previously none was generated.
 
 ## npm Teams & npm Enterprise Registry Settings <a id="h_bab29371-80cb-4e6e-ad3b-e930b24700b1"></a>
 
@@ -47,7 +46,5 @@ You can configure token based authentication for npm Teams and npm Enterprise in
 
 &gt; **Integrations &gt; Package Repositories &gt; npm** 2. You should see this screen at the beginning:
 
-![](../../.gitbook/assets/image%20%2835%29.png)
-1. Enter **Public URL** and **Token** values.
-2. Click **Save**.
+![](../../.gitbook/assets/image%20%2835%29.png) 1. Enter **Public URL** and **Token** values. 2. Click **Save**.
 

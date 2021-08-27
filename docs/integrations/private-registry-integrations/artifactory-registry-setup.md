@@ -36,17 +36,13 @@ Contact [support@snyk.io](mailto:support@snyk.io) if you want to add a private r
 
 1. Toggle **Artifactory \(publicly accessible\)** switch, you should now see a form for generating an Artifactory Broker token.  
 
-![Screenshot\_2020-04-17\_at\_14.38.26.png](../../.gitbook/assets/screenshot_2020-04-17_at_14.38.26.png)
-1. Click on **Generate and Save** button
-2. Copy the token that was generated for you, it will be needed to set up a new Broker Client
-3. Set up a new [Broker Client](https://support.snyk.io/hc/en-us/articles/360004032397) in your prod environment:
-4. Pull Broker Artifactory image from Dockerhub:
+![Screenshot\_2020-04-17\_at\_14.38.26.png](../../.gitbook/assets/screenshot_2020-04-17_at_14.38.26.png) 1. Click on **Generate and Save** button 2. Copy the token that was generated for you, it will be needed to set up a new Broker Client 3. Set up a new [Broker Client](https://support.snyk.io/hc/en-us/articles/360004032397) in your prod environment: 4. Pull Broker Artifactory image from Dockerhub:
 
-   ```text
+```text
          docker pull snyk/broker:artifactory
-   ```
+```
 
-5. Run docker image and provide environment variables
+1. Run docker image and provide environment variables
 
    ```text
          docker run --restart=always \
@@ -68,6 +64,6 @@ Contact [support@snyk.io](mailto:support@snyk.io) if you want to add a private r
       2. **Basic auth**: URL encode both and user info to avoid errors that will prevent authentication
       3. **No basic auth**: Omit`:@` credentials 
 
-   3. `RES_BODY_URL_SUB` is the URL of the Artifactory without credentials, and with http protocol and is required for NPM integration 
+   3. `RES_BODY_URL_SUB` is the URL of the Artifactory without credentials, and with http protocol and is required for NPM integration
    4. Check connection status by refreshing Artifactory Integration Settings page, no connection error should be displayed
 

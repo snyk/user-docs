@@ -10,8 +10,8 @@ Use Snyk Code with the standard Snyk web interface to find and fix vulnerabiliti
 See [Getting started with Snyk Code](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-with-snyk-code) for details of how to import and scan projects.
 {% endhint %}
 
-  1. In your **Projects** area, select the project to open: ![select-project.png](../.gitbook/assets/select-project.png)
-  2. Snyk Code displays information and vulnerability cards for that project: ![SnykCofe\_Priority\_Score.png](../.gitbook/assets/snykcofe_priority_score.png)
+1. In your **Projects** area, select the project to open: ![select-project.png](../.gitbook/assets/select-project.png)
+2. Snyk Code displays information and vulnerability cards for that project: ![SnykCofe\_Priority\_Score.png](../.gitbook/assets/snykcofe_priority_score.png)
 
 Information available shows standard Snyk project information \(see [Snyk projects](https://support.snyk.io/hc/en-us/sections/360004724958-Snyk-projects)\), including:
 
@@ -82,9 +82,9 @@ Full details include all the information in the vulnerability card, plus:
 
 ### Open the source code file
 
-  1. Click the code link to open the source code file itself \(in this example, in GitHub\): ![](../.gitbook/assets/open-code1.png)
-  2. The file opens, showing you exactly where to fix the vulnerability \(in this example, by adding the sanitation required to the input\). ![](../.gitbook/assets/open-code2.png)
-  3. You can now make the fix as required, to address the vulnerability in your code.
+1. Click the code link to open the source code file itself \(in this example, in GitHub\): ![](../.gitbook/assets/open-code1.png)
+2. The file opens, showing you exactly where to fix the vulnerability \(in this example, by adding the sanitation required to the input\). ![](../.gitbook/assets/open-code2.png)
+3. You can now make the fix as required, to address the vulnerability in your code.
 
 ## Example: Cross-site Scripting \(XSS\)
 
