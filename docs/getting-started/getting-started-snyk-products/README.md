@@ -4,11 +4,8 @@
 
 To create a Snyk account:
 
-1. Go to [https://snyk.io/](https://snyk.io/) and click **QUICK START** from the menu:  
-
-![](../../.gitbook/assets/login0.png)
-
-1. When prompted, select your preferred way to log in:  
+1. Go to [https://snyk.io/](https://snyk.io/) and click **SIGN UP** from the menu:  
+2. When prompted, select your preferred way to log in:  
 
 ![](../../.gitbook/assets/screen-shot-2021-08-18-at-12.36.59-pm.png)
 
