@@ -30,7 +30,7 @@ See [Scoring security vulnerabilities 101: Introducing CVSS for CVEs](https://sn
 
 Severity levels are one factor feeding into Snyk's Priority Score for each vulnerability, along with factors such as [Snyk’s Exploit Maturity](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/) and [Reachable Vulnerabilities](https://snyk.io/blog/optimizing-prioritization-with-deep-application-level-context/) information. Together, this scoring helps developers determine which vulnerabilities should be addressed first.
 
-See [Snyk Priority Score](https://support.snyk.io/hc/en-us/articles/360009884837-Prioritizing-Snyk-issues) for details of how severity levels are used in Snyk's priority scores.
+See [Snyk Priority Score](../../fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score.md) for details of how severity levels are used in Snyk's priority scores.
 
 ## Viewing severity levels in Snyk
 

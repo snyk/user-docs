@@ -25,7 +25,7 @@ See [Getting started with the CLI](https://docs.snyk.io/snyk-cli/guides-for-our-
 
 A test is run when you add a new project or click the re-test button.
 
-See [Getting started with Snyk products](https://support.snyk.io/hc/en-us/sections/360004349758-Getting-started-with-Snyk-products) for details.
+See [Getting started with Snyk products](../../getting-started/getting-started-snyk-products/) for details.
 
 ### Run tests with the API
 

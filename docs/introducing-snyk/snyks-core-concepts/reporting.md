@@ -1,10 +1,10 @@
 # Reporting
 
-Snyk reports show the status of all of your projects, issues, dependencies, and licenses, for your organization or group. For more details, see [Reports](https://support.snyk.io/hc/en-us/sections/360001138198-Reports).
+Snyk reports show the status of all of your projects, issues, dependencies, and licenses, for your organization or group. For more details, see [Reports](../../reports-1/).
 
 {% hint style="info" %}
 **Feature availability**  
-This feature is available with all paid plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+This feature is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 #### Dependency reports

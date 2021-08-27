@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**  
-Some functions \(such as Groups\) are only available on certain plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+Some functions \(such as Groups\) are only available on certain plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 Snyk has a hierarchy that allows you to control access to features such as reports. This hierarchy is as follows:
@@ -17,7 +17,7 @@ Typically, a Snyk group represents the entire company or business division.
 
 Groups can contain multiple organizations, allowing you to collaborate with multiple teams.
 
-See [What’s a Snyk group?](https://support.snyk.io/hc/en-us/articles/360004037617-What-s-a-Snyk-group-)
+See [What’s a Snyk group?](../../user-and-group-management/managing-groups-and-organizations/whats-a-snyk-group.md)
 
 ### Snyk organizations
 
@@ -29,13 +29,13 @@ Organizations can contain multiple projects. For example, if an organization rep
 When you sign up to Snyk using a social login, you have a default organization. Any projects you add appear in this organization by default.
 {% endhint %}
 
-See [What’s a Snyk organization?](https://support.snyk.io/hc/en-us/articles/360004037637-What-s-a-Snyk-organization-)
+See [What’s a Snyk organization?](../../user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization.md)
 
 ### Snyk projects
 
 Projects are contained in organizations. Snyk projects can include manifest files, configuration files, and container images.
 
-See [Snyk projects](https://support.snyk.io/hc/en-us/sections/360004724958-Snyk-projects).
+See [Snyk projects](../../getting-started/introduction-to-snyk-projects/).
 
 ## User access: member types
 
@@ -51,5 +51,5 @@ Snyk provides four different types of members or users:
 Group administrators and collaborators are available with Business and Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-More on [user and group management](https://docs.snyk.io/user-and-group-management).
+More on [user and group management](../../user-and-group-management/).
 
