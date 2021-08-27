@@ -33,10 +33,8 @@ Choose a source code integration, to allow Snyk to work on a project.
 
 1. Log in to [Snyk.io](http://snyk.io/).
 2. Select **Integrations &gt; Source control**.
-3. Click the source control system \(for example, GitHub\) to integrate with Snyk:
-
-![Screenshot\_2021-06-22\_at\_10.58.18.png](../../.gitbook/assets/screenshot-2021-06-22-at-10.58.18.png)
-1. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
+3. Click the source control system \(for example, GitHub\) to integrate with Snyk: ![Screenshot\_2021-06-22\_at\_10.58.18.png](../../.gitbook/assets/screenshot-2021-06-22-at-10.58.18.png)
+4. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
 
 See [DevOps integrations & languages](https://support.snyk.io/hc/en-us/articles/360011733538-DevOps-integrations-languages) for more details.
 
@@ -49,13 +47,9 @@ If you already have projects added, you can skip this step.
 Add projects to test with Snyk, by choosing repositories for Snyk to test and monitor.
 
 1. Select **Projects** from [snyk.io](http://snyk.io/).
-2. Select the tool to add the project from \(for example GitHub\):
-
-![](../../.gitbook/assets/open-source-add-projects%20%283%29%20%285%29%20%285%29%20%285%29%20%283%29.png)
-1. In **Personal and Organization repositories**, select the repositories to use:
-
-![](../../.gitbook/assets/iac_-_select_repo.png)
-1. Click **Add selected repositories** to import the selected repositories into your projects. 
+2. Select the tool to add the project from \(for example GitHub\): ![](../../.gitbook/assets/open-source-add-projects%20%283%29%20%285%29%20%285%29%20%285%29%20%283%29.png)
+3. In **Personal and Organization repositories**, select the repositories to use: ![](../../.gitbook/assets/iac_-_select_repo.png)
+4. Click **Add selected repositories** to import the selected repositories into your projects. 
 
 This sets Snyk to run a regular check \(daily by default\) for your proprietary code vulnerabilities. 5. A progress bar appears: click **View log** to see log results. 6. Project import completes.
 
@@ -69,10 +63,8 @@ See [Snyk projects](https://support.snyk.io/hc/en-us/sections/360004724958-Snyk-
 
 You can now view vulnerability results for imported projects. The **Projects** tab appears by default after import, showing vulnerability information for projects you've imported.
 
-1. Click on an imported project to see vulnerability information for that project, including the number of issues found, grouped by severity :
-
-![View-Vulns1.png](../../.gitbook/assets/view-vulns1.png)
-1. Click on an entry to open the issues view for that entry. For each issue, this shows the exploitable code snippet and a description of the code flaw that may lead to this vulnerability if not fixed:
+1. Click on an imported project to see vulnerability information for that project, including the number of issues found, grouped by severity : ![View-Vulns1.png](../../.gitbook/assets/view-vulns1.png)
+2. Click on an entry to open the issues view for that entry. For each issue, this shows the exploitable code snippet and a description of the code flaw that may lead to this vulnerability if not fixed:
 
 ![](../../.gitbook/assets/view-vulns2.png)
 

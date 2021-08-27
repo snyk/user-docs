@@ -22,11 +22,9 @@ Snyk supports all languages that are supported by both Eclipse and Snyk. Additio
 ## Installing the Eclipse Snyk plugin
 
 1. Navigate to the Marketplace from within your running Eclipse instance.
-2. Search for Snyk and click Install.
-
-![image6.png](../../.gitbook/assets/uuid-01198b42-f020-2cc5-c20f-93817eeb44a4-en.png)
-1. When prompted accept the license agreement and the **Snyk Security** certificate to complete the installation.
-2. Restart the Eclipse instance and navigate to **Eclipse Preferences** to ensure **Snyk Vuln Scanner** now appears in the list:
+2. Search for Snyk and click Install. ![image6.png](../../.gitbook/assets/uuid-01198b42-f020-2cc5-c20f-93817eeb44a4-en.png)
+3. When prompted accept the license agreement and the **Snyk Security** certificate to complete the installation.
+4. Restart the Eclipse instance and navigate to **Eclipse Preferences** to ensure **Snyk Vuln Scanner** now appears in the list: 
 
 ![image7.png](../../.gitbook/assets/uuid-928012b7-8e49-fe6f-4965-77c5db026784-en.png)
 
@@ -38,11 +36,9 @@ From the Snyk results click
 
 whenever you are ready to scan your projects. It shouldn’t take too long for the results to appear—but no worries! You can continue to work as usual in the meantime anyway.
 
-If for any reason you need to stop the scan before the build ends, click
+If for any reason you need to stop the scan before the build ends, click:
 
 ![image11.png](../../.gitbook/assets/uuid-29be01e6-6913-25f8-15ed-a8cf47230fa0-en.png)
-
-.
 
 If you only want to scan a single project in your workspace, navigate to the Package Explorer panel, right-click the root of the project you want to test, and then choose **Snyk test**.
 

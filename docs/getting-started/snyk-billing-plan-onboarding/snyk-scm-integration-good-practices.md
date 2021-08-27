@@ -119,14 +119,9 @@ If your SCM is already configured, go to the next stage.
 
 Below is an example of how you would set up your an integration for **Github.com**
 
-1. Go to the **Integrations** tab, and click on “GitHub”.
-
-![Int2.png](../../.gitbook/assets/int2.png)
-
-  2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories:
-
-![select-github.png](../../.gitbook/assets/select-github.png)
-1. Click **Authorize snyk** to provide Snyk with access to your repositories:
+1. Go to the **Integrations** tab, and click on “GitHub”. ![Int2.png](../../.gitbook/assets/int2.png)
+2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories: ![select-github.png](../../.gitbook/assets/select-github.png)
+3. Click **Authorize snyk** to provide Snyk with access to your repositories:
 
 ![authorize.png](../../.gitbook/assets/authorize%20%281%29%20%282%29%20%286%29%20%281%29%20%287%29.png)
 

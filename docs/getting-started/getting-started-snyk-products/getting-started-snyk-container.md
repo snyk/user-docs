@@ -31,16 +31,11 @@ Choose a container registry integration, to connect the registry with Snyk:
 
 Add projects for your selected container, to start scanning with Snyk.
 
-1. Click **Add Project**, and select the integration registry entry to add from:
-
-![Containers-\_Add\_projects.png](../../.gitbook/assets/containers-_add_projects.png)
-1. Select the container repository and tags to import, then click **Add selected repositories** to import them into your projects:  
-
-![image5.png](../../.gitbook/assets/image5%20%281%29.png)
-
-Importing also sets Snyk to run a daily check on the repositories for vulnerabilities.
-
-1. A progress bar appears: click **View log** to see log results.
+1. Click **Add Project**, and select the integration registry entry to add from: ![Containers-\_Add\_projects.png](../../.gitbook/assets/containers-_add_projects.png)
+2. Select the container repository and tags to import, then click **Add selected repositories** to import them into your projects:
+   1. ![image5.png](../../.gitbook/assets/image5%20%281%29.png)
+   2. Importing also sets Snyk to run a daily check on the repositories for vulnerabilities. 
+3. A progress bar appears: click **View log** to see log results.
 
 {% hint style="info" %}
 If you encounter any errors during import, see the [Importing projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects) information.
