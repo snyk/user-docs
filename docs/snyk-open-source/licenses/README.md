@@ -4,7 +4,7 @@
 
 {% hint style="info" %}
 **Feature availability**  
-Licenses are available to all paid plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+Licenses are available to all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 Every time you test your projects either with the CLI or from our app, your projects are scanned for not only vulnerabilities but also for license compliance. This includes all of your direct and indirect dependencies. Snyk scans your manifest files, and then checks for license issues against Snyk’s known licenses.
