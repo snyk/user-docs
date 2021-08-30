@@ -13,7 +13,7 @@ This documentation assumes you have used Snyk, and are familiar with core Snyk f
 * [Getting started with Snyk products](https://support.snyk.io/hc/en-us/sections/360004349758-Getting-started-with-Snyk-products) 
 * [Quick start guide and general overview](https://www.youtube.com/watch?v=PCculVmSPtg&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=6) \(video\)
 
-## Rollout strategy: good practices
+### Rollout strategy: good practices
 
 These good practice suggestions help you design your rollout plan to align to your team’s success criteria and targets.
 
