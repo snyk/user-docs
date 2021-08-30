@@ -19,7 +19,7 @@ For more details, see:
 * [Configure your integration to find security issues in your Kubernetes configuration files](https://docs.snyk.io/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/configure-integration-for-security-issues-in-kubernetes-configuration-files)
 * [Configure your integration to find security issues in your Terraform files](https://docs.snyk.io/snyk-infrastructure-as-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess).
 
-## Stage 1: Import projects
+### Stage 1: Import projects
 
 Import projects to test with Snyk, by choosing repositories for Snyk to test and monitor.
 
