@@ -2,7 +2,7 @@
 
 You can natively connect Snyk Code to your local git server. This allows customers who are using a self-hosted git provider such as GitHub Enterprise to find, prioritize and fix potential vulnerabilities in their 1st-party code.
 
-## Code access components
+### Code access components
 
 * **Broker server**: Running on Snyk SaaS backend
 * **Broker client**: A [Docker image](https://hub.docker.com/r/snyk/broker/) deployed in your infrastructure.
@@ -16,9 +16,9 @@ The Broker client provides the Agent with the connection details. The Agent uses
 
 See [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker/broker-introduction) documentation for more details.
 
-## Setup
+### Setup
 
-### Prerequisites
+#### Prerequisites
 
 Before you begin with the setup process, please make sure to have a server that supports these minimal requirements for running the Broker client and Code agent:
 
@@ -27,7 +27,7 @@ Before you begin with the setup process, please make sure to have a server that 
 * Disk space: 2Gb \(available disk size determines maximum cloneable repository size\)
 * Network: code upload performance will be affected by slow Internet connection
 
-### Set up the remote connection
+#### Set up the remote connection
 
 To use the broker client with code-agent deployment run:
 
