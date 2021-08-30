@@ -31,7 +31,7 @@ To scan your dependencies, you must ensure you have first installed the relevant
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project.
 
-## Snyk CLI tool for Python projects
+### Snyk CLI tool for Python projects
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project.
 
@@ -137,7 +137,7 @@ When scanning your Python project for vulnerabilities, use these options to modi
   </tbody>
 </table>
 
-## Git services for Python projects
+### Git services for Python projects
 
 Python projects can be imported from any of the Git repositories we support.
 
@@ -155,7 +155,7 @@ For example:
 dephell deps convert --from=conda --to=requirements.txt
 ```
 
-## Using different Python versions
+### Using different Python versions
 
 Some Python projects may have dependencies that are only valid using Python 3. By default, Snyk scans with Python 2.
 

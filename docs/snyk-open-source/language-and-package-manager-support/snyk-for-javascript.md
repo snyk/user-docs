@@ -267,13 +267,9 @@ From the Snyk UI, use these parameters to customize your language preferences fo
 
 ### Update language preferences
 
-1. Log in to your account and navigate to the relevant group and organization that you want to manage.
+![](../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%281%29.gif)
 
-![AddProjectMenu.gif](../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%281%29.gif)
-
-1. Click on settings
-
-![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
-
-&gt; **Languages.** 3. Click **Edit settings** for JavaScript to configure preferences for your JavaScript \(npm and Yarn\) projects in this organization.
+1. Log in to your account and navigate to the relevant group and organization that you want to manage
+2. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Languages**
+3. Click **Edit settings** for JavaScript to configure preferences for your JavaScript \(npm and Yarn\) projects in this organization
 

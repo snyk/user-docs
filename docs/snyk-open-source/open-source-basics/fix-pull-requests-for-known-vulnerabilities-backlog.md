@@ -18,17 +18,15 @@ To know when your last 24-hour window was kicked off, check the project page for
 
 To enable at the global integration level:
 
-1. Click on settings
-
-![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
-
-&gt; **Integrations**. 2. Select an SCM integration \(for example, GitHub\). 3. Enable **Known vulnerabilities \(backlog\)**
+1. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**
+2. Select an SCM integration \(for example, GitHub\)
+3. Enable **Known vulnerabilities \(backlog\)**
 
 **Apply changes to all overridden projects** will update all of the individual project settings for "Automatic fix pull requests". If a project previously had its own settings for this, clicking on this button will override it with the global setting.
 
 ![](../../.gitbook/assets/screen_shot_2021-05-24_at_12.23.38_pm.png)
 
-## Enable or disable pull requests for a single project
+### Enable or disable pull requests for a single project
 
 Enabling/disabling at a project level will override this single project rather than inheriting it from the global integration setting.
 

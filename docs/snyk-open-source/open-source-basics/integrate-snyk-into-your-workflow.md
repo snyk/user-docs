@@ -2,7 +2,7 @@
 
 This example shows how Snyk can integrate into your GitHub-based workflow.
 
-## Step 1: Set up environment
+### Step 1: Set up environment
 
 1. Open up [Snyk CLI](https://docs.snyk.io/snyk-cli), and run a git clone command on the **goof** repository.
 
@@ -17,7 +17,7 @@ This example shows how Snyk can integrate into your GitHub-based workflow.
       git checkout add_vulns
    ```
 
-## Step 2: Add an open source dependency
+### Step 2: Add an open source dependency
 
 Review the **package.json** manifest file in your cloned goof application, to see multiple direct dependencies listed:
 
@@ -58,7 +58,7 @@ Tip: remember to place a comma after the previous dependency.
 Tip: if this file already exists, run rm package-lock.json to remove it**.**
 {% endhint %}
 
-## Step 3: Commit and review changes
+### Step 3: Commit and review changes
 
 * Commit your change locally, checking the status of the change in our local git repository, then adding the change to our local git, then committing it:  
 
@@ -80,9 +80,9 @@ GitHub has received your changes on your **add\_vulns** branch.
 
 * In GitHub, click **Compare & pull request** to compare the **add\_vulns** branch with the **master** branch and generate a pull request:
 
-![click-compare.png](../../.gitbook/assets/click-compare.png)
+![](../../.gitbook/assets/click-compare.png)
 
-## Step 4: Snyk tests pull request checks
+### Step 4: Snyk tests pull request checks
 
 Snyk automatically tests your pull request for vulnerability and license checks in the merge process:
 
@@ -92,5 +92,5 @@ As the PR workflow completed, Snyk validated the vulnerability and license polic
 
 This allows you to establish a security gate and prevent pull requests from adding new vulnerabilities, or new open source libraries that do not meet your license policy, to the source code baseline.
 
-For more details on PR checks see the article on our [GitHub integration](https://support.snyk.io/hc/en-us/articles/360004032117).
+For more details on PR checks see the article on our [GitHub integration](../../integrations/git-repository-scm-integrations/github-integration.md).
 

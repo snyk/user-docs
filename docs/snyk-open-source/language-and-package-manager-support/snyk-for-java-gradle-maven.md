@@ -17,7 +17,7 @@ Some features might not be available, depending on your pricing plan. See [prici
 | [Maven](https://maven.apache.org/) | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
 | [Gradle](https://gradle.org/) | ✔︎ | ✔︎ | ✔︎ | ✔︎ \(advice\) |  |
 
-## Snyk CLI tool for Java projects \(CI/CD\)
+### Snyk CLI tool for Java projects \(CI/CD\)
 
 The way Snyk analyzes and builds the dependencies varies depending on the language and package manager of the project.
 
@@ -189,7 +189,7 @@ If you are having any trouble testing your projects with Snyk, collect the follo
   * `$ snyk test -d`
   * `$ gradle dependencies -q`
 
-## Git services for Gradle projects
+### Git services for Gradle projects
 
 After you select a project for import, we build the dependency tree based on the `build.gradle` file and \(optional\) `gradle.lockfile`.
 
@@ -199,7 +199,7 @@ If a lockfile is present, Snyk will use it to accurately resolve the final versi
 
 Gradle lockfiles are an opt-in feature that, among other benefits, enable reproducible builds.Read more about Gradle dependency locking at [https://docs.gradle.org/current/userguide/dependency\_locking.html](https://docs.gradle.org/current/userguide/dependency_locking.html)
 
-## Git services for maven projects
+### Git services for maven projects
 
 After you select a project for import, we build the dependency tree based on the `pom.xml` file.
 
@@ -234,11 +234,7 @@ If authentication is required to access your custom registry you will need to fi
 
 To configure the Artifactory integration go to Integrations &gt; Artifactory and click ‘Connect to Artifactory’ and complete the fields - URL to your Artifactory, username, and password.
 
-After the integration is set up you can configure Maven settings by navigating to settings
-
-![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
-
-&gt; **Languages** &gt; **Java**.
+After the integration is set up you can configure Maven settings by navigating to settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Languages** &gt; **Java**.
 
 You can choose whether to use Artifactory as a mirror or as an additional repository where your artifacts will reside. These settings will be very similar to what you have in `~/.m2/settings.xml`.
 
@@ -258,9 +254,9 @@ If using the integration, you will need to choose an integration type and provid
 
 Alternatively, you can configure repositories which will be used as additional locations to check for artifacts.
 
-## Additional Snyk support for Java
+### Additional Snyk support for Java
 
 In addition to the CLI and Snyk UI features, you can also check your Java projects with these plugins:
 
-* [Maven plugin for your build flow](https://support.snyk.io/hc/en-us/articles/360004570477-Maven-plugin-integration)
+* [Maven plugin for your build flow](../../integrations/ci-cd-integrations/maven-plugin-integration.md)
 

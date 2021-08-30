@@ -15,7 +15,7 @@ The Dep Graph API requires additional permissions. Please contact support@snyk.i
 
 The following describes how to use Snyk to test your Bazel projects.
 
-## Bazel Overview <a id="h_01EEWE3TCNQC2HGFRPH8JBWAK0"></a>
+### Bazel Overview
 
 According to [https://docs.bazel.build/versions/master/bazel-overview.html](https://docs.bazel.build/versions/master/bazel-overview.html)
 
@@ -45,7 +45,7 @@ The recommended approach is to test your dependencies via the [Snyk Dep Graph Te
 
 3. Check the [API response](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h_01EEWP8F4MK9MFJT5X0A4ZGS93) for pass/fail status and any resulting vulnerabilities
 
-## Snyk Dep Graph Test API <a id="h_01EEWFQJFTCWFQBMQR0X32J8B8"></a>
+### Snyk Dep Graph Test API
 
 The Snyk Dep Graph Test API takes a generic dependency graph, and returns a report containing any relevant vulnerabilities for those dependencies.
 
@@ -53,7 +53,7 @@ The set of supported package managers/repository ecosystems are listed on the [A
 
 Any of your Bazel dependencies that are available in these ecosystems can be tested via the API.
 
-## Snyk Dep Graph JSON Syntax <a id="h_01EEWE7K497ZVFKVHVKYG5YHB4"></a>
+### Snyk Dep Graph JSON Syntax
 
 The Dep Graph Test API takes a [Snyk Dep Graph](https://github.com/snyk/dep-graph) JSON object describing the root application, and the graph of direct and transitive dependencies.
 
@@ -109,7 +109,7 @@ Here are some further notes on specific components in the dep graph object:
 * `graph.nodes` - array of objects describing the relationships between entries in `pkgs`. In Bazel this is typically just the project node with all other packages defined as a flat array of direct dependencies in `deps` 
 * `graph.rootNodeId` - specifies the `id` of the entry in `graph.nodes` to use as the root node of the graph. You should set this to the `nodeId` of the project node
 
-## Snyk Dep Graph Test API Response <a id="h_01EEWP8F4MK9MFJT5X0A4ZGS93"></a>
+### Snyk Dep Graph Test API Response
 
 The Dep Graph Test API returns a JSON object describing any issues \(vulnerabilities & licences\) found in the dep graph dependencies.
 
@@ -208,7 +208,7 @@ Here are some further notes on specific components in the response object:
 * `issuesData` - a hash of each unique vulnerability found. Each vulnerability contains many useful properties, such as `title`, `description`, `identifiers`, `publicationTime`, `severity` etc
 * `issues` - an simple array of mappings from vulnerabilities in `issuesData` to package. As a vulnerability may be relevant to multiple packages, this mapping is used to keep the response length as short as possible
 
-## Examples <a id="h_01EEWE7S3TENTVGR2KV8YCMM0F"></a>
+### Examples
 
 {% hint style="info" %}
 **Note**  

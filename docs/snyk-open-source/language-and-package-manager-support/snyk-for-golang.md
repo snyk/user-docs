@@ -28,7 +28,7 @@ In order to scan your dependencies in the CLI, you must ensure you have first in
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project.
 
-## Snyk CLI tool for Go projects
+### Snyk CLI tool for Go projects
 
 **Go Modules**
 

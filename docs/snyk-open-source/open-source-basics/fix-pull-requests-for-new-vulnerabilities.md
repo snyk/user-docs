@@ -18,21 +18,19 @@ Pull requests for new vulnerabilities are enabled by default for new integration
 
 See [Git repository SCM integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) for full details of supported integrations.
 
-## Enable or disable pull requests for an integration
+### Enable or disable pull requests for an integration
 
 Enable at the global integration level:
 
-1. Navigate to settings
-
-![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
-
-&gt; **Integrations**. 2. Select an SCM integration \(for example, GitHub\). 3. Enable **New vulnerabilities**
+1. Navigate to settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 
+2. Select an SCM integration \(for example, GitHub\). 
+3. Enable **New vulnerabilities**
 
 **Apply changes to all overridden projects** will update all of the individual project settings for "Automatic fix pull requests". If a project previously had its own settings for this, clicking on this button will override it with the global setting.
 
 ![](../../.gitbook/assets/global-pr-setting.png)
 
-## Enable or disable pull requests for a single project
+### Enable or disable pull requests for a single project
 
 Enabling/disabling at a project level will override this single project rather than inheriting it from the global integration setting.
 
