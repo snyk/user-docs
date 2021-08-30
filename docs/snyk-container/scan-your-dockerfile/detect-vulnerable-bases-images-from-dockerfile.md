@@ -1,6 +1,6 @@
 # Detect vulnerable bases images from Dockerfile
 
-## Detect vulnerable bases images from Dockerfile
+### Detect vulnerable bases images from Dockerfile
 
 Snyk detects vulnerable base images by scanning your Dockerfile when importing a Git repository. This allows you to examine security issues before building the image, so helps solve potential problems before they land in your registry or in production.
 

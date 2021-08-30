@@ -32,7 +32,7 @@ Once the PR is opened and ready, you can safely merge it and instantly reduce th
 
 ![mceclip1.png](../../.gitbook/assets/mceclip1-1-.png)
 
-![mceclip2.png](../../.gitbook/assets/mceclip2.png)
+![](../../.gitbook/assets/mceclip2.png)
 
 Availability:
 

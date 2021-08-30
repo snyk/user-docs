@@ -12,13 +12,12 @@ To add images from GitHub container registry to Snyk:
 **Steps:**
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage. 
+2. Under the **Projects** tab, click **Add project**. The list of integrations already configured on your account opens. Select the **GitHub container registry** option or **Other** if **GitHub container registry** doesn’t appear.
+3. The **Which images do you want to test?** view appears, displaying all of the available images for your connected registry, grouped by each of your repositories, similar to the following:
 
-![AddProjectMenu.gif](../../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%2812%29.gif)
+![](../../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%2812%29.gif)
 
-1. Under the **Projects** tab, click **Add project**. The list of integrations already configured on your account opens. Select the **GitHub container registry** option or **Other** if **GitHub container registry** doesn’t appear.
-2. The **Which images do you want to test?** view appears, displaying all of the available images for your connected registry, grouped by each of your repositories, similar to the following:
-
-![mceclip0.png](../../../.gitbook/assets/mceclip0-13-.png)
+![](../../../.gitbook/assets/mceclip0-13-.png)
 
 **Note**: GitHub Container Registry doesn't follow docker v2 API, therefore it is not possible to list images in repos. Due to that, you will need to manually specify the images you wish to scan.
 

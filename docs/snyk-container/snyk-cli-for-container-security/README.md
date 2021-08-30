@@ -1,6 +1,6 @@
 # Snyk CLI for container security
 
-## Test images with the Snyk Container CLI
+### Test images with the Snyk Container CLI
 
 The Snyk Container command line interface \(CLI\) helps you find and fix vulnerabilities in container images on your local machine.
 

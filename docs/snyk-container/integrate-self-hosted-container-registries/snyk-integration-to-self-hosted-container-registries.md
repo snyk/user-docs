@@ -9,7 +9,7 @@ Snyk can integrate to private container registries you host \(currently in open 
 
 To enable and configure your hosted container registry, contact our support team at [support@snyk.io](mailto:support@snyk.io)
 
-## **Introduction**
+### **Introduction**
 
 Integration with private container registries allows you to:
 

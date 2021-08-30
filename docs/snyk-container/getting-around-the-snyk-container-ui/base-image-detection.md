@@ -13,7 +13,7 @@ To identify vulnerable base images, you can use one of these methods:
 
 For either method, a “project” in the Snyk UI is created.
 
-## Base image recommendations
+### Base image recommendations
 
 If the base image is an [Official Docker image](https://docs.docker.com/docker-hub/official_images/), the results include recommendations for upgrades to resolve some of the discovered vulnerabilities.
 
@@ -23,5 +23,5 @@ This allows you to see vulnerability counts in minor and major upgrades, as well
 
 See [Analysis and remediation for your images from the Snyk app](https://docs.snyk.io/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app) for more details.
 
-You can find the base image vulnerabilities in your project, among the vulnerabilities added by your instructions, sorted by their priority score. You can also filter only the base image vulnerabilities, with the **Base image** option under the **Image Layer** handy filter. See [image layer information](https://support.snyk.io/hc/en-us/articles/360017757277-Image-layer-information) for more details.
+You can find the base image vulnerabilities in your project, among the vulnerabilities added by your instructions, sorted by their priority score. You can also filter only the base image vulnerabilities, with the **Base image** option under the **Image Layer** handy filter. See [image layer information](image-layer-information.md) for more details.
 

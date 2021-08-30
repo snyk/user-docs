@@ -30,7 +30,7 @@ Note
 Snyk groups the same vulnerability discovered in multiple different packages together. This helps you focus on the number of vulnerabilities, not just the instances.
 {% endhint %}
 
-## Base image recommendations
+### Base image recommendations
 
 If Snyk determines the base image used, and the image uses an [Official Docker image](https://docs.docker.com/docker-hub/official_images/), the output includes recommendations for upgrades tol resolve some of the discovered vulnerabilities.
 
