@@ -6,7 +6,7 @@ This feature is currently in beta. We would appreciate any feedback you might ha
 
 You can configure the Snyk controller to automatically import and update scanned workloads directly in Snyk to test and monitor for vulnerabilities. You can also automatically delete imported projects once workloads are deleted from the cluster. The controller evaluates policy decisions using a policy file written in [Rego policy language](https://www.openpolicyagent.org/docs/latest/policy-language/).
 
-## Enabling workload auto-import and auto-delete
+### Enabling workload auto-import and auto-delete
 
 The Helm chart of the Snyk controller is already provisioned with a default Rego policy to process events for any workload except Jobs. To enable this feature, provide your Snyk Organization public ID in the Helm chart installation.
 
@@ -23,7 +23,7 @@ Note that _**policyOrgs**_ is a list of organization public IDs. You can add mor
 You can only use organizations that share the same Kubernetes integration ID used to provision the Snyk controller.
 {% endhint %}
 
-## Policy syntax
+### Policy syntax
 
 Provide the policy file to the Snyk controller in a ConfigMap. The policy syntax looks like this:
 
@@ -50,7 +50,7 @@ workload_events {
 }
 ```
 
-Here **input** refers to the Kubernetes metadata of the workload scanned by the Snyk controller.
+Here, **input** refers to the Kubernetes metadata of the workload scanned by the Snyk controller.
 
 You can also create a policy for workload events \(creation/deletion\) with a specific annotation:
 
@@ -77,7 +77,7 @@ workload_events {
 }
 ```
 
-## Configure Snyk controller to use the policy
+### Configure Snyk controller to use the policy
 
 ```text
 kubectl create configmap snyk-monitor-custom-policies \
