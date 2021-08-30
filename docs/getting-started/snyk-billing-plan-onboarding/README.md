@@ -27,7 +27,7 @@ Each of these stages allows Snyk to do something different to help keep you secu
 All of the following stages have integrations that can be found on the [Snyk integrations page](https://app.snyk.io/integrations):  
 ![integrations-page.png](../../.gitbook/assets/integrations-page.png)
 
-See [Integrations](https://docs.snyk.io/integrations) for more details.
+See [Integrations](../../integrations/) for more details.
 
 The earliest chance you have to catch vulnerabilities is in the IDE, when the code is being written. Use Snyk at the IDE stage to ensure developers select versions of dependencies or container base images that include the least vulnerabilities possible:
 
@@ -35,7 +35,7 @@ The earliest chance you have to catch vulnerabilities is in the IDE, when the co
 
 Snyk supports many of the popular IDEs, with even more support coming soon.
 
-See [IDE tools](https://docs.snyk.io/integrations/ide-tools) for more details.
+See [IDE tools](../../integrations/ide-tools/) for more details.
 
 At the next stage is code storage, usually some kind of SCM \(Source Code Management\) system. Snyk supports many popular SCMs including GitHub, GitLab, Bitbucket, and Azure Repos.
 
@@ -48,13 +48,13 @@ Snyk’s SCM integrations also support commit status checks, so as your develope
 
 ![](../../.gitbook/assets/source-control.png)
 
-See [Git repository \(SCM\) integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) for more details
+See [Git repository \(SCM\) integrations](../../integrations/git-repository-scm-integrations/) for more details
 
 Use Snyk CI/CD integrations to prevent new vulnerabilities from passing through the build process, by adding an automated Snyk test to your CI/CD process:
 
 ![](../../.gitbook/assets/ci-cd%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29%20%288%29.png)
 
-See [CI/CD integrations](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations) for more details.
+See [CI/CD integrations](../../integrations/ci-cd-integrations/) for more details.
 
 Snyk supports various different container registries, allowing you to scan all your images and monitor them over time for newly found vulnerabilities, whether the images are used in Prod, retired from use, or queued up for a big release.
 
@@ -66,13 +66,13 @@ Our support for Kubernetes allows you to find any vulnerabilities in running wor
 
 ![](../../.gitbook/assets/kubernetes.png)
 
-See [Kubernetes workload and image scanning](https://support.snyk.io/hc/en-us/sections/360001114238-Kubernetes-workload-and-image-scanning) for more details.
+See [Kubernetes workload and image scanning](../../snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning/) for more details.
 
 ## Infrastructure as Code scanning
 
 Snyk Infrastructure as Code \(IaC\) helps developers write secure configurations, well before code reaches production. Snyk’s developer-first approach meets developers where they work, and provides fixes that can be directly merged into code.
 
-See [Infrastructure as Code](https://docs.snyk.io/snyk-infrastructure-as-code) for details.
+See [Infrastructure as Code](../../snyk-infrastructure-as-code/) for details.
 
 An added bonus of the Team plan is license compliance management, allowing Snyk to identify potentially misused licenses. License compliance does not stop you getting hacked, but it can help protect you from legal issues \(which can be just as costly\).
 
