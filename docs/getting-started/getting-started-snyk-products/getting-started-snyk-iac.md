@@ -24,39 +24,39 @@ For more details, see:
 Import projects to test with Snyk, by choosing repositories for Snyk to test and monitor.
 
 1. Select **Projects** from Snyk.io.
-2. Select the tool to add the project from \(for example GitHub\): ![](../../.gitbook/assets/iac-select-project.png)
-3. In **Personal and Organization repositories**, select the repositories to use. 4. Click **Add selected repositories** to import the selected repositories into your projects. ![](../../.gitbook/assets/iac_-_select_repo.png)
-4. A progress bar appears: click **View log** to see import log results - for example: 
-   1. ![](../../.gitbook/assets/iac-import-log.png)
-   2. \(you can scan both Kubernetes and Terraform files simultaneously, as in this example.\)
-5. Project import completes.
+2. Select the tool to add the project from \(for example GitHub\): 
+3. In **Personal and Organization repositories**, select the repositories to use. 
+4. Click **Add selected repositories** to import the selected repositories into your projects. 
+5. A progress bar appears: click **View log** to see import log results
+   1. \(you can scan both Kubernetes and Terraform files simultaneously, as in this example.\)
+6. Project import completes.
 
 ### Stage 2: View configuration file issues
 
 View results for configuration files in imported projects.
 
-1. Select **Projects**, then click on the imported project entry, to see information for scanned configuration files, including the number of high, medium and low severity issues found. For example: 
+Select **Projects**, then click on the imported project entry, to see information for scanned configuration files, including the number of high, medium and low severity issues found. For example: 
 
-![IaC\_-\_issues\_list.png](../../.gitbook/assets/iac_-_issues_list.png)
+![](../../.gitbook/assets/iac_-_issues_list.png)
 
 \(Issues are sorted into project types: Helm, Kubernetes and Terraform.\) 2. Click on a project to see more information and details of the issues in a configuration file:
 
-![IaC\_-\_select\_config\_file.png](../../.gitbook/assets/iac_-_select_config_file.png)
+![](../../.gitbook/assets/iac_-_select_config_file.png)
 
 {% hint style="info" %}
 If you encounter any errors during import, see the [Importing projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects) information.
 {% endhint %}
 
-## Stage 3: View and fix config files
+### Stage 3: View and fix config files
 
 Act on the recommendations produced by Snyk IaC.
 
-1. IaC results appear as direct issues in the relevant scanned configuration files. For example: ![IaC\_-\_issue\_details.png](../../.gitbook/assets/iac_-_issue_details.png)
-2. Click on an issue to see the details for that issue, and specific recommendations from Snyk IaC. For example: ![IaC\_-\_corrected.png](../../.gitbook/assets/iac_-_corrected.png)
+1. IaC results appear as direct issues in the relevant scanned configuration files.
+2. Click on an issue to see the details for that issue, and specific recommendations from Snyk IaC. For example: 
 3. Edit the configuration file to fix the issue identified, based on the recommendations, then commit the change.
 4. Snyk automatically rescans the changed file, and you can see the change reflected in the issue display.
 
-## For more information
+### For more information
 
 See [Infrastructure as Code](https://docs.snyk.io/snyk-infrastructure-as-code).
 
