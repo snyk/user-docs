@@ -36,7 +36,7 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
 
 ### [Deployment Guide](https://aws-quickstart.github.io/quickstart-eks-snyk/)
 
-## Configure snyk-monitor to pull and scan images from ECR
+### Configure snyk-monitor to pull and scan images from ECR
 
 For all the options above, **add** **the IAM policy** that can be found [here](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_on_EKS.html) to your EKS worker nodes in order for the snyk-monitor to pull private images when running on those worker nodes.
 

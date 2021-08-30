@@ -17,7 +17,7 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
 * A minimum 50 GB of storage must be available in the form of an [emptyDir](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir) on the cluster and the person configuring the cluster must be an administrator.
 * External internet access must be available from the Kubernetes cluster.
 
-## Steps
+### Steps
 
 1. Ensure that your Kubernetes command-line tool \(`kubectl`\) points to the relevant cluster.
 2. Create a unique namespace for the Snyk controller with Cluster scope to enable the controller to monitor all of its deployments:
