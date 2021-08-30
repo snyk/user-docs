@@ -47,7 +47,7 @@ You can apply multiple filters to a project to show a set of issues:
 
 The issue cards in a project can be sorted based on their priority score or severity.
 
-## Card actions
+### Card actions
 
 You can perform the following actions on the issue card:
 

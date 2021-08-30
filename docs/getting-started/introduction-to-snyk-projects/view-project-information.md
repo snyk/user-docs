@@ -19,7 +19,7 @@ Where:
   * **History**: shows historical snapshots of the 4 most recent tests. See [View project history](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-history).
   * **Settings**: shows [project settings](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-settings).
 
-## View project summary information
+### View project summary information
 
 ![](../../.gitbook/assets/proj-summ.png)
 

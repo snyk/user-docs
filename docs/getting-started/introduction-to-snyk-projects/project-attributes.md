@@ -2,7 +2,7 @@
 
 Project attributes are static and non-configurable fields which allow you to add additional metadata \(also known as “values”\) to a project. Attributes have a predefined list of values you can select from. Values can be assigned and removed from attributes, and can be used to group, prioritize, and filter projects.
 
-## **Available Attributes and their Values:**
+### **Available Attributes and their Values:**
 
 **Lifecycle stage**
 
@@ -33,9 +33,10 @@ The ability to assign and remove values from attributes, and filter projects by 
 
 **Assigning values to attributes**
 
-1. On the project page, click the “+” icon below the attribute you want to assign a value to. 
+1. On the project page, click the “+” icon below the attribute you want to assign a value to
+2. Select a value from the list available
 
-![GS1.png](../../.gitbook/assets/gs1.png) 1. Select a value from the list available.
+![](../../.gitbook/assets/gs1.png)
 
 You have assigned a value to the attribute, and it will appear on the project listing page. Each attribute can have multiple values assigned to them, and you can assign values to multiple attributes.
 
@@ -55,6 +56,7 @@ The value has been removed from the attribute.
 **Filtering values in the project listing page**
 
 1. On the left of the project listing page, select the values for the attributes that you want to filter projects by.
+2. When you filter by multiple values on a single attribute, you will return projects that have been assigned one or more of the values in the filter 2. When you filter by multiple attributes, you will return projects which have been assigned values of both attributes in the filter.
 
-![GS5.png](../../.gitbook/assets/gs5.png) 1. When you filter by multiple values on a single attribute, you will return projects that have been assigned one or more of the values in the filter 2. When you filter by multiple attributes, you will return projects which have been assigned values of both attributes in the filter.
+![](../../.gitbook/assets/gs5.png)
 
