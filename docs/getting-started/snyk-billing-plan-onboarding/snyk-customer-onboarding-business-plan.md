@@ -20,7 +20,7 @@ The Source Code Management \(SCM\) integration makes it easy for developers to f
 
 Note that if you are working with Scala and/or Gradle projects, we recommend that you scan projects directly in the CLI or CI/CD for accurate results.
 
-Learn more about [Snyk SCM integration good practices](https://support.snyk.io/hc/en-us/articles/360018010597).
+Learn more about [Snyk SCM integration good practices](snyk-scm-integration-good-practices.md).
 
 ### Use the CLI
 
@@ -48,7 +48,7 @@ Snyk IaC helps developers write secure configurations, well before anything reac
 
 Learn more about [Snyk IaC](https://docs.snyk.io/snyk-infrastructure-as-code).
 
-## Organize your group
+### Organize your group
 
 The Business plan includes one group to help you structure your account. This structure provides your team with easy access to relevant insights about projects, priorities, integrations, and policies.
 
@@ -62,7 +62,7 @@ Your Snyk account is organized using a multi-level hierarchy:
 
 Learn more about [groups and organizations](https://support.snyk.io/hc/en-us/articles/360004037617-What-s-a-Snyk-group-).
 
-## Use Single Sign-on
+### Use Single Sign-on
 
 The Business plan allows you to use your single sign-on \(SSO\) provider to simplify new user provisioning and access to Snyk.
 
@@ -77,19 +77,19 @@ To set up SSO, you configure a few SSO details with your identity provider, and 
 
 Learn more about [setting up SSO](https://support.snyk.io/hc/en-us/articles/360018025297-Introduction-to-Snyk-Single-Sign-On-SSO-).
 
-## Integrate Snyk with Jira
+### Integrate Snyk with Jira
 
 Integrate Snyk with Jira to manage the work of resolving issues. Use our Jira integration API or open Jira tickets with a button on Snyk project issue cards. Jira tickets collect details your engineers will need to resolve vulnerabilities.
 
 Learn more about [configuring the Snyk Jira integration](https://docs.snyk.io/integrations/untitled-3/jira).
 
-## Configure notifications
+### Configure notifications
 
 Snyk automatically notifies you when new issues are found in the projects you’re monitoring. You can customize the emails your organization’s members receive in the organization settings area. The customizations apply to all members of that organization. However, any member of the organization can override these settings in their own account.
 
 Learn more about [Notification management.](https://docs.snyk.io/user-and-group-management/notifications/notification-management)
 
-## Fix vulnerabilities
+### Fix vulnerabilities
 
 There are a number of different ways to resolve vulnerabilities.
 
@@ -103,7 +103,7 @@ Patches are code execution that the Snyk security team creates for issues that d
 
 Learn more about [fixing vulnerabilities](https://docs.snyk.io/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities).
 
-## Prioritize issues
+### Prioritize issues
 
 Snyk lists the issues found in your project. There are different types of filters available to help you focus your attention on the most important vulnerabilities.
 
@@ -111,7 +111,7 @@ Snyk lists the issues found in your project. There are different types of filter
 
 Learn more about [prioritizing Snyk issues](https://support.snyk.io/hc/en-us/articles/360009884837-Prioritizing-Snyk-issues).
 
-## Ignore vulnerabilities
+### Ignore vulnerabilities
 
 Snyk allows you to ignore vulnerabilities that don’t meet your criteria for fixing. When you select the **Ignore** button on an issue card, a dialog opens so you can indicate why you want to ignore the issue, as well as a timeframe for ignoring the issue temporarily.
 
@@ -121,7 +121,7 @@ You can determine whether developers can ignore an issue or only admins.
 
 Learn more about [ignoring issues.](https://docs.snyk.io/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/introduction-to-ignoring-issues)
 
-## Report on vulnerabilities
+### Report on vulnerabilities
 
 Reports provide visibility into the number of vulnerabilities and license issues over time, the time to resolution, which dependencies are vulnerable, and many other details.
 
@@ -131,7 +131,7 @@ All reporting data is available via APIs, so you can choose to present the infor
 
 Learn more about [Snyk APIs](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/getting-started/snyk-billing-plan-onboarding/snyk-customer-onboarding-business-plan/README.md).
 
-## How to get help
+### How to get help
 
 To get help, navigate to snyk.io and use the help agent in the bottom right corner.
 
@@ -139,7 +139,7 @@ Make sure you provide an email address to help our team communicate with you. Or
 
 ![](../../.gitbook/assets/pasted-image-0-4-.png)
 
-## More about best practices
+### More about best practices
 
 Read more about best practices for using Snyk in your CI/CD or the git integration
 

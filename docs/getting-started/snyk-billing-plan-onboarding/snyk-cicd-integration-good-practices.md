@@ -1,6 +1,6 @@
 # Snyk CI/CD Integration: good practices
 
-## Typical stages of adoption
+### Typical stages of adoption
 
 Developer teams typically adopt Snyk in the following stages:
 
@@ -31,7 +31,7 @@ After you configure Snyk to fail the build when vulnerabilities are detected, yo
 
 To do this, configure your pipeline to run **snyk monitor** if your **snyk test** returns a successful exit code.
 
-### Pre-requisites
+### Prerequisites
 
 To configure Snyk to run in a pipeline, retrieve key configuration inputs from your Snyk account.
 
@@ -57,7 +57,7 @@ If you do not define a target organization, Snyk uses the default organization f
 
 To run the snyk test, you need an authentication token with access to the desired target organization . While you can use any valid authentication token, we recommend using a service account. For more details, see [Service accounts](https://docs.snyk.io/integrations/managing-integrations/service-accounts).
 
-## Setting Up
+### Setting Up
 
 Snyk supports the following approaches to add tests to a build pipeline:
 
@@ -121,7 +121,7 @@ Snyk allows you to automatically create new work items in JIRA \(see [Jira integ
 See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns) to get started.  
 or review the [API to create Jira tickets.](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices/README.md#reference/projects/project-jira-issues/create-jira-issue)
 
-## Snyk Open Source-specific strategies
+### Snyk Open Source-specific strategies
 
 These strategies are useful to teams using Snyk's SCA \(Software Composition Analysis\) testing features.
 
@@ -199,7 +199,7 @@ when it finds the build file as part of the **--all-projects** search
 
 See [Snyk for Java \(Gradle, Maven\)](https://support.snyk.io/hc/en-us/articles/360003817357-Java-for-Snyk) for more information.
 
-## Snyk Container-specific strategies
+### Snyk Container-specific strategies
 
 The best stage to implement Snyk Container in your pipeline is after the container image is built \(after running the equivalent of “docker build”\), and before your image is either pushed into your registry \(“docker push”\) or deployed to your running infrastructure \(“helm install”, “kubectl apply” and so on\).
 
@@ -239,7 +239,7 @@ Snyk can help:
 * Pass **--exclude-base-image-vulns** to only report vulnerabilities introduced by your user layers, rather than vulnerabilities that come from the container’s base image \(the image you specify in the FROM line in the Dockerfile\).
 * Run **snyk container monitor** following **snyk container test** \(or simply check the **Monitor** box on your plugin settings\), to keep a record of this container’s bill of materials within the Snyk UI and proactively monitor for new vulnerabilities on a daily basis. This is useful when pushing new releases into production environments. You can use **--project-name** to specify a unique identifier for the release to ensure production containers are tracked separately from others in your build process.
 
-## Snyk IaC-specific strategies
+### Snyk IaC-specific strategies
 
 The best stage to implement Snyk Infrastructure As Code in your pipeline as part of the stages, but after the SCA and the Containers stage.
 

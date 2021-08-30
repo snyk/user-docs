@@ -2,7 +2,7 @@
 
 You can integrate Snyk with your Source Control Manager \(SCM\) to quickly and easily gain visibility across all your projects.
 
-[Snyk SCM integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) allow you to:
+[Snyk SCM integrations](snyk-scm-integration-good-practices.md) allow you to:
 
 * Continuously perform security scanning across all integrated repositories
 * Detect vulnerabilities in your open source components
@@ -119,11 +119,11 @@ If your SCM is already configured, go to the next stage.
 
 Below is an example of how you would set up your an integration for **Github.com**
 
-1. Go to the **Integrations** tab, and click on “GitHub”. ![Int2.png](../../.gitbook/assets/int2.png)
-2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories: ![select-github.png](../../.gitbook/assets/select-github.png)
+1. Go to the **Integrations** tab, and click on “GitHub”. 
+2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories: 
 3. Click **Authorize snyk** to provide Snyk with access to your repositories:
 
-![authorize.png](../../.gitbook/assets/authorize%20%281%29%20%282%29%20%286%29%20%281%29%20%287%29.png)
+![](../../.gitbook/assets/authorize%20%281%29%20%282%29%20%286%29%20%281%29%20%287%29.png)
 
 **SCM permissions on repositories**
 
@@ -160,7 +160,7 @@ To disable notifications for all the users in an Org ahead of your import, unche
 
 ![aws-sdk.png](../../.gitbook/assets/aws-sdk.png)
 
-## Stage 3: Enable Snyk test on PRs
+### Stage 3: Enable Snyk test on PRs
 
 **PR Test Settings & Workflows**
 
@@ -177,7 +177,7 @@ The following statuses can appear on your Snyk checks when you click the “Deta
 * **Failure**: when issues are identified that must be fixed in order for the check to pass
 * **Error**: an error occurs when your manifest file is out of sync, Snyk couldn't read the manifest file, or Snyk couldn't find the manifest file.
 
-![security-check.png](../../.gitbook/assets/security-check.png)
+![](../../.gitbook/assets/security-check.png)
 
 **Manage PR test settings**
 
@@ -186,8 +186,9 @@ Administrators can manage settings for Snyk PR tests at the organization level t
 To configure the PR test settings for your organization:
 
 1. Navigate to **Org** &gt; settings ![](../../.gitbook/assets/cog_icon.png) **&gt;** Integrations &gt; Edit Settings. 2. Set the the toggle to **Enabled** and set the **Fail conditions** as needed:
+2. Click **Update settings**.
 
-![image13.png](../../.gitbook/assets/image13.png) 3. Click **Update settings**.
+![image13.png](../../.gitbook/assets/image13.png)
 
 To configure the pull request test settings for a specific project, navigate to **Projects Page**&gt; **Projects Settings &gt; Edit Settings** and set conditions similarly:
 
@@ -204,7 +205,7 @@ At the start of rollout, we recommend that you begin with Snyk testing your PRs,
    * **Fail only** for **Only fail when the PR is adding a dependency with issues**.
    * Check both **Only Fail for high severity issues** and Only **fail when the issues found have a fix available** 
 
-## Stage 4: Enable Blocking PRs
+### Stage 4: Enable Blocking PRs
 
 After you’ve embedded Snyk into your SDLC, and have built good developer awareness, you can start to apply stricter policies to improve your overall security posture. For example:
 
@@ -214,7 +215,7 @@ After you’ve embedded Snyk into your SDLC, and have built good developer aware
 
 To align vulns severity with your internal policy, use security policies to change severity of issues and attached them to relevant projects attributes. See [Security policies](https://support.snyk.io/hc/en-us/sections/360004225818-Security-Policies) for more details.
 
-## Stage 5: Automatic Fix PRs
+### Stage 5: Automatic Fix PRs
 
 Snyk scans your projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and opens automated PRs with fixes to repositories.
 
@@ -240,7 +241,7 @@ Snyk auto fix PRs are only generated for new issues.
 
 If your SCM is Github and you are not using Snyk Broker, then by default Snyk rotates every Org user's credentials to open the auto fix PRs. You can change this if needed, and set the user credentials to open the auto fix PRs. See [Opening fix and upgrade pull requests from a fixed GitHub account](https://support.snyk.io/hc/en-us/articles/360010843797) for details.
 
-## Stage 6 - Dependency Upgrade PRs
+### Stage 6 - Dependency Upgrade PRs
 
 When your group is ready to start tackling security technical debt, you can configure Snyk to automatically create pull requests \(PRs\) on your behalf in order to upgrade your dependencies.
 
@@ -271,7 +272,7 @@ To set PR Settings on the project level, overriding the PR settings on the organ
 2. Click **Projects**.
 3. Navigate to the relevant project and click the **Settings** cog:  
 
-![Int4.png](../../.gitbook/assets/int4.png)
+![](../../.gitbook/assets/int4.png)
 
 1. From the Settings area, click on the integration settings from the left panel menu to apply unique settings for that one project.
 2. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled.
@@ -280,7 +281,7 @@ To set PR Settings on the project level, overriding the PR settings on the organ
 
 * In the Dependencies to ignore field, enter the exact name of any dependencies that should not be handled as part of the automatic functionality. This field accepts only lower case letters.
 
-![general-GitHub\_integration.png](../../.gitbook/assets/general-github_integration.png)
+![](../../.gitbook/assets/general-github_integration.png)
 
 * Once you click ‘Upgrade dependency settings’ every time Snyk scans this project, it will automatically submit upgrade PRs based on results. If a newer version is released for an existing Snyk upgrade PR or for an existing fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.
 
