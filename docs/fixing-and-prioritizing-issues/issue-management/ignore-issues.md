@@ -2,7 +2,7 @@
 
 If you do not want to fix a vulnerability or license issue, and don't want to see that issue in scan results, Snyk allows you to ignore it, either temporarily or permanently.
 
-## When to ignore issues
+### When to ignore issues
 
 Issues can be ignored and viewed via the snyk.io UI, the Snyk APIs, the Snyk CLI and using the .snyk file.
 
@@ -10,7 +10,7 @@ Ignoring security issues should not be the default action, but it is sometimes n
 
 Some issues are irrelevant for certain projects \(e.g. a DDOS attack for an internal service\). Other times, an issue has a path that makes it non-exploitable. In these scenarios, you should still fix the issue, as although the vulnerability is not exploitable today, it may be exploitable in future.
 
-## Ignoring issues in the UI
+### Ignoring issues in the UI
 
 Each issue card has an **Ignore** button that opens up a dialog where you can select why you want to ignore the issue, and how long to ignore it.
 
@@ -30,7 +30,7 @@ When you ignore an issue in our UI, it will show who ignored it and allow you to
 
 ![](../../.gitbook/assets/image%20%2814%29.png)
 
-## Ignoring issues in the CLI
+### Ignoring issues in the CLI
 
 Suppressing issues is possible via the CLI. For node.js projects, you can use **Snyk wizard**, which will give you the option of ignoring the vulnerability for a period of 30 days. For other supported languages, or to specify a different duration, use **snyk ignore**.
 
@@ -47,7 +47,7 @@ reason: The reason given
 expires: '2017-12-29T16:10:16.946Z'
 ```
 
-## Scanning from the CLI or CI/CD, Ignoring in the UI
+### Scanning from the CLI or CI/CD, Ignoring in the UI
 
 Ignores between a CLI \(or CI/CD run\) and the Snyk UI are synchronized. So the flow is:
 
@@ -71,7 +71,7 @@ It is important that the above is true if you ignore the project imported by **s
 
 The same repo imported from the SCM is considered as a different project, and any ignore on an SCM project does not impact the results of a **snyk test** from a CLI or CI/CD. SCM and CI project behave as two stand alone projects.
 
-## Ignoring issues with the .snyk file
+### Ignoring issues with the .snyk file
 
 For all projects, you can ignore the vulnerability by creating a `.snyk` YAML file.
 
@@ -83,19 +83,19 @@ For example, if you wanted to ignore the vulnerability with SNYK ID [SNYK-RUBY-F
 
 See [The .snyk file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file) for more details.
 
-## Set who can configure ignore settings
+### Set who can configure ignore settings
 
 Since suppressing vulnerabilities carries a level of risk, you can make this available to admins only: go to your organization settings &gt; **General**, and select **Admin users only** in the **Ignores** section \(this also disables ignores from being added via the CLI\).
 
 You can also choose to set the more details field to be a compulsory field when an issue is being ignored, requiring the user to enter a reason for each ignore.
 
-## Using ignores in reports
+### Using ignores in reports
 
 If you have access to our Reports feature, you will also be able to see an overview of how many issues in your organization’s projects are ignored, along with an option to filter these so you can drill down into each one. If the issue was ignored in our UI, we include a credit for additional accountability, so you can see who initiated it.
 
 See [Reports](https://docs.snyk.io/reports-1) for more details.
 
-## Ignoring issues in Snyk Code
+### Ignoring issues in Snyk Code
 
 For [Snyk Code](https://docs.snyk.io/snyk-code), ignore functionality may capture a wider range of issues than other products.
 
