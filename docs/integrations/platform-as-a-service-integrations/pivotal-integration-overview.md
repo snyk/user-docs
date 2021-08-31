@@ -11,7 +11,7 @@ In order to turn on the Pivotal Web Services integration you’ll need to:
 1. Connect to Pivotal Web Services from the integrations page
 2. Select the projects you want to monitor and click “Add to Snyk”
 
-## **Connect Snyk to Pivotal Web Services**
+### **Connect Snyk to Pivotal Web Services**
 
 In order for Snyk to be able to monitor your deployed Pivotal Web Services applications, you’ll first need to connect Snyk to your Pivotal Web Services account. You can do this by navigating to the [Integrations page](https://app.snyk.io/integrations) and clicking on “Connect to Pivotal Web Services”.
 
@@ -21,7 +21,7 @@ This will take you to a page where you’ll be prompted to enter your Pivotal We
 
 ![](../../.gitbook/assets/uuid-f36c9d71-d472-085b-011b-0396dad112e5-en.png)
 
-## **Pivotal Web Services: check your connection status**
+### **Pivotal Web Services: check your connection status**
 
 At any time after you’ve entered your Pivotal Web Services credentials, you can check on the connection status in one of two places.
 
@@ -37,7 +37,7 @@ If you are unable to connect, please re-enter your account credentials to verify
 
 ![](../../.gitbook/assets/uuid-c7593b35-e315-e124-7a38-9c8c64ede382-en.png)
 
-## **Add Pivotal Web Services apps to Snyk**
+### **Add Pivotal Web Services apps to Snyk**
 
 Once you’ve successfully connected Snyk to your Pivotal Web Services account, you’ll be able to select Pivotal Web Services apps that you would like Snyk to monitor. You can do this either using the “Add projects” button on the integrations page, or directly from the Pivotal Web Services integration settings page.
 
@@ -51,19 +51,19 @@ As soon as you’ve added the projects to Snyk, Snyk will test them and begin to
 
 Snyk will now continuously monitor each of those projects for known vulnerabilities. You can add more projects at any time.
 
-## **Disable the Pivotal Web Services integration**
+### **Disable the Pivotal Web Services integration**
 
 If you decide to disable this integration for any reason, you can accomplish this from the Integrations page in your Settings.
 
 You need to find the specific integration you wish to deactivate in your list of integrations and click Edit settings. You are taken to a page that shows the current status of your integration, a place to update your credentials, specific to each integration \(credentials, API key, Service Principal, or connection details\), and a red box at the bottom to disconnect this integration, like in the example seen below:
 
-![image8.png](../../.gitbook/assets/uuid-b3a98f2c-4cc8-7753-8efa-396e9ec1e717-en-2-%20%283%29.png)
+![](../../.gitbook/assets/uuid-b3a98f2c-4cc8-7753-8efa-396e9ec1e717-en-2-%20%283%29.png)
 
 If you choose to disconnect, your credentials will be removed from Snyk and any integration-specific projects we had been monitoring will be deactivated on Snyk.
 
 If you choose to re-enable this integration at any time, you need to re-enter your credentials and activate your projects.
 
-## **Add a Snyk-specific user to Pivotal Web Services**
+### **Add a Snyk-specific user to Pivotal Web Services**
 
 We suggest adding a dedicated user to Pivotal Web Services for your Snyk org. That way if at some point you need to revoke access for any reason, you can do so without impacting anyone within your org.
 

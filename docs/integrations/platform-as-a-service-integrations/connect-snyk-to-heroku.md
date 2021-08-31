@@ -10,7 +10,7 @@ This will take you to a page where you’ll be prompted to enter your Heroku API
 
 Instructions for how to generate and locate your Heroku API key are below.
 
-## Generate your Heroku API key
+### Generate your Heroku API key
 
 You can find and generate your Heroku API key in your “Account Settings” section of your Heroku Account.
 
@@ -20,7 +20,7 @@ Alternatively, you can use the Heroku CLI to generate your API key and copy it d
 
 From there you can login to your Snyk account and paste in your Heroku credentials.
 
-## Heroku: check your connection status
+### Heroku: check your connection status
 
 At any time after you’ve entered your Heroku credentials, you can check on the connection status in one of two places.
 
@@ -36,7 +36,7 @@ If you are unable to connect, please re-enter your account credentials to verify
 
 ![](../../.gitbook/assets/uuid-f49dfc90-5951-c28f-3efb-32709c051b56-en.png)
 
-## Add a Snyk-specific user to Heroku
+### Add a Snyk-specific user to Heroku
 
 On Heroku, each user is limited to one API key so we suggest adding a dedicated user for your Snyk org. That way if at some point you need to revoke the key for any reason, you can do so without impacting anyone within your org.
 
@@ -46,18 +46,19 @@ This can be accomplished through the Heroku admin interface, or from the command
 
 You can learn more about how to add another user to your application on the [Heroku documentation](https://devcenter.heroku.com/articles/collaborating).
 
-## Disable the Heroku integration
+### Disable the Heroku integration
 
 If you decide to disable this integration for any reason, you can accomplish this from the Integrations page in your Settings.
 
-You need to find the specific integration you wish to deactivate in your list of integrations and click Edit settings. You are taken to a page that shows the current status of your integration, a place to update your credentials, specific to each integration \(credentials, API key, Service Principal, or connection details\), and a red box at the bottom to disconnect this integration, like in the example seen below:  
-![image8.png](../../.gitbook/assets/uuid-b3a98f2c-4cc8-7753-8efa-396e9ec1e717-en-2-%20%283%29%20%286%29.png)
+You need to find the specific integration you wish to deactivate in your list of integrations and click Edit settings. You are taken to a page that shows the current status of your integration, a place to update your credentials, specific to each integration \(credentials, API key, Service Principal, or connection details\), and a red box at the bottom to disconnect this integration, like in the example seen below:
+
+![](../../.gitbook/assets/uuid-b3a98f2c-4cc8-7753-8efa-396e9ec1e717-en-2-%20%283%29%20%286%29.png)
 
 If you choose to disconnect, your credentials will be removed from Snyk and any integration-specific projects we had been monitoring will be deactivated on Snyk.
 
 If you choose to re-enable this integration at any time, you need to re-enter your credentials and activate your projects.
 
-## Add Heroku projects to Snyk
+### Add Heroku projects to Snyk
 
 Once you’ve successfully connected Snyk to your Heroku account, you’ll be able to select Heroku projects that you would like Snyk to monitor. You can do this either using the “Add projects” button on the integrations page or directly from the Heroku integration settings page.
 
