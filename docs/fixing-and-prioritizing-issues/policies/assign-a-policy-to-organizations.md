@@ -4,7 +4,7 @@ A policy can be applied to multiple organizations; however, an organization can 
 
 Policies assigned to organizations will also apply when running snyk test or snyk monitor in the CLI.
 
-## To add an organization to a policy:
+### To add an organization to a policy:
 
 Click on the associated check box from the organization selector panel.
 
@@ -18,9 +18,9 @@ If an organization is assigned to the policy you are currently viewing, that pol
 
 If you are moving an organization from one policy to another, 2 pills will appear to show which policy is currently applied \(yellow\) and which policy you will be applying \(grey\)
 
-![mceclip1.png](../../.gitbook/assets/mceclip1-16-.png)
+![](../../.gitbook/assets/mceclip1-16-.png)
 
-## To remove an organization from a policy:
+### To remove an organization from a policy:
 
 Uncheck the desired organization check box from the organization selector panel.
 
@@ -28,12 +28,12 @@ Uncheck the desired organization check box from the organization selector panel.
 
 The unchecked organization\(s\) will now revert back to the default policy.
 
-## Add an organization to the default policy:
+### Add an organization to the default policy:
 
 1. Remove the organization from the policy it is currently assigned to
 2. The organization will automatically move to the [default policy](https://support.snyk.io/hc/en-us/articles/360007476397)
 
-## Remove an organization from the default policy
+### Remove an organization from the default policy
 
 1. Assign the relevant organization to a new policy 
 2. The organization will automatically disassociate from the [default policy](https://support.snyk.io/hc/en-us/articles/360007476397) and move to the newly selected policy

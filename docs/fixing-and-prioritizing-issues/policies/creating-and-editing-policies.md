@@ -2,13 +2,10 @@
 
 **Create a policy**
 
-1. Click ![mceclip0.png](../../.gitbook/assets/mceclip0-27-.png)
+1. Click  **Add new policy** from the Policy Manager, and a modal will appear where you can create your policy 
+2. Set a policy name and a description to help you quickly identify a policy
 
-from the Policy Manager, and a modal will appear where you can create your policy 2. Set a policy name and a description to help you quickly identify a policy
-
-**NOTE**
-
-Policies within the same category cannot have the same name.
+**NOTE:** Policies within the same category cannot have the same name.
 
 Policies **cannot** be saved without a policy name applied
 
@@ -17,13 +14,13 @@ Policies **cannot** be saved without a policy name applied
 3. Add rules to the policy. [Click here for information on adding license rules](https://support.snyk.io/hc/en-us/articles/360007590258) or [click here for information on adding security rules](https://support.snyk.io/hc/en-us/articles/360014473957)
 4. Once you've added your rules, make sure to click **Submit** in the top right hand corner ![](../../.gitbook/assets/screenshot_2020-05-26_at_9.47.26_am.png)
 
-## Edit a policy
+### Edit a policy
 
 1. Click on the policy name of an existing policy in the Policy Manager tab to open the modal and then make your changes
 2. Adjust [organizations](https://support.snyk.io/hc/en-us/articles/360007590198), [attributes](https://support.snyk.io/hc/en-us/articles/360018220857) and/or rules as desired
 3. Once you've made your changes in the Policy modal, make sure to click **Submit** in the top right hand corner to save your changes
 
-## **Other Actions:**
+### **Other Actions:**
 
 Clicking on the **...** on the right-hand side of the policies table will provide a drop down that allows you to delete a policy.
 
