@@ -1,6 +1,6 @@
 # Test your AWS CDK files with our CLI tool
 
-##  Test your AWS CDK files with our CLI tool
+###  Test your AWS CDK files with our CLI tool
 
 With Snyk Infrastructure as Code, you can test your configuration files directly from the CLI.
 

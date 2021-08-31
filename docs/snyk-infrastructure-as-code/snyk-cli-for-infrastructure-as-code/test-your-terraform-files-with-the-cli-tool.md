@@ -8,13 +8,13 @@ With Snyk Infrastructure as Code, you can scan both your static configuration fi
 | **Process Variables** | No | Yes |
 | **Scan Terraform Modules** | No | Yes - public & private |
 
-## Terraform Configuration Files
+### Terraform Configuration Files
 
 You can scan the configuration files, e.g. \`main.tf\` using the CLI. 
 
 Any declared variables or external modules that are referenced will not be considered. 
 
-### To scan configuration files :
+### To scan configuration files:
 
 You can specify either a file name or a whole directory
 
@@ -23,7 +23,7 @@ snyk iac test main.tf
 snyk iac test .
 ```
 
-## Terraform Plan
+### Terraform Plan
 
 Terraform Plan is the step run between writing your configuration files and deploying those changes.
 

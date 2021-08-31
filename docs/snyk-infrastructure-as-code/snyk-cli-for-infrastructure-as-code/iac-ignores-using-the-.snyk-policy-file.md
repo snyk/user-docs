@@ -4,7 +4,7 @@ When scanning your IaC configuration files using the Snyk CLI with **snyk iac te
 
 You can do this by using the [.snyk policy file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file), which we recommend is stored and versioned in the root of your working directory for where you store your IaC configuration files.
 
-## Ignore paths
+### Ignore paths
 
 For rest runs using the Snyk CLI, only issues defined in the **.snyk** file are ignored.
 
@@ -13,7 +13,7 @@ For test runs from imported git repositories:
 * Issues can be ignored in the Snyk UI - note these ignores will only apply to scans conducted using the Snyk UI.
 * Important: These two sources of ignores are not synchronized.
 
-## .snyk file semantics
+### .snyk file semantics
 
 {% hint style="info" %}
 The **.snyk** file has some limitations for IaC projects \(see [The .snyk file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file) for standard functionality\):
@@ -84,7 +84,7 @@ ignore:
         created: 2021-07-27T08:40:35.251Z
 ```
 
-## Policy flags and policy file notes
+### Policy flags and policy file notes
 
 There cannot be more than one policy file per directory under test. For example, **snyk iac test dir1/ dir2/** will load **dir1/.snyk** and **dir2/.snyk**, but if the file **dir1/foo/bar/.snyk** exists, the CLI will not load it.
 

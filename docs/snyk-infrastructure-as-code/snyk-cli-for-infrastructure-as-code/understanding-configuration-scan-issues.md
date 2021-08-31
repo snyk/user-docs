@@ -14,7 +14,7 @@ could give an output as follows
 
 This example is of output from a Kubernetes file, but this guide applies to any file format including Terraform.
 
-## List of vulnerabilities—sorted by severity, where each is detailed as follows:
+### List of vulnerabilities—sorted by severity, where each is detailed as follows:
 
 **A clear heading line** - specifying the issue that has been detected, the severity of that issue and the Snyk code for that particular issue
 
