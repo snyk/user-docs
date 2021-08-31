@@ -13,7 +13,7 @@ Many vulnerabilities may not affect your code, as you may not use the vulnerable
 
 By looking deeper into how the app is using the open-source dependencies, and how the open-source dependencies interact with each other, we can add the needed context around the found vulnerabilities. This reachability helps you decide how to prioritize which vulnerabilities to fix.
 
-## How it works
+### How it works
 
 To provide as accurate results as possible, we use multiple algorithms to build a call graph from your app to the open-source dependencies you use. After we have that call graph, we can identify which vulnerabilities have a path leading from the app’s code down to the vulnerable function or package.
 
@@ -23,7 +23,7 @@ We split the results into he following areas:
 2. **Potentially reachable** - Indication that the vulnerability might be reachable was found. Further review is recommended.
 3. **No path found** - Direct calls from the code to vulnerable functions could not be found.
 
-## Supported languages and prerequisites
+### Supported languages and prerequisites
 
 Reachable Vulnerabilities analysis is available for Java \(Maven and Gradle\) apps using Snyk CLI. In addition, Java Maven GitHub projects are supported, using Snyk UI.
 
@@ -35,7 +35,7 @@ Reachable Vulnerabilities analysis is available for Java \(Maven and Gradle\) ap
 
 ![](../../.gitbook/assets/image1-1-.png)
 
-## How to use it
+### How to use it
 
 To perform Reachable Vulnerabilities analysis, you can:
 
@@ -61,7 +61,7 @@ To perform Reachable Vulnerabilities analysis, you can:
 3. Go to the **import projects** page and choose the repositories to import to Snyk.
 4. Selected projects are imported and analyzed for Reachable Vulnerabilities issues.
 
-## Viewing the results
+### Viewing the results
 
 ### CLI
 

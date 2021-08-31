@@ -33,7 +33,7 @@ Here is our sample policy:
 
 Here is a project that will inherit the policy:
 
-![Screenshot\_2021-03-11\_at\_12.26.02\_pm.png](../../.gitbook/assets/screenshot_2021-03-11_at_12.26.02_pm.png)
+![](../../.gitbook/assets/screenshot_2021-03-11_at_12.26.02_pm.png)
 
 Here is a project that will not inherit the policy:
 

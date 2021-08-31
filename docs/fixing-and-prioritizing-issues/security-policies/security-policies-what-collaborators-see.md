@@ -11,7 +11,7 @@ A newly assigned policy, or changes to a policy, apply when the project is retes
 
 ## **Examples:**
 
-![Screenshot\_2021-07-28\_at\_12.50.46.png](../../.gitbook/assets/screenshot_2021-07-28_at_12.50.46.png)
+![](../../.gitbook/assets/screenshot_2021-07-28_at_12.50.46.png)
 
 An issue in a project page that’s been ignored by a security policy.
 
@@ -21,11 +21,11 @@ An issue in a project page that’s been ignored by a security policy.
 
 **Custom and original severity in Project Page UI**
 
-![unnamed-1.png](../../.gitbook/assets/unnamed-1.png)
+![](../../.gitbook/assets/unnamed-1.png)
 
 **Custom and original severity in Open Fix PR UI**
 
-![unnamed-2.png](../../.gitbook/assets/unnamed-2.png)
+![](../../.gitbook/assets/unnamed-2.png)
 
 **Custom and original severity in Reports**
 
