@@ -4,12 +4,12 @@ The Snyk Command Line Interface \(CLI\) helps you find and fix known vulnerabili
 
 See [Language Support](https://support.snyk.io/hc/en-us/articles/360000911957-Language-support) for details about package managers and languages that the CLI supports.
 
-## Install and authenticate the Snyk CLI
+### Install and authenticate the Snyk CLI
 
 1. Install the Snyk CLI using npm, Homebrew, Scoop or a manual installer from Snyk’s GitHub. See [Install the Snyk CLI](https://docs.snyk.io/snyk-cli/install-the-snyk-cli). 
 2. To associate your Snyk account with the CLI, authenticate your account, either through your browser or using your API token. See [Authenticate the CLI with your account](https://docs.snyk.io/snyk-cli/install-the-snyk-cli/authenticate-the-cli-with-your-account).
 
-## Build your project
+### Build your project
 
 Before testing for vulnerabilities you must build your project, unless it has one of the following lock files:
 
@@ -31,7 +31,7 @@ Examples of how to build/install your project:
 `dotnet restore`  
 `dep ensure`
 
-## Test for vulnerabilities
+### Test for vulnerabilities
 
 Once installed and authenticated, change directory into a folder containing a supported package manifest file \(package.json, pom.xml, composer.lock, etc.\) and run:
 
@@ -41,7 +41,7 @@ Once installed and authenticated, change directory into a folder containing a su
 
 All vulnerabilities identified are listed, including their path, and remediation guidance. To monitor your project regularly and receive ongoing notifications when new vulnerabilities are introduced, see [Monitor your projects at regular intervals](https://support.snyk.io/hc/articles/360003851297#UUID-0de07f93-0f4e-3665-7f4b-466fff3b327a).
 
-## Monitor your project
+### Monitor your project
 
 Snyk uses monitoring to regularly test your code and notify you when new vulnerabilities are introduced. To set up your project to be monitored:
 
@@ -51,7 +51,7 @@ Snyk uses monitoring to regularly test your code and notify you when new vulnera
 
 2. Log in to the Snyk app and navigate to the [Projects page](https://app.snyk.io/projects) to see the latest snapshot and scan results.
 
-## **What's next**
+### **What's next**
 
 Run `snyk help` or see [Our full CLI reference](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0).
 
