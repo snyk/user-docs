@@ -11,18 +11,19 @@ Snyk's GitHub Enterprise integration allows you to:
 On-premise GHE integrations are not currently supported. However, some on-premise SCM integrations, like Github, are available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-## Setting up a GitHub Enterprise Integration
+### Setting up a GitHub Enterprise Integration
 
 1. Create a dedicated service account in GitHub Enterprise, with _**write**_ level or above permissions, to the repos you want to monitor with Snyk permissions. See [Required permissions scope for the GitHub integration](github-enterprise-integration.md) for details.
 2. Generate a personal access token for that account, with **repo \(all\)**, **admin:read:org**, and **admin:repo\_hooks \(read & write\)** permissions scope. See [GitHub Enterprise documentation ](https://docs.github.com/en/enterprise-server@2.22/github/authenticating-to-github/creating-a-personal-access-token)for details.
 3. **Authorize** your personal access token and Enable SSO:
    1. Go to the **Integrations** page in Snyk and click on **GitHub Enterprise**:
+   2. Enter your Github Enterprise URL, and the personal access token for the service account you created:
 
-![Screen\_Shot\_2021-06-01\_at\_2.13.08\_PM.png](../../.gitbook/assets/screen_shot_2021-06-01_at_2.13.08_pm.png)
+![](../../.gitbook/assets/screen_shot_2021-06-01_at_2.13.08_pm.png)
 
-![GitHub.png](../../.gitbook/assets/github.png) 1. Enter your Github Enterprise URL, and the personal access token for the service account you created:
+![](../../.gitbook/assets/github.png)
 
-![mceclip2.png](../../.gitbook/assets/mceclip2-2-.png)
+![](../../.gitbook/assets/mceclip2-2-.png)
 
 {% hint style="info" %}
 **NOTE**  
@@ -30,14 +31,13 @@ You can use this integration to integrate to your GitHub Enterprise Cloud, by pr
 {% endhint %}
 
 1. Click **Save**. Snyk connects to your GitHub Enterprise instance. When the connection succeeds, the following indications appear:
+2. Select the repos to import to Snyk, then click **Add selected repositories**. 
+3. Snyk starts scanning the selected repos for dependency files \(such as package.json\) in the entire directory tree and imports them to Snyk as projects:
+4. The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-![mceclip4.png](../../.gitbook/assets/mceclip4-1-.png) 1. Select the repos to import to Snyk, then click **Add selected repositories**. 2. Snyk starts scanning the selected repos for dependency files \(such as package.json\) in the entire directory tree and imports them to Snyk as projects:
+![](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29%20%287%29%20%283%29.jpg)
 
-![uuid-b744bfb4-4a09-3f09-3275-986c855ee5be-en.jpg](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29%20%287%29%20%283%29.jpg)
-
-1. The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
-
-## GitHub Enterprise Integration Features
+### GitHub Enterprise Integration Features
 
 After the integration is set up, you can use the following capabilities:
 
@@ -55,15 +55,13 @@ Snyk frequently scans your projects on either a daily or a weekly basis. When ne
 
 This is an example of a fix pull request opened by Snyk:
 
-![image7.png](../../.gitbook/assets/uuid-6cfdaf0b-c349-468d-fe65-4f80bad110ea-en.png)
+![](../../.gitbook/assets/uuid-6cfdaf0b-c349-468d-fe65-4f80bad110ea-en.png)
 
 To review and adjust the automatic fix pull request settings:
 
-1. Click on settings
+Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 2. Select **Edit Settings** for GitHub Enterprise. 3. Navigate to **Automatic fix pull requests**:
 
-![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 2. Select **Edit Settings** for GitHub Enterprise. 3. Navigate to **Automatic fix pull requests**:
-
-![mceclip4.png](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%287%29%20%283%29%20%287%29.png)
+![](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%287%29%20%283%29%20%287%29.png)
 
 **Pull request testing**
 
@@ -75,13 +73,11 @@ This is how Snyk pull request checks appear in the Pull Request page in GitHub E
 
 To review and adjust the pull request tests settings:
 
-1. Click on settings
+Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 2. Select **Edit Settings** for GitHub Enterprise. 3. Navigate to **Default Snyk test for pull requests**:
 
-![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 2. Select **Edit Settings** for GitHub Enterprise. 3. Navigate to **Default Snyk test for pull requests**:
+![](../../.gitbook/assets/mceclip5%20%281%29.png)
 
-![mceclip5.png](../../.gitbook/assets/mceclip5%20%281%29.png)
-
-## Required permissions scope for the GitHub integration <a id="h_01ER1W3EZ4DXGHGKT12DWQEJV2"></a>
+### Required permissions scope for the GitHub integration
 
 All the operations, triggered manually or automatically, are performed for a GitHub service account that has its token is configured in the integrations settings. This shows the required access scopes for the configured token:
 
