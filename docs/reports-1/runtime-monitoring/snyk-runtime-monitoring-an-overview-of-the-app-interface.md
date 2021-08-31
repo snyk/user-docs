@@ -19,5 +19,5 @@ From within a project that is monitored at runtime:
 * Per vulnerability, the vulnerable functions are listed and **Monitored** appears next to those functions being watched at runtime.
 * An indicator also displays how long it has been since one of the vulnerable functions was last called.
 
-![Runtime\_ProjectDetailsExample.png](../../.gitbook/assets/uuid-6e84ffa7-04bd-413e-4bbb-3bd5de1d9092-en.png)
+![](../../.gitbook/assets/uuid-6e84ffa7-04bd-413e-4bbb-3bd5de1d9092-en.png)
 

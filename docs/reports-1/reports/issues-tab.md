@@ -22,7 +22,7 @@ This view can be seen in the Elements column below, where all the elements of bo
 Data in each of the four tabs is displayed based on the filters you've applied from the top of the Reports area, as well as the group or organization that you're viewing from.
 {% endhint %}
 
-## Issues tab elements
+### Issues tab elements
 
 Just under the **Export** button, click the **View issues ungrouped** or **View issues grouped** link to toggle between views.
 
@@ -208,7 +208,7 @@ Following are the project level details that appear only when viewing issues ung
   </tbody>
 </table>
 
-## Issues tab actions
+### Issues tab actions
 
 These controls appear above the table:
 
