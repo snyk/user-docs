@@ -47,13 +47,9 @@ Here is the example output of running **snyk fix**:
 * Only successful test results are forwarded into **snyk fix**
 * All unsupported ecosystem test results will be skipped
 
-## Enabling snyk fix
+### Enabling snyk fix
 
-To enable snyk fix during the beta period, click on settings
-
-![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
-
-&gt; **Snyk Preview**, then enable the snyk fix feature and click **Save changes**.
+To enable snyk fix during the beta period, click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Snyk Preview**, then enable the snyk fix feature and click **Save changes**.
 
 ![](../../.gitbook/assets/cleanshot_2021-07-02_at_11.39.43_2x.png)
 
@@ -78,9 +74,9 @@ Support is available for the following.
 * **snyk fix --file=base.txt --package-manager=pip**
 * **snyk fix --all-projects**
 
-## Remediation notes
+### Remediation notes
 
-## Python \(pip\)
+### Python \(pip\)
 
 ### Requirements with \`-r\` directives
 
@@ -115,15 +111,15 @@ Applied in the relevant files. All files referenced are found and updated
 
 All transitive dependencies are pinned in **constraints.txt** file if referenced via **-c** directive in requirements manifest file.
 
-## Python \(pipenv\)
+### Python \(pipenv\)
 
 Snyk delegates to \`pipenv\` directly to update dependencies to the specified recommended versions. All \`pipenv\` environment variables and behaviours are preserved as much as possible.
 
-## Python \(poetry\)
+### Python \(poetry\)
 
 Snyk delegates to \`poetry\` directly to update dependencies to the specified recommended versions. All \`poetry\` environment variables and behaviours are preserved as much as possible.
 
-## Troubleshooting
+### Troubleshooting
 
 Run in debug mode to get more information on any errors.
 
