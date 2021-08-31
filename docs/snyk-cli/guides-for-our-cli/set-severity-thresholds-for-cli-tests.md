@@ -14,7 +14,7 @@ Setting severity threshold to _Low_ currently has the same effect as running wit
 
 See also
 
-* [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-19fc37f2-b686-11ed-b85c-4789e90c8dfc)
+* [Getting started with the CLI](getting-started-with-the-cli.md)
 * [Our full CLI reference](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0)
 * [Test your code from the CLI](https://support.snyk.io/hc/articles/360003812478#UUID-2e8464f9-1d8a-5f79-466d-2ca5c5cf9f22)
 * [Test dev dependencies](https://support.snyk.io/hc/articles/360003812478#UUID-1070ae3e-5f30-cb4e-6350-a1c3f5c67511)

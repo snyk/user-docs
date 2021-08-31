@@ -4,11 +4,11 @@
 
 `snyk` - CLI and build-time tool to find & fix known vulnerabilities in open-source dependencies
 
-## SYNOPSIS <a id="SYNOPSIS"></a>
+### SYNOPSIS
 
 `snyk` \[COMMAND\] \[SUBCOMMAND\] \[OPTIONS\] \[PACKAGE\] \[-- COMPILER\_OPTIONS\]
 
-## DESCRIPTION <a id="DESCRIPTION"></a>
+### DESCRIPTION
 
 Snyk helps you find, fix and monitor known vulnerabilities in open-source dependencies.  
 For more information see [https://snyk.io](https://snyk.io)
@@ -19,7 +19,7 @@ For more information see [https://snyk.io](https://snyk.io)
 2. test your local project with `$ snyk test`
 3. get alerted for new vulnerabilities with `$ snyk monitor`
 
-## COMMANDS <a id="COMMANDS"></a>
+### COMMANDS
 
 To see command-specific flags and usage, see `help` command, e.g. `snyk container --help` \(available in [Advanced Snyk Container CLI usage](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)\).
 
@@ -45,7 +45,7 @@ Available top-level CLI commands:
 
 `wizard`Configure your policy file to update, auto patch, and ignore vulnerabilities. Snyk wizard updates your .snyk file.
 
-## OPTIONS <a id="OPTIONS"></a>
+### OPTIONS
 
 To see command-specific flags and usage, see `help` command, e.g. `snyk container --help`. For advanced usage, we offer language and context-specific flags, listed further down this document.
 
