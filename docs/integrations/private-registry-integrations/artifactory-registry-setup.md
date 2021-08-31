@@ -1,6 +1,6 @@
 # Artifactory Registry setup
 
-**Overview**
+### **Overview**
 
 You can configure two types of Artifactory Package Repository integrations:
 
