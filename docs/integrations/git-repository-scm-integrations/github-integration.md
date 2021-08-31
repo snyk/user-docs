@@ -4,18 +4,17 @@ Snyk's GitHub integration allows you to continuously perform security scanning a
 
 Please note, GitHub integrates per user rather than per org. Setting up this integration means it will be used for all organizations associated with your account.
 
-## Setting up a GitHub Integration
+### Setting up a GitHub Integration
 
-1. Go to the Integrations page and click on “GitHub”: ![mceclip1.png](../../.gitbook/assets/mceclip1-12-.png)
-2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories: ![image16.png](../../.gitbook/assets/uuid-30383c92-fc68-c8cc-0ffe-b731c92b9967-en%20%282%29%20%282%29%20%284%29%20%285%29%20%285%29%20%286%29%20%286%29%20%283%29.png)
-3. When the GitHub authorization screen opens, click on "Authorize snyk" to provide it with an access to your repositories: ![mceclip0.png](../../.gitbook/assets/authorize%20%281%29%20%282%29%20%286%29%20%281%29%20%283%29.png)
+1. Go to the Integrations page and click on “GitHub”: 
+2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories: 
+3. When the GitHub authorization screen opens, click on "Authorize snyk" to provide it with an access to your repositories: 
 4. Select the repos you'd like to import to Snyk. When done, click on the **Add selected repositories** button, at the top of the page. Once clicked, Snyk will start scanning the selected repos for dependency files \(i.e. package.json, pom.xml, etc\) in the entire directory tree and import them to Snyk as projects:
+5. The imported projects now appear in your Projects page and are continuously checked for vulnerabilities.
 
-![uuid-b744bfb4-4a09-3f09-3275-986c855ee5be-en.jpg](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29%20%287%29%20%2810%29.jpg)
+![](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29%20%287%29%20%2810%29.jpg)
 
-1. The imported projects now appear in your Projects page and are continuously checked for vulnerabilities.
-
-## GitHub Integration Features
+### GitHub Integration Features
 
 Once the integration is in place, you'll be able to enjoy the following capabilities:
 
@@ -45,13 +44,13 @@ Snyk will test any newly created pull request in your repositories for security 
 
 This is how Snyk pull request checks appear in the Pull Request page in GitHub:
 
-![image10.png](../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en%20%282%29%20%282%29%20%286%29%20%285%29%20%284%29.png)
+![](../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en%20%282%29%20%282%29%20%286%29%20%285%29%20%284%29.png)
 
 You can review and adjust the pull request tests settings by navigating to the GitHub's Integration **Settings** page in Snyk \(Settings --&gt; Integration --&gt; GitHub\):
 
 ![](../../.gitbook/assets/mceclip5%20%281%29.png)
 
-## Required permissions scope for the GitHub integration
+### Required permissions scope for the GitHub integration
 
 ### Non Brokered GitHub Integrations
 
@@ -94,8 +93,9 @@ In order to use this feature, you'll need to do the following:
 
 1. Open GitHub's Integrations Settings page in Snyk app by clicking on _Settings_ → _Integrations_ →  _GitHub_
 2. Enable the toggle button under the _Open fix and upgrade pull requests from a fixed GitHub_ _account_  setting:
+3. Follow the in-page instructions for creating a personal access token in GitHub 2. Provide the newly generated token to Snyk so it can be used to perform operations in GitHub \(i.e. opening Fix PRs and etc\)
 
-![Screen\_Shot\_2020-09-29\_at\_21.27.30.png](../../.gitbook/assets/screen-shot-2020-09-29-at-21.27.30.png) 1. Follow the in-page instructions for creating a personal access token in GitHub 2. Provide the newly generated token to Snyk so it can be used to perform operations in GitHub \(i.e. opening Fix PRs and etc\)
+![](../../.gitbook/assets/screen-shot-2020-09-29-at-21.27.30.png)
 
 **Important note:**
 
@@ -144,11 +144,11 @@ Once you’re vulnerability free, you can put a badge on your README showing you
 
 If there are no vulnerabilities, this is indicated by a green badge.
 
-![image5.png](../../.gitbook/assets/uuid-cb438aa4-226e-2109-f901-c59ca233732e-en.png)
+![](../../.gitbook/assets/uuid-cb438aa4-226e-2109-f901-c59ca233732e-en.png)
 
 If vulnerabilities have been found, the red badge will show the number of vulnerabilities.
 
-![image13.png](../../.gitbook/assets/uuid-96d6b4d1-afb7-a2bd-093d-eaa96e2ac2c1-en.png)
+![](../../.gitbook/assets/uuid-96d6b4d1-afb7-a2bd-093d-eaa96e2ac2c1-en.png)
 
 To show a badge for a given Node.js, Ruby or Java GitHub repository, copy the relevant snippet below and replace “{username}/{repo}” with the GitHub username and repo you want to test.
 
@@ -168,11 +168,11 @@ For example, to show a badge for the 4.x branch of the express repo, use the URL
 
 To change the style of the badge, you can add the following query parameters after badge.svg:
 
-![image1.png](../../.gitbook/assets/uuid-cb438aa4-226e-2109-f901-c59ca233732e-en.png)
+![](../../.gitbook/assets/uuid-cb438aa4-226e-2109-f901-c59ca233732e-en.png)
 
 `?style=flat-square`
 
-![image1.png](../../.gitbook/assets/uuid-cb438aa4-226e-2109-f901-c59ca233732e-en.png)
+![](../../.gitbook/assets/uuid-cb438aa4-226e-2109-f901-c59ca233732e-en.png)
 
 `style=plastic`
 
