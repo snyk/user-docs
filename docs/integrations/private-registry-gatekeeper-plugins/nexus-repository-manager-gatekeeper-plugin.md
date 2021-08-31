@@ -30,9 +30,11 @@ Use the Snyk capability with your Nexus Repository Manager to test your artifact
 4. Based on the severity thresholds configured for the Snyk Security Configuration capability, the package is blocked.
 5. The error appears in the developer’s CLI \(including a link to the error with full details\) and from the Nexus interface for administrators, detailing the number of known issues for vulnerabilities and licenses.
 
-## Administrators’ guide for the Snyk Nexus Gatekeeper plugin
+### Administrators’ guide for the Snyk Nexus Gatekeeper plugin
 
 To set up and configure the plugin, start scanning and managing your organization's artifacts for vulnerabilities, check out this information:
+
+#### Prerequisites:
 
 * You must sign up for an Enterprise account with Snyk before you begin.
 * You must be an administrator or owner of the Snyk account.
@@ -56,18 +58,19 @@ To set up and configure the plugin, start scanning and managing your organizatio
    * **Snyk Organization ID** - paste the token value you saved from step 1
    * **Vulnerability Threshold**—default is \*low\*. Valid values include low, medium, high. Manually update the configuration based on your needs.
    * **License Threshold**—default is \*low\*. Valid values include low, medium, high. Manually update the configuration based on your needs. 
+4. Shut down the Nexus service instance and then restart it. 
+5. Log in to your Nexus instance and double check that the Snyk bundle has been installed successfully.
 
-![image1.png](../../.gitbook/assets/uuid-9745b82a-ed7e-bce0-75dd-0070514f274d-en.png) 1. Shut down the Nexus service instance and then restart it. 2. Log in to your Nexus instance and double check that the Snyk bundle has been installed successfully.
+![](../../.gitbook/assets/uuid-9745b82a-ed7e-bce0-75dd-0070514f274d-en.png)
 
 ### Track vulnerabilities in your team's artifacts
 
 1. Once installed, every time a developer requests to download an artifact, the following occurs:
    * Based on the severity thresholds that you configured, the download is blocked.
    * Scan results are displayed for the developer with a link to full details for the error:
+   * Results are stored in the Snyk Security part of the Attributes section from the Nexus interface for the artifact:
 
-![cli\_output.png](../../.gitbook/assets/uuid-a2c354a2-21ca-bdfb-7862-a2ef26eec59e-en.png)
-
-* Results are stored in the Snyk Security part of the Attributes section from the Nexus interface for the artifact:
+![](../../.gitbook/assets/uuid-a2c354a2-21ca-bdfb-7862-a2ef26eec59e-en.png)
 
 ![](../../.gitbook/assets/image%20%2833%29.png)
 

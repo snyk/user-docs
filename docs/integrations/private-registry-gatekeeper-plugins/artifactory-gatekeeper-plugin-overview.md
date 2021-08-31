@@ -19,7 +19,7 @@ By scanning artifacts as part of your workflow and then displaying those test re
 This article refers to the Artifactory _Plugin_, an independent piece of software that is installed on the Artifactory machine and serves as a gatekeeper, blocking vulnerable packages from being downloaded from the Artifactory instance rather than the [Artifactory _Integration_](https://docs.snyk.io/integrations/private-registry-integrations/artifactory-registry-for-maven) - an internal integration in Snyk app, that allows configuring SCM / CLI scans to use custom package registries
 {% endhint %}
 
-## Supported Package Managers
+### Supported Package Managers
 
 * npm
 * Maven \(.jar files\)
@@ -27,54 +27,41 @@ This article refers to the Artifactory _Plugin_, an independent piece of softwar
 * sbt \(.jar files\)
 * pip \(PyPi\)
 
-## Prerequisites
+### Prerequisites
 
 * Snyk Enterprise Account
 * Artifactory Version 7.4.3 and up.
 
-## Installation
+### Installation
 
 1. Log in to your Snyk account.
-2. Click on settings
-
-![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
-
-&gt; **General** to locate, copy and save the following on the side:
-
-* service account token or Organization API token:
-* the Organization ID for \(any\) one of your organizations
-
-![](../../.gitbook/assets/artifactory-install.png) 1. Go to [our repo in GitHub](https://github.com/snyk/artifactory-snyk-security-plugin) and navigate to the **Releases**. 2. From the most current release, expand the **Assets** section to download the artifactory-snyk-security-plugin-&lt;version&gt;.zip archive. 3. Extract the archive. It should have the following structure: 1. plugins \(directory\)
-
-```text
-      snykSecurityPlugin.groovy — plugin
-
-      snykSecurityPlugin.properties — plugin configuration
-
-      lib \(directory\)
-
-          artifactory-snyk-security-core.jar - plugin library
-
-          snykSecurityPlugin.version - plugin version
-```
-
-1. Open "snykSecurityPlugin.properties" in a text editor. 
+2. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **General** to locate, copy and save the following on the side:
+   1. Service account token or Organization API token:
+   2. The Organization ID for \(any\) one of your organizations
+3. Go to [our repo in GitHub](https://github.com/snyk/artifactory-snyk-security-plugin) and navigate to the **Releases**. 
+4. From the most current release, expand the **Assets** section to download the artifactory-snyk-security-plugin-&lt;version&gt;.zip archive. 
+5. Extract the archive. It should have the following structure: 
+   1. plugins \(directory\)
+      * snykSecurityPlugin.groovy — plugin
+      * snykSecurityPlugin.properties — plugin configuration
+      * lib \(directory\)
+        * artifactory-snyk-security-core.jar - plugin library
+        * snykSecurityPlugin.version - plugin version
+6. Open "snykSecurityPlugin.properties" in a text editor. 
    1. Set the API Token and Organization ID from the above steps as "snyk.api.token" and "snyk.api.organization" respectively.
    2. Configure the rest of the properties as needed or leave them as defaults. 
    3. For a full list of properties, [view the file on GitHub](https://github.com/snyk/artifactory-snyk-security-plugin/blob/master/core/src/main/groovy/io/snyk/plugins/artifactory/snykSecurityPlugin.properties).
-2. Place all the files under "${ARTIFACTORY\_HOME}/etc/plugins/"
-3. Restart your Artifactory server.   **NOTE: Refresh now** or **Reload** is not sufficient. Artifactory must be restarted.
-4. Log in to your Artifactory instance and navigate to the **System Logs** to double-check Snyk has been installed successfully.
+7. Place all the files under "${ARTIFACTORY\_HOME}/etc/plugins/"
+8. Restart your Artifactory server.    **NOTE: Refresh now** or **Reload** is not sufficient. Artifactory must be restarted.
+9. Log in to your Artifactory instance and navigate to the **System Logs** to double-check Snyk has been installed successfully.
 
 ![](../../.gitbook/assets/artifactory-system-logs.png)
 
-## How it works
+### How it works
 
 Whenever a download is requested from Artifactory whether from a package manager or a URL, Snyk will automatically scan the artifact for vulnerabilities and license issues.
 
 To view details about download status, open the **System Logs**:
-
-![](../../.gitbook/assets/image.png)
 
 If a scan finds issues, based on your configuration, the download request can be blocked with a HTTP status code "403 Forbidden".
 
@@ -96,7 +83,7 @@ You can find the results of a scan under the artifact's properties where you can
 
 ## Troubleshooting
 
-You can enable debug logs by modifying your "${ARTIFACTORY\_HOME}/var/etc/artifactory/logback.xml" file and adding the following line:
+You can enable debug logs by modifying your `${ARTIFACTORY_HOME}/var/etc/artifactory/logback.xml`file and adding the following line:
 
 ```text
 <logger name="io.snyk" level="debug"/>
