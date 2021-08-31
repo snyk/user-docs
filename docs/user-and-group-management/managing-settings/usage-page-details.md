@@ -48,7 +48,7 @@ Each contributor is counted by the **author** email field, which is set within t
 
 Snyk does not store any actual git user emails in its database but instead uses the _hashes_ of the emails for counting contributing developers. Snyk uses the hash of the local git author email, that is, the email that is set locally in the user's git config, whether for one of the Source Control Management integrations \(such as GitHub\), or from the Snyk CLI.
 
-## View projects
+### View projects
 
 The **Projects** section shows test usage settings for your projects:
 
