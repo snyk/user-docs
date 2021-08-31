@@ -6,7 +6,7 @@ Snyk integrates with Bitbucket Pipelines using a **Snyk pipe**, seamlessly scann
 
 With the Snyk pipe, you can quickly add Snyk scanning to your pipelines to test and monitor for vulnerabilities at different points of the CI/CD workflow, based on your configurations. Results are then displayed from the Bitbucket Pipelines output view and can also be monitored from [Snyk.io](http://app.snyk.io/).
 
-## Snyk pipe information in Bitbucket
+### Snyk pipe information in Bitbucket
 
 From the build directory, Bitbucket Pipelines displays a list of available pipes customized for you directly, similar to the following image:
 
@@ -16,7 +16,7 @@ From this list, find and click **Snyk** to view the pipe, examples, parameters, 
 
 ![](../../.gitbook/assets/mceclip0-25-.png)
 
-## Language support
+### Language support
 
 Snyk integration with Bitbucket pipes is supported for the following languages:
 
@@ -30,7 +30,7 @@ Snyk integration with Bitbucket pipes is supported for the following languages:
 Bitbucket pipeline implementation for Java \(Maven and Gradle\) requires the [Snyk CLI](https://docs.snyk.io/snyk-cli).
 {% endhint %}
 
-## Bitbucket Pipelines integration: how it works
+### Bitbucket Pipelines integration: how it works
 
 Once the user has added the Snyk pipe to the pipeline, each time the pipeline executes \(by any trigger type\) the Snyk pipe does the following.
 
@@ -49,7 +49,7 @@ Optionally, if the build completes successfully and **MONITOR** is set to **True
 
 \(For Node.js projects only\) Optionally, set **PROTECT** to **True** and if a .snyk policy file exists, Snyk applies patches specified in the policy file.
 
-## Configure your Bitbucket Pipelines integration
+### Configure your Bitbucket Pipelines integration
 
 To enable Snyk to test and monitor your code as an integral part of your CI/CD workflow in Bitbucket, add the Snyk pipe into your `bitbucket-pipelines.yml` \(YAML\) file. The bitbucket-pipelines.yml file should be located in the root of your repository, and it is this file that defines all your build configurations \(pipelines for your CI/CD workflow\).
 
@@ -70,14 +70,14 @@ To enable Snyk to test and monitor your code as an integral part of your CI/CD w
 * Once included in your pipeline commands, Snyk looks for the manifest files in that repository \(package.json, package-lock.json\) and performs the scan.
 * Results appear in the Bitbucket Pipelines output interface, similar to the following:
 
-![image3.png](../../.gitbook/assets/uuid-dbbc4153-d3ff-5cbb-9ddd-affa138387b7-en.png)
+![](../../.gitbook/assets/uuid-dbbc4153-d3ff-5cbb-9ddd-affa138387b7-en.png)
 
 {% hint style="info" %}
 **Note**  
 If the build fails, even if **MONITOR** is set to **True**, Snyk does not continue to the Monitor stage \(because no projects are deployed until the build succeeds\). To enable monitoring on Snyk.io of projects with vulnerabilities, set **DONT\_BREAK\_BUILD** to **True**. You can use **SEVERITY\_THRESHOLD** to tell the pipe the severity threshold from which to fail the pipe at the scanning stage. See Snyk pipe parameters and values for more information.
 {% endhint %}
 
-## Snyk pipe parameters and values \(Bitbucket Cloud\)
+### Snyk pipe parameters and values \(Bitbucket Cloud\)
 
 Following is the Snyk pipe that should be configured as part of a pipeline YAML file in order to include vulnerability scanning as part of your CI/CD workflow:
 
