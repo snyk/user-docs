@@ -18,7 +18,7 @@ Test limits vary for Snyk products and plans. See the [plans page](https://snyk.
 See [What counts as a test?](https://support.snyk.io/hc/en-us/articles/360000925418-What-counts-as-a-test-) for details of how Snyk counts tests.
 {% endhint %}
 
-## View contributing developers
+### View contributing developers
 
 {% hint style="info" %}
 Currently, the integrations for which we have developer counts are GitHub, GitHub Enterprise, GitLab and the Snyk CLI.

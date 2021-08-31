@@ -331,7 +331,6 @@
     * [Assign a policy to project attributes](fixing-and-prioritizing-issues/policies/assign-a-policy-to-project-attributes.md)
     * [The .snyk file](fixing-and-prioritizing-issues/policies/the-.snyk-file.md)
   * [Security policies](fixing-and-prioritizing-issues/security-policies/README.md)
-    * [Untitled](fixing-and-prioritizing-issues/security-policies/untitled.md)
     * [Getting started with security policies](fixing-and-prioritizing-issues/security-policies/getting-started-with-security-policies.md)
     * [How to create a security policy and set rules](fixing-and-prioritizing-issues/security-policies/how-to-create-a-security-policy-and-set-rules.md)
     * [Security policies: Conditions](fixing-and-prioritizing-issues/security-policies/security-policies-conditions.md)
