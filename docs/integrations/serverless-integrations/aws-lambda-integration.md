@@ -23,7 +23,7 @@ Configure the integration with these two parts:
 
 You must be the owner or an administrator of the Snyk account you’re integrating.
 
-## **How it works**
+### **How it works**
 
 1. The user creates a policy-based role, called a **Role ARN**, in the format arn:aws:iam:::role/. The role enables read-only access to the user’s Lambda services. The user configures Snyk for integration with AWS Lambda using the credentials for the role they created.
 2. The user requests to import functions to Snyk \(for testing and monitoring\).
@@ -31,11 +31,11 @@ You must be the owner or an administrator of the Snyk account you’re integrati
 4. Snyk communicates directly with Lambda for each test it runs to determine exactly what code is currently deployed and what dependencies are being used. Each dependency is tested against Snyk’s vulnerability database to see if it contains any known vulnerabilities.
 5. Based on your configurations, if vulnerabilities are found, Snyk notifies you via email or Slack so that you can take immediate remediation action.
 
-## Supported repos and languages
+### Supported repos and languages
 
 Snyk currently supports integration with AWS Lambda for Node, Ruby and Java projects.
 
-## Configure your integration with Snyk
+### Configure your integration with Snyk
 
 1. Allow a few minutes for AWS to update the role on their servers.
 2. From AWS, copy the **Role ARN** key that appears at the top of the **Summary** section \(inside the **Role** area still; in the format arn:aws:iam:::role/\). Save this value to paste in Snyk soon.
@@ -44,7 +44,7 @@ Snyk currently supports integration with AWS Lambda for Node, Ruby and Java proj
 
 The **AWSLambda** configuration page in the **Settings** area loads, with the **External ID** value automatically populated for you based on the Snyk organization that you’re configuring.
 
-![image6.png](../../.gitbook/assets/uuid-21b8f9b0-7756-3492-31fe-48ed1777a83c-en.png)
+![](../../.gitbook/assets/uuid-21b8f9b0-7756-3492-31fe-48ed1777a83c-en.png)
 
 1. Paste the **Role ARN** that you saved on the side into the **ARN** field.
 2. Click **Save**. Snyk tests the connection values and the page reloads, now displaying AWS Lambda integration details as you entered them. A confirmation message that the details were saved also appears in green at the top of the screen.
@@ -53,7 +53,7 @@ The **AWSLambda** configuration page in the **Settings** area loads, with the **
 
 In addition, if the connection to AWS failed, notification appears under the **Connected to AWS Lambda** section accordingly.
 
-## Enable permissions
+### Enable permissions
 
 Enable permissions to access AWS Lambda for the first time by creating a new read-only policy-based role from the AWS Identity and Access Management \(IAM\) console and updating the policy directly from the associated JSON file as necessary.
 
@@ -94,7 +94,7 @@ This section generally describes how to navigate the AWS IAM Console for these p
    6. Skip to the last step **\(Review\)** of the process.
    7. Name the role **SnykLambdaServiceRole** and then finish creating it.
 
-## **Add projects to Snyk**
+### **Add projects to Snyk**
 
 Add functions to your Snyk projects. Snyk then tests and monitors your AWS Lambda applications to identify vulnerabilities in your deployed code.
 
@@ -108,12 +108,12 @@ You must be added as a collaborator to the Snyk organization you’d like to wor
 
    **NOTE** If you can’t see that icon, click the+ **option and then from the** Integrations **page, find and click the** Lambda\*\* option. 
 
-2. Select the repositories and their relevant functions you’d like to test and click **Add selected repositories**. ![image8.png](../../.gitbook/assets/uuid-e21c5832-5a84-a635-27c1-2ea9726bce64-en.png)
+2. Select the repositories and their relevant functions you’d like to test and click **Add selected repositories**. 
 3. Snyk evaluates root folders and custom file locations. If no manifest files are found on the root level or in the paths you configure, Snyk notifies you that no files can be imported.
 4. Once repositories are imported, a confirmation appears in green at the top of the screen. ![](../../.gitbook/assets/uuid-ee5c7842-1773-a590-7b75-aa5e960b8108-en.png)
 5. Refresh the page to view the added functions. AWS ECR images are indicated with a unique icon ![image2.png](../../.gitbook/assets/uuid-1275abc5-312a-ce0b-b6d9-2caf3e83584a-en.png), they are grouped and named by repo, and you can now also filter to view only those projects:
 
-![image7.png](../../.gitbook/assets/uuid-8f54b49d-23ee-637e-45a9-47ca61fe2b9e-en.png)
+![](../../.gitbook/assets/uuid-8f54b49d-23ee-637e-45a9-47ca61fe2b9e-en.png)
 
 AWS Lambda integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages in our docs.
 
