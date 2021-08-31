@@ -6,11 +6,11 @@ Don’t like email? You can set up Slack to receive Snyk’s alerts about new vu
 
 You’ll get two alerts in Slack:
 
-1: A newly disclosed vulnerability affects you
+**1:** A newly disclosed vulnerability affects you
 
 ![](../../.gitbook/assets/image%20%2823%29.png)
 
-2: A new upgrade or patch is available for a vulnerability that you previously ignored or patched
+**2:** A new upgrade or patch is available for a vulnerability that you previously ignored or patched
 
 ![](../../.gitbook/assets/image%20%2822%29.png)
 
