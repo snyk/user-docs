@@ -1,16 +1,16 @@
 # Detecting Kubernetes configuration files using a broker
 
-If you are using a privately hosted Git repository, Snyk Broker can connect it with Snyk products. See the [broker documentation](https://support.snyk.io/hc/en-us/articles/360004032397-Broker) for details.
+If you are using a privately hosted Git repository, Snyk Broker can connect it with Snyk products. See the [broker documentation](../../integrations/snyk-broker/broker-introduction.md) for details.
 
 This document describes the additional configuration required for the Kubernetes configuration and Helm files, for Snyk IaC.
 
-## Writing the configuration
+### Writing the configuration
 
 The Kubernetes scanning features need access to the YAML or JSON files from the repository. This requires specific API permissions. These API permissions are slightly different depending on which source control system you are using.
 
 1. Find and download the appropriate accept.json sample file for your source control system [from the Broker repository](https://github.com/snyk/broker/tree/master/client-templates).
 2. Rename it to `accept.json` and add the below rules, appropriate to your SCM, to the **private** array in the JSON file.
-3. Follow the [Configuring the broker]() instructions.
+3. Follow the [Configuring the broker](detecting-kubernetes-configuration-files-using-a-broker.md#configuring-the-broker) instructions.
 
 ### GitHub & GitHub Enterprise rules
 

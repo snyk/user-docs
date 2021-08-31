@@ -2,13 +2,13 @@
 
 Snyk tests and monitors CloudFormation files from source code repositories. It gives advice on how to better secure cloud environments by catching misconfigurations before they are pushed to production along with assistance on how best to fix them.
 
-## Supported Git repositories and file formats
+### Supported Git repositories and file formats
 
 Snyk currently scans CloudFormation files in `JSON` and `YAML` format when imported from an integrated Git repository. Scan a CloudFormation module repository by either importing the repo that holds the module from an SCM or by using the directory itself with the `snyk iac test` command.
 
 Scanning CloudFormation provides security feedback on everything that is statically configured in the module. To benefit from recurring/scheduled testing, it's best practice to import custom modules directly from an SCM.
 
-## Configure Snyk to scan your CloudFormation configuration files
+### Configure Snyk to scan your CloudFormation configuration files
 
 **Prerequisites**
 
@@ -17,9 +17,11 @@ Scanning CloudFormation provides security feedback on everything that is statica
 
 **Configure Snyk**
 
-1. Enable Snyk to detect Infrastructure as code files as follows:![Enable\_Snyk\_to\_detect\_Kubernetes\_configuration\_files.gif](../../.gitbook/assets/enable_snyk_to_detect_kubernetes_configuration_files.gif)
+![](../../.gitbook/assets/enable_snyk_to_detect_kubernetes_configuration_files.gif)
+
+1. Enable Snyk to detect Infrastructure as code files as follows:
    1. **Note**: Integrations are managed per organization. 
 2. If needed, review and adjust settings in the **Infrastructure as code** settings area:
 
-![Screen\_Shot\_2021-06-22\_at\_11.44.07.png](../../.gitbook/assets/screen_shot_2021-06-22_at_11.44.07.png)
+![](../../.gitbook/assets/screen_shot_2021-06-22_at_11.44.07.png)
 
