@@ -41,7 +41,17 @@ Select how you would like to authenticate with Snyk to give AWS CodePipeline per
 
 The following options are available for configuration:
 
-![](../../.gitbook/assets/configure.png) 1. **Snyk Organization:** Select the Snyk organization where findings reports are saved. 2. **Vulnerability handling**: Select to fail a pipeline if a vulnerability is found. If Fail on issues is selected, the pipeline will fail depending on the sub-options selected. The sub options available are: 1. **All**: Selecting all fails when there is at least one vulnerability that can be either upgraded or patched. 2. **Upgradable**: Selecting upgradable fails when there is at least one vulnerability that can be upgraded. 3. **Patchable**: Selecting patchable fails when there is at least one vulnerability that can be patched. 3. **Block deployment for vulnerabilities of type** 4. **Block deployment for vulnerabilities with a minimum severity of**: \(**low**\|**medium**\|**high**\|**critical**\) Only report vulnerabilities of provided level or higher.
+![](../../.gitbook/assets/image8%20%281%29.png)
+
+* **Snyk Organization:** Select the Snyk organization where findings reports are saved.
+* **Vulnerability handling**: Select to fail a pipeline if a vulnerability is found. If Fail on issues is selected, the pipeline will fail depending on the sub-options selected. The sub options available are: 
+  * **Block deployment for vulnerabilities of type:**
+    * **All**: Selecting all fails when there is at least one vulnerability that can be either upgraded or patched. 
+    * **Upgradable**: Selecting upgradable fails when there is at least one vulnerability that can be upgraded. 
+    * **Patchable**: Selecting patchable fails when there is at least one vulnerability that can be patched. 
+  * **Block deployment for vulnerabilities with a minimum severity of**: \(**low**\|**medium**\|**high**\|**critical**\) Only report vulnerabilities of provided level or higher.
+* **Monitor project**: Select the monitor project checkbox to monitor projects from the AWS CodePipeline. The project snapshot will be created under the Snyk organization selected. Whenever you select the Monitor Project option please note that the Project Group Name will be required. This is to prevent any unintentional project overrides due to naming conflicts.
+* **Project Group Name:** Enter the project group name for your projects.. This is the same as using [--remote-repo-url](https://support.snyk.io/hc/en-us/articles/360000910677-Snyk-CLI-monitored-projects-are-created-with-IDs-in-the-project-name) when using the CLI. The field does not allow any spaces in the names.
 
 {% hint style="info" %}
 You can change the Configuration settings of a previously-configured stage, by clicking on the **Snyk** link.
