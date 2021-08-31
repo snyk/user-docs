@@ -10,7 +10,7 @@ The following actions are available within the members page of the organization:
 
 The following tasks can be performed if your role has the correct set of permissions to perform the action:
 
-## Invite users
+### Invite users
 
 1. Click **Add members** in the members page
 2. Select the **Invite new members** page in the add members modal
@@ -25,7 +25,7 @@ Any users who have been invited will be assigned the “Collaborator” role by 
 
 The user you have specified will have the invite in their inbox.
 
-## Remove pending invites
+### Remove pending invites
 
 If you have any pending invitations, they will be displayed in the members page in your organization with a number to state how many pending invites you have.
 
@@ -34,7 +34,7 @@ If you have any pending invitations, they will be displayed in the members page 
 
 The invite has been successfully removed.
 
-## Add existing members
+### Add existing members
 
 1. Click **Add members** in the members page
 2. Select the **Add existing members** page, and select **Select members** in the modal
@@ -43,14 +43,14 @@ The invite has been successfully removed.
 
 The user you have invited then appears in the list of organization members.
 
-## Remove users from the organization
+### Remove users from the organization
 
 1. Click the icon next to the user to remove them from the organization
 2. Click **Delete member from** _**your organization’s name**_ in the modal
 
 The user has been successfully removed from the organization.
 
-## Change organization user roles
+### Change organization user roles
 
 1. Roles are assigned via the drop down list in the members page under the **Existing members**
 2. Select the new role from the drop down, the change is automatically saved

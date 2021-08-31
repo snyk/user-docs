@@ -1,10 +1,6 @@
 # Managing permissions
 
-Click settings
-
-![cog\_icon.png](../../.gitbook/assets/cog_icon.png)
-
-&gt; **Members** to invite new team members.
+Click settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Members** to invite new team members.
 
 1. The Free plan only has administrators.
 2. Enterprise plans have administrators and collaborators.

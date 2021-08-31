@@ -7,7 +7,7 @@ In the **Manage organization** section, you can:
 * leave this organization.
 * delete this organization \(administrator users only\).
 
-## Create a new Snyk organization
+### Create a new Snyk organization
 
 You can have an unlimited number of organizations on Snyk. Each organization can be on a different pricing plan.
 

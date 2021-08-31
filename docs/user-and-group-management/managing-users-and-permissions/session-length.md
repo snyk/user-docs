@@ -8,7 +8,7 @@ Once configured, recording and tracking of session length and expiration initiat
 
 You can configure the session length expiration through the web-based user interface as well as from our API.
 
-## Configure session length for a Snyk group
+### Configure session length for a Snyk group
 
 The default session length that is applied for members of a group is 30 days. Group admins can change this value to any value between 30 days and a minimum of 5 minutes.
 
@@ -28,5 +28,7 @@ This feature is available to plans that support groups. See [Pricing plans](http
 3. From the **Session expiration** area, enter values for the session length. valid value ranges are as follows:
    1. Days - 0-30
    2. Hours - 0-23
-   3. Minutes - 0-59 ![image1.png](../../.gitbook/assets/uuid-21093b2a-7003-b47a-cb62-2e6dd147323e-en.png)
+   3. Minutes - 0-59 
+
+![](../../.gitbook/assets/uuid-21093b2a-7003-b47a-cb62-2e6dd147323e-en.png)
 
