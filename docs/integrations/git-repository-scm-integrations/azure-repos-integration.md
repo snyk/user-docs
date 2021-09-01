@@ -26,7 +26,7 @@ Snyk tests and monitors Azure Repos that are in any of our supported languages b
 2. In the text field, enter the relative path in which the manifest file is located, as demonstrated in the image above.
 
 {% hint style="info" %}
-**NOTE**  
+**Note**  
 This field is case-sensitive.
 {% endhint %}
 
@@ -35,7 +35,7 @@ This field is case-sensitive.
 This integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages in our Docs.
 
 {% hint style="info" %}
-NOTE  
+**Note**  
 This field is case-sensitive and the pattern applies for all repos.
 {% endhint %}
 
@@ -74,15 +74,10 @@ Ensure you have set up your Azure Repos account and your Snyk account.
    * Code—Read and write \(enable Project Administrators group permissions if user creating the Personal Access Token is not an admin of the Repositories\)
 4. [Log in](https://app.snyk.io/) to your Snyk account.
 5. Navigate to **Integrations** from the menu bar at the top.
-6. From the **Integrations** page under the Azure Repos logo, click the **Connect to Azure Repos button:**
-7. From the **Settings** page in the **Integrations** area, enter the Azure DevOps organization that you want to integrate with \(i.e. [https://dev.azure.com/{org-name}\](https://dev.azure.com/{org-name}%29\) and the personal access token that you just generated.
-
-![](../../.gitbook/assets/settings.png)
-
-\* Enterprise customers can also provide a custom URL for Azure Repos Server private instance which is publicly reachable.
-
-1. Click **Save**.
-2. Snyk tests the connection values and the page reloads, now displaying Azure Repos integration information. A confirmation message that the details were saved also appears in green at the top of the screen. In addition, if the connection to Azure failed, a notification appears under the Connected to Azure Repos section.
+6. From the **Integrations** page under the Azure Repos logo, click the **Connect to Azure Repos button.**
+7. From the **Settings** page in the **Integrations** area, enter the Azure DevOps organization that you want to integrate with \(i.e. [https://dev.azure.com/{org-name}\](https://dev.azure.com/{org-name}%29\) and the personal access token that you just generated. \* Enterprise customers can also provide a custom URL for Azure Repos Server private instance which is publicly reachable.
+8. Click **Save**.
+9. Snyk tests the connection values and the page reloads, now displaying Azure Repos integration information. A confirmation message that the details were saved also appears in green at the top of the screen. In addition, if the connection to Azure failed, a notification appears under the Connected to Azure Repos section.
 
 ![](../../.gitbook/assets/screen_shot_2020-05-19_at_17.16.24.png)
 

@@ -10,19 +10,19 @@ Snyk's Bitbucket Cloud integration allows you to continuously perform security s
 > Make sure the newly created user has **Admin** permissions to all the repositories you need to monitor with Snyk.
 
 1. To give Snyk access to your Bitbucket account, set up up a dedicated service account in Bitbucket, with admin permissions. Visit [Bitbucket documentation ](https://support.atlassian.com/bitbucket-cloud/docs/grant-access-to-a-workspace/)to learn more about creating users.
-2. In Snyk, go to the **Integrations** page and click on **Bitbucket Cloud** card:
+2. In Snyk, go to the **Integrations** page and click on **Bitbucket Cloud** card.
 3. Access your Bitbucket Cloud account and create a unique App Password for Snyk with the following permissions: **Account: Email & Read** **Workspace membership: Read Projects: Read Repositories: Read & Write Pull requests: Read & Write Webhooks: Read & Write** Follow [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html) to learn how to do it. 
 4. Enter the username and the App Password for the service account you created:
-5. Click **Save**. Snyk connects to your Bitbucket Cloud account. When the connection succeeds, the following indications appear:
+5. Click **Save**.   
+   Snyk connects to your Bitbucket Cloud account. When the connection succeeds, the following indications appear:
 
-![](../../.gitbook/assets/mceclip1-17-.png)
+   ![](../../.gitbook/assets/settings%20%281%29.png)  
+   You can now select the repositories for Snyk to monitor.
 
-You can now select the repositories for Snyk to monitor.
-
-1. Click **Add your Bitbucket Cloud repositories to Snyk** to start importing repositories to Snyk.
-2. Select the repositories to import to Snyk when prompted, then click **Add selected repositories**.
-3. Snyk scans the selected repositories for dependency files \(such as package.json and pom.xml\) in the entire directory tree, and import them to Snyk as projects:
-4. The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
+6. Click **Add your Bitbucket Cloud repositories to Snyk** to start importing repositories to Snyk.
+7. Select the repositories to import to Snyk when prompted, then click **Add selected repositories**.
+8. Snyk scans the selected repositories for dependency files \(such as package.json and pom.xml\) in the entire directory tree, and import them to Snyk as projects:
+9. The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
 ![](../../.gitbook/assets/444%20%282%29%20%284%29%20%284%29%20%284%29%20%285%29%20%284%29%20%287%29.png)
 
@@ -62,7 +62,9 @@ This is how Snyk pull request build check appears in the **Pull Request** page i
 
 To review and adjust the pull request tests settings,
 
-Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 2. Select **Edit Settings** for Bitbucket Cloud. 3. Navigate to **Default Snyk test for pull requests**:
+1. Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**.
+2. Select **Edit Settings** for Bitbucket Cloud. 
+3. Navigate to **Default Snyk test for pull requests**
 
 ![](../../.gitbook/assets/999.png)
 

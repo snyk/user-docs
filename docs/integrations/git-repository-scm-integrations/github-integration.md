@@ -6,9 +6,9 @@ Please note, GitHub integrates per user rather than per org. Setting up this int
 
 ### Setting up a GitHub Integration
 
-1. Go to the Integrations page and click on “GitHub”: 
-2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories: 
-3. When the GitHub authorization screen opens, click on "Authorize snyk" to provide it with an access to your repositories: 
+1. Go to the Integrations page and click on “GitHub”.
+2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories.
+3. When the GitHub authorization screen opens, click on "Authorize snyk" to provide it with an access to your repositories.
 4. Select the repos you'd like to import to Snyk. When done, click on the **Add selected repositories** button, at the top of the page. Once clicked, Snyk will start scanning the selected repos for dependency files \(i.e. package.json, pom.xml, etc\) in the entire directory tree and import them to Snyk as projects:
 5. The imported projects now appear in your Projects page and are continuously checked for vulnerabilities.
 
@@ -57,9 +57,10 @@ You can review and adjust the pull request tests settings by navigating to the G
 1. Operations that are triggered via the Snyk UI, for example, opening a Fix PR or retesting a project are performed on behalf of the acting user. Therefore, a user that wants to perform this operation in GitHub via the Snyk UI, must connect their GitHub account to Snyk and have the required permissions scope for the repositories they would like to perform these operations for, [see this for more details](github-integration.md).
 2. Operations which are not triggered via the UI, as daily / weekly tests and automatic PRs \(fix and upgrade\) are performed on behalf of a random Snyk organization members who have connected their GitHub accounts to Snyk and have the required permissions scope for the repository.
 
-**NOTE**
-
-a Snyk organization admin can configure a [specific GitHub account on whose behalf the PRs will be opened](opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md). In this case, Snyk will continue using a random Snyk organization member’s GitHub account to perform all the other operations. Therefore, using this feature does not eliminate the need for connecting users’ GitHub accounts to Snyk.
+{% hint style="info" %}
+**Note**  
+A Snyk organization admin can configure a [specific GitHub account on whose behalf the PRs will be opened](opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md). In this case, Snyk will continue using a random Snyk organization member’s GitHub account to perform all the other operations. Therefore, using this feature does not eliminate the need for connecting users’ GitHub accounts to Snyk.
+{% endhint %}
 
 ### Brokered GitHub Integrations
 

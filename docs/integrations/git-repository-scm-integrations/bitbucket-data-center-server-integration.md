@@ -62,7 +62,9 @@ This is how Snyk pull request build check appears in the **Pull Request** page i
 
 To review and adjust the pull request tests settings:
 
-Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 2. Select **Edit Settings** for Bitbucket Server 3. Navigate to **Default Snyk test for pull requests**:
+1. Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 
+2. Select **Edit Settings** for Bitbucket Server. 
+3. Navigate to **Default Snyk test for pull requests**:
 
 ![](../../.gitbook/assets/999.png)
 

@@ -16,24 +16,12 @@ On-premise GHE integrations are not currently supported. However, some on-premis
 1. Create a dedicated service account in GitHub Enterprise, with _**write**_ level or above permissions, to the repos you want to monitor with Snyk permissions. See [Required permissions scope for the GitHub integration](github-enterprise-integration.md) for details.
 2. Generate a personal access token for that account, with **repo \(all\)**, **admin:read:org**, and **admin:repo\_hooks \(read & write\)** permissions scope. See [GitHub Enterprise documentation ](https://docs.github.com/en/enterprise-server@2.22/github/authenticating-to-github/creating-a-personal-access-token)for details.
 3. **Authorize** your personal access token and Enable SSO:
-   1. Go to the **Integrations** page in Snyk and click on **GitHub Enterprise**:
-   2. Enter your Github Enterprise URL, and the personal access token for the service account you created:
-
-![](../../.gitbook/assets/screen_shot_2021-06-01_at_2.13.08_pm.png)
-
-![](../../.gitbook/assets/github.png)
-
-![](../../.gitbook/assets/mceclip2-2-.png)
-
-{% hint style="info" %}
-**NOTE**  
-You can use this integration to integrate to your GitHub Enterprise Cloud, by providing the following URL [https://api.github.com](https://api.github.com).
-{% endhint %}
-
-1. Click **Save**. Snyk connects to your GitHub Enterprise instance. When the connection succeeds, the following indications appear:
-2. Select the repos to import to Snyk, then click **Add selected repositories**. 
-3. Snyk starts scanning the selected repos for dependency files \(such as package.json\) in the entire directory tree and imports them to Snyk as projects:
-4. The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
+4. Go to the **Integrations** page in Snyk and click on **GitHub Enterprise**:
+5. Enter your Github Enterprise URL, and the personal access token for the service account you created: **Note**: You can use this integration to integrate to your GitHub Enterprise Cloud, by providing the following URL [https://api.github.com](https://api.github.com)
+6. Click **Save**. Snyk connects to your GitHub Enterprise instance. When the connection succeeds, the following indications appear:
+7. Select the repos to import to Snyk, then click **Add selected repositories**. 
+8. Snyk starts scanning the selected repos for dependency files \(such as package.json\) in the entire directory tree and imports them to Snyk as projects:
+9. The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
 ![](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29%20%287%29%20%283%29.jpg)
 
@@ -73,7 +61,9 @@ This is how Snyk pull request checks appear in the Pull Request page in GitHub E
 
 To review and adjust the pull request tests settings:
 
-Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 2. Select **Edit Settings** for GitHub Enterprise. 3. Navigate to **Default Snyk test for pull requests**:
+1. Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 
+2. Select **Edit Settings** for GitHub Enterprise. 
+3. Navigate to **Default Snyk test for pull requests**:
 
 ![](../../.gitbook/assets/mceclip5%20%281%29.png)
 

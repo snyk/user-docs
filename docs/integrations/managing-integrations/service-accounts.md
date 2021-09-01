@@ -11,9 +11,13 @@ By using a service account token, you can:
 * Create multiple tokens for different uses or integrations in order to manage each separately
 * Ensure seamless integrations even when employees change roles or close their Snyk accounts, for example.
 
+{% hint style="info" %}
 Roles are only for service accounts on the group level, and are only for paid accounts.
+{% endhint %}
 
+{% hint style="info" %}
 Service accounts cannot currently be used for GitHub integrations.
+{% endhint %}
 
 ### Set up a service account
 
