@@ -16,8 +16,8 @@ You can also use an [IDE tool](https://docs.snyk.io/integrations/ide-tools) or a
 
 Ensure you have:
 
-1. A Snyk [paid plan](https://snyk.io/plans/).
-2. Integrated and installed your projects, as described for [Snyk Open Source](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-snyk-open-source).
+* A Snyk [paid plan](https://snyk.io/plans/).
+* Integrated and installed your projects, as described for [Snyk Open Source](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-snyk-open-source).
 
 ### **Stage 1: Define policies**
 

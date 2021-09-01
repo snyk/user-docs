@@ -56,7 +56,8 @@ The value has been removed from the attribute.
 **Filtering values in the project listing page**
 
 1. On the left of the project listing page, select the values for the attributes that you want to filter projects by.
-2. When you filter by multiple values on a single attribute, you will return projects that have been assigned one or more of the values in the filter 2. When you filter by multiple attributes, you will return projects which have been assigned values of both attributes in the filter.
+2. When you filter by multiple values on a single attribute, you will return projects that have been assigned one or more of the values in the filter.
+3. When you filter by multiple attributes, you will return projects which have been assigned values of both attributes in the filter.
 
 ![](../../.gitbook/assets/gs5.png)
 

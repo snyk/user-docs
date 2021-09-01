@@ -8,7 +8,7 @@ Developer teams typically adopt Snyk in the following stages:
 2. [Use Snyk as a gatekeeper](snyk-cicd-integration-good-practices.md) \(snyk test\)
 3. [Continuous monitoring](snyk-cicd-integration-good-practices.md) \(snyk test + Snyk monitor\)
 
-   **Stage 1: Expose vulnerabilities \(Snyk monitor\)**
+#### **Stage 1: Expose vulnerabilities \(Snyk monitor\)**
 
 This is a typical initial approach, using Snyk results to expose to your team vulnerabilities during the development process, which increases visibility of these vulnerabilities amongst your team.
 
@@ -17,7 +17,7 @@ This is because all projects are vulnerable, and after you set Snyk to fail the 
 
 Using **snyk monitor** to expose results will provide information, without disrupting processes.
 
-**Stage 2: Use Snyk as a gatekeeper \(snyk test\)**
+#### **Stage 2: Use Snyk as a gatekeeper \(snyk test\)**
 
 This next approach prevents the introduction of new vulnerabilities \(sometimes known as "stopping the bleeding"\).
 
@@ -25,17 +25,19 @@ After your teams understand the vulnerabilities in their applications, and devel
 
 Add **snyk test** to your build or enable the fail functionality to make Snyk fail your builds, providing the results output to the console. Your Devs or DevOps teams can use the results to decide whether to stop or continue the build.
 
-**Stage 3: Continuous monitoring \(snyk test + Snyk monitor\)**
+#### **Stage 3: Continuous monitoring \(snyk test + Snyk monitor\)**
 
 After you configure Snyk to fail the build when vulnerabilities are detected, you can now configure Snyk to send a snapshot of your project's successful builds to Snyk for ongoing monitoring.
 
 To do this, configure your pipeline to run **snyk monitor** if your **snyk test** returns a successful exit code.
 
-### Prerequisites
+### **Technical Implementation**
+
+#### Prerequisites
 
 To configure Snyk to run in a pipeline, retrieve key configuration inputs from your Snyk account.
 
-### Define target organization
+#### Define target organization
 
 When you run Snyk in your CI/CD platform, you will typically want to post the test results to Snyk, for review and ongoing monitoring.
 
@@ -118,19 +120,27 @@ You can use Snyk's JSON output to create custom test reports as build artifacts,
 
 Snyk allows you to automatically create new work items in JIRA \(see [Jira integration](https://docs.snyk.io/integrations/untitled-3/jira) documentation\). You can customize this code for your specific requirements, or adapt it to work with other work management systems.
 
-See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns) to get started.  
-or review the [API to create Jira tickets.](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices/README.md#reference/projects/project-jira-issues/create-jira-issue)
+See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns) to get started, or review the [API to create Jira tickets.](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices/README.md#reference/projects/project-jira-issues/create-jira-issue)
+
+### Ignoring issues
+
+By default if issues are not ignored, or if you are not using Snyk-delta, a "snyk test" in your pipeline fails the build when issues are found. To allow builds to continue without resolving these issues, you can:
+
+* [Ignore issues using a Snyk policy file](https://support.snyk.io/hc/en-us/articles/360003851317-Ignore-vulnerabilities)
+* [Ignore issues from the Snyk UI](https://support.snyk.io/hc/en-us/articles/360000923498-How-can-I-ignore-a-vulnerability-)
+* [Ignore issues from the Snyk API](https://snyk.docs.apiary.io/#reference/projects/project-ignores-by-issue/add-ignore)
+* Use the Snyk Python API for bulk ignores: see [https://github.com/snyk-labs/pysnyk](https://github.com/snyk-labs/pysnyk) and [https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py](https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py)
 
 ### Snyk Open Source-specific strategies
 
 These strategies are useful to teams using Snyk's SCA \(Software Composition Analysis\) testing features.
 
-### Gradle & Scala
+#### Gradle & Scala
 
 * For "multi-project" configurations, test all sub-projects, use the next flag with your monitor or test command **--all-sub-projects** 
 * To scan specific configurations, select certain values of configuration attributes to resolve the dependencies. Use the next flag with your test or monitor command **--configuration-attributes=**
 
-### Python
+#### Python
 
 * Snyk uses Python to scan and find your dependencies. Snyk needs the Python version to start scanning, and defaults to "python". If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.  
   Use the next flag with your test or monitor cmd to specify the Python version **--command=**. For example:
@@ -141,7 +151,7 @@ These strategies are useful to teams using Snyk's SCA \(Software Composition Ana
 
 * If you scan a Pip project and use the **--file=** because your manifest file isn’t the standard of **requirement.txt**, then the next flag is mandatory to specify Pip as the package manager **--package-manager=pip**
 
-### .Net
+#### .Net
 
 If you use a .sln file, you can specify the path to the file, and snyk will scan all the sub projects that are part of the repo. For example:
 
@@ -149,13 +159,14 @@ If you use a .sln file, you can specify the path to the file, and snyk will scan
 snyk test --file=sln/.sln
 ```
 
-### Yarn Workspace
+#### Yarn Workspace
 
 For Yarn workspaces use the **--yarn-workspaces** flag to test and monitor your packages. The root lockfile will be referenced when scanning all the packages. Use the -**-detection-depth** parameter to find sub-folders which are not auto discovered by default.
 
-**NOTE**
-
+{% hint style="info" %}
+**Note**  
 Yarn workspaces support is for **snyk test** and **snyk monitor** commands only at this time.
+{% endhint %}
 
 Example:
 
@@ -171,7 +182,7 @@ You can use a common **.snyk** policy file, if you maintain ignores/patches in o
 snyk test --yarn-workspaces --policy-path=src/.snyk
 ```
 
-### Monorepo
+#### Monorepo
 
 Some customers have complex projects, with multiple languages, package managers, and projects, in a single repository. To facilitate this, you can take different approaches:
 

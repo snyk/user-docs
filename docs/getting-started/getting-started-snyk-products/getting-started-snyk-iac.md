@@ -10,9 +10,9 @@ This article describes a process using the Snyk.io UI. For details of using IaC 
 
 Ensure you have:
 
-1. A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](https://docs.snyk.io/getting-started/getting-started-snyk-products) for details\).
-2. An existing Kubernetes or Terraform environment to work in.
-3. Integrated your Git repository as for other Snyk products - see [Git repository \(SCM integrations\)](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) for more details.
+* A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](https://docs.snyk.io/getting-started/getting-started-snyk-products) for details\).
+* An existing Kubernetes or Terraform environment to work in.
+* Integrated your Git repository as for other Snyk products - see [Git repository \(SCM integrations\)](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) for more details.
 
 For more details, see:
 
@@ -24,11 +24,10 @@ For more details, see:
 Import projects to test with Snyk, by choosing repositories for Snyk to test and monitor.
 
 1. Select **Projects** from Snyk.io.
-2. Select the tool to add the project from \(for example GitHub\): 
+2. Select the tool to add the project from \(for example GitHub\).
 3. In **Personal and Organization repositories**, select the repositories to use. 
 4. Click **Add selected repositories** to import the selected repositories into your projects. 
-5. A progress bar appears: click **View log** to see import log results
-   1. \(you can scan both Kubernetes and Terraform files simultaneously, as in this example.\)
+5. A progress bar appears: click **View log** to see import log results \(you can scan both Kubernetes and Terraform files simultaneously\)
 6. Project import completes.
 
 ### Stage 2: View configuration file issues
@@ -39,7 +38,9 @@ Select **Projects**, then click on the imported project entry, to see informatio
 
 ![](../../.gitbook/assets/iac_-_issues_list.png)
 
-\(Issues are sorted into project types: Helm, Kubernetes and Terraform.\) 2. Click on a project to see more information and details of the issues in a configuration file:
+\(Issues are sorted into project types: Helm, Kubernetes and Terraform.\) 
+
+Click on a project to see more information and details of the issues in a configuration file:
 
 ![](../../.gitbook/assets/iac_-_select_config_file.png)
 
@@ -52,7 +53,7 @@ If you encounter any errors during import, see the [Importing projects](https://
 Act on the recommendations produced by Snyk IaC.
 
 1. IaC results appear as direct issues in the relevant scanned configuration files.
-2. Click on an issue to see the details for that issue, and specific recommendations from Snyk IaC. For example: 
+2. Click on an issue to see the details for that issue, and specific recommendations from Snyk IaC. 
 3. Edit the configuration file to fix the issue identified, based on the recommendations, then commit the change.
 4. Snyk automatically rescans the changed file, and you can see the change reflected in the issue display.
 

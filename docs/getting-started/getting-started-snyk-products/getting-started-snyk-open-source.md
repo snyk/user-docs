@@ -34,7 +34,7 @@ Choose a source code integration, to allow Snyk to work on a project.
 
 1. Log in to Snyk.io.
 2. Select **Integrations &gt; Source control**.
-3. Click the source control system \(for example, GitHub\) to integrate with Snyk:   
+3. Click the source control system \(for example, GitHub\) to integrate with Snyk. 
 4. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
 
 See [DevOps integrations & languages](https://support.snyk.io/hc/en-us/articles/360011733538-DevOps-integrations-languages) for more details
@@ -44,9 +44,13 @@ See [DevOps integrations & languages](https://support.snyk.io/hc/en-us/articles/
 Add projects to test with Snyk, by choosing repositories for Snyk to test and monitor.
 
 1. Select **Projects** from snyk.io.
-2. Select the tool to add the project from \(for example GitHub\):
-3. In **Personal and Organization repositories**, select the repositories to use:
-4. Click **Add selected repositories** to import the selected repositories into your projects. This also: 5. Sets Snyk to run a regular check \(daily by default\) for vulnerabilities. 6. Creates a Webhook, so when you change code, Snyk tests your pull / merge requests, to check that new dependencies do not introduce more vulnerabilities. 1. A progress bar appears: click **View log** to see log results. 2. Project import completes.
+2. Select the tool to add the project from \(for example GitHub\).
+3. In **Personal and Organization repositories**, select the repositories to use.
+4. Click **Add selected repositories** to import the selected repositories into your projects. This also:
+   1. Sets Snyk to run a regular check \(daily by default\) for vulnerabilities. 
+   2. Creates a Webhook, so when you change code, Snyk tests your pull / merge requests, to check that new dependencies do not introduce more vulnerabilities. 
+5. A progress bar appears: click **View log** to see log results. 
+6. Project import completes.
 
 {% hint style="info" %}
 If you encounter any errors during import, see the [Importing projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects) information.
@@ -69,15 +73,16 @@ See [View project information](https://docs.snyk.io/getting-started/introduction
 
 For JavaScript, Ruby and Java projects, Snyk can remediate your vulnerabilities via fix pull/merge requests:
 
-1. Open the issues view for a project
+Navigate to the issues view for a project:
 
 ![Screenshot\_2021-04-09\_at\_17.35.25.png](../../.gitbook/assets/screenshot_2021-04-09_at_17.35.25.png)
 
-Click **Fix this vulnerability** to upgrade \(or patch\) to fix an individual issue, or click **Fix these vulnerabilities** to to fix multiple issues at once.
+To fix vulnerabilities:
 
-1. The **Open a Fix PR** screen opens and indicates the vulnerabilities you selected:
-2. Check any additional issues you want to fix, or uncheck items to remove them from the fix. 4. Scroll down to the bottom of the screen and click **Open a Fix PR**. 5. Snyk now actions this PR, then a results screen appears:
-3. Optionally, select the **Files changed** tab to see details of the changes made.
+1. Click **Fix this vulnerability** to upgrade \(or patch\) to fix an individual issue, or click **Fix these vulnerabilities** to to fix multiple issues at once.
+2. The **Open a Fix PR** screen opens and indicates the vulnerabilities you selected:
+3. Check any additional issues you want to fix, or uncheck items to remove them from the fix. 4. Scroll down to the bottom of the screen and click **Open a Fix PR**. 5. Snyk now actions this PR, then a results screen appears:
+4. Optionally, select the **Files changed** tab to see details of the changes made.
 
 ![](../../.gitbook/assets/screenshot_2021-04-09_at_17.46.22.png)
 

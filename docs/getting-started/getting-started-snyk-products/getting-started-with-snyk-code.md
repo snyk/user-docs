@@ -18,8 +18,9 @@ This documentation describes using Snyk Code with the Web UI. You can also use S
 Snyk Code is disabled by default, so you must enable it for each organization:
 
 1. Log in to [Snyk.io](http://snyk.io/).
-2. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Snyk Code**. 3. Under **Enable Snyk Code**, change **Disabled** to **Enabled:**
-3. Click **Save changes**.
+2. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Snyk Code**. 
+3. Under **Enable Snyk Code**, change **Disabled** to **Enabled:**
+4. Click **Save changes**.
 
 ### Stage 2: Add source control integration
 
@@ -47,9 +48,9 @@ Add projects to test with Snyk, by choosing repositories for Snyk to test and mo
 1. Select **Projects** from [snyk.io](http://snyk.io/).
 2. Select the tool to add the project from \(for example GitHub\): 
 3. In **Personal and Organization repositories**, select the repositories to use: 
-4. Click **Add selected repositories** to import the selected repositories into your projects. 
-
-This sets Snyk to run a regular check \(daily by default\) for your proprietary code vulnerabilities. 5. A progress bar appears: click **View log** to see log results. 6. Project import completes.
+4. Click **Add selected repositories** to import the selected repositories into your projects. This sets Snyk to run a regular check \(daily by default\) for your proprietary code vulnerabilities. 
+5. A progress bar appears: click **View log** to see log results. 
+6. Project import completes.
 
 {% hint style="info" %}
 Currently Snyk Code does not support the **Exclude folders** option during import. Please contact us if you need more information.

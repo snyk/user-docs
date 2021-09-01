@@ -113,13 +113,15 @@ To check if an SCM is already configured for your Org, navigate to the **Integra
 
 ![](../../.gitbook/assets/int1.png)
 
+{% hint style="info" %}
 If your SCM is already configured, go to the next stage.
+{% endhint %}
 
 ### Example: GitHub
 
 Below is an example of how you would set up your an integration for **Github.com**
 
-1. Go to the **Integrations** tab, and click on “GitHub”. 
+1. Go to the **Integrations** tab, and click on **GitHub**. 
 2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories: 
 3. Click **Authorize snyk** to provide Snyk with access to your repositories:
 
@@ -138,7 +140,7 @@ For example, in GitHub, the accounts connected to Snyk need the following access
 | **Opening fix and upgrade pull requests** | For creating fix / upgrade PRs in the monitored repos |  |
 | **Snyk tests on pull requests - initial configuration** | For adding Snyk's webhooks to the imported repos, so Snyk will be informed whenever pull requests are created or updated and be able to trigger scans | _**Admin**_ |
 
-**Change notification settings**
+#### **Change notification settings**
 
 By default, Snyk emails every Org User when a new issue or remediation in a project’s dependencies is found, and provides you with a weekly update of your security status across your organization. If you plan to import many projects to an Org, consider disabling all the notifications for that Org, to avoid too many email notifications sent to users.
 
@@ -146,13 +148,16 @@ To customize the emails your Org users receive, navigate to the Org’s settings
 
 To disable notifications for all the users in an Org ahead of your import, uncheck the appropriate notification boxes:
 
+![](../../.gitbook/assets/image%20%2856%29.png)
+
+See [Notification management](https://support.snyk.io/hc/en-us/articles/360004037657-Notification-management) for more details.
+
+### Stage 2: Import Projects
+
 1. Navigate to the **Projects** page in the Snyk UI, select **Add projects**, select the repos to import to Snyk, then click **Add selected repositories**.
-2. Snyk starts scanning the selected repos for dependency files \(for example, **package.json**\) in the entire directory tree and imports these files as projects:
-
-![](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29%20%287%29.jpg)
-
-1. Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.
-2. Snyk detects the manifest files \(projects\), tests them, then displays the results. Imported projects appear underneath the repository name.
+2. Snyk starts scanning the selected repos for dependency files \(for example, **package.json**\) in the entire directory tree and imports these files as projects.
+3. Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.
+4. Snyk detects the manifest files \(projects\), tests them, then displays the results. Imported projects appear underneath the repository name.
 
 ![](../../.gitbook/assets/int3.png)
 
@@ -185,8 +190,9 @@ Administrators can manage settings for Snyk PR tests at the organization level t
 
 To configure the PR test settings for your organization:
 
-1. Navigate to **Org** &gt; settings ![](../../.gitbook/assets/cog_icon.png) **&gt;** Integrations &gt; Edit Settings. 2. Set the the toggle to **Enabled** and set the **Fail conditions** as needed:
-2. Click **Update settings**.
+1. Navigate to **Org** &gt; settings ![](../../.gitbook/assets/cog_icon.png) **&gt;** Integrations &gt; Edit Settings. 
+2. Set the the toggle to **Enabled** and set the **Fail conditions** as needed:
+3. Click **Update settings**.
 
 ![](../../.gitbook/assets/image13.png)
 
@@ -194,7 +200,9 @@ To configure the pull request test settings for a specific project, navigate to 
 
 ![](../../.gitbook/assets/main.png)
 
+{% hint style="info" %}
 You can avoid Snyk failing PRs for licensing issues, using license policies. See [License policies](https://support.snyk.io/hc/en-us/sections/360002249578-License-Policies) for more details.
+{% endhint %}
 
 **Initial step: get visibility and set fail conditions**
 
@@ -213,7 +221,9 @@ After you’ve embedded Snyk into your SDLC, and have built good developer aware
 * **Medium priority projects**: fail the PR only for high severity issues.
 * **High priority projects \(PCI/GDPR compliance\)**: fail the PR for any issue.
 
+{% hint style="info" %}
 To align vulns severity with your internal policy, use security policies to change severity of issues and attached them to relevant projects attributes. See [Security policies](https://support.snyk.io/hc/en-us/sections/360004225818-Security-Policies) for more details.
+{% endhint %}
 
 ### Stage 5: Automatic Fix PRs
 
@@ -237,7 +247,9 @@ You should ask your developers to consider the merge advice label that appears o
 
 ![](../../.gitbook/assets/merge-advice%20%282%29%20%282%29%20%284%29%20%282%29%20%281%29%20%284%29.png)
 
+{% hint style="info" %}
 Snyk auto fix PRs are only generated for new issues.
+{% endhint %}
 
 If your SCM is Github and you are not using Snyk Broker, then by default Snyk rotates every Org user's credentials to open the auto fix PRs. You can change this if needed, and set the user credentials to open the auto fix PRs. See [Opening fix and upgrade pull requests from a fixed GitHub account](https://support.snyk.io/hc/en-us/articles/360010843797) for details.
 
@@ -272,14 +284,14 @@ To set PR Settings on the project level, overriding the PR settings on the organ
 2. Click **Projects**.
 3. Navigate to the relevant project and click the **Settings** cog:  
 
-![](../../.gitbook/assets/int4.png)
+   ![](../../.gitbook/assets/image%20%284%29.png)
 
-1. From the Settings area, click on the integration settings from the left panel menu to apply unique settings for that one project.
-2. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled.
-3. From the options that appear:
-4. \* Snyk creates PRs up to a maximum of 10 open simultaneously - per repo. To limit this number further, select the maximum number of PRs from the dropdown list. For more details, see [Upgrading dependencies with automatic PRs](https://docs.snyk.io/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs).
-5. In the Dependencies to ignore field, enter the exact name of any dependencies that should not be handled as part of the automatic functionality. This field accepts only lower case letters.
-6. Once you click ‘Upgrade dependency settings’ every time Snyk scans this project, it will automatically submit upgrade PRs based on results. If a newer version is released for an existing Snyk upgrade PR or for an existing fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.
+4. From the Settings area, click on the integration settings from the left panel menu to apply unique settings for that one project.
+5. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled.
+6. From the options that appear:
+   1. Snyk creates PRs up to a maximum of 10 open simultaneously - per repo. To limit this number further, select the maximum number of PRs from the dropdown list. For more details, see [Upgrading dependencies with automatic PRs](https://docs.snyk.io/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs).
+   2. In the Dependencies to ignore field, enter the exact name of any dependencies that should not be handled as part of the automatic functionality. This field accepts only lower case letters.
+   3. Once you click ‘Upgrade dependency settings’ every time Snyk scans this project, it will automatically submit upgrade PRs based on results. If a newer version is released for an existing Snyk upgrade PR or for an existing fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.
 
 ![](../../.gitbook/assets/general-github_integration.png)
 
