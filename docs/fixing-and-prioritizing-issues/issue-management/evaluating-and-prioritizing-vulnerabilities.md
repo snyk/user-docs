@@ -31,7 +31,7 @@ The **Exploit maturity** filter is available from any detailed **Projects** page
 1. Log in to Snyk.
 2. Go to the detailed **Projects** page for any of your projects 
 3. Work with and remediate vulnerabilities from the **Issues** tab of the **Reports** area as well: 
-4. Filter reports by exploit maturity: 
-   1. View exploit maturity data from the **Issues** list in **Grouped** mode: 
-   2. View exploit maturity data from the **Issues** list in **Ungrouped** mode: 
+   1. Filter reports by exploit maturity: 
+   2. View exploit maturity data from the **Issues** list in **Grouped** mode: 
+   3. View exploit maturity data from the **Issues** list in **Ungrouped** mode: 
 
