@@ -15,14 +15,16 @@ Snyk currently scans your Kubernetes configuration files in JSON and YAML format
 
 **Configure Snyk**
 
-1. Log in to [app.snyk.io](https://app.snyk.io/)
-2. Navigate to the relevant group and organization that you want to manage
+Log in to [app.snyk.io](https://app.snyk.io/), and navigate to the relevant group and organization that you want to manage
 
 ![](../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%283%29.gif)
 
-**NOTE**
-
+{% hint style="info" %}
+**Note**  
 Integrations are managed per organization.
+{% endhint %}
+
+From here:
 
 1. Enable Snyk to detect Kubernetes configuration files by enabling the flag in the settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Infrastructure as code** page: 
 2. If needed, review and adjust settings in the **Infrastructure as code** settings:

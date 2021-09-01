@@ -18,8 +18,8 @@ Snyk Infrastructure as Code supports:
 2. If you already imported your repositories for testing before cloud configuration file detection was enabled by your administrator, then you should re-import that repository again in order to import the relevant JSON or YAML configuration files:
 3. Every time a repository is scanned:
    1. Every supported manifest file and every supported configuration file is imported as a separate project, grouped together per repository, similar to this example:
-4. If you re-imported the repository in order to import the cloud configuration files, then Snyk imports and tests the configuration files and also re-tests the already imported application manifest files - displaying the test time as "now".
-5. Click the project link you're interested in, to view the scan results and to correct your configuration files accordingly: 
+   2. If you re-imported the repository in order to import the cloud configuration files, then Snyk imports and tests the configuration files and also re-tests the already imported application manifest files - displaying the test time as "now".
+4. Click the project link you're interested in, to view the scan results and to correct your configuration files accordingly: 
 
 ![4.png](../../.gitbook/assets/4.png)
 
