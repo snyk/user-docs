@@ -13,7 +13,7 @@ To add images from Harbor to Snyk:
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
 2. Under the **Projects** tab, click **Add project**. The list of integrations already configured on your account opens. Select the **Harbor** option or **Other** if Harbor doesn’t appear. 
-3. The **Which images do you want to test?** view appears, displaying all of the available images for your connected registry, grouped by each of your repositories, similar to the following:
+3. The **Which images do you want to test?** view appears, displaying all of the available images for your connected registry, grouped by each of your repositories.
 4. Select single or multiple images to be imported to Snyk. Selection can be done by choosing a specific image or selecting an entire repository. You can also search by image name to find specific images to import. To finish, click **Add selected repositories** on the top-right. 
 5. A status bar appears at the top of the page as the images are imported; you can continue working in the meantime. 
 6. When the import ends:

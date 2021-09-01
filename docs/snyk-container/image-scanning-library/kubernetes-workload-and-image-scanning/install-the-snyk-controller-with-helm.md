@@ -48,27 +48,27 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
 
    **Note:** The secret must be called `snyk-monitor` in order for the integration to work.
 
-7. If any of the images you need to scan are located in private registries, you need to provide credentials to access those registries by creating a secret \(which must be called snyk-monitor\) using both the Snyk Integration ID as well as a dockercfg file. The dockercfg file is necessary to allow the monitor to look up images in private registries. Usually, a copy of the dockercfg resides in $HOME/.docker/config.json. 1. Create a `dockercfg` configuration file:
+7. If any of the images you need to scan are located in private registries, you need to provide credentials to access those registries by creating a secret \(which must be called snyk-monitor\) using both the Snyk Integration ID as well as a dockercfg file. The dockercfg file is necessary to allow the monitor to look up images in private registries. Usually, a copy of the dockercfg resides in $HOME/.docker/config.json. 
+   1. Create a `dockercfg` configuration file:
 
-   ```text
-         { 
-           "auths": { 
-             "gcr.io": { 
-               "auth": "BASE64-ENCODED-AUTH-DETAILS" 
-             } 
-             // Add other registries as necessary 
-           } 
-         }
-   ```
+      ```text
+            { 
+              "auths": { 
+                "gcr.io": { 
+                  "auth": "BASE64-ENCODED-AUTH-DETAILS" 
+                } 
+                // Add other registries as necessary 
+              } 
+            }
+      ```
 
-   1. Create a secret with the file added:
+   2. Create a secret with the file added:
 
       ```text
       kubectl create secret generic snyk-monitor \
               -n snyk-monitor --from-file=dockercfg.json \
               --from-literal=integrationId=abcd1234-abcd-1234-abcd-1234abcd1234
       ```
-
 8. If your registry is using self-signed or other additional certificates you must make those available to Snyk monitor. First place the `.crt`, `.cert`, and/or `.key` files in a directory and create a ConfigMap:
 
    ```text

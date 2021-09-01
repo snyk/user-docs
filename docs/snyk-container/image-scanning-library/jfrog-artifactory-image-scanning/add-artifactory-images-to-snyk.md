@@ -15,7 +15,7 @@ Snyk tests and monitors your Artifactory container images by evaluating its tags
 
 ![](../../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29.gif)
 
-* Go to Projects, and click Add projects. The list of integrations already configured on your account opens, similar to the following:
+* Go to **Projects**, and click **Add projects**. The list of integrations already configured on your account opens, similar to the following:
 
 ![](../../../.gitbook/assets/uuid-dd01aab7-482f-0fc2-01de-c2427a14a0e0-en.png)
 
@@ -27,7 +27,7 @@ Snyk tests and monitors your Artifactory container images by evaluating its tags
   * Type the name of a single image for import in the Image Name field \(\#1 in the image above\),
   * Select any of the repositories if you want to import all of the associated images \(\#2 in the image above\).
   * Expand and collapse repositories to select multiple images \(\#3 in the image above\) across multiple repositories.
-* Click Add selected repositories.
+* Click **Add selected repositories**.
 
   A status bar appears at the top of the page as the images are imported; you can continue working in the meantime.
 

@@ -93,22 +93,20 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
             --from-file=
     ```
 
-11. Log in to your OpenShift Container Platform \(OCP\) web console, navigate to OperatorHub and then search for Snyk to install the Snyk Operator:
-12. Double-check installation was successful from the Installed Operators area:
-13. Now, from the Subscription tab, create an Operator Subscription for the Snyk controller: 
-    1. Select "A specfic namespace on the cluster" or leave the default “All namespaces on the cluster” based on your needs.
+11. Log in to your OpenShift Container Platform \(OCP\) web console, navigate to OperatorHub and then search for **Snyk** to install the **Snyk Operator**.
+12. Double-check installation was successful from the **Installed Operators** area
+13. Now, from the **Subscription** tab, create an Operator Subscription for the **Snyk controller**: 
+    1. Select "A specfic namespace on the cluster" or leave the default “All namespaces on the cluster” based on your needs.  
+       **Tip**:   
+       Cluster scope is the default scope and we recommend you use this when installing the namespace so that we can scan the entire cluster. You can choose Namespaced scope, in which case the Snyk controller will watch for workloads only in the namespace in which it is deployed!  
 
-       ```text
-        **Tip**
-
-        Cluster scope is the default scope and we recommend you use this when installing the namespace so that we can scan the entire cluster. You can choose Namespaced scope, in which case the Snyk controller will watch for workloads only in the namespace in which it is deployed!  
-        **Note**: Snyk always uses a stable channel when scanning your workloads 
-       ```
+       **Note**:   
+       Snyk always uses a stable channel when scanning your workloads  
 
     2. Leave the remaining default configurations as they are.
     3. Click Subscribe to make the Operator available to the namespaces on this OpenShift Container Platform cluster.
-14. Now, create an instance of the **Snyk Monitor**. From the **Snyk Monitor** custom resource, click Create instance:
-15. Double-check successful installation from the cluster:
+14. Now, create an instance of the **Snyk Monitor**. From the **Snyk Monitor** custom resource, click Create instance.
+15. Double-check successful installation from the cluster.
 16. After successfully installing the **Snyk Operator** and the instance of a **Snyk Monitor**, you can also view your cluster in Snyk.
 
 ![Example of successful installation from the cluster.](../../../.gitbook/assets/image%20%2840%29.png)

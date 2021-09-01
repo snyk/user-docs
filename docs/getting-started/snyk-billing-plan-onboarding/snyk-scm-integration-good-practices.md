@@ -148,7 +148,7 @@ To customize the emails your Org users receive, navigate to the Org’s settings
 
 To disable notifications for all the users in an Org ahead of your import, uncheck the appropriate notification boxes:
 
-![](../../.gitbook/assets/image%20%2856%29.png)
+![](../../.gitbook/assets/image%20%2857%29.png)
 
 See [Notification management](https://support.snyk.io/hc/en-us/articles/360004037657-Notification-management) for more details.
 

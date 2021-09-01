@@ -12,7 +12,9 @@ You must have an account with Snyk and be onboarded to your organization by an a
 In addition, the integration must be configured between Snyk and your Kubernetes environment per organization. To verify the integration is configured, ensure you have an Integration ID:
 
 1. Navigate to the relevant organization.
-2. Click on settings ![](../../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 3. In the Kubernetes section, click **Edit Settings**. 4. Scroll to the **Integration ID** entry and check this is set.
+2. Click on settings ![](../../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 
+3. In the Kubernetes section, click **Edit Settings**. 
+4. Scroll to the **Integration ID** entry and check this is set.
 
 ### Automatically add, update and remove workloads
 
