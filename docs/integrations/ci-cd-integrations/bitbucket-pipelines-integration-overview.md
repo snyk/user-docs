@@ -62,13 +62,13 @@ To enable Snyk to test and monitor your code as an integral part of your CI/CD w
 
 ### How to add a Snyk pipe
 
-* Add the Snyk pipe while originally creating your pipeline, or while editing an existing pipeline. See the Bitbucket documentation for more information about [pipelines](https://confluence.atlassian.com/bitbucket/configure-bitbucket-pipelines-yml-792298910.html) and [pipes](https://support.atlassian.com/bitbucket-cloud/docs/pipes/). When adding the Snyk pipe, follow these guidelines:
-* Use the Bitbucket pipeline editor to update the .yml file configuration, select the correct language and use the Bitbucket Pipes build directory when adding the Snyk pipe.
-* Paste the Snyk pipe into the Bitbucket editor interface, after all, build steps. Build steps are commands such as these: `npm install / composer install / bundle install / dotnet restore / docker build`
-* Ensure you paste the pipe before a deployment step, such as **npm publish or docker push**.
-* Configure the **LANGUAGE**, choose whether to fail the pipeline on vulnerabilities found with **DONT\_BREAK\_BUILD** \(you can also use **SEVERITY\_THRESHOLD**\), and consider enabling **MONITOR and PROTECT** \(Protect for Node.js projects only\). See Snyk pipe parameters and values for more information.
-* Once included in your pipeline commands, Snyk looks for the manifest files in that repository \(package.json, package-lock.json\) and performs the scan.
-* Results appear in the Bitbucket Pipelines output interface, similar to the following:
+1. Add the Snyk pipe while originally creating your pipeline, or while editing an existing pipeline. See the Bitbucket documentation for more information about [pipelines](https://confluence.atlassian.com/bitbucket/configure-bitbucket-pipelines-yml-792298910.html) and [pipes](https://support.atlassian.com/bitbucket-cloud/docs/pipes/). When adding the Snyk pipe, follow these guidelines:
+2. Use the Bitbucket pipeline editor to update the .yml file configuration, select the correct language and use the Bitbucket Pipes build directory when adding the Snyk pipe.
+3. Paste the Snyk pipe into the Bitbucket editor interface, after all, build steps. Build steps are commands such as these: `npm install / composer install / bundle install / dotnet restore / docker build`
+4. Ensure you paste the pipe before a deployment step, such as **npm publish or docker push**.
+5. Configure the **LANGUAGE**, choose whether to fail the pipeline on vulnerabilities found with **DONT\_BREAK\_BUILD** \(you can also use **SEVERITY\_THRESHOLD**\), and consider enabling **MONITOR and PROTECT** \(Protect for Node.js projects only\). See Snyk pipe parameters and values for more information.
+6. Once included in your pipeline commands, Snyk looks for the manifest files in that repository \(package.json, package-lock.json\) and performs the scan.
+7. Results appear in the Bitbucket Pipelines output interface, similar to the following:
 
 ![](../../.gitbook/assets/uuid-dbbc4153-d3ff-5cbb-9ddd-affa138387b7-en.png)
 

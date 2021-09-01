@@ -53,16 +53,14 @@ Contact [support@snyk.io](mailto:support@snyk.io) if you want to add a private r
       ```
 
       1. `BROKER_TOKEN` is the token generated in Integration &gt; Artifactory form 
-      2. `ARTIFACTORY_URL` is URL to your Artifactory instance, including **/artifactory** at the end of URL. 1. **Minimum required data**: `ARTIFACTORY_URL=my.artifactory/artifactory` 2. **Parameter mapping**: Parameters in brackets are optional
+      2. `ARTIFACTORY_URL` is URL to your Artifactory instance, including **/artifactory** at the end of URL. 
+         1. **Minimum required data**: `ARTIFACTORY_URL=my.artifactory/artifactory` 
+         2. **Parameter mapping**: Parameters in brackets are optional  
+                  **`ARTIFACTORY_URL=[http://][:@]hostname[:port]/artifactory`**
 
-         ```text
-               ARTIFACTORY_URL=[http://][:@]hostname[:port]/artifactory
-         ```
-
-         1. **Protocol**: If left empty, protocol will default to \[[https://\]--this](https://]--this) should only be specified when no certificate is present and http is required instead for your instance
-         2. **Basic auth**: URL encode both and user info to avoid errors that will prevent authentication
-         3. **No basic auth**: Omit`:@` credentials 
-
+         3. Protocol: If left empty, protocol will default to \[https://\]--this should only be specified when no certificate is present and http is required instead for your instance.
+         4. **Basic auth**: URL encode both and user info to avoid errors that will prevent authentication
+         5. **No basic auth**: Omit`:@` credentials 
       3. `RES_BODY_URL_SUB` is the URL of the Artifactory without credentials, and with http protocol and is required for NPM integration
 
    3. Check connection status by refreshing Artifactory Integration Settings page, no connection error should be displayed

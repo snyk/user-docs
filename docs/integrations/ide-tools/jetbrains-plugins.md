@@ -42,9 +42,9 @@ The installation is done via the IDE:
 
 The first time it is needed, the plugin automatically downloads the CLI in the background.
 
-1. After the plugin installs, you are prompted to authenticate:
-2. Click **Connect IntelliJ to Snyk**. The plugin relies on the Snyk CLI, which authenticates you against Snyk’s web application: 
-3. Click **Authenticate** when prompted by Snyk: 
+1. After the plugin installs, you are prompted to authenticate.
+2. Click **Connect IntelliJ to Snyk**. The plugin relies on the Snyk CLI, which authenticates you against Snyk’s web application.
+3. Click **Authenticate** when prompted by Snyk.
 4. After authentication you see a confirmation message for successful authentication.
 5. Close the browser window and return to the IDE. The IDE then reads and saves the authentication on your local machine. 
 6. In the IDE, you can select which Snyk products to use \(Snyk Open Source, Snyk Code or both\). 
@@ -76,13 +76,13 @@ Snyk Code analysis shows a list of security vulnerabilities and code issues foun
 
 ### Filter results
 
-### Filter by severity
+#### Filter by severity
 
 Snyk delivers Critical, High, Medium and Low severities. You can filter for the severity you need by selecting the value from the dropdown as shown below. By default all levels are selected. You must select at least one.
 
 ![](../../.gitbook/assets/filter-severity.png)
 
-### Filter by issue type
+#### Filter by issue type
 
 Snyk delivers the following types of issues:
 

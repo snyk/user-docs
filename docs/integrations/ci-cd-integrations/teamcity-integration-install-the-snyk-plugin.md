@@ -12,7 +12,7 @@ You must sign up for an account with Snyk before you begin.
 
 1. Log in to your TeamCity instance to install the Snyk Security plugin. Configure the **Plugins list** to **Periodically check for plugin updates**, in order to ensure regular automatic upgrades in the background.
 2. Navigate to the [JetBrains Plugins Repository](https://plugins.jetbrains.com/plugin/12227-snyk-security), search for Snyk and from the **Get** dropdown list, select to install the plugin for your TeamCity installation.
-3. When the following prompt appears, click **Install**.
+3. When prompted, click **Install**.
 4. When the installation ends, the Administration Plugins List loads, notifying the plugin has been uploaded. 
 5. Ensure the plugin is enabled.
 

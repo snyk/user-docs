@@ -20,14 +20,13 @@ For any pipeline project, you can add a Snyk step to your build at any point in 
      * **Project name**—enter a unique name by which to identify this project from the Snyk UI. If left blank, Snyk assigns a project name based on the manifest file data.
 
    * From the **Advanced** area, leave the Snyk installation default. Enter any additional valid Snyk CLI arguments and their values in the Arguments box.
-   * Click **Generate Pipeline Script**. The pipe syntax is generated and displayed in the window below.
-2. Copy the generated pipe syntax. 3. Navigate to the **Configure** area of your pipeline and go to the **Pipeline** part. Paste the Snyk step syntax in your pipeline as part of an existing stage or as a new separate stage.  
+   * Click **Generate Pipeline Script**. The pipe syntax is generated and displayed in the window.
+2. Copy the generated pipe syntax. 
+3. Navigate to the **Configure** area of your pipeline and go to the **Pipeline** part. Paste the Snyk step syntax in your pipeline as part of an existing stage or as a new separate stage.
 
+   **Note**: You can also choose to add the stage to your `Jenkinsfile` directly from the Git.
 
-   **Note**  
-   You can also choose to add the stage to your `Jenkinsfile` directly from the Git.  
-
-3. Now, every time you run your project build:
+4. Now, every time you run your project build:  **\(Note**: If you updated the Jenkinsfile from the Git and external to Jenkins, then when Jenkins fetches that file to run the build, it receives the edited pipeline, now including the newly added Snyk step.\) 
    * Snyk verifies the plugin installation \(if necessary, and as based on your policy configuration\).
    * Snyk runs the snyk test command, analyzing the manifest file of your project to find its direct and transitive dependencies and testing your pipeline against the Snyk vulnerability database for known vulnerabilities.
    * From the **Jenkins Console Output**, the test results summary is displayed, indicating the number of known issues and the number of associated dependency paths identified.
@@ -40,9 +39,6 @@ For any pipeline project, you can add a Snyk step to your build at any point in 
      * If a severity threshold was defined for a severity that is assigned to any vulnerability in your project, Jenkins breaks the build.
      * Otherwise, Jenkins continues to run the build to completion \(success or failure\) and Snyk activity ends.
      * From the top of the report, right-click View on Snyk.io to view the snapshot and vulnerability information directly from our app:
-   * **NOTE:**
-
-     If you updated the `Jenkinsfile` from the Git and external to Jenkins, then when Jenkins fetches that file to run the build, it receives the edited pipeline, now including the newly added Snyk step.
 
 ![image10.png](../../.gitbook/assets/uuid-810f5c24-fc0d-7996-1fea-6f67b52ee631-en.png)
 
