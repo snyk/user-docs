@@ -42,7 +42,7 @@ Once configured, Snyk automatically creates PRs for all necessary dependencies a
 Settings on the project level override the settings on the organization level. Currently, we support all languages supported by the Git repositories that we integrate with: GitHub, GitLab, Bitbucket and Azure repos.
 {% endhint %}
 
-**To configure automatic upgrade PRs for a specific project:**
+#### **To configure automatic upgrade PRs for a specific project:**
 
 **Prerequisites:**
 
@@ -52,9 +52,11 @@ Settings on the project level override the settings on the organization level. C
 
 1. Navigate to the organization for which you would like to enable automatic upgrade PRs and then click Projects.
 2. Navigate to the relevant project and click the Settings cog ![](../../.gitbook/assets/cog_icon.png) 
-3. From the Settings area, click on the integration settings from the left panel menu. **Note:** These settings only apply to integration for that one project. 4. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled. 5. From the options that appear:
-4. Snyk creates PRs up to a maximum of 10 open simultaneously - per repo. To limit this number further, select the maximum number of PRs from the dropdown list. For further information about this, read more about how it works.
-5. In the Dependencies to ignore field, enter the exact name of any dependencies that should not be handled as part of the automatic functionality. This field accepts only lower case letters.
+3. From the Settings area, click on the integration settings from the left panel menu.  **Note:** These settings only apply to integration for that one project. 
+4. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled. 
+5. From the options that appear:
+   1. Snyk creates PRs up to a maximum of 10 open simultaneously - per repo. To limit this number further, select the maximum number of PRs from the dropdown list. For further information about this, read more about how it works.
+   2. In the Dependencies to ignore field, enter the exact name of any dependencies that should not be handled as part of the automatic functionality. This field accepts only lower case letters.
 6. Click **Update dependency upgrade settings**
 7. Settings are saved
 

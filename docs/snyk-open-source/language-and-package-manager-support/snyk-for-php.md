@@ -65,7 +65,7 @@ By default, Snyk scans your production dependencies. From the Snyk UI you can co
 #### **To update language preferences:**
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage
-2. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Languages**. 
+2. Click on settings ![](../../.gitbook/assets/cog_icon.png)&gt; **Languages**. 
 3. Click **Edit settings** for PHP and select **Scan dev dependencies** to set for your PHP projects in the specific organization to include both development and production dependencies. 
 4. Click **Update settings**.
 
