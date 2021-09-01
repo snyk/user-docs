@@ -84,7 +84,10 @@ Full details include all the information in the vulnerability card, plus:
 
 ### Open the source code file
 
-1. Click the code link to open the source code file itself \(in this example, in GitHub\): 
+1. Click the code link to open the source code file itself \(for example, in GitHub\) 
+
+   ![](../.gitbook/assets/link.png)
+
 2. The file opens, showing you exactly where to fix the vulnerability \(in this example, by adding the sanitation required to the input\). 
 3. You can now make the fix as required, to address the vulnerability in your code.
 
