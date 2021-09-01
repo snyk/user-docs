@@ -1,6 +1,6 @@
 # Creating and editing policies
 
-**Create a policy**
+### **Create a policy**
 
 1. Click  **Add new policy** from the Policy Manager, and a modal will appear where you can create your policy 
 2. Set a policy name and a description to help you quickly identify a policy
