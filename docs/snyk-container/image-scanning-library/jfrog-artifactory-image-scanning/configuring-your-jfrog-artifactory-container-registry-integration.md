@@ -13,7 +13,7 @@ Enable integration between one Artifactory instance as a container registry and 
 1. Log in to [your Snyk account](https://app.snyk.io/).
 2. Navigate to **Integrations** from the menu bar at the top, find and click the Artifactory option:
 
-   ![](../../../.gitbook/assets/image%20%2856%29.png)
+   ![](../../../.gitbook/assets/image%20%2857%29.png)
 
 3. The configuration page in the **Settings** area loads.
 4. Enter credentials as follows: 

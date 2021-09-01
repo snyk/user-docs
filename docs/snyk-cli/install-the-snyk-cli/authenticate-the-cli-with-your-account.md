@@ -17,6 +17,8 @@ You can authenticate:
 
    The authentication ends and you can go back to your terminal to continue working.
 
+![](../../.gitbook/assets/auth.gif)
+
 ### Authenticate using your API token
 
 1. Visit [your Snyk account](https://app.snyk.io/account) \(**Account Settings &gt; API Token** section\).

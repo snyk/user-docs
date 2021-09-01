@@ -148,7 +148,7 @@ To customize the emails your Org users receive, navigate to the Org’s settings
 
 To disable notifications for all the users in an Org ahead of your import, uncheck the appropriate notification boxes:
 
-![](../../.gitbook/assets/image%20%2857%29.png)
+![](../../.gitbook/assets/image%20%2858%29.png)
 
 See [Notification management](https://support.snyk.io/hc/en-us/articles/360004037657-Notification-management) for more details.
 
@@ -284,7 +284,7 @@ To set PR Settings on the project level, overriding the PR settings on the organ
 2. Click **Projects**.
 3. Navigate to the relevant project and click the **Settings** cog:  
 
-   ![](../../.gitbook/assets/image%20%284%29.png)
+   ![](../../.gitbook/assets/image%20%2855%29.png)
 
 4. From the Settings area, click on the integration settings from the left panel menu to apply unique settings for that one project.
 5. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled.
