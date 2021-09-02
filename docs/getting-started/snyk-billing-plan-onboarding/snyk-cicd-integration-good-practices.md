@@ -63,7 +63,7 @@ To run the snyk test, you need an authentication token with access to the desire
 
 Snyk supports the following approaches to add tests to a build pipeline:
 
-* **Snyk integration plugins**: Snyk provides pre-built plugins for several CI servers, including [Jenkins](https://snyk.gitbook.io/user-docs/integrations/ci-cd-integrations/jenkins-integration-overview), [Team City](https://snyk.gitbook.io/user-docs/integrations/ci-cd-integrations/teamcity-integration-overview)[, Bitbucket Pipelines](https://snyk.gitbook.io/user-docs/integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview) and [Azure Pipelines. ](https://snyk.gitbook.io/user-docs/integrations/ci-cd-integrations/azure-pipelines-integration) See the [Continuous Integration](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations) documentation for more details
+* **Snyk integration plugins**: Snyk provides pre-built plugins for several CI servers, including [Jenkins](https://snyk.gitbook.io/user-docs/integrations/ci-cd-integrations/jenkins-integration-overview), [Team City](https://snyk.gitbook.io/user-docs/integrations/ci-cd-integrations/teamcity-integration-overview)[, Bitbucket Pipelines](https://snyk.gitbook.io/user-docs/integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview) and [Azure Pipelines. ](https://snyk.gitbook.io/user-docs/integrations/ci-cd-integrations/azure-pipelines-integration) See the [Continuous Integration](https://snyk.gitbook.io/user-docs/integrations/ci-cd-integrations) documentation for more details
 * **Snyk CLI:** For teams with more complex workflows, or using a build system without a Snyk pre-built plugin, you can use the Snyk CLI tool during CI/CD setups. See [Setting up using Snyk CLI](snyk-cicd-integration-good-practices.md) for more details.
 * **Snyk API**: For teams with complex requirements, Snyk provides a REST API, which you can use for functions including initiating scans, onboarding new projects, and testing arbitrary libraries. See the [Snyk API documentation](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices/README.md) for more details.
 
@@ -126,7 +126,7 @@ See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tick
 
 By default if issues are not ignored, or if you are not using Snyk-delta, a "snyk test" in your pipeline fails the build when issues are found. To allow builds to continue without resolving these issues, you can:
 
-* [Ignore issues using a Snyk policy file](https://support.snyk.io/hc/en-us/articles/360003851317-Ignore-vulnerabilities)
+* [Ignore issues using a Snyk policy file](https://snyk.gitbook.io/user-docs/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli)
 * [Ignore issues from the Snyk UI](https://support.snyk.io/hc/en-us/articles/360000923498-How-can-I-ignore-a-vulnerability-)
 * [Ignore issues from the Snyk API](https://snyk.docs.apiary.io/#reference/projects/project-ignores-by-issue/add-ignore)
 * Use the Snyk Python API for bulk ignores: see [https://github.com/snyk-labs/pysnyk](https://github.com/snyk-labs/pysnyk) and [https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py](https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py)

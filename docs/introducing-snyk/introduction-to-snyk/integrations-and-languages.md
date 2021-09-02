@@ -6,11 +6,11 @@
 
 * **Source control:** cloud and self-hosted SCMs such as Github. See [Git repository SCM integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations).
 * **Container registries & Kubernetes:** container registries such as Docker Hub, and Kubernetes. See [Snyk Container](https://snyk.gitbook.io/user-docs/snyk-container).
-* **Continuous integration**: such as Jenkins or TeamCity. See [CI/CD Integrations](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations)
+* **Continuous integration**: such as Jenkins or TeamCity. See [CI/CD Integrations](https://snyk.gitbook.io/user-docs/integrations/ci-cd-integrations)
 * **IDE plugins:** using IDE tools such as Eclipse. See [IDE tools](https://snyk.gitbook.io/user-docs/integrations/ide-tools).
-* **Artifact repositories:** such as Artifactory. See [Private registry gatekeeper plugins](https://support.snyk.io/hc/en-us/sections/360004237917-Private-registry-gatekeeper-plugins) and [Private registry integrations](https://support.snyk.io/hc/en-us/sections/360001138158-Private-registry-integrations).
+* **Artifact repositories:** such as Artifactory. See [Private registry gatekeeper plugins](https://snyk.gitbook.io/user-docs/integrations/private-registry-gatekeeper-plugins) and [Private registry integrations](https://snyk.gitbook.io/user-docs/integrations/private-registry-integrations).
 * **Serverless**: such as AWS Lambda. See [Serverless integrations](https://snyk.gitbook.io/user-docs/integrations/serverless-integrations).
-* **Platform as a service:** such as Heroku. See [Platform as a service integrations](https://support.snyk.io/hc/en-us/sections/360001152597-Platform-as-a-service-integrations). 
+* **Platform as a service:** such as Heroku. See [Platform as a service integrations](https://snyk.gitbook.io/user-docs/integrations/platform-as-a-service-integrations). 
 * **Notifications**: such as Slack. See [Notification and ticketing system-integrations](https://snyk.gitbook.io/user-docs/integrations/notifications-ticketing-system-integrations).
 * **Vulnerability tools**: such as RiskSense. See [Vulnerability Management Tools](https://support.snyk.io/hc/en-us/sections/360003642858-Vulnerability-Management-Tools).
 

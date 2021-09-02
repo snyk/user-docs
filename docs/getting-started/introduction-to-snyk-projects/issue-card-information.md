@@ -15,7 +15,7 @@ Header section information:
 * **Score**: [Priority score](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score): 0 - 1,000.
 * **Type**: VULNERABILITY or LICENSE ISSUE.
 * Links to [CWE](https://cwe.mitre.org/index.html) \(Common Weakness Evaluation\), [CVSS](https://www.first.org/cvss/calculator/3.1) \(Common Vulnerability Scoring System\), and Snyk [Intel Vulnerability DB](https://snyk.io/vuln) information for that issue.
-* **Social Trends**: Snyk shows a [Trending banner](https://support.snyk.io/hc/en-us/articles/4404328187921) on issues that are being actively discussed in Twitter.
+* **Social Trends**: Snyk shows a [Trending banner](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/prioritizing-issues/prioritize-by-social-trends) on issues that are being actively discussed in Twitter.
 
 Body section information:
 
@@ -51,7 +51,7 @@ The issue cards in a project can be sorted based on their priority score or seve
 
 You can perform the following actions on the issue card:
 
-* [**Ignore the issue**](https://support.snyk.io/hc/en-us/articles/360003891098-Ignoring-issues-not-prioritized-for-your-project): if you do not need to take an action on an issue, or it does not need to appear on your reports, you can ignore it.
+* [**Ignore the issue**](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/introduction-to-ignoring-issues): if you do not need to take an action on an issue, or it does not need to appear on your reports, you can ignore it.
 * [**Create a Jira ticket**](https://snyk.gitbook.io/user-docs/integrations/untitled-3/jira): if you have the [Jira integration](https://snyk.gitbook.io/user-docs/integrations/untitled-3/jira), you can link your issue boards to Snyk and create Jira tickets directly from the project details page to fix vulnerabilities.
 * [**Fix the vulnerability**](https://snyk.gitbook.io/user-docs/snyk-open-source/open-source-basics/fixing-vulnerabilities): if a fix is available for vulnerabilities, you can fix individual vulnerabilities.
 * **View more information about the CWE, CVE, and CVSS score**: navigate from the issue card to further information about these scores.

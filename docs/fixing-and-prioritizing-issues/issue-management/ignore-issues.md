@@ -36,7 +36,7 @@ Suppressing issues is possible via the CLI. For node.js projects, you can use **
 
 `snyk ignore --id='npm:braces:20180219' --expiry='2018-04-01' --reason='testing'`
 
-See [Ignore vulnerabilities using Snyk CLI](https://support.snyk.io/hc/en-us/articles/360003851317-Ignore-vulnerabilities) for more details.
+See [Ignore vulnerabilities using Snyk CLI](https://snyk.gitbook.io/user-docs/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli) for more details.
 
 When using **Snyk wizard** or **Snyk ignore**, the .snyk policy file is updated with the path and given a reason \(if one was provided\). For example:
 

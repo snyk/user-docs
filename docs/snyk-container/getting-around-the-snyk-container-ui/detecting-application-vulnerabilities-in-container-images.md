@@ -40,11 +40,11 @@ For each project, you can choose the test frequency under its settings \(the def
 
 This is supported across the following container registries:
 
-* [ACR](https://support.snyk.io/hc/en-us/sections/360001127457-ACR-image-scanning)
-* [Amazon ECR](https://support.snyk.io/hc/en-us/sections/360001114218-ECR-image-scanning) 
-* [JFrog Artifactory](https://support.snyk.io/hc/en-us/sections/360001127477-JFrog-Artifactory-image-scanning)
-* [Docker Hub](https://support.snyk.io/hc/en-us/sections/360001114198-Docker-Hub-image-scanning) 
-* [GCR](https://support.snyk.io/hc/en-us/sections/360001127497-GCR-image-scanning)
+* [ACR](https://snyk.gitbook.io/user-docs/snyk-container/image-scanning-library/acr-image-scanning)
+* [Amazon ECR](https://snyk.gitbook.io/user-docs/snyk-container/image-scanning-library/ecr-image-scanning) 
+* [JFrog Artifactory](https://snyk.gitbook.io/user-docs/snyk-container/image-scanning-library/jfrog-artifactory-image-scanning)
+* [Docker Hub](https://snyk.gitbook.io/user-docs/snyk-container/image-scanning-library/docker-hub-image-scanning) 
+* [GCR](https://snyk.gitbook.io/user-docs/snyk-container/image-scanning-library/gcr-image-scanning)
 
 **Supported Integrations**
 

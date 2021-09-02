@@ -31,10 +31,10 @@ The unchecked organization\(s\) will now revert back to the default policy.
 ### Add an organization to the default policy:
 
 1. Remove the organization from the policy it is currently assigned to
-2. The organization will automatically move to the [default policy](https://support.snyk.io/hc/en-us/articles/360007476397)
+2. The organization will automatically move to the [default policy](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/policies/shared-policies-overview)
 
 ### Remove an organization from the default policy
 
 1. Assign the relevant organization to a new policy 
-2. The organization will automatically disassociate from the [default policy](https://support.snyk.io/hc/en-us/articles/360007476397) and move to the newly selected policy
+2. The organization will automatically disassociate from the [default policy](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/policies/shared-policies-overview) and move to the newly selected policy
 

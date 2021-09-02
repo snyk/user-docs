@@ -29,7 +29,7 @@ See [Fixing and prioritizing issues](https://snyk.gitbook.io/user-docs/fixing-an
 
 ### View issue details
 
-For each issue, this display shows details about the vulnerability including its priority score \(see [Prioritizing Snyk issues](https://support.snyk.io/hc/en-us/articles/360009884837-Prioritizing-Snyk-issues)\):
+For each issue, this display shows details about the vulnerability including its priority score \(see [Prioritizing Snyk issues](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score)\):
 
 ![](../../.gitbook/assets/image12.png)
 

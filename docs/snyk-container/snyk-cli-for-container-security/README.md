@@ -91,7 +91,7 @@ It’s common to use both test and monitor with Snyk. test is great for quick ch
 
 ### More information
 
-* [Understand Snyk Container CLI results](https://support.snyk.io/hc/en-us/articles/360003946937-Understanding-container-CLI-scan-results)
+* [Understand Snyk Container CLI results](https://snyk.gitbook.io/user-docs/snyk-container/snyk-cli-for-container-security/understanding-snyk-container-cli-results)
 * [Advanced CLI usage](https://snyk.gitbook.io/user-docs/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)
 * Learn more about [container security](https://snyk.io/learn/container-security/)
 

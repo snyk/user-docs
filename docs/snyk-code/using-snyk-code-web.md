@@ -63,9 +63,9 @@ Click **Save** to ignore this issue with the parameters selected. Afer you selec
 There is a status selector for ignored issues on the left side, and you can include those \(and remove or edit the ignore flag\) if you want to review ignored results.
 {% endhint %}
 
-See [Ignoring issues not prioritized for your project](https://support.snyk.io/hc/en-us/articles/360004002718-Ignoring-issues-not-prioritized-for-your-project) for full details of using the Ignore function.
+See [Ignoring issues not prioritized for your project](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/issue-management/ignore-issues) for full details of using the Ignore function.
 
-See [Ignoring issues in Snyk Code](https://support.snyk.io/hc/en-us/articles/360004002718-Ignoring-issues-not-prioritized-for-your-project#Ignore-Snyk-Code) for specific details of how Snyk Code processes the Ignore function.
+See [Ignoring issues in Snyk Code](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/issue-management/ignore-issues#Ignore-Snyk-Code) for specific details of how Snyk Code processes the Ignore function.
 
 ### View full details
 

@@ -7,13 +7,13 @@ This feature is available with Enterprise plans. See [Pricing plans](https://sny
 
 Snyk can be configured to use custom package registries under specific conditions, allowing insight into dependencies that are not hosted in canonical registries.
 
-The custom package registry feature currently supports [Artifactory](https://support.snyk.io/hc/en-us/articles/360013805638) with Maven.
+The custom package registry feature currently supports [Artifactory](https://snyk.gitbook.io/user-docs/integrations/private-registry-integrations/artifactory-registry-setup) with Maven.
 
 Maven analysis can be configured to mirror all requests through a custom package repository, or you can specify additional repositories to use alongside Maven Central.
 
 ### **Setup custom Maven package registries**
 
-If authentication is required to access your custom registry you will need to first configure the Artifactory package repository integration, see [Artifactory Registry Setup.](https://support.snyk.io/hc/en-us/articles/360013805638)
+If authentication is required to access your custom registry you will need to first configure the Artifactory package repository integration, see [Artifactory Registry Setup.](https://snyk.gitbook.io/user-docs/integrations/private-registry-integrations/artifactory-registry-setup)
 
 Once the integration is set up you can configure Maven settings by navigating to settings ![](../../.gitbook/assets/cog_icon.png) &gt; Languages &gt; Java.
 

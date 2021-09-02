@@ -7,7 +7,7 @@ To add images from Harbor to Snyk:
 **Prerequisites**:
 
 * Have a Snyk account with access to the relevant organization \(given by an administrator\).
-* Harbor integration configured. To learn more about that, follow the steps in [Container security with Harbor integration](https://support.snyk.io/hc/en-us/articles/360018401678)
+* Harbor integration configured. To learn more about that, follow the steps in [Container security with Harbor integration](https://snyk.gitbook.io/user-docs/snyk-container/image-scanning-library/harbor-image-scanning/container-security-with-harbor-integration)
 
 **Steps:**
 

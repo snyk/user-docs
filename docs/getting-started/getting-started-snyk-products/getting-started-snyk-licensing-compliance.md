@@ -5,11 +5,11 @@
 Basic license policy configuration on a single default license policy is available with Business plans. Full policy creation and management is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-Get started with Snyk license compliance management, to check compliance for the [open source licenses](https://snyk.io/learn/open-source-licenses/) in your code, as part of your [Snyk Open Source](https://support.snyk.io/hc/en-us/sections/360003454998-Open-source) solution.
+Get started with Snyk license compliance management, to check compliance for the [open source licenses](https://snyk.io/learn/open-source-licenses/) in your code, as part of your [Snyk Open Source](https://snyk.gitbook.io/user-docs/snyk-open-source/open-source-basics) solution.
 
 {% hint style="info" %}
 This process describes using the Snyk UI and a [supported source code management](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) system.  
-You can also use an [IDE tool](https://snyk.gitbook.io/user-docs/integrations/ide-tools) or a [CI/CD integration](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations), or use the [Snyk CLI tool](https://snyk.gitbook.io/user-docs/snyk-cli/guides-for-our-cli/getting-started-with-the-cli) to get started using the command line.
+You can also use an [IDE tool](https://snyk.gitbook.io/user-docs/integrations/ide-tools) or a [CI/CD integration](https://snyk.gitbook.io/user-docs/integrations/ci-cd-integrations), or use the [Snyk CLI tool](https://snyk.gitbook.io/user-docs/snyk-cli/guides-for-our-cli/getting-started-with-the-cli) to get started using the command line.
 {% endhint %}
 
 ### **Prerequisites**

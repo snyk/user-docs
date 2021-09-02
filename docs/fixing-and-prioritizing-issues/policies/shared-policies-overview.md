@@ -29,5 +29,5 @@ When you create a **new** **organization**, it will automatically be added to th
 
 The default policy cannot be deleted; however, the default policy name, description, and the rules can be edited to match your preferences. A default policy can also contain no rules if you'd prefer.
 
-To learn more about how to add and remove organizations to the default policy, read more about it [here](https://support.snyk.io/hc/en-us/articles/360007590198).
+To learn more about how to add and remove organizations to the default policy, read more about it [here](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/policies/assign-a-policy-to-organizations).
 

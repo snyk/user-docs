@@ -21,7 +21,7 @@ Integration with private container registries allows you to:
 * Broker server: running on Snyk SaaS backend
 * Broker client & Container Registry Agent: Two Docker images deployed in your infrastructure, creating two separate services, responsible for sampling your container registries in a secured manner and sending the allowed information to Snyk.
 
-The Broker client provides the Agent with the connection details. The Agent uses these details to connect to the container registry, scan the images, and send the scan results through the brokered communication using callbacks. The brokered communication happens when a Broker Client connects \(using your Broker ID\) to a Broker server which runs in Snyk environment. See [Snyk Broker](https://support.snyk.io/hc/en-us/sections/360001138138-Snyk-Broker) documentation for more details.
+The Broker client provides the Agent with the connection details. The Agent uses these details to connect to the container registry, scan the images, and send the scan results through the brokered communication using callbacks. The brokered communication happens when a Broker Client connects \(using your Broker ID\) to a Broker server which runs in Snyk environment. See [Snyk Broker](https://snyk.gitbook.io/user-docs/integrations/snyk-broker) documentation for more details.
 
 ![](../../.gitbook/assets/mceclip0-8-.png)
 

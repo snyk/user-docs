@@ -1,6 +1,6 @@
 # View Infrastructure as Code issues
 
-You can view configuration issues in your Infrastructure as Code configuration files, using [Snyk reports](https://support.snyk.io/hc/en-us/sections/360001138198-Reports).
+You can view configuration issues in your Infrastructure as Code configuration files, using [Snyk reports](https://snyk.gitbook.io/user-docs/reports/reports).
 
 {% hint style="info" %}
 **Feature availability**  

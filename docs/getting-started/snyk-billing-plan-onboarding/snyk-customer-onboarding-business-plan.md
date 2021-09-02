@@ -34,7 +34,7 @@ Work with your CI/CD team to implement Snyk into the CI/CD pipeline. By integrat
 
 You can begin by reporting on vulnerabilities that Snyk finds. In a later phase of your rollout, you can have Snyk break the build when vulnerabilities that meet your criteria are discovered.
 
-Learn more about [Snyk CI/CD integration good practices](https://support.snyk.io/hc/en-us/articles/360018245398).
+Learn more about [Snyk CI/CD integration good practices](https://snyk.gitbook.io/user-docs/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices).
 
 ### Add Docker scanning
 
@@ -109,7 +109,7 @@ Snyk lists the issues found in your project. There are different types of filter
 
 ![](../../.gitbook/assets/filters.png)
 
-Learn more about [prioritizing Snyk issues](https://support.snyk.io/hc/en-us/articles/360009884837-Prioritizing-Snyk-issues).
+Learn more about [prioritizing Snyk issues](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score).
 
 ### Ignore vulnerabilities
 
@@ -144,5 +144,5 @@ Make sure you provide an email address to help our team communicate with you. Or
 Read more about best practices for using Snyk in your CI/CD or the git integration
 
 * [Snyk SCM integration: good practices](https://support.snyk.io/hc/en-us/articles/360018010597)
-* [Snyk CI/CD Integration: good practices](https://support.snyk.io/hc/en-us/articles/360018245398)
+* [Snyk CI/CD Integration: good practices](https://snyk.gitbook.io/user-docs/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices)
 

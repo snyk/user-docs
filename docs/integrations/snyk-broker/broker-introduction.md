@@ -51,7 +51,7 @@ The default approved list limits requests as follows:
 
 Snyk Broker currently integrates with these [Git Repository](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) systems:
 
-* [GitHub](https://snyk.gitbook.io/user-docs/integrations/git-repository-scm-integrations/github-integration) and [GitHub Enterprise](https://support.snyk.io/hc/en-us/articles/360015951318-GitHub-Enterprise-Server-Integration)
+* [GitHub](https://snyk.gitbook.io/user-docs/integrations/git-repository-scm-integrations/github-integration) and [GitHub Enterprise](https://snyk.gitbook.io/user-docs/integrations/git-repository-scm-integrations/github-enterprise-integration)
 * [GitLab](https://snyk.gitbook.io/user-docs/integrations/git-repository-scm-integrations/gitlab-integration)
 * [Bitbucket Server](https://support.snyk.io/hc/en-us/articles/360004002218-Bitbucket-Server-integration) and Bitbucket Data Center
 * [Azure Repos](https://snyk.gitbook.io/user-docs/integrations/git-repository-scm-integrations/azure-repos-integration)

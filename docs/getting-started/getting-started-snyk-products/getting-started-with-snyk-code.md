@@ -3,7 +3,7 @@
 Get started with [Snyk Code](https://snyk.io/product/snyk-code/) to find, prioritize and fix potential vulnerabilities in your proprietary code.
 
 {% hint style="info" %}
-This documentation describes using Snyk Code with the Web UI. You can also use Snyk Code as a plugin to your JetBrains IDE; see [JetBrains IDE Plugins](https://support.snyk.io/hc/en-us/articles/360004032317-JetBrains-IDE-Plugins) for more details.
+This documentation describes using Snyk Code with the Web UI. You can also use Snyk Code as a plugin to your JetBrains IDE; see [JetBrains IDE Plugins](https://snyk.gitbook.io/user-docs/integrations/ide-tools/jetbrains-plugins) for more details.
 {% endhint %}
 
 ### Prerequisites
@@ -35,7 +35,7 @@ Choose a source code integration, to allow Snyk to work on a project.
 3. Click the source control system \(for example, GitHub\) to integrate with Snyk: 
 4. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
 
-See [DevOps integrations & languages](https://support.snyk.io/hc/en-us/articles/360011733538-DevOps-integrations-languages) for more details.
+See [DevOps integrations & languages](https://snyk.gitbook.io/user-docs/introducing-snyk/introduction-to-snyk/integrations-and-languages) for more details.
 
 ### Stage 3: Add projects
 

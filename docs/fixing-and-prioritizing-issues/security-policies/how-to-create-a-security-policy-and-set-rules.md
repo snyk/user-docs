@@ -8,7 +8,7 @@ Security policy rules follow an “if, then” framework, with one or more condi
 
 If you create a new security policy, the first blank rule is automatically created.
 
-Select the condition\(s\) and action to complete a rule. See the [**Conditions**](https://support.snyk.io/hc/en-us/articles/360014476597) and [**Actions**](https://support.snyk.io/hc/en-us/articles/360014571438) documentation for more details.
+Select the condition\(s\) and action to complete a rule. See the [**Conditions**](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/security-policies/security-policies-conditions) and [**Actions**](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/security-policies/security-policies-actions) documentation for more details.
 
 To add a new blank rule, click on **+** below the previous rule, as seen in the screenshot above.
 

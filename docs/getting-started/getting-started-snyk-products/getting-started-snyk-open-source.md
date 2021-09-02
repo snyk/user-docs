@@ -4,7 +4,7 @@ Get started with Snyk Open Source to inspect, find and fix vulnerabilities in yo
 
 {% hint style="info" %}
 This process describes using the Snyk.io UI and a source code management system.  
-You can also use an [IDE tool](https://snyk.gitbook.io/user-docs/integrations/ide-tools) or a [CI/CD integration](https://support.snyk.io/hc/en-us/sections/360001152577-CI-CD-integrations). See [Integrations](https://snyk.gitbook.io/user-docs/integrations) for more details.
+You can also use an [IDE tool](https://snyk.gitbook.io/user-docs/integrations/ide-tools) or a [CI/CD integration](https://snyk.gitbook.io/user-docs/integrations/ci-cd-integrations). See [Integrations](https://snyk.gitbook.io/user-docs/integrations) for more details.
 {% endhint %}
 
 ### **Using the CLI tool**
@@ -37,7 +37,7 @@ Choose a source code integration, to allow Snyk to work on a project.
 3. Click the source control system \(for example, GitHub\) to integrate with Snyk. 
 4. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
 
-See [DevOps integrations & languages](https://support.snyk.io/hc/en-us/articles/360011733538-DevOps-integrations-languages) for more details
+See [DevOps integrations & languages](https://snyk.gitbook.io/user-docs/introducing-snyk/introduction-to-snyk/integrations-and-languages) for more details
 
 ### Stage 2: Add Projects
 
