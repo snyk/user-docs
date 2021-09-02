@@ -14,7 +14,7 @@ The Broker client provides the Agent with the connection details. The Agent uses
 
 ![](../.gitbook/assets/local-git.png)
 
-See [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker/broker-introduction) documentation for more details.
+See [Snyk Broker](https://snyk.gitbook.io/user-docs/integrations/snyk-broker/broker-introduction) documentation for more details.
 
 ### Setup
 

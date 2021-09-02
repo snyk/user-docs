@@ -81,13 +81,13 @@ For example, if you wanted to ignore the vulnerability with SNYK ID [SNYK-RUBY-F
 
 ![](../../.gitbook/assets/screen+shot+2017-05-10+at+11.17.26+am.png)
 
-See [The .snyk file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file) for more details.
+See [The .snyk file](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/policies/the-.snyk-file) for more details.
 
 ### Ignoring issues with policy actions
 
-You can set [Security policies](https://docs.snyk.io/fixing-and-prioritizing-issues/security-policies) actions to ignore all vulnerabilities that match the conditions specified in a policy rule.
+You can set [Security policies](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/security-policies) actions to ignore all vulnerabilities that match the conditions specified in a policy rule.
 
-See [Security policies: Actions](https://docs.snyk.io/fixing-and-prioritizing-issues/security-policies/security-policies-actions) for more details.
+See [Security policies: Actions](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/security-policies/security-policies-actions) for more details.
 
 ### Set who can configure ignore settings
 
@@ -99,11 +99,11 @@ You can also choose to set the more details field to be a compulsory field when 
 
 If you have access to our Reports feature, you will also be able to see an overview of how many issues in your organization’s projects are ignored, along with an option to filter these so you can drill down into each one. If the issue was ignored in our UI, we include a credit for additional accountability, so you can see who initiated it.
 
-See [Reports](https://docs.snyk.io/reports-1) for more details.
+See [Reports](https://snyk.gitbook.io/user-docs/reports-1) for more details.
 
 ### Ignoring issues in Snyk Code
 
-For [Snyk Code](https://docs.snyk.io/snyk-code), ignore functionality may capture a wider range of issues than other products.
+For [Snyk Code](https://snyk.gitbook.io/user-docs/snyk-code), ignore functionality may capture a wider range of issues than other products.
 
 Snyk Code's static code analysis transforms the input code into an **intermediate representation**, which captures the flow of code, but abstracts away some details. Snyk Code uses this representation to recognize the same issue even when you refactor your code or rename a variable.
 

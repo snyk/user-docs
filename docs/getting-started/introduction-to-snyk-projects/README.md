@@ -23,7 +23,7 @@ The project ecosystem, such as CLI, API, or Kubernetes.
 
 The specific item to scan in a target, such as a pom file in a GitHub repo.
 
-[Snyk Code](https://docs.snyk.io/snyk-code) scans do not use targetfiles.
+[Snyk Code](https://snyk.gitbook.io/user-docs/snyk-code) scans do not use targetfiles.
 
 ### Type
 

@@ -17,7 +17,7 @@ Use this documentation to get started with the Visual Studio extension for [Snyk
 
 ### Supported languages
 
-Currently supported languages for Snyk Open Source are C\#, JavaScript, TypeScript, Java, Go, Ruby, Python, PHP, Scala, Swift, Objective-C. See [Snyk Open Source language and framework support](https://docs.snyk.io/snyk-open-source/language-and-package-manager-support).
+Currently supported languages for Snyk Open Source are C\#, JavaScript, TypeScript, Java, Go, Ruby, Python, PHP, Scala, Swift, Objective-C. See [Snyk Open Source language and framework support](https://snyk.gitbook.io/user-docs/snyk-open-source/language-and-package-manager-support).
 
 ### Install the extension
 

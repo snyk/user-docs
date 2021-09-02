@@ -180,7 +180,7 @@ ignore:
 
 {% hint style="info" %}
 **Note**  
-For IaC ignore rules see [IaC ignores using the .snyk policy file](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file).
+For IaC ignore rules see [IaC ignores using the .snyk policy file](https://snyk.gitbook.io/user-docs/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file).
 {% endhint %}
 
 ### .snyk related CLI commands

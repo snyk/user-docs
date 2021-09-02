@@ -5,7 +5,7 @@ Snyk automatically notifies you when new issues are found in the projects you ar
 If our security team discloses a new vulnerability, we notify you:
 
 * By email, if you have not disabled these in your [notification settings](https://app.snyk.io/account/notifications)\(\*\).
-* By Slack, if you have set up [Slack integration](https://docs.snyk.io/integrations/untitled-3/slack-integration). 
+* By Slack, if you have set up [Slack integration](https://snyk.gitbook.io/user-docs/integrations/untitled-3/slack-integration). 
 
 Snyk also sends you a weekly update summarizing your security status across all of your organizations.
 
@@ -13,5 +13,5 @@ Snyk also sends you a weekly update summarizing your security status across all 
 
 ### **Managing notifications**
 
-Snyk includes a range of controls to manage your notifications. If you are an organization administrator, you can also manage the notification defaults for others in the organization. See [Notification management](https://docs.snyk.io/user-and-group-management/notifications/notification-management)
+Snyk includes a range of controls to manage your notifications. If you are an organization administrator, you can also manage the notification defaults for others in the organization. See [Notification management](https://snyk.gitbook.io/user-docs/user-and-group-management/notifications/notification-management)
 

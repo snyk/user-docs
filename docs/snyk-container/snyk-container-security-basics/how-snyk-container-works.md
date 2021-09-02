@@ -33,7 +33,7 @@ We detect vulnerabilities in images based on:
 * SUSE Linux Enterprise Server
 * Alpine
 
-Check out the [Operating Systems Support](https://docs.snyk.io/snyk-container/snyk-container-security-basics/supported-operating-system-distributions) page for specific version support and our [updates](https://updates.snyk.io/) page for all the latest updates.
+Check out the [Operating Systems Support](https://snyk.gitbook.io/user-docs/snyk-container/snyk-container-security-basics/supported-operating-system-distributions) page for specific version support and our [updates](https://updates.snyk.io/) page for all the latest updates.
 
 {% hint style="info" %}
 **Note:** Snyk also supports images using packages from those distributions but without the associated package manager, such as Distroless images.

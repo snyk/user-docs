@@ -34,7 +34,7 @@ This section describes the unique CLI commands available when working with Java-
 
 * Install the relevant package manager before you use the Snyk CLI tool.
 * Include the relevant manifest files supported by Snyk before testing.
-* Install and authenticate the Snyk CLI to start analyzing projects from your local environment. See [Getting started with the CLI](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli).
+* Install and authenticate the Snyk CLI to start analyzing projects from your local environment. See [Getting started with the CLI](https://snyk.gitbook.io/user-docs/snyk-cli/guides-for-our-cli/getting-started-with-the-cli).
 
 #### Snyk CLI parameters
 

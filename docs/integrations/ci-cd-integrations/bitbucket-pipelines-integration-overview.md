@@ -27,7 +27,7 @@ Snyk integration with Bitbucket pipes is supported for the following languages:
 * Docker
 
 {% hint style="info" %}
-Bitbucket pipeline implementation for Java \(Maven and Gradle\) requires the [Snyk CLI](https://docs.snyk.io/snyk-cli).
+Bitbucket pipeline implementation for Java \(Maven and Gradle\) requires the [Snyk CLI](https://snyk.gitbook.io/user-docs/snyk-cli).
 {% endhint %}
 
 ### Bitbucket Pipelines integration: how it works

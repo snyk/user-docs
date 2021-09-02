@@ -13,9 +13,9 @@ Snyk reporting acts as a Bill of Materials \(BOM\) to quickly and easily identif
 
 #### License reports
 
-See [Dependencies tab](https://docs.snyk.io/reports-1/reports/dependencies-tab).
+See [Dependencies tab](https://snyk.gitbook.io/user-docs/reports-1/reports/dependencies-tab).
 
 The Licenses area displays all licenses that are currently used in your project, and allows you to understand which project and dependency use a license.
 
-See [Licenses tab](https://docs.snyk.io/reports-1/reports/licenses-tab).
+See [Licenses tab](https://snyk.gitbook.io/user-docs/reports-1/reports/licenses-tab).
 

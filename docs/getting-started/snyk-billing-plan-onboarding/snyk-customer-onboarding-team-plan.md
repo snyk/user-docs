@@ -28,7 +28,7 @@ Starting with a few users avoids issues you may encounter if you try to roll Sny
 **More details**
 
 * Video: [How to find vulnerabilities using your CLI](https://www.youtube.com/watch?v=h9-pP6nOldo&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=2). 
-* Documentation: [Snyk CLI](https://docs.snyk.io/snyk-cli) 
+* Documentation: [Snyk CLI](https://snyk.gitbook.io/user-docs/snyk-cli) 
 
 ### Integrate with an SCM integration
 
@@ -66,6 +66,6 @@ You can customize the emails all your organization’s members receive, and indi
 
 ### More details
 
-* [Notification management](https://docs.snyk.io/user-and-group-management/notifications/notification-management)
+* [Notification management](https://snyk.gitbook.io/user-docs/user-and-group-management/notifications/notification-management)
 * [How to configure your Snyk notification settings](https://www.youtube.com/watch?v=MyLgmcHUrL4&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=5) \(video\)
 

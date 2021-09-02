@@ -1,6 +1,6 @@
 # Maven plugin integration
 
-Snyk offers a [Maven plugin](https://github.com/snyk/snyk-maven-plugin), that's based on the [Snyk CLI](https://docs.snyk.io/snyk-cli/guides-for-our-cli/cli-reference). This plugins allows you to scan and monitor your Maven dependencies for vulnerabilities.
+Snyk offers a [Maven plugin](https://github.com/snyk/snyk-maven-plugin), that's based on the [Snyk CLI](https://snyk.gitbook.io/user-docs/snyk-cli/guides-for-our-cli/cli-reference). This plugins allows you to scan and monitor your Maven dependencies for vulnerabilities.
 
 {% hint style="info" %}
 [See the Snyk Maven Plugin repository for installation and usage instructions](https://github.com/snyk/snyk-maven-plugin)

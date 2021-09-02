@@ -9,8 +9,8 @@ This documentation describes using Snyk Code with the Web UI. You can also use S
 ### Prerequisites
 
 * A Snyk account.
-* [Snyk Open Source](https://docs.snyk.io/snyk-open-source) or [Snyk Container](https://docs.snyk.io/snyk-container) installed \(as currently Snyk Code is distributed as an add-on\).
-* Projects that include code in [a supported language](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support) \(currently Java, JavaScript, and Python\).
+* [Snyk Open Source](https://snyk.gitbook.io/user-docs/snyk-open-source) or [Snyk Container](https://snyk.gitbook.io/user-docs/snyk-container) installed \(as currently Snyk Code is distributed as an add-on\).
+* Projects that include code in [a supported language](https://snyk.gitbook.io/user-docs/snyk-code/snyk-code-language-and-framework-support) \(currently Java, JavaScript, and Python\).
 * One of the following supported source code management systems \(SCMs\): GitHub cloud, BitBucket cloud, Gitlab cloud.
 
 ### Stage 1: Enable Snyk Code
@@ -67,7 +67,7 @@ You can now view vulnerability results for imported projects. The **Projects** t
 
 ![](../../.gitbook/assets/view-vulns2.png)
 
-See [View project information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information) for more details.
+See [View project information](https://snyk.gitbook.io/user-docs/getting-started/introduction-to-snyk-projects/view-project-information) for more details.
 
 ### Stage 5: View issue details
 
@@ -78,7 +78,7 @@ Click **Full Details** on an issue to view more details about it, such as:
 
 ### For more information
 
-* [Snyk Code](https://docs.snyk.io/snyk-code)
+* [Snyk Code](https://snyk.gitbook.io/user-docs/snyk-code)
 * [Developer-first SAST with Snyk Code](https://snyk.io/blog/developer-first-sast-with-snyk-code/)
 * [SAST vs DAST](https://snyk.io/learn/sast-vs-dast/)
 

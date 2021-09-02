@@ -6,7 +6,7 @@ This guide has been designed to help you get started with your new Business plan
 
 Before starting, we recommend that you consider what you hope to achieve with Snyk and how you'll define success. Then you can design your rollout strategy and workflow to align to those objectives.
 
-To prepare for using Snyk, check out our [Getting Started guides](https://docs.snyk.io/getting-started) for each product.
+To prepare for using Snyk, check out our [Getting Started guides](https://snyk.gitbook.io/user-docs/getting-started) for each product.
 
 ## Develop rollout strategy
 
@@ -26,7 +26,7 @@ Learn more about [Snyk SCM integration good practices](snyk-scm-integration-good
 
 Work with early adopter teams and users to test and monitor projects in the CLI. Once successful, repeat the process with other teams and users across your organization.
 
-Learn more about using [Snyk in the CLI](https://docs.snyk.io/snyk-cli).
+Learn more about using [Snyk in the CLI](https://snyk.gitbook.io/user-docs/snyk-cli).
 
 ### Integrate with CI/CD pipleline
 
@@ -40,13 +40,13 @@ Learn more about [Snyk CI/CD integration good practices](https://support.snyk.io
 
 Snyk supports testing and monitoring Docker images that have their dependencies managed by Debian, RPM, or APK. Docker scanning is available via the CLI.
 
-Learn about [Snyk Container](https://docs.snyk.io/snyk-container).
+Learn about [Snyk Container](https://snyk.gitbook.io/user-docs/snyk-container).
 
 ### Add Infrastructure as Code scanning
 
 Snyk IaC helps developers write secure configurations, well before anything reaches production. The Snyk developer-first approach meets developers where they work. It provides fixes that can be directly merged into code.
 
-Learn more about [Snyk IaC](https://docs.snyk.io/snyk-infrastructure-as-code).
+Learn more about [Snyk IaC](https://snyk.gitbook.io/user-docs/snyk-infrastructure-as-code).
 
 ### Organize your group
 
@@ -81,13 +81,13 @@ Learn more about [setting up SSO](https://support.snyk.io/hc/en-us/articles/3600
 
 Integrate Snyk with Jira to manage the work of resolving issues. Use our Jira integration API or open Jira tickets with a button on Snyk project issue cards. Jira tickets collect details your engineers will need to resolve vulnerabilities.
 
-Learn more about [configuring the Snyk Jira integration](https://docs.snyk.io/integrations/untitled-3/jira).
+Learn more about [configuring the Snyk Jira integration](https://snyk.gitbook.io/user-docs/integrations/untitled-3/jira).
 
 ### Configure notifications
 
 Snyk automatically notifies you when new issues are found in the projects you’re monitoring. You can customize the emails your organization’s members receive in the organization settings area. The customizations apply to all members of that organization. However, any member of the organization can override these settings in their own account.
 
-Learn more about [Notification management.](https://docs.snyk.io/user-and-group-management/notifications/notification-management)
+Learn more about [Notification management.](https://snyk.gitbook.io/user-docs/user-and-group-management/notifications/notification-management)
 
 ### Fix vulnerabilities
 
@@ -101,7 +101,7 @@ You can also follow the remediation advice and update dependencies manually.
 
 Patches are code execution that the Snyk security team creates for issues that don’t have fixes. Snyk adds a dependency to your projects and a pre-publish script to execute the patch.
 
-Learn more about [fixing vulnerabilities](https://docs.snyk.io/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities).
+Learn more about [fixing vulnerabilities](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities).
 
 ### Prioritize issues
 
@@ -119,13 +119,13 @@ You can determine whether developers can ignore an issue or only admins.
 
 ![](../../.gitbook/assets/ignores.png)
 
-Learn more about [ignoring issues.](https://docs.snyk.io/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/introduction-to-ignoring-issues)
+Learn more about [ignoring issues.](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/introduction-to-ignoring-issues)
 
 ### Report on vulnerabilities
 
 Reports provide visibility into the number of vulnerabilities and license issues over time, the time to resolution, which dependencies are vulnerable, and many other details.
 
-Learn more about [reports](https://docs.snyk.io/reports-1/reports/reports-overview).
+Learn more about [reports](https://snyk.gitbook.io/user-docs/reports-1/reports/reports-overview).
 
 All reporting data is available via APIs, so you can choose to present the information in your own dashboard or tooling.
 

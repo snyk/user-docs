@@ -4,10 +4,10 @@
 
 Snyk Code expands the Snyk cloud-native application security platform, supporting all elements for a modern software supply chain. For a cloud-native application, this provides security for:
 
-* [**Snyk Code**](https://docs.snyk.io/snyk-code): the application’s proprietary code.
-* [**Snyk Open Source**](https://docs.snyk.io/snyk-open-source): the open-source libraries it leverages.
-* [**Snyk Container**](https://docs.snyk.io/snyk-container): the container it runs in.
-* [**Snyk Infrastructure as Code**](https://docs.snyk.io/snyk-infrastructure-as-code): the infrastructure as code that provisions it.
+* [**Snyk Code**](https://snyk.gitbook.io/user-docs/snyk-code): the application’s proprietary code.
+* [**Snyk Open Source**](https://snyk.gitbook.io/user-docs/snyk-open-source): the open-source libraries it leverages.
+* [**Snyk Container**](https://snyk.gitbook.io/user-docs/snyk-container): the container it runs in.
+* [**Snyk Infrastructure as Code**](https://snyk.gitbook.io/user-docs/snyk-infrastructure-as-code): the infrastructure as code that provisions it.
 
 ### How does static application security testing \(SAST\) work?
 
@@ -54,10 +54,10 @@ Snyk Code also provides rich curated additional information for many suggestions
 
 Snyk Code integrates with the cloud versions of:
 
-* [GitHub](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration)
-* [GitLab](https://docs.snyk.io/integrations/git-repository-scm-integrations/gitlab-integration)
-* [Bitbucket](https://docs.snyk.io/integrations/git-repository-scm-integrations/bitbucket-cloud-integration) 
-* [Azure](https://docs.snyk.io/integrations/git-repository-scm-integrations/azure-repos-integration)
+* [GitHub](https://snyk.gitbook.io/user-docs/integrations/git-repository-scm-integrations/github-integration)
+* [GitLab](https://snyk.gitbook.io/user-docs/integrations/git-repository-scm-integrations/gitlab-integration)
+* [Bitbucket](https://snyk.gitbook.io/user-docs/integrations/git-repository-scm-integrations/bitbucket-cloud-integration) 
+* [Azure](https://snyk.gitbook.io/user-docs/integrations/git-repository-scm-integrations/azure-repos-integration)
 
 ### Using integrations
 

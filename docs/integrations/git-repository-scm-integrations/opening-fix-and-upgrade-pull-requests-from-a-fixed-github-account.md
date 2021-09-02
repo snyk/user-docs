@@ -18,5 +18,5 @@ To use this feature:
 Ensure that the GitHub account for which the token is provided, has **write** level permissions or above, to the repos you'd like to monitor with Snyk.
 {% endhint %}
 
-[Read more](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration) about repository permission levels in GitHub.
+[Read more](https://snyk.gitbook.io/user-docs/integrations/git-repository-scm-integrations/github-integration) about repository permission levels in GitHub.
 

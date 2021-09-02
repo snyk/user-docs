@@ -11,7 +11,7 @@ This process uses the Snyk.io UI. For details of Snyk Container using the Snyk C
 Ensure you have:
 
 * Access to a relevant container registry to use with Snyk. Snyk supports registries including , Amazon Elastic Container Registry \([ECR](https://support.snyk.io/hc/en-us/sections/360001114218-ECR-image-scanning)\), Google Container Registry \([GCR](https://support.snyk.io/hc/en-us/sections/360001127497-GCR-image-scanning)\), Microsoft Azure Container Registry \([ACR](https://support.snyk.io/hc/en-us/sections/360001127457-ACR-image-scanning)\), and [JFrog Artifactory](https://support.snyk.io/hc/en-us/sections/360001127477-JFrog-Artifactory-image-scanning). Alternatively, access to [Kubernetes](https://support.snyk.io/hc/en-us/sections/360001114238-Kubernetes-workload-and-image-scanning) if you select that as an integration.
-* A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](https://docs.snyk.io/getting-started/getting-started-snyk-products) for details\).
+* A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](https://snyk.gitbook.io/user-docs/getting-started/getting-started-snyk-products) for details\).
 
 See [Prerequisites](https://solutions.snyk.io/snyk-academy/container/prerequisites) for more details.
 
@@ -53,7 +53,7 @@ Click on an entry to see details of vulnerabilities found:
 
 ![image5.png](../../.gitbook/assets/image5-1-.png)
 
-See [Analysis and remediation for your images from the Snyk app](https://docs.snyk.io/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app) for more details.
+See [Analysis and remediation for your images from the Snyk app](https://snyk.gitbook.io/user-docs/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app) for more details.
 
 ## Stage 4: Fix and review
 
@@ -63,5 +63,5 @@ See [Analysis and remediation for your images from the Snyk app](https://docs.sn
 
 ## For more information
 
-See [Snyk Container](https://docs.snyk.io/snyk-container).
+See [Snyk Container](https://snyk.gitbook.io/user-docs/snyk-container).
 

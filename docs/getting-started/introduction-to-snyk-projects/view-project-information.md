@@ -13,11 +13,11 @@ Click on the entry to view detailed information:
 Where:
 
 * **Header**: shows project summary information. See the [View project summary information](view-project-information.md) section.
-* **Issue cards**: show summaries of issues found. See [Issue card information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/issue-card-information).
+* **Issue cards**: show summaries of issues found. See [Issue card information](https://snyk.gitbook.io/user-docs/getting-started/introduction-to-snyk-projects/issue-card-information).
 * **Views**:
-  * **Overview**: shows [project issues, remediation, and dependencies](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-issues-remediations-and-dependencies).
-  * **History**: shows historical snapshots of the 4 most recent tests. See [View project history](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-history).
-  * **Settings**: shows [project settings](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-settings).
+  * **Overview**: shows [project issues, remediation, and dependencies](https://snyk.gitbook.io/user-docs/getting-started/introduction-to-snyk-projects/view-project-issues-remediations-and-dependencies).
+  * **History**: shows historical snapshots of the 4 most recent tests. See [View project history](https://snyk.gitbook.io/user-docs/getting-started/introduction-to-snyk-projects/view-project-history).
+  * **Settings**: shows [project settings](https://snyk.gitbook.io/user-docs/getting-started/introduction-to-snyk-projects/view-project-settings).
 
 ### View project summary information
 
@@ -31,5 +31,5 @@ The summary information shows:
   * A direct link to the project file in the SCM.
   * The time when the project was first imported to Snyk.
   * The time when an up-to-date snapshot of the file was fetched from the SCM and tested.
-* Predefined [project attributes](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/assign-a-policy-to-project-attributes), and any additional [project tag](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/project-tags) metadata.
+* Predefined [project attributes](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/policies/assign-a-policy-to-project-attributes), and any additional [project tag](https://snyk.gitbook.io/user-docs/getting-started/introduction-to-snyk-projects/project-tags) metadata.
 
