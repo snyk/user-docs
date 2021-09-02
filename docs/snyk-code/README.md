@@ -75,7 +75,7 @@ This integration allows you to:
 
 Snyk Code supports Java, JavaScript \(including TypeScript\), Python and C\#.
 
-See [Snyk Code language support](https://support.snyk.io/hc/en-us/articles/360016973477-Snyk-Code-language-support) for more information.
+See [Snyk Code language support](https://snyk.gitbook.io/user-docs/snyk-code/snyk-code-language-and-framework-support) for more information.
 
 ### Snyk Code IDE plugins
 
@@ -87,7 +87,7 @@ Snyk Code supports a JetBrains plugin to support issue finding and fixing, direc
 
 ![](../.gitbook/assets/results-code.png)
 
-For more details, see [JetBrains IDE Plugins](https://support.snyk.io/hc/en-us/articles/360004032317-JetBrains-IDE-Plugins).
+For more details, see [JetBrains IDE Plugins](https://snyk.gitbook.io/user-docs/integrations/ide-tools/jetbrains-plugins).
 
 ### VS Code IDE plugin
 
@@ -95,5 +95,5 @@ Snyk Code supports a Visual Studio Code plugin to support issue finding and fixi
 
 ![](../.gitbook/assets/image3-2-%20%282%29%20%282%29%20%284%29%20%284%29%20%284%29%20%283%29.png)
 
-For more details, see the [Visual Studio Code extension for Snyk Code](https://support.snyk.io/hc/en-us/articles/360018585717-Visual-Studio-Code-extension-for-Snyk-Code-).
+For more details, see the [Visual Studio Code extension for Snyk Code](https://snyk.gitbook.io/user-docs/integrations/ide-tools/visual-studio-code-extension-for-snyk-code-).
 

@@ -26,7 +26,7 @@ In order to scan your dependencies, you must ensure you have first installed the
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project:
 
-* [Snyk CLI tool for PHP projects](https://support.snyk.io/hc/en-us/articles/360003817397-Snyk-for-PHP#UUID-c8c2d466-22d5-7742-c302-989968c55066)
+* [Snyk CLI tool for PHP projects](https://snyk.gitbook.io/user-docs/snyk-open-source/language-and-package-manager-support/snyk-for-php)
 * [Git services for PHP projects](https://support.snyk.io/hc/en-us/articles/360003817397-Snyk-for-PHP#UUID-8d36f8e1-8835-5fa6-8e56-8d9f091d54ed)
 
 ### Snyk CLI tool for PHP projects

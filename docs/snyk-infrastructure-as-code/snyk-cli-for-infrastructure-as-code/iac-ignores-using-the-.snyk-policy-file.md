@@ -36,7 +36,7 @@ ignore:
         created: 2021-07-27T08:40:35.251Z
 ```
 
-This file can be created with the **snyk ignore** command, See [Ignore vulnerabilities](https://support.snyk.io/hc/en-us/articles/360003851317-Ignore-vulnerabilities).
+This file can be created with the **snyk ignore** command, See [Ignore vulnerabilities](https://snyk.gitbook.io/user-docs/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli).
 
 The \`\*\` object key causes the CLI to ignore all instances of the SNYK-CC-K8S-1 vulnerability. You can add multiple entries, keyed by the IaC issue ID, to ignore multiple vulnerabilities.
 

@@ -209,8 +209,8 @@ The `.snyk` file should be versioned in the code repository, like other applicat
 
 ### Additional articles
 
-Support KB - [Ignore Vulnerabilities](https://support.snyk.io/hc/en-us/articles/360003851317-Ignore-vulnerabilities)  
+Support KB - [Ignore Vulnerabilities](https://snyk.gitbook.io/user-docs/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli)  
 Support KB - [Ignoring via the CLI is not enabled for this organization](https://support.snyk.io/hc/en-us/articles/360001558598)  
 Support KB - [CLI reference](https://support.snyk.io/hc/en-us/articles/360003812578)  
-Support KB - [Manage Vulnerabilities with the Snyk Wizard in the CLI](https://support.snyk.io/hc/en-us/articles/360003851357) \(NPM/Yarn Only\)
+Support KB - [Manage Vulnerabilities with the Snyk Wizard in the CLI](https://snyk.gitbook.io/user-docs/snyk-cli/fix-vulnerabilities-from-the-cli/manage-vulnerability-results-with-the-snyk-cli-wizard) \(NPM/Yarn Only\)
 

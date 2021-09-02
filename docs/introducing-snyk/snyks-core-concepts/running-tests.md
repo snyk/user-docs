@@ -51,5 +51,5 @@ See [Monitor your projects at regular intervals](https://snyk.gitbook.io/user-do
 
 By default, Snyk scans every pull request submitted on your monitored repositories, showing the results and recommendations grouped together in a single security check and a single license check.
 
-See [Enable Snyk test on PRs](https://support.snyk.io/hc/en-us/articles/360018010597-Snyk-SCM-integration-good-practices#Stage3) for more details.
+See [Enable Snyk test on PRs](https://snyk.gitbook.io/user-docs/getting-started/snyk-billing-plan-onboarding/snyk-scm-integration-good-practices) for more details.
 

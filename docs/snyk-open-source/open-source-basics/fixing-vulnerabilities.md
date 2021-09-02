@@ -11,7 +11,7 @@ Snyk supports workflows to fix vulnerabilities using:
 
 For projects imported via an SCM \(Source Code Manager\), Snyk offers the following types of automated pull / merge requests:
 
-* [Fix pull requests for new vulnerabilities](https://support.snyk.io/hc/en-us/articles/360017186498-Fix-PRs-for-new-vulnerabilities)
+* [Fix pull requests for new vulnerabilities](https://snyk.gitbook.io/user-docs/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities)
 * [Fix pull requests to clear the backlog of vulnerabilities in priority order](https://support.snyk.io/hc/en-us/articles/360017186958-Fix-PRs-to-clear-the-backlog-of-vulnerabilities-in-priority-order)
 * [Dependency upgrade pull requests](https://snyk.gitbook.io/user-docs/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs)
 

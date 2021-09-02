@@ -1,7 +1,7 @@
 # Introduction to ignoring issues
 
 {% hint style="info" %}
-See [Ignoring issues not prioritized for your project](https://support.snyk.io/hc/en-us/articles/360004002718-Ignoring-issues-not-prioritized-for-your-project) for more details of ignoring issues.
+See [Ignoring issues not prioritized for your project](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/issue-management/ignore-issues) for more details of ignoring issues.
 {% endhint %}
 
 ### Snyk UI

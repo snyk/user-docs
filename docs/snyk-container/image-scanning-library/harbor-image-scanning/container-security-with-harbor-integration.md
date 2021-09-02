@@ -21,7 +21,7 @@ Prerequisites
 1. In your Snyk account, navigate to **Integrations** from the menu bar at the top. Under the **Container Registries** section, find the Harbor option and click it. \_\_
 2. In the **Account credentials** section, enter your Harbor username and password login credentials. In the **container registry name** fill in the full URL to the registry you want to integrate with. To finish, click **Save**.
 
-In case you are using a self-hosted Harbor registry, contact us to provide you with a token. You can read more about setting up private registry integration [here](https://support.snyk.io/hc/en-us/articles/360017040957).
+In case you are using a self-hosted Harbor registry, contact us to provide you with a token. You can read more about setting up private registry integration [here](https://snyk.gitbook.io/user-docs/snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries).
 
 ![](../../../.gitbook/assets/mceclip2-1-.png)
 

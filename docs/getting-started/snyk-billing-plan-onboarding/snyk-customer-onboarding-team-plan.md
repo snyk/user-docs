@@ -10,7 +10,7 @@ This documentation assumes you have used Snyk, and are familiar with core Snyk f
 ### More details
 
 * [Introduction to the Snyk Team plan](https://support.snyk.io/hc/en-us/articles/360018365737)
-* [Getting started with Snyk products](https://support.snyk.io/hc/en-us/sections/360004349758-Getting-started-with-Snyk-products) 
+* [Getting started with Snyk products](https://snyk.gitbook.io/user-docs/getting-started/getting-started-snyk-products) 
 * [Quick start guide and general overview](https://www.youtube.com/watch?v=PCculVmSPtg&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=6) \(video\)
 
 ### Rollout strategy: good practices
@@ -57,7 +57,7 @@ You can also decide if you want to simply report on the vulnerabilities, or brea
 
 **More details**
 
-* [Snyk CI/CD Integration: good practices](https://support.snyk.io/hc/en-us/articles/360018245398)
+* [Snyk CI/CD Integration: good practices](https://snyk.gitbook.io/user-docs/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices)
 * [Snyk CI/CD integration examples on GitHub](https://github.com/snyk-labs/snyk-cicd-integration-examples) 
 
 Snyk automatically notifies you when new issues are found in the projects you're monitoring, to help make you aware of new risks:

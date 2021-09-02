@@ -20,5 +20,5 @@ The sign on process includes these steps:
 3. Snyk checks the directory for that user.
 4. If the user is already configured, Snyk enables the appropriate access. For a new user, Snyk adds the user to the directory, and then redirects them to Snyk.io with the appropriate access.
 
-Read more about the next step, [choose a provisioning option](https://support.snyk.io/hc/en-us/articles/360019607318).
+Read more about the next step, [choose a provisioning option](https://snyk.gitbook.io/user-docs/user-and-group-management/setting-up-sso-for-authentication/choose-a-provisioning-option).
 

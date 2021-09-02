@@ -24,7 +24,7 @@ Snyk’s extensibility and API enable developers to tune Snyk’s security autom
 
 ## Snyk Products and platforms
 
-* [Snyk Open Source](https://snyk.gitbook.io/user-docs/snyk-open-source): Enabling developers to easily find and automatically fix open source vulnerabilities. Snyk Open Source also includes [Snyk license compliance](https://support.snyk.io/hc/en-us/categories/360000502958-License-compliance) to help manage your open source license usage.
+* [Snyk Open Source](https://snyk.gitbook.io/user-docs/snyk-open-source): Enabling developers to easily find and automatically fix open source vulnerabilities. Snyk Open Source also includes [Snyk license compliance](https://snyk.gitbook.io/user-docs/snyk-open-source) to help manage your open source license usage.
 * [Snyk Code](https://snyk.io/product/snyk-code/): Find and fix vulnerabilities in your application code in real-time during the development process.
 * [Snyk Container](https://snyk.gitbook.io/user-docs/snyk-container): Find and fix vulnerabilities in container images and Kubernetes applications.
 * [Snyk Infrastructure as Code \(IaC\)](https://snyk.gitbook.io/user-docs/snyk-infrastructure-as-code): Find and fix insecure configurations in Terraform and Kubernetes code.

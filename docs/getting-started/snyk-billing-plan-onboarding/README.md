@@ -12,7 +12,7 @@ In addition, the Team plan provides [license compliance features](./), [IaC scan
 
 ### More details
 
-* See [Getting started with Snyk products](https://support.snyk.io/hc/en-us/sections/360004349758-Getting-started-with-Snyk-products) for individual quickstart guides for Snyk products.
+* See [Getting started with Snyk products](https://snyk.gitbook.io/user-docs/getting-started/getting-started-snyk-products) for individual quickstart guides for Snyk products.
 * See [Snyk Customer Onboarding - Team Plan](https://snyk.gitbook.io/user-docs/getting-started/snyk-billing-plan-onboarding/snyk-customer-onboarding-team-plan) for more detailed instructions on onboarding your team with the Team plan.
 
 Testing at every stage of the development lifecycle requires a lot of automated testing. This is where the unlimited testing capability of the Team plan becomes so valuable.  

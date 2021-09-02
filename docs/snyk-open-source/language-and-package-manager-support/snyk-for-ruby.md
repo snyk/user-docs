@@ -28,5 +28,5 @@ In future releases, we are planning to provide suggestions to make this easier.
 
 If you use private Gem sources this should work as normal when testing via the Snyk CLI.
 
-You must take additional steps to [configure private Gem sources for projects imported from Git](https://support.snyk.io/hc/en-us/articles/360013742557).
+You must take additional steps to [configure private Gem sources for projects imported from Git](https://snyk.gitbook.io/user-docs/integrations/private-registry-integrations/private-gem-sources-for-ruby).
 

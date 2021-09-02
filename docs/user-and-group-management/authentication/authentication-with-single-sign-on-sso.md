@@ -2,7 +2,7 @@
 
 Snyk supports ADFS and SAML single sign-on \(SSO\) protocols.
 
-See the [Snyk SSO documentation](https://support.snyk.io/hc/en-us/sections/360001316857-Setting-up-and-managing-SSO-for-authentication) for more details.
+See the [Snyk SSO documentation](https://snyk.gitbook.io/user-docs/user-and-group-management/setting-up-sso-for-authentication) for more details.
 
 See also
 

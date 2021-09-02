@@ -36,7 +36,7 @@ The Snyk CLI on its own does not currently have the capability natively to fail 
 
 ### Combining security policies with --severity-threshold
 
-[Security policies](https://support.snyk.io/hc/en-us/sections/360002249538-Policies) provide the capability to change a vulnerability's severity if it matches specific criteria when a project is tested against an organization using that policy. You could, for example, change the severity of a vulnerability from high to low, and if performing a snyk test with the CLI with
+[Security policies](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/policies) provide the capability to change a vulnerability's severity if it matches specific criteria when a project is tested against an organization using that policy. You could, for example, change the severity of a vulnerability from high to low, and if performing a snyk test with the CLI with
 
 ```text
  --severity-threshold=medium|high

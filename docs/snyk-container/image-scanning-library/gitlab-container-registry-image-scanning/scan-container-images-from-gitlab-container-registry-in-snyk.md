@@ -7,7 +7,7 @@ To add images from GitLab container registry to Snyk:
 **Prerequisites**:
 
 * Have a Snyk account with access to the relevant organization \(given by an administrator\).
-* GitLab container registry integration configured. To learn more about that, follow the steps in [Container security with GitLab container registry integration](https://support.snyk.io/hc/en-us/articles/4403566451217)
+* GitLab container registry integration configured. To learn more about that, follow the steps in [Container security with GitLab container registry integration](https://snyk.gitbook.io/user-docs/snyk-container/image-scanning-library/gitlab-container-registry-image-scanning/container-security-with-gitlab-container-registry-integration)
 
 **Steps:**
 

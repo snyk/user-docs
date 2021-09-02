@@ -4,7 +4,7 @@
 
 Sometimes there is no direct upgrade that can address the vulnerability or an upgrade is not possible due to functional reasons \(e.g. it’s a major breaking change\).
 
-For such cases Snyk can help you [protect your code with patches](https://support.snyk.io/hc/en-us/articles/360003812558#UUID-ebd02c05-2d0d-b051-611b-e304c8c8bbba). This option will make the minimal modifications to your locally installed`node_modules` files to fix the vulnerability. It will also update the policy to patch this issue when running [snyk protect](https://snyk.io/docs/using-snyk#protect). 
+For such cases Snyk can help you [protect your code with patches](https://snyk.gitbook.io/user-docs/snyk-cli/secure-your-projects-in-the-long-term/protect-your-code-with-patches). This option will make the minimal modifications to your locally installed`node_modules` files to fix the vulnerability. It will also update the policy to patch this issue when running [snyk protect](https://snyk.io/docs/using-snyk#protect). 
 
 {% hint style="info" %}
 **Caution**  
