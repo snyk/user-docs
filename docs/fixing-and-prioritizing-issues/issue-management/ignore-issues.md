@@ -83,6 +83,12 @@ For example, if you wanted to ignore the vulnerability with SNYK ID [SNYK-RUBY-F
 
 See [The .snyk file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file) for more details.
 
+### Ignoring issues with policy actions
+
+You can set [Security policies](https://docs.snyk.io/fixing-and-prioritizing-issues/security-policies) actions to ignore all vulnerabilities that match the conditions specified in a policy rule.
+
+See [Security policies: Actions](https://docs.snyk.io/fixing-and-prioritizing-issues/security-policies/security-policies-actions) for more details.
+
 ### Set who can configure ignore settings
 
 Since suppressing vulnerabilities carries a level of risk, you can make this available to admins only: go to your organization settings &gt; **General**, and select **Admin users only** in the **Ignores** section \(this also disables ignores from being added via the CLI\).
