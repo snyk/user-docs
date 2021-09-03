@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 For [Snyk Open Source, ](https://snyk.gitbook.io/user-docs/snyk-open-source)these commands work by default.  
-For [Snyk Container](https://snyk.gitbook.io/user-docs/snyk-container), these commands also work, but after registering an ignore, when you call **snyk test** or **snyk monitor**, you must use the **--policy-file=** argument: for example: **snyk container test node --policy-file=.snyk**  
+For [Snyk Container](https://snyk.gitbook.io/user-docs/snyk-container), these commands also work, but after registering an ignore, when you call **snyk test** or **snyk monitor**, you must use the **--policy-path=** argument: for example: **snyk container test node --policy-path=.snyk**  
 For [Snyk Infrastructure as Code](https://support.snyk.io/hc/en-us/categories/360001342678-Infrastructure-as-code), see [IaC ignores using the snyk policy file](https://snyk.gitbook.io/user-docs/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file).  
 For [Snyk Code](https://snyk.gitbook.io/user-docs/snyk-code), these commands are not yet implemented.
 {% endhint %}
