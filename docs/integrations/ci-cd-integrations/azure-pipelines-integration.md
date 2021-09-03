@@ -1,6 +1,6 @@
 # Azure Pipelines integration
 
-### Overview
+## Overview
 
 Snyk enables security across the Microsoft Azure ecosystem, including for Azure Pipelines, automatically finding and fixing application and container vulnerabilities.
 
@@ -12,22 +12,22 @@ You can include the Snyk task in your pipeline to test for security vulnerabilit
 
 Our Snyk Security Scan task is available for all languages supported by Snyk and Azure DevOps.
 
-### How it works
+## How it works
 
 After the Snyk Security Scan task is added to a pipeline, then each time the pipeline runs, the Snyk task will do the following:
 
-#### **Test**
+### **Test**
 
 1. Tests the application dependencies or container images for vulnerabilities and licensing issues and lists them.
 2. If Snyk finds vulnerabilities or license issues, it does one of the following \(based on your configuration\):
    * Fails the pipeline
    * Lets the pipeline continue
 
-#### **Monitor**
+### **Monitor**
 
 After the **snyk test** is complete, you have the option of doing **snyk monitor**. **snyk monitor** will save a snapshot of the project dependencies in your [snyk.io](https://snyk.io/) account, where you can see the dependency tree with all of the issues and be alerted if and when new issues are found in the dependencies.
 
-### Install the Snyk extension for your Azure pipelines
+## Install the Snyk extension for your Azure pipelines
 
 To start using our task as part of your pipeline build, first install the extension into your Azure DevOps instance per organization, from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Snyk.snyk-security-scan).
 
@@ -52,7 +52,7 @@ To start using our task as part of your pipeline build, first install the extens
 
 ![](../../.gitbook/assets/ap_-_config.jpg)
 
-### Add the Snyk Security Task to your pipelines
+## Add the Snyk Security Task to your pipelines
 
 **Prerequisites**
 
@@ -88,7 +88,7 @@ This extension requires that Node.js and npm be installed on the build agent. Th
 
 > If the Snyk task fails the build, an error message appears in the results indicating that the build failed due to `snyk test`.
 
-### Snyk Security Scan task parameters and values
+## Snyk Security Scan task parameters and values
 
 This section describes the Snyk task parameters for Azure Pipelines integration, their parallel configuration fields \(from the configuration panel in Azure Pipelines\) and their valid values:
 

@@ -1,6 +1,6 @@
 # Artifactory Registry for npm
 
-### **Overview**
+## **Overview**
 
 {% hint style="info" %}
 **Note**  
@@ -18,7 +18,7 @@ Once configured, Snyk will use this information to access private dependencies w
 This feature is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-### JavaScript Language Settings
+## JavaScript Language Settings
 
 1. Go to settings ![](../../.gitbook/assets/cog_icon.png) **&gt; Languages &gt; JavaScript** and either the npm or yarn settings depending on your project types \(yarn shown in screenshots below\) 
 2. If you have not previously connected to Artifactory you will be asked to configure an integration first, see [Artifactory Registry Setup.](https://snyk.gitbook.io/user-docs/integrations/private-registry-integrations/artifactory-registry-setup) 

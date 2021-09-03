@@ -15,26 +15,26 @@ Only report vulnerabilities of provided level or higher.
 Only fail when there are vulnerabilities that can be fixed.
 
 ```text
---fail-on=all 
+--fail-on=all
 ```
 
 fails when there is at least one vulnerability that can be either upgraded or patched.
 
 ```text
---fail-on=upgradable 
+--fail-on=upgradable
 ```
 
 fails when there is at least one vulnerability that can be upgraded.
 
 ```text
---fail-on=patchable 
+--fail-on=patchable
 ```
 
 fails when there is at least one vulnerability that can be patched. If vulnerabilities do not have a fix and this option is being used, tests will pass.
 
 The Snyk CLI on its own does not currently have the capability natively to fail tests on more complex use cases. Here are some ways to achieve more complex pass/fail criteria.
 
-### Combining security policies with --severity-threshold
+## Combining security policies with --severity-threshold
 
 [Security policies](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/policies) provide the capability to change a vulnerability's severity if it matches specific criteria when a project is tested against an organization using that policy. You could, for example, change the severity of a vulnerability from high to low, and if performing a snyk test with the CLI with
 
@@ -57,7 +57,7 @@ Here is an example of a `snyk test`, using `--severity-threshold=high`, running 
 ![](https://gblobscdn.gitbook.com/assets%2F-MVXKdrh-jY3KDGPs8lQ%2F-MZT_W3O1oFyMAzF9g3s%2F-MZTuPF3Uat7DSSnTKFD%2Fimage.png?alt=media&token=914fd76f-bd9f-4170-8d96-b32026ae19ee)  
 Since we lowered the severity of the original vulnerability with the policy, it no longer breached the severity threshold of high, resulting in a passing test.
 
-### Companion tools
+## Companion tools
 
 The rest of this article discusses use cases using snyk-delta or snyk-filter, which are open source companion tools for the Snyk CLI.
 
@@ -77,9 +77,9 @@ It is available from npmjs.org and may be pulled into your CI/CD pipeline using 
 npm install -g snyk-filter
 ```
 
-### Fail current build only if new vulnerabilities are being introduced
+## Fail current build only if new vulnerabilities are being introduced
 
-### Inline mode
+## Inline mode
 
 ```text
 snyk test --json --print-deps | snyk-delta
@@ -91,7 +91,7 @@ Possibly point to a specific snapshot by specifying org + project coordinates
 snyk test --json --print-deps | snyk-delta --baselineOrg xxx --baselineProject xxx
 ```
 
-### Standalone
+## Standalone
 
 ```text
 snyk-delta --baselineOrg xxx --baselineProject xxx --currentOrg xxx --currentProject xxx
@@ -99,13 +99,13 @@ snyk-delta --baselineOrg xxx --baselineProject xxx --currentOrg xxx --currentPro
 
 Please refer to the snyk-delta project on GitHub for more information.
 
-### Fail build for CVSS score higher than ...
+## Fail build for CVSS score higher than ...
 
 ```text
 snyk test --json | snyk-filter -f /path/to/example-cvss-9-or-above.yml
 ```
 
-### Custom criteria and filtering
+## Custom criteria and filtering
 
 snyk-filter can utilize any combination of criteria available in the snyk test JSON output.
 

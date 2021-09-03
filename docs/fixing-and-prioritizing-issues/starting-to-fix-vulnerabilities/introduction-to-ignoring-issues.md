@@ -4,13 +4,13 @@
 See [Ignoring issues not prioritized for your project](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/issue-management/ignore-issues) for more details of ignoring issues.
 {% endhint %}
 
-### Snyk UI
+## Snyk UI
 
 Each issue card has an **Ignore** button allowing you to ignore that issue:
 
 ![](../../.gitbook/assets/new-ignore-2.png)
 
-### Snyk CLI
+## Snyk CLI
 
 In the Snyk CLI, you can ignore issues using **snyk ignore**. For example:
 

@@ -4,7 +4,7 @@ Snyk supports testing and monitoring of Go projects that have their dependencies
 
 The following describes how to use Snyk to scan your Go projects:
 
-#### Features <a id="h_01ESM3GFNMN0F7ART59AEK97TM"></a>
+### Features <a id="h_01ESM3GFNMN0F7ART59AEK97TM"></a>
 
 {% hint style="info" %}
 **Note**  
@@ -17,7 +17,7 @@ Features might not be available, depending on your subscription plan.
 | [dep](https://github.com/golang/dep) | ✔︎ | ✔︎ | ✔︎ |  |  |
 | [govendor](https://github.com/kardianos/govendor) | ✔︎ | ✔︎ | ✔︎ |  |  |
 
-### **How it works**
+## **How it works**
 
 Once we've built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the modules or packages anywhere in the dependency tree.
 
@@ -28,7 +28,7 @@ In order to scan your dependencies in the CLI, you must ensure you have first in
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project.
 
-### Snyk CLI tool for Go projects
+## Snyk CLI tool for Go projects
 
 **Go Modules**
 
@@ -59,9 +59,9 @@ In order to build the dependency tree Snyk analyzes your `vendor/vendor.json` fi
 
 When testing Govendor projects via the CLI Snyk requires dependencies to be installed, run `govendor sync` to achieve this.
 
-### Git services for Go projects
+## Git services for Go projects
 
-#### **Go Modules**
+### **Go Modules**
 
 {% hint style="info" %}
 **Note**  

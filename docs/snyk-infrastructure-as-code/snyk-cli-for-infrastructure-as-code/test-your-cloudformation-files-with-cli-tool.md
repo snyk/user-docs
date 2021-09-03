@@ -10,7 +10,7 @@ You can also scan AWS CDK applications. See [Test your AWS CDK files with our CL
 
 You can use the CLI as follows:
 
-### To test for an issue on specified files:
+## To test for an issue on specified files:
 
 ```text
 snyk iac test

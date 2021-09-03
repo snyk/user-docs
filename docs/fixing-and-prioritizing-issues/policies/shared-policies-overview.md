@@ -9,7 +9,7 @@ You must be a group administrator of the group in order to update **Policy** set
 This feature is available to Enterprise customers. See [Pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-### Navigate to the Policy manager
+## Navigate to the Policy manager
 
 1. Log in to Snyk 
 2. Navigate to your group
@@ -21,7 +21,7 @@ The Policy manager appears similar to the following:
 
 ![](../../.gitbook/assets/screenshot_2021-03-26_at_11.04.50_am.png)
 
-### Default policies
+## Default policies
 
 Each policy category has its own default policy. Default policies can only be applied to organizations, not project attributes.
 

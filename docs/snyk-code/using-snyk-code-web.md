@@ -4,7 +4,7 @@ Use Snyk Code with the standard Snyk web interface to find and fix vulnerabiliti
 
 ![](../.gitbook/assets/screenshot_2021-06-17_at_13.23.19.png)
 
-### View project vulnerabilities
+## View project vulnerabilities
 
 {% hint style="info" %}
 See [Getting started with Snyk Code](https://snyk.gitbook.io/user-docs/getting-started/getting-started-snyk-products/getting-started-with-snyk-code) for details of how to import and scan projects.
@@ -21,7 +21,7 @@ Information available shows standard Snyk project information \(see [Snyk projec
 * **Overview**, **History** and **Settings** information. For example, use the **History** section to view previous snapshots of projects.
 * Filters on the left of the screen.
 
-### Vulnerability card details
+## Vulnerability card details
 
 Each vulnerability card shows specific details about that vulnerability:
 
@@ -39,7 +39,7 @@ See [Issue card information](https://snyk.gitbook.io/user-docs/getting-started/i
 * Click **Ignore** to ignore this vulnerability \(see [Ignore a vulnerability](using-snyk-code-web.md)\)
 * Click **Full details** to view more information \(see [View full details](using-snyk-code-web.md)\).
 
-### Ignore a vulnerability
+## Ignore a vulnerability
 
 {% hint style="info" %}
 Ignore functionality is not offered for Open Source repositories.
@@ -67,7 +67,7 @@ See [Ignoring issues not prioritized for your project](https://snyk.gitbook.io/u
 
 See [Ignoring issues in Snyk Code](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/issue-management/ignore-issues#Ignore-Snyk-Code) for specific details of how Snyk Code processes the Ignore function.
 
-### View full details
+## View full details
 
 Click **Full details** from a vulnerability card to view more information:
 
@@ -82,18 +82,18 @@ Full details include all the information in the vulnerability card, plus:
 * A link to the source file, which you can open to make changes directly \(see [Open the source code file](using-snyk-code-web.md)\).
 * A full window showing the code affected, with specific lines highlighted to accompany the **Data flow** information.
 
-### Open the source code file
+## Open the source code file
 
-1. Click the code link to open the source code file itself \(for example, in GitHub\) 
+1. Click the code link to open the source code file itself \(for example, in GitHub\)
 
    ![](../.gitbook/assets/link.png)
 
-2. The file opens, showing you exactly where to fix the vulnerability \(in this example, by adding the sanitation required to the input\). 
+2. The file opens, showing you exactly where to fix the vulnerability \(in this example, by adding the sanitation required to the input\).
 3. You can now make the fix as required, to address the vulnerability in your code.
 
 ![](../.gitbook/assets/open-code2.png)
 
-### Example: Cross-site Scripting \(XSS\)
+## Example: Cross-site Scripting \(XSS\)
 
 This shows an example of a common vulnerability, Cross-site Scripting \(XSS\). XSS vulnerabilities allow attackers to compromise the interactions users have with your application, including gaining control over the application's functionality and data.
 

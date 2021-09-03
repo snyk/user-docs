@@ -7,7 +7,7 @@ Snyk supports workflows to fix vulnerabilities using:
 * Automatic pull / merge requests \(PRs / MRs\).
 * Manual pull / merge requests.
 
-### **Automatic pull / merge requests**
+## **Automatic pull / merge requests**
 
 For projects imported via an SCM \(Source Code Manager\), Snyk offers the following types of automated pull / merge requests:
 
@@ -15,7 +15,7 @@ For projects imported via an SCM \(Source Code Manager\), Snyk offers the follow
 * [Fix pull requests to clear the backlog of vulnerabilities in priority order](https://support.snyk.io/hc/en-us/articles/360017186958-Fix-PRs-to-clear-the-backlog-of-vulnerabilities-in-priority-order)
 * [Dependency upgrade pull requests](https://snyk.gitbook.io/user-docs/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs)
 
-### Manual pull / merge requests for a project code
+## Manual pull / merge requests for a project code
 
 To generate a PR / MR directly from your project, using the Snyk UI:
 

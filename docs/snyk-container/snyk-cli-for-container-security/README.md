@@ -1,10 +1,10 @@
 # Snyk CLI for container security
 
-### Test images with the Snyk Container CLI
+## Test images with the Snyk Container CLI
 
 The Snyk Container command line interface \(CLI\) helps you find and fix vulnerabilities in container images on your local machine.
 
-### Install the Snyk CLI
+## Install the Snyk CLI
 
 Use any of the following:
 
@@ -15,7 +15,7 @@ Use any of the following:
 
 For more detailed installation guidance and options, see [Install the Snyk CLI](https://support.snyk.io/hc/articles/360003812538#UUID-7ccc55c8-51f7-ff54-5acf-680dc62bc27e).
 
-### Authentication
+## Authentication
 
 After installation, authenticate with Snyk to test your image, running snyk auth from the CLI:
 
@@ -25,7 +25,7 @@ snyk auth
 
 For more details about authentication, see [Authenticate the CLI with your account](https://snyk.gitbook.io/user-docs/snyk-cli/install-the-snyk-cli/authenticate-the-cli-with-your-account)
 
-### Testing an image
+## Testing an image
 
 To test an image run:
 
@@ -54,7 +54,7 @@ snyk container test : --file=Dockerfile
 
 Specifying a Dockerfile provides more context, and allows Snyk to provide clear recommendations on how to fix discovered vulnerabilities.
 
-### Monitoring an image
+## Monitoring an image
 
 Snyk Container also has the concept of monitoring an image. This provides the following advantages:
 
@@ -89,7 +89,7 @@ monitor will:
 It’s common to use both test and monitor with Snyk. test is great for quick checks, monitor can be used for ongoing assurance and easier sharing of results.
 {% endhint %}
 
-### More information
+## More information
 
 * [Understand Snyk Container CLI results](https://snyk.gitbook.io/user-docs/snyk-container/snyk-cli-for-container-security/understanding-snyk-container-cli-results)
 * [Advanced CLI usage](https://snyk.gitbook.io/user-docs/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)

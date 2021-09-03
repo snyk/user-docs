@@ -9,14 +9,14 @@ Snyk can integrate to private container registries you host \(currently in open 
 
 To enable and configure your hosted container registry, contact our support team at [support@snyk.io](mailto:support@snyk.io)
 
-### **Introduction**
+## **Introduction**
 
 Integration with private container registries allows you to:
 
 * Keep sensitive data such as your access tokens inside your private network, never sharing that information with Snyk.
 * Provide controlled access to the network by Snyk, limiting Snyk access and the actions that Snyk can perform.
 
-### **Self-hosted container registries solution components**
+## **Self-hosted container registries solution components**
 
 * Broker server: running on Snyk SaaS backend
 * Broker client & Container Registry Agent: Two Docker images deployed in your infrastructure, creating two separate services, responsible for sampling your container registries in a secured manner and sending the allowed information to Snyk.
@@ -59,12 +59,12 @@ If such a requirement is not relevant for you, you do not need the architecture 
 * Broker Client image can be found for download [here](https://hub.docker.com/r/snyk/broker/tags?page=1&ordering=last_updated&name=container-registry-agent)
 
 {% hint style="info" %}
-#### Scaling to adjust scan capacity
+### Scaling to adjust scan capacity
 
 With the above configuration of 1 vCPU and 2GB RAM, scanning capacity would be approximately 160 images of ~350MB in one go. You can scale this up based on your image sizes, and in case you have a specific use case that doesn't allow scaling and doesn't fit the limitations, please contact our support team.
 {% endhint %}
 
-### **Set up the remote connection**
+## **Set up the remote connection**
 
 To use the Broker client with a container registry agent deployment, run  
 \`docker pull snyk/broker:container-registry-agent\`.
@@ -85,11 +85,11 @@ The following environment variables are mandatory to configure the Broker client
 * \`CR\_TOKEN\` - Authentication token for DigitalOcean container registry.
 * \`PORT\` - The local port at which the Broker client accepts connections. Default is 7341.
 
-#### **DigitalOcean**
+### **DigitalOcean**
 
 To set up Broker Client for **DigitalOcean**,`CR_USERNAME` and `CR_PASSWORD` are not required. Instead, you need to specify `CR_TOKEN` - authentication token for DigitalOcean container registry.
 
-#### **GCR and Google Artifact Registry**
+### **GCR and Google Artifact Registry**
 
 To set up the Broker Client for those container registries, all the above applies. The only thing to note is that `CR_USERNAME` value is permanent and should be `_json_key`, and the `CR_PASSWORD` value should be the JSON key used to authenticate to google.
 
@@ -123,7 +123,7 @@ docker run --restart=always \
        snyk/container-registry-agent:latest
 ```
 
-### **Configuring and using system check:**
+## **Configuring and using system check:**
 
 You can use the \`/systemcheck\` endpoint to verify connectivity between the Broker Client and the Container Registry Agent.
 

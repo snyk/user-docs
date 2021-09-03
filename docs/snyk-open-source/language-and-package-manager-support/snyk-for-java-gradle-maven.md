@@ -4,7 +4,7 @@ Snyk offers security scanning to test your projects for vulnerabilities, both th
 
 **Supported versions:** For officially supported Java versions, operating systems, and Node.js versions see the [Gradle support](https://github.com/snyk/snyk-gradle-plugin#support) and [Maven support](https://github.com/snyk/snyk-mvn-plugin#support) tables.
 
-### Features
+## Features
 
 The following table provides a general outline of the general features we offer by language. In addition to these features, we also offer additional functionality related to the specific integrations you configure and more.
 
@@ -17,7 +17,7 @@ Some features might not be available, depending on your pricing plan. See [prici
 | [Maven](https://maven.apache.org/) | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
 | [Gradle](https://gradle.org/) | ✔︎ | ✔︎ | ✔︎ | ✔︎ \(advice\) |  |
 
-### Snyk CLI tool for Java projects \(CI/CD\)
+## Snyk CLI tool for Java projects \(CI/CD\)
 
 The way Snyk analyzes and builds the dependencies varies depending on the language and package manager of the project.
 
@@ -26,17 +26,17 @@ Learn how to use the tool for your Java projects as follows:
 * Snyk CLI with Gradle: To build the dependency graph, Snyk integrates with Gradle and inspects the dependencies returned by the build. The following manifest files are supported: `build.gradle` and `build.gradle.kts`
 * Snyk CLI with Maven: To build the dependency tree, Snyk analyzes the output of the `pom.xml` files.
 
-### CLI parameters for Java
+## CLI parameters for Java
 
 This section describes the unique CLI commands available when working with Java-based projects as follows:
 
-#### Prerequisites
+### Prerequisites
 
 * Install the relevant package manager before you use the Snyk CLI tool.
 * Include the relevant manifest files supported by Snyk before testing.
 * Install and authenticate the Snyk CLI to start analyzing projects from your local environment. See [Getting started with the CLI](https://snyk.gitbook.io/user-docs/snyk-cli/guides-for-our-cli/getting-started-with-the-cli).
 
-#### Snyk CLI parameters
+### Snyk CLI parameters
 
 When working with Gradle projects from our CLI, you can add any of the following options to further refine the way the scan works:
 
@@ -48,7 +48,7 @@ When working with Gradle projects from our CLI, you can add any of the following
 | `--configuration-attributes=` | Select certain values of configuration attributes to resolve the dependencies. For example: `'buildtype:release,usage:java-runtime'` |
 | `--all-projects` | Use for monorepos. This will detect all supported manifests. For Gradle monorepos Snyk will only look for root level **build.gradle / build.gradle.kts** files and apply the same logic as `--all-sub-projects` behind the scenes. This command is designed to be run in the root of your monorepo. |
 
-#### Gradle sub-projects
+### Gradle sub-projects
 
 Gradle build can consist of several sub-projects, where each sub-project has its own build.gradle, while the root project is the only one that also includes a `settings.gradle` file. Sub-projects depend on the root project, but can be configured otherwise.
 
@@ -68,7 +68,7 @@ By default, Snyk CLI scans only the current project \(the project in the root of
   snyk test --sub-project=myapp
   ```
 
-#### Solving Issues on Gradle CLI Projects with lockfile
+### Solving Issues on Gradle CLI Projects with lockfile
 
 If your gradle project makes use of a single **gradle.lockfile** or multiple **\*.lockfile** per configuration and you are having the following issue
 
@@ -82,7 +82,7 @@ compileOnly {resolutionStrategy.deactivateDependencyLocking() }
 
 This will **ignore compileOnly** and save only the necessary information to analyse your project/projects.
 
-#### Configurations
+### Configurations
 
 Gradle dependencies are declared for a particular scope, each scope is represented by Gradle with the help of [Configurations](https://docs.gradle.org/current/userguide/declaring_dependencies.html#sec:what-are-dependency-configurations). For example:
 
@@ -102,7 +102,7 @@ To test a specific configuration:
 * `--configuration-matching=^compile$` will match only compile;
 * `--configuration-matching='^(debug|release)compile$'` will match debugCompile and releaseCompile
 
-#### Gradle Android build variants
+### Gradle Android build variants
 
 Android Gradle supports creating different versions of your app by configuring [build variants.](https://developer.android.com/studio/build/build-variants)
 
@@ -140,7 +140,7 @@ To avoid such conflicts:
 
   matches the variants using `com.android.build.api.attributes.BuildTypeAttr=release` and `org.gradle.usage=java-runtime`
 
-#### Pass extra arguments directly to Gradle or Maven via Snyk CLI
+### Pass extra arguments directly to Gradle or Maven via Snyk CLI
 
 You can pass any extra Gradle or Maven arguments directly to **gradle** or **mvn** by providing them after a Snyk command like so:
 
@@ -172,14 +172,14 @@ Define the system property like this:
 snyk test -- -Dpkg_version=1.4
 ```
 
-#### Gradle daemon
+### Gradle daemon
 
 By default, Snyk passes `gradle build --no-daemon` in the background when running `snyk test` and `snyk monitor`. If for any reason, you run into trouble, try this:
 
 1. Start the Gradle daemon.
 2. Add `--daemon` to your `snyk test` or `snyk monitor`.
 
-#### Support contact
+### Support contact
 
 If you are having any trouble testing your projects with Snyk, collect the following details and send them to us at `<`[`support@snyk.io`](mailto:support@snyk.io)`>` so we can help you out:
 
@@ -189,7 +189,7 @@ If you are having any trouble testing your projects with Snyk, collect the follo
   * `$ snyk test -d`
   * `$ gradle dependencies -q`
 
-### Git services for Gradle projects
+## Git services for Gradle projects
 
 After you select a project for import, we build the dependency tree based on the `build.gradle` file and \(optional\) `gradle.lockfile`.
 
@@ -199,15 +199,15 @@ If a lockfile is present, Snyk will use it to accurately resolve the final versi
 
 Gradle lockfiles are an opt-in feature that, among other benefits, enable reproducible builds.Read more about Gradle dependency locking at [https://docs.gradle.org/current/userguide/dependency\_locking.html](https://docs.gradle.org/current/userguide/dependency_locking.html)
 
-### Git services for maven projects
+## Git services for maven projects
 
 After you select a project for import, we build the dependency tree based on the `pom.xml` file.
 
-### Git settings for Java
+## Git settings for Java
 
 From the Snyk UI you can customize the specific mirror or repository from which you’d like to resolve packages in Artifactory for Maven. If you specify the connection, you must also configure the relevant repository integration.
 
-#### Git settings for Java - custom Maven package registries for Artifactory
+### Git settings for Java - custom Maven package registries for Artifactory
 
 From the Snyk UI you can customize the specific mirror or repository \(custom package registries, under specific conditions\) from which you’d like to resolve packages in Artifactory for Maven, allowing insight into dependencies that are not hosted in canonical registries.
 
@@ -228,7 +228,7 @@ Maven analysis can be configured to mirror all requests through a custom package
 Custom package registries do not currently work with brokered integrations. If you currently use a brokered integration or need support for other package managers please email contact@snyk.io and we will send you an announcement as soon as support is available.
 {% endhint %}
 
-#### Setup custom package registries
+### Setup custom package registries
 
 If authentication is required to access your custom registry you will need to first configure the Artifactory package repository integration.
 
@@ -254,7 +254,7 @@ If using the integration, you will need to choose an integration type and provid
 
 Alternatively, you can configure repositories which will be used as additional locations to check for artifacts.
 
-### Additional Snyk support for Java
+## Additional Snyk support for Java
 
 In addition to the CLI and Snyk UI features, you can also check your Java projects with these plugins:
 

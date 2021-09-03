@@ -14,7 +14,7 @@ Use the left-hand area to filter and search issues. Click the checkboxes to filt
 
 Issues details appear in the main area, sorted by priority score. See **View Issue Details.**
 
-### Fix issues \(Fix PR\)
+## Fix issues \(Fix PR\)
 
 Snyk provides powerful features to fix issues identified during scanning, as shown in the **Open a fix PR** section of the **Issues** and **Remediation** displays:
 
@@ -27,7 +27,7 @@ You can also select to fix a specific issue, clicking **Fix this vulnerability**
 See [Fixing vulnerabilities](https://snyk.gitbook.io/user-docs/snyk-open-source/open-source-basics/fixing-vulnerabilities) for an overview.  
 See [Fixing and prioritizing issues](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues) for more details.
 
-### View issue details
+## View issue details
 
 For each issue, this display shows details about the vulnerability including its priority score \(see [Prioritizing Snyk issues](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score)\):
 

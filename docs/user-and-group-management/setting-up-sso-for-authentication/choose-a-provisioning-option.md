@@ -8,7 +8,7 @@ Determine how new users in your organization get access to Snyk:
 
 {% embed url="https://youtu.be/VOGYgcv9Xmc" caption="" %}
 
-### Open to all
+## Open to all
 
 With the Open option, all users have automatic access to Snyk by using SSO to log in. They will have access to all organizations in your selected group. Their accounts will all be provisioned with the same role, with two options:
 
@@ -17,7 +17,7 @@ With the Open option, all users have automatic access to Snyk by using SSO to lo
 
 Let Snyk Support know whether new users will have the **administrator** role or the **collaborator** role. The selected role applies for all users.
 
-### Invitation required
+## Invitation required
 
 With the invitation required option, admins can invite users or users can request access to an organization.
 
@@ -25,7 +25,7 @@ There are two ways to invite users to organizations. Invite members from the [Me
 
 If users who have not been invited use SSO to log in, they will gain access to Snyk, but they will not see any projects until an admin invites them or manually adds them to the organization\(s\). You can show a list of organizations with the appropriate contact person so that new users can [request access](https://snyk.gitbook.io/user-docs/user-and-group-management/managing-users-and-permissions/organization-access-requests).
 
-### Custom
+## Custom
 
 {% hint style="info" %}
 **Feature availability**  

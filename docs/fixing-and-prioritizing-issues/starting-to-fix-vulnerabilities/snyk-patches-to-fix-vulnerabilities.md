@@ -1,10 +1,10 @@
 # Snyk patches to fix vulnerabilities
 
-#### Getting started with Snyk Open Source: patches
+### Getting started with Snyk Open Source: patches
 
 Sometimes there is no direct upgrade that can address the vulnerability or an upgrade is not possible due to functional reasons \(e.g. it’s a major breaking change\).
 
-For such cases Snyk can help you [protect your code with patches](https://snyk.gitbook.io/user-docs/snyk-cli/secure-your-projects-in-the-long-term/protect-your-code-with-patches). This option will make the minimal modifications to your locally installed`node_modules` files to fix the vulnerability. It will also update the policy to patch this issue when running [snyk protect](https://snyk.io/docs/using-snyk#protect). 
+For such cases Snyk can help you [protect your code with patches](https://snyk.gitbook.io/user-docs/snyk-cli/secure-your-projects-in-the-long-term/protect-your-code-with-patches). This option will make the minimal modifications to your locally installed`node_modules` files to fix the vulnerability. It will also update the policy to patch this issue when running [snyk protect](https://snyk.io/docs/using-snyk#protect).
 
 {% hint style="info" %}
 **Caution**  
@@ -19,7 +19,7 @@ Patches are applicable in the following scenarios:
 
 Patches are available via the source code integrations and the [Snyk CLI](https://support.snyk.io/hc/en-us/articles/360003812578-Our-full-CLI-reference).
 
-### Getting started with Snyk Open Source: the process for creating patches
+## Getting started with Snyk Open Source: the process for creating patches
 
 Patches are created and maintained by Snyk. If the package owner has made code changes to fix the issues, our patch is based on this official fix, and we remove any cosmetic or unrelated changes. If a package owner has not addressed the vulnerability yet, we write a patch from scratch.
 
@@ -27,7 +27,7 @@ Before releasing it, we verify the patch, backport it to older versions, and tes
 
 The patches are a part of [Snyk’s open source vulnerability database](https://github.com/Snyk/vulndb/), so you can check them out before applying them. For example, the patches for the [ms ReDoS vulnerability](https://github.com/Snyk/vulndb/tree/master/data/npm/ms/20151024). We don’t have patches for every case - if you need one that’s missing, let us know.
 
-### How and when are Snyk patches created?
+## How and when are Snyk patches created?
 
 Snyk creates patches for high impact vulnerabilities, a vulnerability is determined as high impact if it is a serious vulnerability in a popular package that affects many users.
 
@@ -43,14 +43,14 @@ All patches are available for download and review by the community and we welcom
 
 For unmaintained packages, we will create a patch and open a pull request to the project for it to be merged.
 
-### How do patches work when using the Snyk CLI?
+## How do patches work when using the Snyk CLI?
 
 If you use the Snyk CLI to fix your vulnerable Node.js project by running `snyk wizard` and choose to apply a patch then following two things will happen:
 
 1. `snyk` will be added as a production dependency of the project
 2. A `postinstall` hook will be added to run `snyk protect` when `npm install` or `yarn install` completes.
 
- This means that whenever the project dependencies are installed with `npm install` or `yarn install` then the hook can trigger `snyk protect` to run and patch the necessary dependencies, on completion you will see a success message in the output:
+   This means that whenever the project dependencies are installed with `npm install` or `yarn install` then the hook can trigger `snyk protect` to run and patch the necessary dependencies, on completion you will see a success message in the output:
 
 ```text
 > snyk protect
@@ -59,7 +59,7 @@ Successfully applied Snyk patches
 
 Since running`snyk protect` is the way to repeatedly apply patches, it needs to be run every time you re-install your dependencies. Common integration points would be in your CI/CD \(build system or deployment system\), and adding it as a post-install step in the `package.json`.
 
-### How do patches work when using the source code integrations?
+## How do patches work when using the source code integrations?
 
 When you choose to use a patch to fix a vulnerability, `snyk` is added as a dependency and a `.snyk` file is created which contains the list of patches to apply.
 

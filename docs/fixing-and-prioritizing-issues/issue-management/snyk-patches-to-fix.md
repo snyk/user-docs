@@ -1,29 +1,57 @@
 # Snyk patches to fix
 
-### How do patches work when using the Snyk CLI?
+## **Snyk patches to fix vulnerabilities**
 
-If you use the Snyk CLI to fix your vulnerable node project by running `snyk wizard` and choose to apply a patch then two things happen:
+### **Getting started with Snyk Open Source patches**
 
-1. Adds Snyk as a dependency of the project \(so that the CLI is fetched with `npm install` \)
-2. Adds a `postinstall` hook to run `snyk protect` when `npm install` runs
+Sometimes there is no direct upgrade that can address the vulnerability or an upgrade is not possible due to functional reasons \(e.g. it’s a major breaking change\).
 
-This means that whenever the project is built with `npm install`, all dependencies are downloaded from their source and placed in the `node_modules` folder, and then `snyk protect` runs to patch the necessary dependencies. If the Heroku buildpack invokes `npm install`, the relevant dependencies are patched. This is easily inspected in the buildpack output; look for Successfully applied Snyk patches.
+For such cases Snyk can help you [protect your code with patches](../../snyk-cli/secure-your-projects-in-the-long-term/protect-your-code-with-patches.md). This option will make the minimal modifications to your locally installed nodemodules files to fix the vulnerability. It will also update the policy to patch this issue when running snyk protect_._
 
-Since running protect is the way to repeatedly apply patches, Snyk protect needs to be run every time you reinstall your modules. Common integration points would be in your CI/build system, or deployment system, and adding it as a post-installation step in the `package.json` file \(which is necessary if you consume this module via npm or yarn\).
+{% hint style="info" %}
+**Caution**  
+Patching is currently supported for **Node.js** projects only.
+{% endhint %}
 
-###  How do patches work when using the source code integrations?
+Patches are applicable in the following scenarios:
 
-When you choose to use a patch to fix a vulnerability, Snyk is added as a dependency, a .snyk file is created which contains the list of patches to apply and the Snyk protect command post-install hook is added, and it is this command that is responsible for applying the patches.
+1. When there is no upgrade available for the direct dependency
+2. When there is no way of upgrading a direct dependency to get to a vulnerability free version of a transitive dependency.
+3. When an upgrade would render the package incompatible with the current codebase.
 
-The .snyk file contains the details of the patch for example
+Patches are available via the source code integrations and the Snyk CLI.
+
+### **How do patches work when using the Snyk CLI?**
+
+If you use the Snyk Protect to fix your vulnerable Node.js project by applying a patch then following things will happen:
+
+1. [`@snyk/protect`](https://www.npmjs.com/package/@snyk/protect) will be added as a production dependency of the project
+2. A postinstall hook will be added to run `snyk-protect` when npm install or yarn install completes.
+
+This means that whenever the project dependencies are installed with npm install or yarn install then the hook can trigger `snyk-protect` to run and patch the necessary dependencies, on completion you will see a success message in the output.
+
+### **Difference between the `@snyk/protect` and `snyk protect`**
+
+Previously, Snyk was adding the whole [Snyk CLI `snyk` package](https://www.npmjs.com/package/snyk) to your project dependencies in order to run `snyk protect` command. We’ve created a new standalone [package `@snyk/protect`](https://github.com/snyk/snyk/tree/master/packages/snyk-protect#snykprotect), that’s much lighter and faster for applying patches.
+
+If you are still using a `snyk` package to apply patches, we recommend to migrate to `@snyk/protect` by either [following its README](https://github.com/snyk/snyk/tree/master/packages/snyk-protect#snykprotect) or running a [migration script](https://www.npmjs.com/package/@snyk/cli-protect-upgrade) with: `npx @snyk/cli-protect-upgrade`.
+
+### **How do patches work when using the source code integrations?**
+
+When you choose to use a patch to fix a vulnerability,`@snyk/protect` is added as a dependency and a `.snyk` file is created which contains the list of patches to apply.
+
+The `.snyk` file contains the details of the patch per individual path to the dependency as it may appear in multiple locations in the `node_modules`, for example:
 
 ```text
-'npm:negotiator:20160616':
-- errorhandler > accepts > negotiator:
-patched: '2017-05-05T12:39:16.961Z'
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.22.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - tap > nyc > istanbul-lib-instrument > babel-types > lodash:
+        patched: '2021-02-17T13:43:51.857Z'
 ```
 
-The patch is essentially an instruction stating which bits of code in the dependency need to be replaced and the code that should be used to replace it.
-
-The Snyk protect command is what replaces the vulnerable code with the patch.
+However, only a single path is required, as `@snyk/protect` will attempt to patch all applicable instances of the vulnerable dependency.
 

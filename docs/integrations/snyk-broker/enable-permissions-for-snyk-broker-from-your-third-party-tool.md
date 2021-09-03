@@ -10,7 +10,7 @@ Assign permissions based on your integration as follows:
 * [**Azure Repos**](https://docs.microsoft.com/en-us/azure/devops/repos/): see [Azure Repos integration](https://snyk.gitbook.io/user-docs/integrations/git-repository-scm-integrations/azure-repos-integration).
 * [**Jira**](https://confluence.atlassian.com/cloud/api-tokens-938839638.html): Snyk needs user credentials with API access. See [Jira integration](https://snyk.gitbook.io/user-docs/integrations/untitled-3/jira). 
 
-### Generate credentials in the target application for Snyk Broker
+## Generate credentials in the target application for Snyk Broker
 
 After generating the credentials for the Broker's target application, configure the environment variables for launching the Broker.
 

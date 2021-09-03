@@ -9,7 +9,7 @@ Snyk Container:
 
 Read more about how we scan images for vulnerabilities in Container image scanning.
 
-### Snyk Container integrations
+## Snyk Container integrations
 
 ![](../../.gitbook/assets/projects.png)
 

@@ -5,7 +5,7 @@ Once an administrator for your Snyk account has installed the Snyk controller on
 * [Snyk collaborators can manually add new Kubernetes projects](https://snyk.gitbook.io/user-docs/snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning/adding-kubernetes-workloads-for-security-scanning)
 * [Kubernetes collaborators can mark workloads from the cluster to be automatically added to Snyk](https://support.snyk.io/hc/en-us/articles/360003947117-Adding-Kubernetes-workloads-for-security-scanning#UUID-38239f46-6777-97c6-61a1-2074ff981f65)
 
-### Prerequisites
+## Prerequisites
 
 You must have an account with Snyk and be onboarded to your organization by an administrator.
 
@@ -16,13 +16,13 @@ In addition, the integration must be configured between Snyk and your Kubernetes
 3. In the Kubernetes section, click **Edit Settings**. 
 4. Scroll to the **Integration ID** entry and check this is set.
 
-### Automatically add, update and remove workloads
+## Automatically add, update and remove workloads
 
 Once you’ve configured the integration between Snyk and your cluster, you can annotate your workloads in order to have them automatically added as projects for testing in Snyk.
 
 {% hint style="info" %}
-The annotated import happens when the **image** itself changes \(rescans the workload due to image change\) or when the **workload details** change \(which creates a new revision of the workload\). Changing the annotation for the workload will not cause a workload change.  
-  
+The annotated import happens when the **image** itself changes \(rescans the workload due to image change\) or when the **workload details** change \(which creates a new revision of the workload\). Changing the annotation for the workload will not cause a workload change.
+
 If the workload is only annotated after it has been scanned by `snyk monitor`--the annotation will not be recognized until a significant change takes place that causes a full rescan. Terminating the `snyk monitor` pod is one way to force a rescan.
 {% endhint %}
 
@@ -66,7 +66,7 @@ You can also annotate a single workload to be added to multiple organizations.
 
 2. Once imported, the project remains in your Snyk organization even if you remove the annotation. To remove the project from Snyk, you should delete the annotation and delete it from the Snyk UI or [with the API](https://snyk.docs.apiary.io/#reference/projects/individual-project/delete-a-project).
 
-### Manually add workloads
+## Manually add workloads
 
 Go to the **Projects page**, click **Add project** and select the **Kubernetes** option.
 

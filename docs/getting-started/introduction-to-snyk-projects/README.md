@@ -11,21 +11,21 @@ Projects appear on the **Projects** menu on the Snyk dashboard:
 
 ![](../../.gitbook/assets/code1.png)
 
-### Target
+## Target
 
 The address of the item to scan \(external to Snyk\), such as a Kubernetes cluster or a GitHub repo. One target may relate to many projects. The structure of the target depends on the origin.
 
-### Origin
+## Origin
 
 The project ecosystem, such as CLI, API, or Kubernetes.
 
-### Targetfile
+## Targetfile
 
 The specific item to scan in a target, such as a pom file in a GitHub repo.
 
 [Snyk Code](https://snyk.gitbook.io/user-docs/snyk-code) scans do not use targetfiles.
 
-### Type
+## Type
 
 The scanning method to use for this project, such as static application security testing \(SAST, for scanning using Snyk Code\) or maven for a maven project using Snyk Open Source\). Part of the configuration for scanning.
 

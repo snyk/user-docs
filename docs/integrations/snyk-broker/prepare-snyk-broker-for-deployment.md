@@ -1,6 +1,6 @@
 # Prepare Snyk Broker for deployment
 
-### Prerequisites
+## Prerequisites
 
 * Client machine system requirements: 1 CPU, 256MB of Ram.
 * Access to the on-prem Git deployment 
@@ -10,11 +10,11 @@
 * A unique UUID token. See [Retrieve a unique Broker client token](https://snyk.gitbook.io/user-docs/integrations/snyk-broker/retrieve-a-unique-broker-client-token).
 * Docker configured to pull images from Docker Hub.
 
-### Prepare hosts for installation
+## Prepare hosts for installation
 
 We recommend configuring at least two separate instances of the Broker client for each integration, either on different hosts or installed via a Kubernetes system. This ensures that you always have at least two instances running for redundancy.
 
-### Configure your network
+## Configure your network
 
 * If you use a proxy server, ensure you configure it, and any firewalls, to allow the Broker client inbound and outbound access:
   * * Outbound from broker to broker.snyk.io on port 443.

@@ -2,7 +2,7 @@
 
 You can natively connect Snyk Code to your local git server. This allows customers who are using a self-hosted git provider such as GitHub Enterprise to find, prioritize and fix potential vulnerabilities in their 1st-party code.
 
-### Code access components
+## Code access components
 
 * **Broker server**: Running on Snyk SaaS backend
 * **Broker client**: A [Docker image](https://hub.docker.com/r/snyk/broker/) deployed in your infrastructure.
@@ -16,9 +16,9 @@ The Broker client provides the Agent with the connection details. The Agent uses
 
 See [Snyk Broker](https://snyk.gitbook.io/user-docs/integrations/snyk-broker/broker-introduction) documentation for more details.
 
-### Setup
+## Setup
 
-#### Prerequisites
+### Prerequisites
 
 Before you begin with the setup process, please make sure to have a server that supports these minimal requirements for running the Broker client and Code agent:
 
@@ -27,7 +27,7 @@ Before you begin with the setup process, please make sure to have a server that 
 * Disk space: 2Gb \(available disk size determines maximum cloneable repository size\)
 * Network: code upload performance will be affected by slow Internet connection
 
-#### Set up the remote connection
+### Set up the remote connection
 
 To use the broker client with code-agent deployment run:
 
@@ -40,7 +40,7 @@ For example:
 docker pull snyk snyk/broker:gitlab
 ```
 
-#### Broker client variables
+### Broker client variables
 
 The following environment variables are mandatory to configure the Broker client.
 
@@ -50,14 +50,14 @@ The following environment variables are mandatory to configure the Broker client
 * **-**here you will need to provide a token for that has permissions to access your scm \(Example:GITLAB\_TOKEN=YOUR\_GITLAB\_TOKEN\)
 * **PORT** - The local port at which the Broker client accepts connections. Default is 7341.
 
-#### Code agent variables
+### Code agent variables
 
 The following environment variables are mandatory to configure the code agent:
 
 * **SNYK\_TOKEN -**  your snyk token
 * **PORT** - the local port, for which the code agent accepts connections, Default is 3000.
 
-### Setting up the network
+## Setting up the network
 
 To run both the broker client and the broker agent, establish a network connection between them. There are different solutions to expose one container connection with tools like Ngrok \(which is also possible here if you want\), but this description focuses on docker bridge networks.
 
@@ -109,7 +109,7 @@ In this example:
 * We set the current container to use the new network we created **--network mySnykBrokerNetwork** 
 * In **GIT\_CLIENT\_URL**  we used the name we defined in the code-agent container as the host here.
 
-### Setup: Broker Client with a whitelist
+## Setup: Broker Client with a whitelist
 
 If you have a running Snyk broker with a custom whitelist \(**accept.json**\), then ensure the following rule is present in the whitelist:
 
@@ -124,7 +124,7 @@ If you have a running Snyk broker with a custom whitelist \(**accept.json**\), t
 
 \(The rule is present by default, so only needed if you override the rule with a custom whitelist.\)
 
-### Enable code snippets
+## Enable code snippets
 
 To enable code snippets, additional rules must be added to **accept.json**.
 

@@ -6,20 +6,20 @@ The Visual Studio extension \(Snyk’s Vulnerability Scanner\) helps you find an
 A Visual Studio Code extension is also available for Snyk Code. See [Visual Studio Code extension](visual-studio-code-extension-for-snyk-code.md).
 {% endhint %}
 
-### Introduction
+## Introduction
 
 Use this documentation to get started with the Visual Studio extension for [Snyk Open Source](https://snyk.io/product/open-source-security-management/).
 
-### Software requirements
+## Software requirements
 
 * Operating system - Windows.
 * Supported versions of Visual Studio: 2015, 2017, 2019. Compatible with Community, Professional and Enterprise.
 
-### Supported languages
+## Supported languages
 
 Currently supported languages for Snyk Open Source are C\#, JavaScript, TypeScript, Java, Go, Ruby, Python, PHP, Scala, Swift, Objective-C. See [Snyk Open Source language and framework support](https://snyk.gitbook.io/user-docs/snyk-open-source/language-and-package-manager-support).
 
-### Install the extension
+## Install the extension
 
 The Snyk extension can be installed directly from IDE. To install it open _Extensions &gt; Manage Extensions_ menu.
 
@@ -39,7 +39,7 @@ Once the tool window appears, wait while Snyk extension downloads the latest Sny
 
 By now you should have the extension installed and the Snyk CLI downloaded. Time to authenticate. The first way is to click "Connect Visual Studio to Snyk" link.
 
-### **Authentication**
+## **Authentication**
 
 Authenticate using _"Connect Visual Studio to Snyk"_ link on Overview page.
 
@@ -65,7 +65,7 @@ Once the authentication has been confirmed, please feel free to close the browse
 
 ![](../../.gitbook/assets/readme_image_2_8.png)
 
-### Run analysis
+## Run analysis
 
 * Thank you for installing Snyk’s Visual Studio Extension! By now it should be fully installed. If you have any questions or you feel something is not as it should be, please don’t hesitate to reach out us.
 * Let’s now see how to use the extension \(continues on the next page\).
@@ -79,7 +79,7 @@ Open your solution and run Snyk scan. Depending on the size of your solution, ti
 
 ![](../../.gitbook/assets/readme_image_3_1_2.png)
 
-### View analysis results
+## View analysis results
 
 You could filter vulnerabilities by name or by severity.
 
@@ -97,7 +97,7 @@ Users could configure Snyk extension by _Project settings_.
 
 ![](../../.gitbook/assets/readme_image_3_3.png)
 
-### Extension configuration
+## Extension configuration
 
 After the plugin is installed, you can set the following configurations for the extension:
 
@@ -109,17 +109,17 @@ After the plugin is installed, you can set the following configurations for the 
 * **Project settings**: Specify any additional Snyk CLI parameters.
 * **Scan all projects**: Auto-detect all projects in the working directory. It's enabled by default.
 
-### Known caveats
+## Known caveats
 
-### Could not detect supported target files
+## Could not detect supported target files
 
 **Solution** Open Visual Studio Options to go to the Project Settings of the Snyk extension and check Scan all projects.
 
 ![](../../.gitbook/assets/readme_image_4_1.png)
 
-### How to
+## How to
 
-### How to find the log files
+## How to find the log files
 
 Run Visual Studio with ‘/log’ parameter and path where do you want to save log file.
 
@@ -133,7 +133,7 @@ As an example, for Visual Studio 2019 it could be
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe /log "C:\Temp\MyVSLog.xml"
 ```
 
-### Build process
+## Build process
 
 Close this repository to local machine:
 
@@ -153,17 +153,17 @@ Run build:
 msbuild -t:Build
 ```
 
-### Contacts
+## Contacts
 
 * If you have any issues please reach out to [support@snyk.io](mailto:support@snyk.io).
 
-### Conclusion
+## Conclusion
 
 Thank you for reaching that far :\)
 
 It either means you’ve successfully run a scan with the Visual Studio extension or you’ve encountered an issue. Either way we would love to hear about it - so go ahead and use the above contacts. We are looking forward to hearing from you!
 
-### Useful links
+## Useful links
 
 * This plugin works with projects written in .NET, Java, JavaScript, and many more languages. [See the full list of languages and package managers Snyk supports](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support)
 * [Bug tracker](https://github.com/snyk/snyk-visual-studio-plugin/issues)

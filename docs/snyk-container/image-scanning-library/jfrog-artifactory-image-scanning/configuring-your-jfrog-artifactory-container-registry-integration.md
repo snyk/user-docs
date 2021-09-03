@@ -2,13 +2,13 @@
 
 Enable integration between one Artifactory instance as a container registry and a Snyk organization to start managing your image security.
 
-### Prerequisites
+## Prerequisites
 
 * You must be an administrator for the organization you're configuring in Snyk.
 * Snyk needs user credentials to integrate with Artifactory and does not support Artifactory when configured for single sign-on \(SSO\).
 * If you're using self-hosted Artifactory, refer to our documentation explaining about [broker configuration](https://snyk.gitbook.io/user-docs/snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries-Snyk-integration-to-self-hosted-container-registries). 
 
-### Configure integration
+## Configure integration
 
 1. Log in to [your Snyk account](https://app.snyk.io/).
 2. Navigate to **Integrations** from the menu bar at the top, find and click the Artifactory option:

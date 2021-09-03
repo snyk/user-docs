@@ -2,7 +2,7 @@
 
 Snyk offers a native plugin for Jenkins that is based on the [Snyk CLI](https://snyk.gitbook.io/user-docs/snyk-cli/guides-for-our-cli/cli-reference), to test and monitor projects for vulnerabilities in the CI/CD.
 
-### Supported languages and repos
+## Supported languages and repos
 
 The Jenkins plugin supports:
 

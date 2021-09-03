@@ -4,7 +4,7 @@ Snyk provides security scanning on projects for vulnerabilities through our CLI 
 
 The following describes how to use Snyk to scan Python projects:
 
-### Features
+## Features
 
 {% hint style="info" %}
 Features might not be available, depending on your subscription plan.
@@ -21,7 +21,7 @@ Features might not be available, depending on your subscription plan.
 PyPI licenses are supported for all Python projects.
 {% endhint %}
 
-### How it works
+## How it works
 
 Once we’ve built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in the dependency tree.
 
@@ -31,11 +31,11 @@ To scan your dependencies, you must ensure you have first installed the relevant
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project.
 
-### Snyk CLI tool for Python projects
+## Snyk CLI tool for Python projects
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project.
 
-### Pip
+## Pip
 
 Snyk requires the full, nested dependency tree in order to run tests. Requirements.txt files only contain the top-level dependencies and not the nested or transitive dependencies. The most efficient way to ensure accuracy is to install the full pip project.
 
@@ -43,13 +43,13 @@ Snyk runs tests against the specific pip installation used for that specific ser
 
 In order to scan the full dependency tree, Snyk analyzes the installed packages to ensure none are missing. This happens even when not explicitly specified in the manifest file.
 
-### Pipenv
+## Pipenv
 
 In order to build the dependency tree, run `pipenv install` as Snyk needs this to create the `pipenv graph` which is then used for the dependency scan to fulfil itself.
 
 Snyk uses the built dependency tree to analyze the `Pipfile`.
 
-### setup.py
+## setup.py
 
 In order to build the dependency tree, Snyk analyzes the `setup.py` file, and detects packages listed in the `install_requires` key.
 
@@ -61,25 +61,25 @@ snyk test --file=setup.py
 
 You can convert `setup.py` to `requirements.txt` by installing the packages into a virtual environment and then running `pip freeze`.
 
-### Poetry
+## Poetry
 
 To find issues in a Python Poetry application Snyk uses `pyproject.toml` and `poetry.lock` files. Note both these files must be present for Snyk to identify Poetry dependencies and test for issues.
 
-### Additional support details
+## Additional support details
 
 ```text
 https://github.com/snyk/snyk-python-plugin/blob/master/lib/types.ts
 ```
 
-### CLI parameters for Python
+## CLI parameters for Python
 
-#### **Prerequisites**
+### **Prerequisites**
 
 * Ensure you've installed the relevant package manager before you begin using the Snyk CLI tool.
 * Ensure you've included the relevant manifest files supported by Snyk before testing.
 * Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81) as well.
 
-#### Parameters
+### Parameters
 
 When scanning your Python project for vulnerabilities, use these options to modify commands:
 
@@ -137,7 +137,7 @@ When scanning your Python project for vulnerabilities, use these options to modi
   </tbody>
 </table>
 
-### Git services for Python projects
+## Git services for Python projects
 
 Python projects can be imported from any of the Git repositories we support.
 
@@ -155,13 +155,13 @@ For example:
 dephell deps convert --from=conda --to=requirements.txt
 ```
 
-### Using different Python versions
+## Using different Python versions
 
 Some Python projects may have dependencies that are only valid using Python 3. By default, Snyk scans with Python 2.
 
 You can adjust the version of Python Snyk uses to scan dependencies, in both the CLI and Git integration.
 
-### Setting Python version in the CLI
+## Setting Python version in the CLI
 
 Add the following parameter to `snyk test` or `snyk monitor`
 
@@ -176,7 +176,7 @@ language-settings:
 python: '3.7.2'
 ```
 
-### Setting Python version in Git projects
+## Setting Python version in Git projects
 
 {% hint style="info" %}
 When testing projects imported from Git, Snyk uses a recent version of either Python 2 or Python 3, for example 2.7.4 or 3.7.4.
@@ -201,7 +201,7 @@ If you prefer to use one organization but require projects to use different Pyth
 
 The`.snyk` file must be in the same directory as the project manifest file.
 
-### Major and minor versions
+## Major and minor versions
 
 On finding a `.snyk` file, Snyk detects the major version specified, and uses this to control whether the project is tested with Python 2 or Python 3. It does not use the exact version specified.
 

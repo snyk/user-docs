@@ -9,12 +9,12 @@ The following describes how to use Snyk to scan your .NET projects:
 Features might not be available, depending on your subscription plan.
 {% endhint %}
 
-|  Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |  |
+| Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |  |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![i\_icon\_nuget.png](../../.gitbook/assets/uuid-b997ca27-61ff-f00b-941c-16bf3aa4a0e0-en.png) | [NuGet](https://www.nuget.org/)  | ✔︎ | ✔︎ | ✔︎ |  |  |
+| ![i\_icon\_nuget.png](../../.gitbook/assets/uuid-b997ca27-61ff-f00b-941c-16bf3aa4a0e0-en.png) | [NuGet](https://www.nuget.org/) | ✔︎ | ✔︎ | ✔︎ |  |  |
 | ![i\_icon\_paket.png](../../.gitbook/assets/uuid-d8e44fe4-c0ea-e3ea-de3b-1e15e4a6b391-en.png) | [Paket](https://fsprojects.github.io/Paket/index.html) | ✔︎ |  | ✔︎ |  |  |
 
-### **How it works**
+## **How it works**
 
 Once we’ve built the tree, we can use our [vulnerability database ](https://snyk.io/vuln)to find vulnerabilities in any of the packages anywhere in the dependency tree.
 
@@ -28,9 +28,9 @@ The way by which Snyk analyzes and builds the tree varies depending on the langu
 * [Snyk CLI tool for .NET projects](https://snyk.gitbook.io/user-docs/snyk-open-source/language-and-package-manager-support/snyk-for-.net)
 * [Git services for .NET projects](https://support.snyk.io/hc/en-us/articles/360004519138-Snyk-for-NET#UUID-69fbe5a6-a24a-d5ad-5d54-cd18ef6786b3)
 
-### Snyk CLI tool for .NET projects
+## Snyk CLI tool for .NET projects
 
-### Dependencies managed by PackageReference
+## Dependencies managed by PackageReference
 
 First, restore dependencies in the .NET project by running `dotnet restore` and make sure **obj/project.assets.json** has been created by the previous command, run `snyk test`. For more information on building projects, check out [Getting started with the CLI](https://snyk.gitbook.io/user-docs/snyk-cli/guides-for-our-cli/getting-started-with-the-cli).
 
@@ -42,7 +42,7 @@ Examples of supported project files that resolve into **project.assets.json** in
 
 **Note:** Project files can be combined with [lock files](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files#locking-dependencies) for a more deterministic **project.assets.json** resolution
 
-### Dependencies managed by packages.config
+## Dependencies managed by packages.config
 
 Whilst there are two approaches for dependencies managed by **packages.config**, the following is the recommended approach as this will yield the most accurate results:
 
@@ -54,21 +54,21 @@ Examples of supported project files that resolve into **packages** include:
 
 **Note:** While you should also be able to run `snyk test` without previously installing dependencies this will result in less accurate vulnerability results
 
-### Dependencies managed by Paket
+## Dependencies managed by Paket
 
 To use Paket a **paket.lock** file is required in combination with a **paket.dependencies** file. Run `snyk test`
 
 Other support includes: **project.json** \(no longer recommended, please refer to [Microsoft documentation](https://docs.microsoft.com/en-us/nuget/archive/project-json)\)
 
-#### Nuget
+### Nuget
 
 Follow the same instructions as [Snyk CLI tool for .NET projects](snyk-for-.net.md)
 
-#### Paket
+### Paket
 
 In order to build the dependency tree, Snyk analyzes the **paket.dependencies** and **paket.lock** files.
 
-#### **CLI parameters for .NET**
+### **CLI parameters for .NET**
 
 This section describes the unique CLI options available when working with .NET-based projects.
 
@@ -85,7 +85,7 @@ This section describes the unique CLI options available when working with .NET-b
   * Ensure you've included the relevant manifest files supported by Snyk before testing.
   * Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81) as well.
 
-#### **Parameters**
+### **Parameters**
 
 <table>
   <thead>
@@ -125,7 +125,7 @@ This section describes the unique CLI options available when working with .NET-b
   </tbody>
 </table>
 
-### Git services for .NET projects
+## Git services for .NET projects
 
 .NET projects can be imported from any of the Git services we support.
 
@@ -133,7 +133,7 @@ Once imported, Snyk analyzes your projects based on their supported manifest fil
 
 ![](../../.gitbook/assets/uuid-c995621c-85c8-c79f-accd-f014e2293921-en.png)
 
-#### **Nuget**
+### **Nuget**
 
 Once you select a project for import, we build the dependency tree based on these manifest files:
 
@@ -148,11 +148,11 @@ Examples of supported project files include:
 
 A .NET project can target multiple target frameworks. Snyk creates a separate dependency tree for each target framework, displaying each as a separate Snyk project from the interface. In this way, it’s easier to understand why a dependency is being used and also to assess the fix strategy.
 
-#### **Paket**
+### **Paket**
 
 No import support currently.
 
-#### **Git settings for .NET**
+### **Git settings for .NET**
 
 From the Snyk UI, you can configure whether Snyk should scan your entire project, including the build dependencies, or if the build dependencies should be skipped.
 
