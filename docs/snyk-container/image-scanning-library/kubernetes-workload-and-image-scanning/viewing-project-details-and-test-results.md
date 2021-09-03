@@ -17,7 +17,7 @@ Expand any item to view:
 
 To view vulnerabilities in detail for any image, including its history, click the image name. The Project details page loads for the selected image: 
 
-![](../../../.gitbook/assets/image%20%2859%29%20%282%29.png)
+![](../../../.gitbook/assets/image%20%2859%29%20%282%29%20%283%29.png)
 
 * To view an aggregate list of the vulnerabilities in all of the images in the workload, along with details about the security posture of the workload configuration, click the workload link. The Project details page loads for the selected image similar to the following example:
 
