@@ -26,3 +26,9 @@ From the relevant project in Google, ensure the you've created a service account
 
 Now, configure the integration: [Configure integration for GCR](https://support.snyk.io/hc/articles/360003916118#UUID-9e0df3f8-0780-b593-573b-5185bdca4a6d).
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

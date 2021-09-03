@@ -71,3 +71,9 @@ We scan CocoaPods projects and examine your Podfile and Podfile.lock files. We t
 
 Swift and Objective-C projects managed by CocoaPods can be imported from any of the Git repositories we support. In order to test your projects, we analyze your Podfile and Podfile.lock files.
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

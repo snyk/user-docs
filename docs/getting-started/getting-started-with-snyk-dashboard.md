@@ -13,3 +13,9 @@ This information includes:
 
 Currently, Snyk only tracks and flags PRs in GitHub, and only for the top most vulnerable projects. If you use another SCM, **Pending tasks** only shows PRs that could be raised, not PRs that have already been raised.
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

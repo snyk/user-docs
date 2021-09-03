@@ -90,3 +90,9 @@ As soon as you’ve added the projects to Snyk, Snyk will test them and begin to
 
 Snyk will now continuously monitor each of those projects for known vulnerabilities. You can add more projects at any time.
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

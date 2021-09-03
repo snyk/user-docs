@@ -115,3 +115,9 @@ You may also have different criteria for display from what will fail the build. 
 Examples are provided in the snyk-filter project on Github [here](https://github.com/snyk-tech-services/snyk-filter). Please refer to the [snyk-filter project on GitHub](https://github.com/snyk-tech-services/snyk-filter) for more information.
 {% endhint %}
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

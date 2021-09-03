@@ -23,3 +23,9 @@ Single sign-on is available with Enterprise and Business plans. See [pricing pla
 Logging in with a different provider than the one that you registered with when you first created your Snyk account will create a separate new Snyk account.
 {% endhint %}
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

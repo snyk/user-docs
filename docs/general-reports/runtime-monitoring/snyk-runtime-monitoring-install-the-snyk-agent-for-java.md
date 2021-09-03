@@ -30,3 +30,9 @@ Add the [Snyk agent](https://static.snyk.io/resources/runtime/agent/java/snyk-ja
    //Example of successful Java agent installation snyk-agent initialisation: startup snyk-agent initialisation: trying: /opt/app-1/agent/snyk-agent.properties snyk-agent initialisation: switching logging to: /opt/app-1/agent/snyk-logs/agent-log-2001-02-03T04:05:06.log
    ```
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

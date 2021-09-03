@@ -31,3 +31,9 @@ This process describes how to set up a resource role in AWS and the necessary po
 
 ![ecrGIF2.gif - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007065977/uuid-4b683f44-0a5e-0d13-f369-f7edecf98ce9-en.gif)
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

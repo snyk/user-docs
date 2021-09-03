@@ -40,3 +40,9 @@ Work with your Customer Success Manager and Snyk Technical Services to prepare f
 
 Read more about the next step, [set up single sign-on](https://support.snyk.io/hc/en-us/articles/360017753618).
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

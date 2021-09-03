@@ -11,3 +11,9 @@ To use the Snyk CLI with versions of sbt 1.2 and older, you will need to first [
 
 We scan Scala projects by examining your build.sbt to compare the specific versions of every direct and deep dependency in your project against our [Maven vulnerability database](https://snyk.io/vuln?type=maven).
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

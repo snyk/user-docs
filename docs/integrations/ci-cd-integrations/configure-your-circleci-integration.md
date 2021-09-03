@@ -25,3 +25,9 @@ Optionally, if the build completes successfully and **MONITOR** is set to True i
 4. Make sure your configuration \(`config.yml`\) file follows version 2.1.
 5. Add the required variables to CircleCI \(e.g. Snyk API token as `API_TOKEN`\)
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

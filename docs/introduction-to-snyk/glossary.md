@@ -272,3 +272,9 @@ A fix type: a problem can be fixed by upgrading a version of a package, or by ap
 
 A way for an app to provide other applications with real-time information. Snyk uses webhooks to check changes in code.
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

@@ -25,3 +25,9 @@ See also
 * [Test dev dependencies](https://support.snyk.io/hc/articles/360003812478#UUID-1070ae3e-5f30-cb4e-6350-a1c3f5c67511)
 * [Test public npm packages before use](https://support.snyk.io/hc/articles/360003812498#UUID-0ab434a8-c1b5-873d-cbf6-7a61a07c4ad8)
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

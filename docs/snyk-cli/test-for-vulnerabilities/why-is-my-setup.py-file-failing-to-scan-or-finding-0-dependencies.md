@@ -18,3 +18,9 @@ Any dependencies in other 'requires' key will not be scanned.
 
 Further support is subject to change in the future.
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

@@ -8,3 +8,9 @@ This shows the line in the Dockerfile which introduces the vulnerability.
 
 There is no need to perform any action.
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

@@ -22,3 +22,9 @@ The sign on process includes these steps:
 
 Read more about the next step, [choose a provisioning option](https://snyk.gitbook.io/user-docs/user-and-group-management/setting-up-sso-for-authentication/choose-a-provisioning-option).
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

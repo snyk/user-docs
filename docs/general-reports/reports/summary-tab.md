@@ -145,3 +145,9 @@ These controls appear at the top of the window:
 
 **Summary filters**—mark the issues to be displayed by selecting the relevant issue type and then click the list arrow again to close it.
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

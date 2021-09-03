@@ -146,3 +146,9 @@ Read more about best practices for using Snyk in your CI/CD or the git integrati
 * [Snyk SCM integration: good practices](https://support.snyk.io/hc/en-us/articles/360018010597)
 * [Snyk CI/CD Integration: good practices](https://snyk.gitbook.io/user-docs/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices)
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

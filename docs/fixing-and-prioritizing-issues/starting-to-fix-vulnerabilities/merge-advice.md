@@ -24,3 +24,9 @@ At the moment, merge advice badges are only available for Yarn and npm, where a 
 
 All Snyk-supported source control integrations are supported for merge advice.
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

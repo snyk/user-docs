@@ -51,3 +51,9 @@ Snyk also has limited support for `:path`, `:git` and `:github` dependencies, bu
 * `:path` dependencies appear in the dependency tree by name
 * `:git` and `:github` dependencies appear in the dependency tree by repository URL and version \(either `:branch`, `:tag` or `:ref`, as defined in the `mix.exs` file\)
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

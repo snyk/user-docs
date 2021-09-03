@@ -26,3 +26,9 @@ Snyk’s extensibility and API enable developers to tune Snyk’s security autom
 * [Snyk Infrastructure as Code \(IaC\)](https://snyk.gitbook.io/user-docs/snyk-infrastructure-as-code): Find and fix insecure configurations in Terraform and Kubernetes code.
 * [Snyk Intel Vulnerability Database](https://snyk.io/product/vulnerability-database/): Comprehensive and actionable open source and container vulnerability data.
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

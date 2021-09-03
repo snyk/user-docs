@@ -42,3 +42,9 @@ For any pipeline project, you can add a Snyk step to your build at any point in 
 
 ![image10.png](../../.gitbook/assets/uuid-810f5c24-fc0d-7996-1fea-6f67b52ee631-en.png)
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

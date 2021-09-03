@@ -25,3 +25,9 @@ GitHub container registry imports are indicated with a unique icon, and you can 
 
 ![](../../../.gitbook/assets/mceclip1-5-.png)
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

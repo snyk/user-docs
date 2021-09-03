@@ -24,3 +24,9 @@ Scan the created json file using the Snyk IaC CLI, replacing with the name of yo
 snyk iac test cdk.out/.json
 ```
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

@@ -196,3 +196,9 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
 
 ![](../../../.gitbook/assets/uuid-26f9c2cd-2755-07d5-61a0-bdb0261d87ab-en.gif)
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

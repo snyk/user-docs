@@ -26,3 +26,9 @@ We do this based on both the nature of the vulnerabilities and the specific issu
 
 This scoring system is not intended to be binary, rather it’s a risk calculation intended to help you with prioritization efforts. This capability is enabled automatically for all customers using the Kubernetes integration and doesn't require any additional configuration.
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

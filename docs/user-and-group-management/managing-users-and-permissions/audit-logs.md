@@ -18,3 +18,9 @@ Use this endpoint to help retroactively triage any unexpected activity, to find 
 The Snyk API is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

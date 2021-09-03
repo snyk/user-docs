@@ -81,3 +81,9 @@ Note: the flag --experimental is not required anymore when testing your Terrafor
 
 If you have found a discrepancy that you cannot explain with the above, please raise a support ticket. 
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

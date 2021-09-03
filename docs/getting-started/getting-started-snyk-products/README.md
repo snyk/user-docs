@@ -10,8 +10,9 @@
    2. Access your Snyk dashboard at [https://app.snyk.io](https://app.snyk.io/):
 
 ![](../../.gitbook/assets/login6.png)
+ 
+<br><br><hr>
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
-

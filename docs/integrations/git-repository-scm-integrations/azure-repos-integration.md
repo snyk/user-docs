@@ -85,3 +85,9 @@ Ensure you have set up your Azure Repos account and your Snyk account.
 **Note**: it is important that a Snyk admin user configure the integration within the UI. Collaborator users won't be able to complete this task and they may get the following error: _“We're having trouble connecting to Azure Repos. Please try again or_ [_contact support_](mailto:support@snyk.io)_."_
 {% endhint %}
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

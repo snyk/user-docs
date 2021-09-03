@@ -97,3 +97,9 @@ Ensure the file is named **workload-events.rego**.
 
 Now you can deploy the Snyk controller, or restart it if it is already running in order to pick up the policy.
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

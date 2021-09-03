@@ -13,3 +13,9 @@ Enable integration between an ACR registry and a Snyk organization, and start ma
 
    Snyk tests the connection values and the page reloads, now displaying ACR integration information. A confirmation message that the details were saved also appears in green at the top of the screen. In addition, if the connection to Azure failed, notification appears under the Connected to ACR section.
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

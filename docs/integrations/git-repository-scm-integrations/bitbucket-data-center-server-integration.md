@@ -94,3 +94,9 @@ Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Int
 >   
 > If you then choose to re-enable this integration at any time, you will need to re-enter your credentials and activate your projects.
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

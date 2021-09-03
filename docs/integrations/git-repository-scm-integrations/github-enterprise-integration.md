@@ -91,3 +91,9 @@ For Snyk to perform the required operation on monitor repositories, such as read
 | Opening fix and upgrade pull requests | For creating fix/upgrade PRs in the monitored repos |  |
 | Snyk tests on pull requests - initial configuration | For adding Snyk's webhooks to the imported repos, so Snyk will be informed whenever pull requests are created or updated and be able to trigger scans | _Admin_ |
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

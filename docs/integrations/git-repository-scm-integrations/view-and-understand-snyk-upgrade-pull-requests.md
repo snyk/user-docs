@@ -25,3 +25,9 @@ Click the Issue link from the table to view all details for the specified vulner
 
 Once you've reviewed the pull request, you can approve it for merge.
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

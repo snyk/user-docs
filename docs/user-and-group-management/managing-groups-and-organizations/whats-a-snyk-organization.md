@@ -8,3 +8,9 @@ You can create an organization, or join one via invitation. If you have more tha
 
 Notifications about newly disclosed vulnerabilities are per organization; you can turn them on and off per organization.
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}

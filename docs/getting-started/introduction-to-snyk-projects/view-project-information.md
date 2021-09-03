@@ -33,3 +33,9 @@ The summary information shows:
   * The time when an up-to-date snapshot of the file was fetched from the SCM and tested.
 * Predefined [project attributes](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/policies/assign-a-policy-to-project-attributes), and any additional [project tag](https://snyk.gitbook.io/user-docs/getting-started/introduction-to-snyk-projects/project-tags) metadata.
 
+ 
+<br><br><hr>
+
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+{% endhint %}
