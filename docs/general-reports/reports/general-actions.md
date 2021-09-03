@@ -2,7 +2,7 @@
 
 This section describes the actions you can perform regardless of the tab you’ve selected.
 
-### Filters
+## Filters
 
 At the organization level, from the top of the Reports area, you can search for and filter specific projects, and you can filter projects by severity and type. Once you've filtered, the settings are retained as you navigate between tabs.
 
@@ -16,7 +16,7 @@ To filter by vulnerability severities and by project types, open the **Filters**
 
 ![](../../.gitbook/assets/mceclip0-29-.png)
 
-### How to navigate and view data for groups and organizations
+## How to navigate and view data for groups and organizations
 
 To view data for a single organization you need to be an administrator for the organization.
 
@@ -26,7 +26,7 @@ To view data for a single organization you need to be an administrator for the o
 2. Navigate to **Reports**.
 3. Data appears only for the organization you selected.
 
-### View data for multiple organizations
+## View data for multiple organizations
 
 {% hint style="info" %}
 **Feature availability**  
@@ -43,7 +43,7 @@ Group administrators can view report data for one, some or all of the organizati
 4. Check or uncheck the organizations you wish to view.
 5. To save the selected organizations as a quick filter, assign a unique name and then click **Save**.
 
-### Sorting
+## Sorting
 
 Columns that allow the data to be sorted have arrows next to their headings. Click the arrows to sort the data in descending order by the relevant category. Click again to switch the order to ascending.
 

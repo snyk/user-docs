@@ -1,6 +1,6 @@
 # npm Teams & npm Enterprise for npms
 
-### **Overview**
+## **Overview**
 
 {% hint style="info" %}
 This guide is relevant for Snyk UI integrations only, the CLI already supports yarn and npm projects with private npm Teams and npm Enterprise registries.
@@ -17,7 +17,7 @@ Once configured, Snyk will use this information to access private dependencies w
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-### JavaScript Language Settings
+## JavaScript Language Settings
 
 1. Go to settings ![](../../.gitbook/assets/cog_icon.png) **&gt; Languages &gt; JavaScript** and either the npm or yarn settings depending on your project types \(yarn shown in screenshots below\) 
 2. If you have not previously connected to npm Teams or npm Enterprise you will be asked to configure an integration first, see [npm Teams & npm Enterprise Registry Settings](npm-teams-and-npm-enterprise-for-npms.md) below 
@@ -31,11 +31,11 @@ This feature is available with Enterprise plans. See [pricing plans](https://sny
 
 ![](../../.gitbook/assets/image%20%2834%29.png)
 
-### npm Teams & npm Enterprise Registry Settings
+## npm Teams & npm Enterprise Registry Settings
 
 You can configure token based authentication for npm Teams and npm Enterprise integrations.
 
-### Getting started
+## Getting started
 
 1. Go to settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Integrations &gt; Package Repositories &gt; npm** 
 2. You should see the **Credentials** screen at the beginning \(see below\)

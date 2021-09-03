@@ -19,11 +19,11 @@ Roles are only for service accounts on the group level, and are only for paid ac
 Service accounts cannot currently be used for GitHub integrations.
 {% endhint %}
 
-### Set up a service account
+## Set up a service account
 
 Generate single or multiple tokens on the organization or group levels to manage your integrations.
 
-#### Prerequisites
+### Prerequisites
 
 **Feature availability**  
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
@@ -32,7 +32,7 @@ To create a group service account you must be a group admin. To create an org se
 
 This process describes all options.
 
-### How to set up a service account
+## How to set up a service account
 
 * Log in to your account and navigate to the relevant group and organization that you want to manage.
 * Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Service accounts** to view existing service accounts and their details.
@@ -69,11 +69,11 @@ This process describes all options.
 
 * Repeat these steps to create multiple tokens for the same or any other organization or group.
 
-### Edit and delete a service account
+## Edit and delete a service account
 
 Administrators can change token names and delete tokens. When you delete a service account, the API token associated with it becomes immediately invalidated. When an account is managed with groups, the organization and the group admins can delete tokens for the organization; only group admins can view and manage tokens on the group level. Deleting a service account is the same as revoking the API token.
 
-### How to edit and delete a service account
+## How to edit and delete a service account
 
 * Log in to your account and navigate to the relevant group and organization that you want to manage.
 

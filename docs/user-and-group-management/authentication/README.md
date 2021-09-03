@@ -1,6 +1,6 @@
 # Authentication
 
-Snyk offers API tokens to enable integrations with third-party developer tools for authentication of your personal account, or alternatively in lieu of credentials to integrate a service account. 
+Snyk offers API tokens to enable integrations with third-party developer tools for authentication of your personal account, or alternatively in lieu of credentials to integrate a service account.
 
 {% hint style="info" %}
 For authentication purposes, the identity providers **do not require access to your repositories**, only your email address.

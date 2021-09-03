@@ -11,7 +11,7 @@ You can query user-initiated activity from up to the past 90 days. If you need t
 
 Use this endpoint to help retroactively triage any unexpected activity, to find out whenever a new user is added so you can assist with onboarding, or even to monitor changes in a user's role in order to get early warning of any unusual behavior.
 
-#### **Support**
+## **Support**
 
 {% hint style="info" %}
 **Feature availability**  
