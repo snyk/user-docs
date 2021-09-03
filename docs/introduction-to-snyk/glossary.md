@@ -8,7 +8,7 @@ The parent image used to construct a container image, usually defined in the FRO
 
 ### Broker
 
-See [Snyk Broker]().
+See [Snyk Broker](https://snyk.gitbook.io/user-docs/integrations/snyk-broker).
 
 ### Build System
 
