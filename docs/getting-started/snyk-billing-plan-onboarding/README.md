@@ -64,7 +64,7 @@ See [Snyk Container](https://snyk.gitbook.io/user-docs/snyk-container) for more 
 
 Our support for Kubernetes allows you to find any vulnerabilities in running workloads. It also allows Snyk to access a lot of information that can help prioritize what to fix first. This can help reduce the noise, leaving you with a clearer picture of what really needs your attention.
 
-![](../../.gitbook/assets/image%20%2859%29%20%282%29%20%283%29%20%281%29.png)
+![](../../.gitbook/assets/image%20%2859%29%20%282%29%20%283%29%20%283%29%20%281%29.png)
 
 See [Kubernetes workload and image scanning](../../snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning/) for more details.
 
