@@ -16,7 +16,7 @@ With Snyk, you can use one of the following identity providers for authenticatio
 
 {% hint style="info" %}
 **Feature availability**  
-Single sign-on is available with Enterprise and Business plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+Single sign-on is available with Enterprise and Business plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 {% hint style="info" %}

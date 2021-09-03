@@ -18,7 +18,7 @@ You must be an administrator of the group in order to update the session length.
 
 {% hint style="info" %}
 **Feature availability**  
-This feature is available to plans that support groups. See [Pricing plans](https://snyk.io/plans/) for more details.
+This feature is available to plans that support groups. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 **Steps**

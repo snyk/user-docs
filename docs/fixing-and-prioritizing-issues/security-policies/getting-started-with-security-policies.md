@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**  
-This feature is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 Security policies allow you to set custom rules to automatically prioritize or de-prioritize specific vulnerabilities.

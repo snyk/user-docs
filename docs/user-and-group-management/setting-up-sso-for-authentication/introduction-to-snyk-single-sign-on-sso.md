@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**  
-This feature is available with Business and Enterprise customers. See [Pricing plans](https://snyk.io/plans/) for more details.
+This feature is available with Business and Enterprise customers. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 You can take advantage of your company's existing identity management systems, and have employees sign in to Snyk using their corporate identity. This makes provisioning users to Snyk easier. It also allows for deeper integration for group and organization membership, role-based access, and more.

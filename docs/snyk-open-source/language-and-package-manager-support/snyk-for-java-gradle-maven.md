@@ -219,7 +219,7 @@ The custom package registry feature currently supports Artifactory with Maven.
 
 {% hint style="info" %}
 **Feature availability**  
-The custom package registry feature is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+The custom package registry feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 Maven analysis can be configured to mirror all requests through a custom package repository, or you can specify additional repositories to use alongside Maven Central.

@@ -8,7 +8,7 @@ As with any Kubernetes deployment, the Snyk controller runs within a single name
 
 {% hint style="info" %}
 **Feature availability**  
-This feature is available with all paid plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+This feature is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 * The Snyk controller is installed using OperatorHub through RedHat OpenShift 4.

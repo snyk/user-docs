@@ -15,6 +15,6 @@ Use this endpoint to help retroactively triage any unexpected activity, to find 
 
 {% hint style="info" %}
 **Feature availability**  
-The Snyk API is available with all paid plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+The Snyk API is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 

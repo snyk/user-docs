@@ -29,7 +29,7 @@ If users who have not been invited use SSO to log in, they will gain access to S
 
 {% hint style="info" %}
 **Feature availability**  
-This feature is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 You can provision user accounts with customized rules.

@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**  
-This feature is currently in beta and is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+This feature is currently in beta and is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 Snyk can integrate to private container registries you host \(currently in open beta\), and help you to better secure container images in those registries.

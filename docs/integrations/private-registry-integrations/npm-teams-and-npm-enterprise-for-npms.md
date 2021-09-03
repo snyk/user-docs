@@ -14,7 +14,7 @@ Once configured, Snyk will use this information to access private dependencies w
 
 {% hint style="info" %}
 **Feature availability**  
-This feature is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 ### JavaScript Language Settings

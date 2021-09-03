@@ -8,7 +8,7 @@ Snyk API docs live at [https://snyk.docs.apiary.io/](https://snyk.docs.apiary.io
 
 {% hint style="info" %}
 **Feature availability**  
-The Snyk API is available with Business and Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+The Snyk API is available with Business and Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 The Dep Graph API requires additional permissions. Please contact support@snyk.io to request access.

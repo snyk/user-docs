@@ -11,7 +11,7 @@ This section covers:
 
 {% hint style="info" %}
 **Feature availability**  
-This feature is available with all paid plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+This feature is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 * An administrator account for your Snyk organization.

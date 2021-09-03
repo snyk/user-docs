@@ -12,7 +12,7 @@ Snyk Broker is an open-source project, hosted at [GitHub](https://github.com/sny
 
 {% hint style="info" %}
 **Feature availability**  
-Snyk Broker is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+Snyk Broker is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 ## Broker benefits

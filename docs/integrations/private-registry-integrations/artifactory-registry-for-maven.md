@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**  
-This feature is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 Snyk can be configured to use custom package registries under specific conditions, allowing insight into dependencies that are not hosted in canonical registries.

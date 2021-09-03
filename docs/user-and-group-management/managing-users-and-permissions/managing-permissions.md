@@ -7,7 +7,7 @@ Click settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Members** to invit
 
 {% hint style="info" %}
 **Feature availability**  
-Our free subscription plan allows you to send up to 200 pending invitations every 7 days. If you have already reached that limit and try to invite additional folks to join you, we'll display an error message for you. Don't worry though! You can send more the next week, or whenever some of the currently pending ones have been accepted. See [Pricing plans](https://snyk.io/plans/) for more details.
+Our free subscription plan allows you to send up to 200 pending invitations every 7 days. If you have already reached that limit and try to invite additional folks to join you, we'll display an error message for you. Don't worry though! You can send more the next week, or whenever some of the currently pending ones have been accepted. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 | **User permissions in an organization** | **Administrator** | **Collaborator** |

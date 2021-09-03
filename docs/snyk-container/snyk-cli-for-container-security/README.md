@@ -66,7 +66,7 @@ You can also access aggregate reports of vulnerabilities across all of your proj
 
 {% hint style="info" %}
 **Feature availability**  
-This aggregate reports feature is available with all paid plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+This aggregate reports feature is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 To monitor an image run:

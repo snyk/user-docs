@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**  
-Basic license policy configuration on a single default license policy is available with Business plans. Full policy creation and management is available with Enterprise plans. See [Pricing plans](https://snyk.io/plans/) for more details.
+Basic license policy configuration on a single default license policy is available with Business plans. Full policy creation and management is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 Get started with Snyk license compliance management, to check compliance for the [open source licenses](https://snyk.io/learn/open-source-licenses/) in your code, as part of your [Snyk Open Source](https://snyk.gitbook.io/user-docs/snyk-open-source/open-source-basics) solution.
