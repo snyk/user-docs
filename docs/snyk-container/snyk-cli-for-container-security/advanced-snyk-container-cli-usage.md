@@ -65,9 +65,7 @@ snyk container --help
 * [Test images with the Snyk Container CLI](https://snyk.gitbook.io/user-docs/snyk-container/snyk-cli-for-container-security)
 * [Understand Snyk Container CLI results](https://snyk.gitbook.io/user-docs/snyk-container/snyk-cli-for-container-security/understanding-snyk-container-cli-results)
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

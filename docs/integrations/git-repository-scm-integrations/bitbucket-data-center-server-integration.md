@@ -5,7 +5,7 @@ Snyk's Bitbucket Data Center / Server integration allows you to continuously per
 > **Feature availability**  
 > This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 
-### Setting up a Bitbucket DC/Server Integration
+## Setting up a Bitbucket DC/Server Integration
 
 > **Important**  
 > Make sure the newly created user has **Admin** permissions to all the repositories you need to monitor with Snyk.
@@ -26,11 +26,11 @@ You can now select the repositories for Snyk to monitor.
 
 ![](../../.gitbook/assets/444%20%282%29%20%284%29%20%284%29%20%284%29%20%285%29%20%284%29.png)
 
-### Bitbucket DC/Server Integration Features
+## Bitbucket DC/Server Integration Features
 
 After the integration is done, you can use the following capabilities:
 
-### **Project level security reports**
+## **Project level security reports**
 
 Snyk produces advanced security reports, allowing you to explore the vulnerabilities found in your repositories, and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
 
@@ -38,7 +38,7 @@ This is an example of a project level security report:
 
 ![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%286%29%20%281%29%20%2814%29.png)
 
-### **Projects monitoring and automatic fix pull requests**
+## **Projects monitoring and automatic fix pull requests**
 
 Snyk frequently scans your projects on either a daily or a weekly basis. When new vulnerabilities are found, notifications are sent both by email and by opening an automated pull requests with fixes to repositories.
 
@@ -52,7 +52,7 @@ Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Int
 
 ![](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%287%29%20%283%29%20%2811%29.png)
 
-### **Pull request tests**
+## **Pull request tests**
 
 Snyk tests any newly created pull request in your repositories for security vulnerabilities, and sends a build check to Bitbucket DC/Server. You can to see whether the pull request introduces new security issues, directly from Bitbucket DC/Server.
 
@@ -68,7 +68,7 @@ To review and adjust the pull request tests settings:
 
 ![](../../.gitbook/assets/999.png)
 
-### Required permissions scope for the Bitbucket DC/Server integration
+## Required permissions scope for the Bitbucket DC/Server integration
 
 Snyk performs all the operations in Bitbucket DC/Server on behalf of the integrated service account.
 
@@ -81,7 +81,7 @@ For Snyk to perform the required operations on monitored repositories \(such as 
 | Opening fix and upgrade pull requests | To create fix PRs in monitored repositories. |  |
 | Snyk tests on pull requests - initial configuration | To add Snyk's webhooks to the imported repos, so Snyk is informed when pull requests are created or updated, and can trigger scans. | **Admin** |
 
-### **Disabling the Bitbucket DC/Server integration**
+## **Disabling the Bitbucket DC/Server integration**
 
 To disable this integration:
 
@@ -94,9 +94,7 @@ Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Int
 >   
 > If you then choose to re-enable this integration at any time, you will need to re-enter your credentials and activate your projects.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

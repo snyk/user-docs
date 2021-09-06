@@ -40,9 +40,7 @@ To get started with Snyk products now, see our [Getting started guides](https://
 * [Get started with Snyk Container](https://snyk.gitbook.io/user-docs/getting-started/getting-started-snyk-products/getting-started-snyk-container).
 * [Get started with Snyk IaC](https://support.snyk.io/hc/en-us/articles/360014938398-Getting-started-with-Snyk-Infrastructure-as-Code-IaC-).
 * 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

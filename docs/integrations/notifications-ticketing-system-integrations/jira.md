@@ -50,9 +50,7 @@ You can also see which Jira issues have been created from the Issues view in you
 
 [Enable permissions for Snyk Broker from your third-party tool](https://snyk.gitbook.io/user-docs/integrations/snyk-broker/enable-permissions-for-snyk-broker-from-your-third-party-tool)
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

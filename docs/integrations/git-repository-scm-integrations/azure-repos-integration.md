@@ -7,7 +7,7 @@ The user generates a unique Azure DevOps personal access token \(PAT\) generated
 3. Snyk communicates directly with your repository for each test it runs to determine exactly what code is currently pushed and what dependencies are being used. Each dependency is tested against Snyk’s vulnerability database to see if it contains any known vulnerabilities.
 4. Based on your configurations, if vulnerabilities are found, Snyk notifies you via email or Slack so that you can take immediate remediation action.
 
-### Add projects to Snyk for Azure Repos
+## Add projects to Snyk for Azure Repos
 
 Snyk tests and monitors Azure Repos that are in any of our supported languages by evaluating root folders and custom file locations.
 
@@ -20,7 +20,7 @@ Snyk tests and monitors Azure Repos that are in any of our supported languages b
 
 ![](../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en.png)
 
-### Adding custom file location
+## Adding custom file location
 
 1. From the Add custom file location dropdown list, select the relevant repo for which you would like to configure a custom path. The repo must first be selected from the Add Projects view, as described in the previous step.
 2. In the text field, enter the relative path in which the manifest file is located, as demonstrated in the image above.
@@ -30,7 +30,7 @@ Snyk tests and monitors Azure Repos that are in any of our supported languages b
 This field is case-sensitive.
 {% endhint %}
 
-### Excluding folders from import
+## Excluding folders from import
 
 This integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages in our Docs.
 
@@ -47,7 +47,7 @@ Once repositories are imported, a confirmation appears in green at the top of th
 
 This integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages in our Docs.
 
-### Configure your integration for Azure Repos
+## Configure your integration for Azure Repos
 
 {% hint style="info" %}
 **Feature availability**  
@@ -56,7 +56,7 @@ Integration with Azure Repos Cloud is available for all of our pricing plans. In
 
 Snyk integrates with Microsoft Azure Repos to enable you to import your projects and monitor the source code for your repositories. Snyk tests the projects you’ve imported for any known security vulnerabilities found in the application’s dependencies, testing at a frequency you control.
 
-### How to configure your integration
+## How to configure your integration
 
 Enable integration between Azure Repos and Snyk, and start managing your vulnerabilities.
 
@@ -85,9 +85,7 @@ Ensure you have set up your Azure Repos account and your Snyk account.
 **Note**: it is important that a Snyk admin user configure the integration within the UI. Collaborator users won't be able to complete this task and they may get the following error: _“We're having trouble connecting to Azure Repos. Please try again or_ [_contact support_](mailto:support@snyk.io)_."_
 {% endhint %}
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

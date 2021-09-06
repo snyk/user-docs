@@ -4,7 +4,7 @@ The **Licenses** area displays all licenses that are currently used in your proj
 
 ![](../../.gitbook/assets/licenses-tab.png)
 
-### **Licenses tab elements**
+## **Licenses tab elements**
 
 The following table describes the different parts of the **Licenses** area:
 
@@ -14,7 +14,7 @@ The following table describes the different parts of the **Licenses** area:
 | Dependencies | The total number of dependent packages with this license in your projects, linked to a side panel that displays the full list of affected dependencies in the same layout as the **Dependencies** area. |
 | Projects | The total number of your projects using this license, linked to a side panel that displays the full list of your affected projects, with the same layout as the **Dependencies** tab. |
 
-### **Licenses tab actions**
+## **Licenses tab actions**
 
 These controls appear at the top of the window:
 
@@ -27,9 +27,7 @@ These controls appear at the top of the window:
 
 * **Export as CSV**—export issue data in CSV file format.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

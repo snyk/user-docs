@@ -47,7 +47,7 @@ Here is the example output of running **snyk fix**:
 * Only successful test results are forwarded into **snyk fix**
 * All unsupported ecosystem test results will be skipped
 
-### Enabling snyk fix
+## Enabling snyk fix
 
 To enable snyk fix during the beta period, click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Snyk Preview**, then enable the snyk fix feature and click **Save changes**.
 
@@ -62,23 +62,23 @@ Additional parameters:
 
 Support is available for the following.
 
-### Python
+## Python
 
 * **Pip** projects with **requirements.txt** files \(or custom named files, for example **prod.txt**\)
 * **Pipenv** projects with **Pipfile & Pipfile.lock** files
 * **Poetry** projects with **pyproject.toml & Poetry.lock** files
 
-### Usage examples
+## Usage examples
 
 * **snyk fix --file=requirements.txt**
 * **snyk fix --file=base.txt --package-manager=pip**
 * **snyk fix --all-projects**
 
-### Remediation notes
+## Remediation notes
 
-### Python \(pip\)
+## Python \(pip\)
 
-### Requirements with \`-r\` directives
+## Requirements with \`-r\` directives
 
 Where the **requirements.txt** looks like this, both **base.txt** and **requirements.txt** will be updated if needed:
 
@@ -99,7 +99,7 @@ If multiple files are tested but are related \(for example one requires the othe
 
 We detect previously fixed files and skip applying fixes to them again.
 
-### Projects which use constraints.txt
+## Projects which use constraints.txt
 
 Constraints files are requirements files that only control which version of a dependency is installed, not whether it is installed or not. Their syntax and contents are nearly identical to Requirements Files. There is one key difference: Including a package in a constraints file does not trigger installation of the package. More info at: [User Guide - pip documentation v21.0.1](https://pip.pypa.io/en/stable/user_guide/#constraints-files)
 
@@ -111,15 +111,15 @@ Applied in the relevant files. All files referenced are found and updated
 
 All transitive dependencies are pinned in **constraints.txt** file if referenced via **-c** directive in requirements manifest file.
 
-### Python \(pipenv\)
+## Python \(pipenv\)
 
 Snyk delegates to \`pipenv\` directly to update dependencies to the specified recommended versions. All \`pipenv\` environment variables and behaviours are preserved as much as possible.
 
-### Python \(poetry\)
+## Python \(poetry\)
 
 Snyk delegates to \`poetry\` directly to update dependencies to the specified recommended versions. All \`poetry\` environment variables and behaviours are preserved as much as possible.
 
-### Troubleshooting
+## Troubleshooting
 
 Run in debug mode to get more information on any errors.
 
@@ -129,9 +129,7 @@ DEBUG=*snyk* snyk fix
 
 This provides a very verbose output that can help diagnose issues or can be sent to Snyk for debugging.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

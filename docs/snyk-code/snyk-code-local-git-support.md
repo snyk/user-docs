@@ -97,7 +97,7 @@ To run the **broker-client:**
 ```text
 docker run -it \
    -p 8001:8000 \
-   -e BROKER_TOKEN=  \
+   -e BROKER_TOKEN= \
    -e GITLAB_TOKEN= \
    -e GITLAB= \
    -e PORT=8000 -e GIT_CLIENT_URL=http://code-agent:3000 --network mySnykBrokerNetwork \
@@ -185,9 +185,7 @@ For Azure Repos:
 After these snippets are added, all content from repository can be accessed through Snyk broker.
 {% endhint %}
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

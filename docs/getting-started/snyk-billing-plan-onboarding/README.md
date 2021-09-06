@@ -88,9 +88,7 @@ Snyk’s Jira integration is yet another way in which Snyk is able to fit into y
 
 See [setting up Snyk with Jira](https://snyk.gitbook.io/user-docs/integrations/untitled-3/jira) for more details and instructions.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

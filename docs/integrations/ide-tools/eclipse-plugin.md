@@ -15,11 +15,11 @@ The Snyk plugin enables you to track and identify issues that risk your applicat
 Both Snyk Broker and on-prem solutions support the Eclipse plugin.
 {% endhint %}
 
-### Supported languages and repos
+## Supported languages and repos
 
 Snyk supports all languages that are supported by both Eclipse and Snyk. Additionally, the Snyk plugin can also be implemented with our Broker and on-prem solutions.
 
-### Installing the Eclipse Snyk plugin
+## Installing the Eclipse Snyk plugin
 
 1. Navigate to the Marketplace from within your running Eclipse instance.
 2. Search for Snyk and click **Install**. 
@@ -30,7 +30,7 @@ Snyk supports all languages that are supported by both Eclipse and Snyk. Additio
 
 ![](../../.gitbook/assets/uuid-928012b7-8e49-fe6f-4965-77c5db026784-en.png)
 
-### Use the Snyk plugin to secure your Eclipse projects
+## Use the Snyk plugin to secure your Eclipse projects
 
 From the Snyk results click ![](../../.gitbook/assets/uuid-aa090aa8-d4fe-eb5d-2505-54a0b1555be9-en.png) whenever you are ready to scan your projects. It shouldn’t take too long for the results to appear—but no worries! You can continue to work as usual in the meantime anyway.
 
@@ -186,9 +186,7 @@ Work with Snyk results from Eclipse as follows:
   </tbody>
 </table>
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

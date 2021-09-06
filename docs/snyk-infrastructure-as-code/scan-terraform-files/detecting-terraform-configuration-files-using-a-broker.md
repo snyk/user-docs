@@ -2,7 +2,7 @@
 
 If you are using a privately hosted Git repository then you can use the Snyk Broker to connect Snyk to it. See the [full broker documentation for setup](../../integrations/snyk-broker/set-up-snyk-broker.md). The following details additional configuration required for the Terraform files.
 
-### Writing the configuration
+## Writing the configuration
 
 The Terraform scanning features need access to the `.tf` files from the repository. This requires specific API permissions. These API permissions are slightly different depending on which source control system you are using.
 
@@ -10,7 +10,7 @@ The Terraform scanning features need access to the `.tf` files from the reposito
 2. Rename it to `accept.json` and add the below rules, appropriate to your SCM, to the **private** array in the JSON file.
 3. Follow the [Configuring the broker](detecting-terraform-configuration-files-using-a-broker.md#configuring-the-broker) instructions.
 
-### GitHub rules
+## GitHub rules
 
 ```text
 {
@@ -27,7 +27,7 @@ The Terraform scanning features need access to the `.tf` files from the reposito
 },
 ```
 
-### Bitbucket rules
+## Bitbucket rules
 
 ```text
 {
@@ -54,7 +54,7 @@ The Terraform scanning features need access to the `.tf` files from the reposito
 },
 ```
 
-### GitLab rules
+## GitLab rules
 
 ```text
 {
@@ -71,7 +71,7 @@ The Terraform scanning features need access to the `.tf` files from the reposito
 },
 ```
 
-### Configuring the broker
+## Configuring the broker
 
 The broker takes the path to the accept.json file \(with the rules above added\) in the ACCEPT environment variable. You can see an example of passing that to the GitHub broker below.
 
@@ -89,9 +89,7 @@ docker run --restart=always \
 
 Note that this gives Snyk the ability to query for any `.tf` files. If you would prefer to be stricter you can alter the paths in the examples above to be more restrictive to certain projects or file layouts.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

@@ -95,9 +95,7 @@ It’s common to use both test and monitor with Snyk. test is great for quick ch
 * [Advanced CLI usage](https://snyk.gitbook.io/user-docs/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)
 * Learn more about [container security](https://snyk.io/learn/container-security/)
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

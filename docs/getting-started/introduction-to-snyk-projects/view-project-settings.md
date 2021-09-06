@@ -12,7 +12,7 @@ You can edit settings including:
 * Update test frequency
 * Retrieve the unique project ID
 
-### Deactivate a project
+## Deactivate a project
 
 Deactivating a project will:
 
@@ -21,16 +21,14 @@ Deactivating a project will:
 * Disable Fix pull request from being opened for newly disclosed vulnerabilities.
 * Disable recurring tests - email alerts about newly disclosed vulnerabilities will be turned off
 
-### Delete a project
+## Delete a project
 
 Deleting a project will:
 
 * Delete the project and all historical snapshot data from Snyk.
 * Remove the webhook from the GitHub repository.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

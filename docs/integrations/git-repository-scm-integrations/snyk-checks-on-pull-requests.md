@@ -6,7 +6,7 @@ By default, Snyk scans every pull request submitted on your monitored repositori
 Administrators and account owners manage settings for Snyk PR tests from our app on both the organization and the project levels, configuring whether the feature is on \(enabled by default\) and under what conditions Snyk should fail your PR checks.
 {% endhint %}
 
-### Viewing check details
+## Viewing check details
 
 If a test fails for any of the lines in your pull request, the check itself appears as failed from the pull request; if all of the tests pass, the check itself appears as successful from the pull request:
 
@@ -33,9 +33,7 @@ When Snyk tests your pull requests, the following are the possible statuses that
 * **Error** - an error occurs when your manifest file is out of sync, Snyk couldn't read the manifest file, or Snyk couldn't find the manifest file
 * **Canceled** - Snyk test can't run because you've reached your monthly test limit
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

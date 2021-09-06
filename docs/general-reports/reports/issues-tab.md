@@ -22,7 +22,7 @@ This view can be seen in the Elements column below, where all the elements of bo
 Data in each of the four tabs is displayed based on the filters you've applied from the top of the Reports area, as well as the group or organization that you're viewing from.
 {% endhint %}
 
-### Issues tab elements
+## Issues tab elements
 
 Just under the **Export** button, click the **View issues ungrouped** or **View issues grouped** link to toggle between views.
 
@@ -208,7 +208,7 @@ Following are the project level details that appear only when viewing issues ung
   </tbody>
 </table>
 
-### Issues tab actions
+## Issues tab actions
 
 These controls appear above the table:
 
@@ -232,9 +232,7 @@ Only 2000 issues can be generated at once. The number of issues you’re current
 
 **View issues ungrouped/View issues grouped**—toggle between views. When viewing “grouped”, each issue appears once only, grouping together all affected projects; when viewing “ungrouped”, each issue appears once per project that is affected by it.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

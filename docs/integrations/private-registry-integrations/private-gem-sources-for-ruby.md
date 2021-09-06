@@ -1,6 +1,6 @@
 # Private Gem Sources for Ruby
 
-### **Overview**
+## **Overview**
 
 {% hint style="info" %}
 **Note**  
@@ -13,7 +13,7 @@ Once configured, Snyk will use this information to access private dependencies w
 
 This guide is relevant for Snyk UI integrations only, the CLI supports Ruby projects with private registries without need for extra configuration
 
-### Configuration
+## Configuration
 
 1. Go to settings ![](../../.gitbook/assets/cog_icon.png) &gt; **General**. 
 2. Find the `RubyGems Bundler environment variables` section \(see below\)
@@ -22,16 +22,14 @@ This guide is relevant for Snyk UI integrations only, the CLI supports Ruby proj
 
 ![](../../.gitbook/assets/94445628-8fdd3980-019f-11eb-816e-2c61c5b99c5c.png)
 
-### Requirements
+## Requirements
 
 * Variable values must be CGI escaped
 * Gem sources must use `https` URLs, for example:  **Supported:** `gem "privvy", git: "https://github.com/testexample/ruby-gem-for-private-source"`  **Not supported:** `gem "privvy", git: "git@github.com:testexample/ruby-gem-for-private-source"`
 * Gem sources must be publicly resolvable \(i.e. not behind a firewall\)
 * Variables must be configured according to the official [Bundler Credentials for Gem Sources documentation](https://bundler.io/v1.16/bundle_config.html#CREDENTIALS-FOR-GEM-SOURCES)
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

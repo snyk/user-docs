@@ -275,9 +275,7 @@ From this you could construct the following Dep Graph JSON object:
 
 This particular package \(`ch.qos.logback:logback-core@1.0.13`\) contains a vulnerability, described in detail in the resulting JSON response object.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

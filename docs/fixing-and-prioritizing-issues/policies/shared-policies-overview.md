@@ -31,9 +31,7 @@ The default policy cannot be deleted; however, the default policy name, descript
 
 To learn more about how to add and remove organizations to the default policy, read more about it [here](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/policies/assign-a-policy-to-organizations).
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

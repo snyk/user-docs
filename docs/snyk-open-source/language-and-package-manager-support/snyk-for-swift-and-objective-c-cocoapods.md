@@ -4,7 +4,7 @@ Snyk offers security scanning to test your projects for vulnerabilities, both th
 
 The following describes how to use Snyk to scan your CocoaPods projects:
 
-### Features
+## Features
 
 {% hint style="info" %}
 Features might not be available, depending on your subscription plan.
@@ -12,9 +12,9 @@ Features might not be available, depending on your subscription plan.
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![i\_icon\_cocoapods.png](../../.gitbook/assets/uuid-6de05da9-de7e-11cc-4316-8459517aaf57-en.png) | Cocoapods | ✔︎ | ✔︎  | ✔︎  |  |  |
+| ![i\_icon\_cocoapods.png](../../.gitbook/assets/uuid-6de05da9-de7e-11cc-4316-8459517aaf57-en.png) | Cocoapods | ✔︎ | ✔︎ | ✔︎ |  |  |
 
-### **How it works**
+## **How it works**
 
 Once we’ve built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in the dependency tree.
 
@@ -28,19 +28,19 @@ The way by which Snyk analyzes and builds the tree varies depending on the langu
 * [analysis with our CLI tool](https://support.snyk.io/hc/en-us/articles/360004701658-Snyk-for-Swift-and-Objective-C-CocoaPods-#UUID-2f6bc912-9512-0d39-56f9-01b0926ef65d)
 * [import from our app](https://support.snyk.io/hc/en-us/articles/360004701658-Snyk-for-Swift-and-Objective-C-CocoaPods-#UUID-3276e078-ac51-90e8-3204-3cbc39b81034)
 
-### Snyk CLI tool for CocoaPods projects
+## Snyk CLI tool for CocoaPods projects
 
 We scan CocoaPods projects and examine your Podfile and Podfile.lock files. We then compare the specific versions of every direct and deep dependency in your project against our vulnerability database in order to build the project dependency tree accordingly.
 
-### **CLI parameters for Swift and Objective-C**
+## **CLI parameters for Swift and Objective-C**
 
-#### **Prerequisites**
+### **Prerequisites**
 
 * Ensure you've installed the relevant package manager before you begin using the Snyk CLI tool.
 * Ensure you've included the relevant manifest files supported by Snyk before testing.
 * Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81) as well.
 
-#### **Parameters**
+### **Parameters**
 
 When working with Swift and Objective-C projects from our CLI, you can prevent testing any lockfiles that are out-of-sync, as follows:
 
@@ -63,7 +63,7 @@ When working with Swift and Objective-C projects from our CLI, you can prevent t
   </tbody>
 </table>
 
-### Git services for CocoaPods projects
+## Git services for CocoaPods projects
 
 We scan CocoaPods projects and examine your Podfile and Podfile.lock files. We then compare the specific versions of every direct and deep dependency in your project against our vulnerability database in order to build the project dependency tree accordingly.
 
@@ -71,9 +71,7 @@ We scan CocoaPods projects and examine your Podfile and Podfile.lock files. We t
 
 Swift and Objective-C projects managed by CocoaPods can be imported from any of the Git repositories we support. In order to test your projects, we analyze your Podfile and Podfile.lock files.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

@@ -1,6 +1,6 @@
 # Creating and editing policies
 
-### **Create a policy**
+## **Create a policy**
 
 1. Click  **Add new policy** from the Policy Manager, and a modal will appear where you can create your policy 
 2. Set a policy name and a description to help you quickly identify a policy **Note**: Policies within the same category cannot have the same name. Policies **cannot** be saved without a policy name applied
@@ -11,13 +11,13 @@
 
 ![](../../.gitbook/assets/screenshot_2020-05-26_at_9.47.26_am.png)
 
-### Edit a policy
+## Edit a policy
 
 1. Click on the policy name of an existing policy in the Policy Manager tab to open the modal and then make your changes
 2. Adjust [organizations](assign-a-policy-to-organizations.md), [attributes](assign-a-policy-to-project-attributes.md) and/or rules as desired
 3. Once you've made your changes in the Policy modal, make sure to click **Submit** in the top right hand corner to save your changes
 
-### **Other Actions:**
+## **Other Actions:**
 
 Clicking on the **...** on the right-hand side of the policies table will provide a drop down that allows you to delete a policy.
 
@@ -27,9 +27,7 @@ Duplicating a policy will copy over the rules of a policy, but not the assigned 
 
 ![](../../.gitbook/assets/screen_shot_2021-08-11_at_2.11.06_pm.png)
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

@@ -12,9 +12,7 @@ Enable integration between Docker Hub and Snyk, and start managing your vulnerab
 
 ![](../../../.gitbook/assets/mceclip0-12-1-%20%281%29.png)
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

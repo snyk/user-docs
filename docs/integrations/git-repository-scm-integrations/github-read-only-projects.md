@@ -2,7 +2,7 @@
 
 Snyk offers the ability to monitor a public GitHub repository without granting any permissions through your own Snyk account.
 
-### How it works:
+## How it works:
 
 This allows you to track the vulnerabilities in a project you are considering using as a dependency, are using as a stand-alone independent tool within your business, or any other public repository where you do not need to actively prevent or fix issues using Snyk's tool.
 
@@ -20,7 +20,7 @@ Unlike projects imported through the Snyk GitHub integration, projects imported/
 
 Projects can be imported in this way both [during onboarding](github-read-only-projects.md), or [post-onboarding to Snyk](github-read-only-projects.md) \(during normal ongoing use\).
 
-### During onboarding to Snyk:
+## During onboarding to Snyk:
 
 During onboarding, selecting GitHub as the source from which to import projects allows you to set up the full GitHub integration \(and take advantage of the vulnerability prevention and fix functionality available\), or opt to proceed without granting Snyk permissions via the link at the bottom.
 
@@ -36,7 +36,7 @@ Enter as many repositories as needed, and click "Import X repository/ies".
 
 ![](../../.gitbook/assets/screenshot_2020-07-03_at_08.01.52.png)
 
-### Post-onboarding
+## Post-onboarding
 
 Read only projects can be imported regardless of whether full GitHub integration is set up, as they do not rely on your GitHub permissions to do so.
 
@@ -54,9 +54,7 @@ Enter as many repositories as needed, and click "Import X repository/ies".
 
 ![](../../.gitbook/assets/screenshot_2020-07-03_at_08.01.52.png)
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

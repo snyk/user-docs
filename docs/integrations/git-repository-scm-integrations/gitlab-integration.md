@@ -82,9 +82,7 @@ The project will be set to inactive and you’ll no longer get alerts, pull requ
 
 You can restart watching at any time; however, re-initiating GitLab projects for monitoring would require setting up the integration again.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

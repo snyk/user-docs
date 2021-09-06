@@ -8,9 +8,7 @@ The results page appears similar to the following:
 
 ![](../../.gitbook/assets/uuid-ab412f8f-32f3-ab39-4615-1a45f42e7d0f-en.png)
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

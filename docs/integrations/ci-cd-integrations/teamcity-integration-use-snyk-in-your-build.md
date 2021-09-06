@@ -6,7 +6,7 @@ We recommend running a build with the Snyk Security step before deployment, to e
 
 For additional information with TeamCity and its features, refer to their documentation.
 
-### How to configure your build with a Snyk step
+## How to configure your build with a Snyk step
 
 * Add the step to a new or existing project:
   * For new projects, after configuring the Git repo from which to create the build, activate the auto-detect feature to automatically identify relevant steps for your project build.
@@ -32,9 +32,7 @@ For additional information with TeamCity and its features, refer to their docume
 
 * From the top of the report, click **View on Snyk.io** to view the snapshot and vulnerability information directly from our app.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

@@ -12,7 +12,7 @@ In order to turn on the Azure Function Apps integration you'll need to:
 2. Add your Azure account credentials to Snyk
 3. Select the projects you want to monitor and click "**Add to Snyk**"
 
-### **Connect Snyk to Azure Functions**
+## **Connect Snyk to Azure Functions**
 
 In order for Snyk to be able to monitor your deployed Azure Function apps, you'll first need to connect Snyk to your Azure account. You can do this by navigating to the [Integrations page](https://app.snyk.io/integrations), locating "Azure and clicking on "**Connect to Azure Functions**":
 
@@ -24,7 +24,7 @@ This will take you to a page where you'll be prompted to enter your Azure servic
 
 Instructions for how to generate and locate your Azure service principal credentials are below.
 
-### **Generate your Azure service principal**
+## **Generate your Azure service principal**
 
 To give Snyk access to your Azure account, you'll need a valid service principal.
 
@@ -56,7 +56,7 @@ More information on creating a service principal for Azure can be found in Azure
 
 [CLI](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli) , [Portal](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal)
 
-### **Azure Functions: check your connection status**
+## **Azure Functions: check your connection status**
 
 At any time after you've entered your Azure service principal, you can check on the connection status in one of two places.
 
@@ -72,7 +72,7 @@ If you are unable to connect, please re-enter your account credentials to verify
 
 ![](../../.gitbook/assets/image%20%2827%29.png)
 
-### **Disable the Azure Functions integration**
+## **Disable the Azure Functions integration**
 
 If you decide to disable this integration for any reason, you can accomplish this from the Integrations page in your Settings.
 
@@ -84,7 +84,7 @@ If you choose to disconnect, your credentials will be removed from Snyk and any 
 
 If you choose to re-enable this integration at any time, you need to re-enter your credentials and activate your projects.
 
-### **Add Azure Functions to Snyk**
+## **Add Azure Functions to Snyk**
 
 Once you've successfully connected Snyk to your Azure account, you'll be able to select Azure functions that you would like Snyk to monitor. You can do this either using the **"Add projects"** button on the integrations page, or directly from the Azure Functions integration settings page.
 
@@ -104,9 +104,7 @@ Snyk will now continuously monitor each of those functions for known vulnerabili
 **NOTE**  
 for Node.js and .Net, dev dependencies will be ignored.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

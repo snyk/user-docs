@@ -8,7 +8,7 @@ cd ~/projects/myproj/
 
 `snyk test` takes stock of all the local dependencies and queries the Snyk service for known vulnerabilities. It displays the found issues along with additional information. For Node.js, Ruby, Java projects, it also suggests remediation steps.
 
-### How it works
+## How it works
 
 Snyk analyzes only your manifest files, based on which we then create a hierarchical tree that represents the structure represented in the manifest file, both its direct and indirect \(transitive\) dependencies and the points at which the different packages are introduced. Once we’ve built the tree, we can use our vulnerability database to find vulnerabilities in any of the packages anywhere in the dependency tree. The entire project can be analyzed more easily, and you can quickly identify the point at which any given vulnerable package was actually introduced - then fixing it from its source.
 
@@ -62,7 +62,7 @@ If your manifest files are from a supported language but have a custom name you 
 $ snyk test --file=req.txt --package-manager=pip
 ```
 
-### **Test dev dependencies**
+## **Test dev dependencies**
 
 Many package managers allow calling out separately dependencies which are to be used only in a development/test context \(i.e don't get eventually shipped to production\). By default Snyk does not scan these dependencies. If you want your dev dependencies to be included in the scan use the dev flag:
 
@@ -75,9 +75,7 @@ $ snyk test --dev
 Additional and more specific details are provided per language, in [Language support](https://support.snyk.io/hc/en-us/categories/360000456257-Language-package-manager-support).
 {% endhint %}
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

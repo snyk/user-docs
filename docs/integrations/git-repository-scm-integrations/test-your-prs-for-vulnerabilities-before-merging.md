@@ -57,9 +57,7 @@ We recommend that you set Snyk status checks to be mandatory for merging pull re
 8. Click **Update settings** to update settings and apply them to all future projects.
 9. Settings are saved. Every time any of your collaborators submit pull requests for this specific manifest file, checks are run based on these settings, combined with the settings you've configured on the side of your Git repository.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

@@ -13,9 +13,7 @@ Most of the vulnerabilities in our database originate from one of these sources:
 
 For every issue deemed to be a real vulnerability, we assign the right CVSS \(severity\) score and package version specification, create an advisory, and make it available in the product.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

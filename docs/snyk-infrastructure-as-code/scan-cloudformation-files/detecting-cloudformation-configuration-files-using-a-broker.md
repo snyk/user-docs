@@ -6,7 +6,7 @@ This document describes the additional configuration required for the CloudForma
 
 Part of these configurations will be the same for Kubernetes. If they have already been added for Kubernetes, then there's no need to add them again.
 
-### Writing the configuration
+## Writing the configuration
 
 The CloudFormation scanning features require access to the YAML or JSON files in the repository. This requires specific API permissions. These API permissions are slightly different depending on the source control system.
 
@@ -14,7 +14,7 @@ The CloudFormation scanning features require access to the YAML or JSON files in
 2. Rename it `accept.json` and add the rules below for the appropriate SCM to the **private** array in the JSON file.
 3. Follow the [Configuring the broker](detecting-cloudformation-configuration-files-using-a-broker.md) instructions.
 
-### GitHub & GitHub Enterprise rules
+## GitHub & GitHub Enterprise rules
 
 ```text
 {
@@ -55,7 +55,7 @@ The CloudFormation scanning features require access to the YAML or JSON files in
 },
 ```
 
-### Bitbucket rules
+## Bitbucket rules
 
 ```text
 {
@@ -126,7 +126,7 @@ The CloudFormation scanning features require access to the YAML or JSON files in
 },
 ```
 
-### GitLab rules
+## GitLab rules
 
 ```text
 {
@@ -167,7 +167,7 @@ The CloudFormation scanning features require access to the YAML or JSON files in
 },
 ```
 
-### Configuring the broker
+## Configuring the broker
 
 The broker takes the path to the accept.json file \(with the rules above added\) in the ACCEPT environment variable. The example of passing that to the GitHub broker is displayed below.
 
@@ -185,9 +185,7 @@ docker run --restart=always \
 
 **Note**: This gives Snyk the ability to query for any `.yaml`, `.yml`, or `.json` files. If you would prefer to be stricter you can alter the paths in the examples above to be more restrictive to certain projects or file layouts.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

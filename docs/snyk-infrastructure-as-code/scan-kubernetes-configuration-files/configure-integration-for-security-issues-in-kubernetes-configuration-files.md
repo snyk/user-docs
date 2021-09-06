@@ -2,11 +2,11 @@
 
 Snyk tests and monitors Kubernetes configurations stored in your source code repositories and provides information, tips, and tricks to better secure a Kubernetes environment--catching misconfigurations before they are pushed to production as well as providing fixes for vulnerabilities.
 
-### Supported Git repositories and file formats
+## Supported Git repositories and file formats
 
 Snyk currently scans your Kubernetes configuration files in JSON and YAML format when imported from your integrated Git repository.
 
-### Configure Snyk to scan Kubernetes configuration files
+## Configure Snyk to scan Kubernetes configuration files
 
 **Prerequisites**
 
@@ -33,9 +33,7 @@ From here:
 
 The number of tests per product are based on account plans. For information on plans and test limits, [view our plans](https://snyk.io/plans/).
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

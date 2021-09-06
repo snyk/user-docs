@@ -2,7 +2,7 @@
 
 An action is what you want to happen when the conditions in the policy rule are matched. These are the actions that can currently be applied:
 
-**Customize severity** 
+**Customize severity**
 
 | Action | Definitions |
 | :--- | :--- |
@@ -13,9 +13,7 @@ An action is what you want to happen when the conditions in the policy rule are 
 You cannot stack multiple actions in the same rule. To have multiple actions with a rule, create a new rule block with the same conditions, and specify a different action.
 {% endhint %}
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

@@ -5,7 +5,7 @@ Snyk's Bitbucket Cloud integration allows you to continuously perform security s
 > **Feature availability**  
 > This feature is available for all plans. See [pricing plans](https://snyk.io/plans/) for more details.
 
-### Setting up a Bitbucket Cloud Integration
+## Setting up a Bitbucket Cloud Integration
 
 > Make sure the newly created user has **Admin** permissions to all the repositories you need to monitor with Snyk.
 
@@ -13,7 +13,7 @@ Snyk's Bitbucket Cloud integration allows you to continuously perform security s
 2. In Snyk, go to the **Integrations** page and click on **Bitbucket Cloud** card.
 3. Access your Bitbucket Cloud account and create a unique App Password for Snyk with the following permissions: **Account: Email & Read** **Workspace membership: Read Projects: Read Repositories: Read & Write Pull requests: Read & Write Webhooks: Read & Write** Follow [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html) to learn how to do it. 
 4. Enter the username and the App Password for the service account you created:
-5. Click **Save**.   
+5. Click **Save**.  
    Snyk connects to your Bitbucket Cloud account. When the connection succeeds, the following indications appear:
 
    ![](../../.gitbook/assets/settings%20%281%29.png)  
@@ -26,11 +26,11 @@ Snyk's Bitbucket Cloud integration allows you to continuously perform security s
 
 ![](../../.gitbook/assets/444%20%282%29%20%284%29%20%284%29%20%284%29%20%285%29%20%284%29%20%287%29.png)
 
-### Bitbucket Cloud Integration Features
+## Bitbucket Cloud Integration Features
 
 After the integration is done, you can use the following capabilities:
 
-### Project level security reports
+## Project level security reports
 
 Snyk produces advanced security reports, allowing you to explore the vulnerabilities found in your repositories, and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
 
@@ -38,7 +38,7 @@ This is an example of a project level security report:
 
 ![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%286%29%20%281%29%20%282%29.png)
 
-### Projects monitoring and automatic fix pull requests
+## Projects monitoring and automatic fix pull requests
 
 Snyk frequently scans your projects on either a daily or a weekly basis. When new vulnerabilities are found, it notifies you by email and by opening an automated pull requests with fixes to repositories.
 
@@ -52,7 +52,7 @@ Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Int
 
 ![](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%287%29%20%283%29%20%282%29.png)
 
-### Pull request tests
+## Pull request tests
 
 Snyk tests any newly created pull request in your repositories for security vulnerabilities, and sends a build check to Bitbucket Cloud. You can to see whether the pull request introduces new security issues, directly from Bitbucket Cloud.
 
@@ -68,7 +68,7 @@ To review and adjust the pull request tests settings,
 
 ![](../../.gitbook/assets/999.png)
 
-### Required permissions scope for the Bitbucket Cloud integration
+## Required permissions scope for the Bitbucket Cloud integration
 
 All the operations, triggered manually or automatically, are performed for a Bitbucket Cloud service account that has its token \(App Password\) is configured in the integrations settings. This shows the required access scopes for the configured token:
 
@@ -81,7 +81,7 @@ All the operations, triggered manually or automatically, are performed for a Bit
 | Importing new projects to Snyk | For presenting a list of all the available repos in the Bitbucket in the "Add Projects" screen \(import popup\) | _Account \(read\)_ _Workspace membership \(read\)_ _Projects \(read\)_ |
 | Snyk tests on pull requests - initial configuration | For adding Snyk's webhooks to the imported repos, so Snyk will be informed whenever pull requests are created or updated and be able to trigger scans. | _webhooks \(read & write\)_ |
 
-### Required permissions scope for repositories <a id="h_01EEFVJ14P8B3DEPEFFVYVDWZJ"></a>
+## Required permissions scope for repositories <a id="h_01EEFVJ14P8B3DEPEFFVYVDWZJ"></a>
 
 For Snyk to perform the required operations on monitored repositories \(such as reading manifest files on a frequent basis and opening fix or upgrade PRs\), the integrated Bitbucket Cloud service account needs **Admin** permissions on the imported repositories:
 
@@ -92,7 +92,7 @@ For Snyk to perform the required operations on monitored repositories \(such as 
 | Opening fix and upgrade pull requests | To create fix PRs in monitored repositories. |  |
 | Snyk tests on pull requests - initial configuration | To add Snyk's webhooks to the imported repos, so Snyk is informed when pull requests are created or updated, and can trigger scans. | **Admin** |
 
-### 1st Party Integration \(Connect App\)
+## 1st Party Integration \(Connect App\)
 
 The Connect App integration is a layer on top of the regular App Password integration, which allows your developers to consume Snyk from the Bitbucket interface.
 
@@ -102,13 +102,13 @@ By adding the Connect App to your Bitbucket workspaces, your workspaces members 
 
 ![](../../.gitbook/assets/mceclip1-13-.png)
 
-### Installing the Connect App
+## Installing the Connect App
 
 To install the app, navigate to the **Security** tab in one of your workspace's repos in Bitbucket Cloud, then click **Try now**:
 
 ![](../../.gitbook/assets/mceclip2-3-.png)
 
-### Uninstalling the Connect App
+## Uninstalling the Connect App
 
 To remove the Connect App from your workspace in Bitbucket Cloud:
 
@@ -116,7 +116,7 @@ To remove the Connect App from your workspace in Bitbucket Cloud:
 2. Find **Snyk Security for Bitbucket Cloud** in the installed applications list.
 3. Click **remove**. 
 
-### Associating the Connect App to a different Snyk account / organization
+## Associating the Connect App to a different Snyk account / organization
 
 The Connect App is associated to a specific Snyk account and organization, as defined during the app onboarding process.
 
@@ -124,7 +124,7 @@ To change these settings later, navigate to the workspace settings and select **
 
 ![](../../.gitbook/assets/mceclip0-23-.png)
 
-### Disabling the Bitbucket Cloud integration
+## Disabling the Bitbucket Cloud integration
 
 To disable this integration:
 
@@ -138,9 +138,7 @@ To disable this integration:
 > Your credentials are removed from Snyk and any integration-specific projects Snyk is monitoring are deactivated on Snyk.  
 > If you then choose to re-enable this integration at any time, you will need to re-enter your credentials and activate your projects.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

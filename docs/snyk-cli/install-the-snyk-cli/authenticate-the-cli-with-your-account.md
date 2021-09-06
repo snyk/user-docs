@@ -7,7 +7,7 @@ You can authenticate:
 * Through your browser
 * Using your API token
 
-### Authenticate through your browser
+## Authenticate through your browser
 
 1. Run `snyk auth` from the CLI.
 
@@ -19,7 +19,7 @@ You can authenticate:
 
 ![](../../.gitbook/assets/auth.gif)
 
-### Authenticate using your API token
+## Authenticate using your API token
 
 1. Visit [your Snyk account](https://app.snyk.io/account) \(**Account Settings &gt; API Token** section\).
 2. In the **KEY** field, click **click to show**, then select and copy your API token:  
@@ -27,9 +27,7 @@ You can authenticate:
 
 ![](../../.gitbook/assets/image%20%2811%29.png)
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

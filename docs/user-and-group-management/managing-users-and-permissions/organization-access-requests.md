@@ -10,7 +10,7 @@ The most common routes for a user to reach the address of an org they're not a m
 
 **💡 If you find yourself having to request access to an org you have access too, it may be because you've logged in with a different authentication method than you usually use.** [**Find out more**](https://support.snyk.io/hc/en-us/articles/360001649558-Unable-to-display-this-organization)
 
-### How it works:
+## How it works:
 
 Previously, when a user browses to any address for a Snyk organization, they are presented with a page informing them that they "either do not have access or the organization does not exist".
 
@@ -24,15 +24,13 @@ Once a user requests access, all administrators of the org will be notified by e
 
 Once the requester accepts the invitation \(sent to them by email\), they will have access to the org.
 
-### Settings
+## Settings
 
 This can be enabled/disabled at either the Snyk organization level, or for an entire group.
 
 Go to the **Members** page in either the org or group settings.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

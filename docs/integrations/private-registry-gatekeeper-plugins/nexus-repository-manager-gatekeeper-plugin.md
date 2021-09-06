@@ -1,6 +1,6 @@
 # Nexus Repository Manager Gatekeeper plugin
 
-### **Nexus Gatekeeper plugin: overview**
+## **Nexus Gatekeeper plugin: overview**
 
 {% hint style="info" %}
 **Feature availability**  
@@ -30,11 +30,11 @@ Use the Snyk capability with your Nexus Repository Manager to test your artifact
 4. Based on the severity thresholds configured for the Snyk Security Configuration capability, the package is blocked.
 5. The error appears in the developer’s CLI \(including a link to the error with full details\) and from the Nexus interface for administrators, detailing the number of known issues for vulnerabilities and licenses.
 
-### Administrators’ guide for the Snyk Nexus Gatekeeper plugin
+## Administrators’ guide for the Snyk Nexus Gatekeeper plugin
 
 To set up and configure the plugin, start scanning and managing your organization's artifacts for vulnerabilities, check out this information:
 
-#### Prerequisites:
+### Prerequisites:
 
 * You must sign up for an Enterprise account with Snyk before you begin.
 * You must be an administrator or owner of the Snyk account.
@@ -42,13 +42,13 @@ To set up and configure the plugin, start scanning and managing your organizatio
   * Nexus Repository Manager OSS
   * Nexus Repository Manager Pro v3.15.0 or greater
 
-### Install the plugin on your Nexus server
+## Install the plugin on your Nexus server
 
 1. Download the bundle from [our GitHub repository](https://github.com/snyk/nexus-snyk-security-plugin/releases).
 2. Copy the `nexus-snyk-security-plugin.kar` file from the bundle onto your Nexus server at`/deploy`.
 3. From the Nexus interface, enable the Snyk Security Configuration from the Capabilities area. For more information about this, see the [Sonatype documentation](https://help.sonatype.com/repomanager2/configuration/accessing-and-configuring-capabilities).
 
-### **Configure the capability**
+## **Configure the capability**
 
 1. Go to your Snyk account to copy and save your personal API token or your service account token, and an **Organization ID**. Both a token and an organization ID are mandatory and must be configured in order for Snyk to authenticate your account. Because this plugin does not import any data to Snyk, you can use any of your organization IDs.
 2. From your Nexus instance, navigate to the Capabilities section and select to edit the **Snyk Security Configuration** from the list.
@@ -63,7 +63,7 @@ To set up and configure the plugin, start scanning and managing your organizatio
 
 ![](../../.gitbook/assets/uuid-9745b82a-ed7e-bce0-75dd-0070514f274d-en.png)
 
-### Track vulnerabilities in your team's artifacts
+## Track vulnerabilities in your team's artifacts
 
 1. Once installed, every time a developer requests to download an artifact, the following occurs:
    * Based on the severity thresholds that you configured, the download is blocked.
@@ -84,7 +84,7 @@ Work with Snyk properties from Nexus as follows:
 | issues\_url | This is the URL to our database and explanation of the vulnerability, including specific details about vulnerable versions, available upgrades and Snyk patches as well. |
 | issues\_vulnerabilities | Regardless of the thresholds configured, this row displays vulnerability summary scan results. |
 
-#### Troubleshooting
+### Troubleshooting
 
 If your connection to Snyk is unsuccessful, try checking the following points or contact us at snyk@support.io \(`<`[`snyk@support.io`](mailto:snyk@support.io)`>`\):
 
@@ -92,7 +92,7 @@ If your connection to Snyk is unsuccessful, try checking the following points or
 * Ensure you’ve entered the API URL correctly for the configuration of the capability.
 * For on-prem and Broker configurations, ensure the Snyk service is running.
 
-### **Use Snyk in your build**
+## **Use Snyk in your build**
 
 Snyk continuously runs in the background on the Nexus instance, and whenever any team member requests a download, Snyk automatically scans the artifact to evaluate vulnerabilities and license issues and blocks the request based on your administrator’s configurations.
 
@@ -102,9 +102,7 @@ When the scan ends, you get an error message if the download was blocked, with a
 
 Click the link to view details, itemizing the number of vulnerabilities found in the artifact, and their severities.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

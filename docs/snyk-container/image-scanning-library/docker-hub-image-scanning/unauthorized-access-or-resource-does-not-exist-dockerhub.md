@@ -8,9 +8,7 @@
 
 ![](../../../.gitbook/assets/screen-shot-2021-04-28-at-2.24.55-am.png)
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

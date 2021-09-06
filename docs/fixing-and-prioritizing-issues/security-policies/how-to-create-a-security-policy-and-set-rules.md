@@ -18,9 +18,7 @@ To delete or duplicate a rule, click the **…** on the right hand side of each 
 The order of your rules sets the precedence; if there is a conflict, the rule closest to the top supersedes any subsequent rules.
 {% endhint %}
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

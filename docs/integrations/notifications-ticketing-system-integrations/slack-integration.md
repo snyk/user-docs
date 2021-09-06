@@ -20,9 +20,7 @@ Once you have generated your Slack Webhook URL, go to your 'Manage organizationâ
 
 ![](../../.gitbook/assets/image%20%2824%29.png)
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

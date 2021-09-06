@@ -16,9 +16,7 @@ When working with Snyk from within any third-party tool, Snyk first requires aut
 Additional instructions can be found in our different [Integration](https://support.snyk.io/hc/articles/360004002498#UUID-98f9378c-bc0f-d01b-8d81-dbd38d69a915) articles.
 {% endhint %}
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

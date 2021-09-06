@@ -17,7 +17,7 @@ The dashboard appears similar to the following image:
 
 To quickly view additional data for a specific period in time, hover over the relevant graph and check out the pop-up.
 
-### **Summary tab elements**
+## **Summary tab elements**
 
 The following table describes the different parts of the **Summary** area:
 
@@ -137,7 +137,7 @@ For the **Activity** area, the following are the parameters and their descriptio
   </tbody>
 </table>
 
-### **Summary tab actions**
+## **Summary tab actions**
 
 These controls appear at the top of the window:
 
@@ -145,9 +145,7 @@ These controls appear at the top of the window:
 
 **Summary filters**—mark the issues to be displayed by selecting the relevant issue type and then click the list arrow again to close it.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

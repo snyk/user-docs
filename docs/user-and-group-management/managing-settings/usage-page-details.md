@@ -18,7 +18,7 @@ Test limits vary for Snyk products and plans. See the [plans page](https://snyk.
 See [What counts as a test?](https://support.snyk.io/hc/en-us/articles/360000925418-What-counts-as-a-test-) for details of how Snyk counts tests.
 {% endhint %}
 
-### View contributing developers
+## View contributing developers
 
 {% hint style="info" %}
 Currently, the integrations for which we have developer counts are GitHub, GitHub Enterprise, GitLab and the Snyk CLI.
@@ -40,7 +40,7 @@ The **total unique contributors across all integrations** count shows the number
 
 The **Breakdown by integration** section shows the number of contributors, orgs, and repos in that integration.
 
-### Contributor emails
+## Contributor emails
 
 Each contributor is counted by the **author** email field, which is set within the local git configuration in the developer’s machine.
 
@@ -48,17 +48,17 @@ Each contributor is counted by the **author** email field, which is set within t
 
 Snyk does not store any actual git user emails in its database but instead uses the _hashes_ of the emails for counting contributing developers. Snyk uses the hash of the local git author email, that is, the email that is set locally in the user's git config, whether for one of the Source Control Management integrations \(such as GitHub\), or from the Snyk CLI.
 
-### View projects
+## View projects
 
 The **Projects** section shows test usage settings for your projects:
 
-### Bulk actions
+## Bulk actions
 
 For **Bulk actions**, select relevant projects, then select to **Delete**, **Activate** or **Deactivate** the selected projects:
 
 ![](../../.gitbook/assets/usage-projects-bulk-actions.png)
 
-### Set test frequency
+## Set test frequency
 
 You can set the frequency of testing for each project.
 
@@ -68,9 +68,7 @@ For each entry, you can select the frequency of testing for that project \(never
 
 Click **Deactivate** to never test, and also remove webhooks and stop showing the project’s results in reporting.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

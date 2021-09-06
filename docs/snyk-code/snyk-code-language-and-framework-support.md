@@ -7,7 +7,7 @@ Snyk Code currently supports:
 * \*\*\*\*[**Python**](../snyk-open-source/language-and-package-manager-support/snyk-for-python.md)\*\*\*\*
 * **C\#** \(see section below\)
 
-### Language type and framework support
+## Language type and framework support
 
 Snyk Code can work with a variety of relevant language types:
 
@@ -17,7 +17,7 @@ Snyk Code can work with a variety of relevant language types:
 
 Contact Snyk for a full list of support for frameworks, libraries and vulnerability types
 
-### Supported Extensions
+## Supported Extensions
 
 The following are the supported extensions:
 
@@ -36,13 +36,13 @@ The following are the supported extensions:
 * py
 * java
 
-#### Framework support
+### Framework support
 
 To support a specific framework, Snyk Code needs to both support the relevant language, and to be trained on projects using the framework. The found patterns are then annotated by our security team and extended by curated content.
 
 While Snyk Code supports ASP.NET and .aspx extensions, it does not currently analyze ASP.NET Core or .cshtml files for vulnerabilities.
 
-#### JavaScript frameworks
+### JavaScript frameworks
 
 {% hint style="info" %}
 These are some of the supported frameworks for JavaScript; contact Snyk for a full list of supported frameworks.
@@ -52,7 +52,7 @@ These are some of the supported frameworks for JavaScript; contact Snyk for a fu
 * **Vue.js**: Open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications.
 * **Express**: Back-end web application framework for Node.js, released as free and open-source software.It has been called the de facto standard server framework for Node.js.
 
-#### java frameworks
+### java frameworks
 
 {% hint style="info" %}
 These are some of the supported frameworks for Java; contact Snyk for a full list of supported frameworks.
@@ -64,7 +64,7 @@ These are some of the supported frameworks for Java; contact Snyk for a full lis
 * **Spring JDBC**: The Spring JDBC data access layer, a simple ORM.
 * **Jakarta XML Services**: Framework to implement XML-based Web Services.
 
-#### Python frameworks
+### Python frameworks
 
 {% hint style="info" %}
 These are some of the supported frameworks for Python; contact Snyk for a full list of supported frameworks.
@@ -73,7 +73,7 @@ These are some of the supported frameworks for Python; contact Snyk for a full l
 * [Django](https://www.djangoproject.com/): a framework for full-stack web application development and server development.
 * [Flask](https://palletsprojects.com/p/flask/) a lightweight [WSGI](https://wsgi.readthedocs.io/) web application framework
 
-#### C\# frameworks
+### C\# frameworks
 
 {% hint style="info" %}
 These are some of the supported frameworks for C\#; contact Snyk for a full list of supported frameworks.
@@ -87,7 +87,7 @@ These are some of the supported frameworks for C\#; contact Snyk for a full list
 The framework support is always determined by the file extensions known to the engine. For example, the engine does not scan **\*.cshtml** files, but scans the associated **\*.cshtml.cs** files.
 {% endhint %}
 
-### Language support with Snyk Code AI Engine
+## Language support with Snyk Code AI Engine
 
 Snyk Code is based on a semantic AI using an analytics engine, the Snyk Code AI Engine.
 
@@ -100,7 +100,7 @@ This technology allows Snyk Code to:
 * Unveil interfile issues, such as issue patterns spread over several source files, which are typically especially hard to track.
 * Find issue patterns using the Snyk Code engine, compiling the found issues as a report.
 
-#### AI engine capabilities
+### AI engine capabilities
 
 The AI engine can analyze the following in your code:
 
@@ -113,9 +113,7 @@ The AI engine can analyze the following in your code:
 * **Control Flow**: identifies null dereference or race conditions by modeling each possible control flow in the application.
 * **Point-to Analysis**: identifies multiple possible issues including from buffer overruns, null dereferences, and type mismatches, by modeling the usage of memory in variables and references.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

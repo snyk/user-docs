@@ -33,9 +33,7 @@ This feature is available with Enterprise plans. See [pricing plans](https://sny
 
 ![](../../.gitbook/assets/image4-3-.png)
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

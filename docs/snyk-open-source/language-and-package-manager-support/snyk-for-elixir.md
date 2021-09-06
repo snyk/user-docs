@@ -2,21 +2,21 @@
 
 Snyk offers security scanning to test your [Elixir](https://www.notion.so/Elixir-7c925900bf774c84b83b65c14084e80e) projects for vulnerabilities using the CLI.
 
-### Features
+## Features
 
-|  Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |  |
+| Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |  |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | ![hex\_80x80.png](../../.gitbook/assets/hex_80x80.png) | [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm/) | ✔︎ |  |  |  |  |
 
-### How it works
+## How it works
 
 Snyk builds a dependency tree for your project by analyzing your manifest and lock files.
 
 After Snyk builds the tree, Snyk uses our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in the packages anywhere in the dependency tree.
 
-### Snyk CLI tool for Elixir projects
+## Snyk CLI tool for Elixir projects
 
-#### Mix/Hex
+### Mix/Hex
 
 {% hint style="info" %}
 To scan your dependencies, first install Elixir and Mix. For details, [see here](https://elixir-lang.org/install.html).
@@ -51,9 +51,7 @@ Snyk also has limited support for `:path`, `:git` and `:github` dependencies, bu
 * `:path` dependencies appear in the dependency tree by name
 * `:git` and `:github` dependencies appear in the dependency tree by repository URL and version \(either `:branch`, `:tag` or `:ref`, as defined in the `mix.exs` file\)
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

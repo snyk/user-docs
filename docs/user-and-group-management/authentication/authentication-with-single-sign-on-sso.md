@@ -12,9 +12,7 @@ See also
 * [Session length](https://support.snyk.io/hc/articles/360004008358#UUID-9b188358-274d-696d-528a-0224ad9355fd)
 * [Configure session length for a Snyk group](https://support.snyk.io/hc/articles/360004008358#UUID-691ff365-30db-6c79-49f2-3280b51d6cb0)
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

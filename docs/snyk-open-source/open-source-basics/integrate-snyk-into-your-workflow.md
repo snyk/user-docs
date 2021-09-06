@@ -94,9 +94,7 @@ This allows you to establish a security gate and prevent pull requests from addi
 
 For more details on PR checks see the article on our [GitHub integration](../../integrations/git-repository-scm-integrations/github-integration.md).
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

@@ -1,6 +1,6 @@
 # Viewing project details and test results
 
-All workloads that you and your team have imported for monitoring appear on your **Projects** page marked with a unique Kubernetes icon: 
+All workloads that you and your team have imported for monitoring appear on your **Projects** page marked with a unique Kubernetes icon:
 
 ![Kubernetes icon](../../../.gitbook/assets/uuid-24e0b69a-01c3-9434-9dac-9b44864bd269-en.png)
 
@@ -15,7 +15,7 @@ Expand any item to view:
 * a list of the individual images used in the workload
 * a summary of the number of vulnerabilities in each image
 
-To view vulnerabilities in detail for any image, including its history, click the image name. The Project details page loads for the selected image: 
+To view vulnerabilities in detail for any image, including its history, click the image name. The Project details page loads for the selected image:
 
 ![](../../../.gitbook/assets/image%20%2859%29%20%282%29%20%283%29%20%283%29%20%283%29.png)
 
@@ -32,9 +32,7 @@ Currently, we test the workload configuration for the following properties:
 | readOnlyRootFilesystem | securityContext. readOnlyFilesystem | By default the file system mounted for the container is writable. That means an attacker who compromises the container can also write to the disk, which makes certain kinds of attacks easier. If your containers are stateless then you don’t need a writable filesystem. |
 | Capabilities | securityContext.capabilities | At a low-level, Linux capabilities control what different processes in the container are allowed to do: from being able to write to the disk, to being able to communicate over the network. Dropping all capabilities and adding in those that are required is possible but requires understanding the list of capabilities first. |
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

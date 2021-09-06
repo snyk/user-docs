@@ -1,6 +1,6 @@
 # Language & package manager support
 
-### Language support summary
+## Language support summary
 
 Snyk supports a wide variety of development languages and for each language, we support multiple build tools and package managers.
 
@@ -8,7 +8,7 @@ Following the acquisition of [FossID](https://fossid.com/), Snyk can also identi
 
 This page describes our language support. For more information, see specific articles in [Language and package manager support](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support).
 
-### By language and package manager/build tool
+## By language and package manager/build tool
 
 | **Development Language** | **Package manager/build tool** |
 | :--- | :--- |
@@ -39,7 +39,7 @@ This page describes our language support. For more information, see specific art
 | Scala | sbt |
 | Swift | CocoaPods |
 
-### By language and framework
+## By language and framework
 
 | **Development Language** | **Framework** |
 | :--- | :--- |
@@ -52,9 +52,9 @@ This page describes our language support. For more information, see specific art
 | JavaScript | angular |
 | JavaScript | Yarn Workspaces |
 
-### Supported archives \(available on FossID\)
+## Supported archives \(available on FossID\)
 
-| **Extension**  |
+| **Extension** |
 | :--- |
 | .7z |
 | .aar |
@@ -76,7 +76,7 @@ This page describes our language support. For more information, see specific art
 | .xz |
 | .zip |
 
-### By language and supported extensions \(available on FossID\)
+## By language and supported extensions \(available on FossID\)
 
 | **Language** | **Extension** |
 | :--- | :--- |
@@ -810,9 +810,7 @@ This page describes our language support. For more information, see specific art
 | Zimpl | zimpl |
 | Zimpl | zmpl |
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

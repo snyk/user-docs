@@ -14,9 +14,7 @@ After this is done, the Support team will contact you and confirm the updated me
 
 For more information, see [Setting up Snyk Single Sign-On \(SSO\)](https://support.snyk.io/hc/en-us/articles/360017753618-Set-up-Snyk-Single-Sign-On-SSO-).
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

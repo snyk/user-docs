@@ -30,7 +30,7 @@ These and more details are fully described in [Elements](dependencies-tab.md).
 Data in each of the four tabs is displayed based on the filters you've applied from the top of the Reports area, as well as the group or organization that you're viewing from.
 {% endhint %}
 
-### Dependencies tab elements
+## Dependencies tab elements
 
 Following is a close-up of the first four columns of the Reports area:
 
@@ -145,7 +145,7 @@ The following table describes the different parts of the Dependencies area as di
   </tbody>
 </table>
 
-### Dependencies tab actions
+## Dependencies tab actions
 
 These controls appear at the top of the window:
 
@@ -159,9 +159,7 @@ These controls appear at the top of the window:
 * **Hidden fields**—remove any of the default columns from the display in order to focus on details that are important to your current tasks.
 * **Export as CSV**—export issue data in CSV file format.
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+

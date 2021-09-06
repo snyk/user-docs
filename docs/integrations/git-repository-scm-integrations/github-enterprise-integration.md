@@ -11,7 +11,7 @@ Snyk's GitHub Enterprise integration allows you to:
 On-premise GHE integrations are not currently supported. However, some on-premise SCM integrations, like Github, are available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-### Setting up a GitHub Enterprise Integration
+## Setting up a GitHub Enterprise Integration
 
 1. Create a dedicated service account in GitHub Enterprise, with _**write**_ level or above permissions, to the repos you want to monitor with Snyk permissions. See [Required permissions scope for the GitHub integration](github-enterprise-integration.md) for details.
 2. Generate a personal access token for that account, with **repo \(all\)**, **admin:read:org**, and **admin:repo\_hooks \(read & write\)** permissions scope. See [GitHub Enterprise documentation ](https://docs.github.com/en/enterprise-server@2.22/github/authenticating-to-github/creating-a-personal-access-token)for details.
@@ -25,7 +25,7 @@ On-premise GHE integrations are not currently supported. However, some on-premis
 
 ![](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29%20%287%29%20%283%29.jpg)
 
-### GitHub Enterprise Integration Features
+## GitHub Enterprise Integration Features
 
 After the integration is set up, you can use the following capabilities:
 
@@ -67,7 +67,7 @@ To review and adjust the pull request tests settings:
 
 ![](../../.gitbook/assets/mceclip5%20%281%29.png)
 
-### Required permissions scope for the GitHub integration
+## Required permissions scope for the GitHub integration
 
 All the operations, triggered manually or automatically, are performed for a GitHub service account that has its token is configured in the integrations settings. This shows the required access scopes for the configured token:
 
@@ -91,9 +91,7 @@ For Snyk to perform the required operation on monitor repositories, such as read
 | Opening fix and upgrade pull requests | For creating fix/upgrade PRs in the monitored repos |  |
 | Snyk tests on pull requests - initial configuration | For adding Snyk's webhooks to the imported repos, so Snyk will be informed whenever pull requests are created or updated and be able to trigger scans | _Admin_ |
 
- 
-<br><br><hr>
-
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
+
