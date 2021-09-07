@@ -6,12 +6,7 @@ Snyk's GitHub Enterprise integration allows you to:
 * Detect vulnerabilities in your open source components.
 * Provide automated remediation and upgrade fixes.
 
-{% hint style="info" %}
-**GHE compatibility and availability**  
-On-premise GHE integrations are not currently supported. However, some on-premise SCM integrations, like Github, are available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
-{% endhint %}
-
-## Setting up a GitHub Enterprise Integration
+### Setting up a GitHub Enterprise Integration
 
 1. Create a dedicated service account in GitHub Enterprise, with _**write**_ level or above permissions, to the repos you want to monitor with Snyk permissions. See [Required permissions scope for the GitHub integration](github-enterprise-integration.md) for details.
 2. Generate a personal access token for that account, with **repo \(all\)**, **admin:read:org**, and **admin:repo\_hooks \(read & write\)** permissions scope. See [GitHub Enterprise documentation ](https://docs.github.com/en/enterprise-server@2.22/github/authenticating-to-github/creating-a-personal-access-token)for details.
@@ -25,7 +20,22 @@ On-premise GHE integrations are not currently supported. However, some on-premis
 
 ![](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29%20%287%29%20%283%29.jpg)
 
-## GitHub Enterprise Integration Features
+### GitHub Enterprise Broker startup script
+
+```text
+docker run --restart=always \
+           -p 8000:8000 \
+           -e BROKER_TOKEN=secret-broker-token \
+           -e GITHUB_TOKEN=secret-github-token \
+           -e GITHUB=your.ghe.domain.com \
+           -e GITHUB_API=your.ghe.domain.com/api/v3 \
+           -e GITHUB_GRAPHQL=your.ghe.domain.com/api \
+           -e PORT=8000 \
+           -e BROKER_CLIENT_URL=http://my.broker.client:8000 \
+       snyk/broker:github-enterprise
+```
+
+### GitHub Enterprise Integration Features
 
 After the integration is set up, you can use the following capabilities:
 
@@ -67,7 +77,7 @@ To review and adjust the pull request tests settings:
 
 ![](../../.gitbook/assets/mceclip5%20%281%29.png)
 
-## Required permissions scope for the GitHub integration
+### Required permissions scope for the GitHub integration
 
 All the operations, triggered manually or automatically, are performed for a GitHub service account that has its token is configured in the integrations settings. This shows the required access scopes for the configured token:
 
