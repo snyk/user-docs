@@ -26,6 +26,7 @@
     * [Snyk Customer Onboarding - Business Plan](getting-started/snyk-billing-plan-onboarding/snyk-customer-onboarding-business-plan.md)
     * [Moving from Standard Plan to Business Plan](getting-started/snyk-billing-plan-onboarding/moving-standard-plan-business-plan.md)
     * [Snyk Preview](getting-started/snyk-billing-plan-onboarding/snyk-preview.md)
+    * [SCM \(Git\) and CI/CD integration deployment intro](getting-started/snyk-billing-plan-onboarding/scm-git-and-ci-cd-integration-deployment-intro.md)
     * [Snyk CI/CD Integration: good practices](getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices.md)
     * [Snyk SCM integration: good practices](getting-started/snyk-billing-plan-onboarding/snyk-scm-integration-good-practices.md)
   * [Introduction to Snyk projects](getting-started/introduction-to-snyk-projects/README.md)
