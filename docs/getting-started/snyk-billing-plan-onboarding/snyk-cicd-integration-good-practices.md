@@ -1,6 +1,30 @@
 # Snyk CI/CD Integration: good practices
 
-## Typical stages of adoption
+### Implementation Options
+
+#### CI/CD Deployment methods
+
+There are various ways to configure Snyk within your pipeline. The choice of which method will mainly depend on your environment and preference, and they should all lead to a successful run:
+
+**Using Snyk native plugins**
+
+Available for most common CI/CD tools. Easiest way to setup and get started. The plugins include the most common parameters and options in the interface UI.
+
+**Deploy Snyk CLI using the npm method**
+
+Similar steps as installing the CLI locally. Requires you to be able to run an npm command in the pipeline script. This method has the advantage of completely aligning with the CLI experience so you can easily troubleshoot and configure.
+
+**Deploy Snyk CLI binary version**
+
+The advantage of the binary setup is that it has no dependency with the local environment. It is useful if you cannot run a npm command in your pipeline for instanceThe various versions of the CLI binaries are available here:[https://github.com/snyk/snyk/tags](https://github.com/snyk/snyk/tags)Snyk has a Linux, Windows and other versions.
+
+**Deploy a Snyk Container**
+
+You may also deploy Snyk in your pipeline using one of our images in Dockerhub: [https://hub.docker.com/r/snyk/snyk](https://hub.docker.com/r/snyk/snyk)All implementations above should lead to the same results, as they all rely on the same Snyk engine behind the scenes. This means that the same arguments or options should be true whatever deployment method you select.The following repo shares some examples of binary and NPM integrations for various CI/CD tools
+
+### [CI/CD examples](https://github.com/snyk-labs/snyk-cicd-integration-examples)
+
+### Typical stages of adoption
 
 Developer teams typically adopt Snyk in the following stages:
 
@@ -260,6 +284,70 @@ Snyk Infrastructure as Code supports:
 * CronJobs, Jobs, StatefulSet, ReplicaSet, DaemonSet, and ReplicationController.
 
 See [Test your Kubernetes files with our CLI tool](https://snyk.gitbook.io/user-docs/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kubernetes-files-with-our-cli-tool) for more details.
+
+### CI/CD troubleshooting & Advanced tips
+
+In this section we are going to share a few tips to help troubleshoot or scale CI/CD integrations.
+
+#### Step 1: Try to replicate with Snyk CLI
+
+CLI and pipeline are running the same engine, try to clone the project and scan with CLI.
+
+Play with the CLI flags- use our Snyk CLI tool to find and fix known vulnerabilities as you run it in the pipeline. [Link for flags](https://support.snyk.io/hc/en-us/articles/360003812578-CLI-reference)
+
+#### Step 2: Get logs
+
+If you could replicate with CLI, and the problem still exist ask the CLI to output the debug logging using the following command:
+
+DEBUG=\* or the -d flag to capture logs. 
+
+```text
+snyk test -d
+```
+
+or 
+
+```text
+DEBUG=* snyk test
+```
+
+#### Step 3: Use the CLI instead of the plugin 
+
+Try to replace the native plugin into the CLI by installing snyk using npm or binary download.
+
+For npm use the following commands: 
+
+* npm install -g snyk
+* Snyk auth
+* Snyk test
+
+For binary download you we need to download snyk from the following links:
+
+* [Download the Snyk CLI](https://github.com/snyk/snyk/tags)
+
+#### Common flags in a CI/CD integration
+
+Among the most common flags used in a CI/CD integration are the following:
+
+**-- all-projects**: Auto-detect all projects in working directory
+
+**-p** : Prune dependency trees,  removing  duplicate sub-dependencies. Will still find all vulnerabilities, but potentially not all of the vulnerable paths.
+
+**--org=ORG\_NAME**: Specify the ORG\_NAME to run Snyk commands tied to a specific organization.  This will influence where will new projects be created after running monitor command, some  features  availability and  private  tests  limits. If you have multiple organizations, you can set a default from the CLI using:
+
+```text
+$ snyk config set org=ORG_NAME
+```
+
+Setting a default will ensure all newly monitored projects will be created under your default organization. If you need to override the default, you can use the --org=ORG\_NAME argument.
+
+Default: uses ORG\_NAME that sets as default in your Account settings [https://app.snyk.io/account](https://app.snyk.io/account) 
+
+**Useful resources**
+
+The following repo shares some examples of binary and NPM integrations for various CI/CD tools:
+
+### [GitHub CI/CD examples](https://github.com/snyk-labs/snyk-cicd-integration-examples)
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
