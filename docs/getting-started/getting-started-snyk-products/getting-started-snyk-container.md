@@ -13,8 +13,6 @@ Ensure you have:
 * Access to a relevant container registry to use with Snyk. Snyk supports registries including , Amazon Elastic Container Registry \([ECR](https://snyk.gitbook.io/user-docs/snyk-container/image-scanning-library/ecr-image-scanning)\), Google Container Registry \([GCR](https://snyk.gitbook.io/user-docs/snyk-container/image-scanning-library/gcr-image-scanning)\), Microsoft Azure Container Registry \([ACR](https://snyk.gitbook.io/user-docs/snyk-container/image-scanning-library/acr-image-scanning)\), and [JFrog Artifactory](https://snyk.gitbook.io/user-docs/snyk-container/image-scanning-library/jfrog-artifactory-image-scanning). Alternatively, access to [Kubernetes](https://snyk.gitbook.io/user-docs/snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning) if you select that as an integration.
 * A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](https://snyk.gitbook.io/user-docs/getting-started/getting-started-snyk-products) for details\).
 
-See [Prerequisites](https://solutions.snyk.io/snyk-academy/container/prerequisites) for more details.
-
 ## Stage 1: Add container registry integration
 
 Choose a container registry integration, to connect the registry with Snyk:
