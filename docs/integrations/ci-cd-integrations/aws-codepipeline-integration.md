@@ -5,7 +5,7 @@ Snyk integrates seamlessly with AWS CodePipeline to scan your application for op
 We currently offer scanning for Node, Ruby Gems, Composer and Pip.
 
 {% hint style="info" %}
-This integration is currently available in AWS’s us-east-1 region, but we are working on expanding to additional regions soon after release
+This integration is currently available in AWS’s `us-east-1` \| `us-west-2` \| `eu-west-2` \| `eu-central-1` regions. We are actively working on expanding to additional regions soon!
 {% endhint %}
 
 ## Setup
