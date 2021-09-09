@@ -52,7 +52,7 @@ ignore:
         reason: None Given
         expires: 2021-08-26T08:40:35.249Z
         created: 2021-07-27T08:40:35.251Z
-  - 'staging/cronjob.yaml':
+  - 'staging/cronjob.yaml > *':
         reason: None Given
         expires: 2021-08-26T08:40:35.249Z
         created: 2021-07-27T08:40:35.251Z
