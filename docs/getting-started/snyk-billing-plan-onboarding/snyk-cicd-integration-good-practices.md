@@ -2,6 +2,10 @@
 
 ### Implementation Options
 
+{% hint style="info" %}
+All these methods provide the same results, as they all rely on the same Snyk engine behind the scenes. So the same arguments or options should be true whatever deployment method you select.
+{% endhint %}
+
 #### CI/CD Deployment methods
 
 There are various ways to configure Snyk within your pipeline. The choice of which method will mainly depend on your environment and preference, and they should all lead to a successful run:
@@ -20,9 +24,13 @@ The advantage of the binary setup is that it has no dependency with the local en
 
 **Deploy a Snyk Container**
 
-You may also deploy Snyk in your pipeline using one of our images in Dockerhub: [https://hub.docker.com/r/snyk/snyk](https://hub.docker.com/r/snyk/snyk)All implementations above should lead to the same results, as they all rely on the same Snyk engine behind the scenes. This means that the same arguments or options should be true whatever deployment method you select.The following repo shares some examples of binary and NPM integrations for various CI/CD tools
+You may also deploy Snyk in your pipeline using one of our images in Dockerhub: [https://hub.docker.com/r/snyk/snyk](https://hub.docker.com/r/snyk/snyk)
 
-### [CI/CD examples](https://github.com/snyk-labs/snyk-cicd-integration-examples)
+#### Examples
+
+The following repo shares some examples of binary and NPM integrations for various CI/CD tools:
+
+[CI/CD examples](https://github.com/snyk-labs/snyk-cicd-integration-examples)
 
 ### Typical stages of adoption
 
