@@ -23,8 +23,9 @@ Once Snyk tests your manifest files, we then provide summary and detailed remedi
 
 Snyk offers you one of these solutions:
 
-* an upgrade - an upgrade to the original package
-* a Snyk precision patch - if an upgrade to fix any of the vulnerabilities in the package is not currently available, Snyk offers patches to remediate the issues
+* an **upgrade** - an upgrade to the original package
+* **Pinning** a package - installing a package as a top-level dependency i.e. a specific version of an indirect dependency, to avoid a direct dependency pulling in a vulnerable version
+* a Snyk precision **patch** - if an upgrade to fix any of the vulnerabilities in the package is not currently available, Snyk offers patches to remediate the issues
 
 The summary area groups advice per package, and is displayed based on the best available fix. Advice in these summary lists includes these details per package:
 
