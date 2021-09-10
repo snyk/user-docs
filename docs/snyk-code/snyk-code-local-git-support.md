@@ -46,8 +46,8 @@ The following environment variables are mandatory to configure the Broker client
 
 * **BROKER\_TOKEN** - The Snyk Broker token, obtained from your Container registry integration \(provided by Snyk support\)
 * **GIT\_CLIENT\_URL -** The url of your code-agent \(more on how to get this in the \`setting up the network\` section\).
-* **-** here you will need to provide your scm of your choice and their URL \(without schema, example: GITLAB=my.gitlabconnection.com\)
-* **-**here you will need to provide a token for that has permissions to access your scm \(Example:GITLAB\_TOKEN=YOUR\_GITLAB\_TOKEN\)
+* **&lt;SCM\_NAME&gt; -** here you will need to provide your scm of your choice and their URL \(without schema, example: GITLAB=my.gitlabconnection.com\)
+* **&lt;SCM\_TOKEN&gt; -**here you will need to provide a token for that has permissions to access your scm \(Example:GITLAB\_TOKEN=YOUR\_GITLAB\_TOKEN\)
 * **PORT** - The local port at which the Broker client accepts connections. Default is 7341.
 
 ### Code agent variables
@@ -109,7 +109,14 @@ In this example:
 * We set the current container to use the new network we created **--network mySnykBrokerNetwork** 
 * In **GIT\_CLIENT\_URL**  we used the name we defined in the code-agent container as the host here.
 
-## Setup: Broker Client with a whitelist
+## Setup: extend existing Broker setup
+
+If you have a running Snyk broker, make sure to update it to the latest version and extend it with the following arguments:
+
+```text
+--network <name of created network>
+-e GIT_CLIENT_URL=http://<name of code agent container>:<port of code agent container>
+```
 
 If you have a running Snyk broker with a custom whitelist \(**accept.json**\), then ensure the following rule is present in the whitelist:
 
