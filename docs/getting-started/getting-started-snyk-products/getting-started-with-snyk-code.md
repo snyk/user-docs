@@ -3,14 +3,14 @@
 Get started with [Snyk Code](https://snyk.io/product/snyk-code/) to find, prioritize and fix potential vulnerabilities in your proprietary code.
 
 {% hint style="info" %}
-This documentation describes using Snyk Code with the Web UI. You can also use Snyk Code as a plugin to your JetBrains IDE; see [JetBrains IDE Plugins](https://snyk.gitbook.io/user-docs/integrations/ide-tools/jetbrains-plugins) for more details.
+This documentation describes using Snyk Code with the Web UI. You can also use Snyk Code as a plugin to your JetBrains IDE; see [JetBrains IDE Plugins](https://docs.snyk.io/integrations/ide-tools/jetbrains-plugins) for more details.
 {% endhint %}
 
 ## Prerequisites
 
 * A Snyk account.
-* [Snyk Open Source](https://snyk.gitbook.io/user-docs/snyk-open-source) or [Snyk Container](https://snyk.gitbook.io/user-docs/snyk-container) installed \(as currently Snyk Code is distributed as an add-on\).
-* Projects that include code in [a supported language](https://snyk.gitbook.io/user-docs/snyk-code/snyk-code-language-and-framework-support) \(currently Java, JavaScript, and Python\).
+* [Snyk Open Source](https://docs.snyk.io/snyk-open-source) or [Snyk Container](https://docs.snyk.io/snyk-container) installed \(as currently Snyk Code is distributed as an add-on\).
+* Projects that include code in [a supported language](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support) \(currently Java, JavaScript, and Python\).
 * One of the following supported source code management systems \(SCMs\): GitHub cloud, BitBucket cloud, Gitlab cloud.
 
 ## Stage 1: Enable Snyk Code
@@ -35,7 +35,7 @@ Choose a source code integration, to allow Snyk to work on a project.
 3. Click the source control system \(for example, GitHub\) to integrate with Snyk: 
 4. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
 
-See [DevOps integrations & languages](https://snyk.gitbook.io/user-docs/introducing-snyk/introduction-to-snyk/integrations-and-languages) for more details.
+See [DevOps integrations & languages](https://docs.snyk.io/introducing-snyk/introduction-to-snyk/integrations-and-languages) for more details.
 
 ## Stage 3: Add projects
 
@@ -67,7 +67,7 @@ You can now view vulnerability results for imported projects. The **Projects** t
 
 ![](../../.gitbook/assets/view-vulns2.png)
 
-See [View project information](https://snyk.gitbook.io/user-docs/getting-started/introduction-to-snyk-projects/view-project-information) for more details.
+See [View project information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information) for more details.
 
 ## Stage 5: View issue details
 
@@ -78,7 +78,7 @@ Click **Full Details** on an issue to view more details about it, such as:
 
 ## For more information
 
-* [Snyk Code](https://snyk.gitbook.io/user-docs/snyk-code)
+* [Snyk Code](https://docs.snyk.io/snyk-code)
 * [Developer-first SAST with Snyk Code](https://snyk.io/blog/developer-first-sast-with-snyk-code/)
 * [SAST vs DAST](https://snyk.io/learn/sast-vs-dast/)
 

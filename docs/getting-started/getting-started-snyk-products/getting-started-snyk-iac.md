@@ -10,14 +10,14 @@ This article describes a process using the Snyk.io UI. For details of using IaC 
 
 Ensure you have:
 
-* A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](https://snyk.gitbook.io/user-docs/getting-started/getting-started-snyk-products) for details\).
+* A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](https://docs.snyk.io/getting-started/getting-started-snyk-products) for details\).
 * An existing Kubernetes or Terraform environment to work in.
 * Integrated your Git repository as for other Snyk products - see [Git repository \(SCM integrations\)](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) for more details.
 
 For more details, see:
 
-* [Configure your integration to find security issues in your Kubernetes configuration files](https://snyk.gitbook.io/user-docs/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/configure-integration-for-security-issues-in-kubernetes-configuration-files)
-* [Configure your integration to find security issues in your Terraform files](https://snyk.gitbook.io/user-docs/snyk-infrastructure-as-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess).
+* [Configure your integration to find security issues in your Kubernetes configuration files](https://docs.snyk.io/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/configure-integration-for-security-issues-in-kubernetes-configuration-files)
+* [Configure your integration to find security issues in your Terraform files](https://docs.snyk.io/snyk-infrastructure-as-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess).
 
 ## Stage 1: Import projects
 
@@ -59,7 +59,7 @@ Act on the recommendations produced by Snyk IaC.
 
 ## For more information
 
-See [Infrastructure as Code](https://snyk.gitbook.io/user-docs/snyk-infrastructure-as-code).
+See [Infrastructure as Code](https://docs.snyk.io/snyk-infrastructure-as-code).
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

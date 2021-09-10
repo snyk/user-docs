@@ -7,7 +7,7 @@ Use Snyk Code with the standard Snyk web interface to find and fix vulnerabiliti
 ## View project vulnerabilities
 
 {% hint style="info" %}
-See [Getting started with Snyk Code](https://snyk.gitbook.io/user-docs/getting-started/getting-started-snyk-products/getting-started-with-snyk-code) for details of how to import and scan projects.
+See [Getting started with Snyk Code](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-with-snyk-code) for details of how to import and scan projects.
 {% endhint %}
 
 1. In your **Projects** area, select the project to open
@@ -29,12 +29,12 @@ Each vulnerability card shows specific details about that vulnerability:
 
 Card details include:
 
-* The level \(for example, **H** for high\), the name \(for example, **Cross-site Scripting**\), and the [Priority Score](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score) value.
+* The level \(for example, **H** for high\), the name \(for example, **Cross-site Scripting**\), and the [Priority Score](https://docs.snyk.io/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score) value.
 * The [CWE type:](https://cwe.mitre.org/data/index.html) click the link to view more information about that type of vulnerability.
 * A snippet of your code showing the exact area that is vulnerable.
 * A clear and helpful text description of the vulnerability.
 
-See [Issue card information](https://snyk.gitbook.io/user-docs/getting-started/introduction-to-snyk-projects/issue-card-information) for more details.
+See [Issue card information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/issue-card-information) for more details.
 
 * Click **Ignore** to ignore this vulnerability \(see [Ignore a vulnerability](using-snyk-code-web.md)\)
 * Click **Full details** to view more information \(see [View full details](using-snyk-code-web.md)\).
@@ -63,9 +63,9 @@ Click **Save** to ignore this issue with the parameters selected. Afer you selec
 There is a status selector for ignored issues on the left side, and you can include those \(and remove or edit the ignore flag\) if you want to review ignored results.
 {% endhint %}
 
-See [Ignoring issues not prioritized for your project](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/issue-management/ignore-issues) for full details of using the Ignore function.
+See [Ignoring issues not prioritized for your project](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/ignore-issues) for full details of using the Ignore function.
 
-See [Ignoring issues in Snyk Code](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/issue-management/ignore-issues#Ignore-Snyk-Code) for specific details of how Snyk Code processes the Ignore function.
+See [Ignoring issues in Snyk Code](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/ignore-issues#Ignore-Snyk-Code) for specific details of how Snyk Code processes the Ignore function.
 
 ## View full details
 

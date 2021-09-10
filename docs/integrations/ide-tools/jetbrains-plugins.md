@@ -1,6 +1,6 @@
 # JetBrains plugins
 
-Snyk has a plugin for Jetbrains IDEs, for both [Snyk Open Source](https://snyk.gitbook.io/user-docs/snyk-open-source) and [Snyk Code](https://snyk.gitbook.io/user-docs/snyk-code). Use this plugin to test your projects and get remediation advice and example code fixes during development within the IDE.
+Snyk has a plugin for Jetbrains IDEs, for both [Snyk Open Source](https://docs.snyk.io/snyk-open-source) and [Snyk Code](https://docs.snyk.io/snyk-code). Use this plugin to test your projects and get remediation advice and example code fixes during development within the IDE.
 
 ## Supported JetBrains IDEs
 

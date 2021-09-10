@@ -7,7 +7,7 @@ To add images from Nexus to Snyk:
 **Prerequisites**:
 
 * Have a Snyk account with access to the relevant organization \(given by an administrator\).
-* Nexus integration configured. To learn more about that, follow the steps in [Container security with Nexus integration](https://snyk.gitbook.io/user-docs/snyk-container/image-scanning-library/nexus-image-scanning/container-security-with-nexus-integration)
+* Nexus integration configured. To learn more about that, follow the steps in [Container security with Nexus integration](https://docs.snyk.io/snyk-container/image-scanning-library/nexus-image-scanning/container-security-with-nexus-integration)
 
 **Steps:**
 

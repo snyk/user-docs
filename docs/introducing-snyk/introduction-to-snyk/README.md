@@ -1,12 +1,12 @@
 # Introduction to Snyk
 
-Snyk tests for vulnerabilities in [your own code](https://snyk.io/product/snyk-code/), [open source dependencies](https://snyk.gitbook.io/user-docs/snyk-open-source), [Container images](https://snyk.gitbook.io/user-docs/snyk-container), and [Infrastructure as Code \(IaC\) configurations](https://snyk.io/product/infrastructure-as-code-security/), and offers context, prioritization, and remediation.
+Snyk tests for vulnerabilities in [your own code](https://snyk.io/product/snyk-code/), [open source dependencies](https://docs.snyk.io/snyk-open-source), [Container images](https://docs.snyk.io/snyk-container), and [Infrastructure as Code \(IaC\) configurations](https://snyk.io/product/infrastructure-as-code-security/), and offers context, prioritization, and remediation.
 
 ## Supported languages and integrations
 
 Snyk supports a range of languages including: JavaScript, Java \(Gradle, Maven\), .NET, Python, Golang, Swift, Objective-C \(CocoaPods\), Scala, Ruby, PHP, and Bazel. [See more details](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support).
 
-Taking a developer-first approach to security, [Snyk integrates](https://snyk.gitbook.io/user-docs/integrations) with leading IDE, repository, CI/CD, runtime, registry, and issue management tools.
+Taking a developer-first approach to security, [Snyk integrates](https://docs.snyk.io/integrations) with leading IDE, repository, CI/CD, runtime, registry, and issue management tools.
 
 ## Security and vulnerability data
 
@@ -16,7 +16,7 @@ Our [security intelligence database](https://snyk.io/snyk-intelligence-security/
 
 You can use the Snyk CLI \(Command Line Interface\) to scan and monitor on your local machine, and integrate it into your pipeline. You can use the Snyk CLI to scan your applications, containers, and infrastructure as code for security vulnerabilities. You can install the CLI via npm, Homebrew, Scoop, or manually.
 
-[Get started with the Snyk CLI](https://snyk.gitbook.io/user-docs/snyk-cli/guides-for-our-cli/getting-started-with-the-cli).
+[Get started with the Snyk CLI](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli).
 
 ## Snyk API
 
@@ -24,20 +24,20 @@ Snyk’s extensibility and API enable developers to tune Snyk’s security autom
 
 ## Snyk Products and platforms
 
-* [Snyk Open Source](https://snyk.gitbook.io/user-docs/snyk-open-source): Enabling developers to easily find and automatically fix open source vulnerabilities. Snyk Open Source also includes [Snyk license compliance](https://snyk.gitbook.io/user-docs/snyk-open-source) to help manage your open source license usage.
+* [Snyk Open Source](https://docs.snyk.io/snyk-open-source): Enabling developers to easily find and automatically fix open source vulnerabilities. Snyk Open Source also includes [Snyk license compliance](https://docs.snyk.io/snyk-open-source) to help manage your open source license usage.
 * [Snyk Code](https://snyk.io/product/snyk-code/): Find and fix vulnerabilities in your application code in real-time during the development process.
-* [Snyk Container](https://snyk.gitbook.io/user-docs/snyk-container): Find and fix vulnerabilities in container images and Kubernetes applications.
-* [Snyk Infrastructure as Code \(IaC\)](https://snyk.gitbook.io/user-docs/snyk-infrastructure-as-code): Find and fix insecure configurations in Terraform and Kubernetes code.
+* [Snyk Container](https://docs.snyk.io/snyk-container): Find and fix vulnerabilities in container images and Kubernetes applications.
+* [Snyk Infrastructure as Code \(IaC\)](https://docs.snyk.io/snyk-infrastructure-as-code): Find and fix insecure configurations in Terraform and Kubernetes code.
 * [Snyk Intel Vulnerability Database](https://snyk.io/product/vulnerability-database/): Comprehensive and actionable open source and container vulnerability data.
 
 ## Get started with Snyk
 
-To get started with Snyk products now, see our [Getting started guides](https://snyk.gitbook.io/user-docs/getting-started):
+To get started with Snyk products now, see our [Getting started guides](https://docs.snyk.io/getting-started):
 
-* [Get started with Snyk Open Source](https://snyk.gitbook.io/user-docs/getting-started/getting-started-snyk-products/getting-started-snyk-open-source). 
-* [Get started with Snyk License Compliance](https://snyk.gitbook.io/user-docs/getting-started/getting-started-snyk-products/getting-started-snyk-licensing-compliance).
-* [Get started with Snyk Code](https://snyk.gitbook.io/user-docs/getting-started/getting-started-snyk-products/getting-started-with-snyk-code).
-* [Get started with Snyk Container](https://snyk.gitbook.io/user-docs/getting-started/getting-started-snyk-products/getting-started-snyk-container).
+* [Get started with Snyk Open Source](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-snyk-open-source). 
+* [Get started with Snyk License Compliance](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-snyk-licensing-compliance).
+* [Get started with Snyk Code](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-with-snyk-code).
+* [Get started with Snyk Container](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-snyk-container).
 * [Get started with Snyk IaC](https://support.snyk.io/hc/en-us/articles/360014938398-Getting-started-with-Snyk-Infrastructure-as-Code-IaC-).
 * 
 {% hint style="success" %}

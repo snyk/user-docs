@@ -10,7 +10,7 @@ This documentation assumes you have used Snyk, and are familiar with core Snyk f
 ## More details
 
 * [Introduction to the Snyk Team plan](https://support.snyk.io/hc/en-us/articles/360018365737)
-* [Getting started with Snyk products](https://snyk.gitbook.io/user-docs/getting-started/getting-started-snyk-products) 
+* [Getting started with Snyk products](https://docs.snyk.io/getting-started/getting-started-snyk-products) 
 * [Quick start guide and general overview](https://www.youtube.com/watch?v=PCculVmSPtg&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=6) \(video\)
 
 ## Rollout strategy: good practices
@@ -28,7 +28,7 @@ Starting with a few users avoids issues you may encounter if you try to roll Sny
 **More details**
 
 * Video: [How to find vulnerabilities using your CLI](https://www.youtube.com/watch?v=h9-pP6nOldo&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=2). 
-* Documentation: [Snyk CLI](https://snyk.gitbook.io/user-docs/snyk-cli) 
+* Documentation: [Snyk CLI](https://docs.snyk.io/snyk-cli) 
 
 ## Integrate with an SCM integration
 
@@ -57,7 +57,7 @@ You can also decide if you want to simply report on the vulnerabilities, or brea
 
 **More details**
 
-* [Snyk CI/CD Integration: good practices](https://snyk.gitbook.io/user-docs/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices)
+* [Snyk CI/CD Integration: good practices](https://docs.snyk.io/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices)
 * [Snyk CI/CD integration examples on GitHub](https://github.com/snyk-labs/snyk-cicd-integration-examples) 
 
 Snyk automatically notifies you when new issues are found in the projects you're monitoring, to help make you aware of new risks:
@@ -66,7 +66,7 @@ You can customize the emails all your organization’s members receive, and indi
 
 ## More details
 
-* [Notification management](https://snyk.gitbook.io/user-docs/user-and-group-management/notifications/notification-management)
+* [Notification management](https://docs.snyk.io/user-and-group-management/notifications/notification-management)
 * [How to configure your Snyk notification settings](https://www.youtube.com/watch?v=MyLgmcHUrL4&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=5) \(video\)
 
 {% hint style="success" %}

@@ -8,7 +8,7 @@ A severity level is applied to a vulnerability, to indicate the risk for that vu
 * **Critical:** may allow attackers to access sensitive data and run code on your application.
 
 {% hint style="info" %}
-Severity levels also apply to license issues. See [Licenses overview](https://snyk.gitbook.io/user-docs/snyk-open-source/licenses).
+Severity levels also apply to license issues. See [Licenses overview](https://docs.snyk.io/snyk-open-source/licenses).
 {% endhint %}
 
 ### Determining severity levels
@@ -48,7 +48,7 @@ And for each vulnerability in a project:
 
 ![](../../.gitbook/assets/image%20%2839%29.png)
 
-See [Getting started](https://snyk.gitbook.io/user-docs/getting-started) documentation for more details of using Snyk.
+See [Getting started](https://docs.snyk.io/getting-started) documentation for more details of using Snyk.
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

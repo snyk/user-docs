@@ -16,7 +16,7 @@ The integration allows you to:
 > **Feature availability**  
 > On-premise Gitlab integrations are available for customers on Enterprise plans and above. See [pricing plans](https://snyk.io/plans/) for more details.
 
-This integration only works with GitLab instances that are publicly reachable \(not on a private network\). A [Snyk Broker](https://snyk.gitbook.io/user-docs/integrations/snyk-broker/set-up-snyk-broker) environment is required for private network instances.
+This integration only works with GitLab instances that are publicly reachable \(not on a private network\). A [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker) environment is required for private network instances.
 
 **Steps:**
 

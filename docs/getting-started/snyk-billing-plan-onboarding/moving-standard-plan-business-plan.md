@@ -39,13 +39,13 @@ In addition to monitoring your vulnerability status, Snyk can help you with your
 
 Snyk provides a default license policy, which you can edit to match your preferences.
 
-Learn more about [licenses](https://snyk.gitbook.io/user-docs/snyk-open-source/licenses) and how to [set a license policy](https://snyk.gitbook.io/user-docs/snyk-open-source/license-policies/setting-a-license-policy).
+Learn more about [licenses](https://docs.snyk.io/snyk-open-source/licenses) and how to [set a license policy](https://docs.snyk.io/snyk-open-source/license-policies/setting-a-license-policy).
 
 ## Integrate Snyk with Jira
 
 Integrate Snyk with Jira to manage the work of resolving issues. Use our Jira integration API or open Jira tickets with a button on Snyk project issue cards. Jira tickets collect details your engineers will need to resolve vulnerabilities.
 
-Learn more about [configuring the Snyk Jira integration](https://snyk.gitbook.io/user-docs/integrations/untitled-3/jira).
+Learn more about [configuring the Snyk Jira integration](https://docs.snyk.io/integrations/untitled-3/jira).
 
 ## How to get help
 

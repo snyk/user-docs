@@ -25,14 +25,14 @@ In order to scan your dependencies, you must ensure you have first installed the
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project:
 
-* [Snyk CLI tool for .NET projects](https://snyk.gitbook.io/user-docs/snyk-open-source/language-and-package-manager-support/snyk-for-.net)
+* [Snyk CLI tool for .NET projects](https://docs.snyk.io/snyk-open-source/language-and-package-manager-support/snyk-for-.net)
 * [Git services for .NET projects](https://support.snyk.io/hc/en-us/articles/360004519138-Snyk-for-NET#UUID-69fbe5a6-a24a-d5ad-5d54-cd18ef6786b3)
 
 ## Snyk CLI tool for .NET projects
 
 ## Dependencies managed by PackageReference
 
-First, restore dependencies in the .NET project by running `dotnet restore` and make sure **obj/project.assets.json** has been created by the previous command, run `snyk test`. For more information on building projects, check out [Getting started with the CLI](https://snyk.gitbook.io/user-docs/snyk-cli/guides-for-our-cli/getting-started-with-the-cli).
+First, restore dependencies in the .NET project by running `dotnet restore` and make sure **obj/project.assets.json** has been created by the previous command, run `snyk test`. For more information on building projects, check out [Getting started with the CLI](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli).
 
 Examples of supported project files that resolve into **project.assets.json** include:
 

@@ -7,7 +7,7 @@ To add images from Quay to Snyk:
 **Prerequisites**:
 
 * Have a Snyk account with access to the relevant organization \(given by an administrator\).
-* Quay integration configured. To learn more about that, follow the steps in [Container security with Quay integration](https://snyk.gitbook.io/user-docs/snyk-container/image-scanning-library/untitled-1/container-security-with-quay-integration)
+* Quay integration configured. To learn more about that, follow the steps in [Container security with Quay integration](https://docs.snyk.io/snyk-container/image-scanning-library/untitled-1/container-security-with-quay-integration)
 
 **Steps:**
 

@@ -81,7 +81,7 @@ Private modules are supported for GitHub and Bitbucket Cloud. GitLab and Bitbuck
 
 **Broker**
 
-Projects imported via the new [Snyk Broker](https://snyk.gitbook.io/user-docs/integrations/snyk-broker/broker-introduction) clients should work as expected.
+Projects imported via the new [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker/broker-introduction) clients should work as expected.
 
 To add support to existing clients created before Dec 30th 2020, you should add `go.mod` and `go.sum` to your `accept.json` file, as per the changes in this [pull request](https://github.com/snyk/broker/pull/299/files).
 

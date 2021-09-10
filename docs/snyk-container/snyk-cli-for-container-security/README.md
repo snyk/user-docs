@@ -23,7 +23,7 @@ After installation, authenticate with Snyk to test your image, running snyk auth
 snyk auth
 ```
 
-For more details about authentication, see [Authenticate the CLI with your account](https://snyk.gitbook.io/user-docs/snyk-cli/install-the-snyk-cli/authenticate-the-cli-with-your-account)
+For more details about authentication, see [Authenticate the CLI with your account](https://docs.snyk.io/snyk-cli/install-the-snyk-cli/authenticate-the-cli-with-your-account)
 
 ## Testing an image
 
@@ -91,8 +91,8 @@ It’s common to use both test and monitor with Snyk. test is great for quick ch
 
 ## More information
 
-* [Understand Snyk Container CLI results](https://snyk.gitbook.io/user-docs/snyk-container/snyk-cli-for-container-security/understanding-snyk-container-cli-results)
-* [Advanced CLI usage](https://snyk.gitbook.io/user-docs/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)
+* [Understand Snyk Container CLI results](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security/understanding-snyk-container-cli-results)
+* [Advanced CLI usage](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)
 * Learn more about [container security](https://snyk.io/learn/container-security/)
 
 {% hint style="success" %}

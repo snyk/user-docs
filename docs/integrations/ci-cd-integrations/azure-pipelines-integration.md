@@ -241,7 +241,7 @@ This section describes the Snyk task parameters for Azure Pipelines integration,
         <p>(additionalArguments)</p>
       </td>
       <td style="text-align:left">
-        <p>Additional Snyk CLI arguments to be passed in. See <a href="https://snyk.gitbook.io/user-docs/snyk-cli/guides-for-our-cli/cli-reference">CLI reference</a> for
+        <p>Additional Snyk CLI arguments to be passed in. See <a href="https://docs.snyk.io/snyk-cli/guides-for-our-cli/cli-reference">CLI reference</a> for
           details.</p>
         <p><b>Tip</b>: add <b>--all-projects</b> as good practice (for example, for
           .NET), if no project has been found.</p>

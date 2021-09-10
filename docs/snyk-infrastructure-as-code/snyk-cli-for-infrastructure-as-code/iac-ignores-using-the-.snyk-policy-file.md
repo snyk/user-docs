@@ -2,7 +2,7 @@
 
 When scanning your IaC configuration files using the Snyk CLI with **snyk iac test** you can ignore issues that are not relevant to you.
 
-You can do this by using the [.snyk policy file](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/policies/the-.snyk-file), which we recommend is stored and versioned in the root of your working directory for where you store your IaC configuration files.
+You can do this by using the [.snyk policy file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file), which we recommend is stored and versioned in the root of your working directory for where you store your IaC configuration files.
 
 ## Ignore paths
 
@@ -16,7 +16,7 @@ For test runs from imported git repositories:
 ## .snyk file semantics
 
 {% hint style="info" %}
-The **.snyk** file has some limitations for IaC projects \(see [The .snyk file](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/policies/the-.snyk-file) for standard functionality\):
+The **.snyk** file has some limitations for IaC projects \(see [The .snyk file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file) for standard functionality\):
 
 * The **patches** section is not yet supported and will be ignored.
 * There are no IaC-supported language settings. This section will be ignored.
@@ -36,7 +36,7 @@ ignore:
         created: 2021-07-27T08:40:35.251Z
 ```
 
-This file can be created with the **snyk ignore** command, See [Ignore vulnerabilities](https://snyk.gitbook.io/user-docs/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli).
+This file can be created with the **snyk ignore** command, See [Ignore vulnerabilities](https://docs.snyk.io/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli).
 
 The \`\*\` object key causes the CLI to ignore all instances of the SNYK-CC-K8S-1 vulnerability. You can add multiple entries, keyed by the IaC issue ID, to ignore multiple vulnerabilities.
 

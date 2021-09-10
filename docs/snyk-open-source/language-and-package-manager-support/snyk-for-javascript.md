@@ -75,7 +75,7 @@ Prerequisites
 
 * Install the relevant package manager.
 * Include the relevant manifest files supported by Snyk.
-* Install and authenticate [the Snyk CLI](https://snyk.gitbook.io/user-docs/snyk-cli/install-the-snyk-cli) to start analyzing projects from your local environment.
+* Install and authenticate [the Snyk CLI](https://docs.snyk.io/snyk-cli/install-the-snyk-cli) to start analyzing projects from your local environment.
 
 Run `npm install` or `yarn install,` depending on the package manager you use for your JavaScript projects.
 

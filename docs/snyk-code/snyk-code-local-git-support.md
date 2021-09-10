@@ -6,7 +6,7 @@ You can natively connect Snyk Code to your local git server. This allows custome
 
 * **Broker server**: Running on Snyk SaaS backend
 * **Broker client**: A [Docker image](https://hub.docker.com/r/snyk/broker/) deployed in your infrastructure.
-* **Code agent**: Another [Docker image](https://hub.docker.com/r/snyk/code-agent/) that is deployed in your infrastructure. **Note:** Code agent is only supported with [Snyk Broker](https://snyk.gitbook.io/user-docs/integrations/snyk-broker) v4.108.0 and later versions. If you have a running Broker client, please pull the latest update.
+* **Code agent**: Another [Docker image](https://hub.docker.com/r/snyk/code-agent/) that is deployed in your infrastructure. **Note:** Code agent is only supported with [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker) v4.108.0 and later versions. If you have a running Broker client, please pull the latest update.
 
 The **Broker client** and **code agent** components are deployed in your infrastructure, creating two separate services, responsible for cloning local repositories in a secured manner and sending the allied information to Snyk.
 
@@ -14,7 +14,7 @@ The Broker client provides the Agent with the connection details. The Agent uses
 
 ![](../.gitbook/assets/local-git.png)
 
-See [Snyk Broker](https://snyk.gitbook.io/user-docs/integrations/snyk-broker/broker-introduction) documentation for more details.
+See [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker/broker-introduction) documentation for more details.
 
 ## Setup
 

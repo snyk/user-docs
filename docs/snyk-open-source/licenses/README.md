@@ -12,7 +12,7 @@ Every time you test your projects either with the CLI or from our app, your proj
 In order to enable customers to get started with license compliance faster, we’ve created an out of the box default policy. The default policy is a baseline which tries to answer the requirements of multiple types of applications \(SaaS, distributed, etc.\), and may be used as a starting point to calibrate additional license policies. The default policy doesn’t endorse or criticize any license.  
 Different customers may have different needs and tolerance for different license types. We encourage you to make sure you made the needed changes or created new policies that fit your company’s specific requirements.
 
-By [default](https://snyk.gitbook.io/user-docs/fixing-and-prioritizing-issues/policies/shared-policies-overview) we determine the severity of licenses in the following way:
+By [default](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/shared-policies-overview) we determine the severity of licenses in the following way:
 
 * High severity - licenses that definitely present issues for commercial software.
 * Medium severity - licenses that have clauses that may be of concern and should be reviewed.

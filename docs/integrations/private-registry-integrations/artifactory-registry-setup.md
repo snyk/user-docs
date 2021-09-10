@@ -7,7 +7,7 @@ You can configure two types of Artifactory Package Repository integrations:
 1. Publicly accessible instances protected by basic authentication
 2. Instances on a private network \(with or without basic authentication\) accessed via a broker
 
-Brokered Artifactory is currently supported for [Maven](https://snyk.gitbook.io/user-docs/integrations/private-registry-integrations/artifactory-registry-for-maven) and [Node.js](https://snyk.gitbook.io/user-docs/integrations/private-registry-integrations/artifactory-registry-for-npm) \(npm and Yarn\).
+Brokered Artifactory is currently supported for [Maven](https://docs.snyk.io/integrations/private-registry-integrations/artifactory-registry-for-maven) and [Node.js](https://docs.snyk.io/integrations/private-registry-integrations/artifactory-registry-for-npm) \(npm and Yarn\).
 
 ## Getting started
 

@@ -7,7 +7,7 @@ To add images from DigitalOcean to Snyk:
 **Prerequisites**:
 
 * Have a Snyk account with access to the relevant organization \(given by an administrator\).
-* DigitalOcean integration configured. To learn more about that, follow the steps in [Container security with DigitalOcean integration](https://snyk.gitbook.io/user-docs/snyk-container/image-scanning-library/digitalocean-image-scanning/container-security-with-digitalocean-integration)
+* DigitalOcean integration configured. To learn more about that, follow the steps in [Container security with DigitalOcean integration](https://docs.snyk.io/snyk-container/image-scanning-library/digitalocean-image-scanning/container-security-with-digitalocean-integration)
 
 **Steps:**
 

@@ -180,7 +180,7 @@ ignore:
 
 {% hint style="info" %}
 **Note**  
-For IaC ignore rules see [IaC ignores using the .snyk policy file](https://snyk.gitbook.io/user-docs/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file).
+For IaC ignore rules see [IaC ignores using the .snyk policy file](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file).
 {% endhint %}
 
 ## .snyk related CLI commands
@@ -209,10 +209,10 @@ The `.snyk` file should be versioned in the code repository, like other applicat
 
 ## Additional articles
 
-Support KB - [Ignore Vulnerabilities](https://snyk.gitbook.io/user-docs/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli)  
+Support KB - [Ignore Vulnerabilities](https://docs.snyk.io/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli)  
 Support KB - [Ignoring via the CLI is not enabled for this organization](https://support.snyk.io/hc/en-us/articles/360001558598)  
 Support KB - [CLI reference](https://support.snyk.io/hc/en-us/articles/360003812578)  
-Support KB - [Manage Vulnerabilities with the Snyk Wizard in the CLI](https://snyk.gitbook.io/user-docs/snyk-cli/fix-vulnerabilities-from-the-cli/manage-vulnerability-results-with-the-snyk-cli-wizard) \(NPM/Yarn Only\)
+Support KB - [Manage Vulnerabilities with the Snyk Wizard in the CLI](https://docs.snyk.io/snyk-cli/fix-vulnerabilities-from-the-cli/manage-vulnerability-results-with-the-snyk-cli-wizard) \(NPM/Yarn Only\)
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

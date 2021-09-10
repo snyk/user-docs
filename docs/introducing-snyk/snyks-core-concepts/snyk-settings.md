@@ -6,21 +6,21 @@ Click on settings ![](../../.gitbook/assets/cog_icon.png) to view Snyk applicati
 
 **Docs**
 
-[Members](https://snyk.gitbook.io/user-docs/user-and-group-management/managing-groups-and-organizations/invite-and-collaborate-with-team-members)
+[Members](https://docs.snyk.io/user-and-group-management/managing-groups-and-organizations/invite-and-collaborate-with-team-members)
 
-[Integrations](https://snyk.gitbook.io/user-docs/integrations)
+[Integrations](https://docs.snyk.io/integrations)
 
 [Languages](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support)
 
-[Snyk Code](https://snyk.gitbook.io/user-docs/snyk-code)
+[Snyk Code](https://docs.snyk.io/snyk-code)
 
-[Infrastructure as Code](https://snyk.gitbook.io/user-docs/snyk-infrastructure-as-code)
+[Infrastructure as Code](https://docs.snyk.io/snyk-infrastructure-as-code)
 
-[Usage](https://snyk.gitbook.io/user-docs/user-and-group-management/managing-settings/usage-page-details)
+[Usage](https://docs.snyk.io/user-and-group-management/managing-settings/usage-page-details)
 
-[Notifications](https://snyk.gitbook.io/user-docs/user-and-group-management/notifications/notification-management)
+[Notifications](https://docs.snyk.io/user-and-group-management/notifications/notification-management)
 
-[Snyk Preview](https://snyk.gitbook.io/user-docs/getting-started/snyk-billing-plan-onboarding/snyk-preview)
+[Snyk Preview](https://docs.snyk.io/getting-started/snyk-billing-plan-onboarding/snyk-preview)
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
