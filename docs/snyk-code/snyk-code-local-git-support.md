@@ -109,7 +109,7 @@ In this example:
 * We set the current container to use the new network we created **--network mySnykBrokerNetwork** 
 * In **GIT\_CLIENT\_URL**  we used the name we defined in the code-agent container as the host here.
 
-## Setup: extend existing Broker setup
+## Extend existing Broker setup
 
 If you have a running Snyk broker, make sure to update it to the latest version and extend it with the following arguments:
 

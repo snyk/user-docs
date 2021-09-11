@@ -307,23 +307,23 @@ Play with the CLI flags- use our Snyk CLI tool to find and fix known vulnerabili
 
 If you could replicate with CLI, and the problem still exist ask the CLI to output the debug logging using the following command:
 
-DEBUG=\* or the -d flag to capture logs. 
+DEBUG=\* or the -d flag to capture logs.
 
 ```text
 snyk test -d
 ```
 
-or 
+or
 
 ```text
 DEBUG=* snyk test
 ```
 
-#### Step 3: Use the CLI instead of the plugin 
+#### Step 3: Use the CLI instead of the plugin
 
 Try to replace the native plugin into the CLI by installing snyk using npm or binary download.
 
-For npm use the following commands: 
+For npm use the following commands:
 
 * npm install -g snyk
 * Snyk auth
@@ -339,9 +339,9 @@ Among the most common flags used in a CI/CD integration are the following:
 
 **-- all-projects**: Auto-detect all projects in working directory
 
-**-p** : Prune dependency trees,  removing  duplicate sub-dependencies. Will still find all vulnerabilities, but potentially not all of the vulnerable paths.
+**-p** : Prune dependency trees, removing duplicate sub-dependencies. Will still find all vulnerabilities, but potentially not all of the vulnerable paths.
 
-**--org=ORG\_NAME**: Specify the ORG\_NAME to run Snyk commands tied to a specific organization.  This will influence where will new projects be created after running monitor command, some  features  availability and  private  tests  limits. If you have multiple organizations, you can set a default from the CLI using:
+**--org=ORG\_NAME**: Specify the ORG\_NAME to run Snyk commands tied to a specific organization. This will influence where will new projects be created after running monitor command, some features availability and private tests limits. If you have multiple organizations, you can set a default from the CLI using:
 
 ```text
 $ snyk config set org=ORG_NAME
@@ -349,7 +349,7 @@ $ snyk config set org=ORG_NAME
 
 Setting a default will ensure all newly monitored projects will be created under your default organization. If you need to override the default, you can use the --org=ORG\_NAME argument.
 
-Default: uses ORG\_NAME that sets as default in your Account settings [https://app.snyk.io/account](https://app.snyk.io/account) 
+Default: uses ORG\_NAME that sets as default in your Account settings [https://app.snyk.io/account](https://app.snyk.io/account)
 
 **Useful resources**
 

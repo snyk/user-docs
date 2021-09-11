@@ -18,7 +18,7 @@ Snyk's GitHub Enterprise integration allows you to:
 8. Snyk starts scanning the selected repos for dependency files \(such as package.json\) in the entire directory tree and imports them to Snyk as projects:
 9. The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-![](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29%20%287%29%20%283%29.jpg)
+![](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29%20%287%29%20%2818%29%20%285%29.jpg)
 
 ### GitHub Enterprise Broker startup script
 
@@ -45,7 +45,7 @@ Snyk produces advanced security reports, allowing you to explore the vulnerabili
 
 This is an example of a project-level security report:
 
-![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%286%29%20%281%29.png)
+![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%286%29%20%281%29%20%281%29.png)
 
 **Projects monitoring and automatic fix pull requests**
 
@@ -59,7 +59,7 @@ To review and adjust the automatic fix pull request settings:
 
 Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 2. Select **Edit Settings** for GitHub Enterprise. 3. Navigate to **Automatic fix pull requests**:
 
-![](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%287%29%20%283%29%20%287%29.png)
+![](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%287%29%20%283%29%20%2812%29.png)
 
 **Pull request testing**
 
@@ -67,7 +67,7 @@ Snyk tests any newly created pull request in your repositories for security vuln
 
 This is how Snyk pull request checks appear in the Pull Request page in GitHub Enterprise:
 
-![](../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en%20%282%29%20%282%29%20%286%29%20%285%29%20%282%29.png)
+![](../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en%20%282%29%20%282%29%20%286%29%20%285%29%20%285%29.png)
 
 To review and adjust the pull request tests settings:
 

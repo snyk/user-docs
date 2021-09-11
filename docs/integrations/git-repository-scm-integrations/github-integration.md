@@ -12,7 +12,7 @@ Please note, GitHub integrates per user rather than per org. Setting up this int
 4. Select the repos you'd like to import to Snyk. When done, click on the **Add selected repositories** button, at the top of the page. Once clicked, Snyk will start scanning the selected repos for dependency files \(i.e. package.json, pom.xml, etc\) in the entire directory tree and import them to Snyk as projects:
 5. The imported projects now appear in your Projects page and are continuously checked for vulnerabilities.
 
-![](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29%20%287%29%20%2810%29.jpg)
+![](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29%20%287%29%20%2818%29%20%2818%29.jpg)
 
 ## GitHub Integration Features
 
@@ -24,7 +24,7 @@ Snyk will produce advanced security reports, allowing you to explore the vulnera
 
 This is an example of a project level security report:
 
-![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%286%29%20%281%29%20%2810%29.png)
+![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%286%29%20%281%29.png)
 
 ## **2. Projects monitoring and automatic fix pull requests**
 

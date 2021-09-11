@@ -50,7 +50,7 @@ To review and adjust the automatic fix pull request settings:
 
 Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 2. Select **Edit Settings** for Bitbucket Server 3. Navigate to **Automatic fix pull requests**:
 
-![](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%287%29%20%283%29%20%2811%29.png)
+![](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%287%29%20%283%29%20%2810%29.png)
 
 ## **Pull request tests**
 
