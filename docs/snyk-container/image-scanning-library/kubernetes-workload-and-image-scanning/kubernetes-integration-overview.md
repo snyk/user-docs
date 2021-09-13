@@ -1,4 +1,4 @@
-# Kubernetes integration overviews
+# Kubernetes integration overview
 
 Snyk integrates with Kubernetes, enabling you to import and test your running workloads and identify vulnerabilities in their associated images and configurations that might make those workloads less secure. Once imported, Snyk continues to monitor those workloads, identifying additional security issues as new images are deployed and the workload configuration changes.
 
