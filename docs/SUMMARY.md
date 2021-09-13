@@ -228,7 +228,7 @@
     * [Configure your CircleCI integration](integrations/ci-cd-integrations/configure-your-circleci-integration.md)
     * [Getting Snyk Orb details from the CircleCI registry](integrations/ci-cd-integrations/getting-snyk-orb-details-from-the-circleci-registry.md)
     * [GitHub Actions integration](integrations/ci-cd-integrations/github-actions-integration.md)
-    * [Bitbucket Pipelines integration](integrations/ci-cd-integrations/untitled.md)
+    * [Bitbucket Pipelines integration](integrations/ci-cd-integrations/bitbucket-pipelines-integration.md)
     * [Jenkins integration overview](integrations/ci-cd-integrations/jenkins-integration-overview.md)
     * [Install the Snyk plugin on your Jenkins account](integrations/ci-cd-integrations/install-the-snyk-plugin-on-your-jenkins-account.md)
     * [Jenkins integration: Snyk for your pipeline](integrations/ci-cd-integrations/jenkins-integration-snyk-for-your-pipeline.md)
