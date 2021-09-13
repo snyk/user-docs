@@ -315,7 +315,7 @@
     * [How Snyk finds out about new vulnerabilities](fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/how-snyk-finds-out-about-new-vulnerabilities.md)
     * [What languages do we support Fix Pull Requests or Merge Requests?](fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md)
     * [Fix your vulnerabilities](fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md)
-    * [Upgrading package versions to fix vulnerabilities](fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/untitled.md)
+    * [Upgrading package versions to fix vulnerabilities](fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/upgrading-package-versions-fix-vulnerabilities.md)
     * [Snyk patches to fix vulnerabilities](fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
     * [Introduction to ignoring issues](fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/introduction-to-ignoring-issues.md)
     * [Merge advice](fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/merge-advice.md)
