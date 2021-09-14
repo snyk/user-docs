@@ -32,14 +32,23 @@ Snyk’s extensibility and API enable developers to tune Snyk’s security autom
 
 ## Get started with Snyk
 
-To get started with Snyk products now, see our [Getting started guides](https://docs.snyk.io/getting-started):
+To get started with Snyk products now, see our [Getting started d](https://docs.snyk.io/getting-started)ocumentation:
 
 * [Get started with Snyk Open Source](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-snyk-open-source). 
 * [Get started with Snyk License Compliance](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-snyk-licensing-compliance).
 * [Get started with Snyk Code](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-with-snyk-code).
 * [Get started with Snyk Container](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-snyk-container).
 * [Get started with Snyk IaC](https://support.snyk.io/hc/en-us/articles/360014938398-Getting-started-with-Snyk-Infrastructure-as-Code-IaC-).
-* 
+
+## Onboarding guides
+
+Use the following guides to learn how to implement and begin using Snyk at your company:
+
+* [Get started ](https://snyk.gitbook.io/get-started/)- learn how to prepare for and roll out Snyk to your teams
+* [Group admin ](https://snyk.gitbook.io/group-set-up/)- learn how to configure settings at the group level
+* [Org admin](https://snyk.gitbook.io/org-set-up/)- learn how to configure settings at the organization level
+* [Developers](https://snyk.gitbook.io/dev-training/) - learn how to use Snyk from the Snyk web app, in the CLI, in an IDE, or directly from your source code manager
+
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
