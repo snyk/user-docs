@@ -2,10 +2,10 @@
 
 Snyk Code currently supports:
 
-* [**Java**](../snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md)\*\*\*\*
-* \*\*\*\*[**JavaScript and TypeScript**](../snyk-open-source/language-and-package-manager-support/snyk-for-javascript.md)\*\*\*\*
-* \*\*\*\*[**Python**](../snyk-open-source/language-and-package-manager-support/snyk-for-python.md)\*\*\*\*
-* **C\#** \(see section below\)
+* [**Java**](../snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md)
+* [**JavaScript and TypeScript**](../snyk-open-source/language-and-package-manager-support/snyk-for-javascript.md)
+* [**Python**](../snyk-open-source/language-and-package-manager-support/snyk-for-python.md)
+* \*\*\*\*[**C\#**](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support#c-frameworks)
 
 ## Language type and framework support
 
