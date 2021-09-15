@@ -139,8 +139,6 @@
     * [Quay image scanning](snyk-container/image-scanning-library/quay-image-scanning/README.md)
       * [Container security with Quay integration](snyk-container/image-scanning-library/quay-image-scanning/container-security-with-quay-integration.md)
       * [Scan container images from Quay in Snyk](snyk-container/image-scanning-library/quay-image-scanning/scan-container-images-from-quay-in-snyk.md)
-  * [Use Snyk intel with Trivy client](snyk-container/use-snyk-intel-with-trivy-client/README.md)
-    * [Scan images with Trivy and get results from Snyk](snyk-container/use-snyk-intel-with-trivy-client/scan-images-trivy-get-results-snyk.md)
 * [Snyk Infrastructure as Code](snyk-infrastructure-as-code/README.md)
   * [Scan Terraform files](snyk-infrastructure-as-code/scan-terraform-files/README.md)
     * [Configure your integration to find security issues in your Terraform filess](snyk-infrastructure-as-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess.md)
