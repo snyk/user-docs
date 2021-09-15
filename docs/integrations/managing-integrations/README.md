@@ -2,7 +2,7 @@
 
 Administrators and account owners can:
 
-* Use [service accounts](https://docs.snyk.io/integrations/managing-integrations-overview/service-accounts) to configure integrations
+* Use [service accounts](service-accounts.md) to configure integrations
 * [Copy \(clone\) integrations](https://docs.snyk.io/integrations/managing-integrations-overview/clone-an-integration-across-your-snyk-orgs)
 * [Delete \(disable\) integrations](https://docs.snyk.io/integrations/managing-integrations-overview/disable-a-git-integration)
 
