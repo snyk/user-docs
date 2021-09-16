@@ -2,7 +2,7 @@
 
 Welcome to the Snyk user documentation portal!
 
-* [Introducing Snyk](https://docs.snyk.io/introducing-snyk): read an [introduction to Snyk](https://docs.snyk.io/introducing-snyk/introduction-to-snyk) and explore [Snyk's core concepts](https://docs.snyk.io/introducing-snyk/snyks-core-concepts)
+* [Introducing Snyk](introducing-snyk/): read an [introduction to Snyk](https://docs.snyk.io/introducing-snyk/introduction-to-snyk) and explore [Snyk's core concepts](https://docs.snyk.io/introducing-snyk/snyks-core-concepts)
 * [Getting started](https://docs.snyk.io/getting-started): learn how to [set up a Snyk account](https://docs.snyk.io/getting-started/getting-started-snyk-products) and [select a Snyk product to use](https://docs.snyk.io/getting-started/getting-started-snyk-products/select-snyk-product-tool)
 * Snyk product docs: access information for:
   * [Snyk Open Source](https://docs.snyk.io/snyk-open-source)
