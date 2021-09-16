@@ -1,6 +1,12 @@
 # Snyk CLI
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+{% page-ref page="install-the-snyk-cli/" %}
+
+{% page-ref page="guides-for-our-cli/cli-reference.md" %}
+
+{% page-ref page="guides-for-our-cli/getting-started-with-the-cli.md" %}
+
+
+
+
 
