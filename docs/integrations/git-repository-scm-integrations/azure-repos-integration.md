@@ -2,7 +2,7 @@
 
 The user generates a unique Azure DevOps personal access token \(PAT\) generated for Snyk specifically. Together the username and password constitute a token that Snyk uses. The token authorizes Snyk to access the user’s repos for only the specific permissions that the user indicates to Azure Repos when generating it.
 
-1. The user selects projects and repositories for import to Snyk \(for testing and monitoring\/). The user can also enter custom file locations for any manifest files that are not located in the root folders of their repositories.
+1. The user selects projects and repositories for import to Snyk \(for testing and monitoring\). The user can also enter custom file locations for any manifest files that are not located in the root folders of their repositories.
 2. Snyk evaluates the items that the user selected and imports any that have relevant manifest files in their root folder and all the subfolders at any level.
 3. Snyk communicates directly with your repository for each test it runs to determine exactly what code is currently pushed and what dependencies are being used. Each dependency is tested against Snyk’s vulnerability database to see if it contains any known vulnerabilities.
 4. Based on your configurations, if vulnerabilities are found, Snyk notifies you via email or Slack so that you can take immediate remediation action.

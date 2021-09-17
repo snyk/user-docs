@@ -23,7 +23,7 @@ See [Git repository SCM integrations](https://support.snyk.io/hc/en-us/sections/
 Enable at the global integration level:
 
 1. Navigate to settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 
-2. Select an SCM integration \(for example, GitHub\/). 
+2. Select an SCM integration \(for example, GitHub\). 
 3. Enable **New vulnerabilities**
 
 **Apply changes to all overridden projects** will update all of the individual project settings for "Automatic fix pull requests". If a project previously had its own settings for this, clicking on this button will override it with the global setting.

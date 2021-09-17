@@ -52,7 +52,7 @@ Common Vulnerabilities and Exposures. A widely-used identifier for a well-known 
 
 ### CVSS
 
-Common Vulnerability Scoring System. An industry standard to assess the severity of vulnerabilities, using a score of 0 \(lowest\) to 10 \(highest\/). Snyk uses CVSS.
+Common Vulnerability Scoring System. An industry standard to assess the severity of vulnerabilities, using a score of 0 \(lowest\) to 10 \(highest\). Snyk uses CVSS.
 
 ### CWE
 
@@ -191,7 +191,7 @@ Pull request. Allows a user to exchange changes made to source code and collabor
 
 ### Priority Score
 
-Snyk scores issues \(vulnerabilities and licenses\), to help prioritze treatment of each one. Scores are based on multiple factors including as the CVSS score, and range from 0 \(low\) to 1000 \(high\/). See [Snyk Priority Score](fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score).
+Snyk scores issues \(vulnerabilities and licenses\), to help prioritze treatment of each one. Scores are based on multiple factors including as the CVSS score, and range from 0 \(low\) to 1000 \(high\). See [Snyk Priority Score](fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score).
 
 ### Project
 
@@ -269,7 +269,7 @@ A Snyk tool, Enables developers to programatically integrate with Snyk. See [Sny
 
 ### Snyk Broker
 
-A client/server system that serves as an agent / proxy, allowing Snyk to scan private customer environments \(Jira, code repositories or container registries\/). It relays messages and allows users to filter which messages are allowed through; for example, allowing users to expose only some Github APIs to Snyk. See [Snyk Broker documentation](integrations/snyk-broker).
+A client/server system that serves as an agent / proxy, allowing Snyk to scan private customer environments \(Jira, code repositories or container registries\). It relays messages and allows users to filter which messages are allowed through; for example, allowing users to expose only some Github APIs to Snyk. See [Snyk Broker documentation](integrations/snyk-broker).
 
 ### Snyk CLI
 

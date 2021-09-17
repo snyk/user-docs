@@ -16,7 +16,7 @@ The integration allows you to:
 > **Feature availability**  
 > On-premise Gitlab integrations are available for customers on Enterprise plans and above. See [pricing plans](https://snyk.io/plans/) for more details.
 
-This integration only works with GitLab instances that are publicly reachable \(not on a private network\/). A [Snyk Broker](integrations/snyk-broker/set-up-snyk-broker) environment is required for private network instances.
+This integration only works with GitLab instances that are publicly reachable \(not on a private network\). A [Snyk Broker](integrations/snyk-broker/set-up-snyk-broker) environment is required for private network instances.
 
 **Steps:**
 
@@ -70,7 +70,7 @@ Whenever a vulnerability is disclosed that affects a project you’re watching, 
 
 ## Get a Snyk merge request when new upgrades or patches are available
 
-When no upgrade is available, you can ignore or patch the vulnerability \(patching is only available for Node.js projects\/). When a better remediation option has become available, for example, an upgrade for a vulnerability you previously ignored, Snyk notifies you about this via email and also generates a merge request with the new fix.
+When no upgrade is available, you can ignore or patch the vulnerability \(patching is only available for Node.js projects\). When a better remediation option has become available, for example, an upgrade for a vulnerability you previously ignored, Snyk notifies you about this via email and also generates a merge request with the new fix.
 
 ## Disable the GitLab integration
 

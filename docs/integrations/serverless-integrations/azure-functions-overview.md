@@ -64,7 +64,7 @@ The first is on your integration settings page, where you'll see your current in
 
 ![](../../.gitbook/assets/image%20%2825%29.png)
 
-You can also check the status directly on the Azure Functions integration settings page \(found by clicking "**Edit settings**" on the integration settings page shown above\/). If you've entered credentials, you'll see a box indicating whether or not Snyk is able to correctly connect to Azure:
+You can also check the status directly on the Azure Functions integration settings page \(found by clicking "**Edit settings**" on the integration settings page shown above\). If you've entered credentials, you'll see a box indicating whether or not Snyk is able to correctly connect to Azure:
 
 ![](../../.gitbook/assets/image%20%2831%29.png)
 

@@ -77,7 +77,7 @@ Click **Full details** from a vulnerability card to view more information:
 
 Full details include all the information in the vulnerability card, plus:
 
-* **Data flow**: this area on the left shows the full taint flow of the issue in the code, from the source \(the user input\) to the sink \(the operation that needs to receive clean input and can be exploited otherwise\/). In the above example, the developer has not sanitized the input, allowing an attacker to do a pass traversal to potentially access any file on the file system, including sensitive data such as password files.
+* **Data flow**: this area on the left shows the full taint flow of the issue in the code, from the source \(the user input\) to the sink \(the operation that needs to receive clean input and can be exploited otherwise\). In the above example, the developer has not sanitized the input, allowing an attacker to do a pass traversal to potentially access any file on the file system, including sensitive data such as password files.
 * **Fix analysis:** insight into the remediation and background of the issue itself. Developers are able to see fix-related information, vulnerability overview information \(understanding and approach\), and fix examples for this vulnerability type.
 * A link to the source file, which you can open to make changes directly \(see [Open the source code file](using-snyk-code-web.md)\).
 * A full window showing the code affected, with specific lines highlighted to accompany the **Data flow** information.
@@ -95,7 +95,7 @@ Full details include all the information in the vulnerability card, plus:
 
 ## Example: Cross-site Scripting \(XSS\)
 
-This shows an example of a common vulnerability, Cross-site Scripting \(XSS\/). XSS vulnerabilities allow attackers to compromise the interactions users have with your application, including gaining control over the application's functionality and data.
+This shows an example of a common vulnerability, Cross-site Scripting \(XSS\). XSS vulnerabilities allow attackers to compromise the interactions users have with your application, including gaining control over the application's functionality and data.
 
 The vulnerability card shows key information about this vulnerability:
 

@@ -8,7 +8,7 @@ Issues can be ignored and viewed via the snyk.io UI, the Snyk APIs, the Snyk CLI
 
 Ignoring security issues should not be the default action, but it is sometimes necessary. The best practice is to fix or patch vulnerabilities, or to remove the vulnerable dependency, but there may still be reasons why you would want to suppress an issue – for example, if an issue doesn’t currently have a fix, you might want to ignore it until it does.
 
-Some issues are irrelevant for certain projects \(e.g. a DDOS attack for an internal service\/). Other times, an issue has a path that makes it non-exploitable. In these scenarios, you should still fix the issue, as although the vulnerability is not exploitable today, it may be exploitable in future.
+Some issues are irrelevant for certain projects \(e.g. a DDOS attack for an internal service\). Other times, an issue has a path that makes it non-exploitable. In these scenarios, you should still fix the issue, as although the vulnerability is not exploitable today, it may be exploitable in future.
 
 ## Ignoring issues in the UI
 
@@ -38,7 +38,7 @@ Suppressing issues is possible via the CLI. For node.js projects, you can use **
 
 See [Ignore vulnerabilities using Snyk CLI](snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli) for more details.
 
-When using **Snyk wizard** or **Snyk ignore**, the .snyk policy file is updated with the path and given a reason \(if one was provided\/). For example:
+When using **Snyk wizard** or **Snyk ignore**, the .snyk policy file is updated with the path and given a reason \(if one was provided\). For example:
 
 ```text
 'npm:moment:20170905':

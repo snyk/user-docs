@@ -47,7 +47,7 @@ The first time it is needed, the plugin automatically downloads the CLI in the b
 3. Click **Authenticate** when prompted by Snyk.
 4. After authentication you see a confirmation message for successful authentication.
 5. Close the browser window and return to the IDE. The IDE then reads and saves the authentication on your local machine. 
-6. In the IDE, you can select which Snyk products to use \(Snyk Open Source, Snyk Code or both\/). 
+6. In the IDE, you can select which Snyk products to use \(Snyk Open Source, Snyk Code or both\). 
 7. You can start the analysis by pressing the **Analyze now!** button:
 
 ![](../../.gitbook/assets/analyze-now.png)

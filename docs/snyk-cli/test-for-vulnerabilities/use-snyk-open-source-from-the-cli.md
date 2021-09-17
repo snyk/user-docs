@@ -64,7 +64,7 @@ $ snyk test --file=req.txt --package-manager=pip
 
 ## **Test dev dependencies**
 
-Many package managers allow calling out separately dependencies which are to be used only in a development/test context \(i.e don't get eventually shipped to production\/). By default Snyk does not scan these dependencies. If you want your dev dependencies to be included in the scan use the dev flag:
+Many package managers allow calling out separately dependencies which are to be used only in a development/test context \(i.e don't get eventually shipped to production\). By default Snyk does not scan these dependencies. If you want your dev dependencies to be included in the scan use the dev flag:
 
 ```text
 $ snyk test --dev

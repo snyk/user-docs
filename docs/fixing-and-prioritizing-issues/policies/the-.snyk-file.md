@@ -18,7 +18,7 @@ When present, the `.snyk` policy is used to apply ignores and other settings for
 * Defines **Ignores** 
   * Snyk will check the Snyk database and `.snyk` file for ignore rules when performing CLI & CI/CD scanning. 
     * When present Snyk policy is used to apply ignores and other settings for `snyk test`, `snyk protect` and `snyk monitor` commands as well as any tests via the API or website.
-  * **NOTE**: only the database ignore rules are applied if **admin users only is** enabled \(click on  **Settings &gt; General &gt; Ignores**\/). The ignore rules already present in the `.snyk` file are applied regardless of the admin setting for the organization. Developers are able to ignore issues via `.snyk` when using `snyk monitor` .
+  * **NOTE**: only the database ignore rules are applied if **admin users only is** enabled \(click on  **Settings &gt; General &gt; Ignores**\). The ignore rules already present in the `.snyk` file are applied regardless of the admin setting for the organization. Developers are able to ignore issues via `.snyk` when using `snyk monitor` .
   * When the `.snyk` file is included in an SCM project, Snyk will consider both the database ignores and the `.snyk` ignores.
   * Specify project level Python version in SCM or CLI scans
 * Defines certain **analysis configuration items**, such as language settings/python version. 

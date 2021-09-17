@@ -150,7 +150,7 @@ You can use Snyk's JSON output to create custom test reports as build artifacts,
 
 ## Creating work items for new vulnerabilities
 
-Snyk allows you to automatically create new work items in JIRA \(see [Jira integration](integrations/untitled-3/jira) documentation\/). You can customize this code for your specific requirements, or adapt it to work with other work management systems.
+Snyk allows you to automatically create new work items in JIRA \(see [Jira integration](integrations/untitled-3/jira) documentation\). You can customize this code for your specific requirements, or adapt it to work with other work management systems.
 
 See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns) to get started, or review the [API to create Jira tickets.](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices/README.md#reference/projects/project-jira-issues/create-jira-issue)
 
@@ -224,7 +224,7 @@ Some customers have complex projects, with multiple languages, package managers,
   snyk test --file=package.json
   ```
 
-  After you install the dependencies of each project, make a similar call pointing to the specific artifact \(such as **pom.xml**\/). This is fast and efficient, but can be difficult to scale, especially if you are not familiar with the project.
+  After you install the dependencies of each project, make a similar call pointing to the specific artifact \(such as **pom.xml**\). This is fast and efficient, but can be difficult to scale, especially if you are not familiar with the project.
 
 * Use the **--all-projects** and **--detection-depth** arguments, and the Snyk CLI or CI/CD plugin will search up to **--detection-depth** in the folder structure for any manifests that match the supported files types. Each project is scanned and has its own result. Similarly, if using **snyk-monitor**, a separate result is created for each project. This is a good way to automate scanning especially if you have projects spanning node, .net, python, and so on.
 

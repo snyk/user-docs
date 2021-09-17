@@ -38,7 +38,7 @@ Snyk currently supports integration with AWS Lambda for Node, Ruby and Java proj
 ## Configure your integration with Snyk
 
 1. Allow a few minutes for AWS to update the role on their servers.
-2. From AWS, copy the **Role ARN** key that appears at the top of the **Summary** section \(inside the **Role** area still; in the format arn:aws:iam:::role/\/). Save this value to paste in Snyk soon.
+2. From AWS, copy the **Role ARN** key that appears at the top of the **Summary** section \(inside the **Role** area still; in the format arn:aws:iam:::role/\). Save this value to paste in Snyk soon.
 3. Now, log in to [your Snyk account](https://app.snyk.io/).
 4. Navigate to **Integrations** from the menu bar at the top, find and click the **AWS Lambda** option: ![image1.png](../../.gitbook/assets/uuid-f045ee35-1ddd-34e1-bbe3-f225bb9426e4-en.png) The **AWSLambda** configuration page in the **Settings** area loads, with the **External ID** value automatically populated for you based on the Snyk organization that you’re configuring.
 5. Paste the **Role ARN** that you saved on the side into the **ARN** field.

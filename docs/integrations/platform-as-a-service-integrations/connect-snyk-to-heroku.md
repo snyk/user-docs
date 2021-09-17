@@ -28,7 +28,7 @@ The first is on your integration settings page, where you’ll see your current 
 
 ![](../../.gitbook/assets/uuid-fb1cad51-f7f5-34ae-1142-f24fab0b0751-en%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%282%29%20%282%29.png)
 
-The connection status is also displayed directly on the Heroku integration settings page \(found by clicking “Edit settings” on the integration settings page shown above\/). If you’ve entered credentials, you’ll see a box indicating whether or not Snyk is able to correctly connect to Heroku.
+The connection status is also displayed directly on the Heroku integration settings page \(found by clicking “Edit settings” on the integration settings page shown above\). If you’ve entered credentials, you’ll see a box indicating whether or not Snyk is able to correctly connect to Heroku.
 
 ![](../../.gitbook/assets/uuid-36c5692a-e30e-973d-2ad4-548e38b9af93-en.png)
 
