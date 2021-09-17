@@ -36,22 +36,22 @@ The ability to assign and remove values from attributes, and filter projects by 
 1. On the project page, click the “+” icon below the attribute you want to assign a value to
 2. Select a value from the list available
 
-![](../../.gitbook/assets/gs1.png/)
+![](../../.gitbook/assets/gs1.png)
 
 You have assigned a value to the attribute, and it will appear on the project listing page. Each attribute can have multiple values assigned to them, and you can assign values to multiple attributes.
 
-![](../../.gitbook/assets/gs2.png/)
+![](../../.gitbook/assets/gs2.png)
 
 **Removing values from attributes**
 
 1. Select the attribute you want to remove a value from
 2. Click the “x” icon on the value.
 
-![](../../.gitbook/assets/gs3.png/)
+![](../../.gitbook/assets/gs3.png)
 
 The value has been removed from the attribute.
 
-![](../../.gitbook/assets/gs4.png/)
+![](../../.gitbook/assets/gs4.png)
 
 **Filtering values in the project listing page**
 
@@ -59,7 +59,7 @@ The value has been removed from the attribute.
 2. When you filter by multiple values on a single attribute, you will return projects that have been assigned one or more of the values in the filter.
 3. When you filter by multiple attributes, you will return projects which have been assigned values of both attributes in the filter.
 
-![](../../.gitbook/assets/gs5.png/)
+![](../../.gitbook/assets/gs5.png)
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

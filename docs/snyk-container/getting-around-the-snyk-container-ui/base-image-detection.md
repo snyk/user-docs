@@ -19,7 +19,7 @@ If the base image is an [Official Docker image](https://docs.docker.com/docker-h
 
 This allows you to see vulnerability counts in minor and major upgrades, as well as in alternative base images which might have fewer vulnerabilities. With that, you can decide whether to upgrade your base image, and which one will be the best fit.
 
-![](../../.gitbook/assets/base-image2.png/)
+![](../../.gitbook/assets/base-image2.png)
 
 See [Analysis and remediation for your images from the Snyk app](snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app/) for more details.
 

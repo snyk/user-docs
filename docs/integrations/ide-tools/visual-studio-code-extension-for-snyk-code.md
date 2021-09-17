@@ -25,7 +25,7 @@ Once installed you can find a Snyk icon in the sidebar.
 
 Snyk’s extension provides all the suggestions in a concise and clean view containing all information you need to decide how to fix or act upon:
 
-![](../../.gitbook/assets/image%20%2850%29.png/)
+![](../../.gitbook/assets/image%20%2850%29.png)
 
 ## Authentication
 
@@ -33,7 +33,7 @@ To authenticate follow the steps:
 
 1. Once the plugin is installed, click on the Snyk Icon in the left navigation bar:
 
-   ![](../../.gitbook/assets/icon.png/)
+   ![](../../.gitbook/assets/icon.png)
 
 2. Click **Connect VS Code with Snyk**. The plugin relies on the Snyk authentication API and it will ask you to authenticate you against Snyk’s web application:
 3. Click **Authenticate**. 
@@ -46,7 +46,7 @@ In the IDE you will notice that the extension is already picking up the files an
 
 Snyk Code analysis runs quickly, so results may even already be available:
 
-![](../../.gitbook/assets/run-analysis_results.png/)
+![](../../.gitbook/assets/run-analysis_results.png)
 
 Snyk's analysis runs automatically when you open a folder or project, or when you save your work.
 
@@ -54,21 +54,21 @@ Snyk's analysis runs automatically when you open a folder or project, or when yo
 
 To manually perform the analysis, in the configuration of the extension, you can enable Advanced Mode which enables you to control the scanning process:
 
-![](../../.gitbook/assets/image%20%2851%29.png/)
+![](../../.gitbook/assets/image%20%2851%29.png)
 
 To manually trigger a scan, either Save or manually rescan using the rescan icon:
 
-![](../../.gitbook/assets/image%20%2852%29.png/)
+![](../../.gitbook/assets/image%20%2852%29.png)
 
 If you only need the Code Quality or Code Security portion of the Snyk Code findings, you can easily hide the view with the results you don't want to see:
 
-![](../../.gitbook/assets/configure-snyk-code-quality-code-security.png/)
+![](../../.gitbook/assets/configure-snyk-code-quality-code-security.png)
 
 ## View analysis results
 
 Snyk Code analysis shows a list of security vulnerabilities and code issues found in the application code. For more details and examples of how others fixed the issue, select a security vulnerability or a code security issue. Once selected you will see the Snyk suggestion information in a panel on the right side:
 
-![](../../.gitbook/assets/install-the-plugin_suggestion-example-1-.png/)
+![](../../.gitbook/assets/install-the-plugin_suggestion-example-1-.png)
 
 ## Snyk panel
 
@@ -76,10 +76,10 @@ The Snyk analysis panel \(on the left of the code screen in the above screenshot
 
 The icons here mean:
 
-| ![image7.png](../../.gitbook/assets/image7-1-.png/) | Critical suggestion - should be addressed. |
+| ![image7.png](../../.gitbook/assets/image7-1-.png) | Critical suggestion - should be addressed. |
 | :--- | :--- |
-| ![image2.png](../../.gitbook/assets/image2-7-.png/) | Warning suggestion -  likely a coding error. |
-| ![image4.png](../../.gitbook/assets/image4-5-.png/) | Information suggestion - points to style glitches or logical issues. |
+| ![image2.png](../../.gitbook/assets/image2-7-.png) | Warning suggestion -  likely a coding error. |
+| ![image4.png](../../.gitbook/assets/image4-5-.png) | Information suggestion - points to style glitches or logical issues. |
 
 ## Editor window
 

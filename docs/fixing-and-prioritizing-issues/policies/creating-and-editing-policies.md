@@ -9,7 +9,7 @@
 5. Add rules to the policy. [Click here for information on adding license rules](../../snyk-open-source/license-policies/setting-a-license-policy/) or [click here for information on adding security rules](../security-policies/how-to-create-a-security-policy-and-set-rules/)
 6. Once you've added your rules, make sure to click **Submit** in the top right-hand corner 
 
-![](../../.gitbook/assets/screenshot_2020-05-26_at_9.47.26_am.png/)
+![](../../.gitbook/assets/screenshot_2020-05-26_at_9.47.26_am.png)
 
 ## Edit a policy
 
@@ -25,7 +25,7 @@ Deleting a policy cannot be undone. If you delete a policy that has organization
 
 Duplicating a policy will copy over the rules of a policy, but not the assigned organizations or attributes. The new policy will automatically be called ‘Copy of \(Policy Name\)…” and can be edited.
 
-![](../../.gitbook/assets/screen_shot_2021-08-11_at_2.11.06_pm.png/)
+![](../../.gitbook/assets/screen_shot_2021-08-11_at_2.11.06_pm.png)
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

@@ -11,10 +11,10 @@ Brokered Artifactory is currently supported for [Maven](integrations/private-reg
 
 ## Getting started
 
-1. Go to settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Integrations &gt; Package Repositories &gt; Artifactory** 
+1. Go to settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Integrations &gt; Package Repositories &gt; Artifactory** 
 2. You should see this screen at the beginning.
 
-![](../../.gitbook/assets/screenshot_2020-04-17_at_14.38.12.png/)
+![](../../.gitbook/assets/screenshot_2020-04-17_at_14.38.12.png)
 
 {% hint style="info" %}
 **Note**  

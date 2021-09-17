@@ -11,7 +11,7 @@ Read more about how we scan images for vulnerabilities in Container image scanni
 
 ## Snyk Container integrations
 
-![](../../.gitbook/assets/projects.png/)
+![](../../.gitbook/assets/projects.png)
 
 To address the container image security problem, Snyk Container provides a range of integrations which import projects into Snyk. These integrations support different workflows for our users and customers.
 

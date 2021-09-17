@@ -13,7 +13,7 @@ Features might not be available, depending on your subscription plan.
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [![composer-logo.svg](../../.gitbook/assets/uuid-3415efde-9bfb-2b07-3781-8169e25a2fcd-en.png)](https://support.snyk.io/hc/article_attachments/360007258958/uuid-3415efde-9bfb-2b07-3781-8169e25a2fcd-en.png/) | [Composer](https://getcomposer.org/) | ✔︎ | ✔︎ | ✔︎ |  |  |
+| [![composer-logo.svg](../../.gitbook/assets/uuid-3415efde-9bfb-2b07-3781-8169e25a2fcd-en.png)](https://support.snyk.io/hc/article_attachments/360007258958/uuid-3415efde-9bfb-2b07-3781-8169e25a2fcd-en.png) | [Composer](https://getcomposer.org/) | ✔︎ | ✔︎ | ✔︎ |  |  |
 
 ## **How it works**
 

@@ -15,7 +15,7 @@ Snyk's Bitbucket Data Center / Server integration allows you to continuously per
 3. Enter your Bitbucket DC/Server URL, and the username and password for the service account you created: 
 4. Click **Save**. Snyk connects to your Bitbucket DC/Server instance. When the connection succeeds, the following indications appear: 
 
-![](../../.gitbook/assets/333.png/)
+![](../../.gitbook/assets/333.png)
 
 You can now select the repositories for Snyk to monitor.
 
@@ -24,7 +24,7 @@ You can now select the repositories for Snyk to monitor.
 3. Snyk scans the selected repositories for dependency files \(such as package.json and pom.xml\) in the entire directory tree, and import them to Snyk as projects:
 4. The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
-![](../../.gitbook/assets/444%20%282%29%20%284%29%20%284%29%20%284%29%20%285%29%20%284%29.png/)
+![](../../.gitbook/assets/444%20%282%29%20%284%29%20%284%29%20%284%29%20%285%29%20%284%29.png)
 
 ## Bitbucket DC/Server Integration Features
 
@@ -36,7 +36,7 @@ Snyk produces advanced security reports, allowing you to explore the vulnerabili
 
 This is an example of a project level security report:
 
-![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%286%29%20%281%29%20%2814%29.png/)
+![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%286%29%20%281%29%20%2814%29.png)
 
 ## **Projects monitoring and automatic fix pull requests**
 
@@ -44,13 +44,13 @@ Snyk frequently scans your projects on either a daily or a weekly basis. When ne
 
 Here is an example of a fix pull request opened by Snyk:
 
-![](../../.gitbook/assets/666.png/)
+![](../../.gitbook/assets/666.png)
 
 To review and adjust the automatic fix pull request settings:
 
-Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png/) &gt; **Integrations**. 2. Select **Edit Settings** for Bitbucket Server 3. Navigate to **Automatic fix pull requests**:
+Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 2. Select **Edit Settings** for Bitbucket Server 3. Navigate to **Automatic fix pull requests**:
 
-![](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%287%29%20%283%29%20%2810%29.png/)
+![](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%287%29%20%283%29%20%2810%29.png)
 
 ## **Pull request tests**
 
@@ -58,15 +58,15 @@ Snyk tests any newly created pull request in your repositories for security vuln
 
 This is how Snyk pull request build check appears in the **Pull Request** page in Bitbucket DC/Server:
 
-![](../../.gitbook/assets/888.png/)
+![](../../.gitbook/assets/888.png)
 
 To review and adjust the pull request tests settings:
 
-1. Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png/) &gt; **Integrations**. 
+1. Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 
 2. Select **Edit Settings** for Bitbucket Server. 
 3. Navigate to **Default Snyk test for pull requests**:
 
-![](../../.gitbook/assets/999.png/)
+![](../../.gitbook/assets/999.png)
 
 ## Required permissions scope for the Bitbucket DC/Server integration
 
@@ -85,9 +85,9 @@ For Snyk to perform the required operations on monitored repositories \(such as 
 
 To disable this integration:
 
-Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png/) &gt; **Integrations**. 2. Find the specific integration to deactivate in your list of integrations, and click Edit settings. 3. A page appears showing the current status of your integration and a place to update your credentials, specific to each integration \(credentials, API key, Service Principal, or connection details\): 4. Click **Disconnect**.
+Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 2. Find the specific integration to deactivate in your list of integrations, and click Edit settings. 3. A page appears showing the current status of your integration and a place to update your credentials, specific to each integration \(credentials, API key, Service Principal, or connection details\): 4. Click **Disconnect**.
 
-![](../../.gitbook/assets/101010.png/)
+![](../../.gitbook/assets/101010.png)
 
 > **WARNING**  
 > Your credentials are removed from Snyk and any integration-specific projects Snyk is monitoring are deactivated on Snyk.  

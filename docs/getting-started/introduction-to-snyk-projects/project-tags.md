@@ -26,11 +26,11 @@ To create a new tag for a project:
 
 You have created a new tag. Upon creating a new tag, it will be automatically assigned to the project it was created in. The tag is also usable on any other project within your group.
 
-![](../../.gitbook/assets/screenshot_2020-09-29_at_17.58.47.png/)
+![](../../.gitbook/assets/screenshot_2020-09-29_at_17.58.47.png)
 
 You can also apply multiple values to the same key:
 
-![](../../.gitbook/assets/screenshot_2020-09-29_at_18.04.30.png/)
+![](../../.gitbook/assets/screenshot_2020-09-29_at_18.04.30.png)
 
 **Assigning and removing tags from a project**
 
@@ -42,7 +42,7 @@ If a tag exists in your group, you can apply it to any project.
 4. After you select the value, the tag will be assigned to your project
 5. To remove a tag from a project, click the "X" icon on the tag
 
-![](../../.gitbook/assets/screenshot_2020-09-29_at_18.14.44.png/)
+![](../../.gitbook/assets/screenshot_2020-09-29_at_18.14.44.png)
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

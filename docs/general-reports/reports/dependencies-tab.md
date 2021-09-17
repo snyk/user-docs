@@ -2,7 +2,7 @@
 
 The **Dependencies** area of **Reports** acts as a bill of materials for all the direct dependencies in all of the projects in the selected organization, similar to the following:
 
-![](../../.gitbook/assets/dependencies-tab.png/)
+![](../../.gitbook/assets/dependencies-tab.png)
 
 This area assists in determining dependency health—or in other words, the health of your packages, by displaying important details per package.
 
@@ -13,15 +13,15 @@ Details displayed include:
 * For supported packages, dependency health details about the package are displayed, not only for the version used in your projects but also for the overall health of the package, as follows:
   * A warning icon is displayed for packages that are deprecated, meaning the maintainers are no longer updating it.
 
-![Reports\_DependenciesDeprecated.png](../../.gitbook/assets/uuid-11be17d2-361f-7354-3c87-535f46cd2324-en.png/)
+![Reports\_DependenciesDeprecated.png](../../.gitbook/assets/uuid-11be17d2-361f-7354-3c87-535f46cd2324-en.png)
 
 * The Latest Version and Latest Publish dates. With these dates, you can more easily determine maturity of the package, as well as activity frequency.
 
-![Reports\_Dependencies\_LastVersionLastPublish.png](../../.gitbook/assets/uuid-a1fa7b20-b64d-6aa6-72be-54477241b434-en.png/)
+![Reports\_Dependencies\_LastVersionLastPublish.png](../../.gitbook/assets/uuid-a1fa7b20-b64d-6aa6-72be-54477241b434-en.png)
 
 * The version used in your project \(Version\) and the Latest Version available are both listed, enabling you understand the delta between your current package version and the most recent package version available, and evaluate outdatedness.
 
-![Reports\_Dependencies\_VersionLastVersion.png](../../.gitbook/assets/uuid-095a82e8-5858-4247-78a5-da9e80d3e291-en.png/)
+![Reports\_Dependencies\_VersionLastVersion.png](../../.gitbook/assets/uuid-095a82e8-5858-4247-78a5-da9e80d3e291-en.png)
 
 These and more details are fully described in [Elements](dependencies-tab.md).
 
@@ -34,7 +34,7 @@ Data in each of the four tabs is displayed based on the filters you've applied f
 
 Following is a close-up of the first four columns of the Reports area:
 
-![](../../.gitbook/assets/uuid-6ed50791-bb66-c746-ab11-d7edfcacdd4d-en.png/)
+![](../../.gitbook/assets/uuid-6ed50791-bb66-c746-ab11-d7edfcacdd4d-en.png)
 
 The following table describes the different parts of the Dependencies area as displayed when viewing issues either grouped or ungrouped:
 
@@ -149,7 +149,7 @@ The following table describes the different parts of the Dependencies area as di
 
 These controls appear at the top of the window:
 
-![](../../.gitbook/assets/mceclip7.png/)
+![](../../.gitbook/assets/mceclip7.png)
 
 * **Search for Dependencies**—start typing to search for a package. To view the results of multiple packages, select them from the dropdown list that opens when you click in the field. In addition, you can also click the Select All or Deselect All links in the upper right-hand corner of the dropdown list.
 * **Dependency filters**—mark the packages to be displayed by selecting specific project types as well as by dependency health status. Only issues matching all selected criteria are displayed.

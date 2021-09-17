@@ -16,7 +16,7 @@ You must sign up for an account with Snyk before you begin.
 4. When the installation ends, the Administration Plugins List loads, notifying the plugin has been uploaded. 
 5. Ensure the plugin is enabled.
 
-![](../../.gitbook/assets/uuid-fe65f4bc-9578-016c-00dd-6ddb97d2ead7-en.png/)
+![](../../.gitbook/assets/uuid-fe65f4bc-9578-016c-00dd-6ddb97d2ead7-en.png)
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

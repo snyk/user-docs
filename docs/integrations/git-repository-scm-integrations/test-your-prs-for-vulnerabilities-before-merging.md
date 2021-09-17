@@ -23,7 +23,7 @@ Settings on the project level override the settings on the organization level. C
 ## Configure the pull request test settings for your organization
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
-2. Click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Integrations**. 
+2. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 
 3. Click **Edit Settings** for integration required. 
 4. Navigate to the **Default Snyk test for pull requests** section:
 5. Choose settings from the dropdown list as follows:
@@ -42,7 +42,7 @@ We recommend that you set Snyk status checks to be mandatory for merging pull re
 ### Configure pull request test settings for a project
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
-2. Click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Integrations**, 
+2. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**, 
 3. Click **Edit Settings** for integration required. 
 4. Navigate to the **Default Snyk test for pull requests** section:
 5. Choose:

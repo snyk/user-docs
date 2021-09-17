@@ -23,7 +23,7 @@ Scanning CloudFormation provides security feedback on everything that is statica
    1. **Note**: Integrations are managed per organization. 
 2. If needed, review and adjust settings in the **Infrastructure as code** settings area:
 
-![](../../.gitbook/assets/screen_shot_2021-06-22_at_11.44.07.png/)
+![](../../.gitbook/assets/screen_shot_2021-06-22_at_11.44.07.png)
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

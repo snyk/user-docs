@@ -23,7 +23,7 @@ To add images from Nexus to Snyk:
 
 Nexus imports are indicated with a unique icon , and you can also filter to view only the Nexus projects:
 
-![](../../../.gitbook/assets/mceclip0-18-.png/)
+![](../../../.gitbook/assets/mceclip0-18-.png)
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

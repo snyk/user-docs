@@ -15,11 +15,11 @@ Once Snyk submits an upgrade pull request on your behalf, you can view the pull 
 
 To quickly review the pull request, hover over it and you can see the recommended upgrade and other pull request summary details:
 
-![](../../.gitbook/assets/uuid-3683a529-6856-d15d-c49c-ca7ed318500d-en.png/)
+![](../../.gitbook/assets/uuid-3683a529-6856-d15d-c49c-ca7ed318500d-en.png)
 
 Open the pull request to view in-depth details, including package release notes, and vulnerabilities included in the recommended upgrade.:
 
-![](../../.gitbook/assets/uuid-508983f5-8844-c19f-a43e-5a65e4ffdae9-en.png/)
+![](../../.gitbook/assets/uuid-508983f5-8844-c19f-a43e-5a65e4ffdae9-en.png)
 
 Click the Issue link from the table to view all details for the specified vulnerability, directly from our database.
 

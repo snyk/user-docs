@@ -21,9 +21,9 @@ Prerequisites
 * In your Snyk account, navigate to **Integrations** from the menu bar at the top. **\*\*Under the** Container Registries **section, find the** Nexus\*\* option and click it. 
 * In the **Account credentials** section, enter your Nexus username and password login credentials. In the **container registry name** fill in the full URL to the registry you want to integrate with. To finish, click **Save**.
 
-![](../../../.gitbook/assets/mceclip0-9-.png/)
+![](../../../.gitbook/assets/mceclip0-9-.png)
 
-![](../../../.gitbook/assets/mceclip1-20-.png/)
+![](../../../.gitbook/assets/mceclip1-20-.png)
 
 In case you are using a self-hosted Nexus registry, contact us to provide you with a token. You can read more about setting up private registry integration [here](snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries/). Snyk tests the connection values and the page reloads, now displaying Nexus integration information, and the **Add your Nexus images to Snyk** button becomes available. In case the connection to Nexus failed, notification appears under the **Connected to Nexus** section. Now you can use Snyk to scan your images from Nexus.
 

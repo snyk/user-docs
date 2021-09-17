@@ -4,7 +4,7 @@ Once you have imported your preferred Git repositories, Snyk monitors those repo
 
 Snyk currently supports this feature for npm, Yarn and Maven-Central projects through GitHub, GitHub Enterprise Server and BitBucket Cloud. For use with the Broker, your admin should first upgrade to v4.55.0 or later. See our docs for additional assistance when upgrading Broker.
 
-![](../../.gitbook/assets/image%20%288%29%20%282%29%20%284%29%20%284%29%20%284%29%20%286%29%20%283%29%20%281%29%20%283%29.png/)
+![](../../.gitbook/assets/image%20%288%29%20%282%29%20%284%29%20%284%29%20%284%29%20%286%29%20%283%29%20%281%29%20%283%29.png)
 
 ## How it works
 
@@ -29,7 +29,7 @@ Once you have imported your preferred Git repositories, Snyk monitors those repo
 
 Snyk currently supports this feature for npm, Yarn and Maven-Central projects through GitHub, GitHub Enterprise Server and BitBucket Cloud. For use with the Broker, your admin should first upgrade to v4.55.0 or later. See our docs for additional assistance when upgrading Broker.
 
-![](../../.gitbook/assets/image%20%288%29%20%282%29%20%284%29%20%284%29%20%284%29%20%286%29%20%283%29%20%281%29%20%287%29.png/)
+![](../../.gitbook/assets/image%20%288%29%20%282%29%20%284%29%20%284%29%20%284%29%20%286%29%20%283%29%20%281%29%20%287%29.png)
 
 ## Enable automatic dependency upgrade PRs for a specific project
 
@@ -51,7 +51,7 @@ Settings on the project level override the settings on the organization level. C
 **Steps:**
 
 1. Navigate to the organization for which you would like to enable automatic upgrade PRs and then click Projects.
-2. Navigate to the relevant project and click the Settings cog ![](../../.gitbook/assets/cog_icon.png/) 
+2. Navigate to the relevant project and click the Settings cog ![](../../.gitbook/assets/cog_icon.png) 
 3. From the Settings area, click on the integration settings from the left panel menu.  **Note:** These settings only apply to integration for that one project. 
 4. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled. 
 5. From the options that appear:
@@ -60,7 +60,7 @@ Settings on the project level override the settings on the organization level. C
 6. Click **Update dependency upgrade settings**
 7. Settings are saved
 
-![](../../.gitbook/assets/image%20%287%29.png/)
+![](../../.gitbook/assets/image%20%287%29.png)
 
 Every time Snyk scans this project now, it automatically submits upgrade PRs based on results. If a newer version is released for an existing Snyk upgrade PR or for an existing fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.
 

@@ -16,7 +16,7 @@ To add an attribute, click on the desired attribute checkbox\(es\) from the attr
 
 To remove an attribute from a policy, uncheck the desired attribute checkbox\(es\) from the attribute selector panel.
 
-![](../../.gitbook/assets/screenshot_2021-03-11_at_1.20.42_pm.png/)
+![](../../.gitbook/assets/screenshot_2021-03-11_at_1.20.42_pm.png)
 
 {% hint style="info" %}
 You can create and save a policy where no attributes are selected, for example, if you have not yet decided which attributes should be associated with that policy. This policy does not apply to projects where all attributes are left blank.
@@ -29,15 +29,15 @@ To be associated with a policy, a project must have all the attributes listed on
 For example, if you have a policy assigned to `Critical`, `External`, and `Frontend`, this policy applies to projects which includes those same attributes, but not to a project with the attributes `Critical` and `External`.  
 Here is our sample policy:
 
-![](../../.gitbook/assets/screenshot_2021-03-11_at_11.54.33_am.png/)
+![](../../.gitbook/assets/screenshot_2021-03-11_at_11.54.33_am.png)
 
 Here is a project that will inherit the policy:
 
-![](../../.gitbook/assets/screenshot_2021-03-11_at_12.26.02_pm.png/)
+![](../../.gitbook/assets/screenshot_2021-03-11_at_12.26.02_pm.png)
 
 Here is a project that will not inherit the policy:
 
-![](../../.gitbook/assets/screenshot_2021-03-11_at_12.29.03_pm.png/)
+![](../../.gitbook/assets/screenshot_2021-03-11_at_12.29.03_pm.png)
 
 ## Applying multiple policies to a project
 
@@ -45,7 +45,7 @@ It is possible that more than one policy can be apply for a project. For example
 
 If more than one policy can be associated with a project, the order of the policies on the policy manager page determines precedence. The policy closest to the top of the list takes precedence over other applicable policies below it. To change the order of policies, either drag and drop the policies into the right order, or use the **...** button on the right hand side to move the policy up or down in the list.
 
-![](../../.gitbook/assets/screenshot_2021-03-11_at_12.51.25_pm.png/)
+![](../../.gitbook/assets/screenshot_2021-03-11_at_12.51.25_pm.png)
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

@@ -111,7 +111,7 @@ Snyk has pre-built integrations for SCMs including GitHub, GitHub Enterprise, Bi
 
 To check if an SCM is already configured for your Org, navigate to the **Integrations** tab. Configured SCMs are shown as **Configured**.
 
-![](../../.gitbook/assets/int1.png/)
+![](../../.gitbook/assets/int1.png)
 
 {% hint style="info" %}
 If your SCM is already configured, go to the next stage.
@@ -125,7 +125,7 @@ Below is an example of how you would set up your an integration for **Github.com
 2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories: 
 3. Click **Authorize snyk** to provide Snyk with access to your repositories:
 
-![](../../.gitbook/assets/authorize%20%281%29%20%282%29%20%286%29%20%281%29%20%283%29.png/)
+![](../../.gitbook/assets/authorize%20%281%29%20%282%29%20%286%29%20%281%29%20%283%29.png)
 
 **SCM permissions on repositories**
 
@@ -144,11 +144,11 @@ For example, in GitHub, the accounts connected to Snyk need the following access
 
 By default, Snyk emails every Org User when a new issue or remediation in a project’s dependencies is found, and provides you with a weekly update of your security status across your organization. If you plan to import many projects to an Org, consider disabling all the notifications for that Org, to avoid too many email notifications sent to users.
 
-To customize the emails your Org users receive, navigate to the Org’s settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Notifications**. Any changes you make here here affect all of your organization’s members, although Org users can override these default settings in their user-level account settings.
+To customize the emails your Org users receive, navigate to the Org’s settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Notifications**. Any changes you make here here affect all of your organization’s members, although Org users can override these default settings in their user-level account settings.
 
 To disable notifications for all the users in an Org ahead of your import, uncheck the appropriate notification boxes:
 
-![](../../.gitbook/assets/image%20%2858%29.png/)
+![](../../.gitbook/assets/image%20%2858%29.png)
 
 See [Notification management](https://support.snyk.io/hc/en-us/articles/360004037657-Notification-management/) for more details.
 
@@ -159,11 +159,11 @@ See [Notification management](https://support.snyk.io/hc/en-us/articles/36000403
 3. Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.
 4. Snyk detects the manifest files \(projects\), tests them, then displays the results. Imported projects appear underneath the repository name.
 
-![](../../.gitbook/assets/int3.png/)
+![](../../.gitbook/assets/int3.png)
 
 \(Projects are continuously checked for vulnerabilities after being imported\) 5. To see if a project was imported, navigate to the projects import page. Imported projects have a ✔ icon by the repo name.
 
-![](../../.gitbook/assets/aws-sdk.png/)
+![](../../.gitbook/assets/aws-sdk.png)
 
 ## Stage 3: Enable Snyk test on PRs
 
@@ -171,7 +171,7 @@ See [Notification management](https://support.snyk.io/hc/en-us/articles/36000403
 
 By default, Snyk scans every pull request submitted on your monitored repositories, showing the results and recommendations grouped together in a single security check and a single license check:
 
-![](../../.gitbook/assets/checks-passed.png/)
+![](../../.gitbook/assets/checks-passed.png)
 
 **Status details**
 
@@ -182,7 +182,7 @@ The following statuses can appear on your Snyk checks when you click the “Deta
 * **Failure**: when issues are identified that must be fixed in order for the check to pass
 * **Error**: an error occurs when your manifest file is out of sync, Snyk couldn't read the manifest file, or Snyk couldn't find the manifest file.
 
-![](../../.gitbook/assets/security-check.png/)
+![](../../.gitbook/assets/security-check.png)
 
 **Manage PR test settings**
 
@@ -190,15 +190,15 @@ Administrators can manage settings for Snyk PR tests at the organization level t
 
 To configure the PR test settings for your organization:
 
-1. Navigate to **Org** &gt; settings ![](../../.gitbook/assets/cog_icon.png/) **&gt;** Integrations &gt; Edit Settings. 
+1. Navigate to **Org** &gt; settings ![](../../.gitbook/assets/cog_icon.png) **&gt;** Integrations &gt; Edit Settings. 
 2. Set the the toggle to **Enabled** and set the **Fail conditions** as needed:
 3. Click **Update settings**.
 
-![](../../.gitbook/assets/image13.png/)
+![](../../.gitbook/assets/image13.png)
 
 To configure the pull request test settings for a specific project, navigate to **Projects Page**&gt; **Projects Settings &gt; Edit Settings** and set conditions similarly:
 
-![](../../.gitbook/assets/main.png/)
+![](../../.gitbook/assets/main.png)
 
 {% hint style="info" %}
 You can avoid Snyk failing PRs for licensing issues, using license policies. See [License policies](https://support.snyk.io/hc/en-us/sections/360002249578-License-Policies/) for more details.
@@ -231,21 +231,21 @@ Snyk scans your projects on either a daily or a weekly basis. When new vulnerabi
 
 Here is an example of a fix pull request opened by Snyk:
 
-![](../../.gitbook/assets/mceclip0%20%281%29.png/)
+![](../../.gitbook/assets/mceclip0%20%281%29.png)
 
-To configure the PR test settings for specific projects, navigate to **Org** &gt; settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Integrations &gt; Edit Settings**
+To configure the PR test settings for specific projects, navigate to **Org** &gt; settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Integrations &gt; Edit Settings**
 
-![](../../.gitbook/assets/automatic.png/)
+![](../../.gitbook/assets/automatic.png)
 
 We suggest you exclude patches from the auto fix PRs, if your developers are not familiar with how to use them and execute them.
 
 You should ask your developers to consider the merge advice label that appears on the auto fix PRs:
 
-![](../../.gitbook/assets/merge-advice-review-recommended%20%282%29%20%282%29%20%282%29%20%286%29.png/)
+![](../../.gitbook/assets/merge-advice-review-recommended%20%282%29%20%282%29%20%282%29%20%286%29.png)
 
-![](../../.gitbook/assets/advice-green%20%281%29%20%282%29%20%282%29%20%284%29%20%283%29.png/)
+![](../../.gitbook/assets/advice-green%20%281%29%20%282%29%20%282%29%20%284%29%20%283%29.png)
 
-![](../../.gitbook/assets/merge-advice%20%282%29%20%282%29%20%284%29%20%282%29%20%281%29%20%2812%29.png/)
+![](../../.gitbook/assets/merge-advice%20%282%29%20%282%29%20%284%29%20%282%29%20%281%29%20%2812%29.png)
 
 {% hint style="info" %}
 Snyk auto fix PRs are only generated for new issues.
@@ -257,7 +257,7 @@ If your SCM is Github and you are not using Snyk Broker, then by default Snyk ro
 
 When your group is ready to start tackling security technical debt, you can configure Snyk to automatically create pull requests \(PRs\) on your behalf in order to upgrade your dependencies.
 
-![](../../.gitbook/assets/upgrade-node-uuid.png/)
+![](../../.gitbook/assets/upgrade-node-uuid.png)
 
 **How it works**
 
@@ -284,7 +284,7 @@ To set PR Settings on the project level, overriding the PR settings on the organ
 2. Click **Projects**.
 3. Navigate to the relevant project and click the **Settings** cog:
 
-   ![](../../.gitbook/assets/image%20%2856%29%20%282%29%20%283%29%20%283%29%20%281%29.png/)
+   ![](../../.gitbook/assets/image%20%2856%29%20%282%29%20%283%29%20%283%29%20%281%29.png)
 
 4. From the Settings area, click on the integration settings from the left panel menu to apply unique settings for that one project.
 5. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled.
@@ -293,7 +293,7 @@ To set PR Settings on the project level, overriding the PR settings on the organ
    2. In the Dependencies to ignore field, enter the exact name of any dependencies that should not be handled as part of the automatic functionality. This field accepts only lower case letters.
    3. Once you click ‘Upgrade dependency settings’ every time Snyk scans this project, it will automatically submit upgrade PRs based on results. If a newer version is released for an existing Snyk upgrade PR or for an existing fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.
 
-![](../../.gitbook/assets/general-github_integration.png/)
+![](../../.gitbook/assets/general-github_integration.png)
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

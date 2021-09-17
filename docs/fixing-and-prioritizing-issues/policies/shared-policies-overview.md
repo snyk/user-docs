@@ -15,11 +15,11 @@ This feature is available to Enterprise customers. See [pricing plans](https://s
 2. Navigate to your group
 3. Click on the Policies tab in the navigation bar to see all the policies that exist within your group, broken out by category. This list will include the [default policy](shared-policies-overview.md#default-policies), which is automatically created for new groups for each policy category and cannot be removed.
 
-![](../../.gitbook/assets/screen_shot_2021-08-11_at_2.15.48_pm.png/)
+![](../../.gitbook/assets/screen_shot_2021-08-11_at_2.15.48_pm.png)
 
 The Policy manager appears similar to the following:
 
-![](../../.gitbook/assets/screenshot_2021-03-26_at_11.04.50_am.png/)
+![](../../.gitbook/assets/screenshot_2021-03-26_at_11.04.50_am.png)
 
 ## Default policies
 

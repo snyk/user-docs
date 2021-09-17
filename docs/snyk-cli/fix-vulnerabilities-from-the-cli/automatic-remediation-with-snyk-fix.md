@@ -49,9 +49,9 @@ Here is the example output of running **snyk fix**:
 
 ## Enabling snyk fix
 
-To enable snyk fix during the beta period, click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Snyk Preview**, then enable the snyk fix feature and click **Save changes**.
+To enable snyk fix during the beta period, click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Snyk Preview**, then enable the snyk fix feature and click **Save changes**.
 
-![](../../.gitbook/assets/cleanshot_2021-07-02_at_11.39.43_2x.png/)
+![](../../.gitbook/assets/cleanshot_2021-07-02_at_11.39.43_2x.png)
 
 **snyk fix** supports all the **snyk test** CLI parameters.
 

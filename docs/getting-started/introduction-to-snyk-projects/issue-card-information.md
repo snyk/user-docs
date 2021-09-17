@@ -4,11 +4,11 @@ Issue cards appear in the details page for your project - see [View project info
 
 Issue cards show details for a specific vulnerability or license issue, and actions you can take with it.
 
-![](../../.gitbook/assets/screenshot_2021-03-01_at_16.19.01.png/)
+![](../../.gitbook/assets/screenshot_2021-03-01_at_16.19.01.png)
 
 Header section information:
 
-![](../../.gitbook/assets/issue-card-header.png/)
+![](../../.gitbook/assets/issue-card-header.png)
 
 * [Severity level](introducing-snyk/snyks-core-concepts/severity-levels): for example, **H** \(High\/)
 * **Issue name**: for example, **Open**.
@@ -19,7 +19,7 @@ Header section information:
 
 Body section information:
 
-![](../../.gitbook/assets/issue-card-body.png/)
+![](../../.gitbook/assets/issue-card-body.png)
 
 * **Introduced through**: The path the vulnerability or license was introduced through
 * **Fixed in:** The file the vulnerability is fixed in
@@ -28,7 +28,7 @@ Body section information:
 
 When you expand the issue card for more information, you can see the following information:
 
-![](../../.gitbook/assets/screenshot_2021-03-01_at_16.08.49.png/)
+![](../../.gitbook/assets/screenshot_2021-03-01_at_16.08.49.png)
 
 This information includes:
 

@@ -52,7 +52,7 @@ Install or upgrade the Snyk Security plugin with these steps. Once complete, you
 4. When the installation ends, the **Administration Plugins List** loads, notifying the plugin has been uploaded. 
 5. Ensure the plugin is enabled.
 
-![](../../.gitbook/assets/uuid-fe65f4bc-9578-016c-00dd-6ddb97d2ead7-en.png/)
+![](../../.gitbook/assets/uuid-fe65f4bc-9578-016c-00dd-6ddb97d2ead7-en.png)
 
 ### TeamCity configuration parameters
 

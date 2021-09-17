@@ -8,7 +8,7 @@ In this way, you can prioritize and attend to the most important and risky vulne
 
 The filter appears as follows:
 
-![](../../.gitbook/assets/image%20%2853%29.png/)
+![](../../.gitbook/assets/image%20%2853%29.png)
 
 These values are available:
 

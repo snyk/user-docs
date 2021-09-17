@@ -12,20 +12,20 @@ Snyk scans your Terraform code for misconfigurations and security issues as well
 
 * Log in to your account and navigate to the relevant group and organization that you want to manage. 
 
-![](../../.gitbook/assets/screenshot-2020-07-09-at-12.43.02-2-%20%283%29%20%284%29%20%284%29%20%284%29%20%2810%29.png/)
+![](../../.gitbook/assets/screenshot-2020-07-09-at-12.43.02-2-%20%283%29%20%284%29%20%284%29%20%284%29%20%2810%29.png)
 
 * If you already imported your repositories for testing before the infrastructure as code feature was enabled by your administrator, then you should re-import that repository in order to detect the Terraform code:
 
-![](../../.gitbook/assets/screenshot_2020-07-09_at_12.44.03%20%281%29%20%281%29%20%283%29%20%283%29%20%282%29.png/)
+![](../../.gitbook/assets/screenshot_2020-07-09_at_12.44.03%20%281%29%20%281%29%20%283%29%20%283%29%20%282%29.png)
 
 * Every time a repository is scanned:
   * Every Terraform file is imported as a separate project, grouped together per repository, similar to this example: \(If you re-imported the repository in order to import the Terraform files, then Snyk imports and re-tests the already imported application manifest files - displaying the test time as "now".\/)
 
-![](../../.gitbook/assets/screenshot_2020-07-09_at_12.44.48%20%281%29%20%283%29%20%283%29%20%283%29%20%281%29%20%283%29.png/)
+![](../../.gitbook/assets/screenshot_2020-07-09_at_12.44.48%20%281%29%20%283%29%20%283%29%20%283%29%20%281%29%20%283%29.png)
 
 * Click the project link you're interested in, to view the scan results and to help correct your Terraform code:
 
-![](../../.gitbook/assets/screenshot_2020-07-09_at_12.45.26%20%281%29%20%281%29%20%283%29%20%283%29%20%282%29.png/)
+![](../../.gitbook/assets/screenshot_2020-07-09_at_12.45.26%20%281%29%20%281%29%20%283%29%20%283%29%20%282%29.png)
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

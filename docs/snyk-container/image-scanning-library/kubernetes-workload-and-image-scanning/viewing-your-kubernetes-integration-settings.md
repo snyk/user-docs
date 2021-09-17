@@ -2,7 +2,7 @@
 
 ## In the relevant organization:
 
-1. Click on settings ![](../../../.gitbook/assets/cog_icon.png/) &gt; **Integrations**. 
+1. Click on settings ![](../../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 
 2. Navigate to Kubernetes and click **Edit** **Settings**. 
 3. Navigate to the **Integration ID** and other integration settings:
 

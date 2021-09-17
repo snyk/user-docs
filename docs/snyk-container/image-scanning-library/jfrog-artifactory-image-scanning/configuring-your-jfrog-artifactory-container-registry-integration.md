@@ -13,7 +13,7 @@ Enable integration between one Artifactory instance as a container registry and 
 1. Log in to [your Snyk account](https://app.snyk.io/).
 2. Navigate to **Integrations** from the menu bar at the top, find and click the Artifactory option:
 
-   ![](../../../.gitbook/assets/image%20%2857%29.png/)
+   ![](../../../.gitbook/assets/image%20%2857%29.png)
 
 3. The configuration page in the **Settings** area loads.
 4. Enter credentials as follows: 
@@ -21,9 +21,9 @@ Enable integration between one Artifactory instance as a container registry and 
    2. **Container registry name -** the _full URL_ for the registry you’d like to integrate with.
 5. Click **Saved**.
 
-![](../../../.gitbook/assets/uuid-232f8a25-f161-ceef-2405-8325c5bf14c6-en.png/)
+![](../../../.gitbook/assets/uuid-232f8a25-f161-ceef-2405-8325c5bf14c6-en.png)
 
-![](../../../.gitbook/assets/uuid-3b329a90-394f-5ab3-af84-658b41a1edc0-en.png/)
+![](../../../.gitbook/assets/uuid-3b329a90-394f-5ab3-af84-658b41a1edc0-en.png)
 
 Snyk tests the connection values and the page reloads, now displaying integration details as you entered them. A confirmation message that the details were saved also appears in green at the top of the screen. In addition, if the connection failed, a notification appears.
 

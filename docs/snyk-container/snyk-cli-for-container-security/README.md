@@ -82,7 +82,7 @@ monitor will:
 3. Send that build of materials to the Snyk Service
 4. Return a link to the Snyk service where you can see the results
 
-![](../../.gitbook/assets/monitor.png/)
+![](../../.gitbook/assets/monitor.png)
 
 {% hint style="info" %}
 **Note**  

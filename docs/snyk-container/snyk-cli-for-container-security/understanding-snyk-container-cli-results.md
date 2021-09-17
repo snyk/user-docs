@@ -2,7 +2,7 @@
 
 **Vulnerability information**
 
-![](../../.gitbook/assets/clivulnerabiilities.png/)
+![](../../.gitbook/assets/clivulnerabiilities.png)
 
 When Snyk Container detects vulnerabilities they are presented in the output:
 
@@ -23,7 +23,7 @@ Vulnerabilities appear in reverse severity order, so the most pressing vulnerabi
 
 We also present the total dependencies with known vulnerabilities, and the total number of vulnerabilities.
 
-![](../../.gitbook/assets/clisummary.png/)
+![](../../.gitbook/assets/clisummary.png)
 
 {% hint style="info" %}
 Note  
@@ -34,7 +34,7 @@ Snyk groups the same vulnerability discovered in multiple different packages tog
 
 If Snyk determines the base image used, and the image uses an [Official Docker image](https://docs.docker.com/docker-hub/official_images/), the output includes recommendations for upgrades tol resolve some of the discovered vulnerabilities.
 
-![](../../.gitbook/assets/clirecommendations.png/)
+![](../../.gitbook/assets/clirecommendations.png)
 
 This provides a level of situational awareness, showing the vulnerability counts in minor and major upgrades or in alternative base images which might have fewer vulnerabilities.
 

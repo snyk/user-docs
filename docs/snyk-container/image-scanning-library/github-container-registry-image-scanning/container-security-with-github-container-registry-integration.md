@@ -18,7 +18,7 @@ Prerequisites
 1. In your Snyk account, navigate to **Integrations** from the menu bar at the top. Under the Container **Registries** section, find the GitHub container registry option and click it.
 2. In the **Account credentials** section, enter your GitHub container registry username and password login credentials. In the **container registry name** fill in the full URL to the registry you want to integrate with. To finish, click **Save**.
 
-![mceclip1.png](../../../.gitbook/assets/mceclip1-4-.png/)
+![mceclip1.png](../../../.gitbook/assets/mceclip1-4-.png)
 
 In case you are using a self-hosted GitHub container registry registry, contact us to provide you with a token. You can read more about setting up private registry integration [here](snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries).
 

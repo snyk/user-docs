@@ -1,8 +1,8 @@
 # Invite and collaborate with team members
 
-Click settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Members** to invite new team members:
+Click settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Members** to invite new team members:
 
-![](../../.gitbook/assets/image%20%288%29.png/)
+![](../../.gitbook/assets/image%20%288%29.png)
 
 {% hint style="info" %}
 **Feature availability**  

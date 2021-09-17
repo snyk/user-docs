@@ -1,6 +1,6 @@
 # Usage page details
 
-Click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Usage** to view:
+Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Usage** to view:
 
 * [Test usage](usage-page-details.md): the numbers of tests used.
 * [Contributing developers](usage-page-details/) number of developers contributing to projects.
@@ -8,7 +8,7 @@ Click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Usage** to vie
 
 The **Test Usage** section shows how many tests you are using over the current billing period:
 
-![](../../.gitbook/assets/test-usage.png/)
+![](../../.gitbook/assets/test-usage.png)
 
 {% hint style="info" %}
 Test limits vary for Snyk products and plans. See the [plans page](https://snyk.io/plans/) for details.
@@ -34,7 +34,7 @@ We do not count contributions to public \(open source\) repos currently as our p
 
 For example:
 
-![](../../.gitbook/assets/image__10_.png/)
+![](../../.gitbook/assets/image__10_.png)
 
 The **total unique contributors across all integrations** count shows the number of contributors across all the integrations in your Snyk account. Contributing developers are only counted once, even if they have contributed to multiple integrations or multiple repositories.
 
@@ -56,7 +56,7 @@ The **Projects** section shows test usage settings for your projects:
 
 For **Bulk actions**, select relevant projects, then select to **Delete**, **Activate** or **Deactivate** the selected projects:
 
-![](../../.gitbook/assets/usage-projects-bulk-actions.png/)
+![](../../.gitbook/assets/usage-projects-bulk-actions.png)
 
 ## Set test frequency
 
@@ -64,7 +64,7 @@ You can set the frequency of testing for each project.
 
 For each entry, you can select the frequency of testing for that project \(never, daily, or weekly\/)
 
-![](../../.gitbook/assets/usage-projects-single.png/)
+![](../../.gitbook/assets/usage-projects-single.png)
 
 Click **Deactivate** to never test, and also remove webhooks and stop showing the project’s results in reporting.
 

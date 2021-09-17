@@ -11,9 +11,9 @@ Features might not be available, depending on your subscription plan.
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![i\_icon\_npm.png](../../.gitbook/assets/uuid-aa98c079-4d3e-5e58-f450-08985b5d4b8b-en.png/) | npm | ✔︎ | ✔︎ | ✔︎ | ✔ | ✔︎ |
-| ![i\_icon\_yarn.png](../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png/) | Yarn | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
-| ![i\_icon\_yarn.png](../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png/) | Yarn Workspaces | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
+| ![i\_icon\_npm.png](../../.gitbook/assets/uuid-aa98c079-4d3e-5e58-f450-08985b5d4b8b-en.png) | npm | ✔︎ | ✔︎ | ✔︎ | ✔ | ✔︎ |
+| ![i\_icon\_yarn.png](../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) | Yarn | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
+| ![i\_icon\_yarn.png](../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) | Yarn Workspaces | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
 
 ### How it works
 
@@ -215,7 +215,7 @@ From the Snyk UI, use these parameters to customize your language preferences fo
 ![](../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%2816%29.gif/)
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage
-2. Click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Languages**
+2. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Languages**
 3. Click **Edit settings** for JavaScript to configure preferences for your JavaScript \(npm and Yarn\) projects in this organization
 
 {% hint style="success" %}

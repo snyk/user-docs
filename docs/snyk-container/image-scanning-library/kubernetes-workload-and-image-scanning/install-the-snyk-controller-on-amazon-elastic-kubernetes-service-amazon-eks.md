@@ -4,7 +4,7 @@ Installing the Snyk controller enables you to import and test your running EKS w
 
 You have the option of deploying the Snyk controller for Amazon EKS as an official [AWS Quick Start](https://github.com/aws-quickstart/quickstart-eks-snyk/). This option eliminates the need for manual configuration. Deploying this Quick Start with default parameters into an existing Amazon EKS cluster builds the following environment.
 
-![](../../../.gitbook/assets/architecture.png/)
+![](../../../.gitbook/assets/architecture.png)
 
 There are three deployment options to match most common use cases. These are as follows:
 
@@ -32,7 +32,7 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
 * Your Kubernetes cluster needs to be able to communicate with Snyk outbound over HTTPS.
 * When configuring Snyk to integrate with an Amazon Elastic Kubernetes Services \(EKS\) cluster, if you wish to scan images hosted on your Amazon Elastic Container Registry \(ECR\), you may also deploy our Quick Start, [Snyk Security on AWS](https://aws.amazon.com/quickstart/architecture/snyk-security/) to enable this integration.
 
-![](../../../.gitbook/assets/snyk_rocket.png/)
+![](../../../.gitbook/assets/snyk_rocket.png)
 
 ## [Deployment Guide](https://aws-quickstart.github.io/quickstart-eks-snyk/)
 

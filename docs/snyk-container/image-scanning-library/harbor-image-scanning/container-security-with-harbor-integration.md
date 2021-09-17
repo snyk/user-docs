@@ -23,14 +23,14 @@ Prerequisites
 
 In case you are using a self-hosted Harbor registry, contact us to provide you with a token. You can read more about setting up private registry integration [here](snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries).
 
-![](../../../.gitbook/assets/mceclip2-1-.png/)
+![](../../../.gitbook/assets/mceclip2-1-.png)
 
 {% hint style="info" %}
 **Note**  
 To set up the integration, the Harbor user should be an admin user. It currently uses /v2/\_catalog endpoint for listing repos. There is an [open issue in Harbor](https://github.com/goharbor/harbor/issues/6784), where only users with admin rights can use this endpoint.
 {% endhint %}
 
-![](../../../.gitbook/assets/mceclip1-8-.png/)
+![](../../../.gitbook/assets/mceclip1-8-.png)
 
 Snyk tests the connection values and the page reloads, now displaying Harbor integration information, and the **Add your Harbor images to Snyk** button becomes available. In case the connection to Harbor failed, notification appears under the **Connected to Harbor** section.  
 Now you can use Snyk to scan your images from Harbor.

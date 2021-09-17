@@ -25,7 +25,7 @@ Snyk tests and monitors your Amazon ECR container images by evaluating its tags 
 
 ECR files are indicated with a unique icon ![](../../../.gitbook/assets/uuid-31aa2b29-8686-5389-b5fc-1d3bd1176f9c-en.png)--you can now filter to view only those projects:
 
-![](../../../.gitbook/assets/uuid-439e3f37-6e4f-0ffa-0c3c-63c56b45ba5a-en.png/)
+![](../../../.gitbook/assets/uuid-439e3f37-6e4f-0ffa-0c3c-63c56b45ba5a-en.png)
 
 Amazon ECR integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages, also in our docs.
 

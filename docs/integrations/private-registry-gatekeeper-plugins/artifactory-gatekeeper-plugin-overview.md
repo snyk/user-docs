@@ -35,7 +35,7 @@ This article refers to the Artifactory _Plugin_, an independent piece of softwar
 ### Installation
 
 1. Log in to your Snyk account.
-2. Click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **General** to locate, copy and save the following on the side:
+2. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **General** to locate, copy and save the following on the side:
    1. Service account token or Organization API token:
    2. The Organization ID for \(any\) one of your organizations
 3. Go to [our repo in GitHub](https://github.com/snyk/artifactory-snyk-security-plugin/) and navigate to the **Releases**. 
@@ -55,7 +55,7 @@ This article refers to the Artifactory _Plugin_, an independent piece of softwar
 8. Restart your Artifactory server.    **NOTE: Refresh now** or **Reload** is not sufficient. Artifactory must be restarted.
 9. Log in to your Artifactory instance and navigate to the **System Logs** to double-check Snyk has been installed successfully.
 
-![](../../.gitbook/assets/artifactory-system-logs.png/)
+![](../../.gitbook/assets/artifactory-system-logs.png)
 
 ### How it works
 
@@ -67,7 +67,7 @@ If a scan finds issues, based on your configuration, the download request can be
 
 You can find the results of a scan under the artifact's properties where you can decide to ignore the issues and allow downloads. To find the artifact, use Artifactory's Search Bar or navigate the tree view.
 
-![](../../.gitbook/assets/uuid-c6d4c41d-5c98-079d-31e7-f4fb5c788d4c-en.png/)
+![](../../.gitbook/assets/uuid-c6d4c41d-5c98-079d-31e7-f4fb5c788d4c-en.png)
 
 ## Artifact properties
 

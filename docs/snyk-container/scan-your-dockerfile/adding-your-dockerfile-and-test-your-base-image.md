@@ -21,11 +21,11 @@ You can add a single Dockerfile to each image that you've imported.
 6. Enter the relative path in the Path to your Dockerfile field in the following format: /path/dockerfile.
 7. Click **Save**.
 
-![](../../.gitbook/assets/image%20%2845%29.png/)
+![](../../.gitbook/assets/image%20%2845%29.png)
 
 Snyk tests the project again, this time producing any relevant base image remediation advice such as in the following example:
 
-![](../../.gitbook/assets/mceclip1-2-.png/)
+![](../../.gitbook/assets/mceclip1-2-.png)
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

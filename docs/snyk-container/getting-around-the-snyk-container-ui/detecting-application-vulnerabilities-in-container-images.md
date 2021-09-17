@@ -13,7 +13,7 @@ After you integrate with a container registry and import your projects, we scan 
 1. Navigate to your container registry integration settings
 2. Enable the _**Detect application vulnerabilities**_ capability and save the changes:
 
-![](../../.gitbook/assets/mceclip1%20%281%29.png/)
+![](../../.gitbook/assets/mceclip1%20%281%29.png)
 
 ## View vulnerabilities and licensing issues
 
@@ -26,7 +26,7 @@ When an image is imported to Snyk, it appears under its registry record in the *
 
 With this feature enabled, you can also see nested manifest files detected in the image and their vulnerabilities and licensing issues.
 
-![](../../.gitbook/assets/mceclip2%20%281%29%20%281%29%20%281%29%20%283%29%20%283%29%20%284%29%20%286%29%20%281%29%20%287%29.png/)
+![](../../.gitbook/assets/mceclip2%20%281%29%20%281%29%20%281%29%20%283%29%20%283%29%20%284%29%20%286%29%20%281%29%20%287%29.png)
 
 ## Automated scanning
 
@@ -34,7 +34,7 @@ Snyk scans the image regularly based on your project’s settings, and updates y
 
 For each project, you can choose the test frequency under its settings \(the default is daily testing\).
 
-![](../../.gitbook/assets/mceclip3%20%281%29.png/)
+![](../../.gitbook/assets/mceclip3%20%281%29.png)
 
 **Supported registries**
 

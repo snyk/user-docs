@@ -21,7 +21,7 @@ Note: steps supported solely by Jenkins are in high-level only. See [Jenkins doc
    3. Update policy interval \(hours\)—this is a Jenkins parameter by which Jenkins checks the version of the installed plugin based on the value of this parameter and the frequency of your builds, updating the installation as necessary as part of the Snyk security task step if no other builds have triggered update checks already for that installation during that time interval. We recommend a policy of 24 hour intervals.
 7. Save the changes.
 8. From the Snyk app, retrieve your Snyk API token:
-   1. From your Snyk account, navigate to settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png/) &gt; **General**.
+   1. From your Snyk account, navigate to settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **General**.
    2. If you are a member of an organization, copy the **Organization API** key; if yours is a personal account, then copy the **Personal access token**.
 9. Return to your Jenkins account. From the **Credentials** area in Jenkins, enter your **Snyk API token** to enable Snyk to communicate with Jenkins, accessing your project, scanning and monitoring it.
 10. Use these values:

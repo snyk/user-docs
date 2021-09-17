@@ -12,7 +12,7 @@ The **Broker client** and **code agent** components are deployed in your infrast
 
 The Broker client provides the Agent with the connection details. The Agent uses these details to connect to your local git repository, clone the relevant files. And send the results through the brokered communications using callbacks. The brokered communication happens when a Broker client connects \(using your Broker ID\) to a Broker server running in Snyk environment:
 
-![](../.gitbook/assets/local-git.png/)
+![](../.gitbook/assets/local-git.png)
 
 See [Snyk Broker](integrations/snyk-broker/broker-introduction/) documentation for more details.
 

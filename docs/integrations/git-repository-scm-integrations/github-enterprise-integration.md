@@ -45,7 +45,7 @@ Snyk produces advanced security reports, allowing you to explore the vulnerabili
 
 This is an example of a project-level security report:
 
-![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%286%29%20%281%29%20%281%29.png/)
+![](../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%286%29%20%281%29%20%281%29.png)
 
 **Projects monitoring and automatic fix pull requests**
 
@@ -53,13 +53,13 @@ Snyk frequently scans your projects on either a daily or a weekly basis. When ne
 
 This is an example of a fix pull request opened by Snyk:
 
-![](../../.gitbook/assets/uuid-6cfdaf0b-c349-468d-fe65-4f80bad110ea-en.png/)
+![](../../.gitbook/assets/uuid-6cfdaf0b-c349-468d-fe65-4f80bad110ea-en.png)
 
 To review and adjust the automatic fix pull request settings:
 
-Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png/) &gt; **Integrations**. 2. Select **Edit Settings** for GitHub Enterprise. 3. Navigate to **Automatic fix pull requests**:
+Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 2. Select **Edit Settings** for GitHub Enterprise. 3. Navigate to **Automatic fix pull requests**:
 
-![](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%287%29%20%283%29%20%2812%29.png/)
+![](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%287%29%20%283%29%20%2812%29.png)
 
 **Pull request testing**
 
@@ -67,15 +67,15 @@ Snyk tests any newly created pull request in your repositories for security vuln
 
 This is how Snyk pull request checks appear in the Pull Request page in GitHub Enterprise:
 
-![](../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en%20%282%29%20%282%29%20%286%29%20%285%29%20%285%29.png/)
+![](../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en%20%282%29%20%282%29%20%286%29%20%285%29%20%285%29.png)
 
 To review and adjust the pull request tests settings:
 
-1. Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png/) &gt; **Integrations**. 
+1. Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 
 2. Select **Edit Settings** for GitHub Enterprise. 
 3. Navigate to **Default Snyk test for pull requests**:
 
-![](../../.gitbook/assets/mceclip5%20%281%29.png/)
+![](../../.gitbook/assets/mceclip5%20%281%29.png)
 
 ### Required permissions scope for the GitHub integration
 

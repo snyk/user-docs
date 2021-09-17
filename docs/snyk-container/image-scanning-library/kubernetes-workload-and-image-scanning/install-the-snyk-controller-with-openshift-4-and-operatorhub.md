@@ -109,7 +109,7 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
 15. Double-check successful installation from the cluster.
 16. After successfully installing the **Snyk Operator** and the instance of a **Snyk Monitor**, you can also view your cluster in Snyk.
 
-![Example of successful installation from the cluster.](../../../.gitbook/assets/image%20%2840%29.png/)
+![Example of successful installation from the cluster.](../../../.gitbook/assets/image%20%2840%29.png)
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

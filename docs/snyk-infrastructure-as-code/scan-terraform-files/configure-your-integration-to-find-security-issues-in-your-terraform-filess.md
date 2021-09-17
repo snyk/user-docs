@@ -26,7 +26,7 @@ Please see read our blog post about the ability to interpolate variables: [Snyk 
 
 * If needed, review and adjust settings in the **Infrastructure as code** settings area:
 
-![](../../.gitbook/assets/screen_shot_2021-06-22_at_11.43.49.png/)
+![](../../.gitbook/assets/screen_shot_2021-06-22_at_11.43.49.png)
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

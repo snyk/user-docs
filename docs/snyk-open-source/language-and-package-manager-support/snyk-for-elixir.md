@@ -6,7 +6,7 @@ Snyk offers security scanning to test your [Elixir](https://www.notion.so/Elixir
 
 | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |  |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![hex\_80x80.png](../../.gitbook/assets/hex_80x80.png/) | [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm/) | ✔︎ |  |  |  |  |
+| ![hex\_80x80.png](../../.gitbook/assets/hex_80x80.png) | [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm/) | ✔︎ |  |  |  |  |
 
 ## How it works
 

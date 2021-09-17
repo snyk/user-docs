@@ -8,7 +8,7 @@ See [Ignoring issues not prioritized for your project](fixing-and-prioritizing-i
 
 Each issue card has an **Ignore** button allowing you to ignore that issue:
 
-![](../../.gitbook/assets/new-ignore-2.png/)
+![](../../.gitbook/assets/new-ignore-2.png)
 
 ## Snyk CLI
 

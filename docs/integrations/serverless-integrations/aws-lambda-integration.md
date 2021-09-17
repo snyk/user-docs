@@ -6,11 +6,11 @@ Enable integration between your deployed AWS Lambda resources and a Snyk organiz
 
 You have the option of establishing cross-account access to enable Snyk's AWS Lambda integration as a 1-click deployment. This options is available as an official [AWS Quick Start](https://github.com/aws-quickstart/quickstart-snyk-security/) and eliminates the need for manual configuration.
 
-![](../../.gitbook/assets/quickstart-snyk-security-lambda.png/)
+![](../../.gitbook/assets/quickstart-snyk-security-lambda.png)
 
 You will need your Snyk **Organization ID** and AWS IAM [role ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns/) to complete the integration. The role ARN will be provided for you in the AWS CloudFormation Console's Output tab.
 
-![](../../.gitbook/assets/cloudformation-launch-stack.png/)
+![](../../.gitbook/assets/cloudformation-launch-stack.png)
 
 **Manual Process:**
 
@@ -40,11 +40,11 @@ Snyk currently supports integration with AWS Lambda for Node, Ruby and Java proj
 1. Allow a few minutes for AWS to update the role on their servers.
 2. From AWS, copy the **Role ARN** key that appears at the top of the **Summary** section \(inside the **Role** area still; in the format arn:aws:iam:::role/\). Save this value to paste in Snyk soon.
 3. Now, log in to [your Snyk account](https://app.snyk.io/).
-4. Navigate to **Integrations** from the menu bar at the top, find and click the **AWS Lambda** option: ![image1.png](../../.gitbook/assets/uuid-f045ee35-1ddd-34e1-bbe3-f225bb9426e4-en.png/) The **AWSLambda** configuration page in the **Settings** area loads, with the **External ID** value automatically populated for you based on the Snyk organization that you’re configuring.
+4. Navigate to **Integrations** from the menu bar at the top, find and click the **AWS Lambda** option: ![image1.png](../../.gitbook/assets/uuid-f045ee35-1ddd-34e1-bbe3-f225bb9426e4-en.png) The **AWSLambda** configuration page in the **Settings** area loads, with the **External ID** value automatically populated for you based on the Snyk organization that you’re configuring.
 5. Paste the **Role ARN** that you saved on the side into the **ARN** field.
 6. Click **Save**. Snyk tests the connection values and the page reloads, now displaying AWS Lambda integration details as you entered them. A confirmation message that the details were saved also appears in green at the top of the screen.
 
-![image4.png](../../.gitbook/assets/uuid-66a8f525-f274-1db4-f691-ca8112fbd8af-en.png/)
+![image4.png](../../.gitbook/assets/uuid-66a8f525-f274-1db4-f691-ca8112fbd8af-en.png)
 
 In addition, if the connection to AWS failed, notification appears under the **Connected to AWS Lambda** section accordingly.
 
@@ -99,16 +99,16 @@ You must be added as a collaborator to the Snyk organization you’d like to wor
 
 **Steps:**
 
-1. Go to **Projects**, click **Add projects** and select **AWS Lambda.** ![image5.png](../../.gitbook/assets/uuid-89dfeb36-7726-1f89-5366-b7aa603a5898-en.png/)
+1. Go to **Projects**, click **Add projects** and select **AWS Lambda.** ![image5.png](../../.gitbook/assets/uuid-89dfeb36-7726-1f89-5366-b7aa603a5898-en.png)
 
    **NOTE** If you can’t see that icon, click the **+** option and then from the **Integrations** page, find and click the **Lambda** option.
 
 2. Select the repositories and their relevant functions you’d like to test and click **Add selected repositories**.
 3. Snyk evaluates root folders and custom file locations. If no manifest files are found on the root level or in the paths you configure, Snyk notifies you that no files can be imported.
-4. Once repositories are imported, a confirmation appears in green at the top of the screen. ![](../../.gitbook/assets/uuid-ee5c7842-1773-a590-7b75-aa5e960b8108-en.png/)
+4. Once repositories are imported, a confirmation appears in green at the top of the screen. ![](../../.gitbook/assets/uuid-ee5c7842-1773-a590-7b75-aa5e960b8108-en.png)
 5. Refresh the page to view the added functions. AWS ECR images are indicated with a unique icon ![image2.png](../../.gitbook/assets/uuid-1275abc5-312a-ce0b-b6d9-2caf3e83584a-en.png), they are grouped and named by repo, and you can now also filter to view only those projects:
 
-![](../../.gitbook/assets/uuid-8f54b49d-23ee-637e-45a9-47ca61fe2b9e-en.png/)
+![](../../.gitbook/assets/uuid-8f54b49d-23ee-637e-45a9-47ca61fe2b9e-en.png)
 
 AWS Lambda integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages in our docs.
 

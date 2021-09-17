@@ -189,11 +189,11 @@ To define which Python major version Snyk uses to test your Git imported project
 To define Python version for all projects in an organization:
 
 1. Log in to your account and navigate to the relevant group and organization to manage.
-2. Click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Languages**. 
+2. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Languages**. 
 3. Click **Edit settings** for **Python**. 
 4. Select to use **Python 2** or **Python 3** when testing projects for this organization
 
-![](../../.gitbook/assets/mceclip1-18-.png/)
+![](../../.gitbook/assets/mceclip1-18-.png)
 
 We recommend you create different organizations to work with different Python versions.
 

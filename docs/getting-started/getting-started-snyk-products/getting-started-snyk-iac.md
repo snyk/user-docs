@@ -36,13 +36,13 @@ View results for configuration files in imported projects.
 
 Select **Projects**, then click on the imported project entry, to see information for scanned configuration files, including the number of high, medium and low severity issues found. For example:
 
-![](../../.gitbook/assets/iac_-_issues_list.png/)
+![](../../.gitbook/assets/iac_-_issues_list.png)
 
 \(Issues are sorted into project types: Helm, Kubernetes and Terraform.\/)
 
 Click on a project to see more information and details of the issues in a configuration file:
 
-![](../../.gitbook/assets/iac_-_select_config_file.png/)
+![](../../.gitbook/assets/iac_-_select_config_file.png)
 
 {% hint style="info" %}
 If you encounter any errors during import, see the [Importing projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects/) information.

@@ -10,7 +10,7 @@ You can filter for all container projects, similar to the following example:
 
 When you open any container project, the resulting analysis and remediation advice are displayed from the Snyk UI similar to the following:
 
-![results\_example.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007147018/uuid-069520cd-66e8-9f80-5bcf-c7845009ff54-en.png/)
+![results\_example.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007147018/uuid-069520cd-66e8-9f80-5bcf-c7845009ff54-en.png)
 
 The following information is displayed:
 
@@ -21,7 +21,7 @@ The following information is displayed:
   * Total dependencies with known vulnerabilities, and the total number of vulnerabilities
 * Remediation advice—if you included your Dockerfile for monitoring, then any available actionable remediation advice is displayed. To view all advice, click the Show more upgrade types link. The advice offered is dependent on available remediation, and appears similar to the following image:
 
-![advice\_examples.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007147038/uuid-431ce2b1-e5f0-0025-7932-0171b35cb9bb-en.png/)
+![advice\_examples.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007147038/uuid-431ce2b1-e5f0-0025-7932-0171b35cb9bb-en.png)
 
 * Upgrade suggestions can include:
   * Minor upgrades—the safest and best minor upgrade available
