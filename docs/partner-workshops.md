@@ -1,4 +1,4 @@
 # Partner Workshops
 
-[https://solutions.snyk.io/](https://solutions.snyk.io/)
+See our [Solutions documentation](https://solutions.snyk.io/) for partner workshop information.
 
