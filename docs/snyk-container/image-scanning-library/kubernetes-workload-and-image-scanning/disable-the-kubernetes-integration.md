@@ -15,6 +15,6 @@ With the controller removed, within the Integration Settings in Snyk you can hit
 ![](../../../.gitbook/assets/uuid-0873a309-1aa2-20c0-ecf0-068df973ae5d-en.png/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

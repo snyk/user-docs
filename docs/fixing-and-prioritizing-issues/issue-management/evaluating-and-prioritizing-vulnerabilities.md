@@ -36,6 +36,6 @@ The **Exploit maturity** filter is available from any detailed **Projects** page
    3. View exploit maturity data from the **Issues** list in **Ungrouped** mode: 
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

@@ -140,6 +140,6 @@ The /systemcheck endpoint is not mandatory for the brokered integration to funct
 You can now start scanning your container images directly from your private registry. See [scanning images from container registry](snyk-container/jfrog-artifactory-image-scanning/configuring-your-jfrog-artifactory-container-registry-integration/) \(Artifactory example\) for more details.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

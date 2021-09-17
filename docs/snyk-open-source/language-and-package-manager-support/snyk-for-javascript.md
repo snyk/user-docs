@@ -219,6 +219,6 @@ From the Snyk UI, use these parameters to customize your language preferences fo
 3. Click **Edit settings** for JavaScript to configure preferences for your JavaScript \(npm and Yarn\) projects in this organization
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

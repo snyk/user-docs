@@ -16,6 +16,6 @@ See also
 * [Test public repositories before use](https://support.snyk.io/hc/articles/360003851277#UUID-ba99a73f-110d-1f1d-9e7a-1bad66bf0996/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

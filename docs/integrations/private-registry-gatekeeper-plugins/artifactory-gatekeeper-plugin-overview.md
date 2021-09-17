@@ -92,6 +92,6 @@ You can enable debug logs by modifying your `${ARTIFACTORY_HOME}/var/etc/artifac
 Artifactory should automatically pick up the new configuration. If not, restart Artifactory.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

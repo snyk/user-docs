@@ -70,6 +70,6 @@ You can customize the emails all your organization’s members receive, and indi
 * [How to configure your Snyk notification settings](https://www.youtube.com/watch?v=MyLgmcHUrL4&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=5/) \(video\/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

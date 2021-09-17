@@ -22,6 +22,6 @@ From within a project that is monitored at runtime:
 ![](../../.gitbook/assets/uuid-6e84ffa7-04bd-413e-4bbb-3bd5de1d9092-en.png/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

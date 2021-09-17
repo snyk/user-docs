@@ -7,6 +7,6 @@ To apply these fixes, you can use different methods, ranging from manually apply
 See [remediate your vulnerabilities](fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities/) for more details.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

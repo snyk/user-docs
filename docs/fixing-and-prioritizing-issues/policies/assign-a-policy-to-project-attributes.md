@@ -48,6 +48,6 @@ If more than one policy can be associated with a project, the order of the polic
 ![](../../.gitbook/assets/screenshot_2021-03-11_at_12.51.25_pm.png/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

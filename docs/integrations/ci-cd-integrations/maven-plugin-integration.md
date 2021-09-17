@@ -11,6 +11,6 @@ Snyk offers a [Maven plugin](https://github.com/snyk/snyk-maven-plugin), that's 
 * Running `mvn snyk:test or mvn snyk:monitor` will run the desired goals \(either test or monitor\) outside the Maven build lifecycle.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

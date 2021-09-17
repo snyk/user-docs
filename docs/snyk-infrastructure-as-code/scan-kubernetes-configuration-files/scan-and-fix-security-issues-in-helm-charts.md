@@ -25,6 +25,6 @@ Snyk scans Helm Charts, in addition to Kubernetes configuration files, for misco
 ![](../../.gitbook/assets/screenshot_2020-04-24_at_08.51.18.png/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

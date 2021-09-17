@@ -26,6 +26,6 @@ Save the data you copied in order to paste it when configuring the integration w
 Now, configure the integration: [Configure integration for GCR](https://support.snyk.io/hc/articles/360003916118#UUID-9e0df3f8-0780-b593-573b-5185bdca4a6d).
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

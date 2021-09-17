@@ -89,6 +89,6 @@ Administrators can change token names and delete tokens. When you delete a servi
   * Click the token name to navigate to change the token name and click **Save**.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

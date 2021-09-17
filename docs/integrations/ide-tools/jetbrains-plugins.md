@@ -108,6 +108,6 @@ After the plugin is installed, you can set the following configurations for the 
 * **Snyk Code Quality issues**: analyse the project for quality issues in your application code using Snyk Code. Disabled by default.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

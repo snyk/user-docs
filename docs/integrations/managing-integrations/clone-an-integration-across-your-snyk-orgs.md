@@ -19,6 +19,6 @@ You can choose to use the same brokered Git integration across multiple organiza
 * From the row for the integration you’re setting up, click **Edit settings** to see the cloned Broker integration.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

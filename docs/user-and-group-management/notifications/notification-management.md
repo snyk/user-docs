@@ -27,6 +27,6 @@ As well as being able to tailor the emails you get about issues, you can also cu
 ![](../../.gitbook/assets/uuid-0adf4f70-019d-008a-9bde-82317eba2e44-en.png/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

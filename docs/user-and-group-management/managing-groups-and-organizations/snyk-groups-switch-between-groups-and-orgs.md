@@ -7,6 +7,6 @@ To access your groups and organizations, click on the navigation switcher. The a
 Clicking the avatar on the bottom of the switcher will display the organizations within your personal group. \(This may not be visible to you depending on your enterprise’s setup.\/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

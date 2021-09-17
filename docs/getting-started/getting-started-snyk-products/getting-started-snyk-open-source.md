@@ -97,6 +97,6 @@ See [Fixing vulnerabilities](snyk-open-source/open-source-basics/fixing-vulnerab
 See [Snyk Open Source](snyk-open-source/).
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

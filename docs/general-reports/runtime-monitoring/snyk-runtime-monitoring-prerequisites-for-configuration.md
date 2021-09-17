@@ -15,6 +15,6 @@ This feature is deprecated.
   * [Java](https://support.snyk.io/hc/articles/360003699118#UUID-f0e61d17-c33e-da57-081a-9b90927e6428/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

@@ -23,6 +23,6 @@ See also
 * [Manage vulnerability results with the Snyk CLI wizard](https://support.snyk.io/hc/articles/360003851357#UUID-b401cc8a-a55a-2b74-d9e5-c92dd49ed58c/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

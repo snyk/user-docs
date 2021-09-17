@@ -261,6 +261,6 @@ In addition to the CLI and Snyk UI features, you can also check your Java projec
 * [Maven plugin for your build flow](../../integrations/ci-cd-integrations/maven-plugin-integration/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

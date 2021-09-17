@@ -34,6 +34,6 @@ When Snyk tests your pull requests, the following are the possible statuses that
 * **Canceled** - Snyk test can't run because you've reached your monthly test limit
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

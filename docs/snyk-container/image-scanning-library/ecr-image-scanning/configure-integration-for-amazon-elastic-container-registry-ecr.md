@@ -25,6 +25,6 @@ Follow these steps to set up your integration:
 * [Amazon ECR: configure your integration with Snyk](https://support.snyk.io/hc/articles/360003947057#UUID-2f4b05ad-e072-0883-b6e8-453f8a2702ea/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

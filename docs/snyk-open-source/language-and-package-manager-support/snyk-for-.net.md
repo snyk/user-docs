@@ -175,6 +175,6 @@ From the Snyk UI, you can configure whether Snyk should scan your entire project
 2. Go to settings ![](../../.gitbook/assets/cog_icon.png/) &gt; and click for .NET Scan build dependencies - \_\*\*\_If checked, Snyk scans all development dependencies.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

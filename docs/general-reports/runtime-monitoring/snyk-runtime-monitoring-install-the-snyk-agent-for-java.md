@@ -31,6 +31,6 @@ Add the [Snyk agent](https://static.snyk.io/resources/runtime/agent/java/snyk-ja
    ```
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

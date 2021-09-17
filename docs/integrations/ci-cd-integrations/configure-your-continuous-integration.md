@@ -20,6 +20,6 @@ You can find others through an easy [Google search](https://www.google.co.uk/sea
 Learn more about [CI/CD](https://snyk.io/learn/what-is-ci-cd-pipeline-and-tools-explained/).
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

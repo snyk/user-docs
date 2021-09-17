@@ -26,6 +26,6 @@ See also
 * [Test public npm packages before use](https://support.snyk.io/hc/articles/360003812498#UUID-0ab434a8-c1b5-873d-cbf6-7a61a07c4ad8/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

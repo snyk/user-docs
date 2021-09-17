@@ -50,6 +50,6 @@ Optionally, if the build completes successfully and MONITOR is set to True in th
 ![](../../.gitbook/assets/uuid-ce212e67-b7ac-3cf7-4772-c84f6897aed9-en.png/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

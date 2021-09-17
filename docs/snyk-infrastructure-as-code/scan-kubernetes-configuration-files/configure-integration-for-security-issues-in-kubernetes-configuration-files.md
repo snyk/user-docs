@@ -34,6 +34,6 @@ From here:
 The number of tests per product are based on account plans. For information on plans and test limits, [view our plans](https://snyk.io/plans/).
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

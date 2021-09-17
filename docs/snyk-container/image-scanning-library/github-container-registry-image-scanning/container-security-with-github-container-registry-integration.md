@@ -27,6 +27,6 @@ Snyk tests the connection values and the page reloads, now displaying GitHub con
 In case the connection to GitHub container registry failed, notification appears under the **Connected to GitHub container registry** section. Now you can use Snyk to scan your images from GitHub container registry.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

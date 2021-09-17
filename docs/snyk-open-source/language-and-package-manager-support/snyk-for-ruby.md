@@ -31,6 +31,6 @@ If you use private Gem sources this should work as normal when testing via the S
 You must take additional steps to [configure private Gem sources for projects imported from Git](integrations/private-registry-integrations/private-gem-sources-for-ruby).
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

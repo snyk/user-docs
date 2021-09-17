@@ -69,6 +69,6 @@ For each entry, you can select the frequency of testing for that project \(never
 Click **Deactivate** to never test, and also remove webhooks and stop showing the project’s results in reporting.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

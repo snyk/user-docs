@@ -11,6 +11,6 @@ Snyk currently supports the ability to create Fix Pull Requests \(Fix PRs\) or M
 * [Python](snyk-open-source/language-and-package-manager-support/snyk-for-python/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 

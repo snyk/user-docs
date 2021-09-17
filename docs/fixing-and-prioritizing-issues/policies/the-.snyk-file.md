@@ -215,6 +215,6 @@ Support KB - [CLI reference](https://support.snyk.io/hc/en-us/articles/360003812
 Support KB - [Manage Vulnerabilities with the Snyk Wizard in the CLI](snyk-cli/fix-vulnerabilities-from-the-cli/manage-vulnerability-results-with-the-snyk-cli-wizard/) \(NPM/Yarn Only\/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
 
