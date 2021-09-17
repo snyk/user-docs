@@ -64,7 +64,7 @@ The first is on your integration settings page, where you'll see your current in
 
 ![](../../.gitbook/assets/image%20%2825%29.png)
 
-You can also check the status directly on the Azure Functions integration settings page \(found by clicking "**Edit settings**" on the integration settings page shown above\). If you've entered credentials, you'll see a box indicating whether or not Snyk is able to correctly connect to Azure:
+You can also check the status directly on the Azure Functions integration settings page \(found by clicking "**Edit settings**" on the integration settings page shown above\/). If you've entered credentials, you'll see a box indicating whether or not Snyk is able to correctly connect to Azure:
 
 ![](../../.gitbook/assets/image%20%2831%29.png)
 
@@ -95,7 +95,7 @@ We currently support importing only v2 functions. v1 functions will be ignored.
 
 ![](../../.gitbook/assets/image%20%2830%29.png)
 
-As soon as you've added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Azure functions in your [project dashboard](https://app.snyk.io/projects). You'll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to remediate:
+As soon as you've added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Azure functions in your [project dashboard](https://app.snyk.io/projects/). You'll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to remediate:
 
 ![](../../.gitbook/assets/image%20%2832%29.png)
 

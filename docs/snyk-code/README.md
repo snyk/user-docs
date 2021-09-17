@@ -4,10 +4,10 @@
 
 Snyk Code expands the Snyk cloud-native application security platform, supporting all elements for a modern software supply chain. For a cloud-native application, this provides security for:
 
-* [**Snyk Code**](https://docs.snyk.io/snyk-code): the application’s proprietary code.
-* [**Snyk Open Source**](https://docs.snyk.io/snyk-open-source): the open-source libraries it leverages.
-* [**Snyk Container**](https://docs.snyk.io/snyk-container): the container it runs in.
-* [**Snyk Infrastructure as Code**](https://docs.snyk.io/snyk-infrastructure-as-code): the infrastructure as code that provisions it.
+* [**Snyk Code**](snyk-code): the application’s proprietary code.
+* [**Snyk Open Source**](snyk-open-source): the open-source libraries it leverages.
+* [**Snyk Container**](snyk-container): the container it runs in.
+* [**Snyk Infrastructure as Code**](snyk-infrastructure-as-code): the infrastructure as code that provisions it.
 
 ## How does static application security testing \(SAST\) work?
 
@@ -54,10 +54,10 @@ Snyk Code also provides rich curated additional information for many suggestions
 
 Snyk Code integrates with the cloud versions of:
 
-* [GitHub](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration)
-* [GitLab](https://docs.snyk.io/integrations/git-repository-scm-integrations/gitlab-integration)
-* [Bitbucket](https://docs.snyk.io/integrations/git-repository-scm-integrations/bitbucket-cloud-integration) 
-* [Azure](https://docs.snyk.io/integrations/git-repository-scm-integrations/azure-repos-integration)
+* [GitHub](integrations/git-repository-scm-integrations/github-integration/)
+* [GitLab](integrations/git-repository-scm-integrations/gitlab-integration/)
+* [Bitbucket](integrations/git-repository-scm-integrations/bitbucket-cloud-integration/) 
+* [Azure](integrations/git-repository-scm-integrations/azure-repos-integration/)
 
 ## Using integrations
 
@@ -75,7 +75,7 @@ This integration allows you to:
 
 Snyk Code supports Java, JavaScript \(including TypeScript\), Python and C\#.
 
-See [Snyk Code language support](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support) for more information.
+See [Snyk Code language support](snyk-code/snyk-code-language-and-framework-support/) for more information.
 
 ## Snyk Code IDE plugins
 
@@ -87,7 +87,7 @@ Snyk Code supports a JetBrains plugin to support issue finding and fixing, direc
 
 ![](../.gitbook/assets/results-code.png)
 
-For more details, see [JetBrains IDE Plugins](https://docs.snyk.io/integrations/ide-tools/jetbrains-plugins).
+For more details, see [JetBrains IDE Plugins](integrations/ide-tools/jetbrains-plugins).
 
 ## VS Code IDE plugin
 

@@ -11,7 +11,7 @@ The following table describes the different parts of the **Licenses** area:
 | **Element** | **Description** |
 | :--- | :--- |
 | License | The full official name of the license, linked to additional details and information. SPDX licenses are linked to the [SPDX](https://spdx.org/) site, while non-SPDX licenses are linked to their respective site. |
-| Dependencies | The total number of dependent packages with this license in your projects, linked to a side panel that displays the full list of affected dependencies in the same layout as the [**Dependencies** area](https://snyk.io/?post_type=docs&p=12382&preview=true). |
+| Dependencies | The total number of dependent packages with this license in your projects, linked to a side panel that displays the full list of affected dependencies in the same layout as the [**Dependencies** area](https://snyk.io/?post_type=docs&p=12382&preview=true/). |
 | Projects | The total number of your projects using this license, linked to a side panel that displays the full list of your affected projects, with the same layout as the **Dependencies** tab. |
 
 **Licenses tab actions**

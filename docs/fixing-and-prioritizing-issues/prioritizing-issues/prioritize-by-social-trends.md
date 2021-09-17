@@ -16,7 +16,7 @@ How does Snyk determine if a vulnerability is trending?
 * The “Trending” notification is live until the trend dissipates plus several days.
 
 {% hint style="info" %}
-See [Snyk Priority Score](https://docs.snyk.io/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score) for more information on how vulnerabilities are prioritized by Snyk
+See [Snyk Priority Score](fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score) for more information on how vulnerabilities are prioritized by Snyk
 {% endhint %}
 
 {% hint style="success" %}

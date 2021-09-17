@@ -39,7 +39,7 @@ Reachable Vulnerabilities analysis is available for Java \(Maven and Gradle\) ap
 
 To perform Reachable Vulnerabilities analysis, you can:
 
-* Test your apps for reachability issues on repositories imported to Snyk from Git, using our Git integrations. Reachability is conducted as a part of the checks performed by Snyk \(currently, GitHub is supported\).  _**NOTE**: Using this method clones your repository to Snyk, to run the analysis. The repo will be deleted from our servers after the analysis is complete._
+* Test your apps for reachability issues on repositories imported to Snyk from Git, using our Git integrations. Reachability is conducted as a part of the checks performed by Snyk \(currently, GitHub is supported\/).  _**NOTE**: Using this method clones your repository to Snyk, to run the analysis. The repo will be deleted from our servers after the analysis is complete._
 * Analyze your code for reachability issues using Snyk CLI. To run it using Snyk CLI, you must have the app already built \(compiled\), and the bytecode of the app should be available.
 
 ### Scanning for Reachable Vulnerabilities using Snyk CLI
@@ -50,7 +50,7 @@ To perform Reachable Vulnerabilities analysis, you can:
 
 ### Scanning for Reachable Vulnerabilities using Git Integrations
 
-1. Set up your [GitHub integration](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration).
+1. Set up your [GitHub integration](integrations/git-repository-scm-integrations/github-integration).
 2. Opt-in to Reachable Vulnerabilities analysis in GitHub’s integration settings:
    * In **Organization** settings, go to the **Integrations** section.
    * Click on **gitHub**.

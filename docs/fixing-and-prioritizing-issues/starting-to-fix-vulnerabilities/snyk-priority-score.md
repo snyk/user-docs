@@ -4,7 +4,7 @@
 
 Snyk created a Priority Score to make the prioritization of issues as quick and easy as possible, ensuring the highest-risk issues have the highest score.
 
-Snyk's security group found a significant correlation between trending vulnerabilities and exploits or proof of concept's that can be found in the wild. Social trends are calculated and shown for all issues, vulnerabilities and licenses and range from 0 to 1,000 \(0 is considered low risk and 1,000 is considered critical\). This gives users a high degree of granularity that reflects the many considerations taken into account. The granularity avoids having too many issues ending up with the same score so users can determine priority at a glance with a high degree of accuracy.
+Snyk's security group found a significant correlation between trending vulnerabilities and exploits or proof of concept's that can be found in the wild. Social trends are calculated and shown for all issues, vulnerabilities and licenses and range from 0 to 1,000 \(0 is considered low risk and 1,000 is considered critical\/). This gives users a high degree of granularity that reflects the many considerations taken into account. The granularity avoids having too many issues ending up with the same score so users can determine priority at a glance with a high degree of accuracy.
 
 {% hint style="info" %}
 Snyk does not use the CVSS score alone to determine priority: Snyk’s Priority Score is a comprehensive scoring system that processes multiple factors, including the CVSS score, the availability of a fix, known exploits, how new the vulnerability is, and whether it is reachable or not. See [How it works](snyk-priority-score.md) section for details.
@@ -20,12 +20,12 @@ Snyk continually refines our prioritization algorithm to include new factors, an
 
 Currently, these factors include:
 
-* [**Severity levels**](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/severity-levels): calculated using CVSS scores for that issue.
+* [**Severity levels**](introducing-snyk/snyks-core-concepts/severity-levels): calculated using CVSS scores for that issue.
 * [**Exploit Maturity**](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/): determined by Snyk’s industry-leading security team using manual and automated methods to track which vulnerabilities are exploitable, and to what extent.
 * [**Reachability**](https://snyk.io/blog/optimizing-prioritization-with-deep-application-level-context/): by looking at the code paths called within a project, Snyk identifies which vulnerabilities are reachable from the code.
 * [**Fixability**](https://support.snyk.io/hc/en-us/articles/4405034808209) \(availability of a fix\): without a safer version to upgrade to, or a Snyk patch available, developers must either fix the code themselves or use an alternative package. So vulnerabilities with fixes are given higher priorities.
 * **Time**: new vulnerabilities are likely to be an increased risk, so increasing priority score.
-* [**Social Trends**](https://docs.snyk.io/fixing-and-prioritizing-issues/prioritizing-issues/prioritize-by-social-trends): Snyk monitors mentions of known vulnerabilities in Twitter, calculating the trend of tweets and reactions.
+* [**Social Trends**](fixing-and-prioritizing-issues/prioritizing-issues/prioritize-by-social-trends): Snyk monitors mentions of known vulnerabilities in Twitter, calculating the trend of tweets and reactions.
 * Malicious Packages: Snyk will prioritize vulnerabilities originating from malicious packages.
 
 ## Priority calculation for Kubernetes
@@ -43,7 +43,7 @@ A number of specific factors contribute to priority calculation for Snyk Code, i
 * **Hot files**: if the vuln is in the source file, or inside a code flow
 * **Fixability**: If we have fix examples available for this issue
 
-See [Snyk Code](https://docs.snyk.io/snyk-code) documentation for more details.
+See [Snyk Code](snyk-code) documentation for more details.
 
 ## View scores in projects
 

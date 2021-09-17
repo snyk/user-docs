@@ -4,7 +4,7 @@ Snyk scans CloudFormation code for misconfigurations and security issues. For co
 
 ## **Prerequisites**
 
-* An administrator integrates the organization with a preferred Git repository and enables the detection of configuration files as described in [Configure your integration to find security issues in your CloudFormation files](https://docs.snyk.io/snyk-infrastructure-as-code/scan-cloudformation-files/configure-your-integration-to-find-security-issues-in-your-cloudformation-files).
+* An administrator integrates the organization with a preferred Git repository and enables the detection of configuration files as described in [Configure your integration to find security issues in your CloudFormation files](snyk-infrastructure-as-code/scan-cloudformation-files/configure-your-integration-to-find-security-issues-in-your-cloudformation-files).
 * The Snyk account and CloudFormation files will be in `JSON` and `YAML` formats.
 
 ## Scan and fix configuration files

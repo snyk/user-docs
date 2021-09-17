@@ -64,7 +64,7 @@ Once you've completed installation, get started testing and remediating your vul
 
 You can use a Snyk created Docker container already containing npm, the Snyk CLI and other necessary components. Follow the detailed instructions here [https://hub.docker.com/r/snyk/snyk-cli](https://hub.docker.com/r/snyk/snyk-cli)
 
-Once you've completed installation, get started testing and remediating your vulnerabilities with our [Getting started](https://support.snyk.io/hc/articles/360003812458#UUID-19fc37f2-b686-11ed-b85c-4789e90c8dfc) guide and [our full list](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0)[ ](https://docs.snyk.io/snyk-cli/guides-for-our-cli/cli-reference)of our CLI commands, options and arguments.
+Once you've completed installation, get started testing and remediating your vulnerabilities with our [Getting started](https://support.snyk.io/hc/articles/360003812458#UUID-19fc37f2-b686-11ed-b85c-4789e90c8dfc) guide and [our full list](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0)[ ](snyk-cli/guides-for-our-cli/cli-reference)of our CLI commands, options and arguments.
 
 ## Install the Snyk CLI with Homebrew
 

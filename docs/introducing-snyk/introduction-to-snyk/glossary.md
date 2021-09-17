@@ -12,7 +12,7 @@ The parent image used to construct a container image, usually defined in the FRO
 
 ### Broker
 
-See [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker).
+See [Snyk Broker](integrations/snyk-broker).
 
 ### Build System
 
@@ -52,7 +52,7 @@ Common Vulnerabilities and Exposures. A widely-used identifier for a well-known 
 
 ### CVSS
 
-Common Vulnerability Scoring System. An industry standard to assess the severity of vulnerabilities, using a score of 0 \(lowest\) to 10 \(highest\). Snyk uses CVSS.
+Common Vulnerability Scoring System. An industry standard to assess the severity of vulnerabilities, using a score of 0 \(lowest\) to 10 \(highest\/). Snyk uses CVSS.
 
 ### CWE
 
@@ -93,7 +93,7 @@ A demonstration of how a vulnerability can be taken advantage of. When an exploi
 
 ### Exploit Maturity
 
-A measure of how practical an exploit for a vulnerability is, based on whether the exploit is in the wild, and how "helpful" the exploit is to attackers. See [Evaluating and prioritizing vulnerabilities](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/evaluating-and-prioritizing-vulnerabilities).
+A measure of how practical an exploit for a vulnerability is, based on whether the exploit is in the wild, and how "helpful" the exploit is to attackers. See [Evaluating and prioritizing vulnerabilities](fixing-and-prioritizing-issues/issue-management/evaluating-and-prioritizing-vulnerabilities).
 
 ## F
 
@@ -191,11 +191,11 @@ Pull request. Allows a user to exchange changes made to source code and collabor
 
 ### Priority Score
 
-Snyk scores issues \(vulnerabilities and licenses\), to help prioritze treatment of each one. Scores are based on multiple factors including as the CVSS score, and range from 0 \(low\) to 1000 \(high\). See [Snyk Priority Score](https://docs.snyk.io/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score).
+Snyk scores issues \(vulnerabilities and licenses\), to help prioritze treatment of each one. Scores are based on multiple factors including as the CVSS score, and range from 0 \(low\) to 1000 \(high\/). See [Snyk Priority Score](fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score).
 
 ### Project
 
-An external item that Snyk scans, with configuration to define how to run that scan. Projects appear on the **Projects** menu on the Snyk dashboard. See [Introduction to projects](https://docs.snyk.io/getting-started/introduction-to-snyk-projects).
+An external item that Snyk scans, with configuration to define how to run that scan. Projects appear on the **Projects** menu on the Snyk dashboard. See [Introduction to projects](getting-started/introduction-to-snyk-projects).
 
 ## R
 
@@ -247,7 +247,7 @@ A method to provide pay-as-you-use backend computing services, allowing applicat
 
 ### Severity
 
-A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/severity-levels).
+A severity level is applied to a vulnerability or a license issue, to indicate the risk for that item in an application. See [Severity levels](introducing-snyk/snyks-core-concepts/severity-levels).
 
 ### Snapshot
 
@@ -269,27 +269,27 @@ A Snyk tool, Enables developers to programatically integrate with Snyk. See [Sny
 
 ### Snyk Broker
 
-A client/server system that serves as an agent / proxy, allowing Snyk to scan private customer environments \(Jira, code repositories or container registries\). It relays messages and allows users to filter which messages are allowed through; for example, allowing users to expose only some Github APIs to Snyk. See [Snyk Broker documentation](https://docs.snyk.io/integrations/snyk-broker).
+A client/server system that serves as an agent / proxy, allowing Snyk to scan private customer environments \(Jira, code repositories or container registries\/). It relays messages and allows users to filter which messages are allowed through; for example, allowing users to expose only some Github APIs to Snyk. See [Snyk Broker documentation](integrations/snyk-broker).
 
 ### Snyk CLI
 
-A Snyk platform tool. Snyk CLI enables developers to find and fix known vulnerabilities in dependencies, using a command line interface. See [Snyk CLI documentation](https://docs.snyk.io/snyk-cli).
+A Snyk platform tool. Snyk CLI enables developers to find and fix known vulnerabilities in dependencies, using a command line interface. See [Snyk CLI documentation](snyk-cli).
 
 ### Snyk Code
 
-A Snyk product. A SAST product enabling developers to find and fix vulnerabilities in your proprietary application code. See [Snyk Code documentation](https://docs.snyk.io/snyk-code).
+A Snyk product. A SAST product enabling developers to find and fix vulnerabilities in your proprietary application code. See [Snyk Code documentation](snyk-code).
 
 ### Snyk Container
 
-A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Snyk Container documentation](https://docs.snyk.io/snyk-container).
+A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Snyk Container documentation](snyk-container).
 
 ### Snyk Infrastructure as Code
 
-A Snyk product. Enables developers to find and fix vulnerabilities in your Kubernetes, Helm and Terraform configuration files. See [Snyk IaC documentation](https://docs.snyk.io/snyk-infrastructure-as-code).
+A Snyk product. Enables developers to find and fix vulnerabilities in your Kubernetes, Helm and Terraform configuration files. See [Snyk IaC documentation](snyk-infrastructure-as-code).
 
 ### Snyk Open Source
 
-A Snyk product. Enables developers to find and fix open source vulnerabilities. See [Snyk Open Source documentation](https://docs.snyk.io/snyk-open-source).
+A Snyk product. Enables developers to find and fix open source vulnerabilities. See [Snyk Open Source documentation](snyk-open-source).
 
 ### Snyk plugin
 
@@ -302,7 +302,7 @@ Incorporates **Snyk Intel Vulnerability DB**: Snyk’s database of vulnerabiliti
 
 ### Social Trends
 
-Snyk shows a Trending banner on issues that are being actively discussed in Twitter. See the [Prioritizing Social Trends](https://docs.snyk.io/fixing-and-prioritizing-issues/prioritizing-issues/prioritize-by-social-trends) article.
+Snyk shows a Trending banner on issues that are being actively discussed in Twitter. See the [Prioritizing Social Trends](fixing-and-prioritizing-issues/prioritizing-issues/prioritize-by-social-trends) article.
 
 ### SPDX
 
@@ -318,7 +318,7 @@ A fix type: a problem can be fixed by upgrading a version of a package, or by ap
 
 ### Vulnerability
 
-A security vulnerability, identified by Snyk. See [Remediate your vulnerabilities](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities).
+A security vulnerability, identified by Snyk. See [Remediate your vulnerabilities](fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities).
 
 ## W
 

@@ -138,7 +138,7 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
       --set log_level="WARN"
     ```
 
-13. By default the controller will run without a [Pod Security Policy](https://kubernetes.io/docs/concepts/policy/pod-security-policy/). However, this can be enabled by passing a setting.
+13. By default the controller will run without a [Pod Security Policy](https://kubernetes.io/docs/concepts/policy/pod-security-policy/).  However, this can be enabled by passing a setting.
 
     ```text
     helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
@@ -185,7 +185,7 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
     --set pvc.name="snyk-monitor-pvc"
     ```
 
-15. By default, we purposely ignore scanning certain namespaces which we believe are internal to Kubernetes \(any namespace starting with _**kube-\*,**_ full list can be found [here](https://github.com/snyk/kubernetes-monitor/blob/master/src/supervisor/watchers/internal-namespaces.ts)\). If you wish to change that, we allow configuring the excluded namespaces.  
+15. By default, we purposely ignore scanning certain namespaces which we believe are internal to Kubernetes \(any namespace starting with _**kube-\*,**_ full list can be found [here](https://github.com/snyk/kubernetes-monitor/blob/master/src/supervisor/watchers/internal-namespaces.ts)\/). If you wish to change that, we allow configuring the excluded namespaces.  
     By adding your own list of namespaces to exclude using _excludedNamespaces_ setting, we will override our default settings and use the list of namespaces you provide.
 
     ```text

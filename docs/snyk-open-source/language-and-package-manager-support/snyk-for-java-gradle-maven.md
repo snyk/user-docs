@@ -34,7 +34,7 @@ This section describes the unique CLI commands available when working with Java-
 
 * Install the relevant package manager before you use the Snyk CLI tool.
 * Include the relevant manifest files supported by Snyk before testing.
-* Install and authenticate the Snyk CLI to start analyzing projects from your local environment. See [Getting started with the CLI](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli).
+* Install and authenticate the Snyk CLI to start analyzing projects from your local environment. See [Getting started with the CLI](snyk-cli/guides-for-our-cli/getting-started-with-the-cli).
 
 ### Snyk CLI parameters
 
@@ -84,7 +84,7 @@ This will **ignore compileOnly** and save only the necessary information to anal
 
 ### Configurations
 
-Gradle dependencies are declared for a particular scope, each scope is represented by Gradle with the help of [Configurations](https://docs.gradle.org/current/userguide/declaring_dependencies.html#sec:what-are-dependency-configurations). For example:
+Gradle dependencies are declared for a particular scope, each scope is represented by Gradle with the help of [Configurations](https://docs.gradle.org/current/userguide/declaring_dependencies.html#sec:what-are-dependency-configurations/). For example:
 
 * **compileOnly** configuration for development dependencies
 * **compile** configuration that includes compile and runtime dependencies

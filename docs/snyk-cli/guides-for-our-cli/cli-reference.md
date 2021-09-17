@@ -21,7 +21,7 @@ For more information see [https://snyk.io](https://snyk.io)
 
 ## COMMANDS
 
-To see command-specific flags and usage, see `help` command, e.g. `snyk container --help` \(available in [Advanced Snyk Container CLI usage](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)\).
+To see command-specific flags and usage, see `help` command, e.g. `snyk container --help` \(available in [Advanced Snyk Container CLI usage](snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)\).
 
 Available top-level CLI commands:
 

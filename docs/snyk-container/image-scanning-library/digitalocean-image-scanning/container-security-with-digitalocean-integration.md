@@ -20,7 +20,7 @@ Prerequisites
 
 ![](../../../.gitbook/assets/mceclip0-10-.png)
 
-In case you are using a self-hosted DigitalOcean, contact us to provide you with a token. You can read more about setting up private registry integration [here](https://docs.snyk.io/snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries).
+In case you are using a self-hosted DigitalOcean, contact us to provide you with a token. You can read more about setting up private registry integration [here](snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries).
 
 {% hint style="info" %}
 **Note**  

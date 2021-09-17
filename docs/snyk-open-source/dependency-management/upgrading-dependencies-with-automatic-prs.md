@@ -8,7 +8,7 @@ Snyk currently supports this feature for npm, Yarn and Maven-Central projects th
 
 ## How it works
 
-1. Integration is configured and users enable automatic upgrade PRs \(within the integration settings or [in the project settings](upgrading-dependencies-with-automatic-prs.md)\).
+1. Integration is configured and users enable automatic upgrade PRs \(within the integration settings or [in the project settings](upgrading-dependencies-with-automatic-prs.md/)\).
 2. Snyk scans your projects as you import them and continues to monitor your projects, scanning on a regular basis thereafter.
 3. Per scan, when new versions for your dependencies are identified, Snyk does the following:
    * Snyk creates automatic upgrade PRs \(frequency based on Snyk project settings\)

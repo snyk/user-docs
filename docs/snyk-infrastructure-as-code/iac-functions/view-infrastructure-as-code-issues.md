@@ -1,6 +1,6 @@
 # View Infrastructure as Code issues
 
-You can view configuration issues in your Infrastructure as Code configuration files, using [Snyk reports](https://docs.snyk.io/reports/reports).
+You can view configuration issues in your Infrastructure as Code configuration files, using [Snyk reports](reports/reports/).
 
 {% hint style="info" %}
 **Feature availability**  
@@ -17,7 +17,7 @@ To view IaC issues only, select **Configuration** from the **Summary filters** d
 
 ![](../../.gitbook/assets/screenshot_2021-02-17_at_14.22.50.png)
 
-For more details on the summary tab, see [Summary tab](https://docs.snyk.io/reports-1/reports/summary-tab) documentation.
+For more details on the summary tab, see [Summary tab](reports-1/reports/summary-tab) documentation.
 
 ## Issues page
 
@@ -33,7 +33,7 @@ You can also view the issues ungrouped; this shows more information about the pr
 
 ![](../../.gitbook/assets/image2-3-%20%281%29%20%282%29%20%282%29%20%282%29%20%283%29%20%284%29%20%284%29%20%283%29%20%284%29.png)
 
-For more details on the issues tab, see [Issues tab](https://docs.snyk.io/reports-1/reports/issues-tab) documentation.
+For more details on the issues tab, see [Issues tab](reports-1/reports/issues-tab/) documentation.
 
 ## Export data
 

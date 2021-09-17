@@ -7,7 +7,7 @@ This feature is available with Business and Enterprise customers. See [pricing p
 
 You can take advantage of your company's existing identity management systems, and have employees sign in to Snyk using their corporate identity. This makes provisioning users to Snyk easier. It also allows for deeper integration for group and organization membership, role-based access, and more.
 
-Snyk can integrate with any SAML-based and OpenID Connect \(OIDC\)-based SSO, as well as ADFS. You can also use your Enterprise Identity Provider for SSO, including [Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis) and [Google G Suite](https://community.snowflake.com/s/article/configuring-g-suite-as-an-identity-provider). Read more about SAML in [the Auth0 documentation](https://auth0.com/docs/protocols/saml).
+Snyk can integrate with any SAML-based and OpenID Connect \(OIDC\)-based SSO, as well as ADFS. You can also use your Enterprise Identity Provider for SSO, including [Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis) and [Google G Suite](https://community.snowflake.com/s/article/configuring-g-suite-as-an-identity-provider/). Read more about SAML in [the Auth0 documentation](https://auth0.com/docs/protocols/saml).
 
 ## User authentication and provisioning
 
@@ -20,7 +20,7 @@ The sign on process includes these steps:
 3. Snyk checks the directory for that user.
 4. If the user is already configured, Snyk enables the appropriate access. For a new user, Snyk adds the user to the directory, and then redirects them to Snyk.io with the appropriate access.
 
-Read more about the next step, [choose a provisioning option](https://docs.snyk.io/user-and-group-management/setting-up-sso-for-authentication/choose-a-provisioning-option).
+Read more about the next step, [choose a provisioning option](user-and-group-management/setting-up-sso-for-authentication/choose-a-provisioning-option).
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

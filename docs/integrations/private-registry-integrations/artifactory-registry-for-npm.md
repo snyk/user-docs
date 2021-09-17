@@ -21,7 +21,7 @@ This feature is available with Enterprise plans. See [pricing plans](https://sny
 ## JavaScript Language Settings
 
 1. Go to settings ![](../../.gitbook/assets/cog_icon.png) **&gt; Languages &gt; JavaScript** and either the npm or yarn settings depending on your project types \(yarn shown in screenshots below\) 
-2. If you have not previously connected to Artifactory you will be asked to configure an integration first, see [Artifactory Registry Setup.](https://docs.snyk.io/integrations/private-registry-integrations/artifactory-registry-setup) 
+2. If you have not previously connected to Artifactory you will be asked to configure an integration first, see [Artifactory Registry Setup.](integrations/private-registry-integrations/artifactory-registry-setup) 
 3. Select “Add registry configuration”
    1. Select "Artifactory" as the Package source 
    2. If you want to configure this registry as **default registry url**, then leave scope blank 

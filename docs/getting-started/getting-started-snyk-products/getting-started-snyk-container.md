@@ -10,8 +10,8 @@ This process uses the Snyk.io UI. For details of Snyk Container using the Snyk C
 
 Ensure you have:
 
-* Access to a relevant container registry to use with Snyk. Snyk supports registries including , Amazon Elastic Container Registry \([ECR](https://docs.snyk.io/snyk-container/image-scanning-library/ecr-image-scanning)\), Google Container Registry \([GCR](https://docs.snyk.io/snyk-container/image-scanning-library/gcr-image-scanning)\), Microsoft Azure Container Registry \([ACR](https://docs.snyk.io/snyk-container/image-scanning-library/acr-image-scanning)\), and [JFrog Artifactory](https://docs.snyk.io/snyk-container/image-scanning-library/jfrog-artifactory-image-scanning). Alternatively, access to [Kubernetes](https://docs.snyk.io/snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning) if you select that as an integration.
-* A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](https://docs.snyk.io/getting-started/getting-started-snyk-products) for details\).
+* Access to a relevant container registry to use with Snyk. Snyk supports registries including , Amazon Elastic Container Registry \([ECR](snyk-container/image-scanning-library/ecr-image-scanning)\), Google Container Registry \([GCR](snyk-container/image-scanning-library/gcr-image-scanning)\), Microsoft Azure Container Registry \([ACR](snyk-container/image-scanning-library/acr-image-scanning)\), and [JFrog Artifactory](snyk-container/image-scanning-library/jfrog-artifactory-image-scanning/). Alternatively, access to [Kubernetes](snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning) if you select that as an integration.
+* A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](getting-started/getting-started-snyk-products) for details\).
 
 ## Stage 1: Add container registry integration
 
@@ -51,7 +51,7 @@ Click on an entry to see details of vulnerabilities found:
 
 ![image5.png](../../.gitbook/assets/image5-1-.png)
 
-See [Analysis and remediation for your images from the Snyk app](https://docs.snyk.io/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app) for more details.
+See [Analysis and remediation for your images from the Snyk app](snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app) for more details.
 
 ## Stage 4: Fix and review
 
@@ -61,7 +61,7 @@ See [Analysis and remediation for your images from the Snyk app](https://docs.sn
 
 ## For more information
 
-See [Snyk Container](https://docs.snyk.io/snyk-container).
+See [Snyk Container](snyk-container).
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

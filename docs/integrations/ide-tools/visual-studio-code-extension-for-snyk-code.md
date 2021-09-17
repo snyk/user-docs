@@ -1,9 +1,9 @@
 # Visual Studio Code extension for Snyk Code
 
-Use this documentation to get started with the Visual Studio Code extension for [Snyk Code](https://docs.snyk.io/snyk-code).
+Use this documentation to get started with the Visual Studio Code extension for [Snyk Code](snyk-code).
 
 {% hint style="info" %}
-A Visual Studio extension is also available for Snyk Open Source. See [Visual Studio extension](https://docs.snyk.io/integrations/untitled/visual-studio-extension).
+A Visual Studio extension is also available for Snyk Open Source. See [Visual Studio extension](integrations/untitled/visual-studio-extension).
 {% endhint %}
 
 ## Supported languages
@@ -12,7 +12,7 @@ Currently supported languages for Snyk Code are JavaScript, TypeScript, Java and
 
 * .es, .es6, .htm, .html, .java, .js, .jsx, .py, .ts, .tsx, .vue
 
-See [Snyk Code language and framework support](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support) for more information.
+See [Snyk Code language and framework support](snyk-code/snyk-code-language-and-framework-support) for more information.
 
 ## Install the plugin
 
@@ -89,8 +89,8 @@ The editor window \(in the middle of the results screen\) shows the code that is
 
 The Snyk Suggestion panel \(on the right of the results screen\) shows the argumentation of the Snyk engine using for example variable names of your code and the line numbers in red. You can also see:
 
-* Links to external resources to explain the bug pattern in more detail \(the **More info** link\). 
-* Tags that were assigned by Snyk, such as **Security** \(the issue found is a security issue\), **Database** \(it is related to database interaction\), or **In Test** \(the issue is within the test code\). 
+* Links to external resources to explain the bug pattern in more detail \(the **More info** link\/). 
+* Tags that were assigned by Snyk, such as **Security** \(the issue found is a security issue\), **Database** \(it is related to database interaction\), or **In Test** \(the issue is within the test code\/). 
 * Code from open source repositories that might be of help to see how others fixed the issue. 
 * You can add ignore comments that would make Snyk ignore this particular suggestion, or all of these suggestions for the whole file, by using the two buttons on the lower end of the panel.
 

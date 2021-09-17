@@ -4,7 +4,7 @@
 
 Sometimes there is no direct upgrade that can address the vulnerability or an upgrade is not possible due to functional reasons \(e.g. it’s a major breaking change\).
 
-For such cases Snyk can help you [protect your code with patches](https://docs.snyk.io/snyk-cli/secure-your-projects-in-the-long-term/protect-your-code-with-patches). This option will make the minimal modifications to your locally installed`node_modules` files to fix the vulnerability. It will also update the policy to patch this issue when running [snyk protect](https://snyk.io/docs/using-snyk#protect).
+For such cases Snyk can help you [protect your code with patches](snyk-cli/secure-your-projects-in-the-long-term/protect-your-code-with-patches/). This option will make the minimal modifications to your locally installed`node_modules` files to fix the vulnerability. It will also update the policy to patch this issue when running [snyk protect](https://snyk.io/docs/using-snyk#protect).
 
 {% hint style="info" %}
 **Caution**  
@@ -25,7 +25,7 @@ Patches are created and maintained by Snyk. If the package owner has made code c
 
 Before releasing it, we verify the patch, backport it to older versions, and test that the patch hasn’t broken functionality.
 
-The patches are a part of [Snyk’s open source vulnerability database](https://github.com/Snyk/vulndb/), so you can check them out before applying them. For example, the patches for the [ms ReDoS vulnerability](https://github.com/Snyk/vulndb/tree/master/data/npm/ms/20151024). We don’t have patches for every case - if you need one that’s missing, let us know.
+The patches are a part of [Snyk’s open source vulnerability database](https://github.com/Snyk/vulndb/), so you can check them out before applying them. For example, the patches for the [ms ReDoS vulnerability](https://github.com/Snyk/vulndb/tree/master/data/npm/ms/20151024/). We don’t have patches for every case - if you need one that’s missing, let us know.
 
 ## How and when are Snyk patches created?
 

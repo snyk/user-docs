@@ -18,7 +18,7 @@ For customers who already have their own products, you can still benefit from Sn
 A team of security experts and analysts manages Snyk's security database to ensure the database maintains high accuracy and eliminates false positives.
 
 * All items in the database are analyzed and verified.
-* The team also invests in proprietary research to discover new vulnerabilities. See our [disclosed vulnerability list](https://app.snyk.io/disclosed-vulnerabilities).  
+* The team also invests in proprietary research to discover new vulnerabilities. See our [disclosed vulnerability list](https://app.snyk.io/disclosed-vulnerabilities/).  
 
 ## Database feeds
 

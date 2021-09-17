@@ -1,6 +1,6 @@
 # Detecting Terraform configuration files using a broker
 
-If you are using a privately hosted Git repository then you can use the Snyk Broker to connect Snyk to it. See the [full broker documentation for setup](../../integrations/snyk-broker/set-up-snyk-broker.md). The following details additional configuration required for the Terraform files.
+If you are using a privately hosted Git repository then you can use the Snyk Broker to connect Snyk to it. See the [full broker documentation for setup](../../integrations/snyk-broker/set-up-snyk-broker.md/). The following details additional configuration required for the Terraform files.
 
 ## Writing the configuration
 
@@ -8,7 +8,7 @@ The Terraform scanning features need access to the `.tf` files from the reposito
 
 1. Find and download the appropriate accept.json sample file for your source control system [from the Broker repository](https://github.com/snyk/broker/tree/master/client-templates).
 2. Rename it to `accept.json` and add the below rules, appropriate to your SCM, to the **private** array in the JSON file.
-3. Follow the [Configuring the broker](detecting-terraform-configuration-files-using-a-broker.md#configuring-the-broker) instructions.
+3. Follow the [Configuring the broker](detecting-terraform-configuration-files-using-a-broker.md#configuring-the-broker/) instructions.
 
 ## GitHub rules
 

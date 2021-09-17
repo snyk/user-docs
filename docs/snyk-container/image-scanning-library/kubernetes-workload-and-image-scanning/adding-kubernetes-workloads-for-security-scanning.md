@@ -2,7 +2,7 @@
 
 Once an administrator for your Snyk account has installed the Snyk controller on your Kubernetes cluster, add workloads for testing as follows:
 
-* [Snyk collaborators can manually add new Kubernetes projects](https://docs.snyk.io/snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning/adding-kubernetes-workloads-for-security-scanning)
+* [Snyk collaborators can manually add new Kubernetes projects](snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning/adding-kubernetes-workloads-for-security-scanning)
 * [Kubernetes collaborators can mark workloads from the cluster to be automatically added to Snyk](https://support.snyk.io/hc/en-us/articles/360003947117-Adding-Kubernetes-workloads-for-security-scanning#UUID-38239f46-6777-97c6-61a1-2074ff981f65)
 
 ## Prerequisites
@@ -21,7 +21,7 @@ In addition, the integration must be configured between Snyk and your Kubernetes
 Once you’ve configured the integration between Snyk and your cluster, you can annotate your workloads in order to have them automatically added as projects for testing in Snyk.
 
 {% hint style="info" %}
-The annotated import happens when the **image** itself changes \(rescans the workload due to image change\) or when the **workload details** change \(which creates a new revision of the workload\). Changing the annotation for the workload will not cause a workload change.
+The annotated import happens when the **image** itself changes \(rescans the workload due to image change\) or when the **workload details** change \(which creates a new revision of the workload\/). Changing the annotation for the workload will not cause a workload change.
 
 If the workload is only annotated after it has been scanned by `snyk monitor`--the annotation will not be recognized until a significant change takes place that causes a full rescan. Terminating the `snyk monitor` pod is one way to force a rescan.
 {% endhint %}
@@ -77,7 +77,7 @@ The import screen loads, similar to the one below, displaying all namespaces fro
 ![](../../../.gitbook/assets/uuid-3a8568e0-b5a4-34af-d612-83466b206882-en.png)
 
 We purposely ignore scanning certain namespaces which we believe are internal to Kubernetes \(any namespace starting with _**kube-\***_\), therefore you won't see those namespaces in the list, as well as the workloads they contain.  
-The full list of ignored namespaces can be found [here](https://github.com/snyk/kubernetes-monitor/blob/master/src/supervisor/watchers/internal-namespaces.ts). This can be configured by adding the following to helm when setting up the snyk-monitor:
+The full list of ignored namespaces can be found [here](https://github.com/snyk/kubernetes-monitor/blob/master/src/supervisor/watchers/internal-namespaces.ts/). This can be configured by adding the following to helm when setting up the snyk-monitor:
 
 ```text
       --set excludedNamespaces={kube-node-lease,local-path-storage,some_namespace}

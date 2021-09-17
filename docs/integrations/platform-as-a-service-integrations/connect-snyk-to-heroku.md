@@ -28,7 +28,7 @@ The first is on your integration settings page, where you’ll see your current 
 
 ![](../../.gitbook/assets/uuid-fb1cad51-f7f5-34ae-1142-f24fab0b0751-en%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%282%29%20%282%29.png)
 
-The connection status is also displayed directly on the Heroku integration settings page \(found by clicking “Edit settings” on the integration settings page shown above\). If you’ve entered credentials, you’ll see a box indicating whether or not Snyk is able to correctly connect to Heroku.
+The connection status is also displayed directly on the Heroku integration settings page \(found by clicking “Edit settings” on the integration settings page shown above\/). If you’ve entered credentials, you’ll see a box indicating whether or not Snyk is able to correctly connect to Heroku.
 
 ![](../../.gitbook/assets/uuid-36c5692a-e30e-973d-2ad4-548e38b9af93-en.png)
 
@@ -66,7 +66,7 @@ In either case, you’ll see a list of any available projects on the Heroku acco
 
 ![](../../.gitbook/assets/uuid-ad9e6940-96f8-4e22-787a-03d3e7cf99dd-en.png)
 
-As soon as you’ve added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Heroku applications in your [project dashboard](https://app.snyk.io/projects). You’ll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to remediate.
+As soon as you’ve added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Heroku applications in your [project dashboard](https://app.snyk.io/projects/). You’ll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to remediate.
 
 ![](../../.gitbook/assets/uuid-702795f8-5943-3dba-06a0-095d6bdc6f0c-en.png)
 

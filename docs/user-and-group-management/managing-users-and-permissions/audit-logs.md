@@ -1,6 +1,6 @@
 # Audit logs
 
-Snyk offers an endpoint enabling you to [access your audit logs via the API](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/user-and-group-management/managing-users-and-permissions/audit-logs/README.md). You can query data about user actions, such as when a:
+Snyk offers an endpoint enabling you to [access your audit logs via the API](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/user-and-group-management/managing-users-and-permissions/audit-logs/README.md/). You can query data about user actions, such as when a:
 
 * user logged in and out
 * user's role was changed

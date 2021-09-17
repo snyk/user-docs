@@ -6,7 +6,7 @@ Enable integration between one Artifactory instance as a container registry and 
 
 * You must be an administrator for the organization you're configuring in Snyk.
 * Snyk needs user credentials to integrate with Artifactory and does not support Artifactory when configured for single sign-on \(SSO\).
-* If you're using self-hosted Artifactory, refer to our documentation explaining about [broker configuration](https://docs.snyk.io/snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries-Snyk-integration-to-self-hosted-container-registries). 
+* If you're using self-hosted Artifactory, refer to our documentation explaining about [broker configuration](snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries-Snyk-integration-to-self-hosted-container-registries/). 
 
 ## Configure integration
 

@@ -1,6 +1,6 @@
 # Scan all unmanaged jar files
 
-Snyk CLI is able to scan unmanaged jar files in [Java applications](https://support.snyk.io/hc/en-us/articles/360003817357-Snyk-for-Java-Gradle-Maven-). The package name, version, and vulnerabilities are identified by the CLI only if the jar file matches the Maven Central jar file.
+Snyk CLI is able to scan unmanaged jar files in [Java applications](https://support.snyk.io/hc/en-us/articles/360003817357-Snyk-for-Java-Gradle-Maven-/). The package name, version, and vulnerabilities are identified by the CLI only if the jar file matches the Maven Central jar file.
 
 Java apps typically have jar files in a number of locations within an application. Scanning multiple jar files in the same folder can lead to problems. Instead, scanning individual jar files is considered best practice, especially for old Java apps that use Ant.
 

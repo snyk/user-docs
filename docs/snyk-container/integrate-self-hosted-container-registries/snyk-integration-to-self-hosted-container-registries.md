@@ -21,7 +21,7 @@ Integration with private container registries allows you to:
 * Broker server: running on Snyk SaaS backend
 * Broker client & Container Registry Agent: Two Docker images deployed in your infrastructure, creating two separate services, responsible for sampling your container registries in a secured manner and sending the allowed information to Snyk.
 
-The Broker client provides the Agent with the connection details. The Agent uses these details to connect to the container registry, scan the images, and send the scan results through the brokered communication using callbacks. The brokered communication happens when a Broker Client connects \(using your Broker ID\) to a Broker server which runs in Snyk environment. See [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker) documentation for more details.
+The Broker client provides the Agent with the connection details. The Agent uses these details to connect to the container registry, scan the images, and send the scan results through the brokered communication using callbacks. The brokered communication happens when a Broker Client connects \(using your Broker ID\) to a Broker server which runs in Snyk environment. See [Snyk Broker](integrations/snyk-broker/) documentation for more details.
 
 ![](../../.gitbook/assets/mceclip0-8-.png)
 
@@ -137,7 +137,7 @@ The /systemcheck endpoint is not mandatory for the brokered integration to funct
 
 **Secure your images:**
 
-You can now start scanning your container images directly from your private registry. See [scanning images from container registry](https://docs.snyk.io/snyk-container/jfrog-artifactory-image-scanning/configuring-your-jfrog-artifactory-container-registry-integration) \(Artifactory example\) for more details.
+You can now start scanning your container images directly from your private registry. See [scanning images from container registry](snyk-container/jfrog-artifactory-image-scanning/configuring-your-jfrog-artifactory-container-registry-integration/) \(Artifactory example\) for more details.
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

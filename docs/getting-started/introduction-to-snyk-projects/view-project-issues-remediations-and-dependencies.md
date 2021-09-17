@@ -24,12 +24,12 @@ You can also select to fix a specific issue, clicking **Fix this vulnerability**
 
 ![](../../.gitbook/assets/image26.png)
 
-See [Fixing vulnerabilities](https://docs.snyk.io/snyk-open-source/open-source-basics/fixing-vulnerabilities) for an overview.  
-See [Fixing and prioritizing issues](https://docs.snyk.io/fixing-and-prioritizing-issues) for more details.
+See [Fixing vulnerabilities](snyk-open-source/open-source-basics/fixing-vulnerabilities) for an overview.  
+See [Fixing and prioritizing issues](fixing-and-prioritizing-issues) for more details.
 
 ## View issue details
 
-For each issue, this display shows details about the vulnerability including its priority score \(see [Prioritizing Snyk issues](https://docs.snyk.io/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score)\):
+For each issue, this display shows details about the vulnerability including its priority score \(see [Prioritizing Snyk issues](fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score)\):
 
 ![](../../.gitbook/assets/image12.png)
 
@@ -41,7 +41,7 @@ Snyk's knowledge of the transitive dependencies in your project make it possible
 
 ![](../../.gitbook/assets/image19.png)
 
-See [Remediate your vulnerabilities](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities) for details.
+See [Remediate your vulnerabilities](fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities) for details.
 
 Synk uses the package manager of your application to build the dependency tree and display it in the **dependency** tab of the project view. This shows which components introduce a vulnerability, to show how the dependency was introduced to the application:
 

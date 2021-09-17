@@ -20,7 +20,7 @@ For additional information with TeamCity and its features, refer to their docume
 
 ![](../../.gitbook/assets/uuid-88e38280-121e-a17b-cfd3-9fde89305b5c-en.png)
 
-* Configure the TeamCity fields \(Runner type, Step name and Execute Step\). 
+* Configure the TeamCity fields \(Runner type, Step name and Execute Step\/). 
 * Optionally, click **Show advanced options**. Additional Snyk parameters are revealed:
 
 ![](../../.gitbook/assets/uuid-8f294e8d-ca5e-123b-2992-a98c1e62fd6f-en.png)

@@ -20,7 +20,7 @@ Prerequisites
 
 ![mceclip1.png](../../../.gitbook/assets/mceclip1-4-.png)
 
-In case you are using a self-hosted GitHub container registry registry, contact us to provide you with a token. You can read more about setting up private registry integration [here](https://docs.snyk.io/snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries).
+In case you are using a self-hosted GitHub container registry registry, contact us to provide you with a token. You can read more about setting up private registry integration [here](snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries).
 
 Snyk tests the connection values and the page reloads, now displaying GitHub container registry integration information, and the **Add your GitHub container registry images to Snyk** button becomes available.
 

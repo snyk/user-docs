@@ -6,21 +6,21 @@ Click on settings ![](../../.gitbook/assets/cog_icon.png) to view Snyk applicati
 
 **Docs**
 
-[Members](https://docs.snyk.io/user-and-group-management/managing-groups-and-organizations/invite-and-collaborate-with-team-members)
+[Members](user-and-group-management/managing-groups-and-organizations/invite-and-collaborate-with-team-members)
 
-[Integrations](https://docs.snyk.io/integrations)
+[Integrations](integrations)
 
 [Languages](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support)
 
-[Snyk Code](https://docs.snyk.io/snyk-code)
+[Snyk Code](snyk-code)
 
-[Infrastructure as Code](https://docs.snyk.io/snyk-infrastructure-as-code)
+[Infrastructure as Code](snyk-infrastructure-as-code)
 
-[Usage](https://docs.snyk.io/user-and-group-management/managing-settings/usage-page-details)
+[Usage](user-and-group-management/managing-settings/usage-page-details)
 
-[Notifications](https://docs.snyk.io/user-and-group-management/notifications/notification-management)
+[Notifications](user-and-group-management/notifications/notification-management)
 
-[Snyk Preview](https://docs.snyk.io/getting-started/snyk-billing-plan-onboarding/snyk-preview)
+[Snyk Preview](getting-started/snyk-billing-plan-onboarding/snyk-preview)
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

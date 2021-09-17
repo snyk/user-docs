@@ -1,6 +1,6 @@
 # Snyk for Scala
 
-Snyk supports testing Scala projects that have their dependencies managed by [sbt](https://www.scala-sbt.org/). Support is available via the Snyk UI and CLI.
+Snyk supports testing Scala projects that have their dependencies managed by [sbt](https://www.scala-sbt.org/).  Support is available via the Snyk UI and CLI.
 
 {% hint style="info" %}
 **Note**  

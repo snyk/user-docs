@@ -5,11 +5,11 @@
 Basic license policy configuration on a single default license policy is available with Business plans. Full policy creation and management is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-Get started with Snyk license compliance management, to check compliance for the [open source licenses](https://snyk.io/learn/open-source-licenses/) in your code, as part of your [Snyk Open Source](https://docs.snyk.io/snyk-open-source/open-source-basics) solution.
+Get started with Snyk license compliance management, to check compliance for the [open source licenses](https://snyk.io/learn/open-source-licenses/) in your code, as part of your [Snyk Open Source](snyk-open-source/open-source-basics) solution.
 
 {% hint style="info" %}
 This process describes using the Snyk UI and a [supported source code management](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) system.  
-You can also use an [IDE tool](https://docs.snyk.io/integrations/ide-tools) or a [CI/CD integration](https://docs.snyk.io/integrations/ci-cd-integrations), or use the [Snyk CLI tool](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli) to get started using the command line.
+You can also use an [IDE tool](integrations/ide-tools) or a [CI/CD integration](integrations/ci-cd-integrations), or use the [Snyk CLI tool](snyk-cli/guides-for-our-cli/getting-started-with-the-cli) to get started using the command line.
 {% endhint %}
 
 ## **Prerequisites**
@@ -17,7 +17,7 @@ You can also use an [IDE tool](https://docs.snyk.io/integrations/ide-tools) or a
 Ensure you have:
 
 * A Snyk [paid plan](https://snyk.io/plans/).
-* Integrated and installed your projects, as described for [Snyk Open Source](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-snyk-open-source).
+* Integrated and installed your projects, as described for [Snyk Open Source](getting-started/getting-started-snyk-products/getting-started-snyk-open-source).
 
 ## **Stage 1: Define policies**
 
@@ -29,7 +29,7 @@ Each policy contains rules, detailing which licenses are acceptable and which ar
 
 ![](../../.gitbook/assets/license-policy.png)
 
-See [Licenses overview](https://docs.snyk.io/snyk-open-source/licenses) and [Setting a license policy](https://docs.snyk.io/snyk-open-source/license-policies/setting-a-license-policy).
+See [Licenses overview](snyk-open-source/licenses) and [Setting a license policy](snyk-open-source/license-policies/setting-a-license-policy).
 
 ## Stage 2: View issues
 

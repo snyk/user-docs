@@ -17,7 +17,7 @@ To address the container image security problem, Snyk Container provides a range
 
 The main integrations are:
 
-* [CLI](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security): useful for local investigation, or testing an image you have built.
+* [CLI](snyk-container/snyk-cli-for-container-security): useful for local investigation, or testing an image you have built.
 * SCM: Snyk can detect Dockerfiles directly from Git repositories, and provide recommendations for updating the base image to a less vulnerable one. 
 * CI: can act as a gate, for example breaking the build on new high severity vulnerabilities.
 * Container registries: useful to test a large number of images, or if you cannot modify lots of CI pipelines.

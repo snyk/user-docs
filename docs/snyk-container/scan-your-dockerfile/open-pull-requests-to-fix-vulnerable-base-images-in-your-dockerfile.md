@@ -11,7 +11,7 @@ Supported git-based repository managers for Dockerfile fix PRs include:
 * GitHub Enterprise Server
 * Azure repos
 
-For any Dockerfile project created in Snyk, if the base image is an [Official Docker image](https://docs.docker.com/docker-hub/official_images/), the results include a list of suitable base images that can be used instead of the existing, more vulnerable one. See the section on [base image recommendations](https://docs.snyk.io/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app) for more information.
+For any Dockerfile project created in Snyk, if the base image is an [Official Docker image](https://docs.docker.com/docker-hub/official_images/), the results include a list of suitable base images that can be used instead of the existing, more vulnerable one. See the section on [base image recommendations](snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app) for more information.
 
 Snyk then automatically issues a fix pull request against your Dockerfile, to upgrade to the latest minor version available.
 

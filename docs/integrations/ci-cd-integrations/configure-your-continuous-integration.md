@@ -16,7 +16,7 @@ See guidance for how to do this on:
 * [Circle](https://circleci.com/docs/environment-variables/)
 * [Codeship](https://codeship.com/documentation/continuous-integration/set-environment-variables/)
 
-You can find others through an easy [Google search](https://www.google.co.uk/search?q=setting+up+env+variables+in+CI).  
+You can find others through an easy [Google search](https://www.google.co.uk/search?q=setting+up+env+variables+in+CI/).  
 Learn more about [CI/CD](https://snyk.io/learn/what-is-ci-cd-pipeline-and-tools-explained/).
 
 {% hint style="success" %}

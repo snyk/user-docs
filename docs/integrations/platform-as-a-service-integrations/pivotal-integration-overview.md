@@ -29,7 +29,7 @@ The first is on your integration settings page, where you’ll see your current 
 
 ![](../../.gitbook/assets/uuid-fb1cad51-f7f5-34ae-1142-f24fab0b0751-en%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%282%29.png)
 
-The connection status is also displayed directly on the Pivotal Web Services integration settings page \(found by clicking “Edit settings” on the integration settings page shown above\). If you’ve entered credentials, you’ll see a box indicating whether or not Snyk is able to correctly connect to Pivotal Web Services.
+The connection status is also displayed directly on the Pivotal Web Services integration settings page \(found by clicking “Edit settings” on the integration settings page shown above\/). If you’ve entered credentials, you’ll see a box indicating whether or not Snyk is able to correctly connect to Pivotal Web Services.
 
 ![](../../.gitbook/assets/uuid-442e2181-cac2-f74c-d50e-e4ebf0354b79-en.png)
 
@@ -45,7 +45,7 @@ In either case, you’ll see a list of any available projects on the Pivotal Web
 
 ![](../../.gitbook/assets/uuid-3ab9deaa-2fca-d4b8-854e-64348b9b9cee-en%20%281%29%20%281%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%282%29%20%281%29.png)
 
-As soon as you’ve added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Pivotal Web Services applications in your [project dashbard](https://app.snyk.io/projects). You’ll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to remediate.
+As soon as you’ve added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Pivotal Web Services applications in your [project dashbard](https://app.snyk.io/projects/). You’ll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to remediate.
 
 ![](../../.gitbook/assets/uuid-790ddca1-dfb1-2b98-952a-bd5eeff94a50-en.png)
 

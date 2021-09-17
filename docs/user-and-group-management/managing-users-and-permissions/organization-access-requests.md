@@ -1,6 +1,6 @@
 # Organization access requests
 
-Organization access requests allows a user to request access to a Snyk org that they're not a member of \(and so don't have access to\). Administrators will be notified of the new request by email, and can choose to invite the user to join the organization.
+Organization access requests allows a user to request access to a Snyk org that they're not a member of \(and so don't have access to\/). Administrators will be notified of the new request by email, and can choose to invite the user to join the organization.
 
 The most common routes for a user to reach the address of an org they're not a member of include:
 

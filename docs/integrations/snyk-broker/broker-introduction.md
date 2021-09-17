@@ -6,7 +6,7 @@ Snyk Broker is an open-source tool, that can act as a proxy between Snyk and int
 * Your publically-accessible Git-based repositories, allowing you to view and control Snyk activity in those repositories for increased data security.
 * Your on-premise Jira installation.
 * Artifactory for open source registry or container registry integrations.
-* [Kubernetes configuration files](https://docs.snyk.io/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/detecting-kubernetes-configuration-files-using-a-broker) using Snyk Infrastructure as Code \(IaC\).
+* [Kubernetes configuration files](snyk-infrastructure-as-code/scan-kubernetes-configuration-files/detecting-kubernetes-configuration-files-using-a-broker) using Snyk Infrastructure as Code \(IaC\).
 
 Snyk Broker is an open-source project, hosted at [GitHub](https://github.com/snyk/broker), and published as a set of Docker images for specific integrations. See the [Github broker documentation](https://github.com/snyk/broker/blob/master/README.md).
 
@@ -51,12 +51,12 @@ The default approved list limits requests as follows:
 
 Snyk Broker currently integrates with these [Git Repository](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) systems:
 
-* [GitHub](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration) and [GitHub Enterprise](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-enterprise-integration)
-* [GitLab](https://docs.snyk.io/integrations/git-repository-scm-integrations/gitlab-integration)
+* [GitHub](integrations/git-repository-scm-integrations/github-integration) and [GitHub Enterprise](integrations/git-repository-scm-integrations/github-enterprise-integration)
+* [GitLab](integrations/git-repository-scm-integrations/gitlab-integration)
 * [Bitbucket Server](https://support.snyk.io/hc/en-us/articles/360004002218-Bitbucket-Server-integration) and Bitbucket Data Center
-* [Azure Repos](https://docs.snyk.io/integrations/git-repository-scm-integrations/azure-repos-integration)
+* [Azure Repos](integrations/git-repository-scm-integrations/azure-repos-integration)
 
-In addition, Snyk Broker integrates with [Jira Server](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira), Jira Data Center and [Artifactory](https://docs.snyk.io/integrations/private-registry-integrations/artifactory-registry-setup).
+In addition, Snyk Broker integrates with [Jira Server](integrations/notifications-ticketing-system-integrations/jira), Jira Data Center and [Artifactory](integrations/private-registry-integrations/artifactory-registry-setup).
 
 ## **Supported manifest files**
 

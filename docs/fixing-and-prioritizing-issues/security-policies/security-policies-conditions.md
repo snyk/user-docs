@@ -1,6 +1,6 @@
 # Security policies: Conditions
 
-A condition is the variable to set a rule on. After you select a condition category, you are prompted to select Includes or Does not include and the desired condition \(for example: Mature, CWE-1234\).  
+A condition is the variable to set a rule on. After you select a condition category, you are prompted to select Includes or Does not include and the desired condition \(for example: Mature, CWE-1234\/).  
 These are the conditions that can currently be applied:
 
 **Exploit maturity**

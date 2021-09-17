@@ -169,7 +169,7 @@ Add the following parameter to `snyk test` or `snyk monitor`
 --command=python3
 ```
 
-You can also set a specific Python version by adding the following to a `.snyk` [policy file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file).
+You can also set a specific Python version by adding the following to a `.snyk` [policy file](fixing-and-prioritizing-issues/policies/the-.snyk-file).
 
 ```text
 language-settings:
@@ -184,7 +184,7 @@ When testing projects imported from Git, Snyk uses a recent version of either Py
 
 By default Snyk tests using Python 2.
 
-To define which Python major version Snyk uses to test your Git imported projects, use either organization settings, or a `.snyk` [policy file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file).
+To define which Python major version Snyk uses to test your Git imported projects, use either organization settings, or a `.snyk` [policy file](fixing-and-prioritizing-issues/policies/the-.snyk-file).
 
 To define Python version for all projects in an organization:
 
