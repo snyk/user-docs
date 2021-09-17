@@ -14,7 +14,7 @@ You’ll get two alerts in Slack:
 
 ![](../../.gitbook/assets/image%20%2822%29.png)
 
-To set it up, you will need to generate a Slack webhook. You can either do this via the [Incoming WebHooks app](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) or by [creating your own Slack app](https://api.slack.com/incoming-webhooks).
+To set it up, you will need to generate a Slack webhook. You can either do this via the [Incoming WebHooks app](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks/) or by [creating your own Slack app](https://api.slack.com/incoming-webhooks).
 
 Once you have generated your Slack Webhook URL, go to your 'Manage organization’ settings, and enter the URL.
 

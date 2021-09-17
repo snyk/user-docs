@@ -1,9 +1,9 @@
 # Usage page details
 
-Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Usage** to view:
+Click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Usage** to view:
 
 * [Test usage](usage-page-details.md): the numbers of tests used.
-* [Contributing developers](usage-page-details.md) number of developers contributing to projects.
+* [Contributing developers](usage-page-details.md/) number of developers contributing to projects.
 * [Projects](usage-page-details.md): project test usage settings.
 
 The **Test Usage** section shows how many tests you are using over the current billing period:
@@ -15,7 +15,7 @@ Test limits vary for Snyk products and plans. See the [plans page](https://snyk.
 {% endhint %}
 
 {% hint style="info" %}
-See [What counts as a test?](https://support.snyk.io/hc/en-us/articles/360000925418-What-counts-as-a-test-) for details of how Snyk counts tests.
+See [What counts as a test?](https://support.snyk.io/hc/en-us/articles/360000925418-What-counts-as-a-test-/) for details of how Snyk counts tests.
 {% endhint %}
 
 ## View contributing developers

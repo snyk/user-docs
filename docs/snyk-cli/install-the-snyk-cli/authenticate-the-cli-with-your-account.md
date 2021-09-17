@@ -21,7 +21,7 @@ You can authenticate:
 
 ## Authenticate using your API token
 
-1. Visit [your Snyk account](https://app.snyk.io/account) \(**Account Settings &gt; API Token** section\).
+1. Visit [your Snyk account](https://app.snyk.io/account/) \(**Account Settings &gt; API Token** section\).
 2. In the **KEY** field, click **click to show**, then select and copy your API token:  
 3. In the CLI, run `snyk config set api=XXXXXXXX`
 

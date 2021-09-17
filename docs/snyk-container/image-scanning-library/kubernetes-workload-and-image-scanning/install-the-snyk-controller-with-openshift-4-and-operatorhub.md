@@ -14,7 +14,7 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
 * The Snyk controller is installed using OperatorHub through RedHat OpenShift 4.
 * Set up your Snyk account before getting started.
 * To configure the integration from Snyk, you must be an administrator for the account.
-* A minimum 50 GB of storage must be available in the form of an [emptyDir](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir) on the cluster and the person configuring the cluster must be an administrator.
+* A minimum 50 GB of storage must be available in the form of an [emptyDir](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir/) on the cluster and the person configuring the cluster must be an administrator.
 * External internet access must be available from the Kubernetes cluster.
 
 ## Steps
@@ -85,7 +85,7 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
     insecure = true
     ```
 
-    See the [documentation](https://github.com/containers/image/blob/master/docs/containers-registries.conf.5.md) for information on the format and further examples. Once you've created the file, you can use it to create the following ConfigMap:
+    See the [documentation](https://github.com/containers/image/blob/master/docs/containers-registries.conf.5.md/) for information on the format and further examples. Once you've created the file, you can use it to create the following ConfigMap:
 
     ```text
     kubectl create configmap snyk-monitor-registries-conf \

@@ -12,14 +12,14 @@ Currently supported languages for Snyk Code are JavaScript, TypeScript, Java and
 
 * .es, .es6, .htm, .html, .java, .js, .jsx, .py, .ts, .tsx, .vue
 
-See [Snyk Code language and framework support](snyk-code/snyk-code-language-and-framework-support) for more information.
+See [Snyk Code language and framework support](snyk-code/snyk-code-language-and-framework-support/) for more information.
 
 ## Install the plugin
 
 You can find the Snyk Extension in the Visual Studio Code Marketplace. To install, either:
 
-* Navigate to the [Snyk Extension on the Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner) and follow the instructions for the Snyk extension. The docs from VS Code help you trigger the installation process from Visual Studio Code and guide you through the installation steps.
-* Browse for the extension as advised [here](https://code.visualstudio.com/docs/editor/extension-gallery#_browse-for-extensions) and search for Snyk, then install \(as described [here](https://code.visualstudio.com/docs/editor/extension-gallery#_install-an-extension)\).
+* Navigate to the [Snyk Extension on the Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner/) and follow the instructions for the Snyk extension. The docs from VS Code help you trigger the installation process from Visual Studio Code and guide you through the installation steps.
+* Browse for the extension as advised [here](https://code.visualstudio.com/docs/editor/extension-gallery#_browse-for-extensions/) and search for Snyk, then install \(as described [here](https://code.visualstudio.com/docs/editor/extension-gallery#_install-an-extension)\).
 
 Once installed you can find a Snyk icon in the sidebar.
 
@@ -76,10 +76,10 @@ The Snyk analysis panel \(on the left of the code screen in the above screenshot
 
 The icons here mean:
 
-| ![image7.png](../../.gitbook/assets/image7-1-.png) | Critical suggestion - should be addressed. |
+| ![image7.png](../../.gitbook/assets/image7-1-.png/) | Critical suggestion - should be addressed. |
 | :--- | :--- |
-| ![image2.png](../../.gitbook/assets/image2-7-.png) | Warning suggestion -  likely a coding error. |
-| ![image4.png](../../.gitbook/assets/image4-5-.png) | Information suggestion - points to style glitches or logical issues. |
+| ![image2.png](../../.gitbook/assets/image2-7-.png/) | Warning suggestion -  likely a coding error. |
+| ![image4.png](../../.gitbook/assets/image4-5-.png/) | Information suggestion - points to style glitches or logical issues. |
 
 ## Editor window
 

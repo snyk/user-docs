@@ -8,7 +8,7 @@ Other operations not performed by the UI, such as daily / weekly tests, are stil
 
 To use this feature:
 
-1. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 
+1. Click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Integrations**. 
 2. For the GitHub entry, click **Edit Settings**. 
 3. Enable the toggle button under the **Open fix and upgrade pull requests from a fixed GitHub account** setting 
 4. Follow the in-page instructions for creating a personal access token in GitHub. 
@@ -18,7 +18,7 @@ To use this feature:
 Ensure that the GitHub account for which the token is provided, has **write** level permissions or above, to the repos you'd like to monitor with Snyk.
 {% endhint %}
 
-[Read more](integrations/git-repository-scm-integrations/github-integration) about repository permission levels in GitHub.
+[Read more](integrations/git-repository-scm-integrations/github-integration/) about repository permission levels in GitHub.
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

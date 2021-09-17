@@ -36,7 +36,7 @@ The Snyk CLI on its own does not currently have the capability natively to fail 
 
 ## Combining security policies with --severity-threshold
 
-[Security policies](fixing-and-prioritizing-issues/policies) provide the capability to change a vulnerability's severity if it matches specific criteria when a project is tested against an organization using that policy. You could, for example, change the severity of a vulnerability from high to low, and if performing a snyk test with the CLI with
+[Security policies](fixing-and-prioritizing-issues/policies/) provide the capability to change a vulnerability's severity if it matches specific criteria when a project is tested against an organization using that policy. You could, for example, change the severity of a vulnerability from high to low, and if performing a snyk test with the CLI with
 
 ```text
  --severity-threshold=medium|high
@@ -54,7 +54,7 @@ Here is an example of a snyk test, using --severity-threshold=high running again
 
 Here is an example of a `snyk test`, using `--severity-threshold=high`, running against an organization with a policy that downgrades this particular vulnerability severity to _low_
 
-![](https://gblobscdn.gitbook.com/assets%2F-MVXKdrh-jY3KDGPs8lQ%2F-MZT_W3O1oFyMAzF9g3s%2F-MZTuPF3Uat7DSSnTKFD%2Fimage.png?alt=media&token=914fd76f-bd9f-4170-8d96-b32026ae19ee)  
+![](https://gblobscdn.gitbook.com/assets%2F-MVXKdrh-jY3KDGPs8lQ%2F-MZT_W3O1oFyMAzF9g3s%2F-MZTuPF3Uat7DSSnTKFD%2Fimage.png?alt=media&token=914fd76f-bd9f-4170-8d96-b32026ae19ee/)  
 Since we lowered the severity of the original vulnerability with the policy, it no longer breached the severity threshold of high, resulting in a passing test.
 
 ## Companion tools
@@ -112,7 +112,7 @@ snyk-filter can utilize any combination of criteria available in the snyk test J
 You may also have different criteria for display from what will fail the build. This allows you to do things like display all vulns in the test output, while failing only on some specific criteria.
 
 {% hint style="info" %}
-Examples are provided in the snyk-filter project on Github [here](https://github.com/snyk-tech-services/snyk-filter/). Please refer to the [snyk-filter project on GitHub](https://github.com/snyk-tech-services/snyk-filter) for more information.
+Examples are provided in the snyk-filter project on Github [here](https://github.com/snyk-tech-services/snyk-filter/). Please refer to the [snyk-filter project on GitHub](https://github.com/snyk-tech-services/snyk-filter/) for more information.
 {% endhint %}
 
 {% hint style="success" %}

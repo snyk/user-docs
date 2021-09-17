@@ -13,7 +13,7 @@ In order to turn on the Pivotal Web Services integration you’ll need to:
 
 ## **Connect Snyk to Pivotal Web Services**
 
-In order for Snyk to be able to monitor your deployed Pivotal Web Services applications, you’ll first need to connect Snyk to your Pivotal Web Services account. You can do this by navigating to the [Integrations page](https://app.snyk.io/integrations) and clicking on “Connect to Pivotal Web Services”.
+In order for Snyk to be able to monitor your deployed Pivotal Web Services applications, you’ll first need to connect Snyk to your Pivotal Web Services account. You can do this by navigating to the [Integrations page](https://app.snyk.io/integrations/) and clicking on “Connect to Pivotal Web Services”.
 
 ![](../../.gitbook/assets/uuid-e7c43047-5065-ad28-db37-1c56e8796a8b-en-1-%20%282%29%20%282%29%20%282%29%20%282%29%20%285%29%20%287%29%20%282%29%20%281%29%20%281%29%20%281%29%20%284%29.png)
 

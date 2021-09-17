@@ -18,7 +18,7 @@ To know when your last 24-hour window was kicked off, check the project page for
 
 To enable at the global integration level:
 
-1. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**
+1. Click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Integrations**
 2. Select an SCM integration \(for example, GitHub\)
 3. Enable **Known vulnerabilities \(backlog\)**
 

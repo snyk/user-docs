@@ -51,7 +51,7 @@ Settings on the project level override the settings on the organization level. C
 **Steps:**
 
 1. Navigate to the organization for which you would like to enable automatic upgrade PRs and then click Projects.
-2. Navigate to the relevant project and click the Settings cog ![](../../.gitbook/assets/cog_icon.png) 
+2. Navigate to the relevant project and click the Settings cog ![](../../.gitbook/assets/cog_icon.png/) 
 3. From the Settings area, click on the integration settings from the left panel menu.  **Note:** These settings only apply to integration for that one project. 
 4. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled. 
 5. From the options that appear:

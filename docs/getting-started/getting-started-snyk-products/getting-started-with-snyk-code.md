@@ -3,14 +3,14 @@
 Get started with [Snyk Code](https://snyk.io/product/snyk-code/) to find, prioritize and fix potential vulnerabilities in your proprietary code.
 
 {% hint style="info" %}
-This documentation describes using Snyk Code with the Web UI. You can also use Snyk Code as a plugin to your JetBrains IDE; see [JetBrains IDE Plugins](integrations/ide-tools/jetbrains-plugins) for more details.
+This documentation describes using Snyk Code with the Web UI. You can also use Snyk Code as a plugin to your JetBrains IDE; see [JetBrains IDE Plugins](integrations/ide-tools/jetbrains-plugins/) for more details.
 {% endhint %}
 
 ## Prerequisites
 
 * A Snyk account.
-* [Snyk Open Source](snyk-open-source) or [Snyk Container](snyk-container) installed \(as currently Snyk Code is distributed as an add-on\).
-* Projects that include code in [a supported language](snyk-code/snyk-code-language-and-framework-support) \(currently Java, JavaScript, and Python\).
+* [Snyk Open Source](snyk-open-source/) or [Snyk Container](snyk-container/) installed \(as currently Snyk Code is distributed as an add-on\).
+* Projects that include code in [a supported language](snyk-code/snyk-code-language-and-framework-support/) \(currently Java, JavaScript, and Python\).
 * One of the following supported source code management systems \(SCMs\): GitHub cloud, BitBucket cloud, Gitlab cloud.
 
 ## Stage 1: Enable Snyk Code
@@ -18,7 +18,7 @@ This documentation describes using Snyk Code with the Web UI. You can also use S
 Snyk Code is disabled by default, so you must enable it for each organization:
 
 1. Log in to [Snyk.io](http://snyk.io/).
-2. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Snyk Code**. 
+2. Click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Snyk Code**. 
 3. Under **Enable Snyk Code**, change **Disabled** to **Enabled:**
 4. Click **Save changes**.
 
@@ -35,7 +35,7 @@ Choose a source code integration, to allow Snyk to work on a project.
 3. Click the source control system \(for example, GitHub\) to integrate with Snyk: 
 4. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
 
-See [DevOps integrations & languages](introducing-snyk/introduction-to-snyk/integrations-and-languages) for more details.
+See [DevOps integrations & languages](introducing-snyk/introduction-to-snyk/integrations-and-languages/) for more details.
 
 ## Stage 3: Add projects
 
@@ -56,7 +56,7 @@ Add projects to test with Snyk, by choosing repositories for Snyk to test and mo
 Currently Snyk Code does not support the **Exclude folders** option during import. Please contact us if you need more information.
 {% endhint %}
 
-See [Snyk projects](https://support.snyk.io/hc/en-us/sections/360004724958-Snyk-projects) for more details.
+See [Snyk projects](https://support.snyk.io/hc/en-us/sections/360004724958-Snyk-projects/) for more details.
 
 ## Stage 4: View vulnerabilities
 
@@ -67,7 +67,7 @@ You can now view vulnerability results for imported projects. The **Projects** t
 
 ![](../../.gitbook/assets/view-vulns2.png)
 
-See [View project information](getting-started/introduction-to-snyk-projects/view-project-information) for more details.
+See [View project information](getting-started/introduction-to-snyk-projects/view-project-information/) for more details.
 
 ## Stage 5: View issue details
 

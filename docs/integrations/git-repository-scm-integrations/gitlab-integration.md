@@ -16,12 +16,12 @@ The integration allows you to:
 > **Feature availability**  
 > On-premise Gitlab integrations are available for customers on Enterprise plans and above. See [pricing plans](https://snyk.io/plans/) for more details.
 
-This integration only works with GitLab instances that are publicly reachable \(not on a private network\). A [Snyk Broker](integrations/snyk-broker/set-up-snyk-broker) environment is required for private network instances.
+This integration only works with GitLab instances that are publicly reachable \(not on a private network\). A [Snyk Broker](integrations/snyk-broker/set-up-snyk-broker/) environment is required for private network instances.
 
 **Steps:**
 
 1. Generate a Personal Access Token in your GitLab. You’ll find this option in your user account settings area, in the **Access Tokens** section.
-2. Go to Snyk’s [integrations](https://app.snyk.io/integrations) page and click “Connect to GitLab”.
+2. Go to Snyk’s [integrations](https://app.snyk.io/integrations/) page and click “Connect to GitLab”.
 3. Add your account credentials and the token you just generated to the GitLab integration settings area in Snyk.
 
 ![](../../.gitbook/assets/uuid-aa58b5a9-dd17-3219-6067-4ee6e3f4b384-en.png)

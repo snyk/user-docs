@@ -222,7 +222,7 @@ Possible exit codes and their meaning:
 You can set these environment variables to change CLI run settings. These keys will override settings in your `snyk config`:
 
 `SNYK_TOKEN`Snyk authorization token. Setting this envvar will override the token that may be available in your `snyk config` settings.  
-[How to get your account token](https://snyk.co/ucT6J)  
+[How to get your account token](https://snyk.co/ucT6J/)  
 [How to use Service Accounts](https://snyk.co/ucT6L)\`\`
 
 `SNYK_API`Sets API host to use for Snyk requests. Useful for on-premise instances and configuring proxies.

@@ -15,7 +15,7 @@ In order to turn on the Cloud Foundry integration you’ll need to:
 
 ### Connect Snyk to Cloud Foundry
 
-In order for Snyk to be able to monitor your deployed Cloud Foundry applications, you’ll first need to connect Snyk to your Cloud Foundry account. You can do this by navigating to the [Integrations page](https://app.snyk.io/integrations) and clicking on “Connect to Cloud Foundry”.
+In order for Snyk to be able to monitor your deployed Cloud Foundry applications, you’ll first need to connect Snyk to your Cloud Foundry account. You can do this by navigating to the [Integrations page](https://app.snyk.io/integrations/) and clicking on “Connect to Cloud Foundry”.
 
 ![](../../.gitbook/assets/uuid-e7c43047-5065-ad28-db37-1c56e8796a8b-en-1-%20%282%29%20%282%29%20%282%29%20%282%29%20%285%29%20%287%29%20%282%29%20%281%29%20%281%29%20%281%29%20%289%29.png)
 
@@ -27,9 +27,9 @@ Instructions for how to locate your Cloud Foundry API URL are below.
 
 ### Cloud Foundry: locate your API URL
 
-You can find your Cloud Foundry API URL from the [cf CLI](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html) tool.
+You can find your Cloud Foundry API URL from the [cf CLI](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html/) tool.
 
-`$ cf api API` endpoint: [https://api.example.com](https://api.example.com) \(API version: 2.2.0\)
+`$ cf api API` endpoint: [https://api.example.com](https://api.example.com/) \(API version: 2.2.0\)
 
 From there you can login to your Snyk account and enter your Cloud Foundry credentials.
 

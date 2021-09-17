@@ -48,7 +48,7 @@ To add the dependency:
 Tip: remember to place a comma after the previous dependency.
 {% endhint %}
 
-* Create a [lock file](https://docs.npmjs.com/files/package-lock.json) for our Node application:
+* Create a [lock file](https://docs.npmjs.com/files/package-lock.json/) for our Node application:
 
   ```text
   npm install --package-lock

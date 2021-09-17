@@ -1,6 +1,6 @@
 # Snyk for Golang
 
-Snyk supports testing and monitoring of Go projects that have their dependencies managed by [Go Modules](https://golang.org/ref/mod), [dep](https://github.com/golang/dep) and [govendor](https://github.com/kardianos/govendor).
+Snyk supports testing and monitoring of Go projects that have their dependencies managed by [Go Modules](https://golang.org/ref/mod), [dep](https://github.com/golang/dep/) and [govendor](https://github.com/kardianos/govendor).
 
 The following describes how to use Snyk to scan your Go projects:
 
@@ -13,13 +13,13 @@ Features might not be available, depending on your subscription plan.
 
 | Package managers / Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| [Go Modules](https://golang.org/ref/mod) | ✔︎ | ✔︎ | ✔︎ |  |  |
-| [dep](https://github.com/golang/dep) | ✔︎ | ✔︎ | ✔︎ |  |  |
-| [govendor](https://github.com/kardianos/govendor) | ✔︎ | ✔︎ | ✔︎ |  |  |
+| [Go Modules](https://golang.org/ref/mod/) | ✔︎ | ✔︎ | ✔︎ |  |  |
+| [dep](https://github.com/golang/dep/) | ✔︎ | ✔︎ | ✔︎ |  |  |
+| [govendor](https://github.com/kardianos/govendor/) | ✔︎ | ✔︎ | ✔︎ |  |  |
 
 ## **How it works**
 
-Once we've built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the modules or packages anywhere in the dependency tree.
+Once we've built the tree, we can use our [vulnerability database](https://snyk.io/vuln/) to find vulnerabilities in any of the modules or packages anywhere in the dependency tree.
 
 {% hint style="info" %}
 **Note**  
@@ -81,7 +81,7 @@ Private modules are supported for GitHub and Bitbucket Cloud. GitLab and Bitbuck
 
 **Broker**
 
-Projects imported via the new [Snyk Broker](integrations/snyk-broker/broker-introduction) clients should work as expected.
+Projects imported via the new [Snyk Broker](integrations/snyk-broker/broker-introduction/) clients should work as expected.
 
 To add support to existing clients created before Dec 30th 2020, you should add `go.mod` and `go.sum` to your `accept.json` file, as per the changes in this [pull request](https://github.com/snyk/broker/pull/299/files).
 

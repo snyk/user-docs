@@ -6,7 +6,7 @@ Users with Admin permissions can use this option at the org and group level.
 
 To enable a feature using Snyk Preview:
 
-1. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Snyk Preview**: 
+1. Click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Snyk Preview**: 
 2. Click **Disabled** to enable the relevant feature. 
 3. Click **Save changes**.
 

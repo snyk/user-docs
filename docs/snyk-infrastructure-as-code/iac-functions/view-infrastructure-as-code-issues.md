@@ -17,7 +17,7 @@ To view IaC issues only, select **Configuration** from the **Summary filters** d
 
 ![](../../.gitbook/assets/screenshot_2021-02-17_at_14.22.50.png)
 
-For more details on the summary tab, see [Summary tab](reports-1/reports/summary-tab) documentation.
+For more details on the summary tab, see [Summary tab](reports-1/reports/summary-tab/) documentation.
 
 ## Issues page
 

@@ -7,7 +7,7 @@ Snyk offers an endpoint enabling you to [access your audit logs via the API](htt
 * license policy was modified and by whom
 * service account was created or deleted.
 
-You can query user-initiated activity from up to the past 90 days. If you need to query further back in time, contact our [Customer Support team](mailto:support@snyk.io) who can access this data from cold storage on your behalf.
+You can query user-initiated activity from up to the past 90 days. If you need to query further back in time, contact our [Customer Support team](mailto:support@snyk.io/) who can access this data from cold storage on your behalf.
 
 Use this endpoint to help retroactively triage any unexpected activity, to find out whenever a new user is added so you can assist with onboarding, or even to monitor changes in a user's role in order to get early warning of any unusual behavior.
 

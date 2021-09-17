@@ -205,7 +205,7 @@ Whether an application contains code which will hit a vulnerable code path durin
 
 ### Registry
 
-See [Container registry](https://support.snyk.io/hc/en-us/articles/360017682058-Snyk-Glossary#ContainerRegistry) or [Package registry](https://support.snyk.io/hc/en-us/articles/360017682058-Snyk-Glossary#PackageRegistry).
+See [Container registry](https://support.snyk.io/hc/en-us/articles/360017682058-Snyk-Glossary#ContainerRegistry/) or [Package registry](https://support.snyk.io/hc/en-us/articles/360017682058-Snyk-Glossary#PackageRegistry).
 
 ### Repository
 
@@ -302,7 +302,7 @@ Incorporates **Snyk Intel Vulnerability DB**: Snyk’s database of vulnerabiliti
 
 ### Social Trends
 
-Snyk shows a Trending banner on issues that are being actively discussed in Twitter. See the [Prioritizing Social Trends](fixing-and-prioritizing-issues/prioritizing-issues/prioritize-by-social-trends) article.
+Snyk shows a Trending banner on issues that are being actively discussed in Twitter. See the [Prioritizing Social Trends](fixing-and-prioritizing-issues/prioritizing-issues/prioritize-by-social-trends/) article.
 
 ### SPDX
 

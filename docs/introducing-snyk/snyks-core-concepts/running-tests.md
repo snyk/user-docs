@@ -6,7 +6,7 @@ You can use Snyk to test your code in multiple ways.
 * Snyk can also [run tests automatically](running-tests.md); on a recurring basis, or when a relevant repo change is made.
 
 {% hint style="info" %}
-Tests may be limited on your account; see [What counts as a test?](https://support.snyk.io/hc/en-us/articles/360000925418-What-counts-as-a-test-) for more information.
+Tests may be limited on your account; see [What counts as a test?](https://support.snyk.io/hc/en-us/articles/360000925418-What-counts-as-a-test-/) for more information.
 {% endhint %}
 
 ## Run tests manually
@@ -29,9 +29,9 @@ See [Getting started with Snyk products](../../getting-started/getting-started-s
 
 ### Run tests with the API
 
-Tests are counted when calls are made to the [**https://snyk.io/api/v1/test**](https://snyk.io/api/v1/test) endpoint.
+Tests are counted when calls are made to the [**https://snyk.io/api/v1/test**](https://snyk.io/api/v1/test/) endpoint.
 
-See [API documentation](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/introducing-snyk/snyks-core-concepts/running-tests/README.md) for details.
+See [API documentation](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/introducing-snyk/snyks-core-concepts/running-tests/README.md/) for details.
 
 ## Run tests automatically
 

@@ -12,7 +12,7 @@ Every time you test your projects either with the CLI or from our app, your proj
 In order to enable customers to get started with license compliance faster, we’ve created an out of the box default policy. The default policy is a baseline which tries to answer the requirements of multiple types of applications \(SaaS, distributed, etc.\), and may be used as a starting point to calibrate additional license policies. The default policy doesn’t endorse or criticize any license.  
 Different customers may have different needs and tolerance for different license types. We encourage you to make sure you made the needed changes or created new policies that fit your company’s specific requirements.
 
-By [default](fixing-and-prioritizing-issues/policies/shared-policies-overview) we determine the severity of licenses in the following way:
+By [default](fixing-and-prioritizing-issues/policies/shared-policies-overview/) we determine the severity of licenses in the following way:
 
 * High severity - licenses that definitely present issues for commercial software.
 * Medium severity - licenses that have clauses that may be of concern and should be reviewed.
@@ -27,7 +27,7 @@ To facilitate onboarding of your developers, we recommend that your teams check 
 
 ### **An inventory of your licenses**
 
-Within the **Reports** area you can view an inventory of all of your licenses across all your projects. Snyk also lists packages that have dual licenses and multiple licenses. See [here](https://support.snyk.io/hc/articles/360003557857#UUID-627d8387-74c4-9228-477b-263417eb2a61) for more information.
+Within the **Reports** area you can view an inventory of all of your licenses across all your projects. Snyk also lists packages that have dual licenses and multiple licenses. See [here](https://support.snyk.io/hc/articles/360003557857#UUID-627d8387-74c4-9228-477b-263417eb2a61/) for more information.
 
 ### **Supported package managers**
 

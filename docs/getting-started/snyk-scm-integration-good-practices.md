@@ -2,7 +2,7 @@
 
 You can integrate Snyk with your Source Control Manager \(SCM\) to quickly and easily gain visibility across all your projects.
 
-[Snyk SCM integrations](snyk-scm-integration-good-practices.md) allow you to:
+[Snyk SCM integrations](snyk-scm-integration-good-practices.md/) allow you to:
 
 * Continuously perform security scanning across all integrated repositories
 * Detect vulnerabilities in your open source components
@@ -107,7 +107,7 @@ If you try to implement all the SCM integration features at the same time, you r
 
 ## Stage 1: Set up your SCM Integration
 
-Snyk has pre-built integrations for SCMs including GitHub, GitHub Enterprise, Bitbucket Cloud and others. See [GIT repository \(SCM\) integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) for a full list.
+Snyk has pre-built integrations for SCMs including GitHub, GitHub Enterprise, Bitbucket Cloud and others. See [GIT repository \(SCM\) integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations/) for a full list.
 
 To check if an SCM is already configured for your Org, navigate to the **Integrations** tab. Configured SCMs are shown as **Configured**.
 
@@ -144,13 +144,13 @@ For example, in GitHub, the accounts connected to Snyk need the following access
 
 By default, Snyk emails every Org User when a new issue or remediation in a project’s dependencies is found, and provides you with a weekly update of your security status across your organization. If you plan to import many projects to an Org, consider disabling all the notifications for that Org, to avoid too many email notifications sent to users.
 
-To customize the emails your Org users receive, navigate to the Org’s settings ![](../.gitbook/assets/cog_icon.png) &gt; **Notifications**. Any changes you make here here affect all of your organization’s members, although Org users can override these default settings in their user-level account settings.
+To customize the emails your Org users receive, navigate to the Org’s settings ![](../.gitbook/assets/cog_icon.png/) &gt; **Notifications**. Any changes you make here here affect all of your organization’s members, although Org users can override these default settings in their user-level account settings.
 
 To disable notifications for all the users in an Org ahead of your import, uncheck the appropriate notification boxes:
 
 ![](../.gitbook/assets/image%20%2858%29.png)
 
-See [Notification management](https://support.snyk.io/hc/en-us/articles/360004037657-Notification-management) for more details.
+See [Notification management](https://support.snyk.io/hc/en-us/articles/360004037657-Notification-management/) for more details.
 
 ## Stage 2: Import Projects
 
@@ -190,7 +190,7 @@ Administrators can manage settings for Snyk PR tests at the organization level t
 
 To configure the PR test settings for your organization:
 
-1. Navigate to **Org** &gt; settings ![](../.gitbook/assets/cog_icon.png) **&gt;** Integrations &gt; Edit Settings. 
+1. Navigate to **Org** &gt; settings ![](../.gitbook/assets/cog_icon.png/) **&gt;** Integrations &gt; Edit Settings. 
 2. Set the the toggle to **Enabled** and set the **Fail conditions** as needed:
 3. Click **Update settings**.
 
@@ -201,7 +201,7 @@ To configure the pull request test settings for a specific project, navigate to 
 ![](../.gitbook/assets/main.png)
 
 {% hint style="info" %}
-You can avoid Snyk failing PRs for licensing issues, using license policies. See [License policies](https://support.snyk.io/hc/en-us/sections/360002249578-License-Policies) for more details.
+You can avoid Snyk failing PRs for licensing issues, using license policies. See [License policies](https://support.snyk.io/hc/en-us/sections/360002249578-License-Policies/) for more details.
 {% endhint %}
 
 **Initial step: get visibility and set fail conditions**
@@ -222,7 +222,7 @@ After you’ve embedded Snyk into your SDLC, and have built good developer aware
 * **High priority projects \(PCI/GDPR compliance\)**: fail the PR for any issue.
 
 {% hint style="info" %}
-To align vulns severity with your internal policy, use security policies to change severity of issues and attached them to relevant projects attributes. See [Security policies](https://support.snyk.io/hc/en-us/sections/360004225818-Security-Policies) for more details.
+To align vulns severity with your internal policy, use security policies to change severity of issues and attached them to relevant projects attributes. See [Security policies](https://support.snyk.io/hc/en-us/sections/360004225818-Security-Policies/) for more details.
 {% endhint %}
 
 ## Stage 5: Automatic Fix PRs
@@ -233,7 +233,7 @@ Here is an example of a fix pull request opened by Snyk:
 
 ![](../.gitbook/assets/mceclip0%20%281%29.png)
 
-To configure the PR test settings for specific projects, navigate to **Org** &gt; settings ![](../.gitbook/assets/cog_icon.png) &gt; **Integrations &gt; Edit Settings**
+To configure the PR test settings for specific projects, navigate to **Org** &gt; settings ![](../.gitbook/assets/cog_icon.png/) &gt; **Integrations &gt; Edit Settings**
 
 ![](../.gitbook/assets/automatic.png)
 
@@ -251,7 +251,7 @@ You should ask your developers to consider the merge advice label that appears o
 Snyk auto fix PRs are only generated for new issues.
 {% endhint %}
 
-If your SCM is Github and you are not using Snyk Broker, then by default Snyk rotates every Org user's credentials to open the auto fix PRs. You can change this if needed, and set the user credentials to open the auto fix PRs. See [Opening fix and upgrade pull requests from a fixed GitHub account](integrations/git-repository-scm-integrations/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account) for details.
+If your SCM is Github and you are not using Snyk Broker, then by default Snyk rotates every Org user's credentials to open the auto fix PRs. You can change this if needed, and set the user credentials to open the auto fix PRs. See [Opening fix and upgrade pull requests from a fixed GitHub account](integrations/git-repository-scm-integrations/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account/) for details.
 
 ## Stage 6 - Dependency Upgrade PRs
 

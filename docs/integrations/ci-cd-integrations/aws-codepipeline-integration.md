@@ -60,7 +60,7 @@ The following options are available for configuration:
      * **Patchable**: Selecting patchable fails when there is at least one vulnerability that can be patched. 
    * **Block deployment for vulnerabilities with a minimum severity of**: \(**low**\|**medium**\|**high**\|**critical**\) Only report vulnerabilities of provided level or higher.
 7. **Monitor project**: Select the monitor project checkbox to monitor projects from the AWS CodePipeline. The project snapshot will be created under the Snyk organization selected. Whenever you select the Monitor Project option please note that the Project Group Name will be required. This is to prevent any unintentional project overrides due to naming conflicts.
-8. **Project Group Name:** Enter the project group name for your projects.. This is the same as using [--remote-repo-url](https://support.snyk.io/hc/en-us/articles/360000910677-Snyk-CLI-monitored-projects-are-created-with-IDs-in-the-project-name) when using the CLI. The field does not allow any spaces in the names.
+8. **Project Group Name:** Enter the project group name for your projects.. This is the same as using [--remote-repo-url](https://support.snyk.io/hc/en-us/articles/360000910677-Snyk-CLI-monitored-projects-are-created-with-IDs-in-the-project-name/) when using the CLI. The field does not allow any spaces in the names.
 
 {% hint style="info" %}
 You can change the Configuration settings of a previously-configured stage, by clicking on the **Snyk** link.
@@ -86,7 +86,7 @@ Click **Link to execution details** to view your detailed vulnerability report.
 
 ## Test report details
 
-Snyk analyzes the application’s manifest file and correlates the list of dependencies with Snyk’s vulnerability database. Snyk provides [detailed reports](https://support.snyk.io/hc/en-us/categories/360000598418-Reports-and-remediation) for your open source code. By analyzing the application’s manifest file, Snyk builds a full dependency tree, accurately identifying both direct and transitive dependencies \(transitives account for 78% of the vulnerabilities detected by Snyk\). This enables Snyk to show exactly how a vulnerability was introduced into the application.
+Snyk analyzes the application’s manifest file and correlates the list of dependencies with Snyk’s vulnerability database. Snyk provides [detailed reports](https://support.snyk.io/hc/en-us/categories/360000598418-Reports-and-remediation/) for your open source code. By analyzing the application’s manifest file, Snyk builds a full dependency tree, accurately identifying both direct and transitive dependencies \(transitives account for 78% of the vulnerabilities detected by Snyk\). This enables Snyk to show exactly how a vulnerability was introduced into the application.
 
 ![](../../.gitbook/assets/prototype.png)
 

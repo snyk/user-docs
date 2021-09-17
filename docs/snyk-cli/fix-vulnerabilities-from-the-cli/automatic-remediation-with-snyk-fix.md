@@ -9,14 +9,14 @@ While using the **snyk test** command, actionable remediation for supported ecos
 **snyk fix** is a new CLI command that aims to automatically apply the recommended updates for supported ecosystems.
 
 {% hint style="info" %}
-Please ensure you use the latest version of CLI \([v1.652.0](https://github.com/snyk/snyk/releases/tag/v1.652.0) or later\) to use **snyk fix**.
+Please ensure you use the latest version of CLI \([v1.652.0](https://github.com/snyk/snyk/releases/tag/v1.652.0/) or later\) to use **snyk fix**.
 {% endhint %}
 
 ```text
 Tested 78 dependencies for known issues, found 34 issues, 145 vulnerable paths.Issues to fix by upgrading dependencies:  Upgrade django@2.2.13 to django@2.2.22 to fix
   ✗ HTTP Header Injection [High Severity][https://app.snyk.io/vuln/SNYK-PYTHON-DJANGO-1290072] in django@2.2.13
     introduced by django@2.2.13 and 13 other path(s)
-  ✗ Directory Traversal (new) [High Severity][https://app.snyk.io/vuln/SNYK-PYTHON-DJANGO-1298665] in django@2.2.13
+  ✗ Directory Traversal (new/) [High Severity][https://app.snyk.io/vuln/SNYK-PYTHON-DJANGO-1298665] in django@2.2.13
     introduced by django@2.2.13 and 13 other path(s)
   ✗ Insecure Permissions [High Severity][https://app.snyk.io/vuln/SNYK-PYTHON-DJANGO-609368] in django@2.2.13
     introduced by django@2.2.13 and 13 other path(s)
@@ -49,7 +49,7 @@ Here is the example output of running **snyk fix**:
 
 ## Enabling snyk fix
 
-To enable snyk fix during the beta period, click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Snyk Preview**, then enable the snyk fix feature and click **Save changes**.
+To enable snyk fix during the beta period, click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Snyk Preview**, then enable the snyk fix feature and click **Save changes**.
 
 ![](../../.gitbook/assets/cleanshot_2021-07-02_at_11.39.43_2x.png)
 

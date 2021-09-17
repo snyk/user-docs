@@ -21,7 +21,7 @@ Testing goof ...
 
  ✗ [Medium] Cleartext Transmission of Sensitive Information
      Path: app.js, line 12
-     Info: http (used in require) is an insecure protocol and should not be used in new code.
+     Info: http (used in require/) is an insecure protocol and should not be used in new code.
 
  ✗ [Medium] Allocation of Resources Without Limits or Throttling
      Path: routes/index.js, line 77

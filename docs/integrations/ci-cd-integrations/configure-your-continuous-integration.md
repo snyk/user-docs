@@ -1,6 +1,6 @@
 # Configure your Continuous Integration
 
-To continuously avoid known vulnerabilities in your dependencies, integrate Snyk into your continuous integration \(a.k.a. build\) system. In addition to the documentation here, you're also invited to check out our [integration configuration examples](https://github.com/snyk-samples/snyk-cicd-integration-examples) in our GitHub repository.
+To continuously avoid known vulnerabilities in your dependencies, integrate Snyk into your continuous integration \(a.k.a. build\) system. In addition to the documentation here, you're also invited to check out our [integration configuration examples](https://github.com/snyk-samples/snyk-cicd-integration-examples/) in our GitHub repository.
 
 ## Set up automatic monitoring
 

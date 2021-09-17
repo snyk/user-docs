@@ -1,6 +1,6 @@
 # Getting started with Snyk Infrastructure as Code \(IaC\)
 
-Get started with Snyk IaC to inspect, find and fix issues in configuration files for Terraform or Kubernetes \(including Helm\) environments. For more information, see [Scan your Kubernetes configuration files](https://support.snyk.io/hc/en-us/sections/360001881957-Scan-your-Kubernetes-configuration-files) and [Scan your Terraform files](https://support.snyk.io/hc/en-us/sections/360003156537-Scan-your-Terraform-files).
+Get started with Snyk IaC to inspect, find and fix issues in configuration files for Terraform or Kubernetes \(including Helm\) environments. For more information, see [Scan your Kubernetes configuration files](https://support.snyk.io/hc/en-us/sections/360001881957-Scan-your-Kubernetes-configuration-files/) and [Scan your Terraform files](https://support.snyk.io/hc/en-us/sections/360003156537-Scan-your-Terraform-files).
 
 {% hint style="info" %}
 This article describes a process using the Snyk.io UI. For details of using IaC with the Snyk CLI, see [Snyk CLI for Infrastructure as Code](../../snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/).
@@ -10,9 +10,9 @@ This article describes a process using the Snyk.io UI. For details of using IaC 
 
 Ensure you have:
 
-* A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](getting-started/getting-started-snyk-products) for details\).
+* A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](getting-started/getting-started-snyk-products/) for details\).
 * An existing Kubernetes or Terraform environment to work in.
-* Integrated your Git repository as for other Snyk products - see [Git repository \(SCM integrations\)](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) for more details.
+* Integrated your Git repository as for other Snyk products - see [Git repository \(SCM integrations\)](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations/) for more details.
 
 For more details, see:
 
@@ -45,7 +45,7 @@ Click on a project to see more information and details of the issues in a config
 ![](../../.gitbook/assets/iac_-_select_config_file.png)
 
 {% hint style="info" %}
-If you encounter any errors during import, see the [Importing projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects) information.
+If you encounter any errors during import, see the [Importing projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects/) information.
 {% endhint %}
 
 ## Stage 3: View and fix config files

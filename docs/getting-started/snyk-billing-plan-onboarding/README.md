@@ -12,8 +12,8 @@ In addition, the Team plan provides [license compliance features](./), [IaC scan
 
 ### More details
 
-* See [Getting started with Snyk products](getting-started/getting-started-snyk-products) for individual quickstart guides for Snyk products.
-* See [Snyk Customer Onboarding - Team Plan](getting-started/snyk-billing-plan-onboarding/snyk-customer-onboarding-team-plan) for more detailed instructions on onboarding your team with the Team plan.
+* See [Getting started with Snyk products](getting-started/getting-started-snyk-products/) for individual quickstart guides for Snyk products.
+* See [Snyk Customer Onboarding - Team Plan](getting-started/snyk-billing-plan-onboarding/snyk-customer-onboarding-team-plan/) for more detailed instructions on onboarding your team with the Team plan.
 
 Testing at every stage of the development lifecycle requires a lot of automated testing. This is where the unlimited testing capability of the Team plan becomes so valuable.  
 Using Snyk at multiple stages allows you to:
@@ -60,7 +60,7 @@ Snyk supports various different container registries, allowing you to scan all y
 
 ![](../../.gitbook/assets/image%20%284%29%20%283%29%20%283%29%20%283%29%20%283%29%20%284%29%20%284%29%20%285%29%20%284%29.png)
 
-See [Snyk Container](snyk-container) for more details.
+See [Snyk Container](snyk-container/) for more details.
 
 Our support for Kubernetes allows you to find any vulnerabilities in running workloads. It also allows Snyk to access a lot of information that can help prioritize what to fix first. This can help reduce the noise, leaving you with a clearer picture of what really needs your attention.
 
@@ -78,7 +78,7 @@ An added bonus of the Team plan is license compliance management, allowing Snyk 
 
 ![](../../.gitbook/assets/license-compliance.png)
 
-See [Getting Started with Snyk License Compliance Management](getting-started/getting-started-snyk-products/getting-started-snyk-licensing-compliance) for details.
+See [Getting Started with Snyk License Compliance Management](getting-started/getting-started-snyk-products/getting-started-snyk-licensing-compliance/) for details.
 
 The Team plan also includes the Snyk Jira integration, allowing you to manually raise Jira issues in the Snyk UI for vulnerabilities or license issues.
 
@@ -86,7 +86,7 @@ The Team plan also includes the Snyk Jira integration, allowing you to manually 
 
 Snyk’s Jira integration is yet another way in which Snyk is able to fit into your existing processes, ensuring that work to become more secure is properly managed and accounted for.
 
-See [setting up Snyk with Jira](integrations/untitled-3/jira) for more details and instructions.
+See [setting up Snyk with Jira](integrations/untitled-3/jira/) for more details and instructions.
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

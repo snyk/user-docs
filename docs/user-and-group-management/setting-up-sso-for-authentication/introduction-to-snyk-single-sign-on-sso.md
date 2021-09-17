@@ -7,7 +7,7 @@ This feature is available with Business and Enterprise customers. See [pricing p
 
 You can take advantage of your company's existing identity management systems, and have employees sign in to Snyk using their corporate identity. This makes provisioning users to Snyk easier. It also allows for deeper integration for group and organization membership, role-based access, and more.
 
-Snyk can integrate with any SAML-based and OpenID Connect \(OIDC\)-based SSO, as well as ADFS. You can also use your Enterprise Identity Provider for SSO, including [Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis) and [Google G Suite](https://community.snowflake.com/s/article/configuring-g-suite-as-an-identity-provider/). Read more about SAML in [the Auth0 documentation](https://auth0.com/docs/protocols/saml).
+Snyk can integrate with any SAML-based and OpenID Connect \(OIDC\)-based SSO, as well as ADFS. You can also use your Enterprise Identity Provider for SSO, including [Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis/) and [Google G Suite](https://community.snowflake.com/s/article/configuring-g-suite-as-an-identity-provider/). Read more about SAML in [the Auth0 documentation](https://auth0.com/docs/protocols/saml).
 
 ## User authentication and provisioning
 

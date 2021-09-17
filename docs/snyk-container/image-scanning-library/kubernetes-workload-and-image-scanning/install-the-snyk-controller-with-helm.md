@@ -15,7 +15,7 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
 {% endhint %}
 
 * An administrator account for your Snyk organization.
-* A minimum of 50 GB of storage must be available in the form of an [emptyDir](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir) on the cluster.
+* A minimum of 50 GB of storage must be available in the form of an [emptyDir](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir/) on the cluster.
 * Your Kubernetes cluster needs to be able to communicate with Snyk outbound over HTTPS.
 * When configuring Snyk to integrate with an Amazon Elastic Kubernetes Services \(EKS\) cluster, if you wish to scan images hosted on your Amazon Elastic Container Registry \(ECR\), you need to first follow the prerequisites outlined in the [AWS documentation](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_on_EKS.html).
 
@@ -84,7 +84,7 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
    insecure = true
    ```
 
-   See the [documentation](https://github.com/containers/image/blob/master/docs/containers-registries.conf.5.md) for information on the format and further examples. Once you've created the file, you can use it to create the following ConfigMap:
+   See the [documentation](https://github.com/containers/image/blob/master/docs/containers-registries.conf.5.md/) for information on the format and further examples. Once you've created the file, you can use it to create the following ConfigMap:
 
    ```text
    kubectl create configmap snyk-monitor-registries-conf \

@@ -1,6 +1,6 @@
 # Snyk Glossary
 
-[A]() \| [B]() \| [C]() \| [D]() \| [E]() \| [F]() \| [G]() \| [I]() \| [L]() \| [M]() \| [O]() \| [P]() \| [R]() \| [S]() \| [U]() \| [V]() \| [W]()
+[A](/) \| [B](/) \| [C](/) \| [D](/) \| [E](/) \| [F](/) \| [G](/) \| [I](/) \| [L](/) \| [M](/) \| [O](/) \| [P](/) \| [R](/) \| [S](/) \| [U](/) \| [V](/) \| [W]()
 
 ### Base image
 
@@ -258,7 +258,7 @@ Incorporates **Snyk Intel Vulnerability DB**: Snyk’s database of vulnerabiliti
 
 ### Social Trends
 
-Snyk shows a Trending banner on issues that are being actively discussed in Twitter. See the [Prioritizing Social Trends](https://support.snyk.io/hc/en-us/articles/4404328187921) article.
+Snyk shows a Trending banner on issues that are being actively discussed in Twitter. See the [Prioritizing Social Trends](https://support.snyk.io/hc/en-us/articles/4404328187921/) article.
 
 ### SPDX
 

@@ -17,7 +17,7 @@ if your Jira instance is private, you'll need to set up with Snyk Broker and the
 ## **Prerequisites**
 
 Snyk requires Jira version 5 or above.  
-["Browse Projects" and "Create Issues"](https://community.atlassian.com/t5/Answers-Developer-Questions/Projects-are-not-being-returned-by-a-REST-API-call-to-createmeta/qaq-p/522042#M59700) permissions are needed.
+["Browse Projects" and "Create Issues"](https://community.atlassian.com/t5/Answers-Developer-Questions/Projects-are-not-being-returned-by-a-REST-API-call-to-createmeta/qaq-p/522042#M59700/) permissions are needed.
 
 ## **How to set up your Jira integration**
 

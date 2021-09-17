@@ -4,7 +4,7 @@ Configure integration from Snyk with your Google container registries to scan fo
 
 **Prerequisites:**
 
-[Set up a new service account key](https://support.snyk.io/hc/articles/360004191777#UUID-53c3d159-a436-9605-ec76-6bdc016fd824) from your GCR account.
+[Set up a new service account key](https://support.snyk.io/hc/articles/360004191777#UUID-53c3d159-a436-9605-ec76-6bdc016fd824/) from your GCR account.
 
 **Steps:**
 

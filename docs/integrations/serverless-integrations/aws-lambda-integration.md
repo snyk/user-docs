@@ -4,11 +4,11 @@ Enable integration between your deployed AWS Lambda resources and a Snyk organiz
 
 **Automated Process:**
 
-You have the option of establishing cross-account access to enable Snyk's AWS Lambda integration as a 1-click deployment. This options is available as an official [AWS Quick Start](https://github.com/aws-quickstart/quickstart-snyk-security) and eliminates the need for manual configuration.
+You have the option of establishing cross-account access to enable Snyk's AWS Lambda integration as a 1-click deployment. This options is available as an official [AWS Quick Start](https://github.com/aws-quickstart/quickstart-snyk-security/) and eliminates the need for manual configuration.
 
 ![](../../.gitbook/assets/quickstart-snyk-security-lambda.png)
 
-You will need your Snyk **Organization ID** and AWS IAM [role ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) to complete the integration. The role ARN will be provided for you in the AWS CloudFormation Console's Output tab.
+You will need your Snyk **Organization ID** and AWS IAM [role ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns/) to complete the integration. The role ARN will be provided for you in the AWS CloudFormation Console's Output tab.
 
 ![](../../.gitbook/assets/cloudformation-launch-stack.png)
 
@@ -40,7 +40,7 @@ Snyk currently supports integration with AWS Lambda for Node, Ruby and Java proj
 1. Allow a few minutes for AWS to update the role on their servers.
 2. From AWS, copy the **Role ARN** key that appears at the top of the **Summary** section \(inside the **Role** area still; in the format arn:aws:iam:::role/\). Save this value to paste in Snyk soon.
 3. Now, log in to [your Snyk account](https://app.snyk.io/).
-4. Navigate to **Integrations** from the menu bar at the top, find and click the **AWS Lambda** option: ![image1.png](../../.gitbook/assets/uuid-f045ee35-1ddd-34e1-bbe3-f225bb9426e4-en.png) The **AWSLambda** configuration page in the **Settings** area loads, with the **External ID** value automatically populated for you based on the Snyk organization that you’re configuring.
+4. Navigate to **Integrations** from the menu bar at the top, find and click the **AWS Lambda** option: ![image1.png](../../.gitbook/assets/uuid-f045ee35-1ddd-34e1-bbe3-f225bb9426e4-en.png/) The **AWSLambda** configuration page in the **Settings** area loads, with the **External ID** value automatically populated for you based on the Snyk organization that you’re configuring.
 5. Paste the **Role ARN** that you saved on the side into the **ARN** field.
 6. Click **Save**. Snyk tests the connection values and the page reloads, now displaying AWS Lambda integration details as you entered them. A confirmation message that the details were saved also appears in green at the top of the screen.
 
@@ -57,7 +57,7 @@ The role delegates read-only access to all of your Lamda resources by Snyk per o
 This section generally describes how to navigate the AWS IAM Console for these purposes. For more assistance, see the [AWS documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage.html).
 
 1. From your Snyk account, navigate to the organization you’d like to integrate with, go to **Settings** and when the General Settings load for the group, scroll down and copy your Organization ID. Save this for use later in this process.
-2. Now, click [here](https://console.aws.amazon.com/iam/home?#/policies) to log in to the **AWS Management Console,** navigate to the **Policies** page, and create a new policy for the role by updating the related JSON file **only**, as follows: 1. From the **Policies** area of the AWS Management Console, create a new policy. 2. Navigate to the **JSON** tab. 3. Select and delete all of the default text in the JSON file. 4. Copy the following script and paste it inside the JSON file:
+2. Now, click [here](https://console.aws.amazon.com/iam/home?#/policies/) to log in to the **AWS Management Console,** navigate to the **Policies** page, and create a new policy for the role by updating the related JSON file **only**, as follows: 1. From the **Policies** area of the AWS Management Console, create a new policy. 2. Navigate to the **JSON** tab. 3. Select and delete all of the default text in the JSON file. 4. Copy the following script and paste it inside the JSON file:
 
    ```text
             {

@@ -12,10 +12,10 @@ Features might not be available, depending on your subscription plan.
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![i\_icon\_pip.jpeg](../../.gitbook/assets/uuid-9baa98b7-dd1d-8cf6-03d5-691c94aeef66-en.jpeg) | [Pip and PyPI](https://pypi.org/project/pip/) | ✔︎ | ✔︎ | ✔︎ | ✔︎ |  |
-| ![i\_icon\_pipenv.jpeg](../../.gitbook/assets/uuid-f1ec5441-4e64-a095-ca75-af9bb8d2d110-en.jpeg) | [pipenv](https://pipenv.kennethreitz.org/en/latest/) | ✔︎ |  | ✔︎ |  |  |
-| ![i\_icon\_pip.jpeg](../../.gitbook/assets/uuid-9baa98b7-dd1d-8cf6-03d5-691c94aeef66-en.jpeg) | setup.py | ✔︎ |  | ✔︎ | ✔︎ |  |
-| ![poetry-logo-origami.svg - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360012694258/poetry-logo-origami.svg) | [Poetry](https://python-poetry.org/) | ✔︎ |  | ✔︎ | ✔︎ |  |
+| ![i\_icon\_pip.jpeg](../../.gitbook/assets/uuid-9baa98b7-dd1d-8cf6-03d5-691c94aeef66-en.jpeg/) | [Pip and PyPI](https://pypi.org/project/pip/) | ✔︎ | ✔︎ | ✔︎ | ✔︎ |  |
+| ![i\_icon\_pipenv.jpeg](../../.gitbook/assets/uuid-f1ec5441-4e64-a095-ca75-af9bb8d2d110-en.jpeg/) | [pipenv](https://pipenv.kennethreitz.org/en/latest/) | ✔︎ |  | ✔︎ |  |  |
+| ![i\_icon\_pip.jpeg](../../.gitbook/assets/uuid-9baa98b7-dd1d-8cf6-03d5-691c94aeef66-en.jpeg/) | setup.py | ✔︎ |  | ✔︎ | ✔︎ |  |
+| ![poetry-logo-origami.svg - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360012694258/poetry-logo-origami.svg/) | [Poetry](https://python-poetry.org/) | ✔︎ |  | ✔︎ | ✔︎ |  |
 
 {% hint style="info" %}
 PyPI licenses are supported for all Python projects.
@@ -23,7 +23,7 @@ PyPI licenses are supported for all Python projects.
 
 ## How it works
 
-Once we’ve built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in the dependency tree.
+Once we’ve built the tree, we can use our [vulnerability database](https://snyk.io/vuln/) to find vulnerabilities in any of the packages anywhere in the dependency tree.
 
 {% hint style="info" %}
 To scan your dependencies, you must ensure you have first installed the relevant package manager, and that your project contains the supported manifest files.
@@ -77,7 +77,7 @@ https://github.com/snyk/snyk-python-plugin/blob/master/lib/types.ts
 
 * Ensure you've installed the relevant package manager before you begin using the Snyk CLI tool.
 * Ensure you've included the relevant manifest files supported by Snyk before testing.
-* Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81) as well.
+* Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81/) as well.
 
 ### Parameters
 
@@ -119,7 +119,7 @@ When scanning your Python project for vulnerabilities, use these options to modi
         <p>Specify a specific file to test. By default, Snyk scans the requirements.txt
           file on the top level of the project.</p>
         <p>If explicitly specified with this parameter, Snyk can recognize any manifest
-          files named *req*.txt, where: Each (*) is a wildcard and req can appear
+          files named *req*.txt, where: Each (*/) is a wildcard and req can appear
           anywhere in the file name.</p>
         <p>For example, Snyk recognizes your manifest file when you have renamed
           it to requirements-dev.txt.</p>
@@ -189,7 +189,7 @@ To define which Python major version Snyk uses to test your Git imported project
 To define Python version for all projects in an organization:
 
 1. Log in to your account and navigate to the relevant group and organization to manage.
-2. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Languages**. 
+2. Click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Languages**. 
 3. Click **Edit settings** for **Python**. 
 4. Select to use **Python 2** or **Python 3** when testing projects for this organization
 

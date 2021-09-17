@@ -4,11 +4,11 @@ Enable integration between one Amazon ECR registry and a Snyk organization, and 
 
 **Automated Process:**
 
-You have the option of establishing cross-account access to enable Snyk's Amazon ECR integration as a 1-click deployment. This options is available as an official [AWS Quick Start](https://github.com/aws-quickstart/quickstart-snyk-security) and eliminates the need for manual configuration.
+You have the option of establishing cross-account access to enable Snyk's Amazon ECR integration as a 1-click deployment. This options is available as an official [AWS Quick Start](https://github.com/aws-quickstart/quickstart-snyk-security/) and eliminates the need for manual configuration.
 
 ![](../../../.gitbook/assets/quickstart-snyk-security-ecr.png)
 
-You will need your Snyk **Organization ID** and AWS IAM [role ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) to complete the integration. The role ARN will be provided for you in the AWS CloudFormation Console's Output tab.
+You will need your Snyk **Organization ID** and AWS IAM [role ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns/) to complete the integration. The role ARN will be provided for you in the AWS CloudFormation Console's Output tab.
 
 ![](../../../.gitbook/assets/cloudformation-launch-stack.png)
 

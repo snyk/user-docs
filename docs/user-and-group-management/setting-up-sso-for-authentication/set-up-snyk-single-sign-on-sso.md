@@ -40,7 +40,7 @@ Use these details to set up the connection with your Identity provider \(IdP\):
 | Entity ID | **urn:auth0:snyk:saml-**_**{customer\_name}**_ \(Replace _{customer\_name}_ with a name for your company.\) |
 | :--- | :--- |
 | ACS URL | [https://snyk.auth0.com/login/callback?connection=saml-](https://snyk.auth0.com/login/callback?connection=saml-)_**{customer\_name}**_ \(Replace _{customer\_name}_ with the same name for your company.\) |
-| Signing certificate | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem) |
+| Signing certificate | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem/) |
 
 To map information from your Identity provider to Snyk, name your user attributes as follows \(using the same capitalization and spelling\):
 
@@ -99,7 +99,7 @@ Obtain the following information from your identity provider and organization. P
 
 When using OIDC for the connection between your Identity provider and Snyk, add the Callback/Redirect URIs and OAuth Grant Type in your identity provider to establish trust with Snyk.
 
-| Callback/Redirect URIs | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback) |
+| Callback/Redirect URIs | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback/) |
 | :--- | :--- |
 | OAuth Grant Type | Implicit \(or Authorization Code\) |
 
@@ -117,7 +117,7 @@ Obtain the following information from your identity provider and organization. P
 
 When using Azure AD for the connection between your Identity provider and Snyk, you'll need to add the Redirect URIs in your Identity provider to establish trust with Snyk.
 
-| Redirect URIs | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback) |
+| Redirect URIs | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback/) |
 | :--- | :--- |
 
 
@@ -136,8 +136,8 @@ When using ADFS for the connection between your Identity provider and Snyk, add 
 
 | Realm Identifier | **urn:auth0:snyk** |
 | :--- | :--- |
-| Callback URL | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback) |
-| Signing cert | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem) \(add as a signature and not encryption\) |
+| Callback URL | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback/) |
+| Signing cert | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem/) \(add as a signature and not encryption\) |
 
 ## ADFS information to provide to Snyk
 
@@ -159,7 +159,7 @@ Ignore any error message you see after clicking this link the first time, as Sny
 
 When Snyk finishes the configuration, the support agent asks you to access the log in page in incognito mode to prevent cookies from interfering with the log in process.
 
-* Use [https://app.snyk.io/login/sso](https://app.snyk.io/login/sso) for logging into your production environment.
+* Use [https://app.snyk.io/login/sso](https://app.snyk.io/login/sso/) for logging into your production environment.
 * Use [https://test.snyk.io](https://test.snyk.io/) for logging into the test environment.
 
 To complete your log in:

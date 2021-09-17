@@ -13,7 +13,7 @@ Use any of the following:
 * npm: `npm install -g snyk`
 * Homebrew: `brew tap snyk/tap && brew install snyk`
 * Scoop: `scoop bucket add snyk <https://github.com/snyk/scoop-snyk>`
-* [**A manual installer**](https://github.com/snyk/snyk/releases) available from GitHub
+* [**A manual installer**](https://github.com/snyk/snyk/releases/) available from GitHub
 
 For more detailed installation guidance and options, see [Install the Snyk CLI](../../snyk-cli/install-the-snyk-cli/).
 

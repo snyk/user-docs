@@ -2,13 +2,13 @@
 
 **Prerequisites:**
 
-Enable the [Cloud Resources Manager API](https://console.cloud.google.com/apis/library/cloudresourcemanager.googleapis.com?q=cloud%20resource%20manager&id=16f5d23e-c895-4b9d-88e4-864c1766636f&project=next-for-integration-testing) for the Google account you plan on integrating with Snyk.
+Enable the [Cloud Resources Manager API](https://console.cloud.google.com/apis/library/cloudresourcemanager.googleapis.com?q=cloud%20resource%20manager&id=16f5d23e-c895-4b9d-88e4-864c1766636f&project=next-for-integration-testing/) for the Google account you plan on integrating with Snyk.
 
 From the relevant project in Google, ensure the you've created a service account for this Snyk integration.
 
 **Steps:**
 
-1. Go to the Google Cloud Platform Console [Credentials](https://console.cloud.google.com/apis/credentials) page, select the project that you want to integrate with, and then select to set up a new service account key.
+1. Go to the Google Cloud Platform Console [Credentials](https://console.cloud.google.com/apis/credentials/) page, select the project that you want to integrate with, and then select to set up a new service account key.
 2. From the view that loads, choose the service account from the dropdown list that you created for this integration, and configure a new key for that account with these values:
    * **Service account name** - assign a unique name for the account in order to remember its uses later on.
    * **Role** - Storage Object Viewer \(roles/storage.objectViewer\).

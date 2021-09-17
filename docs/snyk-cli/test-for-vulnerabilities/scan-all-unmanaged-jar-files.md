@@ -29,7 +29,7 @@ REM Usage:
 REM For example: scanjar.bat "C:\workspace\app" "myapp" 
 SET workspace=%1 
 SET appname=%2 
-for /R %workspace% %%f in (*.jar) do cmd /c snyk monitor --scan-unmanaged --remote-repo-url=%appname% --file=%%f
+for /R %workspace% %%f in (*.jar/) do cmd /c snyk monitor --scan-unmanaged --remote-repo-url=%appname% --file=%%f
 ```
 
 Here's what the end result should look like in Snyk UI for an app with **—remote-repo-url=econnect**

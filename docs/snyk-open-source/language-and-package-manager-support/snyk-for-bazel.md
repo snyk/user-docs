@@ -21,7 +21,7 @@ According to [https://docs.bazel.build/versions/master/bazel-overview.html](http
 
 > _Bazel is an open-source build and test tool similar to Make, Maven, and Gradle. It uses a human-readable, high-level build language. Bazel supports projects in multiple languages and builds outputs for multiple platforms. Bazel supports large codebases across multiple repositories, and large numbers of users_
 
-Bazel does not have dependency manifest files or lock files that package managers such as npm have. Instead, build configuration is managed in [BUILD](https://docs.bazel.build/versions/master/build-ref.html#BUILD_files) files, using [Starlark](https://docs.bazel.build/versions/master/skylark/language.html), a domain specific language based on Python3.
+Bazel does not have dependency manifest files or lock files that package managers such as npm have. Instead, build configuration is managed in [BUILD](https://docs.bazel.build/versions/master/build-ref.html#BUILD_files/) files, using [Starlark](https://docs.bazel.build/versions/master/skylark/language.html), a domain specific language based on Python3.
 
 Bazel has limited native integration with package registries such as npmjs.org or Maven Central. There are some Bazel rules that can be added to help with installing dependencies from external registries, e.g. [from Maven](https://docs.bazel.build/versions/master/external.html#maven-artifacts-and-repositories).
 
@@ -33,7 +33,7 @@ The recommended approach is to test your dependencies via the [Snyk Dep Graph Te
 
 ## How it works
 
-1. For each type of dependency \(e.g. Maven, Cocoapods\), create a  [Dep Graph JSON object](snyk-open-source/language-and-package-manager-support/snyk-for-bazel) listing all the dependency packages and versions \(see below\)
+1. For each type of dependency \(e.g. Maven, Cocoapods\), create a  [Dep Graph JSON object](snyk-open-source/language-and-package-manager-support/snyk-for-bazel/) listing all the dependency packages and versions \(see below\)
 2. As part of a Bazel test rule, send this object as a POST request to the [Dep Graph Test API](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h_01EEWFQJFTCWFQBMQR0X32J8B8), \(along with your [auth token](snyk-api-info/authentication-for-api)\), example curl request:
 
    ```text
@@ -43,21 +43,21 @@ The recommended approach is to test your dependencies via the [Snyk Dep Graph Te
      -d @dep-graph.json
    ```
 
-3. Check the [API response](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h_01EEWP8F4MK9MFJT5X0A4ZGS93) for pass/fail status and any resulting vulnerabilities
+3. Check the [API response](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h_01EEWP8F4MK9MFJT5X0A4ZGS93/) for pass/fail status and any resulting vulnerabilities
 
 ## Snyk Dep Graph Test API
 
 The Snyk Dep Graph Test API takes a generic dependency graph, and returns a report containing any relevant vulnerabilities for those dependencies.
 
-The set of supported package managers/repository ecosystems are listed on the [API documentation](https://snyk.docs.apiary.io/#reference/test/dep-graph/test-dep-graph) \(at time of writing these are `deb`, `gomodules`, `gradle`, `maven`, `npm`, `nuget`, `paket`, `pip`, `rpm`, `rubygems` & `cocoapods`\).
+The set of supported package managers/repository ecosystems are listed on the [API documentation](https://snyk.docs.apiary.io/#reference/test/dep-graph/test-dep-graph/) \(at time of writing these are `deb`, `gomodules`, `gradle`, `maven`, `npm`, `nuget`, `paket`, `pip`, `rpm`, `rubygems` & `cocoapods`\).
 
 Any of your Bazel dependencies that are available in these ecosystems can be tested via the API.
 
 ## Snyk Dep Graph JSON Syntax
 
-The Dep Graph Test API takes a [Snyk Dep Graph](https://github.com/snyk/dep-graph) JSON object describing the root application, and the graph of direct and transitive dependencies.
+The Dep Graph Test API takes a [Snyk Dep Graph](https://github.com/snyk/dep-graph/) JSON object describing the root application, and the graph of direct and transitive dependencies.
 
-The [schema](https://github.com/snyk/dep-graph#depgraphdata) for this format is as follows:
+The [schema](https://github.com/snyk/dep-graph#depgraphdata/) for this format is as follows:
 
 ```text
 export interface DepGraphData {
@@ -128,7 +128,7 @@ Here is an example response with a single vulnerability.
                 "Unknown"
             ],
             "cvssScore": 9.8,
-            "description": "## Overview\n[ch.qos.logback:logback-core](https://mvnrepository.com/artifact/ch.qos.logback/logback-core) is a logback-core module.\n\nAffected versions of this package are vulnerable to Arbitrary Code Execution. A configuration can be ...",
+            "description": "## Overview\n[ch.qos.logback:logback-core](https://mvnrepository.com/artifact/ch.qos.logback/logback-core/) is a logback-core module.\n\nAffected versions of this package are vulnerable to Arbitrary Code Execution. A configuration can be ...",
             "disclosureTime": "2017-03-13T06:59:00Z",
             "exploit": "Not Defined",
             "fixedIn": [
@@ -212,7 +212,7 @@ Here are some further notes on specific components in the response object:
 
 {% hint style="info" %}
 **Note**  
-See [https://github.com/snyk/bazel-simple-app](https://github.com/snyk/bazel-simple-app) for a full example Bazel Java project, and corresponding Snyk Dep Graph object.
+See [https://github.com/snyk/bazel-simple-app](https://github.com/snyk/bazel-simple-app/) for a full example Bazel Java project, and corresponding Snyk Dep Graph object.
 {% endhint %}
 
 For a simple Bazel project with a single dependency on a Maven package, you may specify the dependency like this:

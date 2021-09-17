@@ -8,7 +8,7 @@ Snyk's GitHub Enterprise integration allows you to:
 
 ### Setting up a GitHub Enterprise Integration
 
-1. Create a dedicated service account in GitHub Enterprise, with _**write**_ level or above permissions, to the repos you want to monitor with Snyk permissions. See [Required permissions scope for the GitHub integration](github-enterprise-integration.md) for details.
+1. Create a dedicated service account in GitHub Enterprise, with _**write**_ level or above permissions, to the repos you want to monitor with Snyk permissions. See [Required permissions scope for the GitHub integration](github-enterprise-integration.md/) for details.
 2. Generate a personal access token for that account, with **repo \(all\)**, **admin:read:org**, and **admin:repo\_hooks \(read & write\)** permissions scope. See [GitHub Enterprise documentation ](https://docs.github.com/en/enterprise-server@2.22/github/authenticating-to-github/creating-a-personal-access-token)for details.
 3. **Authorize** your personal access token and Enable SSO:
 4. Go to the **Integrations** page in Snyk and click on **GitHub Enterprise**:
@@ -57,7 +57,7 @@ This is an example of a fix pull request opened by Snyk:
 
 To review and adjust the automatic fix pull request settings:
 
-Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 2. Select **Edit Settings** for GitHub Enterprise. 3. Navigate to **Automatic fix pull requests**:
+Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png/) &gt; **Integrations**. 2. Select **Edit Settings** for GitHub Enterprise. 3. Navigate to **Automatic fix pull requests**:
 
 ![](../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%287%29%20%283%29%20%2812%29.png)
 
@@ -71,7 +71,7 @@ This is how Snyk pull request checks appear in the Pull Request page in GitHub E
 
 To review and adjust the pull request tests settings:
 
-1. Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 
+1. Click on settings![cog\_icon.png](../../.gitbook/assets/cog_icon.png/) &gt; **Integrations**. 
 2. Select **Edit Settings** for GitHub Enterprise. 
 3. Navigate to **Default Snyk test for pull requests**:
 

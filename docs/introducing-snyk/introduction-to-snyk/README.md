@@ -6,7 +6,7 @@ Snyk tests for vulnerabilities in [your own code](https://snyk.io/product/snyk-c
 
 Snyk supports a range of languages including: JavaScript, Java \(Gradle, Maven\), .NET, Python, Golang, Swift, Objective-C \(CocoaPods\), Scala, Ruby, PHP, and Bazel. [See more details](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support).
 
-Taking a developer-first approach to security, [Snyk integrates](integrations) with leading IDE, repository, CI/CD, runtime, registry, and issue management tools.
+Taking a developer-first approach to security, [Snyk integrates](integrations/) with leading IDE, repository, CI/CD, runtime, registry, and issue management tools.
 
 ## Security and vulnerability data
 
@@ -20,11 +20,11 @@ You can use the Snyk CLI \(Command Line Interface\) to scan and monitor on your 
 
 ## Snyk API
 
-Snyk’s extensibility and API enable developers to tune Snyk’s security automation to their specific workflows, ensuring both developer experience and consistent platform governance. Learn more in our [Snyk API documentation](https://support.snyk.io/hc/en-us/articles/360000914857-Does-Snyk-have-an-API-) and see how our customers like [Twilio and Spotify](https://snyk.io/blog/snyk-watcher-keep-snyk-in-sync/) use the Snyk API in their workflows.
+Snyk’s extensibility and API enable developers to tune Snyk’s security automation to their specific workflows, ensuring both developer experience and consistent platform governance. Learn more in our [Snyk API documentation](https://support.snyk.io/hc/en-us/articles/360000914857-Does-Snyk-have-an-API-/) and see how our customers like [Twilio and Spotify](https://snyk.io/blog/snyk-watcher-keep-snyk-in-sync/) use the Snyk API in their workflows.
 
 ## Snyk Products and platforms
 
-* [Snyk Open Source](snyk-open-source): Enabling developers to easily find and automatically fix open source vulnerabilities. Snyk Open Source also includes [Snyk license compliance](snyk-open-source) to help manage your open source license usage.
+* [Snyk Open Source](snyk-open-source): Enabling developers to easily find and automatically fix open source vulnerabilities. Snyk Open Source also includes [Snyk license compliance](snyk-open-source/) to help manage your open source license usage.
 * [Snyk Code](https://snyk.io/product/snyk-code/): Find and fix vulnerabilities in your application code in real-time during the development process.
 * [Snyk Container](snyk-container): Find and fix vulnerabilities in container images and Kubernetes applications.
 * [Snyk Infrastructure as Code \(IaC\)](snyk-infrastructure-as-code): Find and fix insecure configurations in Terraform and Kubernetes code.

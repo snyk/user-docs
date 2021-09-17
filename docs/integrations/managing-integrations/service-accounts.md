@@ -35,7 +35,7 @@ This process describes all options.
 ## How to set up a service account
 
 * Log in to your account and navigate to the relevant group and organization that you want to manage.
-* Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Service accounts** to view existing service accounts and their details.
+* Click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Service accounts** to view existing service accounts and their details.
 * Click **Create a service account** to create a new one. The screen that loads varies a little, depending on if you chose a group \(left\) or an organization \(right\):
 
 ![](../../.gitbook/assets/uuid-115442e7-a8bd-44df-43f8-8867a4cdc6ba-en.png)
@@ -79,7 +79,7 @@ Administrators can change token names and delete tokens. When you delete a servi
 
   For group tokens, navigate to the group level. For organization tokens, group admins can delete from either the group or the relevant organization; organization admins should navigate to the relevant organization.
 
-* Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Service accounts**.
+* Click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Service accounts**.
 * Scroll to find the list of existing service accounts: 
 
 ![](../../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en%20%283%29%20%283%29%20%283%29%20%281%29.png)

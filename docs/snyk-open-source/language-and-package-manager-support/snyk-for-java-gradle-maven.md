@@ -2,7 +2,7 @@
 
 Snyk offers security scanning to test your projects for vulnerabilities, both through your CLI and through different integrations from our UI.
 
-**Supported versions:** For officially supported Java versions, operating systems, and Node.js versions see the [Gradle support](https://github.com/snyk/snyk-gradle-plugin#support) and [Maven support](https://github.com/snyk/snyk-mvn-plugin#support) tables.
+**Supported versions:** For officially supported Java versions, operating systems, and Node.js versions see the [Gradle support](https://github.com/snyk/snyk-gradle-plugin#support/) and [Maven support](https://github.com/snyk/snyk-mvn-plugin#support/) tables.
 
 ## Features
 
@@ -77,7 +77,7 @@ If your gradle project makes use of a single **gradle.lockfile** or multiple **\
 Bear in mind that **compileOnly configuration** **has been deprecated** and even if your project successfully generates a lockfile, it will not contain \`compileOnly\` state because this configuration cannot be resolved. Only resolvable configurations compute a dependency graph. In order to solve this issue we suggest you **update your build.gradle containing dependencyLocking logic with the following instruction**
 
 ```text
-compileOnly {resolutionStrategy.deactivateDependencyLocking() }
+compileOnly {resolutionStrategy.deactivateDependencyLocking(/) }
 ```
 
 This will **ignore compileOnly** and save only the necessary information to analyse your project/projects.
@@ -234,7 +234,7 @@ If authentication is required to access your custom registry you will need to fi
 
 To configure the Artifactory integration go to Integrations &gt; Artifactory and click ‘Connect to Artifactory’ and complete the fields - URL to your Artifactory, username, and password.
 
-After the integration is set up you can configure Maven settings by navigating to settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Languages** &gt; **Java**.
+After the integration is set up you can configure Maven settings by navigating to settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Languages** &gt; **Java**.
 
 You can choose whether to use Artifactory as a mirror or as an additional repository where your artifacts will reside. These settings will be very similar to what you have in `~/.m2/settings.xml`.
 

@@ -39,7 +39,7 @@ In addition to monitoring your vulnerability status, Snyk can help you with your
 
 Snyk provides a default license policy, which you can edit to match your preferences.
 
-Learn more about [licenses](snyk-open-source/licenses) and how to [set a license policy](snyk-open-source/license-policies/setting-a-license-policy).
+Learn more about [licenses](snyk-open-source/licenses/) and how to [set a license policy](snyk-open-source/license-policies/setting-a-license-policy).
 
 ## Integrate Snyk with Jira
 

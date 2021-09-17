@@ -4,25 +4,25 @@ Get started with Snyk Open Source to inspect, find and fix vulnerabilities in yo
 
 {% hint style="info" %}
 This process describes using the Snyk.io UI and a source code management system.  
-You can also use an [IDE tool](integrations/ide-tools) or a [CI/CD integration](integrations/ci-cd-integrations/). See [Integrations](integrations) for more details.
+You can also use an [IDE tool](integrations/ide-tools/) or a [CI/CD integration](integrations/ci-cd-integrations/). See [Integrations](integrations/) for more details.
 {% endhint %}
 
 ### **Using the CLI tool**
 
-The [Snyk CLI tool](snyk-cli/guides-for-our-cli/getting-started-with-the-cli) allows you to get started using the command line - for example, to install on npm:
+The [Snyk CLI tool](snyk-cli/guides-for-our-cli/getting-started-with-the-cli/) allows you to get started using the command line - for example, to install on npm:
 
 ```text
 npm install -g snyk
 ```
 
-See [Getting started with the CLI](snyk-cli/guides-for-our-cli/getting-started-with-the-cli) for details.
+See [Getting started with the CLI](snyk-cli/guides-for-our-cli/getting-started-with-the-cli/) for details.
 
 #### **Prerequisites**
 
 Ensure you have:
 
-1. A code project using open source packages, on a [supported source code management system](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) \(such as GitHub\), with a supported [language & package manager](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support) \(such as Java\).
-2. A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](getting-started/getting-started-snyk-products) for details\).
+1. A code project using open source packages, on a [supported source code management system](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations/) \(such as GitHub\), with a supported [language & package manager](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support/) \(such as Java\).
+2. A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](getting-started/getting-started-snyk-products/) for details\).
 
 ### Stage 1: Add source control integration
 
@@ -37,7 +37,7 @@ Choose a source code integration, to allow Snyk to work on a project.
 3. Click the source control system \(for example, GitHub\) to integrate with Snyk. 
 4. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
 
-See [DevOps integrations & languages](introducing-snyk/introduction-to-snyk/integrations-and-languages) for more details
+See [DevOps integrations & languages](introducing-snyk/introduction-to-snyk/integrations-and-languages/) for more details
 
 ### Stage 2: Add Projects
 
@@ -53,7 +53,7 @@ Add projects to test with Snyk, by choosing repositories for Snyk to test and mo
 6. Project import completes.
 
 {% hint style="info" %}
-If you encounter any errors during import, see the [Importing projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects) information.
+If you encounter any errors during import, see the [Importing projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects/) information.
 {% endhint %}
 
 ### Stage 3: View vulnerabilities
@@ -67,7 +67,7 @@ You can now view vulnerability results for imported projects. The **Projects** t
 
 ![](../../.gitbook/assets/detailed-vuln-information%20%283%29%20%284%29%20%284%29%20%284%29%20%286%29%20%287%29%20%285%29%20%281%29.png)
 
-See [View project information](getting-started/introduction-to-snyk-projects/view-project-information) for more details.
+See [View project information](getting-started/introduction-to-snyk-projects/view-project-information/) for more details.
 
 ### Stage 4: Fix vulnerabilities
 
@@ -90,7 +90,7 @@ To fix vulnerabilities:
 If no package upgrade is available, you may be able to use Snyk patches to fix vulnerabilities.
 {% endhint %}
 
-See [Fixing vulnerabilities](snyk-open-source/open-source-basics/fixing-vulnerabilities) for more details.
+See [Fixing vulnerabilities](snyk-open-source/open-source-basics/fixing-vulnerabilities/) for more details.
 
 ## For more information
 

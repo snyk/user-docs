@@ -4,7 +4,7 @@
 This feature is deprecated.
 {% endhint %}
 
-Add the [Snyk agent](https://static.snyk.io/resources/runtime/agent/java/snyk-java-runtime-agent.zip) to your project in order to start using Snyk Runtime Monitoring for your Java applications.
+Add the [Snyk agent](https://static.snyk.io/resources/runtime/agent/java/snyk-java-runtime-agent.zip/) to your project in order to start using Snyk Runtime Monitoring for your Java applications.
 
 1. Download the runtime agent and unzip the archive.
 2. From the extracted files, copy:snyk-java-runtime-agent.jaralongside your application files.

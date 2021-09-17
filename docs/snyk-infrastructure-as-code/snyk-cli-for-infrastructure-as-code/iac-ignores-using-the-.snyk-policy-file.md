@@ -16,7 +16,7 @@ For test runs from imported git repositories:
 ## .snyk file semantics
 
 {% hint style="info" %}
-The **.snyk** file has some limitations for IaC projects \(see [The .snyk file](fixing-and-prioritizing-issues/policies/the-.snyk-file) for standard functionality\):
+The **.snyk** file has some limitations for IaC projects \(see [The .snyk file](fixing-and-prioritizing-issues/policies/the-.snyk-file/) for standard functionality\):
 
 * The **patches** section is not yet supported and will be ignored.
 * There are no IaC-supported language settings. This section will be ignored.

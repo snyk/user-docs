@@ -10,7 +10,7 @@ With the Snyk Orb, you can quickly add Snyk scanning to your CI/CD in order to t
 
 Getting started with CircleCI from scratch to a green build with Snyk is simple! You can read all about the Snyk Orb here:
 
-* [Our Circle CI README](https://circleci.com/orbs/registry/orb/snyk/snyk) - the page includes all the info that you need in order to set your CI/CD with Snyk including a list of parameters and samples.
+* [Our Circle CI README](https://circleci.com/orbs/registry/orb/snyk/snyk/) - the page includes all the info that you need in order to set your CI/CD with Snyk including a list of parameters and samples.
 * [A Circle CI blog](https://circleci.com/blog/adding-application-and-image-scanning-to-your-cicd-pipeline/) - discussing how to set up a secure pipeline with the Snyk orb.
 
 ## Configure your CircleCI integration

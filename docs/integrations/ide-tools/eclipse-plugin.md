@@ -32,9 +32,9 @@ Snyk supports all languages that are supported by both Eclipse and Snyk. Additio
 
 ## Use the Snyk plugin to secure your Eclipse projects
 
-From the Snyk results click ![](../../.gitbook/assets/uuid-aa090aa8-d4fe-eb5d-2505-54a0b1555be9-en.png) whenever you are ready to scan your projects. It shouldn’t take too long for the results to appear—but no worries! You can continue to work as usual in the meantime anyway.
+From the Snyk results click ![](../../.gitbook/assets/uuid-aa090aa8-d4fe-eb5d-2505-54a0b1555be9-en.png/) whenever you are ready to scan your projects. It shouldn’t take too long for the results to appear—but no worries! You can continue to work as usual in the meantime anyway.
 
-If for any reason you need to stop the scan before the build ends, click: ![](../../.gitbook/assets/uuid-29be01e6-6913-25f8-15ed-a8cf47230fa0-en.png) If you only want to scan a single project in your workspace, navigate to the Package Explorer panel, right-click the root of the project you want to test, and then choose **Snyk test**.
+If for any reason you need to stop the scan before the build ends, click: ![](../../.gitbook/assets/uuid-29be01e6-6913-25f8-15ed-a8cf47230fa0-en.png/) If you only want to scan a single project in your workspace, navigate to the Package Explorer panel, right-click the root of the project you want to test, and then choose **Snyk test**.
 
 When the scan ends, results and any relevant error messages as well, are displayed from the **Snyk results**, grouped by project similar to the following:
 
@@ -104,7 +104,7 @@ Work with Snyk results from Eclipse as follows:
       </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">The name of the direct dependency package in your project (the package
-        you explicitly installed) that is affected by the vulnerability, either
+        you explicitly installed/) that is affected by the vulnerability, either
         directly or indirectly.</td>
     </tr>
     <tr>
@@ -112,8 +112,8 @@ Work with Snyk results from Eclipse as follows:
       <td style="text-align:left"></td>
       <td style="text-align:left">
         <p>All details appear on a single row and the Dependency (the name of the
-          package explicitly used in the code) and Package (the name of the package
-          that actually contains the vulnerability) columns both display the name
+          package explicitly used in the code/) and Package (the name of the package
+          that actually contains the vulnerability/) columns both display the name
           of the same package:</p>
         <p>
           <img src="../../.gitbook/assets/uuid-e7accdc1-7495-e7a5-7a64-2403b066cb03-en.png"
@@ -138,9 +138,9 @@ Work with Snyk results from Eclipse as follows:
         </p>
         <p>For example:</p>
         <p>Package X uses Package Y, which in turn uses Package Z.</p>
-        <p>Package Z contains a Cross-Site Scripting (XSS) vulnerability, indirectly
+        <p>Package Z contains a Cross-Site Scripting (XSS/) vulnerability, indirectly
           affecting your project.</p>
-        <p>The Dependency (the name of the package explicitly used in the code) is
+        <p>The Dependency (the name of the package explicitly used in the code/) is
           Package X; the Package field displays Package Z (the name of the package
           that actually contains the vulnerability).</p>
       </td>

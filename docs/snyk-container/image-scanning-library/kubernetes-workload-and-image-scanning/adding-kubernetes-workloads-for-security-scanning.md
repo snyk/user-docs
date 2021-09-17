@@ -12,7 +12,7 @@ You must have an account with Snyk and be onboarded to your organization by an a
 In addition, the integration must be configured between Snyk and your Kubernetes environment per organization. To verify the integration is configured, ensure you have an Integration ID:
 
 1. Navigate to the relevant organization.
-2. Click on settings ![](../../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 
+2. Click on settings ![](../../../.gitbook/assets/cog_icon.png/) &gt; **Integrations**. 
 3. In the Kubernetes section, click **Edit Settings**. 
 4. Scroll to the **Integration ID** entry and check this is set.
 
@@ -40,7 +40,7 @@ Annotate any of the following workload types:
 **Steps**
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
-2. Click on settings ![](../../../.gitbook/assets/cog_icon.png) &gt; **General**. 3. Copy the **Organization ID** value. 4. Add an annotation to the workload with the key `orgs.k8s.snyk.io/v1` , entering the Organization ID as the value, in a comma-separated list.
+2. Click on settings ![](../../../.gitbook/assets/cog_icon.png/) &gt; **General**. 3. Copy the **Organization ID** value. 4. Add an annotation to the workload with the key `orgs.k8s.snyk.io/v1` , entering the Organization ID as the value, in a comma-separated list.
 
 You can also annotate a single workload to be added to multiple organizations.
 

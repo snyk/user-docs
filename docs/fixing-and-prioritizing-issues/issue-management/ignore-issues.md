@@ -36,7 +36,7 @@ Suppressing issues is possible via the CLI. For node.js projects, you can use **
 
 `snyk ignore --id='npm:braces:20180219' --expiry='2018-04-01' --reason='testing'`
 
-See [Ignore vulnerabilities using Snyk CLI](snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli) for more details.
+See [Ignore vulnerabilities using Snyk CLI](snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli/) for more details.
 
 When using **Snyk wizard** or **Snyk ignore**, the .snyk policy file is updated with the path and given a reason \(if one was provided\). For example:
 
@@ -77,17 +77,17 @@ For all projects, you can ignore the vulnerability by creating a `.snyk` YAML fi
 
 ![](../../.gitbook/assets/screen+shot+2017-05-10+at+11.16.57+am.png)
 
-For example, if you wanted to ignore the vulnerability with SNYK ID [SNYK-RUBY-FASTREADER-20085](https://snyk.io/vuln/SNYK-RUBY-FASTREADER-20085) in `fastreader`, with the reason “No remediation available” until 01 Jan 2017, you would write:
+For example, if you wanted to ignore the vulnerability with SNYK ID [SNYK-RUBY-FASTREADER-20085](https://snyk.io/vuln/SNYK-RUBY-FASTREADER-20085/) in `fastreader`, with the reason “No remediation available” until 01 Jan 2017, you would write:
 
 ![](../../.gitbook/assets/screen+shot+2017-05-10+at+11.17.26+am.png)
 
-See [The .snyk file](fixing-and-prioritizing-issues/policies/the-.snyk-file) for more details.
+See [The .snyk file](fixing-and-prioritizing-issues/policies/the-.snyk-file/) for more details.
 
 ## Ignoring issues with policy actions
 
-You can set [Security policies](fixing-and-prioritizing-issues/security-policies) actions to ignore all vulnerabilities that match the conditions specified in a policy rule.
+You can set [Security policies](fixing-and-prioritizing-issues/security-policies/) actions to ignore all vulnerabilities that match the conditions specified in a policy rule.
 
-See [Security policies: Actions](fixing-and-prioritizing-issues/security-policies/security-policies-actions) for more details.
+See [Security policies: Actions](fixing-and-prioritizing-issues/security-policies/security-policies-actions/) for more details.
 
 ## Set who can configure ignore settings
 
@@ -99,7 +99,7 @@ You can also choose to set the more details field to be a compulsory field when 
 
 If you have access to our Reports feature, you will also be able to see an overview of how many issues in your organization’s projects are ignored, along with an option to filter these so you can drill down into each one. If the issue was ignored in our UI, we include a credit for additional accountability, so you can see who initiated it.
 
-See [Reports](reports-1) for more details.
+See [Reports](reports-1/) for more details.
 
 ## Ignoring issues in Snyk Code
 
@@ -114,16 +114,16 @@ As an example, the following two code snippets \(despite textual differences\) d
 ```text
 var fs = require('fs');
 var logFileName = req.query.file || 'standard_log.log';
-var logfile = fs.readFile(logFileName, "utf8", function(err, data) {...
+var logfile = fs.readFile(logFileName, "utf8", function(err, data/) {...
 ```
 
 ```text
 var filesystem = require('fs');
 var generalLogFileName = req.query.file || 'standard_log.log'; 
-var handleLogFile = filesystem.readFile(generalLogFileName, "utf8", function(err, data) {...
+var handleLogFile = filesystem.readFile(generalLogFileName, "utf8", function(err, data/) {...
 ```
 
-See [Using Snyk Code \(web\)](https://support.snyk.io/hc/en-us/articles/360017147558#Ignore) for more details of using the Ignore function for Snyk Code.
+See [Using Snyk Code \(web\)](https://support.snyk.io/hc/en-us/articles/360017147558#Ignore/) for more details of using the Ignore function for Snyk Code.
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

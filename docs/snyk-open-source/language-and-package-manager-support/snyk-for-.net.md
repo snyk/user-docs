@@ -11,8 +11,8 @@ Features might not be available, depending on your subscription plan.
 
 | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |  |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![i\_icon\_nuget.png](../../.gitbook/assets/uuid-b997ca27-61ff-f00b-941c-16bf3aa4a0e0-en.png) | [NuGet](https://www.nuget.org/) | ✔︎ | ✔︎ | ✔︎ |  |  |
-| ![i\_icon\_paket.png](../../.gitbook/assets/uuid-d8e44fe4-c0ea-e3ea-de3b-1e15e4a6b391-en.png) | [Paket](https://fsprojects.github.io/Paket/index.html) | ✔︎ |  | ✔︎ |  |  |
+| ![i\_icon\_nuget.png](../../.gitbook/assets/uuid-b997ca27-61ff-f00b-941c-16bf3aa4a0e0-en.png/) | [NuGet](https://www.nuget.org/) | ✔︎ | ✔︎ | ✔︎ |  |  |
+| ![i\_icon\_paket.png](../../.gitbook/assets/uuid-d8e44fe4-c0ea-e3ea-de3b-1e15e4a6b391-en.png/) | [Paket](https://fsprojects.github.io/Paket/index.html/) | ✔︎ |  | ✔︎ |  |  |
 
 ## **How it works**
 
@@ -40,7 +40,7 @@ Examples of supported project files that resolve into **project.assets.json** in
 * \*.vbproj
 * \*.fsproj
 
-**Note:** Project files can be combined with [lock files](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files#locking-dependencies) for a more deterministic **project.assets.json** resolution
+**Note:** Project files can be combined with [lock files](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files#locking-dependencies/) for a more deterministic **project.assets.json** resolution
 
 ## Dependencies managed by packages.config
 
@@ -83,7 +83,7 @@ This section describes the unique CLI options available when working with .NET-b
 
   * Ensure you've installed the relevant package manager before you begin using the Snyk CLI tool.
   * Ensure you've included the relevant manifest files supported by Snyk before testing.
-  * Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81) as well.
+  * Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81/) as well.
 
 ### **Parameters**
 
@@ -167,12 +167,12 @@ From the Snyk UI, you can configure whether Snyk should scan your entire project
 
   * Ensure you've installed the relevant package manager before you begin using the Snyk CLI tool.
   * Ensure you've included the relevant manifest files supported by Snyk before testing.
-  * Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81) as well.
+  * Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81/) as well.
 
 **Update language preferences**
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
-2. Go to settings ![](../../.gitbook/assets/cog_icon.png) &gt; and click for .NET Scan build dependencies - \_\*\*\_If checked, Snyk scans all development dependencies.
+2. Go to settings ![](../../.gitbook/assets/cog_icon.png/) &gt; and click for .NET Scan build dependencies - \_\*\*\_If checked, Snyk scans all development dependencies.
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

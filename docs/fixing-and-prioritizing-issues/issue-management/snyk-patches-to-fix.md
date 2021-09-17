@@ -25,16 +25,16 @@ Patches are available via the source code integrations and the Snyk CLI.
 
 If you use the Snyk Protect to fix your vulnerable Node.js project by applying a patch then following things will happen:
 
-1. [`@snyk/protect`](https://www.npmjs.com/package/@snyk/protect) will be added as a production dependency of the project
+1. [`@snyk/protect`](https://www.npmjs.com/package/@snyk/protect/) will be added as a production dependency of the project
 2. A postinstall hook will be added to run `snyk-protect` when npm install or yarn install completes.
 
 This means that whenever the project dependencies are installed with npm install or yarn install then the hook can trigger `snyk-protect` to run and patch the necessary dependencies, on completion you will see a success message in the output.
 
 ### **Difference between the `@snyk/protect` and `snyk protect`**
 
-Previously, Snyk was adding the whole [Snyk CLI `snyk` package](https://www.npmjs.com/package/snyk) to your project dependencies in order to run `snyk protect` command. We’ve created a new standalone [package `@snyk/protect`](https://github.com/snyk/snyk/tree/master/packages/snyk-protect#snykprotect), that’s much lighter and faster for applying patches.
+Previously, Snyk was adding the whole [Snyk CLI `snyk` package](https://www.npmjs.com/package/snyk/) to your project dependencies in order to run `snyk protect` command. We’ve created a new standalone [package `@snyk/protect`](https://github.com/snyk/snyk/tree/master/packages/snyk-protect#snykprotect), that’s much lighter and faster for applying patches.
 
-If you are still using a `snyk` package to apply patches, we recommend to migrate to `@snyk/protect` by either [following its README](https://github.com/snyk/snyk/tree/master/packages/snyk-protect#snykprotect) or running a [migration script](https://www.npmjs.com/package/@snyk/cli-protect-upgrade) with: `npx @snyk/cli-protect-upgrade`.
+If you are still using a `snyk` package to apply patches, we recommend to migrate to `@snyk/protect` by either [following its README](https://github.com/snyk/snyk/tree/master/packages/snyk-protect#snykprotect/) or running a [migration script](https://www.npmjs.com/package/@snyk/cli-protect-upgrade/) with: `npx @snyk/cli-protect-upgrade`.
 
 ### **How do patches work when using the source code integrations?**
 
@@ -43,7 +43,7 @@ When you choose to use a patch to fix a vulnerability,`@snyk/protect` is added a
 The `.snyk` file contains the details of the patch per individual path to the dependency as it may appear in multiple locations in the `node_modules`, for example:
 
 ```text
-# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+# Snyk (https://snyk.io/) policy file, patches or ignores known vulnerabilities.
 version: v1.22.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability

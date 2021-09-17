@@ -13,11 +13,11 @@ Features might not be available, depending on your subscription plan.
 
 |  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [![composer-logo.svg](../../.gitbook/assets/uuid-3415efde-9bfb-2b07-3781-8169e25a2fcd-en.png)](https://support.snyk.io/hc/article_attachments/360007258958/uuid-3415efde-9bfb-2b07-3781-8169e25a2fcd-en.png) | [Composer](https://getcomposer.org/) | ✔︎ | ✔︎ | ✔︎ |  |  |
+| [![composer-logo.svg](../../.gitbook/assets/uuid-3415efde-9bfb-2b07-3781-8169e25a2fcd-en.png)](https://support.snyk.io/hc/article_attachments/360007258958/uuid-3415efde-9bfb-2b07-3781-8169e25a2fcd-en.png/) | [Composer](https://getcomposer.org/) | ✔︎ | ✔︎ | ✔︎ |  |  |
 
 ## **How it works**
 
-Once we’ve built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in the dependency tree.
+Once we’ve built the tree, we can use our [vulnerability database](https://snyk.io/vuln/) to find vulnerabilities in any of the packages anywhere in the dependency tree.
 
 {% hint style="info" %}
 **Note**  
@@ -41,7 +41,7 @@ In order to build the dependency tree Snyk analyzes the `composer.json` and `com
 
 * Ensure you've installed the relevant package manager before you begin using the Snyk CLI tool.
 * Ensure you've included the relevant manifest files supported by Snyk before testing.
-* Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81) as well.
+* Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81/) as well.
 
 ### **Parameters**
 
@@ -84,7 +84,7 @@ The following error messages may appear for you when working with your PHP proje
 
 ## Support
 
-If you run across any of these, or other issues, please send the following files to us at [support@snyk.io](mailto:support@snyk.io) and we'll help you out:
+If you run across any of these, or other issues, please send the following files to us at [support@snyk.io](mailto:support@snyk.io/) and we'll help you out:
 
 * `composer.json`
 * `composer.lock`

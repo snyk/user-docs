@@ -36,9 +36,9 @@ The following repo shares some examples of binary and NPM integrations for vario
 
 Developer teams typically adopt Snyk in the following stages:
 
-1. [Expose vulnerabilities](snyk-cicd-integration-good-practices.md) \(snyk monitor\)
-2. [Use Snyk as a gatekeeper](snyk-cicd-integration-good-practices.md) \(snyk test\)
-3. [Continuous monitoring](snyk-cicd-integration-good-practices.md) \(snyk test + Snyk monitor\)
+1. [Expose vulnerabilities](snyk-cicd-integration-good-practices.md/) \(snyk monitor\)
+2. [Use Snyk as a gatekeeper](snyk-cicd-integration-good-practices.md/) \(snyk test\)
+3. [Continuous monitoring](snyk-cicd-integration-good-practices.md/) \(snyk test + Snyk monitor\)
 
 ### **Stage 1: Expose vulnerabilities \(Snyk monitor\)**
 
@@ -95,13 +95,13 @@ To run the snyk test, you need an authentication token with access to the desire
 
 Snyk supports the following approaches to add tests to a build pipeline:
 
-* **Snyk integration plugins**: Snyk provides pre-built plugins for several CI servers, including [Jenkins](integrations/ci-cd-integrations/jenkins-integration-overview), [Team City](integrations/ci-cd-integrations/teamcity-integration-overview)[, Bitbucket Pipelines](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview) and [Azure Pipelines. ](integrations/ci-cd-integrations/azure-pipelines-integration) See the [Continuous Integration](integrations/ci-cd-integrations) documentation for more details
-* **Snyk CLI:** For teams with more complex workflows, or using a build system without a Snyk pre-built plugin, you can use the Snyk CLI tool during CI/CD setups. See [Setting up using Snyk CLI](snyk-cicd-integration-good-practices.md) for more details.
-* **Snyk API**: For teams with complex requirements, Snyk provides a REST API, which you can use for functions including initiating scans, onboarding new projects, and testing arbitrary libraries. See the [Snyk API documentation](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices/README.md) for more details.
+* **Snyk integration plugins**: Snyk provides pre-built plugins for several CI servers, including [Jenkins](integrations/ci-cd-integrations/jenkins-integration-overview), [Team City](integrations/ci-cd-integrations/teamcity-integration-overview)[, Bitbucket Pipelines](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/) and [Azure Pipelines. ](integrations/ci-cd-integrations/azure-pipelines-integration/) See the [Continuous Integration](integrations/ci-cd-integrations/) documentation for more details
+* **Snyk CLI:** For teams with more complex workflows, or using a build system without a Snyk pre-built plugin, you can use the Snyk CLI tool during CI/CD setups. See [Setting up using Snyk CLI](snyk-cicd-integration-good-practices.md/) for more details.
+* **Snyk API**: For teams with complex requirements, Snyk provides a REST API, which you can use for functions including initiating scans, onboarding new projects, and testing arbitrary libraries. See the [Snyk API documentation](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices/README.md/) for more details.
 
 ## Setting up using Snyk CLI
 
-Snyk CLI is a NodeJS application that can be scripted directly by developers for easy integration into most CI/CD environments, and is available as an NPM application, pre-packaged binary, or container image. See [Install the Snyk CLI](snyk-cli/install-the-snyk-cli) for more details
+Snyk CLI is a NodeJS application that can be scripted directly by developers for easy integration into most CI/CD environments, and is available as an NPM application, pre-packaged binary, or container image. See [Install the Snyk CLI](snyk-cli/install-the-snyk-cli/) for more details
 
 Snyk CLI can be configured to:
 
@@ -112,7 +112,7 @@ Snyk CLI can be configured to:
 
 When using the Snyk CLI:
 
-* **snyk test** is a synchronous command, that ends with an exit code. Exit codes can then be used by your build system to either pass or fail the build based on the test results. See the [CLI reference guide](snyk-cli/guides-for-our-cli/cli-reference) for details on exit statuses and their meanings.
+* **snyk test** is a synchronous command, that ends with an exit code. Exit codes can then be used by your build system to either pass or fail the build based on the test results. See the [CLI reference guide](snyk-cli/guides-for-our-cli/cli-reference/) for details on exit statuses and their meanings.
 * **snyk monitor** \(which posts test results to the Snyk web UI\) is an asynchronous command, that does not end with exit code based on the vulnerability status. 
 
 Depending on your approach and goals, you may need to use both command sets in your pipeline.
@@ -142,17 +142,17 @@ You can add flags to the **snyk test** command to fine-tune parameters that will
 * **--severity-threshold=high**: Fail the build only for High Severity issues: 
 * **--fail-on=upgradable**: Fail the build only for issues that are upgradable \(can be fixed with Snyk remediation advice\):  
 
-You can also fail the build for any other parameter in the Snyk JSON output \(such as CVSS score\), using a wrapper like [snyk-filter](https://github.com/snyk-tech-services/snyk-filter), or use additional tooling like [snyk-delta](https://support.snyk.io/hc/en-us/articles/360019979978) to fail the build only for issues found since the last build.
+You can also fail the build for any other parameter in the Snyk JSON output \(such as CVSS score\), using a wrapper like [snyk-filter](https://github.com/snyk-tech-services/snyk-filter), or use additional tooling like [snyk-delta](https://support.snyk.io/hc/en-us/articles/360019979978/) to fail the build only for issues found since the last build.
 
 ## Creating custom build artifacts
 
-You can use Snyk's JSON output to create custom test reports as build artifacts, using the [snyk-to-html](https://github.com/snyk/snyk-to-html) utility, or other custom processing you develop.
+You can use Snyk's JSON output to create custom test reports as build artifacts, using the [snyk-to-html](https://github.com/snyk/snyk-to-html/) utility, or other custom processing you develop.
 
 ## Creating work items for new vulnerabilities
 
-Snyk allows you to automatically create new work items in JIRA \(see [Jira integration](integrations/untitled-3/jira) documentation\). You can customize this code for your specific requirements, or adapt it to work with other work management systems.
+Snyk allows you to automatically create new work items in JIRA \(see [Jira integration](integrations/untitled-3/jira/) documentation\). You can customize this code for your specific requirements, or adapt it to work with other work management systems.
 
-See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns) to get started, or review the [API to create Jira tickets.](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices/README.md#reference/projects/project-jira-issues/create-jira-issue)
+See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns/) to get started, or review the [API to create Jira tickets.](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices/README.md#reference/projects/project-jira-issues/create-jira-issue)
 
 ## Ignoring issues
 
@@ -161,7 +161,7 @@ By default if issues are not ignored, or if you are not using Snyk-delta, a "sny
 * [Ignore issues using a Snyk policy file](snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli)
 * [Ignore issues from the Snyk UI](https://support.snyk.io/hc/en-us/articles/360000923498-How-can-I-ignore-a-vulnerability-)
 * [Ignore issues from the Snyk API](https://snyk.docs.apiary.io/#reference/projects/project-ignores-by-issue/add-ignore)
-* Use the Snyk Python API for bulk ignores: see [https://github.com/snyk-labs/pysnyk](https://github.com/snyk-labs/pysnyk) and [https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py](https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py)
+* Use the Snyk Python API for bulk ignores: see [https://github.com/snyk-labs/pysnyk](https://github.com/snyk-labs/pysnyk/) and [https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py](https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py)
 
 ## Snyk Open Source-specific strategies
 
@@ -240,7 +240,7 @@ when it finds the build file as part of the **--all-projects** search
 
 * Gradle may require additional configuration parameters. If so, to target the other artifacts using **--file=** for each manifest of the other languages/package-managers, as mentioned in the first option. You must then use **--all-sub-projects** and potentially **--configuration-matching** and --configuration-matching to scan a complex gradle project.
 
-See [Snyk for Java \(Gradle, Maven\)](https://support.snyk.io/hc/en-us/articles/360003817357-Java-for-Snyk) for more information.
+See [Snyk for Java \(Gradle, Maven\)](https://support.snyk.io/hc/en-us/articles/360003817357-Java-for-Snyk/) for more information.
 
 ## Snyk Container-specific strategies
 
@@ -291,7 +291,7 @@ Snyk Infrastructure as Code supports:
 * Deployments, Pods and Services.
 * CronJobs, Jobs, StatefulSet, ReplicaSet, DaemonSet, and ReplicationController.
 
-See [Test your Kubernetes files with our CLI tool](snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kubernetes-files-with-our-cli-tool) for more details.
+See [Test your Kubernetes files with our CLI tool](snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kubernetes-files-with-our-cli-tool/) for more details.
 
 ### CI/CD troubleshooting & Advanced tips
 

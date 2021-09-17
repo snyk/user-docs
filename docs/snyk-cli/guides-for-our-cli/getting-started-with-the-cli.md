@@ -2,7 +2,7 @@
 
 The Snyk Command Line Interface \(CLI\) helps you find and fix known vulnerabilities in your dependencies, both manually and as part of your Continuous Integration \(CI\) build system.
 
-See [Language Support](https://support.snyk.io/hc/en-us/articles/360000911957-Language-support) for details about package managers and languages that the CLI supports.
+See [Language Support](https://support.snyk.io/hc/en-us/articles/360000911957-Language-support/) for details about package managers and languages that the CLI supports.
 
 ## Install and authenticate the Snyk CLI
 
@@ -49,13 +49,13 @@ Snyk uses monitoring to regularly test your code and notify you when new vulnera
 
    This command takes a snapshot of your current dependencies so Snyk can regularly scan your code, and notify you about newly disclosed vulnerabilities as they are introduced, or when a previously unavailable patch or upgrade path is created.
 
-2. Log in to the Snyk app and navigate to the [Projects page](https://app.snyk.io/projects) to see the latest snapshot and scan results.
+2. Log in to the Snyk app and navigate to the [Projects page](https://app.snyk.io/projects/) to see the latest snapshot and scan results.
 
 ## **What's next**
 
 Run `snyk help` or see [Our full CLI reference](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0).
 
-We also have [a handy cheat sheet](https://res.cloudinary.com/snyk/image/upload/v1551195097/Snyk_CLI_Cheat_Sheet.pdf) available and a [video tutorial](https://www.youtube.com/watch?v=xp_LtchEkT8).
+We also have [a handy cheat sheet](https://res.cloudinary.com/snyk/image/upload/v1551195097/Snyk_CLI_Cheat_Sheet.pdf/) available and a [video tutorial](https://www.youtube.com/watch?v=xp_LtchEkT8).
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)

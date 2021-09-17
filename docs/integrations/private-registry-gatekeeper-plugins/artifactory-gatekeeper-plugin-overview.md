@@ -16,7 +16,7 @@ By scanning artifacts as part of your workflow and then displaying those test re
 
 {% hint style="info" %}
 **Note**  
-This article refers to the Artifactory _Plugin_, an independent piece of software that is installed on the Artifactory machine and serves as a gatekeeper, blocking vulnerable packages from being downloaded from the Artifactory instance rather than the [Artifactory _Integration_](integrations/private-registry-integrations/artifactory-registry-for-maven) - an internal integration in Snyk app, that allows configuring SCM / CLI scans to use custom package registries
+This article refers to the Artifactory _Plugin_, an independent piece of software that is installed on the Artifactory machine and serves as a gatekeeper, blocking vulnerable packages from being downloaded from the Artifactory instance rather than the [Artifactory _Integration_](integrations/private-registry-integrations/artifactory-registry-for-maven/) - an internal integration in Snyk app, that allows configuring SCM / CLI scans to use custom package registries
 {% endhint %}
 
 ### Supported Package Managers
@@ -35,10 +35,10 @@ This article refers to the Artifactory _Plugin_, an independent piece of softwar
 ### Installation
 
 1. Log in to your Snyk account.
-2. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **General** to locate, copy and save the following on the side:
+2. Click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **General** to locate, copy and save the following on the side:
    1. Service account token or Organization API token:
    2. The Organization ID for \(any\) one of your organizations
-3. Go to [our repo in GitHub](https://github.com/snyk/artifactory-snyk-security-plugin) and navigate to the **Releases**. 
+3. Go to [our repo in GitHub](https://github.com/snyk/artifactory-snyk-security-plugin/) and navigate to the **Releases**. 
 4. From the most current release, expand the **Assets** section to download the artifactory-snyk-security-plugin-&lt;version&gt;.zip archive. 
 5. Extract the archive. It should have the following structure: 
    1. plugins \(directory\)

@@ -54,7 +54,7 @@ From there you can login to your Snyk account and paste in your name, password a
 
 More information on creating a service principal for Azure can be found in Azure's documentation:
 
-[CLI](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli) , [Portal](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal)
+[CLI](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli/) , [Portal](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal)
 
 ## **Azure Functions: check your connection status**
 

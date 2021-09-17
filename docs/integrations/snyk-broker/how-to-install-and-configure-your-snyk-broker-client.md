@@ -6,7 +6,7 @@ Snyk’s recommended and supported method of running the Snyk Broker client is u
 
 To install and configure your client:
 
-1. Visit [the broker repository](https://github.com/snyk/broker) and follow the instructions for the relevant SCM to run one of our provided images, or derive your own.
+1. Visit [the broker repository](https://github.com/snyk/broker/) and follow the instructions for the relevant SCM to run one of our provided images, or derive your own.
 2. For the environment variables required to run the Broker client, you must:
    1. Retrieve your [unique broker client token,](integrations/snyk-broker/retrieve-a-unique-broker-client-token)
    2. Ensure that you have the necessary permissions granted to your API credentials for the integration you are using by following [one of our integration guides.](integrations)

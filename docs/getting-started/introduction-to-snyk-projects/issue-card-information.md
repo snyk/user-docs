@@ -14,8 +14,8 @@ Header section information:
 * **Issue name**: for example, **Open**.
 * **Score**: [Priority score](fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score): 0 - 1,000.
 * **Type**: VULNERABILITY or LICENSE ISSUE.
-* Links to [CWE](https://cwe.mitre.org/index.html) \(Common Weakness Evaluation\), [CVSS](https://www.first.org/cvss/calculator/3.1) \(Common Vulnerability Scoring System\), and Snyk [Intel Vulnerability DB](https://snyk.io/vuln) information for that issue.
-* **Social Trends**: Snyk shows a [Trending banner](fixing-and-prioritizing-issues/prioritizing-issues/prioritize-by-social-trends) on issues that are being actively discussed in Twitter.
+* Links to [CWE](https://cwe.mitre.org/index.html/) \(Common Weakness Evaluation\), [CVSS](https://www.first.org/cvss/calculator/3.1/) \(Common Vulnerability Scoring System\), and Snyk [Intel Vulnerability DB](https://snyk.io/vuln/) information for that issue.
+* **Social Trends**: Snyk shows a [Trending banner](fixing-and-prioritizing-issues/prioritizing-issues/prioritize-by-social-trends/) on issues that are being actively discussed in Twitter.
 
 Body section information:
 

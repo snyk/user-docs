@@ -18,7 +18,7 @@ Unlike projects imported through the Snyk GitHub integration, projects imported/
 * Automated dependency upgrade PRs, to keep dependencies up to date and help avoid new vulnerabilities and simplify fixing those that are found.
 * Manual Fix PRs generated through Snyk to address specific issues chosen by the user
 
-Projects can be imported in this way both [during onboarding](github-read-only-projects.md), or [post-onboarding to Snyk](github-read-only-projects.md) \(during normal ongoing use\).
+Projects can be imported in this way both [during onboarding](github-read-only-projects.md), or [post-onboarding to Snyk](github-read-only-projects.md/) \(during normal ongoing use\).
 
 ## During onboarding to Snyk:
 

@@ -19,7 +19,7 @@ Install our Snyk CLI tool using npm.
 **Prerequisites:**
 
 * Ensure you’ve installed the latest version of npm on your local environment, using Node version 10 or later \(see [What version of Node is required for Snyk?](https://support.snyk.io/hc/en-us/articles/360004183317-What-version-of-Node-is-required-for-Snyk-)\).
-* To run Snyk on Alpine Linux, first install libstdc++. See [this doc](https://support.snyk.io/hc/en-us/articles/360001929038) for more help.
+* To run Snyk on Alpine Linux, first install libstdc++. See [this doc](https://support.snyk.io/hc/en-us/articles/360001929038/) for more help.
 
 **Steps:**
 
@@ -54,17 +54,17 @@ As you can see, Snyk found and reported several vulnerabilities in the package. 
 
 ## Install the Snyk CLI using the prebuilt binaries
 
-You can download and use Snyk's prebuilt binaries already containing npm, the Snyk CLI and other necessary components. To download the prebuilt binary, visit the [**Releases tab**](https://github.com/snyk/snyk/releases) in the CLI repository page in GitHub:
+You can download and use Snyk's prebuilt binaries already containing npm, the Snyk CLI and other necessary components. To download the prebuilt binary, visit the [**Releases tab**](https://github.com/snyk/snyk/releases/) in the CLI repository page in GitHub:
 
 ![](../../.gitbook/assets/image%20%2812%29.png)
 
-Once you've completed installation, get started testing and remediating your vulnerabilities with our [Getting started](https://support.snyk.io/hc/articles/360003812458#UUID-19fc37f2-b686-11ed-b85c-4789e90c8dfc) guide and [our full list](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0) of our CLI commands, options and arguments.
+Once you've completed installation, get started testing and remediating your vulnerabilities with our [Getting started](https://support.snyk.io/hc/articles/360003812458#UUID-19fc37f2-b686-11ed-b85c-4789e90c8dfc/) guide and [our full list](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0/) of our CLI commands, options and arguments.
 
 ## Install the Snyk CLI tool with a container
 
 You can use a Snyk created Docker container already containing npm, the Snyk CLI and other necessary components. Follow the detailed instructions here [https://hub.docker.com/r/snyk/snyk-cli](https://hub.docker.com/r/snyk/snyk-cli)
 
-Once you've completed installation, get started testing and remediating your vulnerabilities with our [Getting started](https://support.snyk.io/hc/articles/360003812458#UUID-19fc37f2-b686-11ed-b85c-4789e90c8dfc) guide and [our full list](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0)[ ](snyk-cli/guides-for-our-cli/cli-reference)of our CLI commands, options and arguments.
+Once you've completed installation, get started testing and remediating your vulnerabilities with our [Getting started](https://support.snyk.io/hc/articles/360003812458#UUID-19fc37f2-b686-11ed-b85c-4789e90c8dfc/) guide and [our full list](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0)[ ](snyk-cli/guides-for-our-cli/cli-reference)of our CLI commands, options and arguments.
 
 ## Install the Snyk CLI with Homebrew
 
@@ -73,7 +73,7 @@ From MAC OSx and Linux environments, you can use Homebrew to install our Snyk CL
 **Prerequisites:**
 
 * Supported for MAC OSx and Linux environments only.
-* Ensure [Homebrew](https://brew.sh/index_he) has already been installed:
+* Ensure [Homebrew](https://brew.sh/index_he/) has already been installed:
 
   ```text
   brew tap snyk/tap

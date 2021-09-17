@@ -18,7 +18,7 @@ By scanning artifacts as part of your work and then displaying those test result
 
 **Supported languages and package managers**
 
-Snyk supports all languages that are supported by both Nexus and the Snyk API. See [our docs](https://snyk.docs.apiary.io/#reference/test) for more information about the package managers and languages we support.
+Snyk supports all languages that are supported by both Nexus and the Snyk API. See [our docs](https://snyk.docs.apiary.io/#reference/test/) for more information about the package managers and languages we support.
 
 **How it works**
 

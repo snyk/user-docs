@@ -2,7 +2,7 @@
 
 This process describes how to set up a resource role in AWS and the necessary policies. For additional assistance, see the [Amazon ECR documentation](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ecr_managed_policies.html).
 
-1. Click [here](https://console.aws.amazon.com/iam/home?#/policies) to log in to the AWS Management Console, navigate to the IAM service and then to the Policies page to create a policy for the role by updating the related JSON file, as follows:
+1. Click [here](https://console.aws.amazon.com/iam/home?#/policies/) to log in to the AWS Management Console, navigate to the IAM service and then to the Policies page to create a policy for the role by updating the related JSON file, as follows:
    1. Create a new policy.
    2. Navigate to the JSON tab.
    3. Select and delete all of the default text in the JSON file.

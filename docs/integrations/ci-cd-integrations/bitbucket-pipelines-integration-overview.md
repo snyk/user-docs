@@ -2,7 +2,7 @@
 
 Snyk integrates with Bitbucket Pipelines using a **Snyk pipe**, seamlessly scanning your application dependencies and Docker images for open source security vulnerabilities as part of the continuous integration/continuous delivery \(CI/CD\) workflow.
 
-[Bitbucket Pipes](https://bitbucket.org/blog/meet-bitbucket-pipes-30-ways-to-automate-your-ci-cd-pipeline?utm_source=twitter&utm_medium=social&utm_campaign=bitbucket_bitbucket-pipes-bitbucket) enables users to customize and automate a Bitbucket Pipeline CI/CD workflow with a group of ready-to-use tasks that can be added inside of your pipelines by copying and pasting them from the Bitbucket interface.
+[Bitbucket Pipes](https://bitbucket.org/blog/meet-bitbucket-pipes-30-ways-to-automate-your-ci-cd-pipeline?utm_source=twitter&utm_medium=social&utm_campaign=bitbucket_bitbucket-pipes-bitbucket/) enables users to customize and automate a Bitbucket Pipeline CI/CD workflow with a group of ready-to-use tasks that can be added inside of your pipelines by copying and pasting them from the Bitbucket interface.
 
 With the Snyk pipe, you can quickly add Snyk scanning to your pipelines to test and monitor for vulnerabilities at different points of the CI/CD workflow, based on your configurations. Results are then displayed from the Bitbucket Pipelines output view and can also be monitored from [Snyk.io](http://app.snyk.io/).
 
@@ -62,7 +62,7 @@ To enable Snyk to test and monitor your code as an integral part of your CI/CD w
 
 ## How to add a Snyk pipe
 
-1. Add the Snyk pipe while originally creating your pipeline, or while editing an existing pipeline. See the Bitbucket documentation for more information about [pipelines](https://confluence.atlassian.com/bitbucket/configure-bitbucket-pipelines-yml-792298910.html) and [pipes](https://support.atlassian.com/bitbucket-cloud/docs/pipes/).  When adding the Snyk pipe, follow these guidelines:
+1. Add the Snyk pipe while originally creating your pipeline, or while editing an existing pipeline. See the Bitbucket documentation for more information about [pipelines](https://confluence.atlassian.com/bitbucket/configure-bitbucket-pipelines-yml-792298910.html/) and [pipes](https://support.atlassian.com/bitbucket-cloud/docs/pipes/).  When adding the Snyk pipe, follow these guidelines:
 2. Use the Bitbucket pipeline editor to update the .yml file configuration, select the correct language and use the Bitbucket Pipes build directory when adding the Snyk pipe.
 3. Paste the Snyk pipe into the Bitbucket editor interface, after all, build steps. Build steps are commands such as these: `npm install / composer install / bundle install / dotnet restore / docker build`
 4. Ensure you paste the pipe before a deployment step, such as **npm publish or docker push**.
@@ -138,7 +138,7 @@ The following table describes the Snyk pipe parameters.
             <p>From the pipeline YAML file that you&apos;re building, enter $SNYK_TOKEN
               as the value for the SNYK_TOKEN parameter in the Snyk pipe.</p>
             <p>
-              <img src="../../.gitbook/assets/uuid-6ce8d058-882c-c810-f303-c59dcaeeeda8-en (3) (3) (3) (3) (3) (1) (3).png"
+              <img src="../../.gitbook/assets/uuid-6ce8d058-882c-c810-f303-c59dcaeeeda8-en (3/) (3/) (3/) (3/) (3/) (1/) (3).png"
               alt="Snyk_token_in_pipeline.png" />
             </p>
           </li>
@@ -174,7 +174,7 @@ The following table describes the Snyk pipe parameters.
     <tr>
       <td style="text-align:left">PROTECT</td>
       <td style="text-align:left">
-        <p>Supported only for JavaScript (npm) currently.</p>
+        <p>Supported only for JavaScript (npm/) currently.</p>
         <p>This parameter applies the patches specified in your .snyk file to the
           local file system when set to True.</p>
         <p>Default: false. Automatic remediation is disabled.</p>
