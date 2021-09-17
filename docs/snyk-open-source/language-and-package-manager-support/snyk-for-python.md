@@ -193,7 +193,7 @@ To define Python version for all projects in an organization:
 3. Click **Edit settings** for **Python**. 
 4. Select to use **Python 2** or **Python 3** when testing projects for this organization
 
-![](../../.gitbook/assets/mceclip1-18-.png)
+![](../../.gitbook/assets/mceclip1-18-.png/)
 
 We recommend you create different organizations to work with different Python versions.
 
@@ -215,6 +215,6 @@ python: '3.7.2'
 This example tells Snyk to use a recent version of Python 3, but Snyk will not use the exact minor and patch version specified.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

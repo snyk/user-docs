@@ -13,7 +13,7 @@ Data in each of the four tabs is displayed based on the filters you've applied f
 
 The dashboard appears similar to the following image:
 
-![](../../.gitbook/assets/mceclip0-30-.png)
+![](../../.gitbook/assets/mceclip0-30-.png/)
 
 To quickly view additional data for a specific period in time, hover over the relevant graph and check out the pop-up.
 
@@ -141,11 +141,11 @@ For the **Activity** area, the following are the parameters and their descriptio
 
 These controls appear at the top of the window:
 
-![](../../.gitbook/assets/mceclip1-19-.png)
+![](../../.gitbook/assets/mceclip1-19-.png/)
 
 **Summary filters**—mark the issues to be displayed by selecting the relevant issue type and then click the list arrow again to close it.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

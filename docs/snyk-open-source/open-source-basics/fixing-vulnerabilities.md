@@ -11,9 +11,9 @@ Snyk supports workflows to fix vulnerabilities using:
 
 For projects imported via an SCM \(Source Code Manager\), Snyk offers the following types of automated pull / merge requests:
 
-* [Fix pull requests for new vulnerabilities](snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities)
-* [Fix pull requests to clear the backlog of vulnerabilities in priority order](https://support.snyk.io/hc/en-us/articles/360017186958-Fix-PRs-to-clear-the-backlog-of-vulnerabilities-in-priority-order)
-* [Dependency upgrade pull requests](snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs)
+* [Fix pull requests for new vulnerabilities](snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities/)
+* [Fix pull requests to clear the backlog of vulnerabilities in priority order](https://support.snyk.io/hc/en-us/articles/360017186958-Fix-PRs-to-clear-the-backlog-of-vulnerabilities-in-priority-order/)
+* [Dependency upgrade pull requests](snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs/)
 
 ## Manual pull / merge requests for a project code
 
@@ -25,9 +25,9 @@ To generate a PR / MR directly from your project, using the Snyk UI:
 4. A preview screen appears, showing you what fixes will be applied
 5. Click **Open a Fix PR** on this screen to generate the pull request
 
-![](../../.gitbook/assets/image18.png)
+![](../../.gitbook/assets/image18.png/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

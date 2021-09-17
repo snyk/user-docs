@@ -58,6 +58,6 @@ Run `snyk help` or see [Our full CLI reference](https://support.snyk.io/hc/artic
 We also have [a handy cheat sheet](https://res.cloudinary.com/snyk/image/upload/v1551195097/Snyk_CLI_Cheat_Sheet.pdf/) available and a [video tutorial](https://www.youtube.com/watch?v=xp_LtchEkT8).
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

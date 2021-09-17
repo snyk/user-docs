@@ -27,8 +27,8 @@ The way Snyk analyzes and builds the tree varies depending on the language and p
 
 See:
 
-* [Snyk CLI tool for JavaScript projects](snyk-for-javascript.md)
-* [Git services for JavaScript projects](snyk-for-javascript.md)
+* [Snyk CLI tool for JavaScript projects](snyk-for-javascript/)
+* [Git services for JavaScript projects](snyk-for-javascript/)
 
 ## Snyk CLI tool for JavaScript projects
 
@@ -212,13 +212,13 @@ From the Snyk UI, use these parameters to customize your language preferences fo
 
 ### Update language preferences
 
-![](../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%2816%29.gif)
+![](../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%2816%29.gif/)
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage
 2. Click on settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Languages**
 3. Click **Edit settings** for JavaScript to configure preferences for your JavaScript \(npm and Yarn\) projects in this organization
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

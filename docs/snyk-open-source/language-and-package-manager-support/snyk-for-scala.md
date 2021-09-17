@@ -4,7 +4,7 @@ Snyk supports testing Scala projects that have their dependencies managed by [sb
 
 {% hint style="info" %}
 **Note**  
-To use the Snyk CLI with versions of sbt 1.2 and older, you will need to first [install the sbt-dependency-graph plugin](https://support.snyk.io/hc/en-us/articles/360004167317)
+To use the Snyk CLI with versions of sbt 1.2 and older, you will need to first [install the sbt-dependency-graph plugin](https://support.snyk.io/hc/en-us/articles/360004167317/)
 {% endhint %}
 
 ## Testing Scala projects: how it works
@@ -12,6 +12,6 @@ To use the Snyk CLI with versions of sbt 1.2 and older, you will need to first [
 We scan Scala projects by examining your build.sbt to compare the specific versions of every direct and deep dependency in your project against our [Maven vulnerability database](https://snyk.io/vuln?type=maven).
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

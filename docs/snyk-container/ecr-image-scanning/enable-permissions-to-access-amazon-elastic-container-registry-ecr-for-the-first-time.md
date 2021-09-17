@@ -10,7 +10,7 @@ This process describes how to set up a resource role in AWS and the necessary po
 
      
 
-![SCRIPT1.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007065957/uuid-31a073be-e145-f147-01d8-f235026e0f0b-en.png)
+![SCRIPT1.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007065957/uuid-31a073be-e145-f147-01d8-f235026e0f0b-en.png/)
 
    5. Set **AmazonEC2ContainerRegistryReadOnlyForSnyk** as the **Name**.
    6. Enter Provides Snyk with read-only access to Amazon EC2 Container Registry repositories as the Description.
@@ -29,11 +29,11 @@ This process describes how to set up a resource role in AWS and the necessary po
 
      
 
-![ecrGIF2.gif - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007065977/uuid-4b683f44-0a5e-0d13-f369-f7edecf98ce9-en.gif)
+![ecrGIF2.gif - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007065977/uuid-4b683f44-0a5e-0d13-f369-f7edecf98ce9-en.gif/)
 
  
 <br><br><hr>
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}

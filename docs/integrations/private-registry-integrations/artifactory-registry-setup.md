@@ -14,7 +14,7 @@ Brokered Artifactory is currently supported for [Maven](integrations/private-reg
 1. Go to settings ![](../../.gitbook/assets/cog_icon.png/) &gt; **Integrations &gt; Package Repositories &gt; Artifactory** 
 2. You should see this screen at the beginning.
 
-![](../../.gitbook/assets/screenshot_2020-04-17_at_14.38.12.png)
+![](../../.gitbook/assets/screenshot_2020-04-17_at_14.38.12.png/)
 
 {% hint style="info" %}
 **Note**  
@@ -61,6 +61,6 @@ Contact [support@snyk.io](mailto:support@snyk.io/) if you want to add a private 
    2. Check connection status by refreshing Artifactory Integration Settings page, no connection error should be displayed
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

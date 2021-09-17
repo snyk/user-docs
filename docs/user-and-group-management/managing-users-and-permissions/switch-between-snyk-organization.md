@@ -16,6 +16,6 @@
 3. If you would like to override this global configuration for individual runs of `snyk wizard` or `snyk monitor`, run `snyk monitor --org=orgname` or `snyk wizard --org=orgname`.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

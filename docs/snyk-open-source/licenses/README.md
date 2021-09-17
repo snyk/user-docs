@@ -23,7 +23,7 @@ In case you notice a license with the wrong license assigned to it, you can reac
 
 To facilitate onboarding of your developers, we recommend that your teams check these defaults, update severities and add instructions per license type based on the policies outlined specifically by your Legal teams. Once updated, when Snyk detects a license violation it displays the violation for all users in the organization from our UI project area, or from the CLI Snyk test results, in the same way as a security vulnerability, and including the severity and instructions you configured.
 
-![](../../.gitbook/assets/image%20%282%29.png)
+![](../../.gitbook/assets/image%20%282%29.png/)
 
 ### **An inventory of your licenses**
 
@@ -41,6 +41,6 @@ Within the **Reports** area you can view an inventory of all of your licenses ac
 * Cocoapods
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

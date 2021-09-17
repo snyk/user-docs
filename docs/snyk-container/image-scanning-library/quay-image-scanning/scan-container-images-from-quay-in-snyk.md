@@ -7,7 +7,7 @@ To add images from Quay to Snyk:
 **Prerequisites**:
 
 * Have a Snyk account with access to the relevant organization \(given by an administrator\).
-* Quay integration configured. To learn more about that, follow the steps in [Container security with Quay integration](snyk-container/image-scanning-library/untitled-1/container-security-with-quay-integration)
+* Quay integration configured. To learn more about that, follow the steps in [Container security with Quay integration](snyk-container/image-scanning-library/untitled-1/container-security-with-quay-integration/)
 
 **Steps:**
 
@@ -23,9 +23,9 @@ To add images from Quay to Snyk:
 
 Quay imports are indicated with a unique icon, and you can also filter the integration in the **projects** view to see Quay projects only:
 
-![](../../../.gitbook/assets/mceclip1-11-.png)
+![](../../../.gitbook/assets/mceclip1-11-.png/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

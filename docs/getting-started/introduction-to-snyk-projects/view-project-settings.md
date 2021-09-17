@@ -2,7 +2,7 @@
 
 Click **Settings** from your project, to view and edit project settings:
 
-![](../../.gitbook/assets/screenshot_2021-04-14_at_09.23.38.png)
+![](../../.gitbook/assets/screenshot_2021-04-14_at_09.23.38.png/)
 
 Click the **GitHub integration** section to edit SCM-specific settings \(applicable also to other SCMs\).
 
@@ -29,6 +29,6 @@ Deleting a project will:
 * Remove the webhook from the GitHub repository.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

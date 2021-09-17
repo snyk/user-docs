@@ -4,7 +4,7 @@
 
 Snyk shows a **Trending** banner on issues that are being actively discussed in Twitter.
 
-![](../../.gitbook/assets/social-trends.gif)
+![](../../.gitbook/assets/social-trends.gif/)
 
 Social Trends are calculated into the priority score by default. You can look at the top tweets mentioning this vulnerability by clicking on **View Tweets**.
 
@@ -20,6 +20,6 @@ See [Snyk Priority Score](fixing-and-prioritizing-issues/starting-to-fix-vulnera
 {% endhint %}
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

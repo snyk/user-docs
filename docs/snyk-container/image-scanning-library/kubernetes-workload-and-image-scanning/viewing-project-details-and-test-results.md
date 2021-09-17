@@ -2,13 +2,13 @@
 
 All workloads that you and your team have imported for monitoring appear on your **Projects** page marked with a unique Kubernetes icon:
 
-![Kubernetes icon](../../../.gitbook/assets/uuid-24e0b69a-01c3-9434-9dac-9b44864bd269-en.png)
+![Kubernetes icon](../../../.gitbook/assets/uuid-24e0b69a-01c3-9434-9dac-9b44864bd269-en.png/)
 
 **To view and work with the workload test results:**
 
 * Go to the **Projects** page and filter for Kubernetes projects only:
 
-![](../../../.gitbook/assets/uuid-08d7978e-0c64-a8c2-c289-402534ebec42-en.png)
+![](../../../.gitbook/assets/uuid-08d7978e-0c64-a8c2-c289-402534ebec42-en.png/)
 
 Expand any item to view:
 
@@ -17,11 +17,11 @@ Expand any item to view:
 
 To view vulnerabilities in detail for any image, including its history, click the image name. The Project details page loads for the selected image:
 
-![](../../../.gitbook/assets/image%20%2859%29%20%282%29%20%283%29%20%283%29%20%283%29%20%283%29%20%281%29.png)
+![](../../../.gitbook/assets/image%20%2859%29%20%282%29%20%283%29%20%283%29%20%283%29%20%283%29%20%281%29.png/)
 
 * To view an aggregate list of the vulnerabilities in all of the images in the workload, along with details about the security posture of the workload configuration, click the workload link. The Project details page loads for the selected image similar to the following example:
 
-![](../../../.gitbook/assets/uuid-79e06589-b59c-4bad-30e4-56c0e15607e0-en.png)
+![](../../../.gitbook/assets/uuid-79e06589-b59c-4bad-30e4-56c0e15607e0-en.png/)
 
 Currently, we test the workload configuration for the following properties:
 
@@ -33,6 +33,6 @@ Currently, we test the workload configuration for the following properties:
 | Capabilities | securityContext.capabilities | At a low-level, Linux capabilities control what different processes in the container are allowed to do: from being able to write to the disk, to being able to communicate over the network. Dropping all capabilities and adding in those that are required is possible but requires understanding the list of capabilities first. |
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

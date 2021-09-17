@@ -11,11 +11,11 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
 
 Infrastructure as Code configuration issues appear in the summary statistics and graphs by default, showing all of the open issues across your projects and issue types:
 
-![](../../.gitbook/assets/image4.png)
+![](../../.gitbook/assets/image4.png/)
 
 To view IaC issues only, select **Configuration** from the **Summary filters** drop down:
 
-![](../../.gitbook/assets/screenshot_2021-02-17_at_14.22.50.png)
+![](../../.gitbook/assets/screenshot_2021-02-17_at_14.22.50.png/)
 
 For more details on the summary tab, see [Summary tab](reports-1/reports/summary-tab/) documentation.
 
@@ -25,13 +25,13 @@ Select the **Issues** page to see detailed information on open issues across all
 
 To view IaC issues only, select **Configuration** in the **Issue filters** drop down.
 
-![](../../.gitbook/assets/image3.png)
+![](../../.gitbook/assets/image3.png/)
 
 This shows the title of each issue and type, and the severity.
 
 You can also view the issues ungrouped; this shows more information about the project file that the issue is found in, and details on when it was first introduced:
 
-![](../../.gitbook/assets/image2-3-%20%281%29%20%282%29%20%282%29%20%282%29%20%283%29%20%284%29%20%284%29%20%283%29%20%284%29.png)
+![](../../.gitbook/assets/image2-3-%20%281%29%20%282%29%20%282%29%20%282%29%20%283%29%20%284%29%20%284%29%20%283%29%20%284%29.png/)
 
 For more details on the issues tab, see [Issues tab](reports-1/reports/issues-tab/) documentation.
 
@@ -63,6 +63,6 @@ You can obtain your **public-org-id** from the Snyk UI **Settings** page when yo
 For the full list of parameters, see the [API Documentation](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues?console=1).
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

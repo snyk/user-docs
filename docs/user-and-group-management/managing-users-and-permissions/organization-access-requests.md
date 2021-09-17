@@ -8,7 +8,7 @@ The most common routes for a user to reach the address of an org they're not a m
 * Clicking through to Snyk for a pull request Snyk has raised
 * Clicking through from a status check from Snyk on any pull request in the repository
 
-**💡 If you find yourself having to request access to an org you have access too, it may be because you've logged in with a different authentication method than you usually use.** [**Find out more**](https://support.snyk.io/hc/en-us/articles/360001649558-Unable-to-display-this-organization)
+**💡 If you find yourself having to request access to an org you have access too, it may be because you've logged in with a different authentication method than you usually use.** [**Find out more**](https://support.snyk.io/hc/en-us/articles/360001649558-Unable-to-display-this-organization/)
 
 ## How it works:
 
@@ -31,6 +31,6 @@ This can be enabled/disabled at either the Snyk organization level, or for an en
 Go to the **Members** page in either the org or group settings.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

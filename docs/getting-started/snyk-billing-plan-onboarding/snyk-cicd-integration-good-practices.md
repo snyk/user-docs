@@ -24,21 +24,21 @@ The advantage of the binary setup is that it has no dependency with the local en
 
 **Deploy a Snyk Container**
 
-You may also deploy Snyk in your pipeline using one of our images in Dockerhub: [https://hub.docker.com/r/snyk/snyk](https://hub.docker.com/r/snyk/snyk)
+You may also deploy Snyk in your pipeline using one of our images in Dockerhub: [https://hub.docker.com/r/snyk/snyk](https://hub.docker.com/r/snyk/snyk/)
 
 #### Examples
 
 The following repo shares some examples of binary and NPM integrations for various CI/CD tools:
 
-[CI/CD examples](https://github.com/snyk-labs/snyk-cicd-integration-examples)
+[CI/CD examples](https://github.com/snyk-labs/snyk-cicd-integration-examples/)
 
 ### Typical stages of adoption
 
 Developer teams typically adopt Snyk in the following stages:
 
-1. [Expose vulnerabilities](snyk-cicd-integration-good-practices.md/) \(snyk monitor\)
-2. [Use Snyk as a gatekeeper](snyk-cicd-integration-good-practices.md/) \(snyk test\)
-3. [Continuous monitoring](snyk-cicd-integration-good-practices.md/) \(snyk test + Snyk monitor\)
+1. [Expose vulnerabilities](snyk-cicd-integration-good-practices/) \(snyk monitor\/)
+2. [Use Snyk as a gatekeeper](snyk-cicd-integration-good-practices/) \(snyk test\/)
+3. [Continuous monitoring](snyk-cicd-integration-good-practices/) \(snyk test + Snyk monitor\/)
 
 ### **Stage 1: Expose vulnerabilities \(Snyk monitor\)**
 
@@ -78,7 +78,7 @@ You can define the target organization in the Snyk CLI, by either URL slug or or
 * You can define the target organization using its URL slug, as displayed in the browser's address bar when viewing it in the Snyk UI: 
 * Or you can define the target organization using its **org id** in each organization's settings page:
 
-![](../../.gitbook/assets/image1.png)
+![](../../.gitbook/assets/image1.png/)
 
 **Default organization**
 
@@ -96,8 +96,8 @@ To run the snyk test, you need an authentication token with access to the desire
 Snyk supports the following approaches to add tests to a build pipeline:
 
 * **Snyk integration plugins**: Snyk provides pre-built plugins for several CI servers, including [Jenkins](integrations/ci-cd-integrations/jenkins-integration-overview), [Team City](integrations/ci-cd-integrations/teamcity-integration-overview)[, Bitbucket Pipelines](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/) and [Azure Pipelines. ](integrations/ci-cd-integrations/azure-pipelines-integration/) See the [Continuous Integration](integrations/ci-cd-integrations/) documentation for more details
-* **Snyk CLI:** For teams with more complex workflows, or using a build system without a Snyk pre-built plugin, you can use the Snyk CLI tool during CI/CD setups. See [Setting up using Snyk CLI](snyk-cicd-integration-good-practices.md/) for more details.
-* **Snyk API**: For teams with complex requirements, Snyk provides a REST API, which you can use for functions including initiating scans, onboarding new projects, and testing arbitrary libraries. See the [Snyk API documentation](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices/README.md/) for more details.
+* **Snyk CLI:** For teams with more complex workflows, or using a build system without a Snyk pre-built plugin, you can use the Snyk CLI tool during CI/CD setups. See [Setting up using Snyk CLI](snyk-cicd-integration-good-practices/) for more details.
+* **Snyk API**: For teams with complex requirements, Snyk provides a REST API, which you can use for functions including initiating scans, onboarding new projects, and testing arbitrary libraries. See the [Snyk API documentation](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices/README/) for more details.
 
 ## Setting up using Snyk CLI
 
@@ -152,16 +152,16 @@ You can use Snyk's JSON output to create custom test reports as build artifacts,
 
 Snyk allows you to automatically create new work items in JIRA \(see [Jira integration](integrations/untitled-3/jira/) documentation\). You can customize this code for your specific requirements, or adapt it to work with other work management systems.
 
-See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns/) to get started, or review the [API to create Jira tickets.](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices/README.md#reference/projects/project-jira-issues/create-jira-issue)
+See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns/) to get started, or review the [API to create Jira tickets.](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices/README.md#reference/projects/project-jira-issues/create-jira-issue/)
 
 ## Ignoring issues
 
 By default if issues are not ignored, or if you are not using Snyk-delta, a "snyk test" in your pipeline fails the build when issues are found. To allow builds to continue without resolving these issues, you can:
 
-* [Ignore issues using a Snyk policy file](snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli)
-* [Ignore issues from the Snyk UI](https://support.snyk.io/hc/en-us/articles/360000923498-How-can-I-ignore-a-vulnerability-)
-* [Ignore issues from the Snyk API](https://snyk.docs.apiary.io/#reference/projects/project-ignores-by-issue/add-ignore)
-* Use the Snyk Python API for bulk ignores: see [https://github.com/snyk-labs/pysnyk](https://github.com/snyk-labs/pysnyk/) and [https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py](https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py)
+* [Ignore issues using a Snyk policy file](snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli/)
+* [Ignore issues from the Snyk UI](https://support.snyk.io/hc/en-us/articles/360000923498-How-can-I-ignore-a-vulnerability-/)
+* [Ignore issues from the Snyk API](https://snyk.docs.apiary.io/#reference/projects/project-ignores-by-issue/add-ignore/)
+* Use the Snyk Python API for bulk ignores: see [https://github.com/snyk-labs/pysnyk](https://github.com/snyk-labs/pysnyk/) and [https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py](https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py/)
 
 ## Snyk Open Source-specific strategies
 
@@ -259,7 +259,7 @@ If:
 Snyk can help:
 
 * When you run **snyk container test $IMAGE\_NAME**, Snyk looks for that image in your local daemon’s storage, and if it does not exist, does the equivalent of a **docker pull** to download it from your upstream registry.
-* For registry authentication, Snyk uses the credentials you already configured \(with something like **docker login**\)
+* For registry authentication, Snyk uses the credentials you already configured \(with something like **docker login**\/)
 * You can specify **--file=Dockerfile** on the command line to link the image vulnerability results with the Dockerfile that built it, to receive inline remediation advice and alternate base image suggestions.
 
 **Running pipeline if a Docker daemon is not available**
@@ -301,7 +301,7 @@ In this section we are going to share a few tips to help troubleshoot or scale C
 
 CLI and pipeline are running the same engine, try to clone the project and scan with CLI.
 
-Play with the CLI flags- use our Snyk CLI tool to find and fix known vulnerabilities as you run it in the pipeline. [Link for flags](https://support.snyk.io/hc/en-us/articles/360003812578-CLI-reference)
+Play with the CLI flags- use our Snyk CLI tool to find and fix known vulnerabilities as you run it in the pipeline. [Link for flags](https://support.snyk.io/hc/en-us/articles/360003812578-CLI-reference/)
 
 #### Step 2: Get logs
 
@@ -331,7 +331,7 @@ For npm use the following commands:
 
 For binary download you we need to download snyk from the following links:
 
-* [Download the Snyk CLI](https://github.com/snyk/snyk/tags)
+* [Download the Snyk CLI](https://github.com/snyk/snyk/tags/)
 
 #### Common flags in a CI/CD integration
 
@@ -349,15 +349,15 @@ $ snyk config set org=ORG_NAME
 
 Setting a default will ensure all newly monitored projects will be created under your default organization. If you need to override the default, you can use the --org=ORG\_NAME argument.
 
-Default: uses ORG\_NAME that sets as default in your Account settings [https://app.snyk.io/account](https://app.snyk.io/account)
+Default: uses ORG\_NAME that sets as default in your Account settings [https://app.snyk.io/account](https://app.snyk.io/account/)
 
 **Useful resources**
 
 The following repo shares some examples of binary and NPM integrations for various CI/CD tools:
 
-### [GitHub CI/CD examples](https://github.com/snyk-labs/snyk-cicd-integration-examples)
+### [GitHub CI/CD examples](https://github.com/snyk-labs/snyk-cicd-integration-examples/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

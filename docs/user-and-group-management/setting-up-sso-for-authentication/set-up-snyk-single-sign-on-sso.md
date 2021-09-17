@@ -1,4 +1,4 @@
-# Set up Snyk Single Sign-On \(SSO\)
+# Set up Snyk Single Sign-On \(SSO\/)
 
 Set up single sign-on to allow your developers and teams easy access to Snyk through your existing SSO provider, so they can see the status of their projects, view reports, resolve vulnerabilities, and more.
 
@@ -113,7 +113,7 @@ Obtain the following information from your identity provider and organization. P
 | Client Secret | Only needed if the IdP does not allow the Implicit grant type |
 | Email domains and subdomains | The email domains and subdomains that need access to the SSO |
 
-## Use Azure AD as SSO \(via App Registration/OIDC\)
+## Use Azure AD as SSO \(via App Registration/OIDC\/)
 
 When using Azure AD for the connection between your Identity provider and Snyk, you'll need to add the Redirect URIs in your Identity provider to establish trust with Snyk.
 
@@ -182,6 +182,6 @@ These worksheets include the information to enter in your Identity provider and 
 {% file src="../../.gitbook/assets/sso-saml-worksheet \(1\) \(1\) \(1\).pdf" caption="SSO SAML Worksheet" %}
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

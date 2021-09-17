@@ -11,7 +11,7 @@ Snyk supports Node.js v8 and above.
 
    ```text
    //Example of Node.js code to run Snyk runtime agent
-   require('@snyk/nodejs-runtime-agent')
+   require('@snyk/nodejs-runtime-agent'/)
    ({projectId: '0462e42b-c92f-4b48-bac8-81eb3ff7f43e',
    });
    ```
@@ -19,6 +19,6 @@ Snyk supports Node.js v8 and above.
 3. Commit and push the changes to your manifest file \(for example package.json\).
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

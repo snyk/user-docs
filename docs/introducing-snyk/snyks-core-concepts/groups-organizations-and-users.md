@@ -17,7 +17,7 @@ Typically, a Snyk group represents the entire company or business division.
 
 Groups can contain multiple organizations, allowing you to collaborate with multiple teams.
 
-See [What’s a Snyk group?](../../user-and-group-management/managing-groups-and-organizations/whats-a-snyk-group.md)
+See [What’s a Snyk group?](../../user-and-group-management/managing-groups-and-organizations/whats-a-snyk-group/)
 
 ### Snyk organizations
 
@@ -29,7 +29,7 @@ Organizations can contain multiple projects. For example, if an organization rep
 When you sign up to Snyk using a social login, you have a default organization. Any projects you add appear in this organization by default.
 {% endhint %}
 
-See [What’s a Snyk organization?](../../user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization.md)
+See [What’s a Snyk organization?](../../user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization/)
 
 ### Snyk projects
 
@@ -54,6 +54,6 @@ Group administrators and collaborators are available with Business and Enterpris
 More on [user and group management](../../user-and-group-management/).
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

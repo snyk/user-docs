@@ -11,7 +11,7 @@ Additionally, if your account is managed with groups, aggregated data for all of
 
 From the **Group** level, you can filter to view data for multiple organizations, similar to this example:
 
-![](../../.gitbook/assets/mceclip0-28-.png)
+![](../../.gitbook/assets/mceclip0-28-.png/)
 
 You can also use the **Organization Filters** to save and store pre-filtered reports for selected groups of organizations. For more information about this, see our [Snyk groups overview](https://support.snyk.io/hc/en-us/articles/360004008378).
 
@@ -40,6 +40,6 @@ Read-only projects and the respective results will not appear in the Reports are
 {% endhint %}
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

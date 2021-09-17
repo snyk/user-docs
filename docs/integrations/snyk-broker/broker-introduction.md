@@ -29,7 +29,7 @@ Snyk Broker has a client and a server component:
 * Broker client: a [Docker image](https://hub.docker.com/r/snyk/broker/) deployed in your infrastructure.
 * Broker server: running on Snyk SaaS backend
 
-![](../../.gitbook/assets/image2-4-.png)
+![](../../.gitbook/assets/image2-4-.png/)
 
 All data, both in transit and at rest, is encrypted. Communication between the client and server takes place over a secure WebSocket connection. On startup, it dials out and establishes a two way communication path. It does not require opening incoming ports.
 
@@ -51,10 +51,10 @@ The default approved list limits requests as follows:
 
 Snyk Broker currently integrates with these [Git Repository](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations/) systems:
 
-* [GitHub](integrations/git-repository-scm-integrations/github-integration/) and [GitHub Enterprise](integrations/git-repository-scm-integrations/github-enterprise-integration)
-* [GitLab](integrations/git-repository-scm-integrations/gitlab-integration)
+* [GitHub](integrations/git-repository-scm-integrations/github-integration/) and [GitHub Enterprise](integrations/git-repository-scm-integrations/github-enterprise-integration/)
+* [GitLab](integrations/git-repository-scm-integrations/gitlab-integration/)
 * [Bitbucket Server](https://support.snyk.io/hc/en-us/articles/360004002218-Bitbucket-Server-integration/) and Bitbucket Data Center
-* [Azure Repos](integrations/git-repository-scm-integrations/azure-repos-integration)
+* [Azure Repos](integrations/git-repository-scm-integrations/azure-repos-integration/)
 
 In addition, Snyk Broker integrates with [Jira Server](integrations/notifications-ticketing-system-integrations/jira), Jira Data Center and [Artifactory](integrations/private-registry-integrations/artifactory-registry-setup).
 
@@ -69,6 +69,6 @@ See [Language support](https://support.snyk.io/hc/en-us/categories/360000456257-
 When set up, developers can use Snyk Broker to enable standard Snyk product usage \(such as Snyk Open Source\), with the Broker validating all in / outbound requests, based on the approved list.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

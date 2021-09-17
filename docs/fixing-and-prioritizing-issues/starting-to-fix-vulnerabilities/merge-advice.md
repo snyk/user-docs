@@ -10,13 +10,13 @@ We determine this advice based on how well that same change has performed on oth
 
 Once we've gathered enough data, we show a badge on the PR - either giving the advice "review recommended", or "high chance of success".
 
-![](../../.gitbook/assets/merge-advice-review-recommended%20%282%29%20%282%29%20%282%29%20%282%29.png)
+![](../../.gitbook/assets/merge-advice-review-recommended%20%282%29%20%282%29%20%282%29%20%282%29.png/)
 
-![](../../.gitbook/assets/advice-green%20%281%29%20%282%29%20%282%29%20%284%29%20%283%29%20%286%29.png)
+![](../../.gitbook/assets/advice-green%20%281%29%20%282%29%20%282%29%20%284%29%20%283%29%20%286%29.png/)
 
 If we haven't yet been able to collect enough data to give trustworthy advice, we show the message "not enough data". Once we've gathered enough data, we update this badge automatically with our recommendation – for that reason, a badge that was displaying "not enough data" might later show advice.
 
-![](../../.gitbook/assets/merge-advice%20%282%29%20%282%29%20%284%29%20%282%29%20%281%29%20%2811%29.png)
+![](../../.gitbook/assets/merge-advice%20%282%29%20%282%29%20%284%29%20%282%29%20%281%29%20%2811%29.png/)
 
 ## Availability:
 
@@ -25,6 +25,6 @@ At the moment, merge advice badges are only available for Yarn and npm, where a 
 All Snyk-supported source control integrations are supported for merge advice.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

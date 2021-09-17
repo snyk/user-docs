@@ -26,9 +26,9 @@ Snyk supports all languages that are supported by both Eclipse and Snyk. Additio
 3. When prompted accept the license agreement and the **Snyk Security** certificate to complete the installation.
 4. Restart the Eclipse instance and navigate to **Eclipse Preferences** to ensure **Snyk Vuln Scanner** now appears in the list: 
 
-![](../../.gitbook/assets/uuid-01198b42-f020-2cc5-c20f-93817eeb44a4-en.png)
+![](../../.gitbook/assets/uuid-01198b42-f020-2cc5-c20f-93817eeb44a4-en.png/)
 
-![](../../.gitbook/assets/uuid-928012b7-8e49-fe6f-4965-77c5db026784-en.png)
+![](../../.gitbook/assets/uuid-928012b7-8e49-fe6f-4965-77c5db026784-en.png/)
 
 ## Use the Snyk plugin to secure your Eclipse projects
 
@@ -38,7 +38,7 @@ If for any reason you need to stop the scan before the build ends, click: ![](..
 
 When the scan ends, results and any relevant error messages as well, are displayed from the **Snyk results**, grouped by project similar to the following:
 
-![](../../.gitbook/assets/uuid-e868f739-eb55-9bd6-be33-acbb230ec1fa-en.png)
+![](../../.gitbook/assets/uuid-e868f739-eb55-9bd6-be33-acbb230ec1fa-en.png/)
 
 Work with Snyk results from Eclipse as follows:
 
@@ -187,6 +187,6 @@ Work with Snyk results from Eclipse as follows:
 </table>
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

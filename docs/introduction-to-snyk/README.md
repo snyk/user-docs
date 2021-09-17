@@ -1,6 +1,6 @@
 # Introduction to Snyk
 
-Snyk tests for vulnerabilities in [your own code](https://snyk.io/product/snyk-code/), [open source dependencies](snyk-open-source), [Container images](snyk-container), and [Infrastructure as Code \(IaC\) configurations](https://snyk.io/product/infrastructure-as-code-security/), and offers context, prioritization, and remediation.
+Snyk tests for vulnerabilities in [your own code](https://snyk.io/product/snyk-code/), [open source dependencies](snyk-open-source/), [Container images](snyk-container/), and [Infrastructure as Code \(IaC\) configurations](https://snyk.io/product/infrastructure-as-code-security/), and offers context, prioritization, and remediation.
 
 ### Supported languages and integrations
 
@@ -20,15 +20,15 @@ Snyk’s extensibility and API enable developers to tune Snyk’s security autom
 
 ### Snyk Products and platforms
 
-* [Snyk Open Source](snyk-open-source): Enabling developers to easily find and automatically fix open source vulnerabilities. Snyk Open Source also includes [Snyk license compliance](https://support.snyk.io/hc/en-us/categories/360000502958-License-compliance/) to help manage your open source license usage.
+* [Snyk Open Source](snyk-open-source/): Enabling developers to easily find and automatically fix open source vulnerabilities. Snyk Open Source also includes [Snyk license compliance](https://support.snyk.io/hc/en-us/categories/360000502958-License-compliance/) to help manage your open source license usage.
 * [Snyk Code](https://snyk.io/product/snyk-code/): Find and fix vulnerabilities in your application code in real-time during the development process.
-* [Snyk Container](snyk-container): Find and fix vulnerabilities in container images and Kubernetes applications.
-* [Snyk Infrastructure as Code \(IaC\)](snyk-infrastructure-as-code): Find and fix insecure configurations in Terraform and Kubernetes code.
+* [Snyk Container](snyk-container/): Find and fix vulnerabilities in container images and Kubernetes applications.
+* [Snyk Infrastructure as Code \(IaC\)](snyk-infrastructure-as-code/): Find and fix insecure configurations in Terraform and Kubernetes code.
 * [Snyk Intel Vulnerability Database](https://snyk.io/product/vulnerability-database/): Comprehensive and actionable open source and container vulnerability data.
 
  
 <br><br><hr>
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}

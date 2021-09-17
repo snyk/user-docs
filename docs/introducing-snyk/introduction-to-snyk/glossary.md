@@ -32,7 +32,7 @@ Implementing security throughout the CI/CD pipeline, automating security embeddi
 
 ### Container
 
-Containers allow you to package applications and their dependencies together, to be deployed as a single runnable unit. A container is an abstraction provided by the operating system kernel, that allows a process to be isolated from other processes running on the system. Also see [Snyk Container.](https://support.snyk.io/hc/en-us/articles/360017682058-Snyk-Glossary#SnykContainer)
+Containers allow you to package applications and their dependencies together, to be deployed as a single runnable unit. A container is an abstraction provided by the operating system kernel, that allows a process to be isolated from other processes running on the system. Also see [Snyk Container.](https://support.snyk.io/hc/en-us/articles/360017682058-Snyk-Glossary#SnykContainer/)
 
 ### Container engine
 
@@ -115,7 +115,7 @@ A distributed version-control system for tracking changes in source code during 
 
 ### IAC
 
-Infrastructure as Code. See [Snyk Infrastructure as Code.](glossary.md)
+Infrastructure as Code. See [Snyk Infrastructure as Code.](glossary/)
 
 ### IAST
 
@@ -273,23 +273,23 @@ A client/server system that serves as an agent / proxy, allowing Snyk to scan pr
 
 ### Snyk CLI
 
-A Snyk platform tool. Snyk CLI enables developers to find and fix known vulnerabilities in dependencies, using a command line interface. See [Snyk CLI documentation](snyk-cli).
+A Snyk platform tool. Snyk CLI enables developers to find and fix known vulnerabilities in dependencies, using a command line interface. See [Snyk CLI documentation](snyk-cli/).
 
 ### Snyk Code
 
-A Snyk product. A SAST product enabling developers to find and fix vulnerabilities in your proprietary application code. See [Snyk Code documentation](snyk-code).
+A Snyk product. A SAST product enabling developers to find and fix vulnerabilities in your proprietary application code. See [Snyk Code documentation](snyk-code/).
 
 ### Snyk Container
 
-A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Snyk Container documentation](snyk-container).
+A Snyk product. Enables developers to find and fix vulnerabilities in container images and Kubernetes applications. See [Snyk Container documentation](snyk-container/).
 
 ### Snyk Infrastructure as Code
 
-A Snyk product. Enables developers to find and fix vulnerabilities in your Kubernetes, Helm and Terraform configuration files. See [Snyk IaC documentation](snyk-infrastructure-as-code).
+A Snyk product. Enables developers to find and fix vulnerabilities in your Kubernetes, Helm and Terraform configuration files. See [Snyk IaC documentation](snyk-infrastructure-as-code/).
 
 ### Snyk Open Source
 
-A Snyk product. Enables developers to find and fix open source vulnerabilities. See [Snyk Open Source documentation](snyk-open-source).
+A Snyk product. Enables developers to find and fix open source vulnerabilities. See [Snyk Open Source documentation](snyk-open-source/).
 
 ### Snyk plugin
 
@@ -327,6 +327,6 @@ A security vulnerability, identified by Snyk. See [Remediate your vulnerabilitie
 A way for an app to provide other applications with real-time information. Snyk uses webhooks to check changes in code.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

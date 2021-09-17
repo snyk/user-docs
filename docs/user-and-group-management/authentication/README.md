@@ -12,7 +12,7 @@ With Snyk, you can use one of the following identity providers for authenticatio
 * Bitbucket
 * Google
 * Azure
-* Single sign-on \(SSO\)
+* Single sign-on \(SSO\/)
 
 {% hint style="info" %}
 **Feature availability**  
@@ -24,6 +24,6 @@ Logging in with a different provider than the one that you registered with when 
 {% endhint %}
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

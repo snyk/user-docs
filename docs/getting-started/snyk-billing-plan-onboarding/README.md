@@ -25,13 +25,13 @@ Using Snyk at multiple stages allows you to:
 Each of these stages allows Snyk to do something different to help keep you secure. Use the unlimited tests in your Team plan to have Snyk save you time and effort, and reduce your security risk.
 
 All of the following stages have integrations that can be found on the [Snyk integrations page](https://app.snyk.io/integrations):  
-![integrations-page.png](../../.gitbook/assets/integrations-page.png)
+![integrations-page.png](../../.gitbook/assets/integrations-page.png/)
 
 See [Integrations](../../integrations/) for more details.
 
 The earliest chance you have to catch vulnerabilities is in the IDE, when the code is being written. Use Snyk at the IDE stage to ensure developers select versions of dependencies or container base images that include the least vulnerabilities possible:
 
-![](../../.gitbook/assets/ides-support.png)
+![](../../.gitbook/assets/ides-support.png/)
 
 Snyk supports many of the popular IDEs, with even more support coming soon.
 
@@ -46,25 +46,25 @@ Using Snyk with SCM integrations allows Snyk to:
 
 Snyk’s SCM integrations also support commit status checks, so as your developers raise pull requests, Snyk can automatically test \(and optionally block\) pull requests that introduce new vulnerabilities. This helps prevent reducing the security of your code.
 
-![](../../.gitbook/assets/source-control.png)
+![](../../.gitbook/assets/source-control.png/)
 
 See [Git repository \(SCM\) integrations](../../integrations/git-repository-scm-integrations/) for more details
 
 Use Snyk CI/CD integrations to prevent new vulnerabilities from passing through the build process, by adding an automated Snyk test to your CI/CD process:
 
-![](../../.gitbook/assets/ci-cd%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29%20%284%29.png)
+![](../../.gitbook/assets/ci-cd%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29%20%284%29.png/)
 
 See [CI/CD integrations](../../integrations/ci-cd-integrations/) for more details.
 
 Snyk supports various different container registries, allowing you to scan all your images and monitor them over time for newly found vulnerabilities, whether the images are used in Prod, retired from use, or queued up for a big release.
 
-![](../../.gitbook/assets/image%20%284%29%20%283%29%20%283%29%20%283%29%20%283%29%20%284%29%20%284%29%20%285%29%20%284%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%283%29%20%283%29%20%283%29%20%283%29%20%284%29%20%284%29%20%285%29%20%284%29.png/)
 
 See [Snyk Container](snyk-container/) for more details.
 
 Our support for Kubernetes allows you to find any vulnerabilities in running workloads. It also allows Snyk to access a lot of information that can help prioritize what to fix first. This can help reduce the noise, leaving you with a clearer picture of what really needs your attention.
 
-![](../../.gitbook/assets/image%20%2859%29%20%282%29%20%283%29%20%283%29%20%281%29.png)
+![](../../.gitbook/assets/image%20%2859%29%20%282%29%20%283%29%20%283%29%20%281%29.png/)
 
 See [Kubernetes workload and image scanning](../../snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning/) for more details.
 
@@ -76,19 +76,19 @@ See [Infrastructure as Code](../../snyk-infrastructure-as-code/) for details.
 
 An added bonus of the Team plan is license compliance management, allowing Snyk to identify potentially misused licenses. License compliance does not stop you getting hacked, but it can help protect you from legal issues \(which can be just as costly\).
 
-![](../../.gitbook/assets/license-compliance.png)
+![](../../.gitbook/assets/license-compliance.png/)
 
 See [Getting Started with Snyk License Compliance Management](getting-started/getting-started-snyk-products/getting-started-snyk-licensing-compliance/) for details.
 
 The Team plan also includes the Snyk Jira integration, allowing you to manually raise Jira issues in the Snyk UI for vulnerabilities or license issues.
 
-![](../../.gitbook/assets/uuid-07abf9db-45cb-cdcd-537b-328a0c4b891e-en.png)
+![](../../.gitbook/assets/uuid-07abf9db-45cb-cdcd-537b-328a0c4b891e-en.png/)
 
 Snyk’s Jira integration is yet another way in which Snyk is able to fit into your existing processes, ensuring that work to become more secure is properly managed and accounted for.
 
 See [setting up Snyk with Jira](integrations/untitled-3/jira/) for more details and instructions.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

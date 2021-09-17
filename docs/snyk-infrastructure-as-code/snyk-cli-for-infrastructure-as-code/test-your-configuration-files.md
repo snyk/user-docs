@@ -6,8 +6,8 @@ You can scan both your Kubernetes and Terraform files using the CLI.
 
 You can find more detailed information here
 
-* [Terraform](snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-terraform-files-with-the-cli-tool)
-* [Kubernetes](snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kubernetes-files-with-our-cli-tool)
+* [Terraform](snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-terraform-files-with-the-cli-tool/)
+* [Kubernetes](snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kubernetes-files-with-our-cli-tool/)
 
 {% hint style="info" %}
 As of version 1.594.0 all configuration files are processed locally, ensuring that they do not leave your machine.  
@@ -125,6 +125,6 @@ snyk config set org=
 ```
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

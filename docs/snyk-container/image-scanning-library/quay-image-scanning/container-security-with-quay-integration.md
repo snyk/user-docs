@@ -18,7 +18,7 @@ Prerequisites
 1. In your Snyk account, navigate to **Integrations** from the menu bar at the top. Under the **Container Registries** section, find the **Quay** option and click it. 
 2. In the **Account credentials** section, enter your Quay username and password login credentials. In the **container registry name** fill in the full URL to the registry you want to integrate with. This can be a cloud-based Quay, or a private host. To finish, click **Save**.  
 
-![](../../../.gitbook/assets/mceclip1-10-.png)
+![](../../../.gitbook/assets/mceclip1-10-.png/)
 
 In case you are using a self-hosted Quay registry, contact us to provide you with a token. You can read more about setting up private registry integration [here](snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries).
 
@@ -31,6 +31,6 @@ Snyk tests the connection values and the page reloads, now displaying Quay integ
 Now you can use Snyk to scan your images from Quay.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

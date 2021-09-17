@@ -2,9 +2,9 @@
 
 Determine how new users in your organization get access to Snyk:
 
-* [Open to all](choose-a-provisioning-option.md)
-* [Invitation required](choose-a-provisioning-option.md)
-* [Custom](choose-a-provisioning-option.md)
+* [Open to all](choose-a-provisioning-option/)
+* [Invitation required](choose-a-provisioning-option/)
+* [Custom](choose-a-provisioning-option/)
 
 {% embed url="https://youtu.be/VOGYgcv9Xmc" caption="" %}
 
@@ -21,7 +21,7 @@ Let Snyk Support know whether new users will have the **administrator** role or 
 
 With the invitation required option, admins can invite users or users can request access to an organization.
 
-There are two ways to invite users to organizations. Invite members from the [Members Settings page](user-and-group-management/managing-groups-and-organizations/invite-and-collaborate-with-team-members/) or automate the process using our [API endpoint.](https://snyk.docs.apiary.io/#reference/organizations/user-invitation-to-organization/invite-users)
+There are two ways to invite users to organizations. Invite members from the [Members Settings page](user-and-group-management/managing-groups-and-organizations/invite-and-collaborate-with-team-members/) or automate the process using our [API endpoint.](https://snyk.docs.apiary.io/#reference/organizations/user-invitation-to-organization/invite-users/)
 
 If users who have not been invited use SSO to log in, they will gain access to Snyk, but they will not see any projects until an admin invites them or manually adds them to the organization\(s\). You can show a list of organizations with the appropriate contact person so that new users can [request access](user-and-group-management/managing-users-and-permissions/organization-access-requests).
 
@@ -41,6 +41,6 @@ Work with your Customer Success Manager and Snyk Technical Services to prepare f
 Read more about the next step, [set up single sign-on](https://support.snyk.io/hc/en-us/articles/360017753618).
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

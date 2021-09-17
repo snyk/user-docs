@@ -7,7 +7,7 @@ To add images from DigitalOcean to Snyk:
 **Prerequisites**:
 
 * Have a Snyk account with access to the relevant organization \(given by an administrator\).
-* DigitalOcean integration configured. To learn more about that, follow the steps in [Container security with DigitalOcean integration](snyk-container/image-scanning-library/digitalocean-image-scanning/container-security-with-digitalocean-integration)
+* DigitalOcean integration configured. To learn more about that, follow the steps in [Container security with DigitalOcean integration](snyk-container/image-scanning-library/digitalocean-image-scanning/container-security-with-digitalocean-integration/)
 
 **Steps:**
 
@@ -23,9 +23,9 @@ To add images from DigitalOcean to Snyk:
 
 DigitalOcean imports are indicated with a unique icon, and you can also filter the integration in the **projects** view to see DigitalOcean projects only:
 
-![](../../../.gitbook/assets/mceclip0-11-.png)
+![](../../../.gitbook/assets/mceclip0-11-.png/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

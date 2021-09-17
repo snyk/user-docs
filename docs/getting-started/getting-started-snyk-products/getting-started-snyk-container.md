@@ -23,7 +23,7 @@ Choose a container registry integration, to connect the registry with Snyk:
 4. Click the entry to integrate with Snyk.
 5. Fill in the account credentials and other details as prompted, then save the changes, to integrate this entry with Snyk:
 
-![](../../.gitbook/assets/container-account-credentials.png)
+![](../../.gitbook/assets/container-account-credentials.png/)
 
 ## Stage 2: Add projects
 
@@ -43,13 +43,13 @@ You can now see vulnerability results for imported projects.
 
 Select **Projects**, then click on the imported project entry under its registry record, to see vulnerability information for that project.
 
-![](../../.gitbook/assets/mceclip2%20%281%29%20%281%29%20%281%29%20%283%29%20%283%29%20%284%29%20%286%29%20%281%29%20%283%29.png)
+![](../../.gitbook/assets/mceclip2%20%281%29%20%281%29%20%281%29%20%283%29%20%283%29%20%284%29%20%286%29%20%281%29%20%283%29.png/)
 
 Here you can see a summary of the severity of the detected vulnerabilities.
 
 Click on an entry to see details of vulnerabilities found:
 
-![image5.png](../../.gitbook/assets/image5-1-.png)
+![image5.png](../../.gitbook/assets/image5-1-.png/)
 
 See [Analysis and remediation for your images from the Snyk app](snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app/) for more details.
 
@@ -61,9 +61,9 @@ See [Analysis and remediation for your images from the Snyk app](snyk-container/
 
 ## For more information
 
-See [Snyk Container](snyk-container).
+See [Snyk Container](snyk-container/).
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

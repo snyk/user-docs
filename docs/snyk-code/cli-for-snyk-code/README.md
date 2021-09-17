@@ -25,7 +25,7 @@ After installation, authenticate with Snyk to test your image, running snyk auth
 snyk auth
 ```
 
-For more details about authentication, see [Authenticate the CLI with your account](../../snyk-cli/install-the-snyk-cli/authenticate-the-cli-with-your-account.md)
+For more details about authentication, see [Authenticate the CLI with your account](../../snyk-cli/install-the-snyk-cli/authenticate-the-cli-with-your-account/)
 
 ### **Testing a project or folder**
 

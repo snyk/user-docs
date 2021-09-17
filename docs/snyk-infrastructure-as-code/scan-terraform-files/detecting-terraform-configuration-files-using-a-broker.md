@@ -1,6 +1,6 @@
 # Detecting Terraform configuration files using a broker
 
-If you are using a privately hosted Git repository then you can use the Snyk Broker to connect Snyk to it. See the [full broker documentation for setup](../../integrations/snyk-broker/set-up-snyk-broker.md/). The following details additional configuration required for the Terraform files.
+If you are using a privately hosted Git repository then you can use the Snyk Broker to connect Snyk to it. See the [full broker documentation for setup](../../integrations/snyk-broker/set-up-snyk-broker/). The following details additional configuration required for the Terraform files.
 
 ## Writing the configuration
 
@@ -90,6 +90,6 @@ docker run --restart=always \
 Note that this gives Snyk the ability to query for any `.tf` files. If you would prefer to be stricter you can alter the paths in the examples above to be more restrictive to certain projects or file layouts.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

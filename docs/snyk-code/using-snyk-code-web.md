@@ -1,8 +1,8 @@
-# Using Snyk Code \(web\)
+# Using Snyk Code \(web\/)
 
 Use Snyk Code with the standard Snyk web interface to find and fix vulnerabilities in your code.
 
-![](../.gitbook/assets/screenshot_2021-06-17_at_13.23.19.png)
+![](../.gitbook/assets/screenshot_2021-06-17_at_13.23.19.png/)
 
 ## View project vulnerabilities
 
@@ -13,7 +13,7 @@ See [Getting started with Snyk Code](getting-started/getting-started-snyk-produc
 1. In your **Projects** area, select the project to open
 2. Snyk Code displays information and vulnerability cards for that project: 
 
-![](../.gitbook/assets/snykcofe_priority_score.png)
+![](../.gitbook/assets/snykcofe_priority_score.png/)
 
 Information available shows standard Snyk project information \(see [Snyk projects](https://support.snyk.io/hc/en-us/sections/360004724958-Snyk-projects)\), including:
 
@@ -25,7 +25,7 @@ Information available shows standard Snyk project information \(see [Snyk projec
 
 Each vulnerability card shows specific details about that vulnerability:
 
-![](../.gitbook/assets/snykcode_issue_card.png)
+![](../.gitbook/assets/snykcode_issue_card.png/)
 
 Card details include:
 
@@ -36,7 +36,7 @@ Card details include:
 
 See [Issue card information](getting-started/introduction-to-snyk-projects/issue-card-information/) for more details.
 
-* Click **Ignore** to ignore this vulnerability \(see [Ignore a vulnerability](using-snyk-code-web.md)\)
+* Click **Ignore** to ignore this vulnerability \(see [Ignore a vulnerability](using-snyk-code-web.md)\/)
 * Click **Full details** to view more information \(see [View full details](using-snyk-code-web.md)\).
 
 ## Ignore a vulnerability
@@ -49,11 +49,11 @@ Use the **Ignore** button to suppress specific warnings, ignoring suggestions fo
 
 After you click **Ignore**, you are prompted to provide more details:
 
-![](../.gitbook/assets/snykcode-ignore-pic2.png)
+![](../.gitbook/assets/snykcode-ignore-pic2.png/)
 
 Select:
 
-* Whether this is to be marked **Not vulnerable**, **ignore temporarily** \(to suppress the message for now\), or **ignore permanently** \(won’t fix ever\)
+* Whether this is to be marked **Not vulnerable**, **ignore temporarily** \(to suppress the message for now\), or **ignore permanently** \(won’t fix ever\/)
 * Add any notes to yourself or your colleagues in the comment box; we recommend writing a quick explanation for your decision.
 * Set a timer for how long to ignore the issue \(14, 30, 60, or 90 days, or click **Ignore forever**\).
 
@@ -71,9 +71,9 @@ See [Ignoring issues in Snyk Code](fixing-and-prioritizing-issues/issue-manageme
 
 Click **Full details** from a vulnerability card to view more information:
 
-![Data flow page preview.](../.gitbook/assets/data-flow.png)
+![Data flow page preview.](../.gitbook/assets/data-flow.png/)
 
-![Fix analysis page preview.](../.gitbook/assets/fix-analysis.png)
+![Fix analysis page preview.](../.gitbook/assets/fix-analysis.png/)
 
 Full details include all the information in the vulnerability card, plus:
 
@@ -84,32 +84,32 @@ Full details include all the information in the vulnerability card, plus:
 
 ## Open the source code file
 
-1. Click the code link to open the source code file itself \(for example, in GitHub\)
+1. Click the code link to open the source code file itself \(for example, in GitHub\/)
 
-   ![](../.gitbook/assets/link.png)
+   ![](../.gitbook/assets/link.png/)
 
 2. The file opens, showing you exactly where to fix the vulnerability \(in this example, by adding the sanitation required to the input\).
 3. You can now make the fix as required, to address the vulnerability in your code.
 
-![](../.gitbook/assets/open-code2.png)
+![](../.gitbook/assets/open-code2.png/)
 
-## Example: Cross-site Scripting \(XSS\)
+## Example: Cross-site Scripting \(XSS\/)
 
 This shows an example of a common vulnerability, Cross-site Scripting \(XSS\). XSS vulnerabilities allow attackers to compromise the interactions users have with your application, including gaining control over the application's functionality and data.
 
 The vulnerability card shows key information about this vulnerability:
 
-![](../.gitbook/assets/snykcode_issue_card.png)
+![](../.gitbook/assets/snykcode_issue_card.png/)
 
 Click **Full details** to see more information about this vulnerability:
 
-![](../.gitbook/assets/xss-2.png)
+![](../.gitbook/assets/xss-2.png/)
 
-\(This example shows a non-sanitized, HTTP input flows into a **write** response returned by the server, so could be running malicious code.\)
+\(This example shows a non-sanitized, HTTP input flows into a **write** response returned by the server, so could be running malicious code.\/)
 
 Cick the code link to open the source code file directly, then make changes to fix this vulnerability.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

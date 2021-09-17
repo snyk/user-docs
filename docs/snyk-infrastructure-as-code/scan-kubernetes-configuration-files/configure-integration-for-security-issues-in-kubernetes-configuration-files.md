@@ -17,7 +17,7 @@ Snyk currently scans your Kubernetes configuration files in JSON and YAML format
 
 Log in to [app.snyk.io](https://app.snyk.io/), and navigate to the relevant group and organization that you want to manage
 
-![](../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%281%29.gif)
+![](../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%281%29.gif/)
 
 {% hint style="info" %}
 **Note**  
@@ -29,11 +29,11 @@ From here:
 1. Enable Snyk to detect Kubernetes configuration files by enabling the flag in the settings ![cog\_icon.png](../../.gitbook/assets/cog_icon.png/) &gt; **Infrastructure as code** page: 
 2. If needed, review and adjust settings in the **Infrastructure as code** settings:
 
-![Configure-Policies.png](../../.gitbook/assets/uuid-34af73f5-ffde-39bb-ffa4-364884089b2e-en.png)
+![Configure-Policies.png](../../.gitbook/assets/uuid-34af73f5-ffde-39bb-ffa4-364884089b2e-en.png/)
 
 The number of tests per product are based on account plans. For information on plans and test limits, [view our plans](https://snyk.io/plans/).
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

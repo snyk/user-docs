@@ -30,8 +30,8 @@ When present, the `.snyk` policy is used to apply ignores and other settings for
 The `.snyk` file can be created in a number of ways
 
 * **Snyk vulnerability Fix Pull Request \(PR\)** - When a user selects to _fix a vulnerability_ button on a git code repository scan, and a Snyk Patch is available when an upgrade is not possible, a `.snyk` file is added to the pull request \(c_urrently Snyk Patches are for NPM and Yarn only\)_
-* **Snyk CLI Wizard** - the CLI allows users to generate a `.snyk` policy \(_currently available for NPM/Yarn only_\)
-* **Snyk CLI** - utilizing the `snyk ignore` command \(.snyk file must exist\)
+* **Snyk CLI Wizard** - the CLI allows users to generate a `.snyk` policy \(_currently available for NPM/Yarn only_\/)
+* **Snyk CLI** - utilizing the `snyk ignore` command \(.snyk file must exist\/)
 * **Manual creation** - a user may decide to create the file manually. Simply create a new
 
   `.snyk` file and populate it with the following. Note that in order to ignore by path--_manual editing is required except for where the `snyk wizard` is used_
@@ -212,9 +212,9 @@ The `.snyk` file should be versioned in the code repository, like other applicat
 Support KB - [Ignore Vulnerabilities](snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli/)  
 Support KB - [Ignoring via the CLI is not enabled for this organization](https://support.snyk.io/hc/en-us/articles/360001558598/)  
 Support KB - [CLI reference](https://support.snyk.io/hc/en-us/articles/360003812578/)  
-Support KB - [Manage Vulnerabilities with the Snyk Wizard in the CLI](snyk-cli/fix-vulnerabilities-from-the-cli/manage-vulnerability-results-with-the-snyk-cli-wizard/) \(NPM/Yarn Only\)
+Support KB - [Manage Vulnerabilities with the Snyk Wizard in the CLI](snyk-cli/fix-vulnerabilities-from-the-cli/manage-vulnerability-results-with-the-snyk-cli-wizard/) \(NPM/Yarn Only\/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

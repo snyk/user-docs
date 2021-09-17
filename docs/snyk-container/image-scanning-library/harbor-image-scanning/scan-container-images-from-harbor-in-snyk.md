@@ -7,7 +7,7 @@ To add images from Harbor to Snyk:
 **Prerequisites**:
 
 * Have a Snyk account with access to the relevant organization \(given by an administrator\).
-* Harbor integration configured. To learn more about that, follow the steps in [Container security with Harbor integration](snyk-container/image-scanning-library/harbor-image-scanning/container-security-with-harbor-integration)
+* Harbor integration configured. To learn more about that, follow the steps in [Container security with Harbor integration](snyk-container/image-scanning-library/harbor-image-scanning/container-security-with-harbor-integration/)
 
 **Steps:**
 
@@ -23,9 +23,9 @@ To add images from Harbor to Snyk:
 
 Harbor imports are indicated with a unique icon , and you can also filter to view only the Harbor projects:
 
-![](../../../.gitbook/assets/mceclip1-9-.png)
+![](../../../.gitbook/assets/mceclip1-9-.png/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

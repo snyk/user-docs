@@ -52,7 +52,7 @@ This page describes our language support. For more information, see specific art
 | JavaScript | angular |
 | JavaScript | Yarn Workspaces |
 
-## Supported archives \(available on FossID\)
+## Supported archives \(available on FossID\/)
 
 | **Extension** |
 | :--- |
@@ -76,7 +76,7 @@ This page describes our language support. For more information, see specific art
 | .xz |
 | .zip |
 
-## By language and supported extensions \(available on FossID\)
+## By language and supported extensions \(available on FossID\/)
 
 | **Language** | **Extension** |
 | :--- | :--- |
@@ -811,6 +811,6 @@ This page describes our language support. For more information, see specific art
 | Zimpl | zmpl |
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

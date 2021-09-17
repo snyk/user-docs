@@ -9,9 +9,9 @@ This documentation assumes you have used Snyk, and are familiar with core Snyk f
 
 ## More details
 
-* [Introduction to the Snyk Team plan](https://support.snyk.io/hc/en-us/articles/360018365737)
+* [Introduction to the Snyk Team plan](https://support.snyk.io/hc/en-us/articles/360018365737/)
 * [Getting started with Snyk products](getting-started/getting-started-snyk-products/) 
-* [Quick start guide and general overview](https://www.youtube.com/watch?v=PCculVmSPtg&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=6/) \(video\)
+* [Quick start guide and general overview](https://www.youtube.com/watch?v=PCculVmSPtg&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=6/) \(video\/)
 
 ## Rollout strategy: good practices
 
@@ -44,8 +44,8 @@ This approach works for projects using Node, Java, Python and Ruby. If support i
 
 **More details**
 
-* [Snyk SCM integration: good practices](https://support.snyk.io/hc/en-us/articles/360018010597)
-* [How to add your Git Repos to Snyk](https://www.youtube.com/watch?v=Krs8IOGy87Q&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=2&t=4s/) \(video\)
+* [Snyk SCM integration: good practices](https://support.snyk.io/hc/en-us/articles/360018010597/)
+* [How to add your Git Repos to Snyk](https://www.youtube.com/watch?v=Krs8IOGy87Q&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=2&t=4s/) \(video\/)
 
 ## Integrate into your CI/CD pipeline
 
@@ -57,7 +57,7 @@ You can also decide if you want to simply report on the vulnerabilities, or brea
 
 **More details**
 
-* [Snyk CI/CD Integration: good practices](getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices)
+* [Snyk CI/CD Integration: good practices](getting-started/snyk-billing-plan-onboarding/snyk-cicd-integration-good-practices/)
 * [Snyk CI/CD integration examples on GitHub](https://github.com/snyk-labs/snyk-cicd-integration-examples/) 
 
 Snyk automatically notifies you when new issues are found in the projects you're monitoring, to help make you aware of new risks:
@@ -66,10 +66,10 @@ You can customize the emails all your organization’s members receive, and indi
 
 ## More details
 
-* [Notification management](user-and-group-management/notifications/notification-management)
-* [How to configure your Snyk notification settings](https://www.youtube.com/watch?v=MyLgmcHUrL4&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=5/) \(video\)
+* [Notification management](user-and-group-management/notifications/notification-management/)
+* [How to configure your Snyk notification settings](https://www.youtube.com/watch?v=MyLgmcHUrL4&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=5/) \(video\/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

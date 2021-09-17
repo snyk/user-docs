@@ -23,15 +23,15 @@ For customers with a Business plan: if no group is available, org administrators
 3. Select **Submit** to save your policy.
 4. The new severity and/or instructions are automatically updated on our servers. Once the next scheduled test runs, or once any user re-tests a project. Updated results are delivered according to these changes.
 
-![](../../.gitbook/assets/screenshot_2020-08-21_at_11.58.10_am.png)
+![](../../.gitbook/assets/screenshot_2020-08-21_at_11.58.10_am.png/)
 
 **Note:** _if your company's account has a group \(or more\), to access the License policy settings, please go to the Group's Overview \(from the top left dropdown\) and go to **Policies** to select the organization\(s\) to update the Licenses policy._
 
-![](../../.gitbook/assets/mceclip0-1-.png)
+![](../../.gitbook/assets/mceclip0-1-.png/)
 
-![](../../.gitbook/assets/mceclip0.png)
+![](../../.gitbook/assets/mceclip0.png/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

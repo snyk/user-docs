@@ -6,7 +6,7 @@ Snyk allows you to manually or automatically link from a Dockerfile to all conta
 
 This information appears in the **LINKED IMAGES** section of the details for a project:
 
-![](../../.gitbook/assets/mceclip3.png)
+![](../../.gitbook/assets/mceclip3.png/)
 
 You can get automatic links between imported images \(via container registry integration\) to existing Dockerfile projects. This is done by checking whether the OCI label in the image matches the path of a Dockerfile that exists in the org in Snyk.
 
@@ -15,8 +15,8 @@ You can get automatic links between imported images \(via container registry int
 At the point of import \(or re-test\), the image is analysed, scanned for vulnerabilities and image labels are also retrieved from image manifest. Snyk then checks whether:
 
 * Image labels defining dockerfile location exist:
-  * `org.opencontainers.image.source` - URL to the project repo \(mandatory\)
-  * `io.snyk.containers.image.dockerfile` - path to Dockerfile, e.g.: "/Dockerfile-prod" \(optional\)
+  * `org.opencontainers.image.source` - URL to the project repo \(mandatory\/)
+  * `io.snyk.containers.image.dockerfile` - path to Dockerfile, e.g.: "/Dockerfile-prod" \(optional\/)
 * Dockerfile project exists in the same org, with a matching repo \(and path or /Dockerfile\) from the image labels
 
 If the above applies, Snyk automatically creates a link between the image and dockerfile projects.
@@ -33,11 +33,11 @@ For a link to be created, Snyk needs to be able to map the Dockerfile repository
 
 To create automatic links between container images to Dockerfiles stored in brokered SCMs, enter the URL in the integration page settings:
 
-![](../../.gitbook/assets/mceclip0-4-.png)
+![](../../.gitbook/assets/mceclip0-4-.png/)
 
 Once available, Snyk can use that for linking generation.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

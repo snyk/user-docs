@@ -15,9 +15,9 @@ Configure integration from Snyk with your Google container registries to scan fo
 
    Snyk checks the credentials and when successful, the page reloads with a notification that the connection succeeded.
 
-![GCR\_configur.png](../../../.gitbook/assets/uuid-47cf04cb-248e-5d0f-d35a-f36fbb624614-en.png)
+![GCR\_configur.png](../../../.gitbook/assets/uuid-47cf04cb-248e-5d0f-d35a-f36fbb624614-en.png/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

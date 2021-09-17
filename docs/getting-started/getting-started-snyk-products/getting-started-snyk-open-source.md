@@ -60,12 +60,12 @@ If you encounter any errors during import, see the [Importing projects](https://
 
 You can now view vulnerability results for imported projects. The **Projects** tab appears by default after import, showing vulnerability information for project you've imported.
 
-1. Click on an imported project to see vulnerability information for that project, including the number of issues found, grouped by severity level \(see screenshot below\)
+1. Click on an imported project to see vulnerability information for that project, including the number of issues found, grouped by severity level \(see screenshot below\/)
 2. Click on an entry to open the issues view for that entry, including the module, where it was introduced, and the remediation to fix it, plus more details about the vulnerability itself:
 
-![](../../.gitbook/assets/view_vulns__overview.png)
+![](../../.gitbook/assets/view_vulns__overview.png/)
 
-![](../../.gitbook/assets/detailed-vuln-information%20%283%29%20%284%29%20%284%29%20%284%29%20%286%29%20%287%29%20%285%29%20%281%29.png)
+![](../../.gitbook/assets/detailed-vuln-information%20%283%29%20%284%29%20%284%29%20%284%29%20%286%29%20%287%29%20%285%29%20%281%29.png/)
 
 See [View project information](getting-started/introduction-to-snyk-projects/view-project-information/) for more details.
 
@@ -75,7 +75,7 @@ For JavaScript, Ruby and Java projects, Snyk can remediate your vulnerabilities 
 
 Navigate to the issues view for a project:
 
-![Screenshot\_2021-04-09\_at\_17.35.25.png](../../.gitbook/assets/screenshot_2021-04-09_at_17.35.25.png)
+![Screenshot\_2021-04-09\_at\_17.35.25.png](../../.gitbook/assets/screenshot_2021-04-09_at_17.35.25.png/)
 
 To fix vulnerabilities:
 
@@ -84,7 +84,7 @@ To fix vulnerabilities:
 3. Check any additional issues you want to fix, or uncheck items to remove them from the fix. 4. Scroll down to the bottom of the screen and click **Open a Fix PR**. 5. Snyk now actions this PR, then a results screen appears:
 4. Optionally, select the **Files changed** tab to see details of the changes made.
 
-![](../../.gitbook/assets/screenshot_2021-04-09_at_17.46.22.png)
+![](../../.gitbook/assets/screenshot_2021-04-09_at_17.46.22.png/)
 
 {% hint style="info" %}
 If no package upgrade is available, you may be able to use Snyk patches to fix vulnerabilities.
@@ -94,9 +94,9 @@ See [Fixing vulnerabilities](snyk-open-source/open-source-basics/fixing-vulnerab
 
 ## For more information
 
-See [Snyk Open Source](snyk-open-source).
+See [Snyk Open Source](snyk-open-source/).
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

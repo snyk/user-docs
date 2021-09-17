@@ -4,15 +4,15 @@
 
 Snyk displays your application vulnerabilities and licensing issues for files in your projects. To see these vulnerabilities, go to [your projects tab](https://app.snyk.io/projects), then select the file associated with your project. For example, the package.json file in our example application goof:
 
-![](../../.gitbook/assets/application-vuln.png)
+![](../../.gitbook/assets/application-vuln.png/)
 
 Click on the entry to view detailed information:
 
-![](../../.gitbook/assets/project-page.png)
+![](../../.gitbook/assets/project-page.png/)
 
 Where:
 
-* **Header**: shows project summary information. See the [View project summary information](view-project-information.md/) section.
+* **Header**: shows project summary information. See the [View project summary information](view-project-information/) section.
 * **Issue cards**: show summaries of issues found. See [Issue card information](getting-started/introduction-to-snyk-projects/issue-card-information).
 * **Views**:
   * **Overview**: shows [project issues, remediation, and dependencies](getting-started/introduction-to-snyk-projects/view-project-issues-remediations-and-dependencies).
@@ -21,7 +21,7 @@ Where:
 
 ### View project summary information
 
-![](../../.gitbook/assets/proj-summ.png)
+![](../../.gitbook/assets/proj-summ.png/)
 
 The summary information shows:
 
@@ -34,6 +34,6 @@ The summary information shows:
 * Predefined [project attributes](fixing-and-prioritizing-issues/policies/assign-a-policy-to-project-attributes), and any additional [project tag](getting-started/introduction-to-snyk-projects/project-tags/) metadata.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

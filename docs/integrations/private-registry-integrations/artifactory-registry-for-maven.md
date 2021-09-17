@@ -13,7 +13,7 @@ Maven analysis can be configured to mirror all requests through a custom package
 
 ## **Setup custom Maven package registries**
 
-If authentication is required to access your custom registry you will need to first configure the Artifactory package repository integration, see [Artifactory Registry Setup.](integrations/private-registry-integrations/artifactory-registry-setup)
+If authentication is required to access your custom registry you will need to first configure the Artifactory package repository integration, see [Artifactory Registry Setup.](integrations/private-registry-integrations/artifactory-registry-setup/)
 
 Once the integration is set up you can configure Maven settings by navigating to settings ![](../../.gitbook/assets/cog_icon.png/) &gt; Languages &gt; Java.
 
@@ -27,7 +27,7 @@ If using Direct you will need to complete the URL, Repository Name and what it i
 
 The Mirror Of value can either be a \* to mirror everything or you can type in a value for example 'central'.
 
-![](../../.gitbook/assets/uuid-fd027725-33b3-7f12-a921-d7fba9cedad8-en.png)
+![](../../.gitbook/assets/uuid-fd027725-33b3-7f12-a921-d7fba9cedad8-en.png/)
 
 If using Type **Integration**, you will need to choose an integration type and provide the Repository Name and Mirror Of details.
 
@@ -35,13 +35,13 @@ The Repository Name should be set as whatever comes after **artifactory/** in th
 
 For example, if the URL is '[http://artifactory.company.io/artifactory/libs-release](http://artifactory.company.io/artifactory/libs-release)' Repository Name should be set as **libs-release**.
 
-![](../../.gitbook/assets/uuid-293cfd2b-2cd5-b8a3-0671-bf6d2798a3bc-en.png)
+![](../../.gitbook/assets/uuid-293cfd2b-2cd5-b8a3-0671-bf6d2798a3bc-en.png/)
 
 **Repositories**
 
 Alternatively, you can configure repositories which will be used as additional locations to check for artifacts.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

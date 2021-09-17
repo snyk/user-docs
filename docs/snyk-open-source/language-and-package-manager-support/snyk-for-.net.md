@@ -25,8 +25,8 @@ In order to scan your dependencies, you must ensure you have first installed the
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project:
 
-* [Snyk CLI tool for .NET projects](snyk-open-source/language-and-package-manager-support/snyk-for-.net)
-* [Git services for .NET projects](https://support.snyk.io/hc/en-us/articles/360004519138-Snyk-for-NET#UUID-69fbe5a6-a24a-d5ad-5d54-cd18ef6786b3)
+* [Snyk CLI tool for .NET projects](snyk-open-source/language-and-package-manager-support/snyk-for-.net/)
+* [Git services for .NET projects](https://support.snyk.io/hc/en-us/articles/360004519138-Snyk-for-NET#UUID-69fbe5a6-a24a-d5ad-5d54-cd18ef6786b3/)
 
 ## Snyk CLI tool for .NET projects
 
@@ -58,11 +58,11 @@ Examples of supported project files that resolve into **packages** include:
 
 To use Paket a **paket.lock** file is required in combination with a **paket.dependencies** file. Run `snyk test`
 
-Other support includes: **project.json** \(no longer recommended, please refer to [Microsoft documentation](https://docs.microsoft.com/en-us/nuget/archive/project-json)\)
+Other support includes: **project.json** \(no longer recommended, please refer to [Microsoft documentation](https://docs.microsoft.com/en-us/nuget/archive/project-json)\/)
 
 ### Nuget
 
-Follow the same instructions as [Snyk CLI tool for .NET projects](snyk-for-.net.md)
+Follow the same instructions as [Snyk CLI tool for .NET projects](snyk-for-.net/)
 
 ### Paket
 
@@ -131,7 +131,7 @@ This section describes the unique CLI options available when working with .NET-b
 
 Once imported, Snyk analyzes your projects based on their supported manifest files and then builds the dependency tree and displays it from our app, similar to the following:
 
-![](../../.gitbook/assets/uuid-c995621c-85c8-c79f-accd-f014e2293921-en.png)
+![](../../.gitbook/assets/uuid-c995621c-85c8-c79f-accd-f014e2293921-en.png/)
 
 ### **Nuget**
 
@@ -175,6 +175,6 @@ From the Snyk UI, you can configure whether Snyk should scan your entire project
 2. Go to settings ![](../../.gitbook/assets/cog_icon.png/) &gt; and click for .NET Scan build dependencies - \_\*\*\_If checked, Snyk scans all development dependencies.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

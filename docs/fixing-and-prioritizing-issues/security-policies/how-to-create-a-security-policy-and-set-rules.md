@@ -4,7 +4,7 @@ To create a new security policy, click **Add a new policy** in the security poli
 
 Security policy rules follow an “if, then” framework, with one or more conditions, and an action. For example:
 
-![](../../.gitbook/assets/screenshot_2020-07-06_at_11.38.07.png)
+![](../../.gitbook/assets/screenshot_2020-07-06_at_11.38.07.png/)
 
 If you create a new security policy, the first blank rule is automatically created.
 
@@ -19,6 +19,6 @@ The order of your rules sets the precedence; if there is a conflict, the rule cl
 {% endhint %}
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

@@ -22,10 +22,10 @@ This article refers to the Artifactory _Plugin_, an independent piece of softwar
 ### Supported Package Managers
 
 * npm
-* Maven \(.jar files\)
-* Gradle \(.jar files\)
-* sbt \(.jar files\)
-* pip \(PyPi\)
+* Maven \(.jar files\/)
+* Gradle \(.jar files\/)
+* sbt \(.jar files\/)
+* pip \(PyPi\/)
 
 ### Prerequisites
 
@@ -41,10 +41,10 @@ This article refers to the Artifactory _Plugin_, an independent piece of softwar
 3. Go to [our repo in GitHub](https://github.com/snyk/artifactory-snyk-security-plugin/) and navigate to the **Releases**. 
 4. From the most current release, expand the **Assets** section to download the artifactory-snyk-security-plugin-&lt;version&gt;.zip archive. 
 5. Extract the archive. It should have the following structure: 
-   1. plugins \(directory\)
+   1. plugins \(directory\/)
       * snykSecurityPlugin.groovy — plugin
       * snykSecurityPlugin.properties — plugin configuration
-      * lib \(directory\)
+      * lib \(directory\/)
         * artifactory-snyk-security-core.jar - plugin library
         * snykSecurityPlugin.version - plugin version
 6. Open "snykSecurityPlugin.properties" in a text editor. 
@@ -55,7 +55,7 @@ This article refers to the Artifactory _Plugin_, an independent piece of softwar
 8. Restart your Artifactory server.    **NOTE: Refresh now** or **Reload** is not sufficient. Artifactory must be restarted.
 9. Log in to your Artifactory instance and navigate to the **System Logs** to double-check Snyk has been installed successfully.
 
-![](../../.gitbook/assets/artifactory-system-logs.png)
+![](../../.gitbook/assets/artifactory-system-logs.png/)
 
 ### How it works
 
@@ -67,7 +67,7 @@ If a scan finds issues, based on your configuration, the download request can be
 
 You can find the results of a scan under the artifact's properties where you can decide to ignore the issues and allow downloads. To find the artifact, use Artifactory's Search Bar or navigate the tree view.
 
-![](../../.gitbook/assets/uuid-c6d4c41d-5c98-079d-31e7-f4fb5c788d4c-en.png)
+![](../../.gitbook/assets/uuid-c6d4c41d-5c98-079d-31e7-f4fb5c788d4c-en.png/)
 
 ## Artifact properties
 
@@ -92,6 +92,6 @@ You can enable debug logs by modifying your `${ARTIFACTORY_HOME}/var/etc/artifac
 Artifactory should automatically pick up the new configuration. If not, restart Artifactory.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

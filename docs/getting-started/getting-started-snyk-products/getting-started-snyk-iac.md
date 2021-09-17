@@ -1,4 +1,4 @@
-# Getting started with Snyk Infrastructure as Code \(IaC\)
+# Getting started with Snyk Infrastructure as Code \(IaC\/)
 
 Get started with Snyk IaC to inspect, find and fix issues in configuration files for Terraform or Kubernetes \(including Helm\) environments. For more information, see [Scan your Kubernetes configuration files](https://support.snyk.io/hc/en-us/sections/360001881957-Scan-your-Kubernetes-configuration-files/) and [Scan your Terraform files](https://support.snyk.io/hc/en-us/sections/360003156537-Scan-your-Terraform-files).
 
@@ -16,7 +16,7 @@ Ensure you have:
 
 For more details, see:
 
-* [Configure your integration to find security issues in your Kubernetes configuration files](snyk-infrastructure-as-code/scan-kubernetes-configuration-files/configure-integration-for-security-issues-in-kubernetes-configuration-files)
+* [Configure your integration to find security issues in your Kubernetes configuration files](snyk-infrastructure-as-code/scan-kubernetes-configuration-files/configure-integration-for-security-issues-in-kubernetes-configuration-files/)
 * [Configure your integration to find security issues in your Terraform files](snyk-infrastructure-as-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess).
 
 ## Stage 1: Import projects
@@ -27,7 +27,7 @@ Import projects to test with Snyk, by choosing repositories for Snyk to test and
 2. Select the tool to add the project from \(for example GitHub\).
 3. In **Personal and Organization repositories**, select the repositories to use. 
 4. Click **Add selected repositories** to import the selected repositories into your projects. 
-5. A progress bar appears: click **View log** to see import log results \(you can scan both Kubernetes and Terraform files simultaneously\)
+5. A progress bar appears: click **View log** to see import log results \(you can scan both Kubernetes and Terraform files simultaneously\/)
 6. Project import completes.
 
 ## Stage 2: View configuration file issues
@@ -36,13 +36,13 @@ View results for configuration files in imported projects.
 
 Select **Projects**, then click on the imported project entry, to see information for scanned configuration files, including the number of high, medium and low severity issues found. For example:
 
-![](../../.gitbook/assets/iac_-_issues_list.png)
+![](../../.gitbook/assets/iac_-_issues_list.png/)
 
-\(Issues are sorted into project types: Helm, Kubernetes and Terraform.\)
+\(Issues are sorted into project types: Helm, Kubernetes and Terraform.\/)
 
 Click on a project to see more information and details of the issues in a configuration file:
 
-![](../../.gitbook/assets/iac_-_select_config_file.png)
+![](../../.gitbook/assets/iac_-_select_config_file.png/)
 
 {% hint style="info" %}
 If you encounter any errors during import, see the [Importing projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects/) information.
@@ -59,9 +59,9 @@ Act on the recommendations produced by Snyk IaC.
 
 ## For more information
 
-See [Infrastructure as Code](snyk-infrastructure-as-code).
+See [Infrastructure as Code](snyk-infrastructure-as-code/).
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

@@ -1,4 +1,4 @@
-# Snyk for Java \(Gradle, Maven\)
+# Snyk for Java \(Gradle, Maven\/)
 
 Snyk offers security scanning to test your projects for vulnerabilities, both through your CLI and through different integrations from our UI.
 
@@ -17,7 +17,7 @@ Some features might not be available, depending on your pricing plan. See [prici
 | [Maven](https://maven.apache.org/) | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
 | [Gradle](https://gradle.org/) | ✔︎ | ✔︎ | ✔︎ | ✔︎ \(advice\) |  |
 
-## Snyk CLI tool for Java projects \(CI/CD\)
+## Snyk CLI tool for Java projects \(CI/CD\/)
 
 The way Snyk analyzes and builds the dependencies varies depending on the language and package manager of the project.
 
@@ -104,7 +104,7 @@ To test a specific configuration:
 
 ### Gradle Android build variants
 
-Android Gradle supports creating different versions of your app by configuring [build variants.](https://developer.android.com/studio/build/build-variants)
+Android Gradle supports creating different versions of your app by configuring [build variants.](https://developer.android.com/studio/build/build-variants/)
 
 Since Snyk defaults to merging all available configurations the variants will result in a clash of un-mergeable configurations.
 
@@ -127,7 +127,7 @@ To avoid such conflicts:
 
   ```text
     dependencies {
-        implementation project(path: ':mymodulewithvariants', configuration: 'default')
+        implementation project(path: ':mymodulewithvariants', configuration: 'default'/)
     }
   ```
 
@@ -184,7 +184,7 @@ By default, Snyk passes `gradle build --no-daemon` in the background when runnin
 If you are having any trouble testing your projects with Snyk, collect the following details and send them to us at `<`[`support@snyk.io`](mailto:support@snyk.io)`>` so we can help you out:
 
 * `build.gradle`
-* `settings.gradle` \(especially if we did not pick up a version of a package\)
+* `settings.gradle` \(especially if we did not pick up a version of a package\/)
 * The output from the following commands:
   * `$ snyk test -d`
   * `$ gradle dependencies -q`
@@ -197,7 +197,7 @@ After you select a project for import, we build the dependency tree based on the
 
 If a lockfile is present, Snyk will use it to accurately resolve the final version of dependencies used in the project.
 
-Gradle lockfiles are an opt-in feature that, among other benefits, enable reproducible builds.Read more about Gradle dependency locking at [https://docs.gradle.org/current/userguide/dependency\_locking.html](https://docs.gradle.org/current/userguide/dependency_locking.html)
+Gradle lockfiles are an opt-in feature that, among other benefits, enable reproducible builds.Read more about Gradle dependency locking at [https://docs.gradle.org/current/userguide/dependency\_locking.html](https://docs.gradle.org/current/userguide/dependency_locking.html/)
 
 ## Git services for maven projects
 
@@ -244,11 +244,11 @@ Choose a value for the type, either ‘direct’ or if using authentication ‘i
 
 The mirror of value can either be a \* to mirror everything or you can type in a value for example “central”
 
-![](../../.gitbook/assets/uuid-293cfd2b-2cd5-b8a3-0671-bf6d2798a3bc-en.png)
+![](../../.gitbook/assets/uuid-293cfd2b-2cd5-b8a3-0671-bf6d2798a3bc-en.png/)
 
 If using the integration, you will need to choose an integration type and provide the repository name and mirror of details.
 
-![](../../.gitbook/assets/uuid-fd027725-33b3-7f12-a921-d7fba9cedad8-en.png)
+![](../../.gitbook/assets/uuid-fd027725-33b3-7f12-a921-d7fba9cedad8-en.png/)
 
 **Repositories**
 
@@ -258,9 +258,9 @@ Alternatively, you can configure repositories which will be used as additional l
 
 In addition to the CLI and Snyk UI features, you can also check your Java projects with these plugins:
 
-* [Maven plugin for your build flow](../../integrations/ci-cd-integrations/maven-plugin-integration.md)
+* [Maven plugin for your build flow](../../integrations/ci-cd-integrations/maven-plugin-integration/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

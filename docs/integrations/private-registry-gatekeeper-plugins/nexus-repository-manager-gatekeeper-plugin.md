@@ -61,7 +61,7 @@ To set up and configure the plugin, start scanning and managing your organizatio
 4. Shut down the Nexus service instance and then restart it. 
 5. Log in to your Nexus instance and double check that the Snyk bundle has been installed successfully.
 
-![](../../.gitbook/assets/uuid-9745b82a-ed7e-bce0-75dd-0070514f274d-en.png)
+![](../../.gitbook/assets/uuid-9745b82a-ed7e-bce0-75dd-0070514f274d-en.png/)
 
 ## Track vulnerabilities in your team's artifacts
 
@@ -70,9 +70,9 @@ To set up and configure the plugin, start scanning and managing your organizatio
    * Scan results are displayed for the developer with a link to full details for the error:
    * Results are stored in the Snyk Security part of the Attributes section from the Nexus interface for the artifact:
 
-![](../../.gitbook/assets/uuid-a2c354a2-21ca-bdfb-7862-a2ef26eec59e-en.png)
+![](../../.gitbook/assets/uuid-a2c354a2-21ca-bdfb-7862-a2ef26eec59e-en.png/)
 
-![](../../.gitbook/assets/image%20%2833%29.png)
+![](../../.gitbook/assets/image%20%2833%29.png/)
 
 By reviewing the results, you can evaluate the issues found in your artifact and determine a course of action.
 
@@ -98,11 +98,11 @@ Snyk continuously runs in the background on the Nexus instance, and whenever any
 
 When the scan ends, you get an error message if the download was blocked, with a link to the full details for the known vulnerabilities found in that artifact, similar to the following example:
 
-![](../../.gitbook/assets/uuid-a2c354a2-21ca-bdfb-7862-a2ef26eec59e-en.png)
+![](../../.gitbook/assets/uuid-a2c354a2-21ca-bdfb-7862-a2ef26eec59e-en.png/)
 
 Click the link to view details, itemizing the number of vulnerabilities found in the artifact, and their severities.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

@@ -2,10 +2,10 @@
 
 Snyk Code currently supports:
 
-* [**Java**](../snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md)
-* [**JavaScript and TypeScript**](../snyk-open-source/language-and-package-manager-support/snyk-for-javascript.md)
-* [**Python**](../snyk-open-source/language-and-package-manager-support/snyk-for-python.md)
-* **C\#** \(see **C\# Frameworks** section below\)
+* [**Java**](../snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven/)
+* [**JavaScript and TypeScript**](../snyk-open-source/language-and-package-manager-support/snyk-for-javascript/)
+* [**Python**](../snyk-open-source/language-and-package-manager-support/snyk-for-python/)
+* **C\#** \(see **C\# Frameworks** section below\/)
 
 ## Language type and framework support
 
@@ -81,7 +81,7 @@ These are some of the supported frameworks for C\#; contact Snyk for a full list
 
 * **.NET framework**: .NET is an open source developer platform, created by Microsoft and used to build a variety of application types. While .NET supports different languages, Snyk Code supports .NET using the C\# interface.
 * **ASP.NET \(version 4.x\)**: ASP.NET is a free and open source framework to build web apps and services using .NET. Snyk Code supports version 4.x.
-* **.NET Core**: Microsoft created .NET Core to make the .NET framework cross-platform and enable a number of scenarios. The .NET framework and .NET Core share many components and code can be exchanged. \(Microsoft [provides guidance](https://docs.microsoft.com/en-us/dotnet/standard/choosing-core-framework-server/) when to choose which\)
+* **.NET Core**: Microsoft created .NET Core to make the .NET framework cross-platform and enable a number of scenarios. The .NET framework and .NET Core share many components and code can be exchanged. \(Microsoft [provides guidance](https://docs.microsoft.com/en-us/dotnet/standard/choosing-core-framework-server/) when to choose which\/)
 
 {% hint style="info" %}
 The framework support is always determined by the file extensions known to the engine. For example, the engine does not scan **\*.cshtml** files, but scans the associated **\*.cshtml.cs** files.
@@ -114,6 +114,6 @@ The AI engine can analyze the following in your code:
 * **Point-to Analysis**: identifies multiple possible issues including from buffer overruns, null dereferences, and type mismatches, by modeling the usage of memory in variables and references.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

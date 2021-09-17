@@ -1,4 +1,4 @@
-# Snyk for Swift and Objective-C \(CocoaPods\)
+# Snyk for Swift and Objective-C \(CocoaPods\/)
 
 Snyk offers security scanning to test your projects for vulnerabilities, both through your CLI and through different integrations from our UI.
 
@@ -25,8 +25,8 @@ In order to scan your dependencies, you must ensure you have first installed the
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project:
 
-* [analysis with our CLI tool](https://support.snyk.io/hc/en-us/articles/360004701658-Snyk-for-Swift-and-Objective-C-CocoaPods-#UUID-2f6bc912-9512-0d39-56f9-01b0926ef65d)
-* [import from our app](https://support.snyk.io/hc/en-us/articles/360004701658-Snyk-for-Swift-and-Objective-C-CocoaPods-#UUID-3276e078-ac51-90e8-3204-3cbc39b81034)
+* [analysis with our CLI tool](https://support.snyk.io/hc/en-us/articles/360004701658-Snyk-for-Swift-and-Objective-C-CocoaPods-#UUID-2f6bc912-9512-0d39-56f9-01b0926ef65d/)
+* [import from our app](https://support.snyk.io/hc/en-us/articles/360004701658-Snyk-for-Swift-and-Objective-C-CocoaPods-#UUID-3276e078-ac51-90e8-3204-3cbc39b81034/)
 
 ## Snyk CLI tool for CocoaPods projects
 
@@ -72,6 +72,6 @@ We scan CocoaPods projects and examine your Podfile and Podfile.lock files. We t
 Swift and Objective-C projects managed by CocoaPods can be imported from any of the Git repositories we support. In order to test your projects, we analyze your Podfile and Podfile.lock files.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

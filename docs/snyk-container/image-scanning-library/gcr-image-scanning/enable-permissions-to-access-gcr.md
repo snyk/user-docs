@@ -17,7 +17,7 @@ From the relevant project in Google, ensure the you've created a service account
 3. Click **Create** The key is generated for your project. 
 4. Copy _the entire contents_ of the JSON file, which appears similar to the following: 
 
-![GCR\_key\_file\_contents.png](../../../.gitbook/assets/uuid-c4e3b781-e575-5ab8-6cea-b0a8654068c4-en.png)
+![GCR\_key\_file\_contents.png](../../../.gitbook/assets/uuid-c4e3b781-e575-5ab8-6cea-b0a8654068c4-en.png/)
 
 Save the data you copied in order to paste it when configuring the integration with Snyk.
 
@@ -26,6 +26,6 @@ Save the data you copied in order to paste it when configuring the integration w
 Now, configure the integration: [Configure integration for GCR](https://support.snyk.io/hc/articles/360003916118#UUID-9e0df3f8-0780-b593-573b-5185bdca4a6d).
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

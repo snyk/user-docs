@@ -4,7 +4,7 @@ Snyk scans Helm Charts, in addition to Kubernetes configuration files, for misco
 
 ## Prerequisites
 
-* An administrator should [connect your organization](../scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess.md/) with your preferred Git repository and enable detection of configuration files as described.
+* An administrator should [connect your organization](../scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess/) with your preferred Git repository and enable detection of configuration files as described.
 * The repository should follow the [standard Chart directory structure](https://helm.sh/docs/topics/charts/#the-chart-file-structure/). Specifically we look for:
   * `Chart.yaml` - YAML file containing information about the chart
   * `values.yaml` - The default configuration values for this chart
@@ -22,9 +22,9 @@ Snyk scans Helm Charts, in addition to Kubernetes configuration files, for misco
 4. Click the project link you're interested in, to view the scan results and to correct your configuration files accordingly.
    1. Projects that were created from external dependencies will also be scanned and issues shown.
 
-![](../../.gitbook/assets/screenshot_2020-04-24_at_08.51.18.png)
+![](../../.gitbook/assets/screenshot_2020-04-24_at_08.51.18.png/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

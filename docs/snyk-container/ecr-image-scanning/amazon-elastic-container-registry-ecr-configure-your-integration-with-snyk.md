@@ -5,7 +5,7 @@ Once you create or update an IAM role, allow a few minutes for AWS to update the
 1. From AWS, copy the Role ARN key that appears at the top of the Summary section \(inside the Role area still\).
 2. Now, log in to your Snyk account.
 3. Navigate to Integrations from the menu bar at the top, find and click the Amazon ECR option: 
-   1. ![image14.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007147298/uuid-0441cf5d-a461-60e3-5d6e-57eed624d445-en.png)
+   1. ![image14.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007147298/uuid-0441cf5d-a461-60e3-5d6e-57eed624d445-en.png/)
 
       The Amazon ECR configuration page in the Settings area loads.
 
@@ -25,7 +25,7 @@ Once you create or update an IAM role, allow a few minutes for AWS to update the
 
 Snyk tests the connection values and the page reloads, now displaying Amazon ECR integration details as you entered them. A confirmation message that the details were saved also appears in green at the top of the screen.
 
-![image3.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007065997/uuid-49671392-b5d5-389d-66c8-86b3daf9a2e1-en.png)
+![image3.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007065997/uuid-49671392-b5d5-389d-66c8-86b3daf9a2e1-en.png/)
 
 In addition, if the connection to AWS failed, notification appears under the **Connected to Amazon ECR** section.
 
@@ -33,5 +33,5 @@ In addition, if the connection to AWS failed, notification appears under the **C
 <br><br><hr>
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}

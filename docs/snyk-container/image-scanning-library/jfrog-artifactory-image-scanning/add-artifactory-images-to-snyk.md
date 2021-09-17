@@ -13,15 +13,15 @@ Snyk tests and monitors your Artifactory container images by evaluating its tags
 
 * Log in to your account and navigate to the relevant group and organization that you want to manage.
 
-![](../../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29.gif)
+![](../../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29.gif/)
 
 * Go to **Projects**, and click **Add projects**. The list of integrations already configured on your account opens, similar to the following:
 
-![](../../../.gitbook/assets/uuid-dd01aab7-482f-0fc2-01de-c2427a14a0e0-en.png)
+![](../../../.gitbook/assets/uuid-dd01aab7-482f-0fc2-01de-c2427a14a0e0-en.png/)
 
 * **The Which images do you want to test?** view appears, displaying all of the available images for the registry to which you connected, grouped by each of your repositories, similar to the following:
 
-![](../../../.gitbook/assets/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en%20%281%29%20%281%29%20%282%29%20%284%29%20%282%29%20%286%29.png)
+![](../../../.gitbook/assets/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en%20%281%29%20%281%29%20%282%29%20%284%29%20%282%29%20%286%29.png/)
 
 * Select single or multiple images with any or all of the following methods:
   * Type the name of a single image for import in the Image Name field \(\#1 in the image above\),
@@ -36,11 +36,11 @@ Snyk tests and monitors your Artifactory container images by evaluating its tags
 
 Images are indicated with a unique icon ![](../../../.gitbook/assets/uuid-d083d5fe-780a-cf2f-18db-42720db8c5a1-en.png/) , and you can also filter to view only the Artifactory projects:
 
-![](../../../.gitbook/assets/uuid-5c95894c-97d8-a6a9-0969-7c5fee541211-en.png)
+![](../../../.gitbook/assets/uuid-5c95894c-97d8-a6a9-0969-7c5fee541211-en.png/)
 
 Artifactory integration works similarly to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages in our docs.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

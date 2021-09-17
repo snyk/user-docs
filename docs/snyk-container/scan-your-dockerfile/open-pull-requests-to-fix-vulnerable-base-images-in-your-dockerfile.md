@@ -19,7 +19,7 @@ Automatic fix PR is opened in case there is a change in the Dockerfile or a bett
 
 Alternatively, manually open a fix PR by clicking **Open a Fix PR** for the version you wish to upgrade to.
 
-![](../../.gitbook/assets/mceclip0-6-.png)
+![](../../.gitbook/assets/mceclip0-6-.png/)
 
 After it is opened, you can view the fix PR in your Git repository, showing what the change is and where it takes place. The FROM line in your Dockerfile is updated with the new and improved version.
 
@@ -30,17 +30,17 @@ We recommend making sure your application works properly before merging the chan
 
 Once the PR is opened and ready, you can safely merge it and instantly reduce the number of vulnerabilities in your container image.
 
-![mceclip1.png](../../.gitbook/assets/mceclip1-1-.png)
+![mceclip1.png](../../.gitbook/assets/mceclip1-1-.png/)
 
-![](../../.gitbook/assets/mceclip2.png)
+![](../../.gitbook/assets/mceclip2.png/)
 
 Availability:
 
 The feature is available for all of our users. It is on by default for all free users, and off by default for Snyk customers' existing integrations. You can opt-in to it from the integration or project settings sections.
 
-![](../../.gitbook/assets/auto-detect-dockerfiles.png)
+![](../../.gitbook/assets/auto-detect-dockerfiles.png/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

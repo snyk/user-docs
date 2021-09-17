@@ -14,7 +14,7 @@ Your Snyk account is organized using a multi-level hierarchy:
 * **Organization** - a collection of projects that share integration configuration and access controls
 * **Projects** - the basic representation of configuration and test results for an application
 
-![](../../.gitbook/assets/groups-and-orgs.png)
+![](../../.gitbook/assets/groups-and-orgs.png/)
 
 Learn more about [groups and organizations](https://support.snyk.io/hc/en-us/articles/360004037617-What-s-a-Snyk-group-).
 
@@ -54,6 +54,6 @@ To get help, navigate to snyk.io and use the help agent in the bottom right corn
 Make sure you provide an email address to help our team communicate with you. Or email support@snyk.io directly. Note that some issues may have a longer response time.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

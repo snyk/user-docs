@@ -56,6 +56,6 @@ patch:
 However, only a single path is required, as `@snyk/protect` will attempt to patch all applicable instances of the vulnerable dependency.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

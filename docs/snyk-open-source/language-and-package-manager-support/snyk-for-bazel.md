@@ -17,7 +17,7 @@ The following describes how to use Snyk to test your Bazel projects.
 
 ## Bazel Overview
 
-According to [https://docs.bazel.build/versions/master/bazel-overview.html](https://docs.bazel.build/versions/master/bazel-overview.html)
+According to [https://docs.bazel.build/versions/master/bazel-overview.html](https://docs.bazel.build/versions/master/bazel-overview.html/)
 
 > _Bazel is an open-source build and test tool similar to Make, Maven, and Gradle. It uses a human-readable, high-level build language. Bazel supports projects in multiple languages and builds outputs for multiple platforms. Bazel supports large codebases across multiple repositories, and large numbers of users_
 
@@ -33,7 +33,7 @@ The recommended approach is to test your dependencies via the [Snyk Dep Graph Te
 
 ## How it works
 
-1. For each type of dependency \(e.g. Maven, Cocoapods\), create a  [Dep Graph JSON object](snyk-open-source/language-and-package-manager-support/snyk-for-bazel/) listing all the dependency packages and versions \(see below\)
+1. For each type of dependency \(e.g. Maven, Cocoapods\), create a  [Dep Graph JSON object](snyk-open-source/language-and-package-manager-support/snyk-for-bazel/) listing all the dependency packages and versions \(see below\/)
 2. As part of a Bazel test rule, send this object as a POST request to the [Dep Graph Test API](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h_01EEWFQJFTCWFQBMQR0X32J8B8), \(along with your [auth token](snyk-api-info/authentication-for-api)\), example curl request:
 
    ```text
@@ -222,7 +222,7 @@ maven_jar(
     name = "logback-core",
     artifact = "ch.qos.logback:logback-core:1.0.13",
     sha1 = "dc6e6ce937347bd4d990fc89f4ceb469db53e45e",
-)
+/)
 ```
 
 From this you could construct the following Dep Graph JSON object:
@@ -276,6 +276,6 @@ From this you could construct the following Dep Graph JSON object:
 This particular package \(`ch.qos.logback:logback-core@1.0.13`\) contains a vulnerability, described in detail in the resulting JSON response object.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

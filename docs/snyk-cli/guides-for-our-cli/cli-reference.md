@@ -11,7 +11,7 @@
 ## DESCRIPTION
 
 Snyk helps you find, fix and monitor known vulnerabilities in open-source dependencies.  
-For more information see [https://snyk.io](https://snyk.io)
+For more information see [https://snyk.io](https://snyk.io/)
 
 ## Not sure where to start? <a id="Not-sure-where-to-start-"></a>
 
@@ -54,7 +54,7 @@ To see command-specific flags and usage, see `help` command, e.g. `snyk containe
 `--all-projects`\(only in `test` and `monitor` commands\) Auto-detect all projects in the working directory
 
 `--detection-depth`=DEPTH\(only in `test` and `monitor` commands\) Use with --all-projects or --yarn-workspaces to indicate how many subdirectories to search. `DEPTH` must be a number.  
-Default: 4 \(the current working directory and 3 sub-directories\)
+Default: 4 \(the current working directory and 3 sub-directories\/)
 
 `--exclude`=DIRECTORY\[,DIRECTORY\]...&gt;\(only in `test` and `monitor` commands\) Can be used with --all-projects and --yarn-workspaces to indicate sub-directories to exclude. Directories must be comma-separated. If using with `--detection-depth` exclude ignores directories at any level deep.
 
@@ -233,9 +233,9 @@ You can set these environment variables to change CLI run settings. These keys w
 
 ### Snyk API usage policy <a id="Snyk-API-usage-policy"></a>
 
-The use of Snyk's API, whether through the use of the 'snyk' npm package or otherwise, is subject to the [terms & conditions](https://snyk.co/ucT6N)
+The use of Snyk's API, whether through the use of the 'snyk' npm package or otherwise, is subject to the [terms & conditions](https://snyk.co/ucT6N/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

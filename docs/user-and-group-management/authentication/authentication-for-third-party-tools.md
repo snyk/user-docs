@@ -9,7 +9,7 @@ When working with Snyk from within any third-party tool, Snyk first requires aut
 3. From the token field, click **click to show** and then select and copy your API token. 
 4. From the third party interface, configure your integration, pasting your Snyk token when prompted.
 
-![api token screen; revoke; regenerate; click to show](../../.gitbook/assets/uuid-8d94edf8-b42b-e5b3-ada1-e157d18ff884-en%20%281%29%20%282%29%20%282%29%20%281%29%20%284%29.png)
+![api token screen; revoke; regenerate; click to show](../../.gitbook/assets/uuid-8d94edf8-b42b-e5b3-ada1-e157d18ff884-en%20%281%29%20%282%29%20%282%29%20%281%29%20%284%29.png/)
 
 {% hint style="info" %}
 **Note**  
@@ -17,6 +17,6 @@ Additional instructions can be found in our different [Integration](https://supp
 {% endhint %}
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

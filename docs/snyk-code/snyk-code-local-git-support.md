@@ -12,7 +12,7 @@ The **Broker client** and **code agent** components are deployed in your infrast
 
 The Broker client provides the Agent with the connection details. The Agent uses these details to connect to your local git repository, clone the relevant files. And send the results through the brokered communications using callbacks. The brokered communication happens when a Broker client connects \(using your Broker ID\) to a Broker server running in Snyk environment:
 
-![](../.gitbook/assets/local-git.png)
+![](../.gitbook/assets/local-git.png/)
 
 See [Snyk Broker](integrations/snyk-broker/broker-introduction/) documentation for more details.
 
@@ -23,8 +23,8 @@ See [Snyk Broker](integrations/snyk-broker/broker-introduction/) documentation f
 Before you begin with the setup process, please make sure to have a server that supports these minimal requirements for running the Broker client and Code agent:
 
 * CPU:  1 vcpu
-* Memory:  2Gb \(should be reflected in node memory setting\)
-* Disk space: 2Gb \(available disk size determines maximum cloneable repository size\)
+* Memory:  2Gb \(should be reflected in node memory setting\/)
+* Disk space: 2Gb \(available disk size determines maximum cloneable repository size\/)
 * Network: code upload performance will be affected by slow Internet connection
 
 ### Set up the remote connection
@@ -44,10 +44,10 @@ docker pull snyk snyk/broker:gitlab
 
 The following environment variables are mandatory to configure the Broker client.
 
-* **BROKER\_TOKEN** - The Snyk Broker token, obtained from your Container registry integration \(provided by Snyk support\)
+* **BROKER\_TOKEN** - The Snyk Broker token, obtained from your Container registry integration \(provided by Snyk support\/)
 * **GIT\_CLIENT\_URL -** The url of your code-agent \(more on how to get this in the \`setting up the network\` section\).
-* **&lt;SCM\_NAME&gt; -** here you will need to provide your scm of your choice and their URL \(without schema, example: GITLAB=my.gitlabconnection.com\)
-* **&lt;SCM\_TOKEN&gt; -**here you will need to provide a token for that has permissions to access your scm \(Example:GITLAB\_TOKEN=YOUR\_GITLAB\_TOKEN\)
+* **&lt;SCM\_NAME&gt; -** here you will need to provide your scm of your choice and their URL \(without schema, example: GITLAB=my.gitlabconnection.com\/)
+* **&lt;SCM\_TOKEN&gt; -**here you will need to provide a token for that has permissions to access your scm \(Example:GITLAB\_TOKEN=YOUR\_GITLAB\_TOKEN\/)
 * **PORT** - The local port at which the Broker client accepts connections. Default is 7341.
 
 ### Code agent variables
@@ -129,7 +129,7 @@ If you have a running Snyk broker with a custom whitelist \(**accept.json**\), t
 }
 ```
 
-\(The rule is present by default, so only needed if you override the rule with a custom whitelist.\)
+\(The rule is present by default, so only needed if you override the rule with a custom whitelist.\/)
 
 ## Enable code snippets
 
@@ -193,6 +193,6 @@ After these snippets are added, all content from repository can be accessed thro
 {% endhint %}
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

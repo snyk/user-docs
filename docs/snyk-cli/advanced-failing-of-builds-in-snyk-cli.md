@@ -50,7 +50,7 @@ Security policies do not have all attributes available for criteria matching. Pl
 
 Here is an example of a snyk test, using --severity-threshold=high running against a default organization with no policy applied to it.
 
-![](https://gblobscdn.gitbook.com/assets%2F-MVXKdrh-jY3KDGPs8lQ%2F-MZT_W3O1oFyMAzF9g3s%2F-MZTrc0D6NjT6VlS1jmU%2Fimage.png?alt=media&token=27e0ee8c-147f-4942-ada4-08de07f67c40)
+![](https://gblobscdn.gitbook.com/assets%2F-MVXKdrh-jY3KDGPs8lQ%2F-MZT_W3O1oFyMAzF9g3s%2F-MZTrc0D6NjT6VlS1jmU%2Fimage.png?alt=media&token=27e0ee8c-147f-4942-ada4-08de07f67c40/)
 
 Here is an example of a `snyk test`, using `--severity-threshold=high`, running against an organization with a policy that downgrades this particular vulnerability severity to _low_
 
@@ -116,6 +116,6 @@ Examples are provided in the snyk-filter project on Github [here](https://github
 {% endhint %}
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

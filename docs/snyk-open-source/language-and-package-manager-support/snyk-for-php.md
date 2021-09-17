@@ -26,8 +26,8 @@ In order to scan your dependencies, you must ensure you have first installed the
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project:
 
-* [Snyk CLI tool for PHP projects](snyk-open-source/language-and-package-manager-support/snyk-for-php)
-* [Git services for PHP projects](https://support.snyk.io/hc/en-us/articles/360003817397-Snyk-for-PHP#UUID-8d36f8e1-8835-5fa6-8e56-8d9f091d54ed)
+* [Snyk CLI tool for PHP projects](snyk-open-source/language-and-package-manager-support/snyk-for-php/)
+* [Git services for PHP projects](https://support.snyk.io/hc/en-us/articles/360003817397-Snyk-for-PHP#UUID-8d36f8e1-8835-5fa6-8e56-8d9f091d54ed/)
 
 ## Snyk CLI tool for PHP projects
 
@@ -90,6 +90,6 @@ If you run across any of these, or other issues, please send the following files
 * `composer.lock`
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

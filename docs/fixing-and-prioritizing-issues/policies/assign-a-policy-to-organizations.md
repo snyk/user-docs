@@ -10,28 +10,28 @@ Click on the associated check box from the organization selector panel.
 
 If this organization is already assigned to another policy, you will be able to see which policy it is applied to from this selector and the pill next to the organization name will be grey
 
-![](../../.gitbook/assets/mceclip3-2-.png)
+![](../../.gitbook/assets/mceclip3-2-.png/)
 
 If an organization is assigned to the policy you are currently viewing, that policy name will appear in a yellow pill next to the organization name
 
-![](../../.gitbook/assets/mceclip2-6-.png)
+![](../../.gitbook/assets/mceclip2-6-.png/)
 
-If you are moving an organization from one policy to another, 2 pills will appear to show which policy is currently applied \(yellow\) and which policy you will be applying \(grey\)
+If you are moving an organization from one policy to another, 2 pills will appear to show which policy is currently applied \(yellow\) and which policy you will be applying \(grey\/)
 
-![](../../.gitbook/assets/mceclip1-16-.png)
+![](../../.gitbook/assets/mceclip1-16-.png/)
 
 ## To remove an organization from a policy:
 
 Uncheck the desired organization check box from the organization selector panel.
 
-![](../../.gitbook/assets/untitled-2-.png)
+![](../../.gitbook/assets/untitled-2-.png/)
 
 The unchecked organization\(s\) will now revert back to the default policy.
 
 ## Add an organization to the default policy:
 
 1. Remove the organization from the policy it is currently assigned to
-2. The organization will automatically move to the [default policy](fixing-and-prioritizing-issues/policies/shared-policies-overview)
+2. The organization will automatically move to the [default policy](fixing-and-prioritizing-issues/policies/shared-policies-overview/)
 
 ## Remove an organization from the default policy
 
@@ -39,6 +39,6 @@ The unchecked organization\(s\) will now revert back to the default policy.
 2. The organization will automatically disassociate from the [default policy](fixing-and-prioritizing-issues/policies/shared-policies-overview/) and move to the newly selected policy
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

@@ -47,7 +47,7 @@ Testing goof ...
      Path: routes/index.js, line 39
      Info: Unsanitized input from the HTTP request body flows into find, where it is used in an SQL query. This may result in an SQL Injection vulnerability.
 
- ✗ [High] Cross-site Scripting (XSS)
+ ✗ [High] Cross-site Scripting (XSS/)
      Path: routes/index.js, line 109
      Info: Unsanitized input from the HTTP request body flows into send, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
 

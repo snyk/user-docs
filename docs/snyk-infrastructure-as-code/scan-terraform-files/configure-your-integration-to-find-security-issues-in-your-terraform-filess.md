@@ -22,13 +22,13 @@ Please see read our blog post about the ability to interpolate variables: [Snyk 
 * Log in to your account and navigate to the relevant group and organization that you want to manage. **Note:** Integrations are managed per organization
 * Enable Snyk to detect Infrastructure as code files as follows:
 
-![Enable\_Snyk\_to\_detect\_Kubernetes\_configuration\_files.gif](../../.gitbook/assets/enable_snyk_to_detect_kubernetes_configuration_files.gif)
+![Enable\_Snyk\_to\_detect\_Kubernetes\_configuration\_files.gif](../../.gitbook/assets/enable_snyk_to_detect_kubernetes_configuration_files.gif/)
 
 * If needed, review and adjust settings in the **Infrastructure as code** settings area:
 
-![](../../.gitbook/assets/screen_shot_2021-06-22_at_11.43.49.png)
+![](../../.gitbook/assets/screen_shot_2021-06-22_at_11.43.49.png/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

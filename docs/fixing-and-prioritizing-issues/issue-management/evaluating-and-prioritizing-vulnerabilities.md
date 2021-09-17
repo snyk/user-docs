@@ -8,7 +8,7 @@ In this way, you can prioritize and attend to the most important and risky vulne
 
 The filter appears as follows:
 
-![](../../.gitbook/assets/image%20%2853%29.png)
+![](../../.gitbook/assets/image%20%2853%29.png/)
 
 These values are available:
 
@@ -36,6 +36,6 @@ The **Exploit maturity** filter is available from any detailed **Projects** page
    3. View exploit maturity data from the **Issues** list in **Ungrouped** mode: 
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

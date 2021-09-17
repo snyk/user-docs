@@ -23,7 +23,7 @@ After installation, authenticate with Snyk to test your image, running snyk auth
 snyk auth
 ```
 
-For more details about authentication, see [Authenticate the CLI with your account](snyk-cli/install-the-snyk-cli/authenticate-the-cli-with-your-account)
+For more details about authentication, see [Authenticate the CLI with your account](snyk-cli/install-the-snyk-cli/authenticate-the-cli-with-your-account/)
 
 ## Testing an image
 
@@ -82,7 +82,7 @@ monitor will:
 3. Send that build of materials to the Snyk Service
 4. Return a link to the Snyk service where you can see the results
 
-![](../../.gitbook/assets/monitor.png)
+![](../../.gitbook/assets/monitor.png/)
 
 {% hint style="info" %}
 **Note**  
@@ -91,11 +91,11 @@ It’s common to use both test and monitor with Snyk. test is great for quick ch
 
 ## More information
 
-* [Understand Snyk Container CLI results](snyk-container/snyk-cli-for-container-security/understanding-snyk-container-cli-results)
-* [Advanced CLI usage](snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)
+* [Understand Snyk Container CLI results](snyk-container/snyk-cli-for-container-security/understanding-snyk-container-cli-results/)
+* [Advanced CLI usage](snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage/)
 * Learn more about [container security](https://snyk.io/learn/container-security/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

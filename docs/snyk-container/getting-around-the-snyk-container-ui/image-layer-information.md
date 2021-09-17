@@ -2,7 +2,7 @@
 
 When you scan a Docker image in Snyk, you can see information for the **Image layer**:
 
-![](../../.gitbook/assets/screenshot_2021-02-12_at_15.55.03.png)
+![](../../.gitbook/assets/screenshot_2021-02-12_at_15.55.03.png/)
 
 This is the instruction in the image layers which introduces the vulnerability.
 
@@ -13,6 +13,6 @@ There is no need to perform any action.
 {% endhint %}
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

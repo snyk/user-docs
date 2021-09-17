@@ -10,7 +10,7 @@ You can filter for all container projects, similar to the following example:
 
 When you open any container project, the resulting analysis and remediation advice are displayed from the Snyk UI similar to the following:
 
-![results\_example.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007147018/uuid-069520cd-66e8-9f80-5bcf-c7845009ff54-en.png)
+![results\_example.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007147018/uuid-069520cd-66e8-9f80-5bcf-c7845009ff54-en.png/)
 
 The following information is displayed:
 
@@ -21,7 +21,7 @@ The following information is displayed:
   * Total dependencies with known vulnerabilities, and the total number of vulnerabilities
 * Remediation advice—if you included your Dockerfile for monitoring, then any available actionable remediation advice is displayed. To view all advice, click the Show more upgrade types link. The advice offered is dependent on available remediation, and appears similar to the following image:
 
-![advice\_examples.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007147038/uuid-431ce2b1-e5f0-0025-7932-0171b35cb9bb-en.png)
+![advice\_examples.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007147038/uuid-431ce2b1-e5f0-0025-7932-0171b35cb9bb-en.png/)
 
 * Upgrade suggestions can include:
   * Minor upgrades—the safest and best minor upgrade available
@@ -33,7 +33,7 @@ The following information is displayed:
   * the number of vulnerabilities existent in the recommended upgrade
   * a summary of the vulnerability severities accordingly.
 * Filters—in addition to the other filters available for all supported project types, when you view a container project, you can also filter by:
-  * a specific binary or by OS packages \(for binaries/packages containing issues\)
+  * a specific binary or by OS packages \(for binaries/packages containing issues\/)
   * Dockerfile instructions - if you attach your Dockerfile, then you can filter to view issues associated only with the base image, or to view Dockerfile-related advice \(user instruction\), or both
 
 ### Note
@@ -49,5 +49,5 @@ If there is no Dockerfile attached for additional advice, the Dockerfile instruc
 <br><br><hr>
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}

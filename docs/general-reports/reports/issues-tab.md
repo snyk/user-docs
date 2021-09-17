@@ -4,7 +4,7 @@ The Issues tab displays all known vulnerability and license discrepancies across
 
 By default, issues are grouped together per issue, similar to the following example:
 
-![](../../.gitbook/assets/mceclip0-31-.png)
+![](../../.gitbook/assets/mceclip0-31-.png/)
 
 Get an overview of the general health of your organization on the whole by inspecting the number of projects affected per issue and the number and kinds of issues affecting your projects.
 
@@ -28,7 +28,7 @@ Just under the **Export** button, click the **View issues ungrouped** or **View 
 
 The Issues area appears similar to this image when viewing issues ungrouped:
 
-![](../../.gitbook/assets/uuid-e02b41ac-13ff-99e8-1028-69cd24310313-en.png)
+![](../../.gitbook/assets/uuid-e02b41ac-13ff-99e8-1028-69cd24310313-en.png/)
 
 The following table describes the different parts of the Issues area as displayed when viewing issues either grouped or ungrouped:
 
@@ -212,13 +212,13 @@ Following are the project level details that appear only when viewing issues ung
 
 These controls appear above the table:
 
-![](../../.gitbook/assets/uuid-ef7a494d-8b10-9b28-dc63-3f9224519070-en.png)
+![](../../.gitbook/assets/uuid-ef7a494d-8b10-9b28-dc63-3f9224519070-en.png/)
 
 **Search issues**—this search capability allows users to search based on CVE, CWE or identifier name \(i.e. DDoS\). When searching by CVE or CWE, you must provide an exact value \(for example CVE-1234\) whereas, for identifier name, typing in a piece of the word will return results.
 
 **Issue filters**—mark the issues to be displayed by selecting a range of priority scores, specific issue types, exploit maturity, status, fixable values and reachability.
 
-![](../../.gitbook/assets/screenshot_2020-07-30_at_11.30.19_am.png)
+![](../../.gitbook/assets/screenshot_2020-07-30_at_11.30.19_am.png/)
 
 **Export**—click the button to choose which format you’d like to export issue data in:
 
@@ -233,6 +233,6 @@ Only 2000 issues can be generated at once. The number of issues you’re current
 **View issues ungrouped/View issues grouped**—toggle between views. When viewing “grouped”, each issue appears once only, grouping together all affected projects; when viewing “ungrouped”, each issue appears once per project that is affected by it.
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

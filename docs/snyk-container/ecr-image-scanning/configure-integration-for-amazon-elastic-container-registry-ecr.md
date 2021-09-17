@@ -1,4 +1,4 @@
-# Configure integration for Amazon Elastic Container Registry \(ECR\)
+# Configure integration for Amazon Elastic Container Registry \(ECR\/)
 
 Enable integration between one Amazon ECR registry and a Snyk organization, and start managing your image security. To integrate with multiple registries, create a unique organization for each one.
 
@@ -6,13 +6,13 @@ Enable integration between one Amazon ECR registry and a Snyk organization, and 
 
 You have the option of establishing cross-account access to enable Snyk's Amazon ECR integration as a 1-click deployment. This options is available as an official [AWS Quick Start](https://github.com/aws-quickstart/quickstart-snyk-security/) and eliminates the need for manual configuration. 
 
-![quickstart-snyk-security-ecr.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360010020557/quickstart-snyk-security-ecr.png)
+![quickstart-snyk-security-ecr.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360010020557/quickstart-snyk-security-ecr.png/)
 
 You will need your Snyk **Organization ID** and AWS IAM [role ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns/) to complete the integration. The role ARN will be provided for you in the AWS CloudFormation Console's Output tab.
 
-[![cloudformation-launch-stack.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360010120798/cloudformation-launch-stack.png)
+[![cloudformation-launch-stack.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360010120798/cloudformation-launch-stack.png/)
 
-](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/template?stackName=Snyk-Security-ECR&templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-snyk-security/templates/snyk-ecr.yaml)
+](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/template?stackName=Snyk-Security-ECR&templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-snyk-security/templates/snyk-ecr.yaml/)
 
 **Manual Process:**
 
@@ -26,5 +26,5 @@ Follow these steps to set up your integration:
 <br><br><hr>
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}

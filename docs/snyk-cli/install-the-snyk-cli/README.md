@@ -2,7 +2,7 @@
 
 Use our Snyk CLI tool to find and fix known vulnerabilities in your dependencies, both ad hoc and as part of your CI \(Build\) system.
 
-The Snyk CLI requires you to authenticate with your account before using it. See [Authenticate the CLI with your account.](authenticate-the-cli-with-your-account.md)
+The Snyk CLI requires you to authenticate with your account before using it. See [Authenticate the CLI with your account.](authenticate-the-cli-with-your-account/)
 
 Install the Snyk CLI using one of these options:
 
@@ -35,7 +35,7 @@ Once installed, you need to authenticate with your Snyk account:
 snyk auth
 ```
 
-![](../../.gitbook/assets/uuid-7f427e54-45f8-910e-98c5-2016a27d29b0-en.gif)
+![](../../.gitbook/assets/uuid-7f427e54-45f8-910e-98c5-2016a27d29b0-en.gif/)
 
 To test your installation change directory into a folder containing a supported package manifest file \(package.json, pom.xml, composer.lock, etc.\) and run:
 
@@ -56,13 +56,13 @@ As you can see, Snyk found and reported several vulnerabilities in the package. 
 
 You can download and use Snyk's prebuilt binaries already containing npm, the Snyk CLI and other necessary components. To download the prebuilt binary, visit the [**Releases tab**](https://github.com/snyk/snyk/releases/) in the CLI repository page in GitHub:
 
-![](../../.gitbook/assets/image%20%2812%29.png)
+![](../../.gitbook/assets/image%20%2812%29.png/)
 
 Once you've completed installation, get started testing and remediating your vulnerabilities with our [Getting started](https://support.snyk.io/hc/articles/360003812458#UUID-19fc37f2-b686-11ed-b85c-4789e90c8dfc/) guide and [our full list](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0/) of our CLI commands, options and arguments.
 
 ## Install the Snyk CLI tool with a container
 
-You can use a Snyk created Docker container already containing npm, the Snyk CLI and other necessary components. Follow the detailed instructions here [https://hub.docker.com/r/snyk/snyk-cli](https://hub.docker.com/r/snyk/snyk-cli)
+You can use a Snyk created Docker container already containing npm, the Snyk CLI and other necessary components. Follow the detailed instructions here [https://hub.docker.com/r/snyk/snyk-cli](https://hub.docker.com/r/snyk/snyk-cli/)
 
 Once you've completed installation, get started testing and remediating your vulnerabilities with our [Getting started](https://support.snyk.io/hc/articles/360003812458#UUID-19fc37f2-b686-11ed-b85c-4789e90c8dfc/) guide and [our full list](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0)[ ](snyk-cli/guides-for-our-cli/cli-reference)of our CLI commands, options and arguments.
 
@@ -110,10 +110,10 @@ From Windows environments, you can use Scoop to install our Snyk CLI tool. The r
 
 ## See also
 
-* [Getting started with the CLI](../guides-for-our-cli/getting-started-with-the-cli.md)
-* [CLI reference](../guides-for-our-cli/cli-reference.md)
+* [Getting started with the CLI](../guides-for-our-cli/getting-started-with-the-cli/)
+* [CLI reference](../guides-for-our-cli/cli-reference/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 

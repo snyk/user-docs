@@ -10,9 +10,9 @@ Enable integration between Docker Hub and Snyk, and start managing your vulnerab
 4. Snyk tests the connection values and the page reloads, now displaying Docker Hub integration information and the Add your Docker Hub images to Snyk button. 
 5. A confirmation message that the details were saved also appears in green at the top of the screen. In addition, if the connection to Docker Hub failed, a notification appears.
 
-![](../../../.gitbook/assets/mceclip0-12-1-%20%281%29.png)
+![](../../../.gitbook/assets/mceclip0-12-1-%20%281%29.png/)
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page/)
 {% endhint %}
 
