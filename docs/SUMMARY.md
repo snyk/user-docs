@@ -112,6 +112,7 @@
     * [Adding your Dockerfile and test your base image](snyk-container/scan-your-dockerfile/adding-your-dockerfile-and-test-your-base-image.md)
   * [Integrate self-hosted container registries](snyk-container/integrate-self-hosted-container-registries/README.md)
     * [Snyk integration to self-hosted container registries](snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries.md)
+    * [Setting up the Container Registry Agent for a brokered ECR integration](snyk-container/integrate-self-hosted-container-registries/setting-up-the-container-registry-agent-for-a-brokered-ecr-integration.md)
   * [Image scanning library](snyk-container/image-scanning-library/README.md)
     * [ACR image scanning](snyk-container/image-scanning-library/acr-image-scanning/README.md)
       * [Container security with ACR: integrate and test](snyk-container/image-scanning-library/acr-image-scanning/container-security-with-acr-integrate-and-test.md)
