@@ -4,7 +4,7 @@ Enable integration between your deployed AWS Lambda resources and a Snyk organiz
 
 **Automated Process:**
 
-You have the option of establishing cross-account access to enable Snyk's AWS Lambda integration as a 1-click deployment. This options is available as an official [AWS Quick Start](https://github.com/aws-quickstart/quickstart-snyk-security) and eliminates the need for manual configuration.
+You have the option of establishing cross-account access to enable Snyk's AWS Lambda integration as a 1-click deployment. This options is available as an official [AWS Quick Start](https://aws.amazon.com/quickstart/architecture/snyk-security/) and eliminates the need for manual configuration.
 
 ![](../../.gitbook/assets/quickstart-snyk-security-lambda.png)
 
