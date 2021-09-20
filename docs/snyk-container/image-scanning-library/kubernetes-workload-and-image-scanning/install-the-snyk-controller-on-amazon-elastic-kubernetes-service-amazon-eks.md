@@ -2,7 +2,9 @@
 
 Installing the Snyk controller enables you to import and test your running EKS workloads and identify vulnerabilities in their associated images and configurations that might make those workloads less secure. Once imported, Snyk continues to monitor those workloads, identifying additional security issues as new images are deployed and the workload configuration changes.
 
-You have the option of deploying the Snyk controller for Amazon EKS as an official [AWS Quick Start](https://github.com/aws-quickstart/quickstart-eks-snyk). This option eliminates the need for manual configuration. Deploying this Quick Start with default parameters into an existing Amazon EKS cluster builds the following environment.
+#### [Open the AWS Quick Start Guide](https://aws.amazon.com/quickstart/architecture/eks-snyk/)
+
+You have the option of deploying the Snyk controller for Amazon EKS as an official [AWS Quick Start](https://aws.amazon.com/quickstart/architecture/eks-snyk/). This option eliminates the need for manual configuration. Deploying this Quick Start with default parameters into an existing Amazon EKS cluster builds the following environment.
 
 ![](../../../.gitbook/assets/architecture.png)
 
