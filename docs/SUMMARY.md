@@ -169,7 +169,7 @@
       * [Scan container images from Quay in Snyk](snyk-container/image-scanning-library/quay-image-scanning/scan-container-images-from-quay-in-snyk.md)
 * [Snyk Infrastructure as Code](snyk-infrastructure-as-code/README.md)
   * [Scan Terraform files](snyk-infrastructure-as-code/scan-terraform-files/README.md)
-    * [Configure your integration to find security issues in your Terraform filess](snyk-infrastructure-as-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess.md)
+    * [Configure your integration to find security issues in your Terraform files](snyk-infrastructure-as-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess.md)
     * [Scan and fix security issues in Terraform  files](snyk-infrastructure-as-code/scan-terraform-files/scan-and-fix-security-issues-in-terraform-files.md)
     * [Detecting Terraform configuration files using a broker](snyk-infrastructure-as-code/scan-terraform-files/detecting-terraform-configuration-files-using-a-broker.md)
   * [Scan CloudFormation files](snyk-infrastructure-as-code/scan-cloudformation-files/README.md)

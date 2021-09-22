@@ -1,5 +1,25 @@
 # CI/CD integrations
 
+* [Configure your Continuous Integration](configure-your-continuous-integration.md)
+* [Continuous Integration: language support](continuous-integration-language-support.md)
+* [AWS CodePipeline integration](aws-codepipeline-integration.md)
+* [Azure Pipelines integration](azure-pipelines-integration.md)
+* [Bitbucket Pipelines integration overview](bitbucket-pipelines-integration-overview.md)
+* [CircleCI integration overview](circleci-integration-overview.md)
+* [Configure your CircleCI integration](configure-your-circleci-integration.md)
+* [Getting Snyk Orb details from the CircleCI registry](getting-snyk-orb-details-from-the-circleci-registry.md)
+* [GitHub Actions integration](github-actions-integration.md)
+* [Bitbucket Pipelines integration](bitbucket-pipelines-integration.md)
+* [Jenkins integration overview](jenkins-integration-overview.md)
+* [Install the Snyk plugin on your Jenkins account](install-the-snyk-plugin-on-your-jenkins-account.md)
+* [Jenkins integration: Snyk for your pipeline](jenkins-integration-snyk-for-your-pipeline.md)
+* [Jenkins integration: Snyk for freestyle](jenkins-integration-snyk-for-freestyle.md)
+* [Maven plugin integration](maven-plugin-integration.md)
+* [TeamCity integration overview](teamcity-integration-overview.md)
+* [TeamCity integration: use Snyk in your build](teamcity-integration-use-snyk-in-your-build.md)
+* [TeamCity integration: install the Snyk plugin](teamcity-integration-install-the-snyk-plugin.md)
+* [TeamCity configuration parameters](teamcity-configuration-parameters.md)
+
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
 {% endhint %}
