@@ -42,6 +42,20 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
 
 For all the options above, **add** **the IAM policy** that can be found [here](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_on_EKS.html) to your EKS worker nodes in order for the snyk-monitor to pull private images when running on those worker nodes.
 
+If you do not want to assign an IAM role to a Node Group, you can use the IAM role for Service Accounts and configure the snyk-monitor as follows:
+
+* Setting an IAM role for a service account: [IAM role for a Service Accounts](https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html)
+* Modify the `fsGroup` of the mounted EKS credentials in snyk-monitor to the user `nobody` \(uid `65534`\)
+* Annotate the snyk-monitor service account with the IAM role
+
+```text
+helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
+             --namespace snyk-monitor \
+             --set securityContext.fsGroup=65534 \
+             --set rbac.serviceAccount.annotations."eks.amazonaws.com/role-arn"="<iam role name>" \
+             --set volumes.projected.serviceAccountToken=true
+```
+
 **NOTE:** _Please review the_ [_parameter reference_](https://github.com/aws-quickstart/quickstart-eks-snyk#parameter-reference) _prior to deployment._
 
 {% hint style="success" %}

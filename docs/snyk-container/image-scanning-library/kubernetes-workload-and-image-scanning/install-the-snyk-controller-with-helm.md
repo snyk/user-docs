@@ -109,7 +109,7 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
                  --set integrationApi=/kubernetes-upstream
     ```
 
-    **Tip**: Replace the name **Production cluster** with a name based on the cluster you are monitoring. You’ll use this label to find workloads in Snyk later.  
+    **Tip**: Replace the name **Production cluster** with a name based on the cluster you are monitoring. You’ll use this label to find workloads in Snyk later. Please note that `/` in cluster name is disallowed. Any `/` in cluster names will be removed.  
     Also, to avoid naming the cluster on every update, you can use Helm's existing option for **--reuse-values.** This means that when upgrading, it'll reuse the last release's values and merge in any overrides from the command line via **--set** and -f. If '**--reset-values**' is specified, this is ignored.
 
 11. If you are using a proxy for the outbound connection to Snyk then you need to configure the integration to use that proxy. To configure the proxy set the following values provided in the Helm chart:
@@ -122,9 +122,9 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
 
     ```text
     helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
-      --namespace snyk-monitor \
-      --set clusterName="Production cluster" \
-      --set https_proxy=http://192.168.99.100:8080
+                 --namespace snyk-monitor \
+                 --set clusterName="Production cluster" \
+                 --set https_proxy=http://192.168.99.100:8080
     ```
 
     Note that the integration does not support CIDR address ranges or wildcards in the `no_proxy` value. Only exact matches are supported.
@@ -133,31 +133,31 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
 
     ```text
     helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
-      --namespace snyk-monitor \
-      --set clusterName="Production cluster" \
-      --set log_level="WARN"
+                 --namespace snyk-monitor \
+                 --set clusterName="Production cluster" \
+                 --set log_level="WARN"
     ```
 
 13. By default the controller will run without a [Pod Security Policy](https://kubernetes.io/docs/concepts/policy/pod-security-policy/). However, this can be enabled by passing a setting.
 
     ```text
     helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
-      --namespace snyk-monitor \
-      --set clusterName="Production cluster" \
-      --set psp.enabled=true
+                 --namespace snyk-monitor \
+                 --set clusterName="Production cluster" \
+                 --set psp.enabled=true
     ```
 
-    You can also reuse an existing Pod Security Policy by specifying the name. If you don't specify a name then a new policy will be automatically created.
+    You can reuse an existing Pod Security Policy by specifying the name. If you don't specify a name then a new policy will be automatically created.
 
     ```text
     helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
-      --namespace snyk-monitor \
-      --set clusterName="Production cluster" \
-      --set psp.enabled=true \
-      --set psp.name=something
+                 --namespace snyk-monitor \
+                 --set clusterName="Production cluster" \
+                 --set psp.enabled=true \
+                 --set psp.name=something
     ```
 
-14. You can also configure the Snyk controller to use a **PersistentVolumeClaim** \(PVC\) instead of the default emptyDir storage medium for temporarily pulling images. The PVC can either be created by the Helm template provided by the Snyk chart or you can use an already provisioned PVC.
+14. You can configure the Snyk controller to use a **PersistentVolumeClaim** \(PVC\) instead of the default emptyDir storage medium for temporarily pulling images. The PVC can either be created by the Helm template provided by the Snyk chart or you can use an already provisioned PVC.
 
     Use the following flags to control the PVC:
 
@@ -170,19 +170,19 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
 
     ```text
     helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
-    --namespace snyk-monitor \
-    --set pvc.enabled=true \
-    --set pvc.create=true \
-    --set pvc.name="snyk-monitor-pvc"
+                 --namespace snyk-monitor \
+                 --set pvc.enabled=true \
+                 --set pvc.create=true \
+                 --set pvc.name="snyk-monitor-pvc"
     ```
 
     On subsequent upgrades you can drop the "pvc.create" flag because the PVC already exists:
 
     ```text
     helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
-    --namespace snyk-monitor \
-    --set pvc.enabled=true \
-    --set pvc.name="snyk-monitor-pvc"
+                 --namespace snyk-monitor \
+                 --set pvc.enabled=true \
+                 --set pvc.name="snyk-monitor-pvc"
     ```
 
 15. By default, we purposely ignore scanning certain namespaces which we believe are internal to Kubernetes \(any namespace starting with _**kube-\*,**_ full list can be found [here](https://github.com/snyk/kubernetes-monitor/blob/master/src/supervisor/watchers/internal-namespaces.ts)\). If you wish to change that, we allow configuring the excluded namespaces.  
@@ -190,11 +190,22 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
 
     ```text
     helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
-    --namespace snyk-monitor \
-    --set excludedNamespaces={kube-node-lease,local-path-storage,some_namespace}
+                 --namespace snyk-monitor \
+                 --set excludedNamespaces={kube-node-lease,local-path-storage,some_namespace}
+    ```
+
+16. If more resources are required in order to deploy the controller,  configure the helm charts default value for requests and limits with the `--set` flag.
+
+    ```
+    helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
+                 --namespace snyk-monitor \
+                 --set requests."ephemeral-storage"="50Gi"
+                 --set limits."ephemeral-storage"="50Gi"
     ```
 
 ![](../../../.gitbook/assets/uuid-26f9c2cd-2755-07d5-61a0-bdb0261d87ab-en.gif)
+
+
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
