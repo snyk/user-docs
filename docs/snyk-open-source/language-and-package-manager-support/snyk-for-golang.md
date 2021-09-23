@@ -44,7 +44,7 @@ When testing Go Modules projects via the CLI Snyk does not require dependencies 
 
 {% hint style="info" %}
 **Note**  
-Different versions of the Go \(i.e. 1.15 vs 1.16\) will generate different results for the \`go list -json -deps\` command. This will likely affect the dependency tree and in turn, the vulnerabilities that the Snyk CLI will find.
+Different versions of the Go generate different results for the **go list -json -deps** command. This can affect the dependency tree and the vulnerabilities that the Snyk CLI will find.
 {% endhint %}
 
 **Dep**
