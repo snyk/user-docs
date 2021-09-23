@@ -7,7 +7,7 @@ This feature is available with Enterprise plans. See [pricing plans](https://sny
 
 Snyk can use custom Artifactory Package Repositories with Maven projects.
 
-This enables Snyk to resolve all direct and transitive dependencies of packages hosted on the custom registry and calculate a more accurate dependency graph and related vulnerabilities.
+This enables Snyk to resolve all direct and transitive dependencies of packages hosted on the custom registry and calculate a more complete, accurate dependency graph and related vulnerabilities.
 
 Maven projects can be configured to mirror all requests through a custom package repository, or you can specify additional repositories to use alongside Maven Central.
 
