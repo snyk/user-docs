@@ -3,6 +3,7 @@
 ## **Overview**
 
 {% hint style="info" %}
+**Note**  
 This guide is relevant for Snyk UI integrations only, the CLI already supports yarn and npm projects with private npm Teams and npm Enterprise registries.
 {% endhint %}
 
