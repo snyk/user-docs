@@ -1,4 +1,4 @@
-# npm Teams & npm Enterprise for npms
+# npm Teams & npm Enterprise
 
 ## **Overview**
 

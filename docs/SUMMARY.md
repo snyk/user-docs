@@ -248,7 +248,7 @@
     * [Artifactory Registry setup](integrations/private-registry-integrations/artifactory-registry-setup.md)
     * [Artifactory Registry for Maven](integrations/private-registry-integrations/artifactory-registry-for-maven.md)
     * [Artifactory Registry for npm](integrations/private-registry-integrations/artifactory-registry-for-npm.md)
-    * [npm Teams & npm Enterprise for npms](integrations/private-registry-integrations/npm-teams-and-npm-enterprise-for-npms.md)
+    * [npm Teams & npm Enterprise](integrations/private-registry-integrations/npm-teams-and-npm-enterprise-for-npms.md)
     * [Private Gem Sources for Ruby](integrations/private-registry-integrations/private-gem-sources-for-ruby.md)
   * [Private registry gatekeeper plugins](integrations/private-registry-gatekeeper-plugins/README.md)
     * [Artifactory Gatekeeper plugin overview](integrations/private-registry-gatekeeper-plugins/artifactory-gatekeeper-plugin-overview.md)
