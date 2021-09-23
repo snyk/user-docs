@@ -15,7 +15,7 @@ You can add configuration to tell Snyk where your private Artifactory Node.js pa
 
 This is the same information you would normally add in your `.yarnrc` or `.npmrc`
 
-Once configured, Snyk will use this information to access private dependencies when creating Pull/Merge Requests**,** by allowing yarn to reach those deps in order to regenerate the lockfile.
+Once configured, Snyk will use this information to access private dependencies when creating Pull/Merge Requests**,** by allowing npm and yarn to reach those deps in order to regenerate the lockfile.
 
 {% hint style="info" %}
 **Note**  
