@@ -9,7 +9,7 @@ While using the **snyk test** command, actionable remediation for supported ecos
 **snyk fix** is a new CLI command that aims to automatically apply the recommended updates for supported ecosystems.
 
 {% hint style="info" %}
-Please ensure you use the latest version of CLI \([v1.652.0](https://github.com/snyk/snyk/releases/tag/v1.652.0) or later\) to use **snyk fix**.
+Please ensure you use the latest version of CLI \([v1.715.0](https://github.com/snyk/snyk/releases/tag/v1.715.0) or later\) to use **snyk fix**.
 {% endhint %}
 
 ```text
@@ -58,7 +58,8 @@ To enable snyk fix during the beta period, click on settings ![](../../.gitbook/
 Additional parameters:
 
 * **--quiet -** suppresses all output to the command line
-* **--dry-run** - runs almost all the logic and displays output, but does not make the final changes to relevant files. This shows preview of changes.
+* **--dry-run** - runs almost all the logic and displays output, but does not make the final changes to relevant files. This shows preview of changes
+* **--sequential** - install each dependency update separately 1 by 1 \(default is to install in bulk\). This is much slower, however it helps increase the number of successful updates by allowing some to fail and continue
 
 Support is available for the following.
 
