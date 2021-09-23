@@ -3,8 +3,8 @@
 ## **Overview**
 
 {% hint style="info" %}
-**Note**  
-This guide is relevant for Snyk UI integrations only, the CLI already supports yarn and npm projects with private npm Teams and npm Enterprise registries.
+**Feature availability**  
+This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 You can add configuration to tell Snyk where your private npm Teams and npm Enterprise Node.js packages are hosted and what scope they are under.
@@ -14,8 +14,8 @@ This is the same information you would normally add in your `.yarnrc` or `.npmrc
 Once configured, Snyk will use this information to access private dependencies when creating Pull/Merge Requests**,** by allowing yarn/npm to reach those deps in order to regenerate the lockfile.
 
 {% hint style="info" %}
-**Feature availability**  
-This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+**Note**  
+This guide is relevant for Snyk UI integrations only, the CLI already supports yarn and npm projects with private npm Teams and npm Enterprise registries.
 {% endhint %}
 
 ## JavaScript Language Settings
