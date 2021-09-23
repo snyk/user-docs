@@ -11,11 +11,11 @@ Snyk can use custom npm Teams & npm Enterprise repositories with npm and Yarn pr
 
 This enables Snyk to resolve all direct and transitive dependencies of packages hosted on the custom registry and calculate a more complete, accurate dependency graph and related vulnerabilities.
 
+Once configured, Snyk will also use this information to access private dependencies when creating Pull/Merge Requests**,** by allowing npm and yarn to reach those deps in order to regenerate the lockfile.
+
 You can add configuration to tell Snyk where your private npm Teams and npm Enterprise Node.js packages are hosted and what scope they are under.
 
 This is the same information you would normally add in your `.yarnrc` or `.npmrc`
-
-Once configured, Snyk will use this information to access private dependencies when creating Pull/Merge Requests**,** by allowing yarn/npm to reach those deps in order to regenerate the lockfile.
 
 {% hint style="info" %}
 **Note**  
