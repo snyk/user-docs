@@ -35,3 +35,9 @@ To test another context, run `snyk code test <my-folder-path>` with a path to a 
 
 All sub-folders inside the provided folder are also scanned.
 
+{% hint style="danger" %}
+**Snyk Code is not supported for org** _**your.org**_
+
+A minimum version of `1.716.0` is required to use CLI for Snyk Code or else the feature flag must be enabled
+{% endhint %}
+
