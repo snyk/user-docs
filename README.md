@@ -1,3 +1,3 @@
 # User Documentation
 
-Future home of user documentation (migration from zendesk).
+Current home of user documentation. Launched publicly September, 2021.
