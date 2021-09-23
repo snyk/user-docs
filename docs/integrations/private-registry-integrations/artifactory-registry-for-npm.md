@@ -7,6 +7,10 @@
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
+Snyk can use custom Artifactory Package Repositories with npm and Yarn projects.
+
+This enables Snyk to resolve all direct and transitive dependencies of packages hosted on the custom registry and calculate a more complete, accurate dependency graph and related vulnerabilities.
+
 You can add configuration to tell Snyk where your private Artifactory Node.js packages are hosted and what scope they are under.
 
 This is the same information you would normally add in your `.yarnrc` or `.npmrc`
