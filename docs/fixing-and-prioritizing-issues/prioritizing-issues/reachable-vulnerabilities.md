@@ -46,7 +46,7 @@ To perform Reachable Vulnerabilities analysis, you can:
 
 1. Ensure you are using the latest version of the [CLI](https://www.npmjs.com/package/snyk).
 2. Navigate into the folder of your app, where the relevant manifest files reside \(alternatively use the **--file** parameter to point to the right path\).
-3. Run **snyk --reachable**_._
+3. Run **snyk test --reachable**_._
 
 ### Scanning for Reachable Vulnerabilities using Git Integrations
 
