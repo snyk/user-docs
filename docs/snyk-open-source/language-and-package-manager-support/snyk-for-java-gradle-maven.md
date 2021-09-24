@@ -199,60 +199,17 @@ If a lockfile is present, Snyk will use it to accurately resolve the final versi
 
 Gradle lockfiles are an opt-in feature that, among other benefits, enable reproducible builds.Read more about Gradle dependency locking at [https://docs.gradle.org/current/userguide/dependency\_locking.html](https://docs.gradle.org/current/userguide/dependency_locking.html)
 
-## Git services for maven projects
+## Git services for Maven projects
 
 After you select a project for import, we build the dependency tree based on the `pom.xml` file.
 
 ## Git settings for Java
 
-From the Snyk UI you can customize the specific mirror or repository from which you’d like to resolve packages in Artifactory for Maven. If you specify the connection, you must also configure the relevant repository integration.
+From the Snyk UI you can specify mirrors or repositories from which you’d like to resolve packages in Artifactory for Maven.
 
-### Git settings for Java - custom Maven package registries for Artifactory
+See the page below for more details on configuring the Artifactory integration.
 
-From the Snyk UI you can customize the specific mirror or repository \(custom package registries, under specific conditions\) from which you’d like to resolve packages in Artifactory for Maven, allowing insight into dependencies that are not hosted in canonical registries.
-
-{% hint style="info" %}
-If you specify the connection, you must also configure the relevant repository integration.
-{% endhint %}
-
-The custom package registry feature currently supports Artifactory with Maven.
-
-{% hint style="info" %}
-**Feature availability**  
-The custom package registry feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
-{% endhint %}
-
-Maven analysis can be configured to mirror all requests through a custom package repository, or you can specify additional repositories to use alongside Maven Central.
-
-{% hint style="info" %}
-Custom package registries do not currently work with brokered integrations. If you currently use a brokered integration or need support for other package managers please email contact@snyk.io and we will send you an announcement as soon as support is available.
-{% endhint %}
-
-### Setup custom package registries
-
-If authentication is required to access your custom registry you will need to first configure the Artifactory package repository integration.
-
-To configure the Artifactory integration go to Integrations &gt; Artifactory and click ‘Connect to Artifactory’ and complete the fields - URL to your Artifactory, username, and password.
-
-After the integration is set up you can configure Maven settings by navigating to settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Languages** &gt; **Java**.
-
-You can choose whether to use Artifactory as a mirror or as an additional repository where your artifacts will reside. These settings will be very similar to what you have in `~/.m2/settings.xml`.
-
-**Mirrors**
-
-Choose a value for the type, either ‘direct’ or if using authentication ‘integration’. If using direct you will need to complete the URL, repository name and what it is a mirror of.
-
-The mirror of value can either be a \* to mirror everything or you can type in a value for example “central”
-
-![](../../.gitbook/assets/uuid-293cfd2b-2cd5-b8a3-0671-bf6d2798a3bc-en.png)
-
-If using the integration, you will need to choose an integration type and provide the repository name and mirror of details.
-
-![](../../.gitbook/assets/uuid-fd027725-33b3-7f12-a921-d7fba9cedad8-en.png)
-
-**Repositories**
-
-Alternatively, you can configure repositories which will be used as additional locations to check for artifacts.
+{% page-ref page="../../integrations/private-registry-integrations/artifactory-registry-for-maven.md" %}
 
 ## Additional Snyk support for Java
 
