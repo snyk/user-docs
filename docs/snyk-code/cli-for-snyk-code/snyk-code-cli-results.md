@@ -77,3 +77,5 @@ Each item includes:
 * Path: the file and line in the file where the issue was found
 * Info: Information about the issue
 
+CLI for Snyk Code uses the exit codes as described in the [CLI reference](../../snyk-cli/guides-for-our-cli/cli-reference.md#EXIT-CODES).
+

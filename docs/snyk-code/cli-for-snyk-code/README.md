@@ -4,6 +4,10 @@
 This feature is currently in beta.
 {% endhint %}
 
+{% hint style="info" %}
+Make sure Snyk Code is enabled for your organization, see [Getting started with Snyk Code](../../getting-started/getting-started-snyk-products/getting-started-with-snyk-code.md#stage-1-enable-snyk-code) for details.
+{% endhint %}
+
 The Snyk Command Line Interface \([CLI](../../snyk-cli/)\) for Snyk Code helps you find and fix security flaws in your code on your local machine.
 
 ### **Install the Snyk CLI**
@@ -34,6 +38,8 @@ To test the current folder, run `snyk code test` with no parameters.
 To test another context, run `snyk code test <my-folder-path>` with a path to a file or folder as the parameter.
 
 All sub-folders inside the provided folder are also scanned.
+
+#### "Not supported" message
 
 {% hint style="danger" %}
 **Snyk Code is not supported for org** _**your.org**_
