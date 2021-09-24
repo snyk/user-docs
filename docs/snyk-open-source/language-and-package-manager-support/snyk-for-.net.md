@@ -62,7 +62,7 @@ Other support includes: **project.json** \(no longer recommended, please refer t
 
 ### Nuget
 
-Follow the same instructions as [Snyk CLI tool for .NET projects](snyk-for-.net.md)
+Follow the same instructions as in the [Snyk CLI tool for .NET projects](snyk-for-.net.md#snyk-cli-tool-for-net-projects) section.
 
 ### Paket
 
