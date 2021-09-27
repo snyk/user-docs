@@ -181,7 +181,7 @@
     * [Scan and fix security issues in Kubernetes configuration files](snyk-infrastructure-as-code/scan-kubernetes-configuration-files/scan-and-fix-security-issues-in-kubernetes-configuration-files.md)
     * [Scan and fix security issues in Helm Charts](snyk-infrastructure-as-code/scan-kubernetes-configuration-files/scan-and-fix-security-issues-in-helm-charts.md)
     * [Working with Kubernetes configuration file test results](snyk-infrastructure-as-code/scan-kubernetes-configuration-files/working-with-kubernetes-configuration-file-test-results.md)
-    * [Detecting Kubernetes configuration files using a broker](snyk-infrastructure-as-code/scan-kubernetes-configuration-files/detecting-kubernetes-configuration-files-using-a-broker.md)
+    * [Detecting infrastructure as code files using a broker](snyk-infrastructure-as-code/scan-kubernetes-configuration-files/detecting-kubernetes-configuration-files-using-a-broker.md)
   * [Snyk CLI for Infrastructure as Code](snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/README.md)
     * [Test your configuration files](snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-configuration-files.md)
     * [IaC ignores using the .snyk policy file](snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md)
