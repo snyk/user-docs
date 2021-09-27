@@ -22,5 +22,3 @@
 
 {% page-ref page="vulnerability-management-tools/" %}
 
-
-

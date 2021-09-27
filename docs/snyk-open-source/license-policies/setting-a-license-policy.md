@@ -31,5 +31,3 @@ For customers with a Business plan: if no group is available, org administrators
 
 ![](../../.gitbook/assets/mceclip0.png)
 
-
-

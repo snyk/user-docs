@@ -88,5 +88,3 @@ You can filter by reachability status, to quickly show the issues which are reac
 
 ![](../../.gitbook/assets/blobid0.png)
 
-
-

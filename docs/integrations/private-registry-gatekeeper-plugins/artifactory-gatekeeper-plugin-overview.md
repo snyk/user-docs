@@ -91,5 +91,3 @@ You can enable debug logs by modifying your `${ARTIFACTORY_HOME}/var/etc/artifac
 
 Artifactory should automatically pick up the new configuration. If not, restart Artifactory.
 
-
-

@@ -64,5 +64,3 @@ Settings on the project level override the settings on the organization level. C
 
 Every time Snyk scans this project now, it automatically submits upgrade PRs based on results. If a newer version is released for an existing Snyk upgrade PR or for an existing fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.
 
-
-

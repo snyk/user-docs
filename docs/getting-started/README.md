@@ -14,7 +14,3 @@ Use this information to get started using Snyk:
 
 {% page-ref page="getting-started-with-snyk-dashboard.md" %}
 
-
-
-
-

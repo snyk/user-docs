@@ -11,5 +11,3 @@ The Jenkins plugin supports:
 
 For more info about the plugin works and usage instructions, visit the [Jenkins plugin repository](https://github.com/jenkinsci/snyk-security-scanner-plugin).
 
-
-

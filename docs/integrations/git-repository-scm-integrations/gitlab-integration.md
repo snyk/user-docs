@@ -82,5 +82,3 @@ The project will be set to inactive and you’ll no longer get alerts, pull requ
 
 You can restart watching at any time; however, re-initiating GitLab projects for monitoring would require setting up the integration again.
 
-
-

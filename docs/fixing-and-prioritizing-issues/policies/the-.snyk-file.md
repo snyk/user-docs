@@ -214,5 +214,3 @@ Support KB - [Ignoring via the CLI is not enabled for this organization](https:/
 Support KB - [CLI reference](https://support.snyk.io/hc/en-us/articles/360003812578)  
 Support KB - [Manage Vulnerabilities with the Snyk Wizard in the CLI](https://docs.snyk.io/snyk-cli/fix-vulnerabilities-from-the-cli/manage-vulnerability-results-with-the-snyk-cli-wizard) \(NPM/Yarn Only\)
 
-
-

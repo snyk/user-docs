@@ -20,5 +20,3 @@ Ensure that the GitHub account for which the token is provided, has **write** le
 
 [Read more](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration) about repository permission levels in GitHub.
 
-
-

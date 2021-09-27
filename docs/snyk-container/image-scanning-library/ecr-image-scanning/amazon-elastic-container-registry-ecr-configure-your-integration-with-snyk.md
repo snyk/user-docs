@@ -23,5 +23,3 @@ Snyk tests the connection values and the page reloads, now displaying Amazon ECR
 
 In addition, if the connection to AWS failed, notification appears under the **Connected to Amazon ECR** section.
 
-
-

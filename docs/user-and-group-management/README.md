@@ -12,7 +12,3 @@
 
 {% page-ref page="managing-settings/" %}
 
-
-
-
-

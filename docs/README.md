@@ -12,5 +12,3 @@ Welcome to the Snyk user documentation portal!
 * [Snyk CLI](snyk-cli/): learn about the Snyk Command-Line interface 
 * [Integrations](integrations/): information to integrate Snyk into your application development cycle
 
-
-

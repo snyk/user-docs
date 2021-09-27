@@ -43,5 +43,3 @@ Enabling/disabling at a project level will override this single project rather t
 
 ![](../../.gitbook/assets/os3.png)
 
-
-

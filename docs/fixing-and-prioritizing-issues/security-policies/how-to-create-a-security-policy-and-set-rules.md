@@ -18,5 +18,3 @@ To delete or duplicate a rule, click the **…** on the right hand side of each 
 The order of your rules sets the precedence; if there is a conflict, the rule closest to the top supersedes any subsequent rules.
 {% endhint %}
 
-
-

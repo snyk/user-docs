@@ -18,5 +18,3 @@ You can choose to use the same brokered Git integration across multiple organiza
 * To double-check your cloned configuration, click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Integrations.**
 * From the row for the integration you’re setting up, click **Edit settings** to see the cloned Broker integration.
 
-
-

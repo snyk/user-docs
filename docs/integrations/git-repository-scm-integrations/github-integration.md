@@ -211,5 +211,3 @@ If your manifest file is in another location other than the root of the reposito
 
 `[![Known Vulnerabilities](https://snyk.io/test/github/{username}/{repo}/badge.svg?targetFile={path-to-target-file})](https://snyk.io/test/github/{username}/{repo})`
 
-
-

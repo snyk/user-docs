@@ -63,5 +63,3 @@ See [Analysis and remediation for your images from the Snyk app](https://docs.sn
 
 See [Snyk Container](https://docs.snyk.io/snyk-container).
 
-
-

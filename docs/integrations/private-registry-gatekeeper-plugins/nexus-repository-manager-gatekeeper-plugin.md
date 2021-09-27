@@ -102,5 +102,3 @@ When the scan ends, you get an error message if the download was blocked, with a
 
 Click the link to view details, itemizing the number of vulnerabilities found in the artifact, and their severities.
 
-
-

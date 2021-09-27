@@ -31,5 +31,3 @@ An issue in a project page that’s been ignored by a security policy.
 
 ![](../../.gitbook/assets/screenshot_2020-10-21_at_9.30.03_am.png)
 
-
-

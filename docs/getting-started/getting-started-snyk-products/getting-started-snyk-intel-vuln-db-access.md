@@ -29,5 +29,3 @@ Snyk’s security database includes two feeds:
 
 Both feed options can be licensed directly.
 
-
-

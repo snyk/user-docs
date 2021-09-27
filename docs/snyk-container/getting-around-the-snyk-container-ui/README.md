@@ -7,5 +7,3 @@ Understanding the UI for Snyk Container.
 * [Base image detection](base-image-detection.md)
 * [Image layer information](image-layer-information.md)
 
-
-

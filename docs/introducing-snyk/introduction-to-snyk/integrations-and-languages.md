@@ -18,5 +18,3 @@
 
 Snyk supports a wide range of languages including Java, JavaScript, .NET, Python, Golang, Swift, Objective-C, Ruby, Scala, PHP and Elixir. See [Language Support.](https://support.snyk.io/hc/en-us/categories/360000456257-Language-support)
 
-
-

@@ -12,7 +12,3 @@ Snyk Open Source allows you to easily find, prioritize, and automatically fix vu
 
 {% page-ref page="dependency-management/" %}
 
-
-
-
-

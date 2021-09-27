@@ -53,5 +53,3 @@ Group administrators and collaborators are available with Business and Enterpris
 
 More on [user and group management](../../user-and-group-management/).
 
-
-

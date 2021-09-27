@@ -71,5 +71,3 @@ snyk ignore --id=IssueID [--expiry=expiry] [--reason='reason for ignoring']
   </tbody>
 </table>
 
-
-

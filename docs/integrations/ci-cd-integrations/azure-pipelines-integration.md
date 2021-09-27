@@ -301,5 +301,3 @@ Following is an example of the same configuration once you've added it to your p
     failOnIssues: true
 ```
 
-
-

@@ -36,5 +36,3 @@ Here's what the end result should look like in Snyk UI for an app with **—remo
 
 ![](../../.gitbook/assets/untitled.png)
 
-
-

@@ -25,5 +25,3 @@ Quay imports are indicated with a unique icon, and you can also filter the integ
 
 ![](../../../.gitbook/assets/mceclip1-11-.png)
 
-
-

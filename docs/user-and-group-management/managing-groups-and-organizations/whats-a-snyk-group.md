@@ -9,5 +9,3 @@ Groups is a feature that makes it easier for you to work within teams. Groups ca
 
 As well as creating organizations within your enterprise groups, you can also create them within your own personal group. This is ideal if you want to monitor your own personal projects outside of your enterprise’s group, or if you want a sandbox to play with.
 
-
-

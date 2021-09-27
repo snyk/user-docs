@@ -13,5 +13,3 @@ To use our API, you must first authenticate your Snyk account with an API token.
    Authorization: token API_KEY
 ```
 
-
-

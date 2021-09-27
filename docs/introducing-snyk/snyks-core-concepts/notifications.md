@@ -15,5 +15,3 @@ Snyk also sends you a weekly update summarizing your security status across all 
 
 Snyk includes a range of controls to manage your notifications. If you are an organization administrator, you can also manage the notification defaults for others in the organization. See [Notification management](https://docs.snyk.io/user-and-group-management/notifications/notification-management)
 
-
-

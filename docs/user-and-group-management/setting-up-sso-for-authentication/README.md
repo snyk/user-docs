@@ -5,5 +5,3 @@
 * [Set up Snyk Single Sign-On \(SSO\)](set-up-snyk-single-sign-on-sso.md)
 * [Identity Provider \(IdP\) migration](identity-provider-idp-migration.md)
 
-
-

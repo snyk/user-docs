@@ -9,5 +9,3 @@ snyk iac test kubernetes.yaml
 
 Depending on your kustomize templates, you may need to provide a name after the build argument.
 
-
-

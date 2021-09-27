@@ -4,5 +4,3 @@
 * [Scan and fix security issues in Terraform files](scan-and-fix-security-issues-in-terraform-files.md)
 * [Detecting Terraform configuration files using a broker](detecting-terraform-configuration-files-using-a-broker.md)
 
-
-

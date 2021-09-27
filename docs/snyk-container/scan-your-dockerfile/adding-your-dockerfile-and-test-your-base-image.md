@@ -27,5 +27,3 @@ Snyk tests the project again, this time producing any relevant base image remedi
 
 ![](../../.gitbook/assets/mceclip1-2-.png)
 
-
-

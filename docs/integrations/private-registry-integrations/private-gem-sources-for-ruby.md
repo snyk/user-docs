@@ -29,5 +29,3 @@ This guide is relevant for Snyk UI integrations only, the CLI supports Ruby proj
 * Gem sources must be publicly resolvable \(i.e. not behind a firewall\)
 * Variables must be configured according to the official [Bundler Credentials for Gem Sources documentation](https://bundler.io/v1.16/bundle_config.html#CREDENTIALS-FOR-GEM-SOURCES)
 
-
-

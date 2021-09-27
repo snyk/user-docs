@@ -29,5 +29,3 @@ ECR files are indicated with a unique icon ![](../../../.gitbook/assets/uuid-31a
 
 Amazon ECR integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages, also in our docs.
 
-
-

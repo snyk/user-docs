@@ -32,5 +32,3 @@ This feature is available to plans that support groups. See [pricing plans](http
 
 ![](../../.gitbook/assets/uuid-21093b2a-7003-b47a-cb62-2e6dd147323e-en.png)
 
-
-

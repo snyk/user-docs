@@ -89,5 +89,3 @@ If you run across any of these, or other issues, please send the following files
 * `composer.json`
 * `composer.lock`
 
-
-

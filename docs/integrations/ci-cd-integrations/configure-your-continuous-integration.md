@@ -19,5 +19,3 @@ See guidance for how to do this on:
 You can find others through an easy [Google search](https://www.google.co.uk/search?q=setting+up+env+variables+in+CI).  
 Learn more about [CI/CD](https://snyk.io/learn/what-is-ci-cd-pipeline-and-tools-explained/).
 
-
-

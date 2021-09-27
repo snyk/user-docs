@@ -10,5 +10,3 @@
 * [Test your Helm Charts with our CLI tool](test-your-helm-charts-with-our-cli-tool.md)
 * [Understanding configuration scan issues](understanding-configuration-scan-issues.md)
 
-
-

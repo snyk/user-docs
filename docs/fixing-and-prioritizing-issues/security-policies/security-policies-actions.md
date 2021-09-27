@@ -13,5 +13,3 @@ An action is what you want to happen when the conditions in the policy rule are 
 You cannot stack multiple actions in the same rule. To have multiple actions with a rule, create a new rule block with the same conditions, and specify a different action.
 {% endhint %}
 
-
-

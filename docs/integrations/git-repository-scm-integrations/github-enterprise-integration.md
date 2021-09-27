@@ -6,7 +6,7 @@ Snyk's GitHub Enterprise integration allows you to:
 * Detect vulnerabilities in your open source components.
 * Provide automated remediation and upgrade fixes.
 
-### Setting up a GitHub Enterprise Integration
+## Setting up a GitHub Enterprise Integration
 
 1. Create a dedicated service account in GitHub Enterprise, with _**write**_ level or above permissions, to the repos you want to monitor with Snyk permissions. See [Required permissions scope for the GitHub integration](github-enterprise-integration.md#required-permissions-scope-for-the-github-integration) for details.
 2. Generate a personal access token for that account, with **repo \(all\)**, **admin:read:org**, and **admin:repo\_hooks \(read & write\)** permissions scope. See [GitHub Enterprise documentation ](https://docs.github.com/en/enterprise-server@2.22/github/authenticating-to-github/creating-a-personal-access-token)for details.
@@ -20,7 +20,7 @@ Snyk's GitHub Enterprise integration allows you to:
 
 ![](../../.gitbook/assets/which_repos%20%283%29%20%285%29%20%289%29%20%287%29%20%2818%29%20%285%29.jpg)
 
-### GitHub Enterprise Broker startup script
+## GitHub Enterprise Broker startup script
 
 ```text
 docker run --restart=always \
@@ -35,7 +35,7 @@ docker run --restart=always \
        snyk/broker:github-enterprise
 ```
 
-### GitHub Enterprise Integration Features
+## GitHub Enterprise Integration Features
 
 After the integration is set up, you can use the following capabilities:
 
@@ -77,7 +77,7 @@ To review and adjust the pull request tests settings:
 
 ![](../../.gitbook/assets/mceclip5%20%281%29.png)
 
-### Required permissions scope for the GitHub integration
+## Required permissions scope for the GitHub integration
 
 All the operations, triggered manually or automatically, are performed for a GitHub service account that has its token is configured in the integrations settings. This shows the required access scopes for the configured token:
 
@@ -100,6 +100,4 @@ For Snyk to perform the required operation on monitor repositories, such as read
 | Snyk tests on pull requests | For sending pull request status checks whenever a new PR is created / an existing PR is updated |  |
 | Opening fix and upgrade pull requests | For creating fix/upgrade PRs in the monitored repos |  |
 | Snyk tests on pull requests - initial configuration | For adding Snyk's webhooks to the imported repos, so Snyk will be informed whenever pull requests are created or updated and be able to trigger scans | _Admin_ |
-
-
 

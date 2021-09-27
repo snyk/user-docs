@@ -5,5 +5,3 @@
 * [Connect Snyk to Heroku](connect-snyk-to-heroku.md)
 * [Pivotal integration overview](pivotal-integration-overview.md)
 
-
-

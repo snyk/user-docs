@@ -38,5 +38,3 @@ If Snyk determines the base image used, and the image uses an [Official Docker i
 
 This provides a level of situational awareness, showing the vulnerability counts in minor and major upgrades or in alternative base images which might have fewer vulnerabilities.
 
-
-

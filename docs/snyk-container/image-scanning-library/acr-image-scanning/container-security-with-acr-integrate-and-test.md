@@ -7,5 +7,3 @@ This document describes:
 * Configure integration for ACR
 * Add projects to Snyk
 
-
-

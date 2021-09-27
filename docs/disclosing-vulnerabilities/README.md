@@ -6,7 +6,3 @@ You can contribute to the security community, by disclosing vulnerabilities in e
 
 {% page-ref page="disclose-a-vulnerability-in-an-open-source-package.md" %}
 
-
-
-
-

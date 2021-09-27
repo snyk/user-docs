@@ -20,5 +20,3 @@
 * [TeamCity integration: install the Snyk plugin](teamcity-integration-install-the-snyk-plugin.md)
 * [TeamCity configuration parameters](teamcity-configuration-parameters.md)
 
-
-

@@ -79,5 +79,3 @@ You can learn more about how to add another user to your application via the com
 
 Alternatively, you can add a Snyk-specific user via the [Pivotal console](https://console.run.pivotal.io/).
 
-
-

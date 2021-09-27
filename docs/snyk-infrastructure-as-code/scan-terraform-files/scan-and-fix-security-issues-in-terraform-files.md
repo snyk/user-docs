@@ -27,5 +27,3 @@ Snyk scans your Terraform code for misconfigurations and security issues as well
 
 ![](../../.gitbook/assets/screenshot_2020-07-09_at_12.45.26%20%281%29%20%281%29%20%283%29%20%283%29%20%282%29.png)
 
-
-

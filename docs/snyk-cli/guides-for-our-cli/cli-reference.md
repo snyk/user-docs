@@ -82,7 +82,7 @@ Setting a default will ensure all newly monitored projects will be created under
 
 `--project-name=PROJECT_NAME` Specify a custom Snyk project name.
 
-``--policy-path=PATH_TO_POLICY_FILE``` Manually pass a path to a Snyk policy file.
+\`\`--policy-path=PATH\_TO\_POLICY\_FILE\`\`\` Manually pass a path to a Snyk policy file.
 
 `--json` Prints result in JSON format.
 
@@ -236,6 +236,4 @@ You can set these environment variables to change CLI run settings. These keys w
 ### Snyk API usage policy <a id="Snyk-API-usage-policy"></a>
 
 The use of Snyk's API, whether through the use of the 'snyk' npm package or otherwise, is subject to the [terms & conditions](https://snyk.co/ucT6N)
-
-
 

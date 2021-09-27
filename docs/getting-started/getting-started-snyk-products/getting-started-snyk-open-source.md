@@ -96,5 +96,3 @@ See [Fixing vulnerabilities](https://docs.snyk.io/snyk-open-source/open-source-b
 
 See [Snyk Open Source](https://docs.snyk.io/snyk-open-source).
 
-
-

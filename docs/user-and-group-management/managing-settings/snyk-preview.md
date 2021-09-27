@@ -20,5 +20,3 @@ After the feature is enabled at the group level, all orgs within the group have 
 
 To disable a Snyk Preview feature, navigate to the Snyk Preview page and click **Enabled** for that feature.
 
-
-

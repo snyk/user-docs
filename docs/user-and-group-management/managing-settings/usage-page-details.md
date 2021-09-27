@@ -68,5 +68,3 @@ For each entry, you can select the frequency of testing for that project \(never
 
 Click **Deactivate** to never test, and also remove webhooks and stop showing the project’s results in reporting.
 
-
-

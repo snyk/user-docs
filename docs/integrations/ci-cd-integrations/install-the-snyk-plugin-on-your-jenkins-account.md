@@ -32,5 +32,3 @@ Note: steps supported solely by Jenkins are in high-level only. See [Jenkins doc
 
 For more information about global credentials, see the [Jenkins documentation.](https://plugins.jenkins.io/snyk-security-scanner)
 
-
-

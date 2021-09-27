@@ -40,5 +40,3 @@ The feature is available for all of our users. It is on by default for all free 
 
 ![](../../.gitbook/assets/auto-detect-dockerfiles.png)
 
-
-

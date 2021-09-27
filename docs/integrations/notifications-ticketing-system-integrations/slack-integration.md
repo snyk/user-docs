@@ -20,5 +20,3 @@ Once you have generated your Slack Webhook URL, go to your 'Manage organizationâ
 
 ![](../../.gitbook/assets/image%20%2824%29.png)
 
-
-

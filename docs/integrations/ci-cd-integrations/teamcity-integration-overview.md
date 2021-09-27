@@ -168,5 +168,3 @@ Install or upgrade the Snyk Security plugin with these steps. Once complete, you
   </tbody>
 </table>
 
-
-

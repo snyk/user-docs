@@ -86,11 +86,10 @@ Contact [support@snyk.io](mailto:support@snyk.io) if you want to add a private r
         <p>The URL to your Artifactory instance in the format:
           <br /><code>[http://][username:password@]hostname[:port]/artifactory</code>
         </p>
-        <p></p>
         <p><b>Optional fields</b>
         </p>
         <ol>
-          <li><em>Protocol</em>: Defaults to <code>https://</code> 
+          <li><em>Protocol</em>: Defaults to <code>https://</code>
             <br />This should only be specified when no certificate is present and <code>http://</code> is
             required instead for your instance</li>
           <li><em>Basic auth</em>: Omit if no basic auth required.
@@ -112,13 +111,11 @@ Contact [support@snyk.io](mailto:support@snyk.io) if you want to add a private r
           auth credentials.
           <br />
           <br />Required for npm/Yarn integrations only.</p>
-        <p><b><br />Example</b> 
+        <p><b><br />Example</b>
           <br /><code>http://acme.com/artifactory</code>
         </p>
       </td>
     </tr>
   </tbody>
 </table>
-
-
 

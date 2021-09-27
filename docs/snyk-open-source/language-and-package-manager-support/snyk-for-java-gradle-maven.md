@@ -217,5 +217,3 @@ In addition to the CLI and Snyk UI features, you can also check your Java projec
 
 * [Maven plugin for your build flow](../../integrations/ci-cd-integrations/maven-plugin-integration.md)
 
-
-

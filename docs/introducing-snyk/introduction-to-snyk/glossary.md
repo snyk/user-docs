@@ -326,5 +326,3 @@ A security vulnerability, identified by Snyk. See [Remediate your vulnerabilitie
 
 A way for an app to provide other applications with real-time information. Snyk uses webhooks to check changes in code.
 
-
-

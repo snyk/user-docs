@@ -357,5 +357,3 @@ The following repo shares some examples of binary and NPM integrations for vario
 
 ### [GitHub CI/CD examples](https://github.com/snyk-labs/snyk-cicd-integration-examples)
 
-
-

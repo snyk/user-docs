@@ -8,5 +8,3 @@
 * [Prerequisites for Dockerfile analysis](prerequisites-for-dockerfile-analysis.md)
 * [Adding your Dockerfile and test your base image](adding-your-dockerfile-and-test-your-base-image.md)
 
-
-

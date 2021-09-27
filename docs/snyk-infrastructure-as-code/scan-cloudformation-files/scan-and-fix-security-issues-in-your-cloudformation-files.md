@@ -27,5 +27,3 @@ Snyk scans CloudFormation code for misconfigurations and security issues. For co
 
 ![Screen\_Shot\_2021-06-23\_at\_10.18.49.png](../../.gitbook/assets/screen_shot_2021-06-23_at_10.18.49.png)
 
-
-

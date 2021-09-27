@@ -49,5 +49,3 @@ You can configure token based authentication for npm Teams and npm Enterprise in
 
 ![](../../.gitbook/assets/image%20%2835%29.png)
 
-
-

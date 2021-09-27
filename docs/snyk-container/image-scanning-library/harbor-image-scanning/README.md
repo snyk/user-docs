@@ -1,4 +1,2 @@
 # Harbor image scanning
 
-
-

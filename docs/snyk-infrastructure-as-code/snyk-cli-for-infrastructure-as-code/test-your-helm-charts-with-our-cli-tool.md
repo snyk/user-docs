@@ -9,5 +9,3 @@ snyk iac test helm.yaml
 
 change \`iac-helm\` for your Helm chart name.
 
-
-

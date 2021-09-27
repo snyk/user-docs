@@ -18,5 +18,3 @@ Any dependencies in other 'requires' key will not be scanned.
 
 Further support is subject to change in the future.
 
-
-

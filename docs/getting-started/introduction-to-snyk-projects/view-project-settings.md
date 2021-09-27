@@ -28,5 +28,3 @@ Deleting a project will:
 * Delete the project and all historical snapshot data from Snyk.
 * Remove the webhook from the GitHub repository.
 
-
-

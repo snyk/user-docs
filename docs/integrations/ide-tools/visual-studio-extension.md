@@ -169,5 +169,3 @@ It either means you’ve successfully run a scan with the Visual Studio extensio
 * [Bug tracker](https://github.com/snyk/snyk-visual-studio-plugin/issues)
 * [Github repository](https://github.com/snyk/snyk-visual-studio-plugin)
 
-
-

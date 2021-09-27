@@ -24,5 +24,3 @@ Our free subscription plan allows you to send up to 200 pending invitations ever
 
 An organization can have multiple administrators. When you create an organization, you will automatically be an administrator on this organization. If you want to downgrade to collaborator, or leave this organization, the organization has to have at least one other administrator.
 
-
-

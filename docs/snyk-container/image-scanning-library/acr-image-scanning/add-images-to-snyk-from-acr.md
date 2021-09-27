@@ -37,5 +37,3 @@ ACR files are indicated with a unique icon ![](../../../.gitbook/assets/uuid-5d1
 
 ACR integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages, also in our docs.
 
-
-

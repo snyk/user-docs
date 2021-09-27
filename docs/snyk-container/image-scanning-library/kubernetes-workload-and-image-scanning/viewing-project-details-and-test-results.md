@@ -32,5 +32,3 @@ Currently, we test the workload configuration for the following properties:
 | readOnlyRootFilesystem | securityContext. readOnlyFilesystem | By default the file system mounted for the container is writable. That means an attacker who compromises the container can also write to the disk, which makes certain kinds of attacks easier. If your containers are stateless then you don’t need a writable filesystem. |
 | Capabilities | securityContext.capabilities | At a low-level, Linux capabilities control what different processes in the container are allowed to do: from being able to write to the disk, to being able to communicate over the network. Dropping all capabilities and adding in those that are required is possible but requires understanding the list of capabilities first. |
 
-
-

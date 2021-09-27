@@ -6,7 +6,3 @@ Introducing Snyk: the platform developers choose to build cloud native applicati
 
 {% page-ref page="snyks-core-concepts/" %}
 
-
-
-
-

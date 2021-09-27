@@ -35,5 +35,3 @@ To set up the integration, the Harbor user should be an admin user. It currently
 Snyk tests the connection values and the page reloads, now displaying Harbor integration information, and the **Add your Harbor images to Snyk** button becomes available. In case the connection to Harbor failed, notification appears under the **Connected to Harbor** section.  
 Now you can use Snyk to scan your images from Harbor.
 
-
-

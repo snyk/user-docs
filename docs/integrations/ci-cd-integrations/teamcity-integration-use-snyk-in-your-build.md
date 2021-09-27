@@ -32,5 +32,3 @@ For additional information with TeamCity and its features, refer to their docume
 
 * From the top of the report, click **View on Snyk.io** to view the snapshot and vulnerability information directly from our app.
 
-
-

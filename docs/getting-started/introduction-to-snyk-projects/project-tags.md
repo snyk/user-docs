@@ -44,5 +44,3 @@ If a tag exists in your group, you can apply it to any project.
 
 ![](../../.gitbook/assets/screenshot_2020-09-29_at_18.14.44.png)
 
-
-

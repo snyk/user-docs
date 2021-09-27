@@ -42,5 +42,3 @@ For any pipeline project, you can add a Snyk step to your build at any point in 
 
 ![image10.png](../../.gitbook/assets/uuid-810f5c24-fc0d-7996-1fea-6f67b52ee631-en.png)
 
-
-

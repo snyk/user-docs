@@ -21,5 +21,3 @@ From within a project that is monitored at runtime:
 
 ![](../../.gitbook/assets/uuid-6e84ffa7-04bd-413e-4bbb-3bd5de1d9092-en.png)
 
-
-

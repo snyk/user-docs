@@ -28,5 +28,3 @@ For any Freestyle project, you can add Snyk to your build to scan the code while
 
 ![](../../.gitbook/assets/ci-cd%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29%20%288%29.png)
 
-
-

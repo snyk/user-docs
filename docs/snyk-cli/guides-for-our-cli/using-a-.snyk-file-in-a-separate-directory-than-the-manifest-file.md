@@ -15,5 +15,3 @@ Below is an examples use cases of this.
 
 Current directory - manifest level
 
-
-

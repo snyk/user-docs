@@ -25,5 +25,3 @@ Click the Issue link from the table to view all details for the specified vulner
 
 Once you've reviewed the pull request, you can approve it for merge.
 
-
-

@@ -11,7 +11,3 @@ This feature is available with Business and Enterprise plans. See [pricing plans
 
 {% page-ref page="revoking-and-regenerating-snyk-api-tokens.md" %}
 
-
-
-
-

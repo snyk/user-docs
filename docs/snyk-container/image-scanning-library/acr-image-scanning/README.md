@@ -1,4 +1,2 @@
 # ACR image scanning
 
-
-

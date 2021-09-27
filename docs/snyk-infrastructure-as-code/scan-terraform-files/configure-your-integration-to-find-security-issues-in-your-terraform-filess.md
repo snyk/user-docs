@@ -28,5 +28,3 @@ Please see read our blog post about the ability to interpolate variables: [Snyk 
 
 ![](../../.gitbook/assets/screen_shot_2021-06-22_at_11.43.49.png)
 
-
-

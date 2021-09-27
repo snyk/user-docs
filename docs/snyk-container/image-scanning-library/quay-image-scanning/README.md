@@ -1,4 +1,2 @@
 # Quay image scanning
 
-
-

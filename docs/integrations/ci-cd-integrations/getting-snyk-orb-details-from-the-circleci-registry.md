@@ -8,5 +8,3 @@ From this list, find and click the relevant \#**Snyk** line to view the Orb's in
 
 ![](../../.gitbook/assets/uuid-ce212e67-b7ac-3cf7-4772-c84f6897aed9-en.png)
 
-
-

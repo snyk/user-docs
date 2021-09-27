@@ -39,5 +39,3 @@ There may be a delay from the time a project is tested and until that data appea
 Read-only projects and the respective results will not appear in the Reports area.
 {% endhint %}
 
-
-

@@ -47,5 +47,3 @@ Group administrators can view report data for one, some or all of the organizati
 
 Columns that allow the data to be sorted have arrows next to their headings. Click the arrows to sort the data in descending order by the relevant category. Click again to switch the order to ascending.
 
-
-

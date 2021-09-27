@@ -17,5 +17,3 @@ Configure integration from Snyk with your Google container registries to scan fo
 
 ![GCR\_configur.png](../../../.gitbook/assets/uuid-47cf04cb-248e-5d0f-d35a-f36fbb624614-en.png)
 
-
-

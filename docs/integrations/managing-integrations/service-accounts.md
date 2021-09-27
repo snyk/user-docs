@@ -88,5 +88,3 @@ Administrators can change token names and delete tokens. When you delete a servi
   * Click **Delete** to delete a token and invalidate it immediately. When prompted, click **OK**. Remember that you cannot re-generate the same token!
   * Click the token name to navigate to change the token name and click **Save**.
 
-
-

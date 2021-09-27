@@ -17,5 +17,3 @@ To install and configure your client:
 
 You can now use Snyk as normal.
 
-
-

@@ -2,7 +2,7 @@
 
 Use our Snyk CLI tool to find and fix known vulnerabilities in your dependencies, both ad hoc and as part of your CI \(Build\) system.
 
-The Snyk CLI requires you to authenticate with your account before using it. 
+The Snyk CLI requires you to authenticate with your account before using it.
 
 {% page-ref page="authenticate-the-cli-with-your-account.md" %}
 
@@ -114,6 +114,4 @@ From Windows environments, you can use Scoop to install our Snyk CLI tool. The r
 
 * [Getting started with the CLI](../guides-for-our-cli/getting-started-with-the-cli.md)
 * [CLI reference](../guides-for-our-cli/cli-reference.md)
-
-
 

@@ -27,5 +27,3 @@ You can authenticate:
 
 ![](../../.gitbook/assets/image%20%2811%29.png)
 
-
-

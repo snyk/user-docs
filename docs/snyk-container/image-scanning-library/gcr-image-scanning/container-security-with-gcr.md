@@ -15,5 +15,3 @@ For more details about how we scan, see [How Snyk container security works](http
 
 Also see our introduction to [container security](https://snyk.io/container-security/) best practice.
 
-
-

@@ -40,5 +40,3 @@ Within the **Reports** area you can view an inventory of all of your licenses ac
 * Composer
 * Cocoapods
 
-
-

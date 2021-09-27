@@ -22,5 +22,3 @@ Click on settings ![](../../.gitbook/assets/cog_icon.png) to view Snyk applicati
 
 [Snyk Preview](https://docs.snyk.io/getting-started/snyk-billing-plan-onboarding/snyk-preview)
 
-
-

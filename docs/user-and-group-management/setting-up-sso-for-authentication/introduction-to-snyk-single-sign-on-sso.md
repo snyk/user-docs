@@ -22,5 +22,3 @@ The sign on process includes these steps:
 
 Read more about the next step, [choose a provisioning option](https://docs.snyk.io/user-and-group-management/setting-up-sso-for-authentication/choose-a-provisioning-option).
 
-
-

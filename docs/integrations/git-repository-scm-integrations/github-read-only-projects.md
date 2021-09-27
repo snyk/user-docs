@@ -54,5 +54,3 @@ Enter as many repositories as needed, and click "Import X repository/ies".
 
 ![](../../.gitbook/assets/screenshot_2020-07-03_at_08.01.52.png)
 
-
-

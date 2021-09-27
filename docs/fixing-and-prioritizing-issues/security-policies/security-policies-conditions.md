@@ -18,5 +18,3 @@ You can stack multiple conditions in the same rule using the **AND** function.
 | CVE | Matches all issues that contain a specified CVE. Supports multiple CVEs. |
 | Snyk ID | Matches all issues that contain a specified Snyk ID. Supports multiple Snyk IDs. Not every issue has a CVE, so this is a good way of being able to specify those. |
 
-
-

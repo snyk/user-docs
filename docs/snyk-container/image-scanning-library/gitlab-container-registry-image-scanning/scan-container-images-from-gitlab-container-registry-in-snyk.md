@@ -25,5 +25,3 @@ GitLab container registry imports are indicated with a unique icon, and you can 
 
 ![](../../../.gitbook/assets/mceclip0-14-.png)
 
-
-

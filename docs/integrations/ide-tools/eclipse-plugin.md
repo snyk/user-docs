@@ -186,5 +186,3 @@ Work with Snyk results from Eclipse as follows:
   </tbody>
 </table>
 
-
-

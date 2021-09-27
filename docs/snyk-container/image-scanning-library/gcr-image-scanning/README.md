@@ -1,4 +1,2 @@
 # GCR image scanning
 
-
-

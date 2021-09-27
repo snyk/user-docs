@@ -97,5 +97,3 @@ You can filter for Kubernetes projects only:
 
 ![](../../../.gitbook/assets/image%20%285%29.png)
 
-
-

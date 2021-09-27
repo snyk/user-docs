@@ -37,5 +37,3 @@ This guide is relevant for Snyk UI integrations only, the CLI already supports y
 
 ![](../../.gitbook/assets/image4-3-.png)
 
-
-

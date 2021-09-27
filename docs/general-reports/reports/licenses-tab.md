@@ -27,5 +27,3 @@ These controls appear at the top of the window:
 
 * **Export as CSV**—export issue data in CSV file format.
 
-
-

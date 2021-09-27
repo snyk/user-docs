@@ -6,5 +6,3 @@ Administrators and account owners can:
 * [Copy \(clone\) integrations](clone-an-integration-across-your-snyk-orgs.md)
 * [Delete \(disable\) integrations](disable-a-git-integration.md)
 
-
-

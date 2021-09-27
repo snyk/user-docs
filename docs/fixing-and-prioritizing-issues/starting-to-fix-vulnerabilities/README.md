@@ -10,5 +10,3 @@
 * [Introduction to ignoring issues](introduction-to-ignoring-issues.md)
 * [Merge advice](merge-advice.md)
 
-
-

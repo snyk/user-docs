@@ -73,5 +73,3 @@ The `.snyk` file contains the details of the patch per individual path to the de
        patched: '2017-05-05T12:39:16.961Z'
 ```
 
-
-

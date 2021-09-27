@@ -15,5 +15,3 @@ To create a new organization, choose the ‘Create’ link in the drop-down in t
 
 ![](../../.gitbook/assets/uuid-560a73f5-8861-99db-9d4b-8cdae69d4b72-en.png)
 
-
-

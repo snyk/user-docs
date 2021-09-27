@@ -23,5 +23,3 @@ Snyk Infrastructure as Code supports:
 
 ![4.png](../../.gitbook/assets/4.png)
 
-
-

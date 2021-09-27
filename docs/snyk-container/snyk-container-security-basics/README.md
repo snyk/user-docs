@@ -29,5 +29,3 @@ For example, it’s common to use our CI integrations to provide fast feedback t
 
 Learn more about [container security](https://snyk.io/learn/container-security/).
 
-
-

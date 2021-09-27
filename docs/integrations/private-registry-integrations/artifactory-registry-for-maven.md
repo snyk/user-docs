@@ -43,5 +43,3 @@ Alternatively, you can configure repositories which will be used as additional l
 
 Repositories are configured in the same way as [Mirrors](artifactory-registry-for-maven.md#mirrors), but do not require **Mirror Of**.
 
-
-

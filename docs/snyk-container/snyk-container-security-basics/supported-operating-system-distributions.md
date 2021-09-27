@@ -149,5 +149,3 @@ For beta distributions, vulnerability detection may be affected while we keep on
 * sles:11.1
 * sles:11.0
 
-
-

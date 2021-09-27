@@ -94,5 +94,3 @@ Snyk analyzes the application’s manifest file and correlates the list of depen
 Reports are stored for 14 days before they expire. Subsequent pipeline runs will update the report and reset the retention period.
 {% endhint %}
 
-
-

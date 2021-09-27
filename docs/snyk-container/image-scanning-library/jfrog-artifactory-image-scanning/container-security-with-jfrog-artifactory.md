@@ -7,5 +7,3 @@ Snyk integrates with JFrog Artifactory Container Registry to enable you to impor
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-
-

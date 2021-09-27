@@ -12,5 +12,3 @@
 * [Snyk checks on pull requests](snyk-checks-on-pull-requests.md)
 * [View and understand Snyk upgrade pull requests](view-and-understand-snyk-upgrade-pull-requests.md)
 
-
-

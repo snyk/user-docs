@@ -159,5 +159,3 @@ These controls appear at the top of the window:
 * **Hidden fields**—remove any of the default columns from the display in order to focus on details that are important to your current tasks.
 * **Export as CSV**—export issue data in CSV file format.
 
-
-

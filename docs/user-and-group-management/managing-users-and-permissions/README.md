@@ -8,5 +8,3 @@
 * [Switch between Snyk organization](switch-between-snyk-organization.md)
 * [Audit logs](audit-logs.md)
 
-
-

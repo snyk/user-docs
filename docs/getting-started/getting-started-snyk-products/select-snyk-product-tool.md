@@ -21,5 +21,3 @@ Snyk has several core tools to use with your selected Snyk product:
 * [**Snyk CLI**](https://docs.snyk.io/snyk-cli): the Command Line Interface.
 * [**Snyk API**](https://support.snyk.io/hc/en-us/categories/360000665657-Snyk-API): allows you to programatically integrate with Snyk.
 
-
-

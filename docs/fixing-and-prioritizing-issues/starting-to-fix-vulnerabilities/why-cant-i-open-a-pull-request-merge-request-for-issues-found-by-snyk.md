@@ -4,5 +4,3 @@ You would not necessarily get a Fix PR button for your project whenever you impo
 
 If your project has transitive dependencies that contains vulnerabilities, Snyk would not open PRs against them.
 
-
-

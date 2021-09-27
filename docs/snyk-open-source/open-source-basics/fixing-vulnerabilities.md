@@ -27,5 +27,3 @@ To generate a PR / MR directly from your project, using the Snyk UI:
 
 ![](../../.gitbook/assets/image18.png)
 
-
-

@@ -53,5 +53,3 @@ By default, Snyk scans every pull request submitted on your monitored repositori
 
 See [Enable Snyk test on PRs](https://docs.snyk.io/getting-started/snyk-billing-plan-onboarding/snyk-scm-integration-good-practices) for more details.
 
-
-

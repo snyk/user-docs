@@ -37,5 +37,3 @@ To create automatic links between container images to Dockerfiles stored in brok
 
 Once available, Snyk can use that for linking generation.
 
-
-

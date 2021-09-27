@@ -75,5 +75,3 @@ Read more about the relevant API calls:
 
 There are no settings related to the Priority Score. They have no active impact, so are just extra metadata, so they cannot be disabled or hidden.
 
-
-

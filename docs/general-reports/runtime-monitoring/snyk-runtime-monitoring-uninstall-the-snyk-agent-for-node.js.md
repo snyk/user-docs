@@ -11,5 +11,3 @@ This feature is deprecated.
 2. Remove the `Require` code snippet that you inserted at installation \(and upgrade\).
 3. Commit and push the changes to your manifest file \(for example `package.json`\).
 
-
-

@@ -16,5 +16,3 @@ See also
 * [Authenticate the CLI with your account](https://support.snyk.io/hc/articles/360004499218#UUID-1a9a711e-0e13-7e30-10ed-8eb8fa8fd57a)
 * [Troubleshoot CLI issues](https://support.snyk.io/hc/articles/360003812618#UUID-aa10318d-3714-96cb-0134-0f05d965195a)
 
-
-

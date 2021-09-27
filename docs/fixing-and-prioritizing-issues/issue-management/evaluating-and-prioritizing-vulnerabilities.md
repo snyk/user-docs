@@ -35,5 +35,3 @@ The **Exploit maturity** filter is available from any detailed **Projects** page
    2. View exploit maturity data from the **Issues** list in **Grouped** mode: 
    3. View exploit maturity data from the **Issues** list in **Ungrouped** mode: 
 
-
-

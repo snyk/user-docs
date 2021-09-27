@@ -8,5 +8,3 @@ Click on an entry to view a snapshot of project details for that period:
 
 ![](../../.gitbook/assets/image17.png)
 
-
-

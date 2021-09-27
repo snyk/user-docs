@@ -61,5 +61,3 @@ The value has been removed from the attribute.
 
 ![](../../.gitbook/assets/gs5.png)
 
-
-

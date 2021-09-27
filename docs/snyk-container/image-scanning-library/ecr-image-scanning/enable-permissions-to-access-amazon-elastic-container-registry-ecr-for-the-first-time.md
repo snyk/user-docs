@@ -24,5 +24,3 @@ This process describes how to set up a resource role in AWS and the necessary po
 
 ![](../../../.gitbook/assets/uuid-4b683f44-0a5e-0d13-f369-f7edecf98ce9-en.gif)
 
-
-

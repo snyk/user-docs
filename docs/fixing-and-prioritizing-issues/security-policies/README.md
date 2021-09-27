@@ -6,5 +6,3 @@
 * [Security policies: Actions](security-policies-actions.md)
 * [Security policies: What collaborators see](security-policies-what-collaborators-see.md)
 
-
-

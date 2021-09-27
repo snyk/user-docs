@@ -4,7 +4,7 @@ Enable integration between your deployed AWS Lambda resources and a Snyk organiz
 
 **Automated Process:**
 
-#### [Open the Snyk Security on AWS Guide](https://aws.amazon.com/quickstart/architecture/snyk-security/)
+### [Open the Snyk Security on AWS Guide](https://aws.amazon.com/quickstart/architecture/snyk-security/)
 
 You have the option of establishing cross-account access to enable Snyk's AWS Lambda integration as a 1-click deployment. This options is available as an official [AWS Quick Start](https://aws.amazon.com/quickstart/architecture/snyk-security/) and eliminates the need for manual configuration.
 
@@ -113,6 +113,4 @@ You must be added as a collaborator to the Snyk organization you’d like to wor
 ![](../../.gitbook/assets/uuid-8f54b49d-23ee-637e-45a9-47ca61fe2b9e-en.png)
 
 AWS Lambda integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages in our docs.
-
-
 

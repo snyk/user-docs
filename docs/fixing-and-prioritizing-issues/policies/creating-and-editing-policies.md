@@ -27,5 +27,3 @@ Duplicating a policy will copy over the rules of a policy, but not the assigned 
 
 ![](../../.gitbook/assets/screen_shot_2021-08-11_at_2.11.06_pm.png)
 
-
-

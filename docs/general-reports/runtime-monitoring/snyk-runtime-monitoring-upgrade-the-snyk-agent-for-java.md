@@ -7,5 +7,3 @@ This feature is deprecated.
 1. Download the runtime agent and unzip the archive.
 2. From the extracted files, copy `snyk-java-runtime-agent.jar` and replace the existing one.
 
-
-

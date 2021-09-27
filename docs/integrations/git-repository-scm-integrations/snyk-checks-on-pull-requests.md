@@ -33,5 +33,3 @@ When Snyk tests your pull requests, the following are the possible statuses that
 * **Error** - an error occurs when your manifest file is out of sync, Snyk couldn't read the manifest file, or Snyk couldn't find the manifest file
 * **Canceled** - Snyk test can't run because you've reached your monthly test limit
 
-
-

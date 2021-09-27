@@ -194,5 +194,3 @@ Using the debugging options of third-party tools is not recommended for producti
 
 You can now start scanning your container images directly from your private registry. See [scanning images from container registry](https://docs.snyk.io/snyk-container/jfrog-artifactory-image-scanning/configuring-your-jfrog-artifactory-container-registry-integration) \(Artifactory example\) for more details.
 
-
-

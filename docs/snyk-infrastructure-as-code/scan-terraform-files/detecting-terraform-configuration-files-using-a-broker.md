@@ -89,5 +89,3 @@ docker run --restart=always \
 
 Note that this gives Snyk the ability to query for any `.tf` files. If you would prefer to be stricter you can alter the paths in the examples above to be more restrictive to certain projects or file layouts.
 
-
-

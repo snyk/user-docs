@@ -70,5 +70,3 @@ The actions you take depend on the license conditions and on your policies. For 
 
 See [Licenses](../../snyk-open-source/licenses/).
 
-
-

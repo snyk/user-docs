@@ -96,5 +96,3 @@ Policies are not loaded automatically when the argument to **snyk iac test** is 
 
 The CLI accepts a flag **--ignore-policy**, which will cause any found **.snyk** policy files to be ignored.
 
-
-

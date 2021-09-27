@@ -54,5 +54,3 @@ If you use an integration which saves a snapshot of the installed software on Sn
 
 Learn more about [container security](https://snyk.io/learn/container-security/).
 
-
-

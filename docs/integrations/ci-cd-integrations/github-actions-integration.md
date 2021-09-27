@@ -6,5 +6,3 @@ Snyk offers a set of [GitHub Actions](https://docs.github.com/en/actions/creatin
 [See the Snyk Actions repository for installation and usage instructions](https://github.com/snyk/actions)
 {% endhint %}
 
-
-

@@ -125,5 +125,3 @@ var handleLogFile = filesystem.readFile(generalLogFileName, "utf8", function(err
 
 See [Using Snyk Code \(web\)](https://support.snyk.io/hc/en-us/articles/360017147558#Ignore) for more details of using the Ignore function for Snyk Code.
 
-
-

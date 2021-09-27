@@ -8,5 +8,3 @@
 * [How to install and configure your Snyk Broker client](how-to-install-and-configure-your-snyk-broker-client.md)
 * [Upgrade your Snyk Broker client](upgrade-your-snyk-broker-client.md)
 
-
-

@@ -57,5 +57,3 @@ You can perform the following actions on the issue card:
 * **View more information about the CWE, CVE, and CVSS score**: navigate from the issue card to further information about these scores.
 * **View the Snyk vulnerability database:** navigate to the Snyk vulnerability database about a specific vulnerability from its issue card.
 
-
-

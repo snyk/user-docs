@@ -22,5 +22,3 @@ See also
 * [Test public npm packages before use](https://support.snyk.io/hc/articles/360003812498#UUID-0ab434a8-c1b5-873d-cbf6-7a61a07c4ad8)
 * [Manage vulnerability results with the Snyk CLI wizard](https://support.snyk.io/hc/articles/360003851357#UUID-b401cc8a-a55a-2b74-d9e5-c92dd49ed58c)
 
-
-

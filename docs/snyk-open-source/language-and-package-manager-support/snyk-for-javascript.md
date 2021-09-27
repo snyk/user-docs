@@ -218,5 +218,3 @@ From the Snyk UI, use these parameters to customize your language preferences fo
 2. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Languages**
 3. Click **Edit settings** for JavaScript to configure preferences for your JavaScript \(npm and Yarn\) projects in this organization
 
-
-

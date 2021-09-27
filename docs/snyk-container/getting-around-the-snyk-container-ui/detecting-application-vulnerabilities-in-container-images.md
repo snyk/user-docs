@@ -67,5 +67,3 @@ These are the current limitations of the language support:
 
 Scan only the top level JAR - we do not currently unpack the JAR
 
-
-

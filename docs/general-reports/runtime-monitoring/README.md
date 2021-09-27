@@ -18,5 +18,3 @@ This feature is deprecated.
 * [Snyk runtime: what data is used when monitoring my Java projects?](snyk-runtime-what-data-is-used-when-monitoring-my-node.js-projects.md)
 * [Snyk runtime: deployment metrics](snyk-runtime-deployment-metrics.md)
 
-
-

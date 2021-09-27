@@ -47,5 +47,3 @@ If there is no Dockerfile attached for additional advice, the Dockerfile instruc
 * Issues tab—List of vulnerabilities, including origins, paths, and an overview of the vulnerability
 * Dependencies tab—a tree view of package hierarchy inside the image
 
-
-

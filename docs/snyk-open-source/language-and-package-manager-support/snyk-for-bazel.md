@@ -275,5 +275,3 @@ From this you could construct the following Dep Graph JSON object:
 
 This particular package \(`ch.qos.logback:logback-core@1.0.13`\) contains a vulnerability, described in detail in the resulting JSON response object.
 
-
-

@@ -14,5 +14,3 @@ Assign permissions based on your integration as follows:
 
 After generating the credentials for the Broker's target application, configure the environment variables for launching the Broker.
 
-
-

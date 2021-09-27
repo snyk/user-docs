@@ -27,5 +27,3 @@ Enable integration between one Artifactory instance as a container registry and 
 
 Snyk tests the connection values and the page reloads, now displaying integration details as you entered them. A confirmation message that the details were saved also appears in green at the top of the screen. In addition, if the connection failed, a notification appears.
 
-
-

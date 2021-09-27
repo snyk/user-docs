@@ -6,5 +6,3 @@
 * [Snyk patches to fix](snyk-patches-to-fix.md)
 * [Ignore issues](ignore-issues.md)
 
-
-

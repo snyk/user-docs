@@ -13,5 +13,3 @@
 * [Nexus image scanning](nexus-image-scanning/)
 * [Quay image scanning](quay-image-scanning/)
 
-
-

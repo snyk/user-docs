@@ -40,5 +40,3 @@ Images are indicated with a unique icon ![](../../../.gitbook/assets/uuid-d083d5
 
 Artifactory integration works similarly to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages in our docs.
 
-
-

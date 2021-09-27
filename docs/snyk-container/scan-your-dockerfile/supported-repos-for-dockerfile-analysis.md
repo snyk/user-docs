@@ -6,5 +6,3 @@
 * Bitbucket Cloud
 * Bitbucket Server
 
-
-

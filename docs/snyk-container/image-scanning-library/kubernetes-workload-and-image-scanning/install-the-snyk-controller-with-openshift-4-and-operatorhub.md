@@ -111,5 +111,3 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
 
 ![Example of successful installation from the cluster.](../../../.gitbook/assets/image%20%2840%29.png)
 
-
-

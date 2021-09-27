@@ -29,5 +29,3 @@ The specific item to scan in a target, such as a pom file in a GitHub repo.
 
 The scanning method to use for this project, such as static application security testing \(SAST, for scanning using Snyk Code\) or maven for a maven project using Snyk Open Source\). Part of the configuration for scanning.
 
-
-

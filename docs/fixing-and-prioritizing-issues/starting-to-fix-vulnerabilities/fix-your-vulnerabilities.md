@@ -6,5 +6,3 @@ To apply these fixes, you can use different methods, ranging from manually apply
 
 See [remediate your vulnerabilities](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities) for more details.
 
-
-

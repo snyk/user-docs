@@ -6,5 +6,3 @@ To access your groups and organizations, click on the navigation switcher. The a
 
 Clicking the avatar on the bottom of the switcher will display the organizations within your personal group. \(This may not be visible to you depending on your enterprise’s setup.\)
 
-
-

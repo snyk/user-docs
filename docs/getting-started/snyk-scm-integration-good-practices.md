@@ -295,5 +295,3 @@ To set PR Settings on the project level, overriding the PR settings on the organ
 
 ![](../.gitbook/assets/general-github_integration.png)
 
-
-

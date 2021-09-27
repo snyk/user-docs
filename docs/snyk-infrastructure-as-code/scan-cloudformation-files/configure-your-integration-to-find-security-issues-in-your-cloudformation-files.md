@@ -25,5 +25,3 @@ Scanning CloudFormation provides security feedback on everything that is statica
 
 ![](../../.gitbook/assets/screen_shot_2021-06-22_at_11.44.07.png)
 
-
-

@@ -12,5 +12,3 @@ Results in the CLI update accordingly as well:
 
 ![](../../.gitbook/assets/mceclip1.png)
 
-
-

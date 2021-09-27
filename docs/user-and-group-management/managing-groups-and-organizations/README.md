@@ -8,5 +8,3 @@
 * [Invite and collaborate with team members](invite-and-collaborate-with-team-members.md)
 * [Manage Snyk organizations](manage-snyk-organizations.md)
 
-
-

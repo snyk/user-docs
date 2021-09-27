@@ -1,4 +1,2 @@
 # DigitalOcean image scanning
 
-
-

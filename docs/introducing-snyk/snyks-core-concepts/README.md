@@ -9,5 +9,3 @@ Key concepts for using Snyk products:
 * [Running tests](running-tests.md)
 * [Snyk settings](snyk-settings.md)
 
-
-

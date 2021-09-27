@@ -194,9 +194,9 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
                  --set excludedNamespaces={kube-node-lease,local-path-storage,some_namespace}
     ```
 
-16. If more resources are required in order to deploy the controller,  configure the helm charts default value for requests and limits with the `--set` flag.
+16. If more resources are required in order to deploy the controller, configure the helm charts default value for requests and limits with the `--set` flag.
 
-    ```
+    ```text
     helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
                  --namespace snyk-monitor \
                  --set requests."ephemeral-storage"="50Gi"
@@ -204,8 +204,4 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
     ```
 
 ![](../../../.gitbook/assets/uuid-26f9c2cd-2755-07d5-61a0-bdb0261d87ab-en.gif)
-
-
-
-
 

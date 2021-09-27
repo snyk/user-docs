@@ -124,5 +124,3 @@ You can also set the Org flag in Snyk Config, so you do not need to provide the 
 snyk config set org=
 ```
 
-
-

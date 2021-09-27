@@ -10,5 +10,3 @@ Snyk currently supports the ability to create Fix Pull Requests \(Fix PRs\) or M
 * [Maven](https://support.snyk.io/hc/en-us/articles/360003817357-Snyk-for-Java-Gradle-Maven-)
 * [Python](https://docs.snyk.io/snyk-open-source/language-and-package-manager-support/snyk-for-python)
 
-
-

@@ -25,5 +25,3 @@ GitHub container registry imports are indicated with a unique icon, and you can 
 
 ![](../../../.gitbook/assets/mceclip1-5-.png)
 
-
-

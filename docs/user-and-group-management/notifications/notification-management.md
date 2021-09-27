@@ -26,5 +26,3 @@ As well as being able to tailor the emails you get about issues, you can also cu
 
 ![](../../.gitbook/assets/uuid-0adf4f70-019d-008a-9bde-82317eba2e44-en.png)
 
-
-

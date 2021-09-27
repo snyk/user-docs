@@ -17,5 +17,3 @@ From this window, you can access and work with the following:
 | Snyk controller versions | Check the version of the Snyk controller that you've installed on your clusters from this area. |
 | Disconnect from Kubernetes | To remove this integration from this organization, click Disconnect. |
 
-
-

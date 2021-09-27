@@ -6,5 +6,3 @@
 * [Working with Kubernetes configuration file test results](working-with-kubernetes-configuration-file-test-results.md)
 * [Detecting Kubernetes configuration files using a broker](../detecting-infrastructure-as-code-files-using-a-broker.md)
 
-
-

@@ -94,5 +94,3 @@ This allows you to establish a security gate and prevent pull requests from addi
 
 For more details on PR checks see the article on our [GitHub integration](../../integrations/git-repository-scm-integrations/github-integration.md).
 
-
-

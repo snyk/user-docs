@@ -2,5 +2,3 @@
 
 * [Notification management](notification-management.md)
 
-
-

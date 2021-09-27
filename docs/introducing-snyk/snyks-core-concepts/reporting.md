@@ -19,5 +19,3 @@ The Licenses area displays all licenses that are currently used in your project,
 
 See [Licenses tab](https://docs.snyk.io/reports-1/reports/licenses-tab).
 
-
-

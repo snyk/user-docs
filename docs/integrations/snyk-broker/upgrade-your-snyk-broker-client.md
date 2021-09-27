@@ -4,5 +4,3 @@ Snyk regularly updates the Broker client in order to provide new features, bug f
 
 When upgrading your broker there may be some new rules added that Snyk requires to function correctly. Therefore, you will need to re-initialize your API allow-list. If you added or removed any rules to [customize your allow-list](https://github.com/snyk/broker#custom-approved-listing-filter) \(for example, to support files greater in size than 1Mb\), you will need to re-apply these changes to the new allow-list.
 
-
-

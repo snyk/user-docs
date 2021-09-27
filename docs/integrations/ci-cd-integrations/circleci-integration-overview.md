@@ -49,5 +49,3 @@ Optionally, if the build completes successfully and MONITOR is set to True in th
 
 ![](../../.gitbook/assets/uuid-ce212e67-b7ac-3cf7-4772-c84f6897aed9-en.png)
 
-
-

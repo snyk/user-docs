@@ -104,5 +104,3 @@ Snyk will now continuously monitor each of those functions for known vulnerabili
 **NOTE**  
 for Node.js and .Net, dev dependencies will be ignored.
 
-
-

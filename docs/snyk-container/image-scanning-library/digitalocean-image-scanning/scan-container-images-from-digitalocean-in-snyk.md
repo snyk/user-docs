@@ -25,5 +25,3 @@ DigitalOcean imports are indicated with a unique icon, and you can also filter t
 
 ![](../../../.gitbook/assets/mceclip0-11-.png)
 
-
-

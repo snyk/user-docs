@@ -7,5 +7,3 @@ The basics of Snyk Open Source:
 * [Fix pull requests for known vulnerabilities \(backlog\)](fix-pull-requests-for-known-vulnerabilities-backlog.md)
 * [Integrate Snyk into your workflow](integrate-snyk-into-your-workflow.md)
 
-
-

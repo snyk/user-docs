@@ -30,5 +30,3 @@ In case you are using a self-hosted Quay registry, contact us to provide you wit
 Snyk tests the connection values and the page reloads, now displaying Quay integration information, and the **Add your Quay images to Snyk** button becomes available. In case the connection to Quay failed, notification appears under the **Connected to Quay** section.  
 Now you can use Snyk to scan your images from Quay.
 
-
-

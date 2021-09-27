@@ -8,5 +8,3 @@ Just before you deploy, run `snyk monitor` in your project directory. This takes
 
 Log in and go to [snyk.io/monitor](https://app.snyk.io/monitor/) to see the latest snapshot and history of your project.
 
-
-

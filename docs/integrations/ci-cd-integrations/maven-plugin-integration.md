@@ -10,5 +10,3 @@ Snyk offers a [Maven plugin](https://github.com/snyk/snyk-maven-plugin), that's 
 * The monitor goal records the state of dependencies and any vulnerabilities on `snyk.io` so you can be alerted when new vulnerabilities or updates/patches are disclosed that affect your repositories.
 * Running `mvn snyk:test or mvn snyk:monitor` will run the desired goals \(either test or monitor\) outside the Maven build lifecycle.
 
-
-

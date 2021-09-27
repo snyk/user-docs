@@ -18,5 +18,3 @@ Organization filters can be created, saved, and selected quickly via the **Organ
 
 ![](../../.gitbook/assets/screen_shot_2021-07-02_at_2.05.50_pm.png)
 
-
-

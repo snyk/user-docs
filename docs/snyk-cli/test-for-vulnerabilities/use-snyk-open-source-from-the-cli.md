@@ -75,5 +75,3 @@ $ snyk test --dev
 Additional and more specific details are provided per language, in [Language support](https://support.snyk.io/hc/en-us/categories/360000456257-Language-package-manager-support).
 {% endhint %}
 
-
-

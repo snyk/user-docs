@@ -15,5 +15,3 @@ Enable integration between an ACR registry and a Snyk organization, and start ma
 
 ![](../../../.gitbook/assets/image%20%289%29.png)
 
-
-

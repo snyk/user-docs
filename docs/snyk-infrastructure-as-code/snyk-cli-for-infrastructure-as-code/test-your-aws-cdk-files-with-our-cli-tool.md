@@ -24,5 +24,3 @@ Scan the created json file using the Snyk IaC CLI, replacing with the name of yo
 snyk iac test cdk.out/.json
 ```
 
-
-

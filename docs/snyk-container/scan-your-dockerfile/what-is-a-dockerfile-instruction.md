@@ -8,5 +8,3 @@ This shows the line in the Dockerfile which introduces the vulnerability.
 
 There is no need to perform any action.
 
-
-

@@ -130,5 +130,3 @@ DEBUG=*snyk* snyk fix
 
 This provides a very verbose output that can help diagnose issues or can be sent to Snyk for debugging.
 
-
-

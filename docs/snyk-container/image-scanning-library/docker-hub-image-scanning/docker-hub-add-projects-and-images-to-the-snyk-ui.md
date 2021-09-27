@@ -33,5 +33,3 @@ Once repositories and images are imported, a confirmation appears in green at th
 
 Docker Hub integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages in our docs.
 
-
-

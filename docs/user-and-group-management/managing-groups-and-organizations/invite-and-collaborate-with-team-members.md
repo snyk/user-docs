@@ -21,5 +21,3 @@ An organization can have multiple administrators. When you create an organizatio
 You will always be the administrator of your default organization, and you can’t leave or delete this organization.
 {% endhint %}
 
-
-

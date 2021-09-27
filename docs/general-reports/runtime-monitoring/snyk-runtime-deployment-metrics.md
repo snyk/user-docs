@@ -40,5 +40,3 @@ The following table describes Snyk agent deployment metrics based on different s
   </tbody>
 </table>
 
-
-

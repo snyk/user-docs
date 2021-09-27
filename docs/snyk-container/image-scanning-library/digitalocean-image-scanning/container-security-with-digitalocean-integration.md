@@ -30,5 +30,3 @@ For the connection to succeed, make sure you have a repository in DigitalOcean.
 Snyk tests the connection values and the page reloads, now displaying DigitalOcean integration information, and the **Add your DigitalOcean images to Snyk** button becomes available. In case the connection to DigitalOcean failed, notification appears under the **Connected to DigitalOcean** section.  
 Now you can use Snyk to scan your images from DigitalOcean.
 
-
-

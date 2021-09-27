@@ -110,5 +110,3 @@ To ignore certain files and directories \(for example, **node\_modules**\), crea
 * We recommend adding the file when there is no **.gitignore** file. This will significantly reduce the files that need to be uploaded and speed up the analysis.
 * To quickly add the default **.dcignore** file use the command provided by VS Code and the Snyk extension: Snyk create .dcignore file and save the newly created .dcignore file.
 
-
-

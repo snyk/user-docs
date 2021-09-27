@@ -24,5 +24,3 @@ Once you have installed the Snyk agent to monitor your projects at runtime, Snyk
 | List of all packages loaded at runtime | Package name |  |
 |  | Version | Package version |
 
-
-

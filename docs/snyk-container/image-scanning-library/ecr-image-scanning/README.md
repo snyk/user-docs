@@ -1,4 +1,2 @@
 # ECR image scanning
 
-
-

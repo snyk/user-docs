@@ -72,5 +72,3 @@ As soon as you’ve added the projects to Snyk, Snyk will test them and begin to
 
 Snyk will now continuously monitor each of those projects for known vulnerabilities. You can add more projects at any time.
 
-
-

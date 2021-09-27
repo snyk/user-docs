@@ -13,5 +13,3 @@ Most of the vulnerabilities in our database originate from one of these sources:
 
 For every issue deemed to be a real vulnerability, we assign the right CVSS \(severity\) score and package version specification, create an advisory, and make it available in the product.
 
-
-

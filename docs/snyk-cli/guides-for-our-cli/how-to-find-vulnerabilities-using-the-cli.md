@@ -4,5 +4,3 @@ Join us on our YouTube channel and subscribe to our [How to playlist](https://ww
 
 {% embed url="https://youtu.be/xp\_LtchEkT8" caption="" %}
 
-
-

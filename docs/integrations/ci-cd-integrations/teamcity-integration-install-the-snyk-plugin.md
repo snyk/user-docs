@@ -18,5 +18,3 @@ You must sign up for an account with Snyk before you begin.
 
 ![](../../.gitbook/assets/uuid-fe65f4bc-9578-016c-00dd-6ddb97d2ead7-en.png)
 
-
-

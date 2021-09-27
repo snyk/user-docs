@@ -205,5 +205,3 @@ For code agent, add the following environment variables to the **docker run** co
 -e HTTPS_PROXY=http://my.proxy.address:8080
 ```
 
-
-

@@ -12,5 +12,3 @@ This is similar to the **Dockerfile instruction** \(see [What is a Dockerfile In
 There is no need to perform any action.
 {% endhint %}
 
-
-

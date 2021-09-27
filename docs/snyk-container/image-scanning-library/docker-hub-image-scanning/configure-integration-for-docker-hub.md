@@ -12,5 +12,3 @@ Enable integration between Docker Hub and Snyk, and start managing your vulnerab
 
 ![](../../../.gitbook/assets/mceclip0-12-1-%20%281%29.png)
 
-
-

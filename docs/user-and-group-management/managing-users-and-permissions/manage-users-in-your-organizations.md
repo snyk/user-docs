@@ -69,5 +69,3 @@ Sorting users is available with the following criteria:
 * Role
 * Date joined
 
-
-

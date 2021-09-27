@@ -55,5 +55,3 @@ patch:
 
 However, only a single path is required, as `@snyk/protect` will attempt to patch all applicable instances of the vulnerable dependency.
 
-
-

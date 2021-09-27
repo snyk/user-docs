@@ -145,5 +145,3 @@ These controls appear at the top of the window:
 
 **Summary filters**—mark the issues to be displayed by selecting the relevant issue type and then click the list arrow again to close it.
 
-
-

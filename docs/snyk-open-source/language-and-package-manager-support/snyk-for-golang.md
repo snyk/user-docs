@@ -95,5 +95,3 @@ In order to build the dependency tree Snyk analyzes the `Gopkg.lock` files in th
 
 In order to build the dependency tree Snyk analyzes the `vendor/vendor.json` files in the selected repository.
 
-
-

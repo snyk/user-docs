@@ -109,5 +109,3 @@ Click **Full details** to see more information about this vulnerability:
 
 Cick the code link to open the source code file directly, then make changes to fix this vulnerability.
 
-
-

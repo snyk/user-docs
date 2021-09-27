@@ -107,5 +107,3 @@ After the plugin is installed, you can set the following configurations for the 
 * **Snyk Code Security issues**: analyse the project for security vulnerabilities in your application code using Snyk Code. Enabled by default.
 * **Snyk Code Quality issues**: analyse the project for quality issues in your application code using Snyk Code. Disabled by default.
 
-
-

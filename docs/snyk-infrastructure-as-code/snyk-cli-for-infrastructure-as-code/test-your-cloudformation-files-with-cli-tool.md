@@ -28,5 +28,3 @@ You can also specify multiple files by appending the file names after each other
 snyk iac test file-1.yaml file-2.yaml
 ```
 
-
-
