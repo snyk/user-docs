@@ -1,16 +1,14 @@
 # Scan and fix security issues in Helm Charts
 
-Snyk scans Helm Charts, in addition to Kubernetes configuration files, for misconfigurations and security issues. Once Helm Charts are scanned, Snyk creates projects for each template and dependency template, generates reports on any misconfigurations, and makes recommendations for fixing them.
+In addition to scanning Kubernetes configuration files for misconfigurations and security issues, Snyk has support for templating Helm charts and scanning the resultant manifests. This templating functionality is only available when importing repositories via the Snyk UI. Please see the below sections for prerequisites and guidance on how to scan templated Helm charts using the Snyk CLI. Once Helm charts are scanned, Snyk creates projects for each template and dependency template, generates reports on any misconfigurations, and makes recommendations for fixing them.
 
 ## Prerequisites
 
 * An administrator should [connect your organization](../scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess.md) with your preferred Git repository and enable detection of configuration files as described.
-* The repository should follow the [standard Chart directory structure](https://helm.sh/docs/topics/charts/#the-chart-file-structure). Specifically we look for:
-  * `Chart.yaml` - YAML file containing information about the chart
-  * `values.yaml` - The default configuration values for this chart
-  * `templates/` - A directory of templates that, when combined with values will generate valid Kubernetes manifest files.
-  * `Values` - An optional directory of values that used to configure different environments.
-  * `requirements.yaml` - Optional file - Additional way to declare dependencies
+* The repository should follow the [standard Chart directory structure](https://helm.sh/docs/topics/charts/#the-chart-file-structure).
+* We currently only support templating Helm charts using the default values file, `values.yaml`. If you want to scan particular configurations of Helm values, then the supported workflow is to template the chart outside of Snyk and scan the manifests as regular Kubernetes files.
+  * Helm charts that cannot be templated from their default values file are currently unsupported.
+* Any chart dependencies must either be publicly downloadable from the configured Helm repository, or be found in the same git repository as the chart under test.
 
 ## Scan and fix your Charts
 
@@ -23,6 +21,23 @@ Snyk scans Helm Charts, in addition to Kubernetes configuration files, for misco
    1. Projects that were created from external dependencies will also be scanned and issues shown.
 
 ![](../../.gitbook/assets/screenshot_2020-04-24_at_08.51.18.png)
+
+## Testing custom Helm values configurations
+
+Sometimes, testing a chart using only the default values isn’t enough. Snyk does not currently support passing custom values into imports. This section is intended to offer guidance on how to template custom configurations outside of Snyk, and scan the resultant Kubernetes manifests.
+
+You can use the Snyk CLI and Helm in conjunction:
+
+```bash
+cd /path/to/helm/chart
+helm dependency update
+helm template . --output-dir out
+snyk iac test out/
+```
+
+You can pass standard Helm values flags \(e.g. `--set` and/or -`-values`\) to `helm template` in order to test a non-default configuration.
+
+You can script this process and run it in a CLI pipeline, or alternatively helm-template files into a repository that can be imported into Snyk as projects.
 
 {% hint style="success" %}
 Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
