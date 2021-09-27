@@ -19,7 +19,5 @@ How does Snyk determine if a vulnerability is trending?
 See [Snyk Priority Score](https://docs.snyk.io/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score) for more information on how vulnerabilities are prioritized by Snyk
 {% endhint %}
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

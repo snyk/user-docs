@@ -10,7 +10,5 @@
 * [Test your Helm Charts with our CLI tool](test-your-helm-charts-with-our-cli-tool.md)
 * [Understanding configuration scan issues](understanding-configuration-scan-issues.md)
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

@@ -214,7 +214,5 @@ python: '3.7.2'
 
 This example tells Snyk to use a recent version of Python 3, but Snyk will not use the exact minor and patch version specified.
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

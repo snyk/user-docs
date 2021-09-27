@@ -24,7 +24,5 @@ Our free subscription plan allows you to send up to 200 pending invitations ever
 
 An organization can have multiple administrators. When you create an organization, you will automatically be an administrator on this organization. If you want to downgrade to collaborator, or leave this organization, the organization has to have at least one other administrator.
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

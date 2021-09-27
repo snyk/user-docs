@@ -16,7 +16,5 @@ You can also link from a Dockerfile to all container images built from it. This 
 
 See [Base image detection](https://docs.snyk.io/snyk-container/getting-around-the-snyk-container-ui/base-image-detection) for more details about detecting vulnerable base images and remediation recommendations
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

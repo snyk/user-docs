@@ -27,7 +27,5 @@ Duplicating a policy will copy over the rules of a policy, but not the assigned 
 
 ![](../../.gitbook/assets/screen_shot_2021-08-11_at_2.11.06_pm.png)
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

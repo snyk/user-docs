@@ -8,7 +8,5 @@
 * [How to install and configure your Snyk Broker client](how-to-install-and-configure-your-snyk-broker-client.md)
 * [Upgrade your Snyk Broker client](upgrade-your-snyk-broker-client.md)
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

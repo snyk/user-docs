@@ -8,7 +8,5 @@
 * [Prerequisites for Dockerfile analysis](prerequisites-for-dockerfile-analysis.md)
 * [Adding your Dockerfile and test your base image](adding-your-dockerfile-and-test-your-base-image.md)
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

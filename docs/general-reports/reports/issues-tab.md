@@ -232,7 +232,5 @@ Only 2000 issues can be generated at once. The number of issues you’re current
 
 **View issues ungrouped/View issues grouped**—toggle between views. When viewing “grouped”, each issue appears once only, grouping together all affected projects; when viewing “ungrouped”, each issue appears once per project that is affected by it.
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

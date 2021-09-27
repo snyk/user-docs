@@ -50,7 +50,5 @@ And for each vulnerability in a project:
 
 See [Getting started](https://docs.snyk.io/getting-started) documentation for more details of using Snyk.
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

@@ -18,7 +18,5 @@ Snyk supports Node.js v8 and above.
 
 3. Commit and push the changes to your manifest file \(for example package.json\).
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

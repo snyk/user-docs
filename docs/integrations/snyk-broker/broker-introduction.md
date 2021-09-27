@@ -68,7 +68,5 @@ See [Language support](https://support.snyk.io/hc/en-us/categories/360000456257-
 
 When set up, developers can use Snyk Broker to enable standard Snyk product usage \(such as Snyk Open Source\), with the Broker validating all in / outbound requests, based on the approved list.
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

@@ -38,7 +38,5 @@ The unchecked organization\(s\) will now revert back to the default policy.
 1. Assign the relevant organization to a new policy 
 2. The organization will automatically disassociate from the [default policy](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/shared-policies-overview) and move to the newly selected policy
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

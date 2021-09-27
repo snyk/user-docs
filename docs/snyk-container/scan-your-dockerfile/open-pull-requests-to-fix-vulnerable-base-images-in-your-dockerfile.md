@@ -40,7 +40,5 @@ The feature is available for all of our users. It is on by default for all free 
 
 ![](../../.gitbook/assets/auto-detect-dockerfiles.png)
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

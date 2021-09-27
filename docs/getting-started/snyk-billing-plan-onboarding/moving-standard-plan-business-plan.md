@@ -53,7 +53,5 @@ To get help, navigate to snyk.io and use the help agent in the bottom right corn
 
 Make sure you provide an email address to help our team communicate with you. Or email support@snyk.io directly. Note that some issues may have a longer response time.
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

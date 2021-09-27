@@ -20,7 +20,5 @@ The Snyk runtime agent does the following:
 3. Using these hooks, the agent detects the actual use of vulnerable functions.
 4. The agent sends this data in beacons to Snyk, adding relevant data to the Snyk project.
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

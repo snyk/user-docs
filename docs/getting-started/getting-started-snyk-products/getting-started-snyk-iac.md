@@ -61,7 +61,5 @@ Act on the recommendations produced by Snyk IaC.
 
 See [Infrastructure as Code](https://docs.snyk.io/snyk-infrastructure-as-code).
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

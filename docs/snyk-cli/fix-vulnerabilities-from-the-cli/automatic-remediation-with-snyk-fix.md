@@ -130,7 +130,5 @@ DEBUG=*snyk* snyk fix
 
 This provides a very verbose output that can help diagnose issues or can be sent to Snyk for debugging.
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

@@ -49,7 +49,5 @@ Use the following guides to learn how to implement and begin using Snyk at your 
 * [Org admin](https://snyk.gitbook.io/org-set-up/)- learn how to configure settings at the organization level
 * [Developers](https://snyk.gitbook.io/dev-training/) - learn how to use Snyk from the Snyk web app, in the CLI, in an IDE, or directly from your source code manager
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

@@ -113,7 +113,5 @@ The AI engine can analyze the following in your code:
 * **Control Flow**: identifies null dereference or race conditions by modeling each possible control flow in the application.
 * **Point-to Analysis**: identifies multiple possible issues including from buffer overruns, null dereferences, and type mismatches, by modeling the usage of memory in variables and references.
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

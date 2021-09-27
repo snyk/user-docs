@@ -36,7 +36,5 @@ In this screenshot you can see the highlighted line represents the identified is
 
 ![Screenshot\_2020-08-07\_at\_14.27.04.png](../../.gitbook/assets/screenshot_2020-08-07_at_14.27.04.png)
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

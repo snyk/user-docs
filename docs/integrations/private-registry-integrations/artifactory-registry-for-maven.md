@@ -43,7 +43,5 @@ Alternatively, you can configure repositories which will be used as additional l
 
 Repositories are configured in the same way as [Mirrors](artifactory-registry-for-maven.md#mirrors), but do not require **Mirror Of**.
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

@@ -326,7 +326,5 @@ A security vulnerability, identified by Snyk. See [Remediate your vulnerabilitie
 
 A way for an app to provide other applications with real-time information. Snyk uses webhooks to check changes in code.
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

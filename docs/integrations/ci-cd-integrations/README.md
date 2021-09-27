@@ -20,7 +20,5 @@
 * [TeamCity integration: install the Snyk plugin](teamcity-integration-install-the-snyk-plugin.md)
 * [TeamCity configuration parameters](teamcity-configuration-parameters.md)
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

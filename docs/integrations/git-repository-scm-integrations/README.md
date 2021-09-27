@@ -12,7 +12,5 @@
 * [Snyk checks on pull requests](snyk-checks-on-pull-requests.md)
 * [View and understand Snyk upgrade pull requests](view-and-understand-snyk-upgrade-pull-requests.md)
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

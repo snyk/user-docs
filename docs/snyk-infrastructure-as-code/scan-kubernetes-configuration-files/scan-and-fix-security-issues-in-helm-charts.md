@@ -39,7 +39,5 @@ You can pass standard Helm values flags \(e.g. `--set` and/or -`-values`\) to `h
 
 You can script this process and run it in a CLI pipeline, or alternatively helm-template files into a repository that can be imported into Snyk as projects.
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

@@ -4,7 +4,5 @@ Join us on our YouTube channel and subscribe to our [How to playlist](https://ww
 
 {% embed url="https://youtu.be/xp\_LtchEkT8" caption="" %}
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

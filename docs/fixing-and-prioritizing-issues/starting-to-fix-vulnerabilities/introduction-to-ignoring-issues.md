@@ -16,7 +16,5 @@ In the Snyk CLI, you can ignore issues using **snyk ignore**. For example:
 
 `snyk ignore --id='npm:braces:20180219' --expiry='2018-04-01' --reason='testing'`
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

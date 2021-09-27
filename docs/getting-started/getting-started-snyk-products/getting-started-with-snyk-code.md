@@ -82,7 +82,5 @@ Click **Full Details** on an issue to view more details about it, such as:
 * [Developer-first SAST with Snyk Code](https://snyk.io/blog/developer-first-sast-with-snyk-code/)
 * [SAST vs DAST](https://snyk.io/learn/sast-vs-dast/)
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

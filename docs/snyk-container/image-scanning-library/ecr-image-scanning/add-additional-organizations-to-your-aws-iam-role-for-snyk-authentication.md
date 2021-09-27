@@ -24,7 +24,5 @@ Once you've created an AWS IAM role for Snyk, you can add additional organizatio
 
    `"c2fa1651-601d-41gc-abe9-03691f5287d8"` = the ID for the Org from which you are currently setting up the integration
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

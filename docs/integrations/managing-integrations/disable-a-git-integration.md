@@ -10,7 +10,5 @@ If you choose to disconnect, your credentials will be removed from Snyk and any 
 
 If you choose to re-enable this integration at any time, you need to re-enter your credentials and activate your projects.
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

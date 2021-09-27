@@ -54,7 +54,5 @@ Enter as many repositories as needed, and click "Import X repository/ies".
 
 ![](../../.gitbook/assets/screenshot_2020-07-03_at_08.01.52.png)
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

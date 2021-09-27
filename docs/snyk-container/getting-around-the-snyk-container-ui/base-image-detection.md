@@ -25,7 +25,5 @@ See [Analysis and remediation for your images from the Snyk app](https://docs.sn
 
 You can find the base image vulnerabilities in your project, among the vulnerabilities added by your instructions, sorted by their priority score. You can also filter only the base image vulnerabilities, with the **Base image** option under the **Image Layer** handy filter. See [image layer information](image-layer-information.md) for more details.
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

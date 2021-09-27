@@ -96,7 +96,5 @@ See [Fixing vulnerabilities](https://docs.snyk.io/snyk-open-source/open-source-b
 
 See [Snyk Open Source](https://docs.snyk.io/snyk-open-source).
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

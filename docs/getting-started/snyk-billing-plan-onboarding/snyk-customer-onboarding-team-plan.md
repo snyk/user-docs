@@ -69,7 +69,5 @@ You can customize the emails all your organization’s members receive, and indi
 * [Notification management](https://docs.snyk.io/user-and-group-management/notifications/notification-management)
 * [How to configure your Snyk notification settings](https://www.youtube.com/watch?v=MyLgmcHUrL4&list=PLkgGOmXHS2S3txqFVxiVNVt2AYIXmaH6c&index=5) \(video\)
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 

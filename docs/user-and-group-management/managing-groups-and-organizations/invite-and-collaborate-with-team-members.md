@@ -21,7 +21,5 @@ An organization can have multiple administrators. When you create an organizatio
 You will always be the administrator of your default organization, and you can’t leave or delete this organization.
 {% endhint %}
 
-{% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)
-{% endhint %}
+
 
