@@ -2,7 +2,7 @@
 
 Next, we will add another **Action** and name it **Validate payload**:
 
-![](../../../../.gitbook/assets/zappier-validate-payload-main.png)
+![](../../../../../.gitbook/assets/zappier-validate-payload-main.png)
 
 
 
@@ -10,11 +10,11 @@ Let's define our **Action Event** as **Run Javascript**:
 
 
 
-![](../../../../.gitbook/assets/zappier-validate-payload-script.png)
+![](../../../../../.gitbook/assets/zappier-validate-payload-script.png)
 
 Configure your action to include **body** and **signature** as shown below:
 
-![](../../../../.gitbook/assets/zappier-validate-payload-setup.png)
+![](../../../../../.gitbook/assets/zappier-validate-payload-setup.png)
 
 In the **Code** section, copy and paste the following snippet:
 
@@ -41,5 +41,5 @@ try {
 
 Test your action:
 
-![](../../../../.gitbook/assets/zappier-validate-payload-test.png)
+![](../../../../../.gitbook/assets/zappier-validate-payload-test.png)
 

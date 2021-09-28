@@ -36,5 +36,5 @@ To github.com:snyk-partners/snyk-circleci-eks.git
 
 #### Pipeline success
 
-![](../../../.gitbook/assets/circleci_success.png)
+![](../../../../.gitbook/assets/circleci_success.png)
 

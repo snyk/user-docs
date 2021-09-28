@@ -1,12 +1,12 @@
 # DevSecOps with Bitbucket Cloud
 
-![](../../../.gitbook/assets/finding-open-source-vulnerabilities-within-the-bitbucket-workflow-.png)
+![](../../../../.gitbook/assets/finding-open-source-vulnerabilities-within-the-bitbucket-workflow-.png)
 
 Join [Snyk](https://snyk.io/) and [Atlassian](https://www.atlassian.com/) for this _**hands-on virtual workshop**_ where we will guide you on implementing security best-practices early on in your workflow to build an automated and **secure** [Continuous Integration \(CI\)](https://www.atlassian.com/continuous-delivery/continuous-integration) & [Continuous Delivery \(CD\)](https://www.atlassian.com/continuous-delivery) pipeline.
 
 ## Welcome!
 
-![](../../../.gitbook/assets/mm.png)
+![](../../../../.gitbook/assets/mm.png)
 
 You will begin this workshop as the newest member of a Mythical 500 company: **Mythical Mysfits**. It's your first day in the office and your predecessor\(s\) hastily \(i.e. manually\) deployed an "enterprise-ready" piece of software for group collaboration: [goof](https://github.com/snyk/goof). According to your colleagues, _goof_ became wildly popular as _"The BESTest todo app evar"_. You, however, are skeptical. Fortunately, your company also recently purchased Snyk and Atlassian Bitbucket Cloud!
 
@@ -14,7 +14,7 @@ In this workshop, you will learn patterns for shift-left security leveraging [At
 
 ## Learning Objectives
 
-![](../../../.gitbook/assets/snyk-bitbucket-flow.png)
+![](../../../../.gitbook/assets/snyk-bitbucket-flow.png)
 
 * Understand [Software Composition Analysis \(SCA\)](https://snyk.io/blog/what-is-software-composition-analysis-sca-and-does-my-company-need-it/) and its importance in your developer workflows.
 * Discover vulnerabilities in your application open source dependencies.

@@ -1,6 +1,6 @@
 # GitHub
 
-![](../../.gitbook/assets/snykgh.jpg)
+![](../../../.gitbook/assets/snykgh.jpg)
 
 ## Welcome!
 

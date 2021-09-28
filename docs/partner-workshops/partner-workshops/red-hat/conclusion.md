@@ -1,6 +1,6 @@
 # Conclusion
 
-![](../../.gitbook/assets/logo-solid-background.png)
+![](../../../.gitbook/assets/logo-solid-background.png)
 
 In these exercises, you were able to accomplish the following:
 

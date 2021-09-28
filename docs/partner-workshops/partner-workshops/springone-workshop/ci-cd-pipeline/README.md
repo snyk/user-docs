@@ -6,7 +6,7 @@ Each step of the SDLC moves your application closer to production, and these ste
 
 GitHub workflow diagram:
 
-![](../../../.gitbook/assets/github_workflow_diagram_56-.png)
+![](../../../../.gitbook/assets/github_workflow_diagram_56-.png)
 
 ### Workshop exercises
 

@@ -2,7 +2,7 @@
 
 ## Setting up your Atlassian account
 
-![](../../../../.gitbook/assets/bitbucket-signup.png)
+![](../../../../../.gitbook/assets/bitbucket-signup.png)
 
 ### I do not have an Atlassian account
 

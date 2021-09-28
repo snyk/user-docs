@@ -2,17 +2,17 @@
 
 Next, create another action and name it **Format issues**:
 
-![](../../../../.gitbook/assets/zappier-format-issues-main.png)
+![](../../../../../.gitbook/assets/zappier-format-issues-main.png)
 
 Select **Run Javascript** as the **Action Event**:
 
-![](../../../../.gitbook/assets/zappier-format-issues-script.png)
+![](../../../../../.gitbook/assets/zappier-format-issues-script.png)
 
 
 
 Be sure to add **body** in the **Input Data** section:
 
-![](../../../../.gitbook/assets/zappier-format-issues-setup.png)
+![](../../../../../.gitbook/assets/zappier-format-issues-setup.png)
 
 Copy and paste the snippet into the **Code** field:
 
@@ -34,5 +34,5 @@ try {
 
 Test the action:
 
-![](../../../../.gitbook/assets/zappier-format-issues-test.png)
+![](../../../../../.gitbook/assets/zappier-format-issues-test.png)
 

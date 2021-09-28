@@ -2,7 +2,7 @@
 
 ## Setting up your Snyk account
 
-![](../../../../.gitbook/assets/snyk-signup.png)
+![](../../../../../.gitbook/assets/snyk-signup.png)
 
 ### I do not have a Snyk account
 

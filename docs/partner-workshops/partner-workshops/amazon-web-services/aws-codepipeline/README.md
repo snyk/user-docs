@@ -1,6 +1,6 @@
 # AWS CodePipeline
 
-![](../../../.gitbook/assets/image.png)
+![](../../../../.gitbook/assets/image.png)
 
 Snyk integrates seamlessly with AWS CodePipeline to scan your application for open source security vulnerabilities and help you deliver secure applications via continuous delivery service. This integration allows CodePipeline users to make security an automated part of their build, test, and deploy phases.
 

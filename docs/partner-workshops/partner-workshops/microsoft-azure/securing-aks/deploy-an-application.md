@@ -40,7 +40,7 @@ Note that `EXTERNAL-IP` displays a status of `pending`. Wait until this displays
 
 Your browser should resolve and display the following:
 
-![](../../../.gitbook/assets/azure_voting_app.png)
+![](../../../../.gitbook/assets/azure_voting_app.png)
 
 ## 
 

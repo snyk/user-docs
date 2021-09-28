@@ -6,7 +6,7 @@ DevSecOps is the Venn diagram of IT. It represents where the developer, security
 
 While this is the panacea and an incredible feat to accomplish, the reality is most enterprise organizations have a considerable amount of internal change to consider such a goal. In addition, DevSecOps is in its early stages of being formed, much like containers in 2015, and many of the best practices and thought leadership, if you will, are still developing.
 
-![DevSecOps](../../.gitbook/assets/venn_devsecops.png)
+![DevSecOps](../../../.gitbook/assets/venn_devsecops.png)
 
 ## What is the DevSecOps Workshop?
 

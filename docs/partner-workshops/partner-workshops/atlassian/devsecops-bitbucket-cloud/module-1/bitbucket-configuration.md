@@ -15,7 +15,7 @@ To create an app password:
 
 You will need the following permissions:
 
-![](../../../../.gitbook/assets/bitbucket-api-token.png)
+![](../../../../../.gitbook/assets/bitbucket-api-token.png)
 
 * Account: `read`
 * Team membership: `read`
@@ -30,7 +30,7 @@ You will need to define [repository variables](https://support.atlassian.com/bit
 
 These will consist of the following:
 
-![](../../../../.gitbook/assets/bitubucket-repo-vars.png)
+![](../../../../../.gitbook/assets/bitubucket-repo-vars.png)
 
 1. Amazon EKS name of your cluster: `AWS_EKS_CLUSTER`
 2. Snyk API token for authenticating with your Snyk account: `SNYK_TOKEN`

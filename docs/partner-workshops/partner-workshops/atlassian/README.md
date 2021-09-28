@@ -6,7 +6,7 @@ weight: 1
 
 # Atlassian
 
-![](../../.gitbook/assets/atlassian-header-2048x512.png)
+![](../../../.gitbook/assets/atlassian-header-2048x512.png)
 
 
 

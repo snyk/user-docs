@@ -1,6 +1,6 @@
 # Secure Kubernetes
 
-![](../../../.gitbook/assets/snykk8s.png)
+![](../../../../.gitbook/assets/snykk8s.png)
 
 In this module, we will provide some hands-on examples on how to deploy [Dynatrace ActiveGate](https://www.dynatrace.com/support/help/setup-and-configuration/dynatrace-activegate/) as well as [Snyk Monitor for Kubernetes Helm Chart](https://artifacthub.io/packages/helm/snyk/snyk-monitor) into an existing Kubernetes cluster. You will then be guided on how to import your Kubernetes project into Snyk and correlate findings in Dynatrace with remediation advice in Snyk.
 

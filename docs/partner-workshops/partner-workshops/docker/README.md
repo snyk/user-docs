@@ -6,7 +6,7 @@ description: >-
 
 # Docker
 
-![](../../.gitbook/assets/dockerheader-2.png)
+![](../../../.gitbook/assets/dockerheader-2.png)
 
 ## Welcome!
 

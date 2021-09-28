@@ -15,7 +15,7 @@ In order to complete the exercises in this workshop, you will need both a [Micro
 
 At the conclusion of this module, you will have a functional deployment of AKS. The following reference architecture is indicative of what you will build:
 
-![](../../../.gitbook/assets/snyk-aks.jpg)
+![](../../../../.gitbook/assets/snyk-aks.jpg)
 
 ## 
 

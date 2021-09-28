@@ -1,6 +1,6 @@
 # Snyk Connector
 
-![](../../.gitbook/assets/container-intergration.png)
+![](../../../.gitbook/assets/container-intergration.png)
 
 ## About this guide.
 

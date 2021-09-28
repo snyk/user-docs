@@ -4,7 +4,7 @@ description: Build an IDE plugin that incorporates Snyk scanning
 
 # IDE plugin
 
-![](../../.gitbook/assets/licenting-blog.png)
+![](../../../.gitbook/assets/licenting-blog.png)
 
 ## About this guide <a id="61b934b4-4251-42a2-89a8-bee72600ab8a"></a>
 

@@ -34,7 +34,7 @@ When successfully completed, you will see output similar to the following:
 
 You can also validate the creation of the resource group in the Azure portal as illustrate below:
 
-![](../../../.gitbook/assets/azure_resource_groups_01.png)
+![](../../../../.gitbook/assets/azure_resource_groups_01.png)
 
 #### Create the AKS cluster
 
@@ -56,15 +56,15 @@ Once the deployment completes the CLI will return a lengthy JSON response contai
 
 _**Figure 1**_
 
-![](../../../.gitbook/assets/azure_resource_groups_02.png)
+![](../../../../.gitbook/assets/azure_resource_groups_02.png)
 
 _**Figure 2**_
 
-![](../../../.gitbook/assets/azure_resource_groups_03.png)
+![](../../../../.gitbook/assets/azure_resource_groups_03.png)
 
 _**Figure 3**_
 
-![](../../../.gitbook/assets/azure_resource_groups_04.png)
+![](../../../../.gitbook/assets/azure_resource_groups_04.png)
 
 #### Connect to the cluster
 

@@ -10,13 +10,13 @@ You can use any tool of your choice. For these examples, we are using [Postman](
 
 Create the webhook:
 
-![](../../../.gitbook/assets/postman-create-webhook.png)
+![](../../../../.gitbook/assets/postman-create-webhook.png)
 
 List the webhook:
 
-![](../../../.gitbook/assets/postman-list-webhook.png)
+![](../../../../.gitbook/assets/postman-list-webhook.png)
 
 Ping the webhook:
 
-![](../../../.gitbook/assets/postman-ping-webhook.png)
+![](../../../../.gitbook/assets/postman-ping-webhook.png)
 

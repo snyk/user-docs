@@ -4,7 +4,7 @@
 
 Visit [https://snyk.io](https://snyk.io) and log in.
 
-![](../../.gitbook/assets/snyk_login_01.png)
+![](../../../.gitbook/assets/snyk_login_01.png)
 
 ### Yes, it's really free
 

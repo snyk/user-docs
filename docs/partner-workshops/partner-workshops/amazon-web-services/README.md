@@ -1,6 +1,6 @@
 # Amazon Web Services
 
-![](../../.gitbook/assets/aws-header-2-2048x521.png)
+![](../../../.gitbook/assets/aws-header-2-2048x521.png)
 
 Snyk is an AWS Partner Network \(APN\) [Advanced Technology Partner](https://aws.amazon.com/partners/find/partnerdetails/?n=Snyk&id=0010L00001kXlYOQA0). 
 

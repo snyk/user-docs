@@ -1,6 +1,6 @@
 # Dynatrace
 
-![](../../.gitbook/assets/snyk-dynatrace.png)
+![](../../../.gitbook/assets/snyk-dynatrace.png)
 
 [Dynatrace](https://www.dynatrace.com/) enables organizations to digitally transform faster, smarter, and easier by simplifying cloud complexity with Software Intelligence – observability, automation, AI, and cloud-native application security in one platform.
 

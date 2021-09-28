@@ -49,7 +49,7 @@ When ready, commit and merge your changes to trigger the workflow run.
 
 When the workflow runs, the output will be displayed in your CircleCI project run. The job fails because issues are found in the `main.tf` file scanned.
 
-![Snyk Orb output in the CircleCI UI](../../../.gitbook/assets/iac-job-run-fail.png)
+![Snyk Orb output in the CircleCI UI](../../../../.gitbook/assets/iac-job-run-fail.png)
 
 {% hint style="info" %}
 Visit [Understanding configuration scan issues in the Snyk Docs](https://support.snyk.io/hc/en-us/articles/360012499738-Understanding-configuration-scan-issues) to learn more about interpreting the output of the Snyk IAC CLI powering the Snyk Orb.
@@ -59,11 +59,11 @@ Visit [Understanding configuration scan issues in the Snyk Docs](https://support
 
 Import your fork of the `learn-iac` repo to the Snyk UI using the GitHub integration. Visit the [Snyk IAC documentation](https://support.snyk.io/hc/en-us/articles/360011018938-Configure-your-integration-to-find-security-issues-in-your-Terraform-files) to learn how. Once imported, you'll see the manifest files in the Snyk UI.
 
-![](../../../.gitbook/assets/imported-iac-project.png)
+![](../../../../.gitbook/assets/imported-iac-project.png)
 
 Clicking on the `main.tf` file will show you an in-line view of the issues found, with additional information such as the impact of the configuration and how to fix it.
 
-![](../../../.gitbook/assets/iac-result-details.png)
+![](../../../../.gitbook/assets/iac-result-details.png)
 
 In the next section we'll show how you can tune this analysis to adjust the test's pass/fail criteria.
 

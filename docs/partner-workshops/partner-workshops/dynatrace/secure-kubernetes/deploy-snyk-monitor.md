@@ -8,7 +8,7 @@ Please review the **prerequisites** section of [product documentation page](http
 
 From the Snyk web console, navigate to `Integrations`. Search and select `Kubernetes`. Click `Connect` and copy the `Integration ID` to your clipboard. The `Integration ID` will be a UUID with a format similar to `abcd1234-abcd-1234-abcd-1234abcd1234`.
 
-![](../../../.gitbook/assets/snyk_integrations_01.png)
+![](../../../../.gitbook/assets/snyk_integrations_01.png)
 
 ### Install the Snyk controller
 
@@ -98,11 +98,11 @@ Note that Snyk Monitor will require outbound internet access.
 
 From the Kubernetes integration menu, select the **Add your Kubernetes workloads to Snyk** button.
 
-![](../../../.gitbook/assets/snyk-k8s-config-01.png)
+![](../../../../.gitbook/assets/snyk-k8s-config-01.png)
 
 Then select the desired workloads and click **Add selected workloads**.
 
-![](../../../.gitbook/assets/snyk-k8s-import-01.png)
+![](../../../../.gitbook/assets/snyk-k8s-import-01.png)
 
 Your project will be scanned and results available in the **Projects** menu.
 
