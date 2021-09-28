@@ -44,7 +44,7 @@ Snyk will test any newly created pull request in your repositories for security 
 
 This is how Snyk pull request checks appear in the Pull Request page in GitHub:
 
-![](../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en%20%282%29%20%282%29%20%286%29%20%285%29%20%284%29.png)
+![](../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en%20%282%29%20%282%29%20%286%29%20%285%29%20%284%29%20%281%29.png)
 
 You can review and adjust the pull request tests settings by navigating to the GitHub's Integration **Settings** page in Snyk \(Settings --&gt; Integration --&gt; GitHub\):
 

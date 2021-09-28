@@ -15,7 +15,7 @@ Snyk scans CloudFormation code for misconfigurations and security issues. For co
 
 * Re-import repositories if testing occurred before the infrastructure as code feature was enabled in order to detect the CloudFormation code:
 
-![](../../.gitbook/assets/screenshot_2020-07-09_at_12.44.03%20%281%29%20%281%29%20%283%29%20%283%29%20%282%29%20%284%29.png)
+![](../../.gitbook/assets/screenshot_2020-07-09_at_12.44.03%20%281%29%20%281%29%20%283%29%20%283%29%20%282%29%20%284%29%20%281%29.png)
 
 * Every time a repository is scanned:
   * Every CloudFormation file is imported as a separate project, grouped together per repository, similar to this example:

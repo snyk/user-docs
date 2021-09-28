@@ -4,7 +4,7 @@ Once you have imported your preferred Git repositories, Snyk monitors those repo
 
 Snyk currently supports this feature for npm, Yarn and Maven-Central projects through GitHub, GitHub Enterprise Server and BitBucket Cloud. For use with the Broker, your admin should first upgrade to v4.55.0 or later. See our docs for additional assistance when upgrading Broker.
 
-![](../../.gitbook/assets/image%20%288%29%20%282%29%20%284%29%20%284%29%20%284%29%20%286%29%20%283%29%20%281%29%20%283%29.png)
+![](../../.gitbook/assets/image%20%288%29%20%282%29%20%284%29%20%284%29%20%284%29%20%286%29%20%283%29%20%281%29%20%283%29%20%281%29.png)
 
 ## How it works
 

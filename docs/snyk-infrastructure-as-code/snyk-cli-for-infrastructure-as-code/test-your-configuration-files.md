@@ -2,10 +2,19 @@
 
 With Snyk Infrastructure as Code, you can test your configuration files directly from the CLI.
 
+You can scan Kubernetes, Terraform & CloudFormation files using the CLI.
+
+You can scan both your Kubernetes and Terraform files using the CLI.
+
 You can scan both your Kubernetes and Terraform files using the CLI.
 
 You can find more detailed information here
 
+* [Terraform](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-terraform-files-with-the-cli-tool)
+* [Kubernetes](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kubernetes-files-with-our-cli-tool)
+* [CloudFormation](test-your-cloudformation-files-with-cli-tool.md)
+* [Terraform](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-terraform-files-with-the-cli-tool)
+* [Kubernetes](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kubernetes-files-with-our-cli-tool)
 * [Terraform](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-terraform-files-with-the-cli-tool)
 * [Kubernetes](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kubernetes-files-with-our-cli-tool)
 
@@ -15,6 +24,10 @@ Earlier versions by default will send the configuration files to Snyk to be proc
 {% endhint %}
 
 You can use the CLI as follows:
+
+Where the examples show `main.tf` you can replace this for your filename e.g. `deployment.yaml`
+
+Where the examples show \`main.tf\` you can replace this for your filename e.g. \`deployment.yaml\`
 
 Where the examples show \`main.tf\` you can replace this for your filename e.g. \`deployment.yaml\`
 
