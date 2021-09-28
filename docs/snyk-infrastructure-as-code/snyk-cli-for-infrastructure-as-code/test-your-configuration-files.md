@@ -4,19 +4,11 @@ With Snyk Infrastructure as Code, you can test your configuration files directly
 
 You can scan Kubernetes, Terraform & CloudFormation files using the CLI.
 
-You can scan both your Kubernetes and Terraform files using the CLI.
-
-You can scan both your Kubernetes and Terraform files using the CLI.
-
 You can find more detailed information here
 
 * [Terraform](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-terraform-files-with-the-cli-tool)
 * [Kubernetes](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kubernetes-files-with-our-cli-tool)
 * [CloudFormation](test-your-cloudformation-files-with-cli-tool.md)
-* [Terraform](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-terraform-files-with-the-cli-tool)
-* [Kubernetes](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kubernetes-files-with-our-cli-tool)
-* [Terraform](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-terraform-files-with-the-cli-tool)
-* [Kubernetes](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kubernetes-files-with-our-cli-tool)
 
 {% hint style="info" %}
 As of version 1.594.0 all configuration files are processed locally, ensuring that they do not leave your machine.  
@@ -26,10 +18,6 @@ Earlier versions by default will send the configuration files to Snyk to be proc
 You can use the CLI as follows:
 
 Where the examples show `main.tf` you can replace this for your filename e.g. `deployment.yaml`
-
-Where the examples show \`main.tf\` you can replace this for your filename e.g. \`deployment.yaml\`
-
-Where the examples show \`main.tf\` you can replace this for your filename e.g. \`deployment.yaml\`
 
 ## To test for an issue on specified files:
 
@@ -106,7 +94,7 @@ snyk iac test main.tf --sarif-file-output=snyk.sarif
 ## To only display issues above a specific severity level:
 
 ```text
-snyk iac test  --severity-threshold=
+snyk iac test  --severity-threshold=medium
 ```
 
 For example, from the CLI enter the following:
@@ -122,7 +110,7 @@ This will only display to the terminal results that have a severity value of med
 You can control the severity settings of your security rules at the organisation level in the Snyk UI. By targeting a specific organisation in your CLI tests, you can determine which rules should be run and the severity of them.
 
 ```text
-snyk iac test  --org=
+snyk iac test  --org=infrastructure
 ```
 
 For example, from the CLI enter the following:
@@ -134,6 +122,6 @@ snyk iac test main.tf --org=infrastructure
 You can also set the Org flag in Snyk Config, so you do not need to provide the flag each time
 
 ```text
-snyk config set org=
+snyk config set org=infrastructure
 ```
 
