@@ -1,38 +1,42 @@
-# Understanding configuration scan issues
+# Understanding the CLI Output
 
 Snyk analyzes your provided configuration file for issues and provides advice on how to resolve the issue directly from the CLI.
 
-For example - scanning a Kubernetes file
+For example - scanning a Terraform file:
 
 ```text
-snyk iac test privilegedDeployment.yaml
+snyk iac test aws_api_gateway_stage_logging.tf
 ```
 
 could give an output as follows
 
-![](../../.gitbook/assets/screenshot_2020-08-25_at_11.18.45.png)
+![](../../.gitbook/assets/screenshot-2021-09-28-at-19.58.22.png)
 
-This example is of output from a Kubernetes file, but this guide applies to any file format including Terraform.
+This example is of output from a Terraform file, but this guide applies to any file format including Kubernetes or CloudFormation.
 
 ## List of vulnerabilities—sorted by severity, where each is detailed as follows:
 
-**A clear heading line** - specifying the issue that has been detected, the severity of that issue and the Snyk code for that particular issue
+**A clear heading line** - specifying the issue that has been detected, the severity of that issue and the Snyk Policy Id for that particular issue.
 
-**Location** - the path at which the issue has been identified. See below for a detailed example.
-
-**Description** - an explanation of the issue and its associated impact
+**Location** - the property path within the configuration file at which the issue has been identified. See the example below for more details.
 
 ## **As an example:**
 
-![](../../.gitbook/assets/issue.png)
+![](../../.gitbook/assets/screenshot-2021-09-28-at-20.00.36.png)
 
-The path of this issue is specified as
+The path of this issue is specified as:
 
 ```text
- input > spec > template > spec > containers[snyk-deployment2] > securityContext > privileged
+resource > aws_api_gateway_stage[denied] > access_log_settings
 ```
 
-In this screenshot you can see the highlighted line represents the identified issue.
+In the following code you can see that line 1 represents the contents of the `aws_api_gateway_stage` block named "denied" which is missing the `access_log_settings` field.
 
-![Screenshot\_2020-08-07\_at\_14.27.04.png](../../.gitbook/assets/screenshot_2020-08-07_at_14.27.04.png)
+{% code title="aws\_api\_gateway\_stage\_logging.tf" %}
+```text
+resource "aws_api_gateway_stage" "denied" {
+  xray_tracing_enabled = true
+}
+```
+{% endcode %}
 
