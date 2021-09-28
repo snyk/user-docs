@@ -1,8 +1,8 @@
 # Parsing an input file
 
-It can be difficult to understand the internal representation of your input files as you write your Rego code. As we will see when we learn [how to write a rule](writing-a-rule.md), the `input` object is treated like a JSON object, but the input files may be YAML or Terraform. Rego can scan these files, but to help with writing the Rego from scratch, we have provided a `parse` command.
+It can be difficult to understand the internal representation of your input files as you write your Rego code. As we will see when we learn [how to write a rule](writing-a-rule.md),  the input value is a JSON-like object but the input files could also be YAML or Terraform. To help understand how these are translated into JSON we have provided a `parse` command.
 
-You will need an IaC file to use as an input file. This input file can also be used when [testing the rules](testing-a-rule.md), but for now it is helpful to write your rules.
+You will need an IaC file to use as an input file. This input file can also be used when [testing the rules](testing-a-rule.md).
 
 For example, the following Terraform file:
 
@@ -42,5 +42,11 @@ This prints out the JSON, which you can use as guidance for writing your rules:
 		}
 	}
 }
+```
+
+In Rego, accessing the `node_type` would look like: 
+
+```text
+input.resource.aws_redshift_cluster.example.node_type
 ```
 
