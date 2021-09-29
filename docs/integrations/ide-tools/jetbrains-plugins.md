@@ -67,6 +67,10 @@ And then there's this way \(click to zoom in since the text is apparently tiny h
 
 ![If it doesn&apos;t say this, that&apos;s a problem.](../../.gitbook/assets/screen-shot-2021-09-29-at-4.07.22-pm.png)
 
+Now, sometimes bad things happen and we can't authenticate. When that happens, run snyk auth from the command line and you should get the very same authentication screen as above. Screenshots are good though, so here's another one:
+
+![If this doesn&apos;t work, I&apos;ll have to talk to my engineers and get back to you.](../../.gitbook/assets/screen-shot-2021-09-29-at-3.57.26-pm.png)
+
 ## Run an analysis
 
 {% hint style="info" %}
