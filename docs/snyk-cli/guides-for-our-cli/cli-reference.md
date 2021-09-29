@@ -102,6 +102,8 @@ If vulnerabilities do not have a fix and this option is being used, tests will p
 
 `-- [COMPILER_OPTIONS]` Pass extra arguments directly to Gradle or Maven. E.g. `snyk test -- --build-cache`
 
+`|| true` Sets the exit code of the scan to 0. Can be used to continue with a CI/CD pipeline even when there are vulnerabilities.
+
 Below are flags that are influencing CLI behavior for specific projects, languages, and contexts:
 
 ### Maven options <a id="Maven-options"></a>
