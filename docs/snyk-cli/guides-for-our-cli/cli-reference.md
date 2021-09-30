@@ -70,7 +70,7 @@ Default: 4 \(the current working directory and 3 sub-directories\)
 
 `$ snyk config set org=ORG_NAME`
 
-Setting a default will ensure all newly monitored projects will be created under your default organization. If you need to override the default, you can use the `--org=ORG_NAME` argument. Default: uses `ORG_NAME` that sets as default in your [Account settings](https://app.snyk.io/account)\`\`
+Setting a default will ensure all newly monitored projects will be created under your default organization. If you need to override the default, you can use the `--org=ORG_NAME` argument. Default: uses `ORG_NAME` that sets as default in your [Account settings](https://app.snyk.io/account)
 
 `--file=FILE` Sets a package file. When testing locally or monitoring a project, you can specify the file that Snyk should inspect for package information. When omitted Snyk will try to detect the appropriate file for your project.
 
@@ -81,6 +81,8 @@ Setting a default will ensure all newly monitored projects will be created under
 `--show-vulnerable-paths=none|some|all` Display the dependency paths from the top-level dependencies, down to the vulnerable packages. Doesn't affect output when using JSON `--json` output. Default: some \(a few example paths shown\) false is an alias for none.
 
 `--project-name=PROJECT_NAME` Specify a custom Snyk project name.
+
+`--target-reference=TARGET_REFERENCE` A reference to separate this project from other scans of the same project. For example, a branch name or version. Projects using the same reference can be used for grouping.
 
 `--policy-path=PATH_TO_POLICY_FILE` Manually pass a path to a Snyk policy file.
 
