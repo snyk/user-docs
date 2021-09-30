@@ -82,7 +82,7 @@ Setting a default will ensure all newly monitored projects will be created under
 
 `--project-name=PROJECT_NAME` Specify a custom Snyk project name.
 
-\`\`--policy-path=PATH\_TO\_POLICY\_FILE\`\`\` Manually pass a path to a Snyk policy file.
+`--policy-path=PATH_TO_POLICY_FILE` Manually pass a path to a Snyk policy file.
 
 `--json` Prints result in JSON format.
 
