@@ -25,9 +25,9 @@ JetBrains plugin versions: we support plugin versions from version 2020.2 on.
 * For Snyk Code, current supported languages are JavaScript, TypeScript and Java. However you can install the plugin on any of the IDEs \(such as RubyMine\) and we would analyze the JavaScript, TypeScript and Java files.
 * If the CLI is already installed on the machine, the plugin will use the token provided to it, otherwise, you’ll need to provide the authentication token via the plugin authentication mechanism.
 
-## **How to install the plugin**
+## **Install the plugin**
 
-The installation is done via the IDE:
+The installation is done via the IDE plugins catalog/library:
 
 1. Open the **Preferences** window from the IDE.
 2. Navigate to the **Plugins** tab.
@@ -41,11 +41,6 @@ The installation is done via the IDE:
 ## Authentication
 
 The first time it is needed, the plugin automatically downloads the CLI in the background. There are a few ways to authenticate once the plugin is installed:
-
-1. Open the command line
-2. Type in `snyk auth`
-3. 
-And then there's this way \(click to zoom in since the text is apparently tiny here\):
 
 * After the plugin installs, you are prompted to connect because the authentication fails.
 
@@ -67,7 +62,18 @@ And then there's this way \(click to zoom in since the text is apparently tiny h
 
 ![If it doesn&apos;t say this, that&apos;s a problem.](../../.gitbook/assets/screen-shot-2021-09-29-at-4.07.22-pm.png)
 
-Now, sometimes bad things happen and we can't authenticate. When that happens, run snyk auth from the command line and you should get the very same authentication screen as above. Screenshots are good though, so here's another one:
+### Add token manually
+
+1. Produce token here [https://app.snyk.io/account](https://app.snyk.io/account)
+2. **\[JetBrains IDE\] &gt;&gt; Preferences &gt;&gt; Tools &gt;&gt; Snyk**
+3. Paste or enter the token under **Connect IDE to Snyk**
+4. Click **Apply or OK**
+
+![](../../.gitbook/assets/screen-shot-2021-09-30-at-8.10.21-am.png)
+
+### Manually authenticating
+
+Now, sometimes bad things happen and we can't authenticate. When that happens, run `snyk auth` from the command line and you should get the very same authentication screen as above.
 
 ![If this doesn&apos;t work, I&apos;ll have to talk to my engineers and get back to you.](../../.gitbook/assets/screen-shot-2021-09-29-at-3.57.26-pm.png)
 
