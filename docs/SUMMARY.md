@@ -57,6 +57,7 @@
     * [Protect your code with patches](snyk-cli/secure-your-projects-in-the-long-term/protect-your-code-with-patches.md)
     * [Monitor your projects at regular intervals](snyk-cli/secure-your-projects-in-the-long-term/monitor-your-projects-at-regular-intervals.md)
   * [Advanced failing of builds in Snyk CLI](snyk-cli/advanced-failing-of-builds-in-snyk-cli.md)
+  * [Grouping projects by branch or version](snyk-cli/grouping-projects-by-branch-or-version.md)
 * [Snyk Open Source](snyk-open-source/README.md)
   * [Open Source basics](snyk-open-source/open-source-basics/README.md)
     * [Fixing vulnerabilities](snyk-open-source/open-source-basics/fixing-vulnerabilities.md)

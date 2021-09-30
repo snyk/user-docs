@@ -82,7 +82,7 @@ Setting a default will ensure all newly monitored projects will be created under
 
 `--project-name=PROJECT_NAME` Specify a custom Snyk project name.
 
-`--target-reference=TARGET_REFERENCE` \(only in `monitor` command\) A reference to separate this project from other scans of the same project. For example, a branch name or version. Projects using the same reference can be used for grouping.
+`--target-reference=TARGET_REFERENCE` \(only in `monitor` command\) A reference to separate this project from other scans of the same project. For example, a branch name or version. Projects using the same reference can be used for grouping. [More information](../grouping-projects-by-branch-or-version.md).
 
 `--policy-path=PATH_TO_POLICY_FILE` Manually pass a path to a Snyk policy file.
 
