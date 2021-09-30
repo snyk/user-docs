@@ -25,9 +25,9 @@ JetBrains plugin versions: we support plugin versions from version 2020.2 on.
 * For Snyk Code, current supported languages are JavaScript, TypeScript and Java. However you can install the plugin on any of the IDEs \(such as RubyMine\) and we would analyze the JavaScript, TypeScript and Java files.
 * If the CLI is already installed on the machine, the plugin will use the token provided to it, otherwise, you’ll need to provide the authentication token via the plugin authentication mechanism.
 
-## **How to install the plugin**
+## **Install the plugin**
 
-The installation is done via the IDE:
+The installation is done via the IDE plugins catalog/library:
 
 1. Open the **Preferences** window from the IDE.
 2. Navigate to the **Plugins** tab.
@@ -40,17 +40,42 @@ The installation is done via the IDE:
 
 ## Authentication
 
-The first time it is needed, the plugin automatically downloads the CLI in the background.
+The first time it is needed, the plugin automatically downloads the CLI in the background. There are a few ways to authenticate once the plugin is installed:
 
-1. After the plugin installs, you are prompted to authenticate.
-2. Click **Connect IntelliJ to Snyk**. The plugin relies on the Snyk CLI, which authenticates you against Snyk’s web application.
-3. Click **Authenticate** when prompted by Snyk.
-4. After authentication you see a confirmation message for successful authentication.
-5. Close the browser window and return to the IDE. The IDE then reads and saves the authentication on your local machine. 
-6. In the IDE, you can select which Snyk products to use \(Snyk Open Source, Snyk Code or both\). 
-7. You can start the analysis by pressing the **Analyze now!** button:
+* After the plugin installs, you are prompted to connect because the authentication fails.
 
-![](../../.gitbook/assets/analyze-now.png)
+![Authentication fails, must connect to Snyk.](../../.gitbook/assets/screen-shot-2021-09-29-at-3.54.42-pm.png)
+
+* Click **Connect Your IDE to Snyk**. The plugin relies on the Snyk CLI, which authenticates you against Snyk’s web application.
+* Click **Authenticate** when prompted by Snyk.
+
+![Gotta authenticate to get that sweet, sweet API/CLI/Org ID/token goodness.](../../.gitbook/assets/screen-shot-2021-09-29-at-4.04.29-pm.png)
+
+* After authentication you will see a confirmation message for the successful authentication because otherwise, how would you know?
+
+![This is that confirmation message we talked about.](../../.gitbook/assets/screen-shot-2021-09-29-at-4.05.55-pm.png)
+
+* Close the browser window and return to the IDE because if you don't, the IDE will sit waiting like a little kid after soccer practice for his or her ride home.
+* The IDE then reads and saves the authentication on your local machine. 
+* In the IDE, you can select which Snyk products to use \([Snyk Open Source](../../snyk-open-source/), [Snyk Advisor](https://snyk.io/advisor/) or [Snyk Code](../../snyk-code/) can be enabled later in configuration\). 
+* You can start the analysis by pressing the **Analyze now!** button:
+
+![If it doesn&apos;t say this, that&apos;s a problem.](../../.gitbook/assets/screen-shot-2021-09-29-at-4.07.22-pm.png)
+
+### Add token manually
+
+1. Produce token here [https://app.snyk.io/account](https://app.snyk.io/account)
+2. **\[JetBrains IDE\] &gt;&gt; Preferences &gt;&gt; Tools &gt;&gt; Snyk**
+3. Paste or enter the token under **Connect IDE to Snyk**
+4. Click **Apply or OK**
+
+![](../../.gitbook/assets/screen-shot-2021-09-30-at-8.10.21-am.png)
+
+### Manually authenticating
+
+Now, sometimes bad things happen and we can't authenticate. When that happens, run `snyk auth` from the command line and you should get the very same authentication screen as above.
+
+![If this doesn&apos;t work, I&apos;ll have to talk to my engineers and get back to you.](../../.gitbook/assets/screen-shot-2021-09-29-at-3.57.26-pm.png)
 
 ## Run an analysis
 

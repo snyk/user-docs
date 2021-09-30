@@ -70,7 +70,7 @@ Default: 4 \(the current working directory and 3 sub-directories\)
 
 `$ snyk config set org=ORG_NAME`
 
-Setting a default will ensure all newly monitored projects will be created under your default organization. If you need to override the default, you can use the `--org=ORG_NAME` argument. Default: uses `ORG_NAME` that sets as default in your [Account settings](https://app.snyk.io/account)\`\`
+Setting a default will ensure all newly monitored projects will be created under your default organization. If you need to override the default, you can use the `--org=ORG_NAME` argument. Default: uses `ORG_NAME` that sets as default in your [Account settings](https://app.snyk.io/account)
 
 `--file=FILE` Sets a package file. When testing locally or monitoring a project, you can specify the file that Snyk should inspect for package information. When omitted Snyk will try to detect the appropriate file for your project.
 
@@ -82,7 +82,9 @@ Setting a default will ensure all newly monitored projects will be created under
 
 `--project-name=PROJECT_NAME` Specify a custom Snyk project name.
 
-\`\`--policy-path=PATH\_TO\_POLICY\_FILE\`\`\` Manually pass a path to a Snyk policy file.
+`--target-reference=TARGET_REFERENCE` \(only in `monitor` command\) A reference to separate this project from other scans of the same project. For example, a branch name or version. Projects using the same reference can be used for grouping.
+
+`--policy-path=PATH_TO_POLICY_FILE` Manually pass a path to a Snyk policy file.
 
 `--json` Prints result in JSON format.
 
@@ -101,6 +103,8 @@ If vulnerabilities do not have a fix and this option is being used, tests will p
 `--dry-run` \(only in `protect` command\) Don't apply updates or patches during `protect` command run.
 
 `-- [COMPILER_OPTIONS]` Pass extra arguments directly to Gradle or Maven. E.g. `snyk test -- --build-cache`
+
+`|| true` Sets the exit code of the scan to 0. Can be used to continue with a CI/CD pipeline even when there are vulnerabilities.
 
 Below are flags that are influencing CLI behavior for specific projects, languages, and contexts:
 
