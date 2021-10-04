@@ -1,4 +1,4 @@
-# General reports
+# Reports
 
 {% page-ref page="reports/" %}
 

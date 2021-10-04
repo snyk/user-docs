@@ -1,4 +1,4 @@
-# Snyk API info
+# Snyk API
 
 Our API docs live at [Snyk API](https://docs.snyk.io/snyk-api-info).
 
