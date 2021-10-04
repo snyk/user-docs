@@ -2,10 +2,10 @@
 
 ## Testing your SPC applications
 
-From the root directory of the SPC application,  execute the Synk command below. The Snyk test command will test your dependencies for vulnerabilities and tell you how many vulnerabilities are found.
+From the root directory of the SPC application, execute the Synk command below. The Snyk test command will test your dependencies for vulnerabilities and tell you how many vulnerabilities are found.
 
 ```text
-snyk test 
+snyk test
 ```
 
 {% hint style="info" %}
@@ -13,7 +13,7 @@ Synk CLI offers a number of switches for specific use cases and formatting of ou
 {% endhint %}
 
 {% hint style="info" %}
-Since we did not build the application the scan will take longer. This will take ~2 mins. If we packaged the application the scan will take 30 seconds. 
+Since we did not build the application the scan will take longer. This will take ~2 mins. If we packaged the application the scan will take 30 seconds.
 {% endhint %}
 
 ### Results of running Snyk test

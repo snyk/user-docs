@@ -1,14 +1,14 @@
 # Working with repos
 
-### Background
+## Background
 
 {% hint style="info" %}
-If you haven't already done so, you are encouraged to [`clone`](https://github.com/snyk-partners/snyk-azure-resources.git) or [`fork`](https://github.com/snyk-partners/snyk-azure-resources/fork) the repository for these workshops as these will be necessary to complete some of the following steps. 
+If you haven't already done so, you are encouraged to [`clone`](https://github.com/snyk-partners/snyk-azure-resources.git) or [`fork`](https://github.com/snyk-partners/snyk-azure-resources/fork) the repository for these workshops as these will be necessary to complete some of the following steps.
 {% endhint %}
 
-In this section, we will work with the [`az repos list`](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/repos?view=azure-cli-latest) command to query our `git clone` url. We will then  add our Azure Repo as an `upstream` repository and `git push` our code.
+In this section, we will work with the [`az repos list`](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/repos?view=azure-cli-latest) command to query our `git clone` url. We will then add our Azure Repo as an `upstream` repository and `git push` our code.
 
-#### Create the project
+### Create the project
 
 From the terminal, run the following command:
 
@@ -47,7 +47,7 @@ This should output JSON similar to the following:
 ]
 ```
 
-#### Connect to the repo
+### Connect to the repo
 
 We recommend using SSH. The following steps will walk you through the necessary steps to set this up. You may opt to use HTTPS, but we will not provide steps for connecting with that method. You can read more about how to [authenticate access with personal access tokens](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page) or using [Git Credential Managers to authenticate to Azure Repos](https://docs.microsoft.com/en-us/azure/devops/repos/git/set-up-credential-managers?view=azure-devops) for alternatives.
 
@@ -65,7 +65,7 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 Use the email address used to authenticate to your Azure portal.
 {% endhint %}
 
-When prompted to enter a file to save your key, **DO NOT** accept the default file location of `/Users/you/.ssh/id_rsa`. Instead, provide a unique file name for your key such as `/Users/you/.ssh/id_rsa_azure`.  Next you will be prompted to provide a secure passphrase:
+When prompted to enter a file to save your key, **DO NOT** accept the default file location of `/Users/you/.ssh/id_rsa`. Instead, provide a unique file name for your key such as `/Users/you/.ssh/id_rsa_azure`. Next you will be prompted to provide a secure passphrase:
 
 ```text
 > Enter passphrase (empty for no passphrase): [Type a passphrase]
@@ -107,7 +107,7 @@ pbcopy < ~/.ssh/id_rsa_azure.pub
 
 With the steps above completed, you are ready to [add the public key to Azure DevOps Services](https://docs.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops&tabs=current-page#step-2--add-the-public-key-to-azure-devops-servicestfs).
 
-#### Git submodules
+### Git submodules
 
 The source repository containing the sample code and templates we are providing contains a `submodule` that references a dependent project. When you cloned this repository it contained a `.gitmodules` file that points to the `app/redis` directory. This will appear empty until you run a couple of [`git submodule`](https://git-scm.com/book/en/v2/Git-Tools-Submodules) commands.
 
@@ -136,7 +136,7 @@ Cloning into '/Users/you/git/snyk-azure-resources/app/redis'...
 Submodule path 'app/redis': checked out '9a598d433acf8fbf3d1f07223c164b3bd7ead3b3'
 ```
 
-#### Cloning the repo
+### Cloning the repo
 
 After identifying which repository in our project we will use, we will invoke the [`az repos show`](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/repos?view=azure-cli-latest#ext-azure-devops-az-repos-show) command to provide details of a specific Git repository. From the terminal, let's run the following command:
 
@@ -159,10 +159,10 @@ git remote -v
 You should see output similar to the following:
 
 ```text
-azure	git@ssh.dev.azure.com:v3/myOrganizationName/MySnykProject/MySnykProject (fetch)
-azure	git@ssh.dev.azure.com:v3/myOrganizationName/MySnykProject/MySnykProject (push)
-origin	git@github.com:myGitHub/snyk-azure-resources.git (fetch)
-origin	git@github.com:myGitHub/snyk-azure-resources.git (push)
+azure    git@ssh.dev.azure.com:v3/myOrganizationName/MySnykProject/MySnykProject (fetch)
+azure    git@ssh.dev.azure.com:v3/myOrganizationName/MySnykProject/MySnykProject (push)
+origin    git@github.com:myGitHub/snyk-azure-resources.git (fetch)
+origin    git@github.com:myGitHub/snyk-azure-resources.git (push)
 ```
 
 Now, we are ready to run our first [`git push`](https://git-scm.com/docs/git-push) command to update our remote repository:
@@ -193,5 +193,5 @@ To ssh.dev.azure.com:v3/myOrganizationName/MySnykProject/MySnykProject
 
 Alternatively, you can view the files in your repo by visiting the Azure DevOps portal:
 
-![](../../../../.gitbook/assets/azure_devops_03.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/azure_devops_03.png)
 

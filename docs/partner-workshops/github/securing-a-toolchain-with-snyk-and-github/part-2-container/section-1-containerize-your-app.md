@@ -4,23 +4,23 @@
 
 Let's start by creating a new branch from our `develop` branch, where we'll create the files for this section before merging them to `develop`. Call it `add-container-files` .
 
-![](../../../../../.gitbook/assets/gh-container-newbranch.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-container-newbranch.png)
 
 ## Step 2: Create the files for the Container workflow
 
 {% hint style="info" %}
-In this step you'll create a Dockerfile and modify the GitHub Actions CI Workflows. The files are available in the `container-actions` branch if you want to copy-paste from there. These are there for reference; attempting to merge that branch to `develop` will cause Merge Conflicts.  
+In this step you'll create a Dockerfile and modify the GitHub Actions CI Workflows. The files are available in the `container-actions` branch if you want to copy-paste from there. These are there for reference; attempting to merge that branch to `develop` will cause Merge Conflicts.
 {% endhint %}
 
 ### Create a Dockerfile
 
 The first file we'll create is the `Dockerfile` , the instructions to package the application into a container. Ensure you're on the new branch, and click on "Add File", then "Create new file".
 
-![](../../../../../.gitbook/assets/gh-container-createnewfile.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-container-createnewfile.png)
 
 Call the new file `Dockerfile` as shown below.
 
-![](../../../../../.gitbook/assets/gh-container-createdockerfile.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-container-createdockerfile.png)
 
 Paste this in as the contents of the `Dockerfile`
 
@@ -39,15 +39,15 @@ EXPOSE 9229
 ENTRYPOINT ["npm", "start"]
 ```
 
-When ready, commit the changes directly to the `add-container-files` branch. 
+When ready, commit the changes directly to the `add-container-files` branch.
 
-![](../../../../../.gitbook/assets/gh-container-createdockerfile2.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-container-createdockerfile2.png)
 
 ### Modify the CI workflows
 
 Now, we need to tell GitHub Actions how to build our container. Recall that the `.github/workflows` folder contains the CI workflows that re-build our application when Pull Requests are opened against our branches. Let's add the Container build steps to both CI workflows using the GitHub Editor.
 
-![](../../../../../.gitbook/assets/gh-container-editdevelopci.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-container-editdevelopci.png)
 
 Replace the contents of `.github/workflows/goof-ci-develop` with the following:
 
@@ -109,9 +109,9 @@ Our CI workflow will now take the following actions:
 3. If the container builds successfully, it will then scan it with Snyk container. 
 4. When the scan is done, results are pushed to GitHub Security Code Scanning.
 
-Now commit the changes directly to our new `add-container-files` branch. 
+Now commit the changes directly to our new `add-container-files` branch.
 
-![](../../../../../.gitbook/assets/gh-container-commitcontainerci.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-container-commitcontainerci.png)
 
 Now, repeat the same process for the `PROD` workflow, replacing the image tag specified in lines 36 and 43 from `goof:develop` to `goof:PROD`. This will ensure the `PROD` and `develop` containers remain separate entities once uploaded to a container registry.
 
@@ -119,11 +119,11 @@ Now, repeat the same process for the `PROD` workflow, replacing the image tag sp
 
 With the Dockerfile created and workflows modified, we'll merge the `add-container-files` branch into the `develop` branch to make it official. In GitHub, initiative a Pull Request. Like in the previous section, remember to select your fork as the Base repo.
 
-![](../../../../../.gitbook/assets/gh-container-addfilespr.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-container-addfilespr.png)
 
-Once the PR is created, the checks will run, including the new one we added to build the container image. Once all checks complete, merge the Pull Request and delete the branch. 
+Once the PR is created, the checks will run, including the new one we added to build the container image. Once all checks complete, merge the Pull Request and delete the branch.
 
-![](../../../../../.gitbook/assets/gh-container-addfileprchecks.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-container-addfileprchecks.png)
 
-We have now packaged our application into a container! Even through we fixed all open and fixable issues with the Open Source components in our application, our decision to package it into a container introduced additional risks that must be addressed. Head on to Section 2 to see how Snyk Container helps you find and fix those issues. 
+We have now packaged our application into a container! Even through we fixed all open and fixable issues with the Open Source components in our application, our decision to package it into a container introduced additional risks that must be addressed. Head on to Section 2 to see how Snyk Container helps you find and fix those issues.
 

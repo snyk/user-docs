@@ -8,14 +8,14 @@ Snyk tests and monitors GitHub repositories that are in any of our supported lan
 
 1\) Go to Projects and click Add projects. Choose the tool from which to import your projects
 
-![](../../../../.gitbook/assets/project_import.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/project_import.png)
 
 2\) A popup screen opens with all the available repositories under the selected integration
 
-![](../../../../.gitbook/assets/select_repo.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/select_repo.png)
 
 {% hint style="info" %}
-Select the Spring-Petclinic ****repository.
+Select the Spring-Petclinic _\*\*_repository.
 {% endhint %}
 
 3\) Select the repository to import into Snyk. This will monitor the repositories for security and license issues. To import all repositories for a specific organization, checkmark the organization.
@@ -24,15 +24,15 @@ Select the Spring-Petclinic ****repository.
 
 ## Imported projects
 
-As Snyk is importing your project you will see the import status bar followed by a **green box** asking you to refresh the screen. 
+As Snyk is importing your project you will see the import status bar followed by a **green box** asking you to refresh the screen.
 
 {% hint style="info" %}
 Refresh green box not shown
 {% endhint %}
 
-![](../../../../.gitbook/assets/import_bar.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/import_bar.png)
 
-After refreshing, you will see the imported projects in the Snyk UI. Expand the project to see the package manager file, in our case _**pom.xml**_ 
+After refreshing, you will see the imported projects in the Snyk UI. Expand the project to see the package manager file, in our case _**pom.xml**_
 
-![](../../../../.gitbook/assets/screen-shot-2020-08-21-at-4.43.05-pm%20%281%29.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/screen-shot-2020-08-21-at-4.43.05-pm%20%281%29.png)
 

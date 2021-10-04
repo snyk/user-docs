@@ -1,6 +1,6 @@
 # Reporting
 
-Snyk reports show the status of all of your projects, issues, dependencies, and licenses, for your organization or group. For more details, see [Reports](../../general-reports/).
+Snyk reports show the status of all of your projects, issues, dependencies, and licenses, for your organization or group. For more details, see [Reports](../../features/general-reports/).
 
 {% hint style="info" %}
 **Feature availability**  

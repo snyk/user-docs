@@ -1,14 +1,14 @@
 # Provision Azure services
 
-### Background
+## Background
 
 In order to understand the various Snyk integration points to Azure, we are going to deploy and configure some supporting resources. The objective for these exercises is to demonstrate how Snyk secures your workloads. We will provide basic patterns intended for use in learning environments. For a deeper dive and learning more about Azure, we suggest referencing Microsoft's self-paced [training modules](https://docs.microsoft.com/en-us/learn/browse/?products=azure).
 
-### Deploy Azure Container Registry \(ACR\)
+## Deploy Azure Container Registry \(ACR\)
 
 The following examples are based on an [Azure Quickstart ](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-azure-cli)for deploying ACR using the CLI. We will deploy an Azure Container Registry instance using the Azure CLI, then tag and push container images into the registry.
 
-#### Create a resource group
+### Create a resource group
 
 We begin by creating an [Azure resource group](https://docs.microsoft.com/en-us/learn/modules/control-and-organize-with-azure-resource-manager/2-principles-of-resource-groups) to logical organize the resources we will deploy and manage. Here, we will also define the location where our resources will run in Azure. In this case, we will deploy to the `eastus` location. From your terminal, run the following command:
 
@@ -34,11 +34,11 @@ When successfully completed, you will see output similar to the following:
 
 You can also validate the creation of the resource group in the Azure portal as illustrate below:
 
-![](../../../../.gitbook/assets/azure_resource_groups_05.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/azure_resource_groups_05.png)
 
-#### Create the ACR instance
+### Create the ACR instance
 
-Next, we are going to create a registry named `mySnykContainerRegistry` in our recently created `mySnykACSResourceGroup`. 
+Next, we are going to create a registry named `mySnykContainerRegistry` in our recently created `mySnykACSResourceGroup`.
 
 ```bash
 az acr create \
@@ -95,9 +95,9 @@ Once the deployment completes the CLI will return a lengthy JSON response contai
 
 You can also view this within the Azure portal:
 
-![](../../../../.gitbook/assets/azure_resource_groups_06.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/azure_resource_groups_06.png)
 
-#### Log in to registry
+### Log in to registry
 
 We will need to log in to the registry before performing any operations such as `docker push` or `docker pull`. To do so, run the following command:
 

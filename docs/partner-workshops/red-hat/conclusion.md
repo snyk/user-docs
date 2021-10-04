@@ -1,6 +1,6 @@
 # Conclusion
 
-![](../../../.gitbook/assets/logo-solid-background.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/logo-solid-background.png)
 
 In these exercises, you were able to accomplish the following:
 
@@ -9,6 +9,4 @@ In these exercises, you were able to accomplish the following:
 * Install the Snyk controller for Red Hat OpenShift container platform to scan Kubernetes workloads
 
 You are encouraged to learn more on how to fix these by reviewing the additional learning modules below:
-
-
 

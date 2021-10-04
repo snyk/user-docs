@@ -8,7 +8,7 @@ weight: 30
 
 ## Scanning & monitoring application source code
 
-![](../../../../../.gitbook/assets/snyk-bitbucket-flow-module-01.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-bitbucket-flow-module-01.png)
 
 ## What is software composition analysis \(SCA\)?
 

@@ -10,5 +10,3 @@ We will complete the following steps:
 
 1. Clone Spring-Petclinic repo to a personal account.
 
-
-

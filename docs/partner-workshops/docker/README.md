@@ -6,7 +6,7 @@ description: >-
 
 # Docker
 
-![](../../../.gitbook/assets/dockerheader-2.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/dockerheader-2.png)
 
 ## Welcome!
 
@@ -26,7 +26,7 @@ Snyk is built into Docker Hub! Image scanning in Docker Hub provides developers 
 
 ### Docker inside Snyk
 
-Inside the Snyk UI, connect your Docker Hub to import container images as Snyk projects. Doing so allows you to test and monitor your image repositories directly from the Snyk UI. Check out [Snyk Container Academy Workshop]() to learn how to set up the integration.
+Inside the Snyk UI, connect your Docker Hub to import container images as Snyk projects. Doing so allows you to test and monitor your image repositories directly from the Snyk UI. Check out [Snyk Container Academy Workshop](./) to learn how to set up the integration.
 
 ## Learn more about our Partnership with Docker
 

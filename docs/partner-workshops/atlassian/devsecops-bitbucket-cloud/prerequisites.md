@@ -5,7 +5,7 @@ You are **responsible** for the cost of the AWS services used while running this
 {% endhint %}
 
 {% hint style="info" %}
-If you already have an AWS account, and have IAM Administrator access, go to the **Provision AWS services** section below. 
+If you already have an AWS account, and have IAM Administrator access, go to the **Provision AWS services** section below.
 {% endhint %}
 
 ## Create an account
@@ -20,27 +20,27 @@ Once you have an AWS account, ensure you are following the remaining workshop st
 
 ### Step 3
 
-Enter the user details: 
+Enter the user details:
 
-![](../../../../.gitbook/assets/iam-1-create-user.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/iam-1-create-user.png)
 
 ### Step 4
 
-Attach the AdministratorAccess IAM Policy: 
+Attach the AdministratorAccess IAM Policy:
 
-![](../../../../.gitbook/assets/iam-2-attach-policy%20%281%29.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/iam-2-attach-policy%20%281%29.png)
 
 ### Step 5
 
-Click to create the new user: 
+Click to create the new user:
 
-![](../../../../.gitbook/assets/iam-3-create-user.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/iam-3-create-user.png)
 
 ### Step 6
 
-Take note of the login URL and save: 
+Take note of the login URL and save:
 
-![](../../../../.gitbook/assets/iam-4-save-url.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/iam-4-save-url.png)
 
 ## Provision AWS services
 
@@ -54,6 +54,6 @@ We have simplified and automated the process for provisioning the necessary AWS 
 When you are ready, [click here to deploy](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/template?stackName=Amazon-EKS-with-Snyk&templateURL=https://aws-quickstart.s3.us-west-2.amazonaws.com/quickstart-amazon-eks/templates/amazon-eks-master.template.yaml)!
 
 {% hint style="warning" %}
-The installation takes several minutes. Please continue to the next section. 
+The installation takes several minutes. Please continue to the next section.
 {% endhint %}
 

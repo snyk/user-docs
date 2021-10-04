@@ -1,6 +1,6 @@
 # Application scanning
 
-Our next job begins by attaching the workspace and calling `snyk/scan` with a few parameters. We've made a few choices here such as setting `fail-on-issues` to `false` and setting our `severity-threshold` to `high`. 
+Our next job begins by attaching the workspace and calling `snyk/scan` with a few parameters. We've made a few choices here such as setting `fail-on-issues` to `false` and setting our `severity-threshold` to `high`.
 
 ```yaml
   scan_app:

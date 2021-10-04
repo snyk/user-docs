@@ -51,8 +51,7 @@ stages:
         namespace: '$(namespaceApp)'
         manifests: '$(manifestfilePath)'
         containers: '$(tag)'
-        
 ```
 
-The example above is only a reference. Your pipeline may differ. In this example, we are scanning our source code in Azure Repo, pushing a container image to ACR, and deploying to AKS. The Snyk Scan is defined in lines 24-29 above. 
+The example above is only a reference. Your pipeline may differ. In this example, we are scanning our source code in Azure Repo, pushing a container image to ACR, and deploying to AKS. The Snyk Scan is defined in lines 24-29 above.
 

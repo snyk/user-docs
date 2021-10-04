@@ -2,7 +2,7 @@
 
 ## Testing SPC using the Snyk Maven plugin
 
-Snyk CLI enables developers to test and monitor their application using the CLI. If developers want Snyk to be part of the daily build, you can use the Snyk Maven plugin. The steps below will show you how to configure Maven to run the Snyk plugin. We will configure it to run in our local deployment. 
+Snyk CLI enables developers to test and monitor their application using the CLI. If developers want Snyk to be part of the daily build, you can use the Snyk Maven plugin. The steps below will show you how to configure Maven to run the Snyk plugin. We will configure it to run in our local deployment.
 
 From the root directory of the SPC application
 
@@ -10,7 +10,7 @@ From the root directory of the SPC application
 vi pom.xml
 ```
 
-In the plugin section, find and change the &lt;org&gt; name to match the Snyk organization you created earlier.  We will pass the SNYK\_TOKEN via the maven command line in the next step.
+In the plugin section, find and change the &lt;org&gt; name to match the Snyk organization you created earlier. We will pass the SNYK\_TOKEN via the maven command line in the next step.
 
 {% hint style="info" %}
 See the next step to find your organization name in Snyk.
@@ -48,7 +48,7 @@ See the next step to find your organization name in Snyk.
 
 Your organization name can be retrieved under settings.
 
-![](../../../../.gitbook/assets/getting_org_name.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/getting_org_name.png)
 
 ## Execute Maven to view Snyk results
 
@@ -95,6 +95,4 @@ If you experience an issue with Snyk URL the org or API token is incorrect.
 {% hint style="info" %}
 This build will take about 45 seconds to complete.
 {% endhint %}
-
-
 

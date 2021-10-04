@@ -56,7 +56,7 @@ git clone https://github.com/snyk/docker-goof && cd docker-goof
 
 ## Step 2: Build one \(or many\) docker-goof Images
 
-The Docker Goof repo has many Dockerfiles. You can build some, or all, of them out. 
+The Docker Goof repo has many Dockerfiles. You can build some, or all, of them out.
 
 Use the included easy button `./build.sh` to build them all at once.
 

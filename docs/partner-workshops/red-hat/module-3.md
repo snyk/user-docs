@@ -81,7 +81,7 @@ oc get routes
 
 You can see the results of these commands by logging into the OpenShift console and reviewing the **Deployment Configs** for your project.
 
-![](../../../.gitbook/assets/openshift-deployment-config.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/openshift-deployment-config.png)
 
 #### Installing the Snyk controller with OpenShift 4 and OperatorHub
 
@@ -91,15 +91,15 @@ We mentioned in **Getting Started** that you will need to install the Snyk contr
 
 By logging into your Snyk account, you will be able to [add Kubernetes workloads for security scanning](https://support.snyk.io/hc/en-us/articles/360003947117-Adding-Kubernetes-workloads-for-security-scanning). In this example, we are going to monitor our recently deployed **goof** application.
 
-![](../../../.gitbook/assets/kubernetes-integration-01.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/kubernetes-integration-01.png)
 
 Once you **Add selected workloads** you will be taken back to the **Projects** page where you can see a high level overview of all imported projects including your Kubernetes application.
 
-![](../../../.gitbook/assets/kubernetes-integration-02.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/kubernetes-integration-02.png)
 
-By clicking on the the `demo/replicationcontroller/goof-1` project, you will see additional details specific to the application security configuration. In this example, we see a number of issues have been found. 
+By clicking on the the `demo/replicationcontroller/goof-1` project, you will see additional details specific to the application security configuration. In this example, we see a number of issues have been found.
 
 As we now know, Kubernetes is not secure by default. It is beyond the scope of these exercises to provide a deep-dive on this topic, but detailed documentation on [securing a cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/) is readily available. Additional reading is recommended on configuring a [security context](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/) for a pod, [pod security](https://kubernetes.io/docs/concepts/policy/pod-security-policy/) policies, and setting [capabilities](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-capabilities-for-a-container) for a container.
 
-![](../../../.gitbook/assets/kubernetes-integration-03.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/kubernetes-integration-03.png)
 

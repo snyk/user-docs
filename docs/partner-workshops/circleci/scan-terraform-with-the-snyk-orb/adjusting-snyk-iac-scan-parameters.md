@@ -26,9 +26,9 @@ workflows:
 
 Since the defects found are all Medium and Low severity, the Snyk stage in the workflow will pass.
 
-![Snyk workflow passes with 0 issues found.](../../../../.gitbook/assets/image%20%284%29.png)
+![Snyk workflow passes with 0 issues found.](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/image%20%284%29.png)
 
-In this example, we only break the pipeline when High Severity issues are found. 
+In this example, we only break the pipeline when High Severity issues are found.
 
 ## Adjusting rule thresholds in the Snyk UI
 
@@ -36,17 +36,17 @@ If you want to override the [default severity thresholds](https://snyk.io/securi
 
 To do this, navigate to your Organization -&gt; Settings -&gt; Infrastructure as Code. You'll see the list below:
 
-![Security Rule severity adjustments in the Snyk UI.](../../../../.gitbook/assets/image%20%283%29.png)
+![Security Rule severity adjustments in the Snyk UI.](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/image%20%283%29.png)
 
-Adjust the rules as you see fit. Next time the workflow runs, the Snyk Orb will evaluate the Terraform files according to the new severity levels. 
+Adjust the rules as you see fit. Next time the workflow runs, the Snyk Orb will evaluate the Terraform files according to the new severity levels.
 
 ### Configuring the Snyk Organization used by the Snyk Orb
 
 The Snyk Orb output identifies which Snyk Org is used for evaluating security rules.
 
-![Snyk Org used by the Orb](../../../../.gitbook/assets/image%20%281%29.png)
+![Snyk Org used by the Orb](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/image%20%281%29.png)
 
-If you want to use the rules in a different org, pass the `--org` parameter to the `args`. 
+If you want to use the rules in a different org, pass the `--org` parameter to the `args`.
 
 {% hint style="info" %}
 The Snyk Orb evaluates severity levels for the Org for which the SNYK\_TOKEN was created. If you specify a different Org, the token must have access to that Org.
@@ -63,5 +63,5 @@ workflows:
       - gke_create_cluster:
 ```
 
-This allows you to have different rulesets for different environments where your applications run. 
+This allows you to have different rulesets for different environments where your applications run.
 

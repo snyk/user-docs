@@ -35,7 +35,7 @@ Notice that the `deployment` for both the `vote-back` and `vote-front` applicati
 
 We will verify that our changes resolved the issue by checking our project once more. Since we have `snyk-monitor` running in our cluster we are actively monitoring our workloads.
 
-![](../../../../.gitbook/assets/snyk_scan_05.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk_scan_05.png)
 
 Success! We've been able to identify security issues in our Kubernetes configuration, updating our manifest to include a fix, and applied these to resolve the problem.
 

@@ -1,10 +1,10 @@
 # Configure the ACR integration
 
-### Create a service principal
+## Create a service principal
 
 It is recommended that you assign a [service principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals) to your registry. Please review the [Authenticate with an Azure container registry](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-authentication) documentation for further information on this topic.
 
-To simplify this process, you will find a sample `bash` script in the `scripts/` directory of your cloned repo. From the terminal, let's make sure we are at the root of our cloned repository by typing `pwd` and verifying the result displays `$HOME/snyk-azure-resources/`. 
+To simplify this process, you will find a sample `bash` script in the `scripts/` directory of your cloned repo. From the terminal, let's make sure we are at the root of our cloned repository by typing `pwd` and verifying the result displays `$HOME/snyk-azure-resources/`.
 
 Then, let's change directory by typing the following command:
 
@@ -12,7 +12,7 @@ Then, let's change directory by typing the following command:
 cd scripts/
 ```
 
-From here, a simple `ls -a` command will show the contents and you will see the `create-acr-service-principal.sh` script in that directory. You can open this in your favorite editor like [Microsoft Visual Studio Code](https://code.visualstudio.com/) and review the contents. 
+From here, a simple `ls -a` command will show the contents and you will see the `create-acr-service-principal.sh` script in that directory. You can open this in your favorite editor like [Microsoft Visual Studio Code](https://code.visualstudio.com/) and review the contents.
 
 These will look like this:
 
@@ -60,15 +60,15 @@ Service principal password: <guid>
 
 Take note of the values for `Service principal ID` and `Service principal password`. You will need these to configure the integration in the following steps so **DO NOT** close or clear your terminal window.
 
-### Enable the integration
+## Enable the integration
 
 From the Snyk web console, navigate to `Integrations`. Search and select `ACR`. Click the tile.
 
-![](../../../../.gitbook/assets/snyk_integrations_07.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk_integrations_07.png)
 
 Follow the steps outlined in the following diagram and provide the `Service principal ID` `Service principal password` and `loginServer` value for your ACR instance:
 
-![](../../../../.gitbook/assets/snyk_integrations_06.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk_integrations_06.png)
 
 Remember to save your settings!
 

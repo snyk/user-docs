@@ -8,7 +8,7 @@ weight: 40
 
 ## Container security\*
 
-![](../../../../../.gitbook/assets/snyk-bitbucket-flow-module-02.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-bitbucket-flow-module-02.png)
 
 By 2022, more than [75% of global organizations](https://snyk.io/blog/putting-container-security-in-the-hands-of-developers/) will be running containerized applications in production \(Gartner\). Alongside the widespread adoption, there has been a surge in container vulnerabilities, with a 4X increase in reported operating system vulnerabilities in 2018. And yet [80% of developers say they don’t test their container images](https://snyk.io/blog/shifting-docker-security-left/) during development – it’s either not their responsibility, or they are accustomed to someone down the road catching the issues – which makes scaling [container security](https://snyk.io/container-security/) a challenge for fast-growing businesses.
 

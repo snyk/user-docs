@@ -2,7 +2,7 @@
 
 To simply the deployment of our application, we have provided two [configuration files](https://kubernetes.io/docs/concepts/configuration/overview/) which will create the necessary resources to run our application. These two files will consist of a Deployment and a Service and are available in the `./deployment` directory of the accompanying GitHub repository. Let's take a look at what's in each of these configuration files.
 
-#### Deployment
+## Deployment
 
 A [deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) will define the desired state and create a ReplicaSet. Here we are defining the container image we will use as well as `cpu` and `memory` limits among other things.
 
@@ -60,7 +60,7 @@ spec:
             - containerPort: 27017
 ```
 
-#### Service
+## Service
 
 A [service](https://kubernetes.io/docs/concepts/services-networking/service/) is an abstraction for exposing an application running on a set of Pods as a network service. Here, we are defining a two-tier application that consists of a `frontend` which is our _**goof**_ application s well as a `backend` which in our case will be a `mongodb` container image.
 

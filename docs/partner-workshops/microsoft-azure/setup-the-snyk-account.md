@@ -1,12 +1,12 @@
 # Sign up for Snyk
 
-### Create account
+## Create account
 
 Visit [https://snyk.io](https://snyk.io) and log in.
 
-![](../../../.gitbook/assets/snyk_login_01.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk_login_01.png)
 
-### Yes, it's really free
+## Yes, it's really free
 
 If you do not have an account, you can [sign up](https://app.snyk.io/signup) for a free account. Snyk offers a [free plan](https://snyk.io/plans/) which includes:
 

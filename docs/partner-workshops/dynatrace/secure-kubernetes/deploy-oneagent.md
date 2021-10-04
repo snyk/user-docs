@@ -1,6 +1,6 @@
 # Deploy OneAgent
 
-{% embed url="https://youtu.be/K2PVsCivTMU" %}
+{% embed url="https://youtu.be/K2PVsCivTMU" caption="" %}
 
 {% hint style="info" %}
 We will provide step-by-step instruction to help you get started quickly. For in depth product documentation, please visit the following Dynatrace Documentation pages:  
@@ -9,15 +9,15 @@ We will provide step-by-step instruction to help you get started quickly. For in
 3. [Dynatrace OneAgent](https://www.dynatrace.com/support/help/setup-and-configuration/dynatrace-oneagent/)
 {% endhint %}
 
-### Step 1:
+## Step 1:
 
 From your Dynatrace environment, navigate to **Infrastructure** and then **Kubernetes** in the left navigation menu as shown below:
 
-![](../../../../.gitbook/assets/dynatrace-k8s-config-01.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/dynatrace-k8s-config-01.png)
 
 Select **Add Custer**.
 
-### Step 2:
+## Step 2:
 
 Provide a name for your connection as shown below:
 
@@ -25,7 +25,7 @@ Provide a name for your connection as shown below:
 This name simplifies deployment and is used by various Dynatrace settings including Kubernetes cluster name, Network Zone, ActiveGate Group, and Host Group. For individually unique settings follow activation instructions from [Kubernetes monitoring documentation](https://dt-url.net/a32h0p41).
 {% endhint %}
 
-![](../../../../.gitbook/assets/dynatrace-k8s-config-02.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/dynatrace-k8s-config-02.png)
 
 Then click on **Create tokens**.
 
@@ -33,7 +33,7 @@ Then click on **Create tokens**.
 **DO NOT** leave this menu. You will need to copy and paste a few things and switch to your terminal and back for the remaining steps. If you navigate away from this menu, you will need to create new tokens and break the process.
 {% endhint %}
 
-### Step 3:
+## Step 3:
 
 From your terminal, create a namespace and deploy the [Dynatrace Operator](https://github.com/dynatrace/dynatrace-operator) into your K8s cluster.
 
@@ -48,11 +48,11 @@ Next, copy and paste the **PaaS Token** & **API Token** from **Step 2** into the
 kubectl -n dynatrace create secret generic dynakube --from-literal="apiToken=DYNATRACE_API_TOKEN" --from-literal="paasToken=PLATFORM_AS_A_SERVICE_TOKEN"
 ```
 
-### Step 4:
+## Step 4:
 
 Go back to your Dynatrace environment Dashboard and copy the command shown below.
 
-![](../../../../.gitbook/assets/dynatrace-k8s-config-03.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/dynatrace-k8s-config-03.png)
 
 Once copied, switch back to your terminal and execute the example command:
 

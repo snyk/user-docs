@@ -4,7 +4,7 @@
 
 A template GitHub Repo is provided for this workshop using [Snyk's Goof application](https://github.com/snyk/goof#goof---snyks-vulnerable-demo-app).
 
-{% embed url="https://github.com/snyk-partners/docker-academy" %}
+{% embed url="https://github.com/snyk-partners/docker-academy" caption="" %}
 
 Click "Use this Template" to copy the Repo into your GitHub account.
 
@@ -50,15 +50,15 @@ You can verify that mongo is running by running `docker ps`.
 
 ### Start the Application
 
-Now you can run the application. 
+Now you can run the application.
 
 ```bash
 node app.js
 ```
 
-Once it starts, it will be available at [http://localhost:3001](http://localhost:3001). Verify it works by adding a few items into the todo list. 
+Once it starts, it will be available at [http://localhost:3001](http://localhost:3001). Verify it works by adding a few items into the todo list.
 
-![](../../../../.gitbook/assets/todo.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/todo.png)
 
 Success! Now that we know it works, let's package it in a container for distribution.
 
@@ -86,7 +86,7 @@ RUN npm update ## Ensure npm is up to date
 RUN npm install ## Install dependencies
 EXPOSE 3001 ## Expose the port
 EXPOSE 9229
-ENTRYPOINT ["npm", "start"] ## The command 
+ENTRYPOINT ["npm", "start"] ## The command
 ```
 {% endcode %}
 
@@ -108,7 +108,7 @@ docker push $DockerId/goof:dev
 
 To ensure the container deploys correctly into Kubernetes without incurring cloud costs, we use the Kubernetes cluster shipped with Docker Desktop. Before deploying the app, you'll need to make a change to the app's deployment manifest. Open the file `goof-deployment.yaml` in a text editor.
 
-Find these lines, and insert your Docker ID where indicated. 
+Find these lines, and insert your Docker ID where indicated.
 
 ```yaml
 spec:

@@ -24,6 +24,6 @@ The output should look like the window below
 
 ```text
 The stack is NOT in a state of CREATE_COMPLETE at Sun Sep  8 05:53:33 UTC 2019
-The Stack is built at Sun Sep  8 05:54:04 UTC 2019 - Please proceed 
+The Stack is built at Sun Sep  8 05:54:04 UTC 2019 - Please proceed
 ```
 

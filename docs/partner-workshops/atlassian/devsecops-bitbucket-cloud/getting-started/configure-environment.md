@@ -27,7 +27,7 @@ brew install weaveworks/tap/eksctl
 ```
 
 {% hint style="info" %}
-Installing `eksctl` with Homebrew will also install the `kubectl` command-line utility. 
+Installing `eksctl` with Homebrew will also install the `kubectl` command-line utility.
 {% endhint %}
 
 ## Installing the Snyk CLI

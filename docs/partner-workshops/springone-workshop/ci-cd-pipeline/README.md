@@ -6,11 +6,11 @@ Each step of the SDLC moves your application closer to production, and these ste
 
 GitHub workflow diagram:
 
-![](../../../../.gitbook/assets/github_workflow_diagram_56-.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/github_workflow_diagram_56-.png)
 
 ### Workshop exercises
 
-We will complete the following steps. 
+We will complete the following steps.
 
 1. Populate the pipeline with GitHub secrets. We will add a Synk API token and Docker Hub API token.
 2. Edit pipeline environment variables to build or container image, commit changes to the pipeline, and execute the pipeline.

@@ -1,10 +1,10 @@
 # Provision Azure services
 
-### Background
+## Background
 
 The objective for these exercises is to demonstrate how Snyk secures your workloads in the context of [source control systems](https://docs.microsoft.com/en-us/azure/devops/user-guide/source-control?view=azure-devops). We will provide basic patterns intended for use in learning environments. For a deeper dive and learning more about Azure DevOps, we suggest referencing Microsoft's [getting started documentation](https://docs.microsoft.com/en-us/azure/devops/get-started/?view=azure-devops).
 
-### Create your Azure DevOps Project
+## Create your Azure DevOps Project
 
 We will organize our development work using a project which will contain a repository. In the following steps, we will invoke the [`az devops project create`](https://docs.microsoft.com/en-us/cli/azure/ext/azure-devops/devops/project?view=azure-cli-latest#ext-azure-devops-az-devops-project-create) command to create our team project. Let's get started.
 
@@ -52,5 +52,5 @@ Upon successful completion, you will see output similar to the following:
 
 Alternatively, you can pass the `--open` parameter to the above CLI command to open the project in the default web browser which should look similar to the following figure:
 
-![](../../../../.gitbook/assets/azure_devops_02.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/azure_devops_02.png)
 

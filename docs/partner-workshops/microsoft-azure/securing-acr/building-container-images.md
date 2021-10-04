@@ -1,20 +1,20 @@
 # Building container images
 
-### Background
+## Background
 
 In **Securing AKS with Snyk**, we deployed an application to our Kubernetes cluster running on Microsoft Azure Kubernetes Service \(AKS\). We deployed this using a [manifest](https://kubernetes.io/docs/concepts/cluster-administration/manage-deployment/) template file. The manifest provides a means to organize resource configurations that simplify our deployments. If we examine the `azure-vote.yaml` we see that we are defining the container images for our back-end and front-end applications as pulling `redis` and `microsoft/azure-vote-front:v1` respectively.
 
 Later, when we scanned our Kubernetes workload, we found vulnerabilities in our Kubernetes security configuration as well as our container images. We were able to fix the security configuration issues detected. However, when we examined our container images, we noticed the following alert:
 
-![](../../../../.gitbook/assets/snyk_scan_06.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk_scan_06.png)
 
 In this module, we will cover some best practices for building container images, storing these in a private registry like ACR, and monitoring those registries with Snyk.
 
-### Building a Docker image
+## Building a Docker image
 
 In Snyk’s [State of open source security report – 2019](https://snyk.io/blog/top-ten-most-popular-docker-images-each-contain-at-least-30-vulnerabilities/), we found that many of the popular Docker containers that are featured on the Docker Hub website are bundling images that contain many known vulnerabilities. We encourage you to read this report and as well as our recent blog, [10 Docker Image Security Best Practices](https://snyk.io/blog/10-docker-image-security-best-practices/) for a deeper dive on the subject. The following exercises are aligned with these best practices and we will cover them in stages starting with the concept of `minimal images`.
 
-#### Dockerfile
+### Dockerfile
 
 Let's start with our back-end application. We see from our manifest that we are using the [Docker Official Image](https://docs.docker.com/docker-hub/official_repos/) for [redis](https://hub.docker.com/_/redis). We will take the first step in improving our security posture by building a fresh image from a `Dockerfile` and storing this in our private registry on ACR.
 
@@ -41,7 +41,7 @@ RUN groupadd -r -g 999 redis && useradd -r -g redis -u 999 redis
 
 We will come back to this `Dockerfile` later, but for now, take note that the underlying base image is `debian:buster-slim`.
 
-#### Docker build
+### Docker build
 
 Now, from the `app/redis/6.0/` directory, we will build and tag our own container image using the provided `Dockerfile`. To do so, we will run the [`docker build`](https://docs.docker.com/engine/reference/commandline/build/) command as follows:
 
@@ -56,7 +56,7 @@ Successfully built aa8130687a13
 Successfully tagged my-redis:v1
 ```
 
-#### Docker tag
+### Docker tag
 
 We are almost ready to push our initial image to an Azure Container registry. However, before we proceed, we will need to run a few [`docker tag`](https://docs.docker.com/engine/reference/commandline/tag/) commands to tag our image with the fully qualified name of your ACR login server. We are going to make this interesting by querying the value of our ACR login server using the Azure CLI within our `docker tag` command. To do this, we will invoke `az acr show` and specify our registry name while formatting our output with the `-o tsv` parameter for plain text.
 
@@ -80,7 +80,7 @@ mysnykcontainerregistry.azurecr.io/my-redis                     v1              
 debian                                                          buster-slim         e5aad4204d00        7 days ago          69.2MB
 ```
 
-#### Docker push
+### Docker push
 
 We made it. We are now ready to run [`docker push`](https://docs.docker.com/engine/reference/commandline/push/) on our tagged images and store these in ACR. Let's start with the first tagged image `v1`:
 
@@ -119,7 +119,7 @@ c2adabaecedb: Layer already exists
 latest: digest: sha256:f8e1a610528d3fbd6f1b26fc2a2610c05fd07938b68e8aef7cb87ef1c9a6ec65 size: 1573
 ```
 
-We can also verify these were indeed pushed to our registry by querying through the Azure CLI. 
+We can also verify these were indeed pushed to our registry by querying through the Azure CLI.
 
 ```bash
 az acr repository list --name mySnykContainerRegistry --output json
@@ -150,5 +150,5 @@ v1
 
 Of course, we can also view the same results from the Azure portal:
 
-![](../../../../.gitbook/assets/acr_repository_01.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/acr_repository_01.png)
 

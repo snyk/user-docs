@@ -6,13 +6,13 @@ Let's quickly review the preceding steps. If you skipped or missed any of these,
 2. An Amazon EKS cluster provisioned
 3. A `fork` or `clone` of the GitHub repository
 
-### Setting up CircleCI
+## Setting up CircleCI
 
 If this is your first time using CircleCI, I recommend reviewing the [step-by-step instructions](https://circleci.com/docs/2.0/getting-started/#setting-up-circleci) on setting up your project. You will need to navigate to the CircleCI [Project Page](https://app.circleci.com/projects/) and configure things so that you will automatically trigger a pipeline run against your Git repo.
 
 Once configured, subsequent `commits` or `pull requests` will trigger runs as shown in the examples below:
 
-#### Using git push
+### Using git push
 
 ```bash
 git push --force-with-lease origin develop
@@ -30,11 +30,11 @@ To github.com:snyk-partners/snyk-circleci-eks.git
    4a09bea..9025276  develop -> develop
 ```
 
-#### Pipeline is triggered
+### Pipeline is triggered
 
 ![](http://g.recordit.co/PgPkhEpdy1.gif)
 
-#### Pipeline success
+### Pipeline success
 
-![](../../../../.gitbook/assets/circleci_success.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/circleci_success.png)
 

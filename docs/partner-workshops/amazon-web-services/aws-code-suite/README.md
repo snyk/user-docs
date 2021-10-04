@@ -6,7 +6,7 @@ weight: 1
 
 # AWS Code Suite
 
-{% embed url="https://youtu.be/cgsMsHO4Nbc" %}
+{% embed url="https://youtu.be/cgsMsHO4Nbc" caption="" %}
 
 In this workshop, you will learn how to add security testing to a CI/CD pipeline of a container application using AWS CodeCommit, AWS CodeBuild, and AWS CodePipeline. The modules contained in this workshop will provide you with step-by-step instructions for committing, building, testing, and deploying software in an automation fashion. You will also learn about some basic security tests and where to instrument them in the software development lifecycle.
 
@@ -28,7 +28,7 @@ In this workshop, you will learn how to add security testing to a CI/CD pipeline
 
 At the conclusion of this workshop, you will end up with various AWS services provisioned in your AWS account. The following diagram illustrates some of these services and is intended as a sample reference architecture.
 
-![](../../../../.gitbook/assets/aws-pipeline.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/aws-pipeline.png)
 
 ## Workshop flow
 

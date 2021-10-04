@@ -18,5 +18,3 @@ Change your directory to the spring-petclinic directory.
 cd spring-petclinic
 ```
 
-
-

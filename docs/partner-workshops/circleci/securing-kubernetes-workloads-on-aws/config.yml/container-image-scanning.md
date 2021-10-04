@@ -1,6 +1,6 @@
 # Container image scanning
 
-Next, we will call the [`circleci/aws-ecr`](https://circleci.com/orbs/registry/orb/circleci/aws-ecr) orb to build our image from the `Dockerfile` in our project repository and we will call [`snyk/scan`](https://circleci.com/orbs/registry/orb/snyk/snyk#commands-scan) command to find vulnerabilities in our base image. Again, we have made a few choices here such as setting `fail-on-issues` to `false` and setting our `severity-threshold` to `high`.  
+Next, we will call the [`circleci/aws-ecr`](https://circleci.com/orbs/registry/orb/circleci/aws-ecr) orb to build our image from the `Dockerfile` in our project repository and we will call [`snyk/scan`](https://circleci.com/orbs/registry/orb/snyk/snyk#commands-scan) command to find vulnerabilities in our base image. Again, we have made a few choices here such as setting `fail-on-issues` to `false` and setting our `severity-threshold` to `high`.
 
 ```yaml
   build_and_scan_image:

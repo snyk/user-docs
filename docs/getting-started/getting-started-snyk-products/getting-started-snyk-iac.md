@@ -3,7 +3,7 @@
 Get started with Snyk IaC to inspect, find and fix issues in configuration files for Terraform or Kubernetes \(including Helm\) environments. For more information, see [Scan your Kubernetes configuration files](https://support.snyk.io/hc/en-us/sections/360001881957-Scan-your-Kubernetes-configuration-files) and [Scan your Terraform files](https://support.snyk.io/hc/en-us/sections/360003156537-Scan-your-Terraform-files).
 
 {% hint style="info" %}
-This article describes a process using the Snyk.io UI. For details of using IaC with the Snyk CLI, see [Snyk CLI for Infrastructure as Code](../../snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/).
+This article describes a process using the Snyk.io UI. For details of using IaC with the Snyk CLI, see [Snyk CLI for Infrastructure as Code](../../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/).
 {% endhint %}
 
 ## **Prerequisites**

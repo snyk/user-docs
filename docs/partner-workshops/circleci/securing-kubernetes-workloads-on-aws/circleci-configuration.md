@@ -1,14 +1,12 @@
 # CircleCI Configuration
 
-If you do not yet have a [fork](https://github.com/snyk-partners/snyk-circleci-eks/fork) of the repository associated with this workshop, you should do so now. The contents of this Git repo will contain  a `.circleci/config.yml` file. A comprehensive reference document for the CircleCI 2.x configuration keys that are used in the `config.yml` file is available from [CircleCI](https://circleci.com/docs/2.0/configuration-reference/). We will reference some of the config keys in our walk-through of our sample `config.yml` file.
+If you do not yet have a [fork](https://github.com/snyk-partners/snyk-circleci-eks/fork) of the repository associated with this workshop, you should do so now. The contents of this Git repo will contain a `.circleci/config.yml` file. A comprehensive reference document for the CircleCI 2.x configuration keys that are used in the `config.yml` file is available from [CircleCI](https://circleci.com/docs/2.0/configuration-reference/). We will reference some of the config keys in our walk-through of our sample `config.yml` file.
 
-#### Environment variables
+## Environment variables
 
 Throughout the examples shown in these exercises you will see references to a few environment variables. These are defined in our [CircleCI Project Settings](https://circleci.com/docs/2.0/env-vars/?utm_medium=SEM&utm_source=gnb&utm_campaign=SEM-gb-DSA-Eng-ni&utm_content=&utm_term=dynamicSearch-&gclid=EAIaIQobChMI_LT0qqj16QIVUB-tBh0J-gxoEAAYASAAEgJdxfD_BwE#setting-an-environment-variable-in-a-project) and will be referenced in our `config.yml` to allow for secure authentication between CircleCI, AWS and Snyk.
 
-![](../../../../.gitbook/assets/circleci_project_settings.png)
-
-#### 
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/circleci_project_settings.png)
 
 The specific variables needed are as follows:
 

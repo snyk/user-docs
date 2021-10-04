@@ -2,7 +2,7 @@
 
 To enable the integration between Amazon ECR and Snyk, we will take advantage of the [**Snyk: Developer-First Security on the AWS Cloud**](https://github.com/aws-quickstart/quickstart-snyk-security) **AWS Quick Start**.
 
-![](../../../../../.gitbook/assets/quickstart-snyk-security-ecr.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/quickstart-snyk-security-ecr.png)
 
 {% hint style="success" %}
 Snyk's integration for Amazon Elastic Container Registry \(ECR\) is enabled between one Amazon ECR registry and one Snyk organization. To integrate with multiple registries, create a unique Snyk organization for each registry.
@@ -12,7 +12,7 @@ Snyk's integration for Amazon Elastic Container Registry \(ECR\) is enabled betw
 
 From the Snyk console, navigate to **Settings** and under the **General** menu `Copy` your **Organization ID**.
 
-![](../../../../../.gitbook/assets/snyk-api-token.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-api-token.png)
 
 ## Enable the integration
 
@@ -33,31 +33,31 @@ The installation takes approximately 1 minute to complete.
 
 When complete, the AWS CloudFormation template will provide two necessary values in the **Outputs** tab. You will copy these values.
 
-![](../../../../../.gitbook/assets/snyk-ecr-integration-01.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-ecr-integration-01.png)
 
 ### Accessing the integrations menu
 
 From the Snyk app, navigate to the **Integrations** menu then click **ECR**.
 
-![](../../../../../.gitbook/assets/snyk-ecr-integration-02.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-ecr-integration-02.png)
 
 ### Inputting values
 
 Paste the two values perviously copied from the CloudFormation console's **Outputs** tab into the respective fields, then click **Save**.
 
-![](../../../../../.gitbook/assets/snyk-ecr-integration-03.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-ecr-integration-03.png)
 
 ### Adding images
 
 Once successfully connected, you will receive a confirmation message and a button to **Add your ECR images to Snyk**. Click the button.
 
-![](../../../../../.gitbook/assets/snyk-ecr-integration-04.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-ecr-integration-04.png)
 
 ### Scan repositories
 
 You will be able to browse all repositories associated with the AWS region selected when the integration was enabled. Select the desired repository, then click the **Add selected repositories** button.
 
-![](../../../../../.gitbook/assets/snyk-ecr-integration-05.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-ecr-integration-05.png)
 
 Let's proceed to the next section.
 

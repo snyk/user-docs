@@ -6,7 +6,7 @@ This section of the workshop demonstrates a common developer practice of scannin
 
 ### Workshop exercises
 
-We will complete the following steps. 
+We will complete the following steps.
 
 1. Clone our forked version of the repo to our lab VM
 2. Authenticate with the Snyk UI using a personal token.  

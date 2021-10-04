@@ -4,15 +4,15 @@
 Please review the **prerequisites** section of [product documentation page](https://support.snyk.io/hc/en-us/articles/360003916158-Install-the-Snyk-controller-with-Helm) before proceeding.
 {% endhint %}
 
-### Enable the integration
+## Enable the integration
 
 From the Snyk web console, navigate to `Integrations`. Search and select `Kubernetes`. Click `Connect` and copy the `Integration ID` to your clipboard. The `Integration ID` will be a UUID with a format similar to `abcd1234-abcd-1234-abcd-1234abcd1234`.
 
-![](../../../../.gitbook/assets/snyk_integrations_01.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk_integrations_01.png)
 
-### Install the Snyk controller
+## Install the Snyk controller
 
-#### Helm chart
+### Helm chart
 
 From the terminal, ensure that you have [helm installed ](https://helm.sh/docs/intro/install/)then, add the Snyk Charts repository to Helm with the following command:
 
@@ -26,7 +26,7 @@ If successful, you will see output similar to the following:
 "snyk-charts" has been added to your repositories
 ```
 
-#### Namespace
+### Namespace
 
 Once added, we will need to create a unique namespace for the Snyk controller. Run the following command:
 
@@ -40,7 +40,7 @@ If successful, you will see output similar to the following:
 namespace/snyk-monitor created
 ```
 
-#### Secret
+### Secret
 
 The Snyk monitor runs by using your Snyk `Integration ID`, and using a `dockercfg` file. If you are not using any private registries, create a Kubernetes secret called `snyk-monitor` containing the Snyk `Integration ID` from the previous step and run the following command:
 
@@ -56,7 +56,7 @@ If successful, you will see output similar to the following:
 secret/snyk-monitor created
 ```
 
-#### Deploy
+### Deploy
 
 Now, install the Snyk Helm chart to your AKS cluster:
 
@@ -77,7 +77,7 @@ REVISION: 1
 TEST SUITE: None
 ```
 
-#### Test
+### Test
 
 We can also validate our pod is running with the following command:
 
@@ -94,15 +94,15 @@ snyk-monitor-544ff7ccd9-qkwj8   1/1     Running   0          4m47s
 
 Note that Snyk Monitor will require outbound internet access.
 
-### Import Projects
+## Import Projects
 
 From the Kubernetes integration menu, select the **Add your Kubernetes workloads to Snyk** button.
 
-![](../../../../.gitbook/assets/snyk-k8s-config-01.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-k8s-config-01.png)
 
 Then select the desired workloads and click **Add selected workloads**.
 
-![](../../../../.gitbook/assets/snyk-k8s-import-01.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-k8s-import-01.png)
 
 Your project will be scanned and results available in the **Projects** menu.
 

@@ -6,21 +6,21 @@ The [`Projects`](https://solutions.snyk.io/snyk-academy/open-source/import-scm-p
 2. Container registry with [Amazon Elastic Container Registry \(ECR\)](https://support.snyk.io/hc/en-us/articles/360003947077-Amazon-Elastic-Container-Registry-ECR-add-images-to-Snyk)
 3. Cloud native applications on [Kubernetes](https://support.snyk.io/hc/en-us/articles/360003947117-Adding-Kubernetes-workloads-for-security-scanning)
 
-#### Source Code Management
+## Source Code Management
 
 A scan of our Git repository will yield any potential vulnerabilities in our applications open source dependencies.
 
-![](../../../../../.gitbook/assets/circleci_source_scan.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/circleci_source_scan.png)
 
-#### Container Registry
+## Container Registry
 
 Scanning container images in our private registry will analyze our base image and provide upgrade recommendations to reduce known vulnerabilities.
 
-![](../../../../../.gitbook/assets/circleci_ecr_scan.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/circleci_ecr_scan.png)
 
-#### Kubernetes
+## Kubernetes
 
 Enabling the Kubernetes integration will provide insights and guidance on fixing security misconfigurations in your deployments.
 
-![](../../../../../.gitbook/assets/circleci_eks_scan.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/circleci_eks_scan.png)
 

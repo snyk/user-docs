@@ -1,19 +1,19 @@
 # config.yml
 
-### CircleCI Configuration Walk-through
+## CircleCI Configuration Walk-through
 
 {% hint style="info" %}
 CircleCI orbs are reusable package of YAML configuration that condenses repeated pieces of config into a single line of code. Learn more about why to use an orb or explore use cases [here](https://circleci.com/orbs/).
 {% endhint %}
 
-#### The basics
+### The basics
 
 We have defined our [`version`](https://circleci.com/docs/2.0/configuration-reference/#version) as [Config Reference 2.1](https://circleci.com/docs/reference-2-1/#section=configuration) as well as the [`orbs`](https://circleci.com/docs/2.0/configuration-reference/#orbs-requires-version-21) we intend to leverage for our job. We will be using the following orbs:
 
-*  [`aws-eks`](https://circleci.com/orbs/registry/orb/circleci/aws-eks) for working with Amazon Elastic Container Service for Kubernetes \(Amazon EKS\).
-*  [`aws-ecr`](https://circleci.com/orbs/registry/orb/circleci/aws-ecr) to build images and push them to the Amazon Elastic Container Registry.
-*  [`kubernetes`](https://circleci.com/orbs/registry/orb/circleci/kubernetes) which is a collection of tools for working with Kubernetes on CircleCI.
-*  [`snyk`](https://circleci.com/orbs/registry/orb/snyk/snyk) to find, fix and monitor known vulnerabilities in your app dependencies and docker image.
+* [`aws-eks`](https://circleci.com/orbs/registry/orb/circleci/aws-eks) for working with Amazon Elastic Container Service for Kubernetes \(Amazon EKS\).
+* [`aws-ecr`](https://circleci.com/orbs/registry/orb/circleci/aws-ecr) to build images and push them to the Amazon Elastic Container Registry.
+* [`kubernetes`](https://circleci.com/orbs/registry/orb/circleci/kubernetes) which is a collection of tools for working with Kubernetes on CircleCI.
+* [`snyk`](https://circleci.com/orbs/registry/orb/snyk/snyk) to find, fix and monitor known vulnerabilities in your app dependencies and docker image.
 
 ```yaml
 version: 2.1
@@ -36,7 +36,7 @@ In the interest of efficiency, we have also defined a few defaults for our proje
 Did you know that you can search the [CircleCI registry](https://circleci.com/orbs/registry/) for several _**certified**_ and _**partner**_ orbs to solve most use cases?
 {% endhint %}
 
-#### Workflows
+### Workflows
 
 Our example `config.yml` file also organizes and orchestrates our defined jobs using [`workflows`](https://circleci.com/docs/2.0/configuration-reference/#workflows) .
 
@@ -62,8 +62,4 @@ workflows:
           requires:
             - build_and_push_image
 ```
-
-
-
-
 
