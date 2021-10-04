@@ -24,7 +24,7 @@ Snyk's Bitbucket Cloud integration allows you to continuously perform security s
 8. Snyk scans the selected repositories for dependency files \(such as package.json and pom.xml\) in the entire directory tree, and import them to Snyk as projects:
 9. The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
-![](../../../.gitbook/assets/444%20%282%29%20%284%29%20%284%29%20%284%29%20%285%29%20%284%29%20%289%29.png)
+![](../../../.gitbook/assets/444%20%282%29%20%284%29%20%284%29%20%284%29%20%285%29%20%284%29%20%287%29.png)
 
 ## Bitbucket Cloud Integration Features
 
@@ -36,7 +36,7 @@ Snyk produces advanced security reports, allowing you to explore the vulnerabili
 
 This is an example of a project level security report:
 
-![](../../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%286%29%20%281%29%20%2814%29.png)
+![](../../../.gitbook/assets/mceclip0-22-%20%282%29%20%285%29%20%286%29%20%281%29%20%2822%29.png)
 
 ## Projects monitoring and automatic fix pull requests
 
@@ -50,7 +50,7 @@ To review and adjust the automatic fix pull request settings:
 
 Click on settings![cog\_icon.png](../../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 2. Select **Edit Settings** for Bitbucket Cloud. 3. Navigate to **Automatic fix pull requests**:
 
-![](../../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%287%29%20%283%29%20%2817%29.png)
+![](../../../.gitbook/assets/mceclip4%20%281%29%20%282%29%20%286%29%20%287%29%20%283%29%20%2824%29.png)
 
 ## Pull request tests
 

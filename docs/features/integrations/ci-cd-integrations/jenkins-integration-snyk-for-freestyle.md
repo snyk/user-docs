@@ -26,5 +26,5 @@ For any Freestyle project, you can add Snyk to your build to scan the code while
     * If you checkmarked the **Monitor project on build** option, then Snyk displays all vulnerability results and details from the **Snyk Security Report** area of the **Build** menu and pushes a snapshot for continuous monitoring to the Snyk UI. If a severity threshold was defined for a severity that is assigned to any vulnerability in your project, Jenkins breaks the build. Otherwise, Jenkins continues to run the build to completion \(success or failure\) and Snyk activity ends.
 11. From the top of the report, click **View on Snyk.io** to view the snapshot and vulnerability information directly from our app.
 
-![](../../../.gitbook/assets/ci-cd%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29%20%284%29.png)
+![](../../../.gitbook/assets/ci-cd%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29%20%282%29.png)
 

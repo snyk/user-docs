@@ -7,7 +7,7 @@ To use our API, you must first authenticate your Snyk account with an API token.
 3. From the token field, click **click to show** and then select and copy your API token. 
 4. To use our API, use an Authorization header, preceded by the token:
 
-![api token screen; revoke; regenerate; click to show](../../.gitbook/assets/uuid-8d94edf8-b42b-e5b3-ada1-e157d18ff884-en%20%281%29%20%282%29%20%282%29%20%281%29%20%284%29.png)
+![api token screen; revoke; regenerate; click to show](../../.gitbook/assets/uuid-8d94edf8-b42b-e5b3-ada1-e157d18ff884-en%20%281%29%20%282%29%20%282%29%20%281%29%20%283%29.png)
 
 ```text
    Authorization: token API_KEY

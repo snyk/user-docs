@@ -212,7 +212,7 @@ From the Snyk UI, use these parameters to customize your language preferences fo
 
 ### Update language preferences
 
-![](../../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%2822%29.gif)
+![](../../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%2815%29.gif)
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage
 2. Click on settings ![](../../../.gitbook/assets/cog_icon.png) &gt; **Languages**

@@ -60,7 +60,7 @@ The following table describes the different parts of the Issues area as displaye
           <img src="../../../.gitbook/assets/mceclip3-3-.png" alt="mceclip3.png"
           />High</p>
         <p>
-          <img src="../../../.gitbook/assets/mceclip4 (2) (1) (1) (4) (5) (5) (3) (1) (9).png"
+          <img src="../../../.gitbook/assets/mceclip4 (2) (1) (1) (4) (5) (5) (3) (1) (1).png"
           alt="mceclip4.png" />Medium</p>
         <p>
           <img src="../../../.gitbook/assets/mceclip6 (4) (5) (5) (5) (2).png" alt="mceclip6.png"

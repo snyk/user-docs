@@ -9,15 +9,15 @@
 
 After installation, you can get started writing rules with our [Getting started](getting-started-with-the-sdk/) guide.
 
-### Install the SDK with npm
+## Install the SDK with npm
 
 Install our SDK using npm.
 
-#### **Prerequisites**
+### **Prerequisites**
 
 * Ensure you’ve installed the latest version of npm on your local environment, using Node version 10 or later.
 
-#### **Steps**
+### **Steps**
 
 Run this command to install it for local use:
 
@@ -31,7 +31,7 @@ Once installed, you are ready to use the SDK. Run the following command to verif
 snyk-iac-rules --help
 ```
 
-### Install the SDK using the prebuilt binaries
+## Install the SDK using the prebuilt binaries
 
 You can download and use the SDK's prebuilt binaries. To download the prebuilt binary, visit the [**Releases tab**](https://github.com/snyk/snyk-iac-rules/releases) in the SDK repository page in GitHub:
 
@@ -50,11 +50,11 @@ To verify the ability to use it, run:
 snyk-iac-rules --help
 ```
 
-### Install the SDK with Homebrew
+## Install the SDK with Homebrew
 
 From macOS and Linux environments, you can use Homebrew to install our SDK. The repository for installation is stored in [our GitHub](https://github.com/snyk/homebrew-tap).
 
-#### **Prerequisites**
+### **Prerequisites**
 
 * Supported for macOS and Linux environments only.
 * Ensure [Homebrew](https://brew.sh/index_he) has already been installed:
@@ -63,7 +63,7 @@ From macOS and Linux environments, you can use Homebrew to install our SDK. The 
   brew tap snyk/tap
   ```
 
-#### **Steps**
+### **Steps**
 
 Install the SDK as follows:
 
@@ -71,11 +71,11 @@ Install the SDK as follows:
 brew install snyk-iac-rules
 ```
 
-### Install the SDK with the Windows Scoop package manager
+## Install the SDK with the Windows Scoop package manager
 
 From Windows environments, you can use Scoop to install our `snyk-iac-rules` SDK. The repository for installation is stored in [our GitHub](https://github.com/snyk/scoop-snyk).
 
-#### **Prerequisites**
+### **Prerequisites**
 
 * Supported for Windows environments only.
 * Ensure [Scoop](https://scoop.sh/) has already been installed:
@@ -84,7 +84,7 @@ From Windows environments, you can use Scoop to install our `snyk-iac-rules` SDK
   scoop bucket add snyk https://github.com/snyk/scoop-snyk
   ```
 
-#### **Steps**
+### **Steps**
 
 Install the SDK as follows:
 
@@ -92,7 +92,7 @@ Install the SDK as follows:
 scoop install snyk-iac-rules
 ```
 
-### See also
+## See also
 
 * [​Getting started with the SDK​](getting-started-with-the-sdk/)
 * ​[SDK reference​](sdk-reference.md)

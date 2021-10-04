@@ -65,7 +65,7 @@ Project path:      goof
 4 [High]  7 [Medium]
 ```
 
-### Results review
+## Results review
 
 Here we can see that our snyk code testing found 11 issues, 4 high and 7 medium.
 

@@ -241,11 +241,11 @@ We suggest you exclude patches from the auto fix PRs, if your developers are not
 
 You should ask your developers to consider the merge advice label that appears on the auto fix PRs:
 
-![](../.gitbook/assets/merge-advice-review-recommended%20%282%29%20%282%29%20%282%29%20%286%29.png)
+![](../.gitbook/assets/merge-advice-review-recommended%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
-![](../.gitbook/assets/advice-green%20%281%29%20%282%29%20%282%29%20%284%29%20%283%29.png)
+![](../.gitbook/assets/advice-green%20%281%29%20%282%29%20%282%29%20%284%29%20%283%29%20%281%29.png)
 
-![](../.gitbook/assets/merge-advice%20%282%29%20%282%29%20%284%29%20%282%29%20%281%29%20%2816%29.png)
+![](../.gitbook/assets/merge-advice%20%282%29%20%282%29%20%284%29%20%282%29%20%281%29%20%2817%29.png)
 
 {% hint style="info" %}
 Snyk auto fix PRs are only generated for new issues.
@@ -284,7 +284,7 @@ To set PR Settings on the project level, overriding the PR settings on the organ
 2. Click **Projects**.
 3. Navigate to the relevant project and click the **Settings** cog:
 
-   ![](../.gitbook/assets/image%20%2856%29%20%282%29%20%283%29%20%283%29%20%283%29%20%283%29%20%284%29%20%285%29%20%285%29%20%285%29%20%285%29.png)
+   ![](../.gitbook/assets/image%20%2856%29%20%282%29%20%283%29%20%283%29%20%283%29%20%283%29%20%284%29%20%285%29%20%285%29%20%285%29%20%285%29%20%283%29%20%285%29.png)
 
 4. From the Settings area, click on the integration settings from the left panel menu to apply unique settings for that one project.
 5. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled.

@@ -173,11 +173,11 @@ To complete your log in:
 
 These worksheets include the information to enter in your Identity provider and the information you need to collect before submitting a ticket to Snyk Support to request single sign-on.
 
-{% file src="../../../.gitbook/assets/sso-oidc-worksheet-1- \(1\) \(1\) \(1\) \(1\).pdf" caption="SSO OIDC Worksheet" %}
+{% file src="../../../.gitbook/assets/sso-oidc-worksheet-1- \(1\) \(1\) \(1\) \(1\) \(1\).pdf" caption="SSO OIDC Worksheet" %}
 
-{% file src="../../../.gitbook/assets/sso-adfs-worksheet \(1\) \(1\) \(1\) \(1\).pdf" caption="SSO ADFS Worksheet" %}
+{% file src="../../../.gitbook/assets/sso-adfs-worksheet \(1\) \(1\) \(1\) \(1\) \(1\).pdf" caption="SSO ADFS Worksheet" %}
 
-{% file src="../../../.gitbook/assets/sso-azure-worksheet \(1\) \(1\) \(1\) \(1\).pdf" caption="SSO Azure Worksheet" %}
+{% file src="../../../.gitbook/assets/sso-azure-worksheet \(1\) \(1\) \(1\) \(1\) \(1\).pdf" caption="SSO Azure Worksheet" %}
 
-{% file src="../../../.gitbook/assets/sso-saml-worksheet \(1\) \(1\) \(1\) \(1\).pdf" caption="SSO SAML Worksheet" %}
+{% file src="../../../.gitbook/assets/sso-saml-worksheet \(1\) \(1\) \(1\) \(1\) \(1\).pdf" caption="SSO SAML Worksheet" %}
 
