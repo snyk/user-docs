@@ -33,6 +33,11 @@
     * [Project tags](getting-started/introduction-to-snyk-projects/project-tags.md)
     * [Project attributes](getting-started/introduction-to-snyk-projects/project-attributes.md)
   * [Getting started with Snyk dashboard](getting-started/getting-started-with-snyk-dashboard.md)
+
+## PRODUCTS
+
+---
+
 * [Snyk CLI](snyk-cli/README.md)
   * [Guides for our CLI](snyk-cli/guides-for-our-cli/README.md)
     * [Getting started with the CLI](snyk-cli/guides-for-our-cli/getting-started-with-the-cli.md)
@@ -206,6 +211,11 @@
       * [Examples of custom rules](snyk-infrastructure-as-code/custom-rules/getting-started-with-the-sdk/examples.md)
     * [Running IaC custom rules](snyk-infrastructure-as-code/custom-rules/how-to-run-custom-rules-with-the-snyk-cli.md)
     * [SDK Reference](snyk-infrastructure-as-code/custom-rules/sdk-reference.md)
+
+## FEATURES
+
+---
+
 * [Snyk API info](snyk-api-info/README.md)
   * [Authentication for API](snyk-api-info/authentication-for-api.md)
   * [Revoking and regenerating Snyk API tokens](snyk-api-info/revoking-and-regenerating-snyk-api-tokens.md)
