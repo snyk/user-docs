@@ -34,3 +34,5 @@ Snyk scan results contain a rich set of metadata about the vulnerabilities disco
 | malicious | Boolean | Indication if the vuln is known to mark a malicious package | FALSE |
 | package | String | Package name | org.quartz-scheduler.internal:quartz-core |
 
+
+

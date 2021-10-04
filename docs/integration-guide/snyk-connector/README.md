@@ -1,6 +1,6 @@
 # Snyk Connector
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/container-intergration.png)
+![](../../.gitbook/assets/container-intergration.png)
 
 ## About this guide.
 
@@ -19,4 +19,6 @@ Snyk maintains important information about your application's vulnerabilities. C
 * Vulnerability Management and Aggregation - This use case collects vulnerabilities across the entire infrastructure stack, including application vulnerabilities, to aggregate and prioritize. Snyk's data represents the application vulnerabilities which can be combined with the infrastructure stack vulnerabilities.
 * SIEM integrations - This use case integrates application vulnerabilities to display into SIEM  monitoring and alerting solutions.
 * Dashboards and data visualizers - This use case extracts issues and vulnerabilities to display on custom dashboards or into data visualization tools.
+
+## 
 

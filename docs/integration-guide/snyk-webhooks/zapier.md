@@ -17,11 +17,11 @@ First of all, we need to create a new Zap in [Zapier](https://zapier.com/)
 
 In order to have an access to request headers, we need to create **"Catch Raw Hook"** trigger. It comes with a disadvantage that request payload will be provided as a string and we will need to parse it to the JSON.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/untitled%20%281%29.png)
+![](../../.gitbook/assets/untitled%20%281%29.png)
 
 It will provide us a webhook url, were we can send requests:
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/untitled-1%20%281%29.png)
+![](../../.gitbook/assets/untitled-1%20%281%29.png)
 
 Now we need to create a Webhook in Snyk via API with provided url.
 
@@ -58,19 +58,19 @@ Now we are able to ping a webhook, in order to test a Zapier's trigger.
 
 Now we will be able to select a ping request from the list, and map fields.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/untitled-2%20%281%29.png)
+![](../../.gitbook/assets/untitled-2%20%281%29.png)
 
 ### Action \(validate a payload\)
 
-In order to validate a payload, we need to create a JS Action:
+In order to validate a payload, we need to create a JS Action: 
 
 **"Code by Zapier" → "Run Javascript"**
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/untitled-3%20%281%29.png)
+![](../../.gitbook/assets/untitled-3%20%281%29.png)
 
 We need to map `headers['X-Hub-Signature']` and payload string to the snippet variables.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/untitled-4%20%281%29.png)
+![](../../.gitbook/assets/untitled-4%20%281%29.png)
 
 Following snippet will introduce a `isValid: boolean` variable to the Zap's fields.
 
@@ -103,17 +103,17 @@ try {
 
 Test the snippet, make sure `isValid === true`.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/untitled-5%20%281%29.png)
+![](../../.gitbook/assets/untitled-5%20%281%29.png)
 
 ### Action \(parse a payload\)
 
 Let's create another action, to parse a payload from string to something Zapier can understand.
 
-We need to create the same JS Action:
+We need to create the same JS Action: 
 
 **"Code by Zapier" → "Run Javascript"**, with the following field mapping:
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/untitled-6%20%281%29.png)
+![](../../.gitbook/assets/untitled-6%20%281%29.png)
 
 And the following JS snippet:
 
@@ -131,7 +131,7 @@ That will parse a request payload and map it to Zap's variables.
 
 New issues are provided as a list of objects, unfortunately, Zapier doesn't understand that format well, rather it likes a list of strings. So We need to format `newIssues` to `string[]`.
 
-Let's create one more JS Action:
+Let's create one more JS Action: 
 
 **"Code by Zapier" → "Run Javascript"**, and paste the following snippet:
 
@@ -158,21 +158,21 @@ Now with all fields provided, we can decide whatever we want to do anything with
 
 To filter, we need to create **"Filter by Zapier"** app:
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/untitled-7%20%281%29.png)
+![](../../.gitbook/assets/untitled-7%20%281%29.png)
 
 Now you will be able to choose how you want it to be filtered.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/untitled-8%20%281%29.png)
+![](../../.gitbook/assets/untitled-8%20%281%29.png)
 
 ### Action \(send a notification\)
 
 With the actions above, we are able to access all necessary fields, and we can build a notification template. In my case, I choose to send an email. But it can be anything else.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/untitled-9%20%281%29.png)
+![](../../.gitbook/assets/untitled-9%20%281%29.png)
 
 ### Result
 
 The notification will look like this:
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/zapier-notification.png)
+![](../../.gitbook/assets/zapier-notification.png)
 

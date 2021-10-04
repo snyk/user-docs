@@ -196,7 +196,7 @@ application/json; charset=utf-8
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 Ok
 ```
 {% endapi-method-response-example %}
@@ -242,7 +242,7 @@ application/json; charset=utf-8
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 Ok
 ```
 {% endapi-method-response-example %}

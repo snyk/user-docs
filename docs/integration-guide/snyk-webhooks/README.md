@@ -8,11 +8,11 @@ When events are triggered, Snyk sends HTTP POST requests to URLs you have config
 
 #### Notifications
 
-Receive instant notifications/alerts in your organization's business communication/collaboration software. Please refer to our free tutorial on setting this up with [Microsoft Teams](../../../../partner-workshops/amazon-web-services/microsoft-azure/notifications-in-microsoft-teams/) for step-by-step instructions.
+Receive instant notifications/alerts in your organization's business communication/collaboration software. Please refer to our free tutorial on setting this up with [Microsoft Teams](../../partner-workshops/microsoft-azure/notifications-in-microsoft-teams/) for step-by-step instructions.
 
 #### Incident Response
 
-Respond to critical issues before they impact your business. Embrace modern incident management and Snyk to stay ahead of application security. Read more about this use case in the blog ["Shifting left security incident management with the Snyk & Opsgenie integration"](https://snyk.io/blog/security-incident-management-snyk-opsgenie-integration/) as well as our free [Opsgenie](../../../../partner-workshops/amazon-web-services/atlassian/opsgenie/) that guides you on configuring this integration.
+Respond to critical issues before they impact your business. Embrace modern incident management and Snyk to stay ahead of application security. Read more about this use case in the blog ["Shifting left security incident management with the Snyk & Opsgenie integration"](https://snyk.io/blog/security-incident-management-snyk-opsgenie-integration/) as well as our free  [Opsgenie](../../partner-workshops/atlassian/opsgenie/) that guides you on configuring this integration. 
 
 #### Security Information and Event Management \(SIEM\)
 
@@ -63,11 +63,11 @@ function​ ​verifySignature​(request, secret) {
     const​ hmac = crypto.createHmac(​'sha256'​, secret); 
     ​const​ buffer = ​JSON​.stringify(request.body); 
     hmac.update(buffer, ​'utf8'​);
-
+    
     const​ signature = ​`sha256=${hmac.digest('hex')}`​;
-
+    
     return signature === request.headers['x-hub-signature'​];
-}
+} 
 ```
 
 ### Configure webhooks
@@ -122,4 +122,6 @@ sha256=ed19e2591ec0a157ee109cd394bb68c62a7a82125b4c8f6617f8b42c867d71c0
 User-Agent: Snyk-Webhooks/044aadd
 Content-Type: application/json
 ```
+
+
 
