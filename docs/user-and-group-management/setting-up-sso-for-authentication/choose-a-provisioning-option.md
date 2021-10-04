@@ -38,5 +38,3 @@ You can configure SSO differently for each of your different Snyk groups. You ca
 
 Work with your Customer Success Manager and Snyk Technical Services to prepare for implementing this SSO option.
 
-Read more about the next step, [set up single sign-on](https://support.snyk.io/hc/en-us/articles/360017753618).
-
