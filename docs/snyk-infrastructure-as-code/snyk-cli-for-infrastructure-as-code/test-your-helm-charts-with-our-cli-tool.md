@@ -15,6 +15,7 @@ snyk iac test ./output
 {% tab title="Windows PowerShell" %}
 ```
 helm template .\helm\ --output-dir .\output\
+snyk iac test .\output\
 ```
 {% endtab %}
 {% endtabs %}
