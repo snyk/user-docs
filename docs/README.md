@@ -8,7 +8,7 @@ Welcome to the Snyk user documentation portal!
   * [Snyk Open Source](snyk-open-source/)
   * [Snyk Code](snyk-code/)
   * [Snyk Container](snyk-container/)
-  * [Snyk IaC](snyk-infrastructure-as-code/)
+  * [Snyk Infrastructure as Code](snyk-infrastructure-as-code/)
 * [Snyk CLI](snyk-cli/): learn about the Snyk Command-Line interface 
 * [Integrations](integrations/): information to integrate Snyk into your application development cycle
 

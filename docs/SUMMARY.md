@@ -191,7 +191,7 @@
     * [Test your AWS CDK files with our CLI tool](snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-aws-cdk-files-with-our-cli-tool.md)
     * [Test your Kubernetes files with our CLI tool](snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kubernetes-files-with-our-cli-tool.md)
     * [Test your Kustomize files with our CLI tool](snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kustomize-files-with-our-cli-tool.md)
-    * [Test your Helm Charts with our CLI tool](snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-helm-charts-with-our-cli-tool.md)
+    * [Testing Helm Charts with our CLI tool](snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-helm-charts-with-our-cli-tool.md)
     * [Understanding the CLI Output](snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-configuration-scan-issues.md)
   * [IaC functions](snyk-infrastructure-as-code/iac-functions/README.md)
     * [View Infrastructure as Code issues](snyk-infrastructure-as-code/iac-functions/view-infrastructure-as-code-issues.md)
