@@ -2,13 +2,13 @@
 
 ## Background
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-opensource-01.png)
+![](../../../.gitbook/assets/snyk-opensource-01.png)
 
 Scanning your application for vulnerabilities in your open source dependencies begins at the source. Earlier, when we enabled the Snyk integration to Bitbucket and imported our first project we saw vulnerability counts based on our [packages.json](https://bitbucket.org/snyk/patterns-library-atlassian-aws/src/master/app/goof/package.json) as well as detailed information for each.
 
 When you review the results in Snyk, you not only receive context such as severity and exploit maturity for your vulnerabilities. You also receive the following powerful features:
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-vuln-details.png)
+![](../../../.gitbook/assets/snyk-vuln-details.png)
 
 * [Fix pull request](https://support.snyk.io/hc/en-us/articles/360003891038-Fix-your-vulnerabilities) to help you fix vulnerabilities by either upgrading the direct dependencies or patching the vulnerability.
 * [Priority Score](https://snyk.io/blog/snyks-developer-first-prioritization-capabilities/) to help you effectively prioritize fixes.

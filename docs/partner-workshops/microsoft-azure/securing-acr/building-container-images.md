@@ -6,7 +6,7 @@ In **Securing AKS with Snyk**, we deployed an application to our Kubernetes clus
 
 Later, when we scanned our Kubernetes workload, we found vulnerabilities in our Kubernetes security configuration as well as our container images. We were able to fix the security configuration issues detected. However, when we examined our container images, we noticed the following alert:
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk_scan_06.png)
+![](../../../.gitbook/assets/snyk_scan_06.png)
 
 In this module, we will cover some best practices for building container images, storing these in a private registry like ACR, and monitoring those registries with Snyk.
 
@@ -150,5 +150,5 @@ v1
 
 Of course, we can also view the same results from the Azure portal:
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/acr_repository_01.png)
+![](../../../.gitbook/assets/acr_repository_01.png)
 

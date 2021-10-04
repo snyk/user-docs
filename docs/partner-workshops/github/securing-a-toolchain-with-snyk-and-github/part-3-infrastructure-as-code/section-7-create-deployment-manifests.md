@@ -4,7 +4,7 @@
 
 Let's start by creating a new branch from our `develop` branch, where we'll create the deployment manifests for our application before merging them to `develop`. Call it `add-iac-files` .
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-iac-createbranch.png)
+![](../../../.gitbook/assets/gh-iac-createbranch.png)
 
 ## Step 2: Create the application manifests
 
@@ -16,7 +16,7 @@ In this step we create the YAML files with the deployment config for our applica
 
 First we create the `Deployment` , the configuration file that tells orchestration environments how to spin up the Goof container. Switch to the new branch, click on "Add File", then "Create new file".
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-iac-createfile.png)
+![](../../../.gitbook/assets/gh-iac-createfile.png)
 
 Call the new file `goof-deployment.yaml` and paste this in as the contents of the file.
 
@@ -72,7 +72,7 @@ spec:
 
 When ready, commit the changes directly to the `add-iac-files` branch.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-iac-commitdeployment.png)
+![](../../../.gitbook/assets/gh-iac-commitdeployment.png)
 
 ### Create the Service definition
 
@@ -115,7 +115,7 @@ spec:
 
 Commit the file directly to the `add-iac-files` branch.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-iac-commitservice.png)
+![](../../../.gitbook/assets/gh-iac-commitservice.png)
 
 ## Step 3: Create a Snyk IaC Test workflow
 
@@ -165,7 +165,7 @@ These actions take the manifest files we created as input, and can re-deploy the
 
 Our Snyk Gate is located in `.github/workflows/snyk-gate.yml` . While in the `add-iac-files` branch, open it with the GitHub web editor.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-iac-editgate.png)
+![](../../../.gitbook/assets/gh-iac-editgate.png)
 
 Replace the contents of the file with the following. Notice the new `iac-security` job. In our job definition, we've decided to fail the check if any medium severity or higher issues are present.
 
@@ -201,7 +201,7 @@ jobs:
 
 When ready, commit the changed file directly to the `add-iac-files` branch.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-iac-commitgatechanges.png)
+![](../../../.gitbook/assets/gh-iac-commitgatechanges.png)
 
 ### Understand the new Snyk Gate workflow
 
@@ -216,7 +216,7 @@ These are tolerances our team settled on for our Production environment. Automat
 
 We're ready to merge the `add-iac-files` branch into the `develop` branch. In GitHub, initiate a Pull Request from `develop` to `PROD`. Remember to select your fork as the Base repo.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-iac-developpr.png)
+![](../../../.gitbook/assets/gh-iac-developpr.png)
 
 Once the PR is created, we can see the new Snyk IaC check workflow run as part of the Pull Request, which uploads the results into GitHub Security Code Scanning. When it completes, merge the changes.
 
@@ -224,11 +224,11 @@ Once the PR is created, we can see the new Snyk IaC check workflow run as part o
 
 Our `develop` branch now has what we need to deploy our application into Kubernetes! Let's open a Pull Request to merge our changes, and our deployment manifests, into `PROD`.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-iac-prodpr.png)
+![](../../../.gitbook/assets/gh-iac-prodpr.png)
 
 In the PR Checks, we see that our IaC gate failed!
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-iac-iacgatefail.png)
+![](../../../.gitbook/assets/gh-iac-iacgatefail.png)
 
 Leave the Pull Request open for now. In the next section, we'll more about the risks Snyk identified and prevented us from introducing into our Production branch.
 

@@ -1,6 +1,6 @@
 # Snyk Security for Bitbucket Cloud
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/blog-banner-atlassian-snyk.webp)
+![](../../../.gitbook/assets/blog-banner-atlassian-snyk.webp)
 
 {% embed url="https://www.youtube.com/watch?v=IqRjH7zkxiM" caption="" %}
 

@@ -4,7 +4,7 @@
 
 Now that we have added our Secrets and configured the environment variables in the pipeline let us review the results. Select the last run of the action, and let us examine the Snyk scan results.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/screen-shot-2020-08-22-at-11.28.15-am.png)
+![](../../../.gitbook/assets/screen-shot-2020-08-22-at-11.28.15-am.png)
 
 ## Snyk scan results
 
@@ -12,5 +12,5 @@ Snyk performed a Synk monitor command based on the configuration of the action. 
 
 In this GitHub pipeline, we added a GitHub Snyk action to perform the monitor in parallel with the Maven build process. The results were uploaded to your Snyk organization. We will review the results in Snyk later in this workshop.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/screen-shot-2020-08-22-at-11.52.35-am.png)
+![](../../../.gitbook/assets/screen-shot-2020-08-22-at-11.52.35-am.png)
 

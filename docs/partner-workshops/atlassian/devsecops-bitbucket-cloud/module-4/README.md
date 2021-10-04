@@ -8,11 +8,11 @@ weight: 60
 
 ## Background
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-bitbucket-flow-module-04.png)
+![](../../../.gitbook/assets/snyk-bitbucket-flow-module-04.png)
 
 Now it's time to put what we have learned in the previous modules to practice. We will go through three steps that will focus on fixing issues in your application source, container image, and Kubernetes configuration.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/kubernetes-02.png)
+![](../../../.gitbook/assets/kubernetes-02.png)
 
 ## Learning objective
 

@@ -32,7 +32,7 @@ Snyk can integrate with your Container Registry to easily import your container 
 
 ### Use Snyk with Docker's Tools
 
-Snyk and Docker partnered to bring Snyk scanning into Docker Desktop and Docker Hub. If you're using those tools in your development process, and want to learn more, check out our [Lab: Build Secure Containers with Docker and Snyk](../../docker/lab-build-secure-containers-with-docker-and-snyk/) to see it in action!
+Snyk and Docker partnered to bring Snyk scanning into Docker Desktop and Docker Hub. If you're using those tools in your development process, and want to learn more, check out our [Lab: Build Secure Containers with Docker and Snyk](../../../docker/lab-build-secure-containers-with-docker-and-snyk/) to see it in action!
 
 ## Snyk Infrastructure as Code
 

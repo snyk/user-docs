@@ -20,7 +20,7 @@ You can find your API Token one of two ways:
 * If you have the Snyk CLI, retrieve it by running `snyk config get api`
 * In the Snyk UI, head to your account [Settings Page](https://app.snyk.io/account) and retrieve it.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-token.png)
+![](../../../.gitbook/assets/snyk-token.png)
 
 {% hint style="info" %}
 Stuck? Check out [Revoking and regenerating Snyk API Tokens](https://support.snyk.io/hc/en-us/articles/360004008278-Revoking-and-regenerating-Snyk-API-tokens)
@@ -30,7 +30,7 @@ Stuck? Check out [Revoking and regenerating Snyk API Tokens](https://support.sny
 
 Store the Token in the Forked Repo's secrets by navigating to Settings -&gt; Secrets -&gt; New Repository Secret. Name the Secret `SNYK_TOKEN`
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-secrets.png)
+![](../../../.gitbook/assets/gh-secrets.png)
 
 {% hint style="info" %}
 Stuck? Check out [Creating Encrypted Secrets for a Repository](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository)
@@ -53,41 +53,41 @@ Switch to the `oss-actions` branch, and navigate to the `.github/workflows` fold
 Learn more about these, and other CLI commands, in [Snyk CLI Reference](https://support.snyk.io/hc/en-us/articles/360003812578-CLI-reference).
 {% endhint %}
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-snykgate.png)
+![](../../../.gitbook/assets/gh-snykgate.png)
 
 ### Add the Snyk Gate to the develop branch
 
 We'll create a Pull Request to add `snyk-gate.yml` to the `develop` branch. To open a Pull Request, first navigate to Pull Requests -&gt; New Pull Request.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-newpr.png)
+![](../../../.gitbook/assets/gh-newpr.png)
 
 {% hint style="danger" %}
 GitHub defaults to the upstream Snyk-Partners repo as the Base Repository as shown in the image below. Be sure to change that to your fork.
 {% endhint %}
 
-![Your PR should not look like this!](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-prcompare.png)
+![Your PR should not look like this!](../../../.gitbook/assets/gh-prcompare.png)
 
 In the **Comparing Changes** window, select the `develop` branch from your forked repo as the base repository, and the `oss-actions` as the head repository, then open the PR.
 
-![Ensure your fork is selected as the base repo before opening the PR.](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-oss-pr.png)
+![Ensure your fork is selected as the base repo before opening the PR.](../../../.gitbook/assets/gh-oss-pr.png)
 
 You should see that this PR adds the `snyk-gate.yml` file to the `develop` branch.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-oss-pr-1-.png)
+![](../../../.gitbook/assets/gh-oss-pr-1-.png)
 
 After input a name, description, and click **Create Pull Request** you'll be asked to **Merge Pull Request.**
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-mergepr.png)
+![](../../../.gitbook/assets/gh-mergepr.png)
 
 ## Step 3: Test the Security Gate
 
 To test this, open a New Pull Request. This time, set `PROD` as the Base, and `develop` as the Head.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-mainpr.png)
+![](../../../.gitbook/assets/gh-mainpr.png)
 
 In the Pull Request details, the Snyk Security Gate fails as expected because `develop` still contains the High Severity Vulnerabilities identified earlier.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-snykgateworks.png)
+![](../../../.gitbook/assets/gh-snykgateworks.png)
 
 You'll also notice two Snyk checks, `license/snyk` and `security/snyk`. These are making sure no **new** security or license issues are introduced. These **incremental** checks pass because we haven't introduced any risks that weren't already present.
 

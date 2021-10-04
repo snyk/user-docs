@@ -8,15 +8,15 @@ Even with 0 vulnerabilities, we can expose ourselves to risk by how our applicat
 
 In the Snyk project imported earlier, we can see the two Kubernetes manifests for the goof application. One deploys the application, and the other deploys the mongo database it needs.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-iac-dockerlab.png)
+![](../../../.gitbook/assets/snyk-iac-dockerlab.png)
 
 Clicking into either one of these brings you to the configuration risks Snyk identified in the file. Starting with the `goof-mongo-deployment.yaml` file, we see the following issues:
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/goof-mongo-issues.png)
+![](../../../.gitbook/assets/goof-mongo-issues.png)
 
 For each issue, Snyk calls out the issue identified, its impact, and how it can be resolved. It also highlights the line of code where the issue exists. In the example below, we see a Low Severity configuration risk that can be addressed by adding an `ImagePullPolicy` to the deployment.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/iac-pullpolicyissue.png)
+![](../../../.gitbook/assets/iac-pullpolicyissue.png)
 
 With this information, developers can either ignore the issue or make the necessary changes to their deployment manifests to fix them.
 
@@ -34,7 +34,7 @@ In this example, we'll fix a few issues we deem important enough to warrant a fi
 
 Let's look once again at the issue from above.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/iac-pullpolicyissue.png)
+![](../../../.gitbook/assets/iac-pullpolicyissue.png)
 
 Reading the issue description, this issue can be fixed by adding an `ImagePullPolicy` attribute to the `containers` spec. In your IDE, or text editor, add the attribute to `goof-mongo-deployment.yaml`.
 
@@ -51,7 +51,7 @@ spec:
 
 Let's look at another issue. This time, it has to do with the permissions given to the container.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/iac-runasnoonroot.png)
+![](../../../.gitbook/assets/iac-runasnoonroot.png)
 
 This one can be fixed by setting a `securityContext` on the `container`. To set this, add the following to the `goof-deployment-mongo.yaml` file.
 

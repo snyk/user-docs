@@ -35,11 +35,11 @@ The Repo is structured as follows:
 
 When you fork a Repo with existing workflows, GitHub disables GitHub Actions by default. To enable GitHub Actions, click on the Actions Tab, and then "Enable my Workflows".
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-actionson.png)
+![](../../../.gitbook/assets/gh-actionson.png)
 
 The `.github.workflows` folder contains CI workflows for the `develop` and `PROD` branches. These rebuild and test the app when code is pushed to the branch, to ensure no breaking changes are introduced. We'll add onto these files throughout the Lab to do more with GitHub Actions.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-devworkflows.png)
+![](../../../.gitbook/assets/gh-devworkflows.png)
 
 When ready, head on to Part 1 and get started!
 

@@ -10,7 +10,7 @@ Let's use the Snyk CLI to validate our Kubernetes files meet our security polici
 snyk iac test kubernetes/petclinic-deployment.yaml
 ```
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/screen-shot-2020-08-26-at-2.54.26-pm.png)
+![](../../../.gitbook/assets/screen-shot-2020-08-26-at-2.54.26-pm.png)
 
 {% hint style="info" %}
 This scan will be immediate.
@@ -48,9 +48,9 @@ k -n demo apply -f kubernetes/petclinic-svc-nodeport.yaml
 
 Validate the deployment using the SPC button at the top of your lab view.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/spc_button_purpcle_cicle.png)
+![](../../../.gitbook/assets/spc_button_purpcle_cicle.png)
 
 Assuming all configuration is correct, the SPC button will show the SPC home page.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/screen-shot-2020-08-28-at-3.57.03-pm.png)
+![](../../../.gitbook/assets/screen-shot-2020-08-28-at-3.57.03-pm.png)
 

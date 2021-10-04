@@ -24,7 +24,7 @@ Snyk generates automatic pull requests for your projects using the source contro
 This setting should be set from our initial configuration of GitHub
 {% endhint %}
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/auto_pr_setting.png)
+![](../../../.gitbook/assets/auto_pr_setting.png)
 
 Snyk will issues PRs for your projects when they are ready. You can view the PR in GitHub \(GitLab and Bitbucket have similar views\) by select the Pull Request tab at the top of the git repository. Keep in mind, Synk generates PRs overnight, and multiple pull requests exist for different dependencies.
 
@@ -32,7 +32,7 @@ Snyk will issues PRs for your projects when they are ready. You can view the PR 
 SPC will generate a PR given enough time.
 {% endhint %}
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/github_pull_req_auto.png)
+![](../../../.gitbook/assets/github_pull_req_auto.png)
 
 ## Open a fix PR
 
@@ -40,19 +40,19 @@ The Snyk UI offers the ability to create Pull Requests directly from the project
 
 Select the Open a fix PR and Snyk will start with the workflow to generate a PR for SPC. Prior to sending the PR to GitHub, the Snyk UI will show you what will be fixed by the PR, any partial fixes, and anything that will not be fixed. Submit the PR to GitHub and visit your GitHub repository Pull Request tab to view the Pull Request.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/open_pr.png)
+![](../../../.gitbook/assets/open_pr.png)
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/open_fix_pr_top_half.png)
+![](../../../.gitbook/assets/open_fix_pr_top_half.png)
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/open_fix_pr_bottom.png)
+![](../../../.gitbook/assets/open_fix_pr_bottom.png)
 
 ## Fix this vulnerability
 
 Snyk's _**fix this vulnerability**_ workflow is the same as the _**open a PR fix**_ workflow. When generating a PR, only the specified vulnerability issue is selected in the PR, as shown below. Find the Cross-site Scripting \(XSS\) vulnerability and start the PR workflow.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/screen-shot-2020-08-22-at-12.32.44-pm.png)
+![](../../../.gitbook/assets/screen-shot-2020-08-22-at-12.32.44-pm.png)
 
 Verify the issue is selected and complete the PR request.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/screen-shot-2020-08-22-at-12.40.36-pm.png)
+![](../../../.gitbook/assets/screen-shot-2020-08-22-at-12.40.36-pm.png)
 

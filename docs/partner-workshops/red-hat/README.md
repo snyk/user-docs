@@ -1,6 +1,6 @@
 # Red Hat
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/rted-hat-1-2048x434.png)
+![](../../.gitbook/assets/rted-hat-1-2048x434.png)
 
 ## Learn more
 

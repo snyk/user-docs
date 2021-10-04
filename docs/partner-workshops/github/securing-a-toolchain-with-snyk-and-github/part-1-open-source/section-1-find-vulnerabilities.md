@@ -18,7 +18,7 @@ First we need to connect Snyk to GitHub so we can import our Repository. Do so b
 2. Navigating to Integrations -&gt; Source Control -&gt; GitHub
 3. Fill in your Account Credentials to Connect your GitHub Account.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-gh.png)
+![](../../../.gitbook/assets/snyk-gh.png)
 
 ## Step 2: Import the forked Goof Repo into Snyk
 
@@ -28,13 +28,13 @@ Now that Snyk is connected to your GitHub Account, import the Repo into Snyk as 
 2. Click "Add Project" then select "GitHub"
 3. Click on the Repo you forked.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-ghimport.png)
+![](../../../.gitbook/assets/snyk-ghimport.png)
 
 ## Step 3: Explore your Repo's risks
 
 When the Repo imports, Snyk has found the `package.json` file where open source components for our Goof application are declared. We can see that they contain 60 vulnerabilities, including 31 High Severity ones! 😳
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-projvulns.png)
+![](../../../.gitbook/assets/snyk-projvulns.png)
 
 Before we start fixing Vulnerabilities, remember that our `PROD` branch contains the Production-ready version of the code. In the next section, we'll implement a Snyk Gate designed to "stop the bleeding", preventing any new vulnerabilities from making it into that branch.
 

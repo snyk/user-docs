@@ -4,7 +4,7 @@
 
 Let's begin by familiarizing ourselves with the [integration documentation](https://support.snyk.io/hc/en-us/articles/360004002198-Azure-Repos-integration). Then, from the [Snyk](https://snyk.io) web console, navigate to `Integrations`. Search and select `Azure Repos`.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk_integrations_09.png)
+![](../../../.gitbook/assets/snyk_integrations_09.png)
 
 From the configuration menu, you will need to perform three steps:
 
@@ -12,7 +12,7 @@ From the configuration menu, you will need to perform three steps:
 2. Generate a personal access token
 3. Copy and paste that token and click `save`
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk_integrations_10.png)
+![](../../../.gitbook/assets/snyk_integrations_10.png)
 
 ### Generate a Personal Access Token
 
@@ -23,11 +23,11 @@ When you click the `Create a personal access token` button illustrated in the ab
 3. Select `Read & write` for Code
 4. Click `Create`
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/azure_tokens_01.png)
+![](../../../.gitbook/assets/azure_tokens_01.png)
 
 Make sure that you copy the token and paste this into the Snyk integrations page for Azure Repos.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/azure_tokens_02.png)
+![](../../../.gitbook/assets/azure_tokens_02.png)
 
 You are now ready to add your Azure Repos repositories for scanning!
 

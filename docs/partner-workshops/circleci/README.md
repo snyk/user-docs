@@ -1,6 +1,6 @@
 # CircleCI
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/dotnet-2.png)
+![](../../.gitbook/assets/dotnet-2.png)
 
 You will need a valid CircleCI account to complete the exercises presented in these modules. If you do not have one you can [sign up for free](https://circleci.com/signup/?source-button=free).
 

@@ -34,7 +34,7 @@ When successfully completed, you will see output similar to the following:
 
 You can also validate the creation of the resource group in the Azure portal as illustrate below:
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/azure_resource_groups_05.png)
+![](../../../.gitbook/assets/azure_resource_groups_05.png)
 
 ### Create the ACR instance
 
@@ -95,7 +95,7 @@ Once the deployment completes the CLI will return a lengthy JSON response contai
 
 You can also view this within the Azure portal:
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/azure_resource_groups_06.png)
+![](../../../.gitbook/assets/azure_resource_groups_06.png)
 
 ### Log in to registry
 

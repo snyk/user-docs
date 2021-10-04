@@ -2,7 +2,7 @@
 
 When we drill down and view our ACR image by clicking on it from the Snyk web console, we will see the following message:
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk_scan_06.png)
+![](../../../.gitbook/assets/snyk_scan_06.png)
 
 We have made progress in building out a comprehensive security solution. We began with monitoring our Kubernetes cluster and identifying potential issues in our configuration as well as our image. Then, we learned how to create, manage and monitor a private registry so that we can iterate and pull images from this rather than the internet.
 

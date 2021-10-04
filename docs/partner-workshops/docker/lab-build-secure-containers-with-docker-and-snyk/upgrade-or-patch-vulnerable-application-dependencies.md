@@ -36,7 +36,7 @@ st5="curl $GOOF_HOST/public/%2e%2e/%2e%2e/%2E%2E/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e
 
 The good stuff is in `st4` and `st5`, where we see the leaked contents of the `/etc/passwd` file.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/st-exploit.png)
+![](../../../.gitbook/assets/st-exploit.png)
 
 Yikes. And this is just one example. Feel free to play around with the other exploits in this folder, the sample application is **very** vulnerable \(for now!\).
 
@@ -48,7 +48,7 @@ In Snyk, this, and other vulnerabilities in our dependencies, are shown under th
 Notice that the Dockerfile has less vulnerabilities! Snyk auto-retested it after our changes.
 {% endhint %}
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-ossproject.png)
+![](../../../.gitbook/assets/snyk-ossproject.png)
 
 ## Fix Vulnerabilities from the Snyk UI
 
@@ -67,19 +67,19 @@ We'll start with the first vulnerability, **zip slip**, since it's ordered the h
 
 Since a fix is available, Snyk can automatically upgrade the vulnerable dependency to a non-vulnerable version through a Pull Request. Click on "Fix this vulnerability" to do so.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-fixvuln.png)
+![](../../../.gitbook/assets/snyk-fixvuln.png)
 
 On the next screen, you'll be able to confirm the issue to fix with this PR.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-fixpropen.png)
+![](../../../.gitbook/assets/snyk-fixpropen.png)
 
 Looks good! Go ahead and open the PR. Once it's ready, you'll be taken to the PR in GitHub, where you can review the changes in the file diff view:
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/gh-prdiff.png)
+![](../../../.gitbook/assets/gh-prdiff.png)
 
 Now, go ahead and merge the PR! Back in Snyk, we can appreciate that our `package.json` file has 1 less High Severity Vulnerability.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-postfixpr.png)
+![](../../../.gitbook/assets/snyk-postfixpr.png)
 
 If you tried the zip-slip exploit, `git pull` the code to bring your local copy up to date with GitHub and try the exploit again. You'll notice it no longer works.
 
@@ -89,11 +89,11 @@ Fix Pull Requests are great for fixing individual vulnerabilities, and Snyk can 
 
 Using the `st` package exploit demonstrated above. Find the `Directory Traversal` vulnerability by looking through the list of issues in Snyk. See that updating `st` to version `0.2.5` fixes this issue.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/snyk-fixstvuln.png)
+![](../../../.gitbook/assets/snyk-fixstvuln.png)
 
 Make this change in your package.json file.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/st-fixvuln.png)
+![](../../../.gitbook/assets/st-fixvuln.png)
 
 To ensure this isn't exploitable, re-build and re-deploy the container to Kubernetes.
 
@@ -111,7 +111,7 @@ kubectl scale deployment goof --replicas=1
 
 Now try the exploit again. It should fail spectacularly.
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/post-stfix.png)
+![](../../../.gitbook/assets/post-stfix.png)
 
 ## Optional: Use what you learned to fix all vulnerabilities
 

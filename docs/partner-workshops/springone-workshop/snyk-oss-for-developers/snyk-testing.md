@@ -12,5 +12,5 @@ In the case of our sample application, all checks will pass and we can merge the
 For more details on the [Snyk Test for Pull Request](https://support.snyk.io/hc/en-us/articles/360004032117-GitHub-integration#UUID-58e66c47-1931-675e-6437-c48fc9b71438_section-5dc5a2318c45e-idm44771256643696) please see the product documentation
 {% endhint %}
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/screen-shot-2020-08-22-at-1.08.53-pm.png)
+![](../../../.gitbook/assets/screen-shot-2020-08-22-at-1.08.53-pm.png)
 

@@ -2,7 +2,7 @@
 
 ## Securing your Red Hat OpenShift workloads
 
-![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/redhat-snyk-pipeline%20%281%29.png)
+![](../../.gitbook/assets/redhat-snyk-pipeline%20%281%29.png)
 
 ### Welcome!
 
