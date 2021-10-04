@@ -2,8 +2,8 @@
 
 Once an administrator for your Snyk account has installed the Snyk controller on your Kubernetes cluster, add workloads for testing as follows:
 
-* [Snyk collaborators can manually add new Kubernetes projects](adding-kubernetes-workloads-for-security-scanning.md#manually-add-workloads)
-* [Kubernetes collaborators can mark workloads from the cluster to be automatically added to Snyk](adding-kubernetes-workloads-for-security-scanning.md#automatically-add-update-and-remove-workloads)
+* Snyk collaborators can manually add new Kubernetes projects
+* Kubernetes collaborators can mark workloads from the cluster to be automatically added to Snyk
 
 ## Prerequisites
 
