@@ -1,6 +1,6 @@
 # Setup
 
-### Save Password to Session Manager
+## Save Password to Session Manager
 
 Run the following command, replacing `abc123`, with **your unique token**. This places the token in the session parameter manager.
 
@@ -8,7 +8,7 @@ Run the following command, replacing `abc123`, with **your unique token**. This 
 aws ssm put-parameter --name "snykAuthToken" --value "abc123" --type SecureString
 ```
 
-### Setup the Application Scanning
+## Setup the Application Scanning
 
 We want to insert testing with **Snyk** after `maven` has built the application. The simplest method is to insert commands to download, authorize and run the **Snyk** commands after Mvn has built the application/dependency tree.
 
@@ -40,7 +40,7 @@ RUN ./snyk test --severity-threshold=medium
 RUN ./snyk monitor
 ```
 
-### Setting Up Docker Scanning
+## Setting Up Docker Scanning
 
 Later in the build process, a docker image is created. We want to analyze it for vulnerabilities. We will do this in `buildspec.yml`. First, pull the **Snyk** token `snykAuthToken` from the `parameter store`:
 
@@ -93,6 +93,4 @@ To try this module, let us copy the **Snyk** versions over to our build:
 cp modules/snyk/Dockerfile modules/containerize-application/Dockerfile
 cp modules/snyk/buildspec.yml buildspec.yml
 ```
-
-### 
 

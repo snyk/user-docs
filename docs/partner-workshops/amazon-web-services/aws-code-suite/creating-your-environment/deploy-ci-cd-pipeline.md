@@ -16,7 +16,7 @@ A mature CI/CD practice has the option of implementing continuous deployment whe
 
 ## CI/CD pipeline being deployed in this workshop
 
-![](../../../../../.gitbook/assets/aws-pipeline.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/aws-pipeline.png)
 
 1. Development and local testing: The developer will work on coding tasks with the Cloud9 IDE environment.  Once completed with the task the developer will commit her/his changes to the local git repository and test the changes.
 2. Push to remote master branch: When the developer is satisfied with the software changes, the developer will push those changes to the remote master branch.  In this workshop this is the AWS CodeCommit Repo. 
@@ -48,5 +48,5 @@ The Stack is built at Sun Aug  4 05:47:29 UTC 2019 - Please proceed
 
 At this point you should have a fully functioning CI/CD CodePipeline. If you head over to CodePipeline in the AWS console and click on the pipeline that begins with the name **WorkshopPipeline-Pipeline** you will see a similar screen to the one below.
 
-![](../../../../../.gitbook/assets/pipeline-view.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/pipeline-view.png)
 

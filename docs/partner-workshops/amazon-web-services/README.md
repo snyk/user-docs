@@ -1,12 +1,12 @@
 # Amazon Web Services
 
-![](../../../.gitbook/assets/aws-header-2-2048x521.png)
+![](https://github.com/snyk/user-docs/tree/0874305e3aea1ea3c57b0398879776ac062b3479/.gitbook/assets/aws-header-2-2048x521.png)
 
-Snyk is an AWS Partner Network \(APN\) [Advanced Technology Partner](https://aws.amazon.com/partners/find/partnerdetails/?n=Snyk&id=0010L00001kXlYOQA0). 
+Snyk is an AWS Partner Network \(APN\) [Advanced Technology Partner](https://aws.amazon.com/partners/find/partnerdetails/?n=Snyk&id=0010L00001kXlYOQA0).
 
 **Snyk: Developer-First Security** is available in the AWS Marketplace. 👉 [Get it now!](https://aws.amazon.com/marketplace/pp/B085VGM85Q?qid=1590102009179&sr=0-1&ref_=srh_res_product_title)
 
-#### Learn more
+## Learn more
 
 * [Snyk achieves Amazon Linux 2 ready designation](https://snyk.io/blog/snyk-amazon-linux-2-ready-designation/)
 * [Snyk ramps Amazon Web Services partnership to help enterprises with AWS vulnerability scanning](https://snyk.io/blog/snyk-aws-partnership-vuln-scanning/)

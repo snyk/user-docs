@@ -26,7 +26,7 @@ The Snyk command line interface \(CLI\) has three key commands for this exercise
 
 For the purposes of this module, **Snyk** will be inserted into two key processes, when the **application** is being built, and when the **Docker container** is created.
 
-This module has five sections: 
+This module has five sections:
 
 1. Obtain a token for testing from `https://snyk.io/` 
 2. Setting up application scanning
