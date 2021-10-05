@@ -12,9 +12,13 @@ Assign permissions based on your integration as follows:
 
 Assign permissions to detect Infrastructure as Code files as follows:
 
-* [**Terraform** files](https://docs.snyk.io/snyk-infrastructure-as-code/scan-terraform-files/detecting-terraform-configuration-files-using-a-broker)
-* \*\*\*\*[**CloudFormation** files](https://docs.snyk.io/snyk-infrastructure-as-code/scan-cloudformation-files/detecting-cloudformation-configuration-files-using-a-broker)
-* \*\*\*\*[**Kubernetes and other IaC** files](https://docs.snyk.io/snyk-infrastructure-as-code/detecting-infrastructure-as-code-files-using-a-broker)
+* [**Terraform**](https://docs.snyk.io/snyk-infrastructure-as-code/scan-terraform-files/detecting-terraform-configuration-files-using-a-broker)
+* [**CloudFormation**](https://docs.snyk.io/snyk-infrastructure-as-code/scan-cloudformation-files/detecting-cloudformation-configuration-files-using-a-broker)
+* [**Kubernetes and other IaC**](https://docs.snyk.io/snyk-infrastructure-as-code/detecting-infrastructure-as-code-files-using-a-broker)
+
+Add Snyk Code local git support through Snyk Broker:
+
+* [**Snyk Code Broker**](https://docs.snyk.io/products/snyk-code/snyk-code-local-git-support) setup
 
 ## Generate credentials in the target application for Snyk Broker
 
