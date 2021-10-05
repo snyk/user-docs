@@ -8,7 +8,7 @@ Snyk Apps are integrations that extend the functionality of the Snyk platform. T
 
 The easiest way to start building a new Snyk App is to clone our [Demo Snyk App](https://github.com/snyk/snyk-apps-demo) Github repository. You can either modify the demo to suit your App design or use it as a base for creating your own Snyk App.
 
-This document describes how to create a new Snyk App in the language of your choice, and can be used along with the [API documentation](https://snykv3.docs.apiary.io/#reference/apps) and our [OAuth2 documentation](https://snykoauth2.docs.apiary.io/). 
+This document describes how to create a new Snyk App in the language of your choice, and can be used along with the [API documentation](https://snykv3.docs.apiary.io/#reference/apps) and our [OAuth2 API documentation](https://snykoauth2.docs.apiary.io/). 
 
 ### Integrating Apps with Snyk
 
