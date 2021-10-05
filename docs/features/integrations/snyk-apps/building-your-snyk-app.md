@@ -7,6 +7,6 @@ You can now use the API with your Snyk App! Your users can [authorize access to 
 Some features are only available for paid and Enterprise plans.
 {% endhint %}
 
-Snyk Apps open a range of new opportunities. You can create your own reporting, your own metrics App or maybe a user management App. Maybe move your automated Snyk API scripts and transform them into Snyk App, that would add a better UX/UI experience for your Snyk organization users.  
+Snyk Apps open a range of new opportunities. You can create your own reporting, your own metrics App or maybe a user management App. Maybe move your automated Snyk API scripts and transform them into Snyk App, which would add a better UX/UI experience for your Snyk organization users.  
 
 
