@@ -37,14 +37,15 @@ To establish trust with Snyk, add an Entity ID, an ACS URL, and a Signing certif
 
 Use these details to set up the connection with your Identity provider \(IdP\):
 
-| Entity ID | **urn:auth0:snyk:saml-**_**{customer\_name}**_ \(Replace _{customer\_name}_ with a name for your company.\) |
+| Details | **Description** |
 | :--- | :--- |
+| Entity ID | **urn:auth0:snyk:saml-**_**{customer\_name}**_ \(Replace _{customer\_name}_ with a name for your company.\) |
 | ACS URL | [https://snyk.auth0.com/login/callback?connection=saml-](https://snyk.auth0.com/login/callback?connection=saml-)_**{customer\_name}**_ \(Replace _{customer\_name}_ with the same name for your company.\) |
 | Signing certificate | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem) |
 
 To map information from your Identity provider to Snyk, name your user attributes as follows \(using the same capitalization and spelling\):
 
-| **Attribute** | **Definition** |
+| **Attribute** | **Description** |
 | :--- | :--- |
 | **email** | The user email address |
 | **name** | The name of the person to be authenticated |
@@ -59,11 +60,15 @@ Obtain the following information from your identity provider and organization. P
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Sign-in URL</th>
-      <th style="text-align:left">The URL for your identity provider sign-in page</th>
+      <th style="text-align:left">Information</th>
+      <th style="text-align:left">Description</th>
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td style="text-align:left">Sign-in URL</td>
+      <td style="text-align:left">The URL for your identity provider sign-in page</td>
+    </tr>
     <tr>
       <td style="text-align:left">X509 Signing Certificate</td>
       <td style="text-align:left">The identity provider public key, encoded in Base64 format</td>
@@ -99,16 +104,18 @@ Obtain the following information from your identity provider and organization. P
 
 When using OIDC for the connection between your Identity provider and Snyk, add the Callback/Redirect URIs and OAuth Grant Type in your identity provider to establish trust with Snyk.
 
-| Callback/Redirect URIs | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback) |
+| Information | Description |
 | :--- | :--- |
+| Callback/Redirect URIs | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback) |
 | OAuth Grant Type | Implicit \(or Authorization Code\) |
 
 ## OIDC information to provide to Snyk
 
 Obtain the following information from your identity provider and organization. Provide this information to Snyk to establish trust on the service-provider side.
 
-| Issuer URL | The URL of the discovery document of the OpenID Connect provider you want to connect with |
+| Information | Description |
 | :--- | :--- |
+| Issuer URL | The URL of the discovery document of the OpenID Connect provider you want to connect with |
 | Client ID | The public identifier unique for your authorization server |
 | Client Secret | Only needed if the IdP does not allow the Implicit grant type |
 | Email domains and subdomains | The email domains and subdomains that need access to the SSO |
@@ -117,16 +124,17 @@ Obtain the following information from your identity provider and organization. P
 
 When using Azure AD for the connection between your Identity provider and Snyk, you'll need to add the Redirect URIs in your Identity provider to establish trust with Snyk.
 
-| Redirect URIs | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback) |
+| Information | Description |
 | :--- | :--- |
-
+| Redirect URIs | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback) |
 
 ## Azure AD information to provide to Snyk
 
 Obtain the following information from your identity provider and organization. Provide this information to Snyk to establish trust on the service-provider side.
 
-| Client ID | The public identifier unique for your authorization server |
+| Information | Description |
 | :--- | :--- |
+| Client ID | The public identifier unique for your authorization server |
 | Client Secret | The secret for your authorization that grants tokens to authorized requestors |
 | Microsoft Azure AD Domain | The numbers and letters shown in the Directory \(tenant\) ID, which can be found from the Snyk app you created under Overview |
 
@@ -134,8 +142,9 @@ Obtain the following information from your identity provider and organization. P
 
 When using ADFS for the connection between your Identity provider and Snyk, add the Realm Identifier, a Callback URL, and a Signing certificate in your Identity provider to establish trust with Snyk.
 
-| Realm Identifier | **urn:auth0:snyk** |
+| Information | **Description** |
 | :--- | :--- |
+| Realm Identifier | **urn:auth0:snyk** |
 | Callback URL | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback) |
 | Signing cert | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem) \(add as a signature and not encryption\) |
 
