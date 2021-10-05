@@ -10,7 +10,7 @@ https://app.snyk.io/oauth2/authorize?response_type=code&client_id={clientId}&red
 Note that this is a webpage link and not an API endpoint.
 {% endhint %}
 
-The current **version** can be found in our [API documentation](https://snykv3.docs.apiary.io/#reference/apps).
+The current **version** can be found in our [API documentation](https://snykoauth2.docs.apiary.io/#reference/apps/app-authorization/authorize-an-app).
 
 The **scopes** and the **redirect\_uri** must match what was defined when the App was created.
 
