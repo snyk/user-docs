@@ -8,7 +8,7 @@ To retrieve this information, send a GET request to the `orgs` endpoint:
 https://api.snyk.io/v3/apps/{clientId}/orgs?version={version}
 ```
 
-The current **version** can be found in our [API documentation](https://snyk.docs.apiary.io/#reference/apps/app-org-access/getappaccessorgs).
+The current **version** can be found in our [API documentation](https://snykv3.docs.apiary.io/#reference/apps/app-org-access/get-app's-granted-access).
 
 We recommend you store this value and associate it with the user's details.
 

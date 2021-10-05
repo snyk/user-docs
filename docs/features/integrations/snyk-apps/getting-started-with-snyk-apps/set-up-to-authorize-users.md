@@ -10,7 +10,7 @@ https://app.snyk.io/oauth2/authorize?response_type=code&client_id={clientId}&red
 Note that this is a webpage link and not an API endpoint.
 {% endhint %}
 
-The current **version** can be found in our [API documentation](https://snyk.docs.apiary.io/#reference/apps).
+The current **version** can be found in our [API documentation](https://snykv3.docs.apiary.io/#reference/apps).
 
 The **scopes** and the **redirect\_uri** must match what was defined when the App was created.
 
@@ -20,5 +20,5 @@ The **nonce** value is a highly randomized string stored alongside a timestamp o
 
 ![An example of what the user will see when they are redirected to this page](../../../../.gitbook/assets/authorize_page.png)
 
-After the connection is complete, the user is redirected to the provided redirect URI with querystring parameters **code** and **state** added on, which are necessary for the next step.
+After the connection is complete, the user is redirected to the provided redirect URI with query string parameters **code** and **state** added on, which are necessary for the next step.
 

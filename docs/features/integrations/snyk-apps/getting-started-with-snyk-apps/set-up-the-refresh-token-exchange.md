@@ -2,7 +2,7 @@
 
 As the **access\_token** will expire in a short time, the App will need to frequently request a new one using the **refresh\_token**. This must be done while the **refresh\_token** itself is still valid.
 
-To exchange for a fresh **access\_token**, make a POST request to the token endpoint \(more details found in the [API documentation](https://snyk.docs.apiary.io/#reference/apps/app-access-token/requesttoken)\):
+To exchange for a fresh **access\_token**, make a POST request to the token endpoint \(more details found in the [API documentation](https://snykoauth2.docs.apiary.io/#reference/apps/app-tokens/token-exchange-&-refresh)\):
 
 ```text
 https://api.snyk.io/oauth2/token
