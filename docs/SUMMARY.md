@@ -233,6 +233,7 @@
     * [Snyk checks on pull requests](features/integrations/git-repository-scm-integrations/snyk-checks-on-pull-requests.md)
     * [View and understand Snyk upgrade pull requests](features/integrations/git-repository-scm-integrations/view-and-understand-snyk-upgrade-pull-requests.md)
   * [CI/CD integrations](features/integrations/ci-cd-integrations/README.md)
+    * [Integrating Snyk with Terraform Cloud](features/integrations/ci-cd-integrations/integrating-snyk-with-terraform-cloud.md)
     * [Configure your Continuous Integration](features/integrations/ci-cd-integrations/configure-your-continuous-integration.md)
     * [Continuous Integration: language support](features/integrations/ci-cd-integrations/continuous-integration-language-support.md)
     * [AWS CodePipeline integration](features/integrations/ci-cd-integrations/aws-codepipeline-integration.md)
