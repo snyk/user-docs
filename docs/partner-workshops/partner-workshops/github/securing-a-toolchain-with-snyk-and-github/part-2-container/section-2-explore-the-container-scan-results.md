@@ -17,7 +17,7 @@ In the CI files we modified in the previous step, you might have noticed this se
 
 This uploads the results from the Snyk Container scan into GitHub's Security Code Scanning panel, allowing you to view vulnerabilities present right within the GitHub UI. To view the results from the previous scan, head to Security -&gt; Code Scanning Alerts.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/gh-container-codescanning.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-container-codescanning.png)
 
 This gives you a fast initial glimpse into the risks introduced by your choice of container base image.
 
@@ -29,11 +29,11 @@ When looking at risks introduced by a container base image, it's best to start b
 
 In the Snyk UI, open the project created in Part 1. To keep everything neat, we'll add the `Dockerfile` into this Project. To do this, click the + sign on the Project entry, and provide the path to the `Dockerfile`.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk-container-adddockerfile.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-container-adddockerfile.png)
 
 Once it's imported, you should see the Dockerfile show up in the Project list. Click into it.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk-container-dockerfile.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-container-dockerfile.png)
 
 ### Review Base Image Suggestions
 
@@ -45,7 +45,7 @@ These are grouped by how likely they are to be compatible with your application:
 * `Major` upgrades can introduce breaking changes depending on image usage,
 * `Alternative` architecture images are shown for more technical users to investigate.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk-container-baseimagerecs.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-container-baseimagerecs.png)
 
 In the next section, we'll take action and remedy some of the vulnerabilities in our application by upgrading the base image we're using to build our container image. Proceed to Section 3 when ready!
 

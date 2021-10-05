@@ -2,21 +2,21 @@
 
 Snyk will scan your code each time the pipeline is triggered. This will take place for any commits on your configured repository, but you can also manually trigger it with a release.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/snyk-codepipeline-15.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-codepipeline-15.png)
 
 Click on the **Release change** button to trigger the pipeline.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/snyk-codepipeline-16.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-codepipeline-16.png)
 
 You will see the **Scan** stage run where Snyk consumes your artifacts to find potential vulnerabilities.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/snyk-codepipeline-17.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-codepipeline-17.png)
 
 Within the **Scan** stage, you will notice two clickable links. These correspond to the integration configuration and the findings report. You will have the ability to reconfigure your integrations for each configured pipeline without having to go through the entire process to enable this integration by clicking the link above.
 
 Similarly, once the stage completes, you can review your findings report by clicking on the **Details** link.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/snyk-codepipeline-18.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-codepipeline-18.png)
 
 A detailed findings report is available to you within the AWS CodePipeline console. The report provides the total count of known vulnerabilities, dependency paths, and detailed information on how these were introduced.
 

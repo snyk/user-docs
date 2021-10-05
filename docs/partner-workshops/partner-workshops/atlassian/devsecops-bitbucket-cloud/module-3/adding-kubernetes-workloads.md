@@ -2,7 +2,7 @@
 
 ## Background
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/kubernetes-01.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/kubernetes-01.png)
 
 In the Snyk Blog, ["From image security to workload security"](https://snyk.io/blog/from-image-security-to-workload-security/), we discuss the challenge of configuration in Kubernetes, and the fact that while the Kubernetes API provides a powerful abstraction for building cloud native systems, it is also insecure by default. This article also shares insight into some common configuration properties that are often overlooked:
 
@@ -19,21 +19,21 @@ The following exercises will demonstrate these insecure configurations and how t
 
 Let's get started by enabling pipelines in our repository. Let's go to our Bitbucket repository and select **Pipelines** from the menu bar. Scroll to the bottom and click the **Enable** button to kick off a pipeline run.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/bitbucket-pipelines-enable.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/bitbucket-pipelines-enable.png)
 
 ### Adding workloads
 
 Now, let's go to our Snyk app. Let's navigate to **Integrations** and select **Kubernetes**. Since we previously deployed the Snyk controller into our cluster, this should appear as **Connected to Kubernetes** and we should be able to click the button to **Add your Kubernetes workloads to Snyk**.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk-eks-integration-01.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-eks-integration-01.png)
 
 Next, we will select our cluster and our **goof** app. Click **Add selected workloads** when ready.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk-eks-integration-02.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-eks-integration-02.png)
 
 Once the scan is complete, you will see the following results:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk-eks-integration-03%20%281%29.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-eks-integration-03%20%281%29.png)
 
 The results, should not surprise us. If we examine the manifests and compare that against the best practices we previously referenced, not only are configurations overlooked, `securityContext` is entirely absent. Let's explore this in more detail in the next module.
 

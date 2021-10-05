@@ -1,6 +1,6 @@
 # Red Hat
 
-![](../../.gitbook/assets/rted-hat-1-2048x434.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/rted-hat-1-2048x434.png)
 
 ## Learn more
 

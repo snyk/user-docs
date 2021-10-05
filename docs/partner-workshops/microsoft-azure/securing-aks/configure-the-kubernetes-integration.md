@@ -4,7 +4,7 @@
 
 From the Snyk web console, navigate to `Integrations`. Search and select `Kubernetes`. Click `Connect` and copy the `Integration ID` to your clipboard. The `Integration ID` will be a UUID with a format similar to `abcd1234-abcd-1234-abcd-1234abcd1234`.
 
-![](../../../.gitbook/assets/snyk_integrations_01.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk_integrations_01.png)
 
 Let's create an environment variable for our `Integration ID`:
 

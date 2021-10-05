@@ -1,6 +1,6 @@
 # Getting Started
 
-![](../../../.gitbook/assets/snyk-codepipeline-graphic-2.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-codepipeline-graphic-2.png)
 
 [AWS CodePipeline](https://aws.amazon.com/codepipeline/) is a fully managed [continuous delivery](https://aws.amazon.com/devops/continuous-delivery/) service that helps you automate your release pipelines for fast and reliable application and infrastructure updates. CodePipeline automates the build, test, and deploy phases of your release process every time there is a code change, based on the release model you define. This enables you to rapidly and reliably deliver features and updates.
 

@@ -8,7 +8,7 @@ weight: 100
 
 ## AWS Cleanup
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/hardhat.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/hardhat.png)
 
 {% hint style="danger" %}
 In order to prevent charges to your account we recommend cleaning up the infrastructure that was created. If you plan to keep things running so you can examine the workshop a bit more please remember to do the cleanup when you are done. It is very easy to leave things running in an AWS account, forget about it, and then accrue charges.
@@ -16,7 +16,7 @@ In order to prevent charges to your account we recommend cleaning up the infrast
 
 In the AWS console, go to [CloudFormation](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2), click the following:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/aws-account-cleanup.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/aws-account-cleanup.png)
 
 1. `Snyk-Security-ECR` stack and then `Delete`.  
 2. `Amazon-EKS-with-Snyk` stack and then `Delete`.

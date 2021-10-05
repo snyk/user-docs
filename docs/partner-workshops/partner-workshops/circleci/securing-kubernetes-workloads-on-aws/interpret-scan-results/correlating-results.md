@@ -4,9 +4,9 @@ Our CircleCI jobs included scanning of both our application and container image 
 
 ## Application scan results
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/circleci_app_scan.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/circleci_app_scan.png)
 
 ## Container image scan results
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/circleci_container_scan.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/circleci_container_scan.png)
 

@@ -2,9 +2,9 @@
 
 Now that your integration has been configured, anytime a new vulnerability has been introduced into your monitored repository, you will see alerts in Opsgenie:
 
-![](../../../.gitbook/assets/opsgenie-alerts.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/opsgenie-alerts.png)
 
 You can click on individual alerts to get detailed information:
 
-![](../../../.gitbook/assets/opsgenie-alerts-detail.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/opsgenie-alerts-detail.png)
 

@@ -48,7 +48,7 @@ See the next step to find your organization name in Snyk.
 
 Your organization name can be retrieved under settings.
 
-![](../../../.gitbook/assets/getting_org_name.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/getting_org_name.png)
 
 ## Execute Maven to view Snyk results
 

@@ -4,11 +4,11 @@
 
 ‌Like our Container workflow, the Snyk IaC Action uploads scan results to GitHub Security Code Scanning, allowing us to view misconfiguration risks within the GitHub UI. To view the results, head to Security -&gt; Code Scanning Alerts -&gt; Snyk Infrastructure as Code.​
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/gh-iac-codescanningresults.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-iac-codescanningresults.png)
 
 This gives you a fast initial glimpse into the risks present in our deployment manifests. Clicking each issue provides the line of code where it's introduced, a description of the issue, and the commit where it first appeared.​
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/gh-iac-issuedetail.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-iac-issuedetail.png)
 
 ## Step 2: Review IaC Scan results in the Snyk UI <a id="step-2-review-iac-scan-results-in-the-snyk-ui"></a>
 
@@ -18,17 +18,17 @@ We can add our deployment manifests to Snyk to view information about the issues
 
 In the Snyk UI, add the `goof-deployment.yaml` and `goof-service.yaml` files into the Project we created before. Click the + sign on the Project entry, and provide the path to the files.​
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk-iac-addfiletoproject.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-iac-addfiletoproject.png)
 
 Once they import, the files appear in the Project list. Let's explore our service definition first, since it only has a single issue.​
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk-iac-selectservice.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-iac-selectservice.png)
 
 ### Review configuration issues and fix suggestions <a id="review-configuration-issues-and-fix-suggestions"></a>
 
 The Project issues view shows the issue, its impact, and how it can be resolved. Snyk also highlights the line of code where the change can be introduced.​
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk-iac-viewissuedetails.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-iac-viewissuedetails.png)
 
 {% hint style="info" %}
 Tip: Snyk IaC allows you to [set your own Severity scores](https://support.snyk.io/hc/en-us/articles/360006402818#UUID-c1919782-6bfa-b84b-a638-3913cee39fc5) for the rules it checks against.

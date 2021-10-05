@@ -13,7 +13,7 @@ We will provide step-by-step instruction to help you get started quickly. For in
 
 From your Dynatrace environment, navigate to **Infrastructure** and then **Kubernetes** in the left navigation menu as shown below:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/dynatrace-k8s-config-01.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/dynatrace-k8s-config-01.png)
 
 Select **Add Custer**.
 
@@ -25,7 +25,7 @@ Provide a name for your connection as shown below:
 This name simplifies deployment and is used by various Dynatrace settings including Kubernetes cluster name, Network Zone, ActiveGate Group, and Host Group. For individually unique settings follow activation instructions from [Kubernetes monitoring documentation](https://dt-url.net/a32h0p41).
 {% endhint %}
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/dynatrace-k8s-config-02.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/dynatrace-k8s-config-02.png)
 
 Then click on **Create tokens**.
 
@@ -52,7 +52,7 @@ kubectl -n dynatrace create secret generic dynakube --from-literal="apiToken=DYN
 
 Go back to your Dynatrace environment Dashboard and copy the command shown below.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/dynatrace-k8s-config-03.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/dynatrace-k8s-config-03.png)
 
 Once copied, switch back to your terminal and execute the example command:
 

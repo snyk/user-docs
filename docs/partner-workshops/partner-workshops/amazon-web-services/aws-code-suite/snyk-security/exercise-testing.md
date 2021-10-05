@@ -16,7 +16,7 @@ git push -f codecommit master
 
 Now in `CodeBuild`, look at your **build history**. Note it may take a minute or two for the new scan to run.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk_4_build.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk_4_build.png)
 
 Let’s look at why this failed. We see security vulnerabilities were found and we’re told **how** to fix it!
 

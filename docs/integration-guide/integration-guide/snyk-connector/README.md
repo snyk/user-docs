@@ -1,6 +1,6 @@
 # Snyk Connector
 
-![](https://github.com/snyk/user-docs/tree/e3930d1b80a0aabfd178b75239e691485387c7dc/docs/.gitbook/assets/container-intergration.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/container-intergration.png)
 
 ## About this guide.
 

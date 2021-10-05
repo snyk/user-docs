@@ -2,15 +2,15 @@
 
 Next, we will add another **Action** and name it **Validate payload**:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/zappier-validate-payload-main.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/zappier-validate-payload-main.png)
 
 Let's define our **Action Event** as **Run Javascript**:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/zappier-validate-payload-script.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/zappier-validate-payload-script.png)
 
 Configure your action to include **body** and **signature** as shown below:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/zappier-validate-payload-setup.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/zappier-validate-payload-setup.png)
 
 In the **Code** section, copy and paste the following snippet:
 
@@ -37,5 +37,5 @@ try {
 
 Test your action:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/zappier-validate-payload-test.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/zappier-validate-payload-test.png)
 

@@ -18,7 +18,7 @@ To authenticate:
 
    The authentication ends and you can go back to your terminal to continue working.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/auth_image_1.gif)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/auth_image_1.gif)
 
 ### Authenticate with your token
 
@@ -27,7 +27,7 @@ To authenticate:
 3. From the token field, click **click to show** and then select and copy your API token.
 4. In the CLI, run `snyk config set api=XXXXXXXX`
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/auth_image_2.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/auth_image_2.png)
 
 {% hint style="info" %}
 We will use your personal API token during the maven plugin.

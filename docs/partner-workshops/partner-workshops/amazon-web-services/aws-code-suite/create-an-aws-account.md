@@ -8,17 +8,17 @@ Your account must have the ability to create new IAM roles and scope other IAM p
 * Once you have an AWS account, ensure you are following the remaining workshop steps as an **IAM user** with administrator access to the AWS account: [Create a new IAM user to use for the workshop](https://console.aws.amazon.com/iam/home?region=us-east-1#/users$new)
 * Enter the user details: 
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/iam-1-create-user%20%281%29.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/iam-1-create-user%20%281%29.png)
 
 * Attach the AdministratorAccess IAM Policy: 
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/iam-2-attach-policy.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/iam-2-attach-policy.png)
 
 * Click to create the new user: 
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/iam-3-create-user%20%281%29.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/iam-3-create-user%20%281%29.png)
 
 * Take note of the login URL and save: 
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/iam-4-save-url%20%281%29.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/iam-4-save-url%20%281%29.png)
 

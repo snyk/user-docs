@@ -52,5 +52,5 @@ Upon successful completion, you will see output similar to the following:
 
 Alternatively, you can pass the `--open` parameter to the above CLI command to open the project in the default web browser which should look similar to the following figure:
 
-![](../../../.gitbook/assets/azure_devops_02.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/azure_devops_02.png)
 

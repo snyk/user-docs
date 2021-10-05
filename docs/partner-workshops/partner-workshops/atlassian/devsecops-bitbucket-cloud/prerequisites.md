@@ -22,25 +22,25 @@ Once you have an AWS account, ensure you are following the remaining workshop st
 
 Enter the user details:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/iam-1-create-user.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/iam-1-create-user.png)
 
 ### Step 4
 
 Attach the AdministratorAccess IAM Policy:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/iam-2-attach-policy%20%281%29.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/iam-2-attach-policy%20%281%29.png)
 
 ### Step 5
 
 Click to create the new user:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/iam-3-create-user.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/iam-3-create-user.png)
 
 ### Step 6
 
 Take note of the login URL and save:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/iam-4-save-url.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/iam-4-save-url.png)
 
 ## Provision AWS services
 

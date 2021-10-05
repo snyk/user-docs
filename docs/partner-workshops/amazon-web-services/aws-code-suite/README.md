@@ -28,7 +28,7 @@ In this workshop, you will learn how to add security testing to a CI/CD pipeline
 
 At the conclusion of this workshop, you will end up with various AWS services provisioned in your AWS account. The following diagram illustrates some of these services and is intended as a sample reference architecture.
 
-![](../../.gitbook/assets/aws-pipeline.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/aws-pipeline.png)
 
 ## Workshop flow
 

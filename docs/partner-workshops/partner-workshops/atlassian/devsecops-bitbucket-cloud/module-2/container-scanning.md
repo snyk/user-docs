@@ -2,7 +2,7 @@
 
 ## Background
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk-container-01.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-container-01.png)
 
 ### Testing for vulnerabilities at different stages of the SDLC\*
 

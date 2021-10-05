@@ -1,6 +1,6 @@
 # Conclusion
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/logo-solid-background.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/logo-solid-background.png)
 
 In these exercises, you were able to take advantage of CircleCI to quickly take a sample application and deploy this to the AWS Cloud. You also leveraged various Snyk integrations to monitor various stages of your development workflow. Lastly, you were guided on examples of how vulnerabilities in your application could be exploited by potential bad actors and the negative impact these could have.
 

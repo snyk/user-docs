@@ -26,7 +26,7 @@ Snyk recommends less vulnerable base images grouped by how likely they are to be
 * `Major` upgrades can introduce breaking changes depending on image usage,
 * `Alternative` architecture images are shown for more technical users to investigate.
 
-![](../../../.gitbook/assets/docker-scanvulns.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/docker-scanvulns.png)
 
 Next we'll show you how you can get these same base image suggestions inside the Snyk UI.
 
@@ -44,7 +44,7 @@ First we need to connect Snyk to GitHub so we can import our Repository. Do so b
 2. Navigating to Integrations -&gt; Source Control -&gt; GitHub
 3. Fill in your Account Credentials to Connect your GitHub Account.
 
-![](../../../.gitbook/assets/snyk-gh.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-gh.png)
 
 ### Step 2: Import the forked Repo into Snyk
 
@@ -54,17 +54,17 @@ Now that Snyk is connected to your GitHub Account, import the Repo into Snyk as 
 2. Click "Add Project" then select "GitHub"
 3. Click on the Repo you created.
 
-![](../../../.gitbook/assets/snyk-ghimport.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-ghimport.png)
 
 ### Step 3: Explore Base Image suggestions for your app
 
 When the Repo imports, Snyk shows the supported manifest files in the repo, including our container's `Dockerfile`.
 
-![](../../../.gitbook/assets/snyk-proj-dockerfile.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-proj-dockerfile.png)
 
 Clicking the Dockerfile brings you to the project view, where you can see the base image suggestions.
 
-![](../../../.gitbook/assets/snyk-baseimagerecs.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-baseimagerecs.png)
 
 Up next, we'll scan the containers running in our Kubernetes cluster for vulnerabilities and base image upgrade guidance. This use case is helpful when running images not developed in-house.
 
@@ -114,21 +114,21 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
 
 When it finishes deploying, you'll be able to import the cluster workloads into Snyk.
 
-![](../../../.gitbook/assets/k8s-import.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/k8s-import.png)
 
 Select to import both the `goof` and `mongo` deployments.
 
-![](../../../.gitbook/assets/k8simport2.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/k8simport2.png)
 
 When the import completes, they will show up next to the other projects in the Snyk dashboard.
 
-![](../../../.gitbook/assets/k8sworkloads.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/k8sworkloads.png)
 
 Since it's the same container, clicking the `snyk-docker/deployment.apps/goof` project will show the same vulnerabilities as the `Dockerfile` project from the previous section.
 
 You can point the Kubernetes project at the `Dockerfile` to see base image suggestions.
 
-![](../../../.gitbook/assets/k8ssettings.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/k8ssettings.png)
 
 This will provide the same base image suggestions for running workloads. We can see that using a different base image can address hundreds of vulnerabilities. This is a relatively low effort fix with huge payoff. Let's apply a more secure base for our application.
 
@@ -169,11 +169,11 @@ kubectl scale deployment goof --replicas=1
 
 Navigate to [http://localhost:3001](http://localhost:3001) to test the app. Success! It likes the new base image. In Docker Hub, we can appreciate the `dev` tag has less vulnerabilities than `PROD`.
 
-![](../../../.gitbook/assets/dockerhub-tagvulns%20%281%29.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/dockerhub-tagvulns%20%281%29.png)
 
 If you imported the project using the Kubernetes Monitor, you'll see the new results once the Snyk Monitor re-tests the project.
 
-![](../../../.gitbook/assets/k8sproject.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/k8sproject.png)
 
 Let's get these changes into our GitHub Repo's PROD branch!
 
@@ -193,9 +193,9 @@ git push
 
 In GitHub, create a Pull Request from the `develop` branch to the `PROD` branch.
 
-![](../../../.gitbook/assets/gh-newpr.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-newpr.png)
 
-![](../../../.gitbook/assets/gh-pr-newbase.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-pr-newbase.png)
 
 ### See the PR checks we configured in action
 
@@ -207,11 +207,11 @@ The workflows we configured earlier will run as part of this PR. You can see the
 * **CI Task for PROD Branch** rebuilds and app and container to make sure it correctly builds. 
 * **Code scanning results** pushes the container scan results to GitHub Security for consumption.
 
-![](../../../.gitbook/assets/gh-prchecks%20%281%29.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-prchecks%20%281%29.png)
 
 Even though we have open source vulnerabilities, merge the PR. This triggers AutoBuild to build and re-scan the PROD container. When it completes, we see a reduction in the number of vulnerabilities.
 
-![](../../../.gitbook/assets/dockerhub-tags.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/dockerhub-tags.png)
 
 Choosing a more secure base image was just the start! In the next section, we'll address the application's vulnerable application dependencies.
 

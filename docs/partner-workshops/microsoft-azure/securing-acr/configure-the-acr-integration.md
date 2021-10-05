@@ -64,11 +64,11 @@ Take note of the values for `Service principal ID` and `Service principal passwo
 
 From the Snyk web console, navigate to `Integrations`. Search and select `ACR`. Click the tile.
 
-![](../../../.gitbook/assets/snyk_integrations_07.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk_integrations_07.png)
 
 Follow the steps outlined in the following diagram and provide the `Service principal ID` `Service principal password` and `loginServer` value for your ACR instance:
 
-![](../../../.gitbook/assets/snyk_integrations_06.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk_integrations_06.png)
 
 Remember to save your settings!
 

@@ -8,7 +8,7 @@ weight: 50
 
 ## Configuration management shifting left\*
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk-bitbucket-flow-module-03.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-bitbucket-flow-module-03.png)
 
 Traditionally, developers have been responsible for just writing the code — someone else was responsible for quality. Yet another person was responsible for deploying it. And, another team was responsible for running it in production. But increasingly we’re seeing more and more responsibilities shift to the development teams, with specialists providing expert support and consultancy. We’ve seen software packaging move from a specialism in IT, to developers writing Dockerfiles. We’ve seen the rise of DevOps, “you build it, you run it” and development teams owning services in production. And we’re now also seeing configuration increasingly become a developer domain problem with the rise of infrastructure as code and tools like Terraform, Kubernetes and AWS CloudFormation.
 

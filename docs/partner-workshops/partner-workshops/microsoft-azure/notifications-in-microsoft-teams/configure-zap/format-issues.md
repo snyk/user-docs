@@ -2,15 +2,15 @@
 
 Next, create another action and name it **Format issues**:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/zappier-format-issues-main.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/zappier-format-issues-main.png)
 
 Select **Run Javascript** as the **Action Event**:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/zappier-format-issues-script.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/zappier-format-issues-script.png)
 
 Be sure to add **body** in the **Input Data** section:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/zappier-format-issues-setup.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/zappier-format-issues-setup.png)
 
 Copy and paste the snippet into the **Code** field:
 
@@ -32,5 +32,5 @@ try {
 
 Test the action:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/zappier-format-issues-test.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/zappier-format-issues-test.png)
 

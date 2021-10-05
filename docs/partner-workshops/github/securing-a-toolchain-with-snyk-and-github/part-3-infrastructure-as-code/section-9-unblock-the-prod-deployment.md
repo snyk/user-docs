@@ -10,7 +10,7 @@ description: >-
 
 In the Project issues, Snyk calls out the issue identified, its impact, and how it can be resolved. It also highlights the line of code where the issue exists. In this case, an issue was identified in our `goof-service.yaml` file because the Load Balancer, as currently defined, is open to the world.
 
-![](../../../.gitbook/assets/snyk-iac-viewissuedetails.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-iac-viewissuedetails.png)
 
 In some scenarios, such as when our load balancer being open to the world is by design because it's a client-facing web application, we can choose to ignore the issue. In this case, let's assume our Kubernetes cluster sits in a VPC, and an external Application Load Balancer is in use. We'll restrict this Kubernetes Load Balancer to the CIDR Block for our imaginary VPC.
 
@@ -55,11 +55,11 @@ spec:
 
 When ready, propose changes by creating a new branch and opening a Pull Request. This will trigger our IaC verification workflow we set up earlier.
 
-![](../../../.gitbook/assets/gh-iac-editservice.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-iac-editservice.png)
 
 When checks complete, in the run details for the IaC workflow, we can appreciate that no other issues are present in the `goof-service.yaml` file.
 
-![](../../../.gitbook/assets/gh-iac-checkspostfix.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-iac-checkspostfix.png)
 
 Go ahead and merge the PR. Our CI workflows for the `develop` branch will now kick on. Once they complete, we can see that in both the GitHub Security Code Scanning results, as well as in the Snyk UI, the issue from our `goof-service.yaml` has vanished! Well done!
 
@@ -67,7 +67,7 @@ Go ahead and merge the PR. Our CI workflows for the `develop` branch will now ki
 
 Now, on to the `goof-deployment.yaml` file and its 4 blocking issues. This file actually contains two deployment definitions: one for the database, and another for the app's frontend. The four blocking issues are actually two issues, present in both deployments. Let's take a look in the Snyk UI.
 
-![](../../../.gitbook/assets/snyk-iac-rootissue.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-iac-rootissue.png)
 
 The first issue states that our container is running without root user control. The second issue, in a similar vein, tells us the container runs with potentially unnecessary privileges. We can fix both of these issues by adding a securityContext in our container's spec.
 
@@ -123,7 +123,7 @@ Merge the changes into the `develop` branch and wait for the CI workflows to run
 
 Back in Section 7, our Snyk Gate blocked the Pull Request we creates from `develop` into `PROD`. Now that we've fixed the issues in our files, back in the Pull Request, we can appreciate that our tests re-ran and this time the Snyk Security Gate is pleased with the changes we made.
 
-![](../../../.gitbook/assets/gh-iac-prodprcheckspass.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-iac-prodprcheckspass.png)
 
 With this assurance, we can merge our changes into PROD. Once merged, our CI workflows will re-run for `PROD`. If we had a workflow to re-deploy our application, it would also run.
 

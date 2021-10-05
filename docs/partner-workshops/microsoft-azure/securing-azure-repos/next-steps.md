@@ -2,13 +2,13 @@
 
 From the Snyk console's Project page, you are now able to view findings on your application vulnerabilities.
 
-![](../../../.gitbook/assets/snyk_scan_13.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk_scan_13.png)
 
 {% hint style="info" %}
 You can click on the manifest file for a detailed view.
 {% endhint %}
 
-![](../../../.gitbook/assets/snyk_scan_14.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk_scan_14.png)
 
 If vulnerabilities are found, you will be provided with recommendations for fixing these and all dependencies in the dependency tree with the [**Open a fix PR**](https://support.snyk.io/hc/en-us/articles/360003891038-Fix-your-vulnerabilities) button.
 

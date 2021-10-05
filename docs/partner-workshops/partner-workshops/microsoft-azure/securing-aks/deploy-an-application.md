@@ -40,5 +40,5 @@ Note that `EXTERNAL-IP` displays a status of `pending`. Wait until this displays
 
 Your browser should resolve and display the following:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/azure_voting_app.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/azure_voting_app.png)
 

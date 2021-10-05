@@ -1,6 +1,6 @@
 # Microsoft Azure
 
-![](../../.gitbook/assets/microsoft-blog.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/microsoft-blog.png)
 
 **Snyk: Developer-First Security** is available in the Microsoft Azure Marketplace. 👉 [Get it now!](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/snyk.snyk-developer-first-security?tab=Overview)
 

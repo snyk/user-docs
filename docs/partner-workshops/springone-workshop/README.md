@@ -1,4 +1,4 @@
 # SpringOne Workshop
 
-![](../../.gitbook/assets/node.js-wide.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/node.js-wide.png)
 

@@ -4,7 +4,7 @@ The `Projects` page will contain an inventory of all projects added and a high l
 
 We can see that the results of our ACR image scan is identical to the image scan for our Kubernetes deployment. This is expected. We are gradually taking steps to secure our workflow. The `redis` image we pulled from our `manifest` is the same image from our `Dockerfile`.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/snyk_scan_08.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk_scan_08.png)
 
 We will discuss fixing the image in the next section.
 

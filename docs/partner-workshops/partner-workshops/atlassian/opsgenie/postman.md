@@ -8,13 +8,13 @@ You can use any tool of your choice. For these examples, we are using [Postman](
 
 Create the webhook:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/postman-create-webhook.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/postman-create-webhook.png)
 
 List the webhook:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/postman-list-webhook.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/postman-list-webhook.png)
 
 Ping the webhook:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/postman-ping-webhook.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/postman-ping-webhook.png)
 

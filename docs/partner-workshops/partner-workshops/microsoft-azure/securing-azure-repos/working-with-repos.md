@@ -193,5 +193,5 @@ To ssh.dev.azure.com:v3/myOrganizationName/MySnykProject/MySnykProject
 
 Alternatively, you can view the files in your repo by visiting the Azure DevOps portal:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/azure_devops_03.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/azure_devops_03.png)
 

@@ -1,6 +1,6 @@
 # Conclusion
 
-![](../../.gitbook/assets/logo-solid-background.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/logo-solid-background.png)
 
 In these exercises, you were able to accomplish the following:
 

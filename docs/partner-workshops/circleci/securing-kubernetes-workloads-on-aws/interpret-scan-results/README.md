@@ -10,17 +10,17 @@ The [`Projects`](https://solutions.snyk.io/snyk-academy/open-source/import-scm-p
 
 A scan of our Git repository will yield any potential vulnerabilities in our applications open source dependencies.
 
-![](../../../.gitbook/assets/circleci_source_scan.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/circleci_source_scan.png)
 
 ## Container Registry
 
 Scanning container images in our private registry will analyze our base image and provide upgrade recommendations to reduce known vulnerabilities.
 
-![](../../../.gitbook/assets/circleci_ecr_scan.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/circleci_ecr_scan.png)
 
 ## Kubernetes
 
 Enabling the Kubernetes integration will provide insights and guidance on fixing security misconfigurations in your deployments.
 
-![](../../../.gitbook/assets/circleci_eks_scan.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/circleci_eks_scan.png)
 

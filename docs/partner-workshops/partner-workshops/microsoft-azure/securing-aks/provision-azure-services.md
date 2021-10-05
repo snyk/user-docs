@@ -34,7 +34,7 @@ When successfully completed, you will see output similar to the following:
 
 You can also validate the creation of the resource group in the Azure portal as illustrate below:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/azure_resource_groups_01.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/azure_resource_groups_01.png)
 
 ### Create the AKS cluster
 
@@ -56,15 +56,15 @@ Once the deployment completes the CLI will return a lengthy JSON response contai
 
 _**Figure 1**_
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/azure_resource_groups_02.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/azure_resource_groups_02.png)
 
 _**Figure 2**_
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/azure_resource_groups_03.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/azure_resource_groups_03.png)
 
 _**Figure 3**_
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/azure_resource_groups_04.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/azure_resource_groups_04.png)
 
 ### Connect to the cluster
 

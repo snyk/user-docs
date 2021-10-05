@@ -1,6 +1,6 @@
 # CircleCI
 
-![](../../.gitbook/assets/dotnet-2.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/dotnet-2.png)
 
 You will need a valid CircleCI account to complete the exercises presented in these modules. If you do not have one you can [sign up for free](https://circleci.com/signup/?source-button=free).
 

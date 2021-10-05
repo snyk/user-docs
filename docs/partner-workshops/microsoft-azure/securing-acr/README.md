@@ -16,5 +16,5 @@ In order to complete the exercises in this workshop, you will need both a [Micro
 
 At the conclusion of this module, you will have a functional instance of ACR storing a sample container image. The following reference architecture is indicative of what you will build:
 
-![](../../../.gitbook/assets/snyk-acr.jpg)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-acr.jpg)
 

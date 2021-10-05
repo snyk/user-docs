@@ -7,7 +7,7 @@
 3. When the GitHub authorization screen opens, click on "Authorize snyk" to provide it with access to your repositories \(image 2\).
 4. Imported projects are continuously checked for vulnerabilities. We will import SPC in a future step.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/github_integration_image_1.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/github_integration_image_1.png)
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/github_integration_image_w.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/github_integration_image_w.png)
 

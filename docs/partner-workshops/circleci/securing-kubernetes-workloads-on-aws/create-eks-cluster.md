@@ -21,5 +21,5 @@ You can replace `us-west-2` with any [Amazon EKS Fargate supported Region](https
 
 It can take approximately 15 minutes for your cluster to be provisioned. When your cluster is ready, you will be able to run `kubectl get svc` and see results.
 
-![](../../../.gitbook/assets/kubectl_get_svc.gif)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/kubectl_get_svc.gif)
 

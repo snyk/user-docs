@@ -6,11 +6,11 @@ In the previous section, we saw how Snyk presents other Base Images we can use w
 
 In GitHub, navigate to your Repo and click on the Dockerfile to open it.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/gh-container-opendockerfile.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-container-opendockerfile.png)
 
 Click the Edit icon to open the GitHub Web Editor.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/gh-container-dockerfileedit.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-container-dockerfileedit.png)
 
 Comment out \(or delete\) the old `FROM` statement in the Dockerfile, and add a new one from the list of Snyk's recommendations. In this example, we'll use `node:14-stretch`. Your Dockerfile should now look like this:
 
@@ -36,17 +36,17 @@ This is an educational example. Upgrading from Node 6 to Node 14 won't always wo
 
 When ready to Commit the changes, select the option to create a **new branch** for this commit and propose the changes to the `Dockerfile`.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/gh-container-baseimagebranch.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-container-baseimagebranch.png)
 
 In the next view, go ahead and create the Pull Request.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/gh-container-baseimagepr.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-container-baseimagepr.png)
 
 ## Step 2: Verify that the CI job completes successfully
 
 In the Pull Request view, make sure your application and container build successfully on top of the new base image by ensuring the `build-container` check completes successfully.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/gh-container-baseimageprchecks.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-container-baseimageprchecks.png)
 
 When ready, merge the Pull Request to bring our changes into `develop` and delete the `replace-base-image` branch when done.
 
@@ -66,7 +66,7 @@ Results in Security Code Scanning take time to update. You won't see updated vul
 
 In the Snyk UI, the results for the Dockerfile update automatically once the changes are merged into the default working branch. We can see that simply by changing the base image we used, we went from 836 issues to 307! Now we only have 35 high severity vulnerabilities to triage, as opposed to the 203 from before.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk-container-newbasevulns%20%281%29.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-container-newbasevulns%20%281%29.png)
 
 ## Step 4: Merge the changes to PROD
 
@@ -74,11 +74,11 @@ We have outstanding vulnerabilities to take care of, but we need to push our cha
 
 Let's open a PR from `develop` to `PROD` to check in our work for the day.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/gh-container-prprod.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-container-prprod.png)
 
 Once all checks pass, go ahead and merge the PR. Hooray! Our container is now PROD-ready!
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/gh-container-prodchecks.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-container-prodchecks.png)
 
 #### Wait a minute, what about our Snyk Gate?
 

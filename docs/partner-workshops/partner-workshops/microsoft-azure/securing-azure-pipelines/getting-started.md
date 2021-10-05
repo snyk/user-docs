@@ -6,19 +6,19 @@ This module assumes that you already have Azure DevOps and are integrating Snyk 
 
 You can find **Snyk Security Scan** in the Microsoft [Visual Studio Marketplace for Azure DevOps](https://marketplace.visualstudio.com/azuredevops) as shown below:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/azure-devops-01.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/azure-devops-01.png)
 
 You can also quickly get to the marketplace from Azure Pipelines by navigating to your Azure DevOps **Organization Settings** and selecting **Extensions** then **Browse Marketplace** as shown below:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/azure-devops-07.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/azure-devops-07.png)
 
 In either scenario, once you find **Snyk Security Scan,** simply click on the extension tile and then **Click** the **Get it free** button as shown below:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/azure-devops-02.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/azure-devops-02.png)
 
 Next, select the desired Azure DevOps organization you wish to install the extension into or if you are running Azure DevOps server you may download the extension as well.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/azure-devops-03.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/azure-devops-03.png)
 
 Now, let's proceed to the next section where we will configure the extension!
 

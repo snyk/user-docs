@@ -2,7 +2,7 @@
 
 While a report is available within the Azure DevOps console, additional information about vulnerabilities found in your source are also available within Snyk.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/azure-devops-04.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/azure-devops-04.png)
 
 From the Snyk console, you can view the imported project from your last pipeline run. Each identified vulnerability will include a [**Priority Score**](https://snyk.io/blog/snyk-priority-score/) as well as [**Fix advice**](https://support.snyk.io/hc/en-us/articles/360006113798-Remediate-your-vulnerabilities) to help you proactively address security concerns.
 

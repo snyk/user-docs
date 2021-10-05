@@ -2,7 +2,7 @@
 
 ## Setting up your Snyk account
 
-![](../../../.gitbook/assets/snyk-signup.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-signup.png)
 
 ### I do not have a Snyk account
 

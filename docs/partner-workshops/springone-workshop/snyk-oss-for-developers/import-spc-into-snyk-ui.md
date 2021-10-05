@@ -8,11 +8,11 @@ Snyk tests and monitors GitHub repositories that are in any of our supported lan
 
 1\) Go to Projects and click Add projects. Choose the tool from which to import your projects
 
-![](../../../.gitbook/assets/project_import.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/project_import.png)
 
 2\) A popup screen opens with all the available repositories under the selected integration
 
-![](../../../.gitbook/assets/select_repo.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/select_repo.png)
 
 {% hint style="info" %}
 Select the Spring-Petclinic \_\*\*\_repository.
@@ -30,9 +30,9 @@ As Snyk is importing your project you will see the import status bar followed by
 Refresh green box not shown
 {% endhint %}
 
-![](../../../.gitbook/assets/import_bar.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/import_bar.png)
 
 After refreshing, you will see the imported projects in the Snyk UI. Expand the project to see the package manager file, in our case _**pom.xml**_
 
-![](../../../.gitbook/assets/screen-shot-2020-08-21-at-4.43.05-pm%20%281%29.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/screen-shot-2020-08-21-at-4.43.05-pm%20%281%29.png)
 

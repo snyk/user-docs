@@ -1,6 +1,6 @@
 # GitHub
 
-![](../../.gitbook/assets/snykgh.jpg)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snykgh.jpg)
 
 ## Welcome!
 

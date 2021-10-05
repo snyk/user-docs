@@ -6,7 +6,7 @@ If you do not yet have a [fork](https://github.com/snyk-partners/snyk-circleci-e
 
 Throughout the examples shown in these exercises you will see references to a few environment variables. These are defined in our [CircleCI Project Settings](https://circleci.com/docs/2.0/env-vars/?utm_medium=SEM&utm_source=gnb&utm_campaign=SEM-gb-DSA-Eng-ni&utm_content=&utm_term=dynamicSearch-&gclid=EAIaIQobChMI_LT0qqj16QIVUB-tBh0J-gxoEAAYASAAEgJdxfD_BwE#setting-an-environment-variable-in-a-project) and will be referenced in our `config.yml` to allow for secure authentication between CircleCI, AWS and Snyk.
 
-![](../../../.gitbook/assets/circleci_project_settings.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/circleci_project_settings.png)
 
 The specific variables needed are as follows:
 

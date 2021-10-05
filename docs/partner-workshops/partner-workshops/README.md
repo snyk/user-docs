@@ -6,7 +6,7 @@ description: &gt;- This website was created by Snyk technical subject matter exp
 
 ## Home
 
-![](https://github.com/snyk/user-docs/tree/620b1ca407b6df0711af0a4b3b195b656d7acefd/docs/.gitbook/assets/docs-hp-graphic-.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/docs-hp-graphic-.png)
 
 ### Who is Snyk?
 

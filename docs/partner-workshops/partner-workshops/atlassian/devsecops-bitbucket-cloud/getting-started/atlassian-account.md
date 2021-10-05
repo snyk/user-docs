@@ -2,7 +2,7 @@
 
 ## Setting up your Atlassian account
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/bitbucket-signup.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/bitbucket-signup.png)
 
 ### I do not have an Atlassian account
 

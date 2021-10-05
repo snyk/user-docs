@@ -8,33 +8,33 @@ Once you have [installed](https://marketplace.visualstudio.com/items?itemName=re
 
 Now, you can simply hover over the package version to get additional details.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/crda-01.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/crda-01.png)
 
 The pop-up will provide you with immediate recommendations and the ability to either **Peek Problem** or **Quick Fix** to accept the recommended version upgrade.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/crda-02.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/crda-02.png)
 
 If you select **Peek Problem** you are able to see a summarized view of the severity of the vulnerability as well as the recommendation.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/crda-03.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/crda-03.png)
 
 Selecting **Quick Fix** will provide you with a second pop-up asking you to confirm switching to the recommended version.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/crda-04.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/crda-04.png)
 
 Once confirmed, you will see that the version has been automatically changed to the recommended version in your manifest file.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/crda-05.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/crda-05.png)
 
 ### Understanding your findings and prioritizing fixes
 
 When you open the manifest file you also have the ability to view the **Dependency Analytics Report** from within the IDE. This will appear as a pop-up window in the lower right-hand corner of your IDE with a button to click.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/dependency-analytics-03.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/dependency-analytics-03.png)
 
 Clicking on the button will provide you with a summary of **Security Issues**, **Dependency Details**, and **License** issues. You also have the ability to view _Vulnerabilities unique to Snyk_ where you can sign in with your Snyk account to get additional insights and fix advice.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/dependency-analytics-02.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/dependency-analytics-02.png)
 
 ## Snyk Source Code Management \(SCM\) integrations
 
@@ -50,19 +50,19 @@ Snyk will produce advanced security reports, allowing you to explore the vulnera
 
 Snyk will frequently scan your projects on either a daily or a weekly basis. When new vulnerabilities are found, it will notify you by email and by opening an automated pull requests with fixes to repositories. You also have the ability to manually **Open a fix PR**. In this example, we want to call attention to the **Priority score.** Snyk offers a [priority score](https://support.snyk.io/hc/en-us/articles/360009884837) to make the prioritization of issues as quick and easy as possible, allowing you to have the biggest impact with the least effort.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/snyk-rh-vuln-01.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-rh-vuln-01.png)
 
 Once we decide to **Open a fix PR**, Snyk will calculate the appropriate fixes for vulnerabilities identified in your project and create the PR for you.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/snyk-rh-pr-01.gif)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-rh-pr-01.gif)
 
 {% hint style="warning" %}
 The process to generate the PR may take a minute or two.
 {% endhint %}
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/snyk-rh-pr-02.gif)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-rh-pr-02.gif)
 
 Once complete, you will be redirected to your GitHub repository where you can review the _pull request_ and **approve**/**merge.**
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/snyk-rh-pr-03.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-rh-pr-03.png)
 

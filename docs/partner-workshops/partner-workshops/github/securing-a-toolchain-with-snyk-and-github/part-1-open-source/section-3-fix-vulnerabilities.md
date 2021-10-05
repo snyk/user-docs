@@ -16,33 +16,33 @@ Log into Snyk, and go into the `gh-actions-academy` project imported earlier. Sc
 * The module that introduced it and, in the case of transitive dependencies, its direct dependency,
 * Details on the path and proposed Remediation, as well as the specific vulnerable functions
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk-vuln.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-vuln.png)
 
 ## Step 2: Create a Fix Pull Request in Snyk
 
 When using the GitHub integration, and if a fix is available, Snyk can automatically upgrade the vulnerable dependency to a non-vulnerable version through a Pull Request. Click on "Fix this vulnerability" to do so.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk-fixvuln.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-fixvuln.png)
 
 On the next screen, you'll be able to confirm the issue to fix with this PR.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk-prconfirm.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-prconfirm.png)
 
 Looks good! Go ahead and open the PR.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk-propen.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-propen.png)
 
 Once it's ready, you'll be taken to the PR in GitHub, where you can review the changes in the file diff view:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/gh-prdiff.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-prdiff.png)
 
 We see that CI checks completed successfully, assuring us we didn't introduce a breaking change.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/gh-prchecks.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-prchecks.png)
 
 Now, go ahead and merge the PR! You can also delete the branch. Back in Snyk, we can appreciate that our `package.json` file has 1 less High Severity Vulnerability.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk-postpr.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-postpr.png)
 
 ## Step 3: Fix the rest of the Vulnerabilities
 
@@ -59,7 +59,7 @@ Create a New Pull Request from `all-fixes` to `develop`. This introduces some ch
 * The creation of a `.snyk` file, which is used to track changes made by `Snyk Wizard`. 
 * Updated `package.json` and `package-lock.json` files with updated dependencies.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/gh-allfixpr.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-allfixpr.png)
 
 You can explore these changes in the Comparing Changes view to learn more. When ready, finish creating and Merge the Pull Request.
 
@@ -67,7 +67,7 @@ You can explore these changes in the Comparing Changes view to learn more. When 
 
 If you left the Pull Request from Section 2 open, you can re-visit it in the Pull Requests tab.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/gh-postfixes.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-postfixes.png)
 
 When the workflows re-run, this time, the Snyk Security gate and CI jobs should complete successfully.
 
@@ -75,7 +75,7 @@ When the workflows re-run, this time, the Snyk Security gate and CI jobs should 
 Open Source vulnerabilities are disclosed every day. If the Snyk Gate fails, at least one new High Severity vulnerability has been disclosed since this was written. If this happens, Repeat steps 1 and 2 above to open a Pull Request that fixes the remaining issues.
 {% endhint %}
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/gh-postfixchecks.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-postfixchecks.png)
 
 Merge in the changes, and feel good that your `PROD` branch is free from Open Source Vulnerabilities! 🏆
 

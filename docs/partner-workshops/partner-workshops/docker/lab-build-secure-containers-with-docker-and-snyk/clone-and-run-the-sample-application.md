@@ -58,7 +58,7 @@ node app.js
 
 Once it starts, it will be available at [http://localhost:3001](http://localhost:3001). Verify it works by adding a few items into the todo list.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/todo.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/todo.png)
 
 Success! Now that we know it works, let's package it in a container for distribution.
 

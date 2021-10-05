@@ -2,7 +2,7 @@
 
 ## Setting up your Atlassian account
 
-![](../../../.gitbook/assets/bitbucket-signup.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/bitbucket-signup.png)
 
 ### I do not have an Atlassian account
 

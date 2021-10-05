@@ -22,7 +22,7 @@ az login
 
 The CLI will attempt to open your default browser and load the Azure login page. Provide your Azure account credentials in the browser and upon successful authentication you will see the following response in your browser window:
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/azure_cli_login.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/azure_cli_login.png)
 
 You should also see output similar to the following in your terminal:
 

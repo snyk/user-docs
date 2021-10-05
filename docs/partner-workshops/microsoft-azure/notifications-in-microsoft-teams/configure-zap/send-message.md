@@ -2,19 +2,19 @@
 
 Lastly, create an **Action** and name it **Send Channel Message in Microsoft Teams**:
 
-![](../../../.gitbook/assets/zappier-teams-main.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/zappier-teams-main.png)
 
 Select **Send Channel Message** for the **Microsoft Teams** app:
 
-![](../../../.gitbook/assets/zappier-teams-channel.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/zappier-teams-channel.png)
 
 Choose your Microsoft Teams account:
 
-![](../../../.gitbook/assets/zappier-teams-account.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/zappier-teams-account.png)
 
 Choose your Channel and select **Markdown** for the **Message Text Format**:
 
-![](../../../.gitbook/assets/zappier-teams-setup.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/zappier-teams-setup.png)
 
 Copy and paste the following snippet into the **Message Text** field:
 
@@ -34,5 +34,5 @@ You will need to update the fields accordingly to correspond with those mapped f
 
 Test your action:
 
-![](../../../.gitbook/assets/zappier-teams-test.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/zappier-teams-test.png)
 

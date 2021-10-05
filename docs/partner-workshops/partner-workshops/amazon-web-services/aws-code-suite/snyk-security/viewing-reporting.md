@@ -8,5 +8,5 @@ Navigate back to `https://snyk.io/`.
 * Click on **View Report** and then the **Dependencies** tab to see what libraries were used. Click **View All Dependencies**
 * Use the **Integrations** tab \(optionally\) to connect and automate creation of fixes against a **code repository**.
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/partner-workshops/.gitbook/assets/snyk_5_snykui.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk_5_snykui.png)
 

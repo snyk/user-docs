@@ -10,5 +10,5 @@ In our sample application, we see how the transitive dependencies introduced a v
 The **org.apache.tomcat.embed:tomcat-embed-core@9.0.36** library is included multiple times due to transitive dependencies.
 {% endhint %}
 
-![](https://github.com/snyk/user-docs/tree/695c746d1b207ffdf923b84e4590d31b29e2cc73/docs/.gitbook/assets/screen-shot-2020-08-21-at-4.49.51-pm.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/screen-shot-2020-08-21-at-4.49.51-pm.png)
 
