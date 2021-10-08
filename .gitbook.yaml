@@ -5,4 +5,4 @@ structure:
   summary: SUMMARY.md
 
 redirects:
-  help: ./main.md
+  nexus: features/integrations/private-registry-gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md
