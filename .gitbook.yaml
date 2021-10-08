@@ -6,3 +6,4 @@ structure:
 
 redirects:
   nexus: features/integrations/private-registry-gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md
+  artifactory: features/integrations/private-registry-gatekeeper-plugins/artifactory-gatekeeper-plugin-overview.md
