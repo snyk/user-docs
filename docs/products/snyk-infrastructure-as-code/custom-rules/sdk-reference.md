@@ -6,7 +6,7 @@
 
 ### SYNOPSIS
 
-`snyk-iac-rules` \[COMMAND\] \[PATH\] \[OPTIONS\]
+`snyk-iac-rules` \[COMMAND] \[PATH] \[OPTIONS]
 
 ### DESCRIPTION
 
@@ -53,23 +53,23 @@ The name of the rule you want to define. This will generate a `rules/` folder at
 
 The scaffolded folder structure looks like so:
 
-`rules   
-└── RULE      
-        ├── fixtures   
-                ├── allowed.tf   
-                └── denied.tf  
-        ├── main.rego   
-        └── main_test.rego  
-lib      
-└── testing   
-        └── main.rego   
-└── main.rego`
+`rules `\
+`└── RULE    `\
+`         ├── fixtures  `\
+`                 ├── allowed.tf  `\
+`                └── denied.tf`\
+`         ├── main.rego  `\
+`        └── main_test.rego`\
+`lib    `\
+`└── testing `\
+`         └── main.rego  `\
+`└── main.rego`
 
 Note: the rule name cannot contain any whitespace or start with `SNYK-`.
 
 #### Parse options
 
-`--format`=`hcl2`\|`yaml`
+`--format`=`hcl2`|`yaml`
 
 The format of the fixture. The format dictates what parser we use to generate JSON from the fixture.
 
@@ -79,27 +79,27 @@ Default: `hcl2`
 
 `--verbose`
 
-Output tracing logs.  
+Output tracing logs.\
 
 
-`--explain`=`full`\|`notes`\|`fails`
+`--explain`=`full`|`notes`|`fails`
 
 Filter tracing logs.
 
-Default: `fails`  
+Default: `fails`\
 
 
 `--timeout`=TIMEOUT
 
-The amount of time \(in nanoseconds\) to wait for the tests to run. If it takes longer than TIMEOUT, the tests fail.
+The amount of time (in nanoseconds) to wait for the tests to run. If it takes longer than TIMEOUT, the tests fail.
 
-Default: 5000000 \(5 seconds\).
+Default: 5000000 (5 seconds).
 
 `--ignore`
 
 Accepts a regular expression that can be used to ignore files and folders from being loaded for testing. 
 
-Default: ".\*" \(hidden files\), "fixtures"  
+Default: ".\*" (hidden files), "fixtures"\
 
 
 `--run`
@@ -112,24 +112,24 @@ Accepts a regular expression that can be used for running a subset of the tests.
 
 The name and location of the resulting bundle.
 
-Default: bundle.tar.gz  
+Default: bundle.tar.gz\
 
 
 `--entrypoint`
 
 By default, the Template command places the Rego for the rules under a `./rules/<rule>` folder. The Rego belongs to the rules package and the entry function is called deny, returning JSON representing a vulnerability if a misconfiguration was found. This structure works with the `rules/deny` entrypoint, but a custom entrypoint can be provided if the generated file and package structure needs to be modified.
 
-Default: "rules/deny"  
+Default: "rules/deny"\
 
 
 `--ignore`
 
 Accepts a regular expression that can be used to ignore files and folders from being loaded for bundling. 
 
-Default: ".\*”"\(hidden files\), "fixtures", "testing", "\*\_test.rego"  
+Default: ".\*”"(hidden files), "fixtures", "testing", "\*\_test.rego"\
 
 
-`--target`=`rego`\|`wasm`
+`--target`=`rego`|`wasm`
 
 What format to use for the bundle. We don’t support Rego bundles for now in the Snyk IaC CLI.
 
@@ -137,7 +137,7 @@ Default: `wasm`
 
 #### Flags available across all commands
 
-\[COMMAND\] `--help`, `--help` \[COMMAND\], `-h`
+\[COMMAND] `--help`, `--help` \[COMMAND], `-h`
 
 Prints a help text. You may specify a COMMAND to get more details.
 
@@ -145,19 +145,19 @@ Prints a help text. You may specify a COMMAND to get more details.
 
 Generate a new rule with the name `CUSTOM_RULE`
 
-```text
+```
 $ snyk-iac-rules template --rule CUSTOMRULE
 ```
 
 Test the rule
 
-```text
+```
 $ snyk-iac-rules test --run CUSTOM_RULE
 ```
 
 Generate the custom rules bundle
 
-```text
+```
 $ snyk-iac-rules build --output bundle-v1.0.0.tar.gz
 ```
 
@@ -167,6 +167,4 @@ Possible exit codes and their meaning:
 
 **0**: success
 
-**1**: failure, the custom rule might be invalid  
-
-
+**1**: failure, the custom rule might be invalid\

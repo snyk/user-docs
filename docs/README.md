@@ -12,3 +12,6 @@ Welcome to the Snyk user documentation portal!
 * [Snyk CLI](features/snyk-cli/): learn about the Snyk Command-Line interface 
 * [Integrations](features/integrations/): information to integrate Snyk into your application development cycle
 
+{% hint style="info" %}
+For details of Snyk data handling, see [How Snyk handles customer data](https://snyk.io/wp-content/uploads/Snyk-dataflows-How-Snyk-handles-customer-data.pdf).
+{% endhint %}

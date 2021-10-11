@@ -1,23 +1,23 @@
 # Upgrading dependencies with automatic PRs
 
-Once you have imported your preferred Git repositories, Snyk monitors those repos, regularly scanning them for vulnerability, license and dependency health issues. In addition to remediation advice, Snyk can then also automatically create pull requests \(PRs\) on your behalf in order to upgrade your dependencies based on the scan results.
+Once you have imported your preferred Git repositories, Snyk monitors those repos, regularly scanning them for vulnerability, license and dependency health issues. In addition to remediation advice, Snyk can then also automatically create pull requests (PRs) on your behalf in order to upgrade your dependencies based on the scan results.
 
 Snyk currently supports this feature for npm, Yarn and Maven-Central projects through GitHub, GitHub Enterprise Server and BitBucket Cloud. For use with the Broker, your admin should first upgrade to v4.55.0 or later. See our docs for additional assistance when upgrading Broker.
 
-![](../../../.gitbook/assets/image%20%288%29%20%282%29%20%284%29%20%284%29%20%284%29%20%286%29%20%283%29%20%281%29%20%285%29.png)
+![](<../../../.gitbook/assets/image (8) (2) (4) (4) (4) (6) (3) (1) (13).png>)
 
 ## How it works
 
-1. Integration is configured and users enable automatic upgrade PRs \(within the integration settings or [in the project settings](upgrading-dependencies-with-automatic-prs.md)\).
+1. Integration is configured and users enable automatic upgrade PRs (within the integration settings or [in the project settings](upgrading-dependencies-with-automatic-prs.md)).
 2. Snyk scans your projects as you import them and continues to monitor your projects, scanning on a regular basis thereafter.
 3. Per scan, when new versions for your dependencies are identified, Snyk does the following:
-   * Snyk creates automatic upgrade PRs \(frequency based on Snyk project settings\)
-   * Snyk will not open a new upgrade PR for a dependency that is already changed \(upgraded or patched\) in another open Snyk PR.
+   * Snyk creates automatic upgrade PRs (frequency based on Snyk project settings)
+   * Snyk will not open a new upgrade PR for a dependency that is already changed (upgraded or patched) in another open Snyk PR.
    * Snyk opens separate PRs for each dependency.
    * Snyk will not create upgrade PRs for a repo that has 5 or more Snyk PRs open - if the limit of open PRs is reached, no new ones are created. This number can set to between 1-10 from the Settings. This limit only applies when creating upgrade PRs, but does count fix PRs. Fix PRs are not limited in this way.
    * By default, Snyk recommends only patch and minor upgrades, but major version upgrade can be enabled in the settings where the feature is enabled.
    * If the latest eligible version contains vulnerabilities not already found in your project, Snyk will not recommend an upgrade.
-   * Snyk does not recommend upgrades to versions that are less than 21 days old. This is to avoid versions that introduce functional bugs and subsequently get unpublished, or versions that are released from a compromised account \(where the account owner has lost control to someone will malicious intent\).
+   * Snyk does not recommend upgrades to versions that are less than 21 days old. This is to avoid versions that introduce functional bugs and subsequently get unpublished, or versions that are released from a compromised account (where the account owner has lost control to someone will malicious intent).
 
 ## Supported languages and repos
 
@@ -25,11 +25,11 @@ Snyk currently supports this feature for npm, Yarn and Maven-Central projects th
 
 ## Upgrading dependencies with automatic PRs
 
-Once you have imported your preferred Git repositories, Snyk monitors those repos, regularly scanning them for vulnerability, license and dependency health issues. In addition to remediation advice, Snyk can then also automatically create pull requests \(PRs\) on your behalf in order to upgrade your dependencies based on the scan results.
+Once you have imported your preferred Git repositories, Snyk monitors those repos, regularly scanning them for vulnerability, license and dependency health issues. In addition to remediation advice, Snyk can then also automatically create pull requests (PRs) on your behalf in order to upgrade your dependencies based on the scan results.
 
 Snyk currently supports this feature for npm, Yarn and Maven-Central projects through GitHub, GitHub Enterprise Server and BitBucket Cloud. For use with the Broker, your admin should first upgrade to v4.55.0 or later. See our docs for additional assistance when upgrading Broker.
 
-![](../../../.gitbook/assets/image%20%288%29%20%282%29%20%284%29%20%284%29%20%284%29%20%286%29%20%283%29%20%281%29%20%283%29.png)
+![](<../../../.gitbook/assets/image (8) (2) (4) (4) (4) (6) (3) (1) (14).png>)
 
 ## Enable automatic dependency upgrade PRs for a specific project
 
@@ -38,7 +38,7 @@ Enable Snyk to regularly check your dependency health, recommend dependency upgr
 Once configured, Snyk automatically creates PRs for all necessary dependencies as upgrades become available for the specific project.
 
 {% hint style="info" %}
-**Note**  
+**Note**\
 Settings on the project level override the settings on the organization level. Currently, we support all languages supported by the Git repositories that we integrate with: GitHub, GitLab, Bitbucket and Azure repos.
 {% endhint %}
 
@@ -60,7 +60,6 @@ Settings on the project level override the settings on the organization level. C
 6. Click **Update dependency upgrade settings**
 7. Settings are saved
 
-![](../../../.gitbook/assets/image%20%287%29.png)
+![](<../../../.gitbook/assets/image (7).png>)
 
 Every time Snyk scans this project now, it automatically submits upgrade PRs based on results. If a newer version is released for an existing Snyk upgrade PR or for an existing fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.
-

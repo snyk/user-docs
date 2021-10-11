@@ -5,15 +5,15 @@ You can use Snyk to scan your JavaScript projects.
 ### Features
 
 {% hint style="info" %}
-**NOTE**  
+**NOTE**\
 Features might not be available, depending on your subscription plan.
 {% endhint %}
 
-|  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![i\_icon\_npm.png](../../../.gitbook/assets/uuid-aa98c079-4d3e-5e58-f450-08985b5d4b8b-en.png) | npm | ✔︎ | ✔︎ | ✔︎ | ✔ | ✔︎ |
-| ![i\_icon\_yarn.png](../../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) | Yarn | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
-| ![i\_icon\_yarn.png](../../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) | Yarn Workspaces | ✔︎ | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
+|                                                                                               | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
+| --------------------------------------------------------------------------------------------- | ------------------------- | ----------- | ----------- | ---------------- | ----------- | ------------------ |
+| ![i_icon_npm.png](../../../.gitbook/assets/uuid-aa98c079-4d3e-5e58-f450-08985b5d4b8b-en.png)  | npm                       | ✔︎          | ✔︎          | ✔︎               | ✔           | ✔︎                 |
+| ![i_icon_yarn.png](../../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) | Yarn                      | ✔︎          | ✔︎          | ✔︎               | ✔︎          | ✔︎                 |
+| ![i_icon_yarn.png](../../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) | Yarn Workspaces           | ✔︎          | ✔︎          | ✔︎               | ✔︎          | ✔︎                 |
 
 ### How it works
 
@@ -62,7 +62,7 @@ Yarn v1 workspaces support is for `snyk test` and `snyk monitor` commands only a
 
 For Yarn workspaces use the `--yarn-workspaces` flag to test and monitor your packages. The root lockfile is referenced when scanning all the packages. Use the `--detection-depth` parameter to find sub-folders which are not auto discovered by default.
 
-Example usage:  
+Example usage:\
 `snyk test --yarn-workspaces --strict-out-of-sync=false --detection-depth=6` which will scan only the packages that belong to any discovered workspaces this directly and 5 sub-directories deep.
 
 You may use a common **.snyk** policy file if you maintain ignores/patches in one place to be applied for all detected workspaces by providing the policy path:
@@ -87,69 +87,13 @@ As snyk test looks at the locally installed modules, it needs to be run after np
 
 Use the following options to refine the scan:
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><b>Option</b>
-      </th>
-      <th style="text-align:left"><b>Values<br />(default in bold)</b>
-      </th>
-      <th style="text-align:left"><b>Description</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>--strict-out-of-sync</code>
-      </td>
-      <td style="text-align:left"><b>true</b>,false</td>
-      <td style="text-align:left">Prevent testing out-of-sync lockfiles (test fails when set to true if
-        there are out-of-sync lockfiles in the project)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>--fail-on</code>
-      </td>
-      <td style="text-align:left"><b>all</b>, upgradable, patchable</td>
-      <td style="text-align:left">
-        <p>Configure when a test should be failed if there are vulnerabilities as
-          follows:</p>
-        <ul>
-          <li>All-fail for all projects containing vulnerabilities</li>
-          <li>Upgradable-fail only for projects with vulnerabilities that can be fixed
-            with package upgrades</li>
-          <li>Patchable-fail for projects with vulnerabilities that can be fixed with
-            either upgrades or patches</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>--prune-repeated-subdependencies</code>
-      </td>
-      <td style="text-align:left">true, <b>false</b>
-      </td>
-      <td style="text-align:left">Use this flag if any big projects fail to be tested. Default is <em>false</em>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>--dev</code>
-      </td>
-      <td style="text-align:left">true, <b>false</b>
-      </td>
-      <td style="text-align:left">Set to true if Snyk should scan dev dependencies</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>--yarn-workspaces</code>
-      </td>
-      <td style="text-align:left"><b>n/a</b>
-      </td>
-      <td style="text-align:left">
-        <p>Provide this flag to signal that the scanned project is a Yarn workspace
-          so the root level lockfile can be used for all packages.</p>
-        <p>Note: <code>snyk test</code> and<code>snyk monitor</code> commands only.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| **Option**                         | <p><strong>Values</strong><br><strong>(default in bold)</strong></p> | **Description**                                                                                                                                                                                                                                                                                                                                                                |
+| ---------------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `--strict-out-of-sync`             | **true**,false                                                       | Prevent testing out-of-sync lockfiles (test fails when set to true if there are out-of-sync lockfiles in the project)                                                                                                                                                                                                                                                          |
+| `--fail-on`                        | **all**, upgradable, patchable                                       | <p>Configure when a test should be failed if there are vulnerabilities as follows:</p><ul><li>All-fail for all projects containing vulnerabilities</li><li>Upgradable-fail only for projects with vulnerabilities that can be fixed with package upgrades</li><li>Patchable-fail for projects with vulnerabilities that can be fixed with either upgrades or patches</li></ul> |
+| `--prune-repeated-subdependencies` | true, **false**                                                      | Use this flag if any big projects fail to be tested. Default is _false_                                                                                                                                                                                                                                                                                                        |
+| `--dev`                            | true, **false**                                                      | Set to true if Snyk should scan dev dependencies                                                                                                                                                                                                                                                                                                                               |
+| `--yarn-workspaces`                | **n/a**                                                              | <p>Provide this flag to signal that the scanned project is a Yarn workspace so the root level lockfile can be used for all packages.</p><p>Note: <code>snyk test</code> and<code>snyk monitor</code> commands only.</p>                                                                                                                                                        |
 
 ## Git services for JavaScript projects
 
@@ -180,7 +124,7 @@ We build the dependency tree based on these files:
 ### Yarn Workspaces
 
 {% hint style="info" %}
-**Note**  
+**Note**\
 Git support for Yarn Workspaces is enabled for all projects in organisations created after March 3rd 2021. To enable this feature for organisations created before this date please contact support@snyk.io.
 {% endhint %}
 
@@ -193,8 +137,8 @@ Commit status checks fail if the `package.json` and the root `yarn.lock` are out
 Commit status checks always use the root level `yarn.lock` and workspace `package.json` for tests.
 
 {% hint style="info" %}
-**Warning**  
-If your `package.json` and root `yarn.lock` are out of sync, we will have issues re-testing the projects. Snyk shows errors on project page and import logs when this happens.  
+**Warning**\
+If your `package.json` and root `yarn.lock` are out of sync, we will have issues re-testing the projects. Snyk shows errors on project page and import logs when this happens.\
 If you reference the locally installed packages which do not appear in a lockfile, you can disable the **Require package.json and yarn.lock files to be in sync** setting, on the **Languages Settings** page for JavaScript.
 {% endhint %}
 
@@ -204,17 +148,16 @@ If you reference the locally installed packages which do not appear in a lockfil
 
 From the Snyk UI, use these parameters to customize your language preferences for JavaScript-based projects:
 
-| Option | Description |
-| :--- | :--- |
-| **Scan and fix devDependencies** | If selected, Snyk reads the \`devDependencies\` property on the package.json and reports & fixes any vulnerabilities accordingly. |
-| **Require package.json and package-lock.json to be in sync** | When selected if the package.json and package.lock files are out-of-sync, Snyk fails the import. |
+| Option                                                                         | Description                                                                                                                                                                                                                                                                                |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Scan and fix devDependencies**                                               | If selected, Snyk reads the \`devDependencies\` property on the package.json and reports & fixes any vulnerabilities accordingly.                                                                                                                                                          |
+| **Require package.json and package-lock.json to be in sync**                   | When selected if the package.json and package.lock files are out-of-sync, Snyk fails the import.                                                                                                                                                                                           |
 | **Exclude package-lock.json from being generated when fixing vulnerabilities** | If you are using private mirrors or registries, a Snyk generated lockfile might not be appropriate for you because Snyk uses the npm registry to update the lockfile. This setting allows you to opt-out of getting lockfiles generated for you in our fix pull requests / merge requests. |
 
 ### Update language preferences
 
-![](../../../.gitbook/assets/add-artifactory-images%20%281%29%20%282%29%20%2815%29.gif)
+![](<../../../.gitbook/assets/add-artifactory-images (1) (2) (44).gif>)
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage
-2. Click on settings ![](../../../.gitbook/assets/cog_icon.png) &gt; **Languages**
-3. Click **Edit settings** for JavaScript to configure preferences for your JavaScript \(npm and Yarn\) projects in this organization
-
+2. Click on settings ![](../../../.gitbook/assets/cog_icon.png) > **Languages**
+3. Click **Edit settings** for JavaScript to configure preferences for your JavaScript (npm and Yarn) projects in this organization

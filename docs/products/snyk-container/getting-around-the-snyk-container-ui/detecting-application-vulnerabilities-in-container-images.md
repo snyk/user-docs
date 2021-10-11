@@ -13,7 +13,7 @@ After you integrate with a container registry and import your projects, we scan 
 1. Navigate to your container registry integration settings
 2. Enable the _**Detect application vulnerabilities**_ capability and save the changes:
 
-![](../../../.gitbook/assets/mceclip1%20%281%29.png)
+![](<../../../.gitbook/assets/mceclip1 (1).png>)
 
 ## View vulnerabilities and licensing issues
 
@@ -26,15 +26,15 @@ When an image is imported to Snyk, it appears under its registry record in the *
 
 With this feature enabled, you can also see nested manifest files detected in the image and their vulnerabilities and licensing issues.
 
-![](../../../.gitbook/assets/mceclip2%20%281%29%20%281%29%20%281%29%20%283%29%20%283%29%20%284%29%20%286%29%20%281%29%20%2818%29.png)
+![](<../../../.gitbook/assets/mceclip2 (1) (1) (1) (3) (3) (4) (6) (1) (23).png>)
 
 ## Automated scanning
 
 Snyk scans the image regularly based on your project’s settings, and updates you via email or Slack - based on your configuration - when any new vulnerabilities are identified in both the operating system and application dependencies.
 
-For each project, you can choose the test frequency under its settings \(the default is daily testing\).
+For each project, you can choose the test frequency under its settings (the default is daily testing).
 
-![](../../../.gitbook/assets/mceclip3%20%281%29.png)
+![](<../../../.gitbook/assets/mceclip3 (1).png>)
 
 **Supported registries**
 
@@ -51,13 +51,13 @@ This is supported across the following container registries:
 The supported languages work on the following integrations:
 
 | **Language** | **Container Registry** | **CLI** | **Kubernetes** |
-| :--- | :--- | :--- | :--- |
-| Node | Yes | Yes | Yes |
-| Ruby | Yes |  |  |
-| PHP | Yes |  |  |
-| Python | Yes |  |  |
-| Go Binaries | Yes | Yes | Yes |
-| Java | Yes | Yes | Yes |
+| ------------ | ---------------------- | ------- | -------------- |
+| Node         | Yes                    | Yes     | Yes            |
+| Ruby         | Yes                    |         |                |
+| PHP          | Yes                    |         |                |
+| Python       | Yes                    |         |                |
+| Go Binaries  | Yes                    | Yes     | Yes            |
+| Java         | Yes                    | Yes     | Yes            |
 
 **Language Limitations**
 
@@ -66,4 +66,3 @@ These are the current limitations of the language support:
 **Java**
 
 Scan only the top level JAR - we do not currently unpack the JAR
-

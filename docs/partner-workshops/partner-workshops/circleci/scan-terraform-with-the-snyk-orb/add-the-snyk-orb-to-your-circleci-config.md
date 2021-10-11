@@ -6,9 +6,11 @@ In the CircleCI Academy Orbs module you learned about Orbs, packages of configur
 
 In your fork of the [learn-iac](https://github.com/datapunkz/learn_iac) repo, open the `.circleci/config.yml` file. Add the Snyk Orb to the top replacing `@x.y.z` with the latest version of the Snyk Orb from the Orb Registry.
 
-{% embed url="https://circleci.com/developer/orbs/orb/snyk/snyk\\" caption="Snyk Orb in CircleCI Orb Registry" %}
+{% embed url="https://circleci.com/developer/orbs/orb/snyk/snyk\" %}
+Snyk Orb in CircleCI Orb Registry
+{% endembed %}
 
-```text
+```
 version: 2.1
 
 orbs:
@@ -24,7 +26,7 @@ Adding the Orb exposes the `snyk` commands and jobs to your workflow. Consider y
 
 For this example, add the `snyk/scan-iac` job before the `gke-create-cluster` job to check Terraform files are correctly configured before creating the cloud infrastructure. The `args` parameter points to which files to check for misconfigurations and can also be used to pass [other Snyk CLI arguments](https://support.snyk.io/hc/en-us/articles/360018728618-Test-your-configuration-files).
 
-```text
+```
 workflows:
   build_test:
     jobs:
@@ -66,4 +68,3 @@ Clicking on the `main.tf` file will show you an in-line view of the issues found
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/iac-result-details.png)
 
 In the next section we'll show how you can tune this analysis to adjust the test's pass/fail criteria.
-

@@ -6,10 +6,10 @@
 You can find a full example of this guide in [this OPA Playground](https://play.openpolicyagent.org/p/SCYndBjWxh).
 {% endhint %}
 
-Let’s assume we have generated a new rule `CUSTOM-RULE-1` using the SDK \(i.e. `snyk-iac-rules template --rule CUSTOM-RULE-1`\) and have a very simple fixture file containing a Terraform resource:
+Let’s assume we have generated a new rule `CUSTOM-RULE-1` using the SDK (i.e. `snyk-iac-rules template --rule CUSTOM-RULE-1`) and have a very simple fixture file containing a Terraform resource:
 
 {% code title="rules/CUSTOM-RULE-1/fixtures/denied.tf" %}
-```text
+```
 resource "aws_redshift_cluster" "allowed" {
   cluster_identifier = "tf-redshift-cluster"
   node_type          = "dc1.large"
@@ -22,14 +22,14 @@ resource "aws_redshift_cluster" "allowed" {
 
 Now, we want to modify the generated Rego to enforce resources tagged with an owner:
 
-1. Create a variable `[name]` to to enumerate across all of the `aws_redshift_cluster` resources. This variable can be named anything you like \(e.g. `i`, `j`, `name`, etc.\).
+1. Create a variable `[name]` to to enumerate across all of the `aws_redshift_cluster` resources. This variable can be named anything you like (e.g. `i`, `j`, `name`, etc.).
 2. Store this into the resource variable by assigning the value to it with a walrus operator `:=`; e.g. `resource := input.resource.aws_redshift_cluster[name]`
-3. Check if the owner tag exists for each resource; to do that, check if the path `resource.tags.owner` is defined. If it is undefined, it will evaluate to undefined. So, use the `NOT` keyword in front of it, which will evaluate to `TRUE`; e.g.`not resource.tags.owner`
+3. Check if the owner tag exists for each resource; to do that, check if the path `resource.tags.owner `is defined. If it is undefined, it will evaluate to undefined. So, use the `NOT` keyword in front of it, which will evaluate to `TRUE`; e.g.`not resource.tags.owner`
 
 The modified Rego is:
 
 {% code title="rules/CUSTOM-RULE-1/main.rego" %}
-```text
+```
 package rules
 
 deny[msg] {
@@ -60,8 +60,8 @@ We recommend always validating that your rule is correct by [updating and runnin
 
 The test for this rule verifies that the Rego rule is able to identify that the fixture at the beginning of this guide is invalid:
 
-{% code title="rules/CUSTOM-RULE-1/main\_test.rego" %}
-```text
+{% code title="rules/CUSTOM-RULE-1/main_test.rego" %}
+```
 package rules
 
 import data.lib
@@ -88,13 +88,14 @@ test_CUSTOM_RULE_1 {
 
 Let’s try and extend the example above and update the rule to allow all cases that suffice two conditions:
 
-1. A resource has an “owner” tag **AND**
+1. A resource has an “owner” tag\
+   **AND**
 2. A resource has a “description” tag
 
 To test this new condition, we generate a new rule `CUSTOM-RULE-2` using the `template` command and write the following fixture file:
 
 {% code title="rules/CUSTOM-RULE-2/fixtures/denied.tf" %}
-```text
+```
 resource "aws_redshift_cluster" "denied" {
   cluster_identifier = "tf-redshift-cluster"
   node_type          = "dc1.large"
@@ -108,14 +109,14 @@ resource "aws_redshift_cluster" "denied" {
 Joining multiple expressions together expresses logical `AND`. 
 
 * You can do this with the `;` operator.
-* Or, you can omit the `;` \(`AND`\) operator by splitting expressions across multiple lines.
+* Or, you can omit the `;` (`AND`) operator by splitting expressions across multiple lines.
 
 {% hint style="info" %}
 The logical AND is covered also in the [OPA documentation](https://www.openpolicyagent.org/docs/latest/#expressions-logical-and).
 {% endhint %}
 
 {% code title="rules/CUSTOM-RULE-2/main.rego" %}
-```text
+```
 package rules
 
 aws_redshift_cluster_tags_present(resource) {
@@ -147,8 +148,8 @@ We recommend always validating that your rule is correct by [updating and runnin
 
 The test for this rule will look the same as the one for `CUSTOM-RULE-1`, but the name of the test and the first two arguments passed to the `testing.evaluatetestcases` function will differ:
 
-{% code title="rules/CUSTOM-RULE-2/main\_test.rego" %}
-```text
+{% code title="rules/CUSTOM-RULE-2/main_test.rego" %}
+```
 package rules
 
 import data.lib
@@ -183,7 +184,7 @@ Let’s update the example in a new rule `CUSTOM-RULE-3`, to deny all cases that
 For this, we will use two new fixture files, one for each case:
 
 {% code title="rules/CUSTOM-RULE-3/fixtures/denied1.json" %}
-```text
+```
 resource "aws_redshift_cluster" "denied1" {
   cluster_identifier = "tf-redshift-cluster"
   node_type          = "dc1.large"
@@ -195,7 +196,7 @@ resource "aws_redshift_cluster" "denied1" {
 {% endcode %}
 
 {% code title="rules/CUSTOM-RULE-3/fixtures/denied2.json" %}
-```text
+```
 resource "aws_redshift_cluster" "denied2" {
   cluster_identifier = "tf-redshift-cluster"
   node_type          = "dc1.large"
@@ -211,7 +212,7 @@ To express logical OR in Rego, we can define multiple rules or functions with th
 First, we will add a function that will implement the `NOT` for each tag. Then, we will call this function with the resource:
 
 {% code title="rules/CUSTOM-RULE-3/main.rego" %}
-```text
+```
 package rules
 
 aws_redshift_cluster_tags_missing(resource) {
@@ -247,8 +248,8 @@ We recommend always validating that your rule is correct by [updating and runnin
 
 The test for this rule will now contain multiple test cases, to show that the logical OR works as expected:
 
-{% code title="rules/CUSTOM-RULE-3/main\_test.rego" %}
-```text
+{% code title="rules/CUSTOM-RULE-3/main_test.rego" %}
+```
 package rules
 
 import data.lib
@@ -282,7 +283,7 @@ Let’s extend this further and add a third condition. Deny all resources that a
 3. The email of the owner does not belong to the “@corp-domain.com” domain
 
 {% code title="rules/CUSTOM-RULE-4/main.rego" %}
-```text
+```
 package rules
 
 aws_redshift_cluster_tags_missing(resource) {
@@ -326,18 +327,18 @@ The test for this rule will look very similar to the ones from previous example 
 Now let’s say that we want to add more complexity and check the following:
 
 * If the tag type is a “user”, then we want the tag “email” to exist as well.
-* If not \(assume the other type is a “service”\), we want it to have a serviceDescription.
+* If not (assume the other type is a “service”), we want it to have a serviceDescription.
 * These two will be mutually exclusive; if the first condition applies, the second one shouldn’t, and vice versa.
 
-| Type | Email | ServiceDescription |
-| :--- | :--- | :--- |
-| User | YES | NO |
-| Service | NO | YES |
+| Type    | Email | ServiceDescription |
+| ------- | ----- | ------------------ |
+| User    | YES   | NO                 |
+| Service | NO    | YES                |
 
 To do this, we are going to refactor our code to use a checkTags helper function. This can check if there are any tags, but also check for the two conditions above with an OR.
 
 {% code title="rules/CUSTOM-RULE-5/main.rego" %}
-```text
+```
 package rules
 
 checkTags(resource){
@@ -375,7 +376,7 @@ deny[msg] {
 To convert this to an XOR we can use an `else` rule:
 
 {% code title="rules/CUSTOM-RULE-5/main.rego" %}
-```text
+```
 package rules
 
 package play
@@ -438,7 +439,7 @@ The test for this rule will look very similar to the ones from previous example 
 
 We can also iterate over many resources by adding them to an array of resources.
 
-```text
+```
 "resources": [
             "aws_iam_policy",
             "aws_iam_group_policy",
@@ -448,5 +449,4 @@ We can also iterate over many resources by adding them to an array of resources.
 ]
 ```
 
-## 
-
+##

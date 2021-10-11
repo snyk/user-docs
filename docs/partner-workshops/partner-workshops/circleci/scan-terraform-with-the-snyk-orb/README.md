@@ -25,9 +25,13 @@ According to the NSA, [misconfigurations are the top Cloud vulnerability](https:
 
 This lab assumes the following courses were completed in CircleCI Academy:
 
-{% embed url="https://academy.circleci.com/infrastructure-as-code" caption="Infrastructure as Code 101 in the CircleCI Academy" %}
+{% embed url="https://academy.circleci.com/infrastructure-as-code" %}
+Infrastructure as Code 101 in the CircleCI Academy
+{% endembed %}
 
-{% embed url="https://academy.circleci.com/orbs-course" caption="Orbs in the CircleCI Academy" %}
+{% embed url="https://academy.circleci.com/orbs-course" %}
+Orbs in the CircleCI Academy
+{% endembed %}
 
 {% hint style="warning" %}
 It's highly recommended you complete the courses before proceeding.
@@ -37,11 +41,10 @@ It's highly recommended you complete the courses before proceeding.
 
 We'll use the same code used in the Infrastructure as Code course. It can be found on GitHub.
 
-{% embed url="https://github.com/datapunkz/learn\_iac" caption="" %}
+{% embed url="https://github.com/datapunkz/learn_iac" %}
 
 ### Snyk Account and Token
 
-You'll need a Snyk Account to use the Snyk Orb. [Create a Snyk API Token](https://support.snyk.io/hc/en-us/articles/360004008278-Revoking-and-regenerating-Snyk-API-tokens), then [set an Environment Variable in CircleCI](https://circleci.com/docs/2.0/env-vars/#setting-an-environment-variable-in-a-project) called SNYK\_TOKEN with its value.
+You'll need a Snyk Account to use the Snyk Orb. [Create a Snyk API Token](https://support.snyk.io/hc/en-us/articles/360004008278-Revoking-and-regenerating-Snyk-API-tokens), then [set an Environment Variable in CircleCI](https://circleci.com/docs/2.0/env-vars/#setting-an-environment-variable-in-a-project) called SNYK_TOKEN with its value.
 
 When ready, continue to the next page.
-

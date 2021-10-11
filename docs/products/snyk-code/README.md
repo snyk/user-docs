@@ -9,9 +9,9 @@ Snyk Code expands the Snyk cloud-native application security platform, supportin
 * [**Snyk Container**](https://docs.snyk.io/snyk-container): the container it runs in.
 * [**Snyk Infrastructure as Code**](https://docs.snyk.io/snyk-infrastructure-as-code): the infrastructure as code that provisions it.
 
-## How does static application security testing \(SAST\) work?
+## How does static application security testing (SAST) work?
 
-1. Checks and reads for DeepCode/Snyk ignore specific files `.gitignore` `.dcignore` \(if they exist\).
+1. Checks and reads for DeepCode/Snyk ignore specific files `.gitignore` `.dcignore` (if they exist).
 2. Using the information obtained in step 1, we are filtering to get only the following source code files:
    1. `.es,.es6,.htm,.html,.js,.jsx,.ts,.tsx,.vue,.java,.CS,.Cs,.cs,.py`
    2. We are accessing only the files in the project directory. We do not go above the current project directory.
@@ -73,7 +73,7 @@ This integration allows you to:
 
 ## Supported languages
 
-Snyk Code supports Java, JavaScript \(including TypeScript\), Python and C\#.
+Snyk Code supports Java, JavaScript (including TypeScript), Python and C#.
 
 See [Snyk Code language support](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support) for more information.
 
@@ -93,7 +93,6 @@ For more details, see [JetBrains IDE Plugins](https://docs.snyk.io/integrations/
 
 Snyk Code supports a Visual Studio Code plugin to support issue finding and fixing, directly from the IDE:
 
-![](../../.gitbook/assets/image3-2-%20%282%29%20%282%29%20%284%29%20%284%29%20%284%29%20%283%29.png)
+![](<../../.gitbook/assets/image3-2- (2) (2) (4) (4) (4) (3) (5).png>)
 
 For more details, see the [Visual Studio Code extension for Snyk Code](../../features/integrations/ide-tools/visual-studio-code-extension-for-snyk-code.md).
-

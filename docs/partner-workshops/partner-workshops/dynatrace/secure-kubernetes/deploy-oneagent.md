@@ -1,12 +1,12 @@
 # Deploy OneAgent
 
-{% embed url="https://youtu.be/K2PVsCivTMU" caption="" %}
+{% embed url="https://youtu.be/K2PVsCivTMU" %}
 
 {% hint style="info" %}
-We will provide step-by-step instruction to help you get started quickly. For in depth product documentation, please visit the following Dynatrace Documentation pages:  
-1. [Set up Dynatrace on Kubernetes](https://www.dynatrace.com/support/help/setup-and-configuration/setup-on-container-platforms/kubernetes/)  
-2. [Dynatrace ActiveGate](https://www.dynatrace.com/support/help/setup-and-configuration/dynatrace-activegate/)  
-3. [Dynatrace OneAgent](https://www.dynatrace.com/support/help/setup-and-configuration/dynatrace-oneagent/)
+We will provide step-by-step instruction to help you get started quickly. For in depth product documentation, please visit the following Dynatrace Documentation pages:\
+1\. [Set up Dynatrace on Kubernetes](https://www.dynatrace.com/support/help/setup-and-configuration/setup-on-container-platforms/kubernetes/)\
+2\. [Dynatrace ActiveGate](https://www.dynatrace.com/support/help/setup-and-configuration/dynatrace-activegate/)\
+3\. [Dynatrace OneAgent](https://www.dynatrace.com/support/help/setup-and-configuration/dynatrace-oneagent/)
 {% endhint %}
 
 ## Step 1:
@@ -64,9 +64,9 @@ Once copied, switch back to your terminal and execute the example command:
  --cluster-name "$YOUR_CLUSTER_NAME"
 ```
 
-Where **$YOUR\_API\_URL** is that of your Dynatrace tenant, **$YOUR\_API\_TOKEN**, **$YOUR\_PASS\_TOKEN** and **$YOUR\_CLUSTER\_NAME** are those created above. If successful, you will see results similar to what is shown below:
+Where **$YOUR_API_URL** is that of your Dynatrace tenant, **$YOUR_API_TOKEN**, **$YOUR_PASS_TOKEN** and **$YOUR_CLUSTER_NAME** are those created above. If successful, you will see results similar to what is shown below:
 
-```text
+```
 Check for token scopes...
 
 Check if cluster already exists...
@@ -98,4 +98,3 @@ Kubernetes monitoring successfully setup.
 ```
 
 That's it! You are ready to move to the next section.
-

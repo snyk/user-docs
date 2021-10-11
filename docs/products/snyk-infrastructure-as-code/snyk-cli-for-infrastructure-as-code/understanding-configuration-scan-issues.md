@@ -4,7 +4,7 @@ Snyk analyzes your provided configuration file for issues and provides advice on
 
 For example - scanning a Terraform file:
 
-```text
+```
 snyk iac test aws_api_gateway_stage_logging.tf
 ```
 
@@ -26,17 +26,16 @@ This example is of output from a Terraform file, but this guide applies to any f
 
 The path of this issue is specified as:
 
-```text
+```
 resource > aws_api_gateway_stage[denied] > access_log_settings
 ```
 
 In the following code you can see that line 1 represents the contents of the `aws_api_gateway_stage` block named "denied" which is missing the `access_log_settings` field.
 
-{% code title="aws\_api\_gateway\_stage\_logging.tf" %}
-```text
+{% code title="aws_api_gateway_stage_logging.tf" %}
+```
 resource "aws_api_gateway_stage" "denied" {
   xray_tracing_enabled = true
 }
 ```
 {% endcode %}
-

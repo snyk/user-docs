@@ -3,15 +3,15 @@
 Get started with Snyk Container to help you find and fix vulnerabilities in container images. See [Container security overview](https://support.snyk.io/hc/en-us/articles/360003946897-Container-security-overview) and [Snyk Container](https://solutions.snyk.io/snyk-academy/container) for details.
 
 {% hint style="info" %}
-This process uses the Snyk.io UI. For details of Snyk Container using the Snyk CLI \(Command-Line Interface\) tool, see **Snyk CLI for container security** and **Test your container images with our CLI tool**.
+This process uses the Snyk.io UI. For details of Snyk Container using the Snyk CLI (Command-Line Interface) tool, see **Snyk CLI for container security** and **Test your container images with our CLI tool**.
 {% endhint %}
 
 ### Prerequisites
 
 Ensure you have:
 
-* Access to a relevant container registry to use with Snyk. Snyk supports registries including , Amazon Elastic Container Registry \([ECR](https://docs.snyk.io/snyk-container/image-scanning-library/ecr-image-scanning)\), Google Container Registry \([GCR](https://docs.snyk.io/snyk-container/image-scanning-library/gcr-image-scanning)\), Microsoft Azure Container Registry \([ACR](https://docs.snyk.io/snyk-container/image-scanning-library/acr-image-scanning)\), and [JFrog Artifactory](https://docs.snyk.io/snyk-container/image-scanning-library/jfrog-artifactory-image-scanning). Alternatively, access to [Kubernetes](https://docs.snyk.io/snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning) if you select that as an integration.
-* A Snyk account \(go to [https://snyk.io/](https://snyk.io/) and sign up - see [Create a Snyk account](https://docs.snyk.io/getting-started/getting-started-snyk-products) for details\).
+* Access to a relevant container registry to use with Snyk. Snyk supports registries including , Amazon Elastic Container Registry ([ECR](https://docs.snyk.io/snyk-container/image-scanning-library/ecr-image-scanning)), Google Container Registry ([GCR](https://docs.snyk.io/snyk-container/image-scanning-library/gcr-image-scanning)), Microsoft Azure Container Registry ([ACR](https://docs.snyk.io/snyk-container/image-scanning-library/acr-image-scanning)), and [JFrog Artifactory](https://docs.snyk.io/snyk-container/image-scanning-library/jfrog-artifactory-image-scanning). Alternatively, access to [Kubernetes](https://docs.snyk.io/snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning) if you select that as an integration.
+* A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [Create a Snyk account](https://docs.snyk.io/getting-started/getting-started-snyk-products) for details).
 
 ## Stage 1: Add container registry integration
 
@@ -43,7 +43,7 @@ You can now see vulnerability results for imported projects.
 
 Select **Projects**, then click on the imported project entry under its registry record, to see vulnerability information for that project.
 
-![](../../.gitbook/assets/mceclip2%20%281%29%20%281%29%20%281%29%20%283%29%20%283%29%20%284%29%20%286%29%20%281%29%20%2822%29.png)
+![](<../../.gitbook/assets/mceclip2 (1) (1) (1) (3) (3) (4) (6) (1) (24).png>)
 
 Here you can see a summary of the severity of the detected vulnerabilities.
 
@@ -62,4 +62,3 @@ See [Analysis and remediation for your images from the Snyk app](https://docs.sn
 ## For more information
 
 See [Snyk Container](https://docs.snyk.io/snyk-container).
-

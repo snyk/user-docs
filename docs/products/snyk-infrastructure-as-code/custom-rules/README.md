@@ -4,7 +4,7 @@
 This feature is currently in beta. We would appreciate any feedback you might have.
 {% endhint %}
 
-Initial instructions to get you started with the Snyk Infrastructure as Code \(IaC\) SDK:
+Initial instructions to get you started with the Snyk Infrastructure as Code (IaC) SDK:
 
 * [Install the SDK](install-the-sdk.md)
 * [Getting started with the SDK](getting-started-with-the-sdk/)
@@ -24,11 +24,9 @@ The IaC SDK helps security teams define their own rules, to be run by the [Snyk 
 Using this SDK, you can add your own custom rules to Snyk IaC, to run alongside the standard provided rules, giving comprehensive security feedback to your development teams in one place. 
 
 {% hint style="success" %}
-Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up&loc=footer&page=support_docs_page)​
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up\&loc=footer\&page=support_docs_page)​
 {% endhint %}
 
 
 
-  
-
-
+\

@@ -8,10 +8,8 @@
 **In the Snyk CLI**
 
 1. If you have only your default organization, any projects you add or update by running `snyk wizard` or `snyk monitor` will be automatically associated with your default organization.
-2. If you have more than one organization, you can configure which organization newly added projects should be associated with by running `snyk config set org=orgname`.
+2.  If you have more than one organization, you can configure which organization newly added projects should be associated with by running `snyk config set org=orgname`.
 
-   **Note**  
-   `orgname` should match the name as displayed in the URL of your org in the snyk UI: \[\[[https://app.snyk.io/org/\[orgname\]\(https://app.snyk.io/org/\[orgname\)\]\(https://app.snyk.io/org/\[orgname\]%28https://app.snyk.io/org/\[orgname%29\)\](https://app.snyk.io/org/[orgname]%28https://app.snyk.io/org/[orgname%29]%28https://app.snyk.io/org/[orgname]%28https://app.snyk.io/org/[orgname%29%29\)\].
-
+    **Note**\
+    `orgname` should match the name as displayed in the URL of your org in the snyk UI: \[\[[https://app.snyk.io/org/\[orgname\]\(https://app.snyk.io/org/\[orgname)\]\(https://app.snyk.io/org/\[orgname\]%28https://app.snyk.io/org/\[orgname%29)\\](https://app.snyk.io/org/\[orgname]\(https://app.snyk.io/org/\[orgname\)]\(https://app.snyk.io/org/\[orgname]\(https://app.snyk.io/org/\[orgname\)\)/)].
 3. If you would like to override this global configuration for individual runs of `snyk wizard` or `snyk monitor`, run `snyk monitor --org=orgname` or `snyk wizard --org=orgname`.
-
