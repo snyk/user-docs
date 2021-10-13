@@ -1,6 +1,6 @@
 # Partner Workshops
 
-description: >- This website was created by Snyk technical subject matter experts. It is intended as a resource to educate and enable you to leverage Snyk with your preferred cloud provider and developer tools.
+This information was created by Snyk technical subject matter experts, as a resource to educate and enable you to leverage Snyk with your preferred cloud provider and developer tools.
 
 ## Home
 
