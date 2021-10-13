@@ -15,6 +15,9 @@ description: Data fields and mapping
 | disclosureTime | 2019-07-26T20:20:03Z | Timestamp of when the vulnerability was first made publicly available \(either known to us or as appears the vulnerability source\) | String \(date-time format\) |
 | exploit | Functional | Snyk looks for exploits in the wild and evaluates their maturity. Snyk also writes it’s own POC to evaluate vulnerability exploitability. This knowledge goes into assessing the maturity of the exploit as appears in this field. Values are from section 3.1 in [https://www.first.org/cvss/v3.1/specification-document](https://www.first.org/cvss/v3.1/specification-document) | String, supported exploit maturity values as appear in cvss vector specification |
 | isUpgradable | FALSE | Is there an upgrade a user can take to fix the vulnerability | Boolean value |
+| isPinnable | FALSE | Whether the issue can be fixed by pinning a transitive | Boolean value |
+| isPatchable | FALSE | Whether all the of issue's paths are patchable | Boolean value |
+| isFixable | FALSE | Whether all of the issue's paths are fixable. Paths that are already patched are not considered fixable unless they have an alternative remediation (e.g. pinning or upgrading). An upgrade path where the only changes are in transitive dependencies is only considered fixable if the package manager supports it. | Boolean value |
 | id | SNYK-JAVA-ORGQUARTZSCHEDULERINTERNAL-455598 | Snyk’s Vulnearbility’s ID. | String |
 | fixedIn | \[ "2.2", "2.6.14", "2.7.11"\] | This indicated the earliest version that is vuln-free. As this might be a backport fix, this does not mean that newer versions aren’t vulnerable to it. | Array of strings |
 | language | Java | Specifies the ecosystem of the vulnerability \(java,python, etc\) | String |
