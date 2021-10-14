@@ -206,7 +206,7 @@
     * [Why is my setup.py file failing to scan or finding 0 dependencies?](features/snyk-cli/test-for-vulnerabilities/why-is-my-setup.py-file-failing-to-scan-or-finding-0-dependencies.md)
     * [Scan all unmanaged jar files](features/snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files.md)
   * [Fix vulnerabilities from the CLI](features/snyk-cli/fix-vulnerabilities-from-the-cli/README.md)
-    * [Automatic remediation with snyk fix](features/snyk-cli/fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix.md)
+    * [Automatic fixing with snyk fix](features/snyk-cli/fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix.md)
     * [View CLI test results](features/snyk-cli/fix-vulnerabilities-from-the-cli/view-cli-test-results.md)
     * [Ignore vulnerabilities using Snyk CLI](features/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli.md)
     * [Manage vulnerability results with the Snyk CLI wizard](features/snyk-cli/fix-vulnerabilities-from-the-cli/manage-vulnerability-results-with-the-snyk-cli-wizard.md)
