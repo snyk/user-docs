@@ -213,6 +213,29 @@ Prints results in JSON format.
 
 This is  useful to display the human-readable test output via **stdout** and at the same time save the JSON format output to a file.
 
+### Import scan results in Snyk App
+
+To import the test results (issues and dependencies) in Snyk App, run the `snyk unmanaged monitor` command:
+
+```
+$ snyk unmanaged monitor
+Monitoring /c-example (c-example)...
+
+Explore this snapshot at https://app.snyk.io/org/example-org/project/8ac0e233-d0f9-403e-b422-5970e7a37443/history/5de4616d-3967-485f-bf21-bbbe91068029
+
+Notifications about newly disclosed issues related to these dependencies will be emailed to you.
+```
+
+This creates a snapshot of dependencies and vulnerabilities, and imports them in Snyk App, where you can review the issues and see them included in your reports.
+
+Importing a project with unmanaged dependencies creates a new project in Snyk App:
+
+![Project with unmanaged dependencies](../../../.gitbook/assets/kuva.png)
+
+{% hint style="info" %}
+Automated regular testing and re-scanning from the Snyk App is not currently supported. To run a new scan and import its updated results, manually run the `snyk unmanaged monitor` command again.
+{% endhint %}
+
 ### Known issues
 
 #### Files in hidden directories are ignored
