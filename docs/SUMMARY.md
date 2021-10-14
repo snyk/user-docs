@@ -133,6 +133,7 @@
       * [Add Artifactory images to Snyk](products/snyk-container/image-scanning-library/jfrog-artifactory-image-scanning/add-artifactory-images-to-snyk.md)
     * [Kubernetes workload and image scanning](products/snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning/README.md)
       * [Kubernetes integration overview](products/snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning/kubernetes-integration-overview.md)
+      * [Supported workloads](products/snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning/supported-workloads.md)
       * [Install the Snyk controller with Helm](products/snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning/install-the-snyk-controller-with-helm.md)
       * [Automatic import/deletion of Kubernetes workloads projects](products/snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning/automatic-import-deletion-of-kubernetes-workloads-projects.md)
       * [Install the Snyk controller with OpenShift 4 and OperatorHub](products/snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning/install-the-snyk-controller-with-openshift-4-and-operatorhub.md)
