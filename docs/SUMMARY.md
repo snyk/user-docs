@@ -349,7 +349,7 @@
     * [Merge advice](features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/merge-advice.md)
   * [Issue management](features/fixing-and-prioritizing-issues/issue-management/README.md)
     * [Evaluating and prioritizing vulnerabilities](features/fixing-and-prioritizing-issues/issue-management/evaluating-and-prioritizing-vulnerabilities.md)
-    * [Remediate your vulnerabilities](features/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities.md)
+    * [Fix your vulnerabilities](features/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities.md)
     * [Upgrading package versions to fix](features/fixing-and-prioritizing-issues/issue-management/upgrading-package-versions-to-fix.md)
     * [Snyk patches to fix](features/fixing-and-prioritizing-issues/issue-management/snyk-patches-to-fix.md)
     * [Ignore issues](features/fixing-and-prioritizing-issues/issue-management/ignore-issues.md)
