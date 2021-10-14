@@ -1,16 +1,14 @@
-# Project Remediation Advice
+# Project fix advice
 
-## Remediate vulnerabilities
+## Fix vulnerabilities
 
-Snyk knowledge of the transitive dependencies in your project makes it easy for Snyk to offer remediation advice. Snyk can fix vulnerabilities in two ways. Snyk can upgrade the direct dependencies to a vulnerability free version, or it can patch the vulnerability.
+Snyk knowledge of the transitive dependencies in your project makes it easy for Snyk to offer fix advice. Snyk can fix vulnerabilities in two ways. Snyk can upgrade the direct dependencies to a vulnerability free version, or it can patch the vulnerability.
 
-Snyk supports the following workflows to help developers remediate their vulnerabilities.
+Snyk supports the following workflows to help developers fix their vulnerabilities.
 
-1. Synk generates automatic git pull requests \(PRs\) using GitHub, GitLab, or Bitbucket PR workflows. Snyk executes this as a nightly workflow. 
+1. Synk generates automatic git pull requests (PRs) using GitHub, GitLab, or Bitbucket PR workflows. Snyk executes this as a nightly workflow. 
 2. Snyk users use the _**Open a fix PR**_ feature in the Snyk UI.
 3. Snyk users use the _**fix this vulnerability**_ feature on a specific issue card in the Snyk UI.
-
-For more details on remediation using Snyk, please see the [Snyk documentation](https://support.snyk.io/hc/en-us/articles/360006113798-Remediate-your-vulnerabilities).
 
 {% hint style="info" %}
 In this workshop, we will perform the **fix this vulnerability** option.
@@ -26,7 +24,7 @@ This setting should be set from our initial configuration of GitHub
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/auto_pr_setting.png)
 
-Snyk will issues PRs for your projects when they are ready. You can view the PR in GitHub \(GitLab and Bitbucket have similar views\) by select the Pull Request tab at the top of the git repository. Keep in mind, Synk generates PRs overnight, and multiple pull requests exist for different dependencies.
+Snyk will issues PRs for your projects when they are ready. You can view the PR in GitHub (GitLab and Bitbucket have similar views) by select the Pull Request tab at the top of the git repository. Keep in mind, Synk generates PRs overnight, and multiple pull requests exist for different dependencies.
 
 {% hint style="info" %}
 SPC will generate a PR given enough time.
@@ -48,11 +46,10 @@ Select the Open a fix PR and Snyk will start with the workflow to generate a PR 
 
 ## Fix this vulnerability
 
-Snyk's _**fix this vulnerability**_ workflow is the same as the _**open a PR fix**_ workflow. When generating a PR, only the specified vulnerability issue is selected in the PR, as shown below. Find the Cross-site Scripting \(XSS\) vulnerability and start the PR workflow.
+Snyk's _**fix this vulnerability**_ workflow is the same as the _**open a PR fix**_ workflow. When generating a PR, only the specified vulnerability issue is selected in the PR, as shown below. Find the Cross-site Scripting (XSS) vulnerability and start the PR workflow.
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/screen-shot-2020-08-22-at-12.32.44-pm.png)
 
 Verify the issue is selected and complete the PR request.
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/screen-shot-2020-08-22-at-12.40.36-pm.png)
-

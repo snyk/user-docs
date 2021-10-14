@@ -573,7 +573,7 @@
       * [Import SPC into Snyk UI](partner-workshops/partner-workshops/springone-workshop/snyk-oss-for-developers/import-spc-into-snyk-ui.md)
       * [Review Project Issues](partner-workshops/partner-workshops/springone-workshop/snyk-oss-for-developers/review-project-issues.md)
       * [Review Project Dependency Tree](partner-workshops/partner-workshops/springone-workshop/snyk-oss-for-developers/review-dependency-tree.md)
-      * [Project Remediation Advice](partner-workshops/partner-workshops/springone-workshop/snyk-oss-for-developers/project-remediation-advice.md)
+      * [Project fix advice](partner-workshops/partner-workshops/springone-workshop/snyk-oss-for-developers/project-remediation-advice.md)
       * [Snyk checks in GitHub](partner-workshops/partner-workshops/springone-workshop/snyk-oss-for-developers/snyk-testing.md)
     * [Snyk CI/CD](partner-workshops/partner-workshops/springone-workshop/snyk-ci-cd/README.md)
       * [Review Imported CI/CD Scans in Snyk UI](partner-workshops/partner-workshops/springone-workshop/snyk-ci-cd/review-imported-ci-cd-scans-in-snyk-ui.md)
