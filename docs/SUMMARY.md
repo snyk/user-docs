@@ -191,14 +191,14 @@
 ## FEATURES
 
 * [Snyk CLI](features/snyk-cli/README.md)
+  * [Install the Snyk CLI](features/snyk-cli/install-the-snyk-cli/README.md)
+    * [Authenticate the CLI with your account](features/snyk-cli/install-the-snyk-cli/authenticate-the-cli-with-your-account.md)
   * [Guides for our CLI](features/snyk-cli/guides-for-our-cli/README.md)
     * [Getting started with the CLI](features/snyk-cli/guides-for-our-cli/getting-started-with-the-cli.md)
     * [How to find vulnerabilities using the CLI](features/snyk-cli/guides-for-our-cli/how-to-find-vulnerabilities-using-the-cli.md)
     * [CLI reference](features/snyk-cli/guides-for-our-cli/cli-reference.md)
     * [Set severity thresholds for CLI tests](features/snyk-cli/guides-for-our-cli/set-severity-thresholds-for-cli-tests.md)
     * [Using a .snyk file in a separate directory than the manifest file](features/snyk-cli/guides-for-our-cli/using-a-.snyk-file-in-a-separate-directory-than-the-manifest-file.md)
-  * [Install the Snyk CLI](features/snyk-cli/install-the-snyk-cli/README.md)
-    * [Authenticate the CLI with your account](features/snyk-cli/install-the-snyk-cli/authenticate-the-cli-with-your-account.md)
   * [Test for vulnerabilities](features/snyk-cli/test-for-vulnerabilities/README.md)
     * [Use Snyk Open Source from the CLI](features/snyk-cli/test-for-vulnerabilities/use-snyk-open-source-from-the-cli.md)
     * [Test public repositories before use](features/snyk-cli/test-for-vulnerabilities/test-public-repositories-before-use.md)
