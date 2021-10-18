@@ -10,7 +10,7 @@ This documentation describes using Snyk Code with the Web UI. You can also use S
 
 * A Snyk account.
 * [Snyk Open Source](https://docs.snyk.io/snyk-open-source) or [Snyk Container](https://docs.snyk.io/snyk-container) installed (as currently Snyk Code is distributed as an add-on).
-* Projects that include code in [a supported language](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support) (currently Java, JavaScript, and Python).
+* Projects that include code in [a supported language](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support).
 * One of the following supported source code management systems (SCMs): GitHub, GitHub Enterprise, Bitbucket Cloud, Bitbucket Server, GitLab Cloud, Azure Repos.
 
 ## Stage 1: Enable Snyk Code
