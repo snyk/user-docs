@@ -19,6 +19,8 @@ Some vulnerabilities have multiple different conditions that must all be met,  f
 
 Exploitability depends on the context: for example, the environment, the settings, and the way the developer uses this package.
 
+Vulnerabilities that are not exploitable are unlikely to pose a security threat to your application and can therefore be de-prioritized accordingly.
+
 ### Triage Assistant
 
 {% hint style="info" %}
@@ -45,3 +47,7 @@ All the conditions must be met for the vulnerability to be exploitable.
 {% hint style="info" %}
 This feature is currently in preview, and might be changed.
 {% endhint %}
+
+#### Vulnerability with Exploit Maturity but not exploitable?
+
+A vulnerability may have exploits available in the wild or detailed explanations of how to exploit it, but as long as not all the conditions are not met, the vulnerability will remain unexploitable.
