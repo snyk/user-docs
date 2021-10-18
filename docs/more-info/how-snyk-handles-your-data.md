@@ -88,11 +88,11 @@ We know how important it is for you to protect your data. Our products only acce
 
 ### Snyk certifications
 
-![](<../.gitbook/assets/Screenshot 2021-10-12 at 12.42.11.png>)
+![](../.gitbook/assets/Soc2.png)
 
 Snyk is certified to ISO 27001:2013 with the additional objective controls of ISO 27017:2015
 
-![](<../.gitbook/assets/Screenshot 2021-10-12 at 12.42.29.png>)
+![](../.gitbook/assets/Coalfire.png)
 
   
 
