@@ -61,7 +61,7 @@ If you encounter any errors during import, see the [Importing projects](https://
 You can now view vulnerability results for imported projects. The **Projects** tab appears by default after import, showing vulnerability information for project you've imported.
 
 1. Click on an imported project to see vulnerability information for that project, including the number of issues found, grouped by severity level (see screenshot below)
-2. Click on an entry to open the issues view for that entry, including the module, where it was introduced, and the remediation to fix it, plus more details about the vulnerability itself:
+2. Click on an entry to open the issues view for that entry, including the module, where it was introduced, and how to fix it, plus more details about the vulnerability itself:
 
 ![](<../../.gitbook/assets/view_vulns\_\_overview (1).png>)
 
@@ -71,7 +71,7 @@ See [View project information](https://docs.snyk.io/getting-started/introduction
 
 ### Stage 4: Fix vulnerabilities
 
-For JavaScript, Ruby and Java projects, Snyk can remediate your vulnerabilities via fix pull/merge requests:
+For JavaScript, Ruby and Java projects, Snyk can fix your vulnerabilities via fix pull/merge requests:
 
 Navigate to the issues view for a project:
 

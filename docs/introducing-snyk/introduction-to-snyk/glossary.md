@@ -16,11 +16,11 @@ See [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker).
 
 ### Build System
 
-A system that takes the source code and builds the deployable application \(such as a container\).
+A system that takes the source code and builds the deployable application (such as a container).
 
 ### CI / CD
 
-Continuous integration \(CI\), continuous delivery \(CD\) and continuous deployment \(CD\) together comprise an SDLC model, guiding developers to automate development and delivery of small, frequent changes. This ensures all team members have access to the latest code base and can ensure the compatibility of committed code during development.
+Continuous integration (CI), continuous delivery (CD) and continuous deployment (CD) together comprise an SDLC model, guiding developers to automate development and delivery of small, frequent changes. This ensures all team members have access to the latest code base and can ensure the compatibility of committed code during development.
 
 ### CLI
 
@@ -52,7 +52,7 @@ Common Vulnerabilities and Exposures. A widely-used identifier for a well-known 
 
 ### CVSS
 
-Common Vulnerability Scoring System. An industry standard to assess the severity of vulnerabilities, using a score of 0 \(lowest\) to 10 \(highest\). Snyk uses CVSS.
+Common Vulnerability Scoring System. An industry standard to assess the severity of vulnerabilities, using a score of 0 (lowest) to 10 (highest). Snyk uses CVSS.
 
 ### CWE
 
@@ -67,11 +67,11 @@ Dynamic Application Security Testing. An application that you can point at a sit
 When your application uses another package, this other package becomes a dependency to your own software.
 
 * A direct dependency is a package you include in your own project.
-* An indirect dependency \(also known as a deep, chained, or transitive dependency\), is a package that is used by one of your direct dependencies.
+* An indirect dependency (also known as a deep, chained, or transitive dependency), is a package that is used by one of your direct dependencies.
 
 ### Dependency tree
 
-\(Also known as Dependency path\) A hierarchical graph showing the dependencies of a software application. This includes both direct and indirect dependencies, and so may be many levels deep.
+(Also known as Dependency path) A hierarchical graph showing the dependencies of a software application. This includes both direct and indirect dependencies, and so may be many levels deep.
 
 ### DevOps
 
@@ -191,7 +191,7 @@ Pull request. Allows a user to exchange changes made to source code and collabor
 
 ### Priority Score
 
-Snyk scores issues \(vulnerabilities and licenses\), to help prioritze treatment of each one. Scores are based on multiple factors including as the CVSS score, and range from 0 \(low\) to 1000 \(high\). See [Snyk Priority Score](https://docs.snyk.io/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score).
+Snyk scores issues (vulnerabilities and licenses), to help prioritze treatment of each one. Scores are based on multiple factors including as the CVSS score, and range from 0 (low) to 1000 (high). See [Snyk Priority Score](https://docs.snyk.io/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score).
 
 ### Project
 
@@ -230,7 +230,7 @@ Software Bill Of Materials. A list of components in a piece of software.
 Software Composition Analysis. Technology used to identify open-source and third-party components in use in an application, including their known security vulnerabilities, and typically adversarial license restrictions.
 
 {% hint style="info" %}
-Not to be confused with static code analysis \(a method of debugging by examining source code before a program is run\).
+Not to be confused with static code analysis (a method of debugging by examining source code before a program is run).
 {% endhint %}
 
 ### SCM
@@ -255,7 +255,7 @@ An individual report within a project’s test history. Includes a tree of depen
 
 ### Snyk
 
-A platform providing Cloud Native Application Security \(CNAS\) solutions, allowing developers to own and build security for the whole application, from code and open source to containers and cloud infrastructure. See [What is Snyk?](https://snyk.io/what-is-snyk/).
+A platform providing Cloud Native Application Security (CNAS) solutions, allowing developers to own and build security for the whole application, from code and open source to containers and cloud infrastructure. See [What is Snyk?](https://snyk.io/what-is-snyk/).
 
 Snyk is also the company providing the Snyk platform.
 
@@ -269,7 +269,7 @@ A Snyk tool, Enables developers to programatically integrate with Snyk. See [Sny
 
 ### Snyk Broker
 
-A client/server system that serves as an agent / proxy, allowing Snyk to scan private customer environments \(Jira, code repositories or container registries\). It relays messages and allows users to filter which messages are allowed through; for example, allowing users to expose only some Github APIs to Snyk. See [Snyk Broker documentation](https://docs.snyk.io/integrations/snyk-broker).
+A client/server system that serves as an agent / proxy, allowing Snyk to scan private customer environments (Jira, code repositories or container registries). It relays messages and allows users to filter which messages are allowed through; for example, allowing users to expose only some Github APIs to Snyk. See [Snyk Broker documentation](https://docs.snyk.io/integrations/snyk-broker).
 
 ### Snyk CLI
 
@@ -297,8 +297,8 @@ A library used by the Snyk CLI to scan a certain language/build system.
 
 ### Snyk Security Intelligence
 
-A component powering Snyk’s cloud native application security platform.  
-Incorporates **Snyk Intel Vulnerability DB**: Snyk’s database of vulnerabilities, providing detailed information and remediation guidance for known vulnerabilities. See [Vulnerability DB](https://snyk.io/vuln).
+A component powering Snyk’s cloud native application security platform.\
+Incorporates **Snyk Intel Vulnerability DB**: Snyk’s database of vulnerabilities, providing detailed information and fix advice for known vulnerabilities. See [Vulnerability DB](https://snyk.io/vuln).
 
 ### Social Trends
 
@@ -318,11 +318,10 @@ A fix type: a problem can be fixed by upgrading a version of a package, or by ap
 
 ### Vulnerability
 
-A security vulnerability, identified by Snyk. See [Remediate your vulnerabilities](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities).
+A security vulnerability, identified by Snyk. See [Fixing vulnerabilities](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities).
 
 ## W
 
 ### Webhook
 
 A way for an app to provide other applications with real-time information. Snyk uses webhooks to check changes in code.
-
