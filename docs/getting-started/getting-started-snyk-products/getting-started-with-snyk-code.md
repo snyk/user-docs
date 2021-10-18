@@ -9,16 +9,16 @@ This documentation describes using Snyk Code with the Web UI. You can also use S
 ## Prerequisites
 
 * A Snyk account.
-* [Snyk Open Source](https://docs.snyk.io/snyk-open-source) or [Snyk Container](https://docs.snyk.io/snyk-container) installed \(as currently Snyk Code is distributed as an add-on\).
-* Projects that include code in [a supported language](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support) \(currently Java, JavaScript, and Python\).
-* One of the following supported source code management systems \(SCMs\): GitHub cloud, BitBucket cloud, Gitlab cloud.
+* [Snyk Open Source](https://docs.snyk.io/snyk-open-source) or [Snyk Container](https://docs.snyk.io/snyk-container) installed (as currently Snyk Code is distributed as an add-on).
+* Projects that include code in [a supported language](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support) (currently Java, JavaScript, and Python).
+* One of the following supported source code management systems (SCMs): GitHub, GitHub Enterprise, Bitbucket Cloud, Bitbucket Server, GitLab Cloud, Azure Repos.
 
 ## Stage 1: Enable Snyk Code
 
 Snyk Code is disabled by default, so you must enable it for each organization:
 
-1. Log in to [Snyk.io](http://snyk.io/).
-2. Click on settings ![](../../.gitbook/assets/cog_icon.png) &gt; **Snyk Code**. 
+1. Log in to [Snyk.io](http://snyk.io).
+2. Click on settings ![](../../.gitbook/assets/cog_icon.png) > **Snyk Code**. 
 3. Under **Enable Snyk Code**, change **Disabled** to **Enabled:**
 4. Click **Save changes**.
 
@@ -30,10 +30,10 @@ If you already have an integration set up, you can skip this step
 
 Choose a source code integration, to allow Snyk to work on a project.
 
-1. Log in to [Snyk.io](http://snyk.io/).
-2. Select **Integrations &gt; Source control**.
-3. Click the source control system \(for example, GitHub\) to integrate with Snyk: 
-4. Fill in the account credentials as prompted \(or authenticate with your account in GitHub\), to grant Snyk access permissions for integration.
+1. Log in to [Snyk.io](http://snyk.io).
+2. Select **Integrations > Source control**.
+3. Click the source control system (for example, GitHub) to integrate with Snyk: 
+4. Fill in the account credentials as prompted (or authenticate with your account in GitHub), to grant Snyk access permissions for integration.
 
 See [DevOps integrations & languages](https://docs.snyk.io/introducing-snyk/introduction-to-snyk/integrations-and-languages) for more details.
 
@@ -45,10 +45,10 @@ If you already have projects added, you can skip this step.
 
 Add projects to test with Snyk, by choosing repositories for Snyk to test and monitor.
 
-1. Select **Projects** from [snyk.io](http://snyk.io/).
-2. Select the tool to add the project from \(for example GitHub\): 
+1. Select **Projects** from [snyk.io](http://snyk.io).
+2. Select the tool to add the project from (for example GitHub): 
 3. In **Personal and Organization repositories**, select the repositories to use: 
-4. Click **Add selected repositories** to import the selected repositories into your projects. This sets Snyk to run a regular check \(daily by default\) for your proprietary code vulnerabilities. 
+4. Click **Add selected repositories** to import the selected repositories into your projects. This sets Snyk to run a regular check (daily by default) for your proprietary code vulnerabilities. 
 5. A progress bar appears: click **View log** to see log results. 
 6. Project import completes.
 
@@ -73,7 +73,7 @@ See [View project information](https://docs.snyk.io/getting-started/introduction
 
 Click **Full Details** on an issue to view more details about it, such as:
 
-* **Data Flow**: The issue's taint flow from the source \(the user input\) to the sink \(the operation that needs to receive clean input and can be exploited otherwise\).
+* **Data Flow**: The issue's taint flow from the source (the user input) to the sink (the operation that needs to receive clean input and can be exploited otherwise).
 * **Remediation Strategy**: An area that focuses on how to fix the problem with more details, references and code samples related to it.
 
 ## For more information
@@ -81,4 +81,3 @@ Click **Full Details** on an issue to view more details about it, such as:
 * [Snyk Code](https://docs.snyk.io/snyk-code)
 * [Developer-first SAST with Snyk Code](https://snyk.io/blog/developer-first-sast-with-snyk-code/)
 * [SAST vs DAST](https://snyk.io/learn/sast-vs-dast/)
-
