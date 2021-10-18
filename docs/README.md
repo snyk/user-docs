@@ -1,6 +1,6 @@
 # Snyk User Documentation
 
-![Patch, our mascot, a developer's best friend.](.gitbook/assets/logo-vertical-solid-background.png)
+![Patch, our mascot, a developer's best friend.](.gitbook/assets/logo-vertical-white.png)
 
 * [Introducing Snyk](introducing-snyk/): read an [introduction to Snyk](introducing-snyk/introduction-to-snyk/) and explore [Snyk's core concepts](introducing-snyk/snyks-core-concepts/)
 * [Getting started](getting-started/): learn how to [get started with a Snyk account](getting-started/getting-started-snyk-products/) and select a Snyk product.
