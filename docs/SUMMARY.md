@@ -610,3 +610,4 @@
 * [Disclosing vulnerabilities](more-info/disclosing-vulnerabilities/README.md)
   * [Disclose a vulnerability in Snyk services](more-info/disclosing-vulnerabilities/disclose-a-vulnerability-in-snyk-services.md)
   * [Disclose a vulnerability in an open source package](more-info/disclosing-vulnerabilities/disclose-a-vulnerability-in-an-open-source-package.md)
+* [How Snyk handles your data](more-info/how-snyk-handles-your-data.md)
