@@ -83,7 +83,7 @@ In either case, you’ll see a list of any available projects on the Cloud Found
 
 ![](../../../.gitbook/assets/uuid-d7a81cd8-f968-97d1-dcf8-d77a3b7df2fb-en.png)
 
-As soon as you’ve added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Cloud Foundry applications in your [project dashboard](https://app.snyk.io/projects). You’ll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to remediate.
+As soon as you’ve added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Cloud Foundry applications in your [project dashboard](https://app.snyk.io/projects). You’ll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to fix.
 
 ![](../../../.gitbook/assets/uuid-de93d111-acb5-8792-2c6d-27bfece48315-en.png)
 
