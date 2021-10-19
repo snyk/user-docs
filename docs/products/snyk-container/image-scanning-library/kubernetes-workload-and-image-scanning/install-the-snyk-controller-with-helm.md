@@ -17,7 +17,7 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
 * An administrator account for your Snyk organization.
 * A minimum of 50 GB of storage must be available in the form of an [emptyDir](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir) on the cluster.
 * Your Kubernetes cluster needs to be able to communicate with Snyk outbound over HTTPS.
-* When configuring Snyk to integrate with an Amazon Elastic Kubernetes Services (EKS) cluster, if you wish to scan images hosted on your Amazon Elastic Container Registry (ECR), you need to first follow the prerequisites outlined in the [AWS documentation](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_on_EKS.html).
+* When configuring Snyk to integrate with an Amazon Elastic Kubernetes Services (EKS) cluster, if you wish to scan images hosted on your Amazon Elastic Container Registry (ECR), you need to first follow the prerequisites outlined in the [AWS documentation](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR\_on\_EKS.html).
 
 **Steps**
 
@@ -46,7 +46,7 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
 
     **Note:** The secret must be called `snyk-monitor` in order for the integration to work.
 7. If any of the images you need to scan are located in private registries, you need to provide credentials to access those registries by creating a secret (which must be called snyk-monitor) using both the Snyk Integration ID as well as a `dockercfg.json` file. The `dockercfg.json` file is necessary to allow the monitor to look up images in private registries. Usually, your credentials reside in `$HOME/.docker/config.json`. These credential must also be added to the `dockerconfig.json` file.
-   1.   Create a file named `dockercfg.json`. Store your credentials in there; it should look like this:
+   1.  &#x20;Create a file named `dockercfg.json`. Store your credentials in there; it should look like this:
 
        ```
        {
