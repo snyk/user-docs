@@ -22,14 +22,14 @@ You will complete the following steps:
 * Step 4 - Review scan results
 * Step 5 - Dig into provided Base Image recommendations
 * Step 6 - Apply a more secure Base Image and re-build the Image
-* Step 7 - Re-scan for Vulnerabilities 
+* Step 7 - Re-scan for Vulnerabilities&#x20;
 
 ## Prerequisites
 
 * Download and install Docker Desktop.
   * [Download for Mac](https://desktop.docker.com/mac/stable/Docker.dmg)
   * [Download for Windows](https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe)
-* **\[Optional\]** Fork the [Docker Goof Repo](https://github.com/snyk/docker-goof) to your GitHub Account.
+* **\[Optional]** Fork the [Docker Goof Repo](https://github.com/snyk/docker-goof) to your GitHub Account.
 
 {% hint style="info" %}
 A Snyk account is not necessary, however, you can only scan 10 times without logging in. [Sign up for Snyk using your Docker ID](https://snyk.co/SnykDockerAcademy), then run `docker scan --login`and sign in to unlock 200 free scans per month.
@@ -49,12 +49,12 @@ This lab uses the Docker Goof application, but feel free to bring your own appli
 
 Clone the [Docker Goof application](https://github.com/snyk/docker-goof) to your workstation, then change to the top level directory of the app. Don't have Git? You can [download the Docker-Goof repo as a Zip file](https://github.com/snyk/docker-goof/archive/master.zip).
 
-```text
+```
 git clone https://github.com/snyk/docker-goof && cd docker-goof
 # If you forked the repo, clone your fork.
 ```
 
-## Step 2: Build one \(or many\) docker-goof Images
+## Step 2: Build one (or many) docker-goof Images
 
 The Docker Goof repo has many Dockerfiles. You can build some, or all, of them out.
 
@@ -110,7 +110,7 @@ docker scan docker-goof-n6-slim
 Check out the [Docker Scan documentation](https://docs.docker.com/engine/scan/) for all possible CLI options.
 {% endhint %}
 
-Scanning images for Open Source vulnerabilities with Snyk is that easy! When finished, scan results are displayed in the Terminal, along with remediation guidance.
+Scanning images for Open Source vulnerabilities with Snyk is that easy! When finished, scan results are displayed in the Terminal, along with fix advice.
 
 ## Step 4: Review Vulnerability Scan Results
 
@@ -118,7 +118,7 @@ Vulnerabilities are broken up into sections, based on how they were introduced:
 
 ### Vulnerable Base Image Packages
 
-Vulnerabilities introduced by the container's base image can be identified by the presence of the `Introduced by your base image` line. \(Line 9 below\)
+Vulnerabilities introduced by the container's base image can be identified by the presence of the `Introduced by your base image` line. (Line 9 below)
 
 ```bash
 ✗ High severity vulnerability found in curl/libcurl3
@@ -135,7 +135,7 @@ Vulnerabilities introduced by the container's base image can be identified by th
 
 ### User Instruction Vulnerabilities
 
-Some vulnerabilities are introduced by User Instruction in the Dockerfile. Snyk highlights the command that introduced the vulnerability, with the `Introduced in your Dockerfile by` line. \(Line 9\)
+Some vulnerabilities are introduced by User Instruction in the Dockerfile. Snyk highlights the command that introduced the vulnerability, with the `Introduced in your Dockerfile by` line. (Line 9)
 
 ```bash
 ✗ High severity vulnerability found in bzip2/bzip2
@@ -152,7 +152,7 @@ Some vulnerabilities are introduced by User Instruction in the Dockerfile. Snyk 
 
 ### **Vulnerable App Dependencies**
 
-The last kind of vulnerability your images might contain are introduced by your application dependencies. Snyk highlights the package manifest `Target File` that introduced it. \(Line 14\)
+The last kind of vulnerability your images might contain are introduced by your application dependencies. Snyk highlights the package manifest `Target File` that introduced it. (Line 14)
 
 ```bash
 Issues to fix by upgrading:
@@ -179,11 +179,11 @@ Check out the [Snyk Documentation for Info around Container CLI Results](https:/
 
 ## Step 5: Review Base Image Recommendations
 
-Snyk's remediation guidance helps developers spend less time remediating, and more time developing! One way to tackle vulnerabilities is by choosing a more secure base image. By providing the Dockerfile to `docker scan` , Snyk can suggest other Base Images that can be used in the Dockerfile's `FROM` statement to bring down those vulnerability counts.
+Snyk's fix advice helps developers spend less time fixing, and more time developing! One way to tackle vulnerabilities is by choosing a more secure base image. By providing the Dockerfile to `docker scan` , Snyk can suggest other Base Images that can be used in the Dockerfile's `FROM` statement to bring down those vulnerability counts.
 
 These are grouped by how likely they are to be compatible with your application:
 
-* `Minor` upgrades are the most likely to be compatible with little work, 
+* `Minor` upgrades are the most likely to be compatible with little work,&#x20;
 * `Major` upgrades can introduce breaking changes depending on image usage,
 * `Alternative` architecture images are shown for more technical users to investigate.
 
@@ -269,4 +269,3 @@ As we continue to evolve our Partnership with Docker, we'll keep adding new capa
 {% hint style="success" %}
 Other courses in the Snyk Academy may require a Snyk Account. Don't forget - new accounts that [Sign in with Docker Hub](https://snyk.co/SnykDockerAcademy) unlock a promotional free tier limit of 200 scans per month!
 {% endhint %}
-
