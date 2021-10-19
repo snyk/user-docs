@@ -1,6 +1,6 @@
 # Snyk API
 
-Our API docs live at [Snyk API](https://docs.snyk.io/snyk-api-info).
+Our API docs live at [Snyk API](https://snyk.docs.apiary.io/).
 
 {% hint style="info" %}
 **Feature availability**  
