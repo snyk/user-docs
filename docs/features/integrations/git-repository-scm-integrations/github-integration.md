@@ -12,7 +12,7 @@ Please note, GitHub integrates per user rather than per org. Setting up this int
 4. Select the repos you'd like to import to Snyk. When done, click on the **Add selected repositories** button, at the top of the page. Once clicked, Snyk will start scanning the selected repos for dependency files (i.e. package.json, pom.xml, etc) in the entire directory tree and import them to Snyk as projects:
 5. The imported projects now appear in your Projects page and are continuously checked for vulnerabilities.
 
-![](<../../../.gitbook/assets/which_repos (3) (5) (9) (7) (18) (25).jpg>)
+![](<../../../.gitbook/assets/which\_repos (3) (5) (9) (7) (18) (25).jpg>)
 
 ## GitHub Integration Features
 
@@ -73,7 +73,7 @@ All the operations, both the ones that are triggered via the UI and the automati
 | Automatic fix and upgrade pull requests             | For creating fix / upgrade PRs in the monitored repos                                                                                                 | _repo (all)_                       |
 | Snyk tests on pull requests                         | For sending pull request status checks whenever a new PR is created / an existing PR is updated                                                       | _repo (all)_                       |
 | Importing new projects to Snyk                      | For presenting a list of all the available repos in the GitHub org in the "Add Projects" screen (import popup)                                        | _admin:read:org, repo (all)_       |
-| Snyk tests on pull requests - initial configuration | For adding Snyk's webhooks to the imported repos, so Snyk will be informed whenever pull requests are created or updated and be able to trigger scans | _admin:repo_hooks (read & write)_  |
+| Snyk tests on pull requests - initial configuration | For adding Snyk's webhooks to the imported repos, so Snyk will be informed whenever pull requests are created or updated and be able to trigger scans | _admin:repo\_hooks (read & write)_ |
 
 ## Required permissions scope for repositories <a href="h_01eefvj14p8b3depeffvyvdwzj" id="h_01eefvj14p8b3depeffvyvdwzj"></a>
 
@@ -115,8 +115,6 @@ Users can either be manually specified (and all will be assigned) or automatical
 **Enabling for all projects within the Github integration**
 
 Go to GitHub's Integration _**Settings**_ page in Snyk (Settings --> Integration --> GitHub):
-
-![](../../../.gitbook/assets/code-assignees-disabled.png)
 
 ![](../../../.gitbook/assets/code-assignees-contribs.png)
 
