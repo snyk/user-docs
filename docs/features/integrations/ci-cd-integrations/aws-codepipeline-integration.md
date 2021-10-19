@@ -39,11 +39,11 @@ Check if your project must be built before the scan in the CodePipeline. If the 
 |    Ruby    |    Bundler   | No\*           |   Build only required if no `Gemfile.lock` file present, run `bundle install` to generate  |
 |     PHP    |   Composer   | No\*           | Build only required if no `composer.lock` file present, run `composer install` to generate |
 
-### CodeBuil Step Example
+### CodeBuild Step Example
 
 Please note the Scan's input artifact must be provided with the build's output artifact as shown in the configuration
 
-Example of Javascript's CodeBuild (Buildspec.yml):
+Example of Javascript's CodeBuild (`buildspec.yml`):
 
 ```
 version: 0.2
@@ -56,7 +56,7 @@ artifacts:
     - '**/*'
 ```
 
-Example of Maven CodeBuild (Buildspec.yml):
+Example of Maven CodeBuild (`buildspec.yml`):
 
 ```
 version: 0.2
@@ -73,7 +73,7 @@ artifacts:
 
 At any point after the Source stage, you can add a Snyk scan stage, allowing you to test your application at different stages of the CI/CD pipeline.
 
-Click **Edit**, and **add a scan stage**.
+Click **Edit**, and **Add a Scan Stage**.
 
 ![](../../../.gitbook/assets/aws-cp-add-stage.png)
 
