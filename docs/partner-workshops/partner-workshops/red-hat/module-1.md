@@ -2,7 +2,7 @@
 
 ## Red Hat Dependency Analytics extension for Visual Studio Code
 
-Once you have [installed](https://marketplace.visualstudio.com/items?itemName=redhat.fabric8-analytics&ssr=false#overview) the extension, opening or editing a manifest file \(`pom.xml` / `package.json` / `requirements.txt`\) within VSCode will scan your application with Snyk to identify security vulnerabilities in your dependencies. You can also right-click on a manifest file \(`pom.xml`/`package.json` / `requirements.txt`\) in the **VSCode File explorer** or **VSCode File editor** to display **Dependency Analytics Report** for your application.
+Once you have [installed](https://marketplace.visualstudio.com/items?itemName=redhat.fabric8-analytics\&ssr=false#overview) the extension, opening or editing a manifest file (`pom.xml` / `package.json` / `requirements.txt`) within VSCode will scan your application with Snyk to identify security vulnerabilities in your dependencies. You can also right-click on a manifest file (`pom.xml`/`package.json` / `requirements.txt`) in the **VSCode File explorer** or **VSCode File editor** to display **Dependency Analytics Report** for your application.
 
 ### Finding vulnerabilities in application dependencies
 
@@ -36,9 +36,9 @@ Clicking on the button will provide you with a summary of **Security Issues**, *
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/dependency-analytics-02.png)
 
-## Snyk Source Code Management \(SCM\) integrations
+## Snyk Source Code Management (SCM) integrations
 
-Snyk supports various [Git repository \(SCM\) integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations). In these examples, we will focus on Snyk's [GitHub integration](https://support.snyk.io/hc/en-us/articles/360004032117-GitHub-integration). Snyk's GitHub integration allows you to continuously performs security scanning across all the integrated repositories, detect vulnerabilities in your open source components and provides automated remediation and upgrade fixes.
+Snyk supports various [Git repository (SCM) integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations). In these examples, we will focus on Snyk's [GitHub integration](https://support.snyk.io/hc/en-us/articles/360004032117-GitHub-integration). Snyk's GitHub integration allows you to continuously performs security scanning across all the integrated repositories, detect vulnerabilities in your open source components and provides automated fixes.
 
 Once the integration is in place, you'll be able to enjoy the following capabilities:
 
@@ -65,4 +65,3 @@ The process to generate the PR may take a minute or two.
 Once complete, you will be redirected to your GitHub repository where you can review the _pull request_ and **approve**/**merge.**
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-rh-pr-03.png)
-

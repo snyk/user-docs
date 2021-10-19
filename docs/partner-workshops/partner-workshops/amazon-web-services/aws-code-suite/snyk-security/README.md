@@ -6,15 +6,15 @@ This module is designed to introduce scanning **open source dependencies** of th
 
 ### Background
 
-**Snyk** is a **SaaS** offering that organizations use to **find, fix, prevent and monitor** open source dependencies. Snyk is a developer first platform that can be easily integrated into the Software Development Lifecycle \(SDLC\).
+**Snyk** is a **SaaS** offering that organizations use to **find, fix, prevent and monitor** open source dependencies. Snyk is a developer first platform that can be easily integrated into the Software Development Lifecycle (SDLC).
 
 At this point of the module, the `Petstore` application is created, so we will look to insert **Snyk** as part of an important security gate during the build process.
 
-This module will demonstrate how to fail a build when high severity issues are found so that remediation can take place.
+This module will demonstrate how to fail a build when high severity issues are found so that fixes can take place.
 
 ### Snyk CLI
 
-The Snyk command line interface \(CLI\) has three key commands for this exercise:
+The Snyk command line interface (CLI) has three key commands for this exercise:
 
 * `snyk auth` which links the CLI to your account and authorizes it to perform tests.
   * We will utilize Amazon's System Manager Parameters to store this token to avoid hard-coding tokens.
@@ -28,9 +28,8 @@ For the purposes of this module, **Snyk** will be inserted into two key processe
 
 This module has five sections:
 
-1. Obtain a token for testing from `https://snyk.io/` 
+1. Obtain a token for testing from `https://snyk.io/`&#x20;
 2. Setting up application scanning
 3. Setting up Docker analysis
-4. Running a test and fixing the issue\(s\) detected 
+4. Running a test and fixing the issue(s) detected&#x20;
 5. Viewing the status on the Snyk dashboard
-

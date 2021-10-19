@@ -1,4 +1,4 @@
-# Snyk for Swift and Objective-C \(CocoaPods\)
+# Snyk for Swift and Objective-C (CocoaPods)
 
 Snyk offers security scanning to test your projects for vulnerabilities, both through your CLI and through different integrations from our UI.
 
@@ -10,16 +10,16 @@ The following describes how to use Snyk to scan your CocoaPods projects:
 Features might not be available, depending on your subscription plan.
 {% endhint %}
 
-|  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![i\_icon\_cocoapods.png](../../../.gitbook/assets/uuid-6de05da9-de7e-11cc-4316-8459517aaf57-en.png) | Cocoapods | ✔︎ | ✔︎ | ✔︎ |  |  |
+|                                                                                                      | Package managers/Features | CLI support | Git support | License scanning | Fixing | Runtime monitoring |
+| ---------------------------------------------------------------------------------------------------- | ------------------------- | ----------- | ----------- | ---------------- | ------ | ------------------ |
+| ![i\_icon\_cocoapods.png](../../../.gitbook/assets/uuid-6de05da9-de7e-11cc-4316-8459517aaf57-en.png) | Cocoapods                 | ✔︎          | ✔︎          | ✔︎               |        |                    |
 
 ## **How it works**
 
 Once we’ve built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in the dependency tree.
 
 {% hint style="info" %}
-**Note**  
+**Note**\
 In order to scan your dependencies, you must ensure you have first installed the relevant package manager, and that your project contains the supported manifest files.
 {% endhint %}
 
@@ -44,24 +44,9 @@ We scan CocoaPods projects and examine your Podfile and Podfile.lock files. We t
 
 When working with Swift and Objective-C projects from our CLI, you can prevent testing any lockfiles that are out-of-sync, as follows:
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Option</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>--strict-out-of-sync=</code>
-      </td>
-      <td style="text-align:left">
-        <p>Prevent testing out-of-sync lockfiles.</p>
-        <p>Defaults to <b>true</b>.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Option                  | Description                                                                            |
+| ----------------------- | -------------------------------------------------------------------------------------- |
+| `--strict-out-of-sync=` | <p>Prevent testing out-of-sync lockfiles.</p><p>Defaults to <strong>true</strong>.</p> |
 
 ## Git services for CocoaPods projects
 
@@ -70,4 +55,3 @@ We scan CocoaPods projects and examine your Podfile and Podfile.lock files. We t
 **Git services**
 
 Swift and Objective-C projects managed by CocoaPods can be imported from any of the Git repositories we support. In order to test your projects, we analyze your Podfile and Podfile.lock files.
-

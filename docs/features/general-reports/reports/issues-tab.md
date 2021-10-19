@@ -13,7 +13,7 @@ Alternatively, you can ungroup data, viewing a separate line for each project in
 This view is beneficial in providing additional details about:
 
 * Each affected project
-* The recommended course of remediation
+* The recommended fix
 
 This view can be seen in the Elements column below, where all the elements of both views are described.
 

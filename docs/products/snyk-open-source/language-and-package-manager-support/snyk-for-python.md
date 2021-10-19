@@ -10,12 +10,12 @@ The following describes how to use Snyk to scan Python projects:
 Features might not be available, depending on your subscription plan.
 {% endhint %}
 
-|                                                                                                   | Package managers/Features                            | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
-| ------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ----------- | ----------- | ---------------- | ----------- | ------------------ |
-| ![i_icon_pip.jpeg](../../../.gitbook/assets/uuid-9baa98b7-dd1d-8cf6-03d5-691c94aeef66-en.jpeg)    | [Pip and PyPI](https://pypi.org/project/pip/)        | ✔︎          | ✔︎          | ✔︎               | ✔︎          |                    |
-| ![i_icon_pipenv.jpeg](../../../.gitbook/assets/uuid-f1ec5441-4e64-a095-ca75-af9bb8d2d110-en.jpeg) | [pipenv](https://pipenv.kennethreitz.org/en/latest/) | ✔︎          |             | ✔︎               |             |                    |
-| ![i_icon_pip.jpeg](../../../.gitbook/assets/uuid-9baa98b7-dd1d-8cf6-03d5-691c94aeef66-en.jpeg)    | setup.py                                             | ✔︎          |             | ✔︎               | ✔︎          |                    |
-| ![](../../../.gitbook/assets/screenshot-2021-10-03-at-16.49.01.png)                               | [Poetry](https://python-poetry.org)                  | ✔︎          |             | ✔︎               | ✔︎          |                    |
+|                                                                                                     | Package managers/Features                            | CLI support | Git support | License scanning | Fixing | Runtime monitoring |
+| --------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ----------- | ----------- | ---------------- | ------ | ------------------ |
+| ![i\_icon\_pip.jpeg](../../../.gitbook/assets/uuid-9baa98b7-dd1d-8cf6-03d5-691c94aeef66-en.jpeg)    | [Pip and PyPI](https://pypi.org/project/pip/)        | ✔︎          | ✔︎          | ✔︎               | ✔︎     |                    |
+| ![i\_icon\_pipenv.jpeg](../../../.gitbook/assets/uuid-f1ec5441-4e64-a095-ca75-af9bb8d2d110-en.jpeg) | [pipenv](https://pipenv.kennethreitz.org/en/latest/) | ✔︎          |             | ✔︎               |        |                    |
+| ![i\_icon\_pip.jpeg](../../../.gitbook/assets/uuid-9baa98b7-dd1d-8cf6-03d5-691c94aeef66-en.jpeg)    | setup.py                                             | ✔︎          |             | ✔︎               | ✔︎     |                    |
+| ![](../../../.gitbook/assets/screenshot-2021-10-03-at-16.49.01.png)                                 | [Poetry](https://python-poetry.org)                  | ✔︎          |             | ✔︎               | ✔︎     |                    |
 
 {% hint style="info" %}
 PyPI licenses are supported for all Python projects.
@@ -142,8 +142,8 @@ To define which Python major version Snyk uses to test your Git imported project
 To define Python version for all projects in an organization:
 
 1. Log in to your account and navigate to the relevant group and organization to manage.
-2. Click on settings ![](../../../.gitbook/assets/cog_icon.png) > **Languages**. 
-3. Click **Edit settings** for **Python**. 
+2. Click on settings ![](../../../.gitbook/assets/cog\_icon.png) > **Languages**.&#x20;
+3. Click **Edit settings** for **Python**.&#x20;
 4. Select to use **Python 2** or **Python 3** when testing projects for this organization
 
 ![](../../../.gitbook/assets/mceclip1-18-.png)

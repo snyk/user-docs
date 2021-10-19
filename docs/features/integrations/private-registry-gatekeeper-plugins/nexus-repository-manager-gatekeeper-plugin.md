@@ -3,7 +3,7 @@
 ## **Nexus Gatekeeper plugin: overview**
 
 {% hint style="info" %}
-**Feature availability**  
+**Feature availability**\
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
@@ -11,7 +11,7 @@ Install Snyk plugin directly on the Nexus instance to track open source vulnerab
 
 Once installed, Snyk runs in the background and whenever a download is requested from the developer's CLI, Snyk automatically:
 
-* scans artifacts for licenses and for vulnerabilities and delivers remediation data for known vulnerabilities found in the artifact
+* scans artifacts for licenses and for vulnerabilities and delivers fix data for known vulnerabilities found in the artifact
 * blocks developers from downloading vulnerable packages—based on Snyk results and your severity threshold configurations
 
 By scanning artifacts as part of your work and then displaying those test results, the Snyk plugin enables developers transparency to the risks associated with their packages, and enables administrators to more quickly track and identify issues that risk your application’s security and avoid using those artifacts in your organization’s projects.
@@ -28,7 +28,7 @@ Use the Snyk capability with your Nexus Repository Manager to test your artifact
 2. Snyk authenticates the account configuration using the API token and Organization ID that the admin entered, and then runs in the background continuously.
 3. A developer attempts to download an artifact from the Nexus instance to their local environment.
 4. Based on the severity thresholds configured for the Snyk Security Configuration capability, the package is blocked.
-5. The error appears in the developer’s CLI \(including a link to the error with full details\) and from the Nexus interface for administrators, detailing the number of known issues for vulnerabilities and licenses.
+5. The error appears in the developer’s CLI (including a link to the error with full details) and from the Nexus interface for administrators, detailing the number of known issues for vulnerabilities and licenses.
 
 ## Administrators’ guide for the Snyk Nexus Gatekeeper plugin
 
@@ -57,8 +57,8 @@ To set up and configure the plugin, start scanning and managing your organizatio
    * **Snyk API token** - paste the token value you saved from step 1
    * **Snyk Organization ID** - paste the token value you saved from step 1
    * **Vulnerability Threshold**—default is \*low\*. Valid values include low, medium, high. Manually update the configuration based on your needs.
-   * **License Threshold**—default is \*low\*. Valid values include low, medium, high. Manually update the configuration based on your needs. 
-4. Shut down the Nexus service instance and then restart it. 
+   * **License Threshold**—default is \*low\*. Valid values include low, medium, high. Manually update the configuration based on your needs.&#x20;
+4. Shut down the Nexus service instance and then restart it.&#x20;
 5. Log in to your Nexus instance and double check that the Snyk bundle has been installed successfully.
 
 ![](../../../.gitbook/assets/uuid-9745b82a-ed7e-bce0-75dd-0070514f274d-en.png)
@@ -72,21 +72,21 @@ To set up and configure the plugin, start scanning and managing your organizatio
 
 ![](../../../.gitbook/assets/uuid-a2c354a2-21ca-bdfb-7862-a2ef26eec59e-en.png)
 
-![](../../../.gitbook/assets/image%20%2833%29.png)
+![](<../../../.gitbook/assets/image (33).png>)
 
 By reviewing the results, you can evaluate the issues found in your artifact and determine a course of action.
 
 Work with Snyk properties from Nexus as follows:
 
-| **Property** | **Description** |
-| :--- | :--- |
-| issues\_licenses | Regardless of the thresholds configured, this row displays license summary scan results. |
-| issues\_url | This is the URL to our database and explanation of the vulnerability, including specific details about vulnerable versions, available upgrades and Snyk patches as well. |
-| issues\_vulnerabilities | Regardless of the thresholds configured, this row displays vulnerability summary scan results. |
+| **Property**            | **Description**                                                                                                                                                          |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| issues\_licenses        | Regardless of the thresholds configured, this row displays license summary scan results.                                                                                 |
+| issues\_url             | This is the URL to our database and explanation of the vulnerability, including specific details about vulnerable versions, available upgrades and Snyk patches as well. |
+| issues\_vulnerabilities | Regardless of the thresholds configured, this row displays vulnerability summary scan results.                                                                           |
 
 ### Troubleshooting
 
-If your connection to Snyk is unsuccessful, try checking the following points or contact us at snyk@support.io \(`<`[`snyk@support.io`](mailto:snyk@support.io)`>`\):
+If your connection to Snyk is unsuccessful, try checking the following points or contact us at snyk@support.io (`<`[`snyk@support.io`](mailto:snyk@support.io)`>`):
 
 * Check Nexus logs for any related errors.
 * Ensure you’ve entered the API URL correctly for the configuration of the capability.
@@ -101,4 +101,3 @@ When the scan ends, you get an error message if the download was blocked, with a
 ![](../../../.gitbook/assets/uuid-a2c354a2-21ca-bdfb-7862-a2ef26eec59e-en.png)
 
 Click the link to view details, itemizing the number of vulnerabilities found in the artifact, and their severities.
-

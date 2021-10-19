@@ -1,6 +1,6 @@
 # Bitbucket Cloud integration
 
-Snyk's Bitbucket Cloud integration allows you to continuously perform security scanning across all the integrated repositories, detect vulnerabilities in your open source components, and use automated remediation.
+Snyk's Bitbucket Cloud integration allows you to continuously perform security scanning across all the integrated repositories, detect vulnerabilities in your open source components, and use automated fixes.
 
 > **Feature availability**\
 > This feature is available for all plans. See [pricing plans](https://snyk.io/plans/) for more details.
@@ -11,14 +11,14 @@ Snyk's Bitbucket Cloud integration allows you to continuously perform security s
 
 1. To give Snyk access to your Bitbucket account, set up up a dedicated service account in Bitbucket, with admin permissions. Visit [Bitbucket documentation ](https://support.atlassian.com/bitbucket-cloud/docs/grant-access-to-a-workspace/)to learn more about creating users.
 2. In Snyk, go to the **Integrations** page and click on **Bitbucket Cloud** card.
-3. Access your Bitbucket Cloud account and create a unique App Password for Snyk with the following permissions: 
+3. Access your Bitbucket Cloud account and create a unique App Password for Snyk with the following permissions:&#x20;
    1. **Account: Email & Read**
    2. **Workspace membership: Read**
    3. **Projects: Read**
    4. **Repositories: Read & Write**
    5. **Pull requests: Read & Write**
    6. **Webhooks: Read & Write**
-      1. Follow [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html) to see how to do this in detail. 
+      1. Follow [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html) to see how to do this in detail.&#x20;
 4. Enter the username and the App Password for the service account you created:
 5.  Click **Save**.\
     Snyk connects to your Bitbucket Cloud account. When the connection succeeds, the following indications appear:
@@ -54,7 +54,7 @@ Here is an example of a fix pull request opened by Snyk:
 
 To review and adjust the automatic fix pull request settings:
 
-Click on settings![cog_icon.png](../../../.gitbook/assets/cog_icon.png) > **Integrations**. 2. Select **Edit Settings** for Bitbucket Cloud. 3. Navigate to **Automatic fix pull requests**:
+Click on settings![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Integrations**. 2. Select **Edit Settings** for Bitbucket Cloud. 3. Navigate to **Automatic fix pull requests**:
 
 ![](<../../../.gitbook/assets/mceclip4 (1) (2) (6) (7) (3) (24).png>)
 
@@ -68,8 +68,8 @@ This is how Snyk pull request build check appears in the **Pull Request** page i
 
 To review and adjust the pull request tests settings,
 
-1. Click on settings![cog_icon.png](../../../.gitbook/assets/cog_icon.png) > **Integrations**.
-2. Select **Edit Settings** for Bitbucket Cloud. 
+1. Click on settings![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Integrations**.
+2. Select **Edit Settings** for Bitbucket Cloud.&#x20;
 3. Navigate to **Default Snyk test for pull requests**
 
 ![](../../../.gitbook/assets/999.png)
@@ -120,7 +120,7 @@ To remove the Connect App from your workspace in Bitbucket Cloud:
 
 1. Navigate to the **workspace settings** page > **Installed apps**.
 2. Find **Snyk Security for Bitbucket Cloud** in the installed applications list.
-3. Click **remove**. 
+3. Click **remove**.&#x20;
 
 ## Associating the Connect App to a different Snyk account / organization
 
@@ -134,8 +134,8 @@ To change these settings later, navigate to the workspace settings and select **
 
 To disable this integration:
 
-1. Click on settings![cog_icon.png](../../../.gitbook/assets/cog_icon.png) > **Integrations** in Snyk.
-2. Find the specific integration to deactivate in your list of integrations, and click Edit settings. 
+1. Click on settings![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Integrations** in Snyk.
+2. Find the specific integration to deactivate in your list of integrations, and click Edit settings.&#x20;
 3. A page appears showing the current status of your integration and a place to update your credentials, specific to each integration (credentials, API key, Service Principal, or connection details):
 4. Click **Disconnect**.
 
