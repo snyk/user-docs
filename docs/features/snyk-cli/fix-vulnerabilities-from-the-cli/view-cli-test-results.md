@@ -6,7 +6,7 @@ After running `snyk test,` a list of vulnerabilities and license issues is displ
 * detailed descriptions of issues
 * where relevant, links to more specific details for each issue
 
-Depending on the language of the project you have tested you may also view remediation advice, including details on how you can manually fix the vulnerability.
+Depending on the language of the project you have tested you may also view fix advice, including details on how you can manually fix the vulnerability.
 
 See also
 

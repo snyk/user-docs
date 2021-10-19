@@ -7,14 +7,14 @@ description: >-
 
 # Section 3: Fix Vulnerabilities
 
-With the GitHub Integration we configured in Section 1, Snyk is able to open Pull Requests to upgrade dependencies to non-vulnerable versions, helping to accelerate remediation.
+With the GitHub Integration we configured in Section 1, Snyk is able to open Pull Requests to upgrade dependencies to non-vulnerable versions, helping to accelerate fixes.
 
 ## Step 1: Explore a vulnerability in more detail
 
 Log into Snyk, and go into the `gh-actions-academy` project imported earlier. Scroll down to see the list of vulnerabilities present, ordered by [our proprietary Priority Score](https://snyk.io/blog/snyk-priority-score/). For each Vulnerability, Snyk displays:
 
 * The module that introduced it and, in the case of transitive dependencies, its direct dependency,
-* Details on the path and proposed Remediation, as well as the specific vulnerable functions
+* Details on the path and proposed fixes, as well as the specific vulnerable functions
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-vuln.png)
 
@@ -56,7 +56,7 @@ The `all-fixes` branch was created by using the [Snyk Wizard](https://support.sn
 
 Create a New Pull Request from `all-fixes` to `develop`. This introduces some changes:
 
-* The creation of a `.snyk` file, which is used to track changes made by `Snyk Wizard`. 
+* The creation of a `.snyk` file, which is used to track changes made by `Snyk Wizard`.&#x20;
 * Updated `package.json` and `package-lock.json` files with updated dependencies.
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-allfixpr.png)
@@ -80,4 +80,3 @@ Open Source vulnerabilities are disclosed every day. If the Snyk Gate fails, at 
 Merge in the changes, and feel good that your `PROD` branch is free from Open Source Vulnerabilities! 🏆
 
 You made it to the end of Part 1! Congratulations! Proceed to Part 2 to see how Snyk Container can help you keep this application secure as you package it in a container.
-

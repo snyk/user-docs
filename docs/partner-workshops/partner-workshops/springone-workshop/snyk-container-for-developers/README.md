@@ -2,7 +2,7 @@
 
 ## Snyk Containers
 
-Snyk Container is a developer-friendly approach to fixing vulnerabilities. Snyk Container enables organizations by delivering remediation advice that empowers developers to identify the best ways to address container vulnerabilities.
+Snyk Container is a developer-friendly approach to fixing vulnerabilities. Snyk Container enables organizations by delivering fix advice that empowers developers to identify the best ways to address container vulnerabilities.
 
 * Base image selection - The goal of containers may be to ship only your code and its dependencies. However, the reality is that operating system libraries and other tools end up in containers. Snyk Container identifies alternate base image options that can significantly reduce vulnerabilities.
 * Coding and CLI - Scan early and often to identify issues before committing code and pushing containers downstream.
@@ -14,5 +14,4 @@ Snyk Container is a developer-friendly approach to fixing vulnerabilities. Snyk 
 We will complete the following steps:
 
 1. Import containers images from Docker Hub to Snyk UI.
-2. Review results of container image scan and add Dockerfile Remediation advice.
-
+2. Review results of container image scan and add Dockerfile fix advice.

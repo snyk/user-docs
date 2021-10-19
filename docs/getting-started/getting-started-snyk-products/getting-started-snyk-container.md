@@ -29,8 +29,8 @@ Choose a container registry integration, to connect the registry with Snyk:
 
 Add projects for your selected container, to start scanning with Snyk.
 
-1. Click **Add Project**, and select the integration registry entry to add from: 
-2. Select the container repository and tags to import, then click **Add selected repositories** to import them into your projects. Importing also sets Snyk to run a daily check on the repositories for vulnerabilities. 
+1. Click **Add Project**, and select the integration registry entry to add from:&#x20;
+2. Select the container repository and tags to import, then click **Add selected repositories** to import them into your projects. Importing also sets Snyk to run a daily check on the repositories for vulnerabilities.&#x20;
 3. A progress bar appears: click **View log** to see log results.
 
 {% hint style="info" %}
@@ -51,7 +51,7 @@ Click on an entry to see details of vulnerabilities found:
 
 ![image5.png](../../.gitbook/assets/image5-1-.png)
 
-See [Analysis and remediation for your images from the Snyk app](https://docs.snyk.io/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app) for more details.
+See [Analysis and fixes for your images from the Snyk app](https://docs.snyk.io/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app) for more details.
 
 ## Stage 4: Fix and review
 

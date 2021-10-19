@@ -12,13 +12,13 @@ To see an example of the risks a vulnerable open source component introduces to 
 
 Let's execute an exploit against our running application. We'll demonstrate how the Directory Traversal vulnerability in the `st` package can lead to sensitive information leakage. Start by navigating to the exploits folder and sourcing the `st-exploits.sh` file.
 
-```text
+```
 cd exploits && source st-exploits.sh
 ```
 
 This sets up a series of aliases to demonstrate the exploit. They are shown below:
 
-```text
+```
 st1="curl $GOOF_HOST/public/about.html"
 
 # Directory listing (not necessary)
@@ -38,11 +38,11 @@ The good stuff is in `st4` and `st5`, where we see the leaked contents of the `/
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/st-exploit.png)
 
-Yikes. And this is just one example. Feel free to play around with the other exploits in this folder, the sample application is **very** vulnerable \(for now!\).
+Yikes. And this is just one example. Feel free to play around with the other exploits in this folder, the sample application is **very** vulnerable (for now!).
 
 ## Start fixing Open Source Vulnerabilities!
 
-In Snyk, this, and other vulnerabilities in our dependencies, are shown under the `package.json` file. Snyk accelerates remediation via Pull Requests to upgrade dependencies to non-vulnerable versions.
+In Snyk, this, and other vulnerabilities in our dependencies, are shown under the `package.json` file. Snyk accelerates fixes via Pull Requests to upgrade dependencies to non-vulnerable versions.
 
 {% hint style="info" %}
 Notice that the Dockerfile has less vulnerabilities! Snyk auto-retested it after our changes.
@@ -52,18 +52,18 @@ Notice that the Dockerfile has less vulnerabilities! Snyk auto-retested it after
 
 ## Fix Vulnerabilities from the Snyk UI
 
-### Step 1: Explore a vulnerability in more detail <a id="step-1-explore-a-vulnerability-in-more-detail"></a>
+### Step 1: Explore a vulnerability in more detail <a href="step-1-explore-a-vulnerability-in-more-detail" id="step-1-explore-a-vulnerability-in-more-detail"></a>
 
 Click into the `package.json` project, and Scroll down to see the list of vulnerabilities present, ordered by [our proprietary Priority Score](https://snyk.io/blog/snyk-priority-score/). For each Vulnerability, Snyk displays:
 
 * The module that introduced it and, in the case of transitive dependencies, its direct dependency,
-* Details on the path and proposed Remediation, as well as the specific vulnerable function.
+* Details on the path and proposed fixes, as well as the specific vulnerable function.
 
 We'll start with the first vulnerability, **zip slip**, since it's ordered the highest. The exploit for zip-slip is also available in the `exploits` folder in case you want to try it out before patching it.
 
-![](https://gblobscdn.gitbook.com/assets%2F-M3ww0VUnNWDc-FwnwVl%2F-MOHOD925AinvVslRYnk%2F-MOHQWZMgK6Br-LeO6xL%2FSnyk-Vuln.png?alt=media&token=42d70198-322b-463e-b107-f54c12072ec7)
+![](https://gblobscdn.gitbook.com/assets%2F-M3ww0VUnNWDc-FwnwVl%2F-MOHOD925AinvVslRYnk%2F-MOHQWZMgK6Br-LeO6xL%2FSnyk-Vuln.png?alt=media\&token=42d70198-322b-463e-b107-f54c12072ec7)
 
-### Step 2: Create a Fix Pull Request in Snyk <a id="step-2-create-a-fix-pull-request-in-snyk"></a>
+### Step 2: Create a Fix Pull Request in Snyk <a href="step-2-create-a-fix-pull-request-in-snyk" id="step-2-create-a-fix-pull-request-in-snyk"></a>
 
 Since a fix is available, Snyk can automatically upgrade the vulnerable dependency to a non-vulnerable version through a Pull Request. Click on "Fix this vulnerability" to do so.
 
@@ -97,7 +97,7 @@ Make this change in your package.json file.
 
 To ensure this isn't exploitable, re-build and re-deploy the container to Kubernetes.
 
-```text
+```
 # Build the new image
 docker build $DockerId/goof:dev .
 
@@ -117,8 +117,7 @@ Now try the exploit again. It should fail spectacularly.
 
 Either with Fix Pull Requests, or using the information in Snyk to modify your package manager manifest, continue fixing vulnerabilities until you've knocked out the High Severity Vulnerabilities that have a fix available. Some additional resources that can help:
 
-* Snyk IDE Plugins: If you're using JetBrains IDEs, Eclipse, or VS Code, check out [our plugins](https://support.snyk.io/hc/en-us/sections/360001138118-IDE-tools) that show vulnerability and remediation information right within the IDE. 
-* For Node applications, like this one, check out [Snyk Wizard](https://support.snyk.io/hc/en-us/articles/360003851357-Manage-vulnerability-results-with-the-Snyk-CLI-wizard)! 
+* Snyk IDE Plugins: If you're using JetBrains IDEs, Eclipse, or VS Code, check out [our plugins](https://support.snyk.io/hc/en-us/sections/360001138118-IDE-tools) that show vulnerability and fix information right within the IDE.&#x20;
+* For Node applications, like this one, check out [Snyk Wizard](https://support.snyk.io/hc/en-us/articles/360003851357-Manage-vulnerability-results-with-the-Snyk-CLI-wizard)!&#x20;
 
 Once you're ready, continue on to the next section to learn how to fix configuration issues in the Kubernetes manifests that deploy the application!
-
