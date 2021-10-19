@@ -291,6 +291,7 @@
     * [Retrieve a unique Broker client token](features/integrations/snyk-broker/retrieve-a-unique-broker-client-token.md)
     * [How to install and configure your Snyk Broker client](features/integrations/snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md)
     * [Upgrade your Snyk Broker client](features/integrations/snyk-broker/upgrade-your-snyk-broker-client.md)
+    * [Troubleshooting Broker](features/integrations/snyk-broker/troubleshooting-broker.md)
   * [Notification and ticketing system integrations](features/integrations/notifications-ticketing-system-integrations/README.md)
     * [Slack integration](features/integrations/notifications-ticketing-system-integrations/slack-integration.md)
     * [Jira](features/integrations/notifications-ticketing-system-integrations/jira.md)

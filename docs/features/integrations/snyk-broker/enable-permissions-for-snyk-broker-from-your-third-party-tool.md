@@ -19,7 +19,7 @@ Assign permissions to detect Infrastructure as Code files as follows:
 Add Snyk Container local Container Registry support through Snyk Broker
 
 * ****[**Snyk Container Broker Agent**](https://docs.snyk.io/products/snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries) setup
-* ****[**Brokered ECR**](https://docs.snyk.io/products/snyk-container/integrate-self-hosted-container-registries/setting-up-the-container-registry-agent-for-a-brokered-ecr-integration) set up
+* ****[**Brokered ECR**](https://docs.snyk.io/products/snyk-container/integrate-self-hosted-container-registries/setting-up-the-container-registry-agent-for-a-brokered-ecr-integration) setup
 
 Add Snyk Code local Git Repository support through Snyk Broker:
 
