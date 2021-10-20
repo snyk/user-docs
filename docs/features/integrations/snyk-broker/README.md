@@ -7,4 +7,4 @@
 * [Retrieve a unique Broker client token](retrieve-a-unique-broker-client-token.md)
 * [How to install and configure your Snyk Broker client](how-to-install-and-configure-your-snyk-broker-client.md)
 * [Upgrade your Snyk Broker client](upgrade-your-snyk-broker-client.md)
-
+* [Troubleshooting Broker](https://docs.snyk.io/features/integrations/snyk-broker/troubleshooting-broker)
