@@ -15,7 +15,7 @@ Vulnerable condition examples include:
 
 #### It's all about the context
 
-Some vulnerabilities have multiple different conditions that must all be met,  for that vulnerability to be exploitable. A vulnerable open source package can be exploited in some applications, but not in others. 
+Some vulnerabilities have multiple different conditions that must all be met,  for that vulnerability to be exploitable. A vulnerable open source package can be exploited in some applications, but not in others.&#x20;
 
 Exploitability depends on the context: for example, the environment, the settings, and the way the developer uses this package.
 
@@ -24,7 +24,7 @@ Vulnerabilities that are not exploitable are unlikely to pose a security threat 
 ### Triage Assistant
 
 {% hint style="info" %}
-Currently, this feature is only available to **Java** (Gradle and Maven) ecosystem, when using GitHub as the SCM, and when **Snyk Code** is enabled.
+Currently, this feature is only available to **Java** (Gradle and Maven) ecosystem, when using **GitHub** as the source, and when **Snyk Code** is enabled.
 
 To enable this feature, within Snyk, go to **Settings → Snyk Preview **and enable this feature.
 {% endhint %}
@@ -38,8 +38,8 @@ In the context of your application, the Triage Assistant evaluates the vulnerabl
 Jackson Vulnerable Conditions:
 
 * **Vulnerable version**: The jackson package (**com.fasterxml.jackson.core:jackson-databind vulnerabilities**) should be in a specific version, that we know is vulnerable.
-* **Specific setting**: A specific setting, or functionality need to be enabled, in our case it’s the [**Polymorphic Type Handling**](https://github.com/FasterXML/jackson-docs/wiki/JacksonPolymorphicDeserialization) feature. 
-* **User interactivity**: The application needs to accept JSON input from the user. 
+* **Specific setting**: A specific setting, or functionality need to be enabled, in our case it’s the [**Polymorphic Type Handling**](https://github.com/FasterXML/jackson-docs/wiki/JacksonPolymorphicDeserialization) feature.&#x20;
+* **User interactivity**: The application needs to accept JSON input from the user.&#x20;
 * **Specific gadget**: A “gadget”, which is a class or function, needs to be available within the executing scope of the application.
 
 All the conditions must be met for the vulnerability to be exploitable.
