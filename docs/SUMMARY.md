@@ -555,7 +555,7 @@
     * [Configure Snyk for DevSecOps](partner-workshops/partner-workshops/springone-workshop/configure-snyk-for-devops/README.md)
       * [Create a Snyk organization](partner-workshops/partner-workshops/springone-workshop/configure-snyk-for-devops/create-snyk-organization.md)
       * [Configure GitHub integration](partner-workshops/partner-workshops/springone-workshop/configure-snyk-for-devops/configure-snyk-and-github.md)
-      * [Configure Docker Hub intergration](partner-workshops/partner-workshops/springone-workshop/configure-snyk-for-devops/configure-snyk-and-docker-hub.md)
+      * [Configure Docker Hub integration](partner-workshops/partner-workshops/springone-workshop/configure-snyk-for-devops/configure-snyk-and-docker-hub.md)
     * [Developer Environment and Snyk](partner-workshops/partner-workshops/springone-workshop/developer-environment-and-snyk/README.md)
       * [Clone SPC Repository](partner-workshops/partner-workshops/springone-workshop/developer-environment-and-snyk/clone-spc-repository.md)
       * [Authenticate with Snyk](partner-workshops/partner-workshops/springone-workshop/developer-environment-and-snyk/snyk-authenticate-using-cli.md)
