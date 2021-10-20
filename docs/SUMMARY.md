@@ -183,6 +183,7 @@
       * [Writing a rule](products/snyk-infrastructure-as-code/custom-rules/getting-started-with-the-sdk/writing-a-rule.md)
       * [Testing a rule](products/snyk-infrastructure-as-code/custom-rules/getting-started-with-the-sdk/testing-a-rule.md)
       * [Bundling rules](products/snyk-infrastructure-as-code/custom-rules/getting-started-with-the-sdk/bundling-rules.md)
+      * [Pushing a bundle](products/snyk-infrastructure-as-code/custom-rules/getting-started-with-the-sdk/pushing-a-bundle.md)
       * [Custom Rego Builtins](products/snyk-infrastructure-as-code/custom-rules/getting-started-with-the-sdk/advanced-rego.md)
       * [Examples of custom rules](products/snyk-infrastructure-as-code/custom-rules/getting-started-with-the-sdk/examples.md)
     * [Running IaC custom rules](products/snyk-infrastructure-as-code/custom-rules/how-to-run-custom-rules-with-the-snyk-cli.md)

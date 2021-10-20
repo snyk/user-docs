@@ -10,7 +10,7 @@ Let’s assume we have generated a new rule `CUSTOM-RULE-1` using the SDK (i.e. 
 
 {% code title="rules/CUSTOM-RULE-1/fixtures/denied.tf" %}
 ```
-resource "aws_redshift_cluster" "allowed" {
+resource "aws_redshift_cluster" "denied" {
   cluster_identifier = "tf-redshift-cluster"
   node_type          = "dc1.large"
   tags = {
@@ -51,7 +51,7 @@ deny[msg] {
 {% endcode %}
 
 {% hint style="info" %}
-To understand how the Rego code evaluates the Terraform file provided earlier, have a look at how the SDK is able to [parse a fixture file](./#parse-a-fixture-file) into JSON. 
+To understand how the Rego code evaluates the Terraform file provided earlier, have a look at how the SDK is able to [parse a fixture file](./#parse-a-fixture-file) into JSON.&#x20;
 {% endhint %}
 
 {% hint style="warning" %}
@@ -106,7 +106,7 @@ resource "aws_redshift_cluster" "denied" {
 ```
 {% endcode %}
 
-Joining multiple expressions together expresses logical `AND`. 
+Joining multiple expressions together expresses logical `AND`.&#x20;
 
 * You can do this with the `;` operator.
 * Or, you can omit the `;` (`AND`) operator by splitting expressions across multiple lines.
