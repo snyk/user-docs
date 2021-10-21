@@ -389,6 +389,7 @@
     * [Snyk runtime monitoring: uninstall the Snyk agent for Java](features/general-reports/runtime-monitoring/snyk-runtime-monitoring-uninstall-the-snyk-agent-for-java.md)
     * [Snyk runtime: what data is used when monitoring my Java projects?](features/general-reports/runtime-monitoring/snyk-runtime-what-data-is-used-when-monitoring-my-java-projects.md)
     * [Snyk runtime: deployment metrics](features/general-reports/runtime-monitoring/snyk-runtime-deployment-metrics.md)
+* [Other tools](features/other-tools.md)
 
 ## PARTNER WORKSHOPS
 
