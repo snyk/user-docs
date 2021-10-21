@@ -4,9 +4,9 @@ Snyk offers security scanning to test your [Elixir](https://www.notion.so/Elixir
 
 ## Features
 
-| &nbsp; | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |  |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![hex\_80x80.png](../../../.gitbook/assets/hex_80x80.png) | [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm/) | ✔︎ |  |  |  |  |
+|                                                            | Package managers/Features                                    | CLI support | Git support | License scanning | Fixing | Runtime monitoring |   |
+| ---------------------------------------------------------- | ------------------------------------------------------------ | ----------- | ----------- | ---------------- | ------ | ------------------ | - |
+| ![hex\_80x80.png](../../../.gitbook/assets/hex\_80x80.png) | [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm) | ✔︎          |             |                  |        |                    |   |
 
 ## How it works
 
@@ -49,5 +49,4 @@ Hex support includes both Elixir and Erlang packages.
 Snyk also has limited support for `:path`, `:git` and `:github` dependencies, but not their transitive dependencies or vulnerabilities.
 
 * `:path` dependencies appear in the dependency tree by name
-* `:git` and `:github` dependencies appear in the dependency tree by repository URL and version \(either `:branch`, `:tag` or `:ref`, as defined in the `mix.exs` file\)
-
+* `:git` and `:github` dependencies appear in the dependency tree by repository URL and version (either `:branch`, `:tag` or `:ref`, as defined in the `mix.exs` file)

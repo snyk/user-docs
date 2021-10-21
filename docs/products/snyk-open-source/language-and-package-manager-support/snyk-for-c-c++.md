@@ -15,9 +15,9 @@ You can use Snyk to scan C / C++ projects.
 Features might not be available, depending on your subscription plan.
 {% endhint %}
 
-|       | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
-| ----- | ----------- | ----------- | ---------------- | ----------- | ------------------ |
-| C/C++ | ✔︎          |             |                  |             |                    |
+|       | CLI support | Git support | License scanning | Fixing | Runtime monitoring |
+| ----- | ----------- | ----------- | ---------------- | ------ | ------------------ |
+| C/C++ | ✔︎          |             |                  |        |                    |
 
 ### How it works
 
@@ -31,7 +31,7 @@ When you run the `snyk unmanaged test` command, Snyk:
 
 1. Converts all files down from your current folder into a list of hashes.
 2. Sends the hashes to Snyk scan server.
-3. Queries the database to find a list of potentially matching dependencies. 
+3. Queries the database to find a list of potentially matching dependencies.&#x20;
 4. Links the dependencies to the known vulnerabilities.
 5. Displays the results.
 
@@ -185,31 +185,31 @@ $ snyk unmanaged test --json
 
 The following `snyk`command line options are supported with `snyk unmanaged`:
 
-#### ORG_NAME
+#### ORG\_NAME
 
-`--org=ORG_NAME` 
+`--org=ORG_NAME`&#x20;
 
-Specify the ORG_NAME to run Snyk commands tied to a specific organization. This defines where new projects are created after running the **monitor** command, some features have availability and private tests limits. If you have multiple organizations, you can set a default from the CLI using:
+Specify the ORG\_NAME to run Snyk commands tied to a specific organization. This defines where new projects are created after running the **monitor** command, some features have availability and private tests limits. If you have multiple organizations, you can set a default from the CLI using:
 
 ```
 snyk config set org=ORG_NAME
 ```
 
-Setting a default ensures all newly monitored projects are created under your default organization. To override the default, use the **--org=ORG_NAME** argument.
+Setting a default ensures all newly monitored projects are created under your default organization. To override the default, use the **--org=ORG\_NAME** argument.
 
-Default: uses the ORG_NAME set as default in your Account settings.
+Default: uses the ORG\_NAME set as default in your Account settings.
 
 #### json
 
-`--json` 
+`--json`&#x20;
 
 Prints results in JSON format.
 
-#### OUTPUT_FILE_PATH
+#### OUTPUT\_FILE\_PATH
 
 `--json-file-output=OUTPUT_FILE_PATH`
 
-(only in test command) Save test output in JSON format directly to the specified file, regardless of whether or not you use the **--json** option. 
+(only in test command) Save test output in JSON format directly to the specified file, regardless of whether or not you use the **--json** option.&#x20;
 
 This is  useful to display the human-readable test output via **stdout** and at the same time save the JSON format output to a file.
 

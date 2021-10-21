@@ -7,20 +7,20 @@ The following describes how to use Snyk to scan your PHP projects:
 ## Features
 
 {% hint style="info" %}
-**Note**  
+**Note**\
 Features might not be available, depending on your subscription plan.
 {% endhint %}
 
-|  | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [![composer-logo.svg](../../../.gitbook/assets/uuid-3415efde-9bfb-2b07-3781-8169e25a2fcd-en.png)](https://support.snyk.io/hc/article_attachments/360007258958/uuid-3415efde-9bfb-2b07-3781-8169e25a2fcd-en.png) | [Composer](https://getcomposer.org/) | ✔︎ | ✔︎ | ✔︎ |  |  |
+|                                                                                                                                                                                                                  | Package managers/Features           | CLI support | Git support | License scanning | Fixing | Runtime monitoring |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- | ----------- | ----------- | ---------------- | ------ | ------------------ |
+| [![composer-logo.svg](../../../.gitbook/assets/uuid-3415efde-9bfb-2b07-3781-8169e25a2fcd-en.png)](https://support.snyk.io/hc/article\_attachments/360007258958/uuid-3415efde-9bfb-2b07-3781-8169e25a2fcd-en.png) | [Composer](https://getcomposer.org) | ✔︎          | ✔︎          | ✔︎               |        |                    |
 
 ## **How it works**
 
 Once we’ve built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in the dependency tree.
 
 {% hint style="info" %}
-**Note**  
+**Note**\
 In order to scan your dependencies, you must ensure you have first installed the relevant package manager, and that your project contains the supported manifest files.
 {% endhint %}
 
@@ -60,13 +60,13 @@ Once you select a project for import, we build the dependency tree based on thes
 
 ## **Git settings for PHP**
 
-By default, Snyk scans your production dependencies. From the Snyk UI you can configure whether to include your development dependencies \(`require_dev`\) in the scan for vulnerabilities.
+By default, Snyk scans your production dependencies. From the Snyk UI you can configure whether to include your development dependencies (`require_dev`) in the scan for vulnerabilities.
 
 ### **To update language preferences:**
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage
-2. Click on settings ![](../../../.gitbook/assets/cog_icon.png)&gt; **Languages**. 
-3. Click **Edit settings** for PHP and select **Scan dev dependencies** to set for your PHP projects in the specific organization to include both development and production dependencies. 
+2. Click on settings ![](../../../.gitbook/assets/cog\_icon.png)> **Languages**.&#x20;
+3. Click **Edit settings** for PHP and select **Scan dev dependencies** to set for your PHP projects in the specific organization to include both development and production dependencies.&#x20;
 4. Click **Update settings**.
 
 These settings will then be applied to all newly imported projects, and once re-tested, to all existing projects.
@@ -88,4 +88,3 @@ If you run across any of these, or other issues, please send the following files
 
 * `composer.json`
 * `composer.lock`
-

@@ -9,11 +9,11 @@ You can use Snyk to scan your JavaScript projects.
 Features might not be available, depending on your subscription plan.
 {% endhint %}
 
-|                                                                                               | Package managers/Features | CLI support | Git support | License scanning | Remediation | Runtime monitoring |
-| --------------------------------------------------------------------------------------------- | ------------------------- | ----------- | ----------- | ---------------- | ----------- | ------------------ |
-| ![i_icon_npm.png](../../../.gitbook/assets/uuid-aa98c079-4d3e-5e58-f450-08985b5d4b8b-en.png)  | npm                       | ✔︎          | ✔︎          | ✔︎               | ✔           | ✔︎                 |
-| ![i_icon_yarn.png](../../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) | Yarn                      | ✔︎          | ✔︎          | ✔︎               | ✔︎          | ✔︎                 |
-| ![i_icon_yarn.png](../../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) | Yarn Workspaces           | ✔︎          | ✔︎          | ✔︎               | ✔︎          | ✔︎                 |
+|                                                                                                 | Package managers/Features | CLI support | Git support | License scanning | Fixing | Runtime monitoring |
+| ----------------------------------------------------------------------------------------------- | ------------------------- | ----------- | ----------- | ---------------- | ------ | ------------------ |
+| ![i\_icon\_npm.png](../../../.gitbook/assets/uuid-aa98c079-4d3e-5e58-f450-08985b5d4b8b-en.png)  | npm                       | ✔︎          | ✔︎          | ✔︎               | ✔      | ✔︎                 |
+| ![i\_icon\_yarn.png](../../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) | Yarn                      | ✔︎          | ✔︎          | ✔︎               | ✔︎     | ✔︎                 |
+| ![i\_icon\_yarn.png](../../../.gitbook/assets/uuid-374be14a-4c05-fdb4-a25c-e8fbdedc2990-en.png) | Yarn Workspaces           | ✔︎          | ✔︎          | ✔︎               | ✔︎     | ✔︎                 |
 
 ### How it works
 
@@ -130,7 +130,7 @@ Git support for Yarn Workspaces is enabled for all projects in organisations cre
 
 For Yarn Workspaces we scan each `package.json` that matches the `packages` pattern from the root level `package.json` and root level `yarn.lock`.
 
-Fix Pull/Merge Requests are not supported for Yarn Workspaces. The remediation advice can be used to manually generate PRs.
+Fix Pull/Merge Requests are not supported for Yarn Workspaces. The fix advice can be used to manually generate PRs.
 
 Commit status checks fail if the `package.json` and the root `yarn.lock` are out of sync.
 
@@ -159,5 +159,5 @@ From the Snyk UI, use these parameters to customize your language preferences fo
 ![](<../../../.gitbook/assets/add-artifactory-images (1) (2) (44).gif>)
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage
-2. Click on settings ![](../../../.gitbook/assets/cog_icon.png) > **Languages**
+2. Click on settings ![](../../../.gitbook/assets/cog\_icon.png) > **Languages**
 3. Click **Edit settings** for JavaScript to configure preferences for your JavaScript (npm and Yarn) projects in this organization
