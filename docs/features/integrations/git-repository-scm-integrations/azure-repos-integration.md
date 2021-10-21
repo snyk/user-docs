@@ -13,9 +13,9 @@ Snyk tests and monitors Azure Repos that are in any of our supported languages b
 
 **Adding projects to Snyk**
 
-1. Go to **Projects** and click **Add projects**. Choose the tool from which to import your projects: 
+1. Go to **Projects** and click **Add projects**. Choose the tool from which to import your projects:&#x20;
 2. A popup screen opens with all the available repositories under the selected integration:
-3. Select the repos that you would like to import to Snyk to monitor them for security/license issues. To import all repos for a specific organization, checkmark the organization. 
+3. Select the repos that you would like to import to Snyk to monitor them for security/license issues. To import all repos for a specific organization, checkmark the organization.&#x20;
 4. Click **Add selected repositories**. Snyk will now scan the entire file tree for dependency files and import them to Snyk as Projects.
 
 ![](../../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en.png)
@@ -32,7 +32,7 @@ This field is case-sensitive.
 
 ## Excluding folders from import
 
-This integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages in our Docs.
+This integration works similar to our other integrations. To continue to monitor, fix and manage your projects, see the relevant pages in our Docs.
 
 {% hint style="info" %}
 **Note**\
@@ -79,7 +79,7 @@ Ensure you have set up your Azure Repos account and your Snyk account.
 8. Click **Save**.
 9. Snyk tests the connection values and the page reloads, now displaying Azure Repos integration information. A confirmation message that the details were saved also appears in green at the top of the screen. In addition, if the connection to Azure failed, a notification appears under the Connected to Azure Repos section.
 
-![](../../../.gitbook/assets/screen_shot\_2020-05-19\_at\_17.16.24.png)
+![](../../../.gitbook/assets/screen\_shot\_2020-05-19\_at\_17.16.24.png)
 
 {% hint style="info" %}
 **Note**: it is important that a Snyk admin user configure the integration within the UI. Collaborator users won't be able to complete this task and they may get the following error: _“We're having trouble connecting to Azure Repos. Please try again or_ [_contact support_](mailto:support@snyk.io)_."_

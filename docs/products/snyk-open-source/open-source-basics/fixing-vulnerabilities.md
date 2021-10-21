@@ -1,6 +1,6 @@
 # Fixing vulnerabilities
 
-Snyk provides actionable remediation advice to fix vulnerabilities. For more details, see [Remediate your vulnerabilities](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities).
+Snyk provides actionable fix advice for vulnerabilities: see [Fix your vulnerabilities](../../../features/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities.md).
 
 Snyk supports workflows to fix vulnerabilities using:
 
