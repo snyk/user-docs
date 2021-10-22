@@ -51,11 +51,11 @@ deny[msg] {
 {% endcode %}
 
 {% hint style="info" %}
-To understand how the Rego code evaluates the Terraform file provided earlier, have a look at how the SDK is able to [parse a fixture file](./#parse-a-fixture-file) into JSON.&#x20;
+To understand how the Rego code evaluates the Terraform file provided earlier, have a look at how the SDK is able to [parse a fixture file](parsing-an-input-file.md) into JSON.&#x20;
 {% endhint %}
 
 {% hint style="warning" %}
-We recommend always validating that your rule is correct by [updating and running the unit tests](./#test-a-custom-rule).
+We recommend always validating that your rule is correct by [updating and running the unit tests](testing-a-rule.md).
 {% endhint %}
 
 The test for this rule verifies that the Rego rule is able to identify that the fixture at the beginning of this guide is invalid:
@@ -78,7 +78,7 @@ test_CUSTOM_RULE_1 {
 		}]
 
 		test_cases := array.concat(allowed_test_cases, denied_test_cases)
-    testing.evaluate_test_cases("CUSTOM-RULE-1", "./rules/CUSTOM-RULE-1/fixtures", test_cases)
+    		testing.evaluate_test_cases("CUSTOM-RULE-1", "./rules/CUSTOM-RULE-1/fixtures", test_cases)
 }
 
 ```
@@ -143,7 +143,7 @@ deny[msg] {
 {% endcode %}
 
 {% hint style="warning" %}
-We recommend always validating that your rule is correct by [updating and running the unit tests](./#test-a-custom-rule).
+We recommend always validating that your rule is correct by [updating and running the unit tests](testing-a-rule.md).
 {% endhint %}
 
 The test for this rule will look the same as the one for `CUSTOM-RULE-1`, but the name of the test and the first two arguments passed to the `testing.evaluatetestcases` function will differ:
@@ -269,7 +269,7 @@ test_CUSTOM_RULE_3 {
 		}]
 
 		test_cases := array.concat(allowed_test_cases, denied_test_cases)
-    testing.evaluate_test_cases("CUSTOM-RULE-3", "./rules/CUSTOM-RULE-3/fixtures", test_cases)
+    		testing.evaluate_test_cases("CUSTOM-RULE-3", "./rules/CUSTOM-RULE-3/fixtures", test_cases)
 }
 ```
 {% endcode %}
@@ -311,13 +311,12 @@ deny[msg] {
         "msg": sprintf("resource.aws_redshift_cluster[%s].tags", [name]),
         "references": [],
     }
-
 }
 ```
 {% endcode %}
 
 {% hint style="warning" %}
-We recommend always validating that your rule is correct by [updating and running the unit tests](./#test-a-custom-rule).
+We recommend always validating that your rule is correct by [updating and running the unit tests](testing-a-rule.md).
 {% endhint %}
 
 The test for this rule will look very similar to the ones from previous example and will also require its own fixture file.
@@ -430,7 +429,7 @@ deny[msg] {
 If you want to try it out yourselves, we have provided the same example in an [OPA Playground](https://play.openpolicyagent.org/p/1xcdj9kJRw).
 
 {% hint style="warning" %}
-We recommend always validating that your rule is correct by [updating and running the unit tests](./#test-a-custom-rule).
+We recommend always validating that your rule is correct by[ updating and running the unit tests](testing-a-rule.md).
 {% endhint %}
 
 The test for this rule will look very similar to the ones from previous example and will also require its own fixture file.

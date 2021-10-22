@@ -1,12 +1,25 @@
 # Snyk Infrastructure as Code
 
-{% page-ref page="scan-terraform-files/" %}
+{% content-ref url="scan-terraform-files/" %}
+[scan-terraform-files](scan-terraform-files/)
+{% endcontent-ref %}
 
-{% page-ref page="scan-cloudformation-files/" %}
+{% content-ref url="scan-cloudformation-files/" %}
+[scan-cloudformation-files](scan-cloudformation-files/)
+{% endcontent-ref %}
 
-{% page-ref page="scan-kubernetes-configuration-files/" %}
+{% content-ref url="scan-kubernetes-configuration-files/" %}
+[scan-kubernetes-configuration-files](scan-kubernetes-configuration-files/)
+{% endcontent-ref %}
 
-{% page-ref page="snyk-cli-for-infrastructure-as-code/" %}
+{% content-ref url="snyk-cli-for-infrastructure-as-code/" %}
+[snyk-cli-for-infrastructure-as-code](snyk-cli-for-infrastructure-as-code/)
+{% endcontent-ref %}
 
-{% page-ref page="iac-functions/" %}
+{% content-ref url="iac-functions/" %}
+[iac-functions](iac-functions/)
+{% endcontent-ref %}
 
+{% content-ref url="custom-rules/" %}
+[custom-rules](custom-rules/)
+{% endcontent-ref %}

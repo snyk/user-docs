@@ -51,8 +51,8 @@ test_my_rule {
 
 		# array containing cases where the rule is denied
 		denied_test_cases := [{
-				"want_msgs": [], # verifies that the correct msg is returned by the denied rule
-				"	fixture": "denied.tf",
+				"want_msgs": ["resource.aws_redshift_cluster[denied]"], # verifies that the correct msg is returned by the denied rule
+				"fixture": "denied.tf",
 		}]
 
 		test_cases := array.concat(allowed_test_cases, denied_test_cases)
@@ -67,14 +67,20 @@ To run all tests, run the following command:
  snyk-iac-rules test
 ```
 
-You will see an output similar to this:
+If your tests pass successfully, you will see an output similar to the following:
+
+```
+PASS: 3/3
+```
+
+However, if any of them fail, you will see an output similar to the following:
 
 ```
 data.rules.test_my_rule: FAIL (1.12234ms)
-FAIL: 1/1
+FAIL: 2/3
 ```
 
-If you have more than one rule in your `rule/`folder you can target a specific test by running the following command:
+If you have more than one rule in your `rule/` folder you can target a specific test by running the following command:
 
 ```
 snyk-iac-rules test --run test_CUSTOM_1
@@ -97,4 +103,6 @@ If you need more details about it, add the` --explain notes` option:
 
 This will output more details to debug the failed test.
 
+{% hint style="info" %}
 If you have more than your generated rules in the current folder consider using the  `--ignore` flag to exclude the folders and files irrelevant to testing (make sure to not exclude `lib/` and `rules` if you used the `template` command). This can speed up the tests and also avoids running into problems where Rego is trying to evaluate non-Rego files.
+{% endhint %}

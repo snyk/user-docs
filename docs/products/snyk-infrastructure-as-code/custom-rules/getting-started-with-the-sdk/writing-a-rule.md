@@ -99,7 +99,7 @@ deny[msg] {
 ### Limitations/Notes
 
 * As we compile Rego policies into Wasm modules, you can only use built-in functions that support Wasm. There is a table at the bottom of the [Policy Reference Documentation](https://www.openpolicyagent.org/docs/latest/policy-reference/) that can help you identify those.
-* A rule may be defined multiple times with the same name, either in a file, or in separate files under the same package, e.g: 
+* A rule may be defined multiple times with the same name, either in a file, or in separate files under the same package, e.g:&#x20;
 
 ```
 packages rules
@@ -110,12 +110,13 @@ deny[msg] {
 ...
 
 deny[msg] {
-    reource.that
+    resource.that
 }
 ...
 ```
 
-These rules are referred as `incremental` as each definition is additive. You can read more about Incremental Definitions [here](https://www.openpolicyagent.org/docs/latest/policy-language/#incremental-definitions).\
-Note that these same named rules have to return a different value, or OPA will return an error. You can read more about Complete Definitions [here](https://www.openpolicyagent.org/docs/latest/policy-language/#complete-definitions). 
+These rules are referred as `incremental` as each definition is additive. You can read more about Incremental Definitions [here](https://www.openpolicyagent.org/docs/latest/policy-language/#incremental-definitions). Note that these same named rules have to return a different value, or OPA will return an error. You can read more about Complete Definitions [here](https://www.openpolicyagent.org/docs/latest/policy-language/#complete-definitions).&#x20;
 
-For more complex topics, check [how OPA resolves Conflict Resolution](https://www.openpolicyagent.org/docs/latest/faq/#conflict-resolution). 
+
+
+For more complex topics, check [how OPA resolves Conflict Resolution](https://www.openpolicyagent.org/docs/latest/faq/#conflict-resolution).&#x20;
