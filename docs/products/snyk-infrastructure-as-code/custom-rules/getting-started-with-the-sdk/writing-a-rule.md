@@ -33,15 +33,16 @@ This is what a generated skeleton of a deny rule looks like when we run `snyk-ia
 package rules
 
 deny[msg] {
-    input.spec.template.todo
+    resource := input.resource.test[name]
+    resource.todo
     msg := {
         "publicId": "my_rule",
         "title": "Default title",
         "severity": "low",
+        "msg": sprintf("input.resource.test[%s].todo", [name]),
         "issue": "",
         "impact": "",
         "remediation": "",
-        "msg": "spec.template.todo",
         "references": [],
     }
 }
@@ -86,10 +87,10 @@ deny[msg] {
         "publicId": "my_rule",
         "title": "Missing an owner from tag",
         "severity": "medium",
+        "msg": sprintf("resource.aws_redshift_cluster[%s]", [name]),
         "issue": "",
         "impact": "",
         "remediation": "",
-        "msg": sprintf("resource.aws_redshift_cluster[%s]", [name]),
         "references": [],
     }
 }

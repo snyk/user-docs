@@ -33,7 +33,7 @@ resource "aws_redshift_cluster" "allowed" {
 ```
 {% endcode %}
 
-In the `want_msgs` field of the test case, you should add the msg fields of the resources that you expect that your deny rule will evaluate/return, e.g. `["resource.aws_redshift_cluster[denied]"]`.
+In the `want_msgs` field of the test case, you should add the msg fields of the resources that you expect that your deny rule will evaluate/return, e.g. `["input.resource.aws_redshift_cluster[denied]"]`.
 
 {% code title="rules/my_rule/main_test.rego" %}
 ```
@@ -51,7 +51,7 @@ test_my_rule {
 
 		# array containing cases where the rule is denied
 		denied_test_cases := [{
-				"want_msgs": ["resource.aws_redshift_cluster[denied]"], # verifies that the correct msg is returned by the denied rule
+				"want_msgs": ["input.resource.aws_redshift_cluster[denied]"], # verifies that the correct msg is returned by the denied rule
 				"fixture": "denied.tf",
 		}]
 

@@ -40,10 +40,10 @@ deny[msg] {
         "publicId": "CUSTOM-RULE-1",
         "title": "Missing an owner from tag",
         "severity": "medium",
+        "msg": sprintf("input.resource.aws_redshift_cluster[%s]]", [name]),
         "issue": "",
         "impact": "",
         "remediation": "",
-        "msg": sprintf("resource.aws_redshift_cluster[%s]]", [name]),
         "references": [],
     }
 }
@@ -73,7 +73,7 @@ test_CUSTOM_RULE_1 {
 
 		# array containing cases where the rule is denied
 		denied_test_cases := [{
-			"want_msgs": ["resource.aws_redshift_cluster[denied]"], # verifies that the correct msg is returned by the denied rule
+			"want_msgs": ["input.resource.aws_redshift_cluster[denied]"],
 			"fixture": "denied.tf",
 		}]
 
@@ -132,10 +132,10 @@ deny[msg] {
         "publicId": "CUSTOM-RULE-2",
         "title": "Missing a description and an owner from the tag",
         "severity": "medium",
+        "msg": sprintf("input.resource.aws_redshift_cluster[%s].tags", [name]),
         "issue": "",
         "impact": "",
         "remediation": "",
-        "msg": sprintf("resource.aws_redshift_cluster[%s].tags", [name]),
         "references": [],
     }
 }
@@ -161,7 +161,7 @@ test_CUSTOM_RULE_2 {
 
 		# array containing cases where the rule is denied
 		denied_test_cases := [{
-			"want_msgs": ["resource.aws_redshift_cluster[denied]"], # verifies that the correct msg is returned by the denied rule
+			"want_msgs": ["input.resource.aws_redshift_cluster[denied]"],
 			"fixture": "denied.tf",
 		}]
 
@@ -230,10 +230,10 @@ deny[msg] {
         "publicId": "CUSTOM-RULE-3",
         "title": "Missing a description or an owner from the tag",
         "severity": "medium",
+        "msg": sprintf("input.resource.aws_redshift_cluster[%s].tags", [name]),
         "issue": "",
         "impact": "",
         "remediation": "",
-        "msg": sprintf("resource.aws_redshift_cluster[%s].tags", [name]),
         "references": [],
     }
 }
@@ -261,10 +261,10 @@ test_CUSTOM_RULE_3 {
 
 		# array containing cases where the rule is denied
 		denied_test_cases := [{
-			"want_msgs": ["resource.aws_redshift_cluster[denied1]"], # verifies that the correct msg is returned by the denied rule
+			"want_msgs": ["input.resource.aws_redshift_cluster[denied1]"],
 			"fixture": "denied1.tf",
 		},{
-			"want_msgs": ["resource.aws_redshift_cluster[denied2]"], # verifies that the correct msg is returned by the denied rule
+			"want_msgs": ["input.resource.aws_redshift_cluster[denied2]"],
 			"fixture": "denied2.tf",
 		}]
 
@@ -305,10 +305,10 @@ deny[msg] {
         "publicId": "CUSTOM-RULE-4",
         "title": "Missing a description and an owner from tag, or owner tag does not comply with email requirements",
         "severity": "medium",
+        "msg": sprintf("input.resource.aws_redshift_cluster[%s].tags", [name]),
         "issue": "",
         "impact": "",
         "remediation": "",
-        "msg": sprintf("resource.aws_redshift_cluster[%s].tags", [name]),
         "references": [],
     }
 }
@@ -362,10 +362,10 @@ deny[msg] {
         "publicId": "CUSTOM-RULE-5",
         "title": "Complex rule",
         "severity": "medium",
+        "msg": sprintf("input.resource.aws_redshift_cluster[%v].tags", [name]),
         "issue": "",
         "impact": "",
         "remediation": "",
-        "msg": sprintf("resource.aws_redshift_cluster[%v].tags", [name]),
         "references": [],
     }
 }
@@ -416,10 +416,10 @@ deny[msg] {
         "publicId": "CUSTOM-RULE-5",
         "title": "Complex rule",
         "severity": "low",
+        "msg": sprintf("input.resource.aws_redshift_cluster[%v].tags", [name]),
         "issue": "",
         "impact": "",
         "remediation": "",
-        "msg": sprintf("resource.aws_redshift_cluster[%v].tags", [name]),
         "references": [],
     }
 }
