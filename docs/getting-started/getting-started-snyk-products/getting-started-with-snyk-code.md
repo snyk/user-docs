@@ -35,7 +35,9 @@ Choose a source code integration, to allow Snyk to work on a project.
 3. Click the source control system (for example, GitHub) to integrate with Snyk:&#x20;
 4. Fill in the account credentials as prompted (or authenticate with your account in GitHub), to grant Snyk access permissions for integration.
 
-See [DevOps integrations & languages](https://docs.snyk.io/introducing-snyk/introduction-to-snyk/integrations-and-languages) for more details.
+Snyk Code temporarily clones your repository for code analysis, this requires appropriate permissions and HTTPS access to your SCM.
+
+For more information about how data is stored, see [How Snyk handles your data](../../more-info/how-snyk-handles-your-data.md). For more details about integrations, see [DevOps integrations & languages](https://docs.snyk.io/introducing-snyk/introduction-to-snyk/integrations-and-languages).
 
 ## Stage 3: Add projects
 
