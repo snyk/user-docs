@@ -20,4 +20,4 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
 * Configure Snyk's Kubernetes integration.
 * Deploy Goof sample app.
 * Activate Dynatrace Application Security module to detect vulnerabilities in your environment at runtime.
-* Remediate issues with Snyk Container.
+* Fix issues with Snyk Container.

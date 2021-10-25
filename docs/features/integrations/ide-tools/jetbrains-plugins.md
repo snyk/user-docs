@@ -1,6 +1,6 @@
 # JetBrains plugins
 
-Snyk has a plugin for Jetbrains IDEs, for both [Snyk Open Source](https://docs.snyk.io/snyk-open-source) and [Snyk Code](https://docs.snyk.io/snyk-code). Use this plugin to test your projects and get remediation advice and example code fixes during development within the IDE.
+Snyk has a plugin for Jetbrains IDEs, for both [Snyk Open Source](https://docs.snyk.io/snyk-open-source) and [Snyk Code](https://docs.snyk.io/snyk-code). Use this plugin to test your projects and get fix advice and example code fixes during development within the IDE.
 
 ## Supported JetBrains IDEs
 
@@ -22,7 +22,7 @@ JetBrains plugin versions: we support plugin versions from version 2020.2 on.
 
 * As the plugin is based on Snyk CLI, for Snyk Open Source the plugin supports all the ecosystems that are supported within the CLI.
 * The plugin will automatically download the CLI in the background.
-* For Snyk Code, current supported languages are JavaScript, TypeScript and Java. However you can install the plugin on any of the IDEs \(such as RubyMine\) and we would analyze the JavaScript, TypeScript and Java files.
+* For Snyk Code, current supported languages are JavaScript, TypeScript and Java. However you can install the plugin on any of the IDEs (such as RubyMine) and we would analyze the JavaScript, TypeScript and Java files.
 * If the CLI is already installed on the machine, the plugin will use the token provided to it, otherwise, you’ll need to provide the authentication token via the plugin authentication mechanism.
 
 ## **Install the plugin**
@@ -56,16 +56,16 @@ The first time it is needed, the plugin automatically downloads the CLI in the b
 ![This is that confirmation message we talked about.](../../../.gitbook/assets/screen-shot-2021-09-29-at-4.05.55-pm.png)
 
 * Close the browser window and return to the IDE because if you don't, the IDE will sit waiting like a little kid after soccer practice for his or her ride home.
-* The IDE then reads and saves the authentication on your local machine. 
-* In the IDE, you can select which Snyk products to use \([Snyk Open Source](../../../products/snyk-open-source/), [Snyk Advisor](https://snyk.io/advisor/) or [Snyk Code](../../../products/snyk-code/) can be enabled later in configuration\). 
+* The IDE then reads and saves the authentication on your local machine.&#x20;
+* In the IDE, you can select which Snyk products to use ([Snyk Open Source](../../../products/snyk-open-source/), [Snyk Advisor](https://snyk.io/advisor/) or [Snyk Code](../../../products/snyk-code/) can be enabled later in configuration).&#x20;
 * You can start the analysis by pressing the **Analyze now!** button:
 
-![If it doesn&apos;t say this, that&apos;s a problem.](../../../.gitbook/assets/screen-shot-2021-09-29-at-4.07.22-pm.png)
+![If it doesn't say this, that's a problem.](../../../.gitbook/assets/screen-shot-2021-09-29-at-4.07.22-pm.png)
 
 ### Add token manually
 
 1. Produce token here [https://app.snyk.io/account](https://app.snyk.io/account)
-2. **\[JetBrains IDE\] &gt;&gt; Preferences &gt;&gt; Tools &gt;&gt; Snyk**
+2. **\[JetBrains IDE] >> Preferences >> Tools >> Snyk**
 3. Paste or enter the token under **Connect IDE to Snyk**
 4. Click **Apply or OK**
 
@@ -75,15 +75,15 @@ The first time it is needed, the plugin automatically downloads the CLI in the b
 
 Now, sometimes bad things happen and we can't authenticate. When that happens, run `snyk auth` from the command line and you should get the very same authentication screen as above.
 
-![If this doesn&apos;t work, I&apos;ll have to talk to my engineers and get back to you.](../../../.gitbook/assets/screen-shot-2021-09-29-at-3.57.26-pm.png)
+![If this doesn't work, I'll have to talk to my engineers and get back to you.](../../../.gitbook/assets/screen-shot-2021-09-29-at-3.57.26-pm.png)
 
 ## Run an analysis
 
 {% hint style="info" %}
-Make sure your project file \(for example, requirements.txt\) is saved before running an analysis.
+Make sure your project file (for example, requirements.txt) is saved before running an analysis.
 {% endhint %}
 
-To trigger an analysis during your daily coding workflow, click either the run \(play\) button, or **Run scan**.
+To trigger an analysis during your daily coding workflow, click either the run (play) button, or **Run scan**.
 
 ![play-run.png](../../../.gitbook/assets/play-run.png)
 
@@ -123,12 +123,11 @@ You can filter for each one of them by selecting the value from the dropdown as 
 
 After the plugin is installed, you can set the following configurations for the plugin, using **Preferences → Tools → Snyk**:
 
-* **Token**: the token that should be used for authentication with Snyk \(can be generated via the Account Settings in Snyk App\)
+* **Token**: the token that should be used for authentication with Snyk (can be generated via the Account Settings in Snyk App)
 * **Custom endpoint**: custom endpoint for Snyk app to allow users to use the plugin with Snyk on-prem.
 * **Ignore unknown CA**: for ignoring the SSL cert, when using the plugin with Snyk on-prem.
-* **Organization**: the org to run Snyk test against \(similarly to the --org param in the CLI\).
+* **Organization**: the org to run Snyk test against (similarly to the --org param in the CLI).
 * **Additional parameters**: additional CLI snyk test params, you’d like to run the test with.
 * **Snyk Open Source vulnerabilities**: analyse the project for open source vulnerabilities through the CLI using the Snyk Open Source. Enabled by default.
 * **Snyk Code Security issues**: analyse the project for security vulnerabilities in your application code using Snyk Code. Enabled by default.
 * **Snyk Code Quality issues**: analyse the project for quality issues in your application code using Snyk Code. Disabled by default.
-
