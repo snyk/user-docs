@@ -45,7 +45,7 @@ In either case, you’ll see a list of any available projects on the Pivotal Web
 
 ![](<../../../.gitbook/assets/uuid-3ab9deaa-2fca-d4b8-854e-64348b9b9cee-en (1) (1) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (2) (1) (7).png>)
 
-As soon as you’ve added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Pivotal Web Services applications in your [project dashbard](https://app.snyk.io/projects). You’ll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to remediate.
+As soon as you’ve added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Pivotal Web Services applications in your [project dashbard](https://app.snyk.io/projects). You’ll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to fix.
 
 ![](../../../.gitbook/assets/uuid-790ddca1-dfb1-2b98-952a-bd5eeff94a50-en.png)
 

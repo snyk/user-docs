@@ -2,7 +2,7 @@
 
 Integrate the Snyk Security plugin with JetBrains’ continuous integration (CI) tool, TeamCity, to embed open source vulnerability scanning directly into your automated build chain. The TeamCity project builds as an additional build step to check for vulnerabilities as part of your build, and thereafter you can easily push your project to Snyk for continuous monitoring.
 
-By scanning as part of your build and then displaying those test results directly from the TeamCity UI, the Snyk plugin enables you to more quickly track, identify and remediate issues that risk your application’s security posture over time, as fixes are made available for vulnerabilities or new vulnerabilities are disclosed.
+By scanning as part of your build and then displaying those test results directly from the TeamCity UI, the Snyk plugin enables you to more quickly track, identify and fix issues that risk your application’s security posture over time, as fixes are made available for vulnerabilities or new vulnerabilities are disclosed.
 
 ### Supported languages and repos
 
@@ -30,9 +30,9 @@ Use the Snyk plugin with your TeamCity projects to test and monitor your code fo
 14. Otherwise, TeamCity continues to run the build to completion (success or failure) and Snyk activity ends.
 15. If the user configured the Monitor project on build option, Snyk now runs the `snyk monitor` command and proceeds with the remainder of the steps as described here.
 16. Snyk takes a snapshot of the project, analyzes the manifest file of your project to find its direct and transitive dependencies and tests your project against the Snyk vulnerability database for known vulnerabilities.
-17. Snyk pushes the snapshot, displaying the project details and the dependency hierarchy from the Snyk UI as well as vulnerability results and remediation advice.
+17. Snyk pushes the snapshot, displaying the project details and the dependency hierarchy from the Snyk UI as well as vulnerability results and fix advice.
 18. If the severity threshold was defined for a severity that is assigned to any vulnerability in your project, TeamCity breaks the build.
-19. Once the snapshot is pushed to the Snyk UI, Snyk continues to monitor your project as new vulnerabilities are disclosed. Based on your configurations, if vulnerabilities are found, Snyk notifies you via email or Slack so that you can take immediate remediation action.
+19. Once the snapshot is pushed to the Snyk UI, Snyk continues to monitor your project as new vulnerabilities are disclosed. Based on your configurations, if vulnerabilities are found, Snyk notifies you via email or Slack so that you can take immediate fix action.
 
 #### Open doc: [TeamCity integration: use Snyk in your build](teamcity-integration-use-snyk-in-your-build/)
 
@@ -49,7 +49,7 @@ Install or upgrade the Snyk Security plugin with these steps. Once complete, you
 1. Log in to your TeamCity instance to install the Snyk Security plugin. Configure the **Plugins list** to **Periodically check for plugin updates**, in order to ensure regular automatic upgrades in the background.
 2. Navigate to the [JetBrains Plugins Repository](https://plugins.jetbrains.com/plugin/12227-snyk-security), search for Snyk and from the **Get** dropdown list, select to install the plugin for your TeamCity installation.
 3. When the following prompt appears, click Install.
-4. When the installation ends, the **Administration Plugins List** loads, notifying the plugin has been uploaded. 
+4. When the installation ends, the **Administration Plugins List** loads, notifying the plugin has been uploaded.&#x20;
 5. Ensure the plugin is enabled.
 
 ![](../../../../.gitbook/assets/uuid-fe65f4bc-9578-016c-00dd-6ddb97d2ead7-en.png)

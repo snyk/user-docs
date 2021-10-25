@@ -4,7 +4,7 @@ Snyk's Azure Function Apps integration lets you monitor the deployed code of you
 
 For each test, Snyk will communicate directly with Azure to determine exactly what code is currently deployed and what dependencies are being used. Each dependency will in turn be tested against Snyk's vulnerability database to see if it contains any known vulnerabilities.
 
-If vulnerabilities are found, you will be alerted \(via email or Slack\) so that you can take immediate action.
+If vulnerabilities are found, you will be alerted (via email or Slack) so that you can take immediate action.
 
 In order to turn on the Azure Function Apps integration you'll need to:
 
@@ -16,11 +16,11 @@ In order to turn on the Azure Function Apps integration you'll need to:
 
 In order for Snyk to be able to monitor your deployed Azure Function apps, you'll first need to connect Snyk to your Azure account. You can do this by navigating to the [Integrations page](https://app.snyk.io/integrations), locating "Azure and clicking on "**Connect to Azure Functions**":
 
-![](../../../.gitbook/assets/image%20%2828%29.png)
+![](<../../../.gitbook/assets/image (28).png>)
 
 This will take you to a page where you'll be prompted to enter your Azure service principal credentials:
 
-![](../../../.gitbook/assets/image%20%2829%29.png)
+![](<../../../.gitbook/assets/image (29).png>)
 
 Instructions for how to generate and locate your Azure service principal credentials are below.
 
@@ -28,7 +28,7 @@ Instructions for how to generate and locate your Azure service principal credent
 
 To give Snyk access to your Azure account, you'll need a valid service principal.
 
-To create a service principal for use by Snyk, you can either use the [Azure Portal](https://portal.azure.com/) or the [Azure CLI 2.0](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
+To create a service principal for use by Snyk, you can either use the [Azure Portal](https://portal.azure.com) or the [Azure CLI 2.0](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
 
 After installing the Azure CLI 2.0, you should have the az command. Authenticate the CLI with your account using:
 
@@ -40,7 +40,7 @@ az ad sp create-for-rbac --name SpNameExample --role "Website Contributor"
 
 This would result in JSON output similar to the following, which contains the service principal name, password and tenant that you'll need for setting up Snyk:
 
-```text
+```
 {
 "appId": "f5f1ce7d-c247-42e6-91a4-ad1e7example",
 "displayName": "SpNameExample",
@@ -62,23 +62,23 @@ At any time after you've entered your Azure service principal, you can check on 
 
 The first is on your integration settings page, where you'll see your current integrations listed as well as their connection status.
 
-![](../../../.gitbook/assets/image%20%2825%29.png)
+![](<../../../.gitbook/assets/image (25).png>)
 
-You can also check the status directly on the Azure Functions integration settings page \(found by clicking "**Edit settings**" on the integration settings page shown above\). If you've entered credentials, you'll see a box indicating whether or not Snyk is able to correctly connect to Azure:
+You can also check the status directly on the Azure Functions integration settings page (found by clicking "**Edit settings**" on the integration settings page shown above). If you've entered credentials, you'll see a box indicating whether or not Snyk is able to correctly connect to Azure:
 
-![](../../../.gitbook/assets/image%20%2831%29.png)
+![](<../../../.gitbook/assets/image (31).png>)
 
 If you are unable to connect, please re-enter your account credentials to verify that they are correct:
 
-![](../../../.gitbook/assets/image%20%2827%29.png)
+![](<../../../.gitbook/assets/image (27).png>)
 
 ## **Disable the Azure Functions integration**
 
 If you decide to disable this integration for any reason, you can accomplish this from the Integrations page in your Settings.
 
-You need to find the specific integration you wish to deactivate in your list of integrations and click Edit settings. You are taken to a page that shows the current status of your integration, a place to update your credentials, specific to each integration \(credentials, API key, Service Principal, or connection details\), and a red box at the bottom to disconnect this integration, like in the example seen below:
+You need to find the specific integration you wish to deactivate in your list of integrations and click Edit settings. You are taken to a page that shows the current status of your integration, a place to update your credentials, specific to each integration (credentials, API key, Service Principal, or connection details), and a red box at the bottom to disconnect this integration, like in the example seen below:
 
-![](../../../.gitbook/assets/image%20%2826%29.png)
+![](<../../../.gitbook/assets/image (26).png>)
 
 If you choose to disconnect, your credentials will be removed from Snyk and any integration-specific projects we had been monitoring will be deactivated on Snyk.
 
@@ -90,17 +90,16 @@ Once you've successfully connected Snyk to your Azure account, you'll be able to
 
 In either case, you'll see a list of any available Function apps on the Azure account you connected. Select the ones you want to monitor and click the "**Add to Snyk**" button.
 
-**NOTE**  
+**NOTE**\
 We currently support importing only v2 functions. v1 functions will be ignored.
 
-![](../../../.gitbook/assets/image%20%2830%29.png)
+![](<../../../.gitbook/assets/image (30).png>)
 
-As soon as you've added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Azure functions in your [project dashboard](https://app.snyk.io/projects). You'll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to remediate:
+As soon as you've added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Azure functions in your [project dashboard](https://app.snyk.io/projects). You'll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to fix:
 
-![](../../../.gitbook/assets/image%20%2832%29.png)
+![](<../../../.gitbook/assets/image (32).png>)
 
 Snyk will now continuously monitor each of those functions for known vulnerabilities. You can add more functions at any time.
 
-**NOTE**  
+**NOTE**\
 for Node.js and .Net, dev dependencies will be ignored.
-

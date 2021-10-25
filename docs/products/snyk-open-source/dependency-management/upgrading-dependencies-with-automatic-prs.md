@@ -1,6 +1,6 @@
 # Upgrading dependencies with automatic PRs
 
-Once you have imported your preferred Git repositories, Snyk monitors those repos, regularly scanning them for vulnerability, license and dependency health issues. In addition to remediation advice, Snyk can then also automatically create pull requests (PRs) on your behalf in order to upgrade your dependencies based on the scan results.
+Once you have imported your preferred Git repositories, Snyk monitors those repos, regularly scanning them for vulnerability, license and dependency health issues. In addition to fix advice, Snyk can then also automatically create pull requests (PRs) on your behalf in order to upgrade your dependencies based on the scan results.
 
 Snyk currently supports this feature for npm, Yarn and Maven-Central projects through GitHub, GitHub Enterprise Server and BitBucket Cloud. For use with the Broker, your admin should first upgrade to v4.55.0 or later. See our docs for additional assistance when upgrading Broker.
 
@@ -25,7 +25,7 @@ Snyk currently supports this feature for npm, Yarn and Maven-Central projects th
 
 ## Upgrading dependencies with automatic PRs
 
-Once you have imported your preferred Git repositories, Snyk monitors those repos, regularly scanning them for vulnerability, license and dependency health issues. In addition to remediation advice, Snyk can then also automatically create pull requests (PRs) on your behalf in order to upgrade your dependencies based on the scan results.
+Once you have imported your preferred Git repositories, Snyk monitors those repos, regularly scanning them for vulnerability, license and dependency health issues. In addition to fix advice, Snyk can then also automatically create pull requests (PRs) on your behalf in order to upgrade your dependencies based on the scan results.
 
 Snyk currently supports this feature for npm, Yarn and Maven-Central projects through GitHub, GitHub Enterprise Server and BitBucket Cloud. For use with the Broker, your admin should first upgrade to v4.55.0 or later. See our docs for additional assistance when upgrading Broker.
 
@@ -51,9 +51,9 @@ Settings on the project level override the settings on the organization level. C
 **Steps:**
 
 1. Navigate to the organization for which you would like to enable automatic upgrade PRs and then click Projects.
-2. Navigate to the relevant project and click the Settings cog ![](../../../.gitbook/assets/cog_icon.png) 
-3. From the Settings area, click on the integration settings from the left panel menu.  **Note:** These settings only apply to integration for that one project. 
-4. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled. 
+2. Navigate to the relevant project and click the Settings cog ![](../../../.gitbook/assets/cog\_icon.png)&#x20;
+3. From the Settings area, click on the integration settings from the left panel menu.  **Note:** These settings only apply to integration for that one project.&#x20;
+4. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled.&#x20;
 5. From the options that appear:
    1. Snyk creates PRs up to a maximum of 10 open simultaneously - per repo. To limit this number further, select the maximum number of PRs from the dropdown list. For further information about this, read more about how it works.
    2. In the Dependencies to ignore field, enter the exact name of any dependencies that should not be handled as part of the automatic functionality. This field accepts only lower case letters.

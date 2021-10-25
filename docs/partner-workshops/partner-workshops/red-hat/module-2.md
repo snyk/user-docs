@@ -54,9 +54,8 @@ When we ran `snyk monitor` against our Dockerfile, we passed two parameters: `--
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/container-image-scan-results.png)
 
-To receive base image remediation advice, including major, minor and alternative upgrades as well as advice when you need to rebuild your image, integrate with your preferred Git repository and import the repo that contains the relevant Dockerfile. You also need to [add the Dockerfile to the image](https://support.snyk.io/hc/en-us/articles/360003916218-Adding-your-Dockerfile-and-test-your-base-image).
+To receive base image fix advice, including major, minor and alternative upgrades as well as advice when you need to rebuild your image, integrate with your preferred Git repository and import the repo that contains the relevant Dockerfile. You also need to [add the Dockerfile to the image](https://support.snyk.io/hc/en-us/articles/360003916218-Adding-your-Dockerfile-and-test-your-base-image).
 
 Once complete, you will see **recommendations for base image upgrade**.
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/base-image-recommend.png)
-

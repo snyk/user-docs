@@ -53,7 +53,7 @@ Using **snyk monitor** to expose results will provide information, without disru
 
 This next approach prevents the introduction of new vulnerabilities (sometimes known as "stopping the bleeding").
 
-After your teams understand the vulnerabilities in their applications, and develops a process for remediating them early in the development cycle, you can configure Snyk to fail your builds, to prevent introducing vulnerabilities into your applications..
+After your teams understand the vulnerabilities in their applications, and develops a process for fixing them early in the development cycle, you can configure Snyk to fail your builds, to prevent introducing vulnerabilities into your applications..
 
 Add **snyk test** to your build or enable the fail functionality to make Snyk fail your builds, providing the results output to the console. Your Devs or DevOps teams can use the results to decide whether to stop or continue the build.
 
@@ -257,7 +257,7 @@ Snyk can help:
 
 * When you run **snyk container test $IMAGE\_NAME**, Snyk looks for that image in your local daemon’s storage, and if it does not exist, does the equivalent of a **docker pull** to download it from your upstream registry.
 * For registry authentication, Snyk uses the credentials you already configured (with something like **docker login**)
-* You can specify **--file=Dockerfile** on the command line to link the image vulnerability results with the Dockerfile that built it, to receive inline remediation advice and alternate base image suggestions.
+* You can specify **--file=Dockerfile** on the command line to link the image vulnerability results with the Dockerfile that built it, to receive inline fix advice and alternate base image suggestions.
 
 **Running pipeline if a Docker daemon is not available**
 

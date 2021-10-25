@@ -66,7 +66,7 @@ In either case, you’ll see a list of any available projects on the Heroku acco
 
 ![](../../../.gitbook/assets/uuid-ad9e6940-96f8-4e22-787a-03d3e7cf99dd-en.png)
 
-As soon as you’ve added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Heroku applications in your [project dashboard](https://app.snyk.io/projects). You’ll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to remediate.
+As soon as you’ve added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Heroku applications in your [project dashboard](https://app.snyk.io/projects). You’ll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to fix.
 
 ![](../../../.gitbook/assets/uuid-702795f8-5943-3dba-06a0-095d6bdc6f0c-en.png)
 

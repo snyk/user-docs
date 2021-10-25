@@ -1,6 +1,6 @@
 # GitHub integration
 
-Snyk's GitHub integration allows you to continuously perform security scanning across all the integrated repositories, detect vulnerabilities in your open source components and provide automated remediation and upgrade fixes.
+Snyk's GitHub integration allows you to continuously perform security scanning across all the integrated repositories, detect vulnerabilities in your open source components and provide automated fixes.
 
 Please note, GitHub integrates per user rather than per org. Setting up this integration means it will be used for all organizations associated with your account.
 

@@ -1,11 +1,11 @@
 # Reports overview
 
 {% hint style="info" %}
-**Feature availability**  
+**Feature availability**\
 This feature is available with Enterprise and Business plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-The **Reports** area offers data and analytics across all of your projects, displaying historical and aggregated data about projects, issues, dependencies, and licenses. Data in each of the four tabs \(seen below\) is displayed based on the organization in which you are working, and you can filter this data with different parameters depending on the tab you're viewing.
+The **Reports** area offers data and analytics across all of your projects, displaying historical and aggregated data about projects, issues, dependencies, and licenses. Data in each of the four tabs (seen below) is displayed based on the organization in which you are working, and you can filter this data with different parameters depending on the tab you're viewing.
 
 Additionally, if your account is managed with groups, aggregated data for all of your organizations is displayed when you navigate to **Reports** from the **Group** level.
 
@@ -24,8 +24,8 @@ Additionally, at the Organization level see [General actions](https://support.sn
 
 The Reports area comprises these tabs:
 
-* [Summary](https://support.snyk.io/hc/articles/360004002578#UUID-3281a06e-cd6f-ef30-22c1-860837cbcae4)—the main dashboard displays a birds-eye view of all of your issues \(vulnerabilities and licenses\), across all of your projects.
-* [Issues](https://support.snyk.io/hc/articles/360004002598#UUID-2cdd9e20-b131-4380-0127-bce3db500b5c)—all issues \(vulnerabilities and licenses\) across all of your projects, including their severity, available remediation if any exists, and more.
+* [Summary](https://support.snyk.io/hc/articles/360004002578#UUID-3281a06e-cd6f-ef30-22c1-860837cbcae4)—the main dashboard displays a birds-eye view of all of your issues (vulnerabilities and licenses), across all of your projects.
+* [Issues](https://support.snyk.io/hc/articles/360004002598#UUID-2cdd9e20-b131-4380-0127-bce3db500b5c)—all issues (vulnerabilities and licenses) across all of your projects, including their severity, any available fixes, and more.
 * [Dependencies](https://support.snyk.io/hc/articles/360004002618#UUID-be62627c-de43-9956-c727-344218c67eb4)—the package dependencies in your project and their health status.
 * [Licenses](https://support.snyk.io/hc/articles/360004002638#UUID-ad5d4f17-3b3e-0d6a-1875-3a510956e1f6)—the licenses in all of your projects and their status.
 
@@ -38,4 +38,3 @@ There may be a delay from the time a project is tested and until that data appea
 {% hint style="info" %}
 Read-only projects and the respective results will not appear in the Reports area.
 {% endhint %}
-

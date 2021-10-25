@@ -30,4 +30,4 @@ You can now also filter to view only those projects:
 
 Once repositories and images are imported, a confirmation appears in green at the top of the screen. Docker Hub files are indicated with a unique icon ![](../../../../.gitbook/assets/docker-hub-logo.png) .
 
-Docker Hub integration works similar to our other integrations. To continue to monitor, remediate and manage your projects, see the relevant pages in our docs.
+Docker Hub integration works similar to our other integrations. To continue to monitor, fix and manage your projects, see the relevant pages in our docs.

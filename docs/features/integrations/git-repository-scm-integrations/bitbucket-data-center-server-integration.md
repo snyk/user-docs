@@ -1,6 +1,6 @@
 # Bitbucket Data Center/Server integration
 
-Snyk's Bitbucket Data Center / Server integration allows you to continuously perform security scanning across all the integrated repositories, detect vulnerabilities in your open source components, and use automated remediation. This integration supports Bitbucket Data Center / Server versions 4.0 and above.
+Snyk's Bitbucket Data Center / Server integration allows you to continuously perform security scanning across all the integrated repositories, detect vulnerabilities in your open source components, and use automated fixing. This integration supports Bitbucket Data Center / Server versions 4.0 and above.
 
 > **Feature availability**\
 > This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
@@ -11,9 +11,9 @@ Snyk's Bitbucket Data Center / Server integration allows you to continuously per
 > Make sure the newly created user has **Admin** permissions to all the repositories you need to monitor with Snyk.
 
 1. To give Snyk access to your Bitbucket DC/Server account, set up up a dedicated service account in Bitbucket DC/Server, with admin permissions. Visit [Bitbucket Server documentation ](https://confluence.atlassian.com/bitbucketserver/users-and-groups-776640439.html#Usersandgroups-Creatingauser)to learn more about creating users.
-2. In Snyk, go to the **Integrations** page and click on **Bitbucket Server** card: 
-3. Enter your Bitbucket DC/Server URL, and the username and password for the service account you created: 
-4. Click **Save**. Snyk connects to your Bitbucket DC/Server instance. When the connection succeeds, the following indications appear: 
+2. In Snyk, go to the **Integrations** page and click on **Bitbucket Server** card:&#x20;
+3. Enter your Bitbucket DC/Server URL, and the username and password for the service account you created:&#x20;
+4. Click **Save**. Snyk connects to your Bitbucket DC/Server instance. When the connection succeeds, the following indications appear:&#x20;
 
 ![](../../../.gitbook/assets/333.png)
 
@@ -48,7 +48,7 @@ Here is an example of a fix pull request opened by Snyk:
 
 To review and adjust the automatic fix pull request settings:
 
-Click on settings![cog_icon.png](../../../.gitbook/assets/cog_icon.png) > **Integrations**. 2. Select **Edit Settings** for Bitbucket Server 3. Navigate to **Automatic fix pull requests**:
+Click on settings![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Integrations**. 2. Select **Edit Settings** for Bitbucket Server 3. Navigate to **Automatic fix pull requests**:
 
 ![](<../../../.gitbook/assets/mceclip4 (1) (2) (6) (7) (3) (25).png>)
 
@@ -62,8 +62,8 @@ This is how Snyk pull request build check appears in the **Pull Request** page i
 
 To review and adjust the pull request tests settings:
 
-1. Click on settings![cog_icon.png](../../../.gitbook/assets/cog_icon.png) > **Integrations**. 
-2. Select **Edit Settings** for Bitbucket Server. 
+1. Click on settings![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Integrations**.&#x20;
+2. Select **Edit Settings** for Bitbucket Server.&#x20;
 3. Navigate to **Default Snyk test for pull requests**:
 
 ![](../../../.gitbook/assets/999.png)
@@ -85,7 +85,7 @@ For Snyk to perform the required operations on monitored repositories (such as r
 
 To disable this integration:
 
-Click on settings![cog_icon.png](../../../.gitbook/assets/cog_icon.png) > **Integrations**. 2. Find the specific integration to deactivate in your list of integrations, and click Edit settings. 3. A page appears showing the current status of your integration and a place to update your credentials, specific to each integration (credentials, API key, Service Principal, or connection details): 4. Click **Disconnect**.
+Click on settings![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Integrations**. 2. Find the specific integration to deactivate in your list of integrations, and click Edit settings. 3. A page appears showing the current status of your integration and a place to update your credentials, specific to each integration (credentials, API key, Service Principal, or connection details): 4. Click **Disconnect**.
 
 ![](../../../.gitbook/assets/101010.png)
 
