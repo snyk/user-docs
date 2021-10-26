@@ -3,13 +3,13 @@
 ## Licenses overview
 
 {% hint style="info" %}
-**Feature availability**  
+**Feature availability**\
 Licenses are available to all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 Every time you test your projects either with the CLI or from our app, your projects are scanned for not only vulnerabilities but also for license compliance. This includes all of your direct and indirect dependencies. Snyk scans your manifest files, and then checks for license issues against Snyk’s known licenses.
 
-In order to enable customers to get started with license compliance faster, we’ve created an out of the box default policy. The default policy is a baseline which tries to answer the requirements of multiple types of applications \(SaaS, distributed, etc.\), and may be used as a starting point to calibrate additional license policies. The default policy doesn’t endorse or criticize any license.  
+In order to enable customers to get started with license compliance faster, we’ve created an out of the box default policy. The default policy is a baseline which tries to answer the requirements of multiple types of applications (SaaS, distributed, etc.), and may be used as a starting point to calibrate additional license policies. The default policy doesn’t endorse or criticize any license.\
 Different customers may have different needs and tolerance for different license types. We encourage you to make sure you made the needed changes or created new policies that fit your company’s specific requirements.
 
 By [default](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/shared-policies-overview) we determine the severity of licenses in the following way:
@@ -23,11 +23,11 @@ In case you notice a license with the wrong license assigned to it, you can reac
 
 To facilitate onboarding of your developers, we recommend that your teams check these defaults, update severities and add instructions per license type based on the policies outlined specifically by your Legal teams. Once updated, when Snyk detects a license violation it displays the violation for all users in the organization from our UI project area, or from the CLI Snyk test results, in the same way as a security vulnerability, and including the severity and instructions you configured.
 
-![](../../../.gitbook/assets/image%20%282%29.png)
+![](<../../../.gitbook/assets/image (2).png>)
 
 ### **An inventory of your licenses**
 
-Within the **Reports** area you can view an inventory of all of your licenses across all your projects. Snyk also lists packages that have dual licenses and multiple licenses. See [here](https://support.snyk.io/hc/articles/360003557857#UUID-627d8387-74c4-9228-477b-263417eb2a61) for more information.
+Within the **Reports** area you can view an inventory of all of your licenses across all your projects. Snyk also lists packages that have dual licenses and multiple licenses. See [Reports: Licenses tab](reports-licenses-tab.md) for more information.
 
 ### **Supported package managers**
 
@@ -39,4 +39,3 @@ Within the **Reports** area you can view an inventory of all of your licenses ac
 * Go
 * Composer
 * Cocoapods
-
