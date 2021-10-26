@@ -142,11 +142,11 @@ Snyk also offers many integrations into developer tooling. These integrations wi
 
 ![](<../../../.gitbook/assets/image (12).png>)
 
-Once you've completed installation, get started testing and remediating your vulnerabilities with our [Getting started](https://support.snyk.io/hc/articles/360003812458#UUID-19fc37f2-b686-11ed-b85c-4789e90c8dfc) guide and [our full list](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0) of our CLI commands, options and arguments.
+Once you've completed installation, get started testing and fixing your vulnerabilities with our [Getting started](https://support.snyk.io/hc/articles/360003812458#UUID-19fc37f2-b686-11ed-b85c-4789e90c8dfc) guide and [our full list](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0) of our CLI commands, options and arguments.
 
 ![](../../../.gitbook/assets/ide.svg)
 
- 
+&#x20;
 
 ***
 
@@ -246,7 +246,7 @@ You can authorize Snyk CLI in your CI/CD programmatically:
 
 Use one of our integrations to stay secure.
 
-Snyk is really powerful when you are continuously scanning and monitoring your projects for vulnerabilities.
+Snyk is really powerful when you are continuously scanning and monitoring your projects for vulnerabilities.&#x20;
 
 #### Add Snyk to your CI/CD
 

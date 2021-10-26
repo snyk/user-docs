@@ -8,7 +8,6 @@ Find the CI/CD result from your list of projects. You can use the filters to sea
 
 ## Snyk CI detailed results
 
-The detailed view provides the same details for our software artifacts but for different times in the SDLC. In our example, we captured the scan results during our CI pipeline, as indicated by the source. Since we choose to monitor the CI results, Snyk will provide notifications when remediation is available.
+The detailed view provides the same details for our software artifacts but for different times in the SDLC. In our example, we captured the scan results during our CI pipeline, as indicated by the source. Since we choose to monitor the CI results, Snyk will provide notifications when fixes are available.
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/artifact_ci_cd_review.png)
-
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/artifact\_ci\_cd\_review.png)
