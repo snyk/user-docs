@@ -26,7 +26,7 @@ Vulnerabilities that are not exploitable are unlikely to pose a security threat 
 {% hint style="info" %}
 Currently, this feature is only available to **Java** (Gradle and Maven) ecosystem, when using **GitHub** as the source, and when **Snyk Code** is enabled.
 
-To enable this feature, within Snyk, go to **Settings → Snyk Preview **and enable this feature.
+To enable this feature, within Snyk, go to **Settings (**⚙️**) → Snyk Preview **and enable this feature.
 {% endhint %}
 
 In the context of your application, the Triage Assistant evaluates the vulnerable conditions, which helps you determine the exploitability of your application.
@@ -37,8 +37,13 @@ In the context of your application, the Triage Assistant evaluates the vulnerabl
 
 Jackson Vulnerable Conditions:
 
-* **Vulnerable version**: The jackson package (**com.fasterxml.jackson.core:jackson-databind vulnerabilities**) should be in a specific version, that we know is vulnerable.
+* **Vulnerable version**: The [Jackson package](https://snyk.io/vuln/maven:com.fasterxml.jackson.core%3Ajackson-databind) (**com.fasterxml.jackson.core:jackson-databind vulnerabilities**) should be in a specific version, that we know is vulnerable.
 * **Specific setting**: A specific setting, or functionality need to be enabled, in our case it’s the [**Polymorphic Type Handling**](https://github.com/FasterXML/jackson-docs/wiki/JacksonPolymorphicDeserialization) feature.&#x20;
+  * You can check if this setting is enabled in your code by looking for one of the following:
+    * `@JsonSubTypes` annotation was used.
+    * &#x20;`@JsonTypeInfo` annotation was used on a Class.
+    * &#x20;`enableDefaultTyping()` is used to enable Polymorphic Typing .
+    * `enableDefaultTypingAsProperty()` is used to enable Polymorphic Typing.
 * **User interactivity**: The application needs to accept JSON input from the user.&#x20;
 * **Specific gadget**: A “gadget”, which is a class or function, needs to be available within the executing scope of the application.
 
