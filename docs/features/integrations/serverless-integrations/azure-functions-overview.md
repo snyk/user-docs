@@ -14,9 +14,11 @@ In order to turn on the Azure Function Apps integration you'll need to:
 
 ## **Connect Snyk to Azure Functions**
 
-In order for Snyk to be able to monitor your deployed Azure Function apps, you'll first need to connect Snyk to your Azure account. You can do this by navigating to the [Integrations page](https://app.snyk.io/integrations), locating "Azure and clicking on "**Connect to Azure Functions**":
+For Snyk to monitor your deployed Azure Function apps, you must connect Snyk to your Azure account.&#x20;
 
-![](<../../../.gitbook/assets/image (28).png>)
+To do this, in [your Integrations page](https://app.snyk.io/integrations), navigate to **Serverless **and click **Azure Functions**:
+
+![](<../../../.gitbook/assets/Screenshot 2021-10-27 at 09.36.33.png>)
 
 This will take you to a page where you'll be prompted to enter your Azure service principal credentials:
 
