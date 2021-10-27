@@ -66,6 +66,10 @@ To test your project for vulnerabilities, run:
 $ snyk unmanaged test
 ```
 
+{% hint style="warning" %}
+If you scan a Linux project on Windows, make sure the repository is cloned with Linux line endings. See the [Known Issues](snyk-for-c-c++.md#known-issues) section for more details.
+{% endhint %}
+
 #### Displaying dependencies
 
 To display dependencies, use the `--print-deps` command:
@@ -242,13 +246,23 @@ Automated regular testing and re-scanning from the Snyk App is not currently sup
 
 When scanning a directory, all files that are in a hidden directory (such as **.conan** or **.git**) are ignored. Dependencies stored in such directories will not be detected.
 
+**Scanning on Windows**
+
+Many open source projects in git use Unix line endings. By default, git on Windows converts Unix line endings to Windows line endings and only converts them back for the actual commits. Our database contains source code signatures with the original line endings (as defined in the individual projects), so when you scan on Windows, the signatures generated for the files with Windows line endings are different than the signatures in our database. In such case, it is very likely no dependencies will be found.
+
+To scan a project with Unix line endings on Windows, disable git line endings conversion. To configure this globally, run:
+
+```shell
+git config --global core.autocrlf false
+```
+
 ### Frequently asked questions
 
 #### **Is my source code sent to Snyk servers?**
 
 No. The files are converted to a list of hashes before they are sent for scanning.
 
-#### **Why Snyk did not find any dependencies?**
+#### **Why did Snyk not find any dependencies?**
 
 We store the official releases of many of open source components in our database but it is possible that the source code you scanned is not there or is just simply not found. Let us know and we can help you find out what happened and potentially improve our scanning algorithms.
 
