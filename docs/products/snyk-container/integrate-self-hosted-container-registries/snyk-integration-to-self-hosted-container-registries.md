@@ -5,7 +5,7 @@
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-Snyk can integrate to private container registries you host (currently in open beta), and help you to better secure container images in those registries.
+Snyk can integrate to private container registries you host, and help you to better secure container images in those registries.
 
 {% hint style="warning" %}
 For this feature to work, you need two separate containers deployed in your infrastructure, creating two separate services.
