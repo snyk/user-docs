@@ -9,10 +9,10 @@ The following describes how to use Snyk to scan your .NET projects:
 Features might not be available, depending on your subscription plan.
 {% endhint %}
 
-| Package managers/Features                                                                        | CLI support                                            | Git support | License scanning | Fixing | Runtime monitoring |   |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------ | ----------- | ---------------- | ------ | ------------------ | - |
-| ![i\_icon\_nuget.png](../../../.gitbook/assets/uuid-b997ca27-61ff-f00b-941c-16bf3aa4a0e0-en.png) | [NuGet](https://www.nuget.org)                         | ✔︎          | ✔︎               | ✔︎     |                    |   |
-| ![i\_icon\_paket.png](../../../.gitbook/assets/uuid-d8e44fe4-c0ea-e3ea-de3b-1e15e4a6b391-en.png) | [Paket](https://fsprojects.github.io/Paket/index.html) | ✔︎          |                  | ✔︎     |                    |   |
+| Package managers / Features                            | CLI support | Git support | License scanning | Fixing | Runtime monitoring |
+| ------------------------------------------------------ | ----------- | ----------- | ---------------- | ------ | ------------------ |
+| [NuGet](https://www.nuget.org)                         | ✔︎          | ✔︎          | ✔︎               | ✔︎     |                    |
+| [Paket](https://fsprojects.github.io/Paket/index.html) | ✔︎          | ✔︎          |                  | ✔︎     |                    |
 
 ## **How it works**
 
