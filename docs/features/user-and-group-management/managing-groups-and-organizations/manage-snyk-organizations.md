@@ -13,7 +13,7 @@ You can have an unlimited number of organizations on Snyk. Each organization can
 
 To create a new organization, choose the ‘Create’ link in the drop-down in the top navigation. You can then name the organization and start a trial.
 
-![](<../../../.gitbook/assets/uuid-560a73f5-8861-99db-9d4b-8cdae69d4b72-en (1).png>)
+![](<../../../.gitbook/assets/Screen Shot 2021-10-28 at 9.57.47 AM.png>)
 
 ### Delete an organization
 
