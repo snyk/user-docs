@@ -1,6 +1,8 @@
 # Snyk User Documentation
 
-[<button style="font-style:bold;color:white;background-color:#188b8b;padding:6px;">Sign up for free</button>](https://snyk.io/login?cta=sign-up&loc=nav&page=support_docs_page) 
+{% hint style="success" %}
+<mark style="color:purple;">****</mark>[<mark style="color:purple;">**Sign up to use Snyk for free**</mark>](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)<mark style="color:purple;">**!**</mark>
+{% endhint %}
 
 1. After signing up, connect to your project
 2. Run tests against your project
@@ -15,7 +17,7 @@
   * [Snyk Code](products/snyk-code/)
   * [Snyk Container](products/snyk-container/)
   * [Snyk Infrastructure as Code](products/snyk-infrastructure-as-code/)
-* [Snyk CLI](features/snyk-cli/): learn about the Snyk Command-Line interface&#x20;
+* [Snyk CLI](features/snyk-cli/): learn about the Snyk Command-Line interface
 * [Integrations](features/integrations/): information to integrate Snyk into your application development cycle
 
 {% hint style="info" %}
