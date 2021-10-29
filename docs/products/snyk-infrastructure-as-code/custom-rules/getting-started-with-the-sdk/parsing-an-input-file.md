@@ -2,12 +2,12 @@
 
 It can be difficult to understand the internal representation of your input files as you write your Rego code. As we will see when we learn [how to write a rule](writing-a-rule.md),  the input value is a JSON-like object but the input files could also be YAML or Terraform. To help understand how these are translated into JSON we have provided a `parse` command.
 
-You will need an IaC file to use as an input file. This input file can also be used when [testing the rules](testing-a-rule.md).
+You will need an IaC file to use as an input file. This input file can also be used when [testing the rules](testing-a-rule.md), where we parse your files into JSON by default.
 
-For example, the following Terraform file:
+Take, for example, the following Terraform file:
 
 {% code title="example.tf" %}
-```text
+```
 resource "aws_redshift_cluster" "example" {
   cluster_identifier = "tf-redshift-cluster"
   database_name      = "mydb"
@@ -21,13 +21,13 @@ resource "aws_redshift_cluster" "example" {
 
 To get the equivalent JSON format, run the parse command:
 
-```text
-snyk-iac-rules parse example.tf
+```
+snyk-iac-rules parse example.tf --format hcl2
 ```
 
 This prints out the JSON, which you can use as guidance for writing your rules:
 
-```text
+```
 {
 	"resource": {
 		"aws_redshift_cluster": {
@@ -44,9 +44,8 @@ This prints out the JSON, which you can use as guidance for writing your rules:
 }
 ```
 
-In Rego, accessing the `node_type` would look like: 
+In Rego, accessing the `node_type` would look like:&#x20;
 
-```text
+```
 input.resource.aws_redshift_cluster.example.node_type
 ```
-

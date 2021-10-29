@@ -15,11 +15,7 @@ Rules are written in Rego. When you are writing Rego, you do two things:
 1. Write **rules** that make policy decisions. A rule is a conditional assignment.
 2. Organise rules into **policies**. A policy is a set of rules with a hierarchical name
 
-A Rego decision policy is a JSON document. Rego values are JSON values plus Sets.
-
-{% hint style="info" %}
-To learn more about the Policy Language, please visit the official [OPA Policy Language Documentation Page](https://www.openpolicyagent.org/docs/latest/policy-language/).
-{% endhint %}
+A Rego decision policy is a JSON document. Rego values are JSON values plus Sets. To learn more about the Policy Language, please visit the official [OPA Policy Language Documentation Page](https://www.openpolicyagent.org/docs/latest/policy-language/).
 
 {% hint style="info" %}
 You can also use the [OPA Playground](https://play.openpolicyagent.org) to try out Rego, or run examples of this guide.

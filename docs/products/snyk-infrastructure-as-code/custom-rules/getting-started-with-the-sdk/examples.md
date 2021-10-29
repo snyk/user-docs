@@ -14,7 +14,6 @@ resource "aws_redshift_cluster" "denied" {
   cluster_identifier = "tf-redshift-cluster"
   node_type          = "dc1.large"
   tags = {
-    description = "a tag that describes something"
   }
 }
 ```
@@ -40,7 +39,7 @@ deny[msg] {
         "publicId": "CUSTOM-RULE-1",
         "title": "Missing an owner from tag",
         "severity": "medium",
-        "msg": sprintf("input.resource.aws_redshift_cluster[%s]]", [name]),
+        "msg": sprintf("input.resource.aws_redshift_cluster[%s].tags", [name]),
         "issue": "",
         "impact": "",
         "remediation": "",
@@ -68,19 +67,21 @@ import data.lib
 import data.lib.testing
 
 test_CUSTOM_RULE_1 {
-		# array containing test cases where the rule is allowed
-		allowed_test_cases := []
+	# array containing test cases where the rule is allowed
+	allowed_test_cases := [{
+		"want_msgs": [],
+		"fixture": "allowed.tf",
+	}]
 
-		# array containing cases where the rule is denied
-		denied_test_cases := [{
-			"want_msgs": ["input.resource.aws_redshift_cluster[denied]"],
-			"fixture": "denied.tf",
-		}]
+	# array containing cases where the rule is denied
+	denied_test_cases := [{
+		"want_msgs": ["input.resource.aws_redshift_cluster[denied].tags"],
+		"fixture": "denied.tf",
+	}]
 
-		test_cases := array.concat(allowed_test_cases, denied_test_cases)
-    		testing.evaluate_test_cases("CUSTOM-RULE-1", "./rules/CUSTOM-RULE-1/fixtures", test_cases)
+	test_cases := array.concat(allowed_test_cases, denied_test_cases)
+	testing.evaluate_test_cases("CUSTOM-RULE-1", "./rules/CUSTOM-RULE-1/fixtures", test_cases)
 }
-
 ```
 {% endcode %}
 
@@ -100,7 +101,7 @@ resource "aws_redshift_cluster" "denied" {
   cluster_identifier = "tf-redshift-cluster"
   node_type          = "dc1.large"
   tags = {
-    owner = "team-123@gmail.com"
+    owner = "team-123"
   }
 }
 ```
@@ -127,7 +128,6 @@ aws_redshift_cluster_tags_present(resource) {
 deny[msg] {
     resource := input.resource.aws_redshift_cluster[name]
     not aws_redshift_cluster_tags_present(resource)
-
     msg := {
         "publicId": "CUSTOM-RULE-2",
         "title": "Missing a description and an owner from the tag",
@@ -146,7 +146,7 @@ deny[msg] {
 We recommend always validating that your rule is correct by [updating and running the unit tests](testing-a-rule.md).
 {% endhint %}
 
-The test for this rule will look the same as the one for `CUSTOM-RULE-1`, but the name of the test and the first two arguments passed to the `testing.evaluatetestcases` function will differ:
+The test for this rule will look the same as the one for `CUSTOM-RULE-1`, but the name of the test and the first two arguments passed to the `testing.evaluate_test_cases` function will differ:
 
 {% code title="rules/CUSTOM-RULE-2/main_test.rego" %}
 ```
@@ -156,19 +156,19 @@ import data.lib
 import data.lib.testing
 
 test_CUSTOM_RULE_2 {
-		# array containing test cases where the rule is allowed
-		allowed_test_cases := []
-
-		# array containing cases where the rule is denied
-		denied_test_cases := [{
-			"want_msgs": ["input.resource.aws_redshift_cluster[denied]"],
-			"fixture": "denied.tf",
-		}]
-
-		test_cases := array.concat(allowed_test_cases, denied_test_cases)
-    testing.evaluate_test_cases("CUSTOM-RULE-2", "./rules/CUSTOM-RULE-2/fixtures", test_cases)
+	# array containing test cases where the rule is allowed
+	allowed_test_cases := [{
+		"want_msgs": [],
+		"fixture": "allowed.tf",
+	}]
+	# array containing cases where the rule is denied
+	denied_test_cases := [{
+		"want_msgs": ["input.resource.aws_redshift_cluster[denied].tags"],
+		"fixture": "denied.tf",
+	}]
+	test_cases := array.concat(allowed_test_cases, denied_test_cases)
+	testing.evaluate_test_cases("CUSTOM-RULE-2", "./rules/CUSTOM-RULE-2/fixtures", test_cases)
 }
-
 ```
 {% endcode %}
 
@@ -183,19 +183,19 @@ Let’s update the example in a new rule `CUSTOM-RULE-3`, to deny all cases that
 
 For this, we will use two new fixture files, one for each case:
 
-{% code title="rules/CUSTOM-RULE-3/fixtures/denied1.json" %}
+{% code title="rules/CUSTOM-RULE-3/fixtures/denied1.tf" %}
 ```
 resource "aws_redshift_cluster" "denied1" {
   cluster_identifier = "tf-redshift-cluster"
   node_type          = "dc1.large"
   tags = {
-    owner = "team-123@gmail.com"
+    owner = "team-123@corp-domain.com"
   }
 }
 ```
 {% endcode %}
 
-{% code title="rules/CUSTOM-RULE-3/fixtures/denied2.json" %}
+{% code title="rules/CUSTOM-RULE-3/fixtures/denied2.tg" %}
 ```
 resource "aws_redshift_cluster" "denied2" {
   cluster_identifier = "tf-redshift-cluster"
@@ -218,6 +218,7 @@ package rules
 aws_redshift_cluster_tags_missing(resource) {
     not resource.tags.owner
 }
+
 aws_redshift_cluster_tags_missing(resource) {
     not resource.tags.description
 }
@@ -225,7 +226,6 @@ aws_redshift_cluster_tags_missing(resource) {
 deny[msg] {
     resource := input.resource.aws_redshift_cluster[name]
     aws_redshift_cluster_tags_missing(resource)
-
     msg := {
         "publicId": "CUSTOM-RULE-3",
         "title": "Missing a description or an owner from the tag",
@@ -256,20 +256,21 @@ import data.lib
 import data.lib.testing
 
 test_CUSTOM_RULE_3 {
-		# array containing test cases where the rule is allowed
-		allowed_test_cases := []
-
-		# array containing cases where the rule is denied
-		denied_test_cases := [{
-			"want_msgs": ["input.resource.aws_redshift_cluster[denied1]"],
-			"fixture": "denied1.tf",
-		},{
-			"want_msgs": ["input.resource.aws_redshift_cluster[denied2]"],
-			"fixture": "denied2.tf",
-		}]
-
-		test_cases := array.concat(allowed_test_cases, denied_test_cases)
-    		testing.evaluate_test_cases("CUSTOM-RULE-3", "./rules/CUSTOM-RULE-3/fixtures", test_cases)
+	# array containing test cases where the rule is allowed
+	allowed_test_cases := [{
+		"want_msgs": [],
+		"fixture": "allowed.tf",
+	}]
+	# array containing cases where the rule is denied
+	denied_test_cases := [{
+		"want_msgs": ["input.resource.aws_redshift_cluster[denied1].tags"],
+		"fixture": "denied1.tf",
+	},{
+		"want_msgs": ["input.resource.aws_redshift_cluster[denied2].tags"],
+		"fixture": "denied2.tf",
+	}]
+	test_cases := array.concat(allowed_test_cases, denied_test_cases)
+	testing.evaluate_test_cases("CUSTOM-RULE-3", "./rules/CUSTOM-RULE-3/fixtures", test_cases)
 }
 ```
 {% endcode %}
@@ -289,6 +290,7 @@ package rules
 aws_redshift_cluster_tags_missing(resource) {
     not resource.tags.owner
 }
+
 aws_redshift_cluster_tags_missing(resource) {
     not resource.tags.description
 }
@@ -300,7 +302,6 @@ aws_redshift_cluster_tags_missing(resource) {
 deny[msg] {
     resource := input.resource.aws_redshift_cluster[name]
     aws_redshift_cluster_tags_missing(resource)
-
     msg := {
         "publicId": "CUSTOM-RULE-4",
         "title": "Missing a description and an owner from tag, or owner tag does not comply with email requirements",
@@ -351,7 +352,7 @@ checkTags(resource){
 }
 
 checkTags(resource){
- count(resource.tags) == 0
+    count(resource.tags) == 0
 }
 
 deny[msg] {
@@ -378,18 +379,16 @@ To convert this to an XOR we can use an `else` rule:
 ```
 package rules
 
-package play
-
 checkUserTag(resource){
     not resource.tags.email
 }
 
 checkUserTag(resource){
-    resource.tags.description
+    resource.tags.serviceDescription
 }
 
 checkServiceTag(resource){
-    not resource.tags.description
+    not resource.tags.serviceDescription
 }
 
 checkServiceTag(resource){
@@ -397,7 +396,7 @@ checkServiceTag(resource){
 }
 
 checkTags(resource){
- count(resource.tags) == 0
+	count(resource.tags) == 0
 }
 
 checkTags(resource) {
@@ -410,12 +409,11 @@ checkTags(resource) {
 
 deny[msg] {
     resource := input.resource.aws_redshift_cluster[name]
-      checkTags(resource)
-
+	checkTags(resource)
     msg := {
         "publicId": "CUSTOM-RULE-5",
-        "title": "Complex rule",
-        "severity": "low",
+        "title": "Missing the right tags from for a resource of type user or service",
+        "severity": "medium",
         "msg": sprintf("input.resource.aws_redshift_cluster[%v].tags", [name]),
         "issue": "",
         "impact": "",

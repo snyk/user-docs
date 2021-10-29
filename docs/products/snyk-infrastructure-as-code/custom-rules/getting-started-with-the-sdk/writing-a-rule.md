@@ -11,11 +11,15 @@ There are two options to get started:
     ```
 
     This generates the scaffolding for the rule. For more details, read the [documentation about the template command](../sdk-reference.md#template-options).
-2. Create a Rego policy from scratch and match the expected file and folder structure on your own (**Note**: you will have to write your own Rego testing framework if you don't use the `template`: command)\
+2. Create a Rego policy from scratch and match the expected file and folder structure on your own:\
    `rules `\
    `└── my_rule `\
    `         ├── main.rego  `\
    `        └── main_test.rego`
+
+{% hint style="info" %}
+You will have to write your own Rego testing framework if you don't use the `template`command.
+{% endhint %}
 
 ### Structure of the rule
 
@@ -26,25 +30,27 @@ In Rego, you can write statements that allow or deny a request, such as:\
 If the **`template`** command was used to generate the rules, then the default entry point is **`rules/deny`**. To override it and use a different name than `deny`, check the section [Bundling Rules](bundling-rules.md).
 {% endhint %}
 
-This is what a generated skeleton of a deny rule looks like when we run `snyk-iac-rules `template` --rule my_rule`:
+This is what a generated skeleton of a deny rule looks like when we run `snyk-iac-rules template --rule my_rule`:
 
 {% code title="rules/my_rule/main.rego" %}
 ```
 package rules
 
 deny[msg] {
-    resource := input.resource.test[name]
-    resource.todo
-    msg := {
-        "publicId": "my_rule",
-        "title": "Default title",
-        "severity": "low",
-        "msg": sprintf("input.resource.test[%s].todo", [name]),
-        "issue": "",
-        "impact": "",
-        "remediation": "",
-        "references": [],
-    }
+	resource := input.resource.test[name]
+	resource.todo
+	msg := {
+		# Mandatory fields
+		"publicId": "new-rule",
+		"title": "Default title",
+		"severity": "low",
+		"msg": sprintf("input.resource.test[%s].todo", [name]),
+		# Optional fields
+		"issue": "",
+		"impact": "",
+		"remediation": "",
+		"references": [],
+	}
 }
 ```
 {% endcode %}
@@ -58,7 +64,7 @@ The attributes are:
 * **publicId:** a naming convention unique to yourselves, such as COMPANY-001. **This should not contain/start with “SNYK-”** to differentiate from the internal Snyk rules.
 * **title:** a short title that should summarise the issue.
 * **severity:** this can be one of **low/medium/high/critical.**
-* **msg:** we recommend only changing the resource name and property e.g. `aws_s3_bucket[%s].tags` to match your example. The function `sprintf` is provided by Rego and enables us to provide a dynamic error message explaining exactly where the issue was found.
+* **msg:** we recommend only changing the resource name and property e.g. `input.aws_s3_bucket[%s].tags` to match your example. The function `sprintf` is provided by Rego and enables us to provide a dynamic error message explaining exactly where the issue was found.
 
 The following attributes are optional but can be used to enhance the scan results in the Snyk CLI:
 
@@ -82,12 +88,12 @@ package rules
 deny[msg] {
     resource := input.resource.aws_redshift_cluster[name]
     not resource.tags.owner
-
+	
     msg := {
         "publicId": "my_rule",
         "title": "Missing an owner from tag",
         "severity": "medium",
-        "msg": sprintf("resource.aws_redshift_cluster[%s]", [name]),
+        "msg": sprintf("input.resource.aws_redshift_cluster[%s].tags", [name]),
         "issue": "",
         "impact": "",
         "remediation": "",
@@ -117,7 +123,5 @@ deny[msg] {
 ```
 
 These rules are referred as `incremental` as each definition is additive. You can read more about Incremental Definitions [here](https://www.openpolicyagent.org/docs/latest/policy-language/#incremental-definitions). Note that these same named rules have to return a different value, or OPA will return an error. You can read more about Complete Definitions [here](https://www.openpolicyagent.org/docs/latest/policy-language/#complete-definitions).&#x20;
-
-
 
 For more complex topics, check [how OPA resolves Conflict Resolution](https://www.openpolicyagent.org/docs/latest/faq/#conflict-resolution).&#x20;
