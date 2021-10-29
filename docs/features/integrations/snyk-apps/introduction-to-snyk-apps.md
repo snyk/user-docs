@@ -1,7 +1,7 @@
 # Introduction to Snyk Apps
 
 {% hint style="info" %}
-Currently, Snyk Apps are in beta and are for private use, so only an App’s developer (Snyk Organization) can install a Snyk App. We want to learn more about what the community needs before we launch our App marketplace.
+Currently, Snyk Apps are in beta and only an App’s developer (Snyk Organization) can install the Snyk App they created - you. We want to learn more about what the community needs before we launch our App marketplace.
 {% endhint %}
 
 Snyk Apps are integrations that extend the functionality of the Snyk platform. They provide you with an opportunity to mould your Snyk experience to suit your specific needs.
