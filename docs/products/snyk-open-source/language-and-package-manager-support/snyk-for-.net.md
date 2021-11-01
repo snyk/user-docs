@@ -115,7 +115,7 @@ From the Snyk UI, you can configure whether Snyk should scan your entire project
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
 2. Go to settings ![](../../../.gitbook/assets/cog\_icon.png) > and click for .NET Scan build dependencies - \_\*\*\_If checked, Snyk scans all development dependencies.
 
+## Fixing vulnerabilities
 
-
-&#x20;
+To understand in more detail how Snyk helps you fix Open Source vulnerabilities within your projects, please refer to Fix Advice [here](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities#fix-advice).&#x20;
 
