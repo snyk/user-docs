@@ -9,7 +9,9 @@ Snyk's Bitbucket Cloud integration allows you to continuously perform security s
 
 > The newly created user must have **Admin** permissions to all the repositories you need to monitor with Snyk.
 
-1. To give Snyk access to your Bitbucket account, set up up a dedicated service account in Bitbucket, with admin permissions. Visit [Bitbucket documentation ](https://support.atlassian.com/bitbucket-cloud/docs/grant-access-to-a-workspace/)to learn more about creating users.
+1. To give Snyk access to your Bitbucket account&#x20;
+   1. Set up a dedicated service account in Bitbucket, with admin permissions.&#x20;
+   2. Visit [Bitbucket documentation ](https://support.atlassian.com/bitbucket-cloud/docs/grant-access-to-a-workspace/)to learn more about creating users.
 2. In Snyk, go to the **Integrations** page and click on **Bitbucket Cloud** card.
 3. Access your Bitbucket Cloud account and create a unique App Password for Snyk with the following permissions:&#x20;
    1. **Account: Email & Read**
@@ -19,7 +21,7 @@ Snyk's Bitbucket Cloud integration allows you to continuously perform security s
    5. **Pull requests: Read & Write**
    6. **Webhooks: Read & Write**
       1. Follow [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html) to see how to do this in detail.&#x20;
-4. Enter the username and the App Password for the service account you created:
+4. Enter the username, which can be found under BitBucket's Personal settings, and the App Password for the service account you created:
 5.  Click **Save**.\
     Snyk connects to your Bitbucket Cloud account. When the connection succeeds, the following indications appear:
 
