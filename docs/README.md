@@ -1,14 +1,18 @@
 # Snyk User Documentation
 
+### Quickstart
+
 {% hint style="success" %}
 <mark style="color:purple;">****</mark>[<mark style="color:purple;">**Sign up to use Snyk for free**</mark>](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)<mark style="color:purple;">**!**</mark>
 {% endhint %}
 
-1. After signing up, connect to your project
-2. Run tests against your project
-3. Review vulnerability results
-4. Correct vulnerabilities via Pull Requests
-5. Remain secure with monitoring
+1. After signing up, connect to your project.
+2. Run tests against your project.
+3. Review vulnerability results.
+4. Correct vulnerabilities via Pull Requests.
+5. Remain secure with monitoring.
+
+### Useful links
 
 * [Introducing Snyk](introducing-snyk/): read an [introduction to Snyk](introducing-snyk/introduction-to-snyk/) and explore [Snyk's core concepts](introducing-snyk/snyks-core-concepts/)
 * [Getting started](getting-started/): learn how to [get started with a Snyk account](getting-started/getting-started-snyk-products/) and select a Snyk product.
