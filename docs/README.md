@@ -21,8 +21,8 @@
   * [Snyk Code](products/snyk-code/)
   * [Snyk Container](products/snyk-container/)
   * [Snyk Infrastructure as Code](products/snyk-infrastructure-as-code/)
-* [Snyk CLI](features/snyk-cli/): learn about the Snyk Command-Line interface
-* [Integrations](features/integrations/): information to integrate Snyk into your application development cycle
+* [Snyk CLI](features/snyk-cli/): learn about the Snyk Command-Line interface.
+* [Integrations](features/integrations/): information to integrate Snyk into your application development cycle.
 
 {% hint style="info" %}
 For details of Snyk data handling, see [How Snyk handles your data](more-info/how-snyk-handles-your-data.md).
