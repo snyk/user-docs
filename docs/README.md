@@ -3,7 +3,7 @@
 ### Quickstart
 
 {% hint style="success" %}
-<mark style="color:purple;">****</mark>[<mark style="color:purple;">**Sign up to use Snyk for free**</mark>](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)<mark style="color:purple;">**!**</mark>
+[<mark style="color:purple;">**Sign up to use Snyk for free**</mark>](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)<mark style="color:purple;">**!**</mark>
 {% endhint %}
 
 1. After signing up, connect to your project.
