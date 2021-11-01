@@ -30,7 +30,9 @@ The way by which Snyk analyzes and builds the tree varies depending on the langu
 
 ## Snyk CLI tool for .NET projects
 
-### Dependencies managed by PackageReference
+### Nuget
+
+#### Dependencies managed by PackageReference
 
 First, restore dependencies in the .NET project by running `dotnet restore` and make sure **obj/project.assets.json** has been created by the previous command, run `snyk test`. For more information on building projects, check out [Getting started with the CLI](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli).
 
@@ -42,7 +44,7 @@ Examples of supported project files that resolve into **project.assets.json** in
 
 **Note:** Project files can be combined with [lock files](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files#locking-dependencies) for a more deterministic **project.assets.json** resolution
 
-### Dependencies managed by packages.config
+#### Dependencies managed by packages.config
 
 Whilst there are two approaches for dependencies managed by **packages.config**, the following is the recommended approach as this will yield the most accurate results:
 
@@ -54,45 +56,26 @@ Examples of supported project files that resolve into **packages** include:
 
 **Note:** While you should also be able to run `snyk test` without previously installing dependencies this will result in less accurate vulnerability results
 
-### Dependencies managed by Paket
+#### **CLI parameters**
+
+This section describes the unique CLI options available when working with NuGet managed projects.
+
+| Option                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `--file=.sln`            | Test all .NET projects included in the given `.sln` file. For example `snyk test --file=myApp.sln`                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| `--file=packages.config` | Test an individual .NET project.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| `--packages-folder`      | <p>This is the folder in which your dependencies are installed, provided you are using <code>packages.config</code>. If you’ve assigned a unique name to this folder, then Snyk can only find it if you enter a custom path.</p><p>Use the absolute or relative path, including the name of the folder where your dependencies reside. </p><p></p><p>For example: <code>snyk test --packages-folder=../location/to/packages</code> for Unix OS <code>snyk test --packages-folder=..\location\to\packages</code> for Windows.</p> |
+| `--assets-project-name`  | When monitoring a .NET project using NuGet, the `PackageReference` key uses the project name that is indicated in the project.assets.json.                                                                                                                                                                                                                                                                                                                                                                                       |
+
+### Paket
+
+#### Dependencies managed by Paket
 
 To use Paket a **paket.lock** file is required in combination with a **paket.dependencies** file. Run `snyk test`
 
 Other support includes: **project.json** (no longer recommended, please refer to [Microsoft documentation](https://docs.microsoft.com/en-us/nuget/archive/project-json))
 
-### Nuget
-
-Follow the same instructions as in the [Snyk CLI tool for .NET projects](snyk-for-.net.md#snyk-cli-tool-for-net-projects) section.
-
-### Paket
-
 In order to build the dependency tree, Snyk analyzes the **paket.dependencies** and **paket.lock** files.
-
-### **CLI parameters for .NET**
-
-This section describes the unique CLI options available when working with .NET-based projects.
-
-#### **Prerequisites**
-
-* Best practice dictates that the project be fully built so the installed packages can be analyzed. While manifest files provide most of the information on which dependencies the project uses--some dependencies may only resolve after the project build is complete. Depending on specific use cases, the **packages** folder & build artifacts are also analyzed.
-*   When running Snyk test, we test the first manifest file we find. If you want to check all of the .NET manifest files included in a single solution--use the **--file** parameter, similar to the following:
-
-    ```
-    $ snyk test --file=myApp.sln
-    ```
-
-    * Ensure you've installed the relevant package manager before you begin using the Snyk CLI tool.
-    * Ensure you've included the relevant manifest files supported by Snyk before testing.
-    * Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81) as well.
-
-#### **Parameters**
-
-| Option                   | Description                                                                                                                                                                                                                                                                           |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `--assets-project-name`  | When monitoring a .NET project using NuGet, the `PackageReference` key uses the project name that is indicated in the project.assets.json.                                                                                                                                            |
-| `--packages-folder`      | <p>This is the folder in which your dependencies are installed. If you’ve assigned a unique name to this folder, then Snyk can only find it if you enter a custom path.</p><p>Use the absolute or relative path, including the name of the folder where your dependencies reside.</p> |
-| `--file=.sln`            | Test all .NET projects included in the given `.sln` file                                                                                                                                                                                                                              |
-| `--file=packages.config` | Test an individual .NET project.                                                                                                                                                                                                                                                      |
 
 ## Git services for .NET projects
 
@@ -125,20 +108,30 @@ No import support currently.
 
 From the Snyk UI, you can configure whether Snyk should scan your entire project, including the build dependencies, or if the build dependencies should be skipped.
 
-**Prerequisites**
-
-* A .NET build file is required for the Snyk test so that Snyk can analyze target frameworks for this project.
-*   **For CLI:** When running Snyk test, we check the first file we find for testing. If you want to check all of the .NET manifest files included in a single solution, then use the --file parameter, similar to the following:
-
-    ```
-    $ snyk test --file=myApp.sln
-    ```
-
-    * Ensure you've installed the relevant package manager before you begin using the Snyk CLI tool.
-    * Ensure you've included the relevant manifest files supported by Snyk before testing.
-    * Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81) as well.
+****
 
 **Update language preferences**
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
 2. Go to settings ![](../../../.gitbook/assets/cog\_icon.png) > and click for .NET Scan build dependencies - \_\*\*\_If checked, Snyk scans all development dependencies.
+
+## Fixing vulnerabilities
+
+
+
+actionable fix advice
+
+runtime vs buildtime&#x20;
+
+* CLI \*\*
+* SCM \*\* X&#x20;
+
+fix prs &#x20;
+
+* \-supported manifest files
+* SCM support only
+
+
+
+&#x20;
+

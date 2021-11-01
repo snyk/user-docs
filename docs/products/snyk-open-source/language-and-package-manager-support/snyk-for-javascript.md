@@ -69,6 +69,18 @@ You may use a common **.snyk** policy file if you maintain ignores/patches in on
 
 `snyk test --yarn-workspaces --strict-out-of-sync=false --policy-path=src/.snyk`
 
+### Lerna
+
+We currently do **not** support Lerna. However, you might be able to run Snyk test/monitor with the following workaround commands to help you unblock the snyk CLI integration. For each example-package you can do:
+
+`snyk monitor --file=packages/example-package/package.json`
+
+Alternatively, you can specify a script to automate scanning nested \``` package.json` ``files:
+
+`ls packages | xargs -I PKG_NAME snyk monitor --file=packages/PKG_NAME/package.json`
+
+
+
 ### CLI parameters for JavaScript
 
 Prerequisites
