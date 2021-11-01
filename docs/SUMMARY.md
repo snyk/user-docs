@@ -390,7 +390,7 @@
     * [Snyk runtime: what data is used when monitoring my Java projects?](features/general-reports/runtime-monitoring/snyk-runtime-what-data-is-used-when-monitoring-my-java-projects.md)
     * [Snyk runtime: deployment metrics](features/general-reports/runtime-monitoring/snyk-runtime-deployment-metrics.md)
 * [Other tools](features/other-tools/README.md)
-  * [Snyk-SCM-Contributors-Count CLI Tool](features/other-tools/snyk-scm-contributors-count-cli-tool/README.md)
+  * [CLI Tool: Snyk-SCM-Contributors-Count](features/other-tools/snyk-scm-contributors-count-cli-tool/README.md)
     * [Overview](features/other-tools/snyk-scm-contributors-count-cli-tool/overview.md)
     * [Flowchart](features/other-tools/snyk-scm-contributors-count-cli-tool/flowchart.md)
     * [Usage](features/other-tools/snyk-scm-contributors-count-cli-tool/usage.md)
