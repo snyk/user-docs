@@ -7,7 +7,9 @@ Snyk's Bitbucket Cloud integration allows you to continuously perform security s
 
 ## Setting up a Bitbucket Cloud Integration
 
-> The newly created user must have **Admin** permissions to all the repositories you need to monitor with Snyk. (Even though admin permissions are required, Snyk's access is ultimately limited by the [permissions assigned to the App Password](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/).
+> The newly created user must have **Admin** permissions to all the repositories you need to monitor with Snyk.&#x20;
+>
+> Admin permissions are required; however, Snyk's access is ultimately limited by the [permissions assigned to the App Password](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/).
 
 1. To give Snyk access to your Bitbucket account&#x20;
    1. Set up a dedicated service account in Bitbucket, with admin permissions.&#x20;
