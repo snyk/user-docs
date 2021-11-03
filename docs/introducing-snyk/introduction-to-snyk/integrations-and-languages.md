@@ -4,7 +4,7 @@
 
 [Snyk integrations](https://docs.snyk.io/integrations) for your software development process include:
 
-* **Source control:** cloud and self-hosted SCMs such as Github. See [Git repository SCM integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations).
+* **Source control:** cloud and self-hosted SCMs such as Github. See [Git repository (SCM) integrations](../../features/integrations/git-repository-scm-integrations/).
 * **Container registries & Kubernetes:** container registries such as Docker Hub, and Kubernetes. See [Snyk Container](https://docs.snyk.io/snyk-container).
 * **Continuous integration**: such as Jenkins or TeamCity. See [CI/CD Integrations](https://docs.snyk.io/integrations/ci-cd-integrations)
 * **IDE plugins:** using IDE tools such as Eclipse. See [IDE tools](https://docs.snyk.io/integrations/ide-tools).
