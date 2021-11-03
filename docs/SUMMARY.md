@@ -163,6 +163,7 @@
     * [Scan and fix security issues in Kubernetes configuration files](products/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/scan-and-fix-security-issues-in-kubernetes-configuration-files.md)
     * [Scan and fix security issues in Helm Charts](products/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/scan-and-fix-security-issues-in-helm-charts.md)
     * [Working with Kubernetes configuration file test results](products/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/working-with-kubernetes-configuration-file-test-results.md)
+  * [Scan ARM configuration files](products/snyk-infrastructure-as-code/scan-arm-configuration-files.md)
   * [Detecting infrastructure as code files using a broker](products/snyk-infrastructure-as-code/detecting-infrastructure-as-code-files-using-a-broker.md)
   * [Snyk CLI for Infrastructure as Code](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/README.md)
     * [Test your configuration files](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-configuration-files.md)
