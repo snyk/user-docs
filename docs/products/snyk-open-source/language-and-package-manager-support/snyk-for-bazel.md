@@ -3,11 +3,11 @@
 Snyk supports testing projects that have their dependencies managed by Bazel. Support is available via the Snyk API.
 
 {% hint style="info" %}
-Snyk API docs live at [https://snyk.docs.apiary.io/](https://snyk.docs.apiary.io/)
+Snyk API docs live at [https://snyk.docs.apiary.io/](https://snyk.docs.apiary.io)
 {% endhint %}
 
 {% hint style="info" %}
-**Feature availability**  
+**Feature availability**\
 The Snyk API is available with Business and Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
@@ -21,11 +21,11 @@ According to [https://docs.bazel.build/versions/master/bazel-overview.html](http
 
 > _Bazel is an open-source build and test tool similar to Make, Maven, and Gradle. It uses a human-readable, high-level build language. Bazel supports projects in multiple languages and builds outputs for multiple platforms. Bazel supports large codebases across multiple repositories, and large numbers of users_
 
-Bazel does not have dependency manifest files or lock files that package managers such as npm have. Instead, build configuration is managed in [BUILD](https://docs.bazel.build/versions/master/build-ref.html#BUILD_files) files, using [Starlark](https://docs.bazel.build/versions/master/skylark/language.html), a domain specific language based on Python3.
+Bazel does not have dependency manifest files or lock files that package managers such as npm have. Instead, build configuration is managed in [BUILD](https://docs.bazel.build/versions/master/build-ref.html#BUILD\_files) files, using [Starlark](https://docs.bazel.build/versions/master/skylark/language.html), a domain specific language based on Python3.
 
 Bazel has limited native integration with package registries such as npmjs.org or Maven Central. There are some Bazel rules that can be added to help with installing dependencies from external registries, e.g. [from Maven](https://docs.bazel.build/versions/master/external.html#maven-artifacts-and-repositories).
 
-However, in many cases users must manually specify their dependency information \(package name, location & version\), including all transitives. These can then be fetched by Bazel during builds.
+However, in many cases users must manually specify their dependency information (package name, location & version), including all transitives. These can then be fetched by Bazel during builds.
 
 Because Bazel dependencies are specified as code in BUILD files using Starlark, Snyk cannot easily discover which dependencies a project has.
 
@@ -33,23 +33,22 @@ The recommended approach is to test your dependencies via the [Snyk Dep Graph Te
 
 ## How it works
 
-1. For each type of dependency \(e.g. Maven, Cocoapods\), create a  [Dep Graph JSON object](https://docs.snyk.io/snyk-open-source/language-and-package-manager-support/snyk-for-bazel) listing all the dependency packages and versions \(see below\)
-2. As part of a Bazel test rule, send this object as a POST request to the [Dep Graph Test API](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h_01EEWFQJFTCWFQBMQR0X32J8B8), \(along with your [auth token](https://docs.snyk.io/snyk-api-info/authentication-for-api)\), example curl request:
+1. For each type of dependency (e.g. Maven, Cocoapods), create a  [Dep Graph JSON object](https://github.com/snyk/dep-graph) listing all the dependency packages and versions (see below)
+2.  As part of a Bazel test rule, send this object as a POST request to the [Dep Graph Test API](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h\_01EEWFQJFTCWFQBMQR0X32J8B8), (along with your [auth token](https://docs.snyk.io/snyk-api-info/authentication-for-api)), example curl request:
 
-   ```text
-   curl -X POST 'https://snyk.io/api/v1/test/dep-graph' \
-     -H 'Authorization: token {{your token}}' \
-     -H 'Content-Type: application/json; charset=utf-8' \
-     -d @dep-graph.json
-   ```
-
-3. Check the [API response](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h_01EEWP8F4MK9MFJT5X0A4ZGS93) for pass/fail status and any resulting vulnerabilities
+    ```
+    curl -X POST 'https://snyk.io/api/v1/test/dep-graph' \
+      -H 'Authorization: token {{your token}}' \
+      -H 'Content-Type: application/json; charset=utf-8' \
+      -d @dep-graph.json
+    ```
+3. Check the [API response](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h\_01EEWP8F4MK9MFJT5X0A4ZGS93) for pass/fail status and any resulting vulnerabilities
 
 ## Snyk Dep Graph Test API
 
 The Snyk Dep Graph Test API takes a generic dependency graph, and returns a report containing any relevant vulnerabilities for those dependencies.
 
-The set of supported package managers/repository ecosystems are listed on the [API documentation](https://snyk.docs.apiary.io/#reference/test/dep-graph/test-dep-graph) \(at time of writing these are `deb`, `gomodules`, `gradle`, `maven`, `npm`, `nuget`, `paket`, `pip`, `rpm`, `rubygems` & `cocoapods`\).
+The set of supported package managers/repository ecosystems are listed on the [API documentation](https://snyk.docs.apiary.io/#reference/test/dep-graph/test-dep-graph) (at time of writing these are `deb`, `gomodules`, `gradle`, `maven`, `npm`, `nuget`, `paket`, `pip`, `rpm`, `rubygems` & `cocoapods`).
 
 Any of your Bazel dependencies that are available in these ecosystems can be tested via the API.
 
@@ -59,7 +58,7 @@ The Dep Graph Test API takes a [Snyk Dep Graph](https://github.com/snyk/dep-grap
 
 The [schema](https://github.com/snyk/dep-graph#depgraphdata) for this format is as follows:
 
-```text
+```
 export interface DepGraphData {
   schemaVersion: string;
   pkgManager: {
@@ -103,19 +102,19 @@ export interface DepGraphData {
 
 Here are some further notes on specific components in the dep graph object:
 
-* `schemaVersion` - version of the dep-graph schema, set this to `1.2.0` 
-* `pkgManager.name` - one of `deb`, `gomodules`, `gradle`, `maven`, `npm`, `nuget`, `paket`, `pip`, `rpm`, `rubygems` or `cocoapods`  
+* `schemaVersion` - version of the dep-graph schema, set this to `1.2.0`&#x20;
+* `pkgManager.name` - one of `deb`, `gomodules`, `gradle`, `maven`, `npm`, `nuget`, `paket`, `pip`, `rpm`, `rubygems` or `cocoapods` &#x20;
 * `pkgs` - array of objects containing `id`, `name` & `version` of all packages in the dep-graph. Note that the `id` _must_ be of the form `name@version`. List each of your dependencies in this array, including an item representing the project itself
-* `graph.nodes` - array of objects describing the relationships between entries in `pkgs`. In Bazel this is typically just the project node with all other packages defined as a flat array of direct dependencies in `deps` 
+* `graph.nodes` - array of objects describing the relationships between entries in `pkgs`. In Bazel this is typically just the project node with all other packages defined as a flat array of direct dependencies in `deps`&#x20;
 * `graph.rootNodeId` - specifies the `id` of the entry in `graph.nodes` to use as the root node of the graph. You should set this to the `nodeId` of the project node
 
 ## Snyk Dep Graph Test API Response
 
-The Dep Graph Test API returns a JSON object describing any issues \(vulnerabilities & licences\) found in the dep graph dependencies.
+The Dep Graph Test API returns a JSON object describing any issues (vulnerabilities & licences) found in the dep graph dependencies.
 
 Here is an example response with a single vulnerability.
 
-```text
+```
 {
     "ok": false,
     "packageManager": "maven",
@@ -211,13 +210,13 @@ Here are some further notes on specific components in the response object:
 ## Examples
 
 {% hint style="info" %}
-**Note**  
+**Note**\
 See [https://github.com/snyk/bazel-simple-app](https://github.com/snyk/bazel-simple-app) for a full example Bazel Java project, and corresponding Snyk Dep Graph object.
 {% endhint %}
 
 For a simple Bazel project with a single dependency on a Maven package, you may specify the dependency like this:
 
-```text
+```
 maven_jar(
     name = "logback-core",
     artifact = "ch.qos.logback:logback-core:1.0.13",
@@ -227,7 +226,7 @@ maven_jar(
 
 From this you could construct the following Dep Graph JSON object:
 
-```text
+```
 {
   "depGraph": {
     "schemaVersion": "1.2.0",
@@ -273,5 +272,4 @@ From this you could construct the following Dep Graph JSON object:
 }
 ```
 
-This particular package \(`ch.qos.logback:logback-core@1.0.13`\) contains a vulnerability, described in detail in the resulting JSON response object.
-
+This particular package (`ch.qos.logback:logback-core@1.0.13`) contains a vulnerability, described in detail in the resulting JSON response object.
