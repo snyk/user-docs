@@ -32,7 +32,7 @@ Available options:
        export SNYK_TOKEN=<YOUR-SNYK-TOKEN>
        ```
 2. Get your Azure-Devops Token and Org:
-   *   Create a Token if one does not exist, using this [guide](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops\&tabs=preview-page)&#x20;
+   *  Make sure that your token has Group level access or use a service account's token that has Group level acces, to learn more on how to create a service account, please refer to this [guide](https://docs.snyk.io/features/integrations/managing-integrations/service-accounts#how-to-set-up-a-service-account)
 
        **Note**: make sure your token has read access to the repos.
    * Your Org name in Azure is listed on the left pane in [Azure-Devops-site](https://dev.azure.com)
