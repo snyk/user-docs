@@ -27,7 +27,7 @@ Available options:
 ## Before running the command:&#x20;
 
 1. Export SNYK\_TOKEN (if you want to get the contributors ONLY for repos that are already monitored by Snyk):
-   * Go to [Snyk-account](https://app.snyk.io/account) and create a token if not already exists.
+   * Make sure that your token has Group level access or use a service account's token that has Group level acces, to learn more on how to create a service account, please refer to this [guide](https://docs.snyk.io/features/integrations/managing-integrations/service-accounts#how-to-set-up-a-service-account)
    * Copy the token value
    *   Export the token in your environment:&#x20;
 
