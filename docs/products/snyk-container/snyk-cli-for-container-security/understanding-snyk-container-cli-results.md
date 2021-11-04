@@ -19,7 +19,7 @@ Each vulnerability is shown with the following information:
 | **Introduced by**      | Whether the vulnerability is in the base image, or which line in the Dockerfile introduced the vulnerability.             |
 | **Fixed in**           | If available, the version of the package which has a fix for the vulnerability.                                           |
 
-Vulnerabilities appear in reverse severity order, so the most pressing vulnerabilities appear first. This means less scrolling to see the most important issues triaging vulnerabilities.
+Vulnerabilities appear in reverse severity order, so there's less scrolling up to see the most important issues.
 
 We also present the total dependencies with known vulnerabilities, and the total number of vulnerabilities.
 
