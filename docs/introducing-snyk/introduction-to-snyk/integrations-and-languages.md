@@ -12,7 +12,7 @@
 * **Serverless**: such as AWS Lambda. See [Serverless integrations](https://docs.snyk.io/integrations/serverless-integrations).
 * **Platform as a service:** such as Heroku. See [Platform as a service integrations](https://docs.snyk.io/integrations/platform-as-a-service-integrations).&#x20;
 * **Notifications**: such as Slack. See [Notification and ticketing system-integrations](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations).
-* **Vulnerability tools**: such as RiskSense. See [Vulnerability Management Tools](https://support.snyk.io/hc/en-us/sections/360003642858-Vulnerability-Management-Tools).
+* **Vulnerability tools**: such as RiskSense. See [Vulnerability Management Tools](../../features/integrations/vulnerability-management-tools/).
 
 ## Snyk language support
 
