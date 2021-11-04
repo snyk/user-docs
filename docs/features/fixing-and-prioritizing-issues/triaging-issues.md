@@ -49,7 +49,7 @@ Jackson Vulnerable Conditions:
 
 All the conditions must be met for the vulnerability to be exploitable.
 
-![Triage Assistant UI](<../../.gitbook/assets/image (61).png>)
+![Triage Assistant UI](<../../.gitbook/assets/image (61) (1).png>)
 
 {% hint style="info" %}
 This feature is currently in preview, and might be changed.
