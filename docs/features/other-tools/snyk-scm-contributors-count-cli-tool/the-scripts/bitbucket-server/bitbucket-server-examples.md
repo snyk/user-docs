@@ -31,7 +31,7 @@ Available options:
        export SNYK_TOKEN=<YOUR-SNYK-TOKEN>
        ```
 2. Get your Bitbucket-Server token and URL:
-   *   Create a Token if not already exists using this [guide](https://www.jetbrains.com/help/youtrack/standalone/integration-with-bitbucket-server.html#enable-youtrack-integration-bbserver)&#x20;
+   *   Make sure that your token has Group level access or use a service account's token that has Group level acces, to learn more on how to create a service account, please refer to this [guide](https://docs.snyk.io/features/integrations/managing-integrations/service-accounts#how-to-set-up-a-service-account)
 
        **Note**: Make sure your token has read access to the repos.
    * The URL is the actual URL of your Bitbucket-Server instance, for example: http://bitbucket-server.mycompany.com
