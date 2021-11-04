@@ -2,7 +2,7 @@
 
 ## Manifest files <a href="6f65ebbb-6b2b-47aa-99b9-93cac28849a8" id="6f65ebbb-6b2b-47aa-99b9-93cac28849a8"></a>
 
-Snyk CLI supports a wide range of different programming languages and package managers for open source dependencies. For a complete list of supported manifest files see [Language & package Manager support](../../../products/snyk-open-source/language-and-package-manager-support/).
+Snyk CLI supports a wide range of different programming languages and package managers for open source dependencies. For a complete list of supported manifest files see [Language & package manager support](../../../products/snyk-open-source/language-and-package-manager-support/).
 
 {% hint style="info" %}
 The CLI defaults to scanning the first supported manifest file it detects. This means you explicitly need to provide the name of the manifest file to scan using the `--file` flag when a project has multiple manifests.
