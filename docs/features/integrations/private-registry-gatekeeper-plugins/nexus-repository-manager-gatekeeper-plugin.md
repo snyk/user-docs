@@ -56,8 +56,8 @@ To set up and configure the plugin, start scanning and managing your organizatio
    * **Snyk API URL** - enter the API endpoint if you’re setting up on-prem or Broker for Snyk
    * **Snyk API token** - paste the token value you saved from step 1
    * **Snyk Organization ID** - paste the token value you saved from step 1
-   * **Vulnerability Threshold**—default is \*low\*. Valid values include low, medium, high. Manually update the configuration based on your needs.
-   * **License Threshold**—default is \*low\*. Valid values include low, medium, high. Manually update the configuration based on your needs.&#x20;
+   * **Vulnerability Threshold**—default is \*low\*. Valid values include none (will not block artifacts download), low, medium, high. Manually update the configuration based on your needs.
+   * **License Threshold**—default is \*low\*. Valid values include none (will not block artifacts download), low, medium, high. Manually update the configuration based on your needs.&#x20;
 4. Shut down the Nexus service instance and then restart it.&#x20;
 5. Log in to your Nexus instance and double check that the Snyk bundle has been installed successfully.
 
