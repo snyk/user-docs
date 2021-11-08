@@ -130,7 +130,7 @@ Snyk’s GitHub SCM integration leverages the oAuth app integration. In case you
 
 1. Log into the GitHub account which the integration was originally created with.
 2. Navigate to the account settings and select the **Applications** tab in the right sidebar.
-3. Select the **Authorized OAuth Apps** tab You can also reach the the [Authorized OaAuth Apps tab directly](https://github.com/settings/applications).
+3. Select the **Authorized OAuth Apps** tab You can also reach the [Authorized OaAuth Apps tab directly](https://github.com/settings/applications).
 4. Find the **Snyk** app, click on the 3 dots on the right and select **Revoke**.
 
 Revoking this access effectively disconnects Snyk’s access to that GitHub account. Existing imported snapshots will persist in Snyk and continue to rescan based on the existing snapshots until deleted, but Snyk will no longer be able to import new projects from the GitHub integration and will no longer re-scan on new code merges.
