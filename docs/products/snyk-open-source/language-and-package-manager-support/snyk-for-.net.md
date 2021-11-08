@@ -12,7 +12,7 @@ Features might not be available, depending on your subscription plan.
 | Package managers / Features                            | CLI support | Git support | License scanning | Fixing | Runtime monitoring |
 | ------------------------------------------------------ | ----------- | ----------- | ---------------- | ------ | ------------------ |
 | [NuGet](https://www.nuget.org)                         | ✔︎          | ✔︎          | ✔︎               | ✔︎     |                    |
-| [Paket](https://fsprojects.github.io/Paket/index.html) | ✔︎          | ✔︎          |                  | ✔︎     |                    |
+| [Paket](https://fsprojects.github.io/Paket/index.html) | ✔︎          |             |                  |        |                    |
 
 ## **How it works**
 
@@ -113,9 +113,61 @@ From the Snyk UI, you can configure whether Snyk should scan your entire project
 **Update language preferences**
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
-2. Go to settings ![](../../../.gitbook/assets/cog\_icon.png) > and click for .NET Scan build dependencies - \_\*\*\_If checked, Snyk scans all development dependencies.
+2.  Go to settings ![](../../../.gitbook/assets/cog\_icon.png) > and click for .NET&#x20;
+
+    Scan build dependencies - If checked, Snyk scans all development dependencies.
 
 ## Fixing vulnerabilities
 
-To understand in more detail how Snyk helps you fix Open Source vulnerabilities within your projects, please refer to Fix Advice [here](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities#fix-advice).&#x20;
+For a general understanding of how Snyk helps you fix Open Source vulnerabilities within your projects, please visit the following document [Fix your vulnerabilities](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities).&#x20;
+
+{% hint style="info" %}
+Please note the Fix PR feature is currently in open beta and only available across our [SCM](https://docs.snyk.io/getting-started/scm-git-and-ci-cd-integration-deployment-intro) integrations. If you would like to be part of the early beta program we recommend you get in touch with your Customer Success Manager.
+{% endhint %}
+
+### Fix PR supported manifest files
+
+If you are currently managing your project dependencies with NuGet and leveraging [`PackageReference`](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files) or [`packages.config`](https://docs.microsoft.com/en-us/nuget/reference/packages-config) we will be able to automatically update the dependency version in your manifest file, provided there is an actual fix for it. You should then be able to easily review and merge your fixes.&#x20;
+
+### Dependency analysis
+
+In the .NET ecosystem, there are multiple levels of dependencies, some of which are obvious and some completely hidden to a developer. To correctly identify the vulnerabilities for a given .NET application, these dependencies must be resolved accurately.
+
+We resolve dependencies differently in the Snyk CLI, and the Source Code Management (SCM) systems such as GitHub:
+
+* In the CLI, if you manage your project dependencies using `PackageReference`, we scan your `obj/project.assets.json`; if you manage your dependencies using `packages.config`, we scan the `packages` directory. This approach allows us to be very accurate.
+*   In the SCM integration, scanning uses a different process, as the generated files mentioned above are not available. To overcome this we follow the nuget dependency [resolution algorithm](https://docs.microsoft.com/en-us/nuget/concepts/dependency-resolution) to construct a dependency tree.&#x20;
+
+    **Note**: runtime dependencies (provided by the runtime environment also known as "meta-packages") are resolved more accurately in the CLI if the host machine uses a similar runtime SDK to the server running the app.
+
+#### Build-time vs Runtime dependencies
+
+* **Build-time dependency**: We understand build time dependency to be a dependency that is resolved during build time and is not susceptible to change at runtime.
+* **Runtime dependency**: We understand build time dependency to be a dependency that is resolved during runtime. For example, packages coming from standard .NET SDK such as [`System.Net.Http`](https://www.nuget.org/packages/System.Net.Http) . We sometimes refer to runtime dependencies as meta-packages.
+
+### Tackling vulnerabilities from runtime dependencies
+
+There are a couple of actions you can choose to take in order to address these type of vulnerable dependencies. These vary if you are using the SCM or CLI:
+
+**SCM**
+
+If you believe you have found false positives because when the application runs in production you always pull the latest/explicit patches from Microsoft, which may mean the vulnerability is no longer relevant to your project, you may choose to [ignore](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/ignore-issues#ignoring-issues-in-the-ui) it.&#x20;
+
+**CLI**
+
+If you believe you have found false positives because when the application runs in production you always pull the latest/explicit patches from Microsoft, which may mean the vulnerability is no longer relevant to your project, you may do the following:
+
+* If in production your application always runs on the latest SDK patch version, you can set `TargetLatestRuntimePatch` to `true` in the project file.
+
+```
+<TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+```
+
+* You may choose to publish a [self-contained](https://docs.microsoft.com/en-us/dotnet/core/deploying/#publish-self-contained) app that includes runtime. Then set `RuntimeFrameworkVersion` to the specific patch version in the project file.
+
+```
+<PropertyGroup>
+  <RuntimeFrameworkVersion>5.0.7</RuntimeFrameworkVersion>
+</PropertyGroup>
+```
 
