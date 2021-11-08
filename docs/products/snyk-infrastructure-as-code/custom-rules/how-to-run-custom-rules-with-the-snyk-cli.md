@@ -58,13 +58,19 @@ Ensure you followed the steps in [Getting Started with the SDK](getting-started-
 In your project’s folder, run the following commands to configure your container registry with the Snyk IaC CLI:
 
 ```
-export OCI_REGISTRY_URL=<container registry url>
-export OCI_REGISTRY_USERNAME=<container registry username>
-export OCI_REGISTRY_PASSWORD=<container registry password>
+snyk config set oci-registry-url=<container registry url>
+snyk config set oci-registry-username=<container registry username>
+snyk config set oci-registry-password=<container registry password>
 ```
 
+This will set the following Snyk environment variables:
+
+* `SNYK_CFG_OCI_REGISTRY_URL`
+* `SNYK_CFG_OCI_REGISTRY_USERNAME`
+* `SNYK_CFG_OCI_REGISTRY_PASSWORD`
+
 {% hint style="info" %}
-Ensure the `OCI_REGISTRY_URL` is a valid URL, e.g. for DockerHub:
+Ensure the OCI Registry URL is a valid URL, e.g. for DockerHub:
 
 `https://registry-1.docker.io/repository-name/bundle-image:1.0.0`
 {% endhint %}
