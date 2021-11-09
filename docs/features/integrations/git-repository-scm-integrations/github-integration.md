@@ -54,7 +54,7 @@ You can review and adjust the pull request tests settings by navigating to the G
 
 ## Non Brokered GitHub Integrations
 
-1. Operations that are triggered via the Snyk UI, for example, opening a Fix PR or retesting a project are performed on behalf of the acting user. Therefore, a user that wants to perform this operation in GitHub via the Snyk UI, must connect their GitHub account to Snyk and have the required permissions scope for the repositories they would like to perform these operations for.  See the **Required permissions scope for repositories** section for more details.
+1. Operations that are triggered via the Snyk UI, for example, opening a Fix PR or retesting a project are performed on behalf of the acting user. Therefore, a user that wants to perform this operation in GitHub via the Snyk UI, must connect their GitHub account to Snyk and have the required permissions scope for the repositories they would like to perform these operations for. See the **Required permissions scope for repositories** section for more details.
 2. Operations which are not triggered via the UI, as daily / weekly tests and automatic PRs (fix and upgrade) are performed on behalf of a random Snyk organization members who have connected their GitHub accounts to Snyk and have the required permissions scope for the repository.
 
 {% hint style="info" %}
@@ -82,8 +82,8 @@ In order for Snyk to be able to perform the required operation on monitor reposi
 | **Action**                                          | **Why?**                                                                                                                                              | **Required permissions on the repository** |
 | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
 | Daily / weekly tests                                | For reading manifest files in private repos                                                                                                           | _Write_ or above                           |
-| Snyk tests on pull requests                         | For sending pull request status checks whenever a new PR is created / an existing PR is updated                                                       |                                            |
-| Opening fix and upgrade pull requests               | For creating fix / upgrade PRs in the monitored repos                                                                                                 |                                            |
+| Snyk tests on pull requests                         | For sending pull request status checks whenever a new PR is created / an existing PR is updated                                                       | _Write_ or above                           |
+| Opening fix and upgrade pull requests               | For creating fix / upgrade PRs in the monitored repos                                                                                                 | _Write_ or above                           |
 | Snyk tests on pull requests - initial configuration | For adding Snyk's webhooks to the imported repos, so Snyk will be informed whenever pull requests are created or updated and be able to trigger scans | _Admin_                                    |
 
 **1. Opening fix and upgrade pull requests from a fixed GitHub account**
@@ -92,8 +92,8 @@ Snyk allows you to configure a specific GitHub account on whose behalf the fix a
 
 In order to use this feature, you'll need to do the following:
 
-1. Open GitHub's Integrations Settings page in Snyk app by clicking on _Settings_ → _Integrations_ →  _GitHub_
-2. Enable the toggle button under the _Open fix and upgrade pull requests from a fixed GitHub_ _account_  setting:
+1. Open GitHub's Integrations Settings page in Snyk app by clicking on _Settings_ → _Integrations_ → _GitHub_
+2. Enable the toggle button under the _Open fix and upgrade pull requests from a fixed GitHub_ _account_ setting:
 3. Follow the in-page instructions for creating a personal access token in GitHub 2. Provide the newly generated token to Snyk so it can be used to perform operations in GitHub (i.e. opening Fix PRs and etc)
 
 ![](../../../.gitbook/assets/screen-shot-2020-09-29-at-21.27.30.png)
