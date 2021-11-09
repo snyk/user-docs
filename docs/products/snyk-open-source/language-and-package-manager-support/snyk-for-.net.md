@@ -143,7 +143,7 @@ We resolve dependencies differently in the Snyk CLI, and the Source Code Managem
 #### Build-time vs Runtime dependencies
 
 * **Build-time dependency**: We understand build time dependency to be a dependency that is resolved during build time and is not susceptible to change at runtime.
-* **Runtime dependency**: We understand build time dependency to be a dependency that is resolved during runtime. For example, packages coming from standard .NET SDK such as [`System.Net.Http`](https://www.nuget.org/packages/System.Net.Http) . We sometimes refer to runtime dependencies as meta-packages.
+* **Runtime dependency**: We understand build time dependency to be a dependency that is resolved against the installed runtime. For example, packages coming from the .NET framework (<=4) / .NET [runtime](https://docs.microsoft.com/en-us/dotnet/core/versions/selection?WT.mc\_id=DOP-MVP-5001511&) (for Core and .NET 5+) such as [`System.Net.Http`](https://www.nuget.org/packages/System.Net.Http) . We sometimes refer to runtime dependencies as meta-packages.
 
 ### Tackling vulnerabilities from runtime dependencies
 
@@ -151,19 +151,19 @@ There are a couple of actions you can choose to take in order to address these t
 
 **SCM**
 
-If you believe you have found false positives because when the application runs in production you always pull the latest/explicit patches from Microsoft, which may mean the vulnerability is no longer relevant to your project, you may choose to [ignore](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/ignore-issues#ignoring-issues-in-the-ui) it.&#x20;
+If you believe you have found false positives because the application runs on a system that always has the latest patches from Microsoft installed, which _may_ mean the vulnerability is no longer relevant to your project, you may choose to [ignore](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/ignore-issues#ignoring-issues-in-the-ui) it.&#x20;
 
 **CLI**
 
 If you believe you have found false positives because when the application runs in production you always pull the latest/explicit patches from Microsoft, which may mean the vulnerability is no longer relevant to your project, you may do the following:
 
-* If in production your application always runs on the latest SDK patch version, you can set `TargetLatestRuntimePatch` to `true` in the project file.
+* If in production your application always runs on the latest SDK patch version, you can set `TargetLatestRuntimePatch` to `true` in the project file. And make sure to upgrade your environments (e.g. dev, prod) to the latest runtime version.
 
 ```
 <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
 ```
 
-* You may choose to publish a [self-contained](https://docs.microsoft.com/en-us/dotnet/core/deploying/#publish-self-contained) app that includes runtime. Then set `RuntimeFrameworkVersion` to the specific patch version in the project file.
+* You may choose to publish a [self-contained](https://docs.microsoft.com/en-us/dotnet/core/deploying/#publish-self-contained) app that includes runtime. Then set `RuntimeFrameworkVersion` to the specific patch version in the project file. You may choose to [ignore](https://docs.snyk.io/features/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli) these.
 
 ```
 <PropertyGroup>
