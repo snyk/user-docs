@@ -1,6 +1,6 @@
 # CLI for Snyk Code
 
-{% hint style="info" %}
+{% hint style="warning" %}
 This feature is currently in beta.
 {% endhint %}
 
@@ -8,7 +8,7 @@ This feature is currently in beta.
 Make sure Snyk Code is enabled for your organization, see [Getting started with Snyk Code](../../../getting-started/getting-started-snyk-products/getting-started-with-snyk-code.md#stage-1-enable-snyk-code) for details.
 {% endhint %}
 
-The Snyk Command Line Interface \([CLI](../../../features/snyk-cli/)\) for Snyk Code helps you find and fix security flaws in your code on your local machine.
+The Snyk Command Line Interface ([CLI](../../../features/snyk-cli/)) for Snyk Code helps you find and fix security flaws in your code on your local machine.
 
 ## **Install the Snyk CLI**
 
@@ -25,7 +25,7 @@ For more detailed installation guidance and options, see [Install the Snyk CLI](
 
 After installation, authenticate with Snyk to test your image, running snyk auth from the CLI:
 
-```text
+```
 snyk auth
 ```
 
@@ -46,4 +46,3 @@ All sub-folders inside the provided folder are also scanned.
 
 A minimum version of `1.716.0` is required to use CLI for Snyk Code.
 {% endhint %}
-

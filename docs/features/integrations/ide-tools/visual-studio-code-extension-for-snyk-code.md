@@ -72,7 +72,7 @@ To manually trigger a scan, either Save or manually rescan using the rescan icon
 
 If you only need the Code Quality, Code Security or Open Source Security portion of the findings, you can easily disable the feature with the results you don't want to see or simply collapse the view:
 
-![](<../../../.gitbook/assets/image (83).png>)
+![](<../../../.gitbook/assets/image (83) (1).png>)
 
 ### Snyk Code advanced mode
 
@@ -80,7 +80,7 @@ Snyk Code has "Advanced" mode that allows you to control how scan is performed.
 
 To manually perform the analysis, in the configuration of the extension, you can enable Advanced Mode which enables you to control the scanning process:
 
-![](<../../../.gitbook/assets/image (78).png>)
+![](<../../../.gitbook/assets/image (78) (1).png>)
 
 ## View analysis results
 
@@ -125,7 +125,7 @@ We also include a feedback mechanism to report false positives so you others do 
 
 ### Snyk OSS vulnerability window
 
-![](<../../../.gitbook/assets/image (68).png>)
+![](<../../../.gitbook/assets/image (68) (1).png>)
 
 OSS vulnerability tab shows information about the vulnerable module.
 
