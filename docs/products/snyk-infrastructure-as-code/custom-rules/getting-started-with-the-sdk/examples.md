@@ -3,7 +3,7 @@
 ### Example of a simple boolean rule
 
 {% hint style="info" %}
-You can find a full example of this guide in [this OPA Playground](https://play.openpolicyagent.org/p/SCYndBjWxh).
+You can find a full example of this guide in [this OPA Playground](https://play.openpolicyagent.org/p/SCYndBjWxh) and the [snyk/custom-rules-example](https://github.com/snyk/custom-rules-example) repository.
 {% endhint %}
 
 Let’s assume we have generated a new rule `CUSTOM-RULE-1` using the SDK (i.e. `snyk-iac-rules template --rule CUSTOM-RULE-1`) and have a very simple fixture file containing a Terraform resource:
@@ -432,7 +432,7 @@ We recommend always validating that your rule is correct by[ updating and runnin
 
 The test for this rule will look very similar to the ones from previous example and will also require its own fixture file.
 
-### Grouping resources
+### Examples with grouped resources
 
 We can also iterate over many resources by adding them to an array of resources.
 
@@ -445,5 +445,46 @@ We can also iterate over many resources by adding them to an array of resources.
             "data.aws_iam_policy_document",
 ]
 ```
+
+One way to leverage this is to implement denylist rules.&#x20;
+
+For example, we may want to ensure that if someone defines a Kubernetes ConfigMap, then they cannot use it to store sensitive information such as passwords, secret keys, and access tokens.
+
+We can do that and expand what we define as "sensitive information" over time by defining a group of sensitive tokens inside a denylist:
+
+```
+package rules
+
+sensitive_denylist := [
+	"pass",
+	"secret",
+	"key",
+	"token",
+]
+
+check_sensitive(keys, denylist) {
+	_ = keys[key]
+	contains(key, denylist[_])
+}
+
+deny[msg] {
+	input.kind == "ConfigMap"
+	input.data = keys
+	check_sensitive(keys, sensitive_denylist)
+	msg := {
+		"publicId": "CUSTOM-RULE-7",
+		"title": "ConfigMap exposes sensitive data",
+		"severity": "high",
+		"msg": "input.data",
+		"issue": "",
+		"impact": "",
+		"remediation": "",
+		"references": [],
+	}
+}
+
+```
+
+Any key containing the substrings "pass", "secret", "key", and "token" can be considered sensitive and so should not be included in the ConfigMap.
 
 ##
