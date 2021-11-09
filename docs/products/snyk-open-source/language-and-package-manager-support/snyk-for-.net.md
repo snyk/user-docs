@@ -163,7 +163,7 @@ If you believe you have found false positives because when the application runs 
 <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
 ```
 
-* You may choose to publish a [self-contained](https://docs.microsoft.com/en-us/dotnet/core/deploying/#publish-self-contained) app that includes runtime. Then set `RuntimeFrameworkVersion` to the specific patch version in the project file. You may choose to [ignore](https://docs.snyk.io/features/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli) these.
+* You may choose to publish a [self-contained](https://docs.microsoft.com/en-us/dotnet/core/deploying/#publish-self-contained) app that includes the runtime. Then set `RuntimeFrameworkVersion`to the specific patch version in the project file. You may choose to [ignore](https://docs.snyk.io/features/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli) vulnerabilities that you believe are no longer relevant.
 
 ```
 <PropertyGroup>
