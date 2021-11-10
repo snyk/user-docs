@@ -23,7 +23,7 @@ In the Snyk CLI:
 
 > This organization has 10,000 of the maximum 10,000 projects. You will not be able to import more projects: http://docs.snyk.io/getting-started/introduction-to-snyk-projects/maximum-number-of-projects-in-an-organization
 
-
+The CLI will stop processing any new projects in your organization once the maximum number of projects has been reached. This may leave you with an impartial import. Once you clear space, by  removing the projects you on longer need in the organisation, you can repeat the command and the remaining projects will be imported to Snyk.
 
 In the Snyk API:
 
