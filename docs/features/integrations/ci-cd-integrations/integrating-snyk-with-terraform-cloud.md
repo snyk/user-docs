@@ -1,4 +1,4 @@
-# Integrating Snyk with Terraform Cloud
+# Terraform Cloud integration
 
 ## Terraform Cloud overview
 
@@ -14,7 +14,7 @@ Since this feature is behind a private beta feature flag on Terraform Cloud, in 
 
 ## **Snyk Integration with Terraform Cloud overview**
 
-Terraform Cloud introduced a new feature called Run Checks. A “Run” in TFC represents a unit of execution in TFC that eventually generates a Terraform plan, to eventually be reviewed, approved, and applied. 
+Terraform Cloud introduced a new feature called Run Checks. A “Run” in TFC represents a unit of execution in TFC that eventually generates a Terraform plan, to eventually be reviewed, approved, and applied.&#x20;
 
 This Run-check beta feature allows external integrations to connect to these “Run” events and interact with them, providing a status to determine if this run should pass or fail.
 
@@ -32,11 +32,11 @@ Navigate into the dedicated Terraform Cloud integration settings page, under the
 
 1. Copy the provided URL and HMAC Key from the integration setting page in Snyk.
 2. Navigate to [Terraform Cloud](https://app.terraform.io) and go into the organization global settings.
-3. Go to the Task Event Hooks settings. For example:\
-   `https://app.terraform.io/app/{YOUR_TFC_ORG}/settings/event-hooks`
-4. Create a new Task Event Hook for Snyk with the URL and HMAC key values.\
+3. Go to the Run Tasks settings. For example:\
+   `https://app.terraform.io/app/{YOUR_TFC_ORG}/settings/tasks`
+4. Create a new Run Task for Snyk with the URL and HMAC key values.\
    (The HMAC key is mandatory for the Snyk integration to work, even though it's stated as optional on Terraform Cloud)
-5. To connect this Task Event Hook to your workspace in Terraform Cloud, navigate to the Tasks settings of a specific workspace and add the newly created Task-Event Hook for Snyk. For example:\
+5. To connect this Run Task to your workspace in Terraform Cloud, navigate to the Run Tasks settings of a specific workspace and add the newly created Run Task for Snyk. For example:\
    `https://app.terraform.io/app/{YOUR_TFC_ORG}/workspaces/{YOUR_WORKSPACE}/settings/tasks`
 6. Choose the enforcement level (Advisory or Mandatory) and click Create.
 
