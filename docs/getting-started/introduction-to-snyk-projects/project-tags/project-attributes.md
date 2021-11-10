@@ -25,7 +25,6 @@ Project attributes are static and non-configurable fields which allow you to add
 * External
 * Mobile
 * SaaS
-* On-Prem
 * Hosted
 * Distributed
 

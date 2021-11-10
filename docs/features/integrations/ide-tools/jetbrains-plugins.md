@@ -124,8 +124,8 @@ You can filter for each one of them by selecting the value from the dropdown as 
 After the plugin is installed, you can set the following configurations for the plugin, using **Preferences → Tools → Snyk**:
 
 * **Token**: the token that should be used for authentication with Snyk (can be generated via the Account Settings in Snyk App)
-* **Custom endpoint**: custom endpoint for Snyk app to allow users to use the plugin with Snyk on-prem.
-* **Ignore unknown CA**: for ignoring the SSL cert, when using the plugin with Snyk on-prem.
+* **Custom endpoint**: custom endpoint for Snyk app, if needed.
+* **Ignore unknown CA**: for ignoring the SSL cert, if needed.
 * **Organization**: the org to run Snyk test against (similarly to the --org param in the CLI).
 * **Additional parameters**: additional CLI snyk test params, you’d like to run the test with.
 * **Snyk Open Source vulnerabilities**: analyse the project for open source vulnerabilities through the CLI using the Snyk Open Source. Enabled by default.

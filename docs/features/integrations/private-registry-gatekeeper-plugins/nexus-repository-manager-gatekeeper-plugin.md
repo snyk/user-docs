@@ -53,7 +53,7 @@ To set up and configure the plugin, start scanning and managing your organizatio
 1. Go to your Snyk account to copy and save your personal API token or your service account token, and an **Organization ID**. Both a token and an organization ID are mandatory and must be configured in order for Snyk to authenticate your account. Because this plugin does not import any data to Snyk, you can use any of your organization IDs.
 2. From your Nexus instance, navigate to the Capabilities section and select to edit the **Snyk Security Configuration** from the list.
 3. Ensure **Enable this capability** is checked, and enter details for the remaining fields as follows:
-   * **Snyk API URL** - enter the API endpoint if you’re setting up on-prem or Broker for Snyk
+   * **Snyk API URL** - enter the API endpoint if you’re setting up Broker for Snyk
    * **Snyk API token** - paste the token value you saved from step 1
    * **Snyk Organization ID** - paste the token value you saved from step 1
    * **Vulnerability Threshold**—default is \*low\*. Valid values include none (will not block artifacts download), low, medium, high. Manually update the configuration based on your needs.
@@ -90,7 +90,7 @@ If your connection to Snyk is unsuccessful, try checking the following points or
 
 * Check Nexus logs for any related errors.
 * Ensure you’ve entered the API URL correctly for the configuration of the capability.
-* For on-prem and Broker configurations, ensure the Snyk service is running.
+* For Broker configurations, ensure the Snyk service is running.
 
 ## **Use Snyk in your build**
 
