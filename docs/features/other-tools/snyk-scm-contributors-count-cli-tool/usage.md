@@ -18,6 +18,8 @@ snyk-scm-contributors-count <command> <command-options>
 * `github`
 * `github-enterprise`
 * `gitlab`
+* `consolidateResults`
+
 
 **`<command-options>`**: see SCM-specific pages (example pages) in the [scripts](the-scripts/) section.
 
@@ -88,3 +90,7 @@ Additional flags can be set to the command:
 * **Choose which types of repos to add to the import file** - Apply the **`importFileRepoType `**flag** **with one of these options :** all, private or public**
 * **Exclude committers from being counted** - Apply the **`exclusionFilePath`** flag to the command with a path to text file that contains the emails of the committers that you would like to be excluded from the count.
 * **Output the summary and results in a json format** - Apply the **`json`** flag to the command
+
+## The consolidateResults command
+
+Used for consolidating results from several commands, across different SCMs, into a single file with unique contributors count, please refer to the [command page](/consolidateResults.md)
