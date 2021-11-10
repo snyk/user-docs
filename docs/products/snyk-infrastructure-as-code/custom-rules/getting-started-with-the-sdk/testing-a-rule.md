@@ -35,6 +35,10 @@ resource "aws_redshift_cluster" "allowed" {
 
 In the `want_msgs` field of the test case, you should add the msg fields of the resources that you expect that your deny rule will evaluate/return, e.g. `["input.resource.aws_redshift_cluster[denied].tags"]`.
 
+{% hint style="info" %}
+The `want_msgs` field should be an array containing hardcoded values corresponding to the computed `msg` field in the appropriate Rego rule.
+{% endhint %}
+
 {% code title="rules/my_rule/main_test.rego" %}
 ```
 package rules
