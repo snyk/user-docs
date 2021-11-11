@@ -33,6 +33,12 @@ In the context of your application, the Triage Assistant evaluates the vulnerabl
 
 ‌Snyk Code (SAST) engine is used to read your first-party code and to check the conditions for the vulnerabilities found by Snyk Open Source (SCA).
 
+{% hint style="info" %}
+To provide this feature, Snyk takes a temporary copy of your Git repository contents.&#x20;
+
+For more information see [how-snyk-handles-your-data.md](../../more-info/how-snyk-handles-your-data.md "mention")
+{% endhint %}
+
 #### Vulnerable Conditions
 
 Jackson Vulnerable Conditions:
