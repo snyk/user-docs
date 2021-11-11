@@ -37,7 +37,7 @@ If your SCM is already configured, go to the next stage.
 
 ## Example: GitHub
 
-Below is an example of how you would set up your an integration for **Github.com**
+Below is an example of how you would set up your integration for **Github.com**
 
 1. Go to the **Integrations** tab, and click on **GitHub**.&#x20;
 2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories:&#x20;
