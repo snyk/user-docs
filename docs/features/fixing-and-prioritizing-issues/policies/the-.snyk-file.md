@@ -106,15 +106,16 @@ patch:
 
 ### Setting language version for Python
 
-**Manually modifying the `.snyk` file for setting analysis for the project at Python 2.7 \***
+Manually modifying the `.snyk` file for setting analysis for the project at Python 2.7 \*
 
 ```
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
 version: v1.14.0
-language-settings: python: "2.7"
+language-settings: 
+python: "2.7"
 ```
 
-**Manually modifying the `.snyk` file for setting analysis for the project at Python 3.6.2 \***
+Manually modifying the `.snyk` file for setting analysis for the project at Python 3.6.2 \*
 
 ```
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
@@ -123,11 +124,11 @@ language-settings:
 python: "3.6.2"
 ```
 
-**Note:** by including the `.snyk` file in your code repository, when running code repository scans, this has an added advantage of creating project level python languages settings when the language-setting value is set
+**Note:** by including the `.snyk` file in your code repository, when running code repository scans, this has an added advantage of creating project level python languages settings when the language-setting value is set.
 
 ### Setting vulnerability ignore rules
 
-**Ignore Example - Specific vulnerability for a given path**
+Ignore Example - Specific vulnerability for a given path
 
 ```
 ignore:
@@ -137,7 +138,7 @@ ignore:
         expires: '2020-06-19T20:36:54.553Z'
 ```
 
-**Ignore Example - Ignore a vulnerability for all paths**
+Ignore Example - Ignore a vulnerability for all paths
 
 ```
 ignore:
@@ -147,7 +148,7 @@ ignore:
         expires: 2020-04-04T17:33:45.004Z
 ```
 
-**Ignore specific vulnerability on multiple paths**
+Ignore specific vulnerability on multiple paths
 
 ```
 ignore:
@@ -162,7 +163,7 @@ ignore:
 
 ### Setting license ignore rules
 
-**Ignore example - license issue for package**
+Ignore example - license issue for package
 
 You can find the ID for a License as a substring of the License issue URL, e.g.
 
