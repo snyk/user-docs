@@ -10,13 +10,13 @@
 
 ### What is Snyk CLI?
 
-Snyk CLI brings the functionality of [Snyk](https://snyk.io) into your development workflow. It can be run locally or in your CI/CD pipeline to scan your projects for security issues.
+Snyk CLI brings the functionality of [Snyk](https://snyk.io) into your development workflow. It can be run locally, or in your CI/CD pipeline, to scan your projects for security issues.
 
 #### Supported languages and tools
 
-Snyk supports many languages and tools, including Java, .NET, JavaScript, Python, Golang, PHP, C/C++, Ruby, Scala and more. See our [Language Support documentation](https://support.snyk.io/hc/en-us/articles/360020352437-Language-support-summary).
+Snyk supports many languages and tools, including Java, .NET, JavaScript, Python, Golang, PHP, C/C++, Ruby, Scala and more. See [Language & Package Manager support](../../products/snyk-open-source/language-and-package-manager-support/).
 
-CLI also supports [Docker scanning](https://support.snyk.io/hc/en-us/articles/360003946897-Snyk-Container-security-overview) and [Terraform, k8s and other Infrastructure as Code files scanning](https://support.snyk.io/hc/en-us/categories/360001342678-Infrastructure-as-code).
+CLI also supports [Snyk Container scanning](../../products/snyk-container/) and [Infrastructure as Code scanning](../../products/snyk-infrastructure-as-code/).
 
 {% content-ref url="install-the-snyk-cli/" %}
 [install-the-snyk-cli](install-the-snyk-cli/)
