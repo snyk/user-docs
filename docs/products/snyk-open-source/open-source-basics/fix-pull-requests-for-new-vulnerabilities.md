@@ -1,16 +1,16 @@
-# Fix pull requests for new vulnerabilities
+# Automated pull request creation for new fixes
 
 The following rules are applied to automatic PR creation for vulnerabilities:
 
-* Pull requests are created based on the **Test & Automated Pull Request Frequency** \(see screenshot below\) setting
-* If a scan is manually run \(you clicked **Retest now** for the project\), the 24-hour window is marked as having been run and no automatic PR is created until the next automated scan runs
-* One pull request is created per project \(priority score of 700 and above only\)
-* The vulnerability must be new since the last scan and have a fix
-* If the vulnerability is known \(backlog\) it will have a PR created when this setting is enabled only when a new fix has been released since the last scan and is considered a **new** vulnerability
+* Pull requests are created based on the **Test & Automated Pull Request Frequency** (see screenshot below) setting
+* If a scan is manually run (you clicked **Retest now** for the project), the 24-hour window is marked as having been run and no automatic PR is created until the next automated scan runs
+* One pull request is created per project (priority score of 700 and above only)
+* If **either** the vulnerability itself is new and has a fix available **or** if the fix is new and is not ignored&#x20;
+* For known vulnerabilities see [fix-pull-requests-for-known-vulnerabilities-backlog.md](fix-pull-requests-for-known-vulnerabilities-backlog.md "mention")
 
 ![](../../../.gitbook/assets/os1.png)
 
-To know when your last 24-hour window was kicked off, check the project page for **Snapshot taken by recurring test**--also check your email for **\[snyk\] Vulnerability alert** for specific scan results:
+To know when your last 24-hour window was kicked off, check the project page for **Snapshot taken by recurring test**--also check your email for **\[snyk] Vulnerability alert** for specific scan results:
 
 ![](../../../.gitbook/assets/os2.png)
 
@@ -22,8 +22,8 @@ See [Git repository SCM integrations](https://support.snyk.io/hc/en-us/sections/
 
 Enable at the global integration level:
 
-1. Navigate to settings ![](../../../.gitbook/assets/cog_icon.png) &gt; **Integrations**. 
-2. Select an SCM integration \(for example, GitHub\). 
+1. Navigate to settings ![](../../../.gitbook/assets/cog\_icon.png) > **Integrations**.&#x20;
+2. Select an SCM integration (for example, GitHub).&#x20;
 3. Enable **New vulnerabilities**
 
 **Apply changes to all overridden projects** will update all of the individual project settings for "Automatic fix pull requests". If a project previously had its own settings for this, clicking on this button will override it with the global setting.
@@ -34,7 +34,7 @@ Enable at the global integration level:
 
 Enabling/disabling at a project level will override this single project rather than inheriting it from the global integration setting.
 
-1. Under **Projects** select a project and select **Settings** \(top right-hand corner\)
+1. Under **Projects** select a project and select **Settings** (top right-hand corner)
 2. Select **GitHub integration**
 3. Under the **Automatic fix pull requests** section:
    * Select **Customize for only this project**
@@ -42,4 +42,3 @@ Enabling/disabling at a project level will override this single project rather t
    * Select **Save changes**
 
 ![](../../../.gitbook/assets/os3.png)
-
