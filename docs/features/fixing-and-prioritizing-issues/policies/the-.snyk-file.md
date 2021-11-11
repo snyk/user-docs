@@ -119,7 +119,8 @@ language-settings: python: "2.7"
 ```
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
 version: v1.14.0
-language-settings: python: "3.6.2"
+language-settings: 
+python: "3.6.2"
 ```
 
 **Note:** by including the `.snyk` file in your code repository, when running code repository scans, this has an added advantage of creating project level python languages settings when the language-setting value is set
