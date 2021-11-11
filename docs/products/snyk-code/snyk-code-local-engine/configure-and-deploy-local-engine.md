@@ -68,6 +68,14 @@ Please use _one_ of the following SCM configurations:
 | `broker-client.gitlabToken` | gitlab Host                 | `""`          |
 | `broker-client.gitlabHost`  | Host name for gitlab server | `""`          |
 
+#### Bitbucket server parameters
+
+| Name                              | Description                    | Default Value |
+| --------------------------------- | ------------------------------ | ------------- |
+| `broker-client.bitbucketUsername` | bitbucket username             | `""`          |
+| `broker-client.bitbucketPassword` | bitbucket password             | `""`          |
+| `broker-client.bitbucketHost`     | Host name for bitbucket server | `""`          |
+
 #### Azure Repos parameters
 
 | Name                            | Description               | Default Value |
