@@ -12,6 +12,7 @@ Snyk has the following core products to fix and find vulnerabilities:
 * [**Snyk Container**](../../products/snyk-container/): find and fix vulnerabilities in your container image.
 * [**Snyk Infrastructure as Code**](../../products/snyk-infrastructure-as-code/): find and fix vulnerabilities in Kubernetes, Helm and Terraform configuration files.
 * [**Snyk Intel Vulnerability Database**](https://snyk.io/product/vulnerability-database/): Access comprehensive and actionable open source and container vulnerability data.
+* [**Snyk Learn**](https://learn.snyk.io/): high-quality security education solution available for free and integrated with other Snyk products.
 
 ### Snyk tools
 
