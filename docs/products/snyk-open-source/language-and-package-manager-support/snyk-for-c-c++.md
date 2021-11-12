@@ -39,6 +39,43 @@ When you run the `snyk unmanaged test` command, Snyk:
 To scan the project, the dependencies must be available as source code in the scanned directory. If the dependencies are in a different location, that location must be scanned.
 {% endhint %}
 
+### Constraints and limitations
+
+{% hint style="info" %}
+The following constraints and limitations are by design. While we may work on improvements in the future, they are not considered an issue. Issues that are planned to be addressed are in the [Known Issues ](snyk-for-c-c++.md#known-issues)section.
+{% endhint %}
+
+**Dependencies source code needs to be available**
+
+For Snyk CLI to be able to find any dependencies in your source code, the full source code of the dependencies needs to be present in the scanned folder. The following is a typical directory structure Snyk can scan (abbreviated):
+
+```
+c-example
+├── deps
+│   ├── curl-7.58.0
+│   │   ├── include
+│   │   │   ├── Makefile.am
+│   │   │   ├── Makefile.in
+│   │   │   ├── README
+│   │   │   └── curl
+│   │   ├── install-sh
+│   │   ├── lib
+│   │   │   ├── asyn.h
+│   │   │   ├── base64.c
+│   │   │   ├── checksrc.pl
+│   │   │   ├── config-amigaos.h
+│   │   │   ├── conncache.c
+│   │   │   ├── conncache.h
+│   │   ├── src
+│   │   │   ├── tool_binmode.c
+│   │   │   ├── tool_binmode.h
+│   │   │   ├── tool_bname.c
+│   │   │   ├── tool_xattr.c
+...
+```
+
+Having a large percentage of files in their original (unchanged) form is critical to accurately identify the dependencies and so report the correct set of vulnerabilities. If you modify many of the files (or, for example, include only header files), this reduces the confidence of the scanning engine, leading to either dependencies not being identified, or being identified incorrectly (as a different version, or even a different package).
+
 #### Data collection note
 
 When you scan C++ projects, the following data is collected and may be stored for troubleshooting purposes:
@@ -217,6 +254,12 @@ Prints results in JSON format.
 
 This is  useful to display the human-readable test output via **stdout** and at the same time save the JSON format output to a file.
 
+**target-dir**
+
+`` `--target-dir <directory>` ``
+
+Scan the path specified in the argument instead of the current directory.
+
 ### Import scan results in Snyk App
 
 To import the test results (issues and dependencies) in Snyk App, run the `snyk unmanaged monitor` command:
@@ -241,6 +284,10 @@ Automated regular testing and re-scanning from the Snyk App is not currently sup
 {% endhint %}
 
 ### Known issues
+
+#### Some dependencies are not found
+
+During the beta phase, we are using an older version of our source code database. This means that open source dependencies that are being actively developed and contain many changes to their source code may not be identified correctly, or at all.
 
 #### Files in hidden directories are ignored
 
