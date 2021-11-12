@@ -90,7 +90,7 @@ Setting a default will ensure all newly monitored projects will be created under
 
 `--project-business-criticality=BUSINESS`_`CRITICALITY[,BUSINESS_CRITICALITY]...>` (only in monitor command) _Set the project business criticality to one or more values (comma-separated). To clear the project business criticality set `--project-business-criticality=`. Allowed values: critical, high, medium, low_ _
 
-`--project-tags=TAG[,TAG]...> `(only in monitor command). Alias `--tags=TAG[,TAG]...>. `Set the project tags to one or more values (comma-separated key value pairs with an "=" separator). e.g. --project-tags=department=finance,team=alpha. To clear set project tags `--project-tags=`
+`--project-tags=TAG[,TAG]...> `(only in monitor command) Set the project tags to one or more values (comma-separated key value pairs with an "=" separator). e.g. --project-tags=department=finance,team=alpha. To clear set project tags `--project-tags=`
 
 `--policy-path=PATH_TO_POLICY_FILE` Manually pass a path to a Snyk policy file.
 

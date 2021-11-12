@@ -305,6 +305,7 @@
       * [Set up the authorization code exchange](features/integrations/snyk-apps/getting-started-with-snyk-apps/set-up-the-authorization-code-exchange.md)
       * [Set up the refresh token exchange](features/integrations/snyk-apps/getting-started-with-snyk-apps/set-up-the-refresh-token-exchange.md)
       * [Retrieve the App Org IDs](features/integrations/snyk-apps/getting-started-with-snyk-apps/retrieve-the-app-org-ids.md)
+      * [Managing App details](features/integrations/snyk-apps/getting-started-with-snyk-apps/managing-app-details.md)
     * [Building your Snyk App](features/integrations/snyk-apps/building-your-snyk-app.md)
   * [Snyk Broker](features/integrations/snyk-broker/README.md)
     * [Broker introduction](features/integrations/snyk-broker/broker-introduction.md)
