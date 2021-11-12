@@ -48,7 +48,41 @@ When working with Gradle projects from our CLI, you can add any of the following
 | `--configuration-attributes=` | Select certain values of configuration attributes to resolve the dependencies. For example: `'buildtype:release,usage:java-runtime'`                                                                                                                                                                |
 | `--all-projects`              | Use for monorepos. This will detect all supported manifests. For Gradle monorepos Snyk will only look for root level **build.gradle / build.gradle.kts** files and apply the same logic as `--all-sub-projects` behind the scenes. This command is designed to be run in the root of your monorepo. |
 
-### Gradle sub-projects
+### Pass extra arguments directly to Gradle or Maven via Snyk CLI
+
+You can pass any extra Gradle or Maven arguments directly to **gradle** or **mvn** by providing them after a Snyk command like so:
+
+```
+snyk test -- --build-cache
+```
+
+**Examples of how you can use Maven arguments with the Snyk CLI**
+
+Test a specific Maven profile called “prod”.
+
+```
+snyk test -- -prod
+```
+
+Add a system property from your pom.xml file.
+
+For example:
+
+The package version appears in your pom.xml
+
+```
+${pkg_version}
+```
+
+Define the system property like this:
+
+```
+snyk test -- -Dpkg_version=1.4
+```
+
+## CLI help for Gradle projects
+
+### Sub-projects
 
 Gradle build can consist of several sub-projects, where each sub-project has its own build.gradle, while the root project is the only one that also includes a `settings.gradle` file. Sub-projects depend on the root project, but can be configured otherwise.
 
@@ -67,20 +101,6 @@ By default, Snyk CLI scans only the current project (the project in the root of 
     ```
     snyk test --sub-project=myapp
     ```
-
-### Solving Issues on Gradle CLI Projects with lockfile
-
-If your gradle project makes use of a single **gradle.lockfile** or multiple **\*.lockfile** per configuration and you are having the following issue
-
-**Gradle Error (short): > Could not resolve all dependencies for configuration ':compileOnly'. > Locking strict mode: Configuration ':compileOnly' is locked but does not have lock state.**
-
-Bear in mind that **compileOnly configuration** **has been deprecated** and even if your project successfully generates a lockfile, it will not contain \`compileOnly\` state because this configuration cannot be resolved. Only resolvable configurations compute a dependency graph. In order to solve this issue we suggest you **update your build.gradle containing dependencyLocking logic with the following instruction**
-
-```
-compileOnly {resolutionStrategy.deactivateDependencyLocking() }
-```
-
-This will **ignore compileOnly** and save only the necessary information to analyse your project/projects.
 
 ### Configurations
 
@@ -102,7 +122,7 @@ To test a specific configuration:
 * `--configuration-matching=^compile$` will match only compile;
 * `--configuration-matching='^(debug|release)compile$'` will match debugCompile and releaseCompile
 
-### Gradle Android build variants
+### Android build variants
 
 Android Gradle supports creating different versions of your app by configuring [build variants.](https://developer.android.com/studio/build/build-variants)
 
@@ -138,54 +158,40 @@ To avoid such conflicts:
 
     matches the variants using `com.android.build.api.attributes.BuildTypeAttr=release` and `org.gradle.usage=java-runtime`
 
-### Pass extra arguments directly to Gradle or Maven via Snyk CLI
-
-You can pass any extra Gradle or Maven arguments directly to **gradle** or **mvn** by providing them after a Snyk command like so:
-
-```
-snyk test -- --build-cache
-```
-
-**Examples of how you can use Maven arguments with the Snyk CLI**
-
-Test a specific Maven profile called “prod”.
-
-```
-snyk test -- -prod
-```
-
-Add a system property from your pom.xml file.
-
-For example:
-
-The package version appears in your pom.xml
-
-```
-${pkg_version}
-```
-
-Define the system property like this:
-
-```
-snyk test -- -Dpkg_version=1.4
-```
-
-### Gradle daemon
+### Daemon
 
 By default, Snyk passes `gradle build --no-daemon` in the background when running `snyk test` and `snyk monitor`. If for any reason, you run into trouble, try this:
 
 1. Start the Gradle daemon.
 2. Add `--daemon` to your `snyk test` or `snyk monitor`.
 
-### Support contact
+### Lockfiles
 
-If you are having any trouble testing your projects with Snyk, collect the following details and send them to us at `<`[`support@snyk.io`](mailto:support@snyk.io)`>` so we can help you out:
+If your Gradle project makes use of a single **gradle.lockfile** or multiple **\*.lockfile** per configuration and you are having the following issue
+
+**Gradle Error (short): > Could not resolve all dependencies for configuration ':compileOnly'. > Locking strict mode: Configuration ':compileOnly' is locked but does not have lock state.**
+
+Bear in mind that **compileOnly configuration** **has been deprecated** and even if your project successfully generates a lockfile, it will not contain \`compileOnly\` state because this configuration cannot be resolved. Only resolvable configurations compute a dependency graph. In order to solve this issue we suggest you **update your build.gradle containing dependencyLocking logic with the following instruction**
+
+```
+compileOnly {resolutionStrategy.deactivateDependencyLocking() }
+```
+
+This will **ignore compileOnly** and save only the necessary information to analyse your project/projects.
+
+### Support
+
+If you are having any trouble testing your Gradle projects with Snyk, collect the following details and send them to us at `<`[`support@snyk.io`](mailto:support@snyk.io)`>` so we can help you out:
 
 * `build.gradle`
 * `settings.gradle` (especially if we did not pick up a version of a package)
 * The output from the following commands:
   * `$ snyk test -d`
   * `$ gradle dependencies -q`
+
+## Git services for Maven projects
+
+After you select a project for import, we build the dependency tree based on the `pom.xml` file.
 
 ## Git services for Gradle projects
 
@@ -196,10 +202,6 @@ After you select a project for import, we build the dependency tree based on the
 If a lockfile is present, Snyk will use it to accurately resolve the final version of dependencies used in the project.
 
 Gradle lockfiles are an opt-in feature that, among other benefits, enable reproducible builds.Read more about Gradle dependency locking at [https://docs.gradle.org/current/userguide/dependency\_locking.html](https://docs.gradle.org/current/userguide/dependency\_locking.html)
-
-## Git services for Maven projects
-
-After you select a project for import, we build the dependency tree based on the `pom.xml` file.
 
 ## Git settings for Java
 
@@ -213,6 +215,8 @@ See the page below for more details on configuring the Artifactory integration.
 
 ## Additional Snyk support for Java
 
-In addition to the CLI and Snyk UI features, you can also check your Java projects with these plugins:
+In addition to the CLI and Snyk UI features, you can also check your Java projects with these integrations.
 
-* [Maven plugin for your build flow](../../../features/integrations/ci-cd-integrations/maven-plugin-integration.md)
+{% content-ref url="../../../features/integrations/ci-cd-integrations/maven-plugin-integration.md" %}
+[maven-plugin-integration.md](../../../features/integrations/ci-cd-integrations/maven-plugin-integration.md)
+{% endcontent-ref %}
