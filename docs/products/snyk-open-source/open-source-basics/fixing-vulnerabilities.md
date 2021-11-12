@@ -1,11 +1,15 @@
 # Fixing vulnerabilities
 
-Snyk provides actionable fix advice for vulnerabilities: see [Fix your vulnerabilities](../../../features/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities.md).
+Snyk provides actionable fix advice for vulnerabilities: see [fix-your-vulnerabilities.md](../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md "mention")
 
 Snyk supports workflows to fix vulnerabilities using:
 
-* Automatic pull / merge requests (PRs / MRs).
-* Manual pull / merge requests.
+* [Automatic pull / merge requests (PRs / MRs)](fixing-vulnerabilities.md#automatic-pull-merge-requests).
+* [Manual pull / merge requests](fixing-vulnerabilities.md#manual-pull-merge-requests-for-a-project-code).
+
+{% content-ref url="../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md" %}
+[what-languages-do-we-support-fix-pull-requests-or-merge-requests.md](../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md)
+{% endcontent-ref %}
 
 ## **Automatic pull / merge requests**
 
