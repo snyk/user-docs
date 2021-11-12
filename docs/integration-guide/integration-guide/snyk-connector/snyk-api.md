@@ -1,6 +1,6 @@
 # Snyk API
 
-This section will provide a quick overview of getting started with the Snyk API. For full details please visit the [Snyk API documentation](https://www.notion.so/snyk/How-to-Build-a-Snyk-Connector-0d54bd5d3c7f4baab49b656dfffcded0#d2d9bb65fddb4cd783d2cf4e0a99e2e4).
+This section will provide a quick overview of getting started with the Snyk API. For full details please visit the [Snyk API documentation](https://snyk.docs.apiary.io/).
 
 ## Overview of common Snyk API calls
 
