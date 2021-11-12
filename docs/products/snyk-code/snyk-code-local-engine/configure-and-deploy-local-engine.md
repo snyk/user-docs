@@ -2,8 +2,6 @@
 
 ### Installing the Helm Chart
 
-Download the charts from `https://snyk.io/<chart-page-local-code-engine>` And unzip them.
-
 To install the chart with the release name `my-release`:
 
 ```
