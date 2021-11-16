@@ -179,7 +179,7 @@ Make sure that the `OCI_REGISTRY_URL` configured in the GitHub Secrets does not 
 
 After publishing custom rules to an OCI registry, you can configure a separate pipeline to use these rules. For example, see [https://github.com/snyk/infrastructure-as-code-goof/pull/67](https://github.com/snyk/infrastructure-as-code-goof/pull/67).
 
-You can use the Snyk IaC GitHub Action with the `OCI_REGISTRY_URL`, `OCI_REGISTRY_USERNAME` , and `OCI_REGISTRY_PASSWORD` environment variables to scan your configuration files for any custom rules which may have been breached.&#x20;
+You can use the Snyk IaC GitHub Action with the `SNYK_CFG_OCI_REGISTRY_URL`, `SNYK_CFG_OCI_REGISTRY_USERNAME`, and `SNYK_CFG_OCI_REGISTRY_PASSWORD` environment variables to scan your configuration files for any custom rules which may have been breached.&#x20;
 
 The GitHub Action reads these environment variables and pulls down the bundle pushed in the previous step to the configured OCI registry. The GitHub action will look similar to this:
 
@@ -200,9 +200,9 @@ jobs:
         uses: snyk/actions/iac@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-          OCI_REGISTRY_URL: ${{ secrets.OCI_REGISTRY_URL }}
-          OCI_REGISTRY_USERNAME: ${{ secrets.OCI_REGISTRY_USERNAME }}
-          OCI_REGISTRY_PASSWORD: ${{ secrets.OCI_REGISTRY_PASSWORD }}
+          SNYK_CFG_OCI_REGISTRY_URL: ${{ secrets.OCI_REGISTRY_URL }}
+          SNYK_CFG_OCI_REGISTRY_USERNAME: ${{ secrets.OCI_REGISTRY_USERNAME }}
+          SNYK_CFG_OCI_REGISTRY_PASSWORD: ${{ secrets.OCI_REGISTRY_PASSWORD }}
 ```
 
 The result is that the GitHub action will fail until the generated misconfigurations have been resolved:

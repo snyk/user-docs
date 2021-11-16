@@ -10,14 +10,7 @@ snyk-iac-rules push -r docker.io/example/test bundle.tar.gz
 Make sure to log into your container registry first. For example, using Docker run `docker login` before running the `snyk-iac-rules push` command
 {% endhint %}
 
-We use the OCI registries that support the [OCI artifact specification](https://github.com/opencontainers/artifacts) and leverage [ORAS](https://github.com/deislabs/oras) to achieve that. Amongst our currently supported registries we have:
-
-* [DockerHub](https://hub.docker.com)
-* [Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/)
-* [Harbor](https://goharbor.io)
-* [GitHub Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
-
-And more to come.
+We use the OCI registries that support the [OCI artifact specification](https://github.com/opencontainers/artifacts) and leverage [ORAS](https://github.com/deislabs/oras) to achieve that. Amongst our currently supported registries we have [DockerHub](https://hub.docker.com), [Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/), [Harbor](https://goharbor.io), and more to come.
 
 Once you have run the command, your custom rules bundle will be pushed to your OCI registry using the `latest` tag.&#x20;
 
