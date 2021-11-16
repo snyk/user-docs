@@ -1,3 +1,48 @@
+# snyk-help(1) -- Prints help topics
+
+## SYNOPSIS
+
+`snyk` `help` \[<TOPIC>\] \[<OPTIONS>\]
+
+## DESCRIPTION
+
+Prints help information. Pass in name of a command as <TOPIC>.
+
+## OPTIONS
+
+
+
+
+### Flags available accross all commands
+
+- `--insecure`:
+  Ignore unknown certificate authorities.
+
+- `-d`:
+  Output debug logs.
+
+- `--quiet`, `-q`:
+  Silence all output.
+
+- `--version`, `-v`:
+  Prints versions.
+
+- \[<COMMAND>\] `--help`, `--help` \[<COMMAND>\], `-h`:
+  Prints a help text. You may specify a <COMMAND> to get more details.
+
+
+
+
+## EXIT CODES
+
+Possible exit codes and their meaning:
+
+**0**: success, no vulns found<br />
+**1**: action_needed, vulns found<br />
+**2**: failure, try to re-run command<br />
+**3**: failure, no supported projects detected<br />
+
+
 ## ENVIRONMENT
 
 You can set these environment variables to change CLI run settings.
@@ -33,3 +78,11 @@ By default Snyk CLI will connect to `https://snyk.io/api/v1`.
 
 - `HTTPS_PROXY` and `HTTP_PROXY`:
   Allows you to specify a proxy to use for `https` and `http` calls. The `https` in the `HTTPS_PROXY` means that _requests using `https` protocol_ will use this proxy. The proxy itself doesn't need to use `https`.
+
+
+## NOTICES
+
+### Snyk API usage policy
+
+The use of Snyk's API, whether through the use of the 'snyk' npm package or otherwise, is subject to the [terms & conditions](https://snyk.co/ucT6N)
+
