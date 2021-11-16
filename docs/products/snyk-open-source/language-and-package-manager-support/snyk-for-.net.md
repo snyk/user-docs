@@ -171,3 +171,8 @@ If you believe you have found false positives because when the application runs 
 </PropertyGroup>
 ```
 
+## Unsupported&#x20;
+
+* [`Directory.Build.props`](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets) and [`Directory.Build.targets`](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets) are not currently supported
+* `<ProjectReference>`elements are not currently supported
+* Private dependency scanning is unsupported via the SCM integration. You can scan private dependencies using the Snyk CLI
