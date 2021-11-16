@@ -18,24 +18,15 @@ Snyk IaC includes a comprehensive list of security rules, covering AWS, Azure, G
 
 These rules aim to meet the majority of your needs on your first scan, but you may need to enforce additional security rules for your system, such as tagging standards.&#x20;
 
-#### Creating additional Snyk IaC Custom Rules
+#### Creating additional rules
 
 The IaC SDK helps security teams define their own rules, to be run by the [Snyk CLI](../snyk-cli-for-infrastructure-as-code/) giving feedback to developers.
 
-Using this SDK, you can add your own custom rules to Snyk IaC, to run alongside the standard provided rules, giving comprehensive security feedback to your development teams in one place.
+Using this SDK, you can add your own custom rules to Snyk IaC, to run alongside the standard provided rules, giving comprehensive security feedback to your development teams in one place.&#x20;
 
-#### Snyk platform policies and Snyk IaC custom rules
-
-{% hint style="info" %}
-Summary:&#x20;
-
-* Snyk platform policies: manage issues
-* Snyk IaC custom rules: generate issues&#x20;
+{% hint style="success" %}
+Ready to get started with Snyk? [Sign up for free!](https://snyk.io/login?cta=sign-up\&loc=footer\&page=support\_docs\_page)​
 {% endhint %}
-
-The Snyk platform allows you to create your own [policies](../../../features/fixing-and-prioritizing-issues/policies/), to manage how you prioritize and triage the issues Snyk identifies during scanning. For example, you can define policies to change the priority of an issue from medium to high if it has specific attributes, or to bulk ignore issues if they meet certain criteria.
-
-The Snyk IaC custom rules functionality enables you to define your own rules for misconfiguration checks that you would like to enforce. The result of a custom rule failing on a configuration file will generate an issue.
 
 
 
