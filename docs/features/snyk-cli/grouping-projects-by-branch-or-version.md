@@ -1,7 +1,7 @@
 # Separating projects by branch or version
 
 {% hint style="warning" %}
-This feature is currently in Open Beta. There will be areas where it is not fully supported.
+This feature is currently in Open Beta. There will be areas where it is not fully supported. Currently [Snyk Open Source](../../products/snyk-open-source/) is supported.
 {% endhint %}
 
 Sometimes your project might have multiple states which you want to monitor separately. These could be branches, releases, deployments and so on. You can use `--target-reference` to separate projects into these specific groupings.
