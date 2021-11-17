@@ -122,7 +122,7 @@ From the Snyk UI, you can configure whether Snyk should scan your entire project
 For a general understanding of how Snyk helps you fix Open Source vulnerabilities within your projects, please visit the following document [Fix your vulnerabilities](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities).&#x20;
 
 {% hint style="info" %}
-Please note the Fix PR feature is currently in open beta and only available across our [SCM](https://docs.snyk.io/getting-started/scm-git-and-ci-cd-integration-deployment-intro) integrations. If you would like to be part of the early beta program we recommend you get in touch with your Customer Success Manager.
+Please note the Fix PR feature is _only_ available across our [SCM](https://docs.snyk.io/getting-started/scm-git-and-ci-cd-integration-deployment-intro) integrations.&#x20;
 {% endhint %}
 
 ### Fix PR supported manifest files
@@ -136,9 +136,11 @@ In the .NET ecosystem, there are multiple levels of dependencies, some of which 
 We resolve dependencies differently in the Snyk CLI, and the Source Code Management (SCM) systems such as GitHub:
 
 * In the CLI, if you manage your project dependencies using `PackageReference`, we scan your `obj/project.assets.json`; if you manage your dependencies using `packages.config`, we scan the `packages` directory. This approach allows us to be very accurate.
-*   In the SCM integration, scanning uses a different process, as the generated files mentioned above are not available. To overcome this we follow the nuget dependency [resolution algorithm](https://docs.microsoft.com/en-us/nuget/concepts/dependency-resolution) to construct a dependency tree.&#x20;
+*   In the SCM integration, scanning uses a different process, as the generated files mentioned above are not available. To overcome this we follow the NuGet dependency [resolution algorithm](https://docs.microsoft.com/en-us/nuget/concepts/dependency-resolution) to construct a dependency tree.&#x20;
 
     **Note**: runtime dependencies (provided by the runtime environment also known as "meta-packages") are resolved more accurately in the CLI if the host machine uses a similar runtime SDK to the server running the app.
+
+For further reading on .NET automated fixes, please visit our [blog](https://snyk.io/blog/automated-vulnerability-fixes-dot-net-dependencies).
 
 #### Build-time vs Runtime dependencies
 
