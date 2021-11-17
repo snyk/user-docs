@@ -183,7 +183,7 @@
     * [View Infrastructure as Code issues](products/snyk-infrastructure-as-code/iac-functions/view-infrastructure-as-code-issues.md)
   * [Build your own custom rules](products/snyk-infrastructure-as-code/custom-rules/README.md)
     * [Install the SDK](products/snyk-infrastructure-as-code/custom-rules/install-the-sdk.md)
-    * [Getting Started with the SDK](products/snyk-infrastructure-as-code/custom-rules/getting-started-with-the-sdk/README.md)
+    * [Getting started with the SDK](products/snyk-infrastructure-as-code/custom-rules/getting-started-with-the-sdk/README.md)
       * [Parsing an input file](products/snyk-infrastructure-as-code/custom-rules/getting-started-with-the-sdk/parsing-an-input-file.md)
       * [Writing a rule](products/snyk-infrastructure-as-code/custom-rules/getting-started-with-the-sdk/writing-a-rule.md)
       * [Testing a rule](products/snyk-infrastructure-as-code/custom-rules/getting-started-with-the-sdk/testing-a-rule.md)
