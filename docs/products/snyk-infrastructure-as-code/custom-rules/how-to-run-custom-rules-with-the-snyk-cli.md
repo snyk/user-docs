@@ -88,11 +88,11 @@ To configure remote bundles:
 
 * Enable the usage of remote bundles configuration using the **Enable rules **toggle. Doing so will display the form as shown below:
 
-![](<../../../.gitbook/assets/image (83).png>)
+![](<../../../.gitbook/assets/image (83) (1).png>)
 
 * Configure the OCI registry URL and tag for your remote bundle of custom rules, and click  Save changes to save.
 
-![](<../../../.gitbook/assets/image (74) (1) (1).png>)
+![](<../../../.gitbook/assets/image (74) (1) (1) (1).png>)
 
 Your remote bundle of custom rules has now been configured and will be used when testing IaC files.
 
@@ -104,13 +104,13 @@ However, an organization can still override the group's configurations and defin
 
 In order to override the group's configurations, head to the organization's `Rules` section on the Infrastructure as Code Settings.
 
-![](<../../../.gitbook/assets/image (66) (1).png>)
+![](<../../../.gitbook/assets/image (66) (1) (1).png>)
 
 Initially, you will see the section is populated with the configurations inherited from the organization's group.
 
 Update the configurations to those customized for your organization, and click to `Save changes`.
 
-![](<../../../.gitbook/assets/image (68) (1) (1).png>)
+![](<../../../.gitbook/assets/image (68) (1) (1) (1).png>)
 
 * Now, configurations on the group level will not override these customized settings for your organization.
 
