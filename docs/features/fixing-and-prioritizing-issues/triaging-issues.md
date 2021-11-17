@@ -25,8 +25,6 @@ Vulnerabilities that are not exploitable are unlikely to pose a security threat 
 
 {% hint style="info" %}
 Currently, this feature is only available to **Java** (Gradle and Maven) ecosystem, when using **GitHub** as the source, and when **Snyk Code** is enabled.
-
-To enable this feature, within Snyk, go to **Settings (**⚙️**) → Snyk Preview **and enable this feature.
 {% endhint %}
 
 In the context of your application, the Triage Assistant evaluates the vulnerable conditions, which helps you determine the exploitability of your application.
@@ -55,10 +53,10 @@ Jackson Vulnerable Conditions:
 
 All the conditions must be met for the vulnerability to be exploitable.
 
-![Triage Assistant UI](<../../.gitbook/assets/image (61) (1).png>)
+![Triage Assistant UI](<../../.gitbook/assets/image (61) (1) (1).png>)
 
 {% hint style="info" %}
-This feature is currently in preview, and might be changed.
+This feature is currently in **preview**, and might be changed.
 {% endhint %}
 
 #### Vulnerability with Exploit Maturity but not exploitable?
