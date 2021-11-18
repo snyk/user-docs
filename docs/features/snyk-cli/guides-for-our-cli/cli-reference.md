@@ -82,7 +82,7 @@ Setting a default will ensure all newly monitored projects will be created under
 
 `--project-name=PROJECT_NAME` Specify a custom Snyk project name.
 
-`--target-reference=TARGET_REFERENCE` A reference to separate this project from other scans of the same project. For example, a branch name or version. Projects using the same reference can be used for grouping. Only supported for [Snyk Open Source](../../../products/snyk-open-source/). For more information, see: [grouping-projects-by-branch-or-version.md](../grouping-projects-by-branch-or-version.md "mention").
+`--target-reference=TARGET_REFERENCE` A reference which differentiates this project. For example, a branch name or version. Projects using the same reference can be used for grouping. Only supported for [Snyk Open Source](../../../products/snyk-open-source/). For more information, see: [grouping-projects-by-branch-or-version.md](../grouping-projects-by-branch-or-version.md "mention").
 
 `--project-environment=ENVIRONMENT[,ENVIRONMENT]...> `(only in monitor command) Set the project environment to one or more values (comma-separated). To clear the project environment set `--project-environment=`. Allowed values: frontend, backend, internal, external, mobile, saas, onprem, hosted, distributed
 

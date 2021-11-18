@@ -8,3 +8,4 @@ You can create an organization, or join one via invitation. If you have more tha
 
 Notifications about newly disclosed vulnerabilities are per organization; you can turn them on and off per organization.
 
+![](<../../../.gitbook/assets/Group Onboarding Session v2.0.png>)
