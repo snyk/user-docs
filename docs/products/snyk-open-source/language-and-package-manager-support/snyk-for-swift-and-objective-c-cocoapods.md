@@ -25,19 +25,19 @@ In order to scan your dependencies, you must ensure you have first installed the
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project
 
-#### Snyk CLI tool for CocoaPods projects
+### Snyk CLI tool for CocoaPods projects
 
 We scan CocoaPods projects and examine your Podfile and Podfile.lock files. We then compare the specific versions of every direct and deep dependency in your project against our vulnerability database in order to build the project dependency tree accordingly.
 
-#### **CLI parameters for Swift and Objective-C**
+### **CLI parameters for Swift and Objective-C**
 
-### **Prerequisites**
+#### **Prerequisites**
 
 * Ensure you've installed the relevant package manager before you begin using the Snyk CLI tool.
 * Ensure you've included the relevant manifest files supported by Snyk before testing.
 * Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81) as well.
 
-### **Parameters**
+#### **Parameters**
 
 When working with Swift and Objective-C projects from our CLI, you can prevent testing any lockfiles that are out-of-sync, as follows:
 
