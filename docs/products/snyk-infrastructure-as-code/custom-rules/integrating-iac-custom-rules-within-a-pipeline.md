@@ -7,18 +7,19 @@ The ideal scenario for managing, distributing, and enforcing your custom rules i
 This example shows how a security team can:
 
 * Store their rules in a GitHub repository
-* Use GitHub Actions to add different development-time to their pipelines
+* Use GitHub Actions to add different development-time steps to their pipelines
 * Configure a different GitHub repository to run a GitHub Action pipeline that uses the custom rules to gate changes.
 
 We use the [snyk/custom-rules-example](https://github.com/snyk/custom-rules-example) repository for the example; this repo contains all the custom rules written while [getting started with the SDK](getting-started-with-the-sdk/).
 
 #### Aims
 
-We want to configure our pipeline to achieve two things:
+We want to configure our pipeline to achieve fourh things:
 
 1. Verify that new rules or changes to the existing rules don't break existing functionality.
 2. Publish the rules in `main` to an OCI registry.
 3. Enforce the usage of custom rules in other pipelines.
+4. (Optional) Configure the custom rules using environment variables.
 
 ### Adding PR checks using GitHub Action
 
@@ -142,7 +143,7 @@ jobs:
       - name: Publish rules
         run: snyk-iac-rules push --registry $OCI_REGISTRY_URL bundle.tar.gz
         env:
-          OCI_REGISTRY_URL: ${{ secrets.OCI_REGISTRY_URL }}
+          OCI_REGISTRY_URL: "${{ secrets.OCI_REGISTRY_NAME }}:v1"
 ```
 {% endcode %}
 
@@ -161,23 +162,90 @@ So, we can start trialing bundle `v2-beta` while still using `v1` in most of our
 {% code title=".github/workflows/publish.yml" %}
 ```
       - name: Publish experimental rules
-        run: snyk-iac-rules push --registry $OCI_REGISTRY_URL:v2-beta bundle.tar.gz
+        run: snyk-iac-rules push --registry $OCI_REGISTRY_URL bundle.tar.gz
         env:
-          OCI_REGISTRY_URL: ${{ secrets.OCI_REGISTRY_URL }}
+          OCI_REGISTRY_URL: "${{ secrets.OCI_REGISTRY_NAME }}:v1"
       - name: Publish rules
-        run: snyk-iac-rules push --registry $OCI_REGISTRY_URL:v1 bundle.tar.gz
+        run: snyk-iac-rules push --registry $OCI_REGISTRY_URL bundle.tar.gz
         env:
-          OCI_REGISTRY_URL: ${{ secrets.OCI_REGISTRY_URL }}
+          OCI_REGISTRY_URL: "${{ secrets.OCI_REGISTRY_NAME }}:v2-beta"
 ```
 {% endcode %}
 
 {% hint style="info" %}
-Make sure that the `OCI_REGISTRY_URL` configured in the GitHub Secrets does not already contain the tag if you want to use this workflow.
+Make sure that the OCI\_REGISTRY\_NAME configured in the GitHub Secrets does not already contain the tag or the protocol if you want to use this workflow.
 {% endhint %}
 
 ### Enforcing the custom rules
 
-After publishing custom rules to an OCI registry, you can configure a separate pipeline to use these rules. For example, see [https://github.com/snyk/infrastructure-as-code-goof/pull/67](https://github.com/snyk/infrastructure-as-code-goof/pull/67).
+After publishing the custom rules to an OCI registry, you can configure a separate pipeline to use these rules. One way to do this is by using the [public Group IaC Settings API](https://snykv3.docs.apiary.io/#reference/group-settings/infrastructure-as-code/update-infrastructure-as-code-settings).
+
+This means configuring the GitHub Action above with another job for updating Snyk to use the configured custom rules bundle:
+
+```
+      - name: Update Snyk
+        run: |
+          curl --location --request PATCH 'https://api.snyk.io/v3/groups/<group id>/settings/iac/?version=2021-11-03~beta' \
+          --header 'Content-Type: application/vnd.api+json' \
+          --header 'Authorization: token ${{ secrets.SNYK_TOKEN }}' \
+          --data-raw '{
+            "data": {
+                  "type": "iac_settings",
+                  "attributes": {
+                    "custom_rules": {
+                      "oci_registry_url": "https://registry-1.${{ secrets.OCI_REGISTRY_NAME }}",
+                      "oci_registry_tag": "v1",
+                      "is_enabled": true
+                    }
+                }
+            }
+          }'
+```
+
+This API call will update the chosen Snyk group and all the organizations underneath it to use the configured custom rules bundle.&#x20;
+
+{% hint style="info" %}
+For now, if we want to configure an organization to use a different bundle, such as the `v2-beta` one, we are limited to using the Snyk Settings page. There we can either configure a new bundle or disable custom rules so that we can use environment variables in our CI/CD pipeline to run the custom rules.&#x20;
+{% endhint %}
+
+In a different repository, all you have to do is authenticate with one of the organizations underneath this group and add the Snyk IaC GitHub Action to a workflow:
+
+```
+name: Snyk Infrastructure as Code Custom Rules
+
+on:
+  push:
+
+jobs:
+  snyk-iac-security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run Snyk to check Infrastructure as Code files for issues
+        continue-on-error: false
+        uses: snyk/actions/iac@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+```
+
+The result is that the GitHub action will fail until the generated misconfigurations have been resolved:
+
+```
+Testing example.tf...
+
+
+Infrastructure as code issues:
+  ✗ IAM Role missing one of the required tags: owner, description or type [Medium Severity] [CUSTOM-RULE-8]
+    introduced by input > resource > aws_iam_role[new_role] > tags
+
+  ✗ Vendor or Service must have either owneralternate or ticketgroup or both tags. [Medium Severity] [CUSTOM-RULE-9]
+    introduced by input > resource > aws_iam_role[new_role] > tags
+```
+
+### Configuring the custom rules
+
+Additionally, if using an API or the Snyk Settings page seem too restrictive, we also provide a way to configure the custom rules by using the environment variables.
 
 You can use the Snyk IaC GitHub Action with the `SNYK_CFG_OCI_REGISTRY_URL`, `SNYK_CFG_OCI_REGISTRY_USERNAME`, and `SNYK_CFG_OCI_REGISTRY_PASSWORD` environment variables to scan your configuration files for any custom rules which may have been breached.&#x20;
 
@@ -204,30 +272,3 @@ jobs:
           SNYK_CFG_OCI_REGISTRY_USERNAME: ${{ secrets.OCI_REGISTRY_USERNAME }}
           SNYK_CFG_OCI_REGISTRY_PASSWORD: ${{ secrets.OCI_REGISTRY_PASSWORD }}
 ```
-
-The result is that the GitHub action will fail until the generated misconfigurations have been resolved:
-
-```
-Testing example.tf...
-
-
-Infrastructure as code issues:
-  ✗ Non-encrypted Redshift DB at rest [Medium Severity] [SNYK-CC-TF-108] in Redshift
-    introduced by resource > aws_redshift_cluster[test] > encrypted
-
-  ✗ Missing a description and an owner from tag, or owner tag does not comply with email requirements [Medium Severity] [CUSTOM-RULE-4]
-    introduced by input > resource > aws_redshift_cluster[test] > tags
-
-  ✗ Missing a description or an owner from the tag [Medium Severity] [CUSTOM-RULE-3]
-    introduced by input > resource > aws_redshift_cluster[test] > tags
-
-  ✗ Missing an owner from tag [Medium Severity] [CUSTOM-RULE-1]
-    introduced by input > resource > aws_redshift_cluster[test] > tags
-
-  ✗ Missing a description and an owner from the tag [Medium Severity] [CUSTOM-RULE-2]
-    introduced by input > resource > aws_redshift_cluster[test] > tags
-
-  ✗ Redshift cluster logging disabled [Low Severity] [SNYK-CC-TF-136] in Redshift
-    introduced by resource > aws_redshift_cluster[test] > logging
-```
-
