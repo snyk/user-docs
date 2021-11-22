@@ -57,7 +57,7 @@ Snyk supports resolutions only in Yarn v2 in repositories _without_ workspaces. 
 ### Yarn workspaces
 
 {% hint style="info" %}
-Yarn v1 workspaces support is for `snyk test` and `snyk monitor` commands only at this time. We do not support workspaces for Yarn v2.
+Yarn v1 & 2 workspaces support is for `snyk test` and `snyk monitor` commands only at this time.
 {% endhint %}
 
 For Yarn workspaces use the `--yarn-workspaces` flag to test and monitor your packages. The root lockfile is referenced when scanning all the packages. Use the `--detection-depth` parameter to find sub-folders which are not auto discovered by default.
@@ -72,7 +72,7 @@ You may use a common **.snyk** policy file if you maintain ignores/patches in on
 ### Lerna
 
 {% hint style="info" %}
-We currently do **not** support Lerna. However, you _might_ be able to run Snyk test/monitor with the following workaround commands to help you unblock the Snyk CLI integration.&#x20;
+We currently do **not** support Lerna. However, if your Lerna project is using Yarn Workspaces then the project can be scanned with the standard Yarn Workspaces support. You _might_ be able to run Snyk test/monitor with the following workaround commands to help you unblock the Snyk CLI integration.&#x20;
 {% endhint %}
 
 For each example-package you can do:
@@ -128,7 +128,9 @@ We build the dependency tree based on these files:
 
 ### Yarn
 
-Yarn version 1 is supported in Git services.
+{% hint style="info" %}
+Yarn version 1 & 2 is supported in Git services.
+{% endhint %}
 
 We build the dependency tree based on these files:
 
@@ -140,6 +142,7 @@ We build the dependency tree based on these files:
 {% hint style="info" %}
 **Note**\
 Git support for Yarn Workspaces is enabled for all projects in organisations created after March 3rd 2021. To enable this feature for organisations created before this date please contact support@snyk.io.
+Yarn version 1 & 2 is supported in Git services.
 {% endhint %}
 
 For Yarn Workspaces we scan each `package.json` that matches the `packages` pattern from the root level `package.json` and root level `yarn.lock`.
