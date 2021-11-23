@@ -6,6 +6,8 @@
 
 See [Snyk Advisor](https://support.snyk.io/hc/en-us/articles/360017682058-Snyk-Glossary#SnykAdvisor).
 
+## B
+
 ### Base image
 
 The parent image used to construct a container image, usually defined in the FROM directive in a Dockerfile. Base images themselves can be constructed from other base images.
@@ -17,6 +19,8 @@ See [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker).
 ### Build System
 
 A system that takes the source code and builds the deployable application (such as a container).
+
+## C
 
 ### CI / CD
 
@@ -58,9 +62,11 @@ Common Vulnerability Scoring System. An industry standard to assess the severity
 
 Common Weakness Enumeration, an online glossary that categorizes software and hardware weaknesses into different types. For example: **CWE-20: Input Validation**.
 
+## D
+
 ### DAST
 
-Dynamic Application Security Testing. An application that you can point at a site or service; it then typically profiles the site or service, then examines the output and behaviour to uncover security vulnerabilities.
+Dynamic Application Security Testing. An application that you can point at a site or service; it then typically profiles the site or service, then examines the output and behaviour to uncover security vulnerabilities. Also see [SAST](glossary.md#sast).
 
 ### Dependency
 
@@ -187,7 +193,7 @@ A fix type: define and "pin" a specific version of an indirect dependency, to av
 
 ### PR
 
-Pull request. Allows a user to exchange changes made to source code and collaborate with others on the same branch.
+Pull Request. Allows a user to exchange changes made to source code and collaborate with others on the same branch.
 
 ### Priority Score
 
@@ -219,7 +225,7 @@ Static Analysis Results Interchange Format. A standard, JSON-based format for th
 
 ### SAST
 
-Static Application Security Testing. A method to secure software by reviewing the source code of your proprietary software, and identifying sources of vulnerabilities.
+Static Application Security Testing. A method to secure software by reviewing the source code of your proprietary software, and identifying sources of vulnerabilities. Also see [DAST](glossary.md#ast).
 
 ### SBOM
 

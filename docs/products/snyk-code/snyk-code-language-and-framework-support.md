@@ -6,7 +6,7 @@ Snyk Code currently supports:
 * [**JavaScript and TypeScript**](../snyk-open-source/language-and-package-manager-support/snyk-for-javascript.md)
 * [**Python**](../snyk-open-source/language-and-package-manager-support/snyk-for-python.md)
 * ****[**PHP**](../snyk-open-source/language-and-package-manager-support/snyk-for-php.md)****
-* ****[**C#**](snyk-code-language-and-framework-support.md#c-frameworks)
+* **C#** (see **C# Frameworks** section below)
 
 ## Language type and framework support
 
