@@ -18,6 +18,10 @@ We use the OCI registries that support the [OCI artifact specification](https://
 * [Harbor](https://goharbor.io)
 * [GitHub Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
 
+{% hint style="warning" %}
+We do not support insecure registries. The only protocol we support is HTTPS.
+{% endhint %}
+
 And more to come.
 
 Once you have run the command, your custom rules bundle will be pushed to your OCI registry using the `latest` tag.&#x20;
