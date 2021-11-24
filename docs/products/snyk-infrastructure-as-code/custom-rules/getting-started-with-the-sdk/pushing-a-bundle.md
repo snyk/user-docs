@@ -12,6 +12,7 @@ Make sure to log into your container registry first. For example, using Docker r
 
 We use the OCI registries that support the [OCI artifact specification](https://github.com/opencontainers/artifacts) and leverage [ORAS](https://github.com/deislabs/oras) to achieve that. Amongst our currently supported registries we have:
 
+* [Google Container Registry](https://cloud.google.com/container-registry)
 * [DockerHub](https://hub.docker.com)
 * [Elastic Container Registry](https://aws.amazon.com/ecr/)
 * [Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/)
