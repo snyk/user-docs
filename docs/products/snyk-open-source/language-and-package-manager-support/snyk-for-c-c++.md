@@ -1,7 +1,5 @@
 # Snyk for C / C++
 
-
-
 {% hint style="info" %}
 This feature is currently in Beta; contact Snyk for more details.
 {% endhint %}
@@ -117,7 +115,10 @@ $ snyk unmanaged test --print-deps
 Dependencies:
 
   cpython|https://github.com/python/cpython/archive/v3.7.2.zip@3.7.2
+  confidence: 1.000
+  
   zip|http://ftp.debian.org/debian/pool/main/z/zip/zip_3.0.orig.tar.gz@3.0
+  confidence: 0.993
 ```
 
 To learn what files contributed to each dependency being identified, use the `--print-dep-paths` argument:
@@ -128,6 +129,7 @@ $ snyk unmanaged test --print-dep-paths
 Dependencies:
 
   curl|https://github.com/curl/curl/releases/download/curl-7_58_0/curl-7.58.0.tar.xz@7.58.0
+  confidence: 1.000
   matching files:
     - c-example/deps/curl-7.58.0/CHANGES
     - c-example/deps/curl-7.58.0/CMake/CMakeConfigurableFile.in
@@ -135,91 +137,111 @@ Dependencies:
     ... and 2857 more files
 ```
 
+#### Understanding the confidence level
+
+You may need to change the source code of the dependencies that you use in your software. As Snyk uses file signatures to find the closest possible match to an open source library, your changes may decrease the accuracy of the identification of the actual library.&#x20;
+
+To learn how confident Snyk is about the identified dependency and its version, use the  `--print-deps` or `--print-dep-paths` command line argument:
+
+```
+curl|https://github.com/curl/curl/releases/download/curl-7_58_0/curl-7.58.0.tar.xz@7.58.0
+confidence: 0.993
+```
+
+This confidence level shows how confident Snyk is about the actual identification of the dependency. The number can be between 0 and 1 and the higher it is, the more accurate the identification is. So a confidence of **1** means that all the files in the source tree fully matched all the expected files in our database.
+
 #### JSON output
 
 To get a machine-readable output in JSON, use the `--json` argument:
 
 ```
 $ snyk unmanaged test --json
-[{
-	"issues": [{
-		"pkgName": "curl|https://github.com/curl/curl/releases/download/curl-7_58_0/curl-7.58.0.tar.xz",
-		"pkgVersion": "7.58.0",
-		"issueId": "CVE-2019-5481",
-		"fixInfo": {
-			"isPatchable": false,
-			"isPinnable": false
-		}
-	}],
-	"issuesData": {
-		"CVE-2019-5481": {
-			"severity": "high",
-			"CVSSv3": "",
-			"originalSeverity": "high",
-			"severityWithCritical": "high",
-			"type": "vuln",
-			"alternativeIds": [
-				""
-			],
-			"creationTime": "2019-09-16T19:15:00.000Z",
-			"disclosureTime": "2019-09-16T19:15:00.000Z",
-			"modificationTime": "2020-10-20T22:15:00.000Z",
-			"publicationTime": "2019-09-16T19:15:00.000Z",
-			"credit": [
-				""
-			],
-			"id": "CVE-2019-5481",
-			"packageManager": "cpp",
-			"packageName": "curl|https://github.com/curl/curl/releases/download/curl-7_58_0/curl-7.58.0.tar.xz",
-			"language": "cpp",
-			"fixedIn": [
-				""
-			],
-			"patches": [],
-			"exploit": "No Data",
-			"functions": [
-				""
-			],
-			"semver": {
-				"vulnerable": [
-					"7.58.0"
-				],
-				"vulnerableHashes": [
-					""
-				],
-				"vulnerableByDistro": {}
-			},
-			"references": [{
-					"title": "https://curl.haxx.se/docs/CVE-2019-5481.html",
-					"url": "https://curl.haxx.se/docs/CVE-2019-5481.html"
-				},
-				
-			],
-			"internal": {},
-			"identifiers": {
-				"CVE": [
-					"CVE-2019-5481"
-				],
-				"CWE": [],
-				"ALTERNATIVE": [
-					""
-				]
-			},
-			"title": "CVE-2019-5481",
-			"description": "",
-			"license": "",
-			"proprietary": true,
-			"nearestFixedInVersion": ""
-		}
-	},
-	"depsFilePaths": {
-		"curl|https://github.com/curl/curl/releases/download/curl-7_58_0/curl-7.58.0.tar.xz@7.58.0": [
-			"c-example/deps/curl-7.58.0/CHANGES",
-			"c-example/deps/curl-7.58.0/CMake/CMakeConfigurableFile.in",
-			"c-example/deps/curl-7.58.0/CMake/CurlSymbolHiding.cmake"
-		]
-	}
-}]
+[
+  {
+    "issues": [
+      {
+        "pkgName": "curl|https://github.com/curl/curl/releases/download/curl-7_58_0/curl-7.58.0.tar.xz",
+        "pkgVersion": "7.58.0",
+        "issueId": "CVE-2019-5481",
+        "fixInfo": {
+          "isPatchable": false,
+          "isPinnable": false
+        }
+      }
+    ],
+    "issuesData": {
+      "CVE-2019-5481": {
+        "severity": "high",
+        "CVSSv3": "",
+        "originalSeverity": "high",
+        "severityWithCritical": "high",
+        "type": "vuln",
+        "alternativeIds": [
+          ""
+        ],
+        "creationTime": "2019-09-16T19:15:00.000Z",
+        "disclosureTime": "2019-09-16T19:15:00.000Z",
+        "modificationTime": "2020-10-20T22:15:00.000Z",
+        "publicationTime": "2019-09-16T19:15:00.000Z",
+        "credit": [
+          ""
+        ],
+        "id": "CVE-2019-5481",
+        "packageManager": "cpp",
+        "packageName": "curl|https://github.com/curl/curl/releases/download/curl-7_58_0/curl-7.58.0.tar.xz",
+        "language": "cpp",
+        "fixedIn": [
+          ""
+        ],
+        "patches": [],
+        "exploit": "No Data",
+        "functions": [
+          ""
+        ],
+        "semver": {
+          "vulnerable": [
+            "7.58.0"
+          ],
+          "vulnerableHashes": [
+            ""
+          ],
+          "vulnerableByDistro": {}
+        },
+        "references": [
+          {
+            "title": "https://curl.haxx.se/docs/CVE-2019-5481.html",
+            "url": "https://curl.haxx.se/docs/CVE-2019-5481.html"
+          },
+        ],
+        "internal": {},
+        "identifiers": {
+          "CVE": [
+            "CVE-2019-5481"
+          ],
+          "CWE": [],
+          "ALTERNATIVE": [
+            ""
+          ]
+        },
+        "title": "CVE-2019-5481",
+        "description": "",
+        "license": "",
+        "proprietary": true,
+        "nearestFixedInVersion": ""
+      }
+    },
+    "fileSignaturesDetails": {
+      "curl|https://github.com/curl/curl/releases/download/curl-7_58_0/curl-7.58.0.tar.xz@7.58.0": {
+        "filePaths": [
+          "deps/curl-7.58.0/CHANGES",
+          "c-example/deps/curl-7.58.0/CMake/CMakeConfigurableFile.in",
+          "c-example/deps/curl-7.58.0/CMake/CurlSymbolHiding.cmake"
+        ],
+        "confidence": 1
+      }
+    }
+  }
+]
 ```
 
 ### Command line options
