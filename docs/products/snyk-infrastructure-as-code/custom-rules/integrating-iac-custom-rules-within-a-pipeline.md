@@ -14,12 +14,12 @@ We use the [snyk/custom-rules-example](https://github.com/snyk/custom-rules-exam
 
 #### Aims
 
-We want to configure our pipeline to achieve fourh things:
+We want to configure our pipeline to:
 
-1. Verify that new rules or changes to the existing rules don't break existing functionality.
-2. Publish the rules in `main` to an OCI registry.
-3. Enforce the usage of custom rules in other pipelines.
-4. (Optional) Configure the custom rules using environment variables.
+* Verify that new rules or changes to the existing rules don't break existing functionality.
+* Publish the rules in `main` to an OCI registry.
+* Enforce the usage of custom rules in other pipelines.
+* (Optionally) Configure the custom rules using environment variables.
 
 ### Adding PR checks using GitHub Action
 
@@ -193,7 +193,7 @@ This means configuring the GitHub Action above with another job for updating Sny
                   "type": "iac_settings",
                   "attributes": {
                     "custom_rules": {
-                      "oci_registry_url": "https://registry-1.${{ secrets.OCI_REGISTRY_NAME }}",
+                      "oci_registry_url": "registry-1.${{ secrets.OCI_REGISTRY_NAME }}",
                       "oci_registry_tag": "v1",
                       "is_enabled": true
                     }

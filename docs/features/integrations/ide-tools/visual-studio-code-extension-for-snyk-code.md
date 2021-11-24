@@ -72,7 +72,7 @@ To manually trigger a scan, either Save or manually rescan using the rescan icon
 
 If you only need the Code Quality, Code Security or Open Source Security portion of the findings, you can easily disable the feature with the results you don't want to see or simply collapse the view:
 
-![](<../../../.gitbook/assets/image (83) (1) (1).png>)
+![](<../../../.gitbook/assets/image (83) (1) (1) (1).png>)
 
 ### Snyk Code advanced mode
 
@@ -98,7 +98,7 @@ The icons here mean:
 
 | ![](<../../../.gitbook/assets/image (75) (1) (1).png>) Critical severity | May allow attackers to access sensitive data and run code on your application.                                                               |
 | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](<../../../.gitbook/assets/image (77) (1) (1).png>) High severity     | May allow attackers to access sensitive data on your application.                                                                            |
+| ![](<../../../.gitbook/assets/image (77) (1) (1) (1).png>) High severity | May allow attackers to access sensitive data on your application.                                                                            |
 | ![](<../../../.gitbook/assets/image (70) (1) (1).png>) Medium severity   | May allow attackers under some conditions to access sensitive data on your application.                                                      |
 | ![](<../../../.gitbook/assets/image (81) (1) (1).png>) Low severity      | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
 

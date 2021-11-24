@@ -52,15 +52,15 @@ Configuring remote custom rules bundles on the organizational level can be done 
 Similarly, configuring them on the group level can be done by navigating to` Settings` > `Infrastructure as Code.`
 {% endhint %}
 
-![](<../../../../.gitbook/assets/image (78) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (89).png>)
 
 * Enable the usage of remote bundles configuration using the **Enable rules **toggle. Doing so will display the form as shown below:
 
-![](<../../../../.gitbook/assets/image (83) (1).png>)
+![](<../../../../.gitbook/assets/image (91).png>)
 
 * Configure the OCI registry URL and tag for your remote bundle of custom rules, and click **Save changes** to save.
 
-![](<../../../../.gitbook/assets/image (74) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (87).png>)
 
 Your remote bundle of custom rules is now configured and will be used when testing IaC files.
 
@@ -74,11 +74,11 @@ In order to override the group's configurations, go to the organization's `Rules
 
 * Initially, the section is populated with the configurations inherited from the organization's group.
 
-![](<../../../../.gitbook/assets/image (66) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (79).png>)
 
 * Update the configurations to those customized for your organization, and click **Save changes**.
 
-![](<../../../../.gitbook/assets/image (68) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (83).png>)
 
 * Now, configurations on the group level will not override these customized settings for your organization.
 
@@ -100,7 +100,7 @@ Currently there is no API to override the custom rules settings at the organizat
          "type": "iac_settings",
          "attributes": {
            "custom_rules": {
-             "oci_registry_url": "https://group-registry/library/image",
+             "oci_registry_url": "group-registry/library/image",
              "oci_registry_tag": "latest",
              "is_enabled": true
            }
@@ -146,7 +146,7 @@ Currently there is no API to override the custom rules settings at the organizat
 You can also configure the location of the custom rules bundle using Snyk config for your organization. In your project’s folder, run the following commands to configure your container registry with the Snyk IaC CLI:
 
 ```
-snyk config set oci-registry-url=https://org-registry/library/image
+snyk config set oci-registry-url=org-registry/library/image:latest
 ```
 
 This will set the following Snyk environment variable: `SNYK_CFG_OCI_REGISTRY_URL`
@@ -154,7 +154,7 @@ This will set the following Snyk environment variable: `SNYK_CFG_OCI_REGISTRY_UR
 {% hint style="info" %}
 Ensure the OCI Registry URL is a valid URL; for example, for DockerHub:
 
-`https://registry-1.docker.io/repository-name/bundle-image:1.0.0`
+`registry-1.docker.io/repository-name/bundle-image:1.0.0`
 
 
 

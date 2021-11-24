@@ -14,7 +14,7 @@ Clicking on the button takes you to a screen with most content already filled in
 
 Once you create your ticket, the Jira Integration adds a link to the issue in-line to help your team more easily see the status of the vulnerability as being tracked in Jira.
 
-![](<../../../../.gitbook/assets/image (79).png>)
+![](<../../../../.gitbook/assets/image (79) (1).png>)
 
 Now that you've created your Jira issue, your team can plan and prioritize the work per your own processes.  The ticket preserves details from the original ticket, including important links to external databases and details about the code.
 
