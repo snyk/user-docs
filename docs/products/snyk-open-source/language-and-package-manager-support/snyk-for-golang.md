@@ -66,7 +66,7 @@ When testing Govendor projects via the CLI Snyk requires dependencies to be inst
 {% hint style="info" %}
 **Note**\
 For Go Modules projects imported via Git, dependencies are resolved at the _module_ level rather than the _package_ level, as we do not have full access to your project source code.\
-This means you may see more issues reported than for projects tested in the CLI, as we report all vulnerabilities for each module not just the package(s) referenced in your source code.
+This means you may see more issues (including potential false positives) reported than for projects tested in the CLI, as we report all vulnerabilities for each module not just the package(s) referenced in your source code.
 {% endhint %}
 
 In order to build the dependency tree Snyk runs the `go mod graph` command using the `go.mod` files in the selected repository.
