@@ -32,4 +32,4 @@ That will output all the files included in the bundle:
 /.manifest
 ```
 
-&#x20;You can now [run snyk iac test with your newly built custom bundle. ](../how-to-run-custom-rules-with-the-snyk-cli/)
+&#x20;You can now [run snyk iac test with your newly built custom bundle. ](../use-IaC-custom-rules-with-CLI/)

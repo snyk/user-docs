@@ -191,9 +191,9 @@
       * [Pushing a bundle](products/snyk-infrastructure-as-code/custom-rules/getting-started-with-the-sdk/pushing-a-bundle.md)
       * [Custom Rego Builtins](products/snyk-infrastructure-as-code/custom-rules/getting-started-with-the-sdk/advanced-rego.md)
       * [Examples of custom rules](products/snyk-infrastructure-as-code/custom-rules/getting-started-with-the-sdk/examples.md)
-    * [Running IaC custom rules](products/snyk-infrastructure-as-code/custom-rules/how-to-run-custom-rules-with-the-snyk-cli/README.md)
-      * [Using a local custom rules bundle](products/snyk-infrastructure-as-code/custom-rules/how-to-run-custom-rules-with-the-snyk-cli/using-a-local-custom-rules-bundle.md)
-      * [Using a remote custom rules bundle](products/snyk-infrastructure-as-code/custom-rules/how-to-run-custom-rules-with-the-snyk-cli/using-a-remote-custom-rules-bundle.md)
+    * [Use IaC custom rules with CLI](products/snyk-infrastructure-as-code/custom-rules/use-IaC-custom-rules-with-CLI/README.md)
+      * [Using a local custom rules bundle](products/snyk-infrastructure-as-code/custom-rules/use-IaC-custom-rules-with-CLI/using-a-local-custom-rules-bundle.md)
+      * [Using a remote custom rules bundle](products/snyk-infrastructure-as-code/custom-rules/use-IaC-custom-rules-with-CLI/using-a-remote-custom-rules-bundle.md)
     * [Integrating IaC custom rules within a pipeline](products/snyk-infrastructure-as-code/custom-rules/integrating-iac-custom-rules-within-a-pipeline.md)
     * [SDK Reference](products/snyk-infrastructure-as-code/custom-rules/sdk-reference.md)
 
