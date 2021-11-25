@@ -12,13 +12,14 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 
 ### Alpine Linux
 
+* Alpine 3.15
 * Alpine 3.14
 * Alpine 3.13
 * Alpine 3.12
-* Alpine 3.11
-*   Alpine 3.10
+*   Alpine 3.11
 
     End of Life:
+* Alpine 3.10
 * Alpine 3.9
 * Alpine 3.8
 * Alpine 3.7
