@@ -204,3 +204,9 @@ For code agent, add the following environment variables to the **docker run** co
 -e HTTP_PROXY=http://my.proxy.address:8080
 -e HTTPS_PROXY=http://my.proxy.address:8080
 ```
+
+To disable certificate verification, e.g., in the case of self-signed certificates, add to the code-agent **docker run** command:
+
+```
+-e NODE_TLS_REJECT_UNAUTHORIZED=0
+```
