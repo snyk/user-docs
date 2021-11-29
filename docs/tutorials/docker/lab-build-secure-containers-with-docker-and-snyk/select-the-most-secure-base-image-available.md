@@ -12,7 +12,7 @@ Snyk makes selecting a secure base image for your container easy. We'll show you
 
 Developers can `docker scan` containers to get vulnerability information and base image upgrade guidance. Scan the image by running the following command. Passing the `Dockerfile` used to build the image using `--file` is needed to receive base image suggestions.
 
-```text
+```
 docker scan $DockerId/goof:dev --file=Dockerfile
 ```
 
@@ -22,7 +22,7 @@ Learn what else is possible with Docker Scan with [our handy cheat sheet](https:
 
 Snyk recommends less vulnerable base images grouped by how likely they are to be compatible:
 
-* `Minor` upgrades are the most likely to be compatible with little work, 
+* `Minor` upgrades are the most likely to be compatible with little work,&#x20;
 * `Major` upgrades can introduce breaking changes depending on image usage,
 * `Alternative` architecture images are shown for more technical users to investigate.
 
@@ -41,7 +41,7 @@ If you've already configured the Snyk GitHub integration, continue to Step 2.
 First we need to connect Snyk to GitHub so we can import our Repository. Do so by:
 
 1. Logging in to Snyk.io. [Sign up](https://snyk.co/SnykGH) if you haven't already.
-2. Navigating to Integrations -&gt; Source Control -&gt; GitHub
+2. Navigating to Integrations -> Source Control -> GitHub
 3. Fill in your Account Credentials to Connect your GitHub Account.
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-gh.png)
@@ -73,32 +73,28 @@ Up next, we'll scan the containers running in our Kubernetes cluster for vulnera
 Snyk's Kubernetes Monitor allows you to find vulnerabilities in workloads running in your cluster. In this section we'll deploy the Snyk Kubernetes Monitor to scan the goof application.
 
 {% hint style="info" %}
-This section is optional because the Kubernetes Monitor requires a Snyk Standard plan or higher. Contact us via Intercom if you're a free user and want to evaluate this functionality.
-{% endhint %}
-
-{% hint style="info" %}
 The full [instructions for deploying the Kubernetes Monitor](https://support.snyk.io/hc/en-us/articles/360003916158#UUID-753328ea-3d73-0eeb-4301-c22522273797) can be found in our Docs.
 {% endhint %}
 
 To get started, first create a namespace for the Snyk Monitor:
 
-```text
+```
 kubectl create ns snyk-monitor
 ```
 
 Next, retrieve your Kubernetes Integration ID from Snyk's Integrations menu.
 
-![](https://support.snyk.io/hc/article_attachments/360007147458/uuid-26f9c2cd-2755-07d5-61a0-bdb0261d87ab-en.gif)
+![](https://support.snyk.io/hc/article\_attachments/360007147458/uuid-26f9c2cd-2755-07d5-61a0-bdb0261d87ab-en.gif)
 
 Save the integration ID as an Environment Variable to copy-paste the next command.
 
-```text
+```
 IntegrationId=<<your_integration_id>>
 ```
 
 Create a secret in the cluster containing the Integration ID.
 
-```text
+```
 kubectl create secret generic snyk-monitor -n snyk-monitor \
         --from-literal=dockercfg.json={} \
         --from-literal=integrationId=$IntegrationId
@@ -106,7 +102,7 @@ kubectl create secret generic snyk-monitor -n snyk-monitor \
 
 Now deploy the Kubernetes monitor using Helm:
 
-```text
+```
 helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
              --namespace snyk-monitor \
              --set clusterName="Docker Desktop"
@@ -169,7 +165,7 @@ kubectl scale deployment goof --replicas=1
 
 Navigate to [http://localhost:3001](http://localhost:3001) to test the app. Success! It likes the new base image. In Docker Hub, we can appreciate the `dev` tag has less vulnerabilities than `PROD`.
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/dockerhub-tagvulns%20%281%29.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/dockerhub-tagvulns%20\(1\).png)
 
 If you imported the project using the Kubernetes Monitor, you'll see the new results once the Snyk Monitor re-tests the project.
 
@@ -204,14 +200,13 @@ The workflows we configured earlier will run as part of this PR. You can see the
 * **license/snyk** checks the incoming changes against the snapshot in Snyk for new license issues
 * **security/snyk** checks the incoming changes against the snapshot in Snyk for new vulnerabilities
 * **Check for Open Source Vulnerabilities with Snyk** checks if there are **any** vulnerable open source components in the application with fixes available
-* **CI Task for PROD Branch** rebuilds and app and container to make sure it correctly builds. 
+* **CI Task for PROD Branch** rebuilds and app and container to make sure it correctly builds.&#x20;
 * **Code scanning results** pushes the container scan results to GitHub Security for consumption.
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-prchecks%20%281%29.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-prchecks%20\(1\).png)
 
 Even though we have open source vulnerabilities, merge the PR. This triggers AutoBuild to build and re-scan the PROD container. When it completes, we see a reduction in the number of vulnerabilities.
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/dockerhub-tags.png)
 
 Choosing a more secure base image was just the start! In the next section, we'll address the application's vulnerable application dependencies.
-
