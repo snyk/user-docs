@@ -10,7 +10,7 @@ In the previous step, adding your java-goof repository to Snyk automatically sta
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-opensource-01.png)
 
-In your Bitbucket repository, clicking on your **Snyk **link takes you to a page where you can review results from Snyk within Bitbucket as shown below:
+In your Bitbucket repository, clicking on your **Snyk** link takes you to a page where you can review results from Snyk within Bitbucket as shown below:
 
 ![](<../../../../.gitbook/assets/image (73).png>)
 

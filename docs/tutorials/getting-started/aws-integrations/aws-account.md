@@ -32,7 +32,7 @@ Enter the user details:
 
 ### Step 4
 
-Attach the **AdministratorAccess **IAM Policy:
+Attach the **AdministratorAccess** IAM Policy:
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/iam-2-attach-policy%20\(1\).png)
 

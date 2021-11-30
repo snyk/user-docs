@@ -8,7 +8,7 @@ You can view a list of Snyk Apps owned by your Snyk Organization by sending a **
 https://api.snyk.io/v3/orgs/{orgId}/apps?version={version}
 ```
 
-You will not be able to view the **clientSecret **after the App is created. If you have misplaced it, you can [rotate your **clientSecret**](managing-app-details.md#rotate-app-client-secret) and receive a new one.
+You will not be able to view the **clientSecret** after the App is created. If you have misplaced it, you can [rotate your **clientSecret**](managing-app-details.md#rotate-app-client-secret) and receive a new one.
 
 ## Rotate App Client Secret
 

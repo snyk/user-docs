@@ -132,7 +132,7 @@ To set up the Broker Client for those container registries, all the above applie
 
 #### **Artifactory**
 
-In case you are using **Repository path** as your Docker access method, the container registry hostname in `CR_BASE` variable should be set in this structure: ** **`<your artifactory host>/artifactory/api/docker/<artifactory-repo-name>`
+In case you are using **Repository path** as your Docker access method, the container registry hostname in `CR_BASE` variable should be set in this structure: **** `<your artifactory host>/artifactory/api/docker/<artifactory-repo-name>`
 
 #### **ECR**
 

@@ -2,7 +2,7 @@
 
 For your project, you can view the following displays:
 
-* **Issues: **the number of vulnerabilities and license issues.
+* **Issues:** the number of vulnerabilities and license issues.
 * **Fixes**: fix advice.
 * **Dependencies**: the total number of direct and transitive (nested) dependencies.
 

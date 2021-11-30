@@ -16,7 +16,7 @@ In  Bitbucket, navigate to your workspace and import the repository so you can f
 
 ![](<../../../../.gitbook/assets/image (93).png>)
 
-Next, you'll be presented with a screen to select a workspace and other details.  In this screen, click on the **Import repository **link.
+Next, you'll be presented with a screen to select a workspace and other details.  In this screen, click on the **Import repository** link.
 
 ![](<../../../../.gitbook/assets/image (91) (1).png>)
 
@@ -24,6 +24,6 @@ The new screen asks for the URL to your Old Repository.  Enter [https://github.c
 
 ![](<../../../../.gitbook/assets/image (67).png>)
 
-Click **Import repository **to complete the process.
+Click **Import repository** to complete the process.
 
 The next steps are to enable the integration between Snyk and Bitbucket.

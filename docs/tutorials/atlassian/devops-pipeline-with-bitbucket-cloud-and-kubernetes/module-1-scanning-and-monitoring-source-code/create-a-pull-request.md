@@ -25,7 +25,7 @@ Your options may vary from this screen because the Snyk database is frequently u
 * Minor upgrades are typically seen as low-impact as they contain fewer chances of breaking changes.  Your team may be motivated to make a minor change because they feel it is necessary to stay within a version range for their application stack to maintain compatibility.  In the example above, this means the minor change from 8.5.21 to 8.5.71.
 * Major upgrades may be advantageous for your team if they address large numbers of vulnerabilities.  In the example above, the difference between the current image and minor/major is approximately the same.  In other examples, the gaps may be different and your team will use this information to make more informed choices.
 
-For the purpose of this workshop, we'll pick the minor change for the **Open a fix PR **button.  At this point, your development team will have an intuitive understanding of what they need to fix and how to fix it.  They already know the change requires a few lines in a Dockerfile.  What we'll show next is how the automation takes this routine operation of, "I know what to do" and automates the sequence.  While simple in nature, this automation eliminates the common typo mistakes that too often come up in this process.
+For the purpose of this workshop, we'll pick the minor change for the **Open a fix PR** button.  At this point, your development team will have an intuitive understanding of what they need to fix and how to fix it.  They already know the change requires a few lines in a Dockerfile.  What we'll show next is how the automation takes this routine operation of, "I know what to do" and automates the sequence.  While simple in nature, this automation eliminates the common typo mistakes that too often come up in this process.
 
 Click on that button now to start the process.  The automated process starts by showing you a screen to confirm your choice:
 
@@ -37,7 +37,7 @@ Next what happens is you are taken to Bitbucket Cloud.  This is  helpful because
 
 ![](<../../../../.gitbook/assets/image (80).png>)
 
-Below this information is the code diff your team should easily recognize.  This is the fix your developers _knew _they could make, and Snyk did it for them.
+Below this information is the code diff your team should easily recognize.  This is the fix your developers _knew_ they could make, and Snyk did it for them.
 
 ![](<../../../../.gitbook/assets/image (84).png>)
 

@@ -19,7 +19,7 @@ kubectl create secret generic snyk-monitor -n snyk-monitor --from-literal=docker
 ```
 
 {% hint style="info" %}
-Locate your **Integration **ID from the [Snyk Integrations page ](https://app.snyk.io/org/YOUR-ORGANIZATION-NAME/manage/integrations/kubernetes)and copy it.
+Locate your **Integration** ID from the [Snyk Integrations page ](https://app.snyk.io/org/YOUR-ORGANIZATION-NAME/manage/integrations/kubernetes)and copy it.
 {% endhint %}
 
 #### Step 3

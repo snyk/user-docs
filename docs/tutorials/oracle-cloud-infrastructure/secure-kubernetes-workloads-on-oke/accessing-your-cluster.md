@@ -1,6 +1,6 @@
 # Accessing your cluster
 
-Once you have provisioned your OKE cluster, you can navigate to **Developer Services **and **Kubernetes Clusters (OKE)** as shown below:
+Once you have provisioned your OKE cluster, you can navigate to **Developer Services** and **Kubernetes Clusters (OKE)** as shown below:
 
 ![](../../../.gitbook/assets/oci-console-01.png)
 

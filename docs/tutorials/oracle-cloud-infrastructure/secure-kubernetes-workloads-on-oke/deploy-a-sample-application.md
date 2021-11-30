@@ -29,7 +29,7 @@ It may take a few minutes for your application to be ready, but you can check th
 kubectl get pods -n goof
 ```
 
-When these display that they are in a **ready **state `1/1` then you should be able to pull the external IP and past that into a browser window to access the application. You can get the external IP for the application with the following command:
+When these display that they are in a **ready** state `1/1` then you should be able to pull the external IP and past that into a browser window to access the application. You can get the external IP for the application with the following command:
 
 ```bash
 kubectl get svc -n goof

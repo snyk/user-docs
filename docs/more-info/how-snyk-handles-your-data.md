@@ -25,7 +25,7 @@ Snyk customer DevSecOps programs thrive off the fast time-to-value and ease of u
 * **Vulnerability source** - Snyk stores information on where the vulnerability was identified. Examples: source code repository/registry, file name and location, dependency tree, vulnerability path.
 * **Integration-related data** - Snyk stores information required to set up an integration with Snyk. Examples: tokens and configurations.&#x20;
 * **User data** - Snyk stores basic user information. Examples: user name, ID, email address.&#x20;
-* **User list **- For the purposes of an accurate contributor counting, Snyk accesses commits from the last 90 days for repositories monitored and stores a hashed version of user emails.&#x20;
+* **User list** - For the purposes of an accurate contributor counting, Snyk accesses commits from the last 90 days for repositories monitored and stores a hashed version of user emails.&#x20;
 * **Billing data** - Snyk stores information required for billing your Snyk account.&#x20;
 * **User behavior analytics** - Snyk stores various types of information pertaining to usage patterns. Examples: Website visits, executed CLI commands.
 

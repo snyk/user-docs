@@ -19,7 +19,7 @@ kubectl create secret generic snyk-monitor -n snyk-monitor --from-literal=docker
 ```
 
 {% hint style="info" %}
-Locate your **Integration **ID from the [Snyk Integrations page ](https://app.snyk.io/org/YOUR-ORGANIZATION-NAME/manage/integrations/kubernetes)and copy it.
+Locate your **Integration** ID from the [Snyk Integrations page ](https://app.snyk.io/org/YOUR-ORGANIZATION-NAME/manage/integrations/kubernetes)and copy it.
 {% endhint %}
 
 #### Step 3
@@ -33,7 +33,7 @@ helm repo add snyk-charts https://snyk.github.io/kubernetes-monitor/ --force-upd
 #### Step 4
 
 {% hint style="info" %}
-Replace** "my-cluster"** with the name of your cluster. Also note that we are passing a few settings for compatibility with GKE Autopilot.
+Replace **"my-cluster"** with the name of your cluster. Also note that we are passing a few settings for compatibility with GKE Autopilot.
 {% endhint %}
 
 Install the chart:

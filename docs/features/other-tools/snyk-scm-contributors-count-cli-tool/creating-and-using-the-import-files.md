@@ -6,7 +6,7 @@ description: How to use the generated import file with the snyk-api-import tool
 
 ### How it works
 
-When the **snyk-contributors-count **tool connects both to your Snyk account and your SCM account, it finds out which repos/projects are monitored by Snyk and which are not.
+When the **snyk-contributors-count** tool connects both to your Snyk account and your SCM account, it finds out which repos/projects are monitored by Snyk and which are not.
 
 By applying the two related flags to the command, the tool generates an import file, populated with the unmonitored repo data, to be used with the [**snyk-api-import** ](creating-and-using-the-import-files.md#using-the-snyk-api-import-tool)tool to import the missing repos to your Snyk account.
 

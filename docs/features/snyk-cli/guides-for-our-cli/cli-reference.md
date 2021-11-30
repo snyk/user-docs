@@ -13,7 +13,7 @@
 Snyk helps you find, fix and monitor known vulnerabilities in open-source dependencies.\
 For more information see [https://snyk.io](https://snyk.io)
 
-## Not sure where to start? <a href="not-sure-where-to-start" id="not-sure-where-to-start"></a>
+## Not sure where to start? <a href="#not-sure-where-to-start" id="not-sure-where-to-start"></a>
 
 1. authenticate with `$ snyk auth`
 2. test your local project with `$ snyk test`
@@ -84,13 +84,13 @@ Setting a default will ensure all newly monitored projects will be created under
 
 `--target-reference=TARGET_REFERENCE` A reference which differentiates this project. For example, a branch name or version. Projects using the same reference can be used for grouping. Only supported for [Snyk Open Source](../../../products/snyk-open-source/). For more information, see: [grouping-projects-by-branch-or-version.md](../grouping-projects-by-branch-or-version.md "mention").
 
-`--project-environment=ENVIRONMENT[,ENVIRONMENT]...> `(only in monitor command) Set the project environment to one or more values (comma-separated). To clear the project environment set `--project-environment=`. Allowed values: frontend, backend, internal, external, mobile, saas, onprem, hosted, distributed
+`--project-environment=ENVIRONMENT[,ENVIRONMENT]...>` (only in monitor command) Set the project environment to one or more values (comma-separated). To clear the project environment set `--project-environment=`. Allowed values: frontend, backend, internal, external, mobile, saas, onprem, hosted, distributed
 
 `--project-lifecycle=LIFECYCLE[,LIFECYCLE]...>` (only in monitor command) Set the project lifecycle to one or more values (comma-separated). To clear the project lifecycle set `--project-lifecycle=`. Allowed values: production, development, sandbox
 
-`--project-business-criticality=BUSINESS`_`CRITICALITY[,BUSINESS_CRITICALITY]...>` (only in monitor command) _Set the project business criticality to one or more values (comma-separated). To clear the project business criticality set `--project-business-criticality=`. Allowed values: critical, high, medium, low_ _
+`--project-business-criticality=BUSINESS`_`CRITICALITY[,BUSINESS_CRITICALITY]...>` (only in monitor command)_ Set the project business criticality to one or more values (comma-separated). To clear the project business criticality set `--project-business-criticality=`. Allowed values: critical, high, medium, low __&#x20;
 
-`--project-tags=TAG[,TAG]...> `(only in monitor command). Alias `--tags=TAG[,TAG]...>. `Set the project tags to one or more values (comma-separated key value pairs with an "=" separator). e.g. --project-tags=department=finance,team=alpha. To clear set project tags `--project-tags=`
+`--project-tags=TAG[,TAG]...>` (only in monitor command). Alias `--tags=TAG[,TAG]...>.` Set the project tags to one or more values (comma-separated key value pairs with an "=" separator). e.g. --project-tags=department=finance,team=alpha. To clear set project tags `--project-tags=`
 
 `--policy-path=PATH_TO_POLICY_FILE` Manually pass a path to a Snyk policy file.
 
@@ -116,7 +116,7 @@ If vulnerabilities do not have a fix and this option is being used, tests will p
 
 Below are flags that are influencing CLI behavior for specific projects, languages, and contexts:
 
-### Maven options <a href="maven-options" id="maven-options"></a>
+### Maven options <a href="#maven-options" id="maven-options"></a>
 
 `--scan-all-unmanaged`Auto-detects maven jar, war, and aar files in a given directory.
 
@@ -130,7 +130,7 @@ custom-built jar files, even with open source dependencies, are out of scope.
 
 `--reachable-timeout=TIMEOUT` The amount of time (in seconds) to wait for Snyk to gather reachability data. If it takes longer than `TIMEOUT`, Reachable Vulnerabilities are not reported. This does not affect regular test or monitor output. Default: 300 (5 minutes).
 
-### Gradle options <a href="gradle-options" id="gradle-options"></a>
+### Gradle options <a href="#gradle-options" id="gradle-options"></a>
 
 [More information about Gradle CLI options](https://snyk.co/ucT6P)
 
@@ -142,43 +142,43 @@ custom-built jar files, even with open source dependencies, are out of scope.
 
 `--configuration-attributes=ATTRIBUTE[,ATTRIBUTE]...` Select certain values of configuration attributes to resolve the dependencies. E.g. `buildtype:release,usage:java-runtime`
 
-### .Net & NuGet options <a href="net-nuget-options" id="net-nuget-options"></a>
+### .Net & NuGet options <a href="#net-nuget-options" id="net-nuget-options"></a>
 
 `--assets-project-name`When monitoring a .NET project using NuGet `PackageReference` use the project name in project.assets.json, if found.
 
 `--packages-folder`Custom path to packages folder
 
-### npm options <a href="npm-options" id="npm-options"></a>
+### npm options <a href="#npm-options" id="npm-options"></a>
 
 `--strict-out-of-sync=true|false` Control testing out of sync lockfiles.
 
 Default: true
 
-### Yarn options <a href="yarn-options" id="yarn-options"></a>
+### Yarn options <a href="#yarn-options" id="yarn-options"></a>
 
 `--strict-out-of-sync=true|false` Control testing out of sync lockfiles. Default: true
 
 `--yarn-workspaces`(only in `test` and `monitor` commands) Detect and scan yarn workspaces. You can specify how many sub-directories to search using `--detection-depth` and exclude directories using `--exclude`.
 
-### CocoaPods options <a href="cocoapods-options" id="cocoapods-options"></a>
+### CocoaPods options <a href="#cocoapods-options" id="cocoapods-options"></a>
 
 `--strict-out-of-sync=true|false` Control testing out of sync lockfiles.
 
 Default: false
 
-### Python options <a href="python-options" id="python-options"></a>
+### Python options <a href="#python-options" id="python-options"></a>
 
 `--command=COMMAND` Indicate which specific Python commands to use based on the Python version. The default is `python` which executes your system's default python version. Run 'python -V' to find out what version is it. If you are using multiple Python versions, use this parameter to specify the correct Python command for execution. Default: `python` Example: `--command=python3`
 
 `--skip-unresolved=true|false` Allow skipping packages that are not found in the environment.
 
-### Go options <a href="python-options" id="python-options"></a>
+### Go options <a href="#python-options" id="python-options"></a>
 
 Please note that currently the following flags are not supported:
 
 `--fail-on=all|upgradable|patchable`
 
-### Flags available across all commands <a href="flags-available-accross-all-commands" id="flags-available-accross-all-commands"></a>
+### Flags available across all commands <a href="#flags-available-accross-all-commands" id="flags-available-accross-all-commands"></a>
 
 `--insecure` Ignore unknown certificate authorities.
 
@@ -190,7 +190,7 @@ Please note that currently the following flags are not supported:
 
 `[COMMAND] --help, --help [COMMAND]`, `-h`Prints a help text. You may specify a `COMMAND` to get more details.
 
-## EXAMPLES <a href="examples" id="examples"></a>
+## EXAMPLES <a href="#examples" id="examples"></a>
 
 Authenticate in your CI without user interaction `$ snyk auth MY_API_TOKEN`\
 Test a project in current folder for known vulnerabilities `$ snyk test`\
@@ -204,7 +204,7 @@ $ snyk monitor --org=my-team
 $ snyk monitor --project-name=my-project
 ```
 
-### Container scanning <a href="container-scanning" id="container-scanning"></a>
+### Container scanning <a href="#container-scanning" id="container-scanning"></a>
 
 See `snyk container --help` for more details and examples:
 
@@ -213,7 +213,7 @@ $ snyk container test ubuntu:18.04 --org=my-team
 $ snyk container test app:latest --file=Dockerfile --policy-path=path/to/.snyk
 ```
 
-### Infrastructure as Code (IAC) scanning <a href="infrastructure-as-code-iac-scanning" id="infrastructure-as-code-iac-scanning"></a>
+### Infrastructure as Code (IAC) scanning <a href="#infrastructure-as-code-iac-scanning" id="infrastructure-as-code-iac-scanning"></a>
 
 See `snyk iac --help` for more details and examples:
 
@@ -222,7 +222,7 @@ $ snyk iac test path/to/Kubernetes.yaml
 $ snyk iac test path/to/terraform_file.tf
 ```
 
-## EXIT CODES <a href="exit-codes" id="exit-codes"></a>
+## EXIT CODES <a href="#exit-codes" id="exit-codes"></a>
 
 Possible exit codes and their meaning:
 
@@ -231,7 +231,7 @@ Possible exit codes and their meaning:
 **2**: failure, try to re-run the command\
 **3**: failure, no supported projects detected
 
-## ENVIRONMENT <a href="environment" id="environment"></a>
+## ENVIRONMENT <a href="#environment" id="environment"></a>
 
 You can set these environment variables to change CLI run settings. These keys will override settings in your `snyk config`:
 
@@ -243,8 +243,8 @@ You can set these environment variables to change CLI run settings. These keys w
 
 `SNYK_CFG_<KEY>`Allows you to override any key that's also available as `snyk config` option.
 
-## NOTICES <a href="notices" id="notices"></a>
+## NOTICES <a href="#notices" id="notices"></a>
 
-### Snyk API usage policy <a href="snyk-api-usage-policy" id="snyk-api-usage-policy"></a>
+### Snyk API usage policy <a href="#snyk-api-usage-policy" id="snyk-api-usage-policy"></a>
 
 The use of Snyk's API, whether through the use of the 'snyk' npm package or otherwise, is subject to the [terms & conditions](https://snyk.co/ucT6N)

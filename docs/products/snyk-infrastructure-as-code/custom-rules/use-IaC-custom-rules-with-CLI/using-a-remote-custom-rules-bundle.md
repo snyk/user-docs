@@ -49,12 +49,12 @@ To configure remote bundles:
 {% hint style="info" %}
 Configuring remote custom rules bundles on the organizational level can be done by navigating to `Settings` > `Infrastructure as Code`.
 
-Similarly, configuring them on the group level can be done by navigating to` Settings` > `Infrastructure as Code.`
+Similarly, configuring them on the group level can be done by navigating to `Settings` > `Infrastructure as Code.`
 {% endhint %}
 
 ![](<../../../../.gitbook/assets/image (89).png>)
 
-* Enable the usage of remote bundles configuration using the **Enable rules **toggle. Doing so will display the form as shown below:
+* Enable the usage of remote bundles configuration using the **Enable rules** toggle. Doing so will display the form as shown below:
 
 ![](<../../../../.gitbook/assets/image (91).png>)
 

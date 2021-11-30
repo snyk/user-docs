@@ -37,7 +37,7 @@ atlassian-security-scan: &atlassian-security-scan
         - pipe: atlassian/git-secrets-scan:0.4.3
 ```
 
-In this example, we perform a few activities to illustrate a representative pipeline.  The first stage is **build-app, **and it's primary purpose is to run a maven build with checkstyle to generate a jar file.  The next stage is entitled **atlassian-security-scan** and we utilize the Atlassian pipe to scan for git secrets.  These two steps are include for convenience and illustrative of a best practice to ensure things are working.  We will not cover their details in the workshop, and we encourage you to review if you are interested.
+In this example, we perform a few activities to illustrate a representative pipeline.  The first stage is **build-app,** and it's primary purpose is to run a maven build with checkstyle to generate a jar file.  The next stage is entitled **atlassian-security-scan** and we utilize the Atlassian pipe to scan for git secrets.  These two steps are include for convenience and illustrative of a best practice to ensure things are working.  We will not cover their details in the workshop, and we encourage you to review if you are interested.
 
 The next block includes Snyk scan where we use two pipes to scan and push an image.
 
