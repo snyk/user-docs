@@ -16,6 +16,7 @@ We use the OCI registries that support the [OCI artifact specification](https://
 * [DockerHub](https://hub.docker.com)
 * [Elastic Container Registry](https://aws.amazon.com/ecr/)
 * [Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/)
+* [JFrog Artifactory ](https://www.jfrog.com/confluence/display/JFROG/Docker+Registry)(note: OCI Artifacts are supported from Artifactory v7.11.1 and above)
 * [Harbor](https://goharbor.io)
 * [GitHub Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
 
