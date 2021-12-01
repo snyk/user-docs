@@ -1,7 +1,5 @@
 # Snyk User Documentation
 
-### Quickstart
-
 {% hint style="success" %}
 [Sign up to use Snyk for free!](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)
 {% endhint %}
