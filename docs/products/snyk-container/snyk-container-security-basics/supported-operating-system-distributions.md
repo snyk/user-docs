@@ -16,9 +16,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * Alpine 3.14
 * Alpine 3.13
 * Alpine 3.12
-*   Alpine 3.11
-
-    End of Life:
+* Alpine 3.11
 * Alpine 3.10
 * Alpine 3.9
 * Alpine 3.8
@@ -38,23 +36,23 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * Amazon Linux 2
 * Amazon AMI 2018.03
 
-### CentOS
+### CentOS Stream
 
-* CentOS 8
-* CentOS 7
-*   CentOS 6
+* CentOS Stream 8
 
-    End of Life:
-* CentOS 5
+### CentOS Linux
+
+* CentOS Linux 8
+* CentOS Linux 7
+* CentOS Linux 6
+* CentOS Linux 5
 
 ### Debian
 
 * Debian 12
 * Debian 11
 * Debian 10
-*   Debian 9
-
-    End of Life:
+* Debian 9
 * Debian 8
 * Debian 7
 * Debian 6
@@ -63,9 +61,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 
 * Oracle 8
 * Oracle 7
-*   Oracle 6
-
-    End of Life:
+* Oracle 6
 * Oracle 5
 * Oracle 4
 * Oracle 3
@@ -74,9 +70,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 
 * RHEL 8
 * RHEL 7
-*   RHEL 6
-
-    End of Life:
+* RHEL 6
 * RHEL 5
 
 ### Ubuntu
@@ -87,9 +81,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * Ubuntu 20.04
 * Ubuntu 18.10
 * Ubuntu 18.04
-*   Ubuntu 16.04
-
-    End of Life
+* Ubuntu 16.04
 * Ubuntu 19.10
 * Ubuntu 19.04
 * Ubuntu 17.10
