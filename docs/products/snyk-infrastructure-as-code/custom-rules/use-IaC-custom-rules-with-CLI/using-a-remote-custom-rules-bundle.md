@@ -60,7 +60,7 @@ Similarly, configuring them on the group level can be done by navigating to `Set
 
 * Configure the OCI registry URL and tag for your remote bundle of custom rules, and click **Save changes** to save.
 
-![](<../../../../.gitbook/assets/image (87).png>)
+![](<../../../../.gitbook/assets/image (87) (1).png>)
 
 Your remote bundle of custom rules is now configured and will be used when testing IaC files.
 

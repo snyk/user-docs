@@ -1,24 +1,7 @@
 # Snyk settings
 
-Click on settings ![](../../.gitbook/assets/cog_icon.png) to view Snyk application settings:
+Click the Settings icon (![](../../.gitbook/assets/cog\_icon.png)) from the top menu bar, to view and edit Snyk settings for your organization:
 
-![](../../.gitbook/assets/screenshot_2021-07-19_at_15.52.02.png)
+![](../../.gitbook/assets/screenshot\_2021-07-19\_at\_15.52.02.png)
 
-**Docs**
-
-[Members](https://docs.snyk.io/user-and-group-management/managing-groups-and-organizations/invite-and-collaborate-with-team-members)
-
-[Integrations](https://docs.snyk.io/integrations)
-
-[Languages](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support)
-
-[Snyk Code](https://docs.snyk.io/snyk-code)
-
-[Infrastructure as Code](https://docs.snyk.io/snyk-infrastructure-as-code)
-
-[Usage](https://docs.snyk.io/user-and-group-management/managing-settings/usage-page-details)
-
-[Notifications](https://docs.snyk.io/user-and-group-management/notifications/notification-management)
-
-[Snyk Preview](https://docs.snyk.io/getting-started/snyk-billing-plan-onboarding/snyk-preview)
-
+See [Managing settings](../../features/user-and-group-management/managing-settings/) for more details.
