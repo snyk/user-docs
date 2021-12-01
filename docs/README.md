@@ -3,9 +3,7 @@
 ### Quickstart
 
 {% hint style="success" %}
-
 [<mark>Sign up and test your code for free</mark>](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)<mark>!</mark>
-
 {% endhint %}
 
 1. After [<mark>signing up</mark>](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page), connect to your project.
