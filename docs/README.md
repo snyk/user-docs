@@ -3,10 +3,10 @@
 ### Quickstart
 
 {% hint style="success" %}
-<mark style="color:blue;"></mark>[Sign up to use Snyk for free!](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)
+[<mark>Sign up and test your code for free</mark>](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)<mark>!</mark>
 {% endhint %}
 
-1. After signing up, connect to your project.
+1. After [<mark>signing up</mark>](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page), connect to your project.
 2. Run tests against your project.
 3. Review vulnerability results.
 4. Correct vulnerabilities via Pull Requests.
