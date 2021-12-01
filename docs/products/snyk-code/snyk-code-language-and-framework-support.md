@@ -2,17 +2,20 @@
 
 Snyk Code currently supports:
 
-* ****[**Java**](../snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md)****
-* ****[**JavaScript and TypeScript**](../snyk-open-source/language-and-package-manager-support/snyk-for-javascript.md)****
-* ****[**Python**](../snyk-open-source/language-and-package-manager-support/snyk-for-python.md)****
-* ****[**PHP**](../snyk-open-source/language-and-package-manager-support/snyk-for-php.md)****
-* ****[**C#**](snyk-code-language-and-framework-support.md#c-frameworks)****
+* **Java**
+* **JavaScript**
+* **TypeScript**
+* **Python**
+* **PHP**
+* **C#**
+
+_Beta support exists for: Go, Ruby, Kotlin, APEX, ASP.NET, Swift, C and C++ contact us for more details or with your further needs._
 
 ## Language type and framework support
 
 Snyk Code can work with a variety of relevant language types:
 
-* Dynamically typed languages such as JavaScript or Python.
+* Dynamically typed languages such as JavaScript and Python.
 * Optionally strong typed languages such as TypeScript.
 * Strong typed languages such as Java.
 
@@ -22,41 +25,33 @@ Contact Snyk for a full list of support for frameworks, libraries and vulnerabil
 
 The following are the supported extensions:
 
-* aspx
-* CS
-* ejs
-* es
-* es6
-* htm
-* html
-* js
-* jsx
-* ts
-* tsx
-* vue
-* py
-* java
+
+
+{% hint style="info" %}
+c,cc,cpp,cxx,h,hpp,hxx,ejs,es,es6,htm,html,js,jsx,ts,tsx,vue,java,erb,haml,rb,rhtml,slim,py,go,ASPX,Aspx,CS,Cs,aspx,cs,php, xml
+{% endhint %}
 
 ### Framework support
 
 To support a specific framework, Snyk Code needs to both support the relevant language, and to be trained on projects using the framework. The found patterns are then annotated by our security team and extended by curated content.
 
-While Snyk Code supports ASP.NET and .aspx extensions, it does not currently analyze ASP.NET Core or .cshtml files for vulnerabilities.
+Most framework are supported "out of the box" as Snyk Code only need to be able to parse the code to analyze it. In some cases they might require specific rules, or it might require specific program analysis engine update or both. If you notice any gaps in a specific framework support please [contact us](https://support.snyk.io/hc/en-us/requests/new) with the details/examples and our team will work on it.
 
 ### JavaScript frameworks
 
 {% hint style="info" %}
-These are some of the supported frameworks for JavaScript; contact Snyk for a full list of supported frameworks.
+These are some of the explicitly supported frameworks for JavaScript; those are in-additon to the general support for all frameworks.
 {% endhint %}
 
 * **React**: Open-source, front end, JavaScript library for building user interfaces or UI components for websites and mobile applications.
 * **Vue.js**: Open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications.
-* **Express**: Back-end web application framework for Node.js, released as free and open-source software.It has been called the de facto standard server framework for Node.js.
+* **Express**: Back-end web application framework for Node.js, released as free and open-source software. It has been called the de facto standard server framework for Node.js.
+* **jQuery:** A fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, ...
 
-### java frameworks
+### Java frameworks
 
 {% hint style="info" %}
-These are some of the supported frameworks for Java; contact Snyk for a full list of supported frameworks.
+These are some of the explicitly supported frameworks for Java; those are in-additon to the general support for all frameworks.
 {% endhint %}
 
 * **Apache Camel**: Open source framework for message-oriented middleware with a rule-based routing and mediation engine.
@@ -68,7 +63,7 @@ These are some of the supported frameworks for Java; contact Snyk for a full lis
 ### Python frameworks
 
 {% hint style="info" %}
-These are some of the supported frameworks for Python; contact Snyk for a full list of supported frameworks.
+These are some of the explicitly supported frameworks for Python; those are in-additon to the general support for all frameworks.
 {% endhint %}
 
 * [Django](https://www.djangoproject.com): a framework for full-stack web application development and server development.
@@ -77,7 +72,7 @@ These are some of the supported frameworks for Python; contact Snyk for a full l
 ### C# frameworks
 
 {% hint style="info" %}
-These are some of the supported frameworks for C#; contact Snyk for a full list of supported frameworks.
+These are some of the explicitly supported frameworks for C#; those are in-additon to the general support for all frameworks.
 {% endhint %}
 
 * **.NET framework**: .NET is an open source developer platform, created by Microsoft and used to build a variety of application types. While .NET supports different languages, Snyk Code supports .NET using the C# interface.
@@ -90,13 +85,13 @@ The framework support is always determined by the file extensions known to the e
 
 ## Language support with Snyk Code AI Engine
 
-Snyk Code is based on a semantic AI using an analytics engine, the Snyk Code AI Engine.
+Snyk Code is based on a dee code semantic code analysis engine using AI to continuously learn from billions of lines of code and 100s of millions of code fixes in the global development community. The Snyk Code AI Engine continuously evolves the the human-gided reinforced learning cycle lead by Snyk's security researchers and engineers. See [this blog article ](https://snyk.io/blog/advanced-technologies-behind-snyk-code/)for more details.
 
 When files are provided for analysis, the engine determines which file to feed into which parser, in a language-independent common intermediate format. This format preserves and exposes characteristics of the scanned source code.
 
 This technology allows Snyk Code to:
 
-* Support a variety of programming languages easily.
+* Support any programming language easily.
 * Support multi-language projects, spanning security scans over the different languages.
 * Unveil interfile issues, such as issue patterns spread over several source files, which are typically especially hard to track.
 * Find issue patterns using the Snyk Code engine, compiling the found issues as a report.

@@ -12,10 +12,9 @@ Snyk Code expands the Snyk cloud-native application security platform, supportin
 ## How does static application security testing (SAST) work?
 
 1. Checks and reads for DeepCode/Snyk ignore specific files `.gitignore` `.dcignore` (if they exist).
-2. Using the information obtained in step 1, we are filtering to get only the following source code files:
-   1. `.es,.es6,.htm,.html,.js,.jsx,.ts,.tsx,.vue,.java,.CS,.Cs,.cs,.py`
-   2. We are accessing only the files in the project directory. We do not go above the current project directory.
-3. Files which size is less than 4 MB found in step 2 are bundled and the bundle is sent to Snyk.
+2. Using the information obtained in step 1, we are filtering to get only [the following source code files](snyk-code-language-and-framework-support.md#supported-extensions):
+   * We are accessing only the files in the project directory. We do not go above the current project directory.
+3. Files which size is less than 4 MB found in step 2 are bundled and sent to Snyk.
 
 ## Developer-first approach
 
@@ -56,7 +55,7 @@ Snyk Code integrates with the cloud versions of:
 
 * [GitHub](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration)
 * [GitLab](https://docs.snyk.io/integrations/git-repository-scm-integrations/gitlab-integration)
-* [Bitbucket](https://docs.snyk.io/integrations/git-repository-scm-integrations/bitbucket-cloud-integration) 
+* [Bitbucket](https://docs.snyk.io/integrations/git-repository-scm-integrations/bitbucket-cloud-integration)&#x20;
 * [Azure](https://docs.snyk.io/integrations/git-repository-scm-integrations/azure-repos-integration)
 
 ## Using integrations
@@ -73,9 +72,7 @@ This integration allows you to:
 
 ## Supported languages
 
-Snyk Code supports Java, JavaScript (including TypeScript), Python and C#.
-
-See [Snyk Code language support](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support) for more information.
+Snyk Code supports wide range of languages: see [Snyk Code language support](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support) for the full list.
 
 ## Snyk Code IDE plugins
 
