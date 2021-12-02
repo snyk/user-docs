@@ -16,25 +16,25 @@ Available options:
                             *note* for sub-level groups, please provide the lowest level group name                                             
   --project                 [Optional] Your Gitlab project path with namespaces to count contributors for
   --exclusionFilePath       [Optional] Exclusion list filepath
-  --json                    [Optional] JSON output
+  --json                    [Optional] JSON output, requiered when using the "consolidateResults" command
   --skipSnykMonitoredRepos  [Optional] Skip Snyk monitored projects and count contributors for all projects
   --importConfDir           [Optional] Generate an import file with the unmonitored projects: A path to a valid folder for the generated import files
   --importFileRepoType      [Optional] To be used with the importConfDir flag: Specify the type of repos to be added to the import file. Options: all/private/public. Default: all
 ```
 
-### Before running the command:&#x20;
+### Before running the command:
 
 1. Export SNYK\_TOKEN (if you want to get the contributors ONLY for projects that are already monitored by Snyk) =>
    * Make sure that your token has Group level access or use a service account's token that has Group level acces, to learn more on how to create a service account, please refer to this [guide](https://docs.snyk.io/features/integrations/managing-integrations/service-accounts#how-to-set-up-a-service-account)
    * Copy the token value
-   *   Export the token in your environment:&#x20;
+   *   Export the token in your environment:
 
        ```
        export SNYK_TOKEN=<YOUR-SNYK-TOKEN>
        ```
 2.  Get your Gitlab token or create a new one with this [guide](https://docs.gitlab.com/ee/user/profile/personal\_access\_tokens.html)**:**
 
-    **Note: **make sure your token has read access to the repos.
+    \*\*Note: \*\*make sure your token has read access to the repos.
 
 ### Running the command
 
@@ -54,7 +54,7 @@ Consider the following levels of usage and options:
     ```
 
 {% hint style="info" %}
-Please mind that for nested groups, you need to provide the lowest level group name, for example: for `TopLevelGroup/MidLevelGroup/LowLevelGroup `only provide "LowLevelGroup" with the `--groups` flag
+Please mind that for nested groups, you need to provide the lowest level group name, for example: for `TopLevelGroup/MidLevelGroup/LowLevelGroup` only provide "LowLevelGroup" with the `--groups` flag
 {% endhint %}
 
 *   To get commits for a specific project in Gitlab: provide the Gitlab token and **one** group name and **one** project name:
