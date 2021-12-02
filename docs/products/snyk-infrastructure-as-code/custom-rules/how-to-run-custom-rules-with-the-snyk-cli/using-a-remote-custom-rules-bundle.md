@@ -8,7 +8,7 @@ After successfully pushing your custom rules bundle, you can enforce its usage u
 * [Snyk API](using-a-remote-custom-rules-bundle.md#snyk-api)
 * [Environment variables](using-a-remote-custom-rules-bundle.md#environment-variables)
 
-Finally, once you've enforced your custom rules via one of the options above, configure the Snyk Snyk CLI with your username and password in order to allow us to authorize a pull from your OCI registry:
+Finally, once you've enforced your custom rules via one of the options above, configure the Snyk Snyk CLI with your username and password in order to allow us to authorize a pull from your OCI registry:&#x20;
 
 ```
 snyk config set oci-registry-username=<org registry username>
@@ -26,7 +26,7 @@ Once you have done that, run a Snyk IaC scan as normal. The CLI will pull the bu
 snyk iac test <file>
 ```
 
-The resulting configuration scan issues will include issues from both the default Snyk rules, and your custom rules. Also see [Understanding configuration issues](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-configuration-scan-issues).&#x20;
+The resulting configuration scan issues will include issues from both the default Snyk rules, and your custom rules. Also see [Understanding configuration issues](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-configuration-scan-issues).
 
 {% hint style="warning" %}
 Only one method for defining the bundle's path should be defined at any given time. Make sure to either disable the custom rules settings via the Snyk Settings page or the Snyk API. Alternatively, clear any previously-stored settings using `snyk config unset`.&#x20;
@@ -86,13 +86,9 @@ You can restore the inheritance of group configurations at any time by using the
 
 ### Snyk API
 
-If manually updating the settings through the Snyk Settings page is too time-consuming, another option is to use the Snyk API. The API currently allows to send any variation of the custom rules settings via a `PATCH` API call to the group-level settings.
+If manually updating the settings through the Snyk Settings page is too time-consuming, another option is to use the Snyk API. It currently allows to send any variation of the custom rules settings via an API call.
 
-{% hint style="warning" %}
-Currently there is no API to override the custom rules settings at the organization level.
-{% endhint %}
-
-* For example, in order to configure the custom rules bundle at the group level, call the Group IaC Settings API as explained in the [documentation](https://snykv3.docs.apiary.io/#reference/group-settings/infrastructure-as-code/update-infrastructure-as-code-settings) by providing the following body:
+* For example, in order to configure the custom rules bundle at the **group** level, call the [**Group IaC Settings API**](https://snykv3.docs.apiary.io/#reference/group-settings/infrastructure-as-code/update-infrastructure-as-code-settings) endpoint by providing the following body:
 
 ```
 {
@@ -100,8 +96,8 @@ Currently there is no API to override the custom rules settings at the organizat
          "type": "iac_settings",
          "attributes": {
            "custom_rules": {
-             "oci_registry_url": "group-registry/library/image",
-             "oci_registry_tag": "latest",
+             "oci_registry_url": "registry-1.docker.io/group-account/group-bundle-image",
+             "oci_registry_tag": "1.3.14",
              "is_enabled": true
            }
        }
@@ -117,7 +113,7 @@ Currently there is no API to override the custom rules settings at the organizat
          "type": "iac_settings",
          "attributes": {
            "custom_rules": {
-             "oci_registry_tag": "v1"
+             "oci_registry_tag": "1.3.14"
            }
        }
    }
@@ -139,6 +135,119 @@ Currently there is no API to override the custom rules settings at the organizat
 }
 ```
 
+The API will reply with the group's settings, so you can confirm the changes:
+
+```
+{
+  "type": "iac_settings",
+  "id": "<group id>",
+  "attributes": {
+    "custom_rules": {
+      "oci_registry_url": "registry-1.docker.io/group-account/group-bundle-image",
+      "oci_registry_tag": "1.3.14",
+      "is_enabled": true
+    },
+   "updated": "2021-11-27T11:34:33.132Z"
+  }
+```
+
+#### Overriding a group's remote bundle configurations
+
+Similarly to the Settings page, the [**Group IaC Settings API**](https://snykv3.docs.apiary.io/#reference/group-settings/infrastructure-as-code/update-infrastructure-as-code-settings) **** applies the remote bundle to all the organizations in the group. An organization can override the group's configurations and define its own bundle and tag by using an API call.
+
+* To override the group's configurations, call the [**Org IaC Settings API**](https://snykv3.docs.apiary.io/#reference/organization-settings/infrastructure-as-code/update-infrastructure-as-code-settings) endpoint by providing a different custom rules bundle and tag in the request body:
+
+```
+{
+   "data": {
+         "type": "iac_settings",
+         "attributes": {
+           "custom_rules": {
+             "oci_registry_url": "registry-1.docker.io/org-account/org-bundle-imageage",
+             "oci_registry_tag": "1.3.15",
+             "is_enabled": true
+           }
+       }
+   }
+}
+```
+
+* The API replies with the organization's settings, and the group settings under the `parents` section, so you can compare the two:
+
+```
+{
+  "type": "iac_settings",
+  "id": "<org id>",
+  "attributes": {
+    "custom_rules": {
+      "oci_registry_url": "registry-1.docker.io/org-account/org-bundle-image",
+      "oci_registry_tag": "1.3.15",
+      "is_enabled": true
+    },
+   "updated": "2021-11-27T11:34:33.132Z",
+   "parents": {
+      "group": {
+        "id": "<group id>",
+        "type": "iac_settings",
+        "attributes": {
+          "custom_rules": {
+            "oci_registry_url": "registry-1.docker.io/group-account/group-bundle-image",
+            "oci_registry_tag": "1.3.14",
+            "is_enabled": true
+          },
+          "updated": "2021-11-19T10:59:45.259Z"
+        }
+      }
+    }
+  }
+```
+
+* To revert back to the group settings, call the API by providing the following request body:
+
+```
+{
+   "data": {
+         "type": "iac_settings",
+         "attributes": {
+           "custom_rules": {
+             "inherit_from_parent": "group"
+           }
+       }
+   }
+}
+```
+
+* The API replies with the organization's settings, and the group settings under the `parents` section, so you can compare the two:
+
+```
+{
+  "type": "iac_settings",
+  "id": "<org id>",
+  "attributes": {
+    "custom_rules": {
+      "oci_registry_url": "registry-1.docker.io/group-account/group-bundle-image",
+      "oci_registry_tag": "1.3.14",
+      "is_enabled": true,
+      "inherit_from_parent": "group"
+    },
+   "updated": "2021-11-19T10:59:45.259Z",
+   "parents": {
+      "group": {
+        "id": "<group id>",
+        "type": "iac_settings",
+        "attributes": {
+          "custom_rules": {
+            "oci_registry_url": "registry-1.docker.io/group-account/group-bundle-image",
+            "oci_registry_tag": "1.3.14",
+            "is_enabled": true
+          },
+          "updated": "2021-11-19T10:59:45.259Z"
+        }
+      }
+    }
+  }
+```
+
 
 
 ### Environment variables
@@ -146,7 +255,7 @@ Currently there is no API to override the custom rules settings at the organizat
 You can also configure the location of the custom rules bundle using Snyk config for your organization. In your project’s folder, run the following commands to configure your container registry with the Snyk IaC CLI:
 
 ```
-snyk config set oci-registry-url=org-registry/library/image:latest
+snyk config set oci-registry-url=registry-1.docker.io/org-account/org-bundle-image:1.3.14
 ```
 
 This will set the following Snyk environment variable: `SNYK_CFG_OCI_REGISTRY_URL`
@@ -154,7 +263,7 @@ This will set the following Snyk environment variable: `SNYK_CFG_OCI_REGISTRY_UR
 {% hint style="info" %}
 Ensure the OCI Registry URL is a valid URL; for example, for DockerHub:
 
-`registry-1.docker.io/repository-name/bundle-image:1.0.0`
+`registry-1.docker.io/org-account/org-bundle-image:1.3.14`
 
 
 
