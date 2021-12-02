@@ -59,9 +59,9 @@ These controls appear above the table:
 
 ![](../../../.gitbook/assets/uuid-ef7a494d-8b10-9b28-dc63-3f9224519070-en.png)
 
-**Search issues**—this search capability allows users to search based on CVE, CWE or identifier name (i.e. DDoS). When searching by CVE or CWE, you must provide an exact value (for example CVE-1234) whereas, for identifier name, typing in a piece of the word will return results.
+**Search issues:** search based on CVE, CWE or identifier name (i.e. DDoS). When searching by CVE or CWE, you must provide an exact value (for example CVE-1234), but when searching for identifier name, typing in a piece of the word will return results.
 
-**Issue filters**—mark the issues to be displayed by selecting a range of priority scores, specific issue types, exploit maturity, status, fixable values and reachability, as described in the Issues tab elements section.
+**Issue filters:** mark the issues to be displayed by selecting a range of priority scores, specific issue types, exploit maturity, status, fixable values and reachability, as described in the **Issues tab elements** section.
 
 ![](../../../.gitbook/assets/screenshot\_2020-07-30\_at\_11.30.19\_am.png)
 
