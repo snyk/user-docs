@@ -14,7 +14,7 @@ Let's work through the issues for a Dockerfile, because those are typically abou
 
 When you see the Dockerfile project, you will be presented with upgrade recommendations for the base image as shown below.
 
-![](<../../../../.gitbook/assets/image (87) (2).png>)
+![](<../../../../.gitbook/assets/image (87) (1) (1).png>)
 
 Expand the list by clicking on the "Show more upgrade types" to see your available options.
 

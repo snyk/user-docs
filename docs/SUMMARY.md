@@ -403,6 +403,7 @@
   * [Prioritizing issues](features/fixing-and-prioritizing-issues/prioritizing-issues/README.md)
     * [Prioritize by Social Trends](features/fixing-and-prioritizing-issues/prioritizing-issues/prioritize-by-social-trends.md)
     * [Reachable vulnerabilities](features/fixing-and-prioritizing-issues/prioritizing-issues/reachable-vulnerabilities.md)
+    * [Fixed in version vs. fixable attribute in vulnerabilities](features/fixing-and-prioritizing-issues/prioritizing-issues/fixed-in-version-vs.-fixable-attribute-in-vulnerabilities.md)
   * [Triaging issues](features/fixing-and-prioritizing-issues/triaging-issues.md)
 * [Reports](features/general-reports/README.md)
   * [Reports](features/general-reports/reports/README.md)
