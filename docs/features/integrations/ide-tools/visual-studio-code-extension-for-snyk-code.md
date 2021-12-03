@@ -23,7 +23,7 @@ You can find the Snyk Extension in the Visual Studio Code Marketplace. To instal
 * Navigate to the [Snyk Extension on the Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner) and follow the instructions for the Snyk extension. The docs from VS Code help you trigger the installation process from Visual Studio Code and guide you through the installation steps.
 * Browse for the extension as advised [here](https://code.visualstudio.com/docs/editor/extension-gallery#\_browse-for-extensions) and search for Snyk, then install (as described [here](https://code.visualstudio.com/docs/editor/extension-gallery#\_install-an-extension)).
 
-Once installed you can find a Snyk icon in the sidebar ![](broken-reference).
+Once installed you can find a Snyk icon in the sidebar ![](<../../../.gitbook/assets/Screen Shot 2021-12-03 at 8.02.07 AM.png>).
 
 Snyk’s extension provides all the suggestions in a concise and clean view containing all information you need to decide how to fix or act upon:
 
