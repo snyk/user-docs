@@ -71,9 +71,9 @@ The following environment variables are mandatory to configure the code agent:
 To run the **code-agent:**
 
 ```
-docker run -it --name code-agent \
+docker run --name code-agent \
      -p 3000:3000 \
-     -e PORT=3000 -e SNYK_TOKEN=<token> --network mySnykBrokerNetwork \ 
+     -e PORT=3000 -e SNYK_TOKEN=<token> --network mySnykBrokerNetwork \
      snyk/code-agent
 ```
 
@@ -94,7 +94,7 @@ Extend your broker setup with the following arguments:
 For example, to extend an existing broker client configured for Gitlab, run:
 
 ```
-docker run -it \
+docker run \
    -p 8001:8000 \
    -e BROKER_TOKEN= \
    -e GITLAB_TOKEN= \
