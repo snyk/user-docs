@@ -20,7 +20,7 @@ npm install --save \
   http
 ```
 
-Install TypeScript type definitions for our packages as dev dependencies:
+Install TypeScript type and interface definitions for our packages as dev dependencies:
 
 ```
 npm install --save-dev \
@@ -30,19 +30,23 @@ npm install --save-dev \
   @types/node
 ```
 
-## Update index.ts
+## Containing the App
 
-> This section makes use of Object-oriented programming concepts. If you aren't familiar with OOP, check out https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS for a brief primer.
+> This tutorial makes use of Object-oriented programming concepts. If you aren't familiar with OOP, check out [this MDN page](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS) for a brief primer.
 
-We'll start by deleting `./src/index.ts` and starting fresh. Since
-we'll likely want to do a few things before we start our app in
-earnest, we'll contain the application code a bit by creating a new
-file: `./src/app.ts` and save `./src/index.ts` for later.
+To begin, let's create a new file to house the application code we'll
+be working on in this portion of the tutorial. If you've just come
+from the previous module where we configured a simple 'Hello world'
+app, you can leave your `index.ts` file alone, we'll come back to it.
 
-Add an import statement for Express and its TypeScript type
-definitions at the top of the new file (`./src/app.ts`), then create
-an `App` class to house all the related functions / configuration
-required to run our application.
+```bash
+touch ./src/app.ts
+```
+
+Add an import statement for Express and its TypeScript type /
+interface definitions at the top of the new file (`./src/app.ts`),
+then create an `App` class to house all the related functions and
+configuration required to run our application.
 
 The class' constructor will initialize Express on port 3000 when the
 class is instantiated. We'll create a private function `listen()` for
@@ -78,29 +82,31 @@ class App {
 export default App;
 ```
 
-Test the new file using `npx tsc` to ensure an `app.js` file is
+Test the new file using `npx tsc` and ensure an `app.js` file is
 successfully created in the `./dist` directory. If there are no
-errors, great! We now have an Express server we can run which will
-listen for requests on port 3000.
+errors, great! You're ready to start adding routes.
 
 ## Basic routes
 
 Express will listen to any request on our given port, but it doesn't
-know what to do when it receives a request. We need to tell Express
-how to handle the various types of requests it might receive. How you
-configure this depends heavily on the architecture of your
+know _what to do_ when it receives a request. We need to tell Express
+_how_ to handle the various types of requests it might receive. How
+you configure this depends heavily on the architecture of your
 application, and which routes / pages you expect your app to respond
 to when hit.
 
-For this tutorial, we'll keep things simple.
+For this tutorial, we'll keep things simple. Since our end goal is to
+provide users with a list of their projects within Snyk, let's assume
+we'll want at least two routes: an index route (`/`) to handle any
+initial connections and a projects route (`/projects`) to present the
+data from Snyk.
 
-Our App should respond to requests for an index route (`/`),
-<\other routes discussed here>
+To keep our project organized, we'll create a `routes` directory to
+house our collection of routes and we'll give each route its own
+subdirectory which will contain the main controller file for the route
+and any extras we might need.
 
-To keep our project organized, we'll create a directory to store each
-route controller file. Let's create a new directory to house our route
-controllers at `./src/routes/` and create a file for our index route
-which will handle requests to `/` on our server.
+We'll focus on the index route for this module:
 
 ```bash
 mkdir -p ./src/routes/index
@@ -108,13 +114,15 @@ touch ./src/routes/index/indexController.ts
 ```
 
 Before we start working on the index controller, we should also create
-a TypeScript interface definition to describe a common shape for the data
-any future controllers should share.
+a [TypeScript interface](https://www.typescriptlang.org/docs/handbook/interfaces.html)
+definition to describe a common shape for controller data. This will
+help keep our controllers consistent and allow TypeScript to warn us
+early if a controller is missing something important.
 
-Let's use a similar separation pattern as the one we decided on
-for routes. Since interface definitions in TypeScript are typically self
-contained, we'll skip creating a directory for each definition and
-store any interface files we create as siblings:
+Let's use a similar separation pattern as the one we decided on for
+routes. Since interface definitions in TypeScript are typically
+self-contained and descriptive, we'll skip creating a directory for
+each definition and store any interface files we create as siblings:
 
 ```bash
 mkdir -p ./src/interfaces
@@ -125,7 +133,7 @@ Any route controller we create should at the very least take a path
 value and a router from Express. Edit `./src/interfaces/Controller.ts`
 and populate it with the content below.
 
-```ts
+```typescript
 import type { Router } from 'express';
 
 export interface Controller {
@@ -138,7 +146,7 @@ With that done, open the route controller file
 (`./src/routes/index/indexController`) in your editor and add the
 following:
 
-```ts
+```typescript
 import type { Controller } from '../../interfaces/Controller';
 import type { Request, Response, NextFunction } from 'express';
 import { Router } from 'express';
@@ -163,17 +171,16 @@ class IndexController implements Controller {
 export default IndexController;
 ```
 
-Per usual, we import TypeScript type definitions we need as well as
-the Router object from the Express package.
+Here we've imported a handful of TypeScript type/interface definitions
+as well as the Router object from the Express package.
 
-<!-- // @TODO -->
 We've set our `IndexController` to respond to `/` requests with the
 `indexPage` function, which renders 'index', but our App class doesn't
 yet have a way to register the route when it instantiates. Let's go
 back to our `./src/app.ts` file and add an `initRoutes()` function to
 do just that.
 
-While we're at it, we'll also configure the App's constructor function
+While we're at it, we'll also modify the App's constructor function
 to take an array of Controllers and a port value as arguments.
 
 Edit `./src/app.ts` and update the contents to match the following:
@@ -222,15 +229,15 @@ data pattern.
 
 Let's run our project and try it out!
 
-If you run the compile `./dist/app.js` at this point, nothing
+If you run the compiled `./dist/app.js` at this point, nothing
 interesting happens. This is because we've yet to actually instantiate
-our exported class! Remember in an earlier step, where we initialized
-our `package.json`? During that command, we were presented with a
-handful of questions pertaining to our app. One of the questions asked
-what our project's entrypoint was. If you were following along and
-selected the default value, this should be set to `index.js` in your
-`package.json`. This entrypoint is where we'll instantiate the App
-class.
+our exported class! Do you remember where, in the previous module, we
+initialized our `package.json`? During that command, we were presented
+with a handful of questions pertaining to our app. One of the
+questions asked what our project's entrypoint was. If you were
+following along and selected the default value, this should be set to
+`index.js` in your `package.json`. This entrypoint is where we'll
+instantiate the App class.
 
 Edit `./src/index.ts` (where we had that hello world code) and clear
 it out if there's any content left over, then add import statements
@@ -253,7 +260,8 @@ new App(
 
 That's it!
 
-Build the project using `npx tsc` then run the compiled entrypoint`./dist/index.js` with node:
+Build the project using `npx tsc` then run the compiled
+entrypoint with `node`:
 
 ```bash
 npx tsc && node ./dist/index.js
@@ -263,28 +271,10 @@ Provided everything was successful, you'll see the message `App
 listening on port: 3000` in the console.
 
 Now visit http://localhost:3000 in your browser or use curl to check
-the response. If you see `index route!`, congratulations! Express is
-serving our app and responding to routes!
+the response. If you see `index route!`, then congratulations! Express is
+serving the application and responding to routes!
 
+---
 
-In the next part of this tutorial, we'll dive deeper into routes, authentication, and
+In the next module of this tutorial, we'll dive deeper into routes, authentication, and
 start working with the Snyk API, see you there!
-
-### Middleware
-
-<!-- - express.json() to handle JSON requests -->
-<!-- - express.urlencoded(): Express middleware to handle URL encoded calls -->
-<!-- - app.set('views'): The application uses EJS templating the function sets the paths to the ejs template view directory -->
-<!-- - app.set('view engine', 'ejs'): Set the view engine for this app to EJS -->
-<!-- - app.use('/public'): Sets the public directory path where all public assets will be stored -->
-<!-- - We use express sessions which are further used by passportjs -->
-<!-- - The helmet middleware helps protect against many malicious issues, for instance, it disables X-Powered-By headers which exposes information about the framework in use to potential hackers. -->
-<!-- - Since majority of our app pages are rendered directly from file system and does not use a rate-limiting mechanism. It may enable the attackers to perform DDOS attacks. Rate limiting helps us prevent that. -->
-
-## Connecting to Snyk & handling state with Passport
-
-## Present the data
-
-## Conclusion
-
-## Want to publish your app? Check out our TAPP program!
