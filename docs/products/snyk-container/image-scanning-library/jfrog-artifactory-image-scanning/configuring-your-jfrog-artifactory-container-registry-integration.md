@@ -18,10 +18,10 @@ Enable integration between one Artifactory instance as a container registry and 
 3. The configuration page in the **Settings** area loads.
 4. Enter credentials as follows: 
    1. **Username and Password**—use your Artifactory login credentials. 
-   2. **Container registry name -** the _full URL_ for the registry you’d like to integrate with.
+   2. **Container registry name -** the _full registry URL_ in format `<org>.jfrog.io/artifactory/api/docker/<repo-name>`.
 5. Click **Saved**.
 
-![](../../../../.gitbook/assets/uuid-232f8a25-f161-ceef-2405-8325c5bf14c6-en.png)
+<img width="548" alt="Screenshot 2021-12-06 at 16 37 12" src="https://user-images.githubusercontent.com/112600/144875482-078b715e-2834-469b-9983-7e88a65f175e.png">
 
 ![](../../../../.gitbook/assets/uuid-3b329a90-394f-5ab3-af84-658b41a1edc0-en.png)
 
