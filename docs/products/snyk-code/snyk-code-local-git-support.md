@@ -60,7 +60,7 @@ You can confirm that it was created by running **`docker network ls`**, this wil
 First, pull the code-agent image:
 
 ```
-docker pull snyk snyk/code-agent
+docker pull snyk/code-agent
 ```
 
 The following environment variables are mandatory to configure the code agent:
