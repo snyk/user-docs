@@ -100,7 +100,7 @@ The icons here mean:
 | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](<../../../.gitbook/assets/image (77) (1) (1) (1).png>) High severity | May allow attackers to access sensitive data on your application.                                                                            |
 | ![](<../../../.gitbook/assets/image (70) (1) (1).png>) Medium severity   | May allow attackers under some conditions to access sensitive data on your application.                                                      |
-| ![](<../../../.gitbook/assets/image (81) (1) (1).png>) Low severity      | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
+| ![](<../../../.gitbook/assets/image (81) (1) (1) (1).png>) Low severity  | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
 
 You can filter the issues by setting the severities you want to see using the `snyk.severity` setting. E.g. set `"snyk.severity": { "critical": true, "high": true, "medium": true, "low": false }` to hide low severity issues. You can also apply the setting via Settings UI.
 
