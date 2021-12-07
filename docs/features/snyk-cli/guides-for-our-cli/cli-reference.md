@@ -126,7 +126,7 @@ custom-built jar files, even with open source dependencies, are out of scope.
 
 `--scan-unmanaged`Auto-detects maven jar, war, and aar files in a given directory, and individual testing can be done with `--file=FILE_NAME`
 
-`--reachable` (only in `test` and `monitor` commands) Analyze your source code to find which vulnerable functions and packages are called.
+`--reachable` (only in `test` and `monitor` commands) Analyze your source code to find which vulnerable functions and packages are called. Cannot be used in conjunction with `--all-projects` or `--all-sub-projects`
 
 `--reachable-timeout=TIMEOUT` The amount of time (in seconds) to wait for Snyk to gather reachability data. If it takes longer than `TIMEOUT`, Reachable Vulnerabilities are not reported. This does not affect regular test or monitor output. Default: 300 (5 minutes).
 
