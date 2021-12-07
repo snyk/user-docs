@@ -56,16 +56,19 @@ The name of the rule you want to define. This will generate a `rules/` folder at
 
 The scaffolded folder structure looks like so:
 
-`rules `\
-`└── RULE    `\
-`         ├── fixtures  `\
-`                 ├── allowed.tf  `\
-`                └── denied.tf`\
-`         ├── main.rego  `\
-`        └── main_test.rego`\
-`lib    `\
-`└── testing `\
-`         └── main.rego  `\
+`rules` \
+`└── RULE`    \
+&#x20;       `├── fixtures` \
+&#x20;               `├── allowed.json`\
+&#x20;               `└── denied.json.tfplan`\
+&#x20;               `└── denied1.yaml`\
+&#x20;               `└── denied2.tf`\
+&#x20;       `├── main.rego` \
+&#x20;       `└── main_test.rego`\
+`lib`    \
+`└── testing` \
+&#x20;       `└── main.rego`\
+&#x20;       `└── tfplan.rego`\
 `└── main.rego`
 
 Note: the rule name cannot contain any whitespace or start with `SNYK-`.
@@ -82,7 +85,7 @@ The title of the rule, which will show up when running the Snyk Infrastructure a
 
 #### Parse options
 
-`--format`=`hcl2`|`yaml`
+`--format`=`hcl2`|`yaml|tf-plan`
 
 The format of the fixture. The format dictates what parser we use to generate JSON from the fixture.
 
