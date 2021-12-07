@@ -1,6 +1,6 @@
 # Snyk Broker
 
-* [Broker introduction](broker-introduction/)
+* [Broker introduction](broker-introduction.md)
 * [Set up Snyk Broker](set-up-snyk-broker.md)
 * [Prepare Snyk Broker for deployment](prepare-snyk-broker-for-deployment.md)
 * [Enable permissions for Snyk Broker from your third-party tool](enable-permissions-for-snyk-broker-from-your-third-party-tool.md)
