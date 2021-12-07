@@ -19,37 +19,37 @@ Organization mappings are to be passed as an array field called roles which must
 **PREFIX-ORGNAME-ROLE**
 
 * **PREFIX** is present on every role mapping. It should be agreed upon between the customer and Snyk and will be used to identify the customer's role mapping.
-  * Example: snyk-CUSTOMERNAME (With no spaces)
+  * Example: snyk-customername (With no spaces)
 * **ORGNAME** is the organization name in Snyk and must be the slugified version of the org name with no spaces (The slugified org name can be found in the snyk URL within an organization)
   * Example: https://app.snyk.io/org/\<slugified org name>
-* **ROLE** is the role a user has in that org or group. It is either **collaborator**, or **admin**, or **groupadmin.** (Avoid using any custom roles here)
+* **ROLE** is the role a user has in that org or group. It is either **collaborator** or **collab*, **administrator** or **admin**, or **groupadmin.** (Avoid using any custom roles here)
 
 ### Example roles array mapping:
 
 To assign roles to Snyk users under the mapping convention&#x20;
 
-1. Apply the attribute name as: `snyk-{group_name}-{orgName}-{role}`
+1. Apply the attribute name as: `snyk-{customername}-{orgName}-{role}`
 2. Use the following structure:
 
 ```
 {
-"roles": [
-"snyk-{group_name}-{my-org}-admin",
-"snyk-{group_name}-{my-other-org}-collaborator"
-]
+	"roles": [
+		"snyk-{customername}-{orgName}-admin",
+		"snyk-{customername}-{other_orgName}-collaborator",
+	]
 }
 ```
 
 To assign users with group admin privileges&#x20;
 
-1. Apply the attribute name as:  `snyk-{group_name}-groupadmin`
+1. Apply the attribute name as:  `snyk-{customername}-{orgName}-groupadmin`
 2. Use the following structure:
 
 ```
 {
-"roles": [
-  "snyk-{group_name}-groupadmin"
-]
+	"roles": [
+		"snyk-{customername}-{orgName}-groupadmin"
+	]
 }
 ```
 
