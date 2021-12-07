@@ -45,8 +45,12 @@ To perform Reachable Vulnerabilities analysis, you can:
 ### Scanning for Reachable Vulnerabilities using Snyk CLI
 
 1. Ensure you are using the latest version of the [CLI](https://www.npmjs.com/package/snyk).
-2. Navigate into the folder of your app, where the relevant manifest files reside (alternatively use the **--file** parameter to point to the right path).
-3. Run **snyk test --reachable**_._
+2. Navigate into the folder of your app, where the relevant manifest files reside (alternatively use the `--file` parameter to point to the right path).
+3. Run `snyk test --reachable`
+
+{% hint style="info" %}
+Note that the `--reachable` parameter cannot be used simultaneously with `--all-projects` or `--all-sub-projects`
+{% endhint %}
 
 ### Scanning for Reachable Vulnerabilities using Git Integrations
 
@@ -69,7 +73,7 @@ For more information see [how-snyk-handles-your-data.md](../../../more-info/how-
 
 ### CLI
 
-When running **snyk test --reachable**_,_ the CLI output includes:
+When running `snyk test --reachable`_,_ the CLI output includes:
 
 1. The number of tested dependencies, the number of found vulnerabilities and how many of them are reachable.
 2. The reachability level appears next to the relevant vulnerability, and the path from the app’s code to the vulnerable function appears below.
@@ -78,7 +82,7 @@ When running **snyk test --reachable**_,_ the CLI output includes:
 
 ### Project page
 
-After running **snyk monitor** in the CLI, or importing a project via Snyk UI, the project is monitored by Snyk and the results of the Reachable Vulnerabilities analysis appears in the Project page in the following places:
+After running `snyk monitor` in the CLI, or importing a project via Snyk UI, the project is monitored by Snyk and the results of the Reachable Vulnerabilities analysis appears in the Project page in the following places:
 
 1. **Filters** - Allows you to focus on reachable vulnerabilities first by filtering results based on reachability.
 2. **Reachability badge** - Allows you to quickly understand the reachability level of vulnerabilities.
