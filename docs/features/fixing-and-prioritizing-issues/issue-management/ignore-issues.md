@@ -124,7 +124,7 @@ See [Using Snyk Code (web)](https://support.snyk.io/hc/en-us/articles/3600171475
 
 When scanning your IaC configuration files using the Snyk CLI with **snyk iac test** you can ignore issues that are not relevant to you.
 
-You can do this by using the [.snyk policy file](../jira-tickets-for-new-vulns/the-.snyk-file.md), which we recommend is stored and versioned in the root of your working directory for where you store your IaC configuration files.
+You can do this by using the [.snyk policy file](../policies/the-.snyk-file.md), which we recommend is stored and versioned in the root of your working directory for where you store your IaC configuration files.
 
 See [iac-ignores-using-the-.snyk-policy-file.md](../../../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md "mention")for more details.&#x20;
 
