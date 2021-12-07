@@ -9,11 +9,11 @@ You can use Snyk to scan your JavaScript projects.
 Features might not be available, depending on your subscription plan.
 {% endhint %}
 
-| Package managers / Features | <p>CLI </p><p>support</p> | <p>Git </p><p>support</p> | <p>License </p><p>scanning</p> | Fixing | <p>Runtime </p><p>monitoring</p> |
-| --------------------------- | ------------------------- | ------------------------- | ------------------------------ | ------ | -------------------------------- |
-| npm                         | ✔︎                        | ✔︎                        | ✔︎                             | ✔      | ✔︎                               |
-| Yarn                        | ✔︎                        | ✔︎                        | ✔︎                             | ✔︎     | ✔︎                               |
-| Yarn Workspaces             | ✔︎                        | ✔︎                        | ✔︎                             | ✔︎     | ✔︎                               |
+| Package managers / Features | <p>CLI</p><p>support</p> | <p>Git</p><p>support</p> | <p>License</p><p>scanning</p> | Fixing | <p>Runtime</p><p>monitoring</p> |
+| --------------------------- | ------------------------ | ------------------------ | ----------------------------- | ------ | ------------------------------- |
+| npm                         | ✔︎                       | ✔︎                       | ✔︎                            | ✔      | ✔︎                              |
+| Yarn                        | ✔︎                       | ✔︎                       | ✔︎                            | ✔︎     | ✔︎                              |
+| Yarn Workspaces             | ✔︎                       | ✔︎                       | ✔︎                            | XXX    | ✔︎                              |
 
 ### How it works
 
@@ -52,7 +52,7 @@ Yarn versions 1 & 2 are supported in the Snyk CLI.
 
 We analyze your `package.json` and `yarn.lock` files, to build a full structured dependency tree. If the `yarn.lock` is missing, we analyze your `node_modules` folder.
 
-Snyk supports resolutions only in Yarn v2 in repositories _without_ workspaces. We do not support resolutions for Yarn v1.
+Snyk supports resolutions only in Yarn v2. We do not support resolutions for Yarn v1.
 
 ### Yarn workspaces
 
@@ -60,7 +60,7 @@ Snyk supports resolutions only in Yarn v2 in repositories _without_ workspaces. 
 Yarn v1 & 2 workspaces support is for `snyk test` and `snyk monitor` commands only at this time.
 {% endhint %}
 
-For Yarn workspaces use the `--yarn-workspaces` flag to test and monitor your packages. The root lockfile is referenced when scanning all the packages. Use the `--detection-depth` parameter to find sub-folders which are not auto discovered by default.
+For Yarn workspaces use the `--yarn-workspaces` flag to test and monitor your packages. The root lock file is referenced when scanning all the packages. Use the `--detection-depth` parameter to find sub-folders that are not auto-discovered by default.
 
 Example usage:\
 `snyk test --yarn-workspaces --strict-out-of-sync=false --detection-depth=6` which will scan only the packages that belong to any discovered workspaces this directly and 5 sub-directories deep.
@@ -72,7 +72,7 @@ You may use a common **.snyk** policy file if you maintain ignores/patches in on
 ### Lerna
 
 {% hint style="info" %}
-We currently do **not** support Lerna. However, if your Lerna project is using Yarn Workspaces then the project can be scanned with the standard Yarn Workspaces support. You _might_ be able to run Snyk test/monitor with the following workaround commands to help you unblock the Snyk CLI integration.&#x20;
+We currently do **not** support Lerna. However, if your Lerna project is using Yarn Workspaces then the project can be scanned with the standard Yarn Workspaces support. You _might_ be able to run Snyk test/monitor with the following workaround commands to help you unblock the Snyk CLI integration.
 {% endhint %}
 
 For each example-package you can do:
@@ -129,7 +129,7 @@ We build the dependency tree based on these files:
 ### Yarn
 
 {% hint style="info" %}
-Yarn version 1 & 2 is supported in Git services.
+Yarn versions 1 & 2 are supported in Git services.
 {% endhint %}
 
 We build the dependency tree based on these files:
@@ -141,21 +141,18 @@ We build the dependency tree based on these files:
 
 {% hint style="info" %}
 **Note**\
-Git support for Yarn Workspaces is enabled for all projects in organisations created after March 3rd 2021. To enable this feature for organisations created before this date please contact support@snyk.io.
-Yarn version 1 & 2 is supported in Git services.
+Git support for Yarn Workspaces is enabled for all projects in organisations created after March 3rd 2021. To enable this feature for organisations created before this date please contact support@snyk.io. Yarn version 1 is supported in Git services.
 {% endhint %}
 
-For Yarn Workspaces we scan each `package.json` that matches the `packages` pattern from the root level `package.json` and root level `yarn.lock`.
+For Yarn Workspaces we scan each `package.json` that matches the `packages` pattern from the root level `package.json` and root level `yarn.lock`
 
 Fix Pull/Merge Requests are not supported for Yarn Workspaces. The fix advice can be used to manually generate PRs.
-
-Commit status checks fail if the `package.json` and the root `yarn.lock` are out of sync.
 
 Commit status checks always use the root level `yarn.lock` and workspace `package.json` for tests.
 
 {% hint style="info" %}
 **Warning**\
-If your `package.json` and root `yarn.lock` are out of sync, we will have issues re-testing the projects. Snyk shows errors on project page and import logs when this happens.\
+If your `package.json` and root `yarn.lock` are out-of-sync, we will have issues re-testing the projects. Snyk shows errors on project page and import logs when this happens.\
 If you reference the locally installed packages which do not appear in a lockfile, you can disable the **Require package.json and yarn.lock files to be in sync** setting, on the **Languages Settings** page for JavaScript.
 {% endhint %}
 
@@ -172,8 +169,6 @@ From the Snyk UI, use these parameters to customize your language preferences fo
 | **Exclude package-lock.json from being generated when fixing vulnerabilities** | If you are using private mirrors or registries, a Snyk generated lockfile might not be appropriate for you because Snyk uses the npm registry to update the lockfile. This setting allows you to opt-out of getting lockfiles generated for you in our fix pull requests / merge requests. |
 
 ### Update language preferences
-
-![](<../../../.gitbook/assets/add-artifactory-images (1) (2) (44).gif>)
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage
 2. Click on settings ![](../../../.gitbook/assets/cog\_icon.png) > **Languages**
