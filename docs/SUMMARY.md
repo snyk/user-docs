@@ -318,7 +318,6 @@
     * [How to install and configure your Snyk Broker client](features/integrations/snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md)
     * [Upgrade your Snyk Broker client](features/integrations/snyk-broker/upgrade-your-snyk-broker-client.md)
     * [Broker Example - How to setup Broker with Jira](features/integrations/snyk-broker/broker-example-how-to-setup-broker-with-jira.md)
-    * [Broker Example - How to import IaC files](features/integrations/snyk-broker/broker-example-how-to-import-iac-files.md)
     * [Troubleshooting Broker](features/integrations/snyk-broker/troubleshooting-broker.md)
   * [Notification and ticketing system integrations](features/integrations/notifications-ticketing-system-integrations/README.md)
     * [Slack integration](features/integrations/notifications-ticketing-system-integrations/slack-integration.md)
