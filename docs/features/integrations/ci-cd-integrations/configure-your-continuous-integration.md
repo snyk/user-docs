@@ -1,6 +1,6 @@
 # Configure your Continuous Integration
 
-To continuously avoid known vulnerabilities in your dependencies, integrate Snyk into your continuous integration \(a.k.a. build\) system. In addition to the documentation here, you're also invited to check out our [integration configuration examples](https://github.com/snyk-samples/snyk-cicd-integration-examples) in our GitHub repository.
+To continuously avoid known vulnerabilities in your dependencies, integrate Snyk into your continuous integration (a.k.a. build) system. In addition to the documentation here, you're also invited to check out our integration configuration examples in our GitHub repository.
 
 ## Set up automatic monitoring
 
@@ -16,6 +16,5 @@ See guidance for how to do this on:
 * [Circle](https://circleci.com/docs/environment-variables/)
 * [Codeship](https://codeship.com/documentation/continuous-integration/set-environment-variables/)
 
-You can find others through an easy [Google search](https://www.google.co.uk/search?q=setting+up+env+variables+in+CI).  
+You can find others through an easy [Google search](https://www.google.co.uk/search?q=setting+up+env+variables+in+CI).\
 Learn more about [CI/CD](https://snyk.io/learn/what-is-ci-cd-pipeline-and-tools-explained/).
-
