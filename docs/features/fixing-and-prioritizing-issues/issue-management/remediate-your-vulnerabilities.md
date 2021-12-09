@@ -1,15 +1,16 @@
-# Remediate your vulnerabilities
+# Fix your vulnerabilities
 
-Snyk helps you to fix vulnerabilities in two ways. Either by upgrading the direct dependencies to a vulnerability free version or by patching the vulnerability.
+Snyk helps you to fix vulnerabilities, by upgrading the direct dependencies to a vulnerability-free version, or by patching the vulnerability.
 
-Fixing with Snyk can either be performed in 4 different ways
+To fix a vulnerability with Snyk:
 
-1. by using the Source code integrations and clicking the Open a fix PR button on the project page
-2. by clicking the Fix this vulnerability link on a specific issue card on the project page.
-3. automatic pull requests - When new fixes become available that helps you to fix a vulnerability Snyk can open an automated pull request.
-4. by using the CLI and running the `snyk wizard` command to fix node.js projects.
+* Click **Fix this vulnerability** on a specific [issue card](../../../getting-started/introduction-to-snyk-projects/issue-card-information.md) on the relevant project page.
+* If you are using a [Source code integration](../../integrations/git-repository-scm-integrations/):
+  * Click **Open a fix PR** on the project page.
+  * Use [automated pull requests](../../../products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md) when new fixes become available that help you to fix a vulnerability.
+* If fixing node.js projects, you can run the [**snyk wizard**](../../snyk-cli/fix-vulnerabilities-from-the-cli/manage-vulnerability-results-with-the-snyk-cli-wizard.md) CLI command.
 
-## How it works
+### How it works
 
 When a new fixable vulnerability is found, Snyk attempts to open a new pull request on your behalf (in a repository for which we support automatic fix pull requests), or suggests you open one manually based on your settings.
 
@@ -17,14 +18,14 @@ When Snyk automates the fix, we check if there are an existing branch and pull r
 
 When there’s no existing branch and pull request for the issue a new branch and pull request are created.
 
-## Fix advice
+### Fix advice
 
 Once Snyk tests your manifest files, we then provide a summary and detailed advice for vulnerabilities that have fixes available, enabling you to resolve those vulnerabilities in your code with the help of clear suggestions and explanations.
 
 Snyk offers you one of these solutions:
 
 * an **upgrade** - an upgrade to the original package
-* **Pinning** a package - installing a package as a top-level dependency i.e. a specific version of an indirect dependency, to avoid a direct dependency pulling in a vulnerable version
+* **Pinning** a package - installing a package as a top-level dependency; that is, a specific version of an indirect dependency. This avoids a direct dependency pulling in a vulnerable version
 * a Snyk precision **patch** - if an upgrade to fix any of the vulnerabilities in the package is not currently available, Snyk offers patches to fix the issues
 
 The summary area groups advice per package, and is displayed based on the best available fix. Advice in these summary lists includes these details per package:
@@ -32,7 +33,7 @@ The summary area groups advice per package, and is displayed based on the best a
 * All vulnerability names and severity details affecting that package
 * The recommended fix - a link to the recommended fix for this package and its listed vulnerabilities: either the specific version to which to upgrade or the name of the patch
 
-## Actionable advice from our app
+### Actionable advice from our app
 
 From our app, for each tab (upgrade and patch) in the fix advice area of your project details, results are displayed as follows:
 
@@ -52,7 +53,7 @@ You can also find additional advice and details further down on the Project deta
 * from the **Issues**, tab, a full description per vulnerability
 * from the **Dependencies** tab, the entire tree of your project dependencies, enabling you to clearly visualize affected paths
 
-## Actionable advice from our CLI tool
+### Actionable advice from our CLI tool
 
 From the CLI, for each list (upgrade and patch), results are displayed in groups based on the packages we recommend that you fix, and including:
 

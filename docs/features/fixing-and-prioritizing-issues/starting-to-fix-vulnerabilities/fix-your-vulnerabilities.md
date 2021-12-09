@@ -4,4 +4,4 @@ Snyk can help you to fix vulnerabilities by upgrading the direct dependencies to
 
 To apply these fixes, you can use different methods, ranging from manually applying using the Snyk UI, to automatic pull requests opened by Snyk.
 
-See [fix-your-vulnerabilities.md](../issue-management/fix-your-vulnerabilities.md "mention") for more details.
+See [remediate-your-vulnerabilities.md](../issue-management/remediate-your-vulnerabilities.md "mention") for more details.
