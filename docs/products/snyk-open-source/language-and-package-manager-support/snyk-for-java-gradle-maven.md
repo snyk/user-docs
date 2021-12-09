@@ -12,10 +12,10 @@ The following table provides a general outline of the general features we offer 
 Some features might not be available, depending on your pricing plan. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-| Package managers / Features       | CLI support | Git support | License scanning | Fixing                                                                                                                          | Runtime monitoring |
-| --------------------------------- | ----------- | ----------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [Maven](https://maven.apache.org) | ✔︎          | ✔︎          | ✔︎               | ✔︎                                                                                                                              | ✔︎                 |
-| [Gradle](https://gradle.org)      | ✔︎          | ✔︎          | ✔︎               | [Fix advice](../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) only |                    |
+| Package managers / Features       | CLI support | Git support | License scanning | Fixing                                                                                                                                 | Runtime monitoring |
+| --------------------------------- | ----------- | ----------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [Maven](https://maven.apache.org) | ✔︎          | ✔︎          | ✔︎               | ✔︎                                                                                                                                     | ✔︎                 |
+| [Gradle](https://gradle.org)      | ✔︎          | ✔︎          | ✔︎               | [Fix advice](../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/how-to-fix-your-vulnerabilities.md) only |                    |
 
 ## Snyk CLI tool for Java projects (CI/CD)
 

@@ -1,6 +1,6 @@
 # Fixing vulnerabilities
 
-Snyk provides actionable fix advice for vulnerabilities: see [fix-your-vulnerabilities.md](../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md "mention")
+Snyk provides actionable fix advice for vulnerabilities: see [fix-your-vulnerabilities.md](../../../features/fixing-and-prioritizing-issues/issue-management/fix-your-vulnerabilities.md "mention") for more details.
 
 Snyk supports workflows to fix vulnerabilities using:
 
@@ -11,7 +11,7 @@ Snyk supports workflows to fix vulnerabilities using:
 [what-languages-do-we-support-fix-pull-requests-or-merge-requests.md](../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md)
 {% endcontent-ref %}
 
-## **Automatic pull / merge requests**
+### **Automatic pull / merge requests**
 
 For projects imported via an SCM (Source Code Manager), Snyk offers the following types of automated pull / merge requests:
 
@@ -19,7 +19,7 @@ For projects imported via an SCM (Source Code Manager), Snyk offers the followin
 * [Fix pull requests to clear the backlog of vulnerabilities in priority order](fix-pull-requests-for-known-vulnerabilities-backlog.md)
 * [Dependency upgrade pull requests](https://docs.snyk.io/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs)
 
-## Manual pull / merge requests for a project code
+### Manual pull / merge requests for a project code
 
 To generate a PR / MR directly from your project, using the Snyk UI:
 
