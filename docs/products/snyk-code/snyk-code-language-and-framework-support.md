@@ -9,7 +9,7 @@ Snyk Code currently supports:
 * **PHP**
 * **C#**
 
-_Beta support exists for: Go, Ruby, Kotlin, APEX, ASP.NET, Swift, C and C++ contact us for more details or with your further needs._
+_Beta support exists for: Go, Ruby and Kotlin contact us for more details or with your further needs._
 
 ## Language type and framework support
 
