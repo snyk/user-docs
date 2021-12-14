@@ -2,24 +2,20 @@
 
 Use our Snyk CLI tool to find and fix known vulnerabilities in your dependencies, both ad hoc and as part of your CI (Build) system.
 
-The Snyk CLI requires you to authenticate with your account before using it.
+You can install the Snyk CLI using multiple [installation methods](./#installation-methods).
 
-Install the Snyk CLI using one of these options:
+After you install the Snyk CLI, you can [get started](./#getting-started-with-snyk-cli) testing and fixing your vulnerabilities.
 
-* [Install the Snyk CLI with npm](./)
-* [Install the Snyk CLI using  the prebuilt binaries](./)
-* [Install the Snyk CLI tool with a container](./)
-* [Install the Snyk CLI with Homebrew](./)
-* [Install the Snyk CLI with the Windows Scoop package manager](./)
+## Snyk CLI Installation methods
 
-## Install the Snyk CLI with npm or Yarn
+### Install the Snyk CLI with npm or Yarn
 
 Install our Snyk CLI tool using npm.
 
 **Prerequisites:**
 
 * Ensure you’ve installed the latest version of npm on your local environment, using Node version 10 or later (see [What version of Node is required for Snyk?](https://support.snyk.io/hc/en-us/articles/360004183317-What-version-of-Node-is-required-for-Snyk-)).
-* To run Snyk on Alpine Linux, first install libstdc++. See [this doc](https://support.snyk.io/hc/en-us/articles/360001929038) for more help.
+* To run Snyk on Alpine Linux, first install libstdc++. See [How can I use CLI on an Alpine operating system?](https://support.snyk.io/hc/en-us/articles/360001929038) for more help.
 
 **Steps:**
 
@@ -58,13 +54,9 @@ snyk test ionic
 
 As you can see, Snyk found and reported several vulnerabilities in the package. For each issue found, Snyk provides the severity of the issue, a link to a detailed description, the path through which the vulnerable module got into your system, and guidance on how to fix the problem.
 
-## More installation methods
+### Install with standalone executables
 
-Standalone executables (macOS, Linux, Windows)
-
-#### Standalone executables
-
-Use [GitHub Releases](https://github.com/snyk/snyk/releases) to download a standalone executable of Snyk CLI for your platform.
+Use [GitHub Releases](https://github.com/snyk/snyk/releases) to download a standalone executable (macOS, Linux, Windows) of Snyk CLI for your platform.
 
 We also provide these standalone executables on our official CDN. See [the `release.json` file](https://static.snyk.io/cli/latest/release.json) for the download links:
 
@@ -84,6 +76,8 @@ chmod +x ./snyk
 mv ./snyk /usr/local/bin/
 ```
 
+#### Direct download methods
+
 You can also use these direct links to download the executables:
 
 * **macOS**: [https://static.snyk.io/cli/latest/snyk-macos](https://static.snyk.io/cli/latest/snyk-macos)
@@ -91,7 +85,9 @@ You can also use these direct links to download the executables:
 * **Linux**: [https://static.snyk.io/cli/latest/snyk-linux](https://static.snyk.io/cli/latest/snyk-linux)
 * **Alpine**: [https://static.snyk.io/cli/latest/snyk-alpine](https://static.snyk.io/cli/latest/snyk-alpine)
 
-Drawback of this method is, that you will have to manually keep the Snyk CLI up to date.
+{% hint style="warning" %}
+The drawback of this method is that you will have to manually keep the Snyk CLI up to date.
+{% endhint %}
 
 ### Install with Homebrew (macOS, Linux)
 
@@ -126,9 +122,9 @@ docker run -it
   snyk/snyk-cli:gradle-5.4 test --org=my-org-name
 ```
 
-### Install as a part of a Snyk CLI integration
+### Install as a part of a Snyk integration
 
-Snyk also offers many integrations into developer tooling. These integrations will install and manage the Snyk CLI for you. For example:
+Snyk also offers many [integrations](../../integrations/) into developer tooling. These integrations will install and manage the Snyk CLI for you. For example:
 
 * [Snyk Jenkins plugin](https://github.com/jenkinsci/snyk-security-scanner-plugin)
 * [CircleCI Orb](https://github.com/snyk/snyk-orb)
@@ -138,21 +134,12 @@ Snyk also offers many integrations into developer tooling. These integrations wi
 * [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner)
 * [Eclipse IDE Extension](https://github.com/snyk/snyk-eclipse-plugin)
 * [Maven plugin](https://github.com/snyk/snyk-maven-plugin)
-* And many more. See [the Integrations documentation](../../integrations/)
 
-![](<../../../.gitbook/assets/image (12).png>)
-
-Once you've completed installation, get started testing and fixing your vulnerabilities with our [Getting started](https://support.snyk.io/hc/articles/360003812458#UUID-19fc37f2-b686-11ed-b85c-4789e90c8dfc) guide and [our full list](https://support.snyk.io/hc/articles/360003812578#UUID-c88e66cf-431c-9ab1-d388-a8f82991c6e0) of our CLI commands, options and arguments.
-
-![](../../../.gitbook/assets/ide.svg)
-
-&#x20;
-
-***
+See the [integrations](../../integrations/ "mention") docs for more details.
 
 ## Getting started with Snyk CLI
 
-Once you installed the Snyk CLI, you can verify it's working by running
+After you install the Snyk CLI, you can verify it's working by running
 
 ```bash
 snyk --version
@@ -190,9 +177,7 @@ snyk iac test /path/to/kubernetes_file.yaml
 
 Snyk can also monitor your project periodically and alert you for new vulnerabilities. The `snyk monitor` is similar to `snyk test` and can be used to create a project on the Snyk website that will be continuously monitored for new vulnerabilities.
 
-![](<../../../.gitbook/assets/monitor (1).svg>)
-
-For any security issues or concerns, please see SECURITY.md file in this repository.
+See [monitor-your-projects-at-regular-intervals.md](../secure-your-projects-in-the-long-term/monitor-your-projects-at-regular-intervals.md "mention")
 
 ### Security
 
@@ -258,8 +243,3 @@ Explore this snapshot at https://app.snyk.io/org/my-org/project/29361c2c-9005-46
 
 Notifications about newly disclosed issues related to these dependencies will be emailed to you.
 ```
-
-See also:
-
-* [Getting started with the CLI](../guides-for-our-cli/getting-started-with-the-cli.md)
-* [CLI reference](../guides-for-our-cli/cli-reference.md)
