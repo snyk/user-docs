@@ -2,7 +2,7 @@
 
 Use our Snyk CLI tool to find and fix known vulnerabilities in your dependencies, both ad hoc and as part of your CI (Build) system.
 
-You can install the Snyk CLI using multiple [installation methods](./#installation-methods).
+You can install the Snyk CLI using multiple [installation methods](./#snyk-cli-installation-methods).
 
 After you install the Snyk CLI, you can [get started](./#getting-started-with-snyk-cli) testing and fixing your vulnerabilities.
 
