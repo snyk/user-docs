@@ -40,7 +40,8 @@ The `.snyk` file can be created in a number of ways
     `.snyk` file and populate it with the following. Note that in order to ignore by path--_manual editing is required except for where the `snyk wizard` is used_
 
 ```
-  # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.version: v1.14.0
+ # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+ version: v1.14.0
 ```
 
 ### Syntax
