@@ -46,6 +46,15 @@ We analyze your `package.json` and `package-lock.json` files, to build a full st
 
 Snyk can apply previously selected patches using the GNU patch utility. Patches are saved to the .snyk policy file.
 
+**Peer dependencies** are scanned by default in npm v7.x _unless_ they are explicitly marked as optional in the `peerDependenciesMeta` object of the `package.json` (In npm v6.x add `--peer-dependencies` to your command, as these are not installed by default).
+
+```
+"peerDependenciesMeta": {
+        "cache-manager": {
+          "optional": true
+        },
+```
+
 ### Yarn
 
 Yarn versions 1 & 2 are supported in the Snyk CLI.
