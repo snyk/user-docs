@@ -20,15 +20,15 @@ There are two options to get started:
 1.  Use the `template` command to generate the required files for writing a rule:
 
     ```
-    snyk-iac-rules template --rule <RULE-NAME>
+    snyk-iac-rules template --rule <RULE-NAME> --format <hcl2|json|yaml|tf-plan>
     ```
 
-    This generates the scaffolding for the rule. For more details, read the [documentation about the template command](../sdk-reference.md#template-options).
+    This generates the scaffolding for the rule, including fixture files based on the provided configuration format. For more details, read the [documentation about the template command](../sdk-reference.md#template-options).
 2. Create a Rego policy from scratch and match the expected file and folder structure on your own:\
-   `rules `\
-   `└── my_rule `\
-   `         ├── main.rego  `\
-   `        └── main_test.rego`
+   `rules` \
+   `└── my_rule` \
+   &#x20;       `├── main.rego` \
+   &#x20;       `└── main_test.rego`
 
 {% hint style="info" %}
 You will have to write your own Rego testing framework if you don't use the `template`command.
@@ -43,9 +43,9 @@ In Rego, you can write statements that allow or deny a request, such as:\
 If the **`template`** command was used to generate the rules, then the default entry point is **`rules/deny`**. To override it and use a different name than `deny`, check the section [Bundling Rules](bundling-rules.md).
 {% endhint %}
 
-This is what a generated skeleton of a deny rule looks like when we run `snyk-iac-rules template --rule my_rule`:
+This is what a generated skeleton of a deny rule looks like when we run `snyk-iac-rules template --rule new-rule --format hcl2`:
 
-{% code title="rules/my_rule/main.rego" %}
+{% code title="rules/new-rule/main.rego" %}
 ```
 package rules
 
@@ -85,6 +85,33 @@ The following attributes are optional but can be used to enhance the scan result
 * **impact:** a more detailed string explanation of what the impact of not resolving this issue is.
 * **remediation:** a more detailed string explanation of how to resolve the issue. We recommend providing a code snippet here.
 * **references:** you can provide an array of strings with URLs to documentation
+
+The generated test for the rule uses two generated Terraform files to verify if the correct `msg` field is returned by the rule for allowed and denied fixtures:
+
+```
+package rules
+
+import data.lib
+import data.lib.testing
+
+test_new_ruleryle {
+	# array containing test cases where the rule is allowed
+	allowed_test_cases := [{
+		"want_msgs": [],
+		"fixture": "allowed.tf",
+	}]
+
+	# array containing cases where the rule is denied
+	denied_test_cases := [{
+		"want_msgs": ["input.resource.test[denied].todo"], # verifies that the correct msg is returned by the denied rule
+		"fixture": "denied.tf",
+	}]
+
+	test_cases := array.concat(allowed_test_cases, denied_test_cases)
+	testing.evaluate_test_cases("new-rule", "./rules/new-rule/fixtures", test_cases)
+}
+
+```
 
 ### Example of a rule
 

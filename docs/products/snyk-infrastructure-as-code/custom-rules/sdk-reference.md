@@ -52,17 +52,15 @@ To see command-specific flags and usage, see the help command, e.g. `snyk-iac-ru
 
 `--rule`=RULE
 
-The name of the rule you want to define. This will generate a `rules/` folder at the top-level, which will contain a folder named after the rule and a Rego rule and Rego test file. At the same time, it will generate a `lib/` folder, containing utility functions that can be accessed from `data.lib` for writing rules and extending the testing library, or `data.lib.testing` for the tests.
+The mandatory name of the rule you want to define. This will generate a `rules/` folder at the top-level, which will contain a folder named after the rule and a Rego rule and Rego test file. At the same time, it will generate a `lib/` folder, containing utility functions that can be accessed from `data.lib` for writing rules and extending the testing library, or `data.lib.testing` for the tests.
 
 The scaffolded folder structure looks like so:
 
 `rules` \
 `└── RULE`    \
 &#x20;       `├── fixtures` \
-&#x20;               `├── allowed.json`\
-&#x20;               `└── denied.json.tfplan`\
-&#x20;               `└── denied1.yaml`\
-&#x20;               `└── denied2.tf`\
+&#x20;               `├── allowed.<extension>`\
+&#x20;               `└── denied.<extension>`\
 &#x20;       `├── main.rego` \
 &#x20;       `└── main_test.rego`\
 `lib`    \
@@ -72,6 +70,10 @@ The scaffolded folder structure looks like so:
 `└── main.rego`
 
 Note: the rule name cannot contain any whitespace or start with `SNYK-`.
+
+`--format`=`hcl2`|`json`|`yaml`|`tf-plan`
+
+The mandatory configuration format you want to define your rule for. This will generate two fixture files under the `rules/<RULE>/fixtures` folder, which are then used by the tests to verify the behaviour of the Rego rule.
 
 `--severity`=`low`|`medium`|`high`|`critical`
 
