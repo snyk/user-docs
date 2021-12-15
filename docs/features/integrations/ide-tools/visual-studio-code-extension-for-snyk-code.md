@@ -1,10 +1,6 @@
 # Visual Studio Code extension for Snyk Code
 
-&#x20;Use this documentation to get started with the Visual Studio Code extension for [Snyk Code](https://docs.snyk.io/snyk-code).
-
-{% hint style="info" %}
-A Visual Studio extension is also available for Snyk Open Source. See [Visual Studio extension](https://docs.snyk.io/integrations/untitled/visual-studio-extension).
-{% endhint %}
+&#x20;Use this documentation to get started with the Visual Studio Code extension.
 
 ## Supported languages
 
