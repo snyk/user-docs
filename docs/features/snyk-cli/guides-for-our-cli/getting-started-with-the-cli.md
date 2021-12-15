@@ -2,7 +2,7 @@
 
 The Snyk Command Line Interface (CLI) helps you find and fix known vulnerabilities in your dependencies, both manually and as part of your Continuous Integration (CI) build system.
 
-See [Language Support](https://support.snyk.io/hc/en-us/articles/360000911957-Language-support) for details about package managers and languages that the CLI supports.
+See [language-and-package-manager-support](../../../products/snyk-open-source/language-and-package-manager-support/ "mention") for details about package managers and languages that the CLI supports.
 
 ## Install and authenticate the Snyk CLI
 
@@ -39,7 +39,7 @@ Once installed and authenticated, change directory into a folder containing a su
 
 `snyk test`
 
-All vulnerabilities identified are listed, including their path, and fix guidance. To monitor your project regularly and receive ongoing notifications when new vulnerabilities are introduced, see [Monitor your projects at regular intervals](https://support.snyk.io/hc/articles/360003851297#UUID-0de07f93-0f4e-3665-7f4b-466fff3b327a).
+All vulnerabilities identified are listed, including their path, and fix guidance.
 
 ## Monitor your project
 
@@ -49,6 +49,8 @@ Snyk uses monitoring to regularly test your code and notify you when new vulnera
 
     This command takes a snapshot of your current dependencies so Snyk can regularly scan your code, and notify you about newly disclosed vulnerabilities as they are introduced, or when a previously unavailable patch or upgrade path is created.
 2. Log in to the Snyk app and navigate to the [Projects page](https://app.snyk.io/projects) to see the latest snapshot and scan results.
+
+See [monitor-your-projects-at-regular-intervals.md](../secure-your-projects-in-the-long-term/monitor-your-projects-at-regular-intervals.md "mention")
 
 ## **What's next**
 
