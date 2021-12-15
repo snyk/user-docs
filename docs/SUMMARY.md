@@ -281,7 +281,7 @@
     * [Eclipse plugin](features/integrations/ide-tools/eclipse-plugin.md)
     * [JetBrains plugins](features/integrations/ide-tools/jetbrains-plugins.md)
     * [Visual Studio extension](features/integrations/ide-tools/visual-studio-extension.md)
-    * [Visual Studio Code extension for Snyk Code](features/integrations/ide-tools/visual-studio-code-extension-for-snyk-code.md)
+    * [Visual Studio Code extension](features/integrations/ide-tools/visual-studio-code-extension-for-snyk-code.md)
   * [Platform as a service integrations](features/integrations/platform-as-a-service-integrations/README.md)
     * [Cloud Foundry integration overview](features/integrations/platform-as-a-service-integrations/cloud-foundry-integration-overview.md)
     * [Getting started with Snyk and Heroku](features/integrations/platform-as-a-service-integrations/getting-started-with-snyk-and-heroku.md)
