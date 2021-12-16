@@ -1,5 +1,9 @@
 # Snyk Code local git support
 
+{% hint style="info" %}
+This feature is currently in Beta. Please contact your CSM if you are interested in participating.
+{% endhint %}
+
 You can natively connect Snyk Code to your local git server. This allows customers who are using a self-hosted git provider such as GitHub Enterprise or Gitlab to find, prioritize and fix potential vulnerabilities in their 1st-party code.
 
 ## Code access components
