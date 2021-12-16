@@ -224,7 +224,7 @@
   * [Install the Snyk CLI](features/snyk-cli/install-the-snyk-cli/README.md)
     * [Authenticate the CLI with your account](features/snyk-cli/install-the-snyk-cli/authenticate-the-cli-with-your-account.md)
   * [Separating projects by branch or version](features/snyk-cli/grouping-projects-by-branch-or-version.md)
-  * [CLI Commands](features/snyk-cli/commands/README.md)
+  * [CLI commands](features/snyk-cli/commands/README.md)
     * [Auth](features/snyk-cli/commands/auth.md)
     * [Code](features/snyk-cli/commands/code.md)
     * [Config](features/snyk-cli/commands/config.md)
