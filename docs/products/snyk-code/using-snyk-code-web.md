@@ -1,10 +1,20 @@
 # Using Snyk Code (web)
 
-Use Snyk Code with the standard Snyk web interface to find and fix vulnerabilities in your code.
+
+
+### Configure Snyk Code
+
+In your organization settings page, you can find the Snyk Code page. This is where you can enable/disable Snyk Code for your organization. Once you have Code enabled, the following will happen:
+
+1. Every time a new repository is imported (or re-imported), if it contains any source code files, a "Code Analysis" project is created for it
+2. You may now run Snyk Code tests against this organization via the CLI
+3. You may now run Snyk Code tests against this organization via one of the IDE plugins
 
 ![](../../.gitbook/assets/screenshot\_2021-06-17\_at\_13.23.19.png)
 
 ## View project vulnerabilities
+
+Use Snyk Code with the standard Snyk web interface to find and fix vulnerabilities in your code.
 
 {% hint style="info" %}
 See [Getting started with Snyk Code](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-with-snyk-code) for details of how to import and scan projects.
@@ -29,7 +39,7 @@ Each vulnerability card shows specific details about that vulnerability:
 
 Card details include:
 
-* The level (for example, **H** for high), the name (for example, **Cross-site Scripting**), and the [Priority Score](https://docs.snyk.io/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score) value.
+* The severity level (for example, **H** for high), the name (for example, **Cross-site Scripting**), and the [Priority Score](https://docs.snyk.io/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score) value.
 * The [CWE type:](https://cwe.mitre.org/data/index.html) click the link to view more information about that type of vulnerability.
 * A snippet of your code showing the exact area that is vulnerable.
 * A clear and helpful text description of the vulnerability.
@@ -77,8 +87,8 @@ Click **Full details** from a vulnerability card to view more information:
 
 Full details include all the information in the vulnerability card, plus:
 
-* **Data flow**: this area on the left shows the full taint flow of the issue in the code, from the source (the user input) to the sink (the operation that needs to receive clean input and can be exploited otherwise). In the above example, the developer has not sanitized the input, allowing an attacker to do a pass traversal to potentially access any file on the file system, including sensitive data such as password files.
-* **Fix analysis:** insight into the fix and background of the issue itself. Developers are able to see fix-related information, vulnerability overview information (understanding and approach), and fix examples for this vulnerability type.
+* **Data Flow**: This area helps you understand where the issue is and how it flows throughout your application by showing you the full taint flow of the issue in the code, from the source (the user input) to the sink (the operation that needs to receive clean input and can be exploited otherwise). In the above example, the developer has not sanitized the input, allowing an attacker to do a pass traversal to potentially access any file on the file system, including sensitive data such as password files.
+* **Fix Analysis:** This area provides you with more information about the issue and how it could be fixed. Developers are able to see fix-related information, vulnerability overview information (understanding and approach), and fix examples for this vulnerability type.
 * A link to the source file, which you can open to make changes directly (see [Open the source code file](using-snyk-code-web.md)).
 * A full window showing the code affected, with specific lines highlighted to accompany the **Data flow** information.
 
