@@ -2,10 +2,6 @@
 
 Determine how new users in your organization get access to Snyk:
 
-* [Open to all](choose-a-provisioning-option.md)
-* [Invitation required](choose-a-provisioning-option.md)
-* [Custom](choose-a-provisioning-option.md)
-
 {% embed url="https://youtu.be/VOGYgcv9Xmc" %}
 
 ## Open to all
