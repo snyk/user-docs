@@ -10,7 +10,7 @@
 
 ### What is Snyk CLI?
 
-Snyk CLI brings the functionality of [Snyk](https://snyk.io) into your development workflow. It can be run locally, or in your CI/CD pipeline, to scan your projects for security issues.
+Snyk CLI brings functionality of [Snyk](https://snyk.io) into your development workflow. It can be run locally, or in your CI/CD pipeline, to scan your projects for security issues.
 
 #### Supported languages and tools
 
