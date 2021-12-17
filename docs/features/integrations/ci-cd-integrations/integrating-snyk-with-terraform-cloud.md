@@ -26,7 +26,11 @@ Users of Terraform Cloud should sign up to Snyk to set the integration, and conn
 
 ## **How to setup the integration between Snyk and Terraform Cloud**
 
-Navigate into the dedicated Terraform Cloud integration settings page, under the Integrations page in the Snyk app, then follow the next steps:
+{% hint style="warning" %}
+You will need to be an administrator on the Snyk organization to be able to configure the Terraform Cloud integration.
+{% endhint %}
+
+Navigate into the dedicated Terraform Cloud integration settings page, under the Integrations page in the Snyk app then follow the next steps:
 
 ### Setup Terraform plan scanning:
 
