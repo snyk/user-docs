@@ -4,7 +4,7 @@
 
 ![](https://snyk.io/style/asset/logo/snyk-print.svg)
 
-[Snyk](https://snyk.io) scans and monitors open source projects for security vulnerabilities.
+[Snyk](https://snyk.io) scans and monitors software development projects for security vulnerabilities.
 
 ![](../../.gitbook/assets/snyk-cli-screenshot.png)
 
