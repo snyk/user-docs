@@ -234,6 +234,7 @@
     * [IAC Examples](features/snyk-cli/commands/iac-examples.md)
     * [Ignore](features/snyk-cli/commands/ignore.md)
     * [Ignore Examples](features/snyk-cli/commands/ignore-examples.md)
+    * [Log4shell](features/snyk-cli/commands/log4shell.md)
     * [Monitor](features/snyk-cli/commands/monitor.md)
     * [Policy](features/snyk-cli/commands/policy.md)
     * [Protect](features/snyk-cli/commands/protect.md)
