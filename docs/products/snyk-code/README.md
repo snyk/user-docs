@@ -22,55 +22,11 @@ Speed is a critical factor if you want to support rapid, agile development. Real
 
 Although quickly and accurately detecting potential security flaws in source code is a complicated task, we believe that it's not enough. You can only shift left and empower developers if you actually help them remediate the issue and learn about prevention. Code leverages it's security knowledge base to provide fix examples from real-world projects that offer inspiration on how to fix the issue. Additionally, Code offers an curated educational content about every vulnerability to help developers grow their knowledge and reduce issues over time.
 
-## **Integrated platform**
-
-Snyk Code expands the Snyk cloud-native application security platform, supporting all elements for a modern software supply chain. For a cloud-native application, this provides security for:
-
-* [**Snyk Code**](https://docs.snyk.io/snyk-code): the application’s proprietary code
-* [**Snyk Open Source**](https://docs.snyk.io/snyk-open-source): the open-source libraries it leverages
-* [**Snyk Container**](https://docs.snyk.io/snyk-container): the container it runs in
-* [**Snyk Infrastructure as Code**](https://docs.snyk.io/snyk-infrastructure-as-code): the infrastructure as code that provisions it
-
 ## Secret detection in source code
 
 Snyk Code includes secret detection capabilities that scan and highlight secrets like keys, credentials, PII, and sensitive information in your source code. Unlike tools that use entropy checks or regular expressions, Snyk Code uses machine learning and is able to learn from experience, improving the odds of accurately detecting secrets while minimizing false positives.
 
 ![](../../.gitbook/assets/image5.png)
-
-## Issue code flow visualization
-
-Snyk products all provide a developer-friendly experience, so Snyk Code helps developers to quickly understand the problem, learn the background, and how to approach it. Snyk Code helps you understand the dangerous code flow step-by-step.
-
-For every issue, Code also provides a link to the lines in the relevant files, to view more details on the problem like the CWE, and how to approach it.
-
-![](../../.gitbook/assets/image2-2-.png)
-
-Snyk Code also provides rich curated additional information for many suggestions.
-
-## Repository monitoring
-
-You can seamlessly import and continuously monitor your repositories, and discover security flaws in the source code files in them using static analysis.
-
-This integration allows you to:
-
-* Manage Code projects using your existing native import flow and tools
-* View and prioritize security issues found in the source code
-* Run a retest of a project and see history snapshots of a project
-
-![](../../.gitbook/assets/image4-1-.png)
-
-### Supported SCMs
-
-Snyk Code integrates with the following SCMs:
-
-* [GitHub](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration)
-* [Bitbucket](https://docs.snyk.io/integrations/git-repository-scm-integrations/bitbucket-cloud-integration)&#x20;
-* [Azure](https://docs.snyk.io/integrations/git-repository-scm-integrations/azure-repos-integration)
-* [GitLab](https://docs.snyk.io/integrations/git-repository-scm-integrations/gitlab-integration)
-
-### Supported languages
-
-Snyk Code supports wide range of languages: see [Snyk Code language support](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support) for the full list.
 
 ## Snyk Code IDE plugins
 
