@@ -21,10 +21,3 @@ Speed is a critical factor if you want to support rapid, agile development. Real
 ### Actionable
 
 Although quickly and accurately detecting potential security flaws in source code is a complicated task, we believe that it's not enough. You can only shift left and empower developers if you actually help them remediate the issue and learn about prevention. Code leverages it's security knowledge base to provide fix examples from real-world projects that offer inspiration on how to fix the issue. Additionally, Code offers an curated educational content about every vulnerability to help developers grow their knowledge and reduce issues over time.
-
-## Excluding files
-
-1. Checks and reads for DeepCode/Snyk ignore specific files `.gitignore` `.dcignore` (if they exist).
-2. Using the information obtained in step 1, we are filtering to get only [the following source code files](snyk-code-language-and-framework-support.md#supported-extensions):
-   * We are accessing only the files in the project directory. We do not go above the current project directory.
-3. Files which size is less than 4 MB found in step 2 are bundled and sent to Snyk.

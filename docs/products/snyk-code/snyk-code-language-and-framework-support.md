@@ -101,11 +101,6 @@ This technology allows Snyk Code to:
 The AI engine can analyze the following in your code:
 
 * **Hard coded secrets**: including use of account-names, passwords, or secrets in the code.&#x20;
-
-Snyk Code includes secret detection capabilities that scan and highlight secrets like keys, credentials, PII, and sensitive information in your source code. Unlike tools that use entropy checks or regular expressions, Snyk Code uses machine learning and is able to learn from experience, improving the odds of accurately detecting secrets while minimizing false positives.
-
-![](../../.gitbook/assets/image5.png)
-
 * **Coding issues**: problems such as dead code, branches that are predefined, and branches having the same code on each side.
 * **Type inference**: determining the initial type and its changes; this is of special interest for dynamically typed languages.
 * **Value ranges**: infers possible values for variables used to call functions to track off-by-one errors in arrays, division-by-zero, and null dereferences.
