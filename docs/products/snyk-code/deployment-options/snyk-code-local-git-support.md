@@ -16,7 +16,7 @@ The **Broker client** and **code agent** components are deployed in your infrast
 
 The Broker client provides the Agent with the connection details. The Agent uses these details to connect to your local git repository, clone the relevant files. And send the results through the brokered communications using callbacks. The brokered communication happens when a Broker client connects (using your Broker ID) to a Broker server running in Snyk environment:
 
-![](../../.gitbook/assets/local-git.png)
+![](../../../.gitbook/assets/local-git.png)
 
 See [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker/broker-introduction) documentation for more details.
 
@@ -33,7 +33,7 @@ Before you begin with the setup process, please make sure to have a server that 
 
 ### Set up broker client
 
-Code agent depends on broker client. Follow the instructions on [How to install and configure your Snyk Broker client](../../features/integrations/snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) for detailed instructions how to set up broker for specific SCMs.
+Code agent depends on broker client. Follow the instructions on [How to install and configure your Snyk Broker client](../../../features/integrations/snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) for detailed instructions how to set up broker for specific SCMs.
 
 If you already have a broker client running, please consider the following additional requirements:
 
@@ -69,7 +69,7 @@ docker pull snyk/code-agent
 
 The following environment variables are mandatory to configure the code agent:
 
-* **SNYK\_TOKEN -**  your snyk token, as also used by the CLI, see [Authenticate the CLI with your account](../../features/snyk-cli/install-the-snyk-cli/authenticate-the-cli-with-your-account.md#authenticate-using-your-api-token) for additional details.
+* **SNYK\_TOKEN -**  your snyk token, as also used by the CLI, see [Authenticate the CLI with your account](../../../features/snyk-cli/install-the-snyk-cli/authenticate-the-cli-with-your-account.md#authenticate-using-your-api-token) for additional details.
 * **PORT** - the local port, for which the code agent accepts connections, Default is 3000.
 
 To run the **code-agent:**

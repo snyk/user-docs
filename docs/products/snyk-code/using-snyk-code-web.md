@@ -1,10 +1,14 @@
-# Using Snyk Code (web)
+# Using Snyk Code via web
 
+## Configure Snyk Code
 
+To use Snyk Code, you have to make sure it's enabled for your organization and then import/re-import your repositories via the UI or API.
 
-### Configure Snyk Code
+{% hint style="info" %}
+See [Getting started with Snyk Code](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-with-snyk-code) to enable Code and start scanning your projects.
+{% endhint %}
 
-In your organization settings page, you can find the Snyk Code page. This is where you can enable/disable Snyk Code for your organization. Once you have Code enabled, the following will happen:
+Once you have Code enabled, the following will happen:
 
 1. Every time a new repository is imported (or re-imported), if it contains any source code files, a "Code Analysis" project is created for it
 2. You may now run Snyk Code tests against this organization via the CLI
@@ -15,10 +19,6 @@ In your organization settings page, you can find the Snyk Code page. This is whe
 ## View project vulnerabilities
 
 Use Snyk Code with the standard Snyk web interface to find and fix vulnerabilities in your code.
-
-{% hint style="info" %}
-See [Getting started with Snyk Code](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-with-snyk-code) for details of how to import and scan projects.
-{% endhint %}
 
 1. In your **Projects** area, select the project to open
 2. Snyk Code displays information and vulnerability cards for that project:&#x20;
@@ -92,7 +92,7 @@ Full details include all the information in the vulnerability card, plus:
 * A link to the source file, which you can open to make changes directly (see [Open the source code file](using-snyk-code-web.md)).
 * A full window showing the code affected, with specific lines highlighted to accompany the **Data flow** information.
 
-## Open the source code file
+## Open the related source code file
 
 1.  Click the code link to open the source code file itself (for example, in GitHub)
 
