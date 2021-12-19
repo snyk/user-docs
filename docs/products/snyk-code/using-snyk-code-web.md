@@ -1,15 +1,11 @@
 # Using Snyk Code (web)
 
-
-
 ## Configure Snyk Code
 
 To use Snyk Code, you have to make sure it's enabled for your organization and then import/re-import your repositories via the UI or API.
 
-More details on how to enable and get started with Snyk Code can be found below:
-
 {% hint style="info" %}
-See [Getting started with Snyk Code](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-with-snyk-code) for details of how to import and scan projects.
+See [Getting started with Snyk Code](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-with-snyk-code) to enable Code and start scanning your projects.
 {% endhint %}
 
 Once you have Code enabled, the following will happen:
