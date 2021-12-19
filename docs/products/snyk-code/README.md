@@ -1,4 +1,26 @@
-# About Snyk Code
+# Snyk Code
+
+## **About Snyk Code**
+
+Snyk has always been dedicated to the premise that security needs to be implemented developer-first in order to meet the speed and scale needs of software-driven businesses.
+
+Unlike traditional SAST products in the market, which were primarily designed for security teams to test applications post-development, Snyk Code uses a revolutionary approach designed to be developer-first. The problem with traditional SAST products is that they do not work for developers: they are too slow, with scans that can take several hours; they have poor accuracy, returning too many false positives, creating hours of wasted time as false alarms are chased down. This erodes developer trust in the tool and they require security expertise to make their output actionable in order to remediate the issues they find.
+
+### Developer-first approach
+
+Snyk Code is developer-first, embedding SAST as part of the development process, enabling developers to build software securely during development, not trying to find and fix problems after the code is compiled. Snyk Code works in the IDEs and SCMs developers use to build and review software and provides fast, actionable, meaningful results to fix issues in real-time.
+
+### Unparalleled accuracy
+
+SAST tools are notoriously known for their huge amount of false positives. Snyk Code utilizes a semantic analysis AI engine that learns from millions of open-source commits and is paired with Snyk’s Security Intelligence database, creating a continually growing code security knowledge base, which reduces false positives to near-zero and provide actionable findings that matter.
+
+### Real-time
+
+Speed is a critical factor if you want to support rapid, agile development. Real-time speed allows developers leverage Code from the IDE and during code review in the SCM, rather than a slow and unnecessary extra step at the end o the development process. Snyk Code scans 10-50x faster than other SAST products, enabling developers to use it _while_ they develop, rather than _after_ they develop as a slow and disruptive step in their process.
+
+### Actionable
+
+Although quickly and accurately detecting potential security flaws in source code is a complicated task, we believe that it's not enough. You can only shift left and empower developers if you actually help them remediate the issue and learn about prevention. Code leverages it's security knowledge base to provide fix examples from real-world projects that offer inspiration on how to fix the issue. Additionally, Code offers an curated educational content about every vulnerability to help developers grow their knowledge and reduce issues over time.
 
 ## **Integrated platform**
 
@@ -8,25 +30,6 @@ Snyk Code expands the Snyk cloud-native application security platform, supportin
 * [**Snyk Open Source**](https://docs.snyk.io/snyk-open-source): the open-source libraries it leverages
 * [**Snyk Container**](https://docs.snyk.io/snyk-container): the container it runs in
 * [**Snyk Infrastructure as Code**](https://docs.snyk.io/snyk-infrastructure-as-code): the infrastructure as code that provisions it
-
-
-
-## Developer-first approach
-
-Snyk Code is developer-first, embedding SAST as part of the development process, enabling developers to build software securely during development, not trying to find and fix problems after the code is compiled. Snyk Code works in the IDEs and SCMs developers use to build and review software and provides fast, actionable, meaningful results to fix issues in real-time.
-
-## Snyk Code AI engine
-
-Snyk Code is powered by machine learning based on an AI engine. This engine learns from millions of open-source commits and is paired with Snyk’s Security Intelligence database, creating a continually growing code security knowledge base.
-
-The Snyk Code engine expresses rules that capture results of analysis, plus meta information such as explanations and examples.
-
-## Fast and accurate code flaws detection
-
-Snyk Code is significantly faster and more accurate than other conventional SAST products:
-
-* The semantic analysis engine added via Snyk Code, trained on Snyk’s Vulnerability Database, reduces false positives to near-zero.
-* Due to our proprietary engine, Snyk Code is up to 50x faster than traditional SAST solutions, enabling security during the development process, with no delays.
 
 ## Secret detection in source code
 
@@ -43,8 +46,6 @@ For every issue, Code also provides a link to the lines in the relevant files, t
 ![](../../.gitbook/assets/image2-2-.png)
 
 Snyk Code also provides rich curated additional information for many suggestions.
-
-
 
 ## Repository monitoring
 
@@ -90,8 +91,6 @@ Snyk Code supports a Visual Studio Code plugin to support issue finding and fixi
 ![](<../../.gitbook/assets/image3-2- (2) (2) (4) (4) (4) (3) (5).png>)
 
 For more details, see the [Visual Studio Code extension for Snyk Code](../../features/integrations/ide-tools/visual-studio-code-extension-for-snyk-code.md).
-
-
 
 ## Excluding files
 
