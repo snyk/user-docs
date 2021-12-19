@@ -1,14 +1,14 @@
-# Understand Snyk Code CLI results
+# Snyk Code CLI results
 
 This example runs a code test against a project we have set locally, `goof`:
 
-```
+```text
 snyk code test goof
 ```
 
 This produces results like this:
 
-```
+```text
 Testing goof ...
 
  ✗ [Medium] Use of Hard-coded Credentials
@@ -73,8 +73,9 @@ The issues are ordered by severity where the highest ones are at the bottom of o
 
 Each item includes:
 
-* The severity and vulnerability type of the issue
-* Path: the file and line in the file where the issue was found (potentially issues are cross-files, the location in the path refers to the issue's sink)
-* Info: A description of the issue's data flow
+* The name of the issue
+* Path: the file and line in the file where the issue was found
+* Info: Information about the issue
 
 CLI for Snyk Code uses the exit codes as described in the [CLI reference](../../../features/snyk-cli/guides-for-our-cli/cli-reference.md#EXIT-CODES).
+
