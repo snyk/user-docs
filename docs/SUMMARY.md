@@ -64,6 +64,7 @@
   * [Dependency management](products/snyk-open-source/dependency-management/README.md)
     * [Upgrading dependencies with automatic PRs](products/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs.md)
 * [Snyk Code](products/snyk-code/README.md)
+  * [Use Cases](products/snyk-code/use-cases.md)
   * [Using Snyk Code (web)](products/snyk-code/using-snyk-code-web.md)
   * [Using Snyk Code via Snyk CLI](products/snyk-code/cli-for-snyk-code/README.md)
     * [Understand Snyk Code CLI results](products/snyk-code/cli-for-snyk-code/snyk-code-cli-results.md)
