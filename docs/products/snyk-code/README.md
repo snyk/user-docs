@@ -1,20 +1,15 @@
-# Snyk Code
+# About Snyk Code
 
 ## **Integrated platform**
 
 Snyk Code expands the Snyk cloud-native application security platform, supporting all elements for a modern software supply chain. For a cloud-native application, this provides security for:
 
-* [**Snyk Code**](https://docs.snyk.io/snyk-code): the application’s proprietary code.
-* [**Snyk Open Source**](https://docs.snyk.io/snyk-open-source): the open-source libraries it leverages.
-* [**Snyk Container**](https://docs.snyk.io/snyk-container): the container it runs in.
-* [**Snyk Infrastructure as Code**](https://docs.snyk.io/snyk-infrastructure-as-code): the infrastructure as code that provisions it.
+* [**Snyk Code**](https://docs.snyk.io/snyk-code): the application’s proprietary code
+* [**Snyk Open Source**](https://docs.snyk.io/snyk-open-source): the open-source libraries it leverages
+* [**Snyk Container**](https://docs.snyk.io/snyk-container): the container it runs in
+* [**Snyk Infrastructure as Code**](https://docs.snyk.io/snyk-infrastructure-as-code): the infrastructure as code that provisions it
 
-## How does static application security testing (SAST) work?
 
-1. Checks and reads for DeepCode/Snyk ignore specific files `.gitignore` `.dcignore` (if they exist).
-2. Using the information obtained in step 1, we are filtering to get only [the following source code files](snyk-code-language-and-framework-support.md#supported-extensions):
-   * We are accessing only the files in the project directory. We do not go above the current project directory.
-3. Files which size is less than 4 MB found in step 2 are bundled and sent to Snyk.
 
 ## Developer-first approach
 
@@ -49,14 +44,14 @@ For every issue, Code also provides a link to the lines in the relevant files, t
 
 Snyk Code also provides rich curated additional information for many suggestions.
 
-## Supported integrations
+## Supported SCMs
 
-Snyk Code integrates with the cloud versions of:
+Snyk Code integrates with the following SCMs:
 
 * [GitHub](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration)
-* [GitLab](https://docs.snyk.io/integrations/git-repository-scm-integrations/gitlab-integration)
 * [Bitbucket](https://docs.snyk.io/integrations/git-repository-scm-integrations/bitbucket-cloud-integration)&#x20;
 * [Azure](https://docs.snyk.io/integrations/git-repository-scm-integrations/azure-repos-integration)
+* [GitLab](https://docs.snyk.io/integrations/git-repository-scm-integrations/gitlab-integration)
 
 ## Using integrations
 
@@ -78,9 +73,9 @@ Snyk Code supports wide range of languages: see [Snyk Code language support](htt
 
 IDE integrations use Snyk Code’s fast analysis and response, allowing you to spot an issue, understand and learn more about it, and fix it, as you write the code before you check the code in. So you can find possible security flaws in your code as you write it, on a line-by-line basis.
 
-## JetBrains IDE plugin
+## JetBrains IDE plugins
 
-Snyk Code supports a JetBrains plugin to support issue finding and fixing, directly from the IDE:
+Snyk Code supports the JetBrains IDEs such as IntelliJ, Webstorm, PyCharm and more with a plugin that allows you to find and fix issues directly from the IDE:
 
 ![](../../.gitbook/assets/results-code.png)
 
@@ -93,3 +88,12 @@ Snyk Code supports a Visual Studio Code plugin to support issue finding and fixi
 ![](<../../.gitbook/assets/image3-2- (2) (2) (4) (4) (4) (3) (5).png>)
 
 For more details, see the [Visual Studio Code extension for Snyk Code](../../features/integrations/ide-tools/visual-studio-code-extension-for-snyk-code.md).
+
+
+
+## Excluding files
+
+1. Checks and reads for DeepCode/Snyk ignore specific files `.gitignore` `.dcignore` (if they exist).
+2. Using the information obtained in step 1, we are filtering to get only [the following source code files](snyk-code-language-and-framework-support.md#supported-extensions):
+   * We are accessing only the files in the project directory. We do not go above the current project directory.
+3. Files which size is less than 4 MB found in step 2 are bundled and sent to Snyk.
