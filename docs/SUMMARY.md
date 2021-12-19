@@ -66,7 +66,7 @@
 * [Snyk Code](products/snyk-code/README.md)
   * [Using Snyk Code (web)](products/snyk-code/using-snyk-code-web.md)
   * [Using Snyk Code via Snyk CLI](products/snyk-code/cli-for-snyk-code/README.md)
-    * [Snyk Code CLI results](products/snyk-code/cli-for-snyk-code/snyk-code-cli-results.md)
+    * [Understand Snyk Code CLI results](products/snyk-code/cli-for-snyk-code/snyk-code-cli-results.md)
     * [Advanced Snyk Code CLI usage](products/snyk-code/cli-for-snyk-code/advanced-snyk-code-cli-usage.md)
   * [Snyk Code local git support](products/snyk-code/snyk-code-local-git-support.md)
   * [Snyk Code language and framework support](products/snyk-code/snyk-code-language-and-framework-support.md)
