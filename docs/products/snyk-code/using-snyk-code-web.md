@@ -2,9 +2,17 @@
 
 
 
-### Configure Snyk Code
+## Configure Snyk Code
 
-In your organization settings page, you can find the Snyk Code page. This is where you can enable/disable Snyk Code for your organization. Once you have Code enabled, the following will happen:
+To use Snyk Code, you have to make sure it's enabled for your organization and then import/re-import your repositories via the UI or API.
+
+More details on how to enable and get started with Snyk Code can be found below:
+
+{% hint style="info" %}
+See [Getting started with Snyk Code](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-with-snyk-code) for details of how to import and scan projects.
+{% endhint %}
+
+Once you have Code enabled, the following will happen:
 
 1. Every time a new repository is imported (or re-imported), if it contains any source code files, a "Code Analysis" project is created for it
 2. You may now run Snyk Code tests against this organization via the CLI
@@ -15,10 +23,6 @@ In your organization settings page, you can find the Snyk Code page. This is whe
 ## View project vulnerabilities
 
 Use Snyk Code with the standard Snyk web interface to find and fix vulnerabilities in your code.
-
-{% hint style="info" %}
-See [Getting started with Snyk Code](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-with-snyk-code) for details of how to import and scan projects.
-{% endhint %}
 
 1. In your **Projects** area, select the project to open
 2. Snyk Code displays information and vulnerability cards for that project:&#x20;
