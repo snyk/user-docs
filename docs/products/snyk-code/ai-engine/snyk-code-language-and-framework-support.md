@@ -1,4 +1,17 @@
-# Snyk Code language and framework support
+# Language and framework support
+
+## Language support with Snyk Code AI Engine
+
+Snyk Code is based on a dee code semantic code analysis engine using AI to continuously learn from billions of lines of code and 100s of millions of code fixes in the global development community. The Snyk Code AI Engine continuously evolves the the human-gided reinforced learning cycle lead by Snyk's security researchers and engineers. See [this blog article ](https://snyk.io/blog/advanced-technologies-behind-snyk-code/)for more details.
+
+When files are provided for analysis, the engine determines which file to feed into which parser, in a language-independent common intermediate format. This format preserves and exposes characteristics of the scanned source code.
+
+This technology allows Snyk Code to:
+
+* Support any programming language easily.
+* Support multi-language projects, spanning security scans over the different languages.
+* Unveil interfile issues, such as issue patterns spread over several source files, which are typically especially hard to track.
+* Find issue patterns using the Snyk Code engine, compiling the found issues as a report.
 
 Snyk Code currently supports:
 
@@ -82,29 +95,3 @@ These are some of the explicitly supported frameworks for C#; those are in-addit
 {% hint style="info" %}
 The framework support is always determined by the file extensions known to the engine. For example, the engine does not scan **\*.cshtml** files, but scans the associated **\*.cshtml.cs** files.
 {% endhint %}
-
-## Language support with Snyk Code AI Engine
-
-Snyk Code is based on a dee code semantic code analysis engine using AI to continuously learn from billions of lines of code and 100s of millions of code fixes in the global development community. The Snyk Code AI Engine continuously evolves the the human-gided reinforced learning cycle lead by Snyk's security researchers and engineers. See [this blog article ](https://snyk.io/blog/advanced-technologies-behind-snyk-code/)for more details.
-
-When files are provided for analysis, the engine determines which file to feed into which parser, in a language-independent common intermediate format. This format preserves and exposes characteristics of the scanned source code.
-
-This technology allows Snyk Code to:
-
-* Support any programming language easily.
-* Support multi-language projects, spanning security scans over the different languages.
-* Unveil interfile issues, such as issue patterns spread over several source files, which are typically especially hard to track.
-* Find issue patterns using the Snyk Code engine, compiling the found issues as a report.
-
-### AI engine capabilities
-
-The AI engine can analyze the following in your code:
-
-* **Hard coded secrets**: including use of account-names, passwords, or secrets in the code.&#x20;
-* **Coding issues**: problems such as dead code, branches that are predefined, and branches having the same code on each side.
-* **Type inference**: determining the initial type and its changes; this is of special interest for dynamically typed languages.
-* **Value ranges**: infers possible values for variables used to call functions to track off-by-one errors in arrays, division-by-zero, and null dereferences.
-* **Data flow**: follows the flow of data within the application, from the source to the sink. Combined with AI-based learning of external insecure data source, data sinks, and sanitation functions, this enables a strong taint analysis.
-* **Use of APIs**: using open source or the documentation of frameworks to learn how functions need to be used, can identify API misuse such as using the wrong parameter type or calling with the wrong value range. This mechanism can also identify use of insecure functions.
-* **Control Flow**: identifies null dereference or race conditions by modeling each possible control flow in the application.
-* **Point-to Analysis**: identifies multiple possible issues including from buffer overruns, null dereferences, and type mismatches, by modeling the usage of memory in variables and references.

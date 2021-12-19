@@ -16,4 +16,4 @@
 
 ## Snyk language support
 
-Snyk supports a wide range of languages including Java, JavaScript, .NET, Python, Golang, Swift, Objective-C, Ruby, Scala, PHP and Elixir. See [Language Support.](../../products/snyk-code/snyk-code-language-and-framework-support.md)
+Snyk supports a wide range of languages including Java, JavaScript, .NET, Python, Golang, Swift, Objective-C, Ruby, Scala, PHP and Elixir. See [Language Support.](../../products/snyk-code/ai-engine/snyk-code-language-and-framework-support.md)
