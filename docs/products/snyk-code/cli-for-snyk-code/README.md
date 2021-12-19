@@ -1,8 +1,4 @@
-# CLI for Snyk Code
-
-{% hint style="warning" %}
-This feature is currently in beta.
-{% endhint %}
+# Using Snyk Code via Snyk CLI
 
 {% hint style="info" %}
 Make sure Snyk Code is enabled for your organization, see [Getting started with Snyk Code](../../../getting-started/getting-started-snyk-products/getting-started-with-snyk-code.md#stage-1-enable-snyk-code) for details.
@@ -12,7 +8,7 @@ The Snyk Command Line Interface ([CLI](../../../features/snyk-cli/)) for Snyk Co
 
 ## **Install the Snyk CLI**
 
-Use any of the following:
+To install the Snyk CLI, you can use any of the following:
 
 * npm: `npm install -g snyk`
 * Homebrew: `brew tap snyk/tap && brew install snyk`
@@ -23,7 +19,7 @@ For more detailed installation guidance and options, see [Install the Snyk CLI](
 
 ## **Authentication**
 
-After installation, authenticate with Snyk to test your image, running snyk auth from the CLI:
+After the installation, authenticate with Snyk to test your image, running snyk auth from the CLI:
 
 ```
 snyk auth
