@@ -80,7 +80,7 @@ See [Ignoring issues in Snyk Code](https://docs.snyk.io/fixing-and-prioritizing-
 #### Excluding files
 
 1. Checks and reads for DeepCode/Snyk ignore specific files `.gitignore` `.dcignore` (if they exist).
-2. Using the information obtained in step 1, we are filtering to get only [the following source code files](ai-engine/snyk-code-language-and-framework-support.md#supported-extensions):
+2. Using the information obtained in step 1, we are filtering to get only [the following source code files](snyk-code-language-and-framework-support.md#supported-extensions):
    * We are accessing only the files in the project directory. We do not go above the current project directory.
 3. Files which size is less than 4 MB found in step 2 are bundled and sent to Snyk.
 

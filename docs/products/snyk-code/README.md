@@ -1,7 +1,5 @@
 # Snyk Code
 
-## **About Snyk Code**
-
 Snyk has always been dedicated to the premise that security needs to be implemented developer-first in order to meet the speed and scale needs of software-driven businesses.
 
 Unlike traditional SAST products in the market, which were primarily designed for security teams to test applications post-development, Snyk Code uses a revolutionary approach designed to be developer-first. The problem with traditional SAST products is that they do not work for developers: they are too slow, with scans that can take several hours; they have poor accuracy, returning too many false positives, creating hours of wasted time as false alarms are chased down. This erodes developer trust in the tool and they require security expertise to make their output actionable in order to remediate the issues they find.
