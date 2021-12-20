@@ -24,20 +24,6 @@ On every issue, Snyk Code provides a curated overview of the vulnerability which
 
 You can seamlessly and continuously monitor your repositories, and discover security flaws in the source code files in them using static analysis.
 
-This integration allows you to:
-
-* Manage Code projects using your existing native import flow and tools
-* View and prioritize security issues found in the source code
-* Run a retest of a project and see history snapshots of a project
-
-#### Supported SCMs
-
-Snyk Code integrates with the following SCMs: [GitHub](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration), [Bitbucket](https://docs.snyk.io/integrations/git-repository-scm-integrations/bitbucket-cloud-integration) , [Azure](https://docs.snyk.io/integrations/git-repository-scm-integrations/azure-repos-integration), [GitLab](https://docs.snyk.io/integrations/git-repository-scm-integrations/gitlab-integration).
-
-#### Supported languages
-
-Snyk Code supports wide range of languages: see [Snyk Code language support](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support) for the full list.
-
 ### Prioritize the right issues to focus on
 
 Every issue identified by Snyk Code is assigned with a Priority Score which reflects prevalence, risk and estimated effort and allows you to focus on what matters.
