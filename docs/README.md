@@ -1,7 +1,7 @@
 # Snyk User Documentation
 
 {% hint style="danger" %}
-Log4Shell vulnerability disclosed: Prevent Log4j RCE by updating to version 2.15.0.\
+Log4Shell vulnerability ([CVE-2021-44228](https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720)) disclosed: Prevent Log4j RCE by updating to the latest version.\
 [**Learn more**](https://snyk.io/blog/log4j-rce-log4shell-vulnerability-cve-2021-4428/)
 {% endhint %}
 
