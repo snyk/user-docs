@@ -202,6 +202,19 @@ kubectl cp <your-namespace>/<your-release>-fluentd-0:/var/log/snyk/logs/<file-na
 It may take a few minutes to copy all files.
 {% endhint %}
 
-\
-\
+### Enabling webhooks for broker client for Snyk Code PR Scanning
+
+In order to be able to create and handle SCM webhooks, `broker-client` must be exposed to the outside world.&#x20;
+
+A basic ingress is available for it and can be enabled by setting `broker-client.ingress.enabled` to `true` and specifying a host on which the broker client's endpoints will be available via `broker-client.ingress.host` (for example "broker-client.example.com"). The default ingress exposes `/webhook/*` and `/healthcheck` endpoints from the `broker-client` service.
+
+Note that the ingress IP still has to be made available on the specified host via a DNS A record, which will depend on your cloud provider or server setup.
+
+By default, the ingress endpoints are insecure. In order to secure them using TLS, set `broker-client.ingress.tls.enabled` to `true`.
+
+You can specify the name of the secret you wish to use with `broker-client.ingress.tls.secret.name`, or leave it empty to default to the name of the service suffixed with `-tls-secret`.
+
+If you do not already have a secret created for that host, you can set the `key` and `cert` values to the key and certificate, respectively, that you created for use with the host that the ingress will be using (they will be Base64 encoded for you
+
+Read more about securing an ingress with TLS [here](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls).\
 \
