@@ -77,7 +77,7 @@
     * [Understand Snyk Code CLI results](products/snyk-code/cli-for-snyk-code/snyk-code-cli-results.md)
     * [Filtering and exporting Snyk Code CLI results](products/snyk-code/cli-for-snyk-code/advanced-snyk-code-cli-usage.md)
   * [Deployment Options](products/snyk-code/deployment-options/README.md)
-    * [Snyk Code local git support](products/snyk-code/deployment-options/snyk-code-local-git-support.md)
+    * [Snyk Code self-hosted git (with broker)](products/snyk-code/deployment-options/snyk-code-local-git-support.md)
     * [Snyk Code Local Engine](products/snyk-code/deployment-options/snyk-code-local-engine/README.md)
       * [Introduction](products/snyk-code/deployment-options/snyk-code-local-engine/introduction.md)
       * [Configure and deploy Local Engine](products/snyk-code/deployment-options/snyk-code-local-engine/configure-and-deploy-local-engine.md)
