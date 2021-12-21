@@ -4,7 +4,7 @@
 
 As well as testing images from a local Docker daemon or remote registry, Snyk can also directly test or monitor a Docker or OCI archive.
 
-```text
+```
 snyk container test docker-archive:archive.tar
 snyk container test oci-archive:archive.tar
 ```
@@ -13,7 +13,7 @@ snyk container test oci-archive:archive.tar
 
 Some repositories represent multi-manifests, pointing to several different images depending on the operating system and architecture required. The Snyk Container CLI can be used to explicitly test an image for a specific platform:
 
-```text
+```
 snyk container test --platform=linux/arm64 debian
 ```
 
@@ -37,8 +37,8 @@ When Docker is installed, the Snyk Container CLI will use any pre-configured reg
 * Using the following environment variables: `SNYK_REGISTRY_USERNAME` and `SNYK_REGISTRY_PASSWORD`.
 * Or by passing `--username` and `--password flags`, like so:
 
-```text
-snyk container test : --username= --password=
+```
+snyk container test <repository>:<tag> --username= --password=
 ```
 
 Note that the flags take precedence over the environment variables in the case both are passed.
@@ -47,16 +47,16 @@ Note that the flags take precedence over the environment variables in the case b
 
 Some useful CLI options include:
 
-| Option | Description |
-| :--- | :--- |
-| `--json` | Output the results as a JSON document, useful for integrating with other tools |
-| `--sarif` | Output the results as a [SARIF](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=sarif) document, useful for integrating with other tools. Note this requires the test to be run with --file as well |
-| `--exclude-base-image-vulns` | Don’t show vulnerabilities only introduced by the base image. Available when using `snyk container test` only. |
-| `--severity-threshold` | Only show a subset of vulnerabilities which match the severity or higher |
+| Option                       | Description                                                                                                                                                                                                       |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `--json`                     | Output the results as a JSON document, useful for integrating with other tools                                                                                                                                    |
+| `--sarif`                    | Output the results as a [SARIF](https://www.oasis-open.org/committees/tc\_home.php?wg\_abbrev=sarif) document, useful for integrating with other tools. Note this requires the test to be run with --file as well |
+| `--exclude-base-image-vulns` | Don’t show vulnerabilities only introduced by the base image. Available when using `snyk container test` only.                                                                                                    |
+| `--severity-threshold`       | Only show a subset of vulnerabilities which match the severity or higher                                                                                                                                          |
 
 For a full list of options, access the Snyk help information:
 
-```text
+```
 snyk container --help
 ```
 
@@ -64,4 +64,3 @@ snyk container --help
 
 * [Test images with the Snyk Container CLI](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security)
 * [Understand Snyk Container CLI results](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security/understanding-snyk-container-cli-results)
-

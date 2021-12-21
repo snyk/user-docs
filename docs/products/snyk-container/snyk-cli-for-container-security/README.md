@@ -2,7 +2,7 @@
 
 ## Test images with the Snyk Container CLI
 
-The Snyk Container command line interface \(CLI\) helps you find and fix vulnerabilities in container images on your local machine.
+The Snyk Container command line interface (CLI) helps you find and fix vulnerabilities in container images on your local machine.
 
 ## Install the Snyk CLI
 
@@ -19,7 +19,7 @@ For more detailed installation guidance and options, see [Install the Snyk CLI](
 
 After installation, authenticate with Snyk to test your image, running snyk auth from the CLI:
 
-```text
+```
 snyk auth
 ```
 
@@ -29,7 +29,7 @@ For more details about authentication, see [Authenticate the CLI with your accou
 
 To test an image run:
 
-```text
+```
 snyk container test debian
 ```
 
@@ -42,14 +42,14 @@ This:
 
 You can use Snyk to test any image that you can pull from a remote registry, or any image you have built locally and made available in your local Docker daemon.
 
-```text
-snyk container test :
+```
+snyk container test <repository>:<tag>
 ```
 
 If you use a Dockerfile to build your image, you can provide that when running Snyk.
 
-```text
-snyk container test : --file=Dockerfile
+```
+snyk container test <repository>:<tag> --file=Dockerfile
 ```
 
 Specifying a Dockerfile provides more context, and allows Snyk to provide clear recommendations on how to fix discovered vulnerabilities.
@@ -65,14 +65,14 @@ Snyk Container also has the concept of monitoring an image. This provides the fo
 You can also access aggregate reports of vulnerabilities across all of your projects.
 
 {% hint style="info" %}
-**Feature availability**  
+**Feature availability**\
 This aggregate reports feature is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 To monitor an image run:
 
-```text
-snyk container monitor :
+```
+snyk container monitor <repository>:<tag>
 ```
 
 monitor will:
@@ -85,7 +85,7 @@ monitor will:
 ![](../../../.gitbook/assets/monitor.png)
 
 {% hint style="info" %}
-**Note**  
+**Note**\
 It’s common to use both test and monitor with Snyk. test is great for quick checks, monitor can be used for ongoing assurance and easier sharing of results.
 {% endhint %}
 
@@ -94,4 +94,3 @@ It’s common to use both test and monitor with Snyk. test is great for quick ch
 * [Understand Snyk Container CLI results](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security/understanding-snyk-container-cli-results)
 * [Advanced CLI usage](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)
 * Learn more about [container security](https://snyk.io/learn/container-security/)
-
