@@ -47,6 +47,8 @@ Available top-level CLI commands:
 
 `wizard`Configure your policy file to update, auto patch, and ignore vulnerabilities. Snyk wizard updates your `.snyk` file.
 
+`log4shell` Find traces of the Log4J library that are affected by the Log4Shell vulnerability [CVE-2021-44228](https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720). See `snyk log4shell --help` for full instructions.
+
 ## OPTIONS
 
 To see command-specific flags and usage, see `help` command, e.g. `snyk container --help`. For advanced usage, we offer language and context-specific flags, listed further down this document.
