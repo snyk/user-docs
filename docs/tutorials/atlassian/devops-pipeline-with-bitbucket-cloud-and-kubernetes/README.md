@@ -4,7 +4,7 @@ description: Build and test code and infrastructure using multiple integrations
 
 # DevOps Pipeline with Bitbucket Cloud and Kubernetes
 
-In this workshop, we'll work through a pipeline to checkout, build, test, and deploy your code as a container to running environments.  This use is is typical of what most users encounter, and the workshop is designed to show you how Snyk can plumb into your everyday activities.
+In this workshop, we'll work through a pipeline to checkout, build, test, and deploy your code as a container to running environments.  This use case is is typical of what most users encounter, and the workshop is designed to show you how Snyk can plumb into your everyday activities.
 
 This workshop starts with a java version of our popular vulnerable application named Goof.  The source in Github is [https://github.com/snyk-labs/java-goof](https://github.com/snyk-labs/java-goof) and we'll work through a pipeline example highlighting multiple integrations along the way.
 
