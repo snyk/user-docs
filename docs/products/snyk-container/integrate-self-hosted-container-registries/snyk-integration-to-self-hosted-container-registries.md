@@ -35,6 +35,7 @@ The Broker client provides the Agent with the connection details. The Agent uses
 * Harbor (type: harbor-cr)
 * Azure (type: acr)
 * GCR (type: gcr)
+* ECR (type: ecr)
 * Google Artifact Registry (type: google-artifact-cr)
 * Docker Hub (type: docker-hub)
 * Quay (type: quay-cr)
