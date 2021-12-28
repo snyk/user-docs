@@ -1,4 +1,4 @@
-# Visual Studio Code extension for Snyk Code
+# Visual Studio Code extension
 
 &#x20;Use this documentation to get started with the Visual Studio Code extension.
 
@@ -68,7 +68,7 @@ To manually trigger a scan, either Save or manually rescan using the rescan icon
 
 If you only need the Code Quality, Code Security or Open Source Security portion of the findings, you can easily disable the feature with the results you don't want to see or simply collapse the view:
 
-![](<../../../.gitbook/assets/image (83) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (83) (1) (1) (1) (1).png>)
 
 ### Snyk Code advanced mode
 
