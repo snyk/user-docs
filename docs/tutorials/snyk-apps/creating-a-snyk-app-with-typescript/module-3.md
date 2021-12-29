@@ -1,4 +1,4 @@
-# Using data and displaying content
+# Render Content For Users
 
 In the previous module, we covered registering our Snyk App, setting up the authorization flow, and handling user authorization within our App. All of those topics are integral to the functionality of every Snyk App, but they're all what you might call "behind the scenes" topics.
 
@@ -6,11 +6,11 @@ In this module, we'll switch gears to focus on displaying content to the users w
 
 ## Add a template engine to the Snyk App
 
-While Express is perfectly capable of printing content to the screen and even rendering HTML server-side, life is much easier when using a template engine. For this tutorial, we'll be using [EJS](https://ejs.co/).
+While Express is perfectly capable of printing content to the screen and even rendering HTML server-side, life is much easier when using a template engine. For this tutorial, we'll be using [EJS](https://ejs.co).
 
 First things first, install the node packages we'll be using for this portion of the tutorial:
 
-``` bash
+```bash
 npm install --save ejs
 ```
 
@@ -18,14 +18,14 @@ Next, we'll modify the `initGlobalMiddlewares()` function we created in our last
 
 Create the new directories first.
 
-``` bash
+```bash
 mkdir -p ./src/views/partials
 mkdir -p ./src/public
 ```
 
 Now we can update `./src/app.ts`:
 
-``` typescript
+```typescript
 // ./src/app.ts
 ...
 
@@ -54,7 +54,7 @@ For each route that we'll provide a template for, we'll need to modify the corre
 
 E.g.,
 
-``` typescript
+```typescript
 ...
 
 private initRoutes() {
@@ -66,7 +66,6 @@ private indexPage(req: Request, res: Response, next: NextFunction) {
 }
 
 ...
-
 ```
 
 That's really all there is to it.
@@ -77,7 +76,7 @@ EJS templates support the concept of partial inclusion. While not strictly neces
 
 The first template we'll create is a partial, which we'll include in the other templates. This `header.ejs` will be the place we link stylesheets and other information that belongs in the `<head>` of an HTML document.
 
-``` ejs
+```ejs
 // ./views/partials/header.ejs
 
 <!DOCTYPE html>
@@ -151,13 +150,13 @@ This is a basic, but easily extendable feature.
 
 We'll need to create:
 
- - A new route controller
- - A function (or functions) to pull the project data
- - An EJS template for showing the projects
+* A new route controller
+* A function (or functions) to pull the project data
+* An EJS template for showing the projects
 
 Let's start with the API work. We'll utilize the `callSnykApi()` function we created in the previous module. Since this directly relates to a particular route, we'll store this file with its controller. Following the patteren we've used throughout these tutorial modules, we'll create both files at `./src/routes/projects/`.
 
-``` typescript
+```typescript
 // ./src/routes/projects/projectsHandler.ts
 
 import { readFromDb } from "../../util/DB";
@@ -206,12 +205,11 @@ export function mostRecent(installs: AuthData[]): AuthData | void {
   }
   return;
 }
-
 ```
 
 Next we'll write the route controller. Follow the pattern: `./src/routes/projects/projectsController.ts`.
 
-``` typescript
+```typescript
 // ./src/routes/projects/projectsController.ts
 
 import type { Controller } from "../../interfaces/Controller";
@@ -249,7 +247,7 @@ export class ProjectsController implements Controller {
 
 Whenever we add a new route controller, we need to update `./index.ts` to include it.
 
-``` typescript
+```typescript
 // ./src/index.ts
 
 import IndexController from "./routes/index/indexController";
@@ -269,4 +267,6 @@ new App([
 
 ## Wrap-up
 
-That's it! Using the projects API handler and controller we created in this module, you should have all you need to create your own custom code and make your Snyk App do whatever you'd like it to do. We used the v1 API here, but make sure to keep an eye out on Snyk's V3 API over the next months as more and more features are added, you may find new or more efficient endpoints to use in your Snyk App!
+Using the projects API handler and controller we created in this module, you should have all you need to create your own custom code and make your Snyk App do whatever you'd like it to do.
+
+We used the v1 API here, but make sure to keep an eye out on Snyk's V3 API over the next months as more and more features are added, you may find new or more efficient endpoints to use in your Snyk App!
