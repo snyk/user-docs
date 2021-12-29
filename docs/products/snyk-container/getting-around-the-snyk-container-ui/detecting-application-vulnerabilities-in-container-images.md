@@ -19,13 +19,13 @@ When scanning an image using a container registry, Kubernetes integration, or th
 
 ### Using CLI to detect vulnerabilities
 
-#### App vulns flag
+#### App Vulns Flag
 
 Use the `--app-vulns` flag to detect vulnerabilities in your application dependencies from container images.&#x20;
 
 For Java, when specifying the flag, we scan one level of nested jars by default.&#x20;
 
-### Nested-jars-depth flag&#x20;
+#### Nested Jars Depth Flag
 
 For Java applications, when using `--app-vulns`, you can also use the `--nested-jars-depth=n` flag to set how many levels of nested jars Snyk will unpack. The implicit default is 1. I.e when specifying 2, it means that Snyk unzips jars in jars, 3 means Snyk unzips jars in jars in jars, etc.
 
