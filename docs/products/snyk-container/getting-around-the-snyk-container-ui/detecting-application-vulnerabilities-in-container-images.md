@@ -1,7 +1,7 @@
 # Detecting application vulnerabilities in container images
 
 {% hint style="info" %}
-The feature is currently supported for Node, Ruby, PHP, Python, Go binaries and Java.
+For the Container Registry integration, the feature is supported for Node, Ruby, PHP, Python, Go binaries and Java. For the CLI and Kubernetes, the feature is supported for Node, Golang, and Java.
 {% endhint %}
 
 Snyk allows detection of vulnerabilities in your application dependencies from container images, as well as from the operating system, all in one single scan.
@@ -13,38 +13,23 @@ After you integrate with a container registry and import your projects, we scan 
 1. Navigate to your container registry integration settings
 2. Enable the _**Detect application vulnerabilities**_ capability and save the changes:
 
-![](<../../../.gitbook/assets/mceclip1 (1).png>)
+![](../../../.gitbook/assets/detect-app-vulns.png)
+
+When scanning an image using a container registry, Kubernetes integration, or through the Docker scan command, the scan also uses the `--app-vulns` flag by default. You are able to opt out of the flag in the container registry only. Do so by disabling the ‘_detect application vulnerabilities_’ toggle in the integration settings.
 
 ### Using CLI to detect vulnerabilities
 
 #### App vulns flag
 
-`--app-vulns` allows detection of vulnerabilities in your application dependencies from container images, as well as from the operating system. Currently, in the CLI (and k8s integration), we detect only for Node, Golang, and Java applications. (In container registries, if the manifest file exists in the image, we also detect for Python, Ruby and PHP applications).&#x20;
+Use the `--app-vulns` flag to detect vulnerabilities in your application dependencies from container images.&#x20;
 
-#### CLI&#x20;
-
-When specifying the flag, we scan one level of nested jars by default.&#x20;
-
-#### CR, K8S, docker scan command&#x20;
-
-When scanning an image using a container registry, Kubernetes integration, or through Docker scan--the scan also uses the `--app-vulns` flag by default with a default of 1 level of nested jars scanning. You are able to opt out of the flag in the container registry only. Do so by disabling the ‘_detect application vulnerabilities_’ toggle in the integration settings.
-
-![](../../../.gitbook/assets/detect-app-vulns.png)
+For Java, when specifying the flag, we scan one level of nested jars by default.&#x20;
 
 ### Nested-jars-depth flag&#x20;
 
-For Java applications, when using `--app-vulns` (CLI) you can also use the `--nested-jars-depth=n` flag to set how many levels of nested jars Snyk will unpack. The implicit default is 1 (so that's what CR/k8s/`docker scan` users get), but 2 means we unzip jars in jars, 3 means we unzip jars in jars in jars, etc. Higher value = deeper but slower scanning.
+For Java applications, when using `--app-vulns`, you can also use the `--nested-jars-depth=n` flag to set how many levels of nested jars Snyk will unpack. The implicit default is 1. I.e when specifying 2, it means that Snyk unzips jars in jars, 3 means Snyk unzips jars in jars in jars, etc.
 
-CLI users can use --nested-jar-depth=0 to opt out of any scans that they feel are unnecessary.&#x20;
-
-#### Troubleshooting when a jar is not detected&#x20;
-
-If a jar or a dependency are not detected try the following:&#x20;
-
-* Update to latest CLI version&#x20;
-* Public jar: Check jar's hash against search.maven.org and check `--nested-jars-depth` is high enough to detect the jar&#x20;
-* Shaded jar: Check if pom.properties is present (if not, cant detect) and check `--nested-jars-depth` is high enough to detect the jar&#x20;
-* Custom jar: Check if pom.properties is present (if not, cant detect)
+Users can use --nested-jar-depth=0 to opt out of any scans they feel are unnecessary.&#x20;
 
 ### View vulnerabilities and licensing issues
 
