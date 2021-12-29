@@ -16,7 +16,6 @@ We recommend configuring at least two separate instances of the Broker client fo
 ## Configure your network
 
 * If you use a proxy server, ensure you configure it, and any firewalls, to allow the Broker client inbound and outbound access:
-  *
     * Outbound from broker to broker.snyk.io on port 443.
     * Inbound to broker client at the BROKER\_CLIENT\_URL on the port you have configured (typically 7341).
 * Traffic initiated from the Snyk server side always uses the latest available Broker connection. All activity from our side (such as driven by recurring tests) appears on only one of your replicas at a time. So the amount of Snyk activity is proportional to the activity in your repos (or Jira) as that activity generates webhooks, which is distributed across all replicas. &#x20;
