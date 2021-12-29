@@ -1,8 +1,6 @@
 # Log4shell
 
-```
-snyk log4shell -- Log4shell sniffer
-```
+`snyk log4shell -- Log4shell sniffer`
 
 ### Usage
 
@@ -14,9 +12,9 @@ This command finds traces of the Log4J library that are affected by the Log4Shel
 
 ### Managed projects
 
-To test Java projects using their package manager manifest files, see Snyk for Java (Gradle, Maven).
+To test Java projects using their package manager manifest files, see [Snyk for Java (Gradle, Maven)](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven).
 
-To learn more about the `snyk test --scan-all-unmanaged`, see the Maven options section of the CLI reference.
+To learn more about the `snyk test --scan-all-unmanaged`, see the Maven options section of the [CLI reference](https://docs.snyk.io/features/snyk-cli/guides-for-our-cli/cli-reference).
 
 ### Exit codes
 
