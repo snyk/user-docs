@@ -208,7 +208,7 @@ snyk ignore --id=’vulnerabilityID’ --expiry=’date-string’ --reason=’te
 **Example - Generating an ignore rule using CLI. Ignore the SNYK-JS-BSON-561052 vulnerability for all paths that lead to that library on disk.**
 
 ```
-snyk ignore --id=’SNYK-JS-BSON-561052’ --expiry=’2018-04-01’ –reason=’testing’
+snyk ignore --id=’SNYK-JS-BSON-561052’ --expiry=’2018-04-01’ --reason=’testing’
 ```
 
 ### Best practices
