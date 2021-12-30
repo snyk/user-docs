@@ -1,8 +1,8 @@
-# Snyk CLI Commands
+# CLI commands
 
 Snyk CLI scans and monitors your projects for security vulnerabilities.
 
-Visit https://snyk.io for more details.
+Visit [snyk.io](https://snyk.io) for more details.
 
 ## Not sure where to start?
 
@@ -14,50 +14,50 @@ Visit https://snyk.io for more details.
 
 To learn more about Snyk CLI use the `--help` option, e.g. `snyk container --help` or `snyk auth --help`.
 
-### [`snyk auth`](./auth.md)
+### [`snyk auth`](auth.md)
 
 Authenticate Snyk CLI with a Snyk account.
 
-### [`snyk test`](./test.md)
+### [`snyk test`](test.md)
 
 Test local project's dependencies for vulnerabilities.
 
-### [`snyk monitor`](./monitor.md)
+### [`snyk monitor`](monitor.md)
 
 Snapshot and continuously monitor your project.
 
-### [`snyk container`](./container.md)
+### [`snyk container`](container.md)
 
 Test container images for vulnerabilities.
 
-### [`snyk iac`](./iac.md)
+### [`snyk iac`](iac.md)
 
 Find security issues in your Infrastructure as Code files.
 
-### [`snyk code`](./code.md)
+### [`snyk code`](code.md)
 
 Find security issues using static code analysis.
 
-### [`snyk log4shell`](./log4shell.md)
+### [`snyk log4shell`](log4shell.md)
 
 Finds Log4Shell vulnerability.
 
-### [`snyk config`](./config.md)
+### [`snyk config`](config.md)
 
 Manage Snyk CLI configuration.
 
-### [`snyk protect`](./protect.md)
+### [`snyk protect`](protect.md)
 
 Applies the patches specified in your .snyk file to the local file system.
 
-### [`snyk policy`](./policy.md)
+### [`snyk policy`](policy.md)
 
 Display the `.snyk` policy for a package.
 
-### [`snyk ignore`](./ignore.md)
+### [`snyk ignore`](ignore.md)
 
 Modifies the `.snyk` policy to ignore stated issues.
 
-### [`snyk wizard`](./wizard.md)
+### [`snyk wizard`](wizard.md)
 
 Configure your `.snyk` policy file.
