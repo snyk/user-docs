@@ -1,4 +1,4 @@
-# snyk code -- Find security issues using Static code analysis
+# Code
 
 ## Usage
 
@@ -28,14 +28,11 @@ Prints results in JSON format.
 
 ### `--org=<ORG_NAME>`
 
-Specify the <ORG_NAME> to run Snyk commands tied to a specific organization. This will influence private tests limits.
-If you have multiple organizations, you can set a default from the CLI using:
+Specify the \<ORG\_NAME> to run Snyk commands tied to a specific organization. This will influence private tests limits. If you have multiple organizations, you can set a default from the CLI using:
 
 `$ snyk config set org=<ORG_NAME>`
 
-Setting a default will ensure all newly tested projects will be tested
-under your default organization. If you need to override the default, you can use the `--org=<ORG_NAME>` argument.
-Default: uses <ORG_NAME> that sets as default in your [Account settings](https://app.snyk.io/account)
+Setting a default will ensure all newly tested projects will be tested under your default organization. If you need to override the default, you can use the `--org=<ORG_NAME>` argument. Default: uses \<ORG\_NAME> that sets as default in your [Account settings](https://app.snyk.io/account)
 
 ### `--sarif`
 
@@ -71,8 +68,9 @@ You can set these environment variables to change CLI settings.
 
 Snyk authorization token. Setting this envvar will override the token that may be available in your `snyk config` settings.
 
-[How to get your account token](https://snyk.co/ucT6J)<br />
-[How to use Service Accounts](https://snyk.co/ucT6L)<br />
+[How to get your account token](https://snyk.co/ucT6J)\
+[How to use Service Accounts](https://snyk.co/ucT6L)\
+
 
 ### `SNYK_CFG_KEY`
 
@@ -108,7 +106,7 @@ Allows you to specify a proxy to use for `https` and `http` calls. The `https` i
 
 Possible exit codes and their meaning:
 
-**0**: success, no vulns found<br />
-**1**: action_needed, vulns found<br />
-**2**: failure, try to re-run command<br />
-**3**: failure, no supported projects detected<br />
+**0**: success, no vulns found\
+**1**: action\_needed, vulns found\
+**2**: failure, try to re-run command\
+**3**: failure, no supported projects detected\

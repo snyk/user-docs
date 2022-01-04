@@ -1,4 +1,4 @@
-# snyk container -- Test container images for vulnerabilities
+# Container
 
 ## Usage
 
@@ -30,8 +30,7 @@ Include the path to the image's Dockerfile for more detailed advice.
 
 ### `--platform=<PLATFORM>`
 
-For multi-architecture images, specify the platform to test.
-[linux/amd64, linux/arm64, linux/riscv64, linux/ppc64le, linux/s390x, linux/386, linux/arm/v7 or linux/arm/v6]
+For multi-architecture images, specify the platform to test. \[linux/amd64, linux/arm64, linux/riscv64, linux/ppc64le, linux/s390x, linux/386, linux/arm/v7 or linux/arm/v6]
 
 ### `--json`
 
@@ -39,9 +38,7 @@ Prints results in JSON format.
 
 ### `--json-file-output=<OUTPUT_FILE_PATH>`
 
-(only in `test` command)
-Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option.
-This is especially useful if you want to display the human-readable test output via stdout and at the same time save the JSON format output to a file.
+(only in `test` command) Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option. This is especially useful if you want to display the human-readable test output via stdout and at the same time save the JSON format output to a file.
 
 ### `--sarif`
 
@@ -49,9 +46,7 @@ Return results in SARIF format.
 
 ### `--sarif-file-output=<OUTPUT_FILE_PATH>`
 
-(only in `test` command)
-Save test output in SARIF format directly to the `<OUTPUT_FILE_PATH>` file, regardless of whether or not you use the `--sarif` option.
-This is especially useful if you want to display the human-readable test output via stdout and at the same time save the SARIF format output to a file.
+(only in `test` command) Save test output in SARIF format directly to the `<OUTPUT_FILE_PATH>` file, regardless of whether or not you use the `--sarif` option. This is especially useful if you want to display the human-readable test output via stdout and at the same time save the SARIF format output to a file.
 
 ### `--print-deps`
 
@@ -107,8 +102,9 @@ You can set these environment variables to change CLI settings.
 
 Snyk authorization token. Setting this envvar will override the token that may be available in your `snyk config` settings.
 
-[How to get your account token](https://snyk.co/ucT6J)<br />
-[How to use Service Accounts](https://snyk.co/ucT6L)<br />
+[How to get your account token](https://snyk.co/ucT6J)\
+[How to use Service Accounts](https://snyk.co/ucT6L)\
+
 
 ### `SNYK_CFG_KEY`
 
@@ -144,7 +140,7 @@ Allows you to specify a proxy to use for `https` and `http` calls. The `https` i
 
 Possible exit codes and their meaning:
 
-**0**: success, no vulns found<br />
-**1**: action_needed, vulns found<br />
-**2**: failure, try to re-run command<br />
-**3**: failure, no supported projects detected<br />
+**0**: success, no vulns found\
+**1**: action\_needed, vulns found\
+**2**: failure, try to re-run command\
+**3**: failure, no supported projects detected\

@@ -1,4 +1,4 @@
-# snyk policy -- Display the .snyk policy for a package
+# Policy
 
 ## Usage
 
@@ -44,8 +44,9 @@ You can set these environment variables to change CLI settings.
 
 Snyk authorization token. Setting this envvar will override the token that may be available in your `snyk config` settings.
 
-[How to get your account token](https://snyk.co/ucT6J)<br />
-[How to use Service Accounts](https://snyk.co/ucT6L)<br />
+[How to get your account token](https://snyk.co/ucT6J)\
+[How to use Service Accounts](https://snyk.co/ucT6L)\
+
 
 ### `SNYK_CFG_KEY`
 
@@ -81,7 +82,7 @@ Allows you to specify a proxy to use for `https` and `http` calls. The `https` i
 
 Possible exit codes and their meaning:
 
-**0**: success, no vulns found<br />
-**1**: action_needed, vulns found<br />
-**2**: failure, try to re-run command<br />
-**3**: failure, no supported projects detected<br />
+**0**: success, no vulns found\
+**1**: action\_needed, vulns found\
+**2**: failure, try to re-run command\
+**3**: failure, no supported projects detected\

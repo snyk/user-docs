@@ -1,4 +1,4 @@
-# snyk iac -- Find security issues in your Infrastructure as Code files
+# IAC
 
 ## Usage
 
@@ -20,12 +20,9 @@ Test for any known issue.
 
 ### `--detection-depth=<DEPTH>`
 
-(only in `test` command)
-Indicate the maximum depth of sub-directories to search. `<DEPTH>` must be a number.
+(only in `test` command) Indicate the maximum depth of sub-directories to search. `<DEPTH>` must be a number.
 
-Default: No Limit
-Example: `--detection-depth=3`
-Will limit search to provided directory (or current directory if no `<PATH>` provided) plus two levels of subdirectories.
+Default: No Limit Example: `--detection-depth=3` Will limit search to provided directory (or current directory if no `<PATH>` provided) plus two levels of subdirectories.
 
 ### `--severity-threshold=low|medium|high|critical`
 
@@ -41,20 +38,15 @@ Prints results in JSON format.
 
 ### `--json-file-output=<OUTPUT_FILE_PATH>`
 
-(only in `test` command)
-Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option.
-This is especially useful if you want to display the human-readable test output via stdout and at the same time save the JSON format output to a file.
+(only in `test` command) Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option. This is especially useful if you want to display the human-readable test output via stdout and at the same time save the JSON format output to a file.
 
 ### `--org=<ORG_NAME>`
 
-Specify the `<ORG_NAME>` to run Snyk commands tied to a specific organization. This will influence private tests limits.
-If you have multiple organizations, you can set a default from the CLI using:
+Specify the `<ORG_NAME>` to run Snyk commands tied to a specific organization. This will influence private tests limits. If you have multiple organizations, you can set a default from the CLI using:
 
 `$ snyk config set org=<ORG_NAME>`
 
-Setting a default will ensure all newly tested projects will be tested
-under your default organization. If you need to override the default, you can use the `--org=<ORG_NAME>` argument.
-Default: uses `<ORG_NAME>` that sets as default in your [Account settings](https://app.snyk.io/account)
+Setting a default will ensure all newly tested projects will be tested under your default organization. If you need to override the default, you can use the `--org=<ORG_NAME>` argument. Default: uses `<ORG_NAME>` that sets as default in your [Account settings](https://app.snyk.io/account)
 
 ### `--policy-path=<PATH_TO_POLICY_FILE>`
 
@@ -66,26 +58,15 @@ Return results in SARIF format.
 
 ### `--sarif-file-output=<OUTPUT_FILE_PATH>`
 
-(only in `test` command)
-Save test output in SARIF format directly to the `<OUTPUT_FILE_PATH>` file, regardless of whether or not you use the `--sarif` option.
-This is especially useful if you want to display the human-readable test output via stdout and at the same time save the SARIF format output to a file.
+(only in `test` command) Save test output in SARIF format directly to the `<OUTPUT_FILE_PATH>` file, regardless of whether or not you use the `--sarif` option. This is especially useful if you want to display the human-readable test output via stdout and at the same time save the SARIF format output to a file.
 
 ### `--scan=<TERRAFORM_PLAN_SCAN_MODE>`
 
-Dedicated flag for Terraform plan scanning modes.
-It enables to control whether the scan should analyse the full final state (e.g. `planned-values`), or the proposed changes only (e.g. `resource-changes`).
-Default: If the `--scan` flag is not provided it would scan the proposed changes only by default.
-Example #1: `--scan=planned-values` (full state scan)
-Example #2: `--scan=resource-changes` (proposed changes scan)
+Dedicated flag for Terraform plan scanning modes. It enables to control whether the scan should analyse the full final state (e.g. `planned-values`), or the proposed changes only (e.g. `resource-changes`). Default: If the `--scan` flag is not provided it would scan the proposed changes only by default. Example #1: `--scan=planned-values` (full state scan) Example #2: `--scan=resource-changes` (proposed changes scan)
 
 ### `--rules=<PATH_TO_CUSTOM_RULES_BUNDLE>`
 
-Dedicated flag for Custom Rules scanning.
-It enables the IaC scans to use a custom rules bundle generated via the `snyk-iac-rules` SDK. To download it and learn how to use it, go to
-https://github.com/snyk/snyk-iac-rules.
-This flag cannot be used if the custom rules settings were configured via the Snyk UI.
-Default: If the `--rules` flag is not provided it would scan the configuration files using the internal Snyk rules only.
-Example: `--rules=bundle.tar.gz` (scans the configuration files using custom rules and internal Snyk rules)
+Dedicated flag for Custom Rules scanning. It enables the IaC scans to use a custom rules bundle generated via the `snyk-iac-rules` SDK. To download it and learn how to use it, go to https://github.com/snyk/snyk-iac-rules. This flag cannot be used if the custom rules settings were configured via the Snyk UI. Default: If the `--rules` flag is not provided it would scan the configuration files using the internal Snyk rules only. Example: `--rules=bundle.tar.gz` (scans the configuration files using custom rules and internal Snyk rules)
 
 ### Flags available accross all commands
 
@@ -115,33 +96,31 @@ Prints a help text. You may specify a `<COMMAND>` to get more details.
 
 ### `Test a CloudFormation file`
 
-\$ snyk iac test /path/to/cloudformation_file.yaml
+$ snyk iac test /path/to/cloudformation\_file.yaml
 
 ### `Test a Kubernetes file`
 
-\$ snyk iac test /path/to/kubernetes_file.yaml
+$ snyk iac test /path/to/kubernetes\_file.yaml
 
 ### `Test a Terraform file`
 
-\$ snyk iac test /path/to/terraform_file.tf
+$ snyk iac test /path/to/terraform\_file.tf
 
 ### `Test a Terraform plan file`
 
-\$ terraform plan -out=tfplan.binary
-\$ terraform show -json tfplan.binary > tf-plan.json
-\$ snyk iac test tf-plan.json
+$ terraform plan -out=tfplan.binary $ terraform show -json tfplan.binary > tf-plan.json $ snyk iac test tf-plan.json
 
 ### `Test an ARM file`
 
-\$ snyk iac test /path/to/arm_file.json
+$ snyk iac test /path/to/arm\_file.json
 
 ### `Test matching files in a directory`
 
-\$ snyk iac test /path/to/directory
+$ snyk iac test /path/to/directory
 
 ### `Test matching files in a directory using a local custom rules bundle`
 
-\$ snyk iac test /path/to/directory --rules=bundle.tar.gz
+$ snyk iac test /path/to/directory --rules=bundle.tar.gz
 
 ## Environment
 
@@ -151,8 +130,9 @@ You can set these environment variables to change CLI settings.
 
 Snyk authorization token. Setting this envvar will override the token that may be available in your `snyk config` settings.
 
-[How to get your account token](https://snyk.co/ucT6J)<br />
-[How to use Service Accounts](https://snyk.co/ucT6L)<br />
+[How to get your account token](https://snyk.co/ucT6J)\
+[How to use Service Accounts](https://snyk.co/ucT6L)\
+
 
 ### `SNYK_CFG_KEY`
 
@@ -188,7 +168,7 @@ Allows you to specify a proxy to use for `https` and `http` calls. The `https` i
 
 Possible exit codes and their meaning:
 
-**0**: success, no vulns found<br />
-**1**: action_needed, vulns found<br />
-**2**: failure, try to re-run command<br />
-**3**: failure, no supported projects detected<br />
+**0**: success, no vulns found\
+**1**: action\_needed, vulns found\
+**2**: failure, try to re-run command\
+**3**: failure, no supported projects detected\

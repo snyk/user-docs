@@ -1,4 +1,4 @@
-# snyk test -- test local project for vulnerabilities
+# Test
 
 ## Usage
 
@@ -10,8 +10,7 @@ Test command checks locally installed projects for vulnerabilities. It tries to 
 
 ## Options
 
-To see command-specific flags and usage, see `help` command, e.g. `snyk container --help`.
-For advanced usage, we offer language and context specific flags, listed further down this document.
+To see command-specific flags and usage, see `help` command, e.g. `snyk container --help`. For advanced usage, we offer language and context specific flags, listed further down this document.
 
 ### `--all-projects`
 
@@ -31,8 +30,7 @@ If using with `--detection-depth` exclude ignores directories at any level deep.
 
 ### `--prune-repeated-subdependencies`, `-p`
 
-Prune dependency trees, removing duplicate sub-dependencies.
-Will still find all vulnerabilities, but potentially not all of the vulnerable paths.
+Prune dependency trees, removing duplicate sub-dependencies. Will still find all vulnerabilities, but potentially not all of the vulnerable paths.
 
 ### `--print-deps`
 
@@ -50,13 +48,11 @@ Default: scan only production dependencies
 
 ### `--org=<ORG_NAME>`
 
-Specify the <ORG_NAME> to run Snyk commands tied to a specific organization. This will influence where will new projects be created after running `monitor` command, some features availability and private tests limits.
-If you have multiple organizations, you can set a default from the CLI using:
+Specify the \<ORG\_NAME> to run Snyk commands tied to a specific organization. This will influence where will new projects be created after running `monitor` command, some features availability and private tests limits. If you have multiple organizations, you can set a default from the CLI using:
 
 `$ snyk config set org=<ORG_NAME>`
 
-Setting a default will ensure all newly monitored projects will be created
-under your default organization. If you need to override the default, you can use the `--org=<ORG_NAME>`argument.
+Setting a default will ensure all newly monitored projects will be created under your default organization. If you need to override the default, you can use the `--org=<ORG_NAME>`argument.
 
 Default: uses `<ORG_NAME>` that sets as default in your [Account settings](https://app.snyk.io/account)
 
@@ -78,8 +74,7 @@ Applies and uses ignore rules from your dependencies' Snyk policies, otherwise i
 
 Display the dependency paths from the top level dependencies, down to the vulnerable packages. Doesn't affect output when using JSON `--json` output.
 
-Default: <some> (a few example paths shown)
-<false> is an alias for <none>.
+Default: (a few example paths shown) is an alias for .
 
 ### `--project-name=<PROJECT_NAME>`
 
@@ -103,8 +98,7 @@ Prints results in JSON format.
 
 ### `--json-file-output=<OUTPUT_FILE_PATH>`
 
-Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option.
-This is especially useful if you want to display the human-readable test output via stdout and at the same time save the JSON format output to a file.
+Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option. This is especially useful if you want to display the human-readable test output via stdout and at the same time save the JSON format output to a file.
 
 ### `--sarif`
 
@@ -112,8 +106,7 @@ Return results in SARIF format.
 
 ### `--sarif-file-output=<OUTPUT_FILE_PATH>`
 
-Save test output in SARIF format directly to the <OUTPUT_FILE_PATH> file, regardless of whether or not you use the `--sarif` option.
-This is especially useful if you want to display the human-readable test output via stdout and at the same time save the SARIF format output to a file.
+Save test output in SARIF format directly to the \<OUTPUT\_FILE\_PATH> file, regardless of whether or not you use the `--sarif` option. This is especially useful if you want to display the human-readable test output via stdout and at the same time save the SARIF format output to a file.
 
 ### `--severity-threshold=low|medium|high|critical`
 
@@ -123,16 +116,15 @@ Only report vulnerabilities of provided level or higher.
 
 Only fail when there are vulnerabilities that can be fixed.
 
-- `all`: fails when there is at least one vulnerability that can be either upgraded or patched.
-- `upgradable`: fails when there is at least one vulnerability that can be upgraded.
-- `patchable`: fails when there is at least one vulnerability that can be patched.
+* `all`: fails when there is at least one vulnerability that can be either upgraded or patched.
+* `upgradable`: fails when there is at least one vulnerability that can be upgraded.
+* `patchable`: fails when there is at least one vulnerability that can be patched.
 
 If vulnerabilities do not have a fix and this option is being used, tests will pass.
 
 ### `-- [<COMPILER_OPTIONS>]`
 
-Pass extra arguments directly to Gradle or Maven.
-E.g. `snyk test -- --build-cache`
+Pass extra arguments directly to Gradle or Maven. E.g. `snyk test -- --build-cache`
 
 Below are flags that are influencing CLI behavior for specific projects, languages and contexts:
 
@@ -144,12 +136,11 @@ Auto detects maven jars, aars, and wars in given directory. Individual testing c
 
 #### `--reachable`
 
-Analyze your source code to find which vulnerable
-functions and packages are called.
+Analyze your source code to find which vulnerable functions and packages are called.
 
 #### `--reachable-timeout=<TIMEOUT>`
 
-The amount of time (in seconds) to wait for Snyk to gather reachability data. If it takes longer than <TIMEOUT>, Reachable Vulnerabilities are not reported. This does not affect regular test or monitor output.
+The amount of time (in seconds) to wait for Snyk to gather reachability data. If it takes longer than , Reachable Vulnerabilities are not reported. This does not affect regular test or monitor output.
 
 Default: 300 (5 minutes).
 
@@ -175,12 +166,11 @@ Select certain values of configuration attributes to resolve the dependencies. E
 
 #### `--reachable`
 
-Analyze your source code to find which vulnerable
-functions and packages are called.
+Analyze your source code to find which vulnerable functions and packages are called.
 
 #### `--reachable-timeout=<TIMEOUT>`
 
-The amount of time (in seconds) to wait for Snyk to gather reachability data. If it takes longer than <TIMEOUT>, Reachable Vulnerabilities are not reported. This does not affect regular test or monitor output.
+The amount of time (in seconds) to wait for Snyk to gather reachability data. If it takes longer than , Reachable Vulnerabilities are not reported. This does not affect regular test or monitor output.
 
 Default: 300 (5 minutes).
 
@@ -236,8 +226,7 @@ Default: false
 
 Indicate which specific Python commands to use based on Python version. The default is `python` which executes your systems default python version. Run 'python -V' to find out what version is it. If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.
 
-Default: `python`
-Example: `--command=python3`
+Default: `python` Example: `--command=python3`
 
 #### `--skip-unresolved`=true|false
 
@@ -273,8 +262,9 @@ You can set these environment variables to change CLI settings.
 
 Snyk authorization token. Setting this envvar will override the token that may be available in your `snyk config` settings.
 
-[How to get your account token](https://snyk.co/ucT6J)<br />
-[How to use Service Accounts](https://snyk.co/ucT6L)<br />
+[How to get your account token](https://snyk.co/ucT6J)\
+[How to use Service Accounts](https://snyk.co/ucT6L)\
+
 
 ### `SNYK_CFG_KEY`
 
@@ -310,7 +300,7 @@ Allows you to specify a proxy to use for `https` and `http` calls. The `https` i
 
 Possible exit codes and their meaning:
 
-**0**: success, no vulns found<br />
-**1**: action_needed, vulns found<br />
-**2**: failure, try to re-run command<br />
-**3**: failure, no supported projects detected<br />
+**0**: success, no vulns found\
+**1**: action\_needed, vulns found\
+**2**: failure, try to re-run command\
+**3**: failure, no supported projects detected\
