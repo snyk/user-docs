@@ -1,6 +1,8 @@
 # Troubleshooting Broker
 
-**Note**: The most up-to-date and best resource on the Snyk broker can be found here: [https://github.com/snyk/broker](https://github.com/snyk/broker)&#x20;
+{% hint style="info" %}
+For more comprehensive troubleshooting information, see [Broker Troubleshooting FAQs](https://support.snyk.io/hc/en-us/articles/4404288846353-Broker-Troubleshooting).
+{% endhint %}
 
 ### Monitoring
 
@@ -24,17 +26,7 @@ The Broker client exposes an endpoint at `/systemcheck`, which can be used to va
 
 This endpoint responds with status code `200 OK` when the internal request is successful, and returns `{ ok: true }` in the response body. If the internal request fails, this endpoint responds with status code `500 Internal Server Error` and `{ ok: false }` in the response body.
 
-Can be tested by connecting to the broker and running  [http://localhost:8000/systemcheck](http://localhost:8000/systemcheck) (default settings)
-
-#### Additional Troubleshooting
-
-Please refer to the support site:
-
-* [https://support.snyk.io/hc/en-us/articles/360003903437-My-broker-is-not-working](https://support.snyk.io/hc/en-us/articles/360003903437-My-broker-is-not-working)
-* [https://support.snyk.io/hc/en-us/articles/4404288846353-Broker-Troubleshooting](https://support.snyk.io/hc/en-us/articles/4404288846353-Broker-Troubleshooting)
-
-\
-
+Can be tested by connecting to the broker and running  [http://localhost:8000/systemcheck](http://localhost:8000/systemcheck) (default settings).
 
 
 
