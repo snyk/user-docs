@@ -8,9 +8,9 @@ You can set the following environment variables to change CLI settings.
 
 `SNYK_TOKEN`
 
-Allows you to override the Snyk authorization token that may be available in your `snyk config` settings. Use `SNYK_TOKEN` in a CI/CD environment.\`
+Allows you to override the Snyk authorization token that may be available in your `snyk config` settings. Use `SNYK_TOKEN` in a CI/CD environment.
 
-More information: [How to get your account token](https://snyk.co/ucT6J) and [How to use Service Accounts](https://snyk.co/ucT6L)
+For information on how to get your account token see [Authentication for third-party tools](../user-and-group-management/authentication/authentication-for-third-party-tools.md). For more information see [Service accounts](../integrations/managing-integrations/service-accounts.md).
 
 `SNYK_CFG_<KEY>`
 
@@ -50,6 +50,4 @@ Disables all Snyk CLI analytics.
 
 Specifies the OAuth token if required for verification.
 
-More information
-
-[How can I use Snyk behind a proxy?](https://support.snyk.io/hc/en-us/articles/360000925358-How-can-I-use-Snyk-behind-a-proxy-)
+For more information see [How can I use Snyk behind a proxy?](https://support.snyk.io/hc/en-us/articles/360000925358-How-can-I-use-Snyk-behind-a-proxy-)
