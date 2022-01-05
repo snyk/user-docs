@@ -51,7 +51,7 @@ This integration works similar to our other integrations. To continue to monitor
 
 {% hint style="info" %}
 **Feature availability**\
-Integration with Azure Repos Cloud is available for all of our pricing plans. Integration with Azure DevOps Server 2020 and above (also known as TFS) is available with Enterprise and Business plans. See [**p**ricing plans](https://snyk.io/plans/) for more details.
+Integration with Azure Repos Cloud is available for all of our pricing plans. Integration with Azure DevOps Server 2020 and above (also known as TFS) is available with Enterprise and Business plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 Snyk integrates with Microsoft Azure Repos to enable you to import your projects and monitor the source code for your repositories. Snyk tests the projects you’ve imported for any known security vulnerabilities found in the application’s dependencies, testing at a frequency you control.
