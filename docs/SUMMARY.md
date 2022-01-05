@@ -208,10 +208,9 @@
 ## FEATURES
 
 * [Snyk CLI](features/snyk-cli/README.md)
-  * [Guides for our CLI](features/snyk-cli/guides-for-our-cli/README.md)
-    * [Getting started with the CLI](features/snyk-cli/guides-for-our-cli/getting-started-with-the-cli.md)
-    * [How to find vulnerabilities using the CLI](features/snyk-cli/guides-for-our-cli/how-to-find-vulnerabilities-using-the-cli.md)
-    * [CLI reference](features/snyk-cli/guides-for-our-cli/cli-reference.md)
+  * [Getting started with the CLI](features/snyk-cli/getting-started-with-the-cli.md)
+  * [How to find vulnerabilities using the CLI](features/snyk-cli/how-to-find-vulnerabilities-using-the-cli.md)
+  * [CLI reference](features/snyk-cli/cli-reference.md)
   * [Test for vulnerabilities](features/snyk-cli/test-for-vulnerabilities/README.md)
     * [How to use the log4shell command](features/snyk-cli/test-for-vulnerabilities/how-to-use-the-log4shell-command.md)
     * [Set severity thresholds for CLI tests](features/snyk-cli/test-for-vulnerabilities/set-severity-thresholds-for-cli-tests.md)
@@ -243,7 +242,7 @@
     * [Policy](features/snyk-cli/commands/policy.md)
     * [Test](features/snyk-cli/commands/test.md)
   * [Install the Snyk CLI](features/snyk-cli/install-the-snyk-cli/README.md)
-    * [Authenticate the CLI with your account](features/snyk-cli/install-the-snyk-cli/authenticate-the-cli-with-your-account.md)
+  * [Authenticate the CLI with your account](features/snyk-cli/authenticate-the-cli-with-your-account.md)
   * [Configure the Snyk CLI](features/snyk-cli/configure-the-snyk-cli.md)
 * [Snyk API](features/snyk-api-info/README.md)
   * [Authentication for API](features/snyk-api-info/authentication-for-api.md)
