@@ -53,7 +53,7 @@ Available top-level CLI commands:
 
 To see command-specific flags and usage, see `help` command, e.g. `snyk container --help`. For advanced usage, we offer language and context-specific flags, listed further down this document.
 
-`--all-projects` (only in `test` and `monitor` commands) Auto-detect all projects in the working directory
+`--all-projects` (only in `test` and `monitor` commands) Auto-detect all projects in the working directory (including Yarn workspaces)
 
 `--detection-depth=DEPTH` (only in `test` and `monitor` commands) Use with --all-projects or --yarn-workspaces to indicate how many subdirectories to search. `DEPTH` must be a number.\
 Default: 4 (the current working directory and 3 sub-directories)
@@ -160,7 +160,7 @@ Default: true
 
 `--strict-out-of-sync=true|false` Control testing out of sync lockfiles. Default: true
 
-`--yarn-workspaces`(only in `test` and `monitor` commands) Detect and scan yarn workspaces. You can specify how many sub-directories to search using `--detection-depth` and exclude directories using `--exclude`.
+`--yarn-workspaces`(only in `test` and `monitor` commands) Detect and scan Yarn workspaces. You can specify how many sub-directories to search using `--detection-depth` and exclude directories using `--exclude`. Alternatively scan Yarn workspaces alongside other projects using `--all-projects`
 
 ### CocoaPods options <a href="#cocoapods-options" id="cocoapods-options"></a>
 
