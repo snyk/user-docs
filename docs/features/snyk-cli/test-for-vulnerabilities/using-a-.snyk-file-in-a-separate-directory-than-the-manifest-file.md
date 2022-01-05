@@ -14,4 +14,3 @@ Below is an examples use cases of this.
 └── package.json **&lt;----**
 
 Current directory - manifest level
-
