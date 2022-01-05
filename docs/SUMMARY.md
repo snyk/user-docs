@@ -208,9 +208,9 @@
 ## FEATURES
 
 * [Snyk CLI](features/snyk-cli/README.md)
-  * [Getting started with the CLI](features/snyk-cli/getting-started-with-the-cli.md)
-  * [How to find vulnerabilities using the CLI](features/snyk-cli/how-to-find-vulnerabilities-using-the-cli.md)
-  * [CLI reference](features/snyk-cli/cli-reference.md)
+  * [Getting started with the CLI](features/snyk-cli/getting-started-with-the-cli/README.md)
+  * [How to find vulnerabilities using the CLI](features/snyk-cli/how-to-find-vulnerabilities-using-the-cli/README.md)
+  * [CLI reference](features/snyk-cli/cli-reference/README.md)
   * [Test for vulnerabilities](features/snyk-cli/test-for-vulnerabilities/README.md)
     * [How to use the log4shell command](features/snyk-cli/test-for-vulnerabilities/how-to-use-the-log4shell-command.md)
     * [Set severity thresholds for CLI tests](features/snyk-cli/test-for-vulnerabilities/set-severity-thresholds-for-cli-tests.md)
