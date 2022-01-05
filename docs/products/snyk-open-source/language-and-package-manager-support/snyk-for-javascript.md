@@ -69,14 +69,16 @@ Snyk supports resolutions only in Yarn v2. We do not support resolutions for Yar
 Yarn v1 & 2 workspaces support is for `snyk test` and `snyk monitor` commands only at this time.
 {% endhint %}
 
-For Yarn workspaces use the `--yarn-workspaces` flag to test and monitor your packages. The root lock file is referenced when scanning all the packages. Use the `--detection-depth` parameter to find sub-folders that are not auto-discovered by default.
+For Yarn workspaces use the `--all-projects` flag to test and monitor your packages alongside other projects or `--yarn-workspaces` to specifically scan Yarn workspaces projects only. The root lock file is referenced when scanning all the packages. Use the `--detection-depth` parameter to find sub-folders that are not auto-discovered by default.
 
 Example usage:\
-`snyk test --yarn-workspaces --strict-out-of-sync=false --detection-depth=6` which will scan only the packages that belong to any discovered workspaces this directly and 5 sub-directories deep.
+`snyk test --all-projects --strict-out-of-sync=false --detection-depth=6` which will scan the packages that belong to any discovered workspaces this directly and 5 sub-directories deep as well as any other projects detected.
+
+`snyk test --yarn-workspaces --strict-out-of-sync=false --detection-depth=6` which will scan only the Yarn workspace packages that belong to any discovered workspaces this directly and 5 sub-directories deep.
 
 You may use a common **.snyk** policy file if you maintain ignores/patches in one place to be applied for all detected workspaces by providing the policy path:
 
-`snyk test --yarn-workspaces --strict-out-of-sync=false --policy-path=src/.snyk`
+`snyk test --all-projects --strict-out-of-sync=false --policy-path=src/.snyk`
 
 ### Lerna
 
@@ -116,7 +118,9 @@ Use the following options to refine the scan:
 | `--fail-on`                        | **all**, upgradable, patchable                                       | <p>Configure when a test should be failed if there are vulnerabilities as follows:</p><ul><li>All-fail for all projects containing vulnerabilities</li><li>Upgradable-fail only for projects with vulnerabilities that can be fixed with package upgrades</li><li>Patchable-fail for projects with vulnerabilities that can be fixed with either upgrades or patches</li></ul> |
 | `--prune-repeated-subdependencies` | true, **false**                                                      | Use this flag if any big projects fail to be tested. Default is _false_                                                                                                                                                                                                                                                                                                        |
 | `--dev`                            | true, **false**                                                      | Set to true if Snyk should scan dev dependencies                                                                                                                                                                                                                                                                                                                               |
-| `--yarn-workspaces`                | **n/a**                                                              | <p>Provide this flag to signal that the scanned project is a Yarn workspace so the root level lockfile can be used for all packages.</p><p>Note: <code>snyk test</code> and<code>snyk monitor</code> commands only.</p>                                                                                                                                                        |
+| `--yarn-workspaces`                | **n/a**                                                              | <p>Provide this flag to only scan a Yarn workspace project where lockfile is in the root. By default `--all-projects` automatically detects and scans Yarn workspaces projects.</p><p>Note: <code>snyk test</code> and<code>snyk monitor</code> commands only.</p>                                                                                                                                                        |
+| `--all-projects`                | **n/a**                                                              | <p>Provide this flag to detect and scan all Node and other projects.</p><p>Note: <code>snyk test</code> and<code>snyk monitor</code> commands only.</p>                                                                                                                                                        |
+
 
 ## Git services for JavaScript projects
 
