@@ -6,7 +6,6 @@
 * [Bitbucket Pipelines integration](bitbucket-pipelines-integration-overview.md)
 * [CircleCI integration](circleci-integration-overview/)
 * [GitHub Actions integration](github-actions-integration.md)
-* [Bitbucket Pipelines integration](bitbucket-pipelines-integration.md)
 * [Jenkins integration](jenkins-integration-overview.md)
 * [Terraform Cloud integration](integrating-snyk-with-terraform-cloud.md)
 * [Maven integration](maven-plugin-integration.md)
