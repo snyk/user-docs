@@ -1,4 +1,4 @@
-# Unauthorized access or Resource does not exist : Dockerhub
+# Unauthorized access or Resource does not exist: Dockerhub
 
 **Problem Statement:** Import fails with the error _Unauthorized access or Resource does not exist_ when importing images from Docker Hub.
 

@@ -14,6 +14,6 @@
 
 ## Azure API endpoints used
 
-* To get the Projects from Azure :  `{Org}/_apis/projects`
+* To get the Projects from Azure:  `{Org}/_apis/projects`
 * To get the list of  the repo/s that correlate with the fetched/provided project list:  `{Project}/_apis/git/repositories`
 * To get the commits for the fetched/provided repo/s list:`{Project}/_apis/git/repositories/{Repo}/commits?$searchCriteria.fromDate={ThreeMonthsDate}`&#x20;

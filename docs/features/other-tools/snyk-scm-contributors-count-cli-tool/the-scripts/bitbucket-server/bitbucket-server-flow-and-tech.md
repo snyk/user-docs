@@ -14,6 +14,6 @@
 
 ## Bitbucket Server API endpoints used <a href="#bitbucket-cloud-api-endpoints-used" id="bitbucket-cloud-api-endpoints-used"></a>
 
-* To get the repositories from BB Cloud, if a workspace was **not** provided : `/rest/api/1.0/repos`
+* To get the repositories from BB Cloud, if a workspace was **not** provided: `/rest/api/1.0/repos`
 * To get the repositories from BB Cloud, if a workspace/s **was** provided: `/rest/api/1.0/projects/{Project}/repos`
 * To get the commits for the fetched/provided repo/s list: `/rest/api/1.0/projects/{Project}/repos/{Repo}/commits`

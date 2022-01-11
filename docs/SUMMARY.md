@@ -118,7 +118,7 @@
       * [Container security with DigitalOcean integration](products/snyk-container/image-scanning-library/digitalocean-image-scanning/container-security-with-digitalocean-integration.md)
       * [Scan container images from DigitalOcean in Snyk](products/snyk-container/image-scanning-library/digitalocean-image-scanning/scan-container-images-from-digitalocean-in-snyk.md)
     * [Docker Hub image scanning](products/snyk-container/image-scanning-library/docker-hub-image-scanning/README.md)
-      * [Unauthorized access or Resource does not exist : Dockerhub](products/snyk-container/image-scanning-library/docker-hub-image-scanning/unauthorized-access-or-resource-does-not-exist-dockerhub.md)
+      * [Unauthorized access or Resource does not exist: Dockerhub](products/snyk-container/image-scanning-library/docker-hub-image-scanning/unauthorized-access-or-resource-does-not-exist-dockerhub.md)
       * [Container security: integrate and test Docker Hub](products/snyk-container/image-scanning-library/docker-hub-image-scanning/container-security-integrate-and-test-docker-hub.md)
       * [Configure integration for Docker Hub](products/snyk-container/image-scanning-library/docker-hub-image-scanning/configure-integration-for-docker-hub.md)
       * [Docker Hub: add projects and images to the Snyk UI](products/snyk-container/image-scanning-library/docker-hub-image-scanning/docker-hub-add-projects-and-images-to-the-snyk-ui.md)

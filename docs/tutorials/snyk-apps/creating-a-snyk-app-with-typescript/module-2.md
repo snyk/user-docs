@@ -320,7 +320,7 @@ import { API_BASE, CLIENT_ID, CLIENT_SECRET, TOKEN_URL } from "../app";
 import { AuthData } from "../interfaces/DB";
 
 export function callSnykApi(tokenType: string, token: string, version: APIVersion): AxiosInstance {
-  const contentType = version === APIVersion.V1 ? "application/json" : "application/vnd.api+json";
+  const contentType = version === APIVersion.V1 ? "application/json": "application/vnd.api+json";
 
   const axiosInstance = axios.create({
     baseURL: `${API_BASE}/${version}`,
@@ -754,7 +754,7 @@ export async function refreshTokenReqInterceptor(request: AxiosRequestConfig): P
 ...
 
 export async function refreshTokenRespInterceptor(error: AxiosError): Promise<AxiosError> {
-  const status = error.response ? error.response.status : null;
+  const status = error.response ? error.response.status: null;
 
   // Only refresh & retry the token on 401 Unauthorized, in case the access-token is
   //  invalidated before it expires, such as the signing key being rotated in an emergency.

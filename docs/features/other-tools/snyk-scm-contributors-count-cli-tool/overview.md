@@ -17,12 +17,12 @@ This tool counts and prints a summary of the contributors count for the last 90 
 * Gitlab Server
 
 {% hint style="info" %}
-There are some minor differences between the SCMs as to the naming convention. For example : "Orgs" in Github can be "Projects" in Azure and "Workspaces" in Bitbucket. These differences are reflected in the commands that the tool accepts for each SCM.
+There are some minor differences between the SCMs as to the naming convention. For example: "Orgs" in Github can be "Projects" in Azure and "Workspaces" in Bitbucket. These differences are reflected in the commands that the tool accepts for each SCM.
 {% endhint %}
 
 ## **How it works**
 
-In two modes : **Scoping usage prior to onboarding** and **Snyk License Consumption**
+In two modes: **Scoping usage prior to onboarding** and **Snyk License Consumption**
 
 * **Scoping usage prior to onboarding:**  For users who want to onboard to Snyk and would like to get an estimate of the developer count across their SCMs**.**\
   In this mode, the tool fetches all the information from directly from the SCMs, using the credentials provided by the user.

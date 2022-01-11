@@ -54,7 +54,7 @@ Consider the following levels of usage and options:
     ```
     snyk-scm-contributors-count github-enterprise --token TOKEN --url HOST_URL --orgs ORG_ONE,ORG_TWO,ORG_THREE
     ```
-*   To get commits for only one repo in Github Enterprise : provide the Github Enterprise token, one org name and one repo name:
+*   To get commits for only one repo in Github Enterprise: provide the Github Enterprise token, one org name and one repo name:
 
     ```
     snyk-scm-contributors-count github-enterprise --token TOKEN --url HOST_URL --orgs ORG --repo REPO

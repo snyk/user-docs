@@ -14,6 +14,6 @@
 
 ## Github API endpoints used <a href="#azure-api-endpoints-used" id="azure-api-endpoints-used"></a>
 
-* To get the orgs from Github : `/user/orgs`
+* To get the orgs from Github: `/user/orgs`
 * To get the list of the repo/s that correlate with the fetched/provided orgs list: `/orgs/{Org}/repos`
 * To get the commits for the fetched/provided repo/s list: `repos/{Org}/{Repo}/commits?since={threeMonthsDate}`

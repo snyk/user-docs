@@ -16,6 +16,6 @@
 ### Gitlab API endpoints used <a href="#bitbucket-cloud-api-endpoints-used" id="bitbucket-cloud-api-endpoints-used"></a>
 
 * To get the groups paths from Gitlab if a group/s names were provided: `api/v4/groups?all_available=true&search={groupName}`
-* To get the projects from Gitlab if a host url was **not** provided : `/api/v4/projects?membership=true`
+* To get the projects from Gitlab if a host url was **not** provided: `/api/v4/projects?membership=true`
 * To get the projects from Gitlab Server if a host url **was** provided: `/api/v4/projects`
 * To get the commits for the fetched/provided project/s list: `/api/v4/projects/{ProjectPath}/repository/commits?since=${threeMonthsDate}`

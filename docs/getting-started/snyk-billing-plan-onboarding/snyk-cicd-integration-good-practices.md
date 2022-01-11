@@ -339,7 +339,7 @@ Among the most common flags used in a CI/CD integration are the following:
 
 **-- all-projects**: Auto-detect all projects in working directory
 
-**-p** : Prune dependency trees, removing duplicate sub-dependencies. Will still find all vulnerabilities, but potentially not all of the vulnerable paths.
+**-p**: Prune dependency trees, removing duplicate sub-dependencies. Will still find all vulnerabilities, but potentially not all of the vulnerable paths.
 
 **--org=ORG\_NAME**: Specify the ORG\_NAME to run Snyk commands tied to a specific organization. This will influence where will new projects be created after running monitor command, some features availability and private tests limits. If you have multiple organizations, you can set a default from the CLI using:
 
