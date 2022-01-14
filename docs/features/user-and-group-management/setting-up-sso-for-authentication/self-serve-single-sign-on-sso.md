@@ -2,7 +2,7 @@
 
 Group Admins of Business plan who use SAML for SSO can configure Snyk Single Sign-on by themselves.
 
-Ensure you have at least one group and organization to indicate where new users will be assigned. See [Groups, Organizations and Users](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/groups-organizations-and-users).
+Ensure you have at least one group and organization to indicate where new users will be assigned. See [Groups, Organizations and Users](../../../introducing-snyk/snyks-core-concepts/groups-organizations-and-users.md).
 
 ## Use SAML for SSO - Overview
 
