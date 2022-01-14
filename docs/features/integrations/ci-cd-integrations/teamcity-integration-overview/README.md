@@ -40,7 +40,7 @@ Use the Snyk plugin with your TeamCity projects to test and monitor your code fo
 
 Install or upgrade the Snyk Security plugin with these steps. Once complete, you’re all set to add a Snyk step to your projects.
 
-> ### Warning
+> #### Warning
 >
 > You must sign up for an account with Snyk before you begin.
 

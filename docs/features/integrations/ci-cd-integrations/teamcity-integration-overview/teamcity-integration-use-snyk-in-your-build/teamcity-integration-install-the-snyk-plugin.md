@@ -3,7 +3,7 @@
 Install or upgrade the Snyk Security plugin with these steps. Once complete, you’re all set to add a Snyk step to your projects.
 
 {% hint style="info" %}
-### Warning
+#### Warning
 
 You must sign up for an account with Snyk before you begin.
 {% endhint %}

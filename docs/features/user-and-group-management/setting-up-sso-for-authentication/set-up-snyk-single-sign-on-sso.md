@@ -8,13 +8,15 @@ Ensure you have at least one group and organization to indicate where new users 
 
 {% hint style="info" %}
 Once you have gathered the requested information (detailed below), create a support ticket to request SSO set up.
+
+For Business plan, Group Admins can configure Snyk Single Sign-On and [this guide](self-serve-single-sign-on-sso.md) details the steps.
 {% endhint %}
 
 ## Overview
 
 The process of establishing trust between your identity provider (IdP) and Snyk requires a few separate steps, coordinated between your SSO administrator and Snyk Support.
 
-* In your own identity provider platform, enter details about the Snyk environment and user attributes.&#x20;
+* In your own identity provider platform, enter details about the Snyk environment and user attributes.
 * Provide Snyk with details from your IdP.
 * Set up a user for testing and send Snyk the username and password for that user.
 * Use the link provided by Snyk to generate a payload.

@@ -356,6 +356,7 @@
     * [Choose a provisioning option](features/user-and-group-management/setting-up-sso-for-authentication/choose-a-provisioning-option.md)
     * [Set up Snyk Single Sign-On (SSO)](features/user-and-group-management/setting-up-sso-for-authentication/set-up-snyk-single-sign-on-sso.md)
     * [Identity Provider (IdP) migration](features/user-and-group-management/setting-up-sso-for-authentication/identity-provider-idp-migration.md)
+    * [Self Serve Single Sign-On(SSO)](features/user-and-group-management/setting-up-sso-for-authentication/self-serve-single-sign-on-sso.md)
   * [Managing users & permissions](features/user-and-group-management/managing-users-and-permissions/README.md)
     * [Manage users in your organizations](features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations.md)
     * [Managing permissions](features/user-and-group-management/managing-users-and-permissions/managing-permissions.md)
