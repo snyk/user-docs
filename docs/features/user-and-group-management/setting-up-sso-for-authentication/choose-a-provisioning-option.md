@@ -21,7 +21,7 @@ There are two ways to invite users to organizations. Invite members from the [Me
 
 If users who have not been invited use SSO to log in, they will gain access to Snyk, but they will not see any projects until an admin invites them or manually adds them to the organization(s). You can show a list of organizations with the appropriate contact person so that new users can [request access](https://docs.snyk.io/user-and-group-management/managing-users-and-permissions/organization-access-requests).
 
-## Custom
+## Custom Mapping
 
 {% hint style="info" %}
 **Feature availability**\
@@ -34,4 +34,4 @@ You can configure SSO differently for each of your different Snyk groups. You ca
 
 Work with your Customer Success Manager and Snyk Technical Services to prepare for implementing this SSO option.
 
-Speak to your sales rep to learn more about the custom SSO option.
+Speak to your sales rep to learn more about the Custom Mapping option.
