@@ -25,7 +25,7 @@ To configure this option, we expect you to send the `roles` array within the SAM
 
 * This role mapping will assign users with the Org Collaborator roles for all organizations underneath the specified group(s)
 * **groupID** is the ID string for a group in Snyk (This can be found in the snyk URL at the group level)
-  * How to find Group ID: https://app.snyk.io/group/\<Group ID> or Group dropdown -> ![](broken-reference) -> General -> Group ID
+  * How to find Group ID: https://app.snyk.io/group/\<Group ID> or Group dropdown -> ![](../../../.gitbook/assets/cog\_icon.png) -> General -> Group ID
 
 **3.** **{prefix}-{orgslug}-{role}**
 
