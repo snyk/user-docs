@@ -1,4 +1,4 @@
-# snyk container -- test container images for vulnerabilities
+# Container
 
 ## Usage
 
@@ -24,10 +24,11 @@ Capture the container image layers and dependencies and monitor for vulnerabilit
 
 Possible exit codes and their meaning:
 
-**0**: success, no vulnerabilities found<br />
-**1**: action_needed, vulnerabilities found<br />
-**2**: failure, try to re-run command<br />
-**3**: failure, no supported projects detected<br />
+**0**: success, no vulnerabilities found\
+**1**: action\_needed, vulnerabilities found\
+**2**: failure, try to re-run command\
+**3**: failure, no supported projects detected\
+
 
 ## Congifure the Snyk CLI
 

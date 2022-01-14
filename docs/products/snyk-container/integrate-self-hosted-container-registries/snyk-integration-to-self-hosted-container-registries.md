@@ -46,14 +46,14 @@ The Broker client provides the Agent with the connection details. The Agent uses
 
 {% hint style="info" %}
 **Note:**\
-The integration pattern using broker with open source container registries from the above list is designed for users who require images to be scanned in their own environment, instead of inside the Snyk service**.**\
+The integration pattern using broker with open source container registries from the above list is designed for users who require images to be scanned in their own environment, instead of inside the Snyk service\*\*.\*\*\
 If such a requirement is not relevant for you, you do not need the architecture described in this article, and can integrate to it in the standard way from the integrations page.
 {% endhint %}
 
 #### **Settings prerequisites**
 
 * Broker Client machine system requirements: 1 CPU, 256MB of RAM.
-* Container registry agent machine system requirements should be (given MAX\_ACTIVE\_OPERATIONS=1):&#x20;
+* Container registry agent machine system requirements should be (given MAX\_ACTIVE\_OPERATIONS=1):
   * CPU: 1 vcpu
   * Memory: 2Gb (should be reflected in node memory setting)
   * Storage: 5Gb
@@ -63,7 +63,7 @@ If such a requirement is not relevant for you, you do not need the architecture 
 * Container Registry Agent image can be found for download [here](https://hub.docker.com/r/snyk/container-registry-agent/tags?page=1\&ordering=last\_updated)
 
 {% hint style="info" %}
-### Scaling to adjust scan capacity
+#### Scaling to adjust scan capacity
 
 With the above configuration of 1 vCPU and 2GB RAM, scanning capacity would be approximately 160 images of \~350MB in one go. You can scale this up based on your image sizes, and in case you have a specific use case that doesn't allow scaling and doesn't fit the limitations, please contact our support team.
 {% endhint %}
@@ -72,12 +72,12 @@ With the above configuration of 1 vCPU and 2GB RAM, scanning capacity would be a
 
 ### **Running the broker client**
 
-The Broker Client image can be pulled from Docker Hub using the link provided above in the settings prerequisites.&#x20;
+The Broker Client image can be pulled from Docker Hub using the link provided above in the settings prerequisites.
 
 There are different environment variable that are required to configure the Broker Client:
 
 {% hint style="info" %}
-**Note:**&#x20;
+**Note:**
 
 For **DigitalOcean**, **GCR**, **Google Artifact Registry** and **Artifactory**, there are a few values to notice. For **ECR**, additional setup is required. [Specifications](snyk-integration-to-self-hosted-container-registries.md#container-registry-specific-configurations) to follow.
 {% endhint %}
@@ -133,7 +133,7 @@ To set up the Broker Client for those container registries, all the above applie
 
 #### **Artifactory**
 
-In case you are using **Repository path** as your Docker access method, the container registry hostname in `CR_BASE` variable should be set in this structure: **** `<your artifactory host>/artifactory/api/docker/<artifactory-repo-name>`
+In case you are using **Repository path** as your Docker access method, the container registry hostname in `CR_BASE` variable should be set in this structure: \*\*\*\* `<your artifactory host>/artifactory/api/docker/<artifactory-repo-name>`
 
 #### **ECR**
 
@@ -143,7 +143,7 @@ In case you are using **Repository path** as your Docker access method, the cont
 
 ECR setup requires two kinds of IAM resources to be created:
 
-* Container Registry Agent IAM Role / IAM User: an IAM Role / IAM User the Container Registry Agent uses to assume a cross-account role with access to ECR. It should have the following permissions:  `"sts:AssumeRole"`
+* Container Registry Agent IAM Role / IAM User: an IAM Role / IAM User the Container Registry Agent uses to assume a cross-account role with access to ECR. It should have the following permissions: `"sts:AssumeRole"`
 *   Snyk ECR Service Role: an IAM Role with access to ECR which is assumed by the Container Registry Agent IAM Role / IAM User to gain read-only access to ECR.\
     It should have the following permissions:
 
@@ -165,17 +165,15 @@ ECR setup requires two kinds of IAM resources to be created:
 
 **Setup steps for ECR**
 
-The above resources can be used as follows, so that a single Container Registry Agent instance can access ECR repositories located in different accounts**:**
+The above resources can be used as follows, so that a single Container Registry Agent instance can access ECR repositories located in different accounts\*\*:\*\*
 
-1.  **(Run this step once only)** Create the Container Registry Agent IAM Role / IAM User and use it to run the Container Registry Agent. The IAM Role / IAM User could be provided to the Container Registry Agent using one of the methods described [here](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html).&#x20;
-
-
+1.  **(Run this step once only)** Create the Container Registry Agent IAM Role / IAM User and use it to run the Container Registry Agent. The IAM Role / IAM User could be provided to the Container Registry Agent using one of the methods described [here](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html).
 
     **Run the following steps for each of your ECR accounts, using a separate broker instance for each ECR account:**
-2. In the AWS account where your ECR reside, create the Snyk ECR Service Role with read access to your ECR, and edit the trust relationship to allow this role to be assumed only by the specific Container Registry Agent IAM Role / IAM User created in the previous step.&#x20;
+2. In the AWS account where your ECR reside, create the Snyk ECR Service Role with read access to your ECR, and edit the trust relationship to allow this role to be assumed only by the specific Container Registry Agent IAM Role / IAM User created in the previous step.
 3. Restrict the Container Registry Agent IAM Role / IAM User to only be allowed to assume the your Snyk ECR Service Role(s).
 4. Provide the Broker Client with the Role ARN of the Snyk ECR Service Role together with the ECR region. The Broker Client passes this Role ARN to the Container Registry Agent, and the Container Registry Agent will assume it, to access your ECR. The following environment variables are needed:
-   * CR\_ROLE\_ARN=\<the role ARN of SnykEcrServiceRole>&#x20;
+   * CR\_ROLE\_ARN=\<the role ARN of SnykEcrServiceRole>
    * CR\_REGION=\<AWS Region of ECR>
    * CR\_EXTERNAL\_ID=\<Optional. An external ID found in the trust relationship condition>
 

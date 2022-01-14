@@ -1,6 +1,6 @@
 # Visual Studio Code extension
 
-&#x20;Use this documentation to get started with the Visual Studio Code extension.
+Use this documentation to get started with the Visual Studio Code extension.
 
 ## Supported languages
 
@@ -35,8 +35,8 @@ To authenticate follow the steps:
 2.  Click **Connect VS Code with Snyk**. The extension relies on the Snyk authentication API and it will ask you to authenticate you against Snyk’s web application:
 
     ![](<../../../.gitbook/assets/image (71) (1) (1).png>)
-3. Click **Authenticate**.&#x20;
-4.  After successful authentication, you will see a confirmation message:&#x20;
+3. Click **Authenticate**.
+4.  After successful authentication, you will see a confirmation message:
 
     ![](<../../../.gitbook/assets/image (85) (1).png>)
 5. Close the browser window and return to VS Code. VS Code is now reading and saving the authentication on your local machine.
@@ -76,7 +76,7 @@ Snyk Code has "Advanced" mode that allows you to control how scan is performed.
 
 To manually perform the analysis, in the configuration of the extension, you can enable Advanced Mode which enables you to control the scanning process:
 
-![](<../../../.gitbook/assets/image (78) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (78) (1) (1) (1) (1).png>)
 
 ## View analysis results
 
@@ -108,13 +108,13 @@ The editor window (in the middle of the results screen) shows the code that is i
 
 ### Snyk Code vulnerability window
 
-![](<../../../.gitbook/assets/image (76) (1) (1).png>)
+![](<../../../.gitbook/assets/image (76) (1) (1) (1).png>)
 
 The Snyk Suggestion panel (on the right of the results screen) shows the argumentation of the Snyk engine using for example variable names of your code and the line numbers in red. You can also see:
 
-* Links to external resources to explain the bug pattern in more detail (the **More info** link).&#x20;
-* Tags that were assigned by Snyk, such as **Security** (the issue found is a security issue), **Database** (it is related to database interaction), or **In Test** (the issue is within the test code).&#x20;
-* Code from open source repositories that might be of help to see how others fixed the issue.&#x20;
+* Links to external resources to explain the bug pattern in more detail (the **More info** link).
+* Tags that were assigned by Snyk, such as **Security** (the issue found is a security issue), **Database** (it is related to database interaction), or **In Test** (the issue is within the test code).
+* Code from open source repositories that might be of help to see how others fixed the issue.
 * You can add ignore comments that would make Snyk ignore this particular suggestion, or all of these suggestions for the whole file, by using the two buttons on the lower end of the panel.
 
 We also include a feedback mechanism to report false positives so you others do not see the same issue.
@@ -127,7 +127,7 @@ Editor window shows security vulnerabilities in open source modules while you co
 
 ![](../../../.gitbook/assets/oss-editor-vulnerability-count.png)
 
-* Code inline vulnerability counts are also shown in your `package.json` file:&#x20;
+* Code inline vulnerability counts are also shown in your `package.json` file:
 
 ![](../../../.gitbook/assets/oss-editor-pjson.png)
 

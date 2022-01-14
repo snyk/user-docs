@@ -1,4 +1,4 @@
-# snyk log4shell -- find Log4Shell vulnerability
+# Log4shell
 
 ## Usage
 
@@ -18,9 +18,10 @@ For information about `snyk test --scan-all-unmanaged`, see the Maven options se
 
 Possible exit codes and their meaning:
 
-**0**: success, Log4Shell not found<br />
-**1**: action_needed, Log4Shell found<br />
-**2**: failure, try to re-run command<br />
+**0**: success, Log4Shell not found\
+**1**: action\_needed, Log4Shell found\
+**2**: failure, try to re-run command\
+
 
 ## Debug
 

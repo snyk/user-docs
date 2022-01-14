@@ -1,4 +1,4 @@
-# snyk test -- test a project for open source vulnerabilities and license issues
+# Test
 
 ## Usage
 
@@ -12,10 +12,11 @@ The `snyk test` command checks projects for open source vulnerabilities and lice
 
 Possible exit codes and their meaning:
 
-**0**: success, no vulnerabilities found<br />
-**1**: action_needed, vulnerabilities found<br />
-**2**: failure, try to re-run command<br />
-**3**: failure, no supported projects detected<br />
+**0**: success, no vulnerabilities found\
+**1**: action\_needed, vulnerabilities found\
+**2**: failure, try to re-run command\
+**3**: failure, no supported projects detected\
+
 
 ## Configure the Snyk CLI
 
@@ -69,7 +70,7 @@ Default: scan only production dependencies.
 
 ### `--org=<ORG_NAME>`
 
-Specify the <ORG_NAME> to run Snyk commands tied to a specific organization. The <ORG_NAME> influences some features availability and private test limits.
+Specify the \<ORG\_NAME> to run Snyk commands tied to a specific organization. The \<ORG\_NAME> influences some features availability and private test limits.
 
 If you have multiple organizations, you can set a default from the CLI using:
 
@@ -97,8 +98,7 @@ Apply and use ignore rules from the Snyk policies your dependencies; otherwise i
 
 Display the dependency paths from the top level dependencies down to the vulnerable packages. Does not affect output when using JSON `--json` output.
 
-Default: `some` (a few example paths shown).
-`false` is an alias for `none`.
+Default: `some` (a few example paths shown). `false` is an alias for `none`.
 
 ### `--project-name=<PROJECT_NAME>`
 
@@ -128,7 +128,7 @@ Return results in SARIF format.
 
 ### `--sarif-file-output=<OUTPUT_FILE_PATH>`
 
-Save test output in SARIF format directly to the <OUTPUT_FILE_PATH> file, regardless of whether or not you use the `--sarif` option.
+Save test output in SARIF format directly to the \<OUTPUT\_FILE\_PATH> file, regardless of whether or not you use the `--sarif` option.
 
 This is especially useful if you want to display the human-readable test output using stdout and at the same time save the SARIF format output to a file.
 
@@ -140,9 +140,9 @@ Report only vulnerabilities at the specified level or higher.
 
 Fail only when there are vulnerabilities that can be fixed.
 
-- `all`: fail when there is at least one vulnerability that can be either upgraded or patched.
-- `upgradable`: fail when there is at least one vulnerability that can be upgraded.
-- `patchable`: fail when there is at least one vulnerability that can be patched.
+* `all`: fail when there is at least one vulnerability that can be either upgraded or patched.
+* `upgradable`: fail when there is at least one vulnerability that can be upgraded.
+* `patchable`: fail when there is at least one vulnerability that can be patched.
 
 If vulnerabilities do not have a fix and this option is being used, tests pass.
 
@@ -246,8 +246,7 @@ Default: false
 
 Indicate which specific Python commands to use based on Python version. The default is `python` which executes your default python version. Run 'python -V' to find out what version it is. If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.
 
-Default: `python`
-Example: `--command=python3`
+Default: `python` Example: `--command=python3`
 
 ### `--skip-unresolved=true|false`
 

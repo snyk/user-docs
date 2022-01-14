@@ -1,4 +1,4 @@
-# snyk iac -- find security issues in Infrastructure as Code files
+# IAC
 
 ## Usage
 
@@ -18,10 +18,11 @@ Test for any known issue.
 
 Possible exit codes and their meaning:
 
-**0**: success, no vulnerabilities found<br />
-**1**: action_needed, vulnerabilities found<br />
-**2**: failure, try to re-run command<br />
-**3**: failure, no supported projects detected<br />
+**0**: success, no vulnerabilities found\
+**1**: action\_needed, vulnerabilities found\
+**2**: failure, try to re-run command\
+**3**: failure, no supported projects detected\
+
 
 ## Configure the Snyk CLI
 
@@ -43,7 +44,7 @@ Example: `--detection-depth=3` limits search to the specified directory (or the 
 
 ### `--org=<ORG_NAME>`
 
-Specify the `<ORG_NAME>` to run Snyk commands tied to a specific organization. The <ORG_NAME> influences private test limits.
+Specify the `<ORG_NAME>` to run Snyk commands tied to a specific organization. The \<ORG\_NAME> influences private test limits.
 
 If you have multiple organizations, you can set a default from the CLI using:
 
@@ -77,7 +78,7 @@ Return results in SARIF format.
 
 ### `--sarif-file-output=<OUTPUT_FILE_PATH>`
 
-Save test output in SARIF format directly to the <OUTPUT_FILE_PATH> file, regardless of whether or not you use the `--sarif` option.
+Save test output in SARIF format directly to the \<OUTPUT\_FILE\_PATH> file, regardless of whether or not you use the `--sarif` option.
 
 This is especially useful if you want to display the human-readable test output using stdout and at the same time save the SARIF format output to a file.
 
@@ -89,22 +90,19 @@ Report only vulnerabilities at the specified level or higher.
 
 Use this dedicated option for Terraform plan scanning modes to control whether the scan analyze the full final state (for example, `planned-values`), or the proposed changes only (for example, `resource-changes`).
 
-Default: If the `--scan` option is not specified, scan the proposed changes only by default.
-Example 1: `--scan=planned-values` (full state scan)
-Example 2: `--scan=resource-changes` (proposed changes scan)
+Default: If the `--scan` option is not specified, scan the proposed changes only by default. Example 1: `--scan=planned-values` (full state scan) Example 2: `--scan=resource-changes` (proposed changes scan)
 
 ### `--rules=<PATH_TO_CUSTOM_RULES_BUNDLE>`
 
 Use this dedicated option for Custom Rules scanning to enable the IaC scans to use a custom rules bundle generated with the `snyk-iac-rules` SDK. See [Download learn how to use the SDK](https://github.com/snyk/snyk-iac-rules).
 
-This option cannot be used if the custom rules settings were configured with the Snyk UI.
-Default: If the `--rules` flag is not specified, scan the configuration files using the internal Snyk rules only.
+This option cannot be used if the custom rules settings were configured with the Snyk UI. Default: If the `--rules` flag is not specified, scan the configuration files using the internal Snyk rules only.
 
 Example: `--rules=bundle.tar.gz` (Scan the configuration files using custom rules and internal Snyk rules.)
 
 ## Examples for the iac test command
 
-[For more information see [Synk CLI for Infrastructure as Code](https://docs.snyk.io/products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code).
+\[For more information see [Synk CLI for Infrastructure as Code](https://docs.snyk.io/products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code).
 
 ### Test a CloudFormation file
 
@@ -120,9 +118,7 @@ Example: `--rules=bundle.tar.gz` (Scan the configuration files using custom rule
 
 ### Test a Terraform plan file
 
-`$ terraform plan -out=tfplan.binary`
-`$ terraform show -json tfplan.binary > tf-plan.json`
-`$ snyk iac test tf-plan.json`
+`$ terraform plan -out=tfplan.binary` `$ terraform show -json tfplan.binary > tf-plan.json` `$ snyk iac test tf-plan.json`
 
 ### Test an ARM file
 
