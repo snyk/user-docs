@@ -37,8 +37,6 @@ Once installed, you need to authenticate with your Snyk account:
 snyk auth
 ```
 
-![](../../../.gitbook/assets/uuid-7f427e54-45f8-910e-98c5-2016a27d29b0-en.gif)
-
 To test your installation change directory into a folder containing a supported package manifest file (package.json, pom.xml, composer.lock, etc.) and run:
 
 ```
@@ -231,7 +229,7 @@ You can authorize Snyk CLI in your CI/CD programmatically:
 
 Use one of our integrations to stay secure.
 
-Snyk is really powerful when you are continuously scanning and monitoring your projects for vulnerabilities.&#x20;
+Snyk is really powerful when you are continuously scanning and monitoring your projects for vulnerabilities.
 
 #### Add Snyk to your CI/CD
 
