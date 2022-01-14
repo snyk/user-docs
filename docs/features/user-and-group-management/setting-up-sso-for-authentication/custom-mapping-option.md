@@ -9,7 +9,7 @@ This option allows you to dynamically assign users to your Snyk group(s) and org
 
 ### Understanding roles array mapping
 
-Within the IdP, you must first pass a custom mapping called `roles` as a string array. [Here](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/c/qLBSvel1b5sJtNLtdoqj/features/user-and-group-management/setting-up-sso-for-authentication/set-up-snyk-single-sign-on-sso/example-setting-up-custom-mapping-for-okta) is an example document on configuring custom mapping on Okta. Refer to your IdP documentation on how to configure custom mappings for additional IdP providers.  &#x20;
+Within the IdP, you must first pass a custom mapping called `roles` as a string array. [Here is an example document on configuring custom mapping on Okta](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/example-setting-up-custom-mapping-for-okta). Refer to your IdP documentation on how to configure custom mappings for additional IdP providers.  &#x20;
 
 ### How Snyk handles roles array mapping
 
