@@ -355,6 +355,8 @@
     * [Introduction to Snyk Single Sign-On (SSO)](features/user-and-group-management/setting-up-sso-for-authentication/introduction-to-snyk-single-sign-on-sso.md)
     * [Choose a provisioning option](features/user-and-group-management/setting-up-sso-for-authentication/choose-a-provisioning-option.md)
     * [Set up Snyk Single Sign-On (SSO)](features/user-and-group-management/setting-up-sso-for-authentication/set-up-snyk-single-sign-on-sso.md)
+    * [Custom Mapping Option](features/user-and-group-management/setting-up-sso-for-authentication/custom-mapping-option.md)
+    * [Example: Setting up custom mapping for Okta](features/user-and-group-management/setting-up-sso-for-authentication/example-setting-up-custom-mapping-for-okta.md)
     * [Identity Provider (IdP) migration](features/user-and-group-management/setting-up-sso-for-authentication/identity-provider-idp-migration.md)
     * [Self Serve Single Sign-On(SSO)](features/user-and-group-management/setting-up-sso-for-authentication/self-serve-single-sign-on-sso.md)
   * [Managing users & permissions](features/user-and-group-management/managing-users-and-permissions/README.md)
