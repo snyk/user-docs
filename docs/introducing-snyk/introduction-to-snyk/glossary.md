@@ -28,7 +28,7 @@ Continuous integration (CI), continuous delivery (CD) and continuous deployment 
 
 ### CLI
 
-Command Line Interface. See [Snyk CLI](glossary.md).
+Command Line Interface. See [Snyk CLI](glossary.md#snyk-cli).
 
 ### Cloud Native Application Security
 
