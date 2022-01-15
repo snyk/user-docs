@@ -21,8 +21,7 @@ Possible exit codes and their meaning:
 **0**: success, no vulnerabilities found\
 **1**: action\_needed, vulnerabilities found\
 **2**: failure, try to re-run command\
-**3**: failure, no supported projects detected\
-
+**3**: failure, no supported projects detected\\
 
 ## Configure the Snyk CLI
 
@@ -88,7 +87,7 @@ Report only vulnerabilities at the specified level or higher.
 
 ### `--scan=<TERRAFORM_PLAN_SCAN_MODE>`
 
-Use this dedicated option for Terraform plan scanning modes to control whether the scan analyze the full final state (for example, `planned-values`), or the proposed changes only (for example, `resource-changes`).
+Use this dedicated option for Terraform plan scanning modes to control whether the scan analyzes the full final state (for example, `planned-values`), or the proposed changes only (for example, `resource-changes`).
 
 Default: If the `--scan` option is not specified, scan the proposed changes only by default. Example 1: `--scan=planned-values` (full state scan) Example 2: `--scan=resource-changes` (proposed changes scan)
 
