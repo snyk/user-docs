@@ -1,4 +1,4 @@
-# snyk ignore -- modify the .snyk policy to ignore stated issues
+# Ignore
 
 ## Usage
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-The `snyk ignore` command modifies the `.snyk` policy file to ignore a certain issue, according to its snyk ID for all occurrences. This updates your local `.snyk` file to contain a block similar to the following:
+The `snyk ignore` command modifies the `.snyk` policy file to ignore a stated issue, according to its snyk ID for all occurrences. This updates your local `.snyk` file to contain a block similar to the following:
 
 ```yaml
 ignore:
