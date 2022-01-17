@@ -26,7 +26,9 @@ Follows the flow of data within the application from the source to the sink. Com
 
 ### **API usage**
 
-Using open source or framework documentation to learn how functions need to be used can identify API misuse such as using the wrong parameter type or calling with the wrong value range. This mechanism can also identify use of insecure functions.
+
+
+Identifies multiple potential issues including API misuses, null dereferences, and type mismatches by modelling the usage of memory in variables and references. This mechanism can also identify use of insecure functions.
 
 ### **Control Flow**
 
