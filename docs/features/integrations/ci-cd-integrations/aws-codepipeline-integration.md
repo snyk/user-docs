@@ -3,7 +3,7 @@
 Snyk integrates seamlessly with AWS CodePipeline to scan your application for open source security vulnerabilities and help you deliver secure applications via continuous delivery service. This integration allows CodePipeline users to make security an automated part of their build, test, and deploy phases.
 
 {% hint style="info" %}
-This integration is currently available in AWS’s `sa-east-1 `| `ca-central-1` | `ap-southeast-2` | `ap-south-1` | `ap-northeast-2` | `ap-northeast-1` | `eu-west-3` | `eu-west-1` | `eu-north-1` | `us-east-1` | `us-west-2` | `eu-west-2` | `eu-central-1 `regions. We are actively working on expanding to additional regions soon!
+This integration is currently available in AWS’s `sa-east-1` | `ca-central-1` | `ap-southeast-2` | `ap-south-1` | `ap-northeast-2` | `ap-northeast-1` | `eu-west-3` | `eu-west-1` | `eu-north-1` | `us-east-1` | `us-west-2` | `eu-west-2` | `eu-central-1` regions. We are actively working on expanding to additional regions soon!
 {% endhint %}
 
 ## Language Support
@@ -103,29 +103,28 @@ Select how you would like to authenticate with Snyk to give AWS CodePipeline per
 
 The following options are available for configuration:
 
-![](../../../.gitbook/assets/configure.png)
+![Snyk AWS CodePipeline Configurations](../../../.gitbook/assets/Snyk\_AWS\_CodePipeline\_Config\_y\_CodePipeline\_-\_AWS\_Developer\_Tools\_png.png)
 
-![](<../../../.gitbook/assets/image8 (1).png>)
+* **Snyk Organization:** Select the Snyk organization where findings reports are saved.
+* **Vulnerability handling**: To define the pipeline behaviour if a vulnerability is found. If the `Block deployment when Snyk finds an error` checkbox is checked, the pipeline will fail and not proceed to the next stage in the CodePipeline.
+* **Block deployment for vulnerabilities with a minimum severity of**: (**low**|**medium**|**high**|**critical**) Only report vulnerabilities of provided level or higher.
+*   **Monitoring behaviour on build**: Set the criteria to monitor projects from the AWS CodePipeline. The available options are:
 
-1. **Snyk Organization:** Select the Snyk organization where findings reports are saved.&#x20;
-2. **Vulnerability handling**: Select to fail a pipeline if a vulnerability is found. If Fail on issues is selected, the pipeline will fail depending on the sub-options selected. The sub options available are:&#x20;
-   1. **All**: Selecting all fails when there is at least one vulnerability that can be either upgraded or patched.&#x20;
-   2. **Upgradable**: Selecting upgradable fails when there is at least one vulnerability that can be upgraded.&#x20;
-   3. **Patchable**: Selecting patchable fails when there is at least one vulnerability that can be patched.&#x20;
-3. **Block deployment for vulnerabilities of type**&#x20;
-4. **Block deployment for vulnerabilities with a minimum severity of**: (**low**|**medium**|**high**|**critical**) Only report vulnerabilities of provided level or higher.
-5. **Snyk Organization:** Select the Snyk organization where findings reports are saved.
-6. **Vulnerability handling**: Select to fail a pipeline if a vulnerability is found. If Fail on issues is selected, the pipeline will fail depending on the sub-options selected. The sub options available are:&#x20;
-   * **Block deployment for vulnerabilities of type:**
-     * **All**: Selecting all fails when there is at least one vulnerability that can be either upgraded or patched.&#x20;
-     * **Upgradable**: Selecting upgradable fails when there is at least one vulnerability that can be upgraded.&#x20;
-     * **Patchable**: Selecting patchable fails when there is at least one vulnerability that can be patched.&#x20;
-   * **Block deployment for vulnerabilities with a minimum severity of**: (**low**|**medium**|**high**|**critical**) Only report vulnerabilities of provided level or higher.
-7. **Monitor project**: Select the monitor project checkbox to monitor projects from the AWS CodePipeline. The project snapshot will be created under the Snyk organization selected. Whenever you select the Monitor Project option please note that the Project Group Name will be required. This is to prevent any unintentional project overrides due to naming conflicts.
-8. **Project Group Name:** Enter the project group name for your projects.. This is the same as using [--remote-repo-url](https://support.snyk.io/hc/en-us/articles/360000910677-Snyk-CLI-monitored-projects-are-created-with-IDs-in-the-project-name) when using the CLI. The field does not allow any spaces in the names.
+    * **Always monitor**: The project snapshot is created independent of the test result.
+    * **When test fails**: The project snapshot is created only in case the test fails.
+    * **When test passes**: The project snapshot is created only when test is successful.
+    * **Never monitor**: The project snapshot is never created.
+
+    Unless the _**Never monitor**_ option is selected, please note that the _**Project to monitor**_ field is mandatory. This is to prevent any unintentional project overrides due to naming conflicts. The report is created associated with the selected _**Snyk organization**_.
+* **Project to monitor**: Project group name for your projects. This is the same as using [remote-repo-url](https://support.snyk.io/hc/en-us/articles/360000910677-Snyk-CLI-monitored-projects-are-created-with-IDs-in-the-project-name) when using the CLI. The field does not allow any spaces in the names. It’s mandatory except if the `Never monitor` has been chosen in the previous field.
+* **Auto-detect all projects in the working directory**: Check this checkbox to auto-detect all projects in the AWS CodePipeline. If not selected the plugin will test the first project is finds. Under the hood, it uses the `--all-projects` argument to detect all projects.
+* **Advanced Options** (all of them are optional):
+  * **Excluded directories**: This option will only appear when _**Auto-detect all projects**_ is checked. Indicate sub-directories to exclude, the directories must be comma-separated.
+  * **Custom path to manifest file to test**: This option will only appear when the _**Auto-detect all projects**_ is not checked. You can specify the file path to manifest that Snyk should scan. When omitted Snyk will try to auto-detect the manifest file for your project.
+  * **Additional Arguments:** A number of additional arguments are allowed, which will be applied to the test and monitor. The commands are as follows: `--dev`, `--detection-depth`, `--prune-repeated-subdependencies`, `--strict-out-of-sync`, `--yarn-workspaces`, `--skip-unresolved`. For more information on these commands, see [CLI Reference](https://docs.snyk.io/features/snyk-cli/cli-reference).
 
 {% hint style="info" %}
-You can change the Configuration settings of a previously-configured stage, by clicking on the **Snyk** link.
+To change the configuration settings of a previously-configured stage, click the **Snyk** link.
 {% endhint %}
 
 Confirm the connection to Snyk when prompted.
