@@ -1,7 +1,7 @@
 # Snyk settings
 
-Click the Settings icon (![](../../.gitbook/assets/cog\_icon.png)) from the top menu bar, to view and edit Snyk settings for your organization:
+상단 메뉴 바의 설정 아이콘(![](../../.gitbook/assets/cog\_icon.png))을 클릭하여 Snyk 설정을 편집합니다.
 
 ![](../../.gitbook/assets/screenshot\_2021-07-19\_at\_15.52.02.png)
 
-See [Managing settings](../../features/user-and-group-management/managing-settings/) for more details.
+자세한 내용은 설정 관리를 참조하세요.
