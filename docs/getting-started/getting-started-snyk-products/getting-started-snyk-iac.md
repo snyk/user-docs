@@ -3,7 +3,7 @@
 Get started with Snyk IaC to inspect, find and fix issues in configuration files for Terraform or Kubernetes (including Helm) environments. For more information, see [Scan Kubernetes configuration files](../../products/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/) and [Scan Terraform files](../../products/snyk-infrastructure-as-code/scan-terraform-files/).
 
 {% hint style="info" %}
-This article describes a process using the Snyk.io UI. For details of using IaC with the Snyk CLI, see [Snyk CLI for Infrastructure as Code](../../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/).
+This article describes a process using the Snyk.io UI. For details of using IaC with the Snyk CLI, see [snyk-cli-for-infrastructure-as-code](../../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/ "mention").
 {% endhint %}
 
 ## **Prerequisites**
@@ -25,8 +25,8 @@ Import projects to test with Snyk, by choosing repositories for Snyk to test and
 
 1. Select **Projects** from Snyk.io.
 2. Select the tool to add the project from (for example GitHub).
-3. In **Personal and Organization repositories**, select the repositories to use.&#x20;
-4. Click **Add selected repositories** to import the selected repositories into your projects.&#x20;
+3. In **Personal and Organization repositories**, select the repositories to use.
+4. Click **Add selected repositories** to import the selected repositories into your projects.
 5. A progress bar appears: click **View log** to see import log results (you can scan both Kubernetes and Terraform files simultaneously)
 6. Project import completes.
 
@@ -53,7 +53,7 @@ If you encounter any errors during import, see [Importing projects](https://supp
 Act on the recommendations produced by Snyk IaC.
 
 1. IaC results appear as direct issues in the relevant scanned configuration files.
-2. Click on an issue to see the details for that issue, and specific recommendations from Snyk IaC.&#x20;
+2. Click on an issue to see the details for that issue, and specific recommendations from Snyk IaC.
 3. Edit the configuration file to fix the issue identified, based on the recommendations, then commit the change.
 4. Snyk automatically rescans the changed file, and you can see the change reflected in the issue display.
 

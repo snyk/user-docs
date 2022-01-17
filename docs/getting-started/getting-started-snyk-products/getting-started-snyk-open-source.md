@@ -9,13 +9,13 @@ You can also use an [IDE tool](https://docs.snyk.io/integrations/ide-tools) or a
 
 ### **Using the CLI tool**
 
-The [Snyk CLI tool](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli) allows you to get started using the command line - for example, to install on npm:
+The [snyk-cli](../../features/snyk-cli/ "mention") allows you to get started using the command line - for example, to install on npm:
 
 ```
 npm install -g snyk
 ```
 
-See [Getting started with the CLI](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli) for details.
+See [getting-started-with-the-cli](../../features/snyk-cli/getting-started-with-the-cli/ "mention") for details.
 
 #### **Prerequisites**
 
@@ -34,7 +34,7 @@ Choose a source code integration, to allow Snyk to work on a project.
 
 1. Log in to Snyk.io.
 2. Select **Integrations > Source control**.
-3. Click the source control system (for example, GitHub) to integrate with Snyk. 
+3. Click the source control system (for example, GitHub) to integrate with Snyk.
 4. Fill in the account credentials as prompted (or authenticate with your account in GitHub), to grant Snyk access permissions for integration.
 
 See [DevOps integrations & languages](https://docs.snyk.io/introducing-snyk/introduction-to-snyk/integrations-and-languages) for more details
@@ -47,9 +47,9 @@ Add projects to test with Snyk, by choosing repositories for Snyk to test and mo
 2. Select the tool to add the project from (for example GitHub).
 3. In **Personal and Organization repositories**, select the repositories to use.
 4. Click **Add selected repositories** to import the selected repositories into your projects. This also:
-   1. Sets Snyk to run a regular check (daily by default) for vulnerabilities. 
-   2. Creates a Webhook, so when you change code, Snyk tests your pull / merge requests, to check that new dependencies do not introduce more vulnerabilities. 
-5. A progress bar appears: click **View log** to see log results. 
+   1. Sets Snyk to run a regular check (daily by default) for vulnerabilities.
+   2. Creates a Webhook, so when you change code, Snyk tests your pull / merge requests, to check that new dependencies do not introduce more vulnerabilities.
+5. A progress bar appears: click **View log** to see log results.
 6. Project import completes.
 
 {% hint style="info" %}
@@ -63,7 +63,7 @@ You can now view vulnerability results for imported projects. The **Projects** t
 1. Click on an imported project to see vulnerability information for that project, including the number of issues found, grouped by severity level (see screenshot below)
 2. Click on an entry to open the issues view for that entry, including the module, where it was introduced, and how to fix it, plus more details about the vulnerability itself:
 
-![](<../../.gitbook/assets/view_vulns\_\_overview (1).png>)
+![](<../../.gitbook/assets/view\_vulns\_\_overview (1).png>)
 
 ![](<../../.gitbook/assets/detailed-vuln-information (3) (4) (4) (4) (6) (7) (5) (1) (4).png>)
 

@@ -3,7 +3,7 @@
 Get started with Snyk Container to help you find and fix vulnerabilities in container images. See [Container security overview](https://support.snyk.io/hc/en-us/articles/360003946897-Container-security-overview) and [Snyk Container](https://solutions.snyk.io/snyk-academy/container) for details.
 
 {% hint style="info" %}
-This process uses the Snyk.io UI. For details of Snyk Container using the Snyk CLI (Command-Line Interface) tool, see **Snyk CLI for container security** and **Test your container images with our CLI tool**.
+This process uses the Snyk.io UI. For details of Snyk Container using the Snyk CLI (Command-Line Interface) tool, see [snyk-cli-for-container-security](../../products/snyk-container/snyk-cli-for-container-security/ "mention").
 {% endhint %}
 
 ### Prerequisites
@@ -29,8 +29,8 @@ Choose a container registry integration, to connect the registry with Snyk:
 
 Add projects for your selected container, to start scanning with Snyk.
 
-1. Click **Add Project**, and select the integration registry entry to add from:&#x20;
-2. Select the container repository and tags to import, then click **Add selected repositories** to import them into your projects. Importing also sets Snyk to run a daily check on the repositories for vulnerabilities.&#x20;
+1. Click **Add Project**, and select the integration registry entry to add from:
+2. Select the container repository and tags to import, then click **Add selected repositories** to import them into your projects. Importing also sets Snyk to run a daily check on the repositories for vulnerabilities.
 3. A progress bar appears: click **View log** to see log results.
 
 {% hint style="info" %}
