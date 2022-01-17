@@ -81,7 +81,7 @@
     * [Snyk Code Local Engine](products/snyk-code/deployment-options/snyk-code-local-engine/README.md)
       * [Introduction](products/snyk-code/deployment-options/snyk-code-local-engine/introduction.md)
       * [Configure and deploy Local Engine](products/snyk-code/deployment-options/snyk-code-local-engine/configure-and-deploy-local-engine.md)
-    * [CLI and IDE](products/snyk-code/deployment-options/cli-and-ide.md)
+      * [CLI and IDE](products/snyk-code/deployment-options/snyk-code-local-engine/cli-and-ide.md)
 * [Snyk Container](products/snyk-container/README.md)
   * [Snyk Container security basics](products/snyk-container/snyk-container-security-basics/README.md)
     * [How Snyk Container works](products/snyk-container/snyk-container-security-basics/how-snyk-container-works.md)
