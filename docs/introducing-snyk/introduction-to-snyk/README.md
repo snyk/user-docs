@@ -1,16 +1,16 @@
-# Introduction to Snyk
+# Snyk 소개
 
-Snyk tests for vulnerabilities in [your own code](https://snyk.io/product/snyk-code/), [open source dependencies](https://docs.snyk.io/snyk-open-source), [Container images](https://docs.snyk.io/snyk-container), and [Infrastructure as Code (IaC) configurations](https://snyk.io/product/infrastructure-as-code-security/), and offers context, prioritization, and fixes.
+Snyk은 [소스코드](https://snyk.io/product/snyk-code/), [오픈소스 디펜던시](https://docs.snyk.io/snyk-open-source), [컨테이너 이미지](https://docs.snyk.io/snyk-container) 및  [Infrastructure as Code (IaC) 구성](https://snyk.io/product/infrastructure-as-code-security/)의 취약점을 테스트하고 컨텍스트, 우선순위 지정 및 수정 사항을 제공합니다.
 
-## Supported languages and integrations
+## 지원되는 언어 및 통합
 
-Snyk supports a range of languages including: JavaScript, Java (Gradle, Maven), .NET, Python, Golang, Swift, Objective-C (CocoaPods), Scala, Ruby, PHP, and Bazel. [See more details](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support).
+Snyk은 JavaScript, Java (Gradle, Maven), .NET, Python, Golang, Swift, Objective-C (CocoaPods), Scala, Ruby, PHP, Bazel을 포함한 다양한 언어를 지원합니다. [자세한 내용 보기](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support).
 
-Taking a developer-first approach to security, [Snyk integrates](https://docs.snyk.io/integrations) with leading IDE, repository, CI/CD, runtime, registry, and issue management tools.
+개발자 우선 보안 방식을 채택한 Snyk은 최고의 IDE, repository, CI/CD, runtime, registry 및 이슈 관리 도구와 [통합](https://docs.snyk.io/integrations)됩니다. 
 
-## Security and vulnerability data
+## 보안 및 취약점 데이터
 
-Our [security intelligence database](https://snyk.io/snyk-intelligence-security/), also known as the Snyk Intel Vulnerability Database is maintained by a dedicated research team that combines public sources, contributions from the developer community, proprietary research, and machine learning to continuously adapt to the changing and expanding nature of security threats.
+Snyk Intel Vulnerability Database라고도 하는 Snyk의 [보안 인텔리전스 데이터베이스](https://snyk.io/snyk-intelligence-security/)는 maintained by a dedicated research team that combines public sources, contributions from the developer community, proprietary research, and machine learning to continuously adapt to the changing and expanding nature of security threats.
 
 ## Snyk CLI
 
