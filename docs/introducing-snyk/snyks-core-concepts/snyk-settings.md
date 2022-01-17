@@ -4,4 +4,4 @@
 
 ![](../../.gitbook/assets/screenshot\_2021-07-19\_at\_15.52.02.png)
 
-자세한 내용은 설정 관리를 참조하세요.
+자세한 내용은 [설정 관리](../../features/user-and-group-management/managing-settings/)를 참조하세요.
