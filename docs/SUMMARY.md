@@ -74,6 +74,7 @@
   * [Using Snyk Code via web](products/snyk-code/using-snyk-code-web.md)
   * [Using Snyk Code via IDE](products/snyk-code/using-snyk-code-via-ide.md)
   * [Using Snyk Code via CLI](products/snyk-code/cli-for-snyk-code/README.md)
+    * [CLI and IDE](products/snyk-code/cli-for-snyk-code/cli-and-ide.md)
     * [Understand Snyk Code CLI results](products/snyk-code/cli-for-snyk-code/snyk-code-cli-results.md)
     * [Filtering and exporting Snyk Code CLI results](products/snyk-code/cli-for-snyk-code/advanced-snyk-code-cli-usage.md)
   * [Deployment Options](products/snyk-code/deployment-options/README.md)
