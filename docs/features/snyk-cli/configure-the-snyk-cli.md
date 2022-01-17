@@ -8,9 +8,9 @@ You can set the following environment variables to change CLI settings.
 
 `SNYK_TOKEN`
 
-Allows you to override the Snyk authorization token that may be available in your `snyk config` settings. Use `SNYK_TOKEN` in a CI/CD environment.
+Allows you to override the token that may be available in your `snyk config` settings. Use `SNYK_TOKEN` in a CI/CD environment.
 
-For information on how to get your account token see [Authentication for third-party tools](../user-and-group-management/authentication/authentication-for-third-party-tools.md). For more information see [Service accounts](../integrations/managing-integrations/service-accounts.md).
+For information on how to get your account token see [Authentication for third-party tools](../user-and-group-management/authentication/authentication-for-third-party-tools.md). You can also use a service account to authenticate; for more information see [Service accounts](../integrations/managing-integrations/service-accounts.md).
 
 `SNYK_CFG_<KEY>`
 
