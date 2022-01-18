@@ -6,7 +6,7 @@
 
 ## Description
 
-The `snyk policy` command displays the `.snyk policy` file for a package.
+The `snyk policy` command displays the `.snyk` policy file for a package.
 
 ## Argument: `<PATH_TO_POLICY_FILE>`
 
