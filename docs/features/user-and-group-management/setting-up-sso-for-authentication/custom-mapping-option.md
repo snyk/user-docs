@@ -19,7 +19,7 @@ To configure this option, we expect you to send the `roles` array within the SAM
 
 * This role mapping will assign users with the Group Admin and Org Admin roles
 * **prefix** is present on every role mapping. It is an identifier that allows Snyk to identify which `roles` array values to process. By default, we expect this value to be **snyk**. If another value is required, please work with your Customer Success Manager.
-  * Note: prefix must be fully lowercase
+  * Note: **prefix** must be fully lowercase
 * **groupadmin** will configure all users with this role as a Group Admin and Org Admin for all group(s) that the user is assigned to and all orgs that fall under the group(s)
 
 **2.  {prefix}-{groupID}**
@@ -32,8 +32,8 @@ To configure this option, we expect you to send the `roles` array within the SAM
 
 * This role mapping will assign users with the specified role of Collaborator or Admin for the Snyk organization specified in **orgslug**.&#x20;
 * **orgslug** is the unique identifier of the organization name in Snyk&#x20;
-  * How to find the org slug: https://app.snyk.io/org/{orgslug} OR via our [API ](https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group)(Note: While the org slug will be the name of the organization for most cases, this may not always be the case)
-  * Note: org slug can be a value of up to 60 characters and must be fully lowercase&#x20;
+  * How to find the **orgslug**: https://app.snyk.io/org/{orgslug} OR via our [API ](https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group)(Note: While the **orgslug** will be the name of the organization for most cases, this may not always be the case)
+  * Note: **orgslug** can be a value of up to 60 characters and must be fully lowercase&#x20;
 * **role** is either **collaborator or admin**
 
 ### Roles array mapping format
