@@ -19,6 +19,7 @@ To configure this option, we expect you to send the `roles` array within the SAM
 
 * This role mapping will assign users with the Group Admin and Org Admin roles
 * **prefix** is present on every role mapping. It is an identifier that allows Snyk to identify which `roles` array values to process. By default, we expect this value to be **snyk**. If another value is required, please work with your Customer Success Manager.
+  * Note: prefix must be fully lowercase
 * **groupadmin** will configure all users with this role as a Group Admin and Org Admin for all group(s) that the user is assigned to and all orgs that fall under the group(s)
 
 **2.  {prefix}-{groupID}**
