@@ -71,7 +71,7 @@ Provide Auth0 connection details in the below form.
 * **Email domains and sub domains** that would need SSO access (mandatory)
 * **User ID attribute**: The attribute in SAML token that will be mapped to the user\_id property in Auth0
 * **Protocol binding**: HTTP-POST is recommended, HTTP-Redirect is also supported
-* **IdP initiated workflow**: Recommended
+* **IdP initiated workflow**: Idp-initiated SSO behaviour carry a security risk and therefore not recommended. Make sure you understand the risks before enabling this option.
 
 ![](<../../../.gitbook/assets/Screenshot 2022-01-07 at 16.11.10.png>)
 
