@@ -1,40 +1,39 @@
 # Monitor
 
-## Usage
+### Usage
 
 `snyk monitor [<OPTIONS>]`
 
-## Description
+### Description
 
 The `snyk monitor` command creates a project in your Synk account to be continuously monitored for open source vulnerabilities and license issues. After running this command, log in to the Snyk website and view your projects to see the monitor.
 
-## Exit codes
+### Exit codes
 
 Possible exit codes and their meaning:
 
 **0**: success, no vulnerabilities found\
 **1**: action\_needed, vulnerabilities found\
 **2**: failure, try to re-run command\
-**3**: failure, no supported projects detected\
+**3**: failure, no supported projects detected\\
 
-
-## Configure the Snyk CLI
+### Configure the Snyk CLI
 
 You can use environment variables to configure the Snyk CLI and also set variables to configure the Snyk CLI to connect with the Snyk API. See [Configure the Snyk CLI](https://docs.snyk.io/features/snyk-cli/configure-the-snyk-cli).
 
-## Debug
+### Debug
 
 Use the `-d` option to output the debug logs.
 
-## Options
+### Options
 
 See also subsequent sections for options for specific build environments, package managers, languages, and `[<CONTEXT-SPECIFIC OPTIONS>]` which you specify last.
 
-### `--all-projects`
+#### `--all-projects`
 
 Auto-detect all projects in the working directory.
 
-### `--detection-depth=<DEPTH>`
+#### `--detection-depth=<DEPTH>`
 
 Use with options as documented to indicate how many sub-directories to search. `DEPTH` must be a number.
 
@@ -42,33 +41,33 @@ Default: 4 (the current working directory and 3 sub-directories).
 
 Example: `--detection-depth=3` limits search to the specified directory (or the current directory if no `<PATH>` is specified) plus three levels of subdirectories.
 
-### `--exclude=<DIRECTORY>[,<DIRECTORY>]...>`
+#### `--exclude=<DIRECTORY>[,<DIRECTORY>]...>`
 
 Can be used with `--all-projects` and `--yarn-workspaces` to indicate sub-directories and files to exclude. Must be comma separated.
 
 Use the exclude option with `--detection-depth` to ignore directories at any depth.
 
-### `--prune-repeated-subdependencies`, `-p`
+#### `--prune-repeated-subdependencies`, `-p`
 
 Prune dependency trees, removing duplicate sub-dependencies.
 
 Continues to find all vulnerabilities, but may not find all of the vulnerable paths.
 
-### `--print-deps`
+#### `--print-deps`
 
 Print the dependency tree before sending it for analysis.
 
-### `--remote-repo-url=<URL>`
+#### `--remote-repo-url=<URL>`
 
 Set or override the remote URL for the repository that you would like to monitor.
 
-### `--dev`
+#### `--dev`
 
 Include development-only dependencies. Applicable only for some package managers, for example `devDependencies` in npm or `:development` dependencies in Gemfile.
 
 Default: scan only production dependencies.
 
-### `--org=<ORG_NAME>`
+#### `--org=<ORG_NAME>`
 
 Specify the \<ORG\_NAME> to run Snyk commands tied to a specific organization. The \<ORG\_NAME> influences where new projects are created after running the monitor command, some features availability, and private test limits.
 
@@ -80,63 +79,63 @@ Set a default to ensure all newly monitored projects are created under your defa
 
 Default: `<ORG_NAME>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account).
 
-### `--file=<FILE>`
+#### `--file=<FILE>`
 
 Specify a package file.
 
 When testing locally or monitoring a project, you can specify the file that Snyk should inspect for package information. When the file is not specified, Snyk tries to detect the appropriate file for your project.
 
-### `--ignore-policy`
+#### `--ignore-policy`
 
 Ignore all set policies, the current policy in the `.snyk` file, Org level ignores, and the project policy on snyk.io.
 
-### `--trust-policies`
+#### `--trust-policies`
 
 Apply and use ignore rules from the Snyk policies your dependencies; otherwise ignore rules in the dependencies are only shown as a suggestion.
 
-### `--show-vulnerable-paths=none|some|all`
+#### `--show-vulnerable-paths=none|some|all`
 
 Display the dependency paths from the top level dependencies down to the vulnerable packages. Does not affect output when using JSON `--json` output.
 
 Default: `some` (a few example paths shown). `false` is an alias for `none`.
 
-### `--project-name=<PROJECT_NAME>`
+#### `--project-name=<PROJECT_NAME>`
 
 Specify a custom Snyk project name.
 
-### `--target-reference=<TARGET_REFERENCE>`
+#### `--target-reference=<TARGET_REFERENCE>`
 
 Specify a reference which differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference. Only supported for Snyk Open Source. See [Separating projects by branch or version](https://snyk.info/3B0vTPs).
 
-### `--policy-path=<PATH_TO_POLICY_FILE>`
+#### `--policy-path=<PATH_TO_POLICY_FILE>`
 
 Manually pass a path to a `.snyk` policy file.
 
-### `--json`
+#### `--json`
 
 Print results in JSON format.
 
-### `--json-file-output=<OUTPUT_FILE_PATH>`
+#### `--json-file-output=<OUTPUT_FILE_PATH>`
 
 Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option.
 
 This is especially useful if you want to display the human-readable test output using stdout and at the same time save the JSON format output to a file.
 
-### `--sarif`
+#### `--sarif`
 
 Return results in SARIF format.
 
-### `--sarif-file-output=<OUTPUT_FILE_PATH>`
+#### `--sarif-file-output=<OUTPUT_FILE_PATH>`
 
 Save test output in SARIF format directly to the \<OUTPUT\_FILE\_PATH> file, regardless of whether or not you use the `--sarif` option.
 
 This is especially useful if you want to display the human-readable test output using stdout and at the same time save the SARIF format output to a file.
 
-### `--severity-threshold=low|medium|high|critical`
+#### `--severity-threshold=low|medium|high|critical`
 
 Report only vulnerabilities at the specified level or higher.
 
-### `--fail-on=all|upgradable|patchable`
+#### `--fail-on=all|upgradable|patchable`
 
 Fail only when there are vulnerabilities that can be fixed.
 
@@ -146,132 +145,132 @@ Fail only when there are vulnerabilities that can be fixed.
 
 If vulnerabilities do not have a fix and this option is being used, tests pass.
 
-### `--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`
+#### `--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`
 
 Set the project environment to one or more values (comma-separated). To clear the project environment set `--project-environment=`. Allowed values: `frontend, backend, internal, external, mobile, saas, onprem, hosted, distributed`
 
-### `--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`
+#### `--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`
 
 Set the project lifecycle to one or more values (comma-separated). To clear the project lifecycle set `--project-lifecycle=`. Allowed values: `production, development, sandbox`
 
-### `--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`
+#### `--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`
 
 Set the project business criticality to one or more values (comma-separated). To clear the project business criticality set `--project-business-criticality=`. Allowed values: `critical, high, medium, low`
 
-### `--project-tags=<TAG>[,<TAG>]...>`
+#### `--project-tags=<TAG>[,<TAG>]...>`
 
 Set the project tags to one or more values (comma-separated key value pairs with an "=" separator), for example, `--project-tags=department=finance,team=alpha`. To clear the project tags set `--project-tags=`
 
-### `--tags=<TAG>[,<TAG>]...>`
+#### `--tags=<TAG>[,<TAG>]...>`
 
 This is an alias for `--project-tags`.
 
-## Options for Maven projects
+### Options for Maven projects
 
 For more information about Maven CLI options see [Snyk for Java (Gradle, Maven)](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven).
 
-### `--scan-all-unmanaged`
+#### `--scan-all-unmanaged`
 
 Auto-detect maven jars, aars, and wars in given directory. To test individually use `--file=<JAR_FILE_NAME>`.
 
-### `--reachable`
+#### `--reachable`
 
 Analyze your source code to find which vulnerable functions and packages are called.
 
-### `--reachable-timeout=<TIMEOUT>`
+#### `--reachable-timeout=<TIMEOUT>`
 
 Specify the amount of time (in seconds) to wait for Snyk to gather reachability data. If it takes longer than `<TIMEOUT>`, reachable vulnerabilities are not reported. This does not affect regular test or monitor output.
 
 Default: 300 (5 minutes).
 
-## Options for Gradle projects
+### Options for Gradle projects
 
 For more information about Gradle CLI options see [Snyk for Java (Gradle, Maven)](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven).
 
-### `--sub-project=<NAME>`, `--gradle-sub-project=<NAME>`
+#### `--sub-project=<NAME>`, `--gradle-sub-project=<NAME>`
 
 For Gradle "multi project" configurations, test a specific sub-project.
 
-### `--all-sub-projects`
+#### `--all-sub-projects`
 
 For "multi project" configurations, test all sub-projects.
 
-### `--configuration-matching=<CONFIGURATION_REGEX>`
+#### `--configuration-matching=<CONFIGURATION_REGEX>`
 
 Resolve dependencies using only configuration(s) that match the specified Java regular expression, for example, `^releaseRuntimeClasspath$`.
 
-### `--configuration-attributes=<ATTRIBUTE>[,<ATTRIBUTE>]...`
+#### `--configuration-attributes=<ATTRIBUTE>[,<ATTRIBUTE>]...`
 
 Select certain values of configuration attributes to install dependencies and perform dependency resolution, for example, `buildtype:release,usage:java-runtime`.
 
-### `--reachable`
+#### `--reachable`
 
 Analyze your source code to find which vulnerable functions and packages are called.
 
-### `--reachable-timeout=<TIMEOUT>`
+#### `--reachable-timeout=<TIMEOUT>`
 
 Specify the amount of time (in seconds) to wait for Snyk to gather reachability data. If it takes longer than `<TIMEOUT>`, reachable vulnerabilities are not reported. This does not affect regular test or monitor output.
 
 Default: 300 (5 minutes).
 
-### `--init-script=<FILE`
+#### `--init-script=<FILE`
 
 Use for projects that contain a Gradle initialization script.
 
-## Options for NuGet projects
+### Options for NuGet projects
 
-### `--assets-project-name`
+#### `--assets-project-name`
 
 When monitoring a .NET project using NuGet `PackageReference` use the project name in `project.assets.json`, if found.
 
-### `--packages-folder`
+#### `--packages-folder`
 
 Specify a custom path to the packages folder.
 
-### `--project-name-prefix=<PREFIX_STRING>`
+#### `--project-name-prefix=<PREFIX_STRING>`
 
 When monitoring a .NET project, use this option to add a custom prefix to the name of files inside a project along with any desired separators, for example, `snyk monitor --file=my-project.sln --project-name-prefix=my-group/`. This is useful when you have multiple projects with the same name in other `.sln` files.
 
-## Options for npm projects
+### Options for npm projects
 
-### `--strict-out-of-sync=true|false`
-
-Control testing out of sync lockfiles.
-
-Default: true
-
-## Options for Yarn projects
-
-### `--strict-out-of-sync=true|false`
+#### `--strict-out-of-sync=true|false`
 
 Control testing out of sync lockfiles.
 
 Default: true
 
-### `--yarn-workspaces`
+### Options for Yarn projects
+
+#### `--strict-out-of-sync=true|false`
+
+Control testing out of sync lockfiles.
+
+Default: true
+
+#### `--yarn-workspaces`
 
 Detect and scan yarn workspaces. You can specify how many sub-directories to search using `--detection-depth` and exclude directories and files using `--exclude`.
 
-## Options for CocoaPods projects
+### Options for CocoaPods projects
 
-### `--strict-out-of-sync=true|false`
+#### `--strict-out-of-sync=true|false`
 
 Control testing out of sync lockfiles.
 
 Default: false
 
-## Options for Python projects
+### Options for Python projects
 
-### `--command=<COMMAND>`
+#### `--command=<COMMAND>`
 
 Indicate which specific Python commands to use based on Python version. The default is `python` which executes your default python version. Run 'python -V' to find out what version it is. If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.
 
 Default: `python` Example: `--command=python3`
 
-### `--skip-unresolved=true|false`
+#### `--skip-unresolved=true|false`
 
 Allow skipping packages that are not found in the environment.
 
-## `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
+#### `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
 Use context-specific options to pass extra arguments directly to Gradle, Maven, or other build tools. These options are specified last. Example: `snyk test -- --build-cache`
