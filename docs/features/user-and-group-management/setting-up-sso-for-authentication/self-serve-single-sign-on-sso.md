@@ -35,7 +35,7 @@ To establish trust with Snyk, add an Entity ID, an ACS URL, and a Signing certif
 
 To access the Group Overview for your group, click on Settings ![](<../../../.gitbook/assets/image (70).png>) > **SSO**:
 
-![](<../../../.gitbook/assets/Screenshot 2022-01-07 at 14.30.25.png>)
+![](<../../../.gitbook/assets/Screenshot 2022-01-19 at 12.32.02.png>)
 
 To map information from your Identity provider to Snyk, name your user attributes as follows (using the same capitalization and spelling).&#x20;
 
@@ -44,6 +44,10 @@ To map information from your Identity provider to Snyk, name your user attribute
 | email     | The user’s email address                        |
 | name      | The name of the person to be authenticated      |
 | username  | The person’s username for the identity provider |
+
+An example from Okta is given below:
+
+![](<../../../.gitbook/assets/Screenshot 2022-01-19 at 12.59.08.png>)
 
 {% hint style="warning" %}
 If your user attributes do not match, the Snyk configuration for your SSO will not work.
@@ -61,11 +65,17 @@ Click **create a connection** to establish trust on the service-provider side:
 
 Provide Auth0 connection details in the below form.
 
+* **Sign in URL** (mandatory): Identity Provider sign-in URL
+* **Sign out URL**: Redirect URL when user signs out of Snyk, Recommended
+* **X509 signing certificate** (mandatory): The identity provider public key, encoded in _**Base64 format**_
+* **Email domains and sub domains** that would need SSO access (mandatory)
+* **User ID attribute**: The attribute in SAML token that will be mapped to the user\_id property in Auth0
+* **Protocol binding**: HTTP-POST is recommended, HTTP-Redirect is also supported
+* **IdP initiated workflow**: Recommended
+
 ![](<../../../.gitbook/assets/Screenshot 2022-01-07 at 16.11.10.png>)
 
-After filling in the details click on **Create Auth0 connection**.&#x20;
-
-Snyk will highlight if there are any errors, or you can reach out to the support team if you need assistance using the ‘Contact Support’ option.
+After filling in the details click on **Create Auth0 connection**. Snyk will highlight if there are any errors. In this version you cannot edit Auth0 attributes once set up. If you need to change Auth0 attributes or if you need assistance, you can reach out to the support team using the ‘Contact Support’ option.
 
 ## 3. Set up User Provisioning
 
@@ -75,7 +85,7 @@ Now click **Edit Snyk SSO details below**  in the success banner to complete the
 
 Choose the new user’s role (details about the options can be found in [choose-a-provisioning-option.md](choose-a-provisioning-option.md "mention"))
 
-![](<../../../.gitbook/assets/Screenshot 2022-01-14 at 14.58.19.png>)
+![](<../../../.gitbook/assets/Screenshot 2022-01-19 at 13.22.38.png>)
 
 The **Profile attributes** values are used to map the user's SAML payload data, to ensure that Snyk receives the proper email, name, and userName. It should be the exact keys from the raw json from SAML payload.&#x20;
 
