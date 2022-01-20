@@ -23,7 +23,7 @@ After installation, authenticate with Snyk to test your image, running snyk auth
 snyk auth
 ```
 
-For more details about authentication, see [Authenticate the CLI with your account](https://docs.snyk.io/snyk-cli/install-the-snyk-cli/authenticate-the-cli-with-your-account)
+For more details about authentication, see [Authenticate the CLI with your account](https://docs.snyk.io/features/snyk-cli/authenticate-the-cli-with-your-account)
 
 ## Testing an image
 
