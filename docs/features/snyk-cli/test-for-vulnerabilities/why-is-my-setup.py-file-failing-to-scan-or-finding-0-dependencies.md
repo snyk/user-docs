@@ -1,20 +1,7 @@
 # Why is my setup.py file failing to scan or finding 0 dependencies?
 
-Commonly, when executing the
+When you run the command `snyk test --file=setup.py`, typically there are some python 'setup.py' projects that fail or output 0 dependencies. This is because Snyk reads through only the `install_requires` key that has all the packages listed.
 
-```text
-snyk test --file=setup.py
-```
+Any dependencies in other `requires` keys are not scanned.
 
-command, there are some python 'setup.py' projects that fail or output 0 dependencies. This is because Snyk at the current moment only reads through the
-
-```text
-install_requires
-```
-
-key that has all the packages listed
-
-Any dependencies in other 'requires' key will not be scanned.
-
-Further support is subject to change in the future.
-
+Further support is subject to change.
