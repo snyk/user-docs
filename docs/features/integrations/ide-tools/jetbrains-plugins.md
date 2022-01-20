@@ -1,6 +1,14 @@
+---
+description: Use this documentation to get started with the JetBrains plugin.
+---
+
 # JetBrains plugins
 
 Snyk has a plugin for Jetbrains IDEs, for both [Snyk Open Source](https://docs.snyk.io/snyk-open-source) and [Snyk Code](https://docs.snyk.io/snyk-code). Use this plugin to test your projects and get fix advice and example code fixes during development within the IDE.
+
+{% hint style="info" %}
+Snyk's JetBrains plugin is available for install on the marketplace: [https://plugins.jetbrains.com/plugin/10972-snyk-vulnerability-scanner](https://plugins.jetbrains.com/plugin/10972-snyk-vulnerability-scanner).
+{% endhint %}
 
 ## Supported JetBrains IDEs
 
@@ -128,6 +136,14 @@ After the plugin is installed, you can set the following configurations for the 
 * **Ignore unknown CA**: for ignoring the SSL cert, if needed.
 * **Organization**: the org to run Snyk test against (similarly to the --org param in the CLI).
 * **Additional parameters**: additional CLI snyk test params, you’d like to run the test with.
-* **Snyk Open Source vulnerabilities**: analyse the project for open source vulnerabilities through the CLI using the Snyk Open Source. Enabled by default.
-* **Snyk Code Security issues**: analyse the project for security vulnerabilities in your application code using Snyk Code. Enabled by default.
-* **Snyk Code Quality issues**: analyse the project for quality issues in your application code using Snyk Code. Disabled by default.
+* **Snyk Open Source vulnerabilities**: analyze the project for open source vulnerabilities through the CLI using the Snyk Open Source. Enabled by default.
+* **Snyk Code Security issues**: analyze the project for security vulnerabilities in your application code using Snyk Code. Enabled by default.
+* **Snyk Code Quality issues**: analyze the project for quality issues in your application code using Snyk Code. Disabled by default.
+
+### Support / Contact
+
+For support and help, visit [Snyk IDE Plugins Help](../snyk-ide-plugins/help.md#a693dbb5-063c-46d4-9b4e-d21e73b1e485).
+
+### Share your experience
+
+We continuously strive to improve our plugins experience. Would you like to share with us your feedback about Snyk's JetBrains Plugin: [schedule a meeting](https://calendly.com/snyk-georgi/45min?month=2022-01).

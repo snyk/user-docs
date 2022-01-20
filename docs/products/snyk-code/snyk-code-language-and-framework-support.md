@@ -1,4 +1,6 @@
-# Language and framework support
+# Languages and frameworks
+
+##
 
 ## Language support with Snyk Code AI Engine
 
@@ -21,8 +23,9 @@ Snyk Code currently supports:
 * **Python**
 * **PHP**
 * **C#**
+* **Go**
 
-_Beta support exists for: Go, Ruby and Kotlin contact us for more details or with your further needs._
+_Beta support exists for: Ruby and Kotlin contact us for more details or with your further needs._
 
 ## Language type and framework support
 
@@ -37,8 +40,6 @@ Contact Snyk for a full list of support for frameworks, libraries and vulnerabil
 ## Supported Extensions
 
 The following are the supported extensions:
-
-
 
 {% hint style="info" %}
 c,cc,cpp,cxx,h,hpp,hxx,ejs,es,es6,htm,html,js,jsx,ts,tsx,vue,java,erb,haml,rb,rhtml,slim,py,go,ASPX,Aspx,CS,Cs,aspx,cs,php, xml

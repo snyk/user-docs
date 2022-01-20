@@ -4,7 +4,7 @@
 
 ### Advisor
 
-See [Snyk Advisor](https://support.snyk.io/hc/en-us/articles/360017682058-Snyk-Glossary#SnykAdvisor).
+See [Snyk Advisor](https://snyk.io/advisor/).
 
 ## B
 

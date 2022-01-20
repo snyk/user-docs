@@ -1,40 +1,39 @@
 # Code
 
-## Usage
+### Usage
 
 `snyk code [<COMMAND>] [<OPTIONS>] [<PATH>]`
 
-## Description
+### Description
 
 The `snyk code` command finds security issues using Static Code Analysis.
 
 For more information see [CLI for Snyk Code](https://docs.snyk.io/snyk-code/cli-for-snyk-code).
 
-## Command: `test`
+### Command: `test`
 
 Test for any known issue.
 
-## Exit codes
+### Exit codes
 
 Possible exit codes and their meaning:
 
 **0**: success, no vulnerabilities found\
 **1**: action\_needed, vulnerabilities found\
 **2**: failure, try to re-run command\
-**3**: failure, no supported projects detected\
+**3**: failure, no supported projects detected\\
 
-
-## Configure the Snyk CLI
+### Configure the Snyk CLI
 
 You can use environment variables to configure the Snyk CLI and also set variables to configure the Snyk CLI to connect with the Snyk API. See [Configure the Snyk CLI](https://docs.snyk.io/features/snyk-cli/configure-the-snyk-cli).
 
-## Debug
+### Debug
 
 Use the `-d` option to output the debug logs.
 
-## Options
+### Options
 
-### `--org=<ORG_NAME>`
+#### `--org=<ORG_NAME>`
 
 Specify the `<ORG_NAME>`to run Snyk commands tied to a specific organization. The `<ORG_NAME>` influences private test limits.
 
@@ -46,14 +45,14 @@ Set a default to ensure all newly tested projects are tested under your default 
 
 Default: `<ORG_NAME>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account).
 
-### `--json`
+#### `--json`
 
 Print results in JSON format.
 
-### `--sarif`
+#### `--sarif`
 
 Return results in SARIF format.
 
-### `--severity-threshold=low|medium|high|critical`
+#### `--severity-threshold=low|medium|high|critical`
 
 Report only vulnerabilities at the specified level or higher. Note that the Snyk Code configuration issues do not currently use the `critical` severity level.

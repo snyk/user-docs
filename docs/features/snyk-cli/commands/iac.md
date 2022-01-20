@@ -1,20 +1,20 @@
 # IAC
 
-## Usage
+### Usage
 
 `snyk iac <COMMAND> [<OPTIONS>] [<PATH>]`
 
-## Description
+### Description
 
 The `snyk iac` command finds security issues in Infrastructure as Code files.
 
 For more information see [Synk CLI for Infrastructure as Code](https://docs.snyk.io/products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code).
 
-## Command: `test`
+### Command: `test`
 
 Test for any known issue.
 
-## Exit codes
+### Exit codes
 
 Possible exit codes and their meaning:
 
@@ -23,17 +23,17 @@ Possible exit codes and their meaning:
 **2**: failure, try to re-run command\
 **3**: failure, no supported projects detected\\
 
-## Configure the Snyk CLI
+### Configure the Snyk CLI
 
 You can use environment variables to configure the Snyk CLI and also set variables to configure the Snyk CLI to connect with the Snyk API. See [Configure the Snyk CLI](https://docs.snyk.io/features/snyk-cli/configure-the-snyk-cli).
 
-## Debug
+### Debug
 
 Use the `-d` option to output the debug logs.
 
-## Options
+### Options
 
-### `--detection-depth=<DEPTH>`
+#### `--detection-depth=<DEPTH>`
 
 Use with options as documented to indicate how many sub-directories to search. `DEPTH` must be a number.
 
@@ -41,7 +41,7 @@ Default: no limit.
 
 Example: `--detection-depth=3` limits search to the specified directory (or the current directory if no `<PATH>` is specified) plus three levels of subdirectories.
 
-### `--org=<ORG_NAME>`
+#### `--org=<ORG_NAME>`
 
 Specify the `<ORG_NAME>` to run Snyk commands tied to a specific organization. The \<ORG\_NAME> influences private test limits.
 
@@ -53,45 +53,45 @@ Set a default to ensure all newly tested projects are tested under your default 
 
 Default: `<ORG_NAME>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account).
 
-### `--ignore-policy`
+#### `--ignore-policy`
 
 Ignore all set policies, the current policy in the `.snyk` file, Org level ignores, and the project policy on snyk.io.
 
-### `--policy-path=<PATH_TO_POLICY_FILE>`
+#### `--policy-path=<PATH_TO_POLICY_FILE>`
 
 Manually pass a path to a `.snyk` policy file.
 
-### `--json`
+#### `--json`
 
 Print results in JSON format.
 
-### `--json-file-output=<OUTPUT_FILE_PATH>`
+#### `--json-file-output=<OUTPUT_FILE_PATH>`
 
 Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option.
 
 This is especially useful if you want to display the human-readable test output using stdout and at the same time save the JSON format output to a file.
 
-### `--sarif`
+#### `--sarif`
 
 Return results in SARIF format.
 
-### `--sarif-file-output=<OUTPUT_FILE_PATH>`
+#### `--sarif-file-output=<OUTPUT_FILE_PATH>`
 
 Save test output in SARIF format directly to the \<OUTPUT\_FILE\_PATH> file, regardless of whether or not you use the `--sarif` option.
 
 This is especially useful if you want to display the human-readable test output using stdout and at the same time save the SARIF format output to a file.
 
-### `--severity-threshold=low|medium|high|critical`
+#### `--severity-threshold=low|medium|high|critical`
 
 Report only vulnerabilities at the specified level or higher.
 
-### `--scan=<TERRAFORM_PLAN_SCAN_MODE>`
+#### `--scan=<TERRAFORM_PLAN_SCAN_MODE>`
 
 Use this dedicated option for Terraform plan scanning modes to control whether the scan analyzes the full final state (for example, `planned-values`), or the proposed changes only (for example, `resource-changes`).
 
 Default: If the `--scan` option is not specified, scan the proposed changes only by default. Example 1: `--scan=planned-values` (full state scan) Example 2: `--scan=resource-changes` (proposed changes scan)
 
-### `--rules=<PATH_TO_CUSTOM_RULES_BUNDLE>`
+#### `--rules=<PATH_TO_CUSTOM_RULES_BUNDLE>`
 
 Use this dedicated option for Custom Rules scanning to enable the IaC scans to use a custom rules bundle generated with the `snyk-iac-rules` SDK. See [Download learn how to use the SDK](https://github.com/snyk/snyk-iac-rules).
 
@@ -99,34 +99,34 @@ This option cannot be used if the custom rules settings were configured with the
 
 Example: `--rules=bundle.tar.gz` (Scan the configuration files using custom rules and internal Snyk rules.)
 
-## Examples for the iac test command
+### Examples for the iac test command
 
 \[For more information see [Synk CLI for Infrastructure as Code](https://docs.snyk.io/products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code).
 
-### Test a CloudFormation file
+#### Test a CloudFormation file
 
 `$ snyk iac test /path/to/cloudformation_file.yaml`
 
-### Test a Kubernetes file
+#### Test a Kubernetes file
 
 `$ snyk iac test /path/to/kubernetes_file.yaml`
 
-### Test a Terraform file
+#### Test a Terraform file
 
 `$ snyk iac test /path/to/terraform_file.tf`
 
-### Test a Terraform plan file
+#### Test a Terraform plan file
 
 `$ terraform plan -out=tfplan.binary` `$ terraform show -json tfplan.binary > tf-plan.json` `$ snyk iac test tf-plan.json`
 
-### Test an ARM file
+#### Test an ARM file
 
 `$ snyk iac test /path/to/arm_file.json`
 
-### Test matching files in a directory
+#### Test matching files in a directory
 
 `$ snyk iac test /path/to/directory`
 
-### Test matching files in a directory using a local custom rules bundle
+#### Test matching files in a directory using a local custom rules bundle
 
 `$ snyk iac test /path/to/directory --rules=bundle.tar.gz`

@@ -1,6 +1,10 @@
 # Visual Studio Code extension
 
-Use this documentation to get started with the Visual Studio Code extension.
+
+
+{% hint style="info" %}
+Snyk's Visual Studio Code extension is available for install on the marketplace: [https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner).
+{% endhint %}
 
 ## Supported languages
 
@@ -35,8 +39,8 @@ To authenticate follow the steps:
 2.  Click **Connect VS Code with Snyk**. The extension relies on the Snyk authentication API and it will ask you to authenticate you against Snyk’s web application:
 
     ![](<../../../.gitbook/assets/image (71) (1) (1).png>)
-3. Click **Authenticate**.
-4.  After successful authentication, you will see a confirmation message:
+3. Click **Authenticate**.&#x20;
+4.  After successful authentication, you will see a confirmation message:&#x20;
 
     ![](<../../../.gitbook/assets/image (85) (1).png>)
 5. Close the browser window and return to VS Code. VS Code is now reading and saving the authentication on your local machine.
@@ -68,7 +72,7 @@ To manually trigger a scan, either Save or manually rescan using the rescan icon
 
 If you only need the Code Quality, Code Security or Open Source Security portion of the findings, you can easily disable the feature with the results you don't want to see or simply collapse the view:
 
-![](<../../../.gitbook/assets/image (83) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (83) (1) (1) (1) (2).png>)
 
 ### Snyk Code advanced mode
 
@@ -84,7 +88,7 @@ Snyk analysis shows a list of security vulnerabilities and code issues found in 
 
 ![](<../../../.gitbook/assets/image (79) (2).png>)
 
-![](<../../../.gitbook/assets/image (72) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (72) (1) (1) (2).png>)
 
 ### Snyk panel
 
@@ -112,9 +116,9 @@ The editor window (in the middle of the results screen) shows the code that is i
 
 The Snyk Suggestion panel (on the right of the results screen) shows the argumentation of the Snyk engine using for example variable names of your code and the line numbers in red. You can also see:
 
-* Links to external resources to explain the bug pattern in more detail (the **More info** link).
-* Tags that were assigned by Snyk, such as **Security** (the issue found is a security issue), **Database** (it is related to database interaction), or **In Test** (the issue is within the test code).
-* Code from open source repositories that might be of help to see how others fixed the issue.
+* Links to external resources to explain the bug pattern in more detail (the **More info** link).&#x20;
+* Tags that were assigned by Snyk, such as **Security** (the issue found is a security issue), **Database** (it is related to database interaction), or **In Test** (the issue is within the test code).&#x20;
+* Code from open source repositories that might be of help to see how others fixed the issue.&#x20;
 * You can add ignore comments that would make Snyk ignore this particular suggestion, or all of these suggestions for the whole file, by using the two buttons on the lower end of the panel.
 
 We also include a feedback mechanism to report false positives so you others do not see the same issue.
@@ -127,7 +131,7 @@ Editor window shows security vulnerabilities in open source modules while you co
 
 ![](../../../.gitbook/assets/oss-editor-vulnerability-count.png)
 
-* Code inline vulnerability counts are also shown in your `package.json` file:
+* Code inline vulnerability counts are also shown in your `package.json` file:&#x20;
 
 ![](../../../.gitbook/assets/oss-editor-pjson.png)
 
@@ -180,3 +184,11 @@ To ignore certain files and directories (for example, **node\_modules**), create
 
 * We recommend adding the file when there is no **.gitignore** file. This will significantly reduce the files that need to be uploaded and speed up the analysis.
 * To quickly add the default **.dcignore** file use the command provided by VS Code and the Snyk extension: Snyk create .dcignore file and save the newly created .dcignore file.
+
+## Support / Contact
+
+For support and help, visit [Snyk IDE Plugins Help](../snyk-ide-plugins/help.md#a693dbb5-063c-46d4-9b4e-d21e73b1e485).
+
+### Share your experience
+
+We continuously strive to improve our plugins experience. Would you like to share with us your feedback about Snyk's Visual Studio Code extension: [schedule a meeting](https://calendly.com/snyk-georgi/45min?month=2022-01).

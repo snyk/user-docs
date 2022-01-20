@@ -1,3 +1,7 @@
+---
+description: Use this documentation to get started with the Eclipse plugin.
+---
+
 # Eclipse plugin
 
 Install our **Snyk Vuln Scanner** in your Eclipse workflow to catch vulnerabilities and license issues directly from within your IDE (integrated development environment), before they are merged into your codebase.
@@ -10,6 +14,10 @@ Once installed and configured, every time you run the plugin, Snyk scans your pr
 
 The Snyk plugin enables you to track and identify issues that risk your application’s security and avoid ever adding those issues to your shared repo.
 
+{% hint style="info" %}
+Snyk's Eclipse plugin is available for install on the marketplace: [https://marketplace.eclipse.org/content/snyk-security-scanner](https://marketplace.eclipse.org/content/snyk-security-scanner).
+{% endhint %}
+
 ## Supported languages and repos
 
 Snyk supports all languages that are supported by both Eclipse and Snyk. Additionally, the Snyk plugin can also be implemented with our Broker and on-prem solutions.
@@ -17,9 +25,9 @@ Snyk supports all languages that are supported by both Eclipse and Snyk. Additio
 ## Installing the Eclipse Snyk plugin
 
 1. Navigate to the Marketplace from within your running Eclipse instance.
-2. Search for Snyk and click **Install**.&#x20;
+2. Search for Snyk and click **Install**.
 3. When prompted accept the license agreement and the **Snyk Security** certificate to complete the installation.
-4. Restart the Eclipse instance and navigate to **Eclipse Preferences** to ensure **Snyk Vuln Scanner** now appears in the list:&#x20;
+4. Restart the Eclipse instance and navigate to **Eclipse Preferences** to ensure **Snyk Vuln Scanner** now appears in the list:
 
 ![](../../../.gitbook/assets/uuid-01198b42-f020-2cc5-c20f-93817eeb44a4-en.png)
 
@@ -51,3 +59,11 @@ Work with Snyk results from Eclipse as follows:
 |                    | **Expanded mode**                                                                                                         | <p>Click the arrow on the row to expand and view the full path from the direct dependency to the actual vulnerable package.</p><p><img src="../../../.gitbook/assets/uuid-35658aaf-3359-80c2-c094-41a34c7863cc-en.png" alt="image15.png"></p><p>In the example above, the full path would appear as:</p><p>[Name of Package X]-->[Name of Package Y]-->[Name of Package Z]</p>                                                                                                                                                                                                                                          |
 | **Package**        |                                                                                                                           | <p>The name of the package in your project that is directly affected by the vulnerability.</p><p>In the example above:</p><ul><li>the Dependency is indicated as Package X—this is the package the developer explicitly uses in the code</li><li>the Package field displays Package Z, which is the package that actually contains the vulnerability.</li></ul>                                                                                                                                                                                                                                                         |
 | **Fix**            |                                                                                                                           | The name of the package, if such exists, and the version that it can be upgraded to in order to resolve the issue.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+
+### Support / Contact
+
+For support and help, visit [Snyk IDE Plugins Help](../snyk-ide-plugins/help.md#a693dbb5-063c-46d4-9b4e-d21e73b1e485).
+
+### Share your experience
+
+We continuously strive to improve our plugins experience. Would you like to share with us your feedback about Snyk's Eclipse Plugin: [schedule a meeting](https://calendly.com/snyk-georgi/45min?month=2022-01).
