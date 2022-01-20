@@ -1,6 +1,6 @@
 # Test your Kustomize files with our CLI tool
 
-You scan a Kustomize template by building the Kuberenetes manifest file and then scanning this using the Snyk IaC CLI.
+You scan a Kustomize template by building the Kubernetes manifest file and then scanning this using the Snyk IaC CLI.
 
 ```text
 kustomize build > kubernetes.yaml
