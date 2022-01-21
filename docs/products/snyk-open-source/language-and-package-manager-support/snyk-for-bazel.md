@@ -29,12 +29,12 @@ However, in many cases users must manually specify their dependency information 
 
 Because Bazel dependencies are specified as code in BUILD files using Starlark, Snyk cannot easily discover which dependencies a project has.
 
-The recommended approach is to test your dependencies via the [Snyk Dep Graph Test API](snyk-for-bazel.md).
+The recommended approach is to test your dependencies via the [Snyk Dep Graph Test API](https://github.com/snyk/dep-graph).
 
 ## How it works
 
-1. For each type of dependency (e.g. Maven, Cocoapods), create a  [Dep Graph JSON object](https://github.com/snyk/dep-graph) listing all the dependency packages and versions (see below)
-2.  As part of a Bazel test rule, send this object as a POST request to the [Dep Graph Test API](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h\_01EEWFQJFTCWFQBMQR0X32J8B8), (along with your [auth token](https://docs.snyk.io/snyk-api-info/authentication-for-api)), example curl request:
+1. For each type of dependency (e.g. Maven, Cocoapods), create a [Dep Graph JSON object](https://github.com/snyk/dep-graph) listing all the dependency packages and versions (see below)
+2.  As part of a Bazel test rule, send this object as a POST request to the [Dep Graph Test API](https://github.com/snyk/dep-graph), (along with your [auth token](https://docs.snyk.io/snyk-api-info/authentication-for-api)), example curl request:
 
     ```
     curl -X POST 'https://snyk.io/api/v1/test/dep-graph' \
@@ -102,10 +102,10 @@ export interface DepGraphData {
 
 Here are some further notes on specific components in the dep graph object:
 
-* `schemaVersion` - version of the dep-graph schema, set this to `1.2.0`&#x20;
-* `pkgManager.name` - one of `deb`, `gomodules`, `gradle`, `maven`, `npm`, `nuget`, `paket`, `pip`, `rpm`, `rubygems` or `cocoapods` &#x20;
+* `schemaVersion` - version of the dep-graph schema, set this to `1.2.0`
+* `pkgManager.name` - one of `deb`, `gomodules`, `gradle`, `maven`, `npm`, `nuget`, `paket`, `pip`, `rpm`, `rubygems` or `cocoapods`
 * `pkgs` - array of objects containing `id`, `name` & `version` of all packages in the dep-graph. Note that the `id` _must_ be of the form `name@version`. List each of your dependencies in this array, including an item representing the project itself
-* `graph.nodes` - array of objects describing the relationships between entries in `pkgs`. In Bazel this is typically just the project node with all other packages defined as a flat array of direct dependencies in `deps`&#x20;
+* `graph.nodes` - array of objects describing the relationships between entries in `pkgs`. In Bazel this is typically just the project node with all other packages defined as a flat array of direct dependencies in `deps`
 * `graph.rootNodeId` - specifies the `id` of the entry in `graph.nodes` to use as the root node of the graph. You should set this to the `nodeId` of the project node
 
 ## Snyk Dep Graph Test API Response
