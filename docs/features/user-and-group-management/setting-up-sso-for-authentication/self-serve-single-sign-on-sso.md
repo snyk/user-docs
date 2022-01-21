@@ -85,7 +85,7 @@ Now click **Edit Snyk SSO details below**  in the success banner to complete the
 
 Choose the new user’s role (details about the options can be found in [choose-a-provisioning-option.md](choose-a-provisioning-option.md "mention"))
 
-![](<../../../.gitbook/assets/Screenshot 2022-01-19 at 13.22.38.png>)
+![](<../../../.gitbook/assets/Screenshot 2022-01-21 at 14.44.28.png>)
 
 The **Profile attributes** values are used to map the user's SAML payload data, to ensure that Snyk receives the proper email, name, and userName. It should be the exact keys from the raw json from SAML payload.&#x20;
 
