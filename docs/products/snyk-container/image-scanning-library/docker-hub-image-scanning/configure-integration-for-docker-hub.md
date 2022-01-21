@@ -26,4 +26,4 @@ The first line of troubleshooting Docker Hub integration issues--failure to impo
 3. Enter access token description, set permissions, and click Generate&#x20;
 4. Copy Access Token, it will be used along with the username in step 1 above
 
-navigate to https://hub.docker.com/settings/security Select New Access Token Enter access token description, set permissions, and click Generate Copy Access Token, it will be used in the next step
+More information on [Docker Hub Access Tokens](https://docs.docker.com/docker-hub/access-tokens/) is available in the Docker Hub docs.
