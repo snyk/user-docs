@@ -221,7 +221,7 @@
     * [Test public repositories before use](features/snyk-cli/test-for-vulnerabilities/test-public-repositories-before-use.md)
     * [Test public npm packages before use](features/snyk-cli/test-for-vulnerabilities/test-public-npm-packages-before-use.md)
     * [Why is my setup.py file failing to scan or finding 0 dependencies?](features/snyk-cli/test-for-vulnerabilities/why-is-my-setup.py-file-failing-to-scan-or-finding-0-dependencies.md)
-    * [Scan all unmanaged jar files](features/snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files.md)
+    * [Scan all unmanaged JAR files](features/snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files.md)
   * [Fix vulnerabilities from the CLI](features/snyk-cli/fix-vulnerabilities-from-the-cli/README.md)
     * [Automatic fixing with snyk fix](features/snyk-cli/fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix.md)
     * [View CLI test results](features/snyk-cli/fix-vulnerabilities-from-the-cli/view-cli-test-results.md)
