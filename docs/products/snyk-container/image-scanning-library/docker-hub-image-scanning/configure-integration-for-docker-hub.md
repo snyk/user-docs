@@ -2,13 +2,28 @@
 
 Enable integration between Docker Hub and Snyk, and start managing your vulnerabilities.
 
-1. Navigate to **Integrations**.
-2. Click **Docker Hub**.
-3. Enter your Docker Hub username and Access Token and then click **Save**:
-   1. _As the access token, you can either use your DockerHub password or a an access token_ [_created_](https://docs.docker.com/docker-hub/access-tokens/) 
-   2. _in DockerHub. In case 2FA is activated on your account, access token **only** is applicable._
-4. Snyk tests the connection values and the page reloads, now displaying Docker Hub integration information and the Add your Docker Hub images to Snyk button. 
-5. A confirmation message that the details were saved also appears in green at the top of the screen. In addition, if the connection to Docker Hub failed, a notification appears.
+1. Navigate to **Integrations**
+2. Click **Docker Hub**
+3. Enter your Docker Hub username and Access Token (see below to generate token)
+4. click **Save**, the page will reload with new options and the Access Token field will be blank--this is normal
 
-![](../../../../.gitbook/assets/mceclip0-12-1-%20%281%29.png)
+![This is an example of a successful connection.](<../../../../.gitbook/assets/Screen Shot 2022-01-21 at 9.48.27 AM.png>)
 
+#### Connection failure
+
+A confirmation message that the details were saved also appears in green at the top of the screen. In addition, if the connection to Docker Hub failed, a notification appears.
+
+![This is an example of an unsuccessful connect: "Could not connect to Docker Hub".](<../../../../.gitbook/assets/Screen Shot 2022-01-21 at 9.48.50 AM.png>)
+
+### Troubleshooting Docker Hub integration
+
+The first line of troubleshooting Docker Hub integration issues--failure to import projects, fail to connect, no error shown, etc.--is to generate a new Access Token and resave the Docker Hub integration in the Snyk settings page.
+
+#### To generate Docker Hub Access Token:
+
+1. Navigate to [https://hub.docker.com/settings/security](https://hub.docker.com/settings/security)&#x20;
+2. Select New Access Token&#x20;
+3. Enter access token description, set permissions, and click Generate&#x20;
+4. Copy Access Token, it will be used along with the username in step 1 above
+
+navigate to https://hub.docker.com/settings/security Select New Access Token Enter access token description, set permissions, and click Generate Copy Access Token, it will be used in the next step
