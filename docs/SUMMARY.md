@@ -106,7 +106,7 @@
   * [Integrate self-hosted container registries](products/snyk-container/integrate-self-hosted-container-registries/README.md)
     * [Snyk integration to self-hosted container registries](products/snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries.md)
     * [Setting up the Container Registry Agent for a brokered ECR integration](products/snyk-container/integrate-self-hosted-container-registries/setting-up-the-container-registry-agent-for-a-brokered-ecr-integration.md)
-  * [Image scanning library](products/snyk-container/image-scanning-library/README.md)
+  * [Image scanning information library](products/snyk-container/image-scanning-library/README.md)
     * [ACR image scanning](products/snyk-container/image-scanning-library/acr-image-scanning/README.md)
       * [Container security with ACR: integrate and test](products/snyk-container/image-scanning-library/acr-image-scanning/container-security-with-acr-integrate-and-test.md)
       * [Configure integration for ACR](products/snyk-container/image-scanning-library/acr-image-scanning/configure-integration-for-acr.md)
