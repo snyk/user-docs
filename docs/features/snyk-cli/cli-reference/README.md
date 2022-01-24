@@ -250,5 +250,3 @@ You can set these environment variables to change CLI run settings. These keys w
 ### Snyk API usage policy <a href="#snyk-api-usage-policy" id="snyk-api-usage-policy"></a>
 
 The use of Snyk's API, whether through the use of the 'snyk' npm package or otherwise, is subject to the [terms & conditions](https://snyk.co/ucT6N)
-
-<iframe src="https://raw.githubusercontent.com/snyk/snyk/master/help/README.md/">JS not enabled.</iframe>
