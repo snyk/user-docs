@@ -84,13 +84,13 @@ Setting a default will ensure all newly monitored projects will be created under
 
 `--project-name=PROJECT_NAME` Specify a custom Snyk project name.
 
-`--target-reference=TARGET_REFERENCE` A reference which differentiates this project. For example, a branch name or version. Projects using the same reference can be used for grouping. Only supported for [Snyk Open Source](../../../products/snyk-open-source/). For more information, see: [grouping-projects-by-branch-or-version.md](../secure-your-projects-in-the-long-term/grouping-projects-by-branch-or-version.md "mention").
+`--target-reference=TARGET_REFERENCE` A reference which differentiates this project. For example, a branch name or version. Projects using the same reference can be used for grouping. Only supported for [Snyk Open Source](../../../products/snyk-open-source/). For more information, see: [grouping-projects-by-branch-or-version.md](../grouping-projects-by-branch-or-version.md "mention").
 
 `--project-environment=ENVIRONMENT[,ENVIRONMENT]...>` (only in monitor command) Set the project environment to one or more values (comma-separated). To clear the project environment set `--project-environment=`. Allowed values: frontend, backend, internal, external, mobile, saas, onprem, hosted, distributed
 
 `--project-lifecycle=LIFECYCLE[,LIFECYCLE]...>` (only in monitor command) Set the project lifecycle to one or more values (comma-separated). To clear the project lifecycle set `--project-lifecycle=`. Allowed values: production, development, sandbox
 
-`--project-business-criticality=BUSINESS`_`CRITICALITY[,BUSINESS_CRITICALITY]...>` (only in monitor command)_ Set the project business criticality to one or more values (comma-separated). To clear the project business criticality set `--project-business-criticality=`. Allowed values: critical, high, medium, low \_\_
+`--project-business-criticality=BUSINESS`_`CRITICALITY[,BUSINESS_CRITICALITY]...>` (only in monitor command)_ Set the project business criticality to one or more values (comma-separated). To clear the project business criticality set `--project-business-criticality=`. Allowed values: critical, high, medium, low __&#x20;
 
 `--project-tags=TAG[,TAG]...>` (only in monitor command). Alias `--tags=TAG[,TAG]...>.` Set the project tags to one or more values (comma-separated key value pairs with an "=" separator). e.g. --project-tags=department=finance,team=alpha. To clear set project tags `--project-tags=`
 
