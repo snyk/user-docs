@@ -121,11 +121,11 @@ A distributed version-control system for tracking changes in source code during 
 
 ### IAC
 
-Infrastructure as Code. See [Snyk Infrastructure as Code.](glossary.md)
+Infrastructure as Code. See [Snyk Infrastructure as Code.](glossary.md#snyk-infrastructure-as-code)
 
 ### IAST
 
-Interactive Application Security Testing. This approach tests for vulnerabilities while running the application. See **DAST** and **SAST**.
+Interactive Application Security Testing. This approach tests for vulnerabilities while running the application. See [DAST](glossary.md#dast) and [SAST](glossary.md#sast).
 
 ### IDE
 
