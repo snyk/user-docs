@@ -10,6 +10,10 @@ For more details, see [JetBrains IDE Plugins](https://docs.snyk.io/integrations/
 
 For more details, see the [Visual Studio Code extension for Snyk Code](../../../features/integrations/ide-tools/visual-studio-code-extension-for-snyk-code.md).
 
+### Visual Studio IDE plugin
+
+For more details, see the [Visual Studio extension for Snyk Code.](../../../features/integrations/ide-tools/visual-studio-extension.md)
+
 ## SCM integrations
 
 ### Repository monitoring
