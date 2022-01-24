@@ -4,7 +4,7 @@ Use our Snyk CLI tool to find and fix known vulnerabilities in your dependencies
 
 You can install the Snyk CLI using multiple [installation methods](./#snyk-cli-installation-methods).
 
-After you install the Snyk CLI, you can [get started](./#getting-started-with-snyk-cli) testing and fixing your vulnerabilities.
+After you install the Snyk CLI, you can [get started](../getting-started-with-the-cli/) testing and fixing your vulnerabilities.
 
 ## Snyk CLI Installation methods
 
@@ -122,7 +122,7 @@ docker run -it
 
 ### Install as a part of a Snyk integration
 
-Snyk also offers many [integrations](../../integrations/) into developer tooling. These integrations will install and manage the Snyk CLI for you. For example:
+Snyk also offers many [integrations](../../integrations/) into developer tooling. These integrations install and manage the Snyk CLI for you. Integrations include the following:
 
 * [Snyk Jenkins plugin](https://github.com/jenkinsci/snyk-security-scanner-plugin)
 * [CircleCI Orb](https://github.com/snyk/snyk-orb)
@@ -133,111 +133,4 @@ Snyk also offers many [integrations](../../integrations/) into developer tooling
 * [Eclipse IDE Extension](https://github.com/snyk/snyk-eclipse-plugin)
 * [Maven plugin](https://github.com/snyk/snyk-maven-plugin)
 
-See the [integrations](../../integrations/ "mention") docs for more details.
-
-## Getting started with Snyk CLI
-
-After you install the Snyk CLI, you can verify it's working by running
-
-```bash
-snyk --version
-```
-
-### Authorization
-
-Snyk CLI depends on [Snyk.io](https://snyk.io) APIs. Connect your Snyk CLI with [Snyk.io](https://snyk.io) by running:
-
-```bash
-snyk auth
-```
-
-### Scanning your project
-
-If you are already in a folder with a supported project, start by running:
-
-```bash
-snyk test
-```
-
-Or scan a Docker image by its tag with [Snyk Container](https://snyk.io/product/container-vulnerability-management/):
-
-```bash
-snyk container test ubuntu:18.04
-```
-
-Or a k8s file:
-
-```bash
-snyk iac test /path/to/kubernetes_file.yaml
-```
-
-### Monitoring your project
-
-Snyk can also monitor your project periodically and alert you for new vulnerabilities. The `snyk monitor` is similar to `snyk test` and can be used to create a project on the Snyk website that will be continuously monitored for new vulnerabilities.
-
-See [monitor-your-projects-at-regular-intervals.md](../secure-your-projects-in-the-long-term/monitor-your-projects-at-regular-intervals.md "mention")
-
-### Security
-
-* `@snyk/protect`: [npm package for `snyk-protect` command](https://www.npmjs.com/package/@snyk/protect)
-
-This repository is a monorepo, also covering other projects and tools:
-
-This project is open source but we don't encourage outside contributors.
-
-### Contributing
-
-GitHub Issues on any [Snyk project](https://github.com/snyk) are not actively monitored by Snyk support.
-
-We recommend reaching out via the [support@snyk.io](mailto:support@snyk.io) email whenever you need help with Snyk CLI or Snyk in general.
-
-## Getting support
-
-```bash
-snyk --help
-# or get help for a specific command like
-snyk iac --help
-snyk code --help
-```
-
-See all the available commands and options by running `--help`:
-
-*   `--severity-threshold=low|medium|high|critical`
-
-    Only report vulnerabilities of provided level or higher.
-*   `--json`
-
-    Prints results in JSON format.
-*   `--all-projects`
-
-    Auto-detect all projects in working directory
-
-Here are some flags that you might find useful:
-
-### More flags and options to try
-
-```bash
-# Using a SNYK_TOKEN envvar (preferred)
-SNYK_TOKEN=<SNYK_API_TOKEN> snyk test
-
-# Or using a Snyk auth command
-snyk auth <SNYK_API_TOKEN>
-snyk test
-```
-
-You can authorize Snyk CLI in your CI/CD programmatically:
-
-Use one of our integrations to stay secure.
-
-Snyk is really powerful when you are continuously scanning and monitoring your projects for vulnerabilities.
-
-#### Add Snyk to your CI/CD
-
-```
-> snyk monitor
-Monitoring /project (project-name)...
-
-Explore this snapshot at https://app.snyk.io/org/my-org/project/29361c2c-9005-4692-8df4-88f1c040fa7c/history/e1c994b3-de5d-482b-9281-eab4236c851e
-
-Notifications about newly disclosed issues related to these dependencies will be emailed to you.
-```
+See the [integrations](../../integrations/) docs for more details.
