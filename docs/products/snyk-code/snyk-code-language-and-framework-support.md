@@ -45,7 +45,7 @@ The following are the supported extensions:
 c,cc,cpp,cxx,h,hpp,hxx,ejs,es,es6,htm,html,js,jsx,ts,tsx,vue,java,erb,haml,rb,rhtml,slim,py,go,ASPX,Aspx,CS,Cs,aspx,cs,php, xml
 {% endhint %}
 
-_\*Please note that Snyk Code will ignore files with less than 5 lines_&#x20;
+_\*Please note that Snyk Code will ignore files with 3 or less lines per file._ In addition, single files larger than 4MB will be ignored.
 
 ### Framework support
 
