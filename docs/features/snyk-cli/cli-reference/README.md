@@ -251,9 +251,4 @@ You can set these environment variables to change CLI run settings. These keys w
 
 The use of Snyk's API, whether through the use of the 'snyk' npm package or otherwise, is subject to the [terms & conditions](https://snyk.co/ucT6N)
 
-<iframe id="inlineFrameExample"
-title="Inline Frame Example"
-width="300"
-height="200"
-src="https://raw.githubusercontent.com/snyk/snyk/master/help/README.md">
-</iframe>
+<iframe src='https://raw.githubusercontent.com/snyk/snyk/master/help/README.md'>JS not enabled.</iframe>
