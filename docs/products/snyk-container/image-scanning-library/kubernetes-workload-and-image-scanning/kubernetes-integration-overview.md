@@ -19,6 +19,10 @@ This feature is available in Business and Enterprise plans. See [pricing plans](
 5. Snyk monitors your imported workloads on an ongoing basis, reporting on new vulnerabilities as they are disclosed whenever they affect your projects.
 6. Based on your configurations, if vulnerabilities are found, Snyk notifies you via email or Slack so that you can take immediate action.
 
+{% hint style="warning" %}
+In order to maintain the health of the database, any information that relates to a workload that hasn't been **changed or updated for 4 days** would be removed. This could lead to failure on **retesting** the workload.
+{% endhint %}
+
 **Terms and conditions**
 
 _The Snyk Container Kubernetes integration uses Red Hat UBI (Universal Base Image)._
