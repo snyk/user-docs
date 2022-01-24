@@ -1,8 +1,7 @@
 # Snyk User Documentation
 
 {% hint style="danger" %}
-Log4Shell vulnerability ([CVE-2021-44228](https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720)) disclosed: Prevent Log4j RCE by updating to the latest version.\
-[**Learn more**](https://snyk.io/blog/log4j-rce-log4shell-vulnerability-cve-2021-4428/)
+Find and fix Log4Shell vulnerability ([CVE-2021-44228](https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720)): [**Learn more**](https://snyk.io/blog/log4j-rce-log4shell-vulnerability-cve-2021-4428/)**.**
 {% endhint %}
 
 ### **What is Snyk?**
@@ -35,8 +34,7 @@ Google, Salesforce, Datadog, Atlassian, Twilio, Revolut and many more are using 
 2. Run tests against your project.
 3. Review your results to identify vulnerabilities.
 4. Correct these vulnerabilities via Pull Requests
-5. Remain secure with monitoring\
-
+5. Remain secure with monitoring\\
 
 See the Snyk [Getting started guides](https://docs.snyk.io/getting-started) for more details.
 
