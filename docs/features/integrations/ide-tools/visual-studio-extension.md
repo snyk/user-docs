@@ -1,23 +1,19 @@
 # Visual Studio extension
 
-The Visual Studio extension ([Snyk’s Vulnerability Scanner](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs)) helps you find and fix security vulnerabilities in your projects. Within a few seconds, the extension will provide a list of all the different types of security vulnerabilities identified together with actionable fix advice. Using the engine behind Snyk Open Source Security, we find known vulnerabilities in both the direct and in-direct (transitive) open source dependencies you are pulling into the project.
+The Visual Studio extension ([Snyk’s Vulnerability Scanner](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs)) helps you find and fix security vulnerabilities in your projects. Within a few seconds, the extension will provide a list of all the different types of security vulnerabilities identified together with actionable fix advice. The extension combines the power of two Snyk products: Snyk Open Source and Snyk Code:
 
-{% hint style="info" %}
-Snyk's Visual Studio extension is available for install on the marketplace: [https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs).
-{% endhint %}
-
-## Introduction
-
-Use this documentation to get started with the Visual Studio extension for [Snyk Open Source](https://snyk.io/product/open-source-security-management/).
+1. With Snyk Open Source we find known vulnerabilities in both the direct and in-direct (transitive) open source dependencies you are pulling into the project.
+2. With Snyk Code we find known security vulnerabilities and code quality issues at a blazing speed looking at the code you and your team wrote.
 
 ## Software requirements
 
 * Operating system - Windows.
-* Supported versions of Visual Studio: 2015, 2017, 2019. Compatible with Community, Professional and Enterprise.
+* Supported versions of Visual Studio: 2015, 2017, 2019, 2022. Compatible with Community, Professional and Enterprise.
 
 ## Supported languages
 
-Currently supported languages for Snyk Open Source are C#, JavaScript, TypeScript, Java, Go, Ruby, Python, PHP, Scala, Swift, Objective-C. See [Snyk Open Source language and framework support](https://docs.snyk.io/snyk-open-source/language-and-package-manager-support).
+* Supported languages for Snyk Open Source are C#, JavaScript, TypeScript, Java, Go, Ruby, Python, PHP, Scala, Swift, Objective-C. See the full list [here](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support).
+* Supported languages for Snyk Code are C# ([frameworks](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#c-frameworks)), Java, JavaScript, TypeScript, Python. See the full list [here](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support).
 
 ## Install the extension
 
@@ -72,12 +68,33 @@ Once the authentication has been confirmed, please feel free to close the browse
 
 Open your solution and run Snyk scan. Depending on the size of your solution, time to build a dependency graph, it might take from less than a minute to a couple of minutes to get the vulnerabilities.
 
+The extension provides the user with two kinds of results:
+
+* Open Source vulnerabilities
+* Snyk Code issues
+
+### Open Source vulnerabilities
+
 * Note that your solution will have to successfully build in order to allow the CLI to pick up the dependencies (and find the vulnerabilities).
 * If you see only NPM vulnerabilities or vulnerabilities that are not related to your C#/.NET projects, that might mean your project is not built successfully and wasn’t detected by the CLI. Feel free to reach out to us (contacts at the end of the document) if you think something is not as expected, we are happy to help or clarify something for you.
 
 ![](../../../.gitbook/assets/readme\_image\_3\_1\_1.png)
 
 ![](../../../.gitbook/assets/readme\_image\_3\_1\_2.png)
+
+### Snyk Code issues
+
+Snyk Code analysis shows a list of security vulnerabilities and code issues found in the application code. For more details and examples of how others fixed the issue, select a security vulnerability or a code security issue. Once selected you will see the Snyk suggestion information in a panel.
+
+![](../../../.gitbook/assets/readme\_image\_3\_1\_3.png)
+
+The Snyk Suggestion panel shows the argumentation of the Snyk engine using for example variable names of your code and the line numbers in red. You can also see:
+
+* Links to external resources to explain the bug pattern in more detail (the More info link).
+* Tags that were assigned by Snyk, such as Security (the issue found is a security issue), Database (it is related to database interaction), or In Test (the issue is within the test code).
+* Code from open source repositories that might be of help to see how others fixed the issue.
+
+![](../../../.gitbook/assets/readme\_image\_3\_1\_4.jp2)
 
 ## View analysis results
 
@@ -109,6 +126,14 @@ After the plugin is installed, you can set the following configurations for the 
 * **Project settings**: Specify any additional Snyk CLI parameters.
 * **Scan all projects**: Auto-detect all projects in the working directory. It's enabled by default.
 
+In the settings, you can also choose which results you want to receive:
+
+* Open Source vulnerabilities
+* Snyk Code Security vulnerabilities
+* Snyk Code Quality issues
+
+![](../../../.gitbook/assets/readme\_image\_settings\_product\_selection.jp2)
+
 ## Known caveats
 
 ## Could not detect supported target files
@@ -121,16 +146,10 @@ After the plugin is installed, you can set the following configurations for the 
 
 ## How to find the log files
 
-Run Visual Studio with ‘/log’ parameter and path where do you want to save log file.
+Logs could be found in user AppData directory:
 
 ```
-devenv /log "%DIRECTORY_PATH%\MyVSLog.xml"
-```
-
-As an example, for Visual Studio 2019 it could be
-
-```
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe /log "C:\Temp\MyVSLog.xml"
+%HOMEPATH%\AppData\Local\Snyk\snyk-extension.log
 ```
 
 ## Build process
