@@ -36,7 +36,7 @@ Implementing security throughout the CI/CD pipeline, automating security embeddi
 
 ### Container
 
-Containers allow you to package applications and their dependencies together, to be deployed as a single runnable unit. A container is an abstraction provided by the operating system kernel, that allows a process to be isolated from other processes running on the system. Also see [Snyk Container.](https://support.snyk.io/hc/en-us/articles/360017682058-Snyk-Glossary#SnykContainer)
+Containers allow you to package applications and their dependencies together, to be deployed as a single runnable unit. A container is an abstraction provided by the operating system kernel, that allows a process to be isolated from other processes running on the system. Also see [Snyk Container.](glossary.md#snyk-container)
 
 ### Container engine
 
