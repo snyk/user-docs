@@ -225,7 +225,7 @@ Static Analysis Results Interchange Format. A standard, JSON-based format for th
 
 ### SAST
 
-Static Application Security Testing. A method to secure software by reviewing the source code of your proprietary software, and identifying sources of vulnerabilities. Also see [DAST](glossary.md#ast).
+Static Application Security Testing. A method to secure software by reviewing the source code of your proprietary software, and identifying sources of vulnerabilities. Also see [DAST](glossary.md#dast).
 
 ### SBOM
 
