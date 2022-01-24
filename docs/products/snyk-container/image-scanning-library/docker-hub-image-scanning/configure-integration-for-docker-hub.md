@@ -6,12 +6,13 @@ Enable integration between Docker Hub and Snyk, and start managing your vulnerab
 2. Click **Docker Hub**
 3. Enter your Docker Hub username and Access Token (see below to generate token)
 4. click **Save**, the page will reload with new options and the Access Token field will be blank--this is normal
+5. A confirmation message that the details were saved also appears in green at the top of the screen.
 
 ![This is an example of a successful connection.](<../../../../.gitbook/assets/Screen Shot 2022-01-21 at 9.48.27 AM.png>)
 
 #### Connection failure
 
-A confirmation message that the details were saved also appears in green at the top of the screen. In addition, if the connection to Docker Hub failed, a notification appears.
+If the connection to Docker Hub failed, an error notification appears:
 
 ![This is an example of an unsuccessful connect: "Could not connect to Docker Hub".](<../../../../.gitbook/assets/Screen Shot 2022-01-21 at 9.48.50 AM.png>)
 
