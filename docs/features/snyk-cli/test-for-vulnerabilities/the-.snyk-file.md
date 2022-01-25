@@ -14,7 +14,7 @@ The following video provides an introduction to the `.snyk` file.
 
 {% embed url="https://youtu.be/QSIBt-hQ0Xo" %}
 
-### Capabilities and behaviors
+## Capabilities and behaviors
 
 The `.snyk` policy file in a project is used to apply ignores and other settings for the `snyk test`and `snyk monitor` commands, as well as any tests done through the API or website. For IaC ignore rules see [IaC ignores using the .snyk policy file](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file).
 
@@ -30,7 +30,7 @@ The `.snyk` policy file in a project is used to apply ignores and other settings
   * CLI and CI/CD setting: the language setting for the current project
   * SCM scans (for example, GitHub): the Snyk web UI currently limits users to setting Python versions at the organization level. When you include the `.snyk` file in your code repository and the language setting value is set, then when you run code repository scans you gain the advantage of creating project-level Python settings. You may need to re-import the project if the `.snyk` file was not present at the initial import of the project into Snyk.
 
-### `.snyk` file creation
+## `.snyk` file creation
 
 The `.snyk` file can be created in a number of ways:
 
@@ -43,7 +43,7 @@ The `.snyk` file can be created in a number of ways:
  version: v1.22.1
 ```
 
-### Syntax
+## Syntax
 
 The `.snyk` file has the following content:
 
@@ -77,7 +77,7 @@ Ignore:
       expires: 'datetime string'
 ```
 
-### Monorepos and complex project considerations
+## Monorepos and complex project considerations
 
 Snyk CLI expects the `.snyk` file to be relative to the manifest being analyzed. In the case of a complex project or monorepo, there may be many manifests in subfolders, and you may wish to use a centralized ignore policy.
 
@@ -89,9 +89,9 @@ Ignores can be specified in the web interface only after an issue is detected an
 
 The ignore rules can be overridden if admin users only is enabled for the relevant organization (click on **Settings** > **General** > **Ignores**).
 
-### Examples
+## Examples
 
-#### Creating a .snyk  file
+### Creating a .snyk  file
 
 Generate a patch rule using a vulnerability fix PR:
 
@@ -106,7 +106,7 @@ patch:
         patched: '2020-01-20T14:26:34.404Z'
 ```
 
-#### Setting the language version for Python
+### Setting the language version for Python
 
 Manually modify the `.snyk` file to set `language-settings:` for the project to Python 2.7:
 
@@ -128,7 +128,7 @@ python: "3.6.2"
 
 **Note:** When you include the `.snyk` file in your code repository and the `language-settings:` value is set, then when you run code repository scans you gain the advantage of creating project-level Python settings.&#x20;
 
-#### Setting vulnerability ignore rules
+### Setting vulnerability ignore rules
 
 Ignore a specific vulnerability for a given path:
 
@@ -163,13 +163,13 @@ ignore:
        expires: '2020-06-19T20:36:54.553Z'
 ```
 
-#### Setting license ignore rules
+### Setting license ignore rules
 
 To ignore the license issue for package, find the  ID for the license in the output of the `snyk test` command.&#x20;
 
 The license ID is part of the license issue URL, for example, in this URL: [https://snyk.io/vuln/snyk:lic:npm:symbol:MPL-2.0](https://snyk.io/vuln/snyk:lic:npm:symbol:MPL-2.0), the license ID is `snyk:lic:npm:symbol:MPL-2.0`.
 
-#### **Ignoring the license with the CLI**
+### **Ignoring the license with the CLI**
 
 Enter the license ID in lowercase to avoid causing an error. Only the proper name of the license can be in uppercase. In the example that follows, everything is in lowercase except the proper name of the license, GPL-2.0.
 
@@ -185,7 +185,7 @@ ignore:
         expires: 2020-11-07T11:38:28.614Z
 ```
 
-### .snyk related CLI commands
+## .snyk related CLI commands
 
 The `snyk policy` command displays the `.snyk` policy for a package.
 
@@ -203,11 +203,11 @@ The following example shows using the `snyk ignore` command to generate a rule t
 snyk ignore --id=’SNYK-JS-BSON-561052’ --expiry=’2018-04-01’ --reason=’testing’
 ```
 
-### Best practices
+## Best practices
 
 The `.snyk` file should be versioned in the code repository, the same as other applications and build resources.
 
-### Additional information
+## Additional information
 
 [Ignore vulnerabilities using Snyk CLI](https://docs.snyk.io/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli)\
 Support KB - [Ignoring via the CLI is not enabled for this organization](https://support.snyk.io/hc/en-us/articles/360001558598)\
