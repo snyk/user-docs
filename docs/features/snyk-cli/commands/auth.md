@@ -1,5 +1,7 @@
 # Auth
 
+## Auth
+
 ### Usage
 
 `snyk auth [<API_TOKEN>] [<OPTIONS>]`
