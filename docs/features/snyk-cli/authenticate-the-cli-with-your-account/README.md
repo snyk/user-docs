@@ -1,6 +1,6 @@
 # Authenticate the CLI with your account
 
-To associate the Snyk CLI for use with your Snyk account, you must first authenticate your machine. No repository permissions are needed at this stage, only your email address.
+To associate the Snyk CLI for use with your Snyk account, you must first authenticate your machine. No repository permissions are needed at this stage, only your email address. When you have authenticated, you can [get started](../getting-started-with-the-cli/) using the CLI.
 
 You can authenticate:
 
