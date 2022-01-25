@@ -2,7 +2,9 @@
 
 ### Usage
 
-`snyk iac <COMMAND> [<OPTIONS>] [<PATH>]`
+```
+snyk iac <COMMAND> [<OPTIONS>] [<PATH>]
+```
 
 ### Description
 
@@ -105,28 +107,44 @@ Example: `--rules=bundle.tar.gz` (Scan the configuration files using custom rule
 
 #### Test a CloudFormation file
 
-`$ snyk iac test /path/to/cloudformation_file.yaml`
+```
+$ snyk iac test /path/to/cloudformation_file.yaml
+```
 
 #### Test a Kubernetes file
 
-`$ snyk iac test /path/to/kubernetes_file.yaml`
+```
+$ snyk iac test /path/to/kubernetes_file.yaml
+```
 
 #### Test a Terraform file
 
-`$ snyk iac test /path/to/terraform_file.tf`
+```
+$ snyk iac test /path/to/terraform_file.tf
+```
 
 #### Test a Terraform plan file
 
-`$ terraform plan -out=tfplan.binary` `$ terraform show -json tfplan.binary > tf-plan.json` `$ snyk iac test tf-plan.json`
+```
+$ terraform plan -out=tfplan.binary
+$ terraform show -json tfplan.binary > tf-plan.json
+$ snyk iac test tf-plan.json
+```
 
 #### Test an ARM file
 
-`$ snyk iac test /path/to/arm_file.json`
+```
+$ snyk iac test /path/to/arm_file.json
+```
 
 #### Test matching files in a directory
 
-`$ snyk iac test /path/to/directory`
+```
+$ snyk iac test /path/to/directory
+```
 
 #### Test matching files in a directory using a local custom rules bundle
 
-`$ snyk iac test /path/to/directory --rules=bundle.tar.gz`
+```
+$ snyk iac test /path/to/directory --rules=bundle.tar.gz
+```
