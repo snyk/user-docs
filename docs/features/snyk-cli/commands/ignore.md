@@ -1,10 +1,10 @@
 # Ignore
 
-### Usage
+## Usage
 
 `snyk ignore --id=<ISSUE_ID> [--expiry=<EXPIRY>] [--reason=<REASON>] [<OPTIONS>]`
 
-### Description
+## Description
 
 The `snyk ignore` command modifies the `.snyk` policy file to ignore a stated issue, according to its snyk ID for all occurrences. This updates your local `.snyk` file to contain a block similar to the following:
 
@@ -16,24 +16,24 @@ ignore:
         expires: <EXPIRY>
 ```
 
-### Debug
+## Debug
 
 Use the `-d` option to output the debug logs.
 
-### Options
+## Options
 
-#### `--id=<ISSUE_ID>`
+### `--id=<ISSUE_ID>`
 
 Snyk ID for the issue to ignore. Required.
 
-#### `--expiry=<EXPIRY>`
+### `--expiry=<EXPIRY>`
 
 Expiry date in a format `YYYY-MM-DD` ([ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) and [RFC 2822](https://tools.ietf.org/html/rfc2822) are supported).
 
-#### `--reason=<REASON>`
+### `--reason=<REASON>`
 
 Human-readable `<REASON>` to ignore this issue.
 
-### Example: ignore a specific vulnerability
+## Example: ignore a specific vulnerability
 
 `$ snyk ignore --id='npm:qs:20170213' --expiry='2021-01-10' --reason='Module not affected by this vulnerability'`
