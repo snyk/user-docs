@@ -1,6 +1,6 @@
 # Kubernetes manifests
 
-To simply the deployment of our application, we have provided two [configuration files](https://kubernetes.io/docs/concepts/configuration/overview/) which will create the necessary resources to run our application. These two files will consist of a Deployment and a Service and are available in the `./deployment` directory of the accompanying GitHub repository. Let's take a look at what's in each of these configuration files.
+To simplify the deployment of our application, we have provided two [configuration files](https://kubernetes.io/docs/concepts/configuration/overview/) which will create the necessary resources to run our application. These two files will consist of a Deployment and a Service and are available in the `./deployment` directory of the accompanying GitHub repository. Let's take a look at what's in each of these configuration files.
 
 ## Deployment
 
@@ -98,4 +98,3 @@ spec:
     app: goof
     tier: backend
 ```
-
