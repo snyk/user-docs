@@ -13,4 +13,4 @@ For more details about how we scan, see [How Snyk container security works](http
 1. [Enable permissions to access GCR](https://support.snyk.io/hc/articles/360004191777#UUID-53c3d159-a436-9605-ec76-6bdc016fd824)
 2. [Configure integration for GCR](https://support.snyk.io/hc/articles/360003916118#UUID-9e0df3f8-0780-b593-573b-5185bdca4a6d)
 
-Also see our introduction to [container security](https://snyk.io/container-security/) best practice.
+Also see our introduction to [container security best practice](https://snyk.io/learn/container-security/).
