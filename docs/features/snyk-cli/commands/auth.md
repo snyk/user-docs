@@ -6,7 +6,7 @@
 
 ## Description
 
-The `snyk auth` command authenticates your machine to associate the Snyk CLI with your Snyk account. Running `$ snyk auth` opens a browser window with prompts to log in to your Snyk account and authenticate. No repository permissions are needed at this stage, only your email address.
+The `snyk auth` command authenticates your machine to associate the Snyk CLI with your Snyk account. Running `$ snyk auth` opens a browser window with prompts to log in to your Snyk account and authenticate. No repository permissions are needed at this stage, only your email address. When you have authenticated, you can [get started](https://docs.snyk.io/features/snyk-cli/getting-started-with-the-cli) using the CLI.
 
 ## Value
 
