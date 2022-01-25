@@ -4,7 +4,7 @@
 
 ![Snyk CLI test command output](../../.gitbook/assets/snyk-cli-screenshot.png)
 
-### What is [Snyk](https://snyk.io)?
+## What is [Snyk](https://snyk.io)?
 
 [Snyk](https://snyk.io) is a developer-first, cloud-native security tool. It covers multiple areas of application security:
 
@@ -15,10 +15,10 @@
 
 [Learn more about what Snyk can do and sign up for a free account »](https://snyk.io)
 
-### What is Snyk CLI?
+## What is Snyk CLI?
 
 Snyk CLI brings functionality of [Snyk](https://snyk.io) into your development workflow. You can run the CLI locally, or in your CI/CD pipeline to scan your projects for security issues, including security vulnerabilities and license issues.
 
-### Supported languages and tools
+## Supported languages and tools
 
 Snyk supports many languages and tools, including Java, .NET, JavaScript, Python, Golang, PHP, C/C++, Ruby, Scala and more. CLI also supports [Snyk Container scanning](../../products/snyk-container/snyk-cli-for-container-security/) including Docker scanning, and [Infrastructure as Code scanning](../../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/) including Terraform and Kubernetes (K8s) projects. For more information see [Language and Package Manager support](../../products/snyk-open-source/language-and-package-manager-support/).&#x20;
