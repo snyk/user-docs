@@ -1,41 +1,64 @@
 # Getting started with the CLI
 
-The Snyk Command Line Interface (CLI) helps you find and fix known vulnerabilities in your dependencies, both manually and as part of your Continuous Integration (CI) build system.
+To use the CLI you must install it and authenticate. See [Install the Snyk CLI](../install-the-snyk-cli/) and the [Auth command help](../commands/auth.md).
 
-See [Language and package manager support](../../../products/snyk-open-source/language-and-package-manager-support/) for details about package managers and languages that the CLI supports.
+Before using the Snyk CLI to test for vulnerabilities you must build your project, with limited exceptions. Depending on the language of your project, you may need to set up your language environment before using the Snyk CLI. For details refer to [Language and package manager support](../../../products/snyk-open-source/language-and-package-manager-support/).
 
-## Install and authenticate the Snyk CLI
+## Scan your project
 
-1. Install the Snyk CLI using npm, Homebrew, Scoop or a manual installer from the Snyk GitHub repository. See [Install the Snyk CLI](../install-the-snyk-cli/).
-2. To associate your Snyk account with the CLI, authenticate your account, either through your browser or using your API token. See [Authenticate the CLI with your account](../authenticate-the-cli-with-your-account/).
+Once you have installed and authenticated, change directory into a folder containing a supported package manifest file (for example, `package.json`, `pom.xml`, `composer.lock`) using `cd /my/project/`. Then run `snyk test`. All vulnerabilities identified are listed, including their path and fix guidance.
 
-## Build your project
+You can also scan a Docker image by its tag with [Snyk Container](https://snyk.io/product/container-vulnerability-management/) by running, for example: `snyk container test ubuntu:18.04`.
 
-Before testing for vulnerabilities you must build your project, with limited exceptions. For details refer to [Language and package manager support](../../../products/snyk-open-source/language-and-package-manager-support/).
-
-## Test for vulnerabilities
-
-Once you have installed and authenticated, change directory into a folder containing a supported package manifest file (for example, `package.json`, `pom.xml`, `composer.lock`) and run:
-
-`cd /my/project/`
-
-`snyk test`
-
-All vulnerabilities identified are listed, including their path, and fix guidance.
+To test a Kubernetes (k8s) file run `snyk iac test /path/to/kubernetes_file.yaml`.
 
 ## Monitor your project
 
-Snyk uses monitoring to regularly test your code and notify you when new vulnerabilities are introduced. To set up your project to be monitored:
+Snyk can monitor your project periodically and alert you to new vulnerabilities. To set up your project to be monitored run `snyk monitor`.
 
-1.  Open a terminal from your project directory and run `snyk monitor`.
+This creates a snapshot of your current dependencies so Snyk can regularly scan your code. Snyk can then alert you about newly disclosed vulnerabilities as they are introduced or when a previously unavailable patch or upgrade path is created. The following code shows an example of the output of the `snyk monitor` command.
 
-    This command takes a snapshot of your current dependencies so Snyk can regularly scan your code, and notify you about newly disclosed vulnerabilities as they are introduced, or when a previously unavailable patch or upgrade path is created.
-2. Log in to the Snyk app and navigate to the [Projects page](https://app.snyk.io/projects) to see the latest snapshot and scan results.
+```
+> snyk monitor
+Monitoring /project (project-name)...
+
+Explore this snapshot at https://app.snyk.io/org/my-org/project/29361c2c-9005-4692-8df4-88f1c040fa7c/history/e1c994b3-de5d-482b-9281-eab4236c851e
+
+Notifications about newly disclosed issues related to these dependencies will be emailed to you.
+```
+
+You can log in to the Snyk app and navigate to the [Projects page](https://app.snyk.io/projects) to see the latest snapshot and scan results as shown in the following screenshot.
 
 For more information see [Monitor your projects at regular intervals](../secure-your-projects-in-the-long-term/monitor-your-projects-at-regular-intervals.md).
 
-## **Additional information**
+![Snyk monitor snapshot and scan results](<../../../.gitbook/assets/monitor (1).png>)
+
+## Additional information
 
 Run `snyk help` or see the [CLI reference](../cli-reference/).
 
 Snyk also provides a [handy cheat sheet](https://res.cloudinary.com/snyk/image/upload/v1551195097/Snyk\_CLI\_Cheat\_Sheet.pdf) and a [video tutorial](https://www.youtube.com/watch?v=xp\_LtchEkT8).
+
+In particular see the information about the following options that you may find useful:
+
+* `--severity-threshold=low|medium|high|critical`: Report only report vulnerabilities of the specified level or higher
+* `--json`: Print results in JSON format
+* `--all-projects`: Auto-detect all projects in the working directory
+
+## Getting support
+
+Send an email message to [support@snyk.io](mailto:support@snyk.io) whenever you need help with the Snyk CLI or Snyk in general. Note that Snyk support does not actively monitor GitHub Issues on any [Snyk project](https://github.com/snyk).
+
+## Contributing
+
+The Snyk CLI project is open source, but Snyk does not encourage outside contributors.
+
+You may look into [design decisions for the Snyk CLI](https://github.com/snyk/snyk/blob/master/help/\_about-this-project/README.md).
+
+The Snyk CLI repository is a monorepo that also covers other projects and tools, at this time:
+
+* [`@snyk/protect`](https://github.com/snyk/snyk/tree/master/packages/snyk-protect); [npm package for `snyk-protect` command](https://www.npmjs.com/package/@snyk/protect)
+
+## Security
+
+For any security issues or concerns, see the [SECURITY.md](https://github.com/snyk/snyk/blob/master/SECURITY.md) file in the GitHub repository.
