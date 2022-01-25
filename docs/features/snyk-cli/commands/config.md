@@ -1,59 +1,59 @@
 # Config
 
-### Usage
+## Usage
 
 `snyk config <COMMAND> [<OPTIONS>]`
 
-### Description
+## Description
 
 The `snyk config` command manages your local Snyk CLI config file, a JSON file located at `$XDG_CONFIG_HOME` or `~/.config` followed by `configstore/snyk.json`, for example, `~/.config/configstore/snyk.json`.
 
 This command does not manage the `.snyk` file that is part of your project. See the `snyk policy` and `snyk ignore` commands.
 
-### Debug
+## Debug
 
 Use the `-d` option to output the debug logs.
 
-### Commands
+## Commands
 
-#### `get <KEY>`
+### `get <KEY>`
 
 Print a config value.
 
-#### `set <KEY>=<VALUE>`
+### `set <KEY>=<VALUE>`
 
 Create a new config value.
 
-#### `unset <KEY>`
+### `unset <KEY>`
 
 Remove a config value.
 
-#### `clear`
+### `clear`
 
 Remove all config values.
 
-### Supported `<KEY>` values
+## Supported `<KEY>` values
 
-#### `api`
+### `api`
 
 API token to use when calling Snyk API.
 
-#### `endpoint`
+### `endpoint`
 
 Define the API endpoint to use.
 
-#### `disable-analytics`
+### `disable-analytics`
 
 Turn off analytics reporting.
 
-#### `oci-registry-url`
+### `oci-registry-url`
 
 Configure the OCI registry used in IaC scanning with custom rules.
 
-#### `oci-registry-username`
+### `oci-registry-username`
 
 Configure the username for an OCI registry used in IaC scanning with custom rules.
 
-#### `oci-registry-password`
+### `oci-registry-password`
 
 Configure the password for an OCI registry used in IaC scanning with custom rules.
