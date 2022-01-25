@@ -1,17 +1,17 @@
 # Policy
 
-### Usage
+## Usage
 
 `snyk policy [<PATH_TO_POLICY_FILE>] [<OPTIONS>]`
 
-### Description
+## Description
 
 The `snyk policy` command displays the `.snyk` policy file for a package.
 
-### Argument: `<PATH_TO_POLICY_FILE>`
+## Argument: `<PATH_TO_POLICY_FILE>`
 
 Manually pass a path to a `.snyk` policy file.
 
-### Debug
+## Debug
 
 Use `-d` option to output the debug logs.
