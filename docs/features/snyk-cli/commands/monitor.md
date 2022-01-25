@@ -231,7 +231,7 @@ Specify a custom path to the packages folder.
 
 When monitoring a .NET project, use this option to add a custom prefix to the name of files inside a project along with any desired separators, for example, `snyk monitor --file=my-project.sln --project-name-prefix=my-group/`. This is useful when you have multiple projects with the same name in other `.sln` files.
 
-## Options for npm projects
+## Option for npm projects
 
 ### `--strict-out-of-sync=true|false`
 
@@ -251,7 +251,7 @@ Default: true
 
 Detect and scan yarn workspaces. You can specify how many sub-directories to search using `--detection-depth` and exclude directories and files using `--exclude`.
 
-## Options for CocoaPods projects
+## Option for CocoaPods projects
 
 ### `--strict-out-of-sync=true|false`
 
