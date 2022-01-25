@@ -2,9 +2,7 @@
 
 ## Usage
 
-```
-snyk iac <COMMAND> [<OPTIONS>] [<PATH>]
-```
+`snyk iac <COMMAND> [<OPTIONS>] [<PATH>]`
 
 ## Description
 
