@@ -39,7 +39,7 @@ Use the `-d` option to output the debug logs.
 
 Use with options as documented to indicate how many sub-directories to search. `DEPTH` must be a number.
 
-### Default: no limit.
+Default: no limit.
 
 Example: `--detection-depth=3` limits search to the specified directory (or the current directory if no `<PATH>` is specified) plus three levels of subdirectories.
 
@@ -49,7 +49,7 @@ Specify the `<ORG_NAME>` to run Snyk commands tied to a specific organization. T
 
 If you have multiple organizations, you can set a default from the CLI using:
 
-### `$ snyk config set org=<ORG_NAME>`
+`$ snyk config set org=<ORG_NAME>`
 
 Set a default to ensure all newly tested projects are tested under your default organization. If you need to override the default, use the `--org=<ORG_NAME>` option.
 
@@ -59,7 +59,7 @@ Default: `<ORG_NAME>` that is the current preferred organization in your [Accoun
 
 Ignore all set policies, the current policy in the `.snyk` file, Org level ignores, and the project policy on snyk.io.
 
-#### `--policy-path=<PATH_TO_POLICY_FILE>`
+### `--policy-path=<PATH_TO_POLICY_FILE>`
 
 Manually pass a path to a `.snyk` policy file.
 
