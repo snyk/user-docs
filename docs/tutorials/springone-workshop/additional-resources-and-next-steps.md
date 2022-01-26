@@ -10,9 +10,8 @@ I want to thank you for your time and completing the exercises in this workshop.
 
 ## Additional Resources
 
-Additional DevSecOps resources are available on Snyk's [DevSecOps Hub](https://snyk.io/devsecops/). The open-source security foundation under the Linux Foundation. For more details, please visit [https://openssf.org/](https://openssf.org/).
+Additional DevSecOps resources are available on Snyk's [DevSecOps Hub](https://snyk.io/series/devsecops/). The open-source security foundation under the Linux Foundation. For more details, please visit [https://openssf.org/](https://openssf.org).
 
 ## Next Steps
 
 The workshop has an additional exercise for anyone interested. The CI/CD pipeline also builds a cloud-native container image using the Cloud Native Buildpacks and the pack command. The Github action to monitor the container images is inactive, but the image results can be monitored via Snyk and compared to the Docker file approach used in the workshop.
-
