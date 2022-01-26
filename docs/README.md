@@ -33,8 +33,8 @@ Google, Salesforce, Datadog, Atlassian, Twilio, Revolut and many more are using 
 1. [Sign up](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page) and connect to your project.
 2. Run tests against your project.
 3. Review your results to identify vulnerabilities.
-4. Correct these vulnerabilities via Pull Requests
-5. Remain secure with monitoring\\
+4. Correct these vulnerabilities via Pull Requests.
+5. Remain secure with monitoring.
 
 See the Snyk [Getting started guides](https://docs.snyk.io/getting-started) for more details.
 
