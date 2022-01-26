@@ -28,12 +28,25 @@ The command removes all the Kubernetes components associated with the chart and 
 
 ### Global Parameters
 
-#### Global Required parameters
+#### Global required parameters
 
 | Name                                          | Description                  | Default Value |
 | --------------------------------------------- | ---------------------------- | ------------- |
 | `global.imagePullSecret.credentials.username` | Docker hub registry username | `""`          |
 | `global.imagePullSecret.credentials.password` | Docker hub registry password | `""`          |
+
+#### Global optional parameters
+
+| Name                                    | Description                                                                                     | Default Value |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------- | ------------- |
+| `global.ingress.enable`                 | Enable Ingress                                                                                  | `false`       |
+| `global.ingress.host`                   | Ingress host                                                                                    | `""`          |
+| `global.ingress.annotations`            | Additional annotations for the ingress resource                                                 | `{}`          |
+| `global.ingress.tls.enabled`            | Enable TLS for the ingress endpoints                                                            | `false`       |
+| `global.ingress.tls.secret.name`        | Name of the secret to use for the ingress. Leave empty to default to `{servicename}-tls-secret` | `""`          |
+| `global.ingress.tls.secret.key`         | TLS key that will be used to create an ingress secret                                           | `""`          |
+| `global.ingress.tls.secret.cert`        | TLS certificate that will be used to create an ingress secret                                   | `""`          |
+| `global.ingress.tls.secret.annotations` | Additional annotations for the auto-generated TLS secret resource                               | `{}`          |
 
 #### Broker required parameters
 
@@ -154,6 +167,18 @@ Please use _one_ of the following SCM configurations:
 | `broker-client.tolerations`                | Aggregator Tolerations for pod assignment                                             | `[]`          |
 | `broker-client.affinity`                   | Forwarder Affinity for pod assignment                                                 | `{}`          |
 
+#### deeproxy
+
+| Name                                  | Description                                                      | Default Value |
+| ------------------------------------- | ---------------------------------------------------------------- | ------------- |
+| `deeproxy.enabled`                    | Enable deeproxy                                                  | `false`       |
+| `deeproxy.serviceAccount.create`      | Specify whether a Service Account should be created              | `true`        |
+| `deeproxy.serviceaccount.name`        | The name of the Service Account to create                        | `""`          |
+| `deeproxy.serviceAccount.annotations` | Additional Service Account annotations (evaluated as a template) | `{}`          |
+| `deeproxy.nodeSelector`               | Aggregator Node labels for pod assignment                        | `{}`          |
+| `deeproxy.tolerations`                | Aggregator Tolerations for pod assignment                        | `[]`          |
+| `deeproxy.affinity`                   | Forwarder Affinity for pod assignment                            | `{}`          |
+
 ### Third-party charts
 
 If you want to configure some of the third-party services that we use, examples can be found here:
@@ -202,19 +227,43 @@ kubectl cp <your-namespace>/<your-release>-fluentd-0:/var/log/snyk/logs/<file-na
 It may take a few minutes to copy all files.
 {% endhint %}
 
-### Enabling webhooks for broker client for Snyk Code PR Scanning
+### Enable required access
 
-In order to be able to create and handle SCM webhooks, `broker-client` must be exposed to the outside world.&#x20;
+The Snyk Code Local Engine entry point must be accessible from all clients using CLI and the SCM for PR check webhooks.&#x20;
 
-A basic ingress is available for it and can be enabled by setting `broker-client.ingress.enabled` to `true` and specifying a host on which the broker client's endpoints will be available via `broker-client.ingress.host` (for example "broker-client.example.com"). The default ingress exposes `/webhook/*` and `/healthcheck` endpoints from the `broker-client` service.
+Set this up as follows:
 
-Note that the ingress IP still has to be made available on the specified host via a DNS A record, which will depend on your cloud provider or server setup.
+1.  Run Snyk Code Local Engine with these additional arguments:\
+    (The DNS that you will use as **ingress.host** will be the entry point.)
 
-By default, the ingress endpoints are insecure. In order to secure them using TLS, set `broker-client.ingress.tls.enabled` to `true`.
+    ```
+    --set deeproxy.enabled="true" \
+    --set global.ingress.enabled="true" \
+    --set global.ingress.host="snyk-code-local-engine.example" 
+    ```
+2. Adding the service/nginx-ingress-controller's dynamically-allocated http port to your firewall. The port can be obtained with:\
+   `kubectl get svc my-release-nginx-ingress-controller`\
+   ``(The forwarded port to port 80 is the target.)
+3. The DNS used in point 1 must resolve to the node IP of the nginx-ingress-controller's pod. You can get this with:\
+   `kubectl get pods -o wide`
 
-You can specify the name of the secret you wish to use with `broker-client.ingress.tls.secret.name`, or leave it empty to default to the name of the service suffixed with `-tls-secret`.
+#### Checking setup
 
-If you do not already have a secret created for that host, you can set the `key` and `cert` values to the key and certificate, respectively, that you created for use with the host that the ingress will be using (they will be Base64 encoded for you
+You can check if this setup was successful by calling Snyk Code Local Engine APIs directly:
 
-Read more about securing an ingress with TLS [here](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls).\
+* http://snyk-code-local-engine.example:$port/api/healthcheck
+* http://snyk-code-local-engine.example:$port/broker/healthcheck
+
+With `$port` being the targeted port in step 2.
+
+We recommend restricting any other access to the entry point, specifically from any sources on the internet.
+
+#### TLS
+
+By default, the ingress endpoints are insecure. To secure them using TLS, set `global.ingress.tls.enabled` to `true`.
+
+Specify the name of the secret to use with `global.ingress.tls.secret.name`, or leave it empty to default to the name of the service suffixed with `-tls-secret`.\
 \
+If you do not already have a secret created for that host, set the `key` and `cert` values to the key and certificate, respectively, that you created for use with the host that the ingress will use (they will be Base64 encoded for you).
+
+Read more about securing an ingress with TLS [here](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls).
