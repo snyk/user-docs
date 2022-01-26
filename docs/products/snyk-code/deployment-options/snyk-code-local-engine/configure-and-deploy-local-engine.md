@@ -244,14 +244,21 @@ Set this up as follows:
     ```
 
 
-2. Adding the service/nginx-ingress-controller's dynamically-allocated http port to your firewall. The port can be obtained with:\
-   (The forwarded port to port 80 is the target.)\
-   \
-   `kubectl get svc my-release-nginx-ingress-controller`\
-   ``
-3. The DNS used in point 1 must resolve to the node IP of the nginx-ingress-controller's pod. You can get this with:\
-   \
-   `kubectl get pods -o wide`
+2.  Adding the service/nginx-ingress-controller's dynamically-allocated http port to your firewall. The port can be obtained with:\
+    (The forwarded port to port 80 is the target.)\
+
+
+    ```
+    $ kubectl get svc my-release-nginx-ingress-controller
+    ```
+
+    ``
+3.  The DNS used in point 1 must resolve to the node IP of the nginx-ingress-controller's pod. You can get this with:\
+
+
+    ```
+    $ kubectl get pods -o wide
+    ```
 
 #### Checking setup
 
