@@ -2,34 +2,33 @@
 
 ## What is DevSecOps?
 
-DevSecOps is the Venn diagram of IT. It represents where the developer, security, and operations organizations join forces to deliver applications to customers, using automated processes, while proactively addressing security, and maintaining observability and high availability.
+[DevSecOps](https://snyk.io/series/devsecops/) is the Venn diagram of IT. It represents where the developer, security, and operations organizations join forces to deliver applications to customers, using automated processes, while proactively addressing security, and maintaining observability and high availability.
 
 While this is the panacea and an incredible feat to accomplish, the reality is most enterprise organizations have a considerable amount of internal change to consider such a goal. In addition, DevSecOps is in its early stages of being formed, much like containers in 2015, and many of the best practices and thought leadership, if you will, are still developing.
 
-![DevSecOps](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/venn_devsecops.png)
+![DevSecOps](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/venn\_devsecops.png)
 
 ## What is the DevSecOps Workshop?
 
 This workshop's focus is to give developers and security teams hands-on experience using the Snyk solutions to solve security-related concerns in the development and CI/CD phases of the SDLC. Addressing application security concerns in these phases of the SDLC is often called "shift-left."
 
-In this workshop, we take the popular Spring Java application called Spring Petclinic \(SPC\) and deploy it as a container-based solution using Kubernetes. We apply the Snyk solutions during the SDLC to demonstrate the first principles of DevSecOps.
+In this workshop, we take the popular Spring Java application called Spring Petclinic (SPC) and deploy it as a container-based solution using Kubernetes. We apply the Snyk solutions during the SDLC to demonstrate the first principles of DevSecOps.
 
 Using Snyk solutions, we will cover the following:
 
-**Vulnerability management of open source components \(SCA\)**
+**Vulnerability management of open source components (SCA)**
 
-* The developer experience using a Snyk before committing code. 
+* The developer experience using a Snyk before committing code.
 * Using Snyk to automate vulnerabilities in source code
-* Using Snyk to provide security gates in CI/CD 
+* Using Snyk to provide security gates in CI/CD
 * License compliance of open source components
 
 **Container security**
 
 * Synk's container solution to scan container images.
-* Using Snyk to remediate vulnerability issues
+*   Using Snyk to remediate vulnerability issues
 
-  **Infrastructure as Code \(IaC\)**
-
+    **Infrastructure as Code (IaC)**
 * Snyk's IaC for Kubernetes solution to verify our K8s files adhere to policy standards.
 
 ## What do I need to complete the workshop?
@@ -61,4 +60,3 @@ We've created a lab VM with all the necessary tools to complete the exercises in
 ### Workshop Outline
 
 Each section contains a brief description followed by a set of workshop exercises.
-
