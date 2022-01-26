@@ -97,7 +97,7 @@
     * [Image layer information](products/snyk-container/getting-around-the-snyk-container-ui/image-layer-information.md)
   * [Scan your Dockerfile](products/snyk-container/scan-your-dockerfile/README.md)
     * [Automatically link between Dockerfile and images using labels](products/snyk-container/scan-your-dockerfile/automatically-link-between-dockerfile-and-images-using-labels.md)
-    * [Detect vulnerable bases images from Dockerfile](products/snyk-container/scan-your-dockerfile/detect-vulnerable-bases-images-from-dockerfile.md)
+    * [Detect vulnerable base images from Dockerfile](products/snyk-container/scan-your-dockerfile/detect-vulnerable-bases-images-from-dockerfile.md)
     * [Open pull requests to fix vulnerable base images in your Dockerfile](products/snyk-container/scan-your-dockerfile/open-pull-requests-to-fix-vulnerable-base-images-in-your-dockerfile.md)
     * [What is a Dockerfile Instruction?](products/snyk-container/scan-your-dockerfile/what-is-a-dockerfile-instruction.md)
     * [Supported repos for Dockerfile analysis](products/snyk-container/scan-your-dockerfile/supported-repos-for-dockerfile-analysis.md)
