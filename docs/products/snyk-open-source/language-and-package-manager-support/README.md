@@ -1,12 +1,12 @@
 # Language & package manager support
 
-## Language support summary
+### Language support summary
 
 Snyk supports a wide variety of development languages and for each language, we support multiple build tools and package managers.
 
 This page lists Snyk Open Source language support coverage. For more details, see specific pages in this section.
 
-## By language and package manager/build tool
+### By language and package manager/build tool
 
 | **Development Language** | **Package manager/build tool** |
 | ------------------------ | ------------------------------ |
@@ -36,7 +36,7 @@ This page lists Snyk Open Source language support coverage. For more details, se
 | Scala                    | sbt                            |
 | Swift                    | CocoaPods                      |
 
-## By language and framework
+### By language and framework
 
 | **Development Language** | **Framework**   |
 | ------------------------ | --------------- |
@@ -48,25 +48,3 @@ This page lists Snyk Open Source language support coverage. For more details, se
 | JavaScript               | vue             |
 | JavaScript               | angular         |
 | JavaScript               | Yarn Workspaces |
-
-| **Extension** |
-| ------------- |
-| .7z           |
-| .aar          |
-| .bz2          |
-| .egg          |
-| .gem          |
-| .gz           |
-| .gzip         |
-| .jar          |
-| .nupkg        |
-| .rar          |
-| .tar          |
-| .tar.bz2      |
-| .tar.gz       |
-| .tar.xz       |
-| .tgz          |
-| .war          |
-| .whl          |
-| .xz           |
-| .zip          |
