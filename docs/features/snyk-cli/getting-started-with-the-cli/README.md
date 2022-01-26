@@ -2,7 +2,13 @@
 
 To use the CLI you must install it and authenticate. See [Install the Snyk CLI](../install-the-snyk-cli/) and the [Auth command help](../commands/auth.md).
 
-Before using the Snyk CLI to test for vulnerabilities you must build your project, with limited exceptions. Depending on the language of your project, you may need to set up your language environment before using the Snyk CLI. For details refer to [Language and package manager support](../../../products/snyk-open-source/language-and-package-manager-support/).
+After authenticating you can **test** your installation. Change directory into a folder containing a supported package manifest file such as package.json, pom.xml, or composer.lock) (`cd /my/project/`) and run `snyk test`.
+
+Alternatively, you can perform a **quick test** on a public npm package, for example, `snyk test ionic`.
+
+Look at the `test` command **report** in your terminal. Snyk found and reported several vulnerabilities in the package. For each issue found, Snyk reports the severity of the issue, provides a link to a detailed description, reports the path through which the vulnerable module got into your system, and provides guidance on how to fix the problem.
+
+Before using the Snyk CLI to test your project for vulnerabilities you must **build your project**, with limited exceptions. Depending on the language of your project, you may need to **set up your language environment** before using the Snyk CLI. For details refer to [Language and package manager support](../../../products/snyk-open-source/language-and-package-manager-support/).
 
 ## Scan your project
 
