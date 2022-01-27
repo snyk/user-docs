@@ -1,5 +1,7 @@
 # Test for vulnerabilities
 
+This group of pages includes information about scanning projects for vulnerabilities and license issues.
+
 * [Use Snyk Open Source from the CLI](use-snyk-open-source-from-the-cli.md)
 * [Test public repositories before use](test-public-repositories-before-use.md)
 * [Test public npm packages before use](test-public-npm-packages-before-use.md)
