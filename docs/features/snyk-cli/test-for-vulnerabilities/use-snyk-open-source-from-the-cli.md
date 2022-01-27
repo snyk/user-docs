@@ -27,10 +27,10 @@ When `snyk test` runs, it tries to autodetect your project type by looking for t
 * build.gradle.kts
 * go.mod
 
-The way in which Snyk analyzes and builds the tree then varies depending on the language and package manager of the project (based on the manifest file type), as well as the method of analysis:
+The way in which Snyk analyzes the file and builds the tree varies depending on the language and package manager of the project (based on the manifest file type), as well as the method of analysis:
 
 * Using the Snyk CLI
-* Importing from a Snyk app
+* Importing from a Snyk SCM (Source Control Management) integration
 
 See [Language and package manager support](../../../products/snyk-open-source/language-and-package-manager-support/) for more information.
 
@@ -38,11 +38,11 @@ See [Language and package manager support](../../../products/snyk-open-source/la
 
 For projects that have multiple manifest files, specify the file that you want Snyk to inspect for package information by using the `--file` option. To identify all of the files, use the `--all-projects` option, for example:
 
-`$ snyk test --file=package.json`; `$ snyk test --all-projects`.
+`$ snyk test --file=package.json`; `$ snyk test --all-projects`
 
 ### Manifest files with custom names
 
-If your manifest files are from a supported language but have a custom name, you can pass the custom name to Snyk by using a combination of the file flag and the package-manager flag:
+If your manifest files are from a supported language but have a custom name, you can pass the custom name to Snyk by using a combination of the file option and the package-manager option:
 
 `$ snyk test --file=req.txt --package-manager=pip`
 
@@ -50,6 +50,6 @@ If your manifest files are from a supported language but have a custom name, you
 
 Many package managers allow calling out separately dependencies which are to be used only in a development or test context (that is, not eventually shipped to production). By default Snyk does not scan these dependencies. If you want your dev dependencies to be included in the scan use the `--dev` option:
 
-`$ snyk test --dev`.
+`$ snyk test --dev`
 
 See [Language and package manager support](../../../products/snyk-open-source/language-and-package-manager-support/) for more information concerning supported languages.
