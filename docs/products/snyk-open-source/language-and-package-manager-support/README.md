@@ -12,7 +12,7 @@ For language support for other Snyk products, see the docs for those products - 
 | [C / C++](snyk-for-c-c++.md)                                         | N/A                            |
 | [Elixir](snyk-for-elixir.md)                                         | hex                            |
 | [Go](snyk-for-golang.md)                                             | Go Modules, dep, govendor      |
-| [Java](snyk-for-java-gradle-maven.md)                                | Gradle, Maven, Ivy             |
+| [Java](snyk-for-java-gradle-maven.md)                                | Gradle, Maven                  |
 | [JavaScript](snyk-for-javascript.md)                                 | npm, yarn                      |
 | [Swift and Objective-C](snyk-for-swift-and-objective-c-cocoapods.md) | CocoaPods                      |
 | [PHP](snyk-for-php.md)                                               | Composer                       |
