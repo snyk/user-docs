@@ -1,50 +1,21 @@
 # Language & package manager support
 
-### Language support summary
+Snyk Open Source supports these development languages, build tools and package managers.
 
-Snyk supports a wide variety of development languages and for each language, we support multiple build tools and package managers.
+{% hint style="info" %}
+For language support for other Snyk products, see the docs for those products - for example, see [snyk-code-language-and-framework-support.md](../../snyk-code/snyk-code-language-and-framework-support.md "mention") for details of Snyk Code support.&#x20;
+{% endhint %}
 
-This page lists Snyk Open Source language support coverage. For more details, see specific pages in this section.
-
-### By language and package manager/build tool
-
-| **Development Language** | **Package manager/build tool** |
-| ------------------------ | ------------------------------ |
-| .NET- C#                 | Nuget                          |
-| .NET- F#                 | Nuget                          |
-| .NET- VB#                | Nuget                          |
-| .NET- C#                 | Paket                          |
-| .NET- F#                 | Paket                          |
-| .NET- VB#                | Paket                          |
-| C                        |                                |
-| C++                      |                                |
-| Elixir                   | hex                            |
-| Go                       | Go Modules                     |
-| Go                       | govendor                       |
-| Go                       | dep                            |
-| Java                     | Gradle                         |
-| Java                     | Maven                          |
-| Java                     | ivy                            |
-| javascript               | npm                            |
-| javascript               | yarn                           |
-| Objective-C              | CocoaPods                      |
-| PHP                      | Composer                       |
-| Python                   | pip                            |
-| Python                   | Poetry                         |
-| Python                   | pipenv                         |
-| Ruby                     | Bundler                        |
-| Scala                    | sbt                            |
-| Swift                    | CocoaPods                      |
-
-### By language and framework
-
-| **Development Language** | **Framework**   |
-| ------------------------ | --------------- |
-| .NET-C#                  | Core            |
-| .NET-C#                  | Framework       |
-| .NET-C#                  | Xamarin         |
-| .NET-C#                  | Standard        |
-| JavaScript               | React           |
-| JavaScript               | vue             |
-| JavaScript               | angular         |
-| JavaScript               | Yarn Workspaces |
+| **Language**                                                         | **Package manager/build tool** |
+| -------------------------------------------------------------------- | ------------------------------ |
+| [.NET](snyk-for-.net.md) (C#, F#, VB#)                               | Nuget, Paket                   |
+| [C / C++](snyk-for-c-c++.md)                                         | N/A                            |
+| [Elixir](snyk-for-elixir.md)                                         | hex                            |
+| [Go](snyk-for-golang.md)                                             | Go Modules, dep, govendor      |
+| [Java](snyk-for-java-gradle-maven.md)                                | Gradle, Maven, Ivy             |
+| [JavaScript](snyk-for-javascript.md)                                 | npm, yarn                      |
+| [Swift and Objective-C](snyk-for-swift-and-objective-c-cocoapods.md) | CocoaPods                      |
+| [PHP](snyk-for-php.md)                                               | Composer                       |
+| [Python](snyk-for-python.md)                                         | pip, Poetry, pipenv            |
+| [Ruby](snyk-for-ruby.md)                                             | Bundler                        |
+| [Scala](snyk-for-scala.md)                                           | sbt, CocoaPods                 |
