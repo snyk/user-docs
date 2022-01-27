@@ -1,66 +1,59 @@
 # Manage users in your organizations
 
-The following actions are available within the members page of the organization:
+You can use member functions to add, remove and change member details of your organization.
 
-* Invite users
-* Add existing members
-* Change organization user roles 
-* Remove pending invites
-* Remove users from the organization 
+Select **Members** to access member functions:
 
-The following tasks can be performed if your role has the correct set of permissions to perform the action:
-
-## Invite users
-
-1. Click **Add members** in the members page
-2. Select the **Invite new members** page in the add members modal
-3. Enter the email address for the user 
-4. Add multiple users by separating each email addresses with a comma 
-5. Click **Send invite**
+![](<../../../.gitbook/assets/Members page.png>)
 
 {% hint style="info" %}
-Any users who have been invited will be assigned the “Collaborator” role by default. Update user roles in the member’s tab via the dropdown under the **Existing members** section.
+You need relevant permissions to perform all these tasks. See [managing-permissions.md](managing-permissions.md "mention").
 {% endhint %}
 
-The user you have specified will have the invite in their inbox.
+### Add members&#x20;
 
-## Remove pending invites
+Click **Add members**:
 
-If you have any pending invitations, they will be displayed in the members page in your organisation with a number to state how many pending invites you have.
+![](<../../../.gitbook/assets/Add members.png>)
+
+From here:
+
+* Select **Invite new members** to send an email invitation; enter the email addresses of users to invite (separated by commas), then click **Send invite**.
+* Select **Invite by link** to send a link; click **Copy invite link**, then you can send the link yourself.
+* Select **Add existing members** to add existing members of your group to this organization; select the members when prompted then click **Invite members.**
+
+{% hint style="info" %}
+Any users who have been invited are assigned a default role (such as **Collaborator**).To change this, use the **New members join as** drop-down. See also&#x20;
+{% endhint %}
+
+### Remove pending invites
+
+Any pending invitations appear in the members page in your organisation with a number to state how many pending invites you have.
+
+To remove these pending invites:
 
 1. Select **pending invite** beneath the search field in the members page
-2. Click the icon next to each user that has a pending invite to remove the invite in the modal
+2. Click the icon next to each user that has a pending invite to remove the invite.
 
-The invite has been successfully removed.
-
-## Add existing members
-
-1. Click **Add members** in the members page
-2. Select the **Add existing members** page, and select **Select members** in the modal
-3. Enter the names of the users in your group that you would like to add to your organisation in the search field
-4. Click **Invite members**
-
-The user you have invited then appears in the list of organization members.
-
-## Remove users from the organisation
+### Remove users from the organisation
 
 1. Click the icon next to the user to remove them from the organisation
 2. Click **Delete member from** _**your organization’s name**_ in the modal
 
 The user has been successfully removed from the organization.
 
-## Change organization user roles
+### Change organization user roles
 
 1. Roles are assigned via the drop down list in the members page under the **Existing members**
 2. Select the new role from the drop down, the change is automatically saved
-3. The user is then assigned the newly selected role. 
+3. The user is then assigned the newly selected role.
 
-## Additional actions
+### Additional actions
 
 Filtering is available through users by the following fields:
 
 * Role
-* Authentication method 
+* Authentication method
 
 Sorting users is available with the following criteria:
 
@@ -68,4 +61,3 @@ Sorting users is available with the following criteria:
 * Authentication method
 * Role
 * Date joined
-

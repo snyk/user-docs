@@ -365,7 +365,6 @@
     * [Manage users in your organizations](features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations.md)
     * [Managing permissions](features/user-and-group-management/managing-users-and-permissions/managing-permissions.md)
     * [Organization access requests](features/user-and-group-management/managing-users-and-permissions/organization-access-requests.md)
-    * [Organization members management](features/user-and-group-management/managing-users-and-permissions/organization-members-management.md)
     * [Session length](features/user-and-group-management/managing-users-and-permissions/session-length.md)
     * [Switch between Snyk organization](features/user-and-group-management/managing-users-and-permissions/switch-between-snyk-organization.md)
     * [Audit logs](features/user-and-group-management/managing-users-and-permissions/audit-logs.md)
