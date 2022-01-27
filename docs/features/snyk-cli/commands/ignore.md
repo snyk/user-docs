@@ -2,7 +2,7 @@
 
 ## Usage
 
-`snyk ignore --id=<ISSUE_ID> [--expiry=<EXPIRY>] [--reason=<REASON>] [<OPTIONS>]`
+`snyk ignore --id=<ISSUE_ID> [--expiry=<EXPIRY>] [--reason=<REASON>] [--policy-path=<PATH_TO_POLICY_FILE>] [<OPTIONS>]`
 
 ## Description
 
@@ -33,6 +33,10 @@ Expiry date in a format `YYYY-MM-DD` ([ISO 8601](https://www.iso.org/iso-8601-da
 ### `--reason=<REASON>`
 
 Human-readable `<REASON>` to ignore this issue.
+
+### --policy-path=\<PATH\_TO\_POLICY\_FILE>
+
+Manually pass a path to a .snyk policy file.
 
 ## Example: ignore a specific vulnerability
 
