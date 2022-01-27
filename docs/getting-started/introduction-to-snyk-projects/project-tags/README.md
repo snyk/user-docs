@@ -1,7 +1,8 @@
 # Project tags
 
 {% hint style="info" %}
-Project tags are available for Pro, Business, and Enterprise plans.
+**Feature availability**\
+Project tags are available for Team, Business, and Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 A tag is a key and value combination which allow you to add additional custom metadata to projects, through the project issues page.
@@ -12,21 +13,23 @@ A tag is a key and value combination which allow you to add additional custom me
 * You can create 1000 unique key and value combinations per group, and apply 10 unique tags per project
 * Reusing a key and value combination does not contribute towards the count
 
+#### Tag actions
+
 Through the UI, you can perform the following actions:
 
-1. Create tags for projects
-2. Assign and remove tags from projects
-3. Filter projects in the project listing page
+* Create tags for projects
+* Assign and remove tags from projects
+* Filter projects in the project listing page
 
 The Group and Organization admins can perform all actions, while a Collaborator can perform the actions if they are in an Org which is part of a Group.
 
-**Creating tags**
+### **Creating tags**
 
 To create a new tag for a project:
 
-1. On the project issues page, click "Add a key/value..."
-2. Enter your new key, and then click enter
-3. Enter your new value, and then click enter
+1. On the project issues page, click **Add a key/value...**
+2. Enter your new key, and then click Enter.
+3. Enter your new value, and then click Enter.
 
 You have created a new tag. Upon creating a new tag, it will be automatically assigned to the project it was created in. The tag is also usable on any other project within your group.
 
@@ -36,7 +39,7 @@ You can also apply multiple values to the same key:
 
 ![](../../../.gitbook/assets/screenshot\_2020-09-29\_at\_18.04.30.png)
 
-**Assigning and removing tags from a project**
+### **Assigning and removing tags from a project**
 
 If a tag exists in your group, you can apply it to any project.
 
