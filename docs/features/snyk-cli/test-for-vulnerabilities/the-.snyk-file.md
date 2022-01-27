@@ -6,10 +6,6 @@ The file can be generated in a number of ways and can be used in a number of dif
 
 This page provides detailed information about the contents and use of the `.snyk` file as well as about creating the file.
 
-{% hint style="info" %}
-You can create and save a policy where no attributes are selected, for example, if you have not yet decided which attributes should be associated with that policy. This policy does not apply to projects where all attributes are left blank.
-{% endhint %}
-
 The following video provides an introduction to the `.snyk` file.
 
 {% embed url="https://youtu.be/QSIBt-hQ0Xo" %}
@@ -25,7 +21,6 @@ The `.snyk` policy file in a project is used to apply ignores and other settings
   * **Note**: if **admin users only** is enabled (**Settings > General > Ignores**), the ignore rules in the database are used, unless there is a `.snyk` file in the project. If there a `.snyk` file in the project, **** `snyk test` uses that file as the ignore mechanism, instead of the ignores set from the web UI.
   * Developers can ignore issues by using the `.snyk` policy file when running`snyk monitor`.
   * When the `.snyk` file is included in a Source Control Management (SCM) project, Snyk considers both the database ignores and the `.snyk` ignores.
-  * Specify the project-level Python version in SCM or CLI scans.
 * The `.snyk` file defines certain **analysis configuration items** such as `language settings:` (Python version).
   * CLI and CI/CD: the `language settings:` for the current project
   * SCM scans (for example, GitHub): the Snyk web UI currently limits users to setting Python versions at the organization level. When you include the `.snyk` file in your code repository and the `language settings:` value is set, then when you run code repository scans you gain the advantage of creating project-level Python settings. You may need to re-import the project if the `.snyk` file was not present at the initial import of the project into Snyk.
@@ -45,17 +40,13 @@ The `.snyk` file can be created in a number of ways:
 
 ## Syntax
 
-The `.snyk` file has the following content:
+The `.snyk` file may have the following top-level keys:
 
-```
-# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.22.1
-language-settings:
-ignore: 
-patch:
-```
+* `language-settings:`
+* `ignore:`
+* `patch:`
 
-The `language-settings:` value is the Python version you are currently using. See the example  [Setting the language version for Python](the-.snyk-file.md#setting-the-language-version-for-python).
+The `language-settings:` value is the Python version you are currently using. See the examples in [Setting the language version for Python](the-.snyk-file.md#setting-the-language-version-for-python) on this page.
 
 The `ignore:` is an ignore rule in the form of
 
@@ -194,13 +185,13 @@ The `snyk policy` command displays the `.snyk` policy for a package.
 The `snyk ignore` command modifies the `.snyk` policy to ignore a stated issue.
 
 ```
-snyk ignore --id=’vulnerabilityID’ --expiry=’date-string’ --reason=’text string’
+snyk ignore --id='vulnerabilityID' --expiry='date-string' --reason='text string'
 ```
 
 The following example shows using the `snyk ignore` command to generate a rule to ignore the SNYK-JS-BSON-561052 vulnerability for all paths that lead to that library on disk.
 
 ```
-snyk ignore --id=’SNYK-JS-BSON-561052’ --expiry=’2018-04-01’ --reason=’testing’
+snyk ignore --id='SNYK-JS-BSON-561052' --expiry='2018-04-01' --reason='testing'
 ```
 
 ## Best practices
