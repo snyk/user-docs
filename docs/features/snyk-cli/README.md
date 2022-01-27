@@ -4,7 +4,7 @@
 
 ![Snyk CLI test command output](../../.gitbook/assets/snyk-cli-screenshot.png)
 
-## What is [Snyk](https://snyk.io)?
+## What is Snyk?
 
 [Snyk](https://snyk.io) is a developer-first, cloud-native security tool. It covers multiple areas of application security:
 
