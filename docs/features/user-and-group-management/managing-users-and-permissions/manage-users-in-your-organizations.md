@@ -2,12 +2,12 @@
 
 You can use member functions to add, remove and change member details of your organization.
 
-Select **Members** to access member functions:
+Click on the **Members** tab in the app (example link: **https://app.snyk.io/org/your-org-name/manage/members**)
 
 ![](<../../../.gitbook/assets/Members page.png>)
 
 {% hint style="info" %}
-You need relevant permissions to perform all these tasks. See [managing-permissions.md](managing-permissions.md "mention").
+Relevant permissions are required to perform all these tasks--see [managing-permissions.md](managing-permissions.md "mention").
 {% endhint %}
 
 ### Add members&#x20;
