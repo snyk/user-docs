@@ -8,12 +8,12 @@ Determine how new users in your organization get access to Snyk:
 
 With the Open option, all users have automatic access to Snyk by using SSO to log in. They will have access to all organizations in your selected group. Their accounts will all be provisioned with the same role, with two options:
 
-* The **administrator** role allows all new users to manage group admins, view group reports, and work with organizations within the group.
+* The **Org** **administrator** role allows all new users to manage other Org admins and collaborators, view group reports, and work with organizations within the group.
 * The **Org** **collaborator** role can access the organizations.
 
-Let Snyk Support know whether new users will have the **administrator** role or the **collaborator** role. The selected role applies for all users.
+Let Snyk Support know whether new users will have the **administrator** role or the **collaborator** role for the organization. The selected role applies for all users.
 
-## Invitation required(Group Member)
+## Invitation required
 
 With the invitation required or **Group Member** option, admins can invite users or users can request access to an organization.
 
