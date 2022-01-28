@@ -29,7 +29,7 @@ When you run the `snyk unmanaged test` command, Snyk:
 
 1. Converts all files down from your current folder into a list of hashes.
 2. Sends the hashes to Snyk scan server.
-3. Queries the database to find a list of potentially matching dependencies.&#x20;
+3. Queries the database to find a list of potentially matching dependencies.
 4. Links the dependencies to the known vulnerabilities.
 5. Displays the results.
 
@@ -50,25 +50,25 @@ For Snyk CLI to be able to find any dependencies in your source code, the full s
 ```
 c-example
 ├── deps
-│   ├── curl-7.58.0
-│   │   ├── include
-│   │   │   ├── Makefile.am
-│   │   │   ├── Makefile.in
-│   │   │   ├── README
-│   │   │   └── curl
-│   │   ├── install-sh
-│   │   ├── lib
-│   │   │   ├── asyn.h
-│   │   │   ├── base64.c
-│   │   │   ├── checksrc.pl
-│   │   │   ├── config-amigaos.h
-│   │   │   ├── conncache.c
-│   │   │   ├── conncache.h
-│   │   ├── src
-│   │   │   ├── tool_binmode.c
-│   │   │   ├── tool_binmode.h
-│   │   │   ├── tool_bname.c
-│   │   │   ├── tool_xattr.c
+│   ├── curl-7.58.0
+│   │   ├── include
+│   │   │   ├── Makefile.am
+│   │   │   ├── Makefile.in
+│   │   │   ├── README
+│   │   │   └── curl
+│   │   ├── install-sh
+│   │   ├── lib
+│   │   │   ├── asyn.h
+│   │   │   ├── base64.c
+│   │   │   ├── checksrc.pl
+│   │   │   ├── config-amigaos.h
+│   │   │   ├── conncache.c
+│   │   │   ├── conncache.h
+│   │   ├── src
+│   │   │   ├── tool_binmode.c
+│   │   │   ├── tool_binmode.h
+│   │   │   ├── tool_bname.c
+│   │   │   ├── tool_xattr.c
 ...
 ```
 
@@ -78,10 +78,10 @@ Having a large percentage of files in their original (unchanged) form is critica
 
 When you scan C++ projects, the following data is collected and may be stored for troubleshooting purposes:
 
-| Category                    | Description                                                                                 |
-| --------------------------- | ------------------------------------------------------------------------------------------- |
-| Hashes of the scanned files | All files are converted to a list of irreversible hashes.                                   |
-| Full paths to scanned files | The paths to files on your local drive are included for better identification and matching. |
+| Category                        | Description                                                                                                                                                                                           |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Hashes of the scanned files     | All files are converted to a list of irreversible hashes.                                                                                                                                             |
+| Relative paths to scanned files | <p>The paths to files relative to the directory being scanned are included for better identification and matching.<br><br>Example: <br><code>./project-name/vendor/bzip2-1.0.6/blocksort.c</code></p> |
 
 ### Snyk CLI for C / C++ projects
 
@@ -139,9 +139,9 @@ Dependencies:
 
 #### Understanding the confidence level
 
-You may need to change the source code of the dependencies that you use in your software. As Snyk uses file signatures to find the closest possible match to an open source library, your changes may decrease the accuracy of the identification of the actual library.&#x20;
+You may need to change the source code of the dependencies that you use in your software. As Snyk uses file signatures to find the closest possible match to an open source library, your changes may decrease the accuracy of the identification of the actual library.
 
-To learn how confident Snyk is about the identified dependency and its version, use the  `--print-deps` or `--print-dep-paths` command line argument:
+To learn how confident Snyk is about the identified dependency and its version, use the `--print-deps` or `--print-dep-paths` command line argument:
 
 ```
 curl|https://github.com/curl/curl/releases/download/curl-7_58_0/curl-7.58.0.tar.xz@7.58.0
@@ -250,7 +250,7 @@ The following `snyk`command line options are supported with `snyk unmanaged`:
 
 #### ORG\_NAME
 
-`--org=ORG_NAME`&#x20;
+`--org=ORG_NAME`
 
 Specify the ORG\_NAME to run Snyk commands tied to a specific organization. This defines where new projects are created after running the **monitor** command, some features have availability and private tests limits. If you have multiple organizations, you can set a default from the CLI using:
 
@@ -264,7 +264,7 @@ Default: uses the ORG\_NAME set as default in your Account settings.
 
 #### json
 
-`--json`&#x20;
+`--json`
 
 Prints results in JSON format.
 
@@ -272,13 +272,13 @@ Prints results in JSON format.
 
 `--json-file-output=OUTPUT_FILE_PATH`
 
-(only in test command) Save test output in JSON format directly to the specified file, regardless of whether or not you use the **--json** option.&#x20;
+(only in test command) Save test output in JSON format directly to the specified file, regardless of whether or not you use the **--json** option.
 
-This is  useful to display the human-readable test output via **stdout** and at the same time save the JSON format output to a file.
+This is useful to display the human-readable test output via **stdout** and at the same time save the JSON format output to a file.
 
 **target-dir**
 
-`` `--target-dir <directory>` ``
+`--target-dir <directory>`
 
 Scan the path specified in the argument instead of the current directory.
 
@@ -306,10 +306,6 @@ Automated regular testing and re-scanning from the Snyk App is not currently sup
 {% endhint %}
 
 ### Known issues
-
-#### Some dependencies are not found
-
-During the beta phase, we are using an older version of our source code database. This means that open source dependencies that are being actively developed and contain many changes to their source code may not be identified correctly, or at all.
 
 #### Files in hidden directories are ignored
 
@@ -339,11 +335,7 @@ Here are a few things that you can check on your own:
 
 * The source code of the dependencies you scanned is actually available as source code (unpacked) in the folder that you scanned. If you use a package manager, such as Conan, the source code is likely to be in the Conan cache, along with the source code of other dependencies of your other projects. To scan dependencies managed by a package manager, we recommend that you do that in a clean environment (for example during a build).
 * The source code of the dependencies is not from an official release of the OSS component, and we do not have it in the database
-* The source code of the OSS has been modified too much, so Snyk cannot detect it. If there are too few files and you modify most of them, Snyk cannot match them to a component from our database. \
+* The source code of the OSS has been modified too much, so Snyk cannot detect it. If there are too few files and you modify most of them, Snyk cannot match them to a component from our database.\
   Examples of common modifications are whitespace formatting, adding license or copyright headers.
 * You are on Windows, and git converted line endings to Windows line endings. Currently we can recognize files that have retained their original line endings.
-* The source code of the OSS components is too new. Our database is refreshed regularly but it takes time for the latest releases to get processed.
-
-#### **What is coming next?**
-
-Our plan is to show more information on how and why certain components were detected in our source code (show files that were detected to be a part of the component) and allow you to bring the information in the App (using the `snyk unmanaged monitor` command) so you can see the dependencies there.
+* The source code of the OSS components is too new. Our database is refreshed monthly but it takes time for the latest releases to get processed.
