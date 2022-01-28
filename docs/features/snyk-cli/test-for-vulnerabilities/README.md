@@ -11,3 +11,4 @@ This group of pages includes information about scanning projects for vulnerabili
 * [Set severity thresholds for CLI tests](set-severity-thresholds-for-cli-tests.md)
 * [Scan all unmanaged jar files](scan-all-unmanaged-jar-files.md)
 * [Why is my setup.py file failing to scan or finding 0 dependencies?](why-is-my-setup.py-file-failing-to-scan-or-finding-0-dependencies.md)
+* [Advanced failing of builds in Snyk CLI](advanced-failing-of-builds-in-snyk-cli.md)
