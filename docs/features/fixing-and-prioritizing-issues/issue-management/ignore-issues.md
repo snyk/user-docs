@@ -118,7 +118,7 @@ var generalLogFileName = req.query.file || 'standard_log.log';
 var handleLogFile = filesystem.readFile(generalLogFileName, "utf8", function(err, data) {...
 ```
 
-See [Using Snyk Code (web)](https://support.snyk.io/hc/en-us/articles/360017147558#Ignore) for more details of using the Ignore function for Snyk Code.
+See [using-snyk-code-web.md](../../../products/snyk-code/using-snyk-code-web.md "mention") for more details of Snyk Code.
 
 ### Ignoring issues in Snyk IaC
 
@@ -126,7 +126,7 @@ When scanning your IaC configuration files using the Snyk CLI with **snyk iac te
 
 You can do this by using the [.snyk policy file](../policies/the-.snyk-file.md), which we recommend is stored and versioned in the root of your working directory for where you store your IaC configuration files.
 
-See [iac-ignores-using-the-.snyk-policy-file.md](../../../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md "mention")for more details.&#x20;
+See [iac-ignores-using-the-.snyk-policy-file.md](../../../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md "mention")for more details.
 
 ### Set who can configure ignore settings
 
