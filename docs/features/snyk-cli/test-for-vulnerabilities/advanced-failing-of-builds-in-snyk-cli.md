@@ -52,10 +52,9 @@ Here is an example of `snyk test` using `--severity-threshold=high` running agai
 
 ![Test against a default organization with no policy applied to it](https://gblobscdn.gitbook.com/assets%2F-MVXKdrh-jY3KDGPs8lQ%2F-MZT\_W3O1oFyMAzF9g3s%2F-MZTrc0D6NjT6VlS1jmU%2Fimage.png?alt=media\&token=27e0ee8c-147f-4942-ada4-08de07f67c40)
 
-Here is an example `snyk test` using `--severity-threshold=high` running against an organization with a policy that downgrades this particular vulnerability severity to `low`.
+Here is an example `snyk test` using `--severity-threshold=high` running against an organization with a policy that downgrades this particular vulnerability severity to `low`. There are no vulnerabilities found.
 
-![](https://gblobscdn.gitbook.com/assets%2F-MVXKdrh-jY3KDGPs8lQ%2F-MZT\_W3O1oFyMAzF9g3s%2F-MZTuPF3Uat7DSSnTKFD%2Fimage.png?alt=media\&token=914fd76f-bd9f-4170-8d96-b32026ae19ee)\
-Because the severity of the original vulnerability was lowered with the policy, it no longer breached the severity threshold of `high`, resulting in a passing test.
+![Test against an organization with a policy applied](../../../.gitbook/assets/test-organization-with-policy-applied.png)
 
 ## Companion tools
 
