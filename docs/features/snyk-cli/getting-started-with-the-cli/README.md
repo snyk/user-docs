@@ -43,7 +43,7 @@ For more information see [Monitor your projects at regular intervals](../secure-
 
 Run `snyk help` or see the [CLI reference](../cli-reference/).
 
-Snyk also provides a [handy cheat sheet](https://res.cloudinary.com/snyk/image/upload/v1551195097/Snyk\_CLI\_Cheat\_Sheet.pdf) and a [video tutorial](https://www.youtube.com/watch?v=xp\_LtchEkT8).
+Snyk also provides a [handy cheat sheet](https://snyk.io/wp-content/uploads/Cheat-Sheet-CLI-1.pdf) and a [video tutorial](https://www.youtube.com/watch?v=xp\_LtchEkT8).
 
 In particular see the information about the following options that you may find useful:
 
