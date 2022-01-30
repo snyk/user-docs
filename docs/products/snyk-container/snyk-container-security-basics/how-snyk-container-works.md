@@ -2,7 +2,7 @@
 
 ## What are container images?
 
-Container images comprise a layered file system and associated metadata, as defined by the [Open Container Initiative](https://opencontainers.org/) \(OCI\) specifications.
+Container images comprise a layered file system and associated metadata, as defined by the [Open Container Initiative](https://opencontainers.org) (OCI) specifications.
 
 Container images often include several layers containing third-party software from:
 
@@ -25,15 +25,16 @@ After we have the list of installed software, we look that up against our vulner
 
 We detect vulnerabilities in images based on:
 
+* Alpine
 * Debian
 * Ubuntu
-* Centos
-* Red Hat Enterprise Linux \(including UBI\)
-* Amazon Linux 2
-* SUSE Linux Enterprise Server
-* Alpine
+* CentOS Linux and CentOS Stream
+* Red Hat Enterprise Linux (RHEL), including Universal Base Image (UBI)
+* Amazon Linux&#x20;
+* Oracle Linux
+* SUSE Linux Enterprise Server (SLES)
 
-Check out the [Operating Systems Support](https://docs.snyk.io/snyk-container/snyk-container-security-basics/supported-operating-system-distributions) page for specific version support and our [updates](https://updates.snyk.io/) page for all the latest updates.
+Check out the [Operating Systems Support](https://docs.snyk.io/snyk-container/snyk-container-security-basics/supported-operating-system-distributions) page for specific version support and our [updates](https://updates.snyk.io) page for all the latest updates.
 
 {% hint style="info" %}
 **Note:** Snyk also supports images using packages from those distributions but without the associated package manager, such as Distroless images.
@@ -53,4 +54,3 @@ New vulnerabilities are disclosed continuously., Snyk can alert you to new vulne
 If you use an integration which saves a snapshot of the installed software on Snyk’s service, Snyk Container automatically rescans without accessing the image, alerting you to new vulnerabilities quicker.
 
 Learn more about [container security](https://snyk.io/learn/container-security/).
-
