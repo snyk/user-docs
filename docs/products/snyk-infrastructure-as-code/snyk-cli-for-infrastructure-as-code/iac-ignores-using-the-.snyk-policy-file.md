@@ -16,7 +16,7 @@ For test runs from imported git repositories:
 ## .snyk file semantics
 
 {% hint style="info" %}
-The **.snyk** file has some limitations for IaC projects \(see [The .snyk file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file) for standard functionality\):
+The **.snyk** file has some limitations for IaC projects (see [The .snyk file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file) for standard functionality):
 
 * The **patches** section is not yet supported and will be ignored.
 * There are no IaC-supported language settings. This section will be ignored.
@@ -26,7 +26,7 @@ When running **snyk iac test** against a directory, either by passing in one or 
 
 The syntax of the policy file is as follows:
 
-```text
+```
 version: v1.19.0
 ignore:
   SNYK-CC-K8S-1:
@@ -42,9 +42,25 @@ The \`\*\` object key causes the CLI to ignore all instances of the SNYK-CC-K8S-
 
 ## Ignoring a single file
 
-Ignore rules can be scoped more narrowly. To scope the ignore to a single file, change the \`\*\` to the path of that file relative to the directory under test that contains the policy file:
+Ignore rules can be scoped more narrowly. To scope the ignore to a single file, change the \`\*\` to the path of that file relative to the directory under test that contains the policy file.
 
-```text
+Specifying these scoped ignore rules can be accomplished by either using the `ignore` command in the Snyk CLI, or manually modifying the `.snyk` file.
+
+In the following example, we are ignoring an issue with the `SNYK-CC-K8S-1` ID in 2 specific files:
+
+* `staging/deployment.yaml`
+* `staging/cronjob.yaml`
+
+You could generate the scoped ignore rules with the Snyk CLI, by running the following commands:
+
+```
+snyk ignore --id=SNYK-CC-K8S-1 path='staging/cronjob.yaml > *'
+snyk ignore --id=SNYK-CC-K8S-1 path='staging/deployment.yaml > *'
+```
+
+Alternatively, you could manually modify the policy file as follows:
+
+```
 version: v1.19.0
 ignore:
   SNYK-CC-K8S-1:
@@ -58,23 +74,31 @@ ignore:
         created: 2021-07-27T08:40:35.251Z
 ```
 
-In the example above we are ignoring an issue in 2 specific files.
+{% hint style="info" %}
+To learn more about the `ignore` command, see [ignore-vulnerabilities-using-snyk-cli.md](../../../features/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli.md "mention")
+{% endhint %}
 
 ## Ignore instances of a vulnerability
 
-Individual instances of a vulnerability within a file can be ignored. To do this, you’ll need to take the “resource path” from the output of **snyk iac test**, and add it to the file path.
+Individual instances of a vulnerability within a file can be ignored. To do this, you’ll need to take the “resource path” from the output of `snyk iac test`, and add it to the file path.
 
 For example, from the following output snippet:
 
-```text
+```
 Testing production/deployment.yaml...Infrastructure as code issues:
   ✗ Container is running in privileged mode [High Severity] [SNYK-CC-K8S-1] in Deployment
     introduced by [DocId: 0] > input > spec > template > spec > containers[web] > securityContext > privileged
 ```
 
-You could modify the policy file as follows:
+You could generate the scoped ignore rule with the Snyk CLI, by running the following command:
 
-```text
+```
+ snyk ignore --id=SNYK-CC-K8S-1 path='production/deployment.yaml > [DocId:1] > spec > template > spec > containers[web] > securityContext > privileged'
+```
+
+Alternatively, you could manually modify the policy file as follows:
+
+```
 version: v1.19.0
 ignore:
   SNYK-CC-K8S-1:
@@ -83,6 +107,10 @@ ignore:
         expires: 2021-08-26T08:40:35.249Z
         created: 2021-07-27T08:40:35.251Z
 ```
+
+{% hint style="info" %}
+To learn more about the `ignore` command, see [ignore-vulnerabilities-using-snyk-cli.md](../../../features/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli.md "mention")
+{% endhint %}
 
 ## Policy flags and policy file notes
 
@@ -95,4 +123,3 @@ The CLI accepts a flag **--policy-path=..**., which overrides the location of po
 Policies are not loaded automatically when the argument to **snyk iac test** is a file rather than a directory. In this case, **--policy-path** must be specified in order to load policies.
 
 The CLI accepts a flag **--ignore-policy**, which will cause any found **.snyk** policy files to be ignored.
-

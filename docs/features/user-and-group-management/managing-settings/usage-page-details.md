@@ -2,9 +2,9 @@
 
 Click on settings ![](../../../.gitbook/assets/cog\_icon.png) > **Usage** to view Snyk usage details including:
 
-* The numbers of tests used.
-* The number of developers contributing to projects.
-* Project test usage settings.
+* [#test-usage](usage-page-details.md#test-usage "mention") the numbers of tests used.
+* [#view-contributing-developers](usage-page-details.md#view-contributing-developers "mention") number of developers contributing to projects.
+* [#view-projects](usage-page-details.md#view-projects "mention"): project test usage settings.
 
 ### Test usage
 
