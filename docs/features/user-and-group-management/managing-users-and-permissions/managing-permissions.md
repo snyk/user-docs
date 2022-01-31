@@ -24,7 +24,7 @@ To change roles for a user:
 | ---------------------------------------------- | ------------------- | -------------------------- | ------------------------- |
 | Add/delete projects                            | x                   | x                          | x                         |
 | Update project with new snapshot               | x                   | x                          | x                         |
-| Open fix PR's                                  | x                   | x                          |                           |
+| Open fix PR's                                  | x                   | x                          | x                         |
 | Delete snapshot from project history           | x                   | x                          | x                         |
 | Invite/remove team members                     | x                   | x                          |                           |
 | Change team members’ roles                     | x                   | x                          |                           |
