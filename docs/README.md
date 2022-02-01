@@ -36,7 +36,7 @@ Google, Salesforce, Datadog, Atlassian, Twilio, Revolut and many more are using 
 4. Correct these vulnerabilities via Pull Requests.
 5. Remain secure with monitoring.
 
-See the Snyk [Getting started guides](https://docs.snyk.io/getting-started) for more details.
+See [getting-started-snyk-products.md](getting-started/getting-started-snyk-products.md "mention") for more details.
 
 {% hint style="success" %}
 [Sign up to use Snyk for free!](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)

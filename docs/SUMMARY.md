@@ -60,7 +60,7 @@
   * [Dependency management](products/snyk-open-source/dependency-management/README.md)
     * [Upgrading dependencies with automatic PRs](products/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs.md)
 * [Snyk Code](products/snyk-code/README.md)
-  * [Getting started with Snyk Code](products/snyk-code/getting-started-with-snyk-code.md)
+  * [Getting started with Snyk Code](getting-started/getting-started-snyk-products/getting-started-with-snyk-code.md)
   * [Use Cases](products/snyk-code/use-cases.md)
   * [Key features](products/snyk-code/key-features/README.md)
     * [AI Engine](products/snyk-code/key-features/ai-engine.md)
