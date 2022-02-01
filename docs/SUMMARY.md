@@ -308,7 +308,7 @@
   * [Snyk Apps](features/integrations/snyk-apps/README.md)
     * [Introduction to Snyk Apps](features/integrations/snyk-apps/introduction-to-snyk-apps.md)
     * [Getting started with Snyk Apps](features/integrations/snyk-apps/getting-started-with-snyk-apps/README.md)
-      * [Create an App via the API](features/integrations/snyk-apps/getting-started-with-snyk-apps/create-an-app-via-the-api.md)
+      * [Create an App](features/integrations/snyk-apps/getting-started-with-snyk-apps/create-an-app-via-the-api.md)
       * [Set up to authorize users](features/integrations/snyk-apps/getting-started-with-snyk-apps/set-up-to-authorize-users.md)
       * [Set up the authorization code exchange](features/integrations/snyk-apps/getting-started-with-snyk-apps/set-up-the-authorization-code-exchange.md)
       * [Set up the refresh token exchange](features/integrations/snyk-apps/getting-started-with-snyk-apps/set-up-the-refresh-token-exchange.md)

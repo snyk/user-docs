@@ -1,4 +1,6 @@
-# Create an App via the API
+# Create an App
+
+## Create using API
 
 Now that you have an API token and **orgId**, you can use our API to create your Snyk App by sending a **POST** request to the `apps` endpoint (more details found in the [API documentation](https://snykv3.docs.apiary.io/#reference/apps/app-management/create-an-app)):
 
@@ -14,13 +16,59 @@ The response includes details necessary to complete the integration: **clientId*
 Never share the **clientSecret** publicly, as this is used to authenticate your App. This is also the only time you’ll be able to get the **clientSecret**, so keep it secure and private. If you lose it or if the secret is leaked, you can [rotate your App's **clientSecret**](managing-app-details.md#rotate-app-client-secret).
 {% endhint %}
 
+## Create using Snyk CLI
+
+The [Snyk CLI](../../../snyk-cli/) can be used to create the Snyk App. If you don't already have the Snyk CLI installed on your machine, you can easily do so by following our [getting started with Snyk CLI docs](../../../snyk-cli/getting-started-with-the-cli/).
+
+{% hint style="warning" %}
+All `apps` commands are only accessible behind the `--experimental` flag and the behaviour can change at any time, without prior notice. You are kindly advised to use all the commands with caution.
+
+If you are already authenticated with Snyk CLI (`snyk auth`) you can use the `apps` sub-commands as is. Otherwise, you will need to first authenticate using `snyk auth` and then proceed ahead to use the Snyk Apps commands.
+{% endhint %}
+
+Snyk Apps related sub-commands are under the `snyk apps` command.
+
+Use the `create` sub-command to create the Snyk Apps. There are two ways to use the command.&#x20;
+
+First is the normal mode, for example:&#x20;
+
+```
+snyk apps create --experimental --org=48ebb069-472f-40f4-b5bf-d2d103bc02d4 --name='My Awesome App' --redirect-uris=https://example1.com,https://example2.com --scopes=apps:beta
+```
+
+*   `--org-id=<ORG_ID>`
+
+    (Required for the `create` command) Specify the `<ORG_ID>` to create the Snyk App under.
+*   `--name=<SNYK_APP_NAME>`
+
+    (Required for the `create` command) The name of the Snyk App will be displayed to the user during the authentication flow.
+*   `--redirect-uris=<REDIRECT_URIS>`
+
+    (Required for the `create` command) A comma-separated list of redirect URIs. This will form a list of allowed redirect URIs to call back after authentication.
+*   `--scopes=<SCOPES>`
+
+    (Required for the `create` command) A comma-separated list of scopes that are required by your Snyk App. This will form a list of scopes that your app is allowed to request during authorization.
+
+The second is the interactive mode, which prompts you to enter all the values in a similar fashion as the normal mode. Once the Snyk App has been created, the response Snyk App data of the created Snyk App is printed to the console.&#x20;
+
+The following is an example of the interactive mode:
+
+```
+snyk apps create --experimental --interactive
+
+? Name of the Snyk App (visible to users when they install the Snyk App)? My Awesome Snyk App
+? Your Snyk App's redirect URIs (comma seprated list.  Ex: https://example1.com,https://example2.com)?:  https://example1.com
+? Your Snyk App's permission scopes (comma separated list.  Ex: apps:beta)?:  apps:beta
+? Please provide the org id under which you want to create your Snyk App:  48ebb069-472f-40f4-b5bf-d2d103bc02d4
+```
+
 ## Requesting scopes
 
-Scopes define the permissions your Snyk App has to perform actions in a user’s account. When a user authorizes your App to access their Snyk account, they see the list of scopes you are requesting, and then decide whether or not they approve the connection.&#x20;
+Scopes define the permissions your Snyk App has to perform actions in a user’s account. When a user authorizes your App to access their Snyk account, they see the list of scopes you are requesting and then decide whether or not they approve the connection.
 
 When deciding which scopes your Snyk App will need, consider the actions your App will be performing. It may seem better to request every available scope, but users may refuse to install an App that asks for more permissions than required. Also, a user installing your App will not be able to complete the authorization process if they don’t have all the permissions matching the scopes you request.
 
-#### Available Scopes
+The following lists the **available scopes**.
 
 | Scope     | Description                                                                                                                                               |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
