@@ -2,15 +2,26 @@
 
 Use this information to get started using Snyk:
 
-{% page-ref page="getting-started-snyk-products/" %}
+{% content-ref url="getting-started-snyk-products.md" %}
+[getting-started-snyk-products.md](getting-started-snyk-products.md)
+{% endcontent-ref %}
 
-{% page-ref page="scm-git-and-ci-cd-integration-deployment-intro.md" %}
+{% content-ref url="scm-git-and-ci-cd-integration-deployment-intro.md" %}
+[scm-git-and-ci-cd-integration-deployment-intro.md](scm-git-and-ci-cd-integration-deployment-intro.md)
+{% endcontent-ref %}
 
-{% page-ref page="snyk-scm-integration-good-practices.md" %}
+{% content-ref url="snyk-scm-integration-good-practices.md" %}
+[snyk-scm-integration-good-practices.md](snyk-scm-integration-good-practices.md)
+{% endcontent-ref %}
 
-{% page-ref page="snyk-cicd-integration-good-practices.md" %}
+{% content-ref url="snyk-cicd-integration-good-practices.md" %}
+[snyk-cicd-integration-good-practices.md](snyk-cicd-integration-good-practices.md)
+{% endcontent-ref %}
 
-{% page-ref page="introduction-to-snyk-projects/" %}
+{% content-ref url="introduction-to-snyk-projects/" %}
+[introduction-to-snyk-projects](introduction-to-snyk-projects/)
+{% endcontent-ref %}
 
-{% page-ref page="getting-started-with-snyk-dashboard.md" %}
-
+{% content-ref url="getting-started-with-snyk-dashboard.md" %}
+[getting-started-with-snyk-dashboard.md](getting-started-with-snyk-dashboard.md)
+{% endcontent-ref %}
