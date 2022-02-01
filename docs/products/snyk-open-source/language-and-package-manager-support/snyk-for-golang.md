@@ -4,7 +4,7 @@ Snyk supports testing and monitoring of Go projects that have their dependencies
 
 The following describes how to use Snyk to scan your Go projects:
 
-### Features <a href="h_01esm3gfnmn0f7art59aek97tm" id="h_01esm3gfnmn0f7art59aek97tm"></a>
+### Features <a href="#h_01esm3gfnmn0f7art59aek97tm" id="h_01esm3gfnmn0f7art59aek97tm"></a>
 
 {% hint style="info" %}
 **Note**\
@@ -77,7 +77,7 @@ Go Modules projects that depend on modules from private Git repositories are sup
 
 Imports for projects with private modules from repos in other Git organisations will fail. Support for private module dependencies from other Git organisations is planned for the future.
 
-Private modules are supported for GitHub and Bitbucket Cloud. GitLab and Bitbucket Server are not currently supported.
+Private modules are supported for GitHub and Bitbucket Cloud. GitLab, GitHub Enterprise and Bitbucket Server are not currently supported.
 
 **Broker**
 
