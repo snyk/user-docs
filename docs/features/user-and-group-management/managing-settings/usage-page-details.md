@@ -2,9 +2,9 @@
 
 Click on settings ![](../../../.gitbook/assets/cog\_icon.png) > **Usage** to view Snyk usage details including:
 
-* [#test-usage](usage-page-details.md#test-usage "mention") the numbers of tests used.
-* [#view-contributing-developers](usage-page-details.md#view-contributing-developers "mention") number of developers contributing to projects.
-* [#view-projects](usage-page-details.md#view-projects "mention"): project test usage settings.
+* The numbers of tests used.
+* The number of developers contributing to projects.
+* Project test usage settings.
 
 ### Test usage
 
@@ -45,11 +45,6 @@ The **Breakdown by integration** section shows the number of contributors, orgs,
 #### Contributor emails
 
 Each contributor is counted by the **author** email field, which is set within the local git configuration in the developer’s machine.
-
-{% hint style="info" %}
-**Privacy note**\
-Snyk does not store git user emails in its database, but uses the _hashes_ of the emails to count contributing developers. Snyk uses the hash of the local git author email, that is, the email that is set locally in the user's git config, whether for one of the Source Control Management integrations (such as GitHub), or from the Snyk CLI.
-{% endhint %}
 
 ### Projects
 
