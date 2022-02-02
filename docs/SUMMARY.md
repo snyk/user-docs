@@ -246,7 +246,7 @@
   * [Install the Snyk CLI](features/snyk-cli/install-the-snyk-cli/README.md)
   * [Authenticate the CLI with your account](features/snyk-cli/authenticate-the-cli-with-your-account/README.md)
   * [Configure the Snyk CLI](features/snyk-cli/configure-the-snyk-cli.md)
-  * [Create an Snyk App using the Snyk CLI](features/snyk-cli/create-an-snyk-app-using-the-snyk-cli.md)
+  * [Create a Snyk App using the Snyk CLI](features/snyk-cli/create-a-snyk-app-using-the-snyk-cli.md)
 * [Snyk API](features/snyk-api-info/README.md)
   * [Authentication for API](features/snyk-api-info/authentication-for-api.md)
   * [Revoking and regenerating Snyk API tokens](features/snyk-api-info/revoking-and-regenerating-snyk-api-tokens.md)
