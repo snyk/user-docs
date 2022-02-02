@@ -224,7 +224,6 @@
     * [Automatic fixing with snyk fix](features/snyk-cli/fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix.md)
     * [View CLI test results](features/snyk-cli/fix-vulnerabilities-from-the-cli/view-cli-test-results.md)
     * [Ignore vulnerabilities using Snyk CLI](features/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli.md)
-    * [Manage vulnerability results with the Snyk CLI wizard](features/snyk-cli/fix-vulnerabilities-from-the-cli/manage-vulnerability-results-with-the-snyk-cli-wizard.md)
   * [Secure your projects in the long term](features/snyk-cli/secure-your-projects-in-the-long-term/README.md)
     * [Protect your code with patches](features/snyk-cli/secure-your-projects-in-the-long-term/protect-your-code-with-patches.md)
     * [Monitor your projects at regular intervals](features/snyk-cli/secure-your-projects-in-the-long-term/monitor-your-projects-at-regular-intervals.md)
