@@ -1,24 +1,19 @@
 # Fix Pull Requests
 
-From the Snyk app, we will go to the **Projects** menu where we can expand each integration and have a holistic view of our project. Here we will select the `package.json` under our Bitbucket repo.
+From the Snyk app ([app.snyk.io](https://app.snyk.io)), we will go to the **Projects** menu where we can expand each integration and have a holistic view of our project. Here we will select the `package.json` from a project in our list.
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-projects-01.png)
+![](<../../../../.gitbook/assets/Screen Shot 2022-02-02 at 2.29.22 PM.png>)
 
-We are able to view additional context for each identified vulnerability in the report. We also have the option to **Open a fix PR** by clicking on the button. Let's do that!
+We are able to view additional context for each identified vulnerability in the report by clicking on **Fix this vulnerability**.&#x20;
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-pr-fix-01.png)
+![](<../../../../.gitbook/assets/Screen Shot 2022-02-02 at 3.32.06 PM.png>)
 
-A summary page will appear listing each fix that will be included in your pull request.
+A summary page will appear listing each fix that will be included in your pull request. At the bottom of the summary page, we have the option to **Open a fix PR** by clicking on the button. Let's do that!
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-pr-fix-02.png)
+![](<../../../../.gitbook/assets/Screen Shot 2022-02-02 at 3.37.02 PM.png>)
 
-Scroll down to the bottom of the page and confirm the selection by clicking the **Open a Fix PR** button once again.
+![](<../../../../.gitbook/assets/Screen Shot 2022-02-02 at 3.36.26 PM.png>)
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-pr-fix-03.png)
+Once complete, you will be redirected to your  repo where you can **Approve** and **Merge** your **pull request**.
 
-Sit back and relax... Snyk is fixing your open source dependency vulnerabilities and making you feel more _secure_. **;-\)**
-
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-pr-fix-04.png)
-
-Once complete, you will be redirected to your Bitbucket repo where you can **Approve** and **Merge** your **pull request**.
-
+![](<../../../../.gitbook/assets/Screen Shot 2022-02-02 at 3.39.05 PM.png>)
