@@ -118,9 +118,8 @@ Use the following options to refine the scan:
 | `--fail-on`                        | **all**, upgradable, patchable                                       | <p>Configure when a test should be failed if there are vulnerabilities as follows:</p><ul><li>All-fail for all projects containing vulnerabilities</li><li>Upgradable-fail only for projects with vulnerabilities that can be fixed with package upgrades</li><li>Patchable-fail for projects with vulnerabilities that can be fixed with either upgrades or patches</li></ul> |
 | `--prune-repeated-subdependencies` | true, **false**                                                      | Use this flag if any big projects fail to be tested. Default is _false_                                                                                                                                                                                                                                                                                                        |
 | `--dev`                            | true, **false**                                                      | Set to true if Snyk should scan dev dependencies                                                                                                                                                                                                                                                                                                                               |
-| `--yarn-workspaces`                | **n/a**                                                              | <p>Provide this flag to only scan a Yarn workspace project where lockfile is in the root. By default `--all-projects` automatically detects and scans Yarn workspaces projects.</p><p>Note: <code>snyk test</code> and<code>snyk monitor</code> commands only.</p>                                                                                                                                                        |
-| `--all-projects`                | **n/a**                                                              | <p>Provide this flag to detect and scan all Node and other projects.</p><p>Note: <code>snyk test</code> and<code>snyk monitor</code> commands only.</p>                                                                                                                                                        |
-
+| `--yarn-workspaces`                | **n/a**                                                              | <p>Provide this flag to only scan a Yarn workspace project where lockfile is in the root. By default <code>--all-projects</code> automatically detects and scans Yarn workspaces projects.</p><p>Note: <code>snyk test</code> and<code>snyk monitor</code> commands only.</p>                                                                                                  |
+| `--all-projects`                   | **n/a**                                                              | <p>Provide this flag to detect and scan all Node and other projects.</p><p>Note: <code>snyk test</code> and<code>snyk monitor</code> commands only.</p>                                                                                                                                                                                                                        |
 
 ## Git services for JavaScript projects
 
@@ -142,7 +141,7 @@ We build the dependency tree based on these files:
 ### Yarn
 
 {% hint style="info" %}
-Yarn versions 1 & 2 are supported in Git services.
+Yarn version 1 is supported in Git services.
 {% endhint %}
 
 We build the dependency tree based on these files:
