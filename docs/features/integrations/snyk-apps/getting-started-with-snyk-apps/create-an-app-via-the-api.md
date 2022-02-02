@@ -16,7 +16,7 @@ The response includes details necessary to complete the integration: **clientId*
 Never share the **clientSecret** publicly, as this is used to authenticate your App. This is also the only time you’ll be able to get the **clientSecret**, so keep it secure and private. If you lose it or if the secret is leaked, you can [rotate your App's **clientSecret**](managing-app-details.md#rotate-app-client-secret).
 {% endhint %}
 
-## Create using Snyk CLI
+## [Create using Snyk CLI](../../../snyk-cli/create-a-snyk-app-using-the-snyk-cli.md)
 
 The [Snyk CLI](../../../snyk-cli/) can be used to create the Snyk App. If you don't already have the Snyk CLI installed on your machine, you can easily do so by following our [getting started with Snyk CLI docs](../../../snyk-cli/getting-started-with-the-cli/).
 
