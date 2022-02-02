@@ -89,7 +89,7 @@ When testing locally or monitoring a project, you can specify the file that Snyk
 
 Ignore all set policies, the current policy in the `.snyk` file, Org level ignores, and the project policy on snyk.io.
 
-### `--org=<ORG_NAME>`
+### `--trust-policies`
 
 Apply and use ignore rules from the Snyk policies your dependencies; otherwise ignore rules in the dependencies are only shown as a suggestion.
 
