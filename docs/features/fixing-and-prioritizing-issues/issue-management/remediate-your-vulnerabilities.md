@@ -8,7 +8,6 @@ To fix a vulnerability with Snyk:
 * If you are using a [Source code integration](../../integrations/git-repository-scm-integrations/):
   * Click **Open a fix PR** on the project page.
   * Use [automated pull requests](../../../products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md) when new fixes become available that help you to fix a vulnerability.
-* If fixing node.js projects, you can run the [**snyk wizard**](../../snyk-cli/fix-vulnerabilities-from-the-cli/manage-vulnerability-results-with-the-snyk-cli-wizard.md) CLI command.
 
 ### How it works
 
