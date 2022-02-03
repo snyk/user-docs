@@ -33,7 +33,7 @@ Use the `-d` option to output the debug logs.
 
 ## Options
 
-### `--org=<ORG_NAME>`
+### `--org=<ORG_ID>`
 
 Specify the `<ORG_NAME>`to run Snyk commands tied to a specific organization. The `<ORG_NAME>` influences private test limits.
 
