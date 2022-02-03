@@ -20,7 +20,7 @@ Possible exit codes and their meaning:
 
 **0**: success, Log4Shell not found\
 **1**: action\_needed, Log4Shell found\
-**2**: failure, try to re-run command\\
+**2**: failure, try to re-run command
 
 ## Debug
 
