@@ -67,7 +67,7 @@ Include development-only dependencies. Applicable only for some package managers
 
 Default: scan only production dependencies.
 
-### `--org=<ORG_NAME>`
+### `--org=<ORG_ID>`
 
 Specify the \<ORG\_NAME> to run Snyk commands tied to a specific organization. The \<ORG\_NAME> influences some features availability and private test limits.
 
