@@ -41,7 +41,7 @@ Default: no limit.
 
 Example: `--detection-depth=3` limits search to the specified directory (or the current directory if no `<PATH>` is specified) plus three levels of subdirectories.
 
-### `--org=<ORG_NAME>`
+### `--org=<ORG_ID>`
 
 Specify the `<ORG_ID>` to run Snyk commands tied to a specific organization. The `<ORG_ID>` influences private test limits.
 
