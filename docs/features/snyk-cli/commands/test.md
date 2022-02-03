@@ -45,7 +45,7 @@ Example: `--detection-depth=3` limits search to the specified directory (or the 
 
 Can be used with `--all-projects` and `--yarn-workspaces` to indicate sub-directories and files to exclude. Must be comma separated.
 
-Use the exclude option with `--detection-depth` to ignore directories at any depth.
+Use the `--exclude` option with `--detection-depth` to ignore directories at any depth.
 
 ### `--prune-repeated-subdependencies`, `-p`
 
