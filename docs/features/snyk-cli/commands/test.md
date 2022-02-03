@@ -69,15 +69,15 @@ Default: scan only production dependencies.
 
 ### `--org=<ORG_ID>`
 
-Specify the \<ORG\_NAME> to run Snyk commands tied to a specific organization. The \<ORG\_NAME> influences some features availability and private test limits.
+Specify the `<ORG_ID>` to run Snyk commands tied to a specific organization. The `<ORG_ID>` influences some features availability and private test limits.
 
 If you have multiple organizations, you can set a default from the CLI using:
 
-`$ snyk config set org=<ORG_NAME>`
+`$ snyk config set org=<ORG_ID>`
 
-Set a default to ensure all newly tested projects are tested under your default organization. If you need to override the default, use the `--org=<ORG_NAME>` option.
+Set a default to ensure all newly tested projects are tested under your default organization. If you need to override the default, use the `--org=<ORG_ID>` option.
 
-Default: `<ORG_NAME>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account).
+Default: `<ORG_ID>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account).
 
 ### `--file=<FILE>`
 
