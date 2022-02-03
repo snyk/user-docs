@@ -17,13 +17,11 @@ This integration only works with GitLab instances that are publicly reachable (n
 
 **Steps:**
 
-1. Generate a Personal Access Token in your GitLab. You’ll find this option in your user account settings area, in the **Access Tokens** section. Alternatively, a [Group Access Token](https://docs.gitlab.com/ee/user/group/settings/group_access_tokens.html) can be used to grant access to all projects within a GitLab group or subgroup, without contributing to GitLab's licensed user count.
+1. Generate a Personal Access Token in your GitLab. You’ll find this option in your user account settings area, in the **Access Tokens** section. Alternatively, a [Group Access Token](https://docs.gitlab.com/ee/user/group/settings/group\_access\_tokens.html) can be used to grant access to all projects within a GitLab group or subgroup, without contributing to GitLab's licensed user count.
 2. Go to Snyk’s [integrations](https://app.snyk.io/integrations) page and click “Connect to GitLab”.
 3. Add your account credentials and the token you just generated to the GitLab integration settings area in Snyk.
 
 ![](../../../.gitbook/assets/uuid-aa58b5a9-dd17-3219-6067-4ee6e3f4b384-en.png)
-
-**NOTE:** When using GitLab Enterprise integration, it is important to use the correct URL. For example, use [https://gitlab.yourcompany.com/](https://gitlab.yourcompany.com) instead of [https://gitlab.yourcompany.com/subfolder1/](https://gitlab.yourcompany.com/subfolder1/)... The PAT will provide access to any of the repositories that have access granted to them.
 
 ## Required permissions and roles
 
@@ -32,12 +30,14 @@ There are two ways to integrate Snyk with GitLab, either via our Broker or direc
 To integrate with GitLab, as a Snyk admin user or as a member of the organization:
 
 ### User with Personal Access Token
-1. Generate a [personal access token](https://gitlab.com/-/profile/personal_access_tokens) enabling the **api** scope for access.
+
+1. Generate a [personal access token](https://gitlab.com/-/profile/personal\_access\_tokens) enabling the **api** scope for access.
 2. Ensure that the GitLab user that you've just generated the access token from, is either the **Owner** of the projects (repos) you'd like to monitor with Snyk or has **Maintainer** permissions to them.
 
 ![](../../../.gitbook/assets/gitlab\_token.png)
 
 ### Group Access Token
+
 1. Locate your group in GitLab, and select **Settings > Access Tokens**.
 2. Enter a descriptive token name (such as 'Snyk token'), select the **Maintainer** role, and check the **api** scope.
 
