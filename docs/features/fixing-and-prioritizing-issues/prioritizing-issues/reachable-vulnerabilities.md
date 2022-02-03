@@ -9,7 +9,7 @@ The next step is to see which of the identified packages contains a vulnerabilit
 Many vulnerabilities may not affect your code, as you may not use the vulnerable part of the package:
 
 * A **reachable** vulnerability has a path from the code to the vulnerable function.
-* A **not reachable** vulnerability does not have this path.&#x20;
+* A **not reachable** vulnerability does not have this path.
 
 By looking deeper into how the app is using the open-source dependencies, and how the open-source dependencies interact with each other, we can add the needed context around the found vulnerabilities. This reachability helps you decide how to prioritize which vulnerabilities to fix.
 
@@ -39,7 +39,7 @@ Reachable Vulnerabilities analysis is available for Java (Maven and Gradle) apps
 
 To perform Reachable Vulnerabilities analysis, you can:
 
-* Test your apps for reachability issues on repositories imported to Snyk from Git, using our Git integrations. Reachability is conducted as a part of the checks performed by Snyk (currently, GitHub is supported).  _**NOTE**: Using this method clones your repository to Snyk, to run the analysis. The repo will be deleted from our servers after the analysis is complete._
+* Test your apps for reachability issues on repositories imported to Snyk from Git, using our Git integrations. Reachability is conducted as a part of the checks performed by Snyk (currently, GitHub is supported). _**NOTE**: Using this method clones your repository to Snyk, to run the analysis. The repo will be deleted from our servers after the analysis is complete._
 * Analyze your code for reachability issues using Snyk CLI. To run it using Snyk CLI, you must have the app already built (compiled), and the bytecode of the app should be available.
 
 ### Scanning for Reachable Vulnerabilities using Snyk CLI
@@ -55,15 +55,14 @@ Note that the `--reachable` parameter cannot be used simultaneously with `--all-
 ### Scanning for Reachable Vulnerabilities using Git Integrations
 
 {% hint style="info" %}
-To provide this feature, Snyk takes a temporary copy of your Git repository contents.&#x20;
+To provide this feature, Snyk takes a temporary copy of your Git repository contents.
 
 For more information see [how-snyk-handles-your-data.md](../../../more-info/how-snyk-handles-your-data.md "mention")
 {% endhint %}
 
 1. Set up your [GitHub integration](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration).
 2. Opt-in to Reachable Vulnerabilities analysis
-   * In **Organization** settings, go to the **Integrations** section.
-   * Click on **gitHub**.
+   * In **Organization** settings, go to the **Languages** section.
    * Go to the **Reachable vulnerabilities analysis** section.
    * Opt-in to the **Reachable vulnerabilities analysis** and save your changes.
 3. Go to the **import projects** page and choose the repositories to import to Snyk.
