@@ -13,7 +13,7 @@ Before installing the Snyk CLI using npm, be sure you have installed the **prere
 
 Then follow these **steps to install with npm or Yarn**:
 
-[Snyk CLI is available as an npm package](https://www.npmjs.com/package/snyk). If you have Node.js installed locally, you can **install** the npm package by running `npm install snyk@latest -g`.
+[Snyk CLI is available as an npm package](https://www.npmjs.com/package/snyk). If you have Node.js installed locally, you can **install** the npm package by running `npm install -g`.
 
 If you are using Yarn, **install** by running `yarn global add snyk`.
 
