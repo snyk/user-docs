@@ -63,7 +63,7 @@ Set or override the remote URL for the repository that you would like to monitor
 
 ### `--dev`
 
-Include development-only dependencies. Applicable only for some package managers, for example `devDependencies` in npm or `:development` dependencies in Gemfile.
+Include development-only dependencies. Applicable only for some package managers, for example, `devDependencies` in npm or `:development` dependencies in Gemfile.
 
 Default: scan only production dependencies.
 
