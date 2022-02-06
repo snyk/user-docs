@@ -45,7 +45,7 @@ Example: `--detection-depth=3` limits search to the specified directory (or the 
 
 Can be used with `--all-projects` and `--yarn-workspaces` to indicate sub-directories and files to exclude. Must be comma separated.
 
-Use the exclude option with `--detection-depth` to ignore directories at any depth.
+Use the `--exclude` option with `--detection-depth` to ignore directories at any depth.
 
 ### `--prune-repeated-subdependencies`, `-p`
 
@@ -63,7 +63,7 @@ Set or override the remote URL for the repository that you would like to monitor
 
 ### `--dev`
 
-Include development-only dependencies. Applicable only for some package managers, for example `devDependencies` in npm or `:development` dependencies in Gemfile.
+Include development-only dependencies. Applicable only for some package managers, for example, `devDependencies` in npm or `:development` dependencies in Gemfile.
 
 Default: scan only production dependencies.
 
