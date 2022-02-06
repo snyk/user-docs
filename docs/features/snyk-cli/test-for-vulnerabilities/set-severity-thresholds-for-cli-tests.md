@@ -7,3 +7,5 @@ To improve control over your tests, you can use the `--severity-threshold` optio
 {% hint style="info" %}
 Setting `--severity-threshold` to `low` has the same effect as running the command without specifying the threshold; all vulnerabilities are reported.
 {% endhint %}
+
+Note: The `--severity-threshold` option is available with the `snyk test`, `snyk monitor`, `snyk code`, `snyk container`, and `snyk iac` commands. See the [CLI commands help](../commands/) pages for each command for details.
