@@ -58,13 +58,7 @@ az ad sp create-for-rbac --name SpNameExample --role "Website Contributor"
 }
 ```
 
-The results above contain JSON output of the service principal name, password, and tenant that you'll need for setting up Snyk:
-
-From there you can login to your Snyk account and paste in your name, password and tenant.
-
-More information on creating a service principal for Azure can be found in Azure's documentation:
-
-[CLI](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli) , [Portal](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal)
+The results above contain JSON output of the service principal name, password, and tenant that you'll need for setting up Snyk. From there you can login to your Snyk account and paste in your name, password, and tenant. More information on creating a service principal for Azure can be found in Azure's documentation: [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli) , [Portal](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal)
 
 ## **Azure Functions: check your connection status**
 
