@@ -1,252 +1,86 @@
 # CLI reference
 
-**NAME**
+## Usage
 
-`snyk` - CLI and build-time tool to find & fix known vulnerabilities in open-source dependencies
+`snyk [COMMAND] [SUBCOMMAND] [OPTIONS] [PACKAGE] [CONTEXT`-SPECIFIC\_OPTIONS`]`
 
-## SYNOPSIS
+## Description
 
-`snyk [COMMAND] [SUBCOMMAND] [OPTIONS] [PACKAGE] [-- COMPILER_OPTIONS]`
+The Snyk CLI is a build-time tool to find and fix known vulnerabilities in your projects. For a more detailed description of the Snyk CLI and Snyk, see [Snyk CLI](../). For an introduction on how to use the Snyk CLI, see [Getting started with the CLI](../getting-started-with-the-cli/).
 
-## DESCRIPTION
+## Available CLI commands
 
-Snyk helps you find, fix and monitor known vulnerabilities in open-source dependencies.\
-For more information see [https://snyk.io](https://snyk.io)
+To learn more about each Snyk CLI command, use the `--help` option, for example, `snyk auth --help` or `snyk container --help`. You can also use the help command: `snyk help [<COMMAND>]`.
 
-## Not sure where to start? <a href="#not-sure-where-to-start" id="not-sure-where-to-start"></a>
+Each command in this list is linked to the corresponding help page in these docs. A list of all the [options](./#options) for Snyk CLI commands is at the end of this page. The options are explained in detail in the help for each command.
 
-1. authenticate with `$ snyk auth`
-2. test your local project with `$ snyk test`
-3. get alerted for new vulnerabilities with `$ snyk monitor`
+### [`snyk auth`](../commands/auth.md)
 
-## COMMANDS
+Authenticate Snyk CLI with a Snyk account.
 
-To see command-specific flags and usage, see `help` command, e.g. `snyk container --help` (available in [Advanced Snyk Container CLI usage](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)).
+### [`snyk test`](../commands/test.md)
 
-Available top-level CLI commands:
+Test a project for open source vulnerabilities and license issues.
 
-`auth [API_TOKEN]` Authenticate Snyk CLI with a Snyk account
+### [`snyk monitor`](../commands/monitor.md)
 
-`test`Test local project for vulnerabilities
+Snapshot and continuously monitor a project for open source vulnerabilities and license issues.
 
-`monitor`Snapshot and continuously monitor your project
+### [`snyk container`](../commands/container.md)
 
-`container`Test container images for vulnerabilities. See `snyk container --help` for full instructions.
+Test container images for vulnerabilities.
 
-`iac`Find security issues in your Infrastructure as Code files. See `snyk iac --help` for full instructions.
+### [`snyk iac`](../commands/iac.md)
 
-`code` Find security issues using static code analysis. See `snyk code --help` for full instructions.
+Find security issues in Infrastructure as Code files.
 
-`config`Manage Snyk CLI configuration
+### [`snyk code`](../commands/code.md)
 
-`protect`Applies the patches specified in your `.snyk` file to the local file system
+Find security issues using static code analysis.
 
-`policy`Display the `.snyk` policy for a package.
+### [`snyk log4shell`](../commands/log4shell.md)
 
-`ignore`Modifies the `.snyk` policy to ignore stated issues
+Find Log4Shell vulnerability.
 
-`wizard`Configure your policy file to update, auto patch, and ignore vulnerabilities. Snyk wizard updates your `.snyk` file.
+### [`snyk config`](../commands/config.md)
 
-`log4shell` Find traces of the Log4J library that are affected by the Log4Shell vulnerability [CVE-2021-44228](https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720). See `snyk log4shell --help` for full instructions.
+Manage Snyk CLI configuration.
 
-## OPTIONS
+### [`snyk policy`](../commands/policy.md)
 
-To see command-specific flags and usage, see `help` command, e.g. `snyk container --help`. For advanced usage, we offer language and context-specific flags, listed further down this document.
+Display the `.snyk` policy for a package.
 
-`--all-projects` (only in `test` and `monitor` commands) Auto-detect all projects in the working directory (including Yarn workspaces)
+### [`snyk ignore`](../commands/ignore.md)
 
-`--detection-depth=DEPTH` (only in `test` and `monitor` commands) Use with --all-projects or --yarn-workspaces to indicate how many subdirectories to search. `DEPTH` must be a number.\
-Default: 4 (the current working directory and 3 sub-directories)
+Modify the `.snyk` policy to ignore stated issues.
 
-`--exclude=DIRECTORY[,DIRECTORY]...>` (only in `test` and `monitor` commands) Can be used with --all-projects and --yarn-workspaces to indicate sub-directories to exclude. Directories must be comma-separated. If using with `--detection-depth` exclude ignores directories at any level deep.
+## New CLI commands
 
-`--prune-repeated-subdependencies`, `-p` (only in `test` and `monitor` commands) Prune dependency trees, removing duplicate sub-dependencies. Will still find all vulnerabilities, but potentially not all of the vulnerable paths.
+### ``[`snyk fix`](../fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix.md)``
 
-`--print-deps` (only in `test` and `monitor` commands) Print the dependency tree before sending it for analysis.
+Apply the recommended updates for supported ecosystems automatically.
 
-`--remote-repo-url=URL` Set or override the remote URL for the repository that you would like to monitor.
+### ``[`snyk apps`](https://docs.snyk.io/features/snyk-cli/create-a-snyk-app-using-the-snyk-cli)``
 
-`--dev`Include devDependencies.Default: scan only production dependencies
+Create a Snyk App using the Snyk CLI.
 
-`--org=ORG_NAME` Specify the ORG\_NAME to run Snyk commands tied to a specific organization. This will influence where will new projects be created after running `monitor` command, some features availability, and private test limits. If you have multiple organizations, you can set a default from the CLI using:
-
-`$ snyk config set org=ORG_NAME`
-
-Setting a default will ensure all newly monitored projects will be created under your default organization. If you need to override the default, you can use the `--org=ORG_NAME` argument. Default: uses `ORG_NAME` that sets as default in your [Account settings](https://app.snyk.io/account)
-
-`--file=FILE` Sets a package file. When testing locally or monitoring a project, you can specify the file that Snyk should inspect for package information. When omitted Snyk will try to detect the appropriate file for your project.
-
-`--ignore-policy`Ignores all set policies. The current policy in the `.snyk` file, Org level ignores and the project policy on snyk.io.
-
-`--trust-policies`Applies and uses ignore rules from your dependencies' Snyk policies, otherwise ignore policies are only shown as a suggestion.
-
-`--show-vulnerable-paths=none|some|all` Display the dependency paths from the top-level dependencies, down to the vulnerable packages. Doesn't affect output when using JSON `--json` output. Default: some (a few example paths shown) false is an alias for none.
-
-`--project-name=PROJECT_NAME` Specify a custom Snyk project name.
-
-`--target-reference=TARGET_REFERENCE` A reference which differentiates this project. For example, a branch name or version. Projects using the same reference can be used for grouping. Only supported for [Snyk Open Source](../../../products/snyk-open-source/). For more information, see: [grouping-projects-by-branch-or-version.md](../secure-your-projects-in-the-long-term/grouping-projects-by-branch-or-version.md "mention").
-
-`--project-environment=ENVIRONMENT[,ENVIRONMENT]...>` (only in monitor command) Set the project environment to one or more values (comma-separated). To clear the project environment set `--project-environment=`. Allowed values: frontend, backend, internal, external, mobile, saas, onprem, hosted, distributed
-
-`--project-lifecycle=LIFECYCLE[,LIFECYCLE]...>` (only in monitor command) Set the project lifecycle to one or more values (comma-separated). To clear the project lifecycle set `--project-lifecycle=`. Allowed values: production, development, sandbox
-
-`--project-business-criticality=BUSINESS`_`CRITICALITY[,BUSINESS_CRITICALITY]...>` (only in monitor command)_ Set the project business criticality to one or more values (comma-separated). To clear the project business criticality set `--project-business-criticality=`. Allowed values: critical, high, medium, low \_\_
-
-`--project-tags=TAG[,TAG]...>` (only in monitor command). Alias `--tags=TAG[,TAG]...>.` Set the project tags to one or more values (comma-separated key value pairs with an "=" separator). e.g. --project-tags=department=finance,team=alpha. To clear set project tags `--project-tags=`
-
-`--policy-path=PATH_TO_POLICY_FILE` Manually pass a path to a Snyk policy file.
-
-`--json` Prints result in JSON format.
-
-`--json-file-output=OUTPUT_FILE_PATH` (only in `test` command) Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option. This is especially useful if you want to display the human-readable test output via stdout and at the same time save the JSON format output to a file.
-
-`--severity-threshold=low|medium|high|critical` Only report vulnerabilities of provided level or higher.
-
-`--fail-on=all|upgradable|patchable` Only fail when there are vulnerabilities that can be fixed.
-
-**all** - fails when there is at least one vulnerability that can be either upgraded or patched.\
-**upgradable** - fails when there is at least one vulnerability that can be upgraded.\
-**patchable** - fails when there is at least one vulnerability that can be patched.
-
-If vulnerabilities do not have a fix and this option is being used, tests will pass.
-
-`--dry-run` (only in `protect` command) Don't apply updates or patches during `protect` command run.
-
-`-- [COMPILER_OPTIONS]` Pass extra arguments directly to Gradle or Maven. E.g. `snyk test -- --build-cache`
-
-`|| true` Sets the exit code of the scan to 0. Can be used to continue with a CI/CD pipeline even when there are vulnerabilities.
-
-Below are flags that are influencing CLI behavior for specific projects, languages, and contexts:
-
-### Maven options <a href="#maven-options" id="maven-options"></a>
-
-`--scan-all-unmanaged`Auto-detects maven jar, war, and aar files in a given directory.
-
-**NOTE**
-
-custom-built jar files, even with open source dependencies, are out of scope.
-
-`--scan-unmanaged`Auto-detects maven jar, war, and aar files in a given directory, and individual testing can be done with `--file=FILE_NAME`
-
-`--reachable` (only in `test` and `monitor` commands) Analyze your source code to find which vulnerable functions and packages are called. Cannot be used in conjunction with `--all-projects` or `--all-sub-projects`
-
-`--reachable-timeout=TIMEOUT` The amount of time (in seconds) to wait for Snyk to gather reachability data. If it takes longer than `TIMEOUT`, Reachable Vulnerabilities are not reported. This does not affect regular test or monitor output. Default: 300 (5 minutes).
-
-### Gradle options <a href="#gradle-options" id="gradle-options"></a>
-
-[More information about Gradle CLI options](https://snyk.co/ucT6P)
-
-`--sub-project=NAME`, `--gradle-sub-project=NAME` For Gradle "multi-project" configurations, test a specific sub-project.
-
-`--all-sub-projects` For "multi-project" configurations, test all sub-projects.
-
-`--configuration-matching=CONFIGURATION_REGEX` Resolve dependencies using only configuration(s) that match the provided Java regular expression, e.g. `^releaseRuntimeClasspath$`.
-
-`--configuration-attributes=ATTRIBUTE[,ATTRIBUTE]...` Select certain values of configuration attributes to resolve the dependencies. E.g. `buildtype:release,usage:java-runtime`
-
-### .Net & NuGet options <a href="#net-nuget-options" id="net-nuget-options"></a>
-
-`--assets-project-name`When monitoring a .NET project using NuGet `PackageReference` use the project name in project.assets.json, if found.
-
-`--packages-folder`Custom path to packages folder
-
-### npm options <a href="#npm-options" id="npm-options"></a>
-
-`--strict-out-of-sync=true|false` Control testing out of sync lockfiles.
-
-Default: true
-
-### Yarn options <a href="#yarn-options" id="yarn-options"></a>
-
-`--strict-out-of-sync=true|false` Control testing out of sync lockfiles. Default: true
-
-`--yarn-workspaces`(only in `test` and `monitor` commands) Detect and scan Yarn workspaces. You can specify how many sub-directories to search using `--detection-depth` and exclude directories using `--exclude`. Alternatively scan Yarn workspaces alongside other projects using `--all-projects`
-
-### CocoaPods options <a href="#cocoapods-options" id="cocoapods-options"></a>
-
-`--strict-out-of-sync=true|false` Control testing out of sync lockfiles.
-
-Default: false
-
-### Python options <a href="#python-options" id="python-options"></a>
-
-`--command=COMMAND` Indicate which specific Python commands to use based on the Python version. The default is `python` which executes your system's default python version. Run 'python -V' to find out what version is it. If you are using multiple Python versions, use this parameter to specify the correct Python command for execution. Default: `python` Example: `--command=python3`
-
-`--skip-unresolved=true|false` Allow skipping packages that are not found in the environment.
-
-### Go options <a href="#python-options" id="python-options"></a>
-
-Please note that currently the following flags are not supported:
-
-`--fail-on=all|upgradable|patchable`
-
-### Flags available across all commands <a href="#flags-available-accross-all-commands" id="flags-available-accross-all-commands"></a>
-
-`--insecure` Ignore unknown certificate authorities.
-
-`-d`Output debug logs.
-
-`--quiet`, `-q` Silence all output.
-
-`--version`, `-v` Prints versions.
-
-`[COMMAND] --help, --help [COMMAND]`, `-h`Prints a help text. You may specify a `COMMAND` to get more details.
-
-## EXAMPLES <a href="#examples" id="examples"></a>
-
-Authenticate in your CI without user interaction `$ snyk auth MY_API_TOKEN`\
-Test a project in current folder for known vulnerabilities `$ snyk test`\
-Test a specific dependency for vulnerabilities `$ snyk test ionic@1.6.5`
-
-More examples:
-
-```
-$ snyk test --show-vulnerable-paths=false
-$ snyk monitor --org=my-team
-$ snyk monitor --project-name=my-project
-```
-
-### Container scanning <a href="#container-scanning" id="container-scanning"></a>
-
-See `snyk container --help` for more details and examples:
-
-```
-$ snyk container test ubuntu:18.04 --org=my-team
-$ snyk container test app:latest --file=Dockerfile --policy-path=path/to/.snyk
-```
-
-### Infrastructure as Code (IAC) scanning <a href="#infrastructure-as-code-iac-scanning" id="infrastructure-as-code-iac-scanning"></a>
-
-See `snyk iac --help` for more details and examples:
-
-```
-$ snyk iac test path/to/Kubernetes.yaml
-$ snyk iac test path/to/terraform_file.tf
-```
-
-## EXIT CODES <a href="#exit-codes" id="exit-codes"></a>
+## Exit codes
 
 Possible exit codes and their meaning:
 
-**0**: success, no vulns found\
-**1**: action\_needed, vulns found\
-**2**: failure, try to re-run the command\
-**3**: failure, no supported projects detected
+**0**: success, no vulnerabilities found\
+**1**: action\_needed, vulnerabilities found\
+**2**: failure, try to re-run command\
+**3**: failure, no supported projects
 
-## ENVIRONMENT <a href="#environment" id="environment"></a>
+## Configure the Snyk CLI
 
-You can set these environment variables to change CLI run settings. These keys will override settings in your `snyk config`:
+You can use environment variables to configure the Snyk CLI and also set variables to configure the Snyk CLI to connect with the Snyk API. See [Configure the Snyk CLI](https://docs.snyk.io/features/snyk-cli/configure-the-snyk-cli).
 
-`SNYK_TOKEN`Snyk authorization token. Setting this `envvar` will override the token that may be available in your `snyk config` settings.\
-[How to get your account token](https://snyk.co/ucT6J)\
-[How to use Service Accounts](https://snyk.co/ucT6L)\`\`
+## Debug
 
-`SNYK_API`Sets API host to use for Snyk requests. Useful for on-premise instances and configuring proxies.
+Use `-d` option to output the debug logs.
 
-`SNYK_CFG_<KEY>`Allows you to override any key that's also available as `snyk config` option.
+## Options
 
-## NOTICES <a href="#notices" id="notices"></a>
-
-### Snyk API usage policy <a href="#snyk-api-usage-policy" id="snyk-api-usage-policy"></a>
-
-The use of Snyk's API, whether through the use of the 'snyk' npm package or otherwise, is subject to the [terms & conditions](https://snyk.co/ucT6N)
+A list of all the options for Snyk CLI commands and the commands to which they apply is being developed.
