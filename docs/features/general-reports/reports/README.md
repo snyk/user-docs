@@ -9,3 +9,6 @@ Use Snyk reports to view data and analytics across all of your projects, display
 * [Dependencies tab](dependencies-tab.md)
 * [Licenses tab](licenses-tab.md)
 
+{% hint style="warning" %}
+Reports do not support Snyk Code projects.
+{% endhint %}
