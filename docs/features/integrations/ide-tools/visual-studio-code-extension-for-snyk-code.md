@@ -1,9 +1,9 @@
 # Visual Studio Code extension
 
-
-
-{% hint style="info" %}
+{% hint style="warning" %}
 Snyk's Visual Studio Code extension is available for install on the marketplace: [https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner).
+
+Visual Studio Code requires Snyk CLI, see [install-the-snyk-cli](../../snyk-cli/install-the-snyk-cli/ "mention").
 {% endhint %}
 
 ## Supported languages
