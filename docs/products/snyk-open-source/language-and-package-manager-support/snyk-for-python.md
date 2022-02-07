@@ -1,21 +1,23 @@
 # Snyk for Python
 
-Snyk provides security scanning on projects for vulnerabilities through our CLI and the application UI (app.snyk.io).
+{% hint style="success" %}
+Snyk provides security scanning on projects for vulnerabilities through our CLI and the application UI (app.snyk.io).&#x20;
+{% endhint %}
 
 The following describes how to use Snyk to scan Python projects:
 
 ## Features
 
+| Package managers / Features                          | CLI support | Git support | License scanning | Fixing | <p>Runtime</p><p>monitoring</p> |
+| ---------------------------------------------------- | ----------- | ----------- | ---------------- | ------ | ------------------------------- |
+| [Pip and PyPI](https://pypi.org/project/pip/)        | ✔︎          | ✔︎          | ✔︎               | ✔︎     |                                 |
+| [pipenv](https://pipenv.kennethreitz.org/en/latest/) | ✔︎          |             | ✔︎               |        |                                 |
+| setup.py                                             | ✔︎          |             | ✔︎               | ✔︎     |                                 |
+| [Poetry](https://python-poetry.org)                  | ✔︎          |             | ✔︎               | ✔︎     |                                 |
+
 {% hint style="info" %}
 Features might not be available, depending on your subscription plan.
 {% endhint %}
-
-| Package managers / Features                          | CLI support | Git support | License scanning | Fixing | <p>Runtime </p><p>monitoring</p> |
-| ---------------------------------------------------- | ----------- | ----------- | ---------------- | ------ | -------------------------------- |
-| [Pip and PyPI](https://pypi.org/project/pip/)        | ✔︎          | ✔︎          | ✔︎               | ✔︎     |                                  |
-| [pipenv](https://pipenv.kennethreitz.org/en/latest/) | ✔︎          |             | ✔︎               |        |                                  |
-| setup.py                                             | ✔︎          |             | ✔︎               | ✔︎     |                                  |
-| [Poetry](https://python-poetry.org)                  | ✔︎          |             | ✔︎               | ✔︎     |                                  |
 
 {% hint style="info" %}
 PyPI licenses are supported for all Python projects.
@@ -23,11 +25,11 @@ PyPI licenses are supported for all Python projects.
 
 ## How it works
 
-Once we’ve built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in the dependency tree.
-
 {% hint style="info" %}
 To scan your dependencies, you must ensure you have first installed the relevant package manager, and that your project contains the supported manifest files.
 {% endhint %}
+
+Once we’ve built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in the dependency tree.
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project.
 
@@ -83,12 +85,12 @@ https://github.com/snyk/snyk-python-plugin/blob/master/lib/types.ts
 
 When scanning your Python project for vulnerabilities, use these options to modify commands:
 
-| Option                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `--command=`            | <p>Snyk uses Python in order to scan and find your dependencies. Snyk needs the Python version to start scanning, and defaults to "python"</p><p>If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.</p><p>For example: <code>snyk test --command=python3</code></p><p>See <a href="snyk-for-python.md">Using different Python versions</a> for more details</p>                                                                                                                 |
-| `--skip-unresolved=`    | Skip packages when they can’t be found in the environment (for example, private packages that can’t be accessed from the machine running the scan).                                                                                                                                                                                                                                                                                                                                                                                             |
-| `--file=`               | <p>Specify a specific file to test. By default, Snyk scans the requirements.txt file on the top level of the project.</p><p>If explicitly specified with this parameter, Snyk can recognize any manifest files named *req*.txt, where: Each (*) is a wildcard and req can appear anywhere in the file name.</p><p>For example, Snyk recognizes your manifest file when you have renamed it to requirements-dev.txt.</p><p><strong>Note</strong>: --package-manager=pip should be added to your cmd if the file name is not requirements.txt</p> |
-| `--package-manager=pip` | This parameter is mandatory if you specify a value for the --file parameter that is not to a requirements.txt file. The test fails without this parameter. Specify this parameter with the value pip.                                                                                                                                                                                                                                                                                                                                           |
+| Option                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `--command=`            | <p>Snyk uses Python in order to scan and find your dependencies. Snyk needs the Python version to start scanning, and defaults to "python"</p><p>If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.</p><p>For example: <code>snyk test --command=python3</code></p><p>See <a href="snyk-for-python.md">Using different Python versions</a> for more details</p>                                                                                                                        |
+| `--skip-unresolved=`    | Skip packages when they can’t be found in the environment (for example, private packages that can’t be accessed from the machine running the scan).                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `--file=`               | <p>Specify a specific file to test. By default, Snyk scans the requirements.txt file on the top level of the project.</p><p>If explicitly specified with this parameter, Snyk can recognize any manifest files named <em>req</em>.txt, where: Each (*) is a wildcard and req can appear anywhere in the file name.</p><p>For example, Snyk recognizes your manifest file when you have renamed it to requirements-dev.txt.</p><p><strong>Note</strong>: --package-manager=pip should be added to your cmd if the file name is not requirements.txt</p> |
+| `--package-manager=pip` | This parameter is mandatory if you specify a value for the --file parameter that is not to a requirements.txt file. The test fails without this parameter. Specify this parameter with the value pip.                                                                                                                                                                                                                                                                                                                                                  |
 
 ## Git services for Python projects
 
@@ -142,8 +144,8 @@ To define which Python major version Snyk uses to test your Git imported project
 To define Python version for all projects in an organization:
 
 1. Log in to your account and navigate to the relevant group and organization to manage.
-2. Click on settings ![](../../../.gitbook/assets/cog\_icon.png) > **Languages**.&#x20;
-3. Click **Edit settings** for **Python**.&#x20;
+2. Click on settings ![](../../../.gitbook/assets/cog\_icon.png) > **Languages**.
+3. Click **Edit settings** for **Python**.
 4. Select to use **Python 2** or **Python 3** when testing projects for this organization
 
 ![](../../../.gitbook/assets/mceclip1-18-.png)
