@@ -68,7 +68,7 @@ Create a Snyk App using the Snyk CLI.
 
 ## Sub-commands of CLI commands
 
-The following is a list of the sub-commands available for the CLI, with the CLI commands to which each applies. Each command is linked to its help doc. For details concerning each sub-command, see the help doc.
+The following is a list of the sub-commands for Snyk CLI commands. Each sub-command is followed by the command(s) to which the sub-command applies. The commands are linked to their help docs. For details concerning each sub-command, see the help docs.
 
 `test`: sub-command of [`code`](https://docs.snyk.io/features/snyk-cli/commands/code), [`container`](https://docs.snyk.io/features/snyk-cli/commands/container), and [`iac`](https://docs.snyk.io/features/snyk-cli/commands/iac)
 
