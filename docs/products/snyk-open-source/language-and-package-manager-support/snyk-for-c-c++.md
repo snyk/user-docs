@@ -307,10 +307,6 @@ Automated regular testing and re-scanning from the Snyk App is not currently sup
 
 ### Known issues
 
-#### Files in hidden directories are ignored
-
-When scanning a directory, all files that are in a hidden directory (such as **.conan** or **.git**) are ignored. Dependencies stored in such directories will not be detected.
-
 **Scanning on Windows**
 
 Many open source projects in git use Unix line endings. By default, git on Windows converts Unix line endings to Windows line endings and only converts them back for the actual commits. Our database contains source code signatures with the original line endings (as defined in the individual projects), so when you scan on Windows, the signatures generated for the files with Windows line endings are different than the signatures in our database. In such case, it is very likely no dependencies will be found.
