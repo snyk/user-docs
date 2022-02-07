@@ -179,6 +179,13 @@ Please use _one_ of the following SCM configurations:
 | `deeproxy.tolerations`                | Aggregator Tolerations for pod assignment                        | `[]`          |
 | `deeproxy.affinity`                   | Forwarder Affinity for pod assignment                            | `{}`          |
 
+#### Nginx ingress controller
+
+| Name                                               | Description                      | Default Value |
+| -------------------------------------------------- | -------------------------------- | ------------- |
+| `nginx-ingress-controller.service.nodePorts.http`  | Specify the nodePort http value  | `""`          |
+| `nginx-ingress-controller.service.nodePorts.https` | Specify the nodePort https value | `""`          |
+
 ### Third-party charts
 
 If you want to configure some of the third-party services that we use, examples can be found here:
@@ -240,9 +247,12 @@ Set this up as follows:
     ```
     --set deeproxy.enabled="true" \
     --set global.ingress.enabled="true" \
-    --set global.ingress.host="snyk-code-local-engine.example" 
+    --set global.ingress.host="snyk-code-local-engine.example" \
+    --set nginx-ingress-controller.service.nodePorts.http="32529" \
+    --set nginx-ingress-controller.service.nodePorts.https="32530" 
     ```
 
+    **Note:** Kubenetes NodePort's range is 30000 - 32767.\
 
 2.  Adding the service/nginx-ingress-controller's dynamically-allocated http port to your firewall. The port can be obtained with:\
     (The forwarded port to port 80 is the target.)\
@@ -267,7 +277,7 @@ You can check if this setup was successful by calling Snyk Code Local Engine API
 * http://snyk-code-local-engine.example:$port/api/healthcheck
 * http://snyk-code-local-engine.example:$port/broker/healthcheck
 
-With `$port` being the targeted port in step 2.
+With `$port` being the targeted port in step 2. In our example from step 1,`$port` is 32529.
 
 We recommend restricting any other access to the entry point, specifically from any sources on the internet.
 
