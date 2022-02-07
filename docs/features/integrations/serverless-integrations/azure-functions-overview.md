@@ -14,7 +14,7 @@ In order to turn on the Azure Function Apps integration you'll need to:
 
 ## **Connect Snyk to Azure Functions**
 
-For Snyk to monitor your deployed Azure Function apps, you must connect Snyk to your Azure account.&#x20;
+For Snyk to monitor your deployed Azure Function apps, you must connect Snyk to your Azure account.
 
 To do this, in [your Integrations page](https://app.snyk.io/integrations), navigate to **Serverless** and click **Azure Functions**:
 
@@ -32,15 +32,21 @@ To give Snyk access to your Azure account, you'll need a valid service principal
 
 To create a service principal for use by Snyk, you can either use the [Azure Portal](https://portal.azure.com) or the [Azure CLI 2.0](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
 
-After installing the Azure CLI 2.0, you should have the az command. Authenticate the CLI with your account using:
+After installing the Azure CLI 2.0, you have access to the `az` command. Authenticate the CLI with your account using:
 
-`az login`
+```
+az login
+```
 
-Once authenticated, use it to create the service principal:
+Once authenticated, create the service principal:
 
+#### Input:
+
+```
 az ad sp create-for-rbac --name SpNameExample --role "Website Contributor"
+```
 
-This would result in JSON output similar to the following, which contains the service principal name, password and tenant that you'll need for setting up Snyk:
+#### Output:
 
 ```
 {
@@ -51,6 +57,8 @@ This would result in JSON output similar to the following, which contains the se
 "tenant": "874186fd-a7a8-4e98-9b9e-3df00example"
 }
 ```
+
+The results above contain JSON output of the service principal name, password, and tenant that you'll need for setting up Snyk:
 
 From there you can login to your Snyk account and paste in your name, password and tenant.
 
