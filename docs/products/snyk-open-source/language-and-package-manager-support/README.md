@@ -8,7 +8,7 @@ For language support for other Snyk products, see the docs for those products - 
 
 | **Language**                                                         | **Package manager/build tool** |
 | -------------------------------------------------------------------- | ------------------------------ |
-| [.NET](snyk-for-.net.md) (C#, F#, VB#)                               | Nuget, Paket                   |
+| [.NET](snyk-for-.net.md) (C#, F#, Visual Basic )                     | Nuget, Paket                   |
 | [C / C++](snyk-for-c-c++.md)                                         | N/A                            |
 | [Elixir](snyk-for-elixir.md)                                         | hex                            |
 | [Go](snyk-for-golang.md)                                             | Go Modules, dep, govendor      |
