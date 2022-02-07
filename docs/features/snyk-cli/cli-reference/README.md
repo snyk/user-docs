@@ -64,6 +64,24 @@ Apply the recommended updates for supported ecosystems automatically.
 
 Create a Snyk App using the Snyk CLI.
 
+
+
+## Sub-commands of CLI commands
+
+The following is a list of the sub-commands available for the CLI, with the CLI commands to which each applies. Each command is linked to its help doc. For details concerning each sub-command, see the help doc.
+
+`test`: sub-command of [`code`](https://docs.snyk.io/features/snyk-cli/commands/code), [`container`](https://docs.snyk.io/features/snyk-cli/commands/container), and [`iac`](https://docs.snyk.io/features/snyk-cli/commands/iac)
+
+`monitor`: sub-command of [`container`](https://docs.snyk.io/features/snyk-cli/commands/container)
+
+`get <KEY>`: sub-command of [config](https://docs.snyk.io/features/snyk-cli/commands/config)
+
+`set <KEY>=<VALUE>`: sub-command of [config](https://docs.snyk.io/features/snyk-cli/commands/config)
+
+`unset <KEY>`: sub-command of [config](https://docs.snyk.io/features/snyk-cli/commands/config)
+
+`clear`: sub-command of [config](https://docs.snyk.io/features/snyk-cli/commands/config)
+
 ## Exit codes
 
 Possible exit codes and their meaning:
