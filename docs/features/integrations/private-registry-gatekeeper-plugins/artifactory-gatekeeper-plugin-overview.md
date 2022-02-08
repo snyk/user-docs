@@ -51,7 +51,7 @@ This article refers to the Artifactory _Plugin_, an independent piece of softwar
    1. Set the API Token and Organization ID from the above steps as "snyk.api.token" and "snyk.api.organization" respectively.
    2. Configure the rest of the properties as needed or leave them as defaults.
    3. For a full list of properties, [view the file on GitHub](https://github.com/snyk/artifactory-snyk-security-plugin/blob/master/core/src/main/groovy/io/snyk/plugins/artifactory/snykSecurityPlugin.properties).
-7. Place all the files under "${ARTIFACTORY\_HOME}/etc/plugins/"
+7. Place all the files under "$JFROG_HOME/artifactory/var/etc/artifactory/plugins"
 8. Restart your Artifactory server. **NOTE: Refresh now** or **Reload** is not sufficient. Artifactory must be restarted.
 9. Log in to your Artifactory instance and navigate to the **System Logs** to double-check Snyk has been installed successfully.
 
