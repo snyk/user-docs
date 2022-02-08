@@ -75,7 +75,7 @@ Save test output in SARIF format directly to the `<OUTPUT_FILE_PATH>` file, rega
 
 This is especially useful if you want to display the human-readable test output using stdout and at the same time save the SARIF format output to a file.
 
-### `--severity-threshold=low|medium|high|critical`
+### `--severity-threshold=<low|medium|high|critical>`
 
 Report only vulnerabilities at the specified level or higher.
 
