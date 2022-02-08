@@ -53,6 +53,6 @@ Print results in JSON format.
 
 Return results in SARIF format.
 
-### `--severity-threshold=low|medium|high|critical`
+### `--severity-threshold=<low|medium|high|critical>`
 
 Report only vulnerabilities at the specified level or higher. Note that the Snyk Code configuration issues do not currently use the `critical` severity level.
