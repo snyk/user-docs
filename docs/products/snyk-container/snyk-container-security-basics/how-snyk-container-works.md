@@ -25,13 +25,14 @@ After we have the list of installed software, we look that up against our vulner
 
 We detect vulnerabilities in images based on:
 
+* Alpine
 * Debian
 * Ubuntu
-* Centos
-* Red Hat Enterprise Linux (including UBI)
-* Amazon Linux 2
+* CentOS
+* Red Hat Enterprise Linux (RHEL), including Universal Base Image (UBI)
+* Amazon Linux
+* Oracle Linux
 * SUSE Linux Enterprise Server
-* Alpine
 
 Check out the [Operating Systems Support](https://docs.snyk.io/snyk-container/snyk-container-security-basics/supported-operating-system-distributions) page for specific version support and our [updates](https://updates.snyk.io) page for all the latest updates.
 
