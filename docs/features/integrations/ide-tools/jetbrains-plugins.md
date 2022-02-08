@@ -46,6 +46,26 @@ The installation is done via the IDE plugins catalog/library:
 
 ![](../../../.gitbook/assets/ide.png)
 
+## Configuration
+
+### Environment
+
+To analyze projects, the plugin uses the Snyk CLI which needs some environment variables. The following variables are needed or helpful, dependent on the type of project you analyse:&#x20;
+
+* `PATH`: the path to needed binaries, (for example, to maven).&#x20;
+* `JAVA_HOME`: the path to the JDK to use to analyze Java dependencies
+
+Setting these variables only in a shell environment (for example, using `~/.bashrc`) is not sufficient, if you do not start the Jetbrains IDE from the command line or create a script file that starts it using a shell environment.&#x20;
+
+* On **Windows**, you can set the variables, using the GUI or on the command line using the `setx` tool.&#x20;
+* On **macOS**, the process `launchd` needs to know the environment variables if you want to launch the IDE from Finder directly. Set environment variables for applications launched via Finder using the `launchctl setenv` command (for example, on start-up or via a script you launch at user login). \
+  **Note:** The provision of environment variables to the macOS UI can change between operating system releases, so it can be easier to create a small shell script that launches the IDE to leverage the shell environment, that can be defined via `~/.bashrc`.&#x20;
+* On **Linux**, updating the file `/etc/environment` can be used to propagate the environment variables to the windows manager and UI.
+
+### Proxy
+
+If you need to use a proxy server to connect to the internet, please configure it using the [Jetbrains IDE settings](https://www.jetbrains.com/help/idea/settings-http-proxy.html). The Snyk plugin will use them.
+
 ## Authentication
 
 The first time it is needed, the plugin automatically downloads the CLI in the background. There are a few ways to authenticate once the plugin is installed:

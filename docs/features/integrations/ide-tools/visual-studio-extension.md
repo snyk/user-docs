@@ -35,6 +35,17 @@ Once the tool window appears, wait while Snyk extension downloads the latest Sny
 
 By now you should have the extension installed and the Snyk CLI downloaded. Time to authenticate. The first way is to click "Connect Visual Studio to Snyk" link.
 
+## Configuration
+
+To analyse projects, the plugin uses the Snyk CLI which needs some environment variables:&#x20;
+
+* `PATH`: the path to needed binaries (for example, to maven).
+* `JAVA_HOME`: the path to the JDK you want to use for analysis of Java dependencies
+* `http_proxy` and `https_proxy`: set if you are behind a proxy server, using the value in the format `http://username:password@proxyhost:proxyport`. \
+  **Note:** the leading `http://` in the value does not change to `https://` for `https_proxy`
+
+You can set the variables, using the GUI or on the command line using the `setx` tool.&#x20;
+
 ## **Authentication**
 
 Authenticate using _"Connect Visual Studio to Snyk"_ link on Overview page.

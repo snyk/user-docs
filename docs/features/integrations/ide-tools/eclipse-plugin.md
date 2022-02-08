@@ -31,7 +31,31 @@ Snyk supports all languages that are supported by both Eclipse and Snyk. Additio
 
 ![](../../../.gitbook/assets/uuid-01198b42-f020-2cc5-c20f-93817eeb44a4-en.png)
 
+## Configuration
+
+To use Snyk, you must supply the plugin with environment variables and the Snyk Token.
+
+#### API token
+
+To provide your API token, copy it from your [account settings](https://app.snyk.io/account) and paste it into the field Snyk API Token. Click **Apply and Close** to start analysing.
+
 ![](../../../.gitbook/assets/uuid-928012b7-8e49-fe6f-4965-77c5db026784-en.png)
+
+#### Environment variables
+
+To analyze projects, the plugin uses the Snyk CLI, which needs the following environment variables:
+
+* `PATH`: the path to needed binaries, for example, to maven. The `PATH` variable can also be manually adjusted using the `Path` field in the settings dialog
+* `JAVA_HOME`: the path to the JDK you want to use to analyzeJava dependencies
+* `http_proxy` and `https_proxy`: set using the value in the format `http://username:password@proxyhost:proxyport.` \
+  **Note:** the leading `http://` in the value does not change to `https://` for `https_proxy`
+
+Setting these variables only in a shell environment (for example, using **\~/.bashrc**) is not enough, if you don't start Eclipse from the command line or create a script file that starts Eclipse using a shell environment.&#x20;
+
+* On **Windows**, set the variables using the GUI, or on the command line using the [setx](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/setx) tool.
+* On **macOS**, the process `launchd` needs to know the environment variables to launch Eclipse directly from Finder. Set these environment variables using the `launchctl setenv` command (for example, on start-up or using a script you launch at user login). \
+  **Note:** The provision of environment variables to the macOS UI may change between operating system releases, so it can be easier to create a small shell script that launches the Eclipse app to leverage the shell environment, that can be defined via `~/.bashrc`.
+* On **Linux**, updating the file `/etc/environment` can be used to propagate the environment variables to the windows manager and UI.
 
 ## Use the Snyk plugin to secure your Eclipse projects
 
