@@ -54,7 +54,7 @@ To enable snyk fix during the beta period, click on **Settings** ![](../../../.g
 
 The `snyk fix` command supports all the `snyk test` command options and has the following additional options:
 
-* **`--`**`quiet` **** - Suppress all output to the command line.
+* `--quiet` **** - Suppress all output to the command line.
 * `--dry-run` - Run almost all the logic and display output, but do not make the final changes to the relevant files. Show a preview of the changes.
 * `--sequential` - Install each dependency update separately one at a time (the default is to install all at once). The default is much slower, but helps increase the number of successful updates by allowing some updates to fail and the process to continue.
 
@@ -118,7 +118,7 @@ Snyk delegates to `poetry` directly to update dependencies to the specified reco
 Run in debug mode to get more information on any errors.
 
 ```
-DEBUG=*snyk* snyk fix
+DEBUG=snyk snyk fix
 ```
 
 This provides a very verbose output that can help diagnose issues or can be sent to Snyk for debugging.
