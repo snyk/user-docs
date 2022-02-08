@@ -1,22 +1,24 @@
 # Filtering and exporting Snyk Code CLI results
 
-### To only display issues above a specific severity level
+The following are examples of specific uses of the `snyk code` CLI command.
 
-Enter:
+## Display only issues above a specific severity level
+
+Usage:
 
 ```
-snyk code test <folder> --severity-threshold=<low|medium|high>
+snyk code test <folder> --severity-threshold=<low|medium|high|critical>
 ```
 
-For example, to only display results with a severity value of **medium** or higher:
+Example: display only results with a severity value of `medium` or higher:
 
 ```
 snyk code test ./my-proj --severity-threshold=medium
 ```
 
-### To output the test format as JSON
+## Output the test format as JSON
 
-Enter:
+Usage:
 
 ```
 snyk code test <folder> --json
@@ -24,25 +26,25 @@ snyk code test <folder> --json
 
 This can be helpful if you want to store a snapshot of the results locally, or process the results in another tool for reporting and further analysis.
 
-For example, from the CLI enter the following:
+Example: output the results for a test of `./my-proj` as JSON:
 
 ```
 snyk code test ./my-proj --json
 ```
 
-### To output the test format as SARIF
+## Output the test format as SARIF
 
 {% hint style="info" %}
-SARIF is an open-standard for the output of static analysis tools. See the [official SARIF page](https://sarifweb.azurewebsites.net) for details.
+SARIF is an open standard for the output of static analysis tools. See the [official SARIF page](https://sarifweb.azurewebsites.net) for details.
 {% endhint %}
 
-You can view and save the results of your tests as a SARIF file for analysis in another tool:
+Example: view the results of your tests as a SARIF file for analysis in another tool:
 
 ```
 snyk code test ./my-proj --sarif
 ```
 
-Or to save this to a file output, you can run:
+Example: save the results to an output SARIF file:
 
 ```
 snyk code test ./my-proj --sarif-file-output=snyk.sarif
