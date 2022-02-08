@@ -99,9 +99,15 @@ After the selections are made, click **Save Changes** to complete your SSO confi
 
 ### 4. Verify SSO login
 
-Login to [**snyk**](http://snyk.io) in incognito mode to prevent cookies from interfering and verify the SSO Login is working.
+Once the SSO settings are saved successfully, click on the direct login URL displayed on the screen for the SSO connection you set up. And you would be taken to your IDP through which you can login to your Snyk Group.
 
-(Direct Link:[https://app.snyk.io/login/sso](https://app.snyk.io/login/sso)) or:
+![](<../../../.gitbook/assets/Screenshot 2022-02-08 at 12.54.37.png>)
+
+
+
+Alternatively,  you can login to [**snyk**](http://snyk.io) in incognito mode to prevent cookies from interfering and verify the SSO Login is working.
+
+(Direct SSO Link:[https://app.snyk.io/login/sso](https://app.snyk.io/login/sso)) or:
 
 1. [https://snyk.io](https://snyk.io)
 2. Log in
