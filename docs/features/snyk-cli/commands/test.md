@@ -93,7 +93,7 @@ Ignore all set policies, the current policy in the `.snyk` file, Org level ignor
 
 Apply and use ignore rules from the Snyk policies your dependencies; otherwise ignore rules in the dependencies are only shown as a suggestion.
 
-### `--show-vulnerable-paths=none|some|all`
+### `--show-vulnerable-<paths=none|some|all>`
 
 Display the dependency paths from the top level dependencies down to the vulnerable packages. Does not affect output when using JSON `--json` output.
 
@@ -131,11 +131,11 @@ Save test output in SARIF format directly to the \<OUTPUT\_FILE\_PATH> file, reg
 
 This is especially useful if you want to display the human-readable test output using stdout and at the same time save the SARIF format output to a file.
 
-### `--severity-threshold=low|medium|high|critical`
+### `--severity-threshold=<low|medium|high|critical>`
 
 Report only vulnerabilities at the specified level or higher.
 
-### `--fail-on=all|upgradable|patchable`
+### `--fail-on=<all|upgradable|patchable>`
 
 Fail only when there are vulnerabilities that can be fixed.
 
