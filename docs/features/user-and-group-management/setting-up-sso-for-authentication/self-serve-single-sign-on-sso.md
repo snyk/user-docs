@@ -2,10 +2,6 @@
 
 Group Admins of Business plan who use SAML for SSO can configure Snyk Single Sign-on by themselves.
 
-{% hint style="info" %}
-This feature will be available in February 2022; contact your Snyk representative for more details.
-{% endhint %}
-
 Ensure you have at least one group and organization to indicate where new users will be assigned. See [Groups, Organizations and Users](https://github.com/snyk/user-docs/blob/118bd8f19001bd64415f0ce63897f568c4b5327a/docs/introducing-snyk/snyks-core-concepts/groups-organizations-and-users.md).
 
 ### Use SAML for SSO
