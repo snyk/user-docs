@@ -2,9 +2,9 @@
 
 ### Overview
 
-Snyk Code Local Engine is a fully contained version of the Snyk Code Engine, allowing users to avoid uploading their code to the internet.&#x20;
+Snyk Code Local Engine is a fully contained version of the Snyk Code Engine, allowing users to avoid uploading their code to the internet.
 
-This high-level architecture digram shows the different components and their interactions.
+This high-level architecture diagram shows the different components and their interactions.
 
 ![Snyk Code Local Engine Architecture](<../../../../.gitbook/assets/Screen Shot 2021-11-11 at 2.36.41 PM.png>)
 
