@@ -8,6 +8,10 @@
 
 The `snyk test` command checks projects for open source vulnerabilities and license issues. The test command tries to auto-detect supported manifest files with dependencies and test those.
 
+Example: Test a project in current folder for known vulnerabilities `$ snyk test`
+
+Example: Test a specific dependency for vulnerabilities `$ snyk test ionic@1.6.5`
+
 ## Exit codes
 
 Possible exit codes and their meaning:
@@ -31,7 +35,7 @@ See also subsequent sections for options for specific build environments, packag
 
 ### `--all-projects`
 
-Auto-detect all projects in the working directory.
+Auto-detect all projects in the working directory (including Yarn workspaces).
 
 ### `--detection-depth=<DEPTH>`
 
@@ -79,11 +83,21 @@ Set a default to ensure all newly tested projects are tested under your default 
 
 Default: `<ORG_ID>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account).
 
+Example: `$ snyk test --org=my-team`
+
+For more information see the article [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI).
+
 ### `--file=<FILE>`
 
 Specify a package file.
 
 When testing locally or monitoring a project, you can specify the file that Snyk should inspect for package information. When the file is not specified, Snyk tries to detect the appropriate file for your project.
+
+### `--package-manager=<PACKAGE_MANAGER_NAME>`
+
+Specify the name of the package manager when the filename specified with the `--file=<FILE>` option is not standard. This allows Snyk to find the file.
+
+Example: $ snyk test `--file=req.txt --package-manager=pip`
 
 ### `--ignore-policy`
 
@@ -98,6 +112,8 @@ Apply and use ignore rules from the Snyk policies your dependencies; otherwise i
 Display the dependency paths from the top level dependencies down to the vulnerable packages. Does not affect output when using JSON `--json` output.
 
 Default: `some` (a few example paths shown). `false` is an alias for `none`.
+
+Example: `--show-vulnerable-paths=false`
 
 ### `--project-name=<PROJECT_NAME>`
 
@@ -114,6 +130,8 @@ Manually pass a path to a `.snyk` policy file.
 ### `--json`
 
 Print results in JSON format.
+
+Example: `$ snyk test --json-file-output=vuln.json`
 
 ### `--json-file-output=<OUTPUT_FILE_PATH>`
 
@@ -155,7 +173,7 @@ Auto-detect maven jars, aars, and wars in given directory. To test individually 
 
 ### `--reachable`
 
-Analyze your source code to find which vulnerable functions and packages are called.
+Analyze your source code to find which vulnerable functions and packages are called. Cannot be used with `--all-projects`.
 
 ### `--reachable-timeout=<TIMEOUT>`
 
@@ -229,7 +247,7 @@ Default: true
 
 ### `--yarn-workspaces`
 
-Detect and scan yarn workspaces. You can specify how many sub-directories to search using `--detection-depth` and exclude directories and files using `--exclude`.
+Detect and scan Yarn workspaces. You can specify how many sub-directories to search using `--detection-depth` and exclude directories and files using `--exclude`. Alternatively scan Yarn workspaces with other projects using `--all-projects`.
 
 ## Option for CocoaPods projects
 
