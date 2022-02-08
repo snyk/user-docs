@@ -1,12 +1,14 @@
 # Understand Snyk Code CLI results
 
-This example runs a code test against a project we have set locally, `goof`:
+## Example of code test
+
+This example runs a code test against a local project, `goof`:
 
 ```
 snyk code test goof
 ```
 
-This produces results like this:
+The results are shown in the code that follows:
 
 ```
 Testing goof ...
@@ -65,11 +67,11 @@ Project path:      goof
 4 [High]  7 [Medium]
 ```
 
-## Results review
+## Review of results
 
-Here we can see that our snyk code testing found 11 issues, 4 high and 7 medium.
+This `snyk code test` found 11 issues, 4 high and 7 medium.
 
-The issues are ordered by severity where the highest ones are at the bottom of our findings.
+The issues are ordered by severity with the highest severity issues at the end of the list.
 
 Each item includes:
 
