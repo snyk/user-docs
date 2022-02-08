@@ -96,3 +96,27 @@ Specify a username to use when connecting to a container registry. This is ignor
 ### `--password=<CONTAINER_REGISTRY_PASSWORD>`
 
 Specify a password to use when connecting to a container registry. This is ignored in favor of local Docker binary credentials when Docker is present.
+
+## Examples for the container test command
+
+### Scan and monitor Docker images
+
+`$ snyk container test <image>`&#x20;
+
+`$ snyk container monitor <image>`
+
+### Option to get more information including base image remediation
+
+`--file=path/to/Dockerfile`
+
+### Test an ubuntu container image for an org that is not your default
+
+`$ snyk container test ubuntu:18.04 --org=my-team`
+
+### Scan a Docker image created using the given Dockerfile and with a specified policy path
+
+`$ snyk container test app:latest --file=Dockerfile`
+
+`$ snyk container test app:latest --file=Dockerfile --policy-path=path/to/.snyk`
+
+For more information and examples see [Advanced Snyk Container CLI usage](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage).
