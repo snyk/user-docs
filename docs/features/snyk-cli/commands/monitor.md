@@ -103,6 +103,8 @@ Default: `some` (a few example paths shown). `false` is an alias for `none`.
 
 Specify a custom Snyk project name.
 
+Example: `$ snyk monitor --project-name=my-project`
+
 ### `--target-reference=<TARGET_REFERENCE>`
 
 Specify a reference which differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference. Only supported for Snyk Open Source. See [Separating projects by branch or version](https://snyk.info/3B0vTPs).
