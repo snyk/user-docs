@@ -39,6 +39,14 @@ For more information see [Monitor your projects at regular intervals](../secure-
 
 ![Snyk monitor snapshot and scan results](<../../../.gitbook/assets/monitor (1).png>)
 
+## Running out of tests
+
+If you run out of tests on an open source project follow these steps:
+
+* Run `snyk monitor`.
+* Open the Snyk UI and go to the **settings** of the project.
+* Enter the URL of your open source repo in **Git remote URI**.
+
 ## Additional information
 
 Run `snyk help` or see the [CLI reference](../cli-reference/).
