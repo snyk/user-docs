@@ -2,11 +2,24 @@
 
 Snyk tests for vulnerabilities in [your own code](https://snyk.io/product/snyk-code/), [open source dependencies](https://docs.snyk.io/snyk-open-source), [Container images](https://docs.snyk.io/snyk-container), and [Infrastructure as Code (IaC) configurations](https://snyk.io/product/infrastructure-as-code-security/), and offers context, prioritization, and fixes.
 
-## Supported languages and integrations
+### Supported languages and integrations
 
-Snyk supports a range of languages including: JavaScript, Java (Gradle, Maven), .NET, Python, Golang, Swift, Objective-C (CocoaPods), Scala, Ruby, PHP, and Bazel. [See more details](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support).
+#### Languages
 
-Taking a developer-first approach to security, [Snyk integrates](https://docs.snyk.io/integrations) with leading IDE, repository, CI/CD, runtime, registry, and issue management tools.
+Snyk supports a range of languages, such as JavaScript, Java, .NET, and many others.
+
+Languages / OSs supported depend on the relevant [Snyk product](./#snyk-products-and-platforms):
+
+* Snyk Open Source: see [language-and-package-manager-support](../../products/snyk-open-source/language-and-package-manager-support/ "mention")
+* &#x20;Snyk Code: see [snyk-code-language-and-framework-support.md](../../products/snyk-code/snyk-code-language-and-framework-support.md "mention")
+* Snyk Container: see [supported-operating-system-distributions.md](../../products/snyk-container/snyk-container-security-basics/supported-operating-system-distributions.md "mention")
+* Snyk IaC: we support configuration files for Terraform or Kubernetes environments
+
+#### Integrations&#x20;
+
+Taking a developer-first approach to security, Snyk integrates with leading IDE, repository, CI/CD, runtime, registry, and issue management tools.
+
+See [integrations-and-languages.md](integrations-and-languages.md "mention")for more details.
 
 ## Security and vulnerability data
 
@@ -16,29 +29,22 @@ Our [security intelligence database](https://snyk.io/snyk-intelligence-security/
 
 You can use the Snyk CLI (Command Line Interface) to scan and monitor on your local machine, and integrate it into your pipeline. You can use the Snyk CLI to scan your applications, containers, and infrastructure as code for security vulnerabilities. You can install the CLI via npm, Homebrew, Scoop, or manually.
 
+See [snyk-cli](../../features/snyk-cli/ "mention")
+
 [Get started with the Snyk CLI](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli).
 
 ## Snyk API
 
 Snyk’s extensibility and API enable developers to tune Snyk’s security automation to their specific workflows, ensuring both developer experience and consistent platform governance. Learn more in our [Snyk API documentation](https://support.snyk.io/hc/en-us/articles/360000914857-Does-Snyk-have-an-API-) and see how our customers like [Twilio and Spotify](https://snyk.io/blog/snyk-watcher-keep-snyk-in-sync/) use the Snyk API in their workflows.
 
-## Snyk Products and platforms
+## Snyk products&#x20;
 
-* [Snyk Open Source](https://docs.snyk.io/snyk-open-source): Enabling developers to easily find and automatically fix open source vulnerabilities. Snyk Open Source also includes [Snyk license compliance](https://docs.snyk.io/snyk-open-source) to help manage your open source license usage.
+* [Snyk Open Source](https://docs.snyk.io/snyk-open-source): Find and fix open source vulnerabilities. Snyk Open Source also includes [Snyk license compliance](https://docs.snyk.io/snyk-open-source) to help manage your open source license usage.
 * [Snyk Code](https://snyk.io/product/snyk-code/): Find and fix vulnerabilities in your application code in real-time during the development process.
 * [Snyk Container](https://docs.snyk.io/snyk-container): Find and fix vulnerabilities in container images and Kubernetes applications.
 * [Snyk Infrastructure as Code (IaC)](https://docs.snyk.io/snyk-infrastructure-as-code): Find and fix insecure configurations in Terraform and Kubernetes code.
-* [Snyk Intel Vulnerability Database](https://snyk.io/product/vulnerability-database/): Comprehensive and actionable open source and container vulnerability data.
 
-## Get started with Snyk
-
-To get started with Snyk products now, see our [Getting started d](https://docs.snyk.io/getting-started)ocumentation:
-
-* [Get started with Snyk Open Source](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-snyk-open-source).&#x20;
-* [Get started with Snyk License Compliance](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-snyk-licensing-compliance).
-* [Get started with Snyk Code](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-with-snyk-code).
-* [Get started with Snyk Container](https://docs.snyk.io/getting-started/getting-started-snyk-products/getting-started-snyk-container).
-* [Get started with Snyk IaC](https://support.snyk.io/hc/en-us/articles/360014938398-Getting-started-with-Snyk-Infrastructure-as-Code-IaC-).
+See [getting-started-snyk-products.md](../../getting-started/getting-started-snyk-products.md "mention").
 
 ## Onboarding guides
 
