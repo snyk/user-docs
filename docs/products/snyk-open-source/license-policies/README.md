@@ -5,7 +5,7 @@
 This feature is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-Group administrators and Org admins can [access and set license policy rules](https://docs.snyk.io/snyk-open-source/license-policies/setting-a-license-policy) by clicking on Policies tab in the Group Overview page.&#x20;
+Group administrators can [access and set license policy rules](https://docs.snyk.io/snyk-open-source/license-policies/setting-a-license-policy) by clicking on Policies tab in the Group Overview page.&#x20;
 
 ![](<../../../.gitbook/assets/Screen Shot 2022-01-26 at 8.05.01 AM.png>)
 
