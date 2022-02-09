@@ -31,7 +31,7 @@ To create a new tag for a project:
 2. Enter your new key, and then click Enter.
 3. Enter your new value, and then click Enter.
 
-You have created a new tag. When a new tag is created, it will be assigned automatically to the project it was created in. The tag is also usable on any other project within your group.
+You have created a new tag. When a new tag is created, it is assigned automatically to the project it was created in. The tag is also usable on any other project within your group.
 
 ![](../../../.gitbook/assets/screenshot\_2020-09-29\_at\_17.58.47.png)
 
@@ -39,19 +39,19 @@ You can also apply multiple values to the same key:
 
 ![](../../../.gitbook/assets/screenshot\_2020-09-29\_at\_18.04.30.png)
 
-### **Assigning and removing tags from a project**
+## **Assigning and removing tags from a project**
 
 If a tag exists in your group, you can apply it to any project.
 
-1. Click the "+" icon in the tags section
-2. You can either select a key from the list of recently used keys, or type out the key which is part of the tag you would like to assign to your project
-3. You can either select a value from the list of recently used values, or type out the value which is part of the tag you would like to assign to your project
-4. After you select the value, the tag will be assigned to your project
-5. To remove a tag from a project, click the "X" icon on the tag
+1. Click the "+" icon in the tags section.
+2. You can either select a key from the list of recently used keys, or type out the key which is part of the tag you would like to assign to your project.
+3. You can either select a value from the list of recently used values, or type out the value which is part of the tag you would like to assign to your project.
+4. After you select the value, the tag is assigned to your project.
+5. To remove a tag from a project, click the "X" icon on the tag.
 
 ![](../../../.gitbook/assets/screenshot\_2020-09-29\_at\_18.14.44.png)
 
-### Filter projects by tags
+## Filter projects by tags
 
 ![](<../../../.gitbook/assets/Screen Shot 2022-02-07 at 2.38.18 PM.png>)
 
