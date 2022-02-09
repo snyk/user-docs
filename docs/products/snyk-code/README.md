@@ -14,7 +14,7 @@ Generally, SAST tools have been notorious for the amount of false positives they
 
 ### Real-time
 
-Speed is _the_ critical factor if you want to support rapid, agile development. Real-time speed allows developers to leverage Code from the IDE and during code review in the SCM, rather than a slow and unnecessary extra step at the end o the development process. Snyk Code scans 10-50x faster than other SAST products, enabling developers to use it _while_ they develop, rather than _after_ they develop as a slow and disruptive step in their process.
+Speed is _the_ critical factor if you want to support rapid, agile development. Real-time speed allows developers to leverage Code from the IDE and during code review in the SCM, rather than a slow and unnecessary extra step at the end of the development process. Snyk Code scans 10-50x faster than other SAST products, enabling developers to use it _while_ they develop, rather than _after_ they develop as a slow and disruptive step in their process.
 
 ### Actionable
 
