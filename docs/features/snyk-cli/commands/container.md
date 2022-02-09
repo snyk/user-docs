@@ -59,7 +59,7 @@ Manually pass a path to a `.snyk` policy file.
 
 Print results in JSON format.
 
-Example: `$ snyk test --json-file-output=vuln.json`
+Example: `$ snyk container test --json-file-output=vuln.json`
 
 ### `--json-file-output=<OUTPUT_FILE_PATH>`
 
