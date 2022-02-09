@@ -76,7 +76,7 @@ The issues are ordered by severity with the highest severity issues at the end o
 Each item includes:
 
 * The severity and vulnerability type of the issue
-* Path: the file and line in the file where the issue was found (potentially issues are cross-files, the location in the path refers to the issue's sink)
+* Path: the file and line in the file where the issue was found (Potentially issues occur across files; the location in the path refers to the issue's snyc.)
 * Info: A description of the issue's data flow
 
 CLI for Snyk Code uses the exit codes as described in the [CLI reference](../../../features/snyk-cli/cli-reference/#exit-codes).
