@@ -111,10 +111,6 @@ Specify a password to use when connecting to a container registry. This is ignor
 
 `--file=path/to/Dockerfile`
 
-### Test an ubuntu container image for an org that is not your default
-
-`$ snyk container test ubuntu:18.04 --org=my-team`
-
 ### Scan a Docker image created using the given Dockerfile and with a specified policy path
 
 `$ snyk container test app:latest --file=Dockerfile`
