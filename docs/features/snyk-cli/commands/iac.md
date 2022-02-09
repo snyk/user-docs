@@ -53,6 +53,10 @@ Set a default to ensure all newly tested projects are tested under your default 
 
 Default: `<ORG_ID>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account).
 
+Example: `$ snyk iac test --org=my-team`
+
+For more information see the article [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI).
+
 ### `--ignore-policy`
 
 Ignore all set policies, the current policy in the `.snyk` file, Org level ignores, and the project policy on snyk.io.
@@ -64,6 +68,10 @@ Manually pass a path to a `.snyk` policy file.
 ### `--json`
 
 Print results in JSON format.
+
+Example: `$ snyk iac test --json-file-output=vuln.json`
+
+
 
 ### `--json-file-output=<OUTPUT_FILE_PATH>`
 
