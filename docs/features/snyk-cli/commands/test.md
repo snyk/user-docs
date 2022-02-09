@@ -8,10 +8,6 @@
 
 The `snyk test` command checks projects for open source vulnerabilities and license issues. The test command tries to auto-detect supported manifest files with dependencies and test those.
 
-Example: Test a project in current folder for known vulnerabilities `$ snyk test`
-
-Example: Test a specific dependency for vulnerabilities `$ snyk test ionic@1.6.5`
-
 ## Exit codes
 
 Possible exit codes and their meaning:
@@ -272,3 +268,21 @@ Allow skipping packages that are not found in the environment.
 ## `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
 Use context-specific options to pass extra arguments directly to Gradle, Maven, or other build tools. These options are specified last. Example: `snyk test -- --build-cache`
+
+## Examples for the snyk test command
+
+Test a project in the current folder for known vulnerabilities:
+
+&#x20;`$ snyk test`
+
+Test a specific dependency for vulnerabilities:
+
+&#x20;`$ snyk test ionic@1.6.5`
+
+Test the latest version of an npm package:
+
+`$ snyk test lodash`
+
+Test a public GitHub repository:
+
+`$ snyk test https://github.com/snyk-labs/nodejs-goof`
