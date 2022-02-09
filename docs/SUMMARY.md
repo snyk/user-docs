@@ -2,9 +2,7 @@
 
 * [Snyk User Documentation](README.md)
 * [Introducing Snyk](introducing-snyk/README.md)
-  * [Introduction to Snyk](introducing-snyk/introduction-to-snyk/README.md)
-    * [Integrations and languages](introducing-snyk/introduction-to-snyk/integrations-and-languages.md)
-    * [Glossary](introducing-snyk/introduction-to-snyk/glossary.md)
+  * [Introduction to Snyk](introducing-snyk/introduction-to-snyk.md)
   * [Snyk's core concepts](introducing-snyk/snyks-core-concepts/README.md)
     * [Groups, organizations, and users](introducing-snyk/snyks-core-concepts/groups-organizations-and-users.md)
     * [Notifications](introducing-snyk/snyks-core-concepts/notifications.md)
@@ -13,6 +11,7 @@
     * [Running tests](introducing-snyk/snyks-core-concepts/running-tests.md)
     * [Snyk settings](introducing-snyk/snyks-core-concepts/snyk-settings.md)
     * [Snyk intel vulnerability DB](introducing-snyk/snyks-core-concepts/getting-started-snyk-intel-vuln-db-access.md)
+  * [Glossary](introducing-snyk/glossary.md)
 * [Getting started](getting-started/README.md)
   * [Getting started with Snyk products](getting-started/getting-started-snyk-products.md)
   * [Introduction to Snyk projects](getting-started/introduction-to-snyk-projects/README.md)

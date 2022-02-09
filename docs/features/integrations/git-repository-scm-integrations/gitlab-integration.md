@@ -11,6 +11,10 @@ The integration allows you to:
 3. Get email alerts and a Snyk pull request if a new upgrade or patch is available for a vulnerability that affects you.
 4. Trigger a Snyk pull request with fixes yourself from the test report page or the project page for your repo on snyk.io.
 
+{% hint style="info" %}
+**GitLab webhooks** send out an event to Snyk when merge requests occur. This event then  starts a series of other events like pulling project files, running the test process, and posting the results to GitLab--all of which takes place on Snyk's side.
+{% endhint %}
+
 ## Set up GitLab integration
 
 This integration only works with GitLab instances that are publicly reachable (not on a private network). A [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker) environment is required for private network instances.
