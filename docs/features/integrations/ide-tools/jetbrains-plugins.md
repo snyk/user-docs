@@ -127,6 +127,18 @@ Snyk Code analysis shows a list of security vulnerabilities and code issues foun
 
 ![](../../../.gitbook/assets/results-code.png)
 
+## Analysis results: Snyk Configuration
+
+Snyk Configuration analysis results shows issues in your Terraform, Kubernetes, AWS CloudFormation, and Azure Resource Manager (ARM) code with every scan. Based on Snyk’s CLI, the scan is fast and friendly for local development.
+
+![](../../../.gitbook/assets/intellij\_iac\_issues.png)
+
+## Analysis results: Snyk Container
+
+Snyk container analysis shows vulnerabilities found in Kubernetes configuration files. Vulnerabilities are found fast using the extracted container images and comparative analysis against the latest information from the [Snyk Intel Vulnerability Database](https://security.snyk.io).
+
+![](../../../.gitbook/assets/intellij\_container\_vulnerabilites.png)
+
 ## Filter results
 
 ### Filter by severity
@@ -140,8 +152,10 @@ Snyk delivers Critical, High, Medium and Low severities. You can filter for the 
 Snyk delivers the following types of issues:
 
 * **Open Source Vulnerabilities**: found in open source dependencies.
-* **Security vulnerabilities**: found in your application’s source code.
-* **Quality issues**: found in your application’s source code.
+* **Security Vulnerabilities**: found in your application’s source code.
+* **Quality Issues**: found in your application’s source code.
+* **Configuration Issues**: found in infrastructure as code files.
+* **Container Vulnerabilities**: found in Kubernetes workload files.
 
 You can filter for each one of them by selecting the value from the dropdown as shown below. By default all three issue types are selected.
 
@@ -157,6 +171,8 @@ After the plugin is installed, you can set the following configurations for the 
 * **Organization**: the org to run Snyk test against (similarly to the --org param in the CLI).
 * **Additional parameters**: additional CLI snyk test params, you’d like to run the test with.
 * **Snyk Open Source vulnerabilities**: analyze the project for open source vulnerabilities through the CLI using the Snyk Open Source. Enabled by default.
+* **Snyk Infrastructure as Code issues**: analyze the project for insecure configurations in Terraform and Kubernetes code. Enabled by default.
+* **Snyk Container vulnerabilities**: analyze the project for container vulnerabilities in container images and Kubernetes applications. Enabled by default.
 * **Snyk Code Security issues**: analyze the project for security vulnerabilities in your application code using Snyk Code. Enabled by default.
 * **Snyk Code Quality issues**: analyze the project for quality issues in your application code using Snyk Code. Disabled by default.
 
