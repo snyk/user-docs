@@ -235,6 +235,12 @@ The following is a list of the options for Snyk CLI commands. Each option is fol
 
 `--skip-unresolved=true|false`: [`test`](https://docs.snyk.io/features/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor)
 
+## Options for Go projects
+
+Currently the following options are not supported:
+
+`--fail-on=<all|upgradable|patchable>`: [`test`](https://docs.snyk.io/features/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor)
+
 ## `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
 These options are used with the [`test`](https://docs.snyk.io/features/snyk-cli/commands/test) and [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor) commands. See the help docs for details.
