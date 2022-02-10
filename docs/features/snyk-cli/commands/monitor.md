@@ -185,7 +185,7 @@ For more information about Maven CLI options see [Snyk for Java (Gradle, Maven)]
 
 ### `--scan-all-unmanaged`
 
-Auto-detect maven jars, aars, and wars in given directory. To test individually use `--file=<JAR_FILE_NAME>`.
+Auto-detect maven jars, aars, and wars in given directory. To test individually use `--file=<JAR_FILE_NAME>`. **Note**: Custom-built jar files, even with open source dependencies, are out of scope.
 
 ### `--reachable`
 
