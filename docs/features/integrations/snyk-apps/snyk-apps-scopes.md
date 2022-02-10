@@ -1,6 +1,6 @@
 # Snyk Apps Scopes
 
-The following is a list of scopes that are currently in active development and as such not available publicly. Please check the **Requesting Scopes** section on the [Create an App](getting-started-with-snyk-apps/create-an-app-via-the-api.md#generally-available) page.
+The following is a list of scopes that are currently in active development and as such not available publicly. Please check the **Requesting Scopes** section on the [Create an App](getting-started-with-snyk-apps/create-an-app-via-the-api.md#generally-available) page for generally available scopes.
 
 {% hint style="danger" %}
 The following list of scopes is available behind a feature flag (`appsGranularPermissions`). Being behind a feature flag means they are still in active development. If you would like to test them out as they give a look into how Snyk Apps scopes will look in the future, please contact our [support team](https://snyk.io/contact-us/).
