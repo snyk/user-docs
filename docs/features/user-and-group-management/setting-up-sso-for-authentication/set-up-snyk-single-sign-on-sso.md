@@ -9,7 +9,7 @@ Ensure you have at least one group and organization to indicate where new users 
 {% hint style="info" %}
 Once you have gathered the requested information (detailed below), create a support ticket to request SSO set up.
 
-For Business plan, Group Admins can configure Snyk Single Sign-On and [this guide](self-serve-single-sign-on-sso.md) details the steps.
+For Business plan using SAML, Group Admins can configure Snyk Single Sign-On and [this guide](self-serve-single-sign-on-sso.md) details the steps.
 {% endhint %}
 
 ## Overview
@@ -26,8 +26,6 @@ The process of establishing trust between your identity provider (IdP) and Snyk 
 After SSO is configured both from Snyk and your company's network, a trust relationship is established between Snyk, Auth0 (on behalf of Snyk), and your network. Any sensitive data is encrypted and stored in Auth0 only for the purposes of enabling user logins.
 
 Each type of SSO connection requires different details for establishing the trust between your identity provider and Snyk. The following sections explain those details. The details are also included in the worksheets in the Resources section at the end of this article.
-
-{% embed url="https://youtu.be/wqq4rdmqLEE" %}
 
 ## Use SAML for SSO
 

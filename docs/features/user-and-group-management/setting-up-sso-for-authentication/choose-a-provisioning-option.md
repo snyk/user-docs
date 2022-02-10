@@ -1,8 +1,6 @@
 # Choose a provisioning option
 
-Determine how new users in your organization get access to Snyk:
-
-{% embed url="https://youtu.be/VOGYgcv9Xmc" %}
+Determine how new users in your organization get access to Snyk.
 
 ## Open to all
 
