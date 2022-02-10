@@ -315,6 +315,7 @@
       * [Retrieve the App Org IDs](features/integrations/snyk-apps/getting-started-with-snyk-apps/retrieve-the-app-org-ids.md)
       * [Managing App details](features/integrations/snyk-apps/getting-started-with-snyk-apps/managing-app-details.md)
     * [Building your Snyk App](features/integrations/snyk-apps/building-your-snyk-app.md)
+    * [Snyk Apps Scopes](features/integrations/snyk-apps/snyk-apps-scopes.md)
   * [Snyk Broker](features/integrations/snyk-broker/README.md)
     * [Broker introduction](features/integrations/snyk-broker/broker-introduction.md)
     * [Set up Snyk Broker](features/integrations/snyk-broker/set-up-snyk-broker.md)
