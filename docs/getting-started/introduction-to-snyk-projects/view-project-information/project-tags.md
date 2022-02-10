@@ -33,11 +33,11 @@ To create a new tag for a project:
 
 You have created a new tag. When a new tag is created, it is assigned automatically to the project it was created in. The tag is also usable on any other project within your group.
 
-![](../../.gitbook/assets/screenshot\_2020-09-29\_at\_17.58.47.png)
+![](../../../.gitbook/assets/screenshot\_2020-09-29\_at\_17.58.47.png)
 
 You can also apply multiple values to the same key:
 
-![](../../.gitbook/assets/screenshot\_2020-09-29\_at\_18.04.30.png)
+![](../../../.gitbook/assets/screenshot\_2020-09-29\_at\_18.04.30.png)
 
 ## **Assigning and removing tags from a project**
 
@@ -49,11 +49,11 @@ If a tag exists in your group, you can apply it to any project.
 4. After you select the value, the tag is assigned to your project.
 5. To remove a tag from a project, click the "X" icon on the tag.
 
-![](../../.gitbook/assets/screenshot\_2020-09-29\_at\_18.14.44.png)
+![](../../../.gitbook/assets/screenshot\_2020-09-29\_at\_18.14.44.png)
 
 ## Filter projects by tags
 
-![](<../../.gitbook/assets/Screen Shot 2022-02-07 at 2.38.18 PM.png>)
+![](<../../../.gitbook/assets/Screen Shot 2022-02-07 at 2.38.18 PM.png>)
 
 {% hint style="success" %}
 **Filter by tag autocomplete**: this field is intentionally limited to a small amount of results--if your tag does not show up initially, enter more characters of the tag until it rises to the top of the results.
