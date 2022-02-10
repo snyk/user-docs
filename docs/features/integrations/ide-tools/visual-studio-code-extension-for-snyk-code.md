@@ -6,15 +6,10 @@ Snyk's Visual Studio Code extension is available for install on the marketplace:
 Visual Studio Code requires Snyk CLI, see [install-the-snyk-cli](../../snyk-cli/install-the-snyk-cli/ "mention").
 {% endhint %}
 
-## Supported languages
+## Supported languages, package managers and frameworks
 
-**Snyk Code**
-
-Currently supported languages for Snyk Code are JavaScript, TypeScript, Java, Python and C#. We also provide coverage for frameworks like Vue and React. See [Snyk Code language and framework support](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support) for more information. We analyze analyze files as defined by the following list: `aspx`, `CS`, `ejs`, `.es`, `.es6`, `.htm`, `.html`, `.js`, `.jsx`, `.ts`, `.tsx`, `.vue`, `.py`, `.java`.
-
-**Snyk Open Source**
-
-As the open source vulnerability scanning is based on Snyk CLI, for Snyk Open Source the extension supports all the ecosystems that are supported within the CLI. For the full list see [Snyk Open Source language and package manager support](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support).
+* For Snyk Open Source: the VS Code extension support all the languages and package managers supported by Snyk Open Source and the CLI. See the full list [here](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support).
+* For Snyk Code: the VS Code extension support all the [languages and frameworks supported by Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#language-support-with-snyk-code-ai-engine) today.
 
 ## Install the extension
 

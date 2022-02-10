@@ -4,7 +4,12 @@ description: Use this documentation to get started with the JetBrains plugin.
 
 # JetBrains plugins
 
-Snyk has a plugin for Jetbrains IDEs, for both [Snyk Open Source](https://docs.snyk.io/snyk-open-source) and [Snyk Code](https://docs.snyk.io/snyk-code). Use this plugin to test your projects and get fix advice and example code fixes during development within the IDE.
+Snyk has a plugin for Jetbrains IDEs, which support all Snyk products: [Snyk Open Source](https://docs.snyk.io/snyk-open-source), [Snyk Code](https://docs.snyk.io/snyk-code), [Snyk Container](https://docs.snyk.io/products/snyk-container) and [Snyk Infrastructure as Code](https://docs.snyk.io/products/snyk-infrastructure-as-code). Snyk’s JetBrains plugin touches on all aspects of securing your application including:
+
+* Security vulnerabilities in open source dependencies (Snyk Open Source).
+* Security vulnerabilities and code quality issues in first party code (Snyk Code).
+* Configuration issues in your infrastructure as code such as Terraform, AWS CloudFormation, Kubernetes, and Azure Resource Manager (ARM)  (Snyk IaC)
+* Security vulnerabilities in your container images found in Kubernetes workload files (Snyk Container)
 
 {% hint style="info" %}
 Snyk's JetBrains plugin is available for install on the marketplace: [https://plugins.jetbrains.com/plugin/10972-snyk-vulnerability-scanner](https://plugins.jetbrains.com/plugin/10972-snyk-vulnerability-scanner).
@@ -28,9 +33,9 @@ JetBrains plugin versions: we support plugin versions from version 2020.2 on.
 
 ## **How the plugin works**
 
-* As the plugin is based on Snyk CLI, for Snyk Open Source the plugin supports all the ecosystems that are supported within the CLI.
+* As the plugin is based on Snyk CLI, for Snyk Open Source, Snyk IaC and Snyk Container the plugin supports all the features that are supported within the CLI.
 * The plugin will automatically download the CLI in the background.
-* For Snyk Code, current supported languages are JavaScript, TypeScript and Java. However you can install the plugin on any of the IDEs (such as RubyMine) and we would analyze the JavaScript, TypeScript and Java files.
+* We support all the [languages supported by Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#language-support-with-snyk-code-ai-engine) today. You can install the plugin on any of the IDEs (such as RubyMine) and with the plugin we would analyze all the language files we find.
 * If the CLI is already installed on the machine, the plugin will use the token provided to it, otherwise, you’ll need to provide the authentication token via the plugin authentication mechanism.
 
 ## **Install the plugin**
@@ -70,25 +75,24 @@ If you need to use a proxy server to connect to the internet, please configure i
 
 The first time it is needed, the plugin automatically downloads the CLI in the background. There are a few ways to authenticate once the plugin is installed:
 
-* After the plugin installs, you are prompted to connect because the authentication fails.
+* After the plugin installs, you are prompted to authenticate and connect the IDE plugin to Snyk.
 
-![Authentication fails, must connect to Snyk.](../../../.gitbook/assets/screen-shot-2021-09-29-at-3.54.42-pm.png)
+![Prompt to authenticate and start testing your code.](<../../../.gitbook/assets/Screenshot 2022-02-10 at 17.07.52.png>)
 
-* Click **Connect Your IDE to Snyk**. The plugin relies on the Snyk CLI, which authenticates you against Snyk’s web application.
+* Click **Test code note**. The plugin relies on the Snyk CLI, which authenticates you against Snyk’s web application.
 * Click **Authenticate** when prompted by Snyk.
 
 ![Gotta authenticate to get that sweet, sweet API/CLI/Org ID/token goodness.](../../../.gitbook/assets/screen-shot-2021-09-29-at-4.04.29-pm.png)
 
-* After authentication you will see a confirmation message for the successful authentication because otherwise, how would you know?
+* After authentication you will see a confirmation message for the successful authentication
 
 ![This is that confirmation message we talked about.](../../../.gitbook/assets/screen-shot-2021-09-29-at-4.05.55-pm.png)
 
-* Close the browser window and return to the IDE because if you don't, the IDE will sit waiting like a little kid after soccer practice for his or her ride home.
-* The IDE then reads and saves the authentication on your local machine.&#x20;
-* In the IDE, you can select which Snyk products to use ([Snyk Open Source](../../../products/snyk-open-source/), [Snyk Advisor](https://snyk.io/advisor/) or [Snyk Code](../../../products/snyk-code/) can be enabled later in configuration).&#x20;
-* You can start the analysis by pressing the **Analyze now!** button:
+* The IDE will read and save the authentication on your local machine.
+* You can now close the browser window and return to the IDE.&#x20;
+* The analysis should have started automatically:
 
-![If it doesn't say this, that's a problem.](../../../.gitbook/assets/screen-shot-2021-09-29-at-4.07.22-pm.png)
+![](<../../../.gitbook/assets/Screenshot 2022-02-10 at 17.26.44.png>)
 
 ### Add token manually
 
@@ -133,11 +137,24 @@ Snyk Configuration analysis results shows issues in your Terraform, Kubernetes, 
 
 ![](../../../.gitbook/assets/intellij\_iac\_issues.png)
 
+For quickly understanding and fixing the underlying issue Snyk’s plugin tells you:
+
+* **Description:** what the misconfiguration is.
+* **Impact:** how the misconfiguration could potentially be exploited.
+* **Path:** which path in the tree the issue occurs.
+* **Remediation:** how to fix the issue.
+* **References:** where you can investigate deeper from a variety of sources.
+* **Ignore:** If the issue needs to be ignored, you got you covered as well- there is a button to do so in the top right corner.
+
 ## Analysis results: Snyk Container
 
-Snyk container analysis shows vulnerabilities found in Kubernetes configuration files. Vulnerabilities are found fast using the extracted container images and comparative analysis against the latest information from the [Snyk Intel Vulnerability Database](https://security.snyk.io).
+The plugin scans Kubernetes configuration files and searches for container images. Vulnerabilities are found fast using the extracted container images and comparative analysis against the latest information from the [Snyk Intel Vulnerability Ddatabase](https://security.snyk.io).
+
+You have the ability to go over each of the security vulnerabilities your image might be vulnerable to, and in the same manner like our Open Source findings.&#x20;
 
 ![](../../../.gitbook/assets/intellij\_container\_vulnerabilites.png)
+
+The colorful comparison table (from above) with various severity levels (critical, high, etc.) provides the difference in vulnerabilities between the current image and the recommended by Snyk image with the same characteristics sorted by severtiy. This helps you to make a decision if you want to upgrade your image to the recommended one and increase the level of confidence in the image you are running in production.
 
 ## Filter results
 
