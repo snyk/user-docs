@@ -37,6 +37,18 @@ When you run the `snyk unmanaged test` command, Snyk:
 To scan the project, the dependencies must be available as source code in the scanned directory. If the dependencies are in a different location, that location must be scanned.
 {% endhint %}
 
+#### Scanning archives
+
+Snyk CLI extracts archives to analyze the source code inside.&#x20;
+
+The extraction is not recursive. To enable recursive extraction, specify the depth of the extraction using the `--max-depth` parameter. To disable the extraction, set the the `--max-depth` to 0.
+
+The supported archives formats are:
+
+* zip-like archives
+* tar
+* tar with gzip compression algorithm
+
 ### Constraints and limitations
 
 {% hint style="info" %}
@@ -281,6 +293,16 @@ This is useful to display the human-readable test output via **stdout** and at t
 `--target-dir <directory>`
 
 Scan the path specified in the argument instead of the current directory.
+
+{% hint style="info" %}
+Alternatively, you can run just `snyk unmanaged test <directory>`
+{% endhint %}
+
+**max-depth**
+
+`--max-depth=1`
+
+Specify the maximum level of archive extraction. Use `0` to disable archive extraction completely.
 
 ### Import scan results in Snyk App
 
