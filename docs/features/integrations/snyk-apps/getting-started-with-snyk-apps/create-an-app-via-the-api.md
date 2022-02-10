@@ -57,8 +57,8 @@ The following is an example of the interactive mode:
 snyk apps create --experimental --interactive
 
 ? Name of the Snyk App (visible to users when they install the Snyk App)? My Awesome Snyk App
-? Your Snyk App's redirect URIs (comma-separated list.  Ex: https://example1.com,https://example2.com)?:  https://example1.com
-? Your Snyk App's permission scopes (comma-separated list.  Ex: apps:beta)?:  apps:beta
+? Your Snyk App's redirect URIs (comma seprated list.  Ex: https://example1.com,https://example2.com)?:  https://example1.com
+? Your Snyk App's permission scopes (comma separated list.  Ex: apps:beta)?:  apps:beta
 ? Please provide the org id under which you want to create your Snyk App:  48ebb069-472f-40f4-b5bf-d2d103bc02d4
 ```
 
@@ -73,12 +73,6 @@ The following lists the **available scopes**.
 | Scope     | Description                                                                                                                                               |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | apps:beta | Allows the App to test and monitor your existing projects, as well as read information on your Snyk Organization, existing projects, issues, and reports. |
-
-#### Generally Available
-
-{% hint style="warning" %}
-As we move towards more granular scopes, we are now allowing Snyk Apps to be created with more granular scopes. This is to promote the principle of least privilege. The [following list of scopes](../snyk-apps-scopes.md) is available behind a feature flag (`appsGranularPermissions`). Being behind a feature flag means they are still in active development. If you would like to test them out as they give a look into how Snyk Apps scopes will look in the future, please contact our [support team](https://snyk.io/contact-us/).
-{% endhint %}
 
 {% hint style="info" %}
 You cannot currently update scopes for a Snyk App after it has been created. If you change your mind about which scopes you need during the App development process, create a new Snyk App with a new list of scopes, and replace the clientId and clientSecret in your App’s configuration. If any user has installed the App already, they will need to authorize the new App with their Snyk account.
