@@ -239,7 +239,7 @@ The following is a list of the options for Snyk CLI commands. Each option is fol
 
 Currently the following options are not supported:
 
-`--fail-on=<all|upgradable|patchable>`: [`test`](https://docs.snyk.io/features/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor)
+`--fail-on=<all|upgradable|patchable>`: `test`
 
 ## `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
