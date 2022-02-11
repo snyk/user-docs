@@ -285,12 +285,6 @@ Default: `python` Example: `--command=python3`
 
 Allow skipping packages that are not found in the environment.
 
-## Options for Go projects
-
-Currently the following options are not supported:
-
-`--fail-on=<all|upgradable|patchable>`
-
 ### `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
 Use context-specific options to pass extra arguments directly to Gradle, Maven, or other build tools. These options are specified last. Example: `snyk test -- --build-cache`
