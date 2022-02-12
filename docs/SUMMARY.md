@@ -15,7 +15,7 @@
 * [Getting started](getting-started/README.md)
   * [Getting started with Snyk products](getting-started/getting-started-snyk-products.md)
   * [Introduction to Snyk projects](getting-started/introduction-to-snyk-projects/README.md)
-    * [View project information](getting-started/introduction-to-snyk-projects/view-project-information/README.md)
+    * [View project information](getting-started/introduction-to-snyk-projects/view-project-information.md)
       * [Project attributes](getting-started/introduction-to-snyk-projects/view-project-information/project-attributes.md)
       * [Project tags](getting-started/introduction-to-snyk-projects/view-project-information/project-tags.md)
     * [View project issues, fixes, and dependencies](getting-started/introduction-to-snyk-projects/view-project-issues-remediations-and-dependencies.md)

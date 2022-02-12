@@ -4,15 +4,15 @@
 
 Snyk displays your application vulnerabilities and licensing issues for files in your projects. To see these vulnerabilities, go to [your projects tab](https://app.snyk.io/projects), then select the file associated with your project. For example, the package.json file in our example application goof:
 
-![](../../../.gitbook/assets/application-vuln.png)
+![](../../.gitbook/assets/application-vuln.png)
 
 Click on the entry to view detailed information:
 
-![](../../../.gitbook/assets/project-page.png)
+![](../../.gitbook/assets/project-page.png)
 
 Where:
 
-* **Header**: shows project summary information. See the [View project summary information](./) section.
+* **Header**: shows project summary information. See the [View project summary information](view-project-information.md) section.
 * **Issue cards**: show summaries of issues found. See [Issue card information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/issue-card-information).
 * **Views**:
   * **Overview**: shows [project issues, fixes, and dependencies](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-issues-remediations-and-dependencies).
@@ -21,7 +21,7 @@ Where:
 
 ### View project summary information
 
-![](../../../.gitbook/assets/proj-summ.png)
+![](../../.gitbook/assets/proj-summ.png)
 
 The summary information shows:
 
