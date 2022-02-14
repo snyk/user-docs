@@ -9,8 +9,8 @@ You can use Snyk to scan C / C++ projects.
 ### Features
 
 {% hint style="info" %}
-**NOTE**\
-Features might not be available, depending on your subscription plan.
+**Note**\
+Some features may not be available, depending on your subscription plan.
 {% endhint %}
 
 | Package managers / Features | CLI support | Git support | License scanning | Fixing | Runtime monitoring |
@@ -39,9 +39,9 @@ To scan the project, the dependencies must be available as source code in the sc
 
 #### Scanning archives
 
-Snyk CLI extracts archives to analyze the source code inside.&#x20;
+By default, archives are not scanned. However, Snyk CLI can recursively extract archives to analyze the source code inside.&#x20;
 
-The extraction is not recursive. To enable recursive extraction, specify the depth of the extraction using the `--max-depth` parameter. To disable the extraction, set the the `--max-depth` to 0.
+To enable archive extraction, specify the depth of the extraction using the `--max-depth` parameter.
 
 The supported archives formats are:
 
@@ -328,6 +328,16 @@ Automated regular testing and re-scanning from the Snyk App is not currently sup
 {% endhint %}
 
 ### Known issues
+
+**CLI crash when no dependencies are found**
+
+When no dependencies are identified, an error is displayed:
+
+```
+An unknown error occurred. Please run with `-d` and include full trace when reporting to Snyk
+```
+
+The exit code of this error is `3`.
 
 **Scanning on Windows**
 
