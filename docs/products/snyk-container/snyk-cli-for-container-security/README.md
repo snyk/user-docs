@@ -58,7 +58,7 @@ This command does the following
 
 1. Downloads the image if it is not already available locally in your Docker daemon
 2. Determines the software installed in the image
-3. Sends that build of materials to the Snyk service
+3. Sends that bill of materials to the Snyk service
 4. Returns a link to the Snyk service where you can see the results
 
 ![](../../../.gitbook/assets/monitor.png)
