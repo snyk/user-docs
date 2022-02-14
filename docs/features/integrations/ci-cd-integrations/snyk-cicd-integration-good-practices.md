@@ -115,7 +115,7 @@ Snyk CLI can be configured to:
 
 The `snyk test` command is synchronous; it ends with an exit code. Your build system can use exit codes to either pass or fail the build based on the test results. See the [CLI reference](../../snyk-cli/cli-reference/) for the meaning of the exit codes.
 
-The `snyk monitor` command posts test results to the Snyk web UI. It is an asynchronous command, that does not end with an exit code based on the vulnerability status.
+The `snyk monitor` command posts The snyk monitor command posts the dependency tree to of a project to your Snyk account and monitors it for vulnerabilities there.. It is an asynchronous command, that does not end with an exit code based on the vulnerability status.
 
 To silence Snyk CLI exit codes for the `snyk test` command to avoid failing the build step, use `|| true` at the end of the command. `|| true` sets the exit code of the scan to 0. This can be used to continue with a CI/CD pipeline even when there are vulnerabilities.
 
@@ -154,7 +154,7 @@ You can use Snyk's JSON output to create custom test reports as build artifacts,
 
 Snyk allows you to automatically create new work items in JIRA (see [Jira integration](https://docs.snyk.io/integrations/untitled-3/jira) documentation). You can customize this code for your specific requirements, or adapt it to work with other work management systems.
 
-See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns) to get started, or review the [API to create Jira tickets](../notifications-ticketing-system-integrations/jira.md).
+See [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns) to get started, or review the [API to create Jira tickets](https://snyk.docs.apiary.io/#reference/projects/project-jira-issues).
 
 ## Ignoring issues
 
