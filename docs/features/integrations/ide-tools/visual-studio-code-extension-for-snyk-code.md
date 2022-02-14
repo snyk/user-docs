@@ -6,7 +6,7 @@ Snyk's Visual Studio Code extension is available for install on the marketplace:
 Visual Studio Code requires Snyk CLI, see [install-the-snyk-cli](../../snyk-cli/install-the-snyk-cli/ "mention").
 {% endhint %}
 
-## Supported languages, package managers and frameworks
+### Supported languages, package managers and frameworks
 
 * For Snyk Open Source: the VS Code extension support all the languages and package managers supported by Snyk Open Source and the CLI. See the full list [here](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support).
 * For Snyk Code: the VS Code extension support all the [languages and frameworks supported by Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#language-support-with-snyk-code-ai-engine) today.
