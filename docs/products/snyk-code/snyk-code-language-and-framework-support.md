@@ -51,7 +51,7 @@ _\*Please note that Snyk Code will ignore files with 3 or less lines per file._ 
 
 To support a specific framework, Snyk Code needs to both support the relevant language, and to be trained on projects using the framework. The found patterns are then annotated by our security team and extended by curated content.
 
-Most framework are supported "out of the box" as Snyk Code only need to be able to parse the code to analyze it. In some cases they might require specific rules, or it might require specific program analysis engine update or both. If you notice any gaps in a specific framework support please [contact us](https://support.snyk.io/hc/en-us/requests/new) with the details/examples and our team will work on it.
+Most framework are supported "out of the box" as Snyk Code only need to be able to parse the code to analyze it. In some cases they might require specific rules, or it might require specific program analysis engine update or both. If you notice any gaps in a specific framework support please [contact our Support team](https://support.snyk.io/hc/en-us/requests/new) with the details/examples and our team will work on it.
 
 ### JavaScript frameworks
 

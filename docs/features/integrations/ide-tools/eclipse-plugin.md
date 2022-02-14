@@ -86,7 +86,9 @@ Work with Snyk results from Eclipse as follows:
 
 ### Support / Contact
 
-For support and help, visit [Snyk IDE Plugins Help](../snyk-ide-plugins/help.md#a693dbb5-063c-46d4-9b4e-d21e73b1e485).
+{% hint style="info" %}
+Need more help? [Contact our Support team](https://support.snyk.io/hc/en-us/requests/new).
+{% endhint %}
 
 ### Share your experience
 

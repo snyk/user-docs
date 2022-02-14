@@ -195,8 +195,10 @@ After the plugin is installed, you can set the following configurations for the 
 
 ### Support / Contact
 
-For support and help, visit [Snyk IDE Plugins Help](../snyk-ide-plugins/help.md#a693dbb5-063c-46d4-9b4e-d21e73b1e485).
+{% hint style="info" %}
+Need more help? [Contact our Support team](https://support.snyk.io/hc/en-us/requests/new).
+{% endhint %}
 
-### Share your experience
+#### Share your experience
 
 We continuously strive to improve our plugins experience. Would you like to share with us your feedback about Snyk's JetBrains Plugin: [schedule a meeting](https://calendly.com/snyk-georgi/45min?month=2022-01).

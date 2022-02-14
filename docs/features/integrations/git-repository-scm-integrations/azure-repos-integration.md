@@ -5,7 +5,7 @@ The user generates a unique Azure DevOps personal access token (PAT) generated f
 1. The user selects projects and repositories for import to Snyk (for testing and monitoring). The user can also enter custom file locations for any manifest files that are not located in the root folders of their repositories.
 2. Snyk evaluates the items that the user selected and imports any that have relevant manifest files in their root folder and all the subfolders at any level.
 3. Snyk communicates directly with your repository for each test it runs to determine exactly what code is currently pushed and what dependencies are being used. Each dependency is tested against Snyk’s vulnerability database to see if it contains any known vulnerabilities.
-4. Based on your configurations, if vulnerabilities are found, Snyk notifies you via email or Slack so that you can take immediate action to fix.
+4. Based on your configurations, if vulnerabilities are found, Snyk notifies you via email or Slack so that you can take immediate  action to fix.
 
 ## Add projects to Snyk for Azure Repos
 
@@ -13,9 +13,9 @@ Snyk tests and monitors Azure Repos that are in any of our supported languages b
 
 **Adding projects to Snyk**
 
-1. Go to **Projects** and click **Add projects**. Choose the tool from which to import your projects:
+1. Go to **Projects** and click **Add projects**. Choose the tool from which to import your projects:&#x20;
 2. A popup screen opens with all the available repositories under the selected integration:
-3. Select the repos that you would like to import to Snyk to monitor them for security/license issues. To import all repos for a specific organization, checkmark the organization.
+3. Select the repos that you would like to import to Snyk to monitor them for security/license issues. To import all repos for a specific organization, checkmark the organization.&#x20;
 4. Click **Add selected repositories**. Snyk will now scan the entire file tree for dependency files and import them to Snyk as Projects.
 
 ![](../../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en.png)
@@ -64,13 +64,9 @@ Enable integration between Azure Repos and Snyk, and start managing your vulnera
 
 Ensure you have set up your Azure Repos account and your Snyk account.
 
-{% hint style="info" %}
-**Note**: it is important that a Snyk admin user configure the integration within the UI. Collaborator users cannot complete this task.
-{% endhint %}
-
 **Steps**
 
-1. The account creating the Personal Access Token must be a member of the Project Administrators group to allow Git repositories to see the [Azure DevOps documentation](https://docs.microsoft.com/en-us/azure/devops/repos/git/set-git-repository-permissions).
+1. The account creating the Personal Access Token must be a member of the Project Administrators group to allow Git repositories to see the  [Azure DevOps documentation](https://docs.microsoft.com/en-us/azure/devops/repos/git/set-git-repository-permissions).
 2. Access your Azure Repos account and retrieve a unique Personal Access Token for use by Snyk. For help doing this, see the [Azure DevOps documentation](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops).
 3. When prompted in Azure, enable the following permissions for Snyk access as follows:
    * Expiry—We recommend choosing an expiration date for this token that is far in the future to avoid breaking integration.
@@ -84,3 +80,7 @@ Ensure you have set up your Azure Repos account and your Snyk account.
 9. Snyk tests the connection values and the page reloads, now displaying Azure Repos integration information. A confirmation message that the details were saved also appears in green at the top of the screen. In addition, if the connection to Azure failed, a notification appears under the Connected to Azure Repos section.
 
 ![](../../../.gitbook/assets/screen\_shot\_2020-05-19\_at\_17.16.24.png)
+
+{% hint style="info" %}
+**Note**: it is important that a Snyk admin user configure the integration within the UI. Collaborator users won't be able to complete this task and they may get the following error: _“We're having trouble connecting to Azure Repos. Please try again or_ [_contact support_](mailto:support@snyk.io)_."_
+{% endhint %}

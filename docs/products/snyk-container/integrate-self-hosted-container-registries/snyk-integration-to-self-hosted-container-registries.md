@@ -11,7 +11,9 @@ Snyk can integrate to private container registries you host, and help you to bet
 For this feature to work, you need two separate containers deployed in your infrastructure, creating two separate services.
 {% endhint %}
 
-To enable and configure your hosted container registry, contact our support team at [support@snyk.io](mailto:support@snyk.io)
+{% hint style="info" %}
+To enable and configure your hosted container registry, [contact our Support team](https://support.snyk.io/hc/en-us/requests/new).
+{% endhint %}
 
 ## **Introduction**
 
@@ -63,7 +65,7 @@ If such a requirement is not relevant for you, you do not need the architecture 
 * Container Registry Agent image can be found for download [here](https://hub.docker.com/r/snyk/container-registry-agent/tags?page=1\&ordering=last\_updated)
 
 {% hint style="info" %}
-#### Scaling to adjust scan capacity
+**Scaling to adjust scan capacity**
 
 With the above configuration of 1 vCPU and 2GB RAM, scanning capacity would be approximately 160 images of \~350MB in one go. You can scale this up based on your image sizes, and in case you have a specific use case that doesn't allow scaling and doesn't fit the limitations, please contact our support team.
 {% endhint %}
