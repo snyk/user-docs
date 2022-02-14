@@ -10,7 +10,7 @@ In your project’s folder, run the following command:
 snyk iac test --rules=bundle.tar.gz
 ```
 
-The configuration scan results now include issues from both the default Snyk rules, and your custom rules. Also see [Understanding configuration issues](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-configuration-scan-issues).&#x20;
+The configuration scan results now include issues from both the default Snyk rules, and your custom rules. Also see [Understanding configuration issues](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-configuration-scan-issues).
 
 ### Troubleshooting
 
@@ -34,4 +34,4 @@ We were unable to extract the rules provided at: ./invalid/location/bundle.tar.g
 We were unable run the test. Please run the command again with the `-d` flag and contact support@snyk.io with the contents of the output.
 ```
 
-If you have found a discrepancy that you cannot explain, please raise a support ticket.
+If you have found a discrepancy that you cannot explain, please [contact our Support team](https://support.snyk.io/hc/en-us/requests/new).
