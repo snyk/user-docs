@@ -5,17 +5,17 @@ The Visual Studio extension ([Snyk’s Vulnerability Scanner](https://marketplac
 1. With Snyk Open Source we find known vulnerabilities in both the direct and in-direct (transitive) open source dependencies you are pulling into the project.
 2. With Snyk Code we find known security vulnerabilities and code quality issues at a blazing speed looking at the code you and your team wrote.
 
-## Software requirements
+### Software requirements
 
 * Operating system - Windows.
 * Supported versions of Visual Studio: 2015, 2017, 2019, 2022. Compatible with Community, Professional and Enterprise.
 
-## Supported languages, package managers and frameworks
+#### Supported languages, package managers and frameworks
 
 * For Snyk Open Source: the Visual Studio extension support all the languages and package managers supported by Snyk Open Source and the CLI. See the full list [here](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support).
 * For Snyk Code: the Visual Studio extension support all the [languages and frameworks supported by Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#language-support-with-snyk-code-ai-engine) today.
 
-## Install the extension
+### Install the extension
 
 The Snyk extension can be installed directly from IDE. To install it open _Extensions > Manage Extensions_ menu.
 
@@ -35,7 +35,7 @@ Once the tool window appears, wait while Snyk extension downloads the latest Sny
 
 By now you should have the extension installed and the Snyk CLI downloaded. Time to authenticate. The first way is to click "Connect Visual Studio to Snyk" link.
 
-## Configuration
+### Configuration
 
 To analyse projects, the plugin uses the Snyk CLI which needs some environment variables:&#x20;
 
@@ -46,7 +46,7 @@ To analyse projects, the plugin uses the Snyk CLI which needs some environment v
 
 You can set the variables, using the GUI or on the command line using the `setx` tool.&#x20;
 
-## **Authentication**
+### **Authentication**
 
 Authenticate using _"Connect Visual Studio to Snyk"_ link on Overview page.
 
@@ -72,7 +72,7 @@ Once the authentication has been confirmed, please feel free to close the browse
 
 ![](../../../.gitbook/assets/readme\_image\_2\_8.png)
 
-## Run analysis
+### Run analysis
 
 * Thank you for installing Snyk’s Visual Studio Extension! By now it should be fully installed. If you have any questions or you feel something is not as it should be, please don’t hesitate to reach out us.
 * Let’s now see how to use the extension (continues on the next page).
@@ -84,7 +84,7 @@ The extension provides the user with two kinds of results:
 * Open Source vulnerabilities
 * Snyk Code issues
 
-### Open Source vulnerabilities
+#### Open Source vulnerabilities
 
 * Note that your solution will have to successfully build in order to allow the CLI to pick up the dependencies (and find the vulnerabilities).
 * If you see only NPM vulnerabilities or vulnerabilities that are not related to your C#/.NET projects, that might mean your project is not built successfully and wasn’t detected by the CLI. Feel free to reach out to us (contacts at the end of the document) if you think something is not as expected, we are happy to help or clarify something for you.
@@ -93,7 +93,7 @@ The extension provides the user with two kinds of results:
 
 ![](../../../.gitbook/assets/readme\_image\_3\_1\_2.png)
 
-### Snyk Code issues
+#### Snyk Code issues
 
 Snyk Code analysis shows a list of security vulnerabilities and code issues found in the application code. For more details and examples of how others fixed the issue, select a security vulnerability or a code security issue. Once selected you will see the Snyk suggestion information in a panel.
 
@@ -105,9 +105,7 @@ The Snyk Suggestion panel shows the argumentation of the Snyk engine using for e
 * Tags that were assigned by Snyk, such as Security (the issue found is a security issue), Database (it is related to database interaction), or In Test (the issue is within the test code).
 * Code from open source repositories that might be of help to see how others fixed the issue.
 
-![](../../../.gitbook/assets/readme\_image\_3\_1\_4.jp2)
-
-## View analysis results
+### View analysis results
 
 You could filter vulnerabilities by name or by severity.
 
@@ -125,7 +123,7 @@ Users could configure Snyk extension by _Project settings_.
 
 ![](../../../.gitbook/assets/readme\_image\_3\_3.png)
 
-## Extension configuration
+### Extension configuration
 
 After the plugin is installed, you can set the following configurations for the extension:
 
@@ -143,19 +141,17 @@ In the settings, you can also choose which results you want to receive:
 * Snyk Code Security vulnerabilities
 * Snyk Code Quality issues
 
-![](../../../.gitbook/assets/readme\_image\_settings\_product\_selection.jp2)
+### Known issues
 
-## Known caveats
-
-## Could not detect supported target files
+#### Could not detect supported target files
 
 **Solution** Open Visual Studio Options to go to the Project Settings of the Snyk extension and check Scan all projects.
 
 ![](../../../.gitbook/assets/readme\_image\_4\_1.png)
 
-## How to
+### How to
 
-## How to find the log files
+#### How to find the log files
 
 Logs could be found in user AppData directory:
 
@@ -163,7 +159,7 @@ Logs could be found in user AppData directory:
 %HOMEPATH%\AppData\Local\Snyk\snyk-extension.log
 ```
 
-## Build process
+#### Build process
 
 Close this repository to local machine:
 
@@ -183,16 +179,18 @@ Run build:
 msbuild -t:Build
 ```
 
-## Useful links
+### Useful links
 
 * This plugin works with projects written in .NET, Java, JavaScript, and many more languages. [See the full list of languages and package managers Snyk supports](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support)
 * [Bug tracker](https://github.com/snyk/snyk-visual-studio-plugin/issues)
 * [Github repository](https://github.com/snyk/snyk-visual-studio-plugin)
 
-### Support / Contact
+#### Support / Contact
 
-For support and help, visit [Snyk IDE Plugins Help](../snyk-ide-plugins/help.md#a693dbb5-063c-46d4-9b4e-d21e73b1e485).
+{% hint style="info" %}
+Need more help? [Contact our Support team](https://support.snyk.io/hc/en-us/requests/new).
+{% endhint %}
 
-### Share your experience
+#### Share your experience
 
 We continuously strive to improve our plugins experience. Would you like to share with us your feedback about Snyk's Eclipse Studio extension: [schedule a meeting](https://calendly.com/snyk-georgi/45min?month=2022-01).

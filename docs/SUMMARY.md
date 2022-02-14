@@ -348,7 +348,7 @@
     * [Fix Suggestions](features/integrations/snyk-ide-plugins/fix-suggestions.md)
     * [Data Mapping](features/integrations/snyk-ide-plugins/data-mapping.md)
     * [FAQ](features/integrations/snyk-ide-plugins/faq.md)
-    * [Help](features/integrations/snyk-ide-plugins/help.md)
+    * [Help with IDE plugins](features/integrations/snyk-ide-plugins/help.md)
 * [User and group management](features/user-and-group-management/README.md)
   * [Authentication](features/user-and-group-management/authentication/README.md)
     * [Authentication for third-party tools](features/user-and-group-management/authentication/authentication-for-third-party-tools.md)
