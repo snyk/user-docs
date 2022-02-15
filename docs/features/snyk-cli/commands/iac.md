@@ -35,7 +35,7 @@ Use the `-d` option to output the debug logs.
 
 ### `--detection-depth=<DEPTH>`
 
-Use with options as documented to indicate how many sub-directories to search. `DEPTH` must be a number.
+Use to indicate how many sub-directories to search. `DEPTH` must be a number.
 
 Default: no limit.
 
