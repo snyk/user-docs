@@ -145,9 +145,9 @@ The following is a list of the options for Snyk CLI commands. Each option is fol
 
 `--sarif-file-output=<OUTPUT_FILE_PATH>`: [`test`](https://docs.snyk.io/features/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor), [container](https://docs.snyk.io/features/snyk-cli/commands/container), [iac](https://docs.snyk.io/features/snyk-cli/commands/iac)
 
-`--severity-threshold=<low|medium|high|critical>`: [`test`](https://docs.snyk.io/features/snyk-cli/commands/test), [`code`](../commands/code.md), [`container`](../commands/container.md), [`iac`](../commands/iac.md)``
+`--severity-threshold=<low|medium|high|critical>`: [`test`](https://docs.snyk.io/features/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor), [`code`](https://docs.snyk.io/features/snyk-cli/commands/code), [container](https://docs.snyk.io/features/snyk-cli/commands/container), [iac](https://docs.snyk.io/features/snyk-cli/commands/iac)
 
-`--fail-on=<all|upgradable|patchable>`: [`test`](https://docs.snyk.io/features/snyk-cli/commands/test)
+`--fail-on=<all|upgradable|patchable>`: [`test`](https://docs.snyk.io/features/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor)
 
 `--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`: [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor)
 

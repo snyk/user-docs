@@ -33,8 +33,8 @@ JetBrains plugin versions: we support plugin versions from version 2020.2 on.
 
 ## **How the plugin works**
 
-* As the plugin is based on Snyk CLI, for Snyk Open Source, Snyk IaC and Snyk Container the plugin supports all the features that are supported within the CLI.
-* The plugin will automatically download the CLI in the background.
+* The plugin is based on Snyk CLI (but not only). The plugin supports all product features that are coming from the CLI for Snyk Open Source, Snyk IaC and Snyk Container.
+* The plugin will automatically download the CLI in the background (will ask you to [authenticate](jetbrains-plugins.md#authentication)).
 * We support all the [languages supported by Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#language-support-with-snyk-code-ai-engine) today. You can install the plugin on any of the IDEs (such as RubyMine) and with the plugin we would analyze all the language files we find.
 * If the CLI is already installed on the machine, the plugin will use the token provided to it, otherwise, you’ll need to provide the authentication token via the plugin authentication mechanism.
 
@@ -156,6 +156,16 @@ You have the ability to go over each of the security vulnerabilities your image 
 
 The colorful comparison table (from above) with various severity levels (critical, high, etc.) provides the difference in vulnerabilities between the current image and the recommended by Snyk image with the same characteristics sorted by severtiy. This helps you to make a decision if you want to upgrade your image to the recommended one and increase the level of confidence in the image you are running in production.
 
+## How Snyk Container / Kubernetes integration works?
+
+* The plugin scans your Kubernetes workload files and collects the images used.&#x20;
+  * To troubleshoot whether a plugin is correctly scanning a container image, verify the image definition is in the Kubernetes YAML file in the project. Make sure you have the image specified with a YAML value to the YAML image key.
+  * If you, however, encounter an error, [let us know](https://docs.snyk.io/features/integrations/ide-tools/jetbrains-plugins#support-contact) so we can look into it.
+* For each image we've found, we perform a test with our CLI.&#x20;
+  * Click [here](https://docs.snyk.io/products/snyk-container/snyk-cli-for-container-security#testing-an-image) if you want to learn more about how Snyk Container performs a test on the image.&#x20;
+  * During testing the image the CLI will download the image if it is not already available locally in your Docker daemon.
+* We will be expanding the scope of Container scanning, so if there are more files (like Dockerfiles) or workflows that you want to be supported, please submit a feature request [here](https://support.snyk.io/hc/en-us/requests/new).
+
 ## Filter results
 
 ### Filter by severity
@@ -172,7 +182,7 @@ Snyk delivers the following types of issues:
 * **Security Vulnerabilities**: found in your application’s source code.
 * **Quality Issues**: found in your application’s source code.
 * **Configuration Issues**: found in infrastructure as code files.
-* **Container Vulnerabilities**: found in Kubernetes workload files.
+* **Container Vulnerabilities**: found in images sourced from Kubernetes workload files.
 
 You can filter for each one of them by selecting the value from the dropdown as shown below. By default all three issue types are selected.
 
