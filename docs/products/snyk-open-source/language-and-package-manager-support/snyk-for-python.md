@@ -29,7 +29,7 @@ PyPI licenses are supported for all Python projects.
 To scan your dependencies, you must ensure you have first installed the relevant package manager, and that your project contains the supported manifest files.
 {% endhint %}
 
-Once we’ve built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in the dependency tree.
+Once we’ve built the tree, we can use our vulnerability database to find vulnerabilities in any of the packages anywhere in the dependency tree.
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project.
 
