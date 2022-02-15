@@ -16,7 +16,7 @@ Features might not be available, depending on your subscription plan.
 
 ## **How it works**
 
-Once we’ve built the tree, we can use our [vulnerability database ](https://snyk.io/vuln)to find vulnerabilities in any of the packages anywhere in the dependency tree.
+Once we’ve built the tree, we can use our [vulnerability database](https://security.snyk.io) to find vulnerabilities in any of the packages anywhere in the dependency tree.
 
 {% hint style="info" %}
 **Note**\
@@ -38,7 +38,7 @@ First, restore dependencies in the .NET project by running `dotnet restore` and 
 
 Examples of supported project files that resolve into **project.assets.json** include:
 
-* \*.csproj&#x20;
+* \*.csproj
 * \*.vbproj
 * \*.fsproj
 
@@ -60,12 +60,12 @@ Examples of supported project files that resolve into **packages** include:
 
 This section describes the unique CLI options available when working with NuGet managed projects.
 
-| Option                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `--file=.sln`            | Test all .NET projects included in the given `.sln` file. For example `snyk test --file=myApp.sln`                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| `--file=packages.config` | Test an individual .NET project.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| `--packages-folder`      | <p>This is the folder in which your dependencies are installed, provided you are using <code>packages.config</code>. If you’ve assigned a unique name to this folder, then Snyk can only find it if you enter a custom path.</p><p>Use the absolute or relative path, including the name of the folder where your dependencies reside. </p><p></p><p>For example: <code>snyk test --packages-folder=../location/to/packages</code> for Unix OS <code>snyk test --packages-folder=..\location\to\packages</code> for Windows.</p> |
-| `--assets-project-name`  | When monitoring a .NET project using NuGet, the `PackageReference` key uses the project name that is indicated in the project.assets.json.                                                                                                                                                                                                                                                                                                                                                                                       |
+| Option                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `--file=.sln`            | Test all .NET projects included in the given `.sln` file. For example `snyk test --file=myApp.sln`                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `--file=packages.config` | Test an individual .NET project.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| `--packages-folder`      | <p>This is the folder in which your dependencies are installed, provided you are using <code>packages.config</code>. If you’ve assigned a unique name to this folder, then Snyk can only find it if you enter a custom path.</p><p>Use the absolute or relative path, including the name of the folder where your dependencies reside.</p><p>For example: <code>snyk test --packages-folder=../location/to/packages</code> for Unix OS <code>snyk test --packages-folder=..\location\to\packages</code> for Windows.</p> |
+| `--assets-project-name`  | When monitoring a .NET project using NuGet, the `PackageReference` key uses the project name that is indicated in the project.assets.json.                                                                                                                                                                                                                                                                                                                                                                               |
 
 ### Paket
 
@@ -89,12 +89,12 @@ Once imported, Snyk analyzes your projects based on their supported manifest fil
 
 Once you select a project for import, we build the dependency tree based on these manifest files:
 
-* For .NET Core, the **\*.proj** files&#x20;
-* For .NET Framework, the **\*.proj** file, and **packages.config**&#x20;
+* For .NET Core, the **\*.proj** files
+* For .NET Framework, the **\*.proj** file, and **packages.config**
 
 Examples of supported project files include:
 
-* \*.csproj&#x20;
+* \*.csproj
 * \*.vbproj
 * \*.fsproj
 
@@ -108,26 +108,26 @@ No import support currently.
 
 From the Snyk UI, you can configure whether Snyk should scan your entire project, including the build dependencies, or if the build dependencies should be skipped.
 
-****
+***
 
 **Update language preferences**
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
-2.  Go to settings ![](../../../.gitbook/assets/cog\_icon.png) > and click for .NET&#x20;
+2.  Go to settings ![](../../../.gitbook/assets/cog\_icon.png) > and click for .NET
 
     Scan build dependencies - If checked, Snyk scans all development dependencies.
 
 ## Fixing vulnerabilities
 
-For a general understanding of how Snyk helps you fix Open Source vulnerabilities within your projects, please visit the following document [Fix your vulnerabilities](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities).&#x20;
+For a general understanding of how Snyk helps you fix Open Source vulnerabilities within your projects, please visit the following document [Fix your vulnerabilities](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities).
 
 {% hint style="info" %}
-Please note the Fix PR feature is _only_ available across our [SCM](https://docs.snyk.io/getting-started/scm-git-and-ci-cd-integration-deployment-intro) integrations.&#x20;
+Please note the Fix PR feature is _only_ available across our [SCM](https://docs.snyk.io/getting-started/scm-git-and-ci-cd-integration-deployment-intro) integrations.
 {% endhint %}
 
 ### Fix PR supported manifest files
 
-If you are currently managing your project dependencies with NuGet and leveraging [`PackageReference`](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files) or [`packages.config`](https://docs.microsoft.com/en-us/nuget/reference/packages-config) we will be able to automatically update the dependency version in your manifest file, provided there is an actual fix for it. You should then be able to easily review and merge your fixes.&#x20;
+If you are currently managing your project dependencies with NuGet and leveraging [`PackageReference`](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files) or [`packages.config`](https://docs.microsoft.com/en-us/nuget/reference/packages-config) we will be able to automatically update the dependency version in your manifest file, provided there is an actual fix for it. You should then be able to easily review and merge your fixes.
 
 ### Dependency analysis
 
@@ -136,7 +136,7 @@ In the .NET ecosystem, there are multiple levels of dependencies, some of which 
 We resolve dependencies differently in the Snyk CLI, and the Source Code Management (SCM) systems such as GitHub:
 
 * In the CLI, if you manage your project dependencies using `PackageReference`, we scan your `obj/project.assets.json`; if you manage your dependencies using `packages.config`, we scan the `packages` directory. This approach allows us to be very accurate.
-*   In the SCM integration, scanning uses a different process, as the generated files mentioned above are not available. To overcome this we follow the NuGet dependency [resolution algorithm](https://docs.microsoft.com/en-us/nuget/concepts/dependency-resolution) to construct a dependency tree.&#x20;
+*   In the SCM integration, scanning uses a different process, as the generated files mentioned above are not available. To overcome this we follow the NuGet dependency [resolution algorithm](https://docs.microsoft.com/en-us/nuget/concepts/dependency-resolution) to construct a dependency tree.
 
     **Note**: runtime dependencies (provided by the runtime environment also known as "meta-packages") are resolved more accurately in the CLI if the host machine uses a similar runtime SDK to the server running the app.
 
@@ -153,7 +153,7 @@ There are a couple of actions you can choose to take in order to address these t
 
 **SCM**
 
-If you believe you have found false positives because the application runs on a system that always has the latest patches from Microsoft installed, which _may_ mean the vulnerability is no longer relevant to your project, you may choose to [ignore](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/ignore-issues#ignoring-issues-in-the-ui) it.&#x20;
+If you believe you have found false positives because the application runs on a system that always has the latest patches from Microsoft installed, which _may_ mean the vulnerability is no longer relevant to your project, you may choose to [ignore](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/ignore-issues#ignoring-issues-in-the-ui) it.
 
 **CLI**
 
@@ -173,7 +173,7 @@ If you believe you have found false positives because when the application runs 
 </PropertyGroup>
 ```
 
-## Unsupported&#x20;
+## Unsupported
 
 * [`Directory.Build.props`](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets) and [`Directory.Build.targets`](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets) are not currently supported
 * `<ProjectReference>`elements are not currently supported
