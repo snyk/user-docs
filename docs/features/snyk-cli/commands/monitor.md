@@ -69,7 +69,7 @@ Default: scan only production dependencies.
 
 ### `--org=<ORG_ID>`
 
-Specify the `<ORG_ID>` to run Snyk commands tied to a specific organization. The `<ORG_ID>` influences where new projects are created after running the monitor command, some features availability, and private test limits.
+Specify the `<ORG_ID>` to run Snyk commands tied to a specific organization. The `<ORG_ID>` influences some features availability and private test limits.
 
 If you have multiple organizations, you can set a default from the CLI using:
 
