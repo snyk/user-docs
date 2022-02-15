@@ -17,7 +17,7 @@ To become a Snyk user, the first step is to sign up, creating a Snyk account:
 
 ![](../.gitbook/assets/login6.png)
 
-### Next: choose your product
+### Choose your Snyk product and tool
 
 Next, choose to get started with one or more specific Snyk products and tools.\
 See [getting-started-snyk-products.md](getting-started-snyk-products.md "mention").
