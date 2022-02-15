@@ -158,8 +158,9 @@ The colorful comparison table (from above) with various severity levels (critica
 
 ## How Snyk Container / Kubernetes integration works?
 
-* The plugin scans your Kubernetes workload files and collects the images used.&#x20;
-  * To troubleshoot whether a plugin is correctly scanning a container image, verify the image definition is in the Kubernetes YAML file in the project. Make sure you have the image specified with a YAML value to the YAML image key.
+* The plugin scans your Kubernetes workload files and collects the images used. To troubleshoot whether a plugin is correctly scanning a container image, you can verify:
+  * if the image definition is in the Kubernetes YAML file in the project. Make sure you have the image specified with a YAML value to the YAML image key.
+  * if the container image has been successfully built locally and/or pushed to a container registry. It is also a good practice to do this before referring to the container image in the Kubernetes YAML file.
   * If you, however, encounter an error, [let us know](https://docs.snyk.io/features/integrations/ide-tools/jetbrains-plugins#support-contact) so we can look into it.
 * For each image we've found, we perform a test with our CLI.&#x20;
   * Click [here](https://docs.snyk.io/products/snyk-container/snyk-cli-for-container-security#testing-an-image) if you want to learn more about how Snyk Container performs a test on the image.&#x20;
