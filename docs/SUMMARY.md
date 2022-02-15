@@ -2,7 +2,6 @@
 
 * [Snyk User Documentation](README.md)
 * [Introducing Snyk](introducing-snyk/README.md)
-  * [Introduction to Snyk](introducing-snyk/introduction-to-snyk.md)
   * [Snyk's core concepts](introducing-snyk/snyks-core-concepts/README.md)
     * [Groups, organizations, and users](introducing-snyk/snyks-core-concepts/groups-organizations-and-users.md)
     * [Notifications](introducing-snyk/snyks-core-concepts/notifications.md)
