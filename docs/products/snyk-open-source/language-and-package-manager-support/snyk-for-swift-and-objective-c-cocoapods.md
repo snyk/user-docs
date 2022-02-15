@@ -16,7 +16,7 @@ Features might not be available, depending on your subscription plan.
 
 ### **How it works**
 
-Once we’ve built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in the dependency tree.
+Once we’ve built the tree, we can use our vulnerability database to find vulnerabilities in any of the packages anywhere in the dependency tree.
 
 {% hint style="info" %}
 **Note**\
