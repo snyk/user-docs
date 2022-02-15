@@ -51,7 +51,7 @@ If you have multiple organizations, you can set a default from the CLI using:
 
 `$ snyk config set org=<ORG_ID>`
 
-Set a default to ensure all newly tested projects are tested under your default organization. If you need to override the default, use the `--org=<ORG_ID>` option.
+Set a default to ensure all newly tested and monitored projects are tested and monitored under your default organization. If you need to override the default, use the `--org=<ORG_ID>` option.
 
 Default: `<ORG_ID>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account).
 
