@@ -43,6 +43,22 @@ Use the `-d` option to output the debug logs.
 
 Print the dependency tree before sending it for analysis.
 
+### `--org=<ORG_ID>`
+
+Specify the `<ORG_ID>` to run Snyk commands tied to a specific organization. The `<ORG_ID>` influences some features availability and private test limits.
+
+If you have multiple organizations, you can set a default from the CLI using:
+
+`$ snyk config set org=<ORG_ID>`
+
+Set a default to ensure all newly tested projects are tested under your default organization. If you need to override the default, use the `--org=<ORG_ID>` option.
+
+Default: `<ORG_ID>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account).
+
+Example: `$ snyk container test ubuntu:18.04 --org=my-team`
+
+For more information see the article [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI).
+
 ### `--file=<FILE_PATH>`
 
 For more detailed advice, include the path to the Dockerfile for the image.
@@ -57,7 +73,7 @@ Manually pass a path to a `.snyk` policy file.
 
 ### `--json`
 
-Print results in JSON format.
+Print results in JSON format, useful for integrating with other tools
 
 Example: `$ snyk container test --json-file-output=vuln.json`
 
@@ -69,7 +85,7 @@ This is especially useful if you want to display the human-readable test output 
 
 ### `--sarif`
 
-Return results in SARIF format.
+Return results in SARIF format. Note this requires the test to be run with `--file` as well.
 
 ### `--sarif-file-output=<OUTPUT_FILE_PATH>`
 
@@ -81,9 +97,17 @@ This is especially useful if you want to display the human-readable test output 
 
 Report only vulnerabilities at the specified level or higher.
 
+### `--app-vulns`
+
+&#x20;Allow detection of vulnerabilities in your application dependencies from container images, as well as from the operating system, all in one single scan.
+
+### `--nested-jars-depth`
+
+When using `--app-vulns` use the `--nested-jars-depth` option to set how many levels of nested jars Snyk is to unpack. Depth must be a number.
+
 ### `--exclude-base-image-vulns`
 
-Exclude base image vulnerabilities from display.
+Do not  show vulnerabilities introduced only by the base image. Available when using `snyk container test` only.
 
 ### `--platform=<PLATFORM>`
 
