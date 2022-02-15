@@ -17,8 +17,6 @@ Some repositories represent multi-manifests, pointing to several different image
 snyk container test --platform=linux/arm64 debian
 ```
 
-![](../../../.gitbook/assets/platform.png)
-
 The `--platform` flag should contain one of:
 
 * linux/amd64
