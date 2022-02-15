@@ -21,9 +21,9 @@ Each vulnerability is shown with the following information:
 
 Vulnerabilities appear in reverse severity order to limit scrolling to see the most important issues.
 
-Snyk also presents the total dependencies with known vulnerabilities, and the total number of vulnerabilities.
+Snyk also reports the total dependencies tested for known vulnerabilities and the total number of vulnerabilities.
 
-![Total dependencies and issues](../../../.gitbook/assets/clisummary.png)
+![Total dependencies tested and issues fount](../../../.gitbook/assets/clisummary.png)
 
 {% hint style="info" %}
 Note\
