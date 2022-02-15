@@ -10,7 +10,7 @@ In this tutorial, you will learn how to quickly deploy and scan Kubernetes workl
 
 ### Prerequisites
 
-* An [Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/?source=:ow:o:p:nav:092320ContnrKuberntsHero\&intcmp=:ow:o:p:nav:092320ContnrKuberntsHero) account.
+* An [Oracle Cloud ](https://cloud.oracle.com)Account.
 * Shell access. &#x20;
   * Your best option is to use the [Oracle Cloud Shell](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/cloudshellintro.htm) in the Oracle Cloud Console because it includes all necessary tooling.
   * Alternatively, manually configure and install the [OCI CLI](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm).
