@@ -35,7 +35,7 @@ Auto-detect all projects in the working directory (including Yarn workspaces).
 
 ### `--detection-depth=<DEPTH>`
 
-Use with options as documented to indicate how many sub-directories to search. `DEPTH` must be a number.
+Use with `--all-projects` or `--yarn-workspaces` to indicate how many sub-directories to search. `DEPTH` must be a number.
 
 Default: 4 (the current working directory and 3 sub-directories).
 
