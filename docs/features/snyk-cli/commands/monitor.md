@@ -145,19 +145,7 @@ Save test output in SARIF format directly to the \<OUTPUT\_FILE\_PATH> file, reg
 
 This is especially useful if you want to display the human-readable test output using stdout and at the same time save the SARIF format output to a file.
 
-### `--severity-threshold=<low|medium|high|critical>`
-
-Report only vulnerabilities at the specified level or higher.
-
-### `--fail-on=<all|upgradable|patchable>`
-
 Fail only when there are vulnerabilities that can be fixed.
-
-* `all`: fail when there is at least one vulnerability that can be either upgraded or patched.
-* `upgradable`: fail when there is at least one vulnerability that can be upgraded.
-* `patchable`: fail when there is at least one vulnerability that can be patched.
-
-If vulnerabilities do not have a fix and this option is being used, tests pass.
 
 ### `--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`
 
