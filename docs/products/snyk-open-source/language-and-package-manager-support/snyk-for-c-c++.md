@@ -1,7 +1,14 @@
 # Snyk for C / C++
 
 {% hint style="info" %}
-This feature is currently in Beta; contact Snyk for more details.
+This feature is currently in Beta.
+
+To enable it from [Snyk Preview](../../../features/user-and-group-management/managing-settings/snyk-preview.md):
+
+1. Log into Snyk.
+2. Click the Settings icon to navigate to **Settings**.
+3. Click **Snyk Preview**.
+4. Enable the feature then click **Save changes**.
 {% endhint %}
 
 You can use Snyk to scan C / C++ projects.
