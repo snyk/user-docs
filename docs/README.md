@@ -4,6 +4,10 @@
 Find and fix Log4Shell vulnerability ([CVE-2021-44228](https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720)): [**Learn more**](https://snyk.io/blog/log4j-rce-log4shell-vulnerability-cve-2021-4428/)**.**
 {% endhint %}
 
+{% hint style="success" %}
+[Sign up to use Snyk for free!](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)
+{% endhint %}
+
 ### **What is Snyk?**
 
 Snyk integrates directly into development tools and automation pipelines, making it easy to find, prioritize, and fix security vulnerabilities in code, dependencies, containers, and infrastructure as code. Backed by industry-leading vulnerability intelligence, and designed by developers for developers, Snyk fits into your development workflow to put security expertise in your toolkit.
@@ -36,11 +40,7 @@ Google, Salesforce, Datadog, Atlassian, Twilio, Revolut and many more are using 
 4. Correct these vulnerabilities via Pull Requests.
 5. Remain secure with monitoring.
 
-See [getting-started-snyk-products.md](getting-started/getting-started-snyk-products.md "mention") for more details.
-
-{% hint style="success" %}
-[Sign up to use Snyk for free!](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)
-{% endhint %}
+See [getting-started](getting-started/ "mention") for more details.
 
 {% hint style="info" %}
 For details of Snyk data handling, see [How Snyk handles your data](more-info/how-snyk-handles-your-data.md).
