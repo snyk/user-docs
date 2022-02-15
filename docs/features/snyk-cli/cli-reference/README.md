@@ -64,7 +64,9 @@ Apply the recommended updates for supported ecosystems automatically.
 
 Create a Snyk App using the Snyk CLI.
 
+### `snyk unmanaged test` and `snyk unmanaged monitor`
 
+For information about these commands see [Snyk CLI for C / C++ projects](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++#snyk-cli-for-c-c++-projects) and the sections that follow on the page.
 
 ## Sub-commands of CLI commands
 
