@@ -29,7 +29,7 @@ Some features may not be available, depending on your subscription plan.
 Scans are powered by an open source database, periodically updated with the latest source code from different online sources.
 
 {% hint style="info" %}
-Currently, we use and link to the US [National Vulnerability Database](https://nvd.nist.gov) (NVD). In future, we plan to also integrate the [Snyk Vuln DB](https://snyk.io/vuln).
+Currently, we use and link to the US [National Vulnerability Database](https://nvd.nist.gov) (NVD). In future, we plan to also integrate the [Snyk Vuln DB](https://security.snyk.io).
 {% endhint %}
 
 When you run the `snyk unmanaged test` command, Snyk:
