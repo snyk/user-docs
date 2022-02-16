@@ -8,9 +8,4 @@ In the previous step, we completed the pull request workflow which directed us t
 
 In the case of our sample application, all checks will pass and we can merge the pull request with the master branch using the merge pull request button.
 
-{% hint style="info" %}
-For more details on the [Snyk Test for Pull Request](https://support.snyk.io/hc/en-us/articles/360004032117-GitHub-integration#UUID-58e66c47-1931-675e-6437-c48fc9b71438_section-5dc5a2318c45e-idm44771256643696) please see the product documentation
-{% endhint %}
-
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/screen-shot-2020-08-22-at-1.08.53-pm.png)
-
