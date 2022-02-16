@@ -1,14 +1,7 @@
 # Snyk Open Source
 
-Snyk Open Source allows you to easily find, prioritize, and automatically fix vulnerabilities in the open source libraries used in your cloud native applications.
+Snyk Open Source allows you to easily find, prioritize, and automatically fix vulnerabilities in the open source libraries used in your applications.
 
-{% page-ref page="open-source-basics/" %}
+Snyk Open Source is available on many common languages and platforms. See [language-and-package-manager-support](language-and-package-manager-support/ "mention").
 
-{% page-ref page="language-and-package-manager-support/" %}
-
-{% page-ref page="licenses/" %}
-
-{% page-ref page="license-policies/" %}
-
-{% page-ref page="dependency-management/" %}
-
+You can use Snyk Open Source in the Snyk Web app, with the Snyk CLI, in your IDE, or with an API.
