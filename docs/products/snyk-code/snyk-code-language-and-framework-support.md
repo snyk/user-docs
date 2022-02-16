@@ -1,7 +1,5 @@
 # Languages and frameworks
 
-##
-
 ## Language support with Snyk Code AI Engine
 
 Snyk Code is based on a deep code semantic code analysis engine using AI to continuously learn from billions of lines of code and 100s of millions of code fixes in the global development community. The Snyk Code AI Engine continuously evolves the human-guided reinforced learning cycle lead by Snyk's security researchers and engineers. See [this blog article ](https://snyk.io/blog/advanced-technologies-behind-snyk-code/)for more details.
