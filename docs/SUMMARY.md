@@ -162,6 +162,7 @@
     * [Configure your integration to find security issues in your Terraform files](products/snyk-infrastructure-as-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess.md)
     * [Scan and fix security issues in Terraform files](products/snyk-infrastructure-as-code/scan-terraform-files/scan-and-fix-security-issues-in-terraform-files.md)
     * [Detecting Terraform configuration files using a broker](products/snyk-infrastructure-as-code/scan-terraform-files/detecting-terraform-configuration-files-using-a-broker.md)
+    * [Terraform AWS Provider Support](products/snyk-infrastructure-as-code/scan-terraform-files/terraform-aws-provider-support.md)
   * [Scan CloudFormation files](products/snyk-infrastructure-as-code/scan-cloudformation-files/README.md)
     * [Configure your integration to find security issues in your CloudFormation files](products/snyk-infrastructure-as-code/scan-cloudformation-files/configure-your-integration-to-find-security-issues-in-your-cloudformation-files.md)
     * [Scan and fix security issues in your CloudFormation files](products/snyk-infrastructure-as-code/scan-cloudformation-files/scan-and-fix-security-issues-in-your-cloudformation-files.md)
