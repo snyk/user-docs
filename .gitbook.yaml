@@ -8,4 +8,4 @@ redirects:
   nexus: features/integrations/private-registry-gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md
   artifactory: features/integrations/private-registry-gatekeeper-plugins/artifactory-gatekeeper-plugin-overview.md
   fix-images: products/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app.md
-  languages: https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support.md
+  languages: products/snyk-code/snyk-code-language-and-framework-support.md
