@@ -8,5 +8,4 @@
 * [Test your Kubernetes files with our CLI tool](test-your-kubernetes-files-with-our-cli-tool.md)
 * [Test your Kustomize files with our CLI tool](test-your-kustomize-files-with-our-cli-tool.md)
 * [Test your Helm Charts with our CLI tool](test-your-helm-charts-with-our-cli-tool.md)
-* [Understanding configuration scan issues](understanding-configuration-scan-issues.md)
-
+* [Understanding configuration scan issues](../jira-integration/understanding-configuration-scan-issues.md)
