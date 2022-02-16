@@ -1,4 +1,4 @@
-# Snyk for Java (Gradle, Maven)
+# Snyk for Java and Kotlin
 
 Snyk offers security scanning to test your projects for vulnerabilities, both through your CLI and through different integrations from our UI.
 
@@ -6,18 +6,32 @@ Snyk offers security scanning to test your projects for vulnerabilities, both th
 
 ## Features
 
-The following table provides a general outline of the general features we offer by language. In addition to these features, we also offer additional functionality related to the specific integrations you configure and more.
+The following tables provide an outline of the general features Snyk offers by language. In addition to these features, we offer additional functionality related to the specific integration configurations.
 
 {% hint style="info" %}
 Some features might not be available, depending on your pricing plan. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
+{% tabs %}
+{% tab title="Java" %}
+## Java
+
 | Package managers / Features       | CLI support | Git support | License scanning | Fixing                                                                                                                          | Runtime monitoring |
 | --------------------------------- | ----------- | ----------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
 | [Maven](https://maven.apache.org) | ✔︎          | ✔︎          | ✔︎               | ✔︎                                                                                                                              | ✔︎                 |
 | [Gradle](https://gradle.org)      | ✔︎          | ✔︎          | ✔︎               | [Fix advice](../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) only |                    |
+{% endtab %}
 
-## Snyk CLI tool for Java projects (CI/CD)
+{% tab title="Kotlin" %}
+## Kotlin
+
+| Package managers / Features  | CLI support | Git support | License scanning | Fixing                                                                                                                          | Runtime monitoring |
+| ---------------------------- | ----------- | ----------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [Gradle](https://gradle.org) | ✔︎          |             | ✔︎               | [Fix advice](../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) only | ✔︎                 |
+{% endtab %}
+{% endtabs %}
+
+## Snyk CLI tool for Java and Kotlin projects (CI/CD)
 
 The way Snyk analyzes and builds the dependencies varies depending on the language and package manager of the project.
 
@@ -26,7 +40,7 @@ Learn how to use the tool for your Java projects as follows:
 * Snyk CLI with Gradle: To build the dependency graph, Snyk integrates with Gradle and inspects the dependencies returned by the build. The following manifest files are supported: `build.gradle` and `build.gradle.kts`
 * Snyk CLI with Maven: To build the dependency tree, Snyk analyzes the output of the `pom.xml` files.
 
-## CLI parameters for Java
+## CLI parameters for Java and Kotlin
 
 This section describes the unique CLI commands available when working with Java-based projects as follows:
 
@@ -197,11 +211,13 @@ After you select a project for import, we build the dependency tree based on the
 
 After you select a project for import, we build the dependency tree based on the `build.gradle` file and (optional) `gradle.lockfile`.
 
-`build.gradle.kts` files are not currently supported in Git.
-
 If a lockfile is present, Snyk will use it to accurately resolve the final version of dependencies used in the project.
 
 Gradle lockfiles are an opt-in feature that, among other benefits, enable reproducible builds.Read more about Gradle dependency locking at [https://docs.gradle.org/current/userguide/dependency\_locking.html](https://docs.gradle.org/current/userguide/dependency\_locking.html)
+
+{% hint style="warning" %}
+**Kotlin**: `build.gradle.kts` files are not currently supported in Git.
+{% endhint %}
 
 ## Git settings for Java
 

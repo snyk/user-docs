@@ -36,7 +36,7 @@
     * [Integrate Snyk into your workflow](products/snyk-open-source/open-source-basics/integrate-snyk-into-your-workflow.md)
   * [Language & package manager support](products/snyk-open-source/language-and-package-manager-support/README.md)
     * [Snyk for JavaScript](products/snyk-open-source/language-and-package-manager-support/snyk-for-javascript.md)
-    * [Snyk for Java (Gradle, Maven)](products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md)
+    * [Snyk for Java and Kotlin](products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md)
     * [Snyk for .NET](products/snyk-open-source/language-and-package-manager-support/snyk-for-.net.md)
     * [Snyk for Python](products/snyk-open-source/language-and-package-manager-support/snyk-for-python.md)
     * [Snyk for Golang](products/snyk-open-source/language-and-package-manager-support/snyk-for-golang.md)
