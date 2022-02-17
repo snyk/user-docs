@@ -1,14 +1,26 @@
 # Snyk Container
 
-{% page-ref page="snyk-container-security-basics/" %}
+## Introduction
 
-{% page-ref page="snyk-cli-for-container-security/" %}
+Containers provide a standard packaging format for applications, but container images can be opaque, leading to problems identifying the software and vulnerabilities they contain.
 
-{% page-ref page="getting-around-the-snyk-container-ui/" %}
+{% hint style="info" %}
+Learn more about [container security](https://snyk.io/learn/container-security/).
+{% endhint %}
 
-{% page-ref page="scan-your-dockerfile/" %}
+### Snyk Container functions
 
-{% page-ref page="integrate-self-hosted-container-registries/" %}
+Snyk Container:
 
-{% page-ref page="image-scanning-library/" %}
+* Provides tools and integrations to quickly find and fix these vulnerabilities.
+* Allows you to create images with security built-in from the start.
 
+See [snyk-container-security-basics](snyk-container-security-basics/ "mention")and [getting-around-the-snyk-container-ui](getting-around-the-snyk-container-ui/ "mention").
+
+### Snyk Container integrations
+
+Snyk Container provides a range of integrations to import projects into Snyk. These integrations support different workflows for our users and customers.
+
+See [snyk-container-integrations.md](snyk-container-security-basics/snyk-container-integrations.md "mention") for more details.
+
+See [image-scanning-library](image-scanning-library/ "mention") for details of each container registry integration.

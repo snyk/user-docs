@@ -78,6 +78,7 @@
 * [Snyk Container](products/snyk-container/README.md)
   * [Getting started with Snyk Container](products/snyk-container/getting-started-snyk-container.md)
   * [Snyk Container security basics](products/snyk-container/snyk-container-security-basics/README.md)
+    * [Snyk Container integrations](products/snyk-container/snyk-container-security-basics/snyk-container-integrations.md)
     * [How Snyk Container works](products/snyk-container/snyk-container-security-basics/how-snyk-container-works.md)
     * [Supported operating system distributions](products/snyk-container/snyk-container-security-basics/supported-operating-system-distributions.md)
     * [Understanding Linux vulnerability severity](products/snyk-container/snyk-container-security-basics/understanding-linux-vulnerability-severity.md)

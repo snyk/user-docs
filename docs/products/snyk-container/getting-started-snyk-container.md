@@ -1,31 +1,31 @@
 # Getting started with Snyk Container
 
-Get started with Snyk Container to help you find and fix vulnerabilities in container images. See [Container security overview](https://support.snyk.io/hc/en-us/articles/360003946897-Container-security-overview) and [Snyk Container](https://solutions.snyk.io/snyk-academy/container) for details.
+Get started with Snyk Container to help you find and fix vulnerabilities in container images.
 
 {% hint style="info" %}
-This process uses the Snyk.io UI. For details of Snyk Container using the Snyk CLI (Command-Line Interface) tool, see [snyk-cli-for-container-security](../../products/snyk-container/snyk-cli-for-container-security/ "mention").
+This process uses the Snyk app UI. For details of Snyk Container using the Snyk CLI (Command-Line Interface) tool, see [snyk-cli-for-container-security](snyk-cli-for-container-security/ "mention").
 {% endhint %}
 
 ### Prerequisites
 
 Ensure you have:
 
-* Access to a relevant container registry to use with Snyk. Snyk supports registries including , Amazon Elastic Container Registry ([ECR](https://docs.snyk.io/snyk-container/image-scanning-library/ecr-image-scanning)), Google Container Registry ([GCR](https://docs.snyk.io/snyk-container/image-scanning-library/gcr-image-scanning)), Microsoft Azure Container Registry ([ACR](https://docs.snyk.io/snyk-container/image-scanning-library/acr-image-scanning)), and [JFrog Artifactory](https://docs.snyk.io/snyk-container/image-scanning-library/jfrog-artifactory-image-scanning). Alternatively, access to [Kubernetes](https://docs.snyk.io/snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning) if you select that as an integration.
-* A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [Create a Snyk account](https://docs.snyk.io/getting-started/getting-started-snyk-products) for details).
+* Access to a relevant container registry to use with Snyk. Snyk supports multiple registries - see See [image-scanning-library](image-scanning-library/ "mention") for details.
+* A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [getting-started](../../getting-started/ "mention").
 
-## Stage 1: Add container registry integration
+### Stage 1: Add container registry integration
 
-Choose a container registry integration, to connect the registry with Snyk:
+Choose a container registry integration, to connect the registry with Snyk.
 
-1. Log in to Snyk.io
-2. Select **Integrations**.
-3. Select a **Container registries** entry.
-4. Click the entry to integrate with Snyk.
-5. Fill in the account credentials and other details as prompted, then save the changes, to integrate this entry with Snyk:
+First, log in to Snyk app, and select **Integrations > Container registries**
+
+![](../../.gitbook/assets/container-registry-integrations.png)
+
+Next, click the entry you want to integrate with Snyk, and enter details as prompted, then save the changes, to integrate this entry with Snyk:
 
 ![](../../.gitbook/assets/container-account-credentials.png)
 
-## Stage 2: Add projects
+### Stage 2: Add projects
 
 Add projects for your selected container, to start scanning with Snyk.
 
@@ -37,7 +37,7 @@ Add projects for your selected container, to start scanning with Snyk.
 If you encounter any errors during import, see the [Importing projects](https://support.snyk.io/hc/en-us/sections/360000923478-Importing-projects) information.
 {% endhint %}
 
-## Stage 3: View vulnerabilities
+### Stage 3: View vulnerabilities
 
 You can now see vulnerability results for imported projects.
 
@@ -53,12 +53,8 @@ Click on an entry to see details of vulnerabilities found:
 
 See [Analysis and fixes for your images from the Snyk app](https://docs.snyk.io/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app) for more details.
 
-## Stage 4: Fix and review
+### Stage 4: Fix and review
 
 1. Fix issues found, based on Snyk recommendations.
 2. Rebuild your image.
 3. Snyk automatically rescans your new image after it is pushed.
-
-## For more information
-
-See [Snyk Container](https://docs.snyk.io/snyk-container).
