@@ -35,7 +35,7 @@ To establish trust with Snyk, add an Entity ID, an ACS URL, and a Signing certif
 
 To access the Group Overview for your group, click on Settings [![](https://github.com/snyk/user-docs/raw/118bd8f19001bd64415f0ce63897f568c4b5327a/docs/.gitbook/assets/image%20\(70\).png)](https://github.com/snyk/user-docs/blob/118bd8f19001bd64415f0ce63897f568c4b5327a/docs/.gitbook/assets/image%20\(70\).png) > **SSO**:
 
-![](<../../../.gitbook/assets/image (76) (1).png>)
+![](<../../../.gitbook/assets/image (76).png>)
 
 To map information from your Identity provider to Snyk, name your user attributes as follows (using the same capitalization and spelling).
 
@@ -73,7 +73,7 @@ Provide Auth0 connection details in the below form.
 * **Protocol binding**: HTTP-POST is recommended, HTTP-Redirect is also supported
 * **IdP initiated workflow**: Idp-initiated SSO behaviour carry a security risk and therefore not recommended. Make sure you understand the risks before enabling this option.
 
-![](<../../../.gitbook/assets/image (81) (1).png>)
+![](<../../../.gitbook/assets/image (81).png>)
 
 After filling in the details click on **Create Auth0 connection**. Snyk will highlight if there are any errors. In this version you cannot edit Auth0 attributes once set up. If you need to change Auth0 attributes or if you need assistance, you can reach out to the support team using the ‘Contact Support’ option.
 
