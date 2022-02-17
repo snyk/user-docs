@@ -144,8 +144,8 @@ For further reading on .NET automated fixes, please visit our [blog](https://sny
 
 #### Build-time vs Runtime dependencies
 
-* **Build-time dependency**: We understand build time dependency to be a dependency that is resolved during build time and is not susceptible to change at runtime.
-* **Runtime dependency**: We understand build time dependency to be a dependency that is resolved against the installed runtime. For example, packages coming from the .NET framework (<=4) / .NET [runtime](https://docs.microsoft.com/en-us/dotnet/core/versions/selection?WT.mc\_id=DOP-MVP-5001511&) (for Core and .NET 5+) such as [`System.Net.Http`](https://www.nuget.org/packages/System.Net.Http) . We sometimes refer to runtime dependencies as meta-packages.
+* **Build-time dependency**: We understand build time dependency to be resolved during build time and is not susceptible to change at runtime.
+* **Runtime dependency**: We understand runtime dependency to be resolved against the installed runtime. For example, packages coming from the .NET framework (<=4) / .NET [runtime](https://docs.microsoft.com/en-us/dotnet/core/versions/selection?WT.mc\_id=DOP-MVP-5001511&) (for Core and .NET 5+) such as [`System.Net.Http`](https://www.nuget.org/packages/System.Net.Http) . We sometimes refer to runtime dependencies as meta-packages.
 
 ### Tackling vulnerabilities from runtime dependencies
 
