@@ -1,5 +1,9 @@
 # Snyk User Documentation
 
+{% hint style="danger" %}
+Find and fix Log4Shell vulnerability ([CVE-2021-44228](https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720)): [**Learn more**](https://snyk.io/blog/log4j-rce-log4shell-vulnerability-cve-2021-4428/)**.**
+{% endhint %}
+
 {% hint style="success" %}
 [Sign up to use Snyk for free!](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)
 {% endhint %}
