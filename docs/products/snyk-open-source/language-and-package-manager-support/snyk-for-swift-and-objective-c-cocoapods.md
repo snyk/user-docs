@@ -10,9 +10,9 @@ The following describes how to use Snyk to scan your CocoaPods projects:
 Features might not be available, depending on your subscription plan.
 {% endhint %}
 
-| Package managers / Features | CLI support | Git support | License scanning | Fixing | Runtime monitoring |
-| --------------------------- | ----------- | ----------- | ---------------- | ------ | ------------------ |
-| Cocoapods                   | ✔︎          | ✔︎          | ✔︎               |        |                    |
+| Package managers / Features | CLI support | Git support | License scanning | Fix PRs | Runtime monitoring |
+| --------------------------- | ----------- | ----------- | ---------------- | ------- | ------------------ |
+| Cocoapods                   | ✔︎          | ✔︎          | ✔︎               |         |                    |
 
 ### **How it works**
 

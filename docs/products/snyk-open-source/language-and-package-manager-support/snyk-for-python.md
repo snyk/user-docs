@@ -8,12 +8,12 @@ The following describes how to use Snyk to scan Python projects:
 
 ## Features
 
-| Package managers / Features                          | CLI support | Git support | License scanning | Fixing | <p>Runtime</p><p>monitoring</p> |
-| ---------------------------------------------------- | ----------- | ----------- | ---------------- | ------ | ------------------------------- |
-| [Pip and PyPI](https://pypi.org/project/pip/)        | ✔︎          | ✔︎          | ✔︎               | ✔︎     |                                 |
-| [pipenv](https://pipenv.kennethreitz.org/en/latest/) | ✔︎          |             | ✔︎               |        |                                 |
-| setup.py                                             | ✔︎          |             | ✔︎               | ✔︎     |                                 |
-| [Poetry](https://python-poetry.org)                  | ✔︎          |             | ✔︎               | ✔︎     |                                 |
+| Package managers / Features                          | CLI support | Git support | License scanning | Fix PRs | <p>Runtime</p><p>monitoring</p> |
+| ---------------------------------------------------- | ----------- | ----------- | ---------------- | ------- | ------------------------------- |
+| [Pip and PyPI](https://pypi.org/project/pip/)        | ✔︎          | ✔︎          | ✔︎               | ✔︎      |                                 |
+| [pipenv](https://pipenv.kennethreitz.org/en/latest/) | ✔︎          |             | ✔︎               |         |                                 |
+| setup.py                                             | ✔︎          |             | ✔︎               |         |                                 |
+| [Poetry](https://python-poetry.org)                  | ✔︎          |             | ✔︎               |         |                                 |
 
 {% hint style="info" %}
 Features might not be available, depending on your subscription plan.

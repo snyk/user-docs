@@ -16,7 +16,7 @@ Some features might not be available, depending on your pricing plan. See [prici
 {% tab title="Java" %}
 ## Java
 
-| Package managers / Features       | CLI support | Git support | License scanning | Fixing                                                                                                                          | Runtime monitoring |
+| Package managers / Features       | CLI support | Git support | License scanning | Fix PRs                                                                                                                         | Runtime monitoring |
 | --------------------------------- | ----------- | ----------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
 | [Maven](https://maven.apache.org) | ✔︎          | ✔︎          | ✔︎               | ✔︎                                                                                                                              | ✔︎                 |
 | [Gradle](https://gradle.org)      | ✔︎          | ✔︎          | ✔︎               | [Fix advice](../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) only |                    |

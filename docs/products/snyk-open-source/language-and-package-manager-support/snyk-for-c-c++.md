@@ -20,9 +20,9 @@ You can use Snyk to scan C / C++ projects.
 Some features may not be available, depending on your subscription plan.
 {% endhint %}
 
-| Package managers / Features | CLI support | Git support | License scanning | Fixing | Runtime monitoring |
-| --------------------------- | ----------- | ----------- | ---------------- | ------ | ------------------ |
-| C/C++                       | ✔︎          |             |                  |        |                    |
+| Package managers / Features | CLI support | Git support | License scanning | Fix PRs | Runtime monitoring |
+| --------------------------- | ----------- | ----------- | ---------------- | ------- | ------------------ |
+| C/C++                       | ✔︎          |             |                  |         |                    |
 
 ### How it works
 

@@ -11,9 +11,9 @@ The following describes how to use Snyk to scan your PHP projects:
 Features might not be available, depending on your subscription plan.
 {% endhint %}
 
-| Package managers / Features         | <p>CLI </p><p>support</p> | <p>Git </p><p>support</p> | License scanning | Fixing | Runtime monitoring |
-| ----------------------------------- | ------------------------- | ------------------------- | ---------------- | ------ | ------------------ |
-| [Composer](https://getcomposer.org) | ✔︎                        | ✔︎                        | ✔︎               |        |                    |
+| Package managers / Features         | <p>CLI</p><p>support</p> | <p>Git</p><p>support</p> | License scanning | Fix PRs | Runtime monitoring |
+| ----------------------------------- | ------------------------ | ------------------------ | ---------------- | ------- | ------------------ |
+| [Composer](https://getcomposer.org) | ✔︎                       | ✔︎                       | ✔︎               |         |                    |
 
 ## **How it works**
 
@@ -65,8 +65,8 @@ By default, Snyk scans your production dependencies. From the Snyk UI you can co
 ### **To update language preferences:**
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage
-2. Click on settings ![](../../../.gitbook/assets/cog\_icon.png)> **Languages**.&#x20;
-3. Click **Edit settings** for PHP and select **Scan dev dependencies** to set for your PHP projects in the specific organization to include both development and production dependencies.&#x20;
+2. Click on settings ![](../../../.gitbook/assets/cog\_icon.png)> **Languages**.
+3. Click **Edit settings** for PHP and select **Scan dev dependencies** to set for your PHP projects in the specific organization to include both development and production dependencies.
 4. Click **Update settings**.
 
 These settings will then be applied to all newly imported projects, and once re-tested, to all existing projects.
