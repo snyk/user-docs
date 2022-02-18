@@ -72,7 +72,6 @@ These images wrap the Snyk CLI and depending on the Tag come with relevant tooli
 ```bash
 docker run -it
     -e "SNYK_TOKEN=<TOKEN>"
-    -e "USER_ID=1234"
     -v "<PROJECT_DIRECTORY>:/project"
     -v "/home/user/.gradle:/home/node/.gradle"
   snyk/snyk-cli:gradle-5.4 test --org=my-org-name
