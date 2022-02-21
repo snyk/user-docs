@@ -61,7 +61,7 @@ In particular see the information about the following options that you may find 
 
 ## Getting support
 
-Send an email message to [support@snyk.io](mailto:support@snyk.io) whenever you need help with the Snyk CLI or Snyk in general. Note that Snyk support does not actively monitor GitHub Issues on any [Snyk project](https://github.com/snyk).
+[Submit a ticket](https://support.snyk.io/hc/en-us/requests/new) to Snyk support whenever you need help with the Snyk CLI or Snyk in general. Note that Snyk support does not actively monitor GitHub Issues on any [Snyk project](https://github.com/snyk).
 
 ## Contributing
 
