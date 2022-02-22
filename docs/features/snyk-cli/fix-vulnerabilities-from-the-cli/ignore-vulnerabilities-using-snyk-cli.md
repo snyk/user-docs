@@ -1,7 +1,7 @@
 # Ignore vulnerabilities using Snyk CLI
 
 {% hint style="info" %}
-For [Snyk Open Source, ](https://docs.snyk.io/snyk-open-source)these option work by default.\
+For [Snyk Open Source, ](https://docs.snyk.io/snyk-open-source)these options work by default.\
 For [Snyk Container](https://docs.snyk.io/snyk-container), these options also work, but after registering an ignore, when you call `snyk test` or `snyk monitor`, you must use the `--policy-path=` option, for example: `snyk container test node --policy-path=.snyk.`\
 For [Snyk Infrastructure as Code](https://support.snyk.io/hc/en-us/categories/360001342678-Infrastructure-as-code), see [IaC ignores using the snyk policy file](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file).\
 For [Snyk Code](https://docs.snyk.io/snyk-code), these options are not yet implemented.
