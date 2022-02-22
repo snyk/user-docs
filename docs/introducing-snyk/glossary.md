@@ -32,7 +32,8 @@ Command Line Interface. See [Snyk CLI](glossary.md#snyk-cli).
 
 ### Cloud Native Application Security
 
-Implementing security throughout the CI/CD pipeline, automating security embedding in microservices and maximizing repetition to reduce the introduction of vulnerabilities. Snyk provides a comprehensive [CNAS platform](https://snyk.io/product/cloud-native-application-security/).
+Implementing security throughout the CI/CD pipeline, automating security embedding in microservices and maximizing repetition to reduce the introduction of vulnerabilities. Snyk provides a comprehensive [CNAS platform](https://snyk.io/product/cloud-native-application-security/).\
+See our article about [Cloud native security guide for building secure applications](https://snyk.io/learn/cloud-native-security-for-cloud-native-applications/).
 
 ### Container
 
@@ -172,6 +173,10 @@ Open Container Initiative. An independent body set up to facilitate collaboratio
 ### Organization
 
 An organization in Snyk is a way to collect and organize your projects. Members of organizations can then access these projects.
+
+### Origin
+
+The identifier for the ecosystem that a Target exists in. Snyk can scan projects from multiple integrations, including CLI, API, GitHub, Kubernetes and others. See [Introduction to projects](https://docs.snyk.io/getting-started/introduction-to-snyk-projects).
 
 ## P
 
@@ -313,6 +318,14 @@ Snyk shows a Trending banner on issues that are being actively discussed in Twit
 ### SPDX
 
 Software Package Data Exchange. A file format used to document information on the software licenses under which a piece of computer software is distributed.
+
+## T
+
+### Target
+
+Representation of an external resource Snyk has scanned through an integration, the CLI, UI or API. Targets may represent a SCM repository, a Kubernetes workload, or other scannable resources external to Snyk. All [projects](glossary.md#project) that Snyk create are associated to a parent target. One target may relate to many projects. The structure of the target depends on the [origin](glossary.md#origin). See [Introduction to projects](https://docs.snyk.io/getting-started/introduction-to-snyk-projects).
+
+
 
 ## U
 

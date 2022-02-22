@@ -1,23 +1,71 @@
-# Introduction to Snyk projects
+# Introduction to Snyk targets and projects
 
-Projects define the items Snyk scans.
+## Targets
 
-A project includes:
+Targets represent an external resource Snyk has scanned through an integration, the CLI, UI or API.  &#x20;
+
+Targets may represent a SCM repository, a Kubernetes workload, or other scannable resources external to Snyk. All [Projects](./#project) Snyk creates, are associate to a parent Target. One target may relate to many projects. The structure of the target depends on the [origin](./#origin). \
+\
+Targets appear on the **Projects** menu on the Snyk dashboard:&#x20;
+
+![](<../../.gitbook/assets/image (71).png>)
+
+{% hint style="info" %}
+Targets also appear on the [Snyk API](https://apidocs.snyk.io/?version=2022-02-16%7Ebeta#tag--Targets).
+{% endhint %}
+
+## Origin
+
+The Target ecosystem, such as CLI, GitHub, or Kubernetes.
+
+Possible values are:
+
+* acr
+* api
+* artifactory-cr
+* aws-config
+* aws-lamba
+* azure-functions
+* azure-repos
+* bitbucket-cloud
+* bitbucket-server
+* cli
+* cloud-foundry
+* digitalocean-cr
+* docker-hub
+* ecr
+* gcr
+* github
+* github-cr
+* github-enterprise
+* gitlab
+* gitlab-cr
+* google-artifact-cr
+* harbor-cr
+* heroku
+* ibm-cloud
+* kubernetes
+* nexus-cr
+* pivotal
+* quay-cr
+* terraform-cloud
+
+Origins are a property of [Targets](./#targets) and appear in the Projects menu, as an icon by the target name.&#x20;
+
+![](<../../.gitbook/assets/image (77).png>)
+
+## Projects
+
+Projects define the items Snyk scans at a given Target. A project includes:
 
 * A scannable item external to Snyk.
 * Configuration to define how to run that scan.
 
-Projects appear on the **Projects** menu on the Snyk dashboard:
+Projects appear on the **Projects** menu on the Snyk dashboard, and on the [Snyk API](https://apidocs.snyk.io/?version=2022-02-16%7Ebeta#tag--Projects):
 
-![](../../.gitbook/assets/code1.png)
 
-## Target
 
-The address of the item to scan \(external to Snyk\), such as a Kubernetes cluster or a GitHub repo. One target may relate to many projects. The structure of the target depends on the origin.
-
-## Origin
-
-The project ecosystem, such as CLI, API, or Kubernetes.
+![](<../../.gitbook/assets/image (84).png>)
 
 ## Targetfile
 
@@ -27,5 +75,4 @@ The specific item to scan in a target, such as a pom file in a GitHub repo.
 
 ## Type
 
-The scanning method to use for this project, such as static application security testing \(SAST, for scanning using Snyk Code\) or maven for a maven project using Snyk Open Source\). Part of the configuration for scanning.
-
+The scanning method to use for this project, such as static application security testing (SAST, for scanning using Snyk Code) or maven for a maven project using Snyk Open Source). Part of the configuration for scanning.
