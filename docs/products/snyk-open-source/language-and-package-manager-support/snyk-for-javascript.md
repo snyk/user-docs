@@ -69,6 +69,10 @@ Snyk supports resolutions only in Yarn v2. We do not support resolutions for Yar
 Yarn v1 & 2 workspaces support is for `snyk test` and `snyk monitor` commands only at this time.
 {% endhint %}
 
+{% hint style="danger" %}
+nohoist is **not** supported for Yarn workspaces.
+{% endhint %}
+
 For Yarn workspaces use the `--all-projects` flag to test and monitor your packages alongside other projects or `--yarn-workspaces` to specifically scan Yarn workspaces projects only. The root lock file is referenced when scanning all the packages. Use the `--detection-depth` parameter to find sub-folders that are not auto-discovered by default.
 
 Example usage:\
