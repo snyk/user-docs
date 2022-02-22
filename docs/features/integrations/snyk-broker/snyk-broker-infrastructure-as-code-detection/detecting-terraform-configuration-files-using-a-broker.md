@@ -1,6 +1,6 @@
 # Detecting Terraform configuration files using a broker
 
-If you are using a privately hosted Git repository then you can use the Snyk Broker to connect Snyk to it. See the [full broker documentation for setup](../../../features/integrations/snyk-broker/set-up-snyk-broker.md). The following details additional configuration required for the Terraform files.
+If you are using a privately hosted Git repository then you can use the Snyk Broker to connect Snyk to it. See the [full broker documentation for setup](../set-up-snyk-broker/). The following details additional configuration required for the Terraform files.
 
 ## Writing the configuration
 
@@ -12,7 +12,7 @@ The Terraform scanning features need access to the `.tf` files from the reposito
 
 ## GitHub rules
 
-```text
+```
 {
   "//": "used to determine Terraform issues",
   "method": "GET",
@@ -29,7 +29,7 @@ The Terraform scanning features need access to the `.tf` files from the reposito
 
 ## Bitbucket rules
 
-```text
+```
 {
   "//": "used to determine Terraform issues",
   "method": "GET",
@@ -56,7 +56,7 @@ The Terraform scanning features need access to the `.tf` files from the reposito
 
 ## GitLab rules
 
-```text
+```
 {
   "//": "used to determine Terraform issues",
   "method": "GET",
@@ -73,9 +73,9 @@ The Terraform scanning features need access to the `.tf` files from the reposito
 
 ## Configuring the broker
 
-The broker takes the path to the accept.json file \(with the rules above added\) in the ACCEPT environment variable. You can see an example of passing that to the GitHub broker below.
+The broker takes the path to the accept.json file (with the rules above added) in the ACCEPT environment variable. You can see an example of passing that to the GitHub broker below.
 
-```text
+```
 docker run --restart=always \
   -p 8000:8000 \
   -e BROKER_TOKEN=secret-broker-token \
@@ -88,4 +88,3 @@ docker run --restart=always \
 ```
 
 Note that this gives Snyk the ability to query for any `.tf` files. If you would prefer to be stricter you can alter the paths in the examples above to be more restrictive to certain projects or file layouts.
-

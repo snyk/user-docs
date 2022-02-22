@@ -1,6 +1,6 @@
-# Detecting infrastructure as code files using a broker
+# Detecting Kubernetes configuration files using a broker
 
-If you are using a privately hosted Git repository, Snyk Broker can connect it with Snyk products. See the [broker documentation](../../features/integrations/snyk-broker/broker-introduction.md) for details.
+If you are using a privately hosted Git repository, Snyk Broker can connect it with Snyk products. See the [broker documentation](../broker-introduction.md) for details.
 
 This document describes the additional configuration required for Infrastructure as Code files.
 
@@ -10,7 +10,7 @@ You will need to grant the broker access to particular files in the repository. 
 
 1. Find and download the appropriate accept.json sample file for your source control system [from the Broker repository](https://github.com/snyk/broker/tree/master/client-templates).
 2. Rename it to `accept.json` and add the below rules, appropriate to your SCM, to the **private** array in the JSON file.
-3. Follow the [Configuring the broker](detecting-infrastructure-as-code-files-using-a-broker.md#configuring-the-broker) instructions.
+3. Follow the [Configuring the broker](detecting-kubernetes-configuration-files-using-a-broker.md#configuring-the-broker) instructions.
 
 ## GitHub & GitHub Enterprise rules
 
@@ -211,25 +211,7 @@ You will need to grant the broker access to particular files in the repository. 
 },
 ```
 
-## Configuring the broker
-
-The broker takes the path to the accept.json file (with the rules above added) in the ACCEPT environment variable. You can see an example of passing that to the GitHub broker below.
-
-```
-docker run --restart=always \
-  -p 8000:8000 \
-  -e BROKER_TOKEN=secret-broker-token \
-  -e GITHUB_TOKEN=secret-github-token \
-  -e PORT=8000 \
-  -e BROKER_CLIENT_URL=https://my.broker.client:8000 \
-  -e ACCEPT=/private/accept.json
-  -v /local/path/to/private:/private \
-  snyk/broker:github-com
-```
-
-Note that this gives Snyk the ability to query for any `.yaml`, `.yml` or `.json` files. If you would prefer to be stricter you can alter the paths in the examples above to be more restrictive to certain projects or file layouts.
-
-Azure repo
+## Azure Repo rules
 
 ```
 {
@@ -500,3 +482,20 @@ Azure repo
 }
 ```
 
+## Configuring the broker
+
+The broker takes the path to the accept.json file (with the rules above added) in the ACCEPT environment variable. You can see an example of passing that to the GitHub broker below.
+
+```
+docker run --restart=always \
+  -p 8000:8000 \
+  -e BROKER_TOKEN=secret-broker-token \
+  -e GITHUB_TOKEN=secret-github-token \
+  -e PORT=8000 \
+  -e BROKER_CLIENT_URL=https://my.broker.client:8000 \
+  -e ACCEPT=/private/accept.json
+  -v /local/path/to/private:/private \
+  snyk/broker:github-com
+```
+
+Note that this gives Snyk the ability to query for any `.yaml`, `.yml` or `.json` files. If you would prefer to be stricter you can alter the paths in the examples above to be more restrictive to certain projects or file layouts.

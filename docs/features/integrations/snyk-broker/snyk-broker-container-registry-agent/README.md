@@ -1,4 +1,4 @@
-# Snyk integration to self-hosted container registries
+# Snyk Broker Container Registry agent
 
 {% hint style="info" %}
 **Feature availability**\
@@ -11,9 +11,7 @@ Snyk can integrate to private container registries you host, and help you to bet
 For this feature to work, you need two separate containers deployed in your infrastructure, creating two separate services.
 {% endhint %}
 
-{% hint style="info" %}
-To enable and configure your hosted container registry, [contact our Support team](https://support.snyk.io/hc/en-us/requests/new).
-{% endhint %}
+To enable and configure your hosted container registry, contact our support team at [support@snyk.io](mailto:support@snyk.io)
 
 ## **Introduction**
 
@@ -29,7 +27,7 @@ Integration with private container registries allows you to:
 
 The Broker client provides the Agent with the connection details. The Agent uses these details to connect to the container registry, scan the images, and send the scan results through the brokered communication using callbacks. The brokered communication happens when a Broker Client connects (using your Broker ID) to a Broker server which runs in Snyk environment. See [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker) documentation for more details.
 
-![](../../../.gitbook/assets/mceclip0-8-.png)
+![](../../../../.gitbook/assets/mceclip0-8-.png)
 
 #### **Supported Container registries**
 
@@ -81,7 +79,7 @@ There are different environment variable that are required to configure the Brok
 {% hint style="info" %}
 **Note:**
 
-For **DigitalOcean**, **GCR**, **Google Artifact Registry** and **Artifactory**, there are a few values to notice. For **ECR**, additional setup is required. [Specifications](snyk-integration-to-self-hosted-container-registries.md#container-registry-specific-configurations) to follow.
+For **DigitalOcean**, **GCR**, **Google Artifact Registry** and **Artifactory**, there are a few values to notice. For **ECR**, additional setup is required. [Specifications](./#container-registry-specific-configurations) to follow.
 {% endhint %}
 
 * `BROKER_TOKEN` - The Snyk Broker token, obtained from your Container registry integration (provided by Snyk support).
@@ -139,7 +137,7 @@ In case you are using **Repository path** as your Docker access method, the cont
 
 #### **ECR**
 
-![A high-level architecture of the brokered ECR integration](<../../../.gitbook/assets/untitled (1).png>)
+![A high-level architecture of the brokered ECR integration](<../../../../.gitbook/assets/untitled (1).png>)
 
 **Required AWS Resource**
 
@@ -179,7 +177,7 @@ The above resources can be used as follows, so that a single Container Registry 
    * CR\_REGION=\<AWS Region of ECR>
    * CR\_EXTERNAL\_ID=\<Optional. An external ID found in the trust relationship condition>
 
-For detailed information about the brokered ECR setup, click [here](setting-up-the-container-registry-agent-for-a-brokered-ecr-integration.md).
+For detailed information about the brokered ECR setup, click [here](broken-reference).
 
 ## **Configuring and using system check:**
 

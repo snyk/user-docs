@@ -1,16 +1,16 @@
-# Broker Example - How to setup Broker with Jira
+# Setup Broker with Jira
 
-Configuring Jira with broker is useful to ensure a secure connection with your on-premise Jira deployment.&#x20;
+Configuring Jira with broker is useful to ensure a secure connection with your on-premise Jira deployment.
 
 #### Pre Requisites: Docker
 
 ### To configure a Broker to be used for Jira
 
-1. Click on settings ![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Integrations** > Jira > "For installation of Jira within a private network click here"
+1. Click on settings ![cog\_icon.png](../../../../.gitbook/assets/cog\_icon.png) > **Integrations** > Jira > "For installation of Jira within a private network click here"
 2. Click "Generate" to generate a Broker Token for Jira and click "Show" to confirm
 3. Visit [the broker repository](https://github.com/snyk/broker) and scroll down to the Jira section
 4. Run `docker pull snyk/broker:jira` to pull down the latest Jira broker image from Dockerhub
-5.  Copy the Command-line arguments under the Jira section and modify the values. (Note: BROKER\_TOKEN is the token generated in step 2)&#x20;
+5.  Copy the Command-line arguments under the Jira section and modify the values. (Note: BROKER\_TOKEN is the token generated in step 2)
 
     Example:
 
@@ -31,6 +31,3 @@ Basic Troubleshooting
 
 * Run `docker logs <container id>` where container id is the Jira Broker container ID to look for any errors
 * Ensure relevant ports are exposed to Jira
-
-
-
