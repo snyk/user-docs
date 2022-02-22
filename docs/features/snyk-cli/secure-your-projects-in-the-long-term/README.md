@@ -1,6 +1,6 @@
 # Secure your projects in the long term
 
-This group of pages includes information about using the CLI to monitor your projects, group projects on the project page, and apply patches.&#x20;
+This group of pages includes information about using the CLI to monitor your projects, group projects on the projects page, and apply patches.&#x20;
 
 * [Protect your code with patches](protect-your-code-with-patches.md)
 * [Monitor your projects at regular intervals](monitor-your-projects-at-regular-intervals.md)
