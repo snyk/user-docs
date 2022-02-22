@@ -81,7 +81,7 @@ After filling in the details click on **Create Auth0 connection**. Snyk will hig
 
 Now click **Edit Snyk SSO details below** in the success banner to complete the setup.
 
-![](<../../../.gitbook/assets/image (77) (1).png>)
+![](<../../../.gitbook/assets/image (77).png>)
 
 Choose the new user’s role (see [choose-a-provisioning-option.md](choose-a-provisioning-option.md "mention")):
 

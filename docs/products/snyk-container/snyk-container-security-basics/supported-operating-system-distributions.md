@@ -112,13 +112,13 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 
 ## Beta support
 
-The following operating system distributions are currently available as beta. If you use a beta distribution, Snyk provides you a message to notify you.
+The support of the following operating system distributions is currently available as beta. In these cases, Snyk provides you a message to notify you.
 
 {% hint style="info" %}
 For beta distributions, vulnerability detection may be affected while we keep on improving the data.
 {% endhint %}
 
-### SUSE Linux Enterprise Server
+### SUSE Linux Enterprise Server (SLES)
 
 * SLES 15.2
 * SLES 15.1
