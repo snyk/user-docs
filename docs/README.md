@@ -8,6 +8,8 @@
 
 Snyk integrates directly into development tools and automation pipelines, making it easy to find, prioritize, and fix security vulnerabilities in code, dependencies, containers, and infrastructure as code. Backed by industry-leading vulnerability intelligence, and designed by developers for developers, Snyk fits into your development workflow to put security expertise in your toolkit.
 
+![](<.gitbook/assets/Screen Shot 2022-02-22 at 8.18.28 AM.png>)
+
 ### **What products does Snyk offer?**
 
 * [Snyk Open Source](https://snyk.io/product/open-source-security-management/): Find and automatically fix open source vulnerabilities
