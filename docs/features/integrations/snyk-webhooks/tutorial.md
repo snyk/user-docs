@@ -1,4 +1,4 @@
-# Tutorial
+# Webhook tutorial
 
 {% hint style="info" %}
 **Official** Snyk API is available at [https://snyk.docs.apiary.io/#](https://snyk.docs.apiary.io/#)
@@ -14,7 +14,7 @@ In order to have an access to request headers, we need to create **"Catch Raw Ho
 
 ![](<../../../.gitbook/assets/untitled (1).png>)
 
-It will provide us a webhook url, were we can send requests:
+It will provide us a Webhook url, were we can send requests:
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-1%20\(1\).png)
 
