@@ -637,9 +637,16 @@ export class CallbackController implements Controller {
     // Path to handle the result of authentication flow or the callback/redirect_uri
     this.router.get(`${this.path}`, this.passportAuthenticate());
     // Path to handle success, same as what we pass to passport
-    this.router.get(`${this.path}`, this.success);
+    this.router.get(`${this.path}/success`, this.success);
     // Path to handle failure, same as what we pass to passport
     this.router.get(`${this.path}/failure`, this.failure);
+  }
+  
+  private passportAuthenticate() {
+    return passport.authenticate('snyk-oauth2', {
+      successRedirect: '/callback/success',
+      failureRedirect: '/callback/failure',
+    });
   }
 
   private success(req: Request, res: Response, next: NextFunction) {
@@ -651,6 +658,8 @@ export class CallbackController implements Controller {
     // return next(new HttpException(401, 'Authentication failed'));
   }
 }
+
+export default CallbackController;
 ```
 
 Before we're done, we need to make sure we add a reference to our new controllers in our `index.ts`.
