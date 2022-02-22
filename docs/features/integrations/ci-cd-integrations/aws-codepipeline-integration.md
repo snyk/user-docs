@@ -147,7 +147,7 @@ Click **Link to execution details** to view your detailed vulnerability report.
 
 ## Test report details
 
-Snyk analyzes the application’s manifest file and correlates the list of dependencies with Snyk’s vulnerability database. [Snyk provides detailed reports for your open source code](../../general-reports/reports/reports-overview.md). By analyzing the application’s manifest file, Snyk builds a full dependency tree, accurately identifying both direct and transitive dependencies (transitives account for 78% of the vulnerabilities detected by Snyk). This enables Snyk to show exactly how a vulnerability was introduced into the application.
+Snyk analyzes the application’s manifest file and correlates the list of dependencies with Snyk’s vulnerability database. [Snyk provides detailed reports for your open source code](../../reports/reports-overview.md). By analyzing the application’s manifest file, Snyk builds a full dependency tree, accurately identifying both direct and transitive dependencies (transitives account for 78% of the vulnerabilities detected by Snyk). This enables Snyk to show exactly how a vulnerability was introduced into the application.
 
 ![](../../../.gitbook/assets/prototype.png)
 
