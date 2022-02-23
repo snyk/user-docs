@@ -24,7 +24,7 @@ A team of security experts and analysts manages Snyk's security database to ensu
 
 Snyk’s security database includes two feeds:
 
-* Application security vulnerabilities: supporting Snyk Open Source, with manually-curated content and summaries, including code snippets where applicable.
+* [Application security](https://snyk.io/learn/application-security/) vulnerabilities: supporting Snyk Open Source, with manually-curated content and summaries, including code snippets where applicable.
 * Linux OS vulnerabilities, supporting Snyk Container.
 
 Both feed options can be licensed directly.
