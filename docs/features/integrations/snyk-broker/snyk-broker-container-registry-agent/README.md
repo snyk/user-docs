@@ -27,7 +27,7 @@ Integration with private container registries allows you to:
 
 The Broker client provides the Agent with the connection details. The Agent uses these details to connect to the container registry, scan the images, and send the scan results through the brokered communication using callbacks. The brokered communication happens when a Broker Client connects (using your Broker ID) to a Broker server which runs in Snyk environment. See [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker) documentation for more details.
 
-![](../../../.gitbook/assets/mceclip0-8-.png)
+![](../../../../.gitbook/assets/mceclip0-8-.png)
 
 #### **Supported Container registries**
 
@@ -137,7 +137,7 @@ In case you are using **Repository path** as your Docker access method, the cont
 
 #### **ECR**
 
-![A high-level architecture of the brokered ECR integration](<../../../.gitbook/assets/untitled (1).png>)
+![A high-level architecture of the brokered ECR integration](<../../../../.gitbook/assets/untitled (1).png>)
 
 **Required AWS Resource**
 

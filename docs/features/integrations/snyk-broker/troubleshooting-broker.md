@@ -26,7 +26,4 @@ The Broker client exposes an endpoint at `/systemcheck`, which can be used to va
 
 This endpoint responds with status code `200 OK` when the internal request is successful, and returns `{ ok: true }` in the response body. If the internal request fails, this endpoint responds with status code `500 Internal Server Error` and `{ ok: false }` in the response body.
 
-Can be tested by connecting to the broker and running  [http://localhost:8000/systemcheck](http://localhost:8000/systemcheck) (default settings).
-
-
-
+Can be tested by connecting to the broker and running [http://localhost:8000/systemcheck](http://localhost:8000/systemcheck) (default settings).

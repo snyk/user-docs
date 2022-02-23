@@ -21,7 +21,7 @@ The following steps allow a single Container Registry Agent instance to access E
 
 The following image describes the architecture of the brokered ECR solution:
 
-![Brokered ECR Architecture](../../../.gitbook/assets/ecr-arch.png)
+![Brokered ECR Architecture](../../../../.gitbook/assets/ecr-arch.png)
 
 ## **Step 1: Run the container registry agent with a IAM User / IAM Role**
 

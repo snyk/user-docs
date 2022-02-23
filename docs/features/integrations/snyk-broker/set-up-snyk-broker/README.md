@@ -14,4 +14,3 @@ To install, configure and roll out your Broker client and repository integration
 4. [Install and configure the client](https://docs.snyk.io/integrations/snyk-broker/how-to-install-and-configure-your-snyk-broker-client)
 
 Troubleshooting Snyk Broker: [view Snyk Broker FAQs](https://support.snyk.io/hc/en-us/articles/360003903437-My-broker-is-not-working).
-
