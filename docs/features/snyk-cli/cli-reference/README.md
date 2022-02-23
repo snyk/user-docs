@@ -131,11 +131,11 @@ The following is a list of the options for Snyk CLI commands. Each option is fol
 
 `--show-vulnerable-paths=<none|some|all>` [`test`](https://docs.snyk.io/features/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor)
 
-`--project-name=<PROJECT_NAME>`: [`test`](https://docs.snyk.io/features/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor), [container](https://docs.snyk.io/features/snyk-cli/commands/container)
+`--project-name=<PROJECT_NAME>`: [`test`](https://docs.snyk.io/features/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/features/snyk-cli/commands/container)``
 
 `--target-reference=<TARGET_REFERENCE>`: [`test`](https://docs.snyk.io/features/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor)
 
-`--policy-path=<PATH_TO_POLICY_FILE>`: [`test`](https://docs.snyk.io/features/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor), [container](https://docs.snyk.io/features/snyk-cli/commands/container), [iac](https://docs.snyk.io/features/snyk-cli/commands/iac), [`ignore`](https://docs.snyk.io/features/snyk-cli/commands/ignore)
+`--policy-path=<PATH_TO_POLICY_FILE>`: [`test`](https://docs.snyk.io/features/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/features/snyk-cli/commands/container), [iac](https://docs.snyk.io/features/snyk-cli/commands/iac), [`ignore`](https://docs.snyk.io/features/snyk-cli/commands/ignore)
 
 `--json`: [`test`](https://docs.snyk.io/features/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor), [`code`](https://docs.snyk.io/features/snyk-cli/commands/code), [container](https://docs.snyk.io/features/snyk-cli/commands/container), [iac](https://docs.snyk.io/features/snyk-cli/commands/iac)
 
@@ -149,15 +149,15 @@ The following is a list of the options for Snyk CLI commands. Each option is fol
 
 `--fail-on=<all|upgradable|patchable>`: [`test`](https://docs.snyk.io/features/snyk-cli/commands/test)
 
-`--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`: [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor)
+`--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`: [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor), [`container`](./#snyk-container)
 
-`--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`: [monitor](https://docs.snyk.io/features/snyk-cli/commands/monitor)
+`--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`: [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor), [`container`](../commands/container.md)
 
-`--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`: [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor)
+`--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`: [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor), [`container`](../commands/container.md)
 
-`--project-tags=<TAG>[,<TAG>]...>`: [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor)
+`--project-tags=<TAG>[,<TAG>]...>`: [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor), [`container`](../commands/container.md)
 
-`--tags=<TAG>[,<TAG>]...>`: [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor)
+`--tags=<TAG>[,<TAG>]...>`: [`monitor`](https://docs.snyk.io/features/snyk-cli/commands/monitor), [`container`](../commands/container.md)
 
 `--exclude-base-image-vulns`: [`container`](https://docs.snyk.io/features/snyk-cli/commands/container)
 
