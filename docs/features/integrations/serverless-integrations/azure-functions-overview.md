@@ -94,8 +94,9 @@ Once you've successfully connected Snyk to your Azure account, you'll be able to
 
 In either case, you'll see a list of any available Function apps on the Azure account you connected. Select the ones you want to monitor and click the "**Add to Snyk**" button.
 
-**NOTE**\
-We currently support importing only v2 functions. v1 functions will be ignored.
+{% hint style="warning" %}
+**NOTE:** Current support exists for importing **v2 functions only--all functions will be ignored.**
+{% endhint %}
 
 ![](<../../../.gitbook/assets/image (30).png>)
 
