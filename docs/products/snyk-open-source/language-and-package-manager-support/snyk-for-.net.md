@@ -157,7 +157,7 @@ If you believe you have found false positives because the application runs on a 
 
 **CLI**
 
-If you believe you have found false positives because when the application runs in production you always pull the latest/explicit patches from Microsoft, which may mean the vulnerability is no longer relevant to your project, you may do the following:
+If you believe you have found false positives because when the application runs in production you always pull the latest/explicit patches from Microsoft, which may mean the vulnerability is no longer relevant to your project, you may do the following or simply [ignore](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/ignore-issues) them:
 
 * If in production your application always runs on the latest SDK patch version, you can set `TargetLatestRuntimePatch` to `true` in the project file. And make sure to upgrade your environments (e.g. dev, prod) to the latest runtime version.
 
