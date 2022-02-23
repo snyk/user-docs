@@ -6,7 +6,7 @@
 
 ## What is Snyk?
 
-[Snyk](https://snyk.io) is a developer-first, cloud-native security tool. It covers multiple areas of application security:
+[Snyk](https://snyk.io) is a developer-first, cloud-native security tool. It covers multiple areas of [application security](https://snyk.io/learn/application-security/):
 
 1. ****[**Snyk Open Source**](https://snyk.io/product/open-source-security-management/): Find and automatically fix open source vulnerabilities
 2. [**Snyk Code**](https://snyk.io/product/snyk-code/): Find and fix vulnerabilities in your application code in real time
