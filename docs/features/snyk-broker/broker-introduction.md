@@ -29,7 +29,7 @@ Snyk Broker has a client and a server component:
 * Broker client: a [Docker image](https://hub.docker.com/r/snyk/broker/) deployed in your infrastructure.
 * Broker server: running on Snyk SaaS backend
 
-![](../../../.gitbook/assets/image2-4-.png)
+![](../../.gitbook/assets/image2-4-.png)
 
 All data, both in transit and at rest, is encrypted. Communication between the client and server takes place over a secure WebSocket connection. On startup, it dials out and establishes a two way communication path. It does not require opening incoming ports.
 
@@ -53,7 +53,7 @@ Snyk Broker currently integrates with these Git Repository systems:
 
 * [GitHub](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration) and [GitHub Enterprise](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-enterprise-integration)
 * [GitLab](https://docs.snyk.io/integrations/git-repository-scm-integrations/gitlab-integration)
-* [Bitbucket Server / Data Center](../git-repository-scm-integrations/bitbucket-data-center-server-integration.md)
+* [Bitbucket Server / Data Center](../integrations/git-repository-scm-integrations/bitbucket-data-center-server-integration.md)
 * [Azure Repos](https://docs.snyk.io/integrations/git-repository-scm-integrations/azure-repos-integration)
 
 In addition, Snyk Broker integrates with [Jira Server](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira), Jira Data Center and [Artifactory](https://docs.snyk.io/integrations/private-registry-integrations/artifactory-registry-setup).
@@ -62,7 +62,7 @@ In addition, Snyk Broker integrates with [Jira Server](https://docs.snyk.io/inte
 
 Snyk.io fetches and views dependency manifest files to analyze and deliver vulnerability results. To get proper test results and to create Snyk projects, one or more supported manifest files must be present in the tested folder (for integration with CLI), or in the repository (for integration with Git).
 
-See [Language support](../../../products/snyk-open-source/language-and-package-manager-support/) for details of supported manifest files for different languages.
+See [Language support](../../products/snyk-open-source/language-and-package-manager-support/) for details of supported manifest files for different languages.
 
 ## **Broker usage**
 
