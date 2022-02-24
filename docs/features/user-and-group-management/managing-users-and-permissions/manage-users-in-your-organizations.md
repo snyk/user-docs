@@ -23,7 +23,7 @@ From here:
 * Select **Add existing members** to add existing members of your group to this organization; select the members when prompted then click **Invite members.**
 
 {% hint style="info" %}
-Any users who have been invited are assigned a default role (such as **Collaborator**).To change this, use the **New members join as** drop-down. See also&#x20;
+Any users who have been invited are assigned a default role (such as **Collaborator**).To change this, use the **New members join as** drop-down. See also [managing-permissions.md](managing-permissions.md "mention").
 {% endhint %}
 
 ### Remove pending invites
