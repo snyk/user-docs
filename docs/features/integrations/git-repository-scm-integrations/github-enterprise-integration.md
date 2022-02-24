@@ -1,4 +1,8 @@
-# GitHub Enterprise Integration
+# GitHub Enterprise integration
+
+{% hint style="info" %}
+Self-managed source code, like GitHub Enterprise, is available with our Enterprise plan, [ our plans and pricing page](https://snyk.io/plans) for more info.
+{% endhint %}
 
 Snyk's GitHub Enterprise integration allows you to:
 
@@ -14,7 +18,7 @@ Snyk's GitHub Enterprise integration allows you to:
 4. Go to the **Integrations** page in Snyk and click on **GitHub Enterprise**:
 5. Enter your Github Enterprise URL, and the personal access token for the service account you created: **Note**: You can use this integration to integrate to your GitHub Enterprise Cloud, by providing the following URL [https://api.github.com](https://api.github.com)
 6. Click **Save**. Snyk connects to your GitHub Enterprise instance. When the connection succeeds, the following indications appear:
-7. Select the repos to import to Snyk, then click **Add selected repositories**.&#x20;
+7. Select the repos to import to Snyk, then click **Add selected repositories**.
 8. Snyk starts scanning the selected repos for dependency files (such as package.json) in the entire directory tree and imports them to Snyk as projects:
 9. The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
@@ -47,7 +51,7 @@ This is an example of a project-level security report:
 
 ![](<../../../.gitbook/assets/mceclip0-22- (2) (5) (6) (1) (22).png>)
 
-**Projects monitoring and automatic fix pull requests**
+**Project monitoring and automatic fix pull requests**
 
 Snyk frequently scans your projects on either a daily or a weekly basis. When new vulnerabilities are found, it notifies you by email and by opening an automated pull request with fixes to repositories.
 
@@ -63,7 +67,7 @@ Click on settings![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **In
 
 **Pull request testing**
 
-Snyk tests any newly created pull request in your repositories for security vulnerabilities and sends a status check to GitHub Enterprise. This allows you to see whether the pull request introduces new security issues, directly from GitHub Enterprise.
+Snyk tests any newly created pull requests in your repositories for security vulnerabilities and sends a status check to GitHub Enterprise. This allows you to see whether the pull request introduces new security issues, directly from GitHub Enterprise.
 
 This is how Snyk pull request checks appear in the Pull Request page in GitHub Enterprise:
 
@@ -71,8 +75,8 @@ This is how Snyk pull request checks appear in the Pull Request page in GitHub E
 
 To review and adjust the pull request tests settings:
 
-1. Click on settings![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Integrations**.&#x20;
-2. Select **Edit Settings** for GitHub Enterprise.&#x20;
+1. Click on settings![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Integrations**.
+2. Select **Edit Settings** for GitHub Enterprise.
 3. Navigate to **Default Snyk test for pull requests**:
 
 ![](<../../../.gitbook/assets/mceclip5 (1) (1).png>)
