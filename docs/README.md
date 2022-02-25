@@ -19,7 +19,7 @@ Snyk integrates directly into development tools and automation pipelines, making
 
 {% tabs %}
 {% tab title="Snyk CLI" %}
-Use the Snyk CLI to scan local projects. Read our docs on setting up, authenticating, and using the CLI by checking out our [Snyk CLI section](features/snyk-cli/).
+You can use the CLI for scanning and monitoring on your local machine and integrate it into your workflow pipeline. You can use the Snyk CLI to scan applications, containers, and infrastructure as code for security vulnerabilities. Install the CLI via npm, Homebrew, Scoop, or manually.
 
 {% content-ref url="features/snyk-cli/" %}
 [snyk-cli](features/snyk-cli/)
@@ -29,7 +29,7 @@ Use the Snyk CLI to scan local projects. Read our docs on setting up, authentica
 {% endtab %}
 
 {% tab title="Snyk API" %}
-Snyk's API&#x20;
+Snyk’s extensibility and API enables developers to tune Snyk’s security automation to their specific workflows--ensuring both a great developer experience and consistent platform governance. Learn more in our [Snyk API documentation](https://snyk.docs.apiary.io/#introduction/api-v3) and see how our customers like [Twilio and Spotify](https://snyk.io/blog/snyk-watcher-keep-snyk-in-sync/) use the Snyk API in their workflows.
 
 #### V1
 

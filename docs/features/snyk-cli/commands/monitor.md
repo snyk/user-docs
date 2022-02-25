@@ -12,7 +12,7 @@ The `snyk monitor` command creates a project in your Synk account to be continuo
 
 Possible exit codes and their meaning:
 
-**0**: success, no vulnerabilities found\
+**0**: success, snapshot created\
 **1**: action\_needed, vulnerabilities found\
 **2**: failure, try to re-run command\
 **3**: failure, no supported projects detected
