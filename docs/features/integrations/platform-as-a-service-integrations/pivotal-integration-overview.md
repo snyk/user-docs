@@ -17,7 +17,7 @@ In order for Snyk to be able to monitor your deployed Pivotal Web Services appli
 
 ![](<../../../.gitbook/assets/uuid-e7c43047-5065-ad28-db37-1c56e8796a8b-en-1- (2) (2) (2) (2) (5) (7) (2) (1) (1) (1) (17).png>)
 
-This will take you to a page where you’ll be prompted to enter your Pivotal Web Services username and password. We recommend setting up a dedicated user for your Snyk organisation.
+This will take you to a page where you’ll be prompted to enter your Pivotal Web Services username and password. We recommend setting up a dedicated user for your Snyk organization.
 
 ![](../../../.gitbook/assets/uuid-f36c9d71-d472-085b-011b-0396dad112e5-en.png)
 

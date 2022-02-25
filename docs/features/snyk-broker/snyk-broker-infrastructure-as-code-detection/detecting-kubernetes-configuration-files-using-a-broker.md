@@ -224,7 +224,7 @@ You will need to grant the broker access to particular files in the repository. 
   ],
   "private": [
     {
-      "//": "get list of projects for given organisation",
+      "//": "get list of projects for given organization",
       "method": "GET",
       "path": "/_apis/projects",
       "origin": "https://${AZURE_REPOS_HOST}/${AZURE_REPOS_ORG}",
@@ -234,7 +234,7 @@ You will need to grant the broker access to particular files in the repository. 
       }
     },
     {
-      "//": "get specific repository for given organisation",
+      "//": "get specific repository for given organization",
       "method": "GET",
       "path": "/:owner/_apis/git/repositories/:repo",
       "origin": "https://${AZURE_REPOS_HOST}/${AZURE_REPOS_ORG}",
@@ -244,7 +244,7 @@ You will need to grant the broker access to particular files in the repository. 
       }
     },
     {
-      "//": "get list of repositories for given organisation",
+      "//": "get list of repositories for given organization",
       "method": "GET",
       "path": "/:owner/_apis/git/repositories",
       "origin": "https://${AZURE_REPOS_HOST}/${AZURE_REPOS_ORG}",
@@ -264,7 +264,7 @@ You will need to grant the broker access to particular files in the repository. 
       }
     },
     {
-      "//": "search through repositories of given organisation",
+      "//": "search through repositories of given organization",
       "method": "GET",
       "path": "_apis/git/repositories",
       "origin": "https://${AZURE_REPOS_HOST}/${AZURE_REPOS_ORG}",

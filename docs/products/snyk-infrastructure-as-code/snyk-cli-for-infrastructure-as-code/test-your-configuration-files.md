@@ -105,9 +105,9 @@ snyk iac test main.tf --severity-threshold=medium
 
 This will only display to the terminal results that have a severity value of medium or higher.
 
-## To target a specific Snyk organisation:
+## To target a specific Snyk organization:
 
-You can control the severity settings of your security rules at the organisation level in the Snyk UI. By targeting a specific organisation in your CLI tests, you can determine which rules should be run and the severity of them.
+You can control the severity settings of your security rules at the organization level in the Snyk UI. By targeting a specific organization in your CLI tests, you can determine which rules should be run and the severity of them.
 
 ```text
 snyk iac test  --org=infrastructure

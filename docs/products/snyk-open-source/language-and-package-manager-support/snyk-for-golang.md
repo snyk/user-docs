@@ -73,9 +73,9 @@ In order to build the dependency tree Snyk runs the `go mod graph` command using
 
 **Private modules**
 
-Go Modules projects that depend on modules from private Git repositories are supported where the private repositories are in the same Git organisation as the main project repository.
+Go Modules projects that depend on modules from private Git repositories are supported where the private repositories are in the same Git organization as the main project repository.
 
-Imports for projects with private modules from repos in other Git organisations will fail. Support for private module dependencies from other Git organisations is planned for the future.
+Imports for projects with private modules from repos in other Git organizations will fail. Support for private module dependencies from other Git organizations is planned for the future.
 
 Private modules are supported for GitHub and Bitbucket Cloud. GitLab, GitHub Enterprise and Bitbucket Server are not currently supported.
 

@@ -36,7 +36,7 @@ Introduced through: org.primefaces:primefaces@6.1
 From: org.primefaces:primefaces@6.1
 Remediation:
 Upgrade direct dependency org.primefaces:primefaces@6.1 to org.primefaces:primefaces@6.2 (triggers upgrades to org.primefaces:primefaces@6.2)
-Organisation: sample-integrations
+Organization: sample-integrations
 Package manager: maven
 Target file: pom.xml
 Open source: no
