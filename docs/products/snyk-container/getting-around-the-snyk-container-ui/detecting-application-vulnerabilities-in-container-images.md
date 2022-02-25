@@ -21,15 +21,15 @@ When scanning an image using a container registry, Kubernetes integration, or th
 
 #### App Vulns Flag
 
-Use the `--app-vulns` flag to detect vulnerabilities in your application dependencies from container images.&#x20;
+Use the `--app-vulns` flag to detect vulnerabilities in your application dependencies from container images.
 
-For Java, when specifying the flag, we scan one level of nested jars by default.&#x20;
+For Java, when specifying the flag, we scan one level of nested jars by default.
 
 #### Nested Jars Depth Flag
 
 For Java applications, when using `--app-vulns`, you can also use the `--nested-jars-depth=n` flag to set how many levels of nested jars Snyk will unpack. The implicit default is 1. I.e when specifying 2, it means that Snyk unzips jars in jars, 3 means Snyk unzips jars in jars in jars, etc.
 
-Users can use --nested-jar-depth=0 to opt out of any scans they feel are unnecessary.&#x20;
+Users can use --nested-jar-depth=0 to opt out of any scans they feel are unnecessary.
 
 ### View vulnerabilities and licensing issues
 
@@ -42,7 +42,7 @@ When an image is imported to Snyk, it appears under its registry record in the *
 
 With this feature enabled, you can also see nested manifest files detected in the image and their vulnerabilities and licensing issues.
 
-![](<../../../.gitbook/assets/mceclip2 (1) (1) (1) (3) (3) (4) (6) (1) (23).png>)
+![](<../../../.gitbook/assets/mceclip2 (1) (1) (1) (3) (3) (4) (6) (1) (1) (22).png>)
 
 ### Automated scanning
 
@@ -57,9 +57,9 @@ For each project, you can choose the test frequency under its settings (the defa
 This is supported across the following container registries:
 
 * [ACR](https://docs.snyk.io/snyk-container/image-scanning-library/acr-image-scanning)
-* [Amazon ECR](https://docs.snyk.io/snyk-container/image-scanning-library/ecr-image-scanning)&#x20;
+* [Amazon ECR](https://docs.snyk.io/snyk-container/image-scanning-library/ecr-image-scanning)
 * [JFrog Artifactory](https://docs.snyk.io/snyk-container/image-scanning-library/jfrog-artifactory-image-scanning)
-* [Docker Hub](https://docs.snyk.io/snyk-container/image-scanning-library/docker-hub-image-scanning)&#x20;
+* [Docker Hub](https://docs.snyk.io/snyk-container/image-scanning-library/docker-hub-image-scanning)
 * [GCR](https://docs.snyk.io/snyk-container/image-scanning-library/gcr-image-scanning)
 
 **Supported Integrations**
@@ -75,4 +75,4 @@ The supported languages work on the following integrations:
 | Go Binaries  | Yes                    | Yes     | Yes            |
 | Java         | Yes                    | Yes     | Yes            |
 
-****
+***
