@@ -12,6 +12,6 @@ The [Snyk Docs page ](https://docs.snyk.io/features/integrations/notifications-t
 
 When you have successfully integrated with Jira, you get the ability to raise an issue directly from a vulnerability with a button as shown below:
 
-![](<../../../.gitbook/assets/image (68).png>)
+![](<../../../.gitbook/assets/image (75) (1).png>)
 
 The Snyk Docs contain additional details about the integration.
