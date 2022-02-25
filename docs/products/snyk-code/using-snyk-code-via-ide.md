@@ -16,4 +16,4 @@ Snyk Code supports a Visual Studio Code plugin to support issue finding and fixi
 
 ![](<../../.gitbook/assets/image3-2- (2) (2) (4) (4) (4) (3) (1) (4).png>)
 
-For more details, see the [Visual Studio Code extension for Snyk Code](../../integrations/ide-tools/visual-studio-code-extension-for-snyk-code.md).
+For more details, see the [Visual Studio Code extension for Snyk Code](../../features/integrations/ide-tools/visual-studio-code-extension-for-snyk-code.md).

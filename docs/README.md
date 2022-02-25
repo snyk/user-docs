@@ -21,8 +21,8 @@ Snyk integrates directly into development tools and automation pipelines, making
 {% tab title="Snyk CLI" %}
 You can use the CLI for scanning and monitoring on your local machine and integrate it into your workflow pipeline. You can use the Snyk CLI to scan applications, containers, and infrastructure as code for security vulnerabilities. Install the CLI via npm, Homebrew, Scoop, or manually.
 
-{% content-ref url="snyk-cli/" %}
-[snyk-cli](snyk-cli/)
+{% content-ref url="features/snyk-cli/" %}
+[snyk-cli](features/snyk-cli/)
 {% endcontent-ref %}
 
 {% embed url="https://snyk.io/blog/snyk-cli-cheat-sheet" %}

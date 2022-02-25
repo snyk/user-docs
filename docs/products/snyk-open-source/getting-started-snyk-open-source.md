@@ -6,14 +6,14 @@ Get started with Snyk Open Source to inspect, find and fix vulnerabilities in yo
 This process describes getting started using the Snyk app UI and a SCM (source code management) system.
 
 * You can also use an [IDE tool](https://docs.snyk.io/integrations/ide-tools) or a [CI/CD integration](https://docs.snyk.io/integrations/ci-cd-integrations). See [Integrations](https://docs.snyk.io/integrations).
-* You can get started with the [snyk-cli](../../snyk-cli/ "mention"); see [getting-started-with-the-cli.md](../../snyk-cli/getting-started-with-the-cli.md "mention").
+* You can get started with the [snyk-cli](../../features/snyk-cli/ "mention"); see [getting-started-with-the-cli](../../features/snyk-cli/getting-started-with-the-cli/ "mention").
 {% endhint %}
 
 ### **Prerequisites**
 
 Ensure you have:
 
-* A code project using open source packages, on a supported SCM system such as GitHub. See [git-repository-scm-integrations](../../integrations/git-repository-scm-integrations/ "mention").
+* A code project using open source packages, on a supported SCM system such as GitHub. See [git-repository-scm-integrations](../../features/integrations/git-repository-scm-integrations/ "mention").
 * A supported language and package manager, such as Java. See [language-and-package-manager-support](language-and-package-manager-support/ "mention").
 * A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [getting-started](../../getting-started/ "mention")).
 

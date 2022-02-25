@@ -79,4 +79,4 @@ Each item includes:
 * Path: the file and line in the file where the issue was found (Potentially issues occur across files; the location in the path refers to the issue's sink.)
 * Info: A description of the issue's data flow
 
-CLI for Snyk Code uses the exit codes as described in the [CLI reference](../../../snyk-cli/cli-reference.md#exit-codes).
+CLI for Snyk Code uses the exit codes as described in the [CLI reference](../../../features/snyk-cli/cli-reference/#exit-codes).

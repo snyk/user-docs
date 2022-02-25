@@ -8,7 +8,7 @@ This is a list of technologies we'll encounter across all module in the workshop
 * An [Amazon AWS Account](../../getting-started/aws-integrations/aws-account.md) for your cloud services and resources.
 * [Atlassian Bitbucket](../../getting-started/atlassian-integrations/atlassian-bitbucket-account.md) for the Git repository.
 * Atlassian Jira for Jira integration.
-* The [Snyk CLI](../../../snyk-cli/install-the-snyk-cli.md) to run local commands.
+* The [Snyk CLI](../../../features/snyk-cli/install-the-snyk-cli/) to run local commands.
 * In module steps, you will need to setup a Repository, [Bitbucket Pipelines](../../getting-started/atlassian-integrations/atlassian-bitbucket-pipeline-variables.md), and [Repository Variables](../../getting-started/atlassian-integrations/atlassian-bitbucket-pipeline-variables.md), and we'll describe those in [module-1-scanning-and-monitoring-source-code](module-1-scanning-and-monitoring-source-code/ "mention").
 * [Amazon ECR](../../getting-started/aws-integrations/aws-ecr.md) the Container image you will name **java-goof.**
 * [Amazon EKS](../../getting-started/aws-integrations/aws-eks.md) for running your Container.
