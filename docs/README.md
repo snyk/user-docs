@@ -17,6 +17,34 @@ Snyk integrates directly into development tools and automation pipelines, making
 * [Snyk Container](https://snyk.io/product/container-vulnerability-management/): Find and fix vulnerabilities in container images and Kubernetes workloads
 * [Snyk Infrastructure as Code (IaC)](https://snyk.io/product/infrastructure-as-code-security/): Find and fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates.
 
+{% tabs %}
+{% tab title="Snyk CLI" %}
+Use the Snyk CLI to scan local projects. Read our docs on setting up, authenticating, and using the CLI by checking out our [Snyk CLI section](features/snyk-cli/).
+
+{% content-ref url="features/snyk-cli/" %}
+[snyk-cli](features/snyk-cli/)
+{% endcontent-ref %}
+
+{% embed url="https://snyk.io/blog/snyk-cli-cheat-sheet" %}
+{% endtab %}
+
+{% tab title="Snyk API" %}
+Snyk's API&#x20;
+
+#### V1
+
+The Snyk v1 API is available to customers on [paid plans](https://snyk.io/plans) and allows you to programatically integrate with Snyk.
+
+{% embed url="https://snyk.docs.apiary.io" %}
+
+#### V3
+
+The Snyk v3 API is a new, standards-driven API (OpenAPI, JSON API) available to all customers.
+
+{% embed url="https://apidocs.snyk.io" %}
+{% endtab %}
+{% endtabs %}
+
 ### **What does it cost?**
 
 Snyk has several [pricing plans](https://snyk.io/plans/) available:

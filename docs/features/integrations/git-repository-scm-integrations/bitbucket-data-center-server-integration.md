@@ -11,9 +11,9 @@ Snyk's Bitbucket Data Center / Server integration allows you to continuously per
 > Make sure the newly created user has **Admin** permissions to all the repositories you need to monitor with Snyk.
 
 1. To give Snyk access to your Bitbucket DC/Server account, set up up a dedicated service account in Bitbucket DC/Server, with admin permissions. Visit [Bitbucket Server documentation ](https://confluence.atlassian.com/bitbucketserver/users-and-groups-776640439.html#Usersandgroups-Creatingauser)to learn more about creating users.
-2. In Snyk, go to the **Integrations** page and click on **Bitbucket Server** card:
-3. Enter your Bitbucket DC/Server URL, and the username and password for the service account you created:
-4. Click **Save**. Snyk connects to your Bitbucket DC/Server instance. When the connection succeeds, the following indications appear:
+2. In Snyk, go to the **Integrations** page and click on **Bitbucket Server** card:&#x20;
+3. Enter your Bitbucket DC/Server URL, and the username and password for the service account you created:&#x20;
+4. Click **Save**. Snyk connects to your Bitbucket DC/Server instance. When the connection succeeds, the following indications appear:&#x20;
 
 ![](../../../.gitbook/assets/333.png)
 
@@ -24,7 +24,7 @@ You can now select the repositories for Snyk to monitor.
 3. Snyk scans the selected repositories for dependency files (such as package.json and pom.xml) in the entire directory tree, and import them to Snyk as projects:
 4. The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
-![](<../../../.gitbook/assets/444 (2) (4) (4) (4) (5) (4) (1) (5).png>)
+![](<../../../.gitbook/assets/444 (2) (4) (4) (4) (5) (4) (6).png>)
 
 ## Bitbucket DC/Server Integration Features
 
@@ -36,7 +36,7 @@ Snyk produces advanced security reports, allowing you to explore the vulnerabili
 
 This is an example of a project level security report:
 
-![](<../../../.gitbook/assets/mceclip0-22- (2) (5) (6) (1) (1) (23).png>)
+![](<../../../.gitbook/assets/mceclip0-22- (2) (5) (6) (1) (24).png>)
 
 ## **Projects monitoring and automatic fix pull requests**
 
@@ -50,7 +50,7 @@ To review and adjust the automatic fix pull request settings:
 
 Click on settings![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Integrations**. 2. Select **Edit Settings** for Bitbucket Server 3. Navigate to **Automatic fix pull requests**:
 
-![](<../../../.gitbook/assets/mceclip4 (1) (2) (6) (7) (3) (1) (24).png>)
+![](<../../../.gitbook/assets/mceclip4 (1) (2) (6) (7) (3) (25).png>)
 
 ## **Pull request tests**
 
@@ -62,8 +62,8 @@ This is how Snyk pull request build check appears in the **Pull Request** page i
 
 To review and adjust the pull request tests settings:
 
-1. Click on settings![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Integrations**.
-2. Select **Edit Settings** for Bitbucket Server.
+1. Click on settings![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Integrations**.&#x20;
+2. Select **Edit Settings** for Bitbucket Server.&#x20;
 3. Navigate to **Default Snyk test for pull requests**:
 
 ![](../../../.gitbook/assets/999.png)

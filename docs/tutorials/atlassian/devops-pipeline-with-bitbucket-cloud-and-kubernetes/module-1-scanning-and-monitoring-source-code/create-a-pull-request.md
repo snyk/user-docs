@@ -18,7 +18,7 @@ When you see the Dockerfile project, you will be presented with upgrade recommen
 
 Expand the list by clicking on the "Show more upgrade types" to see your available options.
 
-![](<../../../../.gitbook/assets/image (65).png>)
+![](<../../../../.gitbook/assets/image (74).png>)
 
 Your options may vary from this screen because the Snyk database is frequently updated, and this includes the latest options for container images. You will see a few options presented.
 

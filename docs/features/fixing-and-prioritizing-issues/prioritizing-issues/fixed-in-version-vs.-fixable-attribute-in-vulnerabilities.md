@@ -12,11 +12,11 @@ This shows the version of the package that no longer has the vulnerability.
 
 Compare the fixed in vulnerability card above to one where no fix is available.
 
-![](<../../../.gitbook/assets/fix-desc-2.png (1).png>)
+![](../../../.gitbook/assets/fix-desc-2.png.png)
 
 ### Fixable
 
-A fixable vulnerability means there is a route within the project that would bring in the secure version rather than the vulnerable version.
+A fixable vulnerability means there is a route within the project that would bring in the secure version rather than the vulnerable version.&#x20;
 
 This means that a vulnerability can be both fixable and have a fixed in option. If it was fixed, it would not appear in the project list of vulnerabilities as it would then be considered secure.
 
@@ -36,7 +36,7 @@ To fix a transitive dependency such as this, click on the Vulnerability DB link 
 
 ![](../../../.gitbook/assets/fix-desc-5.png)
 
-Vulnerability DB: [https://app.snyk.io/vuln/](https://app.snyk.io/vuln/)
+Vulnerability DB: [https://app.snyk.io/vuln/](https://app.snyk.io/vuln/)&#x20;
 
 ![](../../../.gitbook/assets/fix-desc-6.png)
 

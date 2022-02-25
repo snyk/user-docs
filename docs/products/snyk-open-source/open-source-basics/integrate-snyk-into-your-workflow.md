@@ -28,7 +28,7 @@ These direct dependencies can also have additional transitive dependencies; libr
 
 To add the dependency:
 
-* Add the **tinymce 4.1.0** library at the bottom of the dependencies list:
+* Add the **tinymce 4.1.0** library at the bottom of the dependencies list:  
 
 ```
    {
@@ -54,12 +54,12 @@ Tip: remember to place a comma after the previous dependency.
     ```
 
 {% hint style="info" %}
-Tip: if this file already exists, run rm package-lock.json to remove it\*\*.\*\*
+Tip: if this file already exists, run rm package-lock.json to remove it**.**
 {% endhint %}
 
 ## Step 3: Commit and review changes
 
-* Commit your change locally, checking the status of the change in our local git repository, then adding the change to our local git, then committing it:
+* Commit your change locally, checking the status of the change in our local git repository, then adding the change to our local git, then committing it:  
 
 ```
    git status
@@ -67,7 +67,7 @@ Tip: if this file already exists, run rm package-lock.json to remove it\*\*.\*\*
    git commit -m "adding tinymce v4.1.0"
 ```
 
-* Commit your local code change to GitHub, transferring the files and history to your upstream git repository on GitHub:
+* Commit your local code change to GitHub, transferring the files and history to your upstream git repository on GitHub:  
 
 ```
    git push --set-upstream origin add_vulns
@@ -77,7 +77,7 @@ Tip: if this file already exists, run rm package-lock.json to remove it\*\*.\*\*
 GitHub has received your changes on your **add\_vulns** branch.
 ```
 
-* In GitHub, click **Compare & pull request** to compare the **add\_vulns** branch with the **master** branch and generate a pull request:
+* In GitHub, click **Compare & pull request** to compare the **add_vulns** branch with the **master** branch and generate a pull request:
 
 ![](../../../.gitbook/assets/click-compare.png)
 
@@ -85,7 +85,7 @@ GitHub has received your changes on your **add\_vulns** branch.
 
 Snyk automatically tests your pull request for vulnerability and license checks in the merge process:
 
-![](../../../.gitbook/assets/snyk\_vuln\_lic\_check.png)
+![](<../../../.gitbook/assets/snyk_vuln_lic_check (1).png>)
 
 As the PR workflow completed, Snyk validated the vulnerability and license policy set for the project. Based on the policy, the checks either passed or failed; this is shown in GitHub.
 
