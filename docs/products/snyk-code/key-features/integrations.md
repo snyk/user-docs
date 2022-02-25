@@ -8,11 +8,11 @@ For more details, see [JetBrains IDE Plugins](https://docs.snyk.io/integrations/
 
 ### VS Code IDE plugin
 
-For more details, see the [Visual Studio Code extension for Snyk Code](../../../features/integrations/ide-tools/visual-studio-code-extension-for-snyk-code.md).
+For more details, see the [Visual Studio Code extension for Snyk Code](../../../integrations/ide-tools/visual-studio-code-extension-for-snyk-code.md).
 
 ### Visual Studio IDE plugin
 
-For more details, see the [Visual Studio extension for Snyk Code.](../../../features/integrations/ide-tools/visual-studio-extension.md)
+For more details, see the [Visual Studio extension for Snyk Code.](../../../integrations/ide-tools/visual-studio-extension.md)
 
 ## SCM integrations
 
@@ -40,7 +40,7 @@ Coming soon! Stay tuned.
 
 ### Test code in CI/CD using Snyk CLI
 
-The Snyk Command Line Interface ([CLI](../../../features/snyk-cli/)) for Snyk Code helps you find and fix security flaws in your code on your local machine or in the CI/CD process.
+The Snyk Command Line Interface ([CLI](../../../snyk-cli/)) for Snyk Code helps you find and fix security flaws in your code on your local machine or in the CI/CD process.
 
 ## APIs and extensibility
 

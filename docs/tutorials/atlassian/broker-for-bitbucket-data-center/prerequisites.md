@@ -21,7 +21,7 @@ To get started, you'll need:
 * A Broker Token for the specific type of integration you are using, provided by the support team at Snyk. For this Tutorial, we'll use the Bitbucket Server connection. See the [list ](../../../features/integrations/snyk-broker/set-up-snyk-broker/enable-permissions-for-snyk-broker-from-your-third-party-tool.md)on our documentation site for examples of other options.
 * Administrative permissions on your Bitbucket Data Center instance.
 * Permissions on snyk.io to import projects.
-* A successful installation of Snyk Broker. You would have provided the following information the configuration of that instance as outlined in the [Snyk documentation](../../../features/integrations/git-repository-scm-integrations/bitbucket-data-center-server-integration.md):
+* A successful installation of Snyk Broker. You would have provided the following information the configuration of that instance as outlined in the [Snyk documentation](../../../integrations/git-repository-scm-integrations/bitbucket-data-center-server-integration.md):
   * A Bitbucket Username
   * A Bitbucket Password
   * A Bitbucket Hostname

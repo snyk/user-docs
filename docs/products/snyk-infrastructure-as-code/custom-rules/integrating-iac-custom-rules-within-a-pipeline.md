@@ -1,6 +1,6 @@
 # Integrating IaC custom rules within a pipeline
 
-The ideal scenario for managing, distributing, and enforcing your custom rules is to use a CI/CD like [GitHub Actions](https://github.com/features/actions).&#x20;
+The ideal scenario for managing, distributing, and enforcing your custom rules is to use a CI/CD like [GitHub Actions](https://github.com/features/actions).
 
 ### Overview
 
@@ -23,7 +23,7 @@ We want to configure our pipeline to:
 
 ### Adding PR checks using GitHub Action
 
-An example of a PR check can be seen in [https://github.com/snyk/custom-rules-example/pull/5](https://github.com/snyk/custom-rules-example/pull/5) where we attempt to add a new rule called `my_rule`&#x20;
+An example of a PR check can be seen in [https://github.com/snyk/custom-rules-example/pull/5](https://github.com/snyk/custom-rules-example/pull/5) where we attempt to add a new rule called `my_rule`
 
 (**note**: this is the same rule we showed when [learning how to write a rule](getting-started-with-the-sdk/writing-a-rule.md))
 
@@ -69,9 +69,9 @@ You need to configure your `main` branch under `Settings` -> `Branches`first, so
 
 ### Snyk IaC GitHub Action
 
-Another way to test the rules is by testing the contract with the [Snyk CLI](../../../features/snyk-cli/) by using the [Snyk IaC GitHub Action](https://github.com/snyk/actions/tree/master/iac), making sure the generated bundle can be read by the CLI.&#x20;
+Another way to test the rules is by testing the contract with the [Snyk CLI](../../../snyk-cli/) by using the [Snyk IaC GitHub Action](https://github.com/snyk/actions/tree/master/iac), making sure the generated bundle can be read by the CLI.
 
-To do this, you will need a step for installing the Snyk CLI and a `SNYK_TOKEN`, which can be found in your Snyk Account Settings.&#x20;
+To do this, you will need a step for installing the Snyk CLI and a `SNYK_TOKEN`, which can be found in your Snyk Account Settings.
 
 {% code title=".github/workflows/test.yml" %}
 ```
@@ -155,7 +155,7 @@ It looks similar to the previous workflow, but there are a few things to note ab
 
 #### Versioning rules
 
-If we want to release an experimental version of the custom rules without affecting all our CI/CD pipelines, we can use tagging to version our bundles.&#x20;
+If we want to release an experimental version of the custom rules without affecting all our CI/CD pipelines, we can use tagging to version our bundles.
 
 So, we can start trialing bundle `v2-beta` while still using `v1` in most of our services:
 
@@ -202,10 +202,10 @@ This means configuring the GitHub Action above with another job for updating Sny
           }'
 ```
 
-This API call will update the chosen Snyk group and all the organizations underneath it to use the configured custom rules bundle.&#x20;
+This API call will update the chosen Snyk group and all the organizations underneath it to use the configured custom rules bundle.
 
 {% hint style="info" %}
-For now, if we want to configure an organization to use a different bundle, such as the `v2-beta` one, we are limited to using the Snyk Settings page. There we can either configure a new bundle or disable custom rules so that we can use environment variables in our CI/CD pipeline to run the custom rules.&#x20;
+For now, if we want to configure an organization to use a different bundle, such as the `v2-beta` one, we are limited to using the Snyk Settings page. There we can either configure a new bundle or disable custom rules so that we can use environment variables in our CI/CD pipeline to run the custom rules.
 {% endhint %}
 
 In a different repository, all you have to do is authenticate with one of the organizations underneath this group and add the Snyk IaC GitHub Action to a workflow:
@@ -247,7 +247,7 @@ Infrastructure as code issues:
 
 Additionally, if using an API or the Snyk Settings page seem too restrictive, we also provide a way to configure the custom rules by using the environment variables.
 
-You can use the Snyk IaC GitHub Action with the `SNYK_CFG_OCI_REGISTRY_URL`, `SNYK_CFG_OCI_REGISTRY_USERNAME`, and `SNYK_CFG_OCI_REGISTRY_PASSWORD` environment variables to scan your configuration files for any custom rules which may have been breached.&#x20;
+You can use the Snyk IaC GitHub Action with the `SNYK_CFG_OCI_REGISTRY_URL`, `SNYK_CFG_OCI_REGISTRY_USERNAME`, and `SNYK_CFG_OCI_REGISTRY_PASSWORD` environment variables to scan your configuration files for any custom rules which may have been breached.
 
 The GitHub Action reads these environment variables and pulls down the bundle pushed in the previous step to the configured OCI registry. The GitHub action will look similar to this:
 

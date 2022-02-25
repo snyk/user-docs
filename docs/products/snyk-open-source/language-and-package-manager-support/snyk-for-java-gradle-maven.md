@@ -225,14 +225,14 @@ From the Snyk UI you can specify mirrors or repositories from which you’d like
 
 See the page below for more details on configuring the Artifactory integration.
 
-{% content-ref url="../../../features/integrations/private-registry-integrations/artifactory-registry-for-maven.md" %}
-[artifactory-registry-for-maven.md](../../../features/integrations/private-registry-integrations/artifactory-registry-for-maven.md)
+{% content-ref url="../../../integrations/private-registry-integrations/artifactory-registry-for-maven.md" %}
+[artifactory-registry-for-maven.md](../../../integrations/private-registry-integrations/artifactory-registry-for-maven.md)
 {% endcontent-ref %}
 
 ## Additional Snyk support for Java
 
 In addition to the CLI and Snyk UI features, you can also check your Java projects with these integrations.
 
-{% content-ref url="../../../features/integrations/ci-cd-integrations/maven-plugin-integration.md" %}
-[maven-plugin-integration.md](../../../features/integrations/ci-cd-integrations/maven-plugin-integration.md)
+{% content-ref url="../../../integrations/ci-cd-integrations/maven-plugin-integration.md" %}
+[maven-plugin-integration.md](../../../integrations/ci-cd-integrations/maven-plugin-integration.md)
 {% endcontent-ref %}

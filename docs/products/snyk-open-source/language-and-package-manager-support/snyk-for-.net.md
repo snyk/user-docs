@@ -34,7 +34,7 @@ The way by which Snyk analyzes and builds the tree varies depending on the langu
 
 #### Dependencies managed by PackageReference
 
-First, restore dependencies in the .NET project by running `dotnet restore` and make sure **obj/project.assets.json** has been created by the previous command, run `snyk test`. For more information on building projects, check out [Getting started with the CLI](../../../features/snyk-cli/getting-started-with-the-cli/).
+First, restore dependencies in the .NET project by running `dotnet restore` and make sure **obj/project.assets.json** has been created by the previous command, run `snyk test`. For more information on building projects, check out [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli.md).
 
 Examples of supported project files that resolve into **project.assets.json** include:
 

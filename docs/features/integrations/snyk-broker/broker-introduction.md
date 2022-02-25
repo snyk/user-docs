@@ -66,12 +66,12 @@ Snyk Broker currently integrates with these Git Repository systems:
 
 * [GitHub](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration) and [GitHub Enterprise](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-enterprise-integration) (Cloud and On-prem)
 * [GitLab](https://docs.snyk.io/integrations/git-repository-scm-integrations/gitlab-integration) (Cloud and On-prem)
-* [Bitbucket Server / Data Center](../git-repository-scm-integrations/bitbucket-data-center-server-integration.md) (On-prem)
+* [Bitbucket Server / Data Center](../../../integrations/git-repository-scm-integrations/bitbucket-data-center-server-integration.md) (On-prem)
 * [Azure Repos](https://docs.snyk.io/integrations/git-repository-scm-integrations/azure-repos-integration)&#x20;
 
 These integrations require the [Code Agent](broken-reference) to support Snyk Code analysis.
 
-In addition, Snyk Broker integrates with [Jira Server/Jira Data Center](../notifications-ticketing-system-integrations/jira.md) and [JFrog Artifactory](../private-registry-integrations/artifactory-registry-setup.md).
+In addition, Snyk Broker integrates with [Jira Server/Jira Data Center](../../../integrations/notifications-ticketing-system-integrations/jira.md) and [JFrog Artifactory](../../../integrations/private-registry-integrations/artifactory-registry-setup.md).
 
 With the Container Registry Agent, Snyk Broker also connects to all [Snyk supported Container Registries](broken-reference).
 

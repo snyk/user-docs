@@ -30,7 +30,7 @@ Taking a developer-first approach to security, Snyk integrates with leading IDE,
 
 [Snyk integrations](https://docs.snyk.io/integrations) for your software development process include:
 
-* **Source control:** cloud and self-hosted SCMs such as Github. See [Git repository (SCM) integrations](../features/integrations/git-repository-scm-integrations/).
+* **Source control:** cloud and self-hosted SCMs such as Github. See [Git repository (SCM) integrations](../integrations/git-repository-scm-integrations/).
 * **Container registries & Kubernetes:** container registries such as Docker Hub, and Kubernetes. See [Snyk Container](https://docs.snyk.io/snyk-container).
 * **Continuous integration**: such as Jenkins or TeamCity. See [CI/CD Integrations](https://docs.snyk.io/integrations/ci-cd-integrations)
 * **IDE plugins:** using IDE tools such as Eclipse. See [IDE tools](https://docs.snyk.io/integrations/ide-tools).
@@ -38,13 +38,13 @@ Taking a developer-first approach to security, Snyk integrates with leading IDE,
 * **Serverless**: such as AWS Lambda. See [Serverless integrations](https://docs.snyk.io/integrations/serverless-integrations).
 * **Platform as a service:** such as Heroku. See [Platform as a service integrations](https://docs.snyk.io/integrations/platform-as-a-service-integrations).
 * **Notifications**: such as Slack. See [Notification and ticketing system-integrations](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations).
-* **Vulnerability tools**: such as RiskSense. See [Vulnerability Management Tools](../features/integrations/vulnerability-management-tools/).
+* **Vulnerability tools**: such as RiskSense. See [Vulnerability Management Tools](../integrations/vulnerability-management-tools/).
 
 ### Snyk CLI
 
 You can use the Snyk CLI (Command Line Interface) to scan and monitor on your local machine, and integrate it into your pipeline. You can use the Snyk CLI to scan your applications, containers, and infrastructure as code for security vulnerabilities. You can install the CLI via npm, Homebrew, Scoop, or manually.
 
-See [snyk-cli](../features/snyk-cli/ "mention") for more details.
+See [snyk-cli](../snyk-cli/ "mention") for more details.
 
 ### Snyk API
 

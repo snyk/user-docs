@@ -75,7 +75,7 @@ ignore:
 ```
 
 {% hint style="info" %}
-To learn more about the `ignore` command, see [ignore-vulnerabilities-using-snyk-cli.md](../../../features/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli.md "mention")
+To learn more about the `ignore` command, see [ignore-vulnerabilities-using-snyk-cli.md](../../../snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli.md "mention")
 {% endhint %}
 
 ## Ignore instances of a vulnerability
@@ -109,7 +109,7 @@ ignore:
 ```
 
 {% hint style="info" %}
-To learn more about the `ignore` command, see [ignore-vulnerabilities-using-snyk-cli.md](../../../features/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli.md "mention")
+To learn more about the `ignore` command, see [ignore-vulnerabilities-using-snyk-cli.md](../../../snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli.md "mention")
 {% endhint %}
 
 ## Policy flags and policy file notes

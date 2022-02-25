@@ -15,8 +15,5 @@ Snyk has several core tools to use with your selected Snyk product:
 
 * [**Snyk app**](https://app.snyk.io): the core web-based UI.
 * [**Snyk CLI**](https://docs.snyk.io/snyk-cli): the Command Line Interface.
-* [**Snyk IDEs**](../features/integrations/ide-tools/): use IDE integrations to embed Snyk in your development environment.
+* [**Snyk IDEs**](../integrations/ide-tools/): use IDE integrations to embed Snyk in your development environment.
 * [**Snyk API**](https://support.snyk.io/hc/en-us/categories/360000665657-Snyk-API): allows you to programatically integrate with Snyk.
-
-
-

@@ -1,9 +1,9 @@
 # Getting started with Snyk Infrastructure as Code (IaC)
 
-Get started with Snyk IaC to inspect, find and fix issues in configuration files for Terraform or Kubernetes (including Helm) environments. For more information, see [Scan Kubernetes configuration files](../../products/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/) and [Scan Terraform files](../../products/snyk-infrastructure-as-code/scan-terraform-files/).
+Get started with Snyk IaC to inspect, find and fix issues in configuration files for Terraform or Kubernetes (including Helm) environments. For more information, see [Scan Kubernetes configuration files](scan-kubernetes-configuration-files/) and [Scan Terraform files](scan-terraform-files/).
 
 {% hint style="info" %}
-This article describes a process using the Snyk.io UI. For details of using IaC with the Snyk CLI, see [snyk-cli-for-infrastructure-as-code](../../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/ "mention").
+This article describes a process using the Snyk.io UI. For details of using IaC with the Snyk CLI, see [snyk-cli-for-infrastructure-as-code](snyk-cli-for-infrastructure-as-code/ "mention").
 {% endhint %}
 
 ## **Prerequisites**
@@ -12,7 +12,7 @@ Ensure you have:
 
 * A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [Create a Snyk account](https://docs.snyk.io/getting-started/getting-started-snyk-products) for details).
 * An existing Kubernetes or Terraform environment to work in.
-* Integrated your Git repository as for other Snyk products - see [Git repository (SCM) integrations](../../features/integrations/git-repository-scm-integrations/) for more details.
+* Integrated your Git repository as for other Snyk products - see [Git repository (SCM) integrations](../../integrations/git-repository-scm-integrations/) for more details.
 
 For more details, see:
 

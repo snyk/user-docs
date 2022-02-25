@@ -106,7 +106,7 @@ When you scan C++ projects, the following data is collected and may be stored fo
 
 #### Install the Snyk CLI
 
-C/C++ scanning is available in [Snyk CLI](../../../features/snyk-cli/). See [Install the CLI](../../../features/snyk-cli/install-the-snyk-cli/) for details.
+C/C++ scanning is available in [Snyk CLI](../../../snyk-cli/). See [Install the CLI](../../../snyk-cli/install-the-snyk-cli.md) for details.
 
 {% hint style="info" %}
 The minimum version of Snyk CLI with C/C++ scanning is 1.713.

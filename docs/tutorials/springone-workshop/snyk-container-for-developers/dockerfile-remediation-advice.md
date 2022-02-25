@@ -15,7 +15,7 @@ The Snyk UI informs users that it can provide fix advice and offers a link to co
 Configure the location of your Dockerfile using the source control repository for the container image.
 
 {% hint style="info" %}
-To use the Dockerfile fix feature in the Snyk UI you must have your source control repository configured in the Snyk UI. For details see [GitHub integration](../../../features/integrations/git-repository-scm-integrations/github-integration.md).
+To use the Dockerfile fix feature in the Snyk UI you must have your source control repository configured in the Snyk UI. For details see [GitHub integration](../../../integrations/git-repository-scm-integrations/github-integration.md).
 {% endhint %}
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/screen-shot-2020-04-18-at-1.52.23-pm.png)
