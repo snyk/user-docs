@@ -129,23 +129,9 @@ Manually pass a path to a `.snyk` policy file.
 
 Print results in JSON format.
 
-### `--json-file-output=<OUTPUT_FILE_PATH>`
-
-Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option.
-
-This is especially useful if you want to display the human-readable test output using stdout and at the same time save the JSON format output to a file.
-
 ### `--sarif`
 
 Return results in SARIF format.
-
-### `--sarif-file-output=<OUTPUT_FILE_PATH>`
-
-Save test output in SARIF format directly to the \<OUTPUT\_FILE\_PATH> file, regardless of whether or not you use the `--sarif` option.
-
-This is especially useful if you want to display the human-readable test output using stdout and at the same time save the SARIF format output to a file.
-
-Fail only when there are vulnerabilities that can be fixed.
 
 ### `--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`
 
