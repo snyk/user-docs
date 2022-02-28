@@ -8,7 +8,7 @@ You can use Code in the IDE or in a PR check (currently in beta) to identify iss
 
 ### Understand how problems flow across your applications
 
-Some issues are one-liners but they are not the majority. Most SAST issues are multi-step, multi-file--and sometimes--multi-language. To best represent that, Code presents a full data-flow visualization that allows you to navigate through your source code from source (user input) to sink (the operation that needs to receive clean input and could be otherwise exploited).
+Some issues are one-liners but they are not the majority. Most [SAST](https://snyk.io/learn/application-security/sast-vs-dast/) issues are multi-step, multi-file--and sometimes--multi-language. To best represent that, Code presents a full data-flow visualization that allows you to navigate through your source code from source (user input) to sink (the operation that needs to receive clean input and could be otherwise exploited).
 
 ### Fix more issues by using the experience of others
 

@@ -1,7 +1,5 @@
 # Triaging issues
 
-
-
 ### Introduction
 
 Every vulnerability has conditions that must be met, for that vulnerability to pose a threat (to be exploitable).
@@ -15,7 +13,7 @@ Vulnerable condition examples include:
 
 #### It's all about the context
 
-Some vulnerabilities have multiple different conditions that must all be met,  for that vulnerability to be exploitable. A vulnerable open source package can be exploited in some applications, but not in others.&#x20;
+Some vulnerabilities have multiple different conditions that must all be met, for that vulnerability to be exploitable. A vulnerable open source package can be exploited in some applications, but not in others.
 
 Exploitability depends on the context: for example, the environment, the settings, and the way the developer uses this package.
 
@@ -29,10 +27,10 @@ Currently, this feature is only available to **Java** (Gradle and Maven) ecosyst
 
 In the context of your application, the Triage Assistant evaluates the vulnerable conditions, which helps you determine the exploitability of your application.
 
-‌Snyk Code (SAST) engine is used to read your first-party code and to check the conditions for the vulnerabilities found by Snyk Open Source (SCA).
+‌Snyk Code ([SAST](https://snyk.io/learn/application-security/sast-vs-dast/)) engine is used to read your first-party code and to check the conditions for the vulnerabilities found by Snyk Open Source (SCA).
 
 {% hint style="info" %}
-To provide this feature, Snyk takes a temporary copy of your Git repository contents.&#x20;
+To provide this feature, Snyk takes a temporary copy of your Git repository contents.
 
 For more information see [how-snyk-handles-your-data.md](../../more-info/how-snyk-handles-your-data.md "mention")
 {% endhint %}
@@ -42,13 +40,13 @@ For more information see [how-snyk-handles-your-data.md](../../more-info/how-sny
 Jackson Vulnerable Conditions:
 
 * **Vulnerable version**: The [Jackson package](https://snyk.io/vuln/maven:com.fasterxml.jackson.core%3Ajackson-databind) (**com.fasterxml.jackson.core:jackson-databind vulnerabilities**) should be in a specific version, that we know is vulnerable.
-* **Specific setting**: A specific setting, or functionality need to be enabled, in our case it’s the [**Polymorphic Type Handling**](https://github.com/FasterXML/jackson-docs/wiki/JacksonPolymorphicDeserialization) feature.&#x20;
+* **Specific setting**: A specific setting, or functionality need to be enabled, in our case it’s the [**Polymorphic Type Handling**](https://github.com/FasterXML/jackson-docs/wiki/JacksonPolymorphicDeserialization) feature.
   * You can check if this setting is enabled in your code by looking for one of the following:
     * `@JsonSubTypes` annotation was used.
-    * &#x20;`@JsonTypeInfo` annotation was used on a Class.
-    * &#x20;`enableDefaultTyping()` is used to enable Polymorphic Typing .
+    * `@JsonTypeInfo` annotation was used on a Class.
+    * `enableDefaultTyping()` is used to enable Polymorphic Typing .
     * `enableDefaultTypingAsProperty()` is used to enable Polymorphic Typing.
-* **User interactivity**: The application needs to accept JSON input from the user.&#x20;
+* **User interactivity**: The application needs to accept JSON input from the user.
 * **Specific gadget**: A “gadget”, which is a class or function, needs to be available within the executing scope of the application.
 
 All the conditions must be met for the vulnerability to be exploitable.

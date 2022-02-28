@@ -22,7 +22,7 @@ Due to the time and scope of the workshop there are several things that can and 
 * Use a branching method such as gitflow and test branches awaiting a pull request review.
 * Utilize [blue/green deployments](https://snyk.io/learn/blue-green-deployment/) to instrument additional security testing prior to production deployment.
 * Enable git hooks to automate testing right when a developer commits code on her/his local machine.
-* Add additional testing such as language specific linters, SAST, DAST, dependency CVE scanning, IAST, and RASP. Implementation should be similiar to what we accomplished in this workshop.
+* Add additional testing such as language specific linters, [SAST](https://snyk.io/learn/application-security/sast-vs-dast/), DAST, dependency CVE scanning, IAST, and RASP. Implementation should be similiar to what we accomplished in this workshop.
 
 The sky's the limit on adding additional features and functionality to [DevSecOps](https://snyk.io/series/devsecops/). The point is to monitor your pipeline and continually make improvements to accelerate the release of features and functionality to your end customers.
 
