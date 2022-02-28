@@ -13,4 +13,4 @@ redirects:
   features/integrations/ci-cd-integrations/snyk-cicd-integration-good-practices: features/integrations/ci-cd-integrations/README.md
   products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code: products/snyk-open-source/language-and-package-manager-support/README.md
   getting-started/snyk-cicd-integration-good-practices: features/integrations/ci-cd-integrations/README.md
-  features/integrations/snyk-broker: features/snyk-broker/README.md
+  features/integrations/snyk-broker: features/integrations/snyk-broker/README.md
