@@ -12,7 +12,7 @@ You can integrate Snyk with your Source Control Manager (SCM) to quickly and eas
 
 To ensure a smooth deployment by your team, follow the stages as outlined below for each integration.
 
-If you try to implement all the SCM integration features at the same time, you risk causing friction in the SDLC, which leads to a poor developer experience
+If you try to implement all the SCM integration features at the same time, you risk causing friction in the [SDLC](https://snyk.io/learn/secure-sdlc/), which leads to a poor developer experience
 
 | **Deployment Stages**                                                                                                                                                      | **Configurations**                                                                                                                                                                                                        | **Outcome**                                                                                             |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |

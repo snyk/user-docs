@@ -165,7 +165,7 @@ By default if issues are not ignored, or if you are not using [snyk-delta](https
 
 ### Snyk Open Source-specific strategies
 
-These strategies are useful to teams using the Snyk SCA (Software Composition Analysis) testing features.
+These strategies are useful to teams using the Snyk SCA ([Software Composition Analysis](https://snyk.io/blog/what-is-software-composition-analysis-sca-and-does-my-company-need-it/)) testing features.
 
 #### Gradle and Scala
 
