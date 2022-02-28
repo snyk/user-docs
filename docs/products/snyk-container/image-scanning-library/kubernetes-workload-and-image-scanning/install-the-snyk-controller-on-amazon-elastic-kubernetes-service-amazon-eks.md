@@ -50,7 +50,7 @@ Alternatively, you can also use the IAM role for Service Accounts with either **
 
 ### Create an EKS role for your Node Group:&#x20;
 
-* Following the instruction [here](https://docs.aws.amazon.com/eks/latest/userguide/create-node-role.html), make sure you have attached the policy **AmazonEC2ContainerRegistryReadOnly.**
+* Following the instruction [here](https://docs.aws.amazon.com/eks/latest/userguide/create-node-role.html), create a role for your node group. Make sure you have attached the policy **AmazonEC2ContainerRegistryReadOnly.**
 * Select the **Details** tab on your EKS node group page, where you should see **Node IAM Role ARN**, it should look something like&#x20;
 
 ```
