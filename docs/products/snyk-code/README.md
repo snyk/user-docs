@@ -10,7 +10,7 @@ Snyk Code is developer-first--embedding [SAST](https://snyk.io/learn/application
 
 ### Unparalleled accuracy
 
-Generally, SAST tools have been notorious for the amount of false positives they return. Snyk Code utilizes a semantic analysis AI engine that learns from millions of open-source commits and is paired with Snyk’s Security Intelligence database--this creates a continually growing code security knowledge base, which reduces false positives to near-zero and provide actionable findings that matter.
+Generally, SAST tools have been notorious for the amount of false positives they return. Snyk Code utilizes a semantic analysis AI engine that learns from millions of open-source commits and is paired with Snyk’s Security Intelligence database--this creates a continually growing [code security](https://snyk.io/learn/secure-coding-practices/) knowledge base, which reduces false positives to near-zero and provide actionable findings that matter.
 
 ### Real-time
 
