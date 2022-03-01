@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**\
 This feature is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.\
-For availability of this feature for Snyk Infrastructure as Code, see [jira-integration](../../../products/snyk-infrastructure-as-code/jira-integration/ "mention").
+For availability of this feature for Snyk Infrastructure as Code, see [jira-integration.md](../../../products/snyk-infrastructure-as-code/jira-integration.md "mention").
 {% endhint %}
 
 ## **Set up your Jira integration**
