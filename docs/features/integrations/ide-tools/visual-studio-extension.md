@@ -2,7 +2,7 @@
 
 The Visual Studio extension ([Snyk’s Vulnerability Scanner](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs)) helps you find and fix security vulnerabilities in your projects. Within a few seconds, the extension will provide a list of all the different types of security vulnerabilities identified together with actionable fix advice. The extension combines the power of two Snyk products: Snyk Open Source and Snyk Code:
 
-1. With Snyk Open Source we find known vulnerabilities in both the direct and in-direct (transitive) open source dependencies you are pulling into the project.
+1. With Snyk Open Source we find known vulnerabilities in both the direct and indirect (transitive) open source dependencies you are pulling into the project.
 2. With Snyk Code we find known security vulnerabilities and code quality issues at a blazing speed looking at the code you and your team wrote.
 
 ### Software requirements
@@ -13,11 +13,11 @@ The Visual Studio extension ([Snyk’s Vulnerability Scanner](https://marketplac
 #### Supported languages, package managers and frameworks
 
 * For Snyk Open Source: the Visual Studio extension support all the languages and package managers supported by Snyk Open Source and the CLI. See the full list [here](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support).
-* For Snyk Code: the Visual Studio extension support all the [languages and frameworks supported by Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#language-support-with-snyk-code-ai-engine) today.
+* For Snyk Code: the Visual Studio extension supports all the [languages and frameworks supported by Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#language-support-with-snyk-code-ai-engine) today.
 
 ### Install the extension
 
-The Snyk extension can be installed directly from IDE. To install it open _Extensions > Manage Extensions_ menu.
+The Snyk extension can be installed directly from the IDE. To install it open _Extensions > Manage Extensions_ menu.
 
 ![](../../../.gitbook/assets/readme\_image\_2\_1\_1.png)
 
@@ -37,7 +37,7 @@ By now you should have the extension installed and the Snyk CLI downloaded. Time
 
 ### Configuration
 
-To analyse projects, the plugin uses the Snyk CLI which needs some environment variables:&#x20;
+To analyze projects, the plugin uses the Snyk CLI which needs some environment variables:&#x20;
 
 * `PATH`: the path to needed binaries (for example, to maven).
 * `JAVA_HOME`: the path to the JDK you want to use for analysis of Java dependencies
@@ -64,17 +64,17 @@ If, however, the automated authentication doesn’t work for some reason, please
 
 ![](../../../.gitbook/assets/install-5-a.png)
 
-You will be taken to the website to verify your identity and connect the IDE extension. Click the **Authenticate** button.
+You will be taken to the website to verify your identity and connect to the IDE extension. Click the **Authenticate** button.
 
 ![](../../../.gitbook/assets/install-6.png)
 
-Once the authentication has been confirmed, please feel free to close the browser and go back to the IDE extension. The Token field should have been populated with the authentication token. With that the authentication part should be done!
+Once the authentication has been confirmed, please feel free to close the browser and go back to the IDE extension. The Token field should have been populated with the authentication token. With that, the authentication part should be done!
 
 ![](../../../.gitbook/assets/readme\_image\_2\_8.png)
 
 ### Run analysis
 
-* Thank you for installing Snyk’s Visual Studio Extension! By now it should be fully installed. If you have any questions or you feel something is not as it should be, please don’t hesitate to reach out us.
+* Thank you for installing Snyk’s Visual Studio Extension! By now it should be fully installed. If you have any questions or you feel something is not as it should be, please don’t hesitate to reach out to us.
 * Let’s now see how to use the extension (continues on the next page).
 
 Open your solution and run Snyk scan. Depending on the size of your solution, time to build a dependency graph, it might take from less than a minute to a couple of minutes to get the vulnerabilities.
@@ -86,8 +86,8 @@ The extension provides the user with two kinds of results:
 
 #### Open Source vulnerabilities
 
-* Note that your solution will have to successfully build in order to allow the CLI to pick up the dependencies (and find the vulnerabilities).
-* If you see only NPM vulnerabilities or vulnerabilities that are not related to your C#/.NET projects, that might mean your project is not built successfully and wasn’t detected by the CLI. Feel free to reach out to us (contacts at the end of the document) if you think something is not as expected, we are happy to help or clarify something for you.
+* Note that your solution will have to be successfully built in order to allow the CLI to pick up the dependencies (and find the vulnerabilities).
+* If you see only NPM vulnerabilities or vulnerabilities that are not related to your C#/.NET projects, that might mean your project was not built successfully and wasn’t detected by the CLI. Feel free to reach out to us (contacts at the end of the document) if you think something is not as expected, we are happy to help or clarify something for you.
 
 ![](../../../.gitbook/assets/readme\_image\_3\_1\_1.png)
 
@@ -99,25 +99,25 @@ Snyk Code analysis shows a list of security vulnerabilities and code issues foun
 
 ![](../../../.gitbook/assets/readme\_image\_3\_1\_3.png)
 
-The Snyk Suggestion panel shows the argumentation of the Snyk engine using for example variable names of your code and the line numbers in red. You can also see:
+The Snyk Suggestion panel shows the argumentation of the Snyk engine using, for example, variable names of your code and the line numbers in red. You can also see:
 
 * Links to external resources to explain the bug pattern in more detail (the More info link).
 * Tags that were assigned by Snyk, such as Security (the issue found is a security issue), Database (it is related to database interaction), or In Test (the issue is within the test code).
-* Code from open source repositories that might be of help to see how others fixed the issue.
+* Code from open source repositories that might be of help to see how others have fixed the issue.
 
 ### View analysis results
 
-You could filter vulnerabilities by name or by severity.
+You can filter vulnerabilities by name or by severity.
 
 * Filter by name by typing the name of the vulnerability in the search bar.
 
 ![](../../../.gitbook/assets/readme\_image\_3\_2\_1.png)
 
-* Filter by severity by selecting one or more of the the severities when you open the search bar filter.
+* Filter by severity by selecting one or more of the severities when you open the search bar filter.
 
 ![](../../../.gitbook/assets/readme\_image\_3\_2\_2.png)
 
-Users could configure Snyk extension by _Project settings_.
+Users can configure Snyk extension by _Project settings_.
 
 * Note that the “Scan all projects” option is enabled by default. It adds --all-projects option for Snyk CLI. This option scans all projects by default.
 
@@ -153,7 +153,7 @@ In the settings, you can also choose which results you want to receive:
 
 #### How to find the log files
 
-Logs could be found in user AppData directory:
+Logs can be found in the user AppData directory:
 
 ```
 %HOMEPATH%\AppData\Local\Snyk\snyk-extension.log
@@ -161,7 +161,7 @@ Logs could be found in user AppData directory:
 
 #### Build process
 
-Close this repository to local machine:
+Clone this repository locally:
 
 ```
 git clone https://github.com/snyk/snyk-visual-studio-plugin.git
