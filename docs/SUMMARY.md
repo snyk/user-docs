@@ -308,7 +308,7 @@
     * [IaC ignores using the .snyk policy file](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md)
     * [Test your Terraform files with Snyk CLI](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-terraform-files-with-the-cli-tool.md)
     * [Test your CloudFormation files with Snyk CLI](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-cloudformation-files-with-cli-tool.md)
-    * [Test your AWS CDK files with our CLI tool](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-aws-cdk-files-with-our-cli-tool.md)
+    * [Test your AWS CDK files with Snyk CLI](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-aws-cdk-files-with-our-cli-tool.md)
     * [Test your Kubernetes files with our CLI tool](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kubernetes-files-with-our-cli-tool.md)
     * [Test your Kustomize files with our CLI tool](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kustomize-files-with-our-cli-tool.md)
     * [Testing Helm Charts with our CLI tool](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-helm-charts-with-our-cli-tool.md)
