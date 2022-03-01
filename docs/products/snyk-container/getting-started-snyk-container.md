@@ -10,7 +10,7 @@ This process uses the Snyk app UI. For details of Snyk Container using the Snyk 
 
 Ensure you have:
 
-* Access to a relevant container registry to use with Snyk. Snyk supports multiple registries - see See [image-scanning-library](image-scanning-library/ "mention") for details.
+* Access to a relevant container registry to use with Snyk. Snyk supports multiple registries--see [image-scanning-library](image-scanning-library/ "mention") for details.
 * A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [getting-started](../../getting-started/ "mention").
 
 ### Stage 1: Add container registry integration
