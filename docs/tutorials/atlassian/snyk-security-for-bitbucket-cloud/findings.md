@@ -16,5 +16,5 @@ Similarly, for any **Dockerfile** in your repository, you will obtain insights i
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-sec-19.png)
 
-To learn more about Snyk's integration with Bitbucket Cloud please be sure to read our [documentation page](https://support.snyk.io/hc/en-us/articles/360004032097-Bitbucket-Cloud-integration).
+To learn more about Snyk's integration with Bitbucket Cloud be sure to read our [documentation page](https://support.snyk.io/hc/en-us/articles/360004032097-Bitbucket-Cloud-integration).
 

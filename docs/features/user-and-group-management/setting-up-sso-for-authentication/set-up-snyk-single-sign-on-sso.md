@@ -31,7 +31,7 @@ Each type of SSO connection requires different details for establishing the trus
 
 To establish trust with Snyk, add an Entity ID, an ACS URL, and a Signing certificate in your identity provider.
 
-* The **Entity ID** is the URL that uniquely identifies Snyk as a SAML entity or service provider--please note, **default Entity ID must be checked** manually as no default is set for this.
+* The **Entity ID** is the URL that uniquely identifies Snyk as a SAML entity or service provider--note, **default Entity ID must be checked** manually as no default is set for this.
 * The **Assertion Consumer Service (ACS)** is the endpoint on the Snyk network that listens for requests from your identity provider to enable communication between users on your network and Snyk. This URL is sometimes called a Reply URL.
 * The **Signing certificate** is the Snyk certificate, stored on your server, that is needed to maintain the trust relationship. It contains the necessary encryption keys for authentication.
 

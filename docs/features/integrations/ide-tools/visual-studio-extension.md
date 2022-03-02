@@ -58,7 +58,7 @@ Or authenticate via Options. Open Visual Studio _Options_ and go to the _General
 
 Authentication can be triggered by pressing the “Authenticate” button. If for some reason the automated way doesn’t work or input user API token by hand.
 
-If, however, the automated authentication doesn’t work for some reason, please reach out to us. We would be happy to investigate!
+If, however, the automated authentication doesn’t work for some reason, reach out to us. We would be happy to investigate!
 
 ![](../../../.gitbook/assets/readme\_image\_2\_6.png)
 
@@ -68,13 +68,13 @@ You will be taken to the website to verify your identity and connect to the IDE 
 
 ![](../../../.gitbook/assets/install-6.png)
 
-Once the authentication has been confirmed, please feel free to close the browser and go back to the IDE extension. The Token field should have been populated with the authentication token. With that, the authentication part should be done!
+Once the authentication has been confirmed, feel free to close the browser and go back to the IDE extension. The Token field should have been populated with the authentication token. With that, the authentication part should be done!
 
 ![](../../../.gitbook/assets/readme\_image\_2\_8.png)
 
 ### Run analysis
 
-* Thank you for installing Snyk’s Visual Studio Extension! By now it should be fully installed. If you have any questions or you feel something is not as it should be, please don’t hesitate to reach out to us.
+* Thank you for installing Snyk’s Visual Studio Extension! By now it should be fully installed. If you have any questions or you feel something is not as it should be, don’t hesitate to reach out to us.
 * Let’s now see how to use the extension (continues on the next page).
 
 Open your solution and run Snyk scan. Depending on the size of your solution, time to build a dependency graph, it might take from less than a minute to a couple of minutes to get the vulnerabilities.

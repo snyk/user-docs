@@ -32,7 +32,7 @@ The connection status is also displayed directly on the Heroku integration setti
 
 ![](../../../.gitbook/assets/uuid-36c5692a-e30e-973d-2ad4-548e38b9af93-en.png)
 
-If you are unable to connect, please re-enter your account credentials to verify that they are correct.
+If you are unable to connect, re-enter your account credentials to verify that they are correct.
 
 ![](../../../.gitbook/assets/uuid-f49dfc90-5951-c28f-3efb-32709c051b56-en.png)
 

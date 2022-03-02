@@ -77,7 +77,7 @@ The following lists the **available scopes**.
 #### Generally Available
 
 {% hint style="warning" %}
-As we move towards more granular scopes, we are now allowing Snyk Apps to be created with more granular scopes. This is to promote the principle of least privilege. The [following list of scopes](../snyk-apps-scopes.md) is available behind a feature flag (`appsGranularPermissions`). Being behind a feature flag means they are still in active development. If you would like to test them out as they give a look into how Snyk Apps scopes will look in the future, please contact our [support team](https://snyk.io/contact-us/).
+As we move towards more granular scopes, we are now allowing Snyk Apps to be created with more granular scopes. This is to promote the principle of least privilege. The [following list of scopes](../snyk-apps-scopes.md) is available behind a feature flag (`appsGranularPermissions`). Being behind a feature flag means they are still in active development. If you would like to test them out as they give a look into how Snyk Apps scopes will look in the future, contact our [support team](https://snyk.io/contact-us/).
 {% endhint %}
 
 {% hint style="info" %}

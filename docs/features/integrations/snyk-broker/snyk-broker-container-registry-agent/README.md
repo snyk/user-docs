@@ -65,7 +65,7 @@ If such a requirement is not relevant for you, you do not need the architecture 
 {% hint style="info" %}
 **Scaling to adjust scan capacity**
 
-With the above configuration of 1 vCPU and 2GB RAM, scanning capacity would be approximately 160 images of \~350MB in one go. You can scale this up based on your image sizes, and in case you have a specific use case that doesn't allow scaling and doesn't fit the limitations, please contact our support team.
+With the above configuration of 1 vCPU and 2GB RAM, scanning capacity would be approximately 160 images of \~350MB in one go. You can scale this up based on your image sizes, and in case you have a specific use case that doesn't allow scaling and doesn't fit the limitations, contact our support team.
 {% endhint %}
 
 ## **Set up the remote connection**

@@ -1,6 +1,6 @@
 # Deploy Snyk
 
-You can scan Kubernetes workloads by deploying the `snyk-monitor` into your cluster. This is published as an official [helm chart](https://artifacthub.io/packages/helm/snyk/snyk-monitor) and we will be basing these steps on that deployment option. To learn more about Snyk's Kubernetes integration, please visit our [documentation pages](https://docs.snyk.io/products/snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning/kubernetes-integration-overview). For convenience, we will cover the steps at a high level here.&#x20;
+You can scan Kubernetes workloads by deploying the `snyk-monitor` into your cluster. This is published as an official [helm chart](https://artifacthub.io/packages/helm/snyk/snyk-monitor) and we will be basing these steps on that deployment option. To learn more about Snyk's Kubernetes integration, visit our [documentation pages](https://docs.snyk.io/products/snyk-container/image-scanning-library/kubernetes-workload-and-image-scanning/kubernetes-integration-overview). For convenience, we will cover the steps at a high level here.&#x20;
 
 #### Step 1
 

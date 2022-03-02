@@ -3,7 +3,7 @@
 {% embed url="https://youtu.be/K2PVsCivTMU" caption="" %}
 
 {% hint style="info" %}
-We will provide step-by-step instruction to help you get started quickly. For in depth product documentation, please visit the following Dynatrace Documentation pages:  
+We will provide step-by-step instruction to help you get started quickly. For in depth product documentation, visit the following Dynatrace Documentation pages:  
 1. [Set up Dynatrace on Kubernetes](https://www.dynatrace.com/support/help/setup-and-configuration/setup-on-container-platforms/kubernetes/)  
 2. [Dynatrace ActiveGate](https://www.dynatrace.com/support/help/setup-and-configuration/dynatrace-activegate/)  
 3. [Dynatrace OneAgent](https://www.dynatrace.com/support/help/setup-and-configuration/dynatrace-oneagent/)

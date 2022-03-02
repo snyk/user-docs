@@ -10,7 +10,7 @@ Snyk supports the following workflows to help developers remediate their vulnera
 2. Snyk users use the _**Open a fix PR**_ feature in the Snyk UI.
 3. Snyk users use the _**fix this vulnerability**_ feature on a specific issue card in the Snyk UI.
 
-For more details on remediation using Snyk, please see the [Snyk documentation](https://support.snyk.io/hc/en-us/articles/360006113798-Remediate-your-vulnerabilities).
+For more details on remediation using Snyk, see the [Snyk documentation](https://support.snyk.io/hc/en-us/articles/360006113798-Remediate-your-vulnerabilities).
 
 {% hint style="info" %}
 In this workshop, we will perform the **fix this vulnerability** option.

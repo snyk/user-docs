@@ -10,7 +10,7 @@ I want to thank you for your time and completing the exercises in this workshop.
 
 ## Additional Resources
 
-Additional DevSecOps resources are available on Snyk's [DevSecOps Hub](https://snyk.io/series/devsecops/). The open-source security foundation under the Linux Foundation. For more details, please visit [https://openssf.org/](https://openssf.org).
+Additional DevSecOps resources are available on Snyk's [DevSecOps Hub](https://snyk.io/series/devsecops/). The open-source security foundation under the Linux Foundation. For more details, visit [https://openssf.org/](https://openssf.org).
 
 ## Next Steps
 

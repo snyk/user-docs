@@ -72,7 +72,7 @@ You can also check the status directly on the Azure Functions integration settin
 
 ![](<../../../.gitbook/assets/image (31).png>)
 
-If you are unable to connect, please re-enter your account credentials to verify that they are correct:
+If you are unable to connect, re-enter your account credentials to verify that they are correct:
 
 ![](<../../../.gitbook/assets/image (27).png>)
 

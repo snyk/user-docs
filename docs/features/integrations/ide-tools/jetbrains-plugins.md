@@ -69,7 +69,7 @@ Setting these variables only in a shell environment (for example, using `~/.bash
 
 ### Proxy
 
-If you need to use a proxy server to connect to the internet, please configure it using the [Jetbrains IDE settings](https://www.jetbrains.com/help/idea/settings-http-proxy.html). The Snyk plugin will use them.
+If you need to use a proxy server to connect to the internet, configure it using the [Jetbrains IDE settings](https://www.jetbrains.com/help/idea/settings-http-proxy.html). The Snyk plugin will use them.
 
 ## Authentication
 
@@ -165,7 +165,7 @@ The colorful comparison table (from above) with various severity levels (critica
 * For each image we've found, we perform a test with our CLI.&#x20;
   * Click [here](https://docs.snyk.io/products/snyk-container/snyk-cli-for-container-security#testing-an-image) if you want to learn more about how Snyk Container performs a test on the image.&#x20;
   * During testing the image the CLI will download the image if it is not already available locally in your Docker daemon.
-* We will be expanding the scope of Container scanning, so if there are more files (like Dockerfiles) or workflows that you want to be supported, please submit a feature request [here](https://support.snyk.io/hc/en-us/requests/new).
+* We will be expanding the scope of Container scanning, so if there are more files (like Dockerfiles) or workflows that you want to be supported, submit a feature request [here](https://support.snyk.io/hc/en-us/requests/new).
 
 ## Filter results
 

@@ -73,7 +73,7 @@ This section describes the unique CLI options available when working with NuGet 
 
 To use Paket a **paket.lock** file is required in combination with a **paket.dependencies** file. Run `snyk test`
 
-Other support includes: **project.json** (no longer recommended, please refer to [Microsoft documentation](https://docs.microsoft.com/en-us/nuget/archive/project-json))
+Other support includes: **project.json** (no longer recommended, refer to [Microsoft documentation](https://docs.microsoft.com/en-us/nuget/archive/project-json))
 
 In order to build the dependency tree, Snyk analyzes the **paket.dependencies** and **paket.lock** files.
 
@@ -119,7 +119,7 @@ From the Snyk UI, you can configure whether Snyk should scan your entire project
 
 ## Fixing vulnerabilities
 
-For a general understanding of how Snyk helps you fix Open Source vulnerabilities within your projects, please visit the following document [Fix your vulnerabilities](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities).
+For a general understanding of how Snyk helps you fix Open Source vulnerabilities within your projects, visit the following document [Fix your vulnerabilities](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities).
 
 {% hint style="info" %}
 Please note the Fix PR feature is _only_ available across our [SCM](https://docs.snyk.io/getting-started/scm-git-and-ci-cd-integration-deployment-intro) integrations.
@@ -140,7 +140,7 @@ We resolve dependencies differently in the Snyk CLI, and the Source Code Managem
 
     **Note**: runtime dependencies (provided by the runtime environment also known as "meta-packages") are resolved more accurately in the CLI if the host machine uses a similar runtime SDK to the server running the app.
 
-For further reading on .NET automated fixes, please visit our [blog](https://snyk.io/blog/automated-vulnerability-fixes-dot-net-dependencies).
+For further reading on .NET automated fixes, visit our [blog](https://snyk.io/blog/automated-vulnerability-fixes-dot-net-dependencies).
 
 #### Build-time vs Runtime dependencies
 

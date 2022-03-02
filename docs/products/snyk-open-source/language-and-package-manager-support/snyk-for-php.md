@@ -84,7 +84,7 @@ The following error messages may appear for you when working with your PHP proje
 
 ## Support
 
-If you run across any of these, or other issues, please send the following files to us at [support@snyk.io](mailto:support@snyk.io) and we'll help you out:
+If you run across any of these, or other issues, send the following files to us at [support@snyk.io](mailto:support@snyk.io) and we'll help you out:
 
 * `composer.json`
 * `composer.lock`

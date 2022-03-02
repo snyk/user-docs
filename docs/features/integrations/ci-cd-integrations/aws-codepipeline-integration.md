@@ -115,7 +115,7 @@ The following options are available for configuration:
     * **When test passes**: The project snapshot is created only when test is successful.
     * **Never monitor**: The project snapshot is never created.
 
-    Unless the _**Never monitor**_ option is selected, please note that the _**Project to monitor**_ field is mandatory. This is to prevent any unintentional project overrides due to naming conflicts. The report is created associated with the selected _**Snyk organization**_.
+    Unless the _**Never monitor**_ option is selected, note that the _**Project to monitor**_ field is mandatory. This is to prevent any unintentional project overrides due to naming conflicts. The report is created associated with the selected _**Snyk organization**_.
 * **Project to monitor**: Project group name for your projects. This is the same as using [remote-repo-url](https://support.snyk.io/hc/en-us/articles/360000910677-Snyk-CLI-monitored-projects-are-created-with-IDs-in-the-project-name) when using the CLI. The field does not allow any spaces in the names. It’s mandatory except if the `Never monitor` has been chosen in the previous field.
 * **Auto-detect all projects in the working directory**: Check this checkbox to auto-detect all projects in the AWS CodePipeline. If not selected the plugin will test the first project is finds. Under the hood, it uses the `--all-projects` argument to detect all projects.
 * **Advanced Options** (all of them are optional):

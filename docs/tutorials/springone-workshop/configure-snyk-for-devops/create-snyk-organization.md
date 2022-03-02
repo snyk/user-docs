@@ -14,7 +14,7 @@ To create a new organization, choose the ‘Create’ link in the drop-down in t
 
 ### Configure preferred organization
 
-Snyk uses organizations to group project results and to generate reports. If you have multiple organizations, please configure your preferred Snyk organization to be springone-workshop for this workshop.
+Snyk uses organizations to group project results and to generate reports. If you have multiple organizations, configure your preferred Snyk organization to be springone-workshop for this workshop.
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/preferred_org.png)
 

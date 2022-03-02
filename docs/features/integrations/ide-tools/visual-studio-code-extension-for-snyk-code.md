@@ -42,7 +42,7 @@ Setting these variables only in a shell environment (for example,using `~/.bashr
 
 #### Proxy
 
-If you are behind a proxy, please configure it in the Visual Studio Code settings to be able to use the plugin.&#x20;
+If you are behind a proxy, configure it in the Visual Studio Code settings to be able to use the plugin.&#x20;
 
 ### Authentication
 

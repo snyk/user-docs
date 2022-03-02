@@ -2,7 +2,7 @@
 
 ## Authenticate the CLI
 
-For this lab, please use the instructions to **authenticate with your token** detailed below. **Authenticate with your account** via a browser is provided as an alternative.
+For this lab, use the instructions to **authenticate with your token** detailed below. **Authenticate with your account** via a browser is provided as an alternative.
 
 ### Authenticate the CLI with your account
 

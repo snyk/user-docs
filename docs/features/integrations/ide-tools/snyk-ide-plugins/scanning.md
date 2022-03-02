@@ -18,7 +18,7 @@ Missing node_modules folder: we can't test without dependencies.
 Please run 'npm install' first.
 ```
 
-For successful runs, you will see a long json file similar to below. To make sense of the data that is returned please see the **Data Mapping** section of this guide.
+For successful runs, you will see a long json file similar to below. To make sense of the data that is returned see the **Data Mapping** section of this guide.
 
 ```javascript
 {
