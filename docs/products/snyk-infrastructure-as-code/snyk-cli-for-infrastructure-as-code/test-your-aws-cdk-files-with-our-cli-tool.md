@@ -1,26 +1,21 @@
-# Test your AWS CDK files with our CLI tool
+# Test your AWS CDK files with Snyk CLI
 
-## Test your AWS CDK files with our CLI tool
+With Snyk Infrastructure as Code, you can test your configuration files with the CLI. You can scan the [Amazon Cloud Development Kit (CDK)](https://aws.amazon.com/cdk/) with the Snyk CLI by generating a CloudFormation file using the CDK CLI.
 
-With Snyk Infrastructure as Code, you can test your configuration files directly from the CLI.
+Follow these steps to scan a CDK:
 
-If you are using [Amazons Cloud Development Kit \("CDK"\)](https://aws.amazon.com/cdk/) you scan this using our CLI by generating a CloudFormation file using the CDK CLI.
+**Navigate** to the directory that contains the application stack for which you want to generate the CloudFormation file.
 
-## Scan a CDK application:
+**Generate** the CloudFormation file:
 
-First, navigate to the directory that contains your application stack that you want to generate the CloudFormation for
-
-Next, generate the CloudFormation file
-
-```text
+```
 cdk synth
 ```
 
-This will be printed to your terminal as YAML output and a JSON file will be created in the **cdk.out** directory
+This is printed to your terminal as YAML output and a JSON file is created in the `cdk.out` directory
 
-Scan the created json file using the Snyk IaC CLI, replacing with the name of your application that you want to scan.
+**Scan** the JSON file using the Snyk IaC CLI, replacing `cdk.out/.json` with the name of the application that you want to scan.
 
-```text
+```
 snyk iac test cdk.out/.json
 ```
-
