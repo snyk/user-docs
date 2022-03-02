@@ -1,9 +1,13 @@
 # Snyk checks on pull requests
 
-By default, Snyk scans every pull request submitted on your monitored repositories, displaying the results and recommendations grouped together in a single security check and a single license check, regardless of the number of manifest files in the repository.
+By default, Snyk scans every pull request submitted to your monitored repositories, displaying the results and recommendations grouped together in a single security check and a single license check, regardless of the number of manifest files in the repository.
 
 {% hint style="info" %}
 Administrators and account owners manage settings for Snyk PR tests from our app on both the organization and the project levels, configuring whether the feature is on (enabled by default) and under what conditions Snyk should fail your PR checks.
+{% endhint %}
+
+{% hint style="warning" %}
+Currently, Snyk checks on pull requests is not compatible with **Dockerfile.**
 {% endhint %}
 
 ## Viewing check details
