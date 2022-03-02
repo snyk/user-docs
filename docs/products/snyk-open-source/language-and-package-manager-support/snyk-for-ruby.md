@@ -4,7 +4,7 @@ Snyk supports testing, monitoring and fixing Ruby projects in the CLI and Git in
 
 Snyk tests all Bundler groups, and currently it is not possible to exclude certain groups \(such as test or development groups\).
 
-If your Gemfile needs access to private Gem sources please [see below.](snyk-for-ruby.md)
+If your Gemfile needs access to private Gem sources [see below.](snyk-for-ruby.md)
 
 The following manifest files are supported:
 

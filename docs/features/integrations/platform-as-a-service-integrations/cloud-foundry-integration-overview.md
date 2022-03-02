@@ -45,7 +45,7 @@ The connection status is also displayed directly on the Cloud Foundry integratio
 
 ![](../../../.gitbook/assets/uuid-f1a60a5d-1aa6-4983-956f-1e4fcecb9892-en.png)
 
-If you are unable to connect, please re-enter your account credentials to verify that they are correct.
+If you are unable to connect, re-enter your account credentials to verify that they are correct.
 
 ![](../../../.gitbook/assets/uuid-d78f594d-75a9-3cf3-2685-c96c63596ea0-en.png)
 

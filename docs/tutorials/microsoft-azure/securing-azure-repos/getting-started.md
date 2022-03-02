@@ -22,7 +22,7 @@ You should see a confirmation message indicating these were installed successful
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/azure_devops_01.png)
 
-For more detailed instructions, please refer to the [Sign up, sign in to Azure DevOps Quickstart](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops). The organization should be in the format `https://dev.azure.com/MyOrganizationName` Now, let's sign in on the terminal by running `az login` from the terminal and configure the CLI with our `organization` value by running the following command:
+For more detailed instructions, refer to the [Sign up, sign in to Azure DevOps Quickstart](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops). The organization should be in the format `https://dev.azure.com/MyOrganizationName` Now, let's sign in on the terminal by running `az login` from the terminal and configure the CLI with our `organization` value by running the following command:
 
 ```bash
 az devops configure --defaults organization=https://dev.azure.com/MyOrganizationName/

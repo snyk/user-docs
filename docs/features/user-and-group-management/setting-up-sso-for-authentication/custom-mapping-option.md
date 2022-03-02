@@ -1,6 +1,6 @@
 # Custom Mapping Option
 
-This option allows you to dynamically assign users to your Snyk group(s) and organizations based on data provided by your Identity Provider (IdP) to implement a scaled user provisioning and access model. To understand more about roles and permissions within Snyk, please refer to [this](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/managing-permissions) article. Work with your Customer Success Manager to implement this option.
+This option allows you to dynamically assign users to your Snyk group(s) and organizations based on data provided by your Identity Provider (IdP) to implement a scaled user provisioning and access model. To understand more about roles and permissions within Snyk, refer to [this](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/managing-permissions) article. Work with your Customer Success Manager to implement this option.
 
 ### Requirements
 
@@ -18,7 +18,7 @@ To configure this option, we expect you to send the `roles` array within the SAM
 **1. {prefix}-groupadmin**
 
 * This role mapping will assign users with the Group Admin and Org Admin roles
-* **prefix** is present on every role mapping. It is an identifier that allows Snyk to identify which `roles` array values to process. By default, we expect this value to be **snyk**. If another value is required, please work with your Customer Success Manager.
+* **prefix** is present on every role mapping. It is an identifier that allows Snyk to identify which `roles` array values to process. By default, we expect this value to be **snyk**. If another value is required, work with your Customer Success Manager.
   * Note: **prefix** must be fully lowercase
 * **groupadmin** will configure all users with this role as a Group Admin and Org Admin for all group(s) that the user is assigned to and all orgs that fall under the group(s)
 

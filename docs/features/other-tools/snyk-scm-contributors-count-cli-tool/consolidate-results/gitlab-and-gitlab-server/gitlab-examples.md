@@ -13,7 +13,7 @@ Available options:
   --url                     [Optional] Your Gitlab host custom URL. If no host was provided
                             it will default to https://gitlab.com/
   --groups                  [Optional] Your Gitlab groups names to count contributors for 
-                            *note* for sub-level groups, please provide the lowest level group name                                             
+                            *note* for sub-level groups, provide the lowest level group name                                             
   --project                 [Optional] Your Gitlab project path with namespaces to count contributors for
   --exclusionFilePath       [Optional] Exclusion list filepath
   --json                    [Optional] JSON output, requiered when using the "consolidateResults" command
@@ -25,7 +25,7 @@ Available options:
 ### Before running the command:
 
 1. Export SNYK\_TOKEN (if you want to get the contributors ONLY for projects that are already monitored by Snyk) =>
-   * Make sure that your token has Group level access or use a service account's token that has Group level acces, to learn more on how to create a service account, please refer to this [guide](https://docs.snyk.io/features/integrations/managing-integrations/service-accounts#how-to-set-up-a-service-account)
+   * Make sure that your token has Group level access or use a service account's token that has Group level acces, to learn more on how to create a service account, refer to this [guide](https://docs.snyk.io/features/integrations/managing-integrations/service-accounts#how-to-set-up-a-service-account)
    * Copy the token value
    *   Export the token in your environment:
 

@@ -22,5 +22,5 @@ A detailed findings report is available to you within the AWS CodePipeline conso
 
 That's it! You've enabled Snyk's integration to AWS CodePipeline and are ready to take the first step to improve your security posture!
 
-To learn more about Snyk and our [partnership with AWS](https://snyk.io/partners/aws/), please visit our partner page.
+To learn more about Snyk and our [partnership with AWS](https://snyk.io/partners/aws/), visit our partner page.
 

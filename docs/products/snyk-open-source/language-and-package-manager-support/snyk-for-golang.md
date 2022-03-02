@@ -85,7 +85,7 @@ Projects imported via the new [Snyk Broker](https://docs.snyk.io/integrations/sn
 
 To add support to existing clients created before Dec 30th 2020, you should add `go.mod` and `go.sum` to your `accept.json` file, as per the changes in this [pull request](https://github.com/snyk/broker/pull/299/files).
 
-If you are using private Go Modules (repositories) integrated via the broker, please note that we require each private module to have a `go.mod` file defined.
+If you are using private Go Modules (repositories) integrated via the broker, note that we require each private module to have a `go.mod` file defined.
 
 **Dep**
 

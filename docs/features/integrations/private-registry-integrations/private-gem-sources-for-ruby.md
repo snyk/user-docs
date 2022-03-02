@@ -4,7 +4,7 @@
 
 {% hint style="info" %}
 **Note**\
-This functionality is currently behind a feature flag, please [contact our Support team](https://support.snyk.io/hc/en-us/requests/new) to have it enabled for your organization.
+This functionality is currently behind a feature flag, [contact our Support team](https://support.snyk.io/hc/en-us/requests/new) to have it enabled for your organization.
 {% endhint %}
 
 You can add configuration to tell Snyk where your private gems are hosted. This is the same information you would normally add as a Bundler environment variable

@@ -1,6 +1,6 @@
 # Data Model
 
-This section provides references to the Snyk data model and the most popular fields. For a complete reference to the Snyk API data fields please see the [Snyk API documentation](https://snyk.docs.apiary.io/#)
+This section provides references to the Snyk data model and the most popular fields. For a complete reference to the Snyk API data fields see the [Snyk API documentation](https://snyk.docs.apiary.io/#)
 
 ## Snyk Data Model
 

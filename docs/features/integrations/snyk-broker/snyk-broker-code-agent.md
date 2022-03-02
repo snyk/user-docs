@@ -10,7 +10,7 @@ You can natively connect Snyk Code to your local git server. This allows custome
 
 * **Broker server**: Running on Snyk SaaS backend
 * **Broker client**: A [Docker image](https://hub.docker.com/r/snyk/broker/) deployed in your infrastructure.
-* **Code agent**: Another [Docker image](https://hub.docker.com/r/snyk/code-agent/) that is deployed in your infrastructure. **Note:** Code agent is only supported with [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker) v4.108.0 and later versions. If you have a running Broker client, please pull the latest update.
+* **Code agent**: Another [Docker image](https://hub.docker.com/r/snyk/code-agent/) that is deployed in your infrastructure. **Note:** Code agent is only supported with [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker) v4.108.0 and later versions. If you have a running Broker client, pull the latest update.
 
 The **Broker client** and **code agent** components are deployed in your infrastructure, creating two separate services, responsible for cloning local repositories in a secured manner and sending the allied information to Snyk.
 
@@ -24,7 +24,7 @@ See [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker/broker-introduct
 
 ### Prerequisites
 
-Before you begin with the setup process, please make sure to have a server that supports these minimal requirements for running the Broker client and Code agent:
+Before you begin with the setup process, make sure to have a server that supports these minimal requirements for running the Broker client and Code agent:
 
 * CPU: 1 vcpu
 * Memory: 2Gb (should be reflected in node memory setting)
@@ -35,7 +35,7 @@ Before you begin with the setup process, please make sure to have a server that 
 
 Code agent depends on broker client. Follow the instructions on [How to install and configure your Snyk Broker client](set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) for detailed instructions how to set up broker for specific SCMs.
 
-If you already have a broker client running, please consider the following additional requirements:
+If you already have a broker client running, consider the following additional requirements:
 
 * Code agent is only supported with [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker) v4.108.0 and later versions, make sure to pull the latest version first.
 * Code agent needs permission to clone the full repository, make sure that the SCM token passed to the broker has the corresponding permissions.

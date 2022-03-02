@@ -43,5 +43,5 @@ You should also see output similar to the following in your terminal:
 ]
 ```
 
-If you encounter a problem, please review the [Install Azure CLI on macOS](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest) documentation pages for additional guidance.
+If you encounter a problem, review the [Install Azure CLI on macOS](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest) documentation pages for additional guidance.
 

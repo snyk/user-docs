@@ -63,11 +63,11 @@ Before you can push your Docker images to Amazon ECR, you must [create a reposit
 
 ## Additional lab resources
 
-The exercises contained in this workshop will include a combination of commands or code snippets that will be shared within the specific module pages as well as templates and source code available in a public Bitbucket repository. Once your Bitbucket Cloud account is setup, you will copy these resources into your account. To do so, please follow these steps:
+The exercises contained in this workshop will include a combination of commands or code snippets that will be shared within the specific module pages as well as templates and source code available in a public Bitbucket repository. Once your Bitbucket Cloud account is setup, you will copy these resources into your account. To do so, follow these steps:
 
 ### Step 1 - Fork the repository
 
-Click [here](https://bitbucket.org/snyk/patterns-library-atlassian-aws/fork) to fork the `upstream` repository into your Bitbucket account. For detailed instructions on how to [fork a respository](https://support.atlassian.com/bitbucket-cloud/docs/fork-a-repository/), please review Atlassian's documentation.
+Click [here](https://bitbucket.org/snyk/patterns-library-atlassian-aws/fork) to fork the `upstream` repository into your Bitbucket account. For detailed instructions on how to [fork a respository](https://support.atlassian.com/bitbucket-cloud/docs/fork-a-repository/), review Atlassian's documentation.
 
 ### Step 2 - Clone your fork locally
 

@@ -29,7 +29,7 @@ Project attributes are static and non-configurable fields which allow you to add
 * Hosted
 * Distributed
 
-The ability to assign and remove values from attributes, and filter projects by their values, is also available in the API. For more information, please read the [docs](https://snyk.docs.apiary.io/reference/projects/project-attributes).
+The ability to assign and remove values from attributes, and filter projects by their values, is also available in the API. For more information, read the [docs](https://snyk.docs.apiary.io/reference/projects/project-attributes).
 
 **Assigning values to attributes**
 

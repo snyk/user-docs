@@ -9,5 +9,5 @@ Snyk's own IDE plugins are all open source and you are welcome to use them as re
 
 ## Support/Contact <a id="6ac05ce6-c7ad-4802-92fd-fea169b32956"></a>
 
-For support and help, preferred is to reach out to Snyk on a shared slack channel if you have one established. Otherwise, please email `support@snyk.io` and your request will be routed to the appropriate person.
+For support and help, preferred is to reach out to Snyk on a shared slack channel if you have one established. Otherwise, email `support@snyk.io` and your request will be routed to the appropriate person.
 

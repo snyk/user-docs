@@ -7,7 +7,7 @@ Rules are written in Rego. When you are writing Rego, you do two things:
 1. Write **rules** that make policy decisions. A rule is a conditional assignment.
 2. organize rules into **policies**. A policy is a set of rules with a hierarchical name
 
-To learn more about the Policy Language, please visit the official [OPA Policy Language Documentation Page](https://www.openpolicyagent.org/docs/latest/policy-language/).
+To learn more about the Policy Language, visit the official [OPA Policy Language Documentation Page](https://www.openpolicyagent.org/docs/latest/policy-language/).
 
 {% hint style="info" %}
 You can also use the [OPA Playground](https://play.openpolicyagent.org) to try out Rego, or run examples of this guide.

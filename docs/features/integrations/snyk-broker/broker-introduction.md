@@ -58,7 +58,7 @@ The default approved list limits requests as follows:
 
 Because of the limitations of the default approved list, if you are interested in scanning Infrastructure as Code files with Broker, you will need to [add and configure an `accept.json`](broken-reference) file into your broker deployment.
 
-If you want to learn more about the approved data list and the `accept.json` file please see [Custom approved listing filter](set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md)
+If you want to learn more about the approved data list and the `accept.json` file see [Custom approved listing filter](set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md)
 
 ## **Supported integrations**
 

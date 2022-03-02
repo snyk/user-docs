@@ -291,4 +291,4 @@ There was an authentication error. Incorrect credentials provided.
     Please ensure access to the remote Registry and validate you have provided all the right parameters.
 ```
 
-If you have found a discrepancy that you cannot explain, please raise a support ticket.
+If you have found a discrepancy that you cannot explain, raise a support ticket.

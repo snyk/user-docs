@@ -33,7 +33,7 @@ The connection status is also displayed directly on the Pivotal Web Services int
 
 ![](../../../.gitbook/assets/uuid-442e2181-cac2-f74c-d50e-e4ebf0354b79-en.png)
 
-If you are unable to connect, please re-enter your account credentials to verify that they are correct.
+If you are unable to connect, re-enter your account credentials to verify that they are correct.
 
 ![](../../../.gitbook/assets/uuid-c7593b35-e315-e124-7a38-9c8c64ede382-en.png)
 
