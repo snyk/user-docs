@@ -22,7 +22,7 @@ If you click into the top-level Dockerfile link, you will a see a screen similar
 
 The summary line is replicated for the Dockerfile to maintain context.
 
-![](<../../../../.gitbook/assets/image (83) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (69).png>)
 
 This summary maintains context from the main page and you'll notice details such as the filename, total counts, and breakdown according to severity (Critical, High, Medium, Low). The reference project has hundreds of vulnerabilities, and Snyk presents the results in an order based on several factors that include the severity, if there are known exploits, and if there is a fix available. This ordered list helps your team focus on the vulnerabilities with the highest scores first.
 
@@ -50,6 +50,6 @@ Some of the details you see are shown in the next two images, and they include:
 
 ![](<../../../../.gitbook/assets/image (86) (1).png>)
 
-![](<../../../../.gitbook/assets/image (66).png>)
+![](<../../../../.gitbook/assets/image (89) (1).png>)
 
 In the next two sections, we'll create a Jira ticket and a pull request.

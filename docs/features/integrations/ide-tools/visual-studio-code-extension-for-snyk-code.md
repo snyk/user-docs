@@ -28,21 +28,21 @@ Snyk’s extension provides all the suggestions in a concise and clean view cont
 
 #### Environment
 
-To analyze projects, the plugin uses the Snyk CLI which needs some environment variables:&#x20;
+To analyze projects, the plugin uses the Snyk CLI which needs some environment variables:
 
 * `PATH`: the path to needed binaries, (for example, to maven).
-* `JAVA_HOME`: the path to the JDK you want to use to analyze Java dependencies&#x20;
+* `JAVA_HOME`: the path to the JDK you want to use to analyze Java dependencies
 
-Setting these variables only in a shell environment (for example,using `~/.bashrc`) is not sufficient, if you do not start the IDE from the command line or create a script file that starts the IDE using a shell environment.&#x20;
+Setting these variables only in a shell environment (for example,using `~/.bashrc`) is not sufficient, if you do not start the IDE from the command line or create a script file that starts the IDE using a shell environment.
 
-* On `Windows`, you can set the variables, using the GUI or on the command line using the `setx` tool.&#x20;
-* On `macOS`, the process `launchd` must know the environment variables if you want to launch the IDE from Finder directly. You can set environment variables for applications launched via Finder using the `launchctl setenv` command e.g. on start-up or via a script you launch at user login. \
-  **Note:** The provision of environment variables to the macOS UI can change between operating system releases, so it might be easier to create a small shell script that launches the IDE to leverage the shell environment, that can be defined via `~/.bashrc`.&#x20;
+* On `Windows`, you can set the variables, using the GUI or on the command line using the `setx` tool.
+* On `macOS`, the process `launchd` must know the environment variables if you want to launch the IDE from Finder directly. You can set environment variables for applications launched via Finder using the `launchctl setenv` command e.g. on start-up or via a script you launch at user login.\
+  **Note:** The provision of environment variables to the macOS UI can change between operating system releases, so it might be easier to create a small shell script that launches the IDE to leverage the shell environment, that can be defined via `~/.bashrc`.
 * On `Linux`, updating the file /etc/environment can be used to propagate the environment variables to the windows manager and UI.
 
 #### Proxy
 
-If you are behind a proxy, configure it in the Visual Studio Code settings to be able to use the plugin.&#x20;
+If you are behind a proxy, configure it in the Visual Studio Code settings to be able to use the plugin.
 
 ### Authentication
 
@@ -50,12 +50,12 @@ To authenticate follow the steps:
 
 1.  Once the extension is installed, click on the Snyk Icon in the left navigation bar:
 
-    ![](<../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1).png>)
+    ![](<../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1) (1).png>)
 2.  Click **Connect VS Code with Snyk**. The extension relies on the Snyk authentication API and it will ask you to authenticate you against Snyk’s web application:
 
     ![](<../../../.gitbook/assets/image (71) (1) (1) (1).png>)
-3. Click **Authenticate**.&#x20;
-4.  After successful authentication, you will see a confirmation message:&#x20;
+3. Click **Authenticate**.
+4.  After successful authentication, you will see a confirmation message:
 
     ![](<../../../.gitbook/assets/image (85) (1).png>)
 5. Close the browser window and return to VS Code. VS Code is now reading and saving the authentication on your local machine.
@@ -101,7 +101,7 @@ To manually perform the analysis, in the configuration of the extension, you can
 
 Snyk analysis shows a list of security vulnerabilities and code issues found in the application code. For more details and examples of how others fixed the issue, select a security vulnerability or a code security issue. Once selected you will see the Snyk suggestion information in a panel on the right side:
 
-![](<../../../.gitbook/assets/image (76) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (76) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ![](<../../../.gitbook/assets/image (62) (2) (1) (3).png>)
 
@@ -131,9 +131,9 @@ The editor window (in the middle of the results screen) shows the code that is i
 
 The Snyk Suggestion panel (on the right of the results screen) shows the argumentation of the Snyk engine using for example variable names of your code and the line numbers in red. You can also see:
 
-* Links to external resources to explain the bug pattern in more detail (the **More info** link).&#x20;
-* Tags that were assigned by Snyk, such as **Security** (the issue found is a security issue), **Database** (it is related to database interaction), or **In Test** (the issue is within the test code).&#x20;
-* Code from open source repositories that might be of help to see how others fixed the issue.&#x20;
+* Links to external resources to explain the bug pattern in more detail (the **More info** link).
+* Tags that were assigned by Snyk, such as **Security** (the issue found is a security issue), **Database** (it is related to database interaction), or **In Test** (the issue is within the test code).
+* Code from open source repositories that might be of help to see how others fixed the issue.
 * You can add ignore comments that would make Snyk ignore this particular suggestion, or all of these suggestions for the whole file, by using the two buttons on the lower end of the panel.
 
 We also include a feedback mechanism to report false positives so you others do not see the same issue.
@@ -146,7 +146,7 @@ Editor window shows security vulnerabilities in open source modules while you co
 
 ![](../../../.gitbook/assets/oss-editor-vulnerability-count.png)
 
-* Code inline vulnerability counts are also shown in your `package.json` file:&#x20;
+* Code inline vulnerability counts are also shown in your `package.json` file:
 
 ![](../../../.gitbook/assets/oss-editor-pjson.png)
 
@@ -169,7 +169,7 @@ You can navigate to the most severe vulnerability by triggering the provided cod
 
 #### Snyk Open Source vulnerability window
 
-![](<../../../.gitbook/assets/image (68) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (68) (1) (1) (1) (1) (1) (2).png>)
 
 OSS vulnerability tab shows information about the vulnerable module.
 

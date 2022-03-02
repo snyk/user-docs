@@ -65,7 +65,7 @@ Projects appear on the **Projects** menu on the Snyk dashboard, and on the [Snyk
 
 
 
-![](<../../.gitbook/assets/image (84).png>)
+![](<../../.gitbook/assets/image (78).png>)
 
 ## Targetfile
 

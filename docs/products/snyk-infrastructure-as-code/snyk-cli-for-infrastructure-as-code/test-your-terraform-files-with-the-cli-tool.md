@@ -1,6 +1,6 @@
 # Test your Terraform files with Snyk CLI
 
-With Snyk Infrastructure as Code, you can scan both your static configuration files and Terraform pan output using the CLI.
+With Snyk Infrastructure as Code, you can scan both your static configuration files and Terraform plan output using the CLI.
 
 |                                   | **Terraform configuration files** | **Terraform plan file**  |
 | --------------------------------- | --------------------------------- | ------------------------ |
