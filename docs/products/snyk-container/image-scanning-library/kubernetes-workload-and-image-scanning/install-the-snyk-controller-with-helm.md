@@ -45,52 +45,55 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
     ```
 
     **Note:** The secret must be called `snyk-monitor` in order for the integration to work.
-7. If any of the images you need to scan are located in private registries, you need to provide credentials to access those registries by creating a secret (which must be called snyk-monitor) using both the Snyk Integration ID as well as a `dockercfg.json` file. The `dockercfg.json` file is necessary to allow the monitor to look up images in private registries. Usually, your credentials reside in `$HOME/.docker/config.json`. These credential must also be added to the `dockerconfig.json` file.
-   1.  &#x20;Create a file named `dockercfg.json`. Store your credentials in there; it should look like this:
+7.  If any of the images you need to scan are located in private registries, you need to provide credentials to access those registries by creating a secret (which must be called snyk-monitor) using both the Snyk Integration ID as well as a `dockercfg.json` file. The `dockercfg.json` file is necessary to allow the monitor to look up images in private registries. Usually, your credentials reside in `$HOME/.docker/config.json`. These credential must also be added to the `dockerconfig.json` file.
 
-       ```
-       {
-         // If your cluster does not run on GKE or it runs on GKE and pulls images from other private registries, add the following:
-         "auths": {
-           "gcr.io": {
-             "auth": "BASE64-ENCODED-AUTH-DETAILS"
-           }
-           // Add other registries as necessary
-         },
-         
-         // If your cluster runs on GKE and you are using GCR, add the following:
-         "credHelpers": {
-           "us.gcr.io": "gcloud",
-           "asia.gcr.io": "gcloud",
-           "marketplace.gcr.io": "gcloud",
-           "gcr.io": "gcloud",
-           "eu.gcr.io": "gcloud",
-           "staging-k8s.gcr.io": "gcloud"
-         }
-         
-         // If your cluster runs on EKS and you are using ECR, add the following:
-         {
-           "credsStore": "ecr-login"
-         }
-         
-         With Docker 1.13.0 or greater, you can configure Docker to use different credential helpers for different registries.
-         To use this credential helper for a specific ECR registry, create a credHelpers section with the URI of your ECR registry:
-         {
-           "credHelpers": {
-             "public.ecr.aws": "ecr-login",
-       	"<aws_account_id>.dkr.ecr.<region>.amazonaws.com": "ecr-login"
-           }
-         }
-       }
-       ```
+    1.  Create a file named `dockercfg.json`. Store your credentials in there; it should look like this:
 
-       2\. Create a secret with the file added:
+        ```
+        {
+          // If your cluster does not run on GKE or it runs on GKE and pulls images from other private registries, add the following:
+          "auths": {
+            "gcr.io": {
+              "auth": "BASE64-ENCODED-AUTH-DETAILS"
+            }
+            // Add other registries as necessary
+          },
+          
+          // If your cluster runs on GKE and you are using GCR, add the following:
+          "credHelpers": {
+            "us.gcr.io": "gcloud",
+            "asia.gcr.io": "gcloud",
+            "marketplace.gcr.io": "gcloud",
+            "gcr.io": "gcloud",
+            "eu.gcr.io": "gcloud",
+            "staging-k8s.gcr.io": "gcloud"
+          }
+          
+          // If your cluster runs on EKS and you are using ECR, add the following:
+          {
+            "credsStore": "ecr-login"
+          }
+          
+          With Docker 1.13.0 or greater, you can configure Docker to use different credential helpers for different registries.
+          To use this credential helper for a specific ECR registry, create a credHelpers section with the URI of your ECR registry:
+          {
+            "credHelpers": {
+              "public.ecr.aws": "ecr-login",
+        	"<aws_account_id>.dkr.ecr.<region>.amazonaws.com": "ecr-login"
+            }
+          }
+        }
+        ```
 
-       ```
-       kubectl create secret generic snyk-monitor \
-               -n snyk-monitor --from-file=dockercfg.json \
-               --from-literal=integrationId=abcd1234-abcd-1234-abcd-1234abcd1234
-       ```
+        You can refer to Install the Snyk Controller on Amazon Elastic Kubernetes Service for more installation details.
+
+    2\. Create a secret with the file added:
+
+    ```
+    kubectl create secret generic snyk-monitor \
+            -n snyk-monitor --from-file=dockercfg.json \
+            --from-literal=integrationId=abcd1234-abcd-1234-abcd-1234abcd1234
+    ```
 8.  If your registry is using self-signed or other additional certificates you must make those available to Snyk monitor. First place the `.crt`, `.cert`, and/or `.key` files in a directory and create a ConfigMap:
 
     ```
@@ -216,11 +219,5 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
                  --set requests."ephemeral-storage"="50Gi"
                  --set limits."ephemeral-storage"="50Gi"
     ```
-
-
-
-
-
-
 
 ![](../../../../.gitbook/assets/uuid-26f9c2cd-2755-07d5-61a0-bdb0261d87ab-en.gif)

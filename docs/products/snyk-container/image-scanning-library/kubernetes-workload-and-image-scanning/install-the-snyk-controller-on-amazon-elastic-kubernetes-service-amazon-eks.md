@@ -22,6 +22,8 @@ There are three deployment options to match most common use cases. These are as 
 
 [![cloudformation-launch-stack.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](../../../../.gitbook/assets/cloudformation-launch-stack.png)](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/template?stackName=Amazon-EKS-with-Snyk\&templateURL=https://aws-quickstart.s3.us-east-1.amazonaws.com/quickstart-amazon-eks/templates/amazon-eks-master-existing-vpc.template.yaml)
 
+**NOTE:** _Please review the_ [_parameter reference_](https://github.com/aws-quickstart/quickstart-eks-snyk#parameter-reference) _prior to deployment._
+
 ## **Prerequisites**
 
 {% hint style="info" %}
@@ -40,24 +42,30 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
 
 ## Configure Snyk Controller to pull and scan private images from ECR
 
+Ensure your **dockerconfig.json** matches the example below:
+
+```
+{
+    "credsStore": "ecr-login"
+  }
+```
+
 ### Attach policies for worker nodes
 
 For all the options above, attach the **NodeInstanceRole** policy that can be found [here](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR\_on\_EKS.html) with the **AmazonEC2ContainerRegistryReadOnly** policy to your EKS worker nodes. The Snyk Controller should now be able to pull private images when running on those worker nodes.&#x20;
 
-## Create IAM role for Service Accounts
+Alternatively, you can also use the IAM role for Service Accounts by **creating EKS node role for your Node Group**, and configure the Snyk Controller as follows:
 
-Alternatively, you can also use the IAM role for Service Accounts with either **creating EKS role for your Node Group** or **creating an IAM OIDC provider for your cluster**, and configure the Snyk Controller as follows:
+### Create an EKS node role for your Node Group
 
-### Create an EKS role for your Node Group:&#x20;
-
-* Following the instruction [here](https://docs.aws.amazon.com/eks/latest/userguide/create-node-role.html), create a role for your node group. Make sure you have attached the policy **AmazonEC2ContainerRegistryReadOnly.**
-* Select the **Details** tab on your EKS node group page, where you should see **Node IAM Role ARN**, it should look something like&#x20;
+* Following the instruction [here](https://docs.aws.amazon.com/eks/latest/userguide/create-node-role.html), check your existing node role. Make sure you have attached the policy **AmazonEC2ContainerRegistryReadOnly.**
+* Select the **Details** tab on your EKS node group page, where you should see **Node IAM Role ARN.** It should look something like this:
 
 ```
 arn:aws:iam::<role-id>:role/<role-name>
 ```
 
-* Create a yaml file with the following content
+* Create a YAML file with the following content:
 
 ```
  volumes:
@@ -70,42 +78,12 @@ rbac:
       eks.amazonaws.com/role-arn: <Node IAM Role ARN>
 ```
 
-### Create an IAM OIDC provider for your cluster:&#x20;
+### Install Snyk Controller&#x20;
 
-* Create an IAM OIDC provider for your cluster following the instruction [here](https://docs.aws.amazon.com/eks/latest/userguide/enable-iam-roles-for-service-accounts.html)
-* Create an IAM role for a service account following the instruction [here](https://docs.aws.amazon.com/eks/latest/userguide/create-service-account-iam-policy-and-role.html), at the last step, make sure your trust policy **Condition** property looks like this:
-
-```
-"Condition": {
-                "StringEquals": {
-                    "oidc.eks.<region-code>.amazonaws.com/id/<unique-id>:sub": "system:serviceaccount:snyk-monitor:snyk-monitor"
-              
-                }
-            }
-```
-
-* &#x20;Make sure you have attached the policy **AmazonEC2ContainerRegistryReadOnly** with your newly created role, and copy the **ARN** from this role
-* Create a yaml file with the following content
-
-```
- volumes:
-  projected:
-    serviceAccountToken: true
-
-rbac:
-  serviceAccount:
-    annotations:
-      eks.amazonaws.com/role-arn: <ARN>
-```
-
-## Install Snyk Controller&#x20;
-
-After creating either IAM role for your service account, you can now install your Snyk Controller with this newly created yaml file to overwrite the values in the Helm chart.
+After creating the IAM role for your Service Account, you can now install your Snyk Controller with this newly created YAML file to overwrite the values in the Helm chart.
 
 ```
 helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
              --namespace snyk-monitor \
              -f <newFile>.yaml
 ```
-
-**NOTE:** _Please review the_ [_parameter reference_](https://github.com/aws-quickstart/quickstart-eks-snyk#parameter-reference) _prior to deployment._
