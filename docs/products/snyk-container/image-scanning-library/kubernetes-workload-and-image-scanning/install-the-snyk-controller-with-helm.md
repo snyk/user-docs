@@ -85,7 +85,7 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
         }
         ```
 
-        You can refer to Install the Snyk Controller on Amazon Elastic Kubernetes Service for more installation details.
+        You can refer to [Install the Snyk Controller on Amazon Elastic Kubernetes Service](install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md) for more installation details.
 
     2\. Create a secret with the file added:
 
