@@ -27,7 +27,7 @@ At any time after you’ve entered your Pivotal Web Services credentials, you ca
 
 The first is on your integration settings page, where you’ll see your current integrations listed as well as their connection status.
 
-![](<../../../.gitbook/assets/uuid-fb1cad51-f7f5-34ae-1142-f24fab0b0751-en (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (2) (1) (1) (1) (1) (9).png>)
+![](<../../../.gitbook/assets/uuid-fb1cad51-f7f5-34ae-1142-f24fab0b0751-en (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (2) (1) (1) (1) (1).png>)
 
 The connection status is also displayed directly on the Pivotal Web Services integration settings page (found by clicking “Edit settings” on the integration settings page shown above). If you’ve entered credentials, you’ll see a box indicating whether or not Snyk is able to correctly connect to Pivotal Web Services.
 
