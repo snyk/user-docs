@@ -8,7 +8,7 @@ To enable it from [Snyk Preview](../../../features/user-and-group-management/man
 1. Log into Snyk.
 2. Click the Settings icon to navigate to **Settings**.
 3. Click **Snyk Preview**.
-4. Enable the feature then click **Save changes**.
+4. Enable the feature, then click **Save changes**.
 {% endhint %}
 
 You can use Snyk to scan C / C++ projects.
@@ -29,12 +29,12 @@ Some features may not be available, depending on your subscription plan.
 Scans are powered by an open source database, periodically updated with the latest source code from different online sources.
 
 {% hint style="info" %}
-Currently, we use and link to the US [National Vulnerability Database](https://nvd.nist.gov) (NVD). In future, we plan to also integrate the [Snyk Vuln DB](https://security.snyk.io).
+To navigate through the vulnerabilities for C/C++, use the [Snyk Vuln DB](https://security.snyk.io).
 {% endhint %}
 
-When you run the `snyk unmanaged test` command, Snyk:
+When you run the `snyk test --unmanaged` command, Snyk:
 
-1. Converts all files down from your current folder into a list of hashes.
+1. Converts all files from your current folder into a list of hashes.
 2. Sends the hashes to Snyk scan server.
 3. Queries the database to find a list of potentially matching dependencies.
 4. Links the dependencies to the known vulnerabilities.
@@ -50,7 +50,7 @@ By default, archives are not scanned. However, Snyk CLI can recursively extract 
 
 To enable archive extraction, specify the depth of the extraction using the `--max-depth` parameter.
 
-The supported archives formats are:
+The supported archive formats are:
 
 * zip-like archives
 * tar
@@ -91,7 +91,7 @@ c-example
 ...
 ```
 
-Having a large percentage of files in their original (unchanged) form is critical to accurately identify the dependencies and so report the correct set of vulnerabilities. If you modify many of the files (or, for example, include only header files), this reduces the confidence of the scanning engine, leading to either dependencies not being identified, or being identified incorrectly (as a different version, or even a different package).
+Having a large percentage of files in their original (unchanged) form is critical to accurately identify dependencies and so report the correct set of vulnerabilities. If you modify many of the files (or, for example, include only header files), this reduces the confidence of the scanning engine, leading to either dependencies not being identified, or being identified incorrectly (as a different version, or even a different package).
 
 #### Data collection note
 
@@ -109,7 +109,7 @@ When you scan C++ projects, the following data is collected and may be stored fo
 C/C++ scanning is available in [Snyk CLI](../../../features/snyk-cli/). See [Install the CLI](../../../features/snyk-cli/install-the-snyk-cli/) for details.
 
 {% hint style="info" %}
-The minimum version of Snyk CLI with C/C++ scanning is 1.713.
+The minimum version of Snyk CLI with C/C++ scanning is 1.857.0.
 {% endhint %}
 
 #### Run the test
@@ -117,7 +117,7 @@ The minimum version of Snyk CLI with C/C++ scanning is 1.713.
 To test your project for vulnerabilities, run:
 
 ```
-$ snyk unmanaged test
+$ snyk test --unmanaged
 ```
 
 {% hint style="warning" %}
@@ -129,7 +129,7 @@ If you scan a Linux project on Windows, make sure the repository is cloned with 
 To display dependencies, use the `--print-deps` command:
 
 ```bash
-$ snyk unmanaged test --print-deps
+$ snyk test --unmanaged --print-deps
 
 Dependencies:
 
@@ -143,7 +143,7 @@ Dependencies:
 To learn what files contributed to each dependency being identified, use the `--print-dep-paths` argument:
 
 ```bash
-$ snyk unmanaged test --print-dep-paths
+$ snyk test --unmanaged --print-dep-paths
 
 Dependencies:
 
@@ -174,7 +174,7 @@ This confidence level shows how confident Snyk is about the actual identificatio
 To get a machine-readable output in JSON, use the `--json` argument:
 
 ```
-$ snyk unmanaged test --json
+$ snyk test --unmanaged --json
 [
   {
     "issues": [
@@ -263,15 +263,15 @@ $ snyk unmanaged test --json
 ]
 ```
 
-### Command line options
+### Command-line options
 
-The following `snyk`command line options are supported with `snyk unmanaged`:
+The following `snyk`command-line options are supported with the `snyk test/monitor --unmanaged` commands:
 
 #### ORG\_NAME
 
 `--org=ORG_NAME`
 
-Specify the ORG\_NAME to run Snyk commands tied to a specific organization. This defines where new projects are created after running the **monitor** command, some features have availability and private tests limits. If you have multiple organizations, you can set a default from the CLI using:
+Specify the ORG\_NAME to run Snyk commands tied to a specific organization. This defines where new projects are created after running the **monitor** command. Some features have availability and private testing limits. If you have multiple organizations, you can set a default from the CLI using:
 
 ```
 snyk config set org=ORG_NAME
@@ -302,7 +302,7 @@ This is useful to display the human-readable test output via **stdout** and at t
 Scan the path specified in the argument instead of the current directory.
 
 {% hint style="info" %}
-Alternatively, you can run just `snyk unmanaged test <directory>`
+Alternatively, you can run just `snyk test --unmanaged <directory>`
 {% endhint %}
 
 **max-depth**
@@ -313,10 +313,10 @@ Specify the maximum level of archive extraction. Use `0` to disable archive extr
 
 ### Import scan results in Snyk App
 
-To import the test results (issues and dependencies) in Snyk App, run the `snyk unmanaged monitor` command:
+To import the test results (issues and dependencies) in Snyk App; run the `snyk monitor --unmanaged` command:
 
 ```
-$ snyk unmanaged monitor
+$ snyk monitor --unmanaged
 Monitoring /c-example (c-example)...
 
 Explore this snapshot at https://app.snyk.io/org/example-org/project/8ac0e233-d0f9-403e-b422-5970e7a37443/history/5de4616d-3967-485f-bf21-bbbe91068029
@@ -324,31 +324,17 @@ Explore this snapshot at https://app.snyk.io/org/example-org/project/8ac0e233-d0
 Notifications about newly disclosed issues related to these dependencies will be emailed to you.
 ```
 
-This creates a snapshot of dependencies and vulnerabilities, and imports them in Snyk App, where you can review the issues and see them included in your reports.
+This creates a snapshot of dependencies and vulnerabilities, and imports them into the Snyk App, where you can review the issues and see them included in your reports.
 
 Importing a project with unmanaged dependencies creates a new project in Snyk App:
 
 ![Project with unmanaged dependencies](../../../.gitbook/assets/kuva.png)
 
-{% hint style="info" %}
-Automated regular testing and re-scanning from the Snyk App is not currently supported. To run a new scan and import its updated results, manually run the `snyk unmanaged monitor` command again.
-{% endhint %}
-
 ### Known issues
-
-**CLI crash when no dependencies are found**
-
-When no dependencies are identified, an error is displayed:
-
-```
-An unknown error occurred. Please run with `-d` and include full trace when reporting to Snyk
-```
-
-The exit code of this error is `3`.
 
 **Scanning on Windows**
 
-Many open source projects in git use Unix line endings. By default, git on Windows converts Unix line endings to Windows line endings and only converts them back for the actual commits. Our database contains source code signatures with the original line endings (as defined in the individual projects), so when you scan on Windows, the signatures generated for the files with Windows line endings are different than the signatures in our database. In such case, it is very likely no dependencies will be found.
+Many open source projects in git use Unix line endings. By default, git on Windows converts Unix line endings to Windows line endings and only converts them back for the actual commits. Our database contains source code signatures with the original line endings (as defined in the individual projects), so when you scan on Windows, the signatures generated for the files with Windows line endings are different than the signatures in our database. In that case, it is very likely no dependencies will be found.
 
 To scan a project with Unix line endings on Windows, disable git line endings conversion. To configure this globally, run:
 
