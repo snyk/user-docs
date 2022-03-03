@@ -4,7 +4,7 @@ Once you have imported your preferred Git repositories, Snyk monitors those repo
 
 Snyk currently supports this feature for npm, Yarn and Maven-Central projects through GitHub, GitHub Enterprise Server and BitBucket Cloud. For use with the Broker, your admin should first upgrade to v4.55.0 or later. See our docs for additional assistance when upgrading Broker.
 
-![](<../../../.gitbook/assets/image (8) (2) (4) (4) (4) (6) (3) (1) (1) (1) (1) (1) (12).png>)
+![](<../../../.gitbook/assets/image (8) (2) (4) (4) (4) (6) (3) (1) (1) (1) (12).png>)
 
 ## How it works
 
@@ -29,7 +29,7 @@ Once you have imported your preferred Git repositories, Snyk monitors those repo
 
 Snyk currently supports this feature for npm, Yarn and Maven-Central projects through GitHub, GitHub Enterprise Server and BitBucket Cloud. For use with the Broker, your admin should first upgrade to v4.55.0 or later. See our docs for additional assistance when upgrading Broker.
 
-![](<../../../.gitbook/assets/image (8) (2) (4) (4) (4) (6) (3) (1) (1) (1) (1) (1) (13).png>)
+![](<../../../.gitbook/assets/image (8) (2) (4) (4) (4) (6) (3) (1) (1) (1) (13).png>)
 
 ## Enable automatic dependency upgrade PRs for a specific project
 
