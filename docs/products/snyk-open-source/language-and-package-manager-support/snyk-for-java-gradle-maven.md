@@ -14,7 +14,7 @@ Some features might not be available, depending on your pricing plan. See [prici
 
 {% tabs %}
 {% tab title="Java" %}
-## Java
+### Java
 
 | Package managers / Features       | CLI support | Git support | License scanning | Fix PRs                                                                                                                         | Runtime monitoring |
 | --------------------------------- | ----------- | ----------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
@@ -23,7 +23,7 @@ Some features might not be available, depending on your pricing plan. See [prici
 {% endtab %}
 
 {% tab title="Kotlin" %}
-## Kotlin
+### Kotlin
 
 | Package managers / Features  | CLI support | Git support | License scanning | Fixing                                                                                                                          | Runtime monitoring |
 | ---------------------------- | ----------- | ----------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
