@@ -1,7 +1,5 @@
 # Broker introduction
 
-
-
 Snyk Broker is an open-source tool, that can act as a proxy between Snyk and special integrations including:
 
 * Your Source Code Management (SCM) system on-premise platforms, including [Snyk Code Support](../../../products/snyk-code/deployment-options/snyk-code-local-git-support.md).
@@ -39,8 +37,8 @@ All data, both in transit and at rest, is encrypted. Communication between the c
 
 Additionally, if there is a requirement to do code analysis in an SCM integration, or to connect to a private Container Registry, there are two additional components:
 
-* [**Snyk Broker Code Agent**](broken-reference): Enables Snyk Code analysis on SCMs integrated through Snyk Broker
-* [**Snyk Broker Container Registry Agent**](broken-reference): Enables connection to self-hosted/private container registries and analysis of container images
+* ****[**Snyk Broker Code Agent**](snyk-broker-code-agent.md): Enables Snyk Code analysis on SCMs integrated through Snyk Broker
+* [**Snyk Broker Container Registry Agent**](broken-reference/): Enables connection to self-hosted/private container registries and analysis of container images
 
 ## Using inbound and outbound connections
 
@@ -56,7 +54,7 @@ The default approved list limits requests as follows:
 * **Inbound:** Snyk.io is only allowed to fetch and view dependency manifest files and the Snyk policy file. No other source code is viewed, extracted, or modified. Additional files (.snyk files) may be checked in to support our patch mechanism and for any ignore instructions included in your vulnerability policy.
 * **Outbound:** Git repo webhooks are set when you configure your Broker setup, to enable automatic Snyk scans triggered when new pull requests or merge events are submitted by your developers. Webhook notifications are delivered to Snyk via the Broker client for only events relevant to Snyk actions (push to branch, pull request opened), and only when the event data also includes a dependency manifest file or a Snyk policy file.
 
-Because of the limitations of the default approved list, if you are interested in scanning Infrastructure as Code files with Broker, you will need to [add and configure an `accept.json`](broken-reference) file into your broker deployment.
+Because of the limitations of the default approved list, if you are interested in scanning Infrastructure as Code files with Broker, you will need to [add and configure an `accept.json`](broken-reference/) file into your broker deployment.
 
 If you want to learn more about the approved data list and the `accept.json` file see [Custom approved listing filter](set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md)
 
@@ -67,7 +65,7 @@ Snyk Broker currently integrates with these Git Repository systems:
 * [GitHub](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration) and [GitHub Enterprise](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-enterprise-integration) (Cloud and On-prem)
 * [GitLab](https://docs.snyk.io/integrations/git-repository-scm-integrations/gitlab-integration) (Cloud and On-prem)
 * [Bitbucket Server / Data Center](../git-repository-scm-integrations/bitbucket-data-center-server-integration.md) (On-prem)
-* [Azure Repos](https://docs.snyk.io/integrations/git-repository-scm-integrations/azure-repos-integration)&#x20;
+* [Azure Repos](https://docs.snyk.io/integrations/git-repository-scm-integrations/azure-repos-integration)
 
 These integrations require the [Code Agent](snyk-broker-code-agent.md) to support Snyk Code analysis.
 
@@ -83,7 +81,7 @@ To enable the full experience, Snyk Broker will need additional set-up:
 
 * For Snyk IaC it will require configuring the `accept.json` file [with additional parameters](snyk-broker-infrastructure-as-code-detection/) for the infrastructure as code templates
 * For Snyk Code, it will require the deployment of the [Snyk Broker Code Agent](snyk-broker-code-agent.md)
-* For Snyk Container image scanning it will require the deployment of [snyk-broker-container-registry-agent](snyk-broker-container-registry-agent/ "mention")
+* For Snyk Container image scanning, it will require the deployment of [snyk-broker-container-registry-agent](snyk-broker-container-registry-agent/ "mention")
 
 ## Common questions
 
