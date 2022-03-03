@@ -37,7 +37,7 @@ Code agent depends on broker client. Follow the instructions on [How to install 
 
 If you already have a broker client running, consider the following additional requirements:
 
-* Code agent is only supported with [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker) v4.108.0 and later versions, make sure to pull the latest version first.
+* Code agent is only supported with [Snyk Broker](./) v4.108.0 and later versions, make sure to pull the latest version first.
 * Code agent needs permission to clone the full repository, make sure that the SCM token passed to the broker has the corresponding permissions.
 
 ### Set up the network
@@ -69,7 +69,7 @@ docker pull snyk/code-agent
 
 The following environment variables are mandatory to configure the code agent:
 
-* **SNYK\_TOKEN -** your snyk token, as also used by the CLI, see [Authenticate the CLI with your account](../../snyk-cli/install-the-snyk-cli/authenticate-the-cli-with-your-account.md#authenticate-using-your-api-token) for additional details.
+* **SNYK\_TOKEN -** your snyk token, as also used by the CLI, see [Authenticate the CLI with your account](../../snyk-cli/authenticate-the-cli-with-your-account/) for additional details.
 * **PORT** - the local port, for which the code agent accepts connections, Default is 3000.
 
 To run the **code-agent:**
