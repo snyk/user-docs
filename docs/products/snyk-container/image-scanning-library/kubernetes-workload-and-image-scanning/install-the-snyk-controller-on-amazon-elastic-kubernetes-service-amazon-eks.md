@@ -54,7 +54,7 @@ Ensure your **dockerconfig.json** matches the example below:
 
 For all the options above, attach the **NodeInstanceRole** policy that can be found [here](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR\_on\_EKS.html) with the **AmazonEC2ContainerRegistryReadOnly** policy to your EKS worker nodes. The Snyk Controller should now be able to pull private images when running on those worker nodes.&#x20;
 
-Alternatively, you can also use the IAM role for Service Accounts by **creating EKS node role for your Node Group**, and configure the Snyk Controller as follows:
+Alternatively, you can also use the IAM role for Service Accounts by **creating an EKS node role for your Node Group** (no need to set up an extra OIDC service account role), and configure the Snyk Controller as follows:
 
 ### Create an EKS node role for your Node Group
 
