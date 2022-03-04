@@ -1,51 +1,28 @@
-# Test your Kubernetes files with our CLI tool
+# Test your Kubernetes files with Snyk CLI
 
-With Snyk Infrastructure as Code, you can test your configuration files directly from the CLI.
+With Snyk Infrastructure as Code, you can test your configuration files with the CLI. Snyk Infrastructure as Code for Kubernetes supports the following:
 
-Snyk Infrastructure as Code for Kubernetes supports:
+* Deployments, Pods, and Services
+* CronJobs, Jobs, StatefulSet, ReplicaSet, DaemonSet, and ReplicationController
 
-* Deployments, Pods and Services.
-* CronJobs, Jobs, StatefulSet, ReplicaSet, DaemonSet, and ReplicationController.
+Use the following Snyk CLI command to test for an issue on specified files:
 
-You can use the CLI as follows:
-
-## To test for an issue on specified files:
-
-```text
+```
 snyk iac test
 ```
 
-For example, from the CLI enter the following:
+For example, enter the following:
 
-```text
+```
 snyk iac test deploy.yaml
 ```
 
-You can also specify multiple files by appending the file names after each other, such as:
+You can also specify multiple files by appending the file names after each other, for example:
 
-```text
+```
 snyk iac test file-1.yaml file-2.yaml
 ```
 
-## To scan a Helm chart using the CLI
+For the steps to scan a Helm chart using the Snyk CLI see [Testing Helm charts with Snyk CLI](test-your-helm-charts-with-our-cli-tool.md).
 
-You scan a Helm chart by converting the template to a rendered Kuberenetes manifest file and then scanning this using the Snyk IaC CLI.
-
-```text
-helm template ./iac-helm > helm.yaml
-snyk iac test helm.yaml
-```
-
-change \`iac-helm\` for your Helm chart name.
-
-## To scan a Kustomize template using the CLI
-
-You scan a Kustomize template by building the Kuberenetes manifest file and then scanning this using the Snyk IaC CLI.
-
-```text
-kustomize build > kubernetes.yaml
-snyk iac test kubernetes.yaml
-```
-
-Depending on your kustomize templates, you may need to provide a name after the build argument.
-
+For the steps to scan a Kustomize template using the Snyk CLI see [Test your Kustomize files with Snyk CLI](test-your-kustomize-files-with-our-cli-tool.md).
