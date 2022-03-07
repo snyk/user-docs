@@ -1,6 +1,6 @@
 # IAC Sources usage
 
-**Supported IaC sources**[**​**](https://docs.driftctl.com/0.22.0/usage/cmd/scan-usage#supported-iac-sources)
+## **Supported IaC sources**[**​**](https://docs.driftctl.com/0.22.0/usage/cmd/scan-usage#supported-iac-sources)
 
 * Terraform state
 * Local: `--from=tfstate://terraform.tfstate`
@@ -17,9 +17,9 @@ $ terraform state pull > state.tfstate
 $ snyk iac describe --from=tfstate://state.tfstate
 ```
 
-**S3**[**​**](https://docs.driftctl.com/0.22.0/usage/cmd/scan-usage#s3)
+## **S3**[**​**](https://docs.driftctl.com/0.22.0/usage/cmd/scan-usage#s3)
 
-snyk iac describe needs read-only access so you could use the policy below to ensure minimal access to your state file.
+The `snyk iac describe` command needs read only access, so you can use the following policy to ensure minimal access to your state file.
 
 ```
 {
@@ -39,13 +39,13 @@ snyk iac describe needs read-only access so you could use the policy below to en
 }
 ```
 
-**HTTP + GitLab**[**​**](https://docs.driftctl.com/0.22.0/usage/cmd/scan-usage#http--gitlab)
+## **HTTP + GitLab**[**​**](https://docs.driftctl.com/0.22.0/usage/cmd/scan-usage#http--gitlab)
 
-The HTTP backend supports the GitLab managed Terraform State using their API.
+The HTTP backend supports the GitLab-managed Terraform state using their API.
 
-All you need is a GitLab repository that contains a Terraform state and an access token with the `read_api` scope.
+Ensure you have a GitLab repository that contains a Terraform state and an access token with the `read_api` scope.
 
-Here's what the command looks like:
+Use the following command:
 
 ```
 $ GITLAB_TOKEN=<access_token> \
@@ -54,11 +54,11 @@ snyk iac describe \
 --headers "Authorization=Bearer ${GITLAB_TOKEN}"
 ```
 
-You can find more information about the GitLab managed Terraform State on the [GitLab documentation website](https://docs.gitlab.com/ee/user/infrastructure/terraform\_state.html).
+You can find more information about the GitLab-managed Terraform state on the [GitLab docs site](https://docs.gitlab.com/ee/user/infrastructure/terraform\_state.html).
 
-**Azure blob storage**[**​**](https://docs.driftctl.com/0.22.0/usage/cmd/scan-usage#azure-blob-storage)
+## **Azure blob storage**[**​**](https://docs.driftctl.com/0.22.0/usage/cmd/scan-usage#azure-blob-storage)
 
-To be able to access state from azure blob storage, you have to define these two environment variables
+To access state from azure blob storage,  define the following environment variables:
 
 ```
 $ export AZURE_STORAGE_ACCOUNT=...
@@ -66,6 +66,6 @@ $ export AZURE_STORAGE_KEY=...
 $ snyk iac describe --from tfstate+azurerm://my-container/terraform.tfstate
 ```
 
-You can find theses values in your Azure console here:
+You can find theses values in your Azure console as shown in the following screenshot:
 
-![azure\_storage\_account\_key](https://docs.driftctl.com/assets/images/azure\_storage\_account\_keys-ccb38d8792616d4376050fc6b715a6ef.png)
+![Azure account access keys](https://docs.driftctl.com/assets/images/azure\_storage\_account\_keys-ccb38d8792616d4376050fc6b715a6ef.png)
