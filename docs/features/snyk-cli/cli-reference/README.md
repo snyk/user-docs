@@ -56,11 +56,11 @@ Modify the `.snyk` policy to ignore stated issues.
 
 ## New CLI commands
 
-### ``[`snyk fix`](../fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix.md)``
+### [`snyk fix`](../fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix.md)
 
 Apply the recommended updates for supported ecosystems automatically.
 
-### ``[`snyk apps`](https://docs.snyk.io/features/snyk-cli/create-a-snyk-app-using-the-snyk-cli)``
+### [`snyk apps`](https://docs.snyk.io/features/snyk-cli/create-a-snyk-app-using-the-snyk-cli)
 
 Create a Snyk App using the Snyk CLI.
 
