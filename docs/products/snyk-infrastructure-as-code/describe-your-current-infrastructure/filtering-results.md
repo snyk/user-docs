@@ -1,6 +1,6 @@
 # Filtering results
 
-The following information is based on these [filtering rules](https://docs.driftctl.com/next/usage/filtering/rules/).
+The following information is based on these [filtering rules](https://docs.driftctl.com/0.22.0/usage/filtering/rules).
 
 Filter rules can be used not only to **describe** resources, but also to **ignore** resources.
 
