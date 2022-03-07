@@ -6,7 +6,7 @@ To use `iac describe`, you need credentials to make authenticated requests to AW
 
 The `iac describe` command supports a [named profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html). By default, the CLI uses the settings found in the profile named `default`. You can override an individual setting by declaring the supported environment variables such as `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_PROFILE` and so on.
 
-If you are using an [IAM role](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html) as an authorization tool, which is considered a good practice, be aware that you can still use describe by defining a profile for the role in your `~/.aws/config` file.
+If you are using an [IAM role](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html) as an authorization tool, which is considered a good practice, be aware that you can still use `describe` by defining a profile for the role in your `~/.aws/config` file.
 
 ```
 [profile snykrole]
@@ -15,7 +15,7 @@ source_profile = user # profile to assume the role
 region = eu-west-3
 ```
 
-You can now use describe by overriding the profile setting.
+You can now use `describe` by overriding the profile setting.
 
 ```
 $ AWS_PROFILE=snykrole snyk iac describe
@@ -199,31 +199,29 @@ Once the stack is deployed, attach the following policy to your IAM User. This a
 }
 ```
 
-### Update the CloudFormation template
+There is **no automatic way to update the CloudFormation template** from the Snyk side because you launched this template from your AWS account. Therefore you must update the template to be on the most recent snyk role.
 
-There is no automatic way to update the CloudFormation template from the Snyk side because you launched this template from your AWS account. Therefore you must update the template to be on the most recent snyk role.
-
-#### Update the CloudFormation template using the AWS console
+### Update the CloudFormation template using the AWS console
 
 * In the [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation), from the list of stacks, select the **snyk stack**.
 * In the stack details pane, choose **Update**.
 * Select **Replace current template** and specify the Snyk **Amazon S3 URL** `https://`snyk`-cfn-templates.s3.eu-west-3.amazonaws.com/`snyk`-role.yml`; click **Next**
 * On the **Specify stack details** and the **Configure stack options** pages, click **Next**.
-* In the **Change set preview** section, check that AWS CloudFormation will indeed make changes
+* In the **Change set preview** section, check that AWS CloudFormation will indeed make changes.
 * Since the Snyk template contains one IAM resource, select **I acknowledge that this template may create IAM resources**.
 * To finish, click **Update stack**.
 
-#### Update the CloudFormation template using the AWS CLI
+### Update the CloudFormation template using the AWS CLI
 
 ```
 $ aws cloudformation update-stack --stack-name SNYK_STACK_NAME --template-url https://driftctl-cfn-templates.s3.eu-west-3.amazonaws.com/snyk-role.yml --capabilities CAPABILITY_NAMED_IAM
 ```
 
-### Least privileged policy[​](https://docs.driftctl.com/0.22.0/providers/aws/authentication#least-privileged-policy) <a href="#least-privileged-policy" id="least-privileged-policy"></a>
+## Least privileged policy[​](https://docs.driftctl.com/0.22.0/providers/aws/authentication#least-privileged-policy) <a href="#least-privileged-policy" id="least-privileged-policy"></a>
 
-describe needs access to your cloud provider account so that it can list resources on your behalf.
+The `iac describe` command needs access to your cloud provider account so that it can list resources on your behalf.
 
-As AWS documentation recommends, the below policy is granting only the permissions required.
+As the AWS documentation recommends, policy that follows grants only the permissions required.
 
 ```
 {
