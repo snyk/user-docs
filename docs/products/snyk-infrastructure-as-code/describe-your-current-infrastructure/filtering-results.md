@@ -1,24 +1,20 @@
 # Filtering results
 
-**INFO**
-
 Filter rules can be used not only to **describe** resources, but also to **ignore** resources.
 
-You can indeed use both inclusion and exclusion logics.
+You can use both inclusion and exclusion logic.
 
-**Filter rules** allow you to build complex expression to include and exclude a set of resources in your workflow. Powered by expression language [JMESPath](https://jmespath.org) you could build a complex include and exclude expression.
+**Filter rules** allow you to build complex expressions to include and exclude a set of resources in your workflow. You can build a complex include and exclude expression, powered by the expression language [JMESPath](https://jmespath.org).
 
-Filter are applied on a normalized struct which contains the following fields:
+Filters are applied on a normalized structure which contains the following fields:
 
-* **Type**: Type of the resource, e.g. `aws_s3_bucket`
-* **Id**: Id of the resource, e.g. `my-bucket-name`
-* **Attr**: Contains every resource attributes (check [terraform attributes reference](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3\_bucket#attributes-reference) for a full list of supported attributes of a bucket)
+* **Type**: Type of the resource, for example, `aws_s3_bucket`
+* **Id**: Id of the resource, for example, `my-bucket-name`
+* **Attr**: every resource attribute (see the [terraform attributes reference](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3\_bucket#attributes-reference) for a full list of supported attributes of a bucket)
 
-**CAUTION**
+**Note**: If you want to filter on `Attr,` enable deep mode to have access to the details of the resource.
 
-If you want to filter on `Attr` you should enable deep mode otherwise you will not have access to resource's details.
-
-#### Examples[​](https://docs.driftctl.com/0.22.0/usage/filtering/rules#examples) <a href="#examples" id="examples"></a>
+The following code shows examples of include and exclude commands.[​](https://docs.driftctl.com/0.22.0/usage/filtering/rules#examples)
 
 ```
 # Will include only S3 bucket in the search
