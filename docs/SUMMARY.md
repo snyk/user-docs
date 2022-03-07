@@ -58,6 +58,10 @@
     * [Policy](features/snyk-cli/commands/policy.md)
     * [Test](features/snyk-cli/commands/test.md)
     * [IAC](features/snyk-cli/commands/iac.md)
+    * [IAC](snyk-cli/commands/iac-1.md)
+    * [IAC Describe](snyk-cli/commands/iac-describe.md)
+    * [IAC Test](snyk-cli/commands/iac-test.md)
+    * [IAC Gen-driftignore](snyk-cli/commands/iac-gen-driftignore.md)
   * [Install the Snyk CLI](features/snyk-cli/install-the-snyk-cli/README.md)
   * [Authenticate the CLI with your account](features/snyk-cli/authenticate-the-cli-with-your-account/README.md)
   * [Configure the Snyk CLI](features/snyk-cli/configure-the-snyk-cli.md)
@@ -332,6 +336,15 @@
       * [Using a remote custom rules bundle](products/snyk-infrastructure-as-code/custom-rules/how-to-run-custom-rules-with-the-snyk-cli/using-a-remote-custom-rules-bundle.md)
     * [Integrating IaC custom rules within a pipeline](products/snyk-infrastructure-as-code/custom-rules/integrating-iac-custom-rules-within-a-pipeline.md)
     * [SDK Reference](products/snyk-infrastructure-as-code/custom-rules/sdk-reference.md)
+  * [Describe your current infrastructure](products/snyk-infrastructure-as-code/describe-your-current-infrastructure/README.md)
+    * [Configuring providers](products/snyk-infrastructure-as-code/describe-your-current-infrastructure/configuring-providers/README.md)
+      * [AWS](products/snyk-infrastructure-as-code/describe-your-current-infrastructure/configuring-providers/aws.md)
+      * [Google](products/snyk-infrastructure-as-code/describe-your-current-infrastructure/configuring-providers/google.md)
+      * [Github](products/snyk-infrastructure-as-code/describe-your-current-infrastructure/configuring-providers/github.md)
+      * [Azure](products/snyk-infrastructure-as-code/describe-your-current-infrastructure/configuring-providers/azure.md)
+    * [Filtering results](products/snyk-infrastructure-as-code/describe-your-current-infrastructure/filtering-results.md)
+    * [Ignoring resources](products/snyk-infrastructure-as-code/describe-your-current-infrastructure/ignoring-resources.md)
+    * [IAC Sources usage](products/snyk-infrastructure-as-code/describe-your-current-infrastructure/iac-sources-usage.md)
 
 ## USING SNYK <a href="#features" id="features"></a>
 

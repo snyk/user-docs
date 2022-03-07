@@ -61,7 +61,7 @@ After the identity provider is set up to acknowledge Snyk, now obtain the follow
 
 Click **create a connection** to establish trust on the service-provider side:
 
-![](<../../../.gitbook/assets/image (73).png>)
+![](<../../../.gitbook/assets/image (66).png>)
 
 Provide SAML attributes in the below form.
 
@@ -102,7 +102,7 @@ Once the SSO settings are saved successfully, click on the direct login URL disp
 
 ![](<../../../.gitbook/assets/Screenshot 2022-02-24 at 16.00.49.png>)
 
-Alternatively,  you can login to [**snyk**](http://snyk.io) in incognito mode to prevent cookies from interfering and verify the SSO Login is working.
+Alternatively, you can login to [**snyk**](http://snyk.io) in incognito mode to prevent cookies from interfering and verify the SSO Login is working.
 
 (Direct SSO Link:[https://app.snyk.io/login/sso](https://app.snyk.io/login/sso)) or:
 
