@@ -1,5 +1,7 @@
 # Filtering results
 
+The following information is based on these [filtering rules](https://docs.driftctl.com/next/usage/filtering/rules/).
+
 Filter rules can be used not only to **describe** resources, but also to **ignore** resources.
 
 You can use both inclusion and exclusion logic.
@@ -12,7 +14,7 @@ Filters are applied on a normalized structure which contains the following field
 * **Id**: Id of the resource, for example, `my-bucket-name`
 * **Attr**: every resource attribute (see the [terraform attributes reference](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3\_bucket#attributes-reference) for a full list of supported attributes of a bucket)
 
-**Note**: If you want to filter on `Attr,` enable deep mode to have access to the details of the resource.
+**Note**: If you want to filter on `Attr`, enable deep mode to have access to the details of the resource.
 
 The following code shows examples of include and exclude commands.[​](https://docs.driftctl.com/0.22.0/usage/filtering/rules#examples)
 
