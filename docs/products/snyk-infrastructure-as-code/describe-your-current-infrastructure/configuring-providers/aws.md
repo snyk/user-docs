@@ -2,7 +2,7 @@
 
 ## Authentication
 
-To use `iac describe`, you need credentials to make authenticated requests to AWS.  As for the AWS CLI, use [credentials and configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) settings declared as user environment variables or in local AWS configuration files.
+To use `iac describe`, set up credentials to make authenticated requests to AWS.  As you do for the AWS CLI, use [credentials and configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) settings declared as user environment variables or in local AWS configuration files.
 
 The `iac describe` command supports a [named profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html). By default, the CLI uses the settings found in the profile named `default`. You can override an individual setting by declaring the supported environment variables such as `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_PROFILE` and so on.
 
@@ -221,7 +221,7 @@ $ aws cloudformation update-stack --stack-name SNYK_STACK_NAME --template-url ht
 
 The `iac describe` command needs access to your cloud provider account so that it can list resources on your behalf.
 
-As the AWS documentation recommends, policy that follows grants only the permissions required.
+As the AWS documentation recommends, the policy that follows grants only the permissions required.
 
 ```
 {
