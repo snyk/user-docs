@@ -161,7 +161,7 @@ You should ask your developers to consider the merge advice label that appears o
 
 ![](<../../../.gitbook/assets/merge-advice-review-recommended (2) (2) (2) (1) (1) (21).png>)
 
-![](<../../../.gitbook/assets/advice-green (1) (2) (2) (4) (3) (1) (1) (13) (1).png>)
+![](<../../../.gitbook/assets/advice-green (1) (2) (2) (4) (3) (1) (1) (13).png>)
 
 ![](<../../../.gitbook/assets/merge-advice (2) (2) (4) (2) (1) (1) (1) (19).png>)
 

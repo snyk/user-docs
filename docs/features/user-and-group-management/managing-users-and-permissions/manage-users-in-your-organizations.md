@@ -10,7 +10,7 @@ Click on the **Members** tab in the app (example link: **https://app.snyk.io/org
 Relevant permissions are required to perform all these tasks--see [managing-permissions.md](managing-permissions.md "mention").
 {% endhint %}
 
-### Add members&#x20;
+### Add members
 
 Click **Add members**:
 
@@ -29,7 +29,7 @@ Any users who have been invited are assigned a default role (such as **Collabora
 
 ![Snyk's Free Tier options](<../../../.gitbook/assets/Add members.png>)
 
-The option to select **Invite by link** to send a link and click **Copy link** (in screenshot below) **** is available on the free tier so that you can send the link yourself.
+The option to select **Invite by link** to send a link and click **Copy link** (in screenshot below) is available on the free tier so that you can send the link yourself.
 
 ![](<../../../.gitbook/assets/Members page.png>)
 
