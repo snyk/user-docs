@@ -8,7 +8,7 @@ Snyk has a plugin for Jetbrains IDEs, which support all Snyk products: [Snyk Ope
 
 * Security vulnerabilities in open source dependencies (Snyk Open Source).
 * Security vulnerabilities and code quality issues in first party code (Snyk Code).
-* Configuration issues in your infrastructure as code such as Terraform, AWS CloudFormation, Kubernetes, and Azure Resource Manager (ARM)  (Snyk IaC)
+* Configuration issues in your infrastructure as code such as Terraform, AWS CloudFormation, Kubernetes, and Azure Resource Manager (ARM) (Snyk IaC)
 * Security vulnerabilities in your container images found in Kubernetes workload files (Snyk Container)
 
 {% hint style="info" %}
@@ -55,16 +55,16 @@ The installation is done via the IDE plugins catalog/library:
 
 ### Environment
 
-To analyze projects, the plugin uses the Snyk CLI which needs some environment variables. The following variables are needed or helpful, dependent on the type of project you analyse:&#x20;
+To analyze projects, the plugin uses the Snyk CLI which needs some environment variables. The following variables are needed or helpful, dependent on the type of project you analyse:
 
-* `PATH`: the path to needed binaries, (for example, to maven).&#x20;
+* `PATH`: the path to needed binaries, (for example, to maven).
 * `JAVA_HOME`: the path to the JDK to use to analyze Java dependencies
 
-Setting these variables only in a shell environment (for example, using `~/.bashrc`) is not sufficient, if you do not start the Jetbrains IDE from the command line or create a script file that starts it using a shell environment.&#x20;
+Setting these variables only in a shell environment (for example, using `~/.bashrc`) is not sufficient, if you do not start the Jetbrains IDE from the command line or create a script file that starts it using a shell environment.
 
-* On **Windows**, you can set the variables, using the GUI or on the command line using the `setx` tool.&#x20;
-* On **macOS**, the process `launchd` needs to know the environment variables if you want to launch the IDE from Finder directly. Set environment variables for applications launched via Finder using the `launchctl setenv` command (for example, on start-up or via a script you launch at user login). \
-  **Note:** The provision of environment variables to the macOS UI can change between operating system releases, so it can be easier to create a small shell script that launches the IDE to leverage the shell environment, that can be defined via `~/.bashrc`.&#x20;
+* On **Windows**, you can set the variables, using the GUI or on the command line using the `setx` tool.
+* On **macOS**, the process `launchd` needs to know the environment variables if you want to launch the IDE from Finder directly. Set environment variables for applications launched via Finder using the `launchctl setenv` command (for example, on start-up or via a script you launch at user login).\
+  **Note:** The provision of environment variables to the macOS UI can change between operating system releases, so it can be easier to create a small shell script that launches the IDE to leverage the shell environment, that can be defined via `~/.bashrc`.
 * On **Linux**, updating the file `/etc/environment` can be used to propagate the environment variables to the windows manager and UI.
 
 ### Proxy
@@ -89,7 +89,7 @@ The first time it is needed, the plugin automatically downloads the CLI in the b
 ![This is that confirmation message we talked about.](../../../.gitbook/assets/screen-shot-2021-09-29-at-4.05.55-pm.png)
 
 * The IDE will read and save the authentication on your local machine.
-* You can now close the browser window and return to the IDE.&#x20;
+* You can now close the browser window and return to the IDE.
 * The analysis should have started automatically:
 
 ![](<../../../.gitbook/assets/Screenshot 2022-02-10 at 17.26.44.png>)
@@ -148,9 +148,9 @@ For quickly understanding and fixing the underlying issue Snyk’s plugin tells 
 
 ## Analysis results: Snyk Container
 
-The plugin scans Kubernetes configuration files and searches for container images. Vulnerabilities are found fast using the extracted container images and comparative analysis against the latest information from the [Snyk Intel Vulnerability Ddatabase](https://security.snyk.io).
+The plugin scans Kubernetes configuration files and searches for container images. Vulnerabilities are found fast using the extracted container images and comparative analysis against the latest information from the [Snyk Intel Vulnerability Database](https://security.snyk.io).
 
-You have the ability to go over each of the security vulnerabilities your image might be vulnerable to, and in the same manner like our Open Source findings.&#x20;
+You have the ability to go over each of the security vulnerabilities your image might be vulnerable to, and in the same manner like our Open Source findings.
 
 ![](../../../.gitbook/assets/intellij\_container\_vulnerabilites.png)
 
@@ -162,8 +162,8 @@ The colorful comparison table (from above) with various severity levels (critica
   * if the image definition is in the Kubernetes YAML file in the project. Make sure you have the image specified with a YAML value to the YAML image key.
   * if the container image has been successfully built locally and/or pushed to a container registry. It is also a good practice to do this before referring to the container image in the Kubernetes YAML file.
   * If you, however, encounter an error, [let us know](https://docs.snyk.io/features/integrations/ide-tools/jetbrains-plugins#support-contact) so we can look into it.
-* For each image we've found, we perform a test with our CLI.&#x20;
-  * Click [here](https://docs.snyk.io/products/snyk-container/snyk-cli-for-container-security#testing-an-image) if you want to learn more about how Snyk Container performs a test on the image.&#x20;
+* For each image we've found, we perform a test with our CLI.
+  * Click [here](https://docs.snyk.io/products/snyk-container/snyk-cli-for-container-security#testing-an-image) if you want to learn more about how Snyk Container performs a test on the image.
   * During testing the image the CLI will download the image if it is not already available locally in your Docker daemon.
 * We will be expanding the scope of Container scanning, so if there are more files (like Dockerfiles) or workflows that you want to be supported, submit a feature request [here](https://support.snyk.io/hc/en-us/requests/new).
 
