@@ -1,5 +1,7 @@
 # Ignoring resources
 
+The following information is from the [.driftignore documentation](https://docs.driftctl.com/0.22.0/usage/filtering/driftignore).
+
 **.driftignore** is a simple way to ignore resources, you put resources in a `.driftignore` file like a `.gitignore`.
 
 If you need only to exclude a set of resources you should use .driftignore, if you need something more advanced, check filter rules.
@@ -34,8 +36,6 @@ aws_lambda_function.*.environment
 # Will ignore lastModified for my-lambda-name lambda function
 aws_lambda_function.my-lambda-name.last_modified
 ```
-
-Copy
 
 ### Precedence over filter rules[​](https://docs.driftctl.com/0.22.0/usage/filtering/driftignore#precedence-over-filter-rules) <a href="#precedence-over-filter-rules" id="precedence-over-filter-rules"></a>
 
