@@ -1,7 +1,7 @@
 # GitHub Enterprise integration
 
 {% hint style="info" %}
-Self-managed source code, like GitHub Enterprise, is available with our Enterprise plan, [ our plans and pricing page](https://snyk.io/plans) for more info.
+Self-managed source code, like GitHub Enterprise, is available with our Enterprise plan, [our plans and pricing page](https://snyk.io/plans) for more info.
 {% endhint %}
 
 Snyk's GitHub Enterprise integration allows you to:
@@ -22,7 +22,7 @@ Snyk's GitHub Enterprise integration allows you to:
 8. Snyk starts scanning the selected repos for dependency files (such as package.json) in the entire directory tree and imports them to Snyk as projects:
 9. The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-![](<../../../.gitbook/assets/which\_repos (3) (5) (9) (7) (18) (1) (1) (22).jpg>)
+![](<../../../.gitbook/assets/which\_repos (3) (5) (9) (7) (18) (1) (1) (22) (1).jpg>)
 
 ## GitHub Enterprise Broker startup script
 
@@ -49,7 +49,7 @@ Snyk produces advanced security reports, allowing you to explore the vulnerabili
 
 This is an example of a project-level security report:
 
-![](<../../../.gitbook/assets/mceclip0-22- (2) (5) (6) (1) (1) (1) (21).png>)
+![](<../../../.gitbook/assets/mceclip0-22- (2) (5) (6) (1) (1) (1) (21) (1).png>)
 
 **Project monitoring and automatic fix pull requests**
 
@@ -71,7 +71,7 @@ Snyk tests any newly created pull requests in your repositories for security vul
 
 This is how Snyk pull request checks appear in the Pull Request page in GitHub Enterprise:
 
-![](<../../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en (2) (2) (6) (5) (1) (1) (18).png>)
+![](<../../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en (2) (2) (6) (5) (1) (1) (18) (1).png>)
 
 To review and adjust the pull request tests settings:
 
@@ -79,7 +79,7 @@ To review and adjust the pull request tests settings:
 2. Select **Edit Settings** for GitHub Enterprise.
 3. Navigate to **Default Snyk test for pull requests**:
 
-![](<../../../.gitbook/assets/mceclip5 (1) (1).png>)
+![](<../../../.gitbook/assets/mceclip5 (1).png>)
 
 ## Required permissions scope for the GitHub integration
 

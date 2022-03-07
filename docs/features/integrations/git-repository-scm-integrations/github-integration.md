@@ -12,7 +12,7 @@ Please note, GitHub integrates per user rather than per org. Setting up this int
 4. Select the repos you'd like to import to Snyk. When done, click on the **Add selected repositories** button, at the top of the page. Once clicked, Snyk will start scanning the selected repos for dependency files (i.e. package.json, pom.xml, etc) in the entire directory tree and import them to Snyk as projects:
 5. The imported projects now appear in your Projects page and are continuously checked for vulnerabilities.
 
-![](<../../../.gitbook/assets/which\_repos (3) (5) (9) (7) (18) (1) (1) (24).jpg>)
+![](<../../../.gitbook/assets/which\_repos (3) (5) (9) (7) (18) (1) (1) (24) (1).jpg>)
 
 ## GitHub Integration Features
 
@@ -24,7 +24,7 @@ Snyk will produce advanced security reports, allowing you to explore the vulnera
 
 This is an example of a project level security report:
 
-![](<../../../.gitbook/assets/mceclip0-22- (2) (5) (6) (1) (1) (1) (17).png>)
+![](<../../../.gitbook/assets/mceclip0-22- (2) (5) (6) (1) (1) (1) (17) (1).png>)
 
 ## **2. Projects monitoring and automatic fix pull requests**
 
@@ -34,7 +34,7 @@ Snyk will frequently scan your projects on either a daily or a weekly basis. Whe
 
 You can review and adjust the automatic fix pull request settings by navigating to the GitHub's Integration Settings page in Snyk (Settings --> Integration --> GitHub):
 
-![](<../../../.gitbook/assets/mceclip4 (1) (2) (6) (7) (3) (1) (1) (12).png>)
+![](<../../../.gitbook/assets/mceclip4 (1) (2) (6) (7) (3) (1) (1) (12) (1).png>)
 
 ### Commit Signing
 
@@ -54,14 +54,15 @@ This is how Snyk pull request checks appear in the Pull Request page in GitHub:
 
 You can review and adjust the pull request tests settings by navigating to the GitHub's Integration **Settings** page in Snyk (Settings --> Integration --> GitHub):
 
-![](<../../../.gitbook/assets/mceclip5 (1) (1).png>)
+![](<../../../.gitbook/assets/mceclip5 (1).png>)
 
 ## Required permissions scope for the GitHub integration
 
-## Non Brokered GitHub Integrations
+## Non-Brokered GitHub Integrations
 
-1. Operations that are triggered via the Snyk UI, for example, opening a Fix PR or retesting a project are performed on behalf of the acting user. Therefore, a user that wants to perform this operation in GitHub via the Snyk UI, must connect their GitHub account to Snyk and have the required permissions scope for the repositories they would like to perform these operations for. See the **Required permissions scope for repositories** section for more details.
-2. Operations which are not triggered via the UI, as daily / weekly tests and automatic PRs (fix and upgrade) are performed on behalf of a random Snyk organization members who have connected their GitHub accounts to Snyk and have the required permissions scope for the repository.
+1. Operations that are triggered via the Snyk UI, for example, opening a Fix PR or retesting a project, are performed on behalf of the acting user. Therefore, a user that wants to perform this operation in GitHub via the Snyk UI, must connect their GitHub account to Snyk and have the required permissions scope for the repositories they would like to perform these operations for. See the **Required permissions scope for repositories** section for more details.
+2. Operations which are not triggered via the UI, such as daily / weekly tests and automatic PRs (fix and upgrade) are performed on behalf of a random Snyk organization members who have connected their GitHub accounts to Snyk and have the required permissions scope for the repository.
+3. Some operations (such as creating the PR) may occasionally be performed by [snyk-bot@snyk.io](mailto:snyk-bot@snyk.io) for public repositories that are non-brokered.
 
 {% hint style="info" %}
 **Note**\

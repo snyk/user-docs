@@ -2,11 +2,11 @@
 
 ## Targets
 
-Targets represent an external resource Snyk has scanned through an integration, the CLI, UI or API.  &#x20;
+Targets represent an external resource Snyk has scanned through an integration, the CLI, UI or API.
 
-Targets may represent a SCM repository, a Kubernetes workload, or other scannable resources external to Snyk. All [Projects](./#project) Snyk creates, are associate to a parent Target. One target may relate to many projects. The structure of the target depends on the [origin](./#origin). \
+Targets may represent a SCM repository, a Kubernetes workload, or other scannable resources external to Snyk. All [Projects](./#project) Snyk creates, are associate to a parent Target. One target may relate to many projects. The structure of the target depends on the [origin](./#origin).\
 \
-Targets appear on the **Projects** menu on the Snyk dashboard:&#x20;
+Targets appear on the **Projects** menu on the Snyk dashboard:
 
 ![](<../../.gitbook/assets/image (71).png>)
 
@@ -50,7 +50,7 @@ Possible values are:
 * quay-cr
 * terraform-cloud
 
-Origins are a property of [Targets](./#targets) and appear in the Projects menu, as an icon by the target name.&#x20;
+Origins are a property of [Targets](./#targets) and appear in the Projects menu, as an icon by the target name.
 
 ![](<../../.gitbook/assets/image (77).png>)
 
@@ -63,9 +63,7 @@ Projects define the items Snyk scans at a given Target. A project includes:
 
 Projects appear on the **Projects** menu on the Snyk dashboard, and on the [Snyk API](https://apidocs.snyk.io/?version=2022-02-16%7Ebeta#tag--Projects):
 
-
-
-![](<../../.gitbook/assets/image (84).png>)
+![](<../../.gitbook/assets/image (78).png>)
 
 ## Targetfile
 

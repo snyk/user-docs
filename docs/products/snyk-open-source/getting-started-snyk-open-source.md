@@ -49,7 +49,7 @@ If you see any errors during import, see [Project import errors](https://support
 
 ### Stage 3: View vulnerabilities
 
-You can now view vulnerability results for imported projects. The **Projects** tab appears by default after import, showing vulnerability information for project you've imported.&#x20;
+You can now view vulnerability results for imported projects. The **Projects** tab appears by default after import, showing vulnerability information for project you've imported.
 
 You can expand an imported project to see vulnerability information for that project, including the number of issues found, grouped by severity level:
 
@@ -77,11 +77,11 @@ To fix vulnerabilities:
 
 1. Click **Fix this vulnerability** to raise a fix PR for that issue (or click **Fix these vulnerabilities** to to fix multiple issues).
 2. The **Open a Fix PR** screen opens and indicates the vulnerabilities you selected.
-3. Check any additional issues you want to fix, or uncheck items to remove them from the fix.&#x20;
-4. Scroll down to the bottom of the screen and click **Open a Fix PR**.&#x20;
+3. Check any additional issues you want to fix, or uncheck items to remove them from the fix.
+4. Scroll down to the bottom of the screen and click **Open a Fix PR**.
 5. Snyk now actions this PR, then a results screen appears.
 6. Optionally, select the **Files changed** tab to see details of the changes made.
 
-![](<../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22 (1).png>)
+![](../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22.png)
 
 See [remediate-your-vulnerabilities.md](../../features/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities.md "mention") for more details.

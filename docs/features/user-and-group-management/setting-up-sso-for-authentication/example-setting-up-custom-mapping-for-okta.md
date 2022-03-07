@@ -66,9 +66,9 @@ Once you’re set up with groups and users:
     2. Select the right user role\
        \*\*\*\*![](https://lh4.googleusercontent.com/XPclvljK5ZsmLx1Cu3odPCFWz0oj4ZRk9ZkdG-gTto3vMWZWtMQ\_ONHVggh-xHL1UkRwId1eJFh8rZwCrbfUGvhKlL9BBzi3U46d3HXYE8YzFMtS8EIJxBljOim5LvSMarKyNXyZ)
 
-    ####
 
-    #### Implementation
+
+    **Implementation**
 
     1. Navigate to Applications -> Applications and click on the Snyk app you set
     2. General Tab -> SAML Settings -> Edit and click next to go to the Configure SAML step
@@ -76,7 +76,7 @@ Once you’re set up with groups and users:
        `appuser.user_role == "groupadmin" ? "snyk-groupadmin" : Arrays.flatten(String.replace(String.replace(String.append("snyk-",String.append(Arrays.toCsvString(appuser.snyk_orgs),"-"+appuser.user_role)),",",",snyk-"),",","-"+appuser.group_user_role+","))`
     4. Click Next -> Finish\\
 
-    #### Explanation of the value expression:
+    **Explanation of the value expression:**
 
     If the role is groupadmin, then ignore everything else and just pass `snyk-groupadmin`
 

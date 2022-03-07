@@ -6,7 +6,7 @@ Installing the Snyk controller enables you to import and test your running EKS w
 
 You have the option of deploying the Snyk controller for Amazon EKS as an official [AWS Quick Start](https://aws.amazon.com/quickstart/architecture/eks-snyk/). This option eliminates the need for manual configuration. Deploying this Quick Start with default parameters into an existing Amazon EKS cluster builds the following environment.
 
-![](<../../../../.gitbook/assets/architecture (1).png>)
+![](../../../../.gitbook/assets/architecture.png)
 
 There are three deployment options to match most common use cases. These are as follows:
 
@@ -52,7 +52,7 @@ Ensure your **dockerconfig.json** matches the example below:
 
 ### Attach policies for worker nodes
 
-For all the options above, attach the **NodeInstanceRole** policy that can be found [here](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR\_on\_EKS.html) with the **AmazonEC2ContainerRegistryReadOnly** policy to your EKS worker nodes. The Snyk Controller should now be able to pull private images when running on those worker nodes.&#x20;
+For all the options above, attach the **NodeInstanceRole** policy that can be found [here](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR\_on\_EKS.html) with the **AmazonEC2ContainerRegistryReadOnly** policy to your EKS worker nodes. The Snyk Controller should now be able to pull private images when running on those worker nodes.
 
 Alternatively, you can also use the IAM role for Service Accounts by **creating an EKS node role for your Node Group** (no need to set up an extra OIDC service account role), and configure the Snyk Controller as follows:
 
@@ -78,7 +78,7 @@ rbac:
       eks.amazonaws.com/role-arn: <Node IAM Role ARN>
 ```
 
-### Install Snyk Controller&#x20;
+### Install Snyk Controller
 
 After creating the IAM role for your Service Account, you can now install your Snyk Controller with this newly created YAML file to overwrite the values in the Helm chart.
 

@@ -312,7 +312,7 @@
     * [Test your Kubernetes files with Snyk CLI](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kubernetes-files-with-our-cli-tool.md)
     * [Test your ARM files with Snyk CLI](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-arm-files-with-the-cli-tool.md)
     * [Test your Kustomize files with Snyk CLI](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-kustomize-files-with-our-cli-tool.md)
-    * [Testing Helm Charts with Snyk CLI](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-helm-charts-with-our-cli-tool.md)
+    * [Testing Helm charts with Snyk CLI](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-helm-charts-with-our-cli-tool.md)
     * [Understanding the CLI Output](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-configuration-scan-issues.md)
   * [Jira Integration](products/snyk-infrastructure-as-code/jira-integration.md)
   * [View Infrastructure as Code issue reports](products/snyk-infrastructure-as-code/view-infrastructure-as-code-issue-reports.md)

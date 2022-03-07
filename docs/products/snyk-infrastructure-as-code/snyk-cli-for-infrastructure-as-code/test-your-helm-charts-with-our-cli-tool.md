@@ -1,4 +1,4 @@
-# Testing Helm Charts with our CLI tool
+# Testing Helm charts with Snyk CLI
 
 You scan a Helm chart by rendering the Helm templates into Kuberenetes manifest files and then scanning these using the `snyk iac` command in the Snyk CLI.
 
@@ -6,7 +6,7 @@ For example if you have a Helm project located in a `./helm` directory you would
 
 {% tabs %}
 {% tab title="macOS/Linux/Unix" %}
-```text
+```
 helm template ./helm --output-dir ./output
 snyk iac test ./output
 ```
@@ -20,12 +20,11 @@ snyk iac test .\output\
 {% endtab %}
 {% endtabs %}
 
-For unix based terminals you can also pipe the output of `helm template` directly into a single file:
+For unix-based terminals you can also pipe the output of `helm template` directly into a single file:
 
-```text
+```
 helm template ./helm > output.yaml
 snyk iac test output.yaml
 ```
 
-Currently the Snyk CLI is not able to read from standard input but this is a feature we are currently working on.
-
+The Snyk CLI is not able to read from standard input at this time; Snyk is working on this feature.
