@@ -32,7 +32,7 @@ Each vulnerability also contains links to public databases for users that wish t
 
 Another section of the page focuses on the version of your software, available upgrades, and whether there is a known exploit. This level of detail helps teams more quickly assess a vulnerability as they can see the recommended fix when it is available.
 
-![](<../../../../.gitbook/assets/image (85).png>)
+![](<../../../../.gitbook/assets/image (85) (1).png>)
 
 You are encouraged to look at the results of other projects and take note of the remediation guidance provided. Some vulnerabilities have fixes, while others do not. Some vulnerabilities do not have known exploits, and that could influence how your team addresses them as issues. The varied nature of vulnerabilities affect how you and your team address them, and reviewing the results are an important part of the process.
 
@@ -48,7 +48,7 @@ Some of the details you see are shown in the next two images, and they include:
     fix known exploits, how new the vulnerability is, and whether it is reachable or not.
 * When enabled, the [Jira integration](https://snyk.io/blog/jira-integration/) lets you add a Jira ticket.
 
-![](<../../../../.gitbook/assets/image (86) (1).png>)
+![](<../../../../.gitbook/assets/image (86) (1) (1).png>)
 
 ![](<../../../../.gitbook/assets/image (66).png>)
 

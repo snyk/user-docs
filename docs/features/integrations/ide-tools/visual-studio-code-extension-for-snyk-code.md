@@ -50,14 +50,14 @@ To authenticate follow the steps:
 
 1.  Once the extension is installed, click on the Snyk Icon in the left navigation bar:
 
-    ![](<../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1).png>)
+    ![](<../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1) (2).png>)
 2.  Click **Connect VS Code with Snyk**. The extension relies on the Snyk authentication API and it will ask you to authenticate you against Snyk’s web application:
 
-    ![](<../../../.gitbook/assets/image (82).png>)
+    ![](<../../../.gitbook/assets/image (84).png>)
 3. Click **Authenticate**.
 4.  After successful authentication, you will see a confirmation message:
 
-    ![](<../../../.gitbook/assets/image (85) (1).png>)
+    ![](<../../../.gitbook/assets/image (85) (1) (1).png>)
 5. Close the browser window and return to VS Code. VS Code is now reading and saving the authentication on your local machine.
 
 ### Run analysis
@@ -68,14 +68,14 @@ Snyk Open Source requires Snyk CLI, so it will proceed with the download in the 
 
 Snyk Code analysis runs quickly without it, so results may even already be available. Otherwise, you will see the following screen while Snyk scans your workspace for vulnerabilities:
 
-![](<../../../.gitbook/assets/image (89).png>)
+![](<../../../.gitbook/assets/image (91).png>)
 
 Snyk's analysis runs automatically when you open a folder or workspace.
 
 * Snyk Code performs scans automatically on file saves.
 * Snyk Open Source does not automatically run on save by default, but you can enable it in settings:
 
-![](<../../../.gitbook/assets/image (83).png>)
+![](<../../../.gitbook/assets/image (86).png>)
 
 **Tip**: if you don't like to manually save while working, enable [AutoSave](https://code.visualstudio.com/docs/editor/codebasics#\_save-auto-save).
 
@@ -111,7 +111,7 @@ The Snyk analysis panel (on the left of the code screen in the above screenshot)
 
 The icons here mean:
 
-| ![](<../../../.gitbook/assets/image (87).png>) Critical severity                   | May allow attackers to access sensitive data and run code on your application.                                                               |
+| ![](<../../../.gitbook/assets/image (89).png>) Critical severity                   | May allow attackers to access sensitive data and run code on your application.                                                               |
 | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](<../../../.gitbook/assets/image (64) (1) (1) (1) (2) (1).png>) High severity   | May allow attackers to access sensitive data on your application.                                                                            |
 | ![](<../../../.gitbook/assets/image (63) (1) (1) (1) (1) (2).png>) Medium severity | May allow attackers under some conditions to access sensitive data on your application.                                                      |

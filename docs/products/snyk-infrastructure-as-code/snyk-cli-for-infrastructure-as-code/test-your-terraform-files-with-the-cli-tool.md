@@ -10,7 +10,11 @@ With Snyk Infrastructure as Code, you can scan both your static configuration fi
 
 ## Terraform configuration files
 
-You can scan the configuration files, for example `main.tf`, using the CLI. Any declared variables or external modules that are referenced are not considered.
+You can scan the configuration files, for example `main.tf`, using the CLI.
+
+Declared variables are partially supported; for more information see [Terraform variables support](../scan-terraform-files/terraform-variables-support.md).
+
+External modules are currently not supported.
 
 ## Scan configuration files
 
@@ -31,7 +35,7 @@ As part of this planning stage, all variables and Terraform modules that are use
 
 If you have written a custom Terraform module and are referencing it in your deployment, then it is included in the Terraform plan output and scanned accordingly. This means the Terraform plan output provides a complete artifact to be scanned from a security perspective.
 
-As of Snyk CLI version 1.594.0 you can **** scan this artifact using the Snyk IaC CLI .
+As of Snyk CLI version 1.594.0 you can \*\*\*\* scan this artifact using the Snyk IaC CLI .
 
 This file is not sent to Snyk to be processed; it is scanned locally with the CLI and does not leave your machine.
 
