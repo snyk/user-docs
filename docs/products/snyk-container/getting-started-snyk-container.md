@@ -19,18 +19,18 @@ Choose a container registry integration, to connect the registry with Snyk.
 
 First, log in to Snyk app, and select **Integrations > Container registries**
 
-![](../../.gitbook/assets/container-registry-integrations.png)
+![Example URL: https://app.snyk.io/org/organization-name-tsd/integrations](../../.gitbook/assets/container-registries-3-7-22.png)
 
-Next, click the entry you want to integrate with Snyk, and enter details as prompted, then save the changes, to integrate this entry with Snyk:
-
-![](../../.gitbook/assets/container-account-credentials.png)
+Next, click the entry you want to integrate with Snyk, and enter details as prompted, then save the changes, to integrate this entry with Snyk.
 
 ### Stage 2: Add projects
 
 Add projects for your selected container, to start scanning with Snyk.
 
+![Example URL: https://app.snyk.io/org/organization-name-tsd/manage/integrations/docker-hub](../../.gitbook/assets/cont-reg-dhub-main-page-3-7-22.png)
+
 1. Click **Add Project**, and select the integration registry entry to add from:
-2. Select the container repository and tags to import, then click **Add selected repositories** to import them into your projects. Importing also sets Snyk to run a daily check on the repositories for vulnerabilities.
+2. Select the container repository and tags to import, then click **Add selected repositories** to import them into your projects. Importing also sets Snyk to run a daily check on repositories for vulnerabilities.
 3. A progress bar appears: click **View log** to see log results.
 
 {% hint style="info" %}
@@ -49,12 +49,12 @@ Here you can see a summary of the severity of the detected vulnerabilities.
 
 Click on an entry to see details of vulnerabilities found:
 
-![image5.png](../../.gitbook/assets/image5-1-.png)
+![Example URL: https://app.snyk.io/org/organization-name-tsd/project/abc-123](../../.gitbook/assets/cont-reg-dhub-critical-3-7-22.png)
 
 See [Analysis and fixes for your images from the Snyk app](https://docs.snyk.io/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app) for more details.
 
 ### Stage 4: Fix and review
 
-1. Fix issues found, based on Snyk recommendations.
-2. Rebuild your image.
-3. Snyk automatically rescans your new image after it is pushed.
+1. Fix issues found, based on Snyk recommendations
+2. Rebuild your image
+3. Snyk will automatically rescan your new image after it is pushed
