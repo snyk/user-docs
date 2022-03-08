@@ -10,16 +10,16 @@ The `snyk iac` command finds security issues in Infrastructure as Code files.
 
 For more information see [Synk CLI for Infrastructure as Code](../../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/).
 
-## Commands:
+## Sub-commands
 
-### ``[`test`](iac-test.md)``
+### ``[`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)``
 
 Test for any known security issue.
 
-### ``[`describe`](iac-describe.md)``
+### ``[`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)``
 
-Detect, track and alert on infrastructure drift and unmanaged resources.
+Detect, track, and alert on infrastructure drift and unmanaged resources.
 
-### [gen-driftignore](iac-gen-driftignore.md)
+### ``[`iac gen-driftignore`](https://docs.snyk.io/snyk-cli/commands/iac-gen-driftignore)``
 
-Generate a driftignore file. See [ignoring resources](../../products/snyk-infrastructure-as-code/describe-your-current-infrastructure/ignoring-resources.md).
+Generate a `.driftignore` file. For more information see [Ignoring resources](https://docs.snyk.io/products/snyk-infrastructure-as-code/describe-your-current-infrastructure/ignoring-resources).
