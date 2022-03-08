@@ -18,7 +18,7 @@ The `.snyk` policy file in a project is used to apply ignores and other settings
 * The `.snyk` file defines **Ignores**.
   * Snyk checks the Snyk database and the `.snyk` policy file for ignore rules when performing CLI and CI/CD scanning.
   * The `.snyk` policy file is used to apply ignores and other settings for the `snyk test` and `snyk monitor` commands, as well as any tests through the API or website.
-  * **Note**: if **admin users only** is enabled (**Settings > General > Ignores**), the ignore rules in the database are used, unless there is a `.snyk` file in the project. If there a `.snyk` file in the project, **** `snyk test` uses that file as the ignore mechanism, instead of the ignores set from the web UI.
+  * **Note**: if **admin users only** is enabled (**Settings > General > Ignores**), the ignore rules in the database are used, unless there is a `.snyk` file in the project. If there a `.snyk` file in the project, \*\*\*\* `snyk test` uses that file as the ignore mechanism, instead of the ignores set from the web UI.
   * Developers can ignore issues by using the `.snyk` policy file when running`snyk monitor`.
   * When the `.snyk` file is included in a Source Control Management (SCM) project, Snyk considers both the database ignores and the `.snyk` ignores.
 * The `.snyk` file defines certain **analysis configuration items** such as `language settings:` (Python version).
@@ -82,7 +82,7 @@ The ignore rules can be overridden if admin users only is enabled for the releva
 
 ## Examples
 
-### Creating a .snyk  file
+### Creating a .snyk file
 
 Generate a patch rule using a vulnerability fix PR:
 
@@ -117,7 +117,7 @@ language-settings:
 python: "3.6.2"
 ```
 
-**Note:** When you include the `.snyk` file in your code repository and the `language-settings:` value is set, then when you run code repository scans you gain the advantage of creating project-level Python settings.&#x20;
+**Note:** When you include the `.snyk` file in your code repository and the `language-settings:` value is set, then when you run code repository scans you gain the advantage of creating project-level Python settings.
 
 ### Setting vulnerability ignore rules
 
@@ -156,7 +156,7 @@ ignore:
 
 ### Setting license ignore rules
 
-To ignore the license issue for package, find the  ID for the license in the output of the `snyk test` command.&#x20;
+To ignore the license issue for package, find the ID for the license in the output of the `snyk test` command.
 
 The license ID is part of the license issue URL, for example, in this URL: [https://snyk.io/vuln/snyk:lic:npm:symbol:MPL-2.0](https://snyk.io/vuln/snyk:lic:npm:symbol:MPL-2.0), the license ID is `snyk:lic:npm:symbol:MPL-2.0`.
 
@@ -175,6 +175,28 @@ ignore:
         reason: None Given
         expires: 2020-11-07T11:38:28.614Z
 ```
+
+### Excluding ﬁles and folders from Snyk Code analysis
+
+**Note**: Only web and CLI projects currently support excludes for Snyk Code analysis. IDE support is planned for the future.
+
+Using the following code you can add shell-style patterns under the `exclude.code` section of the `.snyk` file:
+
+```
+# Snyk (https://snyk.io) policy file version: v1.14.0
+
+exclude: code:
+-	test.spec.ts
+-	tests/*.ts
+- “**/*.spec.ts”
+-	tests?/*
+```
+
+The preceding exclude rules ignore the “test.spec.ts” ﬁle, any ﬁle with the “.ts” extension under “tests,” any ﬁle ending with “.spec.ts” from any directory, and any ﬁle found under “test” or “tests.”&#x20;
+
+Any rule beginning with asterisk(s) must be wrapped in quotes, for example, `”*/src”`.
+
+For more information about the shell pattern syntax, see the [GNU doc](https://www.gnu.org/software/findutils/manual/html\_node/find\_html/Shell-Pattern-Matching.html).
 
 ## .snyk related CLI commands
 
