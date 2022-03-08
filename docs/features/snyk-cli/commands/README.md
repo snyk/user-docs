@@ -30,7 +30,7 @@ Snapshot and continuously monitor a project for open source vulnerabilities and 
 
 Test container images for vulnerabilities.
 
-### [`snyk iac`](../../../features/snyk-cli/commands/iac.md)
+### [`snyk iac`](iac.md)
 
 Find security issues in Infrastructure as Code files.
 
