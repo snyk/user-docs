@@ -58,7 +58,7 @@
     * [Policy](features/snyk-cli/commands/policy.md)
     * [Test](features/snyk-cli/commands/test.md)
     * [IAC](snyk-cli/commands/iac-1.md)
-    * [IAC Describe](snyk-cli/commands/iac-describe.md)
+    * [IAC describe](snyk-cli/commands/iac-describe.md)
     * [IAC test](snyk-cli/commands/iac-test.md)
     * [IAC Gen-driftignore](snyk-cli/commands/iac-gen-driftignore.md)
   * [Install the Snyk CLI](features/snyk-cli/install-the-snyk-cli/README.md)

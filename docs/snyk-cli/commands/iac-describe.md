@@ -1,4 +1,4 @@
-# IAC Describe
+# IAC describe
 
 ## Usage
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-The `snyk iac describe` command detect, track and alert on infrastructure drift and unmanaged resources.
+The `snyk iac describe` command detects, tracks, and alerts on infrastructure drift and unmanaged resources.
 
 ## Exit codes
 
@@ -23,7 +23,7 @@ You can use environment variables and also set variables to configure the Snyk C
 
 ## Configure the terraform provider
 
-You can use environment variables and also set variables to configure terraform provider used by `describe` command. See [Configure terraform providers](../../products/snyk-infrastructure-as-code/describe-your-current-infrastructure/configuring-providers/).
+You can use environment variables and also set variables to configure the terraform provider used by the `describe` command. For more information see [Configuring providers](https://docs.snyk.io/products/snyk-infrastructure-as-code/describe-your-current-infrastructure/configuring-providers).
 
 ## Debug
 
@@ -31,104 +31,114 @@ Use the `-d` option to output the debug logs.
 
 ## Options
 
-### `--from`
+### `--from=<STATE>`\[,\<STATE]...>
 
-Currently, `snyk iac describe` supports reading IaC from a Terraform state.
+Specify multiple states to be read.
 
-Multiple states can be read by passing `--from` a comma separated list. You can also use glob patterns to match multiple state files at once.
+At this time the`snyk iac describe` command supports reading IaC from a Terraform state.
 
-Se [documentation](../../products/snyk-infrastructure-as-code/describe-your-current-infrastructure/iac-sources-usage.md) on ho to use the different iac sources.
+To read multiple states, pass `--from=` followed by a comma-separated list. You can also use glob patterns to match multiple state files at once.
+
+For more information including **a list of supported IaC sources** and how to use them see [IAC Sources usage](https://docs.snyk.io/products/snyk-infrastructure-as-code/describe-your-current-infrastructure/iac-sources-usage).
 
 Examples:
 
-I want to read a local state and a state stored in an S3 bucket: `$ snyk iac describe --from="tfstate+s3://statebucket/terraform.tfstate,tfstate://terraform_toto.tfstate"`
+Read a local state and a state stored in an S3 bucket:
 
-You can also read all files under a given prefix for S3 `$ snyk iac describe --from=tfstate+s3://statebucket/states`
+```
+$ snyk iac describe --from="tfstate+s3://statebucket/terraform.tfstate,tfstate://terraform_toto.tfstate"
+```
 
-Or in a given directory `$ snyk iac describe --from=tfstate://directory/*`
+Read all files under a given prefix for S3:
 
-#### Supported IaC sources
+&#x20;`$ snyk iac describe --from=tfstate+s3://statebucket/states`
 
-* Terraform state
-* Local: `--from=tfstate://terraform.tfstate`
-* S3: `--from=tfstate+s3://my-bucket/path/to/state.tfstate`
-* GCS: `--from=tfstate+gs://my-bucket/path/to/state.tfstate`
-* HTTPS: `--from=tfstate+https://my-url/state.tfstate`
-* Terraform Cloud / Terraform Enterprise: `--from=tfstate+tfcloud://WORKSPACE_ID`
-* Azure blob storage: `--from=tfstate+azurerm://container-name/path/to/state.tfstate`
+Read all files in a given directory:
 
-You can use any unsupported backend by using `terraform` to pipe your state in a file and then use this file:
+&#x20;`$ snyk iac describe --from=tfstate://directory/*`
+
+Use any unsupported backend by using `terraform` to pipe your state in a file and then use this file:
 
 `$ terraform state pull > state.tfstate` `$ snyk iac describe --from=tfstate://state.tfstate`
 
-### `--to`
+### `--to=<PROVIDER+TYPE>`
 
-`describe` commands supports multiple providers. By default, it will scan against AWS, but you can change this using `--to`.
+Specify the provider to scan.
 
-#### Usage
+The `iac describe` command supports multiple providers. By default the describe command scans against AWS, but you can change this using  the --to option.
+
+Usage:
 
 `$ snyk iac describe --to=PROVIDER+TYPE`
 
-Examples:
+Example:
 
 `$ snyk iac describe --to=aws+tf`
 
-#### Supported Providers
+Supported providers
 
 * `github+tf`
 * `aws+tf`
 * `gcp+tf`
 * `azure+tf`
 
-### `--service`
+### `--service=<SERVICE>`\[,\<SERVICE]...>
 
-The services(s) specified with this argument controls which resources are going to be included/ignored in drift detection.
+Specify the services that control which resources are included, ignored, or both in drift detection.
 
-When specifying multiple services, use a comma to separate them e.g. `snyk iac describe --service=aws_s3,aws_ec2`
+Specify multiple services as a comma-separated list, for example:
 
-This flag can't be used at the same time with a driftignore file, driftignore will be ignored.
+&#x20;`snyk iac describe --service=aws_s3,aws_ec2`
 
-Here are the available services: `aws_s31`, `aws_ec21`, `aws_lambda1`, `aws_rds1`, `aws_route531`, `aws_iam1` , `aws_vpc1`, `aws_api_gateway1`, `aws_apigatewayv21`, `aws_sqs1`, `aws_sns1`, `aws_ecr1`, `aws_cloudfront1`, `aws_kms1`, `aws_dynamodb1`, `azure_base1` , `azure_compute1`, `azure_storage1`, `azure_network1`, `azure_container1`, `azure_database1`, `azure_loadbalancer1`, `azure_private_dns1`, `google_cloud_platform1`, `google_cloud_storage1`, `google_compute_engine1`, `google_cloud_dns1` , `google_cloud_bigtable1`, `google_cloud_bigquery1`, `google_cloud_functions1`, `google_cloud_sql1`, `google_cloud_run`
+This option cannot be used with a `.driftignore` file, because the `.driftignore` file will be ignored.
+
+The supported services are: `aws_s31`, `aws_ec21`, `aws_lambda1`, `aws_rds1`, `aws_route531`, `aws_iam1` , `aws_vpc1`, `aws_api_gateway1`, `aws_apigatewayv21`, `aws_sqs1`, `aws_sns1`, `aws_ecr1`, `aws_cloudfront1`, `aws_kms1`, `aws_dynamodb1`, `azure_base1` , `azure_compute1`, `azure_storage1`, `azure_network1`, `azure_container1`, `azure_database1`, `azure_loadbalancer1`, `azure_private_dns1`, `google_cloud_platform1`, `google_cloud_storage1`, `google_compute_engine1`, `google_cloud_dns1` , `google_cloud_bigtable1`, `google_cloud_bigquery1`, `google_cloud_functions1`, `google_cloud_sql1`, `google_cloud_run`
 
 ### `--only-managed`
 
-This flag will display a report that show only change for managed resources. It will filter out the unamanged resources.
+Display a report that shows change only for managed resources; filter out drift for unamanged resources.
 
 ### `--only-unmanaged`
 
-This flag will display a report that show only unmanaged resources. It will filter out drift for managed resources.
+Display a report that shows change only for unmanaged resources; filter out drift for managed resources.
 
 ### `--quiet`
 
-This flag prevents stdout to be use for anything but the scan result. This can be useful to pipe the output into some other command.
+Prevent stdout from being used for anything but the scan result. This can be useful to pipe the output into some other command.
 
 ### `--filter`
 
-Filter rules allow you to build complex expression to include and exclude a set of resources in your workflow. Powered by expression language JMESPath you could build a complex include and exclude expression.
+Use filter rules.
 
-See [documentation for more details](../../products/snyk-infrastructure-as-code/describe-your-current-infrastructure/filtering-results.md).
+Filter rules allow you to build complex expression to include and exclude a set of resources in your workflow. You can build a complex include and exclude expression powered by the expression language JMESPath.
+
+For more information see [Filtering results](https://docs.snyk.io/products/snyk-infrastructure-as-code/describe-your-current-infrastructure/filtering-results).
 
 ### `--json`
 
-Output report as json to stdout.
+Output the report as JSON to stdout.
 
-### `--json-output-file=`
+### `--json-output-file=<OUTPUT_FILE_PATH>`
 
-Output report as json into a file.
+Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option.
+
+This is especially useful if you want to display the human-readable test output using stdout and at the same time save the JSON format output to a file.
 
 ### `--html`
 
-`--html-output-file=`
+`--html-output-file=<OUTPUT_FILE_PATH>`
 
-Output report as html to stdout or into a file.
+Output the report as html to stdout or into a file.
 
 ### `--headers`
 
-Use a specific HTTP header(s) for the HTTP backend.
+Use a specific HTTP header or headers for the HTTP backend.
 
 Example:
 
-`$ GITLAB_TOKEN=<access_token> \ snyk iac describe \ --from tfstate+https://gitlab.com/api/v4/projects/<project_id>/terraform/state/<path_to_state> \ --headers "Authorization=Bearer ${GITLAB_TOKEN}"`
+```
+$ GITLAB_TOKEN=<access_token> \ snyk iac describe \ --from tfstate+https://gitlab.com/api/v4/projects/<project_id>/terraform/state/<path_to_state> \ --headers "Authorization=Bearer ${GITLAB_TOKEN}"
+```
 
 ### `--tfc-token`
 
@@ -136,77 +146,91 @@ Specify an API token to authenticate to the Terraform Cloud or Enterprise API.
 
 ### `--tfc-endpoint`
 
-You can also read the current state for a given workspace from Terraform Enterprise by passing the tfc-endpoint value that's specific to your Org's Terraform Enterprise installation.
+Read the current state for a given workspace from Terraform Enterprise by passing the tfc-endpoint value that is specific to your Org's Terraform Enterprise installation.
 
-You can obtain your workspace id from the General Settings of the workspace.
+You can obtain your workspace id from the **General Settings** of the workspace.
 
-Don't forget to provide your Terraform Enterprise API token.
+Remember to provide your Terraform Enterprise API token.
 
 Example:
 
-`$ snyk iac describe --from tfstate+tfcloud://$WORKSPACE_ID --tfc-token $TFC_TOKEN --tfc-endpoint 'https://tfe.example.com/api/v2'`
+```
+$ snyk iac describe --from tfstate+tfcloud://$WORKSPACE_ID --tfc-token $TFC_TOKEN --tfc-endpoint 'https://tfe.example.com/api/v2'
+```
 
 ### `--tf-provider-version`
 
-You can specify a terraform provider version to use. If none, defaults version will be used like below:
+Specify a terraform provider version to use. If none is specified, default versions are used as follows:
 
 * aws@3.19.0
 * github@4.4.0
 
-#### Usage
+Usage:
 
-I use terraform provider 3.43.0 so I can use this provider to avoid scan errors. `$ DCTL_TF_PROVIDER_VERSION=3.43.0 snyk iac describe`
+Specify terraform provider 3.43.0 to use this provider to avoid scan errors:
 
-Same parameter is used for every cloud provider. `$ DCTL_TF_PROVIDER_VERSION=4.10.1 snyk iac describe --to github+tf`
+`$ DCTL_TF_PROVIDER_VERSION=3.43.0 snyk iac describe`
+
+Use the same parameter for every cloud provider:
+
+`$ DCTL_TF_PROVIDER_VERSION=4.10.1 snyk iac describe --to github+tf`
 
 ### `--strict`
 
-When running this command against an AWS account, you may experience unnecessary noises with resources that don't belong to you. It can be the case if you have an organization account in which you will by default have a service-linked role associated to your account (e.g. AWSServiceRoleForOrganizations). For now, the command ignores those service-linked resources by default.
+Enable strict mode.
 
-If you still want to include those resources in the report anyway, you can enable the strict mode.
+When running this command against an AWS account, you may experience unnecessary noise from resources that do not belong to you. This can happen if you have an organization account in which you by default have a service-linked role associated to your the account, for example, **AWSServiceRoleForOrganizations**. The `iac describe` command ignores those service-linked resources by default. To include those resources in the report you can enable **strict mode**.
 
-For now, resources include:
+Resources include service-linked AWS IAM roles, including their policies and policy attachments
 
-* Service-linked AWS IAM roles, including their policies and policy attachments
-
-#### Usage
+Usage:
 
 `$ snyk iac describe --strict`
 
 ### `--deep`
 
-#### Warning
+Enable deep mode.
 
-This flag is **EXPERIMENTAL**. Enabling deep mode while using a Terraform state as IaC source can lead to unexpected behaviors: false positive drifts, undetected drifts.
+**WARNING:**
 
-Deep mode enables resources details retrieval.
+This option is **EXPERIMENTAL**. Enabling deep mode while using a Terraform state as the IaC source can lead to unexpected behaviors: false positive drifts and undetected drifts.
 
-* In **deep** mode we compare resources details to expected ones (like a terraform plan).
-* In **non-deep** mode (the default one) we only enumerate resources and display which ones are out of IaC scope.
+Deep mode enables retrieval of details for resources.
 
-Since it overlaps the new `terraform plan` behavior (as of Terraform 0.15 it shows diffs between your state and the remote) we moved the original behavior under the `--deep` **experimental** flag.
+* In **deep** mode snyk compares details for resources to expected details, for example, a terraform plan.
+* In **non-deep** mode (the default) snyk enumerates only resources and displays which ones are out of IaC scope.
 
-#### Usage
+Since the original behavior overlaps the new `terraform plan` behavior (as of Terraform 0.15 it shows diffs between your state and the remote) Snyk moved the original behavior under the `--deep` **experimental** flag.
+
+Usage:
 
 `$ snyk iac describe --deep`
 
 ### `--driftignore`
 
+Specify a custom filename for a driftignore file.
+
 The default name for a driftignore file is `.driftignore`. If for some reason you want to use a custom filename, you can do so using the `--driftignore` flag. This is especially useful when you have multiple driftignore files, where each of them represents a particular use case.
 
-NOTE: You can use only one driftignore file at once.
+Note: You can use only one driftignore file at once.
 
-See [ignoring ressources](../../products/snyk-infrastructure-as-code/describe-your-current-infrastructure/ignoring-resources.md).
+See [Ignoring resources](https://docs.snyk.io/products/snyk-infrastructure-as-code/describe-your-current-infrastructure/ignoring-resources).
 
-#### Usage
+Example:
 
-Apply ignore directives from the /path/to/driftignore file
+Apply ignore directives from the /path/to/driftignore file:
 
 `$ snyk iac describe --driftignore /path/to/driftignore`
 
 ### `--tf-lockfile`
 
 By default, the command tries to read a Terraform lock file (.terraform.lock.hcl) in the current directory, so it can automatically detect which provider to use, according to the --to flag. You can specify a custom path for that file using the --tf-lockfile flag. If parsing the lockfile fails for some reason, errors will be logged and scan will continue.
+
+**Note**: When using both the --tf-lockfile and --tf-provider-version opton s together, --tf-provider-version takes precedence overall.
+
+Example:
+
+`$ snyk iac describe --to aws+tf --tf-lockfile path/to/.terraform.lock.hcl`
 
 ### `--org=<ORG_ID>`
 
@@ -220,17 +244,7 @@ Set a default to ensure all newly tested projects are tested under your default 
 
 Default: `<ORG_ID>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account).
 
-Example: `$ snyk test --org=my-team`
-
 For more information see the article [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI).
-
-#### Note
-
-When using both --tf-lockfile and --tf-provider-version flags together, --tf-provider-version will simply take precedence overall.
-
-#### Example
-
-`$ snyk iac describe --to aws+tf --tf-lockfile path/to/.terraform.lock.hcl`
 
 ### `--config-dir`
 
@@ -238,9 +252,11 @@ You can change the directory path used for configuration. By default, it is the 
 
 This can be useful, for example, if you want to invoke this command in an AWS Lambda function where you can only use the `/tmp` folder.
 
-#### Usage
+Usage:
 
-`$ snyk iac describe --config-dir path_to_config_dir` `$ DCTL_CONFIG_DIR=path_to_config_dir snyk iac describe`
+```
+$ snyk iac describe --config-dir path_to_config_dir $ DCTL_CONFIG_DIR=path_to_config_dir snyk iac describe
+```
 
 ## Examples for the `iac describe` command
 
@@ -256,19 +272,19 @@ $ snyk iac describe
 $ snyk iac describe --from=tfstate://terraform.tfstate
 ```
 
-### To specify AWS credentials
+### Specify AWS credentials
 
 ```
 $ AWS_ACCESS_KEY_ID=XXX AWS_SECRET_ACCESS_KEY=XXX snyk iac describe
 ```
 
-### or using a named profile
+### Use a named profile
 
 ```
 $ AWS_PROFILE=profile_name snyk iac describe
 ```
 
-### With state stored on a s3 backend
+### With state stored on an s3 backend
 
 ```
 $ snyk iac describe --from=tfstate+s3://my-bucket/path/to/state.tfstate
