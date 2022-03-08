@@ -1,2 +1,0 @@
-# Describe your current infrastructure
-
