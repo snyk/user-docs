@@ -60,7 +60,7 @@
     * [IAC](snyk-cli/commands/iac-1.md)
     * [IAC describe](snyk-cli/commands/iac-describe.md)
     * [IAC test](snyk-cli/commands/iac-test.md)
-    * [IAC Gen-driftignore](snyk-cli/commands/iac-gen-driftignore.md)
+    * [IAC gen-driftignore](snyk-cli/commands/iac-gen-driftignore.md)
   * [Install the Snyk CLI](features/snyk-cli/install-the-snyk-cli/README.md)
   * [Authenticate the CLI with your account](features/snyk-cli/authenticate-the-cli-with-your-account/README.md)
   * [Configure the Snyk CLI](features/snyk-cli/configure-the-snyk-cli.md)
