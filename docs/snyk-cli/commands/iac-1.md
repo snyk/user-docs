@@ -8,7 +8,7 @@
 
 The `snyk iac` command finds security issues in Infrastructure as Code files.
 
-For more information see [Synk CLI for Infrastructure as Code](../../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/).
+For more information see [Snyk CLI for Infrastructure as Code](https://docs.snyk.io/products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code).
 
 ## Sub-commands
 
