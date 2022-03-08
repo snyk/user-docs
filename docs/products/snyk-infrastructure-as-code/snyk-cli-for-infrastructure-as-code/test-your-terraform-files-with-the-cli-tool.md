@@ -12,7 +12,7 @@ With Snyk Infrastructure as Code, you can scan both your static configuration fi
 
 You can scan the configuration files, for example `main.tf`, using the CLI.
 
-Declared variables are partially supported; for more information see [Terraform variables support](../scan-terraform-files/terraform-variables-support.md).
+Declared variables are partially supported; for more information see [Terraform variables support](broken-reference).
 
 External modules are currently not supported.
 
