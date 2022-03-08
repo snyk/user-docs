@@ -12,7 +12,7 @@ With Snyk Infrastructure as Code, you can test your configuration files with the
 As of CLI version 1.594.0 all configuration files are processed locally, ensuring that they do not leave your machine. Earlier versions by default send the configuration files to Snyk to be processed. Snyk recommends that you upgrade to the latest version of the CLI.
 {% endhint %}
 
-In the examples that follow, you can replace `main.tf` with your filename, for example,  `deployment.yaml`.
+In the examples that follow, you can replace `main.tf` with your filename, for example, `deployment.yaml`.
 
 ## Test for an issue on specified files
 
@@ -122,7 +122,7 @@ Example:
 snyk iac test main.tf --org=infrastructure
 ```
 
-You can also set the `org` flag in `snyk config`, so you do not need to provide the flag each time  you want to specify the organization.
+You can also set the `org` flag in `snyk config`, so you do not need to use the `--org` option each time you want to specify the organization.
 
 ```
 snyk config set org=infrastructure
