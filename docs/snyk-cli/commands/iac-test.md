@@ -1,4 +1,4 @@
-# IAC Test
+# IAC test
 
 ## Usage
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-Test for any known issue.
+Test for any known security issue.
 
 ## Exit codes
 
