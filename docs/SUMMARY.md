@@ -343,7 +343,7 @@
       * [Azure](products/snyk-infrastructure-as-code/describe-your-current-infrastructure/configuring-providers/azure.md)
     * [Filtering results](products/snyk-infrastructure-as-code/describe-your-current-infrastructure/filtering-results.md)
     * [Ignoring resources](products/snyk-infrastructure-as-code/describe-your-current-infrastructure/ignoring-resources.md)
-    * [IAC Sources usage](products/snyk-infrastructure-as-code/describe-your-current-infrastructure/iac-sources-usage.md)
+    * [IAC sources usage](products/snyk-infrastructure-as-code/describe-your-current-infrastructure/iac-sources-usage.md)
 
 ## USING SNYK <a href="#features" id="features"></a>
 
