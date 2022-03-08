@@ -1,6 +1,6 @@
 # Test your Terraform files with Snyk CLI
 
-With Snyk Infrastructure as Code, you can scan both your static configuration files and Terraform pan output using the CLI.
+With Snyk Infrastructure as Code, you can scan both your static configuration files and Terraform plan output using the CLI.
 
 |                                   | **Terraform configuration files** | **Terraform plan file**  |
 | --------------------------------- | --------------------------------- | ------------------------ |
@@ -33,7 +33,7 @@ As part of this planning stage, all variables and Terraform modules that are use
 
 If you have written a custom Terraform module and are referencing it in your deployment, then it is included in the Terraform plan output and scanned accordingly. This means the Terraform plan output provides a complete artifact to be scanned from a security perspective.
 
-As of Snyk CLI version 1.594.0 you can \*\*\*\* scan this artifact using the Snyk IaC CLI .
+As of Snyk CLI version 1.594.0 you can scan this artifact using the Snyk IaC CLI .
 
 This file is not sent to Snyk to be processed; it is scanned locally with the CLI and does not leave your machine.
 
@@ -59,7 +59,7 @@ terraform plan -out=tfplan.binary
 terraform show -json tfplan.binary > tf-plan.json
 ```
 
-You can name the tf-plan.json file according to your needs.
+You can name the `tf-plan.json` file according to your needs.
 
 These files are considered sensitive and it is not recommended to commit them to source control.
 
