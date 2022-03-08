@@ -31,10 +31,10 @@ The Reports area comprises these tabs:
 
 Report data can also be generated and retrieved with our APIs. For more information about this, see our [API documentation](https://snyk.docs.apiary.io/#introduction).
 
-{% hint style="info" %}
-There may be a delay from the time a project is tested and until that data appears in the Reports area. If you find that there is more than a 1-hour delay, [contact our Support team](https://support.snyk.io/hc/en-us/requests/new).
+{% hint style="warning" %}
+There may be a delay from the time a project is tested and until that data appears in the Reports area. If you find that there is more than a 9-hour delay, [contact our Support team](https://support.snyk.io/hc/en-us/requests/new).
 {% endhint %}
 
-{% hint style="info" %}
-Read-only projects and the respective results will not appear in the Reports area.
+{% hint style="danger" %}
+Read-only projects and their respective results will not appear in the Reports area.
 {% endhint %}
