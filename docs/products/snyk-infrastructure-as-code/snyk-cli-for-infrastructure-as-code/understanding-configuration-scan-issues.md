@@ -1,26 +1,26 @@
-# Understanding the CLI Output
+# Understanding the CLI output
 
-Snyk analyzes your provided configuration file for issues and provides advice on how to resolve the issue directly from the CLI.
+Snyk analyzes your configuration file for issues and provides advice on how to resolve the issue directly from the CLI.
 
-For example - scanning a Terraform file:
+For example, scanning a Terraform file using the following command
 
 ```
 snyk iac test aws_api_gateway_stage_logging.tf
 ```
 
-could give an output as follows
+could provide output as shown in the following screenshot:
 
-![](../../../.gitbook/assets/screenshot-2021-09-28-at-19.58.22.png)
+![snyk iac test output](../../../.gitbook/assets/screenshot-2021-09-28-at-19.58.22.png)
 
-This example is of output from a Terraform file, but this guide applies to any file format including Kubernetes or CloudFormation.
+This example is of output from scanning a Terraform file, but this guide applies to any file format including Kubernetes or CloudFormation.
 
-## List of vulnerabilities—sorted by severity, where each is detailed as follows:
+The output includes a **list of vulnerabilities sorted by severity**, where each is detailed as follows:
 
-**A clear heading line** - specifying the issue that has been detected, the severity of that issue and the Snyk Policy Id for that particular issue.
+**A clear heading line** - specifying the issue that has been detected, the severity of that issue, and the Snyk Policy Id for that particular issue
 
-**Location** - the property path within the configuration file at which the issue has been identified. See the example below for more details.
+**Location** - the property path within the configuration file at which the issue has been identified. See the example below for more details
 
-## **As an example:**
+**Example:**
 
 ![](../../../.gitbook/assets/screenshot-2021-09-28-at-20.00.36.png)
 
