@@ -13,14 +13,14 @@ In addition to scanning Kubernetes configuration files for misconfigurations and
 ## Scan and fix your Charts
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
-2. If you already imported your repositories for testing before cloud configuration file detection was enabled by your administrator, then you should re-import that repository again in order to import the Helm chart:  
+2. If you already imported your repositories for testing before cloud configuration file detection was enabled by your administrator, then you should re-import that repository again in order to import the Helm chart:
 3. Every time a repository is scanned:
-   1. Each template in your Helm Chart creates a Snyk a project, grouped together by repository.
+   1. Snyk creates a project for each template in your Helm Chart, grouped together by repository.
    2. If you re-imported the repository in order to import the cloud configuration files, then Snyk imports and tests the configuration files and also re-tests the already imported application manifest files - displaying the test time as "now".
 4. Click the project link you're interested in, to view the scan results and to correct your configuration files accordingly.
    1. Projects that were created from external dependencies will also be scanned and issues shown.
 
-![](../../../.gitbook/assets/screenshot_2020-04-24_at_08.51.18.png)
+![](../../../.gitbook/assets/screenshot\_2020-04-24\_at\_08.51.18.png)
 
 ## Testing custom Helm values configurations
 
@@ -35,7 +35,6 @@ helm template . --output-dir out
 snyk iac test out/
 ```
 
-You can pass standard Helm values flags \(e.g. `--set` and/or -`-values`\) to `helm template` in order to test a non-default configuration.
+You can pass standard Helm values flags (e.g. `--set` and/or -`-values`) to `helm template` in order to test a non-default configuration.
 
 You can script this process and run it in a CLI pipeline, or alternatively helm-template files into a repository that can be imported into Snyk as projects.
-
