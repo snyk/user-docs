@@ -71,8 +71,6 @@ Print results in JSON format.
 
 Example: `$ snyk iac test --json-file-output=vuln.json`
 
-
-
 ### `--json-file-output=<OUTPUT_FILE_PATH>`
 
 Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option.

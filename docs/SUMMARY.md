@@ -52,7 +52,7 @@
     * [Code](features/snyk-cli/commands/code.md)
     * [Config](features/snyk-cli/commands/config.md)
     * [Container](features/snyk-cli/commands/container.md)
-    * [IAC](snyk-cli/commands/iac/README.md)
+    * [IAC](features/snyk-cli/commands/iac.md)
       * [Test of inserting subpage for IAC help](snyk-cli/commands/iac/test-of-inserting-subpage-for-iac-help.md)
     * [Ignore](features/snyk-cli/commands/ignore.md)
     * [Log4shell](features/snyk-cli/commands/log4shell.md)
