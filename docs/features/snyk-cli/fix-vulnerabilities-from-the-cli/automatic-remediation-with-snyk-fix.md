@@ -54,15 +54,15 @@ To enable snyk fix during the beta period, click on **Settings** ![](../../../.g
 
 The `snyk fix` command supports all the `snyk test` command options and has the following additional options:
 
-* `--quiet` **** - Suppress all output to the command line.
+* `--quiet`  - Suppress all output to the command line.
 * `--dry-run` - Run almost all the logic and display output, but do not make the final changes to the relevant files. Show a preview of the changes.
 * `--sequential` - Install each dependency update separately one at a time (the default is to install all at once). The default is much slower, but helps increase the number of successful updates by allowing some updates to fail and the process to continue.
 
 ## Python support
 
 * Pip projects with `requirements.txt` files (or custom named files, for example `prod.txt`)
-* Pipenv projects with `Pipfile` **** and **** `Pipfile.lock` files
-* Poetry projects with `pyproject.toml` **** and `Poetry.lock` files
+* Pipenv projects with `Pipfile`  and  `Pipfile.lock` files
+* Poetry projects with `pyproject.toml`  and `Poetry.lock` files
 
 ### Usage examples
 

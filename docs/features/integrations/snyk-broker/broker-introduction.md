@@ -38,7 +38,7 @@ All data, both in transit and at rest, is encrypted. Communication between the c
 Additionally, if there is a requirement to do code analysis in an SCM integration, or to connect to a private Container Registry, there are two additional components:
 
 * [**Snyk Broker Code Agent**](snyk-broker-code-agent.md): Enables Snyk Code analysis on SCMs integrated through Snyk Broker
-* ****[**Snyk Broker Container Registry Agent**](snyk-broker-container-registry-agent/): Enables connection to self-hosted/private container registries and analysis of container images
+* [**Snyk Broker Container Registry Agent**](snyk-broker-container-registry-agent/): Enables connection to self-hosted/private container registries and analysis of container images
 
 ## Using inbound and outbound connections
 
