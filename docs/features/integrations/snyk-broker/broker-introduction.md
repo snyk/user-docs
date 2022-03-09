@@ -38,7 +38,7 @@ All data, both in transit and at rest, is encrypted. Communication between the c
 Additionally, if there is a requirement to do code analysis in an SCM integration, or to connect to a private Container Registry, there are two additional components:
 
 * [**Snyk Broker Code Agent**](snyk-broker-code-agent.md): Enables Snyk Code analysis on SCMs integrated through Snyk Broker
-* ****[**Snyk Broker Container Registry Agent**](snyk-broker-container-registry-agent/): Enables connection to self-hosted/private container registries and analysis of container images
+* ****[**Snyk Broker Container Registry Agent**](https://github.com/snyk/user-docs/tree/main/docs/features/integrations/snyk-broker/snyk-broker-container-registry-agent): Enables connection to self-hosted/private container registries and analysis of container images
 
 ## Using inbound and outbound connections
 
@@ -54,7 +54,7 @@ The default approved list limits requests as follows:
 * **Inbound:** Snyk.io is only allowed to fetch and view dependency manifest files and the Snyk policy file. No other source code is viewed, extracted, or modified. Additional files (.snyk files) may be checked in to support our patch mechanism and for any ignore instructions included in your vulnerability policy.
 * **Outbound:** Git repo webhooks are set when you configure your Broker setup, to enable automatic Snyk scans triggered when new pull requests or merge events are submitted by your developers. Webhook notifications are delivered to Snyk via the Broker client for only events relevant to Snyk actions (push to branch, pull request opened), and only when the event data also includes a dependency manifest file or a Snyk policy file.
 
-Because of the limitations of the default approved list, if you are interested in scanning Infrastructure as Code files with Broker, you will need to [add and configure an `accept.json`](snyk-broker-infrastructure-as-code-detection/) file into your broker deployment.
+Because of the limitations of the default approved list, if you are interested in scanning Infrastructure as Code files with Broker, you will need to [add and configure an `accept.json`](broken-reference/) file into your broker deployment.
 
 If you want to learn more about the approved data list and the `accept.json` file see [Custom approved listing filter](set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md)
 
@@ -81,7 +81,7 @@ To enable the full experience, Snyk Broker will need additional set-up:
 
 * For Snyk IaC it will require configuring the `accept.json` file [with additional parameters](snyk-broker-infrastructure-as-code-detection/) for the infrastructure as code templates
 * For Snyk Code, it will require the deployment of the [Snyk Broker Code Agent](snyk-broker-code-agent.md)
-* For Snyk Container image scanning, it will require the deployment of [Snyk Broker Container Registry Agent](snyk-broker-container-registry-agent/)
+* For Snyk Container image scanning, it will require the deployment of [snyk-broker-container-registry-agent](snyk-broker-container-registry-agent/ "mention")
 
 ## Common questions
 

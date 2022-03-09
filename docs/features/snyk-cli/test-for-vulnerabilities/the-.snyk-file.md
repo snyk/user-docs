@@ -183,13 +183,15 @@ ignore:
 Using the following code you can add shell-style patterns under the `exclude.code` section of the `.snyk` file:
 
 ```
-# Snyk (https://snyk.io) policy file version: v1.14.0
+# Snyk (https://snyk.io) policy file
+version: v1.14.0
 
-exclude: code:
--	test.spec.ts
--	tests/*.ts
-- “**/*.spec.ts”
--	tests?/*
+exclude:
+   code:
+     - test.spec.ts
+     - tests/*.ts
+     - “**/*.spec.ts”
+     - tests?/*
 ```
 
 The preceding exclude rules ignore the “test.spec.ts” ﬁle, any ﬁle with the “.ts” extension under “tests,” any ﬁle ending with “.spec.ts” from any directory, and any ﬁle found under “test” or “tests.”&#x20;
