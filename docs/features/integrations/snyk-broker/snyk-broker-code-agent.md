@@ -100,12 +100,15 @@ For example, to extend an existing broker client configured for Gitlab, run:
 ```
 docker run \
    -p 8001:8000 \
-   -e BROKER_TOKEN= \
-   -e GITLAB_TOKEN= \
-   -e GITLAB= \
+   -e BROKER_TOKEN=xxxxxxx-xxxx-xxxx-xxxx-xxxxxxx \
+   -e GITLAB_TOKEN=glpat-xxxxxxxxxxxxxxx \
+   -e GITLAB=url.com \
+   -e BROKER_CLIENT_URL=http://my.broker.client:8000
    -e PORT=8000 \
    -e GIT_CLIENT_URL=http://code-agent:3000 \
    --network mySnykBrokerNetwork \
+   -e ACCEPT=/private/accept.json \
+   -v /path/to/private:/private \
    snyk/broker:gitlab
 ```
 
