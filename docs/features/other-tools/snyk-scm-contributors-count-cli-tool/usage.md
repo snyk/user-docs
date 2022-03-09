@@ -92,4 +92,4 @@ Additional flags can be set to the command:
 
 ## The consolidateResults command
 
-Used for consolidating results from several commands, across different SCMs, into a single file with unique contributors count, refer to the [command page](../../../../consolidateResults.md)
+Used for consolidating results from several commands, across different SCMs, into a single file with unique contributors count, refer to the [command page](consolidateResults.md/)
