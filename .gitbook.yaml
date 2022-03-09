@@ -15,3 +15,4 @@ redirects:
   getting-started/snyk-cicd-integration-good-practices: features/integrations/ci-cd-integrations/README.md
   features/integrations/snyk-broker: features/integrations/snyk-broker/README.md
   products/snyk-infrastructure-as-code/jira-integration/understanding-configuration-scan-issues: products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-configuration-scan-issues.md
+  products/snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries: products/snyk-container/integrate-self-hosted-container-registries.md
