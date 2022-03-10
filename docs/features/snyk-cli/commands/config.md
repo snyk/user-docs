@@ -14,7 +14,7 @@ This command does not manage the `.snyk` file that is part of your project. See 
 
 Use the `-d` option to output the debug logs.
 
-## Commands
+## Subcommands
 
 ### `get <KEY>`
 
