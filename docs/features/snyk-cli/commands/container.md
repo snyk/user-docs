@@ -2,7 +2,7 @@
 
 ## Usage
 
-`snyk container <COMMAND> [<OPTIONS>] [<IMAGE>]`
+`snyk container <SUBCOMMAND> [<OPTIONS>] [<IMAGE>]`
 
 ## Description
 
@@ -10,7 +10,7 @@ The `snyk container` command tests container images for vulnerabilities.
 
 For more information see [Snyk CLI for container security](https://docs.snyk.io/products/snyk-container/snyk-cli-for-container-security).
 
-## Commands
+## Subcommands
 
 ### `test`
 
@@ -37,7 +37,7 @@ You can use environment variables to configure the Snyk CLI and also set variabl
 
 Use the `-d` option to output the debug logs.
 
-## Options
+## Options for the container test and container monitor subcommands
 
 ### `--print-deps`
 
@@ -119,7 +119,7 @@ Report only vulnerabilities at the specified level or higher.
 
 ### `--app-vulns`
 
-&#x20;Allow detection of vulnerabilities in your application dependencies from container images, as well as from the operating system, all in one single scan.
+Allow detection of vulnerabilities in your application dependencies from container images, as well as from the operating system, all in one single scan.
 
 ### `--nested-jars-depth`
 
@@ -127,7 +127,7 @@ When using `--app-vulns` use the `--nested-jars-depth` option to set how many le
 
 ### `--exclude-base-image-vulns`
 
-Do not  show vulnerabilities introduced only by the base image. Available when using `snyk container test` only.
+Do not show vulnerabilities introduced only by the base image. Available when using `snyk container test` only.
 
 ### `--platform=<PLATFORM>`
 
@@ -147,7 +147,7 @@ Specify a password to use when connecting to a container registry. This is ignor
 
 ### Scan and monitor Docker images
 
-`$ snyk container test <image>`&#x20;
+`$ snyk container test <image>`
 
 `$ snyk container monitor <image>`
 
