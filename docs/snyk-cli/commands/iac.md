@@ -10,7 +10,7 @@ The `snyk iac` command finds security issues in Infrastructure as Code files.
 
 For more information see [Synk CLI for Infrastructure as Code](https://docs.snyk.io/products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code).
 
-## Command: `test`
+## Subcommand: `test`
 
 Test for any known issue.
 
@@ -31,7 +31,7 @@ You can use environment variables to configure the Snyk CLI and also set variabl
 
 Use the `-d` option to output the debug logs.
 
-## Options
+## Options for the iac test subcommand
 
 ### `--detection-depth=<DEPTH>`
 
@@ -105,7 +105,7 @@ This option cannot be used if the custom rules settings were configured with the
 
 Example: `--rules=bundle.tar.gz` (Scan the configuration files using custom rules and internal Snyk rules.)
 
-## Examples for the iac test command
+## Examples for the iac test subcommand
 
 \[For more information see [Synk CLI for Infrastructure as Code](https://docs.snyk.io/products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code).
 
