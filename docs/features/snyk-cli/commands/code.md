@@ -2,7 +2,7 @@
 
 ## Usage
 
-`snyk code [<COMMAND>] [<OPTIONS>] [<PATH>]`
+`snyk code [<SUBCOMMAND>] [<OPTIONS>] [<PATH>]`
 
 ## Description
 
