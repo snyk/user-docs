@@ -2,7 +2,7 @@
 
 ## Usage
 
-`snyk config <COMMAND> [<OPTIONS>]`
+`snyk config <SUBCOMMAND> [<OPTIONS>]`
 
 ## Description
 
