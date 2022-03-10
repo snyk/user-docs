@@ -69,7 +69,7 @@ docker pull snyk/code-agent
 
 The following environment variables are mandatory to configure the code agent:
 
-* **SNYK\_TOKEN -** your snyk token, as also used by the CLI, see [Authenticate the CLI with your account](../../snyk-cli/authenticate-the-cli-with-your-account/) for additional details.
+* **SNYK\_TOKEN -** your snyk token, as also used by the CLI, see [Authenticate the CLI with your account](../../../snyk-cli/authenticate-the-cli-with-your-account/) for additional details.
 * **PORT** - the local port, for which the code agent accepts connections, Default is 3000.
 
 To run the **code-agent:**

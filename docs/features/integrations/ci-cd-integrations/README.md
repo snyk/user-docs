@@ -18,7 +18,7 @@ Follow similar steps as those for installing the CLI locally. You must be able t
 
 #### **Deploy Snyk CLI binary version**
 
-The advantage of the binary setup is that it has no dependency with the local environment. For example, it is useful if you cannot run an npm command in your pipeline.&#x20;
+The advantage of the binary setup is that it has no dependency with the local environment. For example, it is useful if you cannot run an npm command in your pipeline.
 
 CLI binaries are available here: [https://github.com/snyk/snyk/tags](https://github.com/snyk/snyk/tags)
 
@@ -40,7 +40,7 @@ Developer teams typically adopt Snyk in the following stages:
 2. [Use Snyk as a gatekeeper](./#stage-2-use-snyk-as-a-gatekeeper-snyk-test) (`snyk test`)
 3. [Continuous monitoring](./#stage-3-continuous-monitoring-snyk-test-and-snyk-monitor) (`snyk test` and `snyk monitor`)
 
-#### **Stage 1: Expose vulnerabilities (**s**nyk monitor)**
+#### **Stage 1: Expose vulnerabilities (snyk monitor)**
 
 This is a typical initial approach, using Snyk results to expose vulnerabilities during the development process, which increases visibility of these vulnerabilities among members of your team.
 
@@ -111,7 +111,7 @@ Snyk CLI can be configured to:
 
 #### **Exit Codes**
 
-The `snyk test` command is synchronous; it ends with an exit code. Your build system can use exit codes to either pass or fail the build based on the test results. See the [CLI reference](../../snyk-cli/cli-reference/) for the meaning of the exit codes.
+The `snyk test` command is synchronous; it ends with an exit code. Your build system can use exit codes to either pass or fail the build based on the test results. See the [CLI reference](../../../snyk-cli/cli-reference/) for the meaning of the exit codes.
 
 The `snyk monitor` command posts The snyk monitor command posts the dependency tree to of a project to your Snyk account and monitors it for vulnerabilities there.. It is an asynchronous command, that does not end with an exit code based on the vulnerability status.
 
@@ -133,7 +133,7 @@ Use `snyk test` to fail the build on high severity issues:
 snyk test --all-projects --org=snyk-apps --severity-threshold=high
 ```
 
-To see the full list of options in the CLI, run the snyk test --help, snyk monitor --help, and snyk container --help commands or see the [help docs](../../snyk-cli/commands/).
+To see the full list of options in the CLI, run the snyk test --help, snyk monitor --help, and snyk container --help commands or see the [help docs](broken-reference).
 
 ### Configuring options for failing builds
 
@@ -142,7 +142,7 @@ You can add options to the `snyk test` command to refine parameters that can res
 * `--severity-threshold=high`: Fail the build only for high severity issues,
 * `--fail-on=upgradable`: fail the build only for issues that are upgradable (can be fixed with Snyk fix advice)
 
-You can also fail the build for any other parameter in the Snyk JSON output (such as CVSS score), using a wrapper like [snyk-filter](https://github.com/snyk-tech-services/snyk-filter), or using additional tooling like [snyk-delta](https://github.com/snyk-tech-services/snyk-delta) to fail the build only for issues found since the last build. For information on using snyk-delta see [Advanced failing of builds in the Snyk CLI](../../snyk-cli/test-for-vulnerabilities/advanced-failing-of-builds-in-snyk-cli.md).
+You can also fail the build for any other parameter in the Snyk JSON output (such as CVSS score), using a wrapper like [snyk-filter](https://github.com/snyk-tech-services/snyk-filter), or using additional tooling like [snyk-delta](https://github.com/snyk-tech-services/snyk-delta) to fail the build only for issues found since the last build. For information on using snyk-delta see [Advanced failing of builds in the Snyk CLI](../../../snyk-cli/test-for-vulnerabilities/advanced-failing-of-builds-in-snyk-cli.md).
 
 ### Creating custom build artifacts
 
@@ -264,7 +264,7 @@ Snyk can help as follows:
 
 * Regardless of how you integrate with container images during CI, run a Snyk Container scan as a separate build step from your Snyk Open Source (application SCA) test. This allows you to isolate build failures to vulnerabilities within either the container/OS layer or the application layer, respectively. This also enables more easily containerized build tasks.
 * Use CLI flags like `--fail-on` and `--sevety-threshold` to customize the failure status for the build task. For more advanced usage, you can use `--json` to generate a JSON file containing the full vulnerability report, and set your own build failure status based on the JSON data.
-* Pass  `--exclude-base-image-vulns` to report only vulnerabilities introduced by your user layers, rather than vulnerabilities that come from the container’s base image (the image you specify in the FROM line in the Dockerfile).
+* Pass `--exclude-base-image-vulns` to report only vulnerabilities introduced by your user layers, rather than vulnerabilities that come from the container’s base image (the image you specify in the FROM line in the Dockerfile).
 * Run `snyk container monitor` following `snyk container test` (or simply check the **Monitor** box on your plugin settings), to keep a record of this container’s bill of materials within the Snyk UI and proactively monitor for new vulnerabilities on a daily basis. This is useful when pushing new releases into production environments. You can use `--project-name` to specify a unique identifier for the release to ensure production containers are tracked separately from others in your build process.
 
 ### Snyk IaC-specific strategies
@@ -286,7 +286,7 @@ This section provides a few tips to help troubleshoot or scale CI/CD integration
 
 If CLI and pipeline are running the same engine, try to clone the project and scan with CLI.
 
-Play with the CLI flags. Use the Snyk CLI tool to find and fix known vulnerabilities as you run it in the pipeline. For more information see the [CLI reference](../../snyk-cli/cli-reference/).
+Play with the CLI flags. Use the Snyk CLI tool to find and fix known vulnerabilities as you run it in the pipeline. For more information see the [CLI reference](../../../snyk-cli/cli-reference/).
 
 #### Step 2: Get logs
 
@@ -304,7 +304,7 @@ DEBUG=* snyk test
 
 #### Step 3: Use the CLI instead of the plugin
 
-Try to replace the native plugin with the CLI by installing the CLI. See [Install the Snyk CLI ](../../snyk-cli/install-the-snyk-cli/)for instructions.
+Try to replace the native plugin with the CLI by installing the CLI. See [Install the Snyk CLI ](../../../snyk-cli/install-the-snyk-cli/)for instructions.
 
 ### Common flags in a CI/CD integration
 

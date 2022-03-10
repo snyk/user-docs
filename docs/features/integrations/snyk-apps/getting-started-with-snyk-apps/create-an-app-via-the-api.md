@@ -16,9 +16,9 @@ The response includes details necessary to complete the integration: **clientId*
 Never share the **clientSecret** publicly, as this is used to authenticate your App. This is also the only time you’ll be able to get the **clientSecret**, so keep it secure and private. If you lose it or if the secret is leaked, you can [rotate your App's **clientSecret**](managing-app-details.md#rotate-app-client-secret).
 {% endhint %}
 
-## [Create using Snyk CLI](../../../snyk-cli/create-a-snyk-app-using-the-snyk-cli.md)
+## [Create using Snyk CLI](../../../../snyk-cli/create-a-snyk-app-using-the-snyk-cli.md)
 
-The [Snyk CLI](../../../snyk-cli/) can be used to create the Snyk App. If you don't already have the Snyk CLI installed on your machine, you can easily do so by following our [getting started with Snyk CLI docs](../../../snyk-cli/getting-started-with-the-cli/).
+The [Snyk CLI](../../../../snyk-cli/) can be used to create the Snyk App. If you don't already have the Snyk CLI installed on your machine, you can easily do so by following our [getting started with Snyk CLI docs](../../../../snyk-cli/getting-started-with-the-cli/).
 
 {% hint style="warning" %}
 All `apps` commands are only accessible behind the `--experimental` flag and the behaviour can change at any time, without prior notice. You are kindly advised to use all the commands with caution.
@@ -28,9 +28,9 @@ If you are already authenticated with Snyk CLI (`snyk auth`) you can use the `ap
 
 Snyk Apps related sub-commands are under the `snyk apps` command.
 
-Use the `create` sub-command to create the Snyk Apps. There are two ways to use the command.&#x20;
+Use the `create` sub-command to create the Snyk Apps. There are two ways to use the command.
 
-First is the normal mode, for example:&#x20;
+First is the normal mode, for example:
 
 ```
 snyk apps create --experimental --org=48ebb069-472f-40f4-b5bf-d2d103bc02d4 --name='My Awesome App' --redirect-uris=https://example1.com,https://example2.com --scopes=apps:beta
@@ -49,7 +49,7 @@ snyk apps create --experimental --org=48ebb069-472f-40f4-b5bf-d2d103bc02d4 --nam
 
     (Required for the `create` command) A comma-separated list of scopes that are required by your Snyk App. This will form a list of scopes that your app is allowed to request during authorization.
 
-The second is the interactive mode, which prompts you to enter all the values in a similar fashion as the normal mode. Once the Snyk App has been created, the response Snyk App data of the created Snyk App is printed to the console.&#x20;
+The second is the interactive mode, which prompts you to enter all the values in a similar fashion as the normal mode. Once the Snyk App has been created, the response Snyk App data of the created Snyk App is printed to the console.
 
 The following is an example of the interactive mode:
 

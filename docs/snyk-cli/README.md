@@ -2,7 +2,7 @@
 
 [Snyk](https://snyk.io) scans and monitors your projects for security vulnerabilities. The following shows an example of Snyk CLI test command output.
 
-![Snyk CLI test command output](../../.gitbook/assets/snyk-cli-screenshot.png)
+![Snyk CLI test command output](../.gitbook/assets/snyk-cli-screenshot.png)
 
 ## What is Snyk?
 
@@ -21,4 +21,4 @@ Snyk CLI brings functionality of [Snyk](https://snyk.io) into your development w
 
 ## Supported languages and tools
 
-Snyk supports many languages and tools, including Java, .NET, JavaScript, Python, Golang, PHP, C/C++, Ruby, Scala and more. CLI also supports [Snyk Container scanning](../../products/snyk-container/snyk-cli-for-container-security/) including Docker scanning, and [Infrastructure as Code scanning](../../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/) including Terraform and Kubernetes (K8s) projects. For more information see [Open Source language and package manager support](../../products/snyk-open-source/language-and-package-manager-support/).
+Snyk supports many languages and tools, including Java, .NET, JavaScript, Python, Golang, PHP, C/C++, Ruby, Scala and more. CLI also supports [Snyk Container scanning](../products/snyk-container/snyk-cli-for-container-security/) including Docker scanning, and [Infrastructure as Code scanning](../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/) including Terraform and Kubernetes (K8s) projects. For more information see [Open Source language and package manager support](../products/snyk-open-source/language-and-package-manager-support/).

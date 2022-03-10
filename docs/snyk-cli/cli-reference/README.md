@@ -14,19 +14,19 @@ To learn more about each Snyk CLI command, use the `--help` option, for example,
 
 Each command in this list is linked to the corresponding help page in these docs. A list of all the [options](./#options) for Snyk CLI commands is at the end of this page. The options are explained in detail in the help for each command.
 
-### [`snyk auth`](../commands/auth.md)
+### [`snyk auth`](../../features/snyk-cli/commands/auth.md)
 
 Authenticate Snyk CLI with a Snyk account.
 
-### [`snyk test`](../commands/test.md)
+### [`snyk test`](../../features/snyk-cli/commands/test.md)
 
 Test a project for open source vulnerabilities and license issues.
 
-### [`snyk monitor`](../commands/monitor.md)
+### [`snyk monitor`](../../features/snyk-cli/commands/monitor.md)
 
 Snapshot and continuously monitor a project for open source vulnerabilities and license issues.
 
-### [`snyk container`](../commands/container.md)
+### [`snyk container`](../../features/snyk-cli/commands/container.md)
 
 Test container images for vulnerabilities.
 
@@ -34,29 +34,29 @@ Test container images for vulnerabilities.
 
 Find security issues in Infrastructure as Code files.
 
-### [`snyk code`](../commands/code.md)
+### [`snyk code`](../../features/snyk-cli/commands/code.md)
 
 Find security issues using static code analysis.
 
-### [`snyk log4shell`](../commands/log4shell.md)
+### [`snyk log4shell`](../../features/snyk-cli/commands/log4shell.md)
 
 Find Log4Shell vulnerability.
 
-### [`snyk config`](../commands/config.md)
+### [`snyk config`](../../features/snyk-cli/commands/config.md)
 
 Manage Snyk CLI configuration.
 
-### [`snyk policy`](../commands/policy.md)
+### [`snyk policy`](../../features/snyk-cli/commands/policy.md)
 
 Display the `.snyk` policy for a package.
 
-### [`snyk ignore`](../commands/ignore.md)
+### [`snyk ignore`](../../features/snyk-cli/commands/ignore.md)
 
 Modify the `.snyk` policy to ignore stated issues.
 
 ## New CLI commands
 
-### [snyk fix](../fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix.md)
+### [snyk fix](../../features/snyk-cli/fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix.md)
 
 Apply the recommended updates for supported ecosystems automatically.
 

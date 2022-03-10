@@ -40,7 +40,7 @@ Coming soon! Stay tuned.
 
 ### Test code in CI/CD using Snyk CLI
 
-The Snyk Command Line Interface ([CLI](../../../features/snyk-cli/)) for Snyk Code helps you find and fix security flaws in your code on your local machine or in the CI/CD process.
+The Snyk Command Line Interface ([CLI](../../../snyk-cli/)) for Snyk Code helps you find and fix security flaws in your code on your local machine or in the CI/CD process.
 
 ## APIs and extensibility
 

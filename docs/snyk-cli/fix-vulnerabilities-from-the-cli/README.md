@@ -4,4 +4,4 @@ This group of pages includes information about CLI test results, ignoring vulner
 
 * [View CLI test results](view-cli-test-results.md)
 * [Ignore vulnerabilities using Snyk CLI](ignore-vulnerabilities-using-snyk-cli.md)
-* [Automatic fixing with snyk fix](automatic-remediation-with-snyk-fix.md)
+* [Automatic fixing with snyk fix](../../features/snyk-cli/fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix.md)

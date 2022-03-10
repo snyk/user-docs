@@ -17,18 +17,14 @@ Snyk integrates directly into development tools and automation pipelines, making
 * [Snyk Container](https://snyk.io/product/container-vulnerability-management/): Find and fix vulnerabilities in container images and Kubernetes workloads
 * [Snyk Infrastructure as Code (IaC)](https://snyk.io/product/infrastructure-as-code-security/): Find and fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates.
 
-{% tabs %}
-{% tab title="Snyk CLI" %}
 You can use the CLI for scanning and monitoring on your local machine and integrate it into your workflow pipeline. You can use the Snyk CLI to scan applications, containers, and infrastructure as code for security vulnerabilities. Install the CLI via npm, Homebrew, Scoop, or manually.
 
-{% content-ref url="features/snyk-cli/" %}
-[snyk-cli](features/snyk-cli/)
+{% content-ref url="snyk-cli/" %}
+[snyk-cli](snyk-cli/)
 {% endcontent-ref %}
 
 {% embed url="https://snyk.io/blog/snyk-cli-cheat-sheet" %}
-{% endtab %}
 
-{% tab title="Snyk API" %}
 Snyk’s extensibility and API enables developers to tune Snyk’s security automation to their specific workflows--ensuring both a great developer experience and consistent platform governance. Learn more in our [Snyk API documentation](https://snyk.docs.apiary.io/#introduction/api-v3) and see how our customers like [Twilio and Spotify](https://snyk.io/blog/snyk-watcher-keep-snyk-in-sync/) use the Snyk API in their workflows.
 
 #### V1
@@ -36,14 +32,8 @@ Snyk’s extensibility and API enables developers to tune Snyk’s security auto
 The Snyk v1 API is available to customers on [paid plans](https://snyk.io/plans) and allows you to programatically integrate with Snyk.
 
 {% embed url="https://snyk.docs.apiary.io" %}
-
-#### V3
-
-The Snyk v3 API is a new, standards-driven API (OpenAPI, JSON API) available to all customers.
-
-{% embed url="https://apidocs.snyk.io" %}
-{% endtab %}
-{% endtabs %}
+**V3**
+{% endembed %}
 
 ### **What does it cost?**
 

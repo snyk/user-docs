@@ -1,6 +1,6 @@
 # Getting started with the CLI
 
-To use the CLI you must install it and authenticate. See [Install the Snyk CLI](../install-the-snyk-cli/) and the [Auth command help](../commands/auth.md).
+To use the CLI you must install it and authenticate. See [Install the Snyk CLI](../install-the-snyk-cli/) and the [Auth command help](../../features/snyk-cli/commands/auth.md).
 
 After authenticating you can **test** your installation. Change directory into a folder containing a supported package manifest file such as package.json, pom.xml, or composer.lock) (`cd /my/project/`) and run `snyk test`.
 
@@ -8,7 +8,7 @@ Alternatively, you can perform a **quick test** on a public npm package, for exa
 
 Look at the `test` command **report** in your terminal. Snyk found and reported several vulnerabilities in the package. For each issue found, Snyk reports the severity of the issue, provides a link to a detailed description, reports the path through which the vulnerable module got into your system, and provides guidance on how to fix the problem.
 
-Before using the Snyk CLI to test your project for vulnerabilities you must **build your project**, with limited exceptions (for details see [Which projects must be built before testing with CLI?](https://support.snyk.io/hc/en-us/articles/360015552617-Which-projects-must-be-built-before-testing-with-CLI-)). Depending on the language of your project, you may need to **set up your language environment** before using the Snyk CLI. For details refer to [Open Source language and package manager support](../../../products/snyk-open-source/language-and-package-manager-support/).
+Before using the Snyk CLI to test your project for vulnerabilities you must **build your project**, with limited exceptions (for details see [Which projects must be built before testing with CLI?](https://support.snyk.io/hc/en-us/articles/360015552617-Which-projects-must-be-built-before-testing-with-CLI-)). Depending on the language of your project, you may need to **set up your language environment** before using the Snyk CLI. For details refer to [Open Source language and package manager support](../../products/snyk-open-source/language-and-package-manager-support/).
 
 ## Scan your project
 
@@ -37,7 +37,7 @@ You can log in to the Snyk app and navigate to the [Projects page](https://app.s
 
 For more information see [Monitor your projects at regular intervals](../secure-your-projects-in-the-long-term/monitor-your-projects-at-regular-intervals.md).
 
-![Snyk monitor snapshot and scan results](<../../../.gitbook/assets/monitor (1).png>)
+![Snyk monitor snapshot and scan results](<../../.gitbook/assets/monitor (1).png>)
 
 ## Running out of tests
 

@@ -33,7 +33,7 @@ The `--platform` flag should contain one of:
 When Docker is installed, the Snyk CLI `container` command uses any pre-configured registry authentication. If you are not using Docker you can pass the credentials on the command line:
 
 * Either use the following environment variables: `SNYK_REGISTRY_USERNAME` and `SNYK_REGISTRY_PASSWORD`
-* Or  pass the username and password as follows:
+* Or pass the username and password as follows:
 
 ```
 snyk container test <repository>:<tag> --username= --password=
@@ -49,12 +49,12 @@ Some useful CLI options include the following:
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `--json`                     | Print results in JSON format, useful for integrating with other tools                                                                                                                                        |
 | `--sarif`                    | Return results in [SARIF](https://www.oasis-open.org/committees/tc\_home.php?wg\_abbrev=sarif) format, useful for integrating with other tools. Note this requires the test to be run with `--file` as well. |
-| `--exclude-base-image-vulns` | Do not  show vulnerabilities introduced only by the base image. Available when using `snyk container test` only.                                                                                             |
+| `--exclude-base-image-vulns` | Do not show vulnerabilities introduced only by the base image. Available when using `snyk container test` only.                                                                                              |
 | `--severity-threshold`       | Report only vulnerabilities at the specified level or higher.                                                                                                                                                |
 | `--app-vulns`                | Snyk allows detection of vulnerabilities in your application dependencies from container images, as well as from the operating system, all in one single scan.                                               |
 | `--nested-jars-depth`        | When using `--app-vulns` use the `--nested-jars-depth=n` option to set how many levels of nested jars Snyk is to unpack.                                                                                     |
 
-For more options, see the Snyk CLI `container` [help](../../../features/snyk-cli/commands/container.md) or display the help by running:
+For more options, see the Snyk CLI `container` [help](broken-reference) or display the help by running:
 
 ```
 snyk container --help

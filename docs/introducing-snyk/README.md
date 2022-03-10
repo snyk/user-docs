@@ -4,7 +4,7 @@ Snyk tests for vulnerabilities in [your own code](https://snyk.io/product/snyk-c
 
 ![](<../.gitbook/assets/Screen Shot 2022-02-22 at 8.18.50 AM.png>)
 
-### Snyk products&#x20;
+### Snyk products
 
 * [Snyk Open Source](https://docs.snyk.io/snyk-open-source): Find and fix open source vulnerabilities. Snyk Open Source also includes [Snyk license compliance](https://docs.snyk.io/snyk-open-source) to help manage your open source license usage.
 * [Snyk Code](https://snyk.io/product/snyk-code/): Find and fix vulnerabilities in your application code in real-time during the development process.
@@ -13,16 +13,16 @@ Snyk tests for vulnerabilities in [your own code](https://snyk.io/product/snyk-c
 
 See [getting-started-snyk-products.md](../getting-started/getting-started-snyk-products.md "mention").
 
-### Supported languages&#x20;
+### Supported languages
 
 Snyk supports a range of languages, such as JavaScript, Java, .NET, and many others.
 
 Languages / OSs supported depend on the relevant [Snyk product](./#snyk-products-and-platforms):
 
 * Snyk Open Source: see [language-and-package-manager-support](../products/snyk-open-source/language-and-package-manager-support/ "mention")
-* &#x20;Snyk Code: see [snyk-code-language-and-framework-support.md](../products/snyk-code/snyk-code-language-and-framework-support.md "mention")
+* Snyk Code: see [snyk-code-language-and-framework-support.md](../products/snyk-code/snyk-code-language-and-framework-support.md "mention")
 * Snyk Container: see [supported-operating-system-distributions.md](../products/snyk-container/snyk-container-security-basics/supported-operating-system-distributions.md "mention")
-* Snyk IaC: we support configuration files for Terraform or Kubernetes environments&#x20;
+* Snyk IaC: we support configuration files for Terraform or Kubernetes environments
 
 ### Supported integrations
 
@@ -44,11 +44,10 @@ Taking a developer-first approach to security, Snyk integrates with leading IDE,
 
 You can use the Snyk CLI (Command Line Interface) to scan and monitor on your local machine, and integrate it into your pipeline. You can use the Snyk CLI to scan your applications, containers, and infrastructure as code for security vulnerabilities. You can install the CLI via npm, Homebrew, Scoop, or manually.
 
-See [snyk-cli](../features/snyk-cli/ "mention") for more details.
+See [snyk-cli](../snyk-cli/ "mention") for more details.
 
 ### Snyk API
 
-Snyk’s extensibility and API enable developers to tune Snyk’s security automation to their specific workflows, ensuring both developer experience and consistent platform governance.&#x20;
+Snyk’s extensibility and API enable developers to tune Snyk’s security automation to their specific workflows, ensuring both developer experience and consistent platform governance.
 
 Learn more in our [Snyk API documentation](https://support.snyk.io/hc/en-us/articles/360000914857-Does-Snyk-have-an-API-) and see how our customers like [Twilio and Spotify](https://snyk.io/blog/snyk-watcher-keep-snyk-in-sync/) use the Snyk API in their workflows.
-

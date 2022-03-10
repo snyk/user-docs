@@ -2,7 +2,7 @@
 
 You can install the [Snyk CLI](../) using the methods explained on this page.
 
-After you install the Snyk CLI, you must [authenticate](../commands/auth.md). You can then can [get started](../getting-started-with-the-cli/) testing and fixing your vulnerabilities, beginning with testing your installation.
+After you install the Snyk CLI, you must [authenticate](../../features/snyk-cli/commands/auth.md). You can then can [get started](../getting-started-with-the-cli/) testing and fixing your vulnerabilities, beginning with testing your installation.
 
 ## Install the Snyk CLI with npm or Yarn
 
@@ -80,7 +80,7 @@ docker run -it
 
 ## Install as a part of a Snyk integration
 
-Snyk also offers many [integrations](../../integrations/) into developer tooling. These integrations install and manage the Snyk CLI for you. Integrations include the following:
+Snyk also offers many [integrations](../../features/integrations/) into developer tooling. These integrations install and manage the Snyk CLI for you. Integrations include the following:
 
 * [Snyk Jenkins plugin](https://github.com/jenkinsci/snyk-security-scanner-plugin)
 * [CircleCI Orb](https://github.com/snyk/snyk-orb)
@@ -91,4 +91,4 @@ Snyk also offers many [integrations](../../integrations/) into developer tooling
 * [Eclipse IDE Extension](https://github.com/snyk/snyk-eclipse-plugin)
 * [Maven plugin](https://github.com/snyk/snyk-maven-plugin)
 
-See the [integrations](../../integrations/) docs for more details.
+See the [integrations](../../features/integrations/) docs for more details.

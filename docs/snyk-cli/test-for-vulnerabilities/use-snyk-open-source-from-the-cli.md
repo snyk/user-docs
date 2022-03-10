@@ -32,7 +32,7 @@ The way in which Snyk analyzes the file and builds the tree varies depending on 
 * Using the Snyk CLI
 * Importing from a Snyk SCM (Source Control Management) integration
 
-See [Open Source language and package manager support](../../../products/snyk-open-source/language-and-package-manager-support/) for more information.
+See [Open Source language and package manager support](../../products/snyk-open-source/language-and-package-manager-support/) for more information.
 
 ### Monorepos and projects with multiple manifest files
 
@@ -52,4 +52,4 @@ Many package managers allow calling out separately dependencies which are to be 
 
 `$ snyk test --dev`
 
-See [Language and package manager support](../../../products/snyk-open-source/language-and-package-manager-support/) for more information concerning supported languages.
+See [Language and package manager support](../../products/snyk-open-source/language-and-package-manager-support/) for more information concerning supported languages.

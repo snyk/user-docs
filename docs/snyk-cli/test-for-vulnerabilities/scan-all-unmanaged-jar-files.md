@@ -1,6 +1,6 @@
 # Scan all unmanaged JAR files
 
-The Snyk CLI can scan unmanaged JAR files in [Java applications](../../../products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md). The CLI identifies the package name, version, and vulnerabilities only if the local JAR file hash matches the Maven Central JAR file hash.
+The Snyk CLI can scan unmanaged JAR files in [Java applications](../../products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md). The CLI identifies the package name, version, and vulnerabilities only if the local JAR file hash matches the Maven Central JAR file hash.
 
 Java apps typically have JAR files in a number of locations within an application. To avoid problems from scanning multiple JAR files in the same folder, scan individual JAR files, especially for old Java apps that use Ant.
 
@@ -10,7 +10,7 @@ Java apps typically have JAR files in a number of locations within an applicatio
 
 To view the versions of Maven and the maven-dependency-plugin run `mvn -v`.
 
-![Screenshot of output from mvn -v](../../../.gitbook/assets/untitled\_\_1\_.png)
+![Screenshot of output from mvn -v](../../.gitbook/assets/untitled\_\_1\_.png)
 
 Use the `snyk test --scan-all-unmanaged` command to scan all JAR files in a single folder to match any dependencies hosted on Maven central. Scanning all unmanaged files may lead to dependency conflicts if an application was not built using a package manager like Gradle or Maven. This is especially true for applications built using Ant.
 
@@ -32,4 +32,4 @@ for /R %workspace% %%f in (*.jar) do cmd /c snyk monitor --scan-unmanaged --remo
 
 The following shows the end result in the Snyk UI for an app with the --**remote-repo-url=econnect**
 
-![Result of scanning unmanaged JAR files](../../../.gitbook/assets/untitled.png)
+![Result of scanning unmanaged JAR files](../../.gitbook/assets/untitled.png)

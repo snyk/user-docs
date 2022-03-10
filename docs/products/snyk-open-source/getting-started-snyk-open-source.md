@@ -6,7 +6,7 @@ Get started with Snyk Open Source to inspect, find and fix vulnerabilities in yo
 This process describes getting started using the Snyk app UI and a SCM (source code management) system.
 
 * You can also use an [IDE tool](https://docs.snyk.io/integrations/ide-tools) or a [CI/CD integration](https://docs.snyk.io/integrations/ci-cd-integrations). See [Integrations](https://docs.snyk.io/integrations).
-* You can get started with the [snyk-cli](../../features/snyk-cli/ "mention"); see [getting-started-with-the-cli](../../features/snyk-cli/getting-started-with-the-cli/ "mention").
+* You can get started with the [snyk-cli](../../snyk-cli/ "mention"); see [getting-started-with-the-cli](../../snyk-cli/getting-started-with-the-cli/ "mention").
 {% endhint %}
 
 ### **Prerequisites**

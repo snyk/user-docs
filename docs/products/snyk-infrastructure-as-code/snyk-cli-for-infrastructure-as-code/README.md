@@ -1,6 +1,6 @@
 # Snyk CLI for Infrastructure as Code
 
-To use the CLI you must first [install](../../../features/snyk-cli/install-the-snyk-cli/) it and then [authenticate](../../../features/snyk-cli/commands/auth.md).
+To use the CLI you must first [install](../../../snyk-cli/install-the-snyk-cli/) it and then [authenticate](broken-reference).
 
 With Snyk Infrastructure as Code, you can test your configuration files directly from the CLI. See the following pages for details:
 

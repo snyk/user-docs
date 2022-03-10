@@ -14,4 +14,4 @@ To authenticate using your API token:
 2. In the **KEY** field, click **click to show**; then select and copy your API token. A screenshot follows.
 3. In the CLI, run `snyk auth [<API_TOKEN>]` or `snyk config set api=<token>`. The `<API_TOKEN>`is validated by the Snyk API.
 
-![Snyk Account Settings, API Token](../../../.gitbook/assets/API-token-CLI-auth-details-22-01.png)
+![Snyk Account Settings, API Token](../../.gitbook/assets/API-token-CLI-auth-details-22-01.png)

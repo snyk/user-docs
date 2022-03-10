@@ -4,9 +4,9 @@
 All `apps` sub-commands are only accessible behind the `--experimental` flag and the behavior can change at any time, without prior notice. Use all the commands with caution
 {% endhint %}
 
-You can use the Snyk CLI to create  [Snyk Apps](../integrations/snyk-apps/) by running `snyk apps create`.
+You can use the Snyk CLI to create [Snyk Apps](../features/integrations/snyk-apps/) by running `snyk apps create`.
 
-You can pass the Snyk App related data either by using the options to pass it to the Snyk CLI or by using the `--interactive` mode, for example `snyk apps --experimental --interactive`.&#x20;
+You can pass the Snyk App related data either by using the options to pass it to the Snyk CLI or by using the `--interactive` mode, for example `snyk apps --experimental --interactive`.
 
 All Snyk Apps related sub-commands are grouped under the top-level `apps` command, for example, `snyk apps create`.
 
@@ -30,7 +30,7 @@ The name of the Snyk App that to be displayed to the user during the authenticat
 
 `--redirect-uris=<REDIRECT_URIS>`
 
-A comma-separated list of redirect URIs. This forms a list of allowed redirect URIs to call __ back after authentication. Required for the `create` command.
+A comma-separated list of redirect URIs. This forms a list of allowed redirect URIs to call \_\_ back after authentication. Required for the `create` command.
 
 `--scopes=<SCOPES>`
 
@@ -42,7 +42,6 @@ Create a Snyk App
 
 `snyk apps create --experimental --org=48ebb069-472f-40f4-b5bf-d2d103bc02d4 --name='My Awesome App' --redirect-uris=https://example1.com,https://example2.com --scopes=apps:beta`
 
-or&#x20;
+or
 
 `snyk apps create --experimental --interactive`
-

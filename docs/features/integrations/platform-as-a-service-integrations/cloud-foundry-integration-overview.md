@@ -17,7 +17,7 @@ In order to turn on the Cloud Foundry integration you’ll need to:
 
 In order for Snyk to be able to monitor your deployed Cloud Foundry applications, you’ll first need to connect Snyk to your Cloud Foundry account. You can do this by navigating to the [Integrations page](https://app.snyk.io/integrations) and clicking on “Connect to Cloud Foundry”.
 
-![](<../../../.gitbook/assets/uuid-e7c43047-5065-ad28-db37-1c56e8796a8b-en-1- (2) (2) (2) (2) (5) (7) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (25).png>)
+![](<../../../.gitbook/assets/uuid-e7c43047-5065-ad28-db37-1c56e8796a8b-en-1- (2) (2) (2) (2) (5) (7) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (25).png>)
 
 This will take you to a page where you’ll be prompted to enter your Cloud Foundry API URL, username and password. We recommend setting up a dedicated user for your Snyk organization.
 
@@ -39,7 +39,7 @@ At any time after you’ve entered your Cloud Foundry credentials, you can check
 
 The first is on your integration settings page, where you’ll see your current integrations listed as well as their connection status.
 
-![](<../../../.gitbook/assets/uuid-fb1cad51-f7f5-34ae-1142-f24fab0b0751-en (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (14).png>)
+![](<../../../.gitbook/assets/uuid-fb1cad51-f7f5-34ae-1142-f24fab0b0751-en (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (14).png>)
 
 The connection status is also displayed directly on the Cloud Foundry integration settings page (found by clicking “Edit settings” on the integration settings page shown above). If you’ve entered credentials, you’ll see a box indicating whether or not Snyk is able to correctly connect to Cloud Foundry.
 
@@ -55,7 +55,7 @@ If you decide to disable this integration for any reason, you can accomplish thi
 
 You need to find the specific integration you wish to deactivate in your list of integrations and click Edit settings. You are taken to a page that shows the current status of your integration, a place to update your credentials, specific to each integration (credentials, API key, Service Principal, or connection details), and a red box at the bottom to disconnect this integration, like in the example seen below:
 
-![](<../../../.gitbook/assets/uuid-b3a98f2c-4cc8-7753-8efa-396e9ec1e717-en-2- (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (26).png>)
+![](<../../../.gitbook/assets/uuid-b3a98f2c-4cc8-7753-8efa-396e9ec1e717-en-2- (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (26).png>)
 
 If you choose to disconnect, your credentials will be removed from Snyk and any integration-specific projects we had been monitoring will be deactivated on Snyk.
 

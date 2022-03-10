@@ -46,7 +46,7 @@ To scan the project, the dependencies must be available as source code in the sc
 
 #### Scanning archives
 
-By default, archives are not scanned. However, Snyk CLI can recursively extract archives to analyze the source code inside.&#x20;
+By default, archives are not scanned. However, Snyk CLI can recursively extract archives to analyze the source code inside.
 
 To enable archive extraction, specify the depth of the extraction using the `--max-depth` parameter.
 
@@ -97,16 +97,16 @@ Having a large percentage of files in their original (unchanged) form is critica
 
 When you scan C++ projects, the following data is collected and may be stored for troubleshooting purposes:
 
-| Category                        | Description                                                                                                                                                                                           |
-| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Hashes of the scanned files     | All files are converted to a list of irreversible hashes.                                                                                                                                             |
-| Relative paths to scanned files | <p>The paths to files relative to the directory being scanned are included for better identification and matching.<br><br>Example: <br><code>./project-name/vendor/bzip2-1.0.6/blocksort.c</code></p> |
+| Category                        | Description                                                                                                                                                                                          |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Hashes of the scanned files     | All files are converted to a list of irreversible hashes.                                                                                                                                            |
+| Relative paths to scanned files | <p>The paths to files relative to the directory being scanned are included for better identification and matching.<br><br>Example:<br><code>./project-name/vendor/bzip2-1.0.6/blocksort.c</code></p> |
 
 ### Snyk CLI for C / C++ projects
 
 #### Install the Snyk CLI
 
-C/C++ scanning is available in [Snyk CLI](../../../features/snyk-cli/). See [Install the CLI](../../../features/snyk-cli/install-the-snyk-cli/) for details.
+C/C++ scanning is available in [Snyk CLI](../../../snyk-cli/). See [Install the CLI](../../../snyk-cli/install-the-snyk-cli/) for details.
 
 {% hint style="info" %}
 The minimum version of Snyk CLI with C/C++ scanning is 1.857.0.
