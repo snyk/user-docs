@@ -56,7 +56,7 @@ Modify the `.snyk` policy to ignore stated issues.
 
 ## New CLI commands
 
-### [`snyk fix`](../../features/snyk-cli/fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix.md)
+### ``[`snyk fix`](../fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix.md)``
 
 Apply the recommended updates for supported ecosystems automatically.
 
