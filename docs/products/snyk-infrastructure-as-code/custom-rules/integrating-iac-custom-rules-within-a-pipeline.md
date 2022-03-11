@@ -185,7 +185,7 @@ This means configuring the GitHub Action above with another job for updating Sny
 ```
       - name: Update Snyk
         run: |
-          curl --location --request PATCH 'https://api.snyk.io/v3/groups/<group id>/settings/iac/?version=2021-11-03~beta' \
+          curl --location --request PATCH 'https://api.snyk.io/rest/groups/<group id>/settings/iac/?version=2021-11-03~beta' \
           --header 'Content-Type: application/vnd.api+json' \
           --header 'Authorization: token ${{ secrets.SNYK_TOKEN }}' \
           --data-raw '{

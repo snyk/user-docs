@@ -5,7 +5,7 @@
 To view a list of Snyk Apps owned by your Snyk Organization, send a **GET** request to the `apps` endpoint (for details, see the [API documentation](https://snykv3.docs.apiary.io/#reference/apps/app-management/list-existing-apps)):
 
 ```
-https://api.snyk.io/v3/orgs/{orgId}/apps?version={version}
+https://api.snyk.io/rest/orgs/{orgId}/apps?version={version}
 ```
 
 You cannot view the **clientSecret** after the App is created. If you have misplaced it, you can [rotate your **clientSecret**](managing-app-details.md#rotate-app-client-secret) and receive a new one.
@@ -15,7 +15,7 @@ You cannot view the **clientSecret** after the App is created. If you have mispl
 All secret management requests are performed by sending a POST request to the endpoint `/apps/{clientId}/secrets`. For more details refer to the[ API documentation](https://snykv3.docs.apiary.io/#reference/apps/manage-app-secrets/rotate-secret). The clientId can be found using the [List Apps endpoint](managing-app-details.md#view-app-details).
 
 ```
-https://api.snyk.io/v3/orgs/{orgId}/apps/{clientId}/secrets?version={version}
+https://api.snyk.io/rest/orgs/{orgId}/apps/{clientId}/secrets?version={version}
 ```
 
 There are currently three operations that can be performed which are indicated by the body of your POST request:
@@ -55,7 +55,7 @@ You can update your App's name, or the list of redirect URIs you have set.
 To update an App, send a **PATCH** request to the `apps/{clientId}` endpoint (for details, see the [API documentation](https://snykv3.docs.apiary.io/#reference/apps/single-app-management/delete-app)). The clientId can be found using the [List Apps endpoint](managing-app-details.md#view-app-details).
 
 ```
-https://api.snyk.io/v3/orgs/{orgId}/apps/{clientId}?version={version}
+https://api.snyk.io/rest/orgs/{orgId}/apps/{clientId}?version={version}
 ```
 
 ### Delete an App
@@ -63,7 +63,7 @@ https://api.snyk.io/v3/orgs/{orgId}/apps/{clientId}?version={version}
 To delete an App from your Snyk Organization, send a **DELETE** request to the `apps` endpoint (for details, see the [API documentation](https://snykv3.docs.apiary.io/#reference/apps/single-app-management/delete-app)):
 
 ```
-https://api.snyk.io/v3/orgs/{orgId}/apps?version={version}
+https://api.snyk.io/rest/orgs/{orgId}/apps?version={version}
 ```
 
 {% hint style="danger" %}
