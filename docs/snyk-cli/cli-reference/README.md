@@ -30,7 +30,7 @@ Snapshot and continuously monitor a project for open source vulnerabilities and 
 
 Test container images for vulnerabilities.
 
-### ``[`snyk iac`](https://docs.snyk.io/snyk-cli/commands/iac)``
+### [`snyk iac`](https://docs.snyk.io/snyk-cli/commands/iac)
 
 Find security issues in Infrastructure as Code files.
 
@@ -56,11 +56,11 @@ Modify the `.snyk` policy to ignore stated issues.
 
 ## New CLI commands
 
-### [snyk fix](../../features/snyk-cli/fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix.md)
+### [`snyk fix`](../../features/snyk-cli/fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix.md)
 
 Apply the recommended updates for supported ecosystems automatically.
 
-### [snyk apps](../create-a-snyk-app-using-the-snyk-cli.md)
+### [`snyk apps`](../create-a-snyk-app-using-the-snyk-cli.md)
 
 Create a Snyk App using the Snyk CLI.
 
