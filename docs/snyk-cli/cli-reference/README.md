@@ -2,7 +2,7 @@
 
 ## Usage
 
-`snyk [COMMAND] [SUBCOMMAND] [OPTIONS] [PACKAGE] [CONTEXT`-SPECIFIC\_OPTIONS`]`
+`snyk [SUBCOMMAND] [OPTIONS] [PACKAGE] [CONTEXT`-SPECIFIC\_OPTIONS`]`
 
 ## Description
 
@@ -64,25 +64,21 @@ Apply the recommended updates for supported ecosystems automatically.
 
 Create a Snyk App using the Snyk CLI.
 
-### `snyk unmanaged test` and `snyk unmanaged monitor`
-
-For information about these commands see [Snyk CLI for C / C++ projects](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++#snyk-cli-for-c-c++-projects) and the sections that follow on the page.
-
-## Sub-commands of CLI commands
+## Subcommands of CLI commands
 
 The following is a list of the sub-commands for Snyk CLI commands. Each sub-command is followed by the command(s) to which the sub-command applies. The commands are linked to their help docs. For details concerning each sub-command, see the help docs.
 
-`test`: sub-command of [`code`](https://docs.snyk.io/features/snyk-cli/commands/code), [`container`](https://docs.snyk.io/features/snyk-cli/commands/container), and [`iac`](https://docs.snyk.io/features/snyk-cli/commands/iac)
+`test`: subcommand of [`code`](https://docs.snyk.io/features/snyk-cli/commands/code), [`container`](https://docs.snyk.io/features/snyk-cli/commands/container), and [`iac`](https://docs.snyk.io/features/snyk-cli/commands/iac)
 
-`monitor`: sub-command of [`container`](https://docs.snyk.io/features/snyk-cli/commands/container)
+`monitor`: subcommand of [`container`](https://docs.snyk.io/features/snyk-cli/commands/container)
 
-`get <KEY>`: sub-command of [`config`](https://docs.snyk.io/features/snyk-cli/commands/config)\`\`
+`get <KEY>`: subcommand of [`config`](https://docs.snyk.io/features/snyk-cli/commands/config)\`\`
 
-`set <KEY>=<VALUE>`: sub-command of [`config`](https://docs.snyk.io/features/snyk-cli/commands/config)\`\`
+`set <KEY>=<VALUE>`: subcommand of [`config`](https://docs.snyk.io/features/snyk-cli/commands/config)\`\`
 
 `unset <KEY>`: sub-command of [`config`](https://docs.snyk.io/features/snyk-cli/commands/config)\`\`
 
-`clear`: sub-command of [`config`](https://docs.snyk.io/features/snyk-cli/commands/config)\`\`
+`clear`: subcommand of [`config`](https://docs.snyk.io/features/snyk-cli/commands/config)\`\`
 
 ## Exit codes
 
@@ -242,6 +238,10 @@ The following is a list of the options for Snyk CLI commands. Each option is fol
 Currently the following options are not supported:
 
 `--fail-on=<all|upgradable|patchable>`: `test`
+
+## Options for unmanaged projects
+
+For information about these options see [Snyk CLI for C / C++ projects](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++#snyk-cli-for-c-c++-projects).
 
 ## `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
