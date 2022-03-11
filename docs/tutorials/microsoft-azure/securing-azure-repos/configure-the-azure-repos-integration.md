@@ -4,6 +4,8 @@
 
 Let's begin by familiarizing ourselves with the [integration documentation](https://support.snyk.io/hc/en-us/articles/360004002198-Azure-Repos-integration). Then, from the [Snyk](https://snyk.io) web console, navigate to `Integrations`. Search and select `Azure Repos`.
 
+{% hint style="info" %} Note: it is important that a Snyk admin user configure the integration within the UI. Collaborator users cannot complete this task. {% endhint %}
+
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk_integrations_09.png)
 
 From the configuration menu, you will need to perform three steps:
