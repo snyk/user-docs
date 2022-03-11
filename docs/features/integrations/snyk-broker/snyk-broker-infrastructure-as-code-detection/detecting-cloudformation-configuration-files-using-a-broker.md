@@ -1,6 +1,6 @@
-# Detecting CloudFormation configuration files using a broker
+# Detecting CloudFormation configuration files using a Broker
 
-When using a privately hosted Git repository, Snyk Broker must be used to connect with Snyk products. See the [broker documentation](../) for details.
+When using a privately hosted Git repository, Snyk Broker must be used to connect with Snyk products. See the [Broker documentation](../) for details.
 
 This document describes the additional configuration required for the CloudFormation files, for Snyk IaC.
 
@@ -12,7 +12,7 @@ The CloudFormation scanning features require access to the YAML or JSON files in
 
 1. Find and download the appropriate accept.json sample file for the correct source control system [from the Broker repository](https://github.com/snyk/broker/tree/master/client-templates).
 2. Rename it `accept.json` and add the rules below for the appropriate SCM to the **private** array in the JSON file.
-3. Follow the [Configuring the broker](broken-reference) instructions.
+3. Follow [Configuring Broker instructions](detecting-cloudformation-configuration-files-using-a-broker.md#configuring-the-broker).
 
 ## GitHub & GitHub Enterprise rules
 
@@ -167,9 +167,9 @@ The CloudFormation scanning features require access to the YAML or JSON files in
 },
 ```
 
-## Configuring the broker
+## Configuring Broker
 
-The broker takes the path to the accept.json file (with the rules above added) in the ACCEPT environment variable. The example of passing that to the GitHub broker is displayed below.
+Broker takes the path to the accept.json file (with the rules above added) in the ACCEPT environment variable. The example of passing that to the GitHub Broker is displayed below.
 
 ```
 docker run --restart=always \

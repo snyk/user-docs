@@ -1,6 +1,6 @@
 # Snyk CLI for Infrastructure as Code
 
-To use the CLI you must first [install](../../../snyk-cli/install-the-snyk-cli/) it and then [authenticate](broken-reference).
+To use the CLI you must first [install](../../../snyk-cli/install-the-snyk-cli/) it and then [authenticate](../../../tutorials/springone-workshop/developer-environment-and-snyk/snyk-authenticate-using-cli.md#authenticate-the-cli).
 
 With Snyk Infrastructure as Code, you can test your configuration files directly from the CLI. See the following pages for details:
 

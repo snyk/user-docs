@@ -133,7 +133,7 @@ Use `snyk test` to fail the build on high severity issues:
 snyk test --all-projects --org=snyk-apps --severity-threshold=high
 ```
 
-To see the full list of options in the CLI, run the snyk test --help, snyk monitor --help, and snyk container --help commands or see the [help docs](broken-reference).
+To see the full list of options in the CLI, run the snyk test --help, snyk monitor --help, and snyk container --help commands or see the [help docs](../../../snyk-cli/commands/).
 
 ### Configuring options for failing builds
 

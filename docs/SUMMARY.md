@@ -347,7 +347,7 @@
     * [Setting up the Container Registry Agent for a brokered ECR integration](features/integrations/snyk-broker/snyk-broker-container-registry-agent/setting-up-the-container-registry-agent-for-a-brokered-ecr-integration.md)
   * [Snyk Broker Infrastructure as Code detection](features/integrations/snyk-broker/snyk-broker-infrastructure-as-code-detection/README.md)
     * [Detecting Terraform configuration files using a broker](features/integrations/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-terraform-configuration-files-using-a-broker.md)
-    * [Detecting CloudFormation configuration files using a broker](features/integrations/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-cloudformation-configuration-files-using-a-broker.md)
+    * [Detecting CloudFormation configuration files using a Broker](features/integrations/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-cloudformation-configuration-files-using-a-broker.md)
     * [Detecting Kubernetes configuration files using a broker](features/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-kubernetes-configuration-files-using-a-broker.md)
   * [Snyk Broker set-up examples](features/integrations/snyk-broker/snyk-broker-set-up-examples/README.md)
     * [Setup Broker with Jira](features/integrations/snyk-broker/snyk-broker-set-up-examples/broker-example-how-to-setup-broker-with-jira.md)

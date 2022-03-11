@@ -28,12 +28,12 @@ Project attributes are static and non-configurable fields which allow you to add
 * Hosted
 * Distributed
 
-The ability to assign and remove values from attributes, is available in the [API](https://snyk.docs.apiary.io/#reference/projects/project-attributes) and the [CLI](broken-reference). The ability to filter projects by their values is also available in the [API](https://snyk.docs.apiary.io/#reference/projects/project-attributes).
+The ability to assign and remove values from attributes, is available in the [API](https://snyk.docs.apiary.io/#reference/projects/project-attributes) and the [CLI](../../../features/integrations/ide-tools/snyk-ide-plugins/snyk-cli.md). The ability to filter projects by their values is also available in the [API](https://snyk.docs.apiary.io/#reference/projects/project-attributes).
 
 ## **Assigning values to attributes**
 
-1. On the project page, click the “+” icon below the attribute you want to assign a value to.
-2. Select a value from the list available.
+1. On the project page, click the “+” icon below the attribute you want to assign the value
+2. Select a value from the list available
 
 ![](../../../.gitbook/assets/gs1.png)
 

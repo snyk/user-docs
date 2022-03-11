@@ -177,7 +177,7 @@ The above resources can be used as follows, so that a single Container Registry 
    * CR\_REGION=\<AWS Region of ECR>
    * CR\_EXTERNAL\_ID=\<Optional. An external ID found in the trust relationship condition>
 
-For detailed information about the brokered ECR setup, click [here](broken-reference).
+[Get more information about the brokered ECR setup](../../../../tutorials/atlassian/devops-pipeline-with-bitbucket-cloud-and-kubernetes/module-2-bitbucket-pipelines/configure-aws-ecr.md).
 
 ## **Configuring and using system check:**
 
