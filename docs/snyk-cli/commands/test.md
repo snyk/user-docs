@@ -79,8 +79,6 @@ Set a default to ensure all newly tested projects are tested under your default 
 
 Default: `<ORG_ID>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account).
 
-Example: `$ snyk test --org=my-team`
-
 For more information see the article [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI).
 
 ### `--file=<FILE>`
@@ -279,11 +277,11 @@ Use context-specific options to pass extra arguments directly to Gradle, Maven, 
 
 Test a project in the current folder for known vulnerabilities:
 
-&#x20;`$ snyk test`
+`$ snyk test`
 
 Test a specific dependency for vulnerabilities:
 
-&#x20;`$ snyk test ionic@1.6.5`
+`$ snyk test ionic@1.6.5`
 
 Test the latest version of an npm package:
 
