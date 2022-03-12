@@ -55,8 +55,6 @@ Set a default to ensure all newly tested and monitored projects are tested and m
 
 Default: `<ORG_ID>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account).
 
-Example: `$ snyk container test ubuntu:18.04 --org=my-team`
-
 For more information see the article [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI).
 
 ### `--file=<FILE_PATH>`
