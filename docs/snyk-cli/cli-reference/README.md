@@ -91,7 +91,7 @@ Possible exit codes and their meaning:
 
 ## Configure the Snyk CLI
 
-You can use environment variables to configure the Snyk CLI and also set variables to configure the Snyk CLI to connect with the Snyk API. See [Configure the Snyk CLI](./#configure-the-snyk-cli).
+You can use environment variables to configure the Snyk CLI and also set variables to configure the Snyk CLI to connect with the Snyk API. See [Configure the Snyk CLI](../configure-the-snyk-cli.md).
 
 ## Debug
 
@@ -101,79 +101,79 @@ Use `-d` option to output the debug logs.
 
 The following is a list of the options for Snyk CLI commands. Each option is followed by the command(s) to which the option applies. The commands are linked to their help docs. For details concerning each option, see the help docs.
 
-`--all-projects`: `test`, `monitor`
+`--all-projects`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--detection-depth=<DEPTH>`: `test`, `monitor`, `iac`
+`--detection-depth=<DEPTH>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`iac`](../commands/iac.md)``
 
-`--exclude=<DIRECTORY>[,<DIRECTORY>]...>`: `test`, `monitor`
+`--exclude=<DIRECTORY>[,<DIRECTORY>]...>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--prune-repeated-subdependencies, -p`: `test`, `monitor`
+`--prune-repeated-subdependencies, -p`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--print-deps`: `test`, `monitor`, container
+`--print-deps`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)``
 
-`--remote-repo-url=<URL>`: `test`, `monitor`
+`--remote-repo-url=<URL>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--dev`: `test`, `monitor`
+`--dev`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--org=<ORG_ID>`: `test`, `monitor`, `code`, `iac`
+`--org=<ORG_ID>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`code`](../commands/code.md), [`iac`](../commands/iac.md)``
 
-`--file=<FILE>`: `test`, `monitor`, container
+`--file=<FILE>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)``
 
-`--package-manager=<PACKAGE_MANAGER_NAME>`: `test`, `monitor`
+`--package-manager=<PACKAGE_MANAGER_NAME>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--ignore-policy`: `test`, `monitor`, `iac`
+`--ignore-policy`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`iac`](../commands/iac.md)``
 
-`--trust-policies` `test`, `monitor`
+`--trust-policies` [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--show-vulnerable-paths=<none|some|all>` `test`, `monitor`
+`--show-vulnerable-paths=<none|some|all>` [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--project-name=<PROJECT_NAME>`: `test`, `monitor`, `container`
+`--project-name=<PROJECT_NAME>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)``
 
-`--target-reference=<TARGET_REFERENCE>`: `test`, `monitor`
+`--target-reference=<TARGET_REFERENCE>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--policy-path=<PATH_TO_POLICY_FILE>`: `test`, `monitor`, `container`, `iac`, `ignore`
+`--policy-path=<PATH_TO_POLICY_FILE>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md), [`iac`](../commands/iac.md), [`ignore`](../commands/ignore.md)``
 
-`--json`: `test`, `monitor`, `code`, `container`, `iac`
+`--json`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`code`](../commands/code.md), [`container`](../commands/container.md), [`iac`](../commands/iac.md)``
 
-`--json-file-output=<OUTPUT_FILE_PATH>`: `test`, `monitor`, `container`, `iac`
+`--json-file-output=<OUTPUT_FILE_PATH>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md), [`iac`](../commands/iac.md)``
 
-`--sarif`: `test`, `monitor`, `code`, `container`, `iac`
+`--sarif`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`code`](../commands/code.md), [`container`](../commands/container.md), [`iac`](../commands/iac.md)``
 
-`--sarif-file-output=<OUTPUT_FILE_PATH>`: `test`, `monitor`, `container`, `iac`
+`--sarif-file-output=<OUTPUT_FILE_PATH>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md), [`iac`](../commands/iac.md)``
 
-`--severity-threshold=<low|medium|high|critical>`: `test`, `code`, `container`, `iac`
+`--severity-threshold=<low|medium|high|critical>`: [`test`](../commands/test.md), [`code`](../commands/code.md), [`container`](../commands/container.md), [`iac`](../commands/iac.md)``
 
-`--fail-on=<all|upgradable|patchable>`: `test`
+`--fail-on=<all|upgradable|patchable>`: [`test`](../commands/test.md)
 
-`--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`: `monitor`, `container`
+`--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)``
 
-`--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`: `monitor`, `container`
+`--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)``
 
-`--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`: `monitor`, `container`
+`--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)``
 
-`--project-tags=<TAG>[,<TAG>]...>`: `monitor`, `container`
+`--project-tags=<TAG>[,<TAG>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)``
 
-`--tags=<TAG>[,<TAG>]...>`: `monitor`, `container`
+`--tags=<TAG>[,<TAG>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)``
 
-`--exclude-base-image-vulns`: `container`
+`--exclude-base-image-vulns`: [`container`](../commands/container.md)``
 
-`--platform=<PLATFORM>`: `container`
+`--platform=<PLATFORM>`: [`container`](../commands/container.md)``
 
-`--username=<CONTAINER_REGISTRY_USERNAME>`: `container`
+`--username=<CONTAINER_REGISTRY_USERNAME>`: [`container`](../commands/container.md)``
 
-`--password=<CONTAINER_REGISTRY_PASSWORD>`: `container`
+`--password=<CONTAINER_REGISTRY_PASSWORD>`: [`container`](../commands/container.md)``
 
-`--scan=<TERRAFORM_PLAN_SCAN_MODE>`: `iac`
+`--scan=<TERRAFORM_PLAN_SCAN_MODE>`: [`iac`](../commands/iac.md)``
 
-`--rules=<PATH_TO_CUSTOM_RULES_BUNDLE>`: `iac`
+`--rules=<PATH_TO_CUSTOM_RULES_BUNDLE>`: [`iac`](../commands/iac.md)``
 
-`--id=<ISSUE_ID>`: `ignore`
+`--id=<ISSUE_ID>`: [`ignore`](../commands/ignore.md)``
 
-`--expiry=<EXPIRY>`: `ignore`
+`--expiry=<EXPIRY>`: [`ignore`](../commands/ignore.md)``
 
-`--reason=<REASON>`: `ignore`
+`--reason=<REASON>`: [`ignore`](../commands/ignore.md)``
 
-`--path=<PATH_TO_RESOURCE>`: `ignore`
+`--path=<PATH_TO_RESOURCE>`: [`ignore`](../commands/ignore.md)``
 
 ## Debug
 
@@ -181,63 +181,63 @@ The following is a list of the options for Snyk CLI commands. Each option is fol
 
 ## Options for Maven projects
 
-`--scan-all-unmanaged`: `test`, `monitor`
+`--scan-all-unmanaged`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--reachable`: `test`, `monitor`
+`--reachable`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--reachable-timeout=<TIMEOUT>`: `test`, `monitor`
+`--reachable-timeout=<TIMEOUT>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
 ## Options for Gradle projects
 
-`--sub-project=<NAME>`, `--gradle-sub-project=<NAME>`: `test`, `monitor`
+`--sub-project=<NAME>`, `--gradle-sub-project=<NAME>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--all-sub-projects`: `test`, `monitor`
+`--all-sub-projects`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--configuration-matching=<CONFIGURATION_REGEX>`: `test`, `monitor`
+`--configuration-matching=<CONFIGURATION_REGEX>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--configuration-attributes=<ATTRIBUTE>[,<ATTRIBUTE>]...`: `test`, `monitor`
+`--configuration-attributes=<ATTRIBUTE>[,<ATTRIBUTE>]...`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--reachable`: `test`, `monitor`
+`--reachable`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--reachable-timeout=<TIMEOUT>`: `test`, `monitor`
+`--reachable-timeout=<TIMEOUT>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--init-script=<FILE`: `test`, `monitor`
+`--init-script=<FILE`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
 ## Options for .Net and NuGet projects
 
-`--assets-project-name`: `test`, `monitor`
+`--assets-project-name`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--packages-folder`: `test`, `monitor`
+`--packages-folder`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--project-name-prefix=<PREFIX_STRING>`: `test`, `monitor`
+`--project-name-prefix=<PREFIX_STRING>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--project-name-prefix=my-group/`: `test`, `monitor`
+`--project-name-prefix=my-group/`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
 ## Options for npm projects
 
-`--strict-out-of-sync=true|false`: `test`, `monitor`
+`--strict-out-of-sync=true|false`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
 ## Options for Yarn projects
 
-`--strict-out-of-sync=true|false`: `test`, `monitor`
+`--strict-out-of-sync=true|false`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--yarn-workspaces`: `test`, `monitor`
+`--yarn-workspaces`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
 ## Options for CocoaPods projects
 
-`--strict-out-of-sync=true|false`: `test`, `monitor`
+`--strict-out-of-sync=true|false`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
 ## Options for Python projects
 
-`--command=<COMMAND>`: `test`, `monitor`
+`--command=<COMMAND>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--skip-unresolved=true|false`: `test`, `monitor`
+`--skip-unresolved=true|false`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
 ## Options for Go projects
 
 Currently the following options are not supported:
 
-`--fail-on=<all|upgradable|patchable>`: `test`
+`--fail-on=<all|upgradable|patchable>`: [`test`](../commands/test.md)``
 
 ## Options for unmanaged projects
 
@@ -245,4 +245,4 @@ For information about these options see [Snyk CLI for C / C++ projects](https://
 
 ## `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
-These options are used with the `test` and `monitor` commands. See the help docs for details.
+These options are used with the `test` and `monitor` commands. See the [help docs](../commands/) for details.
