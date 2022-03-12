@@ -4,4 +4,4 @@ This group of pages includes information about using the CLI to monitor your pro
 
 * [Protect your code with patches](protect-your-code-with-patches.md)
 * [Monitor your projects at regular intervals](monitor-your-projects-at-regular-intervals.md)
-* [Separating projects by branch or version](../../features/snyk-cli/secure-your-projects-in-the-long-term/grouping-projects-by-branch-or-version.md)
+* [Separating projects by branch or version](grouping-projects-by-branch-or-version.md)
