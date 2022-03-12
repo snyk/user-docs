@@ -1,7 +1,7 @@
 # Separating projects by branch or version
 
 {% hint style="warning" %}
-This feature is currently in Open Beta. There are areas where it is not fully supported. Currently [Snyk Open Source](../../../products/snyk-open-source/) is supported.
+This feature is currently in Open Beta. There are areas where it is not fully supported. Currently [Snyk Open Source](../../products/snyk-open-source/) is supported.
 {% endhint %}
 
 Your project may have multiple states which you want to monitor separately, for example, branches, releases, or deployments. You can use the `--target-reference` option to separate projects into these specific groupings.
@@ -24,4 +24,4 @@ You can adjust the option for the developer tools used in your project. Any vali
 
 `--target-reference` allows you to create sub-groupings on the Projects page.
 
-![A project page with sub-groups.](<../../../.gitbook/assets/Screenshot 2021-10-21 at 13-08-58 Projects.png>)
+![A project page with sub-groups.](../../.gitbook/assets/project-grouping-with-sub-groups.png)
