@@ -2,7 +2,7 @@
 
 You can install the [Snyk CLI](../) using the methods explained on this page.
 
-After you install the Snyk CLI, you must [authenticate](../../features/snyk-cli/commands/auth.md). You can then can [get started](../getting-started-with-the-cli/) testing and fixing your vulnerabilities, beginning with testing your installation.
+After you install the Snyk CLI, you must [authenticate](../commands/auth.md). You can then can [get started](../getting-started-with-the-cli/) testing and fixing your vulnerabilities, beginning with testing your installation.
 
 ## Install the Snyk CLI with npm or Yarn
 
