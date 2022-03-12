@@ -6,7 +6,7 @@ Make sure Snyk Code is enabled for your organization, see [Getting started with 
 
 The Snyk Command Line Interface ([CLI](../../../snyk-cli/)) for Snyk Code helps you find and fix security flaws in your code on your local machine.
 
-To use the CLI you must first [install](../../../snyk-cli/install-the-snyk-cli/) it and then [authenticate](broken-reference).
+To use the CLI you must first [install](../../../snyk-cli/install-the-snyk-cli/) it and then [authenticate](../../../snyk-cli/commands/auth.md).
 
 ## **Test a project or folder**
 
