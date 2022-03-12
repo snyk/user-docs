@@ -4,7 +4,7 @@ If you do not want to fix a vulnerability or license issue, and don't want to se
 
 ### When to ignore issues
 
-Issues can be ignored and viewed via the snyk.io UI, the Snyk APIs, the Snyk CLI and using the .snyk file.
+Issues can be ignored and viewed via the snyk.io UI, the Snyk APIs, the Snyk CLI, and using the .snyk file.
 
 Ignoring security issues should not be the default action, but it is sometimes necessary. The best practice is to fix or patch vulnerabilities, or to remove the vulnerable dependency, but there may still be reasons why you would want to suppress an issue – for example, if an issue doesn’t currently have a fix, you might want to ignore it until it does.
 
@@ -32,13 +32,13 @@ When you ignore an issue in our UI, it will show who ignored it and allow you to
 
 ### Ignoring issues in the CLI
 
-Suppressing issues is possible via the CLI. For node.js projects, you can use **Snyk wizard**, which will give you the option of ignoring the vulnerability for a period of 30 days. For other supported languages, or to specify a different duration, use **snyk ignore**.
+Suppressing issues is possible via the CLI using the `snyk ignore` command.
 
 `snyk ignore --id='npm:braces:20180219' --expiry='2018-04-01' --reason='testing'`
 
 See [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli.md) for more details.
 
-When using **Snyk wizard** or **Snyk ignore**, the .snyk policy file is updated with the path and given a reason (if one was provided). For example:
+When you use `snyk ignore`**,** the `.snyk` policy file is updated with the path and reason given, if one was provided. For example:
 
 ```
 'npm:moment:20170905':
@@ -51,25 +51,25 @@ expires: '2017-12-29T16:10:16.946Z'
 
 Ignores between a CLI (or CI/CD run) and the Snyk UI are synchronized. So the flow is:
 
-1. A project is scanned and pushed to the UI using **snyk monitor**.
+1. A project is scanned and pushed to the UI using `snyk monitor`.
 2. You see the results of the scan and choose to ignore an issue.
-3. The issue is ignored when running **snyk test** or **snyk monitor** in the CI/CD or CLI
+3. The issue is ignored when running `snyk test` or `snyk monitor` in the CI/CD or CLI
 
 For example:
 
 ![](<../../../.gitbook/assets/image (15).png>)
 
-**snyk test** before ignoring in the UI:
+`snyk test` before ignoring in the UI:
 
 ![](<../../../.gitbook/assets/image (18).png>)
 
-**snyk test** after ignoring in the UI:
+`snyk test` after ignoring in the UI:
 
 ![](<../../../.gitbook/assets/image (20).png>)
 
-It is important that the above is true if you ignore the project imported by **snyk monitor** from the CLI or CI/CD.
+It is important that the above is true if you ignore the project imported by `snyk monitor` from the CLI or CI/CD.
 
-The same repo imported from the SCM is considered as a different project, and any ignore on an SCM project does not impact the results of a **snyk test** from a CLI or CI/CD. SCM and CI project behave as two stand alone projects.
+The same repo imported from the SCM is considered as a different project, and any ignore on an SCM project does not impact the results of a `snyk test` from a CLI or CI/CD. SCM and CI project behave as two stand alone projects.
 
 ### Ignoring issues with the .snyk file
 
