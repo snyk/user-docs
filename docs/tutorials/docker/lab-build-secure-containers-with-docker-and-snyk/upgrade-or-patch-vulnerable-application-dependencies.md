@@ -52,7 +52,7 @@ Notice that the Dockerfile has less vulnerabilities! Snyk auto-retested it after
 
 ## Fix Vulnerabilities from the Snyk UI
 
-### Step 1: Explore a vulnerability in more detail <a href="step-1-explore-a-vulnerability-in-more-detail" id="step-1-explore-a-vulnerability-in-more-detail"></a>
+### Step 1: Explore a vulnerability in more detail <a href="#step-1-explore-a-vulnerability-in-more-detail" id="step-1-explore-a-vulnerability-in-more-detail"></a>
 
 Click into the `package.json` project, and Scroll down to see the list of vulnerabilities present, ordered by [our proprietary Priority Score](https://snyk.io/blog/snyk-priority-score/). For each Vulnerability, Snyk displays:
 
@@ -63,7 +63,7 @@ We'll start with the first vulnerability, **zip slip**, since it's ordered the h
 
 ![](https://gblobscdn.gitbook.com/assets%2F-M3ww0VUnNWDc-FwnwVl%2F-MOHOD925AinvVslRYnk%2F-MOHQWZMgK6Br-LeO6xL%2FSnyk-Vuln.png?alt=media\&token=42d70198-322b-463e-b107-f54c12072ec7)
 
-### Step 2: Create a Fix Pull Request in Snyk <a href="step-2-create-a-fix-pull-request-in-snyk" id="step-2-create-a-fix-pull-request-in-snyk"></a>
+### Step 2: Create a Fix Pull Request in Snyk <a href="#step-2-create-a-fix-pull-request-in-snyk" id="step-2-create-a-fix-pull-request-in-snyk"></a>
 
 Since a fix is available, Snyk can automatically upgrade the vulnerable dependency to a non-vulnerable version through a Pull Request. Click on "Fix this vulnerability" to do so.
 
@@ -115,9 +115,8 @@ Now try the exploit again. It should fail spectacularly.
 
 ## Optional: Use what you learned to fix all vulnerabilities
 
-Either with Fix Pull Requests, or using the information in Snyk to modify your package manager manifest, continue fixing vulnerabilities until you've knocked out the High Severity Vulnerabilities that have a fix available. Some additional resources that can help:
+Either with Fix Pull Requests, or using the information in Snyk to modify your package manager manifest, continue fixing vulnerabilities until you've knocked out the High Severity Vulnerabilities that have a fix available.
 
-* Snyk IDE Plugins: If you're using JetBrains IDEs, Eclipse, or VS Code, check out [our plugins](https://support.snyk.io/hc/en-us/sections/360001138118-IDE-tools) that show vulnerability and fix information right within the IDE.&#x20;
-* For Node applications, like this one, check out [Snyk Wizard](https://support.snyk.io/hc/en-us/articles/360003851357-Manage-vulnerability-results-with-the-Snyk-CLI-wizard)!&#x20;
+Snyk IDE Plugins can help. If you're using JetBrains IDEs, Eclipse, or VS Code, check out the [Snyk plugins](../../../features/integrations/ide-tools/) that show vulnerability and fix information right within the IDE.
 
 Once you're ready, continue on to the next section to learn how to fix configuration issues in the Kubernetes manifests that deploy the application!
