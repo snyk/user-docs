@@ -89,7 +89,7 @@ Specify a package file.
 
 When testing locally or monitoring a project, you can specify the file that Snyk should inspect for package information. When the file is not specified, Snyk tries to detect the appropriate file for your project.
 
-### --package-manager=\<PACKAGE\_MANAGER\_NAME>
+### `--package-manager=<PACKAGE_MANAGER_NAME>`
 
 Specify the name of the package manager when the filename specified with the `--file=<FILE>` option is not standard. This allows Snyk to find the file.
 
@@ -135,15 +135,21 @@ Return results in SARIF format.
 
 ### `--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`
 
-Set the project environment to one or more values (comma-separated). To clear the project environment set `--project-environment=`. Allowed values: `frontend, backend, internal, external, mobile, saas, onprem, hosted, distributed`
+Set the project environment project attribute to one or more values (comma-separated). To clear the project environment set `--project-environment=`. Allowed values: `frontend, backend, internal, external, mobile, saas, onprem, hosted, distributed`
+
+For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes).
 
 ### `--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`
 
-Set the project lifecycle to one or more values (comma-separated). To clear the project lifecycle set `--project-lifecycle=`. Allowed values: `production, development, sandbox`
+Set the project lifecycle project attribute to one or more values (comma-separated). To clear the project lifecycle set `--project-lifecycle=`. Allowed values: `production, development, sandbox`
+
+For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes).
 
 ### `--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`
 
-Set the project business criticality to one or more values (comma-separated). To clear the project business criticality set `--project-business-criticality=`. Allowed values: `critical, high, medium, low`
+Set the project business criticality project attribute to one or more values (comma-separated). To clear the project business criticality set `--project-business-criticality=`. Allowed values: `critical, high, medium, low`
+
+For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes).
 
 ### `--project-tags=<TAG>[,<TAG>]...>`
 
