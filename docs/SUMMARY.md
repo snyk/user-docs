@@ -369,7 +369,7 @@
     * [Managing permissions](features/user-and-group-management/managing-users-and-permissions/managing-permissions.md)
     * [Organization access requests](features/user-and-group-management/managing-users-and-permissions/organization-access-requests.md)
     * [Session length](features/user-and-group-management/managing-users-and-permissions/session-length.md)
-    * [Switch between Snyk organization](features/user-and-group-management/managing-users-and-permissions/switch-between-snyk-organization.md)
+    * [Switch between Snyk organizations](features/user-and-group-management/managing-users-and-permissions/switch-between-snyk-organization.md)
     * [Audit logs](features/user-and-group-management/managing-users-and-permissions/audit-logs.md)
   * [Managing groups & organizations](features/user-and-group-management/managing-groups-and-organizations/README.md)
     * [What’s a Snyk group?](features/user-and-group-management/managing-groups-and-organizations/whats-a-snyk-group.md)
