@@ -52,4 +52,4 @@ Many package managers allow calling out separately dependencies which are to be 
 
 `$ snyk test --dev`
 
-See [Language and package manager support](../../products/snyk-open-source/language-and-package-manager-support/) for more information concerning supported languages.
+See [Open Source language and package manager support](../../products/snyk-open-source/language-and-package-manager-support/) for more information concerning supported languages.
