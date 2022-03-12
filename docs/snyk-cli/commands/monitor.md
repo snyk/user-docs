@@ -33,6 +33,8 @@ See also subsequent sections for options for specific build environments, packag
 
 Auto-detect all projects in the working directory (including Yarn workspaces).
 
+For more information see the article [Does the Snyk CLI support monorepos or multiple manifest files?](https://support.snyk.io/hc/en-us/articles/360000910577-Does-the-Snyk-CLI-support-monorepos-or-multiple-manifest-files-).
+
 ### `--detection-depth=<DEPTH>`
 
 Use with `--all-projects` or `--yarn-workspaces` to indicate how many sub-directories to search. `DEPTH` must be a number.
