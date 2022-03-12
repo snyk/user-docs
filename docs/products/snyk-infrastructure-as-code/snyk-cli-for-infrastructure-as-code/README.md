@@ -1,6 +1,6 @@
 # Snyk CLI for Infrastructure as Code
 
-To use the CLI you must first [install](../../../snyk-cli/install-the-snyk-cli/) it and then [authenticate](../../../tutorials/springone-workshop/developer-environment-and-snyk/snyk-authenticate-using-cli.md#authenticate-the-cli).
+To use the CLI you must first [install](../../../snyk-cli/install-the-snyk-cli/) it and then [authenticate](../../../snyk-cli/commands/auth.md).
 
 With Snyk Infrastructure as Code, you can test your configuration files directly from the CLI. See the following pages for details:
 
@@ -14,7 +14,7 @@ With Snyk Infrastructure as Code, you can test your configuration files directly
 
 You can also test the following types of files:
 
-* [Kustomize files](test-your-arm-files-with-the-cli-tool.md)
+* [Kustomize files](test-your-kustomize-files-with-our-cli-tool.md)
 * [Helm charts](test-your-helm-charts-with-our-cli-tool.md)
 
 See [Understanding the CLI output](understanding-configuration-scan-issues.md) for information about using the reports.
