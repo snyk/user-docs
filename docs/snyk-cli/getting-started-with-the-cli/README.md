@@ -1,6 +1,6 @@
 # Getting started with the CLI
 
-To use the CLI you must install it and authenticate. See [Install the Snyk CLI](../install-the-snyk-cli/) and the [Auth command help](../../features/snyk-cli/commands/auth.md).
+To use the CLI you must install it and authenticate. See [Install the Snyk CLI](../install-the-snyk-cli/) and the [Auth](../commands/auth.md) command help.
 
 After authenticating you can **test** your installation. Change directory into a folder containing a supported package manifest file such as package.json, pom.xml, or composer.lock) (`cd /my/project/`) and run `snyk test`.
 
