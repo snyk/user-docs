@@ -27,8 +27,8 @@ The way Snyk analyzes and builds the tree varies depending on the language and p
 
 See:
 
-* [Snyk CLI tool for JavaScript projects](snyk-for-javascript.md)
-* [Git services for JavaScript projects](snyk-for-javascript.md)
+* [Snyk CLI tool for JavaScript projects](snyk-for-javascript.md#snyk-cli-tool-for-javascript-projects)
+* [Git services for JavaScript projects](snyk-for-javascript.md#git-services-for-javascript-projects)
 
 ## Snyk CLI tool for JavaScript projects
 
@@ -157,7 +157,7 @@ We build the dependency tree based on these files:
 
 {% hint style="info" %}
 **Note**\
-Git support for Yarn Workspaces is enabled for all projects in organizations created after March 3rd 2021. To enable this feature for organizations created before this date  [contact our Support team](https://support.snyk.io/hc/en-us/requests/new). Yarn version 1 is supported in Git services.
+Git support for Yarn Workspaces is enabled for all projects in organizations created after March 3rd 2021. To enable this feature for organizations created before this date [contact our Support team](https://support.snyk.io/hc/en-us/requests/new). Yarn version 1 is supported in Git services.
 {% endhint %}
 
 For Yarn Workspaces we scan each `package.json` that matches the `packages` pattern from the root level `package.json` and root level `yarn.lock`
