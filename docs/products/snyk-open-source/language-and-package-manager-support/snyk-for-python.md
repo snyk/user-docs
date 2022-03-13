@@ -1,7 +1,7 @@
 # Snyk for Python
 
 {% hint style="success" %}
-Snyk provides security scanning on projects for vulnerabilities through our CLI and the application UI (app.snyk.io).
+Snyk provides security scanning on projects for vulnerabilities through our CLI and the application UI (app.snyk.io).&#x20;
 {% endhint %}
 
 The following describes how to use Snyk to scan Python projects:
@@ -79,7 +79,7 @@ https://github.com/snyk/snyk-python-plugin/blob/master/lib/types.ts
 
 * Ensure you've installed the relevant package manager before you begin using the Snyk CLI tool.
 * Ensure you've included the relevant manifest files supported by Snyk before testing.
-* Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about Snyk CLI in [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli/) as well.
+* Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about our CLI in [Getting started with the CLI](https://support.snyk.io/hc/articles/360003812458#UUID-6d3e2b39-daa0-f2f1-19d2-b9107b678c81) as well.
 
 ### Parameters
 
