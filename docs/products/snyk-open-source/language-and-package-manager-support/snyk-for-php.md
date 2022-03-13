@@ -26,7 +26,7 @@ In order to scan your dependencies, you must ensure you have first installed the
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project:
 
-* [Snyk CLI tool for PHP projects](https://docs.snyk.io/snyk-open-source/language-and-package-manager-support/snyk-for-php)
+* [Snyk CLI tool for PHP projects](snyk-for-php.md#snyk-cli-tool-for-php-projects)
 * [Git services for PHP projects](snyk-for-php.md#git-services-for-php-projects)
 
 ## Snyk CLI tool for PHP projects
@@ -47,7 +47,7 @@ In order to build the dependency tree Snyk analyzes the `composer.json` and `com
 
 There are no unique parameters when running Snyk for PHP.
 
-Read more about our CLI in [Getting started with the CLI](../../../features/snyk-cli/guides-for-our-cli/getting-started-with-the-cli.md).
+Read more about Snyk CLI in [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli/).
 
 ## Git services for PHP projects
 
