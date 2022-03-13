@@ -49,7 +49,7 @@ The installation is done via the IDE plugins catalog/library:
 5. Click on the **Install** button.
 6. Once installed, restart the IDE.
 
-![](../../../.gitbook/assets/ide.png)
+![](<../../../.gitbook/assets/Screen Shot 2022-03-09 at 5.06.13 PM (2).png>)
 
 ## Configuration
 
