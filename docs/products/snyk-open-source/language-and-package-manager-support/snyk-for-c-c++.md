@@ -267,7 +267,7 @@ $ snyk test --unmanaged --json
 
 The following `snyk` command line options are supported with the `snyk test --unmanaged` and `snyk monitor --unmanaged` commands:
 
-#### ORG-ID
+#### ORG\_ID
 
 `--org=<ORG_ID>`
 
