@@ -48,7 +48,7 @@ To scan the project, the dependencies must be available as source code in the sc
 
 By default, archives are not scanned. However, Snyk CLI can recursively extract archives to analyze the source code inside.
 
-To enable archive extraction, specify the depth of the extraction using the `--max-depth` parameter.
+To enable archive extraction, specify the depth of the extraction using the `--max-depth` option.
 
 The supported archive formats are:
 
@@ -62,7 +62,7 @@ The supported archive formats are:
 The following constraints and limitations are by design. While we may work on improvements in the future, they are not considered an issue. Issues that are planned to be addressed are in the [Known Issues ](snyk-for-c-c++.md#known-issues)section.
 {% endhint %}
 
-**Dependencies source code needs to be available**
+#### **Dependencies source code needs to be available**
 
 For Snyk CLI to be able to find any dependencies in your source code, the full source code of the dependencies needs to be present in the scanned folder. The following is a typical directory structure Snyk can scan (abbreviated):
 
@@ -91,7 +91,7 @@ c-example
 ...
 ```
 
-Having a large percentage of files in their original (unchanged) form is critical to accurately identify dependencies and so report the correct set of vulnerabilities. If you modify many of the files (or, for example, include only header files), this reduces the confidence of the scanning engine, leading to either dependencies not being identified, or being identified incorrectly (as a different version, or even a different package).
+Having a large percentage of files in their original (unchanged) form is critical to accurately identify dependencies and so report the correct set of vulnerabilities. If you modify many of the files (or, for example, include only header files), this reduces the confidence of the scanning engine, leading to either dependencies not being identified, or being identified incorrectly (as a different version, or even a different package.
 
 #### Data collection note
 
@@ -126,7 +126,7 @@ If you scan a Linux project on Windows, make sure the repository is cloned with 
 
 #### Displaying dependencies
 
-To display dependencies, use the `--print-deps` command:
+To display dependencies, use the `--print-deps` option:
 
 ```bash
 $ snyk test --unmanaged --print-deps
@@ -140,7 +140,7 @@ Dependencies:
   confidence: 0.993
 ```
 
-To learn what files contributed to each dependency being identified, use the `--print-dep-paths` argument:
+To learn what files contributed to each dependency being identified, use the `--print-dep-paths` option:
 
 ```bash
 $ snyk test --unmanaged --print-dep-paths
@@ -160,7 +160,7 @@ Dependencies:
 
 You may need to change the source code of the dependencies that you use in your software. As Snyk uses file signatures to find the closest possible match to an open source library, your changes may decrease the accuracy of the identification of the actual library.
 
-To learn how confident Snyk is about the identified dependency and its version, use the `--print-deps` or `--print-dep-paths` command line argument:
+To learn how confident Snyk is about the identified dependency and its version, use the `--print-deps` or `--print-dep-paths` command line option:
 
 ```
 curl|https://github.com/curl/curl/releases/download/curl-7_58_0/curl-7.58.0.tar.xz@7.58.0
@@ -171,7 +171,7 @@ This confidence level shows how confident Snyk is about the actual identificatio
 
 #### JSON output
 
-To get a machine-readable output in JSON, use the `--json` argument:
+To get a machine-readable output in JSON, use the `--json` option:
 
 ```
 $ snyk test --unmanaged --json
@@ -263,23 +263,25 @@ $ snyk test --unmanaged --json
 ]
 ```
 
-### Command-line options
+### Command line options
 
-The following `snyk`command-line options are supported with the `snyk test/monitor --unmanaged` commands:
+The following `snyk` command line options are supported with the `snyk test --unmanaged` and `snyk monitor --unmanaged` commands:
 
-#### ORG\_NAME
+#### ORG-ID
 
-`--org=ORG_NAME`
+`--org=<ORG_ID>`
 
-Specify the ORG\_NAME to run Snyk commands tied to a specific organization. This defines where new projects are created after running the **monitor** command. Some features have availability and private testing limits. If you have multiple organizations, you can set a default from the CLI using:
+Specify the `<ORG_ID>` to run Snyk commands tied to a specific organization. This defines where new projects are created after running the `snyk monitor` command. Some features have availability and private testing limits. If you have multiple organizations, you can set a default from the CLI using:
 
 ```
-snyk config set org=ORG_NAME
+snyk config set org=ORG_ID
 ```
 
-Setting a default ensures all newly monitored projects are created under your default organization. To override the default, use the **--org=ORG\_NAME** argument.
+Setting a default ensures all newly monitored projects are created under your default organization. To override the default, use the `--org=<ORG_ID>` argument.
 
-Default: uses the ORG\_NAME set as default in your Account settings.
+Default: `<ORG_ID>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account).
+
+For more information see the article [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI).
 
 #### json
 
@@ -289,13 +291,13 @@ Prints results in JSON format.
 
 #### OUTPUT\_FILE\_PATH
 
-`--json-file-output=OUTPUT_FILE_PATH`
+`--json-file-output=<OUTPUT_FILE_PATH>`
 
-(only in test command) Save test output in JSON format directly to the specified file, regardless of whether or not you use the **--json** option.
+(only in test command) Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option.
 
-This is useful to display the human-readable test output via **stdout** and at the same time save the JSON format output to a file.
+This is useful to display the human-readable test output via stdout and at the same time save the JSON format output to a file.
 
-**target-dir**
+#### **target-dir**
 
 `--target-dir <directory>`
 
@@ -305,7 +307,7 @@ Scan the path specified in the argument instead of the current directory.
 Alternatively, you can run just `snyk test --unmanaged <directory>`
 {% endhint %}
 
-**max-depth**
+#### **max-depth**
 
 `--max-depth=1`
 
@@ -313,7 +315,7 @@ Specify the maximum level of archive extraction. Use `0` to disable archive extr
 
 ### Import scan results in Snyk App
 
-To import the test results (issues and dependencies) in Snyk App; run the `snyk monitor --unmanaged` command:
+To import the test results (issues and dependencies) in Snyk App run the `snyk monitor --unmanaged` command:
 
 ```
 $ snyk monitor --unmanaged
@@ -324,7 +326,7 @@ Explore this snapshot at https://app.snyk.io/org/example-org/project/8ac0e233-d0
 Notifications about newly disclosed issues related to these dependencies will be emailed to you.
 ```
 
-This creates a snapshot of dependencies and vulnerabilities, and imports them into the Snyk App, where you can review the issues and see them included in your reports.
+This creates a snapshot of dependencies and vulnerabilities and imports them into the Snyk App, where you can review the issues and see them included in your reports.
 
 Importing a project with unmanaged dependencies creates a new project in Snyk App:
 
@@ -332,9 +334,9 @@ Importing a project with unmanaged dependencies creates a new project in Snyk Ap
 
 ### Known issues
 
-**Scanning on Windows**
+#### **Scanning on Windows**
 
-Many open source projects in git use Unix line endings. By default, git on Windows converts Unix line endings to Windows line endings and only converts them back for the actual commits. Our database contains source code signatures with the original line endings (as defined in the individual projects), so when you scan on Windows, the signatures generated for the files with Windows line endings are different than the signatures in our database. In that case, it is very likely no dependencies will be found.
+Many open source projects in git use Unix line endings. By default, git on Windows converts Unix line endings to Windows line endings and only converts them back for the actual commits. The Snyk database contains source code signatures with the original line endings (as defined in the individual projects), so when you scan on Windows, the signatures generated for the files with Windows line endings are different from the signatures in the Snyk database. In that case, it is very likely no dependencies will be found.
 
 To scan a project with Unix line endings on Windows, disable git line endings conversion. To configure this globally, run:
 
@@ -350,13 +352,12 @@ No. The files are converted to a list of hashes before they are sent for scannin
 
 #### **Why did Snyk not find any dependencies?**
 
-We store the official releases of many of open source components in our database but it is possible that the source code you scanned is not there or is just simply not found. Let us know and we can help you find out what happened and potentially improve our scanning algorithms.
+Snyk stores the official releases of many of open source components in the Snyk database but it is possible that the source code you scanned is not there or is just simply not found. Let us know and we can help you find out what happened and potentially improve our scanning algorithms.
 
 Here are a few things that you can check on your own:
 
 * The source code of the dependencies you scanned is actually available as source code (unpacked) in the folder that you scanned. If you use a package manager, such as Conan, the source code is likely to be in the Conan cache, along with the source code of other dependencies of your other projects. To scan dependencies managed by a package manager, we recommend that you do that in a clean environment (for example during a build).
-* The source code of the dependencies is not from an official release of the OSS component, and we do not have it in the database
-* The source code of the OSS has been modified too much, so Snyk cannot detect it. If there are too few files and you modify most of them, Snyk cannot match them to a component from our database.\
-  Examples of common modifications are whitespace formatting, adding license or copyright headers.
-* You are on Windows, and git converted line endings to Windows line endings. Currently we can recognize files that have retained their original line endings.
-* The source code of the OSS components is too new. Our database is refreshed monthly but it takes time for the latest releases to get processed.
+* The source code of the dependencies is not from an official release of the OSS component, and Snyk does not have it in the database
+* The source code of the OSS has been modified too much, so Snyk cannot detect it. If there are too few files and you modify most of them, Snyk cannot match them to a component from our database. Examples of common modifications are whitespace formatting and adding license or copyright headers.
+* You are on Windows, and git converted line endings to Windows line endings. Currently Snyk can recognize files that have retained their original line endings.
+* The source code of the OSS components is too new. The Snyk database is refreshed monthly but it takes time for the latest releases to get processed.
