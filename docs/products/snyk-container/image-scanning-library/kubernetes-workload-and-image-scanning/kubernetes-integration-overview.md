@@ -10,7 +10,7 @@ This feature is available in Business and Enterprise plans. See [pricing plans](
 **How it works**
 
 1. Your administrator installs a controller on your cluster, authenticating the integration with a unique ID generated from the Snyk account. Install the controller with either of these options:
-   * [Install the Snyk controller with Helm](install-the-snyk-controller-with-helm.md)
+   * [Install the Snyk controller with Helm (Azure and Google Cloud Platform)](install-the-snyk-controller-with-helm.md)&#x20;
    * [Install the Snyk controller with OpenShift and OperatorHub](install-the-snyk-controller-with-openshift-4-and-operatorhub.md)
    * [Install the Snyk controller on Amazon Elastic Kubernetes Service (Amazon EKS)](install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md)
 2. The controller communicates with the Kubernetes API to determine which workloads (for instance the Deployment, ReplicationController, CronJob, etc.) are running on the cluster, find their associated images, and scan them directly on the cluster for vulnerabilities.
