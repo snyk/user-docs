@@ -56,7 +56,7 @@ curl --include \
        \"redirectUris\": [ \"http://localhost:3000/callback\" ],
        \"scopes\": [ \"apps:beta\" ]
        }" \
-     'https://api.snyk.io/v3/orgs/<ORG_ID>/apps?version='
+     'https://api.snyk.io/rest/orgs/<ORG_ID>/apps?version='
 ```
 
 The response from Snyk contains two important values necessary to complete our Snyk App's integration: `clientId` and `clientSecret`. Store these values somewhere safe. This is the only time you will ever see your `clientSecret` from Snyk. As a warning, **never share your `clientSecret` publicly**. This is used to authenticate your App with Snyk.
@@ -297,7 +297,7 @@ export async function updateDb(
 
 Earlier, we installed the popular `axios` package to handle API calls. We know that we'll need to make some repetetive calls to the same API, so let's abstract some helper functions to make our code easily re-usable across the project. Create an `APIHelpers.ts` file in the `util` directory.
 
-Before we fill that out, take note that, while we are consistently hitting Snyk's API, we'll likely need to make requests against multiple versions of the API, depending on the endpoint's status in the migration from Snyk API v1 to Snyk API v3. One way we can handle this is by defining a TypeScript Enum and within our functions, swap any necessary query parameters by comparing an argument to the enum's possible values.
+Before we fill that out, take note that, while we are consistently hitting Snyk's API, we'll likely need to make requests against multiple versions of the API, depending on the endpoint's status in the migration from Snyk API v1 to Snyk REST API. One way we can handle this is by defining a TypeScript Enum and within our functions, swap any necessary query parameters by comparing an argument to the enum's possible values.
 
 Add the following content to a new file, or to `APIHelpers.ts` if you prefer, just make sure to export it for later use!
 
@@ -305,7 +305,7 @@ Add the following content to a new file, or to `APIHelpers.ts` if you prefer, ju
 // ./interfaces/API.ts
 export const enum APIVersion {
   V1 = "v1",
-  V3 = "v3",
+  REST = "rest",
 }
 ```
 
@@ -346,7 +346,7 @@ Let's see it in action by defining a second async function to retrieve our Snyk 
 export async function getAppOrgID(tokenType: string, accessToken: string): Promise<{ orgId: string }> {
   try {
     const clientId = CLIENT_ID;
-    const result = await callSnykApi(tokenType, accessToken, APIVersion.V3)({
+    const result = await callSnykApi(tokenType, accessToken, APIVersion.REST)({
       method: "GET",
       url: `/apps/${clientId}/orgs?version=2021-08-11~experimental`,
     });

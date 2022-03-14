@@ -5,7 +5,7 @@
 Now that you have an API token and **orgId**, you can use our API to create your Snyk App by sending a **POST** request to the `apps` endpoint (more details found in the [API documentation](https://snykv3.docs.apiary.io/#reference/apps/app-management/create-an-app)):
 
 ```
-https://api.snyk.io/v3/orgs/{orgId}/apps?version={version}
+https://api.snyk.io/rest/orgs/{orgId}/apps?version={version}
 ```
 
 The request body should contain the details for your new App, including the App's **name**, **redirectURIs**, and [**scopes**](create-an-app-via-the-api.md#requesting-scopes).

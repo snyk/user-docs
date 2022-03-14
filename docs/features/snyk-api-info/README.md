@@ -4,15 +4,15 @@
 
 {% embed url="https://snyk.docs.apiary.io/#" %}
 
-We are in the process of building a new, improved API (`https://api.snyk.io/v3`) built using the OpenAPI and JSON API standards. We welcome you to try it out as we shape and release endpoints until it, ultimately, becomes a full replacement for our current API.
+We are in the process of building a new, improved API (`https://api.snyk.io/rest`) built using the OpenAPI and JSON API standards. We welcome you to try it out as we shape and release endpoints until it, ultimately, becomes a full replacement for our current API.
 
-### API V3 docs
+### REST API docs
 
 {% embed url="https://apidocs.snyk.io" %}
 
-The Snyk API V3 is the new, standards-driven API (OpenAPI, JSON API) now available to all customers.
+The Snyk REST API is the new, standards-driven API (OpenAPI, JSON API) now available to all customers.
 
-This new version of the Snyk API represents a major step forward in an evolutionary approach to API development, now that each endpoint is versioned (see [Versioning](https://apidocs.snyk.io/introduction/versioning)).
+This new version of the Snyk API represents a major step forward in an evolutionary approach to API development, now that each endpoint is versioned (see [Versioning](https://apidocs.snyk.io#overview)).
 
 {% hint style="info" %}
 **Feature availability**\
