@@ -35,7 +35,7 @@ Specifying a Dockerfile provides more context, and allows Snyk to provide clear 
 
 ## Monitoring an image
 
-Snyk Container also allows you to monitor an image. This provides the following advantages:
+Snyk Container also allows you to [monitor an image](https://snyk.io/learn/container-security/container-monitoring/). This provides the following advantages:
 
 * Snyk alerts you if new vulnerabilities are disclosed that affect your image, without your having to retest your image locally.
 * Snyk interactively filters the results and explores the list of vulnerabilities in your web browser.
