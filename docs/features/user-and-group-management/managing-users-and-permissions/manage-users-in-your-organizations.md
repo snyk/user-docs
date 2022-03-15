@@ -30,6 +30,12 @@ From here:
 
 Use the **New members join as** drop-down to define the default joining role for the new member (such as **Org admin**). See [managing-permissions.md](managing-permissions.md "mention").
 
+#### Video tuition
+
+To see a demonstration of adding members, play this 2-minute video:
+
+{% embed url="https://thoughtindustries-1.wistia.com/medias/qqmkcaequj" %}
+
 ### Revoke pending invites
 
 To remove pending invites:
