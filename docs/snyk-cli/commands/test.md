@@ -117,7 +117,7 @@ Specify a custom Snyk project name.
 
 ### `--target-reference=<TARGET_REFERENCE>`
 
-Specify a reference which differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference. Only supported for Snyk Open Source. For more information see [Separating projects by branch or version](https://snyk.info/3B0vTPs).
+Specify a reference which differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference. Only supported for Snyk Open Source. For more information see [Separating projects by branch or version](https://docs.snyk.io/snyk-cli/secure-your-projects-in-the-long-term/grouping-projects-by-branch-or-version).
 
 ### `--policy-path=<PATH_TO_POLICY_FILE>`
 
@@ -161,7 +161,7 @@ If vulnerabilities do not have a fix and this option is being used, tests pass.
 
 ## Options for Maven projects
 
-For more information about Maven CLI options see [Snyk for Java (Gradle, Maven)](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven).
+For more information about Maven CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven).
 
 ### `--scan-all-unmanaged`
 
@@ -179,7 +179,7 @@ Default: 300 (5 minutes).
 
 ## Options for Gradle projects
 
-For more information about Gradle CLI options see [Snyk for Java (Gradle, Maven)](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven).
+For more information about Gradle CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven).
 
 ### `--sub-project=<NAME>`, `--gradle-sub-project=<NAME>`
 
