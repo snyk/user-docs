@@ -352,7 +352,7 @@ No. The files are converted to a list of hashes before they are sent for scannin
 
 #### **Why did Snyk not find any dependencies?**
 
-Snyk stores the official releases of many of open source components in the Snyk database but it is possible that the source code you scanned is not there or is just simply not found. Let us know and we can help you find out what happened and potentially improve our scanning algorithms.
+Snyk stores the official releases of many of open source components in the Snyk database but it is possible that the source code you scanned is not there or is not found. If your scan does not find any dependencies [submit a request to support](https://snyk.zendesk.com/agent/dashboard).
 
 Here are a few things that you can check on your own:
 
