@@ -379,7 +379,6 @@
     * [Create a new Snyk group](features/user-and-group-management/managing-groups-and-organizations/create-a-new-snyk-group.md)
     * [What’s a Snyk organization?](features/user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization.md)
     * [Snyk groups: switch between groups and orgs](features/user-and-group-management/managing-groups-and-organizations/snyk-groups-switch-between-groups-and-orgs.md)
-    * [Invite and collaborate with team members](features/user-and-group-management/managing-groups-and-organizations/invite-and-collaborate-with-team-members.md)
     * [Manage Snyk organizations](features/user-and-group-management/managing-groups-and-organizations/manage-snyk-organizations.md)
   * [Notifications](features/user-and-group-management/notifications/README.md)
     * [Notification management](features/user-and-group-management/notifications/notification-management.md)
