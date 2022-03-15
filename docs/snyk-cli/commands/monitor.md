@@ -265,6 +265,14 @@ Default: `python` Example: `--command=python3`
 
 Allow skipping packages that are not found in the environment.
 
+## Options for C/C++ projects
+
+### `--unmanaged`
+
+Monitor your C/C++ project.
+
+For more information see [Snyk for C/C++](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++).
+
 ### `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
 Use context-specific options to pass extra arguments directly to Gradle, Maven, or other build tools. These options are specified last. Example: `snyk test -- --build-cache`
