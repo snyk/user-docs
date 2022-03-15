@@ -4,7 +4,7 @@ description: Use this documentation to get started with the Eclipse plugin.
 
 # Eclipse plugin
 
-Install our **Snyk Vuln Scanner** in your Eclipse workflow to catch vulnerabilities and license issues directly from within your IDE (integrated development environment), before they are merged into your codebase.
+Install our **Snyk Security - Code and Open Source Dependencies** extension in your Eclipse workflow to catch vulnerabilities and license issues directly from within your IDE (integrated development environment), before they are merged into your codebase.
 
 Once installed and configured, every time you run the plugin, Snyk scans your project’s manifest files and:
 
@@ -27,7 +27,7 @@ Snyk supports all languages that are supported by both Eclipse and Snyk. Additio
 1. Navigate to the Marketplace from within your running Eclipse instance.
 2. Search for Snyk and click **Install**.
 3. When prompted accept the license agreement and the **Snyk Security** certificate to complete the installation.
-4. Restart the Eclipse instance and navigate to **Eclipse Preferences** to ensure **Snyk Vuln Scanner** now appears in the list:
+4. Restart the Eclipse instance and navigate to **Eclipse Preferences** to ensure **Snyk Security - Code and Open Source Dependencies** now appears in the list:
 
 ![](../../../.gitbook/assets/uuid-01198b42-f020-2cc5-c20f-93817eeb44a4-en.png)
 
@@ -47,13 +47,13 @@ To analyze projects, the plugin uses the Snyk CLI, which needs the following env
 
 * `PATH`: the path to needed binaries, for example, to maven. The `PATH` variable can also be manually adjusted using the `Path` field in the settings dialog
 * `JAVA_HOME`: the path to the JDK you want to use to analyzeJava dependencies
-* `http_proxy` and `https_proxy`: set using the value in the format `http://username:password@proxyhost:proxyport.` \
+* `http_proxy` and `https_proxy`: set using the value in the format `http://username:password@proxyhost:proxyport.`\
   **Note:** the leading `http://` in the value does not change to `https://` for `https_proxy`
 
-Setting these variables only in a shell environment (for example, using **\~/.bashrc**) is not enough, if you don't start Eclipse from the command line or create a script file that starts Eclipse using a shell environment.&#x20;
+Setting these variables only in a shell environment (for example, using **\~/.bashrc**) is not enough, if you don't start Eclipse from the command line or create a script file that starts Eclipse using a shell environment.
 
 * On **Windows**, set the variables using the GUI, or on the command line using the [setx](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/setx) tool.
-* On **macOS**, the process `launchd` needs to know the environment variables to launch Eclipse directly from Finder. Set these environment variables using the `launchctl setenv` command (for example, on start-up or using a script you launch at user login). \
+* On **macOS**, the process `launchd` needs to know the environment variables to launch Eclipse directly from Finder. Set these environment variables using the `launchctl setenv` command (for example, on start-up or using a script you launch at user login).\
   **Note:** The provision of environment variables to the macOS UI may change between operating system releases, so it can be easier to create a small shell script that launches the Eclipse app to leverage the shell environment, that can be defined via `~/.bashrc`.
 * On **Linux**, updating the file `/etc/environment` can be used to propagate the environment variables to the windows manager and UI.
 

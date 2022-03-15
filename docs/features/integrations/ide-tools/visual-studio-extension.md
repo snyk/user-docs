@@ -1,6 +1,6 @@
 # Visual Studio extension
 
-The Visual Studio extension ([Snyk’s Vulnerability Scanner](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs)) helps you find and fix security vulnerabilities in your projects. Within a few seconds, the extension will provide a list of all the different types of security vulnerabilities identified together with actionable fix advice. The extension combines the power of two Snyk products: Snyk Open Source and Snyk Code:
+The Visual Studio extension ([**Snyk Security - Code and Open Source Dependencies**](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs)) helps you find and fix security vulnerabilities in your projects. Within a few seconds, the extension will provide a list of all the different types of security vulnerabilities identified together with actionable fix advice. The extension combines the power of two Snyk products: Snyk Open Source and Snyk Code:
 
 1. With Snyk Open Source we find known vulnerabilities in both the direct and indirect (transitive) open source dependencies you are pulling into the project.
 2. With Snyk Code we find known security vulnerabilities and code quality issues at a blazing speed looking at the code you and your team wrote.
@@ -37,14 +37,14 @@ By now you should have the extension installed and the Snyk CLI downloaded. Time
 
 ### Configuration
 
-To analyze projects, the plugin uses the Snyk CLI which needs some environment variables:&#x20;
+To analyze projects, the plugin uses the Snyk CLI which needs some environment variables:
 
 * `PATH`: the path to needed binaries (for example, to maven).
 * `JAVA_HOME`: the path to the JDK you want to use for analysis of Java dependencies
-* `http_proxy` and `https_proxy`: set if you are behind a proxy server, using the value in the format `http://username:password@proxyhost:proxyport`. \
+* `http_proxy` and `https_proxy`: set if you are behind a proxy server, using the value in the format `http://username:password@proxyhost:proxyport`.\
   **Note:** the leading `http://` in the value does not change to `https://` for `https_proxy`
 
-You can set the variables, using the GUI or on the command line using the `setx` tool.&#x20;
+You can set the variables, using the GUI or on the command line using the `setx` tool.
 
 ### **Authentication**
 
