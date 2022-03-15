@@ -271,6 +271,14 @@ Currently the following options are not supported:
 
 `--fail-on=<all|upgradable|patchable>`
 
+## Options for C/C++ projects
+
+### `--unmanaged`
+
+Scan C/C++ source code for vulnerabilities.
+
+For more information see [Snyk for C/C++](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++).
+
 ## `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
 Use context-specific options to pass extra arguments directly to Gradle, Maven, or other build tools. These options are specified last. Example: `snyk test -- --build-cache`
