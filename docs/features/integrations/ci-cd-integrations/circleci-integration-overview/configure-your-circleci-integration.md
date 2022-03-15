@@ -1,6 +1,6 @@
 # Configure your CircleCI integration
 
-Once the user adds a project to CircleCI and adds the Snyk Orb to the configuration file, every time that a build will run, the Snyk Orb will be used as well.
+After a user adds a project to CircleCI, and adds the [Snyk Orb](https://circleci.com/developer/orbs/orb/snyk/snyk) to the configuration file, then when a build runs, the Snyk Orb is used as well.
 
 ## Scan
 
