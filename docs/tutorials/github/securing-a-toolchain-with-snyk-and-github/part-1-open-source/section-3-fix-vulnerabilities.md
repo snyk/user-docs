@@ -44,39 +44,6 @@ Now, go ahead and merge the PR! You can also delete the branch. Back in Snyk, we
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-postpr.png)
 
-## Step 3: Fix the rest of the Vulnerabilities
+## Step 3: Fix the rest of the vulnerabilities
 
-Let's fast track to a clean `develop` branch with another Pull Request. This time, from the `all-fixes` branch into `develop`.
-
-### How we arrived at a clean branch
-
-The `all-fixes` branch was created by using the [Snyk Wizard](https://support.snyk.io/hc/en-us/articles/360003851357-Manage-vulnerability-results-with-the-Snyk-CLI-wizard) against our `develop` branch. If you'd rather do this yourself, `git clone` the repo to your workstation and run `snyk wizard` against it. We recommend pushing changes into a new branch so you can continue the workshop from there.
-
-### Open a Pull Request!
-
-Create a New Pull Request from `all-fixes` to `develop`. This introduces some changes:
-
-* The creation of a `.snyk` file, which is used to track changes made by `Snyk Wizard`.&#x20;
-* Updated `package.json` and `package-lock.json` files with updated dependencies.
-
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-allfixpr.png)
-
-You can explore these changes in the Comparing Changes view to learn more. When ready, finish creating and Merge the Pull Request.
-
-## Step 4: Re-visit the PR created in Step 2
-
-If you left the Pull Request from Section 2 open, you can re-visit it in the Pull Requests tab.
-
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-postfixes.png)
-
-When the workflows re-run, this time, the Snyk Security gate and CI jobs should complete successfully.
-
-{% hint style="warning" %}
-Open Source vulnerabilities are disclosed every day. If the Snyk Gate fails, at least one new High Severity vulnerability has been disclosed since this was written. If this happens, Repeat steps 1 and 2 above to open a Pull Request that fixes the remaining issues.
-{% endhint %}
-
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/gh-postfixchecks.png)
-
-Merge in the changes, and feel good that your `PROD` branch is free from Open Source Vulnerabilities! 🏆
-
-You made it to the end of Part 1! Congratulations! Proceed to Part 2 to see how Snyk Container can help you keep this application secure as you package it in a container.
+Repeat steps 1 and 2 to fix all of the vulnerabilities that can be fixed.
