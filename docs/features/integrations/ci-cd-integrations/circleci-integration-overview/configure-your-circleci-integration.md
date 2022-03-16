@@ -15,7 +15,7 @@ Optionally, if the build completes successfully and **MONITOR** is set to True i
 
 ## Protect (optional)
 
-(For Node.js projects only) Optionally, set **PROTECT** to **True** and if a .snyk policy file exists, Snyk applies patches specified in the policy file.
+(For Node.js projects only) Optionally, set **PROTECT** to **True** and if a `.snyk` policy file exists and you have the [`@snyk/protect`](https://www.npmjs.com/package/@snyk/protect) package in your dependencies, Snyk applies patches specified in the `.snyk` file.
 
 ## Prerequisites
 
