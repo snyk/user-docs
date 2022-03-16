@@ -8,8 +8,9 @@
 **In the Snyk CLI**
 
 1. If you have only your default organization, any projects you add or update by running `snyk monitor` are automatically associated with your default organization.
-2.  If you have more than one organization, you can configure the organization with which newly added projects should be associated by running `snyk config set org=orgname`.
+2. If you have more than one organization, you can configure the organization with which newly added projects should be associated by running `snyk config set org=ORG_ID`.
+3. If you would like to override this global configuration for individual runs of `snyk monitor`, run `snyk monitor --org=ORG_ID`.
 
-    **Note:**\
-    `orgname` should match the name as displayed in the URL of your org in the snyk UI: \[\[[https://app.snyk.io/org/\[orgname\](https://app.snyk.io/org/\[orgname)\](https://app.snyk.io/org/\[orgname\]%28https://app.snyk.io/org/\[orgname%29)\\](https://app.snyk.io/org/\[orgname]\(https://app.snyk.io/org/\[orgname\)]\(https://app.snyk.io/org/\[orgname]\(https://app.snyk.io/org/\[orgname\)\)/)].
-3. If you would like to override this global configuration for individual runs of `snyk monitor`, run `snyk monitor --org=orgname`.
+The default is the `<ORG_ID>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account).
+
+For more information see the article [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI).
