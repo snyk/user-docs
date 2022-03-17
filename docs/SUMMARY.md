@@ -24,6 +24,7 @@
     * [Maximum number of projects in an organization](getting-started/introduction-to-snyk-projects/maximum-number-of-projects-in-an-organsation.md)
   * [Getting started with Snyk dashboard](getting-started/getting-started-with-snyk-dashboard.md)
   * [Snyk Business Trial Limitations](getting-started/snyk-business-trial-limitations.md)
+  * [Implementing Snyk in your teams](getting-started/implementing-snyk-in-your-teams.md)
 * [Snyk CLI](snyk-cli/README.md)
   * [Getting started with the CLI](snyk-cli/getting-started-with-the-cli/README.md)
   * [How to find vulnerabilities using the CLI](snyk-cli/how-to-find-vulnerabilities-using-the-cli/README.md)

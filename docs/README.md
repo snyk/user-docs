@@ -1,5 +1,9 @@
 # Snyk User Documentation
 
+{% hint style="danger" %}
+**STATUS UPDATE**: As of March 17th, our documentation search is not indexing. The dev team are in the process of fixing the issue. Please bear with us as we work through the problem.&#x20;
+{% endhint %}
+
 {% hint style="success" %}
 [Sign up to use Snyk for free!](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)
 {% endhint %}
