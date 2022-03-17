@@ -4,7 +4,7 @@
 This feature is currently in Beta. Please contact your CSM if you are interested in participating.
 {% endhint %}
 
-You can natively connect Snyk Code to your local git server. This allows customers who are using a self-hosted git provider such as GitHub Enterprise or BitBucket Server to find, prioritize and fix potential vulnerabilities in their 1st-party code.
+You can natively connect Snyk Code to your local git server. This allows customers who are using a self-hosted git provider to find, prioritize and fix potential vulnerabilities in their 1st-party code.
 
 ## Code access components
 
@@ -26,10 +26,10 @@ See [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker/broker-introduct
 
 Before you begin with the setup process, make sure to have a server that supports these minimal requirements for running the Broker client and Code agent:
 
-* CPU: 1 vcpu
-* Memory: 2Gb (should be reflected in node memory setting)
-* Disk space: 2Gb (available disk size determines maximum cloneable repository size)
-* Network: code upload performance will be affected by slow Internet connection
+* **CPU:** 1 vcpu
+* **Memory:** 2Gb (should be reflected in node memory setting)
+* **Disk space:** 2Gb (available disk size determines maximum cloneable repository size)
+* **Network:** code upload performance will be affected by slow Internet connection
 
 ### Set up broker client
 
@@ -129,6 +129,10 @@ If you have a running Snyk broker with a custom whitelist (**accept.json**), the
 ```
 
 (The rule is present by default, so only needed if you override the rule with a custom whitelist.)
+
+{% hint style="warning" %}
+At this point please contact your Customer Success Manager or Support to enable the integration
+{% endhint %}
 
 ## Advanced Settings
 
