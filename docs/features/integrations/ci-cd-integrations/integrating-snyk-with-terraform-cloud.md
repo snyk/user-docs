@@ -9,7 +9,7 @@
 * Have Terraform Cloud manage the remote operations against the cloud providers in an automated way, similarly to a CI/CD pipeline for applying changes to cloud infrastructure using Terraform.
 
 {% hint style="info" %}
-Since this feature is behind a private beta feature flag on Terraform Cloud, in order to get it enabled, you will need to be on the **Business tier** or **sign up for access in the** [**Terraform Cloud Beta Sign Up form**](http://hashi.co/tfc-beta).
+This feature is available and enabled for users of the Hashicorp **Business tier** plan**.**  If you are on a lower Hashicorp plan, you will need to sign up for access to the private beta feature flag in the [**Terraform Cloud Beta Sign Up form**](http://hashi.co/tfc-beta).
 {% endhint %}
 
 ## **Snyk Integration with Terraform Cloud overview**
