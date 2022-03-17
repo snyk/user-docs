@@ -46,8 +46,8 @@ Ensure your **dockerconfig.json** matches the example below:
 
 ```
 {
-    "credsStore": "ecr-login"
-  }
+  "credsStore": "ecr-login"
+}
 ```
 
 ### Attach policies for worker nodes
@@ -68,9 +68,12 @@ arn:aws:iam::<role-id>:role/<role-name>
 * Create a YAML file with the following content:
 
 ```
- volumes:
+volumes:
   projected:
     serviceAccountToken: true
+    
+securityContext:
+  fsGroup: 65534
 
 rbac:
   serviceAccount:
