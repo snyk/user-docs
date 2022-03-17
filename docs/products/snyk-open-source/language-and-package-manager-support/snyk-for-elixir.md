@@ -1,6 +1,6 @@
 # Snyk for Elixir
 
-Snyk offers security scanning to test your [Elixir](https://www.notion.so/Elixir-7c925900bf774c84b83b65c14084e80e) projects for vulnerabilities using the CLI.
+Snyk offers security scanning to test your Elixir projects for vulnerabilities using the CLI.
 
 ## Features
 
