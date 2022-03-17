@@ -93,7 +93,7 @@ When testing locally or monitoring a project, you can specify the file that Snyk
 
 Specify the name of the package manager when the filename specified with the `--file=<FILE>` option is not standard. This allows Snyk to find the file.
 
-Example: `$ snyk test --file=req.txt --package-manager=pip`
+Example: `$ snyk monitor --file=req.txt --package-manager=pip`
 
 ### `--ignore-policy`
 
@@ -102,14 +102,6 @@ Ignore all set policies, the current policy in the `.snyk` file, Org level ignor
 ### `--trust-policies`
 
 Apply and use ignore rules from the Snyk policies your dependencies; otherwise ignore rules in the dependencies are only shown as a suggestion.
-
-### `--show-vulnerable-paths=<none|some|all>`
-
-Display the dependency paths from the top level dependencies down to the vulnerable packages. Does not affect output when using JSON `--json` output.
-
-Default: `some` (a few example paths shown). `false` is an alias for `none`.
-
-Example: `$ snyk test --show-vulnerable-paths=false`
 
 ### `--project-name=<PROJECT_NAME>`
 
@@ -128,10 +120,6 @@ Manually pass a path to a `.snyk` policy file.
 ### `--json`
 
 Print results in JSON format.
-
-### `--sarif`
-
-Return results in SARIF format.
 
 ### `--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`
 
@@ -165,7 +153,7 @@ For more information about Maven CLI options see [Snyk for Java and Kotlin](http
 
 ### `--scan-all-unmanaged`
 
-Auto-detect maven jars, aars, and wars in given directory. To test individually use `--file=<JAR_FILE_NAME>`. **Note**: Custom-built jar files, even with open source dependencies, are out of scope.
+Auto-detect maven jars, aars, and wars in given directory. To monitor individually use `--file=<JAR_FILE_NAME>`. **Note**: Custom-built jar files, even with open source dependencies, are out of scope.
 
 ### `--reachable`
 
@@ -183,11 +171,11 @@ For more information about Gradle CLI options see [Snyk for Java and Kotlin](htt
 
 ### `--sub-project=<NAME>`, `--gradle-sub-project=<NAME>`
 
-For Gradle "multi project" configurations, test a specific sub-project.
+For Gradle "multi project" configurations, monitor a specific sub-project.
 
 ### `--all-sub-projects`
 
-For "multi project" configurations, test all sub-projects.
+For "multi project" configurations, monitor all sub-projects.
 
 ### `--configuration-matching=<CONFIGURATION_REGEX>`
 
@@ -229,7 +217,7 @@ When monitoring a .NET project, use this option to add a custom prefix to the na
 
 ### `--strict-out-of-sync=true|false`
 
-Control testing out of sync lockfiles.
+Control monitoring out-of-sync lockfiles.
 
 Default: true
 
@@ -237,7 +225,7 @@ Default: true
 
 ### `--strict-out-of-sync=true|false`
 
-Control testing out of sync lockfiles.
+Control monitoring out-of-sync lockfiles.
 
 Default: true
 
@@ -249,7 +237,7 @@ Detect and scan Yarn workspaces. You can specify how many sub-directories to sea
 
 ### `--strict-out-of-sync=true|false`
 
-Control testing out of sync lockfiles.
+Control monitoring out-of-sync lockfiles.
 
 Default: false
 
@@ -275,4 +263,4 @@ For more information see [Snyk for C/C++](https://docs.snyk.io/products/snyk-ope
 
 ### `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
-Use context-specific options to pass extra arguments directly to Gradle, Maven, or other build tools. These options are specified last. Example: `snyk test -- --build-cache`
+Use context-specific options to pass extra arguments directly to Gradle, Maven, or other build tools. These options are specified last. Example: `snyk monitor -- --build-cache`
