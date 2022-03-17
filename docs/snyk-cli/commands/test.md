@@ -109,7 +109,7 @@ Display the dependency paths from the top level dependencies down to the vulnera
 
 Default: `some` (a few example paths shown). `false` is an alias for `none`.
 
-Example: `--show-vulnerable-paths=false`
+Example: `--show-vulnerable-paths=none`
 
 ### `--project-name=<PROJECT_NAME>`
 
@@ -229,7 +229,7 @@ When monitoring a .NET project, use this option to add a custom prefix to the na
 
 ### `--strict-out-of-sync=true|false`
 
-Control testing out of sync lockfiles.
+Control testing out-of-sync lockfiles.
 
 Default: true
 
@@ -237,7 +237,7 @@ Default: true
 
 ### `--strict-out-of-sync=true|false`
 
-Control testing out of sync lockfiles.
+Control testing out-of-sync lockfiles.
 
 Default: true
 
@@ -249,7 +249,7 @@ Detect and scan Yarn workspaces. You can specify how many sub-directories to sea
 
 ### `--strict-out-of-sync=true|false`
 
-Control testing out of sync lockfiles.
+Control testing out-of-sync lockfiles.
 
 Default: false
 
