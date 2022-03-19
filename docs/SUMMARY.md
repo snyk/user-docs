@@ -77,7 +77,6 @@
     * [Azure Pipelines integration](features/integrations/ci-cd-integrations/azure-pipelines-integration.md)
     * [Bitbucket Pipelines integration](features/integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview.md)
     * [CircleCI integration](features/integrations/ci-cd-integrations/circleci-integration-overview/README.md)
-      * [Configure your CircleCI integration](features/integrations/ci-cd-integrations/circleci-integration-overview/configure-your-circleci-integration.md)
       * [Getting Snyk Orb details from the CircleCI registry](features/integrations/ci-cd-integrations/circleci-integration-overview/getting-snyk-orb-details-from-the-circleci-registry.md)
     * [GitHub Actions integration](features/integrations/ci-cd-integrations/github-actions-integration.md)
     * [Bitbucket Pipelines integration](features/integrations/ci-cd-integrations/bitbucket-pipelines-integration.md)
