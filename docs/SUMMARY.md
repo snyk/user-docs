@@ -78,7 +78,7 @@
     * [Bitbucket Pipelines integration](features/integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview.md)
     * [CircleCI integration](integrations/ci-cd-integrations/circleci-integration-overview.md)
     * [GitHub Actions integration](features/integrations/ci-cd-integrations/github-actions-integration.md)
-    * [Bitbucket Pipelines integration](features/integrations/ci-cd-integrations/bitbucket-pipelines-integration.md)
+    * [Bitbucket Pipelines integration video](features/integrations/ci-cd-integrations/bitbucket-pipelines-integration.md)
     * [Jenkins integration](features/integrations/ci-cd-integrations/jenkins-integration-overview.md)
     * [Terraform Cloud integration](features/integrations/ci-cd-integrations/integrating-snyk-with-terraform-cloud.md)
     * [Maven integration](features/integrations/ci-cd-integrations/maven-plugin-integration.md)
