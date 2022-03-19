@@ -1,14 +1,14 @@
 # Snyk Integrations
 
-Snyk integrates with a large segment of languages, platforms, and systems. Each of the existing integration paths are documented in this section.&#x20;
+Snyk integrates with many languages, platforms, and systems. Each of the existing integration paths are documented in this group of docs pages.
 
 ### General Information
 
-Our customers typically start with [ci-cd-integrations](ci-cd-integrations/ "mention")as it contains information on [setting up](ci-cd-integrations/#setting-up) and [configuring Snyk Integrations](ci-cd-integrations/#configure-your-continuous-integration).
+Snyk customers typically start with [Snyk CI/CD Integration](ci-cd-integrations/), as this doc has information on [setting up](ci-cd-integrations/#setting-up) and [configuring Snyk Integrations](ci-cd-integrations/#configure-your-continuous-integration).
 
 ### Troubleshooting
 
-If the integration you're looking for is not found below, [contact the Snyk Support team](https://support.snyk.io/hc/en-us/requests/new).
+If you do not fine the integration you're looking in this group of docs pages, [submit a request to Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
 
 ### Training
 
