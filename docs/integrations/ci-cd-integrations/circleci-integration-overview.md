@@ -40,9 +40,9 @@ Optionally, if the build completes successfully and MONITOR is set to True in th
 
 From the [Orbs registry](https://circleci.com/orbs/registry/), CircleCI displays a list of available Orbs customized for you directly, similar to the image that follows.
 
-![Snyk Orb for CircleCI](../../../../.gitbook/assets/uuid-10d3ba7f-799b-45a9-5c8e-b2abe9aab955-en.png)
+![Snyk Orb for CircleCI](../../.gitbook/assets/uuid-10d3ba7f-799b-45a9-5c8e-b2abe9aab955-en.png)
 
 From this list, find and click the relevant #Snyk line to view the Snyk Orb information with examples, parameters, and values:
 
-![Snyk Orb information](../../../../.gitbook/assets/uuid-ce212e67-b7ac-3cf7-4772-c84f6897aed9-en.png)
+![Snyk Orb information](../../.gitbook/assets/uuid-ce212e67-b7ac-3cf7-4772-c84f6897aed9-en.png)
 
