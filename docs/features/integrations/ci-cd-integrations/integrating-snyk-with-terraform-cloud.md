@@ -32,7 +32,7 @@ You must be an administrator on the Snyk organization to  configure the Terrafor
 
 Navigate to the dedicated Terraform Cloud integration settings page, under the Integrations page in the Snyk app and follow these steps:
 
-### Setup Terraform plan scanning
+### Set up Terraform plan scanning
 
 1. Copy the provided URL and HMAC Key from the integration setting page in Snyk.
 2. Navigate to [Terraform Cloud](https://app.terraform.io) and go into the organization global settings.
