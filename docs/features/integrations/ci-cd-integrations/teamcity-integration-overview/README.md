@@ -1,71 +1,51 @@
 # TeamCity integration
 
-Integrate the Snyk Security plugin with JetBrains’ continuous integration (CI) tool, TeamCity, to embed open source vulnerability scanning directly into your automated build chain. The TeamCity project builds as an additional build step to check for vulnerabilities as part of your build, and thereafter you can easily push your project to Snyk for continuous monitoring.
+Integrate the Snyk Security plugin with the JetBrains continuous integration (CI) tool, TeamCity, to embed open source vulnerability scanning directly into your automated build chain. The TeamCity integration adds an additional build step to scan for vulnerabilities in your project as part of your build. After the scan you can push your project to Snyk for continuous monitoring.
 
-By scanning as part of your build and then displaying those test results directly from the TeamCity UI, the Snyk plugin enables you to more quickly track, identify and fix issues that risk your application’s security posture over time, as fixes are made available for vulnerabilities or new vulnerabilities are disclosed.
+The Snyk plugin scans as part of your build and then displays test results directly from the TeamCity UI. This enables you to track, identify, and fix issues that risk the security of your application more quickly and over time as fixes are made available for vulnerabilities or new vulnerabilities are disclosed.
 
-### Supported languages and repos
+## Supported languages and repos
 
 Snyk supports all TeamCity projects regardless of which Git repo is used.
 
 All languages supported by both TeamCity and Snyk can be scanned for vulnerabilities by this plugin.
 
-### How it works
+## How TeamCity integration works
 
-Use the Snyk plugin with your TeamCity projects to test and monitor your code for vulnerabilities on an ongoing basis, breaking builds when newly disclosed vulnerabilities related to your project are announced and receiving relevant notifications—all based on your configurations.
+Use the Snyk plugin with your TeamCity projects to test and monitor your code for vulnerabilities on an ongoing basis, breaking builds when newly disclosed vulnerabilities related to your project are announced and receiving relevant notifications, all based on your configurations.
 
-1. The admin selects the Snyk plugin for installation in their TeamCity account.
+1. The TeamCity account admin selects the Snyk plugin for installation.
 2. TeamCity installs the plugin on the server in the Plugin directory.
 3. The admin enables the plugin.
 4. The user creates a project or updates an existing project, adding Snyk Security as a build step.
-5. The user configures build, including the configuration of the Snyk Security step (API token, policy changes, etc.).
+5. The user configures the build, including the configuration of the Snyk Security step (API token, policy changes, and so on).
 6. Snyk authenticates your account using the API token you configured in the build.
 7. The user runs a build.
-8. During the build, before scanning for vulnerabilities, your Snyk installation is verified and/or updated as necessary in the background (if necessary, and as based on your policy configuration).
-9. Snyk then analyzes the manifest file of your project, automatically detecting project type to find direct and transitive dependencies and test your project against the Snyk vulnerability database for known vulnerabilities.
-10. From TeamCity in the Build details, the tab Snyk Security Report displays the test results, indicating the number of known issues and the number of associated dependency paths identified.
-11. Based on the Monitor project on build configuration setting for this project:
-12. If the user did not choose the option when configuring the step, then Snyk displays all vulnerability results and details from the Snyk Security Report tab in TeamCity.
-13. If the severity threshold was defined for a severity that is assigned to any vulnerability identified in your project, TeamCity breaks the build.
-14. Otherwise, TeamCity continues to run the build to completion (success or failure) and Snyk activity ends.
-15. If the user configured the Monitor project on build option, Snyk now runs the `snyk monitor` command and proceeds with the remainder of the steps as described here.
-16. Snyk takes a snapshot of the project, analyzes the manifest file of your project to find its direct and transitive dependencies and tests your project against the Snyk vulnerability database for known vulnerabilities.
-17. Snyk pushes the snapshot, displaying the project details and the dependency hierarchy from the Snyk UI as well as vulnerability results and fix advice.
-18. If the severity threshold was defined for a severity that is assigned to any vulnerability in your project, TeamCity breaks the build.
-19. Once the snapshot is pushed to the Snyk UI, Snyk continues to monitor your project as new vulnerabilities are disclosed. Based on your configurations, if vulnerabilities are found, Snyk notifies you via email or Slack so that you can take immediate fix action.
+8. During the build, before scanning for vulnerabilities, your Snyk installation is verified and updated as necessary in the background, based on your policy configuration.
+9. Snyk then analyzes the manifest file of your project, automatically detecting the project type to find direct and transitive dependencies and test your project against the Snyk vulnerability database for known vulnerabilities.
+10. The **Snyk Security Report** tab displays the test results from TeamCity in the Build details. The results indicate the number of known issues and the number of associated dependency paths identified.
+11. If the user did not choose the the **Monitor project on build** configuration setting for this project:
+    1. Snyk displays all vulnerability results and details from the **Snyk Security Report tab** in TeamCity.
+    2. If the severity threshold was specified for a severity that is assigned to any vulnerability identified in your project, TeamCity breaks the build. Otherwise, TeamCity continues to run the build to completion (success or failure) and Snyk activity ends.
+12. If the user configured the **Monitor project on build** option, Snyk now runs the `snyk monitor` command and proceeds with the remainder of the steps as described here.
+    1. Snyk takes a snapshot of the project, analyzes the manifest file of your project to find its direct and transitive dependencies, and tests your project against the Snyk vulnerability database for known vulnerabilities.
+    2. Snyk pushes the snapshot to the Snyk UI. The snapshot displays the project details and the dependency hierarchy as well as vulnerability results and fix advice.
+    3. If the severity threshold was specified for a severity that is assigned to any vulnerability in your project, TeamCity breaks the build.
+    4. Once the snapshot is pushed to the Snyk UI, Snyk continues to monitor your project as new vulnerabilities are disclosed. Based on your configuration, if vulnerabilities are found, Snyk notifies you by email or Slack so that you can take immediate fix action.
 
-#### Open doc: [TeamCity integration: use Snyk in your build](teamcity-integration-use-snyk-in-your-build/)
+For information on how to configure your build with a Snyk step, see [Team City integration: use Snyk in your build](teamcity-integration-use-snyk-in-your-build/).
 
-### Install the Snyk plugin
+## Install the Snyk plugin
 
-Install or upgrade the Snyk Security plugin with these steps. Once complete, you’re all set to add a Snyk step to your projects.
+Install or upgrade the Snyk Security plugin by following these steps. When the installation is complete, you can add a Snyk step to your projects.
 
-> #### Warning
->
-> You must sign up for an account with Snyk before you begin.
-
-**How to install the Snyk plugin**
+**Note:** Before you begin, sign up for a Snyk account.
 
 1. Log in to your TeamCity instance to install the Snyk Security plugin. Configure the **Plugins list** to **Periodically check for plugin updates**, in order to ensure regular automatic upgrades in the background.
-2. Navigate to the [JetBrains Plugins Repository](https://plugins.jetbrains.com/plugin/12227-snyk-security), search for Snyk and from the **Get** dropdown list, select to install the plugin for your TeamCity installation.
-3. When the following prompt appears, click Install.
-4. When the installation ends, the **Administration Plugins List** loads, notifying the plugin has been uploaded.
-5. Ensure the plugin is enabled.
+2. Navigate to the [JetBrains Plugins Repository](https://plugins.jetbrains.com/plugin/12227-snyk-security), search for Snyk, and from the **Get** dropdown list, select the plugin for your TeamCity installation.
+3. In response to the prompt, click **Install**.
+4. When the installation ends, and the **Administration Plugins List** loads notifying you that the plugin has been uploaded, ensure the plugin is enabled.
 
-![](../../../../.gitbook/assets/uuid-fe65f4bc-9578-016c-00dd-6ddb97d2ead7-en.png)
+![Install plugin from the JetBrains Plugins Repository](../../../../.gitbook/assets/uuid-fe65f4bc-9578-016c-00dd-6ddb97d2ead7-en.png)
 
-### Configuration parameters
-
-| **Parameters**             | **Description and values**                                                                                                                                                                                                                                                                                                                                                                                                          |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Snyk settings**          |                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Severity threshold         | <p>Default: low</p><p>For the first vulnerability found in your build with the threshold as configured, the build fails.</p>                                                                                                                                                                                                                                                                                                        |
-| Monitor project on build   | <p>Default: ON</p><p>Snyk runs the snyk monitor command during the build, sending a project snapshot to the Snyk app and continuing to monitor the project for vulnerabilities even after this build.</p>                                                                                                                                                                                                                           |
-| File                       | <p>Optional.</p><p>If the manifest file is not on the root level, enter the relative path to that file.</p>                                                                                                                                                                                                                                                                                                                         |
-| Organization               | <p>Optional.</p><p>The ID of the Snyk organization to which this project should be associated when imported to the UI.</p><p>Copy the Organization ID from the Snyk UI in the Settings area.</p><p><img src="../../../../.gitbook/assets/uuid-dfede20b-acb5-fc08-8d1d-59e8476240a5-en.png" alt="image6.png"></p>                                                                                                                    |
-| Project name               | <p>Optional.</p><p>Enter any unique name for this project to recognize it when viewing from the Snyk UI.</p>                                                                                                                                                                                                                                                                                                                        |
-| Additional parameters      | <p>Optional.</p><p>Enter additional CLI arguments as necessary. See our CLI documentation and cheat sheet for additional information.</p>                                                                                                                                                                                                                                                                                           |
-| **Snyk tool settings**     |                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Snyk API token             | <p>From the Settings area in the Snyk UI, copy the Org or Personal API token or create a service account. This is the token used to authenticate your Snyk account when connecting to TeamCity.</p><p><img src="../../../../.gitbook/assets/uuid-c27d25fc-00a7-f0f4-261c-d0d9f8653d1d-en.png" alt="image7.png"></p><p><img src="../../../../.gitbook/assets/uuid-be0e9602-023b-99a4-f08c-eded5ea77dac-en.png" alt="image8.png"></p> |
-| Snyk version               | <p>Default: the most recent version</p><p>Select the plugin version to be used in your build if you would like an older Snyk CLI version to support the plugin.</p><p>We recommend configuring automatic upgrades and using the most recent version.</p>                                                                                                                                                                            |
-| Use custom build tool path | <p>Specify which tool instance in your local environment is to be used for this build by Snyk.</p><p>Otherwise Snyk auto-detects the tool and locates it in your environment based on project type.</p>                                                                                                                                                                                                                             |
+To configure the integration, see [TeamCity configuration parameters](teamcity-configuration-parameters.md). For information on how to configure your build with a Snyk step, see [Team City integration: use Snyk in your build](teamcity-integration-use-snyk-in-your-build/).
