@@ -137,7 +137,7 @@
     * [RiskSense](features/integrations/vulnerability-management-tools/risksense.md)
     * [Vulcan-Cyber](features/integrations/vulnerability-management-tools/vulcan-cyber.md)
   * [Private registry gatekeeper plugins](features/integrations/private-registry-gatekeeper-plugins/README.md)
-    * [Artifactory Gatekeeper plugin overview](features/integrations/private-registry-gatekeeper-plugins/artifactory-gatekeeper-plugin-overview.md)
+    * [Artifactory Gatekeeper plugin](features/integrations/private-registry-gatekeeper-plugins/artifactory-gatekeeper-plugin-overview.md)
     * [Nexus Repository Manager Gatekeeper plugin](features/integrations/private-registry-gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
   * [Private registry integrations](features/integrations/private-registry-integrations/README.md)
     * [Artifactory Registry setup](features/integrations/private-registry-integrations/artifactory-registry-setup.md)
