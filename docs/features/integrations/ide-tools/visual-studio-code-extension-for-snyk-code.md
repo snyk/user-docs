@@ -53,7 +53,7 @@ To authenticate follow the steps:
     ![](<../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1) (2).png>)
 2.  Click **Connect VS Code with Snyk**. The extension relies on the Snyk authentication API and it will ask you to authenticate you against Snyk’s web application:
 
-    ![](<../../../.gitbook/assets/image (71) (3).png>)
+    ![](<../../../.gitbook/assets/image (71) (1) (1) (1).png>)
 3. Click **Authenticate**.
 4.  After successful authentication, you will see a confirmation message:
 
@@ -68,14 +68,14 @@ Snyk Open Source requires Snyk CLI, so it will proceed with the download in the 
 
 Snyk Code analysis runs quickly without it, so results may even already be available. Otherwise, you will see the following screen while Snyk scans your workspace for vulnerabilities:
 
-![](<../../../.gitbook/assets/image (80) (3).png>)
+![](<../../../.gitbook/assets/image (80) (1) (1) (1).png>)
 
 Snyk's analysis runs automatically when you open a folder or workspace.
 
 * Snyk Code performs scans automatically on file saves.
 * Snyk Open Source does not automatically run on save by default, but you can enable it in settings:
 
-![](<../../../.gitbook/assets/image (73) (3).png>)
+![](<../../../.gitbook/assets/image (73) (1) (1) (1).png>)
 
 **Tip**: if you don't like to manually save while working, enable [AutoSave](https://code.visualstudio.com/docs/editor/codebasics#\_save-auto-save).
 
@@ -87,7 +87,7 @@ To manually trigger a scan, either Save or manually rescan using the rescan icon
 
 If you only need the Code Quality, Code Security or Open Source Security portion of the findings, you can easily disable the feature with the results you don't want to see or simply collapse the view:
 
-![](<../../../.gitbook/assets/image (83) (2).png>)
+![](<../../../.gitbook/assets/image (83) (1) (1) (1) (2).png>)
 
 #### Snyk Code advanced mode
 
@@ -111,7 +111,7 @@ The Snyk analysis panel (on the left of the code screen in the above screenshot)
 
 The icons here mean:
 
-| ![](<../../../.gitbook/assets/image (75) (2).png>) Critical severity                   | May allow attackers to access sensitive data and run code on your application.                                                               |
+| ![](<../../../.gitbook/assets/image (75) (1) (1) (1).png>) Critical severity           | May allow attackers to access sensitive data and run code on your application.                                                               |
 | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](<../../../.gitbook/assets/image (64) (1) (1) (1) (2) (1) (1).png>) High severity   | May allow attackers to access sensitive data on your application.                                                                            |
 | ![](<../../../.gitbook/assets/image (63) (1) (1) (1) (1) (2) (1).png>) Medium severity | May allow attackers under some conditions to access sensitive data on your application.                                                      |
@@ -119,7 +119,7 @@ The icons here mean:
 
 You can filter the issues by setting the severities you want to see using the `snyk.severity` setting. E.g. set `"snyk.severity": { "critical": true, "high": true, "medium": true, "low": false }` to hide low severity issues. You can also apply the setting via Settings UI.
 
-![](<../../../.gitbook/assets/image (65) (2).png>)
+![](<../../../.gitbook/assets/image (65) (1) (1).png>)
 
 #### Snyk Code editor window
 
@@ -148,7 +148,7 @@ Editor window shows security vulnerabilities in open source modules while you co
 
 * Code inline vulnerability counts are also shown in your `package.json` file:
 
-![](<../../../.gitbook/assets/oss-editor-pjson (1).png>)
+![](../../../.gitbook/assets/oss-editor-pjson.png)
 
 * Find security vulnerabilities in your JavaScript packages from well-known CDNs: the extension scans any HTML files in your projects and displays vulnerability information about the modules you include from your favorite CDN.
   * Currently supported CDN's:

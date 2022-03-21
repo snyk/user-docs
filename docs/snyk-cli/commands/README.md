@@ -26,7 +26,7 @@ Test a project for open source vulnerabilities and license issues.
 
 Snapshot and continuously monitor a project for open source vulnerabilities and license issues.
 
-### [`snyk container`](container.md)
+### [`snyk container`](container/)
 
 Test container images for vulnerabilities.
 

@@ -68,17 +68,17 @@ Create a Snyk App using the Snyk CLI.
 
 The following is a list of the sub-commands for Snyk CLI commands. Each sub-command is followed by the command(s) to which the sub-command applies. The commands are linked to their help docs. For details concerning each sub-command, see the help docs.
 
-`test`: subcommand of [`code`](../commands/code.md), [`container`](../commands/container.md), and [`iac`](../commands/iac.md)``
+`test`: subcommand of [`code`](../commands/code.md), [`container`](../commands/container/), and [`iac`](../commands/iac-1.md)\`\`
 
-`monitor`: subcommand of [`container`](../commands/container.md)``
+`monitor`: subcommand of [`container`](../commands/container/)\`\`
 
-`get <KEY>`: subcommand of [`config`](../commands/config.md)``
+`get <KEY>`: subcommand of [`config`](../commands/config.md)\`\`
 
-`set <KEY>=<VALUE>`: subcommand of [`config`](../commands/config.md)``
+`set <KEY>=<VALUE>`: subcommand of [`config`](../commands/config.md)\`\`
 
-`unset <KEY>`: sub-command of [`config`](../commands/config.md)``
+`unset <KEY>`: sub-command of [`config`](../commands/config.md)\`\`
 
-`clear`: subcommand of [`config`](../commands/config.md)``
+`clear`: subcommand of [`config`](../commands/config.md)\`\`
 
 ## Exit codes
 
@@ -101,79 +101,79 @@ Use `-d` option to output the debug logs.
 
 The following is a list of the options for Snyk CLI commands. Each option is followed by the command(s) to which the option applies. The commands are linked to their help docs. For details concerning each option, see the help docs.
 
-`--all-projects`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--all-projects`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--detection-depth=<DEPTH>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`iac`](../commands/iac.md)``
+`--detection-depth=<DEPTH>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`iac`](../commands/iac-1.md)\`\`
 
-`--exclude=<DIRECTORY>[,<DIRECTORY>]...>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--exclude=<DIRECTORY>[,<DIRECTORY>]...>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--prune-repeated-subdependencies, -p`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--prune-repeated-subdependencies, -p`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--print-deps`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)``
+`--print-deps`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container/)\`\`
 
-`--remote-repo-url=<URL>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--remote-repo-url=<URL>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--dev`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--dev`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--org=<ORG_ID>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`code`](../commands/code.md), [`iac`](../commands/iac.md)``
+`--org=<ORG_ID>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`code`](../commands/code.md), [`iac`](../commands/iac-1.md)\`\`
 
-`--file=<FILE>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)``
+`--file=<FILE>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container/)\`\`
 
-`--package-manager=<PACKAGE_MANAGER_NAME>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--package-manager=<PACKAGE_MANAGER_NAME>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--ignore-policy`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`iac`](../commands/iac.md)``
+`--ignore-policy`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`iac`](../commands/iac-1.md)\`\`
 
-`--trust-policies` [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--trust-policies` [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--show-vulnerable-paths=<none|some|all>` [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--show-vulnerable-paths=<none|some|all>` [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--project-name=<PROJECT_NAME>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)``
+`--project-name=<PROJECT_NAME>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container/)\`\`
 
-`--target-reference=<TARGET_REFERENCE>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--target-reference=<TARGET_REFERENCE>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--policy-path=<PATH_TO_POLICY_FILE>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md), [`iac`](../commands/iac.md), [`ignore`](../commands/ignore.md)``
+`--policy-path=<PATH_TO_POLICY_FILE>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container/), [`iac`](../commands/iac-1.md), [`ignore`](../commands/ignore.md)\`\`
 
-`--json`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`code`](../commands/code.md), [`container`](../commands/container.md), [`iac`](../commands/iac.md)``
+`--json`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`code`](../commands/code.md), [`container`](../commands/container/), [`iac`](../commands/iac-1.md)\`\`
 
-`--json-file-output=<OUTPUT_FILE_PATH>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md), [`iac`](../commands/iac.md)``
+`--json-file-output=<OUTPUT_FILE_PATH>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container/), [`iac`](../commands/iac-1.md)\`\`
 
-`--sarif`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`code`](../commands/code.md), [`container`](../commands/container.md), [`iac`](../commands/iac.md)``
+`--sarif`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`code`](../commands/code.md), [`container`](../commands/container/), [`iac`](../commands/iac-1.md)\`\`
 
-`--sarif-file-output=<OUTPUT_FILE_PATH>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md), [`iac`](../commands/iac.md)``
+`--sarif-file-output=<OUTPUT_FILE_PATH>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container/), [`iac`](../commands/iac-1.md)\`\`
 
-`--severity-threshold=<low|medium|high|critical>`: [`test`](../commands/test.md), [`code`](../commands/code.md), [`container`](../commands/container.md), [`iac`](../commands/iac.md)``
+`--severity-threshold=<low|medium|high|critical>`: [`test`](../commands/test.md), [`code`](../commands/code.md), [`container`](../commands/container/), [`iac`](../commands/iac-1.md)\`\`
 
 `--fail-on=<all|upgradable|patchable>`: [`test`](../commands/test.md)
 
-`--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)``
+`--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container/)\`\`
 
-`--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)``
+`--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container/)\`\`
 
-`--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)``
+`--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container/)\`\`
 
-`--project-tags=<TAG>[,<TAG>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)``
+`--project-tags=<TAG>[,<TAG>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container/)\`\`
 
-`--tags=<TAG>[,<TAG>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)``
+`--tags=<TAG>[,<TAG>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container/)\`\`
 
-`--exclude-base-image-vulns`: [`container`](../commands/container.md)``
+`--exclude-base-image-vulns`: [`container`](../commands/container/)\`\`
 
-`--platform=<PLATFORM>`: [`container`](../commands/container.md)``
+`--platform=<PLATFORM>`: [`container`](../commands/container/)\`\`
 
-`--username=<CONTAINER_REGISTRY_USERNAME>`: [`container`](../commands/container.md)``
+`--username=<CONTAINER_REGISTRY_USERNAME>`: [`container`](../commands/container/)\`\`
 
-`--password=<CONTAINER_REGISTRY_PASSWORD>`: [`container`](../commands/container.md)``
+`--password=<CONTAINER_REGISTRY_PASSWORD>`: [`container`](../commands/container/)\`\`
 
-`--scan=<TERRAFORM_PLAN_SCAN_MODE>`: [`iac`](../commands/iac.md)``
+`--scan=<TERRAFORM_PLAN_SCAN_MODE>`: [`iac`](../commands/iac-1.md)\`\`
 
-`--rules=<PATH_TO_CUSTOM_RULES_BUNDLE>`: [`iac`](../commands/iac.md)``
+`--rules=<PATH_TO_CUSTOM_RULES_BUNDLE>`: [`iac`](../commands/iac-1.md)\`\`
 
-`--id=<ISSUE_ID>`: [`ignore`](../commands/ignore.md)``
+`--id=<ISSUE_ID>`: [`ignore`](../commands/ignore.md)\`\`
 
-`--expiry=<EXPIRY>`: [`ignore`](../commands/ignore.md)``
+`--expiry=<EXPIRY>`: [`ignore`](../commands/ignore.md)\`\`
 
-`--reason=<REASON>`: [`ignore`](../commands/ignore.md)``
+`--reason=<REASON>`: [`ignore`](../commands/ignore.md)\`\`
 
-`--path=<PATH_TO_RESOURCE>`: [`ignore`](../commands/ignore.md)``
+`--path=<PATH_TO_RESOURCE>`: [`ignore`](../commands/ignore.md)\`\`
 
 ## Debug
 
@@ -181,63 +181,63 @@ The following is a list of the options for Snyk CLI commands. Each option is fol
 
 ## Options for Maven projects
 
-`--scan-all-unmanaged`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--scan-all-unmanaged`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--reachable`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--reachable`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--reachable-timeout=<TIMEOUT>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--reachable-timeout=<TIMEOUT>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
 ## Options for Gradle projects
 
-`--sub-project=<NAME>`, `--gradle-sub-project=<NAME>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--sub-project=<NAME>`, `--gradle-sub-project=<NAME>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--all-sub-projects`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--all-sub-projects`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--configuration-matching=<CONFIGURATION_REGEX>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--configuration-matching=<CONFIGURATION_REGEX>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--configuration-attributes=<ATTRIBUTE>[,<ATTRIBUTE>]...`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--configuration-attributes=<ATTRIBUTE>[,<ATTRIBUTE>]...`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--reachable`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--reachable`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--reachable-timeout=<TIMEOUT>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--reachable-timeout=<TIMEOUT>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--init-script=<FILE`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--init-script=<FILE`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
 ## Options for .Net and NuGet projects
 
-`--assets-project-name`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--assets-project-name`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--packages-folder`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--packages-folder`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--project-name-prefix=<PREFIX_STRING>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--project-name-prefix=<PREFIX_STRING>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--project-name-prefix=my-group/`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--project-name-prefix=my-group/`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
 ## Options for npm projects
 
-`--strict-out-of-sync=true|false`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--strict-out-of-sync=true|false`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
 ## Options for Yarn projects
 
-`--strict-out-of-sync=true|false`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--strict-out-of-sync=true|false`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--yarn-workspaces`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--yarn-workspaces`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
 ## Options for CocoaPods projects
 
-`--strict-out-of-sync=true|false`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--strict-out-of-sync=true|false`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
 ## Options for Python projects
 
-`--command=<COMMAND>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--command=<COMMAND>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--skip-unresolved=true|false`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+`--skip-unresolved=true|false`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
 ## Options for Go projects
 
 Currently the following options are not supported:
 
-`--fail-on=<all|upgradable|patchable>`: [`test`](../commands/test.md)``
+`--fail-on=<all|upgradable|patchable>`: [`test`](../commands/test.md)\`\`
 
 ## Options for unmanaged projects
 
