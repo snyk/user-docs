@@ -23,12 +23,12 @@ There are two options to get started:
     snyk-iac-rules template --rule <RULE-NAME> --format <hcl2|json|yaml|tf-plan>
     ```
 
-    This generates the scaffolding for the rule, including fixture files based on the provided configuration format. For more details, read the [documentation about the template command](../sdk-reference.md#template-options).
+    This generates the scaffolding for the rule, including fixture files based on the provided configuration format. For more details, read the [documentation about the template command](../../detect-drift-and-manually-created-resources/sdk-reference.md#template-options).
 2. Create a Rego policy from scratch and match the expected file and folder structure on your own:\
-   `rules` \
-   `└── my_rule` \
-   &#x20;       `├── main.rego` \
-   &#x20;       `└── main_test.rego`
+   `rules`\
+   `└── my_rule`\
+   `├── main.rego`\
+   `└── main_test.rego`
 
 {% hint style="info" %}
 You will have to write your own Rego testing framework if you don't use the `template`command.
@@ -37,7 +37,7 @@ You will have to write your own Rego testing framework if you don't use the `tem
 ### Structure of the rule
 
 In Rego, you can write statements that allow or deny a request, such as:\
-`allow { input.name == "alice" }` or `deny  { input.name == "alice" }`
+`allow { input.name == "alice" }` or `deny { input.name == "alice" }`
 
 {% hint style="info" %}
 If the **`template`** command was used to generate the rules, then the default entry point is **`rules/deny`**. To override it and use a different name than `deny`, check the section [Bundling Rules](bundling-rules.md).
@@ -110,7 +110,6 @@ test_new_ruleryle {
 	test_cases := array.concat(allowed_test_cases, denied_test_cases)
 	testing.evaluate_test_cases("new-rule", "./rules/new-rule/fixtures", test_cases)
 }
-
 ```
 
 ### Example of a rule
@@ -146,7 +145,7 @@ deny[msg] {
 ### Limitations/Notes
 
 * As we compile Rego policies into Wasm modules, you can only use built-in functions that support Wasm. There is a table at the bottom of the [Policy Reference Documentation](https://www.openpolicyagent.org/docs/latest/policy-reference/) that can help you identify those.
-* A rule may be defined multiple times with the same name, either in a file, or in separate files under the same package, e.g:&#x20;
+* A rule may be defined multiple times with the same name, either in a file, or in separate files under the same package, e.g:
 
 ```
 packages rules
@@ -162,6 +161,6 @@ deny[msg] {
 ...
 ```
 
-These rules are referred as `incremental` as each definition is additive. You can read more about Incremental Definitions [here](https://www.openpolicyagent.org/docs/latest/policy-language/#incremental-definitions). Note that these same named rules have to return a different value, or OPA will return an error. You can read more about Complete Definitions [here](https://www.openpolicyagent.org/docs/latest/policy-language/#complete-definitions).&#x20;
+These rules are referred as `incremental` as each definition is additive. You can read more about Incremental Definitions [here](https://www.openpolicyagent.org/docs/latest/policy-language/#incremental-definitions). Note that these same named rules have to return a different value, or OPA will return an error. You can read more about Complete Definitions [here](https://www.openpolicyagent.org/docs/latest/policy-language/#complete-definitions).
 
-For more complex topics, check [how OPA resolves Conflict Resolution](https://www.openpolicyagent.org/docs/latest/faq/#conflict-resolution).&#x20;
+For more complex topics, check [how OPA resolves Conflict Resolution](https://www.openpolicyagent.org/docs/latest/faq/#conflict-resolution).

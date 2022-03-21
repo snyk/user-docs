@@ -58,7 +58,7 @@ This is how Snyk pull request checks appear on the Pull Request page on GitHub:
 
 You can review and adjust the pull request tests settings by navigating to the GitHub Integration **Settings** page in Snyk (Settings --> Integration --> GitHub):
 
-![](<../../../.gitbook/assets/mceclip5 (1).png>)
+![](<../../../.gitbook/assets/mceclip5 (1) (1).png>)
 
 ## Required permissions scope for the GitHub integration
 

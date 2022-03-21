@@ -161,7 +161,7 @@ Editor window shows security vulnerabilities in open source modules while you co
     * yastatic.net
     * ajax.aspnetcdn.com
 
-![](../../../.gitbook/assets/oss-editor-html.png)
+![](<../../../.gitbook/assets/oss-editor-html (1).png>)
 
 You can navigate to the most severe vulnerability by triggering the provided code actions. This opens a vulnerability window to show more details:
 

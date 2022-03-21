@@ -79,7 +79,7 @@ To review and adjust the pull request tests settings:
 2. Select **Edit Settings** for GitHub Enterprise.
 3. Navigate to **Default Snyk test for pull requests**:
 
-![](<../../../.gitbook/assets/mceclip5 (1).png>)
+![](<../../../.gitbook/assets/mceclip5 (1) (1).png>)
 
 ## Required permissions scope for the GitHub integration
 

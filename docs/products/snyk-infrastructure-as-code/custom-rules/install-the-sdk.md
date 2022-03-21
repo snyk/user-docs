@@ -125,4 +125,4 @@ docker run --rm -v $(pwd):/app snyk/snyk-iac-rules template -r {rule_name}
 ### See also
 
 * [​Getting started with the SDK​](getting-started-with-the-sdk/)
-* ​[SDK reference​](sdk-reference.md)
+* ​[SDK reference​](../detect-drift-and-manually-created-resources/sdk-reference.md)
