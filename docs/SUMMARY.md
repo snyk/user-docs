@@ -332,6 +332,8 @@
     * [Use IaC custom rules with CLI](products/snyk-infrastructure-as-code/custom-rules/use-IaC-custom-rules-with-CLI/README.md)
       * [Using a local custom rules bundle](products/snyk-infrastructure-as-code/custom-rules/how-to-run-custom-rules-with-the-snyk-cli/using-a-local-custom-rules-bundle.md)
       * [Using a remote custom rules bundle](products/snyk-infrastructure-as-code/custom-rules/how-to-run-custom-rules-with-the-snyk-cli/using-a-remote-custom-rules-bundle.md)
+    * [Integrating IaC custom rules within a pipeline](products/snyk-infrastructure-as-code/custom-rules/integrating-iac-custom-rules-within-a-pipeline.md)
+    * [SDK Reference](products/snyk-infrastructure-as-code/custom-rules/sdk-reference.md)
   * [Detect drift and manually created resources](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/README.md)
     * [Configure cloud providers](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/configure-cloud-providers/README.md)
       * [Configure AWS provider](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/configure-cloud-providers/configure-aws-provider.md)
@@ -342,8 +344,6 @@
     * [Filter results](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/filter-results.md)
     * [Ignore resources](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/ignore-resources.md)
     * [IAC sources usage](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/iac-sources-usage.md)
-    * [Integrating IaC custom rules within a pipeline](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/integrating-iac-custom-rules-within-a-pipeline.md)
-    * [SDK Reference](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/sdk-reference.md)
 
 ## USING SNYK <a href="#features" id="features"></a>
 
