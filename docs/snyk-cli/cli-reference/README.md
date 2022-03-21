@@ -68,7 +68,7 @@ Create a Snyk App using the Snyk CLI.
 
 The following is a list of the sub-commands for Snyk CLI commands. Each sub-command is followed by the command(s) to which the sub-command applies. The commands are linked to their help docs. For details concerning each sub-command, see the help docs.
 
-`test`: subcommand of [`code`](../commands/code.md), [`container`](../commands/container.md), and [`iac`](../commands/iac-1/)\`\`
+`test`: subcommand of [`code`](../commands/code.md), [`container`](../commands/container.md), and [`iac`](broken-reference)\`\`
 
 `monitor`: subcommand of [`container`](../commands/container.md)\`\`
 
@@ -103,7 +103,7 @@ The following is a list of the options for Snyk CLI commands. Each option is fol
 
 `--all-projects`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--detection-depth=<DEPTH>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`iac`](../commands/iac-1/)\`\`
+`--detection-depth=<DEPTH>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`iac`](broken-reference)\`\`
 
 `--exclude=<DIRECTORY>[,<DIRECTORY>]...>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
@@ -115,13 +115,13 @@ The following is a list of the options for Snyk CLI commands. Each option is fol
 
 `--dev`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--org=<ORG_ID>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`code`](../commands/code.md), [`iac`](../commands/iac-1/)\`\`
+`--org=<ORG_ID>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`code`](../commands/code.md), [`iac`](broken-reference)\`\`
 
 `--file=<FILE>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)\`\`
 
 `--package-manager=<PACKAGE_MANAGER_NAME>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--ignore-policy`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`iac`](../commands/iac-1/)\`\`
+`--ignore-policy`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`iac`](broken-reference)\`\`
 
 `--trust-policies` [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
@@ -131,17 +131,17 @@ The following is a list of the options for Snyk CLI commands. Each option is fol
 
 `--target-reference=<TARGET_REFERENCE>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
 
-`--policy-path=<PATH_TO_POLICY_FILE>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md), [`iac`](../commands/iac-1/), [`ignore`](../commands/ignore.md)\`\`
+`--policy-path=<PATH_TO_POLICY_FILE>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md), [`iac`](broken-reference), [`ignore`](../commands/ignore.md)\`\`
 
-`--json`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`code`](../commands/code.md), [`container`](../commands/container.md), [`iac`](../commands/iac-1/)\`\`
+`--json`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`code`](../commands/code.md), [`container`](../commands/container.md), [`iac`](broken-reference)\`\`
 
-`--json-file-output=<OUTPUT_FILE_PATH>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md), [`iac`](../commands/iac-1/)\`\`
+`--json-file-output=<OUTPUT_FILE_PATH>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md), [`iac`](broken-reference)\`\`
 
-`--sarif`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`code`](../commands/code.md), [`container`](../commands/container.md), [`iac`](../commands/iac-1/)\`\`
+`--sarif`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`code`](../commands/code.md), [`container`](../commands/container.md), [`iac`](broken-reference)\`\`
 
-`--sarif-file-output=<OUTPUT_FILE_PATH>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md), [`iac`](../commands/iac-1/)\`\`
+`--sarif-file-output=<OUTPUT_FILE_PATH>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md), [`iac`](broken-reference)\`\`
 
-`--severity-threshold=<low|medium|high|critical>`: [`test`](../commands/test.md), [`code`](../commands/code.md), [`container`](../commands/container.md), [`iac`](../commands/iac-1/)\`\`
+`--severity-threshold=<low|medium|high|critical>`: [`test`](../commands/test.md), [`code`](../commands/code.md), [`container`](../commands/container.md), [`iac`](broken-reference)\`\`
 
 `--fail-on=<all|upgradable|patchable>`: [`test`](../commands/test.md)
 
@@ -163,9 +163,9 @@ The following is a list of the options for Snyk CLI commands. Each option is fol
 
 `--password=<CONTAINER_REGISTRY_PASSWORD>`: [`container`](../commands/container.md)\`\`
 
-`--scan=<TERRAFORM_PLAN_SCAN_MODE>`: [`iac`](../commands/iac-1/)\`\`
+`--scan=<TERRAFORM_PLAN_SCAN_MODE>`: [`iac`](broken-reference)\`\`
 
-`--rules=<PATH_TO_CUSTOM_RULES_BUNDLE>`: [`iac`](../commands/iac-1/)\`\`
+`--rules=<PATH_TO_CUSTOM_RULES_BUNDLE>`: [`iac`](broken-reference)\`\`
 
 `--id=<ISSUE_ID>`: [`ignore`](../commands/ignore.md)\`\`
 

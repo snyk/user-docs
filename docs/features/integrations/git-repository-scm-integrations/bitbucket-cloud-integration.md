@@ -34,9 +34,9 @@ Snyk's Bitbucket Cloud integration allows you to continuously perform security s
 8. Snyk scans the selected repositories for dependency files (such as package.json and pom.xml) in the entire directory tree, and import them to Snyk as projects:
 9. The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
-![](<../../../.gitbook/assets/444 (2) (4) (4) (4) (5) (4) (1) (1) (9).png>)
+![](<../../../.gitbook/assets/444 (2) (4) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (11).png>)
 
-After the integration is done, you can use  capabilities as described below.
+After the integration is done, you can use capabilities as described below.
 
 ### Project level security reports
 
@@ -44,7 +44,7 @@ Snyk produces advanced security reports, allowing you to explore the vulnerabili
 
 This is an example of a project level security report:
 
-![](<../../../.gitbook/assets/mceclip0-22- (2) (5) (6) (1) (1) (1) (22) (1).png>)
+![](<../../../.gitbook/assets/mceclip0-22- (2) (5) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (27).png>)
 
 ### Projects monitoring and automatic fix pull requests
 
@@ -56,11 +56,11 @@ Here is an example of a fix pull request opened by Snyk:
 
 To review and adjust the automatic fix pull request settings:
 
-1. Click on settings![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Integrations**.&#x20;
-2. Select **Edit Settings** for Bitbucket Cloud.&#x20;
+1. Click on settings![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Integrations**.
+2. Select **Edit Settings** for Bitbucket Cloud.
 3. Navigate to **Automatic fix pull requests**:
 
-![](<../../../.gitbook/assets/mceclip4 (1) (2) (6) (7) (3) (1) (1) (23).png>)
+![](<../../../.gitbook/assets/mceclip4 (1) (2) (6) (7) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (35).png>)
 
 ### Pull request tests
 
@@ -74,13 +74,13 @@ To review and adjust the pull request tests settings,
 
 1. Click on settings ![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Integrations**.
 2. Select **Edit Settings** for Bitbucket Cloud.
-3. Navigate to **Default Snyk test for pull requests > Open Source Security & Licenses**, and edit settings: ****&#x20;
+3. Navigate to **Default Snyk test for pull requests > Open Source Security & Licenses**, and edit settings: \*\*\*\*
 
 ![](<../../../.gitbook/assets/Screenshot 2022-03-16 at 10.07.50.png>)
 
 ### Required permissions scope for the Bitbucket Cloud integration
 
-All the operations, triggered manually or automatically, are performed for a Bitbucket Cloud service account that has its token (App Password) configured in the integrations settings.&#x20;
+All the operations, triggered manually or automatically, are performed for a Bitbucket Cloud service account that has its token (App Password) configured in the integrations settings.
 
 This shows the required access scopes for the configured token:
 

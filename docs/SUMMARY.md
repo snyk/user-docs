@@ -52,7 +52,6 @@
     * [Auth](snyk-cli/commands/auth.md)
     * [Code](snyk-cli/commands/code.md)
     * [Config](snyk-cli/commands/config.md)
-    * [IAC](snyk-cli/commands/iac.md)
     * [Container](snyk-cli/commands/container.md)
     * [IAC](snyk-cli/commands/iac/README.md)
       * [IAC describe](snyk-cli/commands/iac/iac-describe.md)
