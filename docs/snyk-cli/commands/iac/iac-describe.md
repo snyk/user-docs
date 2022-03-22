@@ -24,7 +24,7 @@ You can use environment variables and also set variables to configure the Snyk C
 
 ## Configure the terraform provider
 
-You can use environment variables and also set variables to configure the terraform provider used by the `describe` command. For more information see Configure providers.
+You can use environment variables and also set variables to configure the terraform provider used by the `describe` command. For more information see [Configure cloud providers](https://docs.snyk.io/products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/configure-cloud-providers).
 
 ## Debug
 
@@ -48,7 +48,7 @@ At this time, the `snyk iac describe` command supports reading Terraform states.
 
 To read multiple states, pass `--from=` followed by a comma-separated list. You can also use glob patterns to match multiple state files at once.
 
-For more information including **a list of supported IaC sources** and how to use them, see IAC Sources usage.
+For more information including **a list of supported IaC sources** and how to use them, see [IAC Sources usage](https://docs.snyk.io/products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/iac-sources-usage).
 
 Examples:
 
@@ -127,7 +127,7 @@ Use filter rules.
 
 Filter rules allow you to build a complex expression to include and exclude a set of resources in your workflow. Building a complex include and exclude expression is powered by the expression language JMESPath.
 
-For more information see Filter results.
+For more information see [Filter results](https://docs.snyk.io/products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/filter-results).
 
 ### `--json`
 
@@ -225,7 +225,7 @@ The default name for a driftignore file is `.driftignore`. If for some reason yo
 
 **Note:** You can use only one driftignore file at once.
 
-See Ignore resources.
+See [Ignore resources](https://docs.snyk.io/products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/ignore-resources).
 
 Example:
 
