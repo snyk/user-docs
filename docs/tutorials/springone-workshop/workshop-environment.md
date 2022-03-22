@@ -25,7 +25,7 @@ Using Snyk solutions, we will cover the following:
 
 **Container security**
 
-* Synk's container solution to scan container images.
+* Snyk's container solution to scan container images.
 *   Using Snyk to remediate vulnerability issues
 
     **Infrastructure as Code (IaC)**

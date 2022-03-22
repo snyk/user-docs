@@ -6,7 +6,7 @@ Snyk knowledge of the transitive dependencies in your project makes it easy for 
 
 Snyk supports the following workflows to help developers fix their vulnerabilities.
 
-1. Synk generates automatic git pull requests (PRs) using GitHub, GitLab, or Bitbucket PR workflows. Snyk executes this as a nightly workflow. 
+1. Snyk generates automatic git pull requests (PRs) using GitHub, GitLab, or Bitbucket PR workflows. Snyk executes this as a nightly workflow.
 2. Snyk users use the _**Open a fix PR**_ feature in the Snyk UI.
 3. Snyk users use the _**fix this vulnerability**_ feature on a specific issue card in the Snyk UI.
 
@@ -22,7 +22,7 @@ Snyk generates automatic pull requests for your projects using the source contro
 This setting should be set from our initial configuration of GitHub
 {% endhint %}
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/auto_pr_setting.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/auto\_pr\_setting.png)
 
 Snyk will issues PRs for your projects when they are ready. You can view the PR in GitHub (GitLab and Bitbucket have similar views) by select the Pull Request tab at the top of the git repository. Keep in mind, Synk generates PRs overnight, and multiple pull requests exist for different dependencies.
 
@@ -30,7 +30,7 @@ Snyk will issues PRs for your projects when they are ready. You can view the PR 
 SPC will generate a PR given enough time.
 {% endhint %}
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/github_pull_req_auto.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/github\_pull\_req\_auto.png)
 
 ## Open a fix PR
 
@@ -38,11 +38,11 @@ The Snyk UI offers the ability to create Pull Requests directly from the project
 
 Select the Open a fix PR and Snyk will start with the workflow to generate a PR for SPC. Prior to sending the PR to GitHub, the Snyk UI will show you what will be fixed by the PR, any partial fixes, and anything that will not be fixed. Submit the PR to GitHub and visit your GitHub repository Pull Request tab to view the Pull Request.
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/open_pr.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/open\_pr.png)
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/open_fix_pr_top_half.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/open\_fix\_pr\_top\_half.png)
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/open_fix_pr_bottom.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/open\_fix\_pr\_bottom.png)
 
 ## Fix this vulnerability
 

@@ -9,8 +9,7 @@ This section of the workshop demonstrates a common developer practice of scannin
 We will complete the following steps.
 
 1. Clone our forked version of the repo to our lab VM
-2. Authenticate with the Snyk UI using a personal token.  
-3. Perform Synk test using the CLI to review vulnerabilities and license issues. We will also use the Snyk CLI to scan container images for vulnerabilities. 
+2. Authenticate with the Snyk UI using a personal token.
+3. Perform Snyk test using the CLI to review vulnerabilities and license issues. We will also use the Snyk CLI to scan container images for vulnerabilities.
 4. Configure Maven to use the Snyk plugin for every build.
 5. Validate our IaC Kubernetes files and deploy SPC to Kubernetes.
-

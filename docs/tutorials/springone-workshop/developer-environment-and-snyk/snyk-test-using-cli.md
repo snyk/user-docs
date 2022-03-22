@@ -2,14 +2,14 @@
 
 ## Testing your SPC applications
 
-From the root directory of the SPC application, execute the Snyk command below. The Snyk test command will test your dependencies for vulnerabilities and tell you how many vulnerabilities are found.
+From the root directory of the SPC application, execute the Synk command below. The Snyk test command will test your dependencies for vulnerabilities and tell you how many vulnerabilities are found.
 
 ```
 snyk test
 ```
 
 {% hint style="info" %}
-Snyk CLI offers a number of switches for specific use cases and formatting of output.
+Synk CLI offers a number of switches for specific use cases and formatting of output.
 {% endhint %}
 
 {% hint style="info" %}
@@ -34,7 +34,7 @@ Issues to fix by upgrading:
   ✗ Cross-site Scripting (XSS) [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARS-479505] in org.webjars:bootstrap@3.3.6
 ```
 
-## Additional Examples of using Snyk Test
+## Additional Examples of using Synk Test
 
 ### Testing a Container image
 

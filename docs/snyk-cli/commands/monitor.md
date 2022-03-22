@@ -6,7 +6,7 @@
 
 ## Description
 
-The `snyk monitor` command creates a project in your Synk account to be continuously monitored for open source vulnerabilities and license issues. After running this command, log in to the Snyk website and view your projects to see the monitor.
+The `snyk monitor` command creates a project in your Snyk account to be continuously monitored for open source vulnerabilities and license issues. After running this command, log in to the Snyk website and view your projects to see the monitor.
 
 ## Exit codes
 

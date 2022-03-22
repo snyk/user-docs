@@ -6,17 +6,17 @@ Snyk CLI enables developers to test and monitor their application using the CLI.
 
 From the root directory of the SPC application
 
-```text
+```
 vi pom.xml
 ```
 
-In the plugin section, find and change the &lt;org&gt; name to match the Snyk organization you created earlier. We will pass the SNYK\_TOKEN via the maven command line in the next step.
+In the plugin section, find and change the \<org> name to match the Snyk organization you created earlier. We will pass the SNYK\_TOKEN via the maven command line in the next step.
 
 {% hint style="info" %}
 See the next step to find your organization name in Snyk.
 {% endhint %}
 
-```text
+```
 <plugin>
   <groupId>io.snyk</groupId>
   <artifactId>snyk-maven-plugin</artifactId>
@@ -48,13 +48,13 @@ See the next step to find your organization name in Snyk.
 
 Your organization name can be retrieved under settings.
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/getting_org_name.png)
+![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/getting\_org\_name.png)
 
 ## Execute Maven to view Snyk results
 
 After configuring the pom.xml file, we are ready to execute a Snyk test and view the results. Issue the command below with your personal API token.
 
-```text
+```
 mvn snyk:test -DSNYK_TOKEN=add_your_personal_token
 ```
 
@@ -62,9 +62,9 @@ mvn snyk:test -DSNYK_TOKEN=add_your_personal_token
 We retrieved your personal API token during authentication.
 {% endhint %}
 
-The Synk test results will display color-coded vulnerability information similar to the output below. The Synk plugin will provide details on each vulnerability and its associated severity level. Developers can choose to fail the build based on severity level or allow the build to pass.
+The Snyk test results will display color-coded vulnerability information similar to the output below. The Snyk plugin will provide details on each vulnerability and its associated severity level. Developers can choose to fail the build based on severity level or allow the build to pass.
 
-```text
+```
 Downloading from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api-java9/2.13.3/log4j-api-java9-2.13.3.pom
 [WARNING] The POM for org.apache.logging.log4j:log4j-api-java9:zip:2.13.3 is missing, no dependency information available
 [WARNING] ✗ medium severity vulnerability found on com.google.guava:guava@18.0
@@ -95,4 +95,3 @@ If you experience an issue with Snyk URL the org or API token is incorrect.
 {% hint style="info" %}
 This build will take about 45 seconds to complete.
 {% endhint %}
-
