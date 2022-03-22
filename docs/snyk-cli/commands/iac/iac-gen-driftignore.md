@@ -8,7 +8,7 @@
 
 The `snyk iac gen-driftignore` subcommand generates driftignore rules to be used by `snyk iac test`.
 
-For more information see Ignore resources.
+For more information see [Ignore resources](https://docs.snyk.io/products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/ignore-resources).
 
 ## Exit codes
 
