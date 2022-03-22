@@ -717,7 +717,7 @@
   * [Snyk CI/CD](tutorials/springone-workshop/snyk-ci-cd/README.md)
     * [Review Imported CI/CD Scans in Snyk UI](tutorials/springone-workshop/snyk-ci-cd/review-imported-ci-cd-scans-in-snyk-ui.md)
   * [Snyk Containers](tutorials/springone-workshop/snyk-container-for-developers/README.md)
-    * [Import SPC Container Image into Synk UI](tutorials/springone-workshop/snyk-container-for-developers/import-spc-container-image-into-synk-ui.md)
+    * [Import SPC Container Image into Snyk UI](tutorials/springone-workshop/snyk-container-for-developers/import-spc-container-image-into-synk-ui.md)
     * [Dockerfile fix advice](tutorials/springone-workshop/snyk-container-for-developers/dockerfile-remediation-advice.md)
   * [Snyk Infrastructure as Code (IaC)](tutorials/springone-workshop/snyk-iac-for-developers/README.md)
     * [Review IaC artifacts in Snyk UI](tutorials/springone-workshop/snyk-iac-for-developers/review-iac-artifacts-in-snyk-ui.md)

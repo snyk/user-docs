@@ -43,7 +43,7 @@ Below is an example of how you would set up your integration for **Github.com**
 2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories:
 3. Click **Authorize snyk** to provide Snyk with access to your repositories:
 
-![](<../../../.gitbook/assets/authorize (1) (2) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (22).png>)
+![](<../../../.gitbook/assets/authorize (1) (2) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (22).png>)
 
 **SCM permissions on repositories**
 
@@ -159,11 +159,11 @@ We suggest you exclude patches from the auto fix PRs, if your developers are not
 
 You should ask your developers to consider the merge advice label that appears on the auto fix PRs:
 
-![](<../../../.gitbook/assets/merge-advice-review-recommended (2) (2) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (25).png>)
+![](<../../../.gitbook/assets/merge-advice-review-recommended (2) (2) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (25).png>)
 
-![](<../../../.gitbook/assets/advice-green (1) (2) (2) (4) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (15).png>)
+![](<../../../.gitbook/assets/advice-green (1) (2) (2) (4) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (15).png>)
 
-![](<../../../.gitbook/assets/merge-advice (2) (2) (4) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (21).png>)
+![](<../../../.gitbook/assets/merge-advice (2) (2) (4) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (21).png>)
 
 {% hint style="info" %}
 Snyk auto fix PRs are only generated for new issues.
@@ -202,7 +202,7 @@ To set PR Settings on the project level, overriding the PR settings on the organ
 2. Click **Projects**.
 3.  Navigate to the relevant project and click the **Settings** cog:
 
-    ![](<../../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (9).png>)
+    ![](<../../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (9).png>)
 4. From the Settings area, click on the integration settings from the left panel menu to apply unique settings for that one project.
 5. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled.
 6. From the options that appear:
