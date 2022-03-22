@@ -10,5 +10,5 @@ You can run the `iac describe` in different modes:
 * `--only-unmanaged` to report only unmanaged resources
 * `--all` to scan both managed and unmanaged resources
 
-See the `snyk iac describe` command help for details.
+See the [`snyk iac describe` command](../../../snyk-cli/commands/iac/iac-describe.md) help for details.
 
