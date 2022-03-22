@@ -10,7 +10,7 @@ Available options:
   --version                 Show version number                        [boolean]
   --help                    Show help                                  [boolean]
   --user                    Bitbucket cloud username                   [required]
-  --password                Bitbucket cloud password                   [required]
+  --password                Bitbucket cloud app password               [required]
   --workspaces              [Optional] Bitbucket cloud workspace name/uuid to count contributors for
   --repo                    [Optional] Specific repo to count only for
   --exclusionFilePath       [Optional] Exclusion list filepath
@@ -30,7 +30,7 @@ Available options:
        ```
        export SNYK_TOKEN=<YOUR-SNYK-TOKEN>
        ```
-2.  Get your Bitbucket-Cloud username (**not email**) and password.
+2.  Get your Bitbucket-Cloud username (**not email**) and [app password](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#authentication)
 
     **Note**: Make sure your credentials have read access to the repos.
 
@@ -40,20 +40,20 @@ Consider the following levels of usage and options:
 
 #### Usage levels:
 
-*   To get commits for all workspaces and their repos in Bitbucket-Cloud: provide the Bitbucket-Cloud user and password:
+*   To get commits for all workspaces and their repos in Bitbucket-Cloud: provide the Bitbucket-Cloud user and app password:
 
     ```
-    snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password PASSWORD
+    snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password APP_PASSWORD
     ```
-*   To get commits for some workspaces and their repos in Bitbucket-Cloud: Provide the Bitbucket-Cloud user, Bitbucket-Cloud password and a comma-separated list of workspaces:
+*   To get commits for some workspaces and their repos in Bitbucket-Cloud: Provide the Bitbucket-Cloud user, Bitbucket-Cloud app password and a comma-separated list of workspaces:
 
     ```
-    snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password PASSWORD --workspaces Workspace1,Workspace2...
+    snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password APP_PASSWORD --workspaces Workspace1,Workspace2...
     ```
-*   To get commits for a specific repo in Bitbucket-Cloud: Provide your Bitbucket-Cloud user, Bitbucket-Cloud password, a workspace and a repo name:
+*   To get commits for a specific repo in Bitbucket-Cloud: Provide your Bitbucket-Cloud user, Bitbucket-Cloud app password, a workspace and a repo name:
 
     ```
-    snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password PASSWORD --workspaces Workspace1 --repo Repo1
+    snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password APP_PASSWORD --workspaces Workspace1 --repo Repo1
     ```
 
 #### Options:
@@ -61,27 +61,27 @@ Consider the following levels of usage and options:
 *   To get all the commits from Bitbucket-Cloud regardless of the repos that are already monitored by Snyk (You might have repos in Bitbucket-Cloud that are not monitored in Snyk, using this flag will skip checking for Snyk monitored repos and will go directly to Bitbucket-Cloud to fetch tha commits): add the `--skipSnykMonitoredRepos` flag:
 
     ```
-    snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password PASSWORD --skipSnykMonitoredRepos
+    snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password APP_PASSWORD --skipSnykMonitoredRepos
     ```
 *   To exclude some contributors from being counted in the commits => add an exclusion file with the emails to ignore (separated by commas) and apply the `--exclusionFilePath` with the path to that file:
 
     ```
-    snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password PASSWORD --workspaces Workspace1,Workspace2 --exclusionFilePath PATH_TO_FILE
+    snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password APP_PASSWORD --workspaces Workspace1,Workspace2 --exclusionFilePath PATH_TO_FILE
     ```
 *   To se the output to json format: add the `--json` flag:
 
     ```
-    snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password PASSWORD --workspaces Workspace1 --repo Repo1 --json
+    snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password APP_PASSWORD --workspaces Workspace1 --repo Repo1 --json
     ```
 *   To create an import file for me with my unmonitored repos: add the `--importConfDir` flag with a valid (writable) path to a folder in which the import files will be stored, and add the `--importFileRepoType` flag (optional) with the repo types to add to the file (all/private/public, defaults to all). (**Note that these flags can not be set with the `--repo` flag**):
 
     ```
-    snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password PASSWORD --importConfDir ValidPathToFolder --importFileRepoType private/public/all
+    snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password APP_PASSWORD --importConfDir ValidPathToFolder --importFileRepoType private/public/all
     ```
 
     For more details about these flag, refer to this [page](../../creating-and-using-the-import-files.md)
 *   To run in debug mode for verbose output, prefix with `DEBUG=snyk*`:
 
     ```
-    DEBUG=snyk* snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password PASSWORD --workspaces Workspace1 --repo Repo1 --exclusionFilePath PATH_TO_FILE --skipSnykMonitoredRepos --json
+    DEBUG=snyk* snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password APP_PASSWORD --workspaces Workspace1 --repo Repo1 --exclusionFilePath PATH_TO_FILE --skipSnykMonitoredRepos --json
     ```
