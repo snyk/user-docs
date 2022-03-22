@@ -12,14 +12,14 @@ For more information see [Snyk CLI for Infrastructure as Code](https://docs.snyk
 
 ## Subcommands
 
-### `iac test`
+### ``[`iac test`](https://docs.snyk.io/snyk-cli/commands/iac/iac-test)``
 
 Test for any known security issue.
 
-### `iac describe`
+### ``[`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac/iac-describe)``
 
 Detect, track, and alert on infrastructure drift and unmanaged resources.
 
-### `iac gen-driftignore`
+### ``[`iac gen-driftignore`](https://docs.snyk.io/snyk-cli/commands/iac/iac-gen-driftignore)``
 
 Generate a `.driftignore` file. For more information see Ignore resources. EDITING NOTE: Add links for subcommand help pages and link for Ignore resources page when the CRs are live. Links must be absolute links to webpages in the help docs because they are used in the CLI releases.
