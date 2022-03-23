@@ -53,7 +53,7 @@ To authenticate follow the steps:
     ![](<../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5).png>)
 2.  Click **Connect VS Code with Snyk**. The extension relies on the Snyk authentication API and it will ask you to authenticate you against Snyk’s web application:
 
-    ![](<../../../.gitbook/assets/image (71) (3).png>)
+    ![](<../../../.gitbook/assets/image (71) (3) (1).png>)
 3. Click **Authenticate**.
 4.  After successful authentication, you will see a confirmation message:
 
@@ -83,7 +83,7 @@ Snyk's analysis runs automatically when you open a folder or workspace.
 
 To manually trigger a scan, either Save or manually rescan using the rescan icon:
 
-![](<../../../.gitbook/assets/image (61) (2).png>)
+![](<../../../.gitbook/assets/image (61) (1) (1).png>)
 
 If you only need the Code Quality, Code Security or Open Source Security portion of the findings, you can easily disable the feature with the results you don't want to see or simply collapse the view:
 
@@ -115,11 +115,11 @@ The icons here mean:
 | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](<../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png>) High severity | May allow attackers to access sensitive data on your application.                                                                            |
 | ![](<../../../.gitbook/assets/image (63) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>) Medium severity   | May allow attackers under some conditions to access sensitive data on your application.                                                      |
-| ![](<../../../.gitbook/assets/image (81) (1) (1) (1) (1) (1).png>) Low severity                                      | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
+| ![](<../../../.gitbook/assets/image (81) (1) (1) (1) (1).png>) Low severity                                          | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
 
 You can filter the issues by setting the severities you want to see using the `snyk.severity` setting. E.g. set `"snyk.severity": { "critical": true, "high": true, "medium": true, "low": false }` to hide low severity issues. You can also apply the setting via Settings UI.
 
-![](<../../../.gitbook/assets/image (65) (2).png>)
+![](<../../../.gitbook/assets/image (65) (2) (1).png>)
 
 #### Snyk Code editor window
 

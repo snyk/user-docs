@@ -1,4 +1,4 @@
-# Languages and frameworks
+# Code language and framework support
 
 ## Language support with Snyk Code AI Engine
 
@@ -23,7 +23,9 @@ Snyk Code currently supports:
 * **C#**
 * **Go**
 
-_Beta support exists for: Ruby and Kotlin contact us for more details or with your further needs._
+{% hint style="info" %}
+Beta support exists for Ruby and Kotlin. Contact us for more details or with your further needs.
+{% endhint %}
 
 ## Language type and framework support
 
@@ -39,11 +41,11 @@ Contact Snyk for a full list of support for frameworks, libraries and vulnerabil
 
 The following are the supported extensions:
 
-{% hint style="info" %}
-c,cc,cpp,cxx,h,hpp,hxx,ejs,es,es6,htm,html,js,jsx,ts,tsx,vue,java,erb,haml,rb,rhtml,slim,py,go,ASPX,Aspx,CS,Cs,aspx,cs,php, xml
-{% endhint %}
+* c, cc, cpp, cxx, h, hpp, hxx, ejs, es, es6, htm, html, js, jsx, ts, tsx, vue, java, erb, haml, rb, rhtml, slim, py, go, ASPX, Aspx, CS, Cs, aspx, cs, php, xml.
 
-_\*Please note that Snyk Code will ignore files with 3 or less lines per file._ In addition, single files larger than 4MB will be ignored.
+{% hint style="info" %}
+Snyk Code ignores minified JS files with 3 or less lines, and also ignores single files larger than 4Mb.
+{% endhint %}
 
 ### Framework support
 
