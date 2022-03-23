@@ -6,7 +6,7 @@
 
 ## Description
 
-The `snyk iac gen-driftignore` subcommand generates driftignore rules to be used by `snyk iac test`.
+The `snyk iac gen-driftignore` command generates driftignore rules to be used by `snyk iac test`.
 
 For more information see [Ignore resources](https://docs.snyk.io/products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/ignore-resources).
 
@@ -33,7 +33,7 @@ Input from which the JSON should be parsed.
 
 Default: stdin
 
-`Example:`
+Example:
 
 ```
 $ snyk iac gen-driftignore --input=output.json --output=/dev/stdout
@@ -45,7 +45,7 @@ Output file path to which to write the driftignore.
 
 Default: `.driftignore`
 
-`Example:`
+Example:
 
 ```
 $ snyk iac describe --output=json://output.json
