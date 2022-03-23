@@ -103,7 +103,7 @@ Ignore all set policies, the current policy in the `.snyk` file, Org level ignor
 
 Apply and use ignore rules from the Snyk policies your dependencies; otherwise ignore rules in the dependencies are only shown as a suggestion.
 
-### `--show-vulnerable-<paths=none|some|all>`
+### `--show-vulnerable-paths=<none|some|all>`
 
 Display the dependency paths from the top level dependencies down to the vulnerable packages. Does not affect output when using JSON `--json` output.
 

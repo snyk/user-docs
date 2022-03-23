@@ -6,9 +6,9 @@ Visit the [Snyk website](https://snyk.io) for more information. See the [CLI doc
 
 ## How to get started
 
-1. Authenticate by running `snyk auth`.
-2. Test your local project with `snyk test`.
-3. Get alerted for new vulnerabilities with `snyk monitor`.
+1. Authenticate by running `snyk auth`
+2. Test your local project with `snyk test`
+3. Get alerted for new vulnerabilities with `snyk monitor`
 
 ## Available commands
 
