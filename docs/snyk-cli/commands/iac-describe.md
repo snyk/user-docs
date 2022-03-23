@@ -277,7 +277,7 @@ Ignore all set policies, the current policy in the `.snyk` file, Org level ignor
 
 Manually pass a path to a `.snyk` policy file.
 
-## Examples for the iac describe subcommand
+## Examples for snyk iac describe command
 
 ### Detect drift on AWS with a single local Terraform state
 
