@@ -13,7 +13,6 @@ The `snyk monitor` command creates a project in your Snyk account to be continuo
 Possible exit codes and their meaning:
 
 **0**: success, snapshot created\
-**1**: action\_needed, vulnerabilities found\
 **2**: failure, try to re-run command\
 **3**: failure, no supported projects detected
 
@@ -102,14 +101,6 @@ Ignore all set policies, the current policy in the `.snyk` file, Org level ignor
 ### `--trust-policies`
 
 Apply and use ignore rules from the Snyk policies your dependencies; otherwise ignore rules in the dependencies are only shown as a suggestion.
-
-### `--show-vulnerable-paths=<none|some|all>`
-
-Display the dependency paths from the top level dependencies down to the vulnerable packages.
-
-Default: `some` (a few example paths shown). `false` is an alias for `none`.
-
-Example: `--show-vulnerable-paths=none`
 
 ### `--project-name=<PROJECT_NAME>`
 
