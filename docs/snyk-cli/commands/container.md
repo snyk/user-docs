@@ -105,7 +105,9 @@ Set the project business criticality to one or more values (comma-separated). To
 
 ### `--project-tags=<TAG>[,<TAG>]...>`
 
-Set the project tags to one or more values (comma-separarted key values pairs with an "=" separator), for example, `--project-tags=department=finance,team=alpha`. To clear the project tags set `--project-tags=`
+Set the project tags to one or more values (comma-separarted key values pairs with an "=" separator).
+
+Example: `--project-tags=department=finance,team=alpha`. To clear the project tags set `--project-tags=`
 
 ### `--tags=<TAG>[,<TAG>]...>`
 
