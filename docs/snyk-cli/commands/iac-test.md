@@ -98,7 +98,7 @@ This option cannot be used if the custom rules settings were configured with the
 
 Example: `--rules=bundle.tar.gz` (Scan the configuration files using custom rules and internal Snyk rules.)
 
-## Examples for the iac test subcommand
+## Examples for snyk iac test command
 
 For more information see Synk CLI for Infrastructure as Code.
 
