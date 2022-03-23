@@ -38,9 +38,9 @@ docker run --restart=always \
        snyk/broker:bitbucket-server
 ```
 
-* If necessary, go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../../integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and make any configuration changes if required (For example, if the Bitbucket instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration). A fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for Bitbucket is attached.
+* If necessary, go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../../../integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and make any configuration changes if required (For example, if the Bitbucket instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration). A fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for Bitbucket is attached.
 
-{% file src="../../../.gitbook/assets/accept (1).json" %}
+{% file src="../../../../.gitbook/assets/accept (1).json" %}
 
 * Paste the Broker Client configuration to start the broker client container
 * Once the container is up, the Bitbucket Integrations page should show the connection to Bitbucket and you should be able to `Add Projects`
