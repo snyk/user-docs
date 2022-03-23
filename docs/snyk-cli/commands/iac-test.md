@@ -6,7 +6,7 @@
 
 ## Description
 
-Test for any known security issue.
+The `snyk iac test` command tests for any known security issue.
 
 ## Exit codes
 
