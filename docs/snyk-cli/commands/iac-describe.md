@@ -8,7 +8,7 @@
 
 ## Description
 
-The `snyk iac describe` subcommand detects, tracks, and alerts on infrastructure drift and unmanaged resources.
+The `snyk iac describe` command detects, tracks, and alerts on infrastructure drift and unmanaged resources.
 
 ## Exit codes
 
