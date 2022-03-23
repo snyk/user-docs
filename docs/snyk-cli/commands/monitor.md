@@ -103,6 +103,14 @@ Ignore all set policies, the current policy in the `.snyk` file, Org level ignor
 
 Apply and use ignore rules from the Snyk policies your dependencies; otherwise ignore rules in the dependencies are only shown as a suggestion.
 
+### `--show-vulnerable-paths=<none|some|all>`
+
+Display the dependency paths from the top level dependencies down to the vulnerable packages.
+
+Default: `some` (a few example paths shown). `false` is an alias for `none`.
+
+Example: `--show-vulnerable-paths=none`
+
 ### `--project-name=<PROJECT_NAME>`
 
 Specify a custom Snyk project name.
