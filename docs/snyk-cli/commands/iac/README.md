@@ -22,4 +22,4 @@ Detect, track, and alert on infrastructure drift and unmanaged resources.
 
 ### ``[`iac gen-driftignore`](https://docs.snyk.io/snyk-cli/commands/iac/iac-gen-driftignore)``
 
-Generate a `.driftignore` file. For more information see Ignore resources. EDITING NOTE: Add links for subcommand help pages and link for Ignore resources page when the CRs are live. Links must be absolute links to webpages in the help docs because they are used in the CLI releases.
+Generate a `.driftignore` file. For more information see Ignore resources.
