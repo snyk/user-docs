@@ -165,7 +165,9 @@ For more information about Maven CLI options see [Snyk for Java and Kotlin](http
 
 ### `--scan-all-unmanaged`
 
-Auto-detect maven jars, aars, and wars in given directory. To test individually use `--file=<JAR_FILE_NAME>`. **Note**: Custom-built jar files, even with open source dependencies, are out of scope.
+Auto-detect maven jars, aars, and wars in given directory. To test individually use `--file=<JAR_FILE_NAME>`.
+
+**Note**: Custom-built jar files, even with open source dependencies, are out of scope.
 
 ### `--reachable`
 
@@ -191,11 +193,15 @@ For "multi project" configurations, test all sub-projects.
 
 ### `--configuration-matching=<CONFIGURATION_REGEX>`
 
-Resolve dependencies using only configuration(s) that match the specified Java regular expression, for example, `^releaseRuntimeClasspath$`.
+Resolve dependencies using only configuration(s) that match the specified Java regular expression
+
+Example: `^releaseRuntimeClasspath$`.
 
 ### `--configuration-attributes=<ATTRIBUTE>[,<ATTRIBUTE>]...`
 
-Select certain values of configuration attributes to install dependencies and perform dependency resolution, for example, `buildtype:release,usage:java-runtime`.
+Select certain values of configuration attributes to install dependencies and perform dependency resolution.
+
+Eexample: `buildtype:release,usage:java-runtime`.
 
 ### `--reachable`
 
@@ -223,7 +229,11 @@ Specify a custom path to the packages folder.
 
 ### `--project-name-prefix=<PREFIX_STRING>`
 
-When monitoring a .NET project, use this option to add a custom prefix to the name of files inside a project along with any desired separators, for example, `snyk monitor --file=my-project.sln --project-name-prefix=my-group/`. This is useful when you have multiple projects with the same name in other `.sln` files.
+When monitoring a .NET project, use this option to add a custom prefix to the name of files inside a project along with any desired separators.
+
+Example: `snyk monitor --file=my-project.sln --project-name-prefix=my-group/`.&#x20;
+
+This is useful when you have multiple projects with the same name in other `.sln` files.
 
 ## Option for npm projects
 
@@ -281,7 +291,9 @@ For more information see [Snyk for C/C++](https://docs.snyk.io/products/snyk-ope
 
 ## `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
-Use context-specific options to pass extra arguments directly to Gradle, Maven, or other build tools. These options are specified last. Example: `snyk test -- --build-cache`
+Use context-specific options to pass extra arguments directly to Gradle, Maven, or other build tools. These options are specified last.
+
+Example: `snyk test -- --build-cache`
 
 ## Examples for the snyk test command
 
