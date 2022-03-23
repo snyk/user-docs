@@ -92,7 +92,7 @@ For more information see see the article [How to select the organization to use 
 
 ### Snyk authentication token
 
-To run `snyk test`, you need an authentication token with access to the target organization . While you can use any valid authentication token, using a service account is recommended. For more details, see the [`snyk auth` command help](../../../snyk-cli/commands/auth.md) and  [Service accounts](https://docs.snyk.io/integrations/managing-integrations/service-accounts).
+To run `snyk test`, you need an authentication token with access to the target organization . While you can use any valid authentication token, using a service account is recommended. For more details, see the [`snyk auth` command help](../../../snyk-cli/commands/auth.md) and [Service accounts](https://docs.snyk.io/integrations/managing-integrations/service-accounts).
 
 ### Setting up
 
@@ -115,7 +115,7 @@ Snyk CLI can be configured to:
 
 The `snyk test` command is synchronous; it ends with an exit code. Your build system can use exit codes to either pass or fail the build based on the test results. See the [CLI reference](../../../snyk-cli/cli-reference/) for the meaning of the exit codes.
 
-The `snyk monitor` command posts the dependency tree to of a project to your Snyk account and monitors it for vulnerabilities there. It is an asynchronous command that does not end with an exit code based on the vulnerability status.
+The `snyk monitor` command posts a snapshot of the dependency tree for your project to your Snyk account and monitors that snapshot for vulnerabilities. It is an asynchronous command that does not end with an exit code based on the vulnerability status. For `snyk monitor`, exit codes signify success or failure in creating the snapshot to monitor.
 
 To silence Snyk CLI exit codes for the `snyk test` command to avoid failing the build step, use `|| true` at the end of the command. `|| true` sets the exit code of the scan to 0. This can be used to continue with a CI/CD pipeline even when there are vulnerabilities.
 
