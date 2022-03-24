@@ -8,6 +8,8 @@
 
 The `snyk iac test` command tests for any known security issue.
 
+See also the help for [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe) and [`iac-gendriftignore`](https://docs.snyk.io/snyk-cli/commands/iac-gen-driftignore)``
+
 For more information see [Snyk CLI for Infrastructure as Code](https://docs.snyk.io/products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code).
 
 ## Exit codes
