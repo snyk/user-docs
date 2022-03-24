@@ -217,22 +217,6 @@ Usage:
 
 `$ snyk iac describe --all --deep`
 
-### `--driftignore`
-
-Specify a custom filename for a driftignore file.
-
-The default name for a driftignore file is `.driftignore`. If for some reason you want to use a custom filename, you can do so using the `--driftignore` flag. This is especially useful when you have multiple driftignore files, where each of them represents a particular use case.
-
-**Note:** You can use only one driftignore file at once.
-
-See [Ignore resources](https://docs.snyk.io/products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/ignore-resources).
-
-Example:
-
-Apply ignore directives from the /path/to/driftignore file:
-
-`$ snyk iac describe --all --driftignore="/path/to/driftignore"`
-
 ### `--tf-lockfile`
 
 By default, `snyk iac describe` reads the Terraform lock file (`.terraform.lock.hcl`) from the current directory, so it can automatically detect which provider to use, according to the `--to` flag. You can specify a custom path for that file using the `--tf-lockfile` option. If parsing the lockfile fails for some reason, errors are logged and scan continues.
