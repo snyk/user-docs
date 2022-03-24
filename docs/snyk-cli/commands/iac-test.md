@@ -8,6 +8,8 @@
 
 The `snyk iac test` command tests for any known security issue.
 
+For more information see [Snyk CLI for Infrastructure as Code](https://docs.snyk.io/products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code).
+
 ## Exit codes
 
 Possible exit codes and their meaning:
