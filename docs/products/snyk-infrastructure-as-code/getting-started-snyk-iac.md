@@ -30,6 +30,10 @@ Import projects to test with Snyk, by choosing repositories for Snyk to test and
 5. A progress bar appears: click **View log** to see import log results (you can scan both Kubernetes and Terraform files simultaneously)
 6. Project import completes.
 
+{% hint style="info" %}
+Currently Snyk Infrastructure as Code projects has a recurring test default interval of **1 week**. The default interval is changed under project settings.
+{% endhint %}
+
 ## Stage 2: View configuration file issues
 
 View results for configuration files in imported projects.
