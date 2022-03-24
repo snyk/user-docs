@@ -8,6 +8,8 @@
 
 The `snyk iac gen-driftignore` command generates driftignore rules to be used by `snyk iac test`.
 
+See also the help for [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test) and [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)``
+
 For more information see [Ignore resources](https://docs.snyk.io/products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/ignore-resources).
 
 ## Exit codes
