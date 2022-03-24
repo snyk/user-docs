@@ -11,7 +11,7 @@ Each line must be structured as follows:
 * `resource_type.resource_id`, where `resource_id` is a wildcard to exclude all resources of a given type
 * `resource_type.resource_id.path.to.field_name`, where `resource_id` is a wildcard to ignore a drift on given field for a given type and `path` can also contain wildcards.
 
-### Examples
+## Examples
 
 Ignore a single IAM user (_aws\_iam\_user_) named "_tfc-demo_".
 
@@ -62,7 +62,7 @@ exclude:
 ```
 {% endcode %}
 
-Additional examples:
+Ignore S3 bucket called my-bucket and so on as shown.
 
 ```
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
@@ -81,13 +81,13 @@ exclude:
     - aws_lambda_function.my-lambda-name.last_modified
 ```
 
-### Precedence over filter rules[​](https://docs.driftctl.com/0.22.0/usage/filtering/driftignore#precedence-over-filter-rules) <a href="#precedence-over-filter-rules" id="precedence-over-filter-rules"></a>
+## Precedence over filter rules[​](https://docs.driftctl.com/0.22.0/usage/filtering/driftignore#precedence-over-filter-rules) <a href="#precedence-over-filter-rules" id="precedence-over-filter-rules"></a>
 
 You can use the means to ignore resources explained on this page in combination with filter rules.&#x20;
 
 **Note:** If the same resource is included by a filter rule and excluded inside the `.snyk` file, `snyk iac describe` ignores this resource.
 
-### Automatically generate drift exclusion rules[​](https://docs.driftctl.com/0.22.0/usage/filtering/driftignore#automatically-generate-a-driftignore-file) <a href="#automatically-generate-a-driftignore-file" id="automatically-generate-a-driftignore-file"></a>
+## Automatically generate drift exclusion rules[​](https://docs.driftctl.com/0.22.0/usage/filtering/driftignore#automatically-generate-a-driftignore-file) <a href="#automatically-generate-a-driftignore-file" id="automatically-generate-a-driftignore-file"></a>
 
 For details, see the `snyk iac gen-driftignore help.`
 
