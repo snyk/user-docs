@@ -14,16 +14,16 @@ Some features might not be available, depending on your pricing plan. See [prici
 
 {% tabs %}
 {% tab title="Java" %}
-#### Java
+**Java**
 
-| Package managers / Features       | CLI support | Git support | License scanning | Fix PRs                                                                                                                         | Runtime monitoring |
-| --------------------------------- | ----------- | ----------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [Maven](https://maven.apache.org) | ✔︎          | ✔︎          | ✔︎               | ✔︎                                                                                                                              | ✔︎                 |
-| [Gradle](https://gradle.org)      | ✔︎          | ✔︎          | ✔︎               | [Fix advice](../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) only |                    |
+| Package managers / Features       | CLI support | Git support | License scanning | Fix PRs                                                                                                                         |
+| --------------------------------- | ----------- | ----------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| [Maven](https://maven.apache.org) | ✔︎          | ✔︎          | ✔︎               | ✔︎                                                                                                                              |
+| [Gradle](https://gradle.org)      | ✔︎          | ✔︎          | ✔︎               | [Fix advice](../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) only |
 {% endtab %}
 
 {% tab title="Kotlin" %}
-#### Kotlin
+**Kotlin**
 
 | Package managers / Features  | CLI support | Git support | License scanning | Fixing                                                                                                                          | Runtime monitoring |
 | ---------------------------- | ----------- | ----------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |

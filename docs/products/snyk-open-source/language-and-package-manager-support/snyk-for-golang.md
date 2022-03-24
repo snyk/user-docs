@@ -11,11 +11,11 @@ The following describes how to use Snyk to scan your Go projects:
 Features might not be available, depending on your subscription plan.
 {% endhint %}
 
-| Package managers / Features                       | CLI support | Git support | License scanning | Fix PRs | Runtime monitoring |
-| ------------------------------------------------- | ----------- | ----------- | ---------------- | ------- | ------------------ |
-| [Go Modules](https://golang.org/ref/mod)          | ✔︎          | ✔︎          | ✔︎               |         |                    |
-| [dep](https://github.com/golang/dep)              | ✔︎          | ✔︎          | ✔︎               |         |                    |
-| [govendor](https://github.com/kardianos/govendor) | ✔︎          | ✔︎          | ✔︎               |         |                    |
+| Package managers / Features                       | CLI support | Git support | License scanning | Fix PRs |
+| ------------------------------------------------- | ----------- | ----------- | ---------------- | ------- |
+| [Go Modules](https://golang.org/ref/mod)          | ✔︎          | ✔︎          | ✔︎               |         |
+| [dep](https://github.com/golang/dep)              | ✔︎          | ✔︎          | ✔︎               |         |
+| [govendor](https://github.com/kardianos/govendor) | ✔︎          | ✔︎          | ✔︎               |         |
 
 ## **How it works**
 

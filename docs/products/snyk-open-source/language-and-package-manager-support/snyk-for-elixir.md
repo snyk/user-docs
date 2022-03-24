@@ -4,9 +4,9 @@ Snyk offers security scanning to test your Elixir projects for vulnerabilities u
 
 ## Features
 
-| Package managers / Features                                  | CLI support | Git support | License scanning | Fix PRs | Runtime monitoring |   |
-| ------------------------------------------------------------ | ----------- | ----------- | ---------------- | ------- | ------------------ | - |
-| [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm) | ✔︎          |             |                  |         |                    |   |
+| Package managers / Features                                  | CLI support | Git support | License scanning | Fix PRs |
+| ------------------------------------------------------------ | ----------- | ----------- | ---------------- | ------- |
+| [Mix](https://hexdocs.pm/mix/Mix.html)/[Hex](https://hex.pm) | ✔︎          |             |                  |         |
 
 ## How it works
 

@@ -9,11 +9,11 @@ You can use Snyk to scan your JavaScript projects.
 Features might not be available, depending on your subscription plan.
 {% endhint %}
 
-| Package managers / Features | <p>CLI</p><p>support</p> | <p>Git</p><p>support</p> | <p>License</p><p>scanning</p> | Fix PRs | <p>Runtime</p><p>monitoring</p> |
-| --------------------------- | ------------------------ | ------------------------ | ----------------------------- | ------- | ------------------------------- |
-| npm                         | ✔︎                       | ✔︎                       | ✔︎                            | ✔       | ✔︎                              |
-| Yarn                        | ✔︎                       | ✔︎                       | ✔︎                            | ✔︎      | ✔︎                              |
-| Yarn Workspaces             | ✔︎                       | ✔︎                       | ✔                             | ✖️      | ✔︎                              |
+| Package managers / Features | <p>CLI</p><p>support</p> | <p>Git</p><p>support</p> | <p>License</p><p>scanning</p> | Fix PRs |
+| --------------------------- | ------------------------ | ------------------------ | ----------------------------- | ------- |
+| npm                         | ✔︎                       | ✔︎                       | ✔︎                            | ✔       |
+| Yarn                        | ✔︎                       | ✔︎                       | ✔︎                            | ✔︎      |
+| Yarn Workspaces             | ✔︎                       | ✔︎                       | ✔                             | ✖️      |
 
 ### How it works
 

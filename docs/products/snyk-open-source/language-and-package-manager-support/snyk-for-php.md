@@ -11,9 +11,9 @@ The following describes how to use Snyk to scan your PHP projects:
 Features might not be available, depending on your subscription plan.
 {% endhint %}
 
-| Package managers / Features         | <p>CLI</p><p>support</p> | <p>Git</p><p>support</p> | License scanning | Fix PRs | Runtime monitoring |
-| ----------------------------------- | ------------------------ | ------------------------ | ---------------- | ------- | ------------------ |
-| [Composer](https://getcomposer.org) | ✔︎                       | ✔︎                       | ✔︎               |         |                    |
+| Package managers / Features         | <p>CLI</p><p>support</p> | <p>Git</p><p>support</p> | License scanning | Fix PRs |
+| ----------------------------------- | ------------------------ | ------------------------ | ---------------- | ------- |
+| [Composer](https://getcomposer.org) | ✔︎                       | ✔︎                       | ✔︎               |         |
 
 ## **How it works**
 
