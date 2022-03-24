@@ -6,61 +6,69 @@
 
 ## Description
 
-The Snyk CLI is a build-time tool to find and fix known vulnerabilities in your projects. For a more detailed description of the Snyk CLI and Snyk, see [Snyk CLI](../). For an introduction on how to use the Snyk CLI, see [Getting started with the CLI](../getting-started-with-the-cli/).
+The Snyk CLI is a build-time tool to find and fix known vulnerabilities in your projects. For a more detailed description of Snyk CLI and Snyk, see [Snyk CLI](https://docs.snyk.io/snyk-cli). For an introduction on how to use the Snyk CLI, see [Getting started with the CLI](https://docs.snyk.io/snyk-cli/getting-started-with-the-cli).
 
 ## Available CLI commands
 
-To learn more about each Snyk CLI command, use the `--help` option, for example, `snyk auth --help` or `snyk container --help`. You can also use the help command: `snyk help [<COMMAND>]`.
+To learn more about each Snyk CLI command, use the `--help` option, for example, `snyk auth --help` or `snyk container --help`. Each command in this list is linked to the corresponding help page in these docs.
 
-Each command in this list is linked to the corresponding help page in these docs. A list of all the [options](./#options) for Snyk CLI commands is at the end of this page. The options are explained in detail in the help for each command.
+**Note:** Lists of all the options for Snyk CLI commands are on this page. The options are explained in detail in the help for each command.
 
-### ``[`snyk auth`](../commands/auth.md)``
+### [`snyk auth`](https://docs.snyk.io/snyk-cli/commands/auth)
 
 Authenticate Snyk CLI with a Snyk account.
 
-### ``[`snyk test`](../commands/test.md)``
+### [`snyk test`](https://docs.snyk.io/snyk-cli/commands/test)
 
 Test a project for open source vulnerabilities and license issues.
 
-### ``[`snyk monitor`](../commands/monitor.md)``
+### [`snyk monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 Snapshot and continuously monitor a project for open source vulnerabilities and license issues.
 
-### ``[`snyk container`](../commands/container.md)``
+### [`snyk container`](https://docs.snyk.io/snyk-cli/commands/container)
 
 Test container images for vulnerabilities.
 
-### ``[`snyk iac`](../commands/iac.md)``
+### [`snyk iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
-Find security issues in Infrastructure as Code files.
+Detect, track, and alert on infrastructure drift and unmanaged resources.
 
-### ``[`snyk code`](../commands/code.md)``
+### [`snyk iac gen-driftignore`](https://docs.snyk.io/snyk-cli/commands/iac-gen-driftignore)
+
+Generate driftignore rules to be used by snyk iac test.
+
+### [`snyk iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
+
+Test for any known security issue.
+
+### [`snyk code`](https://docs.snyk.io/snyk-cli/commands/code)
 
 Find security issues using static code analysis.
 
-### ``[`snyk log4shell`](../commands/log4shell.md)``
+### [`snyk log4shell`](https://docs.snyk.io/snyk-cli/commands/log4shell)
 
 Find Log4Shell vulnerability.
 
-### ``[`snyk config`](../commands/config.md)``
+### [`snyk config`](https://docs.snyk.io/snyk-cli/commands/config)
 
 Manage Snyk CLI configuration.
 
-### ``[`snyk policy`](../commands/policy.md)``
+### [`snyk policy`](https://docs.snyk.io/snyk-cli/commands/policy)
 
 Display the `.snyk` policy for a package.
 
-### ``[`snyk ignore`](../commands/ignore.md)``
+### [`snyk ignore`](https://docs.snyk.io/snyk-cli/commands/ignore)
 
 Modify the `.snyk` policy to ignore stated issues.
 
 ## New CLI commands
 
-### ``[`snyk fix`](../fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix.md)``
+### [`snyk fix`](https://docs.snyk.io/snyk-cli/fix-vulnerabilities-from-the-cli/automatic-remediation-with-snyk-fix)
 
 Apply the recommended updates for supported ecosystems automatically.
 
-### [`snyk apps`](../create-a-snyk-app-using-the-snyk-cli.md)
+### [`snyk apps`](https://docs.snyk.io/snyk-cli/create-a-snyk-app-using-the-snyk-cli)
 
 Create a Snyk App using the Snyk CLI.
 
@@ -68,17 +76,17 @@ Create a Snyk App using the Snyk CLI.
 
 The following is a list of the sub-commands for Snyk CLI commands. Each sub-command is followed by the command(s) to which the sub-command applies. The commands are linked to their help docs. For details concerning each sub-command, see the help docs.
 
-`test`: subcommand of [`code`](../commands/code.md), [`container`](../commands/container.md), and [`iac`](broken-reference)\`\`
+`test`: subcommand of [`code`](https://docs.snyk.io/snyk-cli/commands/code) and [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-`monitor`: subcommand of [`container`](../commands/container.md)\`\`
+`monitor`: subcommand of [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-`get <KEY>`: subcommand of [`config`](../commands/config.md)\`\`
+`get <KEY>`: subcommand of [`config`](https://docs.snyk.io/snyk-cli/commands/config)
 
-`set <KEY>=<VALUE>`: subcommand of [`config`](../commands/config.md)\`\`
+`set <KEY>=<VALUE>`: subcommand of [`config`](https://docs.snyk.io/snyk-cli/commands/config)
 
-`unset <KEY>`: sub-command of [`config`](../commands/config.md)\`\`
+`unset <KEY>`: subcommand of [`config`](https://docs.snyk.io/snyk-cli/commands/config)
 
-`clear`: subcommand of [`config`](../commands/config.md)\`\`
+`clear`: subcommand of [`config`](https://docs.snyk.io/snyk-cli/commands/config)
 
 ## Exit codes
 
@@ -91,158 +99,220 @@ Possible exit codes and their meaning:
 
 ## Configure the Snyk CLI
 
-You can use environment variables to configure the Snyk CLI and also set variables to configure the Snyk CLI to connect with the Snyk API. See [Configure the Snyk CLI](../configure-the-snyk-cli.md).
+You can use environment variables to configure the Snyk CLI and also set variables to configure the Snyk CLI to connect with the Snyk API. See [Configure the Snyk CLI](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli).
 
 ## Debug
 
 Use `-d` option to output the debug logs.
 
-## Options
+## Options for multiple commands
 
-The following is a list of the options for Snyk CLI commands. Each option is followed by the command(s) to which the option applies. The commands are linked to their help docs. For details concerning each option, see the help docs.
+Lists of the options for Snyk CLI commands follow. Each option is followed by the command(s) to which the option applies. The commands are linked to their help docs. For details concerning each option, see the [help docs](https://docs.snyk.io/snyk-cli/commands).
 
-`--all-projects`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--all-projects`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--detection-depth=<DEPTH>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`iac`](broken-reference)\`\`
+`--detection-depth=<DEPTH>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac/iac-test)
 
-`--exclude=<DIRECTORY>[,<DIRECTORY>]...>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--exclude=<DIRECTORY>[,<DIRECTORY>]...>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--prune-repeated-subdependencies, -p`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--prune-repeated-subdependencies, -p`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--print-deps`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)\`\`
+`--print-deps`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-`--remote-repo-url=<URL>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--remote-repo-url=<URL>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--dev`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--dev`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--org=<ORG_ID>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`code`](../commands/code.md), [`iac`](broken-reference)\`\`
+`--org=<ORG_ID>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac/iac-test), [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac/iac-describe)
 
-`--file=<FILE>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)\`\`
+`--file=<FILE>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--package-manager=<PACKAGE_MANAGER_NAME>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--package-manager=<PACKAGE_MANAGER_NAME>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--ignore-policy`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`iac`](broken-reference)\`\`
+`--ignore-policy`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test), [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
-`--trust-policies` [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--trust-policies` [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--show-vulnerable-paths=<none|some|all>` [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--show-vulnerable-paths=<none|some|all>` [`test`](https://docs.snyk.io/snyk-cli/commands/test)
 
-`--project-name=<PROJECT_NAME>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)\`\`
+`--project-name=<PROJECT_NAME>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-`--target-reference=<TARGET_REFERENCE>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--target-reference=<TARGET_REFERENCE>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--policy-path=<PATH_TO_POLICY_FILE>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md), [`iac`](broken-reference), [`ignore`](../commands/ignore.md)\`\`
+`--policy-path=<PATH_TO_POLICY_FILE>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test), [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe), [`ignore`](https://docs.snyk.io/snyk-cli/commands/ignore)
 
-`--json`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`code`](../commands/code.md), [`container`](../commands/container.md), [`iac`](broken-reference)\`\`
+`--json`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`code`](https://docs.snyk.io/snyk-cli/commands/code), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test), [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
-`--json-file-output=<OUTPUT_FILE_PATH>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md), [`iac`](broken-reference)\`\`
+`--json-file-output=<OUTPUT_FILE_PATH>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test), [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
-`--sarif`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`code`](../commands/code.md), [`container`](../commands/container.md), [`iac`](broken-reference)\`\`
+`--sarif`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
-`--sarif-file-output=<OUTPUT_FILE_PATH>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md), [`container`](../commands/container.md), [`iac`](broken-reference)\`\`
+`--sarif-file-output=<OUTPUT_FILE_PATH>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
-`--severity-threshold=<low|medium|high|critical>`: [`test`](../commands/test.md), [`code`](../commands/code.md), [`container`](../commands/container.md), [`iac`](broken-reference)\`\`
+`--severity-threshold=<low|medium|high|critical>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`code`](https://docs.snyk.io/snyk-cli/commands/code), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
-`--fail-on=<all|upgradable|patchable>`: [`test`](../commands/test.md)
+`--fail-on=<all|upgradable|patchable>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test)
 
-`--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)\`\`
+`--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-`--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)\`\`
+`--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-`--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)\`\`
+`--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-`--project-tags=<TAG>[,<TAG>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)\`\`
+`--project-tags=<TAG>[,<TAG>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-`--tags=<TAG>[,<TAG>]...>`: [`monitor`](../commands/monitor.md), [`container`](../commands/container.md)\`\`
+`--tags=<TAG>[,<TAG>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-`--exclude-base-image-vulns`: [`container`](../commands/container.md)\`\`
+## `snyk container` command options
 
-`--platform=<PLATFORM>`: [`container`](../commands/container.md)\`\`
+`--app-vulns`: [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-`--username=<CONTAINER_REGISTRY_USERNAME>`: [`container`](../commands/container.md)\`\`
+`--nested-jars-depth`: [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-`--password=<CONTAINER_REGISTRY_PASSWORD>`: [`container`](../commands/container.md)\`\`
+`--exclude-base-image-vulns`: [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-`--scan=<TERRAFORM_PLAN_SCAN_MODE>`: [`iac`](broken-reference)\`\`
+`--platform=<PLATFORM>`: [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-`--rules=<PATH_TO_CUSTOM_RULES_BUNDLE>`: [`iac`](broken-reference)\`\`
+`--username=<CONTAINER_REGISTRY_USERNAME>`: [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-`--id=<ISSUE_ID>`: [`ignore`](../commands/ignore.md)\`\`
+`--password=<CONTAINER_REGISTRY_PASSWORD>`: [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-`--expiry=<EXPIRY>`: [`ignore`](../commands/ignore.md)\`\`
+## `snyk iac test` command options
 
-`--reason=<REASON>`: [`ignore`](../commands/ignore.md)\`\`
+`--scan=<TERRAFORM_PLAN_SCAN_MODE>`: [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
-`--path=<PATH_TO_RESOURCE>`: [`ignore`](../commands/ignore.md)\`\`
+`--rules=<PATH_TO_CUSTOM_RULES_BUNDLE>`: [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
+
+## `snyk iac describe` command options
+
+`--from=<STATE>[,<STATE>...]`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
+
+`--to=<PROVIDER+TYPE>`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac/iac-describe)
+
+`--service=<SERVICE>[,<SERVICE]...>`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
+
+`--all`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
+
+`--only-managed`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
+
+`--only-unmanaged`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
+
+`--quiet`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
+
+`--filter`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
+
+`--html`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac/iac-describe)
+
+`--fetch-tfstate-headers`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
+
+`--tfc-token`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
+
+`--tfc-endpoint`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
+
+`--tf-provider-version`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
+
+`--strict`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
+
+`--deep`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
+
+`--driftignore`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
+
+`--tf-lockfile`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
+
+\-`-config-dir`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
+
+## `snyk iac gen-driftignore` command options
+
+`--input`: [`iac gen-driftignore`](https://docs.snyk.io/snyk-cli/commands/iac-gen-driftignore)
+
+`--output=<OUTPUT_FILE_PATH>`: [`iac gen-driftignore`](https://docs.snyk.io/snyk-cli/commands/iac-gen-driftignore)
+
+`--exclude-changed`: [`iac gen-driftignore`](https://docs.snyk.io/snyk-cli/commands/iac-gen-driftignore)
+
+`--exclude-missing`: [`iac gen-driftignore`](https://docs.snyk.io/snyk-cli/commands/iac-gen-driftignore)
+
+`--exclude-unmanaged`: [`iac gen-driftignore`](https://docs.snyk.io/snyk-cli/commands/iac-gen-driftignore)
+
+## `snyk ignore` command options
+
+`--id=<ISSUE_ID>`: [`ignore`](https://docs.snyk.io/snyk-cli/commands/ignore)
+
+`--expiry=<EXPIRY>`: [`ignore`](https://docs.snyk.io/snyk-cli/commands/ignore)
+
+`--reason=<REASON>`: [`ignore`](https://docs.snyk.io/snyk-cli/commands/ignore)
+
+`--path=<PATH_TO_RESOURCE>`: [`ignore`](https://docs.snyk.io/snyk-cli/commands/ignore)
 
 ## Debug
 
-`-d`: [all](../commands/)
+`-d`: [all](https://docs.snyk.io/snyk-cli/commands)
 
 ## Options for Maven projects
 
-`--scan-all-unmanaged`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--scan-all-unmanaged`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--reachable`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--reachable`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--reachable-timeout=<TIMEOUT>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--reachable-timeout=<TIMEOUT>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 ## Options for Gradle projects
 
-`--sub-project=<NAME>`, `--gradle-sub-project=<NAME>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--sub-project=<NAME>`, `--gradle-sub-project=<NAME>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--all-sub-projects`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--all-sub-projects`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--configuration-matching=<CONFIGURATION_REGEX>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--configuration-matching=<CONFIGURATION_REGEX>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--configuration-attributes=<ATTRIBUTE>[,<ATTRIBUTE>]...`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--configuration-attributes=<ATTRIBUTE>[,<ATTRIBUTE>]...`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--reachable`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--reachable`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--reachable-timeout=<TIMEOUT>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--reachable-timeout=<TIMEOUT>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--init-script=<FILE`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--init-script=<FILE`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 ## Options for .Net and NuGet projects
 
-`--assets-project-name`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--assets-project-name`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--packages-folder`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--packages-folder`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)\`
 
-`--project-name-prefix=<PREFIX_STRING>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--project-name-prefix=<PREFIX_STRING>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--project-name-prefix=my-group/`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--project-name-prefix=my-group/`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 ## Options for npm projects
 
-`--strict-out-of-sync=true|false`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--strict-out-of-sync=true|false`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 ## Options for Yarn projects
 
-`--strict-out-of-sync=true|false`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--strict-out-of-sync=true|false`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--yarn-workspaces`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--yarn-workspaces`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 ## Options for CocoaPods projects
 
-`--strict-out-of-sync=true|false`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--strict-out-of-sync=true|false`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 ## Options for Python projects
 
-`--command=<COMMAND>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--command=<COMMAND>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--skip-unresolved=true|false`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--skip-unresolved=true|false`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 ## Options for Go projects
 
 Currently the following options are not supported:
 
-`--fail-on=<all|upgradable|patchable>`: [`test`](../commands/test.md)\`\`
+`--fail-on=<all|upgradable|patchable>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test)
 
-## Options for unmanaged projects
+## Option for C/C++ projects
 
-For information about these options see [Snyk CLI for C / C++ projects](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++#snyk-cli-for-c-c++-projects).
+`--unmanaged`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
+
+For information about this option see [Snyk CLI for C / C++ projects](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++#snyk-cli-for-c-c++-projects).
 
 ## `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
-These options are used with the `test` and `monitor` commands. See the [help docs](../commands/) for details.
+These options are used with the `snyk test` and `snyk monitor` commands. See the help docs for [`snyk test`](https://docs.snyk.io/snyk-cli/commands/test) and [`snyk monitor`](https://docs.snyk.io/snyk-cli/commands/monitor) for details.
