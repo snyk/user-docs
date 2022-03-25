@@ -6,7 +6,7 @@
 
 ### **What is Snyk?**
 
-Snyk integrates directly into development tools and automation pipelines, making it easy to find, prioritize, and fix security vulnerabilities in code, dependencies, containers, and infrastructure as code. Backed by industry-leading vulnerability intelligence, and designed by developers for developers, Snyk fits into your development workflow to put security expertise in your toolkit.
+Snyk is a Developer Security Platform that integrates directly into development tools and automation pipelines, making it easy to find, prioritize, and fix security vulnerabilities in code, dependencies, containers, and infrastructure as code. Backed by industry-leading vulnerability intelligence, and designed by developers for developers, Snyk fits into your development workflow to put security expertise in your toolkit.
 
 ![](<.gitbook/assets/Screen Shot 2022-02-22 at 8.18.28 AM.png>)
 
