@@ -125,7 +125,7 @@
       * [Dependencies and IDE plugins](features/integrations/ide-tools/snyk-ide-plugins/dependencies.md)
       * [Fix suggestions and IDE plugins](features/integrations/ide-tools/snyk-ide-plugins/fix-suggestions.md)
       * [Data mapping for IDE plugins](features/integrations/ide-tools/snyk-ide-plugins/data-mapping.md)
-      * [FAQ](features/integrations/ide-tools/snyk-ide-plugins/faq.md)
+      * [IDE plugins FAQ](features/integrations/ide-tools/snyk-ide-plugins/faq.md)
       * [Help with IDE plugins](features/integrations/ide-tools/snyk-ide-plugins/help.md)
   * [Notification and ticketing system integrations](features/integrations/notifications-ticketing-system-integrations/README.md)
     * [Slack integration](features/integrations/notifications-ticketing-system-integrations/slack-integration.md)
