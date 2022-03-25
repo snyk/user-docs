@@ -46,6 +46,8 @@ If you are behind a proxy, proxy settings are configured either using VS Code pr
 
 ## Authentication
 
+### Logging in
+
 To authenticate follow these steps:
 
 1.  Once the extension is installed, click on the Snyk Icon in the left navigation bar:
@@ -59,6 +61,15 @@ To authenticate follow these steps:
 
     ![](<../../../.gitbook/assets/image (85) (1) (1).png>)
 5. Close the browser window and return to VS Code. VS Code is now reading and saving the authentication on your local machine.
+
+### Switching accounts
+
+To re-authenticate with a different account, follow the steps below:
+
+1. Run the provided `Snyk: Log Out` command.
+2. Once logged out, click **Connect VS Code with Snyk** to authenticate with the different account.
+
+![Snyk: Log Out](<../../../.gitbook/assets/logging-out-command (1).png>)
 
 ## Run analysis
 
@@ -87,7 +98,7 @@ To manually trigger a scan, either Save or manually rescan using the rescan icon
 
 If you only need the Code Quality, Code Security, or Open Source Security portion of the findings, you can easily disable the feature with the results you do not want to see or collapse the view:
 
-![Disable a feature](<../../../.gitbook/assets/image (83) (2).png>)
+![Configure Features](../../../.gitbook/assets/configure-features.png)
 
 ## Snyk Code advanced mode
 
@@ -95,7 +106,7 @@ Snyk Code has "Advanced" mode that allows you to control how scan is performed.
 
 To manually perform the analysis, in the configuration of the extension you can enable Advanced Mode which enables you to control the scanning process:
 
-![Advanced mode](<../../../.gitbook/assets/image (78) (1) (1) (1) (1) (1).png>)
+![Advanced Mode](<../../../.gitbook/assets/run-analysis\_advanced-mode (1).png>)
 
 ## View analysis results
 
@@ -183,7 +194,6 @@ The Open Source Security (OSS) vulnerability tab shows information about the vul
 
 After the extension is installed, you can set the following configurations for the extension:
 
-* **Token**: specify the token the extension uses to connect to Snyk. You can manually replace it, if you need to switch to another account.
 * **Features**
   * **Code Security**: configure if code security analysis should run over your code.
   * **Code Quality**: configure if code quality analysis should run over your code.
