@@ -1,6 +1,6 @@
-# IDE tools
+# IDE tools and guide
 
-The pages on IDE tools include the following:
+The pages in this group include the following:
 
 * [Snyk IDE plugin guide](snyk-ide-plugins/)
 * [Eclipse plugin](eclipse-plugin.md)
