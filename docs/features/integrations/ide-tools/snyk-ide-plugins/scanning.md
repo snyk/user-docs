@@ -73,4 +73,4 @@ To make sure you are presenting up to date scan results to users, you must rerun
 
 * Any of the manifest files have been edited
 * A day has passed since the last scan. This is needed as the vulnerability database powering the Snyk CLI constantly collects new vulnerabilities which are relevant for the user to see even if they have not edited the manifest file.
-* Any time the user explicitly reinstalls the dependencies (i.e calls `mvn install`) as servers have flexibility and a reinstall may fetch different dependency versions than were previously installed even without a manifest file change.
+* Any time the user explicitly reinstalls the dependencies (i.e calls `mvn install`) as semvers have flexibility and a reinstall may fetch different dependency versions than were previously installed even without a manifest file change.
