@@ -2,31 +2,25 @@
 description: Understanding the integration strategy
 ---
 
-# Overview
+# Overview of IDE plugins
 
-For the purpose of extracting Snyk scan results and making them available in your IDE plugin, we will make use of the Snyk CLI which the IDE plugin should download in the background and periodically check for newer versions and download those when available.
+This document shows how to extract Snyk scan results and make them available in your IDE plugin by using the Snyk CLI. The IDE plugin downloads the CLI in the background and periodically checks for newer versions and downloads those when available.
 
-Snyk's SDK makes it easier to implement and download periodic updates. While this integration is under development, our [Java implementation](https://github.com/jenkinsci/snyk-security-scanner-plugin/blob/master/src/main/java/io/snyk/jenkins/tools/internal/DownloadService.java) is available.
+Snyk SDK makes it easier to implement and download periodic updates. While this integration is under development, a [Java implementation](https://github.com/jenkinsci/snyk-security-scanner-plugin/blob/master/src/main/java/io/snyk/jenkins/tools/internal/DownloadService.java) is available.
 
 {% hint style="info" %}
-You should download the Snyk CLI for the IDE usage irrespective of whether the developer has snyk CLI installed on their machine as well.
+Download the Snyk CLI for IDE usage whether or not the developer's machine has the Snyk CLI installed.
 {% endhint %}
 
-Next, we need to make sure the user is authenticated into their snyk account, and if not run `snyk auth` which will take the user through a signup/login experience and will store their Snyk token locally on the machine.
+To use the Snyk CLI you must authenticate. To check whether the user is previously authenticated on this machine, run `snyk config get api` and check for a return of a UUID. If needed run `snyk auth` and follow the prompts to sign up and log in. The process stores the Snyk token locally on the user's machine. For more information see [Authenticating the user to Snyk](overview.md#6689c939-0bff-4d30-9480-b62179889e37).
 
-For the purpose of scanning, we leverage the Snyk CLI's `test` command with its `--json` flag to convert the output into machine-readable format. In short, for every supported dependency manifest file in a project you need to run `snyk test --file=<manifest file name> --json` , parse the results and display them in the intended places inside the IDE user interface.
+Use the Snyk CLI `test` command with its `--json` option to convert the output into machine-readable format. For every supported dependency manifest file in a project you need to run `snyk test --file=<manifest file name> --json` , parse the results, and display them in the intended places inside the IDE user interface.
 
-Rerun the snyk scan periodically or when a triggering event happens (see [When to rerun](https://www.notion.so/snyk/How-to-Build-an-IDE-plugin-that-incorporates-Snyk-scanning-6aa2c0a9291e405bb8b26431039fc21c#607b2cd82fb549ee8473319a42b8c421) a snyk scan below).
+Rerun `snyk test` periodically or when a triggering event happens: a manifest file has been edited, a day has passed since the last scan, and any time you explicitly reinstall the dependencies (`mvn install`).
 
-We can summarize the steps as follows:
+In summary the steps are as follows:
 
-1. Check for the existence of the Snyk CLI, or prompt the user to install it (one time).
+1. Check for the presence of the Snyk CLI or prompt the user to install it (one time).
 2. Check if the user is authenticated to the CLI and run `snyk auth` if not (one time).
-3. Scan every manifest file using `snyk test --file=<manifest file name> --json` parsing the output and incorporated it into the IDE user interface.
+3. Scan every manifest file using `snyk test --file=<manifest file name> --json` parsing the output and incorporating it into the IDE user interface.
 4. Rerun a scan periodically or when a triggering event happens.
-
-## Authenticating the user to Snyk <a href="#6689c939-0bff-4d30-9480-b62179889e37" id="6689c939-0bff-4d30-9480-b62179889e37"></a>
-
-In order to run the security scans using the Snyk CLI, the user will need to authenticate to Snyk first. To check whether the user is previously authenticated on this machine, you can run `snyk config get api` and check for a return of a UUID.
-
-If the user is not authenticated run the `snyk auth` command which will take the user through a signup/login experience and will store their Snyk token locally on the machine.
