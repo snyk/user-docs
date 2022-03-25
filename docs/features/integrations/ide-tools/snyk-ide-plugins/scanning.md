@@ -1,16 +1,16 @@
-# Scanning
+# Scanning with IDE plugins
 
 ## Manifest files <a href="#6f65ebbb-6b2b-47aa-99b9-93cac28849a8" id="6f65ebbb-6b2b-47aa-99b9-93cac28849a8"></a>
 
-Snyk CLI supports a wide range of different programming languages and package managers for open source dependencies. For a complete list of supported manifest files see [Language & package manager support](../../../../products/snyk-open-source/language-and-package-manager-support/).
+Snyk CLI supports a wide range of different programming languages and package managers for open source dependencies. For a complete list of supported manifest files see [Open source language and package manager support](../../../../products/snyk-open-source/language-and-package-manager-support/).
 
 {% hint style="info" %}
-The CLI defaults to scanning the first supported manifest file it detects. This means you explicitly need to provide the name of the manifest file to scan using the `--file` flag when a project has multiple manifests.
+The CLI defaults to scanning the first supported manifest file it detects. This means you explicitly need to provide the name of the manifest file to scan using the `--file` flag when a project has multiple manifest files.
 {% endhint %}
 
-Note that the Snyk CLI has multiple commands, but for the purpose of scanning you should only use the `test` command, while making sure to use the `--json` flag to have the output converted to a machine readable format you are able to parse: `snyk test --file=<manifest file> --json`
+Note that the Snyk CLI has multiple commands, but for the purpose of scanning you use the `test` command, ensuring you also use the `--json` option to have the output converted to a machine readable format you are able to parse: `snyk test --file=<manifest file> --json`
 
-The test command expects the dependencies to already be installed (i.e after `mvn install` or `npm install` have been executed) and for package lock files to be present if relevant. If you try to run the scan before the dependencies are installed you can expect to see an error like this:
+The test command expects the dependencies to already be installed (that is, scan after `mvn install` or `npm install` have been executed) and for package lock files to be present if relevant. If you try to run the scan before the dependencies are installed you can expect to see an error like this:
 
 ```
 ~/git/goof $ snyk test
@@ -18,7 +18,7 @@ Missing node_modules folder: we can't test without dependencies.
 Please run 'npm install' first.
 ```
 
-For successful runs, you will see a long json file similar to below. To make sense of the data that is returned see the **Data Mapping** section of this guide.
+For successful runs, you will see a long JSON file similar to the one that follows. To make sense of the data that is returned see the [Data mapping](data-mapping.md) page.
 
 ```javascript
 {
@@ -64,13 +64,13 @@ For successful runs, you will see a long json file similar to below. To make sen
 ```
 
 {% hint style="info" %}
-All paying Snyk customers have license scanning feature included in their plan. The `snyk test` command will return both vulnerability and license violations in the test results. To distinguish a license violation look for: `"type": "license"` inside the record fields.
+All paying Snyk customers have the license scanning feature included in their plan. The `snyk test` command returns both vulnerability and license violations in the test results. To distinguish a license violation look for: `"type": "license"` inside the record fields.
 {% endhint %}
 
 ## When to rerun scans <a href="#607b2cd8-2fb5-49ee-8473-319a42b8c421" id="607b2cd8-2fb5-49ee-8473-319a42b8c421"></a>
 
-To make sure you are presenting to a the user up to date scan results you need to rerun the snyk scan anytime one of the following happens:
+To make sure you are presenting up to date scan results to users, you must rerun the snyk scan anytime one of the following happens:
 
-* Any of the manifest files have been edited.
+* Any of the manifest files have been edited
 * A day has passed since the last scan. This is needed as the vulnerability database powering the Snyk CLI constantly collects new vulnerabilities which are relevant for the user to see even if they have not edited the manifest file.
-* Any time the user explicitly reinstalls the dependencies (i.e calls `mvn install`) as semvers have flexibility in them and a reinstall may fetch different dependency versions than was previously installed even without a manifest file change\*\*.\*\*
+* Any time the user explicitly reinstalls the dependencies (i.e calls `mvn install`) as servers have flexibility and a reinstall may fetch different dependency versions than were previously installed even without a manifest file change.
