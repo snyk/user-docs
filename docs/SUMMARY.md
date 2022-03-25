@@ -124,7 +124,7 @@
       * [Scanning with IDE plugins](features/integrations/ide-tools/snyk-ide-plugins/scanning.md)
       * [Dependencies and IDE plugins](features/integrations/ide-tools/snyk-ide-plugins/dependencies.md)
       * [Fix suggestions and IDE plugins](features/integrations/ide-tools/snyk-ide-plugins/fix-suggestions.md)
-      * [Data Mapping](features/integrations/ide-tools/snyk-ide-plugins/data-mapping.md)
+      * [Data mapping for IDE plugins](features/integrations/ide-tools/snyk-ide-plugins/data-mapping.md)
       * [FAQ](features/integrations/ide-tools/snyk-ide-plugins/faq.md)
       * [Help with IDE plugins](features/integrations/ide-tools/snyk-ide-plugins/help.md)
   * [Notification and ticketing system integrations](features/integrations/notifications-ticketing-system-integrations/README.md)
