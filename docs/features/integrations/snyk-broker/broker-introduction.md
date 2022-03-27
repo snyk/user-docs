@@ -2,7 +2,7 @@
 
 Snyk Broker is an open-source tool, that can act as a proxy between Snyk and special integrations including:
 
-* Your Source Code Management (SCM) system on-premise platforms, including [Snyk Code Support](../../../products/snyk-code/deployment-options/snyk-code-local-git-support.md).
+* Your Source Code Management (SCM) system on-premise platforms, including [Snyk Code Support](broken-reference).
 * Your publicly-accessible Git-based repositories, allowing you to view and control Snyk activity in those repositories for increased data security.
 * Your on-premise Jira installation or JFrog Artifactory installation.
 * Network restricted [Container Registries](snyk-broker-container-registry-agent/).
