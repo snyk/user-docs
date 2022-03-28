@@ -56,6 +56,7 @@
     * [IAC](snyk-cli/commands/container-1.md)
     * [IAC describe](snyk-cli/commands/iac-describe.md)
     * [IAC gen-driftignore](snyk-cli/commands/iac-gen-driftignore.md)
+    * [IAC report](snyk-cli/commands/iac-report.md)
     * [IAC test](snyk-cli/commands/iac-test.md)
     * [Ignore](snyk-cli/commands/ignore.md)
     * [Log4shell](snyk-cli/commands/log4shell.md)
@@ -343,6 +344,7 @@
     * [Filter results](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/filter-results.md)
     * [Ignore resources](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/ignore-resources.md)
     * [IAC sources usage](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/iac-sources-usage.md)
+  * [Share CLI results with the Snyk App](products/snyk-infrastructure-as-code/share-cli-results-with-the-snyk-app.md)
 
 ## USING SNYK <a href="#features" id="features"></a>
 

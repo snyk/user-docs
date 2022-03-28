@@ -34,6 +34,10 @@ Test container images for vulnerabilities.
 
 Find security issues in Infrastructure as Code files, and detect drift.
 
+### [iac report](iac-report.md)
+
+Test for any known security issue and share results to the Snyk App.
+
 ### [`snyk code`](code.md)
 
 Find security issues using static code analysis.
