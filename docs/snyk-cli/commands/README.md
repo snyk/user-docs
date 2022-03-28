@@ -30,11 +30,11 @@ Snapshot and continuously monitor a project for open source vulnerabilities and 
 
 Test container images for vulnerabilities.
 
-### ``[`snyk iac`](container-1.md)
+### [`snyk iac`](iac.md)
 
 Find security issues in Infrastructure as Code files, and detect drift.
 
-### [iac report](iac-report.md)
+### [`iac report`](iac-report.md)
 
 Test for any known security issue and share results to the Snyk App.
 

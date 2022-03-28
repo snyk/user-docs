@@ -53,7 +53,7 @@
     * [Code](snyk-cli/commands/code.md)
     * [Config](snyk-cli/commands/config.md)
     * [Container](snyk-cli/commands/container.md)
-    * [IAC](snyk-cli/commands/container-1.md)
+    * [IAC](snyk-cli/commands/iac.md)
     * [IAC describe](snyk-cli/commands/iac-describe.md)
     * [IAC gen-driftignore](snyk-cli/commands/iac-gen-driftignore.md)
     * [IAC report](snyk-cli/commands/iac-report.md)
