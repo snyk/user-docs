@@ -18,7 +18,7 @@ Possible exit codes and their meaning:
 
 ## Configure the Snyk CLI
 
-You can use environment variables to configure the Snyk CLI and also set variables to configure the Snyk CLI to connect with the Snyk API. See [Configure the Snyk CLI](https://docs.snyk.io/features/snyk-cli/configure-the-snyk-cli).
+You can use environment variables to configure the Snyk CLI and and set variables for connecting with the Snyk API. See [Configure the Snyk CLI](https://docs.snyk.io/features/snyk-cli/configure-the-snyk-cli)
 
 ## Debug
 
@@ -26,13 +26,13 @@ Use the `-d` option to output the debug logs.
 
 ## Options
 
-See also subsequent sections for options for specific build environments, package managers, languages, and `[<CONTEXT-SPECIFIC OPTIONS>]` which you specify last.
+See also subsequent sections for options for specific build environments, package managers, languages and `[<CONTEXT-SPECIFIC OPTIONS>]` which you specify last.
 
 ### `--all-projects`
 
 Auto-detect all projects in the working directory (including Yarn workspaces).
 
-For more information see the article [Does the Snyk CLI support monorepos or multiple manifest files?](https://support.snyk.io/hc/en-us/articles/360000910577-Does-the-Snyk-CLI-support-monorepos-or-multiple-manifest-files-).
+For more information see the article [Does the Snyk CLI support monorepos or multiple manifest files?](https://support.snyk.io/hc/en-us/articles/360000910577-Does-the-Snyk-CLI-support-monorepos-or-multiple-manifest-files-)
 
 ### `--detection-depth=<DEPTH>`
 
@@ -40,7 +40,9 @@ Use with `--all-projects` or `--yarn-workspaces` to indicate how many sub-direct
 
 Default: 4 (the current working directory and 3 sub-directories).
 
-Example: `--detection-depth=3` limits search to the specified directory (or the current directory if no `<PATH>` is specified) plus two levels of subdirectories.
+Example: Limit search to the specified directory (or the current directory if no `<PATH>` is specified) plus two levels of subdirectories.
+
+`--detection-depth=3`
 
 ### `--exclude=<DIRECTORY>[,<DIRECTORY>]...>`
 
@@ -78,9 +80,9 @@ If you have multiple organizations, you can set a default from the CLI using:
 
 Set a default to ensure all newly monitored projects are created under your default organization. If you need to override the default, use the `--org=<ORG_ID>` option.
 
-Default: `<ORG_ID>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account).
+Default: `<ORG_ID>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account)
 
-For more information see the article [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI).
+For more information see the article [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI)
 
 ### `--file=<FILE>`
 
@@ -110,7 +112,9 @@ Example: `$ snyk monitor --project-name=my-project`
 
 ### `--target-reference=<TARGET_REFERENCE>`
 
-Specify a reference which differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference. Only supported for Snyk Open Source. See [Separating projects by branch or version](https://docs.snyk.io/snyk-cli/secure-your-projects-in-the-long-term/grouping-projects-by-branch-or-version).
+Specify a reference which differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference. Only supported for Snyk Open Source.
+
+For more information see [Separating projects by branch or version](https://docs.snyk.io/snyk-cli/secure-your-projects-in-the-long-term/grouping-projects-by-branch-or-version)
 
 ### `--policy-path=<PATH_TO_POLICY_FILE>`
 
@@ -126,7 +130,7 @@ Set the project environment project attribute to one or more values (comma-separ
 
 Allowed values: `frontend, backend, internal, external, mobile, saas, onprem, hosted, distributed`
 
-For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes).
+For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes)
 
 ### `--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`
 
@@ -134,7 +138,7 @@ Set the project lifecycle project attribute to one or more values (comma-separat
 
 Allowed values: `production, development, sandbox`
 
-For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes).
+For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes)
 
 ### `--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`
 
@@ -142,7 +146,7 @@ Set the project business criticality project attribute to one or more values (co
 
 Allowed values: `critical, high, medium, low`
 
-For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes).
+For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes)
 
 ### `--project-tags=<TAG>[,<TAG>]...>`
 
@@ -154,7 +158,7 @@ This is an alias for `--project-tags`.
 
 ## Options for Maven projects
 
-For more information about Maven CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven).
+For more information about Maven CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven)
 
 ### `--scan-all-unmanaged`
 
@@ -174,7 +178,7 @@ Default: 300 (5 minutes).
 
 ## Options for Gradle projects
 
-For more information about Gradle CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven).
+For more information about Gradle CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven)
 
 ### `--sub-project=<NAME>`, `--gradle-sub-project=<NAME>`
 
@@ -274,7 +278,7 @@ Allow skipping packages that are not found in the environment.
 
 Monitor your C/C++ project.
 
-For more information see [Snyk for C/C++](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++).
+For more information see [Snyk for C/C++](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++)
 
 ### `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
