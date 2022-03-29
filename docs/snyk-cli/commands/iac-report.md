@@ -4,6 +4,10 @@
 
 `snyk iac report [<OPTIONS>]`
 
-{% hint style="info" %}
-This is an **alias** for the `snyk iac test --report` command. For more details, refer to the `--report` command in the [IAC test](iac-test.md) help page.&#x20;
-{% endhint %}
+## Description
+
+Test for any known security issue and share results to the Snyk App.
+
+This is an alias for `snyk iac test --report`.
+
+For more information see the [`iac test` command help for the `--report` option](iac-test.md)
