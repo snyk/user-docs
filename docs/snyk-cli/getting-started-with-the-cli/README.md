@@ -16,7 +16,7 @@ Once you have installed and authenticated, change directory into a folder contai
 
 You can also scan a Docker image by its tag with [Snyk Container](https://snyk.io/product/container-vulnerability-management/) by running, for example: `snyk container test ubuntu:18.04`.
 
-To test a Kubernetes (k8s) file run `snyk iac test /path/to/kubernetes_file.yaml`.
+To test a Kubernetes (k8s) file run `snyk iac test /path/to/kubernetes_file.yaml`. 
 
 ## Monitor your project
 
