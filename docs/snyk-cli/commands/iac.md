@@ -17,4 +17,4 @@ Help docs for all the `iac` commands are listed here:
 * [iac test](iac-test.md)
 * [iac report](iac-report.md)
 * [iac describe](iac-describe.md)
-* [iac gen-driftignore](iac-gen-driftignore.md)
+* [iac gen-driftignore](iac-update-exclude-policy.md)
