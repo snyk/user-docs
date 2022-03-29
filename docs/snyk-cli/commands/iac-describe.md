@@ -115,11 +115,11 @@ Display a report that shows changes for both managed and unmanaged resources.
 
 Display a report that shows changes only for resources found in aggregated Terraform states; filter out drift for resources that are not managed by Terraform.&#x20;
 
+Alternative: `--drift`
+
 ### `--only-unmanaged`
 
 Display a report that shows resources not found in any Terraform state; filter out drift for managed resources.
-
-Alternative: `--drift`
 
 ### `--quiet`
 
