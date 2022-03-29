@@ -127,7 +127,7 @@ To clear the project tags set `--project-tags=`
 
 Share results with the Snyk App.
 
-This creates a project in your Synk account with a snapshot of the current configuration issues. After running this command, log in to the Snyk website and view your projects to see the monitor.
+This creates a project in your Snyk account with a snapshot of the current configuration issues. After running this command, log in to the Snyk website and view your projects to see the monitor.
 
 Example: `$ snyk iac test --report`
 
