@@ -6,11 +6,11 @@
 
 ## Description
 
-The `snyk iac update-exclude-policy` can generate exclude policy rules to be used by `snyk iac test`.
+The `snyk iac update-exclude-policy` generates exclude policy rules to be used by `snyk iac test`.
 
-See also the help for [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test) and [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)``
+For a list of related commands see the [snyk iac](iac.md) help.
 
-For more information see [Ignore resources](https://docs.snyk.io/products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/ignore-resources).
+For more information see [Ignore resources](https://docs.snyk.io/products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/ignore-resources)
 
 ## Exit codes
 
@@ -21,7 +21,7 @@ Possible exit codes and their meaning:
 
 ## Configure the Snyk CLI
 
-You can use environment variables to configure the Snyk CLI and also set variables to configure the Snyk CLI to connect with the Snyk API. See [Configure the Snyk CLI](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli).
+You can use environment variables to configure the Snyk CLI and set variables for connecting with the Snyk API. See [Configure the Snyk CLI](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli)
 
 ## Debug
 
