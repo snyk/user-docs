@@ -97,17 +97,23 @@ This is especially useful if you want to display the human-readable test output 
 
 Set the project environment to one or more values (comma-separated). To clear the project environment set `--project-environment=`. Allowed values: frontend, backend, internal, external, mobile, saas, onprem, hosted, distributed
 
+For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes)
+
 ### `--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE]...>`
 
 Set the project lifecycle to one or more values (comma-separated). To clear the project lifecycle set `--project-lifecycle=`.
 
 Allowed values: `production, development, sandbox`
 
+For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes)
+
 ### `--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`
 
 Set the project business criticality to one or more values (comma-separated). To clear the project business criticality set `--project-business-criticality=`.
 
 Allowed values: `critical, high, medium, low`
+
+For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes)
 
 ### `--project-tags=<TAG>[,<TAG>]...>`
 
