@@ -38,7 +38,13 @@ Snyk ID for the issue to ignore. Required.
 
 ### `--expiry=<EXPIRY>`
 
-Expiry date in `YYYY-MM-DD` format ([ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) and [RFC 2822](https://tools.ietf.org/html/rfc2822) are supported).
+Expiry date in `YYYY-MM-DD` format.
+
+Supported formats:
+
+[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)
+
+[RFC 2822](https://tools.ietf.org/html/rfc2822)
 
 Default: 30 days
 
