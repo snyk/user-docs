@@ -688,7 +688,7 @@
 * [Snyk Apps](tutorials/snyk-apps/README.md)
   * [Create a Snyk App with TypeScript](tutorials/snyk-apps/creating-a-snyk-app-with-typescript/README.md)
     * [Configuring Express.js](tutorials/snyk-apps/creating-a-snyk-app-with-typescript/module-1.md)
-    * [Register The App and Configure User Authorization](tutorials/snyk-apps/creating-a-snyk-app-with-typescript/module-2.md)
+    * [Register the App and Configure User Authorization](tutorials/snyk-apps/creating-a-snyk-app-with-typescript/module-2.md)
     * [Render Content For Users](tutorials/snyk-apps/creating-a-snyk-app-with-typescript/module-3.md)
 * [SpringOne](tutorials/springone-workshop/README.md)
   * [Workshop Overview](tutorials/springone-workshop/workshop-environment.md)
