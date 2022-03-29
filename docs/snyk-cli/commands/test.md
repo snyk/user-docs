@@ -19,7 +19,7 @@ Possible exit codes and their meaning:
 
 ## Configure the Snyk CLI
 
-You can use environment variables to configure the Snyk CLI and also set variables to configure the Snyk CLI to connect with the Snyk API. See [Configure the Snyk CLI](https://docs.snyk.io/features/snyk-cli/configure-the-snyk-cli).
+You can use environment variables to configure the Snyk CLI and set variables for connecting with the Snyk API. See [Configure the Snyk CLI](https://docs.snyk.io/features/snyk-cli/configure-the-snyk-cli)
 
 ## Debug
 
@@ -33,7 +33,7 @@ See also subsequent sections for options for specific build environments, packag
 
 Auto-detect all projects in the working directory (including Yarn workspaces).
 
-For more information see the article [Does the Snyk CLI support monorepos or multiple manifest files?](https://support.snyk.io/hc/en-us/articles/360000910577-Does-the-Snyk-CLI-support-monorepos-or-multiple-manifest-files-).
+For more information see the article [Does the Snyk CLI support monorepos or multiple manifest files?](https://support.snyk.io/hc/en-us/articles/360000910577-Does-the-Snyk-CLI-support-monorepos-or-multiple-manifest-files-)
 
 ### `--detection-depth=<DEPTH>`
 
@@ -41,7 +41,9 @@ Use with `--all-projects` or `--yarn-workspaces` to indicate how many sub-direct
 
 Default: 4 (the current working directory and 3 sub-directories).
 
-Example: `--detection-depth=3` limits search to the specified directory (or the current directory if no `<PATH>` is specified) plus three levels of subdirectories.
+Example: Limit search to the specified directory (or the current directory if no `<PATH>` is specified) plus three levels of subdirectories.
+
+`--detection-depth=3`
 
 ### `--exclude=<DIRECTORY>[,<DIRECTORY>]...>`
 
@@ -81,7 +83,7 @@ Set a default to ensure all newly tested projects are tested under your default 
 
 Default: `<ORG_ID>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account).
 
-For more information see the article [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI).
+For more information see the article [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI)
 
 ### `--file=<FILE>`
 
@@ -117,7 +119,9 @@ Specify a custom Snyk project name.
 
 ### `--target-reference=<TARGET_REFERENCE>`
 
-Specify a reference which differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference. Only supported for Snyk Open Source. For more information see [Separating projects by branch or version](https://docs.snyk.io/snyk-cli/secure-your-projects-in-the-long-term/grouping-projects-by-branch-or-version).
+Specify a reference which differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference. Only supported for Snyk Open Source.
+
+For more information see [Separating projects by branch or version](https://docs.snyk.io/snyk-cli/secure-your-projects-in-the-long-term/grouping-projects-by-branch-or-version)
 
 ### `--policy-path=<PATH_TO_POLICY_FILE>`
 
@@ -161,7 +165,7 @@ If vulnerabilities do not have a fix and this option is being used, tests pass.
 
 ## Options for Maven projects
 
-For more information about Maven CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven).
+For more information about Maven CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven)
 
 ### `--scan-all-unmanaged`
 
@@ -181,7 +185,7 @@ Default: 300 (5 minutes).
 
 ## Options for Gradle projects
 
-For more information about Gradle CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven).
+For more information about Gradle CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven)
 
 ### `--sub-project=<NAME>`, `--gradle-sub-project=<NAME>`
 
@@ -287,7 +291,7 @@ Currently the following options are not supported:
 
 Scan C/C++ source code for vulnerabilities.
 
-For more information see [Snyk for C/C++](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++).
+For more information see [Snyk for C/C++](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++)
 
 ## `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
