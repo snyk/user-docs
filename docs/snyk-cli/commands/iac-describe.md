@@ -146,17 +146,17 @@ For more information see [Filter results](https://docs.snyk.io/products/snyk-inf
 
 Output the report as JSON to stdout.
 
-### `--json-output-file=<OUTPUT_FILE_PATH>`
+You can save the report to a file with a redirection:
 
-Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option.
-
-This is especially useful if you want to display the human-readable test output using stdout and at the same time save the JSON format output to a file.
+`$ snyk iac describe --json > report.json`&#x20;
 
 ### `--html`
 
-`--html-output-file=<OUTPUT_FILE_PATH>`
+Output the report as html to stdout.
 
-Output the report as html to stdout or into a file.
+### `--html-file-output=<OUTPUT_FILE_PATH>`
+
+Output the report as html into a file.
 
 ### `--fetch-tfstate-headers`
 
