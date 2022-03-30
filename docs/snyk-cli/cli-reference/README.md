@@ -30,13 +30,21 @@ Snapshot and continuously monitor a project for open source vulnerabilities and 
 
 Test container images for vulnerabilities.
 
+### ``[`snyk iac`](https://docs.snyk.io/snyk-cli/commands/iac)``
+
+The `snyk iac` subcommands find and report security issues in Infrastructure as Code files; detect, track, and alert on infrastructure drift and unmanaged resources;  and create a .driftigore file.
+
 ### [`snyk iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
 Detect, track, and alert on infrastructure drift and unmanaged resources.
 
-### [`snyk iac gen-driftignore`](https://docs.snyk.io/snyk-cli/commands/iac-gen-driftignore)
+### ``[`snyk iac update-exclude-policy`](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy)``
 
 Generate driftignore rules to be used by snyk iac test.
+
+### ``[`snyk iac report`](https://docs.snyk.io/snyk-cli/commands/iac-report)``
+
+This is an alias for `snyk iac test --report`.
 
 ### [`snyk iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
