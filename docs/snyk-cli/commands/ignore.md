@@ -26,6 +26,15 @@ ignore:
         expires: <EXPIRY>
 ```
 
+When you use the `--file-path` option the block is similar to this:
+
+```yaml
+exclude:
+  '<GROUP>':
+    - <FILE MATCHING-PATTERN>
+    - <FILE MATCHING-PATTERN>
+```
+
 ## Debug
 
 Use the `-d` option to output the debug logs.
@@ -34,7 +43,7 @@ Use the `-d` option to output the debug logs.
 
 ### `--id=<ISSUE_ID>`
 
-Snyk ID for the issue to ignore. Required.
+Snyk ID for the issue to ignore, omitted if combined with --file-path. Required by other usecases.
 
 ### `--expiry=<EXPIRY>`
 
@@ -46,7 +55,7 @@ Supported formats:
 
 [RFC 2822](https://tools.ietf.org/html/rfc2822)
 
-Default: 30 days
+Default: 30 days, or none if combined with --file-path.
 
 ### `--reason=<REASON>`
 
@@ -68,6 +77,20 @@ Use to narrow the scope of the ignore rule. When no resource path is specified, 
 
 Default: all
 
+### `--file-path=<PATH_TO_RESOURCE>`
+
+Path to a file/folder resource for which to ignore the issue. It is possible to use glob expressions as pattern-matching.
+
+Used by Snyk Code, and unmanaged ecosystems.
+
+Default: none
+
+### `--file-path-group=[global | code | iac-drift]`
+
+Grouping used in combination with --file-path, otherwise omitted.
+
+Default: global
+
 ## Examples for snyk ignore command
 
 ### Ignore a specific vulnerability:
@@ -86,4 +109,10 @@ $ snyk ignore --id='SNYK-JS-PATHPARSE-1077067' --expiry='2021-01-10' --path='nyc
 
 ```
 $ snyk ignore --id=npm:tough-cookie:20160722
+```
+
+### Ignore a specific file/folder using glob expression:
+
+```
+$ snyk ignore --file-path='./**/vendors/**/*.ts' --expiry='2021-01-10' --reason='patched dependency'
 ```
