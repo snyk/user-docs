@@ -2,7 +2,7 @@
 
 ## Usage
 
-`snyk ignore --id=<ISSUE_ID> [--expiry=] [--reason=] [--policy-path=<PATH_TO_POLICY_FILE>] [--path=<PATH_TO_RESOURCE>] [OPTIONS]`
+`snyk ignore --id=<ISSUE_ID> [--expiry=] [--reason=] [--policy-path=<PATH_TO_POLICY_FILE>] [OPTIONS]`
 
 ## Description
 
@@ -71,21 +71,23 @@ Default: none
 
 ### `--path=<PATH_TO_RESOURCE>`
 
-Path to resource for which to ignore the issue.
+Path to resource inside the depgraph for which to ignore the issue.
 
 Use to narrow the scope of the ignore rule. When no resource path is specified, all resources are ignored.
+
+If used, follows the `--policy-path` option.
 
 Default: all
 
 ### `--file-path=<PATH_TO_RESOURCE>`
 
-Path to a file or folder resource for which to ignore the issue. You can use glob expressions as pattern-matching.
+Path to a file or folder resource or a glob expression in the filesystem for which to ignore the issue.
 
-Used by Snyk Code and unmanaged ecosystems.
+Used by `snyk code` and `--unmanaged` ecosystems.
 
 Default: none
 
-### `--file-path-group=[global | code | iac-drift]`
+### `--file-path-group=[global|code|iac-drift]`
 
 Grouping used in combination with `--file-path`, otherwise omitted.
 
