@@ -10,7 +10,7 @@ For security and DevOps professionals preparing to roll Snyk out to your develop
 
 #### Where to implement Snyk
 
-As you prepare for your teams to start adopting Snyk as part of a secure development workflow, you’ll want to decide where in your software development lifecycle you are implementing Snyk and which of the Snyk platform products you are using.&#x20;
+As you prepare for your teams to start adopting Snyk as part of a secure development workflow, you’ll want to decide where in your software development lifecycle you are implementing Snyk and which of the Snyk platform products you are using.
 
 More information:
 
@@ -19,7 +19,7 @@ More information:
 
 #### How to structure your account
 
-There are different ways to structure your account to align to the organization of your teams and desired project access. The highest level of the hierarchy within Snyk is a Group. Organizations, the next level of the hierarchy, manage access to projects. Projects are the hierarchy levels where Snyk scans for issues.&#x20;
+There are different ways to structure your account to align to the organization of your teams and desired project access. The highest level of the hierarchy within Snyk is a Group. Organizations, the next level of the hierarchy, manage access to projects. Projects are the hierarchy levels where Snyk scans for issues.
 
 More information:
 
@@ -28,7 +28,7 @@ More information:
 
 #### How to access Snyk
 
-There are a few different ways that users can authenticate into their Snyk accounts, including setting up single sign-on via your existing identity provider.&#x20;
+There are a few different ways that users can authenticate into their Snyk accounts, including setting up single sign-on via your existing identity provider.
 
 More information:
 
@@ -37,7 +37,7 @@ More information:
 
 #### Plan for importing projects
 
-Before importing projects, make sure your organizations in Snyk are configured appropriately. There are different ways to add projects in Snyk, including via an integration, the CLI or Snyk API.&#x20;
+Before importing projects, make sure your organizations in Snyk are configured appropriately. There are different ways to add projects in Snyk, including via an integration, the CLI or Snyk API.
 
 More information:
 
@@ -48,16 +48,16 @@ More information:
 
 #### Plan for Snyk notifications
 
-Snyk sends teams different types of alerts based on settings defined for the group and for the organization. It's highly recommended to define the default settings for the group and the first organization with most notifications disabled by default before you create additional organizations and import projects. Individual users can set up their own notification preferences to receive alerts for specific projects.&#x20;
+Snyk sends teams different types of alerts based on settings defined for the group and for the organization. It's highly recommended to define the default settings for the group and the first organization with most notifications disabled by default before you create additional organizations and import projects. Individual users can set up their own notification preferences to receive alerts for specific projects.
 
 More information:
 
-* Docs: [notification-management.md](../features/user-and-group-management/notifications/notification-management.md "mention")
+* Docs: [notifications.md](../features/user-and-group-management/notifications.md "mention")
 * Training: [Notifications](http://training.snyk.io/learn/course/notifications/snyk-notification-configuration/an-overview-of-notifications?page=1)
 
 #### Set source code manager (SCM) configurations
 
-Snyk includes a number of automations for Snyk Open Source when integrated with a source code manager. These automations are a great way to mature your developer security maturity. However, they can introduce frustration for developers if introduced too early in your journey. Make sure your settings align with your phase of adoption.&#x20;
+Snyk includes a number of automations for Snyk Open Source when integrated with a source code manager. These automations are a great way to mature your developer security maturity. However, they can introduce frustration for developers if introduced too early in your journey. Make sure your settings align with your phase of adoption.
 
 More information:
 
@@ -70,7 +70,7 @@ After the first organization is configured, you can copy the settings when creat
 
 #### Invite members and set ignore permissions
 
-When it’s time to invite additional team members to Snyk, you will also determine how to handle ignoring issues in Snyk. It’s important to understand why you would ignore issues and who has permission to do so.&#x20;
+When it’s time to invite additional team members to Snyk, you will also determine how to handle ignoring issues in Snyk. It’s important to understand why you would ignore issues and who has permission to do so.
 
 More information:
 
@@ -81,7 +81,7 @@ More information:
 
 #### Get familiar with the Snyk UI
 
-The Snyk platform scans different types of projects (depending on which product you have purchased), displays and scores the scan results, and offers different types of fix advice or options (depending on several factors).&#x20;
+The Snyk platform scans different types of projects (depending on which product you have purchased), displays and scores the scan results, and offers different types of fix advice or options (depending on several factors).
 
 More information:
 
@@ -90,7 +90,7 @@ More information:
 
 #### Get familiar with the Snyk CLI
 
-The Snyk CLI uses the command line interface to work with Snyk in a local environment or via a CI/CD process.&#x20;
+The Snyk CLI uses the command line interface to work with Snyk in a local environment or via a CI/CD process.
 
 More information:
 
@@ -99,10 +99,9 @@ More information:
 
 #### Get familiar with Snyk in an IDE
 
-IDE plugins for Snyk take advantage of the Snyk CLI to offer Snyk functionality in an individual development environment.&#x20;
+IDE plugins for Snyk take advantage of the Snyk CLI to offer Snyk functionality in an individual development environment.
 
 More information:
 
 * Docs: [ide-tools](../features/integrations/ide-tools/ "mention")
 * Training: [Introduction to using Snyk in an IDE](http://training.snyk.io/learn/course/introduction-to-using-snyk-in-an-ide/snyk-plugin-for-ide/authenticate-plug-in-to-snyk?page=1)
-
