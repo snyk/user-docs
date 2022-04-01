@@ -67,7 +67,7 @@ When the scan ends, results and any relevant error messages are displayed from t
 
 ![Results screen for scan with Eclipse plugin](../../../.gitbook/assets/uuid-e868f739-eb55-9bd6-be33-acbb230ec1fa-en.png)
 
-## Work with Snyk results from Eclipse
+## Work with Snyk results for Eclipse projects
 
 ### **Context menu**
 
