@@ -183,7 +183,7 @@ You can navigate to the most severe vulnerability by triggering the provided cod
 
 ![Vulnerability window](<../../../.gitbook/assets/image (68) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (6).png>)
 
-The Open Source Security (OSS) vulnerability tab shows information about the vulnerable module.
+The Open Source Security (OSS) vulnerability window shows information about the vulnerable module.
 
 * Links to external resources (CVE, CWE, Snyk Vulnerability DB) to explain the vulnerability in more detail.
 * Displays CVSS score and exploit maturity.
