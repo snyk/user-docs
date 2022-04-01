@@ -12,7 +12,7 @@ With Snyk, you can use one of the following identity providers for authenticatio
 * Bitbucket
 * Google
 * Azure
-* Single sign-on (SSO)
+* Single Sign-On (SSO) - see [setting-up-sso-for-authentication](../setting-up-sso-for-authentication/ "mention")
 * DockerID
 
 {% hint style="info" %}
