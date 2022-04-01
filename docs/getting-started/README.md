@@ -15,7 +15,7 @@ To become a Snyk user, the first step is to sign up, creating a Snyk account:
    1. Enter brief information to help us guide your experience, then follow the prompts to integrate your project.
    2. Access your Snyk dashboard at [https://app.snyk.io](https://app.snyk.io):
 
-![](../.gitbook/assets/login6.png)
+![](../.gitbook/assets/getting-started.png)
 
 ### Choose your Snyk product and tool
 
