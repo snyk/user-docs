@@ -29,7 +29,7 @@ After the extension has been installed, open the Snyk tool window: **View > Othe
 
 ![View, Other Windows, Snyk](../../../.gitbook/assets/install2.png)
 
-Once the tool window open, wait while the Snyk extension downloads the latest Snyk CLI version.
+Once the tool window opens, wait while the Snyk extension downloads the latest Snyk CLI version.
 
 ![Snyk tool window, CLI downloading](../../../.gitbook/assets/readme\_image\_2\_3.png)
 
