@@ -52,7 +52,7 @@ Snyk sends teams different types of alerts based on settings defined for the gro
 
 More information:
 
-* Docs: [notifications.md](../features/user-and-group-management/notifications.md "mention")
+* Docs: [notifications](../features/user-and-group-management/notifications/ "mention")
 * Training: [Notifications](http://training.snyk.io/learn/course/notifications/snyk-notification-configuration/an-overview-of-notifications?page=1)
 
 #### Set source code manager (SCM) configurations
