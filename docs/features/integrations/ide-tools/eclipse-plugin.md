@@ -20,7 +20,7 @@ The Snyk Eclipse plugin is available for installation on the [Eclipse Marketplac
 
 ## Supported languages and repos
 
-Snyk supports all languages that are supported by both Eclipse and Snyk. Additionally, the Snyk plugin can be implemented with the  Snyk Broker and on-prem solutions.
+Snyk supports all languages that are supported by both Eclipse and Snyk. Additionally, the Snyk plugin can be implemented with the Snyk Broker and on-prem solutions.
 
 ## Installing the Snyk Eclipse plugin
 
@@ -48,7 +48,7 @@ To analyze projects, the plugin uses the Snyk CLI. The CLI needs the following e
 * `PATH`: the path to needed binaries, for example, to Maven. The `PATH` variable can also be manually adjusted using the `Path` field in the settings dialog
 * `JAVA_HOME`: the path to the JDK you want to use to analyze Java dependencies
 * `http_proxy` and `https_proxy`: set using the value in the format `http://username:password@proxyhost:proxyport`.\
-  **Note:** the leading `http://` in the value does not change to `https://` for `https_proxy`.&#x20;
+  **Note:** the leading `http://` in the value does not change to `https://` for `https_proxy`.
 
 Setting these variables only in a shell environment (for example, using **\~/.bashrc**) is not enough, if you do not start Eclipse from the command line or create a script file that starts Eclipse using a shell environment.
 
@@ -67,22 +67,76 @@ When the scan ends, results and any relevant error messages are displayed from t
 
 ![Results screen for scan with Eclipse plugin](../../../.gitbook/assets/uuid-e868f739-eb55-9bd6-be33-acbb230ec1fa-en.png)
 
-Work with Snyk results from Eclipse as follows:
+## Work with Snyk results from Eclipse
 
-| **Column**         |                                                                                                                           | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Context menu**   | Right click menu                                                                                                          | <p>Options include:</p><p><strong>Ignore issue</strong>—Hover over the specific issue that you want to ignore for the next 30 days and then access the context menu.</p><p><strong>Snyk test</strong>—Run the Snyk test for the entire workspace.</p><p><strong>Preferences</strong>—Access and update Snyk Vuln Scanner preferences directly from the right click menu.</p>                                                                                                                                                                                                                                            |
-| **When collapsed** |                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| **Title**          |                                                                                                                           | The name of the project.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| **Dependency**     |                                                                                                                           | A summary of vulnerabilities and the number of affected paths found for each project.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| **When expanded**  |                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| **Title**          |                                                                                                                           | The full name of the vulnerability affecting your project, linked to a description and complete details of the vulnerability in the Snyk database, to assist you in resolving the issue.                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| **Dependency**     |                                                                                                                           | The name of the direct dependency package in your project (the package you explicitly installed) that is affected by the vulnerability, either directly or indirectly.                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|                    |                                                                                                                           | <p>All details appear on a single row and the Dependency (the name of the package explicitly used in the code) and Package (the name of the package that actually contains the vulnerability) columns both display the name of the same package:</p><p><img src="../../../.gitbook/assets/uuid-e7accdc1-7495-e7a5-7a64-2403b066cb03-en.png" alt="image13.png"></p>                                                                                                                                                                                                                                                      |
-|                    | <p><strong>When your project is affected by an indirect vulnerability:</strong></p><p><strong>Collapsed mode</strong></p> | <p>An arrow appears on the row, grouping together all relevant details, similar to the following examples:</p><p><img src="../../../.gitbook/assets/uuid-c71f67d1-80a3-7485-b33b-e602a1a5050e-en.png" alt="image14.png"></p><p>For example:</p><p>Package X uses Package Y, which in turn uses Package Z.</p><p>Package Z contains a Cross-Site Scripting (XSS) vulnerability, indirectly affecting your project.</p><p>The Dependency (the name of the package explicitly used in the code) is Package X; the Package field displays Package Z (the name of the package that actually contains the vulnerability).</p> |
-|                    | **Expanded mode**                                                                                                         | <p>Click the arrow on the row to expand and view the full path from the direct dependency to the actual vulnerable package.</p><p><img src="../../../.gitbook/assets/uuid-35658aaf-3359-80c2-c094-41a34c7863cc-en.png" alt="image15.png"></p><p>In the example above, the full path would appear as:</p><p>[Name of Package X]-->[Name of Package Y]-->[Name of Package Z]</p>                                                                                                                                                                                                                                          |
-| **Package**        |                                                                                                                           | <p>The name of the package in your project that is directly affected by the vulnerability.</p><p>In the example above:</p><ul><li>the Dependency is indicated as Package X—this is the package the developer explicitly uses in the code</li><li>the Package field displays Package Z, which is the package that actually contains the vulnerability.</li></ul>                                                                                                                                                                                                                                                         |
-| **Fix**            |                                                                                                                           | The name of the package, if such exists, and the version that it can be upgraded to in order to resolve the issue.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+### **Context menu**
+
+Right click menu
+
+Options include:
+
+**Ignore issue**—Hover over the specific issue that you want to ignore for the next 30 days and then access the context menu.
+
+**Snyk test**—Run the Snyk test for the entire workspace.
+
+**Preferences**—Access and update Snyk Vuln Scanner preferences directly from the right click menu.
+
+### **When collapsed**
+
+**Title:** The name of the project.
+
+**Dependency:** A summary of vulnerabilities and the number of affected paths found for each project.
+
+### When expanded
+
+**Title:** The full name of the vulnerability affecting your project, linked to a description and complete details of the vulnerability in the Snyk database, to assist you in resolving the issue.
+
+**Dependency:** The name of the direct dependency package in your project (the package you explicitly installed) that is affected by the vulnerability, either directly or indirectly.
+
+All details appear on a single row and the Dependency (the name of the package explicitly used in the code) and Package (the name of the package that actually contains the vulnerability) columns both display the name of the same package:
+
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MdwVZ6HOZriajCf5nXH%2Fuploads%2Fgit-blob-4cdd086d6be47b598fc1a9a52c63023d59cff825%2Fuuid-e7accdc1-7495-e7a5-7a64-2403b066cb03-en.png?alt=media&token=e3bf024a-ba92-4b76-87be-b728d7edf092" %}
+Eclipse results details
+{% endembed %}
+
+An arrow appears on the row, grouping together all relevant details, similar to the following examples:
+
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MdwVZ6HOZriajCf5nXH%2Fuploads%2Fgit-blob-85e429be9a965c2dc534817a648773176a724531%2Fuuid-c71f67d1-80a3-7485-b33b-e602a1a5050e-en.png?alt=media&token=99e95293-bb37-4fed-8388-d9cb56a73092" %}
+Eclipse results arrow on row grouping details
+{% endembed %}
+
+**Dependency when your project is affected by an indirect vulnerability, collapsed mode:**
+
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MdwVZ6HOZriajCf5nXH%2Fuploads%2Fgit-blob-85e429be9a965c2dc534817a648773176a724531%2Fuuid-c71f67d1-80a3-7485-b33b-e602a1a5050e-en.png?alt=media&token=99e95293-bb37-4fed-8388-d9cb56a73092" %}
+Collapsed mode, indirect vulnerability
+{% endembed %}
+
+Example:
+
+Package X uses Package Y, which in turn uses Package Z.
+
+Package Z contains a Cross-Site Scripting (XSS) vulnerability, indirectly affecting your project.
+
+The Dependency (the name of the package explicitly used in the code) is Package X; the Package field displays Package Z (the name of the package that actually contains the vulnerability).
+
+**Dependency when your project is affected by an indirect vulnerability, expanded mode:**
+
+Click the arrow on the row to expand and view the full path from the direct dependency to the vulnerable package.
+
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MdwVZ6HOZriajCf5nXH%2Fuploads%2Fgit-blob-992b169b89e7f3c45782fdeb47b205e3c0a95af8%2Fuuid-35658aaf-3359-80c2-c094-41a34c7863cc-en.png?alt=media&token=53c91ccc-f9bc-4ba7-a55f-8def3aa50d86" %}
+Expanded mode, indierct vulnerability
+{% endembed %}
+
+On the preceding screen the full path would appear as:
+
+\[Name of Package X]-->\[Name of Package Y]-->\[Name of Package Z]
+
+**Package:** The name of the package in your project that is directly affected by the vulnerability. On the preceding screen:
+
+* The Dependency is indicated as Package X—this is the package the developer explicitly uses in the code
+* the Package field displays Package Z, which is the package that contains the vulnerability.
+
+**Fix:** The name of the package if any and the version that it can be upgraded to in order to resolve the issue.
 
 ## Support / Contact
 
