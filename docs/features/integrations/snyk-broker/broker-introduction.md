@@ -1,21 +1,6 @@
 # Broker introduction
 
-Snyk Broker is an open-source tool, that can act as a proxy between Snyk and special integrations including:
-
-* Your Source Code Management (SCM) system on-premise platforms, including [Snyk Code Support](broken-reference).
-* Your publicly-accessible Git-based repositories, allowing you to view and control Snyk activity in those repositories for increased data security.
-* Your on-premise Jira installation or JFrog Artifactory installation.
-* Network restricted [Container Registries](snyk-broker-container-registry-agent/).
-* [Infrastructure as code (IaC) configuration](snyk-broker-infrastructure-as-code-detection/) files using Snyk IaC located on private Git-based repositories.
-
-Snyk Broker is an open-source project, hosted at [GitHub](https://github.com/snyk/broker), and published as a set of Docker images for specific integrations. See the [Github broker documentation](https://github.com/snyk/broker/blob/master/README.md).
-
-{% hint style="info" %}
-**Feature availability**\
-Snyk Broker is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
-{% endhint %}
-
-## Broker benefits
+### Broker benefits
 
 Snyk Broker allows you to:
 
@@ -24,7 +9,7 @@ Snyk Broker allows you to:
 * Manage a fixed private IP for your integration (targeting the broker).
 * Connect to self-hosted integrations that are not accessible from the internet.
 
-## Broker components
+### Broker components
 
 Snyk Broker has a client and a server component that are the same across all base integrations:
 
@@ -40,12 +25,12 @@ Additionally, if there is a requirement to do code analysis in an SCM integratio
 * [**Snyk Broker Code Agent**](snyk-broker-code-agent.md): Enables Snyk Code analysis on SCMs integrated through Snyk Broker
 * [**Snyk Broker Container Registry Agent**](snyk-broker-container-registry-agent/): Enables connection to self-hosted/private container registries and analysis of container images
 
-## Using inbound and outbound connections
+### Using inbound and outbound connections
 
 * There is no direct inbound connection from Snyk to the Broker client. The broker client makes an outbound connection to [https://broker.snyk.io](https://broker.snyk.io), which establishes a WebSocket connection to allow communication with the Broker server. This way, there is no need to grant permissions to specific IPs towards Snyk as you can point to the Broker client IP/port.
 * The Broker client initiates the outbound connection to establish the WebSocket. After the websocket is established, that allows inbound requests from Snyk via the WebSocket, with no need to allow inbound connectivity to the world or to Snyk-specific IP addresses.
 
-## **Approved data list**
+### **Approved data list**
 
 The Broker client maintains an approved data list for inbound and outbound data requests. Only requests included in this approved list are allowed.
 
@@ -58,7 +43,7 @@ Because of the limitations of the default approved list, if you are interested i
 
 If you want to learn more about the approved data list and the `accept.json` file see [Custom approved listing filter](set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md)
 
-## **Supported integrations**
+### **Supported integrations**
 
 Snyk Broker currently integrates with these Git Repository systems:
 
@@ -73,7 +58,7 @@ In addition, Snyk Broker integrates with [Jira Server/Jira Data Center](../notif
 
 With the Container Registry Agent, Snyk Broker also connects to all [Snyk supported Container Registries](snyk-broker-container-registry-agent/).
 
-## **Broker usage**
+### **Broker usage**
 
 When set up, Snyk Broker enables teams to use the standard Snyk product experience for Snyk Open Source and Container (through SCM integration).
 
@@ -83,9 +68,9 @@ To enable the full experience, Snyk Broker will need additional set-up:
 * For Snyk Code, it will require the deployment of the [Snyk Broker Code Agent](snyk-broker-code-agent.md)
 * For Snyk Container image scanning, it will require the deployment of [Snyk Broker Container Registry Agent](snyk-broker-container-registry-agent/)
 
-## Common questions
+### Common questions
 
-How often is the Snyk Broker updated
+How often is the Snyk Broker updated?
 
 * The Snyk Broker is updated anytime there are new features available and when there are fixes.
 
