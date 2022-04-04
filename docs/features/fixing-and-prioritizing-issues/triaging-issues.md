@@ -6,10 +6,10 @@ Every vulnerability has conditions that must be met, for that vulnerability to p
 
 Vulnerable condition examples include:
 
-* Requiring a user interaction.
-* Having a specific port number open.
-* Requiring a certain CPU architecture.
-* Enabling a specific setting.
+* Requiring a user interaction
+* Having a specific port number open
+* Requiring a certain CPU architecture
+* Enabling a specific setting
 
 #### It's all about the context
 
