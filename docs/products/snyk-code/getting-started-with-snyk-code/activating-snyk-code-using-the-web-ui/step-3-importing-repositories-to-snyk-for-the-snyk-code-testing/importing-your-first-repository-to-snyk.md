@@ -15,7 +15,7 @@ If your Snyk Account currently does not include any repositories, you need to im
 * [Importing additional repositories to Snyk](importing-additional-repositories-to-snyk.md).
 * [Re-importing existing repositories for the Snyk Code test](re-importing-existing-repositories-for-the-snyk-code-test.md).
 
-&#x20;3\.  On the **Add your first project to scan for vulnerabilities** page - **Suggested Repositories** section, select the checkboxes of the repositories you want to test by Snyk Code:
+3\.  On the **Add your first project to scan for vulnerabilities** page - **Suggested Repositories** section, select the checkboxes of the repositories you want to test by Snyk Code:
 
 **Note**: You can click the **Show all repositories** link to display all the repositories in your integrated SCM.
 
