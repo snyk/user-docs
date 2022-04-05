@@ -189,7 +189,7 @@
   * [Dependency management](products/snyk-open-source/dependency-management/README.md)
     * [Upgrading dependencies with automatic PRs](products/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs.md)
 * [Snyk Code](products/snyk-code/README.md)
-  * [Getting started with Snyk Code](products/snyk-code/getting-started-with-snyk-code/README.md)
+  * [Getting started with Snyk Code](getting-started/getting-started-snyk-products/getting-started-with-snyk-code.md)
     * [Prerequisites for Snyk Code](products/snyk-code/getting-started-with-snyk-code/prerequisites-for-snyk-code.md)
     * [Activating Snyk Code using the Web UI](products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/README.md)
       * [Step 1: Enabling the Snyk Code option](products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-1-enabling-the-snyk-code-option.md)

@@ -5,7 +5,7 @@
 After you have a Snyk account, you can find and fix vulnerabilities using the following products:
 
 * [getting-started-snyk-open-source.md](../products/snyk-open-source/getting-started-snyk-open-source.md "mention") - in your open source code.
-* [getting-started-with-snyk-code](../products/snyk-code/getting-started-with-snyk-code/ "mention") - in your application code.
+* [getting-started-with-snyk-code.md](getting-started-snyk-products/getting-started-with-snyk-code.md "mention") - in your application code.
 * [getting-started-snyk-container.md](../products/snyk-container/getting-started-snyk-container.md "mention") - in your container image.
 * [getting-started-snyk-iac.md](../products/snyk-infrastructure-as-code/getting-started-snyk-iac.md "mention") - in Kubernetes, Helm and Terraform configuration files.
 

@@ -1,7 +1,7 @@
 # Using Snyk Code via CLI
 
 {% hint style="info" %}
-Make sure Snyk Code is enabled for your organization, see [Getting started with Snyk Code](../getting-started-with-snyk-code/#stage-1-enable-snyk-code) for details.
+Make sure Snyk Code is enabled for your organization, see [Getting started with Snyk Code](../../../getting-started/getting-started-snyk-products/getting-started-with-snyk-code.md#stage-1-enable-snyk-code) for details.
 {% endhint %}
 
 The Snyk Command Line Interface ([CLI](../../../snyk-cli/)) for Snyk Code helps you find and fix security flaws in your code on your local machine.
