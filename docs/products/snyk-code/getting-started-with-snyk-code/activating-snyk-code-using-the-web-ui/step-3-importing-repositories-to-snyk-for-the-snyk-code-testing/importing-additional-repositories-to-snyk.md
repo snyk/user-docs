@@ -12,9 +12,9 @@ If you already have Projects in your Snyk Account, you can add other repositorie
 
 ![](<../../../../../.gitbook/assets/Snyk Code - Add project button - SCM options.png>)
 
-The Personal and Organization repositories page appears, displaying the repositories available to you in the selected SCM.
+The **Personal and Organization repositories** page appears, displaying the repositories available to you in the selected SCM.
 
-&#x20;**** 3.  In the **Personal and Organization repositories** page, select the checkboxes of the repositories you want to import to Snyk. If you want Snyk Code to also test repositories you previously imported, select these repositories as well for re-import:
+3\.  In the **Personal and Organization repositories** page, select the checkboxes of the repositories you want to import to Snyk. If you want Snyk Code to also test repositories you previously imported, select these repositories as well for re-import:
 
 **Notes**:
 
