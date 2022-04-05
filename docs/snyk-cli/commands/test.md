@@ -45,7 +45,7 @@ Example: Limit search to the specified directory (or the current directory if no
 
 `--detection-depth=3`
 
-### `--exclude=<glob>[,<glob>]...>`
+### `--exclude=<GLOB>[,<GLOB>]...>`
 
 Can be used with `--all-projects` and `--yarn-workspaces` to indicate sub-directories and files to exclude. Must be comma separated.
 
