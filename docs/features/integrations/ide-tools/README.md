@@ -1,9 +1,17 @@
-# IDE tools and guide
+# IDE tools
 
-The pages in this group include the following:
+IDE integrations allow you to use the functionality of Snyk, all in your standard IDE (such as Visual Studio).
 
-* [Snyk IDE plugin guide](snyk-ide-plugins/)
-* [Eclipse plugin](eclipse-plugin.md)
-* [JetBrains plugins](jetbrains-plugins.md)
-* [Visual Studio extension](visual-studio-extension.md)
-* [Visual Studio Code extension](visual-studio-code-extension-for-snyk-code.md)
+You can use Snyk with the following pre-built IDEs:
+
+* [eclipse-plugin.md](eclipse-plugin.md "mention")
+* [jetbrains-plugins.md](jetbrains-plugins.md "mention")
+* [visual-studio-extension.md](visual-studio-extension.md "mention")
+* [visual-studio-code-extension-for-snyk-code.md](visual-studio-code-extension-for-snyk-code.md "mention")
+
+You can also build your own IDE integration; see [snyk-ide-plugins](snyk-ide-plugins/ "mention") for details.
+
+#### Training information
+
+See [Introduction to using Snyk in an IDE](https://training.snyk.io/courses/introduction-to-using-snyk-in-an-ide).
+
