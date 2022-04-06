@@ -178,7 +178,7 @@ ignore:
 
 ### Excluding ﬁles and folders from Snyk Code analysis
 
-**Note**: Only web and CLI projects currently support excludes for Snyk Code analysis. IDE support is planned for the future.
+**Note**: Only Git and CLI integrations currently support excludes for Snyk Code analysis. IDE support is planned for the future.&#x20;
 
 Using the following code you can add shell-style patterns under the `exclude.code` section of the `.snyk` file:
 
@@ -194,7 +194,7 @@ exclude:
      - tests?/*
 ```
 
-The preceding exclude rules ignore the “test.spec.ts” ﬁle, any ﬁle with the “.ts” extension under “tests,” any ﬁle ending with “.spec.ts” from any directory, and any ﬁle found under “test” or “tests.”&#x20;
+The preceding exclude rules ignore the “test.spec.ts” ﬁle, any ﬁle with the “.ts” extension under “tests,” any ﬁle ending with “.spec.ts” from any directory, and any ﬁle found under “test” or “tests.”
 
 Any rule beginning with asterisk(s) must be wrapped in quotes, for example, `”*/src”`.
 
