@@ -12,9 +12,9 @@ You can natively connect Snyk Code to your local git server. This allows custome
 * **Broker client**: A [Docker image](https://hub.docker.com/r/snyk/broker/) deployed in your infrastructure.
 * **Code agent**: Another [Docker image](https://hub.docker.com/r/snyk/code-agent/) that is deployed in your infrastructure. **Note:** Code agent is only supported with [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker) v4.108.0 and later versions. If you have a running Broker client, pull the latest update.
 
-The **Broker client** and **code agent** components are deployed in your infrastructure, creating two separate services, responsible for cloning local repositories in a secured manner and sending the allied information to Snyk.
+The **Broker client** and **code agent** components are deployed in your infrastructure, creating two separate services, responsible for cloning local repositories in a secured manner and sending the associated information to Snyk.
 
-The Broker client provides the Agent with the connection details. The Agent uses these details to connect to your local git repository, clone the relevant files. And send the results through the brokered communications using callbacks. The brokered communication happens when a Broker client connects (using your Broker ID) to a Broker server running in Snyk environment:
+The Broker client provides the Agent with the connection details. The Agent uses these details to connect to your local git repository, clone the relevant files, and send the results through the brokered communications using callbacks. The brokered communication happens when a Broker client connects (using your Broker ID) to a Broker server running in Snyk environment:
 
 ![](../../../.gitbook/assets/local-git.png)
 
@@ -30,15 +30,6 @@ Before you begin with the setup process, make sure to have a server that support
 * **Memory:** 2Gb (should be reflected in node memory setting)
 * **Disk space:** 2Gb (available disk size determines maximum cloneable repository size)
 * **Network:** code upload performance will be affected by slow Internet connection
-
-### Set up broker client
-
-Code agent depends on broker client. Follow the instructions on [How to install and configure your Snyk Broker client](set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) for detailed instructions how to set up broker for specific SCMs.
-
-If you already have a broker client running, consider the following additional requirements:
-
-* Code agent is only supported with [Snyk Broker](./) v4.108.0 and later versions, make sure to pull the latest version first.
-* Code agent needs permission to clone the full repository, make sure that the SCM token passed to the broker has the corresponding permissions.
 
 ### Set up the network
 
@@ -69,7 +60,7 @@ docker pull snyk/code-agent
 
 The following environment variables are mandatory to configure the code agent:
 
-* **SNYK\_TOKEN -** your snyk token, as also used by the CLI, see [Authenticate the CLI with your account](../../../snyk-cli/authenticate-the-cli-with-your-account/) for additional details.
+* **SNYK\_TOKEN -** your Snyk API token, as also used by the CLI, see [Authenticate the CLI with your account](../../../snyk-cli/authenticate-the-cli-with-your-account/) for additional details.
 * **PORT** - the local port, for which the code agent accepts connections, Default is 3000.
 
 To run the **code-agent:**
@@ -77,7 +68,7 @@ To run the **code-agent:**
 ```
 docker run --name code-agent \
      -p 3000:3000 \
-     -e PORT=3000 -e SNYK_TOKEN=<token> --network mySnykBrokerNetwork \
+     -e PORT=3000 -e SNYK_TOKEN=<Snyk API token> --network mySnykBrokerNetwork \
      snyk/code-agent
 ```
 
@@ -85,6 +76,15 @@ In this example:
 
 * We set the current container to use the new network we created **--network mySnykBrokerNetwork**
 * We gave the current container a name **--name code-agent**. It will be used to define the **GIT\_CLIENT\_URL** for the broker client that we will run next.
+
+### Set up Broker client
+
+Code agent depends on broker client. Follow the instructions on [How to install and configure your Snyk Broker client](set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) for detailed instructions how to set up broker for specific SCMs.
+
+If you already have a broker client running, consider the following additional requirements:
+
+* Code agent is only supported with [Snyk Broker](./) v4.108.0 and later versions; make sure to pull the latest version first.
+* Code agent needs permission to clone the full repository; make sure that the SCM token passed to the broker has the corresponding permissions.
 
 ### Extend Broker setup
 
@@ -95,13 +95,13 @@ Extend your broker setup with the following arguments:
 --network <name of created network>
 ```
 
-For example, to extend an existing broker client configured for Gitlab, run:
+For example, to extend an existing broker client configured for GitLab, run:
 
 ```
 docker run \
    -p 8001:8000 \
-   -e BROKER_TOKEN=xxxxxxx-xxxx-xxxx-xxxx-xxxxxxx \
-   -e GITLAB_TOKEN=glpat-xxxxxxxxxxxxxxx \
+   -e BROKER_TOKEN=<xxxxxxx-xxxx-xxxx-xxxx-xxxxxxx> \
+   -e GITLAB_TOKEN=glpat-<xxxxxxxxxxxxxxx> \
    -e GITLAB=url.com \
    -e BROKER_CLIENT_URL=http://my.broker.client:8000
    -e PORT=8000 \
@@ -116,6 +116,8 @@ In this example:
 
 * We set the current container to use the new network we created **--network mySnykBrokerNetwork**
 * In **GIT\_CLIENT\_URL** we used the name we defined in the code-agent container as the host here.
+
+### Enable with custom whitelist
 
 If you have a running Snyk broker with a custom whitelist (**accept.json**), then ensure the following rule is present in the whitelist:
 
@@ -153,7 +155,7 @@ For GitHub:
 }
 ```
 
-For Gitlab:
+For GitLab:
 
 ```
 {
@@ -196,12 +198,12 @@ For Azure Repos:
 ```
 
 {% hint style="info" %}
-After these snippets are added, all content from the repository can be accessed through Snyk broker.
+After these snippets are added, all content from the repository can be accessed through Snyk Broker.
 {% endhint %}
 
 ### Proxy support
 
-For instructions how to run Broker client through a proxy, see [https://github.com/snyk/broker](https://github.com/snyk/broker). Make sure that requests to the Code agent are not sent through the proxy, by passing `NO_PROXY=<code agent container>`, for example:
+For instructions how to run Broker client through a proxy, see [https://github.com/snyk/broker](https://github.com/snyk/broker). Make sure that requests to the Code Agent are not sent through the proxy, bypassing `NO_PROXY=<code agent container>`, for example:
 
 ```
 -e HTTP_PROXY=http://my.proxy.address:8080
@@ -209,15 +211,19 @@ For instructions how to run Broker client through a proxy, see [https://github.c
 -e NO_PROXY=code-agent
 ```
 
-For code agent, add the following environment variables to the **docker run** command:
+For Code Agent, add the following environment variables to the **docker run** command:
 
 ```
 -e HTTP_PROXY=http://my.proxy.address:8080
 -e HTTPS_PROXY=http://my.proxy.address:8080
 ```
 
-To disable certificate verification, e.g., in the case of self-signed certificates, add to the code-agent **docker run** command:
+To disable certificate verification, for example., in the case of self-signed certificates, add to the code-agent **docker run** command:
 
 ```
 -e NODE_TLS_REJECT_UNAUTHORIZED=0
 ```
+
+## **Troubleshooting**
+
+Please visit [Troubleshooting Broker](troubleshooting-broker.md) for more information on how to troubleshoot Snyk Broker Code Agent
