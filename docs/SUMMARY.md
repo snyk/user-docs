@@ -119,7 +119,7 @@
     * [JetBrains plugins](features/integrations/ide-tools/jetbrains-plugins.md)
     * [Visual Studio extension](features/integrations/ide-tools/visual-studio-extension.md)
     * [Visual Studio Code extension](features/integrations/ide-tools/visual-studio-code-extension-for-snyk-code.md)
-    * [Snyk IDE plugin guide](features/integrations/ide-tools/snyk-ide-plugins/README.md)
+    * [Building a Snyk IDE plugin](features/integrations/ide-tools/snyk-ide-plugins/README.md)
       * [Overview of IDE plugins](features/integrations/ide-tools/snyk-ide-plugins/overview.md)
       * [Snyk CLI for IDE plugins](features/integrations/ide-tools/snyk-ide-plugins/snyk-cli.md)
       * [Scanning with IDE plugins](features/integrations/ide-tools/snyk-ide-plugins/scanning.md)
