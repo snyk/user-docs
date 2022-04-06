@@ -2,7 +2,7 @@
 
 
 
-When you import a repository to be tested by Snyk Code, you can exclude certain directories and files from the import by using the `.`**`snyk`** file. The .snyk file is a YAML policy file that can contain shell matching patterns (regular expressions), which allow you to specify the directories and files you want to exclude from the import process. The .snyk file should be created in the repository you intend to import.  &#x20;
+When you import a repository to be tested by Snyk Code, you can exclude certain directories and files from the import by using the .**snyk** file. The .snyk file is a YAML policy file that can contain shell matching patterns (regular expressions), which allow you to specify the directories and files you want to exclude from the import process. The .snyk file should be created in the repository you intend to import.  &#x20;
 
 <mark style="color:red;">**Important!**</mark>
 
@@ -62,13 +62,13 @@ exclude:
 
 **To exclude directories and files from the import process using the .snyk file:**
 
-1\.    On the repository you want to import, create a YAML file called “.**snyk**”.
+1\.  On the repository you want to import, create a YAML file called “.**snyk**”.
 
 For example:
 
 ![](<../../../../../.gitbook/assets/Snyk Code - Exlude from Import - .snyk file creation - 2.png>)
 
-2\.    On the .snyk file, specify the directories and/or files you want to exclude from import according to the following syntax:
+2\.  On the .snyk file, specify the directories and/or files you want to exclude from import according to the following syntax:
 
 ```
 // # Snyk (https://snyk.io) policy file
@@ -87,7 +87,7 @@ exclude:
    - todolist-goof/** 
 ```
 
-&#x20; 3\.    From the Snyk Web UI, import your repository by one of the following ways:
+&#x20; 3\.  From the Snyk Web UI, import your repository by one of the following ways:
 
 * If the repository was already imported to Snyk – retest the repository as follows:
   * On the **Projects** page, click the **Code analysis** Project of the repository. Then, on the **Code Analysis** page, click the **Retest now** option below the header: &#x20;
