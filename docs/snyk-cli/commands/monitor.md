@@ -52,8 +52,7 @@ Note that the glob doesn't need to be an exact match and only need to be part of
 
 Use the `--exclude` option with `--detection-depth` to ignore directories at any depth.
 
-Example: `--exclude=test` will exclude any (sub-)folders or files containing `test` as part of their path or name
-Example: `--exclude=fixtures,debug` will exclude any (sub-)folders or files containing `fixtures` or `debug` as part of their path or name
+Example: `--exclude=test` will exclude any (sub-)folders or files containing `test` as part of their path or name Example: `--exclude=fixtures,debug` will exclude any (sub-)folders or files containing `fixtures` or `debug` as part of their path or name
 
 ### `--prune-repeated-subdependencies`, `-p`
 
@@ -277,7 +276,7 @@ Default: `python` Example: `--command=python3`
 
 Allow skipping packages that are not found in the environment.
 
-## Options for C/C++ projects
+## Option for C/C++ projects
 
 ### `--unmanaged`
 
@@ -285,8 +284,12 @@ Monitor your C/C++ project.
 
 For more information see [Snyk for C/C++](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++)
 
+## Options for build tools
+
 ### `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
-Use context-specific options to pass extra arguments directly to Gradle, Maven, or other build tools. These options are specified last.
+Use a double dash (`--`) after the complete Snyk command to pass options (arguments, flags) that follow directly to the build tool, for example Gradle or Maven.
+
+The format is `snyk <command> -- -- [<context-specific_options>]`
 
 Example: `snyk monitor -- --build-cache`
