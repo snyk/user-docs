@@ -53,8 +53,7 @@ Note that the glob doesn't need to be an exact match and only need to be part of
 
 Use the `--exclude` option with `--detection-depth` to ignore directories at any depth.
 
-Example: `--exclude=test` will exclude any (sub-)folders or files containing `test` as part of their path or name
-Example: `--exclude=fixtures,debug` will exclude any (sub-)folders or files containing `fixtures` or `debug` as part of their path or name
+Example: `--exclude=test` will exclude any (sub-)folders or files containing `test` as part of their path or name Example: `--exclude=fixtures,debug` will exclude any (sub-)folders or files containing `fixtures` or `debug` as part of their path or name
 
 ### `--prune-repeated-subdependencies`, `-p`
 
@@ -240,7 +239,7 @@ Specify a custom path to the packages folder.
 
 When monitoring a .NET project, use this option to add a custom prefix to the name of files inside a project along with any desired separators.
 
-Example: `snyk monitor --file=my-project.sln --project-name-prefix=my-group/`.&#x20;
+Example: `snyk monitor --file=my-project.sln --project-name-prefix=my-group/`.
 
 This is useful when you have multiple projects with the same name in other `.sln` files.
 
@@ -290,7 +289,7 @@ Currently the following options are not supported:
 
 `--fail-on=<all|upgradable|patchable>`
 
-## Options for C/C++ projects
+## Option for C/C++ projects
 
 ### `--unmanaged`
 
@@ -298,9 +297,13 @@ Scan C/C++ source code for vulnerabilities.
 
 For more information see [Snyk for C/C++](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++)
 
-## `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
+## Options for build tools
 
-Use context-specific options to pass extra arguments directly to Gradle, Maven, or other build tools. These options are specified last.
+### `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
+
+Use a double dash (`--`) after the complete Snyk command to pass options (arguments, flags) that follow directly to the build tool, for example Gradle or Maven.
+
+The format is `snyk <command> -- -- [<context-specific_options>]`
 
 Example: `snyk test -- --build-cache`
 
