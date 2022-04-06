@@ -36,22 +36,6 @@ Test container images for vulnerabilities.
 
 Commands to find and manage security issues in Infrastructure as Code files.
 
-### ``[`snyk iac describe`](iac-describe.md)``
-
-Detect, track, and alert on infrastructure drift and unmanaged resources.
-
-### ``[`snyk iac update-exclude-policy`](iac-update-exclude-policy.md)``
-
-Generate exclude policy rules to be used by `snyk iac test`.
-
-### ``[`snyk iac report`](./#snyk-iac-report)``
-
-Test for any known security issue and share results to the Snyk App; an alias for `snyk iac test --report`.
-
-### ``[`snyk iac test`](./#snyk-iac-test)``
-
-Test for any known security issue.
-
 ### [`snyk code`](code.md)
 
 Find security issues using static code analysis.
