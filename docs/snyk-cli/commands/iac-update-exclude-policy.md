@@ -8,7 +8,7 @@
 
 The `snyk iac update-exclude-policy` generates exclude policy rules to be used by `snyk iac test`.
 
-For a list of related commands see the [snyk iac](iac.md) help.
+For a list of related commands see the [snyk iac](iac.md) help; `iac --help`
 
 For more information see [Ignore resources](https://docs.snyk.io/products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/ignore-resources)
 

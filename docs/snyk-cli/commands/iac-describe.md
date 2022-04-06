@@ -10,7 +10,7 @@
 
 The `snyk iac describe` command detects, tracks, and alerts on infrastructure drift and unmanaged resources.
 
-For a list of related commands see the [snyk iac](iac.md) help.
+For a list of related commands see the [snyk iac](iac.md) help; `iac --help`
 
 ## Exit codes
 

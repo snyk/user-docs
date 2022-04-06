@@ -14,7 +14,7 @@ For more information see [Snyk CLI for Infrastructure as Code](https://docs.snyk
 
 Help docs for all the `iac` commands are listed here:
 
-* [iac test](iac-test.md)
-* [iac report](iac-report.md)
-* [iac describe](iac-describe.md)
-* [iac update-exclude-policy](iac-update-exclude-policy.md)
+* [iac test](iac-test.md); `iac test --help`
+* [iac report](iac-report.md); `iac report --help`
+* [iac describe](iac-describe.md); `iac describe --help`
+* [iac update-exclude-policy](iac-update-exclude-policy.md); `iac update-exclude-policy --help`

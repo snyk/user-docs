@@ -8,7 +8,7 @@
 
 The `snyk iac test` command tests for any known security issue.
 
-For a list of related commands see the [snyk iac](iac.md) help.
+For a list of related commands see the [snyk iac](iac.md) help; `iac --help`
 
 For more information see [Snyk CLI for Infrastructure as Code](https://docs.snyk.io/products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code)
 
