@@ -1,6 +1,6 @@
 # IDE tools
 
-IDE integrations allow you to use the functionality of Snyk, all in your standard IDE (such as Visual Studio).
+IDE integrations allow you to use the functionality of Snyk, all in your standard IDEs (such as Visual Studio).
 
 You can use Snyk with the following pre-built IDEs:
 
