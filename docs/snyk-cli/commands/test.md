@@ -45,11 +45,16 @@ Example: Limit search to the specified directory (or the current directory if no
 
 `--detection-depth=3`
 
-### `--exclude=<DIRECTORY>[,<DIRECTORY>]...>`
+### `--exclude=<GLOB>[,<GLOB>]...>`
 
 Can be used with `--all-projects` and `--yarn-workspaces` to indicate sub-directories and files to exclude. Must be comma separated.
 
+Note that the glob doesn't need to be an exact match and only need to be part of the path or the filename.
+
 Use the `--exclude` option with `--detection-depth` to ignore directories at any depth.
+
+Example: `--exclude=test` will exclude any (sub-)folders or files containing `test` as part of their path or name
+Example: `--exclude=fixtures,debug` will exclude any (sub-)folders or files containing `fixtures` or `debug` as part of their path or name
 
 ### `--prune-repeated-subdependencies`, `-p`
 
