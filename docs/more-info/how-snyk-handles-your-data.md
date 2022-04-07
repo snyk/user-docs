@@ -35,12 +35,12 @@ We know how important it is for you to protect your data. Our products only acce
 
 {% tabs %}
 {% tab title="Snyk Open Source" %}
-#### Snyk Open Source
+**Snyk Open Source**
 
 ![](https://snyk.io/wp-content/uploads/shield-snyk-open-source.svg)
 
 * Snyk accesses manifest and build configuration files in order to identify your open source dependencies.
-* For SCA Scans Snyk does not access your source code
+* In CLI, tests with the `--unmanaged` flag accesses your source code files to convert them to file signatures (hashes), and store the file signatures and file names. Other Snyk Open Source scans do not access your source code.
 * Snyk accesses and stores the names and version numbers of your dependencies. Snyk stores the names of associated licenses, including copyright and attribution information. Snyk accesses and stores repository-specific information.
 * Snyk accesses and stores Git provider push & pull specific information. Examples: contributor name, filenames, timestamps.
 
@@ -51,7 +51,7 @@ We know how important it is for you to protect your data. Our products only acce
 {% endtab %}
 
 {% tab title="Snyk Code" %}
-#### Snyk Code
+**Snyk Code**
 
 ![](https://snyk.io/wp-content/uploads/shield-snyk-code.svg)
 
@@ -64,7 +64,7 @@ We know how important it is for you to protect your data. Our products only acce
 {% endtab %}
 
 {% tab title="Snyk Container" %}
-#### Snyk Container
+**Snyk Container**
 
 ![](https://snyk.io/wp-content/uploads/shield-snyk-container.svg)
 
@@ -76,7 +76,7 @@ We know how important it is for you to protect your data. Our products only acce
 {% endtab %}
 
 {% tab title="Snyk IaC" %}
-#### Snyk Infrastructure as Code
+**Snyk Infrastructure as Code**
 
 ![](https://snyk.io/wp-content/uploads/shield-snyk-iac.svg)
 
