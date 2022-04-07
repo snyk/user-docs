@@ -3,7 +3,7 @@
 Get started with Snyk Container to help you find and fix vulnerabilities in container images.
 
 {% hint style="info" %}
-This process uses the Snyk app UI. For details of Snyk Container using the Snyk CLI (Command-Line Interface) tool, see [snyk-cli-for-container-security](snyk-cli-for-container-security/ "mention").
+This process uses the Snyk Web UI. For details of Snyk Container using the Snyk CLI (Command-Line Interface) tool, see [snyk-cli-for-container-security](snyk-cli-for-container-security/ "mention").
 {% endhint %}
 
 ### Prerequisites
@@ -17,7 +17,7 @@ Ensure you have:
 
 Choose a container registry integration, to connect the registry with Snyk.
 
-First, log in to Snyk app, and select **Integrations > Container registries**
+First, log in to the Snyk Web UI, and select **Integrations > Container registries**
 
 ![Example URL: https://app.snyk.io/org/organization-name-tsd/integrations](../../.gitbook/assets/container-registries-3-7-22.png)
 
@@ -51,7 +51,7 @@ Click on an entry to see details of vulnerabilities found:
 
 ![Example URL: https://app.snyk.io/org/organization-name-tsd/project/abc-123](../../.gitbook/assets/cont-reg-dhub-critical-3-7-22.png)
 
-See [Analysis and fixes for your images from the Snyk app](https://docs.snyk.io/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app) for more details.
+See [analysis-and-remediation-for-your-images-from-the-snyk-app.md](getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app.md "mention") for more details.
 
 ### Stage 4: Fix and review
 

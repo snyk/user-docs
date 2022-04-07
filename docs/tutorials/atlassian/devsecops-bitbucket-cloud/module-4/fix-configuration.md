@@ -1,6 +1,6 @@
 # Fix Configuration
 
-From the Snyk app, we will go to the **Projects** menu where we can expand each integration and have a holistic view of our project. Here we will select the _**Kubernetes deployment**_ under our Amazon EKS cluster.
+From the Snyk Web UI, we will go to the **Projects** menu where we can expand each integration and have a holistic view of our project. Here we will select the _**Kubernetes deployment**_ under our Amazon EKS cluster.
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-projects-03.png)
 
@@ -29,4 +29,3 @@ Let's once again, navigate to our Bitbucket repository and edit `./deployment/go
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/bitbucket-edit-manifest.png)
 
 Click **Commit**.
-

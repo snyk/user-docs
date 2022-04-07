@@ -1,8 +1,10 @@
-# Analysis and fixes for your images from the Snyk app
+# Analysis and fixes for your images from the Snyk Web UI
 
-You can import container projects into Snyk using `snyk monitor` from the CLI. Alternatively, you can import projects directly from a supported container registry from the UI.
+You can import container projects into Snyk using `snyk monitor` from the CLI. Alternatively, you can import projects directly from a supported container registry from the Snyk Web UI.
 
-We then scan your project, testing for vulnerabilities, and import a snapshot of your projects. Snyk scans the image snapshot dependencies (which in turn refers to its tag) regularly based on your configurations (daily or weekly) and updates you when any new vulnerabilities are identified (email or Slack, also based on your configurations). If the tag for an image changes and the original tag is used for a different image, Snyk continues to scan the image associated with the original tag, meaning we scan the new image on recurring tests. In order to continue testing an image with a different tag, import the relevant tag.
+We then scan your project, testing for vulnerabilities, and import a snapshot of your projects. Snyk scans the image snapshot dependencies (which in turn refers to its tag) regularly based on your configurations (daily or weekly) and updates you when any new vulnerabilities are identified (email or Slack, also based on your configurations).&#x20;
+
+If the tag for an image changes and the original tag is used for a different image, Snyk continues to scan the image associated with the original tag, meaning we scan the new image on recurring tests. In order to continue testing an image with a different tag, import the relevant tag.
 
 From the **Projects** page, if the project is imported from a registry integration, then it is marked with the relevant registry icon; if it is imported from the CLI, then similarly it is marked with a CLI icon.
 
@@ -10,7 +12,7 @@ You can filter for all container projects, similar to the following example:
 
 ![](<../../../.gitbook/assets/image (10).png>)
 
-When you open any container project, the resulting analysis and fix advice appears in the Snyk UI:
+When you open any container project, the resulting analysis and fix advice appears in the Snyk Web UI:
 
 ![](../../../.gitbook/assets/uuid-069520cd-66e8-9f80-5bcf-c7845009ff54-en.png)
 

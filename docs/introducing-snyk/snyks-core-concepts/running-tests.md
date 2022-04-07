@@ -1,9 +1,9 @@
 # Running tests
 
-You can use Snyk to test your code in multiple ways.
+You can use Snyk to test your code:
 
-* Manually; using the [Snyk CLI](running-tests.md), the [Snyk app](running-tests.md), and the [Snyk API](running-tests.md).
-* Snyk can also [run tests automatically](running-tests.md); on a recurring basis, or when a relevant repo change is made.
+* Manually: using the Snyk CLI, the Snyk Web UI, and the Snyk API.
+* Automatically: on a recurring basis, or when a relevant repo change is made.
 
 {% hint style="info" %}
 Tests may be limited on your account; see [What counts as a test?](https://support.snyk.io/hc/en-us/articles/360000925418-What-counts-as-a-test-) for more information.
@@ -21,9 +21,9 @@ With our [**CLI**](https://snyk.io/docs/using-snyk): you can use the following c
 
 See [Getting started with the CLI](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli) for details.
 
-### Run tests with the Snyk app
+### Run tests with the Snyk Web UI
 
-A test is run when you add a new project or click the re-test button.
+A test is run when you add a new project, or click the re-test button.
 
 See [Getting started with Snyk products](../../getting-started/getting-started-snyk-products.md) for details.
 

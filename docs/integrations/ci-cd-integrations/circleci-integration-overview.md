@@ -26,7 +26,7 @@ Once you add a project to CircleCI and add the Snyk Orb to the configuration fil
 
 ### **Monitor**
 
-Optionally, if the build completes successfully and MONITOR is set to True in the Snyk step, then Snyk saves a snapshot of the project dependencies from the Snyk app, where you can view the dependency tree displaying all of the issues, and you can receive alerts for new issues found in the existing app version.
+Optionally, if the build completes successfully and MONITOR is set to True in the Snyk step, then Snyk saves a snapshot of the project dependencies from the Snyk Web UI, where you can view the dependency tree displaying all of the issues, and you can receive alerts for new issues found in the existing app version.
 
 ## **Prerequisites**
 
@@ -45,4 +45,3 @@ From the [Orbs registry](https://circleci.com/orbs/registry/), CircleCI displays
 From this list, find and click the relevant #Snyk line to view the Snyk Orb information with examples, parameters, and values:
 
 ![Snyk Orb information](../../.gitbook/assets/uuid-ce212e67-b7ac-3cf7-4772-c84f6897aed9-en.png)
-

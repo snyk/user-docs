@@ -103,7 +103,7 @@ Snyk allows you to configure a specific GitHub account on whose behalf the fix a
 
 In order to use this feature, you'll need to do the following:
 
-1. Open GitHub's Integrations Settings page in Snyk app by clicking on _Settings_ → _Integrations_ → _GitHub_
+1. Open GitHub's Integrations Settings page in the Snyk Web UI, by clicking on _Settings_ → _Integrations_ → _GitHub_
 2. Enable the toggle button under the _Open fix and upgrade pull requests from a fixed GitHub_ _account_ setting:
 3. Follow the instructions for creating a personal access token in GitHub 2. Provide the newly generated token to Snyk so it can be used to perform operations on GitHub (meaning opening Fix PRs and etc)
 
@@ -142,7 +142,7 @@ Snyk’s GitHub SCM integration leverages the oAuth app integration. In case you
 1. Log into the GitHub account that initially created the integration.
 2. Navigate to the account settings and select the **Applications** tab in the right sidebar.
 3. Select the **Authorized OAuth Apps** tab You can also reach the [Authorized OAuth Apps tab directly](https://github.com/settings/applications).
-4. Find the **Snyk** app, click on the 3 dots on the right, and select **Revoke**.
+4. Find the **Snyk** entry, click on the 3 dots on the right, and select **Revoke**.
 
 Revoking this access effectively disconnects Snyk’s access to that GitHub account. Existing imported snapshots will persist in Snyk and continue to rescan based on the existing snapshots until deleted. Snyk will no longer be able to import new projects from the GitHub integration and will no longer re-scan on new code merges.
 

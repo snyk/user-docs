@@ -311,6 +311,10 @@ A library used by the Snyk CLI to scan a certain language/build system.
 A component powering Snyk’s cloud native application security platform.\
 Incorporates **Snyk Intel Vulnerability DB**: Snyk’s database of vulnerabilities, providing detailed information and fix advice for known vulnerabilities. See [Vulnerability DB](https://snyk.io/vuln).
 
+### Snyk Web UI
+
+The environment allowing usersSnyk app to access Snyk functions on the web.
+
 ### Social Trends
 
 Snyk shows a Trending banner on issues that are being actively discussed in Twitter. See the [Prioritizing Social Trends](https://docs.snyk.io/fixing-and-prioritizing-issues/prioritizing-issues/prioritize-by-social-trends) article.
@@ -324,8 +328,6 @@ Software Package Data Exchange. A file format used to document information on th
 ### Target
 
 Representation of an external resource Snyk has scanned through an integration, the CLI, UI or API. Targets may represent a SCM repository, a Kubernetes workload, or other scannable resources external to Snyk. All [projects](glossary.md#project) that Snyk create are associated to a parent target. One target may relate to many projects. The structure of the target depends on the [origin](glossary.md#origin). See [Introduction to projects](https://docs.snyk.io/getting-started/introduction-to-snyk-projects).
-
-
 
 ## U
 

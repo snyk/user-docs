@@ -3,7 +3,7 @@
 Get started with Snyk Open Source to inspect, find and fix vulnerabilities in your application's Open Source libraries.
 
 {% hint style="info" %}
-This process describes getting started using the Snyk app UI and a SCM (source code management) system.
+This process describes getting started using the Snyk Web UI and a SCM (source code management) system.
 
 * You can also use an [IDE tool](https://docs.snyk.io/integrations/ide-tools) or a [CI/CD integration](https://docs.snyk.io/integrations/ci-cd-integrations). See [Integrations](https://docs.snyk.io/integrations).
 * You can get started with the [snyk-cli](../../snyk-cli/ "mention"); see [getting-started-with-the-cli](../../snyk-cli/getting-started-with-the-cli/ "mention").
@@ -25,7 +25,7 @@ if you already have an integration set up, go to Step 3.
 
 Choose a source code integration, to allow Snyk to work on a project.
 
-1. Log in to Snyk.io.
+1. Log in to the Snyk Web UI ([app.snyk.io](https://app.snyk.io)).
 2. Select **Integrations > Source control**.
 3. Click the source control system (for example, GitHub) to integrate with Snyk.
 4. Fill in the account credentials as prompted (or authenticate with your account in GitHub), to grant Snyk access permissions for integration.
@@ -34,7 +34,7 @@ Choose a source code integration, to allow Snyk to work on a project.
 
 Add projects to test with Snyk, by choosing repositories for Snyk to test and monitor.
 
-1. Select **Projects** from the Snyk app.
+1. Select **Projects** from the Snyk Web UI.
 2. Select the tool to add the project from (for example GitHub).
 3. In **Personal and Organization repositories**, select the repositories to use.
 4. Click **Add selected repositories** to import the selected repositories into your projects. This also:

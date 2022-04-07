@@ -4,7 +4,7 @@ Snyk integrates with Bitbucket Pipelines using a **Snyk pipe**, seamlessly scann
 
 [Bitbucket Pipes](https://bitbucket.org/blog/meet-bitbucket-pipes-30-ways-to-automate-your-ci-cd-pipeline) enables users to customize and automate a Bitbucket Pipeline CI/CD workflow with a group of ready-to-use tasks that can be added inside of your pipelines by copying and pasting them from the Bitbucket interface.
 
-With the Snyk pipe, you can quickly add Snyk scanning to your pipelines to test and monitor for vulnerabilities at different points of the CI/CD workflow, based on your configurations. Results are then displayed from the Bitbucket Pipelines output view and can also be monitored from [Snyk.io](http://app.snyk.io).
+With the Snyk pipe, you can quickly add Snyk scanning to your pipelines to test and monitor for vulnerabilities at different points of the CI/CD workflow, based on your configurations. Results are then displayed from the Bitbucket Pipelines output view and can also be monitored from the Snyk Web UI ([app.snyk.io](http://app.snyk.io)).
 
 ## Snyk pipe information in Bitbucket
 
@@ -43,7 +43,7 @@ Once you have added the Snyk pipe to the pipeline, each time the pipeline execut
 
 ### **Monitor**
 
-Optionally, if the build completes successfully and **MONITOR** is set to **True** in the Snyk step, then Snyk saves a snapshot of the project dependencies from the Snyk app, where you can view the dependency tree displaying all of the issues and receive alerts for new issues found in the existing app version.
+Optionally, if the build completes successfully and **MONITOR** is set to **True** in the Snyk step, then Snyk saves a snapshot of the project dependencies from the Snyk Web UI, where you can view the dependency tree displaying all of the issues and receive alerts for new issues found in the existing app version.
 
 ## Configure your Bitbucket Pipelines integration
 

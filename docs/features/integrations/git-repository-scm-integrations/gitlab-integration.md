@@ -12,7 +12,7 @@ The integration allows you to:
 4. Trigger a Snyk pull request with fixes yourself from the test report page or the project page for your repo on snyk.io.
 
 {% hint style="info" %}
-**GitLab webhooks** send out an event to Snyk when merge requests occur. This event then  starts a series of other events like pulling project files, running the test process, and posting the results to GitLab--all of which takes place on Snyk's side.
+**GitLab webhooks** send out an event to Snyk when merge requests occur. This event then starts a series of other events like pulling project files, running the test process, and posting the results to GitLab--all of which takes place on Snyk's side.
 {% endhint %}
 
 ## Set up GitLab integration
@@ -82,9 +82,9 @@ When no upgrade is available, you can ignore or patch the vulnerability (patchin
 
 ## Disable the GitLab integration
 
-> **WARNING:**
->
-> Disabling a GitLab integration effectively removes all Snyk integrations, webhooks, as well as removal of the Snyk credentials and deactivation of the GitLab projects in the Snyk app.
+{% hint style="warning" %}
+Disabling a GitLab integration effectively removes all Snyk integrations, webhooks, as well as removal of the Snyk credentials and deactivation of the GitLab projects in the Snyk Web UI.
+{% endhint %}
 
 The project will be set to inactive and you’ll no longer get alerts, pull requests or Snyk tests on your pull requests. Again, the webhook that enables the integration for this repo will be removed.
 

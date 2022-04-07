@@ -18,7 +18,9 @@ By scanning artifacts as part of your workflow and then displaying those test re
 
 {% hint style="info" %}
 **Note**\
-This article refers to the Artifactory _plugin_, an independent piece of software that is installed on the Artifactory machine and serves as a gatekeeper, blocking vulnerable packages from being downloaded from the Artifactory instance rather than the [Artifactory i_ntegration_](https://docs.snyk.io/integrations/private-registry-integrations/artifactory-registry-for-maven), an internal integration in Snyk app that allows configuring SCM and CLI scans to use custom package registries.
+This article refers to the Artifactory plugin, an independent piece of software, that is installed on the Artifactory machine and serves as a gatekeeper, blocking vulnerable packages from being downloaded from the Artifactory instance.&#x20;
+
+This plugin is separate from the [artifactory-registry-for-maven.md](../private-registry-integrations/artifactory-registry-for-maven.md "mention"), a Snyk integration that allows configuring SCM and CLI scans to use custom package registries.
 {% endhint %}
 
 ### Supported package managers

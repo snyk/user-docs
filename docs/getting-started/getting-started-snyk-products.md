@@ -13,7 +13,7 @@ After you have a Snyk account, you can find and fix vulnerabilities using the fo
 
 Snyk has several core tools to use with your selected Snyk product:
 
-* [**Snyk app**](https://app.snyk.io): the core web-based UI.
+* **Snyk Web UI**: the core web-based UI ([app.snyk.io](https://app.snyk.io)).
 * [**Snyk CLI**](https://docs.snyk.io/snyk-cli): the Command Line Interface.
 * [**Snyk IDEs**](../features/integrations/ide-tools/): use IDE integrations to embed Snyk in your development environment.
 * [**Snyk API**](https://support.snyk.io/hc/en-us/categories/360000665657-Snyk-API): allows you to programatically integrate with Snyk.

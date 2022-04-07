@@ -1,6 +1,6 @@
 # Fix Dockerfile
 
-From the Snyk app, we will go to the **Projects** menu where we can expand each integration and have a holistic view of our project. Here we will select the _**container image**_ under our Amazon ECR repository.
+From the Snyk Web UI, we will go to the **Projects** menu where we can expand each integration and have a holistic view of our project. Here we will select the _**container image**_ under our Amazon ECR repository.
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-projects-02.png)
 
@@ -42,4 +42,3 @@ Let's update **Line 1** as follows:
 * **NEW VALUE:** `node:12.18-stretch`
 
 Click **Commit**.
-

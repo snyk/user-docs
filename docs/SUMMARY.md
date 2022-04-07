@@ -231,7 +231,7 @@
     * [Advanced Snyk Container CLI usage](products/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage.md)
   * [Getting around the Snyk Container UI](products/snyk-container/getting-around-the-snyk-container-ui/README.md)
     * [Detecting application vulnerabilities in container images](products/snyk-container/getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images.md)
-    * [Analysis and fixes for your images from the Snyk app](products/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app.md)
+    * [Analysis and fixes for your images from the Snyk Web UI](products/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app.md)
     * [Base image detection](products/snyk-container/getting-around-the-snyk-container-ui/base-image-detection.md)
     * [Image layer information](products/snyk-container/getting-around-the-snyk-container-ui/image-layer-information.md)
   * [Scan your Dockerfile](products/snyk-container/scan-your-dockerfile/README.md)
@@ -356,7 +356,7 @@
     * [Filter results](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/filter-results.md)
     * [Ignore resources](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/ignore-resources.md)
     * [IAC sources usage](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/iac-sources-usage.md)
-  * [Share CLI results with the Snyk App](products/snyk-infrastructure-as-code/share-cli-results-with-the-snyk-app.md)
+  * [Share CLI results with the Snyk Web UI](products/snyk-infrastructure-as-code/share-cli-results-with-the-snyk-app.md)
 
 ## USING SNYK <a href="#features" id="features"></a>
 

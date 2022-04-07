@@ -1,10 +1,10 @@
 # Fix Pull Requests
 
-From the Snyk app ([app.snyk.io](https://app.snyk.io)), we will go to the **Projects** menu where we can expand each integration and have a holistic view of our project. Here we will select the `package.json` from a project in our list.
+From the Snyk Web UI ([app.snyk.io](https://app.snyk.io)), we will go to the **Projects** menu where we can expand each integration and have a holistic view of our project. Here we will select the `package.json` from a project in our list.
 
 ![](<../../../../.gitbook/assets/Screen Shot 2022-02-02 at 2.29.22 PM.png>)
 
-We are able to view additional context for each identified vulnerability in the report by clicking on **Fix this vulnerability**.&#x20;
+We are able to view additional context for each identified vulnerability in the report by clicking on **Fix this vulnerability**.
 
 ![](<../../../../.gitbook/assets/Screen Shot 2022-02-02 at 3.32.06 PM.png>)
 
@@ -14,6 +14,6 @@ A summary page will appear listing each fix that will be included in your pull r
 
 ![](<../../../../.gitbook/assets/Screen Shot 2022-02-02 at 3.36.26 PM.png>)
 
-Once complete, you will be redirected to your  repo where you can **Approve** and **Merge** your **pull request**.
+Once complete, you will be redirected to your repo where you can **Approve** and **Merge** your **pull request**.
 
 ![](<../../../../.gitbook/assets/Screen Shot 2022-02-02 at 3.39.05 PM.png>)

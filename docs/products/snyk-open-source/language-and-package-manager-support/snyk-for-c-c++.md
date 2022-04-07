@@ -302,9 +302,9 @@ Alternatively, you can run just `snyk test --unmanaged <directory>`
 
 Specify the maximum level of archive extraction. Use `0` to disable archive extraction completely.
 
-### Import scan results in Snyk App
+### Import scan results in the Snyk Web UI
 
-To import the test results (issues and dependencies) in Snyk App run the `snyk monitor --unmanaged` command:
+To import the test results (issues and dependencies) in the Snyk Web UI, run the `snyk monitor --unmanaged` command:
 
 ```
 $ snyk monitor --unmanaged
@@ -315,9 +315,9 @@ Explore this snapshot at https://app.snyk.io/org/example-org/project/8ac0e233-d0
 Notifications about newly disclosed issues related to these dependencies will be emailed to you.
 ```
 
-This creates a snapshot of dependencies and vulnerabilities and imports them into the Snyk App, where you can review the issues and see them included in your reports.
+This creates a snapshot of dependencies and vulnerabilities and imports them into the Snyk Web UI, where you can review the issues and see them included in your reports.
 
-Importing a project with unmanaged dependencies creates a new project in Snyk App:
+Importing a project with unmanaged dependencies creates a new project:
 
 ![Project with unmanaged dependencies](../../../.gitbook/assets/kuva.png)
 

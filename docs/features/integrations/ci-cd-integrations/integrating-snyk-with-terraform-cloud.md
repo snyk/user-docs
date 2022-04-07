@@ -9,7 +9,7 @@
 * Have Terraform Cloud manage the remote operations against the cloud providers in an automated way, similar to a CI/CD pipeline, for applying changes to cloud infrastructure using Terraform
 
 {% hint style="info" %}
-This feature is available and enabled for users of the Hashicorp **Business tier** plan**.**  If you are on a lower Hashicorp plan, you must sign up for access to the private beta feature flag in the [**Terraform Cloud Beta Sign Up form**](http://hashi.co/tfc-beta).
+This feature is available and enabled for users of the Hashicorp **Business tier** plan\*\*.\*\* If you are on a lower Hashicorp plan, you must sign up for access to the private beta feature flag in the [**Terraform Cloud Beta Sign Up form**](http://hashi.co/tfc-beta).
 {% endhint %}
 
 ## **Snyk integration with Terraform Cloud overview**
@@ -27,10 +27,10 @@ If you are a user of Terraform Cloud, you can sign up with Snyk to set the integ
 ## **How to set up and use the integration between Snyk and Terraform Cloud**
 
 {% hint style="warning" %}
-You must be an administrator on the Snyk organization to  configure the Terraform Cloud integration.
+You must be an administrator on the Snyk organization to configure the Terraform Cloud integration.
 {% endhint %}
 
-Navigate to the dedicated Terraform Cloud integration settings page, under the Integrations page in the Snyk app and follow these steps:
+Navigate to the dedicated Terraform Cloud integration settings page, under the **Integrations** page in the Snyk Web UI, then follow these steps:
 
 ### Set up Terraform plan scanning
 

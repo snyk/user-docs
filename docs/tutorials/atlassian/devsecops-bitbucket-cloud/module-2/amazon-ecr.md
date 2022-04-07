@@ -5,7 +5,7 @@ To enable the integration between Amazon ECR and Snyk, we will take advantage of
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/quickstart-snyk-security-ecr.png)
 
 {% hint style="success" %}
-Snyk's integration for Amazon Elastic Container Registry \(ECR\) is enabled between one Amazon ECR registry and one Snyk organization. To integrate with multiple registries, create a unique Snyk organization for each registry.
+Snyk's integration for Amazon Elastic Container Registry (ECR) is enabled between one Amazon ECR registry and one Snyk organization. To integrate with multiple registries, create a unique Snyk organization for each registry.
 {% endhint %}
 
 ## Obtain your Snyk API token
@@ -21,9 +21,9 @@ You have the option of establishing cross-account access to enable Snyk's Amazon
 * Create stack, click **Next**
 * Specify stack details, click **Next**
 * Configure stack options, click **Next**
-* Scroll to bottom section under **Capabilities** and check the box and click **Create stack** 
+* Scroll to bottom section under **Capabilities** and check the box and click **Create stack**
 
-When you are ready, [click here to deploy](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/template?stackName=Snyk-Security-ECR&templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-snyk-security/templates/snyk-ecr.yaml)!
+When you are ready, [click here to deploy](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/template?stackName=Snyk-Security-ECR\&templateURL=https://aws-quickstart.s3.amazonaws.com/quickstart-snyk-security/templates/snyk-ecr.yaml)!
 
 {% hint style="warning" %}
 The installation takes approximately 1 minute to complete.
@@ -37,7 +37,7 @@ When complete, the AWS CloudFormation template will provide two necessary values
 
 ### Accessing the integrations menu
 
-From the Snyk app, navigate to the **Integrations** menu then click **ECR**.
+From the Snyk Web UI, navigate to the **Integrations** menu then click **ECR**.
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-ecr-integration-02.png)
 
@@ -60,4 +60,3 @@ You will be able to browse all repositories associated with the AWS region selec
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-ecr-integration-05.png)
 
 Let's proceed to the next section.
-

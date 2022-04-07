@@ -25,6 +25,6 @@ This allows you to see vulnerability counts in minor and major upgrades, as well
 
 ![](../../../.gitbook/assets/base-image2.png)
 
-See [Analysis and fixes for your images from the Snyk app](analysis-and-remediation-for-your-images-from-the-snyk-app.md) for more details.
+See [analysis-and-remediation-for-your-images-from-the-snyk-app.md](analysis-and-remediation-for-your-images-from-the-snyk-app.md "mention") for more details.
 
 You can find the base image vulnerabilities in your project, among the vulnerabilities added by your instructions, sorted by their priority score. You can also filter only the base image vulnerabilities, with the **Base image** option under the **Image Layer** handy filter. See [image layer information](image-layer-information.md) for more details.

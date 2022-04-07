@@ -33,11 +33,11 @@ Explore this snapshot at https://app.snyk.io/org/my-org/project/29361c2c-9005-46
 Notifications about newly disclosed issues related to these dependencies will be emailed to you.
 ```
 
-You can log in to the Snyk app and navigate to the [Projects page](https://app.snyk.io/projects) to see the latest snapshot and scan results as shown in the following screenshot.
-
-For more information see [Monitor your projects at regular intervals](../secure-your-projects-in-the-long-term/monitor-your-projects-at-regular-intervals.md).
+You can log in to the Snyk Web UI, and navigate to the [Projects page](https://app.snyk.io/projects) to see the latest snapshot and scan results:
 
 ![Snyk monitor snapshot and scan results](<../../.gitbook/assets/monitor (1).png>)
+
+For more information see [Monitor your projects at regular intervals](../secure-your-projects-in-the-long-term/monitor-your-projects-at-regular-intervals.md).
 
 ## Running out of tests
 
