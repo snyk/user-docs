@@ -13,13 +13,14 @@ Tests may be limited on your account; see [What counts as a test?](https://suppo
 
 ### Run tests with the CLI
 
-With our [**CLI**](https://snyk.io/docs/using-snyk): you can use the following commands:
+With the Snyk [CLI](../../snyk-cli/cli-reference/) you can use the following commands:
 
-* Scan open-source code with **snyk test**.
-* Scan container images with **snyk container test**.
-* Scan Infrastructure as Code (IaC) files with **snyk iac test**.
+* Scan open-source code with `snyk test`.
+* Scan application code with [snyk code test](running-tests.md#run-tests-manually).
+* Scan container images with `snyk container test`.
+* Scan Infrastructure as Code (IaC) files with `snyk iac test`.
 
-See [Getting started with the CLI](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli) for details.
+See [Getting started with the CLI](../../snyk-cli/getting-started-with-the-cli/) for details.
 
 ### Run tests with the Snyk Web UI
 
@@ -31,7 +32,7 @@ See [Getting started with Snyk products](../../getting-started/getting-started-s
 
 Tests are counted when calls are made to the [**https://snyk.io/api/v1/test**](https://snyk.io/api/v1/test) endpoint.
 
-See [API documentation](https://github.com/snyk/user-docs/tree/54e0dec0fe0e081d49f34119a9018499ad5c9e96/introducing-snyk/snyks-core-concepts/running-tests/README.md) for details.
+See [API documentation](https://snyk.docs.apiary.io/#) for details.
 
 ## Run tests automatically
 
