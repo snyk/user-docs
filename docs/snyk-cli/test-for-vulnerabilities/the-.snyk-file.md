@@ -17,15 +17,16 @@ The `.snyk` policy file in a project is used to apply ignores and other settings
 * The `.snyk` file defines **Snyk patches** to be applied at build time, to resolve vulnerabilities that cannot be fixed with upgrades.
 * The `.snyk` file defines **Ignores**.
   * Snyk checks the Snyk database and the `.snyk` policy file for ignore rules when performing CLI and CI/CD scanning.
-  * The `.snyk` policy file is used to apply ignores and other settings for the `snyk test` and `snyk monitor` commands, as well as any tests through the API or website.
-  * **Note**: if **admin users only** is enabled (**Settings > General > Ignores**), the ignore rules in the database are used, unless there is a `.snyk` file in the project. If there a `.snyk` file in the project, \*\*\*\* `snyk test` uses that file as the ignore mechanism, instead of the ignores set from the web UI.
-  * Developers can ignore issues by using the `.snyk` policy file when running`snyk monitor`.
+  * The `.snyk` policy file is used to apply ignores and other settings for the `snyk test` and `snyk monitor` commands, as well as any tests through the API or website.\
+    **Note**: If **admin users only** is enabled (**Settings > General > Ignores**), the ignore rules in the database are used, unless there is a `.snyk` file in the project. If there is a `.snyk` file in the project, `**** snyk test` uses that file as the ignore mechanism, instead of the ignores set from the web UI.
+  * Developers can ignore issues by using the `.snyk` policy file when running `snyk monitor`.
   * When the `.snyk` file is included in a Source Control Management (SCM) project, Snyk considers both the database ignores and the `.snyk` ignores.
 * The `.snyk` file defines certain **analysis configuration items** such as `language settings:` (Python version).
   * CLI and CI/CD: the `language settings:` for the current project
   * SCM scans (for example, GitHub): the Snyk web UI currently limits users to setting Python versions at the organization level. When you include the `.snyk` file in your code repository and the `language settings:` value is set, then when you run code repository scans you gain the advantage of creating project-level Python settings. You may need to re-import the project if the `.snyk` file was not present at the initial import of the project into Snyk.
+*   The `.snyk` file can also be used to **exclude directories and files from repositories that are imported to Snyk for the Snyk Code testing**. For detailed instructions on using the Exclude from Import option in the `.snyk` file, see [Excluding directories and files from the import process](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/excluding-directories-and-files-from-the-import-process).
 
-## .snyk file creation
+    **Note:** The Exclude from Import option in the `.snyk` file is only supported in Snyk Code, and only for imports that are performed via the Snyk Web UI.
 
 The `.snyk` file can be created in a number of ways:
 
