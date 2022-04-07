@@ -177,30 +177,6 @@ ignore:
         expires: 2020-11-07T11:38:28.614Z
 ```
 
-### Excluding ﬁles and folders from Snyk Code analysis
-
-**Note**: Only Git and CLI integrations currently support excludes for Snyk Code analysis. IDE support is planned for the future.&#x20;
-
-Using the following code you can add shell-style patterns under the `exclude.code` section of the `.snyk` file:
-
-```
-# Snyk (https://snyk.io) policy file
-version: v1.14.0
-
-exclude:
-   code:
-     - test.spec.ts
-     - tests/*.ts
-     - “**/*.spec.ts”
-     - tests?/*
-```
-
-The preceding exclude rules ignore the “test.spec.ts” ﬁle, any ﬁle with the “.ts” extension under “tests,” any ﬁle ending with “.spec.ts” from any directory, and any ﬁle found under “test” or “tests.”
-
-Any rule beginning with asterisk(s) must be wrapped in quotes, for example, `”*/src”`.
-
-For more information about the shell pattern syntax, see the [GNU doc](https://www.gnu.org/software/findutils/manual/html\_node/find\_html/Shell-Pattern-Matching.html).
-
 ## .snyk related CLI commands
 
 The `snyk policy` command displays the `.snyk` policy for a package.
