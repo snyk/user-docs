@@ -80,9 +80,18 @@ We know how important it is for you to protect your data. Our products only acce
 
 ![](https://snyk.io/wp-content/uploads/shield-snyk-iac.svg)
 
-* CLI scans are performed locally. The contents of your files are not shared or stored with Snyk.
-* For Git-based scans, Snyk accesses Infrastructure as Code files, stores them for a short period of time for analysis, and subsequently completely deletes them from our system. Outside of scans, IaC files are not stored by Snyk.
-* In the Snyk UI for Infrastructure as Code there is a side-by-side code review interface. Snyk generates this view dynamically using the provided source code repository integration - your source code is not stored by Snyk.
+
+
+**Snyk does not store your Infrastructure as Code files or collect cloud credentials.**&#x20;
+
+**See the following for specific details:**
+
+* CLI scans are performed locally. The contents of your files are not shared or stored by Snyk.
+* Git-based scans require access to your Infrastructure as Code files. Snyk stores them for the duration of the analysis and subsequently deletes them from our system. Your IaC files are not stored by Snyk.
+* Highlighted code snippets in the Snyk UI are generated dynamically, leveraging git-based scans from the provided source code repository integration. Your code snippets and IaC files are not stored by Snyk.
+* Drift detection scans rely on the principle of least privilege.
+  * Snyk does not require authorized access to your applications. Additionally, cloud credentials are never collected or stored by Snyk.
+  * Snyk requires local read-only Terraform states access. The states are never transmitted to or analyzed by Snyk.
 {% endtab %}
 {% endtabs %}
 
