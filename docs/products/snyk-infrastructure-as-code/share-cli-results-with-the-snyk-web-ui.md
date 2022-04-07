@@ -2,12 +2,11 @@
 
 ### Introduction
 
-You can use the `snyk iac test` command to address known configuration issues in the Snyk CLI (see [snyk-cli](../../snyk-cli/ "mention")).&#x20;
+You can use the `snyk iac test` command to address known configuration issues in the [Snyk CLI](../../snyk-cli/).
 
-To see these issues displayed in the Snyk Web UI, run one of the following CLI commands:
+To see these issues displayed in the Snyk Web UI, run the following CLI command:
 
-* `snyk iac test myproject --report`&#x20;
-* `snyk iac report myproject`
+`snyk iac test myproject --report`&#x20;
 
 ### Example
 
@@ -34,7 +33,7 @@ Tested arm-file.tf for known issues, found 1 issues
 Your test results are available at: https://app.snyk.io/org/my.org/projects under the name myproject
 ```
 
-This sends a snapshot of your current configuration issues to your Snyk dashboard, to view i the Snyk Web UI.&#x20;
+This sends a snapshot of your current configuration issues to your Snyk dashboard, to view in the Snyk Web UI.&#x20;
 
 ### Viewing snapshots in the Snyk Web UI
 

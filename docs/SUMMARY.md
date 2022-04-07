@@ -56,7 +56,6 @@
     * [IAC](snyk-cli/commands/iac.md)
     * [IAC describe](snyk-cli/commands/iac-describe.md)
     * [IAC update-exclude-policy](snyk-cli/commands/iac-update-exclude-policy.md)
-    * [IAC report](snyk-cli/commands/iac-report.md)
     * [IAC test](snyk-cli/commands/iac-test.md)
     * [Ignore](snyk-cli/commands/ignore.md)
     * [Log4shell](snyk-cli/commands/log4shell.md)
