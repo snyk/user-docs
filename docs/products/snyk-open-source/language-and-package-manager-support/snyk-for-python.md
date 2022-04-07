@@ -1,7 +1,7 @@
 # Snyk for Python
 
 {% hint style="success" %}
-Snyk provides security scanning on projects for vulnerabilities through our CLI and the application UI (app.snyk.io).
+Snyk provides security scanning on projects for vulnerabilities through the Snyk CLI and the Snyk Web UI (app.snyk.io).
 {% endhint %}
 
 The following describes how to use Snyk to scan Python projects:

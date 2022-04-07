@@ -77,7 +77,7 @@ After the plugin is installed, you are prompted to authenticate and connect the 
 
 ![Prompt to authenticate and start testing your code.](<../../../.gitbook/assets/Screenshot 2022-02-10 at 17.07.52.png>)
 
-Click **Test code now**. The plugin relies on the Snyk CLI, which authenticates your machine against the Snyk web application.
+Click **Test code now**. The plugin relies on the Snyk CLI, which authenticates your machine against the Snyk Web UI.
 
 Click **Authenticate** when prompted by Snyk.
 
@@ -198,7 +198,7 @@ You can filter for each one of them by selecting the value from the dropdown as 
 
 After the plugin is installed, you can set the following configurations for the plugin, using **Preferences → Tools → Snyk**:
 
-* **Token**: the token that should be used for authentication with Snyk (can be generated through the Account Settings in the Snyk web app)
+* **Token**: the token that should be used for authentication with Snyk (can be generated through the Account Settings in the Snyk Web UI)
 * **Custom endpoint**: custom endpoint for the Snyk Web UI, if needed
 * **Ignore unknown CA**: for ignoring the SSL cert, if needed
 * **Organization**: the org to run Snyk test against (similar to the `--org=` option in the CLI).

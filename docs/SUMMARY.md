@@ -356,7 +356,7 @@
     * [Filter results](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/filter-results.md)
     * [Ignore resources](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/ignore-resources.md)
     * [IAC sources usage](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/iac-sources-usage.md)
-  * [Share CLI results with the Snyk Web UI](products/snyk-infrastructure-as-code/share-cli-results-with-the-snyk-app.md)
+  * [Share CLI results with the Snyk Web UI](products/snyk-infrastructure-as-code/share-cli-results-with-the-snyk-web-ui.md)
 
 ## USING SNYK <a href="#features" id="features"></a>
 

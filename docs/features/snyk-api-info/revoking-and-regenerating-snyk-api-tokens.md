@@ -6,7 +6,7 @@ When an API token is revoked, all integrations using that key will immediately s
 
 If you suspect an API token has been leaked, it's good practice to revoke it and generate a new one to use in its place.
 
-To revoke your Snyk user API token, navigate to your User Account Settings at [app.snyk.io/account](https://app.snyk.io/account).
+To revoke your Snyk user API token, navigate to your User Account Settings in the Snyk Web UI, at [app.snyk.io/account](https://app.snyk.io/account).
 
 ![api token screen; revoke; regenerate; click to show](<../../.gitbook/assets/uuid-8d94edf8-b42b-e5b3-ada1-e157d18ff884-en (1) (2) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (12).png>)
 

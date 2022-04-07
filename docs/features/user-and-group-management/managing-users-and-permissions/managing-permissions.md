@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**\
 Our free subscription plan allows you to send up to 200 pending invitations every 7 days, and only has administrator roles. Enterprise plans have administrators and collaborators.\
-&#x20;See [pricing plans](https://snyk.io/plans/) for more details.
+See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 To edit permissions, you will need the relevant permissions yourself--for example, only group admins can assign other users as group admins.
@@ -14,7 +14,7 @@ If your company currently does not have any group admins you will need to ask Sn
 
 To change roles for a user:
 
-1. Click on the **Members** tab in the app (example link: **https://app.snyk.io/org/your-org-name/manage/members**)
+1. Click on the **Members** tab in the Snyk Web UI (example link: **https://app.snyk.io/org/your-org-name/manage/members**)
 2. Find the member to update
 3. Update the role for that member, using the dropdown next to role
 
@@ -40,5 +40,5 @@ To change roles for a user:
 | Set global notifications preferences           | x                   |                            |                           |
 | Access to the account overall reporting        | x                   |                            |                           |
 
-(\*) Only in paid accounts \
+(\*) Only in paid accounts\
 (\*\*) Only in Enterprise Plan
