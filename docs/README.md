@@ -50,4 +50,4 @@ Scan projects, prioritize vulnerabilities, fix issues and get back to developmen
 
 ### Feedback
 
-See an opportunity for us to improve our documentation? [Open an issue against our User Docs GitHub repo](https://github.com/snyk/user-docs/issues) and we'll be in touch. Or [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+See an opportunity for us to improve our documentation? [Open an issue against our User Docs GitHub repo](https://github.com/snyk/user-docs/issues), and we'll be in touch, or [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
