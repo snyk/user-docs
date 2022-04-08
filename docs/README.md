@@ -1,63 +1,53 @@
 # Snyk User Documentation
 
-{% hint style="success" %}
-[Sign up to use Snyk for free!](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)
-{% endhint %}
+### Install snyk
 
-### **What is Snyk?**
+Run the following command from a local terminal:
 
-Snyk is a Developer Security Platform that integrates directly into development tools and automation pipelines, making it easy to find, prioritize, and fix security vulnerabilities in code, dependencies, containers, and infrastructure as code. Backed by industry-leading vulnerability intelligence, and designed by developers for developers, Snyk fits into your development workflow to put security expertise in your toolkit.
+{% tabs %}
+{% tab title="npm" %}
+```
+npm install -g snyk
+```
+{% endtab %}
 
-![](<.gitbook/assets/Screen Shot 2022-02-22 at 8.18.28 AM.png>)
+{% tab title="Linux/Mac" %}
+```
+brew tap snyk/tap
+brew install snyk
+```
+{% endtab %}
 
-### **What products does Snyk offer?**
+{% tab title="Windows" %}
+```
+scoop bucket add snyk https://github.com/snyk/scoop-snyk
+scoop install snyk
+```
+{% endtab %}
+{% endtabs %}
 
-* [Snyk Open Source](https://snyk.io/product/open-source-security-management/): Find and automatically fix open source vulnerabilities
-* [Snyk Code](https://snyk.io/product/snyk-code/): Find and fix vulnerabilities in your application code in real time
-* [Snyk Container](https://snyk.io/product/container-vulnerability-management/): Find and fix vulnerabilities in container images and Kubernetes workloads
-* [Snyk Infrastructure as Code (IaC)](https://snyk.io/product/infrastructure-as-code-security/): Find and fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates.
+### **Authenticate your machine**
 
-You can use the CLI for scanning and monitoring on your local machine and integrate it into your workflow pipeline. You can use the Snyk CLI to scan applications, containers, and infrastructure as code for security vulnerabilities. Install the CLI via npm, Homebrew, Scoop, or manually.
+A Snyk account is required to authenticate, [sign-up for free](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page). Check our plans page for [free tier plan information](https://snyk.io/plans/).
 
-{% content-ref url="snyk-cli/" %}
-[snyk-cli](snyk-cli/)
-{% endcontent-ref %}
+```
+snyk auth
+```
 
-{% embed url="https://snyk.io/blog/snyk-cli-cheat-sheet" %}
+### **Analyze and test your dependencies**
 
-Snyk’s extensibility and API enables developers to tune Snyk’s security automation to their specific workflows--ensuring both a great developer experience and consistent platform governance. Learn more in our [Snyk API documentation](https://snyk.docs.apiary.io/#introduction/api-v3) and see how our customers like [Twilio and Spotify](https://snyk.io/blog/snyk-watcher-keep-snyk-in-sync/) use the Snyk API in their workflows.
+Navigate into your code’s directory and run:
 
-#### V1
+```
+snyk monitor
+```
 
-The Snyk v1 API is available to customers on [paid plans](https://snyk.io/plans) and allows you to programatically integrate with Snyk.
+After scanning your project, you'll be given a URL where you can see the results.
 
-{% embed url="https://snyk.docs.apiary.io" %}
-**V3**
-{% endembed %}
+### Next steps
 
-### **What does it cost?**
+Scan projects, prioritize vulnerabilities, fix issues and get back to development.
 
-Snyk has several [pricing plans](https://snyk.io/plans/) available:
+### Feedback
 
-* **Free**: For individual developers and small teams looking to secure while they build. Limited tests.
-* **Team**: For dev teams looking to build security into their development process with shared visibility into projects. Unlimited tests.
-* **Business**: Empower developers across an organization and provide reporting and advanced controls to manage teams and control to shift security left. Unlimited tests.
-* **Enterprise**: Standardize dev-first security across the enterprise, with centralized policy governance. Unlimited tests.
-
-### **Who uses Snyk?**
-
-Google, Salesforce, Datadog, Atlassian, Twilio, Revolut and many more are using Snyk to secure their code and monitor for vulnerabilities.
-
-### **How do I get started?**
-
-1. [Sign up](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page) and connect to your project.
-2. Run tests against your project.
-3. Review your results to identify vulnerabilities.
-4. Correct these vulnerabilities via Pull Requests.
-5. Remain secure with monitoring.
-
-See [getting-started](getting-started/ "mention") for more details.
-
-{% hint style="info" %}
-For details of Snyk data handling, see [How Snyk handles your data](more-info/how-snyk-handles-your-data.md).
-{% endhint %}
+See an opportunity for us to improve our documentation? [Open an issue against our User Docs GitHub repo](https://github.com/snyk/user-docs/issues) and we'll be in touch. Or [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
