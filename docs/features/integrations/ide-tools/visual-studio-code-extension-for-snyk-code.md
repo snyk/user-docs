@@ -46,6 +46,8 @@ If you are behind a proxy, proxy settings are configured either using VS Code pr
 
 ## Authentication
 
+The extension uses your Snyk API token for authentication. To store the token securely, we utilize [Secret Storage API](https://code.visualstudio.com/api/references/vscode-api#SecretStorage), which uses the system's keychain to manage the token.
+
 ### Logging in
 
 To authenticate follow these steps:
@@ -70,6 +72,13 @@ To re-authenticate with a different account, follow the steps below:
 2. Once logged out, click **Connect VS Code with Snyk** to authenticate with the different account.
 
 ![Snyk: Log Out](../../../.gitbook/assets/logging-out-command.png)
+
+Or you run `Snyk: Set Token` command and set your token in the text field manually.
+
+![](<../../../.gitbook/assets/image (80).png>)
+
+\
+
 
 ## Run analysis
 
