@@ -12,7 +12,7 @@ Click on the entry to view detailed information:
 
 Where:
 
-* **Header**: shows project summary information. See the [View project summary information](view-project-information.md) section.
+* **Header**: shows project summary information. See the **View project summary information** section below.
 * **Issue cards**: show summaries of issues found. See [Issue card information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/issue-card-information).
 * **Views**:
   * **Overview**: shows [project issues, fixes, and dependencies](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-issues-remediations-and-dependencies).
