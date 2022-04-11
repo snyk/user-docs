@@ -53,6 +53,45 @@ You can ignore issues using the Snyk Web UI, or by creating a `.snyk` policy fil
 &#x20;Issues that are ignored by using the `.snyk` policy file can not be unignored in the Snyk web UI.
 {% endhint %}
 
+### Project tags
+
+You can attach tags to the scanned projects using the `--project-tags` flag. The flag accepts a comma-separated list of tags, where each tag is a key-value pair. Keys and values are separated by an `=` sign. The `--project-tags` flag is valid only when used with `--report`.
+
+The following example attaches the tags `department` and `team` to the scanned projects, with values `platform` and `persistence`, respectively.
+
+```
+> snyk iac test myproject --report \
+    --project-tags=department=platform,team=persistence
+```
+
+### Project attributes
+
+You can set attributes for the scanned projects using the `--project-business-criticality`, `--project-environment`, and `--project-lifecycle` tags. These flags are valid only when used with `--report`.
+
+* `--project-business-criticality` accepts a comma-separated list of the following values: `critical`, `high`, `medium`, `low`.
+* `--project-environment` accepts a comma-separated list of the following values: `frontend`, `backend`, `internal`, `external`, `mobile`, `saas`, `onprem`, `hosted`, `distributed`.
+* `--project-lifecycle` accepts a comma-separated list of the following values: `production`, `development`, `sandbox`.
+
+The following example sets the business criticality to `high`, the environment to the values `frontend` and `internal`, and the lifecycle to `development` for each scanned project.
+
+```
+> snyk iac test myproject --report \
+    --project-business-criticality=high \
+    --project-environment=frontend,internal \
+    --project-lifecycle=development
+```
+
+### Target reference
+
+You can set the target reference for the scanned projects using the `--target-reference` flag. This flag is valid only only when used with `--report`.
+
+The following example sets the target reference for the scanned projects to the name of the current Git branch.
+
+```
+snyk iac test myproject --report \
+    --target-reference="$(git branch --show-current)"
+```
+
 ### **Notes**
 
 Using [Custom rules](custom-rules/) and the Share Results functionality together is not currently supported.
