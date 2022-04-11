@@ -157,13 +157,15 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--fail-on=<all|upgradable|patchable>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test)
 
-`--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container)
+`--var-file`: [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)``
 
-`--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container)
+`--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)``
 
-`--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container)
+`--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [iac test](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
-`--project-tags=<TAG>[,<TAG>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container)
+`--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [iac test](https://docs.snyk.io/snyk-cli/commands/iac-test)
+
+`--project-tags=<TAG>[,<TAG>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [iac test](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
 `--tags=<TAG>[,<TAG>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
