@@ -171,6 +171,14 @@ Example, setting to the latest Git tag:
 
 `snyk iac test myproject/ --report --target-reference="$(git describe --tags --abbrev=0)"`
 
+### `--var-file=<PATH_TO_VARIABLE_FILE>`
+
+Use this option to load a terraform variable definitions file that is located in a different directory from the scanned one.
+
+Example:&#x20;
+
+`$ snyk iac test myproject/staging/networking --var-file=myproject/vars.tf`
+
 ## Examples for snyk iac test command
 
 For more information see [Snyk CLI for Infrastructure as Code](https://docs.snyk.io/products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code)
