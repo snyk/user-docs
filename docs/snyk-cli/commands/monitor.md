@@ -54,11 +54,11 @@ Use the `--exclude` option with `--detection-depth` to ignore directories at any
 
 Examples:
 
-Exclude any (sub)-folders or files containing `test` as part of the path or name:
+Exclude any (sub-)folders or files containing `test` as part of the path or name:
 
 &#x20;`--exclude=test`
 
-Exclude any (sub)-folders or files containing `fixtures` or `debug` as part of the path or name:
+Exclude any (sub-)folders or files containing `fixtures` or `debug` as part of the path or name:
 
 `--exclude=fixtures,debug`&#x20;
 
