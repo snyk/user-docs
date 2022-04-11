@@ -302,6 +302,12 @@ Alternatively, you can run just `snyk test --unmanaged <directory>`
 
 Specify the maximum level of archive extraction. Use `0` to disable archive extraction completely.
 
+#### project-name
+
+`--project-name=c-project`
+
+When used with the `snyk monitor --unmanaged` command, you can override the default name Snyk gives your snapshots by entering your desired name using the `--project-name` flag.
+
 ### Import scan results in the Snyk Web UI
 
 To import the test results (issues and dependencies) in the Snyk Web UI, run the `snyk monitor --unmanaged` command:
