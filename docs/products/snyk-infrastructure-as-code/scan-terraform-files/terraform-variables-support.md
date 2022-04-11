@@ -20,17 +20,25 @@ Snyk currently supports:
 * [Input Variables](https://www.terraform.io/language/values/variables)
 * [Local Values](https://www.terraform.io/language/values/locals)
 
-At this time Snyk does not support:
+At this time Snyk does not support [Output Values](https://www.terraform.io/language/values/outputs).
 
-* [Output Values](https://www.terraform.io/language/values/outputs)
-
-The CLI scans all of your directories and handles each directory that includes supported TF files as it own module. Each module that includes variables is dereferenced appropriately. &#x20;
+The CLI scans all of your directories and handles each directory that includes supported TF files as it own module. Each module that includes variables is dereferenced appropriately.
 
 Supported TF file formats are `.tf`, `.tfvars`,`.auto.tfvars`.\
 Snyk currently dos not support variables that were set/defined using environment variables or the\
 `--var` command.
 
 The scan handles [variable definition precedence](https://www.terraform.io/language/values/variables#variable-definition-precedence) in the same way that TF handles the precedence.
+
+**Loading a variable definitions file outside of the scanned directory**
+
+There is also the option to load an external variable definitions file by using the `--var-file` flag, for example:
+
+`snyk iac test myproject/staging/networking --var-file=myproject/vars.tf`
+
+This loads the `vars.tf` definitions file from the `myproject` directory, de-references any variables if they exist, and applies them to the context of the scanned path (`myproject/staging/networking`).
+
+For more information, refer to the `IAC test` [help](../../../snyk-cli/commands/iac-test.md).
 
 ## Supported expressions
 
