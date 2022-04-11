@@ -2,7 +2,7 @@
 
 ### Introduction
 
-You can use the `snyk iac test` command to address known configuration issues in the [Snyk CLI](../../snyk-cli/).
+You can use the [CLI](../../snyk-cli/) `snyk iac test` command to address known configuration issues.
 
 To see these issues displayed in the Snyk Web UI, run the following CLI command:
 
