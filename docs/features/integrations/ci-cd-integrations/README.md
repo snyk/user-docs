@@ -334,7 +334,7 @@ To earn more about CI/CD see [What is CI/CD? CI/CD Pipeline and Tools Explained]
 
 ## Configure your continuous integration
 
-To continuously avoid known vulnerabilities in your dependencies, integrate Snyk into your continuous integration (build) system. In addition to the documentation here, you're also invited to check out integration configuration examples in the Snyk GitHub repository.
+To continuously avoid known vulnerabilities in your dependencies, integrate Snyk into your continuous integration (build) system. In addition to the documentation here, you're also invited to check out [integration configuration examples](https://github.com/snyk/actions#snyk-github-actions) in the Snyk GitHub repository.
 
 ## Set up automatic monitoring
 

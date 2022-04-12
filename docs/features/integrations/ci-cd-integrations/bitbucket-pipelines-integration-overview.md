@@ -80,31 +80,31 @@ The following is the Snyk pipe that should be configured as part of a pipeline Y
 
 variables:
 
-SNYK\_TOKEN: '': It is preferable to encrypt this value and enter the string $SNYK\_TOKEN only in the pipeline. See the table that follows for more information.
+`SNYK_TOKEN: '':` It is preferable to encrypt this value and enter the string $SNYK\_TOKEN only in the pipeline. See the table that follows for more information.
 
-LANGUAGE: '' # Required unless you use the snyk-cli image
+`LANGUAGE: '' # Required unless you use the snyk-cli image.`
 
-\# IMAGE\_NAME: '' # Only required if LANGUAGE set to 'docker'
+`# IMAGE_NAME: '' # Only required if LANGUAGE set to 'docker'`
 
-\# CODE\_INSIGHTS\_RESULTS: '' # Optional. Default: false
+`# CODE_INSIGHTS_RESULTS: '' # Optional. Default: false.`
 
-\# SNYK\_TEST\_JSON\_INPUT: "" # Optional. Default: false
+`# SNYK_TEST_JSON_INPUT: "" # Optional. Default: false.`
 
-\# DONT\_BREAK\_BUILD: '' # Optional
+`# DONT_BREAK_BUILD: '' # Optional.`
 
-\# MONITOR: '' # Optional
+`# MONITOR: '' # Optional.`
 
-\# SEVERITY\_THRESHOLD: '' # Optional
+`# SEVERITY_THRESHOLD: '' # Optional`
 
-\# ORGANIZATION: '' # Optional
+`# ORGANIZATION: '' # Optional.`
 
-\# PROJECT\_FOLDER: '' # Optional
+`# PROJECT_FOLDER: '' # Optional.`
 
-\# TARGET\_FILE: '' # Optional
+`# TARGET_FILE: '' # Optional.`
 
-\# EXTRA\_ARGS: '' # Optional
+`# EXTRA_ARGS: '' # Optional.`
 
-\# DEBUG: '' # Optional
+`# DEBUG: '' # Optional.`
 
 The following table describes the Snyk pipe parameters.
 

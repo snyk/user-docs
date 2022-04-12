@@ -123,8 +123,6 @@ Snyk analysis shows a list of security vulnerabilities and code issues found in 
 
 ![Snyk suggestion information](<../../../.gitbook/assets/image (76) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
 
-![Add a check](<../../../.gitbook/assets/image (62) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10).png>)
-
 ### Snyk analysis panel
 
 The Snyk analysis panel on the left of the preceding code screen shows how much time the analysis took plus a list of issues with the suggestions found for them.
