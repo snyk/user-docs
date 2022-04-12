@@ -5,12 +5,12 @@
 Snyk CLI supports a wide range of different programming languages and package managers for open source dependencies. For a complete list of supported manifest files see [Open source language and package manager support](../../../../products/snyk-open-source/language-and-package-manager-support/).
 
 {% hint style="info" %}
-The CLI defaults to scanning the first supported manifest file it detects. This means you explicitly need to provide the name of the manifest file to scan using the `--file` flag when a project has multiple manifest files.
+The CLI defaults to scanning the first supported manifest file it detects. This means that when a project has multiple manifest files, you must provide the name of the manifest file to scan using the `--file` option.
 {% endhint %}
 
-Note that the Snyk CLI has multiple commands, but for the purpose of scanning you use the `test` command, ensuring you also use the `--json` option to have the output converted to a machine readable format you are able to parse: `snyk test --file=<manifest file> --json`
+Note that the Snyk CLI has multiple commands, but for the purpose of scanning you use the `test` command with the `--json` option to have the output converted to a machine readable format you are able to parse: `snyk test --file=<manifest file> --json`
 
-The test command expects the dependencies to already be installed (that is, scan after `mvn install` or `npm install` have been executed) and for package lock files to be present if relevant. If you try to run the scan before the dependencies are installed you can expect to see an error like this:
+The test command expects the dependencies to be installed already (that is, scan after `mvn install` or `npm install` have been executed) and for package lock files to be present if relevant. If you try to run the scan before the dependencies are installed you can expect to see an error like this:
 
 ```
 ~/git/goof $ snyk test
@@ -64,13 +64,13 @@ For successful runs, you will see a long JSON file similar to the one that follo
 ```
 
 {% hint style="info" %}
-All paying Snyk customers have the license scanning feature included in their plan. The `snyk test` command returns both vulnerability and license violations in the test results. To distinguish a license violation look for: `"type": "license"` inside the record fields.
+All paying Snyk customers have the license scanning feature included in their plan. The `snyk test` command returns both vulnerability and open source license violations in the test results. To distinguish a license violation look for: `"type": "license"` inside the record fields.
 {% endhint %}
 
 ## When to rerun scans <a href="#607b2cd8-2fb5-49ee-8473-319a42b8c421" id="607b2cd8-2fb5-49ee-8473-319a42b8c421"></a>
 
-To make sure you are presenting up to date scan results to users, you must rerun the snyk scan anytime one of the following happens:
+To make sure you are presenting up-to-date scan results to users, you must rerun the snyk scan any time one of the following happens:
 
-* Any of the manifest files have been edited
+* Any of the manifest files have been edited.
 * A day has passed since the last scan. This is needed as the vulnerability database powering the Snyk CLI constantly collects new vulnerabilities which are relevant for the user to see even if they have not edited the manifest file.
-* Any time the user explicitly reinstalls the dependencies (i.e calls `mvn install`) as semvers have flexibility and a reinstall may fetch different dependency versions than were previously installed even without a manifest file change.
+* Any time the user explicitly reinstalls the dependencies (for example, calls `mvn install`) as semvers have flexibility and a reinstall may fetch different dependency versions than were previously installed even without a manifest file change.
