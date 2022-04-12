@@ -181,7 +181,7 @@ These strategies are useful to teams using the Snyk SCA ([Software Composition A
     ```
     snyk test --command=python3
     ```
-* If you scan a Pip project and use the `--file=` option because your manifest file is not the standard `requirements.txt`, you must use the following option to specify Pip as the package manager `--package-manager=pip.`
+* If you scan a Pip project and use the `--file=` option because your manifest file is not the standard `requirement.txt`, you must use the following option to specify Pip as the package manager `--package-manager=pip.`
 
 ### .Net
 

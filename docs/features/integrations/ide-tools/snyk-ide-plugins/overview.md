@@ -23,4 +23,4 @@ In summary the steps are as follows:
 1. Check for the presence of the Snyk CLI or prompt the user to install it (one time).
 2. Check if the user is authenticated to the CLI and run `snyk auth` if not (one time).
 3. Scan every manifest file using `snyk test --file=<manifest file name> --json` parsing the output and incorporating it into the IDE user interface.
-4. Rerun a scan periodically or when a triggering event happens.
+4. Rerun a scan periodically or when a triggering event happens; see [Scanning with IDE plugins](scanning.md#607b2cd8-2fb5-49ee-8473-319a42b8c421).
