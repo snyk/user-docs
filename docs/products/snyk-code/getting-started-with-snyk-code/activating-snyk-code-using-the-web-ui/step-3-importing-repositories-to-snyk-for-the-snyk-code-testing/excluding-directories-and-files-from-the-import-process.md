@@ -69,8 +69,8 @@ For example:
 
 2\.  On the .snyk file, specify the directories and/or files you want to exclude from import according to the following syntax:
 
-```
-// # Snyk (https://snyk.io) policy file
+```yaml
+# Snyk (https://snyk.io) policy file
 exclude:
  global:
    - <Exclusion_rule>
@@ -79,8 +79,8 @@ exclude:
 
 For example:
 
-```
-// # Snyk (https://snyk.io) policy file
+```yaml
+# Snyk (https://snyk.io) policy file
 exclude:
  global:
    - todolist-goof/** 
