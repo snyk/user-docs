@@ -34,7 +34,7 @@ The recommended approach is to test your dependencies via the [Snyk Dep Graph Te
 ### How it works
 
 1. For each type of dependency (e.g. Maven, Cocoapods), create a [Dep Graph JSON object](https://github.com/snyk/dep-graph) listing all the dependency packages and versions (see below)
-2.  As part of a Bazel test rule, send this object as a POST request to the [Dep Graph Test API](https://github.com/snyk/dep-graph), (along with your [auth token](https://docs.snyk.io/snyk-api-info/authentication-for-api)), example curl request:
+2.  As part of a Bazel test rule, send this object as a POST request to the [Dep Graph Test API](https://snyk.docs.apiary.io/#reference/test/dep-graph), (along with your [auth token](https://docs.snyk.io/snyk-api-info/authentication-for-api)), example curl request:
 
     ```
     curl -X POST 'https://snyk.io/api/v1/test/dep-graph' \
@@ -42,7 +42,7 @@ The recommended approach is to test your dependencies via the [Snyk Dep Graph Te
       -H 'Content-Type: application/json; charset=utf-8' \
       -d @dep-graph.json
     ```
-3. Check the [API response](https://support.snyk.io/hc/en-us/articles/360011549737-Snyk-for-Bazel#h\_01EEWP8F4MK9MFJT5X0A4ZGS93) for pass/fail status and any resulting vulnerabilities
+3. Check the [API response](snyk-for-bazel.md#snyk-dep-graph-test-api-response) for pass/fail status and any resulting vulnerabilities
 
 ### Snyk Dep Graph Test API
 
