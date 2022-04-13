@@ -61,7 +61,7 @@ After the identity provider is set up to acknowledge Snyk, now obtain the follow
 
 Click **create a connection** to establish trust on the service-provider side:
 
-![](<../../../.gitbook/assets/image (66) (1).png>)
+![](<../../../.gitbook/assets/image (66) (1) (1).png>)
 
 Provide SAML attributes in the below form.
 

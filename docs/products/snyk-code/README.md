@@ -6,7 +6,7 @@ The problem with traditional SAST products is that they do not work for develope
 
 ### Developer-first approach
 
-Snyk Code is developer-first--embedding [SAST](https://snyk.io/learn/application-security/sast-vs-dast/) as part of the development process, enabling developers to build software securely during development, and not trying to find and fix problems after the code is compiled. Snyk Code works in the IDEs and SCMs developers use to build and review software and provides fast, actionable, meaningful results to fix issues in real-time.
+Snyk Code is developer-first--embedding [SAST](https://snyk.io/learn/application-security/static-application-security-testing/) as part of the development process, enabling developers to build software securely during development, and not trying to find and fix problems after the code is compiled. Snyk Code works in the IDEs and SCMs developers use to build and review software and provides fast, actionable, meaningful results to fix issues in real-time.
 
 ### Unparalleled accuracy
 

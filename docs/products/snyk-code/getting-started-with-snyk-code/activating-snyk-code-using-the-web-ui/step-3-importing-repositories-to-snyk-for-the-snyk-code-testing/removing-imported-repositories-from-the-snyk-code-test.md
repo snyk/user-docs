@@ -35,7 +35,7 @@ To deactivate or delete an imported repository, you need to select all the Proje
 
 **To deactivate or delete multiple Snyk Projects:**
 
-1\.  On the Snyk Web UI, click the **Org** **Settings** button ![](<../../../../../.gitbook/assets/Snyk Code - Org Settings button - Icon.png>) on the top menu:
+1\.  On the Snyk Web UI, click the **Org** **Settings** button <img src="../../../../../.gitbook/assets/Snyk Code - Org Settings button - Icon.png" alt="" data-size="line"> on the top menu:
 
 ![](<../../../../../.gitbook/assets/Snyk Code - Org Settings button - with Projects .png>)
 

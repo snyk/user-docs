@@ -12,7 +12,7 @@ If your Snyk Account includes repositories that were imported to it before the *
 
 3\.  In the **Personal and Organization repositories** page, select the checkboxes of the repositories you want to re-import to Snyk:
 
-**Note**: The repositories you already imported are indicated with a check mark ![](<../../../../../.gitbook/assets/Snyk Code - Add Repositories dialog box - Check Mark.png>).
+**Note**: The repositories you already imported are indicated with a check mark <img src="../../../../../.gitbook/assets/Snyk Code - Add Repositories dialog box - Check Mark.png" alt="" data-size="line">.
 
 ![](<../../../../../.gitbook/assets/Snyk Code - Re-importing - Existing repositories.png>)
 
