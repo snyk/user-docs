@@ -34,7 +34,7 @@ exclude:
 
 &#x20;  <mark style="color:green;"># Exclude files with a specific ending in any directory. For example, - “\*\*/\*.spec.ts”</mark>
 
-&#x20;  \- “\*\*/\*.ending.ext”
+&#x20;  \- "\*\*/\*.ending.ext"
 
 &#x20; <mark style="color:green;"># Exclude files in directories that have the same name with a different ending, like “test” and “tests”. The last character before the question mark is optional.  For example, - tests?/\*</mark>
 
