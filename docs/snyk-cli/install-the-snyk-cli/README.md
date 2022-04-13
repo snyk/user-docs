@@ -48,7 +48,7 @@ You can also use these direct links to download the executables:
 
 ## Install with Homebrew (macOS, Linux)
 
-Install Snyk CLI from [Snyk tap](https://github.com/snyk/homebrew-tap) with [Homebrew](https://brew.sh) by running:
+Install Snyk CLI from [Snyk's tap](https://github.com/snyk/homebrew-tap) with [Homebrew](https://brew.sh) by running the following. The tap is updated daily with the latest Snyk CLI release.
 
 ```bash
 brew tap snyk/tap
@@ -57,7 +57,7 @@ brew install snyk
 
 ## Install with Scoop (Windows)
 
-Install Snyk CLI from the [Snyk bucket](https://github.com/snyk/scoop-snyk) with [Scoop](https://scoop.sh) on Windows:
+Install Snyk CLI from [Snyk's bucket](https://github.com/snyk/scoop-snyk) with [Scoop](https://scoop.sh) by running the following. The bucket is updated daily with the latest Snyk CLI release.
 
 ```
 scoop bucket add snyk https://github.com/snyk/scoop-snyk
