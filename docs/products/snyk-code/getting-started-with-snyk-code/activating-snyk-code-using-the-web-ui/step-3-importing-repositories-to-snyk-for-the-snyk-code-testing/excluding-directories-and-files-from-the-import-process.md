@@ -7,7 +7,6 @@ When you import a repository to be tested by Snyk Code, you can exclude certain 
 <mark style="color:red;">**Important!**</mark>
 
 * <mark style="color:red;">In Snyk Code, the .snyk file can ONLY be used for excluding directories and files from import. It CANNOT be used to ignore vulnerabilities or for any other action as in other Snyk products.</mark>
-* <mark style="color:red;">Currently, the Exclude option in the .snyk file is applicable to the Snyk Web UI Environment only. It is NOT applicable to working with Snyk Code via the CLI and IDE Environments.</mark>
 
 ### **The exclusion syntax of the .snyk file**
 
@@ -35,7 +34,7 @@ exclude:
 
 &#x20;  <mark style="color:green;"># Exclude files with a specific ending in any directory. For example, - “\*\*/\*.spec.ts”</mark>
 
-&#x20;  \- “\*\*/\*.ending.ext”
+&#x20;  \- "\*\*/\*.ending.ext"
 
 &#x20; <mark style="color:green;"># Exclude files in directories that have the same name with a different ending, like “test” and “tests”. The last character before the question mark is optional.  For example, - tests?/\*</mark>
 
@@ -70,8 +69,8 @@ For example:
 
 2\.  On the .snyk file, specify the directories and/or files you want to exclude from import according to the following syntax:
 
-```
-// # Snyk (https://snyk.io) policy file
+```yaml
+# Snyk (https://snyk.io) policy file
 exclude:
  global:
    - <Exclusion_rule>
@@ -80,8 +79,8 @@ exclude:
 
 For example:
 
-```
-// # Snyk (https://snyk.io) policy file
+```yaml
+# Snyk (https://snyk.io) policy file
 exclude:
  global:
    - todolist-goof/** 
