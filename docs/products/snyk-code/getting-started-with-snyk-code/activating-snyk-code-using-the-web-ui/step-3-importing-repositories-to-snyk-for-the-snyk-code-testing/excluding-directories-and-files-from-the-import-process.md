@@ -7,7 +7,6 @@ When you import a repository to be tested by Snyk Code, you can exclude certain 
 <mark style="color:red;">**Important!**</mark>
 
 * <mark style="color:red;">In Snyk Code, the .snyk file can ONLY be used for excluding directories and files from import. It CANNOT be used to ignore vulnerabilities or for any other action as in other Snyk products.</mark>
-* <mark style="color:red;">Currently, the Exclude option in the .snyk file is applicable to the Snyk Web UI Environment only. It is NOT applicable to working with Snyk Code via the CLI and IDE Environments.</mark>
 
 ### **The exclusion syntax of the .snyk file**
 
