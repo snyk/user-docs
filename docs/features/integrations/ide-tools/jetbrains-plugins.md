@@ -47,7 +47,7 @@ Install using the IDE plugins library:
 5. Click on the **Install** button.
 6. When the installation is complete, restart the IDE.
 
-![Select the Snyk vulnerability scanning plugin](<../../../.gitbook/assets/Screen Shot 2022-03-09 at 5.06.13 PM (1).png>)
+![Select the Snyk vulnerability scanning plugin](<../../../.gitbook/assets/Screen Shot 2022-03-09 at 5.06.13 PM (1) (1).png>)
 
 ## Configuration
 
@@ -209,7 +209,7 @@ After the plugin is installed, you can set the following configurations for the 
 * **Snyk Code Security issues**: analyze the project for security vulnerabilities in your application code using Snyk Code; enabled by default
 * **Snyk Code Quality issues**: analyze the project for quality issues in your application code using Snyk Code; disabled by default
 
-### Support  and contact information
+### Support and contact information
 
 {% hint style="info" %}
 Need more help? [Contact Snyk support](https://support.snyk.io/hc/en-us/requests/new).

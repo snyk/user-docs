@@ -10,7 +10,7 @@ This feature is available in Business and Enterprise plans. See [pricing plans](
 1. Click on **Integrations** tabs
 2. Select **Container orchestrators**
 
-****![](<../../../../.gitbook/assets/image (66).png>)****
+![](<../../../../.gitbook/assets/image (66) (3).png>)
 
 3\. Click **Connect**
 

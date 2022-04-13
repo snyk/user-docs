@@ -34,7 +34,7 @@ Snyk's Bitbucket Cloud integration allows you to continuously perform security s
 8. Snyk scans the selected repositories for dependency files (such as package.json and pom.xml) in the entire directory tree, and import them to Snyk as projects:
 9. The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
-![](<../../../.gitbook/assets/444 (2) (4) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10).png>)
+![](<../../../.gitbook/assets/444 (2) (4) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (1).png>)
 
 After the integration is done, you can use capabilities as described below.
 
@@ -44,7 +44,7 @@ Snyk produces advanced security reports, allowing you to explore the vulnerabili
 
 This is an example of a project level security report:
 
-![](<../../../.gitbook/assets/mceclip0-22- (2) (5) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (26).png>)
+![](<../../../.gitbook/assets/mceclip0-22- (2) (5) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (26) (1).png>)
 
 ### Projects monitoring and automatic fix pull requests
 

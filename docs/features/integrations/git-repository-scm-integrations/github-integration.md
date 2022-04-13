@@ -38,7 +38,7 @@ Snyk will frequently scan your projects on either a daily or a weekly basis. Whe
 
 You can review and adjust the automatic fix pull request settings by navigating to the GitHub Integration Settings page in Snyk (Settings --> Integration --> GitHub):
 
-![](<../../../.gitbook/assets/mceclip4 (1) (2) (6) (7) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (25).png>)
+![](<../../../.gitbook/assets/mceclip4 (1) (2) (6) (7) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (25) (1).png>)
 
 #### Commit Signing
 
@@ -58,7 +58,7 @@ This is how Snyk pull request checks appear on the Pull Request page on GitHub:
 
 You can review and adjust the pull request tests settings by navigating to the GitHub Integration **Settings** page in Snyk (Settings --> Integration --> GitHub):
 
-![](<../../../.gitbook/assets/mceclip5 (1) (1).png>)
+![](<../../../.gitbook/assets/mceclip5 (1).png>)
 
 ## Required permissions scope for the GitHub integration
 
