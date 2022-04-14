@@ -1,13 +1,15 @@
-# Create a Snyk App with TypeScript
+# Tutorial: create a Snyk App
+
+## Introduction&#x20;
 
 In this tutorial, we'll create a simple Snyk App using TypeScript to show users a list of their projects within Snyk.
 
-## Prerequisites
+#### Prerequisites
 
 * NodeJS
 * A Snyk account
 
-## Configure the basics
+### Configure the basics
 
 To begin, create a directory to house the project somewhere on your device. From within the newly created directory, we'll initialize a `package.json` manifest for our application to keep track of our dependencies and ensure our project is portable.
 

@@ -1,10 +1,10 @@
-# Render Content For Users
+# Render content for users
 
 In the previous module, we covered registering our Snyk App, setting up the authorization flow, and handling user authorization within our App. All of those topics are integral to the functionality of every Snyk App, but they're all what you might call "behind the scenes" topics.
 
 In this module, we'll switch gears to focus on displaying content to the users who have authorized with our Snyk App. Specifically, we want to show unauthorized users a big button they can click to authorize and authorized users a list of their projects from Snyk.
 
-## Add a template engine to the Snyk App
+### Add a template engine to the Snyk App
 
 While Express is perfectly capable of printing content to the screen and even rendering HTML server-side, life is much easier when using a template engine. For this tutorial, we'll be using [EJS](https://ejs.co).
 
@@ -72,7 +72,7 @@ That's really all there is to it.
 
 EJS templates support the concept of partial inclusion. While not strictly necessary, it makes sense to add a subdirectory to our `./src/views` to differentiate partial templates like headers and footers from route templates. For the tutorial, we'll use `./src/views/partials` to store such templates.
 
-## Basic EJS templates
+### Basic EJS templates
 
 The first template we'll create is a partial, which we'll include in the other templates. This `header.ejs` will be the place we link stylesheets and other information that belongs in the `<head>` of an HTML document.
 
@@ -142,7 +142,7 @@ The above templates should be enough to get you started adding your own template
 
 Rendering content for your Snyk App can be as simple or complex as you'd like it to be. Because we're dealing with JavaScript, the options are very flexible!
 
-## Showing users a list of projects
+### Showing users a list of projects
 
 Now that we've got some basic templates, let's take a look at how we can add some functionality to our Snyk App using a User's Snyk data. For this tutorial, we'll be setting up our app to allow users to view all of their projects within Snyk from within our app.
 
@@ -265,7 +265,7 @@ new App([
 );
 ```
 
-## Wrap-up
+### Wrap-up
 
 Using the projects API handler and controller we created in this module, you should have all you need to create your own custom code and make your Snyk App do whatever you'd like it to do.
 

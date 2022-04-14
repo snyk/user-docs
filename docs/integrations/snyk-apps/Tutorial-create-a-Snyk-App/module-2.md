@@ -1,12 +1,12 @@
-# Register the App and Configure User Authorization
+# Register the App and configure user authorization
 
 In the previous sections of this tutorial, we set up our TypeScript project, added an Express server, and configured some basic routing. We'll be building on top of the project we created in the previous sections. It is highly recommended that you complete the previous portions of this tutorial before continuing if you have not done so already.
 
-## Creating and registering a Snyk App
+### Creating and registering a Snyk App
 
 We've made some good progress with our TypeScript application so far, but at the moment, that's all it is - a TypeScript application. To turn it into a bonified Snyk App, we'll need to register our project as a new App using Snyk's API
 
-### Prerequisites
+#### Prerequisites
 
 * A Snyk account with API privileges
 * A [Snyk API Token](https://docs.snyk.io/features/snyk-api-info/authentication-for-api)
@@ -38,9 +38,11 @@ The body of the request requires the following details:
 
 > A note on `scopes`: Once registered, a Snyk Apps `scopes` cannot currently be changed. The only recourse is deleting the Snyk App using the [Delete App](https://snykv3.docs.apiary.io/#reference/apps/single-app-management/delete-app) API endpoint and registering it again as a new Snyk App.
 
-**At the time of this writing, Snyk Apps is still in beta. At the moment, there is only one available scope: `apps:beta`. This scope allows the App to test and monitor existing projects, as well as read information about Snyk organizations, existing projects, issues, and reports.**
+{% hint style="info" %}
+Snyk Apps is currently in beta, with only one available scope: `apps:beta`. This scope allows the App to test and monitor existing projects, as well as read information about Snyk organizations, existing projects, issues, and reports.
 
-**One of the limitations of the Snyk Apps beta is that a Snyk App may only be authorized by users who have administrator access to the organization to which the Snyk App is registered.**
+Currently, a Snyk App may only be authorized by users who have administrator access to the organization to which the Snyk App is registered.
+{% endhint %}
 
 With your API token and `orgId` in hand, perform the following command in your terminal, substituting the values as necessary. For this tutorial, use `http://localhost:3000/callback` for the `redirectUris` value.
 
@@ -63,7 +65,7 @@ The response from Snyk contains two important values necessary to complete our S
 
 Now that we've registered as a Snyk App, we can start adjusting our TypeScript project to allow users to authorize it.
 
-## User authorization with a Snyk App
+### User authorization with a Snyk App
 
 User authentication for Snyk Apps is done by way of a webpage URL containing query parameters that match up with our Snyk App's data. We'll need to replace the query parameter values in this URL and send users to the final link in a web browser. From there they can grant account access to the Snyk App.
 
@@ -80,7 +82,7 @@ Though some of the query parameters may be somewhat obvious, let's go over them.
 * `version`: The current version can be found in [Snyk's API documentation](https://snykoauth2.docs.apiary.io/#reference/apps/app-authorization/authorize-an-app).
 * `scopes` and `redirect_uri`: These values must match what was sent with our registration command from [earlier](module-2.md#registering-our-app-with-snyk).
 * `state`: This is used to carry any App specific state from this `/authorize` call to the callback on the `redirect_uri` (such as a user's ID). It must be verified in our callback to [prevent CSRF attacks](https://datatracker.ietf.org/doc/html/rfc6749#section-10.12).
-* `nonce`: A highly randomized string stored alongside a timestamp on the app side before calling `/authorize`, then verified on the returned access token. This is intended for the Snyk App to have confidence in the security of the response.&#x20;
+* `nonce`: A highly randomized string stored alongside a timestamp on the app side before calling `/authorize`, then verified on the returned access token. This is intended for the Snyk App to have confidence in the security of the response.
 
 Once a connection is complete, the user is redirected to the provided redirect URI (our `/callback` route in this case) with query string parameters `code` and `state` added on, which are necessary for the next steps of authorization.
 
@@ -94,7 +96,7 @@ The access token gets used for future API calls and has a much shorter expiry th
 Both of these tokens should be encrypted before storing them!
 {% endhint %}
 
-## Updating our Snyk App to handle user authorization
+### Updating our Snyk App to handle user authorization
 
 Based on the above information, our Snyk App has some new requirements! Let's outline a few things we'll need to do within our TypeScript app to successfully authorize a Snyk user account with our Snyk app:
 
@@ -848,7 +850,7 @@ export function callSnykApi(tokenType: string, token: string, version: APIVersio
 ...
 ```
 
-## Wrap-up
+### Wrap-up
 
 If you've made it this far, congratulations! You've learned how to register a Snyk App with Snyk, configure the authorization flow, keep the `auth_token` from getting stale, and set up a great starting point using TypeScript!
 
