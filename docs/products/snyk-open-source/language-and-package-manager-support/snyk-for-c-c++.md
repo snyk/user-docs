@@ -53,7 +53,11 @@ The following constraints and limitations are by design. While we may work on im
 
 #### **Dependencies source code needs to be available**
 
-For Snyk CLI to be able to find any dependencies in your source code, the full source code of the dependencies needs to be present in the scanned folder. The following is a typical directory structure Snyk can scan (abbreviated):
+For Snyk CLI to be able to find dependencies in your source code. To do this, enough of the full of the dependencies source code needs to be present in the scanned folder.
+
+Having a large percentage of files in their original (unchanged) form is critical to accurately identify dependencies and report the correct set of vulnerabilities back. Modifying that source code reduces the confidence of the scanning engine resulting in less accurate results. Other potential issues could include dependencies not being identified or being identified incorrectly (as a different version or even a different package).
+
+The example below shows a typical package with dependencies listed:
 
 ```
 c-example
@@ -79,8 +83,6 @@ c-example
 │   │   │   ├── tool_xattr.c
 ...
 ```
-
-Having a large percentage of files in their original (unchanged) form is critical to accurately identify dependencies and so report the correct set of vulnerabilities. If you modify many of the files (or, for example, include only header files), this reduces the confidence of the scanning engine, leading to either dependencies not being identified, or being identified incorrectly (as a different version, or even a different package.
 
 #### Data collection note
 
