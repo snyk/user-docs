@@ -42,7 +42,7 @@ Taking a developer-first approach to security, Snyk integrates with leading IDE,
 
 ### Snyk CLI
 
-You can use the Snyk CLI (Command Line Interface) to scan and monitor on your local machine, and integrate it into your pipeline. You can use the Snyk CLI to scan your applications, containers, and infrastructure as code for security vulnerabilities. You can install the CLI via npm, Homebrew, Scoop, or manually.
+You can use the Snyk CLI (Command Line Interface) to run scans on your local machine, and integrate Snyk into your pipeline. You can use the Snyk CLI to scan your applications, containers, and infrastructure as code for security vulnerabilities. You can install the CLI via npm, Homebrew, Scoop, or manually.
 
 See [snyk-cli](../snyk-cli/ "mention") for more details.
 
@@ -50,4 +50,6 @@ See [snyk-cli](../snyk-cli/ "mention") for more details.
 
 Snyk’s extensibility and API enable developers to tune Snyk’s security automation to their specific workflows, ensuring both developer experience and consistent platform governance.
 
-Learn more in our [Snyk API documentation](https://support.snyk.io/hc/en-us/articles/360000914857-Does-Snyk-have-an-API-) and see how our customers like [Twilio and Spotify](https://snyk.io/blog/snyk-watcher-keep-snyk-in-sync/) use the Snyk API in their workflows.
+See how our customers like [Twilio and Spotify](https://snyk.io/blog/snyk-watcher-keep-snyk-in-sync/) use the Snyk API in their workflows.
+
+See [snyk-api-info](../features/snyk-api-info/ "mention") for more details.
