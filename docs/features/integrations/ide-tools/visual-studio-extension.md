@@ -92,7 +92,7 @@ The extension provides the user with two kinds of results:
 
 ### Snyk Code issues
 
-Snyk Code analysis shows a list of security vulnerabilities and code issues found in the application code. For more details and examples of how others fixed the issue, select a security vulnerability or a code security issue and examine the Snyk suggestion information in the  panel.
+Snyk Code analysis shows a list of security vulnerabilities and code issues found in the application code. For more details and examples of how others fixed the issue, select a security vulnerability or a code security issue and examine the Snyk suggestion information in the panel.
 
 ![Snyk suggestion panel](../../../.gitbook/assets/readme\_image\_3\_1\_3.png)
 
@@ -137,6 +137,12 @@ In the settings, you can also choose which results you want to receive:
 * Open Source vulnerabilities
 * Snyk Code Security vulnerabilities
 * Snyk Code Quality issues
+
+#### Organization setting
+
+This setting allows you to specify an organization slug name to run tests for that organization. The value must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.&#x20;
+
+If not specified, preferred organization as defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
 
 ## Known issue
 

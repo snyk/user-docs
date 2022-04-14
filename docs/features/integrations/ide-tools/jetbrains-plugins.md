@@ -209,6 +209,12 @@ After the plugin is installed, you can set the following configurations for the 
 * **Snyk Code Security issues**: analyze the project for security vulnerabilities in your application code using Snyk Code; enabled by default
 * **Snyk Code Quality issues**: analyze the project for quality issues in your application code using Snyk Code; disabled by default
 
+#### Organization setting
+
+This setting allows you to specify an organization slug name to run tests for that organization. The value must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.&#x20;
+
+If not specified, preferred organization as defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
+
 ### Support and contact information
 
 {% hint style="info" %}
