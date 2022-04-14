@@ -20,7 +20,7 @@ This feature is available in Business and Enterprise plans. See [pricing plans](
 6. Based on your configurations, if vulnerabilities are found, Snyk notifies you via email or Slack so that you can take immediate action.
 
 {% hint style="warning" %}
-In order to maintain the health of the database, any information that relates to a workload that hasn't been **changed or updated for 4 days** would be removed. This could lead to failure on **retesting** the workload.
+In order to maintain the health of the database, any information that relates to a workload that hasn't been **changed or updated for 8 days** would be removed. This could lead to failure on **retesting** the workload.
 {% endhint %}
 
 **Terms and conditions**
