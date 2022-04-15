@@ -36,7 +36,7 @@ Sets the API host to use for Snyk requests. Useful for on-premise instances or w
 
 `SNYK_HTTP_PROTOCOL_UPGRADE=0`
 
-If set to the value of `0`, API requests aimed at `http` URLs are not upgraded to `https`. If not set, the default behavior is to upgrade these requests from `http` to `https`. Useful, for example, for reverse proxies.
+If set to the value of `0`, API (and CLI) requests aimed at `http` URLs are not upgraded to `https`. If the protocol is not set, the default behavior is to upgrade these requests from `http` to `https`. This is useful, for example, for reverse proxies.
 
 `HTTPS_PROXY` and `HTTP_PROXY`
 
