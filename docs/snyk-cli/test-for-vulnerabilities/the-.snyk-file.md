@@ -26,7 +26,7 @@ The `.snyk` policy file in a project is used to apply ignores and other settings
   * SCM scans (for example, GitHub): the Snyk web UI currently limits users to setting Python versions at the organization level. When you include the `.snyk` file in your code repository and the `language settings:` value is set, then when you run code repository scans you gain the advantage of creating project-level Python settings. You may need to re-import the project if the `.snyk` file was not present at the initial import of the project into Snyk.
 *   The `.snyk` file can also be used to **exclude directories and files from repositories that are imported to Snyk for the Snyk Code testing**. For detailed instructions on using the Exclude from Import option in the `.snyk` file, see [Excluding directories and files from the import process](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/excluding-directories-and-files-from-the-import-process).
 
-    **Note:** The Exclude from Import option in the `.snyk` file is only supported in Snyk Code, and only for imports that are performed via the Snyk Web UI.
+    **Note:** The Exclude from Import option in the `.snyk` file is only supported in Snyk Code, and only for imports that are performed via the Snyk Web UI and CLI.
 
 The `.snyk` file can be created in a number of ways:
 
