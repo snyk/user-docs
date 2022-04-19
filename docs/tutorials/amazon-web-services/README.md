@@ -14,3 +14,4 @@ Snyk is an AWS Partner Network \(APN\) [Advanced Technology Partner](https://aws
 * [How SME lender New10 uses AWS and Snyk to deliver quickly and securely](https://snyk.io/blog/how-sme-lender-new10-uses-aws-and-snyk-to-deliver-quickly-and-securely/)
 * [Serverless is great, but what about the security of my AWS Lambda functions and their dependencies?](https://snyk.io/blog/serverless-is-great-but-what-about-the-security-of-my-aws-lambda-functions-and-their-dependencies/)
 
+___
