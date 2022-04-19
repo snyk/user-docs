@@ -310,6 +310,12 @@ Specify the maximum level of archive extraction. Use `0` to disable archive extr
 
 When used with the `snyk monitor --unmanaged` command, you can override the default name Snyk gives your snapshots by entering your desired name using the `--project-name` flag.
 
+#### &#x20;**target-reference**
+
+`--target-reference=<TARGET_REFERENCE>`
+
+When used with the `snyk monitor --unmanaged` command, you can specify a reference which differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference.
+
 ### Import scan results in the Snyk Web UI
 
 To import the test results (issues and dependencies) in the Snyk Web UI, run the `snyk monitor --unmanaged` command:
