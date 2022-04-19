@@ -72,6 +72,16 @@ Next to each repository name, there will be an indication to it's visibility by 
                 "someOrganization/someRepository(Private)"
             ]
         }
+    ],
+    [
+        "anotheruser(duplicate)",
+        {
+            "email": "anotherUser@otherCompany.com",
+            "contributionsCount": 11,
+            "reposContributedTo": [
+                "someOrganization/someRepository(Private)"
+            ]
+        }
     ]
 ]
 ```
@@ -79,6 +89,7 @@ Next to each repository name, there will be an indication to it's visibility by 
 * **`email`** - The email of the contributor
 * **`contributionsCount`** - The number of the times this contributor has contributed to the repo/s
 * **`repoContributedTo`** - A list of the repo/repos that this contributor has contributed to
+* **`(duplicate)`** - Indicates that the same user has been detected from different email addresses, please note that they **will be counted** as different committers.
 
 {% hint style="info" %}
 As the output can be long, we recommend sending the output to a file for better review and parsing options

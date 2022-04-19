@@ -10,10 +10,10 @@ description: The flags for each SCM script
 | **Azure**       | `"token"`           | `"projectKeys"` | `"repo"`    | `"exclusionFilePath"`   | `"json"` | `"skipSnykMonitoredRepos"`    | `"importConfDir"`           | `"importFileRepoType"`        | `"org" [required]`                              |
 | **BB Cloud**    | `"user"/"paasword"` | `"workspaces"`  | `"repo"`    | `"exclusionFilePath"`   | `"json"` | `"skipSnykMonitoredRepos"`    | `"importConfDir"`           | `"importFileRepoType"`        |                                                 |
 | **BB Server**   | `"token"`           | `"projectKeys"` | `"repo"`    | `"exclusionFilePath"`   | `"json"` | `"skipSnykMonitoredRepos"`    | `"importConfDir"`           | `"importFileRepoType"`        | `"url" [required]`                              |
-| **Github**      | `"token"`           | `"orgs"`        | `"repo"`    | `"exclusionFilePath"`   | `"json"` | `"skipSnykMonitoredRepos"`    | `"importConfDir"`           | `"importFileRepoType"`        |                                                 |
-| **Github Ent.** | `"token"`           | `"orgs"`        | `"repo"`    | `"exclusionFilePath"`   | `"json"` | `"skipSnykMonitoredRepos"`    | `"importConfDir"`           | `"importFileRepoType"`        | `"url" [required], "fetchAllOrgs" [optional]**` |
-| **Gitlab**      | `"token"`           | `"groups"`      | `"project"` | `"exclusionFilePath"`   | `"json"` | `"skipSnykMonitoredRepos"`    | `"importConfDir"`           | `"importFileRepoType"`        | \`\`                                            |
-| **Gitlab Ent.** | `"token"`           | `"groups"`      | `"project"` | `"exclusionFilePath"`   | `"json"` | `"skipSnykMonitoredRepos"`    | `"importConfDir"`           | `"importFileRepoType"`        | `"url" [required]`                              |
+| **Github**      | `"token"`           | `"orgs"`        | `"repo"`    | `"exclusionFilePath"`   | `"json"` |      |           |         |                                                 |
+| **Github Ent.** | `"token"`           | `"orgs"`        | `"repo"`    | `"exclusionFilePath"`   | `"json"` |     |           |         | `"url" [required], "fetchAllOrgs" [optional]**` |
+| **Gitlab**      | `"token"`           | `"groups"`      | `"project"` | `"exclusionFilePath"`   | `"json"` |     |            |         |                                           |
+| **Gitlab Ent.** | `"token"`           | `"groups"`      | `"project"` | `"exclusionFilePath"`   | `"json"` |     |            |        | `"url" [required]`                              |
 
 {% hint style="info" %}
 The differences in the flags names are according to their naming at the SCM.\

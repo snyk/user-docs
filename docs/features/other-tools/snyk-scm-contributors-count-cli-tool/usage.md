@@ -25,6 +25,7 @@ snyk-scm-contributors-count <command> <command-options>
 ### Modes
 
 #### Scoping usage prior to onboarding
+**Please note that this feature works only with Bitbucket and Azure**
 
 Apply the `skipSnykMonitoredRepos` flag. For example:
 
