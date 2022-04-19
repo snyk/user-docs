@@ -5,6 +5,7 @@ description: How to use the generated import file with the snyk-api-import tool
 # Creating and using the Import files
 
 ### How it works
+#### **Please note that this feature only works with Bitbucket and Azure** ####
 
 When the **snyk-contributors-count** tool connects both to your Snyk account and your SCM account, it finds out which repos/projects are monitored by Snyk and which are not.
 
