@@ -4,7 +4,7 @@ To associate the Snyk CLI for use with your Snyk account, you must first authent
 
 You can authenticate:
 
-* Through your browser by running `snyk auth` from the CLI; see the [Auth command help](https://docs.snyk.io/features/snyk-cli/commands/auth).
+* Through your browser by running `snyk auth` from the CLI; see the [Auth command help](../commands/auth.md).
 * Using your API token
 * Using the `SNYK_TOKEN` environment variable; see [Configure the Snyk CLI](../configure-the-snyk-cli.md). Use `SNYK_TOKEN` in a CI/CD environment.
 
