@@ -124,7 +124,7 @@ See [using-snyk-code-web.md](../../../products/snyk-code/using-snyk-code-web.md 
 
 When scanning your IaC configuration files using the Snyk CLI with **snyk iac test** you can ignore issues that are not relevant to you.
 
-You can do this by using the [.snyk policy file](../policies/the-.snyk-file.md), which we recommend is stored and versioned in the root of your working directory for where you store your IaC configuration files.
+You can do this by using [the-.snyk-file.md](../../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md "mention"), which we recommend is stored and versioned in the root of your working directory for where you store your IaC configuration files.
 
 See [iac-ignores-using-the-.snyk-policy-file.md](../../../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md "mention")for more details.
 
