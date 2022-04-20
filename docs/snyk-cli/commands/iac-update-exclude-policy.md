@@ -6,7 +6,7 @@
 
 ## Description
 
-The `snyk iac update-exclude-policy` generates exclude policy rules to be used by `snyk iac describe`.
+The `snyk iac update-exclude-policy` generates exclude policy rules to be used by `snyk iac test`.
 
 For a list of related commands see the [snyk iac](iac.md) help; `iac --help`
 
@@ -46,3 +46,4 @@ Exclude resources not managed by IaC.
 ```
 $ snyk iac describe --json --all | snyk iac update-exclude-policy
 ```
+
