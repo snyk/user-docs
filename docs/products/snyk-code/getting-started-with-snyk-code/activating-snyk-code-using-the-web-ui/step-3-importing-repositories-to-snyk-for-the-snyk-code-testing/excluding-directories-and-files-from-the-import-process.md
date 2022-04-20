@@ -7,7 +7,9 @@ When you import a repository to be tested by Snyk Code, you can exclude certain 
 * <mark style="color:red;">In Snyk Code, the .snyk file can ONLY be used for excluding directories and files from import. It CANNOT be used to ignore vulnerabilities or for any other action as in other Snyk products.</mark>
 * <mark style="color:red;">Currently, the Exclude option in the .snyk file is applicable to the Snyk Web UI and CLI Environments. It is NOT applicable to working with Snyk Code via the IDE Environment.</mark>
 
-**Use the following syntax to exclude files and directories via the `.snyk` file:**
+### **The Exclusion Syntax of the .snyk File**
+
+**Use the following syntax to exclude files and directories via the .snyk file:**
 
 <mark style="color:green;"># Snyk (https://snyk.io) policy file</mark>
 
@@ -47,7 +49,11 @@ global:
 * All rules must have a preceding dash to be valid: - \<Exclusion\_rule>
 * Any rule beginning with an asterisk must be wrapped in quotes. For example:\
   \- ”\*/src”
-* When using the syntax in the .snyk YAML file, pay careful attention to new lines and their indentation. Using the wrong indentation will prevent the execution of your excluding specification. To verify that you are using the syntax correctly, you can use a YAML Validator, like the [Code Beautify Org Validator](https://codebeautify.org/yaml-validator).
+* Indentations –
+  * When using the syntax in the .snyk YAML file, pay careful attention to new lines and their indentation. Using the wrong indentation will prevent the execution of your excluding specification.
+  * Do NOT use tabs for indentation. Use only spaces for indentation.
+  * To verify that you are using the syntax correctly, you can use a YAML Validator, like the [YAML Lint](http://www.yamllint.com). Be aware that some YAML Validators do not differentiate between the use of tabs and spaces for indentation. If you use tabs, a Validator may approve the syntax, but the exclude specifications will not be executed.&#x20;
+  * When using the syntax in the .snyk YAML file, pay careful attention to new lines and their indentation. Using the wrong indentation will prevent the execution of your excluding specification.&#x20;
 * For more information on the syntax of shell matching patterns, see for example:
   * GNU Org - [Shell Pattern Matching](https://www.gnu.org/software/findutils/manual/html\_node/find\_html/Shell-Pattern-Matching.html)
   * Docstore - [Pattern Matching Quick Reference with Examples](https://docstore.mik.ua/orelly/unix/upt/ch26\_10.htm)
