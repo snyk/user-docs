@@ -276,7 +276,11 @@ A free web application which allows you to compare software packages across open
 
 ### Snyk API
 
-A Snyk tool, Enables developers to programatically integrate with Snyk. See [Snyk API documentation](https://support.snyk.io/hc/en-us/categories/360000665657-Snyk-API).
+A Snyk tool that enables developers to programmatically integrate with Snyk. See [Snyk API](../features/snyk-api-info/).
+
+### Snyk Apps
+
+Snyk Apps are the modern and preferred way to build integrations with Snyk, exposing fine-grained scopes for accessing resources over the Snyk APIs, powered by OAuth 2.0 for a developer-friendly experience. For more information see [Snyk Apps](https://docs.snyk.io/integrations/snyk-apps).
 
 ### Snyk Broker
 
