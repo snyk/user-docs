@@ -11,8 +11,8 @@ Snyk's Bitbucket Data Center / Server integration allows you to continuously per
 > Make sure the newly created user has **Admin** permissions to all the repositories you need to monitor with Snyk.
 
 1. To give Snyk access to your Bitbucket DC/Server account, set up up a dedicated service account in Bitbucket DC/Server, with admin permissions. Visit [Bitbucket Server documentation ](https://confluence.atlassian.com/bitbucketserver/users-and-groups-776640439.html#Usersandgroups-Creatingauser)to learn more about creating users.
-2. In Snyk, go to the **Integrations** page and click on **Bitbucket Server** card:
-3. Enter your Bitbucket DC/Server URL, and the username and password for the service account you created:
+2. In Snyk, go to the **Integrations** page and click on **Bitbucket Server** card.
+3. Enter your Bitbucket DC/Server URL, and the username and password for the service account you created. Alternatively, you can create a [personal access token](https://confluence.atlassian.com/bitbucketserver075/personal-access-tokens-1018784848.html) and use it instead of a password.
 4. Click **Save**. Snyk connects to your Bitbucket DC/Server instance. When the connection succeeds, the following indications appear:
 
 ![](../../../.gitbook/assets/333.png)
