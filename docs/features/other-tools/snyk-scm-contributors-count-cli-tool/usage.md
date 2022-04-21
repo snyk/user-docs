@@ -25,6 +25,7 @@ snyk-scm-contributors-count <command> <command-options>
 ### Modes
 
 #### Scoping usage prior to onboarding
+
 **Please note that this feature works only with Bitbucket and Azure**
 
 Apply the `skipSnykMonitoredRepos` flag. For example:
@@ -35,7 +36,9 @@ snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password PASSWORD 
 
 #### Snyk license consumption
 
-Make sure to export your SNYK\_TOKEN. For example:
+This mode works only with Bitbucket and Axure.
+
+Make sure to export your `SNYK_TOKEN`, for example:
 
 ```
 export SNYK_TOKEN=<YOUR-SNYK-TOKEN>
@@ -86,11 +89,11 @@ DEBUG=snyk* snyk-scm-contributors-count bitbucket-server --token BITBUCKET-TOKEN
 
 Additional flags can be set to the command:
 
-* **Create an import file with unmonitored repos data to use with the snyk-api-import tool and import the repos to my Snyk account - Apply the `importConfDir`** flag with a path to a valid and writable folder in which to save the import files. This flag correlates with the **`importFileRepoType`** flag.
-* **Choose which types of repos to add to the import file** - Apply the **`importFileRepoType` flag with one of these options : all, private or public**
-* **Exclude committers from being counted** - Apply the **`exclusionFilePath`** flag to the command with a path to text file that contains the emails of the committers that you would like to be excluded from the count.
-* **Output the summary and results in a json format** - Apply the **`json`** flag to the command
+* **Create an import file with unmonitored repos data to use with the snyk-api-import tool and import the repos to my Snyk account. Works only with  Bitbucket and Azure. Apply the `importConfDir`** flag with a path to a valid and writable folder in which to save the import files. This flag correlates with the **`importFileRepoType`** flag.
+* **Choose which types of repos to add to the import file**. **Works only with Bitbucket and Azure.** Apply the **`importFileRepoType` flag with one of these options : all, private or public.**
+* **Exclude committers from being counted.** Apply the **`exclusionFilePath`** flag to the command with a path to a text file that contains the emails of the committers that you would like to be excluded from the count.
+* **Output the summary and results in a json format**. Apply the **`json`** flag to the command.
 
 ## The consolidateResults command
 
-Used for consolidating results from several commands, across different SCMs, into a single file with unique contributors count, refer to the [command page](consolidateResults.md/)
+Used for consolidating results from several commands, across different SCMs, into a single file with unique contributors count, refer to the [command page](consolidateResults.md)
