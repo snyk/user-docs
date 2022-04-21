@@ -2,7 +2,7 @@
 
 You can run the Snyk-to-HTML feature in one command (below), or you can first [test and export the results to a JSON/SARIF file, and then pass the JSON/SARIF file to the Snyk-to-HTML feature](running-the-snyk-to-html-command.md#running-the-snyk-to-html-feature-in-several-steps). When running the snyk-to-html command, you can customize it using its [command options](running-the-snyk-to-html-command.md#snyk-to-html-command-options). After you generated the results in an HTML file, open it in a browser to [view the discovered vulnerabilities with their Data Flow and Fix Analysis information](viewing-the-html-results.md).&#x20;
 
-**Note**: To display the Help information for the Snyk-to-HTML feature in your terminal, use either the `-h` or `--help` options with the snyk-to-html command:&#x20;
+**Note**: To display the Help information for the Snyk-to-HTML feature in your terminal, use either the `-h` or `--help` options with the `snyk-to-html` command:&#x20;
 
 ```
 // snyk-to-html --help
@@ -10,7 +10,7 @@ You can run the Snyk-to-HTML feature in one command (below), or you can first [t
 
 ### **Running the Snyk-to-HTML command in one step**
 
-**Note**: The instructions below use a JSON file, but you can also use a SARIF file.
+**Note**: The instructions below use a JSON file, but you can use a SARIF file as well.
 
 **To run the Snyk-to-HTML feature in one step:**
 
@@ -68,15 +68,15 @@ Where:
 // snyk-to-html -i results.json -o results.html -s
 ```
 
-&#x20;&#x20;
-
-### &#x20;**snyk-to-html command options**
+### **snyk-to-html command options**
 
 You can add the following optional commands to the snyk-to-html command:
 
-| Short  | Long        | Description                                                                                                                                                                                                          | Default                       |
-| ------ | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
-| `-i`   | `--input`   | The input path of the JSON or SARIF file that contains the test results.                                                                                                                                             | Stdin                         |
-| `-o`   | `--output`  | <p>The name of the output file of the HTML results.</p><p>Example:<br><code>-o results.html</code></p>                                                                                                               | Stdout                        |
-| `-s`   | `--summary` | <p>Display only a summary of the test results in an HTML format.</p><p><strong>Note</strong>: The <strong>Data Flow</strong> and <strong>Fix Analysis</strong> options are not available in the Summary display.</p> | Detailed vulnerability Report |
-| `-d`   | `--debug`   | Run the CLI in debug mode.                                                                                                                                                                                           |                               |
+| **Short** | **Long**    | **Description**                                                                                                                                                                                                      | **Default**                   |
+| --------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| `-i`      | `--input`   | The input path of the JSON or SARIF file that contains the test results.                                                                                                                                             | Stdin                         |
+| `-o`      | `--output`  | <p>The name of the output file of the HTML results.</p><p>Example:<br>-o results.html</p>                                                                                                                            | Stdout                        |
+| `-s`      | `--summary` | <p>Display only a summary of the test results in an HTML format.</p><p><strong>Note</strong>: The <strong>Data Flow</strong> and <strong>Fix Analysis</strong> options are not available in the Summary display.</p> | Detailed vulnerability Report |
+| `-d`      | `--debug`   | Run the CLI in debug mode.                                                                                                                                                                                           |                               |
+
+### &#x20;
