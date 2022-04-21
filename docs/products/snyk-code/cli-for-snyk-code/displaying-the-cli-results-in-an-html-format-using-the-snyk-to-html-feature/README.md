@@ -25,9 +25,7 @@ Using the Snyk-to-HTML feature, it is also possible to generate a **Summary** of
 
 The Snyk-to-HTML feature uses the Snyk-to-HTML tool, which you need to download and install before running the snyk-to-html command. Then, you should test your source code with Snyk Code via the CLI, and export the results to a JSON or SARIF file. The snyk-to-html command takes the information on the test results from the JSON/SARIF file, and convert it to an HTML file that can be displayed in a browser. &#x20;
 
-&#x20;
-
-The workflow of using the Snyk-to-HTML feature is as follows:
+**The workflow of using the Snyk-to-HTML feature is as follows:**
 
 1\.  [Installing the Snyk-to-HTML tool via the CLI](installing-the-snyk-to-html-tool.md).&#x20;
 

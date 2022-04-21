@@ -63,7 +63,7 @@ Projects define the items Snyk scans at a given Target. A project includes:
 
 Projects appear on the **Projects** menu on the Snyk dashboard, and on the [Snyk API](https://apidocs.snyk.io/?version=2022-02-16%7Ebeta#tag--Projects):
 
-![](<../../.gitbook/assets/image (76) (1) (2) (1).png>)
+![](<../../.gitbook/assets/image (76) (1) (2) (1) (1).png>)
 
 ## Targetfile
 

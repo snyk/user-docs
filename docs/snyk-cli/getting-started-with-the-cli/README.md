@@ -49,7 +49,9 @@ If you run out of tests on an open source project follow these steps:
 
 ## Additional information
 
-Run `snyk help` or see the [CLI reference](../cli-reference/).
+Run `snyk help` or see the [CLI reference](../cli-reference/)..
+
+See [Introduction to the Snyk CLI](https://training.snyk.io/courses/intro-cli) for a quick video training session.
 
 Snyk also provides a [cheat sheet](https://snyk.io/wp-content/uploads/cheat-sheet-snyk-cli-v3.pdf) ([blog post](https://snyk.io/blog/snyk-cli-cheat-sheet/)) and a [video tutorial](https://www.youtube.com/watch?v=xp\_LtchEkT8).
 
