@@ -14,9 +14,9 @@ You can run the Snyk-to-HTML feature in one command (below), or you can first [t
 
 **To run the Snyk-to-HTML feature in one step:**
 
-1\.    On the terminal, change the directory to the root folder of the repository you want to test.
+1\.  On the terminal, change the directory to the root folder of the repository you want to test.
 
-2\.    In order to test the repository, export the results to a JSON file, and convert it to an HTML file called “**results**”, enter:
+2\.  In order to test the repository, export the results to a JSON file, and convert it to an HTML file called “**results**”, enter:
 
 ```
 // snyk code test --json | snyk-to-html -o results.html code
@@ -68,6 +68,8 @@ Where:
 // snyk-to-html -i results.json -o results.html -s
 ```
 
+****
+
 ### **snyk-to-html command options**
 
 You can add the following optional commands to the snyk-to-html command:
@@ -79,4 +81,3 @@ You can add the following optional commands to the snyk-to-html command:
 | `-s`      | `--summary` | <p>Display only a summary of the test results in an HTML format.</p><p><strong>Note</strong>: The <strong>Data Flow</strong> and <strong>Fix Analysis</strong> options are not available in the Summary display.</p> | Detailed vulnerability Report |
 | `-d`      | `--debug`   | Run the CLI in debug mode.                                                                                                                                                                                           |                               |
 
-### &#x20;
