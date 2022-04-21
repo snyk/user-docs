@@ -65,13 +65,15 @@ Manually pass a path to a `.snyk` policy file.
 
 Print results in JSON format.
 
-Example: `$ snyk iac test --json-file-output=vuln.json`
+Example: `$ snyk iac test --json`
 
 ### `--json-file-output=<OUTPUT_FILE_PATH>`
 
 Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option.
 
 This is especially useful if you want to display the human-readable test output using stdout and at the same time save the JSON format output to a file.
+
+Example: `$ snyk iac test --json-file-output=vuln.json`
 
 ### `--sarif`
 
