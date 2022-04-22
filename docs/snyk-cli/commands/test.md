@@ -111,6 +111,8 @@ Example: `$ snyk test --file=req.txt --package-manager=pip`
 
 For C++ only, scan all files for known open source dependencies.
 
+For options you can use with `--unmanaged` see [Options for scanning using `--unmanaged`](https://docs.snyk.io/snyk-cli/commands/test#options-for-scanning-using-unmanaged)``
+
 For more information see [Snyk for C/C++](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++)
 
 ### `--ignore-policy`
@@ -303,7 +305,13 @@ Currently the following options are not supported:
 
 `--fail-on=<all|upgradable|patchable>`
 
-## Options for scanning using --unmanaged
+## Options for scanning using `--unmanaged`
+
+### ``[`--org=<ORG_ID>`](test.md#org-less-than-org\_id-greater-than)``
+
+### ``[`--json`](test.md#json)``
+
+### [--json-file-output=\<OUTPUT\_FILE\_PATH>](test.md#json-file-output-less-than-output\_file\_path-greater-than)
 
 ### `--target-dir`&#x20;
 
