@@ -1,11 +1,11 @@
-# Snyk Infrastructure as code for self-hosted git (with broker)
+# Snyk Infrastructure as code for self-hosted git (with Broker)
 
-Snyk Broker enables you to connect your local git server to Snyk if the git server is not internet reachable. By default, Snyk Broker only allows information for Snyk Opensource and Dockerfiles to go through. If you want to also analyze Infrastructure as Code files such as `.tf` or `.yaml` then additional configuration is required.&#x20;
+Snyk Broker enables you to connect your local git server to Snyk if the git server is not internet- reachable. By default Snyk Broker allows only information for Snyk Open Source and Docker files to go through. If you also want to analyze Infrastructure as Code files such as `.tf` or `.yaml` then additional configuration is required.
 
-To learn how to configure Snyk broker see the [broker documentation](../../features/integrations/snyk-broker/broker-introduction.md) for details.
+To learn how to configure Snyk Broker see the [Broker documentation](../../features/integrations/snyk-broker/broker-introduction.md).
 
-## Snyk Infrastructure as code configuration
+## Snyk Infrastructure as Code configuration
 
-You will need to grant the broker access to particular files in the repository. This requires specific API permissions. These API permissions are slightly different depending on which source control system you are using.&#x20;
+You must grant Broker access to particular files in the repository. This requires specific API permissions. These API permissions are slightly different depending on which source control system you are using.
 
-To learn what to configure and how, see [Snyk Broker Infrastructure as Code detection ](broken-reference)documentation for more details.
+To learn what to configure and how, see [Snyk Broker Infrastructure as Code detection](../../features/integrations/snyk-broker/snyk-broker-infrastructure-as-code-detection/) documentation.
