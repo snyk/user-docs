@@ -117,7 +117,7 @@ Apply and use ignore rules from the Snyk policies your dependencies; otherwise i
 
 ### `--show-vulnerable-paths=<none|some|all>`
 
-Display the dependency paths from the top level dependencies down to the vulnerable packages. Does not affect output when using JSON `--json` output.
+Display the dependency paths from the top level dependencies down to the vulnerable packages. Not supported with `--json` output.
 
 Default: `some` (a few example paths shown). `false` is an alias for `none`
 
