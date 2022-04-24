@@ -5,7 +5,7 @@ You can run the Snyk-to-HTML feature in one command (below), or you can first [t
 **Note**: To display the Help information for the Snyk-to-HTML feature in your terminal, use either the `-h` or `--help` options with the `snyk-to-html` command:&#x20;
 
 ```
-// snyk-to-html --help
+snyk-to-html --help
 ```
 
 ### **Running the Snyk-to-HTML command in one step**
@@ -19,7 +19,7 @@ You can run the Snyk-to-HTML feature in one command (below), or you can first [t
 2\.  In order to test the repository, export the results to a JSON file, and convert it to an HTML file called “**results**”, enter:
 
 ```
-// snyk code test --json | snyk-to-html -o results.html code
+snyk code test --json | snyk-to-html -o results.html code
 ```
 
 Where:
@@ -47,13 +47,13 @@ You can run the Snyk-to-HTML feature in several steps. First, you need to test t
 **Note**: You can change the name of the JSON file, but make sure you use this new file name for the generation of the HTML results, as described in the following step.
 
 ```
-// snyk code test --json > results.json code
+snyk code test --json > results.json code
 ```
 
 3\.  Pass the JSON file to the Snyk-to-HTML feature:
 
 ```
-// snyk-to-html -i results.json -o results.html code
+snyk-to-html -i results.json -o results.html code
 ```
 
 Where:
@@ -65,7 +65,7 @@ Where:
 4\.  \[Optional] To generate only the summary of the test results in an HTML format, add the -s option:
 
 ```
-// snyk-to-html -i results.json -o results.html -s
+snyk-to-html -i results.json -o results.html -s
 ```
 
 ****
