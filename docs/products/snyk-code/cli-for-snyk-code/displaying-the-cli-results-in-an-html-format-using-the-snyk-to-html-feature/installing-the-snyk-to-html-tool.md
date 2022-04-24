@@ -9,7 +9,7 @@ The first step in using the Snyk-to-HTML feature is downloading and installing t
 * In the terminal, enter:
 
 ```
-// npm install snyk-to-html -g
+npm install snyk-to-html -g
 ```
 
 The Snyk-to-HTML tool is installed on your machine.
