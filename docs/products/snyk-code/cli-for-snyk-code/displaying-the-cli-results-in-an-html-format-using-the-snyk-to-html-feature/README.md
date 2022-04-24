@@ -14,15 +14,6 @@ When converting the CLI textual findings into HTML using the Snyk-to-HTML featur
 
 ![](<../../../../.gitbook/assets/Snyk-to-HTML - Example - HTML Report.png>)
 
-Using the Snyk-to-HTML feature, it is also possible to generate a **Summary** of the test results in HTML:
-
-![](<../../../../.gitbook/assets/Snyk-to-HTML - HTML Report - Summary.png>)
-
-**Notes**:
-
-* To generate an HTML Summary, use the `--summary` (or `-s`) [command option](running-the-snyk-to-html-command.md#snyk-to-html-command-options).
-* The **Data Flow** and **Fix Analysis** information is not displayed in the **Summary** page.
-
 The Snyk-to-HTML feature uses the Snyk-to-HTML tool, which you need to download and install before running the snyk-to-html command. Then, you should test your source code with Snyk Code via the CLI, and export the results to a JSON or SARIF file. The snyk-to-html command takes the information on the test results from the JSON/SARIF file, and convert it to an HTML file that can be displayed in a browser. &#x20;
 
 **The workflow of using the Snyk-to-HTML feature is as follows:**
