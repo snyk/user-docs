@@ -2,8 +2,6 @@
 
 When using Snyk Code via the CLI, the test results are displayed in a concise text format in the terminal, and they do not include the Data Flow and Fix Analysis information that is available for each discovered issue in the Web UI. The Snyk-to-HTML feature enables you to convert these text results into an HTML file, and to display the vulnerability findings along with their Data Flow and Fix Analysis information as an HTML Report in a browser. &#x20;
 
-**Note**: The Snyk-to-HTML feature can also be useful when working with the Snyk Code Local Engine. When testing source code with the Local Engine, the source code snippets of the discovered vulnerabilities are not shown on the Web UI. By using the Snyk-to-HTML feature, you can display these source code snippets in an HTML format in your browser.
-
 For example:
 
 When using Snyk Code via the CLI for testing a certain repository, the vulnerability findings are displayed in the terminal in the following way:
