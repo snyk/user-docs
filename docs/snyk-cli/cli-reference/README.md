@@ -133,6 +133,8 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--package-manager=<PACKAGE_MANAGER_NAME>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
+`--unmanaged:` [test](../commands/test.md)`,` [monitor](../commands/monitor.md). See also [Options for scanning using `--unmanaged`](./#option-for-c-c++-projects).
+
 `--ignore-policy`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test), [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
 `--trust-policies` [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
@@ -313,11 +315,25 @@ Currently the following options are not supported:
 
 `--fail-on=<all|upgradable|patchable>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test)
 
-## Option for C/C++ projects
+## Options for scanning using `--unmanaged`
 
-`--unmanaged`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
+`--org=<ORG_ID>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-For information about this option see [Snyk CLI for C / C++ projects](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++#snyk-cli-for-c-c++-projects).
+`--json`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+
+`--json-file-output=<OUTPUT_FILE_PATH>`: [`test`](../commands/test.md), [monitor](../commands/monitor.md)
+
+`--target-reference=<TARGET_REFERENCE>`: [`monitor`](../commands/monitor.md)``
+
+`--target-dir`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+
+`--max-depth`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
+
+`--project-name=c-project`: [`monitor`](../commands/monitor.md)``
+
+
+
+
 
 ## `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
