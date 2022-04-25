@@ -298,6 +298,12 @@ Allow skipping packages that are not found in the environment.
 
 ### ``[`--target-reference=<TARGET_REFERENCE>`](monitor.md#target-reference-less-than-target\_reference-greater-than)``
 
+### `--target-dir`&#x20;
+
+Scan the path specified in the argument instead of the current directory.
+
+Alternatively, run `snyk test --unmanaged`
+
 ### `--max-depth`
 
 `Usage: --max-depth=1` Specify the maximum level of archive extraction.
