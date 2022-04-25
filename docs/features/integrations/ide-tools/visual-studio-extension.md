@@ -1,6 +1,6 @@
 # Visual Studio extension
 
-The Visual Studio extension ([Snyk Security - Code and Open Source Dependencies](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs)) helps you find and fix security vulnerabilities in your projects. Within a few seconds, the extension provides a list of all the different types of security vulnerabilities identified together with actionable fix advice. The extension combines the power of two Snyk products: Snyk Open Source and Snyk Code:
+The Visual Studio extension ([Snyk Security - Code and Open Source Dependencies](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-vs)) helps you find and fix security vulnerabilities in your projects. Within a few seconds, the extension provides a list of all the different types of security vulnerabilities identified together with actionable fix advice. The extension combines the power of two Snyk products: Snyk Open Source and Snyk Code.
 
 1. Snyk Open Source finds known vulnerabilities in both the direct and indirect (transitive) open source dependencies you are pulling into the project.
 2. Snyk Code finds known security vulnerabilities and code quality issues at blazing speed looking at the code you and your team wrote.
@@ -8,7 +8,7 @@ The Visual Studio extension ([Snyk Security - Code and Open Source Dependencies]
 ## Software requirements
 
 * Operating system - Windows
-* Supported versions of Visual Studio: 2015, 2017, 2019, 2022. Compatible with Community, Professional and Enterprise
+* Supported versions of Visual Studio: 2015, 2017, 2019, 2022. Compatible with Community, Professional, and Enterprise
 
 ## Supported languages, package managers, and frameworks
 
@@ -25,9 +25,11 @@ Search for _Snyk_ and select **Download** to download the Snyk extension.
 
 ![Download the Snyk extension](../../../.gitbook/assets/search-for-snyk.png)
 
-After the extension has been installed, open the Snyk tool window: **View > Other Windows**_._
+Once installed, use Snyk via the **Extensions > Snyk** menu (on Visual Studio versions older than  2019, Snyk will be part of the top menu bar).
 
-![View, Other Windows, Snyk](../../../.gitbook/assets/install2.png)
+__![](<../../../.gitbook/assets/image (76).png>)__
+
+You can also open the Snyk tool window using **View > Other Windows > Snyk**_._
 
 Once the tool window opens, wait while the Snyk extension downloads the latest Snyk CLI version.
 
@@ -39,8 +41,8 @@ After you install the extension and the CLI you must authenticate. You can use t
 
 To analyze projects the plugin uses the Snyk CLI, which requires environment variables:
 
-* `PATH`: the path to needed binaries, for example, to maven
-* `JAVA_HOME`: the path to the JDK you want to use for analysis of Java dependencies
+* `PATH`: specify the path to needed binaries, for example, to Maven
+* `JAVA_HOME`: specify the path to the JDK you want to use for analysis of Java dependencies
 * `http_proxy` and `https_proxy`: set if you are behind a proxy server, using the value in the format `http://username:password@proxyhost:proxyport`\
   **Note:** the leading `http://` in the value does not change to `https://` for `https_proxy`
 
@@ -56,9 +58,7 @@ You can also authenticate using Options. Open Visual Studio **Options** and go t
 
 ![Options and settings button](../../../.gitbook/assets/readme\_image\_2\_5.png)
 
-If the automated method does not work, you can trigger authentication by pressing the **Authenticate** button or enter the user API token manually.
-
-If the automated method does not work, you can also submit a request to [Snyk support](https://snyk.zendesk.com/agent/dashboard).
+If the automated method does not work, you can trigger authentication by pressing the **Authenticate** button or enter the user API token manually. You can also submit a request to [Snyk support](https://snyk.zendesk.com/agent/dashboard).
 
 ![Token field and Authenticate button](../../../.gitbook/assets/readme\_image\_2\_6.png)
 
@@ -127,7 +127,8 @@ After the plugin is installed, you can set the following configurations for the 
 * **Token**: Enter the token the extension uses to connect to Snyk. You can manually replace it, if you need to switch to another account.
 * **Custom endpoint**: Specify the custom Snyk API endpoint for your organization.
 * **Ignore unknown CA**: Ignore unknown certificate authorities.
-* **Organization**: Specify the ORG\_NAME to run Snyk commands tied to a specific organization.
+* **Organization**: Specify the ORG\_NAME to run Snyk commands tied to a specific organization.\
+  This setting allows you to specify an organization slug name to run tests for that organization. The value must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`. If not specified, preferred organization as defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
 * **Send usage analytics**: To help Snyk improve the extension, let your Visual Studio send Snyk information about how the extension is working.
 * **Project settings**: Specify any additional Snyk CLI parameters.
 * **Scan all projects**: Auto-detect all projects in the working directory, enabled by default.
@@ -138,11 +139,7 @@ In the settings, you can also choose which results you want to receive:
 * Snyk Code Security vulnerabilities
 * Snyk Code Quality issues
 
-#### Organization setting
 
-This setting allows you to specify an organization slug name to run tests for that organization. The value must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.&#x20;
-
-If not specified, preferred organization as defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
 
 ## Known issue
 
