@@ -252,6 +252,8 @@
   * [Snyk Container for self-hosted container registries (with broker)](products/snyk-container/integrate-self-hosted-container-registries.md)
   * [Kubernetes integration](products/snyk-container/kubernetes-workload-and-image-scanning/README.md)
     * [Kubernetes integration overview](products/snyk-container/kubernetes-workload-and-image-scanning/kubernetes-integration-overview/README.md)
+      * [Kubernetes integration architecture diagram](products/snyk-container/kubernetes-workload-and-image-scanning/kubernetes-integration-overview/kubernetes-integration-architecture-diagram.md)
+      * [How Snyk Controller handles your data](products/snyk-container/kubernetes-workload-and-image-scanning/kubernetes-integration-overview/how-snyk-controller-handles-your-data.md)
       * [Enable the Kubernetes integration](products/snyk-container/kubernetes-workload-and-image-scanning/kubernetes-integration-overview/viewing-your-kubernetes-integration-settings.md)
       * [Supported workloads](products/snyk-container/kubernetes-workload-and-image-scanning/kubernetes-integration-overview/supported-workloads.md)
       * [Supported Container Registry](products/snyk-container/kubernetes-workload-and-image-scanning/kubernetes-integration-overview/supported-container-registry.md)
