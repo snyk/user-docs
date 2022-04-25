@@ -21,9 +21,7 @@ You can install the Snyk extension directly from the IDE; open **Extensions > Ma
 
 ![Manage extensions menu](../../../.gitbook/assets/readme\_image\_2\_1\_1.png)
 
-Search for _Snyk_ and select **Download** to download the Snyk extension.
-
-![Download the Snyk extension](../../../.gitbook/assets/search-for-snyk.png)
+Search for _Snyk_ and select **Download** to download the Snyk Security - Code and Open Source Dependencies extension.
 
 Once installed, use Snyk via the **Extensions > Snyk** menu (on Visual Studio versions older than  2019, Snyk will be part of the top menu bar).
 
@@ -98,7 +96,7 @@ Snyk Code analysis shows a list of security vulnerabilities and code issues foun
 
 The Snyk suggestion panel shows the argumentation of the Snyk engine using, for example, variable names of your code and the line numbers in red. You can also see:
 
-* Links to external resources to explain the bug pattern in more detail (the More info link).
+* Links to external resources to explain the bug pattern in more detail.
 * Tags that were assigned by Snyk, such as Security (the issue found is a security issue), Database (the issue is related to database interaction), or In Test (the issue is within the test code).
 * Code from open source repositories that can be of help to see how others have fixed the issue.
 
@@ -188,7 +186,7 @@ msbuild -t:Build
 ## Support and contact information
 
 {% hint style="info" %}
-Need more help? [Submit a request to Snyk support](https://support.snyk.io/hc/en-us/requests/new).
+Need more help? Submit a request to [Snyk support](https://snyk.zendesk.com/agent/dashboard).
 {% endhint %}
 
 **Share your experience.**
