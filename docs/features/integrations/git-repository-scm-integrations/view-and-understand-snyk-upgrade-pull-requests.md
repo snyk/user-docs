@@ -1,12 +1,12 @@
 # View and understand Snyk upgrade pull requests
 
-In addition to fix advice, Snyk can automatically create pull requests (PRs) on your behalf in order to upgrade your dependencies based on the scan results. Snyk currently supports this feature for npm, Yarn and Maven-Central projects through GitHub, GitHub Enterprise Server and BitBucket Cloud.
+In addition to fix advice, Snyk can automatically create pull requests (PRs) on your behalf in order to upgrade your dependencies based on the scan results. Snyk currently supports this feature for npm, Yarn, Maven-Central, NuGet (C#), Pip and PyPI (Python), and Bundler (Ruby) projects through GitHub, GitHub Enterprise Server, BitBucket Cloud, GitLab, and Azure repos.&#x20;
 
-For use with the Broker, your administrator should first upgrade to v4.55.0 or later.
+To use with the Broker, your administrator should first upgrade to v4.55.0 or later.
 
 {% hint style="info" %}
 **NOTE**\
-Administrators and account owners manage settings for Snyk upgrade pull requests from our app on both the organization and the project levels, configuring whether the feature is on (enabled by default) and under what conditions Snyk should submit upgrade pull requests, if at all.
+Administrators and account owners manage settings for Snyk upgrade pull requests from our app on both the organization and the project levels, by configuring whether the feature is on (enabled by default) and under what conditions Snyk should submit upgrade pull requests, if at all.
 {% endhint %}
 
 ## Viewing pull request details before merging
