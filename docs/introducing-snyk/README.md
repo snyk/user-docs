@@ -48,7 +48,7 @@ For more information, see the [Snyk CLI docs](../snyk-cli/).
 
 ### Snyk API
 
-Snyk’s [extensibility and API](https://snyk.io/blog/extensibility-and-the-snyk-api/) enable developers to tune Snyk’s security automation to their specific workflows, ensuring both consistent developer experience and consistent platform governance.
+Snyk’s [extensibility and API](https://snyk.io/blog/extensibility-and-the-snyk-api/) enable developers to tune Snyk’s security automation to their specific workflows, ensuring consistency in both developer experience and platform governance.
 
 See how Snyk customers like [Twilio and Spotify](https://snyk.io/blog/snyk-watcher-keep-snyk-in-sync/) use the Snyk API in their workflows.
 
