@@ -1,8 +1,12 @@
 # Manage users in your group
 
+{% hint style="warning" %}
+**This feature is currently a Private Beta.**&#x20;
+{% endhint %}
+
 {% hint style="info" %}
 **Feature availability**\
-Group is available with Enterprise and Business plans. See [pricing plans](https://snyk.io/plans/) for more details.
+Groups are available with Enterprise and Business plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 Select the Group and **Members** top-level menu option to manage your group members:
