@@ -404,6 +404,7 @@
     * [Identity Provider (IdP) migration](features/user-and-group-management/setting-up-sso-for-authentication/identity-provider-idp-migration.md)
   * [Managing users & permissions](features/user-and-group-management/managing-users-and-permissions/README.md)
     * [Manage users in your organizations](features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations.md)
+    * [Manage users in your group](features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations-1.md)
     * [Managing permissions](features/user-and-group-management/managing-users-and-permissions/managing-permissions.md)
     * [Organization access requests](features/user-and-group-management/managing-users-and-permissions/organization-access-requests.md)
     * [Session length](features/user-and-group-management/managing-users-and-permissions/session-length.md)
