@@ -29,7 +29,7 @@ Snyk supports all languages that are supported by both Eclipse and Snyk. Additio
 3. When prompted accept the license agreement add the **Snyk Security** certificate to complete the installation.
 4. Restart the Eclipse instance and navigate to **Eclipse Preferences** to ensure **Snyk Security - Code and Open Source Dependencies** now appears in the list:
 
-![Eclipse Marketplace search showing Snyk plugin and Install button](../../../.gitbook/assets/uuid-01198b42-f020-2cc5-c20f-93817eeb44a4-en.png)
+![Eclipse Marketplace search showing Snyk plugin and Install button](../.gitbook/assets/uuid-01198b42-f020-2cc5-c20f-93817eeb44a4-en.png)
 
 ## Configuration
 
@@ -39,7 +39,7 @@ To use Snyk, you must supply the plugin with environment variables and the Snyk 
 
 To provide your API token, copy it from your [account settings](https://app.snyk.io/account) and paste it into the Eclipse preferences Snyk API Token field. Click **Apply and Close** to start analyzing.
 
-![Eclipse preferences with Snyk API Token filed and Apply and Close button](../../../.gitbook/assets/uuid-928012b7-8e49-fe6f-4965-77c5db026784-en.png)
+![Eclipse preferences with Snyk API Token filed and Apply and Close button](../.gitbook/assets/uuid-928012b7-8e49-fe6f-4965-77c5db026784-en.png)
 
 ### Environment variables
 
@@ -59,13 +59,13 @@ Setting these variables only in a shell environment (for example, using **\~/.ba
 
 ## Use the Snyk plugin to secure your Eclipse projects
 
-From the Snyk results click the green arrow (![](../../../.gitbook/assets/uuid-aa090aa8-d4fe-eb5d-2505-54a0b1555be9-en.png)) whenever you are ready to scan your projects. Results appear in a short time, and your continue to work as usual in the meantime.
+From the Snyk results click the green arrow (![](../.gitbook/assets/uuid-aa090aa8-d4fe-eb5d-2505-54a0b1555be9-en.png)) whenever you are ready to scan your projects. Results appear in a short time, and your continue to work as usual in the meantime.
 
-If for any reason you need to stop the scan before the build ends, click the red square(![](../../../.gitbook/assets/uuid-29be01e6-6913-25f8-15ed-a8cf47230fa0-en.png)). If you want to scan only a single project in your workspace, navigate to the Package Explorer panel, right click the root of the project you want to test, and then choose **Snyk test**.
+If for any reason you need to stop the scan before the build ends, click the red square(![](../.gitbook/assets/uuid-29be01e6-6913-25f8-15ed-a8cf47230fa0-en.png)). If you want to scan only a single project in your workspace, navigate to the Package Explorer panel, right click the root of the project you want to test, and then choose **Snyk test**.
 
 When the scan ends, results and any relevant error messages are displayed from the **Snyk results**, grouped by project similar to the following:
 
-![Results screen for scan with Eclipse plugin](../../../.gitbook/assets/uuid-e868f739-eb55-9bd6-be33-acbb230ec1fa-en.png)
+![Results screen for scan with Eclipse plugin](../.gitbook/assets/uuid-e868f739-eb55-9bd6-be33-acbb230ec1fa-en.png)
 
 ## Work with Snyk results for Eclipse projects
 
