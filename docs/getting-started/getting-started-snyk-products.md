@@ -15,5 +15,5 @@ Environments you can use to access your selected Snyk product:
 
 * **Snyk Web UI**: the core web-based UI ([app.snyk.io](https://app.snyk.io)).
 * [**Snyk CLI**](https://docs.snyk.io/snyk-cli): the Command Line Interface.
-* [**Snyk IDEs**](../ide-tools/): use IDE integrations to embed Snyk in your development environment.
+* [**Snyk IDEs**](../features/integrations/ide-tools/): use IDE integrations to embed Snyk in your development environment.
 * [**Snyk API**](https://support.snyk.io/hc/en-us/categories/360000665657-Snyk-API): allows you to programmatically integrate with Snyk.
