@@ -240,6 +240,7 @@
     * [Detecting application vulnerabilities in container images](products/snyk-container/getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images.md)
     * [Analysis and fixes for your images from the Snyk Web UI](products/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app.md)
     * [Base image detection](products/snyk-container/getting-around-the-snyk-container-ui/base-image-detection.md)
+    * [Custom Base Image Recommendations](products/snyk-container/getting-around-the-snyk-container-ui/custom-base-image-recommendations.md)
     * [Image layer information](products/snyk-container/getting-around-the-snyk-container-ui/image-layer-information.md)
   * [Scan your Dockerfile](products/snyk-container/scan-your-dockerfile/README.md)
     * [Automatically link between Dockerfile and images using labels](products/snyk-container/scan-your-dockerfile/automatically-link-between-dockerfile-and-images-using-labels.md)
