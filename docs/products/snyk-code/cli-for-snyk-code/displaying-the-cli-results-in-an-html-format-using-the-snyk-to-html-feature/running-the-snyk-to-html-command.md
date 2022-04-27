@@ -16,13 +16,7 @@ snyk-to-html --help
 
 1\.  On the terminal, change the directory to the root folder of the repository you want to test.
 
-2\.  In order to test the repository, export the results to a JSON file, and convert it to an HTML file called “**results**”. You can perform this by entering one of the following commands:
-
-```
-snyk code test --json | snyk-to-html > results.html
-```
-
-\- or -
+2\.  In order to test the repository, export the results to a JSON file, and convert it to an HTML file called “**results**”:
 
 ```
 snyk code test --json | snyk-to-html -o results.html
@@ -32,7 +26,7 @@ Where:
 
 `-o` – The name of the output file of the generated HTML results.
 
-**Note**: To customize the command, use the command options, as described on page 92.
+**Note**: To customize the command, use the [command options](running-the-snyk-to-html-command.md#snyk-to-html-command-options).
 
 A **results.html** file is created in your repository folder, allowing you to [view your test results in an HTML format](viewing-the-html-results.md).
 
