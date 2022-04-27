@@ -2,16 +2,16 @@
 
 Snyk integrates with GitHub container registry to enable you to import your container images and monitor them for vulnerabilities.
 
-Snyk tests the images you’ve imported (called \`projects\`) for any known security vulnerabilities, testing them at a frequency you control and alerts you when new issues are detected.
+Snyk tests the images you’ve imported (called \`projects\`) for any known security vulnerabilities, testing them at a frequency you control, and alerts you when new issues are detected.
 
 Integration with GitHub container registry is available for all Snyk users.
 
 To set up GitHub container registry integration in Snyk and start managing image vulnerabilities:
 
-Prerequisites
+**Prerequisites**
 
 * You must be an administrator for the organization you're configuring in Snyk.
-* Snyk needs user credentials to integrate with GitHub container registry and does not support GitHub container registry when configured for single sign-on (SSO).
+* Snyk needs user credentials to integrate with GitHub container registry and  Snyk does not support integrating if the user is using GitHub SSO to access GitHub container registry .
 
 **Configure integration**
 
@@ -20,10 +20,10 @@ Prerequisites
 
 ![mceclip1.png](../../../../.gitbook/assets/mceclip1-4-.png)
 
-If you are using a self-hosted GitHub container registry registry, [contact our Support team](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. You can read more about setting up private registry integration [here](https://docs.snyk.io/snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries).
+If you are using a self-hosted GitHub container registry registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information about setting up private registry integration see [Snyk Container for self-hosted container registries (with broker)](../../integrate-self-hosted-container-registries.md).
 
 Snyk tests the connection values and the page reloads, now displaying GitHub container registry integration information, and the **Add your GitHub container registry images to Snyk** button becomes available.
 
-In case the connection to GitHub container registry failed, a notification appears under the **Connected to GitHub container registry** section. Now you can use Snyk to scan your images from GitHub container registry.
+If the connection to GitHub container registry fails, a notification appears under the **Connected to GitHub container registry** section. Now you can use Snyk to scan your images from GitHub container registry.
 
-Check out our blog to learn more about [container registry security & security concerns for using a container registry.](https://snyk.io/learn/container-security/container-registry-security/)
+Check out the Snyk blog to learn more about [container registry security & security concerns for using a container registry.](https://snyk.io/learn/container-security/container-registry-security/)

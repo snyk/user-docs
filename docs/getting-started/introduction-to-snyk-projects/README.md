@@ -8,7 +8,7 @@ Targets may represent a SCM repository, a Kubernetes workload, or other scannabl
 \
 Targets appear on the **Projects** menu on the Snyk dashboard:
 
-![](<../../.gitbook/assets/image (65) (1) (2).png>)
+![](<../../.gitbook/assets/image (65) (1).png>)
 
 {% hint style="info" %}
 Targets also appear on the [Snyk API](https://apidocs.snyk.io/?version=2022-02-16%7Ebeta#tag--Targets).
