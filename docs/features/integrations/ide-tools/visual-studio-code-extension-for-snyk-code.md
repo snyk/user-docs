@@ -61,7 +61,7 @@ To authenticate follow these steps:
 3. Click **Authenticate**.
 4.  After successful authentication, view the confirmation message.
 
-    <img src="../../../.gitbook/assets/image (85) (1).png" alt="" data-size="original">
+    <img src="../../../.gitbook/assets/image (85) (1) (1) (1).png" alt="" data-size="original">
 5. Close the browser window and return to VS Code. VS Code is now reading and saving the authentication on your local machine.
 
 ### Switching accounts
@@ -71,11 +71,11 @@ To re-authenticate with a different account, follow the steps below:
 1. Run the provided `Snyk: Log Out` command.
 2. Once logged out, click **Connect VS Code with Snyk** to authenticate with the different account.
 
-![Snyk: Log Out](../../../.gitbook/assets/logging-out-command.png)
+![Snyk: Log Out](<../../../.gitbook/assets/logging-out-command (1).png>)
 
 Or you run `Snyk: Set Token` command and set your token in the text field manually.
 
-![](<../../../.gitbook/assets/image (80) (1).png>)
+![](<../../../.gitbook/assets/image (80).png>)
 
 \\
 
@@ -87,7 +87,7 @@ Snyk Open Source requires the Snyk CLI, so it downloads in the background.
 
 Snyk Code analysis runs quickly without the CLI, so results may already be available. Otherwise, you see the following screen while Snyk scans your workspace for vulnerabilities:
 
-![Snyk Code scan](<../../../.gitbook/assets/image (80) (1) (1) (1) (1).png>)
+![Snyk Code scan](<../../../.gitbook/assets/image (80) (1) (1) (1).png>)
 
 Snyk analysis runs automatically when you open a folder or workspace.
 
@@ -114,7 +114,7 @@ Snyk Code has "Advanced" mode that allows you to control how scan is performed.
 
 To manually perform the analysis, in the configuration of the extension you can enable Advanced Mode which enables you to control the scanning process:
 
-![Advanced Mode](../../../.gitbook/assets/run-analysis\_advanced-mode.png)
+![Advanced Mode](<../../../.gitbook/assets/run-analysis\_advanced-mode (1).png>)
 
 ## View analysis results
 
@@ -136,7 +136,7 @@ The icons have the following meaning:
 
 You can filter the issues by setting the severities you want to see using the `snyk.severity` setting. For example, set `"snyk.severity": { "critical": true, "high": true, "medium": true, "low": false }` to hide low severity issues. You can also apply the setting in the Settings UI.
 
-![Severity settings](<../../../.gitbook/assets/image (65) (1) (1).png>)
+![Severity settings](<../../../.gitbook/assets/image (65) (1) (1) (1).png>)
 
 ### Snyk Code editor window
 
@@ -165,7 +165,7 @@ You can find security vulnerabilities in the npm packages you import and see the
 
 Code inline vulnerability counts are also shown in your `package.json` file:
 
-![package.json file](../../../.gitbook/assets/oss-editor-pjson.png)
+![package.json file](<../../../.gitbook/assets/oss-editor-pjson (1).png>)
 
 Find security vulnerabilities in your JavaScript packages from well-known CDNs. The extension scans any HTML files in your projects and displays vulnerability information about the modules you include from your favorite CDN.
 
