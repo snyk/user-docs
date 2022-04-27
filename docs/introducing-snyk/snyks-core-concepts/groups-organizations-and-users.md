@@ -1,8 +1,8 @@
 # Groups, organizations, and users
 
 {% hint style="info" %}
-**Feature availability**  
-Some functions \(such as Groups\) are only available on certain plans. See [pricing plans](https://snyk.io/plans/) for more details.
+**Feature availability**\
+Some functions (such as Groups) are only available on certain plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 Snyk has a hierarchy that allows you to control access to features such as reports. This hierarchy is as follows:
@@ -46,10 +46,11 @@ Snyk provides four different types of members or users:
 * Group member
 * Group administrator
 
+For definitions of the associated permissions, see this [information on permissions per role](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/managing-permissions#permissions-per-role).
+
 {% hint style="info" %}
-**Feature availability**  
+**Feature availability**\
 Group administrators and collaborators are available with Business and Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 More on [user and group management](../../features/user-and-group-management/).
-
