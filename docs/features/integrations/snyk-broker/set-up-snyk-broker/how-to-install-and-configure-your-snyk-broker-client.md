@@ -24,7 +24,7 @@ The base set-up for SCMs will enable usage of Snyk Open Source and scan of Docke
 
 ### Snyk Broker Helm Chart
 
-Alternatively, if you are using Kubernetes and would like to deploy the broker through a Helm chart,  please use the provided [Snyk Broker Helm Chart](https://github.com/metalstormbass/snyk-broker-helm)
+Alternatively, if you are using Kubernetes and would like to deploy the broker through a Helm chart, please use the provided [Snyk Broker Helm Chart](https://github.com/snyk/snyk-broker-helm)
 
 ### Advanced Configuration
 
