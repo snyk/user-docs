@@ -1,18 +1,16 @@
 # Snyk API
 
-### API V1 docs
+## Snyk API v1 docs
 
-{% embed url="https://snyk.docs.apiary.io/#" %}
+****[**Snyk v1 API**](https://snyk.docs.apiary.io)****
 
-We are in the process of building a new, improved API (`https://api.snyk.io/rest`) built using the OpenAPI and JSON API standards. We welcome you to try it out as we shape and release endpoints until it, ultimately, becomes a full replacement for our current API.
+Snyk is building a new REST API (`https://api.snyk.io/rest`) using the OpenAPI and JSON API standards. Snyk welcomes you to try out the REST API as endpoints are released and development proceeds with the intent of replacing the Snyk v1 API.
 
 ### REST API docs
 
-{% embed url="https://apidocs.snyk.io" %}
+The [**Snyk REST API**](https://apidocs.snyk.io) **** is the new, standards-driven API (OpenAPI, JSON API) now available to all customers.
 
-The Snyk REST API is the new, standards-driven API (OpenAPI, JSON API) now available to all customers.
-
-This new version of the Snyk API represents a major step forward in an evolutionary approach to API development, now that each endpoint is versioned (see [Versioning](https://apidocs.snyk.io#overview)).
+This new version of the Snyk API represents a major step forward in an evolutionary approach to API development, with each endpoint versioned (see [Versioning](https://apidocs.snyk.io/#overview)).
 
 {% hint style="info" %}
 **Feature availability**\
