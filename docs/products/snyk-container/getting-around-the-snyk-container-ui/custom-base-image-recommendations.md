@@ -6,11 +6,7 @@ This feature is currently in Beta. Please contact your CSM if you are interested
 
 ## **Overview**
 
-When scanning a container image, Snyk provides recommendations based on the base image detected.&#x20;
-
-{% hint style="info" %}
-These recommendations apply only to a subset of images, as Snyk precomputes recommendations only for Official Docker images.
-{% endhint %}
+When scanning a container image, Snyk provides recommendations based on the base image detected. These recommendations apply only to a subset of images, as Snyk precomputes recommendations only for Official Docker images.
 
 Customers often maintain their own internal, customized base images, built on top of Official Docker images or other upstream images. These are provided as a service to a wider set of development teams, for example, `somecompany/java:v1.2.4`.
 
