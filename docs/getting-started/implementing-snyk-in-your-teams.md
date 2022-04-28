@@ -103,5 +103,5 @@ IDE plugins for Snyk take advantage of the Snyk CLI to offer Snyk functionality 
 
 More information:
 
-* Docs: [ide-tools](../features/integrations/ide-tools/ "mention")
+* Docs: [ide-tools](../ide-tools/ "mention")
 * Training: [Introduction to using Snyk in an IDE](http://training.snyk.io/learn/course/introduction-to-using-snyk-in-an-ide/snyk-plugin-for-ide/authenticate-plug-in-to-snyk?page=1)
