@@ -1,5 +1,7 @@
 # Snyk API
 
+Snyk’s [extensibility and API](https://snyk.io/blog/extensibility-and-the-snyk-api/) enable developers to tune Snyk’s security automation to their specific workflows, ensuring consistency in both developer experience and platform governance.
+
 ## Snyk API v1 docs
 
 ****[**Snyk v1 API**](https://snyk.docs.apiary.io)****
