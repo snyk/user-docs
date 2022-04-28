@@ -12,7 +12,6 @@
     * [Snyk intel vulnerability DB](introducing-snyk/snyks-core-concepts/getting-started-snyk-intel-vuln-db-access.md)
   * [Glossary](introducing-snyk/glossary.md)
 * [Getting started](getting-started/README.md)
-  * [Getting started with Snyk products](getting-started/getting-started-snyk-products.md)
   * [Introduction to Snyk targets and projects](getting-started/introduction-to-snyk-projects/README.md)
     * [View project information](getting-started/introduction-to-snyk-projects/view-project-information.md)
       * [Project attributes](getting-started/introduction-to-snyk-projects/view-project-information/project-attributes.md)

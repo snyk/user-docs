@@ -26,8 +26,6 @@ See [Getting started with the CLI](../../snyk-cli/getting-started-with-the-cli/)
 
 A test is run when you add a new project, or click the re-test button.
 
-See [Getting started with Snyk products](../../getting-started/getting-started-snyk-products.md) for details.
-
 ### Run tests with the API
 
 Tests are counted when calls are made to the [**https://snyk.io/api/v1/test**](https://snyk.io/api/v1/test) endpoint.

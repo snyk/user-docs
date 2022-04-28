@@ -11,8 +11,6 @@ Snyk tests for vulnerabilities in [your own code](https://snyk.io/product/snyk-c
 * [**Snyk Container**](https://docs.snyk.io/snyk-container): Find and fix vulnerabilities in container images and Kubernetes applications.
 * [**Snyk Infrastructure as Code (IaC)**](https://docs.snyk.io/snyk-infrastructure-as-code): Find and fix insecure configurations in Terraform and Kubernetes code.
 
-See [getting-started-snyk-products.md](../getting-started/getting-started-snyk-products.md "mention").
-
 ### Supported environments
 
 Environments you can use to access your selected Snyk product include:

@@ -79,13 +79,12 @@ More information:
 
 ### Learn to find, prioritize, and fix issues
 
-#### Get familiar with the Snyk UI
+#### Get familiar with the Snyk Web UI
 
 The Snyk platform scans different types of projects (depending on which product you have purchased), displays and scores the scan results, and offers different types of fix advice or options (depending on several factors).
 
 More information:
 
-* Docs: [getting-started-snyk-products.md](getting-started-snyk-products.md "mention")
 * Training: [Introduction to the Snyk UI](http://training.snyk.io/learn/course/introduction-to-the-snyk-ui/snyk-log-in-details/log-in-tasks-and-considerations?page=1)
 
 #### Get familiar with the Snyk CLI
