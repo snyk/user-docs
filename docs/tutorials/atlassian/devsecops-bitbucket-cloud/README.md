@@ -16,7 +16,7 @@ In this workshop, you will learn patterns for shift-left security leveraging [At
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-bitbucket-flow.png)
 
-* Understand [Software Composition Analysis (SCA)](https://snyk.io/blog/what-is-software-composition-analysis-sca-and-does-my-company-need-it/) and its importance in your developer workflows.
+* Understand [Software Composition Analysis (SCA)](https://snyk.io/series/open-source-security/software-composition-analysis-sca/) and its importance in your developer workflows.
 * Discover vulnerabilities in your application open source dependencies.
 *   Implement Snyk's [container image](https://snyk.io/blog/detecting-vulnerabilities-in-container-images/) scanning in your [Continuous integration](https://aws.amazon.com/devops/continuous-integration/) and
 

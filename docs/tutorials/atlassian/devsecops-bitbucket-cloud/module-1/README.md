@@ -12,7 +12,7 @@ weight: 30
 
 ## What is software composition analysis (SCA)?
 
-[Software composition analysis (SCA)](https://snyk.io/blog/what-is-software-composition-analysis-sca-and-does-my-company-need-it/) is an open source component management tool. It generates a report listing all open source components in an application including direct and indirect dependencies. Using an SCA tool, development teams can quickly track and analyze open source components introduced into a project.
+[Software composition analysis (SCA)](https://snyk.io/series/open-source-security/software-composition-analysis-sca/) is an open source component management tool. It generates a report listing all open source components in an application including direct and indirect dependencies. Using an SCA tool, development teams can quickly track and analyze open source components introduced into a project.
 
 Although convenient and widely used, open source components have been traditionally difficult to track. As a result, developers have relied on manual processes such as emails and spreadsheets to mitigate the situation. However, these manual processes threaten to undo the convenience provided by open source and provide an incomplete solution. A more desirable approach is to leverage an SCA tool that provides immediate insight into each component.
 
