@@ -103,7 +103,7 @@ docker run \
    -e BROKER_TOKEN=<xxxxxxx-xxxx-xxxx-xxxx-xxxxxxx> \
    -e GITLAB_TOKEN=glpat-<xxxxxxxxxxxxxxx> \
    -e GITLAB=url.com \
-   -e BROKER_CLIENT_URL=http://my.broker.client:8000
+   -e BROKER_CLIENT_URL=http://my.broker.client:8001
    -e PORT=8000 \
    -e GIT_CLIENT_URL=http://code-agent:3000 \
    --network mySnykBrokerNetwork \
