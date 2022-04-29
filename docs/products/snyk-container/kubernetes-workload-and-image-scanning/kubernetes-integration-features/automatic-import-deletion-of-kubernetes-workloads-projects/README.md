@@ -8,7 +8,7 @@ This feature is currently in beta. We would appreciate any feedback you might ha
 
 You must have an account with Snyk and be onboarded to your organization by an administrator.
 
-In addition, the integration must be configured between Snyk and your Kubernetes environment per organization. To verify the integration is configured, ensure you have an [**Integration ID**](../../kubernetes-integration-overview/viewing-your-kubernetes-integration-settings.md)\*\*\*\*
+In addition the integration must be configured between Snyk and your Kubernetes environment per organization. To verify the integration is configured, ensure you have an [**Integration ID**](../../kubernetes-integration-overview/viewing-your-kubernetes-integration-settings.md)\*\*\*\*
 
 You can configure the Snyk controller to automatically import and update scanned workloads directly in Snyk to test and monitor for vulnerabilities. You can also automatically delete imported projects once workloads are deleted from the cluster.
 
@@ -23,17 +23,15 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
     --set policyOrgs={19982df2-0ed5-4a16-b355-e6535cfc41ef}
 ```
 
-Note that _**policyOrgs**_ is a list of organization public IDs. You can add more than one Organization to use the auto-import and auto-delete capabilities. You can locate this public ID under your organization's settings page.
+Note that _**policyOrgs**_ is a list of organization public IDs. You can add more than one organization to use the auto-import and auto-delete capabilities. You can locate this public ID under your organization's settings page.
 
 {% hint style="info" %}
-You can only use organizations that share the same Kubernetes integration ID used to provision the Snyk controller.
+If you want to import Kubernetes workloads into multiple Snyk organizations, you must be business or enterprise customers. Only Snyk organizations that share the same Kubernetes integration ID can provision the Snyk controller to do so. More information on how to share the same integration ID can be found in [Clone an integration across your Snyk orgs](../../../../../features/integrations/managing-integrations/clone-an-integration-across-your-snyk-orgs.md).
 {% endhint %}
 
 ## Annotated Import
 
-Once an administrator for your Snyk account has installed the Snyk controller on your Kubernetes cluster, add workloads for testing as follows:
-
-* Kubernetes collaborators can mark workloads from the cluster to be automatically added to Snyk
+Once an administrator for your Snyk account has installed the Snyk controller on your Kubernetes cluster, add workloads for testing. Kubernetes collaborators can mark workloads from the cluster to be automatically added to Snyk
 
 ## Automatically add, update and remove workloads
 
@@ -61,13 +59,13 @@ Annotate any of the following workload types:
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
 2. Click on settings ![](../../../../../.gitbook/assets/cog\_icon.png) > **General**.&#x20;
 3. Copy the **Organization ID** value.&#x20;
-4. Add an annotation to the workload with the key `orgs.k8s.snyk.io/v1` , entering the Organization ID as the value in a comma-separated list.
+4. Add an annotation to the workload with the key `orgs.k8s.snyk.io/v1`, entering the Organization ID as the value in a comma-separated list.
 
 You can also annotate a single workload to be added to multiple organizations.
 
 1.  The Snyk controller automatically picks up on the changes to your workload and ensures that the workload is automatically imported to Snyk as a Snyk project.
 
-    Example 1. Example of a Deployment YAML file annotated to be automatically imported into an organization
+    Example: Deployment YAML file annotated to be automatically imported into an organization
 
     ```
     apiVersion: apps/v1

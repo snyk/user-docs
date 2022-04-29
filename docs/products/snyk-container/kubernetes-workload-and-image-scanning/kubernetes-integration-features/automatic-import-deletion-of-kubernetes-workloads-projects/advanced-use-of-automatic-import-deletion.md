@@ -22,6 +22,10 @@ Both **package snyk** and the key **workload\_events** are mandatory by Snyk Con
 
 ## Using more than one org
 
+{% hint style="info" %}
+This feature is only available if you are business or enterprise customers
+{% endhint %}
+
 Orgs is a list of organization public IDs. You can add more than one organization to use the auto-import and auto-delete capabilities. You can locate this public ID in the settings page for the organization.
 
 ```

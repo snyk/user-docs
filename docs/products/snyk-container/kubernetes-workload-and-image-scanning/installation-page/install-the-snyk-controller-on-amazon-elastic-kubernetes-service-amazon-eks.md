@@ -2,7 +2,7 @@
 
 Installing the Snyk controller enables you to import and test your running EKS workloads and identify vulnerabilities in their associated images and configurations that might make those workloads less secure. Once imported, Snyk continues to monitor those workloads, identifying additional security issues as new images are deployed and the workload configuration changes.
 
-### [Open the AWS Quick Start Guide](https://aws.amazon.com/quickstart/architecture/eks-snyk/)
+## [Open the AWS Quick Start Guide](https://aws.amazon.com/quickstart/architecture/eks-snyk/)
 
 You have the option of deploying the Snyk controller for Amazon EKS as an official [AWS Quick Start](https://aws.amazon.com/quickstart/architecture/eks-snyk/). This option eliminates the need for manual configuration. Deploying this Quick Start with default parameters into an existing Amazon EKS cluster builds the following environment.
 
@@ -34,15 +34,19 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
 * An administrator account for your Snyk organization.
 * A minimum of 50 GB of storage must be available in the form of an [emptyDir](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir) on the cluster.
 * Your Kubernetes cluster needs to be able to communicate with Snyk outbound over HTTPS.
-* When configuring Snyk to integrate with an Amazon Elastic Kubernetes Services (EKS) cluster, if you wish to scan images hosted on your Amazon Elastic Container Registry (ECR), you may also deploy our Quick Start, [Snyk Security on AWS](https://aws.amazon.com/quickstart/architecture/snyk-security/) to enable this integration.
+* When configuring Snyk to integrate with an Amazon Elastic Kubernetes Services (EKS) cluster, if you wish to scan images hosted on your Amazon Elastic Container Registry (ECR), you may also deploy the quick start [Snyk Security on AWS](https://aws.amazon.com/quickstart/architecture/snyk-security/) to enable this integration.
 
 ![](../../../../.gitbook/assets/snyk\_rocket.png)
 
-## [Deployment Guide](https://aws-quickstart.github.io/quickstart-eks-snyk/)
+Refer to [Snyk Controller for Amazon EKS Quick Start Reference Deployment](https://aws-quickstart.github.io/quickstart-eks-snyk/).
 
 ## Configure Snyk Controller to pull and scan private images from ECR
 
-Ensure your **dockerconfig.json** matches the example below:
+{% hint style="info" %}
+This installation steps **works** **the best** for EKS and ECR with the same AWS account. If you have different setup please contact [Snyk support](https://snyk.zendesk.com/agent/dashboard).
+{% endhint %}
+
+Ensure your **dockerconfig.json** matches the following example
 
 ```
 {
@@ -52,13 +56,13 @@ Ensure your **dockerconfig.json** matches the example below:
 
 ### Attach policies for worker nodes
 
-For all the options above, attach the **NodeInstanceRole** policy that can be found [here](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR\_on\_EKS.html) with the **AmazonEC2ContainerRegistryReadOnly** policy to your EKS worker nodes. The Snyk Controller should now be able to pull private images when running on those worker nodes.
+For all the preceding options, attach the **NodeInstanceRole** policy, found on [Using Amazon ECR Images with Amazon EKS](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR\_on\_EKS.html), with the **AmazonEC2ContainerRegistryReadOnly** policy, to your EKS worker nodes. The Snyk Controller should now be able to pull private images when running on those worker nodes.
 
-Alternatively, you can also use the IAM role for Service Accounts by **creating an EKS node role for your Node Group** (no need to set up an extra OIDC service account role), and configure the Snyk Controller as follows:
+Alternatively you can also use the IAM role for Service Accounts by **creating an EKS node role for your Node Group** (no need to set up an extra OIDC service account role), and configure the Snyk Controller as follows.
 
 ### Create an EKS node role for your Node Group
 
-* Following the instruction [here](https://docs.aws.amazon.com/eks/latest/userguide/create-node-role.html), check your existing node role. Make sure you have attached the policy **AmazonEC2ContainerRegistryReadOnly.**
+* Following the instructions on [Amazon EKS node IAM role](https://docs.aws.amazon.com/eks/latest/userguide/create-node-role.html), check your existing node role. Make sure you have attached the policy **AmazonEC2ContainerRegistryReadOnly.**
 * Select the **Details** tab on your EKS node group page, where you should see **Node IAM Role ARN.** It should look something like this:
 
 ```
