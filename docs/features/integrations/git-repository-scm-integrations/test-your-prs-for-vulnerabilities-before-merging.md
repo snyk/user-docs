@@ -41,18 +41,41 @@ We recommend that you set Snyk status checks to be mandatory for merging pull re
 
 ### Configure pull request test settings for a project
 
-1. Log in to your account and navigate to the relevant group and organization that you want to manage.
-2. Click on settings ![](../../../.gitbook/assets/cog\_icon.png) > **Integrations**,
-3. Click **Edit Settings** for integration required.
-4. Navigate to the **Default Snyk test for pull requests** section:
-5. Choose:
-   1. Inherit from **Integration** settings for the project to use the settings set at the Organization level
-   2. **Custom** and then click the slider to enable the functionality.
-6. From the options that appear, choose settings from the dropdown list as follows:
-   1. **Only fail when the PR is adding a dependency with issues** - only fail the license or security check on the pull request if the pull request aims to add a new dependency that contains issues
-   2. **Fail if the repo has any issues** - fail the license or security check on the pull request if there are any issues at all in the repository
-7. Check mark any relevant settings from the dropdown list as follows:
-   1. **Only fail for high or critical severity issues** - only fail the check for high or critical severity issues, based on the option you chose from the dropdown list above
-   2. **Only fail when the issues found have a fix available** - only fail the check for issues if there is also a fix for those issues, based on the option you chose from the dropdown list above
-8. Click **Update settings** to update settings and apply them to all future projects.
-9. Settings are saved. Every time any of your collaborators submit pull requests for this specific manifest file, checks are run based on these settings, combined with the settings you've configured on the side of your Git repository.
+1\.  Log in to your Snyk Account and navigate to the relevant group and organization that you want to configure.
+
+2\.  Open the **Projects** tab, and select the required Project. Then, click the **Settings** button on the right side of its row:
+
+![](<../../../.gitbook/assets/PR Checks - Project Settings button.png>)
+
+3\. On the Project **Settings** page, select **GitHub integration** on the left menu:
+
+![](<../../../.gitbook/assets/PR Checks - Project Settings - GitHub integration tab.png>)
+
+4\. On the **Snyk test for pull requests** section, select one of the following:
+
+* **Inherit from Integration settings** - the Project will use the PR Checks settings of its organization. If you want to use this option, select it and click the **Update Snyk test pull request settings** button. If you do not want to make additional changes, you can exit this page.&#x20;
+* **Custom** - the Project will use custom PR Checks settings. If you want to use this option, select it and move to the next step.
+
+![](<../../../.gitbook/assets/PR Checks - Project Settings - Inherit or Custom options.png>)
+
+5\.  \[For the **Custom** option only] Activate the **Custom** option by moving the slider to **Enabled**:  &#x20;
+
+![](<../../../.gitbook/assets/PR Checks - Project Settings - Custom - Enabled.png>)
+
+6\.  From the **Fail conditions** drop-down list, select one of the following options:
+
+* **Only fail when the PR is adding a dependency with issues** - fail the license or security check on the pull request, only if the pull request aims to add a new dependency that contains issues.
+* **Fail if the repo has any issues** - fail the license or security check on the pull request, if there are any issues at all in the repository.
+
+7\.  Select the required checkboxes below the **Fail conditions** drop-down list as follows:
+
+**Note**: The action of the selected checkboxes will be applied according to the **Fail conditions** selection you made in the previous step.
+
+* **Only fail for high or critical severity issues** - fail the check for high or critical severity issues only.
+* **Only fail when the issues found have a fix available** - fail the check for issues, only if there is also a fix for those issues.
+
+![](<../../../.gitbook/assets/PR Checks - Project Settings - Custom - Fail conditions.png>)
+
+8\.  Click the **Update Snyk test pull request settings** button to update the Project settings.&#x20;
+
+Your new settings are saved. Every time you or your collaborators will submit pull requests for this  manifest file, checks will run based on these settings, combined with the settings you have configured on the side of your Git repository.
