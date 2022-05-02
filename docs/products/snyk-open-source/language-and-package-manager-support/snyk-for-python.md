@@ -43,15 +43,15 @@ In order to scan the full dependency tree, Snyk analyzes the installed packages 
 
 ## Pipenv
 
-In order to build the dependency tree, run `pipenv install` as Snyk needs this to create the `pipenv graph` which is then used for the dependency scan to fulfill itself.
+To build the dependency tree, run `pipenv install` as Snyk needs this to create the `pipenv graph` which is then used for the dependency scan to fulfill itself.
 
 Snyk uses the built dependency tree to analyze the `Pipfile`.
 
 ## setup.py
 
-In order to build the dependency tree, Snyk analyzes the `setup.py` file, and detects packages listed in the `install_requires` key.
+To build the dependency tree, Snyk analyzes the `setup.py` file, and detects packages listed in the `install_requires` key.
 
-There is no auto-discovery for this file, it must be specified manually:
+There is no auto-discovery for this file. It must be specified manually:
 
 ```
 snyk test --file=setup.py
@@ -83,20 +83,20 @@ The way Snyk analyzes and builds the tree varies depending on the language and p
 
 When scanning your Python project for vulnerabilities, use these options to modify commands:
 
-| Option                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `--command=`            | <p>Snyk uses Python in order to scan and find your dependencies. Snyk needs the Python version to start scanning, and defaults to "python"</p><p>If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.</p><p>For example: <code>snyk test --command=python3</code></p><p>See <a href="snyk-for-python.md">Using different Python versions</a> for more details</p>                                                                                                                                         |
-| `--skip-unresolved=`    | Skip packages when they can’t be found in the environment (for example, private packages that can’t be accessed from the machine running the scan).                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `--file=`               | <p>Specify a specific file to test. By default, Snyk scans the requirements.txt file on the top level of the project.</p><p>If explicitly specified with this parameter, Snyk can recognize any manifest files named <code>req.txt</code>, where: Each (*) is a wildcard and <code>req</code> can appear anywhere in the file name.</p><p>For example, Snyk recognizes your manifest file when you have renamed it to requirements-dev.txt.</p><p><strong>Note</strong>: --package-manager=pip should be added to your cmd if the file name is not requirements.txt</p> |
-| `--package-manager=pip` | This parameter is mandatory if you specify a value for the --file parameter that is not to a requirements.txt file. The test fails without this parameter. Specify this parameter with the value pip.                                                                                                                                                                                                                                                                                                                                                                   |
+| Option                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `--command=`            | <p>Snyk uses Python in order to scan and find your dependencies. Snyk needs the Python version to start scanning, and defaults to "python"</p><p>If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.</p><p>For example: <code>snyk test --command=python3</code></p><p>See <a href="snyk-for-python.md">Using different Python versions</a> for more details</p>                                                                                                                                            |
+| `--skip-unresolved=`    | Skip packages when they can’t be found in the environment (for example, private packages that can’t be accessed from the machine running the scan).                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| `--file=`               | <p>Specify a specific file to test. By default, Snyk scans the requirements.txt file at the top level of the project.</p><p>If explicitly specified with this parameter, Snyk can recognize any manifest files based on <code>file=*req*.txt</code>. Each (*) is a wildcard and <code>req</code> can appear anywhere in the file name.</p><p>For example, Snyk recognizes your manifest file when you have renamed it to requirements-dev.txt.</p><p><strong>Note</strong>: --package-manager=pip should be added to your cmd if the file name is not requirements.txt</p> |
+| `--package-manager=pip` | This parameter is mandatory if you specify a value for the --file parameter that is not to a requirements.txt file. The test fails without this parameter. Specify this parameter with the value pip.                                                                                                                                                                                                                                                                                                                                                                      |
 
 ## Git services for Python projects
 
 Python projects can be imported from any of the Git repositories Snyk supports.
 
-In order to test your Python projects using pip as a package manager, Snyk analyzes your `requirements.txt` file, and so you must have this file in your repository before importing.
+To test your Python projects using pip as a package manager, Snyk analyzes your `requirements.txt` file, and so you must have this file in your repository before importing.
 
-If you’ve renamed your `requirements.txt` files (for example, if you have renamed a file to `requirements-dev.txt)`, Snyk tries to import every file that follows the `**/req.txt` convention as a Python project.
+If you’ve renamed your `requirements.txt` files (for example, if you have renamed a file to `requirements-dev.txt)`, Snyk tries to import every file that follows the `**/*req*.txt` convention as a Python project.
 
 If you've placed your files in a requirements folder (for example, if you have placed your file under `requirements/requirements.txt`) Snyk tries to import every file that follows the `**/requirements/*.txt`convention as a Python project.
 
