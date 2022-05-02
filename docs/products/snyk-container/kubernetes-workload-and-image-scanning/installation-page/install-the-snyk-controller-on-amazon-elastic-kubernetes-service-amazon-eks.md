@@ -36,8 +36,6 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
 * Your Kubernetes cluster needs to be able to communicate with Snyk outbound over HTTPS.
 * When configuring Snyk to integrate with an Amazon Elastic Kubernetes Services (EKS) cluster, if you wish to scan images hosted on your Amazon Elastic Container Registry (ECR), you may also deploy the quick start [Snyk Security on AWS](https://aws.amazon.com/quickstart/architecture/snyk-security/) to enable this integration.
 
-![](../../../../.gitbook/assets/snyk\_rocket.png)
-
 Refer to [Snyk Controller for Amazon EKS Quick Start Reference Deployment](https://aws-quickstart.github.io/quickstart-eks-snyk/).
 
 ## Configure Snyk Controller to pull and scan private images from ECR
