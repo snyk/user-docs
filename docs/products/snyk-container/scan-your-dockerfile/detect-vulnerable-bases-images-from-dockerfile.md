@@ -8,7 +8,7 @@ After you [integrate your Git repository to Snyk](../../../features/integrations
 
 ## Linking from a Dockerfile to its container images
 
-You can also link from a Dockerfile to all container images built from it. This can be used to understand the security impact on your running applications, and understand which images can be better secured or need to be rebuilt when taking action and updating the Dockerfile base image.
+You can also link from a Dockerfile to all container images built from it. This linking can be used to understand the security impact on your running applications, and understand which images can be better secured or need to be rebuilt when you are taking action and updating the Dockerfile base image.
 
 ![](../../../.gitbook/assets/mceclip3.png)
 
