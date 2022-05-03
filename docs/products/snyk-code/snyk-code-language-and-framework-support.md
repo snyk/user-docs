@@ -15,16 +15,17 @@ This technology allows Snyk Code to:
 
 Snyk Code currently supports:
 
-* **Java**
-* **JavaScript**
-* **TypeScript**
-* **Python**
-* **PHP**
 * **C#**
 * **Go**
+* **Java**
+* **JavaScript**
+* **PHP**
+* **Python**
+* **Ruby**
+* **TypeScript**
 
 {% hint style="info" %}
-Beta support exists for Ruby and Kotlin. Contact us for more details or with your further needs.
+Beta support exists for Kotlin. Contact us for more details or with your further needs.
 {% endhint %}
 
 ## Language type and framework support
