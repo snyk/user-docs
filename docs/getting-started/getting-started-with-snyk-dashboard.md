@@ -8,8 +8,7 @@ The **Pending tasks** section of the dashboard shows recommended outstanding wor
 
 This information includes:
 
-* Pull Requests \(PRs\) that could be raised to fix vulnerabilities in some of the most vulnerable projects.
-* PRs that have already been raised \(by or through Snyk\) and are open and awaiting review.
+* Pull Requests (PRs) that could be raised to fix vulnerabilities in some of the most vulnerable projects.
+* PRs that have already been raised (by or through Snyk) and are open and awaiting review.
 
-Currently, Snyk only tracks and flags PRs in GitHub, and only for the top most vulnerable projects. If you use another SCM, **Pending tasks** only shows PRs that could be raised, not PRs that have already been raised.
-
+Currently, Snyk only tracks and flags PRs in GitHub, GitHub Enterprise, and Bitbucket Cloud, and only for the top-most vulnerable projects. If you use another SCM, **Pending tasks** shows only PRs that could be raised, not PRs that have already been raised.
