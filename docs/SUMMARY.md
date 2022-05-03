@@ -213,7 +213,7 @@
   * [Configuring Snyk Code](products/snyk-code/configuring-snyk-code.md)
   * [Using Snyk Code via web](products/snyk-code/using-snyk-code-web.md)
   * [Using Snyk Code via IDE](products/snyk-code/using-snyk-code-via-ide.md)
-  * [Using Snyk Code via CLI](products/snyk-code/cli-for-snyk-code/README.md)
+  * [Using Snyk Code via the CLI](products/snyk-code/cli-for-snyk-code/README.md)
     * [Understand Snyk Code CLI results](products/snyk-code/cli-for-snyk-code/snyk-code-cli-results.md)
     * [Filtering and exporting Snyk Code CLI results](products/snyk-code/cli-for-snyk-code/advanced-snyk-code-cli-usage.md)
     * [Displaying the CLI results in an HTML format using the Snyk-to-HTML feature](products/snyk-code/cli-for-snyk-code/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/README.md)
