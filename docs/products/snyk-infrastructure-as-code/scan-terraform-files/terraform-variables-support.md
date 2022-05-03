@@ -1,16 +1,5 @@
 # Terraform variables support
 
-{% hint style="info" %}
-This feature is currently in Beta.
-
-To enable it from [Snyk Preview](../../../features/user-and-group-management/managing-settings/snyk-preview.md):
-
-1. Log into Snyk.
-2. Click the Settings icon to navigate to **Settings**.
-3. Click **Snyk Preview**.
-4. Enable the feature, then click **Save changes**.
-{% endhint %}
-
 ## Summary
 
 Support for Terraform (TF) variables is currently available only in the CLI.
