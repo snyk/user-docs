@@ -12,7 +12,7 @@ For more information see the [API documentation](https://apidocs.snyk.io/#post-/
 
 The request body should contain the details for your new App, including the App's **name**, **redirectURIs**, and [**scopes**](create-an-app-via-the-api.md#requesting-scopes).
 
-The response includes details necessary to complete the integration: **clientId** and **clientSecret**. You will use these values with our API endpoints within your App, so consider storing them as part of your App's configuration.
+The response includes details necessary to complete the integration: **clientId** and **clientSecret**. You will use these values with Snyk API endpoints within your App, so consider storing them as part of your App's configuration.
 
 {% hint style="danger" %}
 Never share the **clientSecret** publicly, as this is used to authenticate your App. This is also the only time you’ll be able to get the **clientSecret**, so keep it secure and private. If you lose it or if the secret is leaked, you can [rotate your App's **clientSecret**](managing-app-details.md#rotate-app-client-secret).
@@ -20,10 +20,10 @@ Never share the **clientSecret** publicly, as this is used to authenticate your 
 
 ## Create using Snyk CLI
 
-The [Snyk CLI](../../../../snyk-cli/) can be used to create the Snyk App. If you don't already have the Snyk CLI installed on your machine, you can easily do so by following our [getting started with Snyk CLI docs](../../../../snyk-cli/getting-started-with-the-cli/). See [Create a Snyk App using the CLI](../../../../snyk-cli/create-a-snyk-app-using-the-snyk-cli.md) for details.
+The [Snyk CLI](../../../../snyk-cli/) can be used to create the Snyk App. If you do not already have the Snyk CLI installed on your machine, you can install by following the steps in [Getting started with the CLI](../../../../snyk-cli/getting-started-with-the-cli/). See [Create a Snyk App using the CLI](../../../../snyk-cli/create-a-snyk-app-using-the-snyk-cli.md) for details.
 
 {% hint style="warning" %}
-All `apps` commands are only accessible behind the `--experimental` flag and the behaviour can change at any time without prior notice. You are advised to use all the commands with caution.
+All `apps` commands are only accessible behind the `--experimental` flag and the behavior can change at any time without prior notice. You are advised to use all the commands with caution.
 
 If you are already authenticated with Snyk CLI (`snyk auth`) you can use the `apps` sub-commands as is. Otherwise, first authenticate using `snyk auth` and then use the Snyk Apps commands.
 {% endhint %}
@@ -32,7 +32,7 @@ Snyk Apps related sub-commands are under the `snyk apps` command.
 
 Use the `create` sub-command to create the Snyk Apps. There are two ways to use the command.
 
-THe first is the normal mode, for example:
+The first is the normal mode, for example:
 
 ```
 snyk apps create --experimental --org=48ebb069-472f-40f4-b5bf-d2d103bc02d4 --name='My Awesome App' --redirect-uris=https://example1.com,https://example2.com --scopes=apps:beta
@@ -77,7 +77,7 @@ The following lists the **available scopes**.
 ## Generally Available
 
 {% hint style="warning" %}
-As Snyk move towards more granular scopes, Snyk is allowing Snyk Apps to be created with more granular scopes. This is to promote the principle of least privilege. Refer to [Snyk Apps Scopes](../snyk-apps-scopes.md) for the list of scopes available behind a feature flag (`appsGranularPermissions`). Being behind a feature flag means they are still in active development. If you would like to test them out as they give a look into how Snyk Apps scopes will look in the future, contact the Snyk [support team](https://snyk.io/contact-us/).
+As Snyk moves towards more granular scopes, Snyk is allowing Snyk Apps to be created with more granular scopes. This is to promote the principle of least privilege. Refer to [Snyk Apps Scopes](../snyk-apps-scopes.md) for the list of scopes available behind a feature flag (`appsGranularPermissions`). Being behind a feature flag means they are still in active development. If you would like to test them out as they give a look into how Snyk Apps scopes will look in the future, contact the Snyk [support team](https://snyk.io/contact-us/).
 {% endhint %}
 
 {% hint style="info" %}
