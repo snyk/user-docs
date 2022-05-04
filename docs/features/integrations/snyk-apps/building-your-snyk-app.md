@@ -1,6 +1,6 @@
-# Building your Snyk App
+# Advantages of Snyk Apps
 
-You can now use the API with your Snyk App! Your users can [authorize access to their Snyk Orgs](./) based on the [scopes you request](getting-started-with-snyk-apps/create-an-app-via-the-api.md#requesting-scopes).
+You can now use the API with your Snyk App. Your users can [authorize access to their Snyk Orgs](./) based on the [scopes you request](getting-started-with-snyk-apps/create-an-app-via-the-api.md#requesting-scopes).
 
 {% hint style="info" %}
 **Feature availability**\

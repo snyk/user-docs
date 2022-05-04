@@ -90,7 +90,7 @@
     * [Set up the refresh token exchange](features/integrations/snyk-apps/getting-started-with-snyk-apps/set-up-the-refresh-token-exchange.md)
     * [Retrieve the App Org IDs](features/integrations/snyk-apps/getting-started-with-snyk-apps/retrieve-the-app-org-ids.md)
     * [Managing App details](features/integrations/snyk-apps/getting-started-with-snyk-apps/managing-app-details.md)
-  * [Building your Snyk App](features/integrations/snyk-apps/building-your-snyk-app.md)
+  * [Advantages of Snyk Apps](features/integrations/snyk-apps/building-your-snyk-app.md)
   * [Snyk Apps Scopes](features/integrations/snyk-apps/snyk-apps-scopes.md)
   * [Tutorial: create a Snyk App](snyk-apps/tutorial-create-a-snyk-app/README.md)
     * [Configuring Express.js](snyk-apps/tutorial-create-a-snyk-app/configuring-express.js.md)
