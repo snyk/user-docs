@@ -9,17 +9,17 @@ In this tutorial, we'll create a simple Snyk App using TypeScript to show users 
 
 ## Configure the basics
 
-To begin, create a directory to house the project somewhere on your device. From within the newly created directory, we'll initialize a `package.json` manifest for our application to keep track of our dependencies and ensure our project is portable:
+To begin, create a directory to house the project somewhere on your device. From within the newly created directory, we'll initialize a `package.json` manifest for our application to keep track of our dependencies and ensure our project is portable.
 
-Run `npm init` and follow the prompts. You can add as much or as little information as you want here. For now, the default options suffice.
+To do so, run `npm init` and follow the prompts. You can add as much or as little information as you want here. For now, the default options will suffice.
 
-Now that we have a place to save dependency information, use `npm` to install TypeScript as a development dependency:
+Now that we've got a place to save dependency information, use `npm` to install TypeScript as a development dependency:
 
 ```
 npm install typescript --save-dev
 ```
 
-At this point, TypeScript has been installed, but we'll need a configuration file to provide compilation options to the `tsc` binary. Create a TypeScript configuration file i called `tsconfig.json` n the root of the project. Use the template that follows:
+At this point, TypeScript has been installed, but we'll need a configuration file to provide compilation options to the `tsc` binary. Create a TypeScript configuration file in the root of the project called `tsconfig.json` using the template below.
 
 ```json
 {
@@ -42,7 +42,7 @@ At this point, TypeScript has been installed, but we'll need a configuration fil
 }
 ```
 
-The options we've provided tell TypeScript to emit ES6 JavaScript, which type of module code to generate, and whether or not to provide a corresponding source map for the compiled files, and specify a few other handy options. For a complete overview of the possible options, visit https://aka.ms/tsconfig.json
+The options we've provided tell TypeScript that it should emit ES6 JavaScript, which type of module code to generate, whether or not to provide a corresponding source map for the compiled files and a few other handy options. For a complete overview of the possible options, visit https://aka.ms/tsconfig.json .
 
 For the purposes of this tutorial, the most noteworthy options we've set are `rootDir` and `outDir`. These options describe where our source `.ts` files and our compiled `.js` files, respectively, live within our project. Create the directories referenced by the setting values:
 
@@ -51,9 +51,9 @@ mkdir ./dist
 mkdir ./src
 ```
 
-## Test it out
+### Test it out
 
-Now that we have the basic parameters in place, we'll create a simple Hello World by creating the file `./src/index.ts`.
+Now that we've got the basic parameters in place, we'll create a simple Hello World by creating the file `./src/index.ts`.
 
 ```
 const world = 'world';
@@ -65,7 +65,7 @@ export function hello(world: string = world): string {
 
 Now we can confirm that everything is wired up correctly. Run `npx tsc` to compile the project.
 
-If everything is successful, the project tree looks like this:
+If everything is successful, the project tree should now look like this:
 
 ```
 my-snyk-app/
@@ -81,7 +81,7 @@ my-snyk-app/
  - tsconfig.json
 ```
 
-The `tsc` program compiled our source TypeScript file into ES6 JavaScript and provided a source map for debugging.
+The `tsc` program compiled our source TypeScript file into ES6 JavaScript and provided a source map for debugging!
 
 {% hint style="info" %}
 The compiler can also be put into watch mode to continually poll your `.ts` files for changes: `npx tsc -w`
