@@ -22,6 +22,6 @@ The response includes details necessary for your app to communicate with the Sny
 
 **Both tokens must be stored in a secured data store. It is highly recommended to encrypt the values before storing them.**
 
-The **access\_token** will be used for future API calls on behalf of the user and organization. The access-token has a much shorter lifespan than the **refresh\_token**.
+The **access\_token** will be used for future API calls on the user & organization’s behalf. It has a much shorter lifespan as compared to the **refresh\_token**.
 
-The **refresh\_token** can be used a single time to get a new **access\_token** when it expires. In other words, the **refresh\_token** will no longer be usable if its own expiry time passes or if it is used to refresh the **access\_token**.
+The **refresh\_token** can be used a single time to get a new **access\_token** when it expires. In other words, the **refresh\_token** will no longer be usable if its own expiry time passes or if it’s used to refresh the **access\_token**.
