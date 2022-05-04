@@ -1,18 +1,18 @@
 # Managing App details
 
-### List Apps
+## List Apps
 
-To view a list of Snyk Apps owned by your Snyk Organization, send a **GET** request to the `apps` endpoint (for details, see the [API documentation](https://apidocs.snyk.io/#get-/orgs/-org\_id-/apps)).
+To view a list of Snyk Apps owned by your Snyk organization, send a **GET** request to the `apps` endpoint (for details, see the [API documentation](https://apidocs.snyk.io/#get-/orgs/-org\_id-/apps)).
 
 ```
 https://api.snyk.io/rest/orgs/{orgId}/apps?version={version}
 ```
 
-You cannot view the **clientSecret** after the App is created. If you have misplaced it, you can [rotate your **clientSecret**](managing-app-details.md#rotate-app-client-secret) and receive a new one.
+## Rotate App clientSecret
 
-### Rotate App clientSecret
+You cannot view the **clientSecret** after the App is created. If you have misplaced it, you can rotate your **clientSecret** and receive a new one.
 
-All secret management requests are performed by sending a POST request to the endpoint `/apps/{clientId}/secrets`. For more details refer to the [API documentation](https://apidocs.snyk.io/#post-/orgs/-org\_id-/apps/-client\_id-/secrets). The clientId can be found using the [List Apps endpoint](managing-app-details.md#view-app-details).
+All secret management requests are performed by sending a POST request to the endpoint `/apps/{clientId}/secrets`. For more details refer to the [API documentation](https://apidocs.snyk.io/#post-/orgs/-org\_id-/apps/-client\_id-/secrets). The clientId can be found using the [List Apps endpoint](https://apidocs.snyk.io/?version=2022-04-06%7Eexperimental#get-/orgs/-org\_id-/apps).
 
 ```
 https://api.snyk.io/rest/orgs/{orgId}/apps/{clientId}/secrets?version={version}
