@@ -6,7 +6,7 @@ Snyk offers a wide range of tools to allow admins to manage their groups, orgs, 
 
 Snyk offers API tokens to enable authentication to service accounts or third party tools; see [authentication](authentication/ "mention").
 
-![](<../../.gitbook/assets/image (84).png>)
+![](<../../.gitbook/assets/image (84) (2).png>)
 
 ### Set up Single Sign-On (SSO)
 

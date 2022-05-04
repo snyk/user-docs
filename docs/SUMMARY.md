@@ -316,6 +316,7 @@
       * [Scan container images from Quay in Snyk](products/snyk-container/image-scanning-library/quay-image-scanning/scan-container-images-from-quay-in-snyk.md)
 * [Snyk Infrastructure as Code](products/snyk-infrastructure-as-code/README.md)
   * [Getting started with Snyk Infrastructure as Code (IaC)](products/snyk-infrastructure-as-code/getting-started-snyk-iac.md)
+  * [Using Snyk IaC via web](products/snyk-infrastructure-as-code/using-snyk-iac-via-web.md)
   * [Scan Terraform files](products/snyk-infrastructure-as-code/scan-terraform-files/README.md)
     * [Configure your integration to find security issues in your Terraform files](products/snyk-infrastructure-as-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess.md)
     * [Scan and fix security issues in Terraform files](products/snyk-infrastructure-as-code/scan-terraform-files/scan-and-fix-security-issues-in-terraform-files.md)
