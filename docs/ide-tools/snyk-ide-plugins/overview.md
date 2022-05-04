@@ -9,7 +9,7 @@ This document shows how to extract Snyk scan results and make them available in 
 Snyk SDK makes it easier to implement and download periodic updates. While this integration is under development, a [Java implementation](https://github.com/jenkinsci/snyk-security-scanner-plugin/blob/master/src/main/java/io/snyk/jenkins/tools/internal/DownloadService.java) is available.
 
 {% hint style="info" %}
-Download the Snyk CLI for IDE usage whether or not the developer's machine has the Snyk CLI installed.
+Developers must download the Snyk CLI for IDE usage whether or not their machine has the Snyk CLI installed.
 {% endhint %}
 
 To use the Snyk CLI you must authenticate. To check whether the user is previously authenticated on this machine, run `snyk config get api` and check for a return of a UUID. If needed run `snyk auth` and follow the prompts to sign up and log in. The process stores the Snyk token locally on the user's machine. For more information see [Authenticating the user to Snyk](overview.md#6689c939-0bff-4d30-9480-b62179889e37).
