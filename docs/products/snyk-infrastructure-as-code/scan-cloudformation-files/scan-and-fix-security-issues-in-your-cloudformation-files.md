@@ -11,7 +11,7 @@ Snyk scans CloudFormation code for misconfigurations and security issues. For co
 
 * Log in to the account and navigate to the relevant group and organization.
 
-![](<../../../.gitbook/assets/screenshot-2020-07-09-at-12.43.02-2- (3) (4) (4) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (29).png>)
+![](<../../../.gitbook/assets/image (69).png>)
 
 * Re-import repositories if testing occurred before the infrastructure as code feature was enabled in order to detect the CloudFormation code:
 
@@ -20,9 +20,9 @@ Snyk scans CloudFormation code for misconfigurations and security issues. For co
 * Every time a repository is scanned:
   * Every CloudFormation file is imported as a separate project, grouped together per repository, similar to this example:
 
-![](../../../.gitbook/assets/screen\_shot\_2021-06-23\_at\_10.16.38.png)
+![](<../../../.gitbook/assets/image (68).png>)
 
 * If the repository was re-imported: in order to then import the CloudFormation files, Snyk imports and re-tests the existing application manifest files--displaying the test time as "now".
   * Click a project link to view the scan results and to help view details on the CloudFormation code:
 
-![Screen\_Shot\_2021-06-23\_at\_10.18.49.png](../../../.gitbook/assets/screen\_shot\_2021-06-23\_at\_10.18.49.png)
+![](<../../../.gitbook/assets/image (94).png>)

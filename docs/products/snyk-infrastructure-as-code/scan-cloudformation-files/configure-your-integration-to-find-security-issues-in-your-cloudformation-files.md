@@ -13,15 +13,14 @@ Scanning CloudFormation provides security feedback on everything that is statica
 **Prerequisites**
 
 * You must be an administrator for the organization you're configuring in Snyk.
-* Ensure you’ve already integrated your Git repository; if you haven’t done this yet, check out the [Git repository \(SCM\) integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations).
+* Ensure you’ve already integrated your Git repository; if you haven’t done this yet, check out the [Git repository (SCM) integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations).
 
 **Configure Snyk**
 
-![](../../../.gitbook/assets/enable_snyk_to_detect_kubernetes_configuration_files.gif)
+![](../../../.gitbook/assets/enable\_snyk\_to\_detect\_kubernetes\_configuration\_files.gif)
 
 1. Enable Snyk to detect Infrastructure as code files as follows:
-   1. **Note**: Integrations are managed per organization. 
+   1. **Note**: Integrations are managed per organization.
 2. If needed, review and adjust settings in the **Infrastructure as code** settings area:
 
-![](../../../.gitbook/assets/screen_shot_2021-06-22_at_11.44.07.png)
-
+![](<../../../.gitbook/assets/image (78).png>)
