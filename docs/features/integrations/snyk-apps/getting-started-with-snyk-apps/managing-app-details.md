@@ -52,7 +52,7 @@ When you replace your clientSecret, your current secret is immediately invalid. 
 
 You can update your App's name, or the list of redirect URIs you have set.
 
-To update an App, send a **PATCH** request to the `apps/{clientId}` endpoint (for details, see the [API documentation](https://apidocs.snyk.io/#patch-/orgs/-org\_id-/apps/-client\_id-)). The clientId can be found using the [List Apps endpoint](managing-app-details.md#view-app-details).
+To update an App, send a **PATCH** request to the `apps/{clientId}` endpoint (for details, see the [API documentation](https://apidocs.snyk.io/#patch-/orgs/-org\_id-/apps/-client\_id-)). The clientId can be found using the [List Apps endpoint](https://apidocs.snyk.io/?version=2022-04-06%7Eexperimental#get-/orgs/-org\_id-/apps).
 
 ```
 https://api.snyk.io/rest/orgs/{orgId}/apps/{clientId}?version={version}
