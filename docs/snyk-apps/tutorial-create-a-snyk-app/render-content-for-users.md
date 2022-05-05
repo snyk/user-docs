@@ -6,15 +6,15 @@ In this module, we'll switch gears to focus on displaying content to the users w
 
 ## Add a template engine to the Snyk App
 
-While Express is perfectly capable of printing content to the screen and even rendering HTML server-side, life is much easier when using a template engine. For this tutorial, we'll be using [EJS](https://ejs.co).
+While Express is perfectly capable of printing content to the screen and even rendering HTML server-side, life is much easier when using a template engine. For this tutorial we are using [EJS](https://ejs.co).
 
-First things first, install the node packages we'll be using for this portion of the tutorial:
+First, install the node packages needed in this part of the tutorial:
 
 ```bash
 npm install --save ejs
 ```
 
-Next, we'll modify the `initGlobalMiddlewares()` function we created in our last module to tell express that we want to use a _view engine_, EJS in this case, and let it know where we'll be storing our view templates. We'll be storing our EJS templates in `./src/views` and keeping any common files (e.g., images, CSS, etc...) in `/.src/public`.
+Next, modify the `initGlobalMiddlewares()` function we created in our last module to tell express that we want to use a _view engine_, EJS in this case, and let it know where we'll be storing our view templates. We'll be storing our EJS templates in `./src/views` and keeping any common files such as images and CSS in `/.src/public`.
 
 Create the new directories first.
 
@@ -52,7 +52,7 @@ class App {
 
 For each route that we'll provide a template for, we'll need to modify the corresponding controller and ensure that we're using `res.render("<template name>")` rather than something more simplistic like `res.send()`.
 
-E.g.,
+Example:
 
 ```typescript
 ...
@@ -68,13 +68,13 @@ private indexPage(req: Request, res: Response, next: NextFunction) {
 ...
 ```
 
-That's really all there is to it.
+That's all there is to it.
 
 EJS templates support the concept of partial inclusion. While not strictly necessary, it makes sense to add a subdirectory to our `./src/views` to differentiate partial templates like headers and footers from route templates. For the tutorial, we'll use `./src/views/partials` to store such templates.
 
 ## Basic EJS templates
 
-The first template we'll create is a partial, which we'll include in the other templates. This `header.ejs` will be the place we link stylesheets and other information that belongs in the `<head>` of an HTML document.
+The first template we'll create is a partial one, which we'll include in the other templates. This `header.ejs` will be the place we link stylesheets and other information that belong in the `<head>` of an HTML document.
 
 ```ejs
 // ./views/partials/header.ejs
@@ -138,23 +138,23 @@ This `index.ejs` template will cover our basic `/` route.
 </body>
 ```
 
-The above templates should be enough to get you started adding your own templates to any new routes you create. If you intend to continue using EJS, make sure to reference the documentation for information about the features offered.
+These templates should be enough to get you started adding your own templates to any new routes you create. If you intend to continue using EJS, refer to the documentation for information about the features offered.
 
 Rendering content for your Snyk App can be as simple or complex as you'd like it to be. Because we're dealing with JavaScript, the options are very flexible!
 
 ## Showing users a list of projects
 
-Now that we've got some basic templates, let's take a look at how we can add some functionality to our Snyk App using a User's Snyk data. For this tutorial, we'll be setting up our app to allow users to view all of their projects within Snyk from within our app.
+Now that we have some basic templates, take a look at how we can add some functionality to our Snyk App using a User's Snyk data. For this tutorial, we set up our app to allow users to view all of their projects within Snyk from within our app.
 
-This is a basic, but easily extendable feature.
+This is a basic and easily extendable feature.
 
-We'll need to create:
+We need to create:
 
 * A new route controller
 * A function (or functions) to pull the project data
 * An EJS template for showing the projects
 
-Let's start with the API work. We'll utilize the `callSnykApi()` function we created in the previous module. Since this directly relates to a particular route, we'll store this file with its controller. Following the patteren we've used throughout these tutorial modules, we'll create both files at `./src/routes/projects/`.
+We start with the API work, using the `callSnykApi()` function we created in the previous module. Since this directly relates to a particular route, we'll store this file with its controller. Following the pattern we've used throughout these tutorial modules, we'll create both files at `./src/routes/projects/`.
 
 ```typescript
 // ./src/routes/projects/projectsHandler.ts
@@ -269,4 +269,4 @@ new App([
 
 Using the projects API handler and controller we created in this module, you should have all you need to create your own custom code and make your Snyk App do whatever you'd like it to do.
 
-We used the v1 API here, but make sure to keep an eye out on Snyk's REST API over the next months as more and more features are added, you may find new or more efficient endpoints to use in your Snyk App!
+We used the v1 API but keep an eye on Snyk's REST API. As additional features are added, you may find new or more efficient endpoints to use in your Snyk App.
