@@ -70,7 +70,8 @@ Provide SAML attributes in the below form.
 * **X509 signing certificate** (mandatory): The identity provider public key. Download the certificate from your identity provider and paste it here. The system will encode it in _**Base64 format.**_
 * **Email domains and sub-domains** that would need SSO access (mandatory)
 * **Protocol binding**: HTTP-POST is recommended; HTTP-Redirect is also supported
-* **IdP-Initiated workflow**: IdP-Initiated SSO behavior carries a [security risk](https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/identity-provider-initiated-single-sign-on#risks-and-considerations) and is therefore not recommended. The risk is explained on the IdP side and should be understood before enabling this option.
+* **IdP-Initiated workflow**: Enable this option to add Snyk tile to your Identity Provider. \
+  **Note:** IdP-Initiated SSO behavior carries a [security risk](https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/identity-provider-initiated-single-sign-on#risks-and-considerations) and is therefore not recommended. The risk is explained on the IdP side, and should be understood before enabling this option.
 
 ![](<../../../.gitbook/assets/Screenshot 2022-02-24 at 14.40.24.png>)
 
