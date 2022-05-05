@@ -43,6 +43,10 @@ You can also use these direct links to download the executables:
 * **Alpine**: [https://static.snyk.io/cli/latest/snyk-alpine](https://static.snyk.io/cli/latest/snyk-alpine)
 
 {% hint style="warning" %}
+For Apple M1 (darwin/arm64), see: [How do I run Snyk CLI on an Apple M1 machine?](https://support.snyk.io/hc/en-us/articles/5022278090397)
+{% endhint %}
+
+{% hint style="warning" %}
 **Note:** The drawback of this method is that you must keep the Snyk CLI up to date manually.
 {% endhint %}
 
@@ -54,6 +58,10 @@ Install Snyk CLI from [Snyk's tap](https://github.com/snyk/homebrew-tap) with [H
 brew tap snyk/tap
 brew install snyk
 ```
+
+{% hint style="warning" %}
+For Apple M1 (darwin/arm64), see: [How do I run Snyk CLI on an Apple M1 machine?](https://support.snyk.io/hc/en-us/articles/5022278090397)
+{% endhint %}
 
 ## Install with Scoop (Windows)
 
