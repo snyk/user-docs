@@ -7,18 +7,11 @@ As with any Kubernetes deployment, the Snyk controller runs within a single name
 ## Prerequisites
 
 {% hint style="info" %}
-**Feature availability**\
-This feature is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.
+Before following this installation page, please review the [prerequisite setting page](prerequisite-setting.md)
 {% endhint %}
 
 * The Snyk controller is installed using OperatorHub through RedHat OpenShift 4.
-* Set up your Snyk account before getting started.
-* To configure the integration from Snyk, you must be an administrator for the account.
-* A minimum 50 GB of storage must be available in the form of an [emptyDir](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir) on the cluster and the person configuring the cluster must be an administrator.
-* External internet access must be available from the Kubernetes cluster.
-*   [Enable the Kubernetes Integration ](../kubernetes-integration-overview/viewing-your-kubernetes-integration-settings.md)to get your **Integration ID**
-
-    ****
+* A minimum of 50 GB of storage must be available in the form of an [emptyDir](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir) on the cluster and the person configuring the cluster must be an administrator.
 
 ## Steps
 
@@ -40,7 +33,7 @@ This feature is available with all paid plans. See [pricing plans](https://snyk.
 
     **Tip**
 
-    Cluster scope is the default scope and we recommend you use this when installing the namespace so that we can scan the entire cluster. You can choose Namespaced scope, in which case the Snyk controller will watch for workloads only in the namespace in which it is deployed!
+    Cluster scope is the default scope and we recommend you use this when installing the namespace so that we can scan the entire cluster. You can choose Namespaced scope, in which case the Snyk controller will watch for workloads only in the namespace in which it is deployed.
 4. Save it for use from your Kubernetes environment in the next step.
 5.  The Snyk monitor runs by using your Snyk **Integration ID**, and using a dockercfg file. If you are not using any private registries, create a Kubernetes secret called `snyk-monitor` containing the Snyk **Integration ID** from the previous step and run the following command:
 
