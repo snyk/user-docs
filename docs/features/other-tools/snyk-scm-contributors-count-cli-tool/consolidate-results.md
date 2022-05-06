@@ -11,7 +11,7 @@ Available options:
 ```
   --version                 Show version number                        [boolean]
   --help                    Show help                                  [boolean]
-  --folderPath              Path to a folder containing the json outputs        [requiered]
+  --folderPath              Path to a folder containing the json outputs        [required]
 ```
 
 #### Overview:
