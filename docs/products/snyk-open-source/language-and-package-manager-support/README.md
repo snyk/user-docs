@@ -1,9 +1,9 @@
-# Language & package manager support
+# Open Source language and package manager support
 
 Snyk Open Source supports these development languages, build tools and package managers.
 
 {% hint style="info" %}
-For language support for other Snyk products, see the docs for those products - for example, see [snyk-code-language-and-framework-support.md](../../snyk-code/snyk-code-language-and-framework-support.md "mention") for details of Snyk Code support.&#x20;
+For language support for other Snyk products, see the docs for those products - for example, see [snyk-code-language-and-framework-support.md](../../snyk-code/snyk-code-language-and-framework-support.md "mention") for details of Snyk Code support.
 {% endhint %}
 
 | **Language**                                                         | **Package manager/build tool** |
@@ -18,4 +18,4 @@ For language support for other Snyk products, see the docs for those products - 
 | [PHP](snyk-for-php.md)                                               | Composer                       |
 | [Python](snyk-for-python.md)                                         | pip, Poetry, pipenv            |
 | [Ruby](snyk-for-ruby.md)                                             | Bundler                        |
-| [Scala](snyk-for-scala.md)                                           | sbt, CocoaPods                 |
+| [Scala](snyk-for-scala.md)                                           | sbt                            |
