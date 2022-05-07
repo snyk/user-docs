@@ -1,5 +1,5 @@
 ---
-description: How to use the  command
+description: How to use the consolidateResults command
 ---
 
 # Consolidate Results

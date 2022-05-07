@@ -1,28 +1,31 @@
 ---
-description: How to use the generated import file with the snyk-api-import tool
+description: How to generate the import file and use it with the snyk-api-import tool
 ---
 
-# Creating and using the Import files
+# Creating and using the import file
 
-### How it works
-#### **Please note that this feature only works with Bitbucket and Azure** ####
+## How the import file works
 
-When the **snyk-contributors-count** tool connects both to your Snyk account and your SCM account, it finds out which repos/projects are monitored by Snyk and which are not.
+This feature only works with Bitbucket and Azure.
 
-By applying the two related flags to the command, the tool generates an import file, populated with the unmonitored repo data, to be used with the [**snyk-api-import** ](creating-and-using-the-import-files.md#using-the-snyk-api-import-tool)tool to import the missing repos to your Snyk account.
+When the `snyk-scm-contributors-count` tool connects both to your Snyk account and your SCM account, the tools finds out which repos/projects are monitored by Snyk and which are not.
 
-* If the Snyk token was exported and the related Snyk account has an integration set for the specific SCM that is being scanned by the tool, the tool will try to find and match the OrgID and IntegrationID from Snyk as needed by the **snyk-api-import** tool and auto-add it to the import file.
-* If a Snyk token was not exported or the user has no Snyk account as of yet, this feature can be used to map all repos in the SCM and create the import file to be later used by the **snyk-api-import** tool. In this case or in a case that the tool can not find an OrgID or IntegrationID, it prompts the user to supply these IDs (once) and auto-adds them to the import file.
+When you apply the `importConfDir` and `importFileRepoType` flags to the command, the tool generates an import file populated with the unmonitored repo data, to be used with the [**snyk-api-import** ](creating-and-using-the-import-files.md#using-the-snyk-api-import-tool)tool to import the missing repos to your Snyk account.
 
-### The Flags
+* If the Snyk token was exported and the related Snyk account has an integration set for the specific SCM that is being scanned by the tool, the tool will try to find and match the OrgID and IntegrationID from Snyk as needed by the `snyk-api-import` tool and automatically add it to the import file.
+* If a Snyk token was not exported or the user has no Snyk account yet, this feature can be used to map all repos in the SCM and create the import file to be later used by the `snyk-api-import` tool. In this case or if the tool can not find an OrgID or IntegrationID, the tool prompts the user to supply these IDs (once) and automatically adds them to the import file.
 
-**`importConfDir`** - This flag both indicates that a query for unmonitored repos should be made and expects a path to a folder (with write privileges) to create the json import files in. For example :
+## The import flags
+
+`importConfDir` - This flag indicates that a query for unmonitored repos should be made and expects a path to a folder (with write privileges) in which to create the json import files, for example :
 
 ```
 snyk-scm-contributors-count <command> --token TOKEN -- importConfDir /snyk/import/
 ```
 
-By default, the above command populates the json import files with all type of unmonitored repos found when scanning the SCM. The **`importFileRepoType`** flag can be set with the values of "all", "private" or "public" (case **insensitive**) to fill the import file with only the given repos type data. For example:
+By default, this command populates the json import files with all types of unmonitored repos found when scanning the SCM.
+
+`importFileRepoType` - This flag can be set with the values of `all,` `private`, or `public` (case **insensitive**) to fill the import file with only data from the given repo type, for example:
 
 ```
 snyk-scm-contributors-count <command> --token TOKEN -- importConfDir /snyk/import/ --importFileRepoType 'private'
@@ -31,20 +34,20 @@ snyk-scm-contributors-count <command> --token TOKEN -- importConfDir /snyk/impor
 {% hint style="info" %}
 The import file requires an OrgID and IntegrationID from the user in order to import them to the right organization and integration at Snyk.
 
-The tool will try and find these two values from Snyk (provided that a SNYK\_TOKEN was exported and that the org mapping at Snyk is mirrored to that of the SCM) and if the we can not find those values, the user will be prompted to supply them in the command line.
+The tool will try to find these two values from Snyk (provided that a SNYK\_TOKEN was exported and that the org mapping at Snyk is mirrored to that of the SCM) and if the tool can not find those values, the user will be prompted to supply them in the command line.
 
-Once the user has stated the values for OrgID and IntegrationID once, these values will be set for ALL the entries in the import file (meaning that all the imported repos will get under the same org in Snyk).
+Once the user has stated the values for OrgID and IntegrationID once, these values will be set for ALL the entries in the import file (meaning that all the imported repos will be under the same org in Snyk).
 {% endhint %}
 
-### Using the Snyk API import tool
+## Using the snyk-api-import tool
 
-The snyk-api-import tool helps users moderately import new repos in their Snyk account in a secure and robust way.
+The snyk-api-import tool helps users import new repos in their Snyk account in a secure and robust way.
 
-This tool requires a json file with the repos data to be imported, this file can be auto-generated by the **snyk-contributors-count** tool as described above.
+This tool requires a json file with the repos data to be imported. This file can be auto-generated by the **snyk-contributors-count** tool as described in the preceding sections.
 
-### More information
+## More information
 
-Get familiar with the **snyk-api-import** tool with these links:
+For more information about the **snyk-api-import** tool see:
 
 * [https://github.com/snyk-tech-services/snyk-api-import](https://github.com/snyk-tech-services/snyk-api-import)
 * [https://github.com/snyk-tech-services/snyk-api-import/blob/master/docs/import.md](https://github.com/snyk-tech-services/snyk-api-import/blob/master/docs/import.md)
