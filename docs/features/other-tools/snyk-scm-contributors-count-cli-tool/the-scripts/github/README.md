@@ -1,8 +1,8 @@
 ---
-description: Flow and Tech dive
+description: Flow and Tech for GitHub
 ---
 
-# Github
+# GitHub
 
 * [Flow and Tech](github-flow-and-tech.md)
 * [Examples](github-examples.md)

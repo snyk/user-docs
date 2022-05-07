@@ -1,8 +1,8 @@
 ---
-description: Flow and Tech dive
+description: Flow and Tech for GitHub Enterprise
 ---
 
-# Github Enterprise
+# GitHub Enterprise
 
 * [Flow and Tech](github-enterprise-flow-and-tech.md)
 * [Examples](github-enterprise-examples.md)
