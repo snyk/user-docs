@@ -1,5 +1,5 @@
 ---
-description: The list of options and some examples for BitBucket Cloud
+description: The list of options and some examples for Bitbucket Cloud
 ---
 
 # Bitbucket Cloud - Examples
