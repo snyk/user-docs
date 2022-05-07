@@ -463,7 +463,7 @@
     * [Output](features/other-tools/snyk-scm-contributors-count-cli-tool/output.md)
     * [Flags](features/other-tools/snyk-scm-contributors-count-cli-tool/flags.md)
     * [The Scripts](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/README.md)
-      * [Azure Devops](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/azure-devops/README.md)
+      * [Azure DevOps](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/azure-devops/README.md)
         * [Azure - Flow and Tech](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/azure-devops/azure-flow-and-tech.md)
         * [Azure - Examples](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/azure-devops/azure-examples.md)
       * [Bitbucket Cloud](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/bitbucket-cloud/README.md)

@@ -4,7 +4,7 @@ description: A detailed guide to the specific SCM scripts
 
 # The Scripts
 
-* [Azure Devops](azure-devops/)
+* [Azure DevOps](azure-devops/)
 * [Bitbucket Cloud](bitbucket-cloud/)
 * [Bitbucket Server](bitbucket-server/)
 * [Github](github/)

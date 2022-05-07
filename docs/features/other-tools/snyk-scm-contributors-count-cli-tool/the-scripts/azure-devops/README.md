@@ -1,8 +1,8 @@
 ---
-description: Flow and Tech dive
+description: Flow and Tech for Azure DevOps
 ---
 
-# Azure Devops
+# Azure DevOps
 
 * [Flow and Tech](azure-flow-and-tech.md)
 * [Examples](azure-examples.md)
