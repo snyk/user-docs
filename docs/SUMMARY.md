@@ -457,7 +457,7 @@
   * [Dependencies tab](features/reports/dependencies-tab.md)
   * [Licenses tab](features/reports/licenses-tab.md)
 * [Other tools](features/other-tools/README.md)
-  * [Tool: Snyk SCM Contributors-Count](features/other-tools/snyk-scm-contributors-count-cli-tool/README.md)
+  * [Tool: Snyk-SCM- Contributors-Count](features/other-tools/snyk-scm-contributors-count-cli-tool/README.md)
     * [Flowchart](features/other-tools/snyk-scm-contributors-count-cli-tool/flowchart.md)
     * [Usage](features/other-tools/snyk-scm-contributors-count-cli-tool/usage.md)
     * [Output](features/other-tools/snyk-scm-contributors-count-cli-tool/output.md)

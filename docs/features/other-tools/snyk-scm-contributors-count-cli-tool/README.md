@@ -1,4 +1,4 @@
-# Tool: Snyk SCM Contributors-Count
+# Tool: Snyk-SCM- Contributors-Count
 
 ## What does this tool do?
 
@@ -16,7 +16,7 @@ This tool counts and prints a summary of the contributors count for the last 90 
 There are some minor differences between the SCMs as to the naming convention. For example: "Orgs" in GitHub can be "Projects" in Azure and "Workspaces" in Bitbucket. These differences are reflected in the commands that the tool accepts for each SCM.
 {% endhint %}
 
-## **How the SCM Contributors-Count tool works**
+## **How the SCM-Contributors-Count tool works**
 
 The tool works in two modes: **Scoping usage prior to onboarding** and **Snyk License Consumption.**
 
