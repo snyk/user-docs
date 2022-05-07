@@ -1,12 +1,14 @@
 ---
-description: A detailed guide to the specific SCM scripts
+description: A detailed guide to the specific SCM-Contributor-Count scripts
 ---
 
 # The Scripts
 
-* [Azure DevOps](azure-devops/)
+The following scripts are provided:
+
+* [Azure Devops](azure-devops/)
 * [Bitbucket Cloud](bitbucket-cloud/)
 * [Bitbucket Server](bitbucket-server/)
-* [Github](github/)
-* [Github Enterprise](github-enterprise/)
-* [Gitlab and Gitlab Server](gitlab-and-gitlab-server/)
+* [GitHub](github/)
+* [GitHub Enterprise](github-enterprise/)
+* [GitLab and GitLab Server](gitlab-and-gitlab-server/)
