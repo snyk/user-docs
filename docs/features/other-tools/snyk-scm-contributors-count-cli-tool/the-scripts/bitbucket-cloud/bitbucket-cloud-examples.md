@@ -64,7 +64,7 @@ Consider the following levels of usage and options:
     ```
     snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password APP_PASSWORD --skipSnykMonitoredRepos
     ```
-*   To exclude some contributors from being counted in the commits => add an exclusion file with the emails to ignore (separated by commas),and apply the `--exclusionFilePath` with the path to that file:
+*   To exclude some contributors from being counted in the commits , add an exclusion file with the emails to ignore (separated by commas),and apply the `--exclusionFilePath` with the path to that file:
 
     ```
     snyk-scm-contributors-count bitbucket-cloud --user USERNAME --password APP_PASSWORD --workspaces Workspace1,Workspace2 --exclusionFilePath PATH_TO_FILE

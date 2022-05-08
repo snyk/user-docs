@@ -34,7 +34,7 @@ The following options are available for the `snyk-scm-contributors-count azure d
 2. Get your Azure Devops Token and Org:
    *   Create a Token if one does not exist, using this [guide](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops\&tabs=preview-page).
 
-       **Note**: make sure your token has read access to the repos.
+       **Note**: Make sure your token has read access to the repos.
    * Find your Org name in Azure  listed on the left pane on the [Azure DevOps site](https://dev.azure.com).
 
 ## Running the command
@@ -43,17 +43,17 @@ Consider the following levels of usage and options:
 
 ### Usage levels
 
-*   I want to get commits for all projects and their repos under my Org in Azure => Only provide the Azure token and Azure Org:
+*   To get commits for all projects and their repos under my Org in Azure , only provide the Azure token and Azure Org:
 
     ```
     snyk-scm-contributors-count azure-devops --token AZURE-TOKEN --org AZURE-ORG
     ```
-*   I want to get commits for some projects and their repos under my Org in Azure => Provide the Azure token, Azure Org and the project key/s separated by a comma:
+*   To get commits for some projects and their repos under my Org in Azure , provide the Azure token, Azure Org and the project key/s separated by a comma:
 
     ```
     snyk-scm-contributors-count azure-devops --token AZURE-TOKEN --org AZURE-ORG --projectKeys Key1,Key2...
     ```
-*   I want to get commits for a specific repo under my Org in Azure => Provide the Azure token, Azure Org, a project key and a repo name:
+*   To get commits for a specific repo under my Org in Azure , provide the Azure token, Azure Org, a project key and a repo name:
 
     ```
     snyk-scm-contributors-count azure-devops --token AZURE-TOKEN --org AZURE-ORG --projectKeys Key1 --repo Repo1
