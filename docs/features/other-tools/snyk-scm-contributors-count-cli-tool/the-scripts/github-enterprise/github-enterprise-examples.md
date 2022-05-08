@@ -18,7 +18,7 @@ The following options are available for the `snyk-scm-contributors-count github-
   --fetchAllOrgs            [Optional] When enabled, will fetch all orgs that the token has access to
                             rather than fetching only the orgs your authorized to operate in.
   --exclusionFilePath       [Optional] Exclusion list filepath
-  --json                    [Optional] JSON output, requiered when using the "consolidateResults" command
+  --json                    [Optional] JSON output, required when using the "consolidateResults" command
 ```
 
 ## **Before running the command**
