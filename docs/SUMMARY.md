@@ -474,7 +474,7 @@
         * [Bitbucket Server - Examples](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/bitbucket-server/bitbucket-server-examples.md)
       * [GitHub](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/github/README.md)
         * [GitHub - Flow and Tech](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/github/github-flow-and-tech.md)
-        * [Github - Examples](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/github/github-examples.md)
+        * [GitHub - Examples](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/github/github-examples.md)
       * [GitHub Enterprise](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/github-enterprise/README.md)
         * [GitHub Enterprise - Flow and Tech](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/github-enterprise/github-enterprise-flow-and-tech.md)
         * [Github Enterprise - Examples](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/github-enterprise/github-enterprise-examples.md)
