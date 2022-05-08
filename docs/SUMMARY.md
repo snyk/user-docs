@@ -480,7 +480,7 @@
         * [Github Enterprise - Examples](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/github-enterprise/github-enterprise-examples.md)
       * [GitLab and GitLab Server](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/gitlab-and-gitlab-server/README.md)
         * [GitLab - Flow and Tech](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/gitlab-and-gitlab-server/gitlab-flow-and-tech.md)
-        * [Gitlab - Examples](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/gitlab-and-gitlab-server/gitlab-examples.md)
+        * [GitLab - Examples](features/other-tools/snyk-scm-contributors-count-cli-tool/the-scripts/gitlab-and-gitlab-server/gitlab-examples.md)
     * [Consolidate Results](features/other-tools/snyk-scm-contributors-count-cli-tool/consolidate-results.md)
     * [Creating and using the import file](features/other-tools/snyk-scm-contributors-count-cli-tool/creating-and-using-the-import-files.md)
     * [API rate limit control](features/other-tools/snyk-scm-contributors-count-cli-tool/api-rate-limit-control.md)
