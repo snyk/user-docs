@@ -61,7 +61,7 @@
     * [Monitor](snyk-cli/commands/monitor.md)
     * [Policy](snyk-cli/commands/policy.md)
     * [Test](snyk-cli/commands/test.md)
-  * [Install the Snyk CLI](snyk-cli/install-the-snyk-cli/README.md)
+  * [Install or update the Snyk CLI](snyk-cli/install-the-snyk-cli/README.md)
   * [Authenticate the CLI with your account](snyk-cli/authenticate-the-cli-with-your-account/README.md)
   * [Configure the Snyk CLI](snyk-cli/configure-the-snyk-cli.md)
   * [Create a Snyk App using the Snyk CLI](snyk-cli/create-a-snyk-app-using-the-snyk-cli.md)
