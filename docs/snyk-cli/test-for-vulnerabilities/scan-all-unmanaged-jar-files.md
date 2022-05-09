@@ -12,9 +12,10 @@ To view the versions of Maven and the maven-dependency-plugin run `mvn -v`.
 
 ![Screenshot of output from mvn -v](../../.gitbook/assets/untitled\_\_1\_.png)
 
-Use the `snyk test --scan-all-unmanaged` command to scan all JAR files in a single folder to match any dependencies hosted on Maven central. Scanning all unmanaged files may lead to dependency conflicts if an application was not built using a package manager like Gradle or Maven. This is especially true for applications built using Ant.
+Use the `snyk test --scan-all-unmanaged` command to scan all JAR files in a single folder to match any dependencies hosted on Maven central. Scanning all unmanaged files may lead to dependency conflicts if an application was not built using a package manager like Gradle or Maven. This is especially true for applications built using Ant. Therefore test each JAR file individually using the following command:\
+`snyk test --scan-unmanaged --file=/path/to/file`
 
-Therefore test each JAR file individually using `snyk test --scan-unmanaged —file=/path/to/file`. Testing each JAR file individually also has the benefit of showing the name of the JAR file that was scanned on the Snyk web UI; running a scan using --`scan-all-unmanaged` does not show the file. A simple wrapper is required in order to find and test JAR files in all sub-folders of an application. Results can then be grouped in the Snyk UI by using the --`remote-repo-url=AppName` option for `snyk test`.
+Testing each JAR file individually also has the benefit of showing the name of the JAR file that was scanned on the Snyk web UI; running a scan using --`scan-all-unmanaged` does not show the file. A simple wrapper is required in order to find and test JAR files in all sub-folders of an application. Results can then be grouped in the Snyk UI by using the --`remote-repo-url=AppName` option for `snyk test`.
 
 The following is a Linux/Mac BASH script that iterates through all subfolders starting with the current folder and tests each individual JAR file. The **PROJECT\_NAME\_HERE** in --**remote-repo-url** is important; it combines multiple scan results under a single Snyk project in the UI.
 
