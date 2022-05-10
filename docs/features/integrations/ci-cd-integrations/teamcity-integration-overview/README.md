@@ -23,7 +23,7 @@ Use the Snyk plugin with your TeamCity projects to test and monitor your code fo
 7. The user runs a build.
 8. During the build, before scanning for vulnerabilities, your Snyk installation is verified and updated as necessary in the background, based on your policy configuration.
 9. Snyk then analyzes the manifest file of your project, automatically detecting the project type to find direct and transitive dependencies and test your project against the Snyk vulnerability database for known vulnerabilities.
-10. The **Snyk Security Report** tab displays the test results from TeamCity in the Build details. The results indicate the number of known issues and the number of associated dependency paths identified.
+10. The **Snyk Security Report** tab displays the test results from TeamCity in the build details. The results indicate the number of known issues and the number of associated dependency paths identified.
 11. If the user did not choose the the **Monitor project on build** configuration setting for this project:
     1. Snyk displays all vulnerability results and details from the **Snyk Security Report tab** in TeamCity.
     2. If the severity threshold was specified for a severity that is assigned to any vulnerability identified in your project, TeamCity breaks the build. Otherwise, TeamCity continues to run the build to completion (success or failure) and Snyk activity ends.
