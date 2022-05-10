@@ -161,7 +161,7 @@ A comparison table is displayed with various severity levels such as critical or
 
 The plugin scans your Kubernetes workload files and collects the images used. To troubleshoot whether a plugin is correctly scanning a container image, you can verify:
 
-* Whether the image definition is in the Kubernetes YAML file in the project. Make sure you have the image specified with a YAML value to the YAML image key.
+* Whether the image definition is in the Kubernetes YAML file in the project. Make sure you have the image is specified with an image name mapped in the format `imageValue:imageKey` for the image yaml attribute, for example, \`image: nginx:1.17.1
 * Whether the container image has been successfully built locally and/or pushed to a container registry. It is also a good practice to verify this before referring to the container image in the Kubernetes YAML file.
 
 If you encounter an error [contact support](https://snyk.zendesk.com/agent/dashboard).
