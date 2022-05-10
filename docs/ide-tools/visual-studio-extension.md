@@ -94,7 +94,7 @@ Snyk Code analysis shows a list of security vulnerabilities and code issues foun
 
 ![Snyk suggestion panel](../.gitbook/assets/readme\_image\_3\_1\_3.png)
 
-The Snyk suggestion panel shows the argumentation of the Snyk engine using, for example, variable names of your code and the line numbers in red. You can also see:
+The Snyk suggestion panel shows the recommendation of the Snyk engine using, for example, variable names of your code and the line numbers in red. You can also see:
 
 * Links to external resources to explain the bug pattern in more detail.
 * Tags that were assigned by Snyk, such as Security (the issue found is a security issue), Database (the issue is related to database interaction), or In Test (the issue is within the test code).
