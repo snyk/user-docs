@@ -146,7 +146,7 @@ The editor window in the middle of the results screen shows the code that is ins
 
 ![Snyk Suggestion panel](<../.gitbook/assets/image (76) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png>)
 
-The Snyk Suggestion panel on the right of the results screen shows the argumentation of the Snyk engine using, for example, variable names of your code and the line numbers in red. You can also see the following:
+The Snyk Suggestion panel on the right of the results screen shows the recommendation of the Snyk engine using, for example, variable names of your code and the line numbers in red. You can also see the following:
 
 * Links to external resources to explain the bug pattern in more detail (the **More info** link).
 * Tags that were assigned by Snyk, such as **Security** (the issue found is a security issue), **Database** (the issue is related to database interaction), or **In Test** (the issue is within the test code).
