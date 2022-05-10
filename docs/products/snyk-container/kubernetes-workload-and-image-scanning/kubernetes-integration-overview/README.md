@@ -12,7 +12,7 @@ This feature is available in Business and Enterprise plans. See [pricing plans](
 1. Your administrator installs a controller on your cluster, authenticating the integration with a unique ID generated from the Snyk account. Install the controller with either of these options:
    * [Install the Snyk controller with Helm (Azure and Google Cloud Platform)](../installation-page/install-the-snyk-controller-with-helm.md)
    * [Install the Snyk controller with OpenShift and OperatorHub](../installation-page/install-the-snyk-controller-with-openshift-4-and-operatorhub.md)
-   * [Install the Snyk controller on Amazon Elastic Kubernetes Service (Amazon EKS)](../installation-page/install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md)
+   * [Install the Snyk controller on Amazon Elastic Kubernetes Service (Amazon EKS)](../installation-page/install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks/)
 2. The controller communicates with the Kubernetes API to determine which workloads (for instance the Deployment, ReplicationController, CronJob, etc.) are running on the cluster, find their associated images, and scan them directly on the cluster for vulnerabilities.
 3. From Snyk, collaborators select which workloads to import, or workloads can be imported automatically using annotations. These options are as described in [Adding Kubernetes workloads for security scanning](../kubernetes-integration-features/adding-kubernetes-workloads-for-security-scanning.md).
 4. For each workload that your collaborators import, Snyk displays the vulnerabilities found in each image as well as a summary of configuration issues identified with the workload.

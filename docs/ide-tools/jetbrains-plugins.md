@@ -190,9 +190,9 @@ Snyk reports the following types of issues:
 * **Configuration Issues**: found in infrastructure as code files
 * **Container Vulnerabilities**: found in images sourced from Kubernetes workload files
 
-You can filter for each one of them by selecting the value from the dropdown as shown in the screenshot that follows. By default all three issue types shown are selected.
+You can filter for each one of them by selecting the value from the dropdown as shown in the screenshot that follows. By default all issue types shown are selected.
 
-![Select issue type to support](../.gitbook/assets/fillter-issuetype.png)
+![Select issue type to support](../.gitbook/assets/JetBrains-filter-issue-type.png)
 
 ## Plugin configuration
 
