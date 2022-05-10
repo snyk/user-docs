@@ -166,3 +166,11 @@ python: '3.7.2'
 ```
 
 This example tells Snyk to use a recent version of Python 3, but Snyk does not use the exact minor and patch version specified.
+
+## Scanning Python dependencies in IDEs
+
+If you are using any of the supported IDEs to write Python, there are some configurations you will need to add in order to properly scan Python manifest files. If you are using a virtual environment, it is important that you  add the `PYTHON_PATH` to the Additional Options text input in the Snyk integration settings, for example, `--command=.venv/bin/python`. Snyk will try to look for a `*req*.txt` file in the root of the project as seen in the IDE.
+
+However, if you have manifest files in other directories within the root of the project, Snyk will not be able to identify them. In order for Snyk to find them, you must to use the `--all-projects` flag. Snyk will then recursively search through each directory within the project to find all of the manifest files.
+
+If those directories each require a different virtual environment to run, the Snyk scan will not be successful because it will be using one virtual environment to search for installed dependencies. In this case, it is best to use the CLI or the git integration to get vulnerability information on all of the dependencies listed in each directory of your project.
