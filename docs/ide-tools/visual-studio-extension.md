@@ -33,7 +33,7 @@ Once the tool window opens, wait while the Snyk extension downloads the latest S
 
 ![Snyk tool window, CLI downloading](../.gitbook/assets/readme\_image\_2\_3.png)
 
-After you install the extension and the CLI you must authenticate. You can use the **Connect Visual Studio to Snyk** link. For more information see [Authentication](visual-studio-extension.md#authentication).
+After you install the extension and the CLI you must authenticate. You can use the **Connect Visual Studio to Snyk** link. For more information and additional ways to authenticate see [Authentication](visual-studio-extension.md#authentication).
 
 ## Configuration
 
