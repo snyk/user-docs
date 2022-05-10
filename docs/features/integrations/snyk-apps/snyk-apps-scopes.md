@@ -8,41 +8,30 @@ The following list of scopes is available behind a feature flag (`appsGranularPe
 
 Scopes behind a feature flag (**in active development**):
 
-| Scope                             | Description                                    |
-| --------------------------------- | ---------------------------------------------- |
-| org.read                          | List organizations                             |
-| org.test                          | Test Snyk organization test                    |
-| org.settings.read                 | Read Snyk organization's settings              |
-| org.sast.settings.read            | Read Snyk organization's SAS settings          |
-| org.notification\_settings.read   | Read Snyk organization's notification settings |
-| org.report.read                   | Read Snyk organization's report                |
-| org.project.add                   | Add projects under Snyk organization           |
-| org.project.read                  | Read Snyk organization's projects              |
-| org.project.edit                  | Edit Snyk organization's project               |
-| org.project.remove                | Remove Snyk organization's project             |
-| org.project.activate              | Activate Snyk organization's project           |
-| org.project.deactivate            | Deactivate Snyk organization's project         |
-| org.project.test                  | Test Snyk organization's project               |
-| org.project.monitor               | Monitor project under Snyk organization        |
-| org.project.import.read           | Read project imported for Snyk organization    |
-| org.project.ignore.create         | Create project ignores                         |
-| org.project.ignore.read           | Read project ignores                           |
-| org.project.ignore.edit           | Edit project ignores                           |
-| org.project.ignore.delete         | Delete project ignores                         |
-| org.project.settings.read         | Read project settings                          |
-| org.project.settings.edit         | Edit project settings                          |
-| org.project.tag.apply             | Apply project tags                             |
-| org.project.tag.remove            | Remove project tags                            |
-| org.project.pr.create             | Create PR                                      |
-| org.project.jira.issue.read       | Read project JIRA issue                        |
-| org.project.jira.issue.create     | Create a project JIRA issue                    |
-| org.package.test                  | Test package                                   |
-| org.target.read                   | Read Snyk organization target                  |
-| org.target.delete                 | Delete Organization target                     |
-| org.integration.read              | Read Snyk organization's integrations          |
-| org.user.read                     | Read Snyk organization's users                 |
-| org.user.leave                    | Read Snyk organization user leave              |
-| org.entitlements.read             | Read Snyk organization entitlements            |
-| org.audit\_log.read               | Read Snyk organization audit logs              |
-| org.flags.read                    | Read Snyk organization's feature flags         |
-| org.settings.request\_access.read | Read request access settings                   |
+| Scope                         | Description                                |
+| ----------------------------- | ------------------------------------------ |
+| org.read                      | View organization information and settings |
+| org.report.read               | View reports in your organization          |
+| org.project.read              | View project information and settings      |
+| org.project.add               | Add new projects                           |
+| org.project.edit              | Edit project information                   |
+| org.project.remove            | Permanently remove projects                |
+| org.project.status            | Activate and deactivate projects           |
+| org.project.test              | Test projects                              |
+| org.project.ignore.read       | View project ignore information            |
+| org.project.ignore.create     | Create new project ignores                 |
+| org.project.ignore.edit       | Configure project ignores                  |
+| org.project.ignore.delete     | Permanently remove project ignores         |
+| org.project.tag.edit          | Create, apply and remove project tags      |
+| org.project.pr.create         | Create fix pull requests for projects      |
+| org.project.jira.issue.read   | View Jira issue information                |
+| org.project.jira.issue.create | Create new Jira issues                     |
+| org.package.test              | Test packages in our supported ecosystems  |
+| org.target.read               | View organization targets                  |
+| org.target.delete             | Permanently remove organization targets    |
+| org.integration.read          | View organization integration information  |
+| org.user.read                 | View organization member information       |
+| org.user.leave                | Leave the organization                     |
+| org.entitlements.read         | View organization entitlements             |
+| org.audit\_log.read           | View audit logs for the organization       |
+| org.flags.read                | View upcoming and experimental features    |
