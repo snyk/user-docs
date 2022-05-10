@@ -22,8 +22,8 @@ The following explains **how to configure your build with a Snyk step**.
 
 ![Configure Snyk security for TeamCity](../../../../../.gitbook/assets/uuid-88e38280-121e-a17b-cfd3-9fde89305b5c-en.png)
 
-* Configure the TeamCity fields (Runner type, Step name and Execute Step).
-* Optionally, click **Show advanced options**. Additional Snyk parameters are displayed:
+* Configure the TeamCity fields (Runner type, Step name and Execute Step (an advanced option)).
+* Optionally, click **Show advanced options** to display additional fields and Snyk parameters:
 
 ![Additional Snyk parameters](../../../../../.gitbook/assets/uuid-8f294e8d-ca5e-123b-2992-a98c1e62fd6f-en.png)
 
