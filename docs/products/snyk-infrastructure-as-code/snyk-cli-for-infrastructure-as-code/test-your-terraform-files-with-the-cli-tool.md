@@ -75,4 +75,4 @@ These files are considered sensitive and it is not recommended to commit them to
 
 **Note:** The option `--experimental` is not required anymore when testing your Terraform projects.
 
-If you have found a discrepancy that you cannot explain based on this information, submit a request to Support.
+If you have found a discrepancy that you cannot explain based on this information, submit a [request](https://support.snyk.io/hc/en-us/requests/new) to Support.
