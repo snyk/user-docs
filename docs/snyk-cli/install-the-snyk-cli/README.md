@@ -1,8 +1,8 @@
-# Install the Snyk CLI
+# Install or update the Snyk CLI
 
 You can install the [Snyk CLI](../) using the methods explained on this page.
 
-After you install the Snyk CLI, you must [authenticate](../commands/auth.md). You can then can [get started](../getting-started-with-the-cli/) testing and fixing your vulnerabilities, beginning with testing your installation.
+After you install the Snyk CLI, you must [authenticate](../commands/auth.md). Then you can [get started](../getting-started-with-the-cli/) testing and fixing your vulnerabilities, beginning with testing your installation.
 
 ## Install the Snyk CLI with npm or Yarn
 
@@ -79,10 +79,10 @@ Snyk CLI can also be run from a Docker image. Snyk offers multiple Docker images
 These images wrap the Snyk CLI and depending on the Tag come with relevant tooling for different projects, for example, for scanning a Gradle project with snyk/snyk-cli:
 
 ```bash
-docker run -it
-    -e "SNYK_TOKEN=<TOKEN>"
-    -v "<PROJECT_DIRECTORY>:/project"
-    -v "/home/user/.gradle:/home/node/.gradle"
+docker run -it \
+    -e "SNYK_TOKEN=<TOKEN>" \
+    -v "<PROJECT_DIRECTORY>:/project" \
+    -v "/home/user/.gradle:/home/node/.gradle" \
   snyk/snyk-cli:gradle-5.4 test --org=my-org-name
 ```
 
