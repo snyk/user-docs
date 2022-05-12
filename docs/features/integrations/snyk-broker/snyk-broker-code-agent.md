@@ -4,7 +4,7 @@
 This feature is currently in Beta. Please contact your CSM if you are interested in participating.
 {% endhint %}
 
-You can natively connect Snyk Code to your local git server. This allows customers who are using a self-hosted git provider to find, prioritize and fix potential vulnerabilities in their 1st-party code.
+You can natively connect Snyk Code to your local git server. This allows customers who are using a self-hosted git provider to find, prioritize, and fix potential vulnerabilities in their first-party code.
 
 ## Code access components
 
@@ -16,7 +16,7 @@ The **Broker client** and **code agent** components are deployed in your infrast
 
 The Broker client provides the Agent with the connection details. The Agent uses these details to connect to your local git repository, clone the relevant files, and send the results through the brokered communications using callbacks. The brokered communication happens when a Broker client connects (using your Broker ID) to a Broker server running in Snyk environment:
 
-![](../../../.gitbook/assets/local-git.png)
+![Brokered communication](../../../.gitbook/assets/local-git.png)
 
 See [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker/broker-introduction) documentation for more details.
 
@@ -136,7 +136,7 @@ If you have a running Snyk broker with a custom whitelist (**accept.json**), the
 At this point please contact your Customer Success Manager or Support to enable the integration
 {% endhint %}
 
-## Advanced Settings
+## Advanced settings
 
 ### Enable code snippets
 
@@ -166,7 +166,7 @@ For GitLab:
 }
 ```
 
-For BitBucket Server:
+For BitBucket Server and Bitbucket Data Center:
 
 ```
 {
