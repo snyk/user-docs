@@ -307,11 +307,11 @@ Currently the following options are not supported:
 
 ## Options for scanning using `--unmanaged`
 
-### ``[`--org=<ORG_ID>`](test.md#org-less-than-org\_id-greater-than)``
+### ``[`--org=<ORG_ID>`](https://docs.snyk.io/snyk-cli/commands/test#org-less-than-org\_id-greater-than)``
 
-### ``[`--json`](test.md#json)``
+### ``[`--json`](https://docs.snyk.io/snyk-cli/commands/test#json)``
 
-### [--json-file-output=\<OUTPUT\_FILE\_PATH>](test.md#json-file-output-less-than-output\_file\_path-greater-than)
+### [--json-file-output=\<OUTPUT\_FILE\_PATH>](https://docs.snyk.io/snyk-cli/commands/test#json-file-output-less-than-output\_file\_path-greater-than)
 
 ### `--target-dir`&#x20;
 
