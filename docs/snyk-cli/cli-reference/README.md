@@ -32,7 +32,7 @@ Test container images for vulnerabilities.
 
 ### ``[`snyk iac`](../commands/iac.md)``
 
-The `snyk iac` subcommands find and report security issues in Infrastructure as Code files; detect, track, and alert on infrastructure drift and unmanaged resources; and create a .driftigore file.
+The `snyk iac` subcommands find and report security issues in Infrastructure as Code files; detect, track, and alert on infrastructure drift and unmanaged resources; manages ignores in the `.snyk` policy file.
 
 ### [`snyk iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
@@ -40,7 +40,7 @@ Detect, track, and alert on infrastructure drift and unmanaged resources.
 
 ### [`snyk iac update-exclude-policy`](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy)
 
-Generate driftignore rules to be used by `snyk iac test`.
+Generate exclude policy rules to be used by `snyk iac describe`.
 
 ### [`snyk iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
