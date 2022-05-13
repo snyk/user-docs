@@ -5,7 +5,7 @@ Snyk's GitHub integration allows you to continuously perform security scanning a
 Please note, **GitHub integrates per user and not per org**. Setting up this integration means it will be used for all organizations associated with your account.
 
 {% hint style="warning" %}
-Using a **Personal Access Token** in a GitHub integration allows opening of PRs, but not importing projects. In order to setup import of projects using a [Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token), use [GitHub Enterprise integration](github-enterprise-integration.md).
+You cannot import projects using the Snyk API with a Snyk Service Account using the GitHub integration because the integration is tied to the user, and not to the snyk org.  To import using the API with a Snyk service account, use the [GitHub Enterprise integration](github-enterprise-integration.md).
 {% endhint %}
 
 ## Setting up a GitHub Integration
