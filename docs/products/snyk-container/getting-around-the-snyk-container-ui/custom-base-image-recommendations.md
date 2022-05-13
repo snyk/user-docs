@@ -27,7 +27,7 @@ As an example, when scanning the following images and marking them (in the follo
 
 Snyk will recommend the second image, as it is the newest image **based on the semantic versioning of the tag**.&#x20;
 
-If Snyk cannot find a [standard semantic versioning schema](https://semver.org) in the tag, the recommendation is the last image that was marked as a custom base image (in this example, the third image), as determined in the following logic.
+If Snyk cannot find a [standard semantic versioning schema](https://semver.org/) in the tag, the recommendation is the last image that was marked as a custom base image (in this example, the third image), as determined in the following logic.
 
 ### **Timestamp recommendation logic**
 
@@ -44,7 +44,7 @@ Snyk recommends the third image, as it was last marked as a custom base image.
 * To use the Custom Base Image Recommendations feature, Snyk needs to enable it for each **organization** that wants to be able to mark images as custom base images (for example, the platform team).
   * This means that every user in the organization (platform team in this example) will be able to mark images as custom base images in the project settings.
   * Later, projects in the same **group** as the organization (platform team in this example) will be able to receive custom base image recommendations.
-* The current logic is: for the same image family (same repo and name), Snyk will recommend the newest image based on the **semantic versioning of the image tag**. If Snyk is unable to find a [standard semantic versioning schema](https://semver.org) in the tag, the recommendation will be the last image that was marked as a custom base image (timestamp of marking. See the User flows→ Platform team section that follows.
+* The current logic is: for the same image family (same repo and name), Snyk will recommend the newest image based on the **semantic versioning of the image tag**. If Snyk is unable to find a [standard semantic versioning schema](https://semver.org/) in the tag, the recommendation will be the last image that was marked as a custom base image (timestamp of marking. See the User flows→ Platform team section that follows.
 * A Dockerfile must be specified (see the instructions that follow) in the project in order to receive custom base image recommendations
 
 ## **User flows**

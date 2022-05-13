@@ -1,4 +1,8 @@
-# Terraform Cloud integration
+# Terraform Cloud integration for IaC
+
+{% hint style="info" %}
+This feature is available for all Snyk plans.
+{% endhint %}
 
 ## Terraform Cloud overview
 
@@ -7,10 +11,6 @@
 * Have Terraform state management on the cloud with versioning and out of the box
 * Have a centralized place for the team to collaborate on their infrastructure, reviewing and approving changes to infrastructure
 * Have Terraform Cloud manage the remote operations against the cloud providers in an automated way, similar to a CI/CD pipeline, for applying changes to cloud infrastructure using Terraform
-
-{% hint style="info" %}
-This feature is available for all Snyk plans.
-{% endhint %}
 
 ## **Snyk integration with Terraform Cloud overview**
 
@@ -34,17 +34,28 @@ Navigate to the dedicated Terraform Cloud integration settings page, under the *
 
 ### Set up Terraform plan scanning
 
-1. Copy the provided URL and HMAC Key from the integration setting page in Snyk.
-2. Navigate to [Terraform Cloud](https://app.terraform.io) and go into the organization global settings.
-3. Go to the run tasks settings, for example,\
-   `https://app.terraform.io/app/{YOUR_TFC_ORG}/settings/tasks`
-4. Create a new run task for Snyk with the URL and HMAC key values.\
-   The HMAC key is mandatory for the Snyk integration to work, even though it is identified as optional on Terraform Cloud.
-5. To connect this run task to your workspace in Terraform Cloud, navigate to the run tasks settings of a specific workspace and add the newly created run task for Snyk. For example:\
-   `https://app.terraform.io/app/{YOUR_TFC_ORG}/workspaces/{YOUR_WORKSPACE}/settings/tasks`
-6. Choose the enforcement level (Advisory or Mandatory) and click Create.
+On the Snyk platform, first go to the Terraform Cloud integration settings page: [https://app.snyk.io/org/{YOUR-SNYK-ORG}/manage/integrations/terraform-cloud](https://app.snyk.io/org/stephane.jourdan/manage/integrations/terraform-cloud) to access the provided URL and HMAC Key
 
-Once your integration is set up Snyk scans Terraform plans for each run triggered in your workspace.
+![Snyk Integration Page for Terraform Cloud](<../../../.gitbook/assets/image (71).png>)
+
+#### Create the Snyk Run Task for Terraform Cloud
+
+Now navigate to [Terraform Cloud](https://app.terraform.io) in the organization global settings:
+
+![Terraform Cloud Settings](<../../../.gitbook/assets/image (65).png>)
+
+1. Go to the run tasks settings:\
+   `https://app.terraform.io/app/{YOUR_TFC_ORG}/settings/tasks`
+2. Create a new run task for Snyk with the URL and HMAC key values.\
+   The HMAC key is mandatory for the Snyk integration to work, even though it is identified as optional on Terraform Cloud.
+
+#### Associate the Run Task to your Terraform Cloud Workspace
+
+1. Navigate to your Terraform Cloud Workspace, enter the _"Settings"_ menu and chose _"Run Tasks"_
+2. The "run task" you created is available under "Available Run Tasks": click on "+" to add associate it
+3. Choose the enforcement level (Advisory or Mandatory) and click Create.
+
+Once your integration is set up, Snyk scans Terraform plans for each run triggered in your workspace.
 
 ### View Terraform plan scanning results
 
