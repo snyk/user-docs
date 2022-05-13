@@ -140,7 +140,7 @@ At this point please contact your Customer Success Manager or Support to enable 
 
 ### Enable code snippets
 
-To enable code snippets, additional rules must be added to **accept.json**.
+To enable code snippets, additional rules must be added to the `private array` in the `accept.json` file.
 
 See [https://github.com/snyk/broker#custom-approved-listing-filter](https://github.com/snyk/broker#custom-approved-listing-filter) for detailed instructions how to extend **accept.json**.
 
