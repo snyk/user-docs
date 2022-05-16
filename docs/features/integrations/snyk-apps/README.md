@@ -12,7 +12,7 @@ The easiest way to start building a new Snyk App is to clone the [Demo Snyk Apps
 
 See the [Snyk Apps blog post](https://snyk.io/blog/snyk-apps-beta-build-custom-apps-extend-snyk-security-into-workflows/) for more details.
 
-This document describes how to create a new Snyk App in the language of your choice, and can be used along with the [API documentation](https://apidocs.snyk.io/#tag--Apps) and [Snyk OAuth2 API documentation](https://snykoauth2.docs.apiary.io/).
+This document describes how to create a new Snyk App in the language of your choice, and can be used along with the [API documentation](https://apidocs.snyk.io/#tag--Apps) and [Snyk OAuth2 API documentation](https://snykoauth2.docs.apiary.io).
 
 Snyk Apps are based on the [Snyk API](../../snyk-api-info/), so that your integrations are inherently stable and secure.
 

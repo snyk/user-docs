@@ -52,7 +52,21 @@ For each project, you can choose the test frequency under its settings (the defa
 
 ![](<../../../.gitbook/assets/mceclip3 (1).png>)
 
-**Supported registries**
+{% hint style="warning" %}
+**Note:**&#x20;
+
+For app projects created for apps found in images that are imported from **Container Registry integrations**, the app will not be re-imported during recurring tests or manual re-test. **** Instead, the applications dependencies that were found during the initial image import will be tested for new vulnerabilities.
+
+This means that if new dependencies were introduced in an application within an image, they will not be detected by the recurring tests or manual re-test.
+
+In order to detect **new or updated** applications within images from container registries, the image will need to be re-imported to snyk.&#x20;
+
+For apps found in images that are imported from **the Kubernetes integration**, existing apps will be re-imported, but new apps added to the image will not be imported during recurring tests.
+
+In order to detect **new** applications within images from Kubernetes, the image will need to be re-imported to snyk.&#x20;
+{% endhint %}
+
+**Supported container registries**
 
 This is supported across the following container registries:
 
@@ -61,6 +75,12 @@ This is supported across the following container registries:
 * [JFrog Artifactory](https://docs.snyk.io/snyk-container/image-scanning-library/jfrog-artifactory-image-scanning)
 * [Docker Hub](https://docs.snyk.io/snyk-container/image-scanning-library/docker-hub-image-scanning)
 * [GCR](https://docs.snyk.io/snyk-container/image-scanning-library/gcr-image-scanning)
+* [DigitalOcean](https://docs.snyk.io/products/snyk-container/image-scanning-library/digitalocean-image-scanning)
+* [GitHub](https://docs.snyk.io/products/snyk-container/image-scanning-library/github-container-registry-image-scanning)
+* [GitLab](https://docs.snyk.io/products/snyk-container/image-scanning-library/gitlab-container-registry-image-scanning)
+* [Harbor](https://docs.snyk.io/products/snyk-container/image-scanning-library/harbor-image-scanning)
+* [Nexus](https://docs.snyk.io/products/snyk-container/image-scanning-library/nexus-image-scanningexsd)
+* [Quay](https://docs.snyk.io/products/snyk-container/image-scanning-library/quay-image-scanning)
 
 **Supported Integrations**
 

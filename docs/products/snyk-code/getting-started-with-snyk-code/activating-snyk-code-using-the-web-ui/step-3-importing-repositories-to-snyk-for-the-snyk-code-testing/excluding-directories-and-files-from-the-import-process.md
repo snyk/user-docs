@@ -52,7 +52,7 @@ global:
 * Indentations –
   * When using the syntax in the .snyk YAML file, pay careful attention to new lines and their indentation. Using the wrong indentation will prevent the execution of your excluding specification.
   * Do NOT use tabs for indentation. Use only spaces for indentation.
-  * To verify that you are using the syntax correctly, you can use a YAML Validator, like the [YAML Lint](http://www.yamllint.com/). Be aware that some YAML Validators do not differentiate between the use of tabs and spaces for indentation. If you use tabs, a Validator may approve the syntax, but the exclude specifications will not be executed.&#x20;
+  * To verify that you are using the syntax correctly, you can use a YAML Validator, like the [YAML Lint](http://www.yamllint.com). Be aware that some YAML Validators do not differentiate between the use of tabs and spaces for indentation. If you use tabs, a Validator may approve the syntax, but the exclude specifications will not be executed.&#x20;
 * For more information on the syntax of shell matching patterns, see for example:
   * GNU Org - [Shell Pattern Matching](https://www.gnu.org/software/findutils/manual/html\_node/find\_html/Shell-Pattern-Matching.html)
   * Docstore - [Pattern Matching Quick Reference with Examples](https://docstore.mik.ua/orelly/unix/upt/ch26\_10.htm)
