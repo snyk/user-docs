@@ -6,7 +6,7 @@ As with any Kubernetes deployment, the Snyk controller runs within a single name
 
 ## Prerequisites
 
-{% hint style="info" %}
+{% hint style="danger" %}
 Before following this installation page, please review the [prerequisite setting page](prerequisite-setting.md)
 {% endhint %}
 

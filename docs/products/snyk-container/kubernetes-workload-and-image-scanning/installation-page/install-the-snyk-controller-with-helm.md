@@ -1,6 +1,6 @@
 # Install the Snyk controller with Helm (Azure and Google Cloud Platform)
 
-{% hint style="info" %}
+{% hint style="danger" %}
 Before following this installation page, please review the [prerequisite setting page](prerequisite-setting.md)
 {% endhint %}
 
