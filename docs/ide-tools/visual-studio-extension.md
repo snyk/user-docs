@@ -130,6 +130,14 @@ After the plugin is installed, you can set the following configurations for the 
 * **Project settings**: Specify any additional Snyk CLI parameters.
 * **Scan all projects**: Auto-detect all projects in the working directory, enabled by default.
 
+#### Organization setting
+
+This setting allows you to specify an organization slug name to run tests for that organization. The value must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.&#x20;
+
+If not specified, the Preferred Organization (as defined in your [web account settings](https://app.snyk.io/account)) is used to run tests.
+
+#### Product selection
+
 In the settings, you can also choose which results you want to receive:
 
 * Open Source vulnerabilities
