@@ -50,4 +50,4 @@ Card details include:
 * In some cases that we can not identify the exact line of the vulnerable path in the file, we will not show a code snippet, but an info message and the card details.\
   Example:
 
-![](<../../.gitbook/assets/image (78) (1).png>)
+![](<../../.gitbook/assets/image (78) (1) (2).png>)

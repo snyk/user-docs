@@ -154,6 +154,25 @@ In the settings, you can also choose which results you want to receive:
 
 ![](../.gitbook/assets/readme\_image\_4\_1.png)
 
+**The system cannot find the file specified**
+
+**Solution** This issue related to CLI file. Close and open Snyk tool window for start CLI download. ****&#x20;
+
+****
+
+**The specified executable is not a valid application for this OS platform**
+
+**Solution** This issue related to CLI file and its integrity. Remove CLI from in \
+`%HOMEPATH%\AppData\Local\Snyk\snyk-win.exe`. Close and open Snyk tool window for start CLI download.&#x20;
+
+## How tos
+
+
+
+**Snyk Code no supported code available**
+
+**Solution** Check .gitignore and .dcignore file rules. Check if there are any rules that exclude your project's source files.
+
 ## How tos
 
 ### How to find the log files
