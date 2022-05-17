@@ -14,7 +14,7 @@ At this time Snyk does not support [Output Values](https://www.terraform.io/lang
 The CLI scans all of your directories and handles each directory that includes supported TF files as it own module. Each module that includes variables is dereferenced appropriately.
 
 Supported TF file formats are `.tf`, `.tfvars`,`.auto.tfvars`.\
-Snyk currently dos not support variables that were set/defined using environment variables or the\
+Snyk currently does not support variables that were set/defined using environment variables or the\
 `--var` command.
 
 The scan handles [variable definition precedence](https://www.terraform.io/language/values/variables#variable-definition-precedence) in the same way that TF handles the precedence.
