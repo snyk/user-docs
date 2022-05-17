@@ -5,7 +5,7 @@ You can output the CLI Code test results to a JSON or SARIF format in the termin
 **Notes**:
 
 * You can also [export the test results to a JSON or SARIF format file](exporting-the-test-results-to-a-json-or-sarif-file.md).
-* SARIF is an open standard for the output of static analysis tools. For more information on SARIT, see [the official SARIF site](https://sarifweb.azurewebsites.net).
+* SARIF is an open standard for the output of static analysis tools. For more information on SARIT, see [the official SARIF site](https://sarifweb.azurewebsites.net/).
 
 **To output the test results to a JSON format:**
 
