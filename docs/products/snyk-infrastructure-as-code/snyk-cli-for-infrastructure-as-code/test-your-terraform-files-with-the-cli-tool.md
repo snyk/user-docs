@@ -5,7 +5,7 @@ With Snyk Infrastructure as Code, you can scan both your static configuration fi
 |                                   | **Terraform configuration files** | **Terraform plan file**  |
 | --------------------------------- | --------------------------------- | ------------------------ |
 | **Identify configuration issues** | Yes                               | Yes                      |
-| **Process variables**             | No                                | Yes                      |
+| **Process variables**             | Yes                               | Yes                      |
 | **Scan Terraform modules**        | No                                | Yes - public and private |
 
 ## Terraform configuration files
