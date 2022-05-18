@@ -31,7 +31,7 @@ Snyk supports JetBrains plugin versions from version 2020.2 on the following IDE
 
 ## **How the Snyk JetBrains plugin works**
 
-* The plugin is based on Snyk CLI, but not on the CLI only. The plugin supports all product features in the CLI for Snyk Open Source, Snyk IaC and Snyk Container.
+* The plugin is based on Snyk CLI, but not on the CLI only. The plugin supports product features in the CLI for Snyk Open Source and Snyk Container as well as for Snyk Code and Snyk IaC with some limitations.
 * The plugin automatically downloads the CLI in the background; you will be asked to [authenticate](jetbrains-plugins.md#authentication).
 * Snyk supports all the [languages supported by Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#language-support-with-snyk-code-ai-engine). You can install the plugin on any of the IDEs (such as RubyMine). Once the plugin is installed, Snyk analyzes all the language files that it finds.
 * If the CLI is already installed on the machine, the plugin uses the token provided to it. Otherwise, you must provide the authentication token through the plugin [authentication mechanism](jetbrains-plugins.md#authentication).
@@ -202,7 +202,7 @@ After the plugin is installed, you can set the following configurations for the 
 * **Custom endpoint**: custom endpoint for the Snyk Web UI, if needed
 * **Ignore unknown CA**: for ignoring the SSL cert, if needed
 * **Organization**: the org to run Snyk test against (similar to the `--org=` option in the CLI).
-* **Additional parameters**: additional CLI snyk test options you want to use for the test
+* **Additional parameters**: additional CLI snyk test options you want to use for the test for Open Source; additional parameters do not apply to Snyk Code or Iac.
 * **Snyk Open Source vulnerabilities**: analyze the project for open source vulnerabilities through the CLI using Snyk Open Source; enabled by default
 * **Snyk Infrastructure as Code issues**: analyze the project for insecure configurations in Terraform and Kubernetes code; enabled by default
 * **Snyk Container vulnerabilities**: analyze the project for container vulnerabilities in container images and Kubernetes applications; enabled by default
