@@ -8,7 +8,7 @@ Now that you have an API token and **orgId**, you can use the Snyk API to create
 https://api.snyk.io/rest/orgs/{orgId}/apps?version={version}
 ```
 
-For more information see the [API documentation](https://apidocs.snyk.io/#post-/orgs/-org\_id-/apps).
+For more information see the [API documentation](https://apidocs.snyk.io/#post-/orgs/-org\_id-/apps). See the example request at the end of this section.
 
 The request body should contain the details for your new App, including the App's **name**, **redirectURIs**, and [**scopes**](create-an-app-via-the-api.md#requesting-scopes).
 
@@ -17,6 +17,15 @@ The response includes details necessary to complete the integration: **clientId*
 {% hint style="danger" %}
 Never share the **clientSecret** publicly, as this is used to authenticate your App. This is also the only time you’ll be able to get the **clientSecret**, so keep it secure and private. If you lose it or if the secret is leaked, you can [rotate your App's **clientSecret**](managing-app-details.md#rotate-app-client-secret).
 {% endhint %}
+
+Example CURL request to create a Snyk App:
+
+```
+curl -X POST -H "Content-Type: application/vnd.api+json" \                                 (current-context is not set)
+-H "Authorization: token <REPLACE_WITH_API_TOKEN>" \
+-d '{"name": "My Awesome Snyk App", "redirect_uris": ["https://example.com/callback"], "scopes": ["org.read"]}' \
+https://api.snyk.io/rest/orgs/<REPLAC_WITH_YOUR_ORGID>/apps?version=2022-03-11~experimental
+```
 
 ## Create using Snyk CLI
 
