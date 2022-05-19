@@ -24,22 +24,22 @@ Example CURL request to create a Snyk App:
 curl -X POST -H "Content-Type: application/vnd.api+json" \                                 (current-context is not set)
 -H "Authorization: token <REPLACE_WITH_API_TOKEN>" \
 -d '{"name": "My Awesome Snyk App", "redirect_uris": ["https://example.com/callback"], "scopes": ["org.read"]}' \
-https://api.snyk.io/rest/orgs/<REPLAC_WITH_YOUR_ORGID>/apps?version=2022-03-11~experimental
+https://api.snyk.io/rest/orgs/<REPLACE_WITH_YOUR_ORGID>/apps?version=2022-03-11~experimental
 ```
 
 ## Create using Snyk CLI
 
-The [Snyk CLI](../../../../snyk-cli/) can be used to create the Snyk App. If you do not already have the Snyk CLI installed on your machine, you can install by following the steps in [Getting started with the CLI](../../../../snyk-cli/getting-started-with-the-cli/). See [Create a Snyk App using the CLI](../../../../snyk-cli/create-a-snyk-app-using-the-snyk-cli.md) for details.
+The [Snyk CLI](../../../../snyk-cli/) can be used to create the Snyk App. If you do not already have the Snyk CLI installed on your machine, you can install it by following the steps in [Getting started with the CLI](../../../../snyk-cli/getting-started-with-the-cli/). See [Create a Snyk App using the CLI](../../../../snyk-cli/create-a-snyk-app-using-the-snyk-cli.md) for details.
 
 {% hint style="warning" %}
 All `apps` commands are only accessible behind the `--experimental` flag and the behavior can change at any time without prior notice. You are advised to use all the commands with caution.
 
-If you are already authenticated with Snyk CLI (`snyk auth`) you can use the `apps` sub-commands as is. Otherwise, first authenticate using `snyk auth` and then use the Snyk Apps commands.
+If you are already authenticated with Snyk CLI (`snyk auth`) you can use the `Snyk Apps` commands. Otherwise, first, authenticate using `snyk auth` and then use the Snyk Apps commands.
 {% endhint %}
 
-Snyk Apps related sub-commands are under the `snyk apps` command.
+Snyk Apps commands are prefaced with snyk apps.
 
-Use the `create` sub-command to create the Snyk Apps. There are two ways to use the command.
+Use the `snyk apps create` command to create your Snyk Apps. There are two ways to use the command.
 
 The first is the normal mode, for example:
 
@@ -52,7 +52,7 @@ snyk apps create --experimental --org=48ebb069-472f-40f4-b5bf-d2d103bc02d4 --nam
     Required for the `create` command. Specify the `<ORG_ID>` to create the Snyk App under.
 *   `--name=<SNYK_APP_NAME>`
 
-    Required for the `create` command. This name will be displayed to the end user later on, when the user authorizes your App.
+    Required for the `create` command. This name will be displayed to the end-user later on when the user authorizes your App.
 *   `--redirect-uris=<REDIRECT_URIS>`
 
     Required for the `create` command. A comma-separated list of redirect URIs. This forms a list of allowed redirect URIs to call back after authentication.
@@ -108,5 +108,5 @@ The following lists the **available scopes**.
 | org.flags.read                | View upcoming and experimental features    |
 
 {% hint style="info" %}
-You cannot currently update scopes for a Snyk App after it has been created. If you change your mind about which scopes you need during the App development process, create a new Snyk App with a new list of scopes, and replace the clientId and clientSecret in your App’s configuration. If users have installed the App already, the users will need to authorize the new App with their Snyk account.
+You cannot currently update scopes for a Snyk App after it has been created. If you change your mind about which scopes you need during the App development process, create a new Snyk App with a new list of scopes, and replace the clientId and clientSecret in your App’s configuration. If users have installed the Snyk App already, the users will need to authorize the new App with their Snyk account.
 {% endhint %}
