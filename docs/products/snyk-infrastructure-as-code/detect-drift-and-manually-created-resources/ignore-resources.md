@@ -37,7 +37,7 @@ exclude:
 ```
 {% endcode %}
 
-The `.snyk` policy file also supports negation of rules. This allows you to ignore everything except certain types. In this example, only S3 buckets will **not** be ignored:&#x20;
+The `.snyk` policy file also supports negation of rules. This allows you to ignore everything except certain types. In this example, only S3 buckets will **not** be ignored:
 
 {% code title=".snyk" %}
 ```yaml
@@ -50,7 +50,7 @@ exclude:
 ```
 {% endcode %}
 
-Ignore a specific IAM Policy Attachment (_AWSServiceRoleForRDS_) using its ARN (_arn:aws:iam::aws:policy/aws-service-role/AmazonRDSServiceRolePolicy_).&#x20;
+Ignore a specific IAM Policy Attachment (_AWSServiceRoleForRDS_) using its ARN (_arn:aws:iam::aws:policy/aws-service-role/AmazonRDSServiceRolePolicy_).
 
 {% code title=".snyk" %}
 ```yaml
@@ -83,12 +83,19 @@ exclude:
 
 ## Precedence over filter rules[​](https://docs.driftctl.com/0.22.0/usage/filtering/driftignore#precedence-over-filter-rules) <a href="#precedence-over-filter-rules" id="precedence-over-filter-rules"></a>
 
-You can use the means to ignore resources explained on this page in combination with filter rules.&#x20;
+You can use the means to ignore resources explained on this page in combination with filter rules.
 
 **Note:** If the same resource is included by a filter rule and excluded inside the `.snyk` file, `snyk iac describe` ignores this resource.
 
 ## Automatically generate drift exclusion rules[​](https://docs.driftctl.com/0.22.0/usage/filtering/driftignore#automatically-generate-a-driftignore-file) <a href="#automatically-generate-a-driftignore-file" id="automatically-generate-a-driftignore-file"></a>
 
-For details, see the `snyk iac gen-driftignore help.`
+For details, see `snyk iac update-exclude-policy --help.`
 
-This command generates a `.driftignore` file, instead of a `.snyk` policy file. Lines in this file  correspond to elements in the `.snyk` file `exclude.iac-drift` section.
+This command helps to generate a `.snyk` policy file, adding all the detected drifts to it, in order to ignore them all.
+
+For example, to ignore all the unmanaged resources at once:&#x20;
+
+```
+$ snyk iac describe --json --only-unmanaged | snyk iac update-exclude-policy
+```
+
