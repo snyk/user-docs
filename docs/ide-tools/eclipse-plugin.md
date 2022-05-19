@@ -91,13 +91,31 @@ You can provide the API token by copying it from your [account settings](https:/
 
 ![Providing the API token manually](<../.gitbook/assets/Screenshot 2022-05-17 at 16.36.07.png>)
 
+### Configuration
+
+In the Snyk preferences, the following configuration options are available.
+
+* `Snyk API Token`: The authentication token from Snyk.
+* `Path`: Your additions to the path to find needed third party tools such as Gradle or Maven.
+* `Custom Endpoint`: The custom endpoint for Single Tenant setups instead of https://app.snyk.io.
+* `Allow unknown certificate authorities`: Disable certificate checks for SSL connections.
+* `Custom Snyk LS Path`: Specify the location of your language server binaries. If set, no updates are downloaded and updates must be performed manually to synchronize Eclipse features and preferences with the Language Server.
+* `Snyk Open Source enabled`: Enable/Disable Snyk Open Source Dependency Scans via Language Server. Default: `Enabled` during beta
+* `Snyk Code enabled`: Enable/Disable Snyk Code Scans via Language Server. Default: `Disabled` during beta.
+* `Snyk Infrastructure-as-Code enabled` : Enable/Disable Snyk IaC Scans via Language Server. Default: `Enabled` during beta.
+* `Organization`: Specify the Snyk Organization to use for scanning.
+* `Additional Parameters`: Specify additional parameters to pass to the CLI (for example, `--all-projects` or `-d.`
+* `Additional Environment`: Add environment variables to Language Server.
+* `Send error reports to Snyk`: Send errors from Language Server to Snyk to enable quicker bug fixing. Default: `Enabled` during beta.
+* `Send usage statistics to Snyk`: Allow Snyk to get usage data to improve workflows. Default: `Disabled` during beta.
+
 ### Environment variables
 
 To analyze projects, the plugin uses the Snyk CLI. The CLI needs the following environment variables:
 
-* `PATH`: the path to needed binaries, for example, to Maven. The `PATH` variable can also be manually adjusted using the `Path` field in the settings dialog.
-* `JAVA_HOME`: the path to the JDK you want to use to analyze Java dependencies
-* `http_proxy` and `https_proxy`: proxy set using the value in the format `http://username:password@proxyhost:proxyport`.\
+* `PATH`: The path to needed binaries, for example, to Maven. The `PATH` variable can also be manually adjusted using the **`Path`** field in the settings dialog.
+* `JAVA_HOME`: The path to the JDK you want to use to analyze Java dependencies
+* `http_proxy` and `https_proxy`: Proxy set using the value in the format `http://username:password@proxyhost:proxyport`.\
   **Note:** the leading `http://` in the value does not change to `https://` for an `https_proxy`.
 
 Setting these variables only in a shell environment (for example, using **\~/.bashrc**) is not enough, if you do not start Eclipse from the command line or create a script file that starts Eclipse using a shell environment.
@@ -107,9 +125,9 @@ Setting these variables only in a shell environment (for example, using **\~/.ba
   **Note:** Provision of environment variables to the macOS UI may change between operating system releases, so it can be easier to create a small shell script that launches the Eclipse app to leverage the shell environment. This can be defined via `~/.bashrc`.
 * On **Linux**, updating the file `/etc/environment` can be used to propagate the environment variables to the windows manager and UI.
 
-#### Proxy
-
-If you need to use a proxy server to connect to the internet, please configure it using the environment variables.
+{% hint style="info" %}
+If you need to use a **proxy server** to connect to the internet, configure it using the **environment variables**.
+{% endhint %}
 
 ## Use the Snyk plugin to secure your Eclipse projects
 
