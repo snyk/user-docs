@@ -1,18 +1,18 @@
 # Create a Snyk App using the Snyk CLI
 
 {% hint style="warning" %}
-All `apps` sub-commands are only accessible behind the `--experimental` flag and the behavior can change at any time, without prior notice. Use all the commands with caution
+All `apps` subcommands are accessible only behind the `--experimental` flag and the behavior can change at any time, without prior notice. Use all the commands with caution
 {% endhint %}
 
 You can use the Snyk CLI to create [Snyk Apps](../features/integrations/snyk-apps/) by running `snyk apps create`.
 
-You can pass the Snyk App related data either by using the options to pass it to the Snyk CLI or by using the `--interactive` mode, for example `snyk apps --experimental --interactive`.
+You can pass the Snyk App-related data either by using the options to pass it to the Snyk CLI or by using the `--interactive` mode, for example `snyk apps --experimental --interactive`.
 
-All Snyk Apps related sub-commands are grouped under the top-level `apps` command, for example, `snyk apps create`.
+All Snyk Apps related subcommands are grouped under the top-level `apps` command, for example, `snyk apps create`.
 
 ## Sub-commands of snyk apps
 
-To learn about all the available sub-commands under `snyk apps` command, use the `--help` option, for example, `snyk apps --help.`
+To learn about all the available subcommands under `snyk apps` command, use the `--help` option, `snyk apps --help.`
 
 ## Options for snyk apps
 
