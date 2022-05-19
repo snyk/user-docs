@@ -82,7 +82,6 @@
     * [Retrieve the App Org IDs](features/integrations/snyk-apps/getting-started-with-snyk-apps/retrieve-the-app-org-ids.md)
     * [Managing App details](features/integrations/snyk-apps/getting-started-with-snyk-apps/managing-app-details.md)
   * [Advantages of Snyk Apps](features/integrations/snyk-apps/building-your-snyk-app.md)
-  * [Snyk Apps Scopes](features/integrations/snyk-apps/snyk-apps-scopes.md)
   * [Tutorial: create a Snyk App](snyk-apps/tutorial-create-a-snyk-app/README.md)
     * [Configuring Express.js](snyk-apps/tutorial-create-a-snyk-app/configuring-express.js.md)
     * [Register the App and configure user authorization](snyk-apps/tutorial-create-a-snyk-app/register-the-app-and-configure-user-authorization.md)
