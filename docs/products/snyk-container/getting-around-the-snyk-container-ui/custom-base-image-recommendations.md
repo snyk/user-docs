@@ -72,25 +72,37 @@ _Responsible for creating and maintaining custom base images for the organizatio
    2. Click **Update image status**.
 6. To test the feature, go through the preceding steps for at least two different images from the same repository in order to get recommendations.
 
-![](../../../.gitbook/assets/dockerfile.png)
-
 ### Application team
 
 _Using pre-built custom base images and adding additional layers on top of it for their applications_
 
-1. Import an image to a new Snyk project.
-   1. Be sure the project is in the same **group** as the custom images.
-   2. Through the UI: Configure the Dockerfile through the project’s settings (**mandatory**).\
-      ![](https://lh5.googleusercontent.com/tPfU1mB9wZ-eSLTXHh5lRG58zh5xsnoTggeQ1xA7s7yShWoIZm4rfy4\_qoE-aFGr4wYucMJrUebsmwri4Ba8B4bHZ5Nd4ax\_qvv5vxdIJZbNAdH3JGI\_uwhALj7U99bOS57s3xPI)\
-      ![](https://lh5.googleusercontent.com/4cyspvfpv1ZA-4rmhU7DzngLigf8c6rgEu5d7wHiiy7QMbIHy8Qw6qqS0VLEAEYpAfBADISvvQAyCkGqeoBgKxexDxzVPBJvNzB44MSvBzGlPd0NNuWrZyv\_73NggOYlSjZCER0z)
-   3. Through the CLI:
-      1. Use `--file` (**mandatory**) to specify the path to the Dockerfile.
-      2. The following is an example command: `snyk container monitor snykgoof/custom-base-python:3.9.2_2021110408 --file=path/to/Dockerfile.3.9.2`
-      3. Optional: use the -`-exclude-base-image-vulns` flag for the `snyk test` command to not show the base image vulnerabilities.
-   4. Note: if the same image is scanned from both the CLI and UI, Snyk creates two projects which will both be monitored.
-2.  Get recommendations for the image
+First, import an image to a new Snyk project (check that the project is in the same **group** as the custom images). You can do this from the CLI or the Web UI.
 
-    ![](https://lh5.googleusercontent.com/G--7GkeQ6i0bwTWE1tdC\_Gg5d727JdQQfclEQ1n2opt5vtRDjT2FBChFpSZBD9V1TleoLigSzhtEERg4tfVI6yIua5Q5nGeNycmR93BYCG1DsiREvhNWKtFdZ4imJZvC1ypmDKOI)
+{% hint style="info" %}
+If the same image is scanned from both the CLI and UI, Snyk creates two projects which will both be monitored.
+{% endhint %}
+
+#### Through the CLI:
+
+1. Use `--file` (**mandatory**) to specify the path to the Dockerfile.
+2. The following is an example command: `snyk container monitor snykgoof/custom-base-python:3.9.2_2021110408 --file=path/to/Dockerfile.3.9.2`
+3. Optional: use the -`-exclude-base-image-vulns` flag for the `snyk test` command to not show the base image vulnerabilities.
+
+#### Through the Web UI
+
+Configure the Dockerfile through the project’s settings (**mandatory**):
+
+![](https://lh5.googleusercontent.com/tPfU1mB9wZ-eSLTXHh5lRG58zh5xsnoTggeQ1xA7s7yShWoIZm4rfy4\_qoE-aFGr4wYucMJrUebsmwri4Ba8B4bHZ5Nd4ax\_qvv5vxdIJZbNAdH3JGI\_uwhALj7U99bOS57s3xPI)
+
+![](https://lh5.googleusercontent.com/4cyspvfpv1ZA-4rmhU7DzngLigf8c6rgEu5d7wHiiy7QMbIHy8Qw6qqS0VLEAEYpAfBADISvvQAyCkGqeoBgKxexDxzVPBJvNzB44MSvBzGlPd0NNuWrZyv\_73NggOYlSjZCER0z)
+
+#### Get recommendation
+
+Next, get recommendations for the image:
+
+![](https://lh5.googleusercontent.com/G--7GkeQ6i0bwTWE1tdC\_Gg5d727JdQQfclEQ1n2opt5vtRDjT2FBChFpSZBD9V1TleoLigSzhtEERg4tfVI6yIua5Q5nGeNycmR93BYCG1DsiREvhNWKtFdZ4imJZvC1ypmDKOI)
+
+####
 
 ## Known gaps
 
