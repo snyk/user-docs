@@ -62,16 +62,17 @@ _Responsible for creating and maintaining custom base images for the organizatio
          Example: `oracle-jre-rhel7/8e32:1.8.0_2021022508`)
       2. The following is an example command: `snyk container monitor snykgoof/custom-base-python:3.9.2_2021110408 --file=path/to/Dockerfile.3.9.2 --project-name=custom-base-python:3.9.2_2021110408 --org=ORGANIZATION_ID/ORGANIZATION_NAME`
 4. Mark the project as a custom base image.
-   1. Go to the project’s settings page.\
-      ![](https://lh5.googleusercontent.com/noWTUD\_JR1bbYmRcOtmr6rof6pVEY\_lpa\_BoLCnLMm1ZdstmC0jevLz-3Z9OEN17t39-nlPNO8tP\_kOK5Cs7e7edaPUPXRvsadyMdiZAwoditjEN\_s3d\_8AeSnZ091TAovUXZOUz)
-   2. Under ‘Custom Base Image Recommendation’, toggle to ‘Treat as custom base image’ .\
-      ![](https://lh5.googleusercontent.com/PvXNZJyUpKfcBzLUjUVQb1DF06IxvMDCcD3PncP2UteDw9P19aq1Sli4EpSz3iiPJgzZGT0Tl0\_vcYx7hkqPtMNLkdvvktD3Uq1VkYw-bmCIJO\_pSU-SBnS41ggNkFfKrkEhabf2)
-   3. Click ‘Update image status’.
+   1. Go to the project’s **Settings** page\
+      :![](../../../.gitbook/assets/dockerfile.png)\
+
+   2. Under **Custom Base Image Recommendation**, select **Treat as custom base image**.
+   3. Click **Update image status**.
 5. Mark whether the image should be eligible for recommendations.
-   1. Mark the ‘Use in recommendations’ checkbox.\
-      ![](https://lh3.googleusercontent.com/wLV\_OeM\_3iOOOfZje\_z5VPVzKLvdvBrWrQ38NMBVx7fYB8VoeUNOa-LX7uIiKZzakTov8\_l\_KQXDgDOn8NyQln9yusHINbk4tQE9FNbmPQ3wTX27nPwHRJtrYtaIVGOkzB5s88lP)
-   2. Click ‘Update image status’.
+   1. Again in **Custom Base Image Recommendation,** select the **Use in recommendations** checkbox.
+   2. Click **Update image status**.
 6. To test the feature, go through the preceding steps for at least two different images from the same repository in order to get recommendations.
+
+![](../../../.gitbook/assets/dockerfile.png)
 
 ### Application team
 
