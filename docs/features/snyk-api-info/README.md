@@ -4,7 +4,12 @@ Snyk’s [extensibility and API](https://snyk.io/blog/extensibility-and-the-snyk
 
 ## Snyk API v1
 
-The [**Snyk API v1**](https://snyk.docs.apiary.io/https://snyk.docs.apiary.io/) has the ability to test a package for issues as they are defined by Snyk, and to provide Snyk security automation according to your own workflows, unconstrained by security processes in Snyk products.
+The [**Snyk API v1**](https://snyk.docs.apiary.io/https://snyk.docs.apiary.io/) has the ability to test a package for issues as they are defined by Snyk, and to provide Snyk security automation according to your own workflows, unconstrained by security processes in Snyk products. Customers and partners can perform functions including:
+
+* Accessing vulnerability data
+* Scanning projects and applications
+* Receiving remediation advice
+* Viewing user data to build custom security solutions
 
 ## Snyk REST API
 
