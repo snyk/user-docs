@@ -2,14 +2,20 @@
 
 Snyk offers security scanning to test your projects for vulnerabilities, both through your CLI and through different integrations from our UI.
 
-**Supported versions:** For officially supported Java versions, operating systems, and Node.js versions see the [Gradle support](https://github.com/snyk/snyk-gradle-plugin#support) and [Maven support](https://github.com/snyk/snyk-mvn-plugin#support) tables.
-
 ## Features
 
 The following tables provide an outline of the general features Snyk offers by language. In addition to these features, we offer additional functionality related to the specific integration configurations.
 
 {% hint style="info" %}
 Some features might not be available, depending on your pricing plan. See [pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
+
+{% hint style="info" %}
+Gradle projects imported via Git are tested by parsing `build.gradle` files. As the only truly reliable way to resolve Gradle dependencies is to execute the tool itself, this method can sometimes provide incomplete results.
+
+If possible, enable [lockfiles](snyk-for-java-gradle-maven.md#git-services-for-gradle-projects) in your Gradle project to improve the accuracy for Git imports.
+
+However, for the most accurate results, we recommend using the [Snyk CLI](../../../snyk-cli/) to test Gradle projects.
 {% endhint %}
 
 {% tabs %}
@@ -30,6 +36,18 @@ Some features might not be available, depending on your pricing plan. See [prici
 | [Gradle](https://gradle.org) | ✔︎          |             | ✔︎               | [Fix advice](../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) only | ✔︎                 |
 {% endtab %}
 {% endtabs %}
+
+## Supported versions
+
+### Maven
+
+* CLI - Maven `3.*` ([more details](https://github.com/snyk/snyk-mvn-plugin#support))
+* Git - Maven `3.*`
+
+### Gradle
+
+* CLI - Gradle `2.*`, `3.*`, `4.*`, `5.*`, `6.*` ([more details](https://github.com/snyk/snyk-gradle-plugin#support))
+* Git - Gradle `2.*`, `3.*`,`4.*`, `5.*`, `6.*`
 
 ## Snyk CLI tool for Java and Kotlin projects (CI/CD)
 
