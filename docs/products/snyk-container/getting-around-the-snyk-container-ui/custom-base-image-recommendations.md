@@ -46,6 +46,8 @@ Snyk recommends the third image, as it was last marked as a custom base image.
   * Later, projects in the same **group** as the organization (platform team in this example) will be able to receive custom base image recommendations.
 * The current logic is: for the same image family (same repo and name), Snyk will recommend the newest image based on the **semantic versioning of the image tag**. If Snyk is unable to find a [standard semantic versioning schema](https://semver.org/) in the tag, the recommendation will be the last image that was marked as a custom base image (timestamp of marking. See the User flows→ Platform team section that follows.
 * A Dockerfile must be specified (see the instructions that follow) in the project in order to receive custom base image recommendations
+* All custom base image recommendations are considered as minor upgrades, regardless of the image tag.&#x20;
+* Automatic fix PRs are supported for custom base image recommendations.
 
 ## **User flows**
 
@@ -109,5 +111,4 @@ Next, get recommendations for the image:
 1. Marking an image as a custom base image is supported only through the UI, and not through the API/CLI.
 2. Scanning only a Dockerfile (and not the image itself) that contains a custom base image will not show vulnerabilities, but will give recommendation advice.
 3. Custom base image recommendations will not appear when scanning an image without attaching the Dockerfile to the project.
-4. Automatic fix PRs are not available for custom base image projects
-5. The image’s registry is ignored when giving recommendations for custom base images. Images with the same repository but different registries will be treated as coming from the same registry (the current base image’s registry) in showing recommendations and fix PRs.
+4. The image’s registry is ignored when giving recommendations for custom base images. Images with the same repository but different registries will be treated as coming from the same registry (the current base image’s registry) in showing recommendations and fix PRs.

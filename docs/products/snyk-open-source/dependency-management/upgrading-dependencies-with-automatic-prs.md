@@ -38,7 +38,7 @@ By default, the Project Settings inherit the organization Settings. However, whe
 
 ![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization.png>)
 
-2\.  Once the required organization is open, click the **Org Settings** button <img src="../../../.gitbook/assets/Snyk Code - Org Settings button - Icon.png" alt="" data-size="line"> on the top menu:
+2\.  Once the required organization is open, click the **Org Settings** button <img src="../../../.gitbook/assets/Snyk Code - Org Settings button - Icon (1).png" alt="" data-size="line"> on the top menu:
 
 ![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org Settings button.png>)
 
