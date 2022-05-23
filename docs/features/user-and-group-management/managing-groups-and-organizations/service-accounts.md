@@ -1,43 +1,51 @@
 # Service accounts
 
-You can set up a service account to be used for continuous integration (CI) and other automation purposes without using an actual Snyk user’s token. Service accounts are a special type of system user that has only an API token associated with it, substituting for standard user credentials. Use this token to provide credentials for accessing your Snyk account when setting up integration with your development tools and when working with our CLI and API. For more information about our APIs, see our [API documentation](../../snyk-api-info/).
+{% hint style="info" %}
+**Feature availability**\
+This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
-You can generate single or multiple tokens on the organization or group levels to manage your integrations. Use group-level tokens to access group API endpoints, organization API endpoints, and the CLI—for all organizations within the group.
+### Introduction
 
-Each service account has a unique name associated with it to make it easier to recognize. The name is unique for the organization and cannot be re-used.
+You can set up a **service account**, to be used for continuous integration (CI) and other automation purposes, without using an actual Snyk user’s token.&#x20;
+
+Service accounts are a special type of system user that has only an API token associated with it, substituting for standard user credentials. Use this token to provide credentials for accessing your Snyk account when setting up integration with your development tools, and when working with our [CLI](../../../snyk-cli/) and [API](../../snyk-api-info/).
+
+You can generate single or multiple tokens on the Organization or Group levels to manage your integrations. Use Group-level tokens to access group API endpoints, organization API endpoints, and the CLI, for all organizations in the Group.
+
+{% hint style="info" %}
+Each service account has a unique name to make it easier to recognize. This name cannot be re-used.
+{% endhint %}
+
+#### Using service accounts
 
 By using a service account token, you can:
 
-* Create multiple tokens for different uses or integrations in order to manage each separately
-* Ensure seamless integrations even when employees change roles or close their Snyk accounts, for example.
+* Create multiple tokens for different uses or integrations, to manage each separately.
+* Ensure seamless integrations, for example when employees change roles or close their Snyk accounts.
 
 {% hint style="info" %}
-Roles are only for service accounts on the group level, and are only for paid accounts.
+Roles are only for service accounts on the Group level, and are only for paid accounts.
 {% endhint %}
 
 {% hint style="info" %}
 Service accounts can be used for GitHub Enterprise integrations. If your team needs to set up a service account in GitHub, it will need to be set up as a GitHub Enterprise integration. GHE is only available though Snyk Enterprise accounts.
 {% endhint %}
 
-## Set up a service account
+### Set up a service account
 
 Generate single or multiple tokens on the organization or group levels to manage your integrations.
 
-### Prerequisites
-
-{% hint style="info" %}
-**Feature availability**\
-This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
-{% endhint %}
+#### Prerequisites
 
 To create a group service account you must be a group admin. To create an org service account you must be an org admin or a group admin.
 
 This process describes all options.
 
-## How to set up a service account
+#### How to set up a service account
 
 * Log in to your account and navigate to the relevant group and organization that you want to manage.
-* Click on settings ![](../../../.gitbook/assets/cog\_icon.png) > **Service accounts** to view existing service accounts and their details.
+* Click on settings <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Service accounts** to view existing service accounts and their details.
 * Click **Create a service account** to create a new one. The screen that loads varies a little, depending on if you chose a group (left) or an organization (right):
 
 ![](../../../.gitbook/assets/uuid-115442e7-a8bd-44df-43f8-8867a4cdc6ba-en.png)
@@ -71,16 +79,16 @@ This process describes all options.
 
 * Repeat these steps to create multiple tokens for the same or any other organization or group.
 
-## Edit and delete a service account
+### Edit and delete a service account
 
 Administrators can change token names and delete tokens. When you delete a service account, the API token associated with it becomes immediately invalidated. When an account is managed with groups, the organization and the group admins can delete tokens for the organization; only group admins can view and manage tokens on the group level. Deleting a service account is the same as revoking the API token.
 
-## How to edit and delete a service account
+#### How to edit and delete a service account
 
 *   Log in to your account and navigate to the relevant group and organization that you want to manage.
 
     For group tokens, navigate to the group level. For organization tokens, group admins can delete from either the group or the relevant organization; organization admins should navigate to the relevant organization.
-* Click on settings ![](../../../.gitbook/assets/cog\_icon.png) > **Service accounts**.
+* Click on settings <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Service accounts**.
 * Scroll to find the list of existing service accounts:
 
 ![](<../../../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en (3) (3) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10).png>)
