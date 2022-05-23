@@ -25,4 +25,4 @@ Snyk scans your Terraform code for misconfigurations and security issues as well
 
 * Click the project link you're interested in, to view the scan results and to help correct your Terraform code:
 
-![](<../../../.gitbook/assets/image (82) (1).png>)
+![](<../../../.gitbook/assets/Screenshot 2022-05-23 at 14.44.56.png>)

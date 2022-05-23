@@ -7,7 +7,7 @@ Use Snyk IaC with the standard Snyk web interface to find and fix issues in conf
 1. In your **Projects** area, select the project to open
 2. Snyk IaC displays information and issue cards for that project:
 
-![](<../../.gitbook/assets/image (86) (1).png>)
+![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.15.02.png>)
 
 Information available shows standard Snyk project information (see [introduction-to-snyk-projects](../../getting-started/introduction-to-snyk-projects/ "mention")), including:
 
@@ -19,7 +19,7 @@ Information available shows standard Snyk project information (see [introduction
 
 Each issue card shows specific details about that issue:
 
-![](<../../.gitbook/assets/image (68) (1).png>)
+![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.24.14.png>)
 
 Card details include:
 
@@ -34,20 +34,25 @@ Card details include:
     * the **remediation** advice to resolve the issue
 
 
-* Click **Ignore** to ignore this vulnerability (see [Ignore Issues](../../features/fixing-and-prioritizing-issues/issue-management/ignore-issues.md))
+
+Click **Full details** to see a preview of the full code:
+
+![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.24.20.png>)
+
+Click **Ignore** to ignore this vulnerability (see [Ignore Issues](../../features/fixing-and-prioritizing-issues/issue-management/ignore-issues.md))
 
 ### Notes
 
-* Terraform Cloud and Helm will not show a code snippet, but just the card details.\
+* Terraform Cloud and Helm will not show a code snippet, but just the card details. They will also not have a **Full details** button to show the preview of the full code.\
   Examples:
 
 ![Helm](<../../.gitbook/assets/image (66) (1).png>)
 
-
-
 ![Terraform Cloud](<../../.gitbook/assets/image (84) (1).png>)
 
-* In some cases that we can not identify the exact line of the vulnerable path in the file, we will not show a code snippet, but an info message and the card details.\
+* In some cases that we can not identify the exact line of the vulnerable path in the file, we will not show a code snippet, but an info message and the card details. If able to, we will show the **Full details** button so that a preview of the full code can be seen.\
   Example:
 
-![](<../../.gitbook/assets/image (78) (1) (2).png>)
+![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.07.png>)
+
+![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.17 (1).png>)
