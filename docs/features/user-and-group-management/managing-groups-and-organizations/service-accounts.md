@@ -25,8 +25,10 @@ Generate single or multiple tokens on the organization or group levels to manage
 
 ### Prerequisites
 
+{% hint style="info" %}
 **Feature availability**\
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 To create a group service account you must be a group admin. To create an org service account you must be an org admin or a group admin.
 

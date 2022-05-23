@@ -1,65 +1,116 @@
 # Upgrading dependencies with automatic PRs
 
-Once you have imported your preferred Git repositories, Snyk monitors those repos, regularly scanning them for vulnerability, license and dependency health issues. In addition to fix advice, Snyk can then also automatically create pull requests (PRs) on your behalf in order to upgrade your dependencies based on the scan results.
+After you imported your chosen Git repositories to Snyk, Snyk continuously monitors these repositories by regularly scanning them for vulnerability, license, and dependency health issues. In addition to providing you with fix advices, Snyk can also automatically create pull requests (PRs) on your behalf, in order to upgrade your dependencies based on the scan results.
 
-Snyk currently supports this feature for npm, Yarn and Maven-Central projects through GitHub, GitHub Enterprise Server and BitBucket Cloud. For use with the Broker, your admin should first upgrade to v4.55.0 or later. See our docs for additional assistance when upgrading Broker.
+## Supported languages and SCMs
 
-![](<../../../.gitbook/assets/image (8) (2) (4) (4) (4) (6) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (22).png>)
+Snyk currently supports the **Automatic dependency upgrade pull requests** feature **** for npm, Yarn, and Maven-Central repositories via the following SCMs: GitHub, GitHub Enterprise Server, and Bitbucket Cloud.&#x20;
 
-## How it works
+You can also use this feature with the Snyk Broker. For using this feature, the Snyk Broker must be upgrades to v. 1.4.55.0 or later. For more information, see [Upgrade your Snyk Broker client](../../../features/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md#upgrade-your-snyk-broker-client).
 
-1. Integration is configured and users enable automatic upgrade PRs (within the integration settings or [in the project settings](upgrading-dependencies-with-automatic-prs.md)).
-2. Snyk scans your projects as you import them and continues to monitor your projects, scanning on a regular basis thereafter.
+![](<../../../.gitbook/assets/Upgrade Broker.png>)
+
+## How do the Automatic dependency upgrade PRs work
+
+1. The **Automatic dependency upgrade pull requests** option is enabled (in [the Integration Settings on the organization level](upgrading-dependencies-with-automatic-prs.md#enabling-the-automatic-dependency-upgrade-prs-option-for-an-entire-organization) or [the Project Settings](upgrading-dependencies-with-automatic-prs.md#enabling-the-automatic-dependency-upgrade-prs-option-for-a-specific-project)).
+2. When you import your repos to Snyk, Snyk scans the repos and provides you with the scan results. Snyk then continues to monitor your Open Source Projects, scanning them on a regular basis.
 3. Per scan, when new versions for your dependencies are identified, Snyk does the following:
-   * Snyk creates automatic upgrade PRs (frequency based on Snyk project settings)
+   * Snyk creates automatic upgrade PRs. \
+     **Note**: The re-scan frequency is based on the schedule set in the Project Settings.
    * Snyk will not open a new upgrade PR for a dependency that is already changed (upgraded or patched) in another open Snyk PR.
    * Snyk opens separate PRs for each dependency.
-   * Snyk will not create upgrade PRs for a repo that has 5 or more Snyk PRs open - if the limit of open PRs is reached, no new ones are created. This number can set to between 1-10 from the Settings. This limit only applies when creating upgrade PRs, but does count fix PRs. Fix PRs are not limited in this way.
-   * By default, Snyk recommends only patch and minor upgrades, but major version upgrade can be enabled in the settings where the feature is enabled.
-   * If the latest eligible version contains vulnerabilities not already found in your project, Snyk will not recommend an upgrade.
-   * Snyk does not recommend upgrades to versions that are less than 21 days old. This is to avoid versions that introduce functional bugs and subsequently get unpublished, or versions that are released from a compromised account (where the account owner has lost control to someone will malicious intent).
+   * By default, Snyk will not create upgrade PRs for a Project that has 5 or more open Snyk PRs. If the limit of open PRs is reached, no new PRs are created. This limit number can be set to be between 1-10 on the Integration or Project Settings. This limit only applies to Upgrade PRs, but it does count Fix PRs. However, Fix PRs are not limited in this way.
+   * By default, Snyk recommends only patch and minor upgrades. However, recommendations for major version upgrades can be requested in the Settings page where the feature is enabled.
+   * If the latest eligible version contains vulnerabilities that are not found yet in your Project, Snyk will not recommend an upgrade.
+   * Snyk does not recommend upgrades to versions that are less than 21 days old. This is to avoid versions that introduce functional bugs and subsequently get unpublished, or versions that are released from a compromised account (where the account owner has lost control to someone with a malicious intent).
 
-## Supported languages and repos
+## Enabling the Automatic dependency upgrade PRs option
 
-Snyk currently supports this feature for npm, Yarn and Maven-Central projects through GitHub, GitHub Enterprise Server and BitBucket Cloud, including use of the Snyk Broker. For use with the Broker, your admin should first upgrade to v4.55.0 or later. See our docs for additional assistance when upgrading Broker.
+You can configure Snyk to regularly check your dependency health, recommend dependency upgrades, and automatically submit PRs for upgrades on your behalf for an entire organization or a specific Project. Once configured, Snyk automatically creates PRs for all the necessary dependencies as upgrades become available for the scanned Projects.&#x20;
 
-## Upgrading dependencies with automatic PRs
+By default, the Project Settings inherit the organization Settings. However, when the Settings on the organization and Project levels are different, the Project Settings override the organization Settings.  &#x20;
 
-Once you have imported your preferred Git repositories, Snyk monitors those repos, regularly scanning them for vulnerability, license and dependency health issues. In addition to fix advice, Snyk can then also automatically create pull requests (PRs) on your behalf in order to upgrade your dependencies based on the scan results.
+### Enabling the Automatic dependency upgrade PRs option for an entire organization
 
-Snyk currently supports this feature for npm, Yarn and Maven-Central projects through GitHub, GitHub Enterprise Server and BitBucket Cloud. For use with the Broker, your admin should first upgrade to v4.55.0 or later. See our docs for additional assistance when upgrading Broker.
+**To configure automatic upgrade PRs for an entire organization:**
 
-![](<../../../.gitbook/assets/image (8) (2) (4) (4) (4) (6) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (20).png>)
+1\.  On the Snyk Web UI, open the required organization:
 
-## Enable automatic dependency upgrade PRs for a specific project
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization.png>)
 
-Enable Snyk to regularly check your dependency health, recommend dependency upgrades and automatically submit PRs for upgrades on your behalf for a specific project.
+2\.  Once the required organization is open, click the **Org Settings** button <img src="../../../.gitbook/assets/Snyk Code - Org Settings button - Icon (1).png" alt="" data-size="line"> on the top menu:
 
-Once configured, Snyk automatically creates PRs for all necessary dependencies as upgrades become available for the specific project.
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org Settings button (1).png>)
 
-{% hint style="info" %}
-**Note**\
-Settings on the project level override the settings on the organization level. Currently, we support all languages supported by the Git repositories that we integrate with: GitHub, Bitbucket, and Azure repos.
-{% endhint %}
+3\.  On the **Settings** page, select **Integrations** on the left menu. Then, locate your configured and required SCM, and click the **Edit settings** option at the end of its row:&#x20;
 
-### **To configure automatic upgrade PRs for a specific project:**
+**Note**: You can enable this feature only for the following SCMs: GitHub, GitHub Enterprise Server, and Bitbucket Cloud.&#x20;
 
-**Prerequisites:**
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Organization - Integrations page.png>)
 
-* For use with Broker, your admin should first upgrade to v4.55.0.
+4\.  On the **Settings** page of the selected integration, scroll down to the **Automatic dependency upgrade pull requests** section**:**
 
-**Steps:**
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Organization - Integration Settings - Automatic Upgrade section .png>)
 
-1. Navigate to the organization for which you would like to enable automatic upgrade PRs and then click Projects.
-2. Navigate to the relevant project and click the Settings cog ![](../../../.gitbook/assets/cog\_icon.png)
-3. From the Settings area, click on the integration settings from the left panel menu. **Note:** These settings only apply to integration for that one project.
-4. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled.
-5. From the options that appear:
-   1. Snyk creates PRs up to a maximum of 10 open simultaneously - per repo. To limit this number further, select the maximum number of PRs from the dropdown list. For further information about this, read more about how it works.
-   2. In the Dependencies to ignore field, enter the exact name of any dependencies that should not be handled as part of the automatic functionality. This field accepts only lower case letters.
-6. Click **Update dependency upgrade settings**
-7. Settings are saved
+5\.  On the **Automatic dependency upgrade pull requests** section perform the following:
 
-![](<../../../.gitbook/assets/image (7).png>)
+* Slider - change to **Enabled**.
+* **Include major version in upgrade recommendation** – select one of the available options to define if major version upgrades will be included in the recommendations. By default, only patches and minor versions are included in the upgrade recommendations.
+* **Limit Snyk to this many dependency upgrade PRs open simultaneously** – define how many open Snyk PRs a Project can have, in order to also receive a dependency upgrade PR. By default, a Project can have 4 open PRs at the most, in order to also receive a dependency upgrade PR. You can set a number between 1 -10. When the limit of the open PRs is reached, no new upgrade PRs are created.
+* **Dependencies to ignore** – enter the exact name of the dependencies that should NOT be included in the **Automatic upgrade** operation. You can only enter lower case letters.
 
-Every time Snyk scans this project now, it automatically submits upgrade PRs based on results. If a newer version is released for an existing Snyk upgrade PR or for an existing fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Project Settings - Integration - Automatic Upgrade section - Enabled.png>)
+
+7\.    ****    To save **** and apply your changes, click one of the following:
+
+* **Apply changes to all overridden projects** option –  your changes are saved, and will be applied to all the Projects in the organization. Projects that have Custom Settings will inherit these organization Settings, and their Custom Settings will be override. After you click this option, a message appears, asking you to confirm the override:\
+  ![](<../../../.gitbook/assets/image (73).png>)****
+* **Save changes** button – your changes are saved, and will be applied to all the Projects in the organization that are configured to inherit these Settings from the organization. Projects that have Custom Settings will not be influenced by this change.
+
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org- Integration - Automatic Upgrade section - Save options.png>)
+
+From now on, every time Snyk will scan any Project in the organization, it will automatically submit Upgrade PRs if the scan discovers that an upgrade is available. If a newer version is released for an existing Snyk Upgrade PR or for an existing Fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.
+
+****
+
+### Enabling the Automatic dependency upgrade PRs option for a specific Project
+
+The Settings on the Project level override the Settings on the organization level. However, the Settings on the Organization level can override the Custom Settings of a Project, if they are configured after the Project level customization, and are saved with the option - **Apply changes to all overridden projects** (see Step 7 above).&#x20;
+
+****
+
+**To configure automatic upgrade PRs for a specific Project:**
+
+1\.  On the Snyk Web UI, open the organization that includes the required Project:
+
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization.png>)
+
+2\.  Move to the **Projects** page by clicking the **Projects** tab on the top menu.
+
+3\.  Locate the Project for which you want to enable automatic upgrade PRs. Then, click the **Settings** button on the right side of its row:
+
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Project Settings button .png>)
+
+4\.  On the Project **Settings** page, click the relevant **integration** tab on left menu**:**
+
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Project Settings - Integration tab.png>)
+
+5\.  On the **integration** page, scroll down to the **Automatic dependency upgrade pull requests** section. Then, select one of the following:
+
+* **Inherit from Integration settings** – apply the Integration Settings of the organization to the selected Project. Note that if the **Automatic dependency upgrade pull requests option is disabled for the organization, this option will also be disabled for the Project.** If you selected this option, move to Step 7.
+* **Customize for only this project** – apply specific settings of the **Automatic dependency upgrade pull requests** option on the Project. If you selected this option, move to the next step.
+
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Project Settings - Integration - Automatic Upgrade section.png>)
+
+6\.  \[For the **Customize** option only] If you selected the **Customize for only this project** option, perform the following:
+
+* Slider - change to **Enabled**.
+* **Include major version in upgrade recommendation** – select one of the available options to define if major version upgrades will be included in the recommendations. By default, only patches and minor versions are included in the upgrade recommendations.
+* **Limit Snyk to this many dependency upgrade PRs open simultaneously** – define how many open Snyk PRs a Project can have, in order to also receive a dependency upgrade PR. By default, a Project can have 4 open PRs at the most, in order to also receive a dependency upgrade PR. You can set a number between 1 -10. When the limit of the open PRs is reached, no new upgrade PRs are created.
+* **Dependencies to ignore** – enter the exact name of the dependencies that should NOT be included in this **Automatic upgrade** operation. You can only enter lower case letters.
+
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Project Settings - Integration - Automatic Upgrade - Customize options.png>)
+
+**7.**    Click the **Update dependency upgrade settings** button to save your settings.
+
+From now on, every time Snyk will scan this Project, it will automatically submit Upgrade PRs if the scan discovers that an upgrade is available. If a newer version is released for an existing Snyk Upgrade PR or for an existing Fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.

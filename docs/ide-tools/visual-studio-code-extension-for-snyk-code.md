@@ -75,7 +75,7 @@ To re-authenticate with a different account, follow the steps below:
 
 Or you run `Snyk: Set Token` command and set your token in the text field manually.
 
-![](<../.gitbook/assets/image (80).png>)
+![](<../.gitbook/assets/image (80) (1).png>)
 
 \\
 

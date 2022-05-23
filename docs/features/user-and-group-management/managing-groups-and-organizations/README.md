@@ -6,3 +6,4 @@
 * [What’s a Snyk organization?](whats-a-snyk-organization.md)
 * [Snyk groups: switch between groups and orgs](snyk-groups-switch-between-groups-and-orgs.md)
 * [Manage Snyk organizations](manage-snyk-organizations.md)
+* [Service accounts](service-accounts.md)
