@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Snyk provides tools to help with specific pain points that may not be addressed by the main Snyk product lines.
+Snyk provides tools including the [CLI](../../snyk-cli/) and the [API](../snyk-api-info/) to expand the functionality provided by Snyk products. Snyk provides more tools to help with specific pain points that may not be addressed by Snyk products.
 
 {% hint style="info" %}
 You will need an existing [Snyk Account](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page) with populated projects to use these tools.
@@ -10,16 +10,21 @@ You will need an existing [Snyk Account](https://snyk.io/login?cta=sign-up\&loc=
 
 ## Tools available
 
+For some of these tools, Snyk is providing documentation on the user docs site:
+
 * [snyk-api-import](https://github.com/snyk-tech-services/snyk-api-import): Bulk import projects into Snyk in a robust, paced way.
-* [jira-tickets-for-new-vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns): Sync your Snyk monitored projects and auto-open JIRA tickets for  issues.
 * [snyk-delta](https://github.com/snyk-tech-services/snyk-delta): Get the delta between two Snyk snapshots.
+* [snyk-filter](https://github.com/snyk-tech-services/snyk-filter): Takes the JSON output from the Snyk CLI, and applies custom filtering of the results.
+* [jira-tickets-for-new-vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns): Sync your Snyk monitored projects and auto-open JIRA tickets for  issues.
+* [Snyk-SCM-Contributors-Count](snyk-scm-contributors-count-cli-tool/): Count contributors for your SCM repos with commits in the last 90 days. Repo: [snyk-scm-contributors-count](https://github.com/snyk-tech-services/snyk-scm-contributors-count)
+
+For additional tools, refer to the repos:
+
 * [snyk-disallow](https://github.com/snyk-tech-services/snyk-disallow): Get a viewer token for the Snyk Group to get a read|test-only token for CI or similar systems.
 * [snyk-prevent-gh-commit-status](https://github.com/snyk-tech-services/snyk-prevent-gh-commit-status): POST commit status of a PR the result of [snyk-delta](https://github.com/snyk-tech-services/snyk-delta) executed in the CI.
-* [snyk-scm-contributors-count](https://github.com/snyk-tech-services/snyk-scm-contributors-count): Count contributors for your SCM repos with commits in the last 90 days. Refer also to the [docs](snyk-scm-contributors-count-cli-tool/).
 * [snyk-cr-monitor](https://github.com/snyk-tech-services/snyk-cr-monitor): Gather Docker repos to test, then Iterate through results, to run multiple jobs simultaneously.
 * [backstage-plugin-snyk](https://github.com/snyk-tech-services/backstage-plugin-snyk): Plugin to display security details from Snyk.
 * [snyk-api-ts-client](https://github.com/snyk-tech-services/snyk-api-ts-client): Snyk API Typescript client.
-* [snyk-filter](https://github.com/snyk-tech-services/snyk-filter): Takes the JSON output from the Snyk CLI, and applies custom filtering of the results.
 * [snyk-transitive-ignore](https://github.com/snyk-tech-services/snyk-transitive-ignore): Generate the Snyk ignore policy dynamically based on a provided list of packages.
 * [snyk-user-sync-tool](https://github.com/snyk-tech-services/snyk-user-sync-tool): Add, remove, and sync user memberships.
 * [snyk-licenses-texts](https://github.com/snyk-tech-services/snyk-licenses-texts): Provides Organization level licenses used, copyrights, and dependencies data.
