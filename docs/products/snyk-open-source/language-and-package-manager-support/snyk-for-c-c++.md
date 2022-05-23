@@ -310,6 +310,12 @@ Specify the maximum level of archive extraction. Use `0` to disable archive extr
 
 When used with the `snyk monitor --unmanaged` command, you can override the default name Snyk gives your snapshots by entering your desired name using the `--project-name` flag.
 
+#### &#x20;remote-repo-url
+
+`--remote-repo-url=<URL>`
+
+Set or override the remote URL for the repository that you would like to monitor.
+
 #### &#x20;**target-reference**
 
 `--target-reference=<TARGET_REFERENCE>`
