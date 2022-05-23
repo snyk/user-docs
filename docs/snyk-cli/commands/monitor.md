@@ -292,11 +292,11 @@ Allow skipping packages that are not found in the environment.
 
 ## Options for scanning using `--unmanaged`
 
-### ``[`--org=<ORG_ID>`](monitor.md#org-less-than-org\_id-greater-than)``
+### ``[`--org=<ORG_ID>`](https://docs.snyk.io/snyk-cli/commands/monitor#org-less-than-org\_id-greater-than)``
 
-### ``[`--json`](monitor.md#json)``
+### ``[`--json`](https://docs.snyk.io/snyk-cli/commands/monitor#json)``
 
-### ``[`--target-reference=<TARGET_REFERENCE>`](monitor.md#target-reference-less-than-target\_reference-greater-than)``
+### ``[`--target-reference=<TARGET_REFERENCE>`](https://docs.snyk.io/snyk-cli/commands/monitor#target-reference-less-than-target\_reference-greater-than)``
 
 ### `--target-dir`&#x20;
 
