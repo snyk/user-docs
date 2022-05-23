@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Snyk provides tools including the [CLI](../../snyk-cli/) and the [API](../snyk-api-info/) to expand the functionality provided by Snyk products. Snyk provides more tools to help with specific pain points that may not be addressed by Snyk products.
+Snyk provides tools including the [CLI](../../snyk-cli/) and the [API](../snyk-api-info/) to expand uses of functionality provided by Snyk products. Snyk provides more tools to help with specific pain points that may not be addressed by Snyk products.
 
 {% hint style="info" %}
 You will need an existing [Snyk Account](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page) with populated projects to use these tools.
