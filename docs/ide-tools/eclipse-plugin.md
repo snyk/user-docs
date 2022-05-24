@@ -126,7 +126,7 @@ Setting these variables only in a shell environment (for example, using **\~/.ba
 * On **Linux**, updating the file `/etc/environment` can be used to propagate the environment variables to the windows manager and UI.
 
 {% hint style="info" %}
-If you need to use a **proxy server** to connect to the internet, configure it using the **environment variables**.
+Summary: Snyk's Eclipse plugin uses the proxy settings from Eclipse, but also picks up the proxy settings from the environment variables.
 {% endhint %}
 
 ## Use the Snyk plugin to secure your Eclipse projects
