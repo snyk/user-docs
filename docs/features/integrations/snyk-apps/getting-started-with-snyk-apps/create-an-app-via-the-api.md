@@ -79,6 +79,10 @@ When deciding which scopes your Snyk App will need, consider the actions your Ap
 
 The following lists the **available scopes**.
 
+{% hint style="warning" %}
+`org.read` is a mandatory scope and should always be included.
+{% endhint %}
+
 | Scope                         | Description                                |
 | ----------------------------- | ------------------------------------------ |
 | org.read                      | View organization information and settings |
