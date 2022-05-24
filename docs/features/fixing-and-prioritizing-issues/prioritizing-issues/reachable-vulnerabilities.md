@@ -17,7 +17,7 @@ By looking deeper into how the app is using the open-source dependencies, and ho
 
 To provide as accurate results as possible, we use multiple algorithms to build a call graph from your app to the open-source dependencies you use. After we have that call graph, we can identify which vulnerabilities have a path leading from the app’s code down to the vulnerable function or package.
 
-We split the results into he following areas:
+We split the results into the following areas:
 
 1. **Reachable** - A clear path from the code to vulnerable functions was found. Fixing those vulnerabilities first is recommended.
 2. **Potentially reachable** - Indication that the vulnerability might be reachable was found. Further review is recommended.
