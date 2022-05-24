@@ -1,26 +1,26 @@
-# More Snyk tools
+# Snyk Tools
 
-### Introduction
+## Scope of Snyk tools
 
-Snyk environments such as the [CLI](../../snyk-cli/) and the [API](../snyk-api-info/) allow you to expand uses of functionality provided by Snyk products. We also provide tools to help with specific "pain points" that may not be addressed by these standard products.
+Snyk tools help with specific "pain points" that may not be addressed by Snyk product functionality, regardless of whether you use the Web UI, CLI, API, or an integration.
 
 {% hint style="info" %}
-You will need an existing [Snyk Account](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page) with populated projects to use these tools.
+You must have a [Snyk Account](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page) with populated projects to use Snyk tools.
 {% endhint %}
 
-### Tools available
+## Available tools
 
-#### Key tools
+### Key tools
 
-We provide full documentation for the following key tools:
+Snyk provides full documentation for the following key tools:
 
-* [snyk-api-import](https://github.com/snyk-tech-services/snyk-api-import): Bulk import projects into Snyk in a robust, paced way.
-* [snyk-delta](https://github.com/snyk-tech-services/snyk-delta): Get the delta between two Snyk snapshots.
-* [snyk-filter](https://github.com/snyk-tech-services/snyk-filter): Takes the JSON output from the Snyk CLI, and applies custom filtering of the results.
-* [jira-tickets-for-new-vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns): Sync your Snyk monitored projects and auto-open JIRA tickets for  issues.
+* [snyk-api-import](tool-snyk-api-import/): Bulk import projects into Snyk in a robust, paced way. Repo: [snyk-api-import](https://github.com/snyk-tech-services/snyk-api-import)
+* [snyk-delta](tool-snyk-delta.md): Get the delta between two Snyk snapshots. Repo: [snyk-delta](https://github.com/snyk-tech-services/snyk-delta)
+* [snyk-filter](tool-snyk-filter.md): Takes the JSON output from the Snyk CLI, and applies custom filtering of the results. Repo: [snyk-filter](https://github.com/snyk-tech-services/snyk-filter)
+* [jira-tickets-for-new-vulns](tool-jira-tickets-for-new-vulns.md): Sync your Snyk monitored projects and auto-open JIRA tickets for  issues. Repo: [jira-tickets-for-new-vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns)
 * [Snyk-SCM-Contributors-Count](snyk-scm-contributors-count-cli-tool/): Count contributors for your SCM repos with commits in the last 90 days. Repo: [snyk-scm-contributors-count](https://github.com/snyk-tech-services/snyk-scm-contributors-count).
 
-#### Other tools
+### Additional Snyk tools
 
 For additional tools, refer to the repos for usage instructions:
 
@@ -43,6 +43,6 @@ For additional tools, refer to the repos for usage instructions:
 * [snyk-bulk-action-scripts](https://github.com/snyk-tech-services/snyk-bulk-action-scripts): A collection of scripts to edit integration settings for every organization in a group in Snyk.
 * [snyk-deps-to-csv](https://github.com/snyk-tech-services/snyk-deps-to-csv): Collects all dependencies from all orgs in a group and outputs to a CSV file.
 
-### Tool ideas
+## Tool ideas
 
-Do you have an idea for a tool? If so, check out [Snyk Apps](../integrations/snyk-apps/), which provides an opportunity to mold your Snyk experience to suit your specific needs. You can also contact [Snyk Support with questions](https://support.snyk.io/hc/en-us/).
+Do you have an idea for a tool? If so, check out [Snyk Apps](../integrations/snyk-apps/), which provides an opportunity to mold your Snyk experience to suit your specific needs. You can also contact [Snyk Support](https://support.snyk.io/hc/en-us/) with questions.

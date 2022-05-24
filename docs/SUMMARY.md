@@ -461,7 +461,7 @@
   * [Issues tab](features/reports/issues-tab.md)
   * [Dependencies tab](features/reports/dependencies-tab.md)
   * [Licenses tab](features/reports/licenses-tab.md)
-* [More Snyk tools](features/other-tools/README.md)
+* [Snyk Tools](features/other-tools/README.md)
   * [Tool: snyk-api-import](features/other-tools/tool-snyk-api-import/README.md)
     * [Creating orgs in Snyk](features/other-tools/tool-snyk-api-import/creating-orgs-in-snyk.md)
     * [Generating import data](features/other-tools/tool-snyk-api-import/generating-import-data.md)
