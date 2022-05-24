@@ -83,33 +83,30 @@ The following lists the **available scopes**.
 `org.read` is a mandatory scope and should always be included.
 {% endhint %}
 
-| Scope                         | Description                                |
-| ----------------------------- | ------------------------------------------ |
-| org.read                      | View organization information and settings |
-| org.report.read               | View reports in your organization          |
-| org.project.read              | View project information and settings      |
-| org.project.add               | Add new projects                           |
-| org.project.edit              | Edit project information                   |
-| org.project.remove            | Permanently remove projects                |
-| org.project.status            | Activate and deactivate projects           |
-| org.project.test              | Test projects                              |
-| org.project.ignore.read       | View project ignore information            |
-| org.project.ignore.create     | Create new project ignores                 |
-| org.project.ignore.edit       | Configure project ignores                  |
-| org.project.ignore.delete     | Permanently remove project ignores         |
-| org.project.tag.edit          | Create, apply and remove project tags      |
-| org.project.pr.create         | Create fix pull requests for projects      |
-| org.project.jira.issue.read   | View Jira issue information                |
-| org.project.jira.issue.create | Create new Jira issues                     |
-| org.package.test              | Test packages in our supported ecosystems  |
-| org.target.read               | View organization targets                  |
-| org.target.delete             | Permanently remove organization targets    |
-| org.integration.read          | View organization integration information  |
-| org.user.read                 | View organization member information       |
-| org.user.leave                | Leave the organization                     |
-| org.entitlements.read         | View organization entitlements             |
-| org.audit\_log.read           | View audit logs for the organization       |
-| org.flags.read                | View upcoming and experimental features    |
+| Scope                         | Description                                                                 |
+| ----------------------------- | --------------------------------------------------------------------------- |
+| org.read                      | View organization information and settings                                  |
+| org.edit                      | Edit organization information and settings                                  |
+| org.report.read               | View reports in your organization                                           |
+| org.project.read              | View project information and settings                                       |
+| org.project.add               | Add new projects                                                            |
+| org.project.edit              | Edit project information                                                    |
+| org.project.remove            | Permanently remove projects                                                 |
+| org.project.status            | Activate and deactivate projects                                            |
+| org.project.test              | Test projects                                                               |
+| org.project.ignore.read       | View project ignore information                                             |
+| org.project.ignore.create     | Create new project ignores                                                  |
+| org.project.ignore.edit       | Configure project ignores                                                   |
+| org.project.ignore.delete     | Permanently remove project ignores                                          |
+| org.project.attributes.edit   | Apply and remove project attributes                                         |
+| org.project.tag.edit          | Create, apply and remove project tags                                       |
+| org.project.pr.create         | Create fix pull requests for projects                                       |
+| org.project.pr.skip           | Skip failed security tests on pull requests by marking checks as successful |
+| org.project.jira.issue.read   | View Jira issue information                                                 |
+| org.project.jira.issue.create | Create new Jira issues                                                      |
+| org.package.test              | Test packages in our supported ecosystems                                   |
+| org.target.read               | View organization targets                                                   |
+| org.target.delete             | Permanently remove organization targets                                     |
 
 {% hint style="info" %}
 You cannot currently update scopes for a Snyk App after it has been created. If you change your mind about which scopes you need during the App development process, create a new Snyk App with a new list of scopes, and replace the clientId and clientSecret in your App’s configuration. If users have installed the Snyk App already, the users will need to authorize the new App with their Snyk account.
