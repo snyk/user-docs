@@ -43,23 +43,11 @@ Default: 4 , the current working directory (0) and 4 subdirectories.
 
 Example: `--detection-depth=3` limits search to the specified directory  (or the current directory if no `<PATH>` is specified) plus three levels of subdirectories; zero (0) is the current directory.
 
-### `--exclude=<GLOB>[,<GLOB>]...>`
+### `--exclude=<DIRECTORY>[,<DIRECTORY>]...>`
 
-Use with `--all-projects` and `--yarn-workspaces` to indicate subdirectories and files to exclude.
-
-The `--exclude` argument must be a comma separated list of directory or file names and cannot contain a path.
-
-Note that the glob does need to be an exact match and needs only to be part of the path or the filename.
+Can be used with `--all-projects` and `--yarn-workspaces` to indicate subdirectories and files to exclude. Must be comma separated.
 
 Use the `--exclude` option with `--detection-depth` to ignore directories at any depth.
-
-Examples:
-
-Exclude any folders, subfolders, or files containing `test` as part of the path or name:\
-`--exclude=test`
-
-Exclude any folders, subfolders, or files containing `fixtures` or `debug` as part of the path or name:\
-`--exclude=fixtures,debug`
 
 ### `--prune-repeated-subdependencies`, `-p`
 
