@@ -27,9 +27,9 @@ You can find the default roles - Org Admin and Org Collaborator. When you click 
 
 ![Group settings](<../../../.gitbook/assets/Screenshot 2022-05-17 at 05.42.17.png>)
 
-Click the **Create new Role** button and enter a role name and description. Role names should be unique, and can contain alphanumeric characters plus hyphen and underscore.
+Click the **Create new Role** button and enter a role name and description. Role names should be unique, and can contain alphanumeric characters plus spaces.
 
-![Create new role](<../../../.gitbook/assets/Screenshot 2022-05-17 at 05.54.24.png>)
+![](<../../../.gitbook/assets/Screenshot 2022-05-24 at 09.04.38.png>)
 
 Click the **Create role** button. You will see basic details about the role in the top section.&#x20;
 
