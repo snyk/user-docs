@@ -29,7 +29,7 @@ Roles are only for service accounts on the Group level, and are only for paid ac
 {% endhint %}
 
 {% hint style="info" %}
-Service accounts can be used for GitHub Enterprise integrations. If your team needs to set up a service account in GitHub, it will need to be set up as a GitHub Enterprise integration. GHE is only available though Snyk Enterprise accounts.
+Service accounts can be used for GitHub Enterprise integrations. If your team needs to set up a service account in GitHub, it will need to be set up as a GitHub Enterprise integration. GHE is only available through Snyk Enterprise accounts.
 {% endhint %}
 
 ### Set up a service account
