@@ -1,24 +1,28 @@
-# More Snyk Tools
+# More Snyk tools
 
-## Introduction
+### Introduction
 
-Snyk provides tools including the [CLI](../../snyk-cli/) and the [API](../snyk-api-info/) to expand uses of functionality provided by Snyk products. Snyk provides more tools to help with specific pain points that may not be addressed by Snyk products.
+Snyk environments such as the [CLI](../../snyk-cli/) and the [API](../snyk-api-info/) allow you to expand uses of functionality provided by Snyk products. We also provide tools to help with specific "pain points" that may not be addressed by these standard products.
 
 {% hint style="info" %}
 You will need an existing [Snyk Account](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page) with populated projects to use these tools.
 {% endhint %}
 
-## Tools available
+### Tools available
 
-For some of these tools, Snyk is providing documentation on the user docs site:
+#### Key tools
+
+We provide full documentation for the following key tools:
 
 * [snyk-api-import](https://github.com/snyk-tech-services/snyk-api-import): Bulk import projects into Snyk in a robust, paced way.
 * [snyk-delta](https://github.com/snyk-tech-services/snyk-delta): Get the delta between two Snyk snapshots.
 * [snyk-filter](https://github.com/snyk-tech-services/snyk-filter): Takes the JSON output from the Snyk CLI, and applies custom filtering of the results.
 * [jira-tickets-for-new-vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns): Sync your Snyk monitored projects and auto-open JIRA tickets for  issues.
-* [Snyk-SCM-Contributors-Count](snyk-scm-contributors-count-cli-tool/): Count contributors for your SCM repos with commits in the last 90 days. Repo: [snyk-scm-contributors-count](https://github.com/snyk-tech-services/snyk-scm-contributors-count)
+* [Snyk-SCM-Contributors-Count](snyk-scm-contributors-count-cli-tool/): Count contributors for your SCM repos with commits in the last 90 days. Repo: [snyk-scm-contributors-count](https://github.com/snyk-tech-services/snyk-scm-contributors-count).
 
-For additional tools, refer to the repos:
+#### Other tools
+
+For additional tools, refer to the repos for usage instructions:
 
 * [snyk-disallow](https://github.com/snyk-tech-services/snyk-disallow): Get a viewer token for the Snyk Group to get a read|test-only token for CI or similar systems.
 * [snyk-prevent-gh-commit-status](https://github.com/snyk-tech-services/snyk-prevent-gh-commit-status): POST commit status of a PR the result of [snyk-delta](https://github.com/snyk-tech-services/snyk-delta) executed in the CI.
@@ -39,6 +43,6 @@ For additional tools, refer to the repos:
 * [snyk-bulk-action-scripts](https://github.com/snyk-tech-services/snyk-bulk-action-scripts): A collection of scripts to edit integration settings for every organization in a group in Snyk.
 * [snyk-deps-to-csv](https://github.com/snyk-tech-services/snyk-deps-to-csv): Collects all dependencies from all orgs in a group and outputs to a CSV file.
 
-## Tool ideas
+### Tool ideas
 
 Do you have an idea for a tool? If so, check out [Snyk Apps](../integrations/snyk-apps/), which provides an opportunity to mold your Snyk experience to suit your specific needs. You can also contact [Snyk Support with questions](https://support.snyk.io/hc/en-us/).
