@@ -14,15 +14,15 @@ You must have a [Snyk Account](https://snyk.io/login?cta=sign-up\&loc=nav\&page=
 
 Snyk provides full documentation for the following key Snyk Tools:
 
-* [snyk-api-import](tool-snyk-api-import/): Bulk import projects into Snyk in a robust, paced way. Repo: [snyk-api-import](https://github.com/snyk-tech-services/snyk-api-import)
-* [snyk-delta](tool-snyk-delta.md): Get the delta between two Snyk snapshots. Repo: [snyk-delta](https://github.com/snyk-tech-services/snyk-delta)
-* [snyk-filter](tool-snyk-filter.md): Takes the JSON output from the Snyk CLI, and applies custom filtering of the results. Repo: [snyk-filter](https://github.com/snyk-tech-services/snyk-filter)
-* [jira-tickets-for-new-vulns](tool-jira-tickets-for-new-vulns.md): Sync your Snyk monitored projects and auto-open JIRA tickets for  issues. Repo: [jira-tickets-for-new-vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns)
-* [Snyk-SCM-Contributors-Count](snyk-scm-contributors-count-cli-tool/): Count contributors for your SCM repos with commits in the last 90 days. Repo: [snyk-scm-contributors-count](https://github.com/snyk-tech-services/snyk-scm-contributors-count).
+* [snyk-api-import (docs)](tool-snyk-api-import/): Bulk import projects into Snyk in a robust, paced way. Repo: [snyk-api-import](https://github.com/snyk-tech-services/snyk-api-import)
+* [snyk-delta (docs)](tool-snyk-delta.md): Get the delta between two Snyk snapshots. Repo: [snyk-delta](https://github.com/snyk-tech-services/snyk-delta)
+* [snyk-filte (docs)](tool-snyk-filter.md): Takes the JSON output from the Snyk CLI, and applies custom filtering of the results. Repo: [snyk-filter](https://github.com/snyk-tech-services/snyk-filter)
+* [jira-tickets-for-new-vuln (docs)](tool-jira-tickets-for-new-vulns.md): Sync your Snyk monitored projects and auto-open JIRA tickets for  issues. Repo: [jira-tickets-for-new-vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns)
+* [snyk-scm-contributors-coun (docs)](snyk-scm-contributors-count-cli-tool/): Count contributors for your SCM repos with commits in the last 90 days. Repo: [snyk-scm-contributors-count](https://github.com/snyk-tech-services/snyk-scm-contributors-count).
 
 ### Additional Snyk Tools
 
-For additional Snyk Tools, refer to the repos for usage instructions:
+For additional Snyk Tools, **refer to the repos** for usage instructions:
 
 * [snyk-disallow](https://github.com/snyk-tech-services/snyk-disallow): Get a viewer token for the Snyk Group to get a read|test-only token for CI or similar systems.
 * [snyk-prevent-gh-commit-status](https://github.com/snyk-tech-services/snyk-prevent-gh-commit-status): POST commit status of a PR the result of [snyk-delta](https://github.com/snyk-tech-services/snyk-delta) executed in the CI.
