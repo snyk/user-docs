@@ -2,9 +2,7 @@
 
 #### Sync your Snyk monitored projects and open automatically JIRA tickets for new issues and existing one(s) without ticket already created.
 
-Cron it every X minutes/hours and fix the issues. Aimed to be executed at regular interval or with a trigger of your choice (webhooks).
-
-[![CircleCI](https://circleci.com/gh/snyk-tech-services/jira-tickets-for-new-vulns.svg?style=svg)](https://circleci.com/gh/snyk-tech-services/jira-tickets-for-new-vulns)
+Cron it every X minutes/hours and fix the issues. Aimed to be executed at regular interval or with a trigger of your choice (webhooks)
 
 ### Installation
 

@@ -1,12 +1,8 @@
 # Tool: snyk-filter
 
-[![Snyk logo](https://snyk.io/style/asset/logo/snyk-print.svg)](https://snyk.io)
-
 ## Custom Filtering for Snyk CLI
 
-snyk-filter takes the JSON outputted from the [Snyk CLI](https://support.snyk.io/hc/en-us/articles/360003812578-CLI-reference), e.g. `snyk test --json` and applies custom filtering of the results, as well as options to fail your build.
-
-[![Known Vulnerabilities](https://snyk.io/test/github/snyk-tech-services/snyk-filter/badge.svg?targetFile=package.json)](https://snyk.io/test/github/snyk-tech-services/snyk-filter?targetFile=package.json) [![CircleCI](https://circleci.com/gh/snyk-tech-services/snyk-filter.svg?style=svg)](https://circleci.com/gh/snyk-tech-services/snyk-filter)
+snyk-filter takes the JSON outputted from the [Snyk CLI](https://support.snyk.io/hc/en-us/articles/360003812578-CLI-reference), e.g. `snyk test --json` and applies custom filtering of the results, as well as options to fail your build
 
 ## How do I use it?
 

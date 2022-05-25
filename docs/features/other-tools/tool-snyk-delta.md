@@ -1,9 +1,5 @@
 # Tool: snyk-delta
 
-![Snyk logo](https://snyk.io/style/asset/logo/snyk-print.svg)
-
-[![CircleCI](https://circleci.com/gh/snyk-tech-services/snyk-delta.svg?style=svg\&circle-token=bfb34e49aa301cfa4ef4272541360a475ff95ad4)](https://circleci.com/gh/snyk-tech-services/snyk-delta)
-
 ## Snyk snyk-delta
 
 Prevent feature for CLI tests.
