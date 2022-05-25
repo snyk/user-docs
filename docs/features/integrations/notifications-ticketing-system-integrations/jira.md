@@ -22,7 +22,9 @@ Snyk requires Jira version 5 or above.\
 
 ## **How to set up your Jira integration**
 
-To connect your Snyk account to your Jira account, go to the integrations page in your organization settings and type in your credentials. We recommend setting up a new user in Jira for this, rather than using existing credentials. You can authenticate by username and password, but we recommend authenticating by API token which you can generate from [Atlassian API tokens](https://id.atlassian.com/manage/api-tokens).
+Jira account credentials are configured in **Organization Settings > Integrations**. Best practice suggests setting up a new user in Jira for this, rather than using an existing account's credentials.&#x20;
+
+Cloud-hosted Jira implementations require a username and API token authentication. Jira API tokens are generated in [Atlassian API tokens](https://id.atlassian.com/manage/api-tokens). Self-hosted implementations are able to authenticate with a username and password.&#x20;
 
 ## **Create a Jira issue**
 
