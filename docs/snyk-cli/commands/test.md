@@ -43,13 +43,11 @@ Default: 4 , the current working directory (0) and 4 subdirectories.
 
 Example: `--detection-depth=3` limits search to the specified directory  (or the current directory if no `<PATH>` is specified) plus three levels of subdirectories; zero (0) is the current directory.
 
-### `--exclude=<NAME>[,<NAME>]...>`
+### `--exclude=<DIRECTORY>[,<DIRECTORY>]...>`
 
-Can be used with `--all-projects` and `--yarn-workspaces` to indicate directory names and file names to exclude. Must be comma separated.
+Can be used with `--all-projects` and `--yarn-workspaces` to indicate subdirectories and files to exclude. Must be comma separated.
 
-Example:  `$ snyk test --all-projects --exclude=dir1,file2`
-
-This will exclude any directories and files named "dir1" and "file2" when scanning for project manifest files. Such as: "./dir1", "./src/dir1", "./file2", "./src/file2", and so on.
+Use the `--exclude` option with `--detection-depth` to ignore directories at any depth.
 
 ### `--prune-repeated-subdependencies`, `-p`
 
