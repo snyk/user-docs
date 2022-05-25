@@ -30,8 +30,6 @@ This endpoint responds with status code `200 OK` when the internal request is su
 
 Can be tested by connecting to the broker and running [http://localhost:8000/systemcheck](http://localhost:8000/systemcheck) (default settings).
 
-
-
 ## Advanced Broker Troubleshooting
 
 ### Standalone Broker
@@ -42,13 +40,30 @@ If after running the broker, there is still an error connecting to the on-premis
 2. Review the logs of the container. This can be done on docker by running `docker logs <container id>`
 3. Review the logs to see where the problem is occurring.
 
-#### Common problems:&#x20;
+#### Common problems
 
-* If there is no log after performing the above steps, ensure that the customer has the correct broker token. If so, ensure that the websocket has been established. Some firewalls will block this&#x20;
-* Review the HTTP code in the request to the on-premise Git.&#x20;
-  * **404 - Not found** - Ensure correct information in docker run command&#x20;
-  * **401/403** - Check credentials&#x20;
+* If there is no log after performing the above steps, ensure that the customer has the correct broker token. If so, ensure that the websocket has been established. Some firewalls will block this
+* Review the HTTP code in the request to the on-premise Git.
+  * **404 - Not found** - Ensure correct information in docker run command
+  * **401/403** - Check credentials
   * If there is any reference to SSL - This can be caused by a self-signed certificate. Ensure you have either mounted the correct certificate, or use the flag `-e NODE_TLS_REJECT_UNAUTHORIZED`
+
+#### Testing connectivity
+
+The broker and the agents do not have `curl` in their image. To test connectivity to an agent or an endpoint (like a Container registry or SCM) you can use the following commands:
+
+```
+#start node
+node
+
+#test a url with http
+http = require("http")
+http.get("<URL_HERE>", res => {console.log(`statusCode: ${res.statusCode}`)})
+
+#test a url with https
+https = require("https")
+https.get("<URL_HERE>", res => {console.log(`statusCode: ${res.statusCode}`)})
+```
 
 ### Broker with Code Agent
 
