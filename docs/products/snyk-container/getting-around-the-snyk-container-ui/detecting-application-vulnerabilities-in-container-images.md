@@ -1,7 +1,7 @@
 # Detecting application vulnerabilities in container images
 
 {% hint style="info" %}
-For the Container Registry integration, the feature is supported for Node, Ruby, PHP, Python, Go binaries and Java. For the CLI and Kubernetes, the feature is supported for Node, Golang, and Java.
+For the Container Registry integration, the feature is supported for Node, Ruby, PHP, Python, Go binaries, and Java. For the CLI and Kubernetes, the feature is supported for Node, Golang, PHP, and Java.
 {% endhint %}
 
 Snyk allows detection of vulnerabilities in your application dependencies from container images, as well as from the operating system, all in one single scan.
