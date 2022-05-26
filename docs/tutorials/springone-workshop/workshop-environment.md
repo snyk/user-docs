@@ -2,9 +2,9 @@
 
 ## What is DevSecOps?
 
-[DevSecOps](https://snyk.io/series/devsecops/) is the Venn diagram of IT. It represents where the developer, security, and operations organizations join forces to deliver applications to customers, using automated processes, while proactively addressing security, and maintaining observability and high availability.
+[DevSecOps](https://snyk.io/series/devsecops/) is represented in the following Venn diagram of IT. DevSecOps is the intersection where the developer, security, and operations organizations join forces to deliver applications to customers using automated processes, while proactively addressing security and maintaining observability and high availability.
 
-While this is the panacea and an incredible feat to accomplish, the reality is most enterprise organizations have a considerable amount of internal change to consider such a goal. In addition, DevSecOps is in its early stages of being formed, much like containers in 2015, and many of the best practices and thought leadership, if you will, are still developing.
+While DevSecOps is the panacea and an incredible feat to accomplish, the reality is most enterprise organizations have a considerable amount of internal change to consider in relation to this goal. In addition, [DevSecOps](https://www.youtube.com/watch?v=VLEF6MU0Wfg) is in its early stages of being formed, much like containers in 2015, and many of the best practices and much of the thought leadership are still developing.
 
 ![DevSecOps](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/venn\_devsecops.png)
 

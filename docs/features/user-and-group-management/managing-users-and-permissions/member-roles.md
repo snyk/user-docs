@@ -67,11 +67,11 @@ You can use the Duplicate button next to each role in the Member Roles list page
 
 ![Member Roles List page with Duplicate Role buttons](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.09.png>)
 
-![Role details page with Duplicate button](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.40 (1).png>)
+![Role details page with Duplicate button](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.40.png>)
 
 Enter a unique name and description and click the **Duplicate Role** button. Group Admin can then edit this role to assign new permissions to it or rescind any permissions already assigned.
 
-![Prompt to enter unique name and description for the copied role](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.40.27 (2).png>)
+![Prompt to enter unique name and description for the copied role](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.40.27 (1).png>)
 
 ### Delete a Role
 

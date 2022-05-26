@@ -40,7 +40,7 @@ You used Snyk Infrastructure as Code to find and fix configuration issues in you
 
 ### Configure IaC Rule Severity
 
-Infrastructure as Code rules are not meant to be one-size-fits-all. Different workloads have different security requirements and tolerances, that's why we allow you to change how Snyk IaC scores your application configurations. To adjust the severity scoring for IaC rules, access the Snyk Web UI and navigate to Organization Settings > Infrastructure as code > Severity settings.
+Infrastructure as Code rules are not meant to be one-size-fits-all. Different workloads have different security requirements and tolerances, that's why we allow you to change how Snyk IaC scores your application configurations. You can adjust the severity scoring for IaC rules via the Snyk Web UI, in **Organization Settings** (cogwheel icon) > **Infrastructure as code** > **Severity settings**.
 
 ### Terraform Support
 

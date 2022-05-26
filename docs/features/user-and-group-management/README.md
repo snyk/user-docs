@@ -30,7 +30,7 @@ Learn how Snyk groups and organizations help keep cross-team collaboration seaml
 
 You can manage email notifications, for yourself and your organization. See [notifications](notifications/ "mention").
 
-![](<../../.gitbook/assets/image (73).png>)
+![](<../../.gitbook/assets/image (73) (2).png>)
 
 ### Manage settings
 
