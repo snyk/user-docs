@@ -1,10 +1,10 @@
 # Webhook tutorial
 
 {% hint style="info" %}
-**Official** Snyk API is available at [https://snyk.docs.apiary.io/#](https://snyk.docs.apiary.io/#)
+Snyk API v1 docs are at [https://snyk.docs.apiary.io/#](https://snyk.docs.apiary.io)
 {% endhint %}
 
-## ​Integration example:
+## ​Integration example
 
 First of all, we need to create a new Zap in [Zapier](https://zapier.com)
 
@@ -164,7 +164,3 @@ Now you will be able to choose how you want it to be filtered.
 With the actions above, we are able to access all necessary fields, and we can build a notification template. In my case, I choose to send an email. But it can be anything else.
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/untitled-9%20\(1\).png)
-
-### Result
-
-The notification will look like this:
