@@ -4,7 +4,7 @@
 
 Sometimes there is no direct upgrade that can address the vulnerability or an upgrade is not possible due to functional reasons (e.g. it’s a major breaking change).
 
-For such cases Snyk can help you [protect your code with patches](https://docs.snyk.io/snyk-cli/secure-your-projects-in-the-long-term/protect-your-code-with-patches). This option will make the minimal modifications to your locally installed`node_modules` files to fix the vulnerability. It will also update the policy to patch this issue when running [snyk protect](https://snyk.io/docs/using-snyk#protect).
+For such cases Snyk can help you [protect your code with patches](https://docs.snyk.io/snyk-cli/secure-your-projects-in-the-long-term/protect-your-code-with-patches). This option will make the minimal modifications to your locally installed`node_modules` files to fix the vulnerability. It will also update the policy to patch this issue when you use [@snyk/protect](https://github.com/snyk/cli/tree/master/packages/snyk-protect).
 
 {% hint style="info" %}
 **Caution**\
@@ -17,7 +17,7 @@ Patches are applicable in the following scenarios:
 2. When there is no way of upgrading a direct dependency to get to a vulnerability free version of a transitive dependency.
 3. When an upgrade would render the package incompatible with the current codebase.
 
-Patches are available via the source code integrations and the [Snyk CLI](https://support.snyk.io/hc/en-us/articles/360003812578-Our-full-CLI-reference).
+Patches are available via the source code integrations and [@snyk/protect](https://github.com/snyk/cli/tree/master/packages/snyk-protect).
 
 ## Getting started with Snyk Open Source: the process for creating patches
 
