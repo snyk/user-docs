@@ -2,7 +2,7 @@
 
 Snyk Container supports the following operating system distributions.
 
-If you use an unsupported distribution, such as one which has reached its End of life (EOL) and is no longer being maintained, Snyk provides a message to tell you this is unsupported.
+If you use an unsupported distribution, such as one which has reached its End-of-life (EOL) and is no longer being maintained, Snyk provides a message to tell you this is unsupported.
 
 {% hint style="info" %}
 For unsupported distributions, you may not receive any notifications of vulnerabilities due to a lack of security updates: this does not mean that your image is secure.
@@ -12,6 +12,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 
 ### Alpine Linux
 
+* Alpine Linux 3.16
 * Alpine Linux 3.15
 * Alpine Linux 3.14
 * Alpine Linux 3.13
@@ -65,6 +66,12 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * Red Hat Enterprise Linux 7
 * Red Hat Enterprise Linux 6
 
+### SUSE Linux Enterprise Server (SLES)
+
+* SUSE Linux Enterprise Server 15.2
+* SUSE Linux Enterprise Server 15.1
+* SUSE Linux Enterprise Server 15.0
+
 ### Ubuntu
 
 * Ubuntu 21.10
@@ -85,17 +92,3 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * Ubuntu 13.10
 * Ubuntu 13.04
 * Ubuntu 12.10
-
-## Beta support
-
-The support of the following operating system distributions is currently available as beta. In these cases, Snyk provides you a message to notify you.
-
-{% hint style="info" %}
-For beta distributions, vulnerability detection may be affected while we keep on improving the data.
-{% endhint %}
-
-### SUSE Linux Enterprise Server (SLES)
-
-* SLES 15.2
-* SLES 15.1
-* SLES 15.0
