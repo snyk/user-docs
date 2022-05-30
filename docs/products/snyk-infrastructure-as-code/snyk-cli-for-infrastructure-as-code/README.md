@@ -17,4 +17,4 @@ You can also test the following types of files:
 * [Kustomize files](test-your-kustomize-files-with-our-cli-tool.md)
 * [Helm charts](test-your-helm-charts-with-our-cli-tool.md)
 
-See [Understanding the CLI output](understanding-configuration-scan-issues.md) for information about using the reports.
+See [Understanding the CLI output](understanding-the-cli-test-output/) for information about using the reports.
