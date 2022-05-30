@@ -140,7 +140,7 @@ After you’ve embedded Snyk into your SDLC, and have built good developer aware
 * **High priority projects (PCI/GDPR compliance)**: fail the PR for any issue.
 
 {% hint style="info" %}
-To align vulns severity with your internal policy, use security policies to change severity of issues and attached them to relevant projects attributes. See [Security policies](https://docs.snyk.io/features/fixing-and-prioritizing-issues/security-policies) for more details.
+To align vulns severity with your internal policy, use security policies to change severity of issues and attach them to relevant projects attributes. See [Security policies](https://docs.snyk.io/features/fixing-and-prioritizing-issues/security-policies) for more details.
 {% endhint %}
 
 ## Stage 5: Automatic Fix PRs
