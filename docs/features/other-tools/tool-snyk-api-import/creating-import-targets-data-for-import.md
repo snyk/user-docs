@@ -1,18 +1,14 @@
-# Generating import data
+# Creating import targets data for import
 
-## Creating import targets data for import
-
-This is a util that can help generate the import json data needed by the import command.
-
-### Table of Contents
+Use the `import:data` util to help generate the import json data needed by the import command. Follow the instructions on this page:
 
 * Usage
-  * [Github](generating-import-data.md#github.com-github-enterprise)
-  * [Gitlab](generating-import-data.md#gitlab.com-hosted-gitlab)
-  * [Azure Repos](generating-import-data.md#dev.azure.com-hosted-azure)
-  * [Bitbucket Server](generating-import-data.md#bitbucket-server)
-  * [Bitbucket Cloud](generating-import-data.md#bitbucket-cloud)
-* [Recommendations](generating-import-data.md#recommendations)
+  * [Github](creating-import-targets-data-for-import.md#github.com-github-enterprise)
+  * [Gitlab](creating-import-targets-data-for-import.md#gitlab.com-hosted-gitlab)
+  * [Azure Repos](creating-import-targets-data-for-import.md#dev.azure.com-hosted-azure)
+  * [Bitbucket Server](creating-import-targets-data-for-import.md#bitbucket-server)
+  * [Bitbucket Cloud](creating-import-targets-data-for-import.md#bitbucket-cloud)
+* [Recommendations](creating-import-targets-data-for-import.md#recommendations)
 
 ## `import:data`
 
