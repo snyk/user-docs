@@ -114,7 +114,7 @@ Users who have permission (Create Service Account) can set up new service accoun
 Select an **Org** > **Settings** > **Service Accounts** >\
 Provide a name, choose a role, and click **Create**.
 
-![Create a new service account (screenshot to be replaced)](<../../../.gitbook/assets/Screenshot 2022-05-17 at 23.04.53.png>)
+![Select a Role while creating Org Service Account](<../../../.gitbook/assets/Screenshot 2022-05-31 at 09.42.43.png>)
 
 {% hint style="danger" %}
 As a Group Admin, be mindful of the usage of permissions under User Management and Service Account Management while defining a role. A user with sufficient permission can create a service account that can have more privileges than their individual user account. This can pose a security risk for your organization.
