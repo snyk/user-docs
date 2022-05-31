@@ -45,7 +45,7 @@ This util helps generate data needed to mirror the GitHub.com, GitHub Enterprise
 * **GitHub.com:** `snyk-api-import orgs:data --source=github --groupId=<snyk_group_id>`
 * **GitHub Enterprise:** `snyk-api-import orgs:data --source=github-enterprise --groupId=<snyk_group_id> -- sourceUrl=https://ghe.custom.github.com/`
 
-This create sthe organization data in a file `group-<snyk_group_id>-github-<com|enterprise>-orgs.json`
+This creates the organization data in a file `group-<snyk_group_id>-github-<com|enterprise>-orgs.json`
 
 ### GitLab.com and Hosted GitLab
 
