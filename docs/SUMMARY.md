@@ -465,7 +465,7 @@
   * [Licenses tab](features/reports/licenses-tab.md)
 * [Snyk Tools](features/other-tools/README.md)
   * [Tool: snyk-api-import](features/other-tools/tool-snyk-api-import/README.md)
-    * [Creating orgs in Snyk](features/other-tools/tool-snyk-api-import/creating-orgs-in-snyk.md)
+    * [Creating organizations in Snyk](features/other-tools/tool-snyk-api-import/creating-orgs-in-snyk.md)
     * [Generating import data](features/other-tools/tool-snyk-api-import/generating-import-data.md)
     * [Mirroring Github.com/Github Enterprise organizations & repos in Snyk](features/other-tools/tool-snyk-api-import/mirroring-github.com-github-enterprise-organizations-and-repos-in-snyk.md)
     * [Mirroring Gitlab organizations & repos in Snyk](features/other-tools/tool-snyk-api-import/mirroring-gitlab-organizations-and-repos-in-snyk.md)

@@ -53,10 +53,10 @@ By default the `import` command will run if no command is specified.
 
 * `import` - kick off a an API powered import of repos (targets) into existing Snyk Orgs defined in the import configuration file. All support available for all project types is provided through [Import API](https://snyk.docs.apiary.io/#reference/integrations/import-projects/import).
 * `help` - show help and all available commands and their options.
-* `orgs:data` - use to generate data required to create Orgs using the API.
-* `orgs:create` - use to create the Orgs in Snyk based on the data file generated with `orgs:data` command.
-* `import:data` - use to generate data required to kick off an import.
-* `list:imported` - use to generate data to help skip previously imported targets during import.
+* `orgs:data` util - use to generate data required to create Orgs using the API.
+* `orgs:create` util - use to create the Orgs in Snyk based on the data file generated with `orgs:data` command.
+* `import:data` util- use to generate data required to kick off an import.
+* `list:imported` util - use to generate data to help skip previously imported targets during import.
 
 The logs can be explored using [Bunyan CLI](http://trentm.com/node-bunyan/bunyan.1.html)
 
@@ -65,10 +65,10 @@ The logs can be explored using [Bunyan CLI](http://trentm.com/node-bunyan/bunyan
 * Utilities
   * [Creating orgs in Snyk](creating-orgs-in-snyk.md)
   * [Generating import data](generating-import-data.md)
-  * [Mirroring Github.com/Github Enterprise organizations & repos in Snyk](mirroring-github.com-github-enterprise-organizations-and-repos-in-snyk.md)
-  * [Mirroring Gitlab organizations & repos in Snyk](mirroring-gitlab-organizations-and-repos-in-snyk.md)
-  * [Mirroring Bitbucket Server organizations & repos in Snyk](mirroring-bitbucket-server-organizations-and-repos-in-snyk.md)
-  * [Mirroring Bitbucket Cloud organizations & repos in Snyk](mirroring-bitbucket-cloud-organizations-and-repos-in-snyk.md)
+  * [Mirroring GitHub.com and GitHub Enterprise organizations and repos in Snyk](mirroring-github.com-github-enterprise-organizations-and-repos-in-snyk.md)
+  * [Mirroring GitLab organizations and repos in Snyk](mirroring-gitlab-organizations-and-repos-in-snyk.md)
+  * [Mirroring Bitbucket Server organizations and repos in Snyk](mirroring-bitbucket-server-organizations-and-repos-in-snyk.md)
+  * [Mirroring Bitbucket Cloud organizations and repos in Snyk](mirroring-bitbucket-cloud-organizations-and-repos-in-snyk.md)
 * [Kicking off an import](kicking-off-an-import.md)
 * [Contributing](contributing.md)
 
