@@ -7,7 +7,7 @@ This page has instructions for creating organizations (Orgs) in Snyk:
   * [GitLab](creating-orgs-in-snyk.md#gitlab.com-hosted-gitlab)
   * [Bitbucket Server](creating-orgs-in-snyk.md#bitbucket-server)
   * [Bitbucket Cloud](creating-orgs-in-snyk.md#bitbucket-cloud)
-* [Creating organizations in Snyk](creating-orgs-in-snyk.md#creating-organizations-in-snyk)
+* [Methods of creating Orgs](creating-orgs-in-snyk.md#api-and-util-to-create-orgs)
   * [via the API](creating-orgs-in-snyk.md#via-api)
   * [via the `orgs:create` util](creating-orgs-in-snyk.md#via-orgs-create-util)
 * [Recommendations](creating-orgs-in-snyk.md#recommendations)
@@ -79,7 +79,7 @@ This creates the organization data in a file `group-<snyk_group_id>-bitbucket-se
 
 This creates the organization data in a file `group-<snyk_group_id>-bitbucket-cloud-orgs.json`
 
-## Methods of creating organizations in Snyk
+## Methods of creating Orgs
 
 Use the generated data file to help create the organizations via API or use the provided util.
 
