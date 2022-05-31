@@ -24,6 +24,6 @@ The core requirements to deploy the Snyk Code Local Engine are:
     * AWS instance type m5.8xlarge OR
     * GCP instance type e2-standard-32 OR
     * 32 core CPU with 120GB RAM
-  *   **General prerequisites** -&#x20;
+*   **General prerequisites** -&#x20;
 
-      Allow outgoing HTTPS connections supporting websockets, from the Local Engine to [https://broker.snyk.io](https://broker.snyk.io/)
+    Allow outgoing HTTPS connections supporting websockets, from the Local Engine to [https://broker.snyk.io](https://broker.snyk.io/)
