@@ -25,8 +25,8 @@ In order to scan your dependencies, you must ensure you have first installed the
 
 The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project:
 
-* [Snyk CLI tool for .NET projects](snyk-for-.net.md#snyk-cli-tool-for-net-projects)
-* [Git services for .NET projects](snyk-for-.net.md#git-services-for-net-projects)
+* [Snyk CLI tool for .NET projects](snyk-for-.net.md#snyk-cli-tool-for-.net-projects)
+* [Git services for .NET projects](snyk-for-.net.md#git-services-for-.net-projects)
 
 ## Snyk CLI tool for .NET projects
 
@@ -40,9 +40,11 @@ Examples of supported project files that resolve into **project.assets.json** in
 
 * \*.csproj
 * \*.vbproj
-* \*.fsproj
+* \*.fsproj&#x20;
 
-**Note:** Project files can be combined with [lock files](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files#locking-dependencies) for a more deterministic **project.assets.json** resolution
+{% hint style="info" %}
+Project files can be combined with [lock files](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files#locking-dependencies) for a more deterministic **project.assets.json** resolution.
+{% endhint %}
 
 #### Dependencies managed by packages.config
 
@@ -54,7 +56,9 @@ Examples of supported project files that resolve into **packages** include:
 
 * packages.config
 
-**Note:** While you should also be able to run `snyk test` without previously installing dependencies this will result in less accurate vulnerability results
+{% hint style="info" %}
+While you should also be able to run `snyk test` without previously installing dependencies this will result in less accurate vulnerability results.
+{% endhint %}
 
 #### **CLI parameters**
 
@@ -113,7 +117,7 @@ From the Snyk UI, you can configure whether Snyk should scan your entire project
 **Update language preferences**
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
-2.  Go to settings ![](../../../.gitbook/assets/cog\_icon.png) > and click for .NET
+2.  Go to settings <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > and click for .NET
 
     Scan build dependencies - If checked, Snyk scans all development dependencies.
 
