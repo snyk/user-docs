@@ -4,43 +4,16 @@ Snyk tests for vulnerabilities in [your own code](https://snyk.io/product/snyk-c
 
 {% embed url="https://snyk.io/wp-content/uploads/Homepage-IDE-animation-Log4Shell-FINAL.mp4" %}
 
-### Snyk products
+### Snyk products and environments
 
-* ****[**Snyk Open Source**](https://docs.snyk.io/snyk-open-source)**:** Find and fix open source vulnerabilities. Snyk Open Source also includes [Snyk license compliance](https://docs.snyk.io/snyk-open-source) to help manage your open source license usage.
-* [**Snyk Code**](https://snyk.io/product/snyk-code/): Find and fix vulnerabilities in your application code in real-time during the development process.
-* [**Snyk Container**](https://docs.snyk.io/snyk-container): Find and fix vulnerabilities in container images and Kubernetes applications.
-* [**Snyk Infrastructure as Code (IaC)**](https://docs.snyk.io/snyk-infrastructure-as-code): Find and fix insecure configurations in Terraform and Kubernetes code.
+Select a Snyk product to match your scanning requirements; open source libraries, your own application code, or configuration and container information.
 
-### Supported environments
+Select an environment (a way to run Snyk) based on your requirements: the browser-based Web UI, a Command-Line Interface (CLI), using an API, or embedded in your own IDE.
 
-Environments you can use to access your selected Snyk product include:
+See [snyk-products-and-environments.md](snyk-products-and-environments.md "mention") for more details.
 
-* **Snyk Web UI**: the core web-based UI ([app.snyk.io](https://app.snyk.io)), allowing you a browser-based experience, along with functions such as reports and setup.
-* [**Snyk CLI**](https://docs.snyk.io/snyk-cli): the Command Line Interface, allowing you to run scans on your local machine and integrate Snyk into your pipeline.
-* [**Snyk IDEs**](../ide-tools/): use IDE integrations to embed Snyk in your development environment.
-* [**Snyk API**](https://support.snyk.io/hc/en-us/categories/360000665657-Snyk-API): allows you to programmatically integrate with Snyk, tuning Snyk’s security automation to your specific workflows.
+### Supported languages and integrations
 
-### Supported languages
+Snyk supports a wide range of languages to allow you to scan your code in the languages you use, and integrations to use Snyk with leading IDE, repository, CI/CD, runtime, registry, and issue management tools.
 
-Snyk supports a range of languages, such as JavaScript, Java, .NET, and many others.
-
-Languages / OSs supported depend on the relevant [Snyk product](./#snyk-products-and-platforms):
-
-* Snyk Open Source: see [language-and-package-manager-support](../products/snyk-open-source/language-and-package-manager-support/ "mention")
-* Snyk Code: see [snyk-code-language-and-framework-support.md](../products/snyk-code/snyk-code-language-and-framework-support.md "mention")
-* Snyk Container: see [supported-operating-system-distributions.md](../products/snyk-container/snyk-container-security-basics/supported-operating-system-distributions.md "mention")
-* Snyk IaC: we support configuration files for Terraform or Kubernetes environments
-
-### Supported integrations
-
-Taking a developer-first approach to security, Snyk integrates with leading IDE, repository, CI/CD, runtime, registry, and issue management tools.
-
-[Snyk integrations](https://docs.snyk.io/integrations) for your software development process include:
-
-* ****[**Source control**](../features/integrations/git-repository-scm-integrations/)**:** cloud and self-hosted SCMs such as Github.&#x20;
-* ****[**CI / CD integrations**](../features/integrations/ci-cd-integrations/): such as Jenkins or TeamCity.
-* **Artifact repositories:** such as Artifactory. See [Private registry gatekeeper plugins](https://docs.snyk.io/integrations/private-registry-gatekeeper-plugins) and [Private registry integrations](https://docs.snyk.io/integrations/private-registry-integrations).
-* [**Serverless integrations**](https://docs.snyk.io/integrations/serverless-integrations): such as AWS Lambda.
-* ****[**Platform as a Service (PaaS) integrations**](../features/integrations/platform-as-a-service-integrations/)**:** such as Heroku.
-* [**Notification and ticketing system-integrations**](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations): such as Slack.
-* [**Vulnerability Management Tools**](../features/integrations/vulnerability-management-tools/): such as RiskSense.
+See [snyk-languages-and-integrations.md](snyk-languages-and-integrations.md "mention") for more details.
