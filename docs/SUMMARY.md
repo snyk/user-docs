@@ -199,6 +199,7 @@
     * [User Experience](products/snyk-code/key-features/user-experience.md)
     * [Integrations](products/snyk-code/key-features/integrations.md)
   * [Code language and framework support](products/snyk-code/snyk-code-language-and-framework-support.md)
+  * [Security Rules used by Snyk](products/snyk-code/security-rules-used-by-snyk.md)
   * [Configuring Snyk Code](products/snyk-code/configuring-snyk-code.md)
   * [Using Snyk Code via web](products/snyk-code/using-snyk-code-web.md)
   * [Using Snyk Code via IDE](products/snyk-code/using-snyk-code-via-ide.md)
