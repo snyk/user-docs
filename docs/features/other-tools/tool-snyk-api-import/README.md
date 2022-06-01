@@ -64,7 +64,7 @@ The logs can be explored using [Bunyan CLI](http://trentm.com/node-bunyan/bunyan
 
 * Utilities
   * [Creating orgs in Snyk](creating-orgs-in-snyk.md)
-  * [Generating import data](creating-import-targets-data-for-import.md)
+  * [Generating import data](generating-import-data.md)
   * [Mirroring GitHub.com and GitHub Enterprise organizations and repos in Snyk](mirroring-github.com-github-enterprise-organizations-and-repos-in-snyk.md)
   * [Mirroring GitLab organizations and repos in Snyk](mirroring-gitlab-organizations-and-repos-in-snyk.md)
   * [Mirroring Bitbucket Server organizations and repos in Snyk](mirroring-bitbucket-server-organizations-and-repos-in-snyk.md)
