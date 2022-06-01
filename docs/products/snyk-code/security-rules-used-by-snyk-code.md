@@ -1,10 +1,4 @@
----
-description: >-
-  This page contains a table of the rules used within the Snyk Code Knowledge
-  Base.
----
-
-# Security Rules used by Snyk
+# Security Rules used by Snyk Code
 
 {% hint style="info" %}
 **Important!** Snyk Security Rules list is updated continuously. This list is constantly growing, and the rules within it may change, in order to provide you with the best protection and security solutions for your code.
