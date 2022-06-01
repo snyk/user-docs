@@ -16,14 +16,19 @@ When using the Local Engine, only the scan is performed locally. Your scan resul
 
 The core requirements to deploy the Snyk Code Local Engine are:
 
-* **Kubernetes** - **** Version 1.16.0 - 1.21.5
-* **Helm** - **** 3.5.0
-* **3 Nodes, each with** -
+* **Kubernetes** – **** version 1.16.0 - 1.21.5:
+  * Dedicated Kubernetes cluster, including an outbound internet access to the cluster
+  * Outbound HTTPS connections supporting websockets from the cluster to \*.snyk.io
+  * Kubernetes – one of the following:
+    * Managed public cloud Kubernetes service - EKS, AKS, GKE\
+      \- or -
+    * Unmanaged Kubernetes (a self-hosted cluster)
+  * \[For PR Checks and Snyk CLI support]: a cluster Ingress (a cloud load balancer)
+* **Helm** – version **** 3.5.0
+* **3 Nodes** – each one with the following:
   * **Disk:** 500 GB (>300GB Ephemeral Storage)
   * **CPU and RAM:**
-    * AWS instance type m5.8xlarge OR
-    * GCP instance type e2-standard-32 OR
-    * 32 core CPU with 120GB RAM
-*   **General prerequisites** -&#x20;
+    * \[For AWS] instance type m5.8xlarge
+    * \[For GCP] instance type e2-standard-32
+    * 32 Core CPU with 120GB RAM
 
-    Allow outgoing HTTPS connections supporting websockets, from the Local Engine to [https://broker.snyk.io](https://broker.snyk.io/)
