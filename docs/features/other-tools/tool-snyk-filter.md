@@ -1,20 +1,14 @@
 # Tool: snyk-filter
 
-## Custom Filtering for Snyk CLI
+The `snyk-filter` tool provides **custom filtering for Snyk CLI output**. `snyk-filter` takes the JSON-formatted output from the [Snyk CLI](https://support.snyk.io/hc/en-us/articles/360003812578-CLI-reference), for example, `snyk test --json` and applies custom filtering of the results, as well as options to fail your build.
 
-snyk-filter takes the JSON outputted from the [Snyk CLI](https://support.snyk.io/hc/en-us/articles/360003812578-CLI-reference), e.g. `snyk test --json` and applies custom filtering of the results, as well as options to fail your build
+## Clone and install snyk-filter
 
-## How do I use it?
-
-### Clone & Install
-
-First, clone the repo. Then run
+First, clone the repo. Then run:
 
 `npm install -g`
 
-#### Note about `node-jq`
-
-snyk-filter uses the `node-jq` library, which requires that a [`jq`](https://stedolan.github.io/jq/) binary is installed. This typically happens transparently via `npm install -g`, but on some systems JQ does not get properly installed locally. If you receive an error after installation regarding `node-jq`, then `jq` should be installed manually to avoid this error.
+**`snyk-filter` uses the `node-jq` library**, which requires that a [`jq`](https://stedolan.github.io/jq/) binary be installed. This typically happens transparently via `npm install -g`, but on some systems `jq` is not properly installed locally. If you receive an error after installation regarding `node-jq`, then install `jq` manually to avoid this error.
 
 ```
 # install jq ahead of time (ubuntu example)
@@ -30,32 +24,32 @@ export JQ_PATH=$(which jq)
 sudo npm install -g
 ```
 
-### Usage
+## Usage
 
-1. Implement your custom JQ filters in a .snyk-filter/snyk.yml file relative to your current working directory where you will be running snyk test from (see in [sample-filters](https://github.com/snyk-tech-services/snyk-filter/tree/develop/sample-filters) and tweak things from there - use [JQPlay](https://jqplay.org/) )
-2. Then pipe your `snyk test --json` output into `snyk-filter` or use the `-i` argument to input a json file. Use the `-f` argument to point to the yml file containing your custom filters if you are not using the default location (.snyk-filter/snyk.yml).
-3. Return code of snyk-filter will be 0 for pass (no issues) and 1 for fail (issues found)
+1. Implement your custom jq filters in a .snyk-filter/snyk.yml file relative to your current working directory where you are running `snyk test`. See [sample-filters](https://github.com/snyk-tech-services/snyk-filter/tree/develop/sample-filters) and tweak things from there; use [JQPlay](https://jqplay.org/)
+2. Then pipe your `snyk test --json` output into `snyk-filter` or use the `-i` argument to input a JSON file. Use the `-f` argument to point to the yml file containing your custom filters if you are not using the default location (.snyk-filter/snyk.yml).
+3. The return code from `snyk-filter` is 0 for pass (no issues) and 1 for fail (issues found).
 
-#### Example with Snyk CLI (using .snyk-filter/snyk.yml by default)
+### Example with Snyk CLI (using .snyk-filter/snyk.yml by default)
 
 `snyk test --json | snyk-filter`
 
-#### Example with Snyk CLI and custom yml file location
+### Example with Snyk CLI and custom yml file location
 
 `snyk test --json | snyk-filter -f /path/to/example-cvss-9-or-above.yml`
 
-#### Example
+### Example to input a JSON file
 
 `snyk-filter -i snyk_results.json`
 
-#### Example with custom yml file location
+### Example with custom yml file location
 
 `snyk-filter -i snyk_results.json -f /path/to/example-high-upgradeable-vulns.yml`
 
-### Options
+## Options
 
-`--json` to output json
+`--json` to output JSON
 
-#### License
+## License
 
 License: Apache License, Version 2.0
