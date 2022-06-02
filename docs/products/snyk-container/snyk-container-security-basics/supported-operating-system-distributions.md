@@ -42,7 +42,6 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * CentOS Linux 8
 * CentOS Linux 7
 * CentOS Linux 6
-* CentOS Linux 5
 
 ### Debian
 
