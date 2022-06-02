@@ -1,7 +1,9 @@
 # Automated pull requests for known vulnerabilities (backlog)
 
 {% hint style="info" %}
-Autofix PR settings may vary depending on integration.
+This feature is supported in GitHub and GitHub Enterprise integrations only.
+
+The Autofix PR settings may vary depending on integration.
 {% endhint %}
 
 **Known vulnerabilities** retrieve vulnerabilities from the project's backlog. These are the previously declared vulnerabilities.
