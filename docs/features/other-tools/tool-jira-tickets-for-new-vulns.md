@@ -1,14 +1,14 @@
 # Tool: jira-tickets-for-new-vulns
 
-#### Sync your Snyk monitored projects and open automatically JIRA tickets for new issues and existing one(s) without ticket already created.
+`jira-tickets-for-new-vulns` provides the means to sync your Snyk-monitored projects and automatically open Jira tickets for new issues and existing issue(s) without ticket(s) already created.
 
-Cron it every X minutes/hours and fix the issues. Aimed to be executed at regular interval or with a trigger of your choice (webhooks)
+Cron it every X minutes/hours and fix the issues. This tool is aimed to be executed at regular intervals or with a trigger of your choice (webhooks).
 
-### Installation
+## Installation
 
 Use the binaries from [the release page](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns/releases)
 
-### Usage - Quick start
+## Usage - Quick start
 
 ```
 ./snyk-jira-sync-<yourplatform> 
@@ -17,7 +17,7 @@ Use the binaries from [the release page](https://github.com/snyk-tech-services/j
     -jiraProjectKey=<Key>                  // Jira project Key the tickets will be opened against
 ```
 
-#### Extended options
+**Extended options**
 
 ```
 ./snyk-jira-sync-<yourplatform> 
@@ -43,40 +43,40 @@ Use the binaries from [the release page](https://github.com/snyk-tech-services/j
     --configFile                                                         // Path the jira.yaml if not root 
 ```
 
-### Restrictions
+## Restrictions
 
-The tool does not support IAC project. It will open issue only for code and open source projects and ignore all other project type.
+The tool does not support infrastructure as code projects. It opens an issue only for code and open source projects and ignores all other project types.
 
-#### Priority is Severity
+**Priority is severity**
 
-Option to get the JIRA ticket priority set based on issue severity. Defaults map to:
+There is an option to get the Jira ticket priority set based on issue severity. The defaults map to:
 
-| Issue severity | JIRA Priority |
+| Issue severity | Jira priority |
 | -------------- | ------------- |
 | critical       | Highest       |
 | high           | High          |
 | medium         | Medium        |
 | low            | Low           |
 
-Use SNYK\_JIRA\_PRIORITY\_FOR\_XXX\_VULN env var to override the default an set your value.
+Use the `SNYK_JIRA_PRIORITY_FOR_XXX_VULN` env var to override the default and set your value.
 
-> Example: Critical sevs should receive the Hot Fix priority in JIRA
+> Example: Critical severities should receive the Hot Fix priority in Jira.
 >
 > export SNYK\_JIRA\_PRIORITY\_FOR\_CRITICAL\_VULN='Hot Fix'
 
-### Installation from source
+## Installation from source
 
-git clone the repo, build.
+git clone the repo, build:
 
 > `go run main.go jira.go jira_utils.go vulns.go snyk.go snyk_utils.go`
 
-#### Please report issues.
+**Please report issues.**
 
-### Dependencies
+## Dependencies
 
 https://github.com/michael-go/go-jsn/jsn to make JSON parsing a breeze github.com/tidwall/sjson github.com/kentaro-m/blackfriday-confluence gopkg.in/russross/blackfriday.v2
 
-### LogFile
+## LogFile
 
 A logFile listing all the tickets created can be found where the tool has been run.
 
@@ -111,9 +111,9 @@ A logFile listing all the tickets created can be found where the tool has been r
 }
 ```
 
-### Jira.yaml
+## Jira.yaml
 
-Example of config file structure. If your jira project has custom mandatory field configured, they will need to be added to the config file Please make sure you give both key and value expected by jira under the customMandatoryField key of the config file
+The following is an example of config file structure. If your Jira project has custom mandatory fields configured, these fields must be added to the config file. Make sure you give both the key and value expected by Jira under the customMandatoryFields key of the config file:
 
 ```
 schema: 1
@@ -140,9 +140,9 @@ jira:
             value: 5
 ```
 
-Notes:
+**Notes:**
 
-* The token is not expected present in the config file
-* Command line arguments override the config file. IE: Using the config file above, running ./snyk-jira-sync-macOs -Org=1234 -configFile=true -token=123 the org ID used by the tool will be 1234 and not a1b2c3de-99b1-4f3f-bfdb-6ee4b4990513
-* See 'Extended options' for default values
-* Please ensure you use the same issue type that is configured in your JIRA. Default is Bug. Please verify the type is use (or default) exists in your JIRA configuration.
+* The token is not expected to be present in the config file.
+* Command line arguments override the config file. Example: Using the config file above, running `./snyk-jira-sync-macOs -Org=1234 -configFile=true -token=123` the org ID used by the tool will be 1234 and not a1b2c3de-99b1-4f3f-bfdb-6ee4b4990513.
+* See 'Extended options' for default values.
+* Ensure you use the same issue type that is configured in your Jira. Default is Bug. Verify the type is use (or default) exists in your Jira configuration.
