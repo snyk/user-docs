@@ -475,7 +475,7 @@
     * [Mirroring Bitbucket Server organizations and repos in Snyk](features/other-tools/tool-snyk-api-import/mirroring-bitbucket-server-organizations-and-repos-in-snyk.md)
     * [Mirroring Bitbucket Cloud organizations and repos in Snyk](features/other-tools/tool-snyk-api-import/mirroring-bitbucket-cloud-organizations-and-repos-in-snyk.md)
     * [Kicking off an import](features/other-tools/tool-snyk-api-import/kicking-off-an-import.md)
-    * [Contributing](features/other-tools/tool-snyk-api-import/contributing.md)
+    * [Contributing to snyk-api-import](features/other-tools/tool-snyk-api-import/contributing.md)
   * [Tool: snyk-delta](features/other-tools/tool-snyk-delta.md)
   * [Tool: snyk-filter](features/other-tools/tool-snyk-filter.md)
   * [Tool: jira-tickets-for-new-vulns](features/other-tools/tool-jira-tickets-for-new-vulns.md)
