@@ -51,7 +51,7 @@ yarn global add snyk-api-import
 
 By default the `import` command will run if no command is specified.
 
-* `import` - kick off a an API powered import of repos (targets) into existing Snyk Orgs defined in the import configuration file. All support available for all project types is provided through [Import API](https://snyk.docs.apiary.io/#reference/integrations/import-projects/import).
+* `import` - kick off a an API powered import of repos (targets) into existing Snyk Orgs defined in the import configuration file. All support available for all project types is provided through the [Import API (Import Projects, Import)](https://snyk.docs.apiary.io/#reference/import-projects).
 * `help` - show help and all available commands and their options.
 * `orgs:data` util - use to generate data required to create Orgs using the API.
 * `orgs:create` util - use to create the Orgs in Snyk based on the data file generated with `orgs:data` command.

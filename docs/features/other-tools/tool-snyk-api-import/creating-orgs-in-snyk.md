@@ -94,7 +94,7 @@ Use the generated data to feed into the Snyk [Orgs API](https://snyk.docs.apiary
 3. Use the `noDuplicateNames` flag (optional) to skip creating an organization if the given name is already taken within the Group.
 4. Use the `includeExistingOrgsInOutput` flag (optional, default is "true") to log information for existing organizations as well as newly created Orgs. To set this flag as false, use "--no-includeExistingOrgsInOutput" in the command as follows: `snyk-api-import orgs:create --no-includeExistingOrgsInOutput --file=group-<snyk_group_id>-github-<com|enterprise>-orgs.json`
 
-The file format required for this is as follows:
+The file format required for this command is as follows:
 
 ```
 "orgs": [

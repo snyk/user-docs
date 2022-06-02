@@ -42,6 +42,6 @@ Ensure that your code adheres to the included `.eslintrc` config by running `npm
 * Spell check.
 * PRs will not be code reviewed unless all tests are passing.
 
-**Important:** When fixing a bug, commit a **failing test** first so that Travis CI (or the approver) can show the code failing. Once that commit is in place, then commit the bug fix so that Snyk can test _before_ and _after_.
+**Important:** When fixing a bug, commit a **failing test** first so that CircleCI (or the approver) can show the code failing. Once that commit is in place, then commit the bug fix so that Snyk can test _before_ and _after_.
 
 Remember that you're developing for multiple platforms and versions of Node.js, so if the tests pass on your Mac or Linux or Windows machine, the tests _may_ not pass elsewhere.
