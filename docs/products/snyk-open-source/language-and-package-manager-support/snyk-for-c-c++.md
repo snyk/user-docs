@@ -53,7 +53,7 @@ The following constraints and limitations are by design. While we may work on im
 
 #### **Dependencies source code needs to be available**
 
-For Snyk CLI to be able to find dependencies in your source code. To do this, enough of the full of the dependencies source code needs to be present in the scanned folder.
+For Snyk CLI to be able to find dependencies in your source code, enough of the full dependencies source code needs to be present in the scanned folder.
 
 Having a large percentage of files in their original (unchanged) form is critical to accurately identify dependencies and report the correct set of vulnerabilities back. Modifying that source code reduces the confidence of the scanning engine resulting in less accurate results. Other potential issues could include dependencies not being identified or being identified incorrectly (as a different version or even a different package).
 
