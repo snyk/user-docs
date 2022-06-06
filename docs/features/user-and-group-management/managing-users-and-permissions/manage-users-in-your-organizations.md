@@ -7,8 +7,8 @@ Select the **Members** top-level menu option to manage your organization's membe
 You can:
 
 * [Add members](manage-users-in-your-organizations.md#add-members)
-* [Revoke pending invites](manage-users-in-your-organizations.md#filter-and-search-views)
-* [Change member roles](manage-users-in-your-organizations.md#change-member-role)
+* [Revoke pending invites](manage-users-in-your-organizations.md#revoke-pending-invites)
+* [Change member roles](manage-users-in-your-organizations.md#change-member-roles)
 * [Delete members](manage-users-in-your-organizations.md#delete-members)
 * [Filter and sort views](manage-users-in-your-organizations.md#filter-and-search-views)
 
@@ -40,8 +40,10 @@ To see a demonstration of adding members, play this 2-minute video:
 
 To remove pending invites:
 
-1. Click **revoke pending invites** (under the search field on the members page)
-2. Click the ![](<../../../.gitbook/assets/Screenshot 2022-03-11 at 08.05.56.png>) icon next to each user that has a pending invite.
+1. On the **Members** page, below the search bar, click **Revoke pending invites** (see image below). Note: Link appears when there is at least one pending invite.
+2. In the **Pending invites in **_**your organization's name**_ modal that appears, click the ![](<../../../.gitbook/assets/Screenshot 2022-03-11 at 08.05.56.png>) icon next to a user's name to cancel their invite.
+
+![Revoke pending invites](../../../.gitbook/assets/revoke-pending-invites-example.png)
 
 ### Change member roles
 
