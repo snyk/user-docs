@@ -1,6 +1,6 @@
 # Snyk Web UI
 
-No matter how you use Snyk, the **Snyk Web UI** is where you can connect your source code management (SCM) repositories, container registries, and applications. If you haven't already, go to the [Snyk Web UI](https://app.snyk.io/login) (URL) and create an account!
+No matter how you use Snyk, the **Snyk Web UI** is where you can connect your source code management (SCM) repositories, container registries, and applications. If you haven't already, go to the [Snyk Web UI](https://app.snyk.io/login) and create an account!
 
 After you connect, you can import your repositories and projects so that Snyk can scan, monitor, and fix vulnerabilities in your source code.&#x20;
 
