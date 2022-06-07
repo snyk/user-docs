@@ -28,7 +28,7 @@ If you're signing into a paid Team, Business, or Enterprise account,  you'll als
 * [Manage group or organization members](getting-started-with-the-snyk-web-ui.md#manage-organization-or-group-members)
 * [View Snyk updates](getting-started-with-the-snyk-web-ui.md#view-product-updates)
 * [Get help](getting-started-with-the-snyk-web-ui.md#view-helpful-resources)
-* [Manage your user account ](getting-started-with-the-snyk-web-ui.md#manage-your-user-account-preferences-and-settings)
+* [Manage your user account](getting-started-with-the-snyk-web-ui.md#manage-account-preferences-and-settings)&#x20;
 
 ## [Dashboard](../getting-started/getting-started-with-snyk-dashboard.md)
 

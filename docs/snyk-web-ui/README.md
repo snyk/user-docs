@@ -18,7 +18,7 @@ If you log in with a different authentication provider than the one your company
 
 Organizations in Snyk control access to projects. The organization settings and policies also influence your scan results, depending on which organization you use when you add a project.
 
-Snyk shows your preferred (or default) organization when you log into the Snyk Web UI. Snyk also uses the settings for your preferred organization when you test a project locally using the CLI.
+Snyk shows your [preferred (or default) organization](https://docs.snyk.io/snyk-web-ui/getting-started-with-the-snyk-web-ui#manage-account-preferences-and-settings) when you log into the Snyk Web UI. Snyk also uses the settings for your preferred organization when you test a project locally using the CLI.
 
 ## More information
 
