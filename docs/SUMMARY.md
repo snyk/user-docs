@@ -165,7 +165,7 @@
     * [Snyk for Bazel](products/snyk-open-source/language-and-package-manager-support/snyk-for-bazel.md)
     * [Snyk for C / C++](products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++.md)
     * [Snyk for Elixir](products/snyk-open-source/language-and-package-manager-support/snyk-for-elixir.md)
-    * [Snyk for Golang](products/snyk-open-source/language-and-package-manager-support/snyk-for-golang.md)
+    * [Snyk for Go](products/snyk-open-source/language-and-package-manager-support/snyk-for-golang.md)
     * [Snyk for Java and Kotlin](products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md)
     * [Snyk for JavaScript](products/snyk-open-source/language-and-package-manager-support/snyk-for-javascript.md)
     * [Snyk for PHP](products/snyk-open-source/language-and-package-manager-support/snyk-for-php.md)
