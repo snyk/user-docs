@@ -77,8 +77,8 @@ For Snyk to perform the required operations on monitored repositories (such as r
 | **Action**                                          | **Why?**                                                                                                                            | **Required permissions on the repository** |
 | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
 | Daily / weekly tests                                | To read manifest files in private repositories.                                                                                     | **Write** or above                         |
-| Snyk tests on pull requests                         | To send pull request status checks when a new PR is created, or an existing PR is updated.                                          |                                            |
-| Opening fix and upgrade pull requests               | To create fix PRs in monitored repositories.                                                                                        |                                            |
+| Snyk tests on pull requests                         | To send pull request status checks when a new PR is created, or an existing PR is updated.                                          | **Write** or above                         |
+| Opening fix and upgrade pull requests               | To create fix PRs in monitored repositories.                                                                                        | **Write** or above                         |
 | Snyk tests on pull requests - initial configuration | To add Snyk's webhooks to the imported repos, so Snyk is informed when pull requests are created or updated, and can trigger scans. | **Admin**                                  |
 
 ## **Disabling the Bitbucket DC/Server integration**
