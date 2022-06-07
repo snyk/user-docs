@@ -35,6 +35,7 @@ Snyk Controller supports the following languages.
 * Node
 * Go
 * Java
+* PHP
 
 ## Supported operating systems
 
