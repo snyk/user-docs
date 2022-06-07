@@ -10,13 +10,13 @@ This feature is available in Business and Enterprise plans. See [pricing plans](
 1. Click on **Integrations** tabs
 2. Select **Container orchestrators**
 
-![](<../../../../.gitbook/assets/image (66) (4) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (66) (3).png>)
 
 3\. Click **Connect**
 
 4\. The **Integration ID** is created for the Kubernetes integration
 
-![](<../../../../.gitbook/assets/image (93).png>)
+![](<../../../../.gitbook/assets/image (92).png>)
 
 5\. The **Integration ID** is needed during the Snyk Controller installation
 
