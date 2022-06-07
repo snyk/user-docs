@@ -1,5 +1,7 @@
 # Install the Snyk controller with Helm (Azure and Google Cloud Platform)
 
+## Prerequisites
+
 {% hint style="danger" %}
 Before following this installation page, review the [prerequisite setting page](prerequisite-setting.md).
 {% endhint %}
@@ -11,7 +13,7 @@ This section covers:
 * Snyk integration for most Kubernetes platforms
 * Additional configuration steps for integration when using Amazon Elastic Container Registry (ECR) with your Amazon Elastic Kubernetes Service (EKS) clusters
 
-The **installation steps** follow.
+## Installation steps
 
 1.  Access your Kubernetes environment and run the following command in order to add the Snyk Charts repository to Helm:
 
@@ -125,5 +127,7 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
 * Please note that **`/`** in cluster name is **disallowed**. Any **`/`** in cluster names will be removed.
 * To avoid renaming the cluster on every update, you can use the existing option from Helm **--reuse-values**. This means when upgrading, it will reuse the value of the last release and merge in any overrides from the command line via **--set** and **-f**. If **--reset-values** is specified, this is ignored.
 {% endhint %}
+
+## Optional installation steps
 
 For any additional Snyk Controller optional steps that fit your environment refer to [Optional installation steps for Snyk Controller with Helm](optional-installation-steps-for-snyk-controller-with-helm.md)[.](optional-installation-steps-for-snyk-controller-with-helm.md)

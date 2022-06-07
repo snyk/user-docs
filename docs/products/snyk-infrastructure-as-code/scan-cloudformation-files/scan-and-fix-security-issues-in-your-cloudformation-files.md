@@ -11,7 +11,7 @@ Snyk scans CloudFormation code for misconfigurations and security issues. For co
 
 * Log in to the account and navigate to the relevant group and organization.
 
-![](<../../../.gitbook/assets/image (69) (1).png>)
+![](<../../../.gitbook/assets/image (69).png>)
 
 * Re-import repositories if testing occurred before the infrastructure as code feature was enabled in order to detect the CloudFormation code:
 

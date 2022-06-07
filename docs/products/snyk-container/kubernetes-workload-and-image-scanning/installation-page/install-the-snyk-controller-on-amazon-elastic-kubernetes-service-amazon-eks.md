@@ -1,5 +1,7 @@
 # Install the Snyk controller on Amazon Elastic Kubernetes Service (Amazon EKS)
 
+## Prerequisites
+
 {% hint style="danger" %}
 Before following this installation page, please review the [prerequisite setting page](prerequisite-setting.md).
 {% endhint %}
@@ -12,7 +14,7 @@ Installing the Snyk controller enables you to import and test your running EKS w
 
 Follow these instructions to **configure Snyk Controller to pull and scan private images from ECR**.
 
-**Installation steps**
+## Installation steps
 
 1\. Access your Kubernetes environment and run the following command in order to add the Snyk Charts repository to Helm:
 
