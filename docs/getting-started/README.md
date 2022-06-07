@@ -15,7 +15,7 @@ Getting started using Snyk is quick and easy; you just need a Snyk account, and 
 2. Select your preferred signup method.
 3. Create a new account as prompted. You now have a Snyk account!&#x20;
 
-![](<../.gitbook/assets/image (66) (2).png>)
+![](<../.gitbook/assets/image (66) (4).png>)
 
 You can now choose to provide some information to help us guide your experience, then follow the prompts to integrate your code
 
