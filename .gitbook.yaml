@@ -20,3 +20,4 @@ redirects:
   snyk-cli/commands/iac: snyk-cli/commands/README.md
   snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries: products/snyk-container/integrate-self-hosted-container-registries.md
   features/snyk-cli/grouping-projects-by-branch-or-version: snyk-cli/secure-your-projects-in-the-long-term/grouping-projects-by-branch-or-version.md
+  getting-started/getting-started-with-snyk-dashboard: snyk-web-ui/getting-started-with-the-snyk-web-ui#dashboard
