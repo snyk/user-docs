@@ -153,7 +153,7 @@ To test a specific configuration:
 * `--configuration-matching=compile` will match compile, testCompile, compileOnly etc;
 * `--configuration-matching=^compile$` will match only compile;
 * `--configuration-matching='^(debug|release)compile$'` will match debugCompile and releaseCompile
-* `--configuration-matching='^(?!.*lintClassPath).*$'` will match all configurations _except_ lintClassPath
+* `--configuration-matching='^(?!.*test).*$'` will match all configurations _except_ those containing the string "test"
 
 ### Android build variants
 
