@@ -34,7 +34,7 @@ If you're signing into a paid Team, Business, or Enterprise account,  you'll als
 
 View your pending tasks, vulnerable projects, invite team members, and add new projects.
 
-![Use project links to explore and manage target options](<../.gitbook/assets/image (70).png>)
+![Use project links to explore and manage target options](<../.gitbook/assets/image (73).png>)
 
 Use the project **** links to explore and manage the metadata, retest, and fix options for the target files in your projects. The link opens a page where you can view the project **Overview** options, or switch to the **History**, and **Settings** tabs.&#x20;
 
@@ -42,7 +42,7 @@ Use the project **** links to explore and manage the metadata, retest, and fix o
   This page presents the list of issues with full, partial, or no fixes.&#x20;
 * For the other relevant projects, use **View PR** links to open and view the Snyk-generated PR fixes in GitHub.&#x20;
 
-![Target page: details and options for a single project from the dashboard](../.gitbook/assets/dockerfile\_fix\_vulnerabilities.gif)
+![Target page: details and options for a single project from the dashboard](<../.gitbook/assets/dockerfile\_fix\_vulnerabilities (1).gif>)
 
 ## ****[**Reports**](https://docs.snyk.io/features/reports)****
 
@@ -74,7 +74,7 @@ In the **Integrations** tab, you can:
 * Manage [Slack](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration) and [Jira](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira) integrations.
 * Access the [Vulnerability management tools](https://docs.snyk.io/integrations/vulnerability-management-tools).
 
-![Integrations tab](<../.gitbook/assets/image (91) (1).png>)
+![Integrations tab](<../.gitbook/assets/image (69).png>)
 
 ## Manage [Organization](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations) or [Group](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations-1) members
 
@@ -106,7 +106,7 @@ Use the Help menu for quick access to Snyk user documentation (including the **G
 
 This is where you can configure the general [account settings](https://app.snyk.io/account) for your user account, view your authentication token and authorized applications, set your preferred (default) organization, as well as your notification and sharing preferences, and view information on the latest Snyk product updates.&#x20;
 
-![Options for a user account](<../.gitbook/assets/image (86).png>)
+![Options for a user account](<../.gitbook/assets/image (95) (1).png>)
 
 ### Managing user **account settings**
 
