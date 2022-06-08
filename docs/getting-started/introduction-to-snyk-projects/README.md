@@ -8,7 +8,7 @@ Targets may represent a SCM repository, a Kubernetes workload, or other scannabl
 \
 Targets appear on the **Projects** menu on the Snyk dashboard:
 
-![](<../../.gitbook/assets/image (65) (1) (2) (1).png>)
+![](<../../.gitbook/assets/image (65) (2).png>)
 
 {% hint style="info" %}
 Targets also appear on the [Snyk API](https://apidocs.snyk.io/?version=2022-02-16%7Ebeta#tag--Targets).
@@ -63,7 +63,7 @@ Projects define the items Snyk scans at a given Target. A project includes:
 
 Projects appear on the **Projects** menu on the Snyk dashboard, and on the [Snyk API](https://apidocs.snyk.io/?version=2022-02-16%7Ebeta#tag--Projects):
 
-![](<../../.gitbook/assets/image (76) (1) (2) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (76) (1) (2) (1) (1) (1).png>)
 
 ## Targetfile
 
@@ -74,3 +74,7 @@ The specific item to scan in a target, such as a pom file in a GitHub repo.
 ## Type
 
 The scanning method to use for this project, such as static application security testing , [SAST](https://snyk.io/learn/application-security/sast-vs-dast/) for scanning using Snyk Code or Maven for a Maven project using Snyk Open Source). Part of the configuration for scanning.
+
+## Introducing the Snyk Dashboard
+
+Use the [Dashboard](https://docs.snyk.io/snyk-web-ui/getting-started-with-the-snyk-web-ui#dashboard) to gain a different perspective on project work that needs to be handled and to get an overview of the most vulnerable projects in your organization.

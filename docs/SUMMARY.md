@@ -24,7 +24,6 @@
     * [View project history](getting-started/introduction-to-snyk-projects/view-project-history.md)
     * [Issue card information](getting-started/introduction-to-snyk-projects/issue-card-information.md)
     * [Maximum number of projects in an organization](getting-started/introduction-to-snyk-projects/maximum-number-of-projects-in-an-organsation.md)
-  * [Getting started with Snyk dashboard](getting-started/getting-started-with-snyk-dashboard.md)
   * [Implementing Snyk in your teams](getting-started/implementing-snyk-in-your-teams.md)
 * [Snyk Web UI](snyk-web-ui/README.md)
   * [Getting started with the Snyk Web UI](snyk-web-ui/getting-started-with-the-snyk-web-ui.md)
