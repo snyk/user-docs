@@ -37,7 +37,7 @@ This sends a snapshot of your current configuration issues to your Snyk dashboar
 
 ### Viewing snapshots in the Snyk Web UI
 
-Log in to the Snyk Web UI ([https://app.snyk.io](https://app.snyk.io/login)) and go to your organization's project page, to see the specific snapshot of your scanned project.
+Log in to the [Snyk Web UI](../../snyk-web-ui/) and go to your organization's project page, to see the specific snapshot of your scanned project.
 
 ![Newly scanned project in the projects page](<../../.gitbook/assets/image (89).png>)
 

@@ -1,8 +1,8 @@
 # Analysis and fixes for your images from the Snyk Web UI
 
-You can import container projects into Snyk using `snyk monitor` from the CLI. Alternatively, you can import projects directly from a supported container registry from the Snyk Web UI.
+You can import container projects into Snyk using `snyk monitor` from the CLI. Alternatively, you can import projects directly from a supported container registry from the [Snyk Web UI](../../../snyk-web-ui/).
 
-We then scan your project, testing for vulnerabilities, and import a snapshot of your projects. Snyk scans the image snapshot dependencies (which in turn refers to its tag) regularly based on your configurations (daily or weekly) and updates you when any new vulnerabilities are identified (email or Slack, also based on your configurations).&#x20;
+We then scan your project, testing for vulnerabilities, and import a snapshot of your projects. Snyk scans the image snapshot dependencies (which in turn refers to its tag) regularly based on your configurations (daily or weekly) and updates you when any new vulnerabilities are identified (email or Slack, also based on your configurations).
 
 If the tag for an image changes and the original tag is used for a different image, Snyk continues to scan the image associated with the original tag, meaning we scan the new image on recurring tests. In order to continue testing an image with a different tag, import the relevant tag.
 

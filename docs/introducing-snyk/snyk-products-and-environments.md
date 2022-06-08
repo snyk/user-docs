@@ -13,7 +13,7 @@ You can use Snyk products to scan:
 
 Snyk environments are the ways you can access your selected Snyk product:
 
-* **Web**: the core Snyk Web UI ([app.snyk.io](https://app.snyk.io)), allowing you a browser-based experience, along with functions such as reports and setup.
+* ****[**Web**](../snyk-web-ui/): the core Snyk Web UI ([app.snyk.io](https://app.snyk.io)), allowing you a browser-based experience, along with functions such as reports and setup.
 * [**CLI**](https://docs.snyk.io/snyk-cli): the Snyk Command Line Interface, allowing you to run scans on your local machine and integrate Snyk into your pipeline.
 * [**IDEs**](../ide-tools/): use Snyk IDE integrations to embed Snyk in your development environment.
 * [**API**](https://support.snyk.io/hc/en-us/categories/360000665657-Snyk-API): The Snyk API allows you to programmatically integrate with Snyk, tuning Snyk’s security automation to your specific workflows.

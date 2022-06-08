@@ -317,7 +317,7 @@ Incorporates **Snyk Intel Vulnerability DB**: Snyk’s database of vulnerabiliti
 
 ### Snyk Web UI
 
-The environment allowing usersSnyk app to access Snyk functions on the web.
+The environment allowing users to access Snyk functions on the web. See [Snyk Web UI](../snyk-web-ui/).
 
 ### Social Trends
 

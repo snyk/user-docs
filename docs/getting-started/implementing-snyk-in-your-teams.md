@@ -85,6 +85,7 @@ The Snyk platform scans different types of projects (depending on which product 
 
 More information:
 
+* Docs: [snyk-web-ui](../snyk-web-ui/ "mention")
 * Training: [Introduction to the Snyk UI](http://training.snyk.io/learn/course/introduction-to-the-snyk-ui/snyk-log-in-details/log-in-tasks-and-considerations?page=1)
 
 #### Get familiar with the Snyk CLI

@@ -2,7 +2,7 @@
 
 ## View project vulnerabilities
 
-Use Snyk Code with the standard Snyk web interface to find and fix vulnerabilities in your code.
+Use Snyk Code with the [Snyk Web UI](../../snyk-web-ui/) to find and fix vulnerabilities in your code.
 
 1. In your **Projects** area, select the project to open
 2. Snyk Code displays information and vulnerability cards for that project:
@@ -52,7 +52,7 @@ Full details include all the information in the vulnerability card, plus:
 
 1.  Click the code link to open the source code file itself (for example, in GitHub)
 
-    ![](../../.gitbook/assets/link.png)
+    <img src="../../.gitbook/assets/link.png" alt="" data-size="original">
 2. The file opens, showing you exactly where to fix the vulnerability (in this example, by adding the sanitation required to the input).
 3. You can now make the fix as required, to address the vulnerability in your code.
 
