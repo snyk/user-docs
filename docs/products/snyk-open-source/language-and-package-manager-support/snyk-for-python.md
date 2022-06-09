@@ -41,6 +41,12 @@ Snyk runs tests against the specific pip installation used for that specific ser
 
 In order to scan the full dependency tree, Snyk analyzes the installed packages to ensure none are missing. This happens even when not explicitly specified in the manifest file.
 
+Install the missing packages by invoking pip install, for example:
+
+```
+python3 -m pip install -r requirements.txt
+```
+
 ## Pipenv
 
 To build the dependency tree, run `pipenv install` as Snyk needs this to create the `pipenv graph` which is then used for the dependency scan to fulfill itself.
