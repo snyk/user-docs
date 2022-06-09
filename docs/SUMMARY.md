@@ -207,7 +207,7 @@
   * [Using Snyk Code via web](products/snyk-code/using-snyk-code-web.md)
   * [Using Automatic PR Checks for securing your source code](products/snyk-code/using-automatic-pr-checks-for-securing-your-source-code/README.md)
     * [Prerequisites for the Automatic PR Checks feature](products/snyk-code/using-automatic-pr-checks-for-securing-your-source-code/prerequisites-for-the-automatic-pr-checks-feature.md)
-    * [Enabling the Automatic Pull Request Checks](products/snyk-code/using-automatic-pr-checks-for-securing-your-source-code/enabling-the-automatic-pull-request-checks.md)
+    * [Enabling the Automatic PR Checks](products/snyk-code/using-automatic-pr-checks-for-securing-your-source-code/enabling-the-automatic-pr-checks.md)
     * [Viewing the PR Checks in your SCM](products/snyk-code/using-automatic-pr-checks-for-securing-your-source-code/viewing-the-pr-checks-in-your-scm.md)
     * [Viewing and working with the PR Check results on the Snyk Web UI](products/snyk-code/using-automatic-pr-checks-for-securing-your-source-code/viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md)
   * [Using Snyk Code via IDE](products/snyk-code/using-snyk-code-via-ide.md)

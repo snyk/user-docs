@@ -1,14 +1,14 @@
-# Enabling the Automatic Pull Request Checks
+# Enabling the Automatic PR Checks
 
 **Note**: Before enabling the Automatic PR Checks feature, your selected SCM must be integrated with Snyk.
 
-You can configure Snyk Code to automatically check your PRs for security vulnerabilities on the level of [an entire organization](enabling-the-automatic-pull-request-checks.md#enabling-the-automatic-pull-request-checks-for-an-entire-organization) or [a specific Project](enabling-the-automatic-pull-request-checks.md#enabling-the-automatic-pull-request-checks-for-a-specific-project). In both levels, the configuration is done for a specific integrated SCM.
+You can configure Snyk Code to automatically check your PRs for security vulnerabilities on the level of [an entire organization](enabling-the-automatic-pr-checks.md#enabling-the-automatic-pull-request-checks-for-an-entire-organization) or [a specific Project](enabling-the-automatic-pr-checks.md#enabling-the-automatic-pull-request-checks-for-a-specific-project). In both levels, the configuration is done for a specific integrated SCM.
 
 **Note**: One organization can be integrated with several SCMs. However, only the SCM that has the Automatic PR Checks feature enabled in its Settings, can be used for the PR Checks by the organization.   &#x20;
 
 By default, the Project Settings inherit the organization Settings. However, when the Settings on the organization and Project levels are different, the Project Settings override the organization Settings, unless you selected to apply the organization Settings to all its Projects when saving them.
 
-### Enabling the Automatic Pull Request Checks for an entire organization
+### Enabling the Automatic PR Checks for an entire organization
 
 When enabling the Automatic PR Checks feature for an entire organization, all the imported repositories in this organization will be scanned by Snyk Code once new PRs will be created in them. However, if in this organization there are Projects that have a Custom Settings for this feature, the Custom Settings of the Projects will override the organization Settings, unless you select to the save the organization Settings as **Apply changes to all overridden projects** (see step 6 below).&#x20;
 
@@ -54,7 +54,7 @@ From now on, the new PRs in the imported repositories of the organization will b
 
 &#x20;&#x20;
 
-### Enabling the Automatic Pull Request Checks for a specific Project
+### Enabling the Automatic PR Checks for a specific Project
 
 By default, the Settings on the Project level override the Settings on the organization level. However, the Settings on the Organization level can override the Custom Settings of a Project, if they are configured after the Project level customization, and are saved with the option - **Apply changes to all overridden projects** (see Step 6 above).
 
