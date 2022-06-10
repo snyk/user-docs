@@ -30,7 +30,7 @@
 * [Snyk CLI](snyk-cli/README.md)
   * [Getting started with the CLI](snyk-cli/getting-started-with-the-cli/README.md)
   * [CLI reference](snyk-cli/cli-reference/README.md)
-  * [Test for vulnerabilities](snyk-cli/test-for-vulnerabilities/README.md)
+  * [Scan for vulnerabilities](snyk-cli/test-for-vulnerabilities/README.md)
     * [The .snyk file](snyk-cli/test-for-vulnerabilities/the-.snyk-file.md)
     * [How to use the log4shell command](snyk-cli/test-for-vulnerabilities/how-to-use-the-log4shell-command.md)
     * [Set severity thresholds for CLI tests](snyk-cli/test-for-vulnerabilities/set-severity-thresholds-for-cli-tests.md)
