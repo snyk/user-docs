@@ -61,8 +61,23 @@ This section covers:
     }
     ```
 
+    \
+    If you are using **Artifactory Container Registry to host multiple private repositories,** your `dockercfg.json` file should look like this:&#x20;
 
+    ```
+    {
+      "auths": {
+        "<registry1>": {
+            "auth": "BASE64-ENCODED-AUTH-DETAILS"
+           },
+        "<registry2>": {
+           "auth": "BASE64-ENCODED-AUTH-DETAILS"
+        }
+      }
+    }
+    ```
 
+    \
     Create a secret with the file added:
 
     ```
