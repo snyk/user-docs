@@ -12,51 +12,53 @@ With Snyk Infrastructure as Code, you can test your configuration files with the
 As of CLI version 1.594.0 all configuration files are processed locally, ensuring that they do not leave your machine. Earlier versions by default send the configuration files to Snyk to be processed. Snyk recommends that you upgrade to the latest version of the CLI.
 {% endhint %}
 
-In the examples that follow, you can replace `main.tf` with your filename, for example, `deployment.yaml`.
+In the examples that follow, you can replace the sample file names with the names of your own files, like `deployment.yaml`.
 
 ## Test for an issue on specified files
 
-Usage:
+When you provide no arguments, the command recursively traverses the current working directory and scans every file it finds:
 
 ```
 snyk iac test
 ```
 
-Example:
+You can scan specific files under the current working directory. If you provide one or more file paths, the command scan only those files:
 
 ```
-snyk iac test main.tf
+snyk iac test file-1.tf dir/file-2.tf
 ```
 
-You can also specify multiple files by appending the file names after each other, for example:
+The command returns with an error if you provide file paths outside the current working directory. For example, this is not a valid invocation of the command:
 
 ```
-snyk iac test file-1.tf file-2.tf
+snyk iac test ../main.tf
 ```
 
 ## Test for an issue on a directory of files
 
-You can scan a directory of configuration files. This scans recursively through all files and folders.
-
-Example, scan all directories relative to your current path:
+When you provide no arguments, the command recursively traverses the current working directory, and scans every file it finds:
 
 ```
 snyk iac test
 ```
 
-Example, scan a specific folder:
+You can restrict the scan to a specific directory:
 
 ```
 snyk iac test my-folder
 ```
 
-Example, restrict the directory depth to be scanned:
+You can limit the depth of the directory traversal. The current working directory has a depth of one, directories under the current working directory have a depth of two, and so on. For example, if you want to restrict the search to the current working directory and two more levels of directories, you can invoke the command like this:
 
 ```
 snyk iac test --detection-depth=3
 ```
 
-This limits the search to the specified directory (or current directory if no `PATH` provided) plus two levels of subdirectories.
+The command returns with an error if you provide directory paths outside the current working directory. For example, this is not a valid invocation of the command:
+
+```
+snyk iac test ../my-folder
+```
 
 ## Output the test format as JSON
 
