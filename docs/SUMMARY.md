@@ -29,7 +29,6 @@
   * [Getting started with the Snyk Web UI](snyk-web-ui/getting-started-with-the-snyk-web-ui.md)
 * [Snyk CLI](snyk-cli/README.md)
   * [Getting started with the CLI](snyk-cli/getting-started-with-the-cli/README.md)
-  * [How to find vulnerabilities using the CLI](snyk-cli/how-to-find-vulnerabilities-using-the-cli/README.md)
   * [CLI reference](snyk-cli/cli-reference/README.md)
   * [Test for vulnerabilities](snyk-cli/test-for-vulnerabilities/README.md)
     * [The .snyk file](snyk-cli/test-for-vulnerabilities/the-.snyk-file.md)
