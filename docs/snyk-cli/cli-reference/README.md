@@ -92,10 +92,6 @@ The following is a list of the sub-commands for Snyk CLI commands. Each sub-comm
 
 `clear`: subcommand of [`config`](https://docs.snyk.io/snyk-cli/commands/config)
 
-## Exit codes
-
-Possible exit codes and their meaning:
-
 **0**: success, no vulnerabilities found\
 **1**: action\_needed, vulnerabilities found\
 **2**: failure, try to re-run command\
@@ -107,7 +103,7 @@ You can use environment variables to configure the Snyk CLI and also set variabl
 
 ## Debug
 
-Use `-d` option to output the debug logs.
+Use `-d` option to output the debug logs for any command.
 
 ## Options for multiple commands
 
@@ -253,10 +249,6 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--path=<PATH_TO_RESOURCE>`: [`ignore`](https://docs.snyk.io/snyk-cli/commands/ignore)
 
-## Debug
-
-`-d`: [all](https://docs.snyk.io/snyk-cli/commands)
-
 ## Options for Maven projects
 
 `--scan-all-unmanaged`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
@@ -332,10 +324,6 @@ Currently the following options are not supported:
 `--max-depth`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
 `--project-name=c-project`: [`monitor`](../commands/monitor.md)``
-
-
-
-
 
 ## `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
