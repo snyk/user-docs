@@ -2,9 +2,14 @@
 
 You can export the CLI Code results to a JSON or SARIF format file. When you export the results, you need to provide a name for the new file.
 
-**Note**: You can also [output the test results to a JSON or SARIF format in the terminal](outputting-the-test-results-to-a-json-or-sarif-format-in-the-terminal.md).
+**Notes**:
 
-There are two methods to perform the export:
+* You can also [output the test results to a JSON or SARIF format in the terminal](outputting-the-test-results-to-a-json-or-sarif-format-in-the-terminal.md).
+* The severity levels of the issues discovered in the Snyk Code test are displayed differently in the JSON and SARIF files. For more information, see [Understanding the severity levels in the JSON and SARIF files](exporting-the-test-results-to-a-json-or-sarif-file.md#understanding-the-severity-levels-in-the-json-and-sarif-files).
+
+### Export Methods
+
+There are two methods to perform the result export to a JSON or SARIF file:
 
 **Note**: The instructions below use a JSON file, but you can use a SARIF file as well.
 
@@ -26,7 +31,9 @@ snyk code test --json-file-output=<path/to/new_file>
 npm update snyk -g
 ```
 
-&#x20;
+
+
+### Exporting the test results to a JSON file
 
 &#x20;**To export the test results to a JSON file:**
 
@@ -60,7 +67,7 @@ In the repository folder, a JSON file is created:
 
 ![](<../../../../.gitbook/assets/snyk Code - CLI - results - export to JSON - with terminal results - JSON file.png>)
 
-
+### Exporting the test results to a SARIF file
 
 **To export the test results to a SARIF file:**
 
@@ -94,4 +101,15 @@ In the repository folder, a SARIF file is created:
 
 ![](<../../../../.gitbook/assets/snyk Code - CLI - results - export to SARIF - with terminal results - SARIF file.png>)
 
-&#x20;
+### Understanding the severity levels in the JSON and SARIF files
+
+The severity levels of the issues discovered in the Snyk Code test are displayed differently in the JSON and SARIF output files. The severity levels in the JSON and SARIF results are as follows:
+
+* High = **error**
+* Medium = **warning**
+* Low = **note/info**
+
+For example:
+
+![](<../../../../.gitbook/assets/snyk Code - CLI - JSON and SARIF - Severity Level Results.png>)
+
