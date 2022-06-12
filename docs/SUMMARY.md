@@ -201,7 +201,7 @@
     * [User Experience](products/snyk-code/key-features/user-experience.md)
     * [Integrations](products/snyk-code/key-features/integrations.md)
   * [Code language and framework support](products/snyk-code/snyk-code-language-and-framework-support.md)
-  * [Security Rules used by Snyk Code](products/snyk-code/security-rules-used-by-snyk.md)
+  * [Security Rules used by Snyk Code](products/snyk-code/security-rules-used-by-snyk-code/README.md)
     * [Go](products/snyk-code/security-rules-used-by-snyk-code/go.md)
     * [Java](products/snyk-code/security-rules-used-by-snyk-code/java.md)
     * [JavaScript & TypeScript](products/snyk-code/security-rules-used-by-snyk-code/javascript-and-typescript.md)
