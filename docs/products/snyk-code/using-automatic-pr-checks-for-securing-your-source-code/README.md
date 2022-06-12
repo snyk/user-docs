@@ -22,7 +22,7 @@ If you want to pass PRs that were automatically failed due to vulnerabilities th
 
 ![](<../../../.gitbook/assets/Snyk Code - PR Checks - Mark as successful - On GitHub (1).png>)
 
-The Automatic PR Checks feature is applied only to repositories that were imported to Snyk from the integrated SCM. It can be enabled for your integrated SCM on the level of an entire organization or on the level of a specific Project.
+The Automatic PR Checks feature is applied only to repositories that were imported to Snyk from the integrated SCM. However, after the initial import, any new file or folder that will be added in the SCM to the imported repositories, will be included in the automatic PR Checks. The Automatic PR Checks feature can be enabled for your integrated SCM on the level of an entire organization or on the level of a specific Project.
 
 The workflow of using the Automatic PR Checks feature is as follows:
 
