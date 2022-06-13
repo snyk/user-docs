@@ -34,16 +34,32 @@ Choose a source code integration, to allow Snyk to work on a project.
 
 Add projects to test with Snyk, by choosing repositories for Snyk to test and monitor.
 
-1. Select **Projects** from the Snyk Web UI.
-2. Select the tool to add the project from (for example GitHub).
-3. In **Personal and Organization repositories**, select the repositories to use.
-4. Click **Add selected repositories** to import the selected repositories into your projects. This also:
-   1. Sets Snyk to run a regular check (daily by default) for vulnerabilities.
-   2. Creates a Webhook, so when you change code, Snyk tests your pull / merge requests, to check that new dependencies do not introduce more vulnerabilities.
-5. A progress bar appears: click **View log** to see log results.
-6. Project import completes.
+In the Snyk Web UI, first select **Projects** from the Snyk Web UI, then click **Add Project**, selecting where to add the project repos from (for example GitHub).
 
-{% hint style="info" %}
+#### Add a repo
+
+Select the repositories to use, then click **Add selected repositories** to import the selected repositories into your projects:
+
+![](<../../.gitbook/assets/Screenshot 2022-06-13 at 10.57.25.png>)
+
+This also:
+
+* Sets Snyk to run a regular check ([daily by default](../../features/user-and-group-management/managing-settings/usage-page-details.md#projects)) for vulnerabilities.
+* Creates a [Webhook](../../features/integrations/snyk-webhooks/), so when you change code, Snyk tests your pull / merge requests, to check that new dependencies do not introduce more vulnerabilities.
+
+In **Settings**, optionally choose to: ****&#x20;
+
+* Use **Add custom file location** to add any additional dependencies from custom paths.&#x20;
+* Use **Exclude folders** to list up to 10 folders to exclude from scanning during the import; for example, to shorten scanning time.&#x20;
+
+#### Import progress
+
+1. A progress bar appears: click **View last import log** to see log results.
+2. Project import completes, with a status error message:
+
+![](<../../.gitbook/assets/Screenshot 2022-06-13 at 11.38.00.png>)
+
+{% hint style="success" %}
 If you see any errors during import, see [Project import errors](https://support.snyk.io/hc/en-us/articles/360001373118).
 {% endhint %}
 
