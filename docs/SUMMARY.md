@@ -277,6 +277,7 @@
     * [Kubernetes integration UI explained](products/snyk-container/kubernetes-workload-and-image-scanning/kubernetes-integration-ui-explained/README.md)
       * [Viewing project details and test results](products/snyk-container/kubernetes-workload-and-image-scanning/kubernetes-integration-ui-explained/viewing-project-details-and-test-results.md)
       * [Snyk Priority Score and Kubernetes](products/snyk-container/kubernetes-workload-and-image-scanning/kubernetes-integration-ui-explained/snyk-priority-score-and-kubernetes.md)
+    * [Kubernetes integration FAQ](products/snyk-container/kubernetes-workload-and-image-scanning/kubernetes-integration-faq.md)
   * [Image scanning information library](products/snyk-container/image-scanning-library/README.md)
     * [ACR image scanning](products/snyk-container/image-scanning-library/acr-image-scanning/README.md)
       * [Container security with ACR: integrate and test](products/snyk-container/image-scanning-library/acr-image-scanning/container-security-with-acr-integrate-and-test.md)

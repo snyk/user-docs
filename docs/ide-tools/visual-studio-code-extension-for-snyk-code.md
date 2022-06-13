@@ -136,7 +136,7 @@ The icons have the following meaning:
 
 You can filter the issues by setting the severities you want to see using the `snyk.severity` setting. For example, set `"snyk.severity": { "critical": true, "high": true, "medium": true, "low": false }` to hide low severity issues. You can also apply the setting in the Settings UI.
 
-![Severity settings](<../.gitbook/assets/image (65) (2) (1) (1).png>)
+![Severity settings](<../.gitbook/assets/image (65) (2) (1).png>)
 
 ### Snyk Code editor window
 
