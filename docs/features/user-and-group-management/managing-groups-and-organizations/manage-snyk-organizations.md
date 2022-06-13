@@ -51,10 +51,10 @@ The selected organization is deleted from your Snyk Account.
 
 If you have several organizations, one of these organizations is set by default as your **Preferred Organization** in your Snyk Account. A Preferred Organization determines the following:
 
-* On the Snyk Web UI - which organization will be displayed by default when you log into your Snyk Account.
+* On the Snyk Web UI - which organization will be displayed by default when you log in to your Snyk Account.
 * On the Snyk CLI - which organization will be used by default for the test count when running tests via the CLI.\
   **Note**: To change the organization that will be used for the test count via the CLI, use the\
-  &#x20;`--org=<ORG_ID>` command. For more information, see [Options for the code test subcommand](https://docs.snyk.io/snyk-cli/commands/code).
+  &#x20;`--org=<ORG_ID>` command. For more information, see the help for the CLI command you are running: [Test](../../../snyk-cli/commands/test.md), [`Monitor`](../../../snyk-cli/commands/monitor.md), [`Code`](../../../snyk-cli/commands/code.md), [Container](../../../snyk-cli/commands/container.md), [IaC test](../../../snyk-cli/commands/iac-test.md), [IaC describe](../../../snyk-cli/commands/iac-describe.md). See also [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI).
 
 You can change the Preferred Organization in your Snyk Account via your Account Settings on the Web UI.
 
