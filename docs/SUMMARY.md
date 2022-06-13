@@ -49,7 +49,7 @@
     * [Protect your code with patches](snyk-cli/secure-your-projects-in-the-long-term/protect-your-code-with-patches.md)
     * [Monitor your projects at regular intervals](snyk-cli/secure-your-projects-in-the-long-term/monitor-your-projects-at-regular-intervals.md)
     * [Separating projects by branch or version](snyk-cli/secure-your-projects-in-the-long-term/grouping-projects-by-branch-or-version.md)
-  * [CLI commands help](snyk-cli/commands/README.md)
+  * [CLI help](snyk-cli/commands/README.md)
     * [Auth](snyk-cli/commands/auth.md)
     * [Code](snyk-cli/commands/code.md)
     * [Config](snyk-cli/commands/config.md)
