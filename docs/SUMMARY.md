@@ -417,6 +417,7 @@
     * [Self Serve Single Sign-On (SSO)](features/user-and-group-management/setting-up-sso-for-authentication/self-serve-single-sign-on-sso.md)
     * [Custom Mapping Option](features/user-and-group-management/setting-up-sso-for-authentication/custom-mapping-option.md)
     * [Example: Setting up custom mapping for Okta](features/user-and-group-management/setting-up-sso-for-authentication/example-setting-up-custom-mapping-for-okta.md)
+    * [Example: Setting up custom mapping for Azure AD](features/user-and-group-management/setting-up-sso-for-authentication/example-setting-up-custom-mapping-for-azure-ad.md)
     * [Identity Provider (IdP) migration](features/user-and-group-management/setting-up-sso-for-authentication/identity-provider-idp-migration.md)
   * [Managing users & permissions](features/user-and-group-management/managing-users-and-permissions/README.md)
     * [Manage users in your organizations](features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations.md)

@@ -15,13 +15,12 @@ In this configuration:
 
 Once you’re set up with groups and users:
 
-1.  **Add attributes to your Snyk App in Okta**
+1.  **Add attributes to your Snyk App in Okta**\
+    ****Directory -> Profile Editor -> Snyk App
 
-    1.  Directory -> Profile Editor -> Snyk App\\
+    ***
 
-        ***
-
-    ![](https://lh5.googleusercontent.com/h6ww6L16tTWMVhzoVN5Y72oBo51X-WYidqMAO-pTmUksl7akFrgH463S\_MMAKDGYdQYzVIYlvN0HCF7tlHMyyIqaQgfdoP9PP6UX7RIJhg-9fFtmLdVwM3tgjVj-h97yKBAS4jGl)
+    <img src="https://lh5.googleusercontent.com/h6ww6L16tTWMVhzoVN5Y72oBo51X-WYidqMAO-pTmUksl7akFrgH463S_MMAKDGYdQYzVIYlvN0HCF7tlHMyyIqaQgfdoP9PP6UX7RIJhg-9fFtmLdVwM3tgjVj-h97yKBAS4jGl" alt="" data-size="original">
 2. **Add Attribute**\
    ![](https://lh4.googleusercontent.com/R1sr6ZOerCRNxJhGS3ARf0Pebe0dC-tBLP\_80nARDd0LUGTjRY9jA1E-TiTtz4AQvk4aX-pAE\_\_h2S14kgEb6RTSRzZ4O\_1tOcBaCEwpTn2d4HaVuTynjN5D6qE4YSj3LZaiE5WN)
 3.  **Set Attributes**
@@ -32,7 +31,7 @@ Once you’re set up with groups and users:
     4. Group Priority: Combine values across groups
     5. Save and Add Another
 
-    ![](https://lh3.googleusercontent.com/sIXILVtJJeo9wbjzVSEVNmSVPwkMPeUu1j5yeBxi-mBEgwu4Ejn-4d0tZhtUZay2EV0PkN8wSE0uJgON3csAyXCEKVAAcpShqPKdbz\_U1D3ghx5sTCEhBJliRYIIEOf72c3H1TS5)
+    <img src="https://lh3.googleusercontent.com/sIXILVtJJeo9wbjzVSEVNmSVPwkMPeUu1j5yeBxi-mBEgwu4Ejn-4d0tZhtUZay2EV0PkN8wSE0uJgON3csAyXCEKVAAcpShqPKdbz_U1D3ghx5sTCEhBJliRYIIEOf72c3H1TS5" alt="" data-size="original">
 
     ***
 4.  **Set Attributes**
@@ -49,7 +48,7 @@ Once you’re set up with groups and users:
     7. Attribute Required: Yes
     8. Save
 
-    ![](https://lh3.googleusercontent.com/THGLLKFdDMvTnRrWkoWmC\_LGq5GJlw2c9Ht9pLzk\_-mUodeDbeFe4xO0F8jDB8Wwvvw-4CloAqFdSubc1VttSbSusmWqw0iju\_dhzCuho\_3im\_uGNf1ShYaakMnT-Bxoizo-L7dB)
+    <img src="https://lh3.googleusercontent.com/THGLLKFdDMvTnRrWkoWmC_LGq5GJlw2c9Ht9pLzk_-mUodeDbeFe4xO0F8jDB8Wwvvw-4CloAqFdSubc1VttSbSusmWqw0iju_dhzCuho_3im_uGNf1ShYaakMnT-Bxoizo-L7dB" alt="" data-size="original">
 
     ***
 5. **Directory -> Groups**
@@ -66,21 +65,18 @@ Once you’re set up with groups and users:
     2. Select the right user role\
        ![](https://lh4.googleusercontent.com/XPclvljK5ZsmLx1Cu3odPCFWz0oj4ZRk9ZkdG-gTto3vMWZWtMQ\_ONHVggh-xHL1UkRwId1eJFh8rZwCrbfUGvhKlL9BBzi3U46d3HXYE8YzFMtS8EIJxBljOim5LvSMarKyNXyZ)
 
-
-
     **Implementation**
 
     1. Navigate to Applications -> Applications and click on the Snyk app you set
     2. General Tab -> SAML Settings -> Edit and click next to go to the Configure SAML step
     3. Attribute Statements-> set **role** as the Name field with Name format **Unspecified** and the Value will be the below expression\
        `appuser.user_role == "groupadmin" ? "snyk-groupadmin" : Arrays.flatten(String.replace(String.replace(String.append("snyk-",String.append(Arrays.toCsvString(appuser.snyk_orgs),"-"+appuser.user_role)),",",",snyk-"),",","-"+appuser.group_user_role+","))`
-    4. Click Next -> Finish\
-
+    4. Click Next -> Finish\\
 
     **Explanation of the role expression:**
 
     If the role is groupadmin, the expression will ignore everything else and just pass `snyk-groupadmin`\
-    ``
+    \`\`
 
     If role is **not** groupadmin, then for each snyk org listed across all groups the expression will automatically
 
@@ -101,15 +97,12 @@ In this configuration:
 * Okta groups will be mapped to Snyk organization membership roles
 * **The user role in Snyk is pre-set in each Okta group for all members of that group**
 
-1. **Add attributes to your Snyk App in Okta**
-   1. Directory -> Profile Editor -> Snyk App
-
 ![](https://lh5.googleusercontent.com/h6ww6L16tTWMVhzoVN5Y72oBo51X-WYidqMAO-pTmUksl7akFrgH463S\_MMAKDGYdQYzVIYlvN0HCF7tlHMyyIqaQgfdoP9PP6UX7RIJhg-9fFtmLdVwM3tgjVj-h97yKBAS4jGl)
 
-**2. Add Attribute**\
+**1. Add Attribute**\
 ![](https://lh4.googleusercontent.com/R1sr6ZOerCRNxJhGS3ARf0Pebe0dC-tBLP\_80nARDd0LUGTjRY9jA1E-TiTtz4AQvk4aX-pAE\_\_h2S14kgEb6RTSRzZ4O\_1tOcBaCEwpTn2d4HaVuTynjN5D6qE4YSj3LZaiE5WN)
 
-**3. Set Attributes**
+**2. Set Attributes**
 
 1. Data Type: string array
 2. Display Name: Snyk Orgs
@@ -119,7 +112,7 @@ In this configuration:
 
 ![](https://lh3.googleusercontent.com/sIXILVtJJeo9wbjzVSEVNmSVPwkMPeUu1j5yeBxi-mBEgwu4Ejn-4d0tZhtUZay2EV0PkN8wSE0uJgON3csAyXCEKVAAcpShqPKdbz\_U1D3ghx5sTCEhBJliRYIIEOf72c3H1TS5)\
 \
-**4. Directory -> Groups**
+**3. Directory -> Groups**
 
 1. Select a group and navigate to Applications Tab and click Assign applications and assign the Snyk app to the group
 2. The Snyk app should be present and click on the pencil next to the snyk app\
@@ -140,7 +133,6 @@ In this configuration:
 
 ### **Explanation of the value expression**
 
-1.  The end result should look like the below. The expression in the **role** attribute automatically adds the 'snyk' in front of the snyk\_orgs value (which contains \<orgslug>-\<role> **OR** \<groupadmin>) such that the end result should look similar to the below example.\
+The end result should look like the following example. The expression in the **role** attribute automatically adds the 'snyk' in front of the snyk\_orgs value (which contains \<orgslug>-\<role> **OR** \<groupadmin>) such that the end result should look similar to this:
 
-
-    Example result: `[“snyk-org1-admin”,”snyk-org2-admin”, “snyk-org3-collaborator”,”snyk-org4-collaborator”,”snyk-groupadmin”]`
+Example result: `[“snyk-org1-admin”,”snyk-org2-admin”, “snyk-org3-collaborator”,”snyk-org4-collaborator”,”snyk-groupadmin”]`
