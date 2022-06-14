@@ -43,7 +43,7 @@ You can log in to the Snyk Web UI, and navigate to the [Projects page](https://a
 
 ![Snyk monitor snapshot and scan results](<../../.gitbook/assets/monitor (1).png>)
 
-For more information see [Monitor your projects at regular intervals](../secure-your-projects-in-the-long-term/monitor-your-projects-at-regular-intervals.md).
+For more information see [Monitor your projects at regular intervals](../test-for-vulnerabilities/monitor-your-projects-at-regular-intervals.md).
 
 ## Running out of tests
 
