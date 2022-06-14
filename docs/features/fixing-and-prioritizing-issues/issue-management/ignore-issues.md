@@ -36,7 +36,7 @@ Suppressing issues is possible via the CLI using the `snyk ignore` command.
 
 `snyk ignore --id='npm:braces:20180219' --expiry='2018-04-01' --reason='testing'`
 
-See [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli.md) for more details.
+See [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/test-for-vulnerabilities/ignore-vulnerabilities-using-snyk-cli.md) for more details.
 
 When you use `snyk ignore`**,** the `.snyk` policy file is updated with the path and reason given, if one was provided. For example:
 

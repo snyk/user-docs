@@ -71,7 +71,7 @@ ignore:
         created: 2021-07-27T08:40:35.251Z
 ```
 
-For more information about the Snyk CLI ignore command, see [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli.md).
+For more information about the Snyk CLI ignore command, see [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/test-for-vulnerabilities/ignore-vulnerabilities-using-snyk-cli.md).
 
 ## Ignore instances of a vulnerability
 
@@ -103,7 +103,7 @@ ignore:
         created: 2021-07-27T08:40:35.251Z
 ```
 
-For more information about the Snyk CLI ignore command, see [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli.md).
+For more information about the Snyk CLI ignore command, see [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/test-for-vulnerabilities/ignore-vulnerabilities-using-snyk-cli.md).
 
 ## Policy flags and policy file notes
 
