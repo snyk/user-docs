@@ -7,15 +7,29 @@ In the **Manage organization** section, you can:
 * leave this organization.
 * delete this organization (administrator users only).
 
-### Create a new Snyk organization
+### Creating a new Snyk organization
 
 You can have an unlimited number of organizations on Snyk. Each organization can be on a different pricing plan.
 
-To create a new organization, choose the ‘Create’ link in the drop-down in the top navigation. You can then name the organization and start a trial.
+**To create a new organization:**
 
-![](<../../../.gitbook/assets/Screen Shot 2021-10-28 at 9.57.47 AM.png>)
+1\.  On the Snyk Web UI, open the Organizations drop-down list from the top menu, and click the **Create a new organization** option:
 
-### Delete an organization
+![](<../../../.gitbook/assets/Org Settings - Creating New Organization option.png>)
+
+2\.  On the **Create a new organization** page, enter a name for the new organization, and click the **Create organization** button:
+
+**Note**: It is highly recommended to enter a unique name for the new organization.
+
+![](<../../../.gitbook/assets/Creating a New Organization - dialog box.png>)
+
+A new organization is created and is added to your Organizations list.
+
+By default, each organization has a unique Snyk ID and internal name, which you can find in the **Settings** page of the organization.
+
+
+
+### Deleting an organization
 
 Org Admins can delete organizations so long as there are no groups involved.
 
@@ -54,7 +68,7 @@ If you have several organizations, one of these organizations is set by default 
 * On the Snyk Web UI - which organization will be displayed by default when you log in to your Snyk Account.
 * On the Snyk CLI - which organization will be used by default for the test count when running tests via the CLI.\
   **Note**: To change the organization that will be used for the test count via the CLI, use the\
-  &#x20;`--org=<ORG_ID>` command. For more information, see the help for the CLI command you are running: [Test](../../../snyk-cli/commands/test.md), [`Monitor`](../../../snyk-cli/commands/monitor.md), [`Code`](../../../snyk-cli/commands/code.md), [Container](../../../snyk-cli/commands/container.md), [IaC test](../../../snyk-cli/commands/iac-test.md), [IaC describe](../../../snyk-cli/commands/iac-describe.md). See also [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI).
+  &#x20;`--org=<ORG_ID>` command. For more information, see [Options for the code test subcommand](https://docs.snyk.io/snyk-cli/commands/code).
 
 You can change the Preferred Organization in your Snyk Account via your Account Settings on the Web UI.
 
