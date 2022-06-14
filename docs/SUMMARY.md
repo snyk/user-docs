@@ -63,7 +63,7 @@
     * [Automatic fixing with snyk fix](snyk-cli/test-for-vulnerabilities/automatic-remediation-with-snyk-fix.md)
     * [@snyk/protect package](snyk-cli/test-for-vulnerabilities/protect-your-code-with-patches.md)
     * [Monitor your projects at regular intervals](snyk-cli/test-for-vulnerabilities/monitor-your-projects-at-regular-intervals.md)
-    * [Separating projects by branch or version](snyk-cli/test-for-vulnerabilities/grouping-projects-by-branch-or-version.md)
+    * [Group projects for monitoring](snyk-cli/test-for-vulnerabilities/grouping-projects-by-branch-or-version.md)
 * [Snyk API](features/snyk-api-info/README.md)
   * [Authentication for API](features/snyk-api-info/authentication-for-api.md)
   * [Revoking and regenerating Snyk API tokens](features/snyk-api-info/revoking-and-regenerating-snyk-api-tokens.md)
