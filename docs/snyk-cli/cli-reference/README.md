@@ -113,7 +113,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--detection-depth=<DEPTH>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac/iac-test)
 
-`--exclude=<GLOB>[,<GLOB>]...>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
+`--exclude=<NAME>[,<NAME>]...>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 `--prune-repeated-subdependencies, -p`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
