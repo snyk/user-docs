@@ -61,7 +61,7 @@
     * [View CLI test results](snyk-cli/test-for-vulnerabilities/view-cli-test-results.md)
     * [Ignore vulnerabilities using Snyk CLI](snyk-cli/test-for-vulnerabilities/ignore-vulnerabilities-using-snyk-cli.md)
     * [Automatic fixing with snyk fix](snyk-cli/test-for-vulnerabilities/automatic-remediation-with-snyk-fix.md)
-    * [Protect your code with patches](snyk-cli/test-for-vulnerabilities/protect-your-code-with-patches.md)
+    * [@snyk/protect package](snyk-cli/test-for-vulnerabilities/protect-your-code-with-patches.md)
     * [Monitor your projects at regular intervals](snyk-cli/test-for-vulnerabilities/monitor-your-projects-at-regular-intervals.md)
     * [Separating projects by branch or version](snyk-cli/test-for-vulnerabilities/grouping-projects-by-branch-or-version.md)
 * [Snyk API](features/snyk-api-info/README.md)
