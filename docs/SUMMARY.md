@@ -38,7 +38,7 @@
     * [Test public npm packages before use](snyk-cli/test-for-vulnerabilities/test-public-npm-packages-before-use.md)
     * [Setup.py file failing to scan or finding 0 dependencies](snyk-cli/test-for-vulnerabilities/why-is-my-setup.py-file-failing-to-scan-or-finding-0-dependencies.md)
     * [Scan all unmanaged JAR files](snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files.md)
-    * [Advanced failing of builds in Snyk CLI](snyk-cli/test-for-vulnerabilities/advanced-failing-of-builds-in-snyk-cli.md)
+    * [Failing of builds in Snyk CLI](snyk-cli/test-for-vulnerabilities/advanced-failing-of-builds-in-snyk-cli.md)
     * [CLI test results](snyk-cli/test-for-vulnerabilities/view-cli-test-results.md)
     * [Ignore vulnerabilities using Snyk CLI](snyk-cli/test-for-vulnerabilities/ignore-vulnerabilities-using-snyk-cli.md)
     * [Automatic fixing with snyk fix](snyk-cli/test-for-vulnerabilities/automatic-remediation-with-snyk-fix.md)
