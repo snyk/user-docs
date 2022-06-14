@@ -52,7 +52,7 @@
     * [Log4shell command use](snyk-cli/test-for-vulnerabilities/how-to-use-the-log4shell-command.md)
     * [Severity thresholds for CLI tests](snyk-cli/test-for-vulnerabilities/set-severity-thresholds-for-cli-tests.md)
     * [Use Snyk Open Source from the CLI](snyk-cli/test-for-vulnerabilities/use-snyk-open-source-from-the-cli.md)
-    * [Use a .snyk policy file in a different directory from the manifest file](snyk-cli/test-for-vulnerabilities/using-a-.snyk-file-in-a-separate-directory-than-the-manifest-file.md)
+    * [A .snyk policy file in a different directory from the manifest file](snyk-cli/test-for-vulnerabilities/using-a-.snyk-file-in-a-separate-directory-than-the-manifest-file.md)
     * [Test public repositories before use](snyk-cli/test-for-vulnerabilities/test-public-repositories-before-use.md)
     * [Test public npm packages before use](snyk-cli/test-for-vulnerabilities/test-public-npm-packages-before-use.md)
     * [Why is my setup.py file failing to scan or finding 0 dependencies?](snyk-cli/test-for-vulnerabilities/why-is-my-setup.py-file-failing-to-scan-or-finding-0-dependencies.md)
