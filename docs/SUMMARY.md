@@ -55,7 +55,7 @@
     * [A .snyk policy file in a different directory from the manifest file](snyk-cli/test-for-vulnerabilities/using-a-.snyk-file-in-a-separate-directory-than-the-manifest-file.md)
     * [Test public repositories before use](snyk-cli/test-for-vulnerabilities/test-public-repositories-before-use.md)
     * [Test public npm packages before use](snyk-cli/test-for-vulnerabilities/test-public-npm-packages-before-use.md)
-    * [Why is my setup.py file failing to scan or finding 0 dependencies?](snyk-cli/test-for-vulnerabilities/why-is-my-setup.py-file-failing-to-scan-or-finding-0-dependencies.md)
+    * [Setup.py file failing to scan or finding 0 dependencies](snyk-cli/test-for-vulnerabilities/why-is-my-setup.py-file-failing-to-scan-or-finding-0-dependencies.md)
     * [Scan all unmanaged JAR files](snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files.md)
     * [Advanced failing of builds in Snyk CLI](snyk-cli/test-for-vulnerabilities/advanced-failing-of-builds-in-snyk-cli.md)
     * [View CLI test results](snyk-cli/test-for-vulnerabilities/view-cli-test-results.md)
