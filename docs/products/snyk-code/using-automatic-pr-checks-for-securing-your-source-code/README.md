@@ -26,10 +26,10 @@ The Automatic PR Checks feature is applied only to repositories that were import
 
 The workflow of using the Automatic PR Checks feature is as follows:
 
-1. [Integrating your required SCM with Snyk.](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-2-integrating-your-source-control-system-with)
-2. [Importing from the integrated SCM to Snyk the repositories whose PRs you want Snyk Code to check.](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing)
-3. [Enabling the Automatic PR Checks feature for Snyk Code in your Snyk-SCM integration on the level of an organization or a specific Project.](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/Xtgu2HdNoafUskHqoeDW/)
-4. [Viewing the results of the PR check in your SCM after the creation of a new PR.](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/BCiGPtP02m0eTCchcBnw/products/snyk-code/using-automatic-pr-checks-for-securing-your-source-code/viewing-the-pr-checks-in-your-scm)
-5. [Viewing additional details and fix examples for the issues that were discovered in the PR on the Snyk Web UI.](viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md) &#x20;
+1. [Integrating your required SCM with Snyk.](../getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-2-integrating-your-source-control-system-with-snyk-code.md)
+2. [Importing from the integrated SCM to Snyk the repositories whose PRs you want Snyk Code to check.](../getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/)
+3. [Enabling the Automatic PR Checks feature for Snyk Code in your Snyk-SCM integration on the level of an organization or a specific Project.](enabling-the-automatic-pr-checks.md)
+4. [Viewing the results of the PR check in your SCM after the creation of a new PR.](viewing-the-pr-checks-in-your-scm.md)
+5. [Viewing additional details and fix examples for the issues that were discovered in the PR on the Snyk Web UI.  ](viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md)
 
 &#x20;
