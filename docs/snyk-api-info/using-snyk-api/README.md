@@ -2,4 +2,6 @@
 
 This group of pages provides detailed information about aspects of using the Snyk API. The following articles are included, listed here in alphabetical order by a keyword.
 
+* [API token permissions users can control](api-token-permissions-users-can-control.md)
+* [Postman and Snyk API](postman-and-snyk-api.md)
 * [Relationships in Snyk REST API](relationships-in-snyk-rest-api.md)
