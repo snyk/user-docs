@@ -12,7 +12,7 @@ orgs := ["<org-id>"]
 default workload_events = false
 ```
 
-If you flip the value to true, it will automatically import or delete **everything** in the cluster.
+It is important that the default workload\_events is **false**. If you flip the value to true, it will automatically import or delete **everything** in the cluster including any workload\_events defined in your policy.
 
 {% hint style="warning" %}
 Setting the workload\_events key to true is **not recommended** as some workload types like Jobs and Pods can be noisy and generate lots of workload imports in your Snyk organization
