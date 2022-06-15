@@ -2,7 +2,7 @@
 
 Configuring GitHub Enterprise with broker is useful to ensure a secure connection with your on-premise or cloud GitHub Enterprise deployment.
 
-### To configure Broker to be used for GitHub Enterprise
+### Configure Broker to be used for GitHub Enterprise
 
 {% hint style="info" %}
 Please ask for your CSM support to provide you with a Broker token
@@ -20,7 +20,7 @@ You will require Docker or a way to run Docker containers
   * `GITHUB_API` - the API endpoint of your GitHub Enterprise deployment. Should be `your.ghe.domain.com/api/v3`.
   * `GITHUB_GRAPHQL` - the graphql endpoint of your GitHub Enterprise deployment. Should be `your.ghe.domain.com/api`.
   * `PORT` - the local port at which the Broker client accepts connections. Default is 8000.
-  * `BROKER_CLIENT_URL` - the full URL of the Broker client as it will be accessible by your GitHub Enterprise deployment webhooks, such as `http://my.broker.client:8000`
+  * `BROKER_CLIENT_URL` - the full URL of the Broker client as it will be accessible to your GitHub Enterprise deployment webhooks, such as `http://broker.url.example:8000`
 * Example:
 
 ```
@@ -32,7 +32,7 @@ docker run --restart=always \
            -e GITHUB_API=<your.ghe.domain.com/api/v3 (no http/s)> \
            -e GITHUB_GRAPHQL=<your.ghe.domain.com/api (no http/s)> \
            -e PORT=8000 \
-           -e BROKER_CLIENT_URL=<http://my.broker.client:8000 (dns/IP:port)> \
+           -e BROKER_CLIENT_URL=<http://broker.url.example:8000 (dns/IP:port)> \
            -e ACCEPT=/private/accept.json
            -v /local/path/to/private:/private \
        snyk/broker:github-enterprise

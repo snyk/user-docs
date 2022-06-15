@@ -18,7 +18,7 @@ You will require Docker or a way to run Docker containers
   * `GITLAB_TOKEN` - a GitLab personal access token with `api` scope
   * `GITLAB` - the hostname of your GitLab deployment, such as `your.gitlab.domain.com` or `GitLab.com`.
   * `PORT` - the local port at which the Broker client accepts connections. Default is 8000.
-  * `BROKER_CLIENT_URL` - the full URL of the Broker client as it will be accessible by GitLab.com webhooks, such as `http://my.broker.client:8000`
+  * `BROKER_CLIENT_URL` - the full URL of the Broker client as it will be accessible to GitLab.com webhooks, such as `http://broker.url.example:8000`
 * Example:
 
 ```
@@ -28,7 +28,7 @@ docker run --restart=always \
            -e GITLAB_TOKEN=<secret-gitlab-token> \
            -e GITLAB=<your.gitlab.domain.com (no http/s)> \
            -e PORT=8000 \
-           -e BROKER_CLIENT_URL=<http://my.broker.client:8000 (dns/IP:port)> \
+           -e BROKER_CLIENT_URL=<http://broker.url.example:8000 (dns/IP:port)> \
            -e ACCEPT=/private/accept.json
            -v /local/path/to/private:/private \
        snyk/broker:gitlab
@@ -36,7 +36,7 @@ docker run --restart=always \
 
 * If necessary, go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../../integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and make any configuration changes if required (For example, if the GitLab instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration). A fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for GitLab is attached.
 
-{% file src="../../../.gitbook/assets/accept.json" %}
+{% file src="../../../.gitbook/assets/accept (3).json" %}
 
 * Paste the Broker Client configuration to start the broker client container
 * Once the container is up, the GitLab Integrations page should show the connection to GitLab and you should be able to `Add Projects`

@@ -62,7 +62,7 @@ http.get("<URL_HERE>", res => {console.log(`statusCode: ${res.statusCode}`)})
 
 #test a url with https
 https = require("https")
-https.get("<URL_HERE>", res => {console.log(`statusCode: ${res.statusCode}`)})
+https.get('<URL_HERE>', res => {console.log(`statusCode: ${res.statusCode}`)})
 ```
 
 ### Broker with Code Agent

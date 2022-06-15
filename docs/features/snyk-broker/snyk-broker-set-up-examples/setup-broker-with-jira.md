@@ -27,7 +27,7 @@ Configuring Jira with broker is useful to ensure a secure connection with your o
 7. Paste the Broker Client configuration to start the broker client container
 8. Once the container is up, the Jira Integrations page should show the connection to Jira and under Projects, you should be able to create Jira tickets
 
-Basic Troubleshooting
+**Basic Troubleshooting**
 
 * Run `docker logs <container id>` where container id is the Jira Broker container ID to look for any errors
 * Ensure relevant ports are exposed to Jira

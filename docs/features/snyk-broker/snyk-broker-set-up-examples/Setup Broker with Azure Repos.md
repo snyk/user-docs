@@ -19,7 +19,7 @@ You will require Docker or a way to run Docker containers
   * `AZURE_REPOS_ORG` - organization name, which can be found in your Organization Overview page in Azure
   * `AZURE_REPOS_HOST` - the hostname of your Azure Repos Server deployment, such as `your.azure-server.domain.com`.
   * `PORT` - the local port at which the Broker client accepts connections. Default is 8000.
-  * `BROKER_CLIENT_URL` - the full URL of the Broker client as it will be accessible by your Azure Repos' webhooks, such as `http://my.broker.client:8000`
+  * `BROKER_CLIENT_URL` - the full URL of the Broker client as it will be accessible to your Azure Repos' webhooks, such as `http://broker.url.example:8000`
 * Example:
 
 ```
@@ -30,7 +30,7 @@ docker run --restart=always \
            -e AZURE_REPOS_ORG=<org-name> \
            -e AZURE_REPOS_<HOST=your.azure-server.domain.com (no http/s)> \
            -e PORT=8000 \
-           -e BROKER_CLIENT_URL=<http://my.broker.client:8000 (dns/IP:port)> \
+           -e BROKER_CLIENT_URL=<http://broker.url.example:8000 (dns/IP:port)> \
            -e ACCEPT=/private/accept.json
            -v /local/path/to/private:/private \
        snyk/broker:azure-repos

@@ -19,7 +19,7 @@ You will require Docker or a way to run Docker containers
   * `BITBUCKET_PASSWORD` - the Bitbucket Server password.
   * `BITBUCKET` - the hostname of your Bitbucket Server deployment, such as `your.bitbucket-server.domain.com`.
   * `BITBUCKET_API` - the API endpoint of your Bitbucket Server deployment. Should be `$BITBUCKET/rest/api/1.0`.
-  * `BROKER_CLIENT_URL` - the full URL of the Broker client as it will be accessible by your Bitbucket Server for webhooks, such as `http://my.broker.client:8000`
+  * `BROKER_CLIENT_URL` - the full URL of the Broker client as it will be accessible to your Bitbucket Server for webhooks, such as `http://broker.url.example:8000`
   * `PORT` - the local port at which the Broker client accepts connections. Default is 800.
 * Example:
 
@@ -32,7 +32,7 @@ docker run --restart=always \
            -e BITBUCKET=<your.bitbucket-server.domain.com (no http/s)> \
            -e BITBUCKET_API=<your.bitbucket-server.domain.com/rest/api/1.0 (no http/s)> \
            -e PORT=8000 \
-           -e BROKER_CLIENT_URL=<http://my.broker.client:8000 (dns/IP:port)> \
+           -e BROKER_CLIENT_URL=<http://broker.url.example:8000 (dns/IP:port)> \
            -e ACCEPT=/private/accept.json
            -v /local/path/to/private:/private \
        snyk/broker:bitbucket-server
