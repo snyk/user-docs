@@ -207,7 +207,6 @@
     * [Python](products/snyk-code/security-rules-used-by-snyk-code/python.md)
     * [Ruby](products/snyk-code/security-rules-used-by-snyk-code/ruby.md)
     * [C# & ASP.NET - Beta](products/snyk-code/security-rules-used-by-snyk-code/c-and-asp.net-beta.md)
-  * [Configuring Snyk Code](products/snyk-code/configuring-snyk-code.md)
   * [Using Snyk Code via web](products/snyk-code/using-snyk-code-web.md)
   * [Using Automatic PR Checks for securing your source code](products/snyk-code/using-automatic-pr-checks-for-securing-your-source-code/README.md)
     * [Prerequisites for the Automatic PR Checks feature](products/snyk-code/using-automatic-pr-checks-for-securing-your-source-code/prerequisites-for-the-automatic-pr-checks-feature.md)
