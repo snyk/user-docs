@@ -14,7 +14,7 @@ The `snyk iac describe` command detects infrastructure drift and unmanaged resou
 * Changes to managed resources not reflected in the Terraform state file are **drifts**.
 * Resources that exist but are not in your Terraform state file are **unmanaged resources**.
 
-For detailed information and examples, see IaC describe command examples ADD LINK AFTER MERGE
+For detailed information and examples, see [IaC describe command examples](https://docs.snyk.io/products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/iac-describe-command-examples)
 
 For a list of related commands see the snyk [iac help](iac.md); `iac --help`
 
@@ -176,7 +176,7 @@ Output the report as html into a file.
 
 ## Examples for snyk iac describe command
 
-For more examples, see IaC describe command examples ADD LINK AFTER MERGE
+For more examples, see [IaC describe command examples](https://docs.snyk.io/products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/iac-describe-command-examples)
 
 ### Detect drift and unmanaged resources on AWS with a single local Terraform state
 
