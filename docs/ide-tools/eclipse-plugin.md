@@ -13,7 +13,7 @@ Snyk scans for issue types around:
 * [**Infrastructure as Code (IaC) Security**](https://snyk.io/product/infrastructure-as-code-security/) - configuration issues in your IaC templates (Terraform, Kubernetes, CloudFormation, and Azure Resource Manager)
 * [**Code Quality**](https://snyk.io/product/snyk-code/) - code quality issues in your own code
 
-After you have installed and configured the Eclipse plugin, every time you run it, open a file, or  autosave, Snyk scans the manifest files, proprietary code, and configuration files in your project. Snyk delivers actionable vulnerability, license, code quality, or misconfiguration issue details and displays the results natively within the Eclipse UI.
+After you have installed and configured the Eclipse plugin, every time you run it, open a file, or autosave, Snyk scans the manifest files, proprietary code, and configuration files in your project. Snyk delivers actionable vulnerability, license, code quality, or misconfiguration issue details and displays the results natively within the Eclipse UI.
 
 {% hint style="info" %}
 The Snyk Eclipse plugin is available for installation on the [Eclipse Marketplace](https://marketplace.eclipse.org/content/snyk-security-scanner).
@@ -33,7 +33,7 @@ Navigate to the Marketplace from within your running Eclipse instance. Search fo
 
 When prompted accept the license agreement add the **Snyk Security** certificate to complete the installation (this happens only once).
 
-![Add Snyk Security certificate](<../.gitbook/assets/Screenshot 2022-05-13 at 09.08.52.png>)
+![Add Snyk Security certificate](<../.gitbook/assets/Screenshot 2022-05-13 at 09.08.52 (1).png>)
 
 Restart the Eclipse instance:
 
@@ -71,7 +71,7 @@ Once the CLI is downloaded you will be redirected to the browser to authenticate
 
 * You should see a successful message saying you've been authenticated.
 
-![Confirmation of authentication](<../.gitbook/assets/Screenshot 2022-05-13 at 11.30.30 (1).png>)
+![Confirmation of authentication](<../.gitbook/assets/Screenshot 2022-05-13 at 11.30.30.png>)
 
 * Going back to the IDE, you should see a confirmation that the IDE has been successfully connected and the API token has been securely stored.
 
@@ -87,7 +87,7 @@ To verify that the Eclipse plugin is ready to start scanning, be sure the Snyk p
 
 ### Configure the API token manually
 
-You can provide the API token by copying it from your [account settings](https://app.snyk.io/account) and paste it into the Eclipse preferences Snyk API Token field. Click **Apply and Close** once the token has been set**.**
+You can provide the API token by copying it from your [account settings](https://app.snyk.io/account) and paste it into the Eclipse preferences Snyk API Token field. Click **Apply and Close** once the token has been set\*\*.\*\*
 
 ![Providing the API token manually](<../.gitbook/assets/Screenshot 2022-05-17 at 16.36.07.png>)
 
@@ -141,7 +141,7 @@ All of the issues found by Snyk are now natively integrated with Eclipse's flows
 
 ## SAST scanning results (SAST, Snyk Code)
 
-Starting version 2.0.0 and above, Snyk is introducing a deeper integration within Eclipse with the native flows of Eclipse (inline highlights, problems integrations, information about the issue on hover). The following shows all of these for a high severity security vulnerability found in a `js` file:&#x20;
+Starting version 2.0.0 and above, Snyk is introducing a deeper integration within Eclipse with the native flows of Eclipse (inline highlights, problems integrations, information about the issue on hover). The following shows all of these for a high severity security vulnerability found in a `js` file:
 
 1. The security vulnerability is highlighted (the red squiggly line) indicating there is a high severity security vulnerability in your code. You will see the vulnerability ID, what the issue is, on hover. Snyk is updating the panel to include more information about the found Code issues, so you have even more details like data flow and example fixes.
 2. You see the integration with the problems tab, which comes in handy if you use the problems tab to show only issues in the current file. Snyk also shows the line where the issue is.
@@ -155,7 +155,7 @@ Currently the hover information is limited to JavaEditor and GenericEditor, whic
 
 ## Misconfiguration scanning results (Snyk Infrastructure as Code)
 
-Starting version 2.0.0 and later, Snyk is introducing a deeper integration within Eclipse with the native flows of Eclipse (inline highlights, problems integrations, information about the issue on hover). The following shows all of these for a high severity misconfiguration found in a Terraform file:&#x20;
+Starting version 2.0.0 and later, Snyk is introducing a deeper integration within Eclipse with the native flows of Eclipse (inline highlights, problems integrations, information about the issue on hover). The following shows all of these for a high severity misconfiguration found in a Terraform file:
 
 1. The misconfiguration is highlighted (the red squiggly line) indicating there is a high severity security vulnerability in this file and the line number. You have all the information on hover; you can scroll, read, or click the links (when available) for even more information. Advice on how to resolve the misconfiguration is right there where the misconfiguration is.
 2. You see the integration with the problems tab, which comes in handy if you use the problems tab to show only issues in the current file. Snyk also indicates the line where the issue is.
@@ -169,7 +169,7 @@ Currently the hover information is limited to JavaEditor and GenericEditor, whic
 
 ## Third party dependency scanning (SCA, Snyk Open Source)
 
-Starting version 2.0.0 and later, Snyk is introducing a deeper integration within Eclipse with the native flows of Eclipse (inline highlights, problems integrations, information about the issue on hover). The following shows all of these for a security vulnerability found in a third party dependency:&#x20;
+Starting version 2.0.0 and later, Snyk is introducing a deeper integration within Eclipse with the native flows of Eclipse (inline highlights, problems integrations, information about the issue on hover). The following shows all of these for a security vulnerability found in a third party dependency:
 
 1. The vulnerable package is highlighted (the red squiggly line) indicating there is a high severity security vulnerability in this package. You have all the information on hover; you can scroll, read, or click the links for even more information. Advice on what action to take and how is right there where the vulnerability is.
 2. You see the integration with the problems tab, which comes in handy if you use the problems tab to show only issues in the current file. Snyk also indicates the line where the issue is.
@@ -256,7 +256,7 @@ On the preceding screen the full path would appear as:
 
 If you close the Snyk Results panel by accident, or for some reason you don't see it, here is how to enable it:
 
-Navigate to **Windows ->  Show View -> Other...**
+Navigate to **Windows -> Show View -> Other...**
 
 ![Show View, Other](<../.gitbook/assets/Screenshot 2022-05-13 at 12.04.07.png>)
 

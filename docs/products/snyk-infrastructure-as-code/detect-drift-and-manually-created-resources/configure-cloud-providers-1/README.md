@@ -4,5 +4,5 @@ Snyk IaC drift scanning supports the following resources for a given cloud provi
 
 * [AWS](configure-aws-provider.md)
 * [Azure](configure-azure-provider.md)
-* [GitHub](configure-github-provider.md)
-* [Google](configure-google-provider.md)
+* [GitHub](../iac-describe-command-examples/configure-github-provider.md)
+* [Google](../iac-describe-command-examples/configure-google-provider.md)

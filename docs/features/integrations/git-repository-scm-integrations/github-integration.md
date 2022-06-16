@@ -5,7 +5,7 @@ Snyk's GitHub integration allows you to continuously perform security scanning a
 Please note, **GitHub integrates per user and not per org**. Setting up this integration means it will be used for all organizations associated with your account.
 
 {% hint style="warning" %}
-You cannot import projects using the Snyk API with a Snyk Service Account using the GitHub integration because the integration is tied to the user, and not to the snyk org.  To import using the API with a Snyk service account, use the [GitHub Enterprise integration](github-enterprise-integration.md).
+You cannot import projects using the Snyk API with a Snyk Service Account using the GitHub integration because the integration is tied to the user, and not to the snyk org. To import using the API with a Snyk service account, use the [GitHub Enterprise integration](github-enterprise-integration.md).
 {% endhint %}
 
 ## Setting up a GitHub Integration
@@ -16,7 +16,7 @@ You cannot import projects using the Snyk API with a Snyk Service Account using 
 4. Select the repos you'd like to import to Snyk. When done, click on the **Add selected repositories** button, at the top of the page. Once clicked, Snyk will start scanning the selected repos for dependency files (meaning package.json, pom.xml, etc.) in the entire directory tree and import them to Snyk as projects:
 5. The imported projects now appear in your Projects page and are continuously checked for vulnerabilities.
 
-![](<../../../.gitbook/assets/which\_repos (3) (5) (9) (7) (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (27) (1) (1) (1) (1) (1) (1) (1) (27).jpg>)
+![](<../../../.gitbook/assets/which\_repos (3) (5) (9) (7) (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (27) (1) (1) (1) (1) (1) (1) (1) (27) (1).jpg>)
 
 ## GitHub Integration Features
 
@@ -54,11 +54,11 @@ Snyk will test any newly created pull request in your repositories for security 
 
 This is how Snyk pull request checks appear on the Pull Request page on GitHub:
 
-![](<../../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en (2) (2) (6) (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (23).png>)
+![](<../../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en (2) (2) (6) (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (23) (1).png>)
 
 You can review and adjust the pull request tests settings by navigating to the GitHub Integration **Settings** page in Snyk (Settings --> Integration --> GitHub):
 
-![](<../../../.gitbook/assets/mceclip5 (1).png>)
+![](<../../../.gitbook/assets/mceclip5 (1) (1).png>)
 
 ## Required permissions scope for the GitHub integration
 

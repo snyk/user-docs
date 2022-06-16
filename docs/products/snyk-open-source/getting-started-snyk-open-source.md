@@ -47,10 +47,10 @@ This also:
 * Sets Snyk to run a regular check ([daily by default](../../features/user-and-group-management/managing-settings/usage-page-details.md#projects)) for vulnerabilities.
 * Creates a [Webhook](../../features/integrations/snyk-webhooks/), so when you change code, Snyk tests your pull / merge requests, to check that new dependencies do not introduce more vulnerabilities.
 
-In **Settings**, optionally choose to: ****&#x20;
+In **Settings**, optionally choose to: \*\*\*\*
 
-* Use **Add custom file location** to add any additional dependencies from custom paths.&#x20;
-* Use **Exclude folders** to list up to 10 folders to exclude from scanning during the import; for example, to shorten scanning time.&#x20;
+* Use **Add custom file location** to add any additional dependencies from custom paths.
+* Use **Exclude folders** to list up to 10 folders to exclude from scanning during the import; for example, to shorten scanning time.
 
 #### Import progress
 
@@ -98,6 +98,6 @@ To fix vulnerabilities:
 5. Snyk now actions this PR, then a results screen appears.
 6. Optionally, select the **Files changed** tab to see details of the changes made.
 
-![](../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22.png)
+![](<../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22 (1).png>)
 
 See [remediate-your-vulnerabilities.md](../../features/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities.md "mention") for more details.

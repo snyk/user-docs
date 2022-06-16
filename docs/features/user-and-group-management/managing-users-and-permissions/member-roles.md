@@ -1,7 +1,5 @@
 # Member Roles
 
-
-
 {% hint style="info" %}
 **Feature availability**\
 This feature is currently in Beta.\
@@ -15,7 +13,7 @@ Access Management is an integral part of the security strategy of an enterprise.
 This is a self-serve capability for Group admins to grant members the permissions they need to do their jobs across the Snyk platform - and only those permissions - by creating customized roles and assigning specific permissions to them. This ensures the right people have the right access to the right resources at the right time, while maximizing transparency and reducing organizational risk.
 
 {% hint style="info" %}
-This version allows you to create custom roles for organizations in your group, and assign those roles to organization members and service accounts. \
+This version allows you to create custom roles for organizations in your group, and assign those roles to organization members and service accounts.\
 Future versions will add group-level access (for example, policies, group member management, group reporting, and so on).
 {% endhint %}
 
@@ -31,7 +29,7 @@ Click the **Create new Role** button and enter a role name and description. Role
 
 ![](<../../../.gitbook/assets/Screenshot 2022-05-24 at 09.04.38.png>)
 
-Click the **Create role** button. You will see basic details about the role in the top section.&#x20;
+Click the **Create role** button. You will see basic details about the role in the top section.
 
 ![Role details](<../../../.gitbook/assets/Screenshot 2022-05-17 at 05.55.29.png>)
 
@@ -45,7 +43,7 @@ Choose the required permissions and click **Update Role Permissions**.
 
 When creating the role is complete, you will see the confirmation message at the top.
 
-![Role updated message](<../../../.gitbook/assets/Screenshot 2022-05-17 at 06.02.40 (1).png>)
+![Role updated message](<../../../.gitbook/assets/Screenshot 2022-05-17 at 06.02.40.png>)
 
 ### Edit a Role
 
@@ -57,13 +55,13 @@ When creating the role is complete, you will see the confirmation message at the
 
 When updating the role is complete, you will see the confirmation message at the top.
 
-![Role details updated message](<../../../.gitbook/assets/Screenshot 2022-05-17 at 06.02.40.png>)
+![Role details updated message](<../../../.gitbook/assets/Screenshot 2022-05-17 at 06.02.40 (1).png>)
 
 ### Duplicate a Role
 
 Group Admins can create a copy of an existing role by using Duplicate role functionality. The system copies only the permissions associated with the role that you are duplicating and role memberships are not copied over.
 
-You can use the Duplicate button next to each role in the Member Roles list page. Or, select a role from the Member Roles list page. On the Role details page, click the **Duplicate Role** button.&#x20;
+You can use the Duplicate button next to each role in the Member Roles list page. Or, select a role from the Member Roles list page. On the Role details page, click the **Duplicate Role** button.
 
 ![Member Roles List page with Duplicate Role buttons](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.09.png>)
 
@@ -71,7 +69,7 @@ You can use the Duplicate button next to each role in the Member Roles list page
 
 Enter a unique name and description and click the **Duplicate Role** button. Group Admin can then edit this role to assign new permissions to it or rescind any permissions already assigned.
 
-![Prompt to enter unique name and description for the copied role](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.40.27 (2).png>)
+![Prompt to enter unique name and description for the copied role](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.40.27 (2) (1).png>)
 
 ### Delete a Role
 
@@ -103,7 +101,7 @@ You can invite new members to the org by assigning them a specified role.
 
 ![Invite new members](<../../../.gitbook/assets/Screenshot 2022-05-17 at 06.47.58.png>)
 
-Choose **Add members** button > **Add existing members** to promote **** current Group Members to an org-specific role.
+Choose **Add members** button > **Add existing members** to promote \*\*\*\* current Group Members to an org-specific role.
 
 ![](<../../../.gitbook/assets/Screenshot 2022-05-17 at 06.48.56.png>)
 
@@ -141,27 +139,27 @@ Create a new role similar to Org Collaborator but which blocks the ability to ig
 Permissions:
 
 * `Add Project`
-* `Create Jira issues`&#x20;
-* `Create Pull Requests`&#x20;
-* `Edit Project`&#x20;
-* `Edit Project Tags`&#x20;
-* `Project Status`&#x20;
-* `Remove Project`&#x20;
-* `Remove Targets`&#x20;
-* `Test Packages`&#x20;
-* `Test Project`&#x20;
-* `User Leave`&#x20;
-* `View Audit Logs`&#x20;
-* `View Entitlements`&#x20;
-* `View Integrations`&#x20;
-* `View Jira issues`&#x20;
-* `View Organization`&#x20;
-* `View Organization Reports`&#x20;
-* `View Preview Features`&#x20;
-* `View Project`&#x20;
-* `View Project Ignores`&#x20;
-* `View Targets`&#x20;
-* `View Users`&#x20;
+* `Create Jira issues`
+* `Create Pull Requests`
+* `Edit Project`
+* `Edit Project Tags`
+* `Project Status`
+* `Remove Project`
+* `Remove Targets`
+* `Test Packages`
+* `Test Project`
+* `User Leave`
+* `View Audit Logs`
+* `View Entitlements`
+* `View Integrations`
+* `View Jira issues`
+* `View Organization`
+* `View Organization Reports`
+* `View Preview Features`
+* `View Project`
+* `View Project Ignores`
+* `View Targets`
+* `View Users`
 
 #### Dashboard and Report Reviewer
 
@@ -169,7 +167,7 @@ Create a new role with permissions only to review dashboards and reporting for t
 
 Permissions:
 
-* `View Organization`&#x20;
+* `View Organization`
 * `View Organization Reports`
 * `View Project`
 
@@ -192,8 +190,7 @@ Permissions:
 
 ### Things to remember
 
-* Permissions granted to users via Roles  enable the same capabilities across all Snyk environments: Web UI, API, CLI, and IDE.
+* Permissions granted to users via Roles enable the same capabilities across all Snyk environments: Web UI, API, CLI, and IDE.
 * If the Role is expected to view organisation or project-related data or both along with other operations - `View Organization and View Project` permissions should be added to the role.
 * Permissions under User Management and Service Account Management can grant the ability to invite and create users with roles of a higher privilege than the user performing the action.
 * It is advisable to use the Duplicate Role functionality and create a copy of a standard role and then amend the permissions instead of building a role from scratch if you are unsure about the permissions.
-

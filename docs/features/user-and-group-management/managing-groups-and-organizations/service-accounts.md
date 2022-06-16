@@ -7,7 +7,7 @@ This feature is available with Enterprise plans. See [pricing plans](https://sny
 
 ### Introduction
 
-You can set up a **service account**, to be used for continuous integration (CI) and other automation purposes, without using an actual Snyk user’s token.&#x20;
+You can set up a **service account**, to be used for continuous integration (CI) and other automation purposes, without using an actual Snyk user’s token.
 
 Service accounts are a special type of system user that has only an API token associated with it, substituting for standard user credentials. Use this token to provide credentials for accessing your Snyk account when setting up integration with your development tools, and when working with our [CLI](../../../snyk-cli/) and [API](../../snyk-api-info/).
 
@@ -91,7 +91,7 @@ Administrators can change token names and delete tokens. When you delete a servi
 * Click on settings <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Service accounts**.
 * Scroll to find the list of existing service accounts:
 
-![](<../../../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en (3) (3) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10).png>)
+![](<../../../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en (3) (3) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (1).png>)
 
 * From the list of existing tokens:
   * Click **Delete** to delete a token and invalidate it immediately. When prompted, click **OK**. Remember that you cannot re-generate the same token!

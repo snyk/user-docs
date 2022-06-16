@@ -13,19 +13,19 @@ Getting started using Snyk is quick and easy; you just need a Snyk account, and 
 
 1. Go to [https://snyk.io/](https://snyk.io) and click **Sign Up** at the top right of the page.
 2. Select your preferred signup method.
-3. Create a new account as prompted. You now have a Snyk account!&#x20;
+3. Create a new account as prompted. You now have a Snyk account!
 
-![](<../.gitbook/assets/image (66) (2).png>)
+![](<../.gitbook/assets/image (83).png>)
 
 You can now choose to provide some information to help us guide your experience, then follow the prompts to integrate your code
 
 {% hint style="info" %}
-Access your Snyk Web UI dashboard at [https://app.snyk.io](https://app.snyk.io)&#x20;
+Access your Snyk Web UI dashboard at [https://app.snyk.io](https://app.snyk.io)
 {% endhint %}
 
 ### Step 2: Get started with your Snyk product and environment
 
-Next, choose to get started with one or more specific Snyk products and tools.&#x20;
+Next, choose to get started with one or more specific Snyk products and tools.
 
 #### Select your Snyk product
 

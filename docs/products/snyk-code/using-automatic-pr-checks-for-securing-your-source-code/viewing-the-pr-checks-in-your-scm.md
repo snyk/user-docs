@@ -13,13 +13,13 @@ The following statuses can appear on your Snyk Code checks in the integrated SCM
 
 **To view the PR checks in your SCM:**
 
-**Note**: The instructions below use GitHub as the integrated SCM, but they apply to all supported SCMs with some small differences depending on the SCM workflow and platform. For more information, see [Exploring the display of the PR Checks on different integrated SCMs](viewing-the-pr-checks-in-your-scm.md#\_ref105582759).&#x20;
+**Note**: The instructions below use GitHub as the integrated SCM, but they apply to all supported SCMs with some small differences depending on the SCM workflow and platform. For more information, see [Exploring the display of the PR Checks on different integrated SCMs](viewing-the-pr-checks-in-your-scm.md#\_ref105582759).
 
-1\.  In your SCM, after you finished creating a new PR, click the **Create** **pull request** button. Snyk Code automatically checks the PR you created, and displays the results of the check – either **Failed** or **Passed** – in your SCM: &#x20;
+1\. In your SCM, after you finished creating a new PR, click the **Create** **pull request** button. Snyk Code automatically checks the PR you created, and displays the results of the check – either **Failed** or **Passed** – in your SCM:
 
 ![](<../../../.gitbook/assets/Snyk Code - PR Checks - GitHub - Checks Failed.png>)
 
-2\.  To view the details of the issues that were found in the PR on the Snyk Web UI, click the **Details** link on the left:
+2\. To view the details of the issues that were found in the PR on the Snyk Web UI, click the **Details** link on the left:
 
 ![](<../../../.gitbook/assets/Snyk Code - PR Checks - GitHub - Checks Failed - Details link.png>)
 
@@ -29,15 +29,11 @@ The Snyk Web UI opens, displaying the details of the issues that were found in t
 
 You can now [view and work with the discovered PR Check issues on the Web UI](viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md).
 
-&#x20;
-
 ### Exploring the display of the PR Checks on different integrated SCMs <a href="#_ref105582759" id="_ref105582759"></a>
 
 The Automatic PR Checks feature works in a similar way on all supported SCMs. However, due to the differences between the various SCMs, the results of the PR Checks will be displayed differently on each SCM.
 
 **Note**: The screenshots in this section show the aggregated results of the PR Checks for both Snyk Code and Snyk Open Source.
-
-
 
 #### **GitHub and GitHub Enterprise**
 
@@ -54,7 +50,7 @@ The results of the PR Checks appear on GitHub and GitHub Enterprise integrations
 
 * On the results area, click the **Details** link on the **code/snyk** **(organization name)** row.
 
-&#x20;****&#x20;
+\*\*\*\*
 
 #### **GitLab**
 
@@ -64,15 +60,13 @@ The results of the PR Checks appear on GitLab first as an indication of the Pipe
 
 When you click the pipeline link, the PR Checks results are displayed:
 
-![ ](<../../../.gitbook/assets/Snyk Code - PR Checks - GitLab.png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - GitLab (1).png>)
 
 **To open the Snyk Web UI to view additional details on the PR Check results:**
 
 * On the results area, click the **code/snyk** **(organization name)** link:
 
 ![](<../../../.gitbook/assets/Snyk Code - PR Checks - GitLab - Link to Results.png>)
-
-&#x20;
 
 #### **Bitbucket Cloud**
 
@@ -86,8 +80,6 @@ The results of the PR Checks appear on Bitbucket Cloud as follows:
 
 ![](<../../../.gitbook/assets/Snyk Code - PR Checks - Bitbucket Cloud - Results link.png>)
 
-
-
 #### **Azure Repos**
 
 The results of the PR Checks appear on Azure Repos as follows:
@@ -96,7 +88,7 @@ The results of the PR Checks appear on Azure Repos as follows:
 
 **To view additional details on all the PR checks in Azure Repos platform:**
 
-1\.  Click the **View 2 checks** link:
+1\. Click the **View 2 checks** link:
 
 ![](<../../../.gitbook/assets/Snyk Code - PR Checks - Azure Repos - View Checks link.png>)
 
@@ -104,6 +96,4 @@ The details of the results appear in a separate pane:
 
 ![](<../../../.gitbook/assets/Snyk Code - PR Checks - Azure Repos - View Checks link - Pane.png>)
 
-2\.  To open the Snyk Web UI to view additional details on the PR Check results, click the **SAST issue** link on the **Checks** pane.
-
-&#x20;
+2\. To open the Snyk Web UI to view additional details on the PR Check results, click the **SAST issue** link on the **Checks** pane.

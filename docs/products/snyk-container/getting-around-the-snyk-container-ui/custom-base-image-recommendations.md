@@ -1,7 +1,7 @@
 # Custom Base Image Recommendations
 
 {% hint style="info" %}
-This feature is currently in Beta. Please contact your CSM if you are interested in participating.&#x20;
+This feature is currently in Beta. Please contact your CSM if you are interested in participating.
 {% endhint %}
 
 ## **Overview**
@@ -21,11 +21,11 @@ Using the custom base image recommendation feature, Snyk can recommend an image 
 
 As an example, when scanning the following images and marking them (in the following order) as custom base images:
 
-1. `developer-java/oracle-jre-rhel7/8e32:1.8.0`&#x20;
-2. `developer-java/oracle-jre-rhel7/8e32:1.9.2`&#x20;
+1. `developer-java/oracle-jre-rhel7/8e32:1.8.0`
+2. `developer-java/oracle-jre-rhel7/8e32:1.9.2`
 3. `developer-java/oracle-jre-rhel7/8e32:1.7.0`
 
-Snyk will recommend the second image, as it is the newest image **based on the semantic versioning of the tag**.&#x20;
+Snyk will recommend the second image, as it is the newest image **based on the semantic versioning of the tag**.
 
 If Snyk cannot find a [standard semantic versioning schema](https://semver.org/) in the tag, the recommendation is the last image that was marked as a custom base image (in this example, the third image), as determined in the following logic.
 
@@ -33,8 +33,8 @@ If Snyk cannot find a [standard semantic versioning schema](https://semver.org/)
 
 As an example, when scanning the following images and marking them (in the following order) as custom base images through the Snyk interface, under project settings:
 
-1. `developer-java/oracle-jre-rhel7/8e32:1.8.0_2021021008`&#x20;
-2. `developer-java/oracle-jre-rhel7/8e32:1.8.0_2021022508`&#x20;
+1. `developer-java/oracle-jre-rhel7/8e32:1.8.0_2021021008`
+2. `developer-java/oracle-jre-rhel7/8e32:1.8.0_2021022508`
 3. `developer-java/oracle-jre-rhel7/8e32:1.8.0_2021031708`
 
 Snyk recommends the third image, as it was last marked as a custom base image.
@@ -46,7 +46,7 @@ Snyk recommends the third image, as it was last marked as a custom base image.
   * Later, projects in the same **group** as the organization (platform team in this example) will be able to receive custom base image recommendations.
 * The current logic is: for the same image family (same repo and name), Snyk will recommend the newest image based on the **semantic versioning of the image tag**. If Snyk is unable to find a [standard semantic versioning schema](https://semver.org/) in the tag, the recommendation will be the last image that was marked as a custom base image (timestamp of marking. See the User flows→ Platform team section that follows.
 * A Dockerfile must be specified (see the instructions that follow) in the project in order to receive custom base image recommendations
-* All custom base image recommendations are considered as minor upgrades, regardless of the image tag.&#x20;
+* All custom base image recommendations are considered as minor upgrades, regardless of the image tag.
 * Automatic fix PRs are supported for custom base image recommendations.
 
 ## **User flows**
@@ -65,8 +65,7 @@ _Responsible for creating and maintaining custom base images for the organizatio
       2. The following is an example command: `snyk container monitor snykgoof/custom-base-python:3.9.2_2021110408 --file=path/to/Dockerfile.3.9.2 --project-name=custom-base-python:3.9.2_2021110408 --org=ORGANIZATION_ID/ORGANIZATION_NAME`
 4. Mark the project as a custom base image.
    1. Go to the project’s **Settings** page\
-      ![](<../../../.gitbook/assets/image (94).png>)\
-
+      ![](<../../../.gitbook/assets/image (116).png>)\\
    2. Under **Custom Base Image Recommendation**, select **Treat as custom base image**.
    3. Click **Update image status**.
 5. Mark whether the image should be eligible for recommendations.

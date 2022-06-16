@@ -43,7 +43,7 @@ Below is an example of how you would set up your integration for **Github.com**
 2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories:
 3. Click **Authorize snyk** to provide Snyk with access to your repositories:
 
-![](<../../../.gitbook/assets/authorize (1) (2) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (23).png>)
+![](<../../../.gitbook/assets/authorize (1) (2) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (23) (1).png>)
 
 **SCM permissions on repositories**
 
@@ -202,7 +202,7 @@ To set PR Settings on the project level, overriding the PR settings on the organ
 2. Click **Projects**.
 3.  Navigate to the relevant project and click the **Settings** cog:
 
-    <img src="../../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10).png" alt="" data-size="original">
+    <img src="../../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (1).png" alt="" data-size="original">
 4. From the Settings area, click on the integration settings from the left panel menu to apply unique settings for that one project.
 5. From settings that load, scroll to the **Automatic dependency upgrade pull requests** and click Disabled.
 6. From the options that appear:

@@ -18,7 +18,7 @@ Click on **Bitbucket Server** to see the project import screen. Snyk queries you
 
 For this tutorial, we'll import both repositories under the project: you can choose fewer or additional files if needed:
 
-![](<../../../../../.gitbook/assets/broker-5-add-repository-bbs (1).png>)
+![](../../../../../.gitbook/assets/broker-5-add-repository-bbs.png)
 
 Clicking **Add selected repositories** to import all those projects to Snyk.io, and initiate a scan operation.
 
@@ -26,7 +26,7 @@ This scan brings your privately hosted repository into Snyk, where the outputs f
 
 For example, the next page is from a repository in Bitbucket Data Center, but the results are equivalent to similar solutions, with the lone distinction that Bitbucket Server is identified as the source:
 
-![Project summary view for a repository hosted on Bitbucket Server](<../../../../../.gitbook/assets/image (83) (2) (1).png>)
+![Project summary view for a repository hosted on Bitbucket Server](<../../../../../.gitbook/assets/image (83) (1) (1).png>)
 
 {% hint style="info" %}
 For those users familiar with Snyk and its various demonstration environments, you should recognize the popular **goof** application in the example above.

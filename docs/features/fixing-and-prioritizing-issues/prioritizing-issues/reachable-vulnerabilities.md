@@ -77,7 +77,7 @@ When running `snyk test --reachable`_,_ the CLI output includes:
 1. The number of tested dependencies, the number of found vulnerabilities and how many of them are reachable.
 2. The reachability level appears next to the relevant vulnerability, and the path from the app’s code to the vulnerable function appears below.
 
-![](<../../../.gitbook/assets/screen\_shot\_2020-06-30\_at\_12.59.23 (2) (2) (2) (2) (2) (2) (2) (2) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (9).png>)
+![](<../../../.gitbook/assets/screen\_shot\_2020-06-30\_at\_12.59.23 (2) (2) (2) (2) (2) (2) (2) (2) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (9) (1).png>)
 
 ### Project page
 
