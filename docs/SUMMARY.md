@@ -68,6 +68,7 @@
     * [Relationships in Snyk REST API](snyk-api-info/using-snyk-api/relationships-in-snyk-rest-api.md)
     * [Postman and Snyk API](snyk-api-info/using-snyk-api/postman-and-snyk-api.md)
     * [API token permissions users can control](snyk-api-info/using-snyk-api/api-token-permissions-users-can-control.md)
+    * [Issues information for Snyk products in Snyk APIs](snyk-api-info/using-snyk-api/issues-information-for-snyk-products-in-snyk-apis.md)
   * [Authentication for API](features/snyk-api-info/authentication-for-api.md)
   * [Revoking and regenerating Snyk API tokens](features/snyk-api-info/revoking-and-regenerating-snyk-api-tokens.md)
 * [Snyk for IDEs](ide-tools/README.md)
