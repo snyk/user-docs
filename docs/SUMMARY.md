@@ -70,6 +70,7 @@
     * [API token permissions users can control](snyk-api-info/using-snyk-api/api-token-permissions-users-can-control.md)
     * [Org identification and projects in Snyk APIs](snyk-api-info/using-snyk-api/org-identification-and-projects-in-snyk-apis.md)
     * [Issues information for Snyk products in Snyk APIs](snyk-api-info/using-snyk-api/issues-information-for-snyk-products-in-snyk-apis.md)
+    * [Python code to extract issues from Snyk API](snyk-api-info/using-snyk-api/python-code-to-extract-issues-from-snyk-api.md)
   * [Authentication for API](features/snyk-api-info/authentication-for-api.md)
   * [Revoking and regenerating Snyk API tokens](features/snyk-api-info/revoking-and-regenerating-snyk-api-tokens.md)
 * [Snyk for IDEs](ide-tools/README.md)
