@@ -154,6 +154,10 @@ A license problem or vulnerability identified and lists by Snyk.
 
 A specific type of a package.
 
+### License policy
+
+A set of criteria for evaluating open source license issues. License policies enable you to set the severity level and define legal instructions for each license. The Snyk Default License Policy is enabled by default, or you can [create your own license policy](https://docs.snyk.io/products/snyk-open-source/license-policies/setting-a-license-policy). See [License policies](https://docs.snyk.io/products/snyk-open-source/license-policies).
+
 ## M
 
 ### Manifest
@@ -195,6 +199,10 @@ A software package hosting service that allows customers to host packages and co
 ### Pinnable
 
 A fix type: define and "pin" a specific version of an indirect dependency, to avoid a direct dependency pulling in a vulnerable version.
+
+### Policy
+
+See [license policy](glossary.md#license-policy), [security policy](glossary.md#security-policy), and [`.snyk` policy](glossary.md#.snyk-policy).
 
 ### PR
 
@@ -252,6 +260,10 @@ Source Code Management. Also known as a code repo / repository / version control
 
 Software Development Life Cycle. A process followed by a development team, describing how to develop and, maintain software.
 
+### Security policy
+
+A set of criteria for evaluating open source vulnerabilities. Security policies enable you to set custom rules to automatically prioritize or de-prioritize specific vulnerabilities. The Snyk Default Security Policy is enabled by default, or you can [create your own security policy](https://docs.snyk.io/features/fixing-and-prioritizing-issues/security-policies/how-to-create-a-security-policy-and-set-rules). See [Security policies](https://docs.snyk.io/features/fixing-and-prioritizing-issues/security-policies).
+
 ### Serverless
 
 A method to provide pay-as-you-use backend computing services, allowing applications to be constructed entirely from functions provided by the supplier. Examples of serverless providers include AWS Lambda and Azure Functions.
@@ -263,6 +275,10 @@ A severity level is applied to a vulnerability or a license issue, to indicate t
 ### Snapshot
 
 An individual report within a project’s test history. Includes a tree of dependancies, and a list of vulnerabilities that was accurate at the time the test was conducted.
+
+### `.snyk` policy
+
+A policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins. See [The .snyk file](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/the-.snyk-file).
 
 ### Snyk
 
