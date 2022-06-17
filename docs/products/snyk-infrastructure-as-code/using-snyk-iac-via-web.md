@@ -43,7 +43,7 @@ Click **Ignore** to ignore this vulnerability (see [Ignore Issues](../../feature
 * Terraform Cloud and Helm will not show a code snippet, but just the card details. They will also not have a **Full details** button to show the preview of the full code.\
   Examples:
 
-![Helm](<../../.gitbook/assets/image (66) (1) (1).png>)
+![Helm](<../../.gitbook/assets/image (77).png>)
 
 ![Terraform Cloud](<../../.gitbook/assets/image (84) (1) (2).png>)
 
@@ -52,4 +52,4 @@ Click **Ignore** to ignore this vulnerability (see [Ignore Issues](../../feature
 
 ![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.07.png>)
 
-![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.17 (1).png>)
+![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.17.png>)

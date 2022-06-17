@@ -75,7 +75,7 @@ To re-authenticate with a different account, follow the steps below:
 
 Or you run `Snyk: Set Token` command and set your token in the text field manually.
 
-![](<../.gitbook/assets/image (80) (1).png>)
+![](<../.gitbook/assets/image (94).png>)
 
 \\
 
@@ -132,7 +132,7 @@ The icons have the following meaning:
 | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](<../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>) High severity       | May allow attackers to access sensitive data on your application.                                                                            |
 | ![](<../.gitbook/assets/image (63) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png>) Medium severity | May allow attackers under some conditions to access sensitive data on your application.                                                      |
-| ![](<../.gitbook/assets/image (81) (1) (1) (1) (1) (1) (1).png>) Low severity                                                                        | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
+| ![](<../.gitbook/assets/image (114).png>) Low severity                                                                                               | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
 
 You can filter the issues by setting the severities you want to see using the `snyk.severity` setting. For example, set `"snyk.severity": { "critical": true, "high": true, "medium": true, "low": false }` to hide low severity issues. You can also apply the setting in the Settings UI.
 
