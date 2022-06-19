@@ -40,13 +40,13 @@ Use with `--all-projects` or `--yarn-workspaces` to indicate how many subdirecto
 
 Default: 4, the current working directory (0) and 4 subdirectories.
 
-Example: `--detection-depth=3` limits search to the specified directory  (or the current directory if no `<PATH>` is specified) plus three levels of subdirectories; zero (0) is the current directory.
+Example: `--detection-depth=3` limits search to the specified directory (or the current directory if no `<PATH>` is specified) plus three levels of subdirectories; zero (0) is the current directory.
 
 ### `--exclude=<NAME>[,<NAME>]...>`
 
 Can be used with `--all-projects` and `--yarn-workspaces` to indicate directory names and file names to exclude. Must be comma separated.
 
-Example:  `$ snyk test --all-projects --exclude=dir1,file2`
+Example: `$ snyk test --all-projects --exclude=dir1,file2`
 
 This will exclude any directories and files named "dir1" and "file2" when scanning for project manifest files. Such as: "./dir1", "./src/dir1", "./file2", "./src/file2", and so on.
 
@@ -100,9 +100,9 @@ Example: `$ snyk monitor --file=req.txt --package-manager=pip`
 
 For C++ only, scan all files for known open source dependencies.
 
-For options you can use with `--unmanaged` see [Options for scanning using `--unmanaged`](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-scanning-using-unmanaged)``
+For options you can use with `--unmanaged` see [Options for scanning using `--unmanaged`](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-scanning-using-unmanaged)\`\`
 
-For more information see [Snyk for C/C++](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++)``
+For more information see [Snyk for C/C++](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++)\`\`
 
 ### `--ignore-policy`
 
@@ -282,13 +282,17 @@ Allow skipping packages that are not found in the environment.
 
 ## Options for scanning using `--unmanaged`
 
-### ``[`--org=<ORG_ID>`](https://docs.snyk.io/snyk-cli/commands/monitor#org-less-than-org\_id-greater-than)``
+The following `snyk monitor` options can be used with `--unmanaged`.
 
-### ``[`--json`](https://docs.snyk.io/snyk-cli/commands/monitor#json)``
+`--org=<ORG_ID>`
 
-### ``[`--target-reference=<TARGET_REFERENCE>`](https://docs.snyk.io/snyk-cli/commands/monitor#target-reference-less-than-target\_reference-greater-than)``
+`--json`
 
-### `--target-dir`&#x20;
+`--target-reference=<TARGET_REFERENCE>`
+
+There are also special options.
+
+### `--target-dir`
 
 Scan the path specified in the argument instead of the current directory.
 
@@ -300,7 +304,7 @@ Alternatively, run `snyk test --unmanaged`
 
 Use 0 to disable archive extraction completely.
 
-### `--project-name=c-project`&#x20;
+### `--project-name=c-project`
 
 Use with the `snyk monitor --unmanaged` command to override the default name Snyk gives your snapshots by entering the desired name.
 
