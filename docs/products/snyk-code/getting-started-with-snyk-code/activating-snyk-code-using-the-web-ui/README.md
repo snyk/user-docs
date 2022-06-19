@@ -9,4 +9,4 @@ The activation of Snyk Code using the [Snyk Web UI](../../../../snyk-web-ui/) co
 
 3\. [Importing repositories from your SCM to test with Snyk Code](step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/).
 
-After you activate Snyk Code and import repositories to Snyk for testing, you can view and work with the Snyk Code test results of vulnerabilities and fixes, as described on [Exploring and working with the Snyk Code results](../../exploring-and-working-with-the-snyk-code-results.md)_._
+After you activate Snyk Code and import repositories to Snyk for testing, you can view and work with the Snyk Code test results of vulnerabilities and fixes, as described on [Exploring and working with the Snyk Code results](../../exploring-and-working-with-the-snyk-code-results/)_._

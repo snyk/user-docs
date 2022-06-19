@@ -1,4 +1,4 @@
-# Use Cases
+# Snyk Code - Use Cases
 
 ## Identify and fix issues as they emerge
 

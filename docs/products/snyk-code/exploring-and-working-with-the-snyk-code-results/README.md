@@ -7,7 +7,7 @@ You can now view vulnerability results for imported projects. The **Projects** t
 1. Click on an imported project to see vulnerability information for that project, including the number of issues found, grouped by severity :
 2. Click on an entry to open the issues view for that entry. For each issue, this shows the exploitable code snippet and a description of the code flaw that may lead to this vulnerability if not fixed:
 
-![](../../.gitbook/assets/view-vulns2.png)
+![](../../../.gitbook/assets/view-vulns2.png)
 
 See [View project information](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information) for more details.
 
