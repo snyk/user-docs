@@ -8,7 +8,7 @@ If you use an unsupported distribution, such as one which has reached its End-of
 For unsupported distributions, you may not receive any notifications of vulnerabilities due to a lack of security updates: this does not mean that your image is secure.
 {% endhint %}
 
-## Supported linux distributions
+## Supported Linux distributions
 
 ### Alpine Linux
 
@@ -35,6 +35,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 
 ### CentOS Stream
 
+* CentOS Steeam 9
 * CentOS Stream 8
 
 ### CentOS Linux
@@ -61,6 +62,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 
 ### Red Hat Enterprise Linux (RHEL)
 
+* Red Hat Entperise Linux 9
 * Red Hat Enterprise Linux 8
 * Red Hat Enterprise Linux 7
 * Red Hat Enterprise Linux 6
