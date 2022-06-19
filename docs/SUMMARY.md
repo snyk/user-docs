@@ -113,7 +113,7 @@
   * [Snyk Webhooks](features/integrations/snyk-webhooks/README.md)
     * [Webhook tutorial](features/integrations/snyk-webhooks/tutorial.md)
   * [Git repository (SCM) integrations](features/integrations/git-repository-scm-integrations/README.md)
-    * [Snyk SCM integration: good practices](features/integrations/git-repository-scm-integrations/snyk-scm-integration-good-practices.md)
+    * [Snyk SCM integration: deployment recommendations](features/integrations/git-repository-scm-integrations/snyk-scm-integration-good-practices.md)
     * [GitHub integration](features/integrations/git-repository-scm-integrations/github-integration.md)
     * [GitHub Enterprise integration](features/integrations/git-repository-scm-integrations/github-enterprise-integration.md)
     * [Bitbucket Cloud integration](features/integrations/git-repository-scm-integrations/bitbucket-cloud-integration.md)
