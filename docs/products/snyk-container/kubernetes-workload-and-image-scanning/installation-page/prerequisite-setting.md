@@ -18,6 +18,6 @@ limits: cpu: "1" memory: "2Gi"
 
 * Your Kubernetes cluster must be able to communicate with Snyk outbound over HTTPS.
 * [Enable the Kubernetes Integration ](../kubernetes-integration-overview/viewing-your-kubernetes-integration-settings.md)to get your **Integration ID**.
-* Install [Helm](https://helm.sh/docs/intro/install/) locally&#x20;
+* Install [Helm](https://helm.sh/docs/intro/install/) locally
 
-![Copy the Integration ID](../../../../.gitbook/assets/CopyIntegration.gif)
+![Copy the Integration ID](<../../../../.gitbook/assets/CopyIntegration (1).gif>)
