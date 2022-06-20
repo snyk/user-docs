@@ -73,6 +73,7 @@
     * [Python code to extract issues from Snyk API](snyk-api-info/using-snyk-api/python-code-to-extract-issues-from-snyk-api.md)
   * [Authentication for API](features/snyk-api-info/authentication-for-api.md)
   * [Revoking and regenerating Snyk API tokens](features/snyk-api-info/revoking-and-regenerating-snyk-api-tokens.md)
+  * [Getting started using Snyk REST API](snyk-api-info/getting-started-using-snyk-rest-api.md)
 * [Snyk for IDEs](ide-tools/README.md)
   * [Eclipse plugin](ide-tools/eclipse-plugin.md)
   * [JetBrains plugins](ide-tools/jetbrains-plugins.md)
