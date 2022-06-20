@@ -7,6 +7,7 @@ This page has instructions for creating organizations (Orgs) in Snyk:
   * [GitLab](creating-orgs-in-snyk.md#gitlab.com-hosted-gitlab)
   * [Bitbucket Server](creating-orgs-in-snyk.md#bitbucket-server)
   * [Bitbucket Cloud](creating-orgs-in-snyk.md#bitbucket-cloud)
+  * [Azure](creating-orgs-in-snyk.md#azure)
 * [Methods of creating Orgs](creating-orgs-in-snyk.md#methods-of-creating-orgs)
   * [via the API](creating-orgs-in-snyk.md#via-api)
   * [via the `orgs:create` util](creating-orgs-in-snyk.md#via-orgs-create-util)
@@ -55,7 +56,7 @@ This creates the organization data in a file `group-<snyk_group_id>-github-<com|
 * **GitLab:** `snyk-api-import orgs:data --source=gitlab --groupId=<snyk_group_id>`
 * **Hosted GitLab:** `snyk-api-import orgs:data --source=gitlab --groupId=<snyk_group_id> -- sourceUrl=https://gitlab.custom.com`
 
-This  creates the organization data in a file `group-<snyk_group_id>-gitlab-orgs.json`
+This creates the organization data in a file `group-<snyk_group_id>-gitlab-orgs.json`
 
 ### Bitbucket Server
 
@@ -78,6 +79,31 @@ This creates the organization data in a file `group-<snyk_group_id>-bitbucket-se
 * `snyk-api-import orgs:data --source=bitbucket-cloud --groupId=<snyk_group_id>`
 
 This creates the organization data in a file `group-<snyk_group_id>-bitbucket-cloud-orgs.json`
+
+### Azure
+
+**Note that for Azure, this step needs to be done manually** Since Azure has no API call for getting the Azure Organizations, the Orgs file must be created manually for the next commands to run:
+
+The file should be formatted this way:
+
+```
+{
+   "orgs":[
+      {
+         "name":"THE_NAME_OF_AN_AZURE_ORG",
+         "groupId":"YOUR_SNYK_GROUP_ID",
+         "sourceOrgId":"THE_SNYK_ORG_ID_FROM_WHICH_TO_COPY_THE_SETTINGS_FROM"   // **optional**
+      },
+      {
+         "name":"THE_NAME_OF_ANOTHER_AZURE_ORG",
+         "groupId":"YOUR_SNYK_GROUP_ID",
+         "sourceOrgId":"THE_SNYK_ORG_ID_FROM_WHICH_TO_COPY_THE_SETTINGS_FROM"  // **optional**
+      }
+   ]
+}
+```
+
+Once the file is created, you can feed it to the [orgs:create command](https://github.com/snyk-tech-services/snyk-api-import/blob/0e5162d29dec7f1d5acde247cc8da0553871db3f/docs/orgs.md#creating-organizations-in-snyk-1)
 
 ## Methods of creating Orgs
 
@@ -112,5 +138,5 @@ The file format required for this command is as follows:
 
 ### Recommendations
 
-* Have [notifications disabled](https://snyk.docs.apiary.io/#reference/organizations/notification-settings/set-notification-settings) for emails  and so on to avoid receiving import notifications.
+* Have [notifications disabled](https://snyk.docs.apiary.io/#reference/organizations/notification-settings/set-notification-settings) for emails and so on to avoid receiving import notifications.
 * Have the [fix PRs and PR checks disabled](https://snyk.docs.apiary.io/#reference/integrations/integration-settings/update) until import is complete to avoid sending extra requests to SCMs (GitHub, GitLab, Bitbucket, other).
