@@ -4,11 +4,11 @@
 
 ### Review newly introduced issues in build and review time
 
-You can use Code in the IDE or in a PR check (currently in beta) to identify issues as they are introduced. Snyk Code doesn't require compilation and analyzes the source code itself, so you can see results immediately as you write new code.
+You can use Snyk Code in your IDE or in your SCM (using the [Automatic PR Checks](using-automatic-pr-checks-for-securing-your-source-code/) feature) to identify issues as they are introduced into your code. Snyk Code does not require compilation, and it analyzes the source code itself, so you can see the results immediately as you write new code.
 
 ### Understand how problems flow across your applications
 
-Some issues are one-liners but they are not the majority. Most [SAST](https://snyk.io/learn/application-security/sast-vs-dast/) issues are multi-step, multi-file--and sometimes--multi-language. To best represent that, Code presents a full data-flow visualization that allows you to navigate through your source code from source (user input) to sink (the operation that needs to receive clean input and could be otherwise exploited).
+Some issues are one-liners, but they are not the majority. Most [SAST](https://snyk.io/learn/application-security/sast-vs-dast/) issues are multi-steps, multi-files, and sometimes multi-languages. To best represent that, Snyk Code presents a full data-flow visualization, which allows you to navigate through your source code from Source (user input) to Sink (the operation that needs to receive clean input and could be otherwise exploited).
 
 ### Fix more issues by using the experience of others
 
@@ -16,7 +16,7 @@ When Snyk Code identifies an issue, it includes real-world fix examples based on
 
 ### Learn how to prevent issues from coming back
 
-Snyk Code provides a curated overview on every issue of the vulnerability--this includes how it's created, what the risk is, what the possible mitigation strategies are, and other bite-size, educational content. This allows developers to improve their security knowledge and write secure code in real-time.
+Snyk Code provides a curated overview on every issue of the vulnerability - this includes how it is created, what the risk is, what the possible mitigation strategies are, and other bite-size, educational content. This allows developers to improve their security knowledge and write secure code in real-time.
 
 ## Reduce security debt over time
 
@@ -26,7 +26,7 @@ You can seamlessly and continuously monitor your repositories and discover secur
 
 ### Prioritize the right issues to focus on
 
-Every issue identified by Snyk Code is assigned with a Priority Score which reflects prevalence, risk, and estimated effort and allows you to focus on what matters.
+Every issue identified by Snyk Code is assigned with a Priority Score which reflects prevalence, risk, and estimated effort. This allows you to focus on the issues that present the greatest risk to your code.
 
 In addition, you can group issues according to vulnerability, type, or file to save time and fix several issues at once.
 
