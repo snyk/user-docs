@@ -16,3 +16,5 @@ Follow these steps to make a simple call to the Snyk REST API.
 12. Observe the optional **QUERY-STRING PARAMETERS** to see the range of data you can retrieve from the Snyk REST API.
 
 If you have any problems or questions, contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
+
+Note: There is also a [hello world example](using-snyk-api/how-to-use-snyk-rest-api-hello-world-example.md).
