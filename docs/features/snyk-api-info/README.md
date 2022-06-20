@@ -17,7 +17,7 @@ The [**Snyk API v1**](https://snyk.docs.apiary.io/https://snyk.docs.apiary.io/) 
 The Snyk REST API was formerly known as Snyk API v3.
 {% endhint %}
 
-The [**Snyk REST API**](https://apidocs.snyk.io/) **** is available for you to try out as endpoints are released. It is based on the OpenAPI and JSON:API standards and represents an evolutionary approach to API development, **** with each endpoint versioned (see [Versioning](https://apidocs.snyk.io/#overview) in the reference docs). The Snyk REST API ultimately will replace the API v1.
+The [**Snyk REST API**](https://apidocs.snyk.io/) is available for you to try out as endpoints are released. It is based on the OpenAPI and JSON:API standards and represents an evolutionary approach to API development, with each endpoint versioned (see [Versioning](https://apidocs.snyk.io/#overview) in the reference docs). The Snyk REST API ultimately will replace the API v1.
 
 ## When to use the API versus the CLI or an integration
 
