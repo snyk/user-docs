@@ -226,7 +226,7 @@
       * [Finding the Snyk ID and internal name of an organization](products/snyk-code/cli-for-snyk-code/before-you-start-set-the-organization-for-the-cli-tests/finding-the-snyk-id-and-internal-name-of-an-organization.md)
       * [Setting the default organization for all CLI tests](products/snyk-code/cli-for-snyk-code/before-you-start-set-the-organization-for-the-cli-tests/setting-the-default-organization-for-all-cli-tests.md)
       * [Setting an organization for a specific CLI test](products/snyk-code/cli-for-snyk-code/before-you-start-set-the-organization-for-the-cli-tests/setting-an-organization-for-a-specific-cli-test.md)
-    * [Understand Snyk Code CLI results](products/snyk-code/cli-for-snyk-code/snyk-code-cli-results.md)
+    * [Understanding the Snyk Code CLI results](products/snyk-code/cli-for-snyk-code/snyk-code-cli-results.md)
     * [Working with the Snyk Code CLI results](products/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/README.md)
       * [Displaying only discovered issues above a specific severity level](products/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/displaying-only-discovered-issues-above-a-specific-severity-level.md)
       * [Outputting the test results to a JSON or SARIF format in the terminal](products/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/outputting-the-test-results-to-a-json-or-sarif-format-in-the-terminal.md)
