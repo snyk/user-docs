@@ -322,6 +322,12 @@ Set or override the remote URL for the repository that you would like to monitor
 
 When used with the `snyk monitor --unmanaged` command, you can specify a reference which differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference.
 
+#### severity-threshold
+
+`--severity-threshold=<low|medium|high|critical>`
+
+Report only vulnerabilities at the specified level or higher.
+
 ### Import scan results in the Snyk Web UI
 
 To import the test results (issues and dependencies) in the Snyk Web UI, run the `snyk monitor --unmanaged` command:
