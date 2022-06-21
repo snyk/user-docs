@@ -1,4 +1,4 @@
-# Using Snyk Code via IDE
+# Using Snyk Code via the IDE
 
 IDE integrations use Snyk Code’s fast analysis and response, allowing you to spot an issue, understand and learn more about it, and fix it, as you write the code before you check the code in. So you can find possible security flaws in your code as you write it, on a line-by-line basis.
 
@@ -14,6 +14,6 @@ For more details, see [JetBrains IDE Plugins](https://docs.snyk.io/integrations/
 
 Snyk Code supports a Visual Studio Code plugin to support issue finding and fixing, directly from the IDE:
 
-![](<../../.gitbook/assets/image3-2- (2) (2) (4) (4) (4) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (6) (1).png>)
+![](<../../.gitbook/assets/image3-2- (2) (2) (4) (4) (4) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (7).png>)
 
 For more details, see the [Visual Studio Code extension for Snyk Code](../../ide-tools/visual-studio-code-extension-for-snyk-code.md).

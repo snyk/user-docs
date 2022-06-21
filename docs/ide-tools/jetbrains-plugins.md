@@ -47,7 +47,7 @@ Install using the IDE plugins library:
 5. Click on the **Install** button.
 6. When the installation is complete, restart the IDE.
 
-![Select the Snyk vulnerability scanning plugin](<../.gitbook/assets/Screen Shot 2022-03-09 at 5.06.13 PM (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+![Select the Snyk vulnerability scanning plugin](<../.gitbook/assets/Screen Shot 2022-03-09 at 5.06.13 PM (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Configuration
 
@@ -211,7 +211,7 @@ After the plugin is installed, you can set the following configurations for the 
 
 #### Organization setting
 
-This setting allows you to specify an organization slug name to run tests for that organization. The value must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.&#x20;
+This setting allows you to specify an organization slug name to run tests for that organization. The value must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.
 
 If not specified, preferred organization as defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
 

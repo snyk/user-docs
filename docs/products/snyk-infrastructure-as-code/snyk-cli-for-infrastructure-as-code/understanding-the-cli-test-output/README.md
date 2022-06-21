@@ -14,8 +14,6 @@ Snyk Infrastructure as Code offers additional CLI `iac test` results in Snyk CLI
 [snyk-iac-cli-test-results-v.-1.938.0-and-earlier.md](snyk-iac-cli-test-results-v.-1.938.0-and-earlier.md)
 {% endcontent-ref %}
 
-
-
 To use the new IaC CLI output results, you need to install the latest Snyk CLI version or to update to this version by entering:
 
 ```
@@ -26,20 +24,18 @@ npm install snyk -g
 
 In addition, to use this IaC CLI offering, you need to enable this option in the **Snyk Preview** page, as follows:
 
-1\.  On the Snyk Web UI, open the organization whose repositories you want to test via the CLI:
+1\. On the Snyk Web UI, open the organization whose repositories you want to test via the CLI:
 
-**Note**: By default, the CLI will run tests under your **Preferred Organization**, as defined in your **Account settings**. You can change your **Preferred Organization**, or set another organizations for the CLI tests. &#x20;
+**Note**: By default, the CLI will run tests under your **Preferred Organization**, as defined in your **Account settings**. You can change your **Preferred Organization**, or set another organizations for the CLI tests.
 
-![](<../../../../.gitbook/assets/Selecting Organization.png>)
+![](<../../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization (1) (1).png>)
 
-2\.  Once the required organization is open, click the **Org Settings** button on the top menu:
+2\. Once the required organization is open, click the **Org Settings** button on the top menu:
 
-![](<../../../../.gitbook/assets/Org Settings button.png>)
+![](<../../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org Settings button (1) (1).png>)
 
-3\.  On the Org **Settings** page, select **Snyk Preview** on the left menu, and move to the section – **Additional CLI result information for Infrastructure as Code**:
+3\. On the Org **Settings** page, select **Snyk Preview** on the left menu, and move to the section – **Additional CLI result information for Infrastructure as Code**:
 
 ![](<../../../../.gitbook/assets/IaC - CLI - New results - Enabling in Snyk Preview - Section.png>)
 
-4\.  On the **Additional CLI result information for Infrastructure as Code** section, move the slider to **Enabled**, and click the **Save changes** button.
-
-&#x20;
+4\. On the **Additional CLI result information for Infrastructure as Code** section, move the slider to **Enabled**, and click the **Save changes** button.

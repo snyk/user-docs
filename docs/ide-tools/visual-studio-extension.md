@@ -23,9 +23,9 @@ You can install the Snyk extension directly from the IDE; open **Extensions > Ma
 
 Search for _Snyk_ and select **Download** to download the Snyk Security - Code and Open Source Dependencies extension.
 
-Once installed, use Snyk via the **Extensions > Snyk** menu (on Visual Studio versions older than  2019, Snyk will be part of the top menu bar).
+Once installed, use Snyk via the **Extensions > Snyk** menu (on Visual Studio versions older than 2019, Snyk will be part of the top menu bar).
 
-__![](<../.gitbook/assets/image (76) (1) (1).png>)__
+![](<../.gitbook/assets/image (76) (1) (1) (2).png>)
 
 You can also open the Snyk tool window using **View > Other Windows > Snyk**_._
 
@@ -132,7 +132,7 @@ After the plugin is installed, you can set the following configurations for the 
 
 #### Organization setting
 
-This setting allows you to specify an organization slug name to run tests for that organization. The value must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.&#x20;
+This setting allows you to specify an organization slug name to run tests for that organization. The value must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.
 
 If not specified, the Preferred Organization (as defined in your [web account settings](https://app.snyk.io/account)) is used to run tests.
 
@@ -144,8 +144,6 @@ In the settings, you can also choose which results you want to receive:
 * Snyk Code Security vulnerabilities
 * Snyk Code Quality issues
 
-
-
 ## Known issue
 
 **Could not detect supported target files**
@@ -156,18 +154,16 @@ In the settings, you can also choose which results you want to receive:
 
 **The system cannot find the file specified**
 
-**Solution** This issue related to CLI file. Close and open Snyk tool window for start CLI download. ****&#x20;
+**Solution** This issue related to CLI file. Close and open Snyk tool window for start CLI download. \*\*\*\*
 
-****
+***
 
 **The specified executable is not a valid application for this OS platform**
 
-**Solution** This issue related to CLI file and its integrity. Remove CLI from in \
-`%HOMEPATH%\AppData\Local\Snyk\snyk-win.exe`. Close and open Snyk tool window for start CLI download.&#x20;
+**Solution** This issue related to CLI file and its integrity. Remove CLI from in\
+`%HOMEPATH%\AppData\Local\Snyk\snyk-win.exe`. Close and open Snyk tool window for start CLI download.
 
 ## How tos
-
-
 
 **Snyk Code no supported code available**
 
