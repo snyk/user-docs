@@ -56,6 +56,10 @@ Integration with Azure Repos Cloud is available for all of our pricing plans. In
 
 Snyk integrates with Microsoft Azure Repos to enable you to import your projects and monitor the source code for your repositories. Snyk tests the projects you’ve imported for any known security vulnerabilities found in the application’s dependencies, testing at a frequency you control.
 
+{% hint style="warning" %}
+Snyk does not currently support integration with Team Foundation Version Control (TFVC); just Git.
+{% endhint %}
+
 ## How to configure your integration
 
 Enable integration between Azure Repos and Snyk, and start managing your vulnerabilities.
