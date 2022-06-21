@@ -41,7 +41,7 @@ See [Running tests](introducing-snyk/snyks-core-concepts/running-tests.md) for m
 
 ### **Who uses Snyk?**
 
-Google, Salesforce, Datadog, Atlassian, Twilio, Revolut and many more are using Snyk to secure their code and monitor for vulnerabilities.
+Google, Salesforce, Atlassian, Twilio, Revolut and many more are using Snyk to secure their code and monitor for vulnerabilities.
 
 ### **How do I get started?**
 
@@ -49,10 +49,10 @@ Google, Salesforce, Datadog, Atlassian, Twilio, Revolut and many more are using 
 2. Run tests against your project.
 3. Review your results to identify vulnerabilities.
 4. Correct these vulnerabilities via Pull Requests.
-5. Remain secure with monitoring.&#x20;
+5. Remain secure with monitoring.
 
 See [Getting started](getting-started/) for more details.
 
 ### What happens to my data?
 
-For details of Snyk data handling, see [How Snyk handles your data](https://github.com/snyk/user-docs/blob/9336593f5e7c7dab3fbac77f5e9f0a5ae0751cc2/docs/more-info/how-snyk-handles-your-data.md). \
+For details of Snyk data handling, see [How Snyk handles your data](https://github.com/snyk/user-docs/blob/9336593f5e7c7dab3fbac77f5e9f0a5ae0751cc2/docs/more-info/how-snyk-handles-your-data.md).&#x20;
