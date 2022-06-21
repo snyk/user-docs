@@ -53,7 +53,7 @@ By default the `import` command will run if no command is specified.
 * `help` - show help and all available commands and their options.
 * `orgs:data` util - use to generate data required to create Orgs using the API.
 * `orgs:create` util - use to create the Orgs in Snyk based on the data file generated with `orgs:data` command.
-* `import:data` util- use to generate data required to kick off an import. Note that archived repos are excluded by default.
+* `import:data` util - use to generate data required to kick off an import. Note that archived repos are excluded by default.
 * `list:imported` util - use to generate data to help skip previously imported targets during import.
 
 The logs can be explored using [Bunyan CLI](http://trentm.com/node-bunyan/bunyan.1.html)
