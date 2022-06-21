@@ -53,17 +53,17 @@ For each project, you can choose the test frequency under its settings (the defa
 ![](<../../../.gitbook/assets/mceclip3 (1).png>)
 
 {% hint style="warning" %}
-**Note:**&#x20;
+**Note:**
 
-For app projects created for apps found in images that are imported from **Container Registry integrations**, the app will not be re-imported during recurring tests or manual re-test. **** Instead, the applications dependencies that were found during the initial image import will be tested for new vulnerabilities.
+For app projects created for apps found in images that are imported from **Container Registry integrations**, the app will not be re-imported during recurring tests or manual re-test. \*\*\*\* Instead, the applications dependencies that were found during the initial image import will be tested for new vulnerabilities.
 
 This means that if new dependencies were introduced in an application within an image, they will not be detected by the recurring tests or manual re-test.
 
-In order to detect **new or updated** applications within images from container registries, the image will need to be re-imported to snyk.&#x20;
+In order to detect **new or updated** applications within images from container registries, the image will need to be re-imported to snyk.
 
 For apps found in images that are imported from **the Kubernetes integration**, existing apps will be re-imported, but new apps added to the image will not be imported during recurring tests.
 
-In order to detect **new** applications within images from Kubernetes, the image will need to be re-imported to snyk.&#x20;
+In order to detect **new** applications within images from Kubernetes, the image will need to be re-imported to snyk.
 {% endhint %}
 
 **Supported container registries**
@@ -90,7 +90,7 @@ The supported languages work on the following integrations:
 | ------------ | ---------------------- | ------- | -------------- |
 | Node         | Yes                    | Yes     | Yes            |
 | Ruby         | Yes                    |         |                |
-| PHP          | Yes                    |         |                |
+| PHP          | Yes                    | Yes     | Yes            |
 | Python       | Yes                    |         |                |
 | Go Binaries  | Yes                    | Yes     | Yes            |
 | Java         | Yes                    | Yes     | Yes            |
