@@ -12,6 +12,8 @@ Use the `import:data` util to help generate the import json data needed by the i
 
 In the section that applies to your SCM, review the information about creating the organizations data in json at the beginning and then follow the steps. **You must set your SCM personal access token or username and password credentials as environment variables.**
 
+Note that archived repos are excluded by default.
+
 ## GitHub.com and GitHub Enterprise
 
 You need the organizations data in json as an input to this command to help map Snyk organization IDs and Integration Ids that must be used during import against individual targets to be imported. The following format is required:
@@ -42,7 +44,7 @@ Note: the "name" of the GitHub or GitHub Enterprise organization is required in 
 2. Create the organizations data in json as described in the opening paragraphs.
 3. Run the command to generate import data:\
    **GitHub.com:** `DEBUG=snyk* GITHUB_TOKEN=*** SNYK_TOKEN=*** snyk-api-import import:data --orgsData=path/to/snyk-orgs.json --source=github --integrationType=github`\
-   ``**GitHub Enterprise:** `DEBUG=snyk* GITHUB_TOKEN=*** SNYK_TOKEN=*** snyk-api-import import:data --orgsData=path/to/snyk-orgs.json --source=github-enterprise --integrationType=github-enterprise --sourceUrl=https://ghe.custom.com`
+   \`\`**GitHub Enterprise:** `DEBUG=snyk* GITHUB_TOKEN=*** SNYK_TOKEN=*** snyk-api-import import:data --orgsData=path/to/snyk-orgs.json --source=github-enterprise --integrationType=github-enterprise --sourceUrl=https://ghe.custom.com`
 4. Use the generated data to feed into the `import` command to [kick off the import](kicking-off-an-import.md).
 
 ## GitLab.com and Hosted GitLab
@@ -74,7 +76,7 @@ Note: the "name" of the GitLab Group is required in order to list all projects b
 2. Create the organizations data in json as described in the opening paragraphs.
 3. Run the command to generate import data:\
    **Gitlab.com:** `DEBUG=snyk* GITLAB_TOKEN=*** SNYK_TOKEN=*** snyk-api-import import:data --orgsData=path/to/snyk-orgs.json --source=gitlab --integrationType=gitlab`\
-   ``**Hosted Gitlab:** `DEBUG=snyk* GITLAB_TOKEN=*** SNYK_TOKEN=*** snyk-api-import import:data --orgsData=path/to/snyk-orgs.json --source=gitlab --integrationType=gitlab --sourceUrl=https://gitlab.custom.com`
+   \`\`**Hosted Gitlab:** `DEBUG=snyk* GITLAB_TOKEN=*** SNYK_TOKEN=*** snyk-api-import import:data --orgsData=path/to/snyk-orgs.json --source=gitlab --integrationType=gitlab --sourceUrl=https://gitlab.custom.com`
 4. Use the generated data to feed into the `import` command to [kick off the import](kicking-off-an-import.md).
 
 ## dev.azure.com and Hosted Azure
@@ -108,7 +110,7 @@ Note: the "name" of the Azure organization is required in order to list all proj
 2. Create the organizations data in json as described in the opening paragraphs.
 3. Run the command to generate import data:\
    **dev.azure.com:** `DEBUG=snyk* AZURE_TOKEN=*** SNYK_TOKEN=*** snyk-api-import import:data --orgsData=path/to/snyk-orgs.json --source=azure-repos --integrationType=azure-repos`\
-   ``**Hosted Azure:** `DEBUG=snyk* AZURE_TOKEN=*** SNYK_TOKEN=*** snyk-api-import import:data --orgsData=path/to/snyk-orgs.json --source=azure-repos --integrationType=azure-repos --sourceUrl=https://azure.custom.com`
+   \`\`**Hosted Azure:** `DEBUG=snyk* AZURE_TOKEN=*** SNYK_TOKEN=*** snyk-api-import import:data --orgsData=path/to/snyk-orgs.json --source=azure-repos --integrationType=azure-repos --sourceUrl=https://azure.custom.com`
 4. Use the generated data to feed into the `import` command to [kick off the import](kicking-off-an-import.md).
 
 ## Bitbucket Server
