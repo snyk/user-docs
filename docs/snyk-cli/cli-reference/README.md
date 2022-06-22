@@ -147,9 +147,9 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--json-file-output=<OUTPUT_FILE_PATH>`: [`test`](../commands/test.md), [`code`](../commands/code.md), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
-`--sarif`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
+`--sarif`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`code`](https://docs.snyk.io/snyk-cli/commands/code), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
-`--sarif-file-output=<OUTPUT_FILE_PATH>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
+`--sarif-file-output=<OUTPUT_FILE_PATH>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`code`](https://docs.snyk.io/snyk-cli/commands/code), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
 `--severity-threshold=<low|medium|high|critical>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`code`](https://docs.snyk.io/snyk-cli/commands/code), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
@@ -157,9 +157,9 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
-`--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)\`\`
+`--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
-`--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)\`\`
+`--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)``
 
 `--project-tags=<TAG>[,<TAG>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [iac test](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
@@ -187,7 +187,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--rules=<PATH_TO_CUSTOM_RULES_BUNDLE>`: [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
-`--var-file=<PATH_TO_VARIABLE_FILE>`: [`iac test`](../commands/iac-test.md)\`\`
+`--var-file=<PATH_TO_VARIABLE_FILE>`: [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)``
 
 ## `snyk iac describe` command options
 
@@ -277,7 +277,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--assets-project-name`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--packages-folder`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)\`
+`--packages-folder`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 `--project-name-prefix=<PREFIX_STRING>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
@@ -311,19 +311,19 @@ Currently the following options are not supported:
 
 ## Options for scanning using `--unmanaged`
 
-`--org=<ORG_ID>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--org=<ORG_ID>`: [`test`](../commands/test.md), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)``
 
-`--json`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--json`: [`test`](../commands/test.md), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)``
 
 `--json-file-output=<OUTPUT_FILE_PATH>`: [`test`](../commands/test.md), [monitor](../commands/monitor.md)
 
-`--target-reference=<TARGET_REFERENCE>`: [`monitor`](../commands/monitor.md)\`\`
+`--target-reference=<TARGET_REFERENCE>`: [`test`](../commands/test.md), [monitor](../commands/monitor.md)
 
-`--target-dir`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--target-dir`: [`test`](../commands/test.md), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)``
 
-`--max-depth`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--max-depth`: [`test`](../commands/test.md), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)``
 
-`--project-name=c-project`: [`monitor`](../commands/monitor.md)\`\`
+`--project-name=c-project`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)``
 
 ## `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
