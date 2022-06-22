@@ -73,7 +73,7 @@
     * [Issues information for Snyk products in Snyk APIs](snyk-api-info/using-snyk-api/issues-information-for-snyk-products-in-snyk-apis.md)
     * [Python code to extract issues from Snyk API](snyk-api-info/using-snyk-api/python-code-to-extract-issues-from-snyk-api.md)
     * [How to use Snyk REST API hello world example](snyk-api-info/using-snyk-api/how-to-use-snyk-rest-api-hello-world-example.md)
-    * [Snyk API v1 path endpoint information](snyk-api-info/using-snyk-api/snyk-api-v1-path-endpoint-information.md)
+    * [Snyk API v1 Project issue paths endpoints](snyk-api-info/using-snyk-api/snyk-api-v1-project-issue-paths-endpoints.md)
     * [Get a list of fixed issues using Snyk API](snyk-api-info/using-snyk-api/get-a-list-of-fixed-issues-using-snyk-api.md)
   * [Authentication for API](features/snyk-api-info/authentication-for-api.md)
   * [Revoking and regenerating Snyk API tokens](features/snyk-api-info/revoking-and-regenerating-snyk-api-tokens.md)

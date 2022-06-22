@@ -1,9 +1,8 @@
-# API v1 path endpoint information
+# Snyk API v1 Project issue paths endpoints
 
-The following provides information in addition to the API v1 reference docs:\
-[https://snyk.docs.apiary.io/reference/projects/project-issue-paths/list-all-project-issue-paths](https://snyk.docs.apiary.io/reference/projects/project-issue-paths/list-all-project-issue-paths)
+The following provides information in addition to the information in the [API v1 reference docs](https://snyk.docs.apiary.io/reference/projects/project-issue-paths/list-all-project-issue-paths).
 
-The `paths` endpoint provides details of the paths through which an issue has been introduced.
+The `paths` endpoints provide details of the paths through which an issue has been introduced.
 
 **Requests** to the `paths` endpoint are `GET` requests. The endpoint is available at the following URLs:
 
