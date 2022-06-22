@@ -10,7 +10,7 @@ The [Snyk Priority Score](starting-to-fix-vulnerabilities/snyk-priority-score.md
 
 ### Apply project attributes <a href="#h.r3thgse7qt7n" id="h.r3thgse7qt7n"></a>
 
-Control prioritization at a granular level by applying [project attributes](../../getting-started/introduction-to-snyk-projects/view-project-information/project-attributes.md) such as:
+Control prioritization at a granular level by applying [project attributes](../../introducing-snyk/introduction-to-snyk-projects/view-project-information/project-attributes.md) such as:
 
 * Lifecycle stage
 * Business criticality

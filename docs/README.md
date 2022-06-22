@@ -51,7 +51,7 @@ Google, Salesforce, Atlassian, Twilio, Revolut and many more are using Snyk to s
 4. Correct these vulnerabilities via Pull Requests.
 5. Remain secure with monitoring.
 
-See [Getting started](getting-started/) for more details.
+See [Getting started](getting-started.md) for more details.
 
 ### What happens to my data?
 

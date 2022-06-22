@@ -15,7 +15,7 @@ Ensure you have:
 
 * A code project using open source packages, on a supported SCM system such as GitHub. See [git-repository-scm-integrations](../../features/integrations/git-repository-scm-integrations/ "mention").
 * A supported language and package manager, such as Java. See [language-and-package-manager-support](language-and-package-manager-support/ "mention").
-* A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [getting-started](../../getting-started/ "mention")).
+* A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [getting-started.md](../../getting-started.md "mention")).
 
 ### Stage 1: Add source control integration
 
@@ -75,7 +75,7 @@ Click on an entry to open the issues view for that entry, including the module, 
 
 ![](../../.gitbook/assets/project-details.png)
 
-See [view-project-information.md](../../getting-started/introduction-to-snyk-projects/view-project-information.md "mention") for more details.
+See [view-project-information](../../introducing-snyk/introduction-to-snyk-projects/view-project-information/ "mention") for more details.
 
 ### Stage 4: Fix vulnerabilities
 

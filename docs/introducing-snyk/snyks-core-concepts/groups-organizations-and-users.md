@@ -35,7 +35,7 @@ See [What’s a Snyk organization?](../../features/user-and-group-management/man
 
 Projects are contained in organizations. Snyk projects can include manifest files, configuration files, and container images.
 
-See [Snyk projects](../../getting-started/introduction-to-snyk-projects/).
+See [Snyk projects](../introduction-to-snyk-projects/).
 
 ## User access: member types
 

@@ -9,7 +9,7 @@ Use Snyk IaC with the standard Snyk web interface to find and fix issues in conf
 
 ![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.15.02.png>)
 
-Information available shows standard Snyk project information (see [introduction-to-snyk-projects](../../getting-started/introduction-to-snyk-projects/ "mention")), including:
+Information available shows standard Snyk project information (see [introduction-to-snyk-projects](../../introducing-snyk/introduction-to-snyk-projects/ "mention")), including:
 
 * Snapshot information showing when the project was last tested.
 * **Overview**, **History** and **Settings** information. For example, use the **History** section to view previous snapshots of projects.
