@@ -27,7 +27,7 @@ As you prepare for your teams to start adopting Snyk as part of a secure develop
 
 More information:
 
-* Docs: [integrations.md](../products/snyk-code/key-features/integrations.md "mention")
+* Docs: [Integrations](../products/snyk-code/key-features/integrations.md)
 * Snyk Training: [Ways to integrate Snyk at your company](http://training.snyk.io/learn/course/ways-to-use-snyk/ways-to-integrate-snyk-at-your-company/snyk-across-the-sdlc?page=1)
 
 #### How to structure your account
@@ -36,7 +36,7 @@ There are different ways to arrange the organizations in your account. Before in
 
 More information:
 
-* Docs: [user-and-group-management](../features/user-and-group-management/ "mention")
+* Docs: [User and group management](../features/user-and-group-management/)
 * Training: [Snyk account structure](http://training.snyk.io/learn/course/snyk-account-structure/account-structure-considerations/an-overview-of-account-structure?page=1)
 
 #### How to access Snyk
@@ -69,7 +69,7 @@ Snyk includes a number of automations for Snyk Open Source when integrated with 
 
 More information:
 
-* Docs: [git-repository-scm-integrations](../features/integrations/git-repository-scm-integrations/ "mention")
+* Docs: [Git repository (SCM) integrations](../features/integrations/git-repository-scm-integrations/)
 * Training: [Source Code Manager Configurations](http://training.snyk.io/learn/course/source-code-manager-configurations/integration-scenarios/overview?page=1)
 
 If you are using an on-premise source code manager, learn more about Snyk Broker:
@@ -90,7 +90,7 @@ Snyk sends teams different types of alerts based on settings defined for the gro
 
 More information:
 
-* Docs: [notifications](../features/user-and-group-management/notifications/ "mention")
+* Docs: [Managing notifications](../features/user-and-group-management/notifications/)
 * Training: [Notifications](http://training.snyk.io/learn/course/notifications/snyk-notification-configuration/an-overview-of-notifications?page=1)
 
 #### Set ignore permissions
@@ -160,11 +160,11 @@ More information:
 
 #### Use Snyk in an IDE
 
-Empower developers to find and fix issues early in the development process by adding the Snyk plug in to their favorite individual development environment.
+Empower developers to find and fix issues early in the development process by adding the Snyk plug in to their integrated development environment.
 
 More information:
 
-* Docs: [ide-tools](../ide-tools/ "mention")
+* Docs: [Snyk for IDEs](../ide-tools/)
 * Training: [Introduction to using Snyk in an IDE](http://training.snyk.io/learn/course/introduction-to-using-snyk-in-an-ide/snyk-plugin-for-ide/authenticate-plug-in-to-snyk?page=1)
 
 #### Use Snyk in the CLI
@@ -173,7 +173,7 @@ The Snyk CLI provides a way to find security and license issues locally or in yo
 
 More information:
 
-* Docs: [snyk-cli](../snyk-cli/ "mention")
+* Docs: Snyk CLI
 * Training: [Introduction to the Snyk CLI](http://training.snyk.io/learn/course/intro-cli/snyk-cli/authentication-to-snyk-account)
 
 #### Use Snyk in the Web UI
@@ -182,5 +182,5 @@ The Snyk Web UI scans different types of projects (depending on which product yo
 
 More information:
 
-* Docs: [snyk-web-ui](../snyk-web-ui/ "mention")
+* Docs: [Snyk Web UI](../snyk-web-ui/)
 * Training: [Introduction to the Snyk UI](http://training.snyk.io/learn/course/introduction-to-the-snyk-ui/snyk-log-in-details/log-in-tasks-and-considerations?page=1)
