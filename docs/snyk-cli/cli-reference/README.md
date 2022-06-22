@@ -30,7 +30,7 @@ Snapshot and continuously monitor a project for open source vulnerabilities and 
 
 Test container images for vulnerabilities.
 
-### ``[`snyk iac`](../commands/iac.md)``
+### [`snyk iac`](https://docs.snyk.io/snyk-cli/commands/iac)
 
 The `snyk iac` subcommands find and report security issues in Infrastructure as Code files; detect, track, and alert on infrastructure drift and unmanaged resources; manages ignores in the `.snyk` policy file.
 
