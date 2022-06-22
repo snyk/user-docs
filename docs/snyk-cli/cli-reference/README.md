@@ -30,7 +30,7 @@ Snapshot and continuously monitor a project for open source vulnerabilities and 
 
 Test container images for vulnerabilities.
 
-### ``[`snyk iac`](https://docs.snyk.io/snyk-cli/commands/iac)``
+### ``[`snyk iac`](../commands/iac.md)``
 
 The `snyk iac` subcommands find and report security issues in Infrastructure as Code files; detect, track, and alert on infrastructure drift and unmanaged resources; manages ignores in the `.snyk` policy file.
 
@@ -139,7 +139,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--project-name=<PROJECT_NAME>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-`--target-reference=<TARGET_REFERENCE>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`iac test`](../commands/iac-test.md)\`\`
+`--target-reference=<TARGET_REFERENCE>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`iac test`](../commands/iac-test.md)``
 
 `--policy-path=<PATH_TO_POLICY_FILE>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test), [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe), [`ignore`](https://docs.snyk.io/snyk-cli/commands/ignore)
 
@@ -157,9 +157,9 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
-`--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)\`\`
+`--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)``
 
-`--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)\`\`
+`--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)``
 
 `--project-tags=<TAG>[,<TAG>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [iac test](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
@@ -181,13 +181,13 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 ## `snyk iac test` command options
 
-`--report`: [`iac test`](../commands/iac-test.md)\`\`
+`--report`: [`iac test`](../commands/iac-test.md)``
 
 `--scan=<TERRAFORM_PLAN_SCAN_MODE>`: [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
 `--rules=<PATH_TO_CUSTOM_RULES_BUNDLE>`: [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
-`--var-file=<PATH_TO_VARIABLE_FILE>`: [`iac test`](../commands/iac-test.md)\`\`
+`--var-file=<PATH_TO_VARIABLE_FILE>`: [`iac test`](../commands/iac-test.md)``
 
 ## `snyk iac describe` command options
 
@@ -311,19 +311,19 @@ Currently the following options are not supported:
 
 ## Options for scanning using `--unmanaged`
 
-`--org=<ORG_ID>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--org=<ORG_ID>`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--json`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--json`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
 `--json-file-output=<OUTPUT_FILE_PATH>`: [`test`](../commands/test.md), [monitor](../commands/monitor.md)
 
-`--target-reference=<TARGET_REFERENCE>`: [`monitor`](../commands/monitor.md)\`\`
+`--target-reference=<TARGET_REFERENCE>`: [`monitor`](../commands/monitor.md)``
 
-`--target-dir`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--target-dir`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--max-depth`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)\`\`
+`--max-depth`: [`test`](../commands/test.md), [`monitor`](../commands/monitor.md)``
 
-`--project-name=c-project`: [`monitor`](../commands/monitor.md)\`\`
+`--project-name=c-project`: [`monitor`](../commands/monitor.md)``
 
 ## `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 

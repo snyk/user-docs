@@ -8,6 +8,10 @@
 
 The `snyk monitor` command creates a project in your Snyk account to be continuously monitored for open source vulnerabilities and license issues. After running this command, log in to the Snyk website and view your projects to see the monitor.
 
+For Snyk Container see [`snyk container` help](https://docs.snyk.io/snyk-cli/commands/container)
+
+For Snyk Infrastructure as Code follow the instructions in "Regularly testing IaC files" on [Snyk CLI for Infrastructure as Code](https://docs.snyk.io/products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code)
+
 ## Exit codes
 
 Possible exit codes and their meaning:
