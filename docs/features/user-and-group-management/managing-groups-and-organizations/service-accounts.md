@@ -56,8 +56,9 @@ This process describes all options.
 
 ![](../../../.gitbook/assets/uuid-01c4cc98-23c9-3cb1-4972-1aa4f83ad98e-en.png)
 
-* From the **Role** dropdown list, select **Viewer** or **Admin** to configure the scope of the token:
+* From the **Role** dropdown list, select **Viewer, Member,** or **Admin** to configure the scope of the token:
   * Viewer enables read-only access.
+  * Member associates a service account to a group but does not grant any specific access. We recommend selecting Viewer or Admin.
   * Admin enables full administrator access.
 *   Click **Create**. The token is generated and displayed from the same area, similar to the following:
 
