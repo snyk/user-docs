@@ -20,7 +20,7 @@ If you want to import projects via the API with a Snyk Service Account, use the 
    * After you add the repositories, Snyk starts scanning the selected repositories for dependency files (that is, _package.json_, _pom.xml_, and so on) in the entire directory tree and imports them to Snyk as projects.
    * The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
-![](<../../../.gitbook/assets/which\_repos (3) (5) (9) (7) (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (31).jpg>)
+![](<../../../.gitbook/assets/which\_repos (3) (5) (9) (7) (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (30).jpg>)
 
 ## GitHub integration features
 
@@ -32,7 +32,7 @@ Snyk produces advanced security reports that let you explore the vulnerabilities
 
 The example below presents a project-level security report.
 
-![](<../../../.gitbook/assets/mceclip0-22- (2) (5) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (29).png>)
+![](<../../../.gitbook/assets/mceclip0-22- (2) (5) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (28).png>)
 
 ### • **Project monitoring and automatic fix pull requests**
 
@@ -44,7 +44,7 @@ The example below presents a fix pull request opened by Snyk.
 
 You can review and adjust the automatic fix pull request settings in the Snyk GitHub Integration settings page via <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> (Organization Settings) **>** **Integrations > Source control > GitHub**.
 
-![](<../../../.gitbook/assets/mceclip4 (1) (2) (6) (7) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (27).png>)
+![](<../../../.gitbook/assets/mceclip4 (1) (2) (6) (7) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (26).png>)
 
 ### • **** Commit Signing
 
@@ -62,11 +62,11 @@ Snyk tests any newly created pull request in your repositories for security vuln
 
 The example below presents how Snyk pull request checks appear on the Pull Request page on GitHub.
 
-![](<../../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en (2) (2) (6) (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (28).png>)
+![](<../../../.gitbook/assets/uuid-87113833-be79-dbe2-8860-a3f224d654c4-en (2) (2) (6) (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (27).png>)
 
 You can review and adjust the pull request tests settings via the Snyk GitHub Integration settings page in <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> (Organization Settings)  **>** **Integrations > Source control > GitHub**.&#x20;
 
-![](<../../../.gitbook/assets/mceclip5 (1).png>)
+![](<../../../.gitbook/assets/mceclip5 (1) (1).png>)
 
 ## Required permissions scope for the GitHub integration
 
@@ -154,7 +154,7 @@ Navigate to the Github integration settings via <img src="../../../.gitbook/asse
 To configure the Auto-assign settings for a specific project**:**
 
 1. In the **Projects** tab for your organization, select and expand the relevant private repository, select a target, and click the **Settings** cog.\
-   &#x20;<img src="../../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10).png" alt="" data-size="original">\
+   &#x20;<img src="../../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (9).png" alt="" data-size="original">\
    The project page opens.&#x20;
 2. In the project page, to apply unique settings for that specific project, select the **Settings** tab in the upper right, and the **Github integration** __ option in the left sidebar.
 3. Select, customize, and confirm the relevant options in the sections:
