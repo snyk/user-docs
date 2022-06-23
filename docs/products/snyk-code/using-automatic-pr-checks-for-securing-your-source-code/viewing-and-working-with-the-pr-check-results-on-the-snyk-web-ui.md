@@ -20,7 +20,7 @@ After the Automatic PR Check discovers security issues in a PR, you can view the
 
 The full details of the discovered issue are displayed:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Full details button - Results (1).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Full details button - Results.png>)
 
 ### Marking failed PR checks as successful <a href="#_ref105582006" id="_ref105582006"></a>
 
@@ -44,7 +44,7 @@ A message appears on the **SAST check** page header, informing you that the fail
 
 On your SCM, the previous PR Check “**failed**” message is now changed to “**passed**”. In addition, there is an indication that the PR check was **Skipped**, and that a specific Snyk user forced this result change:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Mark as successful - On GitHub (1).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Mark as successful - On GitHub.png>)
 
 ### Returning to your SCM
 

@@ -199,7 +199,7 @@ You can filter for each one of them by selecting the value from the dropdown as 
 After the plugin is installed, you can set the following configurations for the plugin, using **Preferences → Tools → Snyk**:
 
 * **Token**: the token that should be used for authentication with Snyk (can be generated through the Account Settings in the Snyk Web UI)
-* **Custom endpoint**: custom endpoint for the Snyk Web UI, if needed
+* **Custom endpoint**: custom endpoint for the Snyk Web UI, if needed. Use this field for Single tenant setups as well instead of https://app.snyk.io.
 * **Ignore unknown CA**: for ignoring the SSL cert, if needed
 * **Organization**: the org to run Snyk test against (similar to the `--org=` option in the CLI).
 * **Additional parameters**: additional CLI snyk test options you want to use for the test for Open Source; additional parameters do not apply to Snyk Code or Iac.

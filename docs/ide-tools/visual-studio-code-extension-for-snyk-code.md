@@ -208,6 +208,7 @@ After the extension is installed, you can set the following configurations for t
   * **Auto Scan Open Source Security**: set severity level to display in the analysis result tree.
   * **Additional Parameters**: set parameters to be passed to Snyk CLI for Open Source Security tests. For the full list you can consult [this reference](https://docs.snyk.io/features/snyk-cli/guides-for-our-cli/cli-reference).
   * **Organization**: specifies an organization slug name to run tests for that organization.
+  * **Custom endpoint**: Specify the custom Snyk API endpoint for your organization. Use this field for the custom endpoint for Single Tenant setups as well instead of https://app.snyk.io.
 
 #### **Organization setting**
 
