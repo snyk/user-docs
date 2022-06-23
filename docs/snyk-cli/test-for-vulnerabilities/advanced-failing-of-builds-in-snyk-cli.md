@@ -3,7 +3,7 @@
 The Snyk CLI provides the following options when failing your builds:
 
 ```
---severity-threshold=low|medium|high
+--severity-threshold=low|medium|high|critical
 ```
 
 Only report vulnerabilities of provided level or higher.
