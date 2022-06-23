@@ -4,6 +4,20 @@
 For the Container Registry integration, the feature is supported for Node, Ruby, PHP, Python, Go binaries, and Java. For the CLI and Kubernetes, the feature is supported for Node, Golang, PHP, and Java.
 {% endhint %}
 
+{% hint style="warning" %}
+For applications projects created from images imported from **Container Registry integrations**, the applications will not be re-imported during recurring tests or manual re-test.
+
+Instead, the applications dependencies that were found during the initial image import will be tested for new vulnerabilities.
+
+This means that if new dependencies were introduced in an application within an image, they will not be detected by the recurring tests or manual re-test.
+
+In order to detect **new or updated** applications within images from container registries, the image will need to be re-imported to snyk.
+
+For applications found in images imported from **the Kubernetes integration**, existing applications will be re-imported, but new apps added to the image will not be imported during recurring tests.
+
+In order to detect **new** applications within images from Kubernetes, the image will need to be re-imported to snyk.
+{% endhint %}
+
 Snyk allows detection of vulnerabilities in your application dependencies from container images, as well as from the operating system, all in one single scan.
 
 After you integrate with a container registry and import your projects, we scan your image and test for vulnerabilities.
@@ -51,20 +65,6 @@ Snyk scans the image regularly based on your project’s settings, and updates y
 For each project, you can choose the test frequency under its settings (the default is daily testing).
 
 ![](<../../../.gitbook/assets/mceclip3 (1).png>)
-
-{% hint style="warning" %}
-**Note:**
-
-For app projects created for apps found in images that are imported from **Container Registry integrations**, the app will not be re-imported during recurring tests or manual re-test. \*\*\*\* Instead, the applications dependencies that were found during the initial image import will be tested for new vulnerabilities.
-
-This means that if new dependencies were introduced in an application within an image, they will not be detected by the recurring tests or manual re-test.
-
-In order to detect **new or updated** applications within images from container registries, the image will need to be re-imported to snyk.
-
-For apps found in images that are imported from **the Kubernetes integration**, existing apps will be re-imported, but new apps added to the image will not be imported during recurring tests.
-
-In order to detect **new** applications within images from Kubernetes, the image will need to be re-imported to snyk.
-{% endhint %}
 
 **Supported container registries**
 
