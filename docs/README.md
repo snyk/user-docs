@@ -55,4 +55,4 @@ See [Getting started](getting-started.md) for more details.
 
 ### What happens to my data?
 
-For details of Snyk data handling, see [How Snyk handles your data](https://github.com/snyk/user-docs/blob/9336593f5e7c7dab3fbac77f5e9f0a5ae0751cc2/docs/more-info/how-snyk-handles-your-data.md).&#x20;
+For details of Snyk data handling, see [How Snyk handles your data](https://docs.snyk.io/more-info/how-snyk-handles-your-data).&#x20;
