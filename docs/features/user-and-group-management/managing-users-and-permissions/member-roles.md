@@ -23,15 +23,15 @@ Future versions will add group-level access (for example, policies, group member
 
 You can find the default roles - Org Admin and Org Collaborator. When you click each of these roles you can view the associated permissions, but cannot modify the default roles.
 
-![Group settings](<../../../.gitbook/assets/Screenshot 2022-05-17 at 05.42.17.png>)
+![](<../../../.gitbook/assets/Screenshot 2022-06-23 at 15.21.58.png>)
 
 Click the **Create new Role** button and enter a role name and description. Role names should be unique, and can contain alphanumeric characters plus spaces.
 
-![](<../../../.gitbook/assets/Screenshot 2022-05-24 at 09.04.38.png>)
+![](<../../../.gitbook/assets/Screenshot 2022-06-23 at 15.28.12.png>)
 
 Click the **Create role** button. You will see basic details about the role in the top section.
 
-![Role details](<../../../.gitbook/assets/Screenshot 2022-05-17 at 05.55.29.png>)
+![](<../../../.gitbook/assets/Screenshot 2022-06-23 at 15.29.53.png>)
 
 The bottom section lists all the permissions available at the organization level that you use to define the role.
 
@@ -43,19 +43,19 @@ Choose the required permissions and click **Update Role Permissions**.
 
 When creating the role is complete, you will see the confirmation message at the top.
 
-![Role updated message](<../../../.gitbook/assets/Screenshot 2022-05-17 at 06.02.40 (1).png>)
+![](<../../../.gitbook/assets/Screenshot 2022-06-23 at 15.32.32.png>)
 
 ### Edit a Role
 
 **Group Admins** can select a role (except for the default roles that are marked as locked) from the Member Roles list page and update the name, description and permissions at any time . You can view how the default roles are set up and duplicate those roles, but you cannot edit them.
 
-![Update Role Details](<../../../.gitbook/assets/Screenshot 2022-05-17 at 06.11.55.png>)
+![](<../../../.gitbook/assets/Screenshot 2022-06-23 at 15.37.06.png>)
 
 ![Update Role Permissions](<../../../.gitbook/assets/Screenshot 2022-05-17 at 06.10.00.png>)
 
 When updating the role is complete, you will see the confirmation message at the top.
 
-![Role details updated message](<../../../.gitbook/assets/Screenshot 2022-05-17 at 06.02.40.png>)
+![](<../../../.gitbook/assets/Screenshot 2022-06-23 at 15.38.52.png>)
 
 ### Duplicate a Role
 
@@ -65,11 +65,11 @@ You can use the Duplicate button next to each role in the Member Roles list page
 
 ![Member Roles List page with Duplicate Role buttons](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.09.png>)
 
-![Role details page with Duplicate button](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.40 (1).png>)
+![Role details page with Duplicate button](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.40.png>)
 
 Enter a unique name and description and click the **Duplicate Role** button. Group Admin can then edit this role to assign new permissions to it or rescind any permissions already assigned.
 
-![Prompt to enter unique name and description for the copied role](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.40.27 (1) (1) (1) (3).png>)
+![Prompt to enter unique name and description for the copied role](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.40.27 (1) (1) (1) (1) (2).png>)
 
 ### Delete a Role
 
@@ -101,7 +101,7 @@ You can invite new members to the org by assigning them a specified role.
 
 ![Invite new members](<../../../.gitbook/assets/Screenshot 2022-05-17 at 06.47.58.png>)
 
-Choose **Add members** button > **Add existing members** to promote \*\*\*\* current Group Members to an org-specific role.
+Choose **Add members** button > **Add existing members** to promote current Group Members to an org-specific role.
 
 ![](<../../../.gitbook/assets/Screenshot 2022-05-17 at 06.48.56.png>)
 
@@ -114,6 +114,10 @@ Provide a name, choose a role, and click **Create**.
 
 ![Select a Role while creating Org Service Account](<../../../.gitbook/assets/Screenshot 2022-05-31 at 09.42.43.png>)
 
+When you open a role that is assigned to Service Accounts, system would display a warning message. While updating the permissions associated with the role or deleting the role that would lead to reassigning the Service Accounts and users to a new role, be mindful of the potential impact.
+
+![](<../../../.gitbook/assets/Screenshot 2022-06-23 at 15.49.49.png>)
+
 {% hint style="danger" %}
 As a Group Admin, be mindful of the usage of permissions under User Management and Service Account Management while defining a role. A user with sufficient permission can create a service account that can have more privileges than their individual user account. This can pose a security risk for your organization.
 {% endhint %}
@@ -122,13 +126,13 @@ As a Group Admin, be mindful of the usage of permissions under User Management a
 
 Member roles are supported as part of a Customized SSO authentication flow. All new and existing customers who have customized SSO will be able to use new roles they create in their IDP SAML assertions to provision users in their orgs with those roles.
 
-New member role SAML assertions follow Snyk's existing pattern for declaring org memberships in IDP payloads: `{snyk-prefix}-{org-name}-{normalized-role-name},` for example: `snyk-goof-developerreadonly`
+New member role SAML assertions follow Snyk's existing pattern for declaring org memberships in IDP payloads: `{snyk-prefix}-{org-name}-{normalized-role-name},` for example: `snyk-goof-developer_readonly`
 
 * snyk-prefix: `snyk`
 * org-name: `goof`
-* role-name: `developerreadonly`
+* role-name: `developer_readonly`
 
-![Normalized name of the role for the IDP SAML assertion](<../../../.gitbook/assets/Screenshot 2022-05-18 at 07.39.18.png>)
+![](<../../../.gitbook/assets/Screenshot 2022-06-23 at 16.31.11.png>)
 
 ### Sample Roles
 
@@ -176,7 +180,7 @@ For additional operations on the Dashboard add:
 * `Add Project`
 * `Create Pull Requests`
 
-#### Read-only Tester
+#### Read-only CLI Tester
 
 Create a new role that blocks use of Snyk Monitor.
 
@@ -184,7 +188,18 @@ Permissions:
 
 * `View Organization`
 * `Test Packages`
-* `View Project`
+* `Test Project`
+* `View Preview Features`
+
+**Full Access CLI Tester**
+
+Create a new role that can use Snyk Test and Snyk Monitor.
+
+Permissions:
+
+* `View Organization`
+* `Test Packages`
+* `Add Project`
 * `Test Project`
 * `View Preview Features`
 
