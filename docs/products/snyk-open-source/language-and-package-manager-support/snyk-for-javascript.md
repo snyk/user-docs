@@ -13,6 +13,7 @@ Features might not be available, depending on your subscription plan.
 | --------------------------- | ------------------------ | ------------------------ | ----------------------------- | ------- |
 | npm                         | ✔︎                       | ✔︎                       | ✔︎                            | ✔       |
 | Yarn                        | ✔︎                       | ✔︎                       | ✔︎                            | ✔︎      |
+| Yarn v2                     | ✔︎                       | ✖️                       | ✔︎                            | ✖️      |
 | Yarn Workspaces             | ✔︎                       | ✔︎                       | ✔                             | ✖️      |
 
 ### How it works
