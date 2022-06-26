@@ -6,7 +6,7 @@ Snyk Code enables you to test the source code of your repositories via the Snyk 
 
 * When testing a folder, all its sub-folders and files will be tested as well.
 * To exclude certain directories or files from the Snyk Code CLI test, you can use the following Exclusion methods:
-  * Using the CLI `snyk ignore --file-path` command – see [Excluding directories and files from the Snyk Code test](https://docs.snyk.io/products/snyk-code/cli-for-snyk-code/excluding-directories-and-files-from-the-snyk-code-test).
+  * Using the CLI `snyk ignore --file-path` command – see [Excluding directories and files from the Snyk Code test](excluding-directories-and-files-from-the-snyk-code-cli-test.md).
   * Manually creating a `.snyk` file in the tested folder – see [Excluding directories and files from the import process](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/excluding-directories-and-files-from-the-import-process).
 
 When testing your repository code via the CLI, you can:
