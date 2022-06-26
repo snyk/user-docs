@@ -26,6 +26,8 @@ The full details of the discovered issue are displayed:
 
 If you want to merge PRs that have security issues, and therefore were failed by Snyk Code, you can mark them as Successful. When these issues will be marked as Successful, Snyk Code will pass them in your SCM and will allow you to merge them.
 
+The **Mark as successful** action does NOT ignore the issue, but only allows it to pass in the current PR branch. If this issue will not be fixed, it will show up again in future commits and in the repository tests, once it will be merged into the target branch.
+
 **To mark failed PR checks as successful:**
 
 1\. On the **SAST check** page header, click the **Mark as successful in SCM** button on the right:
