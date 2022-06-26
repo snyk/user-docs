@@ -4,14 +4,14 @@
 This Exclusion method is applicable to Snyk Code only.
 {% endhint %}
 
-When you import a repository to be tested by Snyk Code, you can exclude certain directories and files from the import by using the `.`**`snyk`** file. The `.snyk` file is a YAML policy file that can contain shell matching patterns (regular expressions), which allow you to specify the directories and files you want to exclude from the import process. The `.snyk` file should be created in the repository you intend to import.
+When you import a repository to be tested by Snyk Code, you can exclude certain directories and files from the import by using the **`.snyk`** file. The `.snyk` file is a YAML policy file that can contain shell matching patterns (regular expressions), which allow you to specify the directories and files you want to exclude from the import process. The `.snyk` file should be created in the repository you intend to import.
 
 <mark style="color:red;">**Important!**</mark>
 
 * <mark style="color:red;">In Snyk Code, the</mark> <mark style="color:red;"></mark><mark style="color:red;">`.snyk`</mark> <mark style="color:red;"></mark><mark style="color:red;">file can ONLY be used for excluding directories and files from import. It CANNOT be used to ignore vulnerabilities or for any other action as in other Snyk products.</mark>
 * <mark style="color:red;">Currently, the Exclude option in the</mark> <mark style="color:red;"></mark><mark style="color:red;">`.snyk`</mark> <mark style="color:red;"></mark><mark style="color:red;">file is applicable to the Snyk Web UI and CLI Environments. It is NOT applicable to working with Snyk Code via the IDE Environment.</mark>
 
-**Note**: You can also use the instructions in this section to exclude directories and files from the [Snyk Code CLI test](../../../cli-for-snyk-code/testing-your-source-code-via-the-cli.md), by creating the .snyk file in your tested repository.
+**Note**: You can also use the instructions in this section to exclude directories and files from the [Snyk Code CLI test](../../../cli-for-snyk-code/testing-your-source-code-via-the-cli.md), by creating the `.snyk` file in your tested repository.
 
 ### **The Exclusion Syntax of the .snyk File**
 
