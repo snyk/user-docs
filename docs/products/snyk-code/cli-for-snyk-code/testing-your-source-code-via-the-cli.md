@@ -9,7 +9,10 @@ Snyk Code enables you to test the source code of your repositories via the Snyk 
   * Using the CLI `snyk ignore --file-path` command – see [Excluding directories and files from the Snyk Code test](https://docs.snyk.io/products/snyk-code/cli-for-snyk-code/excluding-directories-and-files-from-the-snyk-code-test).
   * Manually creating a `.snyk` file in the tested folder – see [Excluding directories and files from the import process](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/excluding-directories-and-files-from-the-import-process).
 
-When testing your repository code via the CLI, you can test it directly from its root folder or test it from another location.
+When testing your repository code via the CLI, you can:
+
+* Test the repository directly from its root folder (see below).
+* [Test the repository from another location](testing-your-source-code-via-the-cli.md#testing-a-repository-from-a-different-location).
 
 ### **Testing a repository from its root folder**
 
@@ -36,8 +39,6 @@ snyk code test
 Snyk Code tests the **snyk-goof** repository, and displays the vulnerability issue that were discovered in the terminal:
 
 ![](<../../../.gitbook/assets/snyk Code - CLI - Test - From root folder.png>)
-
-&#x20;
 
 ### **Testing a repository from a different location**
 
