@@ -233,7 +233,7 @@
       * [Setting the default organization for all CLI tests](products/snyk-code/cli-for-snyk-code/before-you-start-set-the-organization-for-the-cli-tests/setting-the-default-organization-for-all-cli-tests.md)
       * [Setting an organization for a specific CLI test](products/snyk-code/cli-for-snyk-code/before-you-start-set-the-organization-for-the-cli-tests/setting-an-organization-for-a-specific-cli-test.md)
     * [Testing your source code via the CLI](products/snyk-code/cli-for-snyk-code/testing-your-source-code-via-the-cli.md)
-    * [Excluding directories and files from the Snyk Code test](products/snyk-code/cli-for-snyk-code/excluding-directories-and-files-from-the-snyk-code-test.md)
+    * [Excluding directories and files from the Snyk Code CLI test](products/snyk-code/cli-for-snyk-code/excluding-directories-and-files-from-the-snyk-code-cli-test.md)
     * [Understanding the Snyk Code CLI results](products/snyk-code/cli-for-snyk-code/snyk-code-cli-results.md)
     * [Working with the Snyk Code CLI results](products/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/README.md)
       * [Displaying only discovered issues above a specific severity level](products/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/displaying-only-discovered-issues-above-a-specific-severity-level.md)
