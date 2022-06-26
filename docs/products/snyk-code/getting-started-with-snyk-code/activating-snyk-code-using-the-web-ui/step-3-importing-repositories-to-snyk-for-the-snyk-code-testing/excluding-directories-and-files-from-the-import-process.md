@@ -1,15 +1,19 @@
 # Excluding directories and files from the import process
 
-When you import a repository to be tested by Snyk Code, you can exclude certain directories and files from the import by using the .**snyk** file. The .snyk file is a YAML policy file that can contain shell matching patterns (regular expressions), which allow you to specify the directories and files you want to exclude from the import process. The .snyk file should be created in the repository you intend to import.
+{% hint style="info" %}
+This Exclusion method is applicable to Snyk Code only.
+{% endhint %}
+
+When you import a repository to be tested by Snyk Code, you can exclude certain directories and files from the import by using the `.`**`snyk`** file. The `.snyk` file is a YAML policy file that can contain shell matching patterns (regular expressions), which allow you to specify the directories and files you want to exclude from the import process. The `.snyk` file should be created in the repository you intend to import.
 
 <mark style="color:red;">**Important!**</mark>
 
-* <mark style="color:red;">In Snyk Code, the .snyk file can ONLY be used for excluding directories and files from import. It CANNOT be used to ignore vulnerabilities or for any other action as in other Snyk products.</mark>
-* <mark style="color:red;">Currently, the Exclude option in the .snyk file is applicable to the Snyk Web UI and CLI Environments. It is NOT applicable to working with Snyk Code via the IDE Environment.</mark>
+* <mark style="color:red;">In Snyk Code, the</mark> <mark style="color:red;"></mark><mark style="color:red;">`.snyk`</mark> <mark style="color:red;"></mark><mark style="color:red;">file can ONLY be used for excluding directories and files from import. It CANNOT be used to ignore vulnerabilities or for any other action as in other Snyk products.</mark>
+* <mark style="color:red;">Currently, the Exclude option in the</mark> <mark style="color:red;"></mark><mark style="color:red;">`.snyk`</mark> <mark style="color:red;"></mark><mark style="color:red;">file is applicable to the Snyk Web UI and CLI Environments. It is NOT applicable to working with Snyk Code via the IDE Environment.</mark>
 
 ### **The Exclusion Syntax of the .snyk File**
 
-**Use the following syntax to exclude files and directories via the .snyk file:**
+**Use the following syntax to exclude files and directories via the `.snyk` file:**
 
 <mark style="color:green;"># Snyk (https://snyk.io) policy file</mark>
 
@@ -45,14 +49,14 @@ global:
 
 **Notes**:
 
-* The path in the rule should be relative to the .snyk file location.
+* The path in the rule should be relative to the `.snyk` file location.
 * All rules must have a preceding dash to be valid: - \<Exclusion\_rule>
 * Any rule beginning with an asterisk must be wrapped in quotes. For example:\
   \- ”\*/src”
 * Indentations –
-  * When using the syntax in the .snyk YAML file, pay careful attention to new lines and their indentation. Using the wrong indentation will prevent the execution of your excluding specification.
+  * When using the syntax in the `.snyk` YAML file, pay careful attention to new lines and their indentation. Using the wrong indentation will prevent the execution of your excluding specification.
   * Do NOT use tabs for indentation. Use only spaces for indentation.
-  * To verify that you are using the syntax correctly, you can use a YAML Validator, like the [YAML Lint](http://www.yamllint.com/). Be aware that some YAML Validators do not differentiate between the use of tabs and spaces for indentation. If you use tabs, a Validator may approve the syntax, but the exclude specifications will not be executed.&#x20;
+  * To verify that you are using the syntax correctly, you can use a YAML Validator, like the [YAML Lint](http://www.yamllint.com/). Be aware that some YAML Validators do not differentiate between the use of tabs and spaces for indentation. If you use tabs, a Validator may approve the syntax, but the exclude specifications will not be executed.
 * For more information on the syntax of shell matching patterns, see for example:
   * GNU Org - [Shell Pattern Matching](https://www.gnu.org/software/findutils/manual/html\_node/find\_html/Shell-Pattern-Matching.html)
   * Docstore - [Pattern Matching Quick Reference with Examples](https://docstore.mik.ua/orelly/unix/upt/ch26\_10.htm)
@@ -67,7 +71,7 @@ For example:
 
 ![](<../../../../../.gitbook/assets/Snyk Code - Exlude from Import - .snyk file creation - 2.png>)
 
-2\. On the .snyk file, specify the directories and/or files you want to exclude from import according to the following syntax:
+2\. On the `.snyk` file, specify the directories and/or files you want to exclude from import according to the following syntax:
 
 ```yaml
 # Snyk (https://snyk.io) policy file
@@ -97,8 +101,6 @@ exclude:
 
 Your repository is imported to Snyk, without the directories and/or files you selected to exclude.
 
-
-
 ### **Example**: **Excluding 2 files from the Snyk Code analysis**
 
 We have a repository called “**snyk-goof**”, which we want to test for vulnerabilities using Snyk Code. After we imported this repository to Snyk, we get a list of 10 detected vulnerability issues, which were found in 3 files:
@@ -107,11 +109,11 @@ We have a repository called “**snyk-goof**”, which we want to test for vulne
 
 Now we want to exclude the **app.js** and **db.js** files from the Snyk Code analysis. To achieve that, we perform the following:
 
-1\. We create a **.snyk** file in the **snyk-goof** repository in GitHub:
+1\. We create a **`.snyk`** file in the **snyk-goof** repository in GitHub:
 
 ![](<../../../../../.gitbook/assets/Snyk Code - Exlude from Import - Example - .snyk file creation.png>)
 
-2\. In the .snyk file, we enter the following commands to exclude the **app.js** and **db.js** files from the import:
+2\. In the `.snyk` file, we enter the following commands to exclude the **app.js** and **db.js** files from the import:
 
 ![](<../../../../../.gitbook/assets/Snyk Code - Exlude from Import - Example - Command.png>)
 
