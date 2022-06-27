@@ -297,7 +297,7 @@ Currently the following options are not supported:
 
 ## Options for scanning using `--unmanaged`
 
-The following `snyk test`options can be used.
+The following standard `snyk test` options can be used with `--unmanaged` as documented in this help.
 
 `--org=<ORG_ID>`
 
@@ -305,7 +305,11 @@ The following `snyk test`options can be used.
 
 `--json-file-output=<OUTPUT_FILE_PATH>`
 
-There are also special options.
+`--remote-repo-url=<URL>`
+
+`--severity-threshold=<low|medium|high|critical>`
+
+There are also special options as follows.
 
 ### `--target-dir`
 
@@ -315,9 +319,21 @@ Alternatively, run `snyk test --unmanaged`
 
 ### `--max-depth`
 
-`Usage: --max-depth=1` Specify the maximum level of archive extraction.
+Specify the maximum level of archive extraction.
+
+Example: `--max-depth=1`&#x20;
 
 Use 0 to disable archive extraction completely.
+
+### `--print-dep-paths`
+
+Display dependencies.
+
+Use use this option to see what files contributed to each dependency identified.
+
+To see how confident Snyk is about the identified dependency and its version, use the `--print-deps` or `--print-dep-paths` option.
+
+For more information on uses of CLI options for C/C++ projects see [Snyk for C / C++](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++)
 
 ## Options for build tools
 
