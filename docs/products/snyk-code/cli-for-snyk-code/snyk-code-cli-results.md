@@ -48,11 +48,23 @@ The summary of the test findings includes the following details:
 
 The `snyk code test` command ends with one of the following exit codes:
 
-**0**: Success, no vulnerabilities were found.
+**0**: No errors, and no action is needed - the `snyk code test` was completed successfully, and no vulnerability issues were found in the tested folder.
 
-**1**: Action needed, vulnerabilities were found.
+**1**: No errors, but action is needed - the `snyk code test` was completed successfully, and vulnerability issues were found in the tested folder.
 
-**2**: Failure, try to re-run the command.
+**2**: Failure - the `snyk code test` failed. Try to re-run the command.
 
-**3**: Failure, no supported files were found.
+**3**: Failure - the `snyk code test` failed, since no supported files were found.
+
+**Note**: for more information on supported files, see [Snyk Code - Supported languages and frameworks.](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support)
+
+&#x20;
+
+**To display in the terminal the exit code of a Snyk Code test:**
+
+* Enter:
+
+```
+snyk code test -d
+```
 
