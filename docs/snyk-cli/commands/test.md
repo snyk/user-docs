@@ -321,7 +321,7 @@ Alternatively, run `snyk test --unmanaged`
 
 Specify the maximum level of archive extraction.
 
-Example: `--max-depth=1`&#x20;
+Usage: `--max-depth=1`&#x20;
 
 Use 0 to disable archive extraction completely.
 
