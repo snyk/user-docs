@@ -32,7 +32,7 @@ More information:
 
 #### How to structure your account
 
-There are different ways to arrange the organizations in your account. Before inviting members to your account or scanning for issues, plan which organizations you'll need so that team members can access the correct projects as you add them to your account.
+There are different ways to arrange the organizations in your account. Before inviting members to your account or scanning for issues, plan which organizations you'll need based on how you want to allow permissions and access to projects. The way you set policies are the next order of consideration. And how you want to report on projects are the third consideration.&#x20;
 
 More information:
 
