@@ -387,6 +387,7 @@
     * [Integrating IaC custom rules within a pipeline](products/snyk-infrastructure-as-code/custom-rules/integrating-iac-custom-rules-within-a-pipeline.md)
     * [SDK Reference](products/snyk-infrastructure-as-code/custom-rules/sdk-reference.md)
   * [Detect drift and manually created resources](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/README.md)
+    * [Get started with Snyk IaC Describe on AWS](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/get-started-with-snyk-iac-describe-on-aws.md)
     * [Configure cloud providers](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/configure-cloud-providers/README.md)
       * [Configure AWS provider](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/configure-cloud-providers/configure-aws-provider.md)
       * [Configure Azure provider](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/configure-cloud-providers/configure-azure-provider.md)
