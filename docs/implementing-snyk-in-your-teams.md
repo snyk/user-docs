@@ -23,7 +23,7 @@ Get off to the right start with a few planning steps before inviting your teams 
 
 #### Where to implement Snyk
 
-As you prepare for your teams to start adopting Snyk as part of a secure development workflow, you’ll want to decide where in your software development lifecycle you are implementing Snyk and which of the Snyk platform products you are using.
+As you prepare for your teams to start adopting Snyk as part of a secure development workflow, you’ll want to decide where in your software development lifecycle you are implementing Snyk and which of the Snyk platform products you are using. You'll also want to roll Snyk out in phases based on where you are with developer security (awareness, visibility, preventing issues, fixing the backlog, optimizing).
 
 More information:
 
