@@ -161,8 +161,6 @@ In the settings, you can also choose which results you want to receive:
 **Solution** This issue related to CLI file and its integrity. Remove CLI from in\
 `%HOMEPATH%\AppData\Local\Snyk\snyk-win.exe`. Close and open Snyk tool window for start CLI download.
 
-## How tos
-
 **Snyk Code no supported code available**
 
 **Solution** Check .gitignore and .dcignore file rules. Check if there are any rules that exclude your project's source files.
