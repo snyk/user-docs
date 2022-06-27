@@ -171,7 +171,7 @@ Fail only when there are vulnerabilities that can be fixed.
 * `upgradable`: fail when there is at least one vulnerability that can be upgraded.
 * `patchable`: fail when there is at least one vulnerability that can be patched.
 
-If vulnerabilities do not have a fix and this option is being used, tests pass.
+To fail on any vulnerability (the default behavior), do not use the `--fail-on` option. If vulnerabilities do not have a fix and this option is being used, tests pass.
 
 ## Options for Maven projects
 
