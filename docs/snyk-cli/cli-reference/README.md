@@ -153,7 +153,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--severity-threshold=<low|medium|high|critical>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`code`](https://docs.snyk.io/snyk-cli/commands/code), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
-`--fail-on=<all|upgradable|patchable>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test)
+`--fail-on=<all|upgradable|patchable>`: [`container`](https://docs.snyk.io/snyk-cli/commands/container) (patchable does not apply, [`test`](https://docs.snyk.io/snyk-cli/commands/test)
 
 `--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
@@ -315,13 +315,19 @@ Currently the following options are not supported:
 
 `--json`: [`test`](../commands/test.md), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)``
 
-`--json-file-output=<OUTPUT_FILE_PATH>`: [`test`](../commands/test.md), [monitor](../commands/monitor.md)
+`--json-file-output=<OUTPUT_FILE_PATH>`: [`test`](../commands/test.md)
+
+`--remote-repo-url=<URL>`: [`test`](../commands/test.md)
+
+`--severity-threshold=<low|medium|high|critical>:` [`test`](../commands/test.md)
 
 `--target-reference=<TARGET_REFERENCE>`: [`test`](../commands/test.md), [monitor](../commands/monitor.md)
 
 `--target-dir`: [`test`](../commands/test.md), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)``
 
 `--max-depth`: [`test`](../commands/test.md), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)``
+
+`--print-dep-paths:` [`test`](../commands/test.md), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)``
 
 `--project-name=c-project`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)``
 
