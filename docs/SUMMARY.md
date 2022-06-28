@@ -453,7 +453,7 @@
     * [Snyk groups overview](features/user-and-group-management/managing-groups-and-organizations/snyk-groups-overview.md)
     * [Create a new Snyk group](features/user-and-group-management/managing-groups-and-organizations/create-a-new-snyk-group.md)
     * [What’s a Snyk organization?](features/user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization.md)
-    * [Snyk groups: switch between groups and orgs](features/user-and-group-management/managing-groups-and-organizations/snyk-groups-switch-between-groups-and-orgs.md)
+    * [Group and organization navigation](features/user-and-group-management/managing-groups-and-organizations/snyk-groups-switch-between-groups-and-orgs.md)
     * [Manage Snyk organizations](features/user-and-group-management/managing-groups-and-organizations/manage-snyk-organizations.md)
     * [Service accounts](features/user-and-group-management/managing-groups-and-organizations/service-accounts.md)
   * [Managing notifications](features/user-and-group-management/notifications/README.md)
