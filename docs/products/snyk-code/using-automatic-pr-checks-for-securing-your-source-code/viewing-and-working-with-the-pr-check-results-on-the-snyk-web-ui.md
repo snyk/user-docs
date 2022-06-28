@@ -36,11 +36,11 @@ The **Mark as successful** action does NOT ignore the issue, but only allows it 
 
 2\. On the confirmation message that appears, click **OK**:
 
-!\[Graphical user interface, text, application, email
+![Graphical user interface, text, application, email
 
-Description automatically generated]\(<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful - message.png>)
+Description automatically generated](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful - message (2).png>)
 
-A message appears on the **SAST check** page header, informing you that the failed PRs are now marked as successful:
+&#x20;A message appears on the **SAST check** page header, informing you that the failed PRs are now marked as successful:
 
 ![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful - Confirmation on the UI.png>)
 
