@@ -19,4 +19,3 @@ When setting an organization for the CLI tests you have two options:
 
 When setting an organization for the CLI tests, both globally and locally, you can use either the organization ID or the organization internal name. You can [find these details in the **Settings** page of the required organization on the Snyk Web U](finding-the-snyk-id-and-internal-name-of-an-organization.md)I.
 
-\*\*\*\*
