@@ -26,7 +26,7 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
 Note that _**policyOrgs**_ is a list of organization public IDs. You can add more than one organization to use the auto-import and auto-delete capabilities. You can locate this public ID under your organization's settings page.
 
 {% hint style="info" %}
-If you want to import Kubernetes workloads into multiple Snyk organizations, you must be business or enterprise customers. Only Snyk organizations that share the same Kubernetes integration ID can provision the Snyk controller to do so. More information on how to share the same integration ID can be found in [Clone an integration across your Snyk orgs](../../../../../features/integrations/managing-integrations/clone-an-integration-across-your-snyk-orgs.md).
+Only Snyk organizations that share the same Kubernetes integration ID can provision the Snyk controller to do so. More information on how to share the same integration ID can be found in [Clone an integration across your Snyk orgs](../../../../../features/integrations/managing-integrations/clone-an-integration-across-your-snyk-orgs.md).
 {% endhint %}
 
 ## Annotated Import
@@ -57,8 +57,8 @@ Annotate any of the following workload types:
 **The steps follow:**
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
-2. Click on settings ![](../../../../../.gitbook/assets/cog\_icon.png) > **General**.&#x20;
-3. Copy the **Organization ID** value.&#x20;
+2. Click on settings ![](../../../../../.gitbook/assets/cog\_icon.png) > **General**.
+3. Copy the **Organization ID** value.
 4. Add an annotation to the workload with the key `orgs.k8s.snyk.io/v1`, entering the Organization ID as the value in a comma-separated list.
 
 You can also annotate a single workload to be added to multiple organizations.
