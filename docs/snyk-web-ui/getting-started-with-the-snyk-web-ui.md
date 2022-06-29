@@ -6,7 +6,7 @@ description: Introduction to what you can do in the Snyk Web UI
 
 ## Accessing the Snyk Web UI
 
-After you [sign up for a Snyk account, authenticate and log in to Snyk](../getting-started.md), the Web UI opens to the [Dashboard](broken-reference/), with a wizard to guide you through setup steps:
+After you [sign up for a Snyk account, authenticate and log in to Snyk](../getting-started/), the Web UI opens to the [Dashboard](broken-reference/), with a wizard to guide you through setup steps:
 
 1. Identifying where the code you want to monitor in Snyk is located.
 2. Defining which projects within your code you want Snyk to scan.

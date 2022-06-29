@@ -27,7 +27,7 @@ As you prepare for your teams to start adopting Snyk as part of a secure develop
 
 More information:
 
-* Docs: [Integrations](products/snyk-code/key-features/integrations.md)
+* Docs: [Integrations](../products/snyk-code/key-features/integrations.md)
 * Snyk Training: [Ways to integrate Snyk at your company](http://training.snyk.io/learn/course/ways-to-use-snyk/ways-to-integrate-snyk-at-your-company/snyk-across-the-sdlc?page=1)
 
 #### How to structure your account
@@ -36,7 +36,7 @@ There are different ways to arrange the organizations in your account. Before in
 
 More information:
 
-* Docs: [User and group management](features/user-and-group-management/)
+* Docs: [User and group management](../features/user-and-group-management/)
 * Training: [Snyk account structure](http://training.snyk.io/learn/course/snyk-account-structure/account-structure-considerations/an-overview-of-account-structure?page=1)
 
 #### How to access Snyk
@@ -47,7 +47,7 @@ If using SSO, after you set it up, you'll need to remove any social login accoun
 
 More information:
 
-* Docs: [Setting up Single Sign-On (SSO) for authentication](features/user-and-group-management/setting-up-sso-for-authentication/)
+* Docs: [Setting up Single Sign-On (SSO) for authentication](../features/user-and-group-management/setting-up-sso-for-authentication/)
 * Training: [SSO, authentication and user provisioning](http://training.snyk.io/learn/course/sso/authentication-to-snyk/an-overview-of-authentication-and-provisioning?page=1)
 
 #### Plan for importing projects
@@ -69,7 +69,7 @@ Snyk includes a number of automations for Snyk Open Source when integrated with 
 
 More information:
 
-* Docs: [Git repository (SCM) integrations](features/integrations/git-repository-scm-integrations/)
+* Docs: [Git repository (SCM) integrations](../features/integrations/git-repository-scm-integrations/)
 * Training: [Source Code Manager Configurations](http://training.snyk.io/learn/course/source-code-manager-configurations/integration-scenarios/overview?page=1)
 
 If you are using an on-premise source code manager, learn more about Snyk Broker:
@@ -90,7 +90,7 @@ Snyk sends teams different types of alerts based on settings defined for the gro
 
 More information:
 
-* Docs: [Managing notifications](features/user-and-group-management/notifications/)
+* Docs: [Managing notifications](../features/user-and-group-management/notifications/)
 * Training: [Notifications](http://training.snyk.io/learn/course/notifications/snyk-notification-configuration/an-overview-of-notifications?page=1)
 
 #### Set ignore permissions
@@ -164,7 +164,7 @@ Empower developers to find and fix issues early in the development process by ad
 
 More information:
 
-* Docs: [Snyk for IDEs](ide-tools/)
+* Docs: [Snyk for IDEs](../ide-tools/)
 * Training: [Introduction to using Snyk in an IDE](http://training.snyk.io/learn/course/introduction-to-using-snyk-in-an-ide/snyk-plugin-for-ide/authenticate-plug-in-to-snyk?page=1)
 
 #### Use Snyk in the CLI
@@ -182,5 +182,5 @@ The Snyk Web UI scans different types of projects (depending on which product yo
 
 More information:
 
-* Docs: [Snyk Web UI](snyk-web-ui/)
+* Docs: [Snyk Web UI](../snyk-web-ui/)
 * Training: [Introduction to the Snyk UI](http://training.snyk.io/learn/course/introduction-to-the-snyk-ui/snyk-log-in-details/log-in-tasks-and-considerations?page=1)

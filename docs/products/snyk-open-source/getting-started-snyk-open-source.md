@@ -15,7 +15,7 @@ Ensure you have:
 
 * A code project using open source packages, on a supported SCM system such as GitHub. See [git-repository-scm-integrations](../../features/integrations/git-repository-scm-integrations/ "mention").
 * A supported language and package manager, such as Java. See [language-and-package-manager-support](language-and-package-manager-support/ "mention").
-* A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [getting-started.md](../../getting-started.md "mention")).
+* A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [getting-started](../../getting-started/ "mention")).
 
 ### Stage 1: Add source control integration
 
@@ -47,7 +47,7 @@ This also:
 * Sets Snyk to run a regular check ([daily by default](../../features/user-and-group-management/managing-settings/usage-page-details.md#projects)) for vulnerabilities.
 * Creates a [Webhook](../../features/integrations/snyk-webhooks/), so when you change code, Snyk tests your pull / merge requests, to check that new dependencies do not introduce more vulnerabilities.
 
-In **Settings**, optionally choose to: \*\*\*\*
+In **Settings**, optionally choose to:
 
 * Use **Add custom file location** to add any additional dependencies from custom paths.
 * Use **Exclude folders** to list up to 10 folders to exclude from scanning during the import; for example, to shorten scanning time.
