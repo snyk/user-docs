@@ -11,7 +11,7 @@
     * [Severity levels](introducing-snyk/snyks-core-concepts/severity-levels.md)
     * [Running tests](introducing-snyk/snyks-core-concepts/running-tests.md)
     * [Snyk settings](introducing-snyk/snyks-core-concepts/snyk-settings.md)
-    * [Snyk intel vulnerability DB](introducing-snyk/snyks-core-concepts/getting-started-snyk-intel-vuln-db-access.md)
+    * [Snyk Vulnerability Database](introducing-snyk/snyks-core-concepts/getting-started-snyk-intel-vuln-db-access.md)
   * [Snyk Business Trial Limitations](introducing-snyk/snyk-business-trial-limitations.md)
   * [Glossary](introducing-snyk/glossary.md)
   * [Introduction to Snyk targets and projects](introducing-snyk/introduction-to-snyk-projects/README.md)

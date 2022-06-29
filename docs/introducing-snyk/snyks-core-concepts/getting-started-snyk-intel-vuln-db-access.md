@@ -1,28 +1,28 @@
-# Snyk intel vulnerability DB
+# Snyk Vulnerability Database
 
 ## Introduction
 
-Our [vulnerability database](https://security.snyk.io) contains the key security information used by our Snyk products to find and fix code vulnerabilities.
+The [Snyk Vulnerability Database](https://security.snyk.io/) contains the key security information used by Snyk products to find and fix code vulnerabilities.
 
-For customers who already have their own products, you can still benefit from Snyk’s expertise and accumulated knowledge, with access to this database, giving your development teams access to trusted intelligence, allowing them to rapidly secure open source and container code.
+Customers who already have their own products can benefit from Snyk’s expertise and accumulated knowledge with access to this database. This gives your development teams access to trusted intelligence, allowing them to rapidly secure open source and container code.
 
 ## Process overview
 
 1. Snyk helps you to set an integration up for your company.
 2. Snyk provides documentation with instructions for access.
-3. Snyk sends you DB information, typically as a JSON file, containing the DB information (see [sample code](https://snyk.io/partners/api/v4/vulndb/sample.json)) **Note**: we recommend that you save the file in a database.
-4. You write code to use the DB information in your systems.
+3. Snyk sends you database information, typically as a JSON file (see [sample code](https://snyk.io/partners/api/v4/vulndb/sample.json)) **Note**: It is recommends that you save the file in a database.
+4. You write code to use the database information in your systems.
 
-## About the DB
+## About the Snyk Vulnerability Database
 
-A team of security experts and analysts manages Snyk's security database to ensure the database maintains high accuracy and eliminates false positives.
+A team of security experts and analysts manages the Snyk Vulnerability database to ensure the database maintains high accuracy and eliminates false positives.
 
 * All items in the database are analyzed and verified.
-* The team also invests in proprietary research to discover new vulnerabilities. See our [disclosed vulnerability list](https://app.snyk.io/disclosed-vulnerabilities).
+* The team also invests in proprietary research to discover new vulnerabilities. See the Snyk [disclosed vulnerability list](https://app.snyk.io/disclosed-vulnerabilities).
 
 ## Database feeds
 
-Snyk’s security database includes two feeds:
+The Snyk Vulnerability Database includes two feeds:
 
 * [Application security](https://snyk.io/learn/application-security/) vulnerabilities: supporting Snyk Open Source, with manually-curated content and summaries, including code snippets where applicable.
 * Linux OS vulnerabilities, supporting Snyk Container.
