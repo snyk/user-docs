@@ -2,16 +2,17 @@
 
 ## Snyk security and compliance: How does Snyk handle your data?
 
-Snyk is a cloud native application security platform and as such, we place the utmost importance on data security. **Fully understanding your privacy and security needs, the goal of this document is to provide you with transparency as to how and what data is accessed, transferred, and stored by Snyk.**
+Snyk is a developer security platform and as such, we place the utmost importance on data security. **Fully understanding your privacy and security needs, the goal of this document is to provide you with transparency as to how and what data is accessed, transferred, and stored by Snyk.**
 
 The data handled by Snyk will vary depending on the product you are using, how you are integrating with Snyk, and your Snyk deployment. Because Snyk is a fast moving product, the types of data accessed and stored might change with the introduction of a new capability or changes to an existing capability.
 
 ### Flexible deployment options
 
-Snyk customer DevSecOps programs thrive off the fast time-to-value and ease of use from our SaaS model. In case you have further data sovereignty requirements we provide additional deployment options:
+Snyk leverages the latest software development practices and technologies to provide customers with the flexibility to use Snyk’s developer security platform in the manner that best suits the needs of their business:
 
-* **SaaS** - A multi-tenant, fully managed and provisioned by Snyk service. The most common deployment option used by Snyk customers.
-* **SaaS with Broker** - A client service that is installed on your private infrastructure, acting as a proxy between Snyk and your on-premise codebase. The Broker securely handles inbound and outbound connections, encrypting data during transit, and deliberately controlling the access Snyk has to your data. Sensitive credentials stay behind your firewall.
+* **Multi-Tenant SaaS**: The simplest, most common and most cost-effective way to use Snyk’s developer security platform
+* **Single-Tenant SaaS:** Private Cloud - An isolated and fully managed instance of the Snyk developer security platform on AWS.
+* **Snyk Broker**: A client service that is installed on your private infrastructure, acting as a proxy between the Snyk developer security platform (multi or single tenant) and your on-premise codebase. The Snyk Broker securely handles inbound and outbound connections, encrypting data during transit, and deliberately controlling the access Snyk has to your data. Sensitive credentials stay behind your firewall.
 
 **Be sure to reach out to your Snyk contact to find out more details on how these different options can be leveraged to meet your needs.**
 
@@ -40,8 +41,11 @@ We know how important it is for you to protect your data. Our products only acce
 ![](https://snyk.io/wp-content/uploads/shield-snyk-open-source.svg)
 
 * Snyk accesses manifest and build configuration files in order to identify your open source dependencies.
-* In CLI, tests with the `--unmanaged` flag accesses your source code files to convert them to file signatures (hashes), and store the file signatures and file names. Other Snyk Open Source scans do not access your source code.
-* Snyk accesses and stores the names and version numbers of your dependencies. Snyk stores the names of associated licenses, including copyright and attribution information. Snyk accesses and stores repository-specific information.
+* For tests using the `--unmanaged` flag accesses your source code files to convert them to file signatures (hashes), and store the file signatures and file names. Other Snyk Open Source scans do not access your source code.
+* For SCA Scans Snyk does not access your source code
+* Snyk accesses and stores the names and version numbers of your dependencies.&#x20;
+* Snyk stores the names of associated licenses, including copyright and attribution information.&#x20;
+* Snyk accesses and stores repository-specific information.
 * Snyk accesses and stores Git provider push & pull specific information. Examples: contributor name, filenames, timestamps.
 
 **Optional ADD-ONS (opt-in)**
@@ -79,12 +83,6 @@ We know how important it is for you to protect your data. Our products only acce
 **Snyk Infrastructure as Code**
 
 ![](https://snyk.io/wp-content/uploads/shield-snyk-iac.svg)
-
-
-
-**Snyk does not store your Infrastructure as Code files or collect cloud credentials.**&#x20;
-
-**See the following for specific details:**
 
 * CLI scans are performed locally. The contents of your files are not shared or stored by Snyk.
 * Git-based scans require access to your Infrastructure as Code files. Snyk stores them for the duration of the analysis and subsequently deletes them from our system. Your IaC files are not stored by Snyk.
