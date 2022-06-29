@@ -2,7 +2,6 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is currently in Beta.\
 This feature is available for Enterprise customers. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
