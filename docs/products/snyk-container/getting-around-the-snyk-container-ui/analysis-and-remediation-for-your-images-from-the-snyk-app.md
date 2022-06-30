@@ -10,11 +10,11 @@ From the **Projects** page, if the project is imported from a registry integrati
 
 You can filter for all container projects, similar to the following example:
 
-![](<../../../.gitbook/assets/image (10).png>)
+![](<../../../.gitbook/assets/image (69).png>)
 
 When you open any container project, the resulting analysis and fix advice appears in the Snyk Web UI:
 
-![](../../../.gitbook/assets/uuid-069520cd-66e8-9f80-5bcf-c7845009ff54-en.png)
+![](<../../../.gitbook/assets/image (76).png>)
 
 The following information is displayed:
 
@@ -23,10 +23,8 @@ The following information is displayed:
   * Image tag
   * Base Image
   * Total dependencies with known vulnerabilities, and the total number of vulnerabilities
-* Fix advice—if you included your Dockerfile for monitoring, then any available actionable fix advice is displayed. To view all advice, click the **Show more upgrade types** link. The advice offered is dependent on available fixes, and appears similar to the following image:
-
-![](../../../.gitbook/assets/uuid-431ce2b1-e5f0-0025-7932-0171b35cb9bb-en.png)
-
+* Fix advice—if you included your Dockerfile for monitoring, then any available actionable fix advice is displayed. To view all advice, click the **Show more upgrade types** link. The advice offered is dependent on available fixes, and appears similar to the following image:\
+  ![](<../../../.gitbook/assets/image (79).png>)
 * Upgrade suggestions can include:
   * Minor upgrades—the safest and best minor upgrade available
   * Major upgrades—an option for a major upgrade which will reduce more vulnerabilities but with greater risk
@@ -36,9 +34,14 @@ The following information is displayed:
   * the name of the recommended base image version
   * the number of vulnerabilities existent in the recommended upgrade
   * a summary of the vulnerability severities accordingly.
-* Filters—in addition to the other filters available for all supported project types, when you view a container project, you can also filter by:
-  * a specific binary or by OS packages (for binaries/packages containing issues)
-  * Dockerfile instructions - if you attach your Dockerfile, then you can filter to view issues associated only with the base image, or to view Dockerfile-related advice (user instruction), or both
+*   Filters—in addition to the other filters available for all supported project types, when you view a container project, you can also filter by:
+
+    * a specific binary or by OS packages (for binaries/packages containing issues)
+    * Dockerfile instructions - if you attach your Dockerfile, then you can filter to view issues associated only with the base image, or to view Dockerfile-related advice (user instruction), or both
+
+
+
+![](<../../../.gitbook/assets/image (71).png>)
 
 {% hint style="info" %}
 **Note**\
