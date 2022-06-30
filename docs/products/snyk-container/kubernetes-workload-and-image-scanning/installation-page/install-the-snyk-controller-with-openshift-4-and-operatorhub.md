@@ -29,10 +29,10 @@ This section covers:
     kubectl create namespace snyk-monitor
     ```
 
-    **Tip** \
+    **Tip**\
     **1.** Use a unique namespace to isolate the controller resources more easily as generally good practice for Kubernetes applications. Notice our namespace is called `snyk-monitor`, you’ll need this later when configuring other resources.\
     **2.** Cluster scope is the default scope and we recommend you use this when installing the namespace so that we can scan the entire cluster. You can choose namespace scope, in which case the Snyk controller will watch for workloads only in the namespace in which it is deployed.
-4.  The Snyk monitor runs by using your Snyk **Integration ID**, and using a `dockercfg.json` file. \
+4.  The Snyk monitor runs by using your Snyk **Integration ID**, and using a `dockercfg.json` file.\
     \
     <mark style="color:purple;">**Public Container Registry**</mark>\
     Create a Kubernetes secret called `snyk-monitor` containing the Snyk **Integration ID** from the previous step and run the following command:
@@ -62,7 +62,7 @@ This section covers:
     ```
 
     \
-    If you are using **Artifactory Container Registry to host multiple private repositories,** your `dockercfg.json` file should look like this:&#x20;
+    If you are using **Artifactory Container Registry to host multiple private repositories,** your `dockercfg.json` file should look like this:
 
     ```
     {
@@ -83,10 +83,11 @@ This section covers:
     ```
     kubectl create secret generic snyk-monitor -n snyk-monitor --from-file=dockercfg.json --from-literal=integrationId=abcd1234-abcd-1234-abcd-1234abcd1234
     ```
-5. Log in to your OpenShift Container Platform (OCP) web console, navigate to OperatorHub and then search for **Snyk** to install the **Snyk Operator**.
+5. Log in to your OpenShift Container Platform (OCP) web console, navigate to OperatorHub and then search for **Snyk** to install the desired version of **Snyk Operator:**
+   * The **Marketplace** version is certified by Red Hat and listed in the OpenShift marketplace, and is the recommended installation option.
+   * The **Community** version is released more frequently and may be more up-to-date, but may not yet have been certified for OpenShift.
 6. Double-check installation was successful from the **Installed Operators** area
-7.  Now, from the **Subscription** tab, create an Operator Subscription for the **Snyk controller**. Select "A specific namespace on the cluster" or leave the default “All namespaces on the cluster” based on your needs.\
-
+7.  Now, from the **Subscription** tab, create an Operator Subscription for the **Snyk controller**. Select "A specific namespace on the cluster" or leave the default “All namespaces on the cluster” based on your needs.
 
     **Note**:\
     Snyk always uses a stable channel when scanning your workloads
