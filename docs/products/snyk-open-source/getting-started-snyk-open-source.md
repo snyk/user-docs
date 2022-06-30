@@ -15,7 +15,7 @@ Ensure you have:
 
 * A code project using open source packages, on a supported SCM system such as GitHub. See [git-repository-scm-integrations](../../features/integrations/git-repository-scm-integrations/ "mention").
 * A supported language and package manager, such as Java. See [language-and-package-manager-support](language-and-package-manager-support/ "mention").
-* A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [getting-started](../../getting-started/ "mention")).
+* A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [getting-started.md](../../getting-started.md "mention")).
 
 ### Stage 1: Add source control integration
 
@@ -98,6 +98,6 @@ To fix vulnerabilities:
 5. Snyk now actions this PR, then a results screen appears.
 6. Optionally, select the **Files changed** tab to see details of the changes made.
 
-![](<../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22 (1).png>)
+![](../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22.png)
 
 See [remediate-your-vulnerabilities.md](../../features/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities.md "mention") for more details.
