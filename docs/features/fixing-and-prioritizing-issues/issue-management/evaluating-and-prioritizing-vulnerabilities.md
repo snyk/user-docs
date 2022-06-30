@@ -17,7 +17,7 @@ These values are available:
 * **No known exploit:** Snyk did not find a proof-of-concept or a published exploit for this vulnerability.
 * **No data**: The issue is not a vulnerability (but rather, a license issue or a vulnerability advisory)
 
-![Exploit Maturity in the Vulnerability Card](<../../../.gitbook/assets/image (83).png>)
+![Exploit Maturity in the Vulnerability Card](<../../../.gitbook/assets/image (83) (2).png>)
 
 The **Exploit maturity** filter is available from any detailed **Projects** page, from our **Reports,** and from our **Vulnerabilities DB**. Furthermore, an API is now available.
 

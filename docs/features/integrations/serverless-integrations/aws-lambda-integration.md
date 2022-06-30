@@ -12,8 +12,6 @@ You have the option of establishing cross-account access to enable Snyk's AWS La
 
 You will need your Snyk **Organization ID** and AWS IAM [role ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference\_identifiers.html#identifiers-arns) to complete the integration. The role ARN will be provided for you in the AWS CloudFormation Console's Output tab.
 
-![](../../../.gitbook/assets/cloudformation-launch-stack.png)
-
 ## **Manual process**
 
 Configure the integration with these two parts:
@@ -43,7 +41,8 @@ Snyk currently supports integration with AWS Lambda for Node, Ruby, and Java pro
 2. From AWS, copy the **Role ARN** key that appears at the top of the **Summary** section (inside the **Role** area still; in the format arn:aws:iam:::role/). Save this value to paste in Snyk soon.
 3. Now, log in to [your Snyk account](https://app.snyk.io).
 4. Navigate to **Integrations** from the menu bar at the top, find and click the **AWS Lambda** option: ![image1.png](../../../.gitbook/assets/uuid-f045ee35-1ddd-34e1-bbe3-f225bb9426e4-en.png) The **AWSLambda** configuration page in the **Settings** area loads, with the **External ID** value automatically populated for you based on the Snyk organization that you’re configuring.
-5. Paste the **Role ARN** that you saved into the **ARN** field.
+5. Paste the **Role ARN** that you saved into the **ARN** field.\
+   ![](<../../../.gitbook/assets/image (83).png>)
 6. Click **Save**. Snyk tests the connection values and the page reloads, now displaying AWS Lambda integration details as you entered them. A confirmation message that the details were saved also appears in green at the top of the screen.
 
 ![AWS Lambda integration details](../../../.gitbook/assets/uuid-66a8f525-f274-1db4-f691-ca8112fbd8af-en.png)
@@ -89,8 +88,6 @@ This section generally describes how to navigate the AWS IAM Console for these p
    5. From the list that is displayed, select the **SnykReadOnlyForLambda** policy you just created.
    6. Skip to the last step **(Review)** of the process.
    7. Name the role **SnykLambdaServiceRole** and then finish creating it.
-
-![Snyk AWS account ID](../../../.gitbook/assets/snyk\_aws\_account\_id.png)
 
 ## **Add projects to Snyk**
 
