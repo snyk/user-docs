@@ -28,7 +28,11 @@ Project attributes are static and non-configurable fields which allow you to add
 * Hosted
 * Distributed
 
-The ability to assign and remove values from attributes, is available in the [API](https://snyk.docs.apiary.io/#reference/projects/project-attributes) and the [CLI](../../../getting-started/introduction-to-snyk-projects/view-project-information/broken-reference/). The ability to filter projects by their values is also available in the [API](https://snyk.docs.apiary.io/#reference/projects/project-attributes).
+{% hint style="info" %}
+Filtering is available in projects by their values from [Snyk's REST API](../../../features/snyk-api-info/).
+
+Assigning and removing attribute values can be done in [Snyk's CLI](../../../snyk-cli/) or the API.&#x20;
+{% endhint %}
 
 ## **Assigning values to attributes**
 
