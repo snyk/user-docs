@@ -12,10 +12,10 @@ For a list of supported container registries, consult our [image scanning librar
 
 To identify vulnerable base images, you can use one of these methods:
 
-* **Auto-detection**: When Snyk analyses your container image, relevant metadata is extracted from the image manifest, and the base image is automatically detected. This method analyses **rootfs** layers from the image manifest, which can be equivalent to more than one images/ image tags in DockerHub.&#x20;
+* **Auto-detection**: When Snyk analyses your container image, relevant metadata is extracted from the image manifest, and the base image is automatically detected. This method analyses **rootfs** layers from the image manifest, which can be equivalent to more than one images/ image tags in DockerHub.
 * **Dockerfile**: Snyk can also detect vulnerable base images with the use of your Dockerfile. It can either be attached with a **--file** flag to your CLI **snyk container** scan, linked from an SCM through your project settings, or the Dockerfile can be detected and scanned when you import a Git repository. This method can be more accurate, but requires an additional step compared to auto-detection.
 
-For either method, a “project” in the Snyk UI is created.&#x20;
+For either method, a “project” in the Snyk UI is created.
 
 {% hint style="info" %}
 Snyk currently only supports a subset of official Docker images. The list of Snyk's supported images can be found [here](https://snyk.io/docker-images/).
@@ -29,6 +29,6 @@ This allows you to see vulnerability counts in minor and major upgrades, as well
 
 ![](../../../.gitbook/assets/base-image2.png)
 
-See [analysis-and-remediation-for-your-images-from-the-snyk-app.md](analysis-and-remediation-for-your-images-from-the-snyk-app.md "mention") for more details.
+See [Analysis and fixes for your images from the Snyk Web UI](https://docs.snyk.io/products/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app) for more details.
 
 You can find the base image vulnerabilities in your project, among the vulnerabilities added by your instructions, sorted by their priority score. You can also filter only the base image vulnerabilities, with the **Base image** option under the **Image Layer** handy filter. See [image layer information](image-layer-information.md) for more details.
