@@ -45,7 +45,7 @@ Select the repositories to use, then click **Add selected repositories** to impo
 This also:
 
 * Sets Snyk to run a regular check ([daily by default](../../features/user-and-group-management/managing-settings/usage-page-details.md#projects)) for vulnerabilities.
-* Creates a [Webhook](../../features/integrations/snyk-webhooks/), so when you change code, Snyk tests your pull / merge requests, to check that new dependencies do not introduce more vulnerabilities.
+* Creates a [Webhook](../../snyk-api-info/snyk-webhooks/), so when you change code, Snyk tests your pull / merge requests, to check that new dependencies do not introduce more vulnerabilities.
 
 In **Settings**, optionally choose to:
 
