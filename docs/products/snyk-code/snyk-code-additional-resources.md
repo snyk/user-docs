@@ -107,7 +107,7 @@ While the source code making up applications consists of proprietary code, a gre
 
 But using both SAST and SCA independently runs counter to the growing preference by organizations to minimize tool sprawl and consolidate application security tooling and so the thinking process is often SAST or SCA rather than considering SAST and SCA as part of a combined approach.
 
-In this post, we’ll take a look at why SAST **and** SCA is the right approach, and how to implement both without creating sprawl.
+In this post, we’ll take a look at why SAST and SCA is the right approach, and how to implement both without creating sprawl.
 
 [https://snyk.io/blog/sast-and-sca-better-together-with-snyk/](https://snyk.io/blog/sast-and-sca-better-together-with-snyk/)
 
@@ -123,10 +123,18 @@ If every vulnerability seems to be equally critical, engineers would get overwhe
 
 [https://snyk.io/blog/snyk-code-priority-score-prioritizes-vulnerabilities/](https://snyk.io/blog/snyk-code-priority-score-prioritizes-vulnerabilities/)
 
-* **Exploring the advanced technologies behind Snyk Code** (October 2021)
+* **Exploring the advanced technologies behind Snyk Code** (October 2021)&#x20;
 
-Snyk Code is the static application security testing (SAST) solution from Snyk, and it introduces some revolutionary technologies into the SAST space. It is based on the research and technologies developed by a spin-off from the ETH (Zurich/Switzerland), DeepCode, which joined Snyk at the end of 2020. This article is about these technologies and how Snyk not only gives back to the open source community, but also how it promotes and works with the academic community in the field of static program analysis.
+Snyk Code is the static application security testing (SAST) solution from Snyk, and it introduces some revolutionary technologies into the SAST space. It is based on the research and technologies developed by a spin-off from the ETH (Zurich/Switzerland), DeepCode, which joined Snyk at the end of 2020. This article is about these technologies and how Snyk not only gives back to the open source community, but also how it promotes and works with the academic community in the field of static program analysis.&#x20;
 
 [https://snyk.io/blog/advanced-technologies-behind-snyk-code/](https://snyk.io/blog/advanced-technologies-behind-snyk-code/)
+
+* **Secure coding with Snyk Code: Ignore functionality with a twist** (March 2021)
+
+When scanning your code with our secure coding tool, Snyk Code might find all kinds of security vulnerabilities. And while Snyk Code is fast, accurate, and rich in content, sometimes there is the need to suppress specific warnings. Typical example use cases arise in test code when you explicitly use hard coded passwords to test your routines, or you know about an issue but decide not to fix it. For this situation, Snyk Code - as well as the other Snyk platform products - provides the ability to ignore suggestions.
+
+And there is more to ignore than you think. Let’s explore how you ignore an issue, and then take look behind the scenes at how we implemented the feature.
+
+[https://snyk.io/blog/secure-coding-snyk-code-ignore-feature-twist/](https://snyk.io/blog/secure-coding-snyk-code-ignore-feature-twist/)
 
 &#x20;
