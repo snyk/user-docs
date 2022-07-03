@@ -2,7 +2,18 @@
 
 To learn more about Snyk Code, you can also use the following resources:
 
-### **Snyk Code Webinars**
+* [Web page](snyk-code-additional-resources.md#web-page)
+* [Webinars](snyk-code-additional-resources.md#webinars)
+* [External reviewers - videos](snyk-code-additional-resources.md#external-reviewers-videos)
+* [Selected blogs](snyk-code-additional-resources.md#selected-blogs)
+
+
+
+### Web page
+
+[https://snyk.io/product/snyk-code/](https://snyk.io/product/snyk-code/)****
+
+### **Webinars**
 
 * **Introduction to Snyk Code (Developer-first SAST):** (1:00:57)
 
@@ -42,7 +53,7 @@ Snyk Code is developer-first: embedding SAST as part of the development process,
 
 &#x20;
 
-### **External Reviewers**
+### **External reviewers - videos**
 
 * **Secure Your Code from the Start with Snyk.io and Snyk Code - CoderDave:** (26:31)
 
@@ -61,5 +72,61 @@ Seriously, isn't Snyk SUPER COOL? Exploit Goof, the vulnerable web app! [https:/
 In this video, I'll be going over security in python projects and packages. Usually, when we are using Python, we pull packages and dependencies from PYPI. However, there are no security checks needed for these uploaded packages or dependencies.
 
 [https://www.youtube.com/watch?v=1N6VBHMoPsw](https://www.youtube.com/watch?v=1N6VBHMoPsw)
+
+
+
+### Selected Blogs
+
+* **Happy 1st Birthday, Snyk Code!** (May 2022)
+
+Snyk Code is turning one! We’ve hit so many milestones in the last 12 months, and today we invite you to look back, celebrate, and peer into the future of code security with us.&#x20;
+
+[https://snyk.io/blog/happy-1st-birthday-snyk-code/](https://snyk.io/blog/happy-1st-birthday-snyk-code/)
+
+* **Snyk and StackHawk form strategic alliance to equip app teams with modern, developer-first security testing** (May 2022)
+
+AppSec teams require data-driven tooling that equips engineers with tools that help them catch vulnerabilities early in the development lifecycle, utilizing automated testing to find and fix them before they are released to production. Without this capability, engineers are forced to scramble after the fact, often creating a world of chaos that disrupts internal processes and can also negatively impact end-user and customer experiences.
+
+This is where Snyk’s strategic alliance with StackHawk comes in, bringing modern, developer-centric perspectives to application security to provide a holistic, scalable approach to securing the SDLC in development.
+
+[https://snyk.io/blog/stackhawk-integration-with-snyk-code/](https://snyk.io/blog/stackhawk-integration-with-snyk-code/)
+
+* **Modernizing SAST rules maintenance to catch vulnerabilities faster** (April 2022)
+
+Snyk Code separates itself from the majority of static code analysis tools by generating and maintaining rule sets for its users — helping them combat common and newly discovered threats. A recent Hub article described a new Javascript vulnerability called prototype pollution, which allows attackers to modify, or “pollute”, a Javascript object prototype and execute a variety of malicious actions.&#x20;
+
+In this post, we’ll use the example of prototype pollution to walk through how the rule maintenance features of Snyk Code help developers and security professionals protect their application.
+
+[https://snyk.io/blog/modernizing-sast-rules-maintenance-catch-vulnerabilities-faster/](https://snyk.io/blog/modernizing-sast-rules-maintenance-catch-vulnerabilities-faster/)
+
+* **SAST and SCA: Better together with Snyk** (February 2022)
+
+As applications become more complex, so does the task of securing them.&#x20;
+
+While the source code making up applications consists of proprietary code, a great deal of it is also third-party, open source code. Development and security teams looking to release secure code while also maintaining a rapid pace of development, need to therefore combine static application security testing (SAST) and software composition analysis (SCA) as part of a comprehensive software security strategy.&#x20;
+
+But using both SAST and SCA independently runs counter to the growing preference by organizations to minimize tool sprawl and consolidate application security tooling and so the thinking process is often SAST or SCA rather than considering SAST and SCA as part of a combined approach.
+
+In this post, we’ll take a look at why SAST **and** SCA is the right approach, and how to implement both without creating sprawl.
+
+[https://snyk.io/blog/sast-and-sca-better-together-with-snyk/](https://snyk.io/blog/sast-and-sca-better-together-with-snyk/)
+
+* **Snyk Code in 2021: Redefining SAST** (December 2021)
+
+Starting in early 2021, Snyk Code [became available as a freemium offering for Snyk users](https://snyk.io/blog/snyk-code-now-available-free-sast/). Snyk Code helps developers quickly and accurately find, prioritize, and fix security flaws in proprietary code. With detailed remediation guidance at every stage of the software development lifecycle (SDLC), from the developer’s environment (IDE) to continuous integration and development (CI/CD) pipelines, Snyk Code revolutionizes [static application security testing (SAST)](https://snyk.io/learn/application-security/static-application-security-testing/).
+
+[https://snyk.io/blog/snyk-code-review-2021/](https://snyk.io/blog/snyk-code-review-2021/)
+
+* **How Snyk Code prioritizes vulnerabilities using their Priority Score** (November 2021)
+
+If every vulnerability seems to be equally critical, engineers would get overwhelmed and probably waste time on the wrong issues. This is why it’s important for developer security tools to provide clear and simple prioritization functionality. As you’ve likely noticed, Snyk Code provides a Priority Score on the top right corner of the overview panel.
+
+[https://snyk.io/blog/snyk-code-priority-score-prioritizes-vulnerabilities/](https://snyk.io/blog/snyk-code-priority-score-prioritizes-vulnerabilities/)
+
+* **Exploring the advanced technologies behind Snyk Code** (October 2021)
+
+Snyk Code is the static application security testing (SAST) solution from Snyk, and it introduces some revolutionary technologies into the SAST space. It is based on the research and technologies developed by a spin-off from the ETH (Zurich/Switzerland), DeepCode, which joined Snyk at the end of 2020. This article is about these technologies and how Snyk not only gives back to the open source community, but also how it promotes and works with the academic community in the field of static program analysis.
+
+[https://snyk.io/blog/advanced-technologies-behind-snyk-code/](https://snyk.io/blog/advanced-technologies-behind-snyk-code/)
 
 &#x20;
