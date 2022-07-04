@@ -14,6 +14,12 @@ Features might not be available, depending on your subscription plan.
 | [NuGet](https://www.nuget.org)                         | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
 | [Paket](https://fsprojects.github.io/Paket/index.html) | ✔︎          |             |                  |         |
 
+{% hint style="warning" %}
+We do not currently support PackageReference without a version attribute. If your project contains this, then it can lead to Snyk failing to open a PR for your project. \
+\
+The current workaround is to add versions to all PackageReferences.
+{% endhint %}
+
 ## **How it works**
 
 Once we’ve built the tree, we can use our [vulnerability database](https://security.snyk.io) to find vulnerabilities in any of the packages anywhere in the dependency tree.
@@ -40,7 +46,7 @@ Examples of supported project files that resolve into **project.assets.json** in
 
 * \*.csproj
 * \*.vbproj
-* \*.fsproj&#x20;
+* \*.fsproj
 
 {% hint style="info" %}
 Project files can be combined with [lock files](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files#locking-dependencies) for a more deterministic **project.assets.json** resolution.
