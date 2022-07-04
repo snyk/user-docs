@@ -1,6 +1,6 @@
 # Snyk settings
 
-Click the Settings icon (![](../../.gitbook/assets/cog\_icon.png)) from the top menu bar, to view and edit Snyk settings for your organization:
+Click the Settings icon (<img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line">) from the top menu bar, to view and edit Snyk settings for your organization:
 
 ![](../../.gitbook/assets/screenshot\_2021-07-19\_at\_15.52.02.png)
 

@@ -25,23 +25,22 @@ Access your Snyk Web UI dashboard at [https://app.snyk.io](https://app.snyk.io)
 
 ### Step 2: Get started with your Snyk product and environment
 
-Next, choose to get started with one or more specific Snyk products and tools.
+Next, get started using Snyk products and in your selected environment.
 
 #### Select your Snyk product
 
-You can get started with the following Snyk products:
+Get started with a Snyk product:
 
-* [getting-started-snyk-open-source.md](products/snyk-open-source/getting-started-snyk-open-source.md "mention") - in your open source code.
-* [getting-started-with-snyk-code.md](getting-started/getting-started-snyk-products/getting-started-with-snyk-code.md "mention") - in your application code.
-* [getting-started-snyk-container.md](products/snyk-container/getting-started-snyk-container.md "mention") - in your container image.
-* [getting-started-snyk-iac.md](products/snyk-infrastructure-as-code/getting-started-snyk-iac.md "mention") - in Kubernetes, Helm and Terraform configuration files.
+* [getting-started-snyk-open-source.md](products/snyk-open-source/getting-started-snyk-open-source.md "mention") - scan your open source code.
+* [getting-started-with-snyk-code.md](getting-started/getting-started-snyk-products/getting-started-with-snyk-code.md "mention") - scan your application code.
+* [getting-started-snyk-container.md](products/snyk-container/getting-started-snyk-container.md "mention") - scan your container image.
+* [getting-started-snyk-iac.md](products/snyk-infrastructure-as-code/getting-started-snyk-iac.md "mention") - scan Kubernetes, Helm and Terraform configuration files.
 
 #### Select your Snyk environment
 
-You can use the **Snyk Web UI** ([app.snyk.io](https://app.snyk.io)) to run Snyk scans and produce reports.
+You can use Snyk in the following environments:
 
-You can also use Snyk in the following environments:
-
+* [**Snyk Web UI**](snyk-web-ui/): the browser-based app, to run Snyk scans and produce reports.
 * [**Snyk CLI**](https://docs.snyk.io/snyk-cli): the Command Line Interface.
 * [**Snyk IDEs**](ide-tools/): use IDE integrations to embed Snyk in your development environment.
 * [**Snyk API**](https://support.snyk.io/hc/en-us/categories/360000665657-Snyk-API): allows you to programmatically integrate with Snyk.
