@@ -64,10 +64,10 @@ We analyze your `package.json` and `yarn.lock` files, to build a full structured
 
 Snyk supports resolutions only in Yarn v2. We do not support resolutions for Yarn v1.
 
-### Yarn workspaces
+### Yarn Workspaces
 
 {% hint style="info" %}
-Yarn v1 & 2 workspaces support is for `snyk test` and `snyk monitor` commands only at this time.
+Yarn v1 and 2 workspaces support is for `snyk test` and `snyk monitor` commands only at this time.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -88,10 +88,10 @@ You may use a common **.snyk** policy file if you maintain ignores/patches in on
 ### Lerna
 
 {% hint style="info" %}
-We currently do **not** support Lerna. However, if your Lerna project is using Yarn Workspaces then the project can be scanned with the standard Yarn Workspaces support. You _might_ be able to run Snyk test/monitor with the following workaround commands to help you unblock the Snyk CLI integration.
+Snyk currently does not support Lerna. However, if your project is set up using Yarn Workspaces, you can scan the project in the same way you scan any Yarn Workspaces project. If your Lerna project is set up using Yarn Workspaces, you can run `snyk test` and `snyk monitor` with the following commands.
 {% endhint %}
 
-For each example-package you can do:
+For each example-package you can use the following:
 
 `snyk monitor --file=packages/example-package/package.json`
 
