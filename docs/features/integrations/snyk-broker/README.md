@@ -1,6 +1,6 @@
 # Snyk Broker
 
-Snyk Broker is an open-source tool, that can act as a proxy between Snyk and special integrations including:
+Snyk Broker is an open-source tool that can act as a proxy between Snyk and special integrations including:
 
 * Your Source Code Management (SCM) system on-premise platforms, including [Snyk Code Support](broken-reference).
 * Your publicly-accessible Git-based repositories, allowing you to view and control Snyk activity in those repositories for increased data security.
