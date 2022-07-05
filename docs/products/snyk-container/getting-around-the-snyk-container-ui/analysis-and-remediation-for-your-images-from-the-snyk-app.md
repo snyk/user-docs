@@ -10,7 +10,7 @@ From the **Projects** page, if the project is imported from a registry integrati
 
 You can filter for all container projects, similar to the following example:
 
-![](<../../../.gitbook/assets/image (69).png>)
+![](<../../../.gitbook/assets/image (69) (1).png>)
 
 When you open any container project, the resulting analysis and fix advice appears in the Snyk Web UI:
 
