@@ -28,7 +28,7 @@ As you prepare for your teams to start adopting Snyk as part of a secure develop
 More information:
 
 * Docs: [Integrations](../products/snyk-code/key-features/integrations.md)
-* Snyk Training: [Ways to integrate Snyk at your company](http://training.snyk.io/learn/course/ways-to-use-snyk/ways-to-integrate-snyk-at-your-company/snyk-across-the-sdlc?page=1)
+* Snyk Training: [Ways to integrate Snyk at your company](https://training.snyk.io/courses/ways-to-use-snyk)
 
 #### How to structure your account
 
@@ -37,7 +37,7 @@ There are different ways to arrange the organizations in your account. Before in
 More information:
 
 * Docs: [User and group management](../features/user-and-group-management/)
-* Training: [Snyk account structure](http://training.snyk.io/learn/course/snyk-account-structure/account-structure-considerations/an-overview-of-account-structure?page=1)
+* Training: [Snyk account structure](https://training.snyk.io/courses/snyk-account-structure)
 
 #### How to access Snyk
 
@@ -48,7 +48,7 @@ If using SSO, after you set it up, you'll need to remove any social login accoun
 More information:
 
 * Docs: [Setting up Single Sign-On (SSO) for authentication](../features/user-and-group-management/setting-up-sso-for-authentication/)
-* Training: [SSO, authentication and user provisioning](http://training.snyk.io/learn/course/sso/authentication-to-snyk/an-overview-of-authentication-and-provisioning?page=1)
+* Training: [SSO, authentication and user provisioning](https://training.snyk.io/courses/sso)
 
 #### Plan for importing projects
 
@@ -57,7 +57,7 @@ There are different ways to add projects in Snyk, including via an integration, 
 More information:
 
 * Docs: [Get started with your Snyk product and environment](https://docs.snyk.io/getting-started#step-2-get-started-with-your-snyk-product-and-environment)
-* Training: [Project import strategies](http://training.snyk.io/learn/course/project-import-strategies/project-import-considerations/about-projects?page=1)
+* Training: [Project import strategies](https://training.snyk.io/courses/project-import-strategies)
 
 ### Set up your first organization
 
@@ -70,7 +70,7 @@ Snyk includes a number of automations for Snyk Open Source when integrated with 
 More information:
 
 * Docs: [Git repository (SCM) integrations](../features/integrations/git-repository-scm-integrations/)
-* Training: [Source Code Manager Configurations](http://training.snyk.io/learn/course/source-code-manager-configurations/integration-scenarios/overview?page=1)
+* Training: [Source Code Manager Configurations](https://training.snyk.io/courses/source-code-manager-configurations)
 
 If you are using an on-premise source code manager, learn more about Snyk Broker:
 
@@ -91,7 +91,7 @@ Snyk sends teams different types of alerts based on settings defined for the gro
 More information:
 
 * Docs: [Managing notifications](../features/user-and-group-management/notifications/)
-* Training: [Notifications](http://training.snyk.io/learn/course/notifications/snyk-notification-configuration/an-overview-of-notifications?page=1)
+* Training: [Notifications](https://training.snyk.io/courses/notifications)
 
 #### Set ignore permissions
 
@@ -100,7 +100,7 @@ Before inviting additional team members to Snyk, determine who can ignore the vu
 More information:
 
 * Docs: [Set who can configure ignore settings](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/ignore-issues#set-who-can-configure-ignore-settings)
-* Training: [Members and Permissions](http://training.snyk.io/learn/course/members-and-permissions/members-and-permissions/member-invitations?page=1)
+* Training: [Members and Permissions](https://training.snyk.io/courses/members-and-permissions)
 
 #### Define language settings
 
@@ -145,7 +145,7 @@ More information:
 
 Our Developer Launch Package provides a number of resources to help you prepare for launching Snyk to a wider audience.
 
-* Training: [Developer Launch Package](https://training.snyk.io/learn/course/launch-snyk-to-your-teams/developer-launch-package/launch-resources?page=2)
+* Training: [Developer Launch Package](https://training.snyk.io/courses/launch-snyk-to-your-teams)
 
 #### Invite members
 
@@ -165,7 +165,7 @@ Empower developers to find and fix issues early in the development process by ad
 More information:
 
 * Docs: [Snyk for IDEs](../ide-tools/)
-* Training: [Introduction to using Snyk in an IDE](http://training.snyk.io/learn/course/introduction-to-using-snyk-in-an-ide/snyk-plugin-for-ide/authenticate-plug-in-to-snyk?page=1)
+* Training: [Introduction to using Snyk in an IDE](https://training.snyk.io/courses/introduction-to-using-snyk-in-an-ide)
 
 #### Use Snyk in the CLI
 
@@ -174,7 +174,7 @@ The Snyk CLI provides a way to find security and license issues locally or in yo
 More information:
 
 * Docs: Snyk CLI
-* Training: [Introduction to the Snyk CLI](http://training.snyk.io/learn/course/intro-cli/snyk-cli/authentication-to-snyk-account)
+* Training: [Introduction to the Snyk CLI](https://training.snyk.io/courses/intro-cli)
 
 #### Use Snyk in the Web UI
 
@@ -183,4 +183,4 @@ The Snyk Web UI scans different types of projects (depending on which product yo
 More information:
 
 * Docs: [Snyk Web UI](../snyk-web-ui/)
-* Training: [Introduction to the Snyk UI](http://training.snyk.io/learn/course/introduction-to-the-snyk-ui/snyk-log-in-details/log-in-tasks-and-considerations?page=1)
+* Training: [Introduction to the Snyk UI](https://training.snyk.io/courses/introduction-to-the-snyk-ui)
