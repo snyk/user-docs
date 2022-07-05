@@ -1,6 +1,6 @@
 # Introducing Snyk
 
-Snyk is a platform allowing you to scan, prioritize, and fix security vulnerabilities in [your own code](https://snyk.io/product/snyk-code/), [Open Source dependencies](https://docs.snyk.io/snyk-open-source), [Container images](https://docs.snyk.io/snyk-container), and [Infrastructure as Code (IaC) configurations](https://snyk.io/product/infrastructure-as-code-security/).
+Snyk is a platform allowing you to scan, prioritize, and fix security vulnerabilities in your own code, Open Source dependencies, Container images, and Infrastructure as Code (IaC) configurations.
 
 ### Snyk’s developer-first approach
 
