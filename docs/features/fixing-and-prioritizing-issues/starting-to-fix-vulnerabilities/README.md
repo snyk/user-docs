@@ -7,5 +7,5 @@
 * [Fix your vulnerabilities](fix-your-vulnerabilities.md)
 * [Upgrading package versions to fix vulnerabilities](upgrading-package-versions-fix-vulnerabilities.md)
 * [Snyk patches to fix vulnerabilities](snyk-patches-to-fix-vulnerabilities.md)
-* [Introduction to ignoring issues](introduction-to-ignoring-issues.md)
+* [Introduction to ignoring issues](../issue-management/introduction-to-ignoring-issues.md)
 * [Merge advice](merge-advice.md)

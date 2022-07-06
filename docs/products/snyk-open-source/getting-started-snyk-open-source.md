@@ -100,4 +100,4 @@ To fix vulnerabilities:
 
 ![](../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22.png)
 
-See [remediate-your-vulnerabilities.md](../../features/fixing-and-prioritizing-issues/issue-management/remediate-your-vulnerabilities.md "mention") for more details.
+See [fix-your-vulnerabilities.md](../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md "mention") for more details.

@@ -36,4 +36,4 @@ Prioritize or de-prioritize specific vulnerabilities automatically with our cust
 
 After you decide issue priority, it's time to start [fixing the vulnerabilities](starting-to-fix-vulnerabilities/).
 
-Snyk can generate automatic PRs for upgrades and suggest recommended fixes. See [remediate-your-vulnerabilities.md](issue-management/remediate-your-vulnerabilities.md "mention") for more information on how Snyk helps you maintain code security through patches and direct dependency upgrades.
+Snyk can generate automatic PRs for upgrades and suggest recommended fixes. See [fix-your-vulnerabilities.md](starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md "mention") for more information on how Snyk helps you maintain code security through patches and direct dependency upgrades.

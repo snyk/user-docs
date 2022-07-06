@@ -22,18 +22,18 @@ However, for the most accurate results, we recommend using the [Snyk CLI](../../
 {% tab title="Java" %}
 **Java**
 
-| Package managers / Features       | CLI support | Git support | License scanning | Fix PRs                                                                                                                         |
-| --------------------------------- | ----------- | ----------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| [Maven](https://maven.apache.org) | ✔︎          | ✔︎          | ✔︎               | ✔︎                                                                                                                              |
-| [Gradle](https://gradle.org)      | ✔︎          | ✔︎          | ✔︎               | [Fix advice](../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) only |
+| Package managers / Features       | CLI support | Git support | License scanning | Fix PRs         |
+| --------------------------------- | ----------- | ----------- | ---------------- | --------------- |
+| [Maven](https://maven.apache.org) | ✔︎          | ✔︎          | ✔︎               | ✔︎              |
+| [Gradle](https://gradle.org)      | ✔︎          | ✔︎          | ✔︎               | Fix advice only |
 {% endtab %}
 
 {% tab title="Kotlin" %}
 **Kotlin**
 
-| Package managers / Features  | CLI support | Git support | License scanning | Fixing                                                                                                                          | Runtime monitoring |
-| ---------------------------- | ----------- | ----------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [Gradle](https://gradle.org) | ✔︎          |             | ✔︎               | [Fix advice](../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) only | ✔︎                 |
+| Package managers / Features  | CLI support | Git support | License scanning | Fixing                              | Runtime monitoring |
+| ---------------------------- | ----------- | ----------- | ---------------- | ----------------------------------- | ------------------ |
+| [Gradle](https://gradle.org) | ✔︎          |             | ✔︎               | [Fix advice](broken-reference) only | ✔︎                 |
 {% endtab %}
 {% endtabs %}
 

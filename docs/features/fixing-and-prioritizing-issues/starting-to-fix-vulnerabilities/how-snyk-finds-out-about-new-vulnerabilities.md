@@ -1,6 +1,6 @@
 # How Snyk finds out about new vulnerabilities
 
-Snyk’s security team, based in Israel, maintains our [vulnerability database](https://security.snyk.io).
+Snyk’s security team maintains our [vulnerability database](https://security.snyk.io).
 
 This work includes curating vulnerabilities found or reported elsewhere on the web, as well as doing our own research to uncover previously unknown vulnerabilities, which we then responsibly disclose. Snyk Enterprise gets early notifications for issues our research uncovers alongside this responsible disclosure process.
 
