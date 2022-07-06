@@ -23,14 +23,14 @@ Each vulnerability card shows specific details about that vulnerability:
 
 Card details include:
 
-* The severity level (for example, **H** for high), the name (for example, **Cross-site Scripting**), and the [snyk-priority-score.md](../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score.md "mention") value.
+* The severity level (for example, **H** for high), the name (for example, **Cross-site Scripting**), and the [snyk-priority-score.md](../../../features/fixing-and-prioritizing-issues/prioritizing-and-managing-issues/snyk-priority-score.md "mention") value.
 * The [CWE type:](https://cwe.mitre.org/data/index.html) click the link to view more information about that type of vulnerability.
 * A snippet of your code showing the exact area that is vulnerable.
 * A clear and helpful text description of the vulnerability.
 
 See [issue-card-information.md](../../../introducing-snyk/introduction-to-snyk-projects/issue-card-information.md "mention") for more details.
 
-* Click **Ignore** to ignore this vulnerability (see [ignore-issues.md](../../../features/fixing-and-prioritizing-issues/issue-management/ignore-issues.md "mention"))
+* Click **Ignore** to ignore this vulnerability (see [ignore-issues.md](../../../features/fixing-and-prioritizing-issues/prioritizing-and-managing-issues/ignore-issues.md "mention"))
 * Click **Full details** to view more information (see [#view-full-details](using-snyk-code-web.md#view-full-details "mention")).
 
 ### View full details

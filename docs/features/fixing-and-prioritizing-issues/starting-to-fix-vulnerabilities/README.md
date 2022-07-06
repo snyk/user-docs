@@ -16,5 +16,5 @@ To apply these fixes, you can use different methods, ranging from manually apply
 See [Fix your vulnerabilities](fix-your-vulnerabilities.md) for more details.
 
 {% hint style="info" %}
-See the [Prioritizing Issues](../prioritizing-issues/) section to understand how to decided on which issues to fix, using the [Snyk Priority Score](snyk-priority-score.md) and other information.
+See [Prioritizing and managing issues](../prioritizing-and-managing-issues/) to understand how to decided on which issues to fix.
 {% endhint %}
