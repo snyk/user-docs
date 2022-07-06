@@ -46,27 +46,33 @@ This process describes all options.
 
 * Log in to your account and navigate to the relevant group and organization that you want to manage.
 * Click on settings <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Service accounts** to view existing service accounts and their details.
-* Click **Create a service account** to create a new one. The screen that loads varies a little, depending on if you chose a group (left) or an organization (right):
+* Click **Create a service account** to create a new one. The screen that loads varies a little, depending on if you chose a group  or an organization:
 
-![](../../../.gitbook/assets/uuid-115442e7-a8bd-44df-43f8-8867a4cdc6ba-en.png)
+![](<../../../.gitbook/assets/Screenshot 2022-07-06 at 12.01.28.png>)
 
-![](../../../.gitbook/assets/uuid-632ed37e-ed7a-519d-dade-a245a35e6ac6-en.png)
+While creating a Group Service Account, you can choose a Group level role. Whereas, while creating an Organisation Service Account, you can choose Org level roles including custom roles that you have set up for your organisations.
+
+![](<../../../.gitbook/assets/Screenshot 2022-07-06 at 12.06.35.png>)
 
 * From the **Service Account** name field, enter a unique name for this token. Remember this name can be used only once for tokens in the same area, either per organization or per group.
 
 ![](../../../.gitbook/assets/uuid-01c4cc98-23c9-3cb1-4972-1aa4f83ad98e-en.png)
 
-* From the **Role** dropdown list, select **Viewer, Member,** or **Admin** to configure the scope of the token:
-  * Viewer enables read-only access.
-  * Member associates a service account to a group but does not grant any specific access. We recommend selecting Viewer or Admin.
-  * Admin enables full administrator access.
+*   From the **Role** dropdown list, select an appropriate role.\
+    For the Group Service Accounts, choose from the below list of roles to configure the scope of the token:
+
+    * Group Viewer enables read-only access.
+    * Group Admin enables full administrator access.
+    * Group Member associates a service account to a group but does not grant any specific access. We recommend selecting Viewer or Admin.
+
+    For the Organisation Service Accounts, choose from the standard roles Org Admin or Org Collaborator or a custom role if you have set up any. See [managing-permissions.md](../managing-users-and-permissions/managing-permissions.md "mention") to find out the scope of Org Admin and Org Collaborator roles.
 *   Click **Create**. The token is generated and displayed from the same area, similar to the following:
 
     Make sure you copy this token as you won’t see it again. You can click **Close and Hide** once you've copied the token; either way, when you navigate away from this page it will no longer be accessible. This is a security standard to keep your tokens safe. The new token is also added to your **Existing service accounts** list, similar to the following image:
 
 ![](<../../../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en (3) (3) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (12).png>)
 
-* Furthermore, if you created the token for the entire group with an **Admin** role, the token also appears in the **Existing service accounts** list for each of its organizations, though it can only be edited from the **Group** level.
+* Furthermore, if you created the token for the entire group with an **Group Admin** role, the token also appears in the **Existing service accounts** list for each of its organizations, though it can only be edited from the **Group** level.
 
 ![](../../../.gitbook/assets/uuid-1110723e-74e7-3090-3e69-da65f93acfcc-en.png)
 
