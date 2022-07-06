@@ -36,7 +36,7 @@ Click **Full details** to see a preview of the full code:
 
 ![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.24.20.png>)
 
-Click **Ignore** to ignore this vulnerability (see [Ignore Issues](../../features/fixing-and-prioritizing-issues/prioritizing-and-managing-issues/ignore-issues.md))
+Click **Ignore** to ignore this vulnerability (see [Ignore Issues](../../features/fixing-and-prioritizing-issues/issue-management/ignore-issues.md))
 
 ### Notes
 

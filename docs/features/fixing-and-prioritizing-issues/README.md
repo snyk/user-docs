@@ -4,7 +4,7 @@ Snyk goes beyond finding vulnerabilities and license compliance issues. Our prio
 
 ### Use priority scoring
 
-The [Snyk Priority Score](prioritizing-and-managing-issues/snyk-priority-score.md) prioritizes issues based on a number of industry-standard criteria, including Kubernetes configuration data and signals from running containers.
+The [Snyk Priority Score](starting-to-fix-vulnerabilities/snyk-priority-score.md) prioritizes issues based on a number of industry-standard criteria, including Kubernetes configuration data and signals from running containers.
 
 ![](<../../.gitbook/assets/image (121).png>)
 
@@ -18,13 +18,13 @@ Control prioritization at a granular level by applying [project attributes](../.
 
 ### Organize issues
 
-Snyk [reporting](../../introducing-snyk/snyks-core-concepts/reporting.md) keeps you up to date on the status of the issues, dependencies, and licenses you need, while letting you [ignore the issues](prioritizing-and-managing-issues/ignore-issues.md) you don’t.
+Snyk [reporting](../../introducing-snyk/snyks-core-concepts/reporting.md) keeps you up to date on the status of the issues, dependencies, and licenses you need, while letting you [ignore the issues](issue-management/ignore-issues.md) you don’t.
 
 ![](<../../.gitbook/assets/image (66) (4).png>)
 
 ### Assess reachability <a href="#h.ts3kx23p4m7p" id="h.ts3kx23p4m7p"></a>
 
-Gauge risk by identifying whether a vulnerable function is being called by your application, with Snyk’s [reachable vulnerability](prioritizing-and-managing-issues/reachable-vulnerabilities.md) scanning.
+Gauge risk by identifying whether a vulnerable function is being called by your application, with Snyk’s [reachable vulnerability](prioritizing-issues/reachable-vulnerabilities.md) scanning.
 
 ### Set security policies
 
