@@ -4,7 +4,7 @@ Snyk goes beyond finding vulnerabilities and license compliance issues. Our prio
 
 ### Use priority scoring
 
-The [Snyk Priority Score](prioritizing-issues/snyk-priority-score.md) prioritizes issues based on a number of industry-standard criteria, including Kubernetes configuration data and signals from running containers.
+The [Snyk Priority Score](starting-to-fix-vulnerabilities/snyk-priority-score.md) prioritizes issues based on a number of industry-standard criteria, including Kubernetes configuration data and signals from running containers.
 
 ![](<../../.gitbook/assets/image (121).png>)
 

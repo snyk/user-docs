@@ -488,7 +488,7 @@
     * [Security policies: Actions](features/fixing-and-prioritizing-issues/security-policies/security-policies-actions.md)
     * [Security policies: What collaborators see](features/fixing-and-prioritizing-issues/security-policies/security-policies-what-collaborators-see.md)
   * [Prioritizing issues](features/fixing-and-prioritizing-issues/prioritizing-issues/README.md)
-    * [Snyk Priority Score](features/fixing-and-prioritizing-issues/prioritizing-issues/snyk-priority-score.md)
+    * [Snyk Priority Score](features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score.md)
     * [Prioritize by Social Trends](features/fixing-and-prioritizing-issues/prioritizing-issues/prioritize-by-social-trends.md)
     * [Reachable vulnerabilities](features/fixing-and-prioritizing-issues/prioritizing-issues/reachable-vulnerabilities.md)
     * [Fixed in version vs. fixable attribute in vulnerabilities](features/fixing-and-prioritizing-issues/prioritizing-issues/fixed-in-version-vs.-fixable-attribute-in-vulnerabilities.md)

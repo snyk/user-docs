@@ -1,11 +1,20 @@
 # Starting to fix vulnerabilities
 
-* [Snyk Priority Score](../prioritizing-issues/snyk-priority-score.md)
-* [Why can't I open a Pull Request/Merge Request for issues found by Snyk?](why-cant-i-open-a-pull-request-merge-request-for-issues-found-by-snyk.md)
-* [How Snyk finds out about new vulnerabilities](how-snyk-finds-out-about-new-vulnerabilities.md)
-* [What languages do we support Fix Pull Requests or Merge Requests?](what-languages-do-we-support-fix-pull-requests-or-merge-requests.md)
-* [Fix your vulnerabilities](fix-your-vulnerabilities.md)
-* [Upgrading package versions to fix vulnerabilities](upgrading-package-versions-fix-vulnerabilities.md)
-* [Snyk patches to fix vulnerabilities](snyk-patches-to-fix-vulnerabilities.md)
-* [Introduction to ignoring issues](../issue-management/introduction-to-ignoring-issues.md)
-* [Merge advice](merge-advice.md)
+Use this section to understand the core process of fixing vulnerabilities and licensing issues in your project.
+
+### Introduction
+
+Snyk helps you to fix vulnerabilities, by:
+
+* [Upgrading the package](upgrading-package-versions-fix-vulnerabilities.md) to a vulnerability-free version.&#x20;
+* [Patching the vulnerability](snyk-patches-to-fix-vulnerabilities.md).&#x20;
+
+#### Applying fixes
+
+To apply these fixes, you can use different methods, ranging from manually applying using the Snyk Web UI, to automatic pull requests opened by Snyk.
+
+See [Fix your vulnerabilities](fix-your-vulnerabilities.md) for more details.
+
+{% hint style="info" %}
+See the [Prioritizing Issues](../prioritizing-issues/) section to understand how to decided on which issues to fix, using the [Snyk Priority Score](snyk-priority-score.md) and other information.
+{% endhint %}
