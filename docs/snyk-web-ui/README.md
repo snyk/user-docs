@@ -2,11 +2,11 @@
 
 No matter how you use Snyk, the **Snyk Web UI** is where you can connect your source code management (SCM) repositories, container registries, and applications. If you haven't already, go to the [Snyk Web UI](https://app.snyk.io/login) and create an account!
 
-After you connect, you can import your repositories and projects so that Snyk can scan, monitor, and fix vulnerabilities in your source code.&#x20;
+After you connect, you can import your repositories and projects so that Snyk can scan, monitor, and fix vulnerabilities in your source code.
 
 ## Logging in to Snyk
 
-If your company uses single sign-on (SSO), use the SSO link provided by your administrators.&#x20;
+If your company uses single sign-on (SSO), use the SSO link provided by your administrators.
 
 If your company requires an invitation to use Snyk, you may see a list of [organizations](./#snyk-organizations) when you log in for the first time. This means that you have not yet been invited. Select an Admins’ name to send an email to request access to that organization.
 
@@ -22,6 +22,6 @@ Snyk shows your [preferred (or default) organization](https://docs.snyk.io/snyk-
 
 ## More information
 
-For the other Snyk platforms, see [Snyk CLI](../snyk-cli/), [Snyk API](../features/snyk-api-info/), or [Snyk for IDEs](../ide-tools/).
-
-For related Snyk Training resources, see [Use Snyk Tools: UI, CLI, IDE](https://training.snyk.io/learn/learning-path/snyk-tools).
+|                                                                                                                                         |                                                                                                                                   |
+| --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| For the other Snyk platforms, see [Snyk CLI](../snyk-cli/), [Snyk API](../features/snyk-api-info/), or [Snyk for IDEs](../ide-tools/).  | For related Snyk Training resources, see [Use Snyk Tools: UI, CLI, IDE](https://training.snyk.io/learn/learning-path/snyk-tools). |
