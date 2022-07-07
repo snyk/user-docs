@@ -1,6 +1,6 @@
 # Example: Setting up custom mapping for Okta
 
-The following page will show 2 different examples on how to configure a custom mapping called roles for Okta to be used for the [Custom Mapping Option](custom-mapping-option.md).
+The following page will show 2 different examples on how to configure a custom mapping called **roles** for Okta to be used for the [Custom Mapping Option](custom-mapping-option.md).
 
 ### Summary Diagram
 
@@ -16,7 +16,7 @@ In this configuration:
 Once you’re set up with groups and users:
 
 1.  **Add attributes to your Snyk App in Okta**\
-    ****Directory -> Profile Editor -> Snyk App
+    Directory -> Profile Editor -> Snyk App
 
     ***
 
@@ -69,14 +69,14 @@ Once you’re set up with groups and users:
 
     1. Navigate to Applications -> Applications and click on the Snyk app you set
     2. General Tab -> SAML Settings -> Edit and click next to go to the Configure SAML step
-    3. Attribute Statements-> set **role** as the Name field with Name format **Unspecified** and the Value will be the below expression\
+    3. Attribute Statements-> set **roles** as the Name field with Name format **Unspecified** and the Value will be the below expression\
        `appuser.user_role == "groupadmin" ? "snyk-groupadmin" : Arrays.flatten(String.replace(String.replace(String.append("snyk-",String.append(Arrays.toCsvString(appuser.snyk_orgs),"-"+appuser.user_role)),",",",snyk-"),",","-"+appuser.group_user_role+","))`
-    4. Click Next -> Finish\\
+    4. Click Next -> Finish
 
-    **Explanation of the role expression:**
+    **Explanation of the roles expression:**
 
     If the role is groupadmin, the expression will ignore everything else and just pass `snyk-groupadmin`\
-    \`\`
+
 
     If role is **not** groupadmin, then for each snyk org listed across all groups the expression will automatically
 
@@ -87,7 +87,7 @@ Once you’re set up with groups and users:
     So an example end result will look as below
 
     \
-    Example: `"role": [ "snyk-groupadmin", "snyk-customer-facing-tools-admin", "snyk-internal-tools-admin" ]`
+    Example: `"roles": [ "snyk-groupadmin", "snyk-customer-facing-tools-admin", "snyk-internal-tools-admin" ]`
 
 ## Configuration 2:
 
@@ -126,13 +126,13 @@ In this configuration:
 
 1. Navigate to Applications -> Applications and click on the Snyk app you set
 2. General Tab -> Edit SAML Settings and click next to go to the Configure SAML step
-3. Set an Attribute Statement named “role” of an unspecified type
-4.  Attribute Statements-> set **role** as the Name field with Name format **Unspecified** and the Value will be the below expression.
+3. Set an Attribute Statement named “roles” of an unspecified type
+4.  Attribute Statements-> set **roles** as the Name field with Name format **Unspecified** and the Value will be the below expression.
 
     `Arrays.flatten(String.replace(String.append("snyk-",Arrays.toCsvString(appuser.snyk_orgs)),",",",snyk-"))`
 
 ### **Explanation of the value expression**
 
-The end result should look like the following example. The expression in the **role** attribute automatically adds the 'snyk' in front of the snyk\_orgs value (which contains \<orgslug>-\<role> **OR** \<groupadmin>) such that the end result should look similar to this:
+The end result should look like the following example. The expression in the **roles** attribute automatically adds the 'snyk' in front of the snyk\_orgs value (which contains \<orgslug>-\<role> **OR** \<groupadmin>) such that the end result should look similar to this:
 
-Example result: `[“snyk-org1-admin”,”snyk-org2-admin”, “snyk-org3-collaborator”,”snyk-org4-collaborator”,”snyk-groupadmin”]`
+Example result: `["snyk-org1-admin","snyk-org2-admin", "snyk-org3-collaborator","snyk-org4-collaborator","snyk-groupadmin"]`

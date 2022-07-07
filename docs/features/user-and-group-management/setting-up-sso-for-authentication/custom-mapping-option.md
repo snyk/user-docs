@@ -2,6 +2,8 @@
 
 This option allows you to dynamically assign users to your Snyk group(s) and organizations based on data provided by your Identity Provider (IdP) to implement a scaled user provisioning and access model. To understand more about roles and permissions within Snyk, refer to [this](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/managing-permissions) article. Work with your Customer Success Manager to implement this option.
 
+See also [Member Roles](../managing-users-and-permissions/member-roles.md) and [Roles in Custom SSO](../managing-users-and-permissions/member-roles.md#roles-in-custom-sso).
+
 ### Requirements
 
 * Completion of the SSO information worksheet for appropriate IdP located [here](set-up-snyk-single-sign-on-sso.md)
@@ -9,7 +11,7 @@ This option allows you to dynamically assign users to your Snyk group(s) and org
 
 ### Understanding roles array mapping
 
-Within the IdP, you must first pass a custom mapping called `roles` as a string array. [Here is an example document on configuring custom mapping on Okta](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/example-setting-up-custom-mapping-for-okta). Refer to your IdP documentation on how to configure custom mappings for additional IdP providers.  &#x20;
+Within the IdP, you must first pass a custom mapping called `roles` as a string array. [Here is an example document on configuring custom mapping on Okta](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/example-setting-up-custom-mapping-for-okta). Refer to your IdP documentation on how to configure custom mappings for additional IdP providers.
 
 ### How Snyk handles roles array mapping
 
@@ -22,7 +24,7 @@ To configure this option, we expect you to send the `roles` array within the SAM
   * Note: **prefix** must be fully lowercase
 * **groupadmin** will configure all users with this role as a Group Admin and Org Admin for all group(s) that the user is assigned to and all orgs that fall under the group(s)
 
-**2.  {prefix}-{groupID}**
+**2. {prefix}-{groupID}**
 
 * This role mapping will assign users with the Org Collaborator roles for all organizations underneath the specified group(s)
 * **groupID** is the ID string for a group in Snyk (This can be found in the snyk URL at the group level)
@@ -30,10 +32,10 @@ To configure this option, we expect you to send the `roles` array within the SAM
 
 **3.** **{prefix}-{orgslug}-{role}**
 
-* This role mapping will assign users with the specified role of Collaborator or Admin for the Snyk organization specified in **orgslug**.&#x20;
-* **orgslug** is the unique identifier of the organization name in Snyk&#x20;
+* This role mapping will assign users with the specified role of Collaborator or Admin for the Snyk organization specified in **orgslug**.
+* **orgslug** is the unique identifier of the organization name in Snyk
   * How to find the **orgslug**: https://app.snyk.io/org/{orgslug} OR via our [API ](https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group)(Note: While the **orgslug** will be the name of the organization for most cases, this may not always be the case)
-  * Note: **orgslug** can be a value of up to 60 characters and must be fully lowercase&#x20;
+  * Note: **orgslug** can be a value of up to 60 characters and must be fully lowercase
 * **role** is either **collaborator or admin**
 
 ### Roles array mapping format
@@ -79,7 +81,7 @@ The following example will show how to assign roles to Snyk users under the mapp
 * The customer has 3 organizations within Snyk: Application-SecurityScanner1, Partner-Plugins, and Application-Payments
 * The customer has 4 teams: Business Development, Engineering, Security, and Product that have different needs:
   * Business Development team will need access to the ABC group and only the Partner-Plugins organization as Org Admin
-  * Engineering will need access to the ABC group, the Application-SecurityScanner1 organization as Org Admin**,** Partner-Plugins organization as Org Admin, and Application-Payments as Org Collaborator
+  * Engineering will need access to the ABC group, the Application-SecurityScanner1 organization as Org Admin\*\*,\*\* Partner-Plugins organization as Org Admin, and Application-Payments as Org Collaborator
   * Security will need access to the ABC group as Group Admin and all 3 organizations as Org Admin
   * Product team will need access to the ABC group and all 3 organizations as Org Collaborator
 
@@ -128,4 +130,3 @@ For Product Team, we will be using the {prefix}-{groupID} mapping, where the val
 ### Summary Diagram of Roles under Custom Mapping
 
 ![](../../../.gitbook/assets/custom-mapping-screenshot.png)
-
