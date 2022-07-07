@@ -72,6 +72,7 @@ Once you’re set up with groups and users:
     3. Attribute Statements-> set **roles** as the Name field with Name format **Unspecified** and the Value will be the below expression\
        `appuser.user_role == "groupadmin" ? "snyk-groupadmin" : Arrays.flatten(String.replace(String.replace(String.append("snyk-",String.append(Arrays.toCsvString(appuser.snyk_orgs),"-"+appuser.user_role)),",",",snyk-"),",","-"+appuser.group_user_role+","))`
     4. Click Next -> Finish
+    5. Reach out to your Snyk point of contact so they can complete the configuration. This process may take 4 to 5 days
 
     **Explanation of the roles expression:**
 
@@ -130,6 +131,7 @@ In this configuration:
 4.  Attribute Statements-> set **roles** as the Name field with Name format **Unspecified** and the Value will be the below expression.
 
     `Arrays.flatten(String.replace(String.append("snyk-",Arrays.toCsvString(appuser.snyk_orgs)),",",",snyk-"))`
+5. Reach out to your Snyk point of contact so they can complete the configuration. This process may take 4 to 5 days
 
 ### **Explanation of the value expression**
 
