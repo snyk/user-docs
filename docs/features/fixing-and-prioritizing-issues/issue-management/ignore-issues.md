@@ -2,15 +2,24 @@
 
 If you do not want to fix a vulnerability or license issue, and don't want to see that issue in scan results, Snyk allows you to ignore it, either temporarily or permanently.
 
-### When to ignore issues
+You can set ignores individually or as actions - see [Setting ignores](ignore-issues.md#setting-ignores) for details.
 
-Issues can be ignored and viewed via the snyk.io UI, the Snyk APIs, the Snyk CLI, and using the .snyk file.
+#### Decide when to ignore issues
 
 Ignoring security issues should not be the default action, but it is sometimes necessary. The best practice is to fix or patch vulnerabilities, or to remove the vulnerable dependency, but there may still be reasons why you would want to suppress an issue – for example, if an issue doesn’t currently have a fix, you might want to ignore it until it does.
 
 Some issues are irrelevant for certain projects (e.g. a DDOS attack for an internal service). Other times, an issue has a path that makes it non-exploitable. In these scenarios, you should still fix the issue, as although the vulnerability is not exploitable today, it may be exploitable in future.
 
-### Ignoring issues in the UI
+## Setting ignores
+
+Issues can be ignored and viewed via:
+
+* [Snyk Web UI](ignore-issues.md#ignoring-issues-in-the-web-ui)
+* [Snyk CLI](ignore-issues.md#ignoring-issues-in-the-cli)
+* [The .snyk file](ignore-issues.md#ignoring-issues-with-the-.snyk-file).
+* [Policy actions](ignore-issues.md#ignoring-issues-with-policy-actions)
+
+### Ignoring issues in the Web UI
 
 Each issue card has an **Ignore** button that opens up a dialog where you can select why you want to ignore the issue, and how long to ignore it.
 
@@ -32,7 +41,7 @@ When you ignore an issue in our UI, it will show who ignored it and allow you to
 
 ### Ignoring issues in the CLI
 
-Suppressing issues is possible via the CLI using the `snyk ignore` command.
+Suppressing issues is possible via the CLI using the `snyk ignore` command. For example:
 
 `snyk ignore --id='npm:braces:20180219' --expiry='2018-04-01' --reason='testing'`
 
@@ -47,7 +56,7 @@ reason: The reason given
 expires: '2017-12-29T16:10:16.946Z'
 ```
 
-### Scanning from the CLI or CI/CD, Ignoring in the UI
+#### Scanning from the CLI or CI/CD, Ignoring in the UI
 
 Ignores between a CLI (or CI/CD run) and the Snyk UI are synchronized. So the flow is:
 
@@ -96,7 +105,7 @@ You can set [Security policies](https://docs.snyk.io/fixing-and-prioritizing-iss
 
 See [Security policies: Actions](https://docs.snyk.io/fixing-and-prioritizing-issues/security-policies/security-policies-actions) for more details.
 
-### Ignoring issues in Snyk Code
+## Snyk Code: ignoring issues
 
 For [Snyk Code](https://docs.snyk.io/snyk-code), ignore functionality may capture a wider range of issues than other products.
 
@@ -120,7 +129,7 @@ var handleLogFile = filesystem.readFile(generalLogFileName, "utf8", function(err
 
 See [using-snyk-code-web.md](../../../products/snyk-code/exploring-and-working-with-the-snyk-code-results/using-snyk-code-web.md "mention") for more details of Snyk Code.
 
-### Ignoring issues in Snyk IaC
+## Snyk IaC: ignoring issues
 
 When scanning your IaC configuration files using the Snyk CLI with **snyk iac test** you can ignore issues that are not relevant to you.
 
@@ -128,7 +137,7 @@ You can do this by using [the-.snyk-file.md](../../../snyk-cli/test-for-vulnerab
 
 See [iac-ignores-using-the-.snyk-policy-file.md](../../../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md "mention")for more details.
 
-### Set who can configure ignore settings
+## Configure ignore settings
 
 As suppressing vulnerabilities carries a level of risk, you can make this function available to admins only:
 
@@ -139,7 +148,7 @@ As suppressing vulnerabilities carries a level of risk, you can make this functi
 
 ![](<../../../.gitbook/assets/Screenshot 2021-12-07 at 11.25.49.png>)
 
-### Using ignores in reports
+## Using ignores in reports
 
 If you have access to our Reports feature, you will also be able to see an overview of how many issues in your organization’s projects are ignored, along with an option to filter these so you can drill down into each one. If the issue was ignored in our UI, we include a credit for additional accountability, so you can see who initiated it.
 

@@ -474,7 +474,6 @@
   * [Prioritizing and managing issues](features/fixing-and-prioritizing-issues/issue-management/README.md)
     * [Evaluating and prioritizing vulnerabilities](features/fixing-and-prioritizing-issues/issue-management/evaluating-and-prioritizing-vulnerabilities.md)
     * [Snyk Priority Score](features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score.md)
-    * [Introduction to ignoring issues](features/fixing-and-prioritizing-issues/issue-management/introduction-to-ignoring-issues.md)
     * [Ignore issues](features/fixing-and-prioritizing-issues/issue-management/ignore-issues.md)
     * [Triaging issues](features/fixing-and-prioritizing-issues/triaging-issues.md)
     * [Reachable vulnerabilities](features/fixing-and-prioritizing-issues/prioritizing-issues/reachable-vulnerabilities.md)
