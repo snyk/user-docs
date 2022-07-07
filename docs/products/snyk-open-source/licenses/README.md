@@ -31,6 +31,10 @@ Within the **Reports** area you can view an inventory of all of your licenses ac
 
 ### **Supported package managers**
 
+{% hint style="info" %}
+Snyk currently does not support license scanning for Go submodules.
+{% endhint %}
+
 * npm
 * RubyGems
 * Maven
