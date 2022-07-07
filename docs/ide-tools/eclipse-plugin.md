@@ -21,7 +21,7 @@ The Snyk Eclipse plugin is available for installation on the [Eclipse Marketplac
 
 ## Supported languages, package managers, and frameworks
 
-* For Snyk Open Source, the Eclipse plugin supports all the languages and package managers supported by Snyk Open Source and the CLI. See the full [list](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support).
+* For Snyk Open Source, the Eclipse plugin supports the languages and package managers supported by Snyk Open Source and the CLI except C/C++. See the full [list](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support).
 * For Snyk Code, the Eclipse plugin supports all the [languages and frameworks supported by Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#language-support-with-snyk-code-ai-engine).
 * For Snyk IaC, the Eclipse plugin supports the following IaC templates: Terraform, Kubernetes, CloudFormation, and Azure Resource Manager.
 
