@@ -6,11 +6,11 @@ This guide prepares teams on Snyk Business and Enterprise plans for deploying Sn
 
 There are a few key considerations and tasks to get started using Snyk, including:
 
-* [Make implementation decisions](implementing-snyk-in-your-teams.md#implementation-decisions).
-* [Set up your first organization](implementing-snyk-in-your-teams.md#set-up-first-organization).
+* [Make implementation decisions](implementing-snyk-in-your-teams.md#make-implementation-decisions).
+* [Set up your first organization](implementing-snyk-in-your-teams.md#set-up-your-first-organization).
 * [Create additional organizations.](implementing-snyk-in-your-teams.md#create-additional-organizations)
 * [Roll out Snyk to developers.](implementing-snyk-in-your-teams.md#roll-out-snyk-to-developers)
-* [Find, prioritize, and fix issues](implementing-snyk-in-your-teams.md#learn-to-find-prioritize-and-fix-issues).
+* [Find, prioritize, and fix issues](implementing-snyk-in-your-teams.md#find-prioritize-and-fix-issues).
 
 ### Make implementation decisions
 
