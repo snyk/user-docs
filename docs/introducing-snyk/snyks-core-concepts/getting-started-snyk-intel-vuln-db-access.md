@@ -4,23 +4,13 @@
 
 The [Snyk Vulnerability Database](https://security.snyk.io/) contains the key security information used by Snyk products to find and fix code vulnerabilities.
 
-Customers who already have their own products can benefit from Snyk’s expertise and accumulated knowledge with access to this database. This gives your development teams access to trusted intelligence, allowing them to rapidly secure open source and container code.
+### Access to the Database
 
-## Process overview
+You can inspect the database at [https://security.snyk.io/](https://security.snyk.io/), or you can incorporate database information into your own systems.&#x20;
 
-1. Snyk helps you to set an integration up for your company.
-2. Snyk provides documentation with instructions for access.
-3. Snyk sends you database information, typically as a JSON file (see [sample code](https://snyk.io/partners/api/v4/vulndb/sample.json)) **Note**: It is recommends that you save the file in a database.
-4. You write code to use the database information in your systems.
+Incorporating information into your own systems may be useful for customers who already have their own security products; you can benefit from Snyk’s expertise and accumulated knowledge with access to this database. This gives your development teams access to trusted intelligence, allowing them to rapidly secure open source and container code.
 
-## About the Snyk Vulnerability Database
-
-A team of security experts and analysts manages the Snyk Vulnerability database to ensure the database maintains high accuracy and eliminates false positives.
-
-* All items in the database are analyzed and verified.
-* The team also invests in proprietary research to discover new vulnerabilities. See the Snyk [disclosed vulnerability list](https://app.snyk.io/disclosed-vulnerabilities).
-
-## Database feeds
+#### Feeds
 
 The Snyk Vulnerability Database includes two feeds:
 
@@ -28,3 +18,13 @@ The Snyk Vulnerability Database includes two feeds:
 * Linux OS vulnerabilities, supporting Snyk Container.
 
 Both feed options can be licensed directly.
+
+#### Incorporating the Vulnerability Database into your systems
+
+You can incorporate Snyk Vulnerability Database information in your system. Typically:
+
+1. Snyk helps you to set an integration up for your company, providing documentation with instructions for access.
+2. Snyk sends you database information, typically as a JSON file (see [sample code](https://snyk.io/partners/api/v4/vulndb/sample.json)) **Note**: It is recommends that you save the file in a database.
+3. You can now write code to use the database information in your systems.
+
+Also see [Using the Snyk Vulnerability Database](../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md).
