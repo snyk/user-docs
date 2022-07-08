@@ -53,6 +53,7 @@ Some useful CLI options include the following:
 | `--severity-threshold`       | Report only vulnerabilities at the specified level or higher.                                                                                                                                                |
 | `--app-vulns`                | Snyk allows detection of vulnerabilities in your application dependencies from container images, as well as from the operating system, all in one single scan.                                               |
 | `--nested-jars-depth`        | When using `--app-vulns` use the `--nested-jars-depth=n` option to set how many levels of nested jars Snyk is to unpack.                                                                                     |
+| `--fail-on`                  | Fail only when there are vulnerabilities that can be fixed.                                                                                                                                                  |
 
 For more options, see the [Snyk CLI container help](../../../snyk-cli/commands/#snyk-container) or display the help by running:
 
