@@ -20,8 +20,6 @@ org updated
 
 From now on, all your CLI tests will run under the specified organization.
 
-
-
 For example:
 
 To set the Snyk Demo Org as the default organization for the CLI tests, we use the organization ID and enter:
@@ -34,6 +32,4 @@ snyk config set org=a7708807-3881-xxxx-xxxx-xxxxxxxxxxxx
 
 From now on, all the CLI tests will run by default under the Snyk Demo Org organization, and the Snyk Demo Org ID will appear in the test results:
 
-![](<../../../../.gitbook/assets/Snyk Code - CLI - Organization - Global Settings - Results.png>)
-
-&#x20;&#x20;
+![](<../../../../.gitbook/assets/Snyk Code - CLI - Organization - Global Settings - Results - 2.png>)
