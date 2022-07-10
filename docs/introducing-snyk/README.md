@@ -12,16 +12,21 @@ A good security process secures each of these components where they are built an
 
 ![](<../.gitbook/assets/image (69).png>)
 
-#### Using Snyk in your workflow
+#### Using Snyk in your workflow:
 
-* **Secure your code**: use [Snyk Open Source](../products/snyk-open-source/) to fix open source vulnerabilities and [Snyk Code](../products/snyk-code/) to fix vulnerabilities in application codebases.
-* **Secure your environments**: use [Snyk Container](../products/snyk-container/) to fix vulnerabilities in container images and Kubernetes workloads and [Snyk Infrastructure as Code (IaC)](../products/snyk-infrastructure-as-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates.
+* **Secure your code**: use [Snyk Open Source](../products/snyk-open-source/) to fix vulnerabilities in your open source dependencies, and [Snyk Code](../products/snyk-code/) to fix vulnerabilities in your source code.
+* **Secure your environments**: use [Snyk Container](../products/snyk-container/) to fix vulnerabilities in container images and Kubernetes workloads, and [Snyk Infrastructure as Code (IaC)](../products/snyk-infrastructure-as-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates.
 
 ### Ways to run Snyk
 
-Snyk runs in the browser as [Snyk Web UI](../snyk-web-ui/), in the command line with the [Snyk CLI](https://docs.snyk.io/snyk-cli) (Command Line Interface), in various [IDE plugins](../ide-tools/) that embed Snyk in your local dev environment, and with the [Snyk API](https://support.snyk.io/hc/en-us/categories/360000665657-Snyk-API) (Application Programming Interface).
+Snyk runs in the following environments:&#x20;
 
-See [snyk-products-and-environments.md](snyk-products-and-environments.md "mention") for more details.
+* In the browser as [Snyk Web UI](../snyk-web-ui/).&#x20;
+* In the Command Line Interface with the [Snyk CLI](https://docs.snyk.io/snyk-cli).&#x20;
+* In various [IDE plugins](../ide-tools/) that embed Snyk in your local dev environment.
+* In the [Snyk API](https://support.snyk.io/hc/en-us/categories/360000665657-Snyk-API) (Application Programming Interface).
+
+See [Snyk products and environments](snyk-products-and-environments.md) for more details.
 
 {% embed url="https://snyk.io/wp-content/uploads/Homepage-IDE-animation-Log4Shell-FINAL.mp4" %}
 Running Snyk from the command line.
@@ -29,9 +34,9 @@ Running Snyk from the command line.
 
 ### Supported languages and integrations
 
-Snyk supports a [wide range of languages and integrations](snyk-languages-and-integrations.md) to use Snyk with leading IDE, repository, CI/CD, runtime, registry, and issue management tools.
+Snyk supports a [wide range of languages and integrations](snyk-languages-and-integrations.md) that allows you to use Snyk with leading IDEs, Git repositories, and CI/CD, runtime, registry, and issue management tools.
 
-See [snyk-languages-and-integrations.md](snyk-languages-and-integrations.md "mention") for more details.
+See [Snyk languages and integrations](snyk-languages-and-integrations.md) for more details.
 
 ### **What does it cost?**
 
@@ -43,7 +48,7 @@ Snyk has several [pricing plans](https://snyk.io/plans/) available:
 * **Enterprise**: Standardize dev-first security across the enterprise, with centralized policy governance. Unlimited tests.
 
 {% hint style="info" %}
-See [Running tests](snyks-core-concepts/running-tests.md) for more details of tests.
+See [Running tests](snyks-core-concepts/running-tests.md) for more details on tests.
 {% endhint %}
 
 ### **Who uses Snyk?**
