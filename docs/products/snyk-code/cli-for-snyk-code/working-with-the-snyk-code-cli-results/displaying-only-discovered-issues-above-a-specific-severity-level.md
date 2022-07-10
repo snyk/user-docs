@@ -16,7 +16,7 @@ For example:
 
 In the **snyk-goof-master** folder, 8 issues were found - 4 with a High severity level and 4 with Medium:
 
-![](<../../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Filter Severity - Example - before (1).png>)
+![](<../../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Filter Severity - Example - before - 2.png>)
 
 To display only issues with a High severity level and above, we enter:
 
@@ -26,4 +26,4 @@ snyk code test /Users/username/Documents/Repositories/snyk-goof-master --severit
 
 The results show only 4 issues, all with a High severity level. Issues with a lower severity level are not displayed:
 
-![](<../../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Filter Severity - Example - after.png>)
+![](<../../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Filter Severity - Example - after - 2.png>)
