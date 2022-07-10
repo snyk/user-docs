@@ -1,4 +1,4 @@
-# Excluding directories and files from the Snyk Code test
+# Excluding directories and files from the Snyk Code CLI test
 
 {% hint style="info" %}
 This Exclusion command is applicable to Snyk Code only.
@@ -49,7 +49,7 @@ For example:
 
 1\.  In the **snyk-goof-master** folder, 12 issues were found in 3 different files: **app.js**, **db.js**, and **routes/index.js**:
 
-![](<../../../.gitbook/assets/snyk Code - CLI - snyk code test - Exclusion - before.png>)
+![](<../../../.gitbook/assets/snyk Code - CLI - snyk code test - Exclusion - before -2.png>)
 
 2\.  To exclude the **app.js** and **db.js** files, and display only issues that are discovered in the **routes/index.js** file, we enter:
 
@@ -69,6 +69,6 @@ This `.snyk` file contains the files we specified for exclusion:
 
 4\.  When we run the test again, the **app.js** and **db.js** files are excluded from the test, and we receive only the issues that were found in the **routes/index.js** file:
 
-![](<../../../.gitbook/assets/snyk Code - CLI - snyk code test - Exclusion - after.png>)
+![](<../../../.gitbook/assets/snyk Code - CLI - snyk code test - Exclusion - after - 2.png>)
 
 &#x20;
