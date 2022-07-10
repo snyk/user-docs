@@ -169,7 +169,7 @@
     * [Automated pull request creation for new fixes](products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md)
     * [Automated pull requests for known vulnerabilities (backlog)](products/snyk-open-source/open-source-basics/fix-pull-requests-for-known-vulnerabilities-backlog.md)
     * [Integrate Snyk into your workflow](products/snyk-open-source/open-source-basics/integrate-snyk-into-your-workflow.md)
-  * [Open Source language and package manager support](products/snyk-open-source/language-and-package-manager-support/README.md)
+  * [Open Source - Supported  languages and package managers](products/snyk-open-source/language-and-package-manager-support/README.md)
     * [Snyk for .NET](products/snyk-open-source/language-and-package-manager-support/snyk-for-.net.md)
     * [Snyk for Bazel](products/snyk-open-source/language-and-package-manager-support/snyk-for-bazel.md)
     * [Snyk for C / C++](products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++.md)
