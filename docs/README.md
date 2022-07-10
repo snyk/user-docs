@@ -22,11 +22,11 @@
 
 ### Use other resources
 
-|                                                                                                                                                                                     |                                                                                                                                                                                  |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p><a href="https://training.snyk.io/"><strong>Snyk training</strong><br></a>Courses to help you develop fast and stay secure with Snyk.</p>                                        | <p><a href="https://support.snyk.io/hc/en-us"><strong>Snyk support</strong><br></a>Raise and view Support tickets, and search the Snyk knowledgebase.</p>                        |
-| <p><a href="https://updates.snyk.io/"><strong>Snyk product updates</strong><br></a>Find out the latest product information from Snyk.</p>                                           | <p><a href="https://security.snyk.io/"><strong>Snyk vulnerability database</strong><br></a>Our comprehensive, accurate, and timely database for open source vulnerabilities.</p> |
-| <p><a href="https://snyk.io/advisor/"><strong>Snyk Advisor</strong><br></a>Find the best package for your next project; search and compare over 1 million open source packages.</p> |                                                                                                                                                                                  |
+|                                                                                                                                                                                     |                                                                                                                                                                                                                                                                                                                                            |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <p><a href="https://training.snyk.io/"><strong>Snyk training</strong><br></a>Courses to help you develop fast and stay secure with Snyk.</p>                                        | <p><a href="https://support.snyk.io/hc/en-us"><strong>Snyk support</strong><br></a>Raise and view Support tickets, and search the Snyk knowledgebase.</p>                                                                                                                                                                                  |
+| <p><a href="https://updates.snyk.io/"><strong>Snyk product updates</strong><br></a>Find out the latest product information from Snyk.</p>                                           | <p><a href="https://security.snyk.io/"><strong>Snyk vulnerability database</strong><br></a>Our comprehensive, accurate, and timely database for open source vulnerabilities.</p>                                                                                                                                                           |
+| <p><a href="https://snyk.io/advisor/"><strong>Snyk Advisor</strong><br></a>Find the best package for your next project; search and compare over 1 million open source packages.</p> | <p><strong></strong><a href="https://learn.snyk.io/"><strong>Snyk Learn</strong></a><strong></strong><a href="https://security.snyk.io/"><strong></strong><br><strong></strong></a>Learn from industry experts via interactive lessons how to understand, fix, and avoid vulnerabilities across a variety of languages and ecosystems.</p> |
 
 ### See Snyk pricing
 
@@ -38,8 +38,3 @@
 {% hint style="success" %}
 [Sign up to use Snyk for free!](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)
 {% endhint %}
-
-
-
-
-
