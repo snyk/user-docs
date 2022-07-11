@@ -8,12 +8,12 @@ After you generated an HTML file that contains your test results via the Snyk-to
 
 ![](<../../../../.gitbook/assets/Snyk-to-HTML - Results file.png>)
 
-**Note**: If you gave a different name to your HTML file, locate and open this file. &#x20;
+**Note**: If you gave a different name to your HTML file, locate and open this file.
 
 The HTML Report appears:
 
-![](<../../../../.gitbook/assets/Snyk-to-HTML - HTML Report.png>)
+![](<../../../../.gitbook/assets/Snyk-to-HTML - HTML Report - 2.png>)
 
 You can view the **Data Flow** and **Fix Analysis** information of the discovered vulnerabilities, by clicking these buttons at the top right corner of each issue:
 
-![](<../../../../.gitbook/assets/Snyk-to-HTML - Example - HTML Report - Fix Analysis tab.png>)
+![](<../../../../.gitbook/assets/Snyk-to-HTML - Example - HTML Report - Fix Analysis tab - 2.png>)
