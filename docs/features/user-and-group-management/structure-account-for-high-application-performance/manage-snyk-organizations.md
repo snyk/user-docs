@@ -11,21 +11,31 @@ In the **Manage organization** section, you can:
 
 You can have an unlimited number of organizations on Snyk. Each organization can be on a different pricing plan.
 
+{% hint style="info" %}
+Once you've fine-tuned the settings and integrations for an organization, you can copy its settings as you create additional organizations.
+{% endhint %}
+
 **To create a new organization:**
 
 1\. On the Snyk Web UI, open the Organizations drop-down list from the top menu, and click the **Create a new organization** option:
 
 ![](<../../../.gitbook/assets/Org Settings - Creating New Organization option.png>)
 
-2\. On the **Create a new organization** page, enter a name for the new organization, and click the **Create organization** button:
+2\. On the **Create a new organization** page, enter a name for the new organization. Consider using a structured naming convention to identify your organizations.
 
 **Note**: It is highly recommended to enter a unique name for the new organization.
 
-![](<../../../.gitbook/assets/Creating a New Organization - dialog box.png>)
+3\. Select an organization to use as a model for settings and integrations from the drop down list.&#x20;
+
+4\. Select **Create organization**.&#x20;
+
+![](../../../.gitbook/assets/2022-06-27\_17-28-16.png)
 
 A new organization is created and is added to your Organizations list.
 
 By default, each organization has a unique Snyk ID and internal name, which you can find in the **Settings** page of the organization.
+
+You'll want to fine-tune the settings and integrations for the new organization as needed before importing projects to the new organization.
 
 ### Deleting an organization
 
