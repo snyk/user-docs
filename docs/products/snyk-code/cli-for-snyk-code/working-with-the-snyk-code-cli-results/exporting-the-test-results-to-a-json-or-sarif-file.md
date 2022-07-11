@@ -31,11 +31,9 @@ snyk code test --json-file-output=<path/to/new_file>
 npm update snyk -g
 ```
 
-
-
 ### Exporting the test results to a JSON file
 
-&#x20;**To export the test results to a JSON file:**
+**To export the test results to a JSON file:**
 
 * In the terminal, enter:
 
@@ -61,7 +59,7 @@ snyk code test --json-file-output=json
 
 In the terminal, the Code test results appear in the standard format:
 
-![](<../../../../.gitbook/assets/snyk Code - CLI - results - export to JSON - with terminal results .png>)
+![](<../../../../.gitbook/assets/snyk Code - CLI - results - export to JSON - with terminal results - 2 .png>)
 
 In the repository folder, a JSON file is created:
 
@@ -95,7 +93,7 @@ snyk code test --sarif-file-output=sarif
 
 In the terminal, the test results appear in the standard format:
 
-![](<../../../../.gitbook/assets/snyk Code - CLI - results - export to SARIF - with terminal results.png>)
+![](<../../../../.gitbook/assets/snyk Code - CLI - results - export to SARIF - with terminal results - 2.png>)
 
 In the repository folder, a SARIF file is created:
 
@@ -112,4 +110,3 @@ The severity levels of the issues discovered in the Snyk Code test are displayed
 For example:
 
 ![](<../../../../.gitbook/assets/snyk Code - CLI - JSON and SARIF - Severity Level Results.png>)
-
