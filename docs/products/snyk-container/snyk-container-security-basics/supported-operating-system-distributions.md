@@ -35,7 +35,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 
 ### CentOS Stream
 
-* CentOS Steeam 9
+* CentOS Stream 9
 * CentOS Stream 8
 
 ### CentOS Linux
@@ -55,6 +55,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 
 ### Oracle Linux
 
+* Oracle Linux 9
 * Oracle Linux 8
 * Oracle Linux 7
 * Oracle Linux 6
@@ -62,7 +63,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 
 ### Red Hat Enterprise Linux (RHEL)
 
-* Red Hat Entperise Linux 9
+* Red Hat Enterprise Linux 9
 * Red Hat Enterprise Linux 8
 * Red Hat Enterprise Linux 7
 * Red Hat Enterprise Linux 6
