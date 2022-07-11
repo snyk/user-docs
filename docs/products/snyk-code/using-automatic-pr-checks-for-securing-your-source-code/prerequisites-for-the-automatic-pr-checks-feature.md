@@ -6,5 +6,5 @@ To configure and start using the Automatic PR Checks feature, you need the follo
   Snyk Code supports the following SCMs: GitHub, GitHub Enterprise, GitLab Cloud, Bitbucket Cloud, Bitbucket Server, and Azure Repos.\
   **Note**: For more information on integrating your SCM with your Snyk Account, see [Snyk Code Integrations](https://docs.snyk.io/products/snyk-code/key-features/integrations).
 * Repositories with code in a supported language and platform.\
-  **Note**: For more information, see [Code language and framework support](file:///products/snyk-code/snyk-code-language-and-framework-support).
+  **Note**: For more information, see [Snyk Code - Supported languages and frameworks](../snyk-code-language-and-framework-support.md).
 * Be the owner or administrator of the specific organization for which you want to enable the PR Checks feature.
