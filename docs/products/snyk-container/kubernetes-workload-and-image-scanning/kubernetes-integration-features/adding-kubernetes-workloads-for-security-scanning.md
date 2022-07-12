@@ -1,10 +1,18 @@
 # Manually import of Kubernetes workload project
 
-**Prerequisites**
+{% hint style="info" %}
+With the same integration id, you can import **many** clusters to **one** Snyk organization by giving clusters a unique cluster name during installation.
+
+You can also import **one** cluster to **multiple** Snyk organizations in manual import, this can be done via [cloning an integration across your Snyk orgs](../../../../features/integrations/managing-integrations/clone-an-integration-across-your-snyk-orgs.md), so they have the same integration id.
+
+It is important to note that one Snyk organization has a limit of 25,000 projects; please consult your SCM for more information.
+{% endhint %}
+
+## **Prerequisites**
 
 You must have an account with Snyk and be onboarded to your organization by an administrator.
 
-In addition, the integration must be configured between Snyk and your Kubernetes environment per organization. To verify the integration is configured, ensure you have an [**Integration ID**](../kubernetes-integration-overview/viewing-your-kubernetes-integration-settings.md)****
+In addition, the integration must be configured between Snyk and your Kubernetes environment per organization. To verify the integration is configured, ensure you have an [**Integration ID**](../kubernetes-integration-overview/viewing-your-kubernetes-integration-settings.md)\*\*\*\*
 
 1. Deploy Snyk Controller in your Kubernetes cluster.
 2. Deploy Kubernetes workloads that you want to be imported into the Kubernetes cluster
