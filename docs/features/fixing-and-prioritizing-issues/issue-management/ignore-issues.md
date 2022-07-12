@@ -23,7 +23,7 @@ Issues can be ignored and viewed via:
 
 Each issue card has an **Ignore** button that opens up a dialog where you can select why you want to ignore the issue, and how long to ignore it.
 
-![](<../../../.gitbook/assets/image (21).png>)
+![](../../../.gitbook/assets/ignore-vulnerability-ui-updated.png)
 
 If you select **Ignore temporarily,** then you can check the **Until fix is available** checkbox:
 
