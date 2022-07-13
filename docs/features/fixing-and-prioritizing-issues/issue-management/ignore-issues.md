@@ -66,7 +66,7 @@ Ignores between a CLI (or CI/CD run) and the Snyk UI are synchronized. So the fl
 
 For example:
 
-![](<../../../.gitbook/assets/image (15).png>)
+![](../../../.gitbook/assets/ignore-vulnerability-snyk-monitor-updated.png)
 
 `snyk test` before ignoring in the UI:
 
