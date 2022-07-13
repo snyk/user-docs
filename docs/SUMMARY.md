@@ -65,6 +65,7 @@
   * [Configure the Snyk CLI](snyk-cli/configure-the-snyk-cli.md)
 * [Snyk API](features/snyk-api-info/README.md)
   * [Getting started using Snyk REST API](snyk-api-info/getting-started-using-snyk-rest-api.md)
+  * [Snyk API responses: Project type](snyk-api-info/snyk-api-responses-project-type.md)
   * [Using Snyk API](snyk-api-info/using-snyk-api/README.md)
     * [Snyk API token permissions users can control](snyk-api-info/using-snyk-api/api-token-permissions-users-can-control.md)
     * [Get a list of fixed issues using Snyk API](snyk-api-info/using-snyk-api/get-a-list-of-fixed-issues-using-snyk-api.md)
