@@ -41,7 +41,7 @@ This information includes:
 
 Currently, Snyk only tracks and flags PRs in GitHub, GitHub Enterprise, and Bitbucket Cloud, and only for the top-most vulnerable projects. If you use another SCM, **Pending tasks** shows only PRs that can be raised, not PRs that have already been raised.
 
-![Use project links to explore and manage target options](<../.gitbook/assets/image (70).png>)
+![Use project links to explore and manage target options](<../.gitbook/assets/image (70) (4).png>)
 
 Use the project \*\*\*\* links to explore and manage the metadata, retest, and fix options for the target files in your projects. The link opens a page where you can view the project **Overview** options, or switch to the **History**, and **Settings** tabs.
 
