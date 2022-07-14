@@ -10,11 +10,11 @@ From the **Projects** page, if the project is imported from a registry integrati
 
 You can filter for all container projects, similar to the following example:
 
-![](<../../../.gitbook/assets/image (69) (1).png>)
+![](<../../../.gitbook/assets/image (69) (2).png>)
 
 When you open any container project, the resulting analysis and fix advice appears in the Snyk Web UI:
 
-![](<../../../.gitbook/assets/image (76).png>)
+![](<../../../.gitbook/assets/image (76) (1).png>)
 
 The following information is displayed:
 
@@ -41,7 +41,7 @@ The following information is displayed:
 
 
 
-![](<../../../.gitbook/assets/image (71).png>)
+![](<../../../.gitbook/assets/image (71) (1).png>)
 
 {% hint style="info" %}
 **Note**\

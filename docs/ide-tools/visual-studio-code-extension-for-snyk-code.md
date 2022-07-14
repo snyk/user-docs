@@ -56,10 +56,10 @@ To authenticate follow these steps:
 
 1.  Once the extension is installed, click on the Snyk Icon in the left navigation bar:
 
-    <img src="../.gitbook/assets/image (62) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (6).png" alt="" data-size="original">
+    <img src="../.gitbook/assets/image (62) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (7).png" alt="" data-size="original">
 2.  Click **Connect VS Code with Snyk**. The extension relies on the Snyk authentication API and asks you to authenticate your machine against the Snyk web application:
 
-    <img src="../.gitbook/assets/image (71) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
+    <img src="../.gitbook/assets/image (71) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
 3. Click **Authenticate**.
 4.  After successful authentication, view the confirmation message.
 
@@ -96,7 +96,7 @@ Snyk analysis runs automatically when you open a folder or workspace.
 * Snyk Code performs scans automatically on file saves.
 * Snyk Open Source does not automatically run on save by default, but you can enable it in settings:
 
-![Snyk Open Source settings](<../.gitbook/assets/image (73) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Snyk Open Source settings](<../.gitbook/assets/image (73) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 **Tip**: if you do not like to manually save while working, enable [AutoSave](https://code.visualstudio.com/docs/editor/codebasics#\_save-auto-save).
 
@@ -122,7 +122,7 @@ To manually perform the analysis, in the configuration of the extension you can 
 
 Snyk analysis shows a list of security vulnerabilities and code issues found in the application code. For more details and examples of how others fixed the issue, select a security vulnerability or a code security issue. Snyk suggestion information for the issue selected appears in a panel on the right side:
 
-![Snyk suggestion information](<../.gitbook/assets/image (76) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+![Snyk suggestion information](<../.gitbook/assets/image (76) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
 
 ### Snyk analysis panel
 
@@ -130,15 +130,15 @@ The Snyk analysis panel on the left of the preceding code screen shows how much 
 
 The icons have the following meaning:
 
-| ![](<../.gitbook/assets/image (75) (2).png>) Critical severity                                                                                                       | May allow attackers to access sensitive data and run code on your application.                                                               |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](<../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>) High severity       | May allow attackers to access sensitive data on your application.                                                                            |
-| ![](<../.gitbook/assets/image (63) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (6).png>) Medium severity | May allow attackers under some conditions to access sensitive data on your application.                                                      |
-| ![](<../.gitbook/assets/image (114) (1).png>) Low severity                                                                                                           | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
+| ![](<../.gitbook/assets/image (75) (2).png>) Critical severity                                                                                               | May allow attackers to access sensitive data and run code on your application.                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](<../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>) High severity       | May allow attackers to access sensitive data on your application.                                                                            |
+| ![](<../.gitbook/assets/image (63) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (7).png>) Medium severity | May allow attackers under some conditions to access sensitive data on your application.                                                      |
+| ![](<../.gitbook/assets/image (114) (1).png>) Low severity                                                                                                   | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
 
 You can filter the issues by setting the severities you want to see using the `snyk.severity` setting. For example, set `"snyk.severity": { "critical": true, "high": true, "medium": true, "low": false }` to hide low severity issues. You can also apply the setting in the Settings UI.
 
-![Severity settings](<../.gitbook/assets/image (65) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Severity settings](<../.gitbook/assets/image (65) (1) (1) (1) (1) (1) (1).png>)
 
 ### Snyk Code editor window
 
@@ -146,7 +146,7 @@ The editor window in the middle of the results screen shows the code that is ins
 
 ### Snyk Code vulnerability window
 
-![Snyk Suggestion panel](<../.gitbook/assets/image (76) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Snyk Suggestion panel](<../.gitbook/assets/image (76) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 The Snyk Suggestion panel on the right of the results screen shows the recommendation of the Snyk engine using, for example, variable names of your code and the line numbers in red. You can also see the following:
 
@@ -185,7 +185,7 @@ Find security vulnerabilities in your JavaScript packages from well-known CDNs. 
 
 You can navigate to the most severe vulnerability by triggering the provided code actions. This opens a vulnerability window to show more details:
 
-![Code action](<../.gitbook/assets/oss-editor-show-vulnerability (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+![Code action](<../.gitbook/assets/oss-editor-show-vulnerability (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
 
 ### Snyk Open Source vulnerability window
 

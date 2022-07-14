@@ -36,4 +36,4 @@ You can manage email notifications, for yourself and your organization. See [not
 
 Customize your Snyk account for your needs. See [managing-settings](managing-settings/ "mention").
 
-![](<../../.gitbook/assets/image (76) (1).png>)
+![](<../../.gitbook/assets/image (76) (1) (1).png>)

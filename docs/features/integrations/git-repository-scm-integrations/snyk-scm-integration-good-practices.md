@@ -1,6 +1,6 @@
 # Snyk SCM integration: deployment recommendations
 
-You can integrate Snyk with your Source Control Manager (SCM) to quickly and easily gain visibility across all your projects.
+You can integrate Snyk with your Source Control Manager (SCM) to quickly and easily gain visibility across all the [projects](https://docs.snyk.io/introducing-snyk/introduction-to-snyk-projects) that you add to the **Projects** menu in Snyk.&#x20;
 
 The [Snyk SCM integrations](https://docs.snyk.io/integrations/git-repository-scm-integrations) allow you to:
 
@@ -27,7 +27,7 @@ If you try to implement all the SCM integration features at the same time, you r
 
 Snyk has pre-built integrations for SCMs including GitHub, GitHub Enterprise, Bitbucket Cloud and others. See [GIT repository (SCM) integrations](./) for a full list.
 
-To check if an SCM is already configured for your Org, navigate to the **Integrations** tab. The relevant SCMs are labeled **Configured**.
+To check if an SCM is already configured for your Org, go to the **Integrations** tab. The relevant SCMs are labeled **Configured**.
 
 ![](../../../.gitbook/assets/int1.png)
 
@@ -43,7 +43,7 @@ Below is an example of how you would set up your integration for **Github.com**
 2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories:
 3. Click **Authorize Snyk** to provide Snyk with access to your repositories.
 
-![](<../../../.gitbook/assets/authorize (1) (2) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (23).png>)
+![](<../../../.gitbook/assets/authorize (1) (2) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (24).png>)
 
 ### **SCM permissions on repositories**
 
@@ -51,37 +51,37 @@ Operations triggered using the Snyk UI (such as opening a Fix PR or retesting a 
 
 For example, in GitHub, the accounts connected to Snyk need the following access on the target repositories:
 
-| **Action**                                              | **Purpose**                                                                                                                                     | **Required permissions on the repository** |
-| ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| **Daily / weekly tests**                                | Used for reading manifest files in private repos                                                                                                | _**Write**_ or higher                      |
-| **Snyk tests on pull requests**                         | Used for sending pull request status checks when a new PR is created or an existing PR is updated                                               |                                            |
-| **Opening fix and upgrade pull requests**               | Used for sending fix or upgrade PRs in the monitored repos                                                                                      |                                            |
-| **Snyk tests on pull requests - initial configuration** | Used for adding Snyk webhooks to the imported repos, to notify Snyk when pull requests are created or updated and enable Snyk to trigger a scan | _**Admin**_                                |
+| **Action**                                              | **Purpose**                                                                                                                                  | **Required permissions on the repository** |
+| ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| **Daily / weekly tests**                                | Used to read manifest files in private repos                                                                                                 | _**Write**_ or higher                      |
+| **Snyk tests on pull requests**                         | Used to send pull request status checks when a new PR is created or an existing PR is updated                                                |                                            |
+| **Opening fix and upgrade pull requests**               | Used to send fix or upgrade PRs in the monitored repos                                                                                       |                                            |
+| **Snyk tests on pull requests - initial configuration** | Used to add Snyk webhooks to the imported repos, to notify Snyk when pull requests are created or updated, and enable Snyk to trigger a scan | _**Admin**_                                |
 
 ### **Change notification settings**
 
 By default, Snyk emails every Org user when a new issue or fix in a project’s dependencies is found, and provides them with a weekly update of the security status across your organization. If you plan to import many projects to an Org, to avoid sending multiple email notifications sent to users, consider disabling all the notifications for that Org.
 
-To customize the emails your Org users receive, navigate to the Organization Settings <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Notifications**. The changes you make here will affect all of your organization’s members, although Org users can override these default settings in their user-level account settings.
+To customize the emails your Org users receive, go to <img src="../../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Notifications > Notification Setting**. The changes you make here will affect all of your organization’s members, although Org users can override these default settings in their user-level account settings.
 
 To disable notifications for all the users in an Org ahead of your import, deselect the appropriate notification boxes.
 
-![](<../../../.gitbook/assets/image (58).png>)
+![](../../../.gitbook/assets/notification\_settings-10july2022.png)
 
 See [Notification management](https://docs.snyk.io/features/user-and-group-management/notifications) for more information.
 
 ## Stage 2: Import Projects
 
-1. Navigate to the **Projects** page in the Snyk UI, select **Add projects**, select the repos to import to Snyk, and click **Add selected repositories**.&#x20;
+1. Go to the **Projects** page in the Snyk UI, select **Add projects**, select the repos to import to Snyk, and click **Add selected repositories**.&#x20;
    * Snyk starts scanning the selected repos for dependency files (for example, **package.json**) in the entire directory tree and imports these files as projects.
    * Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.
    * Snyk detects the manifest files (projects), tests them, then displays the results. \
      Imported projects appear underneath the repository name. \
      After a project is imported, it is  continuously checked for vulnerabilities.
-2. To confirm that a project was imported, navigate to the **Add project** import page for the integration. \
+2. To confirm that a project was imported, go to the **Add project** import page for the integration. \
    Imported projects are indicated by a ✔ next to the repo name: <img src="../../../.gitbook/assets/image (85).png" alt="" data-size="line">
 
-![](../../../.gitbook/assets/int3.png)
+![](../../../.gitbook/assets/add\_project-10july2022.png)
 
 ## Stage 3: Enable Snyk test on PRs
 
@@ -113,7 +113,7 @@ An administrator can manage settings for Snyk PR tests for each SCM integration 
 
 To configure the PR test settings for your organization:
 
-1. For the relevant organization, navigate to <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> (Organization Settings) **>** **Integrations**, select the relevant integration, and click **Edit Settings**.
+1. For the relevant organization, go to (Organization Settings) <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> **>** **Integrations**, select the relevant integration, and click **Edit Settings**.
 2. Set the the toggle to **Enabled** and set the **Fail conditions** as needed:
 3. Click **Update settings**.
 
@@ -121,7 +121,7 @@ To configure the PR test settings for your organization:
 
 #### Manage the PR test settings per project
 
-1. To configure the pull request test settings for a specific project, navigate to **Projects** > **Projects Settings > Edit Settings.**\
+1. To configure the pull request test settings for a specific project, go to **Projects** > **Projects Settings > Edit Settings.**\
    ****The project page opens.
 2. In the project page, select the **Settings** tab in the upper right, and the SCM integration __ option in the left sidebar.&#x20;
 3. Select and confirm the relevant options in each of the sections.&#x20;
@@ -162,7 +162,7 @@ The example below presents a fix pull request opened by Snyk:
 
 ![](<../../../.gitbook/assets/mceclip0 (1).png>)
 
-To configure the PR test settings for specific projects, navigate to **Org** > settings <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Integrations > Edit Settings.**
+To configure the PR test settings for specific projects, select the relevant organization and go to (Organization settings) <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Integrations > Edit Settings.**
 
 ![](../../../.gitbook/assets/automatic.png)
 
@@ -170,11 +170,11 @@ We recommend that you exclude patches from the auto fix PRs, if your developers 
 
 You should ask your developers to consider the merge advice label that appears on the auto fix PRs:
 
-![](<../../../.gitbook/assets/merge-advice-review-recommended (2) (2) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (23).png>)
+![](<../../../.gitbook/assets/merge-advice-review-recommended (2) (2) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (24).png>)
 
-![](<../../../.gitbook/assets/advice-green (1) (2) (2) (4) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (14).png>)
+![](<../../../.gitbook/assets/advice-green (1) (2) (2) (4) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (15).png>)
 
-![](<../../../.gitbook/assets/merge-advice (2) (2) (4) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (22).png>)
+![](<../../../.gitbook/assets/merge-advice (2) (2) (4) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (23).png>)
 
 {% hint style="info" %}
 Snyk auto fix PRs are only generated for new issues.
@@ -209,10 +209,10 @@ Snyk currently supports this feature for npm, Yarn, and Maven-Central projects t
 
 To set PR Settings on the project level and override the PR settings configured at organization level:
 
-1. Open the organization for which you would like to enable automatic upgrade PRs and navigate to the **Projects** tab.
+1. Open the organization for which you would like to enable automatic upgrade PRs and go to the **Projects** tab.
 2.  Select and expand the relevant project, select the relevant target, and click the **Settings** cog:
 
-    <img src="../../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (9).png" alt="" data-size="original">
+    <img src="../../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10).png" alt="" data-size="original">
 3. In the Settings area, in the left panel menu, click the Integration settings to apply unique settings for that specific project.
 4. In settings that load, scroll to the **Automatic dependency upgrade pull requests** and click **Disabled**.
 5. In the options that appear:

@@ -33,7 +33,7 @@ Navigate to the Marketplace from within your running Eclipse instance. Search fo
 
 When prompted accept the license agreement add the **Snyk Security** certificate to complete the installation (this happens only once).
 
-![Add Snyk Security certificate](<../.gitbook/assets/Screenshot 2022-05-13 at 09.08.52 (1) (1) (1) (1) (1) (1).png>)
+![Add Snyk Security certificate](<../.gitbook/assets/Screenshot 2022-05-13 at 09.08.52 (1) (1) (1) (1).png>)
 
 Restart the Eclipse instance:
 
@@ -262,7 +262,7 @@ Navigate to **Windows -> Show View -> Other...**
 
 Search for Snyk in the **Show View** dialog window.
 
-![Show View dialog window](<../.gitbook/assets/Screenshot 2022-05-13 at 12.02.06 (1) (1) (1) (1) (1).png>)
+![Show View dialog window](<../.gitbook/assets/Screenshot 2022-05-13 at 12.02.06 (1) (1) (1).png>)
 
 You should now be able to see the Snyk Results panel:
 
