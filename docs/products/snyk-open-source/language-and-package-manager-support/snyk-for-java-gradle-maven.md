@@ -46,7 +46,7 @@ However, for the most accurate results, we recommend using the [Snyk CLI](../../
 
 ### Gradle
 
-* CLI - Gradle `2.*`, `3.*`, `4.*`, `5.*`, `6.*` ([more details](https://github.com/snyk/snyk-gradle-plugin#support))
+* CLI - Gradle `2.*`, `3.*`, `4.*`, `5.*`, `6.*`,  `7.*` ([more details](https://github.com/snyk/snyk-gradle-plugin#support))
 * Git - Gradle `2.*`, `3.*`,`4.*`, `5.*`, `6.*`
 
 ## Snyk CLI tool for Java and Kotlin projects (CI/CD)
