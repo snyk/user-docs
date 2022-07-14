@@ -39,7 +39,7 @@ The test results appear in the terminal in a JSON format:
 
 ![](<../../../../.gitbook/assets/snyk Code - CLI - results - JSON output in the terminal.png>)
 
-### Outputting the test results to a JSON format
+### Outputting the test results to a SARIF format
 
 **To output the test results to a SARIF format:**
 
@@ -62,5 +62,3 @@ snyk code test /Users/username/Documents/Repositories/snyk-goof-master --sarif
 The test results appear in the terminal in a SARIF format:
 
 ![](<../../../../.gitbook/assets/snyk Code - CLI - results - SARIF output in the terminal.png>)
-
-&#x20;
