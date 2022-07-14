@@ -4,15 +4,15 @@
 
 ### JetBrains IDE plugins
 
-For more details, see [JetBrains IDE Plugins](https://docs.snyk.io/integrations/ide-tools/jetbrains-plugins).
+For more information, see [JetBrains IDE Plugins](https://docs.snyk.io/integrations/ide-tools/jetbrains-plugins).
 
 ### VS Code IDE plugin
 
-For more details, see the [Visual Studio Code extension for Snyk Code](../../../ide-tools/visual-studio-code-extension-for-snyk-code.md).
+For more information, see the [Visual Studio Code extension for Snyk Code](../../../ide-tools/visual-studio-code-extension-for-snyk-code.md).
 
 ### Visual Studio IDE plugin
 
-For more details, see the [Visual Studio extension for Snyk Code.](../../../ide-tools/visual-studio-extension.md)
+For more information, see the [Visual Studio extension for Snyk Code.](../../../ide-tools/visual-studio-extension.md)
 
 ## SCM integrations
 
@@ -34,9 +34,9 @@ Snyk Code supports wide range of languages: see [Snyk Code language support](htt
 
 ### PR checks
 
-Coming soon! Stay tuned.
+Snyk Code analysis can be applied to every Pull Request you are creating in your SCM, before merging it into the target branch. For more information, see [Using Automatic PR Checks for securing your source code](../using-automatic-pr-checks-for-securing-your-source-code/).
 
-## CI integrations
+## CI/CD integrations
 
 ### Test code in CI/CD using Snyk CLI
 
