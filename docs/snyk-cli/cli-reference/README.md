@@ -119,7 +119,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--print-deps`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-`--remote-repo-url=<URL>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
+`--remote-repo-url=<URL>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [iac test](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
 `--dev`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
@@ -161,7 +161,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)``
 
-`--project-tags=<TAG>[,<TAG>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [iac test](https://docs.snyk.io/snyk-cli/commands/iac-test)
+`--project-tags=<TAG>[,<TAG>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)``
 
 `--tags=<TAG>[,<TAG>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container)
 
@@ -181,9 +181,11 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 ## `snyk iac test` command options
 
-`--report`: [`iac test`](../commands/iac-test.md)\`\`
+`--report`: [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)``
 
 `--scan=<TERRAFORM_PLAN_SCAN_MODE>`: [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
+
+`--target-name=<TARGET_NAME>`: [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)``
 
 `--rules=<PATH_TO_CUSTOM_RULES_BUNDLE>`: [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
