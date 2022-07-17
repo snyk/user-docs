@@ -1,17 +1,17 @@
 # Audit logs
 
-Snyk offers an endpoint enabling you to [access your audit logs via the API](https://snyk.docs.apiary.io). You can query data about user actions, such as when a:
+Snyk API v1 has [Audit logs endpoints](https://snyk.docs.apiary.io/#reference/audit-logs) that enable you to retrieve information from your audit logs using the Snyk API. Use the Group level audit logs endpoint to get information about your Snyk Group, and the Organization level audit logs to get information about your Snyk Organization.  Examples of events returned include:
 
-* user logged in and out
-* user's role was changed
-* license policy was modified and by whom
-* service account was created or deleted.
+* A Snyk Group or Organization was added or removed or a setting was changed
+* Users were invited, added, removed, or a user's role was changed
+* The license rule or policy was modified
+* A service account was created, modified, or deleted
 
-You can query user-initiated activity from up to the past 90 days. If you need to query further back in time, [contact our Support team](https://support.snyk.io/hc/en-us/requests/new). who can access this data from cold storage on your behalf.
+For a list of the events returned refer to the request body JSON schema for the endpoint you are using. Note that logon and logout events for users are not returned because the endpoints return information for the Group or Organization specified in the request.
 
-Use this endpoint to help retroactively triage any unexpected activity, to find out whenever a new user is added so you can assist with onboarding, or even to monitor changes in a user's role in order to get early warning of any unusual behavior.report
+You can retrieve user-initiated activity for the past 90 days. If you need audit log information for an earlier time, or information such as login and logoff events for a user, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new). The support team can retrieve information from storage on your behalf.
 
-## **Support**
+Use the Audit logs endpoints to help retroactively triage any unexpected activity, to find out whenever a new user is added so you can assist with onboarding, or to monitor changes in a user's role in order to get early warning of any unusual behavior.report.
 
 {% hint style="info" %}
 **Feature availability**\
