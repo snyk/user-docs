@@ -13,4 +13,7 @@ This group of pages provides detailed information about aspects of using the Sny
 * [Snyk API **rate limits**](snyk-api-rate-limits.md)****
 * [**Relationships** in Snyk REST API](relationships-in-snyk-rest-api.md)
 
-For more information on using Snyk API, see the [API support articles](https://support.snyk.io/hc/en-us/sections/360001344097-API).
+For more information on using Snyk API, see the following:
+
+* [API support articles](https://support.snyk.io/hc/en-us/sections/360001344097-API)
+* [Audit logs](../../features/user-and-group-management/managing-users-and-permissions/audit-logs.md)
