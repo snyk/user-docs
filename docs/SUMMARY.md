@@ -78,6 +78,7 @@
     * [Snyk API rate limits](snyk-api-info/using-snyk-api/snyk-api-rate-limits.md)
     * [Relationships in Snyk REST API](snyk-api-info/using-snyk-api/relationships-in-snyk-rest-api.md)
     * [Set project attributes using the Snyk API](snyk-api-info/using-snyk-api/set-project-attributes-using-the-snyk-api.md)
+    * [Aggregated project issues API returns an array of ignoreReasons](snyk-api-info/using-snyk-api/aggregated-project-issues-api-returns-an-array-of-ignorereasons.md)
   * [Authentication for API](features/snyk-api-info/authentication-for-api.md)
   * [Revoking and regenerating Snyk API tokens](features/snyk-api-info/revoking-and-regenerating-snyk-api-tokens.md)
   * [Snyk Webhooks](snyk-api-info/snyk-webhooks/README.md)

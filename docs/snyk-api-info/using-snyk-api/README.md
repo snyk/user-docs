@@ -2,6 +2,7 @@
 
 This group of pages provides detailed information about aspects of using the Snyk API. The following articles are included, listed here in alphabetical order by a **keyword**.
 
+* ****[**Aggregated project issues** API returns an array of ignoreReasons](aggregated-project-issues-api-returns-an-array-of-ignorereasons.md)
 * [Snyk **API token** permissions users can control](api-token-permissions-users-can-control.md)
 * [Get a list of **fixed issues** using Snyk API](get-a-list-of-fixed-issues-using-snyk-api.md)
 * [How to use Snyk REST API **hello world** example](how-to-use-snyk-rest-api-hello-world-example.md)
