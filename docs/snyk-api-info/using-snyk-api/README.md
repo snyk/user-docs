@@ -9,6 +9,7 @@ This group of pages provides detailed information about aspects of using the Sny
 * [Snyk API v1 Project **issue paths** endpoints](snyk-api-v1-path-endpoint-information.md)
 * [**Org identification** and projects in the Snyk API](org-identification-and-projects-in-snyk-apis.md)
 * [**Postman** and Snyk API](postman-and-snyk-api.md)
+* [Set **project attributes** using the Snyk API](set-project-attributes-using-the-snyk-api.md)
 * [**Python** code to extract issues from Snyk API](python-code-to-extract-issues-from-snyk-api.md)
 * [Snyk API **rate limits**](snyk-api-rate-limits.md)****
 * [**Relationships** in Snyk REST API](relationships-in-snyk-rest-api.md)
