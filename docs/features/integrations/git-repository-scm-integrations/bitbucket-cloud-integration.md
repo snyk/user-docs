@@ -47,7 +47,7 @@ After you connect Snyk to your Bitbucket Cloud account, you can select repositor
 1. In Snyk, go to **Integrations** > **Bitbucket Cloud** card, and click **Add your Bitbucket Cloud repositories to Snyk** to start importing repositories to Snyk.
 2. Choose the repositories you want to import to Snyk and click **Add selected repositories**.
 
-![](<../../../.gitbook/assets/444 (2) (4) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (11).png>)
+![](<../../../.gitbook/assets/444 (2) (4) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (11).png>)
 
 Snyk scans the selected repositories for dependency files (such as `package.json` and `pom.xml`) in the entire directory tree, and import them to Snyk as projects.
 
@@ -65,7 +65,7 @@ Snyk produces advanced security reports that let you explore the vulnerabilities
 
 This is an example of a project level security report:
 
-![](<../../../.gitbook/assets/mceclip0-22- (2) (5) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (30).png>)
+![](<../../../.gitbook/assets/mceclip0-22- (2) (5) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (30).png>)
 
 ### Project monitoring and automatic fix pull requests
 
