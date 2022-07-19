@@ -44,4 +44,18 @@ npm update snyk -g
 npm i -g snyk
 ```
 
+**To update your Snyk CLI to a specific version:**
+
+* In the terminal, enter:
+
+```
+npm i -g snyk@<version_no>
+```
+
+For example, to update the Snyk CLI version to version 1.835.0, we enter:
+
+```
+npm i -g snyk@1.835.0
+```
+
 &#x20;
