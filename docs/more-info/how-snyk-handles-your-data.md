@@ -40,7 +40,7 @@ We know how important it is for you to protect your data. Our products only acce
 {% tab title="Snyk Open Source" %}
 **Snyk Open Source**
 
-![](https://snyk.io/wp-content/uploads/shield-snyk-open-source.svg)
+****![](../.gitbook/assets/SnykOSS.svg)****
 
 * Snyk accesses manifest and build configuration files in order to identify your open source dependencies.
 * For tests using the `--unmanaged` flag accesses your source code files to convert them to file signatures (hashes), and store the file signatures and file names. Other Snyk Open Source scans do not access your source code.
@@ -59,7 +59,7 @@ We know how important it is for you to protect your data. Our products only acce
 {% tab title="Snyk Code" %}
 **Snyk Code**
 
-![](https://snyk.io/wp-content/uploads/shield-snyk-code.svg)
+****![](../.gitbook/assets/SnykCode.svg)****
 
 * Snyk accesses your repository code for a one-time analysis, caching it for a period of up to 24 hours. After this period, only the location (file path, line, and column) to the issues found, the issue id and explanations are maintained. Your code is removed and is not stored in the Snyk network or logs.
 * Results are stored in a database and used for analytic and monitoring purposes by Snyk.
@@ -72,7 +72,7 @@ We know how important it is for you to protect your data. Our products only acce
 {% tab title="Snyk Container" %}
 **Snyk Container**
 
-![](https://snyk.io/wp-content/uploads/shield-snyk-container.svg)
+****![](../.gitbook/assets/SnykContainer.svg)****
 
 * Snyk accesses and stores package versions, executable hashes/versions, operating system, container image metadata (e.g. rootfs hashes, history), image ID.
 * Snyk accesses and stores information pertaining to the parent image - name/version/tag.
@@ -84,7 +84,7 @@ We know how important it is for you to protect your data. Our products only acce
 {% tab title="Snyk IaC" %}
 **Snyk Infrastructure as Code**
 
-![](https://snyk.io/wp-content/uploads/shield-snyk-iac.svg)
+****![](../.gitbook/assets/SnykIaC.svg)****
 
 * CLI scans are performed locally. The contents of your files are not shared or stored by Snyk.
 * Git-based scans require access to your Infrastructure as Code files. Snyk stores them for the duration of the analysis and subsequently deletes them from our system. Your IaC files are not stored by Snyk.
