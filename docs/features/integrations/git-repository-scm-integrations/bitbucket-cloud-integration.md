@@ -24,20 +24,18 @@ _Need a little help from your friends?_ Check out Snyk's [Bitbucket best practic
 3. In the **Account credentials >** **Creating an app password** section in Snyk, use the link <img src="../../../.gitbook/assets/image (70).png" alt="" data-size="line"> to jump to your Bitbucket Cloud account.
 4.  Follow the Bitbucket procedure to set up an account with the following permissions:
 
-    1. **Account: Email & Read**
-    2. **Workspace membership: Read**
-    3. **Projects: Read**
-    4. **Repositories: Read & Write**
-    5. **Pull requests: Read & Write**
-    6. **Webhooks: Read & Write**&#x20;
+    * **Account: Email & Read**
+    * **Workspace membership: Read**
+    * **Projects: Read**
+    * **Repositories: Read & Write**
+    * **Pull requests: Read & Write**
+    * **Webhooks: Read & Write**&#x20;
 
     See the [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html) for more procedure details.
-5. Enter the username and the [App Password for the Bitbucket account](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/) you created. You can find your username under the Bitbucket **Personal settings.**
-6. Click **Save**.
-
-Snyk connects to your Bitbucket Cloud account. When the connection succeeds, the following confirmation appears:
-
-<img src="../../../.gitbook/assets/settings (1).png" alt="" data-size="original">\
+5. Enter the username and the [App Password for the Bitbucket account](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/) you created, and **Save** your changes.\
+   You can find your username under the Bitbucket **Personal settings.** \
+   ****Snyk connects to your Bitbucket Cloud account. When the connection succeeds, the following confirmation appears:\
+   <img src="../../../.gitbook/assets/settings (1).png" alt="" data-size="original">\
 
 
 ## Adding Bitbucket repositories to Snyk
@@ -47,31 +45,33 @@ After you connect Snyk to your Bitbucket Cloud account, you can select repositor
 1. In Snyk, go to **Integrations** > **Bitbucket Cloud** card, and click **Add your Bitbucket Cloud repositories to Snyk** to start importing repositories to Snyk.
 2. Choose the repositories you want to import to Snyk and click **Add selected repositories**.
 
-![](<../../../.gitbook/assets/444 (2) (4) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (11).png>)
-
-Snyk scans the selected repositories for dependency files (such as `package.json` and `pom.xml`) in the entire directory tree, and import them to Snyk as projects.
+After you add them, Snyk scans the selected repositories for dependency files in the entire directory tree, (that is, `package.json`, `pom.xml`, and so on) and imports them to Snyk as projects.
 
 The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
-After you complete the integration, you can use the following capabilities:&#x20;
+![](<../../../.gitbook/assets/444 (2) (4) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (11).png>)
+
+## Bitbucket integration features
+
+Once the integration is in place, you'll be able to use capabilities such as:
 
 * [Project level security reports](bitbucket-cloud-integration.md#project-level-security-reports)
 * [Project monitoring and automatic fix pull requests](bitbucket-cloud-integration.md#project-monitoring-and-automatic-fix-pull-requests)
-* [Pull request tests](bitbucket-cloud-integration.md#pull-request-tests)
+* [Pull request testing](bitbucket-cloud-integration.md#pull-request-testing)
 
 ### Project level security reports
 
-Snyk produces advanced security reports that let you explore the vulnerabilities found in your repositories, and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
+Snyk produces advanced [security reports](https://docs.snyk.io/features/reports/reports-overview) that let you explore the vulnerabilities found in your repositories, and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
 
-This is an example of a project level security report:
+The example below presents a project level security report.&#x20;
 
-![](<../../../.gitbook/assets/mceclip0-22- (2) (5) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (30).png>)
+![](../../../.gitbook/assets/project\_lvl\_security\_rpt-18july2022.png)
 
-### Project monitoring and automatic fix pull requests
+### Project monitoring and automatic fix Pull Requests
 
 Snyk scans your projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening automated pull requests with fixes for your repositories.
 
-Here is an example of a fix pull request opened by Snyk:
+The example below presents a fix Pull Request opened by Snyk.
 
 ![](../../../.gitbook/assets/666.png)
 
@@ -86,7 +86,7 @@ To review and adjust the automatic fix pull request settings:
 
 Snyk tests any newly created pull request in your repositories for security vulnerabilities, and sends a build check to Bitbucket Cloud. You can to see whether the pull request introduces new security issues, directly from Bitbucket Cloud.
 
-This is how Snyk pull request build check appears in the **Pull Request** page in Bitbucket Cloud:
+The example below presents a Snyk pull request build check on the Bitbucket Cloud **Pull Request** page.
 
 ![](../../../.gitbook/assets/888.png)
 
@@ -127,16 +127,18 @@ For Snyk to perform the required operations on monitored repositories (such as r
 
 To disable this integration, in <img src="../../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line">  (Organization settings)> **Integrations:**&#x20;
 
-1. Select the Bitbucket integration you want deactivate in your list of integrations, and click **Edit Settings** to open a page with the current status of your integration. \
+1. In your list of integrations, select the Bitbucket integration you want deactivate and click **Edit settings** to open a page with the current status of your integration. \
    \
    The page includes sections that are specific to each integration, where you can manage your credentials, API key, Service Principal, or connection details.
 2. Scroll to the relevant section and click **Disconnect.**
 
 ![](../../../.gitbook/assets/mceclip2-4-.png)
 
-> **WARNING**\
-> ****When you disconnect Snyk from your repository projects, your credentials are removed from Snyk and any integration-specific projects that Snyk is monitoring are deactivated in Snyk.\
-> If you choose to re-enable this integration later, you'll need to re-enter your credentials and activate your projects.
+{% hint style="warning" %}
+**WARNING**\
+****When you disconnect Snyk from your repository projects, your credentials are removed from Snyk and any integration-specific projects that Snyk is monitoring are deactivated in Snyk.\
+If you choose to re-enable this integration later, you'll need to re-enter your credentials and activate your projects.
+{% endhint %}
 
 ## Bitbucket 1st Party Integration (Connect App)
 

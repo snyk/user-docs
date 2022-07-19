@@ -124,7 +124,7 @@
     * [Snyk SCM integration: deployment recommendations](features/integrations/git-repository-scm-integrations/snyk-scm-integration-good-practices.md)
     * [GitHub integration](features/integrations/git-repository-scm-integrations/github-integration.md)
     * [GitHub Enterprise integration](features/integrations/git-repository-scm-integrations/github-enterprise-integration.md)
-    * [GitHub Read-Only Projects](features/integrations/git-repository-scm-integrations/github-read-only-projects.md)
+    * [GitHub Read-only Projects](features/integrations/git-repository-scm-integrations/github-read-only-projects.md)
     * [Bitbucket Cloud integration](features/integrations/git-repository-scm-integrations/bitbucket-cloud-integration.md)
     * [Bitbucket Data Center/Server integration](features/integrations/git-repository-scm-integrations/bitbucket-data-center-server-integration.md)
     * [GitLab integration](features/integrations/git-repository-scm-integrations/gitlab-integration.md)
