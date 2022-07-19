@@ -18,9 +18,7 @@ When enabling the Automatic PR Checks feature for an entire organization, all th
 
 ![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization (1) (1) (1) (1) (1) (1) (4).png>)
 
-2\. Once the required organization is open, click the **Org Settings** button \<img src="../../../.gitbook/assets/Snyk Code - PR Checks - Org Settings button - Icon.png" alt="A black and white logo
-
-Description automatically generated with low confidence" data-size="line"> on the top menu:
+2\. Once the required organization is open, click the **Org Settings** button <img src="../../../.gitbook/assets/Snyk Code - PR Checks - Org Settings button - Icon.png" alt="" data-size="line"> on the top menu:
 
 ![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org Settings button (1) (1) (1) (1) (1) (1) (4).png>)
 
@@ -38,13 +36,11 @@ Description automatically generated with low confidence" data-size="line"> on th
 * **Fail conditions** – leave as is. You currently can configure the Automatic PR Checks to **Only fail PR on newly introduced issues**. This means that Snyk Code scans only the changes that are included in the new PRs. If the repository has older issues that are not part of the new PR, these issues will not fail the PR merge.
 * **Minimal severity to fail PR check** – select from the drop-down list the minimal severity level of the discovered issue in the PR, which will cause the PR to automatically fail. For example, if you selected **Medium**, all PR Checks that have issues with severity level of Medium and higher will fail. PR Checks with issues that have a Low severity level will be merged.
 
-6\. To save \*\*\*\* and apply your changes, click one of the following:
+6\. To save and apply your changes, click one of the following:
 
 * **Apply changes to all overridden projects** option – your changes are saved, and will be applied to all the Projects in the organization. Projects that already have Custom Settings will inherit these new organization Settings, and their Custom Settings will be override. After you click this option, a message appears, asking you to confirm the override action:
 
-!\[Graphical user interface, text, application
-
-Description automatically generated]\(<../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message.png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message.png>)
 
 Click **OK** to complete the Save with Override action.
 
@@ -75,7 +71,7 @@ By default, the Settings on the Project level override the Settings on the organ
 5\. On the **integration** page -> **Snyk Code for pull requests** section, select one of the following:
 
 * **Inherit from Integration settings** – apply the Integration Settings of the organization to the selected Project. Note that if the Automatic PR Checks feature is disabled for the organization, this option will also be disabled for the Project when the Project inherits its Settings from the organization. If you selected this option, move to Step 7 below.
-* **Custom** – apply specific settings of the \*\*\*\* Automatic PR Checks feature to the Project. If you selected this option, move to the next step.
+* **Custom** – apply specific settings of the Automatic PR Checks feature to the Project. If you selected this option, move to the next step.
 
 ![](<../../../.gitbook/assets/Snyk Code - PR Checks - Project - Settings - Integration - Inhertinace.png>)
 
