@@ -8,7 +8,9 @@ The data handled by Snyk will vary depending on the product you are using, how y
 
 ### Flexible deployment options
 
-Snyk leverages the latest software development practices and technologies to provide customers with the flexibility to use Snyk’s developer security platform in the manner that best suits the needs of their business:
+Snyk leverages the latest software development practices and technologies to provide customers with the flexibility to use Snyk’s developer security platform in the manner that best suits the needs of their business.
+
+Snyk’s cloud-first deployment options offer ease of use and scalability while also providing the required level of data protection with multi and single tenancy supported in the US and EU (additional regions will be supported in the future).
 
 * **Multi-Tenant SaaS**: The simplest, most common and most cost-effective way to use Snyk’s developer security platform
 * **Single-Tenant SaaS:** Private Cloud - An isolated and fully managed instance of the Snyk developer security platform on AWS.
