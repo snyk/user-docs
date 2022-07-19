@@ -136,7 +136,7 @@ Ignore a vulnerability for all paths:
 
 ```
 ignore:
-  'npm:mem:20180117':
+  SNYK-JS-BSON-561052:
     - '*':
         reason: None Given
         expires: 2020-04-04T17:33:45.004Z
