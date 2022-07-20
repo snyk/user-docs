@@ -34,7 +34,7 @@ Navigate to the dedicated Terraform Cloud integration settings page, under the *
 
 ### Set up Terraform plan scanning
 
-On the Snyk platform, first go to the Terraform Cloud integration settings page: [https://app.snyk.io/org/{YOUR-SNYK-ORG}/manage/integrations/terraform-cloud](https://app.snyk.io/org/stephane.jourdan/manage/integrations/terraform-cloud) to access the provided URL and HMAC Key
+On the Snyk platform, first go to the Terraform Cloud integration settings page: `https://app.snyk.io/org/{YOUR-SNYK-ORG}/manage/integrations/terraform-cloud` to access the provided URL and HMAC Key
 
 ![Snyk Integration Page for Terraform Cloud](<../../../.gitbook/assets/image (71) (2).png>)
 
