@@ -424,7 +424,7 @@
     * [Detecting Terraform configuration files using a broker](features/integrations/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-terraform-configuration-files-using-a-broker.md)
     * [Detecting CloudFormation configuration files using a Broker](features/integrations/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-cloudformation-configuration-files-using-a-broker.md)
     * [Detecting Kubernetes configuration files using a broker](features/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-kubernetes-configuration-files-using-a-broker.md)
-  * [Snyk Broker set-up examples](features/integrations/snyk-broker/snyk-broker-set-up-examples/README.md)
+  * [Snyk Broker - Integration Setups](features/integrations/snyk-broker/snyk-broker-set-up-examples/README.md)
     * [Setup Broker with Azure Repos](<features/snyk-broker/snyk-broker-set-up-examples/Setup Broker with Azure Repos.md>)
     * [Setup Broker with Bitbucket Server/Data Center](<features/snyk-broker/snyk-broker-set-up-examples/Setup Broker with Bitbucket Server/Data Center.md>)
     * [Setup Broker with GitHub](features/snyk-broker/snyk-broker-set-up-examples/broker-example-how-to-setup-broker-with-jira.md)
