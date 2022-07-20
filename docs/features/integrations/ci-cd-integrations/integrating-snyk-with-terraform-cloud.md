@@ -2,6 +2,8 @@
 
 {% hint style="info" %}
 This feature is available for all Snyk plans.
+
+Note that Terraform Cloud run tasks are available in the Terraform Cloud Team & Governance tier. The Terraform Cloud Free tier does not support run tasks.
 {% endhint %}
 
 ## Terraform Cloud overview
@@ -22,7 +24,7 @@ Snyk [introduced support in May 2021](https://snyk.io/blog/prevent-cloud-misconf
 
 The Snyk integration connects the “run” workflow of Terraform Cloud with Snyk Terraform plan scanning, meaning that for each “run” generated, Snyk scans the Terraform plan artifact for misconfigurations.
 
-If you are a user of Terraform Cloud, you can sign up with Snyk to set the integration and connect it with your workspaces in Terraform Cloud. Then you'll be able track, manage, and resolve security misconfigurations as part of your software development lifecycle with Terraform Cloud.
+If you are a user of Terraform Cloud ([Team & Governance tier](https://www.hashicorp.com/products/terraform/pricing)), you can sign up with Snyk to set the integration and connect it with your workspaces in Terraform Cloud. Then you'll be able track, manage, and resolve security misconfigurations as part of your software development lifecycle with Terraform Cloud.
 
 ## **How to set up and use the integration between Snyk and Terraform Cloud**
 
