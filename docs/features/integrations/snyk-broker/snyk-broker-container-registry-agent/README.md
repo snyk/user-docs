@@ -1,4 +1,4 @@
-# Snyk Broker Container Registry agent
+# Snyk Broker - Container Registry Agent
 
 {% hint style="info" %}
 **Feature availability**\
@@ -13,6 +13,12 @@ For this feature to work, you need two separate containers deployed in your infr
 
 To enable and configure your hosted container registry, contact our support team at [support@snyk.io](mailto:support@snyk.io)
 
+{% hint style="info" %}
+**Note:**\
+The integration pattern using the Broker with open source container registries from the  list described in this section, is designed for users who require images to be scanned in their own environment, instead of inside the Snyk service.\
+If such a requirement is not relevant for you, you do not need the architecture described in this article, and can integrate to it in the standard way from the Integrations page on the Web UI.
+{% endhint %}
+
 ## **Introduction**
 
 Integration with private container registries allows you to:
@@ -22,10 +28,10 @@ Integration with private container registries allows you to:
 
 ## **Self-hosted container registries solution components**
 
-* Broker server: running on Snyk SaaS backend
-* Broker client & Container Registry Agent: Two Docker images deployed in your infrastructure, creating two separate services, responsible for sampling your container registries in a secured manner and sending the allowed information to Snyk.
+* Broker Server: running on the Snyk SaaS backend.
+* Broker Client & Container Registry Agent: two Docker images deployed in your infrastructure, creating two separate services, responsible for sampling your container registries in a secured manner and sending the allowed information to Snyk.
 
-The Broker client provides the Agent with the connection details. The Agent uses these details to connect to the container registry, scan the images, and send the scan results through the brokered communication using callbacks. The brokered communication happens when a Broker Client connects (using your Broker ID) to a Broker server which runs in Snyk environment. See [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker) documentation for more details.
+The Broker Client provides the Agent with the connection details. The Agent uses these details to connect to the container registry, scan the images, and send the scan results through the brokered communication using callbacks. The brokered communication happens when a Broker Client connects (using your Broker ID) to a Broker Server which runs in Snyk environment. See [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker) documentation for more details.
 
 ![](../../../../.gitbook/assets/mceclip0-8-.png)
 
@@ -43,12 +49,6 @@ The Broker client provides the Agent with the connection details. The Agent uses
 * GitHub (type: github-cr)
 * DigitalOcean (type: digitalocean-cr)
 * GitLab (type: gitlab-cr)
-
-{% hint style="info" %}
-**Note:**\
-The integration pattern using broker with open source container registries from the above list is designed for users who require images to be scanned in their own environment, instead of inside the Snyk service\*\*.\*\*\
-If such a requirement is not relevant for you, you do not need the architecture described in this article, and can integrate to it in the standard way from the integrations page.
-{% endhint %}
 
 #### **Settings prerequisites**
 
@@ -70,7 +70,7 @@ With the above configuration of 1 vCPU and 2GB RAM, scanning capacity would be a
 
 ## **Set up the remote connection**
 
-### **Running the broker client**
+### **Running the Broker Client**
 
 The Broker Client image can be pulled from Docker Hub using the link provided above in the settings prerequisites.
 
@@ -92,7 +92,7 @@ For **DigitalOcean**, **GCR**, **Google Artifact Registry** and **Artifactory**,
 * `CR_TOKEN` - Authentication token for DigitalOcean container registry.
 * `PORT` - The local port at which the Broker client accepts connections. Default is 7341.
 
-Run the broker client container with relevant configuration:
+Run the Broker Client container with relevant configuration:
 
 ```
 docker run --restart=always \
@@ -165,7 +165,7 @@ ECR setup requires two kinds of IAM resources to be created:
 
 **Setup steps for ECR**
 
-The above resources can be used as follows, so that a single Container Registry Agent instance can access ECR repositories located in different accounts\*\*:\*\*
+The above resources can be used as follows, so that a single Container Registry Agent instance can access ECR repositories located in different accounts:
 
 1.  **(Run this step once only)** Create the Container Registry Agent IAM Role / IAM User and use it to run the Container Registry Agent. The IAM Role / IAM User could be provided to the Container Registry Agent using one of the methods described [here](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html).
 
@@ -179,7 +179,7 @@ The above resources can be used as follows, so that a single Container Registry 
 
 [Get more information about the brokered ECR setup](../../../../more-info/getting-started/atlassian-integrations/atlassian/devops-pipeline-with-bitbucket-cloud-and-kubernetes/module-2-bitbucket-pipelines/configure-aws-ecr.md).
 
-## **Configuring and using system check:**
+## **Configuring and using system check**
 
 You can use the `/systemcheck` endpoint to verify connectivity between the Broker Client, the Container Registry Agent, and your container registry.
 

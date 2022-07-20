@@ -418,7 +418,7 @@
     * [Prepare Snyk Broker for deployment](features/integrations/snyk-broker/set-up-snyk-broker/prepare-snyk-broker-for-deployment.md)
     * [Install and configure the Snyk Broker client](features/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md)
   * [Snyk Broker Code Agent](features/integrations/snyk-broker/snyk-broker-code-agent.md)
-  * [Snyk Broker Container Registry agent](features/integrations/snyk-broker/snyk-broker-container-registry-agent/README.md)
+  * [Snyk Broker - Container Registry Agent](features/integrations/snyk-broker/snyk-broker-container-registry-agent/README.md)
     * [Setting up the Container Registry Agent for a brokered ECR integration](features/integrations/snyk-broker/snyk-broker-container-registry-agent/setting-up-the-container-registry-agent-for-a-brokered-ecr-integration.md)
   * [Snyk Broker Infrastructure as Code detection](features/integrations/snyk-broker/snyk-broker-infrastructure-as-code-detection/README.md)
     * [Detecting Terraform configuration files using a broker](features/integrations/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-terraform-configuration-files-using-a-broker.md)
