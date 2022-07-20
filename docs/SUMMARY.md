@@ -413,7 +413,7 @@
 ## USING SNYK <a href="#features" id="features"></a>
 
 * [Snyk Broker](features/integrations/snyk-broker/README.md)
-  * [Broker introduction](features/integrations/snyk-broker/broker-introduction.md)
+  * [Snyk Broker introduction](features/integrations/snyk-broker/broker-introduction.md)
   * [Set up Snyk Broker](features/integrations/snyk-broker/set-up-snyk-broker/README.md)
     * [Prepare Snyk Broker for deployment](features/integrations/snyk-broker/set-up-snyk-broker/prepare-snyk-broker-for-deployment.md)
     * [Install and configure the Snyk Broker client](features/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md)
