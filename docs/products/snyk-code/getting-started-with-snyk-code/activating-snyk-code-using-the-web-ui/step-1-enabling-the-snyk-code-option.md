@@ -14,9 +14,9 @@ To start working with Snyk Code either via the Web UI, CLI, IDE, or API, the **S
 
 ![](<../../../../.gitbook/assets/Snyk Code - Log in button.png>)
 
-2\. On the Snyk Web UI, click the **Org Settings** button<img src="../../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (3).png" alt="" data-size="line">on the top menu:
+2\. On the Snyk Web UI, click the **Org Settings** button<img src="../../../../.gitbook/assets/Org Settings button - Icon (1) (1).png" alt="" data-size="line">on the top menu:
 
-![](<../../../../.gitbook/assets/Snyk Code - Org Settings button (1).png>)
+![](<../../../../.gitbook/assets/Snyk Code - Org Settings button.png>)
 
 3\. On the **Settings** page, select **Snyk Code** on the left menu. Then, on the **Enable Snyk Code** section, change the setting to **Enabled**:
 

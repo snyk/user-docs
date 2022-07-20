@@ -363,6 +363,7 @@
   * [Snyk CLI for Infrastructure as Code](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/README.md)
     * [Test your configuration files](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-configuration-files.md)
     * [IaC ignores using the .snyk policy file](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md)
+    * [IaC exclusions using the  command line](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-exclusions-using-the-command-line.md)
     * [Test your Terraform files with Snyk CLI](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-terraform-files-with-the-cli-tool.md)
     * [Test your CloudFormation files with Snyk CLI](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-cloudformation-files-with-cli-tool.md)
     * [Test your AWS CDK files with Snyk CLI](products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-aws-cdk-files-with-our-cli-tool.md)
