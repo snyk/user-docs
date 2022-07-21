@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+****This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 Snyk can use custom Artifactory Package Repositories with Maven projects.
@@ -21,21 +21,19 @@ You can choose whether to use Artifactory as a mirror or as an additional reposi
 
 ### **Mirrors**
 
+![](../../../.gitbook/assets/uuid-fd027725-33b3-7f12-a921-d7fba9cedad8-en.png)
+
 Choose a value for the Type, either **Direct** or if using authentication **Integration**
 
 If using **Direct** you will need to complete the **URL**, **Repository Name** and what it is a **Mirror Of**.
 
 The **Mirror Of** value can either be a `*` to mirror everything or you can type in a value for example `central`.
 
-![](../../../.gitbook/assets/uuid-fd027725-33b3-7f12-a921-d7fba9cedad8-en.png)
-
 If using Type **Integration**, you will need to choose an integration type and provide the **Repository Name** and **Mirror Of** details.
 
 The **Repository Name** should be set as whatever comes after `artifactory/` in the internal repository URL.
 
 For example, if the URL is `http://artifactory.company.io/artifactory/libs-release` **Repository Name** should be set as `libs-release`.
-
-![](../../../.gitbook/assets/uuid-293cfd2b-2cd5-b8a3-0671-bf6d2798a3bc-en.png)
 
 ### **Repositories**
 

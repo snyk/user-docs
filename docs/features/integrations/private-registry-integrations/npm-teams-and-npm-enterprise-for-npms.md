@@ -1,6 +1,6 @@
 # npm Teams & npm Enterprise
 
-## **Overview**
+## O**verview**
 
 {% hint style="info" %}
 **Feature availability**\
@@ -11,20 +11,19 @@ Snyk can use custom npm Teams & npm Enterprise repositories with npm and Yarn pr
 
 This enables Snyk to resolve all direct and transitive dependencies of packages hosted on the custom registry and calculate a more complete, accurate dependency graph and related vulnerabilities.
 
-Once configured, Snyk will also use this information to access private dependencies when creating Pull/Merge Requests\*\*,\*\* by allowing npm and yarn to reach those deps in order to regenerate the lockfile.
+Once configured, Snyk will also use this information to access private dependencies when creating Pull/Merge Requests, by allowing npm and yarn to reach those deps in order to regenerate the lockfile.
 
 You can add configuration to tell Snyk where your private npm Teams and npm Enterprise Node.js packages are hosted and what scope they are under.
 
 This is the same information you would normally add in your `.yarnrc` or `.npmrc`
 
 {% hint style="info" %}
-**Note**\
-This guide is relevant for Snyk UI integrations only, the CLI already supports yarn and npm projects with private npm Teams and npm Enterprise registries.
+This guide is relevant for Snyk Web UI integrations only, the Snyk CLI already supports yarn and npm projects with private npm Teams and npm Enterprise registries.
 {% endhint %}
 
 ## JavaScript Language Settings
 
-1. Go to settings ![](../../../.gitbook/assets/cog\_icon.png) **> Languages > JavaScript** and either the npm or yarn settings depending on your project types (yarn shown in screenshots below)
+1. Go to settings <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> **> Languages > JavaScript** and either the npm or yarn settings depending on your project types (yarn shown in screenshots below)
 2. If you have not previously connected to npm Teams or npm Enterprise you will be asked to configure an integration first, see [npm Teams & npm Enterprise Registry Settings](npm-teams-and-npm-enterprise-for-npms.md) below
 3. Once you have set up the integration, select **Add registry configuration**
    1. Select "npm" as the Package source
@@ -42,7 +41,7 @@ You can configure token based authentication for npm Teams and npm Enterprise in
 
 ## Getting started
 
-1. Go to settings ![](../../../.gitbook/assets/cog\_icon.png) > **Integrations > Package Repositories > npm**
+1. Go to settings <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Integrations > Package Repositories > npm**
 2. You should see the **Credentials** screen at the beginning (see below)
 3. Enter **Public URL** and **Token** values.
 4. Click **Save**.

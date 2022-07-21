@@ -33,7 +33,7 @@ The security analysts at Snyk hand-curated information on new exploits and an au
 
 Examples of structured data are the [Known Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) by CISA (Cybersecurity and Infrastructure Security Agency) [Exploit DB](https://www.exploit-db.com/), and others. Examples of unstructured data are blogs, forums, and social media sites like Twitter.
 
-![Exmpale of Exploit Maturity for CVE-2022-22965](<../../../.gitbook/assets/image (64) (3) (1).png>)
+![Exmpale of Exploit Maturity for CVE-2022-22965](<../../../.gitbook/assets/image (64).png>)
 
 **Steps:**
 

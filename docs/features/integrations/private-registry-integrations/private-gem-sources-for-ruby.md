@@ -4,7 +4,7 @@
 
 {% hint style="info" %}
 **Note**\
-This functionality is currently behind a feature flag, [contact our Support team](https://support.snyk.io/hc/en-us/requests/new) to have it enabled for your organization.
+This functionality is currently in beta, [contact our Support team](https://support.snyk.io/hc/en-us/requests/new) to have it enabled for your organization.
 {% endhint %}
 
 You can add configuration to tell Snyk where your private gems are hosted. This is the same information you would normally add as a Bundler environment variable
@@ -15,7 +15,7 @@ This guide is relevant for Snyk UI integrations only, the CLI supports Ruby proj
 
 ## Configuration
 
-1. Go to settings ![](../../../.gitbook/assets/cog\_icon.png) > **General**.
+1. Go to settings <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **General**.
 2. Find the `RubyGems Bundler environment variables` section (see below)
 3. Add environment variable names and values to define credentials for gem sources (these are generally the same as the values you set on your developer machine and/or CI environments), for example: Name: `BUNDLE_GITHUB__COM`, Value: `abcd0123generatedtoken:x-oauth-basic`
 4. Now test it out - open a Pull/Merge Request on a project that contains gems from your private registries to see a lockfile updated and included in the Snyk Fix Pull Request
