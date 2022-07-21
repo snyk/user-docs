@@ -25,7 +25,7 @@ You can configure these types of Nexus Repository Manager:
 **Versions supported**
 
 * Nexus Repository Manager version 3.x is fully supported.
-* Nexus Repository Manager version 2.15+ is in Bet
+* Nexus Repository Manager version 2.15+ is in Beta
 {% endhint %}
 
 ### Getting started
