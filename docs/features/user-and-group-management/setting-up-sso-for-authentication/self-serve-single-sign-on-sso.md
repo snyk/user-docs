@@ -4,6 +4,10 @@ Group Admins of a Business or Enterprise plan who use SAML for SSO can configure
 
 Ensure you have at least one group and organization to indicate where new users will be assigned. See [Groups, Organizations and Users](https://github.com/snyk/user-docs/blob/118bd8f19001bd64415f0ce63897f568c4b5327a/docs/introducing-snyk/snyks-core-concepts/groups-organizations-and-users.md).
 
+The following short video demonstrates the process and steps for setting up single sign-on when using SAML.
+
+{% embed url="https://thoughtindustries-1.wistia.com/medias/dyg9opxlv8" %}
+
 ## Use SAML for SSO: process overview
 
 The process of establishing trust between your identity provider (IdP) and Snyk requires a few steps by the Group Admin:
@@ -68,7 +72,7 @@ Provide SAML attributes in the following form.
 * **X509 signing certificate** (mandatory): The identity provider public key. Download the certificate from your identity provider and paste it here. The system will encode it in _**Base64 format.**_
 * **Email domains and sub-domains** that would need SSO access (mandatory)
 * **Protocol binding**: HTTP-POST is recommended; HTTP-Redirect is also supported
-* **IdP-Initiated workflow**: Enable this option to add Snyk tile to your Identity Provider. \
+* **IdP-Initiated workflow**: Enable this option to add Snyk tile to your Identity Provider.\
   **Note:** IdP-Initiated SSO behavior carries a [security risk](https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/identity-provider-initiated-single-sign-on#risks-and-considerations) and is therefore not recommended. The risk is explained on the IdP side, and should be understood before enabling this option.
 
 ![Enter SAML attributes](<../../../.gitbook/assets/Screenshot 2022-02-24 at 14.40.24.png>)
