@@ -2,7 +2,6 @@
   The error codes in the table below describe the codes that you may encounter while working with the [Snyk API](../snyk-api-info/README.md) or [CLI](../snyk-cli/README.md). When errors are encountered using the API, they will also have an appropriate [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). If you encounter errors without an error code, use the HTTP status code to determine the appropriate action.
   |Code|Title|Description|HTTP Status|Exit Code|Help|
   |---|---|---|---|---|---|
-|[SNYK-OS-0001](#snyk-os-0001)|Unsupported language or package manager|The language or package manager is not supported|[422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)|N/A|https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support|    
 |[SNYK-OS-0002](#snyk-os-0002)|Unable to parse manifest file|The provided manifest file could not be parsed|[422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)|N/A||    
 |[SNYK-OSSI-0001](#snyk-ossi-0001)|Unauthorized|This is an example project error|[401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)|N/A||    
 |[SNYK-OSSI-1010](#snyk-ossi-1010)|Token not provided|Token has not been provided|[400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)|N/A||    
