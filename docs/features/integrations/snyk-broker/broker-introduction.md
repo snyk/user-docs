@@ -18,17 +18,7 @@ The Snyk Broker has a Server and a Client components that are the same across al
 
 ![](<../../../.gitbook/assets/Snyk Broker diagram.png>)
 
-
-
 All data, both in transit and at rest, is encrypted. Communication between the Client and the Server takes place over a secure WebSocket connection. It does not require opening incoming ports since the communication is initiated outbound, following which it establishes a two-way communication path over WebSocket.
-
-To use **Snyk Open Source** with the Snyk Broker, all you need is the Broker Server and Broker Client components. However, if you want to use other Snyk products with the Snyk Broker, you need to add an additional component or configurations, and to add parameters to the Broker Client setup:
-
-* ****[**Snyk Code**](snyk-broker-code-agent.md) – add the Code Agent component to enable the Snyk Code analysis of repositories in SCMs that are integrated through the Snyk Broker.
-* ****[**Snyk Container**](snyk-broker-container-registry-agent/) – add the Container Registry Agent to enable the connection to self-hosted/private container registries and the analysis of container images.
-* ****[**Snyk Infrastructure as Code**](snyk-broker-infrastructure-as-code-detection/) – add configurations to detect and analyze Terraform, CloudFormation, and Kubernetes configuration files through the Snyk Broker.
-
-
 
 ### Using inbound and outbound connections
 
@@ -48,6 +38,16 @@ Because of the limitations of the default approved list, if you are interested i
 
 To learn more about the approved data list and the `accept.json` file, see [Custom approved listing filter](set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md).
 
+### **The Snyk Broker usage**
+
+To use **Snyk Open Source** with the Snyk Broker, all you need is the Broker Server and the Broker Client components.&#x20;
+
+To use other Snyk products with the Snyk Broker, you need to add an additional component or configurations, and to add parameters to the Broker Client setup:
+
+* **Snyk Code** – add the [**Code Agent** ](snyk-broker-code-agent.md)component to enable the Snyk Code analysis of repositories in SCMs that are integrated through the Snyk Broker.
+* **Snyk Container** – add the [**Container Registry Agent**](snyk-broker-container-registry-agent/) to enable the connection to self-hosted/private container registries and the analysis of container images.
+* **Snyk Infrastructure as Code** – configure the [**`accept.json`** file with additional parameters](snyk-broker-infrastructure-as-code-detection/) **** to detect and analyze Terraform, CloudFormation, and Kubernetes configuration files through the Snyk Broker.
+
 ### **Supported integrations**
 
 Snyk Broker currently integrates with these Git Repository systems:
@@ -57,21 +57,9 @@ Snyk Broker currently integrates with these Git Repository systems:
 * [Bitbucket Server / Data Center](../git-repository-scm-integrations/bitbucket-data-center-server-integration.md) (On-prem)
 * [Azure Repos](https://docs.snyk.io/integrations/git-repository-scm-integrations/azure-repos-integration)
 
-These integrations require the [Code Agent](snyk-broker-code-agent.md) to support Snyk Code analysis.
-
 In addition, Snyk Broker integrates with [Jira Server/Jira Data Center](../notifications-ticketing-system-integrations/jira.md) and [JFrog Artifactory](../private-registry-integrations/artifactory-registry-setup.md).
 
 With the Container Registry Agent, Snyk Broker also connects to all [Snyk supported Container Registries](snyk-broker-container-registry-agent/).
-
-### **The Snyk Broker usage**
-
-When set up, the Snyk Broker enables teams to use the standard Snyk product experience for Snyk Open Source and Container (through SCM integration).
-
-To enable the full experience, Snyk Broker will need additional set-up:
-
-* For Snyk IaC it will require configuring the `accept.json` file [with additional parameters](snyk-broker-infrastructure-as-code-detection/) for the infrastructure as code templates
-* For Snyk Code, it will require the deployment of the [Snyk Broker Code Agent](snyk-broker-code-agent.md)
-* For Snyk Container image scanning, it will require the deployment of [Snyk Broker Container Registry Agent](snyk-broker-container-registry-agent/)
 
 ### Common questions
 
@@ -80,4 +68,4 @@ To enable the full experience, Snyk Broker will need additional set-up:
 * How often is the Snyk Broker checked for vulnerabilities?\
   The Snyk Broker application and images are being tested on a daily basis for vulnerabilities.
 * What is the SLA to fix vulnerabilities?\
-  &#x20;ofThere is a 14 day SLA for fixing high vulnerabilities and 5 days SLA for fixing critical vulnerabilities in public images.
+  There is a 14 day SLA for fixing high vulnerabilities and 5 days SLA for fixing critical vulnerabilities in public images.

@@ -1,6 +1,6 @@
 # Snyk for Scala
 
-Snyk supports testing and monitoring Scala projects that have their dependencies managed by  [sbt](https://www.scala-sbt.org)
+Snyk supports testing and monitoring Scala projects that have their dependencies managed by [sbt](https://www.scala-sbt.org)
 
 ## Features of Snyk support for Scala
 
@@ -25,7 +25,7 @@ Snyk scans Scala projects by running `sbt` plugins or examining your `build.sbt`
 ## Snyk CLI tool for Scala projects
 
 {% hint style="warning" %}
-The Snyk CLI uses the [`sbt-dependency-graph`](https://github.com/sbt/sbt-dependency-graph) plugin which has been [included](https://www.scala-sbt.org/1.x/docs/Combined+Pages.html#sbt-dependency-graph+is+in-sourced) in `sbt` as a built-in plugin since `sbt` 1.4.&#x20;
+The [Snyk CLI ](../../../snyk-cli/)uses the [`sbt-dependency-graph`](https://github.com/sbt/sbt-dependency-graph) plugin which has been [included](https://www.scala-sbt.org/1.x/docs/Combined+Pages.html#sbt-dependency-graph+is+in-sourced) in `sbt` as a built-in plugin since `sbt` 1.4.
 
 However, the recommended method of calling the plugin in sbt 1.4+ is not currently compatible with Snyk. Use the legacy method, `addSbtPlugin()`, instead (see below).
 {% endhint %}

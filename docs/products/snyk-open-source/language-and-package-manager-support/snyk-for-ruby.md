@@ -1,6 +1,6 @@
 # Snyk for Ruby
 
-Snyk supports testing, monitoring and fixing Ruby projects in the CLI and Git integrations that have their dependencies managed by [Bundler](https://bundler.io/), and comparing the specific dependency versions against the [Ruby vulnerability database](https://snyk.io/vuln?type=rubygems).
+Snyk supports testing, monitoring and fixing Ruby projects in the [CLI ](../../../snyk-cli/)and Git [integrations](../../../features/integrations/) that have their dependencies managed by [Bundler](https://bundler.io/), and comparing the specific dependency versions against the [Ruby vulnerability database](https://snyk.io/vuln?type=rubygems).
 
 Snyk tests all Bundler groups, and currently it is not possible to exclude certain groups (such as test or development groups).
 

@@ -1,6 +1,6 @@
 # Snyk for Java and Kotlin
 
-Snyk offers security scanning to test your projects for vulnerabilities, both through your CLI and through different integrations from our UI.
+Snyk offers security scanning to test your projects for vulnerabilities, both through both through the [Snyk CLI ](../../../snyk-cli/)and from the Snyk Web UI through different [Snyk Integrations](../../../features/integrations/).
 
 ## Features
 

@@ -6,4 +6,4 @@ Click the project link to view test results and resolve any misconfigurations th
 
 The results page appears similar to the following:
 
-![](<../../../.gitbook/assets/Screenshot 2022-05-23 at 14.49.06.png>)
+![](<../../../.gitbook/assets/Screenshot 2022-05-23 at 14.49.06 (1).png>)
