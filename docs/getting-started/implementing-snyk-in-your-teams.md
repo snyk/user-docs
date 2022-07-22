@@ -183,4 +183,4 @@ The Snyk Web UI scans different types of projects (depending on which product yo
 More information:
 
 * Docs: [Snyk Web UI](../snyk-web-ui/)
-* Training: [Introduction to the Snyk UI](https://training.snyk.io/courses/introduction-to-the-snyk-ui)
+* Training: [Introduction to Snyk](https://training.snyk.io/learning-paths/introduction-to-snyk), [Find and Fix with Snyk Open Source](https://training.snyk.io/learning-paths/find-and-fix-with-snyk-open-source), [Introduction to the Snyk UI](https://training.snyk.io/courses/introduction-to-the-snyk-ui)
