@@ -251,13 +251,9 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--path=<PATH_TO_RESOURCE>`: [`ignore`](https://docs.snyk.io/snyk-cli/commands/ignore)
 
-## Options for Maven projects
+## Option for Maven projects
 
 `--scan-all-unmanaged`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
-
-`--reachable`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
-
-`--reachable-timeout=<TIMEOUT>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 ## Options for Gradle projects
 
@@ -268,10 +264,6 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 `--configuration-matching=<CONFIGURATION_REGEX>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 `--configuration-attributes=<ATTRIBUTE>[,<ATTRIBUTE>]...`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
-
-`--reachable`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
-
-`--reachable-timeout=<TIMEOUT>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 `--init-script=<FILE`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
