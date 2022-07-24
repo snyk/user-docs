@@ -1,7 +1,8 @@
 # Using Automatic PR Checks for securing your source code
 
 {% hint style="info" %}
-The **Automatic PR Checks** feature in Snyk Code is currently in Closed Beta. If you would like to activate it in your organization, contact your CSM.
+* The **Automatic PR Checks** feature in Snyk Code is currently in Closed Beta. If you would like to activate it in your organization, contact your CSM.
+* The **Automatic PR Checks** feature in Snyk Code is currently NOT supported when using the Snyk Broker – Code Agent deployment method.
 {% endhint %}
 
 ### Understanding the Automatic PR Checks feature
