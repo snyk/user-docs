@@ -47,7 +47,7 @@ Consider the following levels of usage and options:
 
 ### Options
 
-* To exclude some contributors from being counted in the commits , add an exclusion file with the emails to ignore(separated by commas) and apply the `--exclusionFilePath` with the path to that file:
+* To exclude some contributors from being counted in the commits , add an exclusion file with the emails to ignore(separated by a new line) and apply the `--exclusionFilePath` with the path to that file:
 
 ```
 snyk-scm-contributors-count github --token TOKEN --orgs ORG_ONE,ORG_TWO --exclusionFilePath PATH_TO_FILE

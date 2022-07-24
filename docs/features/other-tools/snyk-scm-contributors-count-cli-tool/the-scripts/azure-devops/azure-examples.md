@@ -35,7 +35,7 @@ The following options are available for the `snyk-scm-contributors-count azure d
    *   Create a Token if one does not exist, using this [guide](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops\&tabs=preview-page).
 
        **Note**: Make sure your token has read access to the repos.
-   * Find your Org name in Azure  listed on the left pane on the [Azure DevOps site](https://dev.azure.com).
+   * Find your Org name in Azure listed on the left pane on the [Azure DevOps site](https://dev.azure.com).
 
 ## Running the command
 
@@ -68,7 +68,7 @@ Consider the following levels of usage and options:
     ```
     snyk-scm-contributors-count azure-devops --token AZURE-TOKEN --org AZURE-ORG --skipSnykMonitoredRepos
     ```
-*   To exclude some contributors from being counted in the commits, add an exclusion file with the emails to ignore (separated by commas) and apply the `--exclusionFilePath` with the path to that file:
+*   To exclude some contributors from being counted in the commits, add an exclusion file with the emails to ignore (separated by a new line) and apply the `--exclusionFilePath` with the path to that file:
 
     ```
     snyk-scm-contributors-count azure-devops --token AZURE-TOKEN --org AZURE-ORG --projectKeys Key1,Key2 --exclusionFilePath PATH_TO_FILE
