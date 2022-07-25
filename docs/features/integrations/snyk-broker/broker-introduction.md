@@ -2,9 +2,8 @@
 
 ### What is the purpose of the Snyk Broker?
 
-The Snyk Broker is designed to connect Snyk products to self-hosted integrations that are not accessible from the internet. It also allows you to:
+The Snyk Broker is designed to connect Snyk products to self-hosted integrations that are not publicly accessible from the internet. It also allows you to:
 
-* Keep sensitive data such as your access tokens inside your private network, never sharing that information with Snyk.
 * Control Snyk access to your network, by limiting the files that Snyk can access and the actions that Snyk can perform.
 * Manage a fixed private IP for your integration (targeting the Broker).
 
