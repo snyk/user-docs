@@ -29,67 +29,19 @@ The Snyk Eclipse plugin is available for installation on the [Eclipse Marketplac
 
 Navigate to the Marketplace from within your running Eclipse instance. Search for Snyk and click **Install**.
 
-![Eclipse Marketplace search showing Snyk plugin and Install button](<../.gitbook/assets/Screenshot 2022-05-17 at 16.29.29.png>)
+![Eclipse Marketplace search showing Snyk plugin and Install button](<../../.gitbook/assets/Screenshot 2022-05-17 at 16.29.29.png>)
 
 When prompted accept the license agreement add the **Snyk Security** certificate to complete the installation (this happens only once).
 
-![Add Snyk Security certificate](<../.gitbook/assets/Screenshot 2022-05-13 at 09.08.52 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Add Snyk Security certificate](<../../.gitbook/assets/Screenshot 2022-05-13 at 09.08.52 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 Restart the Eclipse instance:
 
-![Restart Eclipse](<../.gitbook/assets/Screenshot 2022-05-13 at 09.16.37.png>)
+![Restart Eclipse](<../../.gitbook/assets/Screenshot 2022-05-13 at 09.16.37.png>)
 
 Once Eclipse is restarted, navigate to **Eclipse Preferences** to ensure that **Snyk** now appears in the list:
 
-![Eclipse preferences showing Snyk](<../.gitbook/assets/Screenshot 2022-05-17 at 16.36.07.png>)
-
-## First run after the installation
-
-The Snyk Eclipse plugin now works with an underlying language server for optimal Eclipse experience. After restart, on opening a file that Snyk supports, the Eclipse plugin attempts to start a workspace scan:
-
-![Eclipse plugin starting a scan](<../.gitbook/assets/Screenshot 2022-05-13 at 09.28.30 (1).png>)
-
-Once the plugin is installed, all of the plugin's prerequisites are triggered on opening a file that Snyk supports (Snyk hooks into this action). The prerequisites include downloading the Snyk CLI, the language server, and asking you to authenticate. All of these steps are shown in the following sections, in the order they happen.
-
-### Snyk CLI and language server download
-
-The process downloads the Snyk CLI and the language server and uses the CLI for authentication.
-
-![Download the Snyk CLI](<../.gitbook/assets/Screenshot 2022-05-13 at 11.27.00.png>)
-
-### Authentication
-
-Once the CLI is downloaded you will be redirected to the browser to authenticate and then connect the IDE with your account. Steps are as follows:
-
-* You get a notification that a browser window will open.
-
-![Notification, browser window opening for authentication](<../.gitbook/assets/Screenshot 2022-05-13 at 11.29.37.png>)
-
-* Once you are redirected to the browser for authentication, click Authenticate.
-
-![Authenticate](<../.gitbook/assets/Screenshot 2022-05-13 at 11.30.02.png>)
-
-* You should see a successful message saying you've been authenticated.
-
-![Confirmation of authentication](<../.gitbook/assets/Screenshot 2022-05-13 at 11.30.30.png>)
-
-* Going back to the IDE, you should see a confirmation that the IDE has been successfully connected and the API token has been securely stored.
-
-![Confirmation of connection](<../.gitbook/assets/Screenshot 2022-05-13 at 11.30.54.png>)
-
-To verify that the Eclipse plugin is ready to start scanning, be sure the Snyk preferences show the following after the downloads and the authentication are done:
-
-* Language server path that the Eclipse plugin will use
-* Snyk CLI path that the Eclipse plugin will use
-* Snyk API token, securely stored through the Eclipse's secure storage mechanism
-
-![Snyk preferences after downloads and authentication](<../.gitbook/assets/Screenshot 2022-05-17 at 16.36.07.png>)
-
-### Configure the API token manually
-
-You can provide the API token by copying it from your [account settings](https://app.snyk.io/account) and paste it into the Eclipse preferences Snyk API Token field. Click **Apply and Close** once the token has been set\*\*.\*\*
-
-![Providing the API token manually](<../.gitbook/assets/Screenshot 2022-05-17 at 16.36.07.png>)
+![Eclipse preferences showing Snyk.](<../../.gitbook/assets/Screenshot 2022-05-17 at 16.36.07.png>)
 
 ### Configuration
 
@@ -133,11 +85,11 @@ Summary: Snyk's Eclipse plugin uses the proxy settings from Eclipse, but also pi
 
 Once the language server is downloaded and the authentication is done, the plugin will successfully start the workspace scan. You might notice a confirmation that a workspace scan is starting. Snyk shows such a notification when there is no workspace scan available.
 
-![Starting workspace scan](<../.gitbook/assets/Screenshot 2022-05-13 at 11.55.41.png>)
+![Starting workspace scan](<../../.gitbook/assets/Screenshot 2022-05-13 at 11.55.41.png>)
 
 All of the issues found by Snyk are now natively integrated with Eclipse's flows. Issues are shown in the Problems tab (see the following screenshot). There is a squiggly line indicating the issue while you code plus the gutter icons to indicate where the issue is.
 
-![Problems tab](<../.gitbook/assets/Screenshot 2022-05-13 at 12.20.26.png>)
+![Problems tab](<../../.gitbook/assets/Screenshot 2022-05-13 at 12.20.26.png>)
 
 ## SAST scanning results (SAST, Snyk Code)
 
@@ -151,7 +103,7 @@ Starting version 2.0.0 and above, Snyk is introducing a deeper integration withi
 Currently the hover information is limited to JavaEditor and GenericEditor, which is the default editor for plugins like Wild Web Developer, etc.
 {% endhint %}
 
-![SAST scanning results](<../.gitbook/assets/Screenshot 2022-05-13 at 12.56.46.png>)
+![SAST scanning results](<../../.gitbook/assets/Screenshot 2022-05-13 at 12.56.46.png>)
 
 ## Misconfiguration scanning results (Snyk Infrastructure as Code)
 
@@ -165,7 +117,7 @@ Starting version 2.0.0 and later, Snyk is introducing a deeper integration withi
 Currently the hover information is limited to JavaEditor and GenericEditor, which is the default editor for plugins like Wild Web Developer, etc.
 {% endhint %}
 
-![Misconfiguration scanning results](<../.gitbook/assets/Screenshot 2022-05-13 at 12.59.40.png>)
+![Misconfiguration scanning results](<../../.gitbook/assets/Screenshot 2022-05-13 at 12.59.40.png>)
 
 ## Third party dependency scanning (SCA, Snyk Open Source)
 
@@ -179,11 +131,11 @@ Starting version 2.0.0 and later, Snyk is introducing a deeper integration withi
 Currently the hover information is limited to JavaEditor and GenericEditor, which is the default editor for plugins like Wild Web Developer, etc.
 {% endhint %}
 
-![Third party dependency scanning results, problems tab](<../.gitbook/assets/Screenshot 2022-05-13 at 13.01.53.png>)
+![Third party dependency scanning results, problems tab](<../../.gitbook/assets/Screenshot 2022-05-13 at 13.01.53.png>)
 
 Third party dependency scanning results are **also available in the already existing Snyk Results panel**:
 
-![Third party dependency scanning results, results panel](<../.gitbook/assets/Screenshot 2022-05-13 at 12.13.37.png>)
+![Third party dependency scanning results, results panel](<../../.gitbook/assets/Screenshot 2022-05-13 at 12.13.37.png>)
 
 ### **Context menu**
 
@@ -258,15 +210,15 @@ If you close the Snyk Results panel by accident, or for some reason you don't se
 
 Navigate to **Windows -> Show View -> Other...**
 
-![Show View, Other](<../.gitbook/assets/Screenshot 2022-05-13 at 12.04.07.png>)
+![Show View, Other](<../../.gitbook/assets/Screenshot 2022-05-13 at 12.04.07.png>)
 
 Search for Snyk in the **Show View** dialog window.
 
-![Show View dialog window](<../.gitbook/assets/Screenshot 2022-05-13 at 12.02.06 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Show View dialog window](<../../.gitbook/assets/Screenshot 2022-05-13 at 12.02.06 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 You should now be able to see the Snyk Results panel:
 
-![Snyk Results panel](<../.gitbook/assets/Screenshot 2022-05-13 at 12.02.18.png>)
+![Snyk Results panel](<../../.gitbook/assets/Screenshot 2022-05-13 at 12.02.18.png>)
 
 ## Download urls
 

@@ -4,7 +4,7 @@ IDE integrations allow you to use the functionality of Snyk in your Integrated D
 
 The following Snyk plugins and extensions are available.
 
-* [Eclipse plugin](eclipse-plugin.md)
+* [Eclipse plugin](eclipse-plugin/)
 * [JetBrains plugins](jetbrains-plugins.md)
 * [Visual Studio extension](visual-studio-extension.md)
 * [Visual Studio Code extension](visual-studio-code-extension-for-snyk-code.md)
