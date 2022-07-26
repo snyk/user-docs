@@ -199,7 +199,7 @@
   * [Use Snyk Open Source from the CLI](products/snyk-open-source/use-snyk-open-source-from-the-cli.md)
 * [Snyk Code](products/snyk-code/README.md)
   * [Introducing Snyk Code](products/snyk-code/introducing-snyk-code/README.md)
-    * [Snyk Code - Use Cases](products/snyk-code/use-cases.md)
+    * [Snyk Code - Benefits and Capabilities](products/snyk-code/use-cases.md)
     * [Snyk Code - Key features](products/snyk-code/key-features/README.md)
       * [AI Engine](products/snyk-code/key-features/ai-engine.md)
       * [User Experience](products/snyk-code/key-features/user-experience.md)
