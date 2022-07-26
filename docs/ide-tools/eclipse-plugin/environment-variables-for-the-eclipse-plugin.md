@@ -1,3 +1,23 @@
 # Environment variables for the Eclipse plugin
 
-Content to be added
+
+
+### Environment variables
+
+To analyze projects, the plugin uses the Snyk CLI. The CLI needs the following environment variables:
+
+* `PATH`: The path to needed binaries, for example, to Maven. The `PATH` variable can also be manually adjusted using the **`Path`** field in the settings dialog.
+* `JAVA_HOME`: The path to the JDK you want to use to analyze Java dependencies
+* `http_proxy` and `https_proxy`: Proxy set using the value in the format `http://username:password@proxyhost:proxyport`.\
+  **Note:** the leading `http://` in the value does not change to `https://` for an `https_proxy`.
+
+Setting these variables only in a shell environment (for example, using **\~/.bashrc**) is not enough, if you do not start Eclipse from the command line or create a script file that starts Eclipse using a shell environment.
+
+* On **Windows**, set the variables using the GUI or on the command line using the [setx](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/setx) tool.
+* On **macOS**, the process `launchd` needs to know the environment variables to launch Eclipse directly from the Finder. Set these environment variables using the `launchctl setenv` command (for example, on start up or using a script you launch at user login).\
+  **Note:** Provision of environment variables to the macOS UI may change between operating system releases, so it can be easier to create a small shell script that launches the Eclipse app to leverage the shell environment. This can be defined via `~/.bashrc`.
+* On **Linux**, updating the file `/etc/environment` can be used to propagate the environment variables to the windows manager and UI.
+
+{% hint style="info" %}
+Summary: Snyk's Eclipse plugin uses the proxy settings from Eclipse, but also picks up the proxy settings from the environment variables.
+{% endhint %}
