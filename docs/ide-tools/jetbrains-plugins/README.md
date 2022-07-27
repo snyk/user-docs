@@ -215,11 +215,7 @@ This setting allows you to specify an organization slug name to run tests for th
 
 If not specified, preferred organization as defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
 
-## Troubleshooting
-
-To obtain plugin logs, navigate to **Help** > **Show Log in Finder** (Mac) or **Show Log in Explorer** (Windows).&#x20;
-
-You can find more help on locating logs in [the official IntelliJ support article](https://intellij-support.jetbrains.com/hc/en-us/articles/207241085-Locating-IDE-log-files).
+##
 
 ### Support and contact information
 
