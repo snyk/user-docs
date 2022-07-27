@@ -1,17 +1,3 @@
 # Misconfiguration scanning results (Snyk Infrastructure as Code)
 
-## Misconfiguration scanning results (Snyk Infrastructure as Code)
-
-Starting version 2.0.0 and later, Snyk is introducing a deeper integration within Eclipse with the native flows of Eclipse (inline highlights, problems integrations, information about the issue on hover). The following shows all of these for a high severity misconfiguration found in a Terraform file:
-
-1. The misconfiguration is highlighted (the red squiggly line) indicating there is a high severity security vulnerability in this file and the line number. You have all the information on hover; you can scroll, read, or click the links (when available) for even more information. Advice on how to resolve the misconfiguration is right there where the misconfiguration is.
-2. You see the integration with the problems tab, which comes in handy if you use the problems tab to show only issues in the current file. Snyk also indicates the line where the issue is.
-3. You can see the gutter icons on the left and file map highlights (with colors matching the priorities) on the right.
-
-{% hint style="info" %}
-Currently the hover information is limited to JavaEditor and GenericEditor, which is the default editor for plugins like Wild Web Developer, etc.
-{% endhint %}
-
-![Misconfiguration scanning results](<../../.gitbook/assets/Screenshot 2022-05-13 at 12.59.40.png>)
-
-##
+Content to be added
