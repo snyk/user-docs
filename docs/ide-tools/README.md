@@ -19,7 +19,7 @@ Snyk Security plugins and extensions find and fix security vulnerabilities and i
 
 Typically **scans take place rapidly**. The **results** show issues with context, impact, and fix guidance in line with code **in your IDE, where you can apply a fix**.
 
-The Snyk IDE plugins and extensions rely on the [Snyk Vulnerability Database](https://security.snyk.io/).
+The Snyk IDE plugins and extensions rely on the [Snyk Vulnerability Database](https://security.snyk.io/). For more information see [Snyk Vulnerability Database in the docs](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/getting-started-snyk-intel-vuln-db-access?q=snyk+vulnerability+database).
 
 Snyk Code artificial intelligence and machine learning capabilities are available in the Snyk IDE plugins and extensions. For more information about Snyk Code capabilities see [Snyk Code ](../products/snyk-code/)and [Snyk Code - Benefits and Capabilities](../products/snyk-code/use-cases.md).
 
