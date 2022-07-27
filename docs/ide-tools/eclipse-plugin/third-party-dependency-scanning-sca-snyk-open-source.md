@@ -58,7 +58,7 @@ The following shows a **dependency in collapsed mode**, when your project is aff
 Collapsed mode, indirect vulnerability
 {% endembed %}
 
-**Example**:
+In this example:
 
 Package X uses Package Y, which in turn uses Package Z.
 
@@ -66,7 +66,7 @@ Package Z contains a Cross-Site Scripting (XSS) vulnerability, indirectly affect
 
 The Dependency (the name of the package explicitly used in the code) is Package X; the Package field displays Package Z (the name of the package that actually contains the vulnerability).
 
-The following shows **a dependency in expanded mode**, when your project is affected by an indirect vulnerability:
+The following shows a **dependency in expanded mode**, when your project is affected by an indirect vulnerability:
 
 Click the arrow on the row **to expand and view** the full path from the direct dependency to the vulnerable package.
 
