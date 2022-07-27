@@ -1,12 +1,10 @@
 # Configuration of the Eclipse plugin
 
-### Configuration
+You can set the following configuration options in the Snyk preferences.
 
-In the Snyk preferences, the following configuration options are available.
-
-* `Snyk API Token`: The authentication token from Snyk.
-* `Path`: Your additions to the path to find needed third party tools such as Gradle or Maven.
-* `Custom Endpoint`: The custom endpoint for Single Tenant setups instead of https://app.snyk.io.
+* `Snyk API Token`: Set the authentication token from Snyk.
+* `Path`: Specify your additions to the path to find needed third party tools such as Gradle or Maven.
+* `Custom Endpoint`: Specify the custom endpoint for Single Tenant setups instead of https://app.snyk.io.
 * `Allow unknown certificate authorities`: Disable certificate checks for SSL connections.
 * `Custom Snyk LS Path`: Specify the location of your language server binaries. If set, no updates are downloaded and updates must be performed manually to synchronize Eclipse features and preferences with the Language Server.
 * `Snyk Open Source enabled`: Enable/Disable Snyk Open Source Dependency Scans via Language Server. Default: `Enabled` during beta

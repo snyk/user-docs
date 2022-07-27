@@ -1,6 +1,8 @@
 # Authentication for the Eclipse plugin
 
-Once the CLI is downloaded you will be redirected to the browser to authenticate and then connect the IDE with your account. The steps are as follows:
+Once the CLI is downloaded you will be redirected to the browser to authenticate and then connect the IDE with your account.
+
+## Steps in authentication
 
 * You get a notification that a browser window will open (lower right).
 
@@ -26,8 +28,8 @@ To verify that the Eclipse plugin is ready to start scanning, be sure the Snyk p
 
 ![Snyk preferences after downloads and authentication](<../../.gitbook/assets/Screenshot 2022-05-17 at 16.36.07.png>)
 
-### Configure the API token manually
+## Configure the API token manually
 
-You can provide the API token by copying it from your [account settings](https://app.snyk.io/account) and paste it into the Eclipse preferences Snyk API Token field. Click **Apply and Close** once the token has been set\*\*.\*\*
+You can provide the API token by copying it from your [account settings](https://app.snyk.io/account) and paste it into the Eclipse preferences Snyk API Token field. Click **Apply and Close** once the token has been set.
 
 ![Providing the API token manually](<../../.gitbook/assets/Screenshot 2022-05-17 at 16.36.07.png>)

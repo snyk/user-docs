@@ -38,7 +38,7 @@ The **Mark as successful** action does NOT ignore the issue, but only allows it 
 
 ![Graphical user interface, text, application, email
 
-Description automatically generated](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful - message (1) (1) (1) (1) (1) (1).png>)
+Description automatically generated](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful - message (1) (1) (1) (1) (1) (2).png>)
 
 &#x20;A message appears on the **SAST check** page header, informing you that the failed PRs are now marked as successful:
 
