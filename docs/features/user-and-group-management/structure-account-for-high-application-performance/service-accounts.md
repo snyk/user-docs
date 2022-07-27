@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+This feature is available with Business and Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 ### Introduction
