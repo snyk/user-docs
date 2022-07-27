@@ -43,18 +43,17 @@ Once authenticated, create the service principal:
 #### Input:
 
 ```
-az ad sp create-for-rbac --name SpNameExample --role "Website Contributor"
+az ad sp create-for-rbac --name SpNameExample --role "Website Contributor"  --scopes /subscriptions/{subscriptionId}/resourceGroups/{resourceGroup1}
 ```
 
 #### Output:
 
 ```
 {
-"appId": "f5f1ce7d-c247-42e6-91a4-ad1e7example",
-"displayName": "SpNameExample",
-"name": "http://SpNameExample",
-"password": "97adeba6-4178-4f2b-bf5f-782b3example",
-"tenant": "874186fd-a7a8-4e98-9b9e-3df00example"
+  "appId": "f5f1ce7d-c247-42e6-91a4-ad1e7example",
+  "displayName": "SpNameExample",
+  "password": "97adeba6-4178-4f2b-bf5f-782b3example",
+  "tenant": "874186fd-a7a8-4e98-9b9e-3df00example"
 }
 ```
 
