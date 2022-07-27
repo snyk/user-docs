@@ -1,24 +1,20 @@
 # Authentication for the Eclipse plugin
 
+Once the CLI is downloaded you will be redirected to the browser to authenticate and then connect the IDE with your account. The steps are as follows:
 
-
-### Authentication
-
-Once the CLI is downloaded you will be redirected to the browser to authenticate and then connect the IDE with your account. Steps are as follows:
-
-* You get a notification that a browser window will open.
+* You get a notification that a browser window will open (lower right).
 
 ![Notification, browser window opening for authentication](<../../.gitbook/assets/Screenshot 2022-05-13 at 11.29.37.png>)
 
-* Once you are redirected to the browser for authentication, click Authenticate.
+* Once you are redirected to the browser for authentication, click **Authenticate**.
 
 ![Authenticate](<../../.gitbook/assets/Screenshot 2022-05-13 at 11.30.02.png>)
 
 * You should see a successful message saying you've been authenticated.
 
-![Confirmation of authentication](<../../.gitbook/assets/Screenshot 2022-05-13 at 11.30.30.png>)
+![Confirmation of authentication](<../../.gitbook/assets/Screenshot 2022-05-13 at 11.30.30 (1).png>)
 
-* Going back to the IDE, you should see a confirmation that the IDE has been successfully connected and the API token has been securely stored.
+* Going back to the IDE, you should see a confirmation that the IDE has been successfully connected and the API token has been securely stored (lower right).
 
 ![Confirmation of connection](<../../.gitbook/assets/Screenshot 2022-05-13 at 11.30.54.png>)
 
