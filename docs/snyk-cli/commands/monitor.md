@@ -10,6 +10,8 @@ The `snyk monitor` command creates a project in your Snyk account to be continuo
 
 For Snyk Container see [`snyk container` help](https://docs.snyk.io/snyk-cli/commands/container)
 
+The `monitor` command is not supported for Snyk Code.
+
 For Snyk Infrastructure as Code follow the instructions in "Regularly testing IaC files" on [Snyk CLI for Infrastructure as Code](https://docs.snyk.io/products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code)
 
 ## Exit codes

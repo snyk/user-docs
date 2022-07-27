@@ -33,7 +33,3 @@ To verify that the Eclipse plugin is ready to start scanning, be sure the Snyk p
 You can provide the API token by copying it from your [account settings](https://app.snyk.io/account) and paste it into the Eclipse preferences Snyk API Token field. Click **Apply and Close** once the token has been set.
 
 ![Providing the API token manually](<../../.gitbook/assets/Screenshot 2022-05-17 at 16.36.07.png>)
-
-## Next steps
-
-Change the [configuration settings](https://docs.snyk.io/ide-tools/eclipse-plugin/configuration-of-the-eclipse-plugin) as needed and set the [environment variables](https://docs.snyk.io/ide-tools/eclipse-plugin/environment-variables-for-the-eclipse-plugin).
