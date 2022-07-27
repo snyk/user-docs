@@ -2,18 +2,16 @@
 
 Depending on the type of plan you have with Snyk you will have a limit on the number of projects you can have in a single organization.
 
-| Plan                   | Number of Projects |
-| ---------------------- | ------------------ |
-| Free                   | 10,000             |
-| Team                   | 25,000             |
-| Business               | 25,000             |
-| Enterprise             | 25,000             |
-| Pro (legacy plan)      | 25,000             |
-| Standard (legacy plan) | 25,000             |
+| Plan       | Number of Projects |
+| ---------- | ------------------ |
+| Free       | 10,000             |
+| Team       | 25,000             |
+| Business   | 25,000             |
+| Enterprise | 25,000             |
 
 ### How will you know when you have reached the limit?
 
-When you reach that limit, Snyk will stop importing more projects into the organization.&#x20;
+When you reach that limit, Snyk will stop importing more projects into the organization.
 
 You will know you have hit this limit when you see this banner in the Snyk UI:
 
@@ -33,4 +31,4 @@ In the API, your import request will return this error:
     },
 ```
 
-This limit is in place to protect your experience with Snyk. There are no restrictions on the number of organizations you can create. If you are getting close to these limits, you can create more organizations  and split your projects across them.
+This limit is in place to protect your experience with Snyk. There are no restrictions on the number of organizations you can create. If you are getting close to these limits, you can create more organizations and split your projects across them.
