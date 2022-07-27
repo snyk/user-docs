@@ -32,9 +32,9 @@ Snyk supports JetBrains plugin versions from version 2020.2 on the following IDE
 ## **How the Snyk JetBrains plugin works**
 
 * The plugin is based on Snyk CLI, but not on the CLI only. The plugin supports product features in the CLI for Snyk Open Source and Snyk Container as well as for Snyk Code and Snyk IaC with some limitations.
-* The plugin automatically downloads the CLI in the background; you will be asked to [authenticate](jetbrains-plugins.md#authentication).
+* The plugin automatically downloads the CLI in the background; you will be asked to [authenticate](./#authentication).
 * Snyk supports all the [languages supported by Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#language-support-with-snyk-code-ai-engine). You can install the plugin on any of the IDEs (such as RubyMine). Once the plugin is installed, Snyk analyzes all the language files that it finds.
-* If the CLI is already installed on the machine, the plugin uses the token provided to it. Otherwise, you must provide the authentication token through the plugin [authentication mechanism](jetbrains-plugins.md#authentication).
+* If the CLI is already installed on the machine, the plugin uses the token provided to it. Otherwise, you must provide the authentication token through the plugin [authentication mechanism](./#authentication).
 
 ## **Install the plugin**
 
@@ -47,7 +47,7 @@ Install using the IDE plugins library:
 5. Click on the **Install** button.
 6. When the installation is complete, restart the IDE.
 
-![Select the Snyk vulnerability scanning plugin](<../.gitbook/assets/Screen Shot 2022-03-09 at 5.06.13 PM (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
+![Select the Snyk vulnerability scanning plugin](<../../.gitbook/assets/Screen Shot 2022-03-09 at 5.06.13 PM (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
 
 ## Configuration
 
@@ -75,17 +75,17 @@ The first time the CLI is needed, the plugin automatically downloads it in the b
 
 After the plugin is installed, you are prompted to authenticate and connect the IDE plugin to Snyk.
 
-![Prompt to authenticate and start testing your code.](<../.gitbook/assets/Screenshot 2022-02-10 at 17.07.52.png>)
+![Prompt to authenticate and start testing your code.](<../../.gitbook/assets/Screenshot 2022-02-10 at 17.07.52.png>)
 
 Click **Test code now**. The plugin relies on the Snyk CLI, which authenticates your machine against the Snyk Web UI.
 
 Click **Authenticate** when prompted by Snyk.
 
-![Prompt to authenticate](../.gitbook/assets/screen-shot-2021-09-29-at-4.04.29-pm.png)
+![Prompt to authenticate](../../.gitbook/assets/screen-shot-2021-09-29-at-4.04.29-pm.png)
 
 When authentication is complete, a confirmation message appears.
 
-![Authenticated confirmation message](../.gitbook/assets/screen-shot-2021-09-29-at-4.05.55-pm.png)
+![Authenticated confirmation message](../../.gitbook/assets/screen-shot-2021-09-29-at-4.05.55-pm.png)
 
 The IDE reads and saves the authentication on your local machine.
 
@@ -93,7 +93,7 @@ You can now close the browser window and return to the IDE.
 
 The analysis starts automatically:
 
-![Analysis by JetBrains plugin](<../.gitbook/assets/Screenshot 2022-02-10 at 17.26.44.png>)
+![Analysis by JetBrains plugin](<../../.gitbook/assets/Screenshot 2022-02-10 at 17.26.44.png>)
 
 ### Add token manually
 
@@ -102,13 +102,13 @@ The analysis starts automatically:
 3. Paste or enter the token under **Connect IDE to Snyk**
 4. Click **Apply or OK**
 
-![Connect to Snyk IDE token](../.gitbook/assets/screen-shot-2021-09-30-at-8.10.21-am.png)
+![Connect to Snyk IDE token](../../.gitbook/assets/screen-shot-2021-09-30-at-8.10.21-am.png)
 
 ### Manual authentication
 
 If you are unable to authenticate automatically or by adding the token, run `snyk auth` from the command line and follow the preceding steps to respond to the prompts. If you need help, submit a request to [Snyk support](https://snyk.zendesk.com/agent/dashboard).
 
-![Prompts from authentication using snyk auth](../.gitbook/assets/screen-shot-2021-09-29-at-3.57.26-pm.png)
+![Prompts from authentication using snyk auth](../../.gitbook/assets/screen-shot-2021-09-29-at-3.57.26-pm.png)
 
 ## Run an analysis
 
@@ -118,25 +118,25 @@ Make sure your project file, for example, requirements.txt, is saved before runn
 
 To trigger an analysis during your daily coding workflow, click either the run (play) button, or **Run scan**.
 
-![Play button and Run scan link](../.gitbook/assets/play-run.png)
+![Play button and Run scan link](../../.gitbook/assets/play-run.png)
 
 ## Analysis results: Snyk Open Source
 
 Snyk Open Source analysis shows a list of vulnerabilities and license issues found in the manifest file. For more detailed information select a vulnerability or license issue.
 
-![Display more information for a vulnerability or license issue](../.gitbook/assets/results-os.png)
+![Display more information for a vulnerability or license issue](../../.gitbook/assets/results-os.png)
 
 ## Analysis results: Snyk Code
 
 Snyk Code analysis shows a list of security vulnerabilities and code issues found in your application code. For more details and examples of fixes on how others fixed the issue, select the security vulnerability or the code security issue:
 
-![Display more information for a vulnerability or code issue](../.gitbook/assets/results-code.png)
+![Display more information for a vulnerability or code issue](../../.gitbook/assets/results-code.png)
 
 ## Analysis results: Snyk Configuration
 
 Snyk Configuration analysis shows issues in your Terraform, Kubernetes, AWS CloudFormation, and Azure Resource Manager (ARM) code with every scan. Based on the Snyk CLI, the scan is fast and friendly for local development. For more detailed information select an issue.
 
-![Display more information for Snyk Configuration analysis](../.gitbook/assets/intellij\_iac\_issues.png)
+![Display more information for Snyk Configuration analysis](../../.gitbook/assets/intellij\_iac\_issues.png)
 
 The Snyk plugin provides information so you can quickly understand and fix the underlying issue:
 
@@ -155,7 +155,7 @@ Snyk Container analysis shows each of the security vulnerabilities to which your
 
 A comparison table is displayed with various severity levels such as critical or high. This shows the difference in vulnerabilities between the current image and the image recommended by Snyk, with the same characteristics sorted by severity. This helps you decide if you want to upgrade your image to the recommended one and increase the level of confidence in the image you are running in production.
 
-![Display more information for Snyk Container analysis](../.gitbook/assets/intellij\_container\_vulnerabilites.png)
+![Display more information for Snyk Container analysis](../../.gitbook/assets/intellij\_container\_vulnerabilites.png)
 
 ## How Snyk Container and Kubernetes integration works
 
@@ -178,7 +178,7 @@ For each image found, perform a test with the Snyk CLI.
 
 Snyk reports critical, high, medium and low severities. You can filter for the severity level you need by selecting the value from the dropdown as shown in the screenshot that follows. By default all levels are selected. You must select at least one.
 
-![Select severity level to report](../.gitbook/assets/filter-severity.png)
+![Select severity level to report](../../.gitbook/assets/filter-severity.png)
 
 ### Filter by issue type
 
@@ -192,7 +192,7 @@ Snyk reports the following types of issues:
 
 You can filter for each one of them by selecting the value from the dropdown as shown in the screenshot that follows. By default all issue types shown are selected.
 
-![Select issue type to support](../.gitbook/assets/JetBrains-filter-issue-type.png)
+![Select issue type to support](../../.gitbook/assets/JetBrains-filter-issue-type.png)
 
 ## Plugin configuration
 

@@ -1,7 +1,5 @@
 # Troubleshooting for the Eclipse plugin
 
-## Troubleshooting
-
 To determine where plugin logs are stored, navigate to **Preferences** > **Language Servers** > **Logs** and find the **Snyk Language Server** row in Eclipse. As it can be disabled, you may need to enable it to retrieve the logs. You will find the logs either in console or in the file based on the preference set.
 
 To see additional plugin error logs:
