@@ -1,15 +1,13 @@
 # Third party dependency scanning (SCA, Snyk Open Source)
 
-## Third party dependency scanning (SCA, Snyk Open Source)
-
-Starting version 2.0.0 and later, Snyk is introducing a deeper integration within Eclipse with the native flows of Eclipse (inline highlights, problems integrations, information about the issue on hover). The following shows all of these for a security vulnerability found in a third party dependency:
+In Eclipse plugin version 2.0.0 and later, Snyk is introducing a deeper integration with the native flows of Eclipse, inline highlights, problems integrations, and information about the issue on hover. The following shows all of these for a security vulnerability found in a third party dependency:
 
 1. The vulnerable package is highlighted (the red squiggly line) indicating there is a high severity security vulnerability in this package. You have all the information on hover; you can scroll, read, or click the links for even more information. Advice on what action to take and how is right there where the vulnerability is.
-2. You see the integration with the problems tab, which comes in handy if you use the problems tab to show only issues in the current file. Snyk also indicates the line where the issue is.
+2. You see the integration with the **Problems** tab, which comes in handy if you use the **Problems** tab to show only issues in the current file. Snyk also indicates the line where the issue is.
 3. You can see the gutter icons on the left, as well as the file map highlights (with colors matching the priorities) on the right.
 
 {% hint style="info" %}
-Currently the hover information is limited to JavaEditor and GenericEditor, which is the default editor for plugins like Wild Web Developer, etc.
+Currently the hover information is limited to JavaEditor and GenericEditor, which is the default editor for plugins like Wild Web Developer.
 {% endhint %}
 
 ![Third party dependency scanning results, problems tab](<../../.gitbook/assets/Screenshot 2022-05-13 at 13.01.53.png>)
@@ -18,7 +16,7 @@ Third party dependency scanning results are **also available in the already exis
 
 ![Third party dependency scanning results, results panel](<../../.gitbook/assets/Screenshot 2022-05-13 at 12.13.37.png>)
 
-### **Context menu**
+## **Context menu**
 
 Right click menu options include:
 
@@ -28,13 +26,13 @@ Right click menu options include:
 
 **Preferences**—Access and update Snyk Vuln Scanner preferences directly from the right click menu.
 
-### **Snyk View when collapsed**
+## **Snyk View when collapsed**
 
 **Title:** The name of the project.
 
 **Dependency:** A summary of vulnerabilities and the number of affected paths found for each project.
 
-### Snyk View when expanded
+## Snyk View when expanded
 
 **Title:** The full name of the vulnerability affecting your project, linked to a description and complete details of the vulnerability in the Snyk database, to assist you in resolving the issue.
 
@@ -52,13 +50,15 @@ An arrow appears on the row, grouping together all relevant details, similar to 
 Eclipse results arrow on row grouping details
 {% endembed %}
 
-**Dependency when your project is affected by an indirect vulnerability, collapsed mode:**
+## Examples in collapsed and expanded mode
+
+The following shows a **dependency in collapsed mode**, when your project is affected by an indirect vulnerability:
 
 {% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MdwVZ6HOZriajCf5nXH%2Fuploads%2Fgit-blob-85e429be9a965c2dc534817a648773176a724531%2Fuuid-c71f67d1-80a3-7485-b33b-e602a1a5050e-en.png?alt=media&token=99e95293-bb37-4fed-8388-d9cb56a73092" %}
 Collapsed mode, indirect vulnerability
 {% endembed %}
 
-**Example:**
+**Example**:
 
 Package X uses Package Y, which in turn uses Package Z.
 
@@ -66,9 +66,9 @@ Package Z contains a Cross-Site Scripting (XSS) vulnerability, indirectly affect
 
 The Dependency (the name of the package explicitly used in the code) is Package X; the Package field displays Package Z (the name of the package that actually contains the vulnerability).
 
-**Dependency when your project is affected by an indirect vulnerability, expanded mode:**
+The following shows **a dependency in expanded mode**, when your project is affected by an indirect vulnerability:
 
-Click the arrow on the row to expand and view the full path from the direct dependency to the vulnerable package.
+Click the arrow on the row **to expand and view** the full path from the direct dependency to the vulnerable package.
 
 {% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MdwVZ6HOZriajCf5nXH%2Fuploads%2Fgit-blob-992b169b89e7f3c45782fdeb47b205e3c0a95af8%2Fuuid-35658aaf-3359-80c2-c094-41a34c7863cc-en.png?alt=media&token=53c91ccc-f9bc-4ba7-a55f-8def3aa50d86" %}
 Expanded mode, indierct vulnerability
@@ -85,9 +85,9 @@ On the preceding screen the full path would appear as:
 
 **Fix:** The name of the package if any and the version that it can be upgraded to in order to resolve the issue.
 
-### My Snyk Results panel is not visible
+## My Snyk Results panel is not visible
 
-If you close the Snyk Results panel by accident, or for some reason you don't see it, here is how to enable it:
+If you close the Snyk Results panel by accident, or for some reason you do not see it, you can enable it as follows:
 
 Navigate to **Windows -> Show View -> Other...**
 
