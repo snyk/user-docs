@@ -8,4 +8,4 @@ To get you started with the SDK, you will learn how to:
 4. [Build a bundle containing your custom rules](bundling-rules.md) so that you can [use it with the Snyk CLI](../use-IaC-custom-rules-with-CLI/)
 5. [Push the bundle containing your custom rules to a container registry](pushing-a-bundle.md) so that you can [enforce its usage with the Snyk CLI](../use-IaC-custom-rules-with-CLI/#to-test-for-a-custom-issue-using-a-bundle-from-a-container-registry)
 
-![Development to Distribution Workflow](<../../../../.gitbook/assets/image (68) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (6).png>)
+![Development to Distribution Workflow](<../../../../.gitbook/assets/image (68) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
