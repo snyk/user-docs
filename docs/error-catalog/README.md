@@ -15,3 +15,4 @@
 |[SNYK-OSSI-2031](#snyk-ossi-2031)|Service down|Service is down|[500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)|N/A||    
 |[SNYK-OSSI-2032](#snyk-ossi-2032)|VulnDB error|Error querying VulnDB|[500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)|N/A||    
 |[SNYK-OSSI-2040](#snyk-ossi-2040)|Processing error|An error occurred processing the request|[500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)|N/A||    
+Genererated at 2022-07-28T14:53:28.159Z
