@@ -1,10 +1,10 @@
 # Configure integration for ACR
 
-Enable integration between an ACR registry and a Snyk organization, and start managing your vulnerabilities. To integrate with multiple registries, create a unique organization for each one.
+Enable integration between a Microsoft Azure Container Registry (ACR) registry and a Snyk organization, and start managing your vulnerabilities. To integrate with multiple registries, create a unique organization for each one.
 
 **Steps:**
 
-1. Access your ACR account and retrieve unique service principal credentials for use by Snyk with the AcrPull role. For help doing this, see the [ACR documentation](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-service-principal).
+1. Access your ACR account and retrieve unique service principal credentials for use by Snyk with the AcrPull role. For help doing this, see [Configure the ACR integration](../../../../more-info/getting-started/snyk-integrations/microsoft-azure/securing-acr/configure-the-acr-integration.md).
 2. Log in to your Snyk account.
 3. Navigate to **Integrations** from the menu bar at the top, find and click the **ACR** option.
 4. The ACR configuration page in the **Settings** area loads:

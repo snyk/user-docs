@@ -1,6 +1,6 @@
 # Add images to Snyk from ACR
 
-Snyk tests and monitors ACR container images by evaluating root folders and custom file locations.
+Snyk tests and monitors Microsoft Azure Container Registry (ACR) container images by evaluating root folders and custom file locations.
 
 **To add registry images to Snyk:**
 
