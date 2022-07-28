@@ -50,6 +50,8 @@ The results of the PR Checks appear on GitHub and GitHub Enterprise integrations
 
 * On the results area, click the **Details** link on the **code/snyk** **(organization name)** row.
 
+\*\*\*\*
+
 #### **GitLab**
 
 The results of the PR Checks appear on GitLab first as an indication of the Pipeline status:
