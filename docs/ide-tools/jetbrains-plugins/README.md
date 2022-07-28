@@ -49,26 +49,6 @@ Install using the IDE plugins library:
 
 ![Select the Snyk vulnerability scanning plugin](<../../.gitbook/assets/Screen Shot 2022-03-09 at 5.06.13 PM (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
 
-## Configuration
-
-### Environment
-
-To analyze projects, the plugin uses the Snyk CLI which needs the following environment variables depending on the type of project you analyze:
-
-* `PATH`: the path to needed binaries, for example, to maven
-* `JAVA_HOME`: the path to the JDK to use to analyze Java dependencies
-
-Setting these variables only in a shell environment (for example, using `~/.bashrc`) is not sufficient, if you do not start the JetBrains IDE from the command line or create a script file that starts it using a shell environment.
-
-* On **Windows**, you can set the variables, using the GUI or on the command line using the `setx` tool.
-* On **macOS**, the process `launchd` needs to know the environment variables if you want to launch the IDE from Finder directly. Set environment variables for applications launched using Finder by running the `launchctl setenv` command. You can do this start-up or by using a script you launch at user login.\
-  **Note:** The provision of environment variables to the macOS UI can change between operating system releases, so it can be easier to create a small shell script that launches the IDE to leverage the shell environment, that can be defined using`~/.bashrc`.
-* On **Linux**, updating the file `/etc/environment` can be used to propagate the environment variables to the windows manager and UI.
-
-### Proxy
-
-If you need to use a proxy server to connect to the internet, configure it using the [Jetbrains IDE settings](https://www.jetbrains.com/help/idea/settings-http-proxy.html). The Snyk plugin will use them.
-
 ## Authentication
 
 The first time the CLI is needed, the plugin automatically downloads it in the background. There are a few ways to authenticate once the plugin is installed.
@@ -193,27 +173,6 @@ Snyk reports the following types of issues:
 You can filter for each one of them by selecting the value from the dropdown as shown in the screenshot that follows. By default all issue types shown are selected.
 
 ![Select issue type to support](../../.gitbook/assets/JetBrains-filter-issue-type.png)
-
-## Plugin configuration
-
-After the plugin is installed, you can set the following configurations for the plugin, using **Preferences → Tools → Snyk**:
-
-* **Token**: the token that should be used for authentication with Snyk (can be generated through the Account Settings in the Snyk Web UI)
-* **Custom endpoint**: custom endpoint for the Snyk Web UI, if needed. Use this field for Single tenant setups as well instead of https://app.snyk.io.
-* **Ignore unknown CA**: for ignoring the SSL cert, if needed
-* **Organization**: the org to run Snyk test against (similar to the `--org=` option in the CLI).
-* **Additional parameters**: additional CLI snyk test options you want to use for the test for Open Source; additional parameters do not apply to Snyk Code or Iac.
-* **Snyk Open Source vulnerabilities**: analyze the project for open source vulnerabilities through the CLI using Snyk Open Source; enabled by default
-* **Snyk Infrastructure as Code issues**: analyze the project for insecure configurations in Terraform and Kubernetes code; enabled by default
-* **Snyk Container vulnerabilities**: analyze the project for container vulnerabilities in container images and Kubernetes applications; enabled by default
-* **Snyk Code Security issues**: analyze the project for security vulnerabilities in your application code using Snyk Code; enabled by default
-* **Snyk Code Quality issues**: analyze the project for quality issues in your application code using Snyk Code; disabled by default
-
-#### Organization setting
-
-This setting allows you to specify an organization slug name to run tests for that organization. The value must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.
-
-If not specified, preferred organization as defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
 
 ##
 

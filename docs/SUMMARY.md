@@ -95,7 +95,7 @@
     * [Third party dependency scanning (SCA, Snyk Open Source)](ide-tools/eclipse-plugin/third-party-dependency-scanning-sca-snyk-open-source.md)
     * [Troubleshooting for the Eclipse plugin](ide-tools/eclipse-plugin/troubleshooting-for-the-eclipse-plugin.md)
   * [JetBrains plugins](ide-tools/jetbrains-plugins/README.md)
-    * [Configuration for the JetBrains plugins](ide-tools/jetbrains-plugins/configuration-for-the-jetbrains-plugins.md)
+    * [Configuration, environment variables, and proxy for the JetBrains plugins](ide-tools/jetbrains-plugins/configuration-environment-variables-and-proxy-for-the-jetbrains-plugins.md)
     * [Authentication for the JetBrains plugins](ide-tools/jetbrains-plugins/authentication-for-the-jetbrains-plugins.md)
     * [Run an analysis with the JetBrains plugins](ide-tools/jetbrains-plugins/run-an-analysis-with-the-jetbrains-plugins.md)
     * [JetBrains analysis results: Open Source](ide-tools/jetbrains-plugins/jetbrains-analysis-results-open-source.md)
