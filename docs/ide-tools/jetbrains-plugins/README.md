@@ -51,16 +51,6 @@ Install using the IDE plugins library:
 
 ##
 
-## Analysis results: Snyk Container
-
-The plugin scans Kubernetes configuration files and searches for container images. Vulnerabilities are found fast using the extracted container images and comparative analysis against the latest information from the [Snyk Intel Vulnerability Database](https://security.snyk.io).
-
-Snyk Container analysis shows each of the security vulnerabilities to which your image might be vulnerable. For more detailed information select a vulnerability.
-
-A comparison table is displayed with various severity levels such as critical or high. This shows the difference in vulnerabilities between the current image and the image recommended by Snyk, with the same characteristics sorted by severity. This helps you decide if you want to upgrade your image to the recommended one and increase the level of confidence in the image you are running in production.
-
-![Display more information for Snyk Container analysis](../../.gitbook/assets/intellij\_container\_vulnerabilites.png)
-
 ## How Snyk Container and Kubernetes integration works
 
 The plugin scans your Kubernetes workload files and collects the images used. To troubleshoot whether a plugin is correctly scanning a container image, you can verify:
