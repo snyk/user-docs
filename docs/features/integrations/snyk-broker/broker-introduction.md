@@ -56,7 +56,7 @@ Snyk Broker currently integrates with these Git Repository systems:
 * [Bitbucket Server / Data Center](../git-repository-scm-integrations/bitbucket-data-center-server-integration.md) (On-prem)
 * [Azure Repos](https://docs.snyk.io/integrations/git-repository-scm-integrations/azure-repos-integration) (Cloud and On-prem)
 
-In addition, Snyk Broker integrates with [Jira Server/Jira Data Center](../notifications-ticketing-system-integrations/jira.md) and [JFrog Artifactory](../private-registry-integrations/artifactory-registry-setup.md).
+In addition, Snyk Broker integrates with [Jira Server/Jira Data Center](../notifications-ticketing-system-integrations/jira.md), [JFrog Artifactory](../private-registry-integrations/artifactory-registry-setup.md), and [Nexus Repository Manager](../../../integrations/private-registry-integrations/nexus-repo-manager-setup.md).
 
 With the Container Registry Agent, Snyk Broker also connects to all [Snyk supported Container Registries](snyk-broker-container-registry-agent/).
 
