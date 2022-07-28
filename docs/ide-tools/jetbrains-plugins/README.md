@@ -49,9 +49,45 @@ Install using the IDE plugins library:
 
 ![Select the Snyk vulnerability scanning plugin](<../../.gitbook/assets/Screen Shot 2022-03-09 at 5.06.13 PM (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
 
-##
+## Analysis results: Snyk Configuration
 
-##
+Snyk Configuration analysis shows issues in your Terraform, Kubernetes, AWS CloudFormation, and Azure Resource Manager (ARM) code with every scan. Based on the Snyk CLI, the scan is fast and friendly for local development. For more detailed information select an issue.
+
+![Display more information for Snyk Configuration analysis](../../.gitbook/assets/intellij\_iac\_issues.png)
+
+The Snyk plugin provides information so you can quickly understand and fix the underlying issue:
+
+* **Description:** what the misconfiguration is
+* **Impact:** how the misconfiguration could potentially be exploited
+* **Path:** which path in the tree the issue occurs
+* **Remediation:** how to fix the issue
+* **References:** where you can investigate deeper from a variety of sources
+* **Ignore:** a button to ignore the issue if applicable
+
+## Analysis results: Snyk Container
+
+The plugin scans Kubernetes configuration files and searches for container images. Vulnerabilities are found fast using the extracted container images and comparative analysis against the latest information from the [Snyk Intel Vulnerability Database](https://security.snyk.io).
+
+Snyk Container analysis shows each of the security vulnerabilities to which your image might be vulnerable. For more detailed information select a vulnerability.
+
+A comparison table is displayed with various severity levels such as critical or high. This shows the difference in vulnerabilities between the current image and the image recommended by Snyk, with the same characteristics sorted by severity. This helps you decide if you want to upgrade your image to the recommended one and increase the level of confidence in the image you are running in production.
+
+![Display more information for Snyk Container analysis](../../.gitbook/assets/intellij\_container\_vulnerabilites.png)
+
+## How Snyk Container and Kubernetes integration works
+
+The plugin scans your Kubernetes workload files and collects the images used. To troubleshoot whether a plugin is correctly scanning a container image, you can verify:
+
+* Whether the image definition is in the Kubernetes YAML file in the project. Make sure you have the image is specified with an image name mapped in the format `imageValue:imageKey` for the image yaml attribute, for example, \`image: nginx:1.17.1
+* Whether the container image has been successfully built locally and/or pushed to a container registry. It is also a good practice to verify this before referring to the container image in the Kubernetes YAML file.
+
+If you encounter an error [contact support](https://snyk.zendesk.com/agent/dashboard).
+
+For each image found, perform a test with the Snyk CLI.
+
+* Refer to the [doc](https://docs.snyk.io/products/snyk-container/snyk-cli-for-container-security#testing-an-image) for more information about how Snyk Container performs a test on the image.
+* While testing the image the CLI downloads the image if it is not already available locally in your Docker daemon.
+* Snyk plans to expand the scope of Container scanning, so if there are more files (like Dockerfiles) or workflows that you want to be supported, submit a feature request [to Snyk support](https://support.snyk.io/hc/en-us/requests/new).
 
 ## Filter results
 
