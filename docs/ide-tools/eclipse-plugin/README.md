@@ -90,6 +90,8 @@ Once Eclipse is restarted, navigate to **Eclipse Preferences** to ensure that **
 
 ![Eclipse preferences showing Snyk.](<../../.gitbook/assets/Screenshot 2022-05-17 at 16.36.07.png>)
 
+When you open the preferences you can opt out of downloading the CLI through the plugin and thus use your own installation of the CLI.
+
 Continue with the steps to [Download the CLI and language server with the Eclipse plugin](https://docs.snyk.io/ide-tools/eclipse-plugin/download-the-cli-and-language-server-with-the-eclipse-plugin).
 
 ## Support and feedback
