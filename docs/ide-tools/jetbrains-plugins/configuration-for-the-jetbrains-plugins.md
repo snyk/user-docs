@@ -2,7 +2,9 @@
 
 ## JetBrains plugin configuration
 
-After the plugin is installed, you can set the following configurations for the plugin, using **Preferences → Tools → Snyk**:
+After the plugin is installed, you can opt out of downloading the CLI through the plugin and thus use your own installation of the CLI.
+
+You can set the following configurations for the plugin, using **Preferences → Tools → Snyk**:
 
 * **Token**: set the token that should be used for authentication with Snyk (can be generated through the Account Settings in the Snyk Web UI).
 * **Custom endpoint**: set the custom endpoint for the Snyk Web UI, if needed. Use this field for single tenant setups as well instead of https://app.snyk.io.
