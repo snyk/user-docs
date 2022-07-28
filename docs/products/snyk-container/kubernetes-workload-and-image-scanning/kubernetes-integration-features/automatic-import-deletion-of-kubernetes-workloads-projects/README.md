@@ -32,7 +32,7 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
 Note that _**policyOrgs**_ is a list of organization public IDs. You can add more than one organization to use the auto-import and auto-delete capabilities. You can locate this public ID under your organization's settings page.
 
 {% hint style="info" %}
-Only Snyk organizations that share the same Kubernetes integration ID can provision the Snyk controller to do so. More information on how to share the same integration ID can be found in [Clone an integration across your Snyk orgs](../../../../../integrations/managing-integrations/clone-an-integration-across-your-snyk-orgs.md).
+Only Snyk organizations that share the same Kubernetes integration ID can provision the Snyk controller to do so. More information on how to share the same integration ID can be found in [Clone an integration across your Snyk orgs](../../../../../features/integrations/managing-integrations/clone-an-integration-across-your-snyk-orgs.md).
 {% endhint %}
 
 ## Annotated Import

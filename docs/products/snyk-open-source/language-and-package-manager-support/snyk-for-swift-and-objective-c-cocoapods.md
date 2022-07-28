@@ -1,6 +1,6 @@
 # Snyk for Swift and Objective-C (CocoaPods)
 
-Snyk offers security scanning to test your projects for vulnerabilities, both through the [Snyk CLI ](../../../snyk-cli/)and from the Snyk Web UI through different [Snyk Integrations](../../../integrations/).
+Snyk offers security scanning to test your projects for vulnerabilities, both through the [Snyk CLI ](../../../snyk-cli/)and from the Snyk Web UI through different [Snyk Integrations](../../../features/integrations/).
 
 The following describes how to use Snyk to scan your CocoaPods projects:
 
@@ -35,7 +35,7 @@ We scan CocoaPods projects and examine your Podfile and Podfile.lock files. We t
 
 * Ensure you've installed the relevant package manager before you begin using the Snyk CLI tool.
 * Ensure you've included the relevant manifest files supported by Snyk before testing.
-* Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about Snyk CLI in [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli.md) as well.
+* Install and authenticate the Snyk CLI to start analyzing projects from your local environment. Read more about Snyk CLI in [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli/) as well.
 
 #### **Parameters**
 

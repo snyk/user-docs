@@ -7,7 +7,7 @@ Audit logs are available with Business and Enterprise plans. See [pricing plans]
 
 ### Introduction
 
-Snyk has [Audit logs endpoints](https://snyk.docs.apiary.io/#reference/audit-logs) that enable you to retrieve information from your audit logs using the [Snyk API](../../../snyk-api-info/).&#x20;
+Snyk has [Audit logs endpoints](https://snyk.docs.apiary.io/#reference/audit-logs) that enable you to retrieve information from your audit logs using the [Snyk API](../../snyk-api-info/).&#x20;
 
 For example, you can help retroactively triage any unexpected activity, find out when a new user is added, or monitor changes in a user's role to get early warning of any unusual behavior.
 

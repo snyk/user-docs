@@ -14,7 +14,7 @@ Once the CLI is downloaded you will be redirected to the browser to authenticate
 
 * You should see a successful message saying you've been authenticated.
 
-![Confirmation of authentication](<../../.gitbook/assets/Screenshot 2022-05-13 at 11.30.30.png>)
+![Confirmation of authentication](<../../.gitbook/assets/Screenshot 2022-05-13 at 11.30.30 (1).png>)
 
 * Going back to the IDE, you should see a confirmation that the IDE has been successfully connected and the API token has been securely stored (lower right).
 

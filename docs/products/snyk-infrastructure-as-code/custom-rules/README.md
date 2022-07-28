@@ -19,11 +19,11 @@ Initial instructions to get you started with the Snyk Infrastructure as Code (Ia
 
 * [Install the SDK](install-the-sdk.md)
 * [Getting started with the SDK](getting-started-with-the-sdk/)
-* [How to run custom rules with the Snyk CLI](use-iac-custom-rules-with-cli/)
+* [How to run custom rules with the Snyk CLI](use-IaC-custom-rules-with-CLI/)
 * [How to integrate custom rules within a pipeline](integrating-iac-custom-rules-within-a-pipeline.md)
 * [SDK reference](sdk-reference.md)
 
-![End to end flow of writing your own custom rules to distributing and using them to scan files with the Snyk CLI](<../../../.gitbook/assets/image (206).png>)
+![End to end flow of writing your own custom rules to distributing and using them to scan files with the Snyk CLI](<../../../.gitbook/assets/image (77) (1) (1) (1) (1).png>)
 
 #### Snyk platform policies and Snyk IaC custom rules
 

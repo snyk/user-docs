@@ -62,7 +62,7 @@ To test the **snyk-goof** repository from another directory, we enter:
 snyk code test /Users/username/Documents/Repositories/snyk-goof
 ```
 
-![ ](<../../../.gitbook/assets/snyk Code - CLI - snyk code test - Any folder - 2.png>)
+![ ](<../../../.gitbook/assets/snyk Code - CLI - snyk code test - Any folder - 2 (1).png>)
 
 * To explore the test results, see [Understanding the Snyk Code CLI results](https://docs.snyk.io/products/snyk-code/cli-for-snyk-code/snyk-code-cli-results).
 * To work with the test results, see:

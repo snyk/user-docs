@@ -34,7 +34,7 @@ The **Mark as successful** action does NOT ignore the issue, but only allows it 
 
 1\. On the **SAST check** page header, click the **Mark as successful in SCM** button on the right:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful.png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful (1).png>)
 
 2\. On the confirmation message that appears, click **OK**:
 
@@ -48,7 +48,7 @@ A message appears on the **SAST check** page header, informing you that the fail
 
 On your SCM, the previous PR Check “**failed**” message is now changed to “**passed**”. In addition, there is an indication that the PR check was **Skipped**, and that a specific Snyk user forced this result change:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Mark as successful - On GitHub.png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Mark as successful - On GitHub (1).png>)
 
 ### Returning to your SCM
 

@@ -48,6 +48,6 @@ For more details on installing `sbt-dependency-graph` for use with the Snyk CLI,
 
 ## Git services for Scala projects
 
-Scala `sbt` projects can be imported from any of the Git repositories Snyk [supports](../../../integrations/git-repository-scm-integrations/).
+Scala `sbt` projects can be imported from any of the Git repositories Snyk [supports](../../../features/integrations/git-repository-scm-integrations/).
 
 To test your Scala projects using `sbt` as a package manager, Snyk analyzes your `build.sbt` file, and so you must have this file in your repository before importing.

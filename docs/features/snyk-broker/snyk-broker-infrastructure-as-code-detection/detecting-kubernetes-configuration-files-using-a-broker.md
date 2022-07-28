@@ -1,6 +1,6 @@
 # Detecting Kubernetes configuration files using a broker
 
-If you are using a privately hosted Git repository, Snyk Broker can connect it with Snyk products. See the [broker documentation](../broker-introduction.md) for details.
+If you are using a privately hosted Git repository, Snyk Broker can connect it with Snyk products. See the [broker documentation](../../integrations/snyk-broker/broker-introduction.md) for details.
 
 This document describes the additional configuration required for Infrastructure as Code files.
 

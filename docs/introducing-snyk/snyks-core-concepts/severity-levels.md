@@ -34,7 +34,7 @@ Severity levels may not always align to CVSS scores. For example, Snyk Container
 
 Severity levels are one factor feeding into Snyk's Priority Score for each vulnerability, along with factors such as [Snyk’s Exploit Maturity](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/) and [Reachable Vulnerabilities](https://snyk.io/blog/optimizing-prioritization-with-deep-application-level-context/) information. Together, this scoring helps developers determine which vulnerabilities should be addressed first.
 
-See [Snyk Priority Score](../../features/fixing-and-prioritizing-issues/issue-management/snyk-priority-score.md) for details of how severity levels are used in Snyk's priority scores.
+See [Snyk Priority Score](../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score.md) for details of how severity levels are used in Snyk's priority scores.
 
 ## Viewing severity levels in Snyk
 
@@ -42,11 +42,11 @@ Severity levels are displayed throughout Snyk, to show this information at all t
 
 For example, in the initial dashboard:
 
-![](<../../.gitbook/assets/image (46) (1).png>)
+![](<../../.gitbook/assets/image (46).png>)
 
 For your projects:
 
-![](<../../.gitbook/assets/image (43) (1).png>)
+![](<../../.gitbook/assets/image (43).png>)
 
 And for each vulnerability in a project:
 

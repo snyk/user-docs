@@ -23,4 +23,4 @@ Scanning CloudFormation provides security feedback on everything that is statica
    1. **Note**: Integrations are managed per organization.
 2. If needed, review and adjust settings in the **Infrastructure as code** settings area:
 
-![](<../../../.gitbook/assets/image (43).png>)
+![](<../../../.gitbook/assets/image (107) (1).png>)

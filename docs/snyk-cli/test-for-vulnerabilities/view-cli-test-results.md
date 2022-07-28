@@ -10,7 +10,7 @@ Depending on the language of the project you have tested you may also see fix ad
 
 For more information see:\
 [Snyk CLI](../)\
-[Getting started with the CLI](../getting-started-with-the-cli.md)\
+[Getting started with the CLI](../getting-started-with-the-cli/)\
 [Snyk Code CLI results](../../products/snyk-code/cli-for-snyk-code/snyk-code-cli-results.md)\
 [Understanding Snyk Container CLI test results](../../products/snyk-container/snyk-cli-for-container-security/understanding-snyk-container-cli-results.md)\
 [Understanding the IaC CLI test output](../../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-the-cli-test-output/)

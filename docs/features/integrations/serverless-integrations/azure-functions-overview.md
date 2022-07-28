@@ -65,11 +65,11 @@ At any time after you've entered your Azure service principal, you can check on 
 
 The first is on your integration settings page, where you'll see your current integrations listed as well as their connection status.
 
-![](<../../../.gitbook/assets/image (25).png>)
+![](<../../../.gitbook/assets/image (25) (1).png>)
 
 You can also check the status directly on the Azure Functions integration settings page (found by clicking "**Edit settings**" on the integration settings page shown above). If you've entered credentials, you'll see a box indicating whether or not Snyk is able to correctly connect to Azure:
 
-![](<../../../.gitbook/assets/image (31).png>)
+![](<../../../.gitbook/assets/image (31) (1).png>)
 
 If you are unable to connect, re-enter your account credentials to verify that they are correct:
 

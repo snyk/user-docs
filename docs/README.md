@@ -2,9 +2,9 @@
 
 ### Understand Snyk
 
-|                                                                                                                                                  |                                                                                                                                             |
-| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p><strong></strong><a href="introducing-snyk/"><strong>Introducing Snyk</strong></a><br>Understand Snyk functions, scope and core concepts.</p> | <p><strong></strong><a href="getting-started/"><strong>Getting started</strong></a><br>Start running Snyk products in your environment.</p> |
+|                                                                                                                                                  |                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p><strong></strong><a href="introducing-snyk/"><strong>Introducing Snyk</strong></a><br>Understand Snyk functions, scope and core concepts.</p> | <p><strong></strong><a href="getting-started.md"><strong>Getting started</strong></a><br>Start running Snyk products in your environment.</p> |
 
 ### Explore Snyk products
 
@@ -18,7 +18,7 @@
 |                                                                                                                                                                |                                                                                                                                                                 |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <p><strong></strong><a href="snyk-web-ui/"><strong>Snyk Web UI</strong></a><br>Access browser-based scanning functions, view results and show reports.</p>     | <p><strong></strong><a href="snyk-cli/"><strong>Snyk CLI</strong></a><br>Run local scans of applications, containers, and IaC for security vulnerabilities.</p> |
-| <p><strong></strong><a href="ide-tools/"><strong>Snyk IDEs</strong></a><br>Use the functionality of Snyk, all in your standard IDEs such as Visual Studio.</p> | <p><strong></strong><a href="snyk-api-info/"><strong>Snyk API</strong></a><br>Tune Snyk’s security automation to your specific workflows.</p>                   |
+| <p><strong></strong><a href="ide-tools/"><strong>Snyk IDEs</strong></a><br>Use the functionality of Snyk, all in your standard IDEs such as Visual Studio.</p> | <p><strong></strong><a href="features/snyk-api-info/"><strong>Snyk API</strong></a><br>Tune Snyk’s security automation to your specific workflows.</p>          |
 
 ### Use other resources
 

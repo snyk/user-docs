@@ -6,16 +6,16 @@ Get started with Snyk Open Source to inspect, find and fix vulnerabilities in yo
 This process describes getting started using the Snyk Web UI and a SCM (source code management) system.
 
 * You can also use an [IDE tool](https://docs.snyk.io/integrations/ide-tools) or a [CI/CD integration](https://docs.snyk.io/integrations/ci-cd-integrations). See [Integrations](https://docs.snyk.io/integrations).
-* You can get started with the [snyk-cli](../../snyk-cli/ "mention"); see [getting-started-with-the-cli.md](../../snyk-cli/getting-started-with-the-cli.md "mention").
+* You can get started with the [snyk-cli](../../snyk-cli/ "mention"); see [getting-started-with-the-cli](../../snyk-cli/getting-started-with-the-cli/ "mention").
 {% endhint %}
 
 ### **Prerequisites**
 
 Ensure you have:
 
-* A code project using open source packages, on a supported SCM system such as GitHub. See [git-repository-scm-integrations](../../integrations/git-repository-scm-integrations/ "mention").
+* A code project using open source packages, on a supported SCM system such as GitHub. See [git-repository-scm-integrations](../../features/integrations/git-repository-scm-integrations/ "mention").
 * A supported language and package manager, such as Java. See [language-and-package-manager-support](language-and-package-manager-support/ "mention").
-* A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [getting-started](../../getting-started/ "mention")).
+* A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [getting-started.md](../../getting-started.md "mention")).
 
 ### Stage 1: Add source control integration
 
@@ -34,9 +34,9 @@ Choose a source code integration, to allow Snyk to work on a project.
 
 Add projects to test with Snyk, by choosing repositories for Snyk to test and monitor.
 
-In the Snyk Web UI, first select **Projects** from the Snyk Web UI, then click **Add Project**, selecting where to add the project repos from (for example GitHub).
+In the Snyk Web UI, first select **Projects** from the Snyk Web UI, then click **Add Project**, selecting where to add the project repositories from (for example GitHub).
 
-#### Add a repo
+#### Add a repository
 
 Select the repositories to use, then click **Add selected repositories** to import the selected repositories into your projects:
 

@@ -1,6 +1,6 @@
 # Snyk for Java and Kotlin
 
-Snyk offers security scanning to test your projects for vulnerabilities, both through both through the [Snyk CLI ](../../../snyk-cli/)and from the Snyk Web UI through different [Snyk Integrations](../../../integrations/).
+Snyk offers security scanning to test your projects for vulnerabilities, both through both through the [Snyk CLI ](../../../snyk-cli/)and from the Snyk Web UI through different [Snyk Integrations](../../../features/integrations/).
 
 ## Features
 
@@ -66,7 +66,7 @@ This section describes the unique CLI commands available when working with Java-
 
 * Install the relevant package manager before you use the Snyk CLI tool.
 * Include the relevant manifest files supported by Snyk before testing.
-* Install and authenticate the Snyk CLI to start analyzing projects from your local environment. See [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli.md).
+* Install and authenticate the Snyk CLI to start analyzing projects from your local environment. See [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli/).
 
 ### Snyk CLI parameters
 
@@ -244,14 +244,14 @@ From the Snyk UI you can specify mirrors or repositories from which you’d like
 
 See the page below for more details on configuring the Artifactory integration.
 
-{% content-ref url="../../../integrations/private-registry-integrations/artifactory-registry-for-maven.md" %}
-[artifactory-registry-for-maven.md](../../../integrations/private-registry-integrations/artifactory-registry-for-maven.md)
+{% content-ref url="../../../features/integrations/private-registry-integrations/artifactory-registry-for-maven.md" %}
+[artifactory-registry-for-maven.md](../../../features/integrations/private-registry-integrations/artifactory-registry-for-maven.md)
 {% endcontent-ref %}
 
 ## Additional Snyk support for Java
 
 In addition to the CLI and Snyk UI features, you can also check your Java projects with these integrations.
 
-{% content-ref url="../../../integrations/ci-cd-integrations/maven-plugin-integration.md" %}
-[maven-plugin-integration.md](../../../integrations/ci-cd-integrations/maven-plugin-integration.md)
+{% content-ref url="../../../features/integrations/ci-cd-integrations/maven-plugin-integration.md" %}
+[maven-plugin-integration.md](../../../features/integrations/ci-cd-integrations/maven-plugin-integration.md)
 {% endcontent-ref %}
