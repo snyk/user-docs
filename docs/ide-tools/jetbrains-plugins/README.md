@@ -49,20 +49,7 @@ Install using the IDE plugins library:
 
 ![Select the Snyk vulnerability scanning plugin](<../../.gitbook/assets/Screen Shot 2022-03-09 at 5.06.13 PM (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
 
-## Analysis results: Snyk Configuration
-
-Snyk Configuration analysis shows issues in your Terraform, Kubernetes, AWS CloudFormation, and Azure Resource Manager (ARM) code with every scan. Based on the Snyk CLI, the scan is fast and friendly for local development. For more detailed information select an issue.
-
-![Display more information for Snyk Configuration analysis](../../.gitbook/assets/intellij\_iac\_issues.png)
-
-The Snyk plugin provides information so you can quickly understand and fix the underlying issue:
-
-* **Description:** what the misconfiguration is
-* **Impact:** how the misconfiguration could potentially be exploited
-* **Path:** which path in the tree the issue occurs
-* **Remediation:** how to fix the issue
-* **References:** where you can investigate deeper from a variety of sources
-* **Ignore:** a button to ignore the issue if applicable
+##
 
 ## Analysis results: Snyk Container
 
