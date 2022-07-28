@@ -2,53 +2,53 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.\
-For availability of this feature for Snyk Infrastructure as Code, see [jira-integration.md](../../../products/snyk-infrastructure-as-code/jira-integration.md "mention").
+\- This feature is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.\
+\- For the availability of this feature for Snyk Infrastructure as Code, see [Jira Integration for IaC](../../../products/snyk-infrastructure-as-code/jira-integration.md).&#x20;
 {% endhint %}
 
 ## **Set up your Jira integration**
 
-Our Jira integration allows you to manually raise Jira issues in the Snyk UI for vulnerabilities or license issues, and also includes an API ([see our API docs](https://snyk.docs.apiary.io/#reference/projects/project-jira-issues)).
+Snyk Jira integration allows you to manually raise Jira issues in the Snyk UI for vulnerabilities or license issues. The Jira integration also includes APIs ([see Snyk API docs](https://snyk.docs.apiary.io/#reference/projects/project-jira-issues)).
 
 {% hint style="info" %}
-**Caution**\
-if your Jira instance is private, you'll need to set up with Snyk Broker and then follow our brokered Jira setup instructions.
+If your Jira instance is private, you will need to use it via [the Snyk Broker deployment method](../../snyk-broker/snyk-broker-set-up-examples/setup-broker-with-jira.md).
 {% endhint %}
 
 ## **Prerequisites**
 
-Snyk requires Jira version 5 or above.\
-["Browse Projects" and "Create Issues"](https://community.atlassian.com/t5/Answers-Developer-Questions/Projects-are-not-being-returned-by-a-REST-API-call-to-createmeta/qaq-p/522042#M59700) permissions are needed.
+* Snyk supports Jira version 5 and later versions.
+* The following [Jira permissions](https://confluence.atlassian.com/adminjiraserver073/managing-project-permissions-861253293.html) are required: "**Browse Projects**" and "**Create Issues**".
 
 ## **How to set up your Jira integration**
 
-Jira account credentials are configured in **Organization Settings > Integrations**. Best practice suggests setting up a new user in Jira for this, rather than using an existing account's credentials.&#x20;
+The Jira account credentials are configured in the Snyk Web UI - **Organization Settings > Integrations** page.&#x20;
 
-Cloud-hosted Jira implementations require a username and API token authentication. Jira API tokens are generated in [Atlassian API tokens](https://id.atlassian.com/manage/api-tokens). Self-hosted implementations are able to authenticate with a username and password.&#x20;
+It is best practice to set up a new user in Jira for this integration, instead of using the credentials of an existing account.
+
+Cloud-hosted Jira implementations require a username and API token authentication. Jira API tokens are generated in [Atlassian API tokens](https://id.atlassian.com/manage/api-tokens). Self-hosted implementations are able to authenticate with a username and password.
 
 ## **Create a Jira issue**
 
-Once you’ve set up the connection, visit one of your Snyk projects. You’ll now see a new button at the bottom of each vulnerability and license issue card that allows you to create a Jira issue.
+Once you set up the Jira integration connection, open one of your Snyk Projects in the Snyk Web UI. A new button, **Create an issue**, now appears at the bottom of each vulnerability and license issue card. This button allows you to create a Jira issue.
 
-![](../../../.gitbook/assets/uuid-07abf9db-45cb-cdcd-537b-328a0c4b891e-en.png)
+![](<../../../.gitbook/assets/Jira - new button.png>)
 
-When you click on this, a Jira issue creation form will appear with the Snyk issue details copied across into the relevant fields. You can review and edit this before creating the issue.
+When you click the **Create an issue** button, a Jira issue creation form appear. This form includes the Snyk issue details, which are copied into the relevant fields. You can review and edit this form before creating the issue.
 
-Select which Jira project you’d like to send the issue to. The fields that we display below are based on the fields that the project has, so switching between projects may show different options.
+Select to which Jira project you want to send the issue. The fields in the example below are based on the fields that the specific project has, so switching between projects may show different options.
 
-**Note**\
-Snyk currently supports non-Epic Jira ticket creation. Epics will need to be added manually to the ticket once it has been created.
+**Note:**  Snyk currently only supports non-Epic Jira ticket creation. Epics will need to be added manually to the ticket after its creation.
 
 ![](../../../.gitbook/assets/uuid-67202f8e-7f70-1e84-6044-f65ec36138b3-en.png)
 
-Once you’ve created a Jira issue, the Jira key with a link will display on the issue card. If you’re using the Jira API, you can generate multiple Jira issues for the same issue in Snyk.
+After you created a Jira issue, the Jira key with a link are displayed on the issue card. If you are using the Jira API, you can generate multiple Jira issues for the same issue in Snyk.
 
-![](../../../.gitbook/assets/uuid-5283ddbe-913b-1aa1-ec74-e384b0e2929b-en.png)
+![](<../../../.gitbook/assets/Jira - Button with a link.png>)
 
-You can also see which Jira issues have been created from the Issues view in your reports.
+You can also see which Jira issues have been created on the **Issues** view in your Reports.
 
-![](../../../.gitbook/assets/uuid-cd4e8cae-2528-a922-5a03-5f23c42d4ac2-en.png)
+![](<../../../.gitbook/assets/Jira - Isuues in Report.png>)
 
-## See also:
+### See also:
 
-[Enable permissions for Snyk Broker from your third-party tool](https://docs.snyk.io/integrations/snyk-broker/enable-permissions-for-snyk-broker-from-your-third-party-tool)
+[Setup Broker with Jira](../../snyk-broker/snyk-broker-set-up-examples/setup-broker-with-jira.md)
