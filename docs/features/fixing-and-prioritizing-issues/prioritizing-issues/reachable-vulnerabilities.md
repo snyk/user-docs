@@ -50,7 +50,7 @@ After running `snyk monitor` in the CLI, or importing a project via Snyk UI, the
 
 ![Reachability Call Path](<../../../.gitbook/assets/image (70) (2).png>)
 
-![Priorty Score](<../../../.gitbook/assets/image (81) (2).png>)
+![Priorty Score](<../../../.gitbook/assets/image (144).png>)
 
 ### Reports
 

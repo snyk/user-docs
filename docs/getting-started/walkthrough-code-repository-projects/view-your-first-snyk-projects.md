@@ -86,7 +86,7 @@ For example, you can use Project settings to change scan frequency, setting how 
 
 Let’s go back to the results for your scan:
 
-![](<../../.gitbook/assets/image (126).png>)
+![](<../../.gitbook/assets/image (89).png>)
 
 The scan shows you all vulnerabilities in all aspects of an application. Of course, it's unlikely that you are responsible for every entry in this list, but it's important to be aware of the full picture.
 

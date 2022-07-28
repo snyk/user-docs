@@ -20,7 +20,7 @@ After the Automatic PR Check discovers security issues in a PR, you can view the
 
 The full details of the discovered issue are displayed:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Full details button - Results (1).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Full details button - Results.png>)
 
 ### Marking failed PR checks as successful <a href="#_ref105582006" id="_ref105582006"></a>
 
@@ -28,19 +28,17 @@ If you want to merge PRs that have security issues, and therefore were failed by
 
 The **Mark as successful** action does NOT ignore the issue, but only allows it to pass in the current PR branch. If this issue will not be fixed, it will show up again in future commits and in the repository tests, once it will be merged into the target branch.
 
-**Note:** The **Mark as successful** option is not supported in Bitbucket Cloud integration.
+**Note:** The **Mark as successful** option is not supported in Bitbucket Server integration.
 
 **To mark failed PR checks as successful:**
 
 1\. On the **SAST check** page header, click the **Mark as successful in SCM** button on the right:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful (1).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful (1) (1).png>)
 
 2\. On the confirmation message that appears, click **OK**:
 
-!\[Graphical user interface, text, application, email
-
-Description automatically generated]\(<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful - message (1) (1) (1) (1) (1) (2).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful - message (2).png>)
 
 A message appears on the **SAST check** page header, informing you that the failed PRs are now marked as successful:
 
@@ -48,7 +46,7 @@ A message appears on the **SAST check** page header, informing you that the fail
 
 On your SCM, the previous PR Check “**failed**” message is now changed to “**passed**”. In addition, there is an indication that the PR check was **Skipped**, and that a specific Snyk user forced this result change:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Mark as successful - On GitHub (1).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Mark as successful - On GitHub.png>)
 
 ### Returning to your SCM
 
