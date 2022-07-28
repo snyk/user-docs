@@ -98,7 +98,7 @@
     * [Configuration, environment variables, and proxy for the JetBrains plugins](ide-tools/jetbrains-plugins/configuration-for-the-jetbrains-plugins.md)
     * [Authentication for the JetBrains plugins](ide-tools/jetbrains-plugins/authentication-for-the-jetbrains-plugins.md)
     * [Run an analysis with the JetBrains plugins](ide-tools/jetbrains-plugins/run-an-analysis-with-the-jetbrains-plugins.md)
-    * [JetBrains analysis results: Open Source](ide-tools/jetbrains-plugins/jetbrains-analysis-results-open-source.md)
+    * [JetBrains analysis results: Snyk Open Source](ide-tools/jetbrains-plugins/jetbrains-analysis-results-snyk-open-source.md)
     * [JetBrains analysis results: Snyk Code](ide-tools/jetbrains-plugins/jetbrains-analysis-results-snyk-code.md)
     * [JetBrains analysis results: Snyk IaC Configuration](ide-tools/jetbrains-plugins/jetbrains-analysis-results-snyk-iac-configuration.md)
     * [JetBrains analysis results: Snyk Container](ide-tools/jetbrains-plugins/jetbrains-analysis-results-snyk-container.md)
