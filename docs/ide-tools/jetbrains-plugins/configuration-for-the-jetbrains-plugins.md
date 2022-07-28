@@ -31,7 +31,7 @@ Setting these variables only in a shell environment (for example, using `~/.bash
   **Note:** The provision of environment variables to the macOS UI can change between operating system releases, so it can be easier to create a small shell script that launches the IDE to leverage the shell environment, that can be defined using`~/.bashrc`.
 * On **Linux**, updating the file `/etc/environment` can be used to propagate the environment variables to the windows manager and UI.
 
-### Proxy
+## Proxy
 
 If you need to use a proxy server to connect to the internet, configure it using the [Jetbrains IDE settings](https://www.jetbrains.com/help/idea/settings-http-proxy.html). The Snyk plugin will use them.
 
