@@ -51,20 +51,7 @@ Install using the IDE plugins library:
 
 ##
 
-## How Snyk Container and Kubernetes integration works
-
-The plugin scans your Kubernetes workload files and collects the images used. To troubleshoot whether a plugin is correctly scanning a container image, you can verify:
-
-* Whether the image definition is in the Kubernetes YAML file in the project. Make sure you have the image is specified with an image name mapped in the format `imageValue:imageKey` for the image yaml attribute, for example, \`image: nginx:1.17.1
-* Whether the container image has been successfully built locally and/or pushed to a container registry. It is also a good practice to verify this before referring to the container image in the Kubernetes YAML file.
-
-If you encounter an error [contact support](https://snyk.zendesk.com/agent/dashboard).
-
-For each image found, perform a test with the Snyk CLI.
-
-* Refer to the [doc](https://docs.snyk.io/products/snyk-container/snyk-cli-for-container-security#testing-an-image) for more information about how Snyk Container performs a test on the image.
-* While testing the image the CLI downloads the image if it is not already available locally in your Docker daemon.
-* Snyk plans to expand the scope of Container scanning, so if there are more files (like Dockerfiles) or workflows that you want to be supported, submit a feature request [to Snyk support](https://support.snyk.io/hc/en-us/requests/new).
+##
 
 ## Filter results
 
