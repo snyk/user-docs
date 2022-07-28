@@ -1,6 +1,6 @@
 # Authentication for the JetBrains plugins
 
-The first time the Snyk CLI is needed, the plugin automatically downloads it in the background. There are a few ways to authenticate once the plugin is installed.
+The first time you start a scan, the plugin automatically downloads the CLI in the background unless you have opted not to download automatically. To use the CLI you must authenticate. There are a few ways to authenticate once the plugin is installed.
 
 After the CLI is installed, you are prompted to authenticate and connect the JetBrains plugin to Snyk.
 
@@ -26,7 +26,7 @@ The analysis starts automatically:
 
 ## Add token manually
 
-1. Get the token here: [https://app.snyk.io/account](https://app.snyk.io/account)
+1. Get your API token from your Snyk account: [https://app.snyk.io/account](https://app.snyk.io/account)
 2. In the JetBrains plugin navigate to **Preferences** > **Tools** > **Snyk**.
 3. Paste or enter the token under **Connect IDE to Snyk**.
 4. Click **Apply** or **OK**.
