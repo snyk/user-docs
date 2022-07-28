@@ -10,11 +10,11 @@ From the **Projects** page, if the project is imported from a registry integrati
 
 You can filter for all container projects, similar to the following example:
 
-![](<../../../.gitbook/assets/image (69) (2).png>)
+![](<../../../.gitbook/assets/image (53).png>)
 
 When you open any container project, the resulting analysis and fix advice appears in the Snyk Web UI:
 
-![](<../../../.gitbook/assets/image (76) (1).png>)
+![](<../../../.gitbook/assets/image (122).png>)
 
 The following information is displayed:
 
@@ -24,7 +24,7 @@ The following information is displayed:
   * Base Image
   * Total dependencies with known vulnerabilities, and the total number of vulnerabilities
 * Fix advice—if you included your Dockerfile for monitoring, then any available actionable fix advice is displayed. To view all advice, click the **Show more upgrade types** link. The advice offered is dependent on available fixes, and appears similar to the following image:\
-  ![](<../../../.gitbook/assets/image (73) (1) (2) (1) (1) (1) (1).png>)
+  ![](<../../../.gitbook/assets/image (51).png>)
 * Upgrade suggestions can include:
   * Minor upgrades—the safest and best minor upgrade available
   * Major upgrades—an option for a major upgrade which will reduce more vulnerabilities but with greater risk
@@ -41,7 +41,7 @@ The following information is displayed:
 
 
 
-![](<../../../.gitbook/assets/image (71) (1).png>)
+![](<../../../.gitbook/assets/image (107).png>)
 
 {% hint style="info" %}
 **Note**\

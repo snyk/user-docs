@@ -26,7 +26,7 @@ We do not support insecure registries. The only protocol we support is HTTPS.
 
 And more to come.
 
-Once you have run the command, your custom rules bundle will be pushed to your OCI registry using the `latest` tag.&#x20;
+Once you have run the command, your custom rules bundle will be pushed to your OCI registry using the `latest` tag.
 
 You can also provide your own tag if you want to version the bundle:
 
@@ -34,4 +34,4 @@ You can also provide your own tag if you want to version the bundle:
 snyk-iac-rules push -r docker.io/example/test:v0.0.1 bundle.tar.gz
 ```
 
-&#x20;You can now [run snyk iac test with your newly built custom bundle. ](../use-IaC-custom-rules-with-CLI/)
+You can now [run snyk iac test with your newly built custom bundle.](../use-iac-custom-rules-with-cli/)

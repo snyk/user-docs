@@ -6,7 +6,7 @@ Once you are ready, you can build a custom rules bundle by running the following
 snyk-iac-rules build
 ```
 
-If you have more than your generated rules in the current folder consider using the  `--ignore` flag to exclude the folders and files irrelevant for a production-ready bundle. This can both speed up the process and ensures the size of the generated bundle stays small.
+If you have more than your generated rules in the current folder consider using the `--ignore` flag to exclude the folders and files irrelevant for a production-ready bundle. This can both speed up the process and ensures the size of the generated bundle stays small.
 
 #### Overriding the default entry point
 
@@ -32,4 +32,4 @@ That will output all the files included in the bundle:
 /.manifest
 ```
 
-&#x20;You can now [run snyk iac test with your newly built custom bundle. ](../use-IaC-custom-rules-with-CLI/)
+You can now [run snyk iac test with your newly built custom bundle.](../use-iac-custom-rules-with-cli/)

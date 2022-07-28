@@ -27,7 +27,7 @@ As you prepare for your teams to start adopting Snyk as part of a secure develop
 
 More information:
 
-* Docs: [Integrations](../products/snyk-code/key-features/integrations.md)
+* Docs: [Integrations](../products/snyk-code/introducing-snyk-code/key-features/integrations.md)
 * Snyk Training: [Ways to integrate Snyk at your company](https://training.snyk.io/courses/ways-to-use-snyk)
 
 #### How to structure your account
@@ -69,7 +69,7 @@ Snyk includes a number of automations for Snyk Open Source when integrated with 
 
 More information:
 
-* Docs: [Git repository (SCM) integrations](../features/integrations/git-repository-scm-integrations/)
+* Docs: [Git repository (SCM) integrations](../integrations/git-repository-scm-integrations/)
 * Training: [Source Code Manager Configurations](https://training.snyk.io/courses/source-code-manager-configurations)
 
 If you are using an on-premise source code manager, learn more about Snyk Broker:
@@ -90,7 +90,7 @@ Snyk sends teams different types of alerts based on settings defined for the gro
 
 More information:
 
-* Docs: [Managing notifications](../features/user-and-group-management/notifications/)
+* Docs: [Managing notifications](../features/user-and-group-management/notifications.md)
 * Training: [Notifications](https://training.snyk.io/courses/notifications)
 
 #### Set ignore permissions

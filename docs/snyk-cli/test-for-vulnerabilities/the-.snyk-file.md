@@ -204,4 +204,4 @@ The `.snyk` file should be versioned in the code repository, the same as other a
 [Ignore vulnerabilities using Snyk CLI](https://docs.snyk.io/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli)
 
 Support KB - [Ignoring via the CLI is not enabled for this organization](https://support.snyk.io/hc/en-us/articles/360001558598)\
-[CLI reference](../cli-reference/)
+[CLI reference](../cli-reference.md)

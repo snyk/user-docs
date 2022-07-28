@@ -4,7 +4,7 @@
 All `apps` subcommands are accessible only behind the `--experimental` flag and the behavior can change at any time, without prior notice. Use all the commands with caution
 {% endhint %}
 
-You can use the Snyk CLI to create [Snyk Apps](../features/integrations/snyk-apps/) by running `snyk apps create`.
+You can use the Snyk CLI to create [Snyk Apps](./) by running `snyk apps create`.
 
 You can pass the Snyk App-related data either by using the options to pass it to the Snyk CLI or by using the `--interactive` mode, for example `snyk apps --experimental --interactive`.
 
