@@ -1,8 +1,8 @@
 # Authentication for the JetBrains plugins
 
-The first time the Snyk CLI is needed, the plugin automatically downloads it in the background. There are a few ways to authenticate once the plugin is installed.
+The first time the CLI is needed, the plugin automatically downloads it in the background. There are a few ways to authenticate once the plugin is installed.
 
-After the CLI is installed, you are prompted to authenticate and connect the JetBrains plugin to Snyk.
+After the plugin is installed, you are prompted to authenticate and connect the JetBrains plugin to Snyk.
 
 ![Prompt to authenticate and start testing your code.](<../../.gitbook/assets/Screenshot 2022-02-10 at 17.07.52.png>)
 
