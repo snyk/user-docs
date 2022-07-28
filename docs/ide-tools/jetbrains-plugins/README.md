@@ -49,16 +49,6 @@ Install using the IDE plugins library:
 
 ![Select the Snyk vulnerability scanning plugin](<../../.gitbook/assets/Screen Shot 2022-03-09 at 5.06.13 PM (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
 
-## Run an analysis
-
-{% hint style="info" %}
-Make sure your project file, for example, requirements.txt, is saved before running an analysis.
-{% endhint %}
-
-To trigger an analysis during your daily coding workflow, click either the run (play) button, or **Run scan**.
-
-![Play button and Run scan link](../../.gitbook/assets/play-run.png)
-
 ## Analysis results: Snyk Open Source
 
 Snyk Open Source analysis shows a list of vulnerabilities and license issues found in the manifest file. For more detailed information select a vulnerability or license issue.
