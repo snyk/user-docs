@@ -12,7 +12,7 @@ For more information, see the [Visual Studio Code extension for Snyk Code](../..
 
 ### Visual Studio IDE plugin
 
-For more information, see the [Visual Studio extension for Snyk Code.](../../../ide-tools/visual-studio-extension.md)
+For more information, see the [Visual Studio extension for Snyk Code.](../../../ide-tools/visual-studio-extension/)
 
 ## SCM integrations
 

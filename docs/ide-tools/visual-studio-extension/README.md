@@ -19,21 +19,21 @@ The Visual Studio extension ([Snyk Security - Code and Open Source Dependencies]
 
 You can install the Snyk extension directly from the IDE; open **Extensions > Manage Extensions**.
 
-![Manage extensions menu](../.gitbook/assets/readme\_image\_2\_1\_1.png)
+![Manage extensions menu](../../.gitbook/assets/readme\_image\_2\_1\_1.png)
 
 Search for _Snyk_ and select **Download** to download the Snyk Security - Code and Open Source Dependencies extension.
 
 Once installed, use Snyk via the **Extensions > Snyk** menu (on Visual Studio versions older than 2019, Snyk will be part of the top menu bar).
 
-![](<../.gitbook/assets/image (76) (1) (1) (3).png>)
+![](<../../.gitbook/assets/image (76) (1) (1) (3).png>)
 
 You can also open the Snyk tool window using **View > Other Windows > Snyk**_._
 
 Once the tool window opens, wait while the Snyk extension downloads the latest Snyk CLI version.
 
-![Snyk tool window, CLI downloading](../.gitbook/assets/readme\_image\_2\_3.png)
+![Snyk tool window, CLI downloading](../../.gitbook/assets/readme\_image\_2\_3.png)
 
-After you install the extension and the CLI you must authenticate. You can use the **Connect Visual Studio to Snyk** link. For more information and additional ways to authenticate see [Authentication](visual-studio-extension.md#authentication).
+After you install the extension and the CLI you must authenticate. You can use the **Connect Visual Studio to Snyk** link. For more information and additional ways to authenticate see [Authentication](./#authentication).
 
 ## Configuration
 
@@ -50,25 +50,25 @@ You can set the variables using the GUI or on the command line using the `setx` 
 
 Authenticate using **Connect Visual Studio to Snyk** link on Overview page.
 
-![Connect Visual Studio to Snyk](../.gitbook/assets/readme\_image\_2\_4.png)
+![Connect Visual Studio to Snyk](../../.gitbook/assets/readme\_image\_2\_4.png)
 
 You can also authenticate using Options. Open Visual Studio **Options** and go to the **General Settings** of the Snyk extension or use the **Settings** button in the toolbar.
 
-![Options and settings button](../.gitbook/assets/readme\_image\_2\_5.png)
+![Options and settings button](../../.gitbook/assets/readme\_image\_2\_5.png)
 
 If the automated method does not work, you can trigger authentication by pressing the **Authenticate** button or enter the user API token manually. You can also submit a request to [Snyk support](https://snyk.zendesk.com/agent/dashboard).
 
-![Token field and Authenticate button](../.gitbook/assets/readme\_image\_2\_6.png)
+![Token field and Authenticate button](../../.gitbook/assets/readme\_image\_2\_6.png)
 
-![Click the  Authenticate button or enter your API token](../.gitbook/assets/install-5-a.png)
+![Click the  Authenticate button or enter your API token](../../.gitbook/assets/install-5-a.png)
 
 On the Snyk website, verify your identity and connect to the IDE extension. Click the **Authenticate** button.
 
-![](../.gitbook/assets/install-6.png)
+![](../../.gitbook/assets/install-6.png)
 
 Once the authentication has been confirmed, close the browser and go back to the IDE extension. The Token field has been populated with the authentication token and authentication is complete.
 
-![Token filed populated with the authentication token](../.gitbook/assets/readme\_image\_2\_8.png)
+![Token filed populated with the authentication token](../../.gitbook/assets/readme\_image\_2\_8.png)
 
 ## Run analysis
 
@@ -84,15 +84,15 @@ The extension provides the user with two kinds of results:
 * Note that your solution will have to be built successfully in order to allow the CLI to pick up the dependencies and find the vulnerabilities.
 * If you see only npm vulnerabilities or vulnerabilities that are not related to your C#/.NET projects, that can mean your project was not built successfully and was not detected by the CLI. If you have difficulty or questions, submit a request to [Snyk support](https://snyk.zendesk.com/agent/dashboard).
 
-![Run scan](../.gitbook/assets/readme\_image\_3\_1\_1.png)
+![Run scan](../../.gitbook/assets/readme\_image\_3\_1\_1.png)
 
-![Open Source vulnerabilities](../.gitbook/assets/readme\_image\_3\_1\_2.png)
+![Open Source vulnerabilities](../../.gitbook/assets/readme\_image\_3\_1\_2.png)
 
 ### Snyk Code issues
 
 Snyk Code analysis shows a list of security vulnerabilities and code issues found in the application code. For more details and examples of how others fixed the issue, select a security vulnerability or a code security issue and examine the Snyk suggestion information in the panel.
 
-![Snyk suggestion panel](../.gitbook/assets/readme\_image\_3\_1\_3.png)
+![Snyk suggestion panel](../../.gitbook/assets/readme\_image\_3\_1\_3.png)
 
 The Snyk suggestion panel shows the recommendation of the Snyk engine using, for example, variable names of your code and the line numbers in red. You can also see:
 
@@ -106,17 +106,17 @@ You can filter vulnerabilities by name or by severity.
 
 Filter by name by typing the name of the vulnerability in the search bar.
 
-![Filter by name](../.gitbook/assets/readme\_image\_3\_2\_1.png)
+![Filter by name](../../.gitbook/assets/readme\_image\_3\_2\_1.png)
 
 Filter by severity by selecting one or more of the severities when you open the search bar filter.
 
-![Filter by severity](../.gitbook/assets/readme\_image\_3\_2\_2.png)
+![Filter by severity](../../.gitbook/assets/readme\_image\_3\_2\_2.png)
 
 Users can configure Snyk extension by **Project settings**.
 
 Note that the “Scan all projects” option is enabled by default. It adds the `--all-projects` option for Snyk CLI. This option scans all projects by default.
 
-![Scan all projects enabled](../.gitbook/assets/readme\_image\_3\_3.png)
+![Scan all projects enabled](../../.gitbook/assets/readme\_image\_3\_3.png)
 
 ## Extension configuration
 
@@ -150,7 +150,7 @@ In the settings, you can also choose which results you want to receive:
 
 **Solution** Open Visual Studio Options to go to the Project Settings of the Snyk extension and check Scan all projects.
 
-![](../.gitbook/assets/readme\_image\_4\_1.png)
+![](../../.gitbook/assets/readme\_image\_4\_1.png)
 
 **The system cannot find the file specified**
 
