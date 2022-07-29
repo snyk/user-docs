@@ -8,7 +8,7 @@ For more information, see [JetBrains IDE Plugins](https://docs.snyk.io/integrati
 
 ### VS Code IDE plugin
 
-For more information, see the [Visual Studio Code extension for Snyk Code](../../../ide-tools/visual-studio-code-extension-for-snyk-code.md).
+For more information, see the [Visual Studio Code extension for Snyk Code](../../../ide-tools/visual-studio-code-extension-for-snyk-code/).
 
 ### Visual Studio IDE plugin
 
