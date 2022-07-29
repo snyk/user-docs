@@ -144,40 +144,11 @@ In the settings, you can also choose which results you want to receive:
 * Snyk Code Security vulnerabilities
 * Snyk Code Quality issues
 
-## Known issue
-
-**Could not detect supported target files**
-
-**Solution** Open Visual Studio Options to go to the Project Settings of the Snyk extension and check Scan all projects.
-
-![](../../.gitbook/assets/readme\_image\_4\_1.png)
-
-**The system cannot find the file specified**
-
-**Solution** This issue related to CLI file. Close and open Snyk tool window for start CLI download.
-
-**The specified executable is not a valid application for this OS platform**
-
-**Solution** This issue related to CLI file and its integrity. Remove CLI from in\
-`%HOMEPATH%\AppData\Local\Snyk\snyk-win.exe`. Close and open Snyk tool window for start CLI download.
-
-**Snyk Code no supported code available**
-
-**Solution** Check .gitignore and .dcignore file rules. Check if there are any rules that exclude your project's source files.
-
 ## Useful links
 
 * This plugin works with projects written in .NET, Java, JavaScript, and many more languages. [See the full list of languages and package managers Snyk supports](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support)
 * [Bug tracker](https://github.com/snyk/snyk-visual-studio-plugin/issues)
 * [Github repository](https://github.com/snyk/snyk-visual-studio-plugin)
-
-## Troubleshooting
-
-Logs can be found in the user AppData directory:
-
-```
-%HOMEPATH%\AppData\Local\Snyk\snyk-extension.log
-```
 
 ## Support and contact information
 

@@ -117,7 +117,7 @@
     * [Visual Studio extension authentication](ide-tools/visual-studio-extension/visual-studio-extension-authentication.md)
     * [Run an analysis with Visual Studio extension](ide-tools/visual-studio-extension/run-an-analysis-with-visual-studio-extension.md)
     * [View analysis results from Visual Studio extension](ide-tools/visual-studio-extension/view-analysis-results-from-visual-studio-extension.md)
-    * [Troubleshooting and known issue with Visual Studio extension](ide-tools/visual-studio-extension/troubleshooting-and-known-issue-with-visual-studio-extension.md)
+    * [Troubleshooting and known issues with Visual Studio extension](ide-tools/visual-studio-extension/troubleshooting-and-known-issues-with-visual-studio-extension.md)
   * [Visual Studio Code extension](ide-tools/visual-studio-code-extension-for-snyk-code.md)
 * [Snyk Apps](features/integrations/snyk-apps/README.md)
   * [Getting started with Snyk Apps](features/integrations/snyk-apps/getting-started-with-snyk-apps/README.md)
