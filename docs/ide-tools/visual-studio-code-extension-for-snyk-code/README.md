@@ -165,12 +165,7 @@ The value of organization setting `snyk.advanced.organization` must match the UR
 
 If not specified, the preferred organization as defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
 
-## Create a .dcignore file
-
-To ignore certain files and directories (for example, **node\_modules**), create a **.dcignore** file. You can create it in any directory on any level starting from the directory where your project resides. The file syntax is identical to .`gitignore`.
-
-* Snyk recommends adding the file when there is no `.gitignore` file. Adding the file significantly reduces the files that need to be uploaded and speed up the analysis.
-* To quickly add the default **`.dcignore`** file, use the command provided by VS Code and the Snyk extension **Snyk create `.dcignore` file** and save the newly created `.dcignore` file.
+##
 
 ## Troubleshooting
 
