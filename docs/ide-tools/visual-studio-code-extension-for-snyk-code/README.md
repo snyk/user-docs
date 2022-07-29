@@ -143,27 +143,7 @@ The Open Source Security (OSS) vulnerability window shows information about the 
 * Provides detailed path on how vulnerability is introduced to the system.
 * Shows summary of the vulnerability together with the remediation advice to fix it.
 
-## Extension configuration
-
-After the extension is installed, you can set the following configurations for the extension:
-
-* **Features**
-  * **Code Security**: configure if code security analysis should run over your code.
-  * **Code Quality**: configure if code quality analysis should run over your code.
-  * **Open Source Security**: configure if security analysis should run over your open source dependencies.
-* **Severity**: set severity level to display in the analysis result tree.
-* **Advanced**
-  * **Advanced mode**: toggle a panel to allow the user to manually control when the analysis should be run.
-  * **Auto Scan Open Source Security**: set severity level to display in the analysis result tree.
-  * **Additional Parameters**: set parameters to be passed to Snyk CLI for Open Source Security tests. For the full list you can consult [this reference](https://docs.snyk.io/features/snyk-cli/guides-for-our-cli/cli-reference).
-  * **Organization**: specify an organization slug name to run tests for that organization.
-  * **Custom endpoint**: Specify the custom Snyk API endpoint for your organization. Use this field for the custom endpoint for Single Tenant setups as well instead of https://app.snyk.io.
-
-**Organization setting**
-
-The value of organization setting `snyk.advanced.organization` must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.
-
-If not specified, the preferred organization as defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
+##
 
 ##
 
