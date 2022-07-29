@@ -146,6 +146,7 @@
     * [GitHub Actions integration](features/integrations/ci-cd-integrations/github-actions-integration.md)
     * [Jenkins integration](features/integrations/ci-cd-integrations/jenkins-integration-overview.md)
     * [Terraform Cloud integration for IaC](features/integrations/ci-cd-integrations/integrating-snyk-with-terraform-cloud.md)
+    * [Terraform Enterprise integration for IaC](integrations/ci-cd-integrations/integrating-snyk-with-terraform-enterprise.md)
     * [Maven integration](features/integrations/ci-cd-integrations/maven-plugin-integration.md)
     * [TeamCity integration](features/integrations/ci-cd-integrations/teamcity-integration-overview/README.md)
       * [TeamCity integration: use Snyk in your build](features/integrations/ci-cd-integrations/teamcity-integration-overview/teamcity-integration-use-snyk-in-your-build/README.md)

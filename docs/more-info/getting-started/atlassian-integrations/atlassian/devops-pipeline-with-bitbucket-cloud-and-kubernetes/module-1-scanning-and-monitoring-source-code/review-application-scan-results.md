@@ -12,7 +12,7 @@ In the previous step, adding your java-goof repository to Snyk automatically sta
 
 In your Bitbucket repository, clicking on your **Snyk** link takes you to a page where you can review results from Snyk within Bitbucket as shown below:
 
-![](<../../../../../../.gitbook/assets/image (213).png>)
+![](<../../../../../../.gitbook/assets/image (73) (1) (1).png>)
 
 Snyk automatically scans your application for vulnerabilities and presents results within Bitbucket. This summary starts with a count of all vulnerabilities for the major elements, or projects, in your repository. For the java-goof application, you will see multiple maven and Dockerfile projects in a logical structure.
 
@@ -22,13 +22,13 @@ If you click into the top-level Dockerfile link, you will a see a screen similar
 
 The summary line is replicated for the Dockerfile to maintain context.
 
-![](<../../../../../../.gitbook/assets/image (149) (1).png>)
+![](<../../../../../../.gitbook/assets/image (69) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 This summary maintains context from the main page and you'll notice details such as the filename, total counts, and breakdown according to severity (Critical, High, Medium, Low). The reference project has hundreds of vulnerabilities, and Snyk presents the results in an order based on several factors that include the severity, if there are known exploits, and if there is a fix available. This ordered list helps your team focus on the vulnerabilities with the highest scores first.
 
 Each vulnerability also contains links to public databases for users that wish to learn additional background and context.
 
-![](<../../../../../../.gitbook/assets/image (82) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+![](<../../../../../../.gitbook/assets/image (82) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 Another section of the page focuses on the version of your software, available upgrades, and whether there is a known exploit. This level of detail helps teams more quickly assess a vulnerability as they can see the recommended fix when it is available.
 
@@ -50,6 +50,6 @@ Some of the details you see are shown in the next two images, and they include:
 
 ![](<../../../../../../.gitbook/assets/image (86) (1) (1) (1).png>)
 
-![](<../../../../../../.gitbook/assets/image (238) (4).png>)
+![](<../../../../../../.gitbook/assets/image (66) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 In the next two sections, we'll create a Jira ticket and a pull request.

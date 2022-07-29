@@ -44,7 +44,7 @@ For Open Source and Container vulnerabilities, click on the Snyk vulnerability I
 
 For this example, click on the Snyk vulnerability Identifier to see how Hibernate core and its libraries are vulnerable to SQL injection:
 
-![](<../../.gitbook/assets/image (112).png>)
+![](<../../.gitbook/assets/image (112) (2).png>)
 
 {% hint style="info" %}
 [Snyk Code](../../products/snyk-code/) and [Snyk IaC](../../products/snyk-infrastructure-as-code/) issue cards have separate information sets for these areas.
