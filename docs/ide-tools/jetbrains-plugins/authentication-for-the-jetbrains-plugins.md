@@ -1,6 +1,8 @@
 # Authentication for the JetBrains plugins
 
-The first time you start a scan, the plugin automatically downloads the CLI in the background unless you have opted not to download automatically. To use the CLI you must authenticate. There are a few ways to authenticate once the plugin is installed.
+The first time you start a scan, the plugin automatically downloads the CLI in the background unless you have opted not to download automatically. To use the plugin you must authenticate. There are several ways to authenticate once the plugin is installed.
+
+## Automatic authentication
 
 After the CLI is installed, you are prompted to authenticate and connect the JetBrains plugin to Snyk.
 
