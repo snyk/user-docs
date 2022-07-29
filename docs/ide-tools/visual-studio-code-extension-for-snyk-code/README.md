@@ -1,7 +1,7 @@
 # Visual Studio Code extension
 
 {% hint style="warning" %}
-The Snyk Visual Studio Code extension is available for installation on the [Visual Studio code marketplace](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner).
+
 {% endhint %}
 
 ## **Capabilities**
@@ -17,7 +17,9 @@ Snyk can scan for vulnerabilities in seconds from within your integrated develop
 
 ## Install the extension
 
-You can find the Snyk extension in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner). To install:
+The Snyk Visual Studio Code extension is available for installation on the [Visual Studio code marketplace](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner).
+
+Follow these steps to install:
 
 * Open the settings or preferences in your IDE.
 * Navigate to the [Snyk Extension on the Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner) and click **Install**.\
@@ -28,18 +30,8 @@ You can find the Snyk extension in the [Visual Studio Code Marketplace](https://
 
 
 
-## Troubleshooting
+## Support and feedback
 
-To obtain extension logs, navigate to **Snyk:  Show Output Channel** in the VS Code command palette.&#x20;
+If you need help, submit a [request](https://support.snyk.io/hc/en-us/requests/new) to Snyk Support.
 
-Additional logs can be obtained by navigating to **Help** > **Toggle Developer Tools**, and opening the **Console** tab for more verbose output.
-
-## Support and contact information
-
-{% hint style="info" %}
-Need more help? [Submit a request to Snyk support](https://support.snyk.io/hc/en-us/requests/new).
-{% endhint %}
-
-**Share your experience.**
-
-Snyk continuously strives to improve the Snyk plugins experience. Would you like to share your feedback about the Snyk Visual Studio Code extension? [Schedule a meeting](https://calendly.com/snyk-georgi/45min?month=2022-01).
+Snyk continuously strives to improve the Snyk plugins experience. If you would you like to share your feedback about the Snyk Visual Studio extension, [schedule a meeting](https://calendly.com/snyk-georgi/45min?month=2022-01).
