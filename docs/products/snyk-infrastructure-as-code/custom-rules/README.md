@@ -19,7 +19,7 @@ Initial instructions to get you started with the Snyk Infrastructure as Code (Ia
 
 * [Install the SDK](install-the-sdk.md)
 * [Getting started with the SDK](getting-started-with-the-sdk/)
-* [How to run custom rules with the Snyk CLI](use-IaC-custom-rules-with-CLI/)
+* [How to run custom rules with the Snyk CLI](use-iac-custom-rules-with-cli/)
 * [How to integrate custom rules within a pipeline](integrating-iac-custom-rules-within-a-pipeline.md)
 * [SDK reference](sdk-reference.md)
 

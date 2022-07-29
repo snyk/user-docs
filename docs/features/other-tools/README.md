@@ -45,4 +45,4 @@ For additional Snyk Tools, **refer to the repos** for usage instructions:
 
 ## Tool ideas
 
-Do you have an idea for a tool? If so, check out [Snyk Apps](../integrations/snyk-apps/), which provides an opportunity to mold your Snyk experience to suit your specific needs. You can also contact [Snyk Support](https://support.snyk.io/hc/en-us/) with questions.
+Do you have an idea for a tool? If so, check out [Snyk Apps](../../snyk-apps/), which provides an opportunity to mold your Snyk experience to suit your specific needs. You can also contact [Snyk Support](https://support.snyk.io/hc/en-us/) with questions.

@@ -4,7 +4,7 @@ Follow these steps to use the hello world example.
 
 1. Verify that your permissions are set correctly for you to use Snyk API.
 2. Log in to [Snyk](https://snyk.io/).
-3. Navigate to the Snyk REST API and authenticate. For instructions, see See [Authentication for API](../../features/snyk-api-info/authentication-for-api.md).
+3. Navigate to the Snyk REST API and authenticate. For instructions, see See [Authentication for API](../authentication-for-api.md).
 4. Observe that the Snyk REST API opens to the most recent beta version.
 5. Navigate to the **Examples** endpoints and start with **POST** `/examples/hello_world` (Create a single result from the hello\_world example).
 6. Copy the version string from the URL, for example, `2022-06-08~beta` and paste the version string into the **QUERY-STRING PARAMETERS** `version` field (required).

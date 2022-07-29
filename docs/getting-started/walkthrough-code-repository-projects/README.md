@@ -2,7 +2,7 @@
 
 This walkthrough shows how to use Snyk to scan, manage and fix application vulnerabilities in your Git-based code repository, using the [Snyk Web UI](../../snyk-web-ui/).
 
-This walkthrough uses content imported from a GitHub repository. Snyk supports all common Git-based repositories (such as GitHub, GitLab and Azure), and content from all these repositories can be added to be scanned. See [Git repository integrations](../../features/integrations/git-repository-scm-integrations/) for more details
+This walkthrough uses content imported from a GitHub repository. Snyk supports all common Git-based repositories (such as GitHub, GitLab and Azure), and content from all these repositories can be added to be scanned. See [Git repository integrations](../../integrations/git-repository-scm-integrations/) for more details
 
 {% hint style="info" %}
 For a higher-level set of guidance about rolling out your Snyk solution at a company level, see [Implementing Snyk in your teams](../implementing-snyk-in-your-teams.md).

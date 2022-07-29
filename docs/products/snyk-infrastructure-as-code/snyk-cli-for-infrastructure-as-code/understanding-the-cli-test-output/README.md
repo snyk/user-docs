@@ -20,7 +20,7 @@ To use the new IaC CLI output results, you need to install the latest Snyk CLI v
 npm install snyk -g 
 ```
 
-**Note**: For Install and Update commands for other CLI installation methods, see [Install or update the Snyk CLI](../../../../snyk-cli/install-the-snyk-cli/).
+**Note**: For Install and Update commands for other CLI installation methods, see [Install or update the Snyk CLI](../../../../snyk-cli/install-the-snyk-cli.md).
 
 In addition, to use this IaC CLI offering, you need to enable this option in the **Snyk Preview** page, as follows:
 
@@ -28,11 +28,11 @@ In addition, to use this IaC CLI offering, you need to enable this option in the
 
 **Note**: By default, the CLI will run tests under your **Preferred Organization**, as defined in your **Account settings**. You can change your **Preferred Organization**, or set another organizations for the CLI tests.
 
-![](<../../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
+![](<../../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 2\. Once the required organization is open, click the **Org Settings** button on the top menu:
 
-![](<../../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org Settings button (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org Settings button (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
 
 3\. On the Org **Settings** page, select **Snyk Preview** on the left menu, and move to the section – **Additional CLI result information for Infrastructure as Code**:
 

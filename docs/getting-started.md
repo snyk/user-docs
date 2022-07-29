@@ -32,7 +32,7 @@ Next, get started using Snyk products and in your selected environment.
 Get started with a Snyk product:
 
 * [getting-started-snyk-open-source.md](products/snyk-open-source/getting-started-snyk-open-source.md "mention") - scan your open source code.
-* [getting-started-with-snyk-code.md](getting-started/getting-started-snyk-products/getting-started-with-snyk-code.md "mention") - scan your application code.
+* [getting-started-with-snyk-code](products/snyk-code/getting-started-with-snyk-code/ "mention") - scan your application code.
 * [getting-started-snyk-container.md](products/snyk-container/getting-started-snyk-container.md "mention") - scan your container image.
 * [getting-started-snyk-iac.md](products/snyk-infrastructure-as-code/getting-started-snyk-iac.md "mention") - scan Kubernetes, Helm and Terraform configuration files.
 

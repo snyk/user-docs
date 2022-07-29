@@ -14,5 +14,5 @@ Settings include:
 * [Usage](https://docs.snyk.io/user-and-group-management/managing-settings/usage-page-details)
 * Your plan and billing
 * Plans and pricing
-* [Notifications](../notifications/)
+* [Notifications](../notifications.md)
 * [Snyk Preview](snyk-preview.md)

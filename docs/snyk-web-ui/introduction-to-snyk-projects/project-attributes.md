@@ -29,7 +29,7 @@ Project attributes are static and non-configurable fields which allow you to add
 * Distributed
 
 {% hint style="info" %}
-Filtering is available in projects by their values from [Snyk's REST API](../../features/snyk-api-info/).
+Filtering is available in projects by their values from [Snyk's REST API](../../snyk-api-info/).
 
 Assigning and removing attribute values can be done in [Snyk's CLI](../../snyk-cli/) or the API.&#x20;
 {% endhint %}
