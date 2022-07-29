@@ -4,7 +4,9 @@ The Snyk Visual Studio extension provides analysis of your code and open source 
 
 Snyk scans for vulnerabilities and returns results with security issues categorized by issue type and severity.
 
-For open source, you receive automated algorithm-based fix suggestions for both direct and transitive dependencies. This single plugin provides a Java vulnerability scanner, a custom code vulnerability scanner, and an open-source security scanner.
+For open source, you receive automated algorithm-based fix suggestions for both direct and transitive dependencies.
+
+This single plugin provides a Java vulnerability scanner, a custom code vulnerability scanner, and an open-source security scanner.
 
 Snyk scans for the following types of issues:
 
