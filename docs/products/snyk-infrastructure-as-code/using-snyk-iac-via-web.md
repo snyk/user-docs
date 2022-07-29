@@ -9,7 +9,7 @@ Use Snyk IaC with the [Snyk Web UI](../../snyk-web-ui/) to find and fix issues i
 
 ![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.15.02.png>)
 
-Information available shows standard Snyk project information (see [introduction-to-snyk-projects](../../introducing-snyk/introduction-to-snyk-projects/ "mention")), including:
+Information available shows standard Snyk project information (see [introduction-to-snyk-projects](../../snyk-web-ui/introduction-to-snyk-projects/ "mention")), including:
 
 * Snapshot information showing when the project was last tested.
 * **Overview**, **History** and **Settings** information. For example, use the **History** section to view previous snapshots of projects.
@@ -45,11 +45,11 @@ Click **Ignore** to ignore this vulnerability (see [Ignore Issues](../../feature
 
 ![Helm](<../../.gitbook/assets/image (66) (1) (1).png>)
 
-![Terraform Cloud](<../../.gitbook/assets/image (71) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+![Terraform Cloud](<../../.gitbook/assets/image (190) (2).png>)
 
 * In some cases that we can not identify the exact line of the vulnerable path in the file, we will not show a code snippet, but an info message and the card details. If able to, we will show the **Full details** button so that a preview of the full code can be seen.\
   Example:
 
-![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.07.png>)
+![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.07 (1).png>)
 
-![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.17 (1).png>)
+![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.17.png>)

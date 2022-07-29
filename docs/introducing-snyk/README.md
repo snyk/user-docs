@@ -10,7 +10,7 @@ Developers now assemble applications with a combination of proprietary and open 
 
 A good security process secures each of these components where they are built and maintained. Snyk integrates into DevOps processes to work the with developers in the methods they prefer to work while following and supporting industry best practices. Snyk integrates directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit.
 
-![](<../.gitbook/assets/image (84) (1).png>)
+![](<../.gitbook/assets/image (69) (1).png>)
 
 #### Using Snyk in your workflow:
 
@@ -40,16 +40,9 @@ See [Snyk languages and integrations](snyk-languages-and-integrations.md) for mo
 
 ### **What does it cost?**
 
-Snyk has several [pricing plans](https://snyk.io/plans/) available:
+Snyk has several [pricing plans](https://snyk.io/plans/) available, from free to Enterprise.
 
-* **Free**: For individual developers and small teams looking to secure while they build. Limited tests.
-* **Team**: For dev teams looking to build security into their development process with shared visibility into projects. Unlimited tests.
-* **Business**: Empower developers across an organization and provide reporting and advanced controls to manage teams and control to shift security left. Unlimited tests.
-* **Enterprise**: Standardize dev-first security across the enterprise, with centralized policy governance. Unlimited tests.
-
-{% hint style="info" %}
-See [Running tests](snyks-core-concepts/running-tests.md) for more details on tests.
-{% endhint %}
+See [Plans](snyks-core-concepts/plans.md) for more details.
 
 ### **Who uses Snyk?**
 

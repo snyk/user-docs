@@ -1,6 +1,6 @@
 # Managing settings
 
-Click the Settings icon (![](../../../.gitbook/assets/cog\_icon.png)) from the top-level menu bar to view and access Snyk settings for your org:
+Click the Settings icon (<img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line">) from the top-level menu bar to view and access Snyk settings for your org:
 
 ![](../../../.gitbook/assets/Settings.png)
 
@@ -14,5 +14,5 @@ Settings include:
 * [Usage](https://docs.snyk.io/user-and-group-management/managing-settings/usage-page-details)
 * Your plan and billing
 * Plans and pricing
-* [Notifications](https://docs.snyk.io/user-and-group-management/notifications/notification-management)
+* [Notifications](../notifications/)
 * [Snyk Preview](snyk-preview.md)

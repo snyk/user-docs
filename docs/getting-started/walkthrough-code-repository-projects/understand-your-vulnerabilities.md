@@ -17,7 +17,7 @@ For example, for a code analysis scanned by Snyk Code:
 
 ![](<../../.gitbook/assets/image (93).png>)
 
-See [View project information](../../introducing-snyk/introduction-to-snyk-projects/view-project-information/) for more details.&#x20;
+See [View project information](../../snyk-web-ui/introduction-to-snyk-projects/view-project-information.md) for more details.&#x20;
 
 ### View Issue Cards
 
@@ -44,7 +44,7 @@ For Open Source and Container vulnerabilities, click on the Snyk vulnerability I
 
 For this example, click on the Snyk vulnerability Identifier to see how Hibernate core and its libraries are vulnerable to SQL injection:
 
-![](<../../.gitbook/assets/image (112) (2).png>)
+![](<../../.gitbook/assets/image (112).png>)
 
 {% hint style="info" %}
 [Snyk Code](../../products/snyk-code/) and [Snyk IaC](../../products/snyk-infrastructure-as-code/) issue cards have separate information sets for these areas.
@@ -54,7 +54,7 @@ For this example, click on the Snyk vulnerability Identifier to see how Hibernat
 
 To research more about a vulnerability, click **Learn about this type of vulnerability** to access [Snyk Learn](https://learn.snyk.io/) security educational materials:
 
-![](<../../.gitbook/assets/image (1).png>)
+![](<../../.gitbook/assets/image (36).png>)
 
 For example, see [Snyk Learn SQL injection](https://learn.snyk.io/lessons/sql-injection/javascript/) for more details about this type of vulnerability.
 
@@ -84,7 +84,7 @@ Snyk uses the package manager of your application to build the dependency tree a
 
 Click the file tree icon (![](<../../.gitbook/assets/image (31).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
 
-![](<../../.gitbook/assets/image23 (1).png>)
+![](../../.gitbook/assets/image23.png)
 
 For example, the above screenshot shows a vulnerability based on the transitive dependency **qs@2.2.4**, brought in from the direct dependency **body-parser@ 1.9.0**.
 

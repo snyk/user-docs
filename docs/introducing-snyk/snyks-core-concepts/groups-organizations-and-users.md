@@ -31,11 +31,9 @@ When you sign up to Snyk using a social login, you have a default organization. 
 
 See [What’s a Snyk organization?](../../features/user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization.md)
 
-### Snyk projects
-
-Projects are contained in organizations. Snyk projects can include manifest files, configuration files, and container images.
-
-See [Snyk projects](../introduction-to-snyk-projects/).
+{% hint style="info" %}
+[Projects](projects.md) are contained in Organizations.
+{% endhint %}
 
 ## User access: member types
 

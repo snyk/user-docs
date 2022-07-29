@@ -9,7 +9,7 @@ Use Snyk Code with the [Snyk Web UI](../../../snyk-web-ui/) to find and fix vuln
 
 ![](../../../.gitbook/assets/snykcofe\_priority\_score.png)
 
-Information available shows standard Snyk project information (see [introduction-to-snyk-projects](../../../introducing-snyk/introduction-to-snyk-projects/ "mention")), including:
+Information available shows standard Snyk project information (see [introduction-to-snyk-projects](../../../snyk-web-ui/introduction-to-snyk-projects/ "mention")), including:
 
 * Snapshot information showing when the project was last tested.
 * **Overview**, **History** and **Settings** information. For example, use the **History** section to view previous snapshots of projects.
@@ -28,7 +28,7 @@ Card details include:
 * A snippet of your code showing the exact area that is vulnerable.
 * A clear and helpful text description of the vulnerability.
 
-See [issue-card-information.md](../../../introducing-snyk/introduction-to-snyk-projects/issue-card-information.md "mention") for more details.
+See [issue-card-information.md](../../../snyk-web-ui/introduction-to-snyk-projects/issue-card-information.md "mention") for more details.
 
 * Click **Ignore** to ignore this vulnerability (see [ignore-issues.md](../../../features/fixing-and-prioritizing-issues/issue-management/ignore-issues.md "mention"))
 * Click **Full details** to view more information (see [#view-full-details](using-snyk-code-web.md#view-full-details "mention")).

@@ -50,6 +50,6 @@ For your projects:
 
 And for each vulnerability in a project:
 
-![](<../../.gitbook/assets/image (39).png>)
+![](<../../.gitbook/assets/image (39) (1).png>)
 
 See [Getting started](https://docs.snyk.io/getting-started) documentation for more details of using Snyk.

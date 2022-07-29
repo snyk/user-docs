@@ -24,7 +24,7 @@ See [Getting started with the CLI](../../snyk-cli/getting-started-with-the-cli/)
 
 ### Run tests with the Snyk Web UI
 
-A test is run when you add a new project, or click the re-test button.
+A test is run when you add a new project, or click the **re-test now** button on a Project, in the&#x20;
 
 ### Run tests with the API
 

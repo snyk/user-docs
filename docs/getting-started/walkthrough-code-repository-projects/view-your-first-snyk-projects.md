@@ -16,7 +16,7 @@ We can now see your scan results.
 
 Open the [Snyk Web UI](../../snyk-web-ui/), navigate to your **Projects** page, and see your imported repositories (or **targets** if importing non-code information). For example:
 
-![](<../../.gitbook/assets/image (97) (1).png>)
+![](<../../.gitbook/assets/image (97).png>)
 
 For each entry, the the left icon shows the number of Snyk Projects in each entry, plus the Git-based repository the projects are imported from. For example <img src="../../.gitbook/assets/image (124).png" alt="" data-size="line">.
 
@@ -24,7 +24,7 @@ For each entry, the the left icon shows the number of Snyk Projects in each entr
 
 When [setting up your GitHub integration](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration), you can choose whether Snyk can access public and private repositories, or public repositories only:
 
-![](<../../.gitbook/assets/image (10) (1).png>)
+![](<../../.gitbook/assets/image (10).png>)
 
 When you then import a Project, private repositories are identified with a “lock” symbol (<img src="../../.gitbook/assets/image (131).png" alt="" data-size="line">) in the imported scan details:&#x20;
 
@@ -42,12 +42,12 @@ When you open an entry, you see the different Snyk Projects scanned in that entr
 
 {% hint style="info" %}
 **Reminder: what is a Project?**\
-****A Snyk Project is an item scanned by Snyk; for example, a manifest file listing all your open source libraries as dependencies. See [Introduction to Snyk Projects](../../introducing-snyk/introduction-to-snyk-projects/).
+****A Snyk Project is an item scanned by Snyk; for example, a manifest file listing all your open source libraries as dependencies. See [Introduction to Snyk Projects](../../snyk-web-ui/introduction-to-snyk-projects/).
 {% endhint %}
 
 For example:
 
-![](<../../.gitbook/assets/image (113) (1).png>)
+![](<../../.gitbook/assets/image (113).png>)
 
 ### Understand Project information
 
@@ -86,7 +86,7 @@ For example, you can use Project settings to change scan frequency, setting how 
 
 Let’s go back to the results for your scan:
 
-![](<../../.gitbook/assets/image (89).png>)
+![](<../../.gitbook/assets/image (126).png>)
 
 The scan shows you all vulnerabilities in all aspects of an application. Of course, it's unlikely that you are responsible for every entry in this list, but it's important to be aware of the full picture.
 

@@ -75,7 +75,7 @@ Click on an entry to open the issues view for that entry, including the module, 
 
 ![](../../.gitbook/assets/project-details.png)
 
-See [view-project-information](../../introducing-snyk/introduction-to-snyk-projects/view-project-information/ "mention") for more details.
+See [view-project-information.md](../../snyk-web-ui/introduction-to-snyk-projects/view-project-information.md "mention") for more details.
 
 ### Stage 4: Fix vulnerabilities
 
@@ -98,6 +98,6 @@ To fix vulnerabilities:
 5. Snyk now actions this PR, then a results screen appears.
 6. Optionally, select the **Files changed** tab to see details of the changes made.
 
-![](<../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22 (1).png>)
+![](../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22.png)
 
 See [fix-your-vulnerabilities.md](../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md "mention") for more details.

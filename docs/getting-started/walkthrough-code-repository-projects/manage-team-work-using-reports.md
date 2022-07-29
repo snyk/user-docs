@@ -26,7 +26,7 @@ See [the Reports docs](../../features/reports/) for more details.
 
 The **Security issues** section show the number of vulnerabilities, their type, and how many of them  Snyk identifies as auto fixable (with an upgrade, as we saw in [Fix your first vulnerability](fix-your-first-vulnerability.md)).
 
-![](<../../.gitbook/assets/image (67) (2).png>)
+![](<../../.gitbook/assets/image (67).png>)
 
 ### Show issues over time
 
@@ -85,7 +85,7 @@ For example, if your Organization represents your development team, and you want
 ****Remember, a Snyk Project represents a single item that Snyk scans, such as a manifest file. So your application may contain hundreds of Snyk Projects to scan.
 {% endhint %}
 
-For Open Source vulnerabilities, we also have tagging, allowing you to add your own tags, adding custom values for metadata. See [Project tags](../../introducing-snyk/introduction-to-snyk-projects/view-project-information/project-tags.md) and [Project attributes](../../introducing-snyk/introduction-to-snyk-projects/view-project-information/project-attributes.md).
+For Open Source vulnerabilities, we also have tagging, allowing you to add your own tags, adding custom values for metadata. See [Project tags](../../snyk-web-ui/introduction-to-snyk-projects/project-tags.md) and [Project attributes](../../snyk-web-ui/introduction-to-snyk-projects/project-attributes.md).
 
 #### Dashboard results and report results
 
@@ -93,7 +93,7 @@ Filtering results in Reports means that your Dashboard shows different numbers t
 
 For example, by default, Snyk does not scan the dockerfile in the filter, it just scan the docker images themselves
 
-![](<../../.gitbook/assets/image (111) (1).png>)
+![](<../../.gitbook/assets/image (111).png>)
 
 This is turned off by default in the filter, because when Snyk scans the dockerfile, there will be vulnerabilities in the base OS in the container that you are building. As these cannot generally be fixed by the development team, this filtering allows your team to focus on the issues that you can fix.
 
