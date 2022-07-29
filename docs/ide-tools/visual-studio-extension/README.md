@@ -35,24 +35,6 @@ Once the tool window opens, wait while the Snyk extension downloads the latest S
 
 After you install the extension and the CLI you must authenticate. You can use the **Connect Visual Studio to Snyk** link. For more information and additional ways to authenticate see [Authentication](./#authentication).
 
-## View analysis results
-
-You can filter vulnerabilities by name or by severity.
-
-Filter by name by typing the name of the vulnerability in the search bar.
-
-![Filter by name](../../.gitbook/assets/readme\_image\_3\_2\_1.png)
-
-Filter by severity by selecting one or more of the severities when you open the search bar filter.
-
-![Filter by severity](../../.gitbook/assets/readme\_image\_3\_2\_2.png)
-
-Users can configure Snyk extension by **Project settings**.
-
-Note that the “Scan all projects” option is enabled by default. It adds the `--all-projects` option for Snyk CLI. This option scans all projects by default.
-
-![Scan all projects enabled](../../.gitbook/assets/readme\_image\_3\_3.png)
-
 ## Useful links
 
 * This plugin works with projects written in .NET, Java, JavaScript, and many more languages. [See the full list of languages and package managers Snyk supports](https://support.snyk.io/hc/en-us/sections/360001087857-Language-package-manager-support)
