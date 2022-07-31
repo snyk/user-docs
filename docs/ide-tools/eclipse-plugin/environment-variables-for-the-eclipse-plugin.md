@@ -5,7 +5,7 @@ To analyze projects, the plugin uses the Snyk CLI. The CLI needs the following e
 * `PATH`: The path to needed binaries, for example, to Maven. The `PATH` variable can also be manually adjusted using the **`Path`** field in the settings dialog.
 * `JAVA_HOME`: The path to the JDK you want to use to analyze Java dependencies.
 * `http_proxy` and `https_proxy`: Proxy set using the value in the format `http://username:password@proxyhost:proxyport`.\
-  **Note:** the leading `http://` in the value does not change to `https://` for an `https_proxy`.
+  **Note:** the leading `http://` in the value does not change to `https://` for an `https_proxy`. If you populate the proxy settings in Eclipse, the Snyk plugin will set the environment variables automatically for Language Server and CLI.
 
 Setting these variables only in a shell environment (for example, using `~/.bashrc`) is not enough, if you do not start Eclipse from the command line or create a script file that starts Eclipse using a shell environment.
 

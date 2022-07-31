@@ -74,7 +74,7 @@ For example:
 
 `snyk test` after ignoring in the UI:
 
-![](<../../../.gitbook/assets/image (20).png>)
+![](<../../../.gitbook/assets/image (20) (1).png>)
 
 It is important that the above is true if you ignore the project imported by `snyk monitor` from the CLI or CI/CD.
 

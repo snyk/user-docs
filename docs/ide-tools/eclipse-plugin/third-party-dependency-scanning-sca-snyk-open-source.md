@@ -2,8 +2,8 @@
 
 In Eclipse plugin version 2.0.0 and later, Snyk is introducing a deeper integration with the native flows of Eclipse, inline highlights, problems integrations, and information about the issue on hover. The following shows all of these for a security vulnerability found in a third party dependency:
 
-1. The vulnerable package is highlighted (the red squiggly line) indicating there is a high severity security vulnerability in this package. You have all the information on hover; you can scroll, read, or click the links for even more information. Advice on what action to take and how is right there where the vulnerability is.
-2. You see the integration with the **Problems** tab, which comes in handy if you use the **Problems** tab to show only issues in the current file. Snyk also indicates the line where the issue is.
+1. The vulnerable package is highlighted (the red squiggly line) indicating there is a high severity security vulnerability in this package. You have all the information on hover; you can scroll, read, or click the links for even more information. Advice on what action to take and how is presented right where the vulnerability is.
+2. You see the integration with the **Problems** tab, which is useful if you use the **Problems** tab to show only issues in the current file. Snyk also indicates the line where the issue is.
 3. You can see the gutter icons on the left, as well as the file map highlights (with colors matching the priorities) on the right.
 
 {% hint style="info" %}

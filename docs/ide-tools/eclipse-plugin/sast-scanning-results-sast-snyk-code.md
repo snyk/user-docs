@@ -7,7 +7,7 @@ In Eciplse plugin version 2.0.0 and later, Snyk is introducing a deeper integrat
 3. You can see the gutter icons on the left and file map highlights (with colors matching the priorities) on the right.
 
 {% hint style="info" %}
-Currently the hover information is limited to JavaEditor and GenericEditor, which is the default editor for plugins like Wild Web Developer.
+Currently the hover information is limited to JavaEditor and GenericEditor, the latter being the default editor for plugins like Wild Web Developer.
 {% endhint %}
 
 ![SAST scanning results](<../../.gitbook/assets/Screenshot 2022-05-13 at 12.56.46.png>)

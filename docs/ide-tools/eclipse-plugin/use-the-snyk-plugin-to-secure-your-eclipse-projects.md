@@ -1,6 +1,6 @@
 # Use the Snyk plugin to secure your Eclipse projects
 
-Once the language server is downloaded and the authentication is completed, the plugin starts the workspace scan. You might notice a confirmation that a workspace scan is starting. Snyk shows such a notification when there is no workspace scan available.
+Once the language server is downloaded and the authentication is completed, the plugin starts the workspace scan. You might notice a confirmation that a workspace scan is starting. Alternatively, you can trigger a workspace scan from your project's context menu, or from the Snyk View.
 
 ![Starting workspace scan](<../../.gitbook/assets/Screenshot 2022-05-13 at 11.55.41.png>)
 

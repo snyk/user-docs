@@ -8,7 +8,7 @@ You’ll get two alerts in Slack:
 
 **1:** A newly disclosed vulnerability affects you
 
-![](<../../.gitbook/assets/image (23).png>)
+![](<../../.gitbook/assets/image (23) (1).png>)
 
 **2:** A new upgrade or patch is available for a vulnerability that you previously ignored or patched
 
