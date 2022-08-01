@@ -1,6 +1,6 @@
 # CLI commands and options summary
 
-**Note:** This page **only summarizes** the CLI commands and the options for each command. Be sure to **look at the help** for the command you are using **for details**.
+**Note:** This page **only summarizes** the CLI commands and the options for each command. Be sure to **use the links in this summary to look at the help** for the command you are using **for details**. (The help in the docs is the same as the help in the CLI.)
 
 ## Usage
 
