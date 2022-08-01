@@ -22,15 +22,15 @@ Future versions will add group-level access (for example, policies, group member
 
 You can find the default roles - Org Admin and Org Collaborator. When you click each of these roles you can view the associated permissions, but cannot modify the default roles.
 
-![](<../../../.gitbook/assets/Screenshot 2022-06-23 at 15.21.58.png>)
+![Create new role option under Group Settings](<../../../.gitbook/assets/Screenshot 2022-06-23 at 15.21.58.png>)
 
 Click the **Create new Role** button and enter a role name and description. Role names should be unique, and can contain alphanumeric characters plus spaces.
 
-![](<../../../.gitbook/assets/Screenshot 2022-06-23 at 15.28.12.png>)
+![Create a new role](<../../../.gitbook/assets/Screenshot 2022-06-23 at 15.28.12.png>)
 
 Click the **Create role** button. You will see basic details about the role in the top section.
 
-![](<../../../.gitbook/assets/Screenshot 2022-06-23 at 15.29.53.png>)
+![Role basic info](<../../../.gitbook/assets/Screenshot 2022-06-23 at 15.29.53.png>)
 
 The bottom section lists all the permissions available at the organization level that you use to define the role.
 
@@ -102,7 +102,13 @@ You can invite new members to the org by assigning them a specified role.
 
 Choose **Add members** button > **Add existing members** to promote current Group Members to an org-specific role.
 
-![](<../../../.gitbook/assets/Screenshot 2022-05-17 at 06.48.56.png>)
+![Add existing members](<../../../.gitbook/assets/Screenshot 2022-05-17 at 06.48.56.png>)
+
+{% hint style="warning" %}
+Snyk prevents users from assigning roles to others that have more privileges than what they already have. You would encounter the following error while trying to update the role of a member, invite a new member, or add an existing member with a role that has more privileges than the logged in user.
+{% endhint %}
+
+![User cannot assign more privileged role to another user](<../../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05.png>)
 
 ### Assigning roles to Service Accounts
 
@@ -117,9 +123,11 @@ When you open a role that is assigned to Service Accounts, system would display 
 
 ![](<../../../.gitbook/assets/Screenshot 2022-06-23 at 15.49.49.png>)
 
-{% hint style="danger" %}
-As a Group Admin, be mindful of the usage of permissions under User Management and Service Account Management while defining a role. A user with sufficient permission can create a service account that can have more privileges than their individual user account. This can pose a security risk for your organization.
+{% hint style="warning" %}
+Snyk prevents users from creating organisation service accounts with a role that has more privileges than what they already have. You would encounter the below error, while trying to create a service account with a role that has more privileges than the logged in user.
 {% endhint %}
+
+![](<../../../.gitbook/assets/Screenshot 2022-08-01 at 15.59.52.png>)
 
 ### Roles in Custom SSO
 
@@ -206,5 +214,5 @@ Permissions:
 
 * Permissions granted to users via Roles enable the same capabilities across all Snyk environments: Web UI, API, CLI, and IDE.
 * If the Role is expected to view organisation or project-related data or both along with other operations - `View Organization and View Project` permissions should be added to the role.
-* Permissions under User Management and Service Account Management can grant the ability to invite and create users with roles of a higher privilege than the user performing the action.
+* Snyk prevents role privileges from escalating so that users cannot assign a higher privileged role to others or cannot create service accounts with a higher privileged role.
 * It is advisable to use the Duplicate Role functionality and create a copy of a standard role and then amend the permissions instead of building a role from scratch if you are unsure about the permissions.
