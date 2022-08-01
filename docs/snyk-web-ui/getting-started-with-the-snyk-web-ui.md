@@ -43,7 +43,7 @@ Currently, Snyk only tracks and flags PRs in GitHub, GitHub Enterprise, and Bitb
 
 ![Use project links to explore and manage target options](<../.gitbook/assets/image (73) (3).png>)
 
-Use the project links to explore and manage the metadata, retest, and fix options for the target files in your projects. The link opens a page where you can view the project **Overview** options, or switch to the **History**, and **Settings** tabs.
+Use the project \*\*\*\* links to explore and manage the metadata, retest, and fix options for the target files in your projects. The link opens a page where you can view the project **Overview** options, or switch to the **History**, and **Settings** tabs.
 
 * For projects with the **Fix vulnerabilities** link, use the link to view the **Open a Fix PR** summary, where you'll find an option to open a fix PR to implement the upgrades and patches in GitHub that address the issues.\
   This page presents the list of issues with full, partial, or no fixes.
@@ -73,7 +73,7 @@ In the **Projects** tab, you can:
 
 ![Viewing the options in the Projects tab](../.gitbook/assets/projects\_tab-options.gif)
 
-## **Manage your** [**Integrations**](https://docs.snyk.io/integrations)
+## **Manage your** [**Integrations**](https://docs.snyk.io/integrations)\*\*\*\*
 
 In the **Integrations** tab, you can:
 

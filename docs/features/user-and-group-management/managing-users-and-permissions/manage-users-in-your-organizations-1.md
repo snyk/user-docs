@@ -1,9 +1,5 @@
 # Manage users in your group
 
-{% hint style="warning" %}
-**This feature is currently a Private Beta.**&#x20;
-{% endhint %}
-
 {% hint style="info" %}
 **Feature availability**\
 Groups are available with Enterprise and Business plans. See [pricing plans](https://snyk.io/plans/) for more details.
@@ -55,7 +51,7 @@ Click the filter icon (<img src="../../../.gitbook/assets/Screenshot 2022-03-11 
 
 #### Sort views
 
-You can sort by Name, Authentication method, Role, and Date joined.&#x20;
+You can sort by Name, Authentication method, Role, and Date joined.
 
 You can sort user views by clicking on the column heading:
 
