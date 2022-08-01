@@ -1,5 +1,7 @@
 # CLI commands and options summary
 
+**Note:** This page **only summarizes** the CLI commands and the options for each command. Be sure to **look at the help** for the command you are using **for details**.
+
 ## Usage
 
 `snyk [COMMAND] [SUBCOMMAND] [OPTIONS] [PACKAGE] [CONTEXT-SPECIFIC-OPTIONS]`
