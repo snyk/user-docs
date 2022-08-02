@@ -47,7 +47,7 @@ docker run --restart=always \
 
 ### Basic Troubleshooting
 
-**Support of big manifest files (> 1Mb) for GitHub / GitHub Enterprise**
+**Support of big manifest files (> 1Mb) for GitHub Enterprise**
 
 One of the reason for failing of open Fix/Upgrade PRs or PR/recurring tests might be fetching big manifest files (> 1Mb) failure. To address this issue, additional Blob API endpoint should be whitelisted in `accept.json`:
 

@@ -1,8 +1,8 @@
 # Setup Broker with GitHub
 
-Configuring GitHub Enterprise with Broker is useful to ensure a secure connection with your GitHub account.
+Configuring GitHub with Broker is useful to ensure a secure connection with your GitHub account.
 
-### To configure Broker to be used for GitHub Enterprise
+### To configure Broker to be used for GitHub&#x20;
 
 {% hint style="info" %}
 Ask for your CSM support to provide you with a Broker token
@@ -41,7 +41,7 @@ docker run --restart=always \
 
 ### Basic Troubleshooting
 
-#### **Support of big manifest files (> 1Mb) for GitHub / GitHub Enterprise**
+#### **Support of big manifest files (> 1Mb) for GitHub**&#x20;
 
 One reason for failing of open Fix/Upgrade PRs or PR/recurring tests may be fetching big manifest files (> 1Mb) failure. To address this issue, whitelist an additional Blob API endpoint in `accept.json`. This should be in a private array:
 
@@ -54,9 +54,9 @@ One reason for failing of open Fix/Upgrade PRs or PR/recurring tests may be fetc
 }
 ```
 
-**Note** To ensure the maximum possible security, Snyk does not enable this rule by default, as usage of this endpoint means that the Snyk platform can theoretically access all files in this repository, as the path does not include specific allowed file names.
+**Note:** To ensure the maximum possible security, Snyk does not enable this rule by default, as usage of this endpoint means that the Snyk platform can theoretically access all files in this repository, as the path does not include specific allowed file names.
 
 #### **Additional troubleshooting**
 
-* Run `docker logs <container id>` where container id is the GitHub Broker container ID to look for any errors
-* Ensure relevant ports are exposed to GitHub
+* Run `docker logs <container id>` where container id is the GitHub Broker container ID to look for any errors.
+* Ensure relevant ports are exposed to GitHub.
