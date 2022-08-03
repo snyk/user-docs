@@ -63,9 +63,9 @@ More information:
 
 For a small team, you may only need one organization. For bigger teams, you'll identify more organizations, which are aligned to your needs, in the earlier decisions. When planning multiple organizations, you'll want to complete all of the configurations for the first organization, so that you can use those settings as a template for creating any other organizations via the Snyk Web UI or via an API.
 
-#### Configure source code manager (SCM) integrations
+#### Configure Git repository integrations
 
-Snyk includes a number of automations for Snyk Open Source when integrated with a source code manager. These automations are a great way to mature your developer security program. However, the automations can introduce frustration for developers if introduced too early in your journey. Make sure your settings align with your phase of adoption.
+Snyk includes a number of automations for Snyk Open Source when integrated with a source code manager (SCM) on a Git repository. These automations are a great way to mature your developer security program. However, the automations can introduce frustration for developers if introduced too early in your journey. Make sure your settings align with your phase of adoption.
 
 More information:
 

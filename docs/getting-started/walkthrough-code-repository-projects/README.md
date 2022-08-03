@@ -12,7 +12,7 @@ For a higher-level set of guidance about rolling out your Snyk solution at a com
 
 This walkthrough assumes that you have signed up with a Snyk account, and that you have imported files into Snyk as Snyk Projects for scanning.
 
-If not, then please see the [Getting Started](../) page for details.
+If not, then please see the [Getting Started](../../getting-started.md) page for details.
 
 ### First step: see your projects
 

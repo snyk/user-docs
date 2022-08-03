@@ -15,7 +15,7 @@ Snyk supports a wide range of programming languages, allowing you to scan your c
 
 [Snyk integrations](https://docs.snyk.io/integrations) for your software development process include:
 
-* [**Source control**](../integrations/git-repository-scm-integrations/)**:** cloud and self-hosted SCMs such as Github.
+* [**Source control**](../integrations/git-repository-scm-integrations/)**:** cloud and self-hosted Git-based code repositories such as Github.
 * [**CI/CD integrations**](../integrations/ci-cd-integrations/): such as Jenkins or TeamCity.
 * **Artifact repositories:** such as Artifactory. See [Private registry gatekeeper plugins](https://docs.snyk.io/integrations/private-registry-gatekeeper-plugins) and [Private registry integrations](https://docs.snyk.io/integrations/private-registry-integrations).
 * [**Serverless integrations**](https://docs.snyk.io/integrations/serverless-integrations): such as AWS Lambda.

@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Recap**\
-You have signed up with a Snyk account, and you have imported files into Snyk as Snyk Projects for scanning. If not, then please see the [Getting Started](../) page for details
+You have signed up with a Snyk account, and you have imported files into Snyk as Snyk Projects for scanning. If not, then please see the [Getting Started](../../getting-started.md) page for details
 {% endhint %}
 
 ### See what Snyk scanned
@@ -16,19 +16,19 @@ We can now see your scan results.
 
 Open the [Snyk Web UI](../../snyk-web-ui/), navigate to your **Projects** page, and see your imported repositories (or **targets** if importing non-code information). For example:
 
-![](<../../.gitbook/assets/image (238).png>)
+![](<../../.gitbook/assets/image (97).png>)
 
-For each entry, the the left icon shows the number of Snyk Projects in each entry, plus the Git-based repository the projects are imported from. For example <img src="../../.gitbook/assets/image (222).png" alt="" data-size="line">.
+For each entry, the the left icon shows the number of Snyk Projects in each entry, plus the Git-based repository the projects are imported from. For example <img src="../../.gitbook/assets/image (124).png" alt="" data-size="line">.
 
 #### Private / public repositories: the lock symbol
 
 When [setting up your GitHub integration](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration), you can choose whether Snyk can access public and private repositories, or public repositories only:
 
-![](<../../.gitbook/assets/image (8).png>)
+![](<../../.gitbook/assets/image (10) (1).png>)
 
-When you then import a Project, private repositories are identified with a “lock” symbol (<img src="../../.gitbook/assets/image (211).png" alt="" data-size="line">) in the imported scan details:&#x20;
+When you then import a Project, private repositories are identified with a “lock” symbol (<img src="../../.gitbook/assets/image (131).png" alt="" data-size="line">) in the imported scan details:&#x20;
 
-![](<../../.gitbook/assets/image (253).png>)
+![](<../../.gitbook/assets/image (60).png>)
 
 For customers on free plans, private repository scans count towards your test count limit.
 
@@ -47,7 +47,7 @@ When you open an entry, you see the different Snyk Projects scanned in that entr
 
 For example:
 
-![](<../../.gitbook/assets/image (209).png>)
+![](<../../.gitbook/assets/image (113) (1).png>)
 
 ### Understand Project information
 
@@ -61,10 +61,10 @@ So, your project scan results can include such items as:
 
 | Example                                                                                         | Description                                                                                                                                                                                                     |
 | ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="../../.gitbook/assets/image (256).png" alt="" data-size="line">                       | Your own code analysis results, scanned by[ Snyk Code](../../products/snyk-code/).                                                                                                                              |
+| <img src="../../.gitbook/assets/image (40).png" alt="" data-size="line">                        | Your own code analysis results, scanned by[ Snyk Code](../../products/snyk-code/).                                                                                                                              |
 | <img src="../../.gitbook/assets/Screenshot 2022-07-20 at 11.14.02.png" alt="" data-size="line"> | Your open source libraries, scanned by [Snyk Open Source](../../products/snyk-open-source/), displaying each detected manifest, such as **pom.xml**, **package.json**, and other manifests for these libraries. |
-| <img src="../../.gitbook/assets/image (239).png" alt="" data-size="line">                       | Container results, scanned by [Snyk Container](../../products/snyk-container/), for items built into a container, such as a Docker file.                                                                        |
-| <img src="../../.gitbook/assets/image (83).png" alt="" data-size="original">                    | Kubernetes deployment files, terraform and other IaC files, scanned by [Snyk Infrastructure as Code (IaC)](../../products/snyk-infrastructure-as-code/).                                                        |
+| <img src="../../.gitbook/assets/image (142).png" alt="" data-size="line">                       | Container results, scanned by [Snyk Container](../../products/snyk-container/), for items built into a container, such as a Docker file.                                                                        |
+| <img src="../../.gitbook/assets/image (25).png" alt="" data-size="original">                    | Kubernetes deployment files, terraform and other IaC files, scanned by [Snyk Infrastructure as Code (IaC)](../../products/snyk-infrastructure-as-code/).                                                        |
 
 {% hint style="info" %}
 Other files and types can be displayed.
@@ -76,9 +76,9 @@ See [View project information](https://docs.snyk.io/introducing-snyk/introductio
 
 Snyk treats each item in this list as a separate **Project**.
 
-This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (230).png>)) to define how that Project is scanned:
+This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (117).png>)) to define how that Project is scanned:
 
-![](<../../.gitbook/assets/image (87).png>)
+![](<../../.gitbook/assets/image (141).png>)
 
 For example, you can use Project settings to change scan frequency, setting how often scans are run by default. See [View Project Settings](https://docs.snyk.io/introducing-snyk/introduction-to-snyk-projects/view-project-settings) for more information.
 
@@ -86,7 +86,7 @@ For example, you can use Project settings to change scan frequency, setting how 
 
 Let’s go back to the results for your scan:
 
-![](<../../.gitbook/assets/image (242).png>)
+![](<../../.gitbook/assets/image (126).png>)
 
 The scan shows you all vulnerabilities in all aspects of an application. Of course, it's unlikely that you are responsible for every entry in this list, but it's important to be aware of the full picture.
 
