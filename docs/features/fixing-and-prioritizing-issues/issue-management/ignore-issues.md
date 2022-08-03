@@ -70,7 +70,7 @@ For example:
 
 `snyk test` before ignoring in the UI:
 
-![](<../../../.gitbook/assets/image (18).png>)
+![](<../../../.gitbook/assets/image (18) (1).png>)
 
 `snyk test` after ignoring in the UI:
 

@@ -15,7 +15,7 @@
     * [Snyk settings](introducing-snyk/snyks-core-concepts/snyk-settings.md)
     * [Snyk Vulnerability Database](introducing-snyk/snyks-core-concepts/getting-started-snyk-intel-vuln-db-access.md)
   * [Glossary](introducing-snyk/glossary.md)
-* [Getting started](getting-started.md)
+* [Getting started](getting-started/README.md)
   * [Implementing Snyk in your teams](getting-started/implementing-snyk-in-your-teams.md)
   * [Walkthrough: Code Repository Projects](getting-started/walkthrough-code-repository-projects/README.md)
     * [View your first Snyk Projects](getting-started/walkthrough-code-repository-projects/view-your-first-snyk-projects.md)

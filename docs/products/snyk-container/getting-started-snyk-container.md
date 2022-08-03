@@ -11,7 +11,7 @@ This process uses the Snyk Web UI. For details of Snyk Container using the Snyk 
 Ensure you have:
 
 * Access to a relevant container registry to use with Snyk. Snyk supports multiple registries--see [image-scanning-library](image-scanning-library/ "mention") for details.
-* A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [getting-started.md](../../getting-started.md "mention").
+* A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [getting-started](../../getting-started/ "mention").
 
 ### Stage 1: Add container registry integration
 
@@ -43,7 +43,7 @@ You can now see vulnerability results for imported projects.
 
 Select **Projects**, then click on the imported project entry under its registry record, to see vulnerability information for that project.
 
-![](<../../.gitbook/assets/mceclip2 (1) (1) (1) (3) (3) (4) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (8).png>)
+![](<../../.gitbook/assets/mceclip2 (1) (1) (1) (3) (3) (4) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (28).png>)
 
 Here you can see a summary of the severity of the detected vulnerabilities.
 

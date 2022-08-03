@@ -15,7 +15,7 @@ Ensure you have:
 
 * A code project using open source packages, on a supported SCM system such as GitHub. See [git-repository-scm-integrations](../../integrations/git-repository-scm-integrations/ "mention").
 * A supported language and package manager, such as Java. See [language-and-package-manager-support](language-and-package-manager-support/ "mention").
-* A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [getting-started.md](../../getting-started.md "mention")).
+* A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [getting-started](../../getting-started/ "mention")).
 
 ### Stage 1: Add source control integration
 
