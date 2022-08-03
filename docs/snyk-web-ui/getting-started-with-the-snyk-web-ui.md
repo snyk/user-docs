@@ -49,7 +49,7 @@ Use the project links to explore and manage the metadata, retest, and fix option
   This page presents the list of issues with full, partial, or no fixes.
 * For the other relevant projects, use **View PR** links to open and view the Snyk-generated PR fixes in GitHub.
 
-![Target page: details and options for a single project from the dashboard](<../.gitbook/assets/dockerfile\_fix\_vulnerabilities (1) (1) (1) (1) (1) (1) (1) (1) (1).gif>)
+![Target page: details and options for a single project from the dashboard](<../.gitbook/assets/dockerfile\_fix\_vulnerabilities (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).gif>)
 
 ## [**Reports**](https://docs.snyk.io/features/reports)
 
@@ -101,7 +101,7 @@ Use the <img src="../.gitbook/assets/cog_icon.png" alt="" data-size="line"> menu
 
 "Ring the bell" to view a summary from [**snyk.io updates**](https://updates.snyk.io/).
 
-![Snyk product updates](<../.gitbook/assets/image (78) (2).png>)
+![Snyk product updates](<../.gitbook/assets/image (78) (1).png>)
 
 ## View helpful resources
 

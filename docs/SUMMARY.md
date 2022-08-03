@@ -239,6 +239,7 @@
     * [License policies: What collaborators see](products/snyk-open-source/license-policies/license-policies-what-collaborators-see.md)
   * [Dependency management](products/snyk-open-source/dependency-management/README.md)
     * [Upgrading dependencies with automatic PRs](products/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs.md)
+  * [Understanding the Snyk Open Source CLI results](products/snyk-open-source/understanding-the-snyk-open-source-cli-results.md)
   * [Use Snyk Open Source from the CLI](products/snyk-open-source/use-snyk-open-source-from-the-cli.md)
 * [Snyk Code](products/snyk-code/README.md)
   * [Introducing Snyk Code](products/snyk-code/introducing-snyk-code/README.md)

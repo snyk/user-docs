@@ -24,11 +24,11 @@ For each entry, the the left icon shows the number of Snyk Projects in each entr
 
 When [setting up your GitHub integration](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration), you can choose whether Snyk can access public and private repositories, or public repositories only:
 
-![](<../../.gitbook/assets/image (10) (1).png>)
+![](<../../.gitbook/assets/image (10).png>)
 
 When you then import a Project, private repositories are identified with a “lock” symbol (<img src="../../.gitbook/assets/image (131).png" alt="" data-size="line">) in the imported scan details:&#x20;
 
-![](<../../.gitbook/assets/image (60).png>)
+![](<../../.gitbook/assets/image (60) (1).png>)
 
 For customers on free plans, private repository scans count towards your test count limit.
 
@@ -47,7 +47,7 @@ When you open an entry, you see the different Snyk Projects scanned in that entr
 
 For example:
 
-![](<../../.gitbook/assets/image (113) (1).png>)
+![](<../../.gitbook/assets/image (113).png>)
 
 ### Understand Project information
 

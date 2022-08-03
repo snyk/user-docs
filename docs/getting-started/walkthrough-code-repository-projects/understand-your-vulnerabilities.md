@@ -44,7 +44,7 @@ For Open Source and Container vulnerabilities, click on the Snyk vulnerability I
 
 For this example, click on the Snyk vulnerability Identifier to see how Hibernate core and its libraries are vulnerable to SQL injection:
 
-![](<../../.gitbook/assets/image (112) (2).png>)
+![](<../../.gitbook/assets/image (112).png>)
 
 {% hint style="info" %}
 [Snyk Code](../../products/snyk-code/) and [Snyk IaC](../../products/snyk-infrastructure-as-code/) issue cards have separate information sets for these areas.
@@ -82,7 +82,7 @@ Snyk uses the package manager of your application to build the dependency tree a
 
 ![](<../../.gitbook/assets/image (96).png>)
 
-Click the file tree icon (![](<../../.gitbook/assets/image (31) (1).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
+Click the file tree icon (![](<../../.gitbook/assets/image (31).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
 
 ![](<../../.gitbook/assets/image23 (1).png>)
 
