@@ -7,7 +7,7 @@ The following describes how to use Snyk to scan your Go projects:
 ### Features <a href="#h_01esm3gfnmn0f7art59aek97tm" id="h_01esm3gfnmn0f7art59aek97tm"></a>
 
 {% hint style="info" %}
-Features might not be available, depending on your subscription plan.
+Some of these features may not be available for your Snyk subscription plan.
 {% endhint %}
 
 | Package managers / Features                       | CLI support | Git support | License scanning | Fix PRs |
