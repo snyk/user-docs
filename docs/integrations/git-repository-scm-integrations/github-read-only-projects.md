@@ -6,7 +6,7 @@ Snyk offers the ability to monitor a public GitHub repository that is not owned 
 
 This allows you to track the vulnerabilities in a project you are considering using as a dependency, are using as a stand-alone independent tool within your business, or any other public repository where you do not need to actively prevent or fix issues using Snyk's tool.
 
-The repository will be automatically tested daily using your organization's GitHub credentials, and tests do not count against any test limits you may have.
+The repository is tested daily using your organization's GitHub credentials. These automated tests are not counted as part of any test limits related to your Snyk plan.
 
 Unlike projects imported through the Snyk GitHub integration, projects imported/monitored in this way are not eligible for:
 
@@ -22,7 +22,7 @@ You can import a read-only project via the **Add project** **> Monitor public Gi
 
 ![](../../.gitbook/assets/screen\_shot\_2020-06-09\_at\_14.27.40.png)
 
-1. As in the previous section, enter a public repository to monitor, following the format _owner/repository_.
+1. Enter a public repository to monitor, following the format _owner/repository_.
 2. When a valid repository name is entered, click **+ Add repo**. \
    The repository is quickly tested for a supported manifest file.
 3. Enter the public repositories you want to monitor and click "Import X repository/ies".
