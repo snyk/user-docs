@@ -14,7 +14,7 @@ Manage the default settings for which notifications Snyk sends at the [group](no
 
 You can also send notifications for an organization to a designated [Slack channel](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration).
 
-![](<../../.gitbook/assets/image (48) (1).png>)
+![](<../../.gitbook/assets/image (48) (1) (1).png>)
 
 ### Define group notification defaults
 

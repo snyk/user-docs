@@ -28,8 +28,6 @@ If you want to merge PRs that have security issues, and therefore were failed by
 
 The **Mark as successful** action does NOT ignore the issue, but only allows it to pass in the current PR branch. If this issue will not be fixed, it will show up again in future commits and in the repository tests, once it will be merged into the target branch.
 
-**Note:** The **Mark as successful** option is not supported in Bitbucket Server integration.
-
 **To mark failed PR checks as successful:**
 
 1\. On the **SAST check** page header, click the **Mark as successful in SCM** button on the right:
