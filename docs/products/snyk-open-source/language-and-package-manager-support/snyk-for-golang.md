@@ -1,4 +1,4 @@
-# Snyk for Golang
+# Snyk for Go
 
 Snyk supports testing and monitoring of Go projects that have their dependencies managed by [Go Modules](https://golang.org/ref/mod), [dep](https://github.com/golang/dep) and [govendor](https://github.com/kardianos/govendor).
 
@@ -64,7 +64,6 @@ When testing Govendor projects via the CLI Snyk requires dependencies to be inst
 ### **Go Modules**
 
 {% hint style="info" %}
-**Note**\
 For Go Modules projects imported via Git, dependencies are resolved at the _module_ level rather than the _package_ level, as we do not have full access to your project source code.\
 This means you may see more issues (including potential false positives) reported than for projects tested in the CLI, as we report all vulnerabilities for each module not just the package(s) referenced in your source code.
 {% endhint %}
@@ -73,7 +72,11 @@ In order to build the dependency tree Snyk runs the `go mod graph` command using
 
 **Private modules**
 
-Go Modules projects that depend on modules from private Git repositories are supported where the private repositories are in the same Git organization as the main project repository.
+Go Modules projects that depend on modules from private Git repositories are supported when the private repositories are in the same Git organization as the main project repository.&#x20;
+
+{% hint style="info" %}
+Snyk supports a single private Git repository for Go Modules projects.
+{% endhint %}
 
 Imports for projects with private modules from repos in other Git organizations will fail. Support for private module dependencies from other Git organizations is planned for the future.
 
