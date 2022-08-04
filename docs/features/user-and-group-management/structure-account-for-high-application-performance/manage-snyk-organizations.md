@@ -49,13 +49,13 @@ If groups are being used in the organization, only a Group Admin can delete the 
 
 ![](<../../../.gitbook/assets/Org Settings - Selecting an Org.png>)
 
-2\. After the selected organization appears, click the **Org Settings** button<img src="../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5).png" alt="" data-size="line">on the top menu:
+2\. After the selected organization appears, click the **Org Settings** button<img src="../../../.gitbook/assets/Snyk Code - Org Settings button - Icon (1).png" alt="" data-size="line">on the top menu:
 
 ![](<../../../.gitbook/assets/Org Settings - Button.png>)
 
 3\. On the **Settings** page, select **Genera**l on the left menu:
 
-![](<../../../.gitbook/assets/Org Settings - General tab (1).png>)
+![](<../../../.gitbook/assets/Org Settings - General tab.png>)
 
 3\. Scroll down to the **Delete organization** section, and click the **Delete organization** button:
 

@@ -64,11 +64,11 @@ You can use the Duplicate button next to each role in the Member Roles list page
 
 ![Member Roles List page with Duplicate Role buttons](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.09.png>)
 
-![Role details page with Duplicate button](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.40.png>)
+![Role details page with Duplicate button](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.40 (1).png>)
 
 Enter a unique name and description and click the **Duplicate Role** button. Group Admin can then edit this role to assign new permissions to it or rescind any permissions already assigned.
 
-![Prompt to enter unique name and description for the copied role](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.40.27 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Prompt to enter unique name and description for the copied role](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.40.27 (2) (1).png>)
 
 ### Delete a Role
 
@@ -108,7 +108,7 @@ Choose **Add members** button > **Add existing members** to promote current Grou
 Snyk prevents users from assigning roles to others that have more privileges than what they already have. You would encounter the following error while trying to update the role of a member, invite a new member, or add an existing member with a role that has more privileges than the logged in user.
 {% endhint %}
 
-![User cannot assign more privileged role to another user](<../../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05.png>)
+![User cannot assign more privileged role to another user](<../../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05 (1).png>)
 
 ### Assigning roles to Service Accounts
 

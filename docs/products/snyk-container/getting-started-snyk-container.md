@@ -14,7 +14,7 @@ Ensure you have:
 * [Set up integration](../../getting-started/set-up-an-integration.md) for your container registry, for example Docker Hub. Snyk supports multiple registries**;** see [image-scanning-library](image-scanning-library/ "mention") for details
 * [Imported a Snyk Project for scanning](../../getting-started/import-a-project.md) (your container registry)
 
-See the [Getting started](../../getting-started.md) section for more details.
+See the [Getting started](../../getting-started/) section for more details.
 
 ### View vulnerabilities
 
@@ -22,7 +22,7 @@ You can see vulnerability results for imported projects.
 
 Select **Projects**, then click on the imported project entry under its registry record, to see vulnerability information for that project.
 
-![](<../../.gitbook/assets/mceclip2 (1) (1) (1) (3) (3) (4) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (8).png>)
+![](<../../.gitbook/assets/mceclip2 (1) (1) (1) (3) (3) (4) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (28).png>)
 
 Here you can see a summary of the severity of the detected vulnerabilities.
 
