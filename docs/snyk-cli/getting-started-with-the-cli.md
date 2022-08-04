@@ -41,7 +41,7 @@ Notifications about newly disclosed issues related to these dependencies will be
 
 You can log in to the Snyk Web UI, and navigate to the [Projects page](https://app.snyk.io/projects) to see the latest snapshot and scan results:
 
-![Snyk monitor snapshot and scan results](../.gitbook/assets/monitor.png)
+![Snyk monitor snapshot and scan results](<../.gitbook/assets/monitor (1).png>)
 
 For more information see [Monitor your projects at regular intervals](test-for-vulnerabilities/monitor-your-projects-at-regular-intervals.md).
 

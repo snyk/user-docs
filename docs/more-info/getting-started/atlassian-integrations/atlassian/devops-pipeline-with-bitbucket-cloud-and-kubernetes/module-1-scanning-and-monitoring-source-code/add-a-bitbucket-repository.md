@@ -14,15 +14,15 @@ The source repository is publicly available at this location:
 
 In Bitbucket, navigate to your workspace and import the repository so you can freely make changes by clicking on the "Create Repository" button in your Repositories view.
 
-![](<../../../../../../.gitbook/assets/image (122).png>)
+![](<../../../../../../.gitbook/assets/image (93) (1).png>)
 
 Next, you'll be presented with a screen to select a workspace and other details. In this screen, click on the **Import repository** link.
 
-![](<../../../../../../.gitbook/assets/image (91) (1).png>)
+![](<../../../../../../.gitbook/assets/image (91) (1) (1).png>)
 
 The new screen asks for the URL to your Old Repository. Enter [https://github.com/snyk-labs/java-goof](https://github.com/snyk-labs/java-goof) for that field, and select the Workspace, and Project. The external repository does not require authentication, and your access level as Private or Public is your choice. If desired, rename the repository.
 
-![](<../../../../../../.gitbook/assets/image (157).png>)
+![](<../../../../../../.gitbook/assets/image (67) (1) (1).png>)
 
 Click **Import repository** to complete the process.
 
