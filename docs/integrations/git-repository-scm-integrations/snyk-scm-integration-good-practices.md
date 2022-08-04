@@ -79,7 +79,7 @@ See [Notification management](https://docs.snyk.io/features/user-and-group-manag
      Imported projects appear underneath the repository name. \
      After a project is imported, it is  continuously checked for vulnerabilities.
 2. To confirm that a project was imported, go to the **Add project** import page for the integration. \
-   Imported projects are indicated by a ✔ next to the repo name: <img src="../../.gitbook/assets/image (211).png" alt="" data-size="line">
+   Imported projects are indicated by a ✔ next to the repo name: <img src="../../.gitbook/assets/image (5).png" alt="" data-size="line">
 
 ![](../../.gitbook/assets/add\_project-10july2022.png)
 

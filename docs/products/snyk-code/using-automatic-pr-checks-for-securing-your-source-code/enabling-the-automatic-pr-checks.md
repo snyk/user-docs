@@ -16,9 +16,9 @@ When enabling the Automatic PR Checks feature for an entire organization, all th
 
 1\. On the Snyk Web UI, open the required organization:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Selecting Organization (1).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Selecting Organization (1) (1).png>)
 
-2\. Once the required organization is open, click the **Org Settings** button <img src="../../../.gitbook/assets/Snyk Code - PR Checks - Org Settings button - Icon (1).png" alt="" data-size="line"> on the top menu:
+2\. Once the required organization is open, click the **Org Settings** button <img src="../../../.gitbook/assets/Snyk Code - PR Checks - Org Settings button - Icon.png" alt="" data-size="line"> on the top menu:
 
 ![](<../../../.gitbook/assets/Snyk Code - PR  Checks - Org Settings button.png>)
 
@@ -56,7 +56,7 @@ By default, the Settings on the Project level override the Settings on the organ
 
 1\. On the Snyk Web UI, open the organization that includes the required Project:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Selecting Organization (1).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Selecting Organization (1) (1).png>)
 
 2\. Move to the **Projects** page by clicking the **Projects** tab on the top menu.
 

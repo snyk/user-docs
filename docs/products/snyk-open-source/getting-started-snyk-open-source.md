@@ -3,10 +3,10 @@
 Use Snyk Open Source to scan and fix vulnerabilities in your application's Open Source libraries, for a [supported language and package manager](language-and-package-manager-support/), such as Java.
 
 {% hint style="info" %}
-This process describes getting started using the Snyk Web UI and a SCM (source code management) system.
+This process describes getting started using the [Snyk Web UI](../../snyk-web-ui/) with a Git-based source repository.
 
 * You can also use an [IDE tool](https://docs.snyk.io/integrations/ide-tools) or a [CI/CD integration](https://docs.snyk.io/integrations/ci-cd-integrations). See [Integrations](https://docs.snyk.io/integrations).
-* You can get started with the [snyk-cli](../../snyk-cli/ "mention"); see [getting-started-with-the-cli.md](../../snyk-cli/getting-started-with-the-cli.md "mention").
+* You can also [use Snyk Open Source from the CLI](use-snyk-open-source-from-the-cli/).
 {% endhint %}
 
 ### **Prerequisites**
@@ -54,6 +54,6 @@ To fix vulnerabilities:
 5. Snyk now actions this PR, then a results screen appears.
 6. Optionally, select the **Files changed** tab to see details of the changes made.
 
-![](../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22.png)
+![](<../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22 (1).png>)
 
 See [fix-your-vulnerabilities.md](../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md "mention") for more details.

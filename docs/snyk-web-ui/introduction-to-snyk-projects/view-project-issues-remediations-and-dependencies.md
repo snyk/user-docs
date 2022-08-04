@@ -26,7 +26,7 @@ You can also select to fix a specific issue, clicking **Fix this vulnerability**
 
 ![](../../.gitbook/assets/image26.png)
 
-See [Fixing vulnerabilities](https://docs.snyk.io/snyk-open-source/open-source-basics/fixing-vulnerabilities) for an overview.\
+See [Fix vulnerabilities with Snyk Open Source](../../products/snyk-open-source/open-source-basics/) for an overview.\
 See [Fixing and prioritizing issues](https://docs.snyk.io/fixing-and-prioritizing-issues) for more details.
 
 #### View issue details
@@ -45,12 +45,12 @@ Snyk's knowledge of the transitive dependencies in your project make it possible
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-19 at 11.57.07.png>)
 
-See [Fixing vulnerabilities](../../products/snyk-open-source/open-source-basics/fixing-vulnerabilities.md) for details.
+See [Fixing vulnerabilities](broken-reference) for details.
 
 ### View dependencies
 
 Snyk uses the package manager of your application to build the dependency tree and display it in the **dependency** tab of the project view. This shows which components introduce a vulnerability, to show how the dependency was introduced to the application:
 
-![](<../../.gitbook/assets/image23 (1).png>)
+![](../../.gitbook/assets/image23.png)
 
 For example, the above screenshot shows a vulnerability based on the transitive dependency **qs@2.2.4**, brought in from the direct dependency **body-parser@ 1.9.0**.

@@ -81,7 +81,7 @@ Snyk tests any newly created pull requests in your repositories for security vul
 
 The example below presents how Snyk pull request checks appear on the GitHub Enterprise Pull Request page.
 
-![](<../../.gitbook/assets/pr\_testing-14july2022 (1).png>)
+![](../../.gitbook/assets/pr\_testing-14july2022.png)
 
 To review and adjust the pull request tests settings:
 

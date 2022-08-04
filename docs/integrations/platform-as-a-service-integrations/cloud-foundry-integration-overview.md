@@ -21,7 +21,7 @@ In order for Snyk to be able to monitor your deployed Cloud Foundry applications
 
 This will take you to a page where you’ll be prompted to enter your Cloud Foundry API URL, username and password. We recommend setting up a dedicated user for your Snyk organization.
 
-![](../../.gitbook/assets/uuid-9710041e-427e-d577-ec40-5d3d1c818b5d-en.png)
+![](<../../.gitbook/assets/uuid-9710041e-427e-d577-ec40-5d3d1c818b5d-en (1).png>)
 
 Instructions for how to locate your Cloud Foundry API URL are below.
 

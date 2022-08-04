@@ -83,11 +83,11 @@ Snyk tests any newly created pull request in your repositories for security vuln
 
 The example below presents how Snyk pull request checks appear on the GitHub Pull Request page.
 
-![](<../../.gitbook/assets/pr\_testing-14july2022 (1).png>)
+![](../../.gitbook/assets/pr\_testing-14july2022.png)
 
 You can review and adjust the pull request tests settings via the Snyk GitHub Integration settings page in <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> (Organization Settings)  **>** **Integrations > Source control > GitHub**.&#x20;
 
-![](<../../.gitbook/assets/image (178).png>)
+![](<../../.gitbook/assets/image (3).png>)
 
 ## Required permissions scope for the GitHub integration
 
@@ -232,16 +232,16 @@ For example, to show a badge for the 4.x branch of the express repo, you would u
 
 #### Badge results
 
-* A green badge indicates that there are no vulnerabilities.   <img src="../../.gitbook/assets/image (61).png" alt="" data-size="line">
-* A red badge indicates how many vulnerabilities were found.   <img src="../../.gitbook/assets/image (240).png" alt="" data-size="line">   &#x20;
-* A grey badge indicates that the repository has not been scanned.   <img src="../../.gitbook/assets/image (191).png" alt="" data-size="line">&#x20;
+* A green badge indicates that there are no vulnerabilities.   <img src="../../.gitbook/assets/image (298).png" alt="" data-size="line">
+* A red badge indicates how many vulnerabilities were found.   <img src="../../.gitbook/assets/image (180).png" alt="" data-size="line">   &#x20;
+* A grey badge indicates that the repository has not been scanned.   <img src="../../.gitbook/assets/image (179).png" alt="" data-size="line">&#x20;
 
 #### **Badge styles**
 
 To change the style of the badge, you can add the following query parameters after `badge.svg`:
 
-* Flat rectangle with squared edges: `?style=flat-square`   <img src="../../.gitbook/assets/image (291).png" alt="" data-size="line">
-* "Plastic" rectangle with rounded edges and shading `?style=plastic`   <img src="../../.gitbook/assets/image (61).png" alt="" data-size="line">
+* Flat rectangle with squared edges: `?style=flat-square`   <img src="../../.gitbook/assets/image (318).png" alt="" data-size="line">
+* "Plastic" rectangle with rounded edges and shading `?style=plastic`   <img src="../../.gitbook/assets/image (298).png" alt="" data-size="line">
 
 ### **npm badges**
 

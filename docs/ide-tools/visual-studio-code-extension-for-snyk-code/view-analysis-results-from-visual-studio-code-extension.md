@@ -14,7 +14,7 @@ The icons have the following meaning:
 | --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](<../../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>) High severity   | May allow attackers to access sensitive data on your application.                                                                            |
 | ![](<../../.gitbook/assets/image (63) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>) Medium severity | May allow attackers under some conditions to access sensitive data on your application.                                                      |
-| ![](<../../.gitbook/assets/image (241).png>) Low severity                                                                                           | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
+| ![](<../../.gitbook/assets/image (38).png>) Low severity                                                                                            | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
 
 You can filter the issues by setting the severities you want to see using the `snyk.severity` setting. For example, set `"snyk.severity": { "critical": true, "high": true, "medium": true, "low": false }` to hide low severity issues. You can also apply the setting in the Settings UI.
 
@@ -61,7 +61,7 @@ Find security vulnerabilities in your JavaScript packages from well-known CDNs. 
   * yastatic.net
   * ajax.aspnetcdn.com
 
-![Vulnerability from a CDN](<../../.gitbook/assets/oss-editor-html (1).png>)
+![Vulnerability from a CDN](../../.gitbook/assets/oss-editor-html.png)
 
 You can navigate to the most severe vulnerability by triggering the provided code actions. This opens a vulnerability window to show more details:
 

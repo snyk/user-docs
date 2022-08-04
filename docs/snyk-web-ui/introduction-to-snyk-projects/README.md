@@ -52,7 +52,7 @@ Possible values are:
 
 Origins are a property of [Targets](./#targets) and appear in the Projects menu, as an icon by the target name.
 
-![](<../../.gitbook/assets/image (119).png>)
+![](<../../.gitbook/assets/image (277).png>)
 
 ### Snyk Projects
 
