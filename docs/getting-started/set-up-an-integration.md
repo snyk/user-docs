@@ -19,6 +19,10 @@ First, log in to the Snyk Web UI ([app.snyk.io](https://app.snyk.io)), and selec
 
 ![](<../.gitbook/assets/Screenshot 2022-07-26 at 13.26.22.png>)
 
+{% hint style="info" %}
+If an integration is already configured for your Organization, it is marked as **Configured**.
+{% endhint %}
+
 Next, click the source control system (for example, [GitHub](../integrations/git-repository-scm-integrations/github-integration.md)) to integrate with Snyk.
 
 Finally, to grant Snyk access permissions to the integrated source control system, enter your account credentials and save your details when prompted.

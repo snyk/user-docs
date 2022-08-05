@@ -45,7 +45,7 @@ We recommend that you set Snyk status checks to be mandatory for merging pull re
 
 2\. Open the **Projects** tab, and select the required Project. Then, click the **Settings** button on the right side of its row:
 
-![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (4).png>)
 
 3\. On the Project **Settings** page, select **GitHub integration** on the left menu.
 
@@ -54,11 +54,11 @@ We recommend that you set Snyk status checks to be mandatory for merging pull re
 * **Inherit from Integration settings** - the Project will use the PR Checks settings of its organization. If you want to use this option, select it and click the **Update Snyk test pull request settings** button. If you do not want to make additional changes, you can exit this page.
 * **Custom** - the Project will use custom PR Checks settings. If you want to use this option, select it and move to the next step.
 
-![](<../../.gitbook/assets/image (1).png>)
+![](<../../.gitbook/assets/image (5).png>)
 
 5\. \[For the **Custom** option only] Activate the **Custom** option by moving the slider to **Enabled**:
 
-![](<../../.gitbook/assets/image (9).png>)
+![](<../../.gitbook/assets/image (1).png>)
 
 6\. From the **Fail conditions** drop-down list, select one of the following options:
 
