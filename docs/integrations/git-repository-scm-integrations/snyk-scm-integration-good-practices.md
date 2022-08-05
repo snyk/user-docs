@@ -72,16 +72,19 @@ See [Notification management](https://docs.snyk.io/features/user-and-group-manag
 
 ## Stage 2: Import Projects
 
-1. Go to the **Projects** page in the Snyk UI, select **Add projects**, select the repos to import to Snyk, and click **Add selected repositories**.&#x20;
-   * Snyk starts scanning the selected repos for dependency files (for example, **package.json**) in the entire directory tree and imports these files as projects.
-   * Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.
-   * Snyk detects the manifest files (projects), tests them, then displays the results. \
-     Imported projects appear underneath the repository name. \
-     After a project is imported, it is  continuously checked for vulnerabilities.
-2. To confirm that a project was imported, go to the **Add project** import page for the integration. \
-   Imported projects are indicated by a ✔ next to the repo name: <img src="../../.gitbook/assets/image (42).png" alt="" data-size="line">
+Go to the **Projects** page in the Snyk UI, select **Add projects**, select the repos to import to Snyk, and click **Add selected repositories**.&#x20;
 
-![](../../.gitbook/assets/add\_project-10july2022.png)
+![](<../../.gitbook/assets/image (4).png>)
+
+* Snyk starts scanning the selected repos for dependency files (for example, **package.json**) in the entire directory tree and imports these files as projects.
+* Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.
+* Snyk detects the manifest files (projects), tests them, then displays the results. \
+  Imported projects appear underneath the repository name. \
+  After a project is imported, it is  continuously checked for vulnerabilities.
+
+{% hint style="info" %}
+To confirm that a project was imported, go to the **Add project** import page for the integration. Imported projects are indicated by a ✔ next to the repo name: <img src="../../.gitbook/assets/image (42).png" alt="" data-size="line">
+{% endhint %}
 
 ## Stage 3: Enable Snyk test on PRs
 

@@ -2,17 +2,17 @@
 
 The **Licenses** area displays all licenses that are currently used in your project, as well as a summary of all dependencies in your projects and a summary of all of your projects using the license.
 
-![](../../../.gitbook/assets/uuid-a6504677-415d-2241-f92c-f7c028795e7f-en.png)
+![](<../../../.gitbook/assets/image (3).png>)
 
 **Licenses tab elements**
 
 The following table describes the different parts of the **Licenses** area:
 
-| **Element** | **Description** |
-| :--- | :--- |
-| License | The full official name of the license, linked to additional details and information. SPDX licenses are linked to the [SPDX](https://spdx.org/) site, while non-SPDX licenses are linked to their respective site. |
-| Dependencies | The total number of dependent packages with this license in your projects, linked to a side panel that displays the full list of affected dependencies in the same layout as the [**Dependencies** area](https://snyk.io/?post_type=docs&p=12382&preview=true). |
-| Projects | The total number of your projects using this license, linked to a side panel that displays the full list of your affected projects, with the same layout as the **Dependencies** tab. |
+| **Element**  | **Description**                                                                                                                                                                                                                                                    |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| License      | The full official name of the license, linked to additional details and information. SPDX licenses are linked to the [SPDX](https://spdx.org/) site, while non-SPDX licenses are linked to their respective site.                                                  |
+| Dependencies | The total number of dependent packages with this license in your projects, linked to a side panel that displays the full list of affected dependencies in the same layout as the [**Dependencies** area](https://snyk.io/?post\_type=docs\&p=12382\&preview=true). |
+| Projects     | The total number of your projects using this license, linked to a side panel that displays the full list of your affected projects, with the same layout as the **Dependencies** tab.                                                                              |
 
 **Licenses tab actions**
 
@@ -27,4 +27,3 @@ These controls appear at the top of the window:
 ![](../../../.gitbook/assets/uuid-53b0da21-ca9b-a04c-354a-97219ae7c05b-en-1-.png)
 
 * **Export as CSV**—export issue data in CSV file format.
-

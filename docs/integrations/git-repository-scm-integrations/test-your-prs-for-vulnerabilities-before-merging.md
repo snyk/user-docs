@@ -23,7 +23,7 @@ Settings on the project level override the settings on the organization level. C
 ## Configure the pull request test settings for your organization
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
-2. Click on settings ![](../../.gitbook/assets/cog\_icon.png) > **Integrations**.
+2. Click on settings <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Integrations**.
 3. Click **Edit Settings** for integration required.
 4. Navigate to the **Default Snyk test for pull requests** section:
 5. Choose settings from the dropdown list as follows:
@@ -45,22 +45,20 @@ We recommend that you set Snyk status checks to be mandatory for merging pull re
 
 2\. Open the **Projects** tab, and select the required Project. Then, click the **Settings** button on the right side of its row:
 
-![](<../../.gitbook/assets/PR Checks - Project Settings button.png>)
+![](../../.gitbook/assets/image.png)
 
-3\. On the Project **Settings** page, select **GitHub integration** on the left menu:
-
-![](<../../.gitbook/assets/PR Checks - Project Settings - GitHub integration tab.png>)
+3\. On the Project **Settings** page, select **GitHub integration** on the left menu.
 
 4\. On the **Snyk test for pull requests** section, select one of the following:
 
 * **Inherit from Integration settings** - the Project will use the PR Checks settings of its organization. If you want to use this option, select it and click the **Update Snyk test pull request settings** button. If you do not want to make additional changes, you can exit this page.
 * **Custom** - the Project will use custom PR Checks settings. If you want to use this option, select it and move to the next step.
 
-![](<../../.gitbook/assets/PR Checks - Project Settings - Inherit or Custom options.png>)
+![](<../../.gitbook/assets/image (1).png>)
 
 5\. \[For the **Custom** option only] Activate the **Custom** option by moving the slider to **Enabled**:
 
-![](<../../.gitbook/assets/PR Checks - Project Settings - Custom - Enabled.png>)
+![](<../../.gitbook/assets/image (9).png>)
 
 6\. From the **Fail conditions** drop-down list, select one of the following options:
 
@@ -73,8 +71,6 @@ We recommend that you set Snyk status checks to be mandatory for merging pull re
 
 * **Only fail for high or critical severity issues** - fail the check for high or critical severity issues only.
 * **Only fail when the issues found have a fix available** - fail the check for issues, only if there is also a fix for those issues.
-
-![](<../../.gitbook/assets/PR Checks - Project Settings - Custom - Fail conditions.png>)
 
 8\. Click the **Update Snyk test pull request settings** button to update the Project settings.
 

@@ -40,16 +40,14 @@ See [Snyk Priority Score](../../features/fixing-and-prioritizing-issues/issue-ma
 
 Severity levels are displayed throughout Snyk, to show this information at all times.
 
-For example, in the initial dashboard:
+For example, in the **Pending tasks** section of the Dashboard:
 
-![](<../../.gitbook/assets/image (46) (1).png>)
+<img src="../../.gitbook/assets/image (6).png" alt="" data-size="original">
 
-For your projects:
+Associated with your [Projects](projects.md):
 
 ![](<../../.gitbook/assets/image (43) (1).png>)
 
 And for each vulnerability in a project:
 
 ![](<../../.gitbook/assets/image (39) (1).png>)
-
-See [Getting started](https://docs.snyk.io/getting-started) documentation for more details of using Snyk.
