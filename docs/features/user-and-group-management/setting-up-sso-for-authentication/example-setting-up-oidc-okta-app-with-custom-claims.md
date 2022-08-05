@@ -56,7 +56,7 @@
    5.  Include in: Set the scope that will be passed to Snyk\
 
 
-       ![](<../../../.gitbook/assets/Untitled (1).png>)
+       ![](<../../../.gitbook/assets/Untitled (2).png>)
 
 
 

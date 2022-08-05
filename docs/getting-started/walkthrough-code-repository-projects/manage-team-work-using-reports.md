@@ -14,7 +14,7 @@ Reports are available with Business and Enterprise plans. See [pricing plans](ht
 
 Click **Reports** to access the vulnerability information for all Snyk Projects in your Organization:
 
-![](<../../.gitbook/assets/image (22).png>)
+![](<../../.gitbook/assets/image (126).png>)
 
 {% hint style="info" %}
 By default, results are shown for the last 90 days; use the **Show report for:** dropdown on the top right to change this default.
@@ -26,13 +26,13 @@ See [the Reports docs](../../features/reports/) for more details.
 
 The **Security issues** section show the number of vulnerabilities, their type, and how many of them  Snyk identifies as auto fixable (with an upgrade, as we saw in [Fix your first vulnerability](fix-your-first-vulnerability.md)).
 
-![](<../../.gitbook/assets/image (67).png>)
+![](<../../.gitbook/assets/image (263).png>)
 
 ### Show issues over time
 
 The **Issues over time** graph shows the history of vulnerabilities in your Organization:
 
-![](<../../.gitbook/assets/image (78).png>)
+![](<../../.gitbook/assets/image (69).png>)
 
 This shows the number of overall vulnerabilities, and the number of projects being scanned (the dotted line in the graph).&#x20;
 
@@ -42,7 +42,7 @@ Seeing more vulnerabilities over time may not reflect your team's work to improv
 
 For example, the total number of vulnerabilities is likely to rise when you add more projects. The graph may display that linkage - when you see jumps in the total numbers of vulnerabilities, you may see corresponding jumps in the total numbers of Projects:
 
-![More Projects, more issues](<../../.gitbook/assets/image (85) (1).png>)
+![More Projects, more issues](<../../.gitbook/assets/image (258).png>)
 
 #### Metric: ratio of vulnerabilities to Projects
 
@@ -54,7 +54,7 @@ Alternatively, if you see an increase in the number of vulnerabilities without a
 
 You can hover over a date to see the summary of “to this date” information at that point**:**
 
-![](<../../.gitbook/assets/image (9).png>)
+![](<../../.gitbook/assets/image (217).png>)
 
 This is especially useful when you see sudden changes in issue numbers on a specific day.
 
@@ -62,7 +62,7 @@ This is especially useful when you see sudden changes in issue numbers on a spec
 
 The **Activity** section shows the activity over the report period:
 
-![](<../../.gitbook/assets/image (11).png>)
+![](<../../.gitbook/assets/image (74).png>)
 
 For the reporting period (90 days by default), this activity shows:
 
@@ -76,7 +76,7 @@ For the reporting period (90 days by default), this activity shows:
 
 If you have lots of Projects files to manage and organise in your Organization, you can use filters to focus on specific Projects, or specific types of vulnerability:
 
-![](<../../.gitbook/assets/image (135).png>)
+![](<../../.gitbook/assets/image (25).png>)
 
 For example, if your Organization represents your development team, and you want to focus on  (say) front-end work in the next Sprint, click the **Projects** dropdown and select a subset of the front-end Projects to scan, allowing you to focus on fixing vulnerabilities in that area.
 
@@ -93,7 +93,7 @@ Filtering results in Reports means that your Dashboard shows different numbers t
 
 For example, by default, Snyk does not scan the dockerfile in the filter, it just scan the docker images themselves
 
-![](<../../.gitbook/assets/image (111) (1).png>)
+![](<../../.gitbook/assets/image (186).png>)
 
 This is turned off by default in the filter, because when Snyk scans the dockerfile, there will be vulnerabilities in the base OS in the container that you are building. As these cannot generally be fixed by the development team, this filtering allows your team to focus on the issues that you can fix.
 
@@ -105,7 +105,7 @@ To see a report across all your Organizations, navigate to the Snyk Group level 
 
 Click the **Issues** tab to see a full list of all issues for your Organization:
 
-![](<../../.gitbook/assets/image (14) (2).png>)
+![](<../../.gitbook/assets/image (274).png>)
 
 Issues are ranked by their Snyk Priority Score; you can also filter based on columns. For example, you may want to look at the highest scores with the most maturity (which are likely to have more exploits). You can also track the list of issues that got fixed.
 

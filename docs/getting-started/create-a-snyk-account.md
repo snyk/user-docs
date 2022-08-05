@@ -10,7 +10,7 @@ To create a Snyk account:
 2. Select your preferred signup method.
 3. Create a new account as prompted. You now have a free Snyk account! Access your Snyk account at [https://app.snyk.io](https://app.snyk.io)
 
-![](<../.gitbook/assets/image (66) (2).png>)
+![](<../.gitbook/assets/image (146).png>)
 
 {% hint style="info" %}
 Different pricing plans are available, see [Plans](../introducing-snyk/snyks-core-concepts/plans.md) for details.
@@ -28,7 +28,7 @@ For example:
 
 If you click **GitHub**, then fill in the details as prompted (see [Set up an integration](set-up-an-integration.md)):
 
-![](<../.gitbook/assets/Wizard2 (1).png>)
+![](../.gitbook/assets/Wizard2.png)
 
 Finally, you can [import a Project](import-a-project.md) to scan:
 

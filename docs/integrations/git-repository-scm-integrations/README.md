@@ -4,13 +4,13 @@
 
 Snyk can integrate with the following Source Control Managers (SCM) to help you track, monitor, and fix the issues and vulnerabilities in your code:&#x20;
 
-* [GitHub integration](../../features/integrations/git-repository-scm-integrations/github-integration.md)
-* [GitHub Enterprise Integration](../../features/integrations/git-repository-scm-integrations/github-enterprise-integration.md)
+* [GitHub integration](github-integration.md)
+* [GitHub Enterprise Integration](github-enterprise-integration.md)
 * [GitHub Read-Only Projects](github-read-only-projects.md)
 * [Bitbucket Cloud integration](bitbucket-cloud-integration.md)
 * [Bitbucket Data Center/Server integration](bitbucket-data-center-server-integration.md)
 * [GitLab integration](gitlab-integration.md)
-* [Azure Repos integration](../../features/integrations/git-repository-scm-integrations/azure-repos-integration.md)
+* [Azure Repos integration](azure-repos-integration.md)
 
 ## Are there any tips for integrating my Git repo with Snyk?
 
