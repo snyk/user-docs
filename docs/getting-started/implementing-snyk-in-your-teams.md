@@ -173,7 +173,7 @@ The Snyk CLI provides a way to find security and license issues locally or in yo
 
 More information:
 
-* Docs: Snyk CLI
+* Docs: [Snyk CLI](../snyk-cli/)
 * Training: [Introduction to the Snyk CLI](https://training.snyk.io/courses/intro-cli)
 
 #### Use Snyk in the Web UI
