@@ -272,6 +272,7 @@
         * [Removing imported repositories from the Snyk Code test](products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/removing-imported-repositories-from-the-snyk-code-test.md)
   * [Exploring and working with the Snyk Code results](products/snyk-code/exploring-and-working-with-the-snyk-code-results/README.md)
     * [Viewing the Snyk Code results via the Web UI](products/snyk-code/exploring-and-working-with-the-snyk-code-results/using-snyk-code-web.md)
+    * [Exploring the History of the Snyk Code Results](products/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-history-of-the-snyk-code-results.md)
   * [Using Automatic PR Checks for securing your source code](products/snyk-code/using-automatic-pr-checks-for-securing-your-source-code/README.md)
     * [Prerequisites for the Automatic PR Checks feature](products/snyk-code/using-automatic-pr-checks-for-securing-your-source-code/prerequisites-for-the-automatic-pr-checks-feature.md)
     * [Enabling the Automatic PR Checks](products/snyk-code/using-automatic-pr-checks-for-securing-your-source-code/enabling-the-automatic-pr-checks.md)
