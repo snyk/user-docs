@@ -7,8 +7,8 @@ Snyk functionality is available with several [pricing plans](https://snyk.io/pla
 * **Business**: Empower developers across an organization and provide reporting and advanced controls to manage teams and control to shift security left. Unlimited tests.
 * **Enterprise**: Standardize dev-first security across the enterprise, with centralized policy governance. Unlimited tests.
 
-{% hint style="info" %}
-See [Running tests](running-tests.md) for more details on tests.
+{% hint style="success" %}
+[Sign up to use Snyk for free!](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)
 {% endhint %}
 
 ### Feature availability&#x20;
