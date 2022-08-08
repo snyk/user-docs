@@ -91,11 +91,11 @@ For Open Source vulnerabilities, we also have tagging, allowing you to add your 
 
 Filtering results in Reports means that your Dashboard shows different numbers to your Reports.
 
-For example, by default, Snyk does not scan the dockerfile in the filter, it just scan the docker images themselves
+For example, by default, Snyk does not scan the Dockerfile in the filter, it just scan the docker images themselves
 
 ![](<../../.gitbook/assets/image (186).png>)
 
-This is turned off by default in the filter, because when Snyk scans the dockerfile, there will be vulnerabilities in the base OS in the container that you are building. As these cannot generally be fixed by the development team, this filtering allows your team to focus on the issues that you can fix.
+This is turned off by default in the filter, because when Snyk scans the Dockerfile, there will be vulnerabilities in the base OS in the container that you are building. As these cannot generally be fixed by the development team, this filtering allows your team to focus on the issues that you can fix.
 
 {% hint style="info" %}
 To see a report across all your Organizations, navigate to the Snyk Group level and look at reports there.
