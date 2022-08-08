@@ -52,7 +52,7 @@ Alternatively, if you see an increase in the number of vulnerabilities without a
 
 ### Viewing snapshot summary
 
-You can hover over a date to see the summary of “to this date” information at that point.
+You can hover over a date to see the summary of “to this date” information at that point:
 
 ![](<../../.gitbook/assets/image (217).png>)
 
