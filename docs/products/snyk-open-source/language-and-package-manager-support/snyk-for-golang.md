@@ -71,7 +71,7 @@ To build the dependency tree Snyk, runs the `go mod graph` command using the `go
 Go Modules projects that depend on modules from private Git repositories are supported when the private repositories are in the same Git organization as the main project repository.&#x20;
 
 {% hint style="info" %}
-Snyk supports a single private Git repository for Go Modules projects.
+Snyk supports a single private Git repository for _all_ the Go Modules projects you have.
 {% endhint %}
 
 Imports for projects with private modules from repos in other Git organizations will fail. Support for private module dependencies from other Git organizations is planned for the future.
