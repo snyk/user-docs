@@ -16,7 +16,7 @@ When using the Local Engine, only the scan is performed locally. Your scan resul
 
 The core requirements to deploy the Snyk Code Local Engine are:
 
-* **Kubernetes** – version 1.16.0 - 1.21.5:
+* **Kubernetes** – version 1.16.0 - 1.23.5:
   * Dedicated Kubernetes cluster
   * Outbound HTTPS connections supporting websockets from the cluster to \*.snyk.io
   * Kubernetes – one of the following:

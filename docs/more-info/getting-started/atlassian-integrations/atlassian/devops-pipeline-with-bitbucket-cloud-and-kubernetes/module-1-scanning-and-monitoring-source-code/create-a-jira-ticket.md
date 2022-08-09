@@ -10,7 +10,7 @@ Navigate to one of the vulnerabilities in your project and examine its contents.
 
 Clicking on the button takes you to a screen with most content already filled in. This makes it easier for you to quickly add an issue. The integration uses your permissions to look up Jira projects and users to assign tickets. This lookup depends on your permissions and Snyk will only present projects you are entitled to see. The next screenshot shows some of of the fields selected for the **Project**, **Issue Type**, **Reporter**, and **Assignee**.
 
-![](<../../../../../../.gitbook/assets/image (71) (1) (2) (1) (1) (1) (1).png>)
+![](<../../../../../../.gitbook/assets/image (112) (1).png>)
 
 Once you create your ticket, the Jira Integration adds a link to the issue in-line to help your team more easily see the status of the vulnerability as being tracked in Jira.
 

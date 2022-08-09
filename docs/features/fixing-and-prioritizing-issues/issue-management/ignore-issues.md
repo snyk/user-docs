@@ -37,7 +37,7 @@ An issue is ignored until ANY of the conditions happen - either the ignore perio
 
 When you ignore an issue in our UI, it will show who ignored it and allow you to edit or unignore it.
 
-![](<../../../.gitbook/assets/image (14) (1).png>)
+![](<../../../.gitbook/assets/image (14) (1) (1).png>)
 
 ### Ignoring issues in the CLI
 

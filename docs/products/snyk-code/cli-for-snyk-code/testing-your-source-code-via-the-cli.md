@@ -38,7 +38,7 @@ snyk code test
 
 Snyk Code tests the **snyk-goof** repository, and displays the vulnerability issue that were discovered in the terminal:
 
-![](<../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - 2 (1).png>)
+![](<../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - 1 (1) (1) (1) (1) (1) (1) (1) (2).png>)
 
 ### **Testing a repository from a different location**
 

@@ -24,7 +24,7 @@ See [the Reports docs](../../features/reports/) for more details.
 
 ### Security issues
 
-The **Security issues** section show the number of vulnerabilities, their type, and how many of them  Snyk identifies as auto fixable (with an upgrade, as we saw in [Fix your first vulnerability](fix-your-first-vulnerability.md)).
+The **Security issues** section show the number of vulnerabilities, their type, and how many of them Snyk identifies as auto fixable (with an upgrade, as we saw in [Fix your first vulnerability](fix-your-first-vulnerability.md)).
 
 ![](<../../.gitbook/assets/image (263).png>)
 
@@ -34,7 +34,7 @@ The **Issues over time** graph shows the history of vulnerabilities in your Orga
 
 ![](<../../.gitbook/assets/image (69).png>)
 
-This shows the number of overall vulnerabilities, and the number of projects being scanned (the dotted line in the graph).&#x20;
+This shows the number of overall vulnerabilities, and the number of projects being scanned (the dotted line in the graph).
 
 #### Why do numbers increase?
 
@@ -42,7 +42,7 @@ Seeing more vulnerabilities over time may not reflect your team's work to improv
 
 For example, the total number of vulnerabilities is likely to rise when you add more projects. The graph may display that linkage - when you see jumps in the total numbers of vulnerabilities, you may see corresponding jumps in the total numbers of Projects:
 
-![More Projects, more issues](<../../.gitbook/assets/image (258).png>)
+![More Projects, more issues](<../../.gitbook/assets/image (85) (2).png>)
 
 #### Metric: ratio of vulnerabilities to Projects
 
@@ -68,9 +68,9 @@ For the reporting period (90 days by default), this activity shows:
 
 * **Tests Run**: the amount of tests run. By default, Snyk scans each open source Project daily, so an Organization with 100 projects would generate 9,000 scans over 90 days.
 * **New issues**: new issues detected.
-* **Fixed issues**: the vulnerabilities fixed by your team.&#x20;
+* **Fixed issues**: the vulnerabilities fixed by your team.
 * **Tests preventing issues**: occasions when the team attempted to merge code changes, but Snyk scans informed the team that these changes would have created new issues, so helping prevent new security issues.
-* **Ignored issues**: a team member decided to ignore that issue.&#x20;
+* **Ignored issues**: a team member decided to ignore that issue.
 
 ### Filtering search results
 
@@ -78,7 +78,7 @@ If you have lots of Projects files to manage and organise in your Organization, 
 
 ![](<../../.gitbook/assets/image (25).png>)
 
-For example, if your Organization represents your development team, and you want to focus on  (say) front-end work in the next Sprint, click the **Projects** dropdown and select a subset of the front-end Projects to scan, allowing you to focus on fixing vulnerabilities in that area.
+For example, if your Organization represents your development team, and you want to focus on (say) front-end work in the next Sprint, click the **Projects** dropdown and select a subset of the front-end Projects to scan, allowing you to focus on fixing vulnerabilities in that area.
 
 {% hint style="info" %}
 **Why so many Projects?**\
@@ -93,7 +93,7 @@ Filtering results in Reports means that your Dashboard shows different numbers t
 
 For example, by default, Snyk does not scan the Dockerfile in the filter, it just scan the docker images themselves
 
-![](<../../.gitbook/assets/image (186).png>)
+![](<../../.gitbook/assets/image (111) (1).png>)
 
 This is turned off by default in the filter, because when Snyk scans the Dockerfile, there will be vulnerabilities in the base OS in the container that you are building. As these cannot generally be fixed by the development team, this filtering allows your team to focus on the issues that you can fix.
 
@@ -101,7 +101,7 @@ This is turned off by default in the filter, because when Snyk scans the Dockerf
 To see a report across all your Organizations, navigate to the Snyk Group level and look at reports there.
 {% endhint %}
 
-### Reports: Issues&#x20;
+### Reports: Issues
 
 Click the **Issues** tab to see a full list of all issues for your Organization:
 
@@ -119,4 +119,4 @@ You cannot currently export charts and data in the reports summary page.
 
 This concludes this walkthrough.
 
-&#x20;Please refer to the Snyk documentation in general for more information.
+Please refer to the Snyk documentation in general for more information.
