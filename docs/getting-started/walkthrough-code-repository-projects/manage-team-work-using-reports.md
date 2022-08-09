@@ -52,7 +52,7 @@ Alternatively, if you see an increase in the number of vulnerabilities without a
 
 ### Viewing snapshot summary
 
-You can hover over a date to see the summary of “to this date” information at that point**:**
+You can hover over a date to see the summary of “to this date” information at that point:
 
 ![](<../../.gitbook/assets/image (217).png>)
 
@@ -82,7 +82,7 @@ For example, if your Organization represents your development team, and you want
 
 {% hint style="info" %}
 **Why so many Projects?**\
-****Remember, a Snyk Project represents a single item that Snyk scans, such as a manifest file. So your application may contain hundreds of Snyk Projects to scan.
+Remember, a Snyk Project represents a single item that Snyk scans, such as a manifest file. So your application may contain hundreds of Snyk Projects to scan.
 {% endhint %}
 
 For Open Source vulnerabilities, we also have tagging, allowing you to add your own tags, adding custom values for metadata. See [Project tags](../../snyk-web-ui/introduction-to-snyk-projects/project-tags.md) and [Project attributes](../../snyk-web-ui/introduction-to-snyk-projects/project-attributes.md).
