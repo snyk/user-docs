@@ -60,7 +60,7 @@ This field is case-sensitive and the pattern applies for all repos.
 
 Once repositories are imported, a confirmation appears in green at the top of the screen. The selected files are indicated with a unique icon, they are named by organization/repo, and you can now also filter to view only those projects, as seen in the example below:
 
-![](<../../.gitbook/assets/image (7).png>)
+![](<../../.gitbook/assets/image (7) (2).png>)
 
 This integration works similar to our other integrations. To continue to monitor, fix and manage your projects, see the relevant pages in our Docs.
 

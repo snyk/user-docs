@@ -26,7 +26,7 @@ When [setting up your GitHub integration](https://docs.snyk.io/integrations/git-
 
 ![](<../../.gitbook/assets/image (226).png>)
 
-When you then import a Project, private repositories are identified with a “lock” symbol (<img src="../../.gitbook/assets/image (13).png" alt="" data-size="line">) in the imported scan details:&#x20;
+When you then import a Project, private repositories are identified with a “lock” symbol (<img src="../../.gitbook/assets/image (13) (2).png" alt="" data-size="line">) in the imported scan details:&#x20;
 
 ![](<../../.gitbook/assets/image (273).png>)
 

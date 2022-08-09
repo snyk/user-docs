@@ -49,7 +49,7 @@ Use the project links to explore and manage the metadata, retest, and fix option
   This page presents the list of issues with full, partial, or no fixes.
 * For the other relevant projects, use **View PR** links to open and view the Snyk-generated PR fixes in GitHub.
 
-![Target page: details and options for a single project from the dashboard](<../.gitbook/assets/dockerfile\_fix\_vulnerabilities (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).gif>)
+![Target page: details and options for a single project from the dashboard](<../.gitbook/assets/dockerfile\_fix\_vulnerabilities (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (4).gif>)
 
 ## [**Reports**](https://docs.snyk.io/features/reports)
 
@@ -113,7 +113,7 @@ Use the Help menu for quick access to Snyk user documentation (including the **G
 
 This is where you can configure the general [account settings](https://app.snyk.io/account) for your user account, view your authentication token and authorized applications, set your preferred (default) organization, as well as your notification and sharing preferences, and view information on the latest Snyk product updates.
 
-![Options for a user account](<../.gitbook/assets/image (307) (1).png>)
+![Options for a user account](<../.gitbook/assets/image (307).png>)
 
 ### Managing user **account settings**
 

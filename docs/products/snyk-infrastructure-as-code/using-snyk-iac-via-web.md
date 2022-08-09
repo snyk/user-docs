@@ -7,9 +7,9 @@ Use Snyk IaC with the [Snyk Web UI](../../snyk-web-ui/) to find and fix issues i
 1. In your **Projects** area, select the project to open
 2. Snyk IaC displays information and issue cards for that project:
 
-![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.15.02.png>)
+![](<../../.gitbook/assets/image (2).png>)
 
-Information available shows standard Snyk project information (see [introduction-to-snyk-projects](../../snyk-web-ui/introduction-to-snyk-projects/ "mention")), including:
+Information available shows standard Snyk Project information (see [introduction-to-snyk-projects](../../snyk-web-ui/introduction-to-snyk-projects/ "mention")), including:
 
 * Snapshot information showing when the project was last tested.
 * **Overview**, **History** and **Settings** information. For example, use the **History** section to view previous snapshots of projects.
@@ -43,9 +43,9 @@ Click **Ignore** to ignore this vulnerability (see [Ignore Issues](../../feature
 * Terraform Cloud and Helm will not show a code snippet, but just the card details. They will also not have a **Full details** button to show the preview of the full code.\
   Examples:
 
-![Helm](<../../.gitbook/assets/image (210).png>)
+![](<../../.gitbook/assets/image (1).png>)
 
-![Terraform Cloud](<../../.gitbook/assets/image (190) (1) (1) (2).png>)
+![Terraform Cloud](<../../.gitbook/assets/image (190) (1) (1) (1).png>)
 
 * In some cases that we can not identify the exact line of the vulnerable path in the file, we will not show a code snippet, but an info message and the card details. If able to, we will show the **Full details** button so that a preview of the full code can be seen.\
   Example:
