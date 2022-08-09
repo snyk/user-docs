@@ -25,7 +25,7 @@ The following statuses can appear on your Snyk Code checks in the integrated SCM
 
 The Snyk Web UI opens, displaying the details of the issues that were found in the PR:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Checks Failed - Details in the Web UI.png>)
+![](<../../../.gitbook/assets/image (16).png>)
 
 You can now [view and work with the discovered PR Check issues on the Web UI](viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md).
 

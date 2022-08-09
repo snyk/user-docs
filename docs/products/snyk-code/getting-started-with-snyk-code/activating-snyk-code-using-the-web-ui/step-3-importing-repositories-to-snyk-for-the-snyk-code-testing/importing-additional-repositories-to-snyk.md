@@ -6,15 +6,15 @@ If you already have Projects in your Snyk Account, you can add other repositorie
 
 **To import additional repositories to Snyk:**
 
-1\.  Open the Snyk Web UI, and click either the **Dashboard** or **Projects** tabs on the top menu.
+1\. Open the Snyk Web UI, and click either the **Dashboard** or **Projects** tabs on the top menu.
 
-2\.  On the **Dashboard** or **Projects** page, click the **Add project** button. Then, select from the pop-up list the SCM that contains the repositories you want to import:
+2\. On the **Dashboard** or **Projects** page, click the **Add project** button. Then, select from the pop-up list the SCM that contains the repositories you want to import:
 
-![](<../../../../../.gitbook/assets/Snyk Code - Add project button - SCM options.png>)
+![](<../../../../../.gitbook/assets/image (2).png>)
 
 The **Personal and Organization repositories** page appears, displaying the repositories available to you in the selected SCM.
 
-3\.  In the **Personal and Organization repositories** page, select the checkboxes of the repositories you want to import to Snyk. If you want Snyk Code to also test repositories you previously imported, select these repositories as well for re-import:
+3\. In the **Personal and Organization repositories** page, select the checkboxes of the repositories you want to import to Snyk. If you want Snyk Code to also test repositories you previously imported, select these repositories as well for re-import:
 
 **Notes**:
 
@@ -24,10 +24,10 @@ The **Personal and Organization repositories** page appears, displaying the repo
 
 ![](<../../../../../.gitbook/assets/Snyk Code - Add Repositories dialog box - Entire Repositories.png>)
 
-4\.  After you selected the required repositories, click the **Add selected repositories button** to import the repositories into your Snyk Account:
+4\. After you selected the required repositories, click the **Add selected repositories button** to import the repositories into your Snyk Account:
 
 ![](<../../../../../.gitbook/assets/Snyk Code - Add Repositories dialog box - Re-import - Add selected repositories button.png>)
 
 The selected repositories are imported to Snyk Code, and a progress bar appears on the **Projects** page. When the import is completed, a confirmation message appears on the **Projects** page, informing you of the success of the import. Your imported repositories appear as Target folders, each containing the **Code analysis** Project that includes the findings of the Snyk Code test:
 
-![](<../../../../../.gitbook/assets/Snyk Code - Imported Repository - Additiona Repos - Complete.png>)
+![](<../../../../../.gitbook/assets/image (9).png>)

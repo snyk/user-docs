@@ -15,7 +15,7 @@ Next, click on a Snyk Project in that list to see details of the vulnerabilities
 
 For example, for a code analysis scanned by Snyk Code:
 
-![](<../../.gitbook/assets/image (23).png>)
+![](<../../.gitbook/assets/image (23) (2).png>)
 
 See [View project information](../../snyk-web-ui/introduction-to-snyk-projects/view-project-information.md) for more details.&#x20;
 
@@ -23,7 +23,7 @@ See [View project information](../../snyk-web-ui/introduction-to-snyk-projects/v
 
 Now, look at the vulnerability information for each Snyk Project, provided in Issue Cards:
 
-![](<../../.gitbook/assets/image (16) (2).png>)
+![](<../../.gitbook/assets/image (16) (2) (1).png>)
 
 Again, there's a lot of information for you to understand, so take the time to understand how all of this information relates to your vulnerability, to help you decide on what fix actions to take.
 

@@ -24,7 +24,9 @@ When enabling the Automatic PR Checks feature for an entire organization, all th
 
 3\. On the Org **Settings** page, select **Integrations** on the left menu. Then, locate your configured and required SCM, and click the **Edit settings** option at the end of its row:
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Organization - Integrations page.png>)
+![](<../../../.gitbook/assets/image (29).png>)
+
+
 
 4\. On the **Settings** page of the selected integration, scroll down to the **Code Analysis** section:
 
@@ -62,26 +64,22 @@ By default, the Settings on the Project level override the Settings on the organ
 
 3\. Locate the **Code analysis** Project for which you want to enable the Automatic PR Checks. Then, click the **Settings** button on the right side of its row:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Project - Project Settings button.png>)
+![](<../../../.gitbook/assets/image (30).png>)
 
-4\. On the Project **Settings** page, click the relevant **integration** tab on left menu\*\*:\*\*
+4\. On the Project **Settings** page, click the relevant **integration** tab on left menu:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Project - Settings - Integration page.png>)
+![](<../../../.gitbook/assets/image (11).png>)
 
 5\. On the **integration** page -> **Snyk Code for pull requests** section, select one of the following:
 
 * **Inherit from Integration settings** – apply the Integration Settings of the organization to the selected Project. Note that if the Automatic PR Checks feature is disabled for the organization, this option will also be disabled for the Project when the Project inherits its Settings from the organization. If you selected this option, move to Step 7 below.
 * **Custom** – apply specific settings of the Automatic PR Checks feature to the Project. If you selected this option, move to the next step.
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Project - Settings - Integration - Inhertinace.png>)
-
 6\. \[For the **Custom** option only] If you selected the **Custom** option, perform the following:
 
 * Slider – change to **Enabled**.
 * **Fail conditions** – leave as is. You currently can configure the Automatic PR Checks to **Only fail PR on newly introduced issues**. This means that Snyk Code scans only the changes that are included in the new PRs. If the repository has older issues that are not part of the new PR, these issues will not fail the PR merge.
 * **Minimal severity to fail PR check** – select from the drop-down list the minimal severity level of the discovered issue in the PR, which will cause the PR to automatically fail. For example, if you selected **Medium**, all PR Checks that have issues with severity level of Medium and higher will fail. PR Checks with issues that have a Low severity level will be merged.
-
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Project - Settings - Integration - Custom.png>)
 
 7\. Click the **Update Snyk code pull request settings** button to save your settings.
 

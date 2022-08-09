@@ -55,7 +55,7 @@ If groups are being used in the organization, only a Group Admin can delete the 
 
 3\. On the **Settings** page, select **Genera**l on the left menu:
 
-![](<../../../.gitbook/assets/image (15).png>)
+![](<../../../.gitbook/assets/image (15) (1).png>)
 
 3\. Scroll down to the **Delete organization** section, and click the **Delete organization** button:
 
@@ -88,7 +88,7 @@ You can change the Preferred Organization in your Snyk Account via your Account 
 
 **Note**: The Organization drop-down list displays your existing organizations.
 
-![](<../../../.gitbook/assets/image (7).png>)
+![](<../../../.gitbook/assets/image (7) (2).png>)
 
 3\. Click the **Update Preferred Org** button to save your new setting.
 
