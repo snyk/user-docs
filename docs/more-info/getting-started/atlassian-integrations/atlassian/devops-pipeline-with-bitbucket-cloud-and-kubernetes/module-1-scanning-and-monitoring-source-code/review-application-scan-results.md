@@ -28,7 +28,7 @@ This summary maintains context from the main page and you'll notice details such
 
 Each vulnerability also contains links to public databases for users that wish to learn additional background and context.
 
-![](<../../../../../../.gitbook/assets/image (82) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../../../../.gitbook/assets/image (82) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 Another section of the page focuses on the version of your software, available upgrades, and whether there is a known exploit. This level of detail helps teams more quickly assess a vulnerability as they can see the recommended fix when it is available.
 
@@ -50,6 +50,6 @@ Some of the details you see are shown in the next two images, and they include:
 
 ![](<../../../../../../.gitbook/assets/image (86) (1) (1) (1).png>)
 
-![](<../../../../../../.gitbook/assets/image (238) (1) (1) (2).png>)
+![](<../../../../../../.gitbook/assets/image (238) (1) (1).png>)
 
 In the next two sections, we'll create a Jira ticket and a pull request.

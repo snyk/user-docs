@@ -32,11 +32,11 @@ The **Mark as successful** action does NOT ignore the issue, but only allows it 
 
 1\. On the **SAST check** page header, click the **Mark as successful in SCM** button on the right:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful (1).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful (1) (1).png>)
 
 2\. On the confirmation message that appears, click **OK**:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful - message (1) (1) (1) (1) (1) (1) (1) (1) (2) (6).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful - message (1) (1) (1) (1) (1) (1) (1) (1) (2) (4).png>)
 
 A message appears on the **SAST check** page header, informing you that the failed PRs are now marked as successful:
 

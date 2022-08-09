@@ -49,7 +49,7 @@ After you add them, Snyk scans the selected repositories for dependency files in
 
 The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
-![](<../../.gitbook/assets/444 (2) (4) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (11).png>)
+![](<../../.gitbook/assets/444 (2) (4) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (18).png>)
 
 ## Bitbucket integration features
 
@@ -57,7 +57,7 @@ Once the integration is in place, you'll be able to use capabilities such as:
 
 * [Project level security reports](bitbucket-cloud-integration.md#project-level-security-reports)
 * [Project monitoring and automatic fix pull requests](bitbucket-cloud-integration.md#project-monitoring-and-automatic-fix-pull-requests)
-* [Pull request testing](bitbucket-cloud-integration.md#pull-request-testing)
+* [Pull request testing](bitbucket-cloud-integration.md#pull-request-tests)
 
 ### Project level security reports
 

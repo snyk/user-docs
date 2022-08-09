@@ -49,7 +49,7 @@ Use the project links to explore and manage the metadata, retest, and fix option
   This page presents the list of issues with full, partial, or no fixes.
 * For the other relevant projects, use **View PR** links to open and view the Snyk-generated PR fixes in GitHub.
 
-![Target page: details and options for a single project from the dashboard](<../.gitbook/assets/dockerfile\_fix\_vulnerabilities (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).gif>)
+![Target page: details and options for a single project from the dashboard](<../.gitbook/assets/dockerfile\_fix\_vulnerabilities (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).gif>)
 
 ## [**Reports**](https://docs.snyk.io/features/reports)
 
@@ -81,7 +81,7 @@ In the **Integrations** tab, you can:
 * Manage [Slack](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration) and [Jira](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira) integrations.
 * Access the [Vulnerability management tools](https://docs.snyk.io/integrations/vulnerability-management-tools).
 
-![Integrations tab](<../.gitbook/assets/image (46) (1).png>)
+![Integrations tab](<../.gitbook/assets/image (46) (2).png>)
 
 ## Manage [Organization](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations) or [Group](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations-1) members
 
