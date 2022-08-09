@@ -30,7 +30,7 @@ To navigate to the group level notification settings:
 2. Select the Settings icon.
 3. Select **Notifications**.
 
-![](<../../.gitbook/assets/image (5).png>)
+![](<../../.gitbook/assets/image (5) (2).png>)
 
 #### Issue alert emails
 

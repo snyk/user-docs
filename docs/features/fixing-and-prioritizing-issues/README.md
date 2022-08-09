@@ -30,7 +30,7 @@ Gauge risk by identifying whether a vulnerable function is being called by your 
 
 Prioritize or de-prioritize specific vulnerabilities automatically with our customizable [security policies](security-policies/).
 
-![](<../../.gitbook/assets/image (4).png>)
+![](<../../.gitbook/assets/image (4) (1).png>)
 
 ### Fix the issues
 

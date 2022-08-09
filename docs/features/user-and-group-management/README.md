@@ -6,8 +6,6 @@ Snyk offers a wide range of tools to allow admins to manage their groups, orgs, 
 
 Snyk offers API tokens to enable authentication to service accounts or third party tools; see [authentication](authentication/ "mention").
 
-![](<../../.gitbook/assets/image (310).png>)
-
 ### Set up Single Sign-On (SSO)
 
 SSO makes authentication and provisioning simple; see [setting-up-sso-for-authentication](setting-up-sso-for-authentication/ "mention").
@@ -18,22 +16,20 @@ SSO makes authentication and provisioning simple; see [setting-up-sso-for-authen
 
 You can manage users and permissions in your groups; See [managing-users-and-permissions](managing-users-and-permissions/ "mention").
 
-![](<../../.gitbook/assets/image (318) (1).png>)
+![](<../../.gitbook/assets/image (4).png>)
 
 ### Manage Groups and Organizations
 
 Learn how Snyk groups and organizations help keep cross-team collaboration seamless; see [managing-groups-and-organizations](managing-groups-and-organizations/ "mention")
 
-![](<../../.gitbook/assets/image (300).png>)
-
 ### Define notifications
 
 You can manage email notifications, for yourself and your organization. See [notifications.md](notifications.md "mention").
 
-![](<../../.gitbook/assets/image (244) (1).png>)
+![](../../.gitbook/assets/image.png)
 
 ### Manage settings
 
 Customize your Snyk account for your needs. See [managing-settings](managing-settings/ "mention").
 
-![](<../../.gitbook/assets/image (233).png>)
+![](<../../.gitbook/assets/image (12).png>)

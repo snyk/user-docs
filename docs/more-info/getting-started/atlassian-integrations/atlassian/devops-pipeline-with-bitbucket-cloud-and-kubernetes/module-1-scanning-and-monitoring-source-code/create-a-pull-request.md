@@ -29,7 +29,7 @@ For the purpose of this workshop, we'll pick the minor change for the **Open a f
 
 Click on that button now to start the process. The automated process starts by showing you a screen to confirm your choice:
 
-![](<../../../../../../.gitbook/assets/image (5) (2).png>)
+![](<../../../../../../.gitbook/assets/image (5) (2) (1).png>)
 
 Click on the Open a Fix PR button to confirm the change.
 

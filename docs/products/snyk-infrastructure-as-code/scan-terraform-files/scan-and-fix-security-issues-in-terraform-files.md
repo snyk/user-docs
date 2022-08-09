@@ -11,9 +11,6 @@ Snyk scans your Terraform code for misconfigurations and security issues as well
 ## Scan and fix your configuration files
 
 * Log in to your account and navigate to the relevant group and organization that you want to manage.
-
-![](<../../../.gitbook/assets/image (171) (1).png>)
-
 * If you already imported your repositories for testing before the infrastructure as code feature was enabled by your administrator, then you should re-import that repository in order to detect the Terraform code:
 
 ![](<../../../.gitbook/assets/screenshot\_2020-07-09\_at\_12.44.03 (1) (1) (3) (3) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (20).png>)
@@ -25,4 +22,4 @@ Snyk scans your Terraform code for misconfigurations and security issues as well
 
 * Click the project link you're interested in, to view the scan results and to help correct your Terraform code:
 
-![](<../../../.gitbook/assets/Screenshot 2022-05-23 at 14.44.56.png>)
+![](<../../../.gitbook/assets/image (8).png>)

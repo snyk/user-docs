@@ -7,7 +7,7 @@ Use Snyk IaC with the [Snyk Web UI](../../snyk-web-ui/) to find and fix issues i
 1. In your **Projects** area, select the project to open
 2. Snyk IaC displays information and issue cards for that project:
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (2) (3).png>)
 
 Information available shows standard Snyk Project information (see [introduction-to-snyk-projects](../../snyk-web-ui/introduction-to-snyk-projects/ "mention")), including:
 

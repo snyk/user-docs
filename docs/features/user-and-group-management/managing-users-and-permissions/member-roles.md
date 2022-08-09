@@ -98,7 +98,7 @@ Click the **Add members** button > **Invite new members**.\
 \
 You can invite new members to the org by assigning them a specified role.
 
-![](<../../../.gitbook/assets/image (8).png>)
+![](<../../../.gitbook/assets/image (8) (2).png>)
 
 Choose **Add members** button > **Add existing members** to promote current Group Members to an org-specific role.
 
