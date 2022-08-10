@@ -9,6 +9,7 @@ This group of pages provides detailed "how-to" information for the Snyk CLI. The
 * [Failing **builds** in Snyk CLI](advanced-failing-of-builds-in-snyk-cli.md)
 * ****[**Ignore** vulnerabilties using Snyk CLI](ignore-vulnerabilities-using-snyk-cli.md)
 * [Scan all unmanaged **JAR files**](scan-all-unmanaged-jar-files.md)****
+* How to select the **organization** to use in the CLI
 * ****[**Setup.py file** failing to scan or finding zero dependencies](why-is-my-setup.py-file-failing-to-scan-or-finding-0-dependencies.md)
 * ****[**Severity thresholds** for CLI tests](set-severity-thresholds-for-cli-tests.md)
 * ****[**Test public** npm packages before use](test-public-npm-packages-before-use.md)
@@ -17,11 +18,11 @@ This group of pages provides detailed "how-to" information for the Snyk CLI. The
 
 ## Monitoring projects
 
-* [Monitor your projects at regular intervals](monitor-your-projects-at-regular-intervals.md)
-* [Group projects for monitoring](grouping-projects-by-branch-or-version.md)
+* [**Monitor** your projects at regular intervals](monitor-your-projects-at-regular-intervals.md)
+* [Group **projects** for monitoring](grouping-projects-by-branch-or-version.md)
 
 ## Maintaining projects
 
-* [Automatic fixing with Snyk Fix](automatic-remediation-with-snyk-fix.md)
-* [Log4shell command use](how-to-use-the-log4shell-command.md)
-* [@snyk/protect package](protect-your-code-with-patches.md)
+* [Automatic **fixing** with Snyk Fix](automatic-remediation-with-snyk-fix.md)
+* ****[**Log4shell** command use](how-to-use-the-log4shell-command.md)
+* [@**snyk/protect** package](protect-your-code-with-patches.md)
