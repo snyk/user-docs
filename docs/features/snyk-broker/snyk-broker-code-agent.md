@@ -133,7 +133,7 @@ If you have a running Snyk broker with a custom whitelist (**accept.json**), the
 (The rule is present by default, so only needed if you override the rule with a custom whitelist.)
 
 {% hint style="warning" %}
-At this point please contact your Customer Success Manager or Support to enable the integration
+At this point please contact your Snyk account team to enable the integration
 {% endhint %}
 
 ## Advanced settings

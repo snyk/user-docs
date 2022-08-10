@@ -24,7 +24,7 @@ Each group is a stand alone entity. This means:
 
 Getting data for multiple groups via the API requires multiple calls.
 
-If your business case calls for multiple groups, work with your Customer Success Manager.
+If your business case calls for multiple groups, work with your Snyk account team.
 
 ### Organizations
 

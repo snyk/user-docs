@@ -1,6 +1,6 @@
 # Custom Mapping Option
 
-This option allows you to dynamically assign users to your Snyk group(s) and organizations based on data provided by your Identity Provider (IdP) to implement a scaled user provisioning and access model. To understand more about roles and permissions within Snyk, refer to [this](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/managing-permissions) article. Work with your Snyk account team to implement this option.
+This option allows you to dynamically assign users to your Snyk group(s) and organizations based on data provided by your Identity Provider (IdP) to implement a scaled user provisioning and access model. To understand more about roles and permissions within Snyk, refer to [this](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/managing-permissions) article. Work with your Customer Success Manager to implement this option.
 
 See also [Member Roles](../managing-users-and-permissions/member-roles.md) and [Roles in Custom SSO](../managing-users-and-permissions/member-roles.md#roles-in-custom-sso).
 
@@ -20,7 +20,7 @@ To configure this option, we expect you to send the `roles` array within the SAM
 **1. {prefix}-groupadmin**
 
 * This role mapping will assign users with the Group Admin and Org Admin roles
-* **prefix** is present on every role mapping. It is an identifier that allows Snyk to identify which `roles` array values to process. By default, we expect this value to be **snyk**. If another value is required, work with your Snyk account team,.
+* **prefix** is present on every role mapping. It is an identifier that allows Snyk to identify which `roles` array values to process. By default, we expect this value to be **snyk**. If another value is required, work with your Customer Success Manager.
   * Note: **prefix** must be fully lowercase
 * **groupadmin** will configure all users with this role as a Group Admin and Org Admin for all group(s) that the user is assigned to and all orgs that fall under the group(s)
 
@@ -81,7 +81,7 @@ The following example will show how to assign roles to Snyk users under the mapp
 * The customer has 3 organizations within Snyk: Application-SecurityScanner1, Partner-Plugins, and Application-Payments
 * The customer has 4 teams: Business Development, Engineering, Security, and Product that have different needs:
   * Business Development team will need access to the ABC group and only the Partner-Plugins organization as Org Admin
-  * Engineering will need access to the ABC group, the Application-SecurityScanner1 organization as Org Admin, Partner-Plugins organization as Org Admin, and Application-Payments as Org Collaborator
+  * Engineering will need access to the ABC group, the Application-SecurityScanner1 organization as Org Admin\*\*,\*\* Partner-Plugins organization as Org Admin, and Application-Payments as Org Collaborator
   * Security will need access to the ABC group as Group Admin and all 3 organizations as Org Admin
   * Product team will need access to the ABC group and all 3 organizations as Org Collaborator
 

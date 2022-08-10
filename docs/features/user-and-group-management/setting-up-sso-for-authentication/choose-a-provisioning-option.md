@@ -30,6 +30,6 @@ You can provision user accounts with customized rules.
 
 You can configure SSO differently for each of your different Snyk groups. You can also map users to a specific organization and role assignment based on information from the identity provider.
 
-Work with your Snyk account team to prepare for implementing this SSO option.
+Work with your Customer Success Manager and Snyk Technical Services to prepare for implementing this SSO option.
 
 Speak to your sales rep to learn more about the Custom Mapping option.
