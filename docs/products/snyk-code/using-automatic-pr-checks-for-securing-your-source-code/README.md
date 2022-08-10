@@ -1,7 +1,7 @@
 # Using Automatic PR Checks for securing your source code
 
 {% hint style="info" %}
-* The **Automatic PR Checks** feature in Snyk Code is currently in Closed Beta. If you would like to activate it in your organization, contact your CSM.
+* The **Automatic PR Checks** feature in Snyk Code is currently in Closed Beta. If you would like to activate it in your organization, contact your Snyk account team.
 * The **Automatic PR Checks** feature in Snyk Code is currently NOT supported when using the Snyk Broker – Code Agent deployment method.
 {% endhint %}
 
@@ -21,7 +21,7 @@ When SAST issues are found in your PR, Snyk Code provides you with additional de
 
 If you want to pass PRs that were automatically failed due to vulnerabilities that were found in them, Snyk Code also enables you to [mark failed PRs as successful](viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md#\_ref105582006) via the Snyk Web UI. Once you click the **Mark as successful in SCM** button on the Web UI, your failed PRs are considered as successful in the SCM, and can be merged into the target branch:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Mark as successful - On GitHub.png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Mark as successful - On GitHub (1).png>)
 
 The Automatic PR Checks feature is applied only to repositories that were imported to Snyk from the integrated SCM. However, after the initial import, any new file or folder that will be added in the SCM to the imported repositories, will be included in the automatic PR Checks. The Automatic PR Checks feature can be enabled for your integrated SCM on the level of an entire organization or on the level of a specific Project.
 

@@ -5,20 +5,23 @@ Configuring GitHub with Broker is useful to ensure a secure connection with your
 ### To configure Broker to be used for GitHub&#x20;
 
 {% hint style="info" %}
-Ask for your CSM support to provide you with a Broker token
+Please ask your Snyk account team to provide you with a Broker token
 {% endhint %}
 
 {% hint style="info" %}
 You need Docker or a way to run Docker containers
 {% endhint %}
 
-* Obtain your GitHub Broker token from your CSM or Support team
-* To use the Broker client with GitHub.com, run `docker pull snyk/broker:github-com`. The following environment variables are mandatory to configure the Broker client:
-  * `BROKER_TOKEN` - the Snyk Broker token, obtained from your Snyk Org settings view (app.snyk.io).
-  * `GITHUB_TOKEN` - a personal access token with full `repo`, `read:org` and `admin:repo_hook` scopes.
-  * `PORT` - the local port at which the Broker client accepts connections. Default is 8000.
-  * `BROKER_CLIENT_URL` - the full URL of the Broker client as it will be accessible to GitHub.com webhooks, such as `http://broker.url.example:8000`
-* Example:
+To use the Broker client with GitHub.com:
+
+*   Run `docker pull snyk/broker:github-com`. The following environment variables are mandatory to configure the Broker client:
+
+    * `BROKER_TOKEN` - the Snyk Broker token, obtained from your Snyk Org settings view (app.snyk.io).
+    * `GITHUB_TOKEN` - a personal access token with full `repo`, `read:org` and `admin:repo_hook` scopes.
+    * `PORT` - the local port at which the Broker client accepts connections. Default is 8000.
+    * `BROKER_CLIENT_URL` - the full URL of the Broker client as it will be accessible to GitHub.com webhooks, such as `http://broker.url.example:8000`
+
+    For example:
 
 ```
 docker run --restart=always \

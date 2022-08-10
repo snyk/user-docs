@@ -1,7 +1,7 @@
 # Snyk Broker - Code Agent
 
 {% hint style="info" %}
-This feature is currently in Beta. Please contact your CSM if you are interested in participating.
+This feature is currently in Beta. Please contact your Snyk account team if you are interested in participating.
 {% endhint %}
 
 You can natively connect Snyk Code to your local git server. This allows customers who are using a self-hosted git provider to find, prioritize, and fix potential vulnerabilities in their first-party code.

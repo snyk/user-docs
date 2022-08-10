@@ -5,14 +5,14 @@ Configuring Bitbucket Server/Data Center with broker is useful to ensure a secur
 ### To configure Broker to be used for Bitbucket
 
 {% hint style="info" %}
-Please ask for your CSM support to provide you with a Broker token
+Please ask your Snyk account team to provide you with a Broker token.
 {% endhint %}
 
 {% hint style="info" %}
 You will require Docker or a way to run Docker containers
 {% endhint %}
 
-* Obtain your Bitbucket Broker token from your CSM or Support team
+* Obtain your Bitbucket Broker token from Snyk.
 * To use the Broker client with a Bitbucket Server deployment, run `docker pull snyk/broker:bitbucket-server` tag. The following environment variables are mandatory to configure the Broker client:
   * `BROKER_TOKEN` - the snyk broker token, obtained from your Bitbucket Server integration settings view (app.snyk.io).
   * `BITBUCKET_USERNAME` - the Bitbucket Server username.
@@ -40,7 +40,7 @@ docker run --restart=always \
 
 * If necessary, go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and make any configuration changes if required (For example, if the Bitbucket instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration). A fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for Bitbucket is attached.
 
-{% file src="../../../.gitbook/assets/accept (1).json" %}
+{% file src="../../../.gitbook/assets/accept (4).json" %}
 
 * Paste the Broker Client configuration to start the broker client container
 * Once the container is up, the Bitbucket Integrations page should show the connection to Bitbucket and you should be able to `Add Projects`

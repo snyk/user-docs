@@ -46,7 +46,7 @@ Every integration has a specific Broker token assigned to it, this means if you 
 ## Generate credentials in the target application for Snyk Broker
 
 {% hint style="info" %}
-For the first deployment of broker, collaborating with your CSM or Support team is required.
+For the first deployment of broker, collaborating with your Snyk account team is required.
 {% endhint %}
 
 After generating the credentials for the Broker's target application, configure the environment variables for launching the Broker.
@@ -56,11 +56,11 @@ To use the Broker, the Broker token is required and must be generated.
 For code repository (SCM) integrations, a Broker token can be generated via API or by contacting [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
 
 1. Go to the Snyk API documentation and follow the example under "Set up a broker for an existing integration" within the [Integrations API](https://snyk.docs.apiary.io/#reference/integrations/integration/update-existing-integration) or contact support.
-2. Verify the Broker token is generated in the Snyk UI under the specified SCM integration. by clicking on settings ![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Integrations** for that specific integration update to see the Broker token.
+2. Verify the Broker token is generated in the Snyk UI under the specified SCM integration. by clicking on settings <img src="../../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> > **Integrations** for that specific integration update to see the Broker token.
 
 For [Artifactory](https://docs.snyk.io/integrations/private-registry-integrations/artifactory-registry-for-npm) or [Jira](https://docs.snyk.io/features/integrations/notifications-ticketing-system-integrations/jira) integrations, a Broker token can be generated within the Snyk UI, or by contacting Snyk support
 
-1. Click on settings ![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Integrations** for that specific integration to generate the Broker token.
+1. Click on settings <img src="../../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> > **Integrations** for that specific integration to generate the Broker token.
 2. Once the broker token is generated, under the integration, you will see the notification from this screen correctly displays “Could not connect to…”.) as you have not yet installed and configured the client.
 3. Copy and paste the broker token from the UI to use it when you install the client.
 

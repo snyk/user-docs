@@ -1,7 +1,7 @@
 # Custom Base Image Recommendations
 
 {% hint style="info" %}
-This feature is currently in Beta. Please contact your CSM if you are interested in participating.
+This feature is currently in Beta. Please contact your Snyk account team if you are interested in participating.
 {% endhint %}
 
 ## **Overview**

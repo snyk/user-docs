@@ -5,14 +5,14 @@ Configuring Azure Repos with broker is useful to ensure a secure connection with
 ### To configure Broker to be used for Azure Repos
 
 {% hint style="info" %}
-Please ask for your CSM support to provide you with a Broker token
+Please ask your Snyk account team to provide you with a Broker token.
 {% endhint %}
 
 {% hint style="info" %}
 You will require Docker or a way to run Docker containers
 {% endhint %}
 
-* Obtain your Azure Repos Broker token from your CSM or Support team
+* Obtain your Azure Repos Broker token from Snyk.
 * To use the Broker client with [Azure](https://azure.microsoft.com/en-us/services/devops/), run `docker pull snyk/broker:azure-repos` tag. The following environment variables are mandatory to configure the Broker client:
   * `BROKER_TOKEN` - the Snyk Broker token, obtained from your Azure Repos integration settings view (app.snyk.io).
   * `AZURE_REPOS_TOKEN` - an Azure Repos personal access token. [Guide](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops\&tabs=preview-page) how to get/create the token. Required scopes: ensure Custom defined is selected and under Code select _Read & write_

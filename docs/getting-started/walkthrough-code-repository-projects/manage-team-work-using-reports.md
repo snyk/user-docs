@@ -42,7 +42,7 @@ Seeing more vulnerabilities over time may not reflect your team's work to improv
 
 For example, the total number of vulnerabilities is likely to rise when you add more projects. The graph may display that linkage - when you see jumps in the total numbers of vulnerabilities, you may see corresponding jumps in the total numbers of Projects:
 
-![More Projects, more issues](<../../.gitbook/assets/image (85) (2).png>)
+![More Projects, more issues](<../../.gitbook/assets/image (258).png>)
 
 #### Metric: ratio of vulnerabilities to Projects
 
@@ -93,7 +93,7 @@ Filtering results in Reports means that your Dashboard shows different numbers t
 
 For example, by default, Snyk does not scan the Dockerfile in the filter, it just scan the docker images themselves
 
-![](<../../.gitbook/assets/image (111) (1).png>)
+![](<../../.gitbook/assets/image (186).png>)
 
 This is turned off by default in the filter, because when Snyk scans the Dockerfile, there will be vulnerabilities in the base OS in the container that you are building. As these cannot generally be fixed by the development team, this filtering allows your team to focus on the issues that you can fix.
 

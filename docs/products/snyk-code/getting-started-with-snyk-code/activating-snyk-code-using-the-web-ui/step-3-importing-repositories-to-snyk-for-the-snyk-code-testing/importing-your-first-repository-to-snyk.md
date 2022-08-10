@@ -8,7 +8,7 @@ If your Snyk Account currently does not include any repositories, you need to im
 
 2\. On the Snyk Web UI, click the **Projects** tab on the top menu:
 
-![](<../../../../../.gitbook/assets/Snyk Code - Org Settings button (1).png>)
+![](<../../../../../.gitbook/assets/Snyk Code - Org Settings button.png>)
 
 **Note**: If your **Project** tab already contains Projects, use the instructions in one of the following sections:
 
