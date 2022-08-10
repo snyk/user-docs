@@ -45,7 +45,7 @@ Click **Ignore** to ignore this vulnerability (see [Ignore Issues](../../feature
 
 ![](<../../.gitbook/assets/image (1) (1).png>)
 
-![Terraform Cloud](<../../.gitbook/assets/image (108) (1).png>)
+![Terraform Cloud](<../../.gitbook/assets/image (108).png>)
 
 * In some cases that we can not identify the exact line of the vulnerable path in the file, we will not show a code snippet, but an info message and the card details. If able to, we will show the **Full details** button so that a preview of the full code can be seen.\
   Example:
