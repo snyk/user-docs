@@ -9,11 +9,11 @@ This group of pages provides detailed "how-to" information for the Snyk CLI. The
 * [Failing **builds** in Snyk CLI](advanced-failing-of-builds-in-snyk-cli.md)
 * ****[**Ignore** vulnerabilties using Snyk CLI](ignore-vulnerabilities-using-snyk-cli.md)
 * [Scan all unmanaged **JAR files**](scan-all-unmanaged-jar-files.md)****
-* How to select the **organization** to use in the CLI
+* [How to select the **organization** to use in the CLI](how-to-select-the-organization-to-use-in-the-cli.md)
 * ****[**Setup.py file** failing to scan or finding zero dependencies](why-is-my-setup.py-file-failing-to-scan-or-finding-0-dependencies.md)
 * ****[**Severity thresholds** for CLI tests](set-severity-thresholds-for-cli-tests.md)
-* ****[**Test public** npm packages before use](test-public-npm-packages-before-use.md)
-* ****[**Test public** repositories before use](test-public-repositories-before-use.md)
+* ****[**Test public npm packages** before use](test-public-npm-packages-before-use.md)
+* ****[**Test public repositories** before use](test-public-repositories-before-use.md)
 * [CLI **test results**](view-cli-test-results.md)****
 
 ## Monitoring projects

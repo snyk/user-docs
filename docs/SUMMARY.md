@@ -57,6 +57,7 @@
     * [Test public npm packages before use](snyk-cli/test-for-vulnerabilities/test-public-npm-packages-before-use.md)
     * [Test public repositories before use](snyk-cli/test-for-vulnerabilities/test-public-repositories-before-use.md)
     * [CLI test results](snyk-cli/test-for-vulnerabilities/view-cli-test-results.md)
+    * [How to select the organization to use in the CLI](snyk-cli/test-for-vulnerabilities/how-to-select-the-organization-to-use-in-the-cli.md)
   * [CLI commands and options summary](snyk-cli/cli-reference.md)
   * [CLI help](snyk-cli/commands/README.md)
     * [Auth](snyk-cli/commands/auth.md)
