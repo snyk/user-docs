@@ -76,7 +76,7 @@ Snyk supports a single private Git repository for _all_ the Go Modules projects 
 
 Imports for projects with private modules from repos in other Git organizations will fail. Support for private module dependencies from other Git organizations is planned for the future.
 
-Private modules are supported for GitHub and Bitbucket Cloud. GitLab, GitHub Enterprise and Bitbucket Server are not currently supported.
+Private modules are supported for GitHub and Bitbucket Cloud. GitLab and Bitbucket Server are not currently supported.
 
 **Broker**
 
