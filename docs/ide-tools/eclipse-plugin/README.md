@@ -44,15 +44,7 @@ This page explains supported environments, support, and giving feedback and prov
 
 If you want to verify the correct provenance of your download, please verify the signing details from the Eclipse dialog with this data.
 
-```bash
-Creation date: May 9, 2022
-Owner: CN=Snyk Ltd, OU=Road Runner, O=Snyk Ltd, L=London, ST=London, C=GB
-Issuer: CN=Snyk Ltd, OU=Road Runner, O=Snyk Ltd, L=London, ST=London, C=GB
-Serial number: 740679006
-Valid from: Mon May 09 21:13:17 CEST 2022 until: Wed May 08 21:13:17 CEST 2024
-```
-
-## Supported Operating Systems
+![The signing key details to verify the integrity and origin of the download plugin](<../../.gitbook/assets/image (6).png>)
 
 * MacOSX
 * Linux
