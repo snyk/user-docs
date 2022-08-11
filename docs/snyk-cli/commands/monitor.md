@@ -176,6 +176,14 @@ This is an alias for `--project-tags`
 
 For more information about Maven CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven)
 
+### `--maven-aggregate-project`
+
+Use this argument instead of `--all-projects` when scanning Maven aggregate projects.
+A Maven aggregate project is one that uses modules and inheritance. 
+When scanning these types of projects Snyk will perform a compile to ensure all modules are resolvable by the Maven reactor. 
+Make sure to execute this in the same directory as the root pom.xml file.
+Snyk creates a project per pom.xml file.
+
 ### `--scan-all-unmanaged`
 
 Auto-detect maven jars, aars, and wars in given directory. To monitor individually use `--file=<JAR_FILE_NAME>`
