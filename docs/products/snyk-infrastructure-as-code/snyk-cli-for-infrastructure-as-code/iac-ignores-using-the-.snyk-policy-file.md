@@ -51,8 +51,8 @@ In the following example, an issue is being ignored with the `SNYK-CC-K8S-1` ID 
 You can generate the scoped ignore rules with the Snyk CLI by running the following commands:
 
 ```
-snyk ignore --id=SNYK-CC-K8S-1 path='staging/cronjob.yaml > *'
-snyk ignore --id=SNYK-CC-K8S-1 path='staging/deployment.yaml > *'
+snyk ignore --id=SNYK-CC-K8S-1 --path='staging/cronjob.yaml > *'
+snyk ignore --id=SNYK-CC-K8S-1 --path='staging/deployment.yaml > *'
 ```
 
 Alternatively, manually modify the `.snyk` policy file as follows:
@@ -88,7 +88,7 @@ Testing production/deployment.yaml...Infrastructure as code issues:
 You could generate the scoped ignore rule with the Snyk CLI, by running the following command:
 
 ```
- snyk ignore --id=SNYK-CC-K8S-1 path='production/deployment.yaml > [DocId:1] > spec > template > spec > containers[web] > securityContext > privileged'
+ snyk ignore --id=SNYK-CC-K8S-1 --path='production/deployment.yaml > [DocId:1] > spec > template > spec > containers[web] > securityContext > privileged'
 ```
 
 Alternatively, manually modify the policy file as follows:
