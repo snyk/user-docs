@@ -14,13 +14,13 @@ Reports are available with Business and Enterprise plans. See [pricing plans](ht
 
 Click **Reports** to access the vulnerability information for all Snyk Projects in your Organization:
 
-![](<../../.gitbook/assets/image (126).png>)
+![](<../../.gitbook/assets/Screenshot 2022-08-11 at 09.42.46.png>)
 
 {% hint style="info" %}
 By default, results are shown for the last 90 days; use the **Show report for:** dropdown on the top right to change this default.
 {% endhint %}
 
-See [the Reports docs](../../features/reports/) for more details.
+See [Reports](../../features/reports/) for more details.
 
 ### Security issues
 
