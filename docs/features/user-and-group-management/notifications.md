@@ -1,8 +1,20 @@
 # Managing notifications
 
-### Introduction
+### Introduction&#x20;
 
-Notifications allow you to get alerts when Snyk finds new issues in your projects. Snyk offers customizable notifications for:
+Snyk automatically notifies you when new issues are found in the projects you are monitoring. These notifications can help make you aware of new risks in these projects.
+
+Notifications can be sent:
+
+* By email, if you have not disabled these in your [your notification settings](https://app.snyk.io/account/notifications).\
+  **Note**: setting a Project to inactive will not stop Snyk from sending notifications, you must disable notifications separately for that Project.
+* By Slack, if you have set up [Slack integration](https://docs.snyk.io/integrations/untitled-3/slack-integration).
+
+Snyk also sends you a weekly update summarizing your security status across all of your organizations.
+
+#### Notification types
+
+Snyk offers notifications for:
 
 * vulnerabilities
 * license issues
@@ -10,7 +22,11 @@ Notifications allow you to get alerts when Snyk finds new issues in your project
 * usage alerts
 * report status
 
-Manage the default settings for which notifications Snyk sends at the [group](notifications.md#define-group-notification-defaults) or [organization](notifications.md#define-organization-notification-defaults) level. Individual users can customize their notification preferences for particular projects.
+## **Managing notifications**
+
+Snyk includes a range of controls to manage your own notifications.&#x20;
+
+Administrators can also manage the notification defaults for others in the [group](notifications.md#define-group-notification-defaults) or [organization](notifications.md#define-organization-notification-defaults).
 
 You can also send notifications for an organization to a designated [Slack channel](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration).
 
