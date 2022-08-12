@@ -107,7 +107,7 @@ The following options are available for configuration:
 
 * **Snyk organization:** Select the Snyk organization where reports of findings are saved.
 * **Vulnerability handling**: Define the pipeline behavior if a vulnerability is found. If the `Block deployment when Snyk finds an error` checkbox is checked, the pipeline fails and does not proceed to the next stage in the CodePipeline.
-* **Block deployment for vulnerabilities with a minimum severity of**: **Low**|**Medium**|**High**|**Critical**: Report only vulnerabilities of the specified level or higher.
+* **Block deployment for vulnerabilities with a minimum severity of**: **Low**|**Medium**|**High**|**Critical**: Severity threshold when `Block deployment when Snyk finds an error` checkbox is checked
 *   **Monitoring behavior on build**: Set the criteria to monitor projects from the AWS CodePipeline. The available options are:
 
     * **Always monitor**: The project snapshot is created independent of the test results.
