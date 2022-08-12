@@ -19,15 +19,15 @@ If your Snyk Account currently does not include any repositories, you need to im
 
 **Note**: You can click the **Show all repositories** link to display all the repositories in your integrated SCM.
 
-![](<../../../../../.gitbook/assets/image (17).png>)
+![](<../../../../../.gitbook/assets/image (202).png>)
 
 4\. After you selected the repositories for the Snyk Code test, click the **Import and scan** button.
 
 The selected repositories are imported to Snyk Code, and a progress bar appears**:**
 
-![](<../../../../../.gitbook/assets/image (18).png>)
+![](<../../../../../.gitbook/assets/image (275).png>)
 
 When the import is completed, a confirmation message appears on the **Projects** page, informing you of the success of the import. Your imported repositories appear as Target folders, each containing the **Code analysis** Project that includes the findings of the Snyk Code test:
 
-![](<../../../../../.gitbook/assets/image (27).png>)
+![](<../../../../../.gitbook/assets/image (283).png>)
 

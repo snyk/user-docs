@@ -30,7 +30,7 @@ The following table describes the different parts of the **Summary** area:
 
 ### Activity&#x20;
 
-![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (184).png>)
 
 For the **Activity** area, the following are the parameters and their descriptions:
 
@@ -47,6 +47,6 @@ For the **Activity** area, the following are the parameters and their descriptio
 
 If you have lots of Projects files to manage and organise in your Organization, you can use filters to focus on specific Projects, or specific types of vulnerability:
 
-![](<../../.gitbook/assets/image (25).png>)
+![](<../../.gitbook/assets/image (95).png>)
 
 For example, if your Organization represents your development team, and you want to focus on (say) front-end work in the next Sprint, click the **Projects** dropdown and select a subset of the front-end Projects to scan, allowing you to focus on fixing vulnerabilities in that area.

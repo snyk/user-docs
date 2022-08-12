@@ -16,7 +16,7 @@ After the Automatic PR Check discovers security issues in a PR, you can view the
 
 * On the **SAST check** page, locate the required issue, and click the **Full details** button on the bottom right corner:
 
-![](<../../../.gitbook/assets/image (8).png>)
+![](<../../../.gitbook/assets/image (272).png>)
 
 The full details of the discovered issue are displayed:
 
@@ -32,15 +32,15 @@ The **Mark as successful** action does NOT ignore the issue, but only allows it 
 
 1\. On the **SAST check** page header, click the **Mark as successful in SCM** button on the right:
 
-![](<../../../.gitbook/assets/image (21).png>)
+![](<../../../.gitbook/assets/image (286).png>)
 
 2\. On the confirmation message that appears, click **OK**:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful - message (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful - message (4).png>)
 
 A message appears on the **SAST check** page header, informing you that the failed PRs are now marked as successful:
 
-![](<../../../.gitbook/assets/image (10).png>)
+![](<../../../.gitbook/assets/image (264).png>)
 
 On your SCM, the previous PR Check “**failed**” message is now changed to “**passed**”. In addition, there is an indication that the PR check was **Skipped**, and that a specific Snyk user forced this result change:
 
@@ -54,10 +54,10 @@ You can return to your SCM directly from the Snyk Web UI.
 
 1\. On the **SAST check** page -> Project Summary Information area, click the **PR Check Group** option:
 
-![](<../../../.gitbook/assets/image (28).png>)
+![](<../../../.gitbook/assets/image (201).png>)
 
 2\. On the **Security check** page, click the repository link in the **REPOSITORY** field:
 
-![](<../../../.gitbook/assets/image (23).png>)
+![](<../../../.gitbook/assets/image (183).png>)
 
 You are moved back to your SCM.

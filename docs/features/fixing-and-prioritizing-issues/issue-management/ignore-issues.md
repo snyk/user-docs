@@ -27,7 +27,7 @@ Each issue card has an **Ignore** button that opens up a dialog where you can se
 
 If you select **Ignore temporarily,** then you can check the **Until fix is available** checkbox:
 
-![](<../../../.gitbook/assets/image (19) (1) (1).png>)
+![](<../../../.gitbook/assets/image (19) (1).png>)
 
 This will resurface the vulnerability as soon as we have a fix for it, and you can optionally give additional details on why you’re ignoring the issue. This is checked by default if there is currently no fix available for this issue.
 
@@ -37,7 +37,7 @@ An issue is ignored until ANY of the conditions happen - either the ignore perio
 
 When you ignore an issue in our UI, it will show who ignored it and allow you to edit or unignore it.
 
-![](<../../../.gitbook/assets/image (14) (1) (1).png>)
+![](<../../../.gitbook/assets/image (14) (2).png>)
 
 ### Ignoring issues in the CLI
 
@@ -70,11 +70,11 @@ For example:
 
 `snyk test` before ignoring in the UI:
 
-![](<../../../.gitbook/assets/image (18) (1) (1).png>)
+![](<../../../.gitbook/assets/image (18) (1).png>)
 
 `snyk test` after ignoring in the UI:
 
-![](<../../../.gitbook/assets/image (20) (1) (1).png>)
+![](<../../../.gitbook/assets/image (20) (1).png>)
 
 It is important that the above is true if you ignore the project imported by `snyk monitor` from the CLI or CI/CD.
 
