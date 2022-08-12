@@ -40,6 +40,16 @@ Auto-detect all projects in the working directory (including Yarn workspaces).
 
 For more information see the article [Does the Snyk CLI support monorepos or multiple manifest files?](https://support.snyk.io/hc/en-us/articles/360000910577-Does-the-Snyk-CLI-support-monorepos-or-multiple-manifest-files-)
 
+### `--fail-fast`
+
+Use with `--all-projects` to cause scans to be interrupted when errors occur and to report these errors back to the user.
+
+The exit code is 2 and the scan ends. No vulnerability information is reported for projects that did not produce errors.
+
+To perform the scan, resolve the error and scan again.
+
+Note: If you do not use `--fail-fast`, Snyk scans all the projects but does not report any vulnerabilities for projects it could not scan due to misconfiguration or another error.
+
 ### `--detection-depth=<DEPTH>`
 
 Use with `--all-projects` or `--yarn-workspaces` to indicate how many subdirectories to search. `DEPTH` must be a number, `1` or greater; zero (0) is the current directory.
