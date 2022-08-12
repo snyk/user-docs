@@ -20,7 +20,7 @@ Click **Reports** to access the vulnerability information for all Snyk Projects 
 By default, results are shown for the last 90 days; use the **Show report for:** dropdown on the top right to change this default.
 {% endhint %}
 
-See [Reports](../../features/reports/) for more details.
+See [Reports](../../features/snyk-reports/) for more details.
 
 ### Security issues
 

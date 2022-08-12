@@ -152,4 +152,4 @@ As suppressing vulnerabilities carries a level of risk, you can make this functi
 
 If you have access to our Reports feature, you will also be able to see an overview of how many issues in your organization’s projects are ignored, along with an option to filter these so you can drill down into each one. If the issue was ignored in our UI, we include a credit for additional accountability, so you can see who initiated it.
 
-See [Reports](../../reports/) for more details.
+See [Reports](../../snyk-reports/) for more details.

@@ -1,7 +1,3 @@
----
-coverY: 0
----
-
 # Azure Repository integration
 
 Snyk's Azure Repository integration lets you:
