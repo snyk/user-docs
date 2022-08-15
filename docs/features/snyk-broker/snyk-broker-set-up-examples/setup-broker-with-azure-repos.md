@@ -1,6 +1,6 @@
 # Setup Broker with Azure Repos
 
-Configuring Azure Repos with broker is useful to ensure a secure connection with your on-premise or cloud Azure Repos deployment.
+Configuring Azure Repos with the Snyk Broker is useful to ensure a secure connection with your on-premise or cloud Azure Repos deployment.
 
 ### To configure Broker to be used for Azure Repos
 
