@@ -16,15 +16,15 @@ When enabling the Automatic PR Checks feature for an entire organization, all th
 
 1\. On the Snyk Web UI, open the required organization:
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (2).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Selecting Organization (1) (1).png>)
 
-2\. Once the required organization is open, click the **Org Settings** button <img src="../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (5).png" alt="" data-size="line"> on the top menu:
+2\. Once the required organization is open, click the **Org Settings** button <img src="../../../.gitbook/assets/Snyk Code - PR Checks - Org Settings button - Icon (1).png" alt="" data-size="line"> on the top menu:
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org Settings button (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (2).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR  Checks - Org Settings button.png>)
 
 3\. On the Org **Settings** page, select **Integrations** on the left menu. Then, locate your configured and required SCM, and click the **Edit settings** option at the end of its row:
 
-![](<../../../.gitbook/assets/image (29).png>)
+![](<../../../.gitbook/assets/image (247).png>)
 
 
 
@@ -42,7 +42,7 @@ When enabling the Automatic PR Checks feature for an entire organization, all th
 
 * **Apply changes to all overridden projects** option – your changes are saved, and will be applied to all the Projects in the organization. Projects that already have Custom Settings will inherit these new organization Settings, and their Custom Settings will be override. After you click this option, a message appears, asking you to confirm the override action:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message.png>)
 
 Click **OK** to complete the Save with Override action.
 
@@ -58,17 +58,17 @@ By default, the Settings on the Project level override the Settings on the organ
 
 1\. On the Snyk Web UI, open the organization that includes the required Project:
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (2).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Selecting Organization (1) (1).png>)
 
 2\. Move to the **Projects** page by clicking the **Projects** tab on the top menu.
 
 3\. Locate the **Code analysis** Project for which you want to enable the Automatic PR Checks. Then, click the **Settings** button on the right side of its row:
 
-![](<../../../.gitbook/assets/image (30).png>)
+![](<../../../.gitbook/assets/image (259).png>)
 
 4\. On the Project **Settings** page, click the relevant **integration** tab on left menu:
 
-![](<../../../.gitbook/assets/image (11).png>)
+![](<../../../.gitbook/assets/image (260).png>)
 
 5\. On the **integration** page -> **Snyk Code for pull requests** section, select one of the following:
 

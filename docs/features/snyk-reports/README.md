@@ -6,7 +6,7 @@ Snyk reports help security and development teams work together. As your coding p
 
 Tracking analytics is simple when all your data can be found in a single screen, on Projects, Issues, Dependencies, and Licenses.
 
-See the [Reports Overview](../reports/reports-overview.md) page for more information on organizing and customizing your reports.
+See the [Reports Overview](reports-overview.md) page for more information on organizing and customizing your reports.
 
 {% hint style="info" %}
 **Feature availability**\

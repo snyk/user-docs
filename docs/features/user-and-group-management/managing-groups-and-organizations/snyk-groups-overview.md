@@ -10,10 +10,10 @@ Within the group overview, you can also view all of a group’s members. Note th
 
 From the group overview, the vulnerability status of all of a group’s organizations are visible in one place as a report. You can select which organizations you wish to compare via the filter dropdown. This will set the context for all the tabs within the reports, where you can continue to filter other values such as type, status and package manager.
 
-![](<../../../.gitbook/assets/image (13) (1).png>)
+![](<../../../.gitbook/assets/image (348).png>)
 
 ## Organization filters
 
 Organization filters can be created, saved, and selected quickly via the **Organization Filters** dropdown.
 
-![](<../../../.gitbook/assets/image (18) (1).png>)
+![](<../../../.gitbook/assets/image (382).png>)

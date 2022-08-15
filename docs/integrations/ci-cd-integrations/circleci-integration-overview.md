@@ -34,7 +34,7 @@ Optionally, if the build completes successfully and MONITOR is set to True in th
 2. Import the relevant repo into CircleCI.
 3. Go to `Settings -> Security -> Orb security settings` and make sure you allow to opt-in to third party Orbs.
 4. Make sure your configuration (`config.yml`) file follows version 2.1.
-5. Add the required variables to CircleCI (including Snyk API token as `API_TOKEN`)
+5. Add the required environment variables to CircleCI (including the Snyk API token as `SNYK_TOKEN`).
 
 ## Getting Snyk Orb details from the CircleCI registry
 
