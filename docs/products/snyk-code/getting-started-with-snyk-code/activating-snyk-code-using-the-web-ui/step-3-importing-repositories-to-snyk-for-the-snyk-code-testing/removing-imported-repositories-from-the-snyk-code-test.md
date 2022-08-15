@@ -35,13 +35,13 @@ To deactivate or delete an imported repository, you need to select all the Proje
 
 **To deactivate or delete multiple Snyk Projects:**
 
-1\. On the Snyk Web UI, click the **Org** **Settings** button <img src="../../../../../.gitbook/assets/Snyk Code - Org Settings button - Icon (2).png" alt="" data-size="line"> on the top menu:
+1\. On the Snyk Web UI, click the **Org** **Settings** button <img src="../../../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line"> on the top menu:
 
 ![](<../../../../../.gitbook/assets/Snyk Code - Org Settings button - with Projects .png>)
 
 2\. On the Org **Settings** page, select **Usage** on the left menu:
 
-![](<../../../../../.gitbook/assets/image (179).png>)
+![](<../../../../../.gitbook/assets/image (7).png>)
 
 3\. Scroll down the **Usage** page until you reach the **Projects** section, where all your Snyk Projects are listed:
 
@@ -68,7 +68,7 @@ Description automatically generated]\(<../../../../../.gitbook/assets/Snyk Code 
 
 7\. To remove from Snyk the Target folder of the repository whose Projects you deleted, return to the **Projects** page. Then, open the Target folder, and click the **Delete** button on the right corner:
 
-![](<../../../../../.gitbook/assets/image (193).png>)
+![](<../../../../../.gitbook/assets/image (20).png>)
 
 The entire repository is now deleted from your Snyk Account.
 
@@ -80,7 +80,7 @@ To stop Snyk Code from testing an imported repository, you can either deactivate
 
 1\. On the **Projects** page, locate the repository you want Snyk Code to stop testing. In its Target folder, locate the **Code analysis** Project, and click the **Settings** button on the right side of its row:
 
-![](<../../../../../.gitbook/assets/image (290).png>)
+![](<../../../../../.gitbook/assets/image (12).png>)
 
 2\. On the **Settings** page of the **Code analysis** Project, click either the **Deactivate project** or **Delete project** button according to your needs:
 

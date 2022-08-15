@@ -23,7 +23,7 @@ In case you notice a license with the wrong license assigned to it, you can reac
 
 To facilitate onboarding of your developers, we recommend that your teams check these defaults, update severities, and add instructions per license type based on the policies outlined specifically by your Legal teams. Once updated, when Snyk detects a license violation, it displays the violation for all users in the organization on the Snyk Web UI or on the CLI Snyk test results, in the same way as a security vulnerability, and including the severity and instructions you configured.
 
-![](<../../../.gitbook/assets/image (2) (2).png>)
+![](<../../../.gitbook/assets/image (2) (1) (1).png>)
 
 ### **An inventory of your licenses**
 

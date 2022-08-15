@@ -15,7 +15,7 @@ Different teams approach fixes in different ways, depending on the tools they us
 
 For example, your team could follow a triage-based process for each issue, driven largely by the severity of the issue:
 
-![](<../../.gitbook/assets/image (304).png>)
+![](<../../.gitbook/assets/image (229).png>)
 
 ### Example workflow: team-lead driven, using Jira
 
@@ -42,11 +42,11 @@ Snyk [Jira integration](https://docs.snyk.io/integrations/notifications-ticketin
 
 Navigate to the issue you have decided to fix, then click **Create a Jira issue**:
 
-![](<../../.gitbook/assets/image (210).png>)
+![](<../../.gitbook/assets/image (68) (1).png>)
 
 You can then define the Jira task details for this fix:
 
-![](<../../.gitbook/assets/image (104).png>)
+![](<../../.gitbook/assets/image (195).png>)
 
 You can assign this task to a developer in the team, following your team’s normal Sprint processes.
 

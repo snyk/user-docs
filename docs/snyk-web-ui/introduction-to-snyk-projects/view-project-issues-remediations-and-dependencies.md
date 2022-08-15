@@ -51,6 +51,6 @@ See [Fixing vulnerabilities](broken-reference) for details.
 
 Snyk uses the package manager of your application to build the dependency tree and display it in the **dependency** tab of the project view. This shows which components introduce a vulnerability, to show how the dependency was introduced to the application:
 
-![](<../../.gitbook/assets/image23 (1).png>)
+![](../../.gitbook/assets/image23.png)
 
 For example, the above screenshot shows a vulnerability based on the transitive dependency **qs@2.2.4**, brought in from the direct dependency **body-parser@ 1.9.0**.
