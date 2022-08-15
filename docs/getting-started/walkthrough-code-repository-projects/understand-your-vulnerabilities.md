@@ -54,7 +54,7 @@ For this example, click on the Snyk vulnerability Identifier to see how Hibernat
 
 To research more about a vulnerability, click **Learn about this type of vulnerability** to access [Snyk Learn](https://learn.snyk.io/) security educational materials:
 
-![](<../../.gitbook/assets/image (212).png>)
+![](<../../.gitbook/assets/image (177).png>)
 
 For example, see [Snyk Learn SQL injection](https://learn.snyk.io/lessons/sql-injection/javascript/) for more details about this type of vulnerability.
 
@@ -84,7 +84,7 @@ Snyk uses the package manager of your application to build the dependency tree a
 
 Click the file tree icon (![](<../../.gitbook/assets/image (36).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
 
-![](../../.gitbook/assets/image23.png)
+![](<../../.gitbook/assets/image23 (1).png>)
 
 For example, the above screenshot shows a vulnerability based on the transitive dependency **qs@2.2.4**, brought in from the direct dependency **body-parser@ 1.9.0**.
 

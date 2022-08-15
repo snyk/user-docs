@@ -79,6 +79,7 @@ When working with Gradle projects from our CLI, you can add any of the following
 | `--configuration-matching=`   | Resolve dependencies using only configuration(s) that match the provided Java regular expression. For example: `'^releaseRuntimeClasspath$'`                                                                                                                                                        |
 | `--configuration-attributes=` | Select certain values of configuration attributes to resolve the dependencies. For example: `'buildtype:release,usage:java-runtime'`                                                                                                                                                                |
 | `--all-projects`              | Use for monorepos. This will detect all supported manifests. For Gradle monorepos Snyk will only look for root level **build.gradle / build.gradle.kts** files and apply the same logic as `--all-sub-projects` behind the scenes. This command is designed to be run in the root of your monorepo. |
+| `--maven-aggregate-project`   | Use this argument instead of `--all-projects` when scanning Maven aggregate projects.                                                                                                                                                                                                               |
 
 ### Pass extra arguments directly to Gradle or Maven via Snyk CLI
 
@@ -111,6 +112,31 @@ Define the system property like this:
 ```
 snyk test -- -Dpkg_version=1.4
 ```
+
+## CLI help for Maven projects
+
+### Aggregate projects
+
+A Maven aggregate project is one that uses modules and inheritance.&#x20;
+
+When scanning these types of projects Snyk will perform a compile to ensure all modules are resolvable by the Maven reactor.&#x20;
+
+*   To scan aggregate projects, use the `--maven-aggregate-project` param:
+
+    ```
+    snyk test --maven-aggregate-project
+    ```
+*   To scan non-aggregate projects use `--all-projects` param:
+
+    ```
+    snyk test --all-projects
+    ```
+
+The same param can be used with `snyk monitor`.
+
+Make sure to execute this in the same directory as the root pom.xml file.
+
+**Note:** Each of the individual sub-projects appears as a separate Snyk project in the UI.
 
 ## CLI help for Gradle projects
 

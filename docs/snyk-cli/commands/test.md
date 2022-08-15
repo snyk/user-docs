@@ -185,9 +185,19 @@ Fail only when there are vulnerabilities that can be fixed.
 
 To fail on any vulnerability (the default behavior), do not use the `--fail-on` option. If vulnerabilities do not have a fix and this option is being used, tests pass.
 
-## Option for Maven projects
+## Options for Maven projects
 
 For more information about Maven CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven)
+
+### `--maven-aggregate-project`
+
+Use `--maven-aggregate-project` instead of `--all-projects` when scanning Maven aggregate projects, that is, ones that use modules and inheritance.
+
+When scanning these types of projects, Snyk performs a compile to ensure all modules are resolvable by the Maven reactor.&#x20;
+
+Be sure to run the scan in the same directory as the root pom.xml file.&#x20;
+
+Snyk reports test results per pom.xml file.
 
 ### `--scan-all-unmanaged`
 

@@ -182,9 +182,19 @@ Set the project tags to one or more values (comma-separated key value pairs with
 
 This is an alias for `--project-tags`
 
-## Option for Maven projects
+## Options for Maven projects
 
 For more information about Maven CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven)
+
+### `--maven-aggregate-project`
+
+Use `--maven-aggregate-project` instead of `--all-projects` when scanning Maven aggregate projects, that is, ones that use modules and inheritance.
+
+When scanning these types of projects, Snyk performs a compile to ensure all modules are resolvable by the Maven reactor.&#x20;
+
+Be sure to run the scan in the same directory as the root pom.xml file.&#x20;
+
+Snyk reports test results per pom.xml file.
 
 ### `--scan-all-unmanaged`
 
