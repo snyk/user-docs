@@ -8,6 +8,7 @@ You can use Snyk products to scan:
 * **Source code:** [Snyk Code](https://snyk.io/product/snyk-code/) - find and fix vulnerabilities in your source code during the coding stage in your native workflow.
 * **Container images and Kubernetes applications:** [Snyk Container](https://docs.snyk.io/snyk-container) - find and fix vulnerabilities in container images and Kubernetes applications.
 * **Configuration code:** [Snyk Infrastructure as Code (IaC)](https://docs.snyk.io/snyk-infrastructure-as-code) - find and fix insecure configurations in Terraform and Kubernetes code.
+* **Cloud infrastructure:** [Snyk Cloud](../products/snyk-cloud/) - find and fix misconfigurations in Amazon Web Services accounts.
 
 ### Snyk environments: choose how to run Snyk
 

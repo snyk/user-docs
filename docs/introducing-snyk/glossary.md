@@ -94,6 +94,10 @@ A text file format used to build container images using Docker. The Dockerfile c
 
 ## E
 
+### Environment
+
+Can refer to a [Snyk Cloud Environment](glossary.md#snyk-cloud-environment), a [project attribute](../snyk-web-ui/introduction-to-snyk-projects/project-attributes.md), or an interface for working with Snyk, such as the Snyk [CLI](glossary.md#cli), [Web UI](glossary.md#snyk-web-ui), or an [IDE](glossary.md#ide).
+
 ### Exploit
 
 A demonstration of how a vulnerability can be taken advantage of. When an exploit is widely published, it is commonly referred to as an exploit in the wild.
@@ -146,7 +150,7 @@ Third-party products, applications and platforms that Snyk works with, for examp
 
 ### Issue
 
-A license problem or vulnerability identified and lists by Snyk.
+A license problem, vulnerability, or misconfiguration identified and listed by Snyk.
 
 ## L
 
@@ -230,6 +234,14 @@ See [Container registry](https://support.snyk.io/hc/en-us/articles/360017682058-
 
 A storage area that contains all elements necessary for the distribution of an application.
 
+### Resource
+
+A cloud infrastructure entity such as an AWS S3 bucket, Identity & Access Management (IAM) role, or Virtual Private Cloud (VPC) flow log.
+
+### Rule
+
+A security policy that checks cloud infrastructure and infrastructure as code (IaC) for misconfigurations that can lead to security problems.
+
 ## S
 
 ### SARIF
@@ -305,6 +317,14 @@ A client/server system that serves as an agent / proxy, allowing Snyk to scan pr
 ### Snyk CLI
 
 A Snyk platform tool. Snyk CLI enables developers to find and fix known vulnerabilities in dependencies, using a command line interface. See [Snyk CLI documentation](https://docs.snyk.io/snyk-cli).
+
+### Snyk Cloud
+
+A Snyk product. Enables developers to find and fix cloud infrastructure misconfigurations. See [Snyk Cloud documentation](../products/snyk-cloud/).
+
+### Snyk Cloud Environment
+
+An organizing concept that equates to an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project. See [Snyk Cloud concepts](../products/snyk-cloud/snyk-cloud-concepts.md).
 
 ### Snyk Code
 
