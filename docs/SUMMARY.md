@@ -165,6 +165,7 @@
       * [TeamCity integration: use Snyk in your build](integrations/ci-cd-integrations/teamcity-integration-overview/teamcity-integration-use-snyk-in-your-build/README.md)
         * [TeamCity integration: install the Snyk plugin](integrations/ci-cd-integrations/teamcity-integration-overview/teamcity-integration-use-snyk-in-your-build/teamcity-integration-install-the-snyk-plugin.md)
       * [TeamCity configuration parameters](integrations/ci-cd-integrations/teamcity-integration-overview/teamcity-configuration-parameters.md)
+    * [Snyk CI/CD Integration deployment and strategies](integrations/ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies.md)
   * [Git repository integrations (SCM)](integrations/git-repository-scm-integrations/README.md)
     * [Snyk Git repository integration: deployment recommendations](integrations/git-repository-scm-integrations/snyk-scm-integration-good-practices.md)
     * [GitHub integration](integrations/git-repository-scm-integrations/github-integration.md)
