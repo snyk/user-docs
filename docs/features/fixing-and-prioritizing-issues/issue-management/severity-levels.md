@@ -46,11 +46,11 @@ Severity levels are displayed throughout Snyk, to show this information at all t
 
 For example, in the **Pending tasks** section of the Dashboard:
 
-<img src="../../../.gitbook/assets/image (159).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/image (9) (3).png" alt="" data-size="original">
 
 Associated with your [Projects](../../../introducing-snyk/projects.md):
 
-![](<../../../.gitbook/assets/image (43).png>)
+![](<../../../.gitbook/assets/image (43) (1).png>)
 
 And for each vulnerability in a project:
 

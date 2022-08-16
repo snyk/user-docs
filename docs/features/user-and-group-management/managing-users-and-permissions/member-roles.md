@@ -68,7 +68,7 @@ You can use the Duplicate button next to each role in the Member Roles list page
 
 Enter a unique name and description and click the **Duplicate Role** button. Group Admin can then edit this role to assign new permissions to it or rescind any permissions already assigned.
 
-![](<../../../.gitbook/assets/image (396).png>)
+![](<../../../.gitbook/assets/image (6) (2).png>)
 
 ### Delete a Role
 
@@ -92,13 +92,13 @@ In the UI, select an **Org** > **Members**.
 
 For any member (Name) except a Group Admin, the user can select the dropdown next to the current role and choose any role to assign that role to the member.
 
-![](<../../../.gitbook/assets/image (388).png>)
+![](<../../../.gitbook/assets/image (11) (1).png>)
 
 Click the **Add members** button > **Invite new members**.\
 \
 You can invite new members to the org by assigning them a specified role.
 
-![](<../../../.gitbook/assets/image (345).png>)
+![](<../../../.gitbook/assets/image (8) (2).png>)
 
 Choose **Add members** button > **Add existing members** to promote current Group Members to an org-specific role.
 
@@ -106,7 +106,7 @@ Choose **Add members** button > **Add existing members** to promote current Grou
 Snyk prevents users from assigning roles to others that have more privileges than what they already have. You would encounter the following error while trying to update the role of a member, invite a new member, or add an existing member with a role that has more privileges than the logged in user.
 {% endhint %}
 
-![User cannot assign more privileged role to another user](<../../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05.png>)
+![User cannot assign more privileged role to another user](<../../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05 (1).png>)
 
 ### Assigning roles to Service Accounts
 
@@ -130,6 +130,10 @@ Snyk prevents users from creating organisation service accounts with a role that
 ### Roles in Custom SSO
 
 Member roles are supported as part of a Customized SSO authentication flow. All new and existing customers who have customized SSO will be able to use new roles they create in their IDP SAML assertions to provision users in their orgs with those roles.
+
+{% hint style="info" %}
+If you are a customer who already has Custom SSO set up or you are planning to create Member Roles after setting up Custom SSO, you can use Member Roles _without_ any modification to the Custom SSO config at Snyk side, as long as you send normalized role name in your payload in the agreed format.
+{% endhint %}
 
 New member role SAML assertions follow Snyk's existing pattern for declaring org memberships in IDP payloads: `{snyk-prefix}-{org-name}-{normalized-role-name},` for example: `snyk-goof-developer_readonly`
 
