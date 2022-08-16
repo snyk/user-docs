@@ -15,6 +15,7 @@ This group of pages provides detailed "how-to" information for the Snyk CLI. The
 * ****[**Test public npm packages** before use](test-public-npm-packages-before-use.md)
 * ****[**Test public repositories** before use](test-public-repositories-before-use.md)
 * [CLI **test results**](view-cli-test-results.md)****
+* [Differences in **vulnerability counts** across environments](differences-in-vulnerability-counts-across-environments.md)
 
 ## Monitoring projects
 
