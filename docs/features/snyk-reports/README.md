@@ -1,8 +1,8 @@
-# Snyk reports
+# Reports
 
 ## Introduction
 
-Snyk reports help security and development teams work together. As your coding projects progress, Snyk's reporting dashboard lets security professionals monitor activity and maintain security insight, without looking over development’s shoulder.
+Snyk reports help security and development teams work together. As your coding projects progress, Snyk's reporting dashboard lets security professionals monitor activity and maintain security insight, without looking over development’s shoulder.&#x20;
 
 Tracking analytics is simple when all your data can be found in a single screen, on Projects, Issues, Dependencies, and Licenses.
 
@@ -15,7 +15,7 @@ Reports are available with the Business and Enterprise plans. See the [plans and
 
 ### Accessing reports
 
-1. Navigate to the [Snyk homepage](https://snyk.io) and login to Snyk
+1. Navigate to the [Snyk homepage](https://snyk.io) and login to Snyk&#x20;
 2. [Login or create an account](https://app.snyk.io/login)
 3. Select the **Reports** menu option (in the top navigation bar)
 

@@ -108,6 +108,5 @@ Next, get recommendations for the image:
 ## Known gaps
 
 1. Marking an image as a custom base image is supported only through the UI, and not through the API/CLI.
-2. Scanning only a Dockerfile (and not the image itself) that contains a custom base image will not show vulnerabilities, but will give recommendation advice.
-3. Custom base image recommendations will not appear when scanning an image without attaching the Dockerfile to the project.
-4. The image’s registry is ignored when giving recommendations for custom base images. Images with the same repository but different registries will be treated as coming from the same registry (the current base image’s registry) in showing recommendations and fix PRs.
+2. Custom base image recommendations will not appear when scanning an image without attaching the Dockerfile to the project.
+3. The image’s registry is ignored when giving recommendations for custom base images. Images with the same repository but different registries will be treated as coming from the same registry (the current base image’s registry) in showing recommendations and fix PRs.
