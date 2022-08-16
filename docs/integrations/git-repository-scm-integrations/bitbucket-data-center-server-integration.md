@@ -62,6 +62,10 @@ To review and adjust the automatic fix pull request settings:
 
 ![](../../.gitbook/assets/bitbucket\_server-autofixprs\_18july2022.png)
 
+{% hint style="info" %}
+Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are not automatically assigned to the default reviewer set in your Bitbucket Cloud or Bitbucket Server account. More info on [Snyk automated pull requests](https://docs.snyk.io/products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities).
+{% endhint %}
+
 ### **Pull request tests**
 
 Snyk tests any newly created pull request in your repositories for security vulnerabilities, and sends a build check to Bitbucket DC/Server. You can to see whether the pull request introduces new security issues, directly from Bitbucket DC/Server.

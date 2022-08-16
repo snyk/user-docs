@@ -69,7 +69,7 @@ The example below presents a project level security report.&#x20;
 
 ### Project monitoring and automatic fix Pull Requests
 
-Snyk scans your projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening automated pull requests with fixes for your repositories.
+Snyk scans your projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening [automated pull requests](https://docs.snyk.io/products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities) with fixes for your repositories.
 
 The example below presents a fix Pull Request opened by Snyk.
 
@@ -81,6 +81,10 @@ To review and adjust the automatic fix pull request settings:
 2. Scroll to the **Automatic fix pull requests** section and configure the relevant options.
 
 ![](../../.gitbook/assets/bitbucket\_cloud-auto\_fix\_prs\_30june2022.png)
+
+{% hint style="info" %}
+Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are not automatically assigned to the default reviewer set in your Bitbucket Cloud or Bitbucket Server account. More info on [Snyk automated pull requests](https://docs.snyk.io/products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities).
+{% endhint %}
 
 ### Pull request tests
 
