@@ -1,4 +1,4 @@
-# Snyk Priority Score
+# Priority Score
 
 **What is the Snyk Priority Score?**
 
@@ -7,7 +7,7 @@ Snyk created a Priority Score to make the prioritization of issues as quick and 
 Snyk's security group found a significant correlation between trending vulnerabilities and exploits or proof of concept's that can be found in the wild. Social trends are calculated and shown for all issues, vulnerabilities and licenses and range from 0 to 1,000 (0 is considered low risk and 1,000 is considered critical). This gives users a high degree of granularity that reflects the many considerations taken into account. The granularity avoids having too many issues ending up with the same score so users can determine priority at a glance with a high degree of accuracy.
 
 {% hint style="info" %}
-Snyk does not use the CVSS score alone to determine priority: Snyk’s Priority Score is a comprehensive scoring system that processes multiple factors, including the CVSS score, the availability of a fix, known exploits, how new the vulnerability is, and whether it is reachable or not. See [How it works](snyk-priority-score.md) section for details.
+Snyk does not use the CVSS score alone to determine priority: Snyk’s Priority Score is a comprehensive scoring system that processes multiple factors, including the CVSS score, the availability of a fix, known exploits, how new the vulnerability is, and whether it is reachable or not. See [How it works](priority-score.md) section for details.
 {% endhint %}
 
 ## How it works
