@@ -42,7 +42,7 @@ See [Snyk languages and integrations](snyk-languages-and-integrations.md) for mo
 
 Snyk has several [pricing plans](https://snyk.io/plans/) available, from free to Enterprise.
 
-See [Plans](snyks-core-concepts/plans.md) for more details.
+See [Plans](plans.md) for more details.
 
 ### **Who uses Snyk?**
 
