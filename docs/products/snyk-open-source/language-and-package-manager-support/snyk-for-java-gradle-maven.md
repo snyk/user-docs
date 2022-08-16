@@ -31,9 +31,9 @@ However, for the most accurate results, we recommend using the [Snyk CLI](../../
 {% tab title="Kotlin" %}
 **Kotlin**
 
-| Package managers / Features  | CLI support | Git support | License scanning | Fixing                              | Runtime monitoring |
-| ---------------------------- | ----------- | ----------- | ---------------- | ----------------------------------- | ------------------ |
-| [Gradle](https://gradle.org) | ✔︎          |             | ✔︎               | [Fix advice](broken-reference) only | ✔︎                 |
+| Package managers / Features  | CLI support | Git support | License scanning | Fixing          |
+| ---------------------------- | ----------- | ----------- | ---------------- | --------------- |
+| [Gradle](https://gradle.org) | ✔︎          |             | ✔︎               | Fix advice only |
 {% endtab %}
 {% endtabs %}
 
