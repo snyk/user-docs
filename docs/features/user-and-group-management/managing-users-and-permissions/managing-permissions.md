@@ -20,6 +20,8 @@ To change roles for a user:
 
 ### Permissions per role
 
+**Group Member** role does not directly provide the user any rights. They need to be granted an organization role or promoted as Group Admins.
+
 | User permissions                               | Group Administrator | Organization Administrator | Organization Collaborator |
 | ---------------------------------------------- | ------------------- | -------------------------- | ------------------------- |
 | Add/delete projects                            | x                   | x                          | x                         |
