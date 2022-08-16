@@ -1,2 +1,0 @@
-# Snyk's core concepts
-

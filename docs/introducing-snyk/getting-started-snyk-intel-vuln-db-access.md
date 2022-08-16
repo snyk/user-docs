@@ -27,4 +27,4 @@ You can incorporate Snyk Vulnerability Database information in your system. Typi
 2. Snyk sends you database information, typically as a JSON file (see [sample code](https://snyk.io/partners/api/v4/vulndb/sample.json)) **Note**: It is recommends that you save the file in a database.
 3. You can now write code to use the database information in your systems.
 
-Also see [Using the Snyk Vulnerability Database](../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md).
+Also see [Using the Snyk Vulnerability Database](../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md).

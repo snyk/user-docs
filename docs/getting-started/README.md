@@ -15,6 +15,6 @@ To start using Snyk, you need a Snyk account, and some code to scan.
 
 ### More details
 
-* See [Running tests](running-tests.md) for a general overview of how to use Snyk functions to run tests.
+* See [Running tests](../introducing-snyk/snyks-core-concepts/running-tests.md) for a general overview of how to use Snyk functions to run tests.
 * See [Walkthrough: Code Repository Projects](walkthrough-code-repository-projects/) to read a full walkthrough of scanning and fixing vulnerabilities from content stored in a Git repository.
 * See [Implementing Snyk in your teams](implementing-snyk-in-your-teams.md) for details of rolling Snyk out in your teams.

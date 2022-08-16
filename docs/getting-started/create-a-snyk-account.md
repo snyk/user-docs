@@ -13,7 +13,7 @@ To create a Snyk account:
 ![](<../.gitbook/assets/image (88).png>)
 
 {% hint style="info" %}
-Different pricing plans are available, see [Plans](../introducing-snyk/snyks-core-concepts/plans.md) for details.
+Different pricing plans are available, see [Plans](../introducing-snyk/plans.md) for details.
 {% endhint %}
 
 ### What's next?

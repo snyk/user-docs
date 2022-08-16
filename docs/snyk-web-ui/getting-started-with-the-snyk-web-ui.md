@@ -14,7 +14,7 @@ After you [sign up for a Snyk account, authenticate and log in to Snyk](../getti
 4. Reviewing the results of your Snyk scan.
 
 {% hint style="info" %}
-If you're signing into a paid Team, Business, or Enterprise account, you'll also need to select the relevant [organization](../introducing-snyk/snyks-core-concepts/groups-organizations-and-users.md) after you log in to Snyk.
+If you're signing into a paid Team, Business, or Enterprise account, you'll also need to select the relevant [organization](../introducing-snyk/groups-organizations-and-users.md) after you log in to Snyk.
 {% endhint %}
 
 ![Snyk dashboard for an Enterprise account showing pending tasks, vulnerable projects, as well as current security and license issues](<../.gitbook/assets/image (154).png>)
