@@ -2,8 +2,8 @@
 
 You can use Snyk to test your code:
 
-* Manually: using the Snyk CLI, the Snyk Web UI, and the Snyk API.
-* Automatically: on a recurring basis, or when a relevant repo change is made.
+* [Manually](running-tests.md#run-tests-manually): using the Snyk CLI, the Snyk Web UI, and the Snyk API.
+* [Automatically](running-tests.md#run-tests-automatically): on a recurring basis, or when a relevant repo change is made.
 
 {% hint style="info" %}
 Tests may be limited on your account; see [What counts as a test?](https://support.snyk.io/hc/en-us/articles/360000925418-What-counts-as-a-test-) for more information.
@@ -13,18 +13,20 @@ Tests may be limited on your account; see [What counts as a test?](https://suppo
 
 ### Run tests with the CLI
 
-With the Snyk [CLI](../../snyk-cli/cli-reference.md) you can use the following commands:
+With the Snyk [CLI](../snyk-cli/cli-reference.md) you can use the following commands:
 
 * Scan open-source code with `snyk test`.
 * Scan application code with [snyk code test](running-tests.md#run-tests-manually).
 * Scan container images with `snyk container test`.
 * Scan Infrastructure as Code (IaC) files with `snyk iac test`.
 
-See [Getting started with the CLI](../../snyk-cli/getting-started-with-the-cli.md) for details.
+See [Getting started with the CLI](../snyk-cli/getting-started-with-the-cli.md) for details.
 
 ### Run tests with the Snyk Web UI
 
 A test is run when you add a new project, or click the **Retest now** button on a Project in the Overview tab.
+
+See [Snyk Web UI](../snyk-web-ui/) for details.
 
 ### Run tests with the API
 
