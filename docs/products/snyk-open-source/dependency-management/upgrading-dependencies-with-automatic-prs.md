@@ -4,7 +4,7 @@ After you imported your chosen Git repositories to Snyk, Snyk continuously monit
 
 ## Supported languages and SCMs
 
-Snyk currently supports the **Automatic dependency upgrade pull requests** feature \*\*\*\* for npm, Yarn, and Maven-Central repositories via the following SCMs: GitHub, GitHub Enterprise Server, and Bitbucket Cloud.
+Snyk currently supports the **Automatic dependency upgrade pull requests** feature for npm, Yarn, and Maven-Central repositories via the following SCMs: GitHub, GitHub Enterprise Server, and Bitbucket Cloud.
 
 You can also use this feature with the Snyk Broker. For using this feature, the Snyk Broker must be upgrades to v. 1.4.55.0 or later. For more information, see [Upgrade your Snyk Broker client](../../../features/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md#upgrade-your-snyk-broker-client).
 
@@ -48,7 +48,7 @@ By default, the Project Settings inherit the organization Settings. However, whe
 
 ![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Organization - Integrations page.png>)
 
-4\. On the **Settings** page of the selected integration, scroll down to the **Automatic dependency upgrade pull requests** section\*\*:\*\*
+4\. On the **Settings** page of the selected integration, scroll down to the **Automatic dependency upgrade pull requests** section:
 
 ![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Organization - Integration Settings - Automatic Upgrade section .png>)
 
@@ -61,10 +61,10 @@ By default, the Project Settings inherit the organization Settings. However, whe
 
 ![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Project Settings - Integration - Automatic Upgrade section - Enabled.png>)
 
-7\. \*\*\*\* To save \*\*\*\* and apply your changes, click one of the following:
+7\. To save and apply your changes, click one of the following:
 
 * **Apply changes to all overridden projects** option – your changes are saved, and will be applied to all the Projects in the organization. Projects that have Custom Settings will inherit these organization Settings, and their Custom Settings will be override. After you click this option, a message appears, asking you to confirm the override:\
-  ![](<../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)\*\*\*\*
+  ![](<../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 * **Save changes** button – your changes are saved, and will be applied to all the Projects in the organization that are configured to inherit these Settings from the organization. Projects that have Custom Settings will not be influenced by this change.
 
 ![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org- Integration - Automatic Upgrade section - Save options (1).png>)
@@ -91,7 +91,7 @@ The Settings on the Project level override the Settings on the organization leve
 
 ![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Project Settings button .png>)
 
-4\. On the Project **Settings** page, click the relevant **integration** tab on left menu\*\*:\*\*
+4\. On the Project **Settings** page, click the relevant **integration** tab on left menu:
 
 ![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Project Settings - Integration tab.png>)
 
