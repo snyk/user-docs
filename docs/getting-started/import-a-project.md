@@ -13,10 +13,6 @@ When you import a Project, Snyk scans that imported project and displays the res
 
 ### Import a Project
 
-{% embed url="https://thoughtindustries-1.wistia.com/medias/9hwr0bnvko" %}
-Video demonstration of importing projects via the Snyk Web UI
-{% endembed %}
-
 To import a Projects to scan, from the Snyk Web UI:
 
 * Select **Projects** >  **Add Project,** and select where to import the Project from (for example GitHub), or click **CLI** to use the [Snyk CLI](../snyk-cli/) tool locally:
