@@ -1,5 +1,9 @@
 # Snyk User Documentation
 
+{% hint style="info" %}
+See [Snyk user hub](https://snyk.io/user-hub/) for a full list of knowledge resources.
+{% endhint %}
+
 ### Understand Snyk
 
 |                                                                                                                                                  |                                                                                                                                             |
