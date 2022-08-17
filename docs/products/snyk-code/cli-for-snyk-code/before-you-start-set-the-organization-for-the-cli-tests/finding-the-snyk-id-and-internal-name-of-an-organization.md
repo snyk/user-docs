@@ -8,7 +8,7 @@ When setting an organization for the CLI tests, you can use either the organizat
 
 ![](<../../../../.gitbook/assets/Snyk Code - CLI - Org - Selecting from UI.png>)
 
-2\. Once the selected organization is open, click the **Org Settings** button <img src="../../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png" alt="" data-size="line"> on the top menu:
+2\. Once the selected organization is open, click the **Org Settings** button <img src="../../../../.gitbook/assets/Snyk Code - CLI - Org Settings button - Icon.png" alt="" data-size="line"> on the top menu:
 
 ![](<../../../../.gitbook/assets/Snyk Code - CLI - Org Settings button.png>)
 

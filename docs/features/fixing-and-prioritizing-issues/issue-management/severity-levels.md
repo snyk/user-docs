@@ -6,10 +6,10 @@ A severity level is applied to a vulnerability, to indicate the risk for that vu
 
 Severity levels are key factors in [vulnerability assessment](https://snyk.io/learn/vulnerability-assessment/), and can be:
 
-* ****![](<../../../.gitbook/assets/image (86).png>) **Low:** the application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application.
-* ****![](<../../../.gitbook/assets/image (84).png>) **Medium:** may allow attackers under some conditions to access sensitive data on your application.
-* ****<img src="../../../.gitbook/assets/image (85).png" alt="" data-size="original"> **High:** may allow attackers to access sensitive data on your application.
-* ****<img src="../../../.gitbook/assets/image (83).png" alt="" data-size="line">**Critical:** may allow attackers to access sensitive data and run code on your application.
+* ****![](<../../../.gitbook/assets/image (303).png>) **Low:** the application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application.
+* ****![](<../../../.gitbook/assets/image (294).png>) **Medium:** may allow attackers under some conditions to access sensitive data on your application.
+* ****<img src="../../../.gitbook/assets/image (302).png" alt="" data-size="original"> **High:** may allow attackers to access sensitive data on your application.
+* ****<img src="../../../.gitbook/assets/image (299).png" alt="" data-size="line">**Critical:** may allow attackers to access sensitive data and run code on your application.
 
 {% hint style="info" %}
 Severity levels also apply to license issues. See [Licenses overview](https://docs.snyk.io/snyk-open-source/licenses).
@@ -46,7 +46,7 @@ Severity levels are displayed throughout Snyk, to show this information at all t
 
 For example, in the **Pending tasks** section of the Dashboard:
 
-<img src="../../../.gitbook/assets/image (9) (3).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/image (377).png" alt="" data-size="original">
 
 Associated with your [Projects](../../../introducing-snyk/projects.md):
 
@@ -54,4 +54,4 @@ Associated with your [Projects](../../../introducing-snyk/projects.md):
 
 And for each vulnerability in a project:
 
-![](<../../../.gitbook/assets/image (39) (1).png>)
+![](<../../../.gitbook/assets/image (39).png>)

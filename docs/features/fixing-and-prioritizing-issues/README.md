@@ -6,7 +6,7 @@ Snyk goes beyond finding vulnerabilities and license compliance issues. Our prio
 
 The [Snyk Priority Score](issue-management/priority-score.md) prioritizes issues based on a number of industry-standard criteria, including Kubernetes configuration data and signals from running containers.
 
-![](<../../.gitbook/assets/image (293).png>)
+![](<../../.gitbook/assets/image (392).png>)
 
 ### Apply project attributes <a href="#h.r3thgse7qt7n" id="h.r3thgse7qt7n"></a>
 
@@ -20,7 +20,7 @@ Control prioritization at a granular level by applying [project attributes](../.
 
 Snyk [reporting](../../introducing-snyk/reports.md) keeps you up to date on the status of the issues, dependencies, and licenses you need, while letting you [ignore the issues](issue-management/ignore-issues.md) you don’t.
 
-![](<../../.gitbook/assets/image (66) (4).png>)
+![](<../../.gitbook/assets/image (141).png>)
 
 ### Assess reachability <a href="#h.ts3kx23p4m7p" id="h.ts3kx23p4m7p"></a>
 
@@ -30,7 +30,7 @@ Gauge risk by identifying whether a vulnerable function is being called by your 
 
 Prioritize or de-prioritize specific vulnerabilities automatically with our customizable [security policies](security-policies/).
 
-![](<../../.gitbook/assets/image (4) (1) (3).png>)
+![](<../../.gitbook/assets/image (329).png>)
 
 ### Fix the issues
 
