@@ -1,3 +1,11 @@
 # View AWS CodePipeline scan results
 
-To be moved from existing content
+You can view scan results in the AWS CodePipeline console, by clicking **Details** in the Scan stage:
+
+![Details in the Scan stage](../../../.gitbook/assets/aws-cp-findings-report.png)
+
+Click the **link to execution details** to view your detailed vulnerability report.
+
+![Link to execution details](../../../.gitbook/assets/image4-2-.png)
+
+##
