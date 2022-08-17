@@ -1,6 +1,6 @@
 # CI/CD troubleshooting and resources
 
-## CI/CD troubleshooting and advanced tips
+## CI/CD troubleshooting
 
 This section provides a few tips to help troubleshoot or scale CI/CD integrations.
 
@@ -8,7 +8,7 @@ This section provides a few tips to help troubleshoot or scale CI/CD integration
 
 If CLI and pipeline are running the same engine, try to clone the project and scan with CLI.
 
-Play with the CLI options. Use the Snyk CLI tool to find and fix known vulnerabilities as you run it in the pipeline. For more information see the [CLI reference](../../../snyk-cli/cli-reference.md).
+Try various CLI options. Use the Snyk CLI tool to find and fix known vulnerabilities as you run it in the pipeline. For more information see the [CLI docs](../../../snyk-cli/).
 
 ### Step 2: Get logs
 
@@ -28,7 +28,7 @@ DEBUG=* snyk test
 
 Try to replace the native plugin with the CLI by installing the CLI. See [Install the Snyk CLI ](../../../snyk-cli/install-the-snyk-cli.md)for instructions.
 
-## **Useful resources**
+## **Useful resources for CI/CD**
 
 The following repo shares some examples of binary and npm integrations for various CI/CD tools: [GitHub CI/CD examples](https://github.com/snyk-labs/snyk-cicd-integration-examples).
 
