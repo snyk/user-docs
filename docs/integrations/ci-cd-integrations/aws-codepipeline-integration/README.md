@@ -13,9 +13,7 @@ Snyk integration is currently available in AWS `sa-east-1` | `ca-central-1` | ap
 You can initiate Snyk AWS CodePipeline integration directly from the AWS CodePipeline console.\
 Add Snyk to a new or existing pipeline using the steps that follow.
 
-### Requirements
 
-Check if your project must be built before the scan in the CodePipeline. If the project needs to be built, you must add a CodeBuild step before the Snyk Step.
 
 |      Language     | Project Type | Build Required |                                            Notes                                           |
 | :---------------: | :----------: | -------------- | :----------------------------------------------------------------------------------------: |

@@ -162,7 +162,7 @@
       * [CI/CD troubleshooting and resources](integrations/ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/ci-cd-troubleshooting-and-resources.md)
     * [AWS CodePipeline integration](integrations/ci-cd-integrations/aws-codepipeline-integration/README.md)
       * [Language support for AWS CodePipeline](integrations/ci-cd-integrations/aws-codepipeline-integration/language-support-for-aws-codepipeline.md)
-      * [Setup reqiurements for AWS CodePipeline](integrations/ci-cd-integrations/aws-codepipeline-integration/setup-reqiurements-for-aws-codepipeline.md)
+      * [Setup requirements for AWS CodePipeline](integrations/ci-cd-integrations/aws-codepipeline-integration/setup-requirements-for-aws-codepipeline.md)
       * [AWS Code Pipeline CodeBuild step example](integrations/ci-cd-integrations/aws-codepipeline-integration/aws-code-pipeline-codebuild-step-example.md)
       * [Setup steps for AWS CodePipeline](integrations/ci-cd-integrations/aws-codepipeline-integration/setup-steps-for-aws-codepipeline.md)
       * [View AWS CodePipeline scan results](integrations/ci-cd-integrations/aws-codepipeline-integration/view-aws-codepipeline-scan-results.md)
