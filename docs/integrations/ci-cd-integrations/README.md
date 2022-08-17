@@ -4,7 +4,7 @@ When you decide to use a CI/CD Integration, typically you will adopt the integra
 
 For detailed information, refer to the pages for the integration you are using:
 
-* [AWS CodePipeline integration](aws-codepipeline-integration.md)
+* [AWS CodePipeline integration](aws-codepipeline-integration/)
 * Azure Pipelines integration
 * [Bitbucket Pipelines integration](bitbucket-pipelines-integration-overview.md)
 * [CircleCI integration](circleci-integration-overview.md)

@@ -81,13 +81,13 @@ At any point after the Source stage, you can add a Snyk scan stage, allowing you
 
 Click **Edit**, and **Add a Scan Stage**.
 
-![Add scan stage](../../.gitbook/assets/aws-cp-add-stage.png)
+![Add scan stage](../../../.gitbook/assets/aws-cp-add-stage.png)
 
 ### Step 2: Add action group
 
 Click **Add an Action Group** to open the **Edit Action** window:
 
-![Edit action window](../../.gitbook/assets/aws-cp-edit-action.png)
+![Edit action window](../../../.gitbook/assets/aws-cp-edit-action.png)
 
 Name the action, then select **Snyk** as the **Action Provider**.
 
@@ -97,13 +97,13 @@ Click **Connect with Snyk** to begin the connection process.
 
 Select how you would like to authenticate with Snyk to give AWS CodePipeline permission to begin scanning your open source code.
 
-![Snyk log in screen](../../.gitbook/assets/snyk-cp-int-config.png)
+![Snyk log in screen](../../../.gitbook/assets/snyk-cp-int-config.png)
 
 ### Step 4: Configure settings
 
 The following options are available for configuration:
 
-![Snyk AWS CodePipeline configuration options](../../.gitbook/assets/Snyk\_AWS\_CodePipeline\_Config\_y\_CodePipeline\_-\_AWS\_Developer\_Tools\_png.png)
+![Snyk AWS CodePipeline configuration options](../../../.gitbook/assets/Snyk\_AWS\_CodePipeline\_Config\_y\_CodePipeline\_-\_AWS\_Developer\_Tools\_png.png)
 
 * **Snyk organization:** Select the Snyk organization where reports of findings are saved.
 * **Vulnerability handling**: Define the pipeline behavior if a vulnerability is found. If the `Block deployment when Snyk finds an error` checkbox is checked, the pipeline fails and does not proceed to the next stage in the CodePipeline.
@@ -129,7 +129,7 @@ To change the configuration settings of a previously-configured stage, click the
 
 Confirm the connection to Snyk when prompted.
 
-![Confirm connection with OAuth](../../.gitbook/assets/aws-cp-confirm-oauth.png)
+![Confirm connection with OAuth](../../../.gitbook/assets/aws-cp-confirm-oauth.png)
 
 Save the pipeline after successfully connecting to Snyk.
 
@@ -139,17 +139,17 @@ This configures your Snyk stage in the CodePipeline, so you can test your applic
 
 You can view scan results in the AWS CodePipeline console, by clicking **Details** in the Scan stage:
 
-![Details in the Scan stage](../../.gitbook/assets/aws-cp-findings-report.png)
+![Details in the Scan stage](../../../.gitbook/assets/aws-cp-findings-report.png)
 
 Click the **link to execution details** to view your detailed vulnerability report.
 
-![Link to execution details](../../.gitbook/assets/image4-2-.png)
+![Link to execution details](../../../.gitbook/assets/image4-2-.png)
 
 ## Test report details
 
-Snyk analyzes the manifest file of the application and correlates the list of dependencies with the Snyk vulnerability database. [Snyk provides detailed reports for your open source code](../../features/snyk-reports/reports-overview.md). By analyzing the manifest file, Snyk builds a full dependency tree, accurately identifying both direct and transitive dependencies (transitive dependencies account for 78% of the vulnerabilities detected by Snyk). This enables Snyk to show exactly how a vulnerability was introduced into the application.
+Snyk analyzes the manifest file of the application and correlates the list of dependencies with the Snyk vulnerability database. [Snyk provides detailed reports for your open source code](../../../features/snyk-reports/reports-overview.md). By analyzing the manifest file, Snyk builds a full dependency tree, accurately identifying both direct and transitive dependencies (transitive dependencies account for 78% of the vulnerabilities detected by Snyk). This enables Snyk to show exactly how a vulnerability was introduced into the application.
 
-![Snyk test report](../../.gitbook/assets/prototype.png)
+![Snyk test report](../../../.gitbook/assets/prototype.png)
 
 {% hint style="info" %}
 Reports are stored for 14 days before they expire. Subsequent pipeline runs update the report and reset the retention period.
