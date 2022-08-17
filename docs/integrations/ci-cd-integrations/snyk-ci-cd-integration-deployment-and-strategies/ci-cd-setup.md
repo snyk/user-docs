@@ -34,7 +34,7 @@ Snyk supports the following approaches to add tests to a build pipeline:
 * **Snyk CLI:** Teams with more complex workflows, or using a build system without a Snyk pre-built plugin, can use the Snyk CLI tool during CI/CD setups. See [Setting up using Snyk CLI](ci-cd-setup.md#setting-up-using-snyk-cli) for details.
 * **Snyk API**: For teams with complex requirements Snyk provides a REST API, which you can use for functions including initiating scans, onboarding new projects, and testing arbitrary libraries. See the [Snyk API documentation](../../../snyk-api-info/) for more details.
 
-### Setting up using Snyk CLI
+## Setting up using Snyk CLI
 
 Snyk CLI is a NodeJS application that can be scripted directly by developers for easy integration into most CI/CD environments, and is available as an npm application, pre-packaged binary, or container image. For more information see [Install the Snyk CLI](https://docs.snyk.io/snyk-cli/install-the-snyk-cli).
 
