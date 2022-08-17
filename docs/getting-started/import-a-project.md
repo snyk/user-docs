@@ -54,13 +54,17 @@ Project import completes, with a status message:
 
 You have now successfully imported and scanned the selected Project.
 
+{% hint style="success" %}
+If you see any errors during import, see [Project import errors](https://support.snyk.io/hc/en-us/articles/360001373118).
+{% endhint %}
+
 Importing a Project will also:
 
 * Set Snyk to run a regular scan on that Project for issues ([daily by default](../features/user-and-group-management/managing-settings/usage-page-details.md#projects)).
-* Create a [Webhook](../snyk-api-info/snyk-webhooks/), so when you change code, Snyk tests your pull / merge requests, to check that new dependencies do not introduce more vulnerabilities.
+* Initiate some automations, especially default Snyk tests on pull/merge requests, which help prevent vulnerabilities from being added to the Project. This automation fails builds according to your conditions and can be disabled or customized in your [integration settings](https://docs.snyk.io/integrations/git-repository-scm-integrations).
 
-{% hint style="success" %}
-If you see any errors during import, see [Project import errors](https://support.snyk.io/hc/en-us/articles/360001373118).
+{% hint style="info" %}
+For training on best practices using automations, visit the Snyk Training course: [Source Code Manager Configurations](https://training.snyk.io/courses/source-code-manager-configurations).
 {% endhint %}
 
 ### What's next?
