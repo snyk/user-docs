@@ -1,16 +1,20 @@
 # SCM (Git) and CI/CD integration deployment intro
 
-Snyk for Code and Open Source most popular integrations are in the Source Code Management (or Git) or in the CI/CD pipeline integration.
+The most popular integrations for Snyk Code and Open Source are Source Code Management (or Git) and CI/CD pipeline Integration.
 
-![](../../.gitbook/assets/scm-ci-cid.png)
+![Snyk Integrations](../../.gitbook/assets/scm-ci-cid.png)
 
-Snyk SCM integration also allows you to rescan automatically on every fix PR thanks to our webhooks, and to block newly introduced vulnerabilities. If both may achieve the same business objective, what would be the reasons to choose one versus the other? While the answer will be specific to every organization based on your workflows and processes, we can provide a list of considerations before taking a decision:
+Snyk SCM (Git) Integration checks for vulnerabilities and Open Source license issues, prevents pull requests based on policies, and allows you to block newly introduced vulnerabilities. SCM Integration also allows you to rescan automatically on every fix PR; this is enabled by Snyk webhooks.
 
-### SCM Integration considerations
+CI/CD Integration adds Snyk in the build as a step of the pipeline.
 
-* Easier to setup & maintain
-* Ability to block fix PR thanks to webhooks
-* Earlier in the SDLC
+Either SCM (Git) or CI/CD integration may achieve the same business objective. Why choose one over the other? The answer is specific to every organization based on workflows and processes. The following considerations explain the benefits of each type of integration.
+
+## SCM Integration considerations
+
+* Easier to setup and maintain
+* Ability to block fix PR enabled by webhooks
+* Allows scanning earlier in the software development lifecycle
 * More friendly experience for developers
 * Fix PR from Snyk (SCA and Dockerfiles)
 * Does not take resources from your CI/CD pipeline
@@ -21,4 +25,4 @@ Snyk SCM integration also allows you to rescan automatically on every fix PR tha
 * More granular options to block
 * Strong gatekeeper
 * Best practice for container scans
-* Complex repo structure such as large Monorepo, where a CI/CD integration would allow more custom imports
+* Allows more custom reports for a complex repo structure such as large monorepo
