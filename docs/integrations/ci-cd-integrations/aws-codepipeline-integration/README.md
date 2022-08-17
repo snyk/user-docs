@@ -6,8 +6,6 @@ Snyk integrates seamlessly with AWS CodePipeline to scan your application for op
 Snyk integration is currently available in AWS `sa-east-1` | `ca-central-1` | ap-`southeast-1` | `ap-southeast-2` | `ap-south-1` | `ap-northeast-2` | `ap-northeast-1` | `eu-west-3` | `eu-west-1` | `eu-north-1` | `us-east-1` | `us-west-2` | `eu-west-2` | `eu-central-1` regions. Snyk is actively working on expanding to additional regions.
 {% endhint %}
 
-##
-
 ## Setup
 
 You can initiate Snyk AWS CodePipeline integration directly from the AWS CodePipeline console.\
@@ -15,53 +13,7 @@ Add Snyk to a new or existing pipeline using the steps that follow.
 
 
 
-|      Language     | Project Type | Build Required |                                            Notes                                           |
-| :---------------: | :----------: | -------------- | :----------------------------------------------------------------------------------------: |
-|     Javascript    |      npm     | No\*           |   Build only required if no `package-lock.json` file present; run npm install to generate  |
-|     Javascript    |     Yarn     | No\*           |      Build only required if no `yarn.lock` file present; run yarn install to generate      |
-|        Java       |     Maven    | Yes            |                              Run `mvn install` before testing                              |
-|        Java       |    Gradle    | No             |                                                                                            |
-|        .NET       |     Nuget    | No\*           |                  Build only required if no `packages.config` file present                  |
-|       Python      |      Pip     | No\*           |     Build only required if missing a Snyk config file with the language-settings param     |
-|       Python      |   Setup.py   | Yes            |                            Run `pip install -e .` before testing                           |
-|       Python      |    Poetry    | No\*           |     Build only required if no `poetry.lock` file present; run `poetry lock` to generate    |
-|        Ruby       |    Bundler   | No\*           |   Build only required if no `Gemfile.lock` file present; run `bundle install` to generate  |
-|        PHP        |   Composer   | No\*           | Build only required if no `composer.lock` file present; run `composer install` to generate |
-|       Scala       |      SBT     | No             |                                                                                            |
-|         Go        |  Go Modules  | No             |                                                                                            |
-| Swift/Objective-C |   Cocoapods  | No\*           |     Build only required if no `Podfile.lock` file present; run pod install to generate     |
-
-### CodeBuild Step Example
-
-Note the Scan's input artifact must be provided with the build's output artifact as shown in the configuration.
-
-Example of Javascript CodeBuild (`buildspec.yml`):
-
-```
-version: 0.2
-phases:
-  build:
-    commands:
-      - npm install
-artifacts:
-  files:
-    - '**/*'
-```
-
-Example of Maven CodeBuild (`buildspec.yml`):
-
-```
-version: 0.2
-phases:
-  build:
-    commands:
-      - mvn install
-artifacts:
-  files:
-    - '**/*'
-```
-
-### Step 1: Add stage
+### tep 1: Add stage
 
 At any point after the Source stage, you can add a Snyk scan stage, allowing you to test your application at different stages of the CI/CD pipeline.
 
