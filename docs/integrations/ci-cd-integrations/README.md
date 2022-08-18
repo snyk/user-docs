@@ -6,7 +6,7 @@ For detailed information, refer to the pages for the integration you are using:
 
 * [AWS CodePipeline integration](aws-codepipeline-integration/)
 * Azure Pipelines integration
-* [Bitbucket Pipelines integration](bitbucket-pipelines-integration-overview.md)
+* [Bitbucket Pipelines integration](bitbucket-pipelines-integration-overview/)
 * [CircleCI integration](circleci-integration-overview.md)
 * [GitHub Actions integration](github-actions-integration.md)
 * [Jenkins integration](jenkins-integration-overview.md)
