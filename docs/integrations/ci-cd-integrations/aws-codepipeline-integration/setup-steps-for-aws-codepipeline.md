@@ -1,11 +1,9 @@
 # Setup steps for AWS CodePipeline
 
-## Setup
-
 You can initiate Snyk AWS CodePipeline integration directly from the AWS CodePipeline console.\
-Add Snyk to a new or existing pipeline using the steps that follow.
+Follow these steps to add Snyk to a new or existing pipeline:
 
-### Step 1: Add stage
+## Step 1: Add stage
 
 At any point after the Source stage, you can add a Snyk scan stage, allowing you to test your application at different stages of the CI/CD pipeline.
 
@@ -13,7 +11,7 @@ Click **Edit**, and **Add a Scan Stage**.
 
 ![Add scan stage](../../../.gitbook/assets/aws-cp-add-stage.png)
 
-### Step 2: Add action group
+## Step 2: Add action group
 
 Click **Add an Action Group** to open the **Edit Action** window:
 
@@ -23,20 +21,20 @@ Name the action, then select **Snyk** as the **Action Provider**.
 
 Click **Connect with Snyk** to begin the connection process.
 
-### Step 3: Connect to Snyk
+## Step 3: Connect to Snyk
 
 Select how you would like to authenticate with Snyk to give AWS CodePipeline permission to begin scanning your open source code.
 
-![Snyk log in screen](../../../.gitbook/assets/snyk-cp-int-config.png)
+![Snyk log-in screen](../../../.gitbook/assets/snyk-cp-int-config.png)
 
-### Step 4: Configure settings
+## Step 4: Configure settings
 
 The following options are available for configuration:
 
 ![Snyk AWS CodePipeline configuration options](../../../.gitbook/assets/Snyk\_AWS\_CodePipeline\_Config\_y\_CodePipeline\_-\_AWS\_Developer\_Tools\_png.png)
 
 * **Snyk organization:** Select the Snyk organization where reports of findings are saved.
-* **Vulnerability handling**: Define the pipeline behavior if a vulnerability is found. If the `Block deployment when Snyk finds an error` checkbox is checked, the pipeline fails and does not proceed to the next stage in the CodePipeline.
+* **Vulnerability handling**: Define the pipeline behavior if a vulnerability is found. If the **Block deployment when Snyk finds an error** checkbox is checked, the pipeline fails and does not proceed to the next stage in the CodePipeline.
 * **Block deployment for vulnerabilities with a minimum severity of**: **Low**|**Medium**|**High**|**Critical**: Report only vulnerabilities of the specified level or higher.
 *   **Monitoring behavior on build**: Set the criteria to monitor projects from the AWS CodePipeline. The available options are:
 
@@ -51,7 +49,7 @@ The following options are available for configuration:
 * **Advanced options** (all of them are optional):
   * **Excluded directories**: This option only appears when **Auto-detect all projects** is checked. Specify sub-directories to exclude; the directories must be comma-separated.
   * **Custom path to manifest file to test**: This option only appears when **Auto-detect all projects** is not checked. You can specify the file path to the manifest file that Snyk is to scan. When this option is omitted Snyk tries to auto-detect the manifest file for your project.
-  * **Additional arguments:** A number of additional options are allowed, which can be applied to `test` and `monitor`. The options are as follows: `--dev`, `--detection-depth`, `--prune-repeated-subdependencies`, `--strict-out-of-sync`, `--yarn-workspaces`, `--skip-unresolved`. For more information on these options, see the [CLI reference](https://docs.snyk.io/features/snyk-cli/cli-reference).
+  * **Additional arguments:** A number of additional options are allowed, which can be applied to `test` and `monitor`. The options are as follows: `--dev`, `--detection-depth`, `--prune-repeated-subdependencies`, `--strict-out-of-sync`, `--yarn-workspaces`, `--skip-unresolved`. For more information on these options, see the [CLI help docs](../../../snyk-cli/commands/).
 
 {% hint style="info" %}
 To change the configuration settings of a previously-configured stage, click the **Snyk** link.
