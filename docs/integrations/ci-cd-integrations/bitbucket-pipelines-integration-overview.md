@@ -22,21 +22,13 @@ For setup and use details, see the following pages:
 
 * [Language support for Bitbucket Pipelines integration](bitbucket-pipelines-integration-overview/language-support-for-bitbucket-pipelines-integration.md)
 * [Bitbucket Pipelines integration: how it works](bitbucket-pipelines-integration-overview/bitbucket-pipelines-integration-how-it-works.md)
-* [Prerequisites for Bitbucket Pipelines integration](bitbucket-pipelines-integration-overview/prerequisites-for-bitbucket-piplelines-integration.md)
+* [Prerequisites for Bitbucket Pipelines integration](bitbucket-pipelines-integration-overview/prerequisites-for-bitbucket-pipelines-integration.md)
 * [Configure your Bitbucket Pipelines integration](bitbucket-pipelines-integration-overview.md#configure-your-bitbucket-pipelines-integration)
 * [How to add a Snyk pipe](bitbucket-pipelines-integration-overview.md#how-to-add-a-snyk-pipe)
 * [Snyk pipe parameters and values (Bitbucket Cloud)](bitbucket-pipelines-integration-overview.md#snyk-pipe-parameters-and-values-bitbucket-cloud)
 * [Example of a Snyk pipe for Docker](bitbucket-pipelines-integration-overview/example-of-a-snyk-pipe-for-docker.md)
 
-## Configure your Bitbucket Pipelines integration
-
-To enable Snyk to test and monitor your code as an integral part of your CI/CD workflow in Bitbucket, add the Snyk pipe into your `bitbucket-pipelines.yml` (YAML) file located in the root of your repository. This file that defines all your build configurations (pipelines for your CI/CD workflow).
-
-## Prerequisites
-
-* For your Bitbucket Pipelines, ensure you have build minutes in your account, which are necessary to enable ongoing CI/CD workflows.
-* Create a Snyk account and retrieve the Snyk API token from your **Account settings**.
-* Create a Repository variable from Bitbucket for your Snyk API token. Call the variable SNYK\_TOKEN.
+##
 
 ## How to add a Snyk pipe
 

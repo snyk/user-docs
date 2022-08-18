@@ -180,7 +180,7 @@
     * [Bitbucket Pipelines integration](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview.md)
       * [Language support for Bitbucket Pipelines integration](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/language-support-for-bitbucket-pipelines-integration.md)
       * [Bitbucket Pipelines integration: how it works](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/bitbucket-pipelines-integration-how-it-works.md)
-      * [Prerequisites for Bitbucket Piplelines integration](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/prerequisites-for-bitbucket-piplelines-integration.md)
+      * [Prerequisites for Bitbucket Pipelines integration](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/prerequisites-for-bitbucket-pipelines-integration.md)
       * [Configure your Bitbucket Pipelines integration](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/configure-your-bitbucket-pipelines-integration.md)
       * [How to add a Snyk pipe](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/how-to-add-a-snyk-pipe.md)
       * [Snyk pipe parameters and values (Bitbucket Cloud)](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/snyk-pipe-parameters-and-values-bitbucket-cloud.md)
