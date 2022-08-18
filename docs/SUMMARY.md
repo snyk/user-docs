@@ -293,7 +293,7 @@
         * [Re-importing existing repositories for the Snyk Code test](products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/re-importing-existing-repositories-for-the-snyk-code-test.md)
         * [Excluding directories and files from the import process](products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/excluding-directories-and-files-from-the-import-process.md)
         * [Removing imported repositories from the Snyk Code test](products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/removing-imported-repositories-from-the-snyk-code-test.md)
-  * [Exploring and working with the Snyk Code results](products/snyk-code/exploring-and-working-with-the-snyk-code-results/README.md)
+  * [Exploring and working with the Snyk Code results on the Web UI](products/snyk-code/exploring-and-working-with-the-snyk-code-results/README.md)
     * [Viewing the Snyk Code results via the Web UI](products/snyk-code/exploring-and-working-with-the-snyk-code-results/using-snyk-code-web.md)
     * [Understanding the Priority Score of the Snyk Code issues](products/snyk-code/exploring-and-working-with-the-snyk-code-results/understanding-the-priority-score-of-the-snyk-code-issues.md)
     * [Exploring the History of the Snyk Code Results](products/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-history-of-the-snyk-code-results.md)
