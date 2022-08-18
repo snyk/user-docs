@@ -10,13 +10,7 @@ You can include the Snyk task in your pipeline to test for security vulnerabilit
 
 The Snyk Security Scan task is available for all languages supported by Snyk and Azure DevOps.
 
-### Custom API Endpoints
-
-By default, the task uses the [https://snyk.io/api](https://snyk.io/api) endpoint. It is possible to configure Snyk to use a different endpoint by set a `SNYK_API` environment variable in the pipeline:
-
-![](<../../.gitbook/assets/Screenshot 2022-07-22 at 17.36.54.png>)
-
-Please refer to the [Snyk documentation](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli#configuration-to-connect-to-the-snyk-api) for more information about environment configuration.
+###
 
 ### **Example of a Snyk task to test a node.js (npm) based application**
 
