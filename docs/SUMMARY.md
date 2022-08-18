@@ -171,7 +171,7 @@
       * [How the Snyk Security Scan task works](integrations/ci-cd-integrations/azure-pipelines-integration/how-the-snyk-security-scan-task-works.md)
       * [Install the Snyk extension for your Azure pipelines](integrations/ci-cd-integrations/azure-pipelines-integration/install-the-snyk-extension-for-your-azure-pipelines.md)
       * [Add the Snyk Security Task to your pipelines](integrations/ci-cd-integrations/azure-pipelines-integration/add-the-snyk-security-task-to-your-pipelines.md)
-      * [Snyk Security Scan tasks parameters and values](integrations/ci-cd-integrations/azure-pipelines-integration/snyk-security-scan-tasks-parameters-and-values.md)
+      * [Snyk Security Scan task parameters and values](integrations/ci-cd-integrations/azure-pipelines-integration/snyk-security-scan-task-parameters-and-values.md)
       * [Custom API endpoints](integrations/ci-cd-integrations/azure-pipelines-integration/custom-api-endpoints.md)
       * [Example of a Snyk task to test a node.js (npm)-based application](integrations/ci-cd-integrations/azure-pipelines-integration/example-of-a-snyk-task-to-test-a-node.js-npm-based-application.md)
       * [Simple example of a Snyk task to test an application](integrations/ci-cd-integrations/azure-pipelines-integration/simple-example-of-a-snyk-task-to-test-an-application.md)
