@@ -177,7 +177,7 @@
       * [Simple example of a Snyk task to test an application](integrations/ci-cd-integrations/azure-pipelines-integration/simple-example-of-a-snyk-task-to-test-an-application.md)
       * [Example of a Snyk task for a container image pipeline](integrations/ci-cd-integrations/azure-pipelines-integration/example-of-a-snyk-task-for-a-container-image-pipeline.md)
       * [Simple example of a Snyk task to test a container image](integrations/ci-cd-integrations/azure-pipelines-integration/simple-example-of-a-snyk-task-to-test-a-container-image.md)
-    * [Bitbucket Pipelines integration](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/README.md)
+    * [Bitbucket Pipelines integration](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview.md)
       * [Language support for Bitbucket Pipelines integration](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/language-support-for-bitbucket-pipelines-integration.md)
       * [Snyk pipe information in Bitbucket](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/snyk-pipe-information-in-bitbucket.md)
     * [CircleCI integration](integrations/ci-cd-integrations/circleci-integration-overview.md)
