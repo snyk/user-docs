@@ -185,7 +185,6 @@
       * [How to add a Snyk pipe](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/how-to-add-a-snyk-pipe.md)
       * [Snyk pipe parameters and values (Bitbucket Cloud)](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/snyk-pipe-parameters-and-values-bitbucket-cloud.md)
       * [Example of a Snyk pipe for Docker](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/example-of-a-snyk-pipe-for-docker.md)
-      * [Page 1](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/page-1.md)
       * [Example of a Snyk pipe for npm](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/example-of-a-snyk-pipe-for-npm.md)
     * [CircleCI integration](integrations/ci-cd-integrations/circleci-integration-overview.md)
     * [GitHub Actions integration](integrations/ci-cd-integrations/github-actions-integration.md)
