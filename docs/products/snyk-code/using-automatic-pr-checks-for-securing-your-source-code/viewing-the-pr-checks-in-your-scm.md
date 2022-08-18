@@ -58,7 +58,7 @@ The results of the PR Checks appear on GitLab first as an indication of the Pipe
 
 When you click the pipeline link, the PR Checks results are displayed:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - GitLab (1).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - GitLab.png>)
 
 **To open the Snyk Web UI to view additional details on the PR Check results:**
 
