@@ -167,7 +167,7 @@
       * [Setup steps for AWS CodePipeline](integrations/ci-cd-integrations/aws-codepipeline-integration/setup-steps-for-aws-codepipeline.md)
       * [View AWS CodePipeline scan results](integrations/ci-cd-integrations/aws-codepipeline-integration/view-aws-codepipeline-scan-results.md)
       * [AWS CodePipeline test report details](integrations/ci-cd-integrations/aws-codepipeline-integration/aws-codepipeline-test-report-details.md)
-    * [Azure Pipelines integration](integrations/ci-cd-integrations/azure-pipelines-integration/README.md)
+    * [Azure Pipelines integration](integrations/ci-cd-integrations/azure-pipelines-integration.md)
       * [How the Snyk Security Scan task works](integrations/ci-cd-integrations/azure-pipelines-integration/how-the-snyk-security-scan-task-works.md)
       * [Install the Snyk extension for your Azure pipelines](integrations/ci-cd-integrations/azure-pipelines-integration/install-the-snyk-extension-for-your-azure-pipelines.md)
       * [Add the Snyk Security Task to your pipelines](integrations/ci-cd-integrations/azure-pipelines-integration/add-the-snyk-security-task-to-your-pipelines.md)
