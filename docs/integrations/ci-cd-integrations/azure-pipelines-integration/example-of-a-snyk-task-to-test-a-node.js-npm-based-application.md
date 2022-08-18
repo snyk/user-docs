@@ -1,6 +1,6 @@
 # Example of a Snyk task to test a node.js (npm)-based application
 
-This section shows examples of Snyk Security Scan task configurations and parameters for testing a Node.js (npm) application.
+The following shows examples of Snyk Security Scan task configurations and parameters for testing a Node.js (npm) application.
 
 The configuration panel appears as follows:
 
@@ -9,5 +9,3 @@ The configuration panel appears as follows:
 Click **add** and the task is added to your pipeline as follows:
 
 ![Snyk Security Scan task added to a pipeline](../../../.gitbook/assets/mceclip1-15-.png)
-
-### **S**
