@@ -1,7 +1,5 @@
 # Setup requirements for AWS CodePipeline
 
-### Requirements
-
 Check if your project must be built before the scan in the CodePipeline. If the project needs to be built, you must add a CodeBuild step before the Snyk Step.
 
 |      Language     | Project Type | Build Required |                                            Notes                                           |
