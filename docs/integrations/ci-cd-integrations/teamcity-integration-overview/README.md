@@ -33,7 +33,7 @@ Use the Snyk plugin with your TeamCity projects to test and monitor your code fo
     3. If the severity threshold was specified for a severity that is assigned to any vulnerability in your project, TeamCity breaks the build.
     4. Once the snapshot is pushed to the Snyk UI, Snyk continues to monitor your project as new vulnerabilities are disclosed. Based on your configuration, if vulnerabilities are found, Snyk notifies you by email or Slack so that you can take immediate fix action.
 
-For information on how to configure your build with a Snyk step, see [Team City integration: use Snyk in your build](teamcity-integration-use-snyk-in-your-build/).
+For information on how to configure your build with a Snyk step, see [Team City integration: use Snyk in your build](teamcity-integration-use-snyk-in-your-build.md).
 
 ## Install the Snyk plugin
 
@@ -48,4 +48,4 @@ Install or upgrade the Snyk Security plugin by following these steps. When the i
 
 ![Install plugin from the JetBrains Plugins Repository](../../../.gitbook/assets/uuid-fe65f4bc-9578-016c-00dd-6ddb97d2ead7-en.png)
 
-To configure the integration, see [TeamCity configuration parameters](teamcity-configuration-parameters.md). For information on how to configure your build with a Snyk step, see [Team City integration: use Snyk in your build](teamcity-integration-use-snyk-in-your-build/).
+To configure the integration, see [TeamCity configuration parameters](teamcity-configuration-parameters.md). For information on how to configure your build with a Snyk step, see [Team City integration: use Snyk in your build](teamcity-integration-use-snyk-in-your-build.md).
