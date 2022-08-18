@@ -20,29 +20,13 @@ On this list, find and click **Snyk** to view the pipe, examples, parameters, an
 
 For setup and use details, see the following pages:
 
-* Language support for Bitbucket Pipelines integration
-* Snyk pipe information in Bitbucket
-* Bitbucket Pipelines integration: how it works
-* Prerequisites for Bitbucket Pipelines integration
-* Configure your Bitbucket Pipelines integration
-* How to add a Snyk pipe
-* Snyk pipe parameters and values (Bitbucket Cloud)
-* Example of a Snyk pipe for Docker
-
-## Bitbucket Pipelines integration: how it works
-
-Once you have added the Snyk pipe to the pipeline, each time the pipeline executes (by any trigger type) the Snyk pipe performs the following actions:
-
-### **Scan**
-
-1. Snyk scans app dependencies or container images for vulnerabilities or licensing issues, and lists the vulnerabilities and issues.
-2. If Snyk finds vulnerabilities, it does one of the following (based on your configuration):
-   * Fails the build
-   * Lets the build complete
-
-### **Monitor**
-
-Optionally, if the build completes successfully and **MONITOR** is set to **True** in the Snyk step, then Snyk saves a snapshot of the project dependencies from the Snyk Web UI, where you can view the dependency tree displaying all of the issues and receive alerts for new issues found in the existing app version.
+* [Language support for Bitbucket Pipelines integration](bitbucket-pipelines-integration-overview/language-support-for-bitbucket-pipelines-integration.md)
+* [Bitbucket Pipelines integration: how it works](bitbucket-pipelines-integration-overview/bitbucket-pipelines-integration-how-it-works.md)
+* [Prerequisites for Bitbucket Pipelines integration](bitbucket-pipelines-integration-overview/prerequisites-for-bitbucket-piplelines-integration.md)
+* [Configure your Bitbucket Pipelines integration](bitbucket-pipelines-integration-overview.md#configure-your-bitbucket-pipelines-integration)
+* [How to add a Snyk pipe](bitbucket-pipelines-integration-overview.md#how-to-add-a-snyk-pipe)
+* [Snyk pipe parameters and values (Bitbucket Cloud)](bitbucket-pipelines-integration-overview.md#snyk-pipe-parameters-and-values-bitbucket-cloud)
+* [Example of a Snyk pipe for Docker](bitbucket-pipelines-integration-overview/example-of-a-snyk-pipe-for-docker.md)
 
 ## Configure your Bitbucket Pipelines integration
 

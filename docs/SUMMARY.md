@@ -179,7 +179,7 @@
       * [Simple example of a Snyk task to test a container image](integrations/ci-cd-integrations/azure-pipelines-integration/simple-example-of-a-snyk-task-to-test-a-container-image.md)
     * [Bitbucket Pipelines integration](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview.md)
       * [Language support for Bitbucket Pipelines integration](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/language-support-for-bitbucket-pipelines-integration.md)
-      * [Snyk pipe information in Bitbucket](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/snyk-pipe-information-in-bitbucket.md)
+      * [Bitbucket Pipelines integration: how it works](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/bitbucket-pipelines-integration-how-it-works.md)
       * [Prerequisites for Bitbucket Piplelines integration](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/prerequisites-for-bitbucket-piplelines-integration.md)
       * [Configure your Bitbucket Pipelines integration](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/configure-your-bitbucket-pipelines-integration.md)
       * [How to add a Snyk pipe](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/how-to-add-a-snyk-pipe.md)
