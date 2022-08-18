@@ -10,18 +10,6 @@ You can include the Snyk task in your pipeline to test for security vulnerabilit
 
 The Snyk Security Scan task is available for all languages supported by Snyk and Azure DevOps.
 
-### **Example of a Snyk task for a container image pipeline**
-
-The following is an example of the Snyk Security Scan task within the script for a container image pipeline.
-
-When populated with the most common settings, the configuration panel in Azure looks much like the following:
-
-![](../../.gitbook/assets/mceclip2-5-.png)
-
-The following is an example of the same configuration once you've added it to your pipeline.
-
-![](../../.gitbook/assets/mceclip3-1-.png)
-
 ### **Simple example of testing a container image**
 
 ```
