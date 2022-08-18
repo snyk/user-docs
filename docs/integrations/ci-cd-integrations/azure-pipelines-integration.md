@@ -10,20 +10,6 @@ You can include the Snyk task in your pipeline to test for security vulnerabilit
 
 The Snyk Security Scan task is available for all languages supported by Snyk and Azure DevOps.
 
-###
-
-### **Example of a Snyk task to test a node.js (npm) based application**
-
-This section shows examples of Snyk Security Scan task configurations and parameters for testing a Node.js (npm) application.
-
-The configuration panel appears as follows:
-
-![Snyk Security Scan configuration panel](../../.gitbook/assets/mceclip0-24-.png)
-
-Click **add** and the task is added to your pipeline as follows:
-
-![Snyk Security Scan task added to a pipeline](../../.gitbook/assets/mceclip1-15-.png)
-
 ### **Simple example of testing an application**
 
 ```
