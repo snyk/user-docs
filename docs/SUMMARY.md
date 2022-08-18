@@ -163,7 +163,7 @@
     * [AWS CodePipeline integration](integrations/ci-cd-integrations/aws-codepipeline-integration/README.md)
       * [Language support for AWS CodePipeline](integrations/ci-cd-integrations/aws-codepipeline-integration/language-support-for-aws-codepipeline.md)
       * [Setup requirements for AWS CodePipeline](integrations/ci-cd-integrations/aws-codepipeline-integration/setup-requirements-for-aws-codepipeline.md)
-      * [AWS Code Pipeline CodeBuild step example](integrations/ci-cd-integrations/aws-codepipeline-integration/aws-code-pipeline-codebuild-step-example.md)
+      * [AWS CodePipeline CodeBuild step example](integrations/ci-cd-integrations/aws-codepipeline-integration/aws-code-pipeline-codebuild-step-example.md)
       * [Setup steps for AWS CodePipeline](integrations/ci-cd-integrations/aws-codepipeline-integration/setup-steps-for-aws-codepipeline.md)
       * [View AWS CodePipeline scan results](integrations/ci-cd-integrations/aws-codepipeline-integration/view-aws-codepipeline-scan-results.md)
       * [AWS CodePipeline test report details](integrations/ci-cd-integrations/aws-codepipeline-integration/aws-codepipeline-test-report-details.md)

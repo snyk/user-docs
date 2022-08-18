@@ -1,8 +1,8 @@
-# AWS Code Pipeline CodeBuild step example
+# AWS CodePipeline CodeBuild step example
 
-Note the Scan's input artifact must be provided with the build's output artifact as shown in the configuration.
+Note the scan's input artifact must be provided with the build's output artifact as shown in the configuration.
 
-Example of Javascript CodeBuild (`buildspec.yml`):
+## Example of Javascript CodeBuild (`buildspec.yml`)
 
 ```
 version: 0.2
@@ -15,7 +15,7 @@ artifacts:
     - '**/*'
 ```
 
-Example of Maven CodeBuild (`buildspec.yml`):
+## Example of Maven CodeBuild (`buildspec.yml`)
 
 ```
 version: 0.2
@@ -27,5 +27,3 @@ artifacts:
   files:
     - '**/*'
 ```
-
-### S
