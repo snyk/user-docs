@@ -1,8 +1,8 @@
 # How TeamCity integration works
 
-## How TeamCity integration works
+Use the Snyk plugin with your TeamCity projects to test and monitor your code for vulnerabilities on an ongoing basis, for breaking builds when newly disclosed vulnerabilities related to your project are announced, and to receive relevant notifications, all based on your configurations.
 
-Use the Snyk plugin with your TeamCity projects to test and monitor your code for vulnerabilities on an ongoing basis, breaking builds when newly disclosed vulnerabilities related to your project are announced and receiving relevant notifications, all based on your configurations.
+The steps in the process follow:
 
 1. The TeamCity account admin selects the Snyk plugin for installation.
 2. TeamCity installs the plugin on the server in the Plugin directory.
@@ -12,7 +12,7 @@ Use the Snyk plugin with your TeamCity projects to test and monitor your code fo
 6. Snyk authenticates your account using the API token you configured in the build.
 7. The user runs a build.
 8. During the build, before scanning for vulnerabilities, your Snyk installation is verified and updated as necessary in the background, based on your policy configuration.
-9. Snyk then analyzes the manifest file of your project, automatically detecting the project type to find direct and transitive dependencies and test your project against the Snyk vulnerability database for known vulnerabilities.
+9. Snyk then analyzes the manifest file of your project, automatically detecting the project type to find direct and transitive dependencies and tests your project against the Snyk vulnerability database for known vulnerabilities.
 10. The **Snyk Security Report** tab displays the test results from TeamCity in the build details. The results indicate the number of known issues and the number of associated dependency paths identified.
 11. If the user did not choose the the **Monitor project on build** configuration setting for this project:
     1. Snyk displays all vulnerability results and details on the **Snyk Security Report tab** in TeamCity.
