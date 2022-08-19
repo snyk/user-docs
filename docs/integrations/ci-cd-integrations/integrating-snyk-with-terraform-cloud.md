@@ -38,13 +38,13 @@ Navigate to the dedicated Terraform Cloud integration settings page, under the *
 
 On the Snyk platform, first go to the Terraform Cloud integration settings page: `https://app.snyk.io/org/{YOUR-SNYK-ORG}/manage/integrations/terraform-cloud` to access the provided URL and HMAC Key
 
-![Snyk Integration Page for Terraform Cloud](<../../../.gitbook/assets/image (290).png>)
+![Snyk Integration Page for Terraform Cloud](<../../.gitbook/assets/image (290).png>)
 
 #### Create the Snyk Run Task for Terraform Cloud
 
 Now navigate to [Terraform Cloud](https://app.terraform.io) in the organization global settings:
 
-![Terraform Cloud Settings](<../../../.gitbook/assets/image (263).png>)
+![Terraform Cloud Settings](<../../.gitbook/assets/image (263).png>)
 
 1. Go to the run tasks settings:\
    `https://app.terraform.io/app/{YOUR_TFC_ORG}/settings/tasks`

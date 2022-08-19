@@ -12,5 +12,5 @@ For detailed information, refer to the pages for the integration you are using:
 * [Jenkins integration](jenkins-integration-overview.md)
 * [Maven integration](maven-plugin-integration.md)
 * [TeamCity integration](teamcity-integration-overview/)
-* [Terraform Cloud integration for IaC](integrating-snyk-with-terraform-cloud/)
+* [Terraform Cloud integration for IaC](integrating-snyk-with-terraform-cloud.md)
 * [Terraform Enterprise integration for IaC](integrating-snyk-with-terraform-enterprise.md)
