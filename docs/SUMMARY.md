@@ -506,8 +506,9 @@
     * [View cloud issues in the Snyk Web UI](products/snyk-cloud/snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md)
     * [View cloud issues in the API](products/snyk-cloud/snyk-cloud-issues/view-cloud-issues-in-the-api.md)
   * [Scan a Snyk Cloud Environment](products/snyk-cloud/scan-a-snyk-cloud-environment.md)
-  * [Remove a Snyk Cloud Environment](products/snyk-cloud/remove-a-snyk-cloud-environment.md)
   * [View Snyk Cloud resources](products/snyk-cloud/view-snyk-cloud-resources.md)
+  * [Update a Snyk Cloud Environment](products/snyk-cloud/update-a-snyk-cloud-environment.md)
+  * [Remove a Snyk Cloud Environment](products/snyk-cloud/remove-a-snyk-cloud-environment.md)
   * [Supported AWS resources for Snyk Cloud](products/snyk-cloud/supported-aws-resources-for-snyk-cloud.md)
 
 ## USING SNYK <a href="#features" id="features"></a>
