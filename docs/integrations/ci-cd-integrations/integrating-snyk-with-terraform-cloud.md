@@ -20,11 +20,16 @@ Terraform Cloud introduced a new feature called run tasks. A “run” in TFC re
 
 This run tasks feature allows external integrations to connect to these “run” events and interact with them, providing a status to determine if this run should pass or fail.
 
-Snyk [introduced support in May 2021](https://snyk.io/blog/prevent-cloud-misconfigurations-hashicorp-terraform-snyk-iac/) for Terraform users to scan their Terraform plan json output against Snyk security policies for all major cloud providers.
+Snyk [introduced support in May 2021](https://snyk.io/blog/prevent-cloud-misconfigurations-hashicorp-terraform-snyk-iac/) for Terraform users to scan their Terraform plan JSON output against Snyk security policies for all major cloud providers.
 
 The Snyk integration connects the “run” workflow of Terraform Cloud with Snyk Terraform plan scanning, meaning that for each “run” generated, Snyk scans the Terraform plan artifact for misconfigurations.
 
 If you are a user of Terraform Cloud ([Team & Governance tier](https://www.hashicorp.com/products/terraform/pricing)), you can sign up with Snyk to set the integration and connect it with your workspaces in Terraform Cloud. Then you'll be able track, manage, and resolve security misconfigurations as part of your software development lifecycle with Terraform Cloud.
+
+For setup and use details, see the following pages:
+
+* [Set up the Terraform Cloud integration for IaC](integrating-snyk-with-terraform-cloud/set-up-the-terraform-cloud-integration-for-iac.md)
+* [How to use the Terraform Cloud integration for IaC](integrating-snyk-with-terraform-cloud/how-to-use-the-terraform-cloud-integration-for-iac.md)
 
 ## ****
 
