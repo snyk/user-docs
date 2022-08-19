@@ -85,7 +85,7 @@ To view an issue, select the **Expand row** (`>`) symbol on the left side of a r
 
 ### Issue summary panel
 
-The cloud issue summary panel contains the following information:
+The cloud issue summary panel displays the **Overview** by default, which contains the following information:
 
 * Severity
 * Status
@@ -100,7 +100,11 @@ The cloud issue summary panel contains the following information:
 * Rule title (**Failed this rule** section)
 * Rule description (**Why to fix** section)
 
-![The Snyk Cloud issue summary panel, expanded](../../../.gitbook/assets/snyk-cloud-issues-panel-2.png)
+![The Snyk Cloud issue summary panel, Overview tab](../../../.gitbook/assets/snyk-cloud-issue-panel-overview.png)
+
+Select the **Resource** tab to view the scanned resource's attributes:
+
+![The Snyk Cloud issue summary panel, Resource tab](../../../.gitbook/assets/snyk-cloud-issue-panel-resource.png)
 
 ## Filter cloud issues
 
