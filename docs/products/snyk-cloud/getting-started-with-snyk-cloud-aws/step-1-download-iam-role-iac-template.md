@@ -86,7 +86,8 @@ Before you can use the template to provision the resources, you need to **unesca
    | jq -r .data.attributes.data > snyk_iac_template
    ```
 
-   This will place the properly-formatted template into the file `snyk_iac_template` in your current working directory. Rename the file with a `.tf` extension (Terraform) or `.yaml` (CloudFormation).
+   This will place the properly-formatted template into the file `snyk_iac_template` in your current working directory.
+   c. Rename the file with a `.tf` extension (Terraform) or `.yaml` (CloudFormation).
 
 2. Transform the content manually:
    a. Copy the contents of `data.attributes.data` from the API response, excluding the double quote at the very beginning and the very end of the value. You should end up with a long string starting with `data \"aws_iam_policy_document\"` (Terraform) or `AWSTemplateFormatVersion` (CloudFormation).
