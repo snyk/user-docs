@@ -1,18 +1,18 @@
 # How to use the Terraform Cloud integration for IaC
 
+Once your integration is set up, Snyk scans Terraform plans for each run triggered in your workspace.
 
+## View Terraform plan scanning results
 
-### View Terraform plan scanning results
-
-1. For each run triggered in the Terraform Cloud workspace, the result of the Snyk Terraform plan scanning appears under the \`run tasks\` step, which triggers after the Plan stage finishes.
-2. The scan results in either a \`passed\` or a \`failed\` status. If Snyk finds issues in your Terraform plan file, the scan results in a failure.
-3. Click on the Details link of the run task results in Terraform Cloud to view further details in Snyk.
-   1. You can also find the results under the Projects tab in Snyk by searching for terraform-plan.json which will be under a Target named by `{YOUR_TFC_ORG_NAME}/{YOUR_TFC_WORKSPACE_NAME}`
+1. For each run triggered in the Terraform Cloud workspace, the result of Snyk Terraform plan scanning appears under the `run tasks` step, which triggers after the `Plan` stage finishes.
+2. The scan results in either a `passed` or a `failed` status. If Snyk finds issues in your Terraform plan file, the scan results in a failure.
+3. Click on the **Details** link of the run task results in Terraform Cloud to view further details in Snyk.
+   1. You can also find the results under the **Projects** tab in Snyk by searching for terraform-plan.json which will be under a Target named by `{YOUR_TFC_ORG_NAME}/{YOUR_TFC_WORKSPACE_NAME}`
    2. You can also use the filter in the left pane to show only Terraform Cloud projects
-4. A single project in Snyk (`terraform-plan.json`) is created per workspace which uses the Snyk integration. Every project page shows the latest scanning results.
-5. To see historical scan results, navigate into the History tab under the relevant project and choose the historic snapshot you wish to view.
+4. A single project in Snyk (`terraform-plan.json`) is created for each workspace which uses the Snyk integration. Every project page shows the latest scanning results.
+5. To see historical scan results, navigate into the **History** tab under the relevant project and choose the historic snapshot you wish to view.
 
-### Customize Terraform plan scanning
+## Customize Terraform plan scanning
 
 Snyk Terraform Cloud integration provides the following levels of customization:
 
@@ -20,9 +20,9 @@ Snyk Terraform Cloud integration provides the following levels of customization:
 * Custom Severities: Set custom severities for issues which overwrite the defaults (for example, [SNYK-CC-TF-63](https://snyk.io/security-rules/SNYK-CC-TF-63)).
 * Enforcement Level: Determine whether a failure blocks the apply or not. This setting is controlled via Terraform Cloud. For example, the `Advisory` level does not block the apply even if Snyk finds issues within the minimum severity threshold.
 
-### Notes and limitations
+## Notes and limitations
 
-* Snyk receives an event from Terraform Cloud for each "plan" stage finished within the latest run in Terraform Cloud.
-* The only way to trigger a scan is through Terraform Cloud by triggering a new "run".
-* You cannot trigger a re-scan of the Terraform plan file through the Snyk UI.
-* If you customize the Snyk integration (for example, change severity threshold or customise policy severities), you must trigger a new run in Terraform Cloud for the changes to take effect in Snyk.
+* Snyk receives an event from Terraform Cloud for each `plan` stage finished within the latest run in Terraform Cloud.
+* The only way to trigger a scan is through Terraform Cloud by triggering a new run.
+* You cannot trigger a re-scan of the Terraform plan file through the Snyk Web UI.
+* If you customize the Snyk integration (for example, change severity threshold or customize policy severities), you must trigger a new run in Terraform Cloud for the changes to take effect in Snyk.
