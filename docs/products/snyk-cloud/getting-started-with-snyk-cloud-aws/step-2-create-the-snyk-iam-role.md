@@ -53,7 +53,7 @@ Before you use the [AWS CLI](https://aws.amazon.com/cli/), ensure you [configure
 {% endhint %}
 
 1. In your terminal, navigate to the directory containing your `.yaml` file.
-2. Using the AWS CLI, launch the CloudFormation stack, replacing `cfn.yaml` with the name of your file:
+2. Using the AWS CLI, launch the CloudFormation stack, replacing `snyk-cloud-role` with the name of your IAM role and `cfn.yaml` with the name of your file:
 
 ```
 aws cloudformation create-stack \
@@ -62,7 +62,7 @@ aws cloudformation create-stack \
   --template-body file://cfn.yaml
 ```
 
-3\. AWS then creates the IAM role. This typically takes about a minute. To check if it is finished:
+3\. AWS then creates the IAM role. This typically takes about a minute. To check if it is finished, get the stack status, replacing `snyk-cloud-role` with the name of your IAM role:
 
 ```
 aws cloudformation describe-stacks \

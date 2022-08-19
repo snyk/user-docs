@@ -9,7 +9,7 @@ To send a request to the Snyk API to create and scan a Snyk Cloud Environment, y
 
 ## Find the role ARN
 
-The role ARN should follow this format, unless you changed the name of the role:
+The role ARN should follow this format, unless you [changed the name of the role](step-1-download-iam-role-iac-template.md#optional-change-iam-role-name) in the Terraform or CloudFormation template:
 
 ```
 arn:aws:iam::YOUR-ACCOUNT-ID:role/snyk-cloud-role
@@ -19,7 +19,7 @@ If you do not know your Amazon Web Services (AWS) account ID, or if you changed 
 
 ### AWS CLI
 
-To find the ARN of the Snyk Cloud IAM role using the AWS CLI:
+To find the ARN of the Snyk Cloud IAM role using the AWS CLI, retrieve the role details, replacing `snyk-cloud-role` with the name of your role if you changed it:
 
 ```
 aws iam get-role \
