@@ -76,11 +76,22 @@ Example response with CloudFormation template:
 
 The `data.attributes.data` field in the output above is an escaped JSON string containing the Terraform or CloudFormation template with the IAM role and policy.
 
-Before you can use the template to provision the resources, you need to **unescape** the JSON:
+Before you can use the template to provision the resources, you need to **unescape** the JSON. This can be accomplished in the following ways:
 
-1. Copy the contents of `data.attributes.data`, excluding the double quote at the very beginning and the very end of the value. You should end up with a long string starting with `data \"aws_iam_policy_document\"` (Terraform) or `AWSTemplateFormatVersion` (CloudFormation).
-2. Paste the string into a tool such as [FreeFormatter.com](https://www.freeformatter.com/json-escape.html) to unescape the JSON.
-3. Save the unescaped CloudFormation output as a new `.tf` file (Terraform) or `.yaml` file (CloudFormation).
+1. Using [`jq`](https://stedolan.github.io/jq/):
+   a. Download/install [jq](https://stedolan.github.io/jq/download/)
+   b. When submitting the API request during template retrieval, append the following to the end:
+
+   ```
+   | jq -r .data.attributes.data > snyk_iac_template
+   ```
+
+   This will place the properly-formatted template into the file `snyk_iac_template` in your current working directory. Rename the file with a `.tf` extension (Terraform) or `.yaml` (CloudFormation).
+
+2. Transform the content manually:
+   a. Copy the contents of `data.attributes.data` from the API response, excluding the double quote at the very beginning and the very end of the value. You should end up with a long string starting with `data \"aws_iam_policy_document\"` (Terraform) or `AWSTemplateFormatVersion` (CloudFormation).
+   b. Paste the string into a tool such as [FreeFormatter.com](https://www.freeformatter.com/json-escape.html) to unescape the JSON.
+   c. Save the unescaped CloudFormation output as a new `.tf` file (Terraform) or `.yaml` file (CloudFormation).
 
 ## What's next?
 
