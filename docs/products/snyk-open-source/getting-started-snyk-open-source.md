@@ -21,7 +21,7 @@ See the [Getting started](../../getting-started/) section for more details.
 
 ### View vulnerabilities
 
-You can view vulnerability results for imported Projects. The **Projects** tab appears by default after import, showing vulnerability information for project you've imported.
+You can view vulnerability results for imported Projects. The **Projects** tab appears by default after import, showing vulnerability information for projects you've imported.
 
 You can expand an imported target (see Introduction to Targets and Projects) to see vulnerability information for that project, including the number of issues found, grouped by severity level:
 
@@ -35,7 +35,7 @@ See [view-project-information.md](../../snyk-web-ui/introduction-to-snyk-project
 
 ### Fix vulnerabilities
 
-For some languages, Snyk can fix your vulnerabilities using fix pull/merge requests.
+For some languages, Snyk can fix vulnerabilities using fix pull/merge requests.
 
 {% hint style="info" %}
 See [what-languages-do-we-support-fix-pull-requests-or-merge-requests.md](../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md "mention")
@@ -47,11 +47,11 @@ Navigate to the **Issues** view for a project:
 
 To fix vulnerabilities:
 
-1. Click **Fix this vulnerability** to raise a fix PR for that issue (or click **Fix these vulnerabilities** to to fix multiple issues).
-2. The **Open a Fix PR** screen opens and indicates the vulnerabilities you selected.
-3. Check any additional issues you want to fix, or uncheck items to remove them from the fix.
-4. Scroll down to the bottom of the screen and click **Open a Fix PR**.
-5. Snyk now actions this PR, then a results screen appears.
+1. Click **Fix this vulnerability** to raise a fix PR for that issue (or click **Fix these vulnerabilities** to fix multiple issues).
+2. The **Open a Fix PR** screen opens and indicates the selected vulnerabilities.
+3. Check or uncheck the issues you want to fix or remove from this fix.
+4. Scroll to the bottom of the screen and click **Open a Fix PR**.
+5. Snyk acts on the PR and displays a results screen.
 6. Optionally, select the **Files changed** tab to see details of the changes made.
 
 ![](<../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22 (1).png>)
