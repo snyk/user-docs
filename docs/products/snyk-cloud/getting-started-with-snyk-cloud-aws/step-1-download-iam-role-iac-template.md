@@ -76,9 +76,26 @@ Example response with CloudFormation template:
 
 The `data.attributes.data` field in the output above is an escaped JSON string containing the Terraform or CloudFormation template with the IAM role and policy.
 
-Before you can use the template to provision the resources, you need to **unescape** the JSON:
+Before you can use the template to provision the resources, you need to **unescape** the JSON. This can be accomplished in the following ways:
 
-1. Copy the contents of `data.attributes.data`, excluding the double quote at the very beginning and the very end of the value. You should end up with a long string starting with `data \"aws_iam_policy_document\"` (Terraform) or `AWSTemplateFormatVersion` (CloudFormation).
+* [Use jq](step-1-download-iam-role-iac-template.md#use-jq)
+* [Transform the content manually](step-1-download-iam-role-iac-template.md#transform-the-content-manually)
+
+### Use `jq`
+
+1. Download and install [jq](https://stedolan.github.io/jq/download/).
+2.  When submitting the API request during template retrieval, append the following to the end of the command:
+
+    ```
+    | jq -r .data.attributes.data > snyk_iac_template
+    ```
+
+    This will place the properly-formatted template into the file `snyk_iac_template` in your current working directory.
+3. Rename the file with a `.tf` extension (Terraform) or `.yaml` (CloudFormation).
+
+### Transform the content manually
+
+1. Copy the contents of `data.attributes.data` from the API response, excluding the double quote at the very beginning and the very end of the value. You should end up with a long string starting with `data \"aws_iam_policy_document\"` (Terraform) or `AWSTemplateFormatVersion` (CloudFormation).
 2. Paste the string into a tool such as [FreeFormatter.com](https://www.freeformatter.com/json-escape.html) to unescape the JSON.
 3. Save the unescaped CloudFormation output as a new `.tf` file (Terraform) or `.yaml` file (CloudFormation).
 
