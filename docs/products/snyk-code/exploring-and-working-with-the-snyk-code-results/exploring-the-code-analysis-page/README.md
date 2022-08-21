@@ -2,7 +2,7 @@
 
 The **Code Analysis** page displays the results of the Snyk Code test for a specific repository. These results are all the vulnerability issues that were discovered by Snyk Code in the source code of the imported repository:
 
-![](<../../../.gitbook/assets/Snyk Code - Results - Code Analysis page - parts.png>)
+![](<../../../../.gitbook/assets/Snyk Code - Results - Code Analysis page - parts.png>)
 
 This page consists of several parts:
 
