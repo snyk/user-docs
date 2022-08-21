@@ -310,6 +310,7 @@
       * [The Code Analysis  page - Header](products/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-code-analysis-page/the-code-analysis-page-header.md)
       * [The Code Analysis page - the Project Summary Information area](products/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-code-analysis-page/the-code-analysis-page-the-project-summary-information-area.md)
       * [The Code Analysis page - the Filter pane](products/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-code-analysis-page/the-code-analysis-page-the-filter-pane.md)
+      * [The Code Analysis page - the Vulnerability Issues area](products/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-code-analysis-page/the-code-analysis-page-the-vulnerability-issues-area.md)
     * [Viewing the Snyk Code results via the Web UI](products/snyk-code/exploring-and-working-with-the-snyk-code-results/using-snyk-code-web.md)
     * [Understanding the Priority Score of the Snyk Code issues](products/snyk-code/exploring-and-working-with-the-snyk-code-results/understanding-the-priority-score-of-the-snyk-code-issues.md)
     * [Exploring the History of the Snyk Code Results](products/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-history-of-the-snyk-code-results.md)
