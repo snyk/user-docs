@@ -15,12 +15,12 @@ Snyk Container:
 * Provides tools and integrations for quickly finding and fixing these vulnerabilities.
 * Allows you to create images with security built-in from the start.
 
-For details on securing your container images with Snyk Container, see [snyk-container-security-basics](snyk-container-security-basics/ "mention").
+For details on securing your container images with Snyk Container, see [Broken link](broken-reference "mention").
 
 ### Snyk Container integrations
 
 Snyk Container provides a range of integrations for importing projects into Snyk. These integrations support a range of different workflows.
 
-See [snyk-container-integrations.md](snyk-container-security-basics/snyk-container-integrations.md "mention") for more details on available integrations.
+See [snyk-container-integrations.md](snyk-container-integrations.md "mention") for more details on available integrations.
 
 See [image-scanning-library](image-scanning-library/ "mention") for details of each container registry integration.
