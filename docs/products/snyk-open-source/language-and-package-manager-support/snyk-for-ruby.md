@@ -35,3 +35,25 @@ In future releases, we are planning to provide suggestions to make this easier.
 If you use private Gem sources this should work as normal when testing via the Snyk CLI.
 
 You must take additional steps to [configure private Gem sources for projects imported from Git](https://docs.snyk.io/integrations/private-registry-integrations/private-gem-sources-for-ruby).
+
+### Supported Ruby version
+
+#### `2.3.X`
+
+* '2.3.1', '2.3.6'
+
+#### `2.4.X`
+
+* '2.4.0', '2.4.1', '2.4.2', '2.4.5', '2.4.6', '2.4.9'
+
+#### `2.5.X`
+
+* '2.5.0', '2.5.1', '2.5.3'
+
+#### `2.6.X`
+
+* '2.6.1', '2.6.3', '2.6.5', '2.6.6'
+
+#### `2.7.X`
+
+* '2.7.2', '2.7.3', '2.7.4', '2.7.5', '2.7.6'

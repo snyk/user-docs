@@ -8,7 +8,7 @@ Snyk supports a wide range of programming languages, allowing you to scan your c
 
 * **Snyk Open Source**: see [Open Source - Supported languages and package managers](../products/snyk-open-source/language-and-package-manager-support/).
 * **Snyk Code**: see [Snyk Code - Supported languages and frameworks](../products/snyk-code/snyk-code-language-and-framework-support.md).
-* **Snyk Container**: see [Supported operating system distributions.](../products/snyk-container/supported-operating-system-distributions.md)
+* **Snyk Container**: see [Supported operating system distributions.](../products/snyk-container/snyk-container-security-basics/supported-operating-system-distributions.md)
 * **Snyk Infrastructure as Code**: [Snyk IaC ](../products/snyk-infrastructure-as-code/)supports configuration files for HashiCorp Terraform, AWS CloudFormation, Kubernetes, and Azure Resource Manager (ARM).&#x20;
 * &#x20;**Snyk Cloud:** [Snyk Cloud](../products/snyk-cloud/) supports scanning [Amazon Web Services resources](../products/snyk-cloud/supported-aws-resources-for-snyk-cloud.md).
 
