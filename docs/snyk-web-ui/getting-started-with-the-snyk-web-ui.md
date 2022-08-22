@@ -107,7 +107,7 @@ Use the <img src="../.gitbook/assets/cog_icon.png" alt="" data-size="line"> menu
 
 Use the Help menu for quick access to Snyk user documentation (including the **Getting started** or **CLI** sections), product updates, API documentation, Snyk support, and to check the Snyk status page.
 
-![Getting help via the Help menu](../.gitbook/assets/image.png)
+![Getting help via the Help menu](<../.gitbook/assets/image (1).png>)
 
 ## Manage account preferences and settings
 
