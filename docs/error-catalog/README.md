@@ -14,14 +14,16 @@
 |Snapshots|||||||
 ||[SNYK-OSSI-0001](#snyk-ossi-0001)|Unauthorized|This is an example project error|[401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)|N/A||    
 |PurlVulnerabilityFetching|||||||
-||[SNYK-OSSI-1010](#snyk-ossi-1010)|Token not provided|Token has not been provided|[400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)|N/A||    
-||[SNYK-OSSI-1020](#snyk-ossi-1020)|Token is invalid|Token is invalid|[401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)|N/A||    
-||[SNYK-OSSI-1030](#snyk-ossi-1030)|Insufficient privileges|User has insufficient privileges|[403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)|N/A||    
-||[SNYK-OSSI-1040](#snyk-ossi-1040)|Organization not on allow list|Organization not on allow list|[403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)|N/A||    
+||[SNYK-OSSI-1040](#snyk-ossi-1040)|Your organisation is not authorised to perform this action|Your organisation is not authorised to perform this action|[403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)|N/A||    
+||[SNYK-OSSI-1050](#snyk-ossi-1050)|Authorization request failure|Unexpected error when authenticating. Please try again, and if you continue to experience issues please contact support|[500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)|N/A||    
 ||[SNYK-OSSI-2010](#snyk-ossi-2010)|Invalid PURL|Invalid PURL has been provided|[400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)|N/A||    
-||[SNYK-OSSI-2020](#snyk-ossi-2020)|Unsupported Ecosystem|Ecosystem is not supported|[422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)|N/A|https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support|    
+||[SNYK-OSSI-2011](#snyk-ossi-2011)|Package requested without namespace|You have requested a package type which requires a namespace (eg. maven group id). Please supply the namespace in order to retrieve the package correctly|[400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)|N/A||    
+||[SNYK-OSSI-2020](#snyk-ossi-2020)|Unsupported Ecosystem|Ecosystem is not supported|[400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)|N/A|https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support|    
+||[SNYK-OSSI-2021](#snyk-ossi-2021)|Purl component(s) required|Currently we require a list of components of the package url specification. The purl supplied by the user did not specify all the components which we currently require|[400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)|N/A||    
+||[SNYK-OSSI-2022](#snyk-ossi-2022)|Purl component not supported|You have submitted a purl with components which are not supported|[400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)|N/A||    
 ||[SNYK-OSSI-2030](#snyk-ossi-2030)|Package not found|Requested package not found|[404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)|N/A||    
-||[SNYK-OSSI-2031](#snyk-ossi-2031)|Service down|Service is down|[500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)|N/A||    
-||[SNYK-OSSI-2032](#snyk-ossi-2032)|VulnDB error|Error querying VulnDB|[500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)|N/A||    
-||[SNYK-OSSI-2040](#snyk-ossi-2040)|Processing error|An error occurred processing the request|[500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)|N/A||    
-Genererated at 2022-08-19T14:40:22.009Z
+||[SNYK-OSSI-2031](#snyk-ossi-2031)|Vulnerability service unavailable|Vulnerability service is currently not available. Please try again in a few minutes|[503](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)|N/A||    
+||[SNYK-OSSI-2032](#snyk-ossi-2032)|Vulnerability response invalid|An unexpected error occurred. Please try again, and if you continue to experience issues please contact support|[500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)|N/A||    
+||[SNYK-OSSI-2033](#snyk-ossi-2033)|Vulnerability service error|An unexpected error occured with the vulnerability service. Please try again, and if you continue to experience issues please contact support|[500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)|N/A||    
+||[SNYK-OSSI-2040](#snyk-ossi-2040)|Internal server error|An error was experienced by the service when processing the request.|[500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)|N/A||    
+Genererated at 2022-08-22T08:24:01.364Z
