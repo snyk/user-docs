@@ -1,8 +1,8 @@
-# Code language and framework support
+# Snyk Code - Supported languages and frameworks
 
 ## Language support with Snyk Code AI Engine
 
-Snyk Code is based on a deep code semantic code analysis engine using AI to continuously learn from billions of lines of code and 100s of millions of code fixes in the global development community. The Snyk Code AI Engine continuously evolves the human-guided reinforced learning cycle lead by Snyk's security researchers and engineers. See [this blog article ](https://snyk.io/blog/advanced-technologies-behind-snyk-code/)for more details.
+Snyk Code is based on a deep-code, semantic-code Analysis Engine, which uses AI to continuously learn from billions of lines of code, and 100s of millions of code fixes, in the global development community. The Snyk Code AI Engine continuously evolves the human-guided reinforced learning cycle lead by Snyk's security researchers and engineers. See [this blog article ](https://snyk.io/blog/advanced-technologies-behind-snyk-code/)for more details.
 
 When files are provided for analysis, the engine determines which file to feed into which parser, in a language-independent common intermediate format. This format preserves and exposes characteristics of the scanned source code.
 
@@ -36,9 +36,9 @@ Snyk Code can work with a variety of relevant language types:
 * Optionally strong typed languages such as TypeScript.
 * Strong typed languages such as Java.
 
-Contact Snyk for a full list of support for frameworks, libraries and vulnerability types
+For a full list of Vulnerability Types/Security Rules that are applied to each supported language by Snyk Code, see [Security Rules used by Snyk Code](security-rules-used-by-snyk-code/).
 
-## Supported Extensions
+### Supported Extensions
 
 The following are the supported extensions:
 
