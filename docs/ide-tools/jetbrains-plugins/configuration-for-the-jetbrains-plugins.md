@@ -19,6 +19,11 @@ You can set the following configurations for the plugin, using **Preferences →
 * **Snyk Code Security issues**: use to analyze the project for security vulnerabilities in your application code using Snyk Code; enabled by default
 * **Snyk Code Quality issues**: use to analyze the project for quality issues in your application code using Snyk Code; disabled by default.
 * **Snyk Advisor issues**: health status (maintenance, community, popularity, and security) of your open source packages. Advisor scores are shown only for packages with an advisor score of less than 70.
+* **Automatically manage needed binaries** and **** and **Cli Path**: Opt out of downloading the CLI through the plugin and thus use your own installation of the CLI.&#x20;
+  * When **Automatically manage needed binaries** is checked, the plugin will automatically download and keep the CLI updated.
+  * When **Automatically manage needed binaries** __ is checked __ and **Cli Path** contains a path, the plugin will use the provided CLI path. Use this option if downloading the CLI is not possible due to your network configuration (for example, due to firewall rules) and you need to obtain the CLI through other means.
+
+<figure><img src="../../.gitbook/assets/JetBrains-CLI-config.png" alt=""><figcaption></figcaption></figure>
 
 ## Environment variables for the JetBrains plugins
 
