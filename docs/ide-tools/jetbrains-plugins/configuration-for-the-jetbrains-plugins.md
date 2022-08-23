@@ -18,7 +18,7 @@ You can set the following configurations for the plugin, using **Preferences →
 * **Snyk Container vulnerabilities**: use to analyze the project for container vulnerabilities in container images and Kubernetes applications; enabled by default.
 * **Snyk Code Security issues**: use to analyze the project for security vulnerabilities in your application code using Snyk Code; enabled by default
 * **Snyk Code Quality issues**: use to analyze the project for quality issues in your application code using Snyk Code; disabled by default.
-* **Snyk Advisor issues**: health status (maintenance, community, popularity & security) of your open source packages. Advisor scores are shown only for packages with advisor score less than 70.
+* **Snyk Advisor issues**: health status (maintenance, community, popularity, and security) of your open source packages. Advisor scores are shown only for packages with an advisor score of less than 70.
 
 ## Environment variables for the JetBrains plugins
 
