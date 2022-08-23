@@ -655,6 +655,7 @@
   * [Disclose a vulnerability in Snyk services](more-info/disclosing-vulnerabilities/disclose-a-vulnerability-in-snyk-services.md)
   * [Disclose a vulnerability in an open source package](more-info/disclosing-vulnerabilities/disclose-a-vulnerability-in-an-open-source-package.md)
 * [How Snyk handles your data](more-info/how-snyk-handles-your-data.md)
+* [Snyk feature release process](more-info/snyk-feature-release-process.md)
 * [Snyk Partner workshops](more-info/getting-started/README.md)
   * [Atlassian Integrations](more-info/getting-started/atlassian-integrations/README.md)
     * [Snyk - Atlassian Bitbucket Integration](more-info/getting-started/atlassian-integrations/snyk-atlassian-bitbucket-integration.md)
