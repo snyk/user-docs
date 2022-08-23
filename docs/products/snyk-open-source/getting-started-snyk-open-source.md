@@ -21,9 +21,9 @@ See the [Getting started](../../getting-started/) section for more details.
 
 ### View vulnerabilities
 
-You can view vulnerability results for imported Projects. The **Projects** tab appears by default after import, showing vulnerability information for projects you've imported.
+You can view vulnerability results for imported Projects. The **Projects** tab appears by default after import, showing vulnerability information for Snyk Projects you've imported, grouped into Targets.
 
-You can expand an imported target (see Introduction to Targets and Projects) to see vulnerability information for that project, including the number of issues found, grouped by severity level:
+You can expand a Target to see vulnerability information for Projects, including the number of issues found, grouped by severity level:
 
 ![.](../../.gitbook/assets/projects-import.png)
 
