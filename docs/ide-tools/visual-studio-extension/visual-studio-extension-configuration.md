@@ -24,6 +24,11 @@ After the plugin is installed, you can set the following configurations for the 
 * **Send usage analytics**: To help Snyk improve the extension, let your Visual Studio send Snyk information about how the extension is working.
 * **Project settings**: Specify any additional Snyk CLI parameters.
 * **Scan all projects**: Auto-detect all projects in the working directory, enabled by default.
+* **Executable settings**: you can opt out of downloading the CLI through the plugin and thus use your own installation of the CLI.&#x20;
+  * When **Automatically manage needed binaries** is checked, the plugin automatically downloads the CLI and keeps the CLI updated.
+  *   When **Automatically manage needed binaries** is unchecked, you must provide a valid path to the CLI. Use this option if downloading the CLI is not possible due to your network configuration (for example, due to firewall rules) and you need to obtain the CLI through other means.
+
+      <figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p>VS Code extension executable settings</p></figcaption></figure>
 
 ## Product selection for Visual Studio extension results
 
