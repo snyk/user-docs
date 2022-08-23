@@ -33,3 +33,8 @@ After the extension is installed, you can set the following configurations for t
   * **Additional Parameters**: set parameters to be passed to Snyk CLI for Open Source Security tests. For the full list see the [CLI commands and options summary](../../snyk-cli/cli-reference.md).
   * **Organization**: specify an organization slug name to run tests for that organization. The value of organization setting `snyk.advanced.organization` must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`. If not specified, the preferred organization as defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
   * **Custom endpoint**: Specify the custom Snyk API endpoint for your organization. Use this field for the custom endpoint for Single Tenant setups as well instead of https://app.snyk.io.
+  * **Automatic Dependency Management**  and **Cli Path**: Opt out of downloading the CLI through the plugin and thus use your own installation of the CLI.&#x20;
+    * When **Automatic Dependency Management** is checked, the plugin will automatically download and keep the CLI updated.
+    *   When **Automatic Dependency Management** __ is checked __ and **Cli Path** contains a path, the plugin will use the provided CLI path. Use this option if downloading the CLI is not possible due to your network configuration (for example, due to firewall rules) and you need to obtain the CLI through other means.
+
+        <figure><img src="../../.gitbook/assets/Screenshot 2022-08-23 at 14.08.05.png" alt=""><figcaption></figcaption></figure>
