@@ -172,17 +172,19 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 ## `snyk container` command options
 
-`--app-vulns`: [`container`](https://docs.snyk.io/snyk-cli/commands/container)
+`--file=<FILE_PATH>`: [container test](https://docs.snyk.io/snyk-cli/commands/container-test), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)``
 
-`--nested-jars-depth`: [`container`](https://docs.snyk.io/snyk-cli/commands/container)
+`--app-vulns`: [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)``
 
-`--exclude-base-image-vulns`: [`container`](https://docs.snyk.io/snyk-cli/commands/container)
+`--nested-jars-depth`: [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)``
 
-`--platform=<PLATFORM>`: [`container`](https://docs.snyk.io/snyk-cli/commands/container)
+`--exclude-base-image-vulns`: [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)``
 
-`--username=<CONTAINER_REGISTRY_USERNAME>`: [`container`](https://docs.snyk.io/snyk-cli/commands/container)
+`--platform=<PLATFORM>`: [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)``
 
-`--password=<CONTAINER_REGISTRY_PASSWORD>`: [`container`](https://docs.snyk.io/snyk-cli/commands/container)
+`--username=<CONTAINER_REGISTRY_USERNAME>`: [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)``
+
+`--password=<CONTAINER_REGISTRY_PASSWORD>`: [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)``
 
 ## `snyk iac test` command options
 
