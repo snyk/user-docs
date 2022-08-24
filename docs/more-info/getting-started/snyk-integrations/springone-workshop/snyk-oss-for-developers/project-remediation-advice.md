@@ -24,7 +24,7 @@ This setting should be set from our initial configuration of GitHub
 
 ![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/auto\_pr\_setting.png)
 
-Snyk will issues PRs for your projects when they are ready. You can view the PR in GitHub (GitLab and Bitbucket have similar views) by select the Pull Request tab at the top of the git repository. Keep in mind, Synk generates PRs overnight, and multiple pull requests exist for different dependencies.
+Snyk will issue PRs for your projects when they are ready. You can view the PR in GitHub (GitLab and Bitbucket have similar views) by select the Pull Request tab at the top of the git repository. Keep in mind, Synk generates PRs overnight, and multiple pull requests exist for different dependencies.
 
 {% hint style="info" %}
 SPC will generate a PR given enough time.
