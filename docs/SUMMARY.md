@@ -61,6 +61,8 @@
     * [Code](snyk-cli/commands/code.md)
     * [Config](snyk-cli/commands/config.md)
     * [Container](snyk-cli/commands/container.md)
+    * [Container monitor](snyk-cli/commands/container-monitor.md)
+    * [Container test](snyk-cli/commands/container-test.md)
     * [IaC](snyk-cli/commands/iac.md)
     * [IaC describe](snyk-cli/commands/iac-describe.md)
     * [IaC update-exclude-policy](snyk-cli/commands/iac-update-exclude-policy.md)
