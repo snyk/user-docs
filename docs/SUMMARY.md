@@ -132,6 +132,7 @@
     * [Run an analysis with Visual Studio Code extension](ide-tools/visual-studio-code-extension-for-snyk-code/run-an-analysis-with-visual-studio-code-extension.md)
     * [View analysis results from Visual Studio Code extension](ide-tools/visual-studio-code-extension-for-snyk-code/view-analysis-results-from-visual-studio-code-extension.md)
     * [Troubleshooting for Visual Studio Code extension](ide-tools/visual-studio-code-extension-for-snyk-code/troubleshooting-for-visual-studio-code-extension.md)
+  * [Language Server (beta)](ide-tools/language-server-beta.md)
 * [Snyk Apps](snyk-apps/README.md)
   * [Getting started with Snyk Apps](snyk-apps/getting-started-with-snyk-apps/README.md)
     * [Create an App](snyk-apps/getting-started-with-snyk-apps/create-an-app-via-the-api.md)
