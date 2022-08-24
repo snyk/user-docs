@@ -1,22 +1,33 @@
 # Container monitor
 
+Note: This page is being reworked to have container monitor information only.
+
 ## Usage
 
-`snyk container monitor [<OPTIONS>] [<IMAGE>]`
+`snyk container <SUBCOMMAND> [<OPTIONS>] [<IMAGE>]`
 
 ## Description
 
-The `snyk container monitor` command captures the container image layers and dependencies and monitor for vulnerabilities on [snyk.io](https://snyk.io)
+The `snyk container` command tests container images for vulnerabilities.
 
 For more information see [Snyk CLI for container security](https://docs.snyk.io/products/snyk-container/snyk-cli-for-container-security)
 
+## Subcommands
 
+### `test`
+
+Test for any known vulnerabilities.
+
+### `monitor`
+
+Capture the container image layers and dependencies and monitor for vulnerabilities on [snyk.io](https://snyk.io)
 
 ## Exit codes
 
 Possible exit codes and their meaning:
 
-**0**: success, image layers and dependencies captured\
+**0**: success, no vulnerabilities found\
+**1**: action\_needed, vulnerabilities found\
 **2**: failure, try to re-run command\
 **3**: failure, no supported projects detected
 
@@ -30,7 +41,11 @@ There are environment variables that apply to the container command; see [Config
 
 Use the `-d` option to output the debug logs.
 
-## Options
+## Options for the container test and container monitor subcommands
+
+### `--print-deps`
+
+Print the dependency tree before sending it for analysis.
 
 ### `--org=<ORG_ID>`
 
@@ -46,7 +61,7 @@ Default: `<ORG_ID>` that is the current preferred organization in your [Account 
 
 Note that you can also use `--org=<orgslugname>`. The `ORG_ID` works in both the CLI and the API. The organization slug name works in the CLI, but not in the API.
 
-For more information see the article [How to select the organization to use in the CLI](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/how-to-select-the-organization-to-use-in-the-cli)
+For more information see the article [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI)
 
 ### `--file=<FILE_PATH>`
 
@@ -65,6 +80,24 @@ Manually pass a path to a `.snyk` policy file.
 Print results in JSON format, useful for integrating with other tools
 
 Example: `$ snyk container test --json`
+
+### `--json-file-output=<OUTPUT_FILE_PATH>`
+
+Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option.
+
+This is especially useful if you want to display the human-readable test output using stdout and at the same time save the JSON format output to a file.
+
+Example: `$ snyk container test --json-file-output=vuln.json`
+
+### `--sarif`
+
+Return results in SARIF format. Note this requires the test to be run with `--file` as well.
+
+### `--sarif-file-output=<OUTPUT_FILE_PATH>`
+
+Save test output in SARIF format directly to the `<OUTPUT_FILE_PATH>` file, regardless of whether or not you use the `--sarif` option.
+
+This is especially useful if you want to display the human-readable test output using stdout and at the same time save the SARIF format output to a file.
 
 ### `--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`
 
@@ -102,6 +135,19 @@ To clear the project tags set `--project-tags=`
 
 This is an alias for `--project tags`
 
+### `--severity-threshold=<low|medium|high|critical>`
+
+Report only vulnerabilities at the specified level or higher.
+
+### &#x20;--fail-on=\<all|upgradable>
+
+Fail only when there are vulnerabilities that can be fixed.
+
+* `all`: fail when there is at least one vulnerability that can be either upgraded or patched.
+* `upgradable`: fail when there is at least one vulnerability that can be upgraded.
+
+To fail on any vulnerability (the default behavior), do not use the `--fail-on` option. If vulnerabilities do not have a fix and this option is being used, tests pass.
+
 ### `--app-vulns`
 
 Allow detection of vulnerabilities in your application dependencies from container images, as well as from the operating system, all in one single scan.
@@ -131,3 +177,23 @@ Specify a username to use when connecting to a container registry. This is ignor
 ### `--password=<CONTAINER_REGISTRY_PASSWORD>`
 
 Specify a password to use when connecting to a container registry. This is ignored in favor of local Docker binary credentials when Docker is present.
+
+## Examples for the container test command
+
+### Scan and monitor Docker images
+
+`$ snyk container test <image>`
+
+`$ snyk container monitor <image>`
+
+### Option to get more information including base image remediation
+
+`--file=path/to/Dockerfile`
+
+### Scan a Docker image created using the given Dockerfile and with a specified policy path
+
+`$ snyk container test app:latest --file=Dockerfile`
+
+`$ snyk container test app:latest --file=Dockerfile --policy-path=path/to/.snyk`
+
+For more information and examples see [Advanced Snyk Container CLI usage](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)

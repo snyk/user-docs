@@ -1,26 +1,14 @@
 # Container test
 
-Note: This page is being reworked to have container test information only.
-
 ## Usage
 
-`snyk container <SUBCOMMAND> [<OPTIONS>] [<IMAGE>]`
+`snyk container test [<OPTIONS>] [<IMAGE>]`
 
 ## Description
 
-The `snyk container` command tests container images for vulnerabilities.
+The `snyk container` command tests container images for any known vulnerabilities.
 
 For more information see [Snyk CLI for container security](https://docs.snyk.io/products/snyk-container/snyk-cli-for-container-security)
-
-## Subcommands
-
-### `test`
-
-Test for any known vulnerabilities.
-
-### `monitor`
-
-Capture the container image layers and dependencies and monitor for vulnerabilities on [snyk.io](https://snyk.io)
 
 ## Exit codes
 
@@ -41,7 +29,7 @@ There are environment variables that apply to the container command; see [Config
 
 Use the `-d` option to output the debug logs.
 
-## Options for the container test and container monitor subcommands
+## Options
 
 ### `--print-deps`
 
@@ -61,7 +49,7 @@ Default: `<ORG_ID>` that is the current preferred organization in your [Account 
 
 Note that you can also use `--org=<orgslugname>`. The `ORG_ID` works in both the CLI and the API. The organization slug name works in the CLI, but not in the API.
 
-For more information see the article [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI)
+For more information see the article [How to select the organization to use in the CLI](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/how-to-select-the-organization-to-use-in-the-cli)
 
 ### `--file=<FILE_PATH>`
 
@@ -98,42 +86,6 @@ Return results in SARIF format. Note this requires the test to be run with `--fi
 Save test output in SARIF format directly to the `<OUTPUT_FILE_PATH>` file, regardless of whether or not you use the `--sarif` option.
 
 This is especially useful if you want to display the human-readable test output using stdout and at the same time save the SARIF format output to a file.
-
-### `--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`
-
-Set the project environment to one or more values (comma-separated). To clear the project environment set `--project-environment=`
-
-Allowed values: `frontend`, `backend`, `internal`, `external`, `mobile`, `saas`, `onprem`, `hosted`, `distributed`
-
-For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes)
-
-### `--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE]...>`
-
-Set the project lifecycle to one or more values (comma-separated). To clear the project lifecycle set `--project-lifecycle=`
-
-Allowed values: `production, development, sandbox`
-
-For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes)
-
-### `--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`
-
-Set the project business criticality to one or more values (comma-separated). To clear the project business criticality set `--project-business-criticality=`
-
-Allowed values: `critical`, `high`, `medium`, `low`
-
-For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes)
-
-### `--project-tags=<TAG>[,<TAG>]...>`
-
-Set the project tags to one or more values (comma-separated key values pairs with an "=" separator).
-
-Example: `--project-tags=department=finance,team=alpha`
-
-To clear the project tags set `--project-tags=`
-
-### `--tags=<TAG>[,<TAG>]...>`
-
-This is an alias for `--project tags`
 
 ### `--severity-threshold=<low|medium|high|critical>`
 
