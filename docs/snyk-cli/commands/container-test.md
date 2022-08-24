@@ -6,7 +6,7 @@
 
 ## Description
 
-The `snyk container` command tests container images for any known vulnerabilities.
+The `snyk container test` command tests container images for any known vulnerabilities.
 
 For more information see [Snyk CLI for container security](https://docs.snyk.io/products/snyk-container/snyk-cli-for-container-security)
 
@@ -91,7 +91,7 @@ This is especially useful if you want to display the human-readable test output 
 
 Report only vulnerabilities at the specified level or higher.
 
-### &#x20;--fail-on=\<all|upgradable>
+### `--fail-on=<all|upgradable>`
 
 Fail only when there are vulnerabilities that can be fixed.
 
@@ -132,11 +132,9 @@ Specify a password to use when connecting to a container registry. This is ignor
 
 ## Examples for the container test command
 
-### Scan and monitor Docker images
+### Scan Docker images
 
 `$ snyk container test <image>`
-
-`$ snyk container monitor <image>`
 
 ### Option to get more information including base image remediation
 

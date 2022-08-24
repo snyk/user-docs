@@ -157,7 +157,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--severity-threshold=<low|medium|high|critical>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`code`](https://docs.snyk.io/snyk-cli/commands/code), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
-`--fail-on=<all|upgradable|patchable>`: [`container`](https://docs.snyk.io/snyk-cli/commands/container) (patchable does not apply, [`test`](https://docs.snyk.io/snyk-cli/commands/test)
+`--fail-on=<all|upgradable|patchable>`: [container test](https://docs.snyk.io/snyk-cli/commands/container-test), [test](https://docs.snyk.io/snyk-cli/commands/test)
 
 `--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container`](https://docs.snyk.io/snyk-cli/commands/container), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 

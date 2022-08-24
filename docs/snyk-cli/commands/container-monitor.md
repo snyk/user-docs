@@ -131,3 +131,9 @@ Specify a username to use when connecting to a container registry. This is ignor
 ### `--password=<CONTAINER_REGISTRY_PASSWORD>`
 
 Specify a password to use when connecting to a container registry. This is ignored in favor of local Docker binary credentials when Docker is present.
+
+## Example for the container monitor command
+
+**Scan and monitor Docker images**
+
+`$ snyk container monitor <image>`

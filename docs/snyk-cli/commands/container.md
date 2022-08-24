@@ -12,7 +12,7 @@ For more information see [Snyk CLI for container security](https://docs.snyk.io/
 
 ## `snyk container` commands and the help docs
 
-The `snyk containe`r commands are listed here with the help options:
+The `snyk container` commands are listed here with the help options:
 
 * ``[`container test`](container-test.md), `container test --help`: tests for any known vulnerabilities
 * ``[`container monitor`](container-monitor.md), `container monitor --help`: captures the container image layers and dependencies and monitors for vulnerabilities on [snyk.io](https://snyk.io)
