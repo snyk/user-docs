@@ -1,5 +1,7 @@
 # Container
 
+Note: This page is being reworked to explain both Container help commands.
+
 ## Usage
 
 `snyk container <SUBCOMMAND> [<OPTIONS>] [<IMAGE>]`
