@@ -2,7 +2,7 @@
 
 Snyk is dedicated to the premise that security needs to be implemented developer-first in order to meet the speed and scale needs of software-driven businesses.
 
-The problem with traditional SAST products is that they do not work for developers - they are too slow with scans that can take several hours, and they historically have had poor accuracy and returned too many false positives. This created hours of wasted time, as false alarms were chased down. These problems eroded the developer trust in the tool, and in addition these products required security expertise to make their output actionable, in order to remediate the issues they found. Snyk changed all of this.
+The problem with traditional SAST products is that they do not work for developers - they are too slow with scans that can take several hours, and they historically have had poor accuracy and returned too many false positives. This created hours of wasted time, as false alarms were chased down. These problems eroded the developer's trust in the tool, and in addition these products required security expertise to make their output actionable, in order to remediate the issues they found. Snyk changed all of this.
 
 ### Developer-first approach
 
