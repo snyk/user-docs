@@ -1,6 +1,6 @@
-# User Experience
+# Snyk Code - User Experience
 
-Here are the main features available in Snyk Code's user interface.
+Here are the main features available in the Snyk Code Web UI.
 
 ### Issue filtering, sorting, and grouping
 
