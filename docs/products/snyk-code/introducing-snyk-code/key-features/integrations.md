@@ -1,18 +1,14 @@
-# Integrations
+# Snyk Code - Integrations
 
 ## IDE integrations
 
-### JetBrains IDE plugins
+Snyk Code integrates with the following IDEs:
 
-For more information, see [JetBrains IDE Plugins](https://docs.snyk.io/integrations/ide-tools/jetbrains-plugins).
+* [JetBrains IDE extension](https://docs.snyk.io/ide-tools/jetbrains-plugins)
+* [Visual Studio Code IDE extension](https://docs.snyk.io/ide-tools/visual-studio-code-extension-for-snyk-code)
+* [Visual Studio IDE extension](https://docs.snyk.io/ide-tools/visual-studio-extension)
 
-### VS Code IDE plugin
 
-For more information, see the [Visual Studio Code extension for Snyk Code](../../../../ide-tools/visual-studio-code-extension-for-snyk-code/).
-
-### Visual Studio IDE plugin
-
-For more information, see the [Visual Studio extension for Snyk Code.](../../../../ide-tools/visual-studio-extension/)
 
 ## SCM integrations
 
@@ -20,36 +16,43 @@ For more information, see the [Visual Studio extension for Snyk Code.](../../../
 
 This integration allows you to:
 
-* Manage Code projects using your existing native import flow and tools
-* View and prioritize security issues found in the source code
-* Run a retest of a project and see history snapshots of a project
+* Manage Code Projects using your existing native import flow and tools.
+* View and prioritize security issues found in the source code.
+* Run a retest of a Project, and see the history snapshots of a Project.
 
-#### Supported SCMs
+### Supported SCMs
 
-Snyk Code integrates with the following SCMs: [GitHub](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration), [Bitbucket](https://docs.snyk.io/integrations/git-repository-scm-integrations/bitbucket-cloud-integration) , [Azure](https://docs.snyk.io/integrations/git-repository-scm-integrations/azure-repos-integration), [GitLab](https://docs.snyk.io/integrations/git-repository-scm-integrations/gitlab-integration).
+Snyk Code integrates with the following SCMs:&#x20;
 
-#### Supported languages
+* [GitHub](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration)
+* [GitHub Enterprise](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-enterprise-integration)&#x20;
+* [Bitbucket Data Center/Server](https://docs.snyk.io/integrations/git-repository-scm-integrations/bitbucket-data-center-server-integration)&#x20;
+* [Bitbucket Cloud](https://docs.snyk.io/integrations/git-repository-scm-integrations/bitbucket-cloud-integration)&#x20;
+* [Azure Repos](https://docs.snyk.io/integrations/git-repository-scm-integrations/azure-repos-integration)
+* [GitLab](https://docs.snyk.io/integrations/git-repository-scm-integrations/gitlab-integration)
 
-Snyk Code supports wide range of languages: see [Snyk Code language support](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support) for the full list.
+### Supported languages
+
+Snyk Code supports a wide range of languages - see [Snyk Code - Supported languages and frameworks](https://docs.snyk.io/snyk-code/snyk-code-language-and-framework-support).
 
 ### PR checks
 
 Snyk Code analysis can be applied to every Pull Request you are creating in your SCM, before merging it into the target branch. For more information, see [Using Automatic PR Checks for securing your source code](../../using-automatic-pr-checks-for-securing-your-source-code/).
 
-## CI/CD integrations
+## CLI and CI/CD integrations
 
 ### Test code in CI/CD using Snyk CLI
 
-The Snyk Command Line Interface ([CLI](../../../../snyk-cli/)) for Snyk Code helps you find and fix security flaws in your code on your local machine or in the CI/CD process.
+The [Snyk Command Line Interface (CLI) for Snyk Code](https://docs.snyk.io/products/snyk-code/cli-for-snyk-code) helps you find and fix security flaws in your code on your local machine or in the CI/CD process.
 
 ## APIs and extensibility
 
 ### Public APIs
 
-You can query Code projects and issues from our [v3 APIs](https://apidocs.snyk.io/?version=2021-11-03%7Eexperimental#overview).
+You can query Code Projects and issues from our [v3 APIs](https://apidocs.snyk.io/?version=2021-11-03%7Eexperimental#overview).
 
 ## Other integrations
 
 ### Jira integration
 
-You can connect Code with your Jira instance to allow developers to easily export issue data to Jira issues.
+You can connect Snyk Code with your [Jira instance](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira), to allow developers to easily export issue data to Jira issues.

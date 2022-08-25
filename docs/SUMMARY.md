@@ -286,7 +286,7 @@
     * [Snyk Code - Key features](products/snyk-code/introducing-snyk-code/key-features/README.md)
       * [Snyk Code AI Engine](products/snyk-code/introducing-snyk-code/key-features/ai-engine.md)
       * [User Experience](products/snyk-code/introducing-snyk-code/key-features/user-experience.md)
-      * [Integrations](products/snyk-code/introducing-snyk-code/key-features/integrations.md)
+      * [Snyk Code - Integrations](products/snyk-code/introducing-snyk-code/key-features/integrations.md)
   * [Snyk Code - Supported languages and frameworks](products/snyk-code/snyk-code-language-and-framework-support.md)
   * [Security Rules used by Snyk Code](products/snyk-code/security-rules-used-by-snyk-code/README.md)
     * [Go](products/snyk-code/security-rules-used-by-snyk-code/go.md)
