@@ -128,7 +128,7 @@ Ignore all set policies, the current policy in the `.snyk` file, org level ignor
 
 ### `--trust-policies`
 
-Apply and use ignore rules from the Snyk policies your dependencies; otherwise ignore rules in the dependencies are only shown as a suggestion.
+Apply and use ignore rules from the Snyk policies in your dependencies; otherwise ignore rules in the dependencies are only shown as a suggestion.
 
 ### `--project-name=<PROJECT_NAME>`
 
