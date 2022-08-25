@@ -218,7 +218,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--html`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac/iac-describe)
 
-\-`-html-file-output`:&#x20;
+`--html-file-output=<OUTPUT`_`FILE`_`PATH>`: [`iac-describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
 `--fetch-tfstate-headers`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
