@@ -2,6 +2,6 @@
 
 This section contains the following:
 
-* [AI Engine](ai-engine.md)
-* [User Experience](user-experience.md)
-* [Integrations](integrations.md)
+* [Snyk Code AI Engine](ai-engine.md)
+* [Snyk Code - User Experience](user-experience.md)
+* [Snyk Code - Integrations](integrations.md)
