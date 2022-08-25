@@ -10,7 +10,7 @@ OR
 
 ## Description
 
-The `snyk ignore` command modifies the `.snyk` policy file to ignore a stated issue according to its snyk ID for all occurrences or to ignore paths on the filesystem.
+The `snyk ignore` command modifies the `.snyk` policy file to ignore a stated issue according to its snyk ID for all occurrences, its expiry date, a reason, or according to paths in the filesystem.
 
 This updates your local `.snyk` file to contain a block similar to the following:
 
