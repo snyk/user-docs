@@ -208,7 +208,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--all`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
-`--only-managed`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
+`--only-managed` or `--drift`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
 `--only-unmanaged`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
@@ -217,6 +217,8 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 `--filter`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
 `--html`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac/iac-describe)
+
+\-`-html-file-output`:&#x20;
 
 `--fetch-tfstate-headers`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
@@ -230,23 +232,17 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--deep`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
-`--driftignore`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
-
 `--tf-lockfile`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
 \-`-config-dir`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
-## `snyk iac gen-driftignore` command options
+## `snyk iac update-exclude-policy command options`
 
-`--input`: [`iac gen-driftignore`](https://docs.snyk.io/snyk-cli/commands/iac-gen-driftignore)
+`--exclude-changed`: [`iac update-exclude-policy`](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy)``
 
-`--output=<OUTPUT_FILE_PATH>`: [`iac gen-driftignore`](https://docs.snyk.io/snyk-cli/commands/iac-gen-driftignore)
+`--exclude-missing`: [`iac update-exclude-policy`](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy)``
 
-`--exclude-changed`: [`iac gen-driftignore`](https://docs.snyk.io/snyk-cli/commands/iac-gen-driftignore)
-
-`--exclude-missing`: [`iac gen-driftignore`](https://docs.snyk.io/snyk-cli/commands/iac-gen-driftignore)
-
-`--exclude-unmanaged`: [`iac gen-driftignore`](https://docs.snyk.io/snyk-cli/commands/iac-gen-driftignore)
+`--exclude-unmanaged`: [`iac update-exclude-policy`](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy)``
 
 ## `snyk ignore` command options
 
@@ -312,9 +308,9 @@ Currently the following options are not supported:
 
 ## Options for scanning using `--unmanaged`
 
-`--org=<ORG_ID>`: [`test`](commands/test.md), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)``
+`--org=<ORG_ID>`: [`test`](commands/test.md), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--json`: [`test`](commands/test.md), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)``
+`--json`: [`test`](commands/test.md), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 `--json-file-output=<OUTPUT_FILE_PATH>`: [`test`](commands/test.md)
 
