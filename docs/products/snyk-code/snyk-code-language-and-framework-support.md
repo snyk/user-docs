@@ -13,7 +13,7 @@ This technology allows Snyk Code to:
 * Unveil interfile issues, such as issue patterns spread over several source files, which are typically especially hard to track.
 * Find issue patterns using the Snyk Code engine, compiling the found issues as a report.
 
-Snyk Code currently supports:
+Snyk Code currently supports the following programming languages:
 
 * **C#**
 * **Go**
@@ -43,10 +43,6 @@ For a full list of Vulnerability Types/Security Rules that are applied to each s
 The following are the supported extensions:
 
 * c, cc, cpp, cxx, h, hpp, hxx, ejs, es, es6, htm, html, js, jsx, ts, tsx, vue, java, erb, haml, rb, rhtml, slim, py, go, ASPX, Aspx, CS, Cs, aspx, cs, php, xml.
-
-{% hint style="info" %}
-Snyk Code ignores minified JS files with 3 or less lines, and also ignores single files larger than 1MB.
-{% endhint %}
 
 ### Framework support
 
@@ -99,3 +95,12 @@ These are some of the explicitly supported frameworks for C#; those are in-addit
 {% hint style="info" %}
 The framework support is always determined by the file extensions known to the engine. For example, the engine does not scan **\*.cshtml** files, but scans the associated **\*.cshtml.cs** files.
 {% endhint %}
+
+### File size limit for Snyk Code analysis
+
+Snyk Code automatically excludes the following files from analysis:
+
+* On the Web UI - files that are larger than 4MB.
+* On the CLI and IDE - files that are larger than 1MB.
+* Minified JS files with 3 or less lines.
+
