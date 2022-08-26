@@ -77,7 +77,7 @@ When using OIDC for the connection between your Identity provider and Snyk, add 
 | Information            | Description                                                                    |
 | ---------------------- | ------------------------------------------------------------------------------ |
 | Callback/Redirect URIs | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback) |
-| Callback/Redirect URIs (Snyk EU Tenant Customers)| [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback) |
+| Callback/Redirect URIs (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback) |
 | OAuth Grant Type       | Implicit (or Authorization Code)                                               |
 
 ## OIDC information to provide to Snyk
