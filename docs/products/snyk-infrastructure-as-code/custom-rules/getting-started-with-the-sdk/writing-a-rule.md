@@ -54,7 +54,7 @@ deny[msg] {
 	resource.todo
 	msg := {
 		# Mandatory fields
-		"publicId": "new-rule",
+		"publicId": "NEW-RULE",
 		"title": "Default title",
 		"severity": "low",
 		"msg": sprintf("input.resource.test[%s].todo", [name]),
@@ -129,7 +129,7 @@ deny[msg] {
     not resource.tags.owner
 	
     msg := {
-        "publicId": "my_rule",
+        "publicId": "MY_RULE",
         "title": "Missing an owner from tag",
         "severity": "medium",
         "msg": sprintf("input.resource.aws_redshift_cluster[%s].tags", [name]),
