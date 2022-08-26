@@ -170,7 +170,7 @@ Prints a help text. You may specify a COMMAND to get more details.
 Generate a new rule with the name `CUSTOM_RULE`
 
 ```
-$ snyk-iac-rules template --rule CUSTOMRULE
+$ snyk-iac-rules template --rule CUSTOM_RULE
 ```
 
 Test the rule
@@ -191,4 +191,4 @@ Possible exit codes and their meaning:
 
 **0**: success
 
-**1**: failure, the custom rule might be invalid\
+**1**: failure, the custom rule might be invalid
