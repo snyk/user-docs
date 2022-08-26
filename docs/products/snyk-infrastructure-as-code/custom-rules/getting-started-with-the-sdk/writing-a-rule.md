@@ -43,9 +43,9 @@ In Rego, you can write statements that allow or deny a request, such as:\
 If the **`template`** command was used to generate the rules, then the default entry point is **`rules/deny`**. To override it and use a different name than `deny`, check the section [Bundling Rules](bundling-rules.md).
 {% endhint %}
 
-This is what a generated skeleton of a deny rule looks like when we run `snyk-iac-rules template --rule new-rule --format hcl2`:
+This is what a generated skeleton of a deny rule looks like when we run `snyk-iac-rules template --rule NEW-RULE --format hcl2`:
 
-{% code title="rules/new-rule/main.rego" %}
+{% code title="rules/NEW-RULE/main.rego" %}
 ```
 package rules
 
@@ -94,7 +94,7 @@ package rules
 import data.lib
 import data.lib.testing
 
-test_new_ruleryle {
+test_NEW_RULE {
 	# array containing test cases where the rule is allowed
 	allowed_test_cases := [{
 		"want_msgs": [],
@@ -108,7 +108,7 @@ test_new_ruleryle {
 	}]
 
 	test_cases := array.concat(allowed_test_cases, denied_test_cases)
-	testing.evaluate_test_cases("new-rule", "./rules/new-rule/fixtures", test_cases)
+	testing.evaluate_test_cases("NEW-RULE", "./rules/NEW-RULE/fixtures", test_cases)
 }
 ```
 
@@ -120,7 +120,7 @@ For more examples, see[ Custom Rules Examples](examples.md).
 
 For this example, we modified our templated rule to assign a `msg` when a resource does not have an `owner` tag:
 
-{% code title="rules/my_rule/main.rego" %}
+{% code title="rules/MY_RULE/main.rego" %}
 ```
 package rules
 
