@@ -18,7 +18,7 @@ The `.snyk` policy file in a project is used to apply ignores and other settings
 * The `.snyk` file defines **Ignores**.
   * Snyk checks the Snyk database and the `.snyk` policy file for ignore rules when performing CLI and CI/CD scanning.
   * The `.snyk` policy file is used to apply ignores and other settings for the `snyk test` and `snyk monitor` commands, as well as any tests through the API or website.\
-    **Note**: If **admin users only** is enabled (**Settings > General > Ignores**), the ignore rules in the database are used, unless there is a `.snyk` file in the project. If there is a `.snyk` file in the project, `**** snyk test` uses that file as the ignore mechanism, instead of the ignores set from the web UI.
+    **Note**: If **admin users only** is enabled (**Settings > General > Ignores**), the ignore rules in the database are used, unless there is a `.snyk` file in the project. If there is a `.snyk` file in the project, `snyk test` uses that file as the ignore mechanism, instead of the ignores set from the web UI.
   * Developers can ignore issues by using the `.snyk` policy file when running `snyk monitor`.
   * When the `.snyk` file is included in a Source Control Management (SCM) project, Snyk considers both the database ignores and the `.snyk` ignores.
 * The `.snyk` file defines certain **analysis configuration items** such as `language settings:` (Python version).
@@ -201,7 +201,8 @@ The `.snyk` file should be versioned in the code repository, the same as other a
 
 ## Additional information
 
+For more information, see the following:
+
 [Ignore vulnerabilities using Snyk CLI](https://docs.snyk.io/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli)
 
-Support KB - [Ignoring via the CLI is not enabled for this organization](https://support.snyk.io/hc/en-us/articles/360001558598)\
-[CLI reference](../cli-reference.md)
+[Error message: Ignoring via the CLI is not enabled for this organization. Please ignore issues via our website](https://support.snyk.io/hc/en-us/articles/360001569438-Error-message-Ignoring-via-the-CLI-is-not-enabled-for-this-organization-Please-ignore-issues-via-our-website)
