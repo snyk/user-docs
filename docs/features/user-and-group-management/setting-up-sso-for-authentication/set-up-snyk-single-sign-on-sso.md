@@ -40,8 +40,11 @@ Use these details to set up the connection with your Identity provider (IdP):
 | Details             | **Description**                                                                                                                                                                                          |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Entity ID           | **urn:auth0:snyk:saml-**_**{customer\_name}**_ (Replace _{customer\_name}_ with a name for your company.)                                                                                                |
+| Entity ID (Snyk EU Tenant Customers)          | **urn:auth0:snyk-mt-eu-prod-1:saml-**_**{customer\_name}**_ (Replace _{customer\_name}_ with a name for your company.)                                                                                                |
 | ACS URL             | [https://snyk.auth0.com/login/callback?connection=saml-](https://snyk.auth0.com/login/callback?connection=saml-)_**{customer\_name}**_ (Replace _{customer\_name}_ with the same name for your company.) |
+| ACS URL (Snyk EU Tenant Customers)             | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback?connection=saml-](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback?connection=saml-)_**{customer\_name}**_ (Replace _{customer\_name}_ with the same name for your company.) |
 | Signing certificate | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem)                                                                                                                                                 |
+| Signing certificate (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/pem](https://snyk-mt-eu-prod-1.eu.auth0.com/pem)                                                                                                                                                 |
 
 To map information from your Identity provider to Snyk, name your user attributes as follows (using the same capitalization and spelling):
 
@@ -74,6 +77,7 @@ When using OIDC for the connection between your Identity provider and Snyk, add 
 | Information            | Description                                                                    |
 | ---------------------- | ------------------------------------------------------------------------------ |
 | Callback/Redirect URIs | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback) |
+| Callback/Redirect URIs (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback) |
 | OAuth Grant Type       | Implicit (or Authorization Code)                                               |
 
 ## OIDC information to provide to Snyk
@@ -98,6 +102,7 @@ Use your Azure AD name when authenticating rather than the SCM user account name
 | Information   | Description                                                                    |
 | ------------- | ------------------------------------------------------------------------------ |
 | Redirect URIs | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback) |
+| Redirect URIs (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback) |
 
 ## Azure AD information to provide to Snyk
 
@@ -117,7 +122,9 @@ When using ADFS for the connection between your Identity provider and Snyk, add 
 | ---------------- | ------------------------------------------------------------------------------------------------ |
 | Realm Identifier | **urn:auth0:snyk**                                                                               |
 | Callback URL     | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                   |
+| Callback URL (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback)                   |
 | Signing cert     | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem) (add as a signature and not encryption) |
+| Signing cert (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/pem](https://snyk-mt-eu-prod-1.eu.auth0.com/pem) (add as a signature and not encryption) |
 
 ## ADFS information to provide to Snyk
 
