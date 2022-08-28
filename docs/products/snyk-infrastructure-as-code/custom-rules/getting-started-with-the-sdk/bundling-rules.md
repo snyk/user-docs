@@ -27,7 +27,7 @@ That will output all the files included in the bundle:
 ```
 /data.json
 /lib/main.rego
-/rules/my_rule/main.rego
+/rules/MY_RULE/main.rego
 /policy.wasm
 /.manifest
 ```
