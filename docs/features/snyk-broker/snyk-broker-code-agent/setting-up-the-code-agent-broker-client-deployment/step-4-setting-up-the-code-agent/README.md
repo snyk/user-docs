@@ -2,7 +2,7 @@
 
 The setup of the Code Agent consists of two steps:
 
-1\.  [Downloading or updating the Docker image of the Code Agent](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-4-setting-up-the-code-agent/step-4.1-downloading-or-updating-the-code-agent-docker-image).\
+1\.  Downloading or updating the Docker image of the Code Agent (see below).\
 **Note:** It is highly recommended to pull and use the latest Docker image version. &#x20;
 
 2\.  [Running the Code Agent container based on the downloaded Docker image](./#4.2-running-the-code-agent-container). \

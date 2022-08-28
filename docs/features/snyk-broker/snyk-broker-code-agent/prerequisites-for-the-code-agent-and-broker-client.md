@@ -20,15 +20,16 @@ To use the Broker Client – Code Agent deployment method, the Broker Client and
 
 The minimal requirements for running the **Code Agent** component are:
 
-* **CPU -** 1 vCPU
-* **Memory -** 2Gb
-* **Disk space -** 2Gb\
+* **CPU** - 1 vCPU
+* **Memory** - 2Gb
+* **Disk space** - 2Gb\
   **Note**: The available disk space determines the maximum size of repositories that are imported simultaneously. If you wish to import repositories that exceed this size, you need to increase the available disk space. However, it is highly recommended to consult with your Implementation Consultant before importing repositories that are larger than 2Gb.
 * **Network:**
   * SCM connection - communication to the SCM that stores the repositories you want to analyze.
   * Snyk Code AI Engine connection - outbound communication to the Code Analysis Engine at [https://deeproxy.snyk.io/](https://deeproxy.snyk.io/).
 * Internet bandwidth and connection - the upload speed of the source code to the Broker Server will be affected by a low bandwidth and a slow Internet connection.
-* **Snyk API token – your** Snyk API token is required to authenticate the Code Agent component with your Snyk Account. See page 18.
+* **Snyk API token** - your **** Snyk API token is required to authenticate the Code Agent component with your Snyk Account.\
+  **Note**: For more information, see [Obtaining your Snyk API token](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-snyk-api-token).
 
 **Note**: Currently, you cannot deploy the Code Agent as a part of a Broker redundancy solution.
 
@@ -41,6 +42,8 @@ The minimal requirements for running the **Broker Client** component are:
 * **Network access** - an outbound TLS (443) communication to the Broker Server at [https://broker.snyk.io](https://broker.snyk.io). This outbound communication should also be allowed by any firewalls installed on your network.\
   **Note:** If you are using the same Broker Client for other Snyk products, and you want to enable there the Automatic PR Checks feature, you also need to configure the following:\
   Inbound communication to the Broker Client host machine at the `BROKER_CLIENT_URL`, on the port you have configured for the host machine (by default, 8000). See page 35.
-* **Broker token** – a unique Broker token is required to enable the Snyk Broker deployment for a specific Organization and a specific integrated SCM. See page 20.
-* **SCM token** – your integrated SCM token is required to enable access with specific permissions to the SCM. See page 24.
+* **Broker token** – a unique Broker token is required to enable the Snyk Broker deployment for a specific Organization and a specific integrated SCM. \
+  **Note**: For more information, see [Obtaining your Broker token](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-broker-token).
+* **SCM token** – your integrated SCM token is required to enable access with specific permissions to the SCM. \
+  Note: For more information, see [Obtaining your SCM token](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-scm-token).&#x20;
 
