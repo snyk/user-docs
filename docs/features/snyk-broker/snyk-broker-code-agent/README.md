@@ -15,13 +15,14 @@ To connect Snyk Code to your self-hosted Git server via the Snyk Broker, you nee
 
 To apply the Snyk Code analysis to repositories that are stored on your self-hosted Git server, you need the following components:
 
-* **Broker Server –** a Server that is running on the Snyk SaaS backend.\
+* **Broker Server** - a Server that is running on the Snyk SaaS backend.\
   **Note:** The Broker Server is provided by Snyk, and no installation is required on your part.
-* **Broker Client -** a [Docker image](https://hub.docker.com/r/snyk/broker/) that is deployed in your infrastructure.\
-  **Note**: For more information, see page 32.
-* **Code Agent -** another [Docker image](https://hub.docker.com/r/snyk/code-agent/) that is deployed in your infrastructure.
-
-**Note:** The Code Agent is only supported in Snyk Broker version 4.108.0 and later versions. If you already have a running Broker Client, you need to update it by pulling the latest Docker image. For more information, see page 33.
+* **Broker Client** - a [Docker image](https://hub.docker.com/r/snyk/broker/) that is deployed in your infrastructure.\
+  **Note**: For more information, see [Setting up the Broker Client](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-5-setting-up-the-broker-client).
+* **Code Agent** - another [Docker image](https://hub.docker.com/r/snyk/code-agent/) that is deployed in your infrastructure.\
+  Notes: \
+  \- For more information, see [Setting up the Code Agent](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-4-setting-up-the-code-agent).\
+  \- The Code Agent is only supported in Snyk Broker version 4.108.0 and later versions. If you already have a running Broker Client, you need to update it by pulling the latest Docker image. For more information, see [Downloading or Updating the Snyk Broker Client – Docker image](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-5-setting-up-the-broker-client/step-5.1-downloading-or-updating-the-snyk-broker-client-docker-image).
 
 The **Broker Client** and **Code Agent** components are deployed in your infrastructure, creating two separate services. Together with the Broker Server, the Snyk Code AI Engine, and the Snyk Web UI, these components are responsible for the following Code Analysis workflow:
 
