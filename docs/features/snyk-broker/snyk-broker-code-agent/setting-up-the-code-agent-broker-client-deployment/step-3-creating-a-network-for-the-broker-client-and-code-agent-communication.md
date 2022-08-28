@@ -17,7 +17,7 @@ docker network create <network_name>
 
 Where:
 
-* `network_name` – a name for the new network between the Broker Client and Code Agent.
+* `network_name` – a name for the new network between the Broker Client and the Code Agent.
 
 
 
