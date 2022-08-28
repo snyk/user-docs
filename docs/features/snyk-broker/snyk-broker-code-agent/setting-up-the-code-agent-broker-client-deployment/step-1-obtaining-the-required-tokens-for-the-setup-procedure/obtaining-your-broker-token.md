@@ -47,7 +47,7 @@ Your Broker token is displayed on the Web UI, only after your Snyk IC/TSM genera
 
 1\.  After you received a Broker token from your IC/TSM, or generated it via the API, open the Snyk Web UI. Then, open the Organization for which you want to set up the Snyk Broker:
 
-<figure><img src="../../../../../.gitbook/assets/Snyk Broker - Organization - Select.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Snyk Broker - Organization - Select (1).png" alt=""><figcaption></figcaption></figure>
 
 **Note**: The Broker token is associated with a specific Organization and a specific Integration.
 
