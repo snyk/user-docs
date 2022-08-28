@@ -46,8 +46,8 @@ To change roles for a user:
 (\*) Only in paid accounts\
 (\*\*) Only in Enterprise Plan
 
-### Editing Project Attributes from the Snyk CLI
+### Editing project attributes from the Snyk CLI
 
 The Organization Collaborator role lacks permission to edit project attributes, including via the Snyk CLI's [`monitor` command](../../../snyk-cli/commands/monitor.md) using arguments such as `--project-environment`. This was adjusted on August 25, 2022.  Attempting to use these arguments without the proper permission causes the `monitor` command to fail.&#x20;
 
-Users or service-accounts requiring the ability to edit project attributes will need to be an Organization Admin or use a custom role with `org.project.attributes.edit` assigned. Alternatively, remove any arguments that edit the project attributes from the `monitor` call.
+Users or service accounts requiring the ability to edit project attributes will need to be an Organization Admin or use a custom role with `org.project.attributes.edit` assigned. Alternatively, remove any arguments that edit the project attributes from the `monitor` call.
