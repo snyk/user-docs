@@ -15,12 +15,12 @@ Each person in the Organization sets up the integration and their own unique int
 Setting up this integration means it will be used for _**all**_ the Snyk Organizations associated with your user __ account.
 {% endhint %}
 
-When you import a Snyk Project via your GitHub integration with the Snyk PR functionality enabled, Snyk PRs are created for that project.  Similarly, if another person imports Projects with _their_ GitHub integration after _disabling_ the Snyk PR functionality, Snyk PRs are _not_ created for the Projects they import.&#x20;
+When you import a Snyk Project via your GitHub integration with the Snyk PR functionality enabled, Snyk PRs are created for that project.  Similarly, if _another_ person imports Projects with _their_ GitHub integration after _disabling_ the Snyk PR functionality, Snyk PRs are _not_ created for the Projects they import.&#x20;
 
 {% hint style="warning" %}
-You cannot use the GitHub integration to import public and private Projects via the Snyk API with a Snyk Service Account because the integration is associated with your _user account_ and _**not**_ with the Snyk Organization.\
+You cannot use a GitHub integration to import public and private Projects via the Snyk API with a Snyk Service Account. This functionality is not available because the GitHub integration is associated with _your_ _user account_ and _**not**_ with the Snyk Organization.\
 &#x20;\
-To import Projects via the API with a Snyk Service Account, use the [GitHub Enterprise integration](github-enterprise-integration.md).
+To import public and private Projects via the API with a Snyk Service Account, use the [GitHub Enterprise integration](github-enterprise-integration.md).
 {% endhint %}
 
 ## Setting up a GitHub Integration
