@@ -532,6 +532,7 @@
       * [Step 1: Obtaining the required Tokens for the setup procedure](features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/README.md)
         * [Obtaining your Snyk API Token](features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-snyk-api-token.md)
         * [Obtaining your Broker token](features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-broker-token.md)
+        * [Obtaining your SCM token](features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-scm-token.md)
   * [Snyk Broker - Container Registry Agent](features/snyk-broker/snyk-broker-container-registry-agent/README.md)
     * [Setting up the Container Registry Agent for a brokered ECR integration](features/snyk-broker/snyk-broker-container-registry-agent/setting-up-the-container-registry-agent-for-a-brokered-ecr-integration.md)
   * [Snyk Broker - Infrastructure as Code detection](features/snyk-broker/snyk-broker-infrastructure-as-code-detection/README.md)
