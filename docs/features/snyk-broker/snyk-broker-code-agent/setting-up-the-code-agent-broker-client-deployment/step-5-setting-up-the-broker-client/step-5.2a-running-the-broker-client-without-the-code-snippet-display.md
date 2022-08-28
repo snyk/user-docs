@@ -8,7 +8,7 @@ Once the Broker Client image is stored on your machine, you need to use the dock
 
 The following instructions describe how to set up the Broker Client in a way that will NOT display the code snippets of the Snyk Code results on the Web UI:
 
-<figure><img src="../../../../../../.gitbook/assets/Broker - Results - without code snippets (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Broker - Results - without code snippets (1).png" alt=""><figcaption></figcaption></figure>
 
 **Note**: To set up the Broker Client with the code snippets display, see page 37.
 
@@ -60,7 +60,7 @@ Once the Broker Client setup is completed successfully, the following message ap
 
 `{ ..., "msg":"successfully established a websocket connection to the broker server", ... }`
 
-<figure><img src="../../../../../../.gitbook/assets/Broker Client - Setup success message.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Broker Client - Setup success message.png" alt=""><figcaption></figcaption></figure>
 
 **To verify the setup and details of the Broker Client container:**
 
