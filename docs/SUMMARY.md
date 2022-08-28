@@ -538,6 +538,7 @@
       * [Step 4: Setting up the Code Agent](features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-4-setting-up-the-code-agent.md)
       * [Step 5: Setting up the Broker Client](features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-5-setting-up-the-broker-client/README.md)
         * [Step 5.1: Downloading or Updating the Snyk Broker Client – Docker image](features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-5-setting-up-the-broker-client/step-5.1-downloading-or-updating-the-snyk-broker-client-docker-image.md)
+        * [Step 5.2a – Running the Broker Client without the code snippet display](features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-5-setting-up-the-broker-client/step-5.2a-running-the-broker-client-without-the-code-snippet-display.md)
   * [Snyk Broker - Container Registry Agent](features/snyk-broker/snyk-broker-container-registry-agent/README.md)
     * [Setting up the Container Registry Agent for a brokered ECR integration](features/snyk-broker/snyk-broker-container-registry-agent/setting-up-the-container-registry-agent-for-a-brokered-ecr-integration.md)
   * [Snyk Broker - Infrastructure as Code detection](features/snyk-broker/snyk-broker-infrastructure-as-code-detection/README.md)
