@@ -13,10 +13,10 @@ When running the Broker Client container, you have two options:
 
 * Running the Broker Client WITHOUT a display of the code snippets in the Snyk Code results on the Web UI. See page 33.
 
-<figure><img src="../../../../.gitbook/assets/Broker - Results - without code snippets.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Broker - Results - without code snippets.png" alt=""><figcaption></figcaption></figure>
 
 * Running the Broker Client WITH a display of the code snippets in the Snyk Code results on the Web UI. See page 38.
 
-<figure><img src="../../../../.gitbook/assets/Broker - Results - with code snippets.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Broker - Results - with code snippets.png" alt=""><figcaption></figcaption></figure>
 
 &#x20;****&#x20;
