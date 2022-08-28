@@ -33,7 +33,7 @@ Understand what are the required components for your deployment:
   * See [Snyk broker Infrastructure as Code detection](../snyk-broker-infrastructure-as-code-detection/).
 * Are you planning to detect Snyk Code vulnerabilities?
   * You will need to deploy an additional agent with the broker, the Snyk Broker Code Agent and add an `accept.json` if you want to view code snippets.
-  * See [Snyk Broker Code Agent](../snyk-broker-code-agent.md).
+  * See [Snyk Broker Code Agent](../snyk-broker-code-agent/).
 * Are you planning to connect to a Container Registry?
   * You will need to deploy an additional agent with the broker, the Snyk Broker Container Registry Agent.
   * See [Snyk Broker Container Registry agent](../snyk-broker-container-registry-agent/).

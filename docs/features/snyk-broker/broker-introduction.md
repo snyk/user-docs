@@ -43,7 +43,7 @@ To use **Snyk Open Source** with the Snyk Broker, all you need is the Broker Ser
 
 To use other Snyk products with the Snyk Broker, you need to add an additional component or configurations, and to add parameters to the Broker Client setup:
 
-* **Snyk Code** – add the [**Code Agent** ](snyk-broker-code-agent.md)component to enable the Snyk Code analysis of repositories in SCMs that are integrated through the Snyk Broker.
+* **Snyk Code** – add the [**Code Agent** ](snyk-broker-code-agent/)component to enable the Snyk Code analysis of repositories in SCMs that are integrated through the Snyk Broker.
 * **Snyk Container** – add the [**Container Registry Agent**](snyk-broker-container-registry-agent/) to enable the connection to self-hosted/private container registries and the analysis of container images.
 * **Snyk Infrastructure as Code** – configure the [**`accept.json`** file with additional parameters](snyk-broker-infrastructure-as-code-detection/) **** to detect and analyze Terraform, CloudFormation, and Kubernetes configuration files through the Snyk Broker.
 
