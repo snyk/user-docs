@@ -20,7 +20,7 @@ The base set-up for SCMs will enable usage of Snyk Open Source and scan of Docke
 
 * [Infrastructure as Code detection](../snyk-broker-infrastructure-as-code-detection/)
 * [Container registry integration](../snyk-broker-container-registry-agent/)
-* [Snyk Code analysis](../snyk-broker-code-agent.md)
+* [Snyk Code analysis](../snyk-broker-code-agent/)
 
 ### Snyk Broker Helm Chart
 

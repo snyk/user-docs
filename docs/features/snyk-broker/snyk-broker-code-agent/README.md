@@ -39,6 +39,6 @@ The **Broker Client** and **Code Agent** components are deployed in your infrast
 5\.  The [Snyk Code AI Engine](https://docs.snyk.io/products/snyk-code/introducing-snyk-code/key-features/ai-engine) analyzes the code files in search of vulnerability issues. The analysis results are sent back to the Snyk Web UI.\
 **Note:** The cloned files are cached for up to 24 hours before they are deleted. For more info, see [How Snyk handles your data](https://docs.snyk.io/more-info/how-snyk-handles-your-data).
 
-<figure><img src="../../.gitbook/assets/Code Agent - diagram - new - 4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Code Agent - diagram - new - 4.png" alt=""><figcaption></figcaption></figure>
 
 &#x20;&#x20;
