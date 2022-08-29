@@ -1,10 +1,12 @@
-# Step 2: Removing an Existing Broker Client
+# Step 2: Removing an existing Broker Client
 
-**Note**: This section is applicable only if you already have a running Broker Client. If you do not have a Broker Client yet, move to the Step 3 - _Creating a network for the Broker Client and Code Agent communication_, page 26.
+{% hint style="info" %}
+This section is applicable only if you already have a running Broker Client. If you do not have a Broker Client yet, move to [Step 3 - Creating a network for the Broker Client and Code Agent communication](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-3-creating-a-network-for-the-broker-client-and-code-agent-communication).
+{% endhint %}
 
 If you have a running Broker Client for the same Organization and the same Integration, you need to stop and remove it before you set up a new Broker Client for the Code Agent. Since the Broker Client needs to communicate with the Code Agent, and this communication is configured in the setup commands of the Broker Client container, you cannot use an existing Broker Client container for the Code Agent operation. &#x20;
 
-**Note**: The new Broker Client that you will set up for the Code Agent, can also serve the Broker deployment for Snyk Open Source and Snyk IaC for the same Snyk Organization and the same SCM. For Snyk Container, you need to set up an additional Broker Client.&#x20;
+**Note**: The new Broker Client that you will set up for the Code Agent, can also serve the Broker deployment for Snyk Open Source and Snyk IaC for the same Snyk Organization and the same SCM. For [Snyk Container](https://docs.snyk.io/features/snyk-broker/snyk-broker-container-registry-agent), you need to set up an additional Broker Client.&#x20;
 
 To find out if you have a running Broker Client, use the Docker Process Status command, which provides a list of all the containers that are up and running on a machine. If you have a running Broker Client, this command will also provide you with the details you need in order to remove it. If you find a running Broker Client, you only need to remove it if it is configured for the same Snyk Organization and the same SCM as the Code Agent.
 
