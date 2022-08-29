@@ -1,15 +1,13 @@
 # Obtaining your Broker token
 
-A Broker token is required for the Broker Client component setup, and it is used in the `-e BROKER_TOKEN` parameter (see page 35). The Broker token is associated with a specific Organization by default and with a specific integrated SCM, and it enables for them the Snyk Broker deployment method. For each integrated SCM, a different Broker token is required.
+A Broker token is required for [the Broker Client component setup](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-5-setting-up-the-broker-client/step-5.2a-running-the-broker-client-without-the-code-snippet-display), and it is used in the `-e BROKER_TOKEN` parameter. The Broker token is associated with a specific Organization by default and with a specific integrated SCM, and it enables for them the Snyk Broker deployment method. For each integrated SCM, a different Broker token is required.
 
 * **Using an existing Broker token for the Code Agent setup** - if you already have a Broker token, which you used for running the Broker Client for another Snyk product in the same Organization and the same SCM, you can also use it for the setup of the Broker Client for the Code Agent.
-* **Using a Broker token for redundancy** - if you set up two Broker Clients for the same Organization and the same SCM for redundancy purposes, you must use the same Broker token for both Broker Clients.
 * **Using the same Broker token for multiple Snyk Organizations** -\
   Although by default a Broker token is associated with only one Snyk Organization, by performing the following procedures you can use the same Broker token for multiple Organizations. To perform these procedures, you need Organizations Admin permissions: &#x20;
   * **A new Organization** - if you create a new Organization based on an existing Organization that has a Broker token, the existing Broker token will be cloned during the new Organization creation, and you can use it for the new Organization as well.
   * **An existing Organization** – if you want to use an existing Broker token for other existing Organizations, you can run the [Clone an integration](https://snyk.docs.apiary.io/#reference/integrations/integration-cloning/clone-an-integration-\(with-settings-and-credentials\)) API. This API clones existing Integration Settings, including the Broker token of the Integration.
-
-You can obtain the Snyk Broker token in the following ways:
+* **Using a Broker token for redundancy** - if you set up two Broker Clients for the same Organization and the same SCM for redundancy purposes, you must use the same Broker token for both Broker Clients.You can obtain the Snyk Broker token in the following ways:
 
 **Note**: It is recommended to ask your Snyk IC/TSM to generate for you a Broker token, and then to obtain it from the Web UI.
 
