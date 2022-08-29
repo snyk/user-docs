@@ -45,5 +45,5 @@ The minimal requirements for running the **Broker Client** component are:
 * **Broker token** – a unique Broker token is required to enable the Snyk Broker deployment for a specific Organization and a specific integrated SCM. \
   **Note**: For more information, see [Obtaining your Broker token](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-broker-token).
 * **SCM token** – your integrated SCM token is required to enable access with specific permissions to the SCM. \
-  Note: For more information, see [Obtaining your SCM token](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-scm-token).&#x20;
+  **Note**: For more information, see [Obtaining your SCM token](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-scm-token).&#x20;
 

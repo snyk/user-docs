@@ -1,6 +1,6 @@
-# Obtaining your Snyk API token
+# Obtaining your Snyk API Token
 
-Your Snyk API token is required for [the Code Agent component setup](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-4-setting-up-the-code-agent/step-4.2-running-the-code-agent-container), and it is used in the `-e SNYK_TOKEN` parameter. The Snyk API token is associated with your Snyk Account and not with a specific Organization. This token is used to authenticate the Code Agent component with your Snyk Account.
+Your Snyk API token is required for the Code Agent component setup, and it is used in the `-e SNYK_TOKEN` parameter (see page 29). The Snyk API token is associated with your Snyk Account and not with a specific Organization. This token is used to authenticate the Code Agent component with your Snyk Account.
 
 **Note**: For more information on the Snyk API token, which is also used by the CLI, see [Authenticate the CLI with your account](https://docs.snyk.io/snyk-cli/authenticate-the-cli-with-your-account).    &#x20;
 
