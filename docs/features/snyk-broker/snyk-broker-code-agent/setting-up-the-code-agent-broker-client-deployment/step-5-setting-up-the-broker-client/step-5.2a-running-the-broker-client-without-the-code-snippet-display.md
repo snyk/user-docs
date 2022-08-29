@@ -10,7 +10,7 @@ The following instructions describe how to set up the Broker Client in a way tha
 
 <figure><img src="../../../../../.gitbook/assets/Broker - Results - without code snippets (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Note**: To set up the Broker Client with the code snippets display, see page 37.
+**Note**: To display the code snippets, see [Running the Broker Client with the code snippets display](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-5-setting-up-the-broker-client/step-5.2b-running-the-broker-client-with-the-code-snippets-display).
 
 &#x20;__ **To run the Broker Client container:**
 
@@ -49,7 +49,7 @@ Where:
     **Note**: For [Bitbucket Server/Data Center](https://docs.snyk.io/features/snyk-broker/snyk-broker-set-up-examples/data-center) you also need to add the following parameter:  \
     `-e BITBUCKET_API=<your.bitbucket-server.domain.com/rest/api/1.0_(without http/s)> \`
   * **GitLab**: `-e GITLAB`
-* \[Optional] `-e BROKER_CLIENT_URL=` - the URL to the host machine of the Broker Client. The URL can include an IP address or a DNS with the port no. of the host machine. For example, http://localhost:8000.  \
+* \[Optional] `-e BROKER_CLIENT_URL=` - the URL to the host machine of the Broker Client. The URL can include an IP address or a DNS with the port no. of the host machine. For example, `http://localhost:8000`.  \
   Add this parameter only if you are using the same Broker Client for other Snyk products, and you want to enable for them the Automatic PR Checks feature. Since currently the Automatic PR Checks feature is not supported by the Code Agent, you do not have to use this parameter for the Code Agent.
 * `-e PORT` – the port no. of the Broker Client container, where it accepts external connections. The default is `8000`. This port no. must be the same as the `<Broker_Client_container_port_ no.>` in the `-p` parameter above.
 * `-e GIT_CLIENT_URL=` a URL to the port of the running Code Agent container. The URL should include the name of the Code Agent container with its port number. For example, `http://code-agent:3000`.

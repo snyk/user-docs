@@ -12,7 +12,7 @@ For the Broker Client component, add to the docker run command the following env
 -e NO_PROXY=<code_agent_container_name>
 ```
 
-In addition, you will need to add these environment variables to the Code Agent components, as described on page 32.
+In addition, you will need to add these environment variables to the Code Agent components. See [Setting up the Code Agent to work with a Proxy Server](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-4-setting-up-the-code-agent/setting-up-the-code-agent-to-work-with-a-proxy-server).
 
 **Note**: For more information on using Docker containers with a proxy, see [Configure Docker to use a proxy server](https://docs.docker.com/network/proxy/).
 

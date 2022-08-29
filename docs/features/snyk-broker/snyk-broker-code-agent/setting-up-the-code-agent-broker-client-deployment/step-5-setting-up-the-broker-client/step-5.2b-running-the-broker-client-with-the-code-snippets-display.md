@@ -12,7 +12,7 @@ The following instructions describe how to set up the Broker Client in a way tha
 
 When setting up the Broker Client for displaying code snippets, you need to use the same parameters as for the basic Broker Client setup, while adding the following file and parameters:&#x20;
 
-1\.  A pre-defined `accept.json` file needs to be downloaded to your machine. This accept.json file is customized for each SCM, and it contains the required rules for displaying the code snippets. &#x20;
+1\.  A pre-defined `accept.json` file needs to be downloaded to your machine. This `accept.json` file is customized for each SCM, and it contains the required rules for displaying the code snippets. &#x20;
 
 2\.  Two additional parameters should be added to the setup commands, in order to mount the `accept.json` file to the Broker Client:
 

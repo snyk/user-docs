@@ -20,7 +20,7 @@ Where:
 
 * `-p 8000:8000` - port number `8000` on the host machine is mapped to port number `8000` on the Broker Client container, for the communication between the Broker Client container and the Broker Server and Code Agent.
 * `-e BROKER_TOKEN` - the Broker token that is associated with the specific Organization and GitHub.
-* \-e GITHUB\_TOKEN – the GitHub token for accessing the GitHub repositories.
+* `-e GITHUB_TOKEN` – the GitHub token for accessing the GitHub repositories.
 * `-e BROKER_CLIENT_URL` - the URL to the host machine of the Broker Client is `http://localhost:8000`.
 * `-e PORT` - the local port, where the Broker Client container accepts connections, is `8000`.
 * `-e GIT_CLIENT_URL=http://code-agent:3000` - the URL to the port of the running Code Agent container. The URL includes the name of the Code Agent container – `code-agent` - with its port no. - `3000`.
