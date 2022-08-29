@@ -42,6 +42,8 @@ When you ignore an issue in the Snyk Web UI, the issue shows who ignored it and 
 
 ![Ignore set in the Snyk Web UI](<../../../.gitbook/assets/image (14).png>)
 
+For more information see the training: [Ignoring issues](https://training.snyk.io/courses/ignore-strategies).
+
 ### Ignoring issues in the CLI
 
 You can suppress issues through the CLI by using the `snyk ignore` command, for example:
@@ -73,11 +75,11 @@ Refer to the following example:
 
 The following shows `snyk test` results before ignoring in the Web UI:
 
-![Snyk test results before ignoring in the Web UI](<../../../.gitbook/assets/image (18).png>)
+![Snyk test results before ignoring in the Web UI](<../../../.gitbook/assets/image (18) (1).png>)
 
 The following shows `snyk test` results after ignoring in the Web UI:
 
-![Snyk test results after ignoring in the Web UI](<../../../.gitbook/assets/image (20).png>)
+![Snyk test results after ignoring in the Web UI](<../../../.gitbook/assets/image (20) (1).png>)
 
 **Note**: The preceding example shows what happens if you ignore the project imported by `snyk monitor` from the CLI or CI/CD.
 

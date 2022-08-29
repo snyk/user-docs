@@ -9,7 +9,7 @@ Severity levels are key factors in [vulnerability assessment](https://snyk.io/le
 * ****![](<../../../.gitbook/assets/image (86).png>) **Low:** the application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application.
 * ****![](<../../../.gitbook/assets/image (84) (1).png>) **Medium:** may allow attackers under some conditions to access sensitive data on your application.
 * ****<img src="../../../.gitbook/assets/image (85) (1).png" alt="" data-size="original"> **High:** may allow attackers to access sensitive data on your application.
-* ****<img src="../../../.gitbook/assets/image (83) (1).png" alt="" data-size="line">**Critical:** may allow attackers to access sensitive data and run code on your application.
+* ****<img src="../../../.gitbook/assets/image (83) (1) (2).png" alt="" data-size="line">**Critical:** may allow attackers to access sensitive data and run code on your application.
 
 {% hint style="info" %}
 Severity levels also apply to license issues. See [Licenses overview](https://docs.snyk.io/snyk-open-source/licenses).
