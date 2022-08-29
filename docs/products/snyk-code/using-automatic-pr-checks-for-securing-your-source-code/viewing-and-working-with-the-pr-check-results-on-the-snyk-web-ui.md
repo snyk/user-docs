@@ -16,7 +16,7 @@ After the Automatic PR Check discovers security issues in a PR, you can view the
 
 * On the **SAST check** page, locate the required issue, and click the **Full details** button on the bottom right corner:
 
-![](<../../../.gitbook/assets/image (314).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Full details button.png>)
 
 The full details of the discovered issue are displayed:
 
@@ -32,7 +32,7 @@ The **Mark as successful** action does NOT ignore the issue, but only allows it 
 
 1\. On the **SAST check** page header, click the **Mark as successful in SCM** button on the right:
 
-![](<../../../.gitbook/assets/image (374).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful.png>)
 
 2\. On the confirmation message that appears, click **OK**:
 
@@ -40,7 +40,7 @@ The **Mark as successful** action does NOT ignore the issue, but only allows it 
 
 A message appears on the **SAST check** page header, informing you that the failed PRs are now marked as successful:
 
-![](<../../../.gitbook/assets/image (318).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful - Confirmation on the UI.png>)
 
 On your SCM, the previous PR Check “**failed**” message is now changed to “**passed**”. In addition, there is an indication that the PR check was **Skipped**, and that a specific Snyk user forced this result change:
 
@@ -52,12 +52,12 @@ You can return to your SCM directly from the Snyk Web UI.
 
 **To return to your SCM from the Web UI:**
 
-1\. On the **SAST check** page -> Project Summary Information area, click the **PR Check Group** option:
+1\. On the **SAST check** page > Project Summary Information area, click the **PR Check Group** option:
 
-![](<../../../.gitbook/assets/image (253).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - PR Check Group option (1).png>)
 
 2\. On the **Security check** page, click the repository link in the **REPOSITORY** field:
 
-![](<../../../.gitbook/assets/image (257).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Second page.png>)
 
 You are moved back to your SCM.

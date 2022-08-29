@@ -23,14 +23,14 @@ If you want to pass PRs that were automatically failed due to vulnerabilities th
 
 ![](<../../../.gitbook/assets/Snyk Code - PR Checks - Mark as successful - On GitHub (1).png>)
 
-The Automatic PR Checks feature is applied only to repositories that were imported to Snyk from the integrated SCM. However, after the initial import, any new file or folder that will be added in the SCM to the imported repositories, will be included in the automatic PR Checks. The Automatic PR Checks feature can be enabled for your integrated SCM on the level of an entire organization or on the level of a specific Project.
+The Automatic PR Checks feature is applied only to repositories that were imported to Snyk from the integrated SCM. However, after the initial import, any new file or folder that will be added in the SCM to the imported repositories, will be included in the automatic PR Checks. The Automatic PR Checks feature can be enabled for your integrated SCM on the level of an entire Organization or on the level of a specific Project.
 
-**Note**: Every PR check is considered as a “test” in the test count of the related organization. New commits to on open PR branch are also checked automatically, and therefore these commit checks are also counted as “tests”.
+**Note**: Every PR check is considered as a “test” in the test count of the related Organization. New commits to on open PR branch are also checked automatically, and therefore these commit checks are also counted as “tests”.
 
 The workflow of using the Automatic PR Checks feature is as follows:
 
 1. [Integrating your required SCM with Snyk.](../getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-2-integrating-your-source-control-system-with-snyk-code.md)
 2. [Importing from the integrated SCM to Snyk the repositories whose PRs you want Snyk Code to check.](../getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/)
-3. [Enabling the Automatic PR Checks feature for Snyk Code in your Snyk-SCM integration on the level of an organization or a specific Project.](enabling-the-automatic-pr-checks.md)
+3. [Enabling the Automatic PR Checks feature for Snyk Code in your Snyk-SCM integration on the level of an Organization or a specific Project.](enabling-the-automatic-pr-checks.md)
 4. [Viewing the results of the PR check in your SCM after the creation of a new PR.](viewing-the-pr-checks-in-your-scm.md)
 5. [Viewing additional details and fix examples for the issues that were discovered in the PR on the Snyk Web UI.](viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md)

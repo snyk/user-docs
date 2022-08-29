@@ -1,6 +1,6 @@
 # Viewing the PR Checks in your SCM
 
-After you enabled the Automatic PR Checks feature on the organization or Project level, you can view the status of your new PRs in your integrated SCM. In the SCM, the PR Check results for Snyk Code are grouped together in a single security check, called “**code/snyk**”.
+After you enabled the Automatic PR Checks feature on the Organization or Project level, you can view the status of your new PRs in your integrated SCM. In the SCM, the PR Check results for Snyk Code are grouped together in a single security check, called “**code/snyk**”.
 
 **Note**: PR Checks for Snyk Open Source are grouped and displayed in another row, called **security/snyk**.
 
@@ -25,7 +25,7 @@ The following statuses can appear on your Snyk Code checks in the integrated SCM
 
 The Snyk Web UI opens, displaying the details of the issues that were found in the PR:
 
-![](<../../../.gitbook/assets/image (242).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Checks Failed - Details in the Web UI (1).png>)
 
 You can now [view and work with the discovered PR Check issues on the Web UI](viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md).
 
