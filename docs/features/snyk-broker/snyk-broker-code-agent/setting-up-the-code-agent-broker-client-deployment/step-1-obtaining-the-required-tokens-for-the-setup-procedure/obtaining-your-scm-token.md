@@ -1,6 +1,6 @@
 # Obtaining your SCM token
 
-Your integrated SCM token is required for the setup of the Broker Client, and it is used in the `-e <SCM>_TOKEN` (see page 31). For example, `-e GITHUB_TOKEN=xxx…`. This token is required for accessing the SCM with certain permissions, which are needed for the operation of the Broker and Snyk Code.
+Your integrated SCM token is required for [the setup of the Broker Client component](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-5-setting-up-the-broker-client/step-5.2a-running-the-broker-client-without-the-code-snippet-display), and it is used in the `-e <SCM>_TOKEN`. For example, `-e GITHUB_TOKEN=xxx…`. This token is required for accessing the SCM with certain permissions, which are needed for the operation of the Broker and Snyk Code.
 
 **To obtain your SCM token:**
 
@@ -10,7 +10,7 @@ The following SCM tokens are required for the different SCMs:
 
 * **GitHub and GitHub Enterprise**:
 
-`GITHUB_TOKEN=` - a GitHub personal access token. Scopes: **`repo, read:org`** and **`admin:repo_hook`**`.`
+`GITHUB_TOKEN=` - a GitHub personal access token. Scopes: **`repo, read:org`** and **`admin:repo_hook`**.
 
 See GitHub documentation - _Creating a personal access token_:\
 [https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
