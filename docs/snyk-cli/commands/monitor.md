@@ -316,7 +316,7 @@ Specify the maximum level of archive extraction.
 
 Usage: `--max-depth=1`&#x20;
 
-Use 0 to disable archive extraction completely.
+Use 0 (zero, the default) to disable archive extraction completely.
 
 ### `--print-dep-paths`
 

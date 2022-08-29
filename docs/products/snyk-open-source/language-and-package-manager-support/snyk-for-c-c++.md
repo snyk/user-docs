@@ -302,7 +302,7 @@ Alternatively, you can run just `snyk test --unmanaged <directory>`
 
 `--max-depth=1`
 
-Specify the maximum level of archive extraction. Use `0` to disable archive extraction completely.
+Specify the maximum level of archive extraction. Use `0` (zero, the default) to disable archive extraction completely.
 
 #### project-name
 
