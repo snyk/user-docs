@@ -317,6 +317,7 @@
     * [Exploring the vulnerability issues discovered by Snyk Code](products/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-vulnerability-issues-discovered-by-snyk-code/README.md)
       * [Exploring the Data flow and Fix analysis pages of an issue](products/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-vulnerability-issues-discovered-by-snyk-code/exploring-the-data-flow-and-fix-analysis-pages-of-an-issue/README.md)
         * [Exploring the Data flow page](products/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-vulnerability-issues-discovered-by-snyk-code/exploring-the-data-flow-and-fix-analysis-pages-of-an-issue/exploring-the-data-flow-page.md)
+        * [Exploring the Fix analysis page](products/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-vulnerability-issues-discovered-by-snyk-code/exploring-the-data-flow-and-fix-analysis-pages-of-an-issue/exploring-the-fix-analysis-page.md)
     * [Viewing the Snyk Code results via the Web UI](products/snyk-code/exploring-and-working-with-the-snyk-code-results/using-snyk-code-web.md)
     * [Understanding the Priority Score of the Snyk Code issues](products/snyk-code/exploring-and-working-with-the-snyk-code-results/understanding-the-priority-score-of-the-snyk-code-issues.md)
     * [Exploring the History of the Snyk Code Results](products/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-history-of-the-snyk-code-results.md)
