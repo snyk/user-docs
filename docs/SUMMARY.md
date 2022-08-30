@@ -82,7 +82,6 @@
     * [Determine why API Import targets has failed](snyk-api-info/using-snyk-api/determine-why-api-import-targets-has-failed.md)
     * [Snyk API token permissions users can control](snyk-api-info/using-snyk-api/api-token-permissions-users-can-control.md)
     * [Get a list of fixed issues using Snyk API](snyk-api-info/using-snyk-api/get-a-list-of-fixed-issues-using-snyk-api.md)
-    * [How to use Snyk REST API hello world example](snyk-api-info/using-snyk-api/how-to-use-snyk-rest-api-hello-world-example.md)
     * [Issues information for Snyk products in Snyk APIs](snyk-api-info/using-snyk-api/issues-information-for-snyk-products-in-snyk-apis.md)
     * [Snyk API v1 Project issue paths endpoints](snyk-api-info/using-snyk-api/snyk-api-v1-path-endpoint-information.md)
     * [Org identification and projects in Snyk APIs](snyk-api-info/using-snyk-api/org-identification-and-projects-in-snyk-apis.md)
