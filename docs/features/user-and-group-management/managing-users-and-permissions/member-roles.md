@@ -36,6 +36,8 @@ The bottom section lists all the permissions available at the organization level
 
 ![Organization level permissions](<../../../.gitbook/assets/Screenshot 2022-05-17 at 05.56.02.png>)
 
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-08-30 at 17.03.22.png" alt=""><figcaption><p>Organization level permissions</p></figcaption></figure>
+
 Choose the required permissions and click **Update Role Permissions**.
 
 ![Update Role Permissions](<../../../.gitbook/assets/Screenshot 2022-05-17 at 06.01.15.png>)
