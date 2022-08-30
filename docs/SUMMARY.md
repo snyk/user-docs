@@ -344,7 +344,7 @@
       * [Running the snyk-to-html command](products/snyk-code/cli-for-snyk-code/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/running-the-snyk-to-html-command.md)
       * [Viewing the HTML results](products/snyk-code/cli-for-snyk-code/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/viewing-the-html-results.md)
   * [Using Snyk Code via the IDE](products/snyk-code/using-snyk-code-via-ide.md)
-  * [Deployment Options](products/snyk-code/deployment-options/README.md)
+  * [Deployment options for Snyk Code](products/snyk-code/deployment-options/README.md)
     * [Snyk Code Local Engine](products/snyk-code/deployment-options/snyk-code-local-engine/README.md)
       * [Introduction](products/snyk-code/deployment-options/snyk-code-local-engine/introduction.md)
       * [Configure and deploy the Local Engine](products/snyk-code/deployment-options/snyk-code-local-engine/configure-and-deploy-local-engine.md)

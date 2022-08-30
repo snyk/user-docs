@@ -1,4 +1,4 @@
-# Snyk Container - Supported operating system distributions
+# Supported operating system distributions
 
 Snyk Container supports the following operating system distributions.
 
@@ -30,7 +30,6 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 
 ### Amazon Linux
 
-* Amazon Linux 2022
 * Amazon Linux 2
 * Amazon AMI 2018.03
 
