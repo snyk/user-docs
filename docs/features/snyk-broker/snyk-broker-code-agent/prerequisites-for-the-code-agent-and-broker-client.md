@@ -41,7 +41,7 @@ The minimal requirements for running the **Broker Client** component are:
 * **RAM** - 256MB
 * **Network access** - an outbound TLS (443) communication to the Broker Server at [https://broker.snyk.io](https://broker.snyk.io). This outbound communication should also be allowed by any firewalls installed on your network.\
   **Note:** If you are using the same Broker Client for other Snyk products, and you want to enable there the Automatic PR Checks feature, you also need to configure the following:\
-  Inbound communication to the Broker Client host machine at the `BROKER_CLIENT_URL`, on the port you have configured for the host machine (by default, 8000). See page 35.
+  Inbound communication to the Broker Client host machine at the `BROKER_CLIENT_URL`, on the port you have configured for the host machine (by default, 8000). See [Running the Broker Client](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-5-setting-up-the-broker-client/step-5.2a-running-the-broker-client-without-the-code-snippet-display).
 * **Broker token** – a unique Broker token is required to enable the Snyk Broker deployment for a specific Organization and a specific integrated SCM. \
   **Note**: For more information, see [Obtaining your Broker token](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-broker-token).
 * **SCM token** – your integrated SCM token is required to enable access with specific permissions to the SCM. \
