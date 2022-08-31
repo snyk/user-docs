@@ -1,16 +1,16 @@
 # Upgrading dependencies with automatic PRs
 
-After you imported your chosen Git repositories to Snyk, Snyk continuously monitors these repositories by regularly scanning them for vulnerability, license, and dependency health issues. In addition to providing you with fix advices, Snyk can also automatically create pull requests (PRs) on your behalf, in order to upgrade your dependencies based on the scan results.
+After importing the chosen Git repositories to Snyk, Snyk continuously monitors these repositories by scanning them for vulnerability, license, and dependency health issues. In addition to providing fix advice, Snyk also creates pull requests (PRs) on your behalf (configured by you).
 
 ## Supported languages and SCMs
 
-Snyk currently supports the **Automatic dependency upgrade pull requests** feature for npm, Yarn, and Maven-Central repositories via the following SCMs: GitHub, GitHub Enterprise Server, and Bitbucket Cloud.
+Snyk currently supports the **Automatic dependency upgrade pull requests** feature for npm, Yarn, and Maven-Central repositories via the following SCMs: GitHub, GitHub Enterprise, and Bitbucket Cloud.
 
-You can also use this feature with the Snyk Broker. For using this feature, the Snyk Broker must be upgrades to v. 1.4.55.0 or later. For more information, see [Upgrade your Snyk Broker client](../../../features/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md#upgrade-your-snyk-broker-client).
+You can also use this feature with the Snyk Broker. To use this feature, Snyk Broker must be upgraded to a minimum of v. 1.4.55.0 or later. For more information, see [Upgrade your Snyk Broker client](../../../features/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md#upgrade-your-snyk-broker-client).
 
 ![](<../../../.gitbook/assets/Upgrade Broker.png>)
 
-## How do the Automatic dependency upgrade PRs work
+## Automatic dependency (upgrade) PRs
 
 1. The **Automatic dependency upgrade pull requests** option is enabled (in [the Integration Settings on the organization level](upgrading-dependencies-with-automatic-prs.md#enabling-the-automatic-dependency-upgrade-prs-option-for-an-entire-organization) or [the Project Settings](upgrading-dependencies-with-automatic-prs.md#enabling-the-automatic-dependency-upgrade-prs-option-for-a-specific-project)).
 2. When you import your repos to Snyk, Snyk scans the repos and provides you with the scan results. Snyk then continues to monitor your Open Source Projects, scanning them on a regular basis.
@@ -44,7 +44,7 @@ By default, the Project Settings inherit the organization Settings. However, whe
 
 3\. On the **Settings** page, select **Integrations** on the left menu. Then, locate your configured and required SCM, and click the **Edit settings** option at the end of its row:
 
-**Note**: You can enable this feature only for the following SCMs: GitHub, GitHub Enterprise Server, and Bitbucket Cloud.
+**Note**: You can enable this feature only for the following SCMs: GitHub, GitHub Enterprise, and Bitbucket Cloud.
 
 ![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Organization - Integrations page.png>)
 
