@@ -28,10 +28,12 @@ At Snyk, we use [CVSS framework version 3.1](https://www.first.org/cvss/v3-1/) t
 | High               | 7.0 - 8.9      |
 | Critical           | 9.0 - 10.10    |
 
+The severity level and score are determined based on the CVSS Base Score calculations using the [Base Metrics](https://www.first.org/cvss/specification-document#Temporal-Metrics). The Temporal Score, which is based on the [Temporal Metrics](https://www.first.org/cvss/specification-document#Temporal-Metrics) is affecting the Priority Score.
+
 See [Scoring security vulnerabilities 101: Introducing CVSS for CVEs](https://snyk.io/blog/scoring-security-vulnerabilities-101-introducing-cvss-for-cve/).
 
 {% hint style="info" %}
-Severity levels may not always align to CVSS scores. For example, Snyk Container severity scores for Linux vulnerabilities may vary depending on NVD severity rankings; see [Understanding Linux vulnerability severity](../../../products/snyk-container/getting-started-snyk-container/understanding-linux-vulnerability-severity.md) for more details.
+Severity levels may not always align with CVSS scores. For example, Snyk Container severity scores for Linux vulnerabilities may vary depending on NVD severity rankings; see [Understanding Linux vulnerability severity](../../../products/snyk-container/getting-started-snyk-container/understanding-linux-vulnerability-severity.md) for more details.
 {% endhint %}
 
 ### Understanding Snyk's Vulnerability Analysis
