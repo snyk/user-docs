@@ -8,7 +8,7 @@ This way, you can prioritize and attend to the most important and risky vulnerab
 
 The filter appears as follows:
 
-![](<../../../.gitbook/assets/image (53).png>)
+![](<../../../.gitbook/assets/image (53) (1).png>)
 
 These values are available:
 
@@ -33,7 +33,7 @@ The security analysts at Snyk hand-curated information on new exploits and an au
 
 Examples of structured data are the [Known Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) by CISA (Cybersecurity and Infrastructure Security Agency) [Exploit DB](https://www.exploit-db.com/), and others. Examples of unstructured data are blogs, forums, and social media sites like Twitter.
 
-![Exmpale of Exploit Maturity for CVE-2022-22965](<../../../.gitbook/assets/image (105) (1) (1) (1) (1) (2) (1).png>)
+![Exmpale of Exploit Maturity for CVE-2022-22965](<../../../.gitbook/assets/image (105) (1) (1) (1).png>)
 
 **Steps:**
 

@@ -3,14 +3,14 @@
 In Eclipse plugin version 2.0.0 and later, Snyk is introducing a deeper integration with the native flows of Eclipse, inline highlights, problems integrations, and information about the issue on hover. The following shows all of these for a security vulnerability found in a third party dependency:
 
 1. The vulnerable package is highlighted (the red squiggly line) indicating there is a high severity security vulnerability in this package. You have all the information on hover; you can scroll, read, or click the links for even more information. Advice on what action to take and how is presented right where the vulnerability is.
-2. You see the integration with the **Problems** tab, which is useful if you use the **Problems** tab to show only issues in the current file. Snyk also indicates the line where the issue is.
+2. You see the integration with the **Problems** view, which is useful if you use the **Problems** view to filter and group issues. Snyk also indicates the line where the issue is, and clicking the issue in the problem view navigates to it.
 3. You can see the gutter icons on the left, as well as the file map highlights (with colors matching the priorities) on the right.
 
 {% hint style="info" %}
 Currently the hover information is limited to JavaEditor and GenericEditor, which is the default editor for plugins like Wild Web Developer.
 {% endhint %}
 
-![Third party dependency scanning results, problems tab](<../../.gitbook/assets/Screenshot 2022-05-13 at 13.01.53.png>)
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 Third party dependency scanning results are **also available in the already existing Snyk Results panel**:
 
@@ -95,7 +95,7 @@ Navigate to **Windows -> Show View -> Other...**
 
 Search for Snyk in the **Show View** dialog window.
 
-![Show View dialog window](<../../.gitbook/assets/Screenshot 2022-05-13 at 12.02.06 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png>)
+![Show View dialog window](<../../.gitbook/assets/Screenshot 2022-05-13 at 12.02.06 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 You should now be able to see the Snyk Results panel:
 
