@@ -17,9 +17,9 @@ Configuring Jira with broker is useful to ensure a secure connection with your o
     `docker run --restart=always`\
     `-p <port>:<port> \`\
     `-e BROKER_TOKEN=<broker token from Snyk UI> \`\
-    `-e JIRA_USERNAME= <jira username> \`\
-    `-e JIRA_PASSWORD= <jira password> \`\
-    `-e JIRA_HOSTNAME= <Jira URL (no https)> \`\
+    `-e JIRA_USERNAME=<jira username> \`\
+    `-e JIRA_PASSWORD=<jira password> \`\
+    `-e JIRA_HOSTNAME=<Jira URL (no https)> \`\
     `-e BROKER_CLIENT_URL=http://<broker IP/DNS>:<port> \`\
     `-e PORT=<port> \`\
     `snyk/broker:jira`
