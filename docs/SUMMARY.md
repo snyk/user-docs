@@ -248,6 +248,7 @@
     * [Getting started with Snyk and Heroku](integrations/platform-as-a-service-integrations/getting-started-with-snyk-and-heroku.md)
     * [Connect Snyk to Heroku](integrations/platform-as-a-service-integrations/connect-snyk-to-heroku.md)
     * [Pivotal integration overview](integrations/platform-as-a-service-integrations/pivotal-integration-overview.md)
+* [Error Catalog](error-catlog/README.md)
 
 ## SNYK PRODUCTS <a href="#products" id="products"></a>
 
