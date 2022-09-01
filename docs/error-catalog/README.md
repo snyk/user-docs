@@ -2,17 +2,15 @@
   The error codes in the table below describe the codes that you may encounter while working with the [Snyk API](../snyk-api-info/README.md) or [CLI](../snyk-cli/README.md). When errors are encountered using the API, they will also have an appropriate [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). If you encounter errors without an error code, use the HTTP status code to determine the appropriate action.
   ||Code|Title|Description|HTTP Status|Exit Code|Help|
   |---|---|---|---|---|---|---|
+|Snyk|||||||
+||[SNYK-0001](#snyk-0001)|Too many requests|The service has received too many requests and will be throttled|[429](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429)|N/A||    
+||[SNYK-9999](#snyk-9999)|Server error|An unexpected server error was encountered.|[500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)|N/A||    
 |Ecosystems|||||||
 ||[SNYK-OS-0001](#snyk-os-0001)|Unsupported Ecosystem|The language or package manager is not supported.|[422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)|N/A|https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support|    
 ||[SNYK-OS-0002](#snyk-os-0002)|Unable to parse manifest file|The provided manifest file could not be parsed|[422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)|N/A||    
 |IsolatedBuilds|||||||
-||[SNYK-OS-8001](#snyk-os-8001)|Invalid request|The provided request payload is not valid|[400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)|N/A||    
-||[SNYK-OS-8002](#snyk-os-8002)|Too many requests|The service has received too many requests and will be throttled|[429](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429)|N/A||    
-||[SNYK-OS-8003](#snyk-os-8003)|Unsupported ecosystem|The ecosystem that has been provided is not supported. Please review the documentation in the links provided.|[403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)|N/A|https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support|    
-||[SNYK-OS-8004](#snyk-os-8004)|Build environment not found|The build environment for the provided context could not be found. Please ensure you have created the build environment first.|[404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)|N/A||    
-||[SNYK-OS-8999](#snyk-os-8999)|Server error|An unexpected server error was encountered.|[500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)|N/A||    
-|Snapshots|||||||
-||[SNYK-OSSI-0001](#snyk-ossi-0001)|Unauthorized|This is an example project error|[401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)|N/A||    
+||[SNYK-OS-8001](#snyk-os-8001)|Invalid request|The provided request payload is not valid for the selected ecosystem. Please review the API documentation|[400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)|N/A|https://apidocs.snyk.io/|    
+||[SNYK-OS-8002](#snyk-os-8002)|Build environment not found|The build environment for the provided context could not be found. Please ensure you have created the build environment first.|[404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)|N/A||    
 |PurlVulnerabilityFetching|||||||
 ||[SNYK-OSSI-1040](#snyk-ossi-1040)|Your organisation is not authorised to perform this action|Your organisation is not authorised to perform this action|[403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)|N/A||    
 ||[SNYK-OSSI-1050](#snyk-ossi-1050)|Authorization request failure|Unexpected error when authenticating. Please try again, and if you continue to experience issues please contact support|[500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)|N/A||    
@@ -26,4 +24,4 @@
 ||[SNYK-OSSI-2032](#snyk-ossi-2032)|Vulnerability response invalid|An unexpected error occurred. Please try again, and if you continue to experience issues please contact support|[500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)|N/A||    
 ||[SNYK-OSSI-2033](#snyk-ossi-2033)|Vulnerability service error|An unexpected error occured with the vulnerability service. Please try again, and if you continue to experience issues please contact support|[500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)|N/A||    
 ||[SNYK-OSSI-2040](#snyk-ossi-2040)|Internal server error|An error was experienced by the service when processing the request.|[500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)|N/A||    
-Genererated at 2022-08-22T10:29:08.207Z
+Genererated at 2022-09-01T09:25:51.489Z
