@@ -506,7 +506,7 @@
     * [Ignore resources](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/ignore-resources.md)
     * [IAC sources usage](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/iac-sources-usage.md)
   * [Share CLI results with the Snyk Web UI](products/snyk-infrastructure-as-code/share-cli-results-with-the-snyk-web-ui.md)
-  * [Disable IaC Scans](products/snyk-infrastructure-as-code/disable-iac-scans.md)
+  * [Disable IaC Scans per organization](products/snyk-infrastructure-as-code/disable-iac-scans.md)
 * [Snyk Cloud](products/snyk-cloud/README.md)
   * [Snyk Cloud concepts](products/snyk-cloud/snyk-cloud-concepts.md)
   * [Getting started with Snyk Cloud: AWS](products/snyk-cloud/getting-started-with-snyk-cloud-aws/README.md)
