@@ -15,7 +15,7 @@ Next, click on a Snyk Project in that list to see details of the vulnerabilities
 
 For example, for a code analysis scanned by Snyk Code:
 
-![](<../../.gitbook/assets/image (223).png>)
+![](<../../.gitbook/assets/image (23) (2).png>)
 
 See [View project information](../../snyk-web-ui/introduction-to-snyk-projects/view-project-information.md) for more details.&#x20;
 
@@ -23,7 +23,7 @@ See [View project information](../../snyk-web-ui/introduction-to-snyk-projects/v
 
 Now, look at the vulnerability information for each Snyk Project, provided in Issue Cards:
 
-![](<../../.gitbook/assets/image (13) (1).png>)
+![](<../../.gitbook/assets/image (112).png>)
 
 Again, there's a lot of information for you to understand, so take the time to understand how all of this information relates to your vulnerability, to help you decide on what fix actions to take.
 
@@ -54,7 +54,7 @@ For this example, click on the Snyk vulnerability Identifier to see how Hibernat
 
 To research more about a vulnerability, click **Learn about this type of vulnerability** to access [Snyk Learn](https://learn.snyk.io/) security educational materials:
 
-![](<../../.gitbook/assets/image (12) (2).png>)
+![](<../../.gitbook/assets/image (356).png>)
 
 For example, see [Snyk Learn SQL injection](https://learn.snyk.io/lessons/sql-injection/javascript/) for more details about this type of vulnerability.
 
@@ -82,9 +82,9 @@ Snyk uses the package manager of your application to build the dependency tree a
 
 ![](<../../.gitbook/assets/image (321).png>)
 
-Click the file tree icon (![](<../../.gitbook/assets/image (377).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
+Click the file tree icon (![](<../../.gitbook/assets/image (201).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
 
-![](../../.gitbook/assets/image23.png)
+![](<../../.gitbook/assets/image23 (1).png>)
 
 For example, the above screenshot shows a vulnerability based on the transitive dependency **qs@2.2.4**, brought in from the direct dependency **body-parser@ 1.9.0**.
 

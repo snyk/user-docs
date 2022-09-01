@@ -186,9 +186,9 @@ To test a specific configuration:
 
 Android Gradle supports creating different versions of your app by configuring [build variants.](https://developer.android.com/studio/build/build-variants)
 
-Since Snyk defaults to merging all available configurations the variants will result in a clash of un-mergeable configurations.
+Because the Snyk default behavior is to merge all available configurations, the iterated variants cause a clash of configurations that can't be merged.
 
-In such cases, Snyk scan fails with an error from Gradle which may contain one of the following messages:
+In these situations, Snyk scan fails with an error from Gradle which may contain one of the following messages:
 
 * _Cannot choose between the following configurations of `project :mymodulewithvariants`_
 * _Cannot choose between the following variants of `project :mymodulewithvariants`_
