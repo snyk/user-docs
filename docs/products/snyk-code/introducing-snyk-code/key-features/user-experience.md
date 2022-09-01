@@ -34,13 +34,11 @@ After you click **ignore**, you are prompted to provide more details:
 
 ![](../../../../.gitbook/assets/snykcode-ignore-pic2.png)
 
-Select:
+* Select whether this is to be marked **not vulnerable**, **ignore temporarily** (to suppress the message for now), or **ignore permanently** (to not fix ever)
+* Add any notes to yourself or your colleagues in the comment box; Snyk recommends writing a quick explanation for your decision.
+* Set a timer for how long to ignore the issue (14, 30, 60, or 90 days, or **ignore forever**).
 
-* Whether this is to be marked **not vulnerable**, **ignore temporarily** (to suppress the message for now), or **ignore permanently** (won’t fix ever)
-* Add any notes to yourself or your colleagues in the comment box--we recommend writing a quick explanation for your decision.
-* Set a timer for how long to ignore the issue (14, 30, 60, or 90 days, or click **ignore forever**).
-
-Click **save** to ignore this issue with the parameters selected. After you ignore an issue it will not appear in scan results.
+Click **save** to ignore this issue with the parameters selected. After you ignore an issue, it will not appear in scan results.
 
 {% hint style="info" %}
 There is a status selector for ignored issues on the left side and you can include those (and remove or edit the ignore flag) if you want to review ignored results.
