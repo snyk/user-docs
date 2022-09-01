@@ -26,7 +26,7 @@ At Snyk, we use [CVSS framework version 3.1](https://www.first.org/cvss/v3-1/) t
 | Low                | 0.0 - 3.9      |
 | Medium             | 4.0 - 6.9      |
 | High               | 7.0 - 8.9      |
-| Critical           | 9.0 - 10.10    |
+| Critical           | 9.0 - 10.0     |
 
 The severity level and score are determined based on the CVSS Base Score calculations using the [Base Metrics](https://www.first.org/cvss/specification-document#Temporal-Metrics). The Temporal Score, which is based on the [Temporal Metrics](https://www.first.org/cvss/specification-document#Temporal-Metrics) is affecting the Priority Score.
 
