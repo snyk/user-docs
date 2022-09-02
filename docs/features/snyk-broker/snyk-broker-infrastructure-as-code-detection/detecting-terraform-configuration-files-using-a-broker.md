@@ -71,6 +71,26 @@ The Terraform scanning features need access to the `.tf` files from the reposito
 },
 ```
 
+## Azure Repos
+
+Copy the following list of file extensions:
+
+```
+            "**/*.yaml",
+            "**%2F*.yaml",
+            "**/*.yml",
+            "**%2F*.yml",
+            "**/*.json",
+            "**%2F*.json",
+            "**/*.tf",
+            "**%2F*.tf",
+```
+
+Add the extensions to the `values` array in two places in the [accept.json](https://github.com/snyk/broker/blob/master/client-templates/azure-repos/accept.json.sample):
+
+* `"//": "get file content. restrict by file types"`
+* `"//": "check file existence. restrict by file types"`
+
 ## Configuring the broker
 
 The broker takes the path to the accept.json file (with the rules above added) in the ACCEPT environment variable. You can see an example of passing that to the GitHub broker below.

@@ -40,6 +40,6 @@ For Snyk Code, you can use the following Filter criteria:
 
 The **Code Analysis** page appears, displaying the list and details of the vulnerability issues that were discovered in the selected repository. This issue list is organized by the severity level of the discovered issues, by default from the highest to the lowest:
 
-![ ](<../../../.gitbook/assets/Snyk Code - Getting Started - Code Analysis Project (1) (1) (1).png>)
+![ ](<../../../.gitbook/assets/Snyk Code - Results - Issue list.png>)
 
 &#x20;
