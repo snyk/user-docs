@@ -1,15 +1,15 @@
 # Severity levels
 
-A severity level is applied to a vulnerability, to indicate the risk for that vulnerability in an application.&#x20;
+A severity level is applied to a vulnerability, to indicate the risk for that vulnerability in an application.
 
 <img src="../../../.gitbook/assets/Screenshot 2022-08-16 at 09.52.22.png" alt="" data-size="original">
 
 Severity levels are key factors in [vulnerability assessment](https://snyk.io/learn/vulnerability-assessment/), and can be:
 
-* ****![](<../../../.gitbook/assets/image (86).png>) **Low:** the application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application.
-* ****![](<../../../.gitbook/assets/image (84) (1).png>) **Medium:** may allow attackers under some conditions to access sensitive data on your application.
-* ****<img src="../../../.gitbook/assets/image (85) (1).png" alt="" data-size="original"> **High:** may allow attackers to access sensitive data on your application.
-* ****<img src="../../../.gitbook/assets/image (83) (1) (2).png" alt="" data-size="line">**Critical:** may allow attackers to access sensitive data and run code on your application.
+* \*\*\*\*![](<../../../.gitbook/assets/image (86).png>) **Low:** the application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application.
+* \*\*\*\*![](<../../../.gitbook/assets/image (84) (1).png>) **Medium:** may allow attackers under some conditions to access sensitive data on your application.
+* \*\*\*\*<img src="../../../.gitbook/assets/image (85) (1).png" alt="" data-size="original"> **High:** may allow attackers to access sensitive data on your application.
+* \*\*\*\*<img src="../../../.gitbook/assets/image (83) (1) (2).png" alt="" data-size="line">**Critical:** may allow attackers to access sensitive data and run code on your application.
 
 {% hint style="info" %}
 Severity levels also apply to license issues. See [Licenses overview](https://docs.snyk.io/snyk-open-source/licenses).
@@ -38,10 +38,10 @@ Severity levels may not always align with CVSS scores. For example, Snyk Contain
 
 ### Understanding Snyk's Vulnerability Analysis
 
-**Why are there multiple CVSS Scores for the same vulnerability?**&#x20;
+**Why are there multiple CVSS Scores for the same vulnerability?**
 
 * ​When evaluating the severity of a vulnerability, it's important to note that there is no single CVSS vector - there are multiple CVSS vectors defined by multiple vendors, with the [National Vulnerability Database](https://nvd.nist.gov/) (NVD) being one of them.
-* The majority of vulnerabilities published by Snyk originate from [proprietary research](https://security.snyk.io/disclosed-vulnerabilities), public information sources, or through 3rd party disclosures.&#x20;
+* The majority of vulnerabilities published by Snyk originate from [proprietary research](https://security.snyk.io/disclosed-vulnerabilities), public information sources, or through 3rd party disclosures.
 * For example, when Snyk discovered the Critical Severity [Spring4Shell vulnerability](https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-2436751), the advisory published on March 30th, 2022, with the CVSS vector analysis, before an official CVE was assigned, and before NVD conducted their analysis, which was published 9 days later, on April 8th, 2022.
 * Having some differences in CVSS vectors is normal and expected. The likelihood of certain attack vectors will raise discrepancies, and judgments will need to be made about them in a way that makes sense for the application and use cases of open-source software users.
 * A vulnerability's severity is influenced by a variety of factors, including whether it comes from a "red team" angle or a "blue team" angle. To arrive at an objective and actionable rating, Snyk analysts examine the full range of data - from vendors to reporters to attackers.
@@ -63,7 +63,7 @@ For example, in the **Pending tasks** section of the Dashboard:
 
 Associated with your [Projects](../../../introducing-snyk/projects.md):
 
-![](<../../../.gitbook/assets/image (43).png>)
+![](<../../../.gitbook/assets/image (43) (1).png>)
 
 And for each vulnerability in a project:
 

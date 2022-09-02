@@ -170,9 +170,9 @@ To find the automatically managed Snyk CLI, the [XDG Data Home](https://specific
 
 After opening a supported file, the Language Server should be started by Sublime Text and findings will be highlighted.
 
-![Snyk Open Source findings displayed in Sublime Text](<../.gitbook/assets/image (5) (2).png>)
+![Snyk Open Source findings displayed in Sublime Text](<../.gitbook/assets/image (5) (1).png>)
 
-![Snyk Code findings displayed in Sublime Text](<../.gitbook/assets/image (7) (1) (1).png>)
+![Snyk Code findings displayed in Sublime Text](<../.gitbook/assets/image (7) (1).png>)
 
 
 
