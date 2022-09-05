@@ -229,7 +229,7 @@ Select certain values of configuration attributes to install dependencies and pe
 
 Example: `buildtype:release,usage:java-runtime`
 
-### `--init-script=<FILE`
+### `--init-script=<FILE>`
 
 Use for projects that contain a Gradle initialization script.
 
