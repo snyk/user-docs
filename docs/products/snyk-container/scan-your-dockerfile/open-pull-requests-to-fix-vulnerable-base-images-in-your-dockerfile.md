@@ -38,4 +38,4 @@ Availability:
 
 The feature is available for all of our users. It is on by default for all free users, and off by default for Snyk customers' existing integrations. You can opt-in to it from the integration or project settings sections.
 
-![](<../../../.gitbook/assets/image (98).png>)
+![](<../../../.gitbook/assets/image (70) (2).png>)

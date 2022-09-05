@@ -30,7 +30,7 @@ Snapshot and continuously monitor a project for open source vulnerabilities and 
 
 ### [`snyk container`](https://docs.snyk.io/snyk-cli/commands/container)
 
-The `snyk container` commands test and continuously monitor container images for vulnerabilities.
+Print a list of the `snyk container` commands, `snyk container monitor` and `snyk container test`.
 
 ### ``[`snyk container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)``
 
@@ -42,7 +42,7 @@ Test container images for any known vulnerabilities.
 
 ### ``[`snyk iac`](https://docs.snyk.io/snyk-cli/commands/iac)``
 
-The `snyk iac` commands find and report security issues in Infrastructure as Code files; detect, track, and alert on infrastructure drift and unmanaged resources; manages ignores in the `.snyk` policy file.
+Print a list of the `snyk iac` commands: `snyk iac describe`, `snyk iac update-exclude-policy`, and `snyk iac test`.
 
 ### [`snyk iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 

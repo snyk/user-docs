@@ -8,7 +8,7 @@ All [Snyk Projects](./#projects) are associated to a parent Target. One Target m
 \
 Targets appear on the **Projects** menu on the Snyk dashboard:
 
-![](<../../.gitbook/assets/image (65) (2).png>)
+![](<../../.gitbook/assets/image (17).png>)
 
 {% hint style="info" %}
 Targets also appear on the [Snyk API](https://apidocs.snyk.io/?version=2022-02-16%7Ebeta#tag--Targets).
@@ -52,7 +52,7 @@ Possible values are:
 
 Origins are a property of [Targets](./#targets) and appear in the Projects menu, as an icon by the target name.
 
-![](<../../.gitbook/assets/image (44).png>)
+![](<../../.gitbook/assets/image (71) (3).png>)
 
 ### Snyk Projects
 
@@ -63,7 +63,7 @@ Snyk Projects define the items Snyk scans at a given Target. A Project includes:
 
 Projects appear on the **Projects** menu on the Snyk dashboard, and on the [Snyk API](https://apidocs.snyk.io/?version=2022-02-16%7Ebeta#tag--Projects):
 
-![](<../../.gitbook/assets/image (76) (1) (2) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (12) (1) (2) (1) (1) (1) (1).png>)
 
 ## Targetfile
 
