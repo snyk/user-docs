@@ -19,7 +19,7 @@ Either SCM (Git) or CI/CD integration may achieve the same business objective. W
 * Fix PR from Snyk (SCA and Dockerfiles)
 * Does not take resources from your CI/CD pipeline
 
-### CI/CD Integration considerations
+## CI/CD Integration considerations
 
 * Some package managers require local context and are better run within your environment (notably Scala, Gradle and Go modules)
 * More granular options to block
