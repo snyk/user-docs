@@ -14,6 +14,16 @@
   **Help Links:**
 
   
+### [SNYK-0002](#snyk-0002-not-implemented) - Not implemented
+  The server either does not recognize the request method, or it lacks the ability to fulfil the request.
+
+  **HTTP Status:** [501](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/501)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
 ### [SNYK-9999](#snyk-9999-server-error) - Server error
   An unexpected server error was encountered.
 
@@ -192,4 +202,4 @@
   
 ---
 
-Genererated at 2022-09-02T10:15:10.026Z
+Genererated at 2022-09-06T14:08:37.114Z
