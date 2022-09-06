@@ -71,9 +71,10 @@ To find issues in a Python Poetry application Snyk uses `pyproject.toml` and `po
 
 ## Additional support details
 
-```
-https://github.com/snyk/snyk-python-plugin/blob/master/lib/types.ts
-```
+URLs in `requirements.txt` files are not supported, as this introduces a security risk.\
+They are removed before resolving the dependencies in the files.
+
+Refer also to the [snyk-python-plugin repository](https://github.com/snyk/snyk-python-plugin/blob/master/lib/types.ts).
 
 ## Snyk CLI for Python projects
 
