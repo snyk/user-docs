@@ -66,11 +66,11 @@ You can use the Duplicate button next to each role in the Member Roles list page
 
 ![Member Roles List page with Duplicate Role buttons](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.09.png>)
 
-![Role details page with Duplicate button](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.40.png>)
+![Role details page with Duplicate button](<../../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.40 (1).png>)
 
 Enter a unique name and description and click the **Duplicate Role** button. Group Admin can then edit this role to assign new permissions to it or rescind any permissions already assigned.
 
-![](<../../../.gitbook/assets/image (394).png>)
+![](<../../../.gitbook/assets/image (396).png>)
 
 ### Delete a Role
 
@@ -94,13 +94,13 @@ In the UI, select an **Org** > **Members**.
 
 For any member (Name) except a Group Admin, the user can select the dropdown next to the current role and choose any role to assign that role to the member.
 
-![](<../../../.gitbook/assets/image (218).png>)
+![](<../../../.gitbook/assets/image (388).png>)
 
 Click the **Add members** button > **Invite new members**.\
 \
 You can invite new members to the org by assigning them a specified role.
 
-![](<../../../.gitbook/assets/image (8) (2).png>)
+![](<../../../.gitbook/assets/image (345).png>)
 
 Choose **Add members** button > **Add existing members** to promote current Group Members to an org-specific role.
 

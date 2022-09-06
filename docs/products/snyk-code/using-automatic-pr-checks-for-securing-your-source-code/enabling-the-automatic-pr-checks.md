@@ -16,15 +16,15 @@ When enabling the Automatic PR Checks feature for an entire Organization, all th
 
 1\. On the Snyk Web UI, open the required Organization:
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png>)
 
 2\. Once the required Organization is open, click the **Org Settings** button <img src="../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="line"> on the top menu:
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org Settings button (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org Settings button (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
 
 3\. On the Org **Settings** page, select **Integrations** on the left menu. Then, locate your configured and required SCM, and click the **Edit settings** option at the end of its row:
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Organization - Integrations page (1) (1).png>)
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Organization - Integrations page.png>)
 
 4\. On the **Settings** page of the selected integration, scroll down to the **Code Analysis** section:
 
@@ -56,13 +56,13 @@ By default, the Settings on the Project level override the Settings on the Organ
 
 1\. On the Snyk Web UI, open the Organization that includes the required Project:
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png>)
 
 2\. Move to the **Projects** page by clicking the **Projects** tab on the top menu.
 
 3\. Locate the **Code analysis** Project for which you want to enable the Automatic PR Checks. Then, click the **Settings** button on the right side of its row:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Project - Project Settings button (1).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Project - Project Settings button.png>)
 
 4\. On the Project **Settings** page, click the relevant **integration** tab on left menu:
 

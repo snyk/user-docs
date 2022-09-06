@@ -28,3 +28,10 @@ Currently, there is no equivalent command to `snyk monitor` for Snyk IaC because
 For IaC CLI results to appear in the Snyk Web UI, you can use the [`snyk iac test --report`](https://docs.snyk.io/products/snyk-infrastructure-as-code/share-cli-results-with-the-snyk-web-ui) command to capture a one-time snapshot. Optionally, run the command on a recurring schedule to regularly test your IaC.
 
 Alternatively, you can add an [SCM integration](https://docs.snyk.io/integrations/git-repository-scm-integrations) and Snyk will monitor and test a given git repository on a recurring basis.
+
+
+
+## Using Snyk behind a proxy
+
+If you are using a proxy, make sure to consult the page [How can I use Snyk behind a proxy?](https://support.snyk.io/hc/en-us/articles/360000925358-How-can-I-use-Snyk-behind-a-proxy-).\
+For IaC scans specifically, you must also whitelist the \*.snyk.io address, as explained[ ](https://support.snyk.io/hc/en-us/articles/360002153077-How-can-we-whitelist-Snyk-IP-addresses-)on the page [How can we whitelist Snyk IP addresses?](https://support.snyk.io/hc/en-us/articles/360002153077-How-can-we-whitelist-Snyk-IP-addresses-)
