@@ -1,7 +1,7 @@
 # Detecting application vulnerabilities in container images
 
 {% hint style="info" %}
-For the Container Registry integration, the feature is supported for Node, Ruby, PHP, Python, Go binaries, and Java. For the CLI and Kubernetes, the feature is supported for Node, Golang, PHP, and Java.
+For the Container Registry integration, the feature is supported for Node, Ruby, PHP, Python, Go binaries, and Java. For the CLI and Kubernetes, the feature is supported for Node, Golang, PHP, Python, and Java.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -20,7 +20,7 @@ In order to detect **new** applications within images from Kubernetes, the image
 
 Snyk allows detection of vulnerabilities in your application dependencies from container images, as well as from the operating system, all in one single scan.
 
-After you integrate with a container registry and import your projects, we scan your image and test for vulnerabilities.
+After you integrate with a container registry and import your projects, Snyk scans your image and test for vulnerabilities.
 
 ### Enable application vulnerabilities scan from container images
 
@@ -29,7 +29,7 @@ After you integrate with a container registry and import your projects, we scan 
 
 ![](../../../.gitbook/assets/detect-app-vulns.png)
 
-When scanning an image using a container registry, Kubernetes integration, or through the Docker scan command, the scan also uses the `--app-vulns` flag by default. You are able to opt out of the flag in the container registry only. Do so by disabling the ‘_detect application vulnerabilities_’ toggle in the integration settings.
+When scanning an image using a container registry, Kubernetes integration, or through the Docker scan command, the scan also uses the `--app-vulns` flag by default. You can opt out of the flag in the container registry only. Do so by disabling the ‘_detect application vulnerabilities_’ toggle in the integration settings.
 
 ### Using CLI to detect vulnerabilities
 
@@ -37,7 +37,9 @@ When scanning an image using a container registry, Kubernetes integration, or th
 
 Use the `--app-vulns` flag to detect vulnerabilities in your application dependencies from container images.
 
-For Java, when specifying the flag, we scan one level of nested jars by default.
+For Java, when you use the flag, Snyk scans one level of nested jars by default.
+
+For Python, Snyk supports Poetry and Pip.&#x20;
 
 #### Nested Jars Depth Flag
 
@@ -91,7 +93,7 @@ The supported languages work on the following integrations:
 | Node         | Yes                    | Yes     | Yes            |
 | Ruby         | Yes                    |         |                |
 | PHP          | Yes                    | Yes     | Yes            |
-| Python       | Yes                    |         |                |
+| Python       | Yes                    | Yes     | Yes            |
 | Go Binaries  | Yes                    | Yes     | Yes            |
 | Java         | Yes                    | Yes     | Yes            |
 
