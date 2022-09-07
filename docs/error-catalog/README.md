@@ -81,7 +81,7 @@
 ---
 # [PURL Vulnerabilities](https://docs.snyk.io/introducing-snyk/getting-started-snyk-intel-vuln-db-access#about-the-snyk-vulnerability-database)
 ### [SNYK-OSSI-1040](#snyk-ossi-1040-your-organisation-is-not-authorised-to-perform-this-action) - Your organisation is not authorised to perform this action
-  Your organisation is not authorised to perform this action
+  You likely don’t have access to the Beta. To get access, you can request access to the Beta through your account manager or team.
 
   **HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
 
@@ -91,7 +91,7 @@
 
   
 ### [SNYK-OSSI-1050](#snyk-ossi-1050-authorization-request-failure) - Authorization request failure
-  Unexpected error when authenticating. Please try again, and if you continue to experience issues please contact support
+  Unexpected error when authenticating. Please try again, and if you continue to experience issues please contact support.
 
   **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
@@ -100,8 +100,28 @@
   **Help Links:**
 
   
-### [SNYK-OSSI-2010](#snyk-ossi-2010-invalid-purl) - Invalid PURL
-  Invalid PURL has been provided
+### [SNYK-OSSI-2010](#snyk-ossi-2010-invalid-purl-has-been-provided) - Invalid PURL has been provided
+  Please make sure that the purl you’ve provided is valid. Please see the Package URL specification link for further information.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  - [https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst](https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst)
+### [SNYK-OSSI-2011](#snyk-ossi-2011-ensure-you-specify-a-namespace-in-the-purl-and-then-try-again) - Ensure you specify a namespace in the purl and then try again
+  You have requested a package type which requires a namespace (eg. maven group id). Please supply the namespace in order to retrieve the package correctly.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  - [https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst](https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst)
+### [SNYK-OSSI-2020](#snyk-ossi-2020-ecosystem-is-not-supported) - Ecosystem is not supported
+  Ensure that the package type is a supported type.
 
   **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -110,28 +130,8 @@
   **Help Links:**
 
   
-### [SNYK-OSSI-2011](#snyk-ossi-2011-package-requested-without-namespace) - Package requested without namespace
-  You have requested a package type which requires a namespace (eg. maven group id). Please supply the namespace in order to retrieve the package correctly
-
-  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-  **Exit Code:** N/A
-
-  **Help Links:**
-
-  
-### [SNYK-OSSI-2020](#snyk-ossi-2020-unsupported-ecosystem) - Unsupported Ecosystem
-  Ecosystem is not supported
-
-  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-  **Exit Code:** N/A
-
-  **Help Links:**
-
-  - [https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support)
 ### [SNYK-OSSI-2021](#snyk-ossi-2021-purl-component(s)-required) - Purl component(s) required
-  Currently we require a list of components of the package url specification. The purl supplied by the user did not specify all the components which we currently require
+  Currently we require a list of components of the package url specification. The purl supplied by the user did not specify all the components which we currently require.
 
   **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -140,8 +140,8 @@
   **Help Links:**
 
   
-### [SNYK-OSSI-2022](#snyk-ossi-2022-purl-component-not-supported) - Purl component not supported
-  You have submitted a purl with components which are not supported
+### [SNYK-OSSI-2022](#snyk-ossi-2022-you-have-submitted-a-purl-with-components-which-are-not-supported) - You have submitted a purl with components which are not supported
+  Please remove the component which is not supported, and try to make the request again. The endpoint only accepts particular components.
 
   **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -150,8 +150,8 @@
   **Help Links:**
 
   
-### [SNYK-OSSI-2030](#snyk-ossi-2030-package-not-found) - Package not found
-  Requested package not found
+### [SNYK-OSSI-2030](#snyk-ossi-2030-requested-package-not-found) - Requested package not found
+  The package you’ve specified in the purl can not be found in our vulnerability database. Please check that the package name, ecosystem and version are correct and then try again.
 
   **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
@@ -160,8 +160,8 @@
   **Help Links:**
 
   
-### [SNYK-OSSI-2031](#snyk-ossi-2031-vulnerability-service-unavailable) - Vulnerability service unavailable
-  Vulnerability service is currently not available. Please try again in a few minutes
+### [SNYK-OSSI-2031](#snyk-ossi-2031-vulnerability-service-is-currently-not-available.-please-try-again-in-a-few-minutes) - Vulnerability service is currently not available. Please try again in a few minutes
+  This issue is unexpected, and the service should recover quickly. If not, please contact support.
 
   **HTTP Status:** [503](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)
 
@@ -170,8 +170,8 @@
   **Help Links:**
 
   
-### [SNYK-OSSI-2032](#snyk-ossi-2032-vulnerability-response-invalid) - Vulnerability response invalid
-  An unexpected error occurred. Please try again, and if you continue to experience issues please contact support
+### [SNYK-OSSI-2032](#snyk-ossi-2032-this-issue-is-unexpected,-and-the-service-should-recover-quickly.-if-not,-please-contact-support) - This issue is unexpected, and the service should recover quickly. If not, please contact support
+  An unexpected error occurred. Please try again, and if you continue to experience issues please contact support.
 
   **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
@@ -180,8 +180,8 @@
   **Help Links:**
 
   
-### [SNYK-OSSI-2033](#snyk-ossi-2033-vulnerability-service-error) - Vulnerability service error
-  An unexpected error occured with the vulnerability service. Please try again, and if you continue to experience issues please contact support
+### [SNYK-OSSI-2033](#snyk-ossi-2033-this-issue-is-unexpected,-and-the-service-should-recover-quickly.-if-not,-please-contact-support) - This issue is unexpected, and the service should recover quickly. If not, please contact support
+  An unexpected error occurred with the vulnerability service. Please try again, and if you continue to experience issues please contact support.
 
   **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
@@ -190,8 +190,8 @@
   **Help Links:**
 
   
-### [SNYK-OSSI-2040](#snyk-ossi-2040-internal-server-error) - Internal server error
-  An error was experienced by the service when processing the request.
+### [SNYK-OSSI-2040](#snyk-ossi-2040-an-error-was-experienced-by-the-service-when-processing-the-request) - An error was experienced by the service when processing the request
+  This issue is unexpected, and the service should recover quickly. If not, please contact support.
 
   **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
@@ -202,4 +202,4 @@
   
 ---
 
-Genererated at 2022-09-06T14:08:37.114Z
+Genererated at 2022-09-07T13:59:36.860Z
