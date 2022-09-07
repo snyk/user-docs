@@ -10,21 +10,21 @@ With the Snyk pipe, you can quickly add Snyk scanning to your pipelines to test 
 
 From the build directory, Bitbucket Pipelines displays a list of available pipes customized for you, similar to the list in the following screenshot:
 
-![Bitbucket Pipelines list of available pipes](../../.gitbook/assets/uuid-6fff2668-6e2e-22ae-200f-124c8a240b02-en.png)
+![Bitbucket Pipelines list of available pipes](../../../.gitbook/assets/uuid-6fff2668-6e2e-22ae-200f-124c8a240b02-en.png)
 
 On this list, find and click **Snyk** to view the pipe, examples, parameters, and values:
 
-![Snyk Scan pipe information](../../.gitbook/assets/mceclip0-25-.png)
+![Snyk Scan pipe information](../../../.gitbook/assets/mceclip0-25-.png)
 
 ## Setup and use details
 
 For setup and use details, see the following pages:
 
-* [Language support for Bitbucket Pipelines integration](bitbucket-pipelines-integration-overview/language-support-for-bitbucket-pipelines-integration.md)
-* [Bitbucket Pipelines integration: how it works](bitbucket-pipelines-integration-overview/bitbucket-pipelines-integration-how-it-works.md)
-* [Prerequisites for Bitbucket Pipelines integration](bitbucket-pipelines-integration-overview/prerequisites-for-bitbucket-pipelines-integration.md)
-* [Configure your Bitbucket Pipelines integration](bitbucket-pipelines-integration-overview/configure-your-bitbucket-pipelines-integration.md)
-* [How to add a Snyk pipe](bitbucket-pipelines-integration-overview/how-to-add-a-snyk-pipe.md)
-* [Snyk pipe parameters and values (Bitbucket Cloud)](bitbucket-pipelines-integration-overview/snyk-pipe-parameters-and-values-bitbucket-cloud.md)
-* [Example of a Snyk pipe for Docker](bitbucket-pipelines-integration-overview/example-of-a-snyk-pipe-for-docker.md)
-* [Example of a Snyk pipe for npm](bitbucket-pipelines-integration-overview/example-of-a-snyk-pipe-for-npm.md)
+* [Language support for Bitbucket Pipelines integration](language-support-for-bitbucket-pipelines-integration.md)
+* [Bitbucket Pipelines integration: how it works](bitbucket-pipelines-integration-how-it-works.md)
+* [Prerequisites for Bitbucket Pipelines integration](prerequisites-for-bitbucket-pipelines-integration.md)
+* [Configure your Bitbucket Pipelines integration](configure-your-bitbucket-pipelines-integration.md)
+* [How to add a Snyk pipe](how-to-add-a-snyk-pipe.md)
+* [Snyk pipe parameters and values (Bitbucket Cloud)](snyk-pipe-parameters-and-values-bitbucket-cloud.md)
+* [Example of a Snyk pipe for Docker](example-of-a-snyk-pipe-for-docker.md)
+* [Example of a Snyk pipe for npm](example-of-a-snyk-pipe-for-npm.md)

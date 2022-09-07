@@ -32,11 +32,11 @@ The details of the issue appear, and depending on the way you set up the Broker 
 
 * Snyk Code results with code snippets:
 
-<figure><img src="../../../../.gitbook/assets/Broker - Results - with code snippets (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Broker - Results - with code snippets (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Snyk Code results without code snippets:
 
-<figure><img src="../../../../.gitbook/assets/Broker - Results - without code snippets (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Broker - Results - without code snippets (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;For more information on how to troubleshoot the Snyk Broker - Code Agent deployment, see [Troubleshooting Broker](file:///o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/YPt28FOdC4y49hdOMDSe/features/snyk-broker/troubleshooting-broker).
 

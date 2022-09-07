@@ -14,7 +14,7 @@ You can filter for all container projects, similar to the following example:
 
 When you open any container project, the resulting analysis and fix advice appears in the Snyk Web UI:
 
-![](<../../../.gitbook/assets/image (76).png>)
+![](<../../../.gitbook/assets/image (385).png>)
 
 The following information is displayed:
 
@@ -25,7 +25,7 @@ The following information is displayed:
   * Total dependencies with known vulnerabilities, and the total number of vulnerabilities
 * Fix advice—if you included your Dockerfile for monitoring, then any available actionable fix advice is displayed. To view all advice, click the **Show more upgrade types** link. The advice offered is dependent on available fixes, and appears similar to the following image:
 
-![](<../../../.gitbook/assets/image (115) (1) (2) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (115) (1) (2) (1) (1) (1) (1).png>)
 
 * Upgrade suggestions can include:
   * Minor upgrades—the safest and best minor upgrade available
@@ -43,7 +43,7 @@ The following information is displayed:
 
 
 
-![](<../../../.gitbook/assets/image (71).png>)
+![](<../../../.gitbook/assets/image (71) (4).png>)
 
 {% hint style="info" %}
 **Note**\

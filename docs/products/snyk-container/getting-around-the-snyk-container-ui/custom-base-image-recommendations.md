@@ -48,6 +48,7 @@ Snyk recommends the third image, as it was last marked as a custom base image.
 * A Dockerfile must be specified (see the instructions that follow) in the project in order to receive custom base image recommendations
 * All custom base image recommendations are considered as minor upgrades, regardless of the image tag.
 * Automatic fix PRs are supported for custom base image recommendations.
+* In order for Snyk to identify a project is using a custom base image, the same custom base image must be imported and marked as such in the project's settings. &#x20;
 
 ## **User flows**
 
@@ -65,7 +66,7 @@ _Responsible for creating and maintaining custom base images for the organizatio
       2. The following is an example command: `snyk container monitor snykgoof/custom-base-python:3.9.2_2021110408 --file=path/to/Dockerfile.3.9.2 --project-name=custom-base-python:3.9.2_2021110408 --org=ORGANIZATION_ID/ORGANIZATION_NAME`
 4. Mark the project as a custom base image.
    1. Go to the project’s **Settings** page\
-      ![](<../../../.gitbook/assets/image (116).png>)\\
+      ![](<../../../.gitbook/assets/image (141).png>)\\
    2. Under **Custom Base Image Recommendation**, select **Treat as custom base image**.
    3. Click **Update image status**.
 5. Mark whether the image should be eligible for recommendations.

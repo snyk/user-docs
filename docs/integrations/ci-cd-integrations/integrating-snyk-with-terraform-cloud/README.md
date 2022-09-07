@@ -28,8 +28,8 @@ If you are a user of Terraform Cloud ([Team & Governance tier](https://www.hashi
 
 For setup and use details, see the following pages:
 
-* [Set up the Terraform Cloud integration for IaC](integrating-snyk-with-terraform-cloud/set-up-the-terraform-cloud-integration-for-iac.md)
-* [How to use the Terraform Cloud integration for IaC](integrating-snyk-with-terraform-cloud/how-to-use-the-terraform-cloud-integration-for-iac.md)
+* [Set up the Terraform Cloud integration for IaC](set-up-the-terraform-cloud-integration-for-iac.md)
+* [How to use the Terraform Cloud integration for IaC](how-to-use-the-terraform-cloud-integration-for-iac.md)
 
 ## ****
 
