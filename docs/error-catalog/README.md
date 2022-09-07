@@ -24,6 +24,26 @@
   **Help Links:**
 
   
+### [SNYK-0003](#snyk-0003-bad-request) - Bad request
+  The server cannot or will not process the request due to an apparent client error (e.g. malformed request syntax, size too large, invalid request message framing, or deceptive request routing).
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-004](#snyk-004-timeout-error) - Timeout error
+  The server did not receive a timely response from the upstream server.
+
+  **HTTP Status:** [504](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/504)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
 ### [SNYK-9999](#snyk-9999-server-error) - Server error
   An unexpected server error was encountered.
 
@@ -202,4 +222,4 @@
   
 ---
 
-Genererated at 2022-09-07T13:59:36.860Z
+Genererated at 2022-09-07T15:32:57.597Z
