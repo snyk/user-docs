@@ -260,6 +260,7 @@
     * [Getting started with Snyk and Heroku](integrations/platform-as-a-service-integrations/getting-started-with-snyk-and-heroku.md)
     * [Connect Snyk to Heroku](integrations/platform-as-a-service-integrations/connect-snyk-to-heroku.md)
     * [Pivotal integration overview](integrations/platform-as-a-service-integrations/pivotal-integration-overview.md)
+* [Error Catalog](error-catalog/README.md)
 
 ## SNYK PRODUCTS <a href="#products" id="products"></a>
 
@@ -936,4 +937,3 @@
       * [Snyk Infrastructure as Code (IaC)](more-info/getting-started/snyk-integrations/springone-workshop/snyk-iac-for-developers/README.md)
         * [Review IaC artifacts in Snyk UI](more-info/getting-started/snyk-integrations/springone-workshop/snyk-iac-for-developers/review-iac-artifacts-in-snyk-ui.md)
       * [Workshop Wrap Up](more-info/getting-started/snyk-integrations/springone-workshop/additional-resources-and-next-steps.md)
-* [Error Catalog](more-info/error-catalog.md)
