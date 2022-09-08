@@ -82,7 +82,7 @@ This section generally describes how to navigate the AWS IAM Console for these p
 3. Now, log in to [your Snyk account](https://app.snyk.io).
 4. Navigate to **Integrations** from the menu bar at the top, find and click the **AWS Lambda** option: ![image1.png](../../.gitbook/assets/uuid-f045ee35-1ddd-34e1-bbe3-f225bb9426e4-en.png) The **AWSLambda** configuration page in the **Settings** area loads, with the **External ID** value automatically populated for you based on the Snyk organization that you’re configuring.
 5. Paste the **Role ARN** that you saved into the **ARN** field.\
-   ![](<../../.gitbook/assets/image (195).png>)
+   ![](<../../.gitbook/assets/image (83) (3).png>)
 6. Click **Save**. Snyk tests the connection values and the page reloads, now displaying AWS Lambda integration details as you entered them. A confirmation message that the details were saved also appears in green at the top of the screen.
 
 ![AWS Lambda integration details](../../.gitbook/assets/uuid-66a8f525-f274-1db4-f691-ca8112fbd8af-en.png)

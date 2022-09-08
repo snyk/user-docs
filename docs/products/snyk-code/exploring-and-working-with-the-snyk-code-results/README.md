@@ -8,7 +8,7 @@ During the import process, Snyk creates a Target folder for each imported reposi
 
 **Note**: The name of the Target folder includes the name of the imported repository, together with the account name of the integrated SCM, the SCM icon, and the number of Snyk Projects that were created for the repository.
 
-![ ](<../../../.gitbook/assets/Snyk Code - Results - General diagram.png>)
+<figure><img src="../../../.gitbook/assets/Snyk code - 1.png" alt="Screenshot with callouts pointing to various UI elements in a Snyk Project listing"><figcaption><p> </p></figcaption></figure>
 
 **Note**: Unlike other Snyk products, which create a separate Snyk Project for each imported file, Snyk Code creates one Snyk Project for all the imported files of one repository. This way, all the vulnerabilities that were detected in the repository code are aggregated in one Project, and the Snyk Code results can present the data flow of a vulnerability issue across multiple files.&#x20;
 
@@ -16,7 +16,7 @@ During the import process, Snyk creates a Target folder for each imported reposi
 
 The **Projects** page on the Web UI includes a Filter pane. This Filter pane allows you to filter your Snyk Projects according to different criteria, and it provides you with information about the number of existing Snyk Projects that match each criterion:
 
-![](<../../../.gitbook/assets/Snyk Code - Results - Projects page - Filter pane.png>)
+<figure><img src="../../../.gitbook/assets/Snyk code - 2.png" alt="Screenshot of the filtering options for projects grouped by target in Snyk"><figcaption></figcaption></figure>
 
 By default, only active Projects with discovered issues are displayed on the **Projects** page.
 
@@ -36,10 +36,10 @@ For Snyk Code, you can use the following Filter criteria:
 
 * On the **Projects** page, open the Target folder that contains the Projects of the required repository. Then, click the **Code analysis** Project:
 
-![](<../../../.gitbook/assets/Snyk Code - Results - Selecting the Code analysis Project.png>)
+<figure><img src="../../../.gitbook/assets/Snyk code - 3.png" alt="Screenshot of a cursor selecting a Code Analysis project in Snyk"><figcaption></figcaption></figure>
 
 The **Code Analysis** page appears, displaying the list and details of the vulnerability issues that were discovered in the selected repository. This issue list is organized by the severity level of the discovered issues, by default from the highest to the lowest:
 
-![ ](<../../../.gitbook/assets/Snyk Code - Getting Started - Code Analysis Project (1) (1) (1) (1) (1).png>)
+<figure><img src="../../../.gitbook/assets/Snyk code - 4.png" alt="Screenshot of a Code Analysis project in Snyk"><figcaption><p> </p></figcaption></figure>
 
 &#x20;

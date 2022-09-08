@@ -66,7 +66,7 @@ _Responsible for creating and maintaining custom base images for the organizatio
       2. The following is an example command: `snyk container monitor snykgoof/custom-base-python:3.9.2_2021110408 --file=path/to/Dockerfile.3.9.2 --project-name=custom-base-python:3.9.2_2021110408 --org=ORGANIZATION_ID/ORGANIZATION_NAME`
 4. Mark the project as a custom base image.
    1. Go to the project’s **Settings** page\
-      ![](<../../../.gitbook/assets/image (141).png>)\\
+      ![](<../../../.gitbook/assets/image (116).png>)\\
    2. Under **Custom Base Image Recommendation**, select **Treat as custom base image**.
    3. Click **Update image status**.
 5. Mark whether the image should be eligible for recommendations.

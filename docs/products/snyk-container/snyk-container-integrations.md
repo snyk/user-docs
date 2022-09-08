@@ -2,7 +2,7 @@
 
 Snyk Container provides a range of integrations to import projects into Snyk. These integrations support different workflows for our users and customers.
 
-![](../../.gitbook/assets/projects.png)
+<figure><img src="../../.gitbook/assets/Snyk container integrations.png" alt="Screenshot of a Snyk Container project in the Projects listing page"><figcaption></figcaption></figure>
 
 The integrations you use depends on your requirements and workflow. You can start with one integration and move to others later, or use a combination of integrations as your team grows.
 

@@ -25,9 +25,9 @@ You can view vulnerability results for imported Projects. The **Projects** tab a
 
 You can expand a Target to see vulnerability information for Projects, including the number of issues found, grouped by severity level:
 
-![.](../../.gitbook/assets/projects-import.png)
+<figure><img src="../../.gitbook/assets/Getting started with open source.png" alt="Screenshot of a Snyk Project listing"><figcaption><p>.</p></figcaption></figure>
 
-Click on an entry to open the issues view for that entry, including the module, where it was introduced, and how to fix it, plus more details about the vulnerability itself:
+Click an entry to open the issues view for that entry, including the module where it was introduced,  how to fix it, plus more details about the vulnerability itself.
 
 ![](../../.gitbook/assets/project-details.png)
 

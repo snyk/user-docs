@@ -15,7 +15,7 @@ When you reach that limit, Snyk will stop importing more projects into the organ
 
 You will know you have hit this limit when you see this banner in the Snyk UI:
 
-![A banner will display at the top of the Project page telling you how many projects you have over the limit](../../.gitbook/assets/max-projects.png)
+<figure><img src="../../.gitbook/assets/Maximum number of projects.png" alt="Screenshot of an alert for maximum project import on the Snyk Projects listing page"><figcaption><p>A banner will display at the top of the Project page telling you how many projects you have over the limit</p></figcaption></figure>
 
 In the CLI, your `snyk monitor` command will return the following error
 

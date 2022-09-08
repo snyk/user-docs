@@ -6,23 +6,23 @@ See [Snyk Projects](../snyk-web-ui/introduction-to-snyk-projects/) for more deta
 
 Snyk Project information appears in the **Projects** menu on the Snyk dashboard:
 
-![](<../.gitbook/assets/Screenshot 2022-07-29 at 14.34.45.png>)
+<figure><img src="../.gitbook/assets/Projects.png" alt="Screenshot of the Snyk Projects listing page showing various types of projects in a list"><figcaption></figcaption></figure>
 
 ### Projects
 
 Snyk Projects define the items Snyk scans for issues, with configuration information defining how to run that scan:
 
-:<img src="../.gitbook/assets/Screenshot 2022-07-29 at 14.26.59.png" alt="" data-size="original">
+<figure><img src="../.gitbook/assets/Targets 3.png" alt="Screenshot highlighting the projects inside of a target in the Snyk UI"><figcaption></figcaption></figure>
 
 ### Targets
 
 Projects are held in Targets; these are an external resource Snyk has scanned, such as a code repository:
 
-![](<../.gitbook/assets/Screenshot 2022-07-29 at 14.29.42.png>)
+<figure><img src="../.gitbook/assets/Targets 1.png" alt="Screenshot highlighting a project&#x27;s target inside the Snyk UI"><figcaption></figcaption></figure>
 
 ### Origins
 
 Origins show the type of Target ecosystem, such as CLI, GitHub, or Kubernetes:
 
-![](<../.gitbook/assets/Screenshot 2022-07-29 at 14.39.24.png>)
+<figure><img src="../.gitbook/assets/Targets 2.png" alt="Screenshot highlighting a set of projects&#x27; origin inside the Snyk UI"><figcaption></figcaption></figure>
 
