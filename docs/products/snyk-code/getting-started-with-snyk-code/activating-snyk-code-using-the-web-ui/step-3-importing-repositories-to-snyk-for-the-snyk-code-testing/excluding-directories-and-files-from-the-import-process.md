@@ -64,7 +64,7 @@ exclude:
 * If the repository was already imported to Snyk – retest the repository as follows:
   * On the **Projects** page, click the **Code analysis** Project of the repository. Then, on the **Code Analysis** page, click the **Retest now** option below the header:
 
-![](<../../../../../.gitbook/assets/Snyk Code - Exlude from Import - Example - Retest option (1).png>)
+![](<../../../../../.gitbook/assets/Snyk Code - Exlude from Import - Example - Retest option.png>)
 
 * If the repository was not imported yet to Snyk – [import the repository](importing-additional-repositories-to-snyk.md).
 

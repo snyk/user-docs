@@ -6,11 +6,11 @@ This guide prepares teams on Snyk Business and Enterprise plans for deploying Sn
 
 There are a few key considerations and tasks to get started using Snyk, including:
 
-* [Make implementation decisions](implementing-snyk-in-your-teams.md#make-implementation-decisions).
-* [Set up your first organization](implementing-snyk-in-your-teams.md#set-up-your-first-organization).
-* [Create additional organizations.](implementing-snyk-in-your-teams.md#create-additional-organizations)
-* [Roll out Snyk to developers.](implementing-snyk-in-your-teams.md#roll-out-snyk-to-developers)
-* [Find, prioritize, and fix issues](implementing-snyk-in-your-teams.md#find-prioritize-and-fix-issues).
+* [Make implementation decisions](implementing-snyk-in-your-teams.md#make-implementation-decisions)
+* [Set up your first organization](implementing-snyk-in-your-teams.md#set-up-your-first-organization)
+* [Create additional organizations](implementing-snyk-in-your-teams.md#create-additional-organizations)
+* [Roll out Snyk to developers](implementing-snyk-in-your-teams.md#roll-out-snyk-to-developers)
+* [Find, prioritize, and fix issues](implementing-snyk-in-your-teams.md#find-prioritize-and-fix-issues)
 
 ### Make implementation decisions
 
@@ -32,7 +32,7 @@ More information:
 
 #### How to structure your account
 
-There are different ways to arrange the organizations in your account. Before inviting members to your account or scanning for issues, plan which organizations you'll need based on how you want to allow permissions and access to projects. The way you set policies are the next order of consideration. And how you want to report on projects are the third consideration.&#x20;
+There are different ways to arrange the organizations in your account. Before inviting members to your account or scanning for issues, plan which organizations you'll need based on how you want to allow permissions and access to projects. The way you set policies are the next order of consideration. And how you want to report on projects are the third consideration.
 
 More information:
 
@@ -41,7 +41,7 @@ More information:
 
 #### How to access Snyk
 
-There are a few different ways that users can authenticate into their Snyk accounts, such as with a GitHub or Google account. You may want to set up single sign-on (SSO) via your existing identity provider to streamline sign-ins and new user provisioning.&#x20;
+There are a few different ways that users can authenticate into their Snyk accounts, such as with a GitHub or Google account. You may want to set up single sign-on (SSO) via your existing identity provider to streamline sign-ins and new user provisioning.
 
 If using SSO, after you set it up, you'll need to remove any social login accounts from Snyk.
 
@@ -120,7 +120,7 @@ If you are using private registries, you'll want to set up those integrations.
 
 More information:
 
-* Docs: [Private registry integrations](https://docs.snyk.io/integrations/private-registry-integrations)&#x20;
+* Docs: [Private registry integrations](https://docs.snyk.io/integrations/private-registry-integrations)
 
 #### Set up Jira integration
 

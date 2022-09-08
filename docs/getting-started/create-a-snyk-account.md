@@ -24,7 +24,7 @@ The Snyk web app will now provide some optional getting started walkthrough prom
 
 For example:
 
-![](<../.gitbook/assets/Wizard1 (1).png>)
+![](../.gitbook/assets/Wizard1.png)
 
 If you click **GitHub**, then fill in the details as prompted (see [Set up an integration](set-up-an-integration.md)):
 
