@@ -22,7 +22,7 @@ Snyk allows detection of vulnerabilities in your application dependencies from c
 
 After you integrate with a container registry and import your projects, Snyk scans your image and test for vulnerabilities.
 
-### Enable application vulnerabilities scan from container images
+### Enable application vulnerabilities scan from container registries
 
 1. Navigate to your container registry integration settings
 2. Enable the _**Detect application vulnerabilities**_ capability and save the changes:
@@ -31,21 +31,23 @@ After you integrate with a container registry and import your projects, Snyk sca
 
 When scanning an image using a container registry, Kubernetes integration, or through the Docker scan command, the scan also uses the `--app-vulns` flag by default. You can opt out of the flag in the container registry only. Do so by disabling the ‘_detect application vulnerabilities_’ toggle in the integration settings.
 
+### Notes
+
+1. For Java, when you use the flag, Snyk scans one level of nested jars by default.
+2. For Python, Snyk supports Poetry and Pip (in all integration points).
+3. For Go binaries, Snyk supports any kind of a Go binary built with Go module support.
+
 ### Using CLI to detect vulnerabilities
 
 #### App Vulns Flag
 
-Use the `--app-vulns` flag to detect vulnerabilities in your application dependencies from container images.
-
-For Java, when you use the flag, Snyk scans one level of nested jars by default.
-
-For Python, Snyk supports Poetry and Pip.&#x20;
+Use the `--app-vulns` flag to detect vulnerabilities in your application dependencies from container images.&#x20;
 
 #### Nested Jars Depth Flag
 
-For Java applications, when using `--app-vulns`, you can also use the `--nested-jars-depth=n` flag to set how many levels of nested jars Snyk will unpack. The implicit default is 1. I.e when specifying 2, it means that Snyk unzips jars in jars, 3 means Snyk unzips jars in jars in jars, etc.
+For Java applications, when using `--app-vulns`, you can also use the `--nested-jars-depth=n` flag to set how many levels of nested jars Snyk will unpack. The implicit default is 1. When you specify 2, it means that Snyk unzips jars in jars; 3 means Snyk unzips jars in jars in jars, and so on.
 
-Users can use --nested-jar-depth=0 to opt out of any scans they feel are unnecessary.
+Users can use `--nested-jar-depth=0` to opt out of any scans they feel are unnecessary.
 
 ### View vulnerabilities and licensing issues
 
