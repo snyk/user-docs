@@ -55,7 +55,7 @@ If a tag exists in your group, you can apply it to any project.
 
 You can filter projects by tags in the **Group by none** (ungrouped) view.
 
-![](<../../.gitbook/assets/image (6) (2) (1).png>)
+![](<../../.gitbook/assets/image (69).png>)
 
 {% hint style="success" %}
 **Filter by tag autocomplete**: this field is intentionally limited to a small number of results. If your tag isn't displayed, enter more characters for the tag until it rises to the top of the results.

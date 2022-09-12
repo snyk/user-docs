@@ -8,7 +8,7 @@ If your Snyk Account currently does not include any repositories, you need to im
 
 2\. On the Snyk Web UI, click the **Projects** tab on the top menu:
 
-![](<../../../../../.gitbook/assets/Snyk Code - Org Settings button (1).png>)
+![](<../../../../../.gitbook/assets/Snyk Code - Org Settings button.png>)
 
 **Note**: If your **Project** tab already contains Projects, use the instructions in one of the following sections:
 
@@ -25,9 +25,9 @@ If your Snyk Account currently does not include any repositories, you need to im
 
 The selected repositories are imported to Snyk Code, and a progress bar appears**:**
 
-![](<../../../../../.gitbook/assets/Snyk Code - Import - In Progress (1) (1) (1) (2).png>)
+![](<../../../../../.gitbook/assets/Snyk Code - Import - In Progress (1) (1) (1) (1).png>)
 
 When the import is completed, a confirmation message appears on the **Projects** page, informing you of the success of the import. Your imported repositories appear as Target folders, each containing the **Code analysis** Project that includes the findings of the Snyk Code test:
 
-![](<../../../../../.gitbook/assets/Snyk Code - Import - Complete (1) (1) (1).png>)
+![](<../../../../../.gitbook/assets/Snyk Code - Import - Complete (1) (1) (1) (1) (1).png>)
 

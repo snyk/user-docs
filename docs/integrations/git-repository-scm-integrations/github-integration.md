@@ -37,7 +37,7 @@ After you add them, Snyk scans the selected repositories for dependency files in
 
 The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
-![](<../../.gitbook/assets/which\_repos (3) (5) (9) (7) (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (18).jpg>)
+![](<../../.gitbook/assets/which\_repos (3) (5) (9) (7) (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (23).jpg>)
 
 ## GitHub integration features
 
@@ -67,7 +67,7 @@ Snyk scans your projects on either a daily or a weekly basis. When new vulnerabi
 
 The example below presents a fix Pull Request opened by Snyk.
 
-![](<../../.gitbook/assets/github\_fix\_pr\_cropped-14july2022 (1).png>)
+![](../../.gitbook/assets/github\_fix\_pr\_cropped-14july2022.png)
 
 To review and adjust the automatic fix Pull Request settings in the Snyk GitHub Integration settings page, go to <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> (Organization Settings) **>** **Integrations > Source control > GitHub**.
 
@@ -89,11 +89,11 @@ Snyk tests any newly created pull request in your repositories for security vuln
 
 The example below presents how Snyk pull request checks appear on the GitHub Pull Request page.
 
-![](<../../.gitbook/assets/pr\_testing-14july2022 (1).png>)
+![](../../.gitbook/assets/pr\_testing-14july2022.png)
 
 You can review and adjust the pull request tests settings via the Snyk GitHub Integration settings page in <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> (Organization Settings)  **>** **Integrations > Source control > GitHub**.&#x20;
 
-![](../../.gitbook/assets/default\_snyk\_test-3july2022.png)
+![](<../../.gitbook/assets/image (143).png>)
 
 ## Required permissions scope for the GitHub integration
 
@@ -185,7 +185,7 @@ To configure the Auto-assign settings for all the projects from an imported priv
 To configure the Auto-assign settings for a specific project from an imported private repository**:**
 
 1. In the **Projects** tab for your organization, select and expand the relevant private repository, select a target, and click the **Settings** cog.\
-   &#x20;<img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (11).png" alt="" data-size="original">\
+   &#x20;<img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (9).png" alt="" data-size="original">\
    The project page opens.&#x20;
 2. In the project page, to apply unique settings for that specific project, select the **Settings** tab in the upper right, and the **Github integration** __ option in the left sidebar.
 3. Go to the **Pull request assignees for private repos** section at the bottom of the page and select, customize, and confirm the relevant options in the sections:
@@ -238,16 +238,16 @@ For example, to show a badge for the 4.x branch of the express repo, you would u
 
 #### Badge results
 
-* A green badge indicates that there are no vulnerabilities.   <img src="../../.gitbook/assets/image (142).png" alt="" data-size="line">
-* A red badge indicates how many vulnerabilities were found.   <img src="../../.gitbook/assets/image (289).png" alt="" data-size="line">   &#x20;
-* A grey badge indicates that the repository has not been scanned.   <img src="../../.gitbook/assets/image (1) (4).png" alt="" data-size="line">&#x20;
+* A green badge indicates that there are no vulnerabilities.   <img src="../../.gitbook/assets/image (93).png" alt="" data-size="line">
+* A red badge indicates how many vulnerabilities were found.   <img src="../../.gitbook/assets/image (375).png" alt="" data-size="line">   &#x20;
+* A grey badge indicates that the repository has not been scanned.   <img src="../../.gitbook/assets/image (209).png" alt="" data-size="line">&#x20;
 
 #### **Badge styles**
 
 To change the style of the badge, you can add the following query parameters after `badge.svg`:
 
-* Flat rectangle with squared edges: `?style=flat-square`   <img src="../../.gitbook/assets/image (74) (1) (2).png" alt="" data-size="line">
-* "Plastic" rectangle with rounded edges and shading `?style=plastic`   <img src="../../.gitbook/assets/image (142).png" alt="" data-size="line">
+* Flat rectangle with squared edges: `?style=flat-square`   <img src="../../.gitbook/assets/image (74) (2).png" alt="" data-size="line">
+* "Plastic" rectangle with rounded edges and shading `?style=plastic`   <img src="../../.gitbook/assets/image (93).png" alt="" data-size="line">
 
 ### **npm badges**
 
