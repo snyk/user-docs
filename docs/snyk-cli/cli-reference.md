@@ -254,6 +254,8 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--path=<PATH_TO_RESOURCE>`: [`ignore`](https://docs.snyk.io/snyk-cli/commands/ignore)
 
+`ignores for Snyk Code`: [`ignore / exclude`]([https://docs.snyk.io/snyk-cli/commands/ignore](https://docs.snyk.io/products/snyk-code/cli-for-snyk-code/excluding-directories-and-files-from-the-snyk-code-cli-test))
+
 ## Option for Maven projects
 
 `--scan-all-unmanaged`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
