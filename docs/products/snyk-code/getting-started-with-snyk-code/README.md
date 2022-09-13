@@ -34,7 +34,7 @@ When working with the Snyk Web UI, the next step in the activation process is in
 
 During the import process of your selected repositories, Snyk Code automatically analyzes your imported code in search of potential vulnerabilities. All the vulnerability findings that Snyk Code detects in the code of one imported repository, are aggregated in one Snyk Project, called **Code analysis**:
 
-![](<../../../.gitbook/assets/Snyk Code - Getting Started - Projects - Code analysis.png>)
+![](<../../../.gitbook/assets/Snyk Code - Getting Started - Projects - Code analysis (1).png>)
 
 **Note**: Unlike other Snyk products, which create a separate Snyk Project for each imported file, Snyk Code creates one Snyk Project for all the imported files of one repository. This way, all the vulnerabilities that were detected in the repository code are aggregated in one Project, and the Snyk Code results can present the data flow of a vulnerability across multiple files.
 

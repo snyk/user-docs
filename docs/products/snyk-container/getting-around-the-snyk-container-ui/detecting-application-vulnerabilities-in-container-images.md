@@ -1,7 +1,7 @@
 # Detecting application vulnerabilities in container images
 
 {% hint style="info" %}
-For the Container Registry integration, the feature is supported for Node, Ruby, PHP, Python, Go binaries, and Java. For the CLI and Kubernetes, the feature is supported for Node, Golang, PHP, Python, and Java.
+For the Container Registry integration, the feature is supported for Node, Ruby, PHP, Python, Go binaries, and Java. For the CLI and Kubernetes, the feature is supported for Node, Go binaries, PHP, Python, and Java.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -60,7 +60,7 @@ When an image is imported to Snyk, it appears under its registry record in the *
 
 With this feature enabled, you can also see nested manifest files detected in the image and their vulnerabilities and licensing issues.
 
-![](<../../../.gitbook/assets/mceclip2 (1) (1) (1) (3) (3) (4) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (19).png>)
+![](<../../../.gitbook/assets/mceclip2 (1) (1) (1) (3) (3) (4) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ### Automated scanning
 
