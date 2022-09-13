@@ -8,7 +8,7 @@ If you have several Organizations in your Snyk Account, before starting to use t
 
 By default, the CLI will run tests under your **Preferred Organization**, as defined in your **Account settings:**
 
-![](<../../../../.gitbook/assets/snyk Code - CLI - Organization - Preferred Org (1).png>)
+![](<../../../../.gitbook/assets/snyk Code - CLI - Organization - Preferred Org.png>)
 
 You can [change your **Preferred Organization**](https://docs.snyk.io/features/user-and-group-management/managing-groups-and-organizations/manage-snyk-organizations#setting-your-preferred-organization), or set another Organization for the CLI tests via the CLI.
 

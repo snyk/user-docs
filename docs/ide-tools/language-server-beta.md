@@ -60,6 +60,8 @@ The PROTOCOL\_VERSION currently is 3, but may increase with ongoing development.
 
 `-f <FILE>` allows specifying a log file instead of logging to the console
 
+`-licenses` displays the [licenses](https://github.com/snyk/snyk-ls/tree/main/licenses) used by Language Server
+
 ### **LSP Initialization Options**
 
 As part of the [Initialize message](https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#initialize) within `initializationOptions?: LSPAny;` Snyk supports the following settings:
@@ -170,7 +172,7 @@ To find the automatically managed Snyk CLI, the [XDG Data Home](https://specific
 
 After opening a supported file, the Language Server should be started by Sublime Text and findings will be highlighted.
 
-![Snyk Open Source findings displayed in Sublime Text](<../.gitbook/assets/image (5) (2).png>)
+![Snyk Open Source findings displayed in Sublime Text](<../.gitbook/assets/image (5) (1) (1).png>)
 
 ![Snyk Code findings displayed in Sublime Text](<../.gitbook/assets/image (7) (1) (1).png>)
 
@@ -288,4 +290,4 @@ else
 end
 ```
 
-![Snyk Code findings displayed in Neovim](<../.gitbook/assets/image (9) (1).png>)
+![Snyk Code findings displayed in Neovim](<../.gitbook/assets/image (219).png>)

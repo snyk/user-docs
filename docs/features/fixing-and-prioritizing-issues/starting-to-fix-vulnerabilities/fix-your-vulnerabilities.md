@@ -45,7 +45,7 @@ The Fix Advice area appears in the project details page near the top, similar to
 
 ![Upgrade issues tabs](<../../../.gitbook/assets/Screenshot 2021-10-12 at 14.08.13.png>)
 
-![Patchable issues tabs](<../../../.gitbook/assets/Screenshot 2021-10-12 at 14.10.00 (1).png>)
+![Patchable issues tabs](<../../../.gitbook/assets/Screenshot 2021-10-12 at 14.10.00.png>)
 
 You can also find additional advice and details further down on the Project details page:
 
@@ -61,7 +61,7 @@ From the CLI, for each list (upgrade and patch), results are displayed in groups
 
 Upgrade and patch results appear similar to the following:
 
-![](<../../../.gitbook/assets/image (17) (1).png>)
+![](<../../../.gitbook/assets/image (17) (1) (1).png>)
 
 ![](<../../../.gitbook/assets/image (49) (1).png>)
 
@@ -69,4 +69,4 @@ Patch recommendations with some and with all paths:
 
 ![](../../../.gitbook/assets/uuid-1afca091-a9a5-d42c-40b6-f48aa0e72584-en.png)
 
-![](<../../../.gitbook/assets/image (3) (1).png>)
+![](<../../../.gitbook/assets/image (3) (2).png>)
