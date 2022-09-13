@@ -220,6 +220,16 @@
   **Help Links:**
 
   
+### [SNYK-OSSI-2041](#snyk-ossi-2041-invalid-pagination-parameters) - Invalid pagination parameters
+  Please ensure the supplied pagination limit is > 1 and <= 1000, and that the offset is >= 0.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
 ---
 
-Genererated at 2022-09-07T15:32:57.597Z
+Genererated at 2022-09-13T09:27:03.483Z
