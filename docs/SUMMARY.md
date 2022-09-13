@@ -10,6 +10,7 @@
   * [Reports](introducing-snyk/reports.md)
   * [Snyk Vulnerability Database](introducing-snyk/getting-started-snyk-intel-vuln-db-access.md)
   * [Glossary](introducing-snyk/glossary.md)
+  * [Snyk Learn](introducing-snyk/snyk-learn.md)
 * [Getting started](getting-started/README.md)
   * [Create a Snyk account](getting-started/create-a-snyk-account.md)
   * [Set up an integration](getting-started/set-up-an-integration.md)
