@@ -55,7 +55,7 @@ If a tag exists in your group, you can apply it to any project.
 
 You can filter projects by tags in the **Group by none** (ungrouped) view.
 
-![](<../../.gitbook/assets/image (69).png>)
+<figure><img src="../../.gitbook/assets/Project tags.png" alt="Screenshot highlighting the Project Tags filter in the Snyk Projects Listing page"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 **Filter by tag autocomplete**: this field is intentionally limited to a small number of results. If your tag isn't displayed, enter more characters for the tag until it rises to the top of the results.
