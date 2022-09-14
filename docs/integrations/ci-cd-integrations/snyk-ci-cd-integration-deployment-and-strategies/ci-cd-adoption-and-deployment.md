@@ -1,6 +1,6 @@
 # CI/CD adoption and deployment
 
-When deciding to use a Snyk integration, compare the advantages of source control management (SCM) integrations and CI/CD integrations. See [SCM (Git) and CI/CD integration deployment intro](../../managing-integrations/scm-git-and-ci-cd-integration-deployment-intro.md).
+When deciding to use a Snyk integration, compare the advantages of source control management (SCM) integrations and CI/CD integrations. See [SCM (Git) and CI/CD integration deployment intro](../../git-repository-and-ci-cd-integrations-comparisons.md).
 
 ## Typical stages in adopting CI/CD Integration
 

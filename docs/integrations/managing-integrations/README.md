@@ -1,6 +1,6 @@
 # Managing integrations
 
-When implementing a Snyk integration, you will decide whether to use a source control management (SCM) integration or a continuous integration/continuous delivery (CI/CD) integration. See [SCM (Git) and CI/CD integration deployment intro](scm-git-and-ci-cd-integration-deployment-intro.md).
+When implementing a Snyk integration, you will decide whether to use a source control management (SCM) integration or a continuous integration/continuous delivery (CI/CD) integration. See [SCM (Git) and CI/CD integration deployment intro](../git-repository-and-ci-cd-integrations-comparisons.md).
 
 Administrators and account owners can:
 

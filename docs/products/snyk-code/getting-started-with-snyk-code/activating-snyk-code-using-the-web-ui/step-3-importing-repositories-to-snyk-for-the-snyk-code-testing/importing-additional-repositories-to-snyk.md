@@ -10,7 +10,7 @@ If you already have Projects in your Snyk Account, you can add other repositorie
 
 2\. On the **Dashboard** or **Projects** page, click the **Add project** button. Then, select from the pop-up list the SCM that contains the repositories you want to import:
 
-<figure><img src="../../../../../.gitbook/assets/Snyk Code - Add project button - SCM options.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Snyk Code - Add project button - SCM options (1).png" alt=""><figcaption></figcaption></figure>
 
 The **Personal and Organization repositories** page appears, displaying the repositories available to you in the selected SCM.
 
@@ -30,4 +30,4 @@ The **Personal and Organization repositories** page appears, displaying the repo
 
 The selected repositories are imported to Snyk Code, and a progress bar appears on the **Projects** page. When the import is completed, a confirmation message appears on the **Projects** page, informing you of the success of the import. Your imported repositories appear as Target folders, each containing the **Code analysis** Project that includes the findings of the Snyk Code test:
 
-![](<../../../../../.gitbook/assets/Snyk Code - Get Started - Code analysis Project (1) (1) (1) (1).png>)
+![](<../../../../../.gitbook/assets/Snyk Code - Get Started - Code analysis Project (1) (1) (1) (1) (1).png>)

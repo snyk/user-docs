@@ -30,7 +30,7 @@ The following table describes the different parts of the **Summary** area:
 
 ### Activity&#x20;
 
-![](<../../.gitbook/assets/image (173).png>)
+![](<../../.gitbook/assets/image (255).png>)
 
 For the **Activity** area, the following are the parameters and their descriptions:
 
