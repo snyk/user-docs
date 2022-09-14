@@ -123,17 +123,10 @@ You can adjust the version of Python Snyk uses to scan dependencies, in both the
 
 ### Setting Python version in the CLI
 
-Add the following parameter to `snyk test` or `snyk monitor`
+Add the following parameter to `snyk test` or `snyk monitor`  with the value of the python binary:
 
 ```
 --command=python3
-```
-
-You can also set a specific Python version by adding the following to a `.snyk` [policy file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file).
-
-```
-language-settings:
-python: '3.7.2'
 ```
 
 ### Setting Python version in Git projects

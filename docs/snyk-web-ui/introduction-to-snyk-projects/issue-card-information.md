@@ -11,7 +11,7 @@ Header section information:
 ![](../../.gitbook/assets/issue-card-header.png)
 
 * [Severity level](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/severity-levels): for example, **H** (High)
-* **Issue name**: for example, **Arbitrary Command Injection**
+* **Issue name**: for example, Arbitrary Command Injection
 * **Score**: [Priority score](https://docs.snyk.io/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score): 0 - 1,000.
 * **Type**: VULNERABILITY or LICENSE ISSUE.
 * Links to [CWE](https://cwe.mitre.org/index.html) (Common Weakness Evaluation), [CVSS](https://www.first.org/cvss/calculator/3.1) (Common Vulnerability Scoring System), and Snyk [Intel Vulnerability DB](https://snyk.io/vuln) information for that issue.
