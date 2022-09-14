@@ -23,3 +23,4 @@ redirects:
   getting-started/getting-started-with-snyk-dashboard: snyk-web-ui/getting-started-with-the-snyk-web-ui.md
   snyk-open-source/open-source-basics/fixing-vulnerabilities: products/snyk-open-source/open-source-basics/README.md
   error-catalog:   more-info/error-catalog.md
+  ide-tools/language-server-beta: ide-tools/language-server.md
