@@ -5,7 +5,7 @@
 ---
 # [Snyk](https://docs.snyk.io/introducing-snyk)
 ### [SNYK-0001](#snyk-0001-too-many-requests) - Too many requests
-  The service has received too many requests and will be throttled
+  The service has received too many requests and will be throttled.
 
   **HTTP Status:** [429](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429)
 
@@ -67,7 +67,7 @@
 
   - [https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support)
 ### [SNYK-OS-0002](#snyk-os-0002-unable-to-parse-manifest-file) - Unable to parse manifest file
-  The provided manifest file could not be parsed
+  The provided manifest file could not be parsed.
 
   **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -79,7 +79,7 @@
 ---
 # Builds
 ### [SNYK-OS-8001](#snyk-os-8001-invalid-request) - Invalid request
-  The provided request payload is not valid for the selected ecosystem. Please review the API documentation
+  The provided request payload is not valid for the selected ecosystem. Please review the API documentation.
 
   **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -150,7 +150,7 @@
   **Help Links:**
 
   
-### [SNYK-OSSI-2021](#snyk-ossi-2021-purl-component(s)-required) - Purl component(s) required
+### [SNYK-OSSI-2021](#snyk-ossi-2021-purl-components-required) - Purl components required
   Currently we require a list of components of the package url specification. The purl supplied by the user did not specify all the components which we currently require.
 
   **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
@@ -180,7 +180,7 @@
   **Help Links:**
 
   
-### [SNYK-OSSI-2031](#snyk-ossi-2031-vulnerability-service-is-currently-not-available.-please-try-again-in-a-few-minutes) - Vulnerability service is currently not available. Please try again in a few minutes
+### [SNYK-OSSI-2031](#snyk-ossi-2031-vulnerability-service-is-currently-not-available) - Vulnerability service is currently not available
   This issue is unexpected, and the service should recover quickly. If not, please contact support.
 
   **HTTP Status:** [503](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)
@@ -190,7 +190,7 @@
   **Help Links:**
 
   
-### [SNYK-OSSI-2032](#snyk-ossi-2032-this-issue-is-unexpected,-and-the-service-should-recover-quickly.-if-not,-please-contact-support) - This issue is unexpected, and the service should recover quickly. If not, please contact support
+### [SNYK-OSSI-2032](#snyk-ossi-2032-this-issue-is-unexpected-and-the-service-should-recover-quickly-if-not-please-contact-support) - This issue is unexpected and the service should recover quickly if not please contact support
   An unexpected error occurred. Please try again, and if you continue to experience issues please contact support.
 
   **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
@@ -200,7 +200,7 @@
   **Help Links:**
 
   
-### [SNYK-OSSI-2033](#snyk-ossi-2033-this-issue-is-unexpected,-and-the-service-should-recover-quickly.-if-not,-please-contact-support) - This issue is unexpected, and the service should recover quickly. If not, please contact support
+### [SNYK-OSSI-2033](#snyk-ossi-2033-this-issue-is-unexpected-and-the-service-should-recover-quickly-if-not-please-contact-support) - This issue is unexpected and the service should recover quickly if not please contact support
   An unexpected error occurred with the vulnerability service. Please try again, and if you continue to experience issues please contact support.
 
   **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
@@ -232,4 +232,4 @@
   
 ---
 
-Genererated at 2022-09-13T14:24:31.906Z
+Genererated at 2022-09-14T09:58:08.033Z
