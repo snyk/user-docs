@@ -42,7 +42,7 @@ For a full list of Vulnerability Types/Security Rules that are applied to each s
 
 The following are the supported extensions:
 
-* c, cc, cpp, cxx, h, hpp, hxx, ejs, es, es6, htm, html, js, jsx, ts, tsx, vue, java, erb, haml, rb, rhtml, slim, py, go, ASPX, Aspx, CS, Cs, aspx, cs, php, xml.
+* ejs, es, es6, htm, html, js, jsx, ts, tsx, vue, java, erb, haml, rb, rhtml, slim, py, go, ASPX, Aspx, CS, Cs, aspx, cs, php, xml.
 
 ### Framework support
 
