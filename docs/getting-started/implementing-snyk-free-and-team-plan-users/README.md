@@ -4,6 +4,10 @@
 Just signed up to Snyk? Get results and start fixing issues in minutes!&#x20;
 {% endhint %}
 
+{% hint style="info" %}
+See [Implementing Snyk: Business and Enterprise plan users](../implementing-snyk-business-and-enterprise-plan-users.md) for details of using Snyk with those [pricing plans](https://snyk.io/plans/).
+{% endhint %}
+
 Snyk is here to support you on your way to secure code.&#x20;
 
 Use this article to guide you through both the initial setup, and the longer term process of securing your code, in the following key areas:&#x20;
