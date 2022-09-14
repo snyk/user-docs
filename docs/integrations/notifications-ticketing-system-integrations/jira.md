@@ -35,9 +35,7 @@ Once you set up the Jira integration connection, open one of your Snyk Projects 
 
 When you click the **Create an issue** button, a Jira issue creation form appear. This form includes the Snyk issue details, which are copied into the relevant fields. You can review and edit this form before creating the issue.
 
-Select to which Jira project you want to send the issue. The fields in the example below are based on the fields that the specific project has, so switching between projects may show different options.
-
-**Note:**  Snyk currently only supports non-Epic Jira ticket creation. Epics will need to be added manually to the ticket after its creation.
+Select the Jira project to which you want to send the issue. The fields in the example below are based on the fields that the specific project has, so switching between projects may show different options.
 
 ![](../../.gitbook/assets/uuid-67202f8e-7f70-1e84-6044-f65ec36138b3-en.png)
 
