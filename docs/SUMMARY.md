@@ -91,6 +91,7 @@
   * [Configure the Snyk CLI](snyk-cli/configure-the-snyk-cli.md)
 * [Snyk API](snyk-api-info/README.md)
   * [Getting started using Snyk REST API](snyk-api-info/getting-started-using-snyk-rest-api.md)
+  * [Scenarios for using Snyk API](snyk-api-info/scenarios-for-using-snyk-api.md)
   * [Using Snyk API](snyk-api-info/using-snyk-api/README.md)
     * [Aggregated project issues API returns an array of ignoreReasons](snyk-api-info/using-snyk-api/aggregated-project-issues-api-returns-an-array-of-ignorereasons.md)
     * [Determine why API Import targets has failed](snyk-api-info/using-snyk-api/determine-why-api-import-targets-has-failed.md)

@@ -38,7 +38,7 @@ snyk code test
 
 Snyk Code tests the **snyk-goof** repository, and displays the vulnerability issue that were discovered in the terminal:
 
-![](<../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - 1 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - 1 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
 
 ### **Testing a repository from a different location**
 
@@ -62,7 +62,7 @@ To test the **snyk-goof** repository from another directory, we enter:
 snyk code test /Users/username/Documents/Repositories/snyk-goof
 ```
 
-![ ](<../../../.gitbook/assets/snyk Code - CLI - snyk code test - Any folder - 2.png>)
+![](<../../../.gitbook/assets/snyk Code - CLI - snyk code test - Any folder - 2.png>)
 
 * To explore the test results, see [Understanding the Snyk Code CLI results](https://docs.snyk.io/products/snyk-code/cli-for-snyk-code/snyk-code-cli-results).
 * To work with the test results, see:
@@ -70,5 +70,3 @@ snyk code test /Users/username/Documents/Repositories/snyk-goof
   * [Outputting the test results to a JSON or SARIF format in the terminal](https://docs.snyk.io/products/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/outputting-the-test-results-to-a-json-or-sarif-format-in-the-terminal).
   * [Exporting the test results to a JSON or SARIF file](https://docs.snyk.io/products/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/exporting-the-test-results-to-a-json-or-sarif-file).
   * [Displaying the CLI results in an HTML format using the Snyk-to-HTML feature](https://docs.snyk.io/products/snyk-code/cli-for-snyk-code/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature).
-
-&#x20;

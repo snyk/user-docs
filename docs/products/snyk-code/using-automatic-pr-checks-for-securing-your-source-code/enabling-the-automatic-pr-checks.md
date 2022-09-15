@@ -62,11 +62,11 @@ By default, the Settings on the Project level override the Settings on the Organ
 
 3\. Locate the **Code analysis** Project for which you want to enable the Automatic PR Checks. Then, click the **Settings** button on the right side of its row:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Project - Project Settings button.png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Project - Project Settings button (1).png>)
 
 4\. On the Project **Settings** page, click the relevant **integration** tab on left menu:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Project - Settings - Integration page.png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Project - Settings - Integration page (1).png>)
 
 5\. On the **integration** page > **Snyk Code for pull requests** section, select one of the following:
 

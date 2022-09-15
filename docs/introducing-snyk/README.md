@@ -6,11 +6,11 @@ Snyk is a platform allowing you to scan, prioritize, and fix security vulnerabil
 
 ### Snyk’s developer-first approach
 
-Developers now assemble applications with a combination of proprietary and open source code, run that code in containers, and then deploy with infrastructure as code configurations with technologies like Kubernetes and Terraform.&#x20;
+Developers now assemble applications with a combination of proprietary and open source code, run that code in containers, and then deploy with infrastructure as code configurations with technologies like Kubernetes and Terraform.
 
 A good security process secures each of these components where they are built and maintained. Snyk integrates into DevOps processes to work the with developers in the methods they prefer to work while following and supporting industry best practices. Snyk integrates directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit.
 
-![](<../.gitbook/assets/image (162) (1).png>)
+![](<../.gitbook/assets/image (162) (1) (1).png>)
 
 #### Using Snyk in your workflow:
 
@@ -19,9 +19,9 @@ A good security process secures each of these components where they are built an
 
 ### Ways to run Snyk
 
-Snyk runs in the following environments:&#x20;
+Snyk runs in the following environments:
 
-* In the browser as [Snyk Web UI](../snyk-web-ui/).&#x20;
+* In the browser as [Snyk Web UI](../snyk-web-ui/).
 * In your local Command Line Interface (or in your pipeline) with the [Snyk CLI](https://docs.snyk.io/snyk-cli).
 * In various [IDE plugins](../ide-tools/) that embed Snyk in your local dev environment.
 * In the [Snyk API](https://support.snyk.io/hc/en-us/categories/360000665657-Snyk-API) (Application Programming Interface).
@@ -50,11 +50,8 @@ Google, Salesforce, Atlassian, Twilio, Revolut, and many more are using Snyk to 
 
 ### **How do I get started?**
 
-See [Getting started](../getting-started/) for full information.&#x20;
+See [Getting started](../getting-started/) for full information.
 
 ### What happens to my data?
 
 See [How Snyk handles your data](https://docs.snyk.io/more-info/how-snyk-handles-your-data) for details of Snyk data handling.
-
-
-

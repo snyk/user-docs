@@ -33,7 +33,7 @@ To add a default project:
 4. Click **Add selected repositories**.\
    Snyk scans the entire file tree for dependency files and imports them to Snyk \*\*\*\* as \*\*\*\* Projects\*\*.\*\*
 
-![](<../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en (1).png>)
+![](../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en.png)
 
 ## Adding custom file locations and excluding folders
 
@@ -49,7 +49,7 @@ Use this procedure to add an Azure Repository dependency from a non-default path
 The relative path field is case-sensitive.
 {% endhint %}
 
-![](<../../.gitbook/assets/azure\_custom\_repo-11aug2022 (1).png>)
+![](../../.gitbook/assets/azure\_custom\_repo-11aug2022.png)
 
 ### Exclude folders from import
 
@@ -106,7 +106,7 @@ Collaborator users cannot complete this task.
 2. In the **Azure Repos** tile, click <img src="../../.gitbook/assets/integration_settings_tile_cog-11aug2022.png" alt="" data-size="line"> to open **Organization Settings > Integrations >Azure Repos> Account credentials**.\
    <img src="../../.gitbook/assets/integrations -azure_repo_tile-11aug2022.png" alt="" data-size="original">\
 
-3.  Set the Azure DevOps organization that you want to integrate with by entering the slug for your organization (![](<../../.gitbook/assets/image (163) (1) (1).png>)) and the personal access token that you generated. \\
+3.  Set the Azure DevOps organization that you want to integrate with by entering the slug for your organization (![](<../../.gitbook/assets/image (163) (1).png>)) and the personal access token that you generated. \\
 
     Enterprise customers can also provide a custom URL for an Azure Repos Server private instance that is publicly reachable.
 4. Click **Save**.\

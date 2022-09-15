@@ -11,7 +11,7 @@ We can now see your scan results.
 
 {% hint style="info" %}
 **Reminder: where am I?**\
-****In the Snyk Web UI, you see information specific for your **Organization** (such as your team), which is under a **Group** (such as your company). This allows your company to organize and collect data for the work your teams are doing. See [Groups, Organizations and Users](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/groups-organizations-and-users).
+\*\*\*\*In the Snyk Web UI, you see information specific for your **Organization** (such as your team), which is under a **Group** (such as your company). This allows your company to organize and collect data for the work your teams are doing. See [Groups, Organizations and Users](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/groups-organizations-and-users).
 {% endhint %}
 
 Open the [Snyk Web UI](../../snyk-web-ui/), navigate to your **Projects** page, and see your imported repositories (or **targets** if importing non-code information). For example:
@@ -26,9 +26,9 @@ When [setting up your GitHub integration](https://docs.snyk.io/integrations/git-
 
 ![](<../../.gitbook/assets/image (99).png>)
 
-When you then import a Project, private repositories are identified with a “lock” symbol (<img src="../../.gitbook/assets/image (101).png" alt="" data-size="line">) in the imported scan details:&#x20;
+When you then import a Project, private repositories are identified with a “lock” symbol (<img src="../../.gitbook/assets/image (101).png" alt="" data-size="line">) in the imported scan details:
 
-![](<../../.gitbook/assets/image (125).png>)
+![](<../../.gitbook/assets/image (125) (1).png>)
 
 For customers on free plans, private repository scans count towards your test count limit.
 
@@ -38,16 +38,16 @@ Typically, team leads do the original integration setup and Project import, rath
 
 ### View lists of projects
 
-When you open an entry, you see the different Snyk Projects scanned in that entry.&#x20;
+When you open an entry, you see the different Snyk Projects scanned in that entry.
 
 {% hint style="info" %}
 **Reminder: what is a Project?**\
-****A Snyk Project is an item scanned by Snyk; for example, a manifest file listing all your open source libraries as dependencies. See [Introduction to Snyk Projects](../../snyk-web-ui/introduction-to-snyk-projects/).
+\*\*\*\*A Snyk Project is an item scanned by Snyk; for example, a manifest file listing all your open source libraries as dependencies. See [Introduction to Snyk Projects](../../snyk-web-ui/introduction-to-snyk-projects/).
 {% endhint %}
 
 For example:
 
-![](<../../.gitbook/assets/image (187).png>)
+![](<../../.gitbook/assets/image (187) (1).png>)
 
 ### Understand Project information
 
@@ -74,7 +74,7 @@ Other files and types can be displayed; see [View project information](https://d
 
 Snyk treats each item in this list as a separate **Project**.
 
-This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (27) (1).png>)) to define how that Project is scanned:
+This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (27) (1) (1).png>)) to define how that Project is scanned:
 
 ![](<../../.gitbook/assets/image (379).png>)
 
@@ -84,11 +84,11 @@ For example, you can use Project settings to change scan frequency, setting how 
 
 Let’s go back to the results for your scan:
 
-![](<../../.gitbook/assets/image (167).png>)
+![](<../../.gitbook/assets/image (167) (2).png>)
 
 The scan shows you all vulnerabilities in all aspects of an application. Of course, it's unlikely that you are responsible for every entry in this list, but it's important to be aware of the full picture.
 
-So if your Snyk Open Source scan shows no vulnerabilities in your open source libraries - great :tada:! But there may still be a lot of issues identified by, say, Snyk Container about your container. And even if the developers did not create or manage these issues, you should still know about them.&#x20;
+So if your Snyk Open Source scan shows no vulnerabilities in your open source libraries - great :tada:! But there may still be a lot of issues identified by, say, Snyk Container about your container. And even if the developers did not create or manage these issues, you should still know about them.
 
 #### More information
 
@@ -102,4 +102,3 @@ Training:
 ### What's next?
 
 Now you understand what results you're seeing, you need to [understand the vulnerabilities](understand-your-vulnerabilities.md) themselves.
-

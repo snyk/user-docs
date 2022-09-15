@@ -25,9 +25,9 @@ Once you've fine-tuned the settings and integrations for an organization, you ca
 
 **Note**: It is highly recommended to enter a unique name for the new organization.
 
-3\. Select an organization to use as a model for settings and integrations from the drop down list.&#x20;
+3\. Select an organization to use as a model for settings and integrations from the drop down list.
 
-4\. Select **Create organization**.&#x20;
+4\. Select **Create organization**.
 
 ![](../../../.gitbook/assets/2022-06-27\_17-28-16.png)
 
@@ -88,7 +88,7 @@ You can change the Preferred Organization in your Snyk Account via your Account 
 
 **Note**: The Organization drop-down list displays your existing organizations.
 
-![](<../../../.gitbook/assets/image (244).png>)
+![](<../../../.gitbook/assets/image (244) (1).png>)
 
 3\. Click the **Update Preferred Org** button to save your new setting.
 

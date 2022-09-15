@@ -36,14 +36,11 @@ The following information is displayed:
   * the name of the recommended base image version
   * the number of vulnerabilities existent in the recommended upgrade
   * a summary of the vulnerability severities accordingly.
-*   Filters—in addition to the other filters available for all supported project types, when you view a container project, you can also filter by:
+* Filters—in addition to the other filters available for all supported project types, when you view a container project, you can also filter by:
+  * a specific binary or by OS packages (for binaries/packages containing issues)
+  * Dockerfile instructions - if you attach your Dockerfile, then you can filter to view issues associated only with the base image, or to view Dockerfile-related advice (user instruction), or both
 
-    * a specific binary or by OS packages (for binaries/packages containing issues)
-    * Dockerfile instructions - if you attach your Dockerfile, then you can filter to view issues associated only with the base image, or to view Dockerfile-related advice (user instruction), or both
-
-
-
-![](<../../../.gitbook/assets/image (71).png>)
+![](<../../../.gitbook/assets/image (71) (4).png>)
 
 {% hint style="info" %}
 **Note**\

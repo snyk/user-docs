@@ -12,11 +12,11 @@ Snyk's GitHub Enterprise integration lets you:
 
 ## Setting up a GitHub Enterprise Integration
 
-The process to connect Snyk with your GitHub Enterprise repositories includes the following steps:&#x20;
+The process to connect Snyk with your GitHub Enterprise repositories includes the following steps:
 
-1. Create a dedicated service account in GitHub Enterprise, with _**write**_ level (or higher) permissions for the repos you want to monitor with Snyk permissions. \
+1. Create a dedicated service account in GitHub Enterprise, with _**write**_ level (or higher) permissions for the repos you want to monitor with Snyk permissions.\
    See [Required permissions scope for the GitHub integration](github-enterprise-integration.md#required-permissions-scope-for-the-github-integration) for details.
-2. Generate a personal access token for that account, with **repo (all)**, **admin:read:org**, and **admin:repo\_hooks (read & write)** permissions scope. \
+2. Generate a personal access token for that account, with **repo (all)**, **admin:read:org**, and **admin:repo\_hooks (read & write)** permissions scope.\
    See [GitHub Enterprise documentation ](https://docs.github.com/en/enterprise-server@2.22/github/authenticating-to-github/creating-a-personal-access-token)for details.
 3. **Authorize** your personal access token and Enable SSO:
    1. In Snyk, go to the **Integrations** page and click the **GitHub Enterprise** card.
@@ -24,7 +24,7 @@ The process to connect Snyk with your GitHub Enterprise repositories includes th
       \
       Snyk connects to your GitHub Enterprise instance. When the connection succeeds, the list of available repositories is displayed.\
       \
-      **Note**: To use this integration to integrate with your GitHub Enterprise Cloud, provide the following URL:  [https://api.github.com](https://api.github.com).
+      **Note**: To use this integration to integrate with your GitHub Enterprise Cloud, provide the following URL: [https://api.github.com](https://api.github.com).
 4. Select the repositories you want to import to Snyk and click **Add selected repositories**.
 
 Snyk starts scanning the selected repos for dependency files (such as package.json) in the entire directory tree and imports them to Snyk as projects.
@@ -68,7 +68,7 @@ Snyk scans your projects on either a daily or a weekly basis. When new vulnerabi
 
 The example below presents a fix pull request opened by Snyk:
 
-![](../../.gitbook/assets/github\_fix\_pr\_cropped-14july2022.png)
+![](<../../.gitbook/assets/github\_fix\_pr\_cropped-14july2022 (1).png>)
 
 To review and update the automatic fix pull request settings:
 
@@ -83,14 +83,14 @@ Snyk tests any newly created pull requests in your repositories for security vul
 
 The example below presents how Snyk pull request checks appear on the GitHub Enterprise Pull Request page.
 
-![](../../.gitbook/assets/pr\_testing-14july2022.png)
+![](<../../.gitbook/assets/pr\_testing-14july2022 (1).png>)
 
 To review and adjust the pull request tests settings:
 
-1. In Snyk, go to  <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > GitHub Enterprise**, and click **Edit Settings**.
-2. Scroll to **Default Snyk test for pull requests.**&#x20;
+1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > GitHub Enterprise**, and click **Edit Settings**.
+2. Scroll to **Default Snyk test for pull requests.**
 
-![](../../.gitbook/assets/default\_snyk\_test-3july2022.png)
+![](<../../.gitbook/assets/image (143).png>)
 
 ## Required permissions scope for the GitHub integration
 

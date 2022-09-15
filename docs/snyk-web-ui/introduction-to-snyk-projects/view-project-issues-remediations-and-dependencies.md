@@ -37,7 +37,7 @@ For each issue, this display shows details about the vulnerability including its
 
 Click **More about this issue** to view detailed information about the vulnerability using [Snyk's vulnerability database](https://snyk.io/product/vulnerability-database/), giving you a deeper insight into the issue, including its CVSS score:
 
-![](../../.gitbook/assets/image15.png)
+![](<../../.gitbook/assets/image15 (1).png>)
 
 ### View fixes
 
@@ -45,12 +45,12 @@ Snyk's knowledge of the transitive dependencies in your project make it possible
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-19 at 11.57.07.png>)
 
-See [Fixing vulnerabilities](broken-reference) for details.
+See [Fixing vulnerabilities](broken-reference/) for details.
 
 ### View dependencies
 
 Snyk uses the package manager of your application to build the dependency tree and display it in the **dependency** tab of the project view. This shows which components introduce a vulnerability, to show how the dependency was introduced to the application:
 
-![](../../.gitbook/assets/image23.png)
+![](<../../.gitbook/assets/image23 (1).png>)
 
 For example, the above screenshot shows a vulnerability based on the transitive dependency **qs@2.2.4**, brought in from the direct dependency **body-parser@ 1.9.0**.

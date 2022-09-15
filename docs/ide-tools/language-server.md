@@ -8,7 +8,7 @@ Snyk offers IDE integrations that allow you to use the functionality of Snyk in 
 
 The Snyk Language Server scans for vulnerabilities, open source license issues, code quality, and infrastructure misconfigurations and returns results with security issues categorized by issue type and severity.
 
-For open source, you receive automated, algorithm-based fix suggestions for both direct and transitive dependencies.&#x20;
+For open source, you receive automated, algorithm-based fix suggestions for both direct and transitive dependencies.
 
 Snyk Language Server scans for the following types of issues:
 
@@ -18,9 +18,9 @@ Snyk Language Server scans for the following types of issues:
 
 After you have installed and configured the Language Server, every time you run it, open a file, or save, Snyk scans the manifest files, proprietary code, and configuration files in your project. Snyk delivers actionable vulnerability, license, code quality, or misconfiguration issue details and displays the results natively within the LSP supporting Editor or IDE.
 
-This page explains supported environments, support, and giving feedback and provides installation instructions.&#x20;
+This page explains supported environments, support, and giving feedback and provides installation instructions.
 
-## Where you can download the Language Server&#x20;
+## Where you can download the Language Server
 
 Currently, Snyk Language Server is only automatically downloaded when you use the Eclipse plugin. Language Server can also be downloaded manually; the following shell script shows how to do that.
 
@@ -176,8 +176,6 @@ After opening a supported file, the Language Server should be started by Sublime
 
 ![Snyk Code findings displayed in Sublime Text](<../.gitbook/assets/image (7) (1) (1).png>)
 
-
-
 ## Example Configuration for Neovim
 
 The setup is as follows:
@@ -290,4 +288,4 @@ else
 end
 ```
 
-![Snyk Code findings displayed in Neovim](<../.gitbook/assets/image (9) (1).png>)
+![Snyk Code findings displayed in Neovim](<../.gitbook/assets/image (9) (1) (1).png>)

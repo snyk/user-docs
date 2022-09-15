@@ -12,13 +12,13 @@ In the previous step, adding your java-goof repository to Snyk automatically sta
 
 In your Bitbucket repository, clicking on your **Snyk** link takes you to a page where you can review results from Snyk within Bitbucket as shown below:
 
-![](<../../../../../../.gitbook/assets/image (191).png>)
+![](<../../../../../../.gitbook/assets/image (191) (1).png>)
 
 Snyk automatically scans your application for vulnerabilities and presents results within Bitbucket. This summary starts with a count of all vulnerabilities for the major elements, or projects, in your repository. For the java-goof application, you will see multiple maven and Dockerfile projects in a logical structure.
 
 If you click into the top-level Dockerfile link, you will a see a screen similar to what is shown below:
 
-![](<../../../../../../.gitbook/assets/image (103) (1) (1) (1).png>)
+![](<../../../../../../.gitbook/assets/image (103) (1) (1) (1) (2).png>)
 
 The summary line is replicated for the Dockerfile to maintain context.
 
@@ -48,7 +48,7 @@ Some of the details you see are shown in the next two images, and they include:
     fix known exploits, how new the vulnerability is, and whether it is reachable or not.
 * When enabled, the [Jira integration](https://snyk.io/blog/jira-integration/) lets you add a Jira ticket.
 
-![](<../../../../../../.gitbook/assets/image (86) (1) (1) (1).png>)
+![](<../../../../../../.gitbook/assets/image (106).png>)
 
 ![](<../../../../../../.gitbook/assets/image (145) (1) (1) (1) (1) (1) (1) (2).png>)
 

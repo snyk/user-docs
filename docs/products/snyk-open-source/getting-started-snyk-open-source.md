@@ -14,7 +14,7 @@ This process describes getting started using the [Snyk Web UI](../../snyk-web-ui
 Ensure you have:
 
 * [Created a Snyk account](../../getting-started/create-a-snyk-account.md).
-* [Set up integration](../../getting-started/set-up-an-integration.md) with your code repository on a supported system such as GitHub.&#x20;
+* [Set up integration](../../getting-started/set-up-an-integration.md) with your code repository on a supported system such as GitHub.
 * [Imported a Snyk Project for scanning](../../getting-started/import-a-project.md)
 
 See the [Getting started](../../getting-started/) section for more details.
@@ -27,7 +27,7 @@ You can expand a Target to see vulnerability information for Projects, including
 
 <figure><img src="../../.gitbook/assets/Getting started with open source.png" alt="Screenshot of a Snyk Project listing"><figcaption><p>.</p></figcaption></figure>
 
-Click an entry to open the issues view for that entry, including the module where it was introduced,  how to fix it, plus more details about the vulnerability itself.
+Click an entry to open the issues view for that entry, including the module where it was introduced, how to fix it, plus more details about the vulnerability itself.
 
 ![](../../.gitbook/assets/project-details.png)
 
@@ -54,6 +54,6 @@ To fix vulnerabilities:
 5. Snyk acts on the PR and displays a results screen.
 6. Optionally, select the **Files changed** tab to see details of the changes made.
 
-![](<../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22 (1).png>)
+![](../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22.png)
 
 See [fix-your-vulnerabilities.md](../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md "mention") for more details.

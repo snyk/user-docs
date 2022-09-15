@@ -22,7 +22,7 @@ To do this, in [your Integrations page](https://app.snyk.io/integrations), navig
 
 This will take you to a page where you'll be prompted to enter your Azure service principal credentials:
 
-![](<../../.gitbook/assets/image (29).png>)
+![](<../../.gitbook/assets/image (29) (1).png>)
 
 Instructions for how to generate and locate your Azure service principal credentials are below.
 
@@ -73,7 +73,7 @@ You can also check the status directly on the Azure Functions integration settin
 
 If you are unable to connect, re-enter your account credentials to verify that they are correct:
 
-![](<../../.gitbook/assets/image (27).png>)
+![](<../../.gitbook/assets/image (27) (2).png>)
 
 ## **Disable the Azure Functions integration**
 
