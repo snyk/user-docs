@@ -44,6 +44,16 @@
   **Help Links:**
 
   
+### [SNYK-005](#snyk-005-unauthorised-error) - Unauthorised error
+  Authentication failed or has not been provided.
+
+  **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
 ### [SNYK-9999](#snyk-9999-server-error) - Server error
   An unexpected server error was encountered.
 
@@ -232,4 +242,4 @@
   
 ---
 
-Genererated at 2022-09-14T09:58:08.033Z
+Genererated at 2022-09-15T12:24:50.589Z
