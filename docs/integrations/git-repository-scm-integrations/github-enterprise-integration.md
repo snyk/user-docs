@@ -68,7 +68,7 @@ Snyk scans your projects on either a daily or a weekly basis. When new vulnerabi
 
 The example below presents a fix pull request opened by Snyk:
 
-![](<../../.gitbook/assets/github\_fix\_pr\_cropped-14july2022 (1).png>)
+![](../../.gitbook/assets/github\_fix\_pr\_cropped-14july2022.png)
 
 To review and update the automatic fix pull request settings:
 
@@ -83,14 +83,14 @@ Snyk tests any newly created pull requests in your repositories for security vul
 
 The example below presents how Snyk pull request checks appear on the GitHub Enterprise Pull Request page.
 
-![](<../../.gitbook/assets/pr\_testing-14july2022 (1).png>)
+![](../../.gitbook/assets/pr\_testing-14july2022.png)
 
 To review and adjust the pull request tests settings:
 
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > GitHub Enterprise**, and click **Edit Settings**.
 2. Scroll to **Default Snyk test for pull requests.**
 
-![](<../../.gitbook/assets/image (143).png>)
+![](../../.gitbook/assets/default\_snyk\_test-3july2022.png)
 
 ## Required permissions scope for the GitHub integration
 

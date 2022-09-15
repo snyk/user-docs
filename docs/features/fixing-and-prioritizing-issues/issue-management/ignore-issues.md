@@ -30,7 +30,7 @@ Each issue card has an **Ignore** button that opens a dialog where you can selec
 
 If you select **Ignore temporarily,** then you can check the **Until fix is available** checkbox:
 
-![Ignore temporarily](<../../../.gitbook/assets/image (19) (1) (1).png>)
+![Ignore temporarily](<../../../.gitbook/assets/image (19) (1).png>)
 
 This resurfaces the vulnerability as soon as Snyk has a fix for it, and optionally you can give additional details on why you are ignoring the issue. This is checked by default if there is currently no fix available for this issue.
 
@@ -75,7 +75,7 @@ Refer to the following example:
 
 The following shows `snyk test` results before ignoring in the Web UI:
 
-![Snyk test results before ignoring in the Web UI](<../../../.gitbook/assets/image (18) (1) (1).png>)
+![Snyk test results before ignoring in the Web UI](<../../../.gitbook/assets/image (18) (1).png>)
 
 The following shows `snyk test` results after ignoring in the Web UI:
 

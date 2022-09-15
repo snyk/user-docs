@@ -28,7 +28,7 @@ When [setting up your GitHub integration](https://docs.snyk.io/integrations/git-
 
 When you then import a Project, private repositories are identified with a “lock” symbol (<img src="../../.gitbook/assets/image (101).png" alt="" data-size="line">) in the imported scan details:
 
-![](<../../.gitbook/assets/image (125) (1).png>)
+![](<../../.gitbook/assets/image (125).png>)
 
 For customers on free plans, private repository scans count towards your test count limit.
 
@@ -47,7 +47,7 @@ When you open an entry, you see the different Snyk Projects scanned in that entr
 
 For example:
 
-![](<../../.gitbook/assets/image (187) (1).png>)
+![](<../../.gitbook/assets/image (187).png>)
 
 ### Understand Project information
 
@@ -74,7 +74,7 @@ Other files and types can be displayed; see [View project information](https://d
 
 Snyk treats each item in this list as a separate **Project**.
 
-This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (27) (1) (1).png>)) to define how that Project is scanned:
+This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (27) (1).png>)) to define how that Project is scanned:
 
 ![](<../../.gitbook/assets/image (379).png>)
 
@@ -84,7 +84,7 @@ For example, you can use Project settings to change scan frequency, setting how 
 
 Let’s go back to the results for your scan:
 
-![](<../../.gitbook/assets/image (167) (2).png>)
+![](<../../.gitbook/assets/image (167).png>)
 
 The scan shows you all vulnerabilities in all aspects of an application. Of course, it's unlikely that you are responsible for every entry in this list, but it's important to be aware of the full picture.
 
