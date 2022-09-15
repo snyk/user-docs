@@ -62,7 +62,7 @@ Manually pass a path to a `.snyk` policy file.
 
 ### `--json`
 
-Print results in JSON format, useful for integrating with other tools
+Print results on the console as a JSON data structure.
 
 Example: `$ snyk container test --json`
 

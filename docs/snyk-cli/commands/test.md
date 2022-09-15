@@ -149,15 +149,15 @@ Manually pass a path to a `.snyk` policy file.
 
 ### `--json`
 
-Print results in JSON format.
+Print results on the console as a JSON data structure.
 
 Example: `$ snyk test --json`
 
 ### `--json-file-output=<OUTPUT_FILE_PATH>`
 
-Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option.
+Save test output as a JSON data structure directly to the specified file, regardless of whether or not you use the `--json` option.
 
-This is useful if you want to display the human-readable test output using stdout and at the same time save the JSON format output to a file.
+Use to display the human-readable test output using stdout and at the same time save the JSON data structure output to a file.
 
 Example: `$ snyk test --json-file-output=vuln.json`
 
@@ -193,9 +193,9 @@ For more information about Maven CLI options see [Snyk for Java and Kotlin](http
 
 Use `--maven-aggregate-project` instead of `--all-projects` when scanning Maven aggregate projects, that is, ones that use modules and inheritance.
 
-When scanning these types of projects, Snyk performs a compile to ensure all modules are resolvable by the Maven reactor.&#x20;
+When scanning these types of projects, Snyk performs a compile to ensure all modules are resolvable by the Maven reactor.
 
-Be sure to run the scan in the same directory as the root pom.xml file.&#x20;
+Be sure to run the scan in the same directory as the root pom.xml file.
 
 Snyk reports test results per pom.xml file.
 
@@ -323,7 +323,7 @@ Alternatively, run `snyk test --unmanaged`
 
 Specify the maximum level of archive extraction.
 
-Usage: `--max-depth=1`&#x20;
+Usage: `--max-depth=1`
 
 Use 0 (zero, the default) to disable archive extraction completely.
 

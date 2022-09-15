@@ -51,15 +51,15 @@ For more information see the article [How to select the organization to use in t
 
 ### `--json`
 
-Print results in JSON format.
+Print results on the console as a JSON data structure.
 
 Example: `$ snyk code test --json`
 
 ### `--json-file-output=<OUTPUT_FILE_PATH>`
 
-Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option.
+Save test output as a JSON data structure directly to the specified file, regardless of whether or not you use the `--json` option.
 
-This is useful if you want to display the human-readable test output using stdout and at the same time save the JSON format output to a file.
+Use to display the human-readable test output using stdout and at the same time save the JSON data structure output to a file.
 
 Example: `$ snyk code test --json-file-output=vuln.json`
 
