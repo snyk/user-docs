@@ -1,4 +1,4 @@
-# Using Snyk API
+# Using Snyk API articles
 
 This group of pages provides detailed information about aspects of using the Snyk API. The following articles are included, listed here in alphabetical order by a **keyword**.
 
@@ -19,7 +19,7 @@ This group of pages provides detailed information about aspects of using the Sny
 * [Choosing a **service account type** to use with Snyk APIs](choosing-a-service-account-type-to-use-with-snyk-apis.md)
 * ****[**Solutions** for specific use cases](solutions-for-specific-use-cases.md)
 
-For more information on using Snyk API, see the following:
+For more articles on using Snyk API, see the following:
 
 * [API support articles](https://support.snyk.io/hc/en-us/sections/360001344097-API)
 * [Audit logs](../../features/user-and-group-management/managing-users-and-permissions/audit-logs.md)
