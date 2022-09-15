@@ -87,6 +87,8 @@ Save test output in SARIF format directly to the \<OUTPUT\_FILE\_PATH> file, reg
 
 This is especially useful if you want to display the human-readable test output using stdout and at the same time save the SARIF format output to a file.
 
+Note: If you use an option that sets project attributes and your role lacks permission to edit project attributes the `iac tes`t command fails. For instructions on how to proceed see [Editing project attributes from the Snyk CLI](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/managing-permissions#editing-project-attributes-from-the-snyk-cli)
+
 ### `--project-business-criticality=<BUSINESS_CRITICALITY>[,<BUSINESS_CRITICALITY>]...>`
 
 This can be used in combination with the `--report` option.
