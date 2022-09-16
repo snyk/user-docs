@@ -1,8 +1,8 @@
 # Scenarios for using Snyk API
 
-The Snyk API scenarios specify procedures you can use to accomplish tasks with Snyk applications using the APIs.
+The Snyk API scenarios identify procedures you can use to accomplish tasks with Snyk applications using the APIs.
 
-The scenarios are listed on this page under the endpoints they use and are provided in a [repository](https://github.com/snyk-playground/cx-tools/tree/main/scripts).
+The scenarios are listed on this page under the endpoints they use. They are provided in a [repository](https://github.com/snyk-playground/cx-tools/tree/main/scripts) or on the user docs site (links included).
 
 If you have issues when using these procedures, contact your Technical Success Manager or Solutions Engineer, or [submit a ticket](https://support.snyk.io/hc/en-us/requests/new) to Snyk support.
 
@@ -136,6 +136,13 @@ Scenario: [assign-users-to-all-orgs](https://github.com/snyk-playground/cx-tools
 ****API v1 [List all members in a group](https://snyk.docs.apiary.io/#reference/users/user-project-notification-settings/list-all-members-in-a-group)
 
 API v1 [Invite users](https://snyk.docs.apiary.io/#reference/groups/list-all-roles-in-a-group/invite-users)
+
+### Add users to organizations at scale ahead of the first login
+
+Scenario: [Provision users to Orgs via API](../features/user-and-group-management/managing-users-and-permissions/provision-users-to-orgs-via-api.md)
+
+**Endpoint used:**\
+API v1 [Provision a user to the organization](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization)
 
 ## API v1 Projects
 
