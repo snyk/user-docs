@@ -73,6 +73,7 @@
   * [CLI help](snyk-cli/commands/README.md)
     * [Auth](snyk-cli/commands/auth.md)
     * [Code](snyk-cli/commands/code.md)
+    * [Code test](snyk-cli/commands/code-test.md)
     * [Config](snyk-cli/commands/config.md)
     * [Container](snyk-cli/commands/container.md)
     * [Container monitor](snyk-cli/commands/container-monitor.md)
