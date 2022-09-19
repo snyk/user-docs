@@ -1,253 +1,245 @@
-# Error Catalog
+# Snyk Error Codes
+  The error codes in the table below describe the codes that you may encounter while working with the [Snyk API](../snyk-api-info/README.md) or [CLI](../snyk-cli/README.md). When errors are encountered using the API, they will also have an appropriate [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). If you encounter errors without an error code, use the HTTP status code to determine the appropriate action.
+  
+  
+---
+# [Snyk](https://docs.snyk.io/introducing-snyk)
+### [SNYK-0001](#snyk-0001-too-many-requests) - Too many requests
+  The service has received too many requests and will be throttled.
 
-## Snyk Error Codes
+  **HTTP Status:** [429](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429)
 
-The error codes in the table below describe the codes that you may encounter while working with the [Snyk API](../snyk-api-info/) or [CLI](../snyk-cli/). When errors are encountered using the API, they will also have an appropriate [HTTP status code](https://en.wikipedia.org/wiki/List\_of\_HTTP\_status\_codes). If you encounter errors without an error code, use the HTTP status code to determine the appropriate action.
+  **Exit Code:** N/A
 
-***
+  **Help Links:**
 
-## [Snyk](https://docs.snyk.io/introducing-snyk)
+  
+### [SNYK-0002](#snyk-0002-not-implemented) - Not implemented
+  The server either does not recognize the request method, or it lacks the ability to fulfil the request.
 
-#### [SNYK-0001](error-catalog.md#snyk-0001-too-many-requests) - Too many requests
+  **HTTP Status:** [501](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/501)
 
-The service has received too many requests and will be throttled.
+  **Exit Code:** N/A
 
-**HTTP Status:** [429](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429)
+  **Help Links:**
 
-**Exit Code:** N/A
+  
+### [SNYK-0003](#snyk-0003-bad-request) - Bad request
+  The server cannot or will not process the request due to an apparent client error (e.g. malformed request syntax, size too large, invalid request message framing, or deceptive request routing).
 
-**Help Links:**
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-#### [SNYK-0002](error-catalog.md#snyk-0002-not-implemented) - Not implemented
+  **Exit Code:** N/A
 
-The server either does not recognize the request method, or it lacks the ability to fulfil the request.
+  **Help Links:**
 
-**HTTP Status:** [501](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/501)
+  
+### [SNYK-004](#snyk-004-timeout-error) - Timeout error
+  The server did not receive a timely response from the upstream server.
 
-**Exit Code:** N/A
+  **HTTP Status:** [504](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/504)
 
-**Help Links:**
+  **Exit Code:** N/A
 
-#### [SNYK-0003](error-catalog.md#snyk-0003-bad-request) - Bad request
+  **Help Links:**
 
-The server cannot or will not process the request due to an apparent client error (e.g. malformed request syntax, size too large, invalid request message framing, or deceptive request routing).
+  
+### [SNYK-005](#snyk-005-unauthorised-error) - Unauthorised error
+  Authentication failed or has not been provided.
 
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+  **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
-**Exit Code:** N/A
+  **Exit Code:** N/A
 
-**Help Links:**
+  **Help Links:**
 
-#### [SNYK-004](error-catalog.md#snyk-004-timeout-error) - Timeout error
+  
+### [SNYK-9999](#snyk-9999-server-error) - Server error
+  An unexpected server error was encountered.
 
-The server did not receive a timely response from the upstream server.
+  **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
-**HTTP Status:** [504](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/504)
+  **Exit Code:** N/A
 
-**Exit Code:** N/A
+  **Help Links:**
 
-**Help Links:**
+  
+---
+# [Open Source Languages & Package Managers](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support)
+### [SNYK-OS-0001](#snyk-os-0001-unsupported-ecosystem) - Unsupported Ecosystem
+  The language or package manager is not supported.
 
-#### [SNYK-9999](error-catalog.md#snyk-9999-server-error) - Server error
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-An unexpected server error was encountered.
+  **Exit Code:** N/A
 
-**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+  **Help Links:**
 
-**Exit Code:** N/A
+  - [https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support)
+### [SNYK-OS-0002](#snyk-os-0002-unable-to-parse-manifest-file) - Unable to parse manifest file
+  The provided manifest file could not be parsed.
 
-**Help Links:**
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-***
+  **Exit Code:** N/A
 
-## [Open Source Languages & Package Managers](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support)
+  **Help Links:**
 
-#### [SNYK-OS-0001](error-catalog.md#snyk-os-0001-unsupported-ecosystem) - Unsupported Ecosystem
+  
+---
+# Builds
+### [SNYK-OS-8001](#snyk-os-8001-invalid-request) - Invalid request
+  The provided request payload is not valid for the selected ecosystem. Please review the API documentation.
 
-The language or package manager is not supported.
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+  **Exit Code:** N/A
 
-**Exit Code:** N/A
+  **Help Links:**
 
-**Help Links:**
+  - [https://apidocs.snyk.io/](https://apidocs.snyk.io/)
+### [SNYK-OS-8002](#snyk-os-8002-build-environment-not-found) - Build environment not found
+  The build environment for the provided context could not be found. Please ensure you have created the build environment first.
 
-* [https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support)
+  **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
-#### [SNYK-OS-0002](error-catalog.md#snyk-os-0002-unable-to-parse-manifest-file) - Unable to parse manifest file
+  **Exit Code:** N/A
 
-The provided manifest file could not be parsed.
+  **Help Links:**
 
-**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+  
+---
+# [PURL Vulnerabilities](https://docs.snyk.io/introducing-snyk/getting-started-snyk-intel-vuln-db-access#about-the-snyk-vulnerability-database)
+### [SNYK-OSSI-1040](#snyk-ossi-1040-your-organisation-is-not-authorised-to-perform-this-action) - Your organisation is not authorised to perform this action
+  You likely don’t have access to the Beta. To get access, you can request access to the Beta through your account manager or team.
 
-**Exit Code:** N/A
+  **HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
 
-**Help Links:**
+  **Exit Code:** N/A
 
-***
+  **Help Links:**
 
-## Builds
+  
+### [SNYK-OSSI-1050](#snyk-ossi-1050-authorization-request-failure) - Authorization request failure
+  Unexpected error when authenticating. Please try again, and if you continue to experience issues please contact support.
 
-#### [SNYK-OS-8001](error-catalog.md#snyk-os-8001-invalid-request) - Invalid request
+  **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
-The provided request payload is not valid for the selected ecosystem. Please review the API documentation.
+  **Exit Code:** N/A
 
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+  **Help Links:**
 
-**Exit Code:** N/A
+  
+### [SNYK-OSSI-2010](#snyk-ossi-2010-invalid-purl-has-been-provided) - Invalid PURL has been provided
+  Please make sure that the purl you’ve provided is valid. Please see the Package URL specification link for further information.
 
-**Help Links:**
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-* [https://apidocs.snyk.io/](https://apidocs.snyk.io/)
+  **Exit Code:** N/A
 
-#### [SNYK-OS-8002](error-catalog.md#snyk-os-8002-build-environment-not-found) - Build environment not found
+  **Help Links:**
 
-The build environment for the provided context could not be found. Please ensure you have created the build environment first.
+  - [https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst](https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst)
+### [SNYK-OSSI-2011](#snyk-ossi-2011-ensure-you-specify-a-namespace-in-the-purl-and-then-try-again) - Ensure you specify a namespace in the purl and then try again
+  You have requested a package type which requires a namespace (eg. maven group id). Please supply the namespace in order to retrieve the package correctly.
 
-**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** N/A
+  **Exit Code:** N/A
 
-**Help Links:**
+  **Help Links:**
 
-***
+  - [https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst](https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst)
+### [SNYK-OSSI-2020](#snyk-ossi-2020-ecosystem-is-not-supported) - Ecosystem is not supported
+  Ensure that the package type is a supported type.
 
-## [PURL Vulnerabilities](https://docs.snyk.io/introducing-snyk/getting-started-snyk-intel-vuln-db-access#about-the-snyk-vulnerability-database)
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-#### [SNYK-OSSI-1040](error-catalog.md#snyk-ossi-1040-your-organisation-is-not-authorised-to-perform-this-action) - Your organisation is not authorised to perform this action
+  **Exit Code:** N/A
 
-You likely don’t have access to the Beta. To get access, you can request access to the Beta through your account manager or team.
+  **Help Links:**
 
-**HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
+  
+### [SNYK-OSSI-2021](#snyk-ossi-2021-purl-components-required) - Purl components required
+  Currently we require a list of components of the package url specification. The purl supplied by the user did not specify all the components which we currently require.
 
-**Exit Code:** N/A
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Help Links:**
+  **Exit Code:** N/A
 
-#### [SNYK-OSSI-1050](error-catalog.md#snyk-ossi-1050-authorization-request-failure) - Authorization request failure
+  **Help Links:**
 
-Unexpected error when authenticating. Please try again, and if you continue to experience issues please contact support.
+  
+### [SNYK-OSSI-2022](#snyk-ossi-2022-you-have-submitted-a-purl-with-components-which-are-not-supported) - You have submitted a purl with components which are not supported
+  Please remove the component which is not supported, and try to make the request again. The endpoint only accepts particular components.
 
-**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** N/A
+  **Exit Code:** N/A
 
-**Help Links:**
+  **Help Links:**
 
-#### [SNYK-OSSI-2010](error-catalog.md#snyk-ossi-2010-invalid-purl-has-been-provided) - Invalid PURL has been provided
+  
+### [SNYK-OSSI-2030](#snyk-ossi-2030-requested-package-not-found) - Requested package not found
+  The package you’ve specified in the purl can not be found in our vulnerability database. Please check that the package name, ecosystem and version are correct and then try again.
 
-Please make sure that the purl you’ve provided is valid. Please see the Package URL specification link for further information.
+  **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+  **Exit Code:** N/A
 
-**Exit Code:** N/A
+  **Help Links:**
 
-**Help Links:**
+  
+### [SNYK-OSSI-2031](#snyk-ossi-2031-vulnerability-service-is-currently-not-available) - Vulnerability service is currently not available
+  This issue is unexpected, and the service should recover quickly. If not, please contact support.
 
-* [https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst](https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst)
+  **HTTP Status:** [503](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)
 
-#### [SNYK-OSSI-2011](error-catalog.md#snyk-ossi-2011-ensure-you-specify-a-namespace-in-the-purl-and-then-try-again) - Ensure you specify a namespace in the purl and then try again
+  **Exit Code:** N/A
 
-You have requested a package type which requires a namespace (eg. maven group id). Please supply the namespace in order to retrieve the package correctly.
+  **Help Links:**
 
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+  
+### [SNYK-OSSI-2032](#snyk-ossi-2032-this-issue-is-unexpected-and-the-service-should-recover-quickly-if-not-please-contact-support) - This issue is unexpected and the service should recover quickly if not please contact support
+  An unexpected error occurred. Please try again, and if you continue to experience issues please contact support.
 
-**Exit Code:** N/A
+  **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
-**Help Links:**
+  **Exit Code:** N/A
 
-* [https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst](https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst)
+  **Help Links:**
 
-#### [SNYK-OSSI-2020](error-catalog.md#snyk-ossi-2020-ecosystem-is-not-supported) - Ecosystem is not supported
+  
+### [SNYK-OSSI-2033](#snyk-ossi-2033-this-issue-is-unexpected-and-the-service-should-recover-quickly-if-not-please-contact-support) - This issue is unexpected and the service should recover quickly if not please contact support
+  An unexpected error occurred with the vulnerability service. Please try again, and if you continue to experience issues please contact support.
 
-Ensure that the package type is a supported type.
+  **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+  **Exit Code:** N/A
 
-**Exit Code:** N/A
+  **Help Links:**
 
-**Help Links:**
+  
+### [SNYK-OSSI-2040](#snyk-ossi-2040-an-error-was-experienced-by-the-service-when-processing-the-request) - An error was experienced by the service when processing the request
+  This issue is unexpected, and the service should recover quickly. If not, please contact support.
 
-#### [SNYK-OSSI-2021](error-catalog.md#snyk-ossi-2021-purl-components-required) - Purl components required
+  **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
-Currently we require a list of components of the package url specification. The purl supplied by the user did not specify all the components which we currently require.
+  **Exit Code:** N/A
 
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+  **Help Links:**
 
-**Exit Code:** N/A
+  
+### [SNYK-OSSI-2041](#snyk-ossi-2041-invalid-pagination-parameters) - Invalid pagination parameters
+  Please ensure the supplied pagination limit is > 1 and <= 1000, and that the offset is >= 0.
 
-**Help Links:**
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-#### [SNYK-OSSI-2022](error-catalog.md#snyk-ossi-2022-you-have-submitted-a-purl-with-components-which-are-not-supported) - You have submitted a purl with components which are not supported
+  **Exit Code:** N/A
 
-Please remove the component which is not supported, and try to make the request again. The endpoint only accepts particular components.
+  **Help Links:**
 
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+  
+---
 
-**Exit Code:** N/A
-
-**Help Links:**
-
-#### [SNYK-OSSI-2030](error-catalog.md#snyk-ossi-2030-requested-package-not-found) - Requested package not found
-
-The package you’ve specified in the purl can not be found in our vulnerability database. Please check that the package name, ecosystem and version are correct and then try again.
-
-**HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
-
-**Exit Code:** N/A
-
-**Help Links:**
-
-#### [SNYK-OSSI-2031](error-catalog.md#snyk-ossi-2031-vulnerability-service-is-currently-not-available) - Vulnerability service is currently not available
-
-This issue is unexpected, and the service should recover quickly. If not, please contact support.
-
-**HTTP Status:** [503](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)
-
-**Exit Code:** N/A
-
-**Help Links:**
-
-#### [SNYK-OSSI-2032](error-catalog.md#snyk-ossi-2032-this-issue-is-unexpected-and-the-service-should-recover-quickly-if-not-please-contact-support) - This issue is unexpected and the service should recover quickly if not please contact support
-
-An unexpected error occurred. Please try again, and if you continue to experience issues please contact support.
-
-**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-
-**Exit Code:** N/A
-
-**Help Links:**
-
-#### [SNYK-OSSI-2033](error-catalog.md#snyk-ossi-2033-this-issue-is-unexpected-and-the-service-should-recover-quickly-if-not-please-contact-support) - This issue is unexpected and the service should recover quickly if not please contact support
-
-An unexpected error occurred with the vulnerability service. Please try again, and if you continue to experience issues please contact support.
-
-**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-
-**Exit Code:** N/A
-
-**Help Links:**
-
-#### [SNYK-OSSI-2040](error-catalog.md#snyk-ossi-2040-an-error-was-experienced-by-the-service-when-processing-the-request) - An error was experienced by the service when processing the request
-
-This issue is unexpected, and the service should recover quickly. If not, please contact support.
-
-**HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-
-**Exit Code:** N/A
-
-**Help Links:**
-
-#### [SNYK-OSSI-2041](error-catalog.md#snyk-ossi-2041-invalid-pagination-parameters) - Invalid pagination parameters
-
-Please ensure the supplied pagination limit is > 1 and <= 1000, and that the offset is >= 0.
-
-**HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-**Exit Code:** N/A
-
-**Help Links:**
-
-***
-
-Genererated at 2022-09-14T09:58:08.033Z
+Genererated at 2022-09-19T15:06:09.209Z
