@@ -68,7 +68,7 @@ Snyk scans your projects on either a daily or a weekly basis. When new vulnerabi
 
 The example below presents a fix pull request opened by Snyk:
 
-![](../../.gitbook/assets/github\_fix\_pr\_cropped-14july2022.png)
+![](<../../.gitbook/assets/github\_fix\_pr\_cropped-14july2022 (1).png>)
 
 To review and update the automatic fix pull request settings:
 

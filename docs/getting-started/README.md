@@ -1,7 +1,3 @@
----
-description: Getting started
----
-
 # Getting started
 
 To start using Snyk, you need a Snyk account, and some code to scan.

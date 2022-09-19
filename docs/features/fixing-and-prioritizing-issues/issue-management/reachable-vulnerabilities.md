@@ -16,7 +16,7 @@ To provide as accurate results as possible, we use multiple algorithms to build 
 
 We split the results into the following areas:
 
-1. **Reachable** - A clear path from the code to vulnerable functions was found.&#x20;
+1. **Reachable** - A clear path from the code to vulnerable functions was found.
 2. **No path found** - Direct calls from the code to vulnerable functions could not be found.
 
 ### Supported languages and prerequisites
@@ -50,7 +50,7 @@ After running `snyk monitor` in the CLI, or importing a project via Snyk UI, the
 
 ![Reachability Call Path](<../../../.gitbook/assets/image (91).png>)
 
-![Priorty Score](<../../../.gitbook/assets/image (126).png>)
+![Priorty Score](<../../../.gitbook/assets/image (126) (1).png>)
 
 ### Reports
 
@@ -61,4 +61,4 @@ You can filter by reachability status to quickly show the reachable issues.
 ### Scanning for Reachable Vulnerabilities using Snyk CLI
 
 1. Using the Snyk CLI workflow for reachable vulnerabilities scanning is currently not available.
-2. We are developing new and improved capabilities for prioritizing vulnerabilities to upgrade this functionality.&#x20;
+2. We are developing new and improved capabilities for prioritizing vulnerabilities to upgrade this functionality.

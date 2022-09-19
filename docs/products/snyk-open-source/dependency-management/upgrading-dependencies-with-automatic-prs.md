@@ -38,7 +38,7 @@ By default, the Project Settings inherit the organization Settings. However, whe
 
 ![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png>)
 
-2\. Once the required organization is open, click the **Org Settings** button <img src="../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="" data-size="line"> on the top menu:
+2\. Once the required organization is open, click the **Org Settings** button <img src="../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="line"> on the top menu:
 
 ![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org Settings button (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png>)
 
@@ -67,7 +67,7 @@ By default, the Project Settings inherit the organization Settings. However, whe
   ![](<../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 * **Save changes** button – your changes are saved, and will be applied to all the Projects in the organization that are configured to inherit these Settings from the organization. Projects that have Custom Settings will not be influenced by this change.
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org- Integration - Automatic Upgrade section - Save options.png>)
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org- Integration - Automatic Upgrade section - Save options (1).png>)
 
 From now on, every time Snyk will scan any Project in the organization, it will automatically submit Upgrade PRs if the scan discovers that an upgrade is available. If a newer version is released for an existing Snyk Upgrade PR or for an existing Fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.
 
@@ -100,7 +100,7 @@ The Settings on the Project level override the Settings on the organization leve
 * **Inherit from Integration settings** – apply the Integration Settings of the organization to the selected Project. Note that if the **Automatic dependency upgrade pull requests option is disabled for the organization, this option will also be disabled for the Project.** If you selected this option, move to Step 7.
 * **Customize for only this project** – apply specific settings of the **Automatic dependency upgrade pull requests** option on the Project. If you selected this option, move to the next step.
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Project Settings - Integration - Automatic Upgrade section.png>)
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Project Settings - Integration - Automatic Upgrade section (1).png>)
 
 6\. \[For the **Customize** option only] If you selected the **Customize for only this project** option, perform the following:
 

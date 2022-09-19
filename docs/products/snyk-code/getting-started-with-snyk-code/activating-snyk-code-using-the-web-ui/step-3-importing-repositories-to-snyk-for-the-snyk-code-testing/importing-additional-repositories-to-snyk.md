@@ -10,7 +10,7 @@ If you already have Projects in your Snyk Account, you can add other repositorie
 
 2\. On the **Dashboard** or **Projects** page, click the **Add project** button. Then, select from the pop-up list the SCM that contains the repositories you want to import:
 
-<figure><img src="../../../../../.gitbook/assets/Snyk Code - Add project button - SCM options (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Snyk Code - Add project button - SCM options.png" alt=""><figcaption></figcaption></figure>
 
 The **Personal and Organization repositories** page appears, displaying the repositories available to you in the selected SCM.
 

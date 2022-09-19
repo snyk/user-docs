@@ -7,7 +7,7 @@ You have understood and fixed a vulnerability. Now we'll see how this process wo
 
 ### Decide what to fix first
 
-Your fix priority (deciding what to fix first) depends on the workflows and business processes of your teams. This decision-making process for fixing vulnerabilities may be for individual developers to decide on an ad-hoc basis, or may be for team leads to assign work as part of a Sprint.&#x20;
+Your fix priority (deciding what to fix first) depends on the workflows and business processes of your teams. This decision-making process for fixing vulnerabilities may be for individual developers to decide on an ad-hoc basis, or may be for team leads to assign work as part of a Sprint.
 
 Different teams approach fixes in different ways, depending on the tools they use, their own workflow maturity, and competing work priorities. Typically, smaller teams have less process, and Enterprise-level teams are more formal.
 
@@ -15,7 +15,7 @@ Different teams approach fixes in different ways, depending on the tools they us
 
 For example, your team could follow a triage-based process for each issue, driven largely by the severity of the issue:
 
-![](<../../.gitbook/assets/image (334).png>)
+![](<../../.gitbook/assets/image (110).png>)
 
 ### Example workflow: team-lead driven, using Jira
 
@@ -32,8 +32,8 @@ As part of this Sprint planning, the team leader can:
 
 * Review the vulnerabilities in a project
 * Decide which vulnerabilities to fix
-* Create a Jira issue for each vulnerability.&#x20;
-* Assign these Jira issues as task to developers to fix these vulnerabilities,&#x20;
+* Create a Jira issue for each vulnerability.
+* Assign these Jira issues as task to developers to fix these vulnerabilities,
 * Track progress on these tasks during the Sprint.
 
 Snyk [Jira integration](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira) allows you to run this process from the Snyk Web UI.
@@ -46,7 +46,7 @@ Navigate to the issue you have decided to fix, then click **Create a Jira issue*
 
 You can then define the Jira task details for this fix:
 
-![](<../../.gitbook/assets/image (387).png>)
+![](<../../.gitbook/assets/image (77).png>)
 
 You can assign this task to a developer in the team, following your team’s normal Sprint processes.
 

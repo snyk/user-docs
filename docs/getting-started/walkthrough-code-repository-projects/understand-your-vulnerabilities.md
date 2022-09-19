@@ -9,7 +9,7 @@ You have [viewed and understood scanned Projects](view-your-first-snyk-projects.
 
 First, open a target to see your Snyk Projects:
 
-![](<../../.gitbook/assets/image (213).png>)
+![](<../../.gitbook/assets/image (239).png>)
 
 Next, click on a Snyk Project in that list to see details of the vulnerabilities found in that Project.
 
@@ -54,7 +54,7 @@ For this example, click on the Snyk vulnerability Identifier to see how Hibernat
 
 To research more about a vulnerability, click **Learn about this type of vulnerability** to access [Snyk Learn](https://learn.snyk.io/) security educational materials:
 
-![](<../../.gitbook/assets/image (12) (2).png>)
+![](<../../.gitbook/assets/image (108).png>)
 
 For example, see [Snyk Learn SQL injection](https://learn.snyk.io/lessons/sql-injection/javascript/) for more details about this type of vulnerability.
 

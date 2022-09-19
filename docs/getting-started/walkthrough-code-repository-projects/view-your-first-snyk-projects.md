@@ -18,13 +18,13 @@ Open the [Snyk Web UI](../../snyk-web-ui/), navigate to your **Projects** page, 
 
 ![](<../../.gitbook/assets/image (271).png>)
 
-For each entry, the left icon shows the number of Snyk Projects in each entry, plus the Git-based repository the projects are imported from. For example <img src="../../.gitbook/assets/image (30).png" alt="" data-size="line">.
+For each entry, the left icon shows the number of Snyk Projects in each entry, plus the Git-based repository the projects are imported from. For example <img src="../../.gitbook/assets/image (323).png" alt="" data-size="line">.
 
 #### Private / public repositories: the lock symbol
 
 When [setting up your GitHub integration](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration), you can choose whether Snyk can access public and private repositories, or public repositories only:
 
-![](<../../.gitbook/assets/image (99).png>)
+![](<../../.gitbook/assets/image (82).png>)
 
 When you then import a Project, private repositories are identified with a “lock” symbol (<img src="../../.gitbook/assets/image (101).png" alt="" data-size="line">) in the imported scan details:
 
@@ -61,10 +61,10 @@ Snyk scans different parts of this lifecycle, with different icons and entries s
 
 | Example                                                                                         | Description                                                                                                                                                                                                     |
 | ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="../../.gitbook/assets/image (19).png" alt="" data-size="line">                        | Your own code analysis results, scanned by[ Snyk Code](../../products/snyk-code/).                                                                                                                              |
+| <img src="../../.gitbook/assets/image (122).png" alt="" data-size="line">                       | Your own code analysis results, scanned by[ Snyk Code](../../products/snyk-code/).                                                                                                                              |
 | <img src="../../.gitbook/assets/Screenshot 2022-07-20 at 11.14.02.png" alt="" data-size="line"> | Your open source libraries, scanned by [Snyk Open Source](../../products/snyk-open-source/), displaying each detected manifest, such as **pom.xml**, **package.json**, and other manifests for these libraries. |
-| <img src="../../.gitbook/assets/image (71) (1).png" alt="" data-size="line">                    | Container results, scanned by [Snyk Container](../../products/snyk-container/), for items built into a container, such as a Docker file.                                                                        |
-| <img src="../../.gitbook/assets/image (269).png" alt="" data-size="original">                   | Kubernetes deployment files, terraform and other IaC files, scanned by [Snyk Infrastructure as Code (IaC)](../../products/snyk-infrastructure-as-code/).                                                        |
+| <img src="../../.gitbook/assets/image (307).png" alt="" data-size="line">                       | Container results, scanned by [Snyk Container](../../products/snyk-container/), for items built into a container, such as a Docker file.                                                                        |
+| <img src="../../.gitbook/assets/image (220).png" alt="" data-size="original">                   | Kubernetes deployment files, terraform and other IaC files, scanned by [Snyk Infrastructure as Code (IaC)](../../products/snyk-infrastructure-as-code/).                                                        |
 
 {% hint style="info" %}
 Other files and types can be displayed; see [View project information](https://docs.snyk.io/introducing-snyk/introduction-to-snyk-projects/view-project-information) for more details.
@@ -74,7 +74,7 @@ Other files and types can be displayed; see [View project information](https://d
 
 Snyk treats each item in this list as a separate **Project**.
 
-This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (27) (1).png>)) to define how that Project is scanned:
+This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (27) (1) (2).png>)) to define how that Project is scanned:
 
 ![](<../../.gitbook/assets/image (379).png>)
 

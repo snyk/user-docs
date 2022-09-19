@@ -55,7 +55,7 @@ If groups are being used in the organization, only a Group Admin can delete the 
 
 3\. On the **Settings** page, select **Genera**l on the left menu:
 
-![](<../../../.gitbook/assets/image (245).png>)
+![](<../../../.gitbook/assets/image (34).png>)
 
 3\. Scroll down to the **Delete organization** section, and click the **Delete organization** button:
 
@@ -63,7 +63,7 @@ If groups are being used in the organization, only a Group Admin can delete the 
 
 4\. On the Confirmation dialog box, enter the name of the organization you want to delete to confirm its deletion. Then, click **OK**:
 
-![](<../../../.gitbook/assets/Org Settings - Delete organization - Confirmation (1).png>)
+![](<../../../.gitbook/assets/Org Settings - Delete organization - Confirmation.png>)
 
 The selected organization is deleted from your Snyk Account.
 
