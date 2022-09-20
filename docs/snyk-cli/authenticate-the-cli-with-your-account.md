@@ -6,7 +6,7 @@ You can authenticate:
 
 * Through your browser by running `snyk auth` from the CLI; see the [Auth command help](commands/auth.md).
 * Using your API token
-* Using the `SNYK_TOKEN` environment variable; see [Configure the Snyk CLI](configure-the-snyk-cli.md). Use `SNYK_TOKEN` in a CI/CD environment.
+* Using the `SNYK_TOKEN` environment variable; see [Configure the Snyk CLI](configure-the-snyk-cli/). Use `SNYK_TOKEN` in a CI/CD environment.
 
 To authenticate using your API token:
 
