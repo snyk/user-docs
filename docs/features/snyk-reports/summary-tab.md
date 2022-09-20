@@ -28,7 +28,7 @@ The following table describes the different parts of the **Summary** area:
 
 ### Activity
 
-![](<../../.gitbook/assets/image (255).png>)
+![](<../../.gitbook/assets/image (255) (1).png>)
 
 For the **Activity** area, the following are the parameters and their descriptions:
 

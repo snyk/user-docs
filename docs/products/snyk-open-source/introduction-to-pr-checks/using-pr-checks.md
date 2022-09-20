@@ -33,7 +33,7 @@ The Snyk Web UI opens, displaying the details of the issues that were found in t
 
 You can now [view and work with the discovered PR Check issues on the Web UI](../../snyk-code/using-automatic-pr-checks-for-securing-your-source-code/viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md).
 
-<figure><img src="../../../.gitbook/assets/security-check (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/security-check (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Exploring the display of the PR Checks on different Git repositories <a href="#_ref105582759" id="_ref105582759"></a>
 
@@ -52,7 +52,7 @@ The screenshots in this section show the aggregated results of the PR Checks for
 
 The results of the PR Checks appear on GitHub and GitHub Enterprise integrations as follows:
 
-<figure><img src="../../../.gitbook/assets/some-checks-failed (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/some-checks-failed.png" alt=""><figcaption></figcaption></figure>
 
 **To open the Snyk Web UI to view additional details on the PR Check results:**
 

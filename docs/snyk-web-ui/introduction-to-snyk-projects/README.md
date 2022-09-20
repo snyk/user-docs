@@ -4,11 +4,19 @@
 
 Targets represent an external resource Snyk has scanned: a code repository, a Kubernetes workload, or other scannable resources external to Snyk.&#x20;
 
-All [Snyk Projects](./#projects) are associated to a parent Target. One Target may relate to many Projects. The structure of the Target depends on the [origin](./#origin).\
-\
-Targets appear on the **Projects** menu on the Snyk dashboard:
+All [Snyk Projects](./#projects) are associated to a parent Target. One Target may relate to many Projects. The structure of the Target depends on the [origin](./#origin).
+
+Targets appear in the **Projects** menu on the Snyk dashboard.
 
 <figure><img src="../../.gitbook/assets/Targets 1.png" alt="Screenshot showing projects&#x27; target in the Snyk UI"><figcaption></figcaption></figure>
+
+Snyk provides pagination to improve the page loading time for Projects page requests and filtering, which is particularly relevant if you have hundreds of thousands of Projects to scan.&#x20;
+
+Use **Group by** to collect your Projects by target or leave them ungrouped.
+
+Use **Sort by** to list your Projects by severity, by how recently they were imported, or in alphabetical order.
+
+&#x20;![](../../.gitbook/assets/projects\_group-sort\_20sept2022.png)
 
 {% hint style="info" %}
 Targets also appear on the [Snyk API](https://apidocs.snyk.io/?version=2022-02-16%7Ebeta#tag--Targets).

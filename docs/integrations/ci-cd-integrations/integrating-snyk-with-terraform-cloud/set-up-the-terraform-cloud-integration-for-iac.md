@@ -6,7 +6,7 @@ You must be an administrator of the Snyk organization to configure the Terraform
 
 Navigate to the dedicated Terraform Cloud integration settings page, under the **Integrations** page in the Snyk Web UI, then follow these steps to set up Terraform plan scanning:
 
-On the Snyk platform, first go to the Terraform Cloud integration settings page for your organization: \
+On the Snyk platform, first go to the Terraform Cloud integration settings page for your organization:\
 `https://app.snyk.io/org/{YOUR-SNYK-ORG}/manage/integrations/terraform-cloud` to find the provided URL and HMAC Key.
 
 ![Snyk Integration settings for Terraform Cloud](<../../../.gitbook/assets/image (71) (2).png>)
@@ -15,7 +15,7 @@ On the Snyk platform, first go to the Terraform Cloud integration settings page 
 
 Now navigate to [Terraform Cloud](https://app.terraform.io) in the organization global settings:
 
-![Terraform Cloud Settings](<../../../.gitbook/assets/image (65).png>)
+![Terraform Cloud Settings](<../../../.gitbook/assets/image (263).png>)
 
 1. Go to the run tasks settings for your TFC organization:\
    `https://app.terraform.io/app/{YOUR_TFC_ORG}/settings/tasks`
@@ -24,7 +24,7 @@ Now navigate to [Terraform Cloud](https://app.terraform.io) in the organization 
 
 ## Associate the Run Task to your Terraform Cloud Workspace
 
-1. Navigate to your Terraform Cloud Workspace, enter the **Settings** __ menu and chose **Run Tasks**_._
+1. Navigate to your Terraform Cloud Workspace, enter the **Settings** \_\_ menu and chose **Run Tasks**_._
 2. The run task you created is available under **Available Run Tasks**; click on **+** to associate it.
 3. Choose the enforcement level (**Advisory** or **Mandatory**) and click **Create**.
 

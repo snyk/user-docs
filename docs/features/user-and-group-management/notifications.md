@@ -1,6 +1,6 @@
 # Managing notifications
 
-### Introduction&#x20;
+### Introduction
 
 Snyk automatically notifies you when new issues are found in the projects you are monitoring. These notifications can help make you aware of new risks in these projects.
 
@@ -24,13 +24,13 @@ Snyk offers notifications for:
 
 ## **Managing notifications**
 
-Snyk includes a range of controls to manage your own notifications.&#x20;
+Snyk includes a range of controls to manage your own notifications.
 
 Administrators can also manage the notification defaults for others in the [group](notifications.md#define-group-notification-defaults) or [organization](notifications.md#define-organization-notification-defaults).
 
 You can also send notifications for an organization to a designated [Slack channel](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration).
 
-![](<../../.gitbook/assets/image (48) (1).png>)
+![](<../../.gitbook/assets/image (48) (1) (1).png>)
 
 ### Define group notification defaults
 
@@ -46,7 +46,7 @@ To navigate to the group level notification settings:
 2. Select the Settings icon.
 3. Select **Notifications**.
 
-![](<../../.gitbook/assets/image (349).png>)
+![](<../../.gitbook/assets/image (5) (2).png>)
 
 #### Issue alert emails
 
@@ -123,7 +123,7 @@ Weekly report emails are notifications Snyk sends to provide a summary of the vu
 
 To set the defaults for weekly report emails:
 
-* Check the **Weekly report** box when members of this organization should receive a weekly summary email by default.&#x20;
+* Check the **Weekly report** box when members of this organization should receive a weekly summary email by default.
 
 #### Usage alerts
 
@@ -160,7 +160,7 @@ To customize your settings for issue alert emails for each organization for whic
 
 * Check the **Vulnerabilities** box to receive alert emails for new issues or remediations for all projects in that organization.
 * Check the **Licenses** box (if applicable) to receive alert emails for new license issues for all projects in that organization.
-* &#x20;If either the **Vulnerabilities** or **Licenses** boxes are checked, indicate the severity of issues for which Snyk should send alert emails by selecting **All severities** or **Critical and high severity** from the drop down list.
+* If either the **Vulnerabilities** or **Licenses** boxes are checked, indicate the severity of issues for which Snyk should send alert emails by selecting **All severities** or **Critical and high severity** from the drop down list.
 
 To customize your settings for individual projects:
 

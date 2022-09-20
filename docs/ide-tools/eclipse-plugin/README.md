@@ -43,7 +43,7 @@ This page explains supported environments, support, and giving feedback and prov
 
 If you want to verify the correct provenance of your download, please verify the signing details from the Eclipse dialog with this data.
 
-![The signing key details to verify the integrity and origin of the download plugin](<../../.gitbook/assets/image (317).png>)
+![The signing key details to verify the integrity and origin of the download plugin](<../../.gitbook/assets/image (317) (1) (1).png>)
 
 The plugin runs on
 
@@ -74,7 +74,7 @@ Navigate to the Marketplace from your running Eclipse instance. Search for Snyk 
 
 When prompted accept the license agreement add the **Snyk Security** certificate to complete the installation (this happens only once).
 
-![Add Snyk Security certificate](<../../.gitbook/assets/Screenshot 2022-05-13 at 09.08.52 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Add Snyk Security certificate](<../../.gitbook/assets/Screenshot 2022-05-13 at 09.08.52 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
 
 Restart the Eclipse instance:
 
@@ -93,4 +93,3 @@ Continue with the steps to [Download the CLI and language server with the Eclips
 If you need help, submit a [request](https://support.snyk.io/hc/en-us/requests/new) to Snyk Support.
 
 Snyk continuously strives to improve the Snyk plugins experience. If you would you like to share your feedback about the Snyk Eclipse plugin, [schedule a meeting](https://calendly.com/snyk-georgi/45min?month=2022-01).
-
