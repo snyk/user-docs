@@ -1,6 +1,6 @@
 # Configure Snyk CLI to connect to Snyk API
 
-By default the Snyk CLI connects to `https://snyk.io/api/v1`.
+By default the Snyk CLI connects to `https://snyk.io/api/v1`. You can use the following variables to configure your connection.
 
 `SNYK_API`
 
@@ -12,7 +12,7 @@ If set to the value of `0`, API (and CLI) requests aimed at `http` URLs are not 
 
 `HTTPS_PROXY` and `HTTP_PROXY`
 
-Allows you to specify a proxy to use for `https` and `http` calls. The `https` in the `HTTPS_PROXY` means that _requests using `https` protocol_ use this proxy. The proxy itself doesn't need to use `https`.
+Allows you to specify a proxy to use for `https` and `http` calls. The `https` in the `HTTPS_PROXY` means that requests using __ `https` __ protocol use this proxy. The proxy itself doesn't need to use `https`.
 
 `SNYK_DISABLE_ANALYTICS=1`
 
