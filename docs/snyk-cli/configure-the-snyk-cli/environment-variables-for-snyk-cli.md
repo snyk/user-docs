@@ -16,8 +16,8 @@ For example, `SNYK_CFG_ORG=myorg` overrides the default org option in `config` w
 
 `SNYK_REGISTRY_USERNAME`
 
-For the container command, specify a username to use when connecting to a container registry. Note that using the `--username` flag overrides this value. This is ignored in favor of local Docker binary credentials when Docker is present.
+For the `snyk container` commands, specify a username to use when connecting to a container registry. Note that using the `--username` flag overrides this value. This is ignored in favor of local Docker binary credentials when Docker is present.
 
 `SNYK_REGISTRY_PASSWORD`
 
-For the container command, specify a password to use when connecting to a container registry. Note that using the `--password` flag overrides this value. This is ignored in favor of local Docker binary credentials when Docker is present.
+For the `snyk container` commands, specify a password to use when connecting to a container registry. Note that using the `--password` flag overrides this value. This is ignored in favor of local Docker binary credentials when Docker is present.
