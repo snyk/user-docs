@@ -43,7 +43,7 @@ snyk code test --json-file-output=<path/to/new_json_file>
 
 The test results appear in the terminal in the standard format, and a JSON file is created in the path you specified.
 
-**Note**: If you want to export the results to a JSON file WITOUT displaying the results in the terminal, enter:
+**Note**: If you want to export the results to a JSON file WITHOUT displaying the results in the terminal, enter:
 
 ```
 snyk code test --json > <path/to/new_json_file>
