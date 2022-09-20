@@ -8,7 +8,7 @@ Snyk's GitHub integration lets you:
 
 ## About Snyk integration settings for GitHub
 
-The GitHub integration works _per user account_ and \*\* **\_**not**\_** \*\* per Snyk Organization.\
+The GitHub integration works _per user account_ and _**not**_ per Snyk Organization.\
 Each person in the Organization sets up the integration and their own unique integration settings: there are no shared Organization level settings for the GitHub integration.
 
 {% hint style="info" %}
@@ -35,7 +35,7 @@ The process to connect Snyk with your GitHub repositories includes the following
 
 After you add them, Snyk scans the selected repositories for dependency files in the entire directory tree, (that is, `package.json`, `pom.xml`, and so on) and imports them to Snyk as projects.
 
-The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
+The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
 ![](<../../.gitbook/assets/which\_repos (3) (5) (9) (7) (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (17).jpg>)
 
