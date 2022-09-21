@@ -22,4 +22,7 @@ redirects:
   features/snyk-cli/grouping-projects-by-branch-or-version: snyk-cli/secure-your-projects-in-the-long-term/grouping-projects-by-branch-or-version.md
   getting-started/getting-started-with-snyk-dashboard: snyk-web-ui/getting-started-with-the-snyk-web-ui.md
   snyk-open-source/open-source-basics/fixing-vulnerabilities: products/snyk-open-source/open-source-basics/README.md
-  error-catalog:   more-info/error-catalog.md
+  error-catalog: more-info/error-catalog.md
+  github-integration: integrations/git-repository-scm-integrations/github-integration.md
+  os-vuln: products/snyk-open-source/open-source-basics/README.md
+  container-fixes: products/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app.md
