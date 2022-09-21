@@ -49,7 +49,7 @@ Use the project links to explore and manage the metadata, retest, and fix option
   This page presents the list of issues with full, partial, or no fixes.
 * For the other relevant projects, use **View PR** links to open and view the Snyk-generated PR fixes in GitHub.
 
-![Target page: details and options for a single project from the dashboard](<../.gitbook/assets/dockerfile\_fix\_vulnerabilities (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).gif>)
+![Target page: details and options for a single project from the dashboard](<../.gitbook/assets/dockerfile\_fix\_vulnerabilities (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).gif>)
 
 ## [**Reports**](https://docs.snyk.io/features/reports)
 
@@ -81,7 +81,7 @@ In the **Integrations** tab, you can:
 * Manage [Slack](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration) and [Jira](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira) integrations.
 * Access the [Vulnerability management tools](https://docs.snyk.io/integrations/vulnerability-management-tools).
 
-![Integrations tab](<../.gitbook/assets/image (157) (1) (1) (1) (1).png>)
+![Integrations tab](<../.gitbook/assets/image (157) (1) (1) (1) (1) (1).png>)
 
 ## Manage [Organization](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations) or [Group](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations-1) members
 
@@ -95,7 +95,7 @@ You must be assigned the [relevant Admin roles and permissions](https://docs.sny
 
 Use the <img src="../.gitbook/assets/cog_icon.png" alt="" data-size="line"> menus to view and manage your Organization (team) or Group (company-wide) settings.
 
-![Group and Organization settings](<../.gitbook/assets/image (145).png>)
+![Group and Organization settings](<../.gitbook/assets/image (145) (1).png>)
 
 ## View product updates
 

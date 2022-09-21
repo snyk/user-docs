@@ -61,7 +61,7 @@ From the CLI, for each list (upgrade and patch), results are displayed in groups
 
 Upgrade and patch results appear similar to the following:
 
-![](<../../../.gitbook/assets/image (17) (1) (1).png>)
+![](<../../../.gitbook/assets/image (17) (1) (1) (1).png>)
 
 ![](<../../../.gitbook/assets/image (49) (1) (1).png>)
 

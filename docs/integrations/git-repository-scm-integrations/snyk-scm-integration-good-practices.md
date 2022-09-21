@@ -63,7 +63,7 @@ Go to the **Projects** page in the Snyk UI, select **Add projects**, select the 
   After a project is imported, it is continuously checked for vulnerabilities.
 
 {% hint style="info" %}
-To confirm that a project was imported, go to the **Add project** import page for the integration. Imported projects are indicated by a ✔ next to the repo name: <img src="../../.gitbook/assets/image (256) (1) (1).png" alt="" data-size="line">
+To confirm that a project was imported, go to the **Add project** import page for the integration. Imported projects are indicated by a ✔ next to the repo name: <img src="../../.gitbook/assets/image (256) (1) (1) (1).png" alt="" data-size="line">
 {% endhint %}
 
 See [Import a Project](../../getting-started/import-a-project.md) for more details.
@@ -157,7 +157,7 @@ You should ask your developers to consider the merge advice label that appears o
 
 ![](<../../.gitbook/assets/advice-green (1) (2) (2) (4) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (23).png>)
 
-![](<../../.gitbook/assets/merge-advice (2) (2) (4) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (17).png>)
+![](<../../.gitbook/assets/merge-advice (2) (2) (4) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 {% hint style="info" %}
 Snyk auto fix PRs are only generated for new issues.
@@ -195,7 +195,7 @@ To set PR Settings on the project level and override the PR settings configured 
 1. Open the organization for which you would like to enable automatic upgrade PRs and go to the **Projects** tab.
 2.  Select and expand the relevant project, select the relevant target, and click the **Settings** cog:
 
-    <img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10).png" alt="" data-size="original">
+    <img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (12).png" alt="" data-size="original">
 3. In the Settings area, in the left panel menu, click the Integration settings to apply unique settings for that specific project.
 4. In settings that load, scroll to the **Automatic dependency upgrade pull requests** and click **Disabled**.
 5. In the options that appear:

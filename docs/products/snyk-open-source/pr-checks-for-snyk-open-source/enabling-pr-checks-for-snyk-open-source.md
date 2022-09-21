@@ -1,7 +1,7 @@
-# Enabling PR Checks
+# Enabling PR Checks for Snyk Open Source
 
 {% hint style="success" %}
-Look familiar? [Snyk Code](../../snyk-code/using-automatic-pr-checks-for-securing-your-source-code/enabling-the-automatic-pr-checks.md) and Snyk Open Source enable PR Checks in the same way with the same configurations.&#x20;
+Look familiar? [Snyk Code](../../snyk-code/pr-checks-for-snyk-code/enabling-pr-checks-for-snyk-code.md) and Snyk Open Source enable PR Checks in the same way with the same configurations.&#x20;
 {% endhint %}
 
 The Snyk project must be active (see [Getting Started](../../../getting-started/)) in order to run checks against its repo.
@@ -22,7 +22,7 @@ Whether a check is successful or has failed is determined on the Snyk side of th
 Before enabling PR Checks, your selected Git repository must be integrated with Snyk.
 {% endhint %}
 
-You can configure Snyk Code to automatically check your PRs for security vulnerabilities on the level of [an entire Organization](enabling-pr-checks.md#enabling-the-automatic-pull-request-checks-for-an-entire-organization) or [a specific Project](enabling-pr-checks.md#enabling-the-automatic-pull-request-checks-for-a-specific-project). In both levels, the configuration is done for a specific integrated Git repository.
+You can configure Snyk Code to automatically check your PRs for security vulnerabilities on the level of [an entire Organization](enabling-pr-checks-for-snyk-open-source.md#enabling-the-automatic-pull-request-checks-for-an-entire-organization) or [a specific Project](enabling-pr-checks-for-snyk-open-source.md#enabling-the-automatic-pull-request-checks-for-a-specific-project). In both levels, the configuration is done for a specific integrated Git repository.
 
 {% hint style="info" %}
 One Snyk Organization can have several repository integrations. However, only the integration with PR Checks enabled in its Settings can be used for the PR Checks by the Organization.

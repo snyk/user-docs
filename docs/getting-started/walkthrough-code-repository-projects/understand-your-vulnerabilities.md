@@ -40,7 +40,7 @@ Snyk provides detailed resources for more information about vulnerabilities, acc
 
 For Open Source and Container vulnerabilities, click on the Snyk vulnerability Identifier (on the right of the Severity Level) to access detailed [Snyk Vulnerability Database](../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md) information for that vulnerability, as defined by Snyk. For example:
 
-![](<../../.gitbook/assets/image (174) (1).png>)
+![](<../../.gitbook/assets/image (174) (1) (1).png>)
 
 For this example, click on the Snyk vulnerability Identifier to see how Hibernate core and its libraries are vulnerable to SQL injection:
 

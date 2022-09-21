@@ -1,7 +1,7 @@
-# Using PR Checks
+# Using PR Checks for Snyk Open Source
 
 {% hint style="success" %}
-Look familiar? [Snyk Code](../../snyk-code/using-automatic-pr-checks-for-securing-your-source-code/viewing-the-pr-checks-in-your-scm.md) and Snyk Open Source use PR Checks in the same way with the same configurations.&#x20;
+Look familiar? [Snyk Code](../../snyk-code/pr-checks-for-snyk-code/viewing-the-pr-checks-in-your-scm.md) and Snyk Open Source use PR Checks in the same way with the same configurations.&#x20;
 {% endhint %}
 
 After you enabled the Automatic PR Checks feature on the Organization or Project level, you can view the status of your new PRs in your integrated SCM.
@@ -13,14 +13,14 @@ PR Checks for Snyk Open Source are grouped and displayed in another row, called 
 The following statuses can appear on your Snyk PR checks in the integrated SCM:
 
 * **Passed/successful** - no issues were discovered, and all the checks have passed.\
-  **Note**: If you selected to manually pass failed checks via the Web UI, the checks will be displayed as “**passed**” in the SCM, but there will be an indication that the PR check was **Skipped**, and that a specific Snyk user forced this result change. For more information, see [Marking failed PR checks as successful](../../snyk-code/using-automatic-pr-checks-for-securing-your-source-code/viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md#\_ref105582006).
+  **Note**: If you selected to manually pass failed checks via the Web UI, the checks will be displayed as “**passed**” in the SCM, but there will be an indication that the PR check was **Skipped**, and that a specific Snyk user forced this result change. For more information, see [Marking failed PR checks as successful](../../snyk-code/pr-checks-for-snyk-code/viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md#\_ref105582006).
 * **Pending** - this status appears until the test has completed.
 * **Failed** – security issues were identified in the PR. These issues must be fixed in order to pass the PR check.
 
 ### **View the PR checks in your repository**
 
 {% hint style="info" %}
-The instructions below use GitHub, but they apply to all supported Git repositories, with some minor differences. For more information, see [Exploring the display of the PR Checks on different integrated Git repositories](using-pr-checks.md#\_ref105582759).
+The instructions below use GitHub, but they apply to all supported Git repositories, with some minor differences. For more information, see [Exploring the display of the PR Checks on different integrated Git repositories](using-pr-checks-for-snyk-open-source.md#\_ref105582759).
 {% endhint %}
 
 1\. In your repository, after you finished creating a new PR, click the **Create** **pull request** button. Snyk automatically checks the PR you created, and displays the results of the check – either **Failed** or **Passed**:
@@ -31,7 +31,7 @@ The instructions below use GitHub, but they apply to all supported Git repositor
 
 The Snyk Web UI opens, displaying the details of the issues that were found in the PR:
 
-You can now [view and work with the discovered PR Check issues on the Web UI](../../snyk-code/using-automatic-pr-checks-for-securing-your-source-code/viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md).
+You can now [view and work with the discovered PR Check issues on the Web UI](../../snyk-code/pr-checks-for-snyk-code/viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md).
 
 <figure><img src="../../../.gitbook/assets/security-check (2).png" alt=""><figcaption></figcaption></figure>
 
