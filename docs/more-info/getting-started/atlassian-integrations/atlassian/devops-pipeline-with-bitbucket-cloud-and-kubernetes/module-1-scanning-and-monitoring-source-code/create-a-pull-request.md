@@ -18,7 +18,7 @@ When you see the Dockerfile project, you will be presented with upgrade recommen
 
 Expand the list by clicking on the "Show more upgrade types" to see your available options.
 
-![](<../../../../../../.gitbook/assets/image (152).png>)
+![](<../../../../../../.gitbook/assets/image (152) (1).png>)
 
 Your options may vary from this screen because the Snyk database is frequently updated, and this includes the latest options for container images. You will see a few options presented.
 
@@ -29,13 +29,13 @@ For the purpose of this workshop, we'll pick the minor change for the **Open a f
 
 Click on that button now to start the process. The automated process starts by showing you a screen to confirm your choice:
 
-![](<../../../../../../.gitbook/assets/image (230) (1).png>)
+![](<../../../../../../.gitbook/assets/image (230) (1) (1).png>)
 
 Click on the Open a Fix PR button to confirm the change.
 
 Next what happens is you are taken to Bitbucket Cloud. This is helpful because it is the shared environment for you and your team to manage your open PRs. The screen snippet below shows some of the PR details as populated by Snyk for your team to review as part of your PR process.
 
-![](<../../../../../../.gitbook/assets/image (366).png>)
+![](<../../../../../../.gitbook/assets/image (80) (1) (1).png>)
 
 Below this information is the code diff your team should easily recognize. This is the fix your developers _knew_ they could make, and Snyk did it for them.
 
