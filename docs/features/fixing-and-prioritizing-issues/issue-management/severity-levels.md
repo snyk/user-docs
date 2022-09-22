@@ -8,7 +8,7 @@ Severity levels are key factors in [vulnerability assessment](https://snyk.io/le
 
 * \*\*\*\*![](<../../../.gitbook/assets/image (303).png>) **Low:** the application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application.
 * \*\*\*\*![](<../../../.gitbook/assets/image (294).png>) **Medium:** may allow attackers under some conditions to access sensitive data on your application.
-* \*\*\*\*<img src="../../../.gitbook/assets/image (131).png" alt="" data-size="original"> **High:** may allow attackers to access sensitive data on your application.
+* \*\*\*\*<img src="../../../.gitbook/assets/image (302).png" alt="" data-size="original"> **High:** may allow attackers to access sensitive data on your application.
 * \*\*\*\*<img src="../../../.gitbook/assets/image (299).png" alt="" data-size="line">**Critical:** may allow attackers to access sensitive data and run code on your application.
 
 {% hint style="info" %}
@@ -59,7 +59,7 @@ Severity levels are displayed throughout Snyk, to show this information at all t
 
 For example, in the **Pending tasks** section of the Dashboard:
 
-<img src="../../../.gitbook/assets/image (402).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/image (9) (3).png" alt="" data-size="original">
 
 Associated with your [Projects](../../../introducing-snyk/projects.md):
 

@@ -48,7 +48,7 @@ After running `snyk monitor` in the CLI, or importing a project via Snyk UI, the
 3. **Call path** - Allows you to see the path from your code to the vulnerable function to validate the result.
 4. **Priority Score** - We will increase the Priority Score for reachable vulnerabilities, to allow you to see these issues first.
 
-![Reachability Call Path](<../../../.gitbook/assets/image (91) (1).png>)
+![Reachability Call Path](<../../../.gitbook/assets/image (91).png>)
 
 ![Priorty Score](<../../../.gitbook/assets/image (126) (1).png>)
 
@@ -56,7 +56,7 @@ After running `snyk monitor` in the CLI, or importing a project via Snyk UI, the
 
 You can filter by reachability status to quickly show the reachable issues.
 
-![](<../../../.gitbook/assets/image (137).png>)
+![](<../../../.gitbook/assets/image (137) (1).png>)
 
 ### Scanning for Reachable Vulnerabilities using Snyk CLI
 

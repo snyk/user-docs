@@ -6,8 +6,9 @@ Snyk can integrate with the following Source Control Managers (SCM) to help you 
 
 * [GitHub integration](github-integration.md)
 * [GitHub Enterprise Integration](github-enterprise-integration.md)
-* [GitHub Read-Only Projects](github-read-only-projects.md)
-* [Bitbucket Cloud integration](bitbucket-cloud-integration.md)
+* [GitHub Read-Only Projects](../ci-cd-integrations/github-read-only-projects/)
+* [Bitbucket Cloud app integration](../ci-cd-integrations/bitbucket-cloud-application.md)
+* [Bitbucket Cloud (Legacy) integration](bitbucket-cloud-integration.md)
 * [Bitbucket Data Center/Server integration](bitbucket-data-center-server-integration.md)
 * [GitLab integration](gitlab-integration.md)
 * [Azure Repos integration](azure-repos-integration.md)

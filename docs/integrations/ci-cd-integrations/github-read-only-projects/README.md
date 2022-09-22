@@ -20,11 +20,11 @@ Unlike projects imported through the Snyk GitHub integration, projects that are 
 
 You can import a read-only project via the **Add project** **> Monitor public GitHub repos** menu in the **Dashboard** and **Projects** tabs, or by going to [https://app.snyk.io/add/github-readonly](https://app.snyk.io/add/github-readonly).
 
-![](../../.gitbook/assets/screen\_shot\_2020-06-09\_at\_14.27.40.png)
+![](../../../.gitbook/assets/screen\_shot\_2020-06-09\_at\_14.27.40.png)
 
 1. Enter a public repository to monitor, following the format _owner/repository_.
 2. When a valid repository name is entered, click **+ Add repo**. \
    The repository is quickly tested for a supported manifest file.
 3. Enter the public repositories you want to monitor and click "Import X repository/ies".
 
-![](<../../.gitbook/assets/github\_readonly\_steps 2 & 3\_18july2022.png>)
+![](<../../../.gitbook/assets/github\_readonly\_steps 2 & 3\_18july2022.png>)

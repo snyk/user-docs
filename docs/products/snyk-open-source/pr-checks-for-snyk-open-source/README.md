@@ -23,13 +23,13 @@ There are two main troubleshooting situations to diagnose for Snyk's PR checks.
 1. Passed when it should have failed: submit [Vulnerability Disclosure](https://snyk.io/vulnerability-disclosure/).
 2.  Failed when it should have passed: Check security check output.
 
-    <figure><img src="../../../.gitbook/assets/security-check (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/security-check (1).png" alt=""><figcaption></figcaption></figure>
 
 > **Hot tip**: Mimic a PR check like this (changes only, not state of project)[ Snyk CLI](../../../snyk-cli/test-for-vulnerabilities/advanced-failing-of-builds-in-snyk-cli.md#fail-current-build-only-if-new-vulnerabilities-are-being-introduced).
 
 When SAST issues are found in your PR, Snyk Code provides you with additional details on each detected issue and offers you fix examples to assist you in developing secure code. By clicking the discovered issues or the link next to them in your SCM, you can open the Snyk Web UI, and view the full details of each discovered vulnerability in your PR:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Intro (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Intro (1) (1).png>)
 
 If you want to pass PRs that automatically failed due to vulnerabilities that were found in them, Snyk Code also enables you to [mark failed PRs as successful](../../snyk-code/pr-checks-for-snyk-code/viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md#\_ref105582006) via the Snyk Web UI. Once you click the **Mark as successful in SCM** button on the Web UI, your failed PRs are considered as successful in the SCM, and can be merged into the target branch:
 

@@ -15,7 +15,7 @@ Next, click on a Snyk Project in that list to see details of the vulnerabilities
 
 For example, for a code analysis scanned by Snyk Code:
 
-![](<../../.gitbook/assets/image (75) (1).png>)
+![](<../../.gitbook/assets/image (75).png>)
 
 See [View project information](../../snyk-web-ui/introduction-to-snyk-projects/view-project-information.md) for more details.
 
@@ -40,11 +40,11 @@ Snyk provides detailed resources for more information about vulnerabilities, acc
 
 For Open Source and Container vulnerabilities, click on the Snyk vulnerability Identifier (on the right of the Severity Level) to access detailed [Snyk Vulnerability Database](../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md) information for that vulnerability, as defined by Snyk. For example:
 
-![](<../../.gitbook/assets/image (174) (1).png>)
+![](<../../.gitbook/assets/image (174).png>)
 
 For this example, click on the Snyk vulnerability Identifier to see how Hibernate core and its libraries are vulnerable to SQL injection:
 
-![](<../../.gitbook/assets/image (169).png>)
+![](<../../.gitbook/assets/image (188).png>)
 
 {% hint style="info" %}
 [Snyk Code](../../products/snyk-code/) and [Snyk IaC](../../products/snyk-infrastructure-as-code/) issue cards have separate information sets for these areas.
@@ -80,9 +80,9 @@ See [Fixing vulnerabilities](broken-reference/) for more details
 
 Snyk uses the package manager of your application to build the dependency tree and display it in the **Dependencies** tab of the project view:
 
-![](<../../.gitbook/assets/image (321) (1) (1).png>)
+![](<../../.gitbook/assets/image (321).png>)
 
-Click the file tree icon (![](<../../.gitbook/assets/image (270).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
+Click the file tree icon (![](<../../.gitbook/assets/image (377).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
 
 ![](../../.gitbook/assets/image23.png)
 
