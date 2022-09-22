@@ -81,7 +81,7 @@ In the **Integrations** tab, you can:
 * Manage [Slack](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration) and [Jira](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira) integrations.
 * Access the [Vulnerability management tools](https://docs.snyk.io/integrations/vulnerability-management-tools).
 
-![Integrations tab](<../.gitbook/assets/image (157) (1) (1) (1) (1) (1).png>)
+![Integrations tab](<../.gitbook/assets/image (157) (1) (1) (1) (1).png>)
 
 ## Manage [Organization](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations) or [Group](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations-1) members
 
@@ -95,7 +95,7 @@ You must be assigned the [relevant Admin roles and permissions](https://docs.sny
 
 Use the <img src="../.gitbook/assets/cog_icon.png" alt="" data-size="line"> menus to view and manage your Organization (team) or Group (company-wide) settings.
 
-![Group and Organization settings](<../.gitbook/assets/image (145) (1).png>)
+![Group and Organization settings](<../.gitbook/assets/image (145).png>)
 
 ## View product updates
 
@@ -113,7 +113,7 @@ Use the Help menu for quick access to Snyk user documentation (including the **G
 
 This is where you can configure the general [account settings](https://app.snyk.io/account) for your user account, view your authentication token and authorized applications, set your preferred (default) organization, as well as your notification and sharing preferences, and view information on the latest Snyk product updates.
 
-![Options for a user account](<../.gitbook/assets/image (120) (1) (1) (1) (1).png>)
+![Options for a user account](<../.gitbook/assets/image (120) (1) (1) (1) (1) (1).png>)
 
 ### Managing user **account settings**
 

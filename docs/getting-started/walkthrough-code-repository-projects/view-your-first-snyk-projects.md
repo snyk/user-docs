@@ -28,7 +28,7 @@ When [setting up your GitHub integration](https://docs.snyk.io/integrations/git-
 
 When you then import a Project, private repositories are identified with a “lock” symbol (<img src="../../.gitbook/assets/image (101) (2) (1).png" alt="" data-size="line">) in the imported scan details:
 
-![](<../../.gitbook/assets/image (125) (1) (1).png>)
+![](<../../.gitbook/assets/image (125) (1).png>)
 
 For customers on free plans, private repository scans count towards your test count limit.
 

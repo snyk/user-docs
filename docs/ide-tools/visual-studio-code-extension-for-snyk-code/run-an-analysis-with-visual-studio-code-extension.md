@@ -6,7 +6,7 @@ Snyk Open Source requires the Snyk CLI, so it downloads in the background.
 
 Snyk Code analysis runs quickly without the CLI, so results may already be available. Otherwise, you see the following screen while Snyk scans your workspace for vulnerabilities:
 
-![Snyk Code scan](<../../.gitbook/assets/image (134) (1) (1).png>)
+![Snyk Code scan](<../../.gitbook/assets/image (134) (1).png>)
 
 Snyk analysis runs automatically when you open a folder or workspace.
 

@@ -4,24 +4,24 @@ Once the Code Agent image is stored on your machine, you need to use the `docker
 
 **To run the Code Agent container:**
 
-* In the terminal, enter the following command to launch a container based on the Snyk Code Agent image:
+In the terminal, enter the following command to launch a container based on the Snyk Code Agent image:
 
 ```
 docker run --name <container_name> \
 -p <host_machine_port_no._mapped to>:<Code_Agent_container_port_ no.> \
 -e PORT=<Code_Agent_container_port_no.> -e SNYK_TOKEN=<Snyk_API_token> --network <network_name> \
-snyk/code-agent
+snyk/code-agent:<image_tag>
 ```
 
 Where:
 
 * `--name <container_name>` - a new name for the Code Agent container. This name will be used to define the `GIT_CLIENT_URL` parameter for the Broker Client that you will run next. For example, `code-agent`.
-* `-p <host_machine_port_no._mapped to>:<Code_Agent_container_port_ no.>` - the mapping of a physical open port in the host machine to a port in the Code Agent container. These port numbers on the host machine and container do not have to be the same. For example, `3001:3000`.\
+* `-p <host_machine_port_no._mapped to>:<Code_Agent_container_port_no.>` - the mapping of a physical open port in the host machine to a port in the Code Agent container. These port numbers on the host machine and container do not have to be the same. For example, `3001:3000`.\
   **Note**: The port no. of the host machine must be unique.
 * `-e PORT` - the port of the Code Agent container, where it  accepts external connections. The default is `3000`. This port no. must be the same as the `<Code_Agent_container_port_ no.>` in the `-p` parameter above.
 * `-e SNYK_TOKEN` **** - your [Snyk API token](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-snyk-api-token), as appears in your **Account Settings** page on the Snyk Web UI.&#x20;
 * `--network` – the name of the [Docker bridge network](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-3-creating-a-network-for-the-broker-client-and-code-agent-communication) that was previously created. For example, `mySnykBrokerNetwork`.&#x20;
-* `snyk/code-agent` - the Docker image of the Code Agent container.
+* `snyk/code-agent:<image_tag>` - the Docker image of the Code Agent container. Specify a tag if not using `latest`.
 
 Once the Code Agent setup is completed successfully, the following message appears in the terminal:
 
@@ -31,7 +31,7 @@ Once the Code Agent setup is completed successfully, the following message appea
 
 **To verify the setup and details of the Code Agent container:**
 
-* Run:
+Run:
 
 ```
 docker ps
@@ -64,4 +64,4 @@ Where:
 * `--network` - the name of the Docker bridge network, which will be used for the communication with the Client Broker, is `mySnykBrokerNetwork`.
 * `snyk/code-agent` - the Docker image of the Code Agent container.
 
-### ****
+****

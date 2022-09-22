@@ -36,7 +36,7 @@ The **Mark as successful** action does NOT ignore the issue, but only allows it 
 
 2\. On the confirmation message that appears, click **OK**:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful - message (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (7).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful - message (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 A message appears on the **SAST check** page header, informing you that the failed PRs are now marked as successful:
 
@@ -54,7 +54,7 @@ You can return to your SCM directly from the Snyk Web UI.
 
 1\. On the **SAST check** page > Project Summary Information area, click the **PR Check Group** option:
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\. On the **Security check** page, click the repository link in the **REPOSITORY** field:
 

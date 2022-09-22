@@ -32,7 +32,7 @@ The **Security issues** section show the number of vulnerabilities, their type, 
 
 The **Issues over time** graph shows the history of vulnerabilities in your Organization:
 
-![](<../../.gitbook/assets/image (103) (2) (1).png>)
+![](<../../.gitbook/assets/image (103) (2).png>)
 
 This shows the number of overall vulnerabilities, and the number of projects being scanned (the dotted line in the graph).
 
