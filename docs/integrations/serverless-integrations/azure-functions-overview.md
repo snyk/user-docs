@@ -22,7 +22,7 @@ To do this, in [your Integrations page](https://app.snyk.io/integrations), navig
 
 This will take you to a page where you'll be prompted to enter your Azure service principal credentials:
 
-![](<../../.gitbook/assets/image (29) (1).png>)
+![](<../../.gitbook/assets/image (29).png>)
 
 Instructions for how to generate and locate your Azure service principal credentials are below.
 
@@ -69,11 +69,11 @@ The first is on your integration settings page, where you'll see your current in
 
 You can also check the status directly on the Azure Functions integration settings page (found by clicking "**Edit settings**" on the integration settings page shown above). If you've entered credentials, you'll see a box indicating whether or not Snyk is able to correctly connect to Azure:
 
-![](<../../.gitbook/assets/image (31) (1).png>)
+![](<../../.gitbook/assets/image (31).png>)
 
 If you are unable to connect, re-enter your account credentials to verify that they are correct:
 
-![](<../../.gitbook/assets/image (27) (1) (1).png>)
+![](<../../.gitbook/assets/image (27) (1).png>)
 
 ## **Disable the Azure Functions integration**
 
@@ -81,7 +81,7 @@ If you decide to disable this integration for any reason, you can accomplish thi
 
 You need to find the specific integration you wish to deactivate in your list of integrations and click Edit settings. You are taken to a page that shows the current status of your integration, a place to update your credentials, specific to each integration (credentials, API key, Service Principal, or connection details), and a red box at the bottom to disconnect this integration, like in the example seen below:
 
-![](<../../.gitbook/assets/image (26) (1) (1).png>)
+![](<../../.gitbook/assets/image (26) (1).png>)
 
 If you choose to disconnect, your credentials will be removed from Snyk and any integration-specific projects we had been monitoring will be deactivated on Snyk.
 
@@ -97,7 +97,7 @@ In either case, you'll see a list of any available Function apps on the Azure ac
 **NOTE:** Current support exists for importing **v2 functions only--all functions will be ignored.**
 {% endhint %}
 
-![](<../../.gitbook/assets/image (30) (1) (1).png>)
+![](<../../.gitbook/assets/image (30) (1).png>)
 
 As soon as you've added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Azure functions in your [project dashboard](https://app.snyk.io/projects). You'll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to fix:
 

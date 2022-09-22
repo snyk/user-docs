@@ -33,7 +33,7 @@ To add a default project:
 4. Click **Add selected repositories**.\
    Snyk scans the entire file tree for dependency files and imports them to Snyk \*\*\*\* as \*\*\*\* Projects\*\*.\*\*
 
-![](../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en.png)
+![](<../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en (1).png>)
 
 ## Adding custom file locations and excluding folders
 
@@ -49,7 +49,7 @@ Use this procedure to add an Azure Repository dependency from a non-default path
 The relative path field is case-sensitive.
 {% endhint %}
 
-![](../../.gitbook/assets/azure\_custom\_repo-11aug2022.png)
+![](<../../.gitbook/assets/azure\_custom\_repo-11aug2022 (1).png>)
 
 ### Exclude folders from import
 

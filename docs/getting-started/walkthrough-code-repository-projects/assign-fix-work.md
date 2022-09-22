@@ -46,7 +46,7 @@ Navigate to the issue you have decided to fix, then click **Create a Jira issue*
 
 You can then define the Jira task details for this fix:
 
-![](<../../.gitbook/assets/image (387).png>)
+![](<../../.gitbook/assets/image (77).png>)
 
 You can assign this task to a developer in the team, following your team’s normal Sprint processes.
 
