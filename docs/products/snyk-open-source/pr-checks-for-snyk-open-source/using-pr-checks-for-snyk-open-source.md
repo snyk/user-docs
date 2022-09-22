@@ -39,10 +39,6 @@ You can now [view and work with the discovered PR Check issues on the Web UI](..
 
 PR Checks works in a similar way on all supported Git repositories, but the results are displayed differently on each one.
 
-{% hint style="info" %}
-The screenshots in this section show the aggregated results of the PR Checks for both Snyk Code and Snyk Open Source.
-{% endhint %}
-
 #### **GitHub and GitHub Enterprise**
 
 **Notes**:
