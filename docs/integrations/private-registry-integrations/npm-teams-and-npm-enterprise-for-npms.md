@@ -33,7 +33,7 @@ This guide is relevant for Snyk Web UI integrations only, the Snyk CLI already s
 4. When you have added all the registries and scopes you want, click **Update settings**.
 5. Now test it out - open a Pull/Merge Request on a project that contains private dependencies to see a lockfile updated and included in the Snyk Fix Pull Request where previously none was generated.
 
-![](<../../.gitbook/assets/image (34) (2).png>)
+![](<../../.gitbook/assets/image (34) (1).png>)
 
 ## npm Teams & npm Enterprise Registry Settings
 

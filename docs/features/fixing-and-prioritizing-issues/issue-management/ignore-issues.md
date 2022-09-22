@@ -75,11 +75,11 @@ Refer to the following example:
 
 The following shows `snyk test` results before ignoring in the Web UI:
 
-![Snyk test results before ignoring in the Web UI](<../../../.gitbook/assets/image (18) (1).png>)
+![Snyk test results before ignoring in the Web UI](<../../../.gitbook/assets/image (18) (1) (2).png>)
 
 The following shows `snyk test` results after ignoring in the Web UI:
 
-![Snyk test results after ignoring in the Web UI](<../../../.gitbook/assets/image (20) (1) (2).png>)
+![Snyk test results after ignoring in the Web UI](<../../../.gitbook/assets/image (20) (1).png>)
 
 **Note**: The preceding example shows what happens if you ignore the project imported by `snyk monitor` from the CLI or CI/CD.
 

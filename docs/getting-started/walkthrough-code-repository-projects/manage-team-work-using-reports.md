@@ -32,7 +32,7 @@ The **Security issues** section show the number of vulnerabilities, their type, 
 
 The **Issues over time** graph shows the history of vulnerabilities in your Organization:
 
-![](<../../.gitbook/assets/image (324).png>)
+![](<../../.gitbook/assets/image (103) (2) (1).png>)
 
 This shows the number of overall vulnerabilities, and the number of projects being scanned (the dotted line in the graph).
 
@@ -54,7 +54,7 @@ Alternatively, if you see an increase in the number of vulnerabilities without a
 
 You can hover over a date to see the summary of “to this date” information at that point:
 
-![](<../../.gitbook/assets/image (323) (1).png>)
+![](<../../.gitbook/assets/image (320).png>)
 
 This is especially useful when you see sudden changes in issue numbers on a specific day.
 
@@ -76,7 +76,7 @@ For the reporting period (90 days by default), this activity shows:
 
 If you have lots of Projects files to manage and organise in your Organization, you can use filters to focus on specific Projects, or specific types of vulnerability:
 
-![](<../../.gitbook/assets/image (71) (1).png>)
+![](<../../.gitbook/assets/image (71).png>)
 
 For example, if your Organization represents your development team, and you want to focus on (say) front-end work in the next Sprint, click the **Projects** dropdown and select a subset of the front-end Projects to scan, allowing you to focus on fixing vulnerabilities in that area.
 
@@ -93,7 +93,7 @@ Filtering results in Reports means that your Dashboard shows different numbers t
 
 For example, by default, Snyk does not scan the Dockerfile in the filter, it just scan the docker images themselves
 
-![](<../../.gitbook/assets/image (111) (1) (1).png>)
+![](<../../.gitbook/assets/image (111) (1) (1) (1) (1).png>)
 
 This is turned off by default in the filter, because when Snyk scans the Dockerfile, there will be vulnerabilities in the base OS in the container that you are building. As these cannot generally be fixed by the development team, this filtering allows your team to focus on the issues that you can fix.
 
