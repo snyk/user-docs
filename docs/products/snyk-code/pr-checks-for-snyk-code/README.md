@@ -32,7 +32,7 @@ If you want to pass PRs that were automatically failed due to vulnerabilities th
 The PR Checks feature is applied only to repositories that were imported to Snyk from the integrated SCM. However, after the initial import, any new file or folder that will be added in the SCM to the imported repositories, will be included in the PR Checks. The PR Checks feature can be enabled for your integrated SCM on the level of an entire Organization or on the level of a specific Project.
 
 {% hint style="info" %}
-Every PR check is considered as a “test” in the test count of the related Organization. New commits to on open PR branch are also checked automatically, and therefore these commit checks are also counted as “tests”.
+Every PR check is considered as a “test” in the test count of the related Organization. New commits to an open PR branch are also checked automatically, and therefore these commit checks are also counted as “tests”.
 {% endhint %}
 
 ### PR Checks workflow
