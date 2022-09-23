@@ -4,25 +4,25 @@
 See [Snyk Projects](../snyk-web-ui/introduction-to-snyk-projects/) for more details.
 {% endhint %}
 
-Snyk Project information appears in the **Projects** menu on the Snyk dashboard:
+Snyk Project information appears in the **Projects** menu in the Snyk dashboard. The filters that are visible depend on the grouping option you choose. &#x20;
 
-<figure><img src="../.gitbook/assets/Projects.png" alt="Screenshot of the Snyk Projects listing page showing various types of projects in a list"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/projects-page_minimal options_20sept2022.png" alt="Screenshot of the Snyk Projects listing page showing various types of projects in a list"><figcaption><p>The Projects menu in the Snyk Web Ui</p></figcaption></figure>
 
 ### Projects
 
-Snyk Projects define the items Snyk scans for issues, with configuration information defining how to run that scan:
+Snyk Projects define the manifest files that Snyk scans for issues, with configuration information defining how to run that scan.
 
-<figure><img src="../.gitbook/assets/Targets 3.png" alt="Screenshot highlighting the projects inside of a target in the Snyk UI"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/projects-only_20sept2022.png" alt="Screenshot highlighting the projects inside of a target in the Snyk UI"><figcaption></figcaption></figure>
 
 ### Targets
 
-Projects are held in Targets; these are an external resource Snyk has scanned, such as a code repository:
+Projects are held in a Target, which is an external resource that Snyk has scanned, such as a code repository.
 
-<figure><img src="../.gitbook/assets/Targets 1.png" alt="Screenshot highlighting a project&#x27;s target inside the Snyk UI"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/targets-projects_20sept2022 (1).png" alt="Screenshot highlighting a project&#x27;s target inside the Snyk UI"><figcaption><p>Group by target applies filtering attributes at the Target level</p></figcaption></figure>
 
 ### Origins
 
-Origins show the type of Target ecosystem, such as CLI, GitHub, or Kubernetes:
+The origin indicates the Target ecosystems, such as CLI, GitHub, or Kubernetes:
 
-<figure><img src="../.gitbook/assets/Targets 2.png" alt="Screenshot highlighting a set of projects&#x27; origin inside the Snyk UI"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/targets-origin_20sept2022.png" alt="Screenshot highlighting a set of projects&#x27; origin inside the Snyk UI"><figcaption><p>An origin defines the Target ecosystem</p></figcaption></figure>
 

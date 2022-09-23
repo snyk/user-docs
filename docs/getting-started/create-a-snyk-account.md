@@ -10,7 +10,7 @@ To create a Snyk account:
 2. Select your preferred signup method.
 3. Create a new account as prompted. You now have a free Snyk account! Access your Snyk account at [https://app.snyk.io](https://app.snyk.io)
 
-![](<../.gitbook/assets/image (66) (2).png>)
+![](<../.gitbook/assets/image (66) (2) (1).png>)
 
 {% hint style="info" %}
 Different pricing plans are available, see [Plans](../introducing-snyk/plans.md) for details.

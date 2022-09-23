@@ -2,17 +2,15 @@
 
 ### Targets
 
-Targets represent an external resource Snyk has scanned: a code repository, a Kubernetes workload, or other scannable resources external to Snyk.&#x20;
+Targets represent an external resource Snyk has scanned: a code repository, a Kubernetes workload, or other scannable resources external to Snyk. Targets appear in the **Projects** menu on the Snyk dashboard when you select **Group by target**.&#x20;
 
-All [Snyk Projects](./#projects) are associated to a parent Target. One Target may relate to many Projects. The structure of the Target depends on the [origin](./#origin).
+A Project is a scanned manifest file within a Target. Each [Snyk Project](./#projects) is associated with a parent Target. One Target may include many Projects. The structure of the Target depends on the [origin](./#origin).
 
-Targets appear in the **Projects** menu on the Snyk dashboard.
+The grouping option controls whether your filtering attributes are applied at the Target or at the Project level. **Group by none** (ungrouped) lets you apply [tags](project-tags.md) and [filtering attributes at the Project level](project-attributes.md), to the individual Projects.
 
-<figure><img src="../../.gitbook/assets/Targets 1.png" alt="Screenshot showing projects&#x27; target in the Snyk UI"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/targets-projects_20sept2022 (1).png" alt="Screenshot showing projects&#x27; target in the Snyk UI"><figcaption><p>Group by target applies filtering attributes at the Target level</p></figcaption></figure>
 
 Snyk provides pagination to improve the page loading time for Projects page requests and filtering, which is particularly relevant if you have hundreds of thousands of Projects to scan.&#x20;
-
-Use **Group by** to collect your Projects by target or leave them ungrouped.
 
 Use **Sort by** to list your Projects by severity, by how recently they were imported, or in alphabetical order.
 
@@ -24,9 +22,11 @@ Targets also appear on the [Snyk API](https://apidocs.snyk.io/?version=2022-02-1
 
 ### Origin
 
-The Target ecosystem, such as CLI, GitHub, or Kubernetes.
+The origin defines the Target ecosystem, such as CLI, GitHub, or Kubernetes. Origins are a property of [Targets](./#targets) and appear in the Projects menu as an icon next to the target name.
 
-Possible values are:
+<figure><img src="../../.gitbook/assets/targets-origin_20sept2022.png" alt="Screenshot showing projects&#x27; origin in the Snyk UI"><figcaption><p>An origin defines the Target ecosystem</p></figcaption></figure>
+
+Possible origin values are:
 
 * acr
 * api
@@ -58,20 +58,19 @@ Possible values are:
 * quay-cr
 * terraform-cloud
 
-Origins are a property of [Targets](./#targets) and appear in the Projects menu, as an icon by the target name.
-
-<figure><img src="../../.gitbook/assets/Targets 2.png" alt="Screenshot showing projects&#x27; origin in the Snyk UI"><figcaption></figcaption></figure>
-
 ### Snyk Projects
 
-Snyk Projects define the items Snyk scans at a given Target. A Project includes:
+Snyk Projects define the items that Snyk scans for a given Target.&#x20;
 
-* A scannable item external to Snyk.
-* Configuration to define how to run that scan.
+A Project includes:
 
-Projects appear on the **Projects** menu on the Snyk dashboard, and on the [Snyk API](https://apidocs.snyk.io/?version=2022-02-16%7Ebeta#tag--Projects):
+* A scannable or scanned manifest file that is external to Snyk.
+* A configuration to define how to run that scan.
 
-<figure><img src="../../.gitbook/assets/Targets 3.png" alt="Screenshot showing projects listed under a target in Snyk UI"><figcaption></figcaption></figure>
+Projects appear in the **Projects** menu on the Snyk dashboard and in the [Snyk API](https://apidocs.snyk.io/?version=2022-02-16%7Ebeta#tag--Projects). \
+Use **Group by none** (ungrouped) for better Project visibility and to apply [filtering attributes at the Project level](project-attributes.md).&#x20;
+
+<figure><img src="../../.gitbook/assets/project-attributes_20sept2022.png" alt=""><figcaption><p>Project level filtering attributes</p></figcaption></figure>
 
 ## Targetfile
 

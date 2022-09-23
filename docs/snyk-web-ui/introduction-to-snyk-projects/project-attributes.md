@@ -4,29 +4,17 @@ Project attributes are static and non-configurable fields that allow you to add 
 
 ## **Available attributes and their values**
 
-### **Lifecycle stage**
+In the **Projects** menu, use **Group by none** (ungrouped) for better Project visibility and to apply [tags](project-tags.md) and filtering attributes at the Project level. ****&#x20;
 
-* Production
-* Development
-* Sandbox
+<figure><img src="../../.gitbook/assets/project-attributes_20sept2022.png" alt=""><figcaption><p>Project level filtering attributes</p></figcaption></figure>
 
-### **Business criticality**
+The available Project attributes are summarized in the following table.&#x20;
 
-* Critical
-* High
-* Medium
-* Low
-
-### **Environment**
-
-* Frontend
-* Backend
-* Internal
-* External
-* Mobile
-* SaaS
-* Hosted
-* Distributed
+| Attribute            | Attribute options                                                                                                                                           |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Business criticality | <ul><li>Critical</li><li>High</li><li>Medium</li><li>Low</li></ul>                                                                                          |
+| Environment          | <ul><li>Frontend</li><li>Backend</li><li>Internal</li><li>External</li><li>Mobile</li><li>SaaS</li><li>On-Prem</li><li>Hosted</li><li>Distributed</li></ul> |
+| Lifecycle stage      | <ul><li>Production</li><li>Development</li><li>Sandbox</li></ul>                                                                                            |
 
 {% hint style="info" %}
 Filtering is available in projects by their values from [Snyk's REST API](../../snyk-api-info/).
@@ -48,7 +36,7 @@ After you have assigned a value to the attribute, it appears on the project list
 ## **Removing values from attributes**
 
 1. Select the attribute you want to remove a value from.
-2. Click the **x G**for the value.
+2. Click the **x** for the value.
 
 ![](../../.gitbook/assets/gs3.png)
 
