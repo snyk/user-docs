@@ -5,6 +5,9 @@ These strategies are useful to teams using the Snyk SCA ([Software Composition A
 ## Gradle and Scala
 
 * For "multi-project" configurations, test all sub-projects. Use this option with the `monitor` or `test` command: `--all-sub-projects`.
+
+
+
 * To scan specific configurations, select certain values of configuration attributes to resolve the dependencies. Use this option with the `test` or `monitor` command: `--configuration-attributes=`.
 
 ## Python
@@ -14,6 +17,7 @@ These strategies are useful to teams using the Snyk SCA ([Software Composition A
     ```
     snyk test --command=python3
     ```
+* The `setup.py` file must be targeted. Use the command `snyk test --file=setup.py`
 * If you scan a Pip project and use the `--file=` option because your manifest file is not the standard `requirements.txt`, you must use the following option to specify Pip as the package manager `--package-manager=pip.`
 
 ## .Net
