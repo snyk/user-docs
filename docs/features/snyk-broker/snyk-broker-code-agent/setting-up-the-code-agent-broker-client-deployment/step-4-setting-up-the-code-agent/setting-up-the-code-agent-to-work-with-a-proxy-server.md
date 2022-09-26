@@ -7,6 +7,12 @@ To use the Code Agent - Broker Client deployment in an infrastructure that uses 
 -e HTTPS_PROXY=http://my.proxy.address:<port_no.>
 ```
 
+If your proxy requires username and password authentication, add the following additional environment variable:
+
+```
+-e PROXY_AUTH=userID:userPass
+```
+
 In addition, you will need to add these environment variables to the Broker Client component and a command to bypass the Code Agent, as described on [Setting up the Broker Client to work with a Proxy server](https://docs.snyk.io/features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-5-setting-up-the-broker-client/step-5.2a-running-the-broker-client-without-the-code-snippet-display/setting-up-the-broker-client-to-work-with-a-proxy-server).
 
 **Note**: For more information on using Docker containers with a proxy, see [Configure Docker to use a proxy server](https://docs.docker.com/network/proxy/).

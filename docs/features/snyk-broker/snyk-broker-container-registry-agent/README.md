@@ -59,6 +59,7 @@ The Broker Client provides the Agent with the connection details. The Agent uses
   * Storage: 5Gb
 * Docker configured to pull components images from Docker Hub
 * Connection between broker and agent
+* HTTPS connection between the agent and the registry. Support for HTTP-only registries can be resolved by deploying a reverse proxy between the code agent and the SCM.
 * Broker Client image can be found for download [here](https://hub.docker.com/r/snyk/broker/tags?page=1\&ordering=last\_updated\&name=container-registry-agent)
 * Container Registry Agent image can be found for download [here](https://hub.docker.com/r/snyk/container-registry-agent/tags?page=1\&ordering=last\_updated)
 

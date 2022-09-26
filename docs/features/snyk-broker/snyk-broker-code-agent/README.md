@@ -33,7 +33,7 @@ The **Broker Client** and **Code Agent** components are deployed in your infrast
 **Note**: The Broker Client automatically provides the Code Agent with the connection details to the integrated SCM, which stores the required repositories.
 
 3\.  The Code Agent connects to the integrated SCM, and clones the local repository in a secured manner in your infrastructure. The cloned repository is stored temporarily on the Code Agent container.\
-**Note**: The cloning is performed via HTTPS connection.
+**Note**: The cloning is performed via HTTPS connection. If your SCM does not support HTTPS, you can work around this with a reverse proxy. For more details reach out to your technical contact at Snyk.
 
 4\.  The Code Agent filters the cloned repository for supported files, and sends them to the Snyk Code AI Engine.
 

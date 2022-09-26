@@ -25,7 +25,7 @@ The minimal requirements for running the **Code Agent** component are:
 * **Disk space** - 2Gb\
   **Note**: The available disk space determines the maximum size of repositories that are imported simultaneously. If you wish to import repositories that exceed this size, you need to increase the available disk space. However, it is highly recommended to consult with your Implementation Consultant before importing repositories that are larger than 2Gb.
 * **Network:**
-  * SCM connection - communication to the SCM that stores the repositories you want to analyze.
+  * SCM connection - HTTPS communication to the SCM that stores the repositories you want to analyze. Support for HTTP-only SCM-deployments can be resolved by deploying a reverse proxy between the code agent and the SCM.
   * Snyk Code AI Engine connection - outbound communication to the Code Analysis Engine at [https://deeproxy.snyk.io/](https://deeproxy.snyk.io/).
 * Internet bandwidth and connection - the upload speed of the source code to the Broker Server will be affected by a low bandwidth and a slow Internet connection.
 * **Snyk API token** - your **** Snyk API token is required to authenticate the Code Agent component with your Snyk Account.\
