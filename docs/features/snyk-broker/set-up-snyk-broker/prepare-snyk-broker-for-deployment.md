@@ -46,6 +46,8 @@ Every integration has a specific Broker token assigned to it, this means if you 
 ## Generate credentials in the target application for Snyk Broker
 
 {% hint style="info" %}
+Snyk recommends rotating all API tokens and credentials used with Snyk Broker every 90 days.
+
 For the first deployment of broker, collaborating with your Snyk account team is required.
 {% endhint %}
 
