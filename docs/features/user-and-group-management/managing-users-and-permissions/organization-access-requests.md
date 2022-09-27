@@ -30,4 +30,6 @@ After the requester accepts the invitation, they have access to the Organization
 
 ## Settings
 
-Request access can be enabled or disabled at either the Snyk Organization level or for an entire Group, on the **Members** page in either the org or group settings.
+To access settings, select the **Settings** > **General** option, then navigate to the **Requesting Access** section and select to enable or disable request access:
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-09-27 at 09.44.52.png" alt=""><figcaption></figcaption></figure>
