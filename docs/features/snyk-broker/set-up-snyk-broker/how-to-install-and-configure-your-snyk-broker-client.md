@@ -6,7 +6,7 @@ Snyk recommends and supports using Docker as the method of running the Snyk Brok
 
 To install and configure your Snyk Broker client:
 
-1. Visit [the broker repository](https://github.com/snyk/broker) and follow the instructions for the relevant integration to run one of the images provided by Snkk, or derive your own.\
+1. Visit [the broker repository](https://github.com/snyk/broker) and follow the instructions for the relevant integration to run one of the images provided by Snyk, or derive your own.\
    There are some examples available at[ Snyk Broker set-up examples](../snyk-broker-set-up-examples/)
 2. For the environment variables required to run the Broker client, you must:
    1. Retrieve your [unique broker client token](prepare-snyk-broker-for-deployment.md),
