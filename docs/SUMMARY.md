@@ -92,6 +92,7 @@
   * [Configure the Snyk CLI](snyk-cli/configure-the-snyk-cli/README.md)
     * [Environment variables for Snyk CLI](snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli.md)
     * [Configure Snyk CLI to connect to Snyk API](snyk-cli/configure-the-snyk-cli/configure-snyk-cli-to-connect-to-snyk-api.md)
+    * [Proxy configuration for Snyk CLI](snyk-cli/configure-the-snyk-cli/proxy-configuration-for-snyk-cli.md)
 * [Snyk API](snyk-api-info/README.md)
   * [Getting started using Snyk REST API](snyk-api-info/getting-started-using-snyk-rest-api.md)
   * [Scenarios for using Snyk API](snyk-api-info/scenarios-for-using-snyk-api.md)
