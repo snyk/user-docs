@@ -6,9 +6,9 @@
 
 {% embed url="https://snyk.docs.apiary.io/#introduction/consuming-webhooks" %}
 
-Webhooks allow you to be notified of Snyk system events, enabling you to build notifications and react to changes in your projects.
+Webhooks allow you to be notified of Snyk system events, enabling you to build notifications and react to changes in your projects. The current implementation supports events for recurring scans of open source and container image related projects.
 
-When events are triggered, Snyk sends HTTP POST requests to URLs you have configured for those events, with all the information you need.
+When events are triggered, Snyk sends HTTP POST requests to URLs you have configured for those events, with all the information you need.&#x20;
 
 ### Example use cases
 
