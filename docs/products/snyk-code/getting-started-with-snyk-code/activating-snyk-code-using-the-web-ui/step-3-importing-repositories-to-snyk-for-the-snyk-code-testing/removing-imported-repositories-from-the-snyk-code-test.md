@@ -35,7 +35,7 @@ To deactivate or delete an imported repository, you need to select all the Proje
 
 **To deactivate or delete multiple Snyk Projects:**
 
-1\. On the Snyk Web UI, select <img src="../../../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (12).png" alt="" data-size="line"> **Settings** > **Usage**:
+1\. On the Snyk Web UI, select <img src="../../../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (11).png" alt="" data-size="line"> **Settings** > **Usage**:
 
 <figure><img src="../../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
@@ -58,7 +58,7 @@ Depending on your selected action, one of the following occurs:
 
 6\. If you selected to delete Projects, a confirmation message appears, asking you to confirm the deletion. Click **OK** to delete the Projects:
 
-![](<../../../../../.gitbook/assets/Snyk Code - Org Settings - Usage - Delete Projects - Confirmation message.png>)
+![](<../../../../../.gitbook/assets/Snyk Code - Org Settings - Usage - Delete Projects - Confirmation message (1).png>)
 
 7\. To remove from Snyk the Target folder of the repository whose Projects you deleted, return to the **Projects** page. Then, open the Target folder, and click the **Delete** button on the right corner:
 

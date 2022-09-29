@@ -10,9 +10,10 @@ This single plugin provides a Java vulnerability scanner, a custom code vulnerab
 
 Snyk scans for the following types of issues:
 
-\*\*\*\*[**Open Source Security**](https://snyk.io/product/open-source-security-management/) - security vulnerabilities and license issues in both direct and in-direct (transitive) open-source dependencies pulled into the Snyk Project. See also the [Open Source docs](https://docs.snyk.io/products/snyk-open-source).
-
-[**Code Security and Code Quality**](https://snyk.io/product/snyk-code/) - security vulnerabilities and quality issues in your code. See also the Snyk Code docs. See also the [Snyk Code docs](https://docs.snyk.io/products/snyk-code).
+* [**Open Source Security**](https://snyk.io/product/open-source-security-management/) - security vulnerabilities and license issues in both direct and indirect (transitive) open-source dependencies pulled into the Snyk Project. \
+  See also the [Open Source docs](https://docs.snyk.io/products/snyk-open-source).
+* [**Code Security and Code Quality**](https://snyk.io/product/snyk-code/) - security vulnerabilities and quality issues in your code. See also the Snyk Code docs. \
+  See also the [Snyk Code docs](https://docs.snyk.io/products/snyk-code).
 
 This page explains installation of the Visual Studio extension. **After you complete the steps on this page**, you will continue by following the instructions in the other Visual studio extension docs:
 
@@ -49,7 +50,7 @@ Search for _Snyk_ and select **Download** to download the Snyk Security - Code a
 
 Once installed, use Snyk through the **Extensions > Snyk** menu (on Visual Studio versions older than 2019, Snyk is part of the top menu bar).
 
-![](<../../.gitbook/assets/image (351).png>)
+![](<../../.gitbook/assets/image (351) (1).png>)
 
 You can also open the Snyk tool window using **View > Other Windows > Snyk**_._
 
