@@ -2,7 +2,9 @@
 
 If you already have Projects in your Snyk Account, you can add other repositories to be tested by Snyk Code.
 
-**Note**: If the **Snyk Code** feature was previously disabled, and you want to apply the Snyk Code testing to your existing repositories as well, you need to [re-import these repositories](re-importing-existing-repositories-for-the-snyk-code-test.md).
+{% hint style="warning" %}
+If the **Snyk Code** feature was previously disabled, and you want to apply the Snyk Code testing to your existing repositories as well, you need to [re-import these repositories](re-importing-existing-repositories-for-the-snyk-code-test.md).
+{% endhint %}
 
 **To import additional repositories to Snyk:**
 
@@ -10,7 +12,7 @@ If you already have Projects in your Snyk Account, you can add other repositorie
 
 2\. On the **Dashboard** or **Projects** page, click the **Add project** button. Then, select from the pop-up list the SCM that contains the repositories you want to import:
 
-<figure><img src="../../../../../.gitbook/assets/Snyk Code - Add project button - SCM options.png" alt=""><figcaption></figcaption></figure>
+![](<../../../../../.gitbook/assets/image (6).png>)
 
 The **Personal and Organization repositories** page appears, displaying the repositories available to you in the selected SCM.
 
@@ -30,4 +32,4 @@ The **Personal and Organization repositories** page appears, displaying the repo
 
 The selected repositories are imported to Snyk Code, and a progress bar appears on the **Projects** page. When the import is completed, a confirmation message appears on the **Projects** page, informing you of the success of the import. Your imported repositories appear as Target folders, each containing the **Code analysis** Project that includes the findings of the Snyk Code test:
 
-![](<../../../../../.gitbook/assets/Snyk Code - Get Started - Code analysis Project (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+<figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
