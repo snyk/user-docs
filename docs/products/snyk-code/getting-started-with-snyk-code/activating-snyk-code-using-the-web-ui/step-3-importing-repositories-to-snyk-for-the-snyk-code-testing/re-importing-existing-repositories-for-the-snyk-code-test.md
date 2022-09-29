@@ -8,7 +8,7 @@ If your Snyk Account includes repositories that were imported to it before the *
 
 2\. On the **Dashboard** or **Projects** page, click the **Add project** button. Then, select from the pop-up list the SCM that contains the repositories you want to re-import:
 
-<figure><img src="../../../../../.gitbook/assets/Snyk Code - Re-importing - Add project button - SCM options.png" alt=""><figcaption></figcaption></figure>
+![](<../../../../../.gitbook/assets/image (5).png>)
 
 3\. In the **Personal and Organization repositories** page, select the checkboxes of the repositories you want to re-import to Snyk:
 
@@ -22,4 +22,6 @@ If your Snyk Account includes repositories that were imported to it before the *
 
 Your selected repositories are re-imported to Snyk. During the re-import process, Snyk Code analyzes these repositories, and a **Code analysis** Project is added to each repository, containing the results of the Snyk Code test.
 
-**Note**: If you are re-importing repositories that you deleted before the re-import, you need to refresh the **Projects** page to view the re-import results.
+{% hint style="warning" %}
+If you are re-importing repositories that you deleted before the re-import, you need to refresh the **Projects** page to view the re-import results.
+{% endhint %}

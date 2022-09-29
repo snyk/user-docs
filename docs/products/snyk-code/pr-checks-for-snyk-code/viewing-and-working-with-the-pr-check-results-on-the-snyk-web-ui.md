@@ -16,7 +16,7 @@ After the Automatic PR Check discovers security issues in a PR, you can view the
 
 * On the **SAST check** page, locate the required issue, and click the **Full details** button on the bottom right corner:
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 The full details of the discovered issue are displayed:
 
