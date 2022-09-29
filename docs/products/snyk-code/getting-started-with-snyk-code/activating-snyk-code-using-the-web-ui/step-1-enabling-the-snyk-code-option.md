@@ -10,22 +10,20 @@ To start working with Snyk Code either via the Web UI, CLI, IDE, or API, the **S
 
 **To enable Snyk Code:**
 
-1\. \[If you are logged out of your Snyk Account] Go to [Snyk.io](http://snyk.io), and log into your Snyk Account by clicking the **Log in** button:
+1\. \[If you are logged out of your Snyk Account] Go to [Snyk.io](http://snyk.io), and log into your Snyk Account by clicking the **Log in** button.
 
-![](<../../../../.gitbook/assets/Snyk Code - Log in button.png>)
+2\. On the Snyk Web UI, select the <img src="../../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (12).png" alt="" data-size="line"> **Settings > Snyk Code** menu option.&#x20;
 
-2\. On the Snyk Web UI, click the **Org Settings** button<img src="../../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (12).png" alt="" data-size="line">on the top menu:
+3\. In the **Enable Snyk Code** section, change the setting to **Enabled**:
 
-![](<../../../../.gitbook/assets/Snyk Code - Org Settings button.png>)
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-3\. On the **Settings** page, select **Snyk Code** on the left menu. Then, on the **Enable Snyk Code** section, change the setting to **Enabled**:
-
-![](<../../../../.gitbook/assets/Snyk Code - Settings - Enable Snyk Code option .png>)
-
-4\. Click the **Save changes** button.\
+4\. Click  **Save changes**.\
 \
 Snyk Code is now enabled in your Org Settings.
 
-<mark style="color:red;">**Important!**</mark> <mark style="color:red;">After the</mark> <mark style="color:red;">**Snyk Code**</mark> <mark style="color:red;">option is enabled, Snyk Code will only scan and test new repositories that are imported to Snyk, and it will NOT scan repositories that already exist in Snyk. Therefore, if you want to apply the Snyk Code analysis to repositories that are already imported to Snyk, you need to</mark> [<mark style="color:red;">re-import them</mark>](step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/re-importing-existing-repositories-for-the-snyk-code-test.md)<mark style="color:red;">.</mark>
+{% hint style="warning" %}
+After the Snyk Code option is enabled, Snyk Code will only scan and test new repositories that are imported to Snyk, and it will not scan repositories that already exist in Snyk. So to apply the Snyk Code analysis to repositories that are already imported to Snyk, you need to re-import these repositories.
+{% endhint %}
 
-The next step is integrating your Snyk Account with the SCM that contains the repositories you want to analyze using Snyk Code.
+The next step is integrating your Snyk Account with the Git repositories you want to analyze using Snyk Code.
