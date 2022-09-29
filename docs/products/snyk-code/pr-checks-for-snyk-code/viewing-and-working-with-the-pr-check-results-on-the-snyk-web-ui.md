@@ -16,7 +16,7 @@ After the Automatic PR Check discovers security issues in a PR, you can view the
 
 * On the **SAST check** page, locate the required issue, and click the **Full details** button on the bottom right corner:
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 The full details of the discovered issue are displayed:
 
@@ -54,7 +54,7 @@ You can return to your SCM directly from the Snyk Web UI.
 
 1\. On the **SAST check** page > Project Summary Information area, click the **PR Check Group** option:
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 2\. On the **Security check** page, click the repository link in the **REPOSITORY** field:
 

@@ -2,11 +2,11 @@
 
 The process of importing your selected repositories from your SCM to your Snyk Account, starts after you select the required repositories on the Snyk Web UI, and clicking the **Add selected repositories** button to import them. When the import starts, a progress bar appears on the **Projects** page:
 
-<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 When the import is completed, a confirmation message appears on the **Projects** page, informing you of the success of the import. Your imported repositories appear as separate Target folders on the **Projects** page. Each Target folder bears the name of your SCM account and the imported repository, and it contains the Snyk Projects that were created for it:
 
-<figure><img src="../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Note**: If some of the files in the selected repositories were not imported, you receive a message informing you that “**X projects failed**”. To view more details, click the **last import** **log** link on the message:
 

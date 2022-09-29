@@ -8,7 +8,7 @@ If your Snyk Account includes repositories that were imported to it before the *
 
 2\. On the **Dashboard** or **Projects** page, click the **Add project** button. Then, select from the pop-up list the SCM that contains the repositories you want to re-import:
 
-![](<../../../../../.gitbook/assets/image (5).png>)
+![](<../../../../../.gitbook/assets/image (5) (1).png>)
 
 3\. In the **Personal and Organization repositories** page, select the checkboxes of the repositories you want to re-import to Snyk:
 
