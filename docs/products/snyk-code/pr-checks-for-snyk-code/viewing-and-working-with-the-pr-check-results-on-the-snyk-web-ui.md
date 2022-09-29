@@ -58,6 +58,6 @@ You can return to your SCM directly from the Snyk Web UI.
 
 2\. On the **Security check** page, click the repository link in the **REPOSITORY** field:
 
-<figure><img src="../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 You are moved back to your SCM.
