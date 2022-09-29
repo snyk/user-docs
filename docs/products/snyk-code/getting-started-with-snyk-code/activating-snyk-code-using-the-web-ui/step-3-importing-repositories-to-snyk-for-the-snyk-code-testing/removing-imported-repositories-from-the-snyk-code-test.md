@@ -78,7 +78,7 @@ To stop Snyk Code from testing an imported repository, you can either deactivate
 
 2\. On the **Settings** page of the **Code analysis** Project, click either the **Deactivate project** or **Delete project** button according to your needs:
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **Code analysis** Project you selected is either deactivated or deleted according to the action you selected, and its repository will no longer be tested by Snyk Code.
 
