@@ -32,4 +32,4 @@ The **Personal and Organization repositories** page appears, displaying the repo
 
 The selected repositories are imported to Snyk Code, and a progress bar appears on the **Projects** page. When the import is completed, a confirmation message appears on the **Projects** page, informing you of the success of the import. Your imported repositories appear as Target folders, each containing the **Code analysis** Project that includes the findings of the Snyk Code test:
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
