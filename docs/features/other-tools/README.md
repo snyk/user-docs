@@ -26,7 +26,7 @@ For additional Snyk Tools, **refer to the repos** for usage instructions:
 
 * [snyk-disallow](https://github.com/snyk-tech-services/snyk-disallow): Get a viewer token for the Snyk Group to get a read|test-only token for CI or similar systems.
 * [snyk-prevent-gh-commit-status](https://github.com/snyk-tech-services/snyk-prevent-gh-commit-status): POST commit status of a PR the result of [snyk-delta](https://github.com/snyk-tech-services/snyk-delta) executed in the CI.
-* [snyk-cr-monitor](https://github.com/snyk-tech-services/snyk-cr-monitor): Gather Docker repos to test, then Iterate through results, to run multiple jobs simultaneously.
+* [snyk-cr-monitor](https://github.com/snyk-tech-services/snyk-cr-monitor): Gather Docker repos to test, then iterate through results, to run multiple jobs simultaneously.
 * [backstage-plugin-snyk](https://github.com/snyk-tech-services/backstage-plugin-snyk): Plugin to display security details from Snyk.
 * [snyk-api-ts-client](https://github.com/snyk-tech-services/snyk-api-ts-client): Snyk API Typescript client.
 * [snyk-transitive-ignore](https://github.com/snyk-tech-services/snyk-transitive-ignore): Generate the Snyk ignore policy dynamically based on a provided list of packages.
