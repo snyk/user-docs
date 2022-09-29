@@ -86,6 +86,16 @@
   **Help Links:**
 
   
+### [SNYK-OS-0003](#snyk-os-0003-lock-file-out-of-sync-with-manifest-file) - Lock file out of sync with manifest file
+  Some of the dependencies that are expected to be in the lock file are missing - this usually indicates that the lock file is out of sync with the provided manifest file. Please re-sync the lock file and try again.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
 ---
 # Builds
 ### [SNYK-OS-8001](#snyk-os-8001-invalid-request) - Invalid request
@@ -242,4 +252,4 @@
   
 ---
 
-Genererated at 2022-09-20T07:23:50.548Z
+Genererated at 2022-09-29T13:20:03.354Z
