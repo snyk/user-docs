@@ -1,18 +1,11 @@
 # Getting started with Snyk Cloud: AWS
 
-Snyk Cloud scans the infrastructure configuration in your cloud provider account and detects misconfigurations that can lead to vulnerabilities.
+Snyk Cloud scans the infrastructure configuration in your [Amazon Web Services (AWS)](https://aws.amazon.com/) provider account and detects misconfigurations that can lead to vulnerabilities.
 
-Currently, Snyk Cloud supports [Amazon Web Services (AWS)](https://aws.amazon.com/) accounts.
+You can can onboard an AWS account to Snyk using the following methods:
 
-Before you can onboard an AWS account to Snyk Cloud, you need access to the AWS account and associated credentials with permissions to create a read-only Identity & Access Management (IAM) role.
-
-To onboard an AWS account to Snyk Cloud:
-
-1. [Download an infrastructure as code (IaC) template giving Snyk Cloud permissions to scan your account.](step-1-download-iam-role-iac-template.md)
-2. [Create an AWS IAM role using the Terraform or AWS CloudFormation template you downloaded.](step-2-create-the-snyk-iam-role.md)
-3. [Create and scan a Snyk Cloud Environment.](step-3-create-and-scan-a-snyk-cloud-environment.md)
-
-You can now view the issues Snyk finds. See [Snyk Cloud issues](../snyk-cloud-issues/).
+* [Snyk Web UI](snyk-cloud-for-aws-web-ui/)
+* [Snyk API](snyk-cloud-for-aws-api/)
 
 ## Prerequisites
 

@@ -1,7 +1,7 @@
 # Snyk Cloud
 
 {% hint style="info" %}
-Snyk Cloud is currently in Closed Beta, with a Limited Availability release later in this year. If you are interested in Snyk Cloud, please contact your Snyk account team.
+Snyk Cloud is currently in Limited Availability, with a General Availability release later in this year. If you are interested in Snyk Cloud, please contact your Snyk account team.
 {% endhint %}
 
 Snyk Cloud helps users find, prioritize, and fix cloud misconfigurations by scanning the configuration of cloud infrastructure and testing it with a library of predefined security rules, generating a record of issues that can be filtered and triaged.
