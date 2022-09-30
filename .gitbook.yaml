@@ -26,3 +26,6 @@ redirects:
   github-integration: integrations/git-repository-scm-integrations/github-integration.md
   os-vuln: products/snyk-open-source/open-source-basics/README.md
   container-fixes: products/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app.md
+  products/snyk-cloud/getting-started-with-snyk-cloud-aws/step-1-download-iam-role-iac-template: products/snyk-cloud/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-1-download-iam-role-iac-template.md
+  products/snyk-cloud/getting-started-with-snyk-cloud-aws/step-2-create-the-snyk-iam-role: products/snyk-cloud/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-web-ui/step-2-create-the-snyk-iam-role.md
+  products/snyk-cloud/getting-started-with-snyk-cloud-aws/step-3-create-and-scan-a-snyk-cloud-environment: products/snyk-cloud/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment.md
