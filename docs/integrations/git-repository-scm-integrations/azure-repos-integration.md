@@ -31,7 +31,7 @@ To add a default project:
    The available repositories for the integration you picked are displayed in a new window.
 3. Select the repositories that you want Snyk to monitor for security and license issues. To import all the repos for a specific organization, check the organization.
 4. Click **Add selected repositories**.\
-   Snyk scans the entire file tree for dependency files and imports them to Snyk \*\*\*\* as \*\*\*\* Projects\*\*.\*\*
+   Snyk scans the entire file tree for dependency files and imports them to Snyk as Projects.
 
 ![](../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en.png)
 
@@ -65,7 +65,7 @@ Once repositories are imported, a confirmation appears in green at the top of th
 
 ![](<../../.gitbook/assets/image (37).png>)
 
-The Azure Repository integration works similar to the other Snyk Git integrations. To continue to monitor, fix, and manage your projects, see the related pages in the Snyk User Docs. \*\*\*\*
+The Azure Repository integration works similar to the other Snyk Git integrations. To continue to monitor, fix, and manage your projects, see the related pages in the Snyk User Docs.&#x20;
 
 ## Configure your Azure Repository integration
 
@@ -106,7 +106,7 @@ Collaborator users cannot complete this task.
 2. In the **Azure Repos** tile, click <img src="../../.gitbook/assets/integration_settings_tile_cog-11aug2022.png" alt="" data-size="line"> to open **Organization Settings > Integrations >Azure Repos> Account credentials**.\
    <img src="../../.gitbook/assets/integrations -azure_repo_tile-11aug2022.png" alt="" data-size="original">\
 
-3.  Set the Azure DevOps organization that you want to integrate with by entering the slug for your organization (![](<../../.gitbook/assets/image (228).png>)) and the personal access token that you generated. \\
+3.  Set the Azure DevOps organization that you want to integrate with by entering the slug for your organization (![](<../../.gitbook/assets/image (228).png>)) and the personal access token that you generated.
 
     Enterprise customers can also provide a custom URL for an Azure Repos Server private instance that is publicly reachable.
 4. Click **Save**.\
