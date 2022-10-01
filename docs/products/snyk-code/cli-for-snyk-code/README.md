@@ -4,17 +4,17 @@ The [Snyk Command Line Interface](../../../snyk-cli/) (CLI) for Snyk Code enable
 
 ### Prerequisites for the Snyk Code CLI
 
-Before you start using the CLI Environment for testing your source code with Snyk Code, verify you have the following prerequisites:
+Before you start using the Snyk CLI for testing your source code with Snyk Code, verify you have the following prerequisites:
 
 * A Snyk Account.\
-  **Note**: For more information on the creation of a Snyk Account, see [Setting Up your Snyk Account](https://docs.snyk.io/tutorials/getting-started/snyk-integrations/snyk-account).
+  **Note**: For more information on creating a Snyk Account, see [Setting Up your Snyk Account](https://docs.snyk.io/tutorials/getting-started/snyk-integrations/snyk-account).
 * Repositories with code in a supported language and framework.\
   **Note**: For more information, see [Snyk Code - Supported languages and frameworks](../snyk-code-language-and-framework-support.md).
-* [The **Snyk Code** option is enabled in your Snyk Org Setting](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-1-enabling-the-snyk-code-option).
+* [The **Snyk Code** option enabled in your Snyk Org Setting](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-1-enabling-the-snyk-code-option)
 * An installed and authenticated Snyk CLI.\
   **Notes**:
-  * For more information, see [Install the Snyk CLI](https://docs.snyk.io/snyk-cli/install-the-snyk-cli) and [Authenticate the Snyk CLI](https://docs.snyk.io/snyk-cli/authenticate-the-cli-with-your-account).
-  * The minimum Snyk CLI version for Snyk Code is 1.716.0. However, it is highly recommended [to update your Snyk CLI version](updating-the-snyk-cli-version.md) to the latest version.
+  * For instructions see [Install or update the Snyk CLI](../../../snyk-cli/install-the-snyk-cli.md) and [Authenticate the Snyk CLI](https://docs.snyk.io/snyk-cli/authenticate-the-cli-with-your-account).
+  * The minimum Snyk CLI version for Snyk Code is 1.716.0. Snyk recommends using the latest version of the CLI. See [Install or update the Snyk CLI ](../../../snyk-cli/install-the-snyk-cli.md)for instructions.
 
 **Note**: For more information about Snyk Code, see [Getting started with Snyk Code](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code).&#x20;
 

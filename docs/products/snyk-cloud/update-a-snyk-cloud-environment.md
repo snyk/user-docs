@@ -2,7 +2,7 @@
 
 You can update the following attributes for a [Snyk Cloud Environment](snyk-cloud-concepts.md#environments):
 
-* **AWS:** IAM role ARN (Amazon Resource Name). The new role ARN must have the same AWS account ID as the old role ARN. See [Find the role ARN](getting-started-with-snyk-cloud-aws/step-3-create-and-scan-a-snyk-cloud-environment.md#find-the-role-arn).
+* **AWS:** IAM role ARN (Amazon Resource Name). The new role ARN must have the same AWS account ID as the old role ARN. See [Find the role ARN](getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment.md#find-the-role-arn).
 
 For example, you would need to update the Snyk IAM role ARN if you change the role's name in the Terraform or CloudFormation template and deploy the changes.
 

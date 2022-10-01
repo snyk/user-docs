@@ -362,7 +362,6 @@
     * [Viewing the PR Checks in your SCM](products/snyk-code/pr-checks-for-snyk-code/viewing-the-pr-checks-in-your-scm.md)
     * [Viewing and working with the PR Check results on the Snyk Web UI](products/snyk-code/pr-checks-for-snyk-code/viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md)
   * [Using Snyk Code via the CLI](products/snyk-code/cli-for-snyk-code/README.md)
-    * [Updating the Snyk CLI Version](products/snyk-code/cli-for-snyk-code/updating-the-snyk-cli-version.md)
     * [Before you start – Set the Organization for the CLI tests](products/snyk-code/cli-for-snyk-code/before-you-start-set-the-organization-for-the-cli-tests/README.md)
       * [Finding the Snyk ID and internal name of an Organization](products/snyk-code/cli-for-snyk-code/before-you-start-set-the-organization-for-the-cli-tests/finding-the-snyk-id-and-internal-name-of-an-organization.md)
       * [Setting the default Organization for all CLI tests](products/snyk-code/cli-for-snyk-code/before-you-start-set-the-organization-for-the-cli-tests/setting-the-default-organization-for-all-cli-tests.md)
