@@ -4,9 +4,11 @@
 See [Snyk Projects](../snyk-web-ui/introduction-to-snyk-projects/) for more details.
 {% endhint %}
 
-Snyk Project information appears in the **Projects** menu in the Snyk dashboard. The filters that are visible depend on the grouping option you choose. &#x20;
+Snyk Project information appears in the **Projects** menu in the Snyk dashboard. The filters that are visible depends on the grouping option you choose. &#x20;
 
-<figure><img src="../.gitbook/assets/projects-page_minimal options_20sept2022.png" alt="Screenshot of the Snyk Projects listing page showing various types of projects in a list"><figcaption><p>The Projects menu in the Snyk Web Ui</p></figcaption></figure>
+
+
+<figure><img src="../.gitbook/assets/projects-breadcrumbs_02oct2022.png" alt="Screenshot of the Snyk Projects listing page showing various types of projects in a list"><figcaption><p>The Projects menu in the Snyk Web Ui</p></figcaption></figure>
 
 ### Projects
 
