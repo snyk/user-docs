@@ -17,7 +17,7 @@ After you [sign up for a Snyk account, authenticate and log in to Snyk](../getti
 If you're signing into a paid Team, Business, or Enterprise account, you'll also need to select the relevant [organization](../introducing-snyk/groups-organizations-and-users.md) after you log in to Snyk.
 {% endhint %}
 
-![Snyk dashboard for an Enterprise account showing pending tasks, vulnerable projects, as well as current security and license issues](<../.gitbook/assets/image (361) (1).png>)
+![Snyk dashboard for an Enterprise account showing pending tasks, vulnerable projects, as well as current security and license issues](../.gitbook/assets/web\_ui-landing\_02oct2022.png)
 
 ## What can I do in the Web UI tabs?
 

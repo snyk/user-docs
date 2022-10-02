@@ -1,21 +1,20 @@
-# Clone an integration across your Snyk orgs
+# Clone an integration across your Snyk Oraganizations
 
-You can choose to use the same brokered Git integration across multiple organizations in Snyk by  copying and duplicating the organization you've already configured. For example, you can integrate Snyk organizations X, Y and Z with your single Git repo X.
+You can choose to use the same brokered Git integration across multiple Organizations in Snyk by copying and duplicating the Organization you've already configured.&#x20;
 
-**Prerequisites**: in order to clone organization configurations, teams and groups must first be enabled.
+For example, you can integrate Snyk Organizations X, Y, and Z with your single Git repo X.
 
-* From the **organization** dropdown, navigate to any organization within the group that you are working with.
-* Now, from the same **organization** dropdown, navigate to and click **Create a new organization**:
+**Prerequisites**: to clone Organization configurations, you must have teams and groups enabled.
 
-![Create a new organization](../../.gitbook/assets/create-new-org.png)
+1. From the **Organization** list, choose an Organization in the Group that you're working with.\
+   <img src="../../.gitbook/assets/switch_org_02oct2022.png" alt="" data-size="original">
+2.  From the same **Organization** dropdown, click **+Create new Organization.**&#x20;
 
-* On the page that loads, enter a name for the new organization that you are creating.
-* From the **Copy across all settings and integrations?** area, select the organization that you've already configured for the Broker token and then click **Create organization**.
+    <figure><img src="../../.gitbook/assets/clone-organization1_02oct2022.png" alt=""><figcaption></figcaption></figure>
+3. In the next window, enter a name for your new Organization.
+4. In the **Copy settings from an existing org** section, choose an Organization that you've already configured for the Broker token.&#x20;
+5.  Review the summary of what will be copied across to the new Organization, and click **Create organization** to confirm.
 
-A screenshot follows/
+    <figure><img src="../../.gitbook/assets/clone-org-3screens_02oct2022.png" alt=""><figcaption><p>Three steps to create or clone a new Snyk Organization</p></figcaption></figure>
 
-![Add a new organization and copy the settings](../../.gitbook/assets/create-new-org2.png)
-
-* The browser navigates to the **Dashboard** for the organization that you just created. The Broker integration is duplicated and set up, and the Broker token is identical to the token for the original organization.
-* To double-check your cloned configuration, click on settings (gear icon) > **Integrations.**
-* On the row for the integration you’re setting up, click **Edit settings** to see the cloned Broker integration.
+The **Dashboard** for the organization that you just created opens: the Broker integration is duplicated and set up, and the Broker token is identical to the token for the original organization.

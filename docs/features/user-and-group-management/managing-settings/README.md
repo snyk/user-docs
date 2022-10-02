@@ -1,8 +1,8 @@
 # Managing settings
 
-Click the Settings icon (<img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line">) from the top-level menu bar to view and access Snyk settings for your org:
+Go to <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> Settings in the navigation menu to view and access Snyk settings for your org:
 
-![](../../../.gitbook/assets/Settings.png)
+![](../../../.gitbook/assets/manage-settings\_2oct2022.png)
 
 Settings include:
 

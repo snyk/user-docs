@@ -14,17 +14,17 @@ Reports are available with Business and Enterprise plans. See [pricing plans](ht
 
 Click **Reports** to access the vulnerability information for all Snyk Projects in your Organization:
 
-![](<../../.gitbook/assets/Screenshot 2022-08-11 at 09.42.46.png>)
+![An overview of Snyk Project vulnerabilities in Reports](../../.gitbook/assets/reports\_02oct2022.png)
 
 {% hint style="info" %}
-By default, results are shown for the last 90 days; use the **Show report for:** dropdown on the top right to change this default.
+By default, results are shown for the last 90 days: use the **Show report for:** list in the top right to change the duration.
 {% endhint %}
 
 See [Reports](../../features/snyk-reports/) for more details.
 
 ### Security issues
 
-The **Security issues** section show the number of vulnerabilities, their type, and how many of them Snyk identifies as auto fixable (with an upgrade, as we saw in [Fix your first vulnerability](fix-your-first-vulnerability.md)).
+The **Security issues** section shows the number of vulnerabilities, their type, and how many of them Snyk identifies as auto-fixable (with an upgrade, as we saw in [Fix your first vulnerability](fix-your-first-vulnerability.md) topic).
 
 ![](<../../.gitbook/assets/image (59).png>)
 
@@ -66,7 +66,7 @@ The **Activity** section shows the activity over the report period:
 
 For the reporting period (90 days by default), this activity shows:
 
-* **Tests Run**: the amount of tests run. By default, Snyk scans each open source Project daily, so an Organization with 100 projects would generate 9,000 scans over 90 days.
+* **Tests Run**: the number of tests run. By default, Snyk scans each open source Project daily, so an Organization with 100 projects would generate 9,000 scans over 90 days.
 * **New issues**: new issues detected.
 * **Fixed issues**: the vulnerabilities fixed by your team.
 * **Tests preventing issues**: occasions when the team attempted to merge code changes, but Snyk scans informed the team that these changes would have created new issues, so helping prevent new security issues.
@@ -74,7 +74,7 @@ For the reporting period (90 days by default), this activity shows:
 
 ### Filtering search results
 
-If you have lots of Projects files to manage and organise in your Organization, you can use filters to focus on specific Projects, or specific types of vulnerability:
+If you have lots of Projects files to manage and organize in your Organization, you can use filters to focus on specific Projects or specific types of vulnerability:
 
 ![](<../../.gitbook/assets/image (153).png>)
 
@@ -85,17 +85,17 @@ For example, if your Organization represents your development team, and you want
 Remember, a Snyk Project represents a single item that Snyk scans, such as a manifest file. So your application may contain hundreds of Snyk Projects to scan.
 {% endhint %}
 
-For Open Source vulnerabilities, we also have tagging, allowing you to add your own tags, adding custom values for metadata. See [Project tags](../../snyk-web-ui/introduction-to-snyk-projects/project-tags.md) and [Project attributes](../../snyk-web-ui/introduction-to-snyk-projects/project-attributes.md).
+For Open Source vulnerabilities, we also have tagging, which lets you add your own tags, including custom values for metadata. See [Project tags](../../snyk-web-ui/introduction-to-snyk-projects/project-tags.md) and [Project attributes](../../snyk-web-ui/introduction-to-snyk-projects/project-attributes.md).
 
 #### Dashboard results and report results
 
 Filtering results in Reports means that your Dashboard shows different numbers to your Reports.
 
-For example, by default, Snyk does not scan the Dockerfile in the filter, it just scan the docker images themselves
+For example, by default, Snyk does not scan the Dockerfile in the filter, it scans the docker images themselves
 
 ![](<../../.gitbook/assets/image (445).png>)
 
-This is turned off by default in the filter, because when Snyk scans the Dockerfile, there will be vulnerabilities in the base OS in the container that you are building. As these cannot generally be fixed by the development team, this filtering allows your team to focus on the issues that you can fix.
+By default, the Dockerfile option is not selected in the filter: when Snyk scans the Dockerfile, there will be vulnerabilities in the base OS in the container that you are building. Because these vulnerabilities cannot generally be fixed by the development team, this filtering lets your team focus on the issues that they _can_ fix.
 
 {% hint style="info" %}
 To see a report across all your Organizations, navigate to the Snyk Group level and look at reports there.
