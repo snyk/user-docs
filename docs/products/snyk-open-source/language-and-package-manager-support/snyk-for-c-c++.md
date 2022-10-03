@@ -288,16 +288,6 @@ Prints results in JSON format.
 
 This is useful to display the human-readable test output via stdout and at the same time save the JSON format output to a file.
 
-#### **target-dir**
-
-`--target-dir <directory>`
-
-Scan the path specified in the argument instead of the current directory.
-
-{% hint style="info" %}
-Alternatively, you can run just `snyk test --unmanaged <directory>`
-{% endhint %}
-
 #### **max-depth**
 
 `--max-depth=1`

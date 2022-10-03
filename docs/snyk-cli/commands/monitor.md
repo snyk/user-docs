@@ -304,12 +304,6 @@ The following `snyk monitor` options can be used with `--unmanaged` as documente
 
 There are also special options.
 
-### `--target-dir`
-
-Scan the path specified in the argument instead of the current directory.
-
-Alternatively, run `snyk test --unmanaged`
-
 ### `--max-depth`
 
 Specify the maximum level of archive extraction.
