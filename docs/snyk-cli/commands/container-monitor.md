@@ -102,7 +102,7 @@ To clear the project tags set `--project-tags=`
 
 ### `--tags=<TAG>[,<TAG>]...>`
 
-This is an alias for `--project tags`
+This is an alias for `--project-tags`
 
 ### `--app-vulns`
 
