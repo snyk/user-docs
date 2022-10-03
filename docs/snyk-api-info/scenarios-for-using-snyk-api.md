@@ -9,9 +9,9 @@ If you have issues when using these procedures, contact your Technical Success M
 ## API v1 Groups
 
 SEE also:\
-API v1 Organizations [Assign all users in a given list to all the organizations a company has (all organizations in a group)](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/OKA1ZZOiY9WTVlEMGNES/snyk-api-info/scenarios-for-using-snyk-api#assign-all-users-in-a-given-list-to-all-the-organizations-a-company-has-all-organization-in-a-group)
+API v1 Organizations Assign all users in a given list to all the organizations a company has (all organizations in a group)
 
-API v1 Issues (Reporting API) [Find all projects affected by a vulnerability](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/OKA1ZZOiY9WTVlEMGNES/snyk-api-info/scenarios-for-using-snyk-api#find-all-projects-affected-by-a-vulnerability)
+API v1 Issues (Reporting API) Find all projects affected by a vulnerability
 
 ### Retrieve a project snapshot for every project in a given group
 
@@ -25,11 +25,11 @@ API v1 (Reporting API) [Get list of latest issues](https://snyk.docs.apiary.io/#
 ## API v1 Import projects
 
 SEE also:\
-API v1 Projects [Import fresh Container images](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/OKA1ZZOiY9WTVlEMGNES/snyk-api-info/scenarios-for-using-snyk-api#import-fresh-container-images)
+API v1 Projects Import fresh Container images
 
-API v1 Projects [Detect and import new projects in a repository into a target](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/OKA1ZZOiY9WTVlEMGNES/snyk-api-info/scenarios-for-using-snyk-api#detect-and-import-new-projects-in-a-repository-into-a-target)
+API v1 Projects Detect and import new projects in a repository into a target
 
-API v1 REST API Targets (beta) [Detect new projects (files) in repositories and import them into a target in Snyk on a regular basis](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/OKA1ZZOiY9WTVlEMGNES/snyk-api-info/scenarios-for-using-snyk-api#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis)
+API v1 REST API Targets (beta) Detect new projects (files) in repositories and import them into a target in Snyk on a regular basis
 
 ### Identify and import new repositories only
 
@@ -43,9 +43,9 @@ API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects/i
 ## API v1 Integrations
 
 SEE also:\
-API v1 Organizations [Create multiple new organizations that all have the same settings in a given group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/OKA1ZZOiY9WTVlEMGNES/snyk-api-info/scenarios-for-using-snyk-api#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
+API v1 Organizations Create multiple new organizations that all have the same settings in a given group
 
-API v1 Projects [Detect and import new projects](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/OKA1ZZOiY9WTVlEMGNES/snyk-api-info/scenarios-for-using-snyk-api#detect-and-import-new-projects)
+API v1 Projects Detect and import new projects
 
 ### Rotate or change your broker token for any reason
 
@@ -79,7 +79,7 @@ API v1 [Create a webhook](https://snyk.docs.apiary.io/#reference/webhooks/webhoo
 ## API v1 Issues (Reporting API)
 
 SEE also:\
-API v1 Groups [Retrieve a project snapshot for every project in a given group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/OKA1ZZOiY9WTVlEMGNES/snyk-api-info/scenarios-for-using-snyk-api#retrieve-a-project-snapshot-for-every-project-in-a-given-group)
+API v1 Groups Retrieve a project snapshot for every project in a given group
 
 ### Find all projects affected by a vulnerability
 
@@ -106,14 +106,14 @@ REST experimental [Get a summary of issues within an org](https://apidocs.snyk.i
 ### REST API Issues (experimental)
 
 SEE:\
-API v1 Issues [Bulk ignore issues](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/OKA1ZZOiY9WTVlEMGNES/snyk-api-info/scenarios-for-using-snyk-api#bulk-ignore-issues)
+API v1 Issues Bulk ignore issues
 
-API v1 Projects [List all issues including Snyk Code issues in all the projects in a group](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/OKA1ZZOiY9WTVlEMGNES/snyk-api-info/scenarios-for-using-snyk-api#list-all-issues-including-snyk-code-issues-in-all-the-projects-in-a-group)
+API v1 Projects List all issues including Snyk Code issues in all the projects in a group
 
 ### API v1 Organizations
 
 SEE also:\
-API v1 Integrations [Rotate or change your broker token for any reason](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/OKA1ZZOiY9WTVlEMGNES/snyk-api-info/scenarios-for-using-snyk-api#rotate-or-change-your-broker-token-for-any-reason)
+API v1 Integrations Rotate or change your broker token for any reason
 
 ### Create multiple new organizations that all have the same settings in a given group
 
@@ -147,9 +147,9 @@ API v1 [Provision a user to the organization](https://snyk.docs.apiary.io/#refer
 ## API v1 Projects
 
 SEE also:\
-API v1 Issues (Reporting API): [Find all projects affected by a vulnerability](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/OKA1ZZOiY9WTVlEMGNES/snyk-api-info/scenarios-for-using-snyk-api#find-all-projects-affected-by-a-vulnerability)
+API v1 Issues (Reporting API): Find all projects affected by a vulnerability
 
-API v1 Issues (Reporting API) [Bulk ignore issues](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/OKA1ZZOiY9WTVlEMGNES/snyk-api-info/scenarios-for-using-snyk-api#bulk-ignore-issues)
+API v1 Issues (Reporting API) Bulk ignore issues
 
 ### List all issues including Snyk Code issues in all the projects in an organization
 
@@ -209,4 +209,4 @@ API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects)
 ### API v1 Webhooks
 
 SEE:\
-API v1 Integrations, [Rotate or change your broker token for any reason](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/OKA1ZZOiY9WTVlEMGNES/snyk-api-info/scenarios-for-using-snyk-api#rotate-or-change-your-broker-token-for-any-reason)
+API v1 Integrations, Rotate or change your broker token for any reason
