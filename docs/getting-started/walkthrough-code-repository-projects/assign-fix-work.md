@@ -42,7 +42,7 @@ Snyk [Jira integration](https://docs.snyk.io/integrations/notifications-ticketin
 
 Navigate to the issue you have decided to fix, then click **Create a Jira issue**:
 
-![](<../../.gitbook/assets/image (221) (1).png>)
+![](<../../.gitbook/assets/image (221) (1) (2) (1).png>)
 
 You can then define the Jira task details for this fix:
 

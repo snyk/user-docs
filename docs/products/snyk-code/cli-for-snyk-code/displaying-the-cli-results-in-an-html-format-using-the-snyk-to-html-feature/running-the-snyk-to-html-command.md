@@ -10,7 +10,7 @@ You can run the Snyk-to-HTML feature in one command (below), or you can first [t
 snyk-to-html --help
 ```
 
-* The `snyk-to-html` command currently does not generate the standard exit codes. For an example of a workaround for integrating the `snyk-to-html` command with a CI/CD pipeline, see: [https://github.com/snyk-labs/snyk-cicd-integration-examples/blob/master/AzurePipelines/cli/simple-example/AzurePipelines-npm-generic-html.yml](https://github.com/snyk-labs/snyk-cicd-integration-examples/blob/master/AzurePipelines/cli/simple-example/AzurePipelines-npm-generic-html.yml)
+* The `snyk-to-html` command currently does not generate the standard exit codes. For an example of a workaround for integrating the `snyk-to-html` command with a CI/CD pipeline, see: [https://github.com/snyk-labs/snyk-cicd-integration-examples/blob/master/AzurePipelines/AzurePipelines-npm-generic-html.yml](https://github.com/snyk-labs/snyk-cicd-integration-examples/blob/master/AzurePipelines/AzurePipelines-npm-generic-html.yml)
 
 ### **Running the Snyk-to-HTML feature in one step**
 
