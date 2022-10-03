@@ -11,6 +11,7 @@
   * [Snyk Vulnerability Database](introducing-snyk/getting-started-snyk-intel-vuln-db-access.md)
   * [Regional data centers](introducing-snyk/regional-data-centers.md)
   * [Snyk Learn](introducing-snyk/snyk-learn.md)
+  * [Snyk Training](introducing-snyk/snyk-training.md)
   * [Glossary](introducing-snyk/glossary.md)
 * [Getting started](getting-started/README.md)
   * [Create a Snyk account](getting-started/create-a-snyk-account.md)
