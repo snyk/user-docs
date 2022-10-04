@@ -56,7 +56,7 @@ The way Snyk analyzes and builds the dependencies varies depending on the langua
 
 Learn how to use the tool for your Java projects as follows:
 
-* Snyk CLI with Gradle: To build the dependency graph, Snyk integrates with Gradle and inspects the dependencies returned by the build. The following manifest files are supported: `build.gradle` and `build.gradle.kts`
+* Snyk CLI with Gradle: To build the dependency graph, Snyk integrates with Gradle and inspects the dependencies returned by the build. The following manifest files are supported: `build.gradle` (Groovy DSL) and `build.gradle.kts` (Kotlin DSL).
 * Snyk CLI with Maven: To build the dependency tree, Snyk analyzes the output of the `pom.xml` files.
 
 ## CLI parameters for Java and Kotlin
