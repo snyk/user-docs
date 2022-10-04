@@ -176,7 +176,9 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--file=<FILE_PATH>`: [container test](https://docs.snyk.io/snyk-cli/commands/container-test), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)``
 
-`--app-vulns`: [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)``
+`--app-vulns`: [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [`container`monitor](https://docs.snyk.io/snyk-cli/commands/container-monitor)
+
+`--exclude-app-vulns`: [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)``
 
 `--nested-jars-depth`: [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)``
 

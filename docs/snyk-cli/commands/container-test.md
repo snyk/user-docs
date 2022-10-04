@@ -108,6 +108,14 @@ In CLI version 1.962.0 and higher, use the `--app-vulns` option with the the `--
 
 For more information see [Detecting application vulnerabilities in container images](https://docs.snyk.io/products/snyk-container/getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images)
 
+### `--exclude-app-vulns`
+
+Allow disabling scans for app vulnerabilities in advance of `app-vulns` being enabled by default.
+
+Cannot be used with`--app-vulns`.
+
+For more information see [Detecting application vulnerabilities in container images](https://docs.snyk.io/products/snyk-container/getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images)
+
 ### `--nested-jars-depth`
 
 When using `--app-vulns` use the `--nested-jars-depth` option to set how many levels of nested jars Snyk is to unpack. Depth must be a number.

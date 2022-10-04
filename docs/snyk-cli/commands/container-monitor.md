@@ -10,8 +10,6 @@ The `snyk container monitor` command captures the container image layers and dep
 
 For more information see [Snyk CLI for container security](https://docs.snyk.io/products/snyk-container/snyk-cli-for-container-security)
 
-
-
 ## Exit codes
 
 Possible exit codes and their meaning:
@@ -109,6 +107,14 @@ This is an alias for `--project-tags`
 Allow detection of vulnerabilities in your application dependencies from container images, as well as from the operating system, all in one single scan.
 
 In CLI version 1.962.0 and higher, use the `--app-vulns` option with the the `--json` option to see the operating system as well as application vulnerabilities in JSON format in the results.
+
+For more information see [Detecting application vulnerabilities in container images](https://docs.snyk.io/products/snyk-container/getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images)
+
+### `--exclude-app-vulns`
+
+Allow disabling scans for app vulnerabilities in advance of `app-vulns` being enabled by default.
+
+Cannot be used with `--app-vulns`.
 
 For more information see [Detecting application vulnerabilities in container images](https://docs.snyk.io/products/snyk-container/getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images)
 
