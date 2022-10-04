@@ -10,7 +10,7 @@ The data handled by Snyk will vary depending on the product you are using, how y
 
 Snyk leverages the latest software development practices and technologies to provide customers with the flexibility to use Snyk’s developer security platform in the manner that best suits the needs of their business.
 
-Snyk’s cloud-first deployment options offer ease of use and scalability while also providing the required level of data protection with multi and single tenancy supported in the US and EU (additional regions will be supported in the future).
+Snyk’s cloud-first deployment options offer ease of use and scalability while also providing the required level of data protection with multi and single tenancy options supported in the US and EU (additional regions will be supported in the future).
 
 * **Multi-Tenant SaaS**: The simplest, most common and most cost-effective way to use Snyk’s developer security platform
 * **Single-Tenant SaaS:** Private Cloud - An isolated and fully managed instance of the Snyk developer security platform on AWS.
@@ -27,14 +27,14 @@ Snyk provides a wide range of development tools and integration points, requirin
 * **Vulnerability data** - Snyk stores information on the vulnerabilities identified in customers applications and related fix context.
 * **Vulnerability source** - Snyk stores information on where the vulnerability was identified. Examples: source code repository/registry, file name and location, dependency tree, vulnerability path.
 * **Integration-related data** - Snyk stores information required to set up an integration with Snyk. Examples: tokens and configurations.
-* **User data** - Snyk stores basic user information. Examples: user name, ID, email address.
-* **User list** - For the purposes of an accurate contributor counting, Snyk accesses commits from the last 90 days for repositories monitored and stores a hashed version of user emails.
+* **User data** - Snyk stores user information required to access and use the platform. Examples: user name, IDs (e.g. GitHub user ID), email address, IP address.
+* **User list** - For the purposes of an accurate contributor counting, Snyk accesses commits from the last 90 days for repositories monitored. Upon request, an unhashed version of user emails is produced.
 * **Billing data** - Snyk stores information required for billing your Snyk account.
-* **User behavior analytics** - Snyk stores various types of information pertaining to usage patterns. Examples: Website visits, executed CLI commands.
+* **User behavior analytics** - Snyk stores various types of information pertaining to usage patterns. Examples: platform navigation, executed CLI commands.
 
 ### Product-specific data types
 
-We know how important it is for you to protect your data. Our products only access and store the information needed to ensure accurate analysis.
+We know how important it is for you to protect your data. Our products only access and store the information needed to provide you with Snyk services, and to ensure accurate analysis.
 
 {% tabs %}
 {% tab title="Snyk Open Source" %}
@@ -107,5 +107,5 @@ Snyk is certified to ISO 27001:2013 with the additional objective controls of IS
 
 * [Privacy](https://snyk.io/policies/privacy/)
 * [Snyk Sub-processing](https://snyk.io/policies/sub-processors/)
-* [Data processing](https://snyk.io/policies/dpa/)
+* [Data Processing Addendum](https://snyk.io/policies/dpa/)
 * [Tracking & analytics](https://snyk.io/policies/tracking-and-analytics/)
