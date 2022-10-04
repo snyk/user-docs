@@ -14,7 +14,7 @@ We can now see your scan results.
 \*\*\*\*In the Snyk Web UI, you see information specific for your **Organization** (such as your team), which is under a **Group** (such as your company). This allows your company to organize and collect data for the work your teams are doing. See [Groups, Organizations and Users](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/groups-organizations-and-users).
 {% endhint %}
 
-Open the [Snyk Web UI](../../run-snyk/snyk-web-ui/), navigate to your **Projects** page, and see your imported repositories (or **targets** if importing non-code information). For example:
+Open the [Snyk Web UI](../../snyk-web-ui/), navigate to your **Projects** page, and see your imported repositories (or **targets** if importing non-code information). For example:
 
 ![](<../../.gitbook/assets/image (163).png>)
 
@@ -42,7 +42,7 @@ When you open an entry, you see the different Snyk Projects scanned in that entr
 
 {% hint style="info" %}
 **Reminder: what is a Project?**\
-\*\*\*\*A Snyk Project is an item scanned by Snyk; for example, a manifest file listing all your open source libraries as dependencies. See [Introduction to Snyk Projects](../../run-snyk/snyk-web-ui/introduction-to-snyk-projects/).
+\*\*\*\*A Snyk Project is an item scanned by Snyk; for example, a manifest file listing all your open source libraries as dependencies. See [Introduction to Snyk Projects](../../snyk-web-ui/introduction-to-snyk-projects/).
 {% endhint %}
 
 For example:
@@ -59,12 +59,12 @@ When you write your application, you may write your own code, import Open Source
 
 Snyk scans different parts of this lifecycle, with different icons and entries showing the results for each of these parts of your work, including:
 
-| Example                                                                                         | Description                                                                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="../../.gitbook/assets/image (183).png" alt="" data-size="line">                       | Your own code analysis results, scanned by[ Snyk Code](../../products/snyk-code/).                                                                                                                              |
-| <img src="../../.gitbook/assets/Screenshot 2022-07-20 at 11.14.02.png" alt="" data-size="line"> | Your open source libraries, scanned by [Snyk Open Source](../../products/snyk-open-source/), displaying each detected manifest, such as **pom.xml**, **package.json**, and other manifests for these libraries. |
-| <img src="../../.gitbook/assets/image (33).png" alt="" data-size="line">                        | Container results, scanned by [Snyk Container](../../products/snyk-container/), for items built into a container, such as a Docker file.                                                                        |
-| <img src="../../.gitbook/assets/image (39).png" alt="" data-size="original">                    | Kubernetes deployment files, terraform and other IaC files, scanned by [Snyk Infrastructure as Code (IaC)](../../products/snyk-infrastructure-as-code/).                                                        |
+| Example                                                                                         | Description                                                                                                                                                                                                                  |
+| ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="../../.gitbook/assets/image (183).png" alt="" data-size="line">                       | Your own code analysis results, scanned by[ Snyk Code](../../scan-application-code/snyk-code/).                                                                                                                              |
+| <img src="../../.gitbook/assets/Screenshot 2022-07-20 at 11.14.02.png" alt="" data-size="line"> | Your open source libraries, scanned by [Snyk Open Source](../../scan-application-code/snyk-open-source/), displaying each detected manifest, such as **pom.xml**, **package.json**, and other manifests for these libraries. |
+| <img src="../../.gitbook/assets/image (33).png" alt="" data-size="line">                        | Container results, scanned by [Snyk Container](../../snyk-container/), for items built into a container, such as a Docker file.                                                                                              |
+| <img src="../../.gitbook/assets/image (39).png" alt="" data-size="original">                    | Kubernetes deployment files, terraform and other IaC files, scanned by [Snyk Infrastructure as Code (IaC)](../../scan-cloud-deployment/snyk-infrastructure-as-code/).                                                        |
 
 {% hint style="info" %}
 Other files and types can be displayed; see [View project information](https://docs.snyk.io/introducing-snyk/introduction-to-snyk-projects/view-project-information) for more details.

@@ -19,7 +19,7 @@ Video demonstration of importing projects via the Snyk Web UI
 
 To import a Projects to scan, from the Snyk Web UI:
 
-* Select **Projects** > **Add Project,** and select where to import the Project from (for example GitHub), or click **CLI** to use the [Snyk CLI](../run-snyk/snyk-cli/) tool locally:
+* Select **Projects** > **Add Project,** and select where to import the Project from (for example GitHub), or click **CLI** to use the [Snyk CLI](../snyk-cli/) tool locally:
 
 ![](<../.gitbook/assets/Screenshot 2022-07-26 at 10.06.54.png>)
 
@@ -60,7 +60,7 @@ If you see any errors during import, see [Project import errors](https://support
 
 Importing a Project will also:
 
-* Set Snyk to run a regular scan on that Project for issues ([daily by default](../features/user-and-group-management/managing-settings/usage-page-details.md#projects)).
+* Set Snyk to run a regular scan on that Project for issues ([daily by default](../user-and-group-management/managing-settings/usage-page-details.md#projects)).
 * Initiate some automations, especially default Snyk tests on pull/merge requests, which help prevent vulnerabilities from being added to the Project. This automation fails builds according to your conditions and can be disabled or customized in your [integration settings](https://docs.snyk.io/integrations/git-repository-scm-integrations).
 
 {% hint style="info" %}

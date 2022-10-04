@@ -14,16 +14,16 @@ A good security process secures each of these components where they are built an
 
 #### Using Snyk in your workflow:
 
-* **Secure your code**: use [Snyk Open Source](../products/snyk-open-source/) to fix vulnerabilities in your open source dependencies, and [Snyk Code](../products/snyk-code/) to fix vulnerabilities in your source code.
-* **Secure your environments**: use [Snyk Container](../products/snyk-container/) to fix vulnerabilities in container images and Kubernetes workloads, and [Snyk Infrastructure as Code (IaC)](../products/snyk-infrastructure-as-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates.
+* **Secure your code**: use [Snyk Open Source](../scan-application-code/snyk-open-source/) to fix vulnerabilities in your open source dependencies, and [Snyk Code](../scan-application-code/snyk-code/) to fix vulnerabilities in your source code.
+* **Secure your environments**: use [Snyk Container](../snyk-container/) to fix vulnerabilities in container images and Kubernetes workloads, and [Snyk Infrastructure as Code (IaC)](../scan-cloud-deployment/snyk-infrastructure-as-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates.
 
 ### Ways to run Snyk
 
 Snyk runs in the following environments:
 
-* In the browser as [Snyk Web UI](../run-snyk/snyk-web-ui/).
+* In the browser as [Snyk Web UI](../snyk-web-ui/).
 * In your local Command Line Interface (or in your pipeline) with the [Snyk CLI](https://docs.snyk.io/snyk-cli).
-* In various [IDE plugins](../run-snyk/ide-tools/) that embed Snyk in your local dev environment.
+* In various [IDE plugins](../ide-tools/) that embed Snyk in your local dev environment.
 * In the [Snyk API](https://support.snyk.io/hc/en-us/categories/360000665657-Snyk-API) (Application Programming Interface).
 
 See [Snyk products and environments](snyk-products-and-environments.md) for more details.

@@ -1,2 +1,0 @@
-# Administer Snyk
-

@@ -20,7 +20,7 @@ Click **Reports** to access the vulnerability information for all Snyk Projects 
 By default, results are shown for the last 90 days: use the **Show report for:** list in the top right to change the duration.
 {% endhint %}
 
-See [Reports](../../features/snyk-reports/) for more details.
+See [Reports](../../fixing-and-prioritizing-issues/snyk-reports/) for more details.
 
 ### Security issues
 
@@ -85,7 +85,7 @@ For example, if your Organization represents your development team, and you want
 Remember, a Snyk Project represents a single item that Snyk scans, such as a manifest file. So your application may contain hundreds of Snyk Projects to scan.
 {% endhint %}
 
-For Open Source vulnerabilities, we also have tagging, which lets you add your own tags, including custom values for metadata. See [Project tags](../../run-snyk/snyk-web-ui/introduction-to-snyk-projects/project-tags.md) and [Project attributes](../../run-snyk/snyk-web-ui/introduction-to-snyk-projects/project-attributes.md).
+For Open Source vulnerabilities, we also have tagging, which lets you add your own tags, including custom values for metadata. See [Project tags](../../snyk-web-ui/introduction-to-snyk-projects/project-tags.md) and [Project attributes](../../snyk-web-ui/introduction-to-snyk-projects/project-attributes.md).
 
 #### Dashboard results and report results
 

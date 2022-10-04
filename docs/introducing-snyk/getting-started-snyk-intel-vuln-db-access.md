@@ -6,7 +6,7 @@ The [Snyk Vulnerability Database](https://security.snyk.io/) contains the key se
 
 ### Access to the Database
 
-You can inspect the database at [https://security.snyk.io/](https://security.snyk.io/), or you can incorporate database information into your own systems.&#x20;
+You can inspect the database at [https://security.snyk.io/](https://security.snyk.io/), or you can incorporate database information into your own systems.
 
 Incorporating information into your own systems may be useful for customers who already have their own security products; you can benefit from Snyk’s expertise and accumulated knowledge with access to this database. This gives your development teams access to trusted intelligence, allowing them to rapidly secure open source and container code.
 
@@ -27,4 +27,4 @@ You can incorporate Snyk Vulnerability Database information in your system. Typi
 2. Snyk sends you database information, typically as a JSON file (see [sample code](https://snyk.io/partners/api/v4/vulndb/sample.json)) **Note**: It is recommends that you save the file in a database.
 3. You can now write code to use the database information in your systems.
 
-Also see [Using the Snyk Vulnerability Database](../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md).
+Also see [Using the Snyk Vulnerability Database](../scan-application-code/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md).

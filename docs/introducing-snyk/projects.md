@@ -1,7 +1,7 @@
 # Projects
 
 {% hint style="info" %}
-See [Snyk Projects](../run-snyk/snyk-web-ui/introduction-to-snyk-projects/) for more details.
+See [Snyk Projects](../snyk-web-ui/introduction-to-snyk-projects/) for more details.
 {% endhint %}
 
 Snyk Project information appears in the **Projects** menu in the Snyk dashboard. The filters that are visible depends on the grouping option you choose.

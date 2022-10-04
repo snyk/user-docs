@@ -2,7 +2,7 @@
 
 Under **Settings > Integrations**, select the appropriate code repository and complete the necessary authorization steps outlined in the setup guide.
 
-See [Snyk Integrations](../../../integrate-with-snyk/) for more details.
+See [Snyk Integrations](../../../integrations/) for more details.
 
 ### Initially disabling PR tests
 
