@@ -14,11 +14,11 @@ When events are triggered, Snyk sends HTTP POST requests to URLs you have config
 
 #### Notifications
 
-Receive instant notifications/alerts in your organization's business communication/collaboration software. Please refer to our free tutorial on setting this up with [Microsoft Teams](../../more-info/getting-started/snyk-integrations/microsoft-azure/notifications-in-microsoft-teams/) for step-by-step instructions.
+Receive instant notifications/alerts in your organization's business communication/collaboration software. Please refer to our free tutorial on setting this up with [Microsoft Teams](../../work-with-snyk/getting-started/snyk-integrations/microsoft-azure/notifications-in-microsoft-teams/) for step-by-step instructions.
 
 #### Incident Response
 
-Respond to critical issues before they impact your business. Embrace modern incident management and Snyk to stay ahead of application security. Read more about this use case in the blog ["Shifting left security incident management with the Snyk & Opsgenie integration"](https://snyk.io/blog/security-incident-management-snyk-opsgenie-integration/) as well as our free [Opsgenie](../../more-info/getting-started/atlassian-integrations/atlassian/opsgenie/) guide that guides you on configuring this integration.
+Respond to critical issues before they impact your business. Embrace modern incident management and Snyk to stay ahead of application security. Read more about this use case in the blog ["Shifting left security incident management with the Snyk & Opsgenie integration"](https://snyk.io/blog/security-incident-management-snyk-opsgenie-integration/) as well as our free [Opsgenie](../../work-with-snyk/getting-started/atlassian-integrations/atlassian/opsgenie/) guide that guides you on configuring this integration.
 
 #### Security Information and Event Management (SIEM)
 
