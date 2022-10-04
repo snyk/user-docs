@@ -1,6 +1,6 @@
 # Snyk for .NET
 
-Snyk offers security scanning to test your projects for vulnerabilities, both through the [Snyk CLI ](../../../snyk-cli/)and from the Snyk Web UI through different [Snyk Integrations](../../../integrations/).
+Snyk offers security scanning to test your projects for vulnerabilities, both through the [Snyk CLI ](../../../run-snyk/snyk-cli/)and from the Snyk Web UI through different [Snyk Integrations](../../../integrate-with-snyk/).
 
 The following describes how to use Snyk to scan your .NET projects:
 
@@ -15,7 +15,7 @@ Features might not be available, depending on your subscription plan.
 | [Paket](https://fsprojects.github.io/Paket/index.html) | ✔︎          |             |                  |         |
 
 {% hint style="warning" %}
-We do not currently support PackageReference without a version attribute. If your project contains this, then it can lead to Snyk failing to open a PR for your project. \
+We do not currently support PackageReference without a version attribute. If your project contains this, then it can lead to Snyk failing to open a PR for your project.\
 \
 The current workaround is to add versions to all PackageReferences.
 {% endhint %}
@@ -40,7 +40,7 @@ The way by which Snyk analyzes and builds the tree varies depending on the langu
 
 #### Dependencies managed by PackageReference
 
-First, restore dependencies in the .NET project by running `dotnet restore` and make sure **obj/project.assets.json** has been created by the previous command, run `snyk test`. For more information on building projects, check out [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli.md).
+First, restore dependencies in the .NET project by running `dotnet restore` and make sure **obj/project.assets.json** has been created by the previous command, run `snyk test`. For more information on building projects, check out [Getting started with the CLI](../../../run-snyk/snyk-cli/getting-started-with-the-cli.md).
 
 Examples of supported project files that resolve into **project.assets.json** include:
 

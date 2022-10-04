@@ -11,7 +11,7 @@ Snyk functionality is available with several [pricing plans](https://snyk.io/pla
 [Sign up to use Snyk for free!](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support\_docs\_page)
 {% endhint %}
 
-### Feature availability&#x20;
+### Feature availability
 
 If a feature is only available on some plans, this is shown in the feature's documentation. For example:
 
@@ -25,7 +25,7 @@ This feature is only available for Enterprise plans.
 During the 14-day Business Plan trial period, you will have limited or no access to the following features:
 
 * [**Single Sign-On (SSO)**](../features/user-and-group-management/setting-up-sso-for-authentication/)**:** Not available.
-* [**Custom Project Tags**](../snyk-web-ui/introduction-to-snyk-projects/project-tags.md)**:** Not available.
+* [**Custom Project Tags**](../run-snyk/snyk-web-ui/introduction-to-snyk-projects/project-tags.md)**:** Not available.
 * [**Service Accounts**](../features/user-and-group-management/structure-account-for-high-application-performance/service-accounts.md)**:** Not available.
 * [**Group / Multiple Orgs**](../features/user-and-group-management/managing-groups-and-organizations/)**:** Limited to one group and one org.
 

@@ -69,7 +69,7 @@ Snyk includes a number of automations for Snyk Open Source when integrated with 
 
 More information:
 
-* Docs: [Git repository (SCM) integrations](../integrations/git-repository-scm-integrations/)
+* Docs: [Git repository (SCM) integrations](../integrate-with-snyk/git-repository-scm-integrations/)
 * Training: [Source Code Manager Configurations](https://training.snyk.io/courses/source-code-manager-configurations)
 
 If you are using an on-premise source code manager, learn more about Snyk Broker:
@@ -164,7 +164,7 @@ Empower developers to find and fix issues early in the development process by ad
 
 More information:
 
-* Docs: [Snyk for IDEs](../ide-tools/)
+* Docs: [Snyk for IDEs](../run-snyk/ide-tools/)
 * Training: [Introduction to using Snyk in an IDE](https://training.snyk.io/courses/introduction-to-using-snyk-in-an-ide)
 
 #### Use Snyk in the CLI
@@ -173,7 +173,7 @@ The Snyk CLI provides a way to find security and license issues locally or in yo
 
 More information:
 
-* Docs: [Snyk CLI](../snyk-cli/)
+* Docs: [Snyk CLI](../run-snyk/snyk-cli/)
 * Training: [Introduction to the Snyk CLI](https://training.snyk.io/courses/intro-cli)
 
 #### Use Snyk in the Web UI
@@ -182,5 +182,5 @@ The Snyk Web UI scans different types of projects (depending on which product yo
 
 More information:
 
-* Docs: [Snyk Web UI](../snyk-web-ui/)
+* Docs: [Snyk Web UI](../run-snyk/snyk-web-ui/)
 * Training: [Introduction to Snyk](https://training.snyk.io/learning-paths/introduction-to-snyk), [Find and Fix with Snyk Open Source](https://training.snyk.io/learning-paths/find-and-fix-with-snyk-open-source), [Introduction to the Snyk UI](https://training.snyk.io/courses/introduction-to-the-snyk-ui)

@@ -4,7 +4,7 @@
 
 ### **Set up authentication**
 
-The [`snyk iac describe`](../../../snyk-cli/commands/iac-describe.md) command requires authentication to your cloud provider in order to be run properly. It only requires the lowest read-only access rights possible. A good default to get started is to use the built-in AWS "ReadOnlyAccess" IAM policy for that IAM user.
+The [`snyk iac describe`](../../../run-snyk/snyk-cli/commands/iac-describe.md) command requires authentication to your cloud provider in order to be run properly. It only requires the lowest read-only access rights possible. A good default to get started is to use the built-in AWS "ReadOnlyAccess" IAM policy for that IAM user.
 
 `snyk iac describe` can reuse standard authentication methods for AWS, like the `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_REGION` [environment variables](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html#envvars-list). When those are set, the Snyk CLI will automatically pick them up to authenticate on AWS.
 
@@ -27,15 +27,15 @@ The state file can be located locally or in an S3 bucket (Terraform Cloud is als
 
 The `--from` option helps us to determine the path of the tfstate file.
 
-For a single local Terraform state file use the command:&#x20;
+For a single local Terraform state file use the command:
 
 `$ snyk iac describe --from="tfstate://path/to/terraform.tfstate" --only-unmanaged`
 
-To automatically load all the Terraform states found in a given directory, you can use glob patterns like this:&#x20;
+To automatically load all the Terraform states found in a given directory, you can use glob patterns like this:
 
 `$ snyk iac describe --from="tfstate://path/to/**/*.tfstate" --only-unmanaged`
 
-For a single Terraform state stored on an S3 backend:&#x20;
+For a single Terraform state stored on an S3 backend:
 
 `$ snyk iac describe --from="tfstate+s3://my-bucket/path/to/state.tfstate" --only-unmanaged`
 
@@ -43,17 +43,17 @@ You can also aggregate multiple Terraform state files by listing them in the `--
 
 `$ snyk iac describe --from="tfstate://path/to/terraform_S3.tfstate,tfstate://path/to/terraform_VPC.tfstate" --only-unmanaged`
 
-### Drift results and next steps&#x20;
+### Drift results and next steps
 
-#### Create baseline&#x20;
+#### Create baseline
 
 You ran `snyk iac describe` once and got a report of the current IaC coverage of your cloud infrastructure. Once you are done fixing all the issues you identified and are left with known differences you are not planning to change, you can create a baseline so those differences will not be displayed in your next scan.
 
 There are two options: ignore a specific resource or ignore multiple resources.
 
-**Ignore multiple resources**&#x20;
+**Ignore multiple resources**
 
-Use the output of the `describe` command and extract its results to [update the .snyk excluded policies](../../../snyk-cli/commands/iac-update-exclude-policy.md):&#x20;
+Use the output of the `describe` command and extract its results to [update the .snyk excluded policies](../../../run-snyk/snyk-cli/commands/iac-update-exclude-policy.md):
 
 `$ snyk iac describe --json --all | snyk iac update-exclude-policy`
 

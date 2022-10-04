@@ -1,6 +1,6 @@
 # Snyk for C / C++
 
-You can use Snyk to scan C / C++ projects through the [CLI](../../../snyk-cli/).
+You can use Snyk to scan C / C++ projects through the [CLI](../../../run-snyk/snyk-cli/).
 
 ### Features
 
@@ -97,7 +97,7 @@ When you scan C++ projects, the following data is collected and may be stored fo
 
 #### Install the Snyk CLI
 
-C/C++ scanning is available in [Snyk CLI](../../../snyk-cli/). See [Install the CLI](../../../snyk-cli/install-the-snyk-cli.md) for details.
+C/C++ scanning is available in [Snyk CLI](../../../run-snyk/snyk-cli/). See [Install the CLI](../../../run-snyk/snyk-cli/install-the-snyk-cli.md) for details.
 
 {% hint style="info" %}
 The minimum version of Snyk CLI with C/C++ scanning is 1.857.0.

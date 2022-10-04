@@ -39,13 +39,13 @@ To learn more about the approved data list and the `accept.json` file, see [Cust
 
 ### **The Snyk Broker usage**
 
-To use **Snyk Open Source** with the Snyk Broker, all you need is the Broker Server and the Broker Client components.&#x20;
+To use **Snyk Open Source** with the Snyk Broker, all you need is the Broker Server and the Broker Client components.
 
 To use other Snyk products with the Snyk Broker, you need to add an additional component or configurations, and to add parameters to the Broker Client setup:
 
 * **Snyk Code** – add the [**Code Agent** ](snyk-broker-code-agent/)component to enable the Snyk Code analysis of repositories in SCMs that are integrated through the Snyk Broker.
 * **Snyk Container** – add the [**Container Registry Agent**](snyk-broker-container-registry-agent/) to enable the connection to self-hosted/private container registries and the analysis of container images.
-* **Snyk Infrastructure as Code** – configure the [**`accept.json`** file with additional parameters](snyk-broker-infrastructure-as-code-detection/) **** to detect and analyze Terraform, CloudFormation, and Kubernetes configuration files through the Snyk Broker.
+* **Snyk Infrastructure as Code** – configure the [**`accept.json`** file with additional parameters](snyk-broker-infrastructure-as-code-detection/) \*\*\*\* to detect and analyze Terraform, CloudFormation, and Kubernetes configuration files through the Snyk Broker.
 
 ### **Supported integrations**
 
@@ -53,10 +53,10 @@ Snyk Broker currently integrates with these Git Repository systems:
 
 * [GitHub](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration) and [GitHub Enterprise](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-enterprise-integration) (Cloud and On-prem)
 * [GitLab](https://docs.snyk.io/integrations/git-repository-scm-integrations/gitlab-integration) (Cloud and On-prem)
-* [Bitbucket Server / Data Center](../../integrations/git-repository-scm-integrations/bitbucket-data-center-server-integration.md) (On-prem)
+* [Bitbucket Server / Data Center](../../integrate-with-snyk/git-repository-scm-integrations/bitbucket-data-center-server-integration.md) (On-prem)
 * [Azure Repos](https://docs.snyk.io/integrations/git-repository-scm-integrations/azure-repos-integration) (Cloud and On-prem)
 
-In addition, Snyk Broker integrates with [Jira Server/Jira Data Center](../../integrations/notifications-ticketing-system-integrations/jira.md), [JFrog Artifactory](../../integrations/private-registry-integrations/artifactory-registry-setup.md), and [Nexus Repository Manager](../../integrations/private-registry-integrations/nexus-repo-manager-setup.md).
+In addition, Snyk Broker integrates with [Jira Server/Jira Data Center](../../integrate-with-snyk/notifications-ticketing-system-integrations/jira.md), [JFrog Artifactory](../../integrate-with-snyk/private-registry-integrations/artifactory-registry-setup.md), and [Nexus Repository Manager](../../integrate-with-snyk/private-registry-integrations/nexus-repo-manager-setup.md).
 
 With the Container Registry Agent, Snyk Broker also connects to all [Snyk supported Container Registries](snyk-broker-container-registry-agent/).
 

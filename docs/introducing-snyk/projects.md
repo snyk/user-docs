@@ -1,12 +1,10 @@
 # Projects
 
 {% hint style="info" %}
-See [Snyk Projects](../snyk-web-ui/introduction-to-snyk-projects/) for more details.
+See [Snyk Projects](../run-snyk/snyk-web-ui/introduction-to-snyk-projects/) for more details.
 {% endhint %}
 
-Snyk Project information appears in the **Projects** menu in the Snyk dashboard. The filters that are visible depends on the grouping option you choose. &#x20;
-
-
+Snyk Project information appears in the **Projects** menu in the Snyk dashboard. The filters that are visible depends on the grouping option you choose.
 
 <figure><img src="../.gitbook/assets/projects-breadcrumbs_02oct2022.png" alt="Screenshot of the Snyk Projects listing page showing various types of projects in a list"><figcaption><p>The Projects menu in the Snyk Web Ui</p></figcaption></figure>
 
@@ -27,4 +25,3 @@ Projects are held in a Target, which is an external resource that Snyk has scann
 The origin indicates the Target ecosystems, such as CLI, GitHub, or Kubernetes:
 
 <figure><img src="../.gitbook/assets/targets-origin_20sept2022.png" alt="Screenshot highlighting a set of projects&#x27; origin inside the Snyk UI"><figcaption><p>An origin defines the Target ecosystem</p></figcaption></figure>
-

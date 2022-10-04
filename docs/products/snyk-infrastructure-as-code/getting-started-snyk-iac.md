@@ -12,7 +12,7 @@ Ensure you have:
 
 * A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [Create a Snyk account](https://docs.snyk.io/getting-started/getting-started-snyk-products) for details).
 * An existing Kubernetes or Terraform environment to work in.
-* Integrated your Git repository as for other Snyk products - see [Git repository (SCM) integrations](../../integrations/git-repository-scm-integrations/) for more details.
+* Integrated your Git repository as for other Snyk products - see [Git repository (SCM) integrations](../../integrate-with-snyk/git-repository-scm-integrations/) for more details.
 
 For more details, see:
 

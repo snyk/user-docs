@@ -55,7 +55,7 @@ Some useful CLI options include the following:
 | `--nested-jars-depth`        | When using `--app-vulns` use the `--nested-jars-depth=n` option to set how many levels of nested jars Snyk is to unpack.                                                                                     |
 | `--fail-on`                  | Fail only when there are vulnerabilities that can be fixed.                                                                                                                                                  |
 
-For more options, see the [Snyk CLI container help](../../../snyk-cli/commands/#snyk-container) or display the help by running:
+For more options, see the [Snyk CLI container help](../../../run-snyk/snyk-cli/commands/#snyk-container) or display the help by running:
 
 ```
 snyk container --help

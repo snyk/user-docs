@@ -1,6 +1,6 @@
 # Ignore resources
 
-The `.snyk` policy file can be used to exclude resources from being considered IaC drift by `snyk iac describe`. See [the `.snyk` policy file doc](../../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md) for more general information.
+The `.snyk` policy file can be used to exclude resources from being considered IaC drift by `snyk iac describe`. See [the `.snyk` policy file doc](../../../run-snyk/snyk-cli/test-for-vulnerabilities/the-.snyk-file.md) for more general information.
 
 If you need only to exclude a set of resources, use `.snyk`. If you have more complex requirements, consider using filter rules. For more information see [Filter results](filter-results.md).
 
@@ -93,9 +93,8 @@ For details, see `snyk iac update-exclude-policy --help.`
 
 This command helps to generate a `.snyk` policy file, adding all the detected drifts to it, in order to ignore them all.
 
-For example, to ignore all the unmanaged resources at once:&#x20;
+For example, to ignore all the unmanaged resources at once:
 
 ```
 $ snyk iac describe --json --only-unmanaged | snyk iac update-exclude-policy
 ```
-

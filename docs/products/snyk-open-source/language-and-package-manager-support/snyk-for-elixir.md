@@ -1,6 +1,6 @@
 # Snyk for Elixir
 
-Snyk offers security scanning to test your Elixir projects for vulnerabilities using the [CLI](../../../snyk-cli/).
+Snyk offers security scanning to test your Elixir projects for vulnerabilities using the [CLI](../../../run-snyk/snyk-cli/).
 
 ## Features
 

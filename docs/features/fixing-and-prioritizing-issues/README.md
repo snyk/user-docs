@@ -10,7 +10,7 @@ The [Snyk Priority Score](issue-management/priority-score.md) prioritizes issues
 
 ### Apply project attributes <a href="#h.r3thgse7qt7n" id="h.r3thgse7qt7n"></a>
 
-Control prioritization at a granular level by applying [project attributes](../../snyk-web-ui/introduction-to-snyk-projects/project-attributes.md) such as:
+Control prioritization at a granular level by applying [project attributes](../../run-snyk/snyk-web-ui/introduction-to-snyk-projects/project-attributes.md) such as:
 
 * Lifecycle stage
 * Business criticality

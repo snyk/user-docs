@@ -10,7 +10,7 @@ Similar to other Snyk products, Snyk Infrastructure as Code allows users to rais
 
 (This integration is available via the Snyk app UI only; API support is not currently provided.)
 
-To learn more about setting up and using the integration, see [jira.md](../../integrations/notifications-ticketing-system-integrations/jira.md "mention").
+To learn more about setting up and using the integration, see [jira.md](../../integrate-with-snyk/notifications-ticketing-system-integrations/jira.md "mention").
 
 {% hint style="info" %}
 **Jira issue links in Snyk Reporting**\

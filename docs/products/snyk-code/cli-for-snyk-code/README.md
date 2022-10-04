@@ -1,6 +1,6 @@
 # Using Snyk Code via the CLI
 
-The [Snyk Command Line Interface](../../../snyk-cli/) (CLI) for Snyk Code enables you to bring the functionality of Snyk Code into your development workflow. By using the Snyk CLI, you can run Snyk Code tests locally, or incorporate them with your CI/CD pipeline to scan your source code for security vulnerabilities.
+The [Snyk Command Line Interface](../../../run-snyk/snyk-cli/) (CLI) for Snyk Code enables you to bring the functionality of Snyk Code into your development workflow. By using the Snyk CLI, you can run Snyk Code tests locally, or incorporate them with your CI/CD pipeline to scan your source code for security vulnerabilities.
 
 ### Prerequisites for the Snyk Code CLI
 
@@ -13,12 +13,10 @@ Before you start using the Snyk CLI for testing your source code with Snyk Code,
 * [The **Snyk Code** option enabled in your Snyk Org Setting](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-1-enabling-the-snyk-code-option)
 * An installed and authenticated Snyk CLI.\
   **Notes**:
-  * For instructions see [Install or update the Snyk CLI](../../../snyk-cli/install-the-snyk-cli.md) and [Authenticate the Snyk CLI](https://docs.snyk.io/snyk-cli/authenticate-the-cli-with-your-account).
-  * The minimum Snyk CLI version for Snyk Code is 1.716.0. Snyk recommends using the latest version of the CLI. See [Install or update the Snyk CLI ](../../../snyk-cli/install-the-snyk-cli.md)for instructions.
+  * For instructions see [Install or update the Snyk CLI](../../../run-snyk/snyk-cli/install-the-snyk-cli.md) and [Authenticate the Snyk CLI](https://docs.snyk.io/snyk-cli/authenticate-the-cli-with-your-account).
+  * The minimum Snyk CLI version for Snyk Code is 1.716.0. Snyk recommends using the latest version of the CLI. See [Install or update the Snyk CLI ](../../../run-snyk/snyk-cli/install-the-snyk-cli.md)for instructions.
 
-**Note**: For more information about Snyk Code, see [Getting started with Snyk Code](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code).&#x20;
-
-&#x20;
+**Note**: For more information about Snyk Code, see [Getting started with Snyk Code](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code).
 
 ### Using the Snyk CLI for Snyk Code tests
 
@@ -38,5 +36,3 @@ After the test, you can do the following:
 * [Output the CLI results to a JSON or SARIF format in the terminal](https://docs.snyk.io/products/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/outputting-the-test-results-to-a-json-or-sarif-format-in-the-terminal).
 * [Export the CLI results to a JSON or SARIF format file](https://docs.snyk.io/products/snyk-code/cli-for-snyk-code/working-with-the-snyk-code-cli-results/exporting-the-test-results-to-a-json-or-sarif-file).
 * [Display the CLI results in an HTML format using the Snyk-to-HTML feature](https://docs.snyk.io/products/snyk-code/cli-for-snyk-code/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature).
-
-&#x20;&#x20;

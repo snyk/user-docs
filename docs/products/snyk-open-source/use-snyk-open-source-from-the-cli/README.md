@@ -2,10 +2,10 @@
 
 To test your project for known vulnerabilities:
 
-* Go to the folder containing your project (`cd ~/projects/myproj/`)&#x20;
+* Go to the folder containing your project (`cd ~/projects/myproj/`)
 * Run `$ snyk test`.
 
-The `snyk test` command identifies all the local dependencies and queries the Snyk service for known vulnerabilities. `snyk test` displays the issues found along with additional information.&#x20;
+The `snyk test` command identifies all the local dependencies and queries the Snyk service for known vulnerabilities. `snyk test` displays the issues found along with additional information.
 
 {% hint style="info" %}
 For Node.js, Ruby, and Java projects, `snyk test` also suggests steps to fix.
@@ -13,7 +13,7 @@ For Node.js, Ruby, and Java projects, `snyk test` also suggests steps to fix.
 
 ### How it works
 
-Snyk Open Source scans your manifest files. Based on the scan, Snyk creates a hierarchical tree of the structure represented in the manifest file: both its direct and indirect (transitive) dependencies and the points at which the different packages are introduced.&#x20;
+Snyk Open Source scans your manifest files. Based on the scan, Snyk creates a hierarchical tree of the structure represented in the manifest file: both its direct and indirect (transitive) dependencies and the points at which the different packages are introduced.
 
 After this tree is built, Snyk uses its vulnerability database to find vulnerabilities in any of the packages anywhere in the dependency tree. Using Snyk makes it easier to analyze the project than fixing the project from its source. You can quickly identify the point at which any given vulnerable package was introduced.
 
@@ -43,7 +43,7 @@ Files that Snyk uses to autodetect the project type include, but are not limited
 The way in which Snyk analyzes the file and builds the tree varies depends on:
 
 * The [language and package manager](../language-and-package-manager-support/) you use (as determined by the manifest file type)
-* The the method of scanning (using the [Snyk CLI](../../../snyk-cli/), or by importing from a Snyk [Git repository integration](../../../integrations/git-repository-scm-integrations/)).
+* The the method of scanning (using the [Snyk CLI](../../../run-snyk/snyk-cli/), or by importing from a Snyk [Git repository integration](../../../integrate-with-snyk/git-repository-scm-integrations/)).
 
 ### Scan multiple manifest files
 
@@ -51,7 +51,7 @@ For projects that have multiple manifest files, specify the file that you want S
 
 `$ snyk test --file=package.json`
 
-&#x20;To identify all of the files, use the `--all-projects` option:
+To identify all of the files, use the `--all-projects` option:
 
 `$ snyk test --all-projects`
 

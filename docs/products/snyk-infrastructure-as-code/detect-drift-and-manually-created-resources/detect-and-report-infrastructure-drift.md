@@ -2,7 +2,7 @@
 
 Expectations do not always line up with reality. How do you know what resources are not yet managed by IaC in your cloud? And do the managed resources remain the same in the cloud as when you defined them in code? Changes to cloud workloads happen all the time.
 
-The `snyk iac describe` command helps report changes on managed resources and list resources that are not yet under IaC control.&#x20;
+The `snyk iac describe` command helps report changes on managed resources and list resources that are not yet under IaC control.
 
 You can run the `iac describe` in different modes:
 
@@ -10,5 +10,4 @@ You can run the `iac describe` in different modes:
 * `--only-unmanaged` to report only unmanaged resources
 * `--all` to scan both managed and unmanaged resources
 
-See the [`snyk iac describe` command](../../../snyk-cli/commands/iac-describe.md) help for details.
-
+See the [`snyk iac describe` command](../../../run-snyk/snyk-cli/commands/iac-describe.md) help for details.

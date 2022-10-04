@@ -25,7 +25,7 @@ Snyk scans Scala projects by running `sbt` plugins or examining your `build.sbt`
 ## Snyk CLI tool for Scala projects
 
 {% hint style="warning" %}
-The [Snyk CLI ](../../../snyk-cli/)uses the [`sbt-dependency-graph`](https://github.com/sbt/sbt-dependency-graph) plugin which has been [included](https://www.scala-sbt.org/1.x/docs/Combined+Pages.html#sbt-dependency-graph+is+in-sourced) in `sbt` as a built-in plugin since `sbt` 1.4.
+The [Snyk CLI ](../../../run-snyk/snyk-cli/)uses the [`sbt-dependency-graph`](https://github.com/sbt/sbt-dependency-graph) plugin which has been [included](https://www.scala-sbt.org/1.x/docs/Combined+Pages.html#sbt-dependency-graph+is+in-sourced) in `sbt` as a built-in plugin since `sbt` 1.4.
 
 However, the recommended method of calling the plugin in sbt 1.4+ is not currently compatible with Snyk. Use the legacy method, `addSbtPlugin()`, instead (see below).
 {% endhint %}
@@ -48,6 +48,6 @@ For more details on installing `sbt-dependency-graph` for use with the Snyk CLI,
 
 ## Git services for Scala projects
 
-Scala `sbt` projects can be imported from any of the Git repositories Snyk [supports](../../../integrations/git-repository-scm-integrations/).
+Scala `sbt` projects can be imported from any of the Git repositories Snyk [supports](../../../integrate-with-snyk/git-repository-scm-integrations/).
 
 To test your Scala projects using `sbt` as a package manager, Snyk analyzes your `build.sbt` file, and so you must have this file in your repository before importing.

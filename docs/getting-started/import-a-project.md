@@ -19,7 +19,7 @@ Video demonstration of importing projects via the Snyk Web UI
 
 To import a Projects to scan, from the Snyk Web UI:
 
-* Select **Projects** >  **Add Project,** and select where to import the Project from (for example GitHub), or click **CLI** to use the [Snyk CLI](../snyk-cli/) tool locally:
+* Select **Projects** > **Add Project,** and select where to import the Project from (for example GitHub), or click **CLI** to use the [Snyk CLI](../run-snyk/snyk-cli/) tool locally:
 
 ![](<../.gitbook/assets/Screenshot 2022-07-26 at 10.06.54.png>)
 
@@ -44,7 +44,7 @@ A progress bar appears during import: click **View last import log** to see log 
 
 ![](<../.gitbook/assets/Screenshot 2022-07-26 at 10.23.09.png>)
 
-During the import, Snyk starts scanning the selected repos for relevant files (for example, **package.json** files listing dependencies) in the entire directory tree, and imports these files as Snyk Projects.&#x20;
+During the import, Snyk starts scanning the selected repos for relevant files (for example, **package.json** files listing dependencies) in the entire directory tree, and imports these files as Snyk Projects.
 
 ### Import results
 

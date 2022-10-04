@@ -1,6 +1,6 @@
 # Snyk for PHP
 
-Snyk offers security scanning to test your projects for vulnerabilities, both through the [Snyk CLI ](../../../snyk-cli/)and from the Snyk Web UI through different [Snyk Integrations](../../../integrations/).
+Snyk offers security scanning to test your projects for vulnerabilities, both through the [Snyk CLI ](../../../run-snyk/snyk-cli/)and from the Snyk Web UI through different [Snyk Integrations](../../../integrate-with-snyk/).
 
 The following describes how to use Snyk to scan your PHP projects:
 
@@ -47,7 +47,7 @@ In order to build the dependency tree Snyk analyzes the `composer.json` and `com
 
 There are no unique parameters when running Snyk for PHP.
 
-Read more about Snyk CLI in [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli.md).
+Read more about Snyk CLI in [Getting started with the CLI](../../../run-snyk/snyk-cli/getting-started-with-the-cli.md).
 
 ## Git services for PHP projects
 

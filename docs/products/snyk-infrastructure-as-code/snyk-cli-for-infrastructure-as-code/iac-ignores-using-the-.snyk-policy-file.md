@@ -1,6 +1,6 @@
 # IaC ignores using the .snyk policy file
 
-When you scan IaC configuration files using the Snyk CLI `iac test` command, you can ignore issues that are not relevant for you by using the [`.snyk` policy file](../../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md). Snyk recommends that you store and version the `.snyk` file in the root of the working directory where you store your IaC configuration files.
+When you scan IaC configuration files using the Snyk CLI `iac test` command, you can ignore issues that are not relevant for you by using the [`.snyk` policy file](../../../run-snyk/snyk-cli/test-for-vulnerabilities/the-.snyk-file.md). Snyk recommends that you store and version the `.snyk` file in the root of the working directory where you store your IaC configuration files.
 
 ## Ignore paths
 
@@ -13,7 +13,7 @@ For tests run from imported git repositories, issues can be ignored in the Snyk 
 ## `.snyk` file semantics
 
 {% hint style="info" %}
-The `.snyk` file has some limitations for IaC projects. (See [The `.snyk` file](../../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md) for standard functionality.)
+The `.snyk` file has some limitations for IaC projects. (See [The `.snyk` file](../../../run-snyk/snyk-cli/test-for-vulnerabilities/the-.snyk-file.md) for standard functionality.)
 
 * The **patches** section is not yet supported and is ignored.
 * There are no IaC-supported **language settings**. This section is ignored.
@@ -71,7 +71,7 @@ ignore:
         created: 2021-07-27T08:40:35.251Z
 ```
 
-For more information about the Snyk CLI ignore command, see [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/test-for-vulnerabilities/ignore-vulnerabilities-using-snyk-cli.md).
+For more information about the Snyk CLI ignore command, see [Ignore vulnerabilities using Snyk CLI](../../../run-snyk/snyk-cli/test-for-vulnerabilities/ignore-vulnerabilities-using-snyk-cli.md).
 
 ## Ignore instances of a vulnerability
 
@@ -103,7 +103,7 @@ ignore:
         created: 2021-07-27T08:40:35.251Z
 ```
 
-For more information about the Snyk CLI ignore command, see [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/test-for-vulnerabilities/ignore-vulnerabilities-using-snyk-cli.md).
+For more information about the Snyk CLI ignore command, see [Ignore vulnerabilities using Snyk CLI](../../../run-snyk/snyk-cli/test-for-vulnerabilities/ignore-vulnerabilities-using-snyk-cli.md).
 
 ## Policy flags and policy file notes
 

@@ -14,7 +14,7 @@ We can now see your scan results.
 \*\*\*\*In the Snyk Web UI, you see information specific for your **Organization** (such as your team), which is under a **Group** (such as your company). This allows your company to organize and collect data for the work your teams are doing. See [Groups, Organizations and Users](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/groups-organizations-and-users).
 {% endhint %}
 
-Open the [Snyk Web UI](../../snyk-web-ui/), navigate to your **Projects** page, and see your imported repositories (or **targets** if importing non-code information). For example:
+Open the [Snyk Web UI](../../run-snyk/snyk-web-ui/), navigate to your **Projects** page, and see your imported repositories (or **targets** if importing non-code information). For example:
 
 ![](<../../.gitbook/assets/image (163).png>)
 
@@ -42,7 +42,7 @@ When you open an entry, you see the different Snyk Projects scanned in that entr
 
 {% hint style="info" %}
 **Reminder: what is a Project?**\
-\*\*\*\*A Snyk Project is an item scanned by Snyk; for example, a manifest file listing all your open source libraries as dependencies. See [Introduction to Snyk Projects](../../snyk-web-ui/introduction-to-snyk-projects/).
+\*\*\*\*A Snyk Project is an item scanned by Snyk; for example, a manifest file listing all your open source libraries as dependencies. See [Introduction to Snyk Projects](../../run-snyk/snyk-web-ui/introduction-to-snyk-projects/).
 {% endhint %}
 
 For example:

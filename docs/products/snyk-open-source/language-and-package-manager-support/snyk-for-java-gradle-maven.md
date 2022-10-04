@@ -1,6 +1,6 @@
 # Snyk for Java and Kotlin
 
-Snyk offers security scanning to test your projects for vulnerabilities, both through both through the [Snyk CLI ](../../../snyk-cli/)and from the Snyk Web UI through different [Snyk Integrations](../../../integrations/).
+Snyk offers security scanning to test your projects for vulnerabilities, both through both through the [Snyk CLI ](../../../run-snyk/snyk-cli/)and from the Snyk Web UI through different [Snyk Integrations](../../../integrate-with-snyk/).
 
 ## Features
 
@@ -15,7 +15,7 @@ Gradle projects imported via Git are tested by parsing `build.gradle` files. As 
 
 If possible, enable [lockfiles](snyk-for-java-gradle-maven.md#git-services-for-gradle-projects) in your Gradle project to improve the accuracy for Git imports.
 
-However, for the most accurate results, we recommend using the [Snyk CLI](../../../snyk-cli/) to test Gradle projects.
+However, for the most accurate results, we recommend using the [Snyk CLI](../../../run-snyk/snyk-cli/) to test Gradle projects.
 {% endhint %}
 
 {% tabs %}
@@ -47,7 +47,7 @@ However, for the most accurate results, we recommend using the [Snyk CLI](../../
 
 ### Gradle
 
-* CLI - Gradle `2.*`, `3.*`, `4.*`, `5.*`, `6.*`,  `7.*` ([more details](https://github.com/snyk/snyk-gradle-plugin#support))
+* CLI - Gradle `2.*`, `3.*`, `4.*`, `5.*`, `6.*`, `7.*` ([more details](https://github.com/snyk/snyk-gradle-plugin#support))
 * Git - Gradle `2.*`, `3.*`,`4.*`, `5.*`, `6.*`
 
 ## Snyk CLI tool for Java and Kotlin projects (CI/CD)
@@ -67,7 +67,7 @@ This section describes the unique CLI commands available when working with Java-
 
 * Install the relevant package manager before you use the Snyk CLI tool.
 * Include the relevant manifest files supported by Snyk before testing.
-* Install and authenticate the Snyk CLI to start analyzing projects from your local environment. See [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli.md).
+* Install and authenticate the Snyk CLI to start analyzing projects from your local environment. See [Getting started with the CLI](../../../run-snyk/snyk-cli/getting-started-with-the-cli.md).
 
 ### Snyk CLI parameters
 
@@ -118,9 +118,9 @@ snyk test -- -Dpkg_version=1.4
 
 ### Aggregate projects
 
-A Maven aggregate project is one that uses modules and inheritance.&#x20;
+A Maven aggregate project is one that uses modules and inheritance.
 
-When scanning these types of projects Snyk will perform a compile to ensure all modules are resolvable by the Maven reactor.&#x20;
+When scanning these types of projects Snyk will perform a compile to ensure all modules are resolvable by the Maven reactor.
 
 *   To scan aggregate projects, use the `--maven-aggregate-project` param:
 
@@ -275,14 +275,14 @@ From the Snyk UI you can specify mirrors or repositories from which you’d like
 
 See the page below for more details on configuring the Artifactory integration.
 
-{% content-ref url="../../../integrations/private-registry-integrations/artifactory-registry-for-maven.md" %}
-[artifactory-registry-for-maven.md](../../../integrations/private-registry-integrations/artifactory-registry-for-maven.md)
+{% content-ref url="../../../integrate-with-snyk/private-registry-integrations/artifactory-registry-for-maven.md" %}
+[artifactory-registry-for-maven.md](../../../integrate-with-snyk/private-registry-integrations/artifactory-registry-for-maven.md)
 {% endcontent-ref %}
 
 ## Additional Snyk support for Java
 
 In addition to the CLI and Snyk UI features, you can also check your Java projects with these integrations.
 
-{% content-ref url="../../../integrations/ci-cd-integrations/maven-plugin-integration.md" %}
-[maven-plugin-integration.md](../../../integrations/ci-cd-integrations/maven-plugin-integration.md)
+{% content-ref url="../../../integrate-with-snyk/ci-cd-integrations/maven-plugin-integration.md" %}
+[maven-plugin-integration.md](../../../integrate-with-snyk/ci-cd-integrations/maven-plugin-integration.md)
 {% endcontent-ref %}

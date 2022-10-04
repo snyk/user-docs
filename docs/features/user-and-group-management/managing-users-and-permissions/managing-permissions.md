@@ -22,32 +22,32 @@ To change roles for a user:
 
 **Group Member** role does not directly provide the user any rights. They need to be granted an organization role or promoted as Group Admins.
 
-| User permissions                                                                                    | Group Administrator | Organization Administrator | Organization Collaborator |
-| --------------------------------------------------------------------------------------------------- | ------------------- | -------------------------- | ------------------------- |
-| Add/delete projects                                                                                 | x                   | x                          | x                         |
-| Update project with new snapshot                                                                    | x                   | x                          | x                         |
-| Open fix PR's                                                                                       | x                   | x                          | x                         |
-| Delete snapshot from project history                                                                | x                   | x                          | x                         |
-| Edit [project attributes](../../../snyk-web-ui/introduction-to-snyk-projects/project-attributes.md) | x                   | x                          |                           |
-| Invite/remove team members                                                                          | x                   | x                          |                           |
-| Change team members’ roles                                                                          | x                   | x                          |                           |
-| Create an org level service account\*                                                               | x                   | x                          |                           |
-| Manage plans and billing for this organization                                                      | x                   | x                          |                           |
-| Leave organization                                                                                  | x                   | x                          | x                         |
-| Delete organization                                                                                 | x                   | x                          |                           |
-| View organization reporting                                                                         | x                   | x                          | x                         |
-| Create an organization                                                                              | x                   |                            |                           |
-| Create group level Service accounts\*                                                               | x                   |                            |                           |
-| Set a License policy\*                                                                              | x                   |                            |                           |
-| Set a Security policy\*\*                                                                           | x                   |                            |                           |
-| Set global notifications preferences                                                                | x                   |                            |                           |
-| Access to the account overall reporting                                                             | x                   |                            |                           |
+| User permissions                                                                                             | Group Administrator | Organization Administrator | Organization Collaborator |
+| ------------------------------------------------------------------------------------------------------------ | ------------------- | -------------------------- | ------------------------- |
+| Add/delete projects                                                                                          | x                   | x                          | x                         |
+| Update project with new snapshot                                                                             | x                   | x                          | x                         |
+| Open fix PR's                                                                                                | x                   | x                          | x                         |
+| Delete snapshot from project history                                                                         | x                   | x                          | x                         |
+| Edit [project attributes](../../../run-snyk/snyk-web-ui/introduction-to-snyk-projects/project-attributes.md) | x                   | x                          |                           |
+| Invite/remove team members                                                                                   | x                   | x                          |                           |
+| Change team members’ roles                                                                                   | x                   | x                          |                           |
+| Create an org level service account\*                                                                        | x                   | x                          |                           |
+| Manage plans and billing for this organization                                                               | x                   | x                          |                           |
+| Leave organization                                                                                           | x                   | x                          | x                         |
+| Delete organization                                                                                          | x                   | x                          |                           |
+| View organization reporting                                                                                  | x                   | x                          | x                         |
+| Create an organization                                                                                       | x                   |                            |                           |
+| Create group level Service accounts\*                                                                        | x                   |                            |                           |
+| Set a License policy\*                                                                                       | x                   |                            |                           |
+| Set a Security policy\*\*                                                                                    | x                   |                            |                           |
+| Set global notifications preferences                                                                         | x                   |                            |                           |
+| Access to the account overall reporting                                                                      | x                   |                            |                           |
 
 (\*) Only in paid accounts\
 (\*\*) Only in Enterprise Plan
 
 ### Editing project attributes from the Snyk CLI
 
-The Organization Collaborator role lacks permission to edit project attributes, including via the Snyk CLI's [`monitor` command](../../../snyk-cli/commands/monitor.md) using arguments such as `--project-environment`. This was adjusted on August 25, 2022.  Attempting to use these arguments without the proper permission causes the `monitor` command to fail.&#x20;
+The Organization Collaborator role lacks permission to edit project attributes, including via the Snyk CLI's [`monitor` command](../../../run-snyk/snyk-cli/commands/monitor.md) using arguments such as `--project-environment`. This was adjusted on August 25, 2022. Attempting to use these arguments without the proper permission causes the `monitor` command to fail.
 
 Users or service accounts requiring the ability to edit project attributes will need to be an Organization Admin or use a custom role with `org.project.attributes.edit` assigned. Alternatively, remove any arguments that edit the project attributes from the `monitor` call.

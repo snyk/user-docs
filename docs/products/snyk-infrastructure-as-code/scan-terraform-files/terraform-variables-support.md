@@ -27,7 +27,7 @@ There is also the option to load an external variable definitions file by using 
 
 This loads the `vars.tf` definitions file from the `myproject` directory, dereferences any variables if they exist, and applies them to the context of the scanned path (`myproject/staging/networking`).
 
-For more information, refer to the `IAC test` [help](../../../snyk-cli/commands/iac-test.md).
+For more information, refer to the `IAC test` [help](../../../run-snyk/snyk-cli/commands/iac-test.md).
 
 ## Supported expressions
 

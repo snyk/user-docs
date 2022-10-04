@@ -2,7 +2,7 @@
 
 ### Introduction
 
-You can use the [CLI](../../snyk-cli/) `snyk iac test` command to address known configuration issues.
+You can use the [CLI](../../run-snyk/snyk-cli/) `snyk iac test` command to address known configuration issues.
 
 To see these issues displayed in the Snyk Web UI, run the following CLI command:
 
@@ -37,7 +37,7 @@ This sends a snapshot of your current configuration issues to your Snyk dashboar
 
 ### Viewing snapshots in the Snyk Web UI
 
-Log in to the [Snyk Web UI](../../snyk-web-ui/) and go to your organization's project page, to see the specific snapshot of your scanned project.
+Log in to the [Snyk Web UI](../../run-snyk/snyk-web-ui/) and go to your organization's project page, to see the specific snapshot of your scanned project.
 
 ![Newly scanned project in the projects page](<../../.gitbook/assets/image (349) (1).png>)
 

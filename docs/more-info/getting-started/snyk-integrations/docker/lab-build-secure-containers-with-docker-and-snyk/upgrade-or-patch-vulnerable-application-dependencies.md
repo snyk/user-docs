@@ -117,6 +117,6 @@ Now try the exploit again. It should fail spectacularly.
 
 Either with Fix Pull Requests, or using the information in Snyk to modify your package manager manifest, continue fixing vulnerabilities until you've knocked out the High Severity Vulnerabilities that have a fix available.
 
-Snyk IDE Plugins can help. If you're using JetBrains IDEs, Eclipse, or VS Code, check out the [Snyk plugins](../../../../../ide-tools/) that show vulnerability and fix information right within the IDE.
+Snyk IDE Plugins can help. If you're using JetBrains IDEs, Eclipse, or VS Code, check out the [Snyk plugins](../../../../../run-snyk/ide-tools/) that show vulnerability and fix information right within the IDE.
 
 Once you're ready, continue on to the next section to learn how to fix configuration issues in the Kubernetes manifests that deploy the application!

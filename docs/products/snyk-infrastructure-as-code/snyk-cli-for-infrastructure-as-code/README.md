@@ -2,7 +2,7 @@
 
 ## Overview
 
-To use the CLI you must first [install](../../../snyk-cli/install-the-snyk-cli.md) it and then [authenticate](../../../snyk-cli/commands/auth.md).
+To use the CLI you must first [install](../../../run-snyk/snyk-cli/install-the-snyk-cli.md) it and then [authenticate](../../../run-snyk/snyk-cli/commands/auth.md).
 
 With Snyk Infrastructure as Code, you can test your configuration files directly from the CLI. See the following pages for details:
 
@@ -28,8 +28,6 @@ Currently, there is no equivalent command to `snyk monitor` for Snyk IaC because
 For IaC CLI results to appear in the Snyk Web UI, you can use the [`snyk iac test --report`](https://docs.snyk.io/products/snyk-infrastructure-as-code/share-cli-results-with-the-snyk-web-ui) command to capture a one-time snapshot. Optionally, run the command on a recurring schedule to regularly test your IaC.
 
 Alternatively, you can add an [SCM integration](https://docs.snyk.io/integrations/git-repository-scm-integrations) and Snyk will monitor and test a given git repository on a recurring basis.
-
-
 
 ## Using Snyk behind a proxy
 

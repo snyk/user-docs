@@ -50,7 +50,7 @@ You can suppress issues through the CLI by using the `snyk ignore` command, for 
 
 `snyk ignore --id='npm:braces:20180219' --expiry='2018-04-01' --reason='testing'`
 
-For more information see the [`ignore`](../../../snyk-cli/commands/ignore.md) command help and [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/test-for-vulnerabilities/ignore-vulnerabilities-using-snyk-cli.md).
+For more information see the [`ignore`](../../../run-snyk/snyk-cli/commands/ignore.md) command help and [Ignore vulnerabilities using Snyk CLI](../../../run-snyk/snyk-cli/test-for-vulnerabilities/ignore-vulnerabilities-using-snyk-cli.md).
 
 When you use `snyk ignore`**,** the `.snyk` policy file is updated with the path and reason given, if one was provided. For example:
 
@@ -136,7 +136,7 @@ For more information, see [Exploring the vulnerability issues discovered by Snyk
 
 ## Snyk IaC: ignoring issues
 
-When scanning your IaC configuration files using the Snyk CLI with `snyk iac test` you can ignore issues that are not relevant to you by using [The .snyk file](../../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md).
+When scanning your IaC configuration files using the Snyk CLI with `snyk iac test` you can ignore issues that are not relevant to you by using [The .snyk file](../../../run-snyk/snyk-cli/test-for-vulnerabilities/the-.snyk-file.md).
 
 Snyk recommends storing and versioning the .snyk file in root of your working directory for where you store your IaC configuration files.
 

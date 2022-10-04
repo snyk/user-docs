@@ -25,7 +25,7 @@ There are two main troubleshooting situations to diagnose for Snyk's PR checks.
 
     <figure><img src="../../../.gitbook/assets/security-check.png" alt=""><figcaption></figcaption></figure>
 
-> **Hot tip**: Mimic a PR check like this (changes only, not state of project)[ Snyk CLI](../../../snyk-cli/test-for-vulnerabilities/advanced-failing-of-builds-in-snyk-cli.md#fail-current-build-only-if-new-vulnerabilities-are-being-introduced).
+> **Hot tip**: Mimic a PR check like this (changes only, not state of project)[ Snyk CLI](../../../run-snyk/snyk-cli/test-for-vulnerabilities/advanced-failing-of-builds-in-snyk-cli.md#fail-current-build-only-if-new-vulnerabilities-are-being-introduced).
 
 When SAST issues are found in your PR, Snyk Code provides you with additional details on each detected issue and offers you fix examples to assist you in developing secure code. By clicking the discovered issues or the link next to them in your SCM, you can open the Snyk Web UI, and view the full details of each discovered vulnerability in your PR:
 
