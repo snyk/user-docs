@@ -33,5 +33,7 @@ Alternatively, you can add an [SCM integration](https://docs.snyk.io/integration
 
 ## Using Snyk behind a proxy
 
-If you are using a proxy, make sure to consult the page [How can I use Snyk behind a proxy?](https://support.snyk.io/hc/en-us/articles/360000925358-How-can-I-use-Snyk-behind-a-proxy-).\
+If you are using a proxy, see [Proxy configuration for Snyk CLI](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli/proxy-configuration-for-snyk-cli).\
+
+
 For IaC scans specifically, you must also whitelist the \*.snyk.io address, as explained[ ](https://support.snyk.io/hc/en-us/articles/360002153077-How-can-we-whitelist-Snyk-IP-addresses-)on the page [How can we whitelist Snyk IP addresses?](https://support.snyk.io/hc/en-us/articles/360002153077-How-can-we-whitelist-Snyk-IP-addresses-)
