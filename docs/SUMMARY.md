@@ -656,7 +656,7 @@
     * [Evaluating and prioritizing vulnerabilities](features/fixing-and-prioritizing-issues/issue-management/evaluating-and-prioritizing-vulnerabilities.md)
     * [Triaging issues](features/fixing-and-prioritizing-issues/issue-management/triaging-issues.md)
     * [Reachable vulnerabilities](features/fixing-and-prioritizing-issues/issue-management/reachable-vulnerabilities.md)
-    * [Prioritize by Social Trends](features/fixing-and-prioritizing-issues/issue-management/prioritize-by-social-trends.md)
+    * [Vulnerabilities with Social Trends](features/fixing-and-prioritizing-issues/issue-management/prioritize-by-social-trends.md)
   * [Policies](features/fixing-and-prioritizing-issues/policies/README.md)
     * [Shared Policies Overview](features/fixing-and-prioritizing-issues/policies/shared-policies-overview.md)
     * [Creating and editing policies](features/fixing-and-prioritizing-issues/policies/creating-and-editing-policies.md)

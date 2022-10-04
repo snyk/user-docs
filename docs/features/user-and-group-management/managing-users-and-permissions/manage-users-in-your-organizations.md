@@ -1,10 +1,6 @@
 # Manage users in your organizations
 
-Select the **Members** top-level menu option to manage your organization's members:
-
-![](<../../../.gitbook/assets/Screen Shot 2022-02-24 at 1.05.40 PM.png>)
-
-You can:
+Select the **Members** top-level menu option to manage your organization's members, you can:
 
 * [Add members](manage-users-in-your-organizations.md#add-members)
 * [Revoke pending invites](manage-users-in-your-organizations.md#revoke-pending-invites)

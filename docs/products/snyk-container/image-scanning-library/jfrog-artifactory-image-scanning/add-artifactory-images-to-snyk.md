@@ -12,9 +12,6 @@ Snyk tests and monitors your Artifactory container images by evaluating its tags
 **Steps:**
 
 * Log in to your account and navigate to the relevant group and organization that you want to manage.
-
-![](<../../../../.gitbook/assets/add-artifactory-images (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (37).gif>)
-
 * Go to **Projects**, and click **Add projects**. The list of integrations already configured on your account opens, similar to the following:
 
 ![](../../../../.gitbook/assets/uuid-dd01aab7-482f-0fc2-01de-c2427a14a0e0-en.png)

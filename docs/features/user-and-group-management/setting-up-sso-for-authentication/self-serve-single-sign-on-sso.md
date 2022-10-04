@@ -39,7 +39,7 @@ To establish trust with Snyk, add an Entity ID, an ACS URL, and a Signing certif
 
 To access the Group overview for your group, click **Settings** [![](https://github.com/snyk/user-docs/raw/118bd8f19001bd64415f0ce63897f568c4b5327a/docs/.gitbook/assets/image%20\(70\).png)](https://github.com/snyk/user-docs/blob/118bd8f19001bd64415f0ce63897f568c4b5327a/docs/.gitbook/assets/image%20\(70\).png) > **SSO**:
 
-![Group settings](<../../../.gitbook/assets/Screenshot 2022-02-24 at 14.32.24.png>)
+![Group settings](../../../.gitbook/assets/snyk-sso.png)
 
 To map information from your Identity provider to Snyk, name your user attributes as follows (using the same capitalization and spelling).
 

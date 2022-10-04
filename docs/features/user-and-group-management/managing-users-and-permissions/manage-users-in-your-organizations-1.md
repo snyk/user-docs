@@ -7,7 +7,7 @@ Groups are available with Enterprise and Business plans. See [pricing plans](htt
 
 Select the Group and **Members** top-level menu option to manage your group members:
 
-![](<../../../.gitbook/assets/Screenshot 2022-04-26 at 05.38.32 (1).png>)
+![](../../../.gitbook/assets/snyk-group-member.png)
 
 As a Group Admin (see [managing-permissions.md](managing-permissions.md "mention")), you can:
 

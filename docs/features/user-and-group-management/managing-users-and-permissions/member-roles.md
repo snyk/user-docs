@@ -22,9 +22,7 @@ Future versions will add group-level access (for example, policies, group member
 
 You can find the default roles - Org Admin and Org Collaborator. When you click each of these roles you can view the associated permissions, but cannot modify the default roles.
 
-![Create new role option under Group Settings](<../../../.gitbook/assets/Screenshot 2022-06-23 at 15.21.58.png>)
-
-Click the **Create new Role** button and enter a role name and description. Role names should be unique, and can contain alphanumeric characters plus spaces.
+Click the **Create new Role** button and enter a role name and description. Role names should be unique and can contain alphanumeric characters plus spaces.
 
 ![Create a new role](<../../../.gitbook/assets/Screenshot 2022-06-23 at 15.28.12.png>)
 
@@ -117,14 +115,14 @@ Users who have permission (Create Service Account) can set up new service accoun
 Select an **Org** > **Settings** > **Service Accounts** >\
 Provide a name, choose a role, and click **Create**.
 
-![Select a Role while creating Org Service Account](<../../../.gitbook/assets/Screenshot 2022-05-31 at 09.42.43.png>)
+![Select a Role while creating Org Service Account](../../../.gitbook/assets/snyk-service-accounts.png)
 
-When you open a role that is assigned to Service Accounts, system would display a warning message. While updating the permissions associated with the role or deleting the role that would lead to reassigning the Service Accounts and users to a new role, be mindful of the potential impact.
+When you open a role that is assigned to Service Accounts, the system would display a warning message. While updating the permissions associated with the role or deleting the role that would lead to reassigning the Service Accounts and users to a new role, be mindful of the potential impact.
 
 ![](<../../../.gitbook/assets/Screenshot 2022-06-23 at 15.49.49.png>)
 
 {% hint style="warning" %}
-Snyk prevents users from creating organisation service accounts with a role that has more privileges than what they already have. You would encounter the below error, while trying to create a service account with a role that has more privileges than the logged in user.
+Snyk prevents users from creating organization service accounts with a role that has more privileges than what they already have. You would encounter the below error while trying to create a service account with a role that has more privileges than the logged in user.
 {% endhint %}
 
 ![](<../../../.gitbook/assets/Screenshot 2022-08-01 at 15.59.52.png>)
