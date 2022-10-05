@@ -99,6 +99,8 @@ Allowed values: `critical, high, medium, low`
 
 For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes)
 
+This option is not supported for Integrated IaC (Limited Availability).
+
 ### `--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`
 
 This can be used in combination with the `--report` option.
@@ -108,6 +110,8 @@ Set the project environment project attribute to one or more values (comma-separ
 Allowed values: `frontend`, `backend`, `internal`, `external`, `mobile`, `saas`, `onprem`, `hosted`, `distributed`
 
 For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes)
+
+This option is not supported for Integrated IaC (Limited Availability).
 
 ### `--project-lifecycle=<LIFECYCLE>[,<LIFECYCLE>]...>`
 
@@ -119,6 +123,8 @@ Allowed values: `production`, `development`, `sandbox`
 
 For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes)
 
+This option is not supported for Integrated IaC (Limited Availability).
+
 ### `--project-tags=<TAG>[,<TAG>]...>`
 
 This can be used in combination with the `--report` option.
@@ -128,6 +134,8 @@ Set the project tags to one or more values (comma-separated key value pairs with
 Example: `--project-tags=department=finance,team=alpha`
 
 To clear the project tags set `--project-tags=`
+
+This option is not supported for Integrated IaC (Limited Availability).
 
 ### `--remote-repo-url=<URL>`
 
@@ -149,13 +157,15 @@ Note: This option cannot be used in combination with the `--rules` option.
 
 Use this dedicated option for Custom Rules scanning to enable the IaC scans to use a custom rules bundle generated with the `snyk-iac-rules` SDK. See [`snyk-iac-rules` SDK](https://github.com/snyk/snyk-iac-rules#readme)
 
-This option cannot be used if the custom rules settings were configured with the Snyk UI. Default: If the `--rules` flag is not specified, scan the configuration files using the internal Snyk rules only.
+This option cannot be used if the custom rules settings were configured with the Snyk UI. Default: If the `--rules` option is not specified, scan the configuration files using the internal Snyk rules only.
 
 Example: Scan the configuration files using custom rules and internal Snyk rules.
 
 `--rules=bundle.tar.gz`
 
 Note: This option can not be used in combination with the `--report` option.
+
+This option is not supported for Integrated IaC (Limited Availability).
 
 ### `--severity-threshold=<low|medium|high|critical>`
 
@@ -174,7 +184,7 @@ This can be used in combination with the `--report` option.
 
 Set or override the project name for the repository.&#x20;
 
-Note: This flag will supersede the `--remote-repo-url`, if used together.
+Note: This option supersedes`--remote-repo-url`, if both options are used together.
 
 ### `--target-reference=<TARGET_REFERENCE>`
 
