@@ -251,5 +251,57 @@
 
   
 ---
+# Open Source Project Snapshots
+### [SNYK-OSSI-OSPSS-1001](#snyk-ossi-ospss-1001-invalid-request) - Invalid request
+  Please check the body of your request and try again.
 
-Genererated at 2022-10-04T08:00:10.772Z
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OSSI-OSPSS-1002](#snyk-ossi-ospss-1002-unable-to-return-valid-api-response) - Unable to return valid API response
+  This should resolve, however please contact support if you continue to experience issues.
+
+  **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OSSI-OSPSS-2001](#snyk-ossi-ospss-2001-failed-to-process-data) - Failed to process data
+  This should resolve, however please contact support if you continue to experience issues.
+
+  **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OSSI-OSPSS-2002](#snyk-ossi-ospss-2002-project-snapshot-already-exists) - Project snapshot already exists
+  Please check that this snapshot has not already been created and try again. If you continue to experience issues please contact support.
+
+  **HTTP Status:** [409](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OSSI-OSPSS-3001](#snyk-ossi-ospss-3001-failed-to-store-snapshot-data) - Failed to store snapshot data
+  Please check your inputs and try again. If you continue to experience issues please contact support.
+
+  **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+---
+
+Genererated at 2022-10-05T14:26:36.633Z
