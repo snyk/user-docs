@@ -26,3 +26,6 @@ redirects:
   github-integration: integrations/git-repository-scm-integrations/github-integration.md
   os-vuln: products/snyk-open-source/open-source-basics/README.md
   container-fixes: products/snyk-container/getting-around-the-snyk-container-ui/analysis-and-remediation-for-your-images-from-the-snyk-app.md
+  integrations/github-application: integrations/git-repository-scm-integrations/github-application.md
+  integrations/bitbucket-cloud-app: integrations/git-repository-scm-integrations/bitbucket-cloud-app-integration.md
+  integrations/migrate-bitbucket-cloud-legacy-integration: integrations/git-repository-scm-integrations/migrate-a-bitbucket-cloud-legacy-integration.md
