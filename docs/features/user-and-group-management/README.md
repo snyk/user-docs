@@ -10,13 +10,13 @@ Snyk offers API tokens to enable authentication to service accounts or third par
 
 SSO makes authentication and provisioning simple; see [setting-up-sso-for-authentication](setting-up-sso-for-authentication/ "mention").
 
-![](<../../.gitbook/assets/image (167).png>)
+![](<../../.gitbook/assets/image (65) (1) (1) (1).png>)
 
 ### Manage users and permissions
 
 You can manage users and permissions in your groups; See [managing-users-and-permissions](managing-users-and-permissions/ "mention").
 
-![](<../../.gitbook/assets/image (71).png>)
+![](<../../.gitbook/assets/image (245).png>)
 
 ### Manage Groups and Organizations
 
@@ -32,4 +32,4 @@ You can manage email notifications, for yourself and your organization. See [not
 
 Customize your Snyk account for your needs. See [managing-settings](managing-settings/ "mention").
 
-![](<../../.gitbook/assets/image (118).png>)
+![](<../../.gitbook/assets/image (49) (2).png>)
