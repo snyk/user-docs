@@ -252,16 +252,6 @@
   
 ---
 # Open Source Project Snapshots
-### [SNYK-OSSI-4001](#snyk-ossi-4001-an-error-was-experienced-by-the-service-when-processing-the-request) - An error was experienced by the service when processing the request
-  This issue is unexpected, and the service should recover quickly. If not, please contact support.
-
-  **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-
-  **Exit Code:** N/A
-
-  **Help Links:**
-
-  
 ### [SNYK-OSSI-OSPSS-1001](#snyk-ossi-ospss-1001-invalid-request) - Invalid request
   Please check the body of your request and try again.
 
@@ -312,6 +302,16 @@
   **Help Links:**
 
   
+### [SNYK-OSSI-OSPSS-4001](#snyk-ossi-ospss-4001-internal-server-error) - Internal server error
+  This issue is unexpected, and the service should recover quickly. If not, please contact support.
+
+  **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
 ---
 
-Genererated at 2022-10-06T16:27:06.859Z
+Genererated at 2022-10-07T14:34:04.149Z
