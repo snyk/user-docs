@@ -20,7 +20,7 @@ Control prioritization at a granular level by applying [project attributes](../.
 
 Snyk [reporting](../../introducing-snyk/reports.md) keeps you up to date on the status of the issues, dependencies, and licenses you need, while letting you [ignore the issues](issue-management/ignore-issues.md) you don’t.
 
-![](<../../.gitbook/assets/image (312) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (312) (1) (1).png>)
 
 ### Assess reachability <a href="#h.ts3kx23p4m7p" id="h.ts3kx23p4m7p"></a>
 

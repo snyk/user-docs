@@ -40,7 +40,7 @@ An issue is ignored until ANY of the conditions happen, the ignore period expire
 
 When you ignore an issue in the Snyk Web UI, the issue shows who ignored it and allow you to edit or unignore it.
 
-![Ignore set in the Snyk Web UI](<../../../.gitbook/assets/image (14) (1) (1).png>)
+![Ignore set in the Snyk Web UI](<../../../.gitbook/assets/image (14) (2).png>)
 
 For more information see the training: [Ignoring issues](https://training.snyk.io/courses/ignore-strategies).
 
@@ -75,11 +75,11 @@ Refer to the following example:
 
 The following shows `snyk test` results before ignoring in the Web UI:
 
-![Snyk test results before ignoring in the Web UI](<../../../.gitbook/assets/image (18) (1) (1) (1).png>)
+![Snyk test results before ignoring in the Web UI](<../../../.gitbook/assets/image (18) (1) (2).png>)
 
 The following shows `snyk test` results after ignoring in the Web UI:
 
-![Snyk test results after ignoring in the Web UI](<../../../.gitbook/assets/image (20) (1) (1) (1).png>)
+![Snyk test results after ignoring in the Web UI](<../../../.gitbook/assets/image (20) (1).png>)
 
 **Note**: The preceding example shows what happens if you ignore the project imported by `snyk monitor` from the CLI or CI/CD.
 

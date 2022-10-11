@@ -14,11 +14,11 @@ Let's work through the issues for a Dockerfile, because those are typically abou
 
 When you see the Dockerfile project, you will be presented with upgrade recommendations for the base image as shown below.
 
-![](<../../../../../../.gitbook/assets/image (66) (3) (1) (1).png>)
+![](<../../../../../../.gitbook/assets/image (66) (3) (1).png>)
 
 Expand the list by clicking on the "Show more upgrade types" to see your available options.
 
-![](<../../../../../../.gitbook/assets/image (152) (1) (1).png>)
+![](<../../../../../../.gitbook/assets/image (152).png>)
 
 Your options may vary from this screen because the Snyk database is frequently updated, and this includes the latest options for container images. You will see a few options presented.
 
@@ -29,7 +29,7 @@ For the purpose of this workshop, we'll pick the minor change for the **Open a f
 
 Click on that button now to start the process. The automated process starts by showing you a screen to confirm your choice:
 
-![](<../../../../../../.gitbook/assets/image (230) (1) (1).png>)
+![](<../../../../../../.gitbook/assets/image (230) (1).png>)
 
 Click on the Open a Fix PR button to confirm the change.
 
