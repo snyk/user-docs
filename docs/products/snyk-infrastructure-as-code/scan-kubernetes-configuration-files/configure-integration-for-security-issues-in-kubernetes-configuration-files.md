@@ -27,6 +27,6 @@ From here:
 1. Enable Snyk to detect Kubernetes configuration files by enabling the flag in the settings ![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Infrastructure as code** page:
 2. If needed, review and adjust settings in the **Infrastructure as code** settings:
 
-![](<../../../.gitbook/assets/image (112) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1).png>)
 
 The number of tests per product are based on account plans. For information on plans and test limits, [view our plans](https://snyk.io/plans/).

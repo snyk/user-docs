@@ -27,7 +27,7 @@ After you integrate with a container registry and import your projects, Snyk sca
 1. Navigate to your container registry integration settings
 2. Enable the _**Detect application vulnerabilities**_ capability and save the changes:
 
-![](../../../.gitbook/assets/detect-app-vulns.png)
+![](../../../../.gitbook/assets/detect-app-vulns.png)
 
 When scanning an image using a container registry, Kubernetes integration, or through the Docker scan command, the scan also uses the `--app-vulns` flag by default. You can opt out of the flag in the container registry only. Do so by disabling the ‘_detect application vulnerabilities_’ toggle in the integration settings.
 
@@ -60,7 +60,7 @@ When an image is imported to Snyk, it appears under its registry record in the *
 
 With this feature enabled, you can also see nested manifest files detected in the image and their vulnerabilities and licensing issues.
 
-![](<../../../.gitbook/assets/mceclip2 (1) (1) (1) (3) (3) (4) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (16).png>)
+![](<../../../../.gitbook/assets/mceclip2 (1) (1) (1) (3) (3) (4) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (8).png>)
 
 ### Automated scanning
 
@@ -68,7 +68,7 @@ Snyk scans the image regularly based on your project’s settings, and updates y
 
 For each project, you can choose the test frequency under its settings (the default is daily testing).
 
-![](<../../../.gitbook/assets/mceclip3 (1).png>)
+![](<../../../../.gitbook/assets/mceclip3 (1).png>)
 
 **Supported container registries**
 

@@ -28,7 +28,7 @@ For example:
 
 If you click **GitHub**, then fill in the details as prompted (see [Set up an integration](set-up-an-integration.md)):
 
-![](../.gitbook/assets/Wizard2.png)
+![](<../.gitbook/assets/Wizard2 (1).png>)
 
 Finally, you can [import a Project](import-a-project.md) to scan:
 
