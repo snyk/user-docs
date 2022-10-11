@@ -56,11 +56,11 @@ Similarly, configuring them on the group level can be done by navigating to `Set
 
 * Enable the usage of remote bundles configuration using the **Enable rules** toggle. Doing so will display the form as shown below:
 
-![](<../../../../.gitbook/assets/image (11) (1) (2).png>)
+![](<../../../../.gitbook/assets/image (11) (1) (2) (2).png>)
 
 * Configure the OCI registry URL and tag for your remote bundle of custom rules, and click **Save changes** to save.
 
-![](<../../../../.gitbook/assets/image (184) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (184) (1) (1) (1) (1).png>)
 
 Your remote bundle of custom rules is now configured and will be used when testing IaC files.
 

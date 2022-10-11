@@ -37,7 +37,7 @@ After you add them, Snyk scans the selected repositories for dependency files in
 
 The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-![](<../../.gitbook/assets/which\_repos (3) (5) (9) (7) (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10).jpg>)
+![](<../../.gitbook/assets/which\_repos (3) (5) (9) (7) (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (1) (29).jpg>)
 
 ## GitHub integration features
 
@@ -185,7 +185,7 @@ To configure the Auto-assign settings for all the projects from an imported priv
 To configure the Auto-assign settings for a specific project from an imported private repository\*\*:\*\*
 
 1. In the **Projects** tab for your organization, select and expand the relevant private repository, select a target, and click the **Settings** cog.\
-   <img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">\
+   <img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (7).png" alt="" data-size="original">\
    The project page opens.
 2. In the project page, to apply unique settings for that specific project, select the **Settings** tab in the upper right, and the **Github integration** \_\_ option in the left sidebar.
 3. Go to the **Pull request assignees for private repos** section at the bottom of the page and select, customize, and confirm the relevant options in the sections:
@@ -238,7 +238,7 @@ For example, to show a badge for the 4.x branch of the express repo, you would u
 
 #### Badge results
 
-* A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (142).png" alt="" data-size="line">
+* A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (142) (1).png" alt="" data-size="line">
 * A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (289).png" alt="" data-size="line">
 * A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (209) (1).png" alt="" data-size="line">
 
@@ -246,8 +246,8 @@ For example, to show a badge for the 4.x branch of the express repo, you would u
 
 To change the style of the badge, you can add the following query parameters after `badge.svg`:
 
-* Flat rectangle with squared edges: `?style=flat-square` <img src="../../.gitbook/assets/image (74) (2) (1).png" alt="" data-size="line">
-* "Plastic" rectangle with rounded edges and shading `?style=plastic` <img src="../../.gitbook/assets/image (142).png" alt="" data-size="line">
+* Flat rectangle with squared edges: `?style=flat-square` <img src="../../.gitbook/assets/image (74) (1) (2) (1).png" alt="" data-size="line">
+* "Plastic" rectangle with rounded edges and shading `?style=plastic` <img src="../../.gitbook/assets/image (142) (1).png" alt="" data-size="line">
 
 ### **npm badges**
 

@@ -54,7 +54,7 @@ Alternatively, if you see an increase in the number of vulnerabilities without a
 
 You can hover over a date to see the summary of “to this date” information at that point:
 
-![](<../../.gitbook/assets/image (320).png>)
+![](<../../.gitbook/assets/image (320) (1).png>)
 
 This is especially useful when you see sudden changes in issue numbers on a specific day.
 
@@ -62,7 +62,7 @@ This is especially useful when you see sudden changes in issue numbers on a spec
 
 The **Activity** section shows the activity over the report period:
 
-![](<../../.gitbook/assets/image (56).png>)
+![](<../../.gitbook/assets/image (293).png>)
 
 For the reporting period (90 days by default), this activity shows:
 
@@ -93,7 +93,7 @@ Filtering results in Reports means that your Dashboard shows different numbers t
 
 For example, by default, Snyk does not scan the Dockerfile in the filter, it scans the docker images themselves
 
-![](<../../.gitbook/assets/image (111) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (111) (1) (1) (1) (1) (1).png>)
 
 By default, the Dockerfile option is not selected in the filter: when Snyk scans the Dockerfile, there will be vulnerabilities in the base OS in the container that you are building. Because these vulnerabilities cannot generally be fixed by the development team, this filtering lets your team focus on the issues that they _can_ fix.
 
@@ -105,7 +105,7 @@ To see a report across all your Organizations, navigate to the Snyk Group level 
 
 Click the **Issues** tab to see a full list of all issues for your Organization:
 
-![](<../../.gitbook/assets/image (80).png>)
+![](<../../.gitbook/assets/image (389).png>)
 
 Issues are ranked by their Snyk Priority Score; you can also filter based on columns. For example, you may want to look at the highest scores with the most maturity (which are likely to have more exploits). You can also track the list of issues that got fixed.
 
