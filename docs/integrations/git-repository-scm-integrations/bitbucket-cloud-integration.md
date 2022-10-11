@@ -5,7 +5,7 @@ Support for the Bitbucket Cloud (Legacy) Personal Access Token (PAT) integration
 
 If you're new to Snyk, the Legacy integration tile may not be available on the Integrations page.&#x20;
 
-Snyk recommends installing or migrating to the [Bitbucket Cloud Application](bitbucket-cloud-app-integration.md) for smoother integration and to ensure long-term support. &#x20;
+Snyk recommends installing or [migrating](migrate-a-bitbucket-cloud-legacy-integration.md) to the [Bitbucket Cloud Application](bitbucket-cloud-app-integration.md) for smoother integration and to ensure long-term support. &#x20;
 {% endhint %}
 
 Snyk's Bitbucket Cloud PAT integration lets you:
