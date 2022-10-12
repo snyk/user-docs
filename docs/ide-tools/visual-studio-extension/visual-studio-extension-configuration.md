@@ -28,7 +28,7 @@ After the plugin is installed, you can set the following configurations for the 
   * When **Automatically manage needed binaries** is checked, the plugin automatically downloads the CLI and keeps the CLI updated.
   *   When **Automatically manage needed binaries** is unchecked, you must provide a valid path to the CLI. Use this option if downloading the CLI is not possible due to your network configuration (for example, due to firewall rules) and you need to obtain the CLI through other means.
 
-      <figure><img src="../../.gitbook/assets/image (10) (1) (4).png" alt=""><figcaption><p>VS Code extension executable settings</p></figcaption></figure>
+      <figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption><p>VS Code extension executable settings</p></figcaption></figure>
 
 ## Product selection for Visual Studio extension results
 

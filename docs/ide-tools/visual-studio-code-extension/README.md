@@ -43,6 +43,12 @@ Follow these steps to install:
 * Authenticate with Snyk; see [Visual Studio Code extension authentication](https://docs.snyk.io/ide-tools/visual-studio-code-extension-for-snyk-code/visual-studio-code-extension-authentication).
 * Navigate back to the IDE; the first scan starts automatically.
 
+## Requirements for Linux and Unix
+
+When authenticating with Snyk, users have the option to copy the authentication URL to their clipboard.
+
+For Linux and Unix users, this requires that the `xclip` or `xsel` utility be installed.
+
 ## Support and feedback
 
 If you need help, submit a [request](https://support.snyk.io/hc/en-us/requests/new) to Snyk Support.
