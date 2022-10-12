@@ -545,6 +545,9 @@
     * [IAC sources usage](products/snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/iac-sources-usage.md)
   * [Share CLI results with the Snyk Web UI](products/snyk-infrastructure-as-code/share-cli-results-with-the-snyk-web-ui.md)
   * [Disable IaC Scans per organization](products/snyk-infrastructure-as-code/disable-iac-scans.md)
+  * [Integrated Infrastructure as Code](products/snyk-infrastructure-as-code/integrated-infrastructure-as-code/README.md)
+    * [Getting started with Snyk IaC (Integrated)](products/snyk-infrastructure-as-code/integrated-infrastructure-as-code/getting-started-with-snyk-iac-integrated.md)
+    * [Test your IaC files with Snyk CLI (Integrated IaC)](products/snyk-infrastructure-as-code/integrated-infrastructure-as-code/test-your-iac-files-with-snyk-cli-integrated-iac.md)
 * [Snyk Cloud](products/snyk-cloud/README.md)
   * [Snyk Cloud concepts](products/snyk-cloud/snyk-cloud-concepts.md)
   * [Getting started with Snyk Cloud: AWS](products/snyk-cloud/getting-started-with-snyk-cloud-aws/README.md)
@@ -564,6 +567,7 @@
   * [Update a Snyk Cloud Environment](products/snyk-cloud/update-a-snyk-cloud-environment.md)
   * [Remove a Snyk Cloud Environment](products/snyk-cloud/remove-a-snyk-cloud-environment.md)
   * [Supported AWS resources for Snyk Cloud](products/snyk-cloud/supported-aws-resources-for-snyk-cloud.md)
+  * [Managing Snyk Cloud rules](products/snyk-cloud/managing-snyk-cloud-rules.md)
 
 ## USING SNYK <a href="#features" id="features"></a>
 
