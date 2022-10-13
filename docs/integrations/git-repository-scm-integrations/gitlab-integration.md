@@ -12,7 +12,7 @@ The integration allows you to:
 4. Trigger a Snyk pull request with fixes yourself from the test report page or the project page for your repo on snyk.io.
 
 {% hint style="info" %}
-**GitLab webhooks** send out an event to Snyk when merge requests occur. This event then starts a series of other events like pulling project files, running the test process, and posting the results to GitLab--all of which takes place on Snyk's side.
+**GitLab webhooks** send out an event to Snyk when merge requests occur. This event then starts a series of other events such as pulling project files, running the test process, and posting the results to GitLab--all of which takes place on Snyk's side.
 {% endhint %}
 
 ## Set up GitLab integration

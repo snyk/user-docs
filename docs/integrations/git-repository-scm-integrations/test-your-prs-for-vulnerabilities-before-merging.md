@@ -20,6 +20,15 @@ Administrators can manage settings for Snyk PR tests from our app on both the or
 Settings on the project level override the settings on the organization level. Currently, we support all languages supported by the Git repositories that we integrate with: GitHub, GitLab, Bitbucket and Azure repos.
 {% endhint %}
 
+### Snyk SCM webhooks
+
+Snyk adds Source Control Manager (SCM) webhooks to your imported repositories for the relevant [GitHub and Bitbucket](./) integrations. &#x20;
+
+Snyk uses these webhooks  to:
+
+* Track the state of Snyk pull requests (when PRs are created, updated triggered, merged, and so on)
+* Send push events to trigger PR checks
+
 ## Configure the pull request test settings for your organization
 
 1. Log in to your account and navigate to the relevant group and organization that you want to manage.
