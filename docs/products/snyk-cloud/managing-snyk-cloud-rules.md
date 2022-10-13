@@ -1,7 +1,7 @@
 # Managing Snyk Cloud rules
 
 {% hint style="info" %}
-The name of the rule settings page differs based on the products enabled for your Organization. See **Rule settings page name**.
+The name of the rule settings page differs based on the products enabled for your Organization. See [Rule settings page name](managing-snyk-cloud-rules.md#rule-settings-page-name).
 {% endhint %}
 
 If [Snyk Integrated IaC](../snyk-infrastructure-as-code/integrated-infrastructure-as-code/) is enabled for your Organization, you can view a list of all Snyk Cloud and IaC rules on the Organization's **Settings > Snyk Cloud & IaC** page.

@@ -16,11 +16,6 @@ To start using Snyk Cloud, you need the following:
 * A Snyk Group Administrator or Organization Administrator [role](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/managing-permissions)
 * An organization-level [service account](https://docs.snyk.io/features/user-and-group-management/structure-account-for-high-application-performance/service-accounts#set-up-a-service-account) with an Org Admin role
 * Access to an [AWS](https://aws.amazon.com/) account and associated credentials with permissions to create a read-only IAM role
-* A supported browser:
-  * [Chrome](https://www.google.com/chrome/) >=87
-  * [Firefox](https://www.mozilla.org/en-US/firefox/browsers/) >=78
-  * [Safari](https://www.apple.com/safari/) >=13
-  * [Edge](https://www.microsoft.com/en-us/edge) >=88
 * Access to the [Terraform CLI](https://www.terraform.io/downloads), [AWS CLI](https://aws.amazon.com/cli/), or [AWS Management Console](https://console.aws.amazon.com) to create the IAM role for Snyk via Terraform or AWS CloudFormation
   * If using Terraform or the AWS CLI, ensure you configure it with your AWS credentials. See instructions for [Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication-and-configuration) or the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
 * An API client such as [curl](https://curl.se/), [HTTPie](https://httpie.io/), or [Postman](https://www.postman.com/)
