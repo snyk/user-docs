@@ -8,7 +8,7 @@ After you enabled Snyk Code in your Snyk Org Settings, you need to integrate you
 
 **Notes**:
 
-* Snyk Code temporarily clones your repositories for the code analysis. This requires appropriate permissions and HTTPS access to your SCM. For more information on how data is stored in Snyk, see [How Snyk handles your data](file:///more-info/how-snyk-handles-your-data).
+* Snyk Code temporarily clones your repositories for the code analysis. This requires appropriate permissions and HTTPS access to your SCM. For more information on how data is stored in Snyk, see [How Snyk handles your data](../../../../more-info/how-snyk-handles-your-data.md).
 * For more details about integrations, see [Snyk Integrations](https://docs.snyk.io/integrations).
 
 **To integrate your SCM with Snyk Code:**
