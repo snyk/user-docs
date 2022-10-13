@@ -87,12 +87,12 @@ Snyk performs all the operations in Bitbucket DC/Server on behalf of the integra
 
 For Snyk to perform the required operations on monitored repositories (such as reading manifest files on a frequent basis and opening fix or upgrade PRs), the integrated Bitbucket DC/Server service account needs **Admin** permissions on the imported repositories:
 
-| **Action**                                          | **Purpose**                                                                                                                                                                                      | **Required permissions on the repository** |
-| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------ |
-| Daily / weekly tests                                | Used to read manifest files in private repositories.                                                                                                                                             | **Write** or above                         |
-| Snyk tests on pull requests                         | Used to send pull request status checks when a new PR is created, or an existing PR is updated.                                                                                                  | **Write** or above                         |
-| Opening fix and upgrade pull requests               | Used to create fix PRs in monitored repositories.                                                                                                                                                | **Write** or above                         |
-| Snyk tests on pull requests - initial configuration | Used to add [Snyk webhooks ](https://docs.snyk.io/integrations/snyk-webhooks)to the imported repos, to notify Snyk when pull requests are created or updated, and enable Snyk to trigger a scan. | **Admin**                                  |
+| **Action**                                          | **Purpose**                                                                                                                                   | **Required permissions on the repository** |
+| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| Daily / weekly tests                                | Used to read manifest files in private repositories.                                                                                          | **Write** or above                         |
+| Snyk tests on pull requests                         | Used to send pull request status checks when a new PR is created, or an existing PR is updated.                                               | **Write** or above                         |
+| Opening fix and upgrade pull requests               | Used to create fix PRs in monitored repositories.                                                                                             | **Write** or above                         |
+| Snyk tests on pull requests - initial configuration | Used to add Snyk webhooks to the imported repos, to notify Snyk when pull requests are created or updated, and enable Snyk to trigger a scan. | **Admin**                                  |
 
 ## **Disabling the Bitbucket Data Center/Server integration**
 

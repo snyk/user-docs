@@ -107,14 +107,14 @@ All the operations, both those that are triggered via the Snyk Web UI and the au
 
 The table below presents a summary of the required access scopes for the configured token.
 
-| **Action**                                          | **Purpose**                                                                                                                                                                                     | **Required permissions in GitHub** |
-| --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| Daily / weekly tests                                | Used to read manifest files in private repositories                                                                                                                                             | _repo (all)_                       |
-| Manual fix pull requests (triggered by the user)    | Used to create fix PRs in the monitored repositories                                                                                                                                            | _repo (all)_                       |
-| Automatic fix and upgrade pull requests             | Used to create fix or upgrade PRs in the monitored repositories                                                                                                                                 | _repo (all)_                       |
-| Snyk tests on pull requests                         | Used to send pull request status checks whenever a new PR is created or an existing PR is updated                                                                                               | _repo (all)_                       |
-| Importing new projects to Snyk                      | Used to present a list of all the available repos in the GitHub org in the **Add Projects** screen (import popup)                                                                               | _admin:read:org, repo (all)_       |
-| Snyk tests on pull requests - initial configuration | Used to add [Snyk webhooks ](https://docs.snyk.io/integrations/snyk-webhooks)to the imported repos, to notify Snyk when pull requests are created or updated, and enable Snyk to trigger a scan | _admin:repo\_hooks (read & write)_ |
+| **Action**                                          | **Purpose**                                                                                                                                  | **Required permissions in GitHub** |
+| --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| Daily / weekly tests                                | Used to read manifest files in private repositories                                                                                          | _repo (all)_                       |
+| Manual fix pull requests (triggered by the user)    | Used to create fix PRs in the monitored repositories                                                                                         | _repo (all)_                       |
+| Automatic fix and upgrade pull requests             | Used to create fix or upgrade PRs in the monitored repositories                                                                              | _repo (all)_                       |
+| Snyk tests on pull requests                         | Used to send pull request status checks whenever a new PR is created or an existing PR is updated                                            | _repo (all)_                       |
+| Importing new projects to Snyk                      | Used to present a list of all the available repos in the GitHub org in the **Add Projects** screen (import popup)                            | _admin:read:org, repo (all)_       |
+| Snyk tests on pull requests - initial configuration | Used to add Snyk webhooks to the imported repos, to notify Snyk when pull requests are created or updated, and enable Snyk to trigger a scan | _admin:repo\_hooks (read & write)_ |
 
 ### Non-Brokered GitHub Integrations
 
