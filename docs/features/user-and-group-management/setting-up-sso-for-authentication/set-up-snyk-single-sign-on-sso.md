@@ -37,13 +37,13 @@ To establish trust with Snyk, add an Entity ID, an ACS URL, and a Signing certif
 
 Use these details to set up the connection with your Identity provider (IdP):
 
-| Details             | **Description**                                                                                                                                                                                          |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Entity ID           | **urn:auth0:snyk:saml-**_**{customer\_name}**_ (Replace _{customer\_name}_ with a name for your company.)                                                                                                |
-| Entity ID (Snyk EU Tenant Customers)          | **urn:auth0:snyk-mt-eu-prod-1:saml-**_**{customer\_name}**_ (Replace _{customer\_name}_ with a name for your company.)                                                                                                |
-| ACS URL             | [https://snyk.auth0.com/login/callback?connection=saml-](https://snyk.auth0.com/login/callback?connection=saml-)_**{customer\_name}**_ (Replace _{customer\_name}_ with the same name for your company.) |
+| Details                                        | **Description**                                                                                                                                                                                                                          |
+| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Entity ID                                      | **urn:auth0:snyk:saml-**_**{customer\_name}**_ (Replace _{customer\_name}_ with a name for your company.)                                                                                                                                |
+| Entity ID (Snyk EU Tenant Customers)           | **urn:auth0:snyk-mt-eu-prod-1:saml-**_**{customer\_name}**_ (Replace _{customer\_name}_ with a name for your company.)                                                                                                                   |
+| ACS URL                                        | [https://snyk.auth0.com/login/callback?connection=saml-](https://snyk.auth0.com/login/callback?connection=saml-)_**{customer\_name}**_ (Replace _{customer\_name}_ with the same name for your company.)                                 |
 | ACS URL (Snyk EU Tenant Customers)             | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback?connection=saml-](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback?connection=saml-)_**{customer\_name}**_ (Replace _{customer\_name}_ with the same name for your company.) |
-| Signing certificate | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem)                                                                                                                                                 |
+| Signing certificate                            | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem)                                                                                                                                                                                 |
 | Signing certificate (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/pem](https://snyk-mt-eu-prod-1.eu.auth0.com/pem)                                                                                                                                                 |
 
 To map information from your Identity provider to Snyk, name your user attributes as follows (using the same capitalization and spelling):
@@ -74,11 +74,11 @@ Obtain the following information from your identity provider and organization. P
 
 When using OIDC for the connection between your Identity provider and Snyk, add the Callback/Redirect URIs and OAuth Grant Type in your identity provider to establish trust with Snyk.
 
-| Information            | Description                                                                    |
-| ---------------------- | ------------------------------------------------------------------------------ |
-| Callback/Redirect URIs | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback) |
+| Information                                       | Description                                                                                                    |
+| ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Callback/Redirect URIs                            | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                                 |
 | Callback/Redirect URIs (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback) |
-| OAuth Grant Type       | Implicit (or Authorization Code)                                               |
+| OAuth Grant Type                                  | Implicit (or Authorization Code)                                                                               |
 
 ## OIDC information to provide to Snyk
 
@@ -99,9 +99,9 @@ When using Azure AD for the connection between your Identity provider and Snyk, 
 Use your Azure AD name when authenticating rather than the SCM user account name or a connection error can occur.
 {% endhint %}
 
-| Information   | Description                                                                    |
-| ------------- | ------------------------------------------------------------------------------ |
-| Redirect URIs | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback) |
+| Information                              | Description                                                                                                    |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Redirect URIs                            | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                                 |
 | Redirect URIs (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback) |
 
 ## Azure AD information to provide to Snyk
@@ -118,12 +118,12 @@ Obtain the following information from your identity provider and organization. P
 
 When using ADFS for the connection between your Identity provider and Snyk, add the Realm Identifier, a Callback URL, and a Signing certificate in your Identity provider to establish trust with Snyk.
 
-| Information      | **Description**                                                                                  |
-| ---------------- | ------------------------------------------------------------------------------------------------ |
-| Realm Identifier | **urn:auth0:snyk**                                                                               |
-| Callback URL     | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                   |
+| Information                             | **Description**                                                                                                                  |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Realm Identifier                        | **urn:auth0:snyk**                                                                                                               |
+| Callback URL                            | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                                                   |
 | Callback URL (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback)                   |
-| Signing cert     | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem) (add as a signature and not encryption) |
+| Signing cert                            | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem) (add as a signature and not encryption)                                 |
 | Signing cert (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/pem](https://snyk-mt-eu-prod-1.eu.auth0.com/pem) (add as a signature and not encryption) |
 
 ## ADFS information to provide to Snyk
@@ -144,10 +144,9 @@ After you set up the connection with your Identity provider and provide the nece
 
 Ignore any error message you see after clicking this link the first time, as Snyk uses the generated payload to complete the configuration.
 
-When Snyk finishes the configuration, the support agent asks you to access the log in page in incognito mode to prevent cookies from interfering with the log in process.
+When Snyk finishes the configuration, the support agent asks you to navigate to the log in page in incognito mode to prevent cookies from interfering with the log in process.
 
-* Use [https://app.snyk.io/login/sso](https://app.snyk.io/login/sso) for logging into your production environment.
-* Use [https://test.snyk.io](https://test.snyk.io) for logging into the test environment.
+Use [https://app.snyk.io/login/sso](https://app.snyk.io/login/sso) for logging into your production environment.
 
 To complete your log in:
 
@@ -160,10 +159,10 @@ To complete your log in:
 
 These worksheets include the information to enter in your Identity provider and the information you need to collect before submitting a ticket to Snyk Support to request single sign-on.
 
-{% file src="../../../.gitbook/assets/SSO Azure Worksheet.pdf" %}
+{% file src="../../../.gitbook/assets/SSO Azure Worksheet (1) (1) (1) (1) (1) (1).pdf" %}
 
-{% file src="../../../.gitbook/assets/SSO SAML Worksheet.pdf" %}
+{% file src="../../../.gitbook/assets/SSO SAML Worksheet (1) (1) (1).pdf" %}
 
-{% file src="../../../.gitbook/assets/SSO ADFS Worksheet.pdf" %}
+{% file src="../../../.gitbook/assets/SSO ADFS Worksheet (1).pdf" %}
 
-{% file src="../../../.gitbook/assets/SSO OIDC Worksheet (2).pdf" %}
+{% file src="../../../.gitbook/assets/SSO OIDC Worksheet (1).pdf" %}
