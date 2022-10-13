@@ -13,7 +13,7 @@ You can ignore a specific vulnerability in a project using the `snyk ignore` com
 
 `snyk ignore --id=<ISSUE_ID> [--expiry=<EXPIRY>] [--reason=<REASON>] [--policy-path=<PATH_TO_POLICY_FILE>] [<OPTIONS>]`
 
-The `snyk ignore` command supports the following options:
+The `snyk ignore` command updates the `.snyk` file and supports the following options:
 
 | **OPTION**                            | **DESCRIPTION**                                                                                                                                                                                                                                                                                                                                                                                       | **DEFAULT** | **REQUIRED** |
 | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ------------ |
@@ -22,4 +22,3 @@ The `snyk ignore` command supports the following options:
 | `--reason`                            | Human-readable \<REASON> to ignore this issue. Example: `reason='Not currently exploitable'`.                                                                                                                                                                                                                                                                                                         | None        | No           |
 | `--policy-path=<PATH_TO_POLICY_FILE>` | Path to a .snyk policy file to pass manually.                                                                                                                                                                                                                                                                                                                                                         | None        | No           |
 | `--path`                              | Path to resource for which to ignore the issue. Example: `path='tough-cookie@2.15.8'`                                                                                                                                                                                                                                                                                                                 | All         | No           |
-
