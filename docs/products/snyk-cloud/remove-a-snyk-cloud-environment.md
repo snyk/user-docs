@@ -2,7 +2,13 @@
 
 When you remove a Snyk Cloud Environment, Snyk removes all associated scans, issues, and records of resources. Your actual resources in the cloud provider are not affected.
 
-To remove an environment, send a request to the Snyk API's `/cloud/environments` endpoint in the below format. You can find the environment ID using the method shown in [Find the environment ID](scan-a-snyk-cloud-environment.md#find-the-environment-id).
+## Web UI
+
+In the Snyk Web UI, you can remove a cloud environment by navigating to **Organization Settings (cog icon) > Cloud environments**. See [View Snyk Cloud Environments](view-snyk-cloud-environments.md#remove-an-environment).
+
+## API
+
+To remove an environment using the Snyk API, send a request to the `/cloud/environments` endpoint in the below format. You can find the environment ID using the method shown in [Find the environment ID](scan-a-snyk-cloud-environment.md#find-the-environment-id).
 
 ```
 curl -X DELETE \
