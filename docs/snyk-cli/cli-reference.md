@@ -136,7 +136,7 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--package-manager=<PACKAGE_MANAGER_NAME>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--unmanaged:` [test](commands/test.md)`,` [monitor](commands/monitor.md). See also [Options for scanning using `--unmanaged`](cli-reference.md#option-for-c-c++-projects).
+`--unmanaged:` [test](commands/test.md)`,` [monitor](commands/monitor.md). See also [Options for scanning using `--unmanaged`](https://docs.snyk.io/snyk-cli/cli-reference#options-for-scanning-using-unmanaged).
 
 `--ignore-policy`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test), [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
