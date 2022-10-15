@@ -34,7 +34,8 @@ Each time a Project is tested, Snyk Code takes a snapshot of the repository in i
 ![](<../../../../.gitbook/assets/Snyk Code - Results - Information Area - Analysis Summary - 2.png>)
 
 * **Analyzed files** - the number of code files that were analyzed by Snyk Code in the specific repository, and the percentage of the analyzed files out of the sum total of the repository code files.
-* **Repo breakdown** - the number of analyzed and not analyzed files in the repository, including the types of the files. The **UNANALYZED FILES** category includes text files that were not analyzed by Snyk Code since their language or extension are currently not supported:
+* **Repo breakdown** - the number of analyzed and not analyzed files in the repository, including the types of the files. The **UNANALYZED FILES** category includes text files that were not analyzed by Snyk Code since their language or extension are currently not supported.\
+  Note that unsupported **Unknown** files are any files in the repository that are not present in the  list of extensions. Unknown files could be multimedia data like pictures and videos, or binaries, or files with proprietary formats, or any niche format that is not of interest.
 
 ![](<../../../../.gitbook/assets/Snyk Code - Results - Information Area - Analysis Summary - Repo breakdown - 2.png>)
 
