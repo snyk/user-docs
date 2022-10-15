@@ -1,4 +1,4 @@
-# Open Source - Supported  languages and package managers
+# Open Source - Supported languages and package managers
 
 Snyk Open Source supports the following programming languages, build tools, and package managers.
 
@@ -13,7 +13,7 @@ For supported languages in other Snyk products, see [Snyk languages and integrat
 | [C / C++](snyk-for-c-c++.md)                                         | N/A                                                                                   |
 | [Elixir](snyk-for-elixir.md)                                         | hex                                                                                   |
 | [Go](snyk-for-golang.md)                                             | Go Modules, dep, govendor                                                             |
-| [Java](snyk-for-java-gradle-maven.md)                                | Gradle, Maven                                                                         |
+| [Java and Kotlin](snyk-for-java-gradle-maven.md)                     | Gradle, Maven                                                                         |
 | [JavaScript](snyk-for-javascript.md)                                 | npm, yarn                                                                             |
 | [PHP](snyk-for-php.md)                                               | Composer                                                                              |
 | [Python](snyk-for-python.md)                                         | pip, Poetry, pipenv                                                                   |
