@@ -42,7 +42,7 @@ By default, when you expand a rule by selecting its **Expand row** (`>`) symbol,
 * Resource type
 * Environment kind (provider)
 * Environment name
-* Environment native ID (Amazon Web Services account ID)
+* Environment native ID (Amazon Web Services account ID, Google project ID, etc.)
 * Resource tags
 * Age of issue
 
@@ -91,12 +91,12 @@ The cloud issue summary panel displays the **Overview** by default, which contai
 * Status
   * Open
   * Closed
-* Resource ARN (Amazon Resource Name)
+* Resource ARN (Amazon Resource Name); AWS only
 * Resource name
 * Resource type
 * Environment name
 * Environment native ID
-* Environment platform (AWS region)
+* Environment platform (region, for AWS)
 * Rule title (**Failed this rule** section)
 * Rule description (**Why to fix** section)
 

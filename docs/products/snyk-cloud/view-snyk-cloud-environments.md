@@ -17,7 +17,10 @@ To add an environment, select the **Add environment** drop-down and select the c
 
 <figure><img src="../../.gitbook/assets/snyk-cloud-environments-page-add-env.png" alt="Add an environment in the Snyk Web UI"><figcaption><p>Add an environment in the Snyk Web UI</p></figcaption></figure>
 
-You can also add an environment using the [Snyk API](getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/).
+You can also add an environment using the Snyk API:
+
+* [Snyk Cloud for AWS: API](getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/)
+* [Snyk Cloud for Google: API](getting-started-with-snyk-cloud-google/snyk-cloud-for-google-api/)
 
 ## Remove an environment
 

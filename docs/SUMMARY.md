@@ -559,6 +559,11 @@
       * [Step 1: Download IAM role IaC template (API)](products/snyk-cloud/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-1-download-iam-role-iac-template.md)
       * [Step 2: Create the Snyk IAM role (API)](products/snyk-cloud/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-2-create-the-snyk-iam-role-api.md)
       * [Step 3: Create and scan a Snyk Cloud Environment (API)](products/snyk-cloud/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment.md)
+  * [Getting started with Snyk Cloud: Google](products/snyk-cloud/getting-started-with-snyk-cloud-google/README.md)
+    * [Snyk Cloud for Google: API](products/snyk-cloud/getting-started-with-snyk-cloud-google/snyk-cloud-for-google-api/README.md)
+      * [Step 1: Download service account IaC template (API)](products/snyk-cloud/getting-started-with-snyk-cloud-google/snyk-cloud-for-google-api/step-1-download-service-account-iac-template-api.md)
+      * [Step 2: Create the Google service account (API)](products/snyk-cloud/getting-started-with-snyk-cloud-google/snyk-cloud-for-google-api/step-2-create-the-google-service-account-api.md)
+      * [Step 3: Create and scan a Snyk Cloud Environment for Google (API)](products/snyk-cloud/getting-started-with-snyk-cloud-google/snyk-cloud-for-google-api/step-3-create-and-scan-a-snyk-cloud-environment-for-google-api.md)
   * [Snyk Cloud issues](products/snyk-cloud/snyk-cloud-issues/README.md)
     * [View cloud issues in the Snyk Web UI](products/snyk-cloud/snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md)
     * [View cloud issues in the API](products/snyk-cloud/snyk-cloud-issues/view-cloud-issues-in-the-api.md)
@@ -568,6 +573,7 @@
   * [Update a Snyk Cloud Environment](products/snyk-cloud/update-a-snyk-cloud-environment.md)
   * [Remove a Snyk Cloud Environment](products/snyk-cloud/remove-a-snyk-cloud-environment.md)
   * [Supported AWS resources for Snyk Cloud](products/snyk-cloud/supported-aws-resources-for-snyk-cloud.md)
+  * [Supported Google resources for Snyk Cloud](products/snyk-cloud/supported-google-resources-for-snyk-cloud.md)
   * [Managing Snyk Cloud rules](products/snyk-cloud/managing-snyk-cloud-rules.md)
 
 ## USING SNYK <a href="#features" id="features"></a>

@@ -15,6 +15,7 @@ Use the `/cloud/environments` Snyk API endpoint to retrieve a list of all enviro
 Currently supported providers:
 
 * [Amazon Web Services](https://aws.amazon.com/)
+* [Google Cloud](https://cloud.google.com/)
 
 ## Resources
 
@@ -24,7 +25,10 @@ On each scan, Snyk records the configuration attributes of each resource in an e
 
 You can use the `/cloud/resources` Snyk API endpoint to retrieve a list of all resources for an organization and optionally filter by an attribute such as environment ID, resource tag, or resource type.
 
-For a list of supported resource types, see [Supported AWS resources for Snyk Cloud](supported-aws-resources-for-snyk-cloud.md).
+For a list of supported resource types, see the following:
+
+* [Supported AWS resources](supported-aws-resources-for-snyk-cloud.md)
+* [Supported Google resources](supported-google-resources-for-snyk-cloud.md)
 
 ## Rules
 
