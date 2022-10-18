@@ -50,7 +50,7 @@ Snyk recommends the third image, as it was last marked as a custom base image.
 * Automatic fix PRs are supported for custom base image recommendations.
 * In order for Snyk to identify a project is using a custom base image, the same custom base image must be imported and marked as such in the project's settings. &#x20;
 
-## **User flows**
+## **How to enable the feature**&#x20;
 
 ### Platform team
 
@@ -84,7 +84,7 @@ First, import an image to a new Snyk project (check that the project is in the s
 If the same image is scanned from both the CLI and UI, Snyk creates two projects which will both be monitored.
 {% endhint %}
 
-#### Through the CLI:
+#### Through the CLI
 
 1. Use `--file` (**mandatory**) to specify the path to the Dockerfile.
 2. The following is an example command: `snyk container monitor snykgoof/custom-base-python:3.9.2_2021110408 --file=path/to/Dockerfile.3.9.2`
