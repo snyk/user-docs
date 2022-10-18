@@ -5,7 +5,7 @@ Snyk integrates with Google Container Registry (GCR) so that you can import your
 {% hint style="info" %}
 **NOTE**
 
-For more details about how we scan, see [How Snyk container security works](../../how-snyk-container-works.md).
+For more details about how Snyk scans, see [How Snyk container security works](../../how-snyk-container-works.md).
 {% endhint %}
 
 **To set up integration with GCR, follow these steps:**
@@ -13,4 +13,4 @@ For more details about how we scan, see [How Snyk container security works](../.
 1. [Enable permissions to access GCR](enable-permissions-to-access-gcr.md)
 2. [Configure integration for GCR](configure-integration-for-gcr.md)
 
-Also see our [introduction to container security best practice](https://snyk.io/learn/container-security/).
+For additional information see this [introduction to container security best practice](https://snyk.io/learn/container-security/).

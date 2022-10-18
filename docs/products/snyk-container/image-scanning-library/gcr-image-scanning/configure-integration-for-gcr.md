@@ -4,7 +4,7 @@ Configure integration from Snyk with your Google container registries to scan fo
 
 **Prerequisites:**
 
-Set up a new service account key from your GCR account (see [enable-permissions-to-access-gcr.md](enable-permissions-to-access-gcr.md "mention")).
+Set up a new service account key from your GCR account; see [Enable permissions to access GCR](enable-permissions-to-access-gcr.md).
 
 **Steps:**
 
@@ -15,4 +15,4 @@ Set up a new service account key from your GCR account (see [enable-permissions-
 
     Snyk checks the credentials and when successful, the page reloads with a notification that the connection succeeded.
 
-![GCR\_configur.png](../../../../.gitbook/assets/uuid-47cf04cb-248e-5d0f-d35a-f36fbb624614-en.png)
+<figure><img src="../../../../.gitbook/assets/uuid-47cf04cb-248e-5d0f-d35a-f36fbb624614-en.png" alt="GCR account credentials"><figcaption><p>GCR account credentials</p></figcaption></figure>
