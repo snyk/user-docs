@@ -22,9 +22,6 @@ From the relevant project in Google, ensure the you've created a service account
 
    Save the data you copied in order to paste it when configuring the integration with Snyk.
 
-**Next steps:**
-
-Now, configure the integration: [Configure integration for GCR](https://support.snyk.io/hc/articles/360003916118#UUID-9e0df3f8-0780-b593-573b-5185bdca4a6d).
 
  
 <br><br><hr>
