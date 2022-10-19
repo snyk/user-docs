@@ -38,7 +38,7 @@ Supported languages and frameworks include C#, JavaScript, TypeScript, Java, Go 
 ## Software requirements
 
 * Operating system - Windows
-* Supported versions of Visual Studio: 2015, 2017, 2019, 2022. The extension is compatible with Community, Professional, and Enterprise plans.
+* Supported versions of Visual Studio: 2015, 2017, 2019, 2022 (version 17.0.5 and above). The extension is compatible with Community, Professional, and Enterprise plans.
 
 ## Install the extension
 
