@@ -72,7 +72,7 @@ The example below presents a fix pull request opened by Snyk:
 
 To review and update the automatic fix pull request settings:
 
-1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > GitHub Enterprise**, and click **Edit Settings**.
+1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> **Settings >** **Integrations > Source control > GitHub Enterprise**, and click **Edit Settings**.
 2. Scroll to the **Automatic fix pull requests** section, make the relevant changes, and **Update settings.**
 
 ![](<../../.gitbook/assets/mceclip4 (1) (2) (6) (7) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (25).png>)
