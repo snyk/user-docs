@@ -6,21 +6,26 @@ Enable integration between one Artifactory instance as a container registry and 
 
 * You must be an administrator for the organization you're configuring in Snyk.
 * Snyk needs user credentials to integrate with Artifactory and does not support Artifactory when configured for single sign-on (SSO).
-* If you're using self-hosted Artifactory, refer to our documentation for [Broker configuration](../../../../features/snyk-broker/snyk-broker-container-registry-agent/).
+* If you're using a self-hosted Artifactory, refer to the Snyk documentation for [Broker configuration](../../../../features/snyk-broker/snyk-broker-container-registry-agent/).
 
 ## Configure integration
 
 1. Log in to [your Snyk account](https://app.snyk.io).
-2.  Navigate to **Integrations** from the menu bar at the top, find and click the Artifactory option:
+2.  Navigate to **Integrations** from the menu bar at the top; find and click the Artifactory option:
 
-    <img src="../../../../.gitbook/assets/image (57) (1).png" alt="" data-size="original">
+    <img src="../../../../.gitbook/assets/image (57) (1).png" alt="Artifactory icon" data-size="original">
 3. The configuration page in the **Settings** area loads.
 4. Enter credentials as follows:
    1. **Username and Password**—use your Artifactory login credentials.
    2. **Container registry name -** the _full registry URL_ in format `<org>.jfrog.io/artifactory/api/docker/<repo-name>`.
 5. Click **Save Changes**.
 
-![Screenshot 2021-12-06 at 16 37 12](https://user-images.githubusercontent.com/112600/144875482-078b715e-2834-469b-9983-7e88a65f175e.png)
+<figure><img src="https://user-images.githubusercontent.com/112600/144875482-078b715e-2834-469b-9983-7e88a65f175e.png" alt="Artifactory account credentials"><figcaption><p>Artifactory account credentials</p></figcaption></figure>
+
+{% hint style="info" %}
+**Note**\
+****To set up the integration, the Artifactory credentials should have read at least permissions to the relevant Artifactory repository.
+{% endhint %}
 
 ![](../../../../.gitbook/assets/uuid-3b329a90-394f-5ab3-af84-658b41a1edc0-en.png)
 
