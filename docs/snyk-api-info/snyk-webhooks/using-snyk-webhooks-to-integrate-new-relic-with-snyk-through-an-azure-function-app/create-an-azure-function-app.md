@@ -91,7 +91,6 @@ public static async Task<IActionResult> Run(HttpRequest req, ILogger log)
             }
             else if (data.project.origin == "azure-repos")
             {
-                //log.LogInformation("data: " + requestBody);
                 var AZURE_DEVOPS_ORG = Environment.GetEnvironmentVariable("AZURE_DEVOPS_ORG");
                 int idxRepoURLProject = repoURL.IndexOf("/");
                 string package = "";
@@ -146,7 +145,8 @@ public static async Task<IActionResult> Run(HttpRequest req, ILogger log)
                         issueId = data.newIssues[i].issueData.identifiers.CWE[0];
                     }
                     double cvssScore = data.newIssues[i].issueData.cvssScore;
-                    string severity = data.newIssues[i].issueData.severity;
+                    string severity = data.newIssues[i].issueData.severity.ToString().ToUpper();
+                    string issueSeverity = data.newIssues[i].issueData.severity;
                     string descr = data.newIssues[i].issueData.description.ToString();
                     if (data.newIssues[i].issueData.description.ToString().Length >= 256)
                     {
@@ -164,39 +164,40 @@ public static async Task<IActionResult> Run(HttpRequest req, ILogger log)
                     {
                         sb.Append(",");
                     }
+
                     sb.Append("{");
-                    sb.Append("  \"entityType\": \"" + entityType + "\",");
-                    sb.Append("  \"projectName\": \"" + projectName + "\",");
-                    sb.Append("  \"entityLookupValue\": \"" + entityLookupValue + "\",");
-                    sb.Append("  \"issueInstanceKey\": \"" + repoURL + "\",");
-                    sb.Append("  \"disclosureUrl\": \"" + browseUrl + "\",");
-                    sb.Append("  \"imageId\": \"" + data.project.imageId + "\",");
-                    sb.Append("  \"imageTag\": \"" + data.project.imageTag + "\",");
-                    sb.Append("  \"imagePlatform\": \"" + data.project.imagePlatform + "\",");
-                    sb.Append("  \"imageBaseImage\": \"" + data.project.imageBaseImage + "\",");
-                    sb.Append("  \"containerImage\": \"" + containerImage + "\",");
                     sb.Append("  \"artifactURL\": \"" + artifactURL + "\",");
-                    sb.Append("  \"issueCountsBySeverityLow\": " + data.project.issueCountsBySeverity.low + ",");
+                    sb.Append("  \"containerImage\": \"" + containerImage + "\",");
+                    sb.Append("  \"cvss.score\": \"" + cvssScore + "\",");
+                    sb.Append("  \"cvssScore\": \"" + cvssScore + "\",");
+                    sb.Append("  \"disclosureUrl\": \"" + browseUrl + "\",");
+                    sb.Append("  \"entityLookupValue\": \"" + entityLookupValue + "\",");
+                    sb.Append("  \"entityType\": \"" + entityType + "\",");
+                    sb.Append("  \"imageBaseImage\": \"" + data.project.imageBaseImage + "\",");
+                    sb.Append("  \"imageId\": \"" + data.project.imageId + "\",");
+                    sb.Append("  \"imagePlatform\": \"" + data.project.imagePlatform + "\",");
+                    sb.Append("  \"imageTag\": \"" + data.project.imageTag + "\",");
+                    sb.Append("  \"issueCountsBySeverityCritical\": " + data.project.issueCountsBySeverity.critical + ",");
                     sb.Append("  \"issueCountsBySeverityHigh\": " + data.project.issueCountsBySeverity.high + ",");
                     sb.Append("  \"issueCountsBySeverityMedium\": " + data.project.issueCountsBySeverity.medium + ",");
-                    sb.Append("  \"issueCountsBySeverityCritical\": " + data.project.issueCountsBySeverity.critical + ",");
+                    sb.Append("  \"issueCountsBySeverityLow\": " + data.project.issueCountsBySeverity.low + ",");
+                    sb.Append("  \"issueId\": \"" + issueId + "\",");
+                    sb.Append("  \"issueInstanceKey\": \"" + repoURL + "\",");
+                    sb.Append("  \"issueSeverity\": \"" + issueSeverity + "\",");
+                    sb.Append("  \"issueType\": \"Library Vulnerability\",");
+                    sb.Append("  \"issueVendorId\": \"" + issueVendorId + "\",");
+                    sb.Append("  \"message\": \"" + descr + "\",");
+                    sb.Append("  \"pkgName\": \"" + pkgName + "\",");
+                    sb.Append("  \"projectName\": \"" + projectName + "\",");
+                    sb.Append("  \"priorityScore\": " + priorityScore + ",");
+                    sb.Append("  \"remediation.exists\": \"" + remediationExists + "\",");
+                    sb.Append("  \"remediationExists\": \"" + remediationExists + "\",");
+                    sb.Append("  \"remediationRecommendation\": \"" + remediationRecommendation + "\",");
+                    sb.Append("  \"severity\": \"" + severity + "\",");
+                    sb.Append("  \"snykIssueType\": \"" + issueType + "\",");
                     sb.Append("  \"snykOrigin\": \"" + data.project.origin + "\",");
                     sb.Append("  \"source\": \"Snyk\",");
-                    sb.Append("  \"title\": \"" + title + "\",");
-                    sb.Append("  \"issueType\": \"Library Vulnerability\",");
-                    sb.Append("  \"snykIssueType\": \"" + issueType + "\",");
-                    sb.Append("  \"pkgName\": \"" + pkgName + "\",");
-                    sb.Append("  \"priorityScore\": " + priorityScore + ",");
-                    sb.Append("  \"severity\": \"" + severity + "\",");
-                    sb.Append("  \"issueSeverity\": \"" + severity + "\",");
-                    sb.Append("  \"cvssScore\": \"" + cvssScore + "\",");
-                    sb.Append("  \"cvss.score\": \"" + cvssScore + "\",");
-                    sb.Append("  \"issueVendorId\": \"" + issueVendorId + "\",");
-                    sb.Append("  \"issueId\": \"" + issueId + "\",");
-                    sb.Append("  \"message\": \"" + descr + "\",");
-                    sb.Append("  \"remediationExists\": \"" + remediationExists + "\",");
-                    sb.Append("  \"remediation.exists\": \"" + remediationExists + "\",");
-                    sb.Append("  \"remediationRecommendation\": \"" + remediationRecommendation + "\"");
+                    sb.Append("  \"title\": \"" + title + "\"");
                     sb.Append("}");
                 }
             }
@@ -208,8 +209,8 @@ public static async Task<IActionResult> Run(HttpRequest req, ILogger log)
 
             if (payload != "{\"findings\":[]}")
             {
+                log.LogInformation("payload: " + payload);
                 var content = new StringContent(payload, Encoding.UTF8, "application/json");
-
                 var NEW_RELIC_SECURITY_URL = Environment.GetEnvironmentVariable("NEW_RELIC_SECURITY_URL");
                 var NEW_RELIC_LICENSE_KEY = Environment.GetEnvironmentVariable("NEW_RELIC_LICENSE_KEY");
 
