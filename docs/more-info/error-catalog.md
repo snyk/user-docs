@@ -65,6 +65,88 @@
 
   
 ---
+# OpenAPI
+### [SNYK-OPENAPI-001](#snyk-openapi-001-bad-request) - Bad request
+  The request sent to the server is invalid or corrupt.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OPENAPI-002](#snyk-openapi-002-forbidden) - Forbidden
+  Access to the requested resource is forbidden.
+
+  **HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OPENAPI-003](#snyk-openapi-003-not-acceptable) - Not acceptable
+  The server cannot provide a response which matches the provided accept headers.
+
+  **HTTP Status:** [406](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OPENAPI-004](#snyk-openapi-004-not-found) - Not found
+  The server cannot find the requested resource.
+
+  **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OPENAPI-005](#snyk-openapi-005-method-not-allowed) - Method not allowed
+  The endpoint does not support the request method.
+
+  **HTTP Status:** [405](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OPENAPI-006](#snyk-openapi-006-request-entity-too-large) - Request entity too large
+  The request entity exceeds server limitations.
+
+  **HTTP Status:** [413](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/413)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OPENAPI-007](#snyk-openapi-007-unauthorized) - Unauthorized
+  The request lacks authentication credentials for the requested resource.
+
+  **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OPENAPI-008](#snyk-openapi-008-unsupported-media-type) - Unsupported media type
+  The media format of the request is not supported.
+
+  **HTTP Status:** [415](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/415)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+---
 # [Open Source Languages & Package Managers](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support)
 ### [SNYK-OS-0001](#snyk-os-0001-unsupported-ecosystem) - Unsupported Ecosystem
   The language or package manager is not supported.
@@ -314,4 +396,4 @@
   
 ---
 
-Genererated at 2022-10-12T09:43:37.838Z
+Genererated at 2022-10-20T09:20:03.505Z
