@@ -302,7 +302,7 @@ The following `snyk monitor` options can be used with `--unmanaged` as documente
 
 `--target-reference=<TARGET_REFERENCE>`
 
-[`--project-name=<PROJECT_NAME>`](https://docs.snyk.io/snyk-cli/commands/monitor#project-name-less-than-project\_name-greater-than)``
+`--project-name=<PROJECT_NAME>`
 
 There are also special options.
 

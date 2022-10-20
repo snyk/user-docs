@@ -18,7 +18,7 @@ Open the [Snyk Web UI](../../snyk-web-ui/), navigate to your **Projects** page, 
 
 ![](<../../.gitbook/assets/image (129).png>)
 
-For each entry, the left icon shows the number of Snyk Projects in each entry, plus the Git-based repository the projects are imported from. For example <img src="../../.gitbook/assets/image (323).png" alt="" data-size="line">.
+For each entry, the left icon shows the number of Snyk Projects in each entry, plus the Git-based repository the projects are imported from. For example <img src="../../.gitbook/assets/image (30).png" alt="" data-size="line">.
 
 #### Private / public repositories: the lock symbol
 
