@@ -42,7 +42,7 @@ Seeing more vulnerabilities over time may not reflect your team's work to improv
 
 For example, the total number of vulnerabilities is likely to rise when you add more projects. The graph may display that linkage - when you see jumps in the total numbers of vulnerabilities, you may see corresponding jumps in the total numbers of Projects:
 
-![More Projects, more issues](<../../.gitbook/assets/image (22) (2) (1).png>)
+![More Projects, more issues](<../../.gitbook/assets/image (22) (2).png>)
 
 #### Metric: ratio of vulnerabilities to Projects
 
