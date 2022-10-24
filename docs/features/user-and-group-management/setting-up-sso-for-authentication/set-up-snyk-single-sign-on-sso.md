@@ -9,7 +9,7 @@ Ensure you have at least one group and organization to indicate where new users 
 {% hint style="info" %}
 Once you have gathered the requested information (detailed below), create a support ticket to request SSO set up.
 
-For Business plan using SAML, Group Admins can configure Snyk Single Sign-On and [this guide](self-serve-single-sign-on-sso.md) details the steps.
+For Business plan using SAML, Group Admins can configure Snyk Single Sign-On and [this guide](self-serve-single-sign-on-sso/) details the steps.
 {% endhint %}
 
 ## Overview

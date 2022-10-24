@@ -25,7 +25,7 @@ After SSO is configured both from Snyk and your company's network, a trust relat
 
 ## **User log in**
 
-Users are provisioned to Snyk when they log in (see [choose-a-provisioning-option.md](choose-a-provisioning-option.md "mention")). If the new user role is selected as Group Member, they only see a list of your organizations until the admin adds them to the appropriate organizations.
+Users are provisioned to Snyk when they log in (see [choose-a-provisioning-option.md](../choose-a-provisioning-option.md "mention")). If the new user role is selected as Group Member, they only see a list of your organizations until the admin adds them to the appropriate organizations.
 
 ## Step 1. Configure your identity provider
 
@@ -39,7 +39,7 @@ To establish trust with Snyk, add an Entity ID, an ACS URL, and a Signing certif
 
 To access the Group overview for your group, click **Settings** [![](https://github.com/snyk/user-docs/raw/118bd8f19001bd64415f0ce63897f568c4b5327a/docs/.gitbook/assets/image%20\(70\).png)](https://github.com/snyk/user-docs/blob/118bd8f19001bd64415f0ce63897f568c4b5327a/docs/.gitbook/assets/image%20\(70\).png) > **SSO**:
 
-![Group settings](../../../.gitbook/assets/snyk-sso.png)
+![Group settings](../../../../.gitbook/assets/snyk-sso.png)
 
 To map information from your Identity provider to Snyk, name your user attributes as follows (using the same capitalization and spelling).
 
@@ -51,13 +51,13 @@ To map information from your Identity provider to Snyk, name your user attribute
 
 An example from Okta is given below:
 
-![SAML Attribute Statements](<../../../.gitbook/assets/Screenshot 2022-02-24 at 14.19.18.png>)
+![SAML Attribute Statements](<../../../../.gitbook/assets/Screenshot 2022-02-24 at 14.19.18.png>)
 
 {% hint style="warning" %}
 If your user attributes do not match, the Snyk configuration for your SSO will not work.
 {% endhint %}
 
-For more details about these attributes, see [Step 3. Snyk SSO settings.](self-serve-single-sign-on-sso.md#step-3.-snyk-sso-setting)
+For more details about these attributes, see [Step 3. Snyk SSO settings.](./#step-3.-snyk-sso-setting)
 
 ## Step 2. Enter SAML Attributes
 
@@ -65,7 +65,7 @@ After the identity provider is set up to acknowledge Snyk, obtain the following 
 
 Click **create a connection** to establish trust on the service-provider side:
 
-![Create a connection](<../../../.gitbook/assets/image (115) (1) (2).png>)
+![Create a connection](<../../../../.gitbook/assets/image (115) (1) (2).png>)
 
 Provide SAML attributes in the following form.
 
@@ -77,7 +77,7 @@ Provide SAML attributes in the following form.
 * **IdP-Initiated workflow**: Enable this option to add Snyk tile to your Identity Provider.\
   **Note:** IdP-Initiated SSO behavior carries a [security risk](https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/identity-provider-initiated-single-sign-on#risks-and-considerations) and is therefore not recommended. The risk is explained on the IdP side, and should be understood before enabling this option.
 
-![Enter SAML attributes](<../../../.gitbook/assets/Screenshot 2022-02-24 at 14.40.24.png>)
+![Enter SAML attributes](<../../../../.gitbook/assets/Screenshot 2022-02-24 at 14.40.24.png>)
 
 After filling in the details click **Save Changes**. Snyk will highlight any errors. You can edit SAML attributes at any time,. Save your changes and they will be reflected in the SSO connection immediately.
 
@@ -85,18 +85,18 @@ After filling in the details click **Save Changes**. Snyk will highlight any err
 
 Now click **Configure Snyk SSO settings below** in the success banner to complete the setup.
 
-![Configure Snyk SSO settings below](<../../../.gitbook/assets/Screenshot 2022-02-24 at 15.37.44.png>)
+![Configure Snyk SSO settings below](<../../../../.gitbook/assets/Screenshot 2022-02-24 at 15.37.44.png>)
 
-Choose the new user’s role (see [choose-a-provisioning-option.md](choose-a-provisioning-option.md "mention")):
+Choose the new user’s role (see [choose-a-provisioning-option.md](../choose-a-provisioning-option.md "mention")):
 
-![Choose user's role](<../../../.gitbook/assets/Screenshot 2022-02-24 at 15.28.30.png>)
+![Choose user's role](<../../../../.gitbook/assets/Screenshot 2022-02-24 at 15.28.30.png>)
 
 The **Profile attributes** values are used to map the user's SAML payload data, to ensure that Snyk receives the proper email, name, and userName. It should be the exact keys from the raw json from SAML payload.
 
 The values will be auto-populated by the system as **nameIdAttributes.value**.
 
 {% hint style="info" %}
-We suggest that you consult your SSO administrator and determine how the email address, name (a display name, First name + Last Name), and username (a unique identifier) are represented when the Identity Provider is configured (as described in [Step 1. Configure your identity provider](self-serve-single-sign-on-sso.md#step-1.-configure-your-identity-provider)).
+We suggest that you consult your SSO administrator and determine how the email address, name (a display name, First name + Last Name), and username (a unique identifier) are represented when the Identity Provider is configured (as described in [Step 1. Configure your identity provider](./#step-1.-configure-your-identity-provider)).
 {% endhint %}
 
 After the selections are made, click **Save Changes** to complete your SSO configuration.
@@ -105,7 +105,7 @@ After the selections are made, click **Save Changes** to complete your SSO confi
 
 When the SSO settings are saved, click the **direct login URL** displayed on the screen for the SSO connection you set up. You will be taken to your IDP through which you can log in to your Snyk Group.
 
-![DIrect login URL](<../../../.gitbook/assets/Screenshot 2022-02-24 at 16.00.49.png>)
+![DIrect login URL](<../../../../.gitbook/assets/Screenshot 2022-02-24 at 16.00.49.png>)
 
 Alternatively, you can login to [**snyk**](http://snyk.io) in incognito mode to prevent cookies from interfering and verify the SSO Login is working.
 
