@@ -1,8 +1,4 @@
-# AWS Lambda setup: set up the trigger
-
-The goal in this setup to have the Lambda function triggered by the Snyk webhook.
-
-To do this , use the AWS API Gateway to trigger the Lambda function every time a new event is received.
+# AWS API Gateway: Setting up a trigger
 
 Follow these steps to add the AWS API Gateway to the function:
 

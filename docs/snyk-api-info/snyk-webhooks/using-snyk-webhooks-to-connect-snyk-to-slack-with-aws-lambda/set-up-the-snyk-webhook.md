@@ -24,7 +24,7 @@ To set up the Snyk Webhook, follow these steps:
     <figure><img src="https://lh6.googleusercontent.com/nhlX0u7hJZSTue4rK01FLvComCMVmEQc1uE_z0nsnQ2_uK0ew5TFryBrTBkL24AKj03NjwKZvK5DsoN6j3fdKu0K9lX2a6SN2JP30m5-ST_Fj-IlMYO4Nu6PwDaDMeQH0ZPzyCF7__zc77iIaHRxxV2_57JDmgv7NbCeJi3Ti3LwP5K9UyYpkrma1A" alt="Snyk API v1 add API key to Authorization"><figcaption><p>Snyk API v1 add API key to Authorization</p></figcaption></figure>
 5.  In the Body section add your values\
     `{` \
-    &#x20;    `“url”: “value-of-your-apigw-url”,`\
+    &#x20;    `“url”: “value-of-your-public-url”,`\
     &#x20;    `“secret”: “value-of-your-lambda-secret-environment-variable”` \
     `}`\
 

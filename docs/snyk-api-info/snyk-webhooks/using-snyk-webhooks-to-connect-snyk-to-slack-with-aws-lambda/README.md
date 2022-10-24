@@ -2,14 +2,17 @@
 
 You can use Snyk Webhooks alongside a Lambda function to receive and filter new vulnerabilities discovered by Snyk in your Slack.
 
+Exposing the Lambda function to Snyk Webhooks is covered through two options, API Gateway and a Lambda Function URL. Choose the variant that suits your needs and environment the best. If you are not using API Gateway, you may disregard any of those instructions in this guide.
+
 The **prerequisites** are as follows:
 
 * An AWS account with access to:
   * Create new roles (or use an existing one)&#x20;
   * Modify Lambda functions
-  * Modify API Gateway
+  * Modify API Gateway (if you are publishing the Lambda function through API Gateway)
 * Snyk account with Organization Admin access
 * Slack account that can create a new Slack App with a webhook added to an existing channel
+* Ability to run npm commands in a terminal
 
 The Snyk Webhook, AWS Lambda function, and Slack notification **work as follows**:
 

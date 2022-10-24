@@ -23,7 +23,7 @@ Follow these steps to test the connection:
 
 
     <figure><img src="https://lh3.googleusercontent.com/j7ab9JGG5IAmqb6xuA7AjwPcF6cmUIhIzrn6p1f7CUQTkwQqHm7P5fVHxDx8I6tysjM93uqu5whBFq_qI1Q5h5y_KK0uR3Hv--uYhcDXJehU5ZCc68Fvdv79S8z7yqCp0CNbLYXOaxwc9cTR0ueQ9lYuydCDhyJmpA5TGNJ08wexCGIpeDMX0fO4Tw" alt="Postman create API Request"><figcaption><p>Postman create API Request</p></figcaption></figure>
-5.  Change the method to **POST** and add your API Gateway URL. Refer to [AWS API Gateway: add the POST method to connect Snyk to Slack](aws-api-gateway-add-the-post-method-to-connect-snyk-to-slack.md) for instructions on finding the URL.\
+5.  Change the method to **POST** and add your API Gateway URL or Function URL. Refer to [AWS API Gateway: add the POST method to connect Snyk to Slack](aws-lambda-setup-set-up-the-trigger/with-api-gateway/aws-api-gateway-add-the-post-method-to-connect-snyk-to-slack.md) for instructions on finding the URL.\
 
 
     <figure><img src="https://lh4.googleusercontent.com/5QxR-05QtK6FNpoyuPW06L_vyVAl6cCxMnph7euIKafc-YyGIgjaiA74KSNO93uTMGFGxNQnzwyfiZ5Oi3e1y0GA0P2INodvIbamhe6lpwwf1Kc7bCajYUPG0RcfedUOKMqI0l4mmuq1jECRHUiUtnsel7PiBxiIvddcCnplxwVDY9r0FDcYNKZPag" alt="Postman POST method add AWS API Gateway URL"><figcaption><p>Postman POST method add AWS API Gateway URL</p></figcaption></figure>
