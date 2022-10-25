@@ -33,7 +33,7 @@ To establish trust with Snyk, add an Entity ID, an Assertion Consumer Service (A
 
 * The **Entity ID** is the URL that uniquely identifies Snyk as a SAML entity or service provider. Note that the **default Entity ID must be checked** manually as no default is set for this.
 * The **Assertion Consumer Service (ACS)** is the endpoint on the Snyk network that listens for requests from your identity provider to enable communication between users on your network and Snyk. This URL is sometimes called a Reply URL.
-* The **Signing certificate** is the Snyk certificate, stored on your server, that is needed to maintain the trust relationship. It contains the necessary encryption keys for authentication.
+* The **Signing certificate** is the Snyk certificate, stored on your server that is needed to maintain the trust relationship. It contains the necessary encryption keys for authentication.
 
 **Group Admins** can find the Snyk details required to set up the connection with your Identity provider (IdP) as follows.
 
@@ -61,7 +61,7 @@ For more details about these attributes, see [Step 3. Snyk SSO settings](./#step
 
 ## Step 2. Enter SAML Attributes
 
-After the identity provider is set up to acknowledge Snyk, obtain the following information from your identity provider and Organization.
+After the identity provider is set up to acknowledge Snyk, obtain the following information from your identity provider and organization.
 
 Click **create a connection** to establish trust on the service provider side:
 
