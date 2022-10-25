@@ -20,9 +20,9 @@ When you are set up with groups and users:
 
     ***
 
-    <img src="https://lh5.googleusercontent.com/h6ww6L16tTWMVhzoVN5Y72oBo51X-WYidqMAO-pTmUksl7akFrgH463S_MMAKDGYdQYzVIYlvN0HCF7tlHMyyIqaQgfdoP9PP6UX7RIJhg-9fFtmLdVwM3tgjVj-h97yKBAS4jGl" alt="Okta" data-size="original">
+    <img src="https://lh5.googleusercontent.com/h6ww6L16tTWMVhzoVN5Y72oBo51X-WYidqMAO-pTmUksl7akFrgH463S_MMAKDGYdQYzVIYlvN0HCF7tlHMyyIqaQgfdoP9PP6UX7RIJhg-9fFtmLdVwM3tgjVj-h97yKBAS4jGl" alt="Okta Directory, Profile Editor" data-size="original">
 2. Add Attribute.\
-   ![Attributes](https://lh4.googleusercontent.com/R1sr6ZOerCRNxJhGS3ARf0Pebe0dC-tBLP\_80nARDd0LUGTjRY9jA1E-TiTtz4AQvk4aX-pAE\_\_h2S14kgEb6RTSRzZ4O\_1tOcBaCEwpTn2d4HaVuTynjN5D6qE4YSj3LZaiE5WN)
+   ![Add Attribute](https://lh4.googleusercontent.com/R1sr6ZOerCRNxJhGS3ARf0Pebe0dC-tBLP\_80nARDd0LUGTjRY9jA1E-TiTtz4AQvk4aX-pAE\_\_h2S14kgEb6RTSRzZ4O\_1tOcBaCEwpTn2d4HaVuTynjN5D6qE4YSj3LZaiE5WN)
 3.  Add the following for details for this first Attribute.
 
     * Data Type: string array
@@ -55,9 +55,9 @@ When you are set up with groups and users:
    1. Select a **Group**, navigate to the **Applications** tab, click **Assign** application, and assign the Snyk app to the Group.
    2. Click on the **pencil** next to the Snyk app.\
       ![Applications tab](https://lh3.googleusercontent.com/X3ARoW\_GPcKqIvrowKVPGnBWgziZ4E87hCIRVXzvLkLXOuLvP9fS5y9D-yaCjyWCmr6Co-\_3JSA2ZS-MdM5gEF9JYRi4Ivid-tnijtkpQstm7XgFbhAlnZnRM9D1DKYUsnHm987R)
-   3. Add the Snyk organization slugs that you want to associate with your Okta group (no  spaces or capital letter(s)).\
+   3. Add the Snyk Organization slugs that you want to associate with your Okta group (no  spaces or capital letter(s)).\
       ![Edit App Assignment](https://lh5.googleusercontent.com/74SiCm6xOoCRnG9LEpMCeCCHyJA-8viDYL0yNbh0ZQeIpV8wuharGBXp6aIsJB0P1Zjbkn1g2vFr2EcxYawyfh\_axoGISUewc4fXara8oQ4BTsE8\_wlprwd1Df5CeVlYgGgoOjsj)
-   4. Repeat the preceding steps to assign the Snyk app to all your applicable Okta groups, modifying the Snyk organization slug as needed.
+   4. Repeat the preceding steps to assign the Snyk app to all your applicable Okta groups, modifying the Snyk Organization slug as needed.
 6. **Directory -> People**
    1. For each individual, go to the **Applications** tab for the user and click on the **pencil** next to the app\
       ![Applications tab for user](https://lh5.googleusercontent.com/7RnhYZ0E24ZoBXe00Zw9jQW\_WbPye2lciWm2qk3zG03mLY6JbsAY7saY-0b26zEGArnDw46MulIgg9XW7Dw9HCt-EODS5qSZquanpNlmfwDHUYL71BQILAfAYifxHf8UBE0BB3Ww)
@@ -72,27 +72,24 @@ When you are set up with groups and users:
     4. Click **Next** -> **Finish.**
     5. Reach out to your Snyk point of contact so they can complete the configuration. This process may take four to five days.
 
-    The following explains the roles expression: If the role is groupadmin, the expression ignores everything else and passes `snyk-groupadmin`. If the role **is** **not** groupadmin, then for each snyk org listed across all groups the expression automatically concatenates the prefix “`snyk-`” with the snyk org slug _and_ appends `user_role` at the end of each org slug. An example result follows:
+    The following explains the roles expression: If the role is groupadmin, the expression ignores everything else and passes `snyk-groupadmin`. If the role **is** **not** groupadmin, then for each Snyk Org listed across all groups the expression automatically concatenates the prefix “`snyk-`” with the Snyk Org slug _and_ appends `user_role` at the end of each Org slug. An example result follows:
 
 Example: `"roles": [ "snyk-groupadmin", "snyk-customer-facing-tools-admin", "snyk-internal-tools-admin" ]`
-
-\
-
 
 ## Configuration 2:
 
 In this configuration:
 
-* Okta groups will be mapped to Snyk organizations
-* Okta groups will be mapped to Snyk organization membership roles
-* **The user role in Snyk is pre-set in each Okta group for all members of that group**
+* Okta groups will be mapped to Snyk Organizations.
+* Okta groups will be mapped to Snyk Organization membership roles.
+* The user role in Snyk is pre-set in each Okta group for all members of that group.
 
-![](https://lh5.googleusercontent.com/h6ww6L16tTWMVhzoVN5Y72oBo51X-WYidqMAO-pTmUksl7akFrgH463S\_MMAKDGYdQYzVIYlvN0HCF7tlHMyyIqaQgfdoP9PP6UX7RIJhg-9fFtmLdVwM3tgjVj-h97yKBAS4jGl)
+<figure><img src="https://lh5.googleusercontent.com/h6ww6L16tTWMVhzoVN5Y72oBo51X-WYidqMAO-pTmUksl7akFrgH463S_MMAKDGYdQYzVIYlvN0HCF7tlHMyyIqaQgfdoP9PP6UX7RIJhg-9fFtmLdVwM3tgjVj-h97yKBAS4jGl" alt="Okta Directory, Profile Editor"><figcaption><p>Okta Directory, Profile Editor</p></figcaption></figure>
 
-**1. Add Attribute**\
-![](https://lh4.googleusercontent.com/R1sr6ZOerCRNxJhGS3ARf0Pebe0dC-tBLP\_80nARDd0LUGTjRY9jA1E-TiTtz4AQvk4aX-pAE\_\_h2S14kgEb6RTSRzZ4O\_1tOcBaCEwpTn2d4HaVuTynjN5D6qE4YSj3LZaiE5WN)
+1\. Add Attribute\
+![Add Attribute](https://lh4.googleusercontent.com/R1sr6ZOerCRNxJhGS3ARf0Pebe0dC-tBLP\_80nARDd0LUGTjRY9jA1E-TiTtz4AQvk4aX-pAE\_\_h2S14kgEb6RTSRzZ4O\_1tOcBaCEwpTn2d4HaVuTynjN5D6qE4YSj3LZaiE5WN)
 
-**2. Set Attributes**
+2\. Set Attributes
 
 1. Data Type: string array
 2. Display Name: Snyk Orgs
@@ -100,27 +97,27 @@ In this configuration:
 4. Group Priority: Combine values across groups
 5. Save and Add Another
 
-![](https://lh3.googleusercontent.com/sIXILVtJJeo9wbjzVSEVNmSVPwkMPeUu1j5yeBxi-mBEgwu4Ejn-4d0tZhtUZay2EV0PkN8wSE0uJgON3csAyXCEKVAAcpShqPKdbz\_U1D3ghx5sTCEhBJliRYIIEOf72c3H1TS5)\
+![Add Attribute, enter details](https://lh3.googleusercontent.com/sIXILVtJJeo9wbjzVSEVNmSVPwkMPeUu1j5yeBxi-mBEgwu4Ejn-4d0tZhtUZay2EV0PkN8wSE0uJgON3csAyXCEKVAAcpShqPKdbz\_U1D3ghx5sTCEhBJliRYIIEOf72c3H1TS5)\
 \
-**3. Directory -> Groups**
+3\. Directory -> Groups
 
-1. Select a group and navigate to Applications Tab and click Assign applications and assign the Snyk app to the group
-2. The Snyk app should be present and click on the pencil next to the snyk app\
-   ![](https://lh3.googleusercontent.com/X3ARoW\_GPcKqIvrowKVPGnBWgziZ4E87hCIRVXzvLkLXOuLvP9fS5y9D-yaCjyWCmr6Co-\_3JSA2ZS-MdM5gEF9JYRi4Ivid-tnijtkpQstm7XgFbhAlnZnRM9D1DKYUsnHm987R)
-3. Add the Snyk organization slugs that you want to associate with your OKTA group (there should NOT be any spaces or capital letter(s) **NOTE**: In this configuration, you add the role within this Snyk Org Slugs assignment\
+1. Select a group and navigate to Applications Tab; click Assign applications to assign the Snyk app to the group.
+2. The Snyk app should be present; click on the pencil next to the snyk app.\
+   ![Edit Snyk app](https://lh3.googleusercontent.com/X3ARoW\_GPcKqIvrowKVPGnBWgziZ4E87hCIRVXzvLkLXOuLvP9fS5y9D-yaCjyWCmr6Co-\_3JSA2ZS-MdM5gEF9JYRi4Ivid-tnijtkpQstm7XgFbhAlnZnRM9D1DKYUsnHm987R)
+3. Add the Snyk Organization slugs that you want to associate with your OKTA group (no spaces or capital letter(s)). **Note**: In this configuration, you add the role within this Snyk Org slug's assignment\
    \
-   ![](https://lh4.googleusercontent.com/qUN0SI64WQqAGCs2YPrvIW0lyZAyZDnGgpYe\_mXyGIPa2XqgBJJa3DBpg\_qGdoHxXql7kNrzrBkzY7T660es0qGcSH5wSbBw1DANk9f1\_q6SHDQXjxNFKRaVVCuZICVkFbnGYUz6)
-4. Repeat steps 1-3 for all your applicable OKTA groups, as this will assign both the same orgslug and role to each user within the configured group.
+   ![Edit App Assignment](https://lh4.googleusercontent.com/qUN0SI64WQqAGCs2YPrvIW0lyZAyZDnGgpYe\_mXyGIPa2XqgBJJa3DBpg\_qGdoHxXql7kNrzrBkzY7T660es0qGcSH5wSbBw1DANk9f1\_q6SHDQXjxNFKRaVVCuZICVkFbnGYUz6)
+4. Repeat the preceding steps for all your applicable OKTA groups to assign both the same orgslug and role to each user within the configured group.
 
 ### Implementation
 
-1. Navigate to Applications -> Applications and click on the Snyk app you set
-2. General Tab -> Edit SAML Settings and click next to go to the Configure SAML step
-3. Set an Attribute Statement named “roles” of an unspecified type
-4.  Attribute Statements-> set **roles** as the Name field with Name format **Unspecified** and the Value will be the below expression.
+1. Navigate to **Applications** -> **Applications** and click on the Snyk app you set.
+2. **General Tab** -> **Edit SAML Settings** and click next to go to the **Configure SAML** step.
+3. Set an **Attribute Statement** named “roles” of an unspecified type.
+4.  **Attribute Statements**-> set **roles** as the Name field with Name format **Unspecified** and the **Value** as the expression that follows.
 
     `Arrays.flatten(String.replace(String.append("snyk-",Arrays.toCsvString(appuser.snyk_orgs)),",",",snyk-"))`
-5. Reach out to your Snyk point of contact so they can complete the configuration. This process may take 4 to 5 days
+5. Reach out to your Snyk point of contact so they can complete the configuration. This process may take 4 to 5 days.
 
 ### **Explanation of the value expression**
 
