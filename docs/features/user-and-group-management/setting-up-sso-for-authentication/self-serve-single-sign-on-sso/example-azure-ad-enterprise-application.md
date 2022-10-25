@@ -34,13 +34,13 @@ An example follows of setting up an Azure AD Enterprise Application and connecti
     <figure><img src="../../../../.gitbook/assets/10.png" alt="Entity ID and Assertion Consumer Service URL"><figcaption><p>Entity ID and Assertion Consumer Service URL</p></figcaption></figure>
 11. Scroll to find the login and logout URLs needed to finish the configuration in Snyk. Copy these and paste them into the SSO settings in the Snyk portal:
 
-    <figure><img src="../../../../.gitbook/assets/11.png" alt="Snyk portal"><figcaption><p>Snyk portal</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/11.png" alt="Login and logout URLs"><figcaption><p>Login and logout URLs</p></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/12 (1).png" alt=""><figcaption><p>Snyk portal</p></figcaption></figure>
-12. Go back to Azure AD and click **Download** next to **Certificate (Base64)**:
+    <figure><img src="../../../../.gitbook/assets/12 (1).png" alt="Sign in and Sign out URLs in Snyk portal"><figcaption><p>Sign in and Sign out URLs in Snyk portal</p></figcaption></figure>
+12. Return to Azure AD and click **Download** next to **Certificate (Base64)**:
 
     <figure><img src="../../../../.gitbook/assets/13.png" alt="Download SAML Certificate (Base 64)"><figcaption><p>Download SAML Certificate (Base 64)</p></figcaption></figure>
-13. Open the downloaded certificate in your preferred text editor and copy the text and paste it into the Snyk **X509 signing certificate** field and add the relevant domains that supported by this SSO connection. Finally, click **Create Auth0 connection** if you are creating a completely new connection or **Save changes** if you are editing an existing connection:
+13. Open the downloaded certificate in your preferred text editor, copy the text and paste it into the Snyk **X509 signing certificate** field, and add the relevant domains that are supported by this SSO connection. Finally, click **Create Auth0 connection** if you are creating a completely new connection or **Save changes** if you are editing an existing connection:
 
     <figure><img src="../../../../.gitbook/assets/14.png" alt="Enter certificate and domains supported, set connection"><figcaption><p>Enter certificate and domains supported, set connection</p></figcaption></figure>
 14. Refer to [Choose a provisioning option](../choose-a-provisioning-option.md) and choose the option you would like to use.
