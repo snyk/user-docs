@@ -1,27 +1,27 @@
 # Set up Snyk Single Sign-On (SSO)
 
-Set up single sign-on to allow your developers and teams easy access to Snyk through your existing SSO provider, so they can see the status of their projects, view reports, resolve vulnerabilities, and more.
+Set up single sign-on to allow your developers and teams easy access to Snyk through your existing SSO provider.
 
 The information you need to establish trust between Snyk and the identity provider depends on which type of SSO you are using.
 
-Ensure you have at least one group and organization to indicate where new users will be assigned. See [Groups, Organizations and Users](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/groups-organizations-and-users).
+Ensure you have at least one Group and Organization to indicate where new users will be assigned. See [Groups, organizations, and users](../../../introducing-snyk/groups-organizations-and-users.md).
 
 {% hint style="info" %}
-Once you have gathered the requested information (detailed below), create a support ticket to request SSO set up.
+Once you have gathered the needed information identified in the following sections, create a support ticket to request SSO set up.
 
-For Business plan using SAML, Group Admins can configure Snyk Single Sign-On and [this guide](self-serve-single-sign-on-sso/) details the steps.
+For Business plan using SAML, Group Admins can configure Snyk Single Sign-On. See [Self Serve Single Sign-On (SSO)](self-serve-single-sign-on-sso/) for the steps.
 {% endhint %}
 
 ## Overview
 
 The process of establishing trust between your identity provider (IdP) and Snyk requires a few separate steps, coordinated between your SSO administrator and Snyk Support.
 
-* In your own identity provider platform, enter details about the Snyk environment and user attributes.
+* In your identity provider platform, enter details about the Snyk environment and user attributes.
 * Provide Snyk with details from your IdP.
 * Set up a user for testing and send Snyk the username and password for that user.
 * Use the link provided by Snyk to generate a payload.
 * After Snyk finalizes the connection, confirm the login process is working correctly.
-* Users are provisioned to Snyk when they log in. If invitation is required, users may only see a list of your organizations until the admin adds them to the appropriate organizations.
+* Users are provisioned to Snyk when they log in. If invitation is required, users may only see a list of your Organizations until the admin adds them to the appropriate Organizations.
 
 After SSO is configured both from Snyk and your company's network, a trust relationship is established between Snyk, Auth0 (on behalf of Snyk), and your network. Any sensitive data is encrypted and stored in Auth0 only for the purposes of enabling user logins.
 
@@ -29,15 +29,15 @@ Each type of SSO connection requires different details for establishing the trus
 
 ## Use SAML for SSO
 
-To establish trust with Snyk, add an Entity ID, an ACS URL, and a Signing certificate in your identity provider.
+To establish trust with Snyk, add an Entity ID, an Assertion Consumer Service (ACS) URL, and a Signing certificate in your identity provider.
 
-* The **Entity ID** is the URL that uniquely identifies Snyk as a SAML entity or service provider--note, **default Entity ID must be checked** manually as no default is set for this.
+* The **Entity ID** is the URL that uniquely identifies Snyk as a SAML entity or service provider. Note: **default Entity ID must be checked** manually as no default is set for this.
 * The **Assertion Consumer Service (ACS)** is the endpoint on the Snyk network that listens for requests from your identity provider to enable communication between users on your network and Snyk. This URL is sometimes called a Reply URL.
 * The **Signing certificate** is the Snyk certificate, stored on your server, that is needed to maintain the trust relationship. It contains the necessary encryption keys for authentication.
 
 Use these details to set up the connection with your Identity provider (IdP):
 
-| Details                                        | **Description**                                                                                                                                                                                                                          |
+| **Details**                                    | **Description**                                                                                                                                                                                                                          |
 | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Entity ID                                      | **urn:auth0:snyk:saml-**_**{customer\_name}**_ (Replace _{customer\_name}_ with a name for your company.)                                                                                                                                |
 | Entity ID (Snyk EU Tenant Customers)           | **urn:auth0:snyk-mt-eu-prod-1:saml-**_**{customer\_name}**_ (Replace _{customer\_name}_ with a name for your company.)                                                                                                                   |
@@ -48,11 +48,11 @@ Use these details to set up the connection with your Identity provider (IdP):
 
 To map information from your Identity provider to Snyk, name your user attributes as follows (using the same capitalization and spelling):
 
-| **Attribute** | **Description**                                     |
-| ------------- | --------------------------------------------------- |
-| **email**     | The user email address                              |
-| **name**      | The name of the person to be authenticated          |
-| **username**  | **The person’s username for the identity provider** |
+| **Attribute** | **Description**                                 |
+| ------------- | ----------------------------------------------- |
+| email         | The user email address                          |
+| name          | The name of the person to be authenticated      |
+| username      | The person’s username for the identity provider |
 
 If your user attributes do not match, note that the Snyk configuration for your SSO will take more time.
 
@@ -93,7 +93,7 @@ Obtain the following information from your identity provider and organization. P
 
 ## Use Azure AD as SSO (via App Registration/OIDC)
 
-When using Azure AD for the connection between your Identity provider and Snyk, you'll need to add the Redirect URIs in your Identity provider to establish trust with Snyk.
+When using Azure AD for the connection between your Identity provider and Snyk, you must add the Redirect URIs in your Identity provider to establish trust with Snyk.
 
 {% hint style="info" %}
 Use your Azure AD name when authenticating rather than the SCM user account name or a connection error can occur.
@@ -116,11 +116,11 @@ Obtain the following information from your identity provider and organization. P
 
 ## Use ADFS as SSO
 
-When using ADFS for the connection between your Identity provider and Snyk, add the Realm Identifier, a Callback URL, and a Signing certificate in your Identity provider to establish trust with Snyk.
+When using Active Directory Federation Service (ADFS) for the connection between your Identity provider and Snyk, add the Realm Identifier, a Callback URL, and a Signing certificate in your Identity provider to establish trust with Snyk.
 
-| Information                             | **Description**                                                                                                                  |
+| **Information**                         | **Description**                                                                                                                  |
 | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Realm Identifier                        | **urn:auth0:snyk**                                                                                                               |
+| Realm Identifier                        | urn:auth0:snyk                                                                                                                   |
 | Callback URL                            | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                                                   |
 | Callback URL (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback)                   |
 | Signing cert                            | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem) (add as a signature and not encryption)                                 |
@@ -128,7 +128,7 @@ When using ADFS for the connection between your Identity provider and Snyk, add 
 
 ## ADFS information to provide to Snyk
 
-Obtain the following information from your Identity provider and organization. You'll provide this information to Snyk in order to establish trust on the service-provider side.
+Obtain the following information from your Identity provider and organization. Provide this information to Snyk in order to establish trust on the service-provider side.
 
 * ADFS URL or Federation Metadata XML file
 
