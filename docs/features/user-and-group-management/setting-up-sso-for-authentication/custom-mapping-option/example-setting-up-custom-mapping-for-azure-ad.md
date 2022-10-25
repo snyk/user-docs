@@ -2,7 +2,9 @@
 
 The following information shows how to configure custom mapping of roles for Azure AD using the [Custom Mapping Option](./).
 
-There are two ways of implementing custom mapping with Azure AD, either using [custom claims](example-setting-up-custom-mapping-for-azure-ad.md#configuration) or [App Roles](example-setting-up-custom-mapping-for-azure-ad.md#configuration-app-roles). Choose the one that suits your situation best. If you need guidance setting up the initial Enterprise application, refer the Azure AD Enterprise Application [example](../self-serve-single-sign-on-sso/example-azure-ad-enterprise-application.md).
+There are two ways of implementing custom mapping with Azure AD, either using [custom claims](example-setting-up-custom-mapping-for-azure-ad.md#configuration) or [App Roles](example-setting-up-custom-mapping-for-azure-ad.md#configuration-app-roles). Choose the one that suits your situation best.&#x20;
+
+If you need guidance setting up the initial Enterprise application, refer the Azure AD Enterprise Application [example](../self-serve-single-sign-on-sso/example-azure-ad-enterprise-application.md). **Note**: any step on the Snyk side in setting up the Enterprise application must be performed by your Snyk contact as self-serve SSO does not accommodate custom mapping.
 
 ## Configuration - custom claims
 
