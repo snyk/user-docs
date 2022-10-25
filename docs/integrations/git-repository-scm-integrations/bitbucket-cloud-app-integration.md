@@ -42,14 +42,14 @@ To install the Snyk App on your Bitbucket Cloud workspace, you must have **Admin
 
 
 
-    <figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption><p>Allow Snyk to access to Bitbucket Cloud</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (19) (2) (1).png" alt=""><figcaption><p>Allow Snyk to access to Bitbucket Cloud</p></figcaption></figure>
 3.  Grant access to your Snyk Organization when you're prompted.\
 
 
     <figure><img src="../../.gitbook/assets/bbc_snykaccess_6oct2022.png" alt=""><figcaption><p>Allow Bitbucket Cloud to access your Snyk Organization<br></p></figcaption></figure>
 
     After you allow access to the Snyk Organization, the Snyk **Organization Settings** page opens and confirms that you're connected to the Bitbucket Cloud App.\
-    ![](../../.gitbook/assets/bb\_connected-28aug2022.png)
+    ![](<../../.gitbook/assets/bb\_connected-28aug2022 (1).png>)
 
 Once Snyk is integrated with Bitbucket Cloud, you can see the new Snyk security tab in the repository page, and [import and explore the issues and vulnerabilities for your repository projects](../../getting-started/import-a-project.md), directly in Bitbucket!
 
@@ -74,7 +74,7 @@ After you add them, Snyk scans the selected repositories for dependency files in
 
 The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/bbc-snyk_redo_21sept2022 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bbc-snyk_redo_21sept2022.png" alt=""><figcaption></figcaption></figure>
 
 ## Bitbucket integration features
 
@@ -91,7 +91,7 @@ Snyk produces advanced [security reports](https://docs.snyk.io/features/reports/
 
 The example below presents a project-level security report.&#x20;
 
-<figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022 (1).png" alt=""><figcaption></figcaption></figure>
 
 Snyk scans your projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening [automated pull requests](https://docs.snyk.io/products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities) with fixes for your repositories.
 
@@ -104,7 +104,7 @@ To review and adjust the automatic fix pull request settings:
 1. In Snyk, go to  <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Cloud App**, and click **Edit Settings**.
 2. Scroll to the **Automatic fix pull requests** section and configure the relevant options.
 
-![](<../../.gitbook/assets/bitbucket\_cloud-auto\_fix\_prs\_30june2022 (2) (1).png>)
+![](<../../.gitbook/assets/bitbucket\_cloud-auto\_fix\_prs\_30june2022 (1).png>)
 
 {% hint style="info" %}
 Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are not automatically assigned to the default reviewer set in your Bitbucket Cloud account. More info on [Snyk automated pull requests](https://docs.snyk.io/products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities).

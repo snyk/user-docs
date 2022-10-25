@@ -74,4 +74,4 @@ Prerequisites for this configuration type:
     <figure><img src="../../../../.gitbook/assets/image (5).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>
 7.  Repeat for all required groups and roles that should be assigned. Then verify that the list looks similar to this.
 
-    <figure><img src="../../../../.gitbook/assets/image (6).png" alt="Users and group list"><figcaption><p>Users and group list</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt="Users and group list"><figcaption><p>Users and group list</p></figcaption></figure>
