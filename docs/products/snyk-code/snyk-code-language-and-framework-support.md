@@ -53,7 +53,7 @@ Most framework are supported "out of the box" as Snyk Code only need to be able 
 ### JavaScript frameworks
 
 {% hint style="info" %}
-These are some of the explicitly supported frameworks for JavaScript; those are in-additon to the general support for all frameworks.
+These are some of the explicitly supported frameworks for JavaScript; those are in addition to the general support for many frameworks.
 {% endhint %}
 
 * **React**: Open-source, front end, JavaScript library for building user interfaces or UI components for websites and mobile applications.
@@ -64,7 +64,7 @@ These are some of the explicitly supported frameworks for JavaScript; those are 
 ### Java frameworks
 
 {% hint style="info" %}
-These are some of the explicitly supported frameworks for Java; those are in-additon to the general support for all frameworks.
+These are some of the explicitly supported frameworks for JavaScript; those are in addition to the general support for many frameworks.
 {% endhint %}
 
 * **Apache Camel**: Open source framework for message-oriented middleware with a rule-based routing and mediation engine.
@@ -76,7 +76,7 @@ These are some of the explicitly supported frameworks for Java; those are in-add
 ### Python frameworks
 
 {% hint style="info" %}
-These are some of the explicitly supported frameworks for Python; those are in-additon to the general support for all frameworks.
+These are some of the explicitly supported frameworks for JavaScript; those are in addition to the general support for many frameworks.
 {% endhint %}
 
 * [Django](https://www.djangoproject.com): a framework for full-stack web application development and server development.
@@ -85,7 +85,7 @@ These are some of the explicitly supported frameworks for Python; those are in-a
 ### C# frameworks
 
 {% hint style="info" %}
-These are some of the explicitly supported frameworks for C#; those are in-additon to the general support for all frameworks.
+These are some of the explicitly supported frameworks for JavaScript; those are in addition to the general support for many frameworks.
 {% endhint %}
 
 * **.NET framework**: .NET is an open source developer platform, created by Microsoft and used to build a variety of application types. While .NET supports different languages, Snyk Code supports .NET using the C# interface.
@@ -93,7 +93,7 @@ These are some of the explicitly supported frameworks for C#; those are in-addit
 * **.NET Core**: Microsoft created .NET Core to make the .NET framework cross-platform and enable a number of scenarios. The .NET framework and .NET Core share many components and code can be exchanged. (Microsoft [provides guidance](https://docs.microsoft.com/en-us/dotnet/standard/choosing-core-framework-server) when to choose which)
 
 {% hint style="info" %}
-The framework support is always determined by the file extensions known to the engine. For example, the engine does not scan **\*.cshtml** files, but scans the associated **\*.cshtml.cs** files.
+The framework support is always determined by the file extensions known to the engine. For example, the engine does not scan **`*.cshtml`** files, but scans the associated **`*.cshtml.cs`** files.
 {% endhint %}
 
 ### File size limit for Snyk Code analysis
