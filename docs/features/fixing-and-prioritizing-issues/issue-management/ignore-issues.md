@@ -30,7 +30,7 @@ Each issue card has an **Ignore** button that opens a dialog where you can selec
 
 If you select **Ignore temporarily,** then you can check the **Until fix is available** checkbox:
 
-![Ignore temporarily](<../../../.gitbook/assets/image (19) (1) (1) (1).png>)
+![Ignore temporarily](<../../../.gitbook/assets/image (19) (1).png>)
 
 This resurfaces the vulnerability as soon as Snyk has a fix for it, and optionally you can give additional details on why you are ignoring the issue. This is checked by default if there is currently no fix available for this issue.
 
@@ -40,7 +40,7 @@ An issue is ignored until ANY of the conditions happen, the ignore period expire
 
 When you ignore an issue in the Snyk Web UI, the issue shows who ignored it and allow you to edit or unignore it.
 
-![Ignore set in the Snyk Web UI](<../../../.gitbook/assets/image (14) (1) (1) (1).png>)
+![Ignore set in the Snyk Web UI](<../../../.gitbook/assets/image (14) (2).png>)
 
 For more information see the training: [Ignoring issues](https://training.snyk.io/courses/ignore-strategies).
 
@@ -75,11 +75,11 @@ Refer to the following example:
 
 The following shows `snyk test` results before ignoring in the Web UI:
 
-![Snyk test results before ignoring in the Web UI](<../../../.gitbook/assets/image (18) (1) (1) (1).png>)
+![Snyk test results before ignoring in the Web UI](<../../../.gitbook/assets/image (18) (1).png>)
 
 The following shows `snyk test` results after ignoring in the Web UI:
 
-![Snyk test results after ignoring in the Web UI](<../../../.gitbook/assets/image (20) (1) (1) (1) (1).png>)
+![Snyk test results after ignoring in the Web UI](<../../../.gitbook/assets/image (20) (1).png>)
 
 **Note**: The preceding example shows what happens if you ignore the project imported by `snyk monitor` from the CLI or CI/CD.
 
