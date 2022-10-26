@@ -3,6 +3,7 @@
 You can update the following attributes for a [Snyk Cloud Environment](snyk-cloud-concepts.md#environments):
 
 * **AWS:** IAM role ARN (Amazon Resource Name). The new role ARN must have the same AWS account ID as the old role ARN. See [Find the role ARN](getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment.md#find-the-role-arn).
+* **Google:** Service account email address. The new service account email must be associated with the same project ID as the old one.
 
 For example, you would need to update the Snyk IAM role ARN if you change the role's name in the Terraform or CloudFormation template and deploy the changes.
 
@@ -37,7 +38,9 @@ In the output, look for the `data.id` property. In the shortened example below, 
 
 ## Update the environment
 
-To update an environment, send a request to the `/cloud/environments/{environment_id}` endpoint in the below format:
+To update an environment, send a request to the `/cloud/environments/{environment_id}` endpoint in the format below according to cloud provider.
+
+### AWS
 
 ```
 curl -X PATCH \
@@ -55,7 +58,29 @@ curl -X PATCH \
 }'
 ```
 
-Snyk returns a JSON document containing the updated environment details; for example:
+### Google
+
+`data.attributes.options.service_account_email` is required. You can choose to explicitly specify the project ID with a `data.attributes.options.project_id` field, but it cannot be different from the current project ID.
+
+```
+curl -X PATCH \
+'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments/YOUR-ENVIRONMENT-ID?version=2022-04-13~experimental' \
+-H 'Authorization: token YOUR-API-TOKEN' \
+-H "Content-Type:application/vnd.api+json"  -d '{
+  "data": {
+    "attributes": {
+      "options": {
+        "service_account_email": "YOUR-NEW-SERVICE-ACCOUNT-EMAIL"
+      }
+    },
+    "type": "resource"
+  }
+}'
+```
+
+## Understand the API response
+
+Snyk returns a JSON document containing the updated environment details. For example, the response below shows an AWS environment:
 
 ```json
 {
@@ -95,4 +120,4 @@ Snyk returns a JSON document containing the updated environment details; for exa
 }
 ```
 
-The `data.attributes.options.role_arn` field in the JSON output shows the new IAM role ARN.
+The `data.attributes.options` and `data.attributes.properties` fields in the JSON output vary depending on cloud provider and show the updated information.

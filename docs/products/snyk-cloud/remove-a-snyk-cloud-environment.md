@@ -4,7 +4,7 @@ When you remove a Snyk Cloud Environment, Snyk removes all associated scans, iss
 
 ## Web UI
 
-In the Snyk Web UI, you can remove a cloud environment by navigating to **Organization Settings (cog icon) > Cloud environments**. See [View Snyk Cloud Environments](view-snyk-cloud-environments.md#remove-an-environment).
+In the Snyk Web UI, you can remove a cloud environment by navigating to your Organization's **Settings (cog icon) > Cloud environments**. See [View Snyk Cloud Environments](view-snyk-cloud-environments.md#remove-an-environment).
 
 ## API
 
@@ -18,9 +18,13 @@ curl -X DELETE \
 
 There is no output if the command is successful.
 
-## Remove the Snyk IAM role
+## Remove the Snyk AWS IAM role
 
-Removing an environment does not remove the Snyk IAM role. To fully remove Snyk's access to your cloud provider account, delete the Amazon Web Services (AWS) Identity & Access Management (IAM) role using the same infrastructure as code tool that created it:
+Removing an environment does not remove the Snyk Identity & Access Management (IAM) role. To fully remove Snyk's access to your Amazon Web Services (AWS) account, delete the IAM role using the same infrastructure as code tool that created it:
 
 * **Terraform:** delete the role using the [terraform destroy](https://www.terraform.io/cli/commands/destroy) command.
 * **CloudFormation:** delete the CloudFormation stack using the [AWS Management Console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html) or the AWS CLI's [delete-stack command](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudformation/delete-stack.html).
+
+## Remove the Google service account
+
+Removing an environment does not remove the Google service account. To fully remove Snyk's access to your Google project, delete the Google service account using the [Google Cloud console](https://cloud.google.com/iam/docs/creating-managing-service-accounts#iam-service-accounts-delete-console) or [CLI](https://cloud.google.com/iam/docs/creating-managing-service-accounts#iam-service-accounts-delete-gcloud).
