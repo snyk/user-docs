@@ -4,7 +4,7 @@
 
 Snyk is an AWS Partner Network \(APN\) [Advanced Technology Partner](https://aws.amazon.com/partners/find/partnerdetails/?n=Snyk&id=0010L00001kXlYOQA0).
 
-**Snyk: Developer-First Security** is available in the AWS Marketplace. 👉 [Get it now!](https://aws.amazon.com/marketplace/pp/B085VGM85Q?qid=1590102009179&sr=0-1&ref_=srh_res_product_title)
+**Snyk: Developer-First Security** is available in the AWS Marketplace. 👉 [Get it now!](https://aws.amazon.com/marketplace/pp/prodview-nw2naibu6b2ks)
 
 ## Learn more
 
