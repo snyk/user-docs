@@ -23,9 +23,10 @@ Snyk Code currently supports the following programming languages:
 * **Python**
 * **Ruby**
 * **TypeScript**
+* **Apex**
 
 {% hint style="info" %}
-Beta support exists for Kotlin. Contact us for more details or with your further needs.
+Beta support exists for Kotlin and Scala. Contact Snyk for more details or with your further needs.
 {% endhint %}
 
 ## Language type and framework support
