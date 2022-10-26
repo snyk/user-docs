@@ -1,6 +1,6 @@
 # View Snyk Cloud Environments
 
-To view all [Snyk Cloud](./) and [Snyk Integrated IaC](../snyk-infrastructure-as-code/integrated-infrastructure-as-code/) Environments in an Organization, navigate to **Organization Settings (cog icon) > Cloud environments**.
+To view all [Snyk Cloud](./) and [Snyk Integrated IaC](../snyk-infrastructure-as-code/integrated-infrastructure-as-code/) Environments in an Organization, navigate to your Organization's **Settings (cog icon) > Cloud environments**.
 
 The cloud environments table displays the following information for each environment:
 
