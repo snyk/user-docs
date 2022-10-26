@@ -4,7 +4,7 @@ Snyk Code is powered by a semantic, AI-based analysis Engine, and it can analyze
 
 ### **Hardcoded secrets**
 
-Snyk Code includes secret detection capabilities that scan and highlight secrets like keys, credentials, PII, and sensitive information in your source code. Unlike tools that use entropy checks or regular expressions, Snyk Code uses machine learning to improve the accuracy of detecting secrets and minimizing the occurrence of false positives.
+Snyk Code includes secret detection capabilities that scan and highlight secrets like keys, credentials, and sensitive information in your source code. Unlike tools that use entropy checks or regular expressions, Snyk Code uses machine learning to improve the accuracy of detecting secrets and minimizing the occurrence of false positives.
 
 ![](<../../../../.gitbook/assets/Introduction - AI Engine - Hardcoded secrets.png>)
 
