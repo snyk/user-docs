@@ -61,7 +61,7 @@ For more details about these attributes, see [Step 3. Snyk SSO settings](./#step
 
 ## Step 2. Enter SAML Attributes
 
-After the identity provider is set up to acknowledge Snyk, obtain the following information from your identity provider and organization.
+After the identity provider is set up to acknowledge Snyk, obtain the following information from your identity provider.
 
 Click **create a connection** to establish trust on the service provider side:
 

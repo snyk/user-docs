@@ -58,7 +58,7 @@ If your user attributes do not match, note that the Snyk configuration for your 
 
 ## SAML information to provide to Snyk
 
-Obtain the following information from your identity provider and organization. Provide this information to Snyk to establish trust on the service-provider side.
+Obtain the following information from your identity provider. Provide this information to Snyk to establish trust on the service-provider side.
 
 | Information                   | Description                                                                                                                     |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -82,7 +82,7 @@ When using OIDC for the connection between your Identity provider and Snyk, add 
 
 ## OIDC information to provide to Snyk
 
-Obtain the following information from your identity provider and organization. Provide this information to Snyk to establish trust on the service-provider side.
+Obtain the following information from your identity provider. Provide this information to Snyk to establish trust on the service-provider side.
 
 | Information                  | Description                                                                               |
 | ---------------------------- | ----------------------------------------------------------------------------------------- |
@@ -106,7 +106,7 @@ Use your Azure AD name when authenticating rather than the SCM user account name
 
 ## Azure AD information to provide to Snyk
 
-Obtain the following information from your identity provider and organization. Provide this information to Snyk to establish trust on the service-provider side.
+Obtain the following information from your identity provider. Provide this information to Snyk to establish trust on the service-provider side.
 
 | Information               | Description                                                                                                                 |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -128,7 +128,7 @@ When using Active Directory Federation Service (ADFS) for the connection between
 
 ## ADFS information to provide to Snyk
 
-Obtain the following information from your Identity provider and organization. Provide this information to Snyk in order to establish trust on the service-provider side.
+Obtain the following information from your Identity provider. Provide this information to Snyk in order to establish trust on the service-provider side.
 
 * ADFS URL or Federation Metadata XML file
 
