@@ -47,7 +47,7 @@ Snyk recommends the third image, as it was last marked as a custom base image.
 * The current logic is: for the same image family (same repo and name), Snyk will recommend the newest image based on the **semantic versioning of the image tag**. If Snyk is unable to find a [standard semantic versioning schema](https://semver.org/) in the tag, the recommendation will be the last image that was marked as a custom base image (timestamp of marking. See the User flows→ Platform team section that follows.
 * A Dockerfile must be specified (see the instructions that follow) in the project in order to receive custom base image recommendations
 * All custom base image recommendations are considered as minor upgrades, regardless of the image tag.
-* Automatic fix PRs are supported for custom base image recommendations.
+* Automatic fix PRs are supported for custom base image recommendations - If the user is not using the latest version of the base image, then immediately after image import Snyk automatically issues a fix pull request against your Dockerfile, to upgrade to the latest custom base image version available.
 * In order for Snyk to identify a project is using a custom base image, the same custom base image must be imported and marked as such in the project's settings. &#x20;
 
 ## **How to enable the feature**&#x20;
