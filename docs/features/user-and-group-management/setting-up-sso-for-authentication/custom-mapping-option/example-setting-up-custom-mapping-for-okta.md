@@ -2,11 +2,7 @@
 
 The following shows two different configurations you can use as the [Custom Mapping Option](./) for **roles** for Okta.
 
-## Summary diagram of custom mapping for Okta
-
-<figure><img src="https://lh5.googleusercontent.com/cuQWU3uMkUSK-SZrKSdwt2V_vuaJ61bBqpDuTktQWmZ4vNcPsS-jfWsqiMg2lSmGIcPu9MKUJcaYqx4UbImYyWvPbUeqKuU0q4DQRssKnomHovfBnVuPWlwvyaQOrrworlAn_nMw" alt="Summary diagram of custom mapping for Okta"><figcaption><p>Summary diagram of custom mapping for Okta</p></figcaption></figure>
-
-## Configuration 1, custom mapping for Okta
+## Option 1: Assign Custom Mapping with user roles
 
 In this configuration:
 
@@ -76,7 +72,7 @@ When you are set up with groups and users:
 
 Example: `"roles": [ "snyk-groupadmin", "snyk-customer-facing-tools-admin", "snyk-internal-tools-admin" ]`
 
-## Configuration 2:
+## Option 2: Assign Custom Mapping with Groups
 
 In this configuration:
 
