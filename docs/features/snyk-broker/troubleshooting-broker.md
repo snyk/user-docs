@@ -6,9 +6,7 @@ For more comprehensive troubleshooting information, see [Broker Troubleshooting 
 
 ## Basic Broker Troubleshooting
 
-### Monitoring
-
-#### Healthcheck
+### Monitoring: Healthcheck
 
 The Broker exposes an endpoint at `/healthcheck`, which can be used to monitor the health of the running application. This endpoint responds with status code `200 OK` when the internal request is successful, and returns `{ ok: true }` in the response body.
 
@@ -16,7 +14,7 @@ In the case of the Broker client, this endpoint also reports on the status of th
 
 Can be tested by connecting to the broker and running [http://localhost:8000/healthcheck](http://localhost:8000/healthcheck) (default settings)
 
-**Systemcheck**
+### **Monitoring: Systemcheck**
 
 The Broker client exposes an endpoint at `/systemcheck`, which can be used to validate the brokered service (Git or the like) connectivity and credentials. This endpoint causes the Broker client to make a request to a preconfigured URL, and report on the success of the request. The supported configuration is:
 
@@ -73,7 +71,9 @@ The best way to troubleshoot the broker with the code agent is to understand the
 
 The vast majority of problems with the code agent are due to traffic being interrupted at one of these points.
 
-Like described Standalone Broker, in order to troubleshoot the code agent, you need to generate logs. Do this by attempting to import a repository.
+#### Troubleshooting code agent
+
+As for Standalone Broker, in order to troubleshoot the code agent, you need to generate logs. Do this by attempting to import a repository.
 
 1. Ensure that the broker is functioning correctly and you can list the repositories. If this does not work, please review the Standalone Broker troubleshooting steps.
 2. If after attempting to import a repo, you see an error message Bundle Creation Failed, review the logs of the containers.
@@ -81,7 +81,13 @@ Like described Standalone Broker, in order to troubleshoot the code agent, you n
 4. Look for the string `snykgit` . This is the API call from the broker container to the code agent container. If you get anything other than a 200 code, then there is some problem with the communication between the broker and the code agent. Ensure you have the proper flags set in the docker run command. Also ensure you have set up the docker network
 5. Review the logs of the code agent by running `docker logs <container id>`
 
-#### Common problems with the code agent:
+#### Common problems with the code agent
 
 * Communication with the on-premise Git is not functioning. There will be a 404 error on the attempt to clone the code If there is any reference to SSL - This can be caused by a self-signed certificate. Ensure you have either mounted the correct certificate, or use the flag `-e NODE_TLS_REJECT_UNAUTHORIZED=0`
 * If you see the message: `“Uploaded Repo”`, the code agent and broker are configured correctly. If there are still errors on the import log, contact Snyk Support.
+
+### Containers go down when you log out of host
+
+If your containers go down, along with the Broker ecosystem, when you detach from their host, run the following to ensure the containers stay online when you log out:
+
+`loginctl enable-linger $(whoami)`
