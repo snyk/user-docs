@@ -364,16 +364,6 @@
   **Help Links:**
 
   
-### [SNYK-OSSI-OSPSS-2002](#snyk-ossi-ospss-2002-project-snapshot-already-exists) - Project snapshot already exists
-  Please check that this snapshot has not already been created and try again. If you continue to experience issues please contact support.
-
-  **HTTP Status:** [409](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409)
-
-  **Exit Code:** N/A
-
-  **Help Links:**
-
-  
 ### [SNYK-OSSI-OSPSS-3001](#snyk-ossi-ospss-3001-failed-to-store-snapshot-data) - Failed to store snapshot data
   Please check your inputs and try again. If you continue to experience issues please contact support.
 
@@ -396,4 +386,4 @@
   
 ---
 
-Genererated at 2022-10-25T13:51:15.460Z
+Genererated at 2022-10-27T10:03:15.415Z
