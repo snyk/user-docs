@@ -333,6 +333,58 @@
 
   
 ---
+# OpenSourceProjectIssues
+### [SNYK-OSSI-OSPI-1001](#snyk-ossi-ospi-1001-invalid-request) - Invalid request
+  Please check the body of your request and try again.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OSSI-OSPI-1002](#snyk-ossi-ospi-1002-unable-to-return-valid-api-response) - Unable to return valid API response
+  This should resolve, however please contact support if you continue to experience issues.
+
+  **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OSSI-OSPI-2001](#snyk-ossi-ospi-2001-failed-to-process-data) - Failed to process data
+  This should resolve, however please contact support if you continue to experience issues.
+
+  **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OSSI-OSPI-3001](#snyk-ossi-ospi-3001-failed-to-store-issue-data) - Failed to store issue data
+  Please check your inputs and try again. If you continue to experience issues please contact support.
+
+  **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OSSI-OSPI-4001](#snyk-ossi-ospi-4001-internal-server-error) - Internal server error
+  This issue is unexpected, and the service should recover quickly. If not, please contact support.
+
+  **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+---
 # Open Source Project Snapshots
 ### [SNYK-OSSI-OSPSS-1001](#snyk-ossi-ospss-1001-invalid-request) - Invalid request
   Please check the body of your request and try again.
@@ -386,4 +438,4 @@
   
 ---
 
-Genererated at 2022-10-27T10:03:15.415Z
+Genererated at 2022-10-27T10:46:02.370Z
