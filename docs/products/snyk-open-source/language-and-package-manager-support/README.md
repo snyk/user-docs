@@ -14,7 +14,7 @@ For supported languages in other Snyk products, see [Snyk languages and integrat
 | [Elixir](snyk-for-elixir.md)                                         | hex                                                                                   |
 | [Go](snyk-for-golang.md)                                             | Go Modules, dep, govendor                                                             |
 | [Java and Kotlin](snyk-for-java-gradle-maven.md)                     | Gradle, Maven                                                                         |
-| [JavaScript](snyk-for-javascript.md)                                 | npm, yarn                                                                             |
+| [JavaScript](snyk-for-javascript/)                                   | npm, yarn                                                                             |
 | [PHP](snyk-for-php.md)                                               | Composer                                                                              |
 | [Python](snyk-for-python.md)                                         | pip, Poetry, pipenv                                                                   |
 | [Ruby](snyk-for-ruby.md)                                             | Bundler                                                                               |

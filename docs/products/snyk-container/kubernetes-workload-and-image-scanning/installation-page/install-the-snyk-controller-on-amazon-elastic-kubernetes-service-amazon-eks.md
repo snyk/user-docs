@@ -48,14 +48,14 @@ kubectl create secret generic snyk-monitor \
 
 5\. Attach **policies** or **roles** for nodes
 
-<mark style="color:purple;">**Option 1:**</mark> <mark style="color:purple;"></mark><mark style="color:purple;">Attach policies for worker nodes</mark>
+<mark style="color:purple;">**Option 1:**</mark> <mark style="color:purple;">Attach policies for worker nodes</mark>
 
-a. attach the **NodeInstanceRole** policy from [Using Amazon ECR Images with Amazon EKS](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR\_on\_EKS.html)&#x20;
+a. attach the **NodeInstanceRole** policy from [Using Amazon ECR Images with Amazon EKS](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR\_on\_EKS.html)
 
-b.  attach **AmazonEC2ContainerRegistryReadOnly** policy to your EKS worker nodes. \
+b. attach **AmazonEC2ContainerRegistryReadOnly** policy to your EKS worker nodes.\
 The Snyk Controller should now be able to pull private images when running on those worker nodes.
 
-<mark style="color:purple;">**Option 2:**</mark> <mark style="color:purple;"></mark><mark style="color:purple;">Creating an EKS node role for your Node Group</mark>
+<mark style="color:purple;">**Option 2:**</mark> <mark style="color:purple;">Creating an EKS node role for your Node Group</mark>
 
 a. Follow the instructions on [Amazon EKS node IAM role](https://docs.aws.amazon.com/eks/latest/userguide/create-node-role.html), check your existing node role. Make sure you have attached the policy **AmazonEC2ContainerRegistryReadOnly.**
 
@@ -88,6 +88,6 @@ After creating the IAM role for your Service Account, you can install your Snyk 
 ```
 helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
              --namespace snyk-monitor \
+             --set clusterName=<ENTER_CLUSTER_NAME> \
              -f <newFile>.yaml
 ```
-
