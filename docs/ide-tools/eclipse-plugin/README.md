@@ -80,7 +80,11 @@ Restart the Eclipse instance:
 
 ![Restart Eclipse](<../../.gitbook/assets/Screenshot 2022-05-13 at 09.16.37.png>)
 
-Once Eclipse is restarted, navigate to **Eclipse Preferences** to ensure that **Snyk** now appears in the list:
+Once Eclipse is restarted, the Snyk configuration wizard runs; follow the instructions to set up your Snyk API:
+
+<figure><img src="../../.gitbook/assets/eclipseSnykWizard.png" alt="Snyk configuration wizard"><figcaption><p>Snyk configuration wizard</p></figcaption></figure>
+
+Once the Snyk is configured, navigate to **Eclipse Preferences** to ensure that **Snyk** now appears in the list:
 
 ![Eclipse preferences showing Snyk.](<../../.gitbook/assets/Screenshot 2022-05-17 at 16.36.07.png>)
 
