@@ -116,7 +116,9 @@ Obtain the following information from your identity provider. Provide this infor
 
 ## Use ADFS as SSO
 
-When using Active Directory Federation Service (ADFS) for the connection between your Identity provider and Snyk, add the Realm Identifier, a Callback URL, and a Signing certificate in your Identity provider to establish trust with Snyk.
+When using Active Directory Federation Service (ADFS) for the connection between your Identity provider and Snyk, add the Realm Identifier, a Callback URL, and a Signing certificate in your Identity provider to establish trust with Snyk. For more information see [Connecting Auth0 to an ADFS server (video)](https://www.youtube.com/watch?v=ICW6sGP9ht8).
+
+
 
 | **Information**                         | **Description**                                                                                                                  |
 | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
