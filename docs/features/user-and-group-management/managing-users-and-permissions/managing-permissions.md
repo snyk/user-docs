@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Our free subscription plan allows you to send up to 200 pending invitations every 7 days, and only has administrator roles. Enterprise plans have administrators and collaborators.\
+Our free subscription plan allows you to send up to 200 pending invitations every 7 days, and only has administrator roles. Enterprise plans have administrators, collaborators and custom roles.\
 See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
@@ -22,26 +22,28 @@ To change roles for a user:
 
 **Group Member** role does not directly provide the user any rights. They need to be granted an organization role or promoted as Group Admins.
 
-| User permissions                                                                                    | Group Administrator | Organization Administrator | Organization Collaborator |
-| --------------------------------------------------------------------------------------------------- | ------------------- | -------------------------- | ------------------------- |
-| Add/delete projects                                                                                 | x                   | x                          | x                         |
-| Update project with new snapshot                                                                    | x                   | x                          | x                         |
-| Open fix PR's                                                                                       | x                   | x                          | x                         |
-| Delete snapshot from project history                                                                | x                   | x                          | x                         |
-| Edit [project attributes](../../../snyk-web-ui/introduction-to-snyk-projects/project-attributes.md) | x                   | x                          |                           |
-| Invite/remove team members                                                                          | x                   | x                          |                           |
-| Change team members’ roles                                                                          | x                   | x                          |                           |
-| Create an org level service account\*                                                               | x                   | x                          |                           |
-| Manage plans and billing for this organization                                                      | x                   | x                          |                           |
-| Leave organization                                                                                  | x                   | x                          | x                         |
-| Delete organization                                                                                 | x                   | x                          |                           |
-| View organization reporting                                                                         | x                   | x                          | x                         |
-| Create an organization                                                                              | x                   |                            |                           |
-| Create group level Service accounts\*                                                               | x                   |                            |                           |
-| Set a License policy\*                                                                              | x                   |                            |                           |
-| Set a Security policy\*\*                                                                           | x                   |                            |                           |
-| Set global notifications preferences                                                                | x                   |                            |                           |
-| Access to the account overall reporting                                                             | x                   |                            |                           |
+| User permissions                                                                                    | Group Administrator | Group Viewer | Organization Administrator | Organization Collaborator |
+| --------------------------------------------------------------------------------------------------- | ------------------- | ------------ | -------------------------- | ------------------------- |
+| Add/delete projects                                                                                 | x                   |              | x                          | x                         |
+| Update project with new snapshot                                                                    | x                   |              | x                          | x                         |
+| Open fix PR's                                                                                       | x                   |              | x                          | x                         |
+| Delete snapshot from project history                                                                | x                   |              | x                          | x                         |
+| Edit [project attributes](../../../snyk-web-ui/introduction-to-snyk-projects/project-attributes.md) | x                   |              | x                          |                           |
+| View team members                                                                                   | x                   | x            | x                          | x                         |
+| Invite/remove team members                                                                          | x                   |              | x                          |                           |
+| Change team members’ roles                                                                          | x                   |              | x                          |                           |
+| Create an org level service account\*                                                               | x                   |              | x                          |                           |
+| Manage plans and billing for this organization                                                      | x                   |              | x                          |                           |
+| Leave organization                                                                                  | x                   |              | x                          | x                         |
+| Delete organization                                                                                 | x                   |              | x                          |                           |
+| View organization reporting                                                                         | x                   | x            | x                          | x                         |
+| View organisations                                                                                  | x                   | x            | x                          | x                         |
+| Create an organization                                                                              | x                   |              |                            |                           |
+| Create group level Service accounts\*                                                               | x                   |              |                            |                           |
+| Set a License policy\*                                                                              | x                   |              |                            |                           |
+| Set a Security policy\*\*                                                                           | x                   |              |                            |                           |
+| Set global notifications preferences                                                                | x                   |              |                            |                           |
+| <p>Access to the account overall reporting<br>(Group level reports)</p>                             | x                   | x            |                            |                           |
 
 (\*) Only in paid accounts\
 (\*\*) Only in Enterprise Plan
