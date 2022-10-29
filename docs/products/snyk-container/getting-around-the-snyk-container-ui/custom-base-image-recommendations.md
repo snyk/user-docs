@@ -93,19 +93,19 @@ Next, get recommendations for the image.
 
 ### **SemVer recommendation logic**
 
-As an example, when scanning the following images and marking them (in the following order) as custom base images:
+As an example, when scanning the following images and marking them (in the following order) as custom base images, the SemVer logic is:
 
 1. `developer-java/oracle-jre-rhel7/8e32:1.8.0`
 2. `developer-java/oracle-jre-rhel7/8e32:1.9.2`
 3. `developer-java/oracle-jre-rhel7/8e32:1.7.0`
 
-Snyk will recommend the second image, as it is the newest image **based on the semantic versioning of the tag**.
+Snyk recommends the second image, as it is the newest image **based on the semantic versioning of the tag**.
 
-If Snyk cannot find a [standard semantic versioning schema](https://semver.org/) in the tag, the recommendation is the last image that was marked as a custom base image (in this example, the third image), as determined in the following logic.
+If Snyk cannot find a [standard semantic versioning schema](https://semver.org/) in the tag, the recommendation is the last image that was marked as a custom base image (in this example, the third image), as determined in the Timestamp recommendation logix.
 
 ### **Timestamp recommendation logic**
 
-As an example, when scanning the following images and marking them (in the following order) as custom base images through the Snyk interface, under project settings:
+As an example, when scanning the following images and marking them (in the following order) as custom base images through the Snyk interface, under project settings, the timestamp logic is:
 
 1. `developer-java/oracle-jre-rhel7/8e32:1.8.0_2021021008`
 2. `developer-java/oracle-jre-rhel7/8e32:1.8.0_2021022508`
