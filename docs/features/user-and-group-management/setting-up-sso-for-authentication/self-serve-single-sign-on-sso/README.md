@@ -91,9 +91,9 @@ Choose the new user’s role (see [Choose a provisioning option](../choose-a-pro
 
 ![Choose user's role](<../../../../.gitbook/assets/Screenshot 2022-02-24 at 15.28.30.png>)
 
-The **Profile attributes** values are used to map the user's SAML payload data, to ensure that Snyk receives the proper email, name, and userName. It should be the exact keys from the raw json from SAML payload.
+The **Profile attributes** values are used to map the user’s SAML payload data to ensure that Snyk receives the proper email, name, and userName.
 
-The values will be auto-populated by the system as **nameIdAttributes.value**.
+Initially the values are auto-populated by the system as **nameIdAttributes.value**. Replace these values with the exact key names sent to Snyk in the raw JSON within the SAML payload.
 
 {% hint style="info" %}
 Snyk suggests that you consult your SSO administrator and determine how the email address, name (a display name, First name + Last Name), and username (a unique identifier) are represented when the identity provider is configured as described in [Step 1. Configure your identity provider](./#step-1.-configure-your-identity-provider).
