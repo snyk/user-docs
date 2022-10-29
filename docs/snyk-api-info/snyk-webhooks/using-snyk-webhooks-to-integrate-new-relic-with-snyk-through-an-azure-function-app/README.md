@@ -11,4 +11,4 @@ Examples of such correlations are:
 
 To set up the integration between Snyk and New Relic, follow the steps on these pages. Begin with [Create an Azure Function App](create-an-azure-function-app.md).
 
-If you have **problems** setting up or using the Snyk Webhook, **contact** your Solution Engineer or Technical Success Manager for help.
+If you have **problems** setting up or using the Snyk Webhook, **contact** your Solutions Engineer or Technical Success Manager for help.
