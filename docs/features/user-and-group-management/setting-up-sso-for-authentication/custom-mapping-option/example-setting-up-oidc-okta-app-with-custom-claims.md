@@ -56,7 +56,7 @@
    5.  Include in: Set the scope that will be passed to Snyk\
 
 
-       ![Edit claim to set attributes](<../../../../.gitbook/assets/Untitled (2).png>)
+       ![Edit claim to set attributes](<../../../../.gitbook/assets/Untitled (1).png>)
 
 
 
