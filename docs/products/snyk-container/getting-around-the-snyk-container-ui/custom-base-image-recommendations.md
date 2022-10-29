@@ -12,33 +12,6 @@ Customers often maintain their own internal, customized base images, built on to
 
 Using the custom base image recommendation feature, Snyk can recommend an image upgrade from a pool of the customer’s internal images. This allows teams to be notified of newer and more secure versions of their internal base images.
 
-## **Case study**
-
-1. Your company's platform team, responsible for creating and maintaining custom base images for the organization, scans and marks images in Snyk as custom base images.
-2. Your company's application teams, using those pre-built custom base images and adding additional layers on top of it for their applications, can get recommendations for upgrading to a newer internal version.
-
-### **SemVer recommendation logic**
-
-As an example, when scanning the following images and marking them (in the following order) as custom base images:
-
-1. `developer-java/oracle-jre-rhel7/8e32:1.8.0`
-2. `developer-java/oracle-jre-rhel7/8e32:1.9.2`
-3. `developer-java/oracle-jre-rhel7/8e32:1.7.0`
-
-Snyk will recommend the second image, as it is the newest image **based on the semantic versioning of the tag**.
-
-If Snyk cannot find a [standard semantic versioning schema](https://semver.org/) in the tag, the recommendation is the last image that was marked as a custom base image (in this example, the third image), as determined in the following logic.
-
-### **Timestamp recommendation logic**
-
-As an example, when scanning the following images and marking them (in the following order) as custom base images through the Snyk interface, under project settings:
-
-1. `developer-java/oracle-jre-rhel7/8e32:1.8.0_2021021008`
-2. `developer-java/oracle-jre-rhel7/8e32:1.8.0_2021022508`
-3. `developer-java/oracle-jre-rhel7/8e32:1.8.0_2021031708`
-
-Snyk recommends the third image, as it was last marked as a custom base image.
-
 ## **Notes**
 
 * To use the Custom Base Image Recommendations feature, Snyk needs to enable it for each **organization** that wants to be able to mark images as custom base images (for example, the platform team).
@@ -111,3 +84,30 @@ Next, get recommendations for the image:
 1. Marking an image as a custom base image is supported only through the UI, and not through the API/CLI.
 2. Custom base image recommendations will not appear when scanning an image without attaching the Dockerfile to the project.
 3. The image’s registry is ignored when giving recommendations for custom base images. Images with the same repository but different registries will be treated as coming from the same registry (the current base image’s registry) in showing recommendations and fix PRs.
+
+## **Case study**
+
+1. Your company's platform team, responsible for creating and maintaining custom base images for the organization, scans and marks images in Snyk as custom base images.
+2. Your company's application teams, using those pre-built custom base images and adding additional layers on top of it for their applications, can get recommendations for upgrading to a newer internal version.
+
+### **SemVer recommendation logic**
+
+As an example, when scanning the following images and marking them (in the following order) as custom base images:
+
+1. `developer-java/oracle-jre-rhel7/8e32:1.8.0`
+2. `developer-java/oracle-jre-rhel7/8e32:1.9.2`
+3. `developer-java/oracle-jre-rhel7/8e32:1.7.0`
+
+Snyk will recommend the second image, as it is the newest image **based on the semantic versioning of the tag**.
+
+If Snyk cannot find a [standard semantic versioning schema](https://semver.org/) in the tag, the recommendation is the last image that was marked as a custom base image (in this example, the third image), as determined in the following logic.
+
+### **Timestamp recommendation logic**
+
+As an example, when scanning the following images and marking them (in the following order) as custom base images through the Snyk interface, under project settings:
+
+1. `developer-java/oracle-jre-rhel7/8e32:1.8.0_2021021008`
+2. `developer-java/oracle-jre-rhel7/8e32:1.8.0_2021022508`
+3. `developer-java/oracle-jre-rhel7/8e32:1.8.0_2021031708`
+
+Snyk recommends the third image, as it was last marked as a custom base image.
