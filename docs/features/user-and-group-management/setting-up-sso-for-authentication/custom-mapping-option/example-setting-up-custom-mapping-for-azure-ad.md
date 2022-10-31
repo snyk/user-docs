@@ -65,13 +65,13 @@ Prerequisites for this configuration type:
     <figure><img src="../../../../.gitbook/assets/image (2).png" alt="Create app role with details"><figcaption><p>Create app role with details</p></figcaption></figure>
 4.  Go into Azure AD and select your Enterprise Application.
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (2).png" alt="Enterprise Application"><figcaption><p>Enterprise Application</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3).png" alt="Enterprise Application"><figcaption><p>Enterprise Application</p></figcaption></figure>
 5.  Select Users and groups; then Add user/group.
 
     <figure><img src="../../../../.gitbook/assets/image (4).png" alt="Users and groups, Add user/group"><figcaption><p>Users and groups, Add user/group</p></figcaption></figure>
 6.  Select Users and groups, then Select a role and finally Assign.
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>
 7.  Repeat for all required groups and roles that should be assigned. Then verify that the list looks similar to this.
 
-    <figure><img src="../../../../.gitbook/assets/image (6).png" alt="Users and group list"><figcaption><p>Users and group list</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt="Users and group list"><figcaption><p>Users and group list</p></figcaption></figure>

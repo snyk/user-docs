@@ -40,7 +40,7 @@ This step is done by the team that is responsible for creating and maintaining c
 4. Mark the project as a custom base image.
    1.  Go to the **Settings** page for the project.
 
-       <figure><img src="../../../.gitbook/assets/image (97).png" alt="Navigate to Settings page for the project"><figcaption><p>Navigate to Settings page for the project</p></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (188) (1).png" alt="Navigate to Settings page for the project"><figcaption><p>Navigate to Settings page for the project</p></figcaption></figure>
    2. Under **Custom Base Image Recommendation**, select **Treat as custom base image**.
    3. Click **Update image status**.
 5. Mark whether the image should be eligible for recommendations.
@@ -50,7 +50,7 @@ This step is done by the team that is responsible for creating and maintaining c
 
 ### Receiving custom base image recommendations
 
-This step is done by the applications team responsible for using pre-built custom base images and adding additional layers on top of it for their applications.
+This step is done by the applications team responsible for using pre-built custom base images and adding additional layers on top of the pre-built images for their applications.
 
 First, import an image to a new Snyk project. Check that the project is in the same **Group** as the custom images. You can import an image from the CLI or the Web UI.
 
@@ -83,13 +83,13 @@ Next, get recommendations for the image.
 ## Known limitations
 
 * Marking an image as a custom base image is supported only through the UI, and not through the API and CLI.
-* Custom base image recommendations will not appear when scanning an image without attaching the Dockerfile to the project.
+* Custom base image recommendations will not appear when scanning an image unless the user attaches the Dockerfile to the project.
 * The image’s registry is ignored when recommendations are given for custom base images. Images with the same repository but different registries are treated as coming from the same registry (the current base image’s registry) in showing recommendations and fix PRs.
 
 ## **Case study for Custom Base Image Recommendations**
 
 1. Your company's platform team, responsible for creating and maintaining custom base images for the organization, scans and marks images in Snyk as custom base images.
-2. Your company's application teams, using those pre-built custom base images and adding additional layers on top of it for their applications, can get recommendations for upgrading to a newer internal version.
+2. Your company's application teams, using those pre-built custom base images and adding additional layers on top of the pre-built images for their applications, can get recommendations for upgrading to a newer internal version.
 
 ### **SemVer recommendation logic**
 

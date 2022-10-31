@@ -4,7 +4,7 @@
 
 You have the option of deploying the Snyk controller for Amazon EKS as an official [AWS Quick Start](https://aws.amazon.com/quickstart/architecture/eks-snyk/). This option eliminates the need for manual configuration. Deploying this Quick Start with default parameters into an existing Amazon EKS cluster builds the following environment.
 
-![Snyk AWS Quick Start environment](../../../../.gitbook/assets/architecture.png)
+![Snyk AWS Quick Start environment](<../../../../.gitbook/assets/architecture (1).png>)
 
 There are three deployment options to match most common use cases. These are as follows:
 

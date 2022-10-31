@@ -20,7 +20,7 @@ For details in addition to the information provided on this page, see the [Googl
     <figure><img src="../../../../.gitbook/assets/4.png" alt="Download signing certificate"><figcaption><p>Download signing certificate</p></figcaption></figure>
 5.  Navigate to the Snyk portal, login and from the drop down at the top left select **GROUP OVERVIEW**.
 
-    <figure><img src="../../../../.gitbook/assets/5.png" alt="Open group view in Snyk"><figcaption><p>Open group view in Snyk</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/1 (1) (1).png" alt="Open group view in Snyk"><figcaption><p>Open group view in Snyk</p></figcaption></figure>
 6.  Click on **SSO**, scroll down to step 2, and paste the Google SSO URL from step 4 into **Sign in URL** and the certificate in your text editor into **X509 signing certificate**. \
     Add the domain name(s) you are configuring this connection for in **Email domains and subdomains that need SSO access**.\
     Save your modifications

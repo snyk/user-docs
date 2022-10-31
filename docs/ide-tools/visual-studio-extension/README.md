@@ -50,7 +50,7 @@ Search for _Snyk_ and select **Download** to download the Snyk Security - Code a
 
 Once installed, use Snyk through the **Extensions > Snyk** menu (on Visual Studio versions older than 2019, Snyk is part of the top menu bar).
 
-![](<../../.gitbook/assets/image (351) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (351) (1) (1).png>)
 
 You can also open the Snyk tool window using **View > Other Windows > Snyk**_._
 
