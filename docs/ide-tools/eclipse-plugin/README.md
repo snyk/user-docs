@@ -80,7 +80,9 @@ Restart the Eclipse instance:
 
 ![Restart Eclipse](<../../.gitbook/assets/Screenshot 2022-05-13 at 09.16.37.png>)
 
-Once Eclipse is restarted, the Snyk configuration wizard runs; follow the instructions to set up your Snyk API:
+Once Eclipse is restarted, the Snyk Wizard should run; this will setup your Snyk API endpoint and authentication token:
+
+Once the Snyk configuration wizard runs; follow the instructions to set up your Snyk API:
 
 <figure><img src="../../.gitbook/assets/eclipseSnykWizard (1).png" alt="Snyk configuration wizard"><figcaption><p>Snyk configuration wizard</p></figcaption></figure>
 
