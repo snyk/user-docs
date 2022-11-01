@@ -147,6 +147,8 @@ API v1 [Provision a user to the organization](https://snyk.docs.apiary.io/#refer
 ## API v1 Projects
 
 SEE also:\
+API v1 Import projects: [Identify and import new repositories only](scenarios-for-using-snyk-api.md#identify-and-import-new-repositories-only)
+
 API v1 Issues (Reporting API): [Find all projects affected by a vulnerability](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#find-all-projects-affected-by-a-vulnerability)
 
 API v1 Issues (Reporting API): [Bulk ignore issues](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#bulk-ignore-issues)
@@ -206,7 +208,13 @@ Scenario: [Identify-and-import-new-repos](https://github.com/snyk-playground/cx-
 
 API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects)
 
-### API v1 Webhooks
+## API v1 Users
+
+SEE: [Provision users to Orgs via API](../features/user-and-group-management/managing-users-and-permissions/provision-users-to-orgs-via-api.md)
+
+## API v1 Webhooks
 
 SEE:\
 API v1 Integrations: [Rotate or change your broker token for any reason](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#rotate-or-change-your-broker-token-for-any-reason)
+
+[Snyk Webhooks](snyk-webhooks/)
