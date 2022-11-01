@@ -89,7 +89,7 @@ These are some of the explicitly supported frameworks for JavaScript; those are 
 These are some of the explicitly supported frameworks for JavaScript; those are in addition to the general support for many frameworks.
 {% endhint %}
 
-* **.NET framework**: .NET is an open source developer platform, created by Microsoft and used to build a variety of application types. While .NET supports different languages, Snyk Code supports .NET using the C# interface.
+* **.NET framework**: .NET is an open source developer platform, created by Microsoft and used to build a variety of application types. While .NET supports different languages, Snyk Code supports .NET using the C# interface. **Note:** .NET 6 is not yet supported.
 * **ASP.NET (version 4.x)**: ASP.NET is a free and open source framework to build web apps and services using .NET. Snyk Code supports version 4.x.
 * **.NET Core**: Microsoft created .NET Core to make the .NET framework cross-platform and enable a number of scenarios. The .NET framework and .NET Core share many components and code can be exchanged. (Microsoft [provides guidance](https://docs.microsoft.com/en-us/dotnet/standard/choosing-core-framework-server) when to choose which)
 
