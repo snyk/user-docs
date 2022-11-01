@@ -49,8 +49,6 @@ When authenticating with Snyk, users have the option to copy the authentication 
 
 For Linux and Unix users, this requires that the `xclip` or `xsel` utility be installed.
 
-## Support and feedback
+## Support&#x20;
 
 If you need help, submit a [request](https://support.snyk.io/hc/en-us/requests/new) to Snyk Support.
-
-Snyk continuously strives to improve the Snyk plugins experience. If you would you like to share your feedback about the Snyk Visual Studio extension, [schedule a meeting](https://calendly.com/snyk-georgi/45min?month=2022-01).

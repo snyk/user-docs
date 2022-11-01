@@ -61,8 +61,6 @@ Install using the IDE plugins library:
 
 Continue with the steps on the JetBrains [configuration](https://docs.snyk.io/ide-tools/jetbrains-plugins/configuration-environment-variables-and-proxy-for-the-jetbrains-plugins) page.
 
-## Support and feedback
+## Support
 
 If you need help, submit a [request](https://support.snyk.io/hc/en-us/requests/new) to Snyk Support.
-
-Snyk continuously strives to improve the plugins experience. If you would you like to share your feedback about the Snyk Eclipse plugin [schedule a meeting](https://calendly.com/snyk-georgi/45min?month=2022-01).

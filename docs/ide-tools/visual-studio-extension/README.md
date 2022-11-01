@@ -60,8 +60,6 @@ Once the tool window opens, wait while the Snyk extension downloads the latest S
 
 After you install the extension and the CLI you must authenticate. You can use the **Connect Visual Studio to Snyk** link. For more information and additional ways to authenticate see [Visual Studio extension authentication](https://docs.snyk.io/ide-tools/visual-studio-extension/visual-studio-extension-authentication).
 
-## Support and feedback
+## Support
 
 If you need help, submit a [request](https://support.snyk.io/hc/en-us/requests/new) to Snyk Support.
-
-Snyk continuously strives to improve the Snyk plugins experience. If you would you like to share your feedback about the Snyk Visual Studio extension, [schedule a meeting](https://calendly.com/snyk-georgi/45min?month=2022-01).

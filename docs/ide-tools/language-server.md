@@ -289,3 +289,7 @@ end
 ```
 
 ![Snyk Code findings displayed in Neovim](<../.gitbook/assets/image (219).png>)
+
+## Support
+
+If you need help, submit a [request](https://support.snyk.io/hc/en-us/requests/new) to Snyk Support.
