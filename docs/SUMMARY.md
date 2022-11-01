@@ -105,6 +105,7 @@
     * [Get a list of fixed issues using Snyk API](snyk-api-info/using-snyk-api/get-a-list-of-fixed-issues-using-snyk-api.md)
     * [Issues information for Snyk products in Snyk APIs](snyk-api-info/using-snyk-api/issues-information-for-snyk-products-in-snyk-apis.md)
     * [Snyk API v1 Project issue paths endpoints](snyk-api-info/using-snyk-api/snyk-api-v1-path-endpoint-information.md)
+    * [Links for pagination in Snyk REST API](snyk-api-info/using-snyk-api/links-for-pagination-in-snyk-rest-api.md)
     * [Org identification and projects in Snyk APIs](snyk-api-info/using-snyk-api/org-identification-and-projects-in-snyk-apis.md)
     * [How to use Postman for Snyk REST API](snyk-api-info/using-snyk-api/how-to-use-postman-for-snyk-rest-api.md)
     * [Postman and Snyk API v1](snyk-api-info/using-snyk-api/postman-and-snyk-api.md)

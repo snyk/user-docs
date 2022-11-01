@@ -8,6 +8,7 @@ This group of pages provides detailed information about aspects of using the Sny
 * [Get a list of **fixed issues** using Snyk API](get-a-list-of-fixed-issues-using-snyk-api.md)
 * [**Issues** information for Snyk products in Snyk APIs](issues-information-for-snyk-products-in-snyk-apis.md)
 * [Snyk API v1 Project **issue paths** endpoints](snyk-api-v1-path-endpoint-information.md)
+* [**Links** for pagination in Snyk REST API](links-for-pagination-in-snyk-rest-api.md)
 * [**Org identification** and projects in the Snyk API](org-identification-and-projects-in-snyk-apis.md)
 * [How to use **Postman** for Snyk REST API](how-to-use-postman-for-snyk-rest-api.md)
 * [**Postman** and Snyk API v1](postman-and-snyk-api.md)
