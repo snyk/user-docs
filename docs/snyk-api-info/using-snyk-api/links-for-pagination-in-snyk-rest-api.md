@@ -45,7 +45,7 @@ Ijo4MDEsImlkIjoiNzAzOTI2NjQ0In0&version=2022-04-
  -H "Authorization: Token <my-service-account-token>" 
 ```
 
-The results are in [code-results-page2,json](links-for-pagination-in-snyk-rest-api.md#code-results-page2.json). The results end with two links to go back to “page 1” or go to page 3 (forward to see the next 10 vulnerabilities):
+The results are in [code-results-page2.json](links-for-pagination-in-snyk-rest-api.md#code-results-page2.json). The results end with two links to go back to “page 1” or go to page 3 (forward to see the next 10 vulnerabilities):
 
 ```
 "links": {
