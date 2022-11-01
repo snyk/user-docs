@@ -1,5 +1,13 @@
 # Snyk User Documentation
 
+{% hint style="warning" %}
+**OPENSSL: Critical Vulnerability Disclosure**
+
+A critical vulnerability in OpenSSL is being disclosed on Tuesday, November 1.&#x20;
+
+To learn more about the vulnerability and how to prepare for it, [read this Snyk blog post](https://snyk.io/blog/new-openssl-critical-vulnerability/).
+{% endhint %}
+
 {% hint style="info" %}
 See [Snyk user hub](https://snyk.io/user-hub/) for a full list of knowledge resources.
 {% endhint %}
