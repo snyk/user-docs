@@ -28,16 +28,13 @@ An example follows of setting up an Okta SAML application and connecting this to
         <figure><img src="../../../../.gitbook/assets/5 (2).png" alt="Add Okta attribute statements"><figcaption><p>Add Okta attribute statements</p></figcaption></figure>
 
     Now click **Next** and enter feedback details if desired or move to the next step.
-7.  Open your Okta application list again, click on your newly created application and the **Sign on**  tab. Scroll down and download the SHA-2 certificate through the **Actions** drop down.
-
-    <figure><img src="../../../../.gitbook/assets/6 (2).png" alt="Download Okta signing certificate"><figcaption><p>Download Okta signing certificate</p></figcaption></figure>
-8. To the right of the page, click on **View SAML setup instructions** then from the page that opens, copy the **Identity Provider Single Sign-On URL** and the **X.509 certificate**.
-9.  Go back to the previous page/tab and move to the **Assignments** tab. Click on **Assign** and choose users and/or groups according to your needs.
+7. Open your Okta application list again and click on your newly created application and the **Sign on**  tab. To the right of the page, click on **View SAML setup instructions** then from the page that opens, copy the **Identity Provider Single Sign-On URL** and the **X.509 certificate**.
+8.  Go back to the previous page/tab and move to the **Assignments** tab. Click on **Assign** and choose users and/or groups according to your needs.
 
     <figure><img src="../../../../.gitbook/assets/7 (3).png" alt="Assign the SSO application"><figcaption><p>Assign the SSO application</p></figcaption></figure>
-10. Go back to the Snyk portal, scroll to step 2 and enter the details from step 9.
+9.  Go back to the Snyk portal, scroll to step 2 and enter the details from step 7.
 
     <figure><img src="../../../../.gitbook/assets/8.png" alt="Snyk SSO step 2"><figcaption><p>Snyk SSO step 2</p></figcaption></figure>
-11. Scroll to step 3 and refer to [step 3](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/self-serve-single-sign-on-sso#step-3.-snyk-sso-settings) of the Snyk self serve SSO guide for how new users should be treated when signing in and choose the option you would like to use: **Group member, Org collaborator**, or **Org admin**. Finally, enter the profile attributes as you configured them in Okta and click **Save changes** and verify you can log in, either with the direct URL at the top of step 3 or by going to the [generic SSO login](https://app.snyk.io/login/sso).
+10. Scroll to step 3 and refer to [step 3](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/self-serve-single-sign-on-sso#step-3.-snyk-sso-settings) of the Snyk self serve SSO guide for how new users should be treated when signing in and choose the option you would like to use: **Group member, Org collaborator**, or **Org admin**. Finally, enter the profile attributes as you configured them in Okta and click **Save changes** and verify you can log in, either with the direct URL at the top of step 3 or by going to the [generic SSO login](https://app.snyk.io/login/sso).
 
     <figure><img src="../../../../.gitbook/assets/9 (3).png" alt=""><figcaption></figcaption></figure>
