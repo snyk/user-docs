@@ -29,7 +29,7 @@ An example follows of setting up an Okta SAML application and connecting this to
 
     Now click **Next** and enter feedback details if desired or go to the next step.
 7. Open your Okta application list again and click on your newly created application and the **Sign on**  tab. To the right of the page, click on **View SAML setup instructions** then from the page that opens, copy the **Identity Provider Single Sign-On URL** and the **X.509 certificate**.
-8.  Go back to the previous page/tab and go to the **Assignments** tab. Click on **Assign** and choose users, groups, or both according to your needs.
+8.  Go back to the previous page and go to the **Assignments** tab. Click on **Assign** and choose users, groups, or both according to your needs.
 
     <figure><img src="../../../../.gitbook/assets/7 (3).png" alt="Assign the SSO application"><figcaption><p>Assign the SSO application</p></figcaption></figure>
 9.  Go back to the Snyk portal, scroll to step 2, and enter the details from step 7.
