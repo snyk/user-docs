@@ -37,7 +37,7 @@ The `.snyk` file can be created in a number of ways:
 
 ```
  # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
- version: v1.22.1
+ version: v1.25.0
 ```
 
 ## Syntax
@@ -53,7 +53,7 @@ The `language-settings:` value is the Python version you are currently using. Se
 The `ignore:` is an ignore rule in the form of
 
 ```
-Ignore:
+ignore:
   snyk-vulnid:
     - path to library using > seperator :
       reason: 'text string'
