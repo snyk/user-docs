@@ -162,7 +162,7 @@ For example, for projects imported via Git:
 
 ```
 language-settings:
-python: '3.7.2'
+  python: '3.7.2'
 ```
 
 This example tells Snyk to use a recent version of Python 3, but Snyk does not use the exact minor and patch version specified.
