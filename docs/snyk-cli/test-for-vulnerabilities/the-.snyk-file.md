@@ -107,7 +107,7 @@ Manually modify the `.snyk` file to set `language-settings:` for the project to 
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
 version: v1.22.1
 language-settings: 
-python: "2.7"
+  python: "2.7"
 ```
 
 Manually modify the `.snyk` file to set `language-settings:` for the project to Python 3.6.2:
@@ -116,7 +116,7 @@ Manually modify the `.snyk` file to set `language-settings:` for the project to 
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
 version: v1.22.1
 language-settings: 
-python: "3.6.2"
+  python: "3.6.2"
 ```
 
 **Note:** When you include the `.snyk` file in your code repository and the `language-settings:` value is set, then when you run code repository scans you gain the advantage of creating project-level Python settings.
