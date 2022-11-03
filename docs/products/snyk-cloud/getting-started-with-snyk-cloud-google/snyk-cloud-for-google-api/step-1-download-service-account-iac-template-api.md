@@ -4,7 +4,7 @@ Before you can create a Snyk Cloud Environment, you must download an infrastruct
 
 The template also enables a set of [Google service APIs](https://cloud.google.com/service-usage/docs/enabled-service) for your Google Cloud project. This ensures that Snyk Cloud can utilize the necessary APIs to scan your project's resources.
 
-You will use this IaC template to provision the role in [Step 2: Create the Google service account.](step-2-create-the-google-service-account-api.md)
+You will use this IaC template to provision the role in [Step 2: Create the Google service account (API)](step-2-create-the-google-service-account-api.md).
 
 ## Retrieve the IaC template
 
@@ -75,24 +75,6 @@ This will place the properly-formatted template into the file `snyk_google_iac_t
 1. Copy the contents of `data.attributes.data` from the API response, excluding the double quote at the very beginning and the very end of the value. You should end up with a long string starting with `variable \"project_id\"`.
 2. Paste the string into a tool such as [FreeFormatter.com](https://www.freeformatter.com/json-escape.html) to unescape the JSON.
 3. Save the unescaped Terraform output as a new `.tf` file.
-
-## Set Google Cloud project ID
-
-Snyk Cloud scans the Google Cloud project specified by the `project_id` [variable](https://www.terraform.io/language/values/variables) in the Terraform template. You must set the variable's value using one of the following methods:
-
-* **Set the `project_id` variable directly in the Terraform template.** On line 4 of the template, change the default value of the `project_id` variable to your project ID:
-
-```
-default = "your-project-id"
-```
-
-* **Set the `project_id` variable when you apply the Terraform.** In [Step 2](step-2-create-the-google-service-account-api.md), you will apply the Terraform to create the Google service account. At that time, you can use Terraform's [-var](https://www.terraform.io/language/values/variables#variables-on-the-command-line) option to set the `project_id` variable to your project ID:
-
-```
-terraform apply -var="project_id=your-project-id"
-```
-
-* **Use the `GOOGLE_PROJECT` environment variable.** See Terraform's [documentation.](https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider\_reference#full-reference)
 
 ## What's next?
 

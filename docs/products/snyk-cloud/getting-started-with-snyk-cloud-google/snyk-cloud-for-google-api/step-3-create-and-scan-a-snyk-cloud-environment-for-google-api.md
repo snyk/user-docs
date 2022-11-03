@@ -86,6 +86,10 @@ To check if your scan is finished, see [Check if the scan is finished](https://d
 
 To re-scan an environment, see [Scan a Snyk Cloud Environment](https://docs.snyk.io/products/snyk-cloud/scan-a-snyk-cloud-environment).
 
+{% hint style="info" %}
+It can take Google 60 seconds or more to create your service account. If you try to create an environment immediately after you create a service account, and you receive a "could not validate credentials" error, wait at least 60 seconds and try again.
+{% endhint %}
+
 ## What's next?
 
 You can now view misconfiguration issues in the API or Snyk Web UI. See [Snyk Cloud issues](https://docs.snyk.io/products/snyk-cloud/snyk-cloud-issues) for more information.
