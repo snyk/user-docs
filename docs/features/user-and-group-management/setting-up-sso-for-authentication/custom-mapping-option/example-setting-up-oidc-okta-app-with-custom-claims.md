@@ -95,7 +95,7 @@ Value: Add your attribute, appsuser.roles in the example that follows\
 
 When you are finished, select **Save**.
 
-<figure><img src="../../../../.gitbook/assets/Untitled (2).png" alt="Example attributes for a claim"><figcaption><p>Example attributes for a claim</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Untitled (1).png" alt="Example attributes for a claim"><figcaption><p>Example attributes for a claim</p></figcaption></figure>
 
 
 

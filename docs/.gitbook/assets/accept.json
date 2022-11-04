@@ -801,6 +801,18 @@
       "origin": "https://${GITLAB}"
     },
     {
+      "//": "used to create Dockerfile",
+      "method": "POST",
+      "path": "/api/v4/projects/:project/repository/files*/*Dockerfile*",
+      "origin": "https://${GITLAB}"
+    },
+    {
+      "//": "used to create Dockerfile",
+      "method": "POST",
+      "path": "/api/v4/projects/:project/repository/files*%2F*Dockerfile*",
+      "origin": "https://${GITLAB}"
+    },
+    {
       "//": "used to create manifest file",
       "method": "POST",
       "path": "/api/v4/projects/:project/repository/files*/go.mod",
@@ -1023,6 +1035,18 @@
       "//": "used to update manifest file",
       "method": "PUT",
       "path": "/api/v4/projects/:project/repository/files*/Directory.Build.props",
+      "origin": "https://${GITLAB}"
+    },
+    {
+      "//": "used to update Dockerfile",
+      "method": "PUT",
+      "path": "/api/v4/projects/:project/repository/files*/*Dockerfile*",
+      "origin": "https://${GITLAB}"
+    },
+    {
+      "//": "used to update Dockerfile",
+      "method": "PUT",
+      "path": "/api/v4/projects/:project/repository/files*%2F*Dockerfile*",
       "origin": "https://${GITLAB}"
     },
     {

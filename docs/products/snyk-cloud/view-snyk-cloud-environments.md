@@ -13,7 +13,7 @@ The cloud environments table displays the following information for each environ
 
 ## Add an environment
 
-To add an environment, select the **Add environment** drop-down and select the cloud provider. Follow the steps in [Snyk Cloud for AWS: Web UI](getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-web-ui/) to create the environment.
+To add an environment, select the **Add environment** drop-down and select the cloud provider. Follow the steps in [Snyk Cloud for AWS: Web UI](getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-web-ui/) or [Snyk Cloud for Google: Web UI](getting-started-with-snyk-cloud-google/snyk-cloud-for-google-web-ui/) to create the environment.
 
 <figure><img src="../../.gitbook/assets/snyk-cloud-environments-page-add-env.png" alt="Add an environment in the Snyk Web UI"><figcaption><p>Add an environment in the Snyk Web UI</p></figcaption></figure>
 
@@ -30,6 +30,6 @@ To remove an environment:
 2. Select **Remove**.
 3. In the confirmation modal, select **Yes, remove**.
 
-<figure><img src="../../.gitbook/assets/snyk-cloud-environments-page-remove-env.png" alt="Remove an environment in the Snyk Web UI"><figcaption><p>Remove an environment in the Snyk Web UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-cloud-remove-env-ui.png" alt="Remove an environment in the Snyk Web UI"><figcaption><p>Remove an environment in the Snyk Web UI</p></figcaption></figure>
 
 You can also remove an environment using the [Snyk API](remove-a-snyk-cloud-environment.md#api).

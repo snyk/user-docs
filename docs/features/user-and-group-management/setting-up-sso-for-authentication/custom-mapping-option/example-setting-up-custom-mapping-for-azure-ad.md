@@ -68,22 +68,22 @@ Prerequisites for this configuration type:
 
 1.  In your app registration menu, select the name of your Enterprise Application.
 
-    <figure><img src="../../../../.gitbook/assets/image (336).png" alt="App registration, name of Enterprise Application"><figcaption><p>App registration, name of Enterprise Application</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image.png" alt="App registration, name of Enterprise Application"><figcaption><p>App registration, name of Enterprise Application</p></figcaption></figure>
 2.  Select App roles, then Create app role.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt="App roles, Create app role"><figcaption><p>App roles, Create app role</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1).png" alt="App roles, Create app role"><figcaption><p>App roles, Create app role</p></figcaption></figure>
 3.  Create an app role with details as needed.
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt="Create app role with details"><figcaption><p>Create app role with details</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2).png" alt="Create app role with details"><figcaption><p>Create app role with details</p></figcaption></figure>
 4.  Go into Azure AD and select your Enterprise Application.
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (3).png" alt="Enterprise Application"><figcaption><p>Enterprise Application</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (2).png" alt="Enterprise Application"><figcaption><p>Enterprise Application</p></figcaption></figure>
 5.  Select Users and groups; then Add user/group.
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt="Users and groups, Add user/group"><figcaption><p>Users and groups, Add user/group</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4).png" alt="Users and groups, Add user/group"><figcaption><p>Users and groups, Add user/group</p></figcaption></figure>
 6.  Select Users and groups, then Select a role and finally Assign.
 
     <figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>
 7.  Repeat for all required groups and roles that should be assigned. Then verify that the list looks similar to this.
 
-    <figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt="Users and group list"><figcaption><p>Users and group list</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6).png" alt="Users and group list"><figcaption><p>Users and group list</p></figcaption></figure>

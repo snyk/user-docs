@@ -20,7 +20,7 @@ Snyk Projects define the manifest files that Snyk scans for issues, with configu
 
 Projects are held in a Target, which is an external resource that Snyk has scanned, such as a code repository.
 
-<figure><img src="../.gitbook/assets/targets-projects_20sept2022.png" alt="Screenshot highlighting a project&#x27;s target inside the Snyk UI"><figcaption><p>Group by target applies filtering attributes at the Target level</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/targets-projects_20sept2022 (1).png" alt="Screenshot highlighting a project&#x27;s target inside the Snyk UI"><figcaption><p>Group by target applies filtering attributes at the Target level</p></figcaption></figure>
 
 ### Origins
 
