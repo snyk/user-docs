@@ -16,12 +16,13 @@ You can update a Snyk Cloud Environment using the following methods:
 
 To update an environment using the [Snyk Web UI](https://app.snyk.io):
 
-1.  In the **Actions** column, select the `...` icon for the environment you want to update.\
+1. Navigate to your Organization's **Settings (cog icon) > Cloud environments.**
+2. In the **Actions** column, select the `...` icon for the environment you want to update.
+3.  Select **Update**.\
 
 
     <figure><img src="../../.gitbook/assets/snyk-cloud-update-env-ui.png" alt="Select the ... icon to update an environment."><figcaption><p>Select the ... icon to update an environment.</p></figcaption></figure>
-2. Select **Update**.
-3.  In the **General** section, enter the updated environment name and/or credentials.
+4.  In the **General** section, enter the updated environment name and/or credentials.
 
     <div>
 
@@ -32,7 +33,7 @@ To update an environment using the [Snyk Web UI](https://app.snyk.io):
     <figure><img src="../../.gitbook/assets/snyk-cloud-update-google-env.png" alt="Example of updating a Google environment."><figcaption><p>Example of updating a Google environment.</p></figcaption></figure>
 
     </div>
-4. Select **Save changes**.
+5. Select **Save changes**.
 
 ## API
 
