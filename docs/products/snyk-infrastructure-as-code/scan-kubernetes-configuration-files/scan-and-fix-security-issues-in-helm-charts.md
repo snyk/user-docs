@@ -5,10 +5,11 @@ In addition to scanning Kubernetes configuration files for misconfigurations and
 ## Prerequisites
 
 * An administrator should [connect your organization](../scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess.md) with your preferred Git repository and enable detection of configuration files as described.
-* The repository should follow the [standard Chart directory structure](https://helm.sh/docs/topics/charts/#the-chart-file-structure).
-* We currently only support templating Helm charts using the default values file, `values.yaml`. If you want to scan particular configurations of Helm values, then the supported workflow is to template the chart outside of Snyk and scan the manifests as regular Kubernetes files.
+* The repository should follow the [standard Chart directory structure](https://helm.sh/docs/topics/charts/#the-chart-file-structure), however the `charts/` sub-directory is unsupported.
+* Snyk currently only supports templating Helm charts using the default values file, `values.yaml`.&#x20;
+  * If you want to scan particular configurations of Helm values, then the supported workflow is to template the chart outside of Snyk and scan the manifests as regular Kubernetes files.
   * Helm charts that cannot be templated from their default values file are currently unsupported.
-* Any chart dependencies must either be publicly downloadable from the configured Helm repository, or be found in the same git repository as the chart under test.
+* Any chart dependencies must be publicly downloadable from the configured Helm repository. Subcharts or non-publicly downloadable dependencies are currently unsupported, the supported workflow in these cases is to template the chart outside of Snyk and scan the manifests as regular Kubernetes files.
 
 ## Scan and fix your Charts
 
@@ -20,11 +21,11 @@ In addition to scanning Kubernetes configuration files for misconfigurations and
 4. Click the project link you're interested in, to view the scan results and to correct your configuration files accordingly.
    1. Projects that were created from external dependencies will also be scanned and issues shown.
 
-![](<../../../.gitbook/assets/image (316) (1).png>)
+![](<../../../.gitbook/assets/image (71) (2) (1).png>)
 
-## Testing custom Helm values configurations
+## Templating charts and scan Kubernetes manifests
 
-Sometimes, testing a chart using only the default values isn’t enough. Snyk does not currently support passing custom values into imports. This section is intended to offer guidance on how to template custom configurations outside of Snyk, and scan the resultant Kubernetes manifests.
+Sometimes, testing a chart using only the default values isn’t enough, or a dependency is either a subchart or not publicly downloadable. Snyk does not currently support these scenarios during imports. This section is intended to offer guidance on how to template custom configurations outside of Snyk, and scan the resultant Kubernetes manifests.
 
 You can use the Snyk CLI and Helm in conjunction:
 
