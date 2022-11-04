@@ -27,6 +27,8 @@ After the extension is installed, you can set the following configurations for t
   * **Code Quality**: configure if code quality analysis should run over your code.
   * **Open Source Security**: configure if security analysis should run over your open source dependencies.
 * **Severity**: set severity level to display in the analysis result tree.
+* **Crash Report**: send error reports to Snyk.
+* **Telemetry**: send usage statistics to Snyk.
 * **Advanced**
   * **Advanced mode**: toggle a panel to allow the user to manually control when the analysis should be run.
   * **Auto Scan Open Source Security**: run Snyk Open Source analysis in automatic mode.
@@ -35,6 +37,6 @@ After the extension is installed, you can set the following configurations for t
   * **Custom endpoint**: Specify the custom Snyk API endpoint for your organization. Use this field for the custom endpoint for Single Tenant setups as well instead of https://app.snyk.io.
   * **Automatic Dependency Management**  and **Cli Path**: Opt out of downloading the CLI through the plugin and thus use your own installation of the CLI.&#x20;
     * When **Automatic Dependency Management** is checked, the plugin will automatically download and keep the CLI updated.
-    *   When **Automatic Dependency Management** __ is checked __ and **Cli Path** contains a path, the plugin will use the provided CLI path. Use this option if downloading the CLI is not possible due to your network configuration (for example, due to firewall rules) and you need to obtain the CLI through other means.
+    *   When **Automatic Dependency Management** __ is checked __ and **Cli Path** contains a path, the plugin uses the provided CLI path. Use this option if downloading the CLI is not possible due to your network configuration (for example, due to firewall rules) and you need to obtain the CLI through other means.
 
-        <figure><img src="../../.gitbook/assets/Screenshot 2022-08-23 at 14.08.05.png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../.gitbook/assets/Screenshot 2022-08-23 at 14.08.05.png" alt="Automatic Dependency Management and CLI Path"><figcaption><p>Automatic Dependency Management and CLI Path</p></figcaption></figure>
