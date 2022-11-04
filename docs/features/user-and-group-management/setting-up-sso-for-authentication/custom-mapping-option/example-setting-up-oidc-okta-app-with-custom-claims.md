@@ -1,62 +1,101 @@
 # Example: Setting up OIDC Okta app with custom claims
 
-## Configuration - OIDC Okta
+The steps follow to configure an integration for OIDC Okta.
 
-1.  Create Okta OIDC app.
+## Create an Okta OIDC app
 
-    ![Create new app integration](../../../../.gitbook/assets/Pasted\_Image\_6\_30\_22\_\_5\_01\_PM.png)
+In Okta, select **Applications -> Applications -> OICD OpenID Connect**.
 
+<figure><img src="../../../../.gitbook/assets/Pasted_Image_6_30_22__5_01_PM.png" alt="Create a new app integration in Okta"><figcaption><p>Create a new app integration in Okta</p></figcaption></figure>
 
-2.  Fill in Redirect URI.\
-    ![Redirect URI](../../../../.gitbook/assets/Pasted\_Image\_6\_30\_22\_\_5\_10\_PM.png)\
-    Find the [OIDC information to provide to Snyk](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/set-up-snyk-single-sign-on-sso#oidc-information-to-provide-to-snyk). The information follows.
+## Enter the sign-in redirect URI
 
+<figure><img src="../../../../.gitbook/assets/Enter-redirect-URI-OIDC-Okta.png" alt="Enter the Sign-in redirect URL for the new web app integration"><figcaption><p>Enter the Sign-in redirect URL for the new web app integration</p></figcaption></figure>
 
-3.  Add Roles in Okta.\
-    a. Add OIDC claim at the user level.
+Find the [OIDC information to provide to Snyk](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/set-up-snyk-single-sign-on-sso#oidc-information-to-provide-to-snyk): Issuer URL, Client ID, Client Secret, Email domains and subdomains. The information follows \[\[where?]].
 
-    ![](../../../../.gitbook/assets/Pasted\_Image\_7\_14\_22\_\_12\_16\_PM.png)
+## Add Roles in Okta
 
-    ![OIDC claim at user level](../../../../.gitbook/assets/Pasted\_Image\_7\_14\_22\_\_12\_26\_PM.png)
+### Add OIDC claim at the user level
 
-    ![](../../../../.gitbook/assets/Pasted\_Image\_7\_14\_22\_\_12\_27\_PM.png)
+On the Okta main page, select **Directory -> People**.
 
+From the **Person & username list**, select a user.
 
+<figure><img src="../../../../.gitbook/assets/OIDC-claim-steps-1-2.png" alt="Select an Okat user"><figcaption><p>Select an Okat user</p></figcaption></figure>
 
-    b. Add OIDC claim at the group level.
+For the selected user, open the **Profile tab** and select **Edit**.
 
-    ![OICD claim at group level steps 1 and 2](../../../../.gitbook/assets/Pasted\_Image\_7\_11\_22\_\_6\_12\_PM.png)
+<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_14_22__12_26_PM.png" alt="Edit the profile of the selected user"><figcaption><p>Edit the profile of the selected user</p></figcaption></figure>
 
-    ![OICD claim at group level step 3](../../../../.gitbook/assets/Pasted\_Image\_7\_15\_22\_\_5\_23\_PM.png)
+Select **Add Another Role** and enter the name of that role and select it.
 
-    ![OIDC claim at group level step 4](../../../../.gitbook/assets/Pasted\_Image\_7\_15\_22\_\_5\_24\_PM.png)
+<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_14_22__12_27_PM.png" alt="Specify the role"><figcaption><p>Specify the role</p></figcaption></figure>
 
-    ![OIDC claim at group level step 5](../../../../.gitbook/assets/Pasted\_Image\_7\_15\_22\_\_5\_26\_PM.png)
+### Add OIDC claim at the group level
 
-    ![OIDC claim at group level step 6](../../../../.gitbook/assets/Pasted\_Image\_7\_15\_22\_\_5\_28\_PM.png)
+On the Okta main page, select **Security -> API**.
 
-    ![OIDC claim at group level step 7](../../../../.gitbook/assets/Pasted\_Image\_7\_15\_22\_\_5\_31\_PM.png)
+On the API tab, enter the Authentication Server, api://snyk.
 
-    ![OIDC claim at group level step 8](../../../../.gitbook/assets/Pasted\_Image\_7\_15\_22\_\_5\_32\_PM.png)
+<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_11_22__6_12_PM.png" alt="Enter the authentication server"><figcaption><p>Enter the authentication server</p></figcaption></figure>
 
-    ![OIDC claim at group level step 9](../../../../.gitbook/assets/Pasted\_Image\_7\_15\_22\_\_5\_35\_PM.png)
+On the Okta main page, select **Directory -> Groups -> Profile Editor**; in the Profile Editor, select the **Groups** tab.
 
-    ![OIDC claim at group level step 10](../../../../.gitbook/assets/Pasted\_Image\_7\_15\_22\_\_5\_36\_PM.png)
+<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_15_22__5_23_PM.png" alt="Navigate to the Groups tab in the Profile Editor"><figcaption><p>Navigate to the Groups tab in the Profile Editor</p></figcaption></figure>
 
-    ![OIDC claim at group level steps 11 and 12](<../../../../.gitbook/assets/Pasted\_Image\_7\_15\_22\_\_5\_36\_PM (1).png>)
-4.  Create a new claim.\
-    ![Create new claim](../../../../.gitbook/assets/Pasted\_Image\_7\_11\_22\_\_6\_19\_PM.png)
+On the **Profile Editor Groups** tab, enter the name of the Okta group.
 
+<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_15_22__5_24_PM.png" alt="Enter the name of the Okta group"><figcaption><p>Enter the name of the Okta group</p></figcaption></figure>
 
-5. Set attributes.
-   1. Name: roles
-   2. Include in token type: ID Token, Always
-   3. Value type: Expression
-   4. Value: Add your attribute
-   5.  Include in: Set the scope that will be passed to Snyk\
+Open the **Okta group** details and select **Add attribute**.
 
+<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_15_22__5_26_PM.png" alt="Select Add attribute for Okta group"><figcaption><p>Select Add attribute for Okta group</p></figcaption></figure>
 
-       ![Edit claim to set attributes](<../../../../.gitbook/assets/Untitled (1).png>)
+Enter the values for the group attributes, here **Data type**, string array; **Display name**, snyk-orgs; **Variable name**, snyk\_orgs; **Description**, List of the Snyk orgs and permissions for user.
+
+<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_15_22__5_28_PM.png" alt="Enter the values for the Group attribute"><figcaption><p>Enter the values for the Group attribute</p></figcaption></figure>
+
+From the Okta group details, select **Directory -> Groups**.
+
+<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_15_22__5_31_PM.png" alt="Select Directory -> Groups"><figcaption><p>Select Directory -> Groups</p></figcaption></figure>
+
+Select a group or **Add Group**.
+
+<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_15_22__5_32_PM.png" alt="Select a group or Add Group"><figcaption><p>Select a group or Add Group</p></figcaption></figure>
+
+On the Snyk Admin screen, select the **Profile** tab.
+
+<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_15_22__5_35_PM.png" alt="Select Profile tab on Snyk Admin screen"><figcaption><p>Select Profile tab on Snyk Admin screen</p></figcaption></figure>
+
+On the **Profile** tab, select **Edit**.
+
+<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_15_22__5_36_PM.png" alt="Select Edit on the Profile tab"><figcaption><p>Select Edit on the Profile tab</p></figcaption></figure>
+
+On the Profile tab select **Add Another** and for the **snyk\_orgs Attribute**, Enter a string.
+
+<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_15_22__5_36_PM (1).png" alt="Add snyk_orgs Attribute"><figcaption><p>Add snyk_orgs Attribute</p></figcaption></figure>
+
+## Create a new claim
+
+On the Okta main page, select **Security -> API**.&#x20;
+
+On the **default** page, select the **Claims** tab and on the tab, select **Add Claim**.
+
+<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_11_22__6_19_PM.png" alt="Create a new claim"><figcaption><p>Create a new claim</p></figcaption></figure>
+
+## Set attributes for the new claim
+
+On the **Edit Claim** page, enter the values for the attributes:\
+**Name**: roles\
+**Include in token type**: ID Token, Always\
+**Value type**: Expression\
+Value: Add your attribute, appsuser.roles in the example that follows\
+**Include in**: Select the scope that will be passed to Snyk. Any scope in the example that follows. You can also enter scopes.
+
+When you are finished, select **Save**.
+
+<figure><img src="../../../../.gitbook/assets/Untitled (2).png" alt="Example attributes for a claim"><figcaption><p>Example attributes for a claim</p></figcaption></figure>
 
 
 

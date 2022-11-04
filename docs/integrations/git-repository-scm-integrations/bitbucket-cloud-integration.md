@@ -25,7 +25,7 @@ Snyk's Bitbucket Cloud PAT integration lets you:
 
 1. To give Snyk access to your Bitbucket account, set up a dedicated service account in Bitbucket, with admin permissions. See the [Bitbucket documentation ](https://support.atlassian.com/bitbucket-cloud/docs/grant-access-to-a-workspace/)to learn more about adding users to a workspace.
 2. In Snyk, go to the **Integrations** page, open the **Bitbucket Cloud** card and configure the **Account credentials**.
-3. In the **Account credentials >** **Creating an app password** section in Snyk, use the link <img src="../../.gitbook/assets/image (439).png" alt="" data-size="line"> (**Create an App password**) to jump to your Bitbucket Cloud account.
+3. In the **Account credentials >** **Creating an app password** section in Snyk, use the link <img src="../../.gitbook/assets/image (365) (1).png" alt="" data-size="line"> (**Create an App password**) to jump to your Bitbucket Cloud account.
 4.  Follow the Bitbucket procedure to set up an account with the following permissions:
 
     * **Account: Email & Read**
@@ -52,7 +52,7 @@ After you add them, Snyk scans the selected repositories for dependency files in
 
 The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
-![](<../../.gitbook/assets/444 (2) (4) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/444 (2) (4) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (13).png>)
 
 ## Bitbucket integration features
 
@@ -68,7 +68,7 @@ Snyk produces advanced [security reports](https://docs.snyk.io/features/reports/
 
 The example below presents a project-level security report.&#x20;
 
-<figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022.png" alt=""><figcaption></figcaption></figure>
 
 ### Project monitoring and automatic fix Pull Requests
 
@@ -83,7 +83,7 @@ To review and adjust the automatic fix pull request settings:
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Cloud**, and click **Edit Settings**.
 2. Scroll to the **Automatic fix pull requests** section and configure the relevant options.
 
-![Modify the automatic fix pull requests](<../../.gitbook/assets/bitbucket\_cloud-auto\_fix\_prs\_30june2022 (1).png>)
+![Modify the automatic fix pull requests](<../../.gitbook/assets/bitbucket\_cloud-auto\_fix\_prs\_30june2022 (2) (1).png>)
 
 {% hint style="info" %}
 Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are not automatically assigned to the default reviewer set in your Bitbucket Cloud or Bitbucket Server account. More info on [Snyk automated pull requests](https://docs.snyk.io/products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities).
