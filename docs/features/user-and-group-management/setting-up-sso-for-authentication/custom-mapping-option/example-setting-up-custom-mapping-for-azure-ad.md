@@ -18,13 +18,19 @@ Once you have set up groups and users, follow these steps:
 
 1.  In your Snyk App in Azure AD, open the Single Sign On Settings: **Dashboard -> Enterprise Applications -> Snyk -> Single Sign On.**
 
-    <img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 8.22.43 AM.png" alt="Snyk App Azure AD single sign on settings" data-size="original">
+
+
+    <figure><img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 8.22.43 AM.png" alt=""><figcaption></figcaption></figure>
 2.  Edit Attributes and Claims.
 
-    <img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 8.26.20 AM.png" alt="Attributes and Claims" data-size="line">
+
+
+    <figure><img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 8.26.20 AM.png" alt=""><figcaption></figcaption></figure>
 3.  Add new Claim
 
-    <img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 8.28.37 AM.png" alt="Add new claim" data-size="original">
+
+
+    <figure><img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 8.28.37 AM.png" alt=""><figcaption></figcaption></figure>
 4.  Configure Attribute.
 
     <img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 8.32.50 AM.png" alt="Configure attribute" data-size="original">
@@ -32,10 +38,14 @@ Once you have set up groups and users, follow these steps:
     * **Name**: roles
     * Expand the Claim conditions section:
       * For each unique value, that is, unique combinations of security groups, you will need to create a new condition. As a reminder, each security group reflects a unique combination of organization membership and user role. **Order is important**. If you have more than one condition with the same group(s) included in 'scoped groups' the conditions will be evaluated top to bottom and the last value that includes the group(s) will be used. For this reason, It is suggested to have the conditions in increasing order of scoped groups.
-      * Set User type to Members\
-        ![Members user type](<../../../../.gitbook/assets/Screen Shot 2022-06-08 at 9.19.38 AM.png>)
-      * The scoped groups should be the security groups to which you are assigning one or more Org membership and user role combinations.\
-        ![Selected groups](<../../../../.gitbook/assets/select groups.png>)
+      *   Set User type to Members\
+
+
+          <figure><img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 9.19.38 AM.png" alt=""><figcaption></figcaption></figure>
+      *   The scoped groups should be the security groups to which you are assigning one or more Org membership and user role combinations.\
+
+
+          <figure><img src="../../../../.gitbook/assets/select groups.png" alt=""><figcaption></figcaption></figure>
       * Select Attribute as the Source
       *   Set the Value to the Snyk Org and user role slugs in the following format:\
           snyk-orgslug-role
@@ -44,7 +54,9 @@ Once you have set up groups and users, follow these steps:
           * There should be no spaces or capital letter(s) in the Org and user role slugs.
           * Do not include double quotes as Azure AD automatically adds them.
 
-          <img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 9.20.22 AM.png" alt="snyk-orgslug-role" data-size="original">
+
+
+          <figure><img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 9.20.22 AM.png" alt=""><figcaption></figcaption></figure>
       * Repeat for each claim condition.
 
 ## Configuration - App roles
@@ -56,22 +68,22 @@ Prerequisites for this configuration type:
 
 1.  In your app registration menu, select the name of your Enterprise Application.
 
-    <figure><img src="../../../../.gitbook/assets/image.png" alt="App registration, name of Enterprise Application"><figcaption><p>App registration, name of Enterprise Application</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (336).png" alt="App registration, name of Enterprise Application"><figcaption><p>App registration, name of Enterprise Application</p></figcaption></figure>
 2.  Select App roles, then Create app role.
 
-    <figure><img src="../../../../.gitbook/assets/image (1).png" alt="App roles, Create app role"><figcaption><p>App roles, Create app role</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt="App roles, Create app role"><figcaption><p>App roles, Create app role</p></figcaption></figure>
 3.  Create an app role with details as needed.
 
-    <figure><img src="../../../../.gitbook/assets/image (2).png" alt="Create app role with details"><figcaption><p>Create app role with details</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt="Create app role with details"><figcaption><p>Create app role with details</p></figcaption></figure>
 4.  Go into Azure AD and select your Enterprise Application.
 
-    <figure><img src="../../../../.gitbook/assets/image (3).png" alt="Enterprise Application"><figcaption><p>Enterprise Application</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (3).png" alt="Enterprise Application"><figcaption><p>Enterprise Application</p></figcaption></figure>
 5.  Select Users and groups; then Add user/group.
 
-    <figure><img src="../../../../.gitbook/assets/image (4).png" alt="Users and groups, Add user/group"><figcaption><p>Users and groups, Add user/group</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt="Users and groups, Add user/group"><figcaption><p>Users and groups, Add user/group</p></figcaption></figure>
 6.  Select Users and groups, then Select a role and finally Assign.
 
-    <figure><img src="../../../../.gitbook/assets/image (5).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>
 7.  Repeat for all required groups and roles that should be assigned. Then verify that the list looks similar to this.
 
     <figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt="Users and group list"><figcaption><p>Users and group list</p></figcaption></figure>
