@@ -31,33 +31,31 @@ Once you have set up groups and users, follow these steps:
 
 
     <figure><img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 8.28.37 AM.png" alt=""><figcaption></figcaption></figure>
-4.  Configure Attribute.
+4. Configure Attribute: enter the **Name**.
+5.  Configure Attribute: expand the **Claim conditions**.\
+    For each unique value, that is, unique combinations of security groups, create a new condition.\
+    Each security group reflects a unique combination of organization membership and user role.\
+    _**Order is important**._\
+    If you have more than one condition with the same group(s) included in **scoped groups** the conditions are evaluated top to bottom and the last value that includes the group(s) is used.\
+    For this reason, the recommendation is to enter the conditions in increasing order of scoped groups.
 
-    <img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 8.32.50 AM.png" alt="Configure attribute" data-size="original">
+    <figure><img src="../../../../.gitbook/assets/Name-Claim-conditions-section.png" alt=""><figcaption></figcaption></figure>
+6.  Set User type to Members.
 
-    * **Name**: roles
-    * Expand the Claim conditions section:
-      * For each unique value, that is, unique combinations of security groups, you will need to create a new condition. As a reminder, each security group reflects a unique combination of organization membership and user role. **Order is important**. If you have more than one condition with the same group(s) included in 'scoped groups' the conditions will be evaluated top to bottom and the last value that includes the group(s) will be used. For this reason, It is suggested to have the conditions in increasing order of scoped groups.
-      *   Set User type to Members\
+    <figure><img src="../../../../.gitbook/assets/User-type-to-members.png" alt=""><figcaption></figcaption></figure>
+7.  Specify the scoped groups.\
+    These are the security groups to which you are assigning one or more Org membership and user role combinations.
 
-
-          <figure><img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 9.19.38 AM.png" alt=""><figcaption></figcaption></figure>
-      *   The scoped groups should be the security groups to which you are assigning one or more Org membership and user role combinations.\
-
-
-          <figure><img src="../../../../.gitbook/assets/select groups.png" alt=""><figcaption></figcaption></figure>
-      * Select Attribute as the Source
-      *   Set the Value to the Snyk Org and user role slugs in the following format:\
-          snyk-orgslug-role
-
-          * For more than one, separate by comma.
-          * There should be no spaces or capital letter(s) in the Org and user role slugs.
-          * Do not include double quotes as Azure AD automatically adds them.
+    <figure><img src="../../../../.gitbook/assets/scoped-groups.png" alt=""><figcaption></figcaption></figure>
+8.  Select Attribute as the Source and set the Value to the Snyk Org and user role slugs in the following format: `snyk-orgslug-role`\
+    ``For more than one, separate by comma.\
+    Do not include spaces or capital letter(s) in the Org and user role slugs.\
+    Do not include double quotes as Azure AD automatically adds them.\
 
 
+    <figure><img src="../../../../.gitbook/assets/attribute-as-source.png" alt=""><figcaption></figcaption></figure>
 
-          <figure><img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 9.20.22 AM.png" alt=""><figcaption></figcaption></figure>
-      * Repeat for each claim condition.
+Repeat the steps for each Claim condition.
 
 ## Configuration - App roles
 
