@@ -589,6 +589,7 @@
   * [View Snyk Cloud resources](products/snyk-cloud/view-snyk-cloud-resources.md)
   * [Update a Snyk Cloud Environment](products/snyk-cloud/update-a-snyk-cloud-environment.md)
   * [Remove a Snyk Cloud Environment](products/snyk-cloud/remove-a-snyk-cloud-environment.md)
+  * [Find a Snyk Cloud Environment ID](products/snyk-cloud/find-a-snyk-cloud-environment-id.md)
   * [Supported AWS resources for Snyk Cloud](products/snyk-cloud/supported-aws-resources-for-snyk-cloud.md)
   * [Supported Google resources for Snyk Cloud](products/snyk-cloud/supported-google-resources-for-snyk-cloud.md)
   * [Managing Snyk Cloud rules](products/snyk-cloud/managing-snyk-cloud-rules.md)
