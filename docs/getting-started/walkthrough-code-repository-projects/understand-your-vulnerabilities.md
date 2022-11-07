@@ -15,7 +15,7 @@ Next, click on a Snyk Project in that list to see details of the vulnerabilities
 
 For example, for a code analysis scanned by Snyk Code:
 
-![](<../../.gitbook/assets/image (75) (1).png>)
+![](<../../.gitbook/assets/image (23) (2) (1) (1).png>)
 
 See [View project information](../../snyk-web-ui/introduction-to-snyk-projects/view-project-information.md) for more details.
 
@@ -23,7 +23,7 @@ See [View project information](../../snyk-web-ui/introduction-to-snyk-projects/v
 
 Now, look at the vulnerability information for each Snyk Project, provided in Issue Cards:
 
-![](<../../.gitbook/assets/image (13) (1).png>)
+![](<../../.gitbook/assets/image (16) (2) (1) (1) (1).png>)
 
 Again, there's a lot of information for you to understand, so take the time to understand how all of this information relates to your vulnerability, to help you decide on what fix actions to take.
 
@@ -40,11 +40,11 @@ Snyk provides detailed resources for more information about vulnerabilities, acc
 
 For Open Source and Container vulnerabilities, click on the Snyk vulnerability Identifier (on the right of the Severity Level) to access detailed [Snyk Vulnerability Database](../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md) information for that vulnerability, as defined by Snyk. For example:
 
-![](<../../.gitbook/assets/image (174) (1).png>)
+![](<../../.gitbook/assets/image (174) (1) (1) (1) (1).png>)
 
 For this example, click on the Snyk vulnerability Identifier to see how Hibernate core and its libraries are vulnerable to SQL injection:
 
-![](<../../.gitbook/assets/image (188) (1).png>)
+![](<../../.gitbook/assets/image (169) (1) (1) (1).png>)
 
 {% hint style="info" %}
 [Snyk Code](../../products/snyk-code/) and [Snyk IaC](../../products/snyk-infrastructure-as-code/) issue cards have separate information sets for these areas.
@@ -54,7 +54,7 @@ For this example, click on the Snyk vulnerability Identifier to see how Hibernat
 
 To research more about a vulnerability, click **Learn about this type of vulnerability** to access [Snyk Learn](https://learn.snyk.io/) security educational materials:
 
-![](<../../.gitbook/assets/image (441).png>)
+![](<../../.gitbook/assets/image (473).png>)
 
 For example, see [Snyk Learn SQL injection](https://learn.snyk.io/lessons/sql-injection/javascript/) for more details about this type of vulnerability.
 
@@ -80,11 +80,11 @@ See [Fixing vulnerabilities](broken-reference/) for more details
 
 Snyk uses the package manager of your application to build the dependency tree and display it in the **Dependencies** tab of the project view:
 
-![](<../../.gitbook/assets/image (321) (1).png>)
+![](<../../.gitbook/assets/image (269) (1) (1).png>)
 
-Click the file tree icon (![](<../../.gitbook/assets/image (377) (1).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
+Click the file tree icon (![](<../../.gitbook/assets/image (143).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
 
-![](../../.gitbook/assets/image23.png)
+![](<../../.gitbook/assets/image23 (1).png>)
 
 For example, the above screenshot shows a vulnerability based on the transitive dependency **qs@2.2.4**, brought in from the direct dependency **body-parser@ 1.9.0**.
 

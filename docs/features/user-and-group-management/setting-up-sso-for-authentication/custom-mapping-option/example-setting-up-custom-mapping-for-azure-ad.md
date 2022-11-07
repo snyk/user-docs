@@ -40,21 +40,21 @@ Once you have set up Groups and users, follow these steps:
     If you have more than one condition with the same group(s) included in **scoped groups** the conditions are evaluated top to bottom and the last value that includes the group(s) is used.\
     For this reason, the recommendation is to enter the conditions in increasing order of scoped groups.
 
-    <figure><img src="../../../../.gitbook/assets/Name-Claim-conditions-section.png" alt="Enter the Name and expand Claim conditions"><figcaption><p>Enter the Name and expand Claim conditions</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Name-Claim-conditions-section (1) (1).png" alt="Enter the Name and expand Claim conditions"><figcaption><p>Enter the Name and expand Claim conditions</p></figcaption></figure>
 6.  In the **Claim conditions**, set **User type** to **Members**.
 
-    <figure><img src="../../../../.gitbook/assets/User-type-to-members.png" alt="Set User type to Members"><figcaption><p>Set User type to Members</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 9.19.38 AM.png" alt="Set User type to Members"><figcaption><p>Set User type to Members</p></figcaption></figure>
 7.  Specify the scoped groups; in the example choose **Select groups**, search for SSO, and **Select** the groups found.\
     These are the security groups to which you are assigning one or more combinations of Org membership and user role.
 
-    <figure><img src="../../../../.gitbook/assets/scoped-groups.png" alt="Select the groups found"><figcaption><p>Select the groups found</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/select groups.png" alt="Select the groups found"><figcaption><p>Select the groups found</p></figcaption></figure>
 8.  In the **Claim conditions**, select **Attribute** as the **Source** and set the **Value** to the Snyk Org and user role slugs in the following format: `snyk-orgslug-role`\
     ``For more than one, separate by comma.\
     Do not include spaces or capital letter(s) in the Org and user role slugs.\
     Do not include double quotes as Azure AD automatically adds them.\
 
 
-    <figure><img src="../../../../.gitbook/assets/attribute-as-source.png" alt="Set Attribute as the Source"><figcaption><p>Set Attribute as the Source</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 9.20.22 AM.png" alt="Set Attribute as the Source"><figcaption><p>Set Attribute as the Source</p></figcaption></figure>
 
 **Note:** Repeat the steps for each Claim condition.
 
@@ -90,4 +90,4 @@ The following are the prerequisites for this configuration type:
     <figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>
 7.  Repeat for all required groups and roles that should be assigned. Then verify that the list looks similar to this.
 
-    <figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt="Users and group list"><figcaption><p>Users and group list</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (3).png" alt="Users and group list"><figcaption><p>Users and group list</p></figcaption></figure>

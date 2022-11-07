@@ -10,7 +10,7 @@ Developers now assemble applications with a combination of proprietary and open 
 
 A good security process secures each of these components where they are built and maintained. Snyk integrates into DevOps processes to work the with developers using the methods each prefers, while following and supporting industry best practices. Snyk integrates directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit.
 
-![](<../.gitbook/assets/image (383).png>)
+![](<../.gitbook/assets/image (162) (1) (1) (1) (1).png>)
 
 #### Using Snyk in your workflow:
 
