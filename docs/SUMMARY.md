@@ -593,6 +593,7 @@
   * [Supported AWS resources for Snyk Cloud](products/snyk-cloud/supported-aws-resources-for-snyk-cloud.md)
   * [Supported Google resources for Snyk Cloud](products/snyk-cloud/supported-google-resources-for-snyk-cloud.md)
   * [Managing Snyk Cloud rules](products/snyk-cloud/managing-snyk-cloud-rules.md)
+  * [Billable resources for Snyk Cloud](products/snyk-cloud/billable-resources-for-snyk-cloud.md)
 
 ## USING SNYK <a href="#features" id="features"></a>
 
