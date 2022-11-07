@@ -1,6 +1,6 @@
 # Annotated import
 
-{% hint style="info" %}
+{% hint style="warning" %}
 This feature is deprecated and we are not maintaining it anymore, for auto import/deletion of Kubernetes workload please follow instruction [here](automatic-import-deletion-of-kubernetes-workloads-projects/)
 {% endhint %}
 
