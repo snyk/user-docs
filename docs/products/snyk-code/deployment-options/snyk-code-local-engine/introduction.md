@@ -26,7 +26,7 @@ The core requirements to deploy the Snyk Code Local Engine are:
   * PR Checks and Snyk CLI support requires network access:
     * From your Kubernetes cluster to your Git and CI/CD tooling
     * From users running Snyk CLI to the Kubernetes cluster
-* **Helm** – version 3.5.0 or newer
+* **Helm** – version 3.8.0 or newer
 * **3 Nodes** – each one with the following:
   * **Disk:** 500 GB (>300GB Ephemeral Storage)
   * **CPU and RAM:**
