@@ -56,6 +56,7 @@
     * [The .snyk file](snyk-cli/test-for-vulnerabilities/the-.snyk-file.md)
     * [A .snyk policy file in a different directory from the manifest file](snyk-cli/test-for-vulnerabilities/using-a-.snyk-file-in-a-separate-directory-than-the-manifest-file.md)
     * [Failing of builds in Snyk CLI](snyk-cli/test-for-vulnerabilities/advanced-failing-of-builds-in-snyk-cli.md)
+    * [Invalid string length error when scanning Gradle projects](snyk-cli/test-for-vulnerabilities/invalid-string-length-error-when-scanning-gradle-projects.md)
     * [Automatic fixing with snyk fix](snyk-cli/test-for-vulnerabilities/automatic-remediation-with-snyk-fix.md)
     * [Ignore vulnerabilities using Snyk CLI](snyk-cli/test-for-vulnerabilities/ignore-vulnerabilities-using-snyk-cli.md)
     * [Scan all unmanaged JAR files](snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files.md)
