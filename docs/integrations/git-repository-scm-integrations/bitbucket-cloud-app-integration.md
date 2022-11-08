@@ -42,14 +42,14 @@ To install the Snyk App on your Bitbucket Cloud workspace, you must have **Admin
 
 
 
-    <figure><img src="../../.gitbook/assets/image (108).png" alt=""><figcaption><p>Allow Snyk to access to Bitbucket Cloud</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (19) (1) (1) (2) (1) (1).png" alt=""><figcaption><p>Allow Snyk to access to Bitbucket Cloud</p></figcaption></figure>
 3.  Grant access to your Snyk Organization when you're prompted.\
 
 
     <figure><img src="../../.gitbook/assets/bbc_snykaccess_6oct2022.png" alt=""><figcaption><p>Allow Bitbucket Cloud to access your Snyk Organization<br></p></figcaption></figure>
 
     After you allow access to the Snyk Organization, the Snyk **Organization Settings** page opens and confirms that you're connected to the Bitbucket Cloud App.\
-    ![](<../../.gitbook/assets/bb\_connected-28aug2022 (1).png>)
+    ![](../../.gitbook/assets/bb\_connected-28aug2022.png)
 
 Once Snyk is integrated with Bitbucket Cloud, you can see the new Snyk security tab in the repository page, and [import and explore the issues and vulnerabilities for your repository projects](../../getting-started/import-a-project.md), directly in Bitbucket!
 
@@ -91,7 +91,7 @@ Snyk produces advanced [security reports](https://docs.snyk.io/features/reports/
 
 The example below presents a project-level security report.&#x20;
 
-<figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022.png" alt=""><figcaption></figcaption></figure>
 
 Snyk scans your projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening [automated pull requests](https://docs.snyk.io/products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities) with fixes for your repositories.
 

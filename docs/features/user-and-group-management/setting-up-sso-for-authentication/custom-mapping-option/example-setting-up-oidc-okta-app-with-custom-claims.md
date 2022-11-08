@@ -10,7 +10,7 @@ In Okta, select **Applications -> Applications -> OICD OpenID Connect**.
 
 ## Enter the sign-in redirect URI
 
-<figure><img src="../../../../.gitbook/assets/Pasted_Image_6_30_22__5_10_PM.png" alt="Enter the Sign-in redirect URL for the new web app integration"><figcaption><p>Enter the Sign-in redirect URL for the new web app integration</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Enter-redirect-URI-OIDC-Okta.png" alt="Enter the Sign-in redirect URL for the new web app integration"><figcaption><p>Enter the Sign-in redirect URL for the new web app integration</p></figcaption></figure>
 
 Find the [OIDC information to provide to Snyk](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/set-up-snyk-single-sign-on-sso#oidc-information-to-provide-to-snyk): Issuer URL, Client ID, Client Secret, Email domains and subdomains. The information follows \[\[where?]].
 
@@ -22,7 +22,7 @@ On the Okta main page, select **Directory -> People**.
 
 From the **Person & username list**, select a user.
 
-<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_14_22__12_16_PM.png" alt="Select an Okat user"><figcaption><p>Select an Okat user</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/OIDC-claim-steps-1-2.png" alt="Select an Okat user"><figcaption><p>Select an Okat user</p></figcaption></figure>
 
 For the selected user, open the **Profile tab** and select **Edit**.
 
@@ -95,7 +95,7 @@ Value: Add your attribute, appsuser.roles in the example that follows\
 
 When you are finished, select **Save**.
 
-<figure><img src="../../../../.gitbook/assets/Untitled (2).png" alt="Example attributes for a claim"><figcaption><p>Example attributes for a claim</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Untitled (1).png" alt="Example attributes for a claim"><figcaption><p>Example attributes for a claim</p></figcaption></figure>
 
 
 

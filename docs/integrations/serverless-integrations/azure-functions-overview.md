@@ -22,7 +22,7 @@ To do this, in [your Integrations page](https://app.snyk.io/integrations), navig
 
 This will take you to a page where you'll be prompted to enter your Azure service principal credentials:
 
-![](<../../.gitbook/assets/image (29) (2).png>)
+![](<../../.gitbook/assets/image (29) (1).png>)
 
 Instructions for how to generate and locate your Azure service principal credentials are below.
 
@@ -73,7 +73,7 @@ You can also check the status directly on the Azure Functions integration settin
 
 If you are unable to connect, re-enter your account credentials to verify that they are correct:
 
-![](<../../.gitbook/assets/image (27) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (27) (1) (1) (1).png>)
 
 ## **Disable the Azure Functions integration**
 
@@ -81,7 +81,7 @@ If you decide to disable this integration for any reason, you can accomplish thi
 
 You need to find the specific integration you wish to deactivate in your list of integrations and click Edit settings. You are taken to a page that shows the current status of your integration, a place to update your credentials, specific to each integration (credentials, API key, Service Principal, or connection details), and a red box at the bottom to disconnect this integration, like in the example seen below:
 
-![](<../../.gitbook/assets/image (26) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (26) (1) (1) (1) (1).png>)
 
 If you choose to disconnect, your credentials will be removed from Snyk and any integration-specific projects we had been monitoring will be deactivated on Snyk.
 

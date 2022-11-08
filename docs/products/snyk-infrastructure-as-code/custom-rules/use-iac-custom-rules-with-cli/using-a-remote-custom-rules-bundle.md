@@ -78,7 +78,7 @@ In order to override the group's configurations, go to the organization's `Rules
 
 * Update the configurations to those customized for your organization, and click **Save changes**.
 
-![](<../../../../.gitbook/assets/image (83) (1) (1) (2).png>)
+![](<../../../../.gitbook/assets/image (196).png>)
 
 * Now, configurations on the group level will not override these customized settings for your organization.
 

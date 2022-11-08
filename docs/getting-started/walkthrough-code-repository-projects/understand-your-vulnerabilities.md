@@ -9,7 +9,7 @@ You have [viewed and understood scanned Projects](view-your-first-snyk-projects.
 
 First, open a target to see your Snyk Projects:
 
-![](<../../.gitbook/assets/image (218).png>)
+![](<../../.gitbook/assets/image (177).png>)
 
 Next, click on a Snyk Project in that list to see details of the vulnerabilities found in that Project.
 
@@ -54,7 +54,7 @@ For this example, click on the Snyk vulnerability Identifier to see how Hibernat
 
 To research more about a vulnerability, click **Learn about this type of vulnerability** to access [Snyk Learn](https://learn.snyk.io/) security educational materials:
 
-![](<../../.gitbook/assets/image (473).png>)
+![](<../../.gitbook/assets/image (119).png>)
 
 For example, see [Snyk Learn SQL injection](https://learn.snyk.io/lessons/sql-injection/javascript/) for more details about this type of vulnerability.
 
@@ -82,7 +82,7 @@ Snyk uses the package manager of your application to build the dependency tree a
 
 ![](<../../.gitbook/assets/image (269) (1) (1).png>)
 
-Click the file tree icon (![](<../../.gitbook/assets/image (143).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
+Click the file tree icon (![](<../../.gitbook/assets/image (201).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
 
 ![](<../../.gitbook/assets/image23 (1).png>)
 

@@ -2,13 +2,13 @@
 
 After you run the `snyk test` command in the CLI, the results of the Snyk Open Source test are presented in the terminal in one block that includes three sections, summary of the test findings, list of vulnerability issues detected, and descriptive information about the Snyk Project tested.
 
-![Snyk Open Source CLI test results](<../../../.gitbook/assets/image (107) (1) (1) (1) (1) (1).png>)
+![Snyk Open Source CLI test results](<../../../.gitbook/assets/image (107) (1) (1) (1).png>)
 
 ## Summary of test findings
 
 The summary of the test findings at the top shows the following:
 
-![Snyk Open Source CLI dependencies tested, issues and vulnerabilities found](<../../../.gitbook/assets/image (93).png>)
+![Snyk Open Source CLI dependencies tested, issues and vulnerabilities found](<../../../.gitbook/assets/image (92).png>)
 
 * The number of direct and transitive dependencies scanned
 * Total number of issues found across one or more paths

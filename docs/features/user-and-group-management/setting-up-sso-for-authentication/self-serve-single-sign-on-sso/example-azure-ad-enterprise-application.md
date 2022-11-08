@@ -13,16 +13,16 @@ An example follows of setting up an Azure AD Enterprise Application and connecti
     <figure><img src="../../../../.gitbook/assets/3 (1) (1).png" alt="Azure AD Default Directory"><figcaption><p>Azure AD Default Directory</p></figcaption></figure>
 4.  Click **Add** then **Enterprise application**.
 
-    <figure><img src="../../../../.gitbook/assets/4 (4).png" alt="Add Enterprise application"><figcaption><p>Add Enterprise application</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/4.png" alt="Add Enterprise application"><figcaption><p>Add Enterprise application</p></figcaption></figure>
 5.  Choose **Create your own application**.
 
-    <figure><img src="../../../../.gitbook/assets/5 (2) (1).png" alt="Create your own application"><figcaption><p>Create your own application</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/5.png" alt="Create your own application"><figcaption><p>Create your own application</p></figcaption></figure>
 6.  Name the application appropriately, for example, **Snyk-SSO**, making sure that **Integrate any other application you don't find in the gallery (Non-gallery)** is selected and then click **Create**.
 
     <figure><img src="../../../../.gitbook/assets/6 (1) (2).png" alt="Application name and integration"><figcaption><p>Application name and integration</p></figcaption></figure>
 7.  For the new app, select **Set up single sign on** and **Get started**.
 
-    <figure><img src="../../../../.gitbook/assets/7 (3).png" alt="Set up single sign-on, Get started"><figcaption><p>Set up single sign-on, Get started</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/7.png" alt="Set up single sign-on, Get started"><figcaption><p>Set up single sign-on, Get started</p></figcaption></figure>
 8.  Select **SAML** as the SSO method.
 
     <figure><img src="../../../../.gitbook/assets/8 (2).png" alt="Select SAML"><figcaption><p>Select SAML</p></figcaption></figure>
@@ -31,7 +31,7 @@ An example follows of setting up an Azure AD Enterprise Application and connecti
     <figure><img src="../../../../.gitbook/assets/9 (2) (1).png" alt="Edit basic SAML configuration"><figcaption><p>Edit basic SAML configuration</p></figcaption></figure>
 10. Add the Identity (Entity ID) and reply URL (Assertion Consumer Service URL) you obtained from Snyk and click **Save**; **** then close the edit window.
 
-    <figure><img src="../../../../.gitbook/assets/10 (1).png" alt="Entity ID and Assertion Consumer Service URL"><figcaption><p>Entity ID and Assertion Consumer Service URL</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/10 (2).png" alt="Entity ID and Assertion Consumer Service URL"><figcaption><p>Entity ID and Assertion Consumer Service URL</p></figcaption></figure>
 11. Scroll to find the login URL needed to finish the configuration in Snyk. Copy it and paste it into the SSO settings in the Snyk portal.
 
     <figure><img src="../../../../.gitbook/assets/11.png" alt="Login URL"><figcaption><p>Login URL</p></figcaption></figure>

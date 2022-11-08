@@ -63,7 +63,7 @@ Go to the **Projects** page in the Snyk UI, select **Add projects**, select the 
   After a project is imported, it is continuously checked for vulnerabilities.
 
 {% hint style="info" %}
-To confirm that a project was imported, go to the **Add project** import page for the integration. Imported projects are indicated by a ✔ next to the repo name: <img src="../../.gitbook/assets/image (256) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">
+To confirm that a project was imported, go to the **Add project** import page for the integration. Imported projects are indicated by a ✔ next to the repo name: <img src="../../.gitbook/assets/image (256) (1) (1) (1) (1).png" alt="" data-size="line">
 {% endhint %}
 
 See [Import a Project](../../getting-started/import-a-project.md) for more details.
@@ -88,7 +88,7 @@ Click the **Details** link to display the status of the Snyk check. The status o
   * Snyk couldn't read the manifest file
   * Snyk couldn't find the manifest file
 
-![](<../../.gitbook/assets/security-check (2).png>)
+![](../../.gitbook/assets/security-check.png)
 
 #### **Manage PR test settings**
 
@@ -153,11 +153,11 @@ We recommend that you exclude patches from the auto fix PRs, if your developers 
 
 You should ask your developers to consider the merge advice label that appears on the auto fix PRs:
 
-![](<../../.gitbook/assets/merge-advice-review-recommended (2) (2) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1 (32).png>)
+![](<../../.gitbook/assets/merge-advice-review-recommended (2) (2) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1  (1).png>)
 
-![](<../../.gitbook/assets/advice-green (1) (2) (2) (4) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (  (5).png>)
+![](<../../.gitbook/assets/advice-green (1) (2) (2) (4) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (  (7).png>)
 
-![](<../../.gitbook/assets/merge-advice (2) (2) (4) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (24).png>)
+![](<../../.gitbook/assets/merge-advice (2) (2) (4) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (  (4).png>)
 
 {% hint style="info" %}
 Snyk auto fix PRs are only generated for new issues.

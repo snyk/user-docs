@@ -561,6 +561,7 @@
   * [Integrated Infrastructure as Code](products/snyk-infrastructure-as-code/integrated-infrastructure-as-code/README.md)
     * [Getting started with Snyk IaC (Integrated)](products/snyk-infrastructure-as-code/integrated-infrastructure-as-code/getting-started-with-snyk-iac-integrated.md)
     * [Test your IaC files with Snyk CLI (Integrated IaC)](products/snyk-infrastructure-as-code/integrated-infrastructure-as-code/test-your-iac-files-with-snyk-cli-integrated-iac.md)
+    * [Adding cloud context to your IaC test](products/snyk-infrastructure-as-code/integrated-infrastructure-as-code/adding-cloud-context-to-your-iac-test.md)
 * [Snyk Cloud](products/snyk-cloud/README.md)
   * [Snyk Cloud concepts](products/snyk-cloud/snyk-cloud-concepts.md)
   * [Getting started with Snyk Cloud: AWS](products/snyk-cloud/getting-started-with-snyk-cloud-aws/README.md)
