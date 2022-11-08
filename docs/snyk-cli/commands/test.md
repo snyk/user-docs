@@ -161,6 +161,8 @@ Use to display the human-readable test output using stdout and at the same time 
 
 Example: `$ snyk test --json-file-output=vuln.json`
 
+If you see the invalid string length error, refer to [Invalid string length error when scanning Gradle projects](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/invalid-string-length-error-when-scanning-gradle-projects)
+
 ### `--sarif`
 
 Return results in SARIF format.
@@ -208,6 +210,8 @@ Auto-detect maven jars, aars, and wars in given directory. To test individually 
 ## Options for Gradle projects
 
 For more information about Gradle CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven)
+
+**Note:** If you see the invalid string length error, refer to [Invalid string length error when scanning Gradle projects](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/invalid-string-length-error-when-scanning-gradle-projects)
 
 ### `--sub-project=<NAME>`, `--gradle-sub-project=<NAME>`
 
