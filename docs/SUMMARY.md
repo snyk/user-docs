@@ -395,7 +395,7 @@
   * [Using Snyk Code via the IDE](products/snyk-code/using-snyk-code-via-ide.md)
   * [Deployment options for Snyk Code](products/snyk-code/deployment-options/README.md)
     * [Snyk Code Local Engine](products/snyk-code/deployment-options/snyk-code-local-engine/README.md)
-      * [Introduction](products/snyk-code/deployment-options/snyk-code-local-engine/introduction.md)
+      * [Introduction to Snyk Code Local Engine](products/snyk-code/deployment-options/snyk-code-local-engine/introduction.md)
       * [Configure and deploy the Local Engine](products/snyk-code/deployment-options/snyk-code-local-engine/configure-and-deploy-local-engine.md)
       * [CLI and IDE](products/snyk-code/deployment-options/snyk-code-local-engine/cli-and-ide.md)
   * [Snyk Code - Additional resources](products/snyk-code/snyk-code-additional-resources.md)

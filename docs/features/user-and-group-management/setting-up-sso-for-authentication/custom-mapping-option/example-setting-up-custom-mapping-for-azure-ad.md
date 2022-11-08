@@ -40,7 +40,7 @@ Once you have set up Groups and users, follow these steps:
     If you have more than one condition with the same group(s) included in **scoped groups** the conditions are evaluated top to bottom and the last value that includes the group(s) is used.\
     For this reason, the recommendation is to enter the conditions in increasing order of scoped groups.
 
-    <figure><img src="../../../../.gitbook/assets/Name-Claim-conditions-section.png" alt="Enter the Name and expand Claim conditions"><figcaption><p>Enter the Name and expand Claim conditions</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Name-Claim-conditions-section (1).png" alt="Enter the Name and expand Claim conditions"><figcaption><p>Enter the Name and expand Claim conditions</p></figcaption></figure>
 6.  In the **Claim conditions**, set **User type** to **Members**.
 
     <figure><img src="../../../../.gitbook/assets/User-type-to-members.png" alt="Set User type to Members"><figcaption><p>Set User type to Members</p></figcaption></figure>
@@ -67,27 +67,27 @@ The following are the prerequisites for this configuration type:
 
 1.  In your app registration menu, select the name of your Enterprise Application.
 
-    <figure><img src="../../../../.gitbook/assets/image.png" alt="App registration, select name of Enterprise Application"><figcaption><p>App registration, select name of Enterprise Application</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (336).png" alt="App registration, select name of Enterprise Application"><figcaption><p>App registration, select name of Enterprise Application</p></figcaption></figure>
 2.  Select **App roles**, then **Create app role**.
 
-    <figure><img src="../../../../.gitbook/assets/image (1).png" alt="Select App roles, Create app role"><figcaption><p>Select App roles, Create app role</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt="Select App roles, Create app role"><figcaption><p>Select App roles, Create app role</p></figcaption></figure>
 3.  Create an app role with details as needed.\
     Select the **Allowed member types**: **Users/Groups**, **Applications**, or **Both**.\
     Enter the **Value** and **Description** for the selected type.\
     Enable the app role.\
     When you are finished, select **Apply**.
 
-    <figure><img src="../../../../.gitbook/assets/image (2).png" alt="Create app role with details"><figcaption><p>Create app role with details</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt="Create app role with details"><figcaption><p>Create app role with details</p></figcaption></figure>
 4.  In Azure AD, select your Enterprise Application.
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (2).png" alt="Select Enterprise Application in Azure AD"><figcaption><p>Select Enterprise Application in Azure AD</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (3).png" alt="Select Enterprise Application in Azure AD"><figcaption><p>Select Enterprise Application in Azure AD</p></figcaption></figure>
 5.  Select **Users and groups**; then **Add user/group**.\
     Search and select the users and groups to add.
 
-    <figure><img src="../../../../.gitbook/assets/image (4).png" alt="Select Users and groups, Add user/group"><figcaption><p>Select Users and groups, Add user/group</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt="Select Users and groups, Add user/group"><figcaption><p>Select Users and groups, Add user/group</p></figcaption></figure>
 6.  Select **Users and groups**; from the dropdown, select a role; and select **Assign**.
 
     <figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>
 7.  Repeat for all required groups and roles that should be assigned. Then verify that the list looks similar to this.
 
-    <figure><img src="../../../../.gitbook/assets/image (6).png" alt="Users and group list"><figcaption><p>Users and group list</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt="Users and group list"><figcaption><p>Users and group list</p></figcaption></figure>

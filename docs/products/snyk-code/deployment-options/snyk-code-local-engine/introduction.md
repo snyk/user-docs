@@ -1,4 +1,4 @@
-# Introduction
+# Introduction to Snyk Code Local Engine
 
 ### Overview
 
@@ -9,22 +9,24 @@ This high-level architecture diagram shows the different components and their in
 ![Snyk Code Local Engine Architecture](<../../../../.gitbook/assets/Screen Shot 2021-11-11 at 2.36.41 PM.png>)
 
 {% hint style="info" %}
-When using the Local Engine, only the scan is performed locally. Your scan results are uploaded to Snyk, so you can view them in the Snyk Web UI.
+When you use the Local Engine, only the scan is performed locally. Your scan results are uploaded to Snyk, so you can view them in the Snyk Web UI.
 {% endhint %}
 
 ### System Requirements
 
 The core requirements to deploy the Snyk Code Local Engine are:
 
-* **Kubernetes** – version 1.16.0 - 1.23.5:
-  * Dedicated Kubernetes cluster
+* **Kubernetes** – version 1.19.0 - 1.23.5:
+  * _Recommended:_ a dedicated Kubernetes cluster
   * Outbound HTTPS connections supporting websockets from the cluster to \*.snyk.io
   * Kubernetes – one of the following:
     * Managed public cloud Kubernetes service - EKS, AKS, GKE\
       \- or -
     * Unmanaged Kubernetes (a self-hosted cluster)
-  * \[For PR Checks and Snyk CLI support]: a cluster Ingress (a cloud load balancer) that is accessible from your Git, CI/CD, and by users using Snyk CLI to run Snyk Code scans
-* **Helm** – version 3.5.0
+  * PR Checks and Snyk CLI support requires network access:
+    * From your Kubernetes cluster to your Git and CI/CD tooling
+    * From users running Snyk CLI to the Kubernetes cluster
+* **Helm** – version 3.5.0 or newer
 * **3 Nodes** – each one with the following:
   * **Disk:** 500 GB (>300GB Ephemeral Storage)
   * **CPU and RAM:**
