@@ -8,7 +8,7 @@ A Project is a scanned manifest file within a Target. Each [Snyk Project](./#pro
 
 The grouping option controls whether your filtering attributes are applied at the Target or at the Project level. **Group by none** (ungrouped) lets you apply [tags](project-tags.md) and [filtering attributes at the Project level](project-attributes.md), to the individual Projects.
 
-<figure><img src="../../.gitbook/assets/targets-projects_20sept2022 (1).png" alt="Screenshot showing projects&#x27; target in the Snyk UI"><figcaption><p>Group by target applies filtering attributes at the Target level</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/targets-projects_20sept2022.png" alt="Screenshot showing projects&#x27; target in the Snyk UI"><figcaption><p>Group by target applies filtering attributes at the Target level</p></figcaption></figure>
 
 Snyk provides pagination to improve the page loading time for Projects page requests and filtering, which is particularly relevant if you have hundreds of thousands of Projects to scan.&#x20;
 

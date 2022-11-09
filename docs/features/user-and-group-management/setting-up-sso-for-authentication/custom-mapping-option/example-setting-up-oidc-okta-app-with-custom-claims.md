@@ -1,101 +1,54 @@
-# Example: Setting up OIDC Okta app with custom claims
+# Example: Setting up custom mapping for an Okta OIDC app
 
 The steps follow to configure an integration for OIDC Okta.
 
 ## Create an Okta OIDC app
 
-In Okta, select **Applications -> Applications -> OICD OpenID Connect**.
+1.  In Okta, select **Applications -> Applications -> Create App Integration** then choose **OICD OpenID Connect** and **Web Application.**
 
-<figure><img src="../../../../.gitbook/assets/Pasted_Image_6_30_22__5_01_PM.png" alt="Create a new app integration in Okta"><figcaption><p>Create a new app integration in Okta</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/1.png" alt="Create a new app integration in Okta"><figcaption><p>Create a new app integration in Okta</p></figcaption></figure>
+2.  In the next step add an **App integration name** for your OIDC application, check the **Implicit** **Grant Type** and add the **Sign-in redirect URI** relevant to your [Snyk platform deployment](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/set-up-snyk-single-sign-on-sso#use-openid-connect-oidc-for-sso). Remove the placeholder **Sign-out redirect URI** and choose your assignment access control before clicking **Save.**
 
-## Enter the sign-in redirect URI
+    <figure><img src="../../../../.gitbook/assets/2.png" alt="Provide details for new web app integration"><figcaption><p>Provide details for new web app integration</p></figcaption></figure>
+3. On the application page that opens after saving, copy the [following details](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/set-up-snyk-single-sign-on-sso#oidc-information-to-provide-to-snyk) and provide to your Snyk contact:
+   * Client ID
+   * If you are not using Implicit Grant type, the client secret
+4. Also share with Snyk the Issuer URL/domain. This is typically the URL you find in your browser address bar without "-admin", for example, https://customer.example.okta.com. It can also be found under the **Sign-On** tab of your application by editing the **OpenID Connect ID Token** from **Dynamic** Issuer to **Okta URL**.
 
-<figure><img src="../../../../.gitbook/assets/Enter-redirect-URI-OIDC-Okta.png" alt="Enter the Sign-in redirect URL for the new web app integration"><figcaption><p>Enter the Sign-in redirect URL for the new web app integration</p></figcaption></figure>
+If you wish to set up custom mapping, move on to the next section of this guide.
 
-Find the [OIDC information to provide to Snyk](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/set-up-snyk-single-sign-on-sso#oidc-information-to-provide-to-snyk): Issuer URL, Client ID, Client Secret, Email domains and subdomains. The information follows \[\[where?]].
+## Add custom mapping
 
-## Add Roles in Okta
+Custom mapping for an OIDC application in Okta is easily managed through custom attributes on group level.
 
-### Add OIDC claim at the user level
+### Create a custom app user attribute to contain both the Snyk Organization name and role
 
-On the Okta main page, select **Directory -> People**.
+1. In Okta, select your newly created OIDC application user profile under **Directory -> Profile editor.**
+2.  Select **+Add Attribute.**
 
-From the **Person & username list**, select a user.
+    <figure><img src="../../../../.gitbook/assets/3.png" alt="Okta profile editor"><figcaption><p>Okta profile editor</p></figcaption></figure>
+3.  In the corresponding fields, add the following details for this Attribute and click **Save**:\
+    **Data type**: string array\
+    **Display name**: Snyk roles\
+    **Variable name:** roles\
+    **Group Priority**: Combine values across groups&#x20;
 
-<figure><img src="../../../../.gitbook/assets/OIDC-claim-steps-1-2.png" alt="Select an Okat user"><figcaption><p>Select an Okat user</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/4.png" alt="Attribute details"><figcaption><p>Attribute details</p></figcaption></figure>
 
-For the selected user, open the **Profile tab** and select **Edit**.
+### Assign the attribute to the relevant Okta groups
 
-<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_14_22__12_26_PM.png" alt="Edit the profile of the selected user"><figcaption><p>Edit the profile of the selected user</p></figcaption></figure>
+1. On the main page of Okta select **Directory -> Groups**.
+2.  Select a **Group**, navigate to the **Applications** tab, click **Assign** **application** if not already assigned, and choose your Snyk OIDC app,. Then click on the **pencil** next to the displayed Snyk OIDC app.
 
-Select **Add Another Role** and enter the name of that role and select it.
+    <figure><img src="../../../../.gitbook/assets/5 (1).png" alt="Group selected for modicification"><figcaption><p>Group selected for modicification</p></figcaption></figure>
+3.  In the **Edit App Assignment** dialog, add the Snyk org name + role associated with your Okta group (no spaces or capital letter(s)), following the syntax explained in [Example roles array mapping](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/custom-mapping-option#example-roles-array-mapping). Example, `snyk-org-role`.
 
-<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_14_22__12_27_PM.png" alt="Specify the role"><figcaption><p>Specify the role</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/6 (4).png" alt="Adding Snyk roles"><figcaption><p>Adding Snyk roles</p></figcaption></figure>
+4. Repeat the preceding steps for all your applicable Okta groups to assign the org name and role combination to each user within each configured group.
 
-### Add OIDC claim at the group level
+###
 
-On the Okta main page, select **Security -> API**.
 
-On the API tab, enter the Authentication Server, api://snyk.
-
-<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_11_22__6_12_PM.png" alt="Enter the authentication server"><figcaption><p>Enter the authentication server</p></figcaption></figure>
-
-On the Okta main page, select **Directory -> Groups -> Profile Editor**; in the Profile Editor, select the **Groups** tab.
-
-<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_15_22__5_23_PM.png" alt="Navigate to the Groups tab in the Profile Editor"><figcaption><p>Navigate to the Groups tab in the Profile Editor</p></figcaption></figure>
-
-On the **Profile Editor Groups** tab, enter the name of the Okta group.
-
-<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_15_22__5_24_PM.png" alt="Enter the name of the Okta group"><figcaption><p>Enter the name of the Okta group</p></figcaption></figure>
-
-Open the **Okta group** details and select **Add attribute**.
-
-<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_15_22__5_26_PM.png" alt="Select Add attribute for Okta group"><figcaption><p>Select Add attribute for Okta group</p></figcaption></figure>
-
-Enter the values for the group attributes, here **Data type**, string array; **Display name**, snyk-orgs; **Variable name**, snyk\_orgs; **Description**, List of the Snyk orgs and permissions for user.
-
-<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_15_22__5_28_PM.png" alt="Enter the values for the Group attribute"><figcaption><p>Enter the values for the Group attribute</p></figcaption></figure>
-
-From the Okta group details, select **Directory -> Groups**.
-
-<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_15_22__5_31_PM.png" alt="Select Directory -> Groups"><figcaption><p>Select Directory -> Groups</p></figcaption></figure>
-
-Select a group or **Add Group**.
-
-<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_15_22__5_32_PM.png" alt="Select a group or Add Group"><figcaption><p>Select a group or Add Group</p></figcaption></figure>
-
-On the Snyk Admin screen, select the **Profile** tab.
-
-<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_15_22__5_35_PM.png" alt="Select Profile tab on Snyk Admin screen"><figcaption><p>Select Profile tab on Snyk Admin screen</p></figcaption></figure>
-
-On the **Profile** tab, select **Edit**.
-
-<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_15_22__5_36_PM.png" alt="Select Edit on the Profile tab"><figcaption><p>Select Edit on the Profile tab</p></figcaption></figure>
-
-On the Profile tab select **Add Another** and for the **snyk\_orgs Attribute**, Enter a string.
-
-<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_15_22__5_36_PM (1).png" alt="Add snyk_orgs Attribute"><figcaption><p>Add snyk_orgs Attribute</p></figcaption></figure>
-
-## Create a new claim
-
-On the Okta main page, select **Security -> API**.&#x20;
-
-On the **default** page, select the **Claims** tab and on the tab, select **Add Claim**.
-
-<figure><img src="../../../../.gitbook/assets/Pasted_Image_7_11_22__6_19_PM.png" alt="Create a new claim"><figcaption><p>Create a new claim</p></figcaption></figure>
-
-## Set attributes for the new claim
-
-On the **Edit Claim** page, enter the values for the attributes:\
-**Name**: roles\
-**Include in token type**: ID Token, Always\
-**Value type**: Expression\
-Value: Add your attribute, appsuser.roles in the example that follows\
-**Include in**: Select the scope that will be passed to Snyk. Any scope in the example that follows. You can also enter scopes.
-
-When you are finished, select **Save**.
-
-<figure><img src="../../../../.gitbook/assets/Untitled (2).png" alt="Example attributes for a claim"><figcaption><p>Example attributes for a claim</p></figcaption></figure>
 
 
 

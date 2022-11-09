@@ -61,12 +61,12 @@ From the CLI, for each list (upgrade and patch), results are displayed in groups
 
 Upgrade and patch results appear similar to the following:
 
-![](<../../../.gitbook/assets/image (17) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1).png>)
 
-![](<../../../.gitbook/assets/image (49) (1).png>)
+![](<../../../.gitbook/assets/image (49) (2).png>)
 
 Patch recommendations with some and with all paths:
 
 ![](../../../.gitbook/assets/uuid-1afca091-a9a5-d42c-40b6-f48aa0e72584-en.png)
 
-![](<../../../.gitbook/assets/image (3) (1) (2).png>)
+![](<../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png>)

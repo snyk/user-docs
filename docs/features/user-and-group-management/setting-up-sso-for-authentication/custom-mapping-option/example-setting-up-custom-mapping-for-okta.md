@@ -91,7 +91,7 @@ The steps follow.
 ### Assign the attribute to the relevant Okta groups
 
 1. On the main page of Okta select **Directory -> Groups**.
-2. Select a **Group**, navigate to the **Applications** tab, click **Assign** **application i**f not already assigned, and choose your Snyk SSO app,. Then click on the **pencil** next to the displayed Snyk SSO app.
+2. Select a **Group**, navigate to the **Applications** tab, click **Assign** **application** if not already assigned, and choose your Snyk SSO app,. Then click on the **pencil** next to the displayed Snyk SSO app.
 3. In the **Edit App Assignment** dialog, add the Snyk org name + role associated with your Okta group (no spaces or capital letter(s)), following the syntax explained in [Example roles array mapping](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/custom-mapping-option#example-roles-array-mapping). Example, `snyk-org-role`.
 4. Repeat the preceding steps for all your applicable Okta groups to assign the org name and role combination to each user within each configured group.
 

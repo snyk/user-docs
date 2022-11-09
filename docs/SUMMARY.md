@@ -653,7 +653,7 @@
       * [Example: Setting up custom mapping for Okta](features/user-and-group-management/setting-up-sso-for-authentication/custom-mapping-option/example-setting-up-custom-mapping-for-okta.md)
       * [Example: Setting up custom mapping for Azure AD](features/user-and-group-management/setting-up-sso-for-authentication/custom-mapping-option/example-setting-up-custom-mapping-for-azure-ad.md)
       * [Example: Setting up custom mapping for Google Workspace](features/user-and-group-management/setting-up-sso-for-authentication/custom-mapping-option/example-setting-up-custom-mapping-for-google-workspace.md)
-      * [Example: Setting up OIDC Okta app with custom claims](features/user-and-group-management/setting-up-sso-for-authentication/custom-mapping-option/example-setting-up-oidc-okta-app-with-custom-claims.md)
+      * [Example: Setting up custom mapping for an Okta OIDC app](features/user-and-group-management/setting-up-sso-for-authentication/custom-mapping-option/example-setting-up-oidc-okta-app-with-custom-claims.md)
     * [Identity Provider (IdP) migration](features/user-and-group-management/setting-up-sso-for-authentication/identity-provider-idp-migration.md)
   * [Managing users & permissions](features/user-and-group-management/managing-users-and-permissions/README.md)
     * [Manage users in your organizations](features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations.md)
