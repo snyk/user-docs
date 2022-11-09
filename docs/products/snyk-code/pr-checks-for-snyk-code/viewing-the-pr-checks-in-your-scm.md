@@ -27,7 +27,7 @@ The following statuses can appear on your Snyk Code checks in the integrated SCM
 
 The Snyk Web UI opens, displaying the details of the issues that were found in the PR:
 
-<figure><img src="../../../.gitbook/assets/image (318).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 You can now [view and work with the discovered PR Check issues on the Web UI](viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md).
 
