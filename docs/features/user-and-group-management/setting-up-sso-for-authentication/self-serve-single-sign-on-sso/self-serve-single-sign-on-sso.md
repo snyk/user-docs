@@ -7,7 +7,7 @@ An example follows of setting up an Okta SAML application and connecting this to
     <figure><img src="../../../../.gitbook/assets/1 (1) (1) (1).png" alt="Select group overview"><figcaption><p>Select group overview</p></figcaption></figure>
 2.  Click on **SSO** and copy the values under **Entity ID** and **ACS URL** or leave the browser tab open for easy access. Also download the **Signing certificate** for later use in Okta.
 
-    <figure><img src="../../../../.gitbook/assets/2 (4).png" alt="Group Settings: SSO"><figcaption><p>Group Settings: SSO</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/2 (1).png" alt="Group Settings: SSO"><figcaption><p>Group Settings: SSO</p></figcaption></figure>
 
 
 3.  Navigate to [Okta](https://www.okta.com/se/login/), open the application menu, and click on **Create App Integration.**

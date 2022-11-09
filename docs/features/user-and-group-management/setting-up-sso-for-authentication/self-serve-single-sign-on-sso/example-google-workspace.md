@@ -11,13 +11,13 @@ For details in addition to the information provided on this page, see the [Googl
     <figure><img src="../../../../.gitbook/assets/1 (1) (2).png" alt="Open Web and Mobile apps"><figcaption><p>Open Web and Mobile apps</p></figcaption></figure>
 2.  Click on **Add app** and choose **Add custom SAML app**.
 
-    <figure><img src="../../../../.gitbook/assets/2 (1).png" alt="Add new custom SAML app"><figcaption><p>Add new custom SAML app</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/2 (1) (1).png" alt="Add new custom SAML app"><figcaption><p>Add new custom SAML app</p></figcaption></figure>
 3.  Name your application appropriately and click **Continue**.
 
     <figure><img src="../../../../.gitbook/assets/3 (1).png" alt="Name the SAML app"><figcaption><p>Name the SAML app</p></figcaption></figure>
 4.  Download the certificate and open it in your preferred text editor.
 
-    <figure><img src="../../../../.gitbook/assets/4 (2).png" alt="Download signing certificate"><figcaption><p>Download signing certificate</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/4 (1).png" alt="Download signing certificate"><figcaption><p>Download signing certificate</p></figcaption></figure>
 5.  Navigate to the Snyk portal, login and from the drop down at the top left select **GROUP OVERVIEW** and then the cog wheel (top right corner) to get to your group settings.
 
     <figure><img src="../../../../.gitbook/assets/1 (1) (1).png" alt="Open group view in Snyk"><figcaption><p>Open group view in Snyk</p></figcaption></figure>

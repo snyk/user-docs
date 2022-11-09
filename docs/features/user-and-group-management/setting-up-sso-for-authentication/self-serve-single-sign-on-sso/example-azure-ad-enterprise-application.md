@@ -7,10 +7,10 @@ An example follows of setting up an Azure AD Enterprise Application and connecti
     <figure><img src="../../../../.gitbook/assets/1 (1) (1) (1).png" alt="Select group overview"><figcaption><p>Select group overview</p></figcaption></figure>
 2.  Click on **SSO** and copy the values under **Entity ID** and **ACS URL** or leave the browser tab open for easy access.
 
-    <figure><img src="../../../../.gitbook/assets/2 (4).png" alt="Group Settings: SSO"><figcaption><p>Group Settings: SSO</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/2 (1).png" alt="Group Settings: SSO"><figcaption><p>Group Settings: SSO</p></figcaption></figure>
 3.  Navigate to Azure and open Azure AD.
 
-    <figure><img src="../../../../.gitbook/assets/3 (4).png" alt="Azure AD Default Directory"><figcaption><p>Azure AD Default Directory</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/3 (2).png" alt="Azure AD Default Directory"><figcaption><p>Azure AD Default Directory</p></figcaption></figure>
 4.  Click **Add** then **Enterprise application**.
 
     <figure><img src="../../../../.gitbook/assets/4 (4).png" alt="Add Enterprise application"><figcaption><p>Add Enterprise application</p></figcaption></figure>

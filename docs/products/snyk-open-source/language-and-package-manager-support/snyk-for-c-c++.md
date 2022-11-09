@@ -258,65 +258,23 @@ $ snyk test --unmanaged --json
 
 The following `snyk` command line options are supported with the `snyk test --unmanaged` and `snyk monitor --unmanaged` commands:
 
-#### ORG\_ID
-
 `--org=<ORG_ID>`
-
-Specify the `<ORG_ID>` to run Snyk commands tied to a specific organization. This defines where new projects are created after running the `snyk monitor` command. Some features have availability and private testing limits. If you have multiple organizations, you can set a default from the CLI using:
-
-```
-snyk config set org=ORG_ID
-```
-
-Setting a default ensures all newly monitored projects are created under your default organization. To override the default, use the `--org=<ORG_ID>` argument.
-
-Default: `<ORG_ID>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account).
-
-For more information see the article [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI).
-
-#### json
 
 `--json`
 
-Prints results in JSON format.
-
-#### OUTPUT\_FILE\_PATH
-
 `--json-file-output=<OUTPUT_FILE_PATH>`
-
-(only in test command) Save test output in JSON format directly to the specified file, regardless of whether or not you use the `--json` option.
-
-This is useful to display the human-readable test output via stdout and at the same time save the JSON format output to a file.
-
-#### **max-depth**
 
 `--max-depth=1`
 
-Specify the maximum level of archive extraction. Use `0` (zero, the default) to disable archive extraction completely.
-
-#### project-name
-
 `--project-name=c-project`
-
-When used with the `snyk monitor --unmanaged` command, you can override the default name Snyk gives your snapshots by entering your desired name using the `--project-name` flag.
-
-#### remote-repo-url
 
 `--remote-repo-url=<URL>`
 
-Set or override the remote URL for the repository that you would like to monitor.
-
-#### **target-reference**
-
 `--target-reference=<TARGET_REFERENCE>`
-
-When used with the `snyk monitor --unmanaged` command, you can specify a reference which differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference.
-
-#### severity-threshold
 
 `--severity-threshold=<low|medium|high|critical>`
 
-Report only vulnerabilities at the specified level or higher.
+For more information about command line options see the articles [snyk test --unmanaged](https://docs.snyk.io/snyk-cli/commands/test#options) or [snyk monitor --unmanaged](https://docs.snyk.io/snyk-cli/commands/monitor#options)
 
 ### Import scan results in the Snyk Web UI
 
