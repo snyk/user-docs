@@ -15,7 +15,7 @@ This is especially important for larger teams where more oversight is required o
 Only allow Snyk Admins to set ignores, and require a reason for the ignore being set.
 {% endhint %}
 
-See [Ignore issues](../../../fixing-and-prioritizing-issues/issue-management/ignore-issues.md) for more details.
+See [Ignore issues](../../../fixing-and-reporting-issues/issue-management/ignore-issues.md) for more details.
 
 ### License policies
 

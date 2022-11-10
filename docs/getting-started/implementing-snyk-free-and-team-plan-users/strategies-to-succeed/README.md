@@ -4,7 +4,7 @@
 
 Snyk has a lot of capabilities and is very flexible; this matters because companies tend to roll out Snyk in phases.
 
-While you may start using the [Git repository integration](../../walkthrough-code-repository-projects/) or [CI/CD integrations](../../../integrations/ci-cd-integrations/) immediately, how you use it will change in the early stages of using Snyk.
+While you may start using the [Git repository integration](../../walkthrough-code-repository-projects/) or [CI/CD integrations](../../../integrations/git-repository-and-ci-cd-integrations-comparisons/ci-cd-integrations/) immediately, how you use it will change in the early stages of using Snyk.
 
 Similarly, after scan results start getting generated, you’ll want to deal with issues in a phased approach, especially if you have a large collection of applications which have not been tested.
 

@@ -304,7 +304,7 @@ A free web application which allows you to compare software packages across open
 
 ### Snyk API
 
-A Snyk tool that enables developers to programmatically integrate with Snyk. See [Snyk API](../snyk-api-info/).
+A Snyk tool that enables developers to programmatically integrate with Snyk. See [Snyk API](../run-snyk/snyk-api-info/).
 
 ### Snyk Apps
 
@@ -320,11 +320,11 @@ A Snyk platform tool. Snyk CLI enables developers to find and fix known vulnerab
 
 ### Snyk Cloud
 
-A Snyk product. Enables developers to find and fix cloud infrastructure misconfigurations. See [Snyk Cloud documentation](../scan-cloud-deployment/snyk-cloud/).
+A Snyk product. Enables developers to find and fix cloud infrastructure misconfigurations. See [Snyk Cloud documentation](../scanning-with-snyk/scan-cloud-deployment/snyk-cloud/).
 
 ### Snyk Cloud Environment
 
-An organizing concept that equates to an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project. See [Snyk Cloud concepts](../scan-cloud-deployment/snyk-cloud/snyk-cloud-concepts.md).
+An organizing concept that equates to an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project. See [Snyk Cloud concepts](../scanning-with-snyk/scan-cloud-deployment/snyk-cloud/snyk-cloud-concepts.md).
 
 ### Snyk Code
 

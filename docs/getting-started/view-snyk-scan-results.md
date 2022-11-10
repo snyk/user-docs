@@ -11,11 +11,11 @@ You can now view the results of your scan - for example:
 
 The scan results and available actions depend on the type of Project you scan:
 
-* Open source libraries: see [Snyk Open Source](../scan-application-code/snyk-open-source/getting-started-snyk-open-source.md).
-* Your application code : see [Snyk Code](../scan-application-code/snyk-code/getting-started-with-snyk-code/)
-* Container images: see [Snyk Container](../snyk-container/getting-started-snyk-container/)
-* Infrastructure as Code (IaC), Kubernetes, Helm and Terraform configuration files: see [Snyk IaC](../scan-cloud-deployment/snyk-infrastructure-as-code/getting-started-snyk-iac.md)
+* Open source libraries: see [Snyk Open Source](../scanning-with-snyk/scan-application-code/snyk-open-source/getting-started-snyk-open-source.md).
+* Your application code : see [Snyk Code](../scanning-with-snyk/scan-application-code/snyk-code/getting-started-with-snyk-code/)
+* Container images: see [Snyk Container](../scanning-with-snyk/snyk-container/getting-started-snyk-container/)
+* Infrastructure as Code (IaC), Kubernetes, Helm and Terraform configuration files: see [Snyk IaC](../scanning-with-snyk/scan-cloud-deployment/snyk-infrastructure-as-code/getting-started-snyk-iac.md)
 
 ### What's next?
 
-Now, you can start to fix your issues. See [Fixing and prioritizing issues](../fixing-and-prioritizing-issues/).
+Now, you can start to fix your issues. See [Fixing and prioritizing issues](broken-reference).

@@ -17,7 +17,7 @@ The available Project attributes are summarized in the following table.
 | Lifecycle stage      | <ul><li>Production</li><li>Development</li><li>Sandbox</li></ul>                                                                                            |
 
 {% hint style="info" %}
-Filtering is available in projects by their values from [Snyk's REST API](../../snyk-api-info/).
+Filtering is available in projects by their values from [Snyk's REST API](../../run-snyk/snyk-api-info/).
 
 Assigning and removing attribute values can be done in [Snyk's CLI](../../snyk-cli/) or the API.
 {% endhint %}

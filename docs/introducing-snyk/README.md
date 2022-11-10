@@ -14,8 +14,8 @@ A good security process secures each of these components where they are built an
 
 #### Using Snyk in your workflow:
 
-* **Secure your code**: use [Snyk Open Source](../scan-application-code/snyk-open-source/) to fix vulnerabilities in your open source dependencies, and [Snyk Code](../scan-application-code/snyk-code/) to fix vulnerabilities in your source code.
-* **Secure your environments**: use [Snyk Container](../snyk-container/) to fix vulnerabilities in container images and Kubernetes workloads, and [Snyk Infrastructure as Code (IaC)](../scan-cloud-deployment/snyk-infrastructure-as-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates.
+* **Secure your code**: use [Snyk Open Source](../scanning-with-snyk/scan-application-code/snyk-open-source/) to fix vulnerabilities in your open source dependencies, and [Snyk Code](../scanning-with-snyk/scan-application-code/snyk-code/) to fix vulnerabilities in your source code.
+* **Secure your environments**: use [Snyk Container](../scanning-with-snyk/snyk-container/) to fix vulnerabilities in container images and Kubernetes workloads, and [Snyk Infrastructure as Code (IaC)](../scanning-with-snyk/scan-cloud-deployment/snyk-infrastructure-as-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates.
 
 ### Ways to run Snyk
 

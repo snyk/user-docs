@@ -1,4 +1,4 @@
-# Snyk Web UI
+# Web UI
 
 No matter how you use Snyk, the **Snyk Web UI** is where you can connect your source code management (SCM) repositories, container registries, and applications. If you haven't already, go to the [Snyk Web UI](https://app.snyk.io/login) and create an account!
 
@@ -22,6 +22,6 @@ Snyk shows your [preferred (or default) organization](https://docs.snyk.io/snyk-
 
 ## More information
 
-|                                                                                                                               |                                                                                                                                   |
-| ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| For the other Snyk platforms, see [Snyk CLI](../snyk-cli/), [Snyk API](../snyk-api-info/), or [Snyk for IDEs](../ide-tools/). | For related Snyk Training resources, see [Use Snyk Tools: UI, CLI, IDE](https://training.snyk.io/learn/learning-path/snyk-tools). |
+|                                                                                                                                        |                                                                                                                                   |
+| -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| For the other Snyk platforms, see [Snyk CLI](../snyk-cli/), [Snyk API](../run-snyk/snyk-api-info/), or [Snyk for IDEs](../ide-tools/). | For related Snyk Training resources, see [Use Snyk Tools: UI, CLI, IDE](https://training.snyk.io/learn/learning-path/snyk-tools). |

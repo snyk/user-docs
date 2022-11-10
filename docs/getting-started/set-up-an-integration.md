@@ -13,7 +13,7 @@ The type of integration you need depends on what systems you use, and what you w
 
 #### Example: set up a source control integration
 
-To scan open source libraries (using Snyk Open Source) or your application code (using Snyk Code) from a Git-based source code repository, you will need to connect using a [Git repository integration](../integrations/git-repository-scm-integrations/). Snyk has pre-built integrations for GitHub, GitHub Enterprise, Bitbucket Cloud and other repositories.
+To scan open source libraries (using Snyk Open Source) or your application code (using Snyk Code) from a Git-based source code repository, you will need to connect using a [Git repository integration](../integrations/git-repository-and-ci-cd-integrations-comparisons/git-repository-scm-integrations/). Snyk has pre-built integrations for GitHub, GitHub Enterprise, Bitbucket Cloud and other repositories.
 
 First, log in to the Snyk Web UI ([app.snyk.io](https://app.snyk.io)), and select **Integrations > Source control**.
 
@@ -23,13 +23,13 @@ First, log in to the Snyk Web UI ([app.snyk.io](https://app.snyk.io)), and selec
 If an integration is already configured for your Organization, it is marked as **Configured**.
 {% endhint %}
 
-Next, click the source control system (for example, [GitHub](../integrations/git-repository-scm-integrations/github-integration.md)) to integrate with Snyk.
+Next, click the source control system (for example, [GitHub](../integrations/git-repository-and-ci-cd-integrations-comparisons/git-repository-scm-integrations/github-integration.md)) to integrate with Snyk.
 
 Finally, to grant Snyk access permissions to the integrated source control system, enter your account credentials and save your details when prompted.
 
 #### Example: set up a container integration
 
-To scan your container images, choose a [container registry integration](../snyk-container/image-scanning-library/), to connect the registry with Snyk.
+To scan your container images, choose a [container registry integration](../scanning-with-snyk/snyk-container/image-scanning-library/), to connect the registry with Snyk.
 
 First, log in to the Snyk Web UI ([app.snyk.io](https://app.snyk.io)), and select **Integrations > Container registries**
 
