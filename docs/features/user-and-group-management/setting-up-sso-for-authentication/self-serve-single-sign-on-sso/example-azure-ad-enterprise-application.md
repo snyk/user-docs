@@ -4,7 +4,7 @@ An example follows of setting up an Azure AD Enterprise Application and connecti
 
 1.  From the drop down at the top left select **GROUP OVERVIEW** and then the cog wheel (top right corner) to get to your group settings.
 
-    <figure><img src="../../../../.gitbook/assets/1 (1) (1).png" alt="Select group overview"><figcaption><p>Select group overview</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/1 (1) (1) (1).png" alt="Select group overview"><figcaption><p>Select group overview</p></figcaption></figure>
 2.  Click on **SSO** and copy the values under **Entity ID** and **ACS URL** or leave the browser tab open for easy access.
 
     <figure><img src="../../../../.gitbook/assets/2 (1) (1).png" alt="Group Settings: SSO"><figcaption><p>Group Settings: SSO</p></figcaption></figure>
@@ -13,7 +13,7 @@ An example follows of setting up an Azure AD Enterprise Application and connecti
     <figure><img src="../../../../.gitbook/assets/3 (1) (1).png" alt="Azure AD Default Directory"><figcaption><p>Azure AD Default Directory</p></figcaption></figure>
 4.  Click **Add** then **Enterprise application**.
 
-    <figure><img src="../../../../.gitbook/assets/4 (1).png" alt="Add Enterprise application"><figcaption><p>Add Enterprise application</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/4 (1) (1).png" alt="Add Enterprise application"><figcaption><p>Add Enterprise application</p></figcaption></figure>
 5.  Choose **Create your own application**.
 
     <figure><img src="../../../../.gitbook/assets/5 (2).png" alt="Create your own application"><figcaption><p>Create your own application</p></figcaption></figure>
@@ -28,7 +28,7 @@ An example follows of setting up an Azure AD Enterprise Application and connecti
     <figure><img src="../../../../.gitbook/assets/8 (2).png" alt="Select SAML"><figcaption><p>Select SAML</p></figcaption></figure>
 9.  Click **Edit** under **Basic SAML configuration**.
 
-    <figure><img src="../../../../.gitbook/assets/9 (2).png" alt="Edit basic SAML configuration"><figcaption><p>Edit basic SAML configuration</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/9 (2) (1).png" alt="Edit basic SAML configuration"><figcaption><p>Edit basic SAML configuration</p></figcaption></figure>
 10. Add the Identity (Entity ID) and reply URL (Assertion Consumer Service URL) you obtained from Snyk and click **Save**; **** then close the edit window.
 
     <figure><img src="../../../../.gitbook/assets/10 (2).png" alt="Entity ID and Assertion Consumer Service URL"><figcaption><p>Entity ID and Assertion Consumer Service URL</p></figcaption></figure>

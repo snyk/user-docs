@@ -246,7 +246,7 @@
       * [Set up the Terraform Cloud integration for IaC](integrations/ci-cd-integrations/integrating-snyk-with-terraform-cloud/set-up-the-terraform-cloud-integration-for-iac.md)
       * [How to use the Terraform Cloud integration for IaC](integrations/ci-cd-integrations/integrating-snyk-with-terraform-cloud/how-to-use-the-terraform-cloud-integration-for-iac.md)
     * [Terraform Enterprise integration for IaC](integrations/ci-cd-integrations/integrating-snyk-with-terraform-enterprise.md)
-  * [Git repository integrations (SCM)](integrations/git-repository-scm-integrations/README.md)
+  * [Git repository integrations (SCMs)](integrations/git-repository-scm-integrations/README.md)
     * [Introduction to Git repository integrations](integrations/git-repository-scm-integrations/introduction-to-git-repository-integrations.md)
     * [Snyk Git repository integration: deployment recommendations](integrations/git-repository-scm-integrations/snyk-scm-integration-good-practices.md)
     * [GitHub integration](integrations/git-repository-scm-integrations/github-integration.md)

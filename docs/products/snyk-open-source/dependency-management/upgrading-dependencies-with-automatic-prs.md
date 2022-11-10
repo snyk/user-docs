@@ -4,7 +4,7 @@ After importing the chosen Git repositories to Snyk, Snyk continuously monitors 
 
 ## Supported languages and SCMs
 
-Snyk currently supports the **Automatic dependency upgrade pull requests** feature for npm, Yarn, and Maven-Central repositories via the following SCMs: GitHub, GitHub Enterprise, and Bitbucket Cloud.
+Snyk currently supports the **Automatic dependency upgrade pull requests** feature for npm, Yarn, and Maven-Central repositories via the following Source Control Managers (SCMs): GitHub, GitHub Enterprise, and Bitbucket Cloud.
 
 You can also use this feature with the Snyk Broker. To use this feature, Snyk Broker must be upgraded to a minimum of v. 1.4.55.0 or later. For more information, see [Upgrade your Snyk Broker client](../../../features/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md#upgrade-your-snyk-broker-client).
 
@@ -12,15 +12,15 @@ You can also use this feature with the Snyk Broker. To use this feature, Snyk Br
 
 ## Automatic dependency (upgrade) PRs
 
-1. The **Automatic dependency upgrade pull requests** option is enabled (in [the Integration Settings on the organization level](upgrading-dependencies-with-automatic-prs.md#enabling-the-automatic-dependency-upgrade-prs-option-for-an-entire-organization) or [the Project Settings](upgrading-dependencies-with-automatic-prs.md#enabling-the-automatic-dependency-upgrade-prs-option-for-a-specific-project)).
-2. When you import your repos to Snyk, Snyk scans the repos and provides you with the scan results. Snyk then continues to monitor your Open Source Projects, scanning them on a regular basis.
+1. The **Automatic dependency upgrade pull requests** option is enabled (in [the Integration Settings at the Organization level](upgrading-dependencies-with-automatic-prs.md#enabling-the-automatic-dependency-upgrade-prs-option-for-an-entire-organization) or in [the Project Settings](upgrading-dependencies-with-automatic-prs.md#enabling-the-automatic-dependency-upgrade-prs-option-for-a-specific-project)).
+2. When you import repos to Snyk, Snyk scans the repos and provides you with the scan results. Snyk then continues to monitor your Open Source Projects, scanning them on a regular basis.
 3. Per scan, when new versions for your dependencies are identified, Snyk does the following:
    * Snyk creates automatic upgrade PRs.\
      **Note**: The re-scan frequency is based on the schedule set in the Project Settings.
    * Snyk will not open a new upgrade PR for a dependency that is already changed (upgraded or patched) in another open Snyk PR.
    * Snyk opens separate PRs for each dependency.
-   * By default, Snyk will not create upgrade PRs for a Project that has 5 or more open Snyk PRs. If the limit of open PRs is reached, no new PRs are created. This limit number can be set to be between 1-10 on the Integration or Project Settings. This limit only applies to Upgrade PRs, but it does count Fix PRs. However, Fix PRs are not limited in this way.
-   * By default, Snyk recommends only patch and minor upgrades. However, recommendations for major version upgrades can be requested in the Settings page where the feature is enabled.
+   * By default, Snyk does not create upgrade PRs for a Project that has 5 or more open Snyk PRs. If the limit of open PRs is reached, no new PRs are created. This limit number can be set to be between 1-10 on the Integration or Project Settings. This limit only applies to Upgrade PRs, but it does count Fix PRs. However, Fix PRs are not limited in this way.
+   * By default, Snyk recommends only patch and minor upgrades. However, recommendations for major version upgrades can be requested in the **Settings** page where the feature is enabled.
    * If the latest eligible version contains vulnerabilities that are not found yet in your Project, Snyk will not recommend an upgrade.
    * Snyk does not recommend upgrades to versions that are less than 21 days old. This is to avoid versions that introduce functional bugs and subsequently get unpublished, or versions that are released from a compromised account (where the account owner has lost control to someone with a malicious intent).
 
@@ -30,23 +30,30 @@ You can configure Snyk to regularly check your dependency health, recommend depe
 
 By default, the Project Settings inherit the organization Settings. However, when the Settings on the organization and Project levels are different, the Project Settings override the organization Settings.
 
+{% hint style="info" %}
+**Reminder**&#x20;
+
+Automatic dependency upgrade PRs are only available for the following SCM integrations: GitHub, GitHub Enterprise, and Bitbucket Cloud.
+{% endhint %}
+
 ### Enabling the Automatic dependency upgrade PRs option for an entire organization
 
 **To configure automatic upgrade PRs for an entire organization:**
 
-1\. On the Snyk Web UI, open the required organization:
+1.  On the Snyk Web UI, open the required organization. ****&#x20;
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
+    <figure><img src="../../../.gitbook/assets/choose-org_19oct2022.png" alt=""><figcaption></figcaption></figure>
 
-2\. Once the required organization is open, click the **Org Settings** button <img src="../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png" alt="" data-size="line"> on the top menu:
+    1.  Go to  <img src="../../../.gitbook/assets/image (11).png" alt="" data-size="line"> **Settings > Organization Settings > Integrations,** find your configured SCM, and click **Edit settings** at the end of the row for that integration.&#x20;
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org Settings button (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png>)
+        <figure><img src="../../../.gitbook/assets/scm-integration_edit settings_20oct2022.png" alt=""><figcaption><p>Open the Organization settings and find your configured SCM integration to edit settings</p></figcaption></figure>
+    2.
 
-3\. On the **Settings** page, select **Integrations** on the left menu. Then, locate your configured and required SCM, and click the **Edit settings** option at the end of its row:
 
-**Note**: You can enable this feature only for the following SCMs: GitHub, GitHub Enterprise, and Bitbucket Cloud.
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Organization - Integrations page (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+
+
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Organization - Integrations page (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
 
 4\. On the **Settings** page of the selected integration, scroll down to the **Automatic dependency upgrade pull requests** section:
 
@@ -59,12 +66,12 @@ By default, the Project Settings inherit the organization Settings. However, whe
 * **Limit Snyk to this many dependency upgrade PRs open simultaneously** – define how many open Snyk PRs a Project can have, in order to also receive a dependency upgrade PR. By default, a Project can have 4 open PRs at the most, in order to also receive a dependency upgrade PR. You can set a number between 1 -10. When the limit of the open PRs is reached, no new upgrade PRs are created.
 * **Dependencies to ignore** – enter the exact name of the dependencies that should NOT be included in the **Automatic upgrade** operation. You can only enter lower case letters.
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Project Settings - Integration - Automatic Upgrade section - Enabled (1).png>)
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Project Settings - Integration - Automatic Upgrade section - Enabled.png>)
 
 7\. To save and apply your changes, click one of the following:
 
 * **Apply changes to all overridden projects** option – your changes are saved, and will be applied to all the Projects in the organization. Projects that have Custom Settings will inherit these organization Settings, and their Custom Settings will be override. After you click this option, a message appears, asking you to confirm the override:\
-  ![](<../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+  ![](<../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png>)
 * **Save changes** button – your changes are saved, and will be applied to all the Projects in the organization that are configured to inherit these Settings from the organization. Projects that have Custom Settings will not be influenced by this change.
 
 ![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org- Integration - Automatic Upgrade section - Save options (1).png>)
@@ -83,7 +90,7 @@ The Settings on the Project level override the Settings on the organization leve
 
 1\. On the Snyk Web UI, open the organization that includes the required Project:
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (4).png>)
 
 2\. Move to the **Projects** page by clicking the **Projects** tab on the top menu.
 
@@ -100,7 +107,7 @@ The Settings on the Project level override the Settings on the organization leve
 * **Inherit from Integration settings** – apply the Integration Settings of the organization to the selected Project. Note that if the **Automatic dependency upgrade pull requests option is disabled for the organization, this option will also be disabled for the Project.** If you selected this option, move to Step 7.
 * **Customize for only this project** – apply specific settings of the **Automatic dependency upgrade pull requests** option on the Project. If you selected this option, move to the next step.
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Project Settings - Integration - Automatic Upgrade section (1).png>)
+![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Project Settings - Integration - Automatic Upgrade section.png>)
 
 6\. \[For the **Customize** option only] If you selected the **Customize for only this project** option, perform the following:
 

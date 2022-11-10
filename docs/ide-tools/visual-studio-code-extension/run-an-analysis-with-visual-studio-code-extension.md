@@ -13,7 +13,7 @@ Snyk analysis runs automatically when you open a folder or workspace.
 * Snyk Code performs scans automatically on file saves.
 * Snyk Open Source does not automatically run on save by default, but you can enable it in settings:
 
-![Snyk Open Source settings](<../../.gitbook/assets/image (143) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png>)
+![Snyk Open Source settings](<../../.gitbook/assets/image (143) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 **Tip**: if you do not like to manually save while working, enable [AutoSave](https://code.visualstudio.com/docs/editor/codebasics#\_save-auto-save).
 
@@ -33,6 +33,6 @@ Snyk Code has "advanced" mode that allows you to control how a scan is performed
 
 To perform the analysis manually, in the configuration of the extension you can enable Advanced Mode which enables you to control the scanning process:
 
-![Advanced Mode](<../../.gitbook/assets/run-analysis\_advanced-mode (1).png>)
+![Advanced Mode](../../.gitbook/assets/run-analysis\_advanced-mode.png)
 
 ##

@@ -288,7 +288,7 @@ else
 end
 ```
 
-![Snyk Code findings displayed in Neovim](<../.gitbook/assets/image (413).png>)
+![Snyk Code findings displayed in Neovim](<../.gitbook/assets/image (413) (1) (1).png>)
 
 ## Support
 

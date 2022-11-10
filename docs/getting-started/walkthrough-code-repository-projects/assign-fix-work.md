@@ -15,7 +15,7 @@ Different teams approach fixes in different ways, depending on the tools they us
 
 For example, your team could follow a triage-based process for each issue, driven largely by the severity of the issue:
 
-![](<../../.gitbook/assets/image (40).png>)
+![](<../../.gitbook/assets/image (110).png>)
 
 ### Example workflow: team-lead driven, using Jira
 
