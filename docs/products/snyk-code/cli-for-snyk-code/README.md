@@ -27,7 +27,7 @@ For more information, see [Testing your source code via the CLI](https://docs.sn
 
 Before the test, you may want to do the following:
 
-* [Update your Snyk CLI version](https://docs.snyk.io/products/snyk-code/cli-for-snyk-code/updating-the-snyk-cli-version).
+* [Update your Snyk CLI version](../../../snyk-cli/install-the-snyk-cli.md).
 * [Set the organization for the CLI tests](https://docs.snyk.io/products/snyk-code/cli-for-snyk-code/before-you-start-set-the-organization-for-the-cli-tests).
 * [Exclude directories and files from the Snyk Code test](https://docs.snyk.io/products/snyk-code/cli-for-snyk-code/excluding-directories-and-files-from-the-snyk-code-cli-test).
 
