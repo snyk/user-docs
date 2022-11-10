@@ -46,7 +46,7 @@ To install the Snyk App on your Bitbucket Cloud workspace, you must have **Admin
 3.  Grant access to your Snyk Organization when you're prompted.\
 
 
-    <figure><img src="../../.gitbook/assets/bbc_snykaccess_6oct2022.png" alt=""><figcaption><p>Allow Bitbucket Cloud to access your Snyk Organization<br></p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/bitbucket-cloud-permissions_10nov2022.png" alt=""><figcaption><p>Allow Bitbucket Cloud to access your Snyk Organization<br></p></figcaption></figure>
 
     After you allow access to the Snyk Organization, the Snyk **Organization Settings** page opens and confirms that you're connected to the Bitbucket Cloud App.\
     ![](../../.gitbook/assets/bb\_connected-28aug2022.png)
