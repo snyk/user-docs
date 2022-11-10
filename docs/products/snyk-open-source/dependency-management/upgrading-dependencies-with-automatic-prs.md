@@ -44,20 +44,15 @@ Automatic dependency upgrade PRs are only available for the following SCM integr
 
     <figure><img src="../../../.gitbook/assets/choose-org_19oct2022.png" alt=""><figcaption></figcaption></figure>
 
-    1.  Go to  <img src="../../../.gitbook/assets/image (11).png" alt="" data-size="line"> **Settings > Organization Settings > Integrations,** find your configured SCM, and click **Edit settings** at the end of the row for that integration.&#x20;
 
-        <figure><img src="../../../.gitbook/assets/scm-integration_edit settings_20oct2022.png" alt=""><figcaption><p>Open the Organization settings and find your configured SCM integration to edit settings</p></figcaption></figure>
-    2.
+2.  Go to  <img src="../../../.gitbook/assets/image (11).png" alt="" data-size="line"> **Settings > Organization Settings > Integrations,** find your configured SCM, and click **Edit settings** at the end of the row for that integration.&#x20;
 
-
+    <figure><img src="../../../.gitbook/assets/scm-integration_edit settings_20oct2022.png" alt=""><figcaption><p>Open the Organization settings and find your configured SCM integration to edit settings</p></figcaption></figure>
 
 
+3. On the **Settings** page of the selected integration, scroll down to the **Automatic dependency upgrade pull requests** section.
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Organization - Integrations page (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
-
-4\. On the **Settings** page of the selected integration, scroll down to the **Automatic dependency upgrade pull requests** section:
-
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Organization - Integration Settings - Automatic Upgrade section .png>)
+![](../../../.gitbook/assets/auto-dependency-upgrade-prs\_10nov2022.png)
 
 5\. On the **Automatic dependency upgrade pull requests** section perform the following:
 
@@ -66,7 +61,7 @@ Automatic dependency upgrade PRs are only available for the following SCM integr
 * **Limit Snyk to this many dependency upgrade PRs open simultaneously** – define how many open Snyk PRs a Project can have, in order to also receive a dependency upgrade PR. By default, a Project can have 4 open PRs at the most, in order to also receive a dependency upgrade PR. You can set a number between 1 -10. When the limit of the open PRs is reached, no new upgrade PRs are created.
 * **Dependencies to ignore** – enter the exact name of the dependencies that should NOT be included in the **Automatic upgrade** operation. You can only enter lower case letters.
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Project Settings - Integration - Automatic Upgrade section - Enabled.png>)
+![](../../../.gitbook/assets/dependencies-2-ignore\_10nov2022.png)
 
 7\. To save and apply your changes, click one of the following:
 
@@ -74,11 +69,9 @@ Automatic dependency upgrade PRs are only available for the following SCM integr
   ![](<../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png>)
 * **Save changes** button – your changes are saved, and will be applied to all the Projects in the organization that are configured to inherit these Settings from the organization. Projects that have Custom Settings will not be influenced by this change.
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org- Integration - Automatic Upgrade section - Save options (1).png>)
+![](../../../.gitbook/assets/apply-changes-2-all.png)
 
-From now on, every time Snyk will scan any Project in the organization, it will automatically submit Upgrade PRs if the scan discovers that an upgrade is available. If a newer version is released for an existing Snyk Upgrade PR or for an existing Fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.
-
-***
+From now on, every time Snyk scans any Project in the organization, it automatically submits Upgrade PRs if the scan discovers that an upgrade is available. If a newer version is released for an existing Snyk Upgrade PR, or for an existing Fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.
 
 ### Enabling the Automatic dependency upgrade PRs option for a specific Project
 
