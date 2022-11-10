@@ -65,7 +65,7 @@ These are some of the explicitly supported frameworks for JavaScript; those are 
 ### Java frameworks
 
 {% hint style="info" %}
-These are some of the explicitly supported frameworks for JavaScript; those are in addition to the general support for many frameworks.
+These are some of the explicitly supported frameworks for Java; those are in addition to the general support for many frameworks.
 {% endhint %}
 
 * **Apache Camel**: Open source framework for message-oriented middleware with a rule-based routing and mediation engine.
@@ -77,7 +77,7 @@ These are some of the explicitly supported frameworks for JavaScript; those are 
 ### Python frameworks
 
 {% hint style="info" %}
-These are some of the explicitly supported frameworks for JavaScript; those are in addition to the general support for many frameworks.
+These are some of the explicitly supported frameworks for Python; those are in addition to the general support for many frameworks.
 {% endhint %}
 
 * [Django](https://www.djangoproject.com): a framework for full-stack web application development and server development.
@@ -86,7 +86,7 @@ These are some of the explicitly supported frameworks for JavaScript; those are 
 ### C# frameworks
 
 {% hint style="info" %}
-These are some of the explicitly supported frameworks for JavaScript; those are in addition to the general support for many frameworks.
+These are some of the explicitly supported frameworks for C#; those are in addition to the general support for many frameworks.
 {% endhint %}
 
 * **.NET framework**: .NET is an open source developer platform, created by Microsoft and used to build a variety of application types. While .NET supports different languages, Snyk Code supports .NET using the C# interface. **Note:** .NET 6 is not yet supported.
