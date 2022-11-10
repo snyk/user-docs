@@ -29,7 +29,7 @@ Finally, to grant Snyk access permissions to the integrated source control syste
 
 #### Example: set up a container integration
 
-To scan your container images, choose a [container registry integration](../scanning-with-snyk/snyk-container/image-scanning-library/), to connect the registry with Snyk.
+To scan your container images, choose a [container registry integration](../scan-with-snyk/snyk-container/image-scanning-library/), to connect the registry with Snyk.
 
 First, log in to the Snyk Web UI ([app.snyk.io](https://app.snyk.io)), and select **Integrations > Container registries**
 

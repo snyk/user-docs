@@ -6,11 +6,11 @@ Snyk supports a wide range of programming languages, allowing you to scan your c
 
 [Snyk products](snyk-products-and-environments.md) support the following languages and formats:
 
-* **Snyk Open Source**: see [Open Source - Supported languages and package managers](../scanning-with-snyk/scan-application-code/snyk-open-source/language-and-package-manager-support/).
-* **Snyk Code**: see [Snyk Code - Supported languages and frameworks](../scanning-with-snyk/scan-application-code/snyk-code/snyk-code-language-and-framework-support.md).
-* **Snyk Container**: see [Supported operating system distributions.](../scanning-with-snyk/snyk-container/supported-operating-system-distributions.md)
-* **Snyk Infrastructure as Code**: [Snyk IaC ](../scanning-with-snyk/scan-cloud-deployment/snyk-infrastructure-as-code/)supports configuration files for HashiCorp Terraform, AWS CloudFormation, Kubernetes, and Azure Resource Manager (ARM).
-* **Snyk Cloud:** [Snyk Cloud](../scanning-with-snyk/scan-cloud-deployment/snyk-cloud/) supports scanning [Amazon Web Services resources](../scanning-with-snyk/scan-cloud-deployment/snyk-cloud/supported-aws-resources-for-snyk-cloud.md).
+* **Snyk Open Source**: see [Open Source - Supported languages and package managers](../scan-with-snyk/scan-application-code/snyk-open-source/language-and-package-manager-support/).
+* **Snyk Code**: see [Snyk Code - Supported languages and frameworks](../scan-with-snyk/scan-application-code/snyk-code/snyk-code-language-and-framework-support.md).
+* **Snyk Container**: see [Supported operating system distributions.](../scan-with-snyk/snyk-container/supported-operating-system-distributions.md)
+* **Snyk Infrastructure as Code**: [Snyk IaC ](../scan-with-snyk/scan-cloud-deployment/snyk-infrastructure-as-code/)supports configuration files for HashiCorp Terraform, AWS CloudFormation, Kubernetes, and Azure Resource Manager (ARM).
+* **Snyk Cloud:** [Snyk Cloud](../scan-with-snyk/scan-cloud-deployment/snyk-cloud/) supports scanning [Amazon Web Services resources](../scan-with-snyk/scan-cloud-deployment/snyk-cloud/supported-aws-resources-for-snyk-cloud.md).
 
 ### Supported integrations
 

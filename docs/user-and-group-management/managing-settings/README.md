@@ -8,7 +8,7 @@ Settings include:
 
 * General
 * [Integrations](https://docs.snyk.io/integrations)
-* [Languages](../../scanning-with-snyk/scan-application-code/snyk-open-source/language-and-package-manager-support/)
+* [Languages](../../scan-with-snyk/scan-application-code/snyk-open-source/language-and-package-manager-support/)
 * [Snyk Code](https://docs.snyk.io/snyk-code)
 * [Infrastructure as Code](https://docs.snyk.io/snyk-infrastructure-as-code)
 * [Usage](https://docs.snyk.io/user-and-group-management/managing-settings/usage-page-details)

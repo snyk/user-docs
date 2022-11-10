@@ -145,7 +145,7 @@ If you choose to re-enable this integration later, you'll need to re-enter your 
 
 The Connect App integration is a layer on top of the regular App Password integration, which allows your developers to consume Snyk from the Bitbucket interface.
 
-> The Connect App currently supports only the [Snyk Open Source](../../../scanning-with-snyk/scan-application-code/snyk-open-source/) and [Snyk Container](../../../scanning-with-snyk/snyk-container/) products.
+> The Connect App currently supports only the [Snyk Open Source](../../../scan-with-snyk/scan-application-code/snyk-open-source/) and [Snyk Container](../../../scan-with-snyk/snyk-container/) products.
 
 By adding the Connect App to your Bitbucket workspaces, your workspaces members can import repos and see the security data in a dedicated Snyk tab in Bitbucket Cloud:
 

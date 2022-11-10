@@ -9,7 +9,7 @@ Data residency allows you to control what region Snyk hosts a selected subset of
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-Data residency is available for [Snyk Open Source](../scanning-with-snyk/scan-application-code/snyk-open-source/), [Snyk Code](../scanning-with-snyk/scan-application-code/snyk-code/), [Snyk Container](../scanning-with-snyk/snyk-container/), and [Snyk Infrastructure as Code (IaC)](../scanning-with-snyk/scan-cloud-deployment/snyk-infrastructure-as-code/).
+Data residency is available for [Snyk Open Source](../scan-with-snyk/scan-application-code/snyk-open-source/), [Snyk Code](../scan-with-snyk/scan-application-code/snyk-code/), [Snyk Container](../scan-with-snyk/snyk-container/), and [Snyk Infrastructure as Code (IaC)](../scan-with-snyk/scan-cloud-deployment/snyk-infrastructure-as-code/).
 
 ### **How does it work?**
 

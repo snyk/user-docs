@@ -38,7 +38,7 @@ See [view-project-information.md](../../../snyk-web-ui/introduction-to-snyk-proj
 For some languages, Snyk can fix vulnerabilities using fix pull/merge requests.
 
 {% hint style="info" %}
-See [what-languages-do-we-support-fix-pull-requests-or-merge-requests.md](../../../fixing-and-reporting-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md "mention")
+See [what-languages-do-we-support-fix-pull-requests-or-merge-requests.md](../../../fix-and-report-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md "mention")
 {% endhint %}
 
 Navigate to the **Issues** view for a project:
@@ -56,4 +56,4 @@ To fix vulnerabilities:
 
 ![](<../../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22 (1).png>)
 
-See [fix-your-vulnerabilities.md](../../../fixing-and-reporting-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md "mention") for more details.
+See [fix-your-vulnerabilities.md](../../../fix-and-report-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md "mention") for more details.

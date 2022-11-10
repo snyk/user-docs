@@ -4,12 +4,12 @@ Snyk CLI brings [functionality of Snyk](https://docs.snyk.io/introducing-snyk#sn
 
 ![Snyk CLI test command output](../.gitbook/assets/snyk-cli-screenshot.png)
 
-Snyk CLI scanning for Open Source supports many languages and tools, including Java, JavaScript, Python, PHP, Ruby, Scala, .NET, Golang, and C/C++. For more information see [Open source language and package manager support](../scanning-with-snyk/scan-application-code/snyk-open-source/language-and-package-manager-support/).
+Snyk CLI scanning for Open Source supports many languages and tools, including Java, JavaScript, Python, PHP, Ruby, Scala, .NET, Golang, and C/C++. For more information see [Open source language and package manager support](../scan-with-snyk/scan-application-code/snyk-open-source/language-and-package-manager-support/).
 
 Snyk CLI also supports:
 
-* [Snyk Code scanning](../scanning-with-snyk/scan-application-code/snyk-code/cli-for-snyk-code/)
-* [Snyk Container scanning](../scanning-with-snyk/snyk-container/snyk-cli-for-container-security/) including Docker scanning
-* [Snyk Infrastructure as Code scanning](../scanning-with-snyk/scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/) including Terraform and Kubernetes (K8s) projects
+* [Snyk Code scanning](../scan-with-snyk/scan-application-code/snyk-code/cli-for-snyk-code/)
+* [Snyk Container scanning](../scan-with-snyk/snyk-container/snyk-cli-for-container-security/) including Docker scanning
+* [Snyk Infrastructure as Code scanning](../scan-with-snyk/scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/) including Terraform and Kubernetes (K8s) projects
 
 For additional information see [Supported languages](https://docs.snyk.io/introducing-snyk/snyk-languages-and-integrations#supported-languages).

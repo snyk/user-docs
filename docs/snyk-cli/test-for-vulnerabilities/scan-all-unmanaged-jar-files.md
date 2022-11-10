@@ -1,6 +1,6 @@
 # Scan all unmanaged JAR files
 
-The Snyk CLI can scan unmanaged JAR files in [Java applications](../../scanning-with-snyk/scan-application-code/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md). The CLI identifies the package name, version, and vulnerabilities only if the local JAR file hash matches the Maven Central JAR file hash.
+The Snyk CLI can scan unmanaged JAR files in [Java applications](../../scan-with-snyk/scan-application-code/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md). The CLI identifies the package name, version, and vulnerabilities only if the local JAR file hash matches the Maven Central JAR file hash.
 
 Java apps typically have JAR files in a number of locations within an application. To avoid problems from scanning multiple JAR files in the same folder, scan individual JAR files, especially for old Java apps that use Ant.
 

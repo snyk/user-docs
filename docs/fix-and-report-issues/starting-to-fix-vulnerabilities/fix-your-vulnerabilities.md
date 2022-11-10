@@ -7,7 +7,7 @@ To fix a vulnerability with Snyk:
 * Click **Fix this vulnerability** on a specific [issue card](../../snyk-web-ui/introduction-to-snyk-projects/issue-card-information.md) on the relevant project page.
 * If you are using a [Source code integration](../../integrations/git-repository-and-ci-cd-integrations-comparisons/git-repository-scm-integrations/):
   * Click **Open a fix PR** on the project page.
-  * Use [automated pull requests](../../scanning-with-snyk/scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md) when new fixes become available that help you to fix a vulnerability.
+  * Use [automated pull requests](../../scan-with-snyk/scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md) when new fixes become available that help you to fix a vulnerability.
 
 ### How it works
 

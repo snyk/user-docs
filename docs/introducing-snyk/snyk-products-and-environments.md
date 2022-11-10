@@ -4,11 +4,11 @@
 
 You can use Snyk products to scan:
 
-* **Open source vulnerabilities:** [Snyk Open Source](https://docs.snyk.io/snyk-open-source) (see also [Snyk license compliance](../scanning-with-snyk/scan-application-code/snyk-open-source/licenses/) to manage your open source license usage).
+* **Open source vulnerabilities:** [Snyk Open Source](https://docs.snyk.io/snyk-open-source) (see also [Snyk license compliance](../scan-with-snyk/scan-application-code/snyk-open-source/licenses/) to manage your open source license usage).
 * **Source code:** [Snyk Code](https://snyk.io/product/snyk-code/) - find and fix vulnerabilities in your source code during the coding stage in your native workflow.
 * **Container images and Kubernetes applications:** [Snyk Container](https://docs.snyk.io/snyk-container) - find and fix vulnerabilities in container images and Kubernetes applications.
 * **Configuration code:** [Snyk Infrastructure as Code (IaC)](https://docs.snyk.io/snyk-infrastructure-as-code) - find and fix insecure configurations in Terraform and Kubernetes code.
-* **Cloud infrastructure:** [Snyk Cloud](../scanning-with-snyk/scan-cloud-deployment/snyk-cloud/) - find and fix misconfigurations in Amazon Web Services accounts.
+* **Cloud infrastructure:** [Snyk Cloud](../scan-with-snyk/scan-cloud-deployment/snyk-cloud/) - find and fix misconfigurations in Amazon Web Services accounts.
 
 ### Snyk environments: choose how to run Snyk
 

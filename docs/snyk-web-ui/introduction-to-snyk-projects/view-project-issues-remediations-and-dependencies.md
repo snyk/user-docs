@@ -26,7 +26,7 @@ You can also select to fix a specific issue, clicking **Fix this vulnerability**
 
 ![](../../.gitbook/assets/image26.png)
 
-See [Fix vulnerabilities with Snyk Open Source](../../scanning-with-snyk/scan-application-code/snyk-open-source/open-source-basics/) for an overview.\
+See [Fix vulnerabilities with Snyk Open Source](../../scan-with-snyk/scan-application-code/snyk-open-source/open-source-basics/) for an overview.\
 See [Fixing and prioritizing issues](https://docs.snyk.io/fixing-and-prioritizing-issues) for more details.
 
 #### View issue details

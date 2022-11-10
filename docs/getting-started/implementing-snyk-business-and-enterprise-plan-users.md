@@ -27,7 +27,7 @@ As you prepare for your teams to start adopting Snyk as part of a secure develop
 
 More information:
 
-* Docs: [Integrations](../scanning-with-snyk/scan-application-code/snyk-code/introducing-snyk-code/key-features/integrations.md)
+* Docs: [Integrations](../scan-with-snyk/scan-application-code/snyk-code/introducing-snyk-code/key-features/integrations.md)
 * Snyk Training: [Ways to integrate Snyk at your company](https://training.snyk.io/courses/ways-to-use-snyk)
 
 #### How to structure your account
