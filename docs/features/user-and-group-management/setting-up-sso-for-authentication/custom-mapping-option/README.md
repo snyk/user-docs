@@ -17,6 +17,10 @@ Within the IdP, you must first pass a custom mapping called `roles` as a string 
 
 To configure this option, send the `roles` array within the SAML attributes or OIDC claims to adhere to one of the following patterns:
 
+{% hint style="warning" %}
+Snyk is currently adding the ability to support the new Group Viewer role in SSO custom mapping. The role array mapping format would be amended with the new role details once the support is ready.
+{% endhint %}
+
 1\. {prefix}-groupadmin
 
 * This role mapping assigns users with the Group Admin and Org Admin roles.
