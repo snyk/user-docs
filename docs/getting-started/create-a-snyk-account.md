@@ -6,11 +6,15 @@ You will need a Snyk account to use Snyk functions.
 
 To create a Snyk account:
 
-1. Go to [https://snyk.io/](https://snyk.io) and click **Sign Up** at the top right of the page.
-2. Select your preferred signup method.
+1.  Go to [https://snyk.io/](https://snyk.io) and click **Start free** on the left of the page, or **Sign up**.\
+
+
+    <figure><img src="../.gitbook/assets/start-free_signup.png" alt=""><figcaption><p>Click to start free or sign up for a Snyk account</p></figcaption></figure>
+2. Choose your preferred signup method.\
+   ![](../.gitbook/assets/signin\_method\_10nov2022.png)
 3. Create a new account as prompted. You now have a free Snyk account! Access your Snyk account at [https://app.snyk.io](https://app.snyk.io)
 
-![](<../.gitbook/assets/image (66) (2) (1).png>)
+![Your free account is ready!](../.gitbook/assets/new\_acct\_created-10nov2022.png)
 
 {% hint style="info" %}
 Different pricing plans are available, see [Plans](../introducing-snyk/plans.md) for details.
@@ -32,7 +36,7 @@ If you click **GitHub**, then fill in the details as prompted (see [Set up an in
 
 Finally, you can [import a Project](import-a-project.md) to scan:
 
-![](../.gitbook/assets/Wizard3.png)
+![](../.gitbook/assets/add\_project-10nov2022.png)
 
 #### Perform setup yourself
 
