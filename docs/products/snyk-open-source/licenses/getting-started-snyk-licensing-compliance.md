@@ -10,7 +10,7 @@ Get started with Snyk license compliance management, to check compliance for the
 The Snyk Default License Policy defines how Snyk identifies potential license issues in the open source packages your projects are using. The default policy applies to all organizations created within your group.
 
 {% hint style="info" %}
-This process describes using the Snyk UI and a [supported source code management ](https://docs.snyk.io/integrations/git-repository-scm-integrations)system.\
+This process describes how to use the Snyk Web UI and a [supported source code management](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) system.\
 You can also use an [IDE tool](https://docs.snyk.io/integrations/ide-tools) or a [CI/CD integration](https://docs.snyk.io/integrations/ci-cd-integrations), or use the [Snyk CLI tool](https://docs.snyk.io/snyk-cli/guides-for-our-cli/getting-started-with-the-cli) to get started using the command line.
 {% endhint %}
 
@@ -25,17 +25,16 @@ Ensure you have:
 
 To take effective action based on license issues, you need to define policies defining these actions, based on license types. Policies provide a way to capture different requirements within an organization, based on factors such as line of business. Work with your legal team to create policies that are specific to your company.
 
-To open your group default license policy, complete the following steps:
+To open your Snyk Group default license policy, complete the following steps:
 
-1. Select the organization dropdown.
-2. Select your Group Overview.
-3. Select the **Policies** tab.
+1. From your Snyk Organization, **Switch group** and select the relevant Group Overview.
+2. Select the **Policies** tab.
 
-![](../../../.gitbook/assets/2022-06-27\_15-16-25.png)
+![](../../../.gitbook/assets/polices4license\_mgmt-03oct2022.png)
 
 ### Create policy rules
 
-Each policy contains rules, detailing which licenses are acceptable and which are forbidden for use, together with a severity level that indicates how severe the license violation is. For example, severity levels for internal-only license issues may be less severe than those released externally.
+Each policy contains rules, detailing which licenses are acceptable and which are forbidden for use, together with a severity level that indicates how severe the license violation is. For example, severity levels for internal-only license issues may be less severe than for those released externally.
 
 To define your group license policy, complete the following steps:
 
@@ -55,7 +54,7 @@ See [Licenses overview](https://docs.snyk.io/snyk-open-source/licenses) and [Set
 
 Snyk’s [Git-based integrations ](https://docs.snyk.io/integrations/git-repository-scm-integrations)support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab:
 
-![](<../../../.gitbook/assets/image3 (1).png>)
+![](<../../../.gitbook/assets/image3 (1) (1).png>)
 
 This example shows a high-severity issue for a GPL-2.0 license, with accompanying instructions as defined in the policies for that license.
 

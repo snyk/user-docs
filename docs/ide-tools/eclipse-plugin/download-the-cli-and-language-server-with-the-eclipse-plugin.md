@@ -6,7 +6,7 @@ The prerequisites include downloading the Snyk CLI, downloading the language ser
 
 The process downloads the Snyk CLI unless you have opted out of download through the plugin, then downloads the language server and uses the CLI for authentication.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-10-19 at 09.10.10.png" alt="Downloading Snyk CLI dependency"><figcaption><p>Downloading Snyk CLI dependency</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-10-19 at 09.10.10 (1).png" alt="Downloading Snyk CLI dependency"><figcaption><p>Downloading Snyk CLI dependency</p></figcaption></figure>
 
 When the download is completed successfully, you will see a success notification in the bottom right corner.
 

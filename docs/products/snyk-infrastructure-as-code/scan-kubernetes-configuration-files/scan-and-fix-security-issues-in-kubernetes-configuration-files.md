@@ -21,4 +21,4 @@ Snyk Infrastructure as Code supports:
    2. If you re-imported the repository in order to import the cloud configuration files, then Snyk imports and tests the configuration files and also re-tests the already imported application manifest files - displaying the test time as "now".
 4. Click the project link you're interested in, to view the scan results and to correct your configuration files accordingly:
 
-![](<../../../.gitbook/assets/image (2) (1) (2) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (2) (1) (2) (1).png>)
