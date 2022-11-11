@@ -661,6 +661,7 @@
     * [Manage users in your group](features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations-1.md)
     * [Managing permissions](features/user-and-group-management/managing-users-and-permissions/managing-permissions.md)
     * [Member Roles](features/user-and-group-management/managing-users-and-permissions/member-roles.md)
+    * [Update Member Roles via API](features/user-and-group-management/managing-users-and-permissions/update-member-roles-via-api.md)
     * [Organization access requests](features/user-and-group-management/managing-users-and-permissions/organization-access-requests.md)
     * [Provision users to Orgs via API](features/user-and-group-management/managing-users-and-permissions/provision-users-to-orgs-via-api.md)
     * [Audit logs](features/user-and-group-management/managing-users-and-permissions/audit-logs.md)
