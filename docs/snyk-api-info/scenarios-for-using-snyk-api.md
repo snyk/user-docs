@@ -208,9 +208,11 @@ Scenario: [Identify-and-import-new-repos](https://github.com/snyk-playground/cx-
 
 API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects)
 
-## API v1 Users
+## API v1 Users and Roles
 
-SEE: [Provision users to Orgs via API](../features/user-and-group-management/managing-users-and-permissions/provision-users-to-orgs-via-api.md)
+SEE:\
+[Provision users to Orgs via API](../features/user-and-group-management/managing-users-and-permissions/provision-users-to-orgs-via-api.md)\
+[Update Member Roles via API](../features/user-and-group-management/managing-users-and-permissions/update-member-roles-via-api.md)
 
 ## API v1 Webhooks
 
