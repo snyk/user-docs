@@ -1,14 +1,14 @@
 # Migrate a Bitbucket Cloud Legacy integration
 
 {% hint style="info" %}
-Snyk recommends using the new Bitbucket Cloud App integration for smoother integration and to ensure long-term support.
+Snyk recommends using the Bitbucket Cloud App integration for smoother integration and to ensure long-term support.
 {% endhint %}
 
-This topic describes how to migrate your existing [Bitbucket Cloud Personal Access Token (PAT) integration](bitbucket-cloud-integration.md) —displayed in Snyk as **Bitbucket Cloud (Legacy)**—to the new **** [**Bitbucket Cloud App**](bitbucket-cloud-app-integration.md) **** integration.
+This topic describes how to migrate your existing [Bitbucket Cloud Personal Access Token (PAT) integration](bitbucket-cloud-integration.md) —displayed in Snyk as **Bitbucket Cloud (Legacy)**—to the [**Bitbucket Cloud App**](bitbucket-cloud-app-integration.md) **** integration.
 
 #### **Watch this Snyk Bitbucket Cloud App migration demo to see how it's done!**&#x20;
 
-Marco Morales, a Partner Solutions Architect at Snyk, talks about the Snyk Bitbucket Cloud App and goes through the process to migrate an existing Legacy integration to the new Snyk Bitbucket Cloud App - in under 5 minutes! &#x20;
+Marco Morales, a Partner Solutions Architect at Snyk, talks about the Snyk Bitbucket Cloud App and goes through the process to migrate an existing Legacy integration to the Snyk Bitbucket Cloud App - in under 5 minutes! &#x20;
 
 _Go to timestamp 2:34 to jump right into the demo:_ &#x20;
 
