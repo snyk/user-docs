@@ -11,7 +11,7 @@ Snyk offers two Bitbucket Cloud integrations: the Personal Access Token (PAT) in
 Snyk's Bitbucket Cloud App integration lets you connect your Snyk Organization to a Bitbucket Cloud Workspace and get all Snyk's core SCM integration features:
 
 * Continuously perform security scanning across all the integrated repositories
-* Detect vulnerabilities in your open source components
+* Detect vulnerabilities in your Open Source components
 * Provide automated fixes and upgrades
 * Provides developer teams with first-party visibility for security issues directly in the Bitbucket interface
 
@@ -42,7 +42,7 @@ To install the Snyk App on your Bitbucket Cloud workspace, you must have **Admin
 
 
 
-    <figure><img src="../../.gitbook/assets/image (108) (2).png" alt=""><figcaption><p>Allow Snyk to access to Bitbucket Cloud</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption><p>Allow Snyk to access to Bitbucket Cloud</p></figcaption></figure>
 3.  Grant access to your Snyk Organization when you're prompted.\
 
 
@@ -55,6 +55,12 @@ Once Snyk is integrated with Bitbucket Cloud, you can see the new Snyk security 
 
 <figure><img src="../../.gitbook/assets/bbcloud-app_snyk-security_6oct2022.png" alt=""><figcaption><p>Bitbucket security insights with Snyk Bitbucket Cloud App</p></figcaption></figure>
 
+_Watch this short video to see how to set up **Snyk security**_ _in Bitbucket Cloud!_
+
+{% embed url="https://thoughtindustries-1.wistia.com/medias/peusq0bkie" %}
+
+__
+
 ### Installing the Snyk App from Bitbucket Cloud
 
 If you need to, you can also install the Snyk Bitbucket Cloud App integration while you're in Bitbucket Cloud.&#x20;
@@ -62,6 +68,8 @@ If you need to, you can also install the Snyk Bitbucket Cloud App integration wh
 In one of your Bitbucket Cloud workspaces, go to the **Security** tab in one of your repositories, click **Try now**, and follow the procedure.&#x20;
 
 ![Install the Snyk Bitbucket Cloud App from Bitbucket](../../.gitbook/assets/install-app-bbc\_6oct-2022.png)
+
+
 
 ## Adding Bitbucket repositories to Snyk
 
@@ -74,13 +82,13 @@ After you add them, Snyk scans the selected repositories for dependency files in
 
 The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/bbc-snyk_redo_21sept2022.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bbc-snyk_redo_21sept2022 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Bitbucket integration features
 
 Once the integration is in place, you'll be able to use capabilities such as:
 
-* [Project level security reports](bitbucket-cloud-app-integration.md#project-level-security-reports)
+* [Project_-_level security reports](bitbucket-cloud-app-integration.md#project-level-security-reports)
 * [Project monitoring and automatic fix pull requests](bitbucket-cloud-app-integration.md#project-monitoring-and-automatic-fix-pull-requests)
 * [Pull request testing](bitbucket-cloud-app-integration.md#pull-request-tests)
 * [First-party interface in Bitbucket Cloud](bitbucket-cloud-app-integration.md#first-party-interface-in-bitbucket-cloud)
@@ -104,7 +112,7 @@ To review and adjust the automatic fix pull request settings:
 1. In Snyk, go to  <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Cloud App**, and click **Edit Settings**.
 2. Scroll to the **Automatic fix pull requests** section and configure the relevant options.
 
-![](<../../.gitbook/assets/bitbucket\_cloud-auto\_fix\_prs\_30june2022 (1).png>)
+![](<../../.gitbook/assets/bitbucket\_cloud-auto\_fix\_prs\_30june2022 (2) (1).png>)
 
 {% hint style="info" %}
 Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are not automatically assigned to the default reviewer set in your Bitbucket Cloud account. More info on [Snyk automated pull requests](https://docs.snyk.io/products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities).
