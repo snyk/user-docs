@@ -2,6 +2,8 @@
 
 To use the CLI you must install it and authenticate. See [Install the Snyk CLI](install-the-snyk-cli.md) and the [Auth](commands/auth.md) command help. You can refer to the [release notes](https://github.com/snyk/cli/releases) for a summary of changes in each release.
 
+**Note:** Before you can use the CLI you must install your package manager. The needed third-party tools such as Gradle or Maven must be in the PATH.
+
 After authenticating you can **test your installation**. Change directory into a folder containing a supported package manifest file such as package.json, pom.xml, or composer.lock) (`cd /my/project/`) and run `snyk test`.
 
 Alternatively, you can perform a **quick test** on a public npm package, for example, `snyk test ionic`.
