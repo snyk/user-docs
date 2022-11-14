@@ -110,7 +110,7 @@ API v1 Issues: [Bulk ignore issues](https://docs.snyk.io/snyk-api-info/scenarios
 
 API v1 Projects: [List all issues including Snyk Code issues in all the projects in a group](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#list-all-issues-including-snyk-code-issues-in-all-the-projects-in-an-organization)
 
-### API v1 Organizations
+## API v1 Organizations
 
 SEE also:\
 API v1 Integrations: [Rotate or change your broker token for any reason](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#rotate-or-change-your-broker-token-for-any-reason)
