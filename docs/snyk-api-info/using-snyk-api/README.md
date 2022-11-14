@@ -20,6 +20,7 @@ This group of pages provides detailed information about aspects of using the Sny
 * [Request body **schema** in Snyk REST API](request-body-schema-in-snyk-rest-api.md)
 * [Choosing a **service account type** to use with Snyk APIs](choosing-a-service-account-type-to-use-with-snyk-apis.md)
 * ****[**Solutions** for specific use cases](solutions-for-specific-use-cases.md)
+* [Find the differences between **versions** in the Snyk REST API](find-the-differences-between-versions-in-the-snyk-rest-api.md)
 
 For more articles on using Snyk API, see the following:
 
