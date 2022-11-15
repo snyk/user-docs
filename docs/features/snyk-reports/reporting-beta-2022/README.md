@@ -3,7 +3,7 @@
 **Note:** This new page group will supersede Snyk reports, Reports overview, General actions, Summary tab, and Issues tab. Navigation for the Dependencies tab and Licenses tab is moving to the left navigation.
 
 {% hint style="info" %}
-Snyk reporting is available to all customers on Business or Enterprise plans. To get access to the **Reporting Beta** tab, a Snyk admin can activate the reporting in [Snyk Preview](https://docs.snyk.io/features/user-and-group-management/managing-settings/snyk-preview). Note that Reporting Beta is not available in the EU or with Snyk Private Cloud.
+Snyk reporting is available to all customers on Business or Enterprise plans. To get access to the **Reporting Beta** tab, a Snyk admin can activate the reporting in [Snyk Preview](https://docs.snyk.io/features/user-and-group-management/managing-settings/snyk-preview). Note that Reporting Beta is not available for customers on Multi-Tenant EU or with Snyk Private Cloud.
 {% endhint %}
 
 Snyk reports provide the visibility and analytics needed to drive data-based conversations between development and security.

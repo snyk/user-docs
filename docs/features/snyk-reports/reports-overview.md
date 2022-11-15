@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Snyk reporting is available to all customers on Business or Enterprise plans. To get access to the **Reporting Beta** tab, a Snyk admin can activate the reporting in [Snyk Preview](https://docs.snyk.io/features/user-and-group-management/managing-settings/snyk-preview). Note that Reporting Beta is not available in the EU or with Snyk Private Cloud.
+Snyk reporting is available to all customers on Business or Enterprise plans. To get access to the **Reporting Beta** tab, a Snyk admin can activate the reporting in [Snyk Preview](https://docs.snyk.io/features/user-and-group-management/managing-settings/snyk-preview). Note that Reporting Beta is not available for customers on Multi-Tenant EU or with Snyk Private Cloud.
 {% endhint %}
 
 The **Reports** area offers data and analytics across all of your projects, displaying historical and aggregated data about projects, issues, dependencies, and licenses. Data in each of the four tabs (seen below) is displayed based on the organization in which you are working, and you can filter this data with different parameters depending on the tab you're viewing.
