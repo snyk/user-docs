@@ -63,6 +63,7 @@ We know how important it is for you to protect your data. Our products only acce
 
 * Snyk accesses your repository code for a one-time analysis, caching it for a period of up to 24 hours. After this period, only the location (file path, line, and column) to the issues found, the issue id and explanations are maintained. Your code is removed and is not stored in the Snyk network or logs.
 * Results are stored in a database and used for analytic and monitoring purposes by Snyk.
+* When viewing Snyk Code issue details on the Snyk App, the relevant files are loaded and cached up to 12 hours.
 * Snyk Code does not use any customer code (1) for engine training purposes, or (2) to extract examples to show possible fixes.
 * The scan results do not contain original source code but rather pointers to positions (e.g., files, line, and column numbers), plus identification meta-information so that results are displayed using the correct version of the source code.
 * Snyk stores repository-specific information. Examples: Names of the Git repository, file names.
