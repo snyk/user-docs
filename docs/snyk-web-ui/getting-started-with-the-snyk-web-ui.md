@@ -30,7 +30,7 @@ If you're signing into a paid Team, Business, or Enterprise account, you'll also
 * [Get help](getting-started-with-the-snyk-web-ui.md#view-helpful-resources)
 * [Manage your user account](getting-started-with-the-snyk-web-ui.md#manage-account-preferences-and-settings)
 
-## [Dashboard](broken-reference/)
+## Dashboard
 
 View your pending tasks, vulnerable projects, invite team members, and add new projects. The **Pending tasks** section shows the next chores to be handled for the projects in a Snyk organization.
 
