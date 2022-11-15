@@ -5,6 +5,7 @@ This group of pages provides detailed information about aspects of using the Sny
 * ****[**Aggregated project issues** API returns an array of ignoreReasons](aggregated-project-issues-api-returns-an-array-of-ignorereasons.md)
 * [Determine why **API import targets** has failed](determine-why-api-import-targets-has-failed.md)
 * [Snyk **API token** permissions users can control](api-token-permissions-users-can-control.md)
+* [List all projects with a vulnerability linked to a **CVE**](list-all-projects-with-a-vulnerability-linked-to-a-cve.md)****
 * [Get a list of **fixed issues** using Snyk API](get-a-list-of-fixed-issues-using-snyk-api.md)
 * [**Issues** information for Snyk products in Snyk APIs](issues-information-for-snyk-products-in-snyk-apis.md)
 * [Snyk API v1 Project **issue paths** endpoints](snyk-api-v1-path-endpoint-information.md)
