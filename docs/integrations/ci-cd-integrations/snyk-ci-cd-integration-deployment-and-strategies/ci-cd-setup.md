@@ -18,7 +18,7 @@ You can **define the target organization** in the Snyk CLI, by either URL orgslu
 * You can define the target organization using its URL slug (orgslugname), as displayed in the address bar of the browser in the Snyk UI.
 * Alternatively you can define the target organization using its `ORG_ID` in the organization's settings page.
 
-![Organization ID](../../../.gitbook/assets/image1.png)
+<figure><img src="../../../.gitbook/assets/image1.png" alt="Organization ID"><figcaption><p>Organization ID</p></figcaption></figure>
 
 For more information see see [How to select the organization to use in the CLI.](../../../snyk-cli/test-for-vulnerabilities/how-to-select-the-organization-to-use-in-the-cli.md)
 
@@ -58,7 +58,7 @@ Make sure you do not check your API token into source control, to avoid exposing
 See guidance for how to do this on:
 
 * [Travis](https://docs.travis-ci.com/user/environment-variables/)
-* [Circle](https://circleci.com/docs/environment-variables/)
-* [Codeship](https://codeship.com/documentation/continuous-integration/set-environment-variables/)
+* [Circle CI](https://circleci.com/docs/set-environment-variable/)
+* [Codeship Basic](https://docs.cloudbees.com/docs/cloudbees-codeship/latest/basic-builds-and-configuration/set-environment-variables), [Codeship Pro](https://docs.cloudbees.com/docs/cloudbees-codeship/latest/pro-builds-and-configuration/environment-variables)
 
 You can find others through a [Google search](https://www.google.co.uk/search?q=setting+up+env+variables+in+CI).
