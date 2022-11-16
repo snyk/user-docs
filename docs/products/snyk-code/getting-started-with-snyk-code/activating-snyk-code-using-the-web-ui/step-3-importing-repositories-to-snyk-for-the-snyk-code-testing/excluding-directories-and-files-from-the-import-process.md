@@ -5,6 +5,7 @@ When you import a repository to be tested by Snyk Code, you can exclude certain 
 {% hint style="warning" %}
 * In Snyk Code, the `.snyk` file can only be used for excluding directories and files from import. It cannot be used to ignore vulnerabilities or for any other action as in other Snyk products.
 * Currently, the Exclude option in the `.snyk` file applies only to the Snyk Web UI and CLI Environments, and not to working with Snyk Code via the IDE Environment
+* In certain cases your excluded files may not be excluded if theres an invalid `.snyk` file. In cases like this, the scan will continue without the `.snyk` file.
 {% endhint %}
 
 You can also use the instructions in this section to exclude directories and files from the [Snyk Code CLI test](../../../cli-for-snyk-code/testing-your-source-code-via-the-cli.md), by creating the `.snyk` file in your tested repository.
