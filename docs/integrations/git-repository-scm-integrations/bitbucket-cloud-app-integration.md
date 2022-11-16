@@ -115,7 +115,9 @@ To review and adjust the automatic fix pull request settings:
 ![](<../../.gitbook/assets/bitbucket\_cloud-auto\_fix\_prs\_30june2022 (2) (1).png>)
 
 {% hint style="info" %}
-Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are not automatically assigned to the default reviewer set in your Bitbucket Cloud account. More info on [Snyk automated pull requests](https://docs.snyk.io/products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities).
+Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are _not_ automatically assigned to the default reviewer set in your Bitbucket Cloud account.&#x20;
+
+Click for more info on [Snyk automated pull requests](https://docs.snyk.io/products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities).
 {% endhint %}
 
 ### Pull request tests
