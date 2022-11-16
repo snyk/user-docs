@@ -1,5 +1,13 @@
 # Automatic import/deletion of Kubernetes workloads projects
 
+{% hint style="warning" %}
+This feature is still in beta. Auto import and deletion are not guaranteed and can depend on the network.
+
+If you don't find your workload in Snyk, please import the workload through manual import.
+
+If your workload persists in Snyk after deletion from your cluster, please delete the workload through manual deletion.
+{% endhint %}
+
 {% hint style="info" %}
 With the same integration id, you can import **many** clusters to **one** Snyk organization by giving clusters a unique cluster name during installation.
 

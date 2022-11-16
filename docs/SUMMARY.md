@@ -630,6 +630,7 @@
       * [Step 6: Testing the Code Agent – Snyk Broker Setup](features/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-6-testing-the-code-agent-snyk-broker-setup.md)
   * [Snyk Broker - Container Registry Agent](features/snyk-broker/snyk-broker-container-registry-agent/README.md)
     * [Setting up the Container Registry Agent for a brokered ECR integration](features/snyk-broker/snyk-broker-container-registry-agent/setting-up-the-container-registry-agent-for-a-brokered-ecr-integration.md)
+    * [Container Registry Agent advanced configuration](features/snyk-broker/snyk-broker-container-registry-agent/container-registry-agent-advanced-configuration.md)
   * [Snyk Broker - Infrastructure as Code detection](features/snyk-broker/snyk-broker-infrastructure-as-code-detection/README.md)
     * [Detecting Terraform configuration files using a broker](features/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-terraform-configuration-files-using-a-broker.md)
     * [Detecting CloudFormation configuration files using a Broker](features/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-cloudformation-configuration-files-using-a-broker.md)
