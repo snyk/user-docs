@@ -20,4 +20,6 @@ You can set the following configuration options in the Snyk preferences.
 * `Send error reports to Snyk`: Send errors from Language Server to Snyk to enable quicker bug fixing. Default: `Enabled`.
 * `Send usage statistics to Snyk`: Allow Snyk to get usage data to improve workflows. Default: `Enabled`.
 
+Hi I'm nico :)
+
 ###
