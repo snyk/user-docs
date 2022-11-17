@@ -2,12 +2,11 @@
 
 These strategies are useful to teams using the Snyk SCA ([Software Composition Analysis](https://snyk.io/blog/what-is-software-composition-analysis-sca-and-does-my-company-need-it/)) testing features.
 
+Use CLI flags like `--fail-on` and `--severity-threshold` to customize the failure status for the build task. For more advanced usage, you can use `--json` to generate a JSON file containing the full vulnerability report, and set your own build failure status based on the JSON data.
+
 ## Gradle and Scala
 
 * For "multi-project" configurations, test all sub-projects. Use this option with the `monitor` or `test` command: `--all-sub-projects`.
-
-
-
 * To scan specific configurations, select certain values of configuration attributes to resolve the dependencies. Use this option with the `test` or `monitor` command: `--configuration-attributes=`.
 
 ## Python
