@@ -143,7 +143,7 @@
       * [Copy the Azure Function URL](snyk-api-info/snyk-webhooks/using-snyk-webhooks-to-integrate-new-relic-with-snyk-through-an-azure-function-app/copy-the-azure-function-url.md)
       * [Create a Snyk Webhook](snyk-api-info/snyk-webhooks/using-snyk-webhooks-to-integrate-new-relic-with-snyk-through-an-azure-function-app/create-a-snyk-webhook.md)
       * [New Relic Curated UI and Snyk Custom Dashboard](snyk-api-info/snyk-webhooks/using-snyk-webhooks-to-integrate-new-relic-with-snyk-through-an-azure-function-app/new-relic-curated-ui-and-snyk-custom-dashboard.md)
-    * [Webhook tutorial](snyk-api-info/snyk-webhooks/tutorial.md)
+    * [Using Snyk webhooks with Zapier](snyk-api-info/snyk-webhooks/tutorial.md)
 * [Snyk for IDEs](ide-tools/README.md)
   * [Eclipse plugin](ide-tools/eclipse-plugin/README.md)
     * [Download the CLI and language server with the Eclipse plugin](ide-tools/eclipse-plugin/download-the-cli-and-language-server-with-the-eclipse-plugin.md)
