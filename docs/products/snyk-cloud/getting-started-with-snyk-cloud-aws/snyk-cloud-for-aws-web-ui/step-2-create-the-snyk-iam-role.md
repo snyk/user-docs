@@ -27,7 +27,7 @@ You can create the IAM role using one of the following tools, according to the t
 Before you use the [Terraform CLI](https://www.terraform.io/downloads), ensure you [configure it to use your AWS credentials](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication-and-configuration).
 {% endhint %}
 
-1. In your terminal, navigate to the directory containing the Snyk IAM role Terraform file (named `permissions.tf` if downloaded from the Snyk Web UI).
+1. In your terminal, navigate to the directory containing the Snyk IAM role Terraform file (named `snyk-permissions-aws.tf` if downloaded from the Snyk Web UI).
 2. Using the Terraform CLI, initialize the Terraform project:
 
 ```
@@ -54,14 +54,14 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 Before you use the [AWS CLI](https://aws.amazon.com/cli/), ensure you [configure it to use your AWS credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html).
 {% endhint %}
 
-1. In your terminal, navigate to the directory containing the Snyk IAM role CloudFormation file (named `permissions.yml` if downloaded from the Snyk Web UI).
-2. Using the AWS CLI, launch the CloudFormation stack, replacing `snyk-cloud-role` with the name of your IAM role (if you changed it) and `permissions.yml` with the name of your file:
+1. In your terminal, navigate to the directory containing the Snyk IAM role CloudFormation file (named `snyk-permissions-aws.yml` if downloaded from the Snyk Web UI).
+2. Using the AWS CLI, launch the CloudFormation stack, replacing `snyk-cloud-role` with the name of your IAM role (if you changed it) and `snyk-permissions-aws.yml` with the name of your file:
 
 ```
 aws cloudformation create-stack \
   --stack-name snyk-cloud-role \
   --capabilities CAPABILITY_NAMED_IAM \
-  --template-body file://permissions.yml
+  --template-body file://snyk-permissions-aws.yml
 ```
 
 3\. AWS then creates the IAM role. This typically takes about a minute. To check if it is finished, get the stack status, replacing `snyk-cloud-role` with the name of your IAM role:

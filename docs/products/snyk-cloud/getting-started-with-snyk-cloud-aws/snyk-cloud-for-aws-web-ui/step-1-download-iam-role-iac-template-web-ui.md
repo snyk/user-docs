@@ -10,7 +10,7 @@ You can choose the template format: either [Terraform HCL](https://www.terraform
 
 1. In the [Snyk Web UI](https://app.snyk.io), navigate to **Integrations > Cloud platforms**.
 2. Select **AWS**.
-3. On the **Add AWS Environment** modal, select the **Terraform** button to download a `permissions.tf` file, or **CloudFormation** to download a `permissions.yml` file:
+3. On the **Add AWS Environment** modal, select the **Terraform** button to download a `snyk-permissions-aws.tf` file, or **CloudFormation** to download a `snyk-permissions-aws.yml` file:
 
 <figure><img src="../../../../.gitbook/assets/snyk-cloud-onboard-aws-ui-download-buttons.png" alt=""><figcaption><p>The Snyk Cloud Add AWS Environment modal</p></figcaption></figure>
 
