@@ -14,11 +14,11 @@ With you enable the broker integration, you see a new option to add projects, **
 
 Click on **Bitbucket Server** to see the project import screen. Snyk queries your Bitbucket Data Center instance for the projects visible to the login you provided, and displays them for selection. This example shows the final project associated with one of our members' repositories:
 
-![Bitbucket Server repository selection process](<../../../../../.gitbook/assets/broker-4-add-repository-bbs (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5).png>)
+![Bitbucket Server repository selection process](<../../../../../.gitbook/assets/broker-4-add-repository-bbs (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (3).png>)
 
 For this tutorial, we'll import both repositories under the project: you can choose fewer or additional files if needed:
 
-![](../../../../../.gitbook/assets/broker-5-add-repository-bbs.png)
+![](<../../../../../.gitbook/assets/broker-5-add-repository-bbs (1).png>)
 
 Clicking **Add selected repositories** to import all those projects to Snyk.io, and initiate a scan operation.
 

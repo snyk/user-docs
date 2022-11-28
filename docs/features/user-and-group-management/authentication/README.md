@@ -1,4 +1,4 @@
-# Authentication
+# Managing authentication
 
 Snyk offers API tokens to enable integrations with third-party developer tools for authentication of your personal account, or alternatively in lieu of credentials to integrate a service account.
 
@@ -11,9 +11,9 @@ With Snyk, you can use one of the following identity providers for authenticatio
 * GitHub
 * Bitbucket
 * Google
-* Azure
+* Azure AD
+* Docker ID
 * Single Sign-On (SSO) - see [setting-up-sso-for-authentication](../setting-up-sso-for-authentication/ "mention")
-* DockerID
 
 {% hint style="info" %}
 **Feature availability**\
@@ -21,5 +21,5 @@ Single sign-on is available with Enterprise and Business plans. See [pricing pla
 {% endhint %}
 
 {% hint style="info" %}
-Logging in with a different provider than the one that you registered with when you first created your Snyk account will create a separate new Snyk account.
+Logging in with a different provider from the one that you registered with when you first created your Snyk account will create a separate new Snyk account.
 {% endhint %}

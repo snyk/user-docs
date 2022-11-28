@@ -69,11 +69,11 @@ The first is on your integration settings page, where you'll see your current in
 
 You can also check the status directly on the Azure Functions integration settings page (found by clicking "**Edit settings**" on the integration settings page shown above). If you've entered credentials, you'll see a box indicating whether or not Snyk is able to correctly connect to Azure:
 
-![](<../../.gitbook/assets/image (31) (2).png>)
+![](<../../.gitbook/assets/image (31) (1).png>)
 
 If you are unable to connect, re-enter your account credentials to verify that they are correct:
 
-![](<../../.gitbook/assets/image (27) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (27) (1) (1) (1).png>)
 
 ## **Disable the Azure Functions integration**
 
@@ -97,7 +97,7 @@ In either case, you'll see a list of any available Function apps on the Azure ac
 **NOTE:** Current support exists for importing **v2 functions only--all functions will be ignored.**
 {% endhint %}
 
-![](<../../.gitbook/assets/image (30) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (30) (1) (1).png>)
 
 As soon as you've added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Azure functions in your [project dashboard](https://app.snyk.io/projects). You'll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to fix:
 
