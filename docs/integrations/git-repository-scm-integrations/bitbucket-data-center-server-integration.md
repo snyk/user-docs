@@ -18,7 +18,7 @@ _Need a little help from your friends?_ Check out the [Snyk and Bitbucket best p
 4. **Save** your changes.\
    Snyk connects to your Bitbucket DC/Server instance. When the connection succeeds, the following indications appear:
 
-![](../../.gitbook/assets/bitbucket\_server-18july2022.png)
+![](<../../.gitbook/assets/bitbucket\_server-18july2022 (2).png>)
 
 To select the repositories for Snyk to monitor:
 

@@ -28,7 +28,7 @@ An example follows of setting up an Azure AD Enterprise Application and connecti
     <figure><img src="../../../../.gitbook/assets/8 (2).png" alt="Select SAML"><figcaption><p>Select SAML</p></figcaption></figure>
 9.  Click **Edit** under **Basic SAML configuration**.
 
-    <figure><img src="../../../../.gitbook/assets/9 (2).png" alt="Edit basic SAML configuration"><figcaption><p>Edit basic SAML configuration</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/9.png" alt="Edit basic SAML configuration"><figcaption><p>Edit basic SAML configuration</p></figcaption></figure>
 10. Add the Identity (Entity ID) and reply URL (Assertion Consumer Service URL) you obtained from Snyk and click **Save**; **** then close the edit window.
 
     <figure><img src="../../../../.gitbook/assets/10 (1).png" alt="Entity ID and Assertion Consumer Service URL"><figcaption><p>Entity ID and Assertion Consumer Service URL</p></figcaption></figure>
@@ -36,7 +36,7 @@ An example follows of setting up an Azure AD Enterprise Application and connecti
 
     <figure><img src="../../../../.gitbook/assets/11.png" alt="Login URL"><figcaption><p>Login URL</p></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/1 (1) (3).png" alt="Sign in URL in Snyk portal"><figcaption><p>Sign in URL in Snyk portal</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/1 (1).png" alt="Sign in URL in Snyk portal"><figcaption><p>Sign in URL in Snyk portal</p></figcaption></figure>
 12. Return to Azure AD and click **Download** next to **Certificate (Base64)**.
 
     <figure><img src="../../../../.gitbook/assets/13.png" alt="Download SAML Certificate (Base 64)"><figcaption><p>Download SAML Certificate (Base 64)</p></figcaption></figure>
@@ -46,10 +46,10 @@ An example follows of setting up an Azure AD Enterprise Application and connecti
 14. Refer to [step 3](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/self-serve-single-sign-on-sso#step-3.-snyk-sso-settings) of the Snyk self serve SSO guide for how new users should be treated when signing in and choose the option you would like to use: **Group member, Org collaborator**, or **Org admin**.
 15. Return to Azure AD and click **Edit** under **Attributes and Claims**.
 
-    <figure><img src="../../../../.gitbook/assets/15 (1).png" alt="Edit Azure AD attributes and claims"><figcaption><p>Edit Azure AD attributes and claims</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/15.png" alt="Edit Azure AD attributes and claims"><figcaption><p>Edit Azure AD attributes and claims</p></figcaption></figure>
 16. Copy the claim names from Azure to Snyk as follows and **Save changes** in Snyk to finish the configuration.
 
-    <figure><img src="../../../../.gitbook/assets/16 (1).png" alt="Copy from Azure portal"><figcaption><p>Copy from Azure portal</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/16.png" alt="Copy from Azure portal"><figcaption><p>Copy from Azure portal</p></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/17 (1).png" alt="dd claim name in Snyk portal"><figcaption><p>Add claim name in Snyk portal</p></figcaption></figure>
 

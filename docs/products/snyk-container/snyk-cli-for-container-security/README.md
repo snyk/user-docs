@@ -63,7 +63,7 @@ This command does the following
 3. Sends that bill of materials to the Snyk service
 4. Returns a link to the Snyk service where you can see the results
 
-![](<../../../.gitbook/assets/monitor (1).png>)
+![](../../../.gitbook/assets/monitor.png)
 
 {% hint style="info" %}
 **Note**\

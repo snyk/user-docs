@@ -8,7 +8,7 @@ You’ll get two alerts in Slack:
 
 **1:** A newly disclosed vulnerability affects you
 
-![](<../../.gitbook/assets/image (23) (1).png>)
+![](<../../.gitbook/assets/image (23) (2).png>)
 
 **2:** A new upgrade or patch is available for a vulnerability that you previously ignored or patched
 
@@ -18,7 +18,7 @@ To set it up, you will need to generate a Slack webhook. You can either do this 
 
 Once you have generated your Slack Webhook URL, go to your 'Manage organization’ settings, and enter the URL.
 
-![](<../../.gitbook/assets/image (24) (2).png>)
+![](<../../.gitbook/assets/image (24) (1).png>)
 
 {% hint style="danger" %}
 Please note currently only webhooks created with Slack Apps are supported; webhooks created with Slack Workflows are not currently supported.

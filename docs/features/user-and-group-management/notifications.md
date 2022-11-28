@@ -30,7 +30,7 @@ Administrators can also manage the notification defaults for others in the [grou
 
 You can also send notifications for an organization to a designated [Slack channel](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration).
 
-![](<../../.gitbook/assets/image (48) (1).png>)
+![](<../../.gitbook/assets/image (48) (1) (1) (1).png>)
 
 ### Define group notification defaults
 
@@ -46,7 +46,7 @@ To navigate to the group level notification settings:
 2. Select the Settings icon.
 3. Select **Notifications**.
 
-![](<../../.gitbook/assets/image (155).png>)
+![](<../../.gitbook/assets/image (155) (1) (1).png>)
 
 #### Issue alert emails
 

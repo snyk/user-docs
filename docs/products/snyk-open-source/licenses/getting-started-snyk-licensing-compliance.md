@@ -54,7 +54,7 @@ See [Licenses overview](https://docs.snyk.io/snyk-open-source/licenses) and [Set
 
 Snyk’s [Git-based integrations ](https://docs.snyk.io/integrations/git-repository-scm-integrations)support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab:
 
-![](<../../../.gitbook/assets/image3 (1) (1).png>)
+![](<../../../.gitbook/assets/image3 (1).png>)
 
 This example shows a high-severity issue for a GPL-2.0 license, with accompanying instructions as defined in the policies for that license.
 

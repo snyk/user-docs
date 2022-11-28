@@ -12,7 +12,7 @@ You can set the following configurations for the plugin, using **Preferences →
 *   **Organization**: set the org to run `snyk test` against (similar to the `--org=` option in the CLI). This setting allows you to specify an organization slug name to run tests for that organization. The value must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.
 
     If not specified, the preferred organization as defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
-* **Additional parameters**: additional CLI `snyk test` options you want to use for the test for Open Source; additional parameters do not apply to Snyk Code or IaC.
+* **Additional parameters**: additional CLI `snyk test` options you want to use for the test for Open Source; additional parameters do not apply to Snyk Code or IaC. **Note:** Use `--unmanaged` **** to scan unmanaged C/C++ files; this scans all files for known open source dependencies.
 * **Snyk Open Source vulnerabilities**: use to analyze the project for open source vulnerabilities through the CLI using Snyk Open Source; enabled by default.
 * **Snyk Infrastructure as Code issues**: use to analyze the project for insecure configurations in Terraform and Kubernetes code; enabled by default.
 * **Snyk Container vulnerabilities**: use to analyze the project for container vulnerabilities in container images and Kubernetes applications; enabled by default.
