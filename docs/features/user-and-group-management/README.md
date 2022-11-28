@@ -16,7 +16,7 @@ SSO makes authentication and provisioning simple; see [setting-up-sso-for-authen
 
 You can manage users and permissions in your groups; See [managing-users-and-permissions](managing-users-and-permissions/ "mention").
 
-![](<../../.gitbook/assets/image (213).png>)
+![](<../../.gitbook/assets/image (71).png>)
 
 ### Manage Groups and Organizations
 
@@ -26,10 +26,10 @@ Learn how Snyk groups and organizations help keep cross-team collaboration seaml
 
 You can manage email notifications, for yourself and your organization. See [notifications.md](notifications.md "mention").
 
-![](<../../.gitbook/assets/image (350) (1) (1).png>)
+![](<../../.gitbook/assets/image (350) (1).png>)
 
 ### Manage settings
 
 Customize your Snyk account for your needs. See [managing-settings](managing-settings/ "mention").
 
-![](<../../.gitbook/assets/image (118) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (118).png>)

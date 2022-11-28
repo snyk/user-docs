@@ -22,8 +22,8 @@ Please see read our blog post about the ability to interpolate variables: [Snyk 
 * Log in to your account and navigate to the relevant group and organization that you want to manage. **Note:** Integrations are managed per organization
 * Enable Snyk to detect Infrastructure as code files as follows:
 
-![Enable\_Snyk\_to\_detect\_Kubernetes\_configuration\_files.gif](../../../.gitbook/assets/enable\_snyk\_to\_detect\_kubernetes\_configuration\_files.gif)
+![](../../../.gitbook/assets/snyk-iac-enable.png)
 
 * If needed, review and adjust settings in the **Infrastructure as code** settings area:
 
-![](<../../../.gitbook/assets/image (105).png>)
+![](<../../../.gitbook/assets/image (274).png>)

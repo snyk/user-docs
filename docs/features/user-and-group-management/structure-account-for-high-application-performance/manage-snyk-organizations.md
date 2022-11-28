@@ -19,7 +19,7 @@ Once you've fine-tuned the settings and integrations for an organization, you ca
 
 1\. On the Snyk Web UI, open the Organizations drop-down list from the top menu, and click the **Create a new organization** option:
 
-![](<../../../.gitbook/assets/Org Settings - Creating New Organization option.png>)
+![](../../../.gitbook/assets/snyk-org-switcher.png)
 
 2\. On the **Create a new organization** page, enter a name for the new organization. Consider using a structured naming convention to identify your organizations.
 
@@ -47,17 +47,11 @@ If groups are being used in the organization, only a Group Admin can delete the 
 
 1\. On the Snyk Web UI, open the Organization drop-down list on the top menu, and select the organization you want to delete:
 
-![](<../../../.gitbook/assets/Org Settings - Selecting an Org.png>)
-
-2\. After the selected organization appears, click the **Org Settings** button<img src="../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png" alt="" data-size="line">on the top menu:
-
-![](<../../../.gitbook/assets/Org Settings - Button.png>)
+2\. After the selected organization appears, click the **Org Settings** button in the left-hand group menu:
 
 3\. On the **Settings** page, select **Genera**l on the left menu:
 
-![](<../../../.gitbook/assets/image (91).png>)
-
-3\. Scroll down to the **Delete organization** section, and click the **Delete organization** button:
+4\. Scroll down to the **Delete organization** section, and click the **Delete organization** button:
 
 ![](<../../../.gitbook/assets/Org Settings - Delete organization.png>)
 
@@ -82,13 +76,13 @@ You can change the Preferred Organization in your Snyk Account via your Account 
 
 1\. On the Snyk Web UI, click your Account icon on the top right corner of the screen. Then, select the **Account settings** option:
 
-![](<../../../.gitbook/assets/Account Settings - Opening.png>)
+![](../../../.gitbook/assets/snyk-account-settings.png)
 
 2\. On the **Account Settings** page – **Preferred Organization** section, open the Organization drop-down list, and select the organization you want to set as your Preferred Organization:
 
 **Note**: The Organization drop-down list displays your existing organizations.
 
-![](<../../../.gitbook/assets/image (244) (1) (1).png>)
+![](<../../../.gitbook/assets/image (43).png>)
 
 3\. Click the **Update Preferred Org** button to save your new setting.
 

@@ -172,7 +172,7 @@ To find the automatically managed Snyk CLI, the [XDG Data Home](https://specific
 
 After opening a supported file, the Language Server should be started by Sublime Text and findings will be highlighted.
 
-![Snyk Open Source findings displayed in Sublime Text](<../.gitbook/assets/image (267) (1) (1) (1).png>)
+![Snyk Open Source findings displayed in Sublime Text](<../.gitbook/assets/image (267).png>)
 
 ![Snyk Code findings displayed in Sublime Text](<../.gitbook/assets/image (7) (1) (1).png>)
 
@@ -288,7 +288,7 @@ else
 end
 ```
 
-![Snyk Code findings displayed in Neovim](<../.gitbook/assets/image (219) (1) (1) (1).png>)
+![Snyk Code findings displayed in Neovim](<../.gitbook/assets/image (413).png>)
 
 ## Support
 
