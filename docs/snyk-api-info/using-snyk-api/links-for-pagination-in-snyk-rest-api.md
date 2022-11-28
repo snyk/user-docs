@@ -2,11 +2,11 @@
 
 The following explains how Snyk sets values for the REST API response parameters `starting_after` and `ending_before` and how to use these values in API calls.
 
-When a call is made to an endpoint and there are more items in the response than can fit on one page, there are previous and next links in that response. There you can see the what the values are for the `starting_after` and `ending_before` parameters. You can also see these values in examples on apidocs.snyk.io.
+When a call is made to an endpoint and there are more items in the response than can fit on one page, there are previous and next links in that response. There you can see what the values are for the `starting_after` and `ending_before` parameters. You can also see these values in examples on apidocs.snyk.io.
 
 The following example was generated using a demonstration project with many vulnerabilities, allowing for showing pagination.
 
-The first step was to invoke the REST API endpoint with a “normal” configuration, to se the code results  displayed on “page 1" (that is, the first 10 code-related vulnerabilities):
+The first step was to invoke the REST API endpoint with a “normal” configuration, to see the code results  displayed on “page 1" (that is, the first 10 code-related vulnerabilities):
 
 ```
 curl -X GET "https://api.snyk.io/rest/orgs/6391f850-81f8-48fc-

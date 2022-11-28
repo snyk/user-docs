@@ -49,13 +49,13 @@ If groups are being used in the organization, only a Group Admin can delete the 
 
 ![](<../../../.gitbook/assets/Org Settings - Selecting an Org.png>)
 
-2\. After the selected organization appears, click the **Org Settings** button<img src="../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (1) (5).png" alt="" data-size="line">on the top menu:
+2\. After the selected organization appears, click the **Org Settings** button<img src="../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png" alt="" data-size="line">on the top menu:
 
 ![](<../../../.gitbook/assets/Org Settings - Button.png>)
 
 3\. On the **Settings** page, select **Genera**l on the left menu:
 
-![](<../../../.gitbook/assets/image (417).png>)
+![](<../../../.gitbook/assets/image (91).png>)
 
 3\. Scroll down to the **Delete organization** section, and click the **Delete organization** button:
 
@@ -88,7 +88,7 @@ You can change the Preferred Organization in your Snyk Account via your Account 
 
 **Note**: The Organization drop-down list displays your existing organizations.
 
-![](<../../../.gitbook/assets/image (280).png>)
+![](<../../../.gitbook/assets/image (244) (1) (1).png>)
 
 3\. Click the **Update Preferred Org** button to save your new setting.
 
