@@ -11,7 +11,7 @@ This page describes how to use Snyk to scan Python projects.
 | Package managers / Features                          | CLI support | Git support | License scanning | Fix PRs |
 | ---------------------------------------------------- | ----------- | ----------- | ---------------- | ------- |
 | [Pip and PyPI](https://pypi.org/project/pip/)        | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
-| [pipenv](https://pipenv.kennethreitz.org/en/latest/) | ✔︎          |             | ✔︎               |         |
+| [pipenv](https://pipenv.pypa.io/en/latest/) | ✔︎          |             | ✔︎               |         |
 | setup.py                                             | ✔︎          |             | ✔︎               |         |
 | [Poetry](https://python-poetry.org)                  | ✔︎          |             | ✔︎               |         |
 
