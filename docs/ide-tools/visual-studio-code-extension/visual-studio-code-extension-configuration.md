@@ -32,7 +32,7 @@ After the extension is installed, you can set the following configurations for t
 * **Advanced**
   * **Advanced mode**: toggle a panel to allow the user to manually control when the analysis should be run.
   * **Auto Scan Open Source Security**: run Snyk Open Source analysis in automatic mode.
-  * **Additional Parameters**: set parameters to be passed to Snyk CLI for Open Source Security tests. For the full list see the [CLI commands and options summary](../../snyk-cli/cli-reference.md). Use **`-`**`-unmanaged` **** to scan unmanaged C/C++ files; this scans all files for known open source dependencies.
+  * **Additional Parameters**: set parameters to be passed to Snyk CLI for Open Source Security tests. For the full list see the [CLI commands and options summary](../../snyk-cli/cli-reference.md). Use`--unmanaged` **** to scan unmanaged C/C++ files; this scans all files for known open source dependencies.
   * **Organization**: specify an organization slug name to run tests for that organization. The value of organization setting `snyk.advanced.organization` must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`. If not specified, the preferred organization as defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
   * **Custom endpoint**: Specify the custom Snyk API endpoint for your organization. Use this field for the custom endpoint for Single Tenant setups as well instead of https://app.snyk.io.
   * **Automatic Dependency Management**  and **Cli Path**: Opt out of downloading the CLI through the plugin and thus use your own installation of the CLI.&#x20;
