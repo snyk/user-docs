@@ -23,10 +23,11 @@ After you select a region, that data cannot be migrated to another region. Movin
 
 Snyk offers data residency for the following regions:
 
-|          Region         |                         URL                        |
-| :---------------------: | :------------------------------------------------: |
-|      USA (default)      |      [http://app.snyk.io](http://app.snyk.io)      |
-| EU (Germany, Frankfurt) | [http://app.eu.snyk.io](http://app.eu.snyk.io)**** |
+|          Region         |           URL          |
+| :---------------------: | :--------------------: |
+|      USA (default)      |   https://app.snyk.io  |
+| EU (Germany, Frankfurt) | https://app.eu.snyk.io |
+|     AUS (Australia)     | https://app.au.snyk.io |
 
 ### Regional and global data
 
