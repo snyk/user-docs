@@ -8,7 +8,11 @@ This feature is currently in beta. We would appreciate any feedback you might ha
 Ensure you use the latest version of CLI ([v1.715.0](https://github.com/snyk/snyk/releases/tag/v1.715.0) or later) to use `snyk fix`.
 {% endhint %}
 
-The `snyk fix` command is a new CLI command to apply the recommended updates for supported ecosystems automatically.
+{% hint style="warning" %}
+Snyk fix is currently only supported for Python.
+{% endhint %}
+
+The `snyk fix` command is a CLI command to automatically apply the recommended updates for supported ecosystems.
 
 When you use the `snyk test` command, actionable fixes for supported ecosystems appear in the scan results as shown in the example that follows.
 
@@ -48,7 +52,7 @@ Note that only successful test results are forwarded to `snyk fix`. In addition,
 
 ## Enabling snyk fix
 
-To enable snyk fix during the beta period, click on **Settings** ![](../../../.gitbook/assets/cog\_icon.png) > **Snyk Preview**. Enable the **snyk fix feature** and click **Save changes**.
+To enable snyk fix during the beta period, click on **Settings** > **Snyk Preview**. Enable the **snyk fix feature** and click **Save changes**.
 
 ![Enabling Snyk fix in the Snyk Preview settings](../../.gitbook/assets/enabling-snyk-fix.jpg)
 
