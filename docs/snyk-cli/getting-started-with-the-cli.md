@@ -1,6 +1,6 @@
 # Getting started with the CLI
 
-To use the CLI you must install it and authenticate. See [Install the Snyk CLI](install-the-snyk-cli.md) and the [Auth](commands/auth.md) command help. You can refer to the [release notes](https://github.com/snyk/cli/releases) for a summary of changes in each release.
+To use the CLI you must install it and authenticate. See [Install the Snyk CLI](install-the-snyk-cli.md) and the [Auth](commands/auth.md) command help. You can refer to the [release notes](https://github.com/snyk/cli/releases) for a summary of changes in each release. Before scanning your code, review the [Code execution warning for Snyk CLI](code-execution-warning-for-snyk-cli.md).
 
 **Note:** Before you can use the CLI you must install your package manager. The needed third-party tools such as Gradle or Maven must be in the PATH.
 
