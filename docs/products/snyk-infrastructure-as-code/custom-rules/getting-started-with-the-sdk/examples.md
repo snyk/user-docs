@@ -23,7 +23,7 @@ Now, we want to modify the generated Rego to enforce resources tagged with an ow
 
 1. Create a variable `[name]` to to enumerate across all of the `aws_redshift_cluster` resources. This variable can be named anything you like (e.g. `i`, `j`, `name`, etc.).
 2. Store this into the resource variable by assigning the value to it with a walrus operator `:=`; e.g. `resource := input.resource.aws_redshift_cluster[name]`
-3. Check if the owner tag exists for each resource; to do that, check if the path `resource.tags.owner `is defined. If it is undefined, it will evaluate to undefined. So, use the `NOT` keyword in front of it, which will evaluate to `TRUE`; e.g.`not resource.tags.owner`
+3. Check if the owner tag exists for each resource; to do that, check if the path `resource.tags.owner` is defined. If it is undefined, it will evaluate to undefined. So, use the `NOT` keyword in front of it, which will evaluate to `TRUE`; e.g.`not resource.tags.owner`
 
 The modified Rego is:
 
@@ -50,7 +50,7 @@ deny[msg] {
 {% endcode %}
 
 {% hint style="info" %}
-To understand how the Rego code evaluates the Terraform file provided earlier, have a look at how the SDK is able to [parse a fixture file](parsing-an-input-file.md) into JSON.&#x20;
+To understand how the Rego code evaluates the Terraform file provided earlier, have a look at how the SDK is able to [parse a fixture file](parsing-an-input-file.md) into JSON.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -107,7 +107,7 @@ resource "aws_redshift_cluster" "denied" {
 ```
 {% endcode %}
 
-Joining multiple expressions together expresses logical `AND`.&#x20;
+Joining multiple expressions together expresses logical `AND`.
 
 * You can do this with the `;` operator.
 * Or, you can omit the `;` (`AND`) operator by splitting expressions across multiple lines.
@@ -446,7 +446,7 @@ We can also iterate over many resources by adding them to an array of resources.
 ]
 ```
 
-One way to leverage this is to implement denylist rules.&#x20;
+One way to leverage this is to implement denylist rules.
 
 For example, we may want to ensure that if someone defines a Kubernetes ConfigMap, then they cannot use it to store sensitive information such as passwords, secret keys, and access tokens.
 
@@ -482,7 +482,6 @@ deny[msg] {
 		"references": [],
 	}
 }
-
 ```
 
 Any key containing the substrings "pass", "secret", "key", and "token" can be considered sensitive and so should not be included in the ConfigMap.

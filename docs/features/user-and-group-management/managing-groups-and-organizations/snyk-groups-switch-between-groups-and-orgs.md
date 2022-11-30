@@ -1,11 +1,11 @@
-# Group and organization navigation
+# Group and Organization navigation
 
-Organizations in Snyk control access to projects. The organization settings and policies also influence scan results, depending on which organization is used when adding a project.
+Organizations in Snyk control access to projects. The settings and policies of an Organization also influence scan results, depending on which Organization is used when adding a project.
 
-Snyk shows your [preferred organization](https://docs.snyk.io/features/user-and-group-management/managing-groups-and-organizations/manage-snyk-organizations#setting-your-preferred-organization) by default when you log into the Snyk Web UI. Snyk also uses the settings for your preferred organization when you are testing a project locally using the CLI.
+Snyk shows your [preferred Organization](https://docs.snyk.io/features/user-and-group-management/managing-groups-and-organizations/manage-snyk-organizations#setting-your-preferred-organization) by default when you log into the Snyk Web UI. Snyk also uses the settings for your preferred Organization when you're testing a project locally using the CLI.
 
-To change which organization you are viewing, click on the navigation switcher. The avatars displayed on the left are your groups, and the list on the right are the organizations that are within the group.
+To change which Organization you're viewing, click the navigation switcher. The avatar icons displayed on the left are your groups, and the list on the right includes the Organizations that are within the group.
 
-![](../../../.gitbook/assets/snyk-org-switcher.png)
+![](<../../../.gitbook/assets/snyk-org-switcher (1).png>)
 
-Clicking the avatar on the bottom of the switcher will display the organizations within your personal group. (This may not be visible to you depending on your enterprise’s setup.)
+Click the avatar at the bottom of the switcher to display the organizations in your personal group. (Depending on your enterprise's setup, this may not be visible to you.)

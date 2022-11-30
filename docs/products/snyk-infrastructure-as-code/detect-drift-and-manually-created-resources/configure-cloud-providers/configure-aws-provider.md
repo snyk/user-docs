@@ -34,7 +34,6 @@ $ snyk iac describe --from="tfstate+s3://mybucket/terraform.tfstate"
 
 # You can also use a specific region to authenticate to the S3 bucket
 $ DCTL_S3_REGION=us-east-1 snyk iac describe --from="tfstate+s3://mybucket/terraform.tfstate"
-
 ```
 
 ## Terraform custom role​ <a href="#terraform-custom-role" id="terraform-custom-role"></a>

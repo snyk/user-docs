@@ -1,6 +1,6 @@
 # Parsing an input file
 
-It can be difficult to understand the internal representation of your input files as you write your Rego code. As we will see when we learn [how to write a rule](writing-a-rule.md),  the input value is a JSON-like object but the input files could also be YAML, Terraform, or [Terraform Plan JSON Output](https://www.terraform.io/docs/internals/json-format.html). To help understand how these are translated into JSON we have provided a `parse` command.
+It can be difficult to understand the internal representation of your input files as you write your Rego code. As we will see when we learn [how to write a rule](writing-a-rule.md), the input value is a JSON-like object but the input files could also be YAML, Terraform, or [Terraform Plan JSON Output](https://www.terraform.io/docs/internals/json-format.html). To help understand how these are translated into JSON we have provided a `parse` command.
 
 You will need an IaC file to use as an input file. This input file can also be used when [testing the rules](testing-a-rule.md), where we parse your files into JSON by default.
 
@@ -46,7 +46,7 @@ This prints out the JSON, which you can use as guidance for writing your rules:
 }
 ```
 
-In Rego, accessing the `node_type` field would look like:&#x20;
+In Rego, accessing the `node_type` field would look like:
 
 ```
 input.resource.aws_redshift_cluster.example.node_type
@@ -100,7 +100,7 @@ This prints out the JSON, which you can use as guidance for writing your rules:
 }
 ```
 
-In Rego, accessing the `privileged` field would look like:&#x20;
+In Rego, accessing the `privileged` field would look like:
 
 ```
 input.spec.containers[0].securityContext.privileged
@@ -211,7 +211,6 @@ Another example is the following Terraform Plan JSON Output file, returned by th
     }
   }
 }
-
 ```
 {% endcode %}
 
@@ -240,7 +239,7 @@ This prints out the JSON, which you can use as guidance for writing your rules:
 }
 ```
 
-In Rego, accessing the `tags` field would look like:&#x20;
+In Rego, accessing the `tags` field would look like:
 
 ```
 input.resource.aws_vpc.example.tags
