@@ -80,8 +80,11 @@ As part of the [Initialize message](https://microsoft.github.io/language-server-
   "organization": "a string", // The name of your organization, e.g. the output of: curl -H "Authorization: token $(snyk config get api)"  https://snyk.io/api/cli-config/settings/sast | jq .org
   "enableTelemetry":  "true", // Whether or not user analytics can be tracked
   "manageBinariesAutomatically": "true", // Whether or not CLI/LS binaries will be downloaded & updated automatically
-  "cliPath":  "/a/patch/snyk-cli" // The path where the CLI can be found, or where it should be downloaded to
-  "token":  "secret-token" // The Snyk token, e.g.: snyk config get api
+  "cliPath":  "/a/patch/snyk-cli", // The path where the CLI can be found, or where it should be downloaded to
+  "token":  "secret-token", // The Snyk token, e.g.: snyk config get api
+  "automaticAuthentication": "true", // Whether or not LS will automatically authenticate on scan start (default: true)
+  "enableTrustedFoldersFeature": "true", // Whether or not LS will prompt to trust a folder (default: true)
+  "trustedFolders": ["/a/trusted/path", "/another/trusted/path"], // An array of folder that should be trusted
 }
 ```
 
@@ -138,6 +141,18 @@ The same directories are searched for a Maven executable and the parent director
 ## **Snyk CLI**
 
 To find the automatically managed Snyk CLI, the [XDG Data Home](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html#variables) and `PATH` path are automatically scanned for the OS-dependent file, for example, `snyk-macos` on macOS, `snyk-linux` on Linux and `snyk-win.exe` on Windows, and the first path where it is found is added to the environment. It is later used for all functionality that depends on the CLI. The path to the CLI can also be set manually using the `cliPath` initialization option.
+
+## Folder trust
+
+As part of examining the codebase for vulnerabilities, Snyk may automatically execute code on your computer to obtain additional data for analysis. This includes invoking the package manager (for example, pip, Gradle, Maven, Yarn, npm, and so on) to get dependency information for Snyk Open Source. Invoking these programs on untrusted code that has malicious configurations may expose your system to malicious code execution and exploits.
+
+To safeguard against using the Language Server on untrusted folders, the Snyk Language Server asks for folder trust before running scans against these folders. When in doubt, do not grant trust.
+
+The trust feature is enabled by default. When a folder is trusted, all sub-folders are also trusted. After a folder is trusted, Snyk Language Server notifies the Language Server Client with the custom `$/snyk.addTrustedFolders` notification, which contains a list of currently trusted folder paths. Based on this, a client can then implement logic to intercept this notification and persist the decision and trust in the IDE or Editor storage mechanism.
+
+Trust dialogs can be disabled by setting `enableTrustedFoldersFeature` to `false` in the initialization options. This disables all trust prompts and checks.
+
+An initial set of trusted folders can be provided by setting `trustedFolders` to an array of paths in the `initializationOptions`. These folders will be trusted on startup and will not prompt the user to trust them.
 
 ## Example Configuration for Sublime Text
 
@@ -288,7 +303,7 @@ else
 end
 ```
 
-![Snyk Code findings displayed in Neovim](<../.gitbook/assets/image (413) (1) (1).png>)
+![Snyk Code findings displayed in Neovim](<../.gitbook/assets/image (413) (1).png>)
 
 ## Support
 

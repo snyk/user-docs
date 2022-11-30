@@ -18,7 +18,7 @@ Snyk automatically scans your application for vulnerabilities and presents resul
 
 If you click into the top-level Dockerfile link, you will a see a screen similar to what is shown below:
 
-![](<../../../../../../.gitbook/assets/image (103) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+![](<../../../../../../.gitbook/assets/image (103) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png>)
 
 The summary line is replicated for the Dockerfile to maintain context.
 
@@ -28,7 +28,7 @@ This summary maintains context from the main page and you'll notice details such
 
 Each vulnerability also contains links to public databases for users that wish to learn additional background and context.
 
-![](<../../../../../../.gitbook/assets/image (229) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png>)
+![](<../../../../../../.gitbook/assets/image (229) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
 
 Another section of the page focuses on the version of your software, available upgrades, and whether there is a known exploit. This level of detail helps teams more quickly assess a vulnerability as they can see the recommended fix when it is available.
 
@@ -50,6 +50,6 @@ Some of the details you see are shown in the next two images, and they include:
 
 ![](<../../../../../../.gitbook/assets/image (57) (2).png>)
 
-![](<../../../../../../.gitbook/assets/image (145) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png>)
+![](<../../../../../../.gitbook/assets/image (145) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (2).png>)
 
 In the next two sections, we'll create a Jira ticket and a pull request.
