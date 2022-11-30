@@ -1,6 +1,6 @@
 # View cloud issues in the Snyk Web UI
 
-You can view cloud issues for an Organization through the Snyk Web UI. Also see [View cloud issues in the API](view-cloud-issues-in-the-api.md).
+You can view cloud issues for an Organization through the Snyk Web UI.
 
 To view your Organization's cloud issues in the Snyk Web UI, navigate to the Organization and select **Cloud** in the left menu:
 

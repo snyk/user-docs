@@ -42,4 +42,4 @@ A cloud **issue** represents a misconfiguration that can lead to a security prob
 
 After Snyk creates an issue, Snyk keeps it open until the misconfiguration is fixed, at which point the issue is closed.
 
-You can view your Organization's issues in the Snyk Web UI or through the `/cloud/issues` Snyk API endpoint. See [View cloud issues in the Snyk Web UI](snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md) and [View cloud issues in the API](snyk-cloud-issues/view-cloud-issues-in-the-api.md).
+You can view your Organization's issues in the Snyk Web UI. See [View cloud issues in the Snyk Web UI](snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md).

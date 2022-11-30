@@ -92,4 +92,4 @@ It can take Google 60 seconds or more to create your service account. If you try
 
 ## What's next?
 
-You can now view misconfiguration issues in the API or Snyk Web UI. See [Snyk Cloud issues](https://docs.snyk.io/products/snyk-cloud/snyk-cloud-issues) for more information.
+You can now view misconfiguration issues in the Snyk Web UI. See [Snyk Cloud issues](https://docs.snyk.io/products/snyk-cloud/snyk-cloud-issues) for more information.

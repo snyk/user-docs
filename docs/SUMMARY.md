@@ -593,7 +593,6 @@
       * [Step 3: Create and scan a Snyk Cloud Environment for Google (API)](products/snyk-cloud/getting-started-with-snyk-cloud-google/snyk-cloud-for-google-api/step-3-create-and-scan-a-snyk-cloud-environment-for-google-api.md)
   * [Snyk Cloud issues](products/snyk-cloud/snyk-cloud-issues/README.md)
     * [View cloud issues in the Snyk Web UI](products/snyk-cloud/snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md)
-    * [View cloud issues in the API](products/snyk-cloud/snyk-cloud-issues/view-cloud-issues-in-the-api.md)
   * [View Snyk Cloud Environments](products/snyk-cloud/view-snyk-cloud-environments.md)
   * [Scan a Snyk Cloud Environment](products/snyk-cloud/scan-a-snyk-cloud-environment.md)
   * [View Snyk Cloud resources](products/snyk-cloud/view-snyk-cloud-resources.md)

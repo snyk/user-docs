@@ -99,4 +99,4 @@ To re-scan an environment, see [Scan a Snyk Cloud Environment](../../scan-a-snyk
 
 ## What's next?
 
-You can now view misconfiguration issues in the API or Snyk Web UI. See [Snyk cloud issues](../../snyk-cloud-issues/) for more information.
+You can now view misconfiguration issues in the Snyk Web UI. See [Snyk cloud issues](../../snyk-cloud-issues/) for more information.

@@ -18,7 +18,7 @@ Integrated IaC helps developers write secure configurations for HashiCorp Terraf
 
 ## New Cloud UI
 
-Integrated IaC has focused on providing visibility into an Organization's issues across all its configuration templates. As a result, traditional Projects are currently not supported in Integrated IaC. Instead, [issues](https://docs.snyk.io/products/snyk-cloud/snyk-cloud-issues) can be found using the new [Cloud tab](https://docs.snyk.io/products/snyk-cloud/snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui) and [Cloud Issues API](https://docs.snyk.io/products/snyk-cloud/snyk-cloud-issues/view-cloud-issues-in-the-api) which will provide a snapshot into the resources that are misconfigured. This allows security teams to easily identify and investigate issues. Users can view all of their infrastructure as code resources in a single, centralized interface.&#x20;
+Integrated IaC has focused on providing visibility into an Organization's issues across all its configuration templates. As a result, traditional Projects are currently not supported in Integrated IaC. Instead, [issues](https://docs.snyk.io/products/snyk-cloud/snyk-cloud-issues) can be found using the new [Cloud tab](https://docs.snyk.io/products/snyk-cloud/snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui), which provides a snapshot into the resources that are misconfigured. This allows security teams to easily identify and investigate issues. Users can view all of their infrastructure as code resources in a single, centralized interface.&#x20;
 
 ## Powerful filters for triaging issues
 
