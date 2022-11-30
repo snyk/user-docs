@@ -2,7 +2,7 @@
 
 Snyk analysis shows a list of security vulnerabilities and code issues found in the application code. For more details and examples of how others fixed the issue, select a security vulnerability or a code security issue. Snyk suggestion information for the issue selected appears in a panel on the right side:
 
-![Snyk suggestion information](<../../.gitbook/assets/image (103) (1) (1) (1) (10) (1) (1) (1) (1) (1) (1) (10) (14).png>)
+![Snyk suggestion information](<../../.gitbook/assets/image (103) (1) (1) (1) (10) (1) (1) (1) (1) (1) (1) (10) (1) (10).png>)
 
 ## Snyk analysis panel
 
@@ -26,7 +26,7 @@ The editor window in the middle of the results screen shows the code that is ins
 
 ## Snyk Code vulnerability window
 
-![Snyk Suggestion panel](<../../.gitbook/assets/image (103) (1) (1) (1) (10) (1) (1) (1) (1) (1) (1) (10) (5).png>)
+![Snyk Suggestion panel](<../../.gitbook/assets/image (103) (1) (1) (1) (10) (1) (1) (1) (1) (1) (1) (10) (1) (16).png>)
 
 The Snyk Suggestion panel on the right of the results screen shows the recommendation of the Snyk engine using, for example, variable names of your code and the line numbers in red. You can also see the following:
 
@@ -65,7 +65,7 @@ Find security vulnerabilities in your JavaScript packages from well-known CDNs. 
 
 You can navigate to the most severe vulnerability by triggering the provided code actions. This opens a vulnerability window to show more details:
 
-![Code action](<../../.gitbook/assets/oss-editor-show-vulnerability (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (5).png>)
+![Code action](<../../.gitbook/assets/oss-editor-show-vulnerability (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (5).png>)
 
 ## Snyk Open Source vulnerability window
 
