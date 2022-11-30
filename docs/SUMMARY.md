@@ -168,7 +168,6 @@
     * [JetBrains analysis results: Snyk Container](ide-tools/jetbrains-plugins/jetbrains-analysis-results-snyk-container.md)
     * [How Snyk Container and Kubernetes JetBrains integration works](ide-tools/jetbrains-plugins/how-snyk-container-and-kubernetes-jetbrains-integration-works.md)
     * [Filter JetBrains results](ide-tools/jetbrains-plugins/filter-jetbrains-results.md)
-    * [Workspace trust](ide-tools/jetbrains-plugins/workspace-trust.md)
     * [Troubleshooting for the JetBrains plugin](ide-tools/jetbrains-plugins/troubleshooting-for-the-jetbrains-plugin.md)
   * [Visual Studio extension](ide-tools/visual-studio-extension/README.md)
     * [Visual Studio extension configuration](ide-tools/visual-studio-extension/visual-studio-extension-configuration.md)
