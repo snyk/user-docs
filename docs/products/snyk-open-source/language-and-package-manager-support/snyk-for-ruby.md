@@ -24,13 +24,6 @@ Snyk requires both files to be present in order to correctly test, monitor & fix
 
 ### Fixing vulnerabilities in your Ruby projects
 
-{% hint style="info" %}
-**Note**\
-Snyk is doing some maintenance work for Ruby Fix PRs at this time. \
-If you are an existing user with an existing account, you should not be affected. \
-If you are new to Snyk, you will find this is temporarily disabled. It should be re-opened by end of December 2022.&#x20;
-{% endhint %}
-
 Snyk can fix vulnerabilities by updating vulnerable gems, using bundle update, after modifying your Gemfile (sticking to the rules you have specified there as far as possible).
 
 This means that in some scenarios Snyk will not be able to upgrade all dependencies to non-vulnerable versions. In this case, you should consider updating the rules in your Gemfile.

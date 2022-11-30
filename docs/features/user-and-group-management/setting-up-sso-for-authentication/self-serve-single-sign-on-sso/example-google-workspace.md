@@ -20,15 +20,15 @@ For details in addition to the information provided on this page, see the [Googl
     <figure><img src="../../../../.gitbook/assets/4 (1).png" alt="Download signing certificate"><figcaption><p>Download signing certificate</p></figcaption></figure>
 5.  Navigate to the Snyk portal, login and from the drop down at the top left select **GROUP OVERVIEW** and then the cog wheel (top right corner) to get to your group settings.
 
-    <figure><img src="../../../../.gitbook/assets/5.png" alt="Open group view in Snyk"><figcaption><p>Open group view in Snyk</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/5 (2).png" alt="Open group view in Snyk"><figcaption><p>Open group view in Snyk</p></figcaption></figure>
 6.  Click on **SSO**, scroll down to step 2, and paste the Google SSO URL from step 4 into **Sign in URL** and the certificate in your text editor into **X509 signing certificate**. \
     Add the domain name(s) you are configuring this connection for in **Email domains and subdomains that need SSO access**.\
     Save your modifications
 
-    <figure><img src="../../../../.gitbook/assets/6.png" alt="Enter details from Google Workspace"><figcaption><p>Enter details from Google Workspace</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/6 (3).png" alt="Enter details from Google Workspace"><figcaption><p>Enter details from Google Workspace</p></figcaption></figure>
 7.  Scroll up to step 1 and copy the **Entity ID** and **ACS URL**.
 
-    <figure><img src="../../../../.gitbook/assets/7.png" alt="Copy details from Snyk"><figcaption><p>Copy details from Snyk</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/7 (1).png" alt="Copy details from Snyk"><figcaption><p>Copy details from Snyk</p></figcaption></figure>
 8.  Go back to the Google admin portal , click **Continue,** and paste those two values into their respective fields. Then tick **Signed response**.
 
     <figure><img src="../../../../.gitbook/assets/8 (1).png" alt="Enter details from Snyk in Google"><figcaption><p>Enter details from Snyk in Google</p></figcaption></figure>
@@ -41,7 +41,7 @@ For details in addition to the information provided on this page, see the [Googl
 11. Finalize the setup by going back to the Snyk portal; scroll to the very last step and refer to [step 3](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/self-serve-single-sign-on-sso#step-3.-snyk-sso-settings) of the Snyk self serve SSO guide for how new users should be processed when signing in. Choose the option you would like to use: **Group member**, **Org collaborator**, or **Org admin**.
 12. Then add the previously created **email** app attribute to both **Email** and **Username** and save the configuration. If you wish to populate the full name you may configure a custom attribute in Google Workspace.
 
-    <figure><img src="../../../../.gitbook/assets/11.png" alt="Tie together attributes from Google to Snyk"><figcaption><p>Tie together attributes from Google to Snyk</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/11 (2).png" alt="Tie together attributes from Google to Snyk"><figcaption><p>Tie together attributes from Google to Snyk</p></figcaption></figure>
 
 
 
