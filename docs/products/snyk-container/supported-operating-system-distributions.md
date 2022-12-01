@@ -12,6 +12,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 
 ### Alpine Linux
 
+* Alpine Linux 3.17
 * Alpine Linux 3.16
 * Alpine Linux 3.15
 * Alpine Linux 3.14
