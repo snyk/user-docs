@@ -201,6 +201,128 @@
 
   
 ---
+# Workspaces
+### [SNYK-OS-9101](#snyk-os-9101-unauthorized-credentials) - Unauthorized Credentials
+  The credentials that have been provided could not be authorized with the upstream service.
+
+  **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9102](#snyk-os-9102-insufficient-privileges) - Insufficient Privileges
+  The access token that has been provided has insufficient privileges to complete the requested operation with the upstream service.
+
+  **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9103](#snyk-os-9103-invalid-credentials) - Invalid Credentials
+  The credentials provided do to match the expected format.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9104](#snyk-os-9104-invalid-token) - Invalid Token
+  The workspace token provided is invalid.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9105](#snyk-os-9105-missing-access-token) - Missing Access Token
+  The request is missing the access token.
+
+  **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9106](#snyk-os-9106-unauthorized-request) - Unauthorized Request
+  The provided token could not be authorized.
+
+  **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9201](#snyk-os-9201-target-not-found) - Target Not Found
+  The requested target could not be found. Please ensure the target details are correct.
+
+  **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9202](#snyk-os-9202-invalid-target) - Invalid Target
+  The target information that has been provided is in an invalid format.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9301](#snyk-os-9301-file-size-error) - File Size Error
+  The requested file is too large to be transferred.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9302](#snyk-os-9302-file-not-found) - File Not Found
+  The requested file could not be found. Please ensure the file path exists in the provided target.
+
+  **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9901](#snyk-os-9901-too-many-requests) - Too Many Requests
+  The upstream service has received too many requests and will be throttled.
+
+  **HTTP Status:** [429](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9902](#snyk-os-9902-service-unavailable) - Service Unavailable
+  The upstream service is unavailable.
+
+  **HTTP Status:** [502](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+---
 # [PURL Vulnerabilities](https://docs.snyk.io/introducing-snyk/getting-started-snyk-intel-vuln-db-access#about-the-snyk-vulnerability-database)
 ### [SNYK-OSSI-1040](#snyk-ossi-1040-your-organisation-is-not-authorised-to-perform-this-action) - Your organisation is not authorised to perform this action
   You likely don’t have access to the Beta. To get access, you can request access to the Beta through your account manager or team.
@@ -438,4 +560,4 @@
   
 ---
 
-Genererated at 2022-12-01T10:02:04.647Z
+Genererated at 2022-12-01T12:08:06.474Z
