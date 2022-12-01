@@ -1,11 +1,11 @@
 # Workspace trust
 
-As part of examining the codebase for vulnerabilities, Snyk may automatically execute code on your computer to obtain additional data for analysis. This includes invoking the package manager (for example, pip, gradle, maven, yarn, npm, and so on) to get dependency information for Snyk Open Source. Invoking these programs on untrusted code that has malicious configurations may expose your system to malicious code execution and exploits.
+As part of examining the codebase for vulnerabilities, Snyk may automatically execute code on your computer to obtain additional data for analysis. For example, this includes invoking the package manager (such as pip, gradle, maven, yarn, npm, and so on) to get dependency information for Snyk Open Source. Invoking these programs on untrusted code that has malicious configurations may expose your system to malicious code execution and exploits.
 
-In addition to providing the built-in [Workspace Trust feature](https://code.visualstudio.com/docs/editor/workspace-trust) of Visual Studio Code, the Snyk extension asks for folder trust before allowing any scans to run against your code. When in doubt, do not grant trust.
+To safeguard from using the extension on untrusted folders, our extension will ask for folder trust before allowing you to run any scans against your code. When in doubt, do not proceed with a scan.
 
-<figure><img src="../../.gitbook/assets/vscode-trust.png" alt="Request to trust folders"><figcaption><p>Request to trust folders</p></figcaption></figure>
+<figure><img src="https://lh4.googleusercontent.com/zeg6dMXmw1BUVMTeCviRJ-b2ct0CcRXFdfm1AZJFfgzRfro6TzvFv2_4DwZbqcRRHUl20poHvThC-8TdJniBQ12zgFxgZCY7b5NLZcG4XOu2qd25avtIEZM9Hzq-LvqKmqDS4N3uAFydWTT99x4HMNi0g_2LwFH2LzKwD98KAt1gYxZHitFK3PwbpB7pFA" alt=""><figcaption></figcaption></figure>
 
-Once folder trust is granted, Snyk will not ask for trust on the opened folder and its subfolders again. If you didn’t grant trust the first time, the plugin will ask again when you restart your Visual Studio Code instance.
+After a single folder trust is granted, Snyk will not ask for trust on the opened folder and its subfolders again. To revoke an existing folder trust, manually edit the **trustedFolders** JSON element in the **settings.json** file located in the following path:
 
-To revoke an existing folder trust or grant trust to more folders, navigate to the Snyk extension settings and edit the **Trusted Folders** (`snyk.trustedFolders`) setting.
+%LocalAppData%\Microsoft\VisualStudio\\\<Visual Studio version>\Extensions\Snyk\Snyk Security - Code and Open Source Dependencies\\\<Snyk extension version>
