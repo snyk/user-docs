@@ -21,6 +21,10 @@ Possible exit codes and their meaning:
 
 You can use environment variables to configure the Snyk CLI and set variables for connecting with the Snyk API. See [Configure the Snyk CLI](https://docs.snyk.io/features/snyk-cli/configure-the-snyk-cli)
 
+## Code execution warning
+
+Before scanning your code, review the [Code execution warning for Snyk CLI](https://docs.snyk.io/snyk-cli/code-execution-warning-for-snyk-cli).
+
 ## Debug
 
 Use the `-d` option to output the debug logs.
