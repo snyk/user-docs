@@ -23,7 +23,7 @@ You can use environment variables to configure the Snyk CLI and set variables fo
 
 ## Code execution warning
 
-Before scanning your code, review the [Code execution warning for Snyk CLI](https://docs.snyk.io/snyk-cli/code-execution-warning-for-snyk-cli).
+Before scanning your code, review the [Code execution warning for Snyk CLI](https://docs.snyk.io/snyk-cli/code-execution-warning-for-snyk-cli)
 
 ## Debug
 
