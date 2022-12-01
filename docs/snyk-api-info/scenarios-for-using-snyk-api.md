@@ -8,11 +8,6 @@ If you have issues when using these procedures, contact your Technical Success M
 
 ## API v1 Groups
 
-SEE also:\
-API v1 Organizations: [Assign all users in a given list to all the organizations a company has (all organizations in a group)](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#assign-all-users-in-a-given-list-to-all-the-organizations-a-company-has-all-organization-in-a-group)
-
-API v1 Issues (Reporting API): [Find all projects affected by a vulnerability](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#find-all-projects-affected-by-a-vulnerability)
-
 ### Retrieve a project snapshot for every project in a given group
 
 Scenario: [Retrieve-project-snapshots](https://github.com/snyk-playground/cx-tools/blob/main/scripts/retrieve-projects-snapshots.md) (complete procedure)
@@ -22,14 +17,14 @@ Scenario: [Retrieve-project-snapshots](https://github.com/snyk-playground/cx-too
 
 API v1 (Reporting API) [Get list of latest issues](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues)
 
+### More uses of API v1 Groups
+
+SEE also:
+
+* API v1 Organizations: [Assign all users in a given list to all the organizations a company has (all organizations in a group)](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#assign-all-users-in-a-given-list-to-all-the-organizations-a-company-has-all-organization-in-a-group)
+* API v1 Issues (Reporting API): [Find all projects affected by a vulnerability](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#find-all-projects-affected-by-a-vulnerability)
+
 ## API v1 Import projects
-
-SEE also:\
-API v1 Projects: [Import fresh Container images](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#import-fresh-container-images)
-
-API v1 Projects: [Detect and import new projects in a repository into a target](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#detect-and-import-new-projects-in-a-repository-into-a-target)
-
-API v1 REST API Targets (beta): [Detect new projects (files) in repositories and import them into a target in Snyk on a regular basis](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis)
 
 ### Identify and import new repositories only
 
@@ -40,12 +35,16 @@ Scenario: [Identify-and-import-new-repos](https://github.com/snyk-playground/cx-
 
 API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects/import-targets)
 
-## API v1 Integrations
+### More users of API v1 Import projects
 
 SEE also:\
-API v1 Organizations: [Create multiple new organizations that all have the same settings in a given group](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
+API v1 Projects: [Import fresh Container images](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#import-fresh-container-images)
 
 API v1 Projects: [Detect and import new projects in a repository into a target](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#detect-and-import-new-projects-in-a-repository-into-a-target)
+
+API v1 REST API Targets (beta): [Detect new projects (files) in repositories and import them into a target in Snyk on a regular basis](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#detect-new-projects-files-in-repositories-and-import-them-into-a-target-in-snyk-on-a-regular-basis)
+
+## API v1 Integrations
 
 ### Rotate or change your broker token for any reason
 
@@ -76,10 +75,14 @@ API v1 [Delete a webhook](https://snyk.docs.apiary.io/#reference/webhooks/webhoo
 
 API v1 [Create a webhook](https://snyk.docs.apiary.io/#reference/webhooks/webhook-collection/create-a-webhook)
 
-## API v1 Issues (Reporting API)
+### More uses of API v1 integrations
 
 SEE also:\
-API v1 Groups: [Retrieve a project snapshot for every project in a given group](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#retrieve-a-project-snapshot-for-every-project-in-a-given-group)
+API v1 Organizations: [Create multiple new organizations that all have the same settings in a given group](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#create-multiple-new-organizations-that-all-have-the-same-settings-in-a-given-group)
+
+API v1 Projects: [Detect and import new projects in a repository into a target](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#detect-and-import-new-projects-in-a-repository-into-a-target)
+
+## API v1 Issues (Reporting API)
 
 ### Find all projects affected by a vulnerability
 
@@ -110,10 +113,12 @@ API v1 Issues: [Bulk ignore issues](https://docs.snyk.io/snyk-api-info/scenarios
 
 API v1 Projects: [List all issues including Snyk Code issues in all the projects in a group](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#list-all-issues-including-snyk-code-issues-in-all-the-projects-in-an-organization)
 
-## API v1 Organizations
+### More uses of API v1 Issues (Reporting API)
 
 SEE also:\
-API v1 Integrations: [Rotate or change your broker token for any reason](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#rotate-or-change-your-broker-token-for-any-reason)
+API v1 Groups: [Retrieve a project snapshot for every project in a given group](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#retrieve-a-project-snapshot-for-every-project-in-a-given-group)
+
+## API v1 Organizations
 
 ### Create multiple new organizations that all have the same settings in a given group
 
@@ -144,14 +149,12 @@ Scenario: [Provision users to Orgs via API](../features/user-and-group-managemen
 **Endpoint used:**\
 API v1 [Provision a user to the organization](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization)
 
-## API v1 Projects
+### More uses of API v1 Organizations
 
 SEE also:\
-API v1 Import projects: [Identify and import new repositories only](scenarios-for-using-snyk-api.md#identify-and-import-new-repositories-only)
+API v1 Integrations: [Rotate or change your broker token for any reason](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#rotate-or-change-your-broker-token-for-any-reason)
 
-API v1 Issues (Reporting API): [Find all projects affected by a vulnerability](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#find-all-projects-affected-by-a-vulnerability)
-
-API v1 Issues (Reporting API): [Bulk ignore issues](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#bulk-ignore-issues)
+## API v1 Projects
 
 ### List all issues including Snyk Code issues in all the projects in an organization
 
@@ -196,6 +199,15 @@ Scenario: [detect-and-import-new-projects](https://github.com/snyk-playground/cx
 ****API v1 [List all projects](https://snyk.docs.apiary.io/#reference/projects/all-projects/list-all-projects)
 
 API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects)
+
+### More uses of API v1 Projects
+
+SEE also:\
+API v1 Import projects: [Identify and import new repositories only](scenarios-for-using-snyk-api.md#identify-and-import-new-repositories-only)
+
+API v1 Issues (Reporting API): [Find all projects affected by a vulnerability](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#find-all-projects-affected-by-a-vulnerability)
+
+API v1 Issues (Reporting API): [Bulk ignore issues](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#bulk-ignore-issues)
 
 ## REST API Targets (Beta)
 
