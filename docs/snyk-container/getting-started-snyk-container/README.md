@@ -10,9 +10,9 @@ This process uses the Snyk Web UI. For details of Snyk Container using the Snyk 
 
 Ensure you have:
 
-* [Created a Snyk account](../../getting-started/create-a-snyk-account.md).
-* [Set up integration](../../getting-started/set-up-an-integration.md) for your container registry, for example Docker Hub. Snyk supports multiple registries\*\*;\*\* see [image-scanning-library](../image-scanning-library/ "mention") for details
-* [Imported a Snyk Project for scanning](../../getting-started/import-a-project.md) (your container registry)
+* [Created a Snyk account](../../getting-started/quickstart/create-a-snyk-account.md).
+* [Set up integration](../../getting-started/quickstart/set-up-an-integration.md) for your container registry, for example Docker Hub. Snyk supports multiple registries\*\*;\*\* see [image-scanning-library](../image-scanning-library/ "mention") for details
+* [Imported a Snyk Project for scanning](../../getting-started/quickstart/import-a-project.md) (your container registry)
 
 See the [Getting started](../../getting-started/) section for more details.
 

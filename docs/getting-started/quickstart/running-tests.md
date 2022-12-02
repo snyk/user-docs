@@ -13,20 +13,20 @@ Tests may be limited on your account; see [What counts as a test?](https://suppo
 
 ### Run tests with the CLI
 
-With the Snyk [CLI](../snyk-cli/cli-reference.md) you can use the following commands:
+With the Snyk [CLI](../../snyk-cli/cli-reference.md) you can use the following commands:
 
 * Scan open-source code with `snyk test`.
 * Scan application code with `snyk code test`.
 * Scan container images with `snyk container test`.
 * Scan Infrastructure as Code (IaC) files with `snyk iac test`.
 
-See [Getting started with the CLI](../snyk-cli/getting-started-with-the-cli.md) for details.
+See [Getting started with the CLI](../../snyk-cli/getting-started-with-the-cli.md) for details.
 
 ### Run tests with the Snyk Web UI
 
 A test is run when you add a new project, or click the **Retest now** button on a Project in the Overview tab.
 
-See [Snyk Web UI](../snyk-web-ui/) for details.
+See [Snyk Web UI](../../snyk-web-ui/) for details.
 
 ### Run tests with the API
 

@@ -6,7 +6,7 @@ Snyk Cloud has a number of unique concepts, separate from [Snyk core concepts](.
 
 A Snyk Cloud **Environment** is an organizing concept that equates to an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project.
 
-Unlike a Snyk [Project](../../introducing-snyk/projects.md), an environment contains scannable entities known as [resources](snyk-cloud-concepts.md#resources). Resources can be interrelated; one resource can be a child or sibling resource of another. Resources also have attributes that can be tested, and these attributes can be misconfigured, which generates Snyk Cloud issues. This makes environments and their resources different from Projects.
+Unlike a Snyk [Project](../../getting-started/introducing-snyk/key-concepts/projects.md), an environment contains scannable entities known as [resources](snyk-cloud-concepts.md#resources). Resources can be interrelated; one resource can be a child or sibling resource of another. Resources also have attributes that can be tested, and these attributes can be misconfigured, which generates Snyk Cloud issues. This makes environments and their resources different from Projects.
 
 A Snyk Cloud Environment also includes integration settings for a cloud provider. For example, each environment can represent an integration with a different AWS account.
 

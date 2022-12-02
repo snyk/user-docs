@@ -19,13 +19,13 @@ Video demonstration of importing projects via the Snyk Web UI
 
 To import a Projects to scan, from the Snyk Web UI:
 
-* Select **Projects** > **Add Project,** and select where to import the Project from (for example GitHub), or click **CLI** to use the [Snyk CLI](../snyk-cli/) tool locally:
+* Select **Projects** > **Add Project,** and select where to import the Project from (for example GitHub), or click **CLI** to use the [Snyk CLI](../../snyk-cli/) tool locally:
 
-![](<../.gitbook/assets/Screenshot 2022-07-26 at 10.06.54.png>)
+![](<../../.gitbook/assets/Screenshot 2022-07-26 at 10.06.54.png>)
 
 * Select the repositories to use, then click **Add selected repositories** to import the selected repositories into your projects:
 
-![](<../.gitbook/assets/Screenshot 2022-06-13 at 10.57.25.png>)
+![](<../../.gitbook/assets/Screenshot 2022-06-13 at 10.57.25.png>)
 
 {% hint style="info" %}
 Imported projects are indicated by a ✔ next to the repo name.
@@ -42,7 +42,7 @@ In **Settings**, optionally choose to:
 
 A progress bar appears during import: click **View last import log** to see log results.
 
-![](<../.gitbook/assets/Screenshot 2022-07-26 at 10.23.09.png>)
+![](<../../.gitbook/assets/Screenshot 2022-07-26 at 10.23.09.png>)
 
 During the import, Snyk starts scanning the selected repos for relevant files (for example, **package.json** files listing dependencies) in the entire directory tree, and imports these files as Snyk Projects.
 
@@ -50,7 +50,7 @@ During the import, Snyk starts scanning the selected repos for relevant files (f
 
 Project import completes, with a status message:
 
-![](<../.gitbook/assets/Screenshot 2022-06-13 at 11.38.00.png>)
+![](<../../.gitbook/assets/Screenshot 2022-06-13 at 11.38.00.png>)
 
 You have now successfully imported and scanned the selected Project.
 
@@ -60,7 +60,7 @@ If you see any errors during import, see [Project import errors](https://support
 
 Importing a Project will also:
 
-* Set Snyk to run a regular scan on that Project for issues ([daily by default](../user-and-group-management/managing-settings/usage-page-details.md#projects)).
+* Set Snyk to run a regular scan on that Project for issues ([daily by default](../../user-and-group-management/managing-settings/usage-page-details.md#projects)).
 * Initiate some automations, especially default Snyk tests on pull/merge requests, which help prevent vulnerabilities from being added to the Project. This automation fails builds according to your conditions and can be disabled or customized in your [integration settings](https://docs.snyk.io/integrations/git-repository-scm-integrations).
 
 {% hint style="info" %}

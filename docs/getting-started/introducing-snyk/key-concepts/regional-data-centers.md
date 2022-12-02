@@ -11,4 +11,4 @@ Snyk can host your data in a number of available regions. During your system's i
 By default, customers are hosted in the US region.
 {% endhint %}
 
-See [Data Residency at Snyk ](../snyk-processes-and-information/data-residency-at-snyk.md)for more details.
+See [Data Residency at Snyk ](../../../snyk-processes-and-information/data-residency-at-snyk.md)for more details.
