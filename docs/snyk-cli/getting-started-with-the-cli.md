@@ -24,7 +24,7 @@ Once you have installed and authenticated, change directory into a folder contai
 
 You can also scan a Docker image by its tag with [Snyk Container](https://snyk.io/product/container-vulnerability-management/) by running, for example: `snyk container test ubuntu:18.04`.
 
-To test a Kubernetes (k8s) file run `snyk iac test /path/to/kubernetes_file.yaml`.
+To test a Kubernetes (K8s) file run `snyk iac test /path/to/kubernetes_file.yaml`.
 
 ## Monitor your project
 
@@ -43,7 +43,7 @@ Notifications about newly disclosed issues related to these dependencies will be
 
 You can log in to the Snyk Web UI, and navigate to the [Projects page](https://app.snyk.io/projects) to see the latest snapshot and scan results:
 
-![Snyk monitor snapshot and scan results](<../.gitbook/assets/monitor (1).png>)
+<figure><img src="../.gitbook/assets/monitor (1).png" alt="Snyk monitor snapshot and scan results"><figcaption><p>Snyk monitor snapshot and scan results</p></figcaption></figure>
 
 For more information see [Monitor your projects at regular intervals](test-for-vulnerabilities/monitor-your-projects-at-regular-intervals.md).
 
@@ -57,7 +57,7 @@ If you run out of tests on an open source project follow these steps:
 
 ## Additional information
 
-Run `snyk help` or see the [CLI reference](cli-reference.md)..
+Run `snyk help` or see the [CLI commands and options summary](cli-reference.md).
 
 See [Introduction to the Snyk CLI](https://training.snyk.io/courses/intro-cli) for a quick video training session.
 
@@ -65,7 +65,7 @@ Snyk also provides a [cheat sheet](https://snyk.io/wp-content/uploads/cheat-shee
 
 In particular see the information about the following options that you may find useful:
 
-* `--severity-threshold=low|medium|high|critical`: Report only report vulnerabilities of the specified level or higher
+* `--severity-threshold=low|medium|high|critical`: Report only vulnerabilities of the specified level or higher
 * `--json`: Print results in JSON format
 * `--all-projects`: Auto-detect all projects in the working directory
 
@@ -79,9 +79,8 @@ The Snyk CLI project is open source, but Snyk does not encourage outside contrib
 
 You may look into [design decisions for the Snyk CLI](https://github.com/snyk/snyk/blob/master/help/\_about-this-project/README.md).
 
-The Snyk CLI repository is a monorepo that also covers other projects and tools at this time:
-
-* [`@snyk/protect`](https://github.com/snyk/snyk/tree/master/packages/snyk-protect); [npm package for `snyk-protect` command](https://www.npmjs.com/package/@snyk/protect)
+The Snyk CLI repository is a monorepo that also covers other projects and tools at this time:\
+[@snyk/protect](https://github.com/snyk/snyk/tree/master/packages/snyk-protect); [npm package for snyk-protect command](https://www.npmjs.com/package/@snyk/protect)
 
 ## Security
 
