@@ -1,6 +1,6 @@
 # Snyk for Java and Kotlin
 
-Snyk offers security scanning to test your projects for vulnerabilities, both through both through the [Snyk CLI ](../../../snyk-cli/)and from the Snyk Web UI through different [Snyk Integrations](../../../integrations/).
+Snyk offers security scanning to test your projects for vulnerabilities, both from the [Snyk CLI ](../../../snyk-cli/)and the [Snyk Web UI](../../../snyk-web-ui/), using different [Snyk Integrations](../../../integrations/).
 
 ## Features
 
@@ -47,8 +47,8 @@ However, for the most accurate results, we recommend using the [Snyk CLI](../../
 
 ### Gradle
 
-* CLI - Gradle `2.*`, `3.*`, `4.*`, `5.*`, `6.*`,  `7.*` ([more details](https://github.com/snyk/snyk-gradle-plugin#support))
-* Git - Gradle `2.*`, `3.*`,`4.*`, `5.*`, `6.*`
+* CLI - Gradle `4.*`, `5.*`, `6.*`,  `7.*` ([more details](https://github.com/snyk/snyk-gradle-plugin#support))
+* Git - Gradle `4.*`, `5.*`, `6.*`
 
 ## Snyk CLI tool for Java and Kotlin projects (CI/CD)
 
@@ -137,7 +137,9 @@ The same param can be used with `snyk monitor`.
 
 Make sure to execute this in the same directory as the root pom.xml file.
 
-**Note:** Each of the individual sub-projects appears as a separate Snyk project in the UI.
+{% hint style="info" %}
+Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.
+{% endhint %}
 
 ## CLI help for Gradle projects
 
@@ -153,7 +155,9 @@ By default, Snyk CLI scans only the current project (the project in the root of 
     snyk test --all-sub-projects
     ```
 
-**Note:** Each of the individual sub-projects appears as a separate Snyk project in the UI.
+{% hint style="info" %}
+Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.
+{% endhint %}
 
 *   To scan a specific project (for example, _myapp_):
 
