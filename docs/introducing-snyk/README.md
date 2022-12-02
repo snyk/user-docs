@@ -10,23 +10,23 @@ Developers now assemble applications with a combination of proprietary and open 
 
 A good security process secures each of these components where they are built and maintained. Snyk integrates into DevOps processes to work the with developers in the methods they prefer to work while following and supporting industry best practices. Snyk integrates directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit.
 
-![](<../../.gitbook/assets/image (106).png>)
+![](<../.gitbook/assets/image (106).png>)
 
 #### Using Snyk in your workflow:
 
-* **Secure your code**: use [Snyk Open Source](../../scan-application-code/snyk-open-source/) to fix vulnerabilities in your open source dependencies, and [Snyk Code](../../scan-application-code/snyk-code/) to fix vulnerabilities in your source code.
-* **Secure your environments**: use [Snyk Container](../../snyk-container/) to fix vulnerabilities in container images and Kubernetes workloads, and [Snyk Infrastructure as Code (IaC)](../../scan-cloud-deployment/snyk-infrastructure-as-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates.
+* **Secure your code**: use [Snyk Open Source](../scan-application-code/snyk-open-source/) to fix vulnerabilities in your open source dependencies, and [Snyk Code](../scan-application-code/snyk-code/) to fix vulnerabilities in your source code.
+* **Secure your environments**: use [Snyk Container](../snyk-container/) to fix vulnerabilities in container images and Kubernetes workloads, and [Snyk Infrastructure as Code (IaC)](../scan-cloud-deployment/snyk-infrastructure-as-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates.
 
 ### Ways to run Snyk
 
 Snyk runs in the following environments:
 
-* In the browser as [Snyk Web UI](../../snyk-web-ui/).
+* In the browser as [Snyk Web UI](../snyk-web-ui/).
 * In your local Command Line Interface (or in your pipeline) with the [Snyk CLI](https://docs.snyk.io/snyk-cli).
-* In various [IDE plugins](../../ide-tools/) that embed Snyk in your local dev environment.
+* In various [IDE plugins](../ide-tools/) that embed Snyk in your local dev environment.
 * In the [Snyk API](https://support.snyk.io/hc/en-us/categories/360000665657-Snyk-API) (Application Programming Interface).
 
-See [Snyk products and environments](key-concepts/snyk-products-and-environments.md) for more details.
+See [Snyk products and environments](snyk-products-and-environments.md) for more details.
 
 {% embed url="https://snyk.io/wp-content/uploads/Homepage-IDE-animation-Log4Shell-FINAL.mp4" %}
 Running Snyk from the command line.
@@ -34,15 +34,15 @@ Running Snyk from the command line.
 
 ### Supported languages and integrations
 
-Snyk supports a [wide range of languages and integrations](key-concepts/snyk-languages-and-integrations.md) that allows you to use Snyk with leading IDEs, Git repositories, and CI/CD, runtime, registry, and issue management tools.
+Snyk supports a [wide range of languages and integrations](snyk-languages-and-integrations.md) that allows you to use Snyk with leading IDEs, Git repositories, and CI/CD, runtime, registry, and issue management tools.
 
-See [Snyk languages and integrations](key-concepts/snyk-languages-and-integrations.md) for more details.
+See [Snyk languages and integrations](snyk-languages-and-integrations.md) for more details.
 
 ### **What does it cost?**
 
 Snyk has several [pricing plans](https://snyk.io/plans/) available, from free to Enterprise.
 
-See [Plans](key-concepts/plans.md) for more details.
+See [Plans](plans.md) for more details.
 
 ### **Who uses Snyk?**
 
@@ -50,7 +50,7 @@ Google, Salesforce, Atlassian, Twilio, Revolut, and many more are using Snyk to 
 
 ### **How do I get started?**
 
-See [Getting started](../) for full information.
+See [Getting started](../getting-started/) for full information.
 
 ### What happens to my data?
 

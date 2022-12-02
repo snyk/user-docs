@@ -32,7 +32,7 @@ In the context of your application, the Triage Assistant evaluates the vulnerabl
 {% hint style="info" %}
 To provide this feature, Snyk takes a temporary copy of your Git repository contents.
 
-For more information see [how-snyk-handles-your-data.md](../../snyk-processes-and-information/how-snyk-handles-your-data.md "mention")
+For more information see [how-snyk-handles-your-data.md](../../snyk-processes-and-policies/how-snyk-handles-your-data.md "mention")
 {% endhint %}
 
 #### Vulnerable Conditions

@@ -5,7 +5,7 @@
 When you start to roll out Snyk, gaining visibility is the process of driving awareness on what Snyk does, why it was brought in, and how to use it. This awareness helps promote and encourage Snyk adoption in your teams. Visibility also helps with operationalizing security and getting engagement to fix issues, as well as visibility of security across your repositories or projects.
 
 {% hint style="info" %}
-Gaining visibility can be quick and simple; when your team begin using Snyk, you can get visibility across your repositories in minutes after [signing up](../../quickstart/create-a-snyk-account.md).
+Gaining visibility can be quick and simple; when your team begin using Snyk, you can get visibility across your repositories in minutes after [signing up](../../create-a-snyk-account.md).
 {% endhint %}
 
 #### Don't get swamped
