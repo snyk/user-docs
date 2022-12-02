@@ -353,6 +353,10 @@ The format is `snyk <command> -- [<context-specific_options>]`
 
 Example: `snyk test -- --build-cache`
 
+**Note:** Do not use double quotes in any `-- [<context-specific_options>]`.
+
+Example: Use `snyk test --org=myorg -- -s settings.xml` NOT `snyk test --org=myorg -- "-s settings.xml"`
+
 ## Examples for the snyk test command
 
 Test a project in the current folder for known vulnerabilities:
