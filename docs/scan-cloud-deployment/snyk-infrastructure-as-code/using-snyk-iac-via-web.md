@@ -9,7 +9,7 @@ Use Snyk IaC with the [Snyk Web UI](../../snyk-web-ui/) to find and fix issues i
 
 ![](<../../.gitbook/assets/image (20).png>)
 
-Information available shows standard Snyk Project information (see [introduction-to-snyk-projects](../../snyk-web-ui/introduction-to-snyk-projects/ "mention")), including:
+Information available shows standard Snyk Project information (see [introduction-to-snyk-projects](../../fixing-and-prioritizing-issues/introduction-to-snyk-projects/ "mention")), including:
 
 * Snapshot information showing when the project was last tested.
 * **Overview**, **History** and **Settings** information. For example, use the **History** section to view previous snapshots of projects.

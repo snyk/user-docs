@@ -25,7 +25,7 @@ This feature is only available for Enterprise plans.
 During the 14-day Business Plan trial period, you will have limited or no access to the following features:
 
 * [**Single Sign-On (SSO)**](../user-and-group-management/setting-up-sso-for-authentication/)**:** Not available.
-* [**Custom Project Tags**](../snyk-web-ui/introduction-to-snyk-projects/project-tags.md)**:** Not available.
+* [**Custom Project Tags**](../fixing-and-prioritizing-issues/introduction-to-snyk-projects/project-tags.md)**:** Not available.
 * [**Service Accounts**](../user-and-group-management/structure-account-for-high-application-performance/service-accounts.md)**:** Not available.
 * [**Group / Multiple Orgs**](../user-and-group-management/managing-groups-and-organizations/)**:** Limited to one group and one org.
 

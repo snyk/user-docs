@@ -4,7 +4,7 @@ Snyk helps you to fix vulnerabilities, by upgrading the direct dependencies to a
 
 To fix a vulnerability with Snyk:
 
-* Click **Fix this vulnerability** on a specific [issue card](../../snyk-web-ui/introduction-to-snyk-projects/issue-card-information.md) on the relevant project page.
+* Click **Fix this vulnerability** on a specific [issue card](../../fixing-and-prioritizing-issues/introduction-to-snyk-projects/issue-card-information.md) on the relevant project page.
 * If you are using a [Source code integration](../../integrations/git-repository-scm-integrations/):
   * Click **Open a fix PR** on the project page.
   * Use [automated pull requests](../snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md) when new fixes become available that help you to fix a vulnerability.

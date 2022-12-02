@@ -45,7 +45,7 @@ Snyk's knowledge of the transitive dependencies in your project make it possible
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-19 at 11.57.07.png>)
 
-See [Fixing vulnerabilities](broken-reference/) for details.
+See [Fixing vulnerabilities](../../snyk-web-ui/introduction-to-snyk-projects/broken-reference/) for details.
 
 ### View dependencies
 

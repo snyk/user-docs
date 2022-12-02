@@ -31,7 +31,7 @@ Click an entry to open the issues view for that entry, including the module wher
 
 ![](../../.gitbook/assets/project-details.png)
 
-See [view-project-information.md](../../snyk-web-ui/introduction-to-snyk-projects/view-project-information.md "mention") for more details.
+See [view-project-information.md](../../fixing-and-prioritizing-issues/introduction-to-snyk-projects/view-project-information.md "mention") for more details.
 
 ### Fix vulnerabilities
 
