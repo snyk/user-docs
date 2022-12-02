@@ -4,7 +4,7 @@ Enable integration between a Microsoft Azure Container Registry (ACR) registry a
 
 **Steps:**
 
-1. Access your ACR account and retrieve unique service principal credentials for use by Snyk with the AcrPull role. For help doing this, see [Configure the ACR integration](../../../getting-started-1/snyk-integrations/microsoft-azure/securing-acr/configure-the-acr-integration.md).
+1. Access your ACR account and retrieve unique service principal credentials for use by Snyk with the AcrPull role. For help doing this, see [Configure the ACR integration](../../../snyk-processes-and-information/getting-started/snyk-integrations/microsoft-azure/securing-acr/configure-the-acr-integration.md).
 2. Log in to your Snyk account.
 3. Navigate to **Integrations** from the menu bar at the top, find and click the **ACR** option.
 4. The ACR configuration page in the **Settings** area loads:

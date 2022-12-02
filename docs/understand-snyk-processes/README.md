@@ -1,0 +1,2 @@
+# Understand Snyk processes
+

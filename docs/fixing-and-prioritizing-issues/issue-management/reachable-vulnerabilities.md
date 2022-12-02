@@ -28,7 +28,7 @@ Reachable Vulnerabilities analysis is available for Java (Maven and Gradle) in t
 {% hint style="info" %}
 To provide this feature, Snyk takes a temporary copy of your Git repository contents.
 
-For more information see [how-snyk-handles-your-data.md](../../snyk-processes/how-snyk-handles-your-data.md "mention")
+For more information see [how-snyk-handles-your-data.md](../../understand-snyk-processes/how-snyk-handles-your-data.md "mention")
 {% endhint %}
 
 1. Set up your [GitHub integration](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration).
