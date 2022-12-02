@@ -9,7 +9,7 @@ This feature is available with Business and Enterprise plans. See [pricing plans
 
 You can set up a **service account**, to be used for continuous integration (CI) and other automation purposes, without using an actual Snyk user’s token.
 
-Service accounts are a special type of system user that has only an API token associated with it, substituting for standard user credentials. Use this token to provide credentials for accessing your Snyk account when setting up integration with your development tools, and when working with our [CLI](../../snyk-cli/) and [API](../../snyk-api-info/).
+Service accounts are a special type of system user that has only an API token associated with it, substituting for standard user credentials. Use this token to provide credentials for accessing your Snyk account when setting up integration with your development tools, and when working with our [CLI](../../snyk-cli/) and [API](../../snyk-api/).
 
 You can generate single or multiple tokens on the Organization or Group levels to manage your integrations. Use Group-level tokens to access group API endpoints, organization API endpoints, and the CLI, for all organizations in the Group.
 

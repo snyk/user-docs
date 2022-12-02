@@ -22,6 +22,6 @@ Snyk shows your [preferred (or default) organization](https://docs.snyk.io/snyk-
 
 ## More information
 
-|                                                                                                                               |                                                                                                                                   |
-| ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| For the other Snyk platforms, see [Snyk CLI](../snyk-cli/), [Snyk API](../snyk-api-info/), or [Snyk for IDEs](../ide-tools/). | For related Snyk Training resources, see [Use Snyk Tools: UI, CLI, IDE](https://training.snyk.io/learn/learning-path/snyk-tools). |
+|                                                                                                                          |                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+| For the other Snyk platforms, see [Snyk CLI](../snyk-cli/), [Snyk API](../snyk-api/), or [Snyk for IDEs](../ide-tools/). | For related Snyk Training resources, see [Use Snyk Tools: UI, CLI, IDE](https://training.snyk.io/learn/learning-path/snyk-tools). |

@@ -7,7 +7,7 @@ You can work with Snyk Code using the following Snyk Environments:
 * [Snyk Web UI ](../../../snyk-web-ui/)(including [PR Checks](../../introduction-to-pr-checks/pr-checks-for-snyk-code/))
 * [Snyk for IDEs](../../../ide-tools/)
 * [Snyk CLI](../../../snyk-cli/)
-* [Snyk API](../../../snyk-api-info/)
+* [Snyk API](../../../snyk-api/)
 
 The prerequisites for using Snyk Code are the same for all Snyk Environments:
 
