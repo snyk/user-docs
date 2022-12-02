@@ -164,7 +164,7 @@ Empower developers to find and fix issues early in the development process by ad
 
 More information:
 
-* Docs: [Snyk for IDEs](../ide-tools/)
+* Docs: [Snyk for IDEs](../integrate-with-snyk/ide-tools/)
 * Training: [Introduction to using Snyk in an IDE](https://training.snyk.io/courses/introduction-to-using-snyk-in-an-ide)
 
 #### Use Snyk in the CLI
@@ -182,5 +182,5 @@ The Snyk Web UI scans different types of projects (depending on which product yo
 
 More information:
 
-* Docs: [Snyk Web UI](../snyk-web-ui/)
+* Docs: [Snyk Web UI](introducing-snyk/snyk-web-ui/)
 * Training: [Introduction to Snyk](https://training.snyk.io/learning-paths/introduction-to-snyk), [Find and Fix with Snyk Open Source](https://training.snyk.io/learning-paths/find-and-fix-with-snyk-open-source), [Introduction to the Snyk UI](https://training.snyk.io/courses/introduction-to-the-snyk-ui)

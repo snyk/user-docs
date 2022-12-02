@@ -17,7 +17,7 @@ For example, for a code analysis scanned by Snyk Code:
 
 ![](<../../.gitbook/assets/image (23) (2) (1).png>)
 
-See [View project information](../../fixing-and-prioritizing-issues/introduction-to-snyk-projects/view-project-information.md) for more details.
+See [View project information](../../snyk-web-ui/introduction-to-snyk-projects/view-project-information.md) for more details.
 
 ### View Issue Cards
 

@@ -14,7 +14,7 @@ Developers can use:
 
 * [Snyk CLI](../../snyk-cli/) for local checks on the developer’s machine.\
   **Training**: see [Introduction to the Snyk CLI](https://training.snyk.io/courses/intro-cli)​.
-* [Snyk for IDEs](../../ide-tools/) Plugins for checks embedded in the developer IDEs.\
+* [Snyk for IDEs](../../integrate-with-snyk/ide-tools/) Plugins for checks embedded in the developer IDEs.\
   **Training**: see [Introduction to using Snyk in an IDE](https://training.snyk.io/courses/introduction-to-using-snyk-in-an-ide).
 
 #### At code merge

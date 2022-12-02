@@ -20,10 +20,10 @@ See [Snyk user hub](https://snyk.io/user-hub/) for a full list of knowledge reso
 
 ### Use Snyk in your environment
 
-|                                                                                                                                               |                                                                                                                                                |
-| --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p><a href="snyk-web-ui/"><strong>Snyk Web UI</strong></a><br>Access browser-based scanning functions, view results and show reports.</p>     | <p><a href="snyk-cli/"><strong>Snyk CLI</strong></a><br>Run local scans of applications, containers, and IaC for security vulnerabilities.</p> |
-| <p><a href="ide-tools/"><strong>Snyk IDEs</strong></a><br>Use the functionality of Snyk, all in your standard IDEs such as Visual Studio.</p> | <p><a href="snyk-api-info/"><strong>Snyk API</strong></a><br>Tune Snyk’s security automation to your specific workflows.</p>                   |
+|                                                                                                                                                                            |                                                                                                                                                |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p><a href="getting-started/introducing-snyk/snyk-web-ui/"><strong>Snyk Web UI</strong></a><br>Access browser-based scanning functions, view results and show reports.</p> | <p><a href="snyk-cli/"><strong>Snyk CLI</strong></a><br>Run local scans of applications, containers, and IaC for security vulnerabilities.</p> |
+| <p><a href="integrate-with-snyk/ide-tools/"><strong>Snyk IDEs</strong></a><br>Use the functionality of Snyk, all in your standard IDEs such as Visual Studio.</p>          | <p><a href="snyk-api-info/"><strong>Snyk API</strong></a><br>Tune Snyk’s security automation to your specific workflows.</p>                   |
 
 ### Use other resources
 

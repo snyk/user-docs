@@ -96,7 +96,7 @@ A text file format used to build container images using Docker. The Dockerfile c
 
 ### Environment
 
-Can refer to a [Snyk Cloud Environment](glossary.md#snyk-cloud-environment), a [project attribute](../fixing-and-prioritizing-issues/introduction-to-snyk-projects/project-attributes.md), or an interface for working with Snyk, such as the Snyk [CLI](glossary.md#cli), [Web UI](glossary.md#snyk-web-ui), or an [IDE](glossary.md#ide).
+Can refer to a [Snyk Cloud Environment](glossary.md#snyk-cloud-environment), a [project attribute](../snyk-web-ui/introduction-to-snyk-projects/project-attributes.md), or an interface for working with Snyk, such as the Snyk [CLI](glossary.md#cli), [Web UI](glossary.md#snyk-web-ui), or an [IDE](glossary.md#ide).
 
 ### Exploit
 
@@ -353,7 +353,7 @@ Incorporates **Snyk Intel Vulnerability DB**: Snyk’s database of vulnerabiliti
 
 ### Snyk Web UI
 
-The environment allowing users to access Snyk functions on the web. See [Snyk Web UI](../snyk-web-ui/).
+The environment allowing users to access Snyk functions on the web. See [Snyk Web UI](../getting-started/introducing-snyk/snyk-web-ui/).
 
 ### Social Trends
 
