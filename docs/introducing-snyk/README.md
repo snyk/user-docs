@@ -21,9 +21,9 @@ A good security process secures each of these components where they are built an
 
 Snyk runs in the following environments:
 
-* In the browser as [Snyk Web UI](../getting-started/introducing-snyk/snyk-web-ui/).
+* In the browser as [Snyk Web UI](../snyk-web-ui/).
 * In your local Command Line Interface (or in your pipeline) with the [Snyk CLI](https://docs.snyk.io/snyk-cli).
-* In various [IDE plugins](../integrate-with-snyk/ide-tools/) that embed Snyk in your local dev environment.
+* In various [IDE plugins](../ide-tools/) that embed Snyk in your local dev environment.
 * In the [Snyk API](https://support.snyk.io/hc/en-us/categories/360000665657-Snyk-API) (Application Programming Interface).
 
 See [Snyk products and environments](snyk-products-and-environments.md) for more details.
