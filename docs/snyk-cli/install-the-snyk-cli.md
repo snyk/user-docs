@@ -1,8 +1,10 @@
 # Install or update the Snyk CLI
 
-You can install the [Snyk CLI](./) using the methods explained on this page.
+You can install or update the [Snyk CLI](./) using the methods explained on this page.
 
 After you install the Snyk CLI, you must [authenticate](commands/auth.md). Then you can [get started](getting-started-with-the-cli.md) testing and fixing your vulnerabilities, beginning with testing your installation.
+
+**Note**: Snyk recommends always keeping your CLI installation updated to the latest version. You can check which version of the Snyk CLI you have installed by running `snyk --version`.
 
 ## Install the Snyk CLI with npm or Yarn
 
@@ -47,7 +49,7 @@ For Apple M1 (darwin/arm64), see: [How do I run Snyk CLI on an Apple M1 machine?
 {% endhint %}
 
 {% hint style="warning" %}
-**Note:** The drawback of this method is that you must keep the Snyk CLI up to date manually.
+The drawback of this method is that you must keep the Snyk CLI up to date manually.
 {% endhint %}
 
 ## Install with Homebrew (macOS, Linux)
