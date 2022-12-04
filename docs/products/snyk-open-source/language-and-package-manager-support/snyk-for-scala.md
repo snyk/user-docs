@@ -53,8 +53,6 @@ Scala `sbt` projects can be imported from any of the Git repositories that Snyk 
 To test your Scala projects using `sbt` as a package manager, Snyk analyzes your `build.sbt` file. \
 To ensure that this works properly, you must have this file in your repository before importing your projects.
 
-importing SBT projects and getting no dependencies.
-
 {% hint style="info" %}
 You can’t declare versions of dependencies in a file that is not accessible to Snyk via a Source Code Manager (SCM) integration. For example, `Dependencies.scala`.
 

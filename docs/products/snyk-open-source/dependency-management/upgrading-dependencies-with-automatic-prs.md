@@ -89,7 +89,7 @@ The Settings on the Project level override the Settings on the organization leve
 2. In **Projects**, **** locate and expand the Project for which you want to enable automatic upgrade PRs.&#x20;
 3.  Click the **Project settings** (<img src="../../../.gitbook/assets/gear.png" alt="" data-size="line"> gear icon) at the end of the project row.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Navigating to the Project settings page</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Navigating to the Project settings page</p></figcaption></figure>
 4.  In the **Project** **Settings** page, choose the relevant integration tab from the left submenu.&#x20;
 
     <figure><img src="../../../.gitbook/assets/project_settings_page_1dec2022.png" alt=""><figcaption><p>Project settings > relevant integration tab selected</p></figcaption></figure>
