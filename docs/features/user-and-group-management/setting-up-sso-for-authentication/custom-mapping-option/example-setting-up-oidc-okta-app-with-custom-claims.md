@@ -6,10 +6,10 @@ The steps follow to configure an integration for OIDC Okta.
 
 1.  In Okta, select **Applications -> Applications -> Create App Integration** then choose **OICD OpenID Connect** and **Web Application.**
 
-    <figure><img src="../../../../.gitbook/assets/1 (1).png" alt="Create a new app integration in Okta"><figcaption><p>Create a new app integration in Okta</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/1 (3).png" alt="Create a new app integration in Okta"><figcaption><p>Create a new app integration in Okta</p></figcaption></figure>
 2.  In the next step add an **App integration name** for your OIDC application, check the **Implicit** **Grant Type** and add the **Sign-in redirect URI** relevant to your [Snyk platform deployment](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/set-up-snyk-single-sign-on-sso#use-openid-connect-oidc-for-sso). Remove the placeholder **Sign-out redirect URI** and choose your assignment access control before clicking **Save.**
 
-    <figure><img src="../../../../.gitbook/assets/2 (1).png" alt="Provide details for new web app integration"><figcaption><p>Provide details for new web app integration</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/2.png" alt="Provide details for new web app integration"><figcaption><p>Provide details for new web app integration</p></figcaption></figure>
 3. On the application page that opens after saving, copy the [following details](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/set-up-snyk-single-sign-on-sso#oidc-information-to-provide-to-snyk) and provide to your Snyk contact:
    * Client ID
    * If you are not using Implicit Grant type, the client secret
@@ -33,7 +33,7 @@ Custom mapping for an OIDC application in Okta is easily managed through custom 
     **Variable name:** roles\
     **Group Priority**: Combine values across groups&#x20;
 
-    <figure><img src="../../../../.gitbook/assets/4.png" alt="Attribute details"><figcaption><p>Attribute details</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/4 (3).png" alt="Attribute details"><figcaption><p>Attribute details</p></figcaption></figure>
 
 ### Assign the attribute to the relevant Okta groups
 
