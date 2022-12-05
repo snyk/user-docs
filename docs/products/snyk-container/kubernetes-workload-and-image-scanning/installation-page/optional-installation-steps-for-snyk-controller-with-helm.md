@@ -50,7 +50,7 @@ The installation steps to use depend on how you want to configure Snyk Controlle
 
 ## **Alter the logging verbosity**
 
-*   If you would like to alter the logging verbosity you can do so as follows. Valid levels are `INFO`, `WARN` and `ERROR`. Snyk defaults to `INFO`.
+*   If you would like to change the logging verbosity, you can do so as follows. Valid levels are `INFO`, `WARN,` `ERROR` and `DEBUG`. Snyk defaults to `INFO`.
 
     ```
     helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
@@ -152,3 +152,17 @@ The installation steps to use depend on how you want to configure Snyk Controlle
                  --set requests.cpu="X"
                  --set limits.cpu="Y"
     ```
+
+## Configure Snyk Controller initContainers setting
+
+* If you use a **PersistentVolumeClaim** (PVC), instead of the default **emptyDir** storage, then you need to provision volume permissions. To do this, disable the [initContainer](https://github.com/snyk/kubernetes-monitor/blob/master/snyk-monitor/templates/deployment.yaml#L56)[s](https://github.com/snyk/kubernetes-monitor/blob/master/snyk-monitor/templates/deployment.yaml#L56) in the Helm chart. using the `--set` flag:
+
+```
+helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
+             --namespace snyk-monitor \
+             --set initContainers.enabled = false
+```
+
+{% hint style="info" %}
+For Openshift platform, the `initContainers` setting is mandatory.
+{% endhint %}
