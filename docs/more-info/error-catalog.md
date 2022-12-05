@@ -323,6 +323,29 @@
 
   
 ---
+# [Open Source Unmanaged](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files)
+### [SNYK-OSJVM-001](#snyk-osjvm-001-maven-search-service-unavailable) - Maven Search Service Unavailable
+  The upstream Maven search service is not available.
+
+  **HTTP Status:** [503](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  - [https://search.maven.org](https://search.maven.org)
+- [https://status.maven.org](https://status.maven.org)
+### [SNYK-OSJVM-002](#snyk-osjvm-002-sha1-not-found) - SHA1 Not Found
+  Unable to find the coordinates for the provided SHA1.
+
+  **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  - [https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files)
+---
 # [PURL Vulnerabilities](https://docs.snyk.io/introducing-snyk/getting-started-snyk-intel-vuln-db-access#about-the-snyk-vulnerability-database)
 ### [SNYK-OSSI-1040](#snyk-ossi-1040-your-organisation-is-not-authorised-to-perform-this-action) - Your organisation is not authorised to perform this action
   You likely don’t have access to the Beta. To get access, you can request access to the Beta through your account manager or team.
@@ -560,4 +583,4 @@
   
 ---
 
-Genererated at 2022-12-01T12:08:06.474Z
+Genererated at 2022-12-05T11:46:30.709Z
