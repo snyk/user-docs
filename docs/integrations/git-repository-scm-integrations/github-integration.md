@@ -37,7 +37,7 @@ After you add them, Snyk scans the selected repositories for dependency files in
 
 The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-![](<../../.gitbook/assets/which\_repos (3) (5) (9) (7) (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (11).jpg>)
+![](<../../.gitbook/assets/which\_repos (3) (5) (9) (7) (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (10).jpg>)
 
 ## GitHub integration features
 
@@ -67,7 +67,7 @@ Snyk scans your projects on either a daily or a weekly basis. When new vulnerabi
 
 The example below presents a fix Pull Request opened by Snyk.
 
-![](../../.gitbook/assets/github\_fix\_pr\_cropped-14july2022.png)
+![](<../../.gitbook/assets/github\_fix\_pr\_cropped-14july2022 (1).png>)
 
 To review and adjust the automatic fix Pull Request settings in the Snyk GitHub Integration settings page, go to <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> (Organization Settings) **>** **Integrations > Source control > GitHub**.
 
@@ -89,11 +89,11 @@ Snyk tests any newly created pull request in your repositories for security vuln
 
 The example below presents how Snyk pull request checks appear on the GitHub Pull Request page.
 
-![](<../../.gitbook/assets/pr\_testing-14july2022 (1).png>)
+![](../../.gitbook/assets/pr\_testing-14july2022.png)
 
 You can review and adjust the pull request tests settings via the Snyk GitHub Integration settings page in <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> (Organization Settings) **>** **Integrations > Source control > GitHub**.
 
-![](../../.gitbook/assets/default\_snyk\_test-3july2022.png)
+![](<../../.gitbook/assets/image (143).png>)
 
 ## Required permissions scope for the GitHub integration
 
@@ -238,16 +238,16 @@ For example, to show a badge for the 4.x branch of the express repo, you would u
 
 #### Badge results
 
-* A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (142) (1) (1).png" alt="" data-size="line">
-* A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (203).png" alt="" data-size="line">
-* A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (209) (1).png" alt="" data-size="line">
+* A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (142) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">
+* A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (175) (1).png" alt="" data-size="line">
+* A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (209) (1) (1) (1) (1) (1).png" alt="" data-size="line">
 
 #### **Badge styles**
 
 To change the style of the badge, you can add the following query parameters after `badge.svg`:
 
-* Flat rectangle with squared edges: `?style=flat-square` <img src="../../.gitbook/assets/image (1) (5) (1).png" alt="" data-size="line">
-* "Plastic" rectangle with rounded edges and shading `?style=plastic` <img src="../../.gitbook/assets/image (142) (1) (1).png" alt="" data-size="line">
+* Flat rectangle with squared edges: `?style=flat-square` <img src="../../.gitbook/assets/image (1) (5) (1) (1) (1) (1).png" alt="" data-size="line">
+* "Plastic" rectangle with rounded edges and shading `?style=plastic` <img src="../../.gitbook/assets/image (142) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">
 
 ### **npm badges**
 

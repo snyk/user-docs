@@ -26,4 +26,4 @@ Please see read our blog post about the ability to interpolate variables: [Snyk 
 
 * If needed, review and adjust settings in the **Infrastructure as code** settings area:
 
-![](<../../../.gitbook/assets/image (216).png>)
+![](<../../../.gitbook/assets/image (105) (1).png>)
