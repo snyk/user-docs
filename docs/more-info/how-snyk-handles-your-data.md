@@ -87,12 +87,24 @@ We know how important it is for you to protect your data. Our products only acce
 
 ****![](../.gitbook/assets/SnykIaC.svg)****
 
-* CLI scans are performed locally. The contents of your files are not shared or stored by Snyk.
-* Git-based scans require access to your Infrastructure as Code files. Snyk stores them for the duration of the analysis and subsequently deletes them from our system. Your IaC files are not stored by Snyk.
-* Highlighted code snippets in the Snyk UI are generated dynamically, leveraging git-based scans from the provided source code repository integration. Your code snippets and IaC files are not stored by Snyk.
-* Drift detection scans rely on the principle of least privilege.
-  * Snyk does not require authorized access to your applications. Additionally, cloud credentials are never collected or stored by Snyk.
-  * Snyk requires local read-only Terraform states access. The states are never transmitted to or analyzed by Snyk.
+* CLI tests are performed locally. When sharing results with the Snyk platform via the `--report` option, resource configurations will also be included.
+* SCM tests require access to your infrastructure as code files. Snyk stores them for the duration of the analysis and subsequently deletes them from our system. Snyk retains parsed resource configurations to provide context for issues and resources.
+* Terraform Cloud and Terraform Enterprise tests analyze plan files. Snyk removes secrets and sensitive values, and retains resource configurations to provide context for issues and resources.
+* For drift detection via `snyk iac describe`, Snyk relies on the principle of least privilege, and only requires read-only AWS access. AWS credentials are not sent to/stored by Snyk.
+* Snyk relies on local read-only Terraform State file access, and extracts and sends relevant resource configuration data to the platform.
+{% endtab %}
+
+{% tab title="Snyk Cloud" %}
+**Snyk Cloud**
+
+![](../.gitbook/assets/SnykCloud.svg)
+
+* Snyk Cloud scans cloud platform APIs to gather information on configured infrastructure deployed in AWS Accounts and Google Cloud Subscriptions.
+* To perform scans, Snyk relies on the principle of least privilege, leveraging different authentication mechanisms which are supported by each Cloud platform.
+  * For Amazon Web Services (AWS), a read-only AWS IAM role must be provisioned in your AWS Account(s) to provide secure access to required AWS APIs.
+  * For Google Cloud, a read-only Google Cloud Service Account must be provisioned to enable secure access to required Google Cloud APIs.
+* During scans, Snyk gathers and stores a resource configuration state to perform analysis, and stores the results of that analysis, including the details of misconfigurations which result in issues.
+* Snyk Cloud retains resource configuration states found in scans to provide context for Issues and resources, but does not store secrets or sensitive values.
 {% endtab %}
 {% endtabs %}
 
