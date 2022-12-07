@@ -4,7 +4,7 @@
 **Feature availability**\
 This feature is available with Business and Enterprise Plans. See [pricing plans](https://snyk.io/plans/) for details.
 
-This feature is not available for Business Plan trials. See [Plans](../../../introducing-snyk/plans.md) for details.
+This feature is not available for Business Plan trials. See [Plans](../../../getting-started/introducing-snyk/plans.md) for details.
 {% endhint %}
 
 ## Introduction

@@ -3,7 +3,7 @@
 Snyk Open Source supports the following programming languages, build tools, and package managers.
 
 {% hint style="info" %}
-For supported languages in other Snyk products, see [Snyk languages and integrations](../../../introducing-snyk/snyk-languages-and-integrations.md).&#x20;
+For supported languages in other Snyk products, see [Snyk languages and integrations](../../../getting-started/introducing-snyk/snyk-languages-and-integrations.md).&#x20;
 {% endhint %}
 
 | **Language**                                                         | **Package manager/build tool**                                                        |

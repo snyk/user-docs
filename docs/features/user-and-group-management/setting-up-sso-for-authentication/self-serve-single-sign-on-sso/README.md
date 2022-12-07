@@ -1,6 +1,6 @@
 # Self Serve Single Sign-On (SSO)
 
-Group Admins of a Business or Enterprise plan who use SAML for SSO can configure Snyk Single Sign-on by themselves. Ensure you have at least one Group and Organization to indicate where new users will be assigned. See [Groups, Organizations, and Users](../../../../introducing-snyk/groups-organizations-and-users.md).
+Group Admins of a Business or Enterprise plan who use SAML for SSO can configure Snyk Single Sign-on by themselves. Ensure you have at least one Group and Organization to indicate where new users will be assigned. See [Groups, Organizations, and Users](../../../../getting-started/introducing-snyk/groups-organizations-and-users.md).
 
 {% hint style="warning" %}
 Self serve SSO does not accommodate [custom mapping](../custom-mapping-option/). To set up custom SSO for your Snyk Group, contact your Snyk account team.

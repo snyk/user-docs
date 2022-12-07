@@ -4,7 +4,7 @@ Set up single sign-on to allow your developers and teams easy access to Snyk thr
 
 The information you need to establish trust between Snyk and the identity provider depends on which type of SSO you are using.
 
-Ensure you have at least one Group and Organization to indicate where new users will be assigned. See [Groups, organizations, and users](../../../introducing-snyk/groups-organizations-and-users.md).
+Ensure you have at least one Group and Organization to indicate where new users will be assigned. See [Groups, organizations, and users](../../../getting-started/introducing-snyk/groups-organizations-and-users.md).
 
 {% hint style="info" %}
 Once you have gathered the needed information identified in the following sections, create a support ticket to request SSO set up.
@@ -165,10 +165,10 @@ To complete your log in:
 
 These worksheets include the information to enter in your Identity provider and the information you need to collect before submitting a ticket to Snyk Support to request single sign-on.
 
-{% file src="../../../.gitbook/assets/SSO Azure Worksheet (1) (1) (1) (1) (1) (1).pdf" %}
+{% file src="../../../.gitbook/assets/SSO Azure Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
 
-{% file src="../../../.gitbook/assets/SSO SAML Worksheet (1) (1) (1).pdf" %}
+{% file src="../../../.gitbook/assets/SSO SAML Worksheet (1) (1) (1) (1) (1) (1) (1).pdf" %}
 
 {% file src="../../../.gitbook/assets/SSO ADFS Worksheet (1).pdf" %}
 
-{% file src="../../../.gitbook/assets/SSO OIDC Worksheet (1).pdf" %}
+{% file src="../../../.gitbook/assets/SSO OIDC Worksheet (1) (1) (1) (1) (1).pdf" %}
