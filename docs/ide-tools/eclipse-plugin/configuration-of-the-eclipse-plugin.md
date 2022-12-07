@@ -14,7 +14,7 @@ You can set the following configuration options in the Snyk preferences.
 * `Organization`: Specify the Snyk Organization to use for scanning.
 * `Additional Parameters`: Specify additional parameters to pass to the CLI (for example, `--all-projects` or `-d.`
 * `Additional Environment`: Add environment variables to Language Server, multiple can be separated by `;`. Example: `JAVA_HOME=/usr/local/bin;GOPATH=/usr/local/bin`
-* `Update and install Snyk binaries automatically`: If `disabled`, no updates are downloaded and updates must be performed manually. Please make sure that the locations for Language Server and CLI point to an existent, current binary.
+* `Update and install Snyk binaries automatically`: If `disabled`, no updates are downloaded and updates must be performed manually. Snyk recommends recommends always using the most recent version of the CLI. Please make sure that the locations for Language Server and CLI point to an existent, current binary.
 * `Snyk Language Server`: Specify the location of your language server binary.
 * `Snyk CLI`: Specify the location of the Snyk CLI .
 * `Send error reports to Snyk`: Send errors from Language Server to Snyk to enable quicker bug fixing. Default: `Enabled`.
