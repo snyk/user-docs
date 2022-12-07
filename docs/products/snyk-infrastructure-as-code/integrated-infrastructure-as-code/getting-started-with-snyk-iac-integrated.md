@@ -43,6 +43,10 @@ Test Summary
   Total issues: 1 [ 0 critical, 0 high, 0 medium, 1 low ]
 ```
 
+{% hint style="info" %}
+The CLI for Integrated IaC is able to scan Terraform modules too, regardless of whether they're public or private modules. Just run `terraform init` before running the `snyk iac test` command and the CLI will read the generated `.terraform files.`&#x20;
+{% endhint %}
+
 ## Stage 2: View IaC issues in the Snyk Web UI
 
 You can use the [CLI](../../../snyk-cli/) `snyk iac test` command to address known configuration issues.

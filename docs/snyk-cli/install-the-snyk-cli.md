@@ -78,7 +78,7 @@ scoop install snyk
 
 Snyk CLI can also be run from a Docker image. Snyk offers multiple Docker images under [snyk/snyk-cli](https://hub.docker.com/r/snyk/snyk-cli) and [snyk/snyk](https://hub.docker.com/r/snyk/snyk) (see [snyk/snyk-images on GitHub](https://github.com/snyk/snyk-images) for more details).
 
-These images wrap the Snyk CLI and depending on the Tag come with relevant tooling for different projects, for example, for scanning a Gradle project with snyk/snyk-cli:
+These images wrap the Snyk CLI and depending on the Tag come with relevant tooling for different projects. An example follows for scanning a Gradle project with `snyk/snyk-cli`:
 
 ```bash
 docker run -it \
@@ -86,6 +86,18 @@ docker run -it \
     -v "<PROJECT_DIRECTORY>:/project" \
     -v "/home/user/.gradle:/home/node/.gradle" \
   snyk/snyk-cli:gradle-5.4 test --org=my-org-name
+```
+
+This is an example for scanning a Maven project with `/snyk/snyk-cli`:
+
+```
+docker run --rm -r \
+-e SNYK_TOKEN=<YOUR_SNYK_TOKEN> \
+-v <PROJECT_DIRECTORY>:/app \
+-v <PROJECT_DIRECTORY>/settings.xml:/root/.m2/settings.xml \
+snyk/snyk:maven snyk monitor \
+--all-projects=true \
+--maven-aggregate-project
 ```
 
 ## Install as a part of a Snyk integration

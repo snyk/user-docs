@@ -16,7 +16,6 @@ To access the latest Integrated IaC functionalities, you should use Snyk CLI v1.
 | **Kubernetes**              | Yes                     | Yes                        |
 | **ARM**                     | Yes                     | Yes                        |
 
-While Integrated IaC provides better support for Terraform than Current IaC, the following limitations apply:
-
-* When scanning a Terraform plan, line number information is not provided in the scan results.
-* Terraform modules are scanned by default, but only public modules are currently supported.
+{% hint style="warning" %}
+Although Integrated IaC provides better support for Terraform than Current IaC, line number information is not provided in the scan results.
+{% endhint %}
