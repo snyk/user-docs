@@ -380,6 +380,7 @@
     * [Understanding the Priority Score of the Snyk Code issues](products/snyk-code/exploring-and-working-with-the-snyk-code-results/understanding-the-priority-score-of-the-snyk-code-issues.md)
     * [Exploring the History of the Snyk Code Results](products/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-history-of-the-snyk-code-results.md)
     * [Sharing your feedback with Snyk Code](products/snyk-code/exploring-and-working-with-the-snyk-code-results/sharing-your-feedback-with-snyk-code.md)
+  * [Using Snyk Code from CI/CD pipeline](products/snyk-code/using-snyk-code-from-ci-cd-pipeline.md)
   * [PR Checks for Snyk Code](products/snyk-code/pr-checks-for-snyk-code/README.md)
     * [Prerequisites for the PR Checks feature](products/snyk-code/pr-checks-for-snyk-code/prerequisites-for-the-pr-checks-feature.md)
     * [Enabling PR Checks for Snyk Code](products/snyk-code/pr-checks-for-snyk-code/enabling-pr-checks-for-snyk-code.md)

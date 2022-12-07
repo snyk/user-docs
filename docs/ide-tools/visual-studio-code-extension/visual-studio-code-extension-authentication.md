@@ -30,3 +30,9 @@ To re-authenticate with a different account, follow these steps:
 Or you run `Snyk: Set Token` command and set your token in the text field manually.
 
 ![Set token manually](<../../.gitbook/assets/image (224).png>)
+
+## Requirements for Linux and Unix
+
+When authenticating with Snyk, users have the option to copy the authentication URL to their clipboard.
+
+For Linux and Unix users, this requires that the `xclip` or `xsel` utility be installed.

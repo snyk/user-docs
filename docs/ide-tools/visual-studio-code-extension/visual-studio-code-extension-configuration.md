@@ -26,6 +26,7 @@ After the extension is installed, you can set the following configurations for t
   * **Code Security**: configure if code security analysis should run over your code.
   * **Code Quality**: configure if code quality analysis should run over your code.
   * **Open Source Security**: configure if security analysis should run over your open source dependencies.
+  * **Infrastructure as Code**: configure if security analysis should run over your IaC configuration files.
 * **Severity**: set severity level to display in the analysis result tree.
 * **Crash Report**: send error reports to Snyk.
 * **Telemetry**: send usage statistics to Snyk.

@@ -44,4 +44,8 @@ On the [Orbs registry](https://circleci.com/orbs/registry/), CircleCI displays a
 
 In this list, find and click the relevant **Snyk** line to view the Snyk Orb information with examples, parameters, and values:
 
+{% hint style="info" %}
+Please make sure to use the latest version of the Snyk orb from the list
+{% endhint %}
+
 ![Snyk Orb information](../../.gitbook/assets/uuid-ce212e67-b7ac-3cf7-4772-c84f6897aed9-en.png)
