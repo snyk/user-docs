@@ -11,6 +11,7 @@ Snyk Code analysis runs quickly without the CLI, so results may already be avail
 Snyk analysis runs automatically when you open a folder or workspace.
 
 * Snyk Code performs scans automatically on file saves.
+* Snyk Infrastructure as Code scans automatically on file saves.
 * Snyk Open Source does not automatically run on save by default, but you can enable it in settings:
 
 ![Snyk Open Source settings](<../../.gitbook/assets/image (143) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)

@@ -182,6 +182,7 @@
     * [Workspace trust](ide-tools/visual-studio-code-extension/workspace-trust.md)
     * [Create a .dcignore file](ide-tools/visual-studio-code-extension/create-a-.dcignore-file.md)
     * [Run an analysis with Visual Studio Code extension](ide-tools/visual-studio-code-extension/run-an-analysis-with-visual-studio-code-extension.md)
+    * [Visual Studio Code extension analysis results: Snyk IaC Configuration](ide-tools/visual-studio-code-extension/visual-studio-code-extension-analysis-results-snyk-iac-configuration.md)
     * [View analysis results from Visual Studio Code extension](ide-tools/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension.md)
     * [Troubleshooting for Visual Studio Code extension](ide-tools/visual-studio-code-extension/troubleshooting-for-visual-studio-code-extension.md)
   * [Language Server](ide-tools/language-server.md)
