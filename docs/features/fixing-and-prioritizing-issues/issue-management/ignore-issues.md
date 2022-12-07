@@ -24,15 +24,17 @@ Issues can be ignored and viewed through the following means:
 
 ### Ignoring issues in the Web UI
 
-Each issue card has an **Ignore** button that opens a dialog where you can select why you want to ignore the issue and how long to ignore it.
+Each issue card has an **Ignore** button that opens a dialog where you can select how or why you want to ignore the issue and how long to ignore it.
 
-![Ignore dialog from issue card](../../../.gitbook/assets/ignore-vulnerability-ui-updated.png)
+<figure><img src="../../../.gitbook/assets/ignore-vulnerability-ui-updated.png" alt="Ignore dialog from issue card"><figcaption><p>Ignore dialog from issue card</p></figcaption></figure>
+
+You can select **Not vulnerable** for any issue that is not exploitable at the time you create the ignore.
 
 If you select **Ignore temporarily,** then you can check the **Until fix is available** checkbox:
 
-![Ignore temporarily](<../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1).png>)
+<figure><img src="../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1).png" alt="Ignore temporarily"><figcaption><p>Ignore temporarily</p></figcaption></figure>
 
-This resurfaces the vulnerability as soon as Snyk has a fix for it, and optionally you can give additional details on why you are ignoring the issue. This is checked by default if there is currently no fix available for this issue.
+The vulnerability resurfaces as soon as Snyk has a fix for it, and optionally you can give additional details on why you are ignoring the issue. This is checked by default if there is currently no fix available for this issue.
 
 {% hint style="info" %}
 An issue is ignored until ANY of the conditions happen, the ignore period expires, OR the vulnerability becomes fixable.
@@ -40,7 +42,7 @@ An issue is ignored until ANY of the conditions happen, the ignore period expire
 
 When you ignore an issue in the Snyk Web UI, the issue shows who ignored it and allow you to edit or unignore it.
 
-![Ignore set in the Snyk Web UI](<../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1).png>)
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1).png" alt="Ignore set in the Snyk Web UI"><figcaption><p>Ignore set in the Snyk Web UI</p></figcaption></figure>
 
 For more information see the training: [Ignoring issues](https://training.snyk.io/courses/ignore-strategies).
 
@@ -71,15 +73,15 @@ Ignores between a CLI (or CI/CD run) and the Snyk UI are synchronized as follows
 
 Refer to the following example:
 
-![Project imported from snyk monitor, ignore set in the Web UI](../../../.gitbook/assets/ignore-vulnerability-snyk-monitor-updated.png)
+<figure><img src="../../../.gitbook/assets/ignore-vulnerability-snyk-monitor-updated.png" alt="Project imported from snyk monitor, ignore set in the Web UI"><figcaption><p>Project imported from snyk monitor, ignore set in the Web UI</p></figcaption></figure>
 
 The following shows `snyk test` results before ignoring in the Web UI:
 
-![Snyk test results before ignoring in the Web UI](<../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1).png>)
+<figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1).png" alt="Snyk test results before ignoring in the Web UI"><figcaption><p>Snyk test results before ignoring in the Web UI</p></figcaption></figure>
 
 The following shows `snyk test` results after ignoring in the Web UI:
 
-![Snyk test results after ignoring in the Web UI](<../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1).png>)
+<figure><img src="../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk test results after ignoring in the Web UI"><figcaption><p>Snyk test results after ignoring in the Web UI</p></figcaption></figure>
 
 **Note**: The preceding example shows what happens if you ignore the project imported by `snyk monitor` from the CLI or CI/CD.
 
@@ -151,7 +153,7 @@ Suppressing vulnerabilities carries a level of risk, so you can make this functi
 3. Under **Require reason for each ignore**, you can also choose to set the **more details** field to be a required field when an issue is being ignored, ensuring the user enters a reason for each ignore.
 4. Click **Update** to make the changes.
 
-![Ignore settings](<../../../.gitbook/assets/Screenshot 2021-12-07 at 11.25.49.png>)
+<figure><img src="../../../.gitbook/assets/Screenshot 2021-12-07 at 11.25.49.png" alt="Ignore settings"><figcaption><p>Ignore settings</p></figcaption></figure>
 
 ## Using ignores in reports
 
