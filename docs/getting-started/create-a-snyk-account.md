@@ -10,8 +10,10 @@ To create a Snyk account:
 
 
     <figure><img src="../.gitbook/assets/start-free_signup.png" alt=""><figcaption><p>Click to start free or sign up for a Snyk account</p></figcaption></figure>
-2. Choose your preferred signup method.\
-   ![](../.gitbook/assets/signin\_method\_10nov2022.png)
+2.  Choose your preferred signup method.\
+
+
+    <figure><img src="../.gitbook/assets/signin_method_10nov2022.png" alt=""><figcaption></figcaption></figure>
 3. Create a new account as prompted. You now have a free Snyk account! Access your Snyk account at [https://app.snyk.io](https://app.snyk.io)
 
 ![Your free account is ready!](../.gitbook/assets/new\_acct\_created-10nov2022.png)
@@ -28,11 +30,13 @@ The Snyk web app will now provide some optional getting started walkthrough prom
 
 For example:
 
-![](../.gitbook/assets/Wizard1.png)
+<figure><img src="../.gitbook/assets/Connect Your Code - 1 - Select integration.png" alt=""><figcaption></figcaption></figure>
 
 If you click **GitHub**, then fill in the details as prompted (see [Set up an integration](set-up-an-integration.md)):
 
-![](<../.gitbook/assets/Wizard2 (1).png>)
+<figure><img src="../.gitbook/assets/Connect Your Code - 2 - Permissions.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Connect Your Code - 3 - Feature configuration.png" alt=""><figcaption></figcaption></figure>
 
 Finally, you can [import a Project](import-a-project.md) to scan:
 
