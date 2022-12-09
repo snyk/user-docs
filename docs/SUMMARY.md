@@ -241,7 +241,7 @@
       * [Example of a Snyk pipe for Docker](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/example-of-a-snyk-pipe-for-docker.md)
       * [Example of a Snyk pipe for npm](integrations/ci-cd-integrations/bitbucket-pipelines-integration-overview/example-of-a-snyk-pipe-for-npm.md)
     * [CircleCI integration](integrations/ci-cd-integrations/circleci-integration-overview.md)
-    * [GitHub Actions integration](integrations/ci-cd-integrations/github-actions-integration/README.md)
+    * [GitHub Actions integration](integrations/ci-cd-integrations/github-actions-integration.md)
       * [Snyk CocoaPods Action](integrations/ci-cd-integrations/github-actions-integration/snyk-cocoapods-action.md)
       * [Snyk dotNET Action](integrations/ci-cd-integrations/github-actions-integration/snyk-dotnet-action.md)
       * [Snyk Golang Action](integrations/ci-cd-integrations/github-actions-integration/snyk-golang-action.md)

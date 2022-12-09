@@ -8,7 +8,7 @@ For detailed information, refer to the pages for the integration you are using:
 * [Azure Pipelines integration](azure-pipelines-integration/)
 * [Bitbucket Pipelines integration](bitbucket-pipelines-integration-overview/)
 * [CircleCI integration](circleci-integration-overview.md)
-* [GitHub Actions integration](github-actions-integration/)
+* [GitHub Actions integration](github-actions-integration.md)
 * [Jenkins integration](jenkins-integration-overview.md)
 * [Maven integration](maven-plugin-integration.md)
 * [TeamCity integration](teamcity-integration-overview/)

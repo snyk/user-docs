@@ -4,30 +4,30 @@ Snyk offers a [set of GitHub actions](https://github.com/snyk/actions) for using
 
 For more information about GitHub actions see the [GitHub site ](https://github.com/features/actions)and the [GitHub custom actions](https://docs.github.com/en/actions/creating-actions/about-actions) documentation.
 
-A different action is required depending on which language or build tool you are using. Snyk currently offers the following actions (links to be provided):
+A different action is required depending on which language or build tool you are using. Snyk currently offers the following actions (during development of these pages find the content on [GitHub](https://github.com/snyk/actions)):
 
-* Snyk CocoaPods Action
-* Snyk dotNET Action
-* Snyk Golang Action
-* Snyk Gradle Action
-* Snyk Gradle-jdk11 Action
-* Snyk Gradle-jdk12 Action
-* Snyk Gradle-jdk14 Action
-* Snyk Gradle-jdk16 Action
-* Snyk Gradle-jdk17 Action
-* Snyk Maven Action
-* Snyk Maven-3-jdk-11 Action
-* Snyk Node Action
-* Snyk PHP Action
-* Snyk Python Action
-* Snyk Python-3.6 Action
-* Snyk Python-3.7 Action
-* Snyk Python-3.8 Action
-* Snyk Ruby Action
-* Snyk Scala Action
-* Snyk Docker Action
-* Snyk Infrastructure as Code Action
-* Snyk Setup Action
+* [Snyk CocoaPods Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-cocoapods-action)
+* [Snyk dotNET Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-dotnet-action)
+* [Snyk Golang Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-golang-action)
+* [Snyk Gradle Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-gradle-action)
+* [Snyk Gradle-jdk11 Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-gradle-jdk11-action)
+* [Snyk Gradle-jdk12 Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-gradle-jdk12-action)
+* [Snyk Gradle-jdk14 Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-gradle-jdk14-action)
+* [Snyk Gradle-jdk16 Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-gradle-jdk16-action)
+* [Snyk Gradle-jdk17 Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-gradle-jdk17-action)
+* [Snyk Maven Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-maven-action)
+* [Snyk Maven-3-jdk-11 Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-maven-3-jdk-11-action)
+* [Snyk Node Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-node-action)
+* [Snyk PHP Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-php-action)
+* [Snyk Python Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-python-action)
+* [Snyk Python-3.6 Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-python-3.6-action)
+* [Snyk Python-3.7 Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-python-3.7-action)
+* [Snyk Python-3.8 Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-python-3.8-action)
+* [Snyk Ruby Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-ruby-action)
+* [Snyk Scala Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-scala-action)
+* [Snyk Docker Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-docker-action)
+* [Snyk Infrastructure as Code Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-infrastructure-as-code-action)
+* [Snyk Setup Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-setup-action)
 
 Here's an example of using one of the Actions, in this case to test a Node.js project:
 
