@@ -17,7 +17,7 @@ A tag is a key and value combination that lets you add additional custom metadat
 
 ## Tag actions
 
-Using the Snyk Web UI and Snyk API, you can perform the following actions:
+Using the Snyk Web UI and [Snyk API](https://snyk.docs.apiary.io/#reference/projects/project-tags/add-a-tag-to-a-project), you can perform the following actions:
 
 * Create tags for Projects
 * Assign and remove tags from Projects
