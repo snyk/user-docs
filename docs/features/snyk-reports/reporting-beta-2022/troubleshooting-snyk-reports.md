@@ -30,7 +30,9 @@ Data is available in reporting approximately one hour after a scan occurs.
 
 ## Known limitations
 
-Exporting to PDF currently includes 10 results in table views.  Improvements to export will be implemented over time.
+Tables in PDF exports are limited to 50 results. A link is available at the bottom of the table in the PDF export to view the report in the browser.
+
+Session data is shared between browser tabs. Snyk recommends you have reporting tabs for one Group or one Org open in the browser at any one time, because having tabs open for different Groups or Orgs can result in unexpected behavior.
 
 ## Filtered views
 
