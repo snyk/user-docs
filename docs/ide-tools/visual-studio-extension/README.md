@@ -1,6 +1,6 @@
 # Visual Studio extension
 
-The Snyk Visual Studio extension provides analysis of your code and open source dependencies.
+The Snyk Visual Studio extension provides analysis of your code and open source dependencies. Download the plugin at any time free of charge and use it with any Snyk account. Scan your code early in the development lifecycle to help you pass security reviews and avoid costly fixes later in the development cycle.
 
 Snyk scans for vulnerabilities and returns results with security issues categorized by issue type and severity.
 
@@ -14,6 +14,8 @@ Snyk scans for the following types of issues:
   See also the [Open Source docs](https://docs.snyk.io/products/snyk-open-source).
 * [**Code Security and Code Quality**](https://snyk.io/product/snyk-code/) - security vulnerabilities and quality issues in your code. See also the Snyk Code docs. \
   See also the [Snyk Code docs](https://docs.snyk.io/products/snyk-code).
+
+In using the Visual Studio Code extension, you have the advantage of relying on the [Snyk Vulnerability Database](https://docs.snyk.io/introducing-snyk/getting-started-snyk-intel-vuln-db-access). You also have available the [Snyk Code AI Engine](https://docs.snyk.io/products/snyk-code/introducing-snyk-code/key-features/ai-engine).
 
 This page explains installation of the Visual Studio extension. **After you complete the steps on this page**, you will continue by following the instructions in the other Visual studio extension docs:
 
