@@ -6,7 +6,7 @@ Snyk offers a [set of GitHub actions](https://github.com/snyk/actions) for using
 
 For more information about GitHub actions see the [GitHub site ](https://github.com/features/actions)and the [GitHub custom actions](https://docs.github.com/en/actions/creating-actions/about-actions) documentation.
 
-You must use a different action depending on the language or build tool you are using. Snyk currently offers the following actions actions:
+You must use a different action depending on the language or process you are using. Snyk currently offers the following actions:
 
 * [Snyk CocoaPods Action](https://github.com/snyk/actions/tree/master/cocoapods)
 * [Snyk dotNET Action](https://github.com/snyk/actions/tree/master/dotnet)
@@ -35,7 +35,7 @@ You must use a different action depending on the language or build tool you are 
 
 Examples follow of using an Action to test and monitor a project. For information on using `snyk test` versus `snyk monitor` refer to [What are the differences among snyk test, monitor, and protect?](https://support.snyk.io/hc/en-us/articles/360000920818-What-is-the-difference-between-snyk-test-protect-and-monitor-)
 
-For information on using the Action for each language, refer to the repository for each language. Links are provided in the preceding [overview](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#overview-of-github-actions-integration).
+For information on using the Action for each language, including prerequisites and how the Action works, refer to the repository for each language. Links are provided in the preceding [overview](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#overview-of-github-actions-integration).
 
 **Note:** GitHub Actions will not pass on secrets set in the repository to forks being used in pull requests, and so the Snyk Actions that require the token will fail to run.
 
@@ -79,7 +79,7 @@ jobs:
 
 ## Use your own development environment
 
-The Actions for each language automatically install all the required development tools for Snyk to determine the correct dependencies and hence vulnerabilities from different language environments. If you have a workflow where you already have the development tools installed, you can instead use the `snyk/actions/setup` Action to install only [Snyk CLI](https://github.com/snyk/snyk):
+The Actions for each language automatically install all the required development tools for Snyk to determine the correct dependencies and hence vulnerabilities from different language environments. If you have a workflow where you already have the development tools installed, you can instead use the `snyk/actions/setup` Action to install only [Snyk CLI](https://github.com/snyk/snyk). An example follows:
 
 ```yaml
 name: Snyk example
@@ -115,9 +115,13 @@ Every Snyk account has this token. Once you [create an account](https://docs.sny
 1. In the UI, go to your Snyk account [settings page](https://app.snyk.io/account) and retrieve the API token, as explained in  [Revoking and regenerating Snyk API tokens](https://docs.snyk.io/snyk-api-info/revoking-and-regenerating-snyk-api-tokens).
 2. If you're using the [Snyk CLI](https://docs.snyk.io/snyk-cli/getting-started-with-the-cli) locally you can retrieve the API token by running `snyk config get api`.
 
+## GitHub Code Scanning support
+
+Snyk GitHub Actions support integration with GitHub Code Scanning to show vulnerability information in the GitHub Security tab. Refer to the repository for the Action for each language or process. Links are provided in the [overview](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#overview-of-github-actions-integration) on this page.
+
 ## Continuing on error
 
-When you use the Actions as shown in the examples, the workflow fails when issues are found. **** To continue the Action even if Snyk finds vulnerabilities, use [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob\_idstepscontinue-on-error)..
+When you use the Actions as shown in the examples, the workflow fails when issues are found. **** Note that this would prevent uploading results to GitHub Code Scanning. To continue the Action even if Snyk finds vulnerabilities, use [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob\_idstepscontinue-on-error).  For details, refer to the Action for each language or process. An example follows.
 
 ```yaml
 name: Example workflow using Snyk with continue on error
@@ -134,6 +138,3 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 ```
 
-## GitHub Code Scanning support
-
-All Snyk GitHub Actions support integration with GitHub Code Scanning to show vulnerability information in the GitHub Security tab. Refer to the repository for the Action for each language. Links are provided in the [overview](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#overview-of-github-actions-integration) on this page.
