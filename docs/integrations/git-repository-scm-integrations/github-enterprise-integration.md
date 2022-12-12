@@ -1,7 +1,7 @@
 # GitHub Enterprise integration
 
 {% hint style="info" %}
-Self-managed source code, like GitHub Enterprise, is available with our Enterprise plan. See[ the Snyk plans and pricing page](https://snyk.io/plans) for more info.
+Scanning of self-managed source code, like GitHub Enterprise, is available with our Enterprise plan. See[ the Snyk plans and pricing page](https://snyk.io/plans) for more info.
 {% endhint %}
 
 Snyk's GitHub Enterprise integration lets you:
