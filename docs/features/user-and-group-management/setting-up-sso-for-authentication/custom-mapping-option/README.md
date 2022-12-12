@@ -17,29 +17,36 @@ Within the IdP, you must first pass a custom mapping called `roles` as a string 
 
 To configure this option, send the `roles` array within the SAML attributes or OIDC claims to adhere to one of the following patterns:
 
+**Prefix** is present on every role mapping. It is an identifier that allows Snyk to identify which `roles` array values to process.
+
 {% hint style="warning" %}
-Snyk is currently adding the ability to support the new Group Viewer role in SSO custom mapping. The role array mapping format would be amended with the new role details once the support is ready.
+Prefix must always be **snyk** and fully in lowercase.
 {% endhint %}
 
 1\. {prefix}-groupadmin
 
 * This role mapping assigns users with the Group Admin and Org Admin roles.
-* **prefix** is present on every role mapping. It is an identifier that allows Snyk to identify which `roles` array values to process. By default this value is **snyk**. If another value is required, work with your Snyk account team. Note: **prefix** must be fully lowercase.
 * **groupadmin** configures all users with this role as a Group Admin and Org Admin for all Group(s) that the user is assigned to and all Orgs that fall under the Group(s).
 
-2\. {prefix}-{groupID}
+2\. {prefix}-groupviewer
+
+* This role mapping assigns users with the Group Viewer role and grants read-only access to the Group, reports and all organisations associated with the Group.
+
+3\. {prefix}-{groupID}
 
 * This role mapping assigns users with the Org Collaborator roles for all Organizations underneath the specified Group(s).
-* **groupID** is the ID string for a group in Snyk. This can be found in the snyk URL at the Group level: https://app.snyk.io/group/\<Group ID> or Group dropdown -> ![Settings](../../../../.gitbook/assets/cog\_icon.png) -> General -> Group ID.
+* **groupID** is the ID string for a group in Snyk. This can be found in the snyk URL at the Group level: https://app.snyk.io/group/\<Group ID> or Group dropdown -> <img src="../../../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> -> General -> Group ID.
 
-3\. {prefix}-{orgslug}-{role}
+4\. {prefix}-{orgslug}-{role}
 
-* This role mapping assigns users with the specified role of Collaborator or Admin for the Snyk Organization specified in **orgslug**.
+* This role mapping assigns users with the specified role of Collaborator or Admin or Custom Role for the Snyk Organization specified in **orgslug**.
 * **orgslug** is the unique identifier of the Organization name in Snyk.
   * How to find the **orgslug**: https://app.snyk.io/org/{orgslug} OR by using the Snyk [API List all organizations in a group endpoint.](https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group)
   * **Note**: The **orgslug** is the name of the Organization in most cases; however, this may not always be the case.
-  * Note: **orgslug** can be a value of up to 60 characters and must be fully lowercase
-* **role** is either **collaborator or admin.**
+  * Note: **orgslug** can be a value of up to 60 characters and must be fully lowercase.
+* **role**:
+  * If using standard roles, **{role}** should be either **collaborator** or **admin.**
+  * Custom Role can also be used for **{role}** and should use the normalized name. See [Roles in SSO](../../managing-users-and-permissions/member-roles.md#roles-in-custom-sso) for more details.
 
 ### Roles array mapping format
 
@@ -49,6 +56,16 @@ To assign users with Group Admin role use the following format:
 {
     "roles": [
         "{prefix}-groupadmin"
+    ]
+}
+```
+
+To assign users with Group Viewer role use the following format:
+
+```
+{
+    "roles": [
+        "{prefix}-groupviewer"
     ]
 }
 ```
@@ -73,6 +90,28 @@ To assign users as Org Admin or Org Collaborator use the following format for th
     ]
 }
 ```
+
+To assign users a custom role use the following format for the roles array. You can assign different roles on a per-org basis and can a combination of standard and custom roles for different orgs.&#x20;
+
+```
+{
+    "roles": [
+        "{prefix}-{orgslug}-admin",
+        "{prefix}-{orgslug2}-collaborator",
+        "{prefix}-{orgslug3}-developer_readonly"
+    ]
+}
+```
+
+{% hint style="warning" %}
+System also supports comma separated list for roles instead of an array.
+
+```
+{
+  "roles": "{prefix}-{orgslug}-admin,{prefix}-{orgslug2}-collaborator"
+}
+```
+{% endhint %}
 
 ### Example roles array mapping
 
