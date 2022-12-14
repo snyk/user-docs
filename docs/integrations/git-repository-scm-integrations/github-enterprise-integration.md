@@ -38,7 +38,7 @@ Snyk starts scanning the selected repos for dependency files (such as package.js
 
 The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/which_repos (3) (5) (9) (7) (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (28).jpg" alt="Imported projects on Projects page"><figcaption><p>Imported projects on Projects page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/which_repos.jpg" alt="Imported projects on Projects page"><figcaption><p>Imported projects on Projects page</p></figcaption></figure>
 
 ## GitHub Enterprise Broker startup script
 
