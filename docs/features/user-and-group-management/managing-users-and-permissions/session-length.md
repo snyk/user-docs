@@ -1,33 +1,30 @@
 # Session length
 
-To ensure your account is safe from being inadvertently exposed through inactive users, after a user logs into their account and is then inactive for 30 consecutive days, they are automatically logged out, and must re-enter their credentials to log back in.
+If a user logs in and then is inactive for 30 consecutive days, the user is logged out automatically. The user must log in again. This protects any account from being exposed inadvertently because the user is inactive.
 
-You can configure the session length expiration value, through the Snyk Web UI and from our API. The length value can be set from a minimum of 5 minutes, up to a maximum of 30 days.
+You can configure the session length expiration using either the Snyk Web UI or API. You can set the length from a minimum of 5 minutes to a maximum of 30 days.
 
-Once configured, recording and tracking of session length and expiration initiates either when the user logs into the site or within 60 seconds of making the change - whichever comes first. Additionally, a user who is a member of multiple groups, each of which has a different session length configured, always receives the most restrictive session length - they are always automatically logged out based on the group configured with the shortest configured session length.
+When session length expiration has been configured, tracking of session length starts within 60 seconds or when a user logs in, whichever comes first.
 
+A user who is a member of multiple Groups, where each of those Groups has a different session length, is always logged out automatically after the shortest time configured for any of those Groups.
 
+## Configure session length for a Snyk Group
 
-## Configure session length for a Snyk group
+Group admins can change the default session length of the maximum, 30 days, to any value between 30 days and a minimum of 5 minutes.
 
-The default session length that is applied for members of a group is 30 days. Group admins can change this value to any value between 30 days and a minimum of 5 minutes.
+### **Prerequisites for configuring session length**
 
-**Prerequisites**
+You must be an administrator of the Group to update the session length.
 
-You must be an administrator of the group in order to update the session length.
+This feature is available to plans that support Groups. See [pricing plans](https://snyk.io/plans/) for more details.
 
-{% hint style="info" %}
-**Feature availability**\
-This feature is available to plans that support groups. See [pricing plans](https://snyk.io/plans/) for more details.
-{% endhint %}
+### **Steps to configure session length**
 
-**Steps**
-
-1. Log in to your Snyk account and navigate to the group for which you’d like to configure session length.
+1. Log in to your Snyk account and navigate to the Group for which you want o configure session length.
 2. Navigate to **Settings** to update the Group settings.
-3. From the **Session expiration** area, enter values for the session length. valid value ranges are as follows:
+3. In the **Session expiration** area, enter values for the session length. Valid value ranges are as follows:
    1. Days - 0-30
    2. Hours - 0-23
    3. Minutes - 0-59
 
-![](../../../.gitbook/assets/uuid-21093b2a-7003-b47a-cb62-2e6dd147323e-en.png)
+<figure><img src="../../../.gitbook/assets/uuid-21093b2a-7003-b47a-cb62-2e6dd147323e-en.png" alt="Group settings, change Session expiration"><figcaption><p>Group settings, change Session expiration</p></figcaption></figure>
