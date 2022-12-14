@@ -165,7 +165,7 @@ To complete your log in:
 
 These worksheets include the information to enter in your Identity provider and the information you need to collect before submitting a ticket to Snyk Support to request single sign-on.
 
-{% file src="../../../.gitbook/assets/SSO Azure Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
+{% file src="../../../.gitbook/assets/SSO Azure Worksheet.pdf" %}
 
 {% file src="../../../.gitbook/assets/SSO SAML Worksheet.pdf" %}
 
