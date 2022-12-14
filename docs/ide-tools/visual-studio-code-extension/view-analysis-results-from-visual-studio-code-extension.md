@@ -65,7 +65,7 @@ Find security vulnerabilities in your JavaScript packages from well-known CDNs. 
 
 You can navigate to the most severe vulnerability by triggering the provided code actions. This opens a vulnerability window to show more details:
 
-![Code action](<../../.gitbook/assets/oss-editor-show-vulnerability (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (8).png>)
+![Code action](../../.gitbook/assets/oss-editor-show-vulnerability.png)
 
 ## Snyk Open Source vulnerability window
 
