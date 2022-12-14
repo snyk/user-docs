@@ -243,7 +243,7 @@ You should ask your developers to considrmer the merge advice label that appears
 
 ![](../../.gitbook/assets/merge-advice-review-recommended.png)
 
-![](../../.gitbook/assets/advice-green%20%281%29%20%282%29%20%282%29%20%284%29%20%283%29.png)
+![](../../.gitbook/assets/advice-green.png)
 
 ![](../../.gitbook/assets/merge-advice.png)
 

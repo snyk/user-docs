@@ -82,7 +82,7 @@ To review and update the automatic fix pull request settings:
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings icon" data-size="line"> **Settings >** **Integrations > Source control > GitHub Enterprise**, and click **Edit Settings**.
 2. Scroll to the **Automatic fix pull requests** section, make the relevant changes, and **Update settings.**
 
-<figure><img src="../../.gitbook/assets/mceclip4 (1) (2) (6) (7) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (41).png" alt="Automatic pull requests setting enabled"><figcaption><p>Automatic pull requests setting enabled</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mceclip4.png" alt="Automatic pull requests setting enabled"><figcaption><p>Automatic pull requests setting enabled</p></figcaption></figure>
 
 ### **Pull request testing**
 

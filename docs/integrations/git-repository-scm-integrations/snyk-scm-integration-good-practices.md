@@ -155,9 +155,9 @@ You should ask your developers to consider the merge advice label that appears o
 
 ![](../../.gitbook/assets/merge-advice-review-recommended.png)
 
-![](<../../.gitbook/assets/advice-green (1) (2) (2) (4) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (27).png>)
+![](../../.gitbook/assets/advice-green.png)
 
-![](<../../.gitbook/assets/merge-advice.png>)
+![](../../.gitbook/assets/merge-advice.png)
 
 {% hint style="info" %}
 Snyk auto fix PRs are only generated for new issues.
