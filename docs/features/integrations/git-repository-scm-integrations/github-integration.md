@@ -185,7 +185,7 @@ To configure the Auto-assign settings for all the projects from an imported priv
 To configure the Auto-assign settings for a specific project from an imported private repository**:**
 
 1. In the **Projects** tab for your organization, select and expand the relevant private repository, select a target, and click the **Settings** cog.\
-   &#x20;<img src="../../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (9).png" alt="" data-size="original">\
+   &#x20;<img src="../../../.gitbook/assets/image (56) - 2.png" alt="" data-size="original">\
    The project page opens.&#x20;
 2. In the project page, to apply unique settings for that specific project, select the **Settings** tab in the upper right, and the **Github integration** __ option in the left sidebar.
 3. Go to the **Pull request assignees for private repos** section at the bottom of the page and select, customize, and confirm the relevant options in the sections:
