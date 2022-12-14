@@ -135,7 +135,7 @@ Member roles are supported as part of a Customized SSO authentication flow. All 
 If you are a customer who already has Custom SSO set up or you are planning to create Member Roles after setting up Custom SSO, you can use Member Roles _without_ any modification to the Custom SSO config at Snyk side, as long as you send normalized role name in your payload in the agreed format.
 {% endhint %}
 
-New member role SAML assertions follow Snyk's existing pattern for declaring org memberships in IDP payloads: `{snyk-prefix}-{org-name}-{normalized-role-name},` for example: `snyk-goof-developer_readonly`
+New member role SAML assertions follow Snyk's existing pattern for declaring org memberships in IDP payloads: `{snyk-prefix}-{org-slug}-{normalized-role-name},` for example: `snyk-goof-developer_readonly`
 
 * snyk-prefix: `snyk`
 * org-name: `goof`
