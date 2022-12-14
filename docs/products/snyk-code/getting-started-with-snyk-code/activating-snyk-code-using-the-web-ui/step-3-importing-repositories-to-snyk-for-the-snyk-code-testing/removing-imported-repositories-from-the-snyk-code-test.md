@@ -62,7 +62,7 @@ Depending on your selected action, one of the following occurs:
 
 7\. To remove from Snyk the Target folder of the repository whose Projects you deleted, return to the **Projects** page. Then, open the Target folder, and click the **Delete** button on the right corner:
 
-<figure><img src="../../../../../.gitbook/assets/image (348) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (348).png" alt=""><figcaption></figcaption></figure>
 
 The entire repository is now deleted from your Snyk Account.
 
