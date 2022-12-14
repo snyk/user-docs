@@ -1,6 +1,6 @@
 # Dynatrace
 
-![](https://partner-workshop-assets.s3.us-east-2.amazonaws.com/snyk-dynatrace.png)
+![](../../.gitbook/assets/snyk-dynatrace.png)
 
 [Dynatrace](https://www.dynatrace.com/) enables organizations to digitally transform faster, smarter, and easier by simplifying cloud complexity with Software Intelligence – observability, automation, AI, and cloud-native application security in one platform.
 
