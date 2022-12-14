@@ -15,7 +15,7 @@ In order to turn on the Pivotal Web Services integration you’ll need to:
 
 In order for Snyk to be able to monitor your deployed Pivotal Web Services applications, you’ll first need to connect Snyk to your Pivotal Web Services account. You can do this by navigating to the [Integrations page](https://app.snyk.io/integrations) and clicking on “Connect to Pivotal Web Services”.
 
-![](<../../.gitbook/assets/uuid-e7c43047-5065-ad28-db37-1c56e8796a8b-en.png>)
+![](../../.gitbook/assets/uuid-e7c43047-5065-ad28-db37-1c56e8796a8b-en.png)
 
 This will take you to a page where you’ll be prompted to enter your Pivotal Web Services username and password. We recommend setting up a dedicated user for your Snyk organization.
 
@@ -27,7 +27,7 @@ At any time after you’ve entered your Pivotal Web Services credentials, you ca
 
 The first is on your integration settings page, where you’ll see your current integrations listed as well as their connection status.
 
-![](<../../.gitbook/assets/uuid-fb1cad51-f7f5-34ae-1142-f24fab0b0751-en.png>)
+![](../../.gitbook/assets/uuid-fb1cad51-f7f5-34ae-1142-f24fab0b0751-en.png)
 
 The connection status is also displayed directly on the Pivotal Web Services integration settings page (found by clicking “Edit settings” on the integration settings page shown above). If you’ve entered credentials, you’ll see a box indicating whether or not Snyk is able to correctly connect to Pivotal Web Services.
 
