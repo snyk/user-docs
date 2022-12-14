@@ -38,7 +38,7 @@ When enabling the Automatic PR Checks feature for an entire Organization, all th
 
 * **Apply changes to all overridden projects** option – your changes are saved, and will be applied to all the Projects in the Organization. Projects that already have Custom Settings will inherit these new Organization Settings, and their Custom Settings will be override. After you click this option, a message appears, asking you to confirm the override action:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message.png>)
 
 Click **OK** to complete the Save with Override action.
 
