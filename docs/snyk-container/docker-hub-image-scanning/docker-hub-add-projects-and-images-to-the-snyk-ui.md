@@ -14,7 +14,7 @@ Snyk tests and monitors Docker Hub repositories and images by evaluating root fo
 1. Log in to your account and navigate to the relevant group and organization that you want to manage. ![AddProjectMenu.gif - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007147238/uuid-da316a4a-c823-cf03-f37f-5305446dc970-en.gif)
 
 2. Go to Projects, and click Add projects. The list of integrations already configured on your account opens, similar to the following: ![AddProjectMenu.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007065917/uuid-dd01aab7-482f-0fc2-01de-c2427a14a0e0-en.png) 
-   The Which images do you want to test? view appears, displaying all of the available images for the registry to which you connected, grouped by each of your repositories, similar to the following: ![AddImages.png - REPLACE THIS IMAGE - ZENDESK IMAGE - UPDATE ME!](https://support.snyk.io/hc/article_attachments/360007065937/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en.png)
+   The Which images do you want to test? view appears, displaying all of the available images for the registry to which you connected, grouped by each of your repositories, similar to the following: ![](../../.gitbook/assets/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en.png)
 3. Select single or multiple images with any or all of the following methods:
    * Type the name of a single image for import in the Image Name field \(\#1 in the image above\),
    * Select any of the repositories if you want to import all of the associated images \(\#2 in the image above\).
