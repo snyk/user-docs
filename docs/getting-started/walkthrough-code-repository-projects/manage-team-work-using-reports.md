@@ -93,7 +93,7 @@ Filtering results in Reports means that your Dashboard shows different numbers t
 
 For example, by default, Snyk does not scan the Dockerfile in the filter, it scans the docker images themselves
 
-![](<../../.gitbook/assets/image (111) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](../../.gitbook/assets/image (111).png)
 
 By default, the Dockerfile option is not selected in the filter: when Snyk scans the Dockerfile, there will be vulnerabilities in the base OS in the container that you are building. Because these vulnerabilities cannot generally be fixed by the development team, this filtering lets your team focus on the issues that they _can_ fix.
 
