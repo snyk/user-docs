@@ -36,7 +36,7 @@ The **Mark as successful** action does NOT ignore the issue, but only allows it 
 
 2\. On the confirmation message that appears, click **OK**:
 
-![](../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful - message.png)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Web UI - Mark as successful - message.png>)
 
 A message appears on the **SAST check** page header, informing you that the failed PRs are now marked as successful:
 
