@@ -167,7 +167,7 @@ These worksheets include the information to enter in your Identity provider and 
 
 {% file src="../../../.gitbook/assets/SSO Azure Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
 
-{% file src="../../../.gitbook/assets/SSO SAML Worksheet (1) (1) (1) (1) (1) (1) (1).pdf" %}
+{% file src="../../../.gitbook/assets/SSO SAML Worksheet.pdf" %}
 
 {% file src="../../../.gitbook/assets/SSO ADFS Worksheet (1).pdf" %}
 
