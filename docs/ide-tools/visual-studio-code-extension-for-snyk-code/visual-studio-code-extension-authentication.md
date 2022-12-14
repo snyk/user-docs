@@ -11,7 +11,7 @@ To authenticate follow these steps:
     <img src="../../.gitbook/assets/image (162) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
 2.  Click **Connect VS Code with Snyk**. The extension relies on the Snyk authentication API and asks you to authenticate your machine against the Snyk web application:
 
-    <img src="../../.gitbook/assets/image (147) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="" data-size="original">
+    <img src="../../.gitbook/assets/image (147).png" alt="" data-size="original">
 3. Click **Authenticate**.
 4.  After successful authentication, view the confirmation message.
 

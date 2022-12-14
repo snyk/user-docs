@@ -185,7 +185,7 @@ To configure the Auto-assign settings for all the projects from an imported priv
 To configure the Auto-assign settings for a specific project from an imported private repository**:**
 
 1. In the **Projects** tab for your organization, select and expand the relevant private repository, select a target, and click the **Settings** cog.\
-   &#x20;<img src="../../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (9).png" alt="" data-size="original">\
+   &#x20;<img src="../../../.gitbook/assets/image (56) - 2.png" alt="" data-size="original">\
    The project page opens.&#x20;
 2. In the project page, to apply unique settings for that specific project, select the **Settings** tab in the upper right, and the **Github integration** __ option in the left sidebar.
 3. Go to the **Pull request assignees for private repos** section at the bottom of the page and select, customize, and confirm the relevant options in the sections:
@@ -240,7 +240,7 @@ For example, to show a badge for the 4.x branch of the express repo, you would u
 
 * A green badge indicates that there are no vulnerabilities.   <img src="../../../.gitbook/assets/image (84).png" alt="" data-size="line">
 * A red badge indicates how many vulnerabilities were found.   <img src="../../../.gitbook/assets/image (86) (1).png" alt="" data-size="line">   &#x20;
-* A grey badge indicates that the repository has not been scanned.   <img src="../../../.gitbook/assets/image (76) (3).png" alt="" data-size="line">&#x20;
+* A grey badge indicates that the repository has not been scanned.   <img src="../../../.gitbook/assets/vulnerabilities-badge.png" alt="" data-size="line">&#x20;
 
 #### **Badge styles**
 
