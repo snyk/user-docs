@@ -52,7 +52,7 @@ See [Git repository \(SCM\) integrations](../../integrations/git-repository-scm-
 
 Use Snyk CI/CD integrations to prevent new vulnerabilities from passing through the build process, by adding an automated Snyk test to your CI/CD process:
 
-![](../../.gitbook/assets/ci-cd%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29%20%284%29.png)
+![](../../.gitbook/assets/ci-cd.png)
 
 See [CI/CD integrations](../../integrations/ci-cd-integrations/) for more details.
 

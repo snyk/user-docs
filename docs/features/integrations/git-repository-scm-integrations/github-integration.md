@@ -240,7 +240,7 @@ For example, to show a badge for the 4.x branch of the express repo, you would u
 
 * A green badge indicates that there are no vulnerabilities.   <img src="../../../.gitbook/assets/image (84).png" alt="" data-size="line">
 * A red badge indicates how many vulnerabilities were found.   <img src="../../../.gitbook/assets/image (86) (1).png" alt="" data-size="line">   &#x20;
-* A grey badge indicates that the repository has not been scanned.   <img src="../../../.gitbook/assets/image (76) (3).png" alt="" data-size="line">&#x20;
+* A grey badge indicates that the repository has not been scanned.   <img src="../../../.gitbook/assets/vulnerabilities-badge.png" alt="" data-size="line">&#x20;
 
 #### **Badge styles**
 

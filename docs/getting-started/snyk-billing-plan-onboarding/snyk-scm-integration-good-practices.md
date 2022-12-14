@@ -125,7 +125,7 @@ Below is an example of how you would set up your an integration for **Github.com
 2. Choose whether you'd like to give Snyk access to both public and private repositories or only to public repositories: 
 3. Click **Authorize snyk** to provide Snyk with access to your repositories:
 
-![](../../.gitbook/assets/authorize%20%281%29%20%282%29%20%286%29%20%281%29%20%283%29.png)
+![](../../.gitbook/assets/authorize.png)
 
 **SCM permissions on repositories**
 

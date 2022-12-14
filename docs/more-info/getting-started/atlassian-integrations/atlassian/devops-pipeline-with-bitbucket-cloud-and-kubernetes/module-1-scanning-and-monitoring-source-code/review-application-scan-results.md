@@ -18,7 +18,7 @@ Snyk automatically scans your application for vulnerabilities and presents resul
 
 If you click into the top-level Dockerfile link, you will a see a screen similar to what is shown below:
 
-![](<../../../../../../.gitbook/assets/image (103) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../../../../.gitbook/assets/image (103) - dockerfile.png>)
 
 The summary line is replicated for the Dockerfile to maintain context.
 
