@@ -22,11 +22,11 @@ When enabling the Automatic PR Checks feature for an entire Organization, all th
 
 2\. Locate your configured and required SCM, and click the **Edit settings** option at the end of its row:
 
-<figure><img src="../../../.gitbook/assets/image (352).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (352).png" alt="Accessing the Edit settings pagefor your SCM integration"><figcaption><p>Accessing the Edit settings page for your SCM integration</p></figcaption></figure>
 
 3\. On the **Settings** page of the selected integration, scroll down to the **Code Analysis** section:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Integrations page - PR Checks section.png>)
+<figure><img src="../../../.gitbook/assets/Snyk Code - PR Checks - Integrations page - PR Checks section.png" alt="Scroll to the Code Analysis section of your integration&#x27;s Setting page"><figcaption><p>Scroll to the Code Analysis section of your integration's Setting page</p></figcaption></figure>
 
 4\. On the **Code Analysis** section, perform the following:
 
@@ -36,9 +36,9 @@ When enabling the Automatic PR Checks feature for an entire Organization, all th
 
 5\. To save and apply your changes, click one of the following:
 
-* **Apply changes to all overridden projects** option – your changes are saved, and will be applied to all the Projects in the Organization. Projects that already have Custom Settings will inherit these new Organization Settings, and their Custom Settings will be override. After you click this option, a message appears, asking you to confirm the override action:
+* **Apply changes to all overridden projects** option – your changes are saved, and will be applied to all the Projects in the Organization. Projects that already have Custom Settings will inherit these new Organization Settings, and their Custom Settings will be overridden. After you click this option, a message appears, asking you to confirm the override action:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message (2).png>)
+<figure><img src="../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message (2).png" alt="Confirming the override action for your SCM projects"><figcaption><p>Confirming the override action for your SCM projects</p></figcaption></figure>
 
 Click **OK** to complete the Save with Override action.
 
@@ -56,11 +56,11 @@ By default, the Settings on the Project level override the Settings on the Organ
 
 2\. Locate the **Code analysis** Project for which you want to enable the Automatic PR Checks. Then, click the **Settings** button on the right side of its row:
 
-<figure><img src="../../../.gitbook/assets/image%20(356).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/enabling_auto_pr-checks_15dec2022 (1).png" alt="Locate the Code analysis project for automatic PR checks"><figcaption><p>Locate the Code analysis project for automatic PR checks</p></figcaption></figure>
 
 3\. On the Project **Settings** page, click the relevant **integration** tab on left menu:
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt="Click the associated integration tab in the left menu"><figcaption><p>Click the associated integration tab in the left menu</p></figcaption></figure>
 
 4\. On the **integration** page > **Snyk Code for pull requests** section, select one of the following:
 
