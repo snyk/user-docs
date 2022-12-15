@@ -28,11 +28,11 @@ In addition, to use this IaC CLI offering, you need to enable this option in the
 
 **Note**: By default, the CLI will run tests under your **Preferred Organization**, as defined in your **Account settings**. You can change your **Preferred Organization**, or set another organizations for the CLI tests.
 
-![](<../../../../.gitbook/assets/Selecting Organization (1) (1).png>)
+![](<../../../../.gitbook/assets/Selecting Organization (1) (6).png>)
 
 2\. Once the required organization is open, click the **Org Settings** button on the top menu:
 
-![](<../../../../.gitbook/assets/Org Settings button (1) (1).png>)
+![](<../../../../.gitbook/assets/Org Settings button (1) (4).png>)
 
 3\. On the Org **Settings** page, select **Snyk Preview** on the left menu, and move to the section – **Additional CLI result information for Infrastructure as Code**:
 

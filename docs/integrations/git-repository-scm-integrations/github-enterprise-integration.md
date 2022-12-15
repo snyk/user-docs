@@ -38,7 +38,7 @@ Snyk starts scanning the selected repos for dependency files (such as package.js
 
 The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/which_repos (36).jpg" alt="Imported projects on Projects page"><figcaption><p>Imported projects on Projects page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/which_repos (11).jpg" alt="Imported projects on Projects page"><figcaption><p>Imported projects on Projects page</p></figcaption></figure>
 
 ## GitHub Enterprise Broker startup script
 
@@ -82,7 +82,7 @@ To review and update the automatic fix pull request settings:
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings icon" data-size="line"> **Settings >** **Integrations > Source control > GitHub Enterprise**, and click **Edit Settings**.
 2. Scroll to the **Automatic fix pull requests** section, make the relevant changes, and **Update settings.**
 
-<figure><img src="../../.gitbook/assets/mceclip4 (41).png" alt="Automatic pull requests setting enabled"><figcaption><p>Automatic pull requests setting enabled</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mceclip4 (12).png" alt="Automatic pull requests setting enabled"><figcaption><p>Automatic pull requests setting enabled</p></figcaption></figure>
 
 ### **Pull request testing**
 

@@ -1,6 +1,8 @@
 # Licenses tab
 
-The **Licenses** area displays all licenses that are currently used in your project, as well as a summary of all dependencies in your projects and a summary of all of your projects using the license.
+The **Licenses** area displays all licenses that are currently used in your project, as well as a summary of all dependencies in your projects, and a summary of all of your projects using the license. This allows you to understand which projects and dependencies use a license.
+
+For example:
 
 ![](../../.gitbook/assets/licenses-tab.png)
 

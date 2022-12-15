@@ -34,7 +34,7 @@ Once you have set up Groups and users, follow these steps:
     If you have more than one condition with the same group(s) included in **scoped groups** the conditions are evaluated top to bottom and the last value that includes the group(s) is used.\
     For this reason, the recommendation is to enter the conditions in increasing order of scoped groups.
 
-    <figure><img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 8.32.50 AM (1).png" alt="Enter the Name and expand Claim conditions"><figcaption><p>Enter the Name and expand Claim conditions</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 8.32.50 AM (2).png" alt="Enter the Name and expand Claim conditions"><figcaption><p>Enter the Name and expand Claim conditions</p></figcaption></figure>
 6.  In the **Claim conditions**, set **User type** to **Members**.
 
     <figure><img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 9.19.38 AM.png" alt="Set User type to Members"><figcaption><p>Set User type to Members</p></figcaption></figure>

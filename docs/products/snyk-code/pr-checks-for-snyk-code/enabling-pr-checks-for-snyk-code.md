@@ -18,7 +18,7 @@ When enabling the Automatic PR Checks feature for an entire Organization, all th
 
 **To enable the automatic PR Checks for an entire Organization:**
 
-1\. On the Snyk Web UI, in your Organization, select <img src="../../../.gitbook/assets/Snyk Code - CLI - Org Settings button - Icon (1) (12).png" alt="" data-size="line"> **Settings** > **Integrations**.
+1\. On the Snyk Web UI, in your Organization, select <img src="../../../.gitbook/assets/Snyk Code - CLI - Org Settings button - Icon (1) (9).png" alt="" data-size="line"> **Settings** > **Integrations**.
 
 2\. Locate your configured and required SCM, and click the **Edit settings** option at the end of its row:
 

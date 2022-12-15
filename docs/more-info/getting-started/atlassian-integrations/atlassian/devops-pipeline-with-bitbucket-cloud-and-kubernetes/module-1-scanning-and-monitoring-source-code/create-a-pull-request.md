@@ -35,7 +35,7 @@ Click on the Open a Fix PR button to confirm the change.
 
 Next what happens is you are taken to Bitbucket Cloud. This is helpful because it is the shared environment for you and your team to manage your open PRs. The screen snippet below shows some of the PR details as populated by Snyk for your team to review as part of your PR process.
 
-![](<../../../../../../.gitbook/assets/image (80) (1) (1).png>)
+![](<../../../../../../.gitbook/assets/image (80) (1) (1) (1).png>)
 
 Below this information is the code diff your team should easily recognize. This is the fix your developers _knew_ they could make, and Snyk did it for them.
 
