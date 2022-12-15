@@ -32,7 +32,7 @@ When you sign up to Snyk using a social login, you have a default organization. 
 See [What’s a Snyk organization?](../../features/user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization.md)
 
 {% hint style="info" %}
-[Projects](projects.md) are contained in Organizations.
+[Projects](broken-reference) are contained in Organizations.
 {% endhint %}
 
 ## User access: member types

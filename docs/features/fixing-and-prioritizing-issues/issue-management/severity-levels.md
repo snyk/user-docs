@@ -63,7 +63,7 @@ For example, in the **Pending tasks** section of the Dashboard:
 
 <img src="../../../.gitbook/assets/image (158) (1).png" alt="" data-size="original">
 
-Associated with your [Projects](../../../getting-started/introducing-snyk/projects.md):
+Associated with your [Projects](broken-reference):
 
 ![](<../../../.gitbook/assets/image (43) (2).png>)
 

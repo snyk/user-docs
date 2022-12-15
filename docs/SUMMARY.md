@@ -7,7 +7,6 @@
     * [Snyk languages and integrations](getting-started/introducing-snyk/snyk-languages-and-integrations.md)
     * [Plans](getting-started/introducing-snyk/plans.md)
     * [Groups, organizations, and users](getting-started/introducing-snyk/groups-organizations-and-users.md)
-    * [Projects](getting-started/introducing-snyk/projects.md)
     * [Snyk Learn](getting-started/introducing-snyk/snyk-learn.md)
     * [Snyk Training](getting-started/introducing-snyk/snyk-training.md)
     * [Glossary](getting-started/introducing-snyk/glossary.md)

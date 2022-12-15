@@ -1,10 +1,20 @@
 # Snyk Projects
 
+## Introduction
+
+Snyk Project information appears in the **Projects** menu in the Snyk dashboard. The filters that are visible depends on the grouping option you choose. &#x20;
+
+<figure><img src="../../.gitbook/assets/projects-breadcrumbs_02oct2022.png" alt="Screenshot of the Snyk Projects listing page showing various types of projects in a list"><figcaption><p>The Projects menu in the Snyk Web Ui</p></figcaption></figure>
+
+Project components include **Targets**, **Origins**, **Projects, Targetfiles** and **Types**.
+
 ### Targets
+
+Projects are held in a Target.
 
 Targets represent an external resource Snyk has scanned: a code repository, a Kubernetes workload, or other scannable resources external to Snyk. Targets appear in the **Projects** menu on the Snyk dashboard when you select **Group by target**.&#x20;
 
-A Project is a scanned manifest file within a Target. Each [Snyk Project](./#projects) is associated with a parent Target. One Target may include many Projects. The structure of the Target depends on the [origin](./#origin).
+Each Snyk Project is associated with a parent Target. One Target may include many Projects. The structure of the Target depends on the origin.
 
 The grouping option controls whether your filtering attributes are applied at the Target or at the Project level. **Group by none** (ungrouped) lets you apply [tags](project-tags.md) and [filtering attributes at the Project level](project-attributes.md), to the individual Projects.
 
@@ -58,14 +68,9 @@ Possible origin values are:
 * quay-cr
 * terraform-cloud
 
-### Snyk Projects
+### Projects
 
-Snyk Projects define the items that Snyk scans for a given Target.&#x20;
-
-A Project includes:
-
-* A scannable or scanned manifest file that is external to Snyk.
-* A configuration to define how to run that scan.
+Snyk Projects define the items (such as manifest files) that Snyk scans for a given Target, with configuration information defining define how to run that scan.
 
 Projects appear in the **Projects** menu on the Snyk dashboard and in the [Snyk API](https://apidocs.snyk.io/?version=2022-02-16%7Ebeta#tag--Projects). \
 Use **Group by none** (ungrouped) for better Project visibility and to apply [filtering attributes at the Project level](project-attributes.md).&#x20;
