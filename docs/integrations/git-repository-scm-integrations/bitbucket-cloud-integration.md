@@ -39,7 +39,8 @@ Snyk's Bitbucket Cloud PAT integration lets you:
 5. Enter the username and the [App Password for the Bitbucket account](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/) you created, and **Save** your changes.\
    You can find your username under the Bitbucket **Personal settings.**\
    Snyk connects to your Bitbucket Cloud account. When the connection succeeds, the following confirmation appears:\
-   <img src="../../.gitbook/assets/settings (1).png" alt="" data-size="original">
+   \
+   <img src="../../.gitbook/assets/settings (1).png" alt="Confirmation that Snyk has connected to your Bitbucket account" data-size="original">
 
 ## Adding Bitbucket repositories to Snyk
 
@@ -52,7 +53,7 @@ After you add them, Snyk scans the selected repositories for dependency files in
 
 The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
-![](<../../.gitbook/assets/444 (1) (4).png>)
+<figure><img src="../../.gitbook/assets/444 (1) (4).png" alt="The Imported projects in your Projects page"><figcaption><p>The Imported projects in your <strong>Projects</strong> page</p></figcaption></figure>
 
 ## Bitbucket integration features
 
@@ -68,7 +69,7 @@ Snyk produces advanced [security reports](https://docs.snyk.io/features/reports/
 
 The example below presents a project-level security report.
 
-<figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022 (1).png" alt="An example of a project-level security report"><figcaption><p>An example of a project-level security report</p></figcaption></figure>
 
 ### Project monitoring and automatic fix Pull Requests
 
@@ -76,14 +77,14 @@ Snyk scans your projects on either a daily or a weekly basis. When new vulnerabi
 
 The example below presents a fix Pull Request opened by Snyk.
 
-![](../../.gitbook/assets/666.png)
+<figure><img src="../../.gitbook/assets/666.png" alt="Example of an automatic fix Pull Request opened by Snyk"><figcaption><p>Example of an automatic fix Pull Request opened by Snyk</p></figcaption></figure>
 
 To review and adjust the automatic fix pull request settings:
 
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Cloud**, and click **Edit Settings**.
 2. Scroll to the **Automatic fix pull requests** section and configure the relevant options.
 
-![Modify the automatic fix pull requests](../../.gitbook/assets/bitbucket\_cloud-auto\_fix\_prs\_30june2022%20\(1\).png)
+<figure><img src="../../.gitbook/assets/bitbucket_cloud-auto_fix_prs_30june2022.png" alt="Modify the automatic fix pull requests"><figcaption><p>Modify the automatic fix pull requests</p></figcaption></figure>
 
 {% hint style="info" %}
 Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are _not_ automatically assigned to the default reviewer set in your Bitbucket Cloud account.
@@ -97,14 +98,14 @@ Snyk tests any newly created pull request in your repositories for security vuln
 
 The example below presents a Snyk pull request build check on the Bitbucket Cloud **Pull Request** page.
 
-![](../../.gitbook/assets/888.png)
+<figure><img src="../../.gitbook/assets/888.png" alt="Example of a Snyk pull request build check on the Bitbucket Cloud Pull Request page"><figcaption><p>Example of a Snyk pull request build check on the Bitbucket Cloud <strong>Pull Request</strong> page</p></figcaption></figure>
 
 To review and adjust the pull request tests settings,
 
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Cloud**, and click **Edit Settings**.
 2. Scroll to **Default Snyk test for pull requests > Open Source Security & Licenses**, and configure the relevant options.
 
-![](<../../.gitbook/assets/Screenshot 2022-03-16 at 10.07.50.png>)
+<figure><img src="../../.gitbook/assets/Screenshot 2022-03-16 at 10.07.50.png" alt="Configuring the options for pull request Open Source Security &#x26; Licenses"><figcaption><p>Configuring the options for pull request Open Source Security &#x26; Licenses</p></figcaption></figure>
 
 ## Required permissions scope for the Bitbucket Cloud integration
 
@@ -141,7 +142,7 @@ To disable this integration, in <img src="../../.gitbook/assets/cog_icon.png" al
    The page includes sections that are specific to each integration, where you can manage your credentials, API key, Service Principal, or connection details.
 2. Scroll to the relevant section and click **Disconnect.**
 
-![](../../.gitbook/assets/mceclip2-4-.png)
+![Disconnect button at the bottom left of the Disconnect from Bitbucket Cloud section](../../.gitbook/assets/mceclip2-4-.png)
 
 {% hint style="warning" %}
 **WARNING**\
