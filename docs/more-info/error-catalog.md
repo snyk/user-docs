@@ -159,7 +159,7 @@
 
   - [https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support)
 ### [SNYK-OS-0002](#snyk-os-0002-unable-to-parse-manifest-file) - Unable to parse manifest file
-  The provided manifest file could not be parsed.
+  The provided manifest file could not be parsed as it has invalid syntax or does not match the expected schema.
 
   **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -170,6 +170,16 @@
   
 ### [SNYK-OS-0003](#snyk-os-0003-lock-file-out-of-sync-with-manifest-file) - Lock file out of sync with manifest file
   Some of the dependencies that are expected to be in the lock file are missing - this usually indicates that the lock file is out of sync with the provided manifest file. Please re-sync the lock file and try again.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-0004](#snyk-os-0004-unable-to-parse-lock-file) - Unable to parse lock file
+  The provided lock file could not be parsed as it has invalid syntax or does not match the expected schema.
 
   **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -583,4 +593,4 @@
   
 ---
 
-Genererated at 2022-12-07T13:01:25.911Z
+Genererated at 2022-12-15T15:21:23.597Z
