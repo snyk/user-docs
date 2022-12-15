@@ -98,7 +98,7 @@ This section covers:
 9. Double-check successful installation from the cluster.
 10. After successfully installing the **Snyk Operator** and the instance of a **Snyk Monitor**, you can also view your cluster in Snyk.
 
-![Example of successful installation from the cluster.](<../../../../.gitbook/assets/image (40) (1).png>)
+![Example of successful installation from the cluster.](<../../../../.gitbook/assets/image (40) (2).png>)
 
 ## Optional installation steps
 
