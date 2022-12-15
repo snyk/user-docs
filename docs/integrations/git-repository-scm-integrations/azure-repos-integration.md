@@ -49,7 +49,7 @@ Use this procedure to add an Azure Repository dependency from a non-default path
 The relative path field is case-sensitive.
 {% endhint %}
 
-![](../../.gitbook/assets/azure\_custom\_repo-11aug2022.png)
+![](broken-reference)
 
 ### Exclude folders from import
 

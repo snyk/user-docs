@@ -1,11 +1,11 @@
 # Bitbucket Cloud Personal Access Token (Legacy) integration
 
 {% hint style="info" %}
-Support for the Bitbucket Cloud (Legacy) Personal Access Token (PAT) integration will continue for Snyk users who configured it prior to mid October 2022. &#x20;
+Support for the Bitbucket Cloud (Legacy) Personal Access Token (PAT) integration will continue for Snyk users who configured it prior to mid October 2022.
 
-If you're new to Snyk, the Legacy integration tile may not be available on the Integrations page.&#x20;
+If you're new to Snyk, the Legacy integration tile may not be available on the Integrations page.
 
-Snyk recommends installing or [migrating](migrate-a-bitbucket-cloud-legacy-integration.md) to the [Bitbucket Cloud Application](bitbucket-cloud-app-integration.md) for smoother integration and to ensure long-term support. &#x20;
+Snyk recommends installing or [migrating](migrate-a-bitbucket-cloud-legacy-integration.md) to the [Bitbucket Cloud Application](bitbucket-cloud-app-integration.md) for smoother integration and to ensure long-term support.
 {% endhint %}
 
 Snyk's Bitbucket Cloud PAT integration lets you:
@@ -25,7 +25,7 @@ Snyk's Bitbucket Cloud PAT integration lets you:
 
 1. To give Snyk access to your Bitbucket account, set up a dedicated service account in Bitbucket, with admin permissions. See the [Bitbucket documentation ](https://support.atlassian.com/bitbucket-cloud/docs/grant-access-to-a-workspace/)to learn more about adding users to a workspace.
 2. In Snyk, go to the **Integrations** page, open the **Bitbucket Cloud** card and configure the **Account credentials**.
-3. In the **Account credentials >** **Creating an app password** section in Snyk, use the link <img src="../../.gitbook/assets/image (439).png" alt="" data-size="line"> (**Create an App password**) to jump to your Bitbucket Cloud account.
+3. In the **Account credentials >** **Creating an app password** section in Snyk, use the link <img src="../../.gitbook/assets/image (70) (1).png" alt="" data-size="line"> (**Create an App password**) to jump to your Bitbucket Cloud account.
 4.  Follow the Bitbucket procedure to set up an account with the following permissions:
 
     * **Account: Email & Read**
@@ -52,7 +52,7 @@ After you add them, Snyk scans the selected repositories for dependency files in
 
 The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
-![](../../.gitbook/assets/444.png)
+![](<../../.gitbook/assets/444 (5).png>)
 
 ## Bitbucket integration features
 
@@ -66,9 +66,9 @@ Once the integration is in place, you'll be able to use capabilities such as:
 
 Snyk produces advanced [security reports](https://docs.snyk.io/features/reports/reports-overview) that let you explore the vulnerabilities found in your repositories, and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
 
-The example below presents a project-level security report.&#x20;
+The example below presents a project-level security report.
 
-<figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022.png" alt=""><figcaption></figcaption></figure>
 
 ### Project monitoring and automatic fix Pull Requests
 
@@ -83,10 +83,10 @@ To review and adjust the automatic fix pull request settings:
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Cloud**, and click **Edit Settings**.
 2. Scroll to the **Automatic fix pull requests** section and configure the relevant options.
 
-![Modify the automatic fix pull requests](<../../.gitbook/assets/bitbucket\_cloud-auto\_fix\_prs\_30june2022 (1).png>)
+![Modify the automatic fix pull requests](../../.gitbook/assets/bitbucket\_cloud-auto\_fix\_prs\_30june2022%20\(1\).png)
 
 {% hint style="info" %}
-Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are _not_ automatically assigned to the default reviewer set in your Bitbucket Cloud account.&#x20;
+Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are _not_ automatically assigned to the default reviewer set in your Bitbucket Cloud account.
 
 Click for more info on [Snyk automated pull requests](https://docs.snyk.io/products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities).
 {% endhint %}
@@ -112,25 +112,25 @@ All the operations, whether triggered manually or automatically, are performed f
 
 The table below presents the required access scopes for the configured token:
 
-| Action                                                  | Purpose                                                                                                                                                                                                                                                | Required permissions in Bitbucket                                                                                                      |
-| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Daily / weekly tests                                    | Used to read manifest files in private repos                                                                                                                                                                                                           | Repositories: **Read**                                                                                                                 |
-| Manual fix pull requests (triggered by the user)        | Used to create fix PRs in the monitored repos                                                                                                                                                                                                          | <p>Repositories: <strong>Read</strong>, <strong>Write</strong> </p><p>Pull requests: <strong>Read</strong>, <strong>Write</strong></p> |
-| Automatic fix and upgrade pull requests                 | Used to create fix / upgrade PRs in the monitored repos                                                                                                                                                                                                | Repositories: **Read**, **Write** Pull requests: **Read**, **Write**                                                                   |
-| Snyk tests on pull requests                             | Used to send pull request status checks whenever a new PR is created / an existing PR is updated                                                                                                                                                       | Repositories: **Read**, **Write** Pull requests: **Read**, **Write**                                                                   |
-| Importing new projects to Snyk                          | Used to present a list of all the available repos in the Bitbucket in the "Add Projects" screen (import popup)                                                                                                                                         | <p>Account: <strong>Read</strong> </p><p>Workspace membership: <strong>Read</strong> </p><p>Projects: <strong>Read</strong></p>        |
-| Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks  to:</p><ul><li>Track the state of Snyk pull requests (when PRs are created, updated triggered, merged, and so on)</li><li>Send push events to trigger PR checks</li></ul> | Webhooks: **Read**, **Write**                                                                                                          |
+| Action                                                  | Purpose                                                                                                                                                                                                                                               | Required permissions in Bitbucket                                                                                                     |
+| ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Daily / weekly tests                                    | Used to read manifest files in private repos                                                                                                                                                                                                          | Repositories: **Read**                                                                                                                |
+| Manual fix pull requests (triggered by the user)        | Used to create fix PRs in the monitored repos                                                                                                                                                                                                         | <p>Repositories: <strong>Read</strong>, <strong>Write</strong></p><p>Pull requests: <strong>Read</strong>, <strong>Write</strong></p> |
+| Automatic fix and upgrade pull requests                 | Used to create fix / upgrade PRs in the monitored repos                                                                                                                                                                                               | Repositories: **Read**, **Write** Pull requests: **Read**, **Write**                                                                  |
+| Snyk tests on pull requests                             | Used to send pull request status checks whenever a new PR is created / an existing PR is updated                                                                                                                                                      | Repositories: **Read**, **Write** Pull requests: **Read**, **Write**                                                                  |
+| Importing new projects to Snyk                          | Used to present a list of all the available repos in the Bitbucket in the "Add Projects" screen (import popup)                                                                                                                                        | <p>Account: <strong>Read</strong></p><p>Workspace membership: <strong>Read</strong></p><p>Projects: <strong>Read</strong></p>         |
+| Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests (when PRs are created, updated triggered, merged, and so on)</li><li>Send push events to trigger PR checks</li></ul> | Webhooks: **Read**, **Write**                                                                                                         |
 
 ## Required permissions scope for repositories <a href="#h_01eefvj14p8b3depeffvyvdwzj" id="h_01eefvj14p8b3depeffvyvdwzj"></a>
 
 For Snyk to perform the required operations on monitored repositories (such as reading manifest files on a frequent basis and opening fix or upgrade PRs), the integrated Bitbucket Cloud service account needs **Admin** permissions on the imported repositories:
 
-| Action                                                  | Purpose                                                                                                                                                                                                                                                | Required permissions on the repository |
-| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------- |
-| Daily / weekly tests                                    | Used to read manifest files in private repositories.                                                                                                                                                                                                   | **Write** or above                     |
-| Snyk tests on pull requests                             | Used to send pull request status checks when a new PR is created, or an existing PR is updated.                                                                                                                                                        | **Write** or above                     |
-| Opening fix and upgrade pull requests                   | Used to create fix PRs in monitored repositories.                                                                                                                                                                                                      | **Write** or above                     |
-| Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks  to:</p><ul><li>Track the state of Snyk pull requests (when PRs are created, updated triggered, merged, and so on)</li><li>Send push events to trigger PR checks</li></ul> | **Admin**                              |
+| Action                                                  | Purpose                                                                                                                                                                                                                                               | Required permissions on the repository |
+| ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| Daily / weekly tests                                    | Used to read manifest files in private repositories.                                                                                                                                                                                                  | **Write** or above                     |
+| Snyk tests on pull requests                             | Used to send pull request status checks when a new PR is created, or an existing PR is updated.                                                                                                                                                       | **Write** or above                     |
+| Opening fix and upgrade pull requests                   | Used to create fix PRs in monitored repositories.                                                                                                                                                                                                     | **Write** or above                     |
+| Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests (when PRs are created, updated triggered, merged, and so on)</li><li>Send push events to trigger PR checks</li></ul> | **Admin**                              |
 
 ## Disabling the Bitbucket Cloud integration
 
@@ -148,4 +148,3 @@ To disable this integration, in <img src="../../.gitbook/assets/cog_icon.png" al
 When you disconnect Snyk from your repository projects, your credentials are removed from Snyk and any integration-specific projects that Snyk is monitoring are deactivated in Snyk.\
 If you choose to re-enable this integration later, you'll need to re-enter your credentials and activate your projects.
 {% endhint %}
-

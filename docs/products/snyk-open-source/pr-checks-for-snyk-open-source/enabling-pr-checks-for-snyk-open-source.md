@@ -1,7 +1,7 @@
 # Enabling PR Checks for Snyk Open Source
 
 {% hint style="success" %}
-Look familiar? [Snyk Code](../../snyk-code/pr-checks-for-snyk-code/enabling-pr-checks-for-snyk-code.md) and Snyk Open Source enable PR Checks in the same way with the same configurations.&#x20;
+Look familiar? [Snyk Code](../../snyk-code/pr-checks-for-snyk-code/enabling-pr-checks-for-snyk-code.md) and Snyk Open Source enable PR Checks in the same way with the same configurations.
 {% endhint %}
 
 The Snyk project must be active (see [Getting Started](../../../getting-started/)) in order to run checks against its repo.
@@ -9,7 +9,7 @@ The Snyk project must be active (see [Getting Started](../../../getting-started/
 <figure><img src="../../../.gitbook/assets/project-active-in-snyk.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-If your project repo does not show Snyk tests--ensure the project is active. A **deactivated** project will have the "Activate" link next to the test results timestamp.&#x20;
+If your project repo does not show Snyk tests--ensure the project is active. A **deactivated** project will have the "Activate" link next to the test results timestamp.
 {% endhint %}
 
 #### Configuring Snyk project settings
@@ -38,7 +38,7 @@ By default, the Settings on the Project level override the Settings on the Organ
 
 1\. On the Snyk Web UI, open the Organization that includes the required Project:
 
-![](<../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Selecting Organization.png>)
+![](<../../../.gitbook/assets/Selecting Organization (1) (1).png>)
 
 2\. Move to the **Projects** page by clicking the **Projects** tab on the top menu.
 

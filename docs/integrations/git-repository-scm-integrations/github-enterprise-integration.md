@@ -38,7 +38,7 @@ Snyk starts scanning the selected repos for dependency files (such as package.js
 
 The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/which_repos.jpg" alt="Imported projects on Projects page"><figcaption><p>Imported projects on Projects page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/which_repos (30).jpg" alt="Imported projects on Projects page"><figcaption><p>Imported projects on Projects page</p></figcaption></figure>
 
 ## GitHub Enterprise Broker startup script
 
@@ -75,14 +75,14 @@ Snyk scans your projects on either a daily or a weekly basis. When new vulnerabi
 
 The example below presents a fix pull request opened by Snyk:
 
-<figure><img src="../../.gitbook/assets/github_fix_pr_cropped-14july2022.png" alt="Fix pull request created by Snyk"><figcaption><p>Fix pull request created by Snyk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github_fix_pr_cropped-14july2022 (1).png" alt="Fix pull request created by Snyk"><figcaption><p>Fix pull request created by Snyk</p></figcaption></figure>
 
 To review and update the automatic fix pull request settings:
 
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings icon" data-size="line"> **Settings >** **Integrations > Source control > GitHub Enterprise**, and click **Edit Settings**.
 2. Scroll to the **Automatic fix pull requests** section, make the relevant changes, and **Update settings.**
 
-<figure><img src="../../.gitbook/assets/mceclip4.png" alt="Automatic pull requests setting enabled"><figcaption><p>Automatic pull requests setting enabled</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mceclip4 (39).png" alt="Automatic pull requests setting enabled"><figcaption><p>Automatic pull requests setting enabled</p></figcaption></figure>
 
 ### **Pull request testing**
 
@@ -90,27 +90,27 @@ Snyk tests any newly created pull requests in your repositories for security vul
 
 The example below presents how Snyk pull request checks appear on the GitHub Enterprise Pull Request page.
 
-<figure><img src="../../.gitbook/assets/pr_testing-14july2022 (1).png" alt="Pull request checks shown in GitHub Enterprise"><figcaption><p>Pull request checks shown in GitHub Enterprise</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/pr_testing-14july2022.png" alt="Pull request checks shown in GitHub Enterprise"><figcaption><p>Pull request checks shown in GitHub Enterprise</p></figcaption></figure>
 
 To review and adjust the pull request tests settings:
 
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings icon" data-size="line"> (Organization settings) > **Integrations > Source control > GitHub Enterprise**, and click **Edit Settings**.
 2. Scroll to **Default Snyk test for pull requests.**
 
-<figure><img src="../../.gitbook/assets/image (143).png" alt="Default Snyk test for pull requests setting enabled"><figcaption><p>Default Snyk test for pull requests setting enabled</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/default_snyk_test-3july2022.png" alt="Default Snyk test for pull requests setting enabled"><figcaption><p>Default Snyk test for pull requests setting enabled</p></figcaption></figure>
 
 ## Required permissions scope for the GitHub integration
 
 All the operations, triggered manually or automatically, are performed for a GitHub service account that has its token configured in the integrations settings. This shows the required access scopes for the configured token:
 
-| **Action**                                              | **Purpose**                                                                                                                                                                                                                                                    | **Required permissions in GitHub** |
-| ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| Daily / weekly tests                                    | Used to read manifest files in private repos                                                                                                                                                                                                                   | _repo (all)_                       |
-| Manual fix pull requests (triggered by the user)        | Used to create fix PRs in the monitored repos                                                                                                                                                                                                                  | _repo (all)_                       |
-| Automatic fix and upgrade pull requests                 | Used to create fix or upgrade PRs in the monitored repos                                                                                                                                                                                                       | _repo (all)_                       |
-| Snyk tests on pull requests                             | Used to send pull request status checks whenever a new PR is created or an existing PR is updated                                                                                                                                                              | _repo (all)_                       |
-| Importing new projects to Snyk                          | Used to present a list of all the available repos in the GitHub org in the **Add Projects** screen (import popup)                                                                                                                                              | _admin:read:org, repo (all)_       |
-| Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks  to:</p><ul><li>Track the state of Snyk pull requests, that is, when PRs are created, updated triggered, merged, and so on</li><li>Send push events to trigger PR checks</li></ul> | _admin:repo\_hooks (read & write)_ |
+| **Action**                                              | **Purpose**                                                                                                                                                                                                                                                   | **Required permissions in GitHub** |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| Daily / weekly tests                                    | Used to read manifest files in private repos                                                                                                                                                                                                                  | _repo (all)_                       |
+| Manual fix pull requests (triggered by the user)        | Used to create fix PRs in the monitored repos                                                                                                                                                                                                                 | _repo (all)_                       |
+| Automatic fix and upgrade pull requests                 | Used to create fix or upgrade PRs in the monitored repos                                                                                                                                                                                                      | _repo (all)_                       |
+| Snyk tests on pull requests                             | Used to send pull request status checks whenever a new PR is created or an existing PR is updated                                                                                                                                                             | _repo (all)_                       |
+| Importing new projects to Snyk                          | Used to present a list of all the available repos in the GitHub org in the **Add Projects** screen (import popup)                                                                                                                                             | _admin:read:org, repo (all)_       |
+| Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests, that is, when PRs are created, updated triggered, merged, and so on</li><li>Send push events to trigger PR checks</li></ul> | _admin:repo\_hooks (read & write)_ |
 
 ## **Required permissions scope for repositories**
 

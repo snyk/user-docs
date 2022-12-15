@@ -10,13 +10,13 @@ We determine this advice based on how well that same change has performed on oth
 
 Once we've gathered enough data, we show a badge on the PR - either giving the advice "review recommended", or "high chance of success".
 
-![](../../../.gitbook/assets/merge-advice-review-recommended.png)
+![](<../../../.gitbook/assets/merge-advice-review-recommended (15).png>)
 
-![](../../../.gitbook/assets/advice-green.png)
+![](<../../../.gitbook/assets/advice-green (7).png>)
 
 If we haven't yet been able to collect enough data to give trustworthy advice, we show the message "not enough data". Once we've gathered enough data, we update this badge automatically with our recommendation – for that reason, a badge that was displaying "not enough data" might later show advice.
 
-![](../../../.gitbook/assets/merge-advice.png)
+![](<../../../.gitbook/assets/merge-advice (7).png>)
 
 ## Availability:
 

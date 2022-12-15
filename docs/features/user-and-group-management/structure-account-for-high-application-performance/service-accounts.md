@@ -50,7 +50,7 @@ This process describes all options. Repeat the steps to create multiple tokens f
 * Click on settings <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Service accounts** to view existing service accounts and their details.
 * Click **Create a service account** to create a new one. The screen that loads varies depending on whether you chose a **Group** or an **Organization.**
 
-Note that while creating a **Group service account**, you can choose a Group level role.&#x20;
+Note that while creating a **Group service account**, you can choose a Group level role.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2022-07-06 at 12.01.28.png" alt="Group settings"><figcaption><p>Group settings</p></figcaption></figure>
 
@@ -66,8 +66,7 @@ In the **Service Account** name field, enter a unique name for this token. Remem
 
 #### Select a role
 
-From the **Role** dropdown list, select an appropriate role.\
-
+From the **Role** dropdown list, select an appropriate role.\\
 
 For **Group service accounts**, choose from the following list of roles to configure the scope of the token; Snyk recommends selecting Viewer or Admin.
 
@@ -89,7 +88,7 @@ Make sure you copy this token as you won’t see it again. You can click **Close
 
 The new token is also added to your **Existing service accounts** list, like the list in this example:
 
-<figure><img src="../../../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en.png" alt="Existing service accounts for a Group"><figcaption><p>Existing service accounts for a Group</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en (5).png" alt="Existing service accounts for a Group"><figcaption><p>Existing service accounts for a Group</p></figcaption></figure>
 
 In addition, if you created the token for the entire Group with a **Group Admin** role, the token also appears in the **Existing service accounts** list for each of its Organizations, though it can only be edited at the **Group** level.
 
@@ -114,9 +113,9 @@ Administrators can change token names and delete tokens.
 
 #### What happens to the service account token for a deleted account
 
-When you delete a service account, the API token associated with it is invalidated immediately.&#x20;
+When you delete a service account, the API token associated with it is invalidated immediately.
 
-When an account is managed with Groups, the Organization and the Group admins can delete tokens for the Organization; only Group admins can view and manage tokens on the Group level.&#x20;
+When an account is managed with Groups, the Organization and the Group admins can delete tokens for the Organization; only Group admins can view and manage tokens on the Group level.
 
 Deleting a service account is the same as revoking the API token.
 
@@ -128,7 +127,7 @@ Deleting a service account is the same as revoking the API token.
 * Click on settings <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Service accounts**.
 * Scroll to find the list of existing service accounts:
 
-<figure><img src="../../../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en.png" alt="Existing service accounts for a Group"><figcaption><p>Existing service accounts for a Group</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en (5).png" alt="Existing service accounts for a Group"><figcaption><p>Existing service accounts for a Group</p></figcaption></figure>
 
 * From the list of existing tokens:
   * Click the token name to navigate to **change the token name** and click **Save**.

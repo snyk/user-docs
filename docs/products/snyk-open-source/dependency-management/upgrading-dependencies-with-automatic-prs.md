@@ -31,7 +31,7 @@ You can configure Snyk to regularly check your dependency health, recommend depe
 By default, the Project Settings inherit the organization Settings. However, when the Settings on the organization and Project levels are different, the Project Settings override the organization Settings.
 
 {% hint style="info" %}
-**Reminder**&#x20;
+**Reminder**
 
 Automatic dependency upgrade PRs are only available for the following SCM integrations: GitHub, GitHub Enterprise, and Bitbucket Cloud.
 {% endhint %}
@@ -40,16 +40,12 @@ Automatic dependency upgrade PRs are only available for the following SCM integr
 
 **To configure automatic upgrade PRs for an entire organization:**
 
-1.  On the Snyk Web UI, open the required organization. ****&#x20;
+1.  On the Snyk Web UI, open the required organization. \*\*\*\*
 
     <figure><img src="../../../.gitbook/assets/choose-org_19oct2022.png" alt=""><figcaption></figcaption></figure>
-
-
-2.  Go to  <img src="../../../.gitbook/assets/gear.png" alt="" data-size="line"> **Settings > Organization Settings > Integrations,** find your configured SCM, and click **Edit settings** at the end of the row for that integration.&#x20;
+2.  Go to <img src="../../../.gitbook/assets/gear.png" alt="" data-size="line"> **Settings > Organization Settings > Integrations,** find your configured SCM, and click **Edit settings** at the end of the row for that integration.
 
     <figure><img src="../../../.gitbook/assets/scm-integration_edit settings_20oct2022.png" alt=""><figcaption><p>Open the Organization settings and find your configured SCM integration to edit settings</p></figcaption></figure>
-
-
 3. On the **Settings** page of the selected integration, scroll down to the **Automatic dependency upgrade pull requests** section.
 
 ![](../../../.gitbook/assets/auto-dependency-upgrade-prs\_10nov2022.png)
@@ -66,12 +62,12 @@ Automatic dependency upgrade PRs are only available for the following SCM integr
 7\. To save and apply your changes, click one of the following:
 
 * **Apply changes to all overridden projects** option – your changes are saved and will be applied to all the Projects in the organization. Projects that have Custom Settings will inherit these organization Settings, and their Custom Settings will be overridden. When you click this option, you're asked to confirm the override.\
-  ![](<../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message.png>)
+  ![](<../../../.gitbook/assets/image (73) (2) (1) (1) (1).png>)
 * **Save changes** button – your changes are saved and will be applied to all the Projects in the organization that are configured to inherit these Settings from the organization. Projects that have Custom Settings will not be influenced by this change.
 
 ![](../../../.gitbook/assets/apply-changes-2-all.png)
 
-From now on, every time Snyk scans any Project in the organization, it automatically submits Upgrade PRs if the scan discovers that an upgrade is available.&#x20;
+From now on, every time Snyk scans any Project in the organization, it automatically submits Upgrade PRs if the scan discovers that an upgrade is available.
 
 If a newer version is released for an existing Snyk Upgrade PR, or for an existing Fix PR, the existing PR must be closed or merged before Snyk can raise a new PR.
 
@@ -86,23 +82,23 @@ The Settings on the Project level override the Settings on the organization leve
 1.  From the Snyk Web UI, open the organization that includes the required Project.
 
     <figure><img src="../../../.gitbook/assets/autoPR_switch_org-13nov2022.png" alt=""><figcaption></figcaption></figure>
-2. In **Projects**, **** locate and expand the Project for which you want to enable automatic upgrade PRs.&#x20;
-3.  Click the **Project settings** (<img src="../../../.gitbook/assets/gear.png" alt="" data-size="line"> gear icon) at the end of the project row.&#x20;
+2. In **Projects**, \*\*\*\* locate and expand the Project for which you want to enable automatic upgrade PRs.
+3.  Click the **Project settings** (<img src="../../../.gitbook/assets/gear.png" alt="" data-size="line"> gear icon) at the end of the project row.
 
-    <figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Navigating to the Project settings page</p></figcaption></figure>
-4.  In the **Project** **Settings** page, choose the relevant integration tab from the left submenu.&#x20;
+    <figure><img src="../../../.gitbook/assets/project_settings_1dec2022.png" alt=""><figcaption><p>Navigating to the Project settings page</p></figcaption></figure>
+4.  In the **Project** **Settings** page, choose the relevant integration tab from the left submenu.
 
-    <figure><img src="../../../.gitbook/assets/project_settings_page_1dec2022.png" alt=""><figcaption><p>Project settings > relevant integration tab selected</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Project settings > relevant integration tab selected</p></figcaption></figure>
 5. In the **Integration** page, scroll to the **Automatic dependency upgrade pull requests** section and choose one of the following:
    * **Inherit from Integration settings** – apply the Integration Settings of the organization to the selected Project. Note that if the **Automatic dependency upgrade pull requests option is disabled for the organization, this option will also be disabled for the Project.** If you selected this option, move to Step 7.
    *   **Customize for only this project** – apply specific settings of the **Automatic dependency upgrade pull requests** option on the Project. If you selected this option:
 
-       1. Change the slider to **Enabled**.&#x20;
+       1. Change the slider to **Enabled**.
        2. In **Include major version in upgrade recommendation,** select one of the available options to define if major version upgrades will be included in the recommendations. By default, only patches and minor versions are included in the upgrade recommendations.
-       3. In **Limit Snyk to this many dependency upgrade PRs open simultaneously,** define how many open Snyk PRs a Project can have to also receive a dependency upgrade PR. You can set a number between 1 - 10. \
+       3. In **Limit Snyk to this many dependency upgrade PRs open simultaneously,** define how many open Snyk PRs a Project can have to also receive a dependency upgrade PR. You can set a number between 1 - 10.\
           When the limit of the open PRs is reached, no new upgrade PRs are created.\
           By default, to _also_ receive a dependency upgrade PR, a Project can have _up to four_ open PRs.
-       4. In **Dependencies to ignore**, enter the exact name of the dependencies to _exclude_ from the **Automatic upgrade** operation. \
+       4. In **Dependencies to ignore**, enter the exact name of the dependencies to _exclude_ from the **Automatic upgrade** operation.\
           You can only enter lowercase letters.
 
        ![](../../../.gitbook/assets/auto-dependency-prs\_1dec2022.png)

@@ -63,7 +63,7 @@ To set the defaults for issue alert emails:
 
 Weekly report emails are notifications Snyk sends to provide a summary of the vulnerability status across all projects and organizations to which a user belongs. For an organization with zero vulnerabilities across its projects, the notification lists the number of active projects, number of known vulnerabilities, and total dependencies.
 
-![](../../.gitbook/assets/2022-06-27\_13-45-21.png)
+![](broken-reference)
 
 To set the defaults for weekly report emails:
 

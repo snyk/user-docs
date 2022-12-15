@@ -22,9 +22,9 @@ Settings on the project level override the settings on the organization level. C
 
 ### Snyk SCM webhooks
 
-Snyk adds Source Control Manager (SCM) webhooks to your imported repositories for the relevant [GitHub and Bitbucket](./) integrations. &#x20;
+Snyk adds Source Control Manager (SCM) webhooks to your imported repositories for the relevant [GitHub and Bitbucket](./) integrations.
 
-Snyk uses these webhooks  to:
+Snyk uses these webhooks to:
 
 * Track the state of Snyk pull requests (when PRs are created, updated triggered, merged, and so on)
 * Send push events to trigger PR checks
@@ -54,7 +54,7 @@ We recommend that you set Snyk status checks to be mandatory for merging pull re
 
 2\. Open the **Projects** tab, and select the required Project. Then, click the **Settings** button on the right side of its row:
 
-![](<../../.gitbook/assets/image (341).png>)
+![](<../../.gitbook/assets/image (4) (3) (1) (1).png>)
 
 3\. On the Project **Settings** page, select **GitHub integration** on the left menu.
 
@@ -63,11 +63,11 @@ We recommend that you set Snyk status checks to be mandatory for merging pull re
 * **Inherit from Integration settings** - the Project will use the PR Checks settings of its organization. If you want to use this option, select it and click the **Update Snyk test pull request settings** button. If you do not want to make additional changes, you can exit this page.
 * **Custom** - the Project will use custom PR Checks settings. If you want to use this option, select it and move to the next step.
 
-![](<../../.gitbook/assets/image (215) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (215) (1) (1).png>)
 
 5\. \[For the **Custom** option only] Activate the **Custom** option by moving the slider to **Enabled**:
 
-![](<../../.gitbook/assets/image (233) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (233) (1) (1) (1) (1) (1).png>)
 
 6\. From the **Fail conditions** drop-down list, select one of the following options:
 

@@ -1,13 +1,19 @@
-# Data residency at Snyk
-
-## **What is data residency?**
-
-Data residency allows you to control what region Snyk hosts a selected subset of your data in (see [regional and global data](data-residency-at-snyk.md#how-it-works)).
+# Regional hosting and data residency
 
 {% hint style="info" %}
 **Feature availability**\
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
+
+Snyk can host your data in a number of available regions. During your system's initial onboarding, you can work with your account team to select a region.
+
+{% hint style="info" %}
+By default, customers are hosted in the US region.
+{% endhint %}
+
+## **What is data residency?**
+
+Data residency allows you to control what region Snyk hosts a selected subset of your data in (see [regional and global data](data-residency-at-snyk.md#how-it-works)).
 
 Data residency is available for [Snyk Open Source](../products/snyk-open-source/), [Snyk Code](../products/snyk-code/), [Snyk Container](../products/snyk-container/), and [Snyk Infrastructure as Code (IaC)](../products/snyk-infrastructure-as-code/).
 
@@ -85,7 +91,7 @@ EU Datacenter Snyk accounts are only available with the purchase of an [Enterpri
 </code></pre><p>Alternatively, have an environment variable on your machine or CI tool</p><pre><code>SNYK_API=https://app.eu.snyk.io/api
 </code></pre><p>Jenkins additional argument</p><pre><code>--API=https://app.eu.snyk.io/api
 </code></pre> |
-| IDEs           | <p>IDEs are all running CLI under the hood, so use the settings to set the endpoint accordingly.<br><br>For Snyk Code, ensure the latest version of IDE plugins are in use. The following table specifies the minimum version required:<br><br>VSCode - 1.2.18 <br>Visual Studio - 1.1.21<br>IntelliJ - 2.4.32<br><strong></strong><br><strong></strong></p>                                                                                 |
+| IDEs           | <p>IDEs are all running CLI under the hood, so use the settings to set the endpoint accordingly.<br><br>For Snyk Code, ensure the latest version of IDE plugins are in use. The following table specifies the minimum version required:<br><br>VSCode - 1.2.18 <br>Visual Studio - 1.1.21<br>IntelliJ - 2.4.32</p>                                                                                                                           |
 | Broker         | <p>Follow github.com/snyk/broker docs as normal BUT add an extra environment variable in the container:<br></p><p><code>-e BROKER_SERVER_URL=https://broker.eu.snyk.io</code></p>                                                                                                                                                                                                                                                            |
 
 ## **How we maintain GDPR compliance**

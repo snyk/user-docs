@@ -42,14 +42,14 @@ To install the Snyk App on your Bitbucket Cloud workspace, you must have **Admin
 
 
 
-    <figure><img src="../../.gitbook/assets/image (108) (2) (1) (1) (1).png" alt=""><figcaption><p>Allow Snyk to access to Bitbucket Cloud</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (108) (2) (1) (1) (1) (2).png" alt=""><figcaption><p>Allow Snyk to access to Bitbucket Cloud</p></figcaption></figure>
 3.  Grant access to your Snyk Organization when you're prompted.\
 
 
     <figure><img src="../../.gitbook/assets/bitbucket-cloud-permissions_10nov2022.png" alt=""><figcaption><p>Allow Bitbucket Cloud to access your Snyk Organization<br></p></figcaption></figure>
 
     After you allow access to the Snyk Organization, the Snyk **Organization Settings** page opens and confirms that you're connected to the Bitbucket Cloud App.\
-    ![](../../.gitbook/assets/bb\_connected-28aug2022.png)
+    ![](broken-reference)
 
 Once Snyk is integrated with Bitbucket Cloud, you can see the new Snyk security tab in the repository page, and [import and explore the issues and vulnerabilities for your repository projects](../../getting-started/import-a-project.md), directly in Bitbucket!
 
@@ -112,7 +112,7 @@ To review and adjust the automatic fix pull request settings:
 1. In Snyk, go to  <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Cloud App**, and click **Edit Settings**.
 2. Scroll to the **Automatic fix pull requests** section and configure the relevant options.
 
-![](<../../.gitbook/assets/bitbucket\_cloud-auto\_fix\_prs\_30june2022 (2) (1).png>)
+![](broken-reference)
 
 {% hint style="info" %}
 Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are _not_ automatically assigned to the default reviewer set in your Bitbucket Cloud account.&#x20;
