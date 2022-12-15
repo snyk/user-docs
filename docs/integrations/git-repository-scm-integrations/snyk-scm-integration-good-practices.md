@@ -153,11 +153,11 @@ We recommend that you exclude patches from the auto fix PRs, if your developers 
 
 You should ask your developers to consider the merge advice label that appears on the auto fix PRs:
 
-![](<../../.gitbook/assets/merge-advice-review-recommended (1) (16).png>)
+![](<../../.gitbook/assets/merge-advice-review-recommended (1) (8).png>)
 
-![](<../../.gitbook/assets/advice-green (1) (20).png>)
+![](<../../.gitbook/assets/advice-green (1) (5).png>)
 
-![](<../../.gitbook/assets/merge-advice (1) (16).png>)
+![](<../../.gitbook/assets/merge-advice (1) (4).png>)
 
 {% hint style="info" %}
 Snyk auto fix PRs are only generated for new issues.

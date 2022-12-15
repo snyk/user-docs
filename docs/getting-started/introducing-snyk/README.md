@@ -32,11 +32,27 @@ See [Snyk products and environments](snyk-products-and-environments.md) for more
 Running Snyk from the command line.
 {% endembed %}
 
-### Supported languages and integrations
+### Supported languages and systems
 
-Snyk supports a [wide range of languages and integrations](snyk-languages-and-integrations.md) that allows you to use Snyk with leading IDEs, Git repositories, and CI/CD, runtime, registry, and issue management tools.
+[Snyk products](snyk-products-and-environments.md) support multiple languages and formats:
 
-See [Snyk languages and integrations](snyk-languages-and-integrations.md) for more details.
+* **Snyk Open Source**: see [Open Source - Supported languages and package managers](../../products/snyk-open-source/language-and-package-manager-support/).
+* **Snyk Code**: see [Snyk Code - Supported languages and frameworks](../../products/snyk-code/snyk-code-language-and-framework-support.md).
+* **Snyk Container**: see [Supported operating system distributions.](../../products/snyk-container/supported-operating-system-distributions.md)
+* **Snyk Infrastructure as Code**: [Snyk IaC ](../../products/snyk-infrastructure-as-code/)supports configuration files for HashiCorp Terraform, AWS CloudFormation, Kubernetes, and Azure Resource Manager (ARM).&#x20;
+* &#x20;**Snyk Cloud:** [Snyk Cloud](../../products/snyk-cloud/) supports scanning [Amazon Web Services resources](../../products/snyk-cloud/supported-aws-resources-for-snyk-cloud.md) and [Google Cloud resources](../../products/snyk-cloud/getting-started-with-snyk-cloud-google/).
+
+### Supported integrations
+
+[Snyk integrations](https://docs.snyk.io/integrations) for your software development process include:
+
+* [**Source control**](../../integrations/git-repository-scm-integrations/)**:** cloud and self-hosted Git-based code repositories such as Github.
+* [**CI/CD integrations**](../../integrations/ci-cd-integrations/): such as Jenkins or TeamCity.
+* **Artifact repositories:** such as Artifactory. See [Private registry gatekeeper plugins](https://docs.snyk.io/integrations/private-registry-gatekeeper-plugins) and [Private registry integrations](https://docs.snyk.io/integrations/private-registry-integrations).
+* [**Serverless integrations**](https://docs.snyk.io/integrations/serverless-integrations): such as AWS Lambda.
+* [**Platform as a Service (PaaS) integrations**](../../integrations/platform-as-a-service-integrations/)**:** such as Heroku.
+* [**Notification and ticketing system-integrations**](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations): such as Slack.
+* [**Vulnerability Management Tools**](../../integrations/vulnerability-management-tools/): such as RiskSense
 
 ### **What does it cost?**
 

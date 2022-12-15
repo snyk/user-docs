@@ -4,7 +4,6 @@
 * [Getting started](getting-started/README.md)
   * [Introducing Snyk](getting-started/introducing-snyk/README.md)
     * [Snyk products and environments](getting-started/introducing-snyk/snyk-products-and-environments.md)
-    * [Snyk languages and integrations](getting-started/introducing-snyk/snyk-languages-and-integrations.md)
     * [Plans](getting-started/introducing-snyk/plans.md)
     * [Snyk Learn](getting-started/introducing-snyk/snyk-learn.md)
     * [Snyk Training](getting-started/introducing-snyk/snyk-training.md)
