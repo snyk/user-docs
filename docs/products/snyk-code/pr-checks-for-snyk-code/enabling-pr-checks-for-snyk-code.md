@@ -18,7 +18,7 @@ When enabling the Automatic PR Checks feature for an entire Organization, all th
 
 **To enable the automatic PR Checks for an entire Organization:**
 
-1\. On the Snyk Web UI, in your Organization, select <img src="../../../.gitbook/assets/Snyk Code - CLI - Org Settings button - Icon (1) (4).png" alt="" data-size="line"> **Settings** > **Integrations**.
+1\. On the Snyk Web UI, in your Organization, select <img src="../../../.gitbook/assets/Snyk Code - CLI - Org Settings button - Icon (1) (12).png" alt="" data-size="line"> **Settings** > **Integrations**.
 
 2\. Locate your configured and required SCM, and click the **Edit settings** option at the end of its row:
 
@@ -38,7 +38,7 @@ When enabling the Automatic PR Checks feature for an entire Organization, all th
 
 * **Apply changes to all overridden projects** option – your changes are saved, and will be applied to all the Projects in the Organization. Projects that already have Custom Settings will inherit these new Organization Settings, and their Custom Settings will be override. After you click this option, a message appears, asking you to confirm the override action:
 
-![](<../../../.gitbook/assets/image (73) (2) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (73) (2) (1) (1) (2).png>)
 
 Click **OK** to complete the Save with Override action.
 

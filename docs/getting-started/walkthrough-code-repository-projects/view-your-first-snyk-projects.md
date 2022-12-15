@@ -76,7 +76,7 @@ Snyk treats each item in this list as a separate **Project**.
 
 This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (144).png>)) to define how that Project is scanned:
 
-![](<../../.gitbook/assets/image (208).png>)
+![](<../../.gitbook/assets/image (208) (1).png>)
 
 For example, you can use Project settings to change scan frequency, setting how often scans are run by default. See [View Project Settings](https://docs.snyk.io/introducing-snyk/introduction-to-snyk-projects/view-project-settings) for more information.
 
@@ -84,7 +84,7 @@ For example, you can use Project settings to change scan frequency, setting how 
 
 Let’s go back to the results for your scan:
 
-![](<../../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+![](<../../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 The scan shows you all vulnerabilities in all aspects of an application. Of course, it's unlikely that you are responsible for every entry in this list, but it's important to be aware of the full picture.
 

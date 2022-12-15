@@ -62,7 +62,7 @@ Automatic dependency upgrade PRs are only available for the following SCM integr
 7\. To save and apply your changes, click one of the following:
 
 * **Apply changes to all overridden projects** option – your changes are saved and will be applied to all the Projects in the organization. Projects that have Custom Settings will inherit these organization Settings, and their Custom Settings will be overridden. When you click this option, you're asked to confirm the override.\
-  ![](<../../../.gitbook/assets/image (73) (2) (1) (1) (1).png>)
+  ![](<../../../.gitbook/assets/image (73) (2) (1) (1) (2).png>)
 * **Save changes** button – your changes are saved and will be applied to all the Projects in the organization that are configured to inherit these Settings from the organization. Projects that have Custom Settings will not be influenced by this change.
 
 ![](../../../.gitbook/assets/apply-changes-2-all.png)

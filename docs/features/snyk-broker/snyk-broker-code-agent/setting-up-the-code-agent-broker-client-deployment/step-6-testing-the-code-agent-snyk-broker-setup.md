@@ -36,6 +36,6 @@ The details of the issue appear, and depending on the way you set up the Broker 
 
 * Snyk Code results without code snippets:
 
-<figure><img src="../../../../.gitbook/assets/Broker - Results - without code snippets (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Broker - Results - without code snippets (2).png" alt=""><figcaption></figcaption></figure>
 
 For more information on how to troubleshoot the Snyk Broker - Code Agent deployment, see [Troubleshooting Broker](../../troubleshooting-broker.md).
