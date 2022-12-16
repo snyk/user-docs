@@ -1,5 +1,7 @@
 # Introducing Snyk
 
+##
+
 ## What is Snyk?
 
 Snyk is a platform allowing you to scan, prioritize, and fix security vulnerabilities in your own code, open source dependencies, container images, and Infrastructure as Code (IaC) configurations.
@@ -12,21 +14,22 @@ A good security process secures each of these components where they are built an
 
 ![](<../../.gitbook/assets/image (162) (1) (1) (1) (1) (1) (1).png>)
 
-#### Using Snyk in your workflow:
+### Snyk products: Use Snyk in your workflow:
 
 * **Secure your code**: use [Snyk Open Source](../../products/snyk-open-source/) to fix vulnerabilities in your open source dependencies, and [Snyk Code](../../products/snyk-code/) to fix vulnerabilities in your source code.
-* **Secure your environments**: use [Snyk Container](../../products/snyk-container/) to fix vulnerabilities in container images and Kubernetes workloads, and [Snyk Infrastructure as Code (IaC)](../../products/snyk-infrastructure-as-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates.
+* **Secure your containers**: use [Snyk Container](../../products/snyk-container/) to fix vulnerabilities in container images and Kubernetes applications
+* **Secure your deployment**: and [Snyk Infrastructure as Code (IaC)](../../products/snyk-infrastructure-as-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates. Use [Snyk Cloud](../../products/snyk-cloud/) to fix misconfigurations in Amazon Web Services and Google Cloud accounts in the cloud.
 
-### Ways to run Snyk
+### Snyk environments: choose how to run Snyk
 
-Snyk runs in the following environments:
+You can run Snyk in the following ways:
 
-* In the browser as [Snyk Web UI](../../snyk-web-ui/).
-* In your local Command Line Interface (or in your pipeline) with the [Snyk CLI](https://docs.snyk.io/snyk-cli).
-* In various [IDE plugins](../../ide-tools/) that embed Snyk in your local dev environment.
-* In the [Snyk API](https://support.snyk.io/hc/en-us/categories/360000665657-Snyk-API) (Application Programming Interface).
+* [**Web**](../../snyk-web-ui/): the Snyk Web UI ([app.snyk.io](https://app.snyk.io)) provides a browser-based experience, along with functions such as configuration settings, filtering and fixing discovered issues, and reports.
+* [**CLI**](https://docs.snyk.io/snyk-cli): the Snyk Command Line Interface enables you to run vulnerability scans on your local machine and integrate Snyk into your pipeline.
+* [**IDEs**](../../ide-tools/): the Snyk IDE integrations enable you to embed Snyk in your development environment.
+* [**API**](https://support.snyk.io/hc/en-us/categories/360000665657-Snyk-API): the Snyk API enables you to programmatically integrate with Snyk, tuning Snyk’s security automation to your specific workflows.
 
-See [Snyk products and environments](snyk-products-and-environments.md) for more details.
+For example, in the Snyk CLI:
 
 {% embed url="https://snyk.io/wp-content/uploads/Homepage-IDE-animation-Log4Shell-FINAL.mp4" %}
 Running Snyk from the command line.
@@ -34,7 +37,7 @@ Running Snyk from the command line.
 
 ### Supported languages and systems
 
-[Snyk products](snyk-products-and-environments.md) support multiple languages and formats:
+[Snyk products](broken-reference) support multiple languages and formats:
 
 * **Snyk Open Source**: see [Open Source - Supported languages and package managers](../../products/snyk-open-source/language-and-package-manager-support/).
 * **Snyk Code**: see [Snyk Code - Supported languages and frameworks](../../products/snyk-code/snyk-code-language-and-framework-support.md).
