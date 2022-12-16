@@ -60,10 +60,10 @@ The following are the prerequisites for this configuration type:
 
 1.  In your app registration menu, select the name of your Enterprise Application.
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (2).png" alt="App registration, select name of Enterprise Application"><figcaption><p>App registration, select name of Enterprise Application</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5).png" alt="App registration, select name of Enterprise Application"><figcaption><p>App registration, select name of Enterprise Application</p></figcaption></figure>
 2.  Select **App roles**, then **Create app role**.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (2).png" alt="Select App roles, Create app role"><figcaption><p>Select App roles, Create app role</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1).png" alt="Select App roles, Create app role"><figcaption><p>Select App roles, Create app role</p></figcaption></figure>
 3.  Create an app role with details as needed.\
     Select the **Allowed member types**: **Users/Groups**, **Applications**, or **Both**.\
     Enter the **Value** and **Description** for the selected type.\
