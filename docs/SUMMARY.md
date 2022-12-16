@@ -236,6 +236,7 @@
       * [Snyk CocoaPods Action](integrations/ci-cd-integrations/github-actions-integration/snyk-cocoapods-action.md)
       * [Snyk dotNET Action](integrations/ci-cd-integrations/github-actions-integration/snyk-dotnet-action.md)
       * [Snyk Golang Action](integrations/ci-cd-integrations/github-actions-integration/snyk-golang-action.md)
+      * [Snyk Gradle Action](integrations/ci-cd-integrations/github-actions-integration/snyk-gradle-action.md)
     * [Jenkins integration](integrations/ci-cd-integrations/jenkins-integration-overview.md)
     * [Maven integration](integrations/ci-cd-integrations/maven-plugin-integration.md)
     * [TeamCity integration](integrations/ci-cd-integrations/teamcity-integration-overview/README.md)
