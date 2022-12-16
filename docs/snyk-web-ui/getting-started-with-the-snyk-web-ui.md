@@ -41,7 +41,7 @@ This information includes:
 
 Currently, Snyk only tracks and flags PRs in GitHub, GitHub Enterprise, and Bitbucket Cloud, and only for the top-most vulnerable projects. If you use another SCM, **Pending tasks** shows only PRs that can be raised, not PRs that have already been raised.
 
-![Use project links to explore and manage target options](<../.gitbook/assets/image (301).png>)
+![Use project links to explore and manage target options](<../.gitbook/assets/image (109).png>)
 
 Use the project links to explore and manage the metadata, retest, and fix options for the target files in your projects. The link opens a page where you can view the project **Overview** options, or switch to the **History**, and **Settings** tabs.
 
@@ -81,7 +81,7 @@ In the **Integrations** tab, you can:
 * Manage [Slack](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration) and [Jira](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira) integrations.
 * Access the [Vulnerability management tools](https://docs.snyk.io/integrations/vulnerability-management-tools).
 
-![Integrations tab](<../.gitbook/assets/image (52).png>)
+![Integrations tab](<../.gitbook/assets/image (157) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Manage [Organization](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations) or [Group](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations-1) members
 
@@ -95,25 +95,25 @@ You must be assigned the [relevant Admin roles and permissions](https://docs.sny
 
 Use the <img src="../.gitbook/assets/cog_icon.png" alt="" data-size="line"> menus to view and manage your Organization (team) or Group (company-wide) settings.
 
-![Group and Organization settings](<../.gitbook/assets/image (72) (1).png>)
+![Group and Organization settings](<../.gitbook/assets/image (145) (1) (1) (1) (1) (1) (1).png>)
 
 ## View product updates
 
 "Ring the bell" to view a summary from [**snyk.io updates**](https://updates.snyk.io/).
 
-![Snyk product updates](<../.gitbook/assets/image (20).png>)
+![Snyk product updates](<../.gitbook/assets/image (20) (2) (1).png>)
 
 ## View helpful resources
 
 Use the Help menu for quick access to Snyk user documentation (including the **Getting started** or **CLI** sections), product updates, API documentation, Snyk support, and to check the Snyk status page.
 
-![Getting help via the Help menu](<../.gitbook/assets/image (414).png>)
+![Getting help via the Help menu](<../.gitbook/assets/image (223).png>)
 
 ## Manage account preferences and settings
 
 This is where you can configure the general [account settings](https://app.snyk.io/account) for your user account, view your authentication token and authorized applications, set your preferred (default) organization, as well as your notification and sharing preferences, and view information on the latest Snyk product updates.
 
-![Options for a user account](<../.gitbook/assets/image (475).png>)
+![Options for a user account](<../.gitbook/assets/image (120) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ### Managing user **account settings**
 

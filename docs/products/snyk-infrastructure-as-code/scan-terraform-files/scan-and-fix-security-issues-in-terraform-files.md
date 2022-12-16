@@ -18,8 +18,8 @@ Snyk scans your Terraform code for misconfigurations and security issues as well
 * Every time a repository is scanned:
   * Every Terraform file is imported as a separate project, grouped together per repository, similar to this example: (If you re-imported the repository in order to import the Terraform files, then Snyk imports and re-tests the already imported application manifest files - displaying the test time as "now".)
 
-![](<../../../.gitbook/assets/image (148).png>)
+![](<../../../.gitbook/assets/image (97) (1).png>)
 
 * Click the project link you're interested in, to view the scan results and to help correct your Terraform code:
 
-![](<../../../.gitbook/assets/image (149).png>)
+![](<../../../.gitbook/assets/image (298).png>)

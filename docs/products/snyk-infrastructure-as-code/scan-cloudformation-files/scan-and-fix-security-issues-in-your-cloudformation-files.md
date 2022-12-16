@@ -17,9 +17,9 @@ Snyk scans CloudFormation code for misconfigurations and security issues. For co
 * Every time a repository is scanned:
   * Every CloudFormation file is imported as a separate project, grouped together per repository, similar to this example:
 
-![](<../../../.gitbook/assets/image (91).png>)
+![](<../../../.gitbook/assets/image (231).png>)
 
 * If the repository was re-imported: in order to then import the CloudFormation files, Snyk imports and re-tests the existing application manifest files--displaying the test time as "now".
   * Click a project link to view the scan results and to help view details on the CloudFormation code:
 
-![](<../../../.gitbook/assets/image (390) (1).png>)
+![](<../../../.gitbook/assets/image (139) (1) (1) (1).png>)
