@@ -101,4 +101,4 @@ for /R %WORKSPACE% %%f in (*.jar) do cmd /c snyk monitor --scan-unmanaged --remo
 
 Here is example in the Snyk UI of using these scripts with `REMOTE_REPO_URL` set to "econnect".
 
-<figure><img src="../../.gitbook/assets/untitled.png" alt="Result of scanning unmanaged JAR files"><figcaption><p>Result of scanning unmanaged JAR files</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/untitled (1).png" alt="Result of scanning unmanaged JAR files"><figcaption><p>Result of scanning unmanaged JAR files</p></figcaption></figure>

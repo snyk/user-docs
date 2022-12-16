@@ -10,4 +10,4 @@ Once a single project trust is granted, Snyk will not ask for trust on the opene
 
 To revoke an existing folder trust, you can navigate to the Snyk plugin preferences in Eclipse and edit the “Trusted Folder” setting.
 
-<figure><img src="../../.gitbook/assets/image (5) (2) (1).png" alt="Snyk Eclipse plugin preferences Trusted Folders setting"><figcaption><p>Snyk Eclipse plugin preferences Trusted Folders setting</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (3).png" alt="Snyk Eclipse plugin preferences Trusted Folders setting"><figcaption><p>Snyk Eclipse plugin preferences Trusted Folders setting</p></figcaption></figure>

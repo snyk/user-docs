@@ -125,7 +125,7 @@ jobs:
 
 ## GitHub Code Scanning support
 
-Snyk GitHub Actions support integration with GitHub Code Scanning to show vulnerability information in the GitHub Security tab. The following applies to **Snyk GitHub Actions for Open Source languages and package managers**. For information on **specific languages, package managers, and processes** see the pages listed in [GitHub Actions for Open Source languages and package managers](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#github-actions-for-open-source-languages-and-package-managers) and [GitHub Actions for Snyk Container and Snyk Infrastructure as Code](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#github-actions-for-snyk-container-and-snyk-infrastructure-as-code).
+Snyk GitHub Actions support integration with GitHub Code Scanning to show vulnerability information on the GitHub Security tab. The following applies to **Snyk GitHub Actions for Open Source languages and package managers**. For information on **specific languages, package managers, and processes** see the pages listed in [GitHub Actions for Open Source languages and package managers](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#github-actions-for-open-source-languages-and-package-managers) and [GitHub Actions for Snyk Container and Snyk Infrastructure as Code](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#github-actions-for-snyk-container-and-snyk-infrastructure-as-code).
 
 Using `--sarif-file-output` [Snyk CLI option](https://docs.snyk.io/snyk-cli/cli-reference) and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to the GitHub Code Scanning as shown in the example that follows.
 
@@ -152,7 +152,9 @@ jobs:
           sarif_file: snyk.sarif
 ```
 
-<figure><img src="../../../.gitbook/assets/GitHub-showing-uploaded-vulnerabilty.png" alt="GitHub showing uploaded vulnerability"><figcaption><p>GitHub showing uploaded vulnerability</p></figcaption></figure>
+After you upload to GitHub Code Scanning support, you will see vulnerabilities on the GitHub Security tab as shown in the following screen image.
+
+<figure><img src="../../../.gitbook/assets/GitHub-showing-uploaded-vulnerabilty.png" alt="GitHub Security tab showing uploaded vulnerability"><figcaption><p>GitHub Security tab showing uploaded vulnerability</p></figcaption></figure>
 
 ## Use your own development environment
 
