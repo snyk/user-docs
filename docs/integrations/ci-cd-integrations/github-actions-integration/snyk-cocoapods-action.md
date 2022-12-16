@@ -1,6 +1,6 @@
 # Snyk CocoaPods Action
 
-This page provides examples of using the Snyk GitHub Action for CocoaPods. For instructions on using the action and further information see [GitHub Actions integration](./).
+This page provides examples of using the Snyk GitHub Action for CocoaPods. For instructions on using the action and further information see [GitHub Actions integration](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration).
 
 ## Using the Snyk CocoaPods Action to check for vulnerabilities
 
@@ -40,7 +40,7 @@ jobs:
 
 ## Using the Snyk CocoaPods Action to run snyk monitor
 
-For an example of running `snyk monitor`, see Snyk monitor example on the GitHub Actions integration page.
+For an example of running `snyk monitor`, see [Snyk monitor example](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#snyk-monitor-example) on the GitHub Actions integration page.
 
 ## Uploading Snyk scan results to GitHub Code Scanning using the Snyk CocoaPods Action
 

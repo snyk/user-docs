@@ -6,21 +6,21 @@ As of December 15, 2022, the GitHub Actions integration pages are being moved fr
 
 ## Overview of GitHub Actions Integration
 
-Snyk offers a [set of GitHub actions](https://github.com/snyk/actions) for using [Snyk](https://snyk.io/) to check for vulnerabilities in your GitHub projects. These actions are are based on the [Snyk CLI ](https://docs.snyk.io/snyk-cli)and you can use [all of its options and capabilities](https://docs.snyk.io/snyk-cli/cli-reference) with the `args` in the [properties](./#snyk-github-action-properties-for-open-source-languages-and-package-managers) of the action.
+Snyk offers a [set of GitHub actions](https://github.com/snyk/actions) for using [Snyk](https://snyk.io/) to check for vulnerabilities in your GitHub projects. These actions are are based on the [Snyk CLI ](https://docs.snyk.io/snyk-cli)and you can use [all of its options and capabilities](https://docs.snyk.io/snyk-cli/cli-reference) with the `args` in the [properties](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#snyk-github-action-properties-for-open-source-languages-and-package-managers) of the action.
 
 There is also a [Snyk Setup Action](https://github.com/snyk/actions/tree/master/setup).
 
-For additional information see the [GitHub Actions feature ](https://github.com/features/actions)page and the [GitHub custom actions](https://docs.github.com/en/actions/creating-actions/about-actions) documentation.
+For additional information see the [GitHub Actions feature](https://github.com/features/actions) page and the [GitHub custom actions](https://docs.github.com/en/actions/creating-actions/about-actions) documentation.
 
-You must use a different action depending on the language or process you are using. This page provides detailed information that applies to **all GitHub Actions for Open Source languages and package managers**. For **Open Source examples**, see the pages listed in the next section, [GitHub Actions for Open Source languages and package managers](./#github-actions-for-open-source-languages-and-package-managers).
+You must use a different action depending on the language or process you are using. This page provides detailed information that applies to **all GitHub Actions for Open Source languages and package managers**. For **Open Source examples**, see the pages listed in the next section, [GitHub Actions for Open Source languages and package managers](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#github-actions-for-open-source-languages-and-package-managers).
 
-For detailed information about the **Docker and IaC GitHub Actions and examples** see the pages listed in the subsequent section, [GitHub Actions for Snyk Container and Snyk Infrastructure as Code](./#github-actions-for-snyk-container-and-snyk-infrastructure-as-code).
+For detailed information about the **Docker and IaC GitHub Actions and examples** see the pages listed in the subsequent section, [GitHub Actions for Snyk Container and Snyk Infrastructure as Code](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#github-actions-for-snyk-container-and-snyk-infrastructure-as-code).
 
 For detailed information about the **Setup Action and examples**, see [Snyk Setup Action](https://github.com/snyk/actions/tree/master/setup).
 
 ### GitHub Actions for Open Source languages and package managers
 
-* [Snyk CocoaPods Action](snyk-cocoapods-action.md)
+* [Snyk CocoaPods Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-cocoapods-action)
 * [Snyk dotNET Action](https://github.com/snyk/actions/tree/master/dotnet)
 * [Snyk Golang Action](https://github.com/snyk/actions/tree/master/golang)
 * [Snyk Gradle Action](https://github.com/snyk/actions/tree/master/gradle)
@@ -55,13 +55,13 @@ The Snyk GitHub Action for Open Source languages and package managers has proper
 | command  | test    | Specify which command to run, for instance test or monitor                                                                                                 |
 | json     | false   | In addition to the stdout, save the results as snyk.json                                                                                                   |
 
-For the properties associated with the other Snyk GitHub Actions, see the pages listed in the section [GitHub Actions for Snyk Container and Snyk Infrastructure as Code](./#github-actions-for-snyk-container-and-snyk-infrastructure-as-code) and [Snyk Setup Action](https://github.com/snyk/actions/tree/master/setup).
+For the properties associated with the other Snyk GitHub Actions, see the pages listed in the section [GitHub Actions for Snyk Container and Snyk Infrastructure as Code](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#github-actions-for-snyk-container-and-snyk-infrastructure-as-code) and [Snyk Setup Action](https://github.com/snyk/actions/tree/master/setup).
 
 ## Examples of using a Snyk GitHub Action
 
 Examples follow of using  a Snyk GitHub Action to test and monitor an Open Source project. For information on using `snyk test` versus `snyk monitor` see [What are the differences among snyk test, monitor, and protect?](https://support.snyk.io/hc/en-us/articles/360000920818-What-is-the-difference-between-snyk-test-protect-and-monitor-)
 
-You can find examples specific to each language, package manager, and process on the pages listed in [GitHub Actions for Open Source languages and package managers](./#github-actions-for-open-source-languages-and-package-managers) and [GitHub Actions for Snyk Container and Snyk Infrastructure as Code](./#github-actions-for-snyk-container-and-snyk-infrastructure-as-code).
+You can find examples specific to each language, package manager, and process on the pages listed in [GitHub Actions for Open Source languages and package managers](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#github-actions-for-open-source-languages-and-package-managers) and [GitHub Actions for Snyk Container and Snyk Infrastructure as Code](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#github-actions-for-snyk-container-and-snyk-infrastructure-as-code).
 
 **Note:** GitHub Actions will not pass on secrets set in the repository to forks being used in pull requests, and so the Snyk Actions that require the token will fail to run from a forked repository.
 
@@ -125,7 +125,7 @@ jobs:
 
 ## GitHub Code Scanning support
 
-Snyk GitHub Actions support integration with GitHub Code Scanning to show vulnerability information in the GitHub Security tab. The following applies to **Snyk GitHub Actions for Open Source languages and package managers**. For information on **specific languages, package managers, and processes** see the pages listed in [GitHub Actions for Open Source languages and package managers](./#github-actions-for-open-source-languages-and-package-managers) and [GitHub Actions for Snyk Container and Snyk Infrastructure as Code](./#github-actions-for-snyk-container-and-snyk-infrastructure-as-code).
+Snyk GitHub Actions support integration with GitHub Code Scanning to show vulnerability information in the GitHub Security tab. The following applies to **Snyk GitHub Actions for Open Source languages and package managers**. For information on **specific languages, package managers, and processes** see the pages listed in [GitHub Actions for Open Source languages and package managers](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#github-actions-for-open-source-languages-and-package-managers) and [GitHub Actions for Snyk Container and Snyk Infrastructure as Code](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#github-actions-for-snyk-container-and-snyk-infrastructure-as-code).
 
 Using `--sarif-file-output` [Snyk CLI option](https://docs.snyk.io/snyk-cli/cli-reference) and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to the GitHub Code Scanning as shown in the example that follows.
 
