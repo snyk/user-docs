@@ -12,7 +12,7 @@ This shows the version of the package that no longer has the vulnerability.
 
 Compare the fixed in vulnerability card above to one where no fix is available.
 
-![](../../../.gitbook/assets/fix-desc-2.png)
+![](../../../.gitbook/assets/fix-desc-2.png.png)
 
 ### Fixable
 
@@ -22,13 +22,13 @@ This means that a vulnerability can be both fixable and have a fixed in option. 
 
 The easiest way to tell if a vulnerability is fixable in the Snyk app is to look for the "fix this vulnerability" call to action button on the vulnerability card.
 
-![](../../../.gitbook/assets/fix-desc-3.png)
+![](../../../.gitbook/assets/fix-desc-3.png.png)
 
 ### Fixed in showing when issue is not fixable
 
 The difference here is whether it's looking at direct or transitive dependencies. For direct dependencies, this would mean that fixable is true if a fixed (or secure) version of the package exists anywhere in the system. However, this is not the case for transitive dependencies as they require a direct dependency that can be updated to the fixed (or secure) version of the transitive dependency.
 
-![](../../../.gitbook/assets/fix-desc-4.png)
+![](../../../.gitbook/assets/fix-desc-4.png.png)
 
 The above is an example of a transitive dependency. The detailed paths section (blue outline in image above) shows that no fix path is available; however, it does show that the vulnerability is fixed in the more recent version unlike the no fix available status seen above. This means that Snyk doesn't have the ability to reach to the level that the vulnerability actually exists in this specific project.
 
