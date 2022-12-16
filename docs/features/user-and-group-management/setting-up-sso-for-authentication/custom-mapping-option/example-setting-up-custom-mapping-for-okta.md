@@ -1,6 +1,10 @@
 # Example: Setting up custom mapping for Okta
 
-The following shows two different options for [Custom Mapping Options](./) of Okta roles. For both of these options to work, the Snyk SSO application must be assigned at group level, not the user level.
+The following shows two different options for [Custom Mapping Options](./) of Okta roles.&#x20;
+
+{% hint style="info" %}
+Note: For both of these options to work, the Snyk SSO application **must** be assigned at the group level, not the user level.
+{% endhint %}
 
 ## Option 1: Assign Custom Mapping with user roles
 
@@ -10,6 +14,14 @@ The following describes Custom Mapping with user roles.
 * User profiles are tied to each user, not the Okta group.
 
 The steps follow.
+
+{% hint style="info" %}
+Note: The Snyk SSO application **must** be assigned at the group level, not the user level.
+
+When you look at a user's Application assignment it should look similar to the image that follows, with set by **Snyk-Roles group** following **Add Another** grayed out.
+{% endhint %}
+
+<figure><img src="../../../../.gitbook/assets/snyk-roles.png" alt="Roles set on group level"><figcaption><p>Roles set on group level</p></figcaption></figure>
 
 ### Create an app attribute that contains the names of your relevant Snyk Organizations
 
@@ -76,6 +88,14 @@ In this configuration:
 * The user role in Snyk is pre-set in each Okta group for all members of that group.
 
 The steps follow.
+
+{% hint style="info" %}
+Note: The Snyk SSO application **must** be assigned at the group level, not the user level.
+
+When you look at a user's Application assignment it should look similar to the image that follows, with set by **Snyk-Roles group** following **Add Another** grayed out.
+{% endhint %}
+
+<figure><img src="../../../../.gitbook/assets/snyk-roles.png" alt="Roles set on group level"><figcaption><p>Roles set on group level</p></figcaption></figure>
 
 ### Create a single app attribute containing both the Snyk Organization name and role
 
