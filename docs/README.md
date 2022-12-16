@@ -6,9 +6,9 @@ See [Snyk user hub](https://snyk.io/user-hub/) for a full list of knowledge reso
 
 ### Understand Snyk
 
-|                                                                                                                                                                    |                                                                                                                                             |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p><strong></strong><a href="getting-started/introducing-snyk.md"><strong>Introducing Snyk</strong></a><br>Understand Snyk functions, scope and core concepts.</p> | <p><strong></strong><a href="getting-started/"><strong>Getting started</strong></a><br>Start running Snyk products in your environment.</p> |
+|                                                                                                                                                                  |                                                                                                                                             |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p><strong></strong><a href="getting-started/introducing-snyk/"><strong>Introducing Snyk</strong></a><br>Understand Snyk functions, scope and core concepts.</p> | <p><strong></strong><a href="getting-started/"><strong>Getting started</strong></a><br>Start running Snyk products in your environment.</p> |
 
 ### Explore Snyk products
 

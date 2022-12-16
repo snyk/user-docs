@@ -1,25 +1,25 @@
 # Implementing Snyk: Business and Enterprise plan users
 
 {% hint style="info" %}
-See [Implementing Snyk: Free and Team plan users](implementing-snyk-free-and-team-plan-users/) for details of using Snyk with those [pricing plans](https://snyk.io/plans/).
+See [Implementing Snyk: Free and Team plan users](../implementing-snyk-free-and-team-plan-users/) for details of using Snyk with those [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 
 There are a few key considerations and tasks to get started using Snyk, including:
 
-* [Make implementation decisions](implementing-snyk-business-and-enterprise-plan-users.md#make-implementation-decisions)
-* [Set up your first organization](implementing-snyk-business-and-enterprise-plan-users.md#set-up-your-first-organization)
-* [Create additional organizations](implementing-snyk-business-and-enterprise-plan-users.md#create-additional-organizations)
-* [Roll out Snyk to developers](implementing-snyk-business-and-enterprise-plan-users.md#roll-out-snyk-to-developers)
-* [Find, prioritize, and fix issues](implementing-snyk-business-and-enterprise-plan-users.md#find-prioritize-and-fix-issues)
+* [Make implementation decisions](./#make-implementation-decisions)
+* [Set up your first organization](./#set-up-your-first-organization)
+* [Create additional organizations](./#create-additional-organizations)
+* [Roll out Snyk to developers](./#roll-out-snyk-to-developers)
+* [Find, prioritize, and fix issues](./#find-prioritize-and-fix-issues)
 
 ### Make implementation decisions
 
 Get off to the right start with a few planning steps before inviting your teams and scanning your projects. There are a few decisions to make to get started:
 
-* [where to implement Snyk in your software development life cycle (SDLC)](implementing-snyk-business-and-enterprise-plan-users.md#where-to-implement-snyk)
-* [how to structure your account](implementing-snyk-business-and-enterprise-plan-users.md#how-to-structure-your-account)
-* [how to access Snyk](implementing-snyk-business-and-enterprise-plan-users.md#how-to-access-snyk)
-* [how you'll import projects](implementing-snyk-business-and-enterprise-plan-users.md#plan-for-importing-projects)
+* [where to implement Snyk in your software development life cycle (SDLC)](./#where-to-implement-snyk)
+* [how to structure your account](./#how-to-structure-your-account)
+* [how to access Snyk](./#how-to-access-snyk)
+* [how you'll import projects](./#plan-for-importing-projects)
 
 #### Where to implement Snyk
 
@@ -27,7 +27,7 @@ As you prepare for your teams to start adopting Snyk as part of a secure develop
 
 More information:
 
-* Docs: [Integrations](../products/snyk-code/introducing-snyk-code/key-features/integrations.md)
+* Docs: [Integrations](../../products/snyk-code/introducing-snyk-code/key-features/integrations.md)
 * Snyk Training: [Ways to integrate Snyk at your company](https://training.snyk.io/courses/ways-to-use-snyk)
 
 #### How to structure your account
@@ -36,7 +36,7 @@ There are different ways to arrange the organizations in your account. Before in
 
 More information:
 
-* Docs: [User and group management](../features/user-and-group-management/)
+* Docs: [User and group management](../../features/user-and-group-management/)
 * Training: [Snyk account structure](https://training.snyk.io/courses/snyk-account-structure)
 
 #### How to access Snyk
@@ -47,7 +47,7 @@ If using SSO, after you set it up, you'll need to remove any social login accoun
 
 More information:
 
-* Docs: [Setting up Single Sign-On (SSO) for authentication](../features/user-and-group-management/setting-up-sso-for-authentication/)
+* Docs: [Setting up Single Sign-On (SSO) for authentication](../../features/user-and-group-management/setting-up-sso-for-authentication/)
 * Training: [SSO, authentication and user provisioning](https://training.snyk.io/courses/sso)
 
 #### Plan for importing projects
@@ -69,7 +69,7 @@ Snyk includes a number of automations for Snyk Open Source when integrated with 
 
 More information:
 
-* Docs: [Git repository (SCM) integrations](../integrations/git-repository-scm-integrations/)
+* Docs: [Git repository (SCM) integrations](../../integrations/git-repository-scm-integrations/)
 * Training: [Source Code Manager Configurations](https://training.snyk.io/courses/source-code-manager-configurations)
 
 If you are using an on-premise source code manager, learn more about Snyk Broker:
@@ -90,7 +90,7 @@ Snyk sends teams different types of alerts based on settings defined for the gro
 
 More information:
 
-* Docs: [Managing notifications](../features/user-and-group-management/notifications.md)
+* Docs: [Managing notifications](../../features/user-and-group-management/notifications.md)
 * Training: [Notifications](https://training.snyk.io/courses/notifications)
 
 #### Set ignore permissions
@@ -164,7 +164,7 @@ Empower developers to find and fix issues early in the development process by ad
 
 More information:
 
-* Docs: [Snyk for IDEs](../ide-tools/)
+* Docs: [Snyk for IDEs](../../ide-tools/)
 * Training: [Introduction to using Snyk in an IDE](https://training.snyk.io/courses/introduction-to-using-snyk-in-an-ide)
 
 #### Use Snyk in the CLI
@@ -173,7 +173,7 @@ The Snyk CLI provides a way to find security and license issues locally or in yo
 
 More information:
 
-* Docs: [Snyk CLI](../snyk-cli/)
+* Docs: [Snyk CLI](../../snyk-cli/)
 * Training: [Introduction to the Snyk CLI](https://training.snyk.io/courses/intro-cli)
 
 #### Use Snyk in the Web UI
@@ -182,5 +182,5 @@ The Snyk Web UI scans different types of projects (depending on which product yo
 
 More information:
 
-* Docs: [Snyk Web UI](../snyk-web-ui/)
+* Docs: [Snyk Web UI](../../snyk-web-ui/)
 * Training: [Introduction to Snyk](https://training.snyk.io/learning-paths/introduction-to-snyk), [Find and Fix with Snyk Open Source](https://training.snyk.io/learning-paths/find-and-fix-with-snyk-open-source), [Introduction to the Snyk UI](https://training.snyk.io/courses/introduction-to-the-snyk-ui)

@@ -1,7 +1,7 @@
 # Enabling PR Checks for Snyk Code
 
 {% hint style="info" %}
-Before enabling the Automatic PR Checks feature, your selected Git repository must be integrated with Snyk; see [Set up an integration](../../../getting-started/set-up-an-integration.md).
+Before enabling the Automatic PR Checks feature, your selected Git repository must be integrated with Snyk; see [Set up an integration](../../../getting-started/quickstart/set-up-an-integration.md).
 {% endhint %}
 
 You can configure Snyk Code to automatically check your PRs for security vulnerabilities on the level of [an entire Organization](enabling-pr-checks-for-snyk-code.md#enabling-the-automatic-pull-request-checks-for-an-entire-organization) or [a specific Project](enabling-pr-checks-for-snyk-code.md#enabling-the-automatic-pull-request-checks-for-a-specific-project). In both levels, the configuration is done for a specific integrated SCM.

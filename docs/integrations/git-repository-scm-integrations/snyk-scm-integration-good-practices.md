@@ -27,7 +27,7 @@ If you try to implement all the SCM integration features at the same time, you r
 
 Snyk has pre-built integrations for Git repositories, including GitHub, GitHub Enterprise, Bitbucket Cloud and others.
 
-See [Set up an integration](../../getting-started/set-up-an-integration.md) for details.
+See [Set up an integration](../../getting-started/quickstart/set-up-an-integration.md) for details.
 
 #### **SCM permissions on repositories**
 
@@ -66,7 +66,7 @@ Go to the **Projects** page in the Snyk UI, select **Add projects**, select the 
 To confirm that a project was imported, go to the **Add project** import page for the integration. Imported projects are indicated by a ✔ next to the repo name: <img src="../../.gitbook/assets/image (256) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">
 {% endhint %}
 
-See [Import a Project](../../getting-started/import-a-project.md) for more details.
+See [Import a Project](../../getting-started/running-tests/import-a-project.md) for more details.
 
 ### Stage 3: Enable Snyk test on PRs
 

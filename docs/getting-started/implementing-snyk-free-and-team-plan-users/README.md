@@ -5,7 +5,7 @@ Just signed up to Snyk? Get results and start fixing issues in minutes!&#x20;
 {% endhint %}
 
 {% hint style="info" %}
-See [Implementing Snyk: Business and Enterprise plan users](../implementing-snyk-business-and-enterprise-plan-users.md) for details of using Snyk with those [pricing plans](https://snyk.io/plans/).
+See [Implementing Snyk: Business and Enterprise plan users](../implementing-snyk-business-and-enterprise-plan-users/) for details of using Snyk with those [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk is here to support you on your way to secure code.&#x20;
