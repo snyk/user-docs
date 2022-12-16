@@ -239,6 +239,7 @@
       * [Snyk Gradle Action](integrations/ci-cd-integrations/github-actions-integration/snyk-gradle-action.md)
       * [Snyk Gradle-jdk11 Action](integrations/ci-cd-integrations/github-actions-integration/snyk-gradle-jdk11-action.md)
       * [Snyk Gradle-jdk12 Action](integrations/ci-cd-integrations/github-actions-integration/snyk-gradle-jdk12-action.md)
+      * [Snyk Gradle-jdk14 Action](integrations/ci-cd-integrations/github-actions-integration/snyk-gradle-jdk14-action.md)
     * [Jenkins integration](integrations/ci-cd-integrations/jenkins-integration-overview.md)
     * [Maven integration](integrations/ci-cd-integrations/maven-plugin-integration.md)
     * [TeamCity integration](integrations/ci-cd-integrations/teamcity-integration-overview/README.md)
