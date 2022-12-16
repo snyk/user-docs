@@ -4,7 +4,7 @@
 **Feature availability**\
 Project tags are available for Business and Enterprise plans. See [pricing plans](https://snyk.io/plans/) for details.
 
-This feature is not available for Business Plan trials. See [Plans](../../getting-started/introducing-snyk/plans.md) for details.
+This feature is not available for Business Plan trials. See [Plans](../../more-info/plans.md) for details.
 {% endhint %}
 
 A tag is a key and value combination that lets you add additional custom metadata to Projects on the Project issues page.

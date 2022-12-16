@@ -19,7 +19,7 @@ To create a Snyk account:
 ![Your free account is ready!](../.gitbook/assets/new\_acct\_created-10nov2022.png)
 
 {% hint style="info" %}
-Different pricing plans are available, see [Plans](introducing-snyk/plans.md) for details.
+Different pricing plans are available, see [Plans](../more-info/plans.md) for details.
 {% endhint %}
 
 ### What's next?
