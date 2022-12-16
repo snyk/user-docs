@@ -1,5 +1,7 @@
 # Snyk Gradle-jdk11 Action
 
+This page provides examples of using the Snyk GitHub Action for [Gradle (jdk11)](https://github.com/snyk/actions/tree/master/gradle-jdk11). For instructions on using the action and further information see [GitHub Actions integration](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration).
+
 ## Using the Snyk Gradle (jdk11) Action to check for vulnerabilities
 
 You can use the Snyk Gradle (jdk11) Action to check for vulnerabilities as follows:
@@ -38,11 +40,13 @@ jobs:
 
 ## Using the Snyk Gradle (jdk11) Action to run snyk monitor
 
+Using `--sarif-file-output` [Snyk CLI option](https://docs.snyk.io/snyk-cli/cli-reference) and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to GitHub Code Scanning as shown in the example that follows.
+
 For an example of running `snyk monitor`, see [Snyk monitor example](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#snyk-monitor-example) on the GitHub Actions integration page.
 
 ## Uploading Snyk scan results to GitHub Code Scanning using the  Snyk Gradle (jdk11) Action&#x20;
 
-Using `--sarif-file-output` [Snyk CLI option](https://docs.snyk.io/snyk-cli/cli-reference) and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to GitHub Code Scanning as shown in the example that follows.
+
 
 The Snyk Action fails when vulnerabilities are found. This would prevent the SARIF upload action from running. Thus you must use a [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob\_idstepscontinue-on-error) option as shown in this example:
 
