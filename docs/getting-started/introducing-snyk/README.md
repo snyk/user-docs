@@ -33,7 +33,7 @@ For example, in the Snyk CLI:
 Running Snyk from the command line.
 {% endembed %}
 
-### Supported languages and systems
+### How can Snyk work in my environment?
 
 [Snyk products](broken-reference) support multiple languages and formats:
 
@@ -43,31 +43,17 @@ Running Snyk from the command line.
 * **Snyk Infrastructure as Code**: [Snyk IaC ](../../products/snyk-infrastructure-as-code/)supports configuration files for HashiCorp Terraform, AWS CloudFormation, Kubernetes, and Azure Resource Manager (ARM).&#x20;
 * &#x20;**Snyk Cloud:** [Snyk Cloud](../../products/snyk-cloud/) supports scanning [Amazon Web Services resources](../../products/snyk-cloud/supported-aws-resources-for-snyk-cloud.md) and [Google Cloud resources](../../products/snyk-cloud/getting-started-with-snyk-cloud-google/).
 
-### Supported integrations
+### What can Snyk integrate with?
 
-[Snyk integrations](https://docs.snyk.io/integrations) for your software development process include:
+Snyk integrations for your software development process allow you to integrate Snyk with multiple areas into your development and security processes, including source control, CI/CD, and many others.
 
-* [**Source control**](../../integrations/git-repository-scm-integrations/)**:** cloud and self-hosted Git-based code repositories such as Github.
-* [**CI/CD integrations**](../../integrations/ci-cd-integrations/): such as Jenkins or TeamCity.
-* **Artifact repositories:** such as Artifactory. See [Private registry gatekeeper plugins](https://docs.snyk.io/integrations/private-registry-gatekeeper-plugins) and [Private registry integrations](https://docs.snyk.io/integrations/private-registry-integrations).
-* [**Serverless integrations**](https://docs.snyk.io/integrations/serverless-integrations): such as AWS Lambda.
-* [**Platform as a Service (PaaS) integrations**](../../integrations/platform-as-a-service-integrations/)**:** such as Heroku.
-* [**Notification and ticketing system-integrations**](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations): such as Slack.
-* [**Vulnerability Management Tools**](../../integrations/vulnerability-management-tools/): such as RiskSense
+See [Snyk integrations](https://docs.snyk.io/integrations) for more details.
 
 ### **What does it cost?**
 
 Snyk has several [pricing plans](https://snyk.io/plans/) available, from free to Enterprise.
 
-See [Plans](../../more-info/plans.md) for more details.
-
-### **Who uses Snyk?**
-
-Google, Salesforce, Atlassian, Twilio, Revolut, and many more are using Snyk to secure their code and monitor for vulnerabilities.
-
-### **How do I get started?**
-
-See [Getting started](../) for full information.
+See [Snyk Pricing Plans](../../more-info/plans.md) for more details.
 
 ### What happens to my data?
 
