@@ -15,7 +15,7 @@ Ensure you have:
 
 * [Created a Snyk account](../../getting-started/quickstart/create-a-snyk-account.md).
 * [Set up integration](../../getting-started/quickstart/set-up-an-integration.md) with your code repository on a supported system such as GitHub.
-* [Imported a Snyk Project for scanning](../../getting-started/quickstart/import-a-project.md)
+* [Imported a Snyk Project for scanning](../../getting-started/running-tests/import-a-project.md)
 
 See the [Getting started](../../getting-started/) section for more details.
 

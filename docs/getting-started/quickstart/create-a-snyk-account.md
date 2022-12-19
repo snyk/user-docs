@@ -38,7 +38,7 @@ If you click **GitHub**, then fill in the details as prompted (see [Set up an in
 
 <figure><img src="../../.gitbook/assets/Connect Your Code - 3 - Feature configuration.png" alt=""><figcaption></figcaption></figure>
 
-Finally, you can [import a Project](import-a-project.md) to scan:
+Finally, you can [import a Project](../running-tests/import-a-project.md) to scan:
 
 ![](../../.gitbook/assets/add\_project-10nov2022.png)
 

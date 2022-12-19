@@ -41,4 +41,4 @@ Finally, save the changes, to integrate this entry with Snyk.
 
 ### What's next?
 
-You can now [import a Snyk Project](import-a-project.md), to tell Snyk what to scan for issues.
+You can now [import a Snyk Project](../running-tests/import-a-project.md), to tell Snyk what to scan for issues.
