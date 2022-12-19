@@ -249,6 +249,7 @@
       * [Snyk Python Action](integrations/ci-cd-integrations/github-actions-integration/snyk-python-action.md)
       * [Snyk Python-3.6 Action](integrations/ci-cd-integrations/github-actions-integration/snyk-python-3.6-action.md)
       * [Snyk Python-3.7 Action](integrations/ci-cd-integrations/github-actions-integration/snyk-python-3.7-action.md)
+      * [Snyk Python-3.8 Action](integrations/ci-cd-integrations/github-actions-integration/snyk-python-3.8-action.md)
     * [Jenkins integration](integrations/ci-cd-integrations/jenkins-integration-overview.md)
     * [Maven integration](integrations/ci-cd-integrations/maven-plugin-integration.md)
     * [TeamCity integration](integrations/ci-cd-integrations/teamcity-integration-overview/README.md)
