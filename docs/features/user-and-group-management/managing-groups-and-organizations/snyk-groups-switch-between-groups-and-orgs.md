@@ -6,6 +6,6 @@ Snyk shows your [preferred Organization](https://docs.snyk.io/features/user-and-
 
 To change which Organization you're viewing, click the navigation switcher. The avatar icons displayed on the left are your groups, and the list on the right includes the Organizations that are within the group.
 
-![](<../../../.gitbook/assets/snyk-org-switcher (1).png>)
+![](../../../.gitbook/assets/snyk-org-switcher.png)
 
 Click the avatar at the bottom of the switcher to display the organizations in your personal group. (Depending on your enterprise's setup, this may not be visible to you.)

@@ -15,7 +15,7 @@ Ensure you have:
 
 * [Created a Snyk account](../../getting-started/quickstart/create-a-snyk-account.md).
 * [Set up integration](../../getting-started/quickstart/set-up-an-integration.md) with your code repository on a supported system such as GitHub.
-* [Imported a Snyk Project for scanning](../../getting-started/running-tests/import-a-project.md)
+* [Imported a Snyk Project for scanning](../../getting-started/quickstart/import-a-project.md)
 
 See the [Getting started](../../getting-started/) section for more details.
 
@@ -54,6 +54,6 @@ To fix vulnerabilities:
 5. Snyk acts on the PR and displays a results screen.
 6. Optionally, select the **Files changed** tab to see details of the changes made.
 
-![](../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22.png)
+![](<../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22 (1).png>)
 
 See [fix-your-vulnerabilities.md](../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md "mention") for more details.
