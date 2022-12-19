@@ -1,13 +1,13 @@
-# Snyk dotNET Action
+# Snyk Node Action
 
-This page provides examples of using the Snyk GitHub Action for [dotNET](https://github.com/snyk/actions/tree/master/dotnet). For instructions on using the action and further information see [GitHub Actions integration](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration).
+This page provides examples of using the Snyk GitHub Action for [Node](https://github.com/snyk/actions/tree/master/node). For instructions on using the action and further information see [GitHub Actions integration](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration).
 
-## Using the Snyk dotNET Action to check for vulnerabilities
+## Using the Snyk Node Action to check for vulnerabilities
 
-You can use the Snyk dotNET Action to check for vulnerabilities as follows:
+You can use the Snyk Node Action to check for vulnerabilities as follows:
 
 ```yaml
-name: Example workflow for dotNET using Snyk
+name: Example workflow for Node using Snyk
 on: push
 jobs:
   security:
@@ -15,15 +15,15 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/dotnet@master
+        uses: snyk/actions/node@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 ```
 
-You can use the Snyk dotNET Action to check for **only high severity vulnerabilities** as follows:
+You can use the Snyk Node Action to check for **only high severity vulnerabilities** as follows:
 
 ```yaml
-name: Example workflow for dotNET using Snyk
+name: Example workflow for Node using Snyk
 on: push
 jobs:
   security:
@@ -31,25 +31,25 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/dotnet@master
+        uses: snyk/actions/node@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           args: --severity-threshold=high
 ```
 
-## Using the Snyk dotNET Action to run snyk monitor
+## Using the Snyk Node Action to run snyk monitor
 
 For an example of running `snyk monitor`, see [Snyk monitor example](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#snyk-monitor-example) on the GitHub Actions integration page.
 
-## Uploading Snyk scan results to GitHub Code Scanning using the Snyk dotNET Action
+## Uploading Snyk scan results to GitHub Code Scanning using the Snyk Node Action
 
 Using `--sarif-file-output` [Snyk CLI option](https://docs.snyk.io/snyk-cli/cli-reference) and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to GitHub Code Scanning as shown in the example that follows.
 
 The Snyk Action fails when vulnerabilities are found. This would prevent the SARIF upload action from running. Thus you must use a [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob\_idstepscontinue-on-error) option as shown in this example:
 
 ```yaml
-name: Example workflow for dotNET using Snyk
+name: Example workflow for Node using Snyk
 on: push
 jobs:
   security:
@@ -57,7 +57,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/dotnet@master
+        uses: snyk/actions/node@master
         continue-on-error: true # To make sure that SARIF upload gets called
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
