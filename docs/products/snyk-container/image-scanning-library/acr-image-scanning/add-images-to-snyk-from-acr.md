@@ -30,6 +30,6 @@ The **Which images do you want to test?** view appears, displaying all of the av
 
 ACR files are indicated with a unique icon ![](../../../../.gitbook/assets/uuid-5d10608d-d674-d4ee-d6c2-6faadd6fc8ea-en.png) . You can now also filter to view only those projects:
 
-![](<../../../../.gitbook/assets/image (4) (3) (3) (3) (3) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (13).png>)
+![](<../../../../.gitbook/assets/image (4) (3) (3) (3) (3) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (1).png>)
 
 ACR integration works similarly to our other integrations. To continue to monitor, fix and manage your projects, see the relevant pages, also in our docs.

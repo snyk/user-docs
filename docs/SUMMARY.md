@@ -245,6 +245,7 @@
       * [Snyk Maven Action](integrations/ci-cd-integrations/github-actions-integration/snyk-maven-action.md)
       * [Snyk Maven-3-jdk-11 Action](integrations/ci-cd-integrations/github-actions-integration/snyk-maven-3-jdk-11-action.md)
       * [Snyk Node Action](integrations/ci-cd-integrations/github-actions-integration/snyk-node-action.md)
+      * [Snyk PHP Action](integrations/ci-cd-integrations/github-actions-integration/snyk-php-action.md)
     * [Jenkins integration](integrations/ci-cd-integrations/jenkins-integration-overview.md)
     * [Maven integration](integrations/ci-cd-integrations/maven-plugin-integration.md)
     * [TeamCity integration](integrations/ci-cd-integrations/teamcity-integration-overview/README.md)
