@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Recap**\
-You have [imported a Project into Snyk](../running-tests/import-a-project.md), and Snyk has scanned that Project for any issues.
+You have [imported a Project into Snyk](import-a-project.md), and Snyk has scanned that Project for any issues.
 {% endhint %}
 
 You can now view the results of your scan - for example:

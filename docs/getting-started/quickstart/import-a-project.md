@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Recap**\
-You have [created a Snyk account](../quickstart/create-a-snyk-account.md), and [integrated with your source code (Git) repository](../quickstart/set-up-an-integration.md) to allow access to your code for scanning. You can now run the scans.
+You have [created a Snyk account](create-a-snyk-account.md), and [integrated with your source code (Git) repository](set-up-an-integration.md) to allow access to your code for scanning. You can now run the scans.
 {% endhint %}
 
 ### **Introduction**
@@ -69,4 +69,4 @@ For training on best practices using automations, visit the Snyk Training course
 
 ### What's next?
 
-You can now [view Snyk scan results](../implementing-snyk-business-and-enterprise-plan-users/view-snyk-scan-results.md).
+You can now [view Snyk scan results](view-snyk-scan-results.md).
