@@ -13,7 +13,7 @@ An example follows of setting up an Azure AD Enterprise Application and connecti
     <figure><img src="../../../../.gitbook/assets/3 (1) (1).png" alt="Azure AD Default Directory"><figcaption><p>Azure AD Default Directory</p></figcaption></figure>
 4.  Click **Add** then **Enterprise application**.
 
-    <figure><img src="../../../../.gitbook/assets/4 (1) (1).png" alt="Add Enterprise application"><figcaption><p>Add Enterprise application</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/4 (1) (1) (1).png" alt="Add Enterprise application"><figcaption><p>Add Enterprise application</p></figcaption></figure>
 5.  Choose **Create your own application**.
 
     <figure><img src="../../../../.gitbook/assets/5 (2).png" alt="Create your own application"><figcaption><p>Create your own application</p></figcaption></figure>
