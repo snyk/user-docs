@@ -53,7 +53,7 @@ After you add them, Snyk scans the selected repositories for dependency files in
 
 The imported projects appear in your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/444 (2) (4) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (16).png" alt="The Imported projects in your Projects page"><figcaption><p>The Imported projects in your <strong>Projects</strong> page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/444 (2) (4) (4) (4) (5) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1  (3).png" alt="The Imported projects in your Projects page"><figcaption><p>The Imported projects in your <strong>Projects</strong> page</p></figcaption></figure>
 
 ## Bitbucket integration features
 
@@ -69,7 +69,7 @@ Snyk produces advanced [security reports](https://docs.snyk.io/features/reports/
 
 The example below presents a project-level security report.
 
-<figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022 (1).png" alt="An example of a project-level security report"><figcaption><p>An example of a project-level security report</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022.png" alt="An example of a project-level security report"><figcaption><p>An example of a project-level security report</p></figcaption></figure>
 
 ### Project monitoring and automatic fix Pull Requests
 

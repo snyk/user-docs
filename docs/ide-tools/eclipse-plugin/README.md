@@ -43,7 +43,7 @@ This page explains supported environments, support, and giving feedback and prov
 
 If you want to verify the correct provenance of your download, please verify the signing details from the Eclipse dialog with this data.
 
-![The signing key details to verify the integrity and origin of the download plugin](<../../.gitbook/assets/image (297).png>)
+![The signing key details to verify the integrity and origin of the download plugin](<../../.gitbook/assets/image (134) (2) (1).png>)
 
 The plugin runs on
 
@@ -84,7 +84,7 @@ Once Eclipse is restarted, the Snyk Wizard should run; this will setup your Snyk
 
 Once the Snyk configuration wizard runs; follow the instructions to set up your Snyk API:
 
-<figure><img src="../../.gitbook/assets/eclipseSnykWizard.png" alt="Snyk configuration wizard"><figcaption><p>Snyk configuration wizard</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/eclipseSnykWizard (1).png" alt="Snyk configuration wizard"><figcaption><p>Snyk configuration wizard</p></figcaption></figure>
 
 Once the Snyk is configured, navigate to **Eclipse Preferences** to ensure that **Snyk** now appears in the list:
 

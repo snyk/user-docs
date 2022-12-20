@@ -18,11 +18,11 @@ When enabling the Automatic PR Checks feature for an entire Organization, all th
 
 **To enable the automatic PR Checks for an entire Organization:**
 
-1\. On the Snyk Web UI, in your Organization, select <img src="../../../.gitbook/assets/Snyk Code - CLI - Org Settings button - Icon (1).png" alt="" data-size="line"> **Settings** > **Integrations**.
+1\. On the Snyk Web UI, in your Organization, select <img src="../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (6).png" alt="" data-size="line"> **Settings** > **Integrations**.
 
 2\. Locate your configured and required SCM, and click the **Edit settings** option at the end of its row:
 
-<figure><img src="../../../.gitbook/assets/image (426).png" alt="Accessing the Edit settings pagefor your SCM integration"><figcaption><p>Accessing the Edit settings page for your SCM integration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (352).png" alt="Accessing the Edit settings pagefor your SCM integration"><figcaption><p>Accessing the Edit settings page for your SCM integration</p></figcaption></figure>
 
 3\. On the **Settings** page of the selected integration, scroll down to the **Code Analysis** section:
 
@@ -38,7 +38,7 @@ When enabling the Automatic PR Checks feature for an entire Organization, all th
 
 * **Apply changes to all overridden projects** option – your changes are saved, and will be applied to all the Projects in the Organization. Projects that already have Custom Settings will inherit these new Organization Settings, and their Custom Settings will be overridden. After you click this option, a message appears, asking you to confirm the override action:
 
-<figure><img src="../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message.png" alt="Confirming the override action for your SCM projects"><figcaption><p>Confirming the override action for your SCM projects</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Confirming the override action for your SCM projects"><figcaption><p>Confirming the override action for your SCM projects</p></figcaption></figure>
 
 Click **OK** to complete the Save with Override action.
 

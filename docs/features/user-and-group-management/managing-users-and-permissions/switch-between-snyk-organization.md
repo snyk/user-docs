@@ -2,7 +2,7 @@
 
 **On the Snyk Web UI**
 
-1. Choose the Organization you want using **Switch org** <img src="../../../.gitbook/assets/compare_arrows.png" alt="" data-size="line"> in the left navigation menu.&#x20;
+1. Choose the Organization you want using **Switch org** <img src="../../../.gitbook/assets/compare_arrows (1).png" alt="" data-size="line"> in the left navigation menu.&#x20;
 2. If you add Projects through GitHub integration, these Projects are added to the currently chosen Organization.
 
 **In the Snyk CLI**
