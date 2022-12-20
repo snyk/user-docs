@@ -8,7 +8,7 @@ As of December 15, 2022, the GitHub Actions integration pages are being moved fr
 
 Snyk offers a [set of GitHub actions](https://github.com/snyk/actions) for using [Snyk](https://snyk.io/) to check for vulnerabilities in your GitHub projects. These actions are are based on the [Snyk CLI ](https://docs.snyk.io/snyk-cli)and you can use [all of its options and capabilities](https://docs.snyk.io/snyk-cli/cli-reference) with the `args` in the [properties](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#snyk-github-action-properties-for-open-source-languages-and-package-managers) of the action.
 
-There is also a [Snyk Setup Action](https://github.com/snyk/actions/tree/master/setup).
+There is also a [Snyk Setup Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-setup-action).
 
 For additional information see the [GitHub Actions feature](https://github.com/features/actions) page and the [GitHub custom actions](https://docs.github.com/en/actions/creating-actions/about-actions) documentation.
 
@@ -16,34 +16,34 @@ You must use a different action depending on the language or process you are usi
 
 For detailed information about the **Docker and IaC GitHub Actions and examples** see the pages listed in the subsequent section, [GitHub Actions for Snyk Container and Snyk Infrastructure as Code](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#github-actions-for-snyk-container-and-snyk-infrastructure-as-code).
 
-For detailed information about the **Setup Action and examples**, see [Snyk Setup Action](https://github.com/snyk/actions/tree/master/setup).
+For detailed information about the **Setup Action and examples**, see [Snyk Setup Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-setup-action).
 
 ### GitHub Actions for Open Source languages and package managers
 
 * [Snyk CocoaPods Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-cocoapods-action)
-* [Snyk dotNET Action](https://github.com/snyk/actions/tree/master/dotnet)
-* [Snyk Golang Action](https://github.com/snyk/actions/tree/master/golang)
-* [Snyk Gradle Action](https://github.com/snyk/actions/tree/master/gradle)
-* [Snyk Gradle-jdk11 Action](https://github.com/snyk/actions/tree/master/gradle-jdk11)
-* [Snyk Gradle-jdk12 Action](https://github.com/snyk/actions/tree/master/gradle-jdk12)
-* [Snyk Gradle-jdk14 Action](https://github.com/snyk/actions/tree/master/gradle-jdk14)
-* [Snyk Gradle-jdk16 Action](https://github.com/snyk/actions/tree/master/gradle-jdk16)
-* [Snyk Gradle-jdk17 Action](https://github.com/snyk/actions/tree/master/gradle-jdk17)
-* [Snyk Maven Action](https://github.com/snyk/actions/tree/master/maven)
-* [Snyk Maven-3-jdk-11 Action](https://github.com/snyk/actions/tree/master/maven-3-jdk-11)
-* [Snyk Node Action](https://github.com/snyk/actions/tree/master/node)
-* [Snyk PHP Action](https://github.com/snyk/actions/tree/master/php)
-* [Snyk Python Action](https://github.com/snyk/actions/tree/master/python)
-* [Snyk Python-3.6 Action](https://github.com/snyk/actions/tree/master/python-3.6)
-* [Snyk Python-3.7 Action](https://github.com/snyk/actions/tree/master/python-3.7)
-* [Snyk Python-3.8 Action](https://github.com/snyk/actions/tree/master/python-3.8)
-* [Snyk Ruby Action](https://github.com/snyk/actions/tree/master/ruby)
-* [Snyk Scala Action](https://github.com/snyk/actions/tree/master/scala)
+* [Snyk dotNET Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-dotnet-action)
+* [Snyk Golang Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-golang-action)
+* [Snyk Gradle Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-gradle-action)
+* [Snyk Gradle-jdk11 Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-gradle-jdk11-action)
+* [Snyk Gradle-jdk12 Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-gradle-jdk12-action)
+* [Snyk Gradle-jdk14 Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-gradle-jdk14-action)
+* [Snyk Gradle-jdk16 Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-gradle-jdk16-action)
+* [Snyk Gradle-jdk17 Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-gradle-jdk17-action)
+* [Snyk Maven Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-maven-action)
+* [Snyk Maven-3-jdk-11 Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-maven-3-jdk-11-action)
+* [Snyk Node Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-node-action)
+* [Snyk PHP Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-php-action)
+* [Snyk Python Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-python-action)
+* [Snyk Python-3.6 Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-python-3.6-action)
+* [Snyk Python-3.7 Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-python-3.7-action)
+* [Snyk Python-3.8 Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-python-3.8-action)
+* [Snyk Ruby Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-ruby-action)
+* [Snyk Scala Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-scala-action)
 
 ### GitHub Actions for Snyk Container and Snyk Infrastructure as Code
 
-* [Snyk Docker Action](https://github.com/snyk/actions/tree/master/docker)
-* [Snyk Infrastructure as Code Action](https://github.com/snyk/actions/tree/master/iac)
+* [Snyk Docker Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-docker-action)
+* [Snyk Infrastructure as Code Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-infrastructure-as-code-action)
 
 ## Snyk GitHub Action properties for Open Source languages and package managers
 
@@ -55,7 +55,7 @@ The Snyk GitHub Action for Open Source languages and package managers has proper
 | command  | test    | Specify which command to run, for instance test or monitor                                                                                                 |
 | json     | false   | In addition to the stdout, save the results as snyk.json                                                                                                   |
 
-For the properties associated with the other Snyk GitHub Actions, see the pages listed in the section [GitHub Actions for Snyk Container and Snyk Infrastructure as Code](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#github-actions-for-snyk-container-and-snyk-infrastructure-as-code) and [Snyk Setup Action](https://github.com/snyk/actions/tree/master/setup).
+For the properties associated with the other Snyk GitHub Actions, see the pages listed in the section [GitHub Actions for Snyk Container and Snyk Infrastructure as Code](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#github-actions-for-snyk-container-and-snyk-infrastructure-as-code) and [Snyk Setup Action](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-setup-action).
 
 ## Examples of using a Snyk GitHub Action
 
