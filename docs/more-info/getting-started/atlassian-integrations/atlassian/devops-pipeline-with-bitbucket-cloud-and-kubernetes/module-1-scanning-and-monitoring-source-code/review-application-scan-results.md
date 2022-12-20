@@ -50,6 +50,6 @@ Some of the details you see are shown in the next two images, and they include:
 
 ![](<../../../../../../.gitbook/assets/image (86) (1) (1) (1).png>)
 
-![](<../../../../../../.gitbook/assets/image (135) (1) (1) (1) (1) (1).png>)
+![](<../../../../../../.gitbook/assets/image (135) (1) (1) (1) (1) (1) (1).png>)
 
 In the next two sections, we'll create a Jira ticket and a pull request.

@@ -10,7 +10,7 @@ First, you have to ensure you have setup and configured [atlassian-jira.md](../.
 
 Let's work through the issues for a Dockerfile, because those are typically about updating the base image. In the Snyk projects view, expand you repository view to see the Docker and click on the details.
 
-![](<../../../../../../.gitbook/assets/image (41) (1).png>)
+![](<../../../../../../.gitbook/assets/image (41) (1) (1).png>)
 
 When you see the Dockerfile project, you will be presented with upgrade recommendations for the base image as shown below.
 

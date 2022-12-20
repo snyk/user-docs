@@ -253,6 +253,7 @@
       * [Snyk Ruby Action](integrations/ci-cd-integrations/github-actions-integration/snyk-ruby-action.md)
       * [Snyk Scala Action](integrations/ci-cd-integrations/github-actions-integration/snyk-scala-action.md)
       * [Snyk Docker Action](integrations/ci-cd-integrations/github-actions-integration/snyk-docker-action.md)
+      * [Snyk Infrastructure as Code Action](integrations/ci-cd-integrations/github-actions-integration/snyk-infrastructure-as-code-action.md)
     * [Jenkins integration](integrations/ci-cd-integrations/jenkins-integration-overview.md)
     * [Maven integration](integrations/ci-cd-integrations/maven-plugin-integration.md)
     * [TeamCity integration](integrations/ci-cd-integrations/teamcity-integration-overview/README.md)

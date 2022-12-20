@@ -2,6 +2,8 @@
 
 This page provides instructions for and examples of using the Snyk GitHub Action for [Docker](https://github.com/snyk/actions/tree/master/docker). For general instructions and information see [GitHub Actions integration](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration).
 
+In order to use the Docker Action, you must have a Snyk API token. See [Getting Your Snyk Token](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#getting-your-snyk-token), or you can [sign up for free](https://snyk.io/login).
+
 ## Using the Snyk Docker Action to check for vulnerabilities
 
 You can use the Snyk Docker Action to check for vulnerabilities in your Docker images as follows:
@@ -20,6 +22,8 @@ jobs:
       with:
         image: your/image-to-test
 ```
+
+## Snyk Docker Action properties
 
 The Snyk Docker Action has properties which are passed to the underlying image. These are passed to the action using `with`.
 
@@ -70,7 +74,7 @@ jobs:
       uses: snyk/actions/docker@master
       env:
         # In order to use the Snyk Action you will need to have a Snyk API token.
-        # More details in https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#getting-your-snyk-token
+        # See https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#getting-your-snyk-token
         # or you can sign up for free at https://snyk.io/login
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       with:
