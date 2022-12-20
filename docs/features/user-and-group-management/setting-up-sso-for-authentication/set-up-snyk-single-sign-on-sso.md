@@ -41,10 +41,13 @@ Use these details to set up the connection with your Identity provider (IdP):
 | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Entity ID                                      | **urn:auth0:snyk:saml-**_**{Group\_name}**_                                                                                                                         |
 | Entity ID (Snyk EU Tenant Customers)           | **urn:auth0:snyk-mt-eu-prod-1:saml-**_**{Group\_name}**_                                                                                                            |
+| Entity ID (Snyk AU Tenant Customers)           | **urn:auth0:snyk-mt-au-prod-1:saml-**_**{Group\_name}**_                                                                                                            |
 | ACS URL                                        | [https://snyk.auth0.com/login/callback?connection=saml-](https://snyk.auth0.com/login/callback?connection=saml-)_**{Group\_name}**_                                 |
 | ACS URL (Snyk EU Tenant Customers)             | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback?connection=saml-](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback?connection=saml-)_**{Group\_name}**_ |
+| ACS URL (Snyk AU Tenant Customers)             | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback?connection=saml](https://snyk-mt-au-prod-1.au.auth0.com/login/callback?connection=saml)-_**{Group\_name}**_  |
 | Signing certificate                            | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem)                                                                                                            |
 | Signing certificate (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/pem](https://snyk-mt-eu-prod-1.eu.auth0.com/pem)                                                                            |
+| Signing certificate (Snyk AU Tenant Customers) | [https://snyk-mt-au-prod-1.au.auth0.com/pem](https://snyk-mt-au-prod-1.au.auth0.com/pem)                                                                            |
 
 {% hint style="info" %}
 Replace **`{Group_name}`** with the name of your Snyk Group. If your Group name includes spaces, replace them with an underscore. For example, if your Group name is `Your Company Group`, then the {Group\_name} value is **`Your_Company_Group`**.
@@ -82,6 +85,7 @@ When using OIDC for the connection between your Identity provider and Snyk, add 
 | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | Callback/Redirect URIs                            | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                                 |
 | Callback/Redirect URIs (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback) |
+| Callback/Redirect URIs (Snyk AU Tenant Customers) | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback](https://snyk-mt-au-prod-1.au.auth0.com/login/callback) |
 | OAuth Grant Type                                  | Implicit (or Authorization Code)                                                                               |
 
 ## OIDC information to provide to Snyk
@@ -107,6 +111,7 @@ Use your Azure AD name when authenticating rather than the SCM user account name
 | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | Redirect URIs                            | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                                 |
 | Redirect URIs (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback) |
+| Redirect URIs (Snyk AU Tenant Customers) | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback](https://snyk-mt-au-prod-1.au.auth0.com/login/callback) |
 
 ## Azure AD information to provide to Snyk
 
@@ -127,8 +132,10 @@ When using Active Directory Federation Service (ADFS) for the connection between
 | Realm Identifier                        | urn:auth0:snyk                                                                                                                   |
 | Callback URL                            | [https://snyk.auth0.com/login/callback](https://snyk.auth0.com/login/callback)                                                   |
 | Callback URL (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback)                   |
+| Callback URL (Snyk AU Tenant Customers) | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback](https://snyk-mt-au-prod-1.au.auth0.com/login/callback)                   |
 | Signing cert                            | [https://snyk.auth0.com/pem](https://snyk.auth0.com/pem) (add as a signature and not encryption)                                 |
 | Signing cert (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/pem](https://snyk-mt-eu-prod-1.eu.auth0.com/pem) (add as a signature and not encryption) |
+| Signing cert (Snyk AU Tenant Customers) | [https://snyk-mt-au-prod-1.au.auth0.com/pem](https://snyk-mt-au-prod-1.au.auth0.com/pem) (add as a signature and not encryption) |
 
 ## ADFS information to provide to Snyk
 
@@ -163,10 +170,10 @@ To complete your log in:
 
 These worksheets include the information to enter in your Identity provider and the information you need to collect before submitting a ticket to Snyk Support to request single sign-on.
 
-{% file src="../../../.gitbook/assets/SSO Azure Worksheet.pdf" %}
+{% file src="../../../.gitbook/assets/SSO Azure Worksheet (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
 
-{% file src="../../../.gitbook/assets/SSO SAML Worksheet.pdf" %}
+{% file src="../../../.gitbook/assets/SSO SAML Worksheet (1) (1) (1) (1) (1) (1) (1).pdf" %}
 
-{% file src="../../../.gitbook/assets/SSO ADFS Worksheet.pdf" %}
+{% file src="../../../.gitbook/assets/SSO ADFS Worksheet (1).pdf" %}
 
-{% file src="../../../.gitbook/assets/SSO OIDC Worksheet (1).pdf" %}
+{% file src="../../../.gitbook/assets/SSO OIDC Worksheet (1) (1) (1) (1) (1).pdf" %}

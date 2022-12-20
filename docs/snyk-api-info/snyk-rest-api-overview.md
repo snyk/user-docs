@@ -14,7 +14,7 @@ For more information about Snyk APIs and using an API versus Snyk CLI or an inte
 
 ## API URL (HTTPS only)
 
-The base URL for all Snyk REST API endpoints is [https://api.snyk.io/rest/](https://api.snyk.io/rest/).
+The base URL for all Snyk REST API endpoints is [https://api.snyk.io/rest/](https://api.snyk.io/rest/) or depending on your Snyk datacenter deployment, [https://api.eu.snyk.io/rest/](https://api.eu.snyk.io/rest/) or [https://api.au.snyk.io/rest/](https://api.au.snyk.io/rest/).&#x20;
 
 This API is only available over HTTPS. Accessing over HTTP will yield a 404 for all requests.
 

@@ -3,7 +3,7 @@
 ## Prerequisites
 
 * Client machine system requirements: 1 CPU, 256MB of Ram
-* Network access: an outbound TLS (443) to [https://broker.snyk.io](https://broker.snyk.io) that is also allowed by any firewalls installed on your network
+* Network access: an outbound TLS (443) to [https://broker.snyk.io](https://broker.snyk.io) that is also allowed by any firewalls installed on your network. If you are using either the Snyk EU or AU datacenter, the address will instead be [https://broker.eu.snyk.io](https://broker.eu.snyk.io) or [https://broker.au.snyk.io](https://broker.au.snyk.io).
 * A Snyk account
 * Self-enabled Broker integration using the Snyk API, or enabled by contacting Snyk support at **support@snyk.io**
 * A unique UUID token called Broker token. See[ Retrieve a unique Broker client token](prepare-snyk-broker-for-deployment.md#generate-credentials-in-the-target-application-for-snyk-broker)
@@ -17,7 +17,7 @@ We recommend configuring at least two separate instances of the Broker client fo
 
 If you use a proxy server, ensure you configure it, and any firewalls, to allow the Broker client inbound and outbound access:
 
-* Outbound from the broker client (ran in your environment) to [broker.snyk.io](https://broker.snyk.io) on port 443
+* Outbound from the broker client (ran in your environment) to [broker.snyk.io](https://broker.snyk.io) (or [https://broker.eu.snyk.io](https://broker.eu.snyk.io) / [https://broker.au.snyk.io](https://broker.au.snyk.io)) on port 443
 * Inbound to broker client at the BROKER\_CLIENT\_URL on the port you have configured (typically 8000)
 
 Traffic initiated from Snyk's server side always uses the latest available Broker connection. All activity from our side (such as traffic driven by recurring tests) appears on only one of your replicas at a time. The amount of Snyk activity is proportional to the activity in the repos (or Jira items)--that activity generates webhooks which are distributed across all replicas.

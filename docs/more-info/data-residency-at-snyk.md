@@ -67,32 +67,41 @@ See the [How Snyk handles your data](https://docs.snyk.io/more-info/how-snyk-han
 {% endtab %}
 {% endtabs %}
 
-## EU region hosting notes
+## EU and AU region hosting notes
 
 Snyk offers almost all the same features, support, and performance in the EU region as in the US region.
 
-#### Features not yet available in the EU
+#### Features not yet available
 
 * Summary and Issues tabs in Reporting
 * C/C++ language support in Snyk Open Source
 * Snyk Cloud
 
-### EU Datacenter account creation
+### EU and AU datacenter account creation
 
-EU Datacenter Snyk accounts are only available with the purchase of an [Enterprise plan](https://snyk.io/plans/).
+EU and AU datacenter Snyk accounts are only available with the purchase of an [Enterprise plan](https://snyk.io/plans/).
 
-### URLs and endpoints to the EU datacenter&#x20;
+### URLs and endpoints&#x20;
 
-| Resource       | URL                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Login / Web UI | <p><a href="https://app.eu.snyk.io/">https://app.eu.snyk.io/  </a><br></p><p><strong>Note:</strong> using Snyk.io or app.snyk.io will not redirect you.</p>                                                                                                                                                                                                                                                                                  |
-| API            | <p>Follow the docs as normal, but base URLs are </p><p>V1: https://api.eu.snyk.io/v1/  </p><p>V3: https://api.eu.snyk.io/rest/</p>                                                                                                                                                                                                                                                                                                           |
-| CLI            | <p></p><p>Both CLI<strong>,</strong> and CI running CLI, need to be configured to run against your instance by running:</p><pre><code>snyk config set endpoint=https://app.eu.snyk.io/api 
-</code></pre><p>Alternatively, have an environment variable on your machine or CI tool</p><pre><code>SNYK_API=https://app.eu.snyk.io/api
-</code></pre><p>Jenkins additional argument</p><pre><code>--API=https://app.eu.snyk.io/api
+| Resource       | URL                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Login / Web UI | <p><strong>EU</strong><br><a href="https://app.eu.snyk.io/">https://app.eu.snyk.io/  </a><br><strong>AU</strong><br><a href="https://app.au.snyk.io/">https://app.au.snyk.io/</a> </p><p></p><p><strong>Note:</strong> using Snyk.io or app.snyk.io will not redirect you.</p>                                                                                                                                                                                                                                                                                                               |
+| API            | <p>Follow the docs as normal, but base URLs are:<br><strong>EU</strong><br>V1: https://api.eu.snyk.io/v1/  </p><p>V3: https://api.eu.snyk.io/rest/<br><strong>AU</strong><br>V1: https://api.au.snyk.io/v1/</p><p>V3: https://api.au.snyk.io/rest/</p>                                                                                                                                                                                                                                                                                                                                       |
+| CLI            | <p></p><p>Both CLI<strong>,</strong> and CI running CLI, need to be configured to run against your instance by running:</p><pre><code>#EU
+snyk config set endpoint=https://app.eu.snyk.io/api
+#AU
+snyk config set endpoint=https://app.au.snyk.io/api
+</code></pre><p>Alternatively, have an environment variable on your machine or CI tool</p><pre><code>#EU
+SNYK_API=https://app.eu.snyk.io/api
+#AU
+SNYK_API=https://app.au.snyk.io/api
+</code></pre><p>Jenkins additional argument</p><pre><code>#EU
+--API=https://app.eu.snyk.io/api
+#AU
+--API=https://app.au.snyk.io/api
 </code></pre> |
-| IDEs           | <p>IDEs are all running CLI under the hood, so use the settings to set the endpoint accordingly.<br><br>For Snyk Code, ensure the latest version of IDE plugins are in use. The following table specifies the minimum version required:<br><br>VSCode - 1.2.18 <br>Visual Studio - 1.1.21<br>IntelliJ - 2.4.32</p>                                                                                                                           |
-| Broker         | <p>Follow github.com/snyk/broker docs as normal BUT add an extra environment variable in the container:<br></p><p><code>-e BROKER_SERVER_URL=https://broker.eu.snyk.io</code></p>                                                                                                                                                                                                                                                            |
+| IDEs           | <p>IDEs are all running CLI under the hood, so use the settings to set the endpoint accordingly. In your IDE settings you will have a "Custom Endpoint" parameter for the custom value.<br><br>For Snyk Code, ensure the latest version of IDE plugins are in use. The following table specifies the minimum version required:<br><br>VSCode - 1.2.18 <br>Visual Studio - 1.1.21<br>IntelliJ - 2.4.32</p>                                                                                                                                                                                    |
+| Broker         | <p>Follow github.com/snyk/broker docs as normal BUT add an extra environment variable in the container:<br><br><strong>EU</strong></p><p><code>-e BROKER_SERVER_URL=https://broker.eu.snyk.io</code><br><code></code><strong>AU</strong></p><p><code>-e BROKER_SERVER_URL=https://broker.au.snyk.io</code></p>                                                                                                                                                                                                                                                                               |
 
 ## **How we maintain GDPR compliance**
 
