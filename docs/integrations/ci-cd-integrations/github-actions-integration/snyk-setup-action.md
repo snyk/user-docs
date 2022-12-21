@@ -24,13 +24,13 @@ jobs:
 
 When using the Setup Action you are responsible for setting up the development environment required to run Snyk. In this case this is a Go project so `actions/setup-go` was used, but this would be specific to your project. The [GitHub language and frameworks guides](https://docs.github.com/en/actions/language-and-framework-guides) are a good starting point.
 
-The Snyk Setup Action has properties which are passed to the underlying image using `with`.
+The Snyk Setup Action has a property which is passed to the underlying image using `with`.
 
 | Property     | Default | Description                        |
 | ------------ | ------- | ---------------------------------- |
 | snyk-version | latest  | Install a specific version of Snyk |
 
-The Action also has outputs:
+The Action also has output:
 
 | Property | Default | Description                                |
 | -------- | ------- | ------------------------------------------ |

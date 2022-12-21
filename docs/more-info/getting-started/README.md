@@ -1,5 +1,5 @@
 ---
-description: Common setup requirements explained.
+description: 'Common setup requirements explained:'
 ---
 
 # Snyk Partner workshops
