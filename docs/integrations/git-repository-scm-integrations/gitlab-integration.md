@@ -17,7 +17,11 @@ The integration allows you to:
 
 ## Set up GitLab integration
 
+{% hint style="info" %}
+Scanning of self-managed/self-hosted source code on GitLab Enterprise is available with our **Enterprise** plan. See[ the Snyk plans and pricing page](https://snyk.io/plans) for more info.
+
 This integration only works with GitLab instances that are publicly reachable (not on a private network). A [Snyk Broker](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker) environment is required for private network instances.
+{% endhint %}
 
 **Steps:**
 
