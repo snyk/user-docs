@@ -1,6 +1,6 @@
 # Snyk for Scala
 
-Snyk supports testing and monitoring Scala projects that have their dependencies managed by [sbt. ](https://www.scala-sbt.org)
+Snyk supports testing and monitoring Scala projects that have their dependencies managed by [sbt.](https://www.scala-sbt.org)
 
 ## Features of Snyk support for Scala
 
@@ -50,16 +50,16 @@ For more details on installing `sbt-dependency-graph` for use with the Snyk CLI,
 
 Scala `sbt` projects can be imported from any of the Git repositories that Snyk [supports](../../../integrations/git-repository-scm-integrations/).
 
-To test your Scala projects using `sbt` as a package manager, Snyk analyzes your `build.sbt` file. \
+To test your Scala projects using `sbt` as a package manager, Snyk analyzes your `build.sbt` file.\
 To ensure that this works properly, you must have this file in your repository before importing your projects.
 
 {% hint style="info" %}
 You can’t declare versions of dependencies in a file that is not accessible to Snyk via a Source Code Manager (SCM) integration. For example, `Dependencies.scala`.
 
 * To ensure that your Scala dependencies are detected when you import your projects using an SCM integration, your `build.sbt` dependencies must be declared in a format that Snyk can detect.\
-  For example: `"commons-io" %% "commons-io" % "2.11.0"`.
+  For example: `"commons-io" % "commons-io" % "2.11.0"`.
 * You can use a version declared in a variable if the variable is in the `build.sbt` file.\
-  For example:&#x20;
+  For example:
 
 ```scala
   lazy val derbyVersion = "10.4.1.3"
