@@ -8,7 +8,7 @@ The Issues Detail report displays the number of issues as well as the number of 
 
 Quick aggregations are available by categories including **Severity**, **Product Name**, and **Issue Type**:
 
-<figure><img src="https://lh4.googleusercontent.com/nETI8DviqvtmBJEFHAzYXmVPK9Uglt59QBHYiEwSCycQtsJVtFfNoCvCU06ToGboufFQZQOadupIwB-f_jOOcNPBxF1X3aT2sHzoSwe6PfRqR1GWXyOUFdsFoaN_FW4vt1XqrFzEokYzLGBdcjvLSsBpgsjdHIfQFNsRg6FRtkNnviBERK8OObmx-g" alt="Quick aggregation for Issues Detail report"><figcaption><p>Quick aggregation for Issues Detail Report</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/reporting-beta-quick-aggregation-issues-detail-report.png" alt="Quick aggregation for Issues Detail report"><figcaption><p>Quick aggregation for Issues Detail Report</p></figcaption></figure>
 
 Individual issues are then displayed in a table. You can modify columns as needed.
 
