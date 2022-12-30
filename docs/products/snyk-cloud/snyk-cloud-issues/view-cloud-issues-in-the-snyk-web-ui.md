@@ -123,7 +123,9 @@ To filter which cloud issues are shown:
 
 By default, the **Status** filter is set to only include **open** issues.
 
-<figure><img src="../../../.gitbook/assets/snyk-cloud-issue-filters-3.png" alt="Filters in the Snyk Cloud issues page"><figcaption><p>Filters in the Snyk Cloud issues page</p></figcaption></figure>
+You can also filter issues by compliance control, resource type, environment name, and more.
+
+<figure><img src="../../../.gitbook/assets/snyk-cloud-issue-filters-4.png" alt="Filters in the Snyk Cloud issues page"><figcaption><p>Filters in the Snyk Cloud issues page</p></figcaption></figure>
 
 ## Search cloud issues
 
