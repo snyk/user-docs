@@ -149,6 +149,10 @@ Specify a reference which differentiates this project, for example, a branch nam
 
 For more information see [Separating projects by branch or version](https://docs.snyk.io/snyk-cli/secure-your-projects-in-the-long-term/grouping-projects-by-branch-or-version)
 
+You can use `--target-reference=<TARGET_REFERENCE>` when running tests to apply the same  ignores and policies as for a monitored target.
+
+For more information see [Ignore issues](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/ignore-issues)
+
 ### `--policy-path=<PATH_TO_POLICY_FILE>`
 
 Manually pass a path to a `.snyk` policy file.

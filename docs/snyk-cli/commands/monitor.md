@@ -182,13 +182,7 @@ For more information see [Project attributes](https://docs.snyk.io/getting-start
 
 ### `--project-tags=<TAG>[,<TAG>]...>`
 
-Set the project tags to one or more values (comma-separated key value pairs with an "=" separator).
-
-Example, `--project-tags=department=finance,team=alpha`
-
-To clear the project tags set `--project-tags=`
-
-For more information including allowable characters see [Project tags](https://docs.snyk.io/snyk-web-ui/introduction-to-snyk-projects/project-tags)
+Set the project tags to one or more values (comma-separated key value pairs with an "=" separator), for example, `--project-tags=department=finance,team=alpha` To clear the project tags set `--project-tags=`
 
 ### `--tags=<TAG>[,<TAG>]...>`
 
@@ -202,9 +196,9 @@ For more information about Maven CLI options see [Snyk for Java and Kotlin](http
 
 Use `--maven-aggregate-project` instead of `--all-projects` when scanning Maven aggregate projects, that is, ones that use modules and inheritance.
 
-When scanning these types of projects, Snyk performs a compile to ensure all modules are resolvable by the Maven reactor.
+When scanning these types of projects, Snyk performs a compile to ensure all modules are resolvable by the Maven reactor.&#x20;
 
-Be sure to run the scan in the same directory as the root pom.xml file.
+Be sure to run the scan in the same directory as the root pom.xml file.&#x20;
 
 Snyk reports test results per pom.xml file.
 
@@ -320,7 +314,7 @@ There are also special options.
 
 Specify the maximum level of archive extraction.
 
-Usage: `--max-depth=1`
+Usage: `--max-depth=1`&#x20;
 
 Use 0 (zero, the default) to disable archive extraction completely.
 
