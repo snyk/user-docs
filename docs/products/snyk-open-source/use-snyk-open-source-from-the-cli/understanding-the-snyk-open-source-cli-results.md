@@ -22,8 +22,6 @@ The list of issues discovered in the Snyk Open Source test is split into three s
 
 These are issues which can be fixed by upgrading a direct dependencies version. They contain the following information:
 
-![Snyk Open Source CLI  test results, issues to fix by upgrading](https://lh5.googleusercontent.com/9jt74X2HNuIYhK17OJrsPE1kktMvn0D9tJ8EATxwvtPaZMJud9imPh1rqVcB7Ya-G4vMFgStgYVFqieQpttZiR\_BFUzvfIqB8Evt3-DDqXB5wJNtjeQWrhEQpp6tRy30psgxkE3GjhdjatRFmd0g17c)
-
 * Which dependency to upgrade in order to resolve the issue
 * The issue type
 * The [severity rating](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/severity-levels) for the issue
@@ -32,15 +30,11 @@ These are issues which can be fixed by upgrading a direct dependencies version. 
 
 ### **Issues with no direct upgrade or patch**
 
-These are issues that cannot be resolved by upgrading a direct dependency. They contain the same information as “Issues to fix by upgrading” with the addition of versions which the vulnerability could be fixed in if the dependency were upgradable.\\
-
-![Snyk Open Source CLI test results, issues with no direct upgrade or patch](https://lh4.googleusercontent.com/-xyYz9oJXYQs-Q5mmQlMzOlUwNVFsc7ftAlYmGNIC51h1g6SgWfmIg7KntXy8V-IiZbzfaIqSrHRyd6p4S2tp82GCOrWOcJDnNG-kUA\_zFnX3IwzgmGnGnu3PKlQ0og713peu7EGZT5GsWQkLbJ5mks)
+These are issues that cannot be resolved by upgrading a direct dependency. They contain the same information as “Issues to fix by upgrading” with the addition of versions which the vulnerability could be fixed in if the dependency were upgradable.
 
 ### License Issues
 
-These are license issues which are determined by your organization’s [license policy](https://docs.snyk.io/products/snyk-open-source/license-policies). They contain the following information:\\
-
-![Snyk Open Source CLI test results, license issues](https://lh5.googleusercontent.com/4nxJXQtFicCcC48k6KAxYBVX\_FTlrbB6Ir1ZUi-IJG-5a0c84jm5cmY\_s0yq-TD6X8dOtZzIP2\_boqtX4YbPJa3rjGYOA5ne1EtfId6WNZJ34rThP2Byj2uAiMzy935ItuQWd9zWqh7ilK3uBsgqJbo)
+These are license issues which are determined by your organization’s [license policy](https://docs.snyk.io/products/snyk-open-source/license-policies). They contain the following information:
 
 * Type of license
 * License severity as determined by your organization's license policy
@@ -50,8 +44,6 @@ These are license issues which are determined by your organization’s [license 
 ## Descriptive information about the Snyk Project scanned
 
 The general information section about the test results includes the following details:\\
-
-![Snyk Open Source CLI test results description of project scanned](https://lh4.googleusercontent.com/qqa6EAFsA7TNLYnfatSTRDrO63EVAruymozZnyrsNmZStgGAVNMeEIenl6XA0KA9jaSN4BDJD90Y61IrHxTkCf4UR5wk7-NuIADvNG7AomLTwZsTNa5Kep7WAGUa-Iq8qeRHBBJQMgfMCFuiTNqie5A)
 
 * **Organization:** The Snyk ID or internal name of the organization under which the test ran. For more information, see the [CLI test command help](https://docs.snyk.io/snyk-cli/commands/test#org-less-than-org\_id-greater-than).
 * **Package manager:** The package manager associated with this open source scan
