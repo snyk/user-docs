@@ -12,8 +12,8 @@ The `snyk test` command checks projects for open source vulnerabilities and lice
 
 Possible exit codes and their meaning:
 
-**0**: success, no vulnerabilities found\
-**1**: action\_needed, vulnerabilities found\
+**0**: success (scan completed), no vulnerabilities found\
+**1**: action\_needed (scan completed), vulnerabilities found\
 **2**: failure, try to re-run command\
 **3**: failure, no supported projects detected
 
