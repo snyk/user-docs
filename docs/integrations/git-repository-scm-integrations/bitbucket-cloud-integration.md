@@ -25,7 +25,7 @@ Snyk's Bitbucket Cloud PAT integration lets you:
 
 1. To give Snyk access to your Bitbucket account, set up a dedicated service account in Bitbucket, with admin permissions. See the [Bitbucket documentation ](https://support.atlassian.com/bitbucket-cloud/docs/grant-access-to-a-workspace/)to learn more about adding users to a workspace.
 2. In Snyk, go to the **Integrations** page, open the **Bitbucket Cloud** card and configure the **Account credentials**.
-3. In the **Account credentials >** **Creating an app password** section in Snyk, use the link <img src="../../.gitbook/assets/image (439).png" alt="" data-size="line"> (**Create an App password**) to jump to your Bitbucket Cloud account.
+3. In the **Account credentials >** **Creating an app password** section in Snyk, use the link <img src="../../.gitbook/assets/image (439) (2).png" alt="" data-size="line"> (**Create an App password**) to jump to your Bitbucket Cloud account.
 4.  Follow the Bitbucket procedure to set up an account with the following permissions:
 
     * **Account: Email & Read**

@@ -106,7 +106,7 @@ Choose **Add members** button > **Add existing members** to promote current Grou
 Snyk prevents users from assigning roles to others that have more privileges than what they already have. You would encounter the following error while trying to update the role of a member, invite a new member, or add an existing member with a role that has more privileges than the logged in user.
 {% endhint %}
 
-![User cannot assign more privileged role to another user](<../../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05.png>)
+![User cannot assign more privileged role to another user](<../../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05 (1).png>)
 
 ### Assigning roles to Service Accounts
 

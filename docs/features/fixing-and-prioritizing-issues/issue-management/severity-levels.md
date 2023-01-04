@@ -69,4 +69,4 @@ Associated with your [Projects](broken-reference/):
 
 And for each vulnerability in a project:
 
-![](<../../../.gitbook/assets/image (39).png>)
+![](<../../../.gitbook/assets/image (39) (1).png>)

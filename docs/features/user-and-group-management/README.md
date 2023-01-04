@@ -75,7 +75,7 @@ SSO makes authentication and provisioning simple; see [setting-up-sso-for-authen
 
 You can manage users and permissions in your groups; See [managing-users-and-permissions](managing-users-and-permissions/ "mention").
 
-![](<../../.gitbook/assets/image (68).png>)
+![](<../../.gitbook/assets/image (245) (1).png>)
 
 #### Manage Groups and Organizations
 

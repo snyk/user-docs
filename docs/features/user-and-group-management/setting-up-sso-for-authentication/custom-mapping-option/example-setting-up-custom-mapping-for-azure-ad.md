@@ -60,24 +60,24 @@ The following are the prerequisites for this configuration type:
 
 1.  In your app registration menu, select the name of your Enterprise Application.
 
-    <figure><img src="../../../../.gitbook/assets/image (89).png" alt="App registration, select name of Enterprise Application"><figcaption><p>App registration, select name of Enterprise Application</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5).png" alt="App registration, select name of Enterprise Application"><figcaption><p>App registration, select name of Enterprise Application</p></figcaption></figure>
 2.  Select **App roles**, then **Create app role**.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (3).png" alt="Select App roles, Create app role"><figcaption><p>Select App roles, Create app role</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1).png" alt="Select App roles, Create app role"><figcaption><p>Select App roles, Create app role</p></figcaption></figure>
 3.  Create an app role with details as needed.\
     Select the **Allowed member types**: **Users/Groups**, **Applications**, or **Both**.\
     Enter the **Value** and **Description** for the selected type.\
     Enable the app role.\
     When you are finished, select **Apply**.
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt="Create app role with details"><figcaption><p>Create app role with details</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2).png" alt="Create app role with details"><figcaption><p>Create app role with details</p></figcaption></figure>
 4.  In Azure AD, select your Enterprise Application.
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (3) (1).png" alt="Select Enterprise Application in Azure AD"><figcaption><p>Select Enterprise Application in Azure AD</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (3) (1) (1).png" alt="Select Enterprise Application in Azure AD"><figcaption><p>Select Enterprise Application in Azure AD</p></figcaption></figure>
 5.  Select **Users and groups**; then **Add user/group**.\
     Search and select the users and groups to add.
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (5).png" alt="Select Users and groups, Add user/group"><figcaption><p>Select Users and groups, Add user/group</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4).png" alt="Select Users and groups, Add user/group"><figcaption><p>Select Users and groups, Add user/group</p></figcaption></figure>
 6.  Select **Users and groups**; from the dropdown, select a role; and select **Assign**.
 
     <figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>

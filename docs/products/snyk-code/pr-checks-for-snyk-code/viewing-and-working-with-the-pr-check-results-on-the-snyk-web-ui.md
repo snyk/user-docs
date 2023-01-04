@@ -16,7 +16,7 @@ After the Automatic PR Check discovers security issues in a PR, you can view the
 
 * On the **SAST check** page, locate the required issue, and click the **Full details** button on the bottom right corner:
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 The full details of the discovered issue are displayed:
 
@@ -40,11 +40,11 @@ The **Mark as successful** action does NOT ignore the issue, but only allows it 
 
 A message appears on the **SAST check** page header, informing you that the failed PRs are now marked as successful:
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
 On your SCM, the previous PR Check “**failed**” message is now changed to “**passed**”. In addition, there is an indication that the PR check was **Skipped**, and that a specific Snyk user forced this result change:
 
-![](<../../../.gitbook/assets/Snyk Code - PR Checks - Mark as successful - On GitHub (1).png>)
+![](<../../../.gitbook/assets/Snyk Code - PR Checks - Mark as successful - On GitHub.png>)
 
 ### Returning to your SCM
 
