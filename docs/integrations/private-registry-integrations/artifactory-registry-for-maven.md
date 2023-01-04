@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-****This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 Snyk can use custom Artifactory Package Repositories with Maven projects.

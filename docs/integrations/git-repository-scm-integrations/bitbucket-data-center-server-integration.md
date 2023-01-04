@@ -111,6 +111,6 @@ To disable this integration, in <img src="../../.gitbook/assets/cog_icon.png" al
 
 {% hint style="warning" %}
 **WARNING**\
-****When you disconnect Snyk from your repository projects, your credentials are removed from Snyk and any integration-specific projects that Snyk is monitoring are deactivated in Snyk.\
+When you disconnect Snyk from your repository projects, your credentials are removed from Snyk and any integration-specific projects that Snyk is monitoring are deactivated in Snyk.\
 If you choose to re-enable this integration later, you'll need to re-enter your credentials and activate your projects.
 {% endhint %}
