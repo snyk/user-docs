@@ -18,7 +18,7 @@ Click on **Bitbucket Server** to see the project import screen. Snyk queries you
 
 For this tutorial, we'll import both repositories under the project: you can choose fewer or additional files if needed:
 
-![](../../../../../.gitbook/assets/broker-5-add-repository-bbs.png)
+![](<../../../../../.gitbook/assets/broker-5-add-repository-bbs (1).png>)
 
 Clicking **Add selected repositories** to import all those projects to Snyk.io, and initiate a scan operation.
 

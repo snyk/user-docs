@@ -5,7 +5,7 @@ Snyk's Bitbucket Data Center / Server integration allows you to continuously per
 > **Feature availability**\
 > This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 
-_Need a little help from your friends?_ Check out the [Snyk and Bitbucket best practices cheat sheet](https://snyk.io/blog/snyk-bitbucket-best-practices-cheat-sheet/)  in our blog!&#x20;
+_Need a little help from your friends?_ Check out the [Snyk and Bitbucket best practices cheat sheet](https://snyk.io/blog/snyk-bitbucket-best-practices-cheat-sheet/) in our blog!
 
 ## Setting up a Bitbucket DC/Server Integration
 
@@ -18,7 +18,7 @@ _Need a little help from your friends?_ Check out the [Snyk and Bitbucket best p
 4. **Save** your changes.\
    Snyk connects to your Bitbucket DC/Server instance. When the connection succeeds, the following indications appear:
 
-![](<../../.gitbook/assets/bitbucket\_server-18july2022 (2).png>)
+![](../../.gitbook/assets/bitbucket\_server-18july2022.png)
 
 To select the repositories for Snyk to monitor:
 
@@ -43,7 +43,7 @@ Once the integration is in place, you'll be able to use capabilities such as:
 
 Snyk produces advanced [security reports](https://docs.snyk.io/features/reports/reports-overview) that let you explore the vulnerabilities found in your repositories, and fix them immediately by opening a fix pull request directly to your repository, with the required upgrades or patches.
 
-The example below presents a project level security report.&#x20;
+The example below presents a project level security report.
 
 ![](../../.gitbook/assets/project\_lvl\_security\_rpt-18july2022.png)
 
@@ -57,15 +57,15 @@ The example below presents a fix Pull Request opened by Snyk.
 
 To review and adjust the automatic fix pull request settings:
 
-1. In Snyk, go to  <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Server**, and click **Edit Settings**.
+1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Server**, and click **Edit Settings**.
 2. Scroll to the **Automatic fix pull requests** section and configure the relevant options.
 
 ![](../../.gitbook/assets/bitbucket\_server-autofixprs\_18july2022.png)
 
 {% hint style="info" %}
-Snyk pull requests are automatically assigned to the default reviewer set in your Bitbucket Server/Data Center account.&#x20;
+Snyk pull requests are automatically assigned to the default reviewer set in your Bitbucket Server/Data Center account.
 
-Unlike manual pull requests opened from the Bitbucket interface, for the Snyk Bitbucket Cloud integration, Snyk pull requests are _not_ automatically assigned to the default reviewer set in your Bitbucket Cloud account.&#x20;
+Unlike manual pull requests opened from the Bitbucket interface, for the Snyk Bitbucket Cloud integration, Snyk pull requests are _not_ automatically assigned to the default reviewer set in your Bitbucket Cloud account.
 
 Click for more info on [Snyk automated pull requests](https://docs.snyk.io/products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities).
 {% endhint %}
@@ -74,13 +74,13 @@ Click for more info on [Snyk automated pull requests](https://docs.snyk.io/produ
 
 Snyk tests any newly created pull request in your repositories for security vulnerabilities, and sends a build check to Bitbucket DC/Server. You can to see whether the pull request introduces new security issues, directly from Bitbucket DC/Server.
 
-The example below presents a Snyk pull request build check on the Bitbucket DC/Server **Pull Request** page**.**
+The example below presents a Snyk pull request build check on the Bitbucket DC/Server **Pull Request** page\*\*.\*\*
 
 ![](../../.gitbook/assets/888.png)
 
 To review and adjust the pull request tests settings:
 
-1. In Snyk, go to  <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Server** , and click **Edit Settings**.&#x20;
+1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Server** , and click **Edit Settings**.
 2. Scroll to **Default Snyk test for pull requests > Open Source Security & Licenses**, and configure the relevant options.
 
 ![](../../.gitbook/assets/bbs\_default-pr-test\_18july2022.png)
@@ -91,18 +91,18 @@ Snyk performs all the operations in Bitbucket DC/Server on behalf of the integra
 
 For Snyk to perform the required operations on monitored repositories (such as reading manifest files on a frequent basis and opening fix or upgrade PRs), the integrated Bitbucket DC/Server service account needs **Admin** permissions on the imported repositories:
 
-| **Action**                                              | **Purpose**                                                                                                                                                                                                                                            | **Required permissions on the repository** |
-| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------ |
-| Daily / weekly tests                                    | Used to read manifest files in private repositories.                                                                                                                                                                                                   | **Write** or above                         |
-| Snyk tests on pull requests                             | Used to send pull request status checks when a new PR is created, or an existing PR is updated.                                                                                                                                                        | **Write** or above                         |
-| Opening fix and upgrade pull requests                   | Used to create fix PRs in monitored repositories.                                                                                                                                                                                                      | **Write** or above                         |
-| Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks  to:</p><ul><li>Track the state of Snyk pull requests (when PRs are created, updated triggered, merged, and so on)</li><li>Send push events to trigger PR checks</li></ul> | **Admin**                                  |
+| **Action**                                              | **Purpose**                                                                                                                                                                                                                                           | **Required permissions on the repository** |
+| ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| Daily / weekly tests                                    | Used to read manifest files in private repositories.                                                                                                                                                                                                  | **Write** or above                         |
+| Snyk tests on pull requests                             | Used to send pull request status checks when a new PR is created, or an existing PR is updated.                                                                                                                                                       | **Write** or above                         |
+| Opening fix and upgrade pull requests                   | Used to create fix PRs in monitored repositories.                                                                                                                                                                                                     | **Write** or above                         |
+| Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests (when PRs are created, updated triggered, merged, and so on)</li><li>Send push events to trigger PR checks</li></ul> | **Admin**                                  |
 
 ## **Disabling the Bitbucket Data Center/Server integration**
 
-To disable this integration, in <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations:**&#x20;
+To disable this integration, in <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations:**
 
-1. In your list of integrations, select the Bitbucket integration you want deactivate and click **Edit settings** to open a page with the current status of your integration. \
+1. In your list of integrations, select the Bitbucket integration you want deactivate and click **Edit settings** to open a page with the current status of your integration.\
    \
    The page includes sections that are specific to each integration, where you can manage your credentials, API key, Service Principal, or connection details.
 2. Scroll to the relevant section and click **Disconnect.**
@@ -111,6 +111,6 @@ To disable this integration, in <img src="../../.gitbook/assets/cog_icon.png" al
 
 {% hint style="warning" %}
 **WARNING**\
-****When you disconnect Snyk from your repository projects, your credentials are removed from Snyk and any integration-specific projects that Snyk is monitoring are deactivated in Snyk.\
+\*\*\*\*When you disconnect Snyk from your repository projects, your credentials are removed from Snyk and any integration-specific projects that Snyk is monitoring are deactivated in Snyk.\
 If you choose to re-enable this integration later, you'll need to re-enter your credentials and activate your projects.
 {% endhint %}

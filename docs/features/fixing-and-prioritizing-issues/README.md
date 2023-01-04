@@ -18,7 +18,7 @@ Control prioritization at a granular level by applying [project attributes](../.
 
 ### Organize issues
 
-Snyk [reporting](broken-reference) keeps you up to date on the status of the issues, dependencies, and licenses you need, while letting you [ignore the issues](issue-management/ignore-issues.md) you don’t.
+Snyk [reporting](broken-reference/) keeps you up to date on the status of the issues, dependencies, and licenses you need, while letting you [ignore the issues](issue-management/ignore-issues.md) you don’t.
 
 ![](<../../.gitbook/assets/image (312) (1).png>)
 
@@ -30,7 +30,7 @@ Gauge risk by identifying whether a vulnerable function is being called by your 
 
 Prioritize or de-prioritize specific vulnerabilities automatically with our customizable [security policies](security-policies/).
 
-![](<../../.gitbook/assets/image (112).png>)
+![](<../../.gitbook/assets/image (112) (1).png>)
 
 ### Fix the issues
 

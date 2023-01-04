@@ -40,7 +40,7 @@ Automatic dependency upgrade PRs are only available for the following SCM integr
 
 **To configure automatic upgrade PRs for an entire organization:**
 
-1.  On the Snyk Web UI, open the required organization.&#x20;
+1.  On the Snyk Web UI, open the required organization.
 
     <figure><img src="../../../.gitbook/assets/choose-org_19oct2022.png" alt=""><figcaption></figcaption></figure>
 2.  Go to <img src="../../../.gitbook/assets/gear.png" alt="" data-size="line"> **Settings > Organization Settings > Integrations,** find your configured SCM, and click **Edit settings** at the end of the row for that integration.
@@ -85,10 +85,10 @@ The Settings on the Project level override the Settings on the organization leve
 2. In **Projects**, \*\*\*\* locate and expand the Project for which you want to enable automatic upgrade PRs.
 3.  Click the **Project settings** (<img src="../../../.gitbook/assets/gear.png" alt="" data-size="line"> gear icon) at the end of the project row.
 
-    <figure><img src="../../../.gitbook/assets/project_settings_1dec2022.png" alt=""><figcaption><p>Navigating to the Project settings page</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (134).png" alt=""><figcaption><p>Navigating to the Project settings page</p></figcaption></figure>
 4.  In the **Project** **Settings** page, choose the relevant integration tab from the left submenu.
 
-    <figure><img src="../../../.gitbook/assets/image (246).png" alt=""><figcaption><p>Project settings > relevant integration tab selected</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/project_settings_page_1dec2022.png" alt=""><figcaption><p>Project settings > relevant integration tab selected</p></figcaption></figure>
 5. In the **Integration** page, scroll to the **Automatic dependency upgrade pull requests** section and choose one of the following:
    * **Inherit from Integration settings** – apply the Integration Settings of the organization to the selected Project. Note that if the **Automatic dependency upgrade pull requests option is disabled for the organization, this option will also be disabled for the Project.** If you selected this option, move to Step 7.
    *   **Customize for only this project** – apply specific settings of the **Automatic dependency upgrade pull requests** option on the Project. If you selected this option:

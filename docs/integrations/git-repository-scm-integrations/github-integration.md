@@ -37,7 +37,7 @@ After you add them, Snyk scans the selected repositories for dependency files in
 
 The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022.jpeg" alt="Imported GitHub projects in your Projects page"><figcaption><p>Imported GitHub projects in your <strong>Projects</strong> page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/which_repos (3) (5) (9) (7) (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (10).jpg" alt="Imported GitHub projects in your Projects page"><figcaption><p>Imported GitHub projects in your <strong>Projects</strong> page</p></figcaption></figure>
 
 ## GitHub integration features
 
@@ -67,7 +67,7 @@ Snyk scans your projects on either a daily or a weekly basis. When new vulnerabi
 
 The example below presents a fix Pull Request opened by Snyk.
 
-![](<../../.gitbook/assets/github\_fix\_pr\_cropped-14july2022 (1).png>)
+![](../../.gitbook/assets/github\_fix\_pr\_cropped-14july2022.png)
 
 To review and adjust the automatic fix Pull Request settings in the Snyk GitHub Integration settings page, go to <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> (Organization Settings) **>** **Integrations > Source control > GitHub**.
 
@@ -93,7 +93,7 @@ The example below presents how Snyk pull request checks appear on the GitHub Pul
 
 You can review and adjust the pull request tests settings via the Snyk GitHub Integration settings page in <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> (Organization Settings) **>** **Integrations > Source control > GitHub**.
 
-![](<../../.gitbook/assets/image (429).png>)
+![](../../.gitbook/assets/default\_snyk\_test-3july2022.png)
 
 ## Required permissions scope for the GitHub integration
 

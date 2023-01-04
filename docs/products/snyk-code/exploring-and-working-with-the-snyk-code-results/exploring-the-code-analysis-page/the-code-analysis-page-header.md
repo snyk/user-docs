@@ -15,7 +15,7 @@ The repository details include the following:
 
 The repository name on the Header also serves as a link to the repository in the integrated SCM:
 
-![](<../../../../.gitbook/assets/Snyk Code - Results - Header - repository name link.png>)
+![](<../../../../.gitbook/assets/Snyk Code - Results - Header - repository name link (2).png>)
 
 By clicking the repository name on the Header, you can open the repository in the SCM directly from Snyk:
 
@@ -26,13 +26,13 @@ By clicking the repository name on the Header, you can open the repository in th
 
 ![](<../../../../.gitbook/assets/Snyk Code - Results - Header - Project Name.png>)
 
-* **Project Tabs** – 3 tabs that open different UI pages: &#x20;
+* **Project Tabs** – 3 tabs that open different UI pages:
 
 ![](<../../../../.gitbook/assets/Snyk Code - Results - Header - Project Tabs.png>)
 
 * **Overview** – the default Project page that displays the most recent vulnerability results.
 * **History** – a page that displays the previous snapshots and results of past tests. For more information, see [Exploring the history of the Snyk Code results](../exploring-the-history-of-the-snyk-code-results.md).
-* **Settings**  – a page that enables you to perform the following:
+* **Settings** – a page that enables you to perform the following:
   * Set the frequency of recurring tests.
   * Find the unique Project ID.
   * [Deactivate the Project](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/removing-imported-repositories-from-the-snyk-code-test#deactivating-and-deleting-the-snyk-code-project).

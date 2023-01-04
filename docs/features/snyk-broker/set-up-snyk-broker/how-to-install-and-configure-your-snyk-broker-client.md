@@ -14,7 +14,7 @@ To install and configure your Snyk Broker client:
 3. Once the broker is running, **identifying Broker server** appears toward the end of the log results, showing that a connection to Snyk has been established
 4. Visit the settings for your brokered integration in [the Snyk Web UI](https://app.snyk.io) to see a message like the following:
 
-![](<../../../.gitbook/assets/image (60) (1).png>)
+![](<../../../.gitbook/assets/image (60) (2).png>)
 
 The base setup for SCMs enables use of Snyk Open Source and scanning Dockerfiles. To get the full platform set up through the broker, follow these instructions:
 
@@ -24,7 +24,7 @@ The base setup for SCMs enables use of Snyk Open Source and scanning Dockerfiles
 
 ### Snyk Broker Helm Chart
 
-Alternatively, if you are using Kubernetes and would like to deploy the broker through a Helm chart,  use the provided [Snyk Broker Helm Chart](https://github.com/snyk/snyk-broker-helm)
+Alternatively, if you are using Kubernetes and would like to deploy the broker through a Helm chart, use the provided [Snyk Broker Helm Chart](https://github.com/snyk/snyk-broker-helm)
 
 ### Advanced Configuration
 
@@ -136,6 +136,6 @@ Example of custom approved-listing filters for each SCM: [Snyk Broker set-up exa
 
 ### Upgrade your Snyk Broker client
 
-Snyk regularly updates the Broker client in order to provide new features, bug fixes, and more. The  full list of versions and their release notes are available from GitHub as part of [the Broker project](https://github.com/snyk/broker/releases). Snyk also encourages you to [subscribe to the RSS feed](https://github.com/snyk/broker/releases.atom) for that page to receive information about versions as they are released.
+Snyk regularly updates the Broker client in order to provide new features, bug fixes, and more. The full list of versions and their release notes are available from GitHub as part of [the Broker project](https://github.com/snyk/broker/releases). Snyk also encourages you to [subscribe to the RSS feed](https://github.com/snyk/broker/releases.atom) for that page to receive information about versions as they are released.
 
 When you upgrade your broker there may be some new rules added that Snyk requires to function correctly. Therefore, you will need to re-initialize your API allow-list. If you added or removed any rules to [customize your allow-list](https://github.com/snyk/broker#custom-approved-listing-filter) (for example, to support files greater in size than 1Mb), you will need to re-apply these changes to the new allow-list.

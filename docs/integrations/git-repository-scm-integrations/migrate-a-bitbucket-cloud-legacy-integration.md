@@ -4,13 +4,13 @@
 Snyk recommends using the Bitbucket Cloud App integration for smoother integration and to ensure long-term support.
 {% endhint %}
 
-This topic describes how to migrate your existing [Bitbucket Cloud Personal Access Token (PAT) integration](bitbucket-cloud-integration.md) —displayed in Snyk as **Bitbucket Cloud (Legacy)**—to the [**Bitbucket Cloud App**](bitbucket-cloud-app-integration.md) **** integration.
+This topic describes how to migrate your existing [Bitbucket Cloud Personal Access Token (PAT) integration](bitbucket-cloud-integration.md) —displayed in Snyk as **Bitbucket Cloud (Legacy)**—to the [**Bitbucket Cloud App**](bitbucket-cloud-app-integration.md) \*\*\*\* integration.
 
-#### **Watch this Snyk Bitbucket Cloud App migration demo to see how it's done!**&#x20;
+#### **Watch this Snyk Bitbucket Cloud App migration demo to see how it's done!**
 
-Marco Morales, a Partner Solutions Architect at Snyk, talks about the Snyk Bitbucket Cloud App and goes through the process to migrate an existing Legacy integration to the Snyk Bitbucket Cloud App - in under 5 minutes! &#x20;
+Marco Morales, a Partner Solutions Architect at Snyk, talks about the Snyk Bitbucket Cloud App and goes through the process to migrate an existing Legacy integration to the Snyk Bitbucket Cloud App - in under 5 minutes!
 
-_Go to timestamp 2:34 to jump right into the demo:_ &#x20;
+_Go to timestamp 2:34 to jump right into the demo:_
 
 {% embed url="https://thoughtindustries-1.wistia.com/medias/32rgw3hkdk" %}
 How to migrate to the new Snyk Bitbucket Cloud App integration
@@ -18,7 +18,7 @@ How to migrate to the new Snyk Bitbucket Cloud App integration
 
 ## Migration Process
 
-The migration process includes:&#x20;
+The migration process includes:
 
 1. [Deleting the existing projects](migrate-a-bitbucket-cloud-legacy-integration.md#1.-delete-existing-projects) that are connected to the Bitbucket Cloud PAT (Legacy) integration in Snyk.
 2. [Disconnecting the Legacy integration in Snyk](migrate-a-bitbucket-cloud-legacy-integration.md#2.-disconnect-the-legacy-integration).
@@ -27,7 +27,7 @@ The migration process includes:&#x20;
 
 ### 1. Delete existing projects
 
-Delete all the existing projects in Snyk that were previously imported from the Legacy integration. To use the bulk delete action for your projects, go to <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line">  (Organization settings) > **Usage** and scroll to the **Projects** section.
+Delete all the existing projects in Snyk that were previously imported from the Legacy integration. To use the bulk delete action for your projects, go to <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Usage** and scroll to the **Projects** section.
 
 <figure><img src="../../.gitbook/assets/migrate_bulk actions_bbc-11oct2022.png" alt=""><figcaption><p>Delete existing projects from the Snyk Bitbucket Cloud PAT (Legacy) integration</p></figcaption></figure>
 
@@ -35,13 +35,13 @@ Delete all the existing projects in Snyk that were previously imported from the 
 
 To disconnect the Bitbucket Cloud (Legacy) integration, go to the settings page of Bitbucket Cloud (Legacy) integration, scroll to the relevant section and click **Disconnect.**
 
-<figure><img src="../../.gitbook/assets/image (487).png" alt=""><figcaption><p>Disconnect the Bitbucket Cloud PAT (Legacy) integration</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption><p>Disconnect the Bitbucket Cloud PAT (Legacy) integration</p></figcaption></figure>
 
-### 3.  Remove the Snyk tab for the Legacy integration in Bitbucket Cloud (optional)&#x20;
+### 3. Remove the Snyk tab for the Legacy integration in Bitbucket Cloud (optional)
 
-The Bitbucket Cloud (Legacy) has an optional first-party interface app for Bitbucket Cloud.&#x20;
+The Bitbucket Cloud (Legacy) has an optional first-party interface app for Bitbucket Cloud.
 
-This app can potentially be installed on your Bitbucket Cloud workspace to enrich the legacy integration with a first-party interface (a "_**Snyk**_" tab).&#x20;
+This app can potentially be installed on your Bitbucket Cloud workspace to enrich the legacy integration with a first-party interface (a "_**Snyk**_" tab).
 
 If you used this app, before setting up the Snyk Bitbucket Cloud App, remove the Legacy interface app in Bitbucket Cloud before continuing to the next step: this functionality is supported out-of-the-box in the Snyk App integration.\
 \
@@ -49,6 +49,6 @@ Go to your **Workspace settings** page in **Bitbucket.org > Manage installed app
 
 <figure><img src="../../.gitbook/assets/remove_snyk-security-bbc_11oct2022.png" alt=""><figcaption><p>Remove the first-party Snyk Legacy interface app in Bitbucket.org</p></figcaption></figure>
 
-### 4. Set up the Bitbucket Cloud App integration&#x20;
+### 4. Set up the Bitbucket Cloud App integration
 
 See the [Bitbucket Cloud App integration](bitbucket-cloud-app-integration.md) topic for more detailed information.

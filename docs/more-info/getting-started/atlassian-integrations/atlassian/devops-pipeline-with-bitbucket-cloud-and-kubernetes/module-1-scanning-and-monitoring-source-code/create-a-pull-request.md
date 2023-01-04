@@ -35,10 +35,10 @@ Click on the Open a Fix PR button to confirm the change.
 
 Next what happens is you are taken to Bitbucket Cloud. This is helpful because it is the shared environment for you and your team to manage your open PRs. The screen snippet below shows some of the PR details as populated by Snyk for your team to review as part of your PR process.
 
-![](<../../../../../../.gitbook/assets/image (157).png>)
+![](<../../../../../../.gitbook/assets/image (330) (1).png>)
 
 Below this information is the code diff your team should easily recognize. This is the fix your developers _knew_ they could make, and Snyk did it for them.
 
-![](<../../../../../../.gitbook/assets/image (28).png>)
+![](<../../../../../../.gitbook/assets/image (28) (1).png>)
 
 This example is purposefully simple to focus on a single file. The next iteration of this example is to create a pull request on multiple files. While not covered in this workshop, the idea is the same. You select multiple issues you want Snyk to automatically fix across one or more files. Developers frequently "know" what to fix and quickly see the power of being able to let the automated PR process do the right search-and-replace for them. This way, your development team spends more time on the review of the content than the creation of the change.

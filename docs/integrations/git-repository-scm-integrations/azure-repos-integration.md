@@ -33,7 +33,7 @@ To add a default project:
 4. Click **Add selected repositories**.\
    Snyk scans the entire file tree for dependency files and imports them to Snyk as Projects.
 
-![](../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en.png)
+![](<../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en (1).png>)
 
 ## Adding custom file locations and excluding folders
 
@@ -65,7 +65,7 @@ Once repositories are imported, a confirmation appears in green at the top of th
 
 ![](<../../.gitbook/assets/image (493).png>)
 
-The Azure Repository integration works similar to the other Snyk Git integrations. To continue to monitor, fix, and manage your projects, see the related pages in the Snyk User Docs.&#x20;
+The Azure Repository integration works similar to the other Snyk Git integrations. To continue to monitor, fix, and manage your projects, see the related pages in the Snyk User Docs.
 
 ## Configure your Azure Repository integration
 
@@ -104,8 +104,7 @@ Collaborator users cannot complete this task.
 
 1. Log in to [your Snyk account](https://app.snyk.io) and go to **Integrations**.
 2. In the **Azure Repos** tile, click <img src="../../.gitbook/assets/integration_settings_tile_cog-11aug2022.png" alt="" data-size="line"> to open **Organization Settings > Integrations >Azure Repos> Account credentials**.\
-   <img src="../../.gitbook/assets/integrations -azure_repo_tile-11aug2022.png" alt="" data-size="original">\
-
+   <img src="../../.gitbook/assets/integrations -azure_repo_tile-11aug2022.png" alt="" data-size="original">\\
 3.  Set the Azure DevOps organization that you want to integrate with by entering the slug for your organization (![](<../../.gitbook/assets/image (443).png>)) and the personal access token that you generated.
 
     Enterprise customers can also provide a custom URL for an Azure Repos Server private instance that is publicly reachable.

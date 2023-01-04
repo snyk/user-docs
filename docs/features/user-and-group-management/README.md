@@ -38,7 +38,7 @@ See [What’s a Snyk organization?](managing-groups-and-organizations/whats-a-sn
 Snyk Projects are contained in Organizations.
 
 {% hint style="info" %}
-[Projects](broken-reference) are contained in Organizations.
+[Projects](broken-reference/) are contained in Organizations.
 {% endhint %}
 
 ### Snyk users: member types
@@ -75,7 +75,7 @@ SSO makes authentication and provisioning simple; see [setting-up-sso-for-authen
 
 You can manage users and permissions in your groups; See [managing-users-and-permissions](managing-users-and-permissions/ "mention").
 
-![](<../../.gitbook/assets/image (90).png>)
+![](<../../.gitbook/assets/image (68).png>)
 
 #### Manage Groups and Organizations
 
