@@ -21,7 +21,7 @@ Through the Custom Base Image Recommendation feature, Snyk can recommend an imag
 * The user must specify a Dockerfile in the project in order to receive custom base image recommendations. Refer to the [steps in enabling the feature](custom-base-image-recommendations.md#how-to-enable-custom-base-image-recommendations) for more information.
 * All custom base image recommendations are considered minor upgrades, regardless of the image tag.
 * Automatic fix PRs are supported for custom base image recommendations. If the user is not using the latest version of the base image, then immediately after image import Snyk automatically issues a fix pull request against your Dockerfile, to upgrade to the latest custom base image version available.
-* In order for Snyk to identify whether a project is using a custom base image, the same custom base image must be imported and marked as such in the project's settings. &#x20;
+* In order for Snyk to identify whether a project is using a custom base image, the same custom base image must be imported and marked as such in the project's settings.
 
 ## **How to enable Custom Base Image Recommendations**
 
@@ -85,6 +85,7 @@ Next, get recommendations for the image.
 * Marking an image as a custom base image is supported only through the UI, and not through the API and CLI.
 * Custom base image recommendations will not appear when scanning an image unless the user attaches the Dockerfile to the project.
 * The image’s registry is ignored when recommendations are given for custom base images. Images with the same repository but different registries are treated as coming from the same registry (the current base image’s registry) in showing recommendations and fix PRs.
+* Once imported and marked, a custom base image project should not be moved to a different Organization or Group within Snyk.
 
 ## **Case study for Custom Base Image Recommendations**
 
