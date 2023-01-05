@@ -54,7 +54,7 @@ You can return to your SCM directly from the Snyk Web UI.
 
 1\. On the **SAST check** page > Project Summary Information area, click the **PR Check Group** option:
 
-<figure><img src="../../../.gitbook/assets/image (290).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (290) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\. On the **Security check** page, click the repository link in the **REPOSITORY** field:
 

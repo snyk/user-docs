@@ -22,7 +22,7 @@ When enabling the Automatic PR Checks feature for an entire Organization, all th
 
 2\. Locate your configured and required SCM, and click the **Edit settings** option at the end of its row:
 
-<figure><img src="../../../.gitbook/assets/image (352) (1).png" alt="Accessing the Edit settings pagefor your SCM integration"><figcaption><p>Accessing the Edit settings page for your SCM integration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (352).png" alt="Accessing the Edit settings pagefor your SCM integration"><figcaption><p>Accessing the Edit settings page for your SCM integration</p></figcaption></figure>
 
 3\. On the **Settings** page of the selected integration, scroll down to the **Code Analysis** section:
 

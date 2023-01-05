@@ -26,7 +26,7 @@ See [Reports](../../features/snyk-reports/) for more details.
 
 The **Security issues** section shows the number of vulnerabilities, their type, and how many of them Snyk identifies as auto-fixable (with an upgrade, as we saw in [Fix your first vulnerability](fix-your-first-vulnerability.md) topic).
 
-![](<../../.gitbook/assets/image (38) (1).png>)
+![](<../../.gitbook/assets/image (38).png>)
 
 ### Show issues over time
 

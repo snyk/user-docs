@@ -8,7 +8,7 @@ For details in addition to the information provided on this page, see the [Googl
 
 1.  Go to **Apps** and then click **Web and mobile apps**.
 
-    <figure><img src="../../../../.gitbook/assets/1 (2) (1).png" alt="Open Web and Mobile apps"><figcaption><p>Open Web and Mobile apps</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/1 (2) (1) (2).png" alt="Open Web and Mobile apps"><figcaption><p>Open Web and Mobile apps</p></figcaption></figure>
 2.  Click on **Add app** and choose **Add custom SAML app**.
 
     <figure><img src="../../../../.gitbook/assets/2.png" alt="Add new custom SAML app"><figcaption><p>Add new custom SAML app</p></figcaption></figure>

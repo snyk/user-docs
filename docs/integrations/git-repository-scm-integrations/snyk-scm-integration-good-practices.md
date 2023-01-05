@@ -63,7 +63,7 @@ Go to the **Projects** page in the Snyk UI, select **Add projects**, select the 
   After a project is imported, it is continuously checked for vulnerabilities.
 
 {% hint style="info" %}
-To confirm that a project was imported, go to the **Add project** import page for the integration. Imported projects are indicated by a ✔ next to the repo name: <img src="../../.gitbook/assets/image (38).png" alt="" data-size="line">
+To confirm that a project was imported, go to the **Add project** import page for the integration. Imported projects are indicated by a ✔ next to the repo name: <img src="../../.gitbook/assets/image (38) (1) (1).png" alt="" data-size="line">
 {% endhint %}
 
 See [Import a Project](../../getting-started/quickstart/import-a-project.md) for more details.

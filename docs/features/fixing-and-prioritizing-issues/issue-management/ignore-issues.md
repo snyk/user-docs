@@ -77,7 +77,7 @@ Refer to the following example:
 
 The following shows `snyk test` results before ignoring in the Web UI:
 
-<figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1).png" alt="Snyk test results before ignoring in the Web UI"><figcaption><p>Snyk test results before ignoring in the Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18) (1) (1) (2).png" alt="Snyk test results before ignoring in the Web UI"><figcaption><p>Snyk test results before ignoring in the Web UI</p></figcaption></figure>
 
 The following shows `snyk test` results after ignoring in the Web UI:
 
