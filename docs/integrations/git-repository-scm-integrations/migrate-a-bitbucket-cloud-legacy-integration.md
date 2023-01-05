@@ -35,7 +35,7 @@ Delete all the existing projects in Snyk that were previously imported from the 
 
 To disconnect the Bitbucket Cloud (Legacy) integration, go to the settings page of Bitbucket Cloud (Legacy) integration, scroll to the relevant section and click **Disconnect.**
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Disconnect the Bitbucket Cloud PAT (Legacy) integration</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (444).png" alt=""><figcaption><p>Disconnect the Bitbucket Cloud PAT (Legacy) integration</p></figcaption></figure>
 
 ### 3. Remove the Snyk tab for the Legacy integration in Bitbucket Cloud (optional)
 

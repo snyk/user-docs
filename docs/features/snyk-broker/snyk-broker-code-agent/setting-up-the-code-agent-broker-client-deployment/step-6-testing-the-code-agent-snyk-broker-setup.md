@@ -6,7 +6,7 @@ To test the Code Agent – Snyk Broker deployment setup, import a repository to 
 
 1\. On the Snyk Web UI, open the required Organization:
 
-<figure><img src="../../../../.gitbook/assets/Snyk Broker - Organization - Select.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Snyk Broker - Organization - Select (1).png" alt=""><figcaption></figcaption></figure>
 
 2\. Once the required Organization is open, click the **Add project** button. Then, select the SCM for which you set the Code Agent:
 

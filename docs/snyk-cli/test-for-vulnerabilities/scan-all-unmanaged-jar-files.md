@@ -18,7 +18,7 @@ Testing each JAR file individually shows the name of the JAR file that was scann
 
 Java apps often have JAR files in a number of different folders within an application.
 
-Below is a Linux/Mac Bash script that recurses through all subfolders starting with the current folder and tests each JAR file found.&#x20;
+Below is a Linux/Mac Bash script that recurses through all subfolders starting with the current folder and tests each JAR file found.
 
 Setting a value for the `REMOTE_REPO_URL` variable is important; it is used to combine all scan results under a single Snyk project in the UI using the `--remote-repo-url` parameter.
 
@@ -87,7 +87,7 @@ echo ""
 printf $undetected_jars
 ```
 
-Here is a Windows batch script for scanning JARs in all subfolders, run from a `scanjar.bat` file.&#x20;
+Here is a Windows batch script for scanning JARs in all subfolders, run from a `scanjar.bat` file.
 
 To use this script, you must have installed the Snyk CLI.
 
@@ -101,4 +101,4 @@ for /R %WORKSPACE% %%f in (*.jar) do cmd /c snyk monitor --scan-unmanaged --remo
 
 Here is example in the Snyk UI of using these scripts with `REMOTE_REPO_URL` set to "econnect".
 
-<figure><img src="../../.gitbook/assets/untitled.png" alt="Result of scanning unmanaged JAR files"><figcaption><p>Result of scanning unmanaged JAR files</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/untitled (1).png" alt="Result of scanning unmanaged JAR files"><figcaption><p>Result of scanning unmanaged JAR files</p></figcaption></figure>

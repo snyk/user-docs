@@ -7,7 +7,7 @@ An example follows of setting up an Okta SAML application and connecting this to
     <figure><img src="../../../../.gitbook/assets/select-group-overview (1).png" alt="Select group overview"><figcaption><p>Select group overview</p></figcaption></figure>
 2.  Click on **SSO** and copy the values under **Entity ID** and **ACS URL** or leave the browser tab open for easy access.
 
-    <figure><img src="../../../../.gitbook/assets/2 (4).png" alt="Group Settings: SSO"><figcaption><p>Group Settings: SSO</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/2 (4) (1).png" alt="Group Settings: SSO"><figcaption><p>Group Settings: SSO</p></figcaption></figure>
 3.  Navigate to [Okta](https://www.okta.com/se/login/), open the application menu, and click on **Create App Integration.**
 
     <figure><img src="../../../../.gitbook/assets/1 (4).png" alt="Okta Applications main page"><figcaption><p>Okta Applications main page</p></figcaption></figure>
@@ -35,4 +35,4 @@ An example follows of setting up an Okta SAML application and connecting this to
     <figure><img src="../../../../.gitbook/assets/8 (3).png" alt="Snyk SSO step 2"><figcaption><p>Snyk SSO step 2</p></figcaption></figure>
 10. Scroll to step 3 and refer to [step 3](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/self-serve-single-sign-on-sso#step-3.-snyk-sso-settings) of the Snyk self serve SSO guide for how new users should be treated when signing in. Choose the option you would like to use: **Group member, Org collaborator** or **Org admin**. Finally, enter the **profile attributes** as you configured them in Okta, click **Save changes** and verify you can log in, either with the direct URL at the top of step 3 or by going to the [generic SSO login](https://app.snyk.io/login/sso).
 
-    <figure><img src="../../../../.gitbook/assets/9 (1).png" alt="Profile attributes"><figcaption><p>Profile attributes</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/9 (1) (1).png" alt="Profile attributes"><figcaption><p>Profile attributes</p></figcaption></figure>

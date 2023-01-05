@@ -34,6 +34,6 @@ Snyk Code has "advanced" mode that allows you to control how a scan is performed
 
 To perform the analysis manually, in the configuration of the extension you can enable Advanced Mode which enables you to control the scanning process:
 
-![Advanced Mode](<../../.gitbook/assets/run-analysis\_advanced-mode (1).png>)
+![Advanced Mode](../../.gitbook/assets/run-analysis\_advanced-mode.png)
 
 ##

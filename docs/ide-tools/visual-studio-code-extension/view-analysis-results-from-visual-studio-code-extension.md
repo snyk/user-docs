@@ -13,12 +13,12 @@ The icons have the following meaning:
 | ![](<../../.gitbook/assets/image (75) (1) (1) (1).png>) Critical severity                                                                                             | May allow attackers to access sensitive data and run code on your application.                                                               |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](<../../.gitbook/assets/image (10) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5) (1).png>) High severity | May allow attackers to access sensitive data on your application.                                                                            |
-| ![](<../../.gitbook/assets/image (116) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (6) (2).png>) Medium severity                  | May allow attackers under some conditions to access sensitive data on your application.                                                      |
+| ![](<../../.gitbook/assets/image (116) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (6).png>) Medium severity                      | May allow attackers under some conditions to access sensitive data on your application.                                                      |
 | ![](<../../.gitbook/assets/image (376).png>) Low severity                                                                                                             | The application may expose some data allowing vulnerability mapping, which can be used with other vulnerabilities to attack the application. |
 
 You can filter the issues by setting the severities you want to see using the `snyk.severity` setting. For example, set `"snyk.severity": { "critical": true, "high": true, "medium": true, "low": false }` to hide low severity issues. You can also apply the setting in the Settings UI.
 
-![Severity settings](<../../.gitbook/assets/image (234) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Severity settings](<../../.gitbook/assets/image (234) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Snyk Code editor window
 
@@ -47,7 +47,7 @@ You can find security vulnerabilities in the npm packages you import and see the
 
 Code inline vulnerability counts are also shown in your `package.json` file:
 
-![package.json file](../../.gitbook/assets/oss-editor-pjson.png)
+![package.json file](<../../.gitbook/assets/oss-editor-pjson (1).png>)
 
 Find security vulnerabilities in your JavaScript packages from well-known CDNs. The extension scans any HTML files in your projects and displays vulnerability information about the modules you include from your favorite CDN.
 
@@ -61,7 +61,7 @@ Find security vulnerabilities in your JavaScript packages from well-known CDNs. 
   * yastatic.net
   * ajax.aspnetcdn.com
 
-![Vulnerability from a CDN](../../.gitbook/assets/oss-editor-html.png)
+![Vulnerability from a CDN](<../../.gitbook/assets/oss-editor-html (1).png>)
 
 You can navigate to the most severe vulnerability by triggering the provided code actions. This opens a vulnerability window to show more details:
 

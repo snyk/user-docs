@@ -8,7 +8,7 @@ This way, you can prioritize and attend to the most important and risky vulnerab
 
 The filter appears as follows:
 
-![](<../../../.gitbook/assets/image (53) (2).png>)
+![](<../../../.gitbook/assets/image (53) (1).png>)
 
 These values are available:
 

@@ -67,7 +67,7 @@ We recommend that you set Snyk status checks to be mandatory for merging pull re
 
 5\. \[For the **Custom** option only] Activate the **Custom** option by moving the slider to **Enabled**:
 
-![](<../../.gitbook/assets/image (233) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (233) (1) (1) (1) (1) (1).png>)
 
 6\. From the **Fail conditions** drop-down list, select one of the following options:
 

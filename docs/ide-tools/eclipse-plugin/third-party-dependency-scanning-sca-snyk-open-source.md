@@ -10,7 +10,7 @@ In Eclipse plugin version 2.0.0 and later, Snyk is introducing a deeper integrat
 Currently the hover information is limited to JavaEditor and GenericEditor, which is the default editor for plugins like Wild Web Developer.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (303) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (303) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Third party dependency scanning results are **also available in the already existing Snyk Results panel**:
 

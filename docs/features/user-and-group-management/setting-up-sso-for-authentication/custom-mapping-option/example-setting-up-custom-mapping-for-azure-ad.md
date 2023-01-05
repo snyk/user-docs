@@ -37,17 +37,17 @@ Once you have set up Groups and users, follow these steps:
     <figure><img src="../../../../.gitbook/assets/Name-Claim-conditions-section (1).png" alt="Enter the Name and expand Claim conditions"><figcaption><p>Enter the Name and expand Claim conditions</p></figcaption></figure>
 6.  In the **Claim conditions**, set **User type** to **Members**.
 
-    <figure><img src="../../../../.gitbook/assets/User-type-to-members.png" alt="Set User type to Members"><figcaption><p>Set User type to Members</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 9.19.38 AM.png" alt="Set User type to Members"><figcaption><p>Set User type to Members</p></figcaption></figure>
 7.  Specify the scoped groups; in the example choose **Select groups**, search for SSO, and **Select** the groups found.\
     These are the security groups to which you are assigning one or more combinations of Org membership and user role.
 
-    <figure><img src="../../../../.gitbook/assets/scoped-groups.png" alt="Select the groups found"><figcaption><p>Select the groups found</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/select groups.png" alt="Select the groups found"><figcaption><p>Select the groups found</p></figcaption></figure>
 8.  In the **Claim conditions**, select **Attribute** as the **Source** and set the **Value** to the Snyk Org and user role slugs in the following format: `snyk-orgslug-role`\
     \`\`For more than one, separate by comma.\
     Do not include spaces or capital letter(s) in the Org and user role slugs.\
     Do not include double quotes as Azure AD automatically adds them.\\
 
-    <figure><img src="../../../../.gitbook/assets/attribute-as-source.png" alt="Set Attribute as the Source"><figcaption><p>Set Attribute as the Source</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 9.20.22 AM.png" alt="Set Attribute as the Source"><figcaption><p>Set Attribute as the Source</p></figcaption></figure>
 
 **Note:** Repeat the steps for each Claim condition.
 
@@ -70,7 +70,7 @@ The following are the prerequisites for this configuration type:
     Enable the app role.\
     When you are finished, select **Apply**.
 
-    <figure><img src="../../../../.gitbook/assets/image (2).png" alt="Create app role with details"><figcaption><p>Create app role with details</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (2).png" alt="Create app role with details"><figcaption><p>Create app role with details</p></figcaption></figure>
 4.  In Azure AD, select your Enterprise Application.
 
     <figure><img src="../../../../.gitbook/assets/image (3) (3) (1) (1).png" alt="Select Enterprise Application in Azure AD"><figcaption><p>Select Enterprise Application in Azure AD</p></figcaption></figure>

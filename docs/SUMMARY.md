@@ -1037,3 +1037,4 @@
         * [Review IaC artifacts in Snyk UI](more-info/getting-started/snyk-integrations/springone-workshop/snyk-iac-for-developers/review-iac-artifacts-in-snyk-ui.md)
       * [Workshop Wrap Up](more-info/getting-started/snyk-integrations/springone-workshop/additional-resources-and-next-steps.md)
 * [Error Catalog](more-info/error-catalog.md)
+* [Snyk Terms of Support and Services Glossary](more-info/snyk-terms-of-support-and-services-glossary.md)

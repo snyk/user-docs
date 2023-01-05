@@ -45,7 +45,7 @@ To install the Snyk App on your Bitbucket Cloud workspace, you must have **Admin
     <figure><img src="../../.gitbook/assets/bitbucket-cloud-permissions_10nov2022.png" alt=""><figcaption><p>Allow Bitbucket Cloud to access your Snyk Organization<br></p></figcaption></figure>
 
     After you allow access to the Snyk Organization, the Snyk **Organization Settings** page opens and confirms that you're connected to the Bitbucket Cloud App.\
-    ![](<../../.gitbook/assets/bb\_connected-28aug2022 (1).png>)
+    ![](../../.gitbook/assets/bb\_connected-28aug2022.png)
 
 Once Snyk is integrated with Bitbucket Cloud, you can see the new Snyk security tab in the repository page, and [import and explore the issues and vulnerabilities for your repository projects](../../getting-started/quickstart/import-a-project.md), directly in Bitbucket!
 
@@ -76,7 +76,7 @@ After you add them, Snyk scans the selected repositories for dependency files in
 
 The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/bbc-snyk_redo_21sept2022.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bbc-snyk_redo_21sept2022 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Bitbucket integration features
 
@@ -93,7 +93,7 @@ Snyk produces advanced [security reports](https://docs.snyk.io/features/reports/
 
 The example below presents a project-level security report.
 
-<figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022.png" alt=""><figcaption></figcaption></figure>
 
 Snyk scans your projects on either a daily or a weekly basis. When new vulnerabilities are found, Snyk notifies you by email and by opening [automated pull requests](https://docs.snyk.io/products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities) with fixes for your repositories.
 

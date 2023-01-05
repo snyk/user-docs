@@ -99,7 +99,7 @@ Once the Broker Client setup is completed successfully, the following message ap
 
 `{ ..., "msg":"successfully established a websocket connection to the broker server", ... }`
 
-<figure><img src="../../../../../../.gitbook/assets/Broker Client - Setup success message.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Broker Client - Setup success message (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
