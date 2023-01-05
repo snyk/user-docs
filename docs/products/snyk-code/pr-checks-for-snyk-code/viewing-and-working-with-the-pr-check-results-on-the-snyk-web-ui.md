@@ -32,7 +32,7 @@ The **Mark as successful** action does NOT ignore the issue, but only allows it 
 
 1\. On the **SAST check** page header, click the **Mark as successful in SCM** button on the right:
 
-<figure><img src="../../../.gitbook/assets/image (58) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (58) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\. On the confirmation message that appears, click **OK**:
 
@@ -58,6 +58,6 @@ You can return to your SCM directly from the Snyk Web UI.
 
 2\. On the **Security check** page, click the repository link in the **REPOSITORY** field:
 
-<figure><img src="../../../.gitbook/assets/image (4) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You are moved back to your SCM.

@@ -24,7 +24,7 @@ For each entry, the left icon shows the number of Snyk Projects in each entry, p
 
 When [setting up your GitHub integration](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration), you can choose whether Snyk can access public and private repositories, or public repositories only:
 
-![](<../../.gitbook/assets/image (82).png>)
+![](<../../.gitbook/assets/image (82) (1).png>)
 
 When you then import a Project, private repositories are identified with a “lock” symbol (<img src="../../.gitbook/assets/image (101) (1).png" alt="" data-size="line">) in the imported scan details:
 
@@ -84,7 +84,7 @@ For example, you can use Project settings to change scan frequency, setting how 
 
 Let’s go back to the results for your scan:
 
-![](<../../.gitbook/assets/image (167) (1).png>)
+![](<../../.gitbook/assets/image (167).png>)
 
 The scan shows you all vulnerabilities in all aspects of an application. Of course, it's unlikely that you are responsible for every entry in this list, but it's important to be aware of the full picture.
 

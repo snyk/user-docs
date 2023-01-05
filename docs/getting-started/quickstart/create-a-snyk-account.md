@@ -6,12 +6,10 @@ You will need a Snyk account to use Snyk functions.
 
 To create a Snyk account:
 
-1.  Go to [https://snyk.io/](https://snyk.io) and click **Start free** on the left of the page, or **Sign up**.\
-
+1.  Go to [https://snyk.io/](https://snyk.io) and click **Start free** on the left of the page, or **Sign up**.\\
 
     <figure><img src="../../.gitbook/assets/start-free_signup.png" alt=""><figcaption><p>Click to start free or sign up for a Snyk account</p></figcaption></figure>
-2.  Choose your preferred signup method.\
-
+2.  Choose your preferred signup method.\\
 
     <figure><img src="../../.gitbook/assets/signin_method_10nov2022.png" alt=""><figcaption></figcaption></figure>
 3. Create a new account as prompted. You now have a free Snyk account! Access your Snyk account at [https://app.snyk.io](https://app.snyk.io)
@@ -19,7 +17,7 @@ To create a Snyk account:
 ![Your free account is ready!](../../.gitbook/assets/new\_acct\_created-10nov2022.png)
 
 {% hint style="info" %}
-Different pricing plans are available, see [Plans](../../more-info/plans.md) for details.
+Different pricing plans are available, see [Plans](../../Snyk-processes/plans.md) for details.
 {% endhint %}
 
 ### What's next?

@@ -63,7 +63,7 @@ Upgrade and patch results appear similar to the following:
 
 ![](<../../../.gitbook/assets/image (17) (1).png>)
 
-![](<../../../.gitbook/assets/image (49) (2) (1).png>)
+![](<../../../.gitbook/assets/image (49) (2).png>)
 
 Patch recommendations with some and with all paths:
 

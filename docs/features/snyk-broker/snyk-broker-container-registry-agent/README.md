@@ -140,7 +140,7 @@ Catalog endpoint `https://<artifactory-host>/artifactory/api/docker/<artifactory
 
 #### **ECR**
 
-![A high-level architecture of the brokered ECR integration](<../../../.gitbook/assets/untitled (1) (2).png>)
+![A high-level architecture of the brokered ECR integration](<../../../.gitbook/assets/untitled (1) (2) (1).png>)
 
 **Required AWS Resource**
 
@@ -180,7 +180,7 @@ The above resources can be used as follows, so that a single Container Registry 
    * CR\_REGION=\<AWS Region of ECR>
    * CR\_EXTERNAL\_ID=\<Optional. An external ID found in the trust relationship condition>
 
-[Get more information about the brokered ECR setup](../../../more-info/getting-started/atlassian-integrations/atlassian/devops-pipeline-with-bitbucket-cloud-and-kubernetes/module-2-bitbucket-pipelines/configure-aws-ecr.md).
+[Get more information about the brokered ECR setup](../../../Snyk-processes/getting-started/atlassian-integrations/atlassian/devops-pipeline-with-bitbucket-cloud-and-kubernetes/module-2-bitbucket-pipelines/configure-aws-ecr.md).
 
 ## **Configuring and using system check**
 

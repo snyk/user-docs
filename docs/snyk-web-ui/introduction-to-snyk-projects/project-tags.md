@@ -4,7 +4,7 @@
 **Feature availability**\
 Project tags are available for Business and Enterprise plans. See [pricing plans](https://snyk.io/plans/) for details.
 
-This feature is not available for Business Plan trials. See [Plans](../../more-info/plans.md) for details.
+This feature is not available for Business Plan trials. See [Plans](../../Snyk-processes/plans.md) for details.
 {% endhint %}
 
 A tag is a key and value combination that lets you add additional custom metadata to Projects on the Project issues page.
@@ -29,8 +29,9 @@ The Group and Organization admins can perform all actions, while a Collaborator 
 
 To create a new tag for a Snyk Project:
 
-1.  On the Project issues page, click **Add a key/value...**\
-    ****
+1.  On the Project issues page, click **Add a key/value...**\\
+
+    ***
 
     <figure><img src="../../.gitbook/assets/projects-tags_20sept2022.png" alt=""><figcaption><p>Modifying Project tags</p></figcaption></figure>
 2. Add your new key and click **Enter**.

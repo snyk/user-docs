@@ -190,7 +190,7 @@ After opening a supported file, the Language Server should be started by Sublime
 
 ![Snyk Open Source findings displayed in Sublime Text](<../.gitbook/assets/image (5) (2) (1).png>)
 
-![Snyk Code findings displayed in Sublime Text](<../.gitbook/assets/image (488).png>)
+![Snyk Code findings displayed in Sublime Text](<../.gitbook/assets/image (488) (1).png>)
 
 ## Example Configuration for Neovim
 

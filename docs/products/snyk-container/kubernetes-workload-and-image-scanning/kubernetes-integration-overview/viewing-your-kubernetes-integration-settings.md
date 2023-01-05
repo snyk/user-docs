@@ -16,7 +16,7 @@ This feature is available in Business and Enterprise plans. See [pricing plans](
 
 4\. The **Integration ID** is created for the Kubernetes integration
 
-![](<../../../../.gitbook/assets/image (92) (1) (2).png>)
+![](<../../../../.gitbook/assets/image (92) (1).png>)
 
 5\. The **Integration ID** is needed during the Snyk Controller installation
 

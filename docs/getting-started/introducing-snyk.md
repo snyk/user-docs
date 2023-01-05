@@ -10,7 +10,7 @@ Developers now assemble applications with a combination of proprietary and open 
 
 A good security process secures each of these components where they are built and maintained. Snyk integrates into DevOps processes to work the with developers using the methods each prefers, while following and supporting industry best practices. Snyk integrates directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit.
 
-![](<../.gitbook/assets/image (70).png>)
+![](<../.gitbook/assets/image (70) (1).png>)
 
 ### Snyk products: Use Snyk in your workflow:
 
@@ -35,13 +35,13 @@ Running Snyk from the command line.
 
 ### How can Snyk work in my environment?
 
-[Snyk products](broken-reference) support multiple languages and formats:
+[Snyk products](broken-reference/) support multiple languages and formats:
 
 * **Snyk Open Source**: see [Open Source - Supported languages and package managers](../products/snyk-open-source/language-and-package-manager-support/).
 * **Snyk Code**: see [Snyk Code - Supported languages and frameworks](../products/snyk-code/snyk-code-language-and-framework-support.md).
 * **Snyk Container**: see [Supported operating system distributions.](../products/snyk-container/supported-operating-system-distributions.md)
-* **Snyk Infrastructure as Code**: [Snyk IaC ](../products/snyk-infrastructure-as-code/)supports configuration files for HashiCorp Terraform, AWS CloudFormation, Kubernetes, and Azure Resource Manager (ARM).&#x20;
-* &#x20;**Snyk Cloud:** [Snyk Cloud](../products/snyk-cloud/) supports scanning [Amazon Web Services resources](../products/snyk-cloud/supported-aws-resources-for-snyk-cloud.md) and [Google Cloud resources](../products/snyk-cloud/getting-started-with-snyk-cloud-google/).
+* **Snyk Infrastructure as Code**: [Snyk IaC ](../products/snyk-infrastructure-as-code/)supports configuration files for HashiCorp Terraform, AWS CloudFormation, Kubernetes, and Azure Resource Manager (ARM).
+* **Snyk Cloud:** [Snyk Cloud](../products/snyk-cloud/) supports scanning [Amazon Web Services resources](../products/snyk-cloud/supported-aws-resources-for-snyk-cloud.md) and [Google Cloud resources](../products/snyk-cloud/getting-started-with-snyk-cloud-google/).
 
 ### What can Snyk integrate with?
 
@@ -53,7 +53,7 @@ See [Snyk integrations](https://docs.snyk.io/integrations) for more details.
 
 Snyk has several [pricing plans](https://snyk.io/plans/) available, from free to Enterprise.
 
-See [Snyk Pricing Plans](../more-info/plans.md) for more details.
+See [Snyk Pricing Plans](../Snyk-processes/plans.md) for more details.
 
 ### What happens to my data?
 

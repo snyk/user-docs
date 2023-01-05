@@ -2,20 +2,20 @@
 
 ## Introduction
 
-There are multiple ways to [prioritize vulnerabilities](evaluating-and-prioritizing-vulnerabilities.md), one of which is to look for **reachable vulnerabilities**.&#x20;
+There are multiple ways to [prioritize vulnerabilities](evaluating-and-prioritizing-vulnerabilities.md), one of which is to look for **reachable vulnerabilities**.
 
 A reachable vulnerability has a path from your code to the vulnerable function in a dependency.
 
 By analyzing how your code uses open source dependencies, and also how the open source dependencies interact with each other, Snyk can provide powerful insight into which vulnerabilities are reachable:
 
-* Directly from your own code, _and also_&#x20;
+* Directly from your own code, _and also_
 * Indirectly via transitive dependencies
 
 ## How finding reachable vulnerabilities works
 
-First Snyk identifies the vulnerable functions associated with specific vulnerabilities.&#x20;
+First Snyk identifies the vulnerable functions associated with specific vulnerabilities.
 
-Next Snyk builds a call graph that is the union of the calls within the application and the calls within open source libraries scanned by Snyk. If a vulnerable function is reachable using this unified call graph from the application code, Snyk identifies the vulnerability as reachable.&#x20;
+Next Snyk builds a call graph that is the union of the calls within the application and the calls within open source libraries scanned by Snyk. If a vulnerable function is reachable using this unified call graph from the application code, Snyk identifies the vulnerability as reachable.
 
 Each vulnerability then receives a reachability status:
 
@@ -23,7 +23,7 @@ Each vulnerability then receives a reachability status:
 
 **No path found** - No path found from your code to vulnerable functions
 
-Note that when a "no path found" status is given, it should _not_ be inferred that the vulnerability is  definitely unreachable.&#x20;
+Note that when a "no path found" status is given, it should _not_ be inferred that the vulnerability is definitely unreachable.
 
 Producing a precise call graph may require that the analysis sometimes under-approximates the set of reachable functions.
 
@@ -33,16 +33,16 @@ Therefore, Snyk recommends that you use reachability as one signal in a broader 
 
 ## Supported languages and integrations
 
-Reachable vulnerabilities analysis is available for **Java** (Maven and Gradle) in the [supported versions](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven) using the **GitHub** integration.&#x20;
+Reachable vulnerabilities analysis is available for **Java** (Maven and Gradle) in the [supported versions](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven) using the **GitHub** integration.
 
-Reachable vulnerability analysis via the Snyk CLI, other Git integrations and other languages are not currently supported.&#x20;
+Reachable vulnerability analysis via the Snyk CLI, other Git integrations and other languages are not currently supported.
 
 ## Scanning for Reachable Vulnerabilities using Git Integrations
 
 {% hint style="info" %}
 To provide this feature, Snyk takes a temporary copy of your Git repository contents.
 
-For more information see [How Snyk handles your data](../../../more-info/how-snyk-handles-your-data.md).
+For more information see [How Snyk handles your data](../../../Snyk-processes/how-snyk-handles-your-data.md).
 {% endhint %}
 
 1. Set up your [GitHub integration](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration).

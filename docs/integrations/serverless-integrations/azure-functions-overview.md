@@ -101,7 +101,7 @@ In either case, you'll see a list of any available Function apps on the Azure ac
 
 As soon as you've added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Azure functions in your [project dashboard](https://app.snyk.io/projects). You'll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to fix:
 
-![](<../../.gitbook/assets/image (32) (1).png>)
+![](<../../.gitbook/assets/image (32) (1) (1).png>)
 
 Snyk will now continuously monitor each of those functions for known vulnerabilities. You can add more functions at any time.
 

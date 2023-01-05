@@ -14,7 +14,7 @@ The source repository is publicly available at this location:
 
 In Bitbucket, navigate to your workspace and import the repository so you can freely make changes by clicking on the "Create Repository" button in your Repositories view.
 
-![](<../../../../../../.gitbook/assets/image (332) (1) (1).png>)
+![](<../../../../../../.gitbook/assets/image (332) (1).png>)
 
 Next, you'll be presented with a screen to select a workspace and other details. In this screen, click on the **Import repository** link.
 

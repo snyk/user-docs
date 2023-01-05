@@ -40,7 +40,7 @@ The following information is displayed:
   * a specific binary or by OS packages (for binaries/packages containing issues)
   * Dockerfile instructions - if you attach your Dockerfile, then you can filter to view issues associated only with the base image, or to view Dockerfile-related advice (user instruction), or both
 
-![](<../../../.gitbook/assets/image (71) (1) (1).png>)
+![](<../../../.gitbook/assets/image (71) (1).png>)
 
 {% hint style="info" %}
 **Note**\
