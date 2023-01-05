@@ -54,7 +54,7 @@ To disable notifications for all the users in an Org ahead of your import, desel
 
 Go to the **Projects** page in the Snyk UI, select **Add projects**, select the repos to import to Snyk, and click **Add selected repositories**.
 
-![](<../../.gitbook/assets/image (2) (4) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (2) (4) (1) (1) (1) (1) (1).png>)
 
 * Snyk starts scanning the selected repos for dependency files (for example, **package.json**) in the entire directory tree and imports these files as projects.
 * Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.

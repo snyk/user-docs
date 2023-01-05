@@ -29,13 +29,13 @@ For the purpose of this workshop, we'll pick the minor change for the **Open a f
 
 Click on that button now to start the process. The automated process starts by showing you a screen to confirm your choice:
 
-![](<../../../../../../.gitbook/assets/image (359) (1).png>)
+![](<../../../../../../.gitbook/assets/image (359).png>)
 
 Click on the Open a Fix PR button to confirm the change.
 
 Next what happens is you are taken to Bitbucket Cloud. This is helpful because it is the shared environment for you and your team to manage your open PRs. The screen snippet below shows some of the PR details as populated by Snyk for your team to review as part of your PR process.
 
-![](<../../../../../../.gitbook/assets/image (330) (1) (1).png>)
+![](<../../../../../../.gitbook/assets/image (330) (1).png>)
 
 Below this information is the code diff your team should easily recognize. This is the fix your developers _knew_ they could make, and Snyk did it for them.
 

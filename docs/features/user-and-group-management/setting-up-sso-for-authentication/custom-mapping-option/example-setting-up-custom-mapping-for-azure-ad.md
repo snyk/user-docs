@@ -37,17 +37,17 @@ Once you have set up Groups and users, follow these steps:
     <figure><img src="../../../../.gitbook/assets/Name-Claim-conditions-section (1).png" alt="Enter the Name and expand Claim conditions"><figcaption><p>Enter the Name and expand Claim conditions</p></figcaption></figure>
 6.  In the **Claim conditions**, set **User type** to **Members**.
 
-    <figure><img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 9.19.38 AM.png" alt="Set User type to Members"><figcaption><p>Set User type to Members</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/User-type-to-members.png" alt="Set User type to Members"><figcaption><p>Set User type to Members</p></figcaption></figure>
 7.  Specify the scoped groups; in the example choose **Select groups**, search for SSO, and **Select** the groups found.\
     These are the security groups to which you are assigning one or more combinations of Org membership and user role.
 
-    <figure><img src="../../../../.gitbook/assets/select groups.png" alt="Select the groups found"><figcaption><p>Select the groups found</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/scoped-groups.png" alt="Select the groups found"><figcaption><p>Select the groups found</p></figcaption></figure>
 8.  In the **Claim conditions**, select **Attribute** as the **Source** and set the **Value** to the Snyk Org and user role slugs in the following format: `snyk-orgslug-role`\
     \`\`For more than one, separate by comma.\
     Do not include spaces or capital letter(s) in the Org and user role slugs.\
     Do not include double quotes as Azure AD automatically adds them.\\
 
-    <figure><img src="../../../../.gitbook/assets/Screen Shot 2022-06-08 at 9.20.22 AM.png" alt="Set Attribute as the Source"><figcaption><p>Set Attribute as the Source</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/attribute-as-source.png" alt="Set Attribute as the Source"><figcaption><p>Set Attribute as the Source</p></figcaption></figure>
 
 **Note:** Repeat the steps for each Claim condition.
 
@@ -63,7 +63,7 @@ The following are the prerequisites for this configuration type:
     <figure><img src="../../../../.gitbook/assets/image (5).png" alt="App registration, select name of Enterprise Application"><figcaption><p>App registration, select name of Enterprise Application</p></figcaption></figure>
 2.  Select **App roles**, then **Create app role**.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt="Select App roles, Create app role"><figcaption><p>Select App roles, Create app role</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1).png" alt="Select App roles, Create app role"><figcaption><p>Select App roles, Create app role</p></figcaption></figure>
 3.  Create an app role with details as needed.\
     Select the **Allowed member types**: **Users/Groups**, **Applications**, or **Both**.\
     Enter the **Value** and **Description** for the selected type.\
@@ -77,7 +77,7 @@ The following are the prerequisites for this configuration type:
 5.  Select **Users and groups**; then **Add user/group**.\
     Search and select the users and groups to add.
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (2).png" alt="Select Users and groups, Add user/group"><figcaption><p>Select Users and groups, Add user/group</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4).png" alt="Select Users and groups, Add user/group"><figcaption><p>Select Users and groups, Add user/group</p></figcaption></figure>
 6.  Select **Users and groups**; from the dropdown, select a role; and select **Assign**.
 
     <figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>

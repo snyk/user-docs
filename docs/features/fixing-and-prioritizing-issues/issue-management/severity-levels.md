@@ -6,12 +6,12 @@ A severity level is applied to a vulnerability, to indicate the risk for that vu
 
 Severity levels are key factors in [vulnerability assessment](https://snyk.io/learn/vulnerability-assessment/), and can be:
 
-| Severity                                                                         | Severity level | Description                                                                                                                                |
-| -------------------------------------------------------------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| <img src="../../../.gitbook/assets/image (145).png" alt="" data-size="line">     | **Critical**   | This may allow attackers to access sensitive data and run code on your application                                                         |
-| <img src="../../../.gitbook/assets/image (168).png" alt="" data-size="original"> | **High**       | This may allow attackers to access sensitive data in your application                                                                      |
-| ![](<../../../.gitbook/assets/image (427).png>)                                  | **Medium**     | Under some conditions, this may allow attackers to access sensitive data on your application                                               |
-| ![](<../../../.gitbook/assets/image (422).png>)                                  | **Low**        | Application may expose some data that allows vulnerability mapping, which can be used with other vulnerabilities to attack the application |
+| Severity                                                                             | Severity level | Description                                                                                                                                |
+| ------------------------------------------------------------------------------------ | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| <img src="../../../.gitbook/assets/image (145).png" alt="" data-size="line">         | **Critical**   | This may allow attackers to access sensitive data and run code on your application                                                         |
+| <img src="../../../.gitbook/assets/image (168) (1).png" alt="" data-size="original"> | **High**       | This may allow attackers to access sensitive data in your application                                                                      |
+| ![](<../../../.gitbook/assets/image (294).png>)                                      | **Medium**     | Under some conditions, this may allow attackers to access sensitive data on your application                                               |
+| ![](<../../../.gitbook/assets/image (303).png>)                                      | **Low**        | Application may expose some data that allows vulnerability mapping, which can be used with other vulnerabilities to attack the application |
 
 {% hint style="info" %}
 Severity levels also apply to license issues. See [Licenses overview](https://docs.snyk.io/snyk-open-source/licenses).
@@ -65,7 +65,7 @@ For example, in the **Pending tasks** section of the Dashboard:
 
 Associated with your [Projects](broken-reference/):
 
-![](<../../../.gitbook/assets/image (43) (2).png>)
+![](<../../../.gitbook/assets/image (43) (1).png>)
 
 And for each vulnerability in a project:
 

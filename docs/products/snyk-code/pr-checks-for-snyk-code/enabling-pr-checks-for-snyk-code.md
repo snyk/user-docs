@@ -60,7 +60,7 @@ By default, the Settings on the Project level override the Settings on the Organ
 
 3\. On the Project **Settings** page, click the relevant **integration** tab on left menu:
 
-<figure><img src="../../../.gitbook/assets/image (56).png" alt="Click the associated integration tab in the left menu"><figcaption><p>Click the associated integration tab in the left menu</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt="Click the associated integration tab in the left menu"><figcaption><p>Click the associated integration tab in the left menu</p></figcaption></figure>
 
 4\. On the **integration** page > **Snyk Code for pull requests** section, select one of the following:
 

@@ -22,7 +22,7 @@ To do this, in [your Integrations page](https://app.snyk.io/integrations), navig
 
 This will take you to a page where you'll be prompted to enter your Azure service principal credentials:
 
-![](<../../.gitbook/assets/image (29) (1).png>)
+![](<../../.gitbook/assets/image (29) (2).png>)
 
 Instructions for how to generate and locate your Azure service principal credentials are below.
 
@@ -69,7 +69,7 @@ The first is on your integration settings page, where you'll see your current in
 
 You can also check the status directly on the Azure Functions integration settings page (found by clicking "**Edit settings**" on the integration settings page shown above). If you've entered credentials, you'll see a box indicating whether or not Snyk is able to correctly connect to Azure:
 
-![](<../../.gitbook/assets/image (31) (1).png>)
+![](<../../.gitbook/assets/image (31) (2).png>)
 
 If you are unable to connect, re-enter your account credentials to verify that they are correct:
 
@@ -101,7 +101,7 @@ In either case, you'll see a list of any available Function apps on the Azure ac
 
 As soon as you've added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Azure functions in your [project dashboard](https://app.snyk.io/projects). You'll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to fix:
 
-![](<../../.gitbook/assets/image (32) (1) (1).png>)
+![](<../../.gitbook/assets/image (32) (1).png>)
 
 Snyk will now continuously monitor each of those functions for known vulnerabilities. You can add more functions at any time.
 

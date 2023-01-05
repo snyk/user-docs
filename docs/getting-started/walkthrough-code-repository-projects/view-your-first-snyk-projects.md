@@ -16,9 +16,9 @@ In the Snyk Web UI, you see information specific for your **Organization** (such
 
 Open the [Snyk Web UI](../../snyk-web-ui/), navigate to your **Projects** page, and see your imported repositories (or **targets** if importing non-code information). For example:
 
-![](<../../.gitbook/assets/image (129).png>)
+![](<../../.gitbook/assets/image (163).png>)
 
-For each entry, the left icon shows the number of Snyk Projects in each entry, plus the Git-based repository the projects are imported from. For example <img src="../../.gitbook/assets/image (30).png" alt="" data-size="line">.
+For each entry, the left icon shows the number of Snyk Projects in each entry, plus the Git-based repository the projects are imported from. For example <img src="../../.gitbook/assets/image (323).png" alt="" data-size="line">.
 
 #### Private / public repositories: the lock symbol
 
@@ -61,7 +61,7 @@ Snyk scans different parts of this lifecycle, with different icons and entries s
 
 | Example                                                                                         | Description                                                                                                                                                                                                     |
 | ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="../../.gitbook/assets/image (389).png" alt="" data-size="line">                       | Your own code analysis results, scanned by[ Snyk Code](../../products/snyk-code/).                                                                                                                              |
+| <img src="../../.gitbook/assets/image (183).png" alt="" data-size="line">                       | Your own code analysis results, scanned by[ Snyk Code](../../products/snyk-code/).                                                                                                                              |
 | <img src="../../.gitbook/assets/Screenshot 2022-07-20 at 11.14.02.png" alt="" data-size="line"> | Your open source libraries, scanned by [Snyk Open Source](../../products/snyk-open-source/), displaying each detected manifest, such as **pom.xml**, **package.json**, and other manifests for these libraries. |
 | <img src="../../.gitbook/assets/image (332).png" alt="" data-size="line">                       | Container results, scanned by [Snyk Container](../../products/snyk-container/), for items built into a container, such as a Docker file.                                                                        |
 | <img src="../../.gitbook/assets/image (39).png" alt="" data-size="original">                    | Kubernetes deployment files, terraform and other IaC files, scanned by [Snyk Infrastructure as Code (IaC)](../../products/snyk-infrastructure-as-code/).                                                        |
@@ -74,7 +74,7 @@ Other files and types can be displayed; see [View project information](https://d
 
 Snyk treats each item in this list as a separate **Project**.
 
-This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (144).png>)) to define how that Project is scanned:
+This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (27) (1) (2) (1) (1).png>)) to define how that Project is scanned:
 
 ![](<../../.gitbook/assets/image (379).png>)
 
@@ -84,7 +84,7 @@ For example, you can use Project settings to change scan frequency, setting how 
 
 Let’s go back to the results for your scan:
 
-![](<../../.gitbook/assets/image (167).png>)
+![](<../../.gitbook/assets/image (167) (2).png>)
 
 The scan shows you all vulnerabilities in all aspects of an application. Of course, it's unlikely that you are responsible for every entry in this list, but it's important to be aware of the full picture.
 
