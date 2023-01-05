@@ -2,10 +2,10 @@
 
 {% hint style="info" %}
 **Recap**\
-****You have created the Google service account for Snyk Cloud. Now you can create and scan a Snyk Cloud Environment.
+You have created the Google service account for Snyk Cloud. Now you can create and scan a Snyk Cloud Environment.
 {% endhint %}
 
-To send a request to the Snyk API to create and scan a Snyk Cloud Environment, you must provide the **Google service account's email address** and your **project ID** in the API request body.
+To send a request to the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/environments) to create and scan a Snyk Cloud Environment, you must provide the **Google service account's email address** and your **project ID** in the API request body.
 
 ## Send the Snyk API request
 
@@ -13,7 +13,7 @@ Send a request to the Snyk API in the format below to create the Snyk Cloud Envi
 
 ```
 curl -X POST \
-'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments?version=2022-04-13~experimental' \
+'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments?version=2022-12-21~beta' \
 -H 'Authorization: token YOUR-API-TOKEN' \
 -H 'Content-Type:application/vnd.api+json' -d '{
   "data": {
@@ -70,7 +70,7 @@ The response is a JSON document containing details about your newly created Snyk
           "type": "organization"
         },
         "links": {
-          "related": "/orgs/d70c1768-5675-0000-1234-abcd1234abcd?version=2022-04-13~experimental"
+          "related": "/orgs/d70c1768-5675-0000-1234-abcd1234abcd?version=2022-12-21~beta"
         }
       }
     }

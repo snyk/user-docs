@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Recap**\
-****You have downloaded the Terraform or Amazon Web Services (AWS) CloudFormation template declaring the Identity & Access Management (IAM) role for Snyk Cloud. Now you need to provision the infrastructure.
+You have downloaded the Terraform or Amazon Web Services (AWS) CloudFormation template declaring the Identity & Access Management (IAM) role for Snyk Cloud. Now you need to provision the infrastructure.
 {% endhint %}
 
 The process to create the Snyk IAM role is the same whether you're using the [Snyk Web UI](step-1-download-iam-role-iac-template-web-ui.md) or [Snyk API](../snyk-cloud-for-aws-api/step-1-download-iam-role-iac-template.md) to onboard your AWS account.
@@ -78,7 +78,7 @@ If the output says `"CREATE_COMPLETE"`, AWS has finished creating your role.
 
 1. Log in to the [AWS Management Console](https://console.aws.amazon.com).
 2. Navigate to [CloudFormation](https://console.aws.amazon.com/cloudformation).
-3. Select the **Create stack** button:&#x20;
+3. Select the **Create stack** button:
 
 <figure><img src="../../../../.gitbook/assets/snyk-cloud-cloudformation-create-stacks.png" alt="Select the Create stack button in the AWS Management Console"><figcaption><p>Select the Create stack button in the AWS Management Console</p></figcaption></figure>
 

@@ -22,11 +22,11 @@ To find a Snyk Cloud Environment ID using the [Web UI](https://app.snyk.io/):
 
 ## API
 
-To find a Snyk Cloud Environment ID using the API, send a request to the `/cloud/environments` endpoint in the below format:
+To find a Snyk Cloud Environment ID using the API, send a request to the [`/cloud/environments`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/cloud/environments) endpoint in the below format:
 
 ```
 curl -X GET \
-  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments?version=2022-04-13~experimental' \
+  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments?version=2022-12-21~beta' \
   -H 'Authorization: token YOUR-API-TOKEN'
 ```
 
@@ -50,6 +50,6 @@ You can filter the list of environments using query parameters to make it easier
 
 ```
 curl -X GET \
-  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments?kind=google&version=2022-04-13~experimental' \
+  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments?kind=google&version=2022-12-21~beta' \
   -H 'Authorization: token YOUR-API-TOKEN'
 ```

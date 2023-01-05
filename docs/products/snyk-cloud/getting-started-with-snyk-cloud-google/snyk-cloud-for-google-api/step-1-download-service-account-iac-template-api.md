@@ -8,14 +8,14 @@ You will use this IaC template to provision the role in [Step 2: Create the Goog
 
 ## Retrieve the IaC template
 
-To retrieve the IaC template from the Snyk API, you need the API token for a Snyk Organization-level [service account](https://docs.snyk.io/features/user-and-group-management/structure-account-for-high-application-performance/service-accounts#set-up-a-service-account) with an Org Admin role.
+To retrieve the IaC template from the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/permissions), you need the API token for a Snyk Organization-level [service account](https://docs.snyk.io/features/user-and-group-management/structure-account-for-high-application-performance/service-accounts#set-up-a-service-account) with an Org Admin role.
 
 1. In the [Snyk Web UI](https://app.snyk.io/), navigate to **Settings (cog icon) > General > Organization ID** and copy your Organization ID.
 2. Send a request to the Snyk API in the below format:
 
 ```
 curl -X POST \
-'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/permissions?version=2022-04-13~experimental' \
+'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/permissions?version=2022-12-21~beta' \
 -H 'Authorization: token YOUR-API-TOKEN' \
 -H 'Content-Type:application/vnd.api+json' -d '{
     "data": {
@@ -56,7 +56,7 @@ The `data.attributes.data` field in the output above is an escaped JSON string c
 
 Before you can use the template to provision the resources, you need to unescape the JSON. This can be accomplished in either of the following ways:
 
-* [Use `jq`](step-1-download-service-account-iac-template-api.md#use-jq)``
+* [Use `jq`](step-1-download-service-account-iac-template-api.md#use-jq)
 * [Transform the content manually](step-1-download-service-account-iac-template-api.md#transform-the-content-manually)
 
 ### Use `jq`

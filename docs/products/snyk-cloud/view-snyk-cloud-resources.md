@@ -4,11 +4,11 @@ Snyk Cloud allows you to view attributes for cloud resources in an Organization.
 
 ## View all cloud resources
 
-To list all cloud resources in an organization, send a request to the `/cloud/resources` endpoint in the below format:
+To list all cloud resources in an organization, send a request to the [`/cloud/resources`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/cloud/resources) endpoint in the below format:
 
 ```
 curl -X GET \
-  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/resources?version=2022-04-13~experimental' \
+  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/resources?version=2022-12-21~beta' \
   -H 'Authorization: token YOUR-API-TOKEN'
 ```
 
@@ -58,7 +58,7 @@ Snyk returns a JSON document containing information about all cloud resources in
             "type": "environment"
           },
           "links": {
-            "related": "/orgs/d70c1768-5675-4f44-0000-1234abcd1234/cloud/environments?id=ef5d85de-fb4f-4c42-1234-000000000000&version=2022-04-13~experimental"
+            "related": "/orgs/d70c1768-5675-4f44-0000-1234abcd1234/cloud/environments?id=ef5d85de-fb4f-4c42-1234-000000000000&version=2022-12-21~beta"
           }
         },
         "organization": {
@@ -67,7 +67,7 @@ Snyk returns a JSON document containing information about all cloud resources in
             "type": "organization"
           },
           "links": {
-            "related": "/orgs/d70c1768-5675-4f44-0000-1234abcd1234?version=2022-04-13~experimental"
+            "related": "/orgs/d70c1768-5675-4f44-0000-1234abcd1234?version=2022-12-21~beta"
           }
         },
         "scan": {
@@ -76,7 +76,7 @@ Snyk returns a JSON document containing information about all cloud resources in
             "type": "scan"
           },
           "links": {
-            "related": "/orgs/d70c1768-5675-4f44-0000-1234abcd1234/cloud/scans?id=a7fa2167-58a8-4ac5-9999-0987dcba6543&version=2022-04-13~experimental"
+            "related": "/orgs/d70c1768-5675-4f44-0000-1234abcd1234/cloud/scans?id=a7fa2167-58a8-4ac5-9999-0987dcba6543&version=2022-12-21~beta"
           }
         }
       }
@@ -105,7 +105,7 @@ For example, to return resources from a single environment, add `environment_id=
 
 ```
 curl -X GET \
-  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/resources?environment_id=YOUR-ENVIRONMENT-ID&version=2022-04-13~experimental' \
+  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/resources?environment_id=YOUR-ENVIRONMENT-ID&version=2022-12-21~beta' \
   -H 'Authorization: token YOUR-API-TOKEN'
 ```
 
@@ -113,7 +113,7 @@ Some parameters allow you to specify multiple values. To return resources in Ama
 
 ```
 curl -X GET \
-  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/resources?location=us-east-1,us-east-2&version=2022-04-13~experimental' \
+  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/resources?location=us-east-1,us-east-2&version=2022-12-21~beta' \
   -H 'Authorization: token YOUR-API-TOKEN'
 ```
 
@@ -121,9 +121,11 @@ You can combine query parameters by using the `&` symbol. To return only 5 AWS S
 
 ```
 curl -X GET \
-  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/resources?resource_type=aws_s3_bucket&limit=5&version=2022-04-13~experimental' \
+  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/resources?resource_type=aws_s3_bucket&limit=5&version=2022-12-21~beta' \
   -H 'Authorization: token YOUR-API-TOKEN'
 ```
+
+For a list of supported parameters, see the [API documentation](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/cloud/resources).
 
 ## View details for a single resource
 
@@ -131,7 +133,7 @@ To view details for a single resource through the Snyk API, send a request in th
 
 ```
 curl -X GET \
-  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/resources?id=YOUR-RESOURCE-ID&version=2022-04-13~experimental' \
+  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/resources?id=YOUR-RESOURCE-ID&version=2022-12-21~beta' \
   -H 'Authorization: token YOUR-API-TOKEN'
 ```
 

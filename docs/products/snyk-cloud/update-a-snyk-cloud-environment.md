@@ -18,8 +18,7 @@ To update an environment using the [Snyk Web UI](https://app.snyk.io):
 
 1. Navigate to your Organization's **Settings (cog icon) > Cloud environments.**
 2. In the **Actions** column, select the `...` icon for the environment you want to update.
-3.  Select **Update**.\
-
+3.  Select **Update**.
 
     <figure><img src="../../.gitbook/assets/snyk-cloud-update-env-ui.png" alt="Select the ... icon to update an environment."><figcaption><p>Select the ... icon to update an environment.</p></figcaption></figure>
 4.  In the **General** section, enter the updated environment name and/or credentials.
@@ -48,7 +47,7 @@ First, find the ID of the Snyk Cloud Environment you want to update. Send a requ
 
 ```
 curl -X GET \
-  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments?version=2022-04-13~experimental' \
+  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments?version=2022-12-21~beta' \
   -H 'Authorization: token YOUR-API-TOKEN'
 ```
 
@@ -68,13 +67,13 @@ In the output, look for the `data.id` property. In the shortened example below, 
 
 ### Update the environment
 
-To update an environment, send a request to the `/cloud/environments/{environment_id}` endpoint in the format below according to cloud provider.
+To update an environment, send a request to the [`/cloud/environments/{environment_id}`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#patch-/orgs/-org\_id-/cloud/environments/-environment\_id-) endpoint in the format below according to cloud provider.
 
 #### AWS
 
 ```
 curl -X PATCH \
-'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments/YOUR-ENVIRONMENT-ID?version=2022-04-13~experimental' \
+'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments/YOUR-ENVIRONMENT-ID?version=2022-12-21~beta' \
 -H 'Authorization: token YOUR-API-TOKEN' \
 -H "Content-Type:application/vnd.api+json"  -d '{
   "data": {
@@ -94,7 +93,7 @@ curl -X PATCH \
 
 ```
 curl -X PATCH \
-'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments/YOUR-ENVIRONMENT-ID?version=2022-04-13~experimental' \
+'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments/YOUR-ENVIRONMENT-ID?version=2022-12-21~beta' \
 -H 'Authorization: token YOUR-API-TOKEN' \
 -H "Content-Type:application/vnd.api+json"  -d '{
   "data": {
@@ -142,7 +141,7 @@ Snyk returns a JSON document containing the updated environment details. For exa
           "type": "organization"
         },
         "links": {
-          "related": "/orgs/d70c1768-5675-0000-1234-abcd1234abcd?version=2022-04-13~experimental"
+          "related": "/orgs/d70c1768-5675-0000-1234-abcd1234abcd?version=2022-12-21~beta"
         }
       }
     }

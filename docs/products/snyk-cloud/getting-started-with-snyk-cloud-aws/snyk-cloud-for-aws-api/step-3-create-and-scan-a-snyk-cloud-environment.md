@@ -2,10 +2,10 @@
 
 {% hint style="info" %}
 **Recap**\
-****You have created the Snyk Cloud IAM role. Now you can create and scan a Snyk Cloud Environment.
+You have created the Snyk Cloud IAM role. Now you can create and scan a Snyk Cloud Environment.
 {% endhint %}
 
-To send a request to the Snyk API to create and scan a Snyk Cloud Environment, you must provide the role’s Amazon Resource Name (ARN) in the API request body.
+To send a request to the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/environments) to create and scan a Snyk Cloud Environment, you must provide the role’s Amazon Resource Name (ARN) in the API request body.
 
 ## Find the role ARN
 
@@ -17,7 +17,7 @@ After you have the role ARN, send a request to the Snyk API in the format below 
 
 ```
 curl -X POST \
-'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments?version=2022-04-13~experimental' \
+'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments?version=2022-12-21~beta' \
 -H 'Authorization: token YOUR-API-TOKEN' \
 -H 'Content-Type:application/vnd.api+json' -d '{
   "data": {
@@ -56,7 +56,8 @@ The response is a JSON document containing details about your newly created Snyk
       },
       "native_id": "123412341234",
       "properties": {
-        "account_id": "123412341234"
+        "account_id": "123412341234",
+        "account_alias": "example"
       },
       "kind": "aws",
       "revision": 1,
@@ -71,7 +72,7 @@ The response is a JSON document containing details about your newly created Snyk
           "type": "organization"
         },
         "links": {
-          "related": "/orgs/d70c1768-5675-0000-1234-abcd1234abcd?version=2022-04-13~experimental"
+          "related": "/orgs/d70c1768-5675-0000-1234-abcd1234abcd?version=2022-12-21~beta"
         }
       }
     }
@@ -89,7 +90,7 @@ Optionally, see if the scan is finished by sending another API request in the fo
 
 ```
 curl -X GET \
-  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments?id=YOUR-ENVIRONMENT-ID&version=2022-04-13~experimental' \
+  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments?id=YOUR-ENVIRONMENT-ID&version=2022-12-21~beta' \
   -H 'Authorization: token YOUR-API-TOKEN'
 ```
 
@@ -99,4 +100,4 @@ To re-scan an environment, see [Scan a Snyk Cloud Environment](../../scan-a-snyk
 
 ## What's next?
 
-You can now view misconfiguration issues in the Snyk Web UI. See [Snyk cloud issues](../../snyk-cloud-issues/) for more information.
+You can now view misconfiguration issues in the Snyk Web UI. See [Snyk Cloud issues](../../snyk-cloud-issues/) for more information.

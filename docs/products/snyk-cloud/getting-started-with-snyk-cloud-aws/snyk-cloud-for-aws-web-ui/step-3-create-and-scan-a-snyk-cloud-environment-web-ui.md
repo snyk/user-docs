@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Recap**\
-****You have created the Snyk Cloud IAM role. Now you can create and scan a Snyk Cloud Environment.
+You have created the Snyk Cloud IAM role. Now you can create and scan a Snyk Cloud Environment.
 {% endhint %}
 
 To create and scan a Snyk Cloud Environment, you must provide the role’s Amazon Resource Name (ARN). Then you can finish onboarding the environment.

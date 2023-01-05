@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Recap**\
-****You have created the Google service account for Snyk Cloud. Now you can create and scan a Snyk Cloud Environment.
+You have created the Google service account for Snyk Cloud. Now you can create and scan a Snyk Cloud Environment.
 {% endhint %}
 
 To create and scan a Snyk Cloud Environment for Google, you must provide the **Google service account's email address** and your **project ID**.

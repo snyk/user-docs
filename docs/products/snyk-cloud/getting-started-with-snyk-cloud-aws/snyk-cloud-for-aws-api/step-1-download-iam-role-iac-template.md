@@ -1,6 +1,6 @@
 # Step 1: Download IAM role IaC template (API)
 
-Before you can create a Snyk Cloud Environment, you must download an Infrastructure as Code (IaC) template declaring a read-only **Identity & Access Management** (IAM) role that Snyk can assume to scan the configuration of resources in your Amazon Web Services (AWS) account.&#x20;
+Before you can create a Snyk Cloud Environment, you must download an Infrastructure as Code (IaC) template declaring a read-only **Identity & Access Management** (IAM) role that Snyk can assume to scan the configuration of resources in your Amazon Web Services (AWS) account.
 
 You will use this IaC template to provision the role in [Step 2: Create the Snyk IAM role](../snyk-cloud-for-aws-web-ui/step-2-create-the-snyk-iam-role.md).
 
@@ -8,14 +8,14 @@ You can choose the template format: either [Terraform HCL](https://www.terraform
 
 ## Retrieve the IaC template
 
-To retrieve the IaC template from the Snyk API, you need the API token for an Organization-level [service account](https://docs.snyk.io/features/user-and-group-management/structure-account-for-high-application-performance/service-accounts#set-up-a-service-account) with an Org Admin role.
+To retrieve the IaC template from the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/permissions), you need the API token for an Organization-level [service account](https://docs.snyk.io/features/user-and-group-management/structure-account-for-high-application-performance/service-accounts#set-up-a-service-account) with an Org Admin role.
 
 1. In the [Snyk Web UI](https://app.snyk.io), navigate to **Settings (cog icon) > General > Organization ID** and copy your Organization ID.
 2. Send a request to the Snyk API in the below format, replacing `INPUT-TYPE` with `tf` for Terraform or `cf` for CloudFormation:
 
 ```
 curl -X POST \
-'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/permissions?version=2022-04-13~experimental' \
+'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/permissions?version=2022-12-21~beta' \
 -H 'Authorization: token YOUR-API-TOKEN' \
 -H 'Content-Type:application/vnd.api+json' -d '{
     "data": {

@@ -10,7 +10,7 @@ Unlike a Snyk [Project](broken-reference/), an environment contains scannable en
 
 A Snyk Cloud Environment also includes integration settings for a cloud provider. For example, each environment can represent an integration with a different AWS account.
 
-Use the `/cloud/environments` Snyk API endpoint to retrieve a list of all environments and optionally filter by attribute, such as name and scan status.
+Use the [`/cloud/environments`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/cloud/environments) Snyk API endpoint to retrieve a list of all environments and optionally filter by attribute, such as name and scan status.
 
 Currently supported providers:
 
@@ -23,7 +23,7 @@ A **resource** is a cloud infrastructure entity such as an AWS S3 bucket, Identi
 
 On each scan, Snyk records the configuration attributes of each resource in an environment.
 
-You can use the `/cloud/resources` Snyk API endpoint to retrieve a list of all resources for an organization and optionally filter by an attribute such as environment ID, resource tag, or resource type.
+You can use the [`/cloud/resources`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/cloud/resources) Snyk API endpoint to retrieve a list of all resources for an organization and optionally filter by an attribute such as environment ID, resource ID, or resource type.
 
 For a list of supported resource types, see the following:
 

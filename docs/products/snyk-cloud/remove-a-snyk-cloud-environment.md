@@ -8,11 +8,11 @@ In the Snyk Web UI, you can remove a cloud environment by navigating to your Org
 
 ## API
 
-To remove an environment using the Snyk API, send a request to the `/cloud/environments` endpoint in the below format. You can find the environment ID using the method shown in [Find the environment ID](scan-a-snyk-cloud-environment.md#find-the-environment-id).
+To remove an environment using the Snyk API, send a request to the [`/cloud/environments`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#delete-/orgs/-org\_id-/cloud/environments/-environment\_id-) endpoint in the below format. You can find the environment ID using the method shown in [Find the environment ID](scan-a-snyk-cloud-environment.md#find-the-environment-id).
 
 ```
 curl -X DELETE \
-  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments/YOUR-ENVIRONMENT-ID?version=2022-04-13~experimental' \
+  'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments/YOUR-ENVIRONMENT-ID?version=2022-12-21~beta' \
   -H 'Authorization: token YOUR-SERVICE-ACCOUNT-TOKEN'
 ```
 
