@@ -57,7 +57,7 @@ The issue cards in a project can be sorted based on their priority score or seve
 
 You can perform the following actions on the issue card:
 
-* \*\*\*\*[**Ignore the issue**](../../features/manage-issues/issue-management/ignore-issues.md): if you don't need to take action on an issue, or it doesn't need to appear on your reports, you can ignore it.
+* \*\*\*\*[**Ignore the issue**](../../features/fixing-and-prioritizing-issues/issue-management/ignore-issues.md): if you don't need to take action on an issue, or it doesn't need to appear on your reports, you can ignore it.
 * [**Create a Jira ticket**](https://docs.snyk.io/integrations/untitled-3/jira): if you have the [Jira integration](https://docs.snyk.io/integrations/untitled-3/jira), you can link your issue boards to Snyk and create Jira tickets directly from the project details page to fix vulnerabilities.
 * [**Fix the vulnerability**](https://docs.snyk.io/snyk-open-source/open-source-basics/fixing-vulnerabilities): if a fix is available, you can fix individual vulnerabilities.
 * **View more information about the CWE, CVE, and CVSS scores**: navigate from the issue card to further information about these scores.

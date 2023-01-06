@@ -16,7 +16,7 @@ If an organization is assigned to the policy you are currently viewing, that pol
 
 ![](../../../.gitbook/assets/mceclip2-6-.png)
 
-If you are moving an organization from one policy to another, 2 pills will appear to show which policy is currently applied \(yellow\) and which policy you will be applying \(grey\)
+If you are moving an organization from one policy to another, 2 pills will appear to show which policy is currently applied (yellow) and which policy you will be applying (grey)
 
 ![](../../../.gitbook/assets/mceclip1-16-.png)
 
@@ -26,7 +26,7 @@ Uncheck the desired organization check box from the organization selector panel.
 
 ![](../../../.gitbook/assets/untitled-2-.png)
 
-The unchecked organization\(s\) will now revert back to the default policy.
+The unchecked organization(s) will now revert back to the default policy.
 
 ## Add an organization to the default policy:
 
@@ -35,6 +35,5 @@ The unchecked organization\(s\) will now revert back to the default policy.
 
 ## Remove an organization from the default policy
 
-1. Assign the relevant organization to a new policy 
+1. Assign the relevant organization to a new policy
 2. The organization will automatically disassociate from the [default policy](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/shared-policies-overview) and move to the newly selected policy
-

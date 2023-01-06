@@ -6,8 +6,8 @@ Use this section to understand the core process of fixing vulnerabilities and li
 
 Snyk helps you to fix vulnerabilities, by:
 
-* [Upgrading the package](upgrading-package-versions-fix-vulnerabilities.md) to a vulnerability-free version.&#x20;
-* [Patching the vulnerability](snyk-patches-to-fix-vulnerabilities.md).&#x20;
+* [Upgrading the package](upgrading-package-versions-fix-vulnerabilities.md) to a vulnerability-free version.
+* [Patching the vulnerability](snyk-patches-to-fix-vulnerabilities.md).
 
 #### Applying fixes
 
