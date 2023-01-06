@@ -1,7 +1,7 @@
 # Fix vulnerabilities with Snyk Open Source
 
 {% hint style="info" %}
-See [fix-your-vulnerabilities.md](../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md "mention") for more details of general fix functions.
+See [fix-your-vulnerabilities.md](../../../features/manage-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md "mention") for more details of general fix functions.
 {% endhint %}
 
 Snyk provides actionable fix advice for vulnerabilities in your open source libraries, using:
@@ -9,8 +9,8 @@ Snyk provides actionable fix advice for vulnerabilities in your open source libr
 * [Automatic pull / merge requests (PRs / MRs)](./#automatic-pull-merge-requests).
 * [Manual pull / merge requests](./#manual-pull-merge-requests-for-a-project-code).
 
-{% content-ref url="../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md" %}
-[what-languages-do-we-support-fix-pull-requests-or-merge-requests.md](../../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md)
+{% content-ref url="../../../features/manage-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md" %}
+[what-languages-do-we-support-fix-pull-requests-or-merge-requests.md](../../../features/manage-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md)
 {% endcontent-ref %}
 
 ### **Automatic pull / merge requests**
@@ -35,9 +35,9 @@ To generate a PR / MR directly from your project, using the Snyk UI:
 
 ### Snyk SCM webhooks
 
-Snyk adds Source Control Manager (SCM) webhooks to your imported repositories for the relevant [GitHub and Bitbucket](../../../integrations/git-repository-scm-integrations/) integrations. &#x20;
+Snyk adds Source Control Manager (SCM) webhooks to your imported repositories for the relevant [GitHub and Bitbucket](../../../integrations/git-repository-scm-integrations/) integrations.
 
-Snyk uses these webhooks  to:
+Snyk uses these webhooks to:
 
 * Track the state of Snyk pull requests (when PRs are created, updated triggered, merged, and so on)
 * Send push events to trigger PR checks

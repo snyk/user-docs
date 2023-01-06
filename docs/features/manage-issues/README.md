@@ -1,4 +1,4 @@
-# Fixing and prioritizing issues
+# Manage issues
 
 Snyk goes beyond finding vulnerabilities and license compliance issues. Our priority scoring, reporting, and policy setting capabilities help you prioritize and fix the most critical issues first.
 
@@ -18,7 +18,7 @@ Control prioritization at a granular level by applying [project attributes](../.
 
 ### Organize issues
 
-Snyk [reporting](broken-reference/) keeps you up to date on the status of the issues, dependencies, and licenses you need, while letting you [ignore the issues](issue-management/ignore-issues.md) you don’t.
+Snyk [reporting](../fixing-and-prioritizing-issues/broken-reference/) keeps you up to date on the status of the issues, dependencies, and licenses you need, while letting you [ignore the issues](issue-management/ignore-issues.md) you don’t.
 
 ![](<../../.gitbook/assets/image (312) (1).png>)
 
