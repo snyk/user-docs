@@ -40,7 +40,7 @@
     * [View project settings](snyk-web-ui/introduction-to-snyk-projects/view-project-settings.md)
     * [View project history](snyk-web-ui/introduction-to-snyk-projects/view-project-history.md)
     * [Issue card information](snyk-web-ui/introduction-to-snyk-projects/issue-card-information.md)
-    * [Maximum number of projects in an organization](snyk-web-ui/introduction-to-snyk-projects/maximum-number-of-projects-in-an-organsation.md)
+    * [Maximum number of Projects in an Organization](snyk-web-ui/introduction-to-snyk-projects/maximum-number-of-projects-in-an-organsation.md)
 * [Snyk CLI](snyk-cli/README.md)
   * [Getting started with the CLI](snyk-cli/getting-started-with-the-cli.md)
   * [Code execution warning for Snyk CLI](snyk-cli/code-execution-warning-for-snyk-cli.md)

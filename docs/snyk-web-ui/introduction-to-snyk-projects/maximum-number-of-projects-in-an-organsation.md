@@ -1,6 +1,6 @@
-# Maximum number of projects in an organization
+# Maximum number of Projects in an Organization
 
-Depending on the type of plan you have with Snyk you will have a limit on the number of projects you can have in a single organization.
+Depending on the type of plan you have with Snyk you have a different limit on the number of Projects you can have in a single Organization.
 
 | Plan       | Number of Projects |
 | ---------- | ------------------ |
@@ -9,19 +9,19 @@ Depending on the type of plan you have with Snyk you will have a limit on the nu
 | Business   | 25,000             |
 | Enterprise | 25,000             |
 
-### How will you know when you have reached the limit?
+**How will you know when you have reached the limit?**
 
-When you reach that limit, Snyk will stop importing more projects into the organization.
+When you reach that limit, Snyk stops importing more Projects into the Organization.
 
 You will know you have hit this limit when you see this banner in the Snyk UI:
 
-<figure><img src="../../.gitbook/assets/Maximum number of projects.png" alt="Screenshot of an alert for maximum project import on the Snyk Projects listing page"><figcaption><p>A banner will display at the top of the Project page telling you how many projects you have over the limit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Maximum number of projects.png" alt=".Banner at top of Projects listing showing how many Projects you have over the limit"><figcaption><p>Banner at top of Projects listing showing how many Projects you have over the limit</p></figcaption></figure>
 
-In the CLI, your `snyk monitor` command will return the following error
+In the CLI, the `snyk monitor` command returns the following error
 
 > `Maximum number of projects reached for this organization. You cannot import more projects.`
 
-In the API, your import request will return this error:
+In the API, an import request returns this error:
 
 ```
 "data":{
@@ -31,4 +31,4 @@ In the API, your import request will return this error:
     },
 ```
 
-This limit is in place to protect your experience with Snyk. There are no restrictions on the number of organizations you can create. If you are getting close to these limits, you can create more organizations and split your projects across them.
+This limit is in place to protect your experience with Snyk. There are no restrictions on the number of Organizations you can create. If you are getting close to these limits, you can create more Organizations and split your Projects across them.
