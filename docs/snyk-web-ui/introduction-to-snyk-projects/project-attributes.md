@@ -1,14 +1,14 @@
 # Project attributes
 
-Project attributes are static and non-configurable fields that allow you to add additional metadata (also known as _values_) to a project. Attributes have a predefined list of values you can select from. Values can be assigned and removed from attributes and can be used to group, prioritize, and filter projects.
+Project attributes are static and non-configurable fields that allow you to add attribute values to a Project. Attributes have a predefined list of values you can select from. Attribute values can be applied to and removed from Projects and can be used to group, prioritize, and filter Projects.
 
 ## **Available attributes and their values**
 
-In the **Projects** menu, use **Group by none** (ungrouped) for better Project visibility and to apply [tags](project-tags.md) and filtering attributes at the Project level. ****&#x20;
+On the **Projects** listing, use **Group by none** (ungrouped) for optimal Project visibility and to apply [tags](project-tags.md) and filtering attributes at the Project level.
 
-<figure><img src="../../.gitbook/assets/project-attributes_20sept2022.png" alt=""><figcaption><p>Project level filtering attributes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/project-attributes_20sept2022.png" alt="Project level filtering attributes"><figcaption><p>Project level filtering attributes</p></figcaption></figure>
 
-The available Project attributes are summarized in the following table.&#x20;
+The available Project attributes are summarized in the following table.
 
 | Attribute            | Attribute options                                                                                                                                           |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -17,44 +17,37 @@ The available Project attributes are summarized in the following table.&#x20;
 | Lifecycle stage      | <ul><li>Production</li><li>Development</li><li>Sandbox</li></ul>                                                                                            |
 
 {% hint style="info" %}
-Filtering is available in projects by their values from [Snyk's REST API](../../snyk-api-info/).
+You can apply attributes to Projects and remove attributes using the Snyk API v1 endpoint [Applying attributes](https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes).
 
-Assigning and removing attribute values can be done in [Snyk's CLI](../../snyk-cli/) or the API.&#x20;
+You can also apply and remove attributes using Snyk CLI options, `--project-business-criticality`, `--project-environment`, and -`-project-lifecycle`. Refer to the [CLI commands and options summary](../../snyk-cli/cli-reference.md).
 {% endhint %}
 
-## **Assigning values to attributes**
+## **Apply attribute value to Project**
 
-1. On the project page, click the **+** icon below the attribute you want to assign the value
-2. Select a value from the list available
+1. On the Project detail page, click the **+** icon below the attribute for which you want to apply a value to the Project.
+2. Select a value from the list.
 
-![](../../.gitbook/assets/gs1.png)
+<figure><img src="../../.gitbook/assets/gs1.png" alt="Select an attribute value to apply to the Project"><figcaption><p>Select an attribute value to apply to the Project</p></figcaption></figure>
 
-After you have assigned a value to the attribute, it appears on the project listing page. Each attribute can have multiple values assigned to it, and you can assign values to multiple attributes.
+After you have selected a value for the attribute, it appears on the Project detail page. You can apply multiple values for an attribute and multiple attributes to a Project.
 
-![](../../.gitbook/assets/gs2.png)
+<figure><img src="../../.gitbook/assets/gs2.png" alt="Project detail page showing attribute values applied"><figcaption><p>Project detail page showing attribute values applied</p></figcaption></figure>
 
-## **Removing values from attributes**
+## **Remove attribute value**
 
-1. Select the attribute you want to remove a value from.
-2. Click the **x** for the value.
+1. Select the attribute with an applied value that you want to remove from the Project.
+2. Click the **x** for the value you want to remove.
 
-![](../../.gitbook/assets/gs3.png)
+<figure><img src="../../.gitbook/assets/gs3.png" alt="Removing Frontend attribute value"><figcaption><p>Removing Frontend attribute value</p></figcaption></figure>
 
-The value is removed from the attribute.
+The attribute value is removed from the Project.
 
-![](../../.gitbook/assets/gs4.png)
+<figure><img src="../../.gitbook/assets/gs4.png" alt="Project detail showing only Mobile attribute value"><figcaption><p>Project detail showing only Mobile attribute value</p></figcaption></figure>
 
-## **Filtering values in the project listing page**
+## **Filter by attribute values on the Projects listing page**
 
-1. On the left of the project listing page, select the values for the attributes that you want to filter projects by.
-2. When you filter by multiple values on a single attribute, you return projects that have been assigned one or more of the values in the filter.
-3. When you filter by multiple attributes, you return projects which have been assigned values of both attributes in the filter.
-4. Different filtering options are available depending on the grouping option you choose.
-   * Filters for **Group by target**:
-     * Show - with/without issues
-     * Integrations
-   * Filters for **Group by none** (ungrouped):
-     * Show - with/without issues, active/inactive projects
-     * Integrations, Tags, Business Criticality, Environment, Lifecycle
+On the left of the **Projects** listing page, when Projects are grouped by none (ungrouped), select the values for the attributes that you want to filter Projects by.
 
-<figure><img src="../../.gitbook/assets/Project attributes.png" alt="Screenshot of filters in the Snyk Projects listing page"><figcaption></figcaption></figure>
+When you filter by multiple values on a single attribute, Snyk returns a list of Projects to which one or more of the values in the filter have been applied.
+
+When you filter by multiple attributes, Snyk returns a list of Projects to which values of both attributes have been applied.
