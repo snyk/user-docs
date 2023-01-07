@@ -32,7 +32,7 @@ Use **Sort by** (pull down on the far right) to sort the **Projects** listing by
 
 ## Origin
 
-The Origin defines the Target ecosystem, such as CLI, GitHub, or Kubernetes. Origins are a property of [Targets](./#targets) and appear in the **Projects** listing as an icon next to the Target name.
+The Origin defines the Target ecosystem, such as CLI, GitHub, or Kubernetes. Origins are a property of Targets (see preceding section) and appear in the **Projects** listing as an icon next to the Target name.
 
 <figure><img src="../../.gitbook/assets/targets-origin_20sept2022.png" alt="Origin icon next to the Target name"><figcaption><p>Origin icon next to the Target name</p></figcaption></figure>
 
@@ -83,7 +83,7 @@ Use **Group by none** (ungrouped) for better Project visibility and to apply [fi
 The Targetfile is the specific item to scan in a Target, such as a `pom.xml` file in a GitHub repo.
 
 {% hint style="info" %}
-[Snyk Code](https://docs.snyk.io/snyk-code) scans do not use Targetfiles.
+[Snyk Code](../../products/snyk-code/) scans do not use Targetfiles.
 {% endhint %}
 
 ## Type
