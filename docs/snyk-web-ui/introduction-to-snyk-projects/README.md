@@ -2,37 +2,37 @@
 
 ## Introduction
 
-Snyk Project information appears in the **Projects** menu in the Snyk dashboard. The filters that are visible depend on the grouping option you choose.
+Snyk Project information appears in the **Projects** listing, which you can display from the menu on the Snyk dashboard. The filters that are visible (checkboxes on the left) depend on the grouping option you choose (pulldown on the right).
 
 {% hint style="info" %}
-After filters have been applied to the project listing page, you can bookmark the URL and share it with other users in the Organization. This allows all users to see the same view of the page.
+After filters have been applied to the Project listing page, you can bookmark the URL and share it with other users in the Organization. This allows all users to see the same view of the page.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/projects-breadcrumbs_02oct2022.png" alt="Projects listing in the Snyk Web Ui"><figcaption><p>Projects listing in the Snyk Web Ui</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/projects-breadcrumbs_02oct2022.png" alt="Snyk Projects listing grouped by Target"><figcaption><p>Snyk Projects listing grouped by Target</p></figcaption></figure>
 
 Snyk Projects concepts include **Target**, **Origin**, **Project, Targetfile**, and **Type**.
 
 ## Target
 
-Projects are held in a Target. Targets are displayed in the Snyk Web UI. You can also find Targets using the Snyk REST API endpoint [Get targets by org ID](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/targets).
+Projects are held in a Target. A Target represents an external resource Snyk has scanned: a code repository, a Kubernetes workload, or other scannable resource external to Snyk.&#x20;
 
-A Target represents an external resource Snyk has scanned: a code repository, a Kubernetes workload, or other scannable resource external to Snyk. Targets appear in the **Projects** menu on the Snyk dashboard when you select **Group by target**.
+When you select **Group by target** Snyk Targets appear in the **Projects** listing. You can also find Targets using the Snyk REST API endpoint [Get targets by org ID](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/targets).
+
+<figure><img src="../../.gitbook/assets/targets-projects_20sept2022 (1).png" alt="Snyk Target and Projects in that Target"><figcaption><p>Snyk Target and Projects in that Target</p></figcaption></figure>
 
 Each Snyk Project is associated with a parent Target. One Target may include many Projects. The structure of the Target depends on the Origin.
 
-The grouping option controls whether your filtering attributes are applied at the Target or at the Project level. **Group by none** (ungrouped) lets you apply [tags](project-tags.md) and [filtering attributes at the Project level](project-attributes.md) to the individual Projects.
-
-<figure><img src="../../.gitbook/assets/targets-projects_20sept2022 (1).png" alt="Group by target applies filtering attributes at the Target level"><figcaption><p>Group by target applies filtering attributes at the Target level</p></figcaption></figure>
+The grouping option controls whether the filtering attributes are applied at the Target or at the Project level. **Group by none** (ungrouped) lets you apply [tags](project-tags.md) and [filtering attributes at the Project level](project-attributes.md) to the individual Projects.
 
 Snyk provides both pagination to improve the page loading time for Projects page requests and filtering, which is particularly helpful if you have hundreds of thousands of Projects to scan.
 
-Use **Sort by** to list your Projects or Targets by severity, by how recently they were imported, or in alphabetical order.
+Use **Sort by** (pull down on the far right) to sort the **Projects** listing by severity, by how recently the Projects were imported, or in alphabetical order.
 
-<figure><img src="../../.gitbook/assets/projects_group-sort_20sept2022.png" alt="Sort by severity"><figcaption><p>Sort by severity</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/projects_group-sort_20sept2022.png" alt="Sorting attributes available when grouping by Target"><figcaption><p>Sorting attributes available when grouping by Target</p></figcaption></figure>
 
 ## Origin
 
-The Origin defines the Target ecosystem, such as CLI, GitHub, or Kubernetes. Origins are a property of [Targets](./#targets) and appear in the Projects menu as an icon next to the Target name.
+The Origin defines the Target ecosystem, such as CLI, GitHub, or Kubernetes. Origins are a property of [Targets](./#targets) and appear in the **Projects** listing as an icon next to the Target name.
 
 <figure><img src="../../.gitbook/assets/targets-origin_20sept2022.png" alt="Origin icon next to the Target name"><figcaption><p>Origin icon next to the Target name</p></figcaption></figure>
 
@@ -72,7 +72,7 @@ Possible Origin values are:
 
 A Snyk Project defines the items, such as manifest files, that Snyk scans for a given Target, with configuration information defining how to run that scan.
 
-Projects appear in the **Projects** menu on the Snyk dashboard. You can also find Projects using the Snyk REST API endpoint [Get projects by org ID](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/projects).
+Projects appear in the **Projects** listing. You can also find Projects using the Snyk REST API endpoint [Get projects by org ID](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/projects).
 
 Use **Group by none** (ungrouped) for better Project visibility and to apply [filtering attributes at the Project level](project-attributes.md).
 
