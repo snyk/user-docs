@@ -19,7 +19,7 @@ The available Project attributes are summarized in the following table.
 {% hint style="info" %}
 You can apply attributes to Projects and remove attributes using the Snyk API v1 endpoint [Applying attributes](https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes).
 
-You can also apply and remove attributes using Snyk CLI options, `--project-business-criticality`, `--project-environment`, and -`-project-lifecycle`. Refer to the [CLI commands and options summary](../../snyk-cli/cli-reference.md).
+You can also apply and remove attributes using Snyk CLI options, `--project-business-criticality`, `--project-environment`, and -`-project-lifecycle`. Refer to the [CLI commands and options summary](../../snyk-cli/cli-reference.md) for the commands that support these options.
 {% endhint %}
 
 ## **Apply attribute value to Project**
@@ -36,7 +36,7 @@ After you have selected a value for the attribute, it appears on the Project det
 ## **Remove attribute value**
 
 1. Select the attribute with an applied value that you want to remove from the Project.
-2. Click the **x** for the value you want to remove.
+2. Click the **x** icon for the value you want to remove.
 
 <figure><img src="../../.gitbook/assets/gs3.png" alt="Removing Frontend attribute value"><figcaption><p>Removing Frontend attribute value</p></figcaption></figure>
 

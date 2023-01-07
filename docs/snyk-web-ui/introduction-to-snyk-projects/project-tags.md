@@ -7,64 +7,60 @@ Project tags are available for Business and Enterprise plans. See [pricing plans
 This feature is not available for Business Plan trials. See [Plans](../../Snyk-processes/plans.md) for details.
 {% endhint %}
 
-A tag is a key and value combination that lets you add additional custom metadata to Projects on the Project issues page.
+A tag is a key and value combination that lets you add additional custom metadata to Projects.
+
+You can create tags, add them to Projects, and remove tags on the Project details page in the Snyk Web UI. You can also filter Projects using tags on the Projects listing page,
+
+The Group and Organization admins can perform all actions, while Collaborators can perform the actions if they are in an Org which is part of the Group.
+
+You can use the [Snyk API v1 Project tags endpoints](https://snyk.docs.apiary.io/#reference/projects/project-tags/add-a-tag-to-a-project) to add and remove tags.
+
+You can also add and remove tags using the Snyk CLI option  `--project-tags`. See the [CLI commands and options summary](../../snyk-cli/cli-reference.md). for the commands that support this option.
+
+The following conditions apply to Project tags:
 
 * Keys are limited to 30 characters
-* Values are limited to 50 characters
+* Values are limited to 50 characters.
 * Both keys and values allow only alphanumerics and the following characters **`-`**, **`_`**
-* You can create 1000 unique key and value combinations per group, and apply 10 unique tags per Project
-* Reusing a key and value combination does not add to the count
+* You can create 1000 unique key and value combinations per group, and apply 10 unique tags per Project.
+* Reusing a key and value combination does not add to the count.
 
-## Tag actions
-
-Using the Snyk Web UI and [Snyk API](https://snyk.docs.apiary.io/#reference/projects/project-tags/add-a-tag-to-a-project), you can perform the following actions:
-
-* Create tags for Projects
-* Assign and remove tags from Projects
-* Filter Projects on the Project listing page
-
-The Group and Organization admins can perform all actions, while a Collaborator can perform the actions if they are in an Org which is part of a Group.
-
-## **Creating tags**
+## **Create tags**
 
 To create a new tag for a Snyk Project:
 
-1.  On the Project issues page, click **Add a key/value...**\\
+1.  On the Project details page, under **TAGS** click **Add a key/value...**\\
 
     ***
 
-    <figure><img src="../../.gitbook/assets/projects-tags_20sept2022.png" alt=""><figcaption><p>Modifying Project tags</p></figcaption></figure>
-2. Add your new key and click **Enter**.
+    <figure><img src="../../.gitbook/assets/projects-tags_20sept2022.png" alt="Choose option to create a Project tag"><figcaption><p>Choose option to create a Project tag</p></figcaption></figure>
+2. Add the new key and click **Enter**.
 3. Add a new value and click **Enter**.
 
-You have created a new tag. When a new tag is created, it is automatically assigned to the Project it was created in. The tag can also be used for any other Project in your group.
+You have created a new tag. When a new tag is created, it is automatically applied to the Project it was created in. The tag can also be used for any other Project in the Group.
 
-![Tagging a project](../../.gitbook/assets/screenshot\_2020-09-29\_at\_17.58.47.png)
+<figure><img src="../../.gitbook/assets/screenshot_2020-09-29_at_17.58.47.png" alt="Project details page showing tag applied"><figcaption><p>Project details page showing tag applied</p></figcaption></figure>
 
-You can apply multiple values to the same key.
+You can apply multiple Project tag values to the same Project tag key.
 
-![Multiple tags added to the same key](../../.gitbook/assets/screenshot\_2020-09-29\_at\_18.04.30.png)
+<figure><img src="../../.gitbook/assets/screenshot_2020-09-29_at_18.04.30.png" alt="Multiple Project tag values applied to the same key"><figcaption><p>Multiple Project tag values applied to the same key</p></figcaption></figure>
 
-## **Assigning and removing tags from a Project**
+## **Apply and remove tags**
 
-If a tag exists in your group, you can apply it to any Snyk Project.
+If a tag exists in your Group, you can apply it to any Snyk Project.
 
-1. Click the **⊕** (add icon) in the tags section.
-2. You can either select a key from the list of recently used keys or type out the key which is part of the tag you want to assign to your Project.
-3. You can either select a value from the list of recently used values or type out the value which is part of the tag you want to assign to your Project.
-4. After you select the value, the tag is assigned to your Project.
-5. To remove a tag from a Project, click the **x** (remove icon) for the tag.
+1. Click the **+** icon under TAGS.
+2. You can either select a key from the list of recently used keys or type out the key for the tag you want to apply to the Project.
+3. You can either select a value from the list of recently used values or type out the key value you want to apply to the Project.
+4. After you select the value, the tag is applied to your Project.
+5. To remove a tag from a Project, click the **x** for the tag.
 
-![](../../.gitbook/assets/screenshot\_2020-09-29\_at\_18.14.44.png)
+<figure><img src="../../.gitbook/assets/screenshot_2020-09-29_at_18.14.44.png" alt="Select a key value for a tag"><figcaption><p>Select a key value for a tag</p></figcaption></figure>
 
-## Filter Project by tags
+## Filter Projects listing by tags
 
-You can filter Projects by tags in the **Group by none** (ungrouped) view.
+When  **Group by none** (ungrouped) is applied to the Projects listing page, you can filter the list by tags using the option in the menu.
 
-<figure><img src="../../.gitbook/assets/project_apply-tags_20sept2022.png" alt=""><figcaption></figcaption></figure>
+There is a filter by tag autocomplete. This is intentionally limited to a small number of results. If your tag is not displayed, enter more characters for the tag until it rises to the top of the results.
 
-<figure><img src="../../.gitbook/assets/Project tags.png" alt="Screenshot highlighting the Project Tags filter in the Snyk Projects Listing page"><figcaption></figcaption></figure>
-
-{% hint style="success" %}
-**Filter by tag autocomplete**: this field is intentionally limited to a small number of results. If your tag isn't displayed, enter more characters for the tag until it rises to the top of the results.
-{% endhint %}
+<figure><img src="../../.gitbook/assets/Project tags.png" alt="Filter by tag option"><figcaption><p>Filter by tag option</p></figcaption></figure>
