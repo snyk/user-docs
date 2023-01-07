@@ -36,7 +36,7 @@
     * [View Project information](snyk-web-ui/introduction-to-snyk-projects/view-project-information.md)
     * [Project attributes](snyk-web-ui/introduction-to-snyk-projects/project-attributes.md)
     * [Project tags](snyk-web-ui/introduction-to-snyk-projects/project-tags.md)
-    * [View project issues, fixes, and dependencies](snyk-web-ui/introduction-to-snyk-projects/view-project-issues-remediations-and-dependencies.md)
+    * [View Project issues, fixes, and dependencies](snyk-web-ui/introduction-to-snyk-projects/view-project-issues-remediations-and-dependencies.md)
     * [View project settings](snyk-web-ui/introduction-to-snyk-projects/view-project-settings.md)
     * [View project history](snyk-web-ui/introduction-to-snyk-projects/view-project-history.md)
     * [Issue card information](snyk-web-ui/introduction-to-snyk-projects/issue-card-information.md)

@@ -1,56 +1,56 @@
-# View project issues, fixes, and dependencies
+# View Project issues, fixes, and dependencies
 
-For your project, you can view the following displays:
+The following Project information is available on the Snyk Web UI:
 
-* **Issues:** the number of vulnerabilities and license issues.
-* **Fixes**: fix advice.
-* **Dependencies**: the total number of direct and transitive (nested) dependencies.
+* **Issues:** the number of vulnerabilities and license issues
+* **Fixes**: fix advice
+* **Dependencies**: the total number of direct and transitive (nested) dependencies
 
-### View issues
+## View issues
 
-Below the project summary details, you can see vulnerabilities and licensing issues, in the **Issues** tab:
+The Project details page displays Issue cards on the Issues tab. The information provided includes vulnerabilities and, for Open Source Project, license issues.
 
-![](<../../.gitbook/assets/Screenshot 2021-10-19 at 11.49.30.png>)
+<figure><img src="../../.gitbook/assets/Screenshot 2021-10-19 at 11.49.30.png" alt="Project details Issues tab and filters"><figcaption><p>Project details Issues tab and filters</p></figcaption></figure>
 
-Use the left-hand area to filter and search issues. Click the checkboxes to filter issues by **Issue type**, **Severity**, **Exploit Maturity**, and **Status**. You can also edit the **Priority Score** slider to change the range displayed (by default this is set from 0 - 1000).
+Use the filters in the panel to the left to narrow the search for issues. Select the checkboxes to filter issues by **Issue type**, **Severity**, **Exploit Maturity**, **Fixability**, and **Status**. You can also edit the **Priority Score** slider to change the range displayed; the default is 0 to 1000.
 
-Issues details appear in the main area, sorted by priority score. See **View Issue Details.**
+Issue details are shown on Issue cards in the main area, sorted by priority score. For details see [Issue card information](issue-card-information.md).
 
-#### Fix issues (Fix PR)
+## Fix issues (Fix PR)
 
-Snyk provides powerful features to fix issues identified during scanning, as shown in the **Open a fix PR** section of the **Issues** and **Fixes** tabs:
+Snyk provides powerful features to fix issues identified during scanning. Use the Fix option on the Issues or Fixes tab.
 
-![](../../.gitbook/assets/image27.png)
+<figure><img src="../../.gitbook/assets/image27.png" alt="ix option on Fixes tab"><figcaption><p>Fix option on Fixes tab</p></figcaption></figure>
 
-You can also select to fix a specific issue, clicking **Fix this vulnerability** on a specific issue:
+You can also select **Fix this vulnerability** for a specific issue:
 
-![](../../.gitbook/assets/image26.png)
+<figure><img src="../../.gitbook/assets/image26.png" alt="Fix this vulnerability for an issue"><figcaption><p>Fix this vulnerability for an issue</p></figcaption></figure>
 
 See [Fix vulnerabilities with Snyk Open Source](../../products/snyk-open-source/open-source-basics/) for an overview.\
-See [Fixing and prioritizing issues](https://docs.snyk.io/fixing-and-prioritizing-issues) for more details.
+See [Manage issues](../../features/manage-issues/) for more details.
 
-#### View issue details
+## View issue details
 
-For each issue, this display shows details about the vulnerability including its priority score (see [Prioritizing Snyk issues](https://docs.snyk.io/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score)):
+For each issue, details about the vulnerability are displayed including its [priority score](../../features/fixing-and-prioritizing-issues/issue-management/priority-score.md).
 
 ![](../../.gitbook/assets/image12.png)
 
-Click **More about this issue** to view detailed information about the vulnerability using [Snyk's vulnerability database](https://snyk.io/product/vulnerability-database/), giving you a deeper insight into the issue, including its CVSS score:
+Click **More about this issue** to view detailed information about the vulnerability from [Snyk's vulnerability database](https://snyk.io/product/vulnerability-database/), which provides a deeper insight into the issue, including its CVSS score:
 
-![](../../.gitbook/assets/image15.png)
+<figure><img src="../../.gitbook/assets/image15.png" alt="More information from Snyk Vulnerability database"><figcaption><p>More information from Snyk Vulnerability database</p></figcaption></figure>
 
-### View fixes
+## View fixes
 
-Snyk's knowledge of the transitive dependencies in your project make it possible for Snyk to offer fix advice, in the **Fixes** tab:
+Snyk's knowledge of the transitive dependencies in your Project make it possible for Snyk to offer fix advice, in the **Fixes** tab:
 
-![](<../../.gitbook/assets/Screenshot 2021-10-19 at 11.57.07.png>)
+<figure><img src="../../.gitbook/assets/Screenshot 2021-10-19 at 11.57.07.png" alt="Issue details Fixes tab"><figcaption><p>Issue details Fixes tab</p></figcaption></figure>
 
-See [Fixing vulnerabilities](broken-reference/) for details.
+See [Fix your vulnerabilities](../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) for details.
 
-### View dependencies
+## View dependencies
 
-Snyk uses the package manager of your application to build the dependency tree and display it in the **dependency** tab of the project view. This shows which components introduce a vulnerability, to show how the dependency was introduced to the application:
+Snyk uses the package manager for your application to build the dependency tree and display it in the **Dependencies** tab of the Project issues detail page. This tab shows which components introduce a vulnerability, which indicates how the dependency was introduced to the application.
 
-![](../../.gitbook/assets/image23.png)
+The example that follows shows a vulnerability based on the transitive dependency **qs@2.2.4**, brought in from the direct dependency **body-parser@ 1.9.0**.
 
-For example, the above screenshot shows a vulnerability based on the transitive dependency **qs@2.2.4**, brought in from the direct dependency **body-parser@ 1.9.0**.
+<figure><img src="../../.gitbook/assets/image23.png" alt="Issues detail page dependencies tab"><figcaption><p>Issues detail page dependencies tab</p></figcaption></figure>
