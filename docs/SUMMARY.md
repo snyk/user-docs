@@ -38,7 +38,7 @@
     * [Project tags](snyk-web-ui/introduction-to-snyk-projects/project-tags.md)
     * [View Project issues, fixes, and dependencies](snyk-web-ui/introduction-to-snyk-projects/view-project-issues-remediations-and-dependencies.md)
     * [View Project settings](snyk-web-ui/introduction-to-snyk-projects/view-project-settings.md)
-    * [View project history](snyk-web-ui/introduction-to-snyk-projects/view-project-history.md)
+    * [View Project history](snyk-web-ui/introduction-to-snyk-projects/view-project-history.md)
     * [Issue card information](snyk-web-ui/introduction-to-snyk-projects/issue-card-information.md)
     * [Maximum number of Projects in an Organization](snyk-web-ui/introduction-to-snyk-projects/maximum-number-of-projects-in-an-organsation.md)
 * [Snyk CLI](snyk-cli/README.md)
