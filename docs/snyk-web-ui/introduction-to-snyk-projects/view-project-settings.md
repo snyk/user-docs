@@ -1,30 +1,27 @@
-# View project settings
+# View Project settings
 
-Click **Settings** from your project, to view and edit project settings:
+Select the **Settings** tab on the Project details page to view and edit Project settings:
 
-![](../../.gitbook/assets/screenshot_2021-04-14_at_09.23.38.png)
+<figure><img src="../../.gitbook/assets/screenshot_2021-04-14_at_09.23.38.png" alt="Project details page Settings tab"><figcaption><p>Project details page Settings tab</p></figcaption></figure>
 
-Click the **GitHub integration** section to edit SCM-specific settings \(applicable also to other SCMs\).
+Click the **GitHub integration** section to edit SCM-specific settings (applicable also to other SCMs).
 
-You can edit settings including:
+You can edit the **Project Notification Settings** and **Test & Automated Pull Request Frequency**. You can also retrieve the **Project ID** for use in Snyk API calls.
 
-* Notification settings
-* Update test frequency
-* Retrieve the unique project ID
+You can also deactivate or delete a Project.
 
-## Deactivate a project
+## Deactivate a Project
 
-Deactivating a project will:
+Deactivating a Project will:
 
 * Remove the webhook from the GitHub repository.
 * Disable pull request tests for new vulnerabilities.
-* Disable Fix pull request from being opened for newly disclosed vulnerabilities.
-* Disable recurring tests - email alerts about newly disclosed vulnerabilities will be turned off
+* Disable a Fix pull request from being opened for newly disclosed vulnerabilities.
+* Disable recurring tests; email alerts about newly disclosed vulnerabilities will be turned off.
 
-## Delete a project
+## Delete a Project
 
-Deleting a project will:
+Deleting a Project will:
 
-* Delete the project and all historical snapshot data from Snyk.
+* Delete the Project and all historical snapshot data from Snyk.
 * Remove the webhook from the GitHub repository.
-
