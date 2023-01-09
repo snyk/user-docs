@@ -16,12 +16,11 @@ Every time a filter value is applied, the app.snyk.io URL is updated to persist 
 
 ### Snyk reporting filter logic
 
-Within a given filter, all values selected are separated by an OR operator. For example, if you select the values `Critical` and `High` for the `Issue Severity` filter, Snyk displays issues that have a severity of either `critical` or `high`.\
-
+Within a given filter, all values selected are separated by an OR operator. For example, if you select the values `Critical` and `High` for the `Issue Severity` filter, Snyk displays issues that have a severity of either `critical` or `high`.\\
 
 <figure><img src="https://lh5.googleusercontent.com/OztJ-7tKSZpq2KPKXa6Sjr2vH2GHABcMKOdDNlw6MVShpcpnk7GZHZWz6mE3EeQBGB8SjHVUrVkeMC4IqA1YUhFSa41aNS8z_ZRsHeBxgRnMrp-YPwadg0u9hxuAtStePCrBWp9QV0GswTVozsLR7w7432etIbB6ij6t1t_Dkj5-udb9ofzTfiQw4UqtYuw7FjMEUg" alt="Issue severity values selected"><figcaption><p>Issue severity values selected</p></figcaption></figure>
 
-Filters are separated by an AND operator. For example, if you select the `Critical` value for the `Issue Severity` filter and the `Resolved` value for the `Issue Status` filter, Snyk displays issues that are both `critical` severity and `resolved`.&#x20;
+Filters are separated by an AND operator. For example, if you select the `Critical` value for the `Issue Severity` filter and the `Resolved` value for the `Issue Status` filter, Snyk displays issues that are both `critical` severity and `resolved`.
 
 ## Exporting Snyk Reports
 
@@ -49,7 +48,7 @@ There is no row limit, but there is a 5GB file size limit.
 
 ## Column sorting
 
-Sort columns within tables by clicking the arrows next to the column header. Click once to sort in ascending order, twice to sort in descending order, and a third time to remove sort from that column. Multi-column sorting is supported.&#x20;
+Sort columns within tables by clicking the arrows next to the column header. Click once to sort in ascending order, twice to sort in descending order, and a third time to remove sort from that column. Multi-column sorting is supported.
 
 When columns are sorted, the app.snyk.io URL is updated to persist the state of the page, allowing for bookmarking, copying, and sharing.
 
@@ -58,4 +57,3 @@ When columns are sorted, the app.snyk.io URL is updated to persist the state of 
 In some reports, tables may include an option to modify columns. When this option is available, you can use it to select the columns to display in the UI. The export features (PDF and CSV) respect the selected columns.
 
 When columns are modified, the app.snyk.io URL is updated to persist the state of the page, allowing for bookmarking, copying, and sharing.
-

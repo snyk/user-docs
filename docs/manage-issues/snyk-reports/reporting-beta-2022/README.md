@@ -1,4 +1,4 @@
-# Reporting beta 2022
+# Reporting beta
 
 **Note:** This new page group will supersede Snyk reports, Reports overview, General actions, Summary tab, and Issues tab. Navigation for the Dependencies tab and Licenses tab is moving to the left navigation.
 

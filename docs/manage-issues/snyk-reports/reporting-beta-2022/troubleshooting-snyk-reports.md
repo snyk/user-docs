@@ -15,9 +15,9 @@ Resolved issues are issues detected in the previous scan snapshot that no longer
 Changes in the Snyk code **resolved** column between snapshots may be caused by any of the following reasons:
 
 * The issue was fixed between the two scans and is therefore marked as resolved.
-* The engine rules were improved, which may change the scan results. \
+* The engine rules were improved, which may change the scan results.\
   This may add new issues or resolve previously detected issues.
-* The code changed in a way that caused the issue to be defined differently, thus changing the issue ID. \
+* The code changed in a way that caused the issue to be defined differently, thus changing the issue ID.\
   In this situation, the original issue ID is marked as **resolved** and a new issue ID is created.
 
 {% hint style="info" %}
@@ -36,6 +36,5 @@ Session data is shared between browser tabs. Snyk recommends you have reporting 
 
 ## Filtered views
 
-The way filtered views are managed in the URL may change over time. \
-If the view changes, you can generate a new filtered URL in the Snyk Web UI and save it as a bookmark or share it with others.&#x20;
-
+The way filtered views are managed in the URL may change over time.\
+If the view changes, you can generate a new filtered URL in the Snyk Web UI and save it as a bookmark or share it with others.

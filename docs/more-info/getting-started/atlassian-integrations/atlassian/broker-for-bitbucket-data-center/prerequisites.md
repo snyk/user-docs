@@ -10,7 +10,7 @@ This tutorial assumes you have the following:
 * A Snyk account
 
 {% hint style="info" %}
-The base requirements for Snyk Broker are described in the [snyk-broker](../../../../../features/snyk-broker/ "mention") docs.\
+The base requirements for Snyk Broker are described in the [snyk-broker](../../../../../integrations/snyk-broker/ "mention") docs.\
 We highlight some of the requirements necessary.
 {% endhint %}
 

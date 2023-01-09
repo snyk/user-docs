@@ -1,6 +1,6 @@
 # Dependencies tab
 
-The **Dependencies** tab acts as a Bill Of Materials (BOM) for all the direct dependencies in all of the projects in the selected organization. This allows you to quickly and easily identify which projects have a specific version of a dependency.&#x20;
+The **Dependencies** tab acts as a Bill Of Materials (BOM) for all the direct dependencies in all of the projects in the selected organization. This allows you to quickly and easily identify which projects have a specific version of a dependency.
 
 Dependency reports identify each individual open source dependency by name, along with version, vulnerabilities, and related projects.
 

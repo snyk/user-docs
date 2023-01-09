@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**\
 \- This feature is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.\
-\- For the availability of this feature for Snyk Infrastructure as Code, see [Jira Integration for IaC](../../products/snyk-infrastructure-as-code/jira-integration.md).&#x20;
+\- For the availability of this feature for Snyk Infrastructure as Code, see [Jira Integration for IaC](../../products/snyk-infrastructure-as-code/jira-integration.md).
 {% endhint %}
 
 ## **Set up your Jira integration**
@@ -11,7 +11,7 @@
 Snyk Jira integration allows you to manually raise Jira issues in the Snyk UI for vulnerabilities or license issues. The Jira integration also includes APIs ([see Snyk API docs](https://snyk.docs.apiary.io/#reference/projects/project-jira-issues)).
 
 {% hint style="info" %}
-If your Jira instance is private, you will need to use it via [the Snyk Broker deployment method](../../features/snyk-broker/snyk-broker-set-up-examples/setup-broker-with-jira.md).
+If your Jira instance is private, you will need to use it via [the Snyk Broker deployment method](../snyk-broker/snyk-broker-set-up-examples/setup-broker-with-jira.md).
 {% endhint %}
 
 ## **Prerequisites**
@@ -21,7 +21,7 @@ If your Jira instance is private, you will need to use it via [the Snyk Broker d
 
 ## **How to set up your Jira integration**
 
-The Jira account credentials are configured in the Snyk Web UI - **Organization Settings > Integrations** page.&#x20;
+The Jira account credentials are configured in the Snyk Web UI - **Organization Settings > Integrations** page.
 
 It is best practice to set up a new user in Jira for this integration, instead of using the credentials of an existing account.
 
@@ -49,4 +49,4 @@ You can also see which Jira issues have been created on the **Issues** view in y
 
 ### See also:
 
-[Setup Broker with Jira](../../features/snyk-broker/snyk-broker-set-up-examples/setup-broker-with-jira.md)
+[Setup Broker with Jira](../snyk-broker/snyk-broker-set-up-examples/setup-broker-with-jira.md)
