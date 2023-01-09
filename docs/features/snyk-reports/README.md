@@ -5,7 +5,7 @@
 {% hint style="info" %}
 **Feature availability**\
 This feature is available with Business and Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.\
-To access the new [Reporting beta 2022](reporting-beta-2022/) features, a Snyk admin can activate the reporting in [Snyk Preview](https://docs.snyk.io/features/user-and-group-management/managing-settings/snyk-preview).
+To access the new [Reporting Beta](reporting-beta-2022/) features, a Snyk admin can activate the reporting in [Snyk Preview](https://docs.snyk.io/features/user-and-group-management/managing-settings/snyk-preview).
 {% endhint %}
 
 Snyk reports show the status of all of your projects, issues, dependencies, and licenses, for your Organization or Group.
