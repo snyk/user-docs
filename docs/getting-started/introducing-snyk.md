@@ -53,7 +53,7 @@ See [Snyk integrations](https://docs.snyk.io/integrations) for more details.
 
 Snyk has several [pricing plans](https://snyk.io/plans/) available, from free to Enterprise.
 
-See [Snyk Pricing Plans](../Snyk-processes/plans.md) for more details.
+See [Snyk Pricing Plans](../snyk-processes/plans.md) for more details.
 
 ### What happens to my data?
 

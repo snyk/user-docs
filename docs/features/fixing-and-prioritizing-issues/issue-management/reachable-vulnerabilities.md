@@ -42,7 +42,7 @@ Reachable vulnerability analysis via the Snyk CLI, other Git integrations and ot
 {% hint style="info" %}
 To provide this feature, Snyk takes a temporary copy of your Git repository contents.
 
-For more information see [How Snyk handles your data](../../../Snyk-processes/how-snyk-handles-your-data.md).
+For more information see [How Snyk handles your data](../../../snyk-processes/how-snyk-handles-your-data.md).
 {% endhint %}
 
 1. Set up your [GitHub integration](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration).

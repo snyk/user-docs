@@ -4,7 +4,7 @@
 **Feature availability**\
 This feature is available with Enterprise and Business Plans. See [pricing plans](https://snyk.io/plans/) for details.
 
-This feature is not available for Business Plan trials. See [Plans](../../../Snyk-processes/plans.md) for details.
+This feature is not available for Business Plan trials. See [Plans](../../../snyk-processes/plans.md) for details.
 {% endhint %}
 
 Groups is a feature that makes it easier for you to work within teams. Groups can hold many organizations, and each organization can contain many collaborators.
