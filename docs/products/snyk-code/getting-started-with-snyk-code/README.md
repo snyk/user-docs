@@ -4,7 +4,7 @@ This section describes how to get started with Snyk Code using the Snyk Web UI E
 
 You can work with Snyk Code using the following Snyk Environments:
 
-* [Snyk Web UI ](../../../snyk-web-ui/)(including [PR Checks](../pr-checks-for-snyk-code/))
+* [Snyk Web UI ](../../../getting-started/introducing-snyk/snyk-web-ui/)(including [PR Checks](../pr-checks-for-snyk-code/))
 * [Snyk for IDEs](../../../ide-tools/)
 * [Snyk CLI](../../../snyk-cli/)
 * [Snyk API](../../../snyk-api-info/)
@@ -47,8 +47,6 @@ During the import process of your selected repositories, Snyk Code automatically
 To view all the security vulnerabilities that Snyk Code detected in your imported code, click the **Code analysis** Project, and explore the details of each vulnerability:
 
 <figure><img src="../../../.gitbook/assets/SnykCode2.png" alt=""><figcaption></figcaption></figure>
-
-
 
 If your Snyk Account is already integrated with your SCM, and it already contains imported repositories, Snyk Code may be already active and running in your Org Settings. In this case, you can check if your existing repositories are already being tested by Snyk Code, by searching for the **Code analysis** Project in your Target folders. If a **Code analysis** Project exists in your imported repositories, you can skip this _Getting Started_ section and move to the [Exploring and working with the Snyk Code results](../exploring-and-working-with-the-snyk-code-results/) section. However, you may want to learn more about the following topics:
 

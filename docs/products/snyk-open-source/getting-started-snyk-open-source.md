@@ -3,7 +3,7 @@
 Use Snyk Open Source to scan and fix vulnerabilities in your application's Open Source libraries, for a [supported language and package manager](language-and-package-manager-support/), such as Java.
 
 {% hint style="info" %}
-This process describes getting started using the [Snyk Web UI](../../snyk-web-ui/) with a Git-based source repository.
+This process describes getting started using the [Snyk Web UI](../../getting-started/introducing-snyk/snyk-web-ui/) with a Git-based source repository.
 
 * You can also use an [IDE tool](https://docs.snyk.io/integrations/ide-tools) or a [CI/CD integration](https://docs.snyk.io/integrations/ci-cd-integrations). See [Integrations](https://docs.snyk.io/integrations).
 * You can also [use Snyk Open Source from the CLI](use-snyk-open-source-from-the-cli/).

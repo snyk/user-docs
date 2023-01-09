@@ -2,7 +2,7 @@
 
 ## View project vulnerabilities
 
-Use Snyk IaC with the [Snyk Web UI](../../snyk-web-ui/) to find and fix issues in configuration files.
+Use Snyk IaC with the [Snyk Web UI](../../getting-started/introducing-snyk/snyk-web-ui/) to find and fix issues in configuration files.
 
 1. In your **Projects** area, select the project to open
 2. Snyk IaC displays information and issue cards for that project:

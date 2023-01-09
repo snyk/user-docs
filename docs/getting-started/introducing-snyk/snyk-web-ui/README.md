@@ -16,7 +16,7 @@ If you log in with a different authentication provider from the one your company
 
 ## Snyk Organizations
 
-Organizations in Snyk control access to projects. For details see the [Snyk Organizations](../features/user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization.md) page.
+Organizations in Snyk control access to projects. For details see the [Snyk Organizations](../../../features/user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization.md) page.
 
 The Organization settings and policies influence your scan results, depending on which Organization you use when you add a project.
 
@@ -30,7 +30,7 @@ To change your default Organization, see [Manage account preferences and setting
 
 For related Snyk Training resources, see [Use Snyk Tools: UI, CLI, IDE](https://training.snyk.io/learn/learning-path/snyk-tools).
 
-For other ways to use Snyk, see [Snyk CLI](../snyk-cli/), [Snyk API](../snyk-api-info/), [Snyk for IDEs](../ide-tools/), [Snyk CI/CD Integration](../integrations/ci-cd-integrations/), and [Git repository integrations (SCMs)](../integrations/git-repository-scm-integrations/).
+For other ways to use Snyk, see [Snyk CLI](../../../snyk-cli/), [Snyk API](../../../snyk-api-info/), [Snyk for IDEs](../../../ide-tools/), [Snyk CI/CD Integration](../../../integrations/ci-cd-integrations/), and [Git repository integrations (SCMs)](../../../integrations/git-repository-scm-integrations/).
 
 
 

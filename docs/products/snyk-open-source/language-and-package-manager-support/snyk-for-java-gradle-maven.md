@@ -1,6 +1,6 @@
 # Snyk for Java and Kotlin
 
-Snyk offers security scanning to test your projects for vulnerabilities, both from the [Snyk CLI ](../../../snyk-cli/)and the [Snyk Web UI](../../../snyk-web-ui/), using different [Snyk Integrations](../../../integrations/).
+Snyk offers security scanning to test your projects for vulnerabilities, both from the [Snyk CLI ](../../../snyk-cli/)and the [Snyk Web UI](../../../getting-started/introducing-snyk/snyk-web-ui/), using different [Snyk Integrations](../../../integrations/).
 
 ## Features
 
@@ -47,7 +47,7 @@ However, for the most accurate results, we recommend using the [Snyk CLI](../../
 
 ### Gradle
 
-* CLI - Gradle `4.*`, `5.*`, `6.*`,  `7.*` ([more details](https://github.com/snyk/snyk-gradle-plugin#support))
+* CLI - Gradle `4.*`, `5.*`, `6.*`, `7.*` ([more details](https://github.com/snyk/snyk-gradle-plugin#support))
 * Git - Gradle `4.*`, `5.*`, `6.*`
 
 ## Snyk CLI tool for Java and Kotlin projects (CI/CD)
@@ -118,9 +118,9 @@ snyk test -- -Dpkg_version=1.4
 
 ### Aggregate projects
 
-A Maven aggregate project is one that uses modules and inheritance.&#x20;
+A Maven aggregate project is one that uses modules and inheritance.
 
-When scanning these types of projects Snyk will perform a compile to ensure all modules are resolvable by the Maven reactor.&#x20;
+When scanning these types of projects Snyk will perform a compile to ensure all modules are resolvable by the Maven reactor.
 
 *   To scan aggregate projects, use the `--maven-aggregate-project` param:
 
