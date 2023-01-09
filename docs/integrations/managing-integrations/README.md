@@ -7,4 +7,4 @@ Administrators and account owners can:
 * [Copy (clone) integrations](clone-an-integration-across-your-snyk-orgs.md)
 * [Delete (disable) integrations](disable-a-git-integration.md)
 
-In addition, administrators and account owners can use [service accounts](../../features/user-and-group-management/structure-account-for-high-application-performance/service-accounts.md) to configure integrations.
+In addition, administrators and account owners can use [service accounts](../../snyk-admin/structure-account-for-high-application-performance/service-accounts.md) to configure integrations.

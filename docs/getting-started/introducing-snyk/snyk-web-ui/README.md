@@ -16,7 +16,7 @@ If you log in with a different authentication provider from the one your company
 
 ## Snyk Organizations
 
-Organizations in Snyk control access to projects. For details see the [Snyk Organizations](../../../features/user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization.md) page.
+Organizations in Snyk control access to projects. For details see the [Snyk Organizations](../../../snyk-admin/managing-groups-and-organizations/whats-a-snyk-organization.md) page.
 
 The Organization settings and policies influence your scan results, depending on which Organization you use when you add a project.
 
