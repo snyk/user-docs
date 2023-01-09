@@ -26,13 +26,13 @@ Issues can be ignored and viewed through the following means:
 
 Each issue card has an **Ignore** button that opens a dialog where you can select how or why you want to ignore the issue and how long to ignore it.
 
-<figure><img src="../../../.gitbook/assets/ignore-vulnerability-ui-updated.png" alt="Ignore dialog from issue card"><figcaption><p>Ignore dialog from issue card</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ignore-vulnerability-ui-updated.png" alt="Ignore dialog from issue card"><figcaption><p>Ignore dialog from issue card</p></figcaption></figure>
 
 You can select **Not vulnerable** for any issue that is not exploitable at the time you create the ignore.
 
 If you select **Ignore temporarily,** then you can check the **Until fix is available** checkbox:
 
-<figure><img src="../../../.gitbook/assets/image (19) (1).png" alt="Ignore temporarily"><figcaption><p>Ignore temporarily</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1).png" alt="Ignore temporarily"><figcaption><p>Ignore temporarily</p></figcaption></figure>
 
 The vulnerability resurfaces as soon as Snyk has a fix for it, and optionally you can give additional details on why you are ignoring the issue. This is checked by default if there is currently no fix available for this issue.
 
@@ -42,7 +42,7 @@ An issue is ignored until ANY of the conditions happen, the ignore period expire
 
 When you ignore an issue in the Snyk Web UI, the issue shows who ignored it and allow you to edit or unignore it.
 
-<figure><img src="../../../.gitbook/assets/image (14) (2) (1).png" alt="Ignore set in the Snyk Web UI"><figcaption><p>Ignore set in the Snyk Web UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (2) (1).png" alt="Ignore set in the Snyk Web UI"><figcaption><p>Ignore set in the Snyk Web UI</p></figcaption></figure>
 
 For more information see the training: [Ignoring issues](https://training.snyk.io/courses/ignore-strategies).
 
@@ -52,7 +52,7 @@ You can suppress issues through the CLI by using the `snyk ignore` command, for 
 
 `snyk ignore --id='npm:braces:20180219' --expiry='2018-04-01' --reason='testing'`
 
-For more information see the [`ignore`](../../../snyk-cli/commands/ignore.md) command help and [Ignore vulnerabilities using Snyk CLI](../../../snyk-cli/test-for-vulnerabilities/ignore-vulnerabilities-using-snyk-cli.md).
+For more information see the [`ignore`](../../snyk-cli/commands/ignore.md) command help and [Ignore vulnerabilities using Snyk CLI](../../snyk-cli/test-for-vulnerabilities/ignore-vulnerabilities-using-snyk-cli.md).
 
 When you use `snyk ignore`**,** the `.snyk` policy file is updated with the path and reason given, if one was provided. For example:
 
@@ -73,15 +73,15 @@ Ignores between a CLI (or CI/CD run) and the Snyk UI are synchronized as follows
 
 Refer to the following example:
 
-<figure><img src="../../../.gitbook/assets/ignore-vulnerability-snyk-monitor-updated.png" alt="Project imported from snyk monitor, ignore set in the Web UI"><figcaption><p>Project imported from snyk monitor, ignore set in the Web UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ignore-vulnerability-snyk-monitor-updated.png" alt="Project imported from snyk monitor, ignore set in the Web UI"><figcaption><p>Project imported from snyk monitor, ignore set in the Web UI</p></figcaption></figure>
 
 The following shows `snyk test` results before ignoring in the Web UI:
 
-<figure><img src="../../../.gitbook/assets/image (18) (1) (1) (2).png" alt="Snyk test results before ignoring in the Web UI"><figcaption><p>Snyk test results before ignoring in the Web UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1) (1) (2).png" alt="Snyk test results before ignoring in the Web UI"><figcaption><p>Snyk test results before ignoring in the Web UI</p></figcaption></figure>
 
 The following shows `snyk test` results after ignoring in the Web UI:
 
-<figure><img src="../../../.gitbook/assets/image (20) (1) (1).png" alt="Snyk test results after ignoring in the Web UI"><figcaption><p>Snyk test results after ignoring in the Web UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20) (1) (1).png" alt="Snyk test results after ignoring in the Web UI"><figcaption><p>Snyk test results after ignoring in the Web UI</p></figcaption></figure>
 
 **Note**: The preceding example shows what happens if you ignore the project imported by `snyk monitor` from the CLI or CI/CD.
 
@@ -91,7 +91,7 @@ The same repository imported from the SCM is considered as a different project, 
 
 For all projects, you can ignore the vulnerability by creating a `.snyk` YAML file.
 
-![A .snyk file](../../../.gitbook/assets/screen+shot+2017-05-10+at+11.16.57+am.png)
+![A .snyk file](../../.gitbook/assets/screen+shot+2017-05-10+at+11.16.57+am.png)
 
 For example, if you wanted to ignore the vulnerability with SNYK ID [SNYK-RUBY-FASTREADER-20085](https://snyk.io/vuln/SNYK-RUBY-FASTREADER-20085) in `fastreader`, with the reason “No fix available” until 01 Jan 2023, you would write the following:
 
@@ -138,11 +138,11 @@ For more information, see [Exploring the vulnerability issues discovered by Snyk
 
 ## Snyk IaC: ignoring issues
 
-When scanning your IaC configuration files using the Snyk CLI with `snyk iac test` you can ignore issues that are not relevant to you by using [The .snyk file](../../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md).
+When scanning your IaC configuration files using the Snyk CLI with `snyk iac test` you can ignore issues that are not relevant to you by using [The .snyk file](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md).
 
 Snyk recommends storing and versioning the .snyk file in root of your working directory for where you store your IaC configuration files.
 
-For more information, see [IaC ignores using the .snyk policy file](../../../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md).
+For more information, see [IaC ignores using the .snyk policy file](../../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md).
 
 ## Configure ignore settings
 
@@ -153,10 +153,10 @@ Suppressing vulnerabilities carries a level of risk, so you can make this functi
 3. Under **Require reason for each ignore**, you can also choose to set the **more details** field to be a required field when an issue is being ignored, ensuring the user enters a reason for each ignore.
 4. Click **Update** to make the changes.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2021-12-07 at 11.25.49.png" alt="Ignore settings"><figcaption><p>Ignore settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2021-12-07 at 11.25.49.png" alt="Ignore settings"><figcaption><p>Ignore settings</p></figcaption></figure>
 
 ## Using ignores in reports
 
 If you have access to the Snyk Reports feature, you can also see an overview of how many issues in your organization’s projects are ignored, along with an option to filter these so you can drill down into each one. If the issue was ignored in the Snyk Web UI, Snyk includes a credit for additional accountability, so you can see who initiated it.
 
-For more information, see [Reports](../../snyk-reports/).
+For more information, see [Reports](../snyk-reports/).

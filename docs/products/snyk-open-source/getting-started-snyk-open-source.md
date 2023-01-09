@@ -31,14 +31,14 @@ Click an entry to open the issues view for that entry, including the module wher
 
 ![](../../.gitbook/assets/project-details.png)
 
-See [view-project-information.md](../../snyk-web-ui/introduction-to-snyk-projects/view-project-information.md "mention") for more details.
+See [view-project-information.md](../../manage-issues/introduction-to-snyk-projects/view-project-information.md "mention") for more details.
 
 ### Fix vulnerabilities
 
 For some languages, Snyk can fix vulnerabilities using fix pull/merge requests.
 
 {% hint style="info" %}
-See [what-languages-do-we-support-fix-pull-requests-or-merge-requests.md](../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md "mention")
+See [what-languages-do-we-support-fix-pull-requests-or-merge-requests.md](../../manage-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md "mention")
 {% endhint %}
 
 Navigate to the **Issues** view for a project:
@@ -56,4 +56,4 @@ To fix vulnerabilities:
 
 ![](<../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22 (1).png>)
 
-See [fix-your-vulnerabilities.md](../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md "mention") for more details.
+See [fix-your-vulnerabilities.md](../../manage-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md "mention") for more details.

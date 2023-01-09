@@ -18,4 +18,4 @@ The scan results and available actions depend on the type of Project you scan:
 
 ### What's next?
 
-Now, you can start to fix your issues. See [Fixing and prioritizing issues](../../features/manage-issues/).
+Now, you can start to fix your issues. See [Fixing and prioritizing issues](../../manage-issues/).

@@ -9,7 +9,7 @@ Use Snyk IaC with the [Snyk Web UI](../../snyk-web-ui/) to find and fix issues i
 
 ![](<../../.gitbook/assets/image (364) (1) (1).png>)
 
-Information available shows standard Snyk Project information (see [introduction-to-snyk-projects](../../snyk-web-ui/introduction-to-snyk-projects/ "mention")), including:
+Information available shows standard Snyk Project information (see [introduction-to-snyk-projects](../../manage-issues/introduction-to-snyk-projects/ "mention")), including:
 
 * Snapshot information showing when the project was last tested.
 * **Overview**, **History** and **Settings** information. For example, use the **History** section to view previous snapshots of projects.
@@ -36,7 +36,7 @@ Click **Full details** to see a preview of the full code:
 
 ![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.24.20.png>)
 
-Click **Ignore** to ignore this vulnerability (see [Ignore Issues](../../features/fixing-and-prioritizing-issues/issue-management/ignore-issues.md))
+Click **Ignore** to ignore this vulnerability (see [Ignore Issues](../../manage-issues/issue-management/ignore-issues.md))
 
 ### Notes
 

@@ -27,8 +27,8 @@ Issue cards show details for a specific vulnerability or license issue and actio
 * **Introduced through**: The path through which the vulnerability or license was introduced
 * **Fixed in:** The file the vulnerability is fixed in
 * [Exploit maturity](https://docs.snyk.io/fixing-and-prioritizing-issues/issue-management/evaluating-and-prioritizing-vulnerabilities): for example, **Mature** or **Proof Of Concept**
-* Reachability: for example, **Reachable**. For information and an example, see [Reachable vulnerabilities](../../features/fixing-and-prioritizing-issues/issue-management/reachable-vulnerabilities.md)
-* **Social Trends**: Snyk shows a [Trending](../../features/fixing-and-prioritizing-issues/issue-management/prioritize-by-social-trends.md) banner for issues that are being actively discussed on Twitter.
+* Reachability: for example, **Reachable**. For information and an example, see [Reachable vulnerabilities](../issue-management/reachable-vulnerabilities.md)
+* **Social Trends**: Snyk shows a [Trending](../issue-management/prioritize-by-social-trends.md) banner for issues that are being actively discussed on Twitter.
 
 ## Detailed information in the issue card
 
@@ -59,7 +59,7 @@ The issue cards in a Project can be sorted based on their priority score or seve
 
 You can perform the following actions on the issue card:
 
-* [**Ignore the issue**](../../features/fixing-and-prioritizing-issues/issue-management/ignore-issues.md): if you do not need to take action on an issue, or it does not need to appear on your reports, you can ignore it.
+* [**Ignore the issue**](../issue-management/ignore-issues.md): if you do not need to take action on an issue, or it does not need to appear on your reports, you can ignore it.
 * [**Create a Jira ticket**](https://docs.snyk.io/integrations/untitled-3/jira): if you have the [Jira integration](https://docs.snyk.io/integrations/untitled-3/jira), you can link your issue boards to Snyk and create Jira tickets directly from the project details page to fix vulnerabilities.
 * [**Fix the vulnerability**](https://docs.snyk.io/snyk-open-source/open-source-basics/fixing-vulnerabilities): if a fix is available, you can fix individual vulnerabilities.
 * **View more information about the CWE, CVE, and CVSS scores**: navigate from the issue card to further information about these scores.

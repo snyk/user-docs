@@ -51,7 +51,7 @@ Scores can be seen on each issue in the projects view, with all issues now sorte
 
 Issues can be filtered on the left.
 
-![](../../../.gitbook/assets/screen\_shot\_2021-07-14\_at\_1.41.24\_pm.png)
+![](../../.gitbook/assets/screen\_shot\_2021-07-14\_at\_1.41.24\_pm.png)
 
 ## View scores in the Reports
 
@@ -59,7 +59,7 @@ The **Issues** tab in the reports includes the Priority Score as it's own sortab
 
 Issues can also be filtered by the score.
 
-![](../../../.gitbook/assets/screen\_shot\_2021-07-14\_at\_1.43.32\_pm.png)
+![](../../.gitbook/assets/screen\_shot\_2021-07-14\_at\_1.43.32\_pm.png)
 
 ## View scores in the Snyk API
 

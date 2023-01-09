@@ -27,11 +27,11 @@ You can also select **Fix this vulnerability** for a specific issue:
 <figure><img src="../../.gitbook/assets/image26.png" alt="Fix this vulnerability for an issue"><figcaption><p>Fix this vulnerability for an issue</p></figcaption></figure>
 
 See [Fix vulnerabilities with Snyk Open Source](../../products/snyk-open-source/open-source-basics/) for an overview.\
-See [Manage issues](../../features/manage-issues/) for more details.
+See [Manage issues](../) for more details.
 
 ## View issue details
 
-For each issue, details about the vulnerability are displayed including its [priority score](../../features/fixing-and-prioritizing-issues/issue-management/priority-score.md).
+For each issue, details about the vulnerability are displayed including its [priority score](../issue-management/priority-score.md).
 
 ![](../../.gitbook/assets/image12.png)
 
@@ -45,7 +45,7 @@ Snyk's knowledge of the transitive dependencies in your Project make it possible
 
 <figure><img src="../../.gitbook/assets/Screenshot 2021-10-19 at 11.57.07.png" alt="Issue details Fixes tab"><figcaption><p>Issue details Fixes tab</p></figcaption></figure>
 
-See [Fix your vulnerabilities](../../features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) for details.
+See [Fix your vulnerabilities](../starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) for details.
 
 ## View dependencies
 

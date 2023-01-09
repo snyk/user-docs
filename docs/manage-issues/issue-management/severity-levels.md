@@ -2,16 +2,16 @@
 
 A severity level is applied to a vulnerability, to indicate the risk for that vulnerability in an application.
 
-<img src="../../../.gitbook/assets/Screenshot 2022-08-16 at 09.52.22.png" alt="" data-size="original">
+<img src="../../.gitbook/assets/Screenshot 2022-08-16 at 09.52.22.png" alt="" data-size="original">
 
 Severity levels are key factors in [vulnerability assessment](https://snyk.io/learn/vulnerability-assessment/), and can be:
 
-| Severity                                                                             | Severity level | Description                                                                                                                                |
-| ------------------------------------------------------------------------------------ | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| <img src="../../../.gitbook/assets/image (145).png" alt="" data-size="line">         | **Critical**   | This may allow attackers to access sensitive data and run code on your application                                                         |
-| <img src="../../../.gitbook/assets/image (168) (1).png" alt="" data-size="original"> | **High**       | This may allow attackers to access sensitive data in your application                                                                      |
-| ![](<../../../.gitbook/assets/image (294).png>)                                      | **Medium**     | Under some conditions, this may allow attackers to access sensitive data on your application                                               |
-| ![](<../../../.gitbook/assets/image (303).png>)                                      | **Low**        | Application may expose some data that allows vulnerability mapping, which can be used with other vulnerabilities to attack the application |
+| Severity                                                                          | Severity level | Description                                                                                                                                |
+| --------------------------------------------------------------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| <img src="../../.gitbook/assets/image (145).png" alt="" data-size="line">         | **Critical**   | This may allow attackers to access sensitive data and run code on your application                                                         |
+| <img src="../../.gitbook/assets/image (168) (1).png" alt="" data-size="original"> | **High**       | This may allow attackers to access sensitive data in your application                                                                      |
+| ![](<../../.gitbook/assets/image (294).png>)                                      | **Medium**     | Under some conditions, this may allow attackers to access sensitive data on your application                                               |
+| ![](<../../.gitbook/assets/image (303).png>)                                      | **Low**        | Application may expose some data that allows vulnerability mapping, which can be used with other vulnerabilities to attack the application |
 
 {% hint style="info" %}
 Severity levels also apply to license issues. See [Licenses overview](https://docs.snyk.io/snyk-open-source/licenses).
@@ -35,7 +35,7 @@ The severity level and score are determined based on the CVSS Base Score calcula
 See [Scoring security vulnerabilities 101: Introducing CVSS for CVEs](https://snyk.io/blog/scoring-security-vulnerabilities-101-introducing-cvss-for-cve/).
 
 {% hint style="info" %}
-Severity levels may not always align with CVSS scores. For example, Snyk Container severity scores for Linux vulnerabilities may vary depending on NVD severity rankings; see [Understanding Linux vulnerability severity](../../../products/snyk-container/getting-started-snyk-container/understanding-linux-vulnerability-severity.md) for more details.
+Severity levels may not always align with CVSS scores. For example, Snyk Container severity scores for Linux vulnerabilities may vary depending on NVD severity rankings; see [Understanding Linux vulnerability severity](../../products/snyk-container/getting-started-snyk-container/understanding-linux-vulnerability-severity.md) for more details.
 {% endhint %}
 
 ### Understanding Snyk's Vulnerability Analysis
@@ -61,12 +61,12 @@ Severity levels are displayed throughout Snyk, to show this information at all t
 
 For example, in the **Pending tasks** section of the Dashboard:
 
-<img src="../../../.gitbook/assets/image (476).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (476).png" alt="" data-size="original">
 
-Associated with your [Projects](broken-reference/):
+Associated with your [Projects](../../features/fixing-and-prioritizing-issues/issue-management/broken-reference/):
 
-![](<../../../.gitbook/assets/image (43) (1).png>)
+![](<../../.gitbook/assets/image (43) (1).png>)
 
 And for each vulnerability in a project:
 
-![](<../../../.gitbook/assets/image (39) (1).png>)
+![](<../../.gitbook/assets/image (39) (1).png>)

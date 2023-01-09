@@ -13,6 +13,6 @@ Select **Snyk Default Security Policy** to change the conditions or actions for 
 
 Or select **Add new policy** to start a new policy.
 
-![](../../../.gitbook/assets/screenshot\_2020-10-20\_at\_10.01.49\_am.png)
+![](../../.gitbook/assets/screenshot\_2020-10-20\_at\_10.01.49\_am.png)
 
 Security policies can be applied to all the projects in one or more organizations, or according to attributes that you have applied to projects.

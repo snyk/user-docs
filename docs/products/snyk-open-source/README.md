@@ -14,7 +14,7 @@ You can use Snyk Open Source in the Snyk Web UI, with the Snyk CLI, in your IDE,
 
 Use Snyk Open Source to find and fix vulnerabilities in your application's Open Source libraries. Snyk provides actionable fix advice for vulnerabilities, and supports workflows to fix vulnerabilities using Pull Requests (PRs); see [Fix vulnerabilities with Snyk Open Source](open-source-basics/).
 
-Snyk Open Source also helps prioritize and report on the vulnerabilities discovered; see [manage-issues](../../features/manage-issues/ "mention").
+Snyk Open Source also helps prioritize and report on the vulnerabilities discovered; see [manage-issues](../../manage-issues/ "mention").
 
 ### Find and fix license issues
 

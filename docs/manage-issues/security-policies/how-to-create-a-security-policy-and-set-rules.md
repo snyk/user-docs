@@ -4,7 +4,7 @@ To create a new security policy, click **Add a new policy** in the security poli
 
 Security policy rules follow an “if, then” framework, with one or more conditions, and an action. For example:
 
-![](../../../.gitbook/assets/screenshot\_2020-07-06\_at\_11.38.07.png)
+![](../../.gitbook/assets/screenshot\_2020-07-06\_at\_11.38.07.png)
 
 If you create a new security policy, the first blank rule is automatically created.
 
