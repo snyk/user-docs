@@ -698,7 +698,7 @@
   * [Issues tab](features/snyk-reports/issues-tab.md)
   * [Dependencies tab](features/snyk-reports/dependencies-tab.md)
   * [Licenses tab](features/snyk-reports/licenses-tab.md)
-  * [Reporting beta 2022](features/snyk-reports/reporting-beta-2022/README.md)
+  * [Reporting beta](features/snyk-reports/reporting-beta-2022/README.md)
     * [Getting started with Snyk Reports](features/snyk-reports/reporting-beta-2022/getting-started-with-snyk-reports.md)
     * [Available Snyk Reports](features/snyk-reports/reporting-beta-2022/available-snyk-reports.md)
     * [Troubleshooting Snyk Reports](features/snyk-reports/reporting-beta-2022/troubleshooting-snyk-reports.md)
