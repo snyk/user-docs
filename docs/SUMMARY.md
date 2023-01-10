@@ -168,7 +168,7 @@
     * [View analysis results from Visual Studio Code extension](ide-tools/visual-studio-code-extension/view-analysis-results-from-visual-studio-code-extension.md)
     * [Troubleshooting for Visual Studio Code extension](ide-tools/visual-studio-code-extension/troubleshooting-for-visual-studio-code-extension.md)
   * [Language Server](ide-tools/language-server.md)
-* [Snyk Integrations](integrations/README.md)
+* [Integrate with Snyk](integrations/README.md)
   * [Git repository and CI/CD integrations: comparisons](integrations/git-repository-and-ci-cd-integrations-comparisons.md)
   * [Managing integrations](integrations/managing-integrations/README.md)
     * [Clone an integration across your Snyk Oraganizations](integrations/managing-integrations/clone-an-integration-across-your-snyk-orgs.md)
