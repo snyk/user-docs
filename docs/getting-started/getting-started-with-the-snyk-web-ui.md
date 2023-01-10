@@ -2,11 +2,15 @@
 description: Introduction to what you can do in the Snyk Web UI
 ---
 
-# Getting started with the Snyk Web UI
+# Exploring the Snyk Web UI
 
-## Accessing the Snyk Web UI
+No matter how you use Snyk, you can use the Snyk Web UI to connect your source code management (SCM) repositories, container registries, and applications. If you haven't already, go to the [Snyk Web UI](https://app.snyk.io/login) and create an account.
 
-After you [sign up for a Snyk account, authenticate and log in to Snyk](../../), the Web UI opens to the [Dashboard](getting-started-with-the-snyk-web-ui.md#dashboard), with a wizard to guide you through setup steps:
+After you connect, you can import your repositories and projects for Snyk to scan, monitor, and fix vulnerabilities in your source code.
+
+## Set up the Snyk Web UI
+
+After you [sign up for a Snyk account, authenticate and log in to Snyk](./), the Web UI opens to the [Dashboard](getting-started-with-the-snyk-web-ui.md#dashboard), with a wizard to guide you through setup steps:
 
 1. Identifying where the code you want to monitor in Snyk is located.
 2. Defining which projects within your code you want Snyk to scan.
@@ -14,10 +18,10 @@ After you [sign up for a Snyk account, authenticate and log in to Snyk](../../),
 4. Reviewing the results of your Snyk scan.
 
 {% hint style="info" %}
-If you're signing into a paid Team, Business, or Enterprise account, you'll also need to select the relevant [organization](../../../snyk-web-ui/broken-reference/) after you log in to Snyk.
+If you're signing into a paid Team, Business, or Enterprise account, you'll also need to select the relevant [organization](../snyk-web-ui/broken-reference/) after you log in to Snyk.
 {% endhint %}
 
-![Snyk dashboard for an Enterprise account showing pending tasks, vulnerable projects, as well as current security and license issues](../../../.gitbook/assets/web\_ui-landing\_02oct2022.png)
+![Snyk dashboard for an Enterprise account showing pending tasks, vulnerable projects, as well as current security and license issues](../.gitbook/assets/web\_ui-landing\_02oct2022.png)
 
 ## What can I do in the Web UI tabs?
 
@@ -41,7 +45,7 @@ This information includes:
 
 Currently, Snyk only tracks and flags PRs in GitHub, GitHub Enterprise, and Bitbucket Cloud, and only for the top-most vulnerable projects. If you use another SCM, **Pending tasks** shows only PRs that can be raised, not PRs that have already been raised.
 
-![Use project links to explore and manage target options](<../../../.gitbook/assets/image (73).png>)
+![Use project links to explore and manage target options](<../.gitbook/assets/image (73).png>)
 
 Use the project links to explore and manage the metadata, retest, and fix options for the target files in your projects. The link opens a page where you can view the project **Overview** options, or switch to the **History**, and **Settings** tabs.
 
@@ -49,7 +53,7 @@ Use the project links to explore and manage the metadata, retest, and fix option
   This page presents the list of issues with full, partial, or no fixes.
 * For the other relevant projects, use **View PR** links to open and view the Snyk-generated PR fixes in GitHub.
 
-![Target page: details and options for a single project from the dashboard](<../../../.gitbook/assets/dockerfile\_fix\_vulnerabilities (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).gif>)
+![Target page: details and options for a single project from the dashboard](<../.gitbook/assets/dockerfile\_fix\_vulnerabilities (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).gif>)
 
 ## [**Reports**](https://docs.snyk.io/features/reports)
 
@@ -60,7 +64,7 @@ You can view reports to gain visibility and insights into the state of all your 
 The **Reports** tab is fully enabled for Business and Enterprise plans.
 {% endhint %}
 
-![Viewing reports and report options](../../../.gitbook/assets/reports.gif)
+![Viewing reports and report options](../.gitbook/assets/reports.gif)
 
 ## **Manage your** [**Projects**](https://docs.snyk.io/getting-started/introduction-to-snyk-projects#projects)
 
@@ -71,7 +75,7 @@ In the **Projects** tab, you can:
 * Select and expand specific projects to view analysis summaries, dive into specific vulnerability issues in a project and its associated targets, and add a custom target path to a project.
 * Click the target settings icon to configure General and Integration **Settings** for notifications, project testing, and pull request (PR) frequency or switch to the **Overview** and **History** options. You can also look up the unique Project ID, and deactivate or delete a project in the **Settings** page.
 
-<figure><img src="../../../.gitbook/assets/Project listing add projects.gif" alt="Animated GIF of a screenshot of the Snyk UI and a flyout menu for adding a new project."><figcaption><p>Viewing the options in the Projects tab</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Project listing add projects.gif" alt="Animated GIF of a screenshot of the Snyk UI and a flyout menu for adding a new project."><figcaption><p>Viewing the options in the Projects tab</p></figcaption></figure>
 
 ## **Manage your** [**Integrations**](https://docs.snyk.io/integrations)
 
@@ -81,7 +85,7 @@ In the **Integrations** tab, you can:
 * Manage [Slack](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration) and [Jira](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira) integrations.
 * Access the [Vulnerability management tools](https://docs.snyk.io/integrations/vulnerability-management-tools).
 
-![Integrations tab](<../../../.gitbook/assets/image (409).png>)
+![Integrations tab](<../.gitbook/assets/image (409).png>)
 
 ## Manage [Organization](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations) or [Group](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations-1) members
 
@@ -93,27 +97,27 @@ You must be assigned the [relevant Admin roles and permissions](https://docs.sny
 
 ### Snyk Organization or Group [Settings](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/snyk-settings)
 
-Use the <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> menus to view and manage your Organization (team) or Group (company-wide) settings.
+Use the <img src="../.gitbook/assets/cog_icon.png" alt="" data-size="line"> menus to view and manage your Organization (team) or Group (company-wide) settings.
 
-![Group and Organization settings](<../../../.gitbook/assets/image (72) (1).png>)
+![Group and Organization settings](<../.gitbook/assets/image (72) (1).png>)
 
 ## View product updates
 
 "Ring the bell" to view a summary from [**snyk.io updates**](https://updates.snyk.io/).
 
-![Snyk product updates](<../../../.gitbook/assets/image (20) (2).png>)
+![Snyk product updates](<../.gitbook/assets/image (20) (2).png>)
 
 ## View helpful resources
 
 Use the Help menu for quick access to Snyk user documentation (including the **Getting started** or **CLI** sections), product updates, API documentation, Snyk support, and to check the Snyk status page.
 
-![Getting help via the Help menu](<../../../.gitbook/assets/image (223).png>)
+![Getting help via the Help menu](<../.gitbook/assets/image (223).png>)
 
 ## Manage account preferences and settings
 
 This is where you can configure the general [account settings](https://app.snyk.io/account) for your user account, view your authentication token and authorized applications, set your preferred (default) organization, as well as your notification and sharing preferences, and view information on the latest Snyk product updates.
 
-![Options for a user account](<../../../.gitbook/assets/image (124).png>)
+![Options for a user account](<../.gitbook/assets/image (124).png>)
 
 ### Managing user **account settings**
 
@@ -127,4 +131,4 @@ You can access the following information and options in the Account Settings:
 * Share a Snyk referral link with your friends.
 * Log out of Snyk.
 
-![This is where you manage your general, notification, and referral settings](../../../.gitbook/assets/user-account\_settings.gif)
+![This is where you manage your general, notification, and referral settings](../.gitbook/assets/user-account\_settings.gif)
