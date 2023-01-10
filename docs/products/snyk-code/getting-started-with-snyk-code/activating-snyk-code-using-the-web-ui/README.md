@@ -1,6 +1,6 @@
 # Activating Snyk Code using the Web UI
 
-The activation of Snyk Code using the [Snyk Web UI](../../../../getting-started/snyk-web-ui.md) consists of the following steps:
+The activation of Snyk Code using the [Snyk Web UI](../../../../getting-started/introducing-snyk/snyk-web-ui/) consists of the following steps:
 
 1\. [Enabling the **Snyk Code** option in your Snyk Org Settings](step-1-enabling-the-snyk-code-option.md).\
 **Note**: If you intend to use Snyk Code with the CLI, IDE, or API, you still need to enable the **Snyk Code** option via the Web UI.

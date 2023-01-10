@@ -53,10 +53,12 @@ Read more about Snyk CLI in [Getting started with the CLI](../../../snyk-cli/get
 
 PHP projects can be imported from any of the Git services we support. Once imported, Snyk analyzes your projects based on their supported manifest files.
 
-Once you select a project for import, we build the dependency tree based on these manifest files:
+Once you select a project for import, Snyk builds the dependency tree based on these manifest files. Both files are required:
 
-* Composer.json
+* composer.json
 * composer.lock
+
+If the composer.lock file is not present in the repo, the import will not process the composer.json manifest.&#x20;
 
 ## **Git settings for PHP**
 
