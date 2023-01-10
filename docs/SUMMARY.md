@@ -4,7 +4,7 @@
 * [Getting started](getting-started/README.md)
   * [Introducing Snyk](getting-started/introducing-snyk/README.md)
     * [Snyk Web UI](getting-started/introducing-snyk/snyk-web-ui/README.md)
-      * [Getting started with the Snyk Web UI](getting-started/introducing-snyk/snyk-web-ui/getting-started-with-the-snyk-web-ui.md)
+      * [Exploring the Snyk Web UI](getting-started/introducing-snyk/snyk-web-ui/getting-started-with-the-snyk-web-ui.md)
   * [Quickstart](getting-started/quickstart/README.md)
     * [Create a Snyk account](getting-started/quickstart/create-a-snyk-account.md)
     * [Set up an integration](getting-started/quickstart/set-up-an-integration.md)
