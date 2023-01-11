@@ -2,12 +2,12 @@
 
 {% hint style="info" %}
 **Recap**\
-You have [imported a Project into Snyk](import-a-project.md), and Snyk has scanned that Project for any issues.
+You have [imported a Project into Snyk](import-a-project.md) and Snyk has scanned that Project for any issues.
 {% endhint %}
 
-You can now view the results of your scan - for example:
+You can now view the results of your scan on the Projects listing page and select the link to view Project details.
 
-![](<../../.gitbook/assets/Screenshot 2022-07-26 at 16.19.27.png>)
+<figure><img src="../../.gitbook/assets/Screenshot 2022-07-26 at 16.19.27.png" alt="Projects listing page showing a new scan"><figcaption><p>Projects listing page showing a new scan</p></figcaption></figure>
 
 The scan results and available actions depend on the type of Project you scan:
 
@@ -16,6 +16,6 @@ The scan results and available actions depend on the type of Project you scan:
 * Container images: see [Snyk Container](../../products/snyk-container/getting-started-snyk-container/)
 * Infrastructure as Code (IaC), Kubernetes, Helm and Terraform configuration files: see [Snyk IaC](../../products/snyk-infrastructure-as-code/getting-started-snyk-iac.md)
 
-### What's next?
+**What's next?**
 
-Now, you can start to fix your issues. See [Fixing and prioritizing issues](../../manage-issues/).
+Now, you can start to fix your issues. See [Manage issues](../../manage-issues/).
