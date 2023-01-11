@@ -18,23 +18,11 @@ To create a Snyk account:
 Different pricing plans are available, see [Plans](../../snyk-processes/plans.md) for details.
 {% endhint %}
 
-**What's next?**
+### **What's next?**
 
-You can follow the walkthrough prompts as shown in the example that follows, or run your own setup process; start with [set up a Snyk integration](set-up-an-integration.md).
+To scan your code, you must first integrate Snyk with the repository holding that code, either:
 
-The Snyk web app provides some optional getting started walkthrough prompts. You can choose to provide some information to help Snyk guide your experience, and then follow the prompts to integrate your code repository for a seamless experience.
+* Following the automated prompts, immediately after creating a Snyk account.
+* Manually, at any time.
 
-For example follows.
-
-<figure><img src="../../.gitbook/assets/Connect Your Code - 1 - Select integration.png" alt="Choose integration method"><figcaption><p>Choose integration method</p></figcaption></figure>
-
-If you select **GitHub**, then fill in the details as prompted (see [Set up an integration](set-up-an-integration.md)).
-
-<figure><img src="../../.gitbook/assets/Connect Your Code - 2 - Permissions.png" alt="Set access permissions"><figcaption><p>Set access permissions</p></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/Connect Your Code - 3 - Feature configuration.png" alt="Configure automation settings &#x26; authenticate"><figcaption><p>Configure automation settings &#x26; authenticate</p></figcaption></figure>
-
-Finally, you can [import a Project](import-a-project.md) to scan:
-
-<figure><img src="../../.gitbook/assets/add_project-10nov2022.png" alt="Add your first project"><figcaption><p>Add your first project</p></figcaption></figure>
-
+See [Set up an integration](set-up-an-integration.md) for details.
