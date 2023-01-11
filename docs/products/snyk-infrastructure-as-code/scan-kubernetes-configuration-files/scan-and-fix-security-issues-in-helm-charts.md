@@ -6,7 +6,7 @@ In addition to scanning Kubernetes configuration files for misconfigurations and
 
 * An administrator should [connect your organization](../scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess.md) with your preferred Git repository and enable detection of configuration files as described.
 * The repository should follow the [standard Chart directory structure](https://helm.sh/docs/topics/charts/#the-chart-file-structure), however the `charts/` sub-directory is unsupported.
-* Snyk currently only supports templating Helm charts using the default values file, `values.yaml`.&#x20;
+* Snyk currently only supports templating Helm charts using the default values file, `values.yaml`.
   * If you want to scan particular configurations of Helm values, then the supported workflow is to template the chart outside of Snyk and scan the manifests as regular Kubernetes files.
   * Helm charts that cannot be templated from their default values file are currently unsupported.
 * Any chart dependencies must be publicly downloadable from the configured Helm repository. Subcharts or non-publicly downloadable dependencies are currently unsupported, the supported workflow in these cases is to template the chart outside of Snyk and scan the manifests as regular Kubernetes files.
@@ -21,7 +21,7 @@ In addition to scanning Kubernetes configuration files for misconfigurations and
 4. Click the project link you're interested in, to view the scan results and to correct your configuration files accordingly.
    1. Projects that were created from external dependencies will also be scanned and issues shown.
 
-![](<../../../.gitbook/assets/image (71) (2) (1).png>)
+![](<../../../.gitbook/assets/image (316) (1) (1) (1) (1) (1) (2).png>)
 
 ## Templating charts and scan Kubernetes manifests
 

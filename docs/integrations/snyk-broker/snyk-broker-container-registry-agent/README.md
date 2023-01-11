@@ -140,7 +140,7 @@ Catalog endpoint `https://<artifactory-host>/artifactory/api/docker/<artifactory
 
 #### **ECR**
 
-![A high-level architecture of the brokered ECR integration](<../../../.gitbook/assets/untitled (1) (2).png>)
+![A high-level architecture of the brokered ECR integration](<../../../.gitbook/assets/untitled (1) (1) (1).png>)
 
 **Required AWS Resource**
 
