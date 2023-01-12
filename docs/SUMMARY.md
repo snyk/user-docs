@@ -505,7 +505,7 @@
     * [Snyk for Python](products/snyk-open-source/language-and-package-manager-support/snyk-for-python.md)
     * [Snyk for Ruby](products/snyk-open-source/language-and-package-manager-support/snyk-for-ruby.md)
     * [Snyk for Scala](products/snyk-open-source/language-and-package-manager-support/snyk-for-scala.md)
-    * [Snyk for Swift and Objective-C (CocoaPods)](products/snyk-open-source/language-and-package-manager-support/snyk-for-swift-and-objective-c-cocoapods.md)
+    * [Snyk for Swift and Objective-C](products/snyk-open-source/language-and-package-manager-support/snyk-for-swift-and-objective-c-cocoapods.md)
   * [Getting started with Snyk Open Source](products/snyk-open-source/getting-started-snyk-open-source.md)
   * [Use Snyk Open Source from the CLI](products/snyk-open-source/use-snyk-open-source-from-the-cli/README.md)
     * [Understanding the Snyk Open Source CLI results](products/snyk-open-source/use-snyk-open-source-from-the-cli/understanding-the-snyk-open-source-cli-results.md)
