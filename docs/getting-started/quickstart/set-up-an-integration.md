@@ -32,7 +32,7 @@ Finally, you can [Import a Project](import-a-project.md) to scan:
 
 ### Manual process (any time)
 
-You can add an integration to Snyk manually at any point (See Integrate with Snyk for more details).
+You can add an integration to Snyk manually at any point (See [Integrate with Snyk](../../integrations/) for more details).
 
 #### Example: Git repository integration
 
