@@ -2,10 +2,6 @@
 
 Snyk Open Source supports the following programming languages, build tools, and package managers.
 
-{% hint style="info" %}
-For supported languages in other Snyk products, see [Snyk languages and integrations](broken-reference).&#x20;
-{% endhint %}
-
 | **Language**                                                         | **Package manager/build tool**                                                        |
 | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 | [.NET](snyk-for-.net.md) (C#, F#, Visual Basic)                      | Nuget, Paket                                                                          |
