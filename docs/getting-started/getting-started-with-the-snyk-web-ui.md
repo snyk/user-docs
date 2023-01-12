@@ -77,7 +77,7 @@ Select the **Projects** link in the navigation on the dashboard to open the **Pr
 * Filter, group, and sort your Projects.
 * View tips and the latest import log for your Projects.
 * Select the link for each Project to view the Project details page with a summary and Issue information.
-* Use the plus icon and add Target from a custom location when Projects are grouped by Target.
+* Use the plus icon and add a Target from a custom location when Projects are grouped by Target. This allows for grouping projects in another Target in the list.
 * Use the settings icon on the ungrouped **Projects** listing or the **Settings** tab on the Project detail page to configure General and GitHub integration settings for notifications, Project testing, and pull request (PR) frequency. You can also look up the unique Project ID and deactivate or delete a project on the Settings tab.
 * View the Project history on the **History** tab.
 
