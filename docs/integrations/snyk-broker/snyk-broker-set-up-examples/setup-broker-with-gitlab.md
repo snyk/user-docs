@@ -1,19 +1,19 @@
-# Setup Broker with GitLab
+# Set up Broker with GitLab
 
 Configuring GitLab with broker is useful to ensure a secure connection with your on-premise or cloud GitLab deployment.
 
-### To configure Broker to be used for GitLab
+## Configure Broker to be used for GitLab
 
 {% hint style="info" %}
-Please ask your Snyk account team to provide you with a Broker token.
+Ask your Snyk account team to provide you with a Broker token.
 {% endhint %}
 
 {% hint style="info" %}
-You will require Docker or a way to run Docker containers
+You need Docker or a way to run Docker containers
 {% endhint %}
 
 * Obtain your GitLab Broker token from Snyk.
-* To use the Broker client with GitLab.com or an on-prem GitLab deployment, run `docker pull snyk/broker:gitlab` tag. The following environment variables are mandatory to configure the Broker client:
+* To use the Broker client with GitLab.com or an on-prem GitLab deployment, run `docker pull snyk/broker:gitlab` tag. The following environment variables are required to configure the Broker client:
   * `BROKER_TOKEN` - the Snyk Broker token, obtained from your GitLab integration settings view (app.snyk.io).
   * `GITLAB_TOKEN` - a GitLab personal access token with `api` scope
   * `GITLAB` - the hostname of your GitLab deployment, such as `your.gitlab.domain.com` or `GitLab.com`.
@@ -21,7 +21,7 @@ You will require Docker or a way to run Docker containers
   * `BROKER_CLIENT_URL` - the full URL of the Broker client as it will be accessible to GitLab.com webhooks, such as `http://broker.url.example:8000`
 * Example:
 
-```
+```bash
 docker run --restart=always \
            -p 8000:8000 \
            -e BROKER_TOKEN=<secret-broker-token> \
@@ -29,19 +29,22 @@ docker run --restart=always \
            -e GITLAB=<your.gitlab.domain.com (no http/s)> \
            -e PORT=8000 \
            -e BROKER_CLIENT_URL=<http://broker.url.example:8000 (dns/IP:port)> \
-           -e ACCEPT=/private/accept.json
-           -v /local/path/to/private:/private \
+           -e ACCEPT_IAC=true \
+           -e ACCEPT_CODE=true \
        snyk/broker:gitlab
 ```
 
-* If necessary, go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and make any configuration changes if required (For example, if the GitLab instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration). A fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for GitLab is attached.
+* This command sets up a fully configured Broker client that will analyze Open Source, IaC, Container and Code files.
+* If necessary, go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and make any configuration changes ineeded.\
+  For example, if the GitLab instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration.\
+  A fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for GitLab is attached. You **cannot run** the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument.
 
-{% file src="../../../.gitbook/assets/accept (1).json" %}
+{% file src="../../../.gitbook/assets/accept (3) (1).json" %}
 
-* Paste the Broker Client configuration to start the broker client container
-* Once the container is up, the GitLab Integrations page should show the connection to GitLab and you should be able to `Add Projects`
+* Paste the Broker Client configuration to start the broker client container.
+* Once the container is up, the GitLab Integrations page should show the connection to GitLab and you should be able to `Add Projects`.
 
-Basic Troubleshooting
+## Basic troubleshooting for Broker with GitLab
 
-* Run `docker logs <container id>` where container id is the GitLab Broker container ID to look for any errors
-* Ensure relevant ports are exposed to GitLab
+* Run `docker logs <container id>` where container id is the GitLab Broker container ID to look for any errors.
+* Ensure relevant ports are exposed to GitLab.

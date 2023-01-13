@@ -1,11 +1,11 @@
-# Setup Broker with GitHub
+# Set up Broker with GitHub
 
 Configuring GitHub with Broker is useful to ensure a secure connection with your GitHub account.
 
-### To configure Broker to be used for GitHub&#x20;
+## Configure Broker to be used for GitHub
 
 {% hint style="info" %}
-Please ask your Snyk account team to provide you with a Broker token
+Ask your Snyk account team to provide you with a Broker token.
 {% endhint %}
 
 {% hint style="info" %}
@@ -23,30 +23,33 @@ To use the Broker client with GitHub.com:
 
     For example:
 
-```
+```bash
 docker run --restart=always \
            -p 8000:8000 \
            -e BROKER_TOKEN=<secret-broker-token> \
            -e GITHUB_TOKEN=<secret-github-token> \
            -e PORT=8000 \
            -e BROKER_CLIENT_URL=<http://broker.url.example:8000 (dns/IP:port)> \
-           -e ACCEPT=/private/accept.json
-           -v /local/path/to/private:/private \
+           -e ACCEPT_IAC=true \
+           -e ACCEPT_CODE=true \
        snyk/broker:github-com
 ```
 
-* If necessary, go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and make any configuration changes needed. For example, if the GitHub instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration. A fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for GitHub is attached.
+* This command set sup a fully configured broker client that will analyze Open Source, IaC, Container and Code files.I
+* If necessary, go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and make any configuration changes needed.\
+  For example, if the GitHub instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration.\
+  A fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for GitHub is attached. You **cannot run** the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument.
 
-{% file src="../../../.gitbook/assets/accept (3) (1).json" %}
+{% file src="../../../.gitbook/assets/accept (1) (1).json" %}
 
 * Paste the Broker Client configuration to start the broker client container.
 * Once the container is up, the GitHub Integrations page should show the connection to GitHub and you should be able to `Add Projects`.
 
-### Basic Troubleshooting
+## Basic troubleshooting for Broker with GitHub
 
-#### **Support of big manifest files (> 1Mb) for GitHub**&#x20;
+### **Support of big manifest files (> 1Mb) for GitHub**
 
-One reason for failing of open Fix/Upgrade PRs or PR/recurring tests may be fetching big manifest files (> 1Mb) failure. To address this issue, whitelist an additional Blob API endpoint in `accept.json`. This should be in a private array:
+One reason for failing of open Fix/Upgrade PRs or PR/recurring tests may be fetching big manifest files (> 1Mb). To address this issue, whitelist an additional Blob API endpoint in `accept.json`. This should be in a private array:
 
 ```
 {
@@ -57,9 +60,9 @@ One reason for failing of open Fix/Upgrade PRs or PR/recurring tests may be fetc
 }
 ```
 
-**Note:** To ensure the maximum possible security, Snyk does not enable this rule by default, as usage of this endpoint means that the Snyk platform can theoretically access all files in this repository, as the path does not include specific allowed file names.
+**Note:** To ensure the maximum possible security, Snyk does not enable this rule by default, as usage of this endpoint means that the Snyk platform can theoretically access all files in this repository, because the path does not include specific allowed file names.
 
-#### **Additional troubleshooting**
+### **Additional troubleshooting for Broker with GitHub**
 
 * Run `docker logs <container id>` where container id is the GitHub Broker container ID to look for any errors.
 * Ensure relevant ports are exposed to GitHub.
