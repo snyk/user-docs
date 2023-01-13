@@ -2,7 +2,7 @@
 
 Snyk Container supports the following operating system distributions.
 
-If you use an unsupported distribution, such as one that has reached its End-of-life (EOL) and is no longer being maintained, Snyk provides a message to tell you this is unsupported.
+If you use an unsupported distribution, such as one which has reached its End-of-life (EOL) and is no longer being maintained, Snyk provides a message to tell you this is unsupported.
 
 {% hint style="info" %}
 For unsupported distributions, you may not receive any notifications of vulnerabilities due to a lack of security updates: this does not mean that your image is secure.
@@ -69,10 +69,6 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * Red Hat Enterprise Linux 8
 * Red Hat Enterprise Linux 7
 * Red Hat Enterprise Linux 6
-
-### Rocky Linux
-
-* Rocky Linux 8
 
 ### SUSE Linux Enterprise Server (SLES)
 

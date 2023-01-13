@@ -15,4 +15,7 @@ Snyk Broker is an open-source project, hosted at [GitHub](https://github.com/sny
 Snyk Broker is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-##
+{% hint style="warning" %}
+**Multi-tenant settings**\
+When setting up Broker and/or Code Agent for use in Multi-tenant environments, additional variables are required. Please see [Regional hosting and data residency](https://docs.snyk.io/snyk-processes/data-residency-at-snyk#urls-and-endpoints) for details.
+{% endhint %}

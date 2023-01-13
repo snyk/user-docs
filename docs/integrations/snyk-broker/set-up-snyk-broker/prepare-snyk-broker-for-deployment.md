@@ -3,11 +3,16 @@
 ## Prerequisites
 
 * Client machine system requirements: 1 CPU, 256MB of Ram
-* Network access: an outbound TLS (443) to [https://broker.snyk.io](https://broker.snyk.io) that is also allowed by any firewalls installed on your network. If you are using either the Snyk EU or AU datacenter, the address will instead be [https://broker.eu.snyk.io](https://broker.eu.snyk.io) or [https://broker.au.snyk.io](https://broker.au.snyk.io).
+* Network access: an outbound TLS (443) to [https://broker.snyk.io](https://broker.snyk.io) that is also allowed by any firewalls installed on your network.&#x20;
 * A Snyk account
 * Self-enabled Broker integration using the Snyk API, or enabled by contacting Snyk support at **support@snyk.io**
 * A unique UUID token called Broker token. See[ Retrieve a unique Broker client token](prepare-snyk-broker-for-deployment.md#generate-credentials-in-the-target-application-for-snyk-broker)
 * Docker configured to pull images from Docker Hub
+
+{% hint style="warning" %}
+**Multi-tenant settings**\
+When setting up Broker and/or Code Agent for use in Multi-tenant environments, additional variables are required. Please see [Regional hosting and data residency](https://docs.snyk.io/snyk-processes/data-residency-at-snyk#urls-and-endpoints) for details.
+{% endhint %}
 
 ## Prepare hosts for installation
 
