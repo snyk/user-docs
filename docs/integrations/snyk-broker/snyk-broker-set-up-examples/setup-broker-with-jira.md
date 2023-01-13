@@ -24,7 +24,7 @@ Docker is a prerequisite.
     `-e BROKER_CLIENT_URL=http://<broker IP/DNS>:<port> \`\
     `-e PORT=<port> \`\
     `snyk/broker:jira`
-6. If necessary, go to the Advanced Configuration section of [the Broker repository](https://github.com/snyk/broker) and make any configuration changes needed.\
+6. If necessary, go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and make any configuration changes needed.\
    For example, if the Jira instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration.
 7. Paste the Broker Client configuration to start the Broker client container.
 8. Once the container is up, the Jira Integrations page shows the connection to Jira and under Projects you can create Jira tickets
