@@ -38,4 +38,4 @@ Snyk can again act as a “gate” when building the application, checking that 
 
 You can choose to either report on issues (allowing the build to happen) or to stop the build if issues are encountered. You can also easily add criteria to this process (including exploitability, CVSS score, whether a fix exists), to focus on fixing the issues that matter to you.
 
-We also provide a number of [Snyk tools](../../snyk-api-info/other-tools/) to help with this process.
+We also provide a number of [Snyk tools](../../other-tools/) to help with this process.
