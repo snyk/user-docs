@@ -13,6 +13,7 @@ With Snyk Infrastructure as Code, you can test your configuration files directly
 * [Test your AWS CDK files with Snyk CLI](test-your-aws-cdk-files-with-our-cli-tool.md)
 * [Test your Kubernetes files with Snyk CLI](test-your-kubernetes-files-with-our-cli-tool.md)
 * [Test your ARM files with Snyk CLI](test-your-arm-files-with-the-cli-tool.md)
+* [Test your Serverless files with Snyk CLI](test-your-serverless-files-with-snyk-cli.md)
 
 You can also test the following types of files:
 
@@ -29,11 +30,8 @@ For IaC CLI results to appear in the Snyk Web UI, you can use the [`snyk iac tes
 
 Alternatively, you can add an [SCM integration](https://docs.snyk.io/integrations/git-repository-scm-integrations) and Snyk will monitor and test a given git repository on a recurring basis.
 
-
-
 ## Using Snyk behind a proxy
 
-If you are using a proxy, see [Proxy configuration for Snyk CLI](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli/proxy-configuration-for-snyk-cli).\
-
+If you are using a proxy, see [Proxy configuration for Snyk CLI](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli/proxy-configuration-for-snyk-cli).\\
 
 For IaC scans specifically, you must also whitelist the \*.snyk.io address, as explained[ ](https://support.snyk.io/hc/en-us/articles/360002153077-How-can-we-whitelist-Snyk-IP-addresses-)on the page [How can we whitelist Snyk IP addresses?](https://support.snyk.io/hc/en-us/articles/360002153077-How-can-we-whitelist-Snyk-IP-addresses-)
