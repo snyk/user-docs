@@ -83,9 +83,12 @@ EU and AU datacenter Snyk accounts are available only with the purchase of an [E
 
 ### Login and Web UI URLs
 
-**EU**\
-[https://app.eu.snyk.io/](https://app.eu.snyk.io/)\
-**AU**\
+**EU**
+
+[https://app.eu.snyk.io/](https://app.eu.snyk.io/)
+
+**AU**
+
 [https://app.au.snyk.io/](https://app.au.snyk.io/)
 
 **Note:** using Snyk.io or app.snyk.io will not redirect you.
