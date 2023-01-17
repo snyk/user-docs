@@ -2,7 +2,7 @@
 
 Snyk offers security scanning to test your projects for vulnerabilities, both through the [Snyk CLI ](../../../snyk-cli/)and from the Snyk Web UI through different [Snyk Integrations](../../../integrations/).
 
-This page describes how to use Snyk to scan your .NET projects.
+This page describes how to use Snyk to scan your .NET Projects.
 
 ## Features of Snyk for .NET
 
