@@ -3,18 +3,18 @@
 Snyk supports testing and monitoring of Go projects that have dependencies managed by [Go Modules](https://golang.org/ref/mod), [dep,](https://github.com/golang/dep) and [govendor](https://github.com/kardianos/govendor).
 
 {% hint style="warning" %}
-After January 1, 2023, Snyk will no longer support govendor projects. As a general security best practice, Snyk recommends using tools that are consistently maintained and up-to-date.&#x20;
+After January 1, 2023, Snyk will no longer support govendor projects. As a general security best practice, Snyk recommends using tools that are consistently maintained and up-to-date.
 
-Because govendor was [archived in GitHub](https://github.com/kardianos/govendor), it has not been receiving bug fixes and security updates, nor has it been improved and maintained.&#x20;
+Because govendor was [archived in GitHub](https://github.com/kardianos/govendor), it has not been receiving bug fixes and security updates, nor has it been improved and maintained.
 
-Once Snyk no longer supports scanning of govendor projects, a warning will be issued and no results will be received.&#x20;
+Once Snyk no longer supports scanning of govendor projects, a warning will be issued and no results will be received.
 
-Snyk recommends using [Go Modules](https://go.dev/ref/mod), which is considered production beginning with  go1.14 but which also works well in go1.13 and go1.12.&#x20;
+Snyk recommends using [Go Modules](https://go.dev/ref/mod), which is considered production beginning with go1.14 but which also works well in go1.13 and go1.12.
 {% endhint %}
 
 The following describes how to use Snyk to scan your Go projects:
 
-### Features <a href="#h_01esm3gfnmn0f7art59aek97tm" id="h_01esm3gfnmn0f7art59aek97tm"></a>
+## Features of Snyk for Go <a href="#h_01esm3gfnmn0f7art59aek97tm" id="h_01esm3gfnmn0f7art59aek97tm"></a>
 
 {% hint style="info" %}
 Some of these features may not be available for your Snyk subscription plan.
@@ -63,7 +63,7 @@ When testing dep projects via the CLI Snyk requires dependencies to be installed
 
 To build the dependency tree, Snyk analyzes your `vendor/vendor.json` files.
 
-When testing Govendor projects via the CLI, Snyk requires that dependencies be installed:  run `govendor sync` to achieve this.
+When testing Govendor projects via the CLI, Snyk requires that dependencies be installed: run `govendor sync` to achieve this.
 
 ## Git services for Go projects
 
@@ -78,7 +78,7 @@ To build the dependency tree Snyk, runs the `go mod graph` command using the `go
 
 **Private modules**
 
-Go Modules projects that depend on modules from private Git repositories are supported when the private repositories are in the same Git organization as the main project repository.&#x20;
+Go Modules projects that depend on modules from private Git repositories are supported when the private repositories are in the same Git organization as the main project repository.
 
 {% hint style="info" %}
 Snyk supports a single private Git repository for _all_ the Go Modules projects you have.

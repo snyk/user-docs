@@ -4,6 +4,8 @@ Snyk supports testing projects that have their dependencies managed by Bazel.
 
 Support is available through the [Snyk API](../../../snyk-api-info/).
 
+## Features of Snyk for Bazel
+
 {% hint style="info" %}
 **Feature availability**\
 The Snyk API is available with Business and Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.

@@ -4,6 +4,8 @@ Snyk offers security scanning to test your projects for vulnerabilities, both th
 
 This page describes how to use Snyk to scan your .NET projects.
 
+## Features of Snyk for .NET
+
 {% hint style="info" %}
 **Feature availability**\
 Features may not be available, depending on your plan. See [pricing plans](https://snyk.io/plans/) for more details.

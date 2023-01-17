@@ -2,6 +2,8 @@
 
 You can use Snyk to scan C/C++ projects through the [CLI](../../../snyk-cli/).
 
+## Features of Snyk for C/C++
+
 {% hint style="info" %}
 **Feature availability**\
 Some features may not be available, depending on your plan. See [pricing plans](https://snyk.io/plans/) for more details.
