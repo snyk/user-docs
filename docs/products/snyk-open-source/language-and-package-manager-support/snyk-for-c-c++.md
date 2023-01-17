@@ -1,21 +1,19 @@
 # Snyk for C / C++
 
-You can use Snyk to scan C / C++ projects through the [CLI](../../../snyk-cli/).
-
-### Features
+You can use Snyk to scan C/C++ projects through the [CLI](../../../snyk-cli/).
 
 {% hint style="info" %}
-**Note**\
-Some features may not be available, depending on your subscription plan.
+**Feature availability**\
+Some features may not be available, depending on your plan. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 | Package managers / Features | CLI support | Git support | License scanning | Fix PRs |
 | --------------------------- | ----------- | ----------- | ---------------- | ------- |
 | C/C++                       | ✔︎          |             |                  |         |
 
-### How it works
+## How Snyk for C/C++ works
 
-Scans are powered by an open source database, periodically updated with the latest source code from different online sources.
+Scans are powered by an open source database, periodically updated with the latest source code from online sources.
 
 {% hint style="info" %}
 To navigate through the vulnerabilities for C/C++, use the [Snyk Vuln DB](https://security.snyk.io).
@@ -33,7 +31,7 @@ When you run the `snyk test --unmanaged` command, Snyk:
 To scan the project, the dependencies must be available as source code in the scanned directory. If the dependencies are in a different location, that location must be scanned.
 {% endhint %}
 
-#### Scanning archives
+### Scanning archives
 
 By default, archives are not scanned. However, Snyk CLI can recursively extract archives to analyze the source code inside.
 
@@ -48,16 +46,16 @@ The supported archive formats are:
 ### Constraints and limitations
 
 {% hint style="info" %}
-The following constraints and limitations are by design. While we may work on improvements in the future, they are not considered an issue. Issues that are planned to be addressed are in the [Known Issues ](snyk-for-c-c++.md#known-issues)section.
+The following constraints and limitations are by design. While Snyk may work on improvements in the future, they are not considered an issue. Issues that are planned to be addressed are in the [Known issues](snyk-for-c-c++.md#known-issues-with-snyk-for-c-c++) section.
 {% endhint %}
 
-#### **Dependencies source code needs to be available**
+### **Dependencies source code needs to be available**
 
 For Snyk CLI to be able to find dependencies in your source code, enough of the full dependencies source code needs to be present in the scanned folder.
 
-Having a large percentage of files in their original (unchanged) form is critical to accurately identify dependencies and report the correct set of vulnerabilities back. Modifying that source code reduces the confidence of the scanning engine resulting in less accurate results. Other potential issues could include dependencies not being identified or being identified incorrectly (as a different version or even a different package).
+Having a large percentage of files in their original (unchanged) form is critical to accurately identifying dependencies and reporting the correct set of vulnerabilities back. Modifying that source code reduces the confidence of the scanning engine, resulting in less accurate results. Other potential issues could include dependencies not being identified or being identified incorrectly, as a different version or even a different package.
 
-The example below shows a typical package with dependencies listed:
+The example that follows shows a typical package with dependencies listed:
 
 ```
 c-example
@@ -84,18 +82,20 @@ c-example
 ...
 ```
 
-#### Data collection note
+### Data collection note
 
 When you scan C++ projects, the following data is collected and may be stored for troubleshooting purposes:
 
-| Category                        | Description                                                                                                                                                                                          |
-| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Hashes of the scanned files     | All files are converted to a list of irreversible hashes.                                                                                                                                            |
-| Relative paths to scanned files | <p>The paths to files relative to the directory being scanned are included for better identification and matching.<br><br>Example:<br><code>./project-name/vendor/bzip2-1.0.6/blocksort.c</code></p> |
+**Hashes of the scanned files:** All files are converted to a list of irreversible hashes.
 
-### Snyk CLI for C / C++ projects
+**Relative paths to scanned files:** The paths to files relative to the directory being scanned are included for better identification and matching.\
+\
+Example:\
+`./project-name/vendor/bzip2-1.0.6/blocksort.c`
 
-#### Install the Snyk CLI
+## Snyk CLI for C/C++ projects
+
+### Install the Snyk CLI
 
 C/C++ scanning is available in [Snyk CLI](../../../snyk-cli/). See [Install the CLI](../../../snyk-cli/install-the-snyk-cli.md) for details.
 
@@ -103,7 +103,7 @@ C/C++ scanning is available in [Snyk CLI](../../../snyk-cli/). See [Install the 
 The minimum version of Snyk CLI with C/C++ scanning is 1.857.0.
 {% endhint %}
 
-#### Run the test
+### Run the test
 
 To test your project for vulnerabilities, run:
 
@@ -112,10 +112,10 @@ $ snyk test --unmanaged
 ```
 
 {% hint style="warning" %}
-If you scan a Linux project on Windows, make sure the repository is cloned with Linux line endings. See the [Known Issues](snyk-for-c-c++.md#known-issues) section for more details.
+If you scan a Linux project on Windows, make sure the repository is cloned with Linux line endings. See the [Known issues](snyk-for-c-c++.md#known-issues-with-snyk-for-c-c++) section for details.
 {% endhint %}
 
-#### Displaying dependencies
+### Displaying dependencies
 
 To display dependencies, use the `--print-deps` option:
 
@@ -147,7 +147,7 @@ Dependencies:
     ... and 2857 more files
 ```
 
-#### Understanding the confidence level
+### Understanding the confidence level
 
 You may need to change the source code of the dependencies that you use in your software. As Snyk uses file signatures to find the closest possible match to an open source library, your changes may decrease the accuracy of the identification of the actual library.
 
@@ -160,7 +160,7 @@ confidence: 0.993
 
 This confidence level shows how confident Snyk is about the actual identification of the dependency. The number can be between 0 and 1 and the higher it is, the more accurate the identification is. So a confidence of **1** means that all the files in the source tree fully matched all the expected files in our database.
 
-#### JSON output
+### JSON output
 
 To get a machine-readable output in JSON, use the `--json` option:
 
@@ -274,7 +274,7 @@ The following `snyk` command line options are supported with the `snyk test --un
 
 `--severity-threshold=<low|medium|high|critical>`
 
-For more information about command line options see the articles [snyk test --unmanaged](https://docs.snyk.io/snyk-cli/commands/test#options) or [snyk monitor --unmanaged](https://docs.snyk.io/snyk-cli/commands/monitor#options)
+For more information about command line options see the Snyk help docs: [snyk test --unmanaged](https://docs.snyk.io/snyk-cli/commands/test#options) or [snyk monitor --unmanaged](https://docs.snyk.io/snyk-cli/commands/monitor#options)
 
 ### Import scan results in the Snyk Web UI
 
@@ -293,13 +293,13 @@ This creates a snapshot of dependencies and vulnerabilities and imports them int
 
 Importing a project with unmanaged dependencies creates a new project:
 
-![Project with unmanaged dependencies](../../../.gitbook/assets/kuva.png)
+<figure><img src="../../../.gitbook/assets/kuva.png" alt="Project with unmanaged dependencies"><figcaption><p>Project with unmanaged dependencies</p></figcaption></figure>
 
-### Known issues
+## Known issues with Snyk for C/C++
 
-#### **Scanning on Windows**
+**Scanning on Windows**
 
-Many open source projects in git use Unix line endings. By default, git on Windows converts Unix line endings to Windows line endings and only converts them back for the actual commits. The Snyk database contains source code signatures with the original line endings (as defined in the individual projects), so when you scan on Windows, the signatures generated for the files with Windows line endings are different from the signatures in the Snyk database. In that case, it is very likely no dependencies will be found.
+Many open source projects in Git use Unix line endings. By default, Git on Windows converts Unix line endings to Windows line endings and only converts them back for the actual commits. The Snyk database contains source code signatures with the original line endings as defined in the individual Projects, so when you scan on Windows, the signatures generated for the files with Windows line endings are different from the signatures in the Snyk database. In thiG case, it is very likely no dependencies will be found.
 
 To scan a project with Unix line endings on Windows, disable git line endings conversion. To configure this globally, run:
 
@@ -307,20 +307,20 @@ To scan a project with Unix line endings on Windows, disable git line endings co
 git config --global core.autocrlf false
 ```
 
-### Frequently asked questions
+## Frequently asked questions, Snyk for C/C++
 
-#### **Is my source code sent to Snyk servers?**
+### **Is my source code sent to Snyk servers?**
 
 No. The files are converted to a list of hashes before they are sent for scanning.
 
-#### **Why did Snyk not find any dependencies?**
+### **Why did Snyk not find any dependencies?**
 
 Snyk stores the official releases of many of open source components in the Snyk database but it is possible that the source code you scanned is not there or is not found. If your scan does not find any dependencies [submit a request to support](https://snyk.zendesk.com/agent/dashboard).
 
 Here are a few things that you can check on your own:
 
-* The source code of the dependencies you scanned is actually available as source code (unpacked) in the folder that you scanned. If you use a package manager, such as Conan, the source code is likely to be in the Conan cache, along with the source code of other dependencies of your other projects. To scan dependencies managed by a package manager, we recommend that you do that in a clean environment (for example during a build).
+* The source code of the dependencies you scanned is available as source code (unpacked) in the folder that you scanned. If you use a package manager, such as Conan, the source code is likely to be in the Conan cache, along with the source code of other dependencies of your other projects. To scan dependencies managed by a package manager, Snyk recommends that you do that in a clean environment (for example during a build).
 * The source code of the dependencies is not from an official release of the OSS component, and Snyk does not have it in the database
-* The source code of the OSS has been modified too much, so Snyk cannot detect it. If there are too few files and you modify most of them, Snyk cannot match them to a component from our database. Examples of common modifications are whitespace formatting and adding license or copyright headers.
-* You are on Windows, and git converted line endings to Windows line endings. Currently Snyk can recognize files that have retained their original line endings.
+* The source code of the OSS has been modified too much, so Snyk cannot detect it. If there are too few files and you modify most of them, Snyk cannot match them to a component from the Snyk database. Examples of common modifications are whitespace formatting and adding license or copyright headers.
+* You are on Windows, and Git converted line endings to Windows line endings. Currently Snyk can recognize files that have retained their original line endings.
 * The source code of the OSS components is too new. The Snyk database is refreshed monthly but it takes time for the latest releases to get processed.
