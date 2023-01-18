@@ -1,8 +1,8 @@
 # Snyk for Scala
 
-Snyk supports testing and monitoring Scala projects that have their dependencies managed by [sbt.](https://www.scala-sbt.org)
+Snyk supports testing and monitoring Scala Projects that have their dependencies managed by [sbt.](https://www.scala-sbt.org)
 
-## Features of Snyk support for Scala
+## Features of Snyk for Scala
 
 The following tables provide an outline of the general features Snyk offers by package manager. In addition to these features, Snyk may offer extra functionality related to the specific integration configurations.
 
