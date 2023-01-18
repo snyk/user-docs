@@ -2,91 +2,79 @@
 
 Snyk offers security scanning to test your projects for vulnerabilities, both through the [Snyk CLI ](../../../snyk-cli/)and from the Snyk Web UI through different [Snyk Integrations](../../../integrations/).
 
-The following describes how to use Snyk to scan your PHP projects:
+This page describes how to use Snyk to scan your PHP projects.
 
-## Features
+## Features of Snyk for PHP
 
 {% hint style="info" %}
-**Note**\
-Features might not be available, depending on your subscription plan.
+**Feature availability**\
+Features might not be available, depending on your plan. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 | Package managers / Features         | <p>CLI</p><p>support</p> | <p>Git</p><p>support</p> | License scanning | Fix PRs |
 | ----------------------------------- | ------------------------ | ------------------------ | ---------------- | ------- |
 | [Composer](https://getcomposer.org) | ✔︎                       | ✔︎                       | ✔︎               |         |
 
-## **How it works**
+## **How Snyk for PHP works**
 
-Once we’ve built the tree, we can use our [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in the dependency tree.
+After Snyk has built the tree, Snyk uses the [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in the dependency tree.
 
-{% hint style="info" %}
-**Note**\
-In order to scan your dependencies, you must ensure you have first installed the relevant package manager, and that your project contains the supported manifest files.
-{% endhint %}
+In order to scan your dependencies, you must ensure you have first installed the relevant package manager, and that your Project contains the supported manifest files.
 
-The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project, as well as the location of your project:
+The way Snyk analyzes and builds the tree varies depending on the language and package manager of the Project, as well as the location of your project. See [Snyk CLI for PHP Projects](snyk-for-php.md#snyk-cli-for-php-projects) and [Git services for PHP Projects](snyk-for-php.md#git-services-for-php-projects).
 
-* [Snyk CLI tool for PHP projects](snyk-for-php.md#snyk-cli-tool-for-php-projects)
-* [Git services for PHP projects](snyk-for-php.md#git-services-for-php-projects)
+## Snyk CLI for PHP Projects
 
-## Snyk CLI tool for PHP projects
+In order to build the dependency tree Snyk analyzes the `composer.json` and `composer.lock` files that it finds to identify the dependencies and their versions.
 
-The way by which Snyk analyzes and builds the tree varies depending on the language and package manager of the project.
+### **Prerequisites for Snyk CLI with PHP**
 
-In order to build the dependency tree Snyk analyzes the `composer.json` and `composer.lock` files that it finds to analyze the dependencies and their versions.
+* Ensure you have installed the relevant package manager before you begin using the Snyk CLI.
+* Ensure you have included the relevant manifest files supported by Snyk before testing.
+* [Install](../../../snyk-cli/install-the-snyk-cli.md) and authenticate the Snyk CLI to start analyzing Projects from your local environment.
 
-## **CLI parameters for PHP**
+### **CLI options for use with PHP**
 
-### **Prerequisites**
+There are no unique options for use when running Snyk for PHP.
 
-* Ensure you've installed the relevant package manager before you begin using the Snyk CLI tool.
-* Ensure you've included the relevant manifest files supported by Snyk before testing.
-* Install and authenticate the Snyk CLI to start analyzing projects from your local environment.
+For more information about Snyk CLI see [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli.md).
 
-### **Parameters**
+## Git services for PHP Projects
 
-There are no unique parameters when running Snyk for PHP.
+PHP Projects can be imported from any of the Git services Snyk supports. Once Projects have  been imported, Snyk analyzes your Projects based on their supported manifest files.
 
-Read more about Snyk CLI in [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli.md).
-
-## Git services for PHP projects
-
-PHP projects can be imported from any of the Git services we support. Once imported, Snyk analyzes your projects based on their supported manifest files.
-
-Once you select a project for import, Snyk builds the dependency tree based on these manifest files. Both files are required:
+Once you select a Project for import, Snyk builds the dependency tree based on these manifest files. Both of the following files are required:
 
 * composer.json
 * composer.lock
 
-If the composer.lock file is not present in the repo, the import will not process the composer.json manifest.&#x20;
+If the composer.lock file is not present in the repository, the import will not process the composer.json manifest.&#x20;
 
 ## **Git settings for PHP**
 
-By default, Snyk scans your production dependencies. From the Snyk UI you can configure whether to include your development dependencies (`require_dev`) in the scan for vulnerabilities.
+By default Snyk scans your production dependencies. From the Snyk UI you can configure whether to include your development dependencies (`require_dev`) in the scan for vulnerabilities.
 
-### **To update language preferences:**
+**To update language preferences:**
 
-1. Log in to your account and navigate to the relevant group and organization that you want to manage
-2. Click on settings ![](../../../.gitbook/assets/cog\_icon.png)> **Languages**.
-3. Click **Edit settings** for PHP and select **Scan dev dependencies** to set for your PHP projects in the specific organization to include both development and production dependencies.
-4. Click **Update settings**.
+1. Log in to your account and navigate to the relevant Group and Organization that you want to manage.
+2. Select **Settings** > **Languages**.
+3. Select **Edit settings** for PHP and select **Scan dev dependencies** to set for your PHP Projects in the specific eOrganization to include both development and production dependencies.
+4. Select **Update settings**.
 
-These settings will then be applied to all newly imported projects, and once re-tested, to all existing projects.
+These settings are applied to all newly imported Projects and to all existing projects when they are re-tested..
 
-## Troubleshooting for your PHP projects
+## Error messages for PHP Projects
 
-## Error messages
-
-The following error messages may appear for you when working with your PHP projects:
+The following error messages may appear when you are working with PHP Projects:
 
 * composer.json or composer.lock not found in path
 * Manifest file not found in path
 * Lockfile missing packages property
 * Lockfile or manifest file is not a valid JSON
 
-## Support
+## Support for Snyk for PHP
 
-If you run across any of these, or other issues, send the following files to us at [support@snyk.io](mailto:support@snyk.io) and we'll help you out:
+If you run across any of these, or other issues, send the following files to [support@snyk.io](mailto:support@snyk.io):
 
 * `composer.json`
 * `composer.lock`
