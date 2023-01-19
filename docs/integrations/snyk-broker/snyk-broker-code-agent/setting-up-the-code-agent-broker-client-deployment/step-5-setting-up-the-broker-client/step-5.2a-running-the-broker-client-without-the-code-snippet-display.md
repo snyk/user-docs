@@ -8,7 +8,7 @@ When such additional parameters are required, they are indicated in this section
 
 Once the Broker Client image is stored on your machine, use the docker run command in order to run the image and launch a Broker Client container that is based on it.
 
-The following explains how to set up the Broker Client in a way that will NOT display the code snippets of the Snyk Code results on the Web UI:
+The following explains how to set up the Broker Client in a way that does NOT display the code snippets of the Snyk Code results on the Web UI:
 
 <figure><img src="../../../../../.gitbook/assets/Broker - Results - without code snippets (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5).png" alt="Broker Client run with no display of code snippets"><figcaption><p>Broker Client run with no display of code snippets</p></figcaption></figure>
 
@@ -43,7 +43,7 @@ where:
     `-e GITHUB_API=<your.ghe.domain.com/api/v3_(without_http/s)> \`\
     `-e GITHUB_GRAPHQL=<your.ghe.domain.com/api_(without_http/s)> \`
   * **Azure Repos**: `-e AZURE_REPOS_HOST`\
-    **Note**: For [Azure Repos](../../../snyk-broker-set-up-examples/setup-broker-with-azure-repos.md) add the following parameter also:\
+    For [Azure Repos](../../../snyk-broker-set-up-examples/setup-broker-with-azure-repos.md) add the following parameter also:\
     `-e AZURE_REPOS_ORG=<azure_repo_org_name> \`
   * **Bitbucket Server/Data Center**: `-e BITBUCKET`\
     For [Bitbucket Server/Data Center](../../../snyk-broker-set-up-examples/data-center.md) add the following parameter also:\
