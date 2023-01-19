@@ -10,7 +10,7 @@ First pull the Code Agent Docker image from Docker Hub. Download the Snyk Code A
 
 The Docker image of the Code Agent is located at [Docker Hub](https://hub.docker.com/r/snyk/code-agent/).
 
-**To pull the Code Agent Docker image, i**n the terminal, enter:
+**To pull the Code Agent Docker image**, in the terminal, enter:
 
 ```
 docker pull snyk/code-agent
