@@ -1,7 +1,9 @@
 # Step 5.2a – Running the Broker Client without the code snippet display
 
 {% hint style="info" %}
-**Important!** The setup commands for running the Broker Client that are described in this section include the common commands that should be used for all SCMs. However, some SCMs require additional parameters for the Broker Client setup. When such additional parameters are required, they are indicated in this section, but when setting up a Broker Client for a specific SCM, it is recommended to also use the section that is dedicated for that SCM. For more information, see [Snyk Broker - Integration Setups](https://docs.snyk.io/features/snyk-broker/snyk-broker-set-up-examples).
+**Important!** The setup commands for running the Broker Client that are described in this section include the common commands used for all SCMs. However, some SCMs require additional parameters for the Broker Client setup.
+
+When such additional parameters are required, they are indicated in this section, but when setting up a Broker Client for a specific SCM, use also the section that is specific to that SCM. For more information, see [Snyk Broker integration setups](../../../../snyk-broker-set-up-examples/).
 {% endhint %}
 
 Once the Broker Client image is stored on your machine, you need to use the docker run command in order to run the image and launch a Broker Client container that is based on it.
