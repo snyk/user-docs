@@ -1,6 +1,6 @@
 # Obtaining your Broker token
 
-A Broker token is required for the [Broker Client component setup](../step-5-setting-up-the-broker-client/step-5.2a-running-the-broker-client-without-the-code-snippet-display/), and it is used in the `-e BROKER_TOKEN` parameter. The Broker token is associated with a specific Organization by default and with a specific integrated SCM, and for these it enables the Snyk Broker deployment method. For each integrated SCM, a different Broker token is required.
+A Broker token is required for the [Broker Client component setup](../step-5-setting-up-the-broker-client/step-5.2a-running-the-broker-client-without-the-code-snippet-display.md), and it is used in the `-e BROKER_TOKEN` parameter. The Broker token is associated with a specific Organization by default and with a specific integrated SCM, and for these it enables the Snyk Broker deployment method. For each integrated SCM, a different Broker token is required.
 
 * **Using an existing Broker token for the Code Agent setup** - if you already have a Broker token, which you used for running the Broker Client for another Snyk product in the same Organization and the same SCM, you can also use it for the setup of the Broker Client for the Code Agent.
 * **Using the same Broker token for multiple Snyk Organizations** -\

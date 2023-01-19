@@ -15,6 +15,6 @@ The workflow for setting up the Code Agent – Broker Client components for a fu
 4\. [Set up the Code Agent component](step-4-setting-up-the-code-agent/).
 
 5\. [Set up the Broker Client component](step-5-setting-up-the-broker-client/).\
-You can set up the Broker Client component with or without a display of the code snippets on the Web UI results. See [Running the Broker Client without code snippets](step-5-setting-up-the-broker-client/step-5.2a-running-the-broker-client-without-the-code-snippet-display/) and [Running the Broker Client with code snippets](step-5-setting-up-the-broker-client/step-5.2b-running-the-broker-client-with-the-code-snippets-display/).
+You can set up the Broker Client component with or without a display of the code snippets on the Web UI results. See [Running the Broker Client without code snippets](step-5-setting-up-the-broker-client/step-5.2a-running-the-broker-client-without-the-code-snippet-display.md) and [Running the Broker Client with code snippets](step-5-setting-up-the-broker-client/step-5.2b-running-the-broker-client-with-the-code-snippets-display.md).
 
 6\. [Testing the Code Agent – Client Broker setup](step-6-testing-the-code-agent-snyk-broker-setup.md).

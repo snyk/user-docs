@@ -1,6 +1,6 @@
 # Obtaining your SCM token
 
-Your integrated SCM token is required for [setup of the Broker Client component](../step-5-setting-up-the-broker-client/step-5.2a-running-the-broker-client-without-the-code-snippet-display/), and it is used in the `-e <SCM>_TOKEN`, for example, `-e GITHUB_TOKEN=xxx…`. This token is required for accessing the SCM with certain permissions, which are needed for the operation of the Broker and Snyk Code.
+Your integrated SCM token is required for [setup of the Broker Client component](../step-5-setting-up-the-broker-client/step-5.2a-running-the-broker-client-without-the-code-snippet-display.md), and it is used in the `-e <SCM>_TOKEN`, for example, `-e GITHUB_TOKEN=xxx…`. This token is required for accessing the SCM with certain permissions, which are needed for the operation of the Broker and Snyk Code.
 
 **To obtain your SCM token,** follow the instructions provided by the SCM you want to integrate with the Snyk Broker, and create a token with the required permissions.
 
