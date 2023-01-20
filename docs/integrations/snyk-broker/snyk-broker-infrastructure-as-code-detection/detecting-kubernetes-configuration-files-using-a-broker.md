@@ -1,18 +1,18 @@
-# Detecting Kubernetes configuration files using a broker
+# Detecting Kubernetes configuration files using a Broker
 
-If you are using a privately hosted Git repository, Snyk Broker can connect it with Snyk products. See the [broker documentation](../broker-introduction.md) for details.
+If you are using a privately hosted Git repository, Snyk Broker can connect it with Snyk products. For details see the [Broker documentation](../broker-introduction.md).
 
 This document describes the additional configuration required for Infrastructure as Code files.
 
 ## Writing the configuration
 
-You will need to grant the broker access to particular files in the repository. This requires specific API permissions. These API permissions are slightly different depending on which source control system you are using. The configuration below is for the file extensions “.yaml”, “.yml”, and “.json”, which will allow the broker to access potential Kubernetes and CloudFormation files, but adapt it as necessary. For example, you may wish to add configurations for “.tf” files, in order to scan Terraform HCL files.
+You must grant the broker access to particular files in the repository. This requires specific API permissions. These API permissions are slightly different depending on which source control system you are using. The configuration that follows is for the file extensions “.yaml”, “.yml”, and “.json”, which allows the Broker to access potential Kubernetes and CloudFormation files, but adapt it as necessary. For example, you may wish to add configurations for “.tf” files in order to scan Terraform HCL files.
 
-1. Find and download the appropriate accept.json sample file for your source control system [from the Broker repository](https://github.com/snyk/broker/tree/master/client-templates).
-2. Rename it to `accept.json` and add the below rules, appropriate to your SCM, to the **private** array in the JSON file.
-3. Follow the [Configuring the broker](detecting-kubernetes-configuration-files-using-a-broker.md#configuring-the-broker) instructions.
+1. Find the appropriate accept.json sample file for your source control system and download it [from the Broker repository](https://github.com/snyk/broker/tree/master/client-templates).
+2. Rename the file to `accept.json` and to the **private** array in the JSON file, add the following rules as appropriate to your SCM.
+3. Follow the instructions for [Configuring Broker](detecting-kubernetes-configuration-files-using-a-broker.md#configuring-broker).
 
-## GitHub & GitHub Enterprise rules
+### GitHub and GitHub Enterprise rules
 
 ```
 {
@@ -65,7 +65,7 @@ You will need to grant the broker access to particular files in the repository. 
 },
 ```
 
-## Bitbucket rules
+### Bitbucket rules
 
 ```
 {
@@ -158,7 +158,7 @@ You will need to grant the broker access to particular files in the repository. 
 },
 ```
 
-## GitLab rules
+### GitLab rules
 
 ```
 {
@@ -211,7 +211,7 @@ You will need to grant the broker access to particular files in the repository. 
 },
 ```
 
-## Azure Repo rules
+### Azure Repo rules
 
 ```
 {
@@ -482,9 +482,9 @@ You will need to grant the broker access to particular files in the repository. 
 }
 ```
 
-## Configuring the broker
+## Configuring Broker
 
-The broker takes the path to the accept.json file (with the rules above added) in the ACCEPT environment variable. You can see an example of passing that to the GitHub broker below.
+Broker takes the path to the accept.json file, with the applicable rules added, in the ACCEPT environment variable. The following provides an example of passing that variable to the GitHub Broker.
 
 ```
 docker run --restart=always \
@@ -498,4 +498,4 @@ docker run --restart=always \
   snyk/broker:github-com
 ```
 
-Note that this gives Snyk the ability to query for any `.yaml`, `.yml` or `.json` files. If you would prefer to be stricter you can alter the paths in the examples above to be more restrictive to certain projects or file layouts.
+Note that this gives Snyk the ability to query for any `.yaml`, `.yml` or `.json` files. If you would prefer to be stricter, you can alter the paths in the preceding examples to be more restrictive for certain projects or file layouts.
