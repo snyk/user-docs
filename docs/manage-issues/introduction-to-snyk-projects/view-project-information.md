@@ -31,4 +31,4 @@ The summary information shows:
   * A direct link to the Project file in the SCM
   * The time when the Project was first imported to Snyk
   * The time when an up-to-date snapshot of the file was fetched from the SCM and tested
-* Predefined [Project attributes](../policies/assign-a-policy-to-project-attributes.md) and any additional [Project tag](project-tags.md) metadata.
+* Predefined [Project attributes](../policies/assign-a-policy-to-project-attributes.md) and any additional [Project tag](../../snyk-web-ui/introduction-to-snyk-projects/project-tags.md) metadata.

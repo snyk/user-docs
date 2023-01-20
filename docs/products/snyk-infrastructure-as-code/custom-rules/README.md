@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Custom rules are available with Enterprise and Business plans. See [pricing plans](https://snyk.io/plans/) for more details.
+Custom rules are available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 Snyk IaC includes a comprehensive list of security rules, covering AWS, Azure, GCP & Kubernetes. These rules are based on security research, best practices and recognised standards and benchmarks. They are actively maintained by Snyk’s security engineering team and new rules are released on a regular basis.
@@ -23,7 +23,7 @@ Initial instructions to get you started with the Snyk Infrastructure as Code (Ia
 * [How to integrate custom rules within a pipeline](integrating-iac-custom-rules-within-a-pipeline.md)
 * [SDK reference](sdk-reference.md)
 
-![End to end flow of writing your own custom rules to distributing and using them to scan files with the Snyk CLI](<../../../.gitbook/assets/image (212) (1).png>)
+![End to end flow of writing your own custom rules to distributing and using them to scan files with the Snyk CLI](<../../../.gitbook/assets/image (308).png>)
 
 #### Snyk platform policies and Snyk IaC custom rules
 

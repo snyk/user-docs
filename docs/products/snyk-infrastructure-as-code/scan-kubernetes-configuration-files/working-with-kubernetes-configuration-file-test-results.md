@@ -6,4 +6,4 @@ Click the project link to view test results and resolve any misconfigurations th
 
 The results page appears similar to the following:
 
-![](<../../../.gitbook/assets/image (15) (2) (1) (1) (1) (1) (1) (1) (2).png>)
+![](<../../../.gitbook/assets/image (386).png>)

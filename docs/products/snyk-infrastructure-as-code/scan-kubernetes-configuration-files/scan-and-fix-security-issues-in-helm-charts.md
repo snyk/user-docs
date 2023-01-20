@@ -21,7 +21,7 @@ In addition to scanning Kubernetes configuration files for misconfigurations and
 4. Click the project link you're interested in, to view the scan results and to correct your configuration files accordingly.
    1. Projects that were created from external dependencies will also be scanned and issues shown.
 
-![](<../../../.gitbook/assets/image (316) (1) (1) (1) (1) (1) (2).png>)
+![](<../../../.gitbook/assets/image (71) (2) (1).png>)
 
 ## Templating charts and scan Kubernetes manifests
 

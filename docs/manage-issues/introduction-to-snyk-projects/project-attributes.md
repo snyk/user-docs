@@ -4,7 +4,7 @@ Project attributes are static and non-configurable fields that allow you to add 
 
 ## **Available attributes and their values**
 
-On the **Projects** listing, use **Group by none** (ungrouped) for optimal Project visibility and to apply [tags](project-tags.md) and filtering attributes at the Project level.
+On the **Projects** listing, use **Group by none** (ungrouped) for optimal Project visibility and to apply [tags](../../snyk-web-ui/introduction-to-snyk-projects/project-tags.md) and filtering attributes at the Project level.
 
 <figure><img src="../../.gitbook/assets/project-attributes_20sept2022.png" alt="Project level filtering attributes"><figcaption><p>Project level filtering attributes</p></figcaption></figure>
 

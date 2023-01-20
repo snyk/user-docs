@@ -1,7 +1,7 @@
 # Snyk Cloud
 
 {% hint style="info" %}
-Snyk Cloud is available for Business and Enterprise [plans](https://snyk.io/plans/).
+Snyk Cloud is available for Enterprise [plans](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk Cloud helps users find, prioritize, and fix cloud misconfigurations by scanning the configuration of cloud infrastructure and testing it with a library of predefined security rules, generating a record of issues that can be filtered and triaged.
@@ -10,7 +10,7 @@ Snyk Cloud helps users find, prioritize, and fix cloud misconfigurations by scan
 
 ### Unified policy engine
 
-With Snyk’s unified policy engine, you can apply the same security rules to both infrastructure as code (IaC) files, and runtime cloud resources. In combination with the other [Snyk products](broken-reference), this enables you to find and fix issues throughout the entire software development lifecycle (SDLC).
+With Snyk’s unified policy engine, you can apply the same security rules to both infrastructure as code (IaC) files, and runtime cloud resources. In combination with the other [Snyk products](broken-reference/), this enables you to find and fix issues throughout the entire software development lifecycle (SDLC).
 
 ### Security and compliance posture for security teams
 

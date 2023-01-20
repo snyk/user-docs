@@ -4,7 +4,7 @@ Snyk integrates with Kubernetes, enabling you to import and test your running wo
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is available in Business and Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+This feature is available in Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 **How it works**

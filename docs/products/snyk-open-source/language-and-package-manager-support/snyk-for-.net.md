@@ -141,7 +141,7 @@ For a general understanding of how Snyk helps you fix Open Source vulnerabilitie
 
 {% hint style="info" %}
 **Feature availability**\
-The Fix PR feature is _only_ available across Snyk [SCM](../../../integrations/git-repository-and-ci-cd-integrations-comparisons.md) integrations.
+The Fix PR feature is _only_ available across Snyk [SCM](../../../user-and-group-management/git-repository-and-ci-cd-integrations-comparisons/) integrations.
 {% endhint %}
 
 ### Fix PR supported manifest files

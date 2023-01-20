@@ -9,7 +9,7 @@ You have seen how to view your Snyk Projects, understand Snyk scan results, fix 
 
 {% hint style="info" %}
 **Feature availability**\
-Reports are available with Business and Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+Reports are available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 Click **Reports** to access the vulnerability information for all Snyk Projects in your Organization:
@@ -20,19 +20,19 @@ Click **Reports** to access the vulnerability information for all Snyk Projects 
 By default, results are shown for the last 90 days: use the **Show report for:** list in the top right to change the duration.
 {% endhint %}
 
-See [Reports](../../manage-issues/snyk-reports/) for more details.
+See [Reports](../../features/snyk-reports/) for more details.
 
 ### Security issues
 
 The **Security issues** section shows the number of vulnerabilities, their type, and how many of them Snyk identifies as auto-fixable (with an upgrade, as we saw in [Fix your first vulnerability](fix-your-first-vulnerability.md) topic).
 
-![](<../../.gitbook/assets/image (142).png>)
+![](<../../.gitbook/assets/image (67).png>)
 
 ### Show issues over time
 
 The **Issues over time** graph shows the history of vulnerabilities in your Organization:
 
-![](<../../.gitbook/assets/image (103) (2) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (324).png>)
 
 This shows the number of overall vulnerabilities, and the number of projects being scanned (the dotted line in the graph).
 
@@ -42,7 +42,7 @@ Seeing more vulnerabilities over time may not reflect your team's work to improv
 
 For example, the total number of vulnerabilities is likely to rise when you add more projects. The graph may display that linkage - when you see jumps in the total numbers of vulnerabilities, you may see corresponding jumps in the total numbers of Projects:
 
-![More Projects, more issues](<../../.gitbook/assets/image (158) (1) (1) (1) (1) (1) (1).png>)
+![More Projects, more issues](<../../.gitbook/assets/image (258).png>)
 
 #### Metric: ratio of vulnerabilities to Projects
 
@@ -54,7 +54,7 @@ Alternatively, if you see an increase in the number of vulnerabilities without a
 
 You can hover over a date to see the summary of “to this date” information at that point:
 
-![](<../../.gitbook/assets/image (150) (1) (1).png>)
+![](../../.gitbook/assets/snapshot-summary.png)
 
 This is especially useful when you see sudden changes in issue numbers on a specific day.
 
@@ -62,7 +62,7 @@ This is especially useful when you see sudden changes in issue numbers on a spec
 
 The **Activity** section shows the activity over the report period:
 
-![](<../../.gitbook/assets/image (293).png>)
+![](<../../.gitbook/assets/image (163).png>)
 
 For the reporting period (90 days by default), this activity shows:
 
@@ -76,7 +76,7 @@ For the reporting period (90 days by default), this activity shows:
 
 If you have lots of Projects files to manage and organize in your Organization, you can use filters to focus on specific Projects or specific types of vulnerability:
 
-![](<../../.gitbook/assets/image (240) (1).png>)
+![](<../../.gitbook/assets/image (52).png>)
 
 For example, if your Organization represents your development team, and you want to focus on (say) front-end work in the next Sprint, click the **Projects** dropdown and select a subset of the front-end Projects to scan, allowing you to focus on fixing vulnerabilities in that area.
 
@@ -85,7 +85,7 @@ For example, if your Organization represents your development team, and you want
 Remember, a Snyk Project represents a single item that Snyk scans, such as a manifest file. So your application may contain hundreds of Snyk Projects to scan.
 {% endhint %}
 
-For Open Source vulnerabilities, we also have tagging, which lets you add your own tags, including custom values for metadata. See [Project tags](../../manage-issues/introduction-to-snyk-projects/project-tags.md) and [Project attributes](../../manage-issues/introduction-to-snyk-projects/project-attributes.md).
+For Open Source vulnerabilities, we also have tagging, which lets you add your own tags, including custom values for metadata. See [Project tags](../../snyk-web-ui/introduction-to-snyk-projects/project-tags.md) and [Project attributes](../../manage-issues/introduction-to-snyk-projects/project-attributes.md).
 
 #### Dashboard results and report results
 
@@ -93,7 +93,7 @@ Filtering results in Reports means that your Dashboard shows different numbers t
 
 For example, by default, Snyk does not scan the Dockerfile in the filter, it scans the docker images themselves
 
-![](<../../.gitbook/assets/image (111) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (320).png>)
 
 By default, the Dockerfile option is not selected in the filter: when Snyk scans the Dockerfile, there will be vulnerabilities in the base OS in the container that you are building. Because these vulnerabilities cannot generally be fixed by the development team, this filtering lets your team focus on the issues that they _can_ fix.
 
@@ -105,7 +105,7 @@ To see a report across all your Organizations, navigate to the Snyk Group level 
 
 Click the **Issues** tab to see a full list of all issues for your Organization:
 
-![](<../../.gitbook/assets/image (108) (1).png>)
+![](<../../.gitbook/assets/image (161).png>)
 
 Issues are ranked by their Snyk Priority Score; you can also filter based on columns. For example, you may want to look at the highest scores with the most maturity (which are likely to have more exploits). You can also track the list of issues that got fixed.
 

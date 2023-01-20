@@ -36,7 +36,7 @@ There are different ways to arrange the organizations in your account. Before in
 
 More information:
 
-* Docs: [User and group management](../snyk-admin/)
+* Docs: [User and group management](../user-and-group-management/)
 * Training: [Snyk account structure](https://training.snyk.io/courses/snyk-account-structure)
 
 #### How to access Snyk
@@ -47,7 +47,7 @@ If using SSO, after you set it up, you'll need to remove any social login accoun
 
 More information:
 
-* Docs: [Setting up Single Sign-On (SSO) for authentication](../snyk-admin/setting-up-sso-for-authentication/)
+* Docs: [Setting up Single Sign-On (SSO) for authentication](../user-and-group-management/setting-up-sso-for-authentication/)
 * Training: [SSO, authentication and user provisioning](https://training.snyk.io/courses/sso)
 
 #### Plan for importing projects
@@ -90,7 +90,7 @@ Snyk sends teams different types of alerts based on settings defined for the gro
 
 More information:
 
-* Docs: [Managing notifications](../snyk-admin/notifications.md)
+* Docs: [Managing notifications](../user-and-group-management/notifications.md)
 * Training: [Notifications](https://training.snyk.io/courses/notifications)
 
 #### Set ignore permissions

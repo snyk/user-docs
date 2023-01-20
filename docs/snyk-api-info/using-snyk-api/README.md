@@ -26,5 +26,5 @@ This group of pages provides detailed information about aspects of using the Sny
 For more articles on using Snyk API, see the following:
 
 * [API support articles](https://support.snyk.io/hc/en-us/sections/360001344097-API)
-* [Audit logs](../../snyk-admin/managing-users-and-permissions/audit-logs.md)
+* [Audit logs](../../user-and-group-management/managing-users-and-permissions/audit-logs.md)
 * [Snyk for Bazel](../../products/snyk-open-source/language-and-package-manager-support/snyk-for-bazel.md)

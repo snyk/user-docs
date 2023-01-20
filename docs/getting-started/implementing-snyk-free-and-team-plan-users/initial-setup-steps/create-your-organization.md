@@ -26,4 +26,4 @@ To create a new Organization:
 
 ### More details
 
-See [Managing groups & organizations](../../../snyk-admin/managing-groups-and-organizations/).
+See [Managing groups & organizations](../../../user-and-group-management/managing-groups-and-organizations/).
