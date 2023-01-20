@@ -35,7 +35,7 @@
 * [Integrate with Snyk](integrations/README.md)
   * [Git repository and CI/CD integrations: comparisons](integrations/git-repository-and-ci-cd-integrations-comparisons.md)
   * [Managing integrations](integrations/managing-integrations/README.md)
-    * [Clone an integration across your Snyk Oraganizations](integrations/managing-integrations/clone-an-integration-across-your-snyk-orgs.md)
+    * [Clone an integration across your Snyk Organizations](integrations/managing-integrations/clone-an-integration-across-your-snyk-organizations.md)
     * [Disable a git integration](integrations/managing-integrations/disable-a-git-integration.md)
   * [Snyk CI/CD Integration](integrations/ci-cd-integrations/README.md)
     * [Snyk CI/CD Integration deployment and strategies](integrations/ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/README.md)

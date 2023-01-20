@@ -11,7 +11,7 @@ If your workload persists in Snyk after deletion from your cluster, please delet
 {% hint style="info" %}
 With the same integration id, you can import **many** clusters to **one** Snyk organization by giving clusters a unique cluster name during installation.
 
-The auto-import/delete also allows you to import from **one** cluster to multiple Snyk organizations, read [Advance use of automatic import/deletion](https://docs.snyk.io/products/snyk-container/kubernetes-workload-and-image-scanning/kubernetes-integration-features/automatic-import-deletion-of-kubernetes-workloads-projects/advanced-use-of-automatic-import-deletion#using-more-than-one-org).&#x20;
+The auto-import/delete also allows you to import from **one** cluster to multiple Snyk organizations, read [Advance use of automatic import/deletion](https://docs.snyk.io/products/snyk-container/kubernetes-workload-and-image-scanning/kubernetes-integration-features/automatic-import-deletion-of-kubernetes-workloads-projects/advanced-use-of-automatic-import-deletion#using-more-than-one-org).
 
 It is important to note that 1 Snyk organization has a limit of 25,000 projects, please consult your SCM for more information.
 {% endhint %}
@@ -38,7 +38,7 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
 Note that _**policyOrgs**_ is a list of organization public IDs. You can add more than one organization to use the auto-import and auto-delete capabilities. You can locate this public ID under your organization's settings page.
 
 {% hint style="info" %}
-Only Snyk organizations that share the same Kubernetes integration ID can provision the Snyk controller to do so. More information on how to share the same integration ID can be found in [Clone an integration across your Snyk orgs](../../../../../integrations/managing-integrations/clone-an-integration-across-your-snyk-orgs.md).
+Only Snyk organizations that share the same Kubernetes integration ID can provision the Snyk controller to do so. More information on how to share the same integration ID can be found in [Clone an integration across your Snyk orgs](../../../../../integrations/managing-integrations/clone-an-integration-across-your-snyk-organizations.md).
 {% endhint %}
 
 ##

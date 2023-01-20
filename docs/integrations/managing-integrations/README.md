@@ -4,7 +4,7 @@ When implementing a Snyk integration, you will decide whether to use a source co
 
 Administrators and account owners can:
 
-* [Copy (clone) integrations](clone-an-integration-across-your-snyk-orgs.md)
+* [Copy (clone) integrations](clone-an-integration-across-your-snyk-organizations.md)
 * [Delete (disable) integrations](disable-a-git-integration.md)
 
 In addition, administrators and account owners can use [service accounts](../../snyk-admin/structure-account-for-high-application-performance/service-accounts.md) to configure integrations.
