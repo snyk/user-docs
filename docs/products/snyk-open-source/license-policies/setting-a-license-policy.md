@@ -44,7 +44,7 @@ You can edit the license severities and instructions.
     Once added, the **Add instructions** link changes to **Edit instructions.**
 5. Click **Submit** to save your policy.
 
-<figure><img src="../../../.gitbook/assets/policy-severity-instructions-x_06oct2022 (1).png" alt=""><figcaption><p>Open the <strong>Policy</strong> modal, set severity, and add or update instructions</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/policy-severity-instructions-x_06oct2022.png" alt=""><figcaption><p>Open the <strong>Policy</strong> modal, set severity, and add or update instructions</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/policy-severity-instructions-2_06oct2022.png" alt=""><figcaption><p>Add or update instructions and <strong>Submit</strong> to save your policy changes</p></figcaption></figure>
 

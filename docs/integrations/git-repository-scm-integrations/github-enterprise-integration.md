@@ -38,7 +38,7 @@ Snyk starts scanning the selected repos for dependency files (such as package.js
 
 The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/which_repos (3) (5) (9) (7) (18) (8).jpg" alt="Imported projects on Projects page"><figcaption><p>Imported projects on Projects page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (29).jpeg" alt="Imported projects on Projects page"><figcaption><p>Imported projects on Projects page</p></figcaption></figure>
 
 ## GitHub Enterprise Broker startup script
 
@@ -75,14 +75,14 @@ Snyk scans your projects on either a daily or a weekly basis. When new vulnerabi
 
 The example below presents a fix pull request opened by Snyk:
 
-<figure><img src="../../.gitbook/assets/github_fix_pr_cropped-14july2022.png" alt="Fix pull request created by Snyk"><figcaption><p>Fix pull request created by Snyk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github_fix_pr_cropped-14july2022 (1).png" alt="Fix pull request created by Snyk"><figcaption><p>Fix pull request created by Snyk</p></figcaption></figure>
 
 To review and update the automatic fix pull request settings:
 
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings icon" data-size="line"> **Settings >** **Integrations > Source control > GitHub Enterprise**, and click **Edit Settings**.
 2. Scroll to the **Automatic fix pull requests** section, make the relevant changes, and **Update settings.**
 
-<figure><img src="../../.gitbook/assets/mceclip4 (1) (2) (6) (7) (3) (16).png" alt="Automatic pull requests setting enabled"><figcaption><p>Automatic pull requests setting enabled</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mceclip4 (1) (1) (1) (11).png" alt="Automatic pull requests setting enabled"><figcaption><p>Automatic pull requests setting enabled</p></figcaption></figure>
 
 ### **Pull request testing**
 
@@ -97,7 +97,7 @@ To review and adjust the pull request tests settings:
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings icon" data-size="line"> (Organization settings) > **Integrations > Source control > GitHub Enterprise**, and click **Edit Settings**.
 2. Scroll to **Default Snyk test for pull requests.**
 
-<figure><img src="../../.gitbook/assets/image (27).png" alt="Default Snyk test for pull requests setting enabled"><figcaption><p>Default Snyk test for pull requests setting enabled</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/default_snyk_test-3july2022.png" alt="Default Snyk test for pull requests setting enabled"><figcaption><p>Default Snyk test for pull requests setting enabled</p></figcaption></figure>
 
 ## Required permissions scope for the GitHub integration
 

@@ -35,7 +35,7 @@ docker run --restart=always \
        snyk/broker:github-com
 ```
 
-* This command set sup a fully configured broker client that will analyze Open Source, IaC, Container and Code files.I
+* This command sets up a fully configured broker client that will analyze Open Source, IaC, Container and Code files.
 * If necessary, go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and make any configuration changes needed.\
   For example, if the GitHub instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration.\
   A fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for GitHub is attached. You **cannot run** the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument.

@@ -47,7 +47,7 @@ The **Pending tasks** section shows the next chores to be handled for the Projec
 
 Currently, Snyk tracks and flags PRs in GitHub, GitHub Enterprise, and Bitbucket Cloud only, and only for the top-most vulnerable projects. If you use another SCM, **Pending tasks** shows only PRs that can be raised, and not PRs that have already been raised.
 
-<figure><img src="../.gitbook/assets/image (73).png" alt="Pending tasks and Vulnerable Projects listed on the Dashboard"><figcaption><p>Pending tasks and Vulnerable Projects listed on the Dashboard</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (109).png" alt="Pending tasks and Vulnerable Projects listed on the Dashboard"><figcaption><p>Pending tasks and Vulnerable Projects listed on the Dashboard</p></figcaption></figure>
 
 You can use the **Add project** link on the dashboard to add a Project. Select the way you want to add the Project from the dropdown.
 
@@ -91,7 +91,7 @@ Select **Integrations** from the navigation on the dashboard to open the [Integr
 * Manage [Slack](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration) and [Jira](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira) integrations.
 * Learn about the [Vulnerability management tools](https://docs.snyk.io/integrations/vulnerability-management-tools).
 
-<figure><img src="../.gitbook/assets/image (409).png" alt="Integrations page"><figcaption><p>Integrations page</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (157) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Integrations page"><figcaption><p>Integrations page</p></figcaption></figure>
 
 ## Manage Organization or Group members
 
@@ -105,7 +105,7 @@ You must be assigned the [required Admin roles and permissions](../snyk-admin/ma
 
 Use the <img src="../.gitbook/assets/cog_icon.png" alt="" data-size="line"> menus to view and manage your Organization (team) or Group (company-wide) settings.
 
-<figure><img src="../.gitbook/assets/image (72) (1).png" alt="Group and Organization settings"><figcaption><p>Group and Organization settings</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (145) (1) (1) (1) (1) (1) (1) (1).png" alt="Group and Organization settings"><figcaption><p>Group and Organization settings</p></figcaption></figure>
 
 See [Managing settings](../snyk-admin/managing-settings/) for more details.
 
