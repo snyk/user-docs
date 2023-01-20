@@ -1,4 +1,4 @@
-# Implementing Snyk: Business and Enterprise plan users
+# Implementing Snyk: Enterprise plan users
 
 {% hint style="info" %}
 See [Implementing Snyk: Free and Team plan users](implementing-snyk-free-and-team-plan-users/) for details of using Snyk with those [pricing plans](https://snyk.io/plans/).
@@ -6,20 +6,20 @@ See [Implementing Snyk: Free and Team plan users](implementing-snyk-free-and-tea
 
 There are a few key considerations and tasks to get started using Snyk, including:
 
-* [Make implementation decisions](implementing-snyk-business-and-enterprise-plan-users.md#make-implementation-decisions)
-* [Set up your first organization](implementing-snyk-business-and-enterprise-plan-users.md#set-up-your-first-organization)
-* [Create additional organizations](implementing-snyk-business-and-enterprise-plan-users.md#create-additional-organizations)
-* [Roll out Snyk to developers](implementing-snyk-business-and-enterprise-plan-users.md#roll-out-snyk-to-developers)
-* [Find, prioritize, and fix issues](implementing-snyk-business-and-enterprise-plan-users.md#find-prioritize-and-fix-issues)
+* [Make implementation decisions](implementing-snyk-enterprise-plan-users.md#make-implementation-decisions)
+* [Set up your first organization](implementing-snyk-enterprise-plan-users.md#set-up-your-first-organization)
+* [Create additional organizations](implementing-snyk-enterprise-plan-users.md#create-additional-organizations)
+* [Roll out Snyk to developers](implementing-snyk-enterprise-plan-users.md#roll-out-snyk-to-developers)
+* [Find, prioritize, and fix issues](implementing-snyk-enterprise-plan-users.md#find-prioritize-and-fix-issues)
 
 ### Make implementation decisions
 
 Get off to the right start with a few planning steps before inviting your teams and scanning your projects. There are a few decisions to make to get started:
 
-* [where to implement Snyk in your software development life cycle (SDLC)](implementing-snyk-business-and-enterprise-plan-users.md#where-to-implement-snyk)
-* [how to structure your account](implementing-snyk-business-and-enterprise-plan-users.md#how-to-structure-your-account)
-* [how to access Snyk](implementing-snyk-business-and-enterprise-plan-users.md#how-to-access-snyk)
-* [how you'll import projects](implementing-snyk-business-and-enterprise-plan-users.md#plan-for-importing-projects)
+* [where to implement Snyk in your software development life cycle (SDLC)](implementing-snyk-enterprise-plan-users.md#where-to-implement-snyk)
+* [how to structure your account](implementing-snyk-enterprise-plan-users.md#how-to-structure-your-account)
+* [how to access Snyk](implementing-snyk-enterprise-plan-users.md#how-to-access-snyk)
+* [how you'll import projects](implementing-snyk-enterprise-plan-users.md#plan-for-importing-projects)
 
 #### Where to implement Snyk
 
