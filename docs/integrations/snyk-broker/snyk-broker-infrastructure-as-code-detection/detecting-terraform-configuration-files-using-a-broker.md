@@ -1,16 +1,16 @@
 # Detecting Terraform configuration files using a broker
 
-If you are using a privately hosted Git repository then you can use the Snyk Broker to connect Snyk to it. See the [full broker documentation for setup](../set-up-snyk-broker/). The following details additional configuration required for the Terraform files.
+If you are using a privately hosted Git repository, you can use the Snyk Broker to connect Snyk to the repository. See the [Snyk Broker documentation for setup](../set-up-snyk-broker/). The following explains additional configuration required for the Terraform files.
 
 ## Writing the configuration
 
 The Terraform scanning features need access to the `.tf` files from the repository. This requires specific API permissions. These API permissions are slightly different depending on which source control system you are using.
 
-1. Find and download the appropriate accept.json sample file for your source control system [from the Broker repository](https://github.com/snyk/broker/tree/master/client-templates).
-2. Rename it to `accept.json` and add the below rules, appropriate to your SCM, to the **private** array in the JSON file.
-3. Follow the [Configuring the broker](detecting-terraform-configuration-files-using-a-broker.md#configuring-the-broker) instructions.
+1. Find the appropriate accept.json sample file for your source control system and download it  [from the Broker repository](https://github.com/snyk/broker/tree/master/client-templates).
+2. Rename the file to `accept.json` and to the **private** array in the JSON file, add the rules that follow as appropriate to your SCM.
+3. Follow the instructions for [Configuring the broker](detecting-terraform-configuration-files-using-a-broker.md#configuring-the-broker).
 
-## GitHub rules
+### GitHub rules
 
 ```
 {
@@ -27,7 +27,7 @@ The Terraform scanning features need access to the `.tf` files from the reposito
 },
 ```
 
-## Bitbucket rules
+### Bitbucket rules
 
 ```
 {
@@ -54,7 +54,7 @@ The Terraform scanning features need access to the `.tf` files from the reposito
 },
 ```
 
-## GitLab rules
+### GitLab rules
 
 ```
 {
@@ -71,7 +71,7 @@ The Terraform scanning features need access to the `.tf` files from the reposito
 },
 ```
 
-## Azure Repos
+### Azure Repos
 
 Copy the following list of file extensions:
 
@@ -91,9 +91,9 @@ Add the extensions to the `values` array in two places in the [accept.json](http
 * `"//": "get file content. restrict by file types"`
 * `"//": "check file existence. restrict by file types"`
 
-## Configuring the broker
+## Configuring the Broker
 
-The broker takes the path to the accept.json file (with the rules above added) in the ACCEPT environment variable. You can see an example of passing that to the GitHub broker below.
+The Broker takes the path to the accept.json file, with the applicable rules added, in the ACCEPT environment variable. The following provides an example of passing that variable to the GitHub broker.
 
 ```
 docker run --restart=always \
@@ -107,4 +107,4 @@ docker run --restart=always \
   snyk/broker:github-com
 ```
 
-Note that this gives Snyk the ability to query for any `.tf` files. If you would prefer to be stricter you can alter the paths in the examples above to be more restrictive to certain projects or file layouts.
+Note that this gives Snyk the ability to query for any `.tf` files. If you would prefer to be stricter you can alter the paths in the preceding examples to be more restrictive to certain projects or file layouts.
