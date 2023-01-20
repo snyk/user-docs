@@ -9,43 +9,43 @@ You have [created a Snyk account](create-a-snyk-account.md) and [integrated with
 
 When you import a Project, Snyk scans that imported Project, and displays the results for you to review.
 
-The following short video shows how to import a Snyk Project:
+The following video shows how to import a Snyk Project:
 
 {% embed url="https://thoughtindustries-1.wistia.com/medias/9hwr0bnvko" %}
 Video demonstration of importing projects via the Snyk Web UI
 {% endembed %}
 
-Alternatively, follow these instructions:
+The steps to import a Project are as follows:
 
-* Select **Projects** > **Add Project,** and select where to import the Project from. For example, click GitHub to import from your GitHub repo, or click **CLI** to use the [Snyk CLI](../../snyk-cli/) locally:
+* Select **Projects** > **Add Project,** and select where to import the Project from, for example, select  GitHub to import from your GitHub repository, or select **CLI** to use the [Snyk CLI](../../snyk-cli/) locally:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-07-26 at 10.06.54.png" alt="Add Project choices"><figcaption><p>Add Project choices</p></figcaption></figure>
 
-* Select the repositories to use, then click **Add selected repositories** to import the selected repositories into your project:
+* Select the repositories to use, then choose **Add selected repositories** to import the selected repositories into your project:
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Add selected repositories</p></figcaption></figure>
 
 {% hint style="info" %}
-Projects you select to import are shown with a ![](<../../.gitbook/assets/image (7).png>).\
+Projects you select to import are shown with a ![Check mark](<../../.gitbook/assets/image (7).png>).\
 Projects previously imported are marked by a ✔.
 {% endhint %}
 
-#### Project import settings
+## Project import settings
 
 In **Settings**, optionally choose to:
 
 * **Add custom file location** to add any additional dependencies from custom paths.
 * **Exclude folders** to list up to 10 folders to exclude from scanning during the import; for example, to shorten scanning time.
 
-### Import progress
+## Import progress
 
-A progress bar appears during import. Click **View last import log** to see log results.
+A progress bar appears during import. Select **View last import log** to see log results.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-07-26 at 10.23.09.png" alt="View log"><figcaption><p>View log</p></figcaption></figure>
 
 During the import, Snyk starts scanning the selected repos for relevant files (such as  **package.json** files listing dependencies) in the entire directory tree, and imports these files as Snyk Projects.
 
-### Import results
+## Import results
 
 Project import completes, with a status message:
 
@@ -57,12 +57,12 @@ You have now successfully imported and scanned the selected Project.
 If you see any errors during import, see [Project import errors](https://support.snyk.io/hc/en-us/articles/360001373118).
 {% endhint %}
 
-#### Additional benefits
+## Additional benefits of importing a Project
 
-Importing a Project also:
+Importing a Project also does the following:
 
 * Sets Snyk to run a regular scan on that Project for issues ([daily by default](../../snyk-admin/managing-settings/usage-page-details.md#projects)).
-* Initiates some automations, especially default Snyk tests on pull/merge requests, which help prevent vulnerabilities from being added to the Project. This automation fails builds according to your conditions and can be disabled or customized in your [integration settings](../../integrations/git-repository-scm-integrations/).
+* Initiates some automations, especially default Snyk tests on pull and merge requests, which help prevent vulnerabilities from being added to the Project. This automation fails builds according to your conditions and can be disabled or customized in your [integration settings](../../integrations/git-repository-scm-integrations/).
 
 {% hint style="info" %}
 For training on best practices using automations, visit the Snyk Training course: [Source Code Manager Configurations](https://training.snyk.io/courses/source-code-manager-configurations).
