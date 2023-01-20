@@ -200,7 +200,7 @@
       * [Setting up the Container Registry Agent for a brokered ECR integration](integrations/snyk-broker/snyk-broker-container-registry-agent/setting-up-the-container-registry-agent-for-a-brokered-ecr-integration.md)
       * [Container Registry Agent advanced configuration](integrations/snyk-broker/snyk-broker-container-registry-agent/container-registry-agent-advanced-configuration.md)
     * [Snyk Broker - Infrastructure as Code detection](integrations/snyk-broker/snyk-broker-infrastructure-as-code-detection/README.md)
-      * [Detecting Terraform configuration files using a broker](integrations/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-terraform-configuration-files-using-a-broker.md)
+      * [Detecting Terraform configuration files using a Broker](integrations/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-terraform-configuration-files-using-a-broker.md)
       * [Detecting CloudFormation configuration files using a Broker](integrations/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-cloudformation-configuration-files-using-a-broker.md)
       * [Detecting Kubernetes configuration files using a broker](integrations/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-kubernetes-configuration-files-using-a-broker.md)
     * [Snyk Broker integration setups](integrations/snyk-broker/snyk-broker-set-up-examples/README.md)

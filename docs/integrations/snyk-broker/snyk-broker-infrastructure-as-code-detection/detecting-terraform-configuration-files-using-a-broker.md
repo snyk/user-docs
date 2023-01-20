@@ -1,4 +1,4 @@
-# Detecting Terraform configuration files using a broker
+# Detecting Terraform configuration files using a Broker
 
 If you are using a privately hosted Git repository, you can use the Snyk Broker to connect Snyk to the repository. See the [Snyk Broker documentation for setup](../set-up-snyk-broker/). The following explains additional configuration required for the Terraform files.
 
@@ -8,7 +8,7 @@ The Terraform scanning features need access to the `.tf` files from the reposito
 
 1. Find the appropriate accept.json sample file for your source control system and download it  [from the Broker repository](https://github.com/snyk/broker/tree/master/client-templates).
 2. Rename the file to `accept.json` and to the **private** array in the JSON file, add the rules that follow as appropriate to your SCM.
-3. Follow the instructions for [Configuring the broker](detecting-terraform-configuration-files-using-a-broker.md#configuring-the-broker).
+3. Follow the instructions for [Configuring Broker](detecting-terraform-configuration-files-using-a-broker.md#configuring-broker).
 
 ### GitHub rules
 
@@ -91,9 +91,9 @@ Add the extensions to the `values` array in two places in the [accept.json](http
 * `"//": "get file content. restrict by file types"`
 * `"//": "check file existence. restrict by file types"`
 
-## Configuring the Broker
+## Configuring Broker
 
-The Broker takes the path to the accept.json file, with the applicable rules added, in the ACCEPT environment variable. The following provides an example of passing that variable to the GitHub broker.
+Broker takes the path to the accept.json file, with the applicable rules added, in the ACCEPT environment variable. The following provides an example of passing that variable to the GitHub Broker.
 
 ```
 docker run --restart=always \
@@ -107,4 +107,4 @@ docker run --restart=always \
   snyk/broker:github-com
 ```
 
-Note that this gives Snyk the ability to query for any `.tf` files. If you would prefer to be stricter you can alter the paths in the preceding examples to be more restrictive to certain projects or file layouts.
+Note that this gives Snyk the ability to query for any `.tf` files. If you would prefer to be stricter, you can alter the paths in the preceding examples to be more restrictive to certain projects or file layouts.
