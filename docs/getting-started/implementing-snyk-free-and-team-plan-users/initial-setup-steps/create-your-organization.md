@@ -8,7 +8,7 @@ When you signed up, Snyk created an organization based on your signup name. This
 
 {% hint style="info" %}
 **Tip**\
-\*\*\*\*If you are creating an account to share and collaborate to use your team or company name for the organization name. If it’s for personal use, the default organization that was created when you signed up makes sense to use
+If you are creating an account to share and collaborate to use your team or company name for the organization name. If it’s for personal use, the default organization that was created when you signed up makes sense to use
 {% endhint %}
 
 If you choose to rename the display name, the URL may still reflect the original name.
