@@ -37,7 +37,7 @@ After you add them, Snyk scans the selected repositories for dependency files in
 
 The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022.jpeg" alt="Imported GitHub projects in your Projects page"><figcaption><p>Imported GitHub projects in your <strong>Projects</strong> page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/which_repos (3) (5) (9) (7) (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (10).jpg" alt="Imported GitHub projects in your Projects page"><figcaption><p>Imported GitHub projects in your <strong>Projects</strong> page</p></figcaption></figure>
 
 ## GitHub integration features
 
@@ -239,7 +239,7 @@ For example, to show a badge for the 4.x branch of the express repo, you would u
 #### Badge results
 
 * A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (206).png" alt="" data-size="line">
-* A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (93) (1).png" alt="" data-size="line">
+* A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (93).png" alt="" data-size="line">
 * A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (82).png" alt="" data-size="line">
 
 #### **Badge styles**

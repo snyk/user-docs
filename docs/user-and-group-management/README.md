@@ -31,7 +31,7 @@ Organizations can contain multiple Projects. For example, if an Organization rep
 When you sign up to Snyk using a social login, you have a default organization. Any projects you add appear in this organization by default.
 {% endhint %}
 
-See [What’s a Snyk organization?](managing-groups-and-organizations/whats-a-snyk-organization.md)
+See [What’s a Snyk organization?](../snyk-admin/managing-groups-and-organizations/whats-a-snyk-organization.md)
 
 #### Snyk Projects
 
@@ -73,22 +73,22 @@ SSO makes authentication and provisioning simple; see [setting-up-sso-for-authen
 
 #### Manage users and permissions
 
-You can manage users and permissions in your groups; See [managing-users-and-permissions](managing-users-and-permissions/ "mention").
+You can manage users and permissions in your groups; See [managing-users-and-permissions](../snyk-admin/managing-users-and-permissions/ "mention").
 
-![](<../.gitbook/assets/image (96).png>)
+![](<../.gitbook/assets/image (75).png>)
 
 #### Manage Groups and Organizations
 
-Learn how Snyk groups and organizations help keep cross-team collaboration seamless; see [managing-groups-and-organizations](managing-groups-and-organizations/ "mention")
+Learn how Snyk groups and organizations help keep cross-team collaboration seamless; see [managing-groups-and-organizations](../snyk-admin/managing-groups-and-organizations/ "mention")
 
 #### Define notifications
 
-You can manage email notifications, for yourself and your organization. See [notifications.md](notifications.md "mention").
+You can manage email notifications, for yourself and your organization. See [notifications.md](../snyk-admin/notifications.md "mention").
 
 ![](<../.gitbook/assets/image (350).png>)
 
 #### Manage settings
 
-Customize your Snyk account for your needs. See [managing-settings](managing-settings/ "mention").
+Customize your Snyk account for your needs. See [managing-settings](../snyk-admin/managing-settings/ "mention").
 
 ![](<../.gitbook/assets/image (49) (1).png>)

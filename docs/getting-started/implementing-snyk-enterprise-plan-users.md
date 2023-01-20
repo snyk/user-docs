@@ -90,7 +90,7 @@ Snyk sends teams different types of alerts based on settings defined for the gro
 
 More information:
 
-* Docs: [Managing notifications](../user-and-group-management/notifications.md)
+* Docs: [Managing notifications](../snyk-admin/notifications.md)
 * Training: [Notifications](https://training.snyk.io/courses/notifications)
 
 #### Set ignore permissions

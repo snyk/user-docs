@@ -18,7 +18,7 @@ Each group is a stand alone entity. This means:
 
 * the functionality for groups is not tied together at this time
 * there is no cross-group reporting
-* users, projects, and organizations cannot be shared between groups&#x20;
+* users, projects, and organizations cannot be shared between groups
 * SSO is more difficult to manage across multiple groups
 * service accounts cannot span multiple groups
 
@@ -32,7 +32,7 @@ Using either the Snyk web app or the API, you can create a large number of organ
 
 However, if you have more than 2000 organizations in your group, you begin to risk performance issues. When the application must load a high number of entities, this means:
 
-* performance is slowed for group administrators and group-level notifications&#x20;
+* performance is slowed for group administrators and group-level notifications
 * group-level service account creation may fail
 
 ### Projects

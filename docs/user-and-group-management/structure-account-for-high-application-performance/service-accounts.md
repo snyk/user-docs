@@ -72,7 +72,7 @@ For **Group service accounts**, choose from the following list of roles to confi
 * Group Admin enables full administrator access.
 * Group Member associates a service account to a group but does not grant any specific access.
 
-For **Organization service accounts**, choose from the standard roles, Org Admin or Org Collaborator, or a custom role if you have any set up. See [Managing permissions](../managing-users-and-permissions/managing-permissions.md) for the scope of the Org Admin and Org Collaborator roles.
+For **Organization service accounts**, choose from the standard roles, Org Admin or Org Collaborator, or a custom role if you have any set up. See [Managing permissions](../../snyk-admin/managing-users-and-permissions/managing-permissions.md) for the scope of the Org Admin and Org Collaborator roles.
 
 #### Create the service account
 

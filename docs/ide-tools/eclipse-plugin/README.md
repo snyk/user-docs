@@ -43,7 +43,7 @@ This page explains supported environments, support, and giving feedback and prov
 
 If you want to verify the correct provenance of your download, please verify the signing details from the Eclipse dialog with this data.
 
-![The signing key details to verify the integrity and origin of the download plugin](<../../.gitbook/assets/image (58).png>)
+![The signing key details to verify the integrity and origin of the download plugin](<../../.gitbook/assets/image (58) (2).png>)
 
 The plugin runs on
 

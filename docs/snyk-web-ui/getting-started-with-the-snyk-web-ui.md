@@ -18,7 +18,7 @@ When you log in to an existing account, the Web UI opens to the [Dashboard](gett
 4. Reviewing the results of your Snyk scan.
 
 {% hint style="info" %}
-If you are signing in to a paid account, you must also select the relevant [Organization](../user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization.md) after you log in to Snyk.
+If you are signing in to a paid account, you must also select the relevant [Organization](../snyk-admin/managing-groups-and-organizations/whats-a-snyk-organization.md) after you log in to Snyk.
 {% endhint %}
 
 In the following example, the Snyk dashboard for an Enterprise account shows pending tasks, vulnerable projects, and current security and license issues.
@@ -56,7 +56,7 @@ Use the links for Projects on the dashboard to explore and manage the metadata, 
 * For Projects with the **Fix vulnerabilities** link, use the link to view Project details with an option to **Open a Fix PR.** Use this option to open a fix PR to implement the upgrades and patches in GitHub that address the issues.
 * For Projects with a **View PR** link, use the link to open and view the Snyk-generated PR fixes in GitHub.
 
-<figure><img src="../.gitbook/assets/dockerfile_fix_vulnerabilities (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).gif" alt="Demo, add project and Project details tabs"><figcaption><p>Demo, add project and Project details tabs</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/dockerfile_fix_vulnerabilities (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).gif" alt="Demo, add project and Project details tabs"><figcaption><p>Demo, add project and Project details tabs</p></figcaption></figure>
 
 ## **Reports**
 
@@ -95,10 +95,10 @@ Select **Integrations** from the navigation on the dashboard to open the [Integr
 
 ## Manage Organization or Group members
 
-Select **Members** from the navigation on the dashboard to view and manage users, roles, and how users authenticate in your Snyk [Organization](../user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations.md) or [Group](../user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations-1.md).
+Select **Members** from the navigation on the dashboard to view and manage users, roles, and how users authenticate in your Snyk [Organization](../snyk-admin/managing-users-and-permissions/manage-users-in-your-organizations.md) or [Group](../user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations-1.md).
 
 {% hint style="info" %}
-You must be assigned the [required Admin roles and permissions](../user-and-group-management/managing-users-and-permissions/managing-permissions.md) to make changes in the **Members** tab.
+You must be assigned the [required Admin roles and permissions](../snyk-admin/managing-users-and-permissions/managing-permissions.md) to make changes in the **Members** tab.
 {% endhint %}
 
 ## Snyk Organization or Group Settings
@@ -107,7 +107,7 @@ Use the <img src="../.gitbook/assets/cog_icon.png" alt="" data-size="line"> menu
 
 <figure><img src="../.gitbook/assets/image (72) (1).png" alt="Group and Organization settings"><figcaption><p>Group and Organization settings</p></figcaption></figure>
 
-See [Managing settings](../user-and-group-management/managing-settings/) for more details.
+See [Managing settings](../snyk-admin/managing-settings/) for more details.
 
 ## View product updates
 

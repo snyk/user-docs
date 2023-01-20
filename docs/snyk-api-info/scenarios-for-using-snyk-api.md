@@ -143,7 +143,7 @@ API v1 [Invite users](https://snyk.docs.apiary.io/#reference/groups/list-all-rol
 
 ### Add users to organizations at scale ahead of the first login
 
-Scenario: [Provision users to Orgs via API](../user-and-group-management/managing-users-and-permissions/provision-users-to-orgs-via-api.md)
+Scenario: [Provision users to Orgs via API](../snyk-admin/managing-users-and-permissions/provision-users-to-orgs-via-api.md)
 
 **Endpoint used:**\
 API v1 [Provision a user to the organization](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization)
@@ -222,8 +222,8 @@ API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects)
 ## API v1 Users and Roles
 
 SEE:\
-[Provision users to Orgs via API](../user-and-group-management/managing-users-and-permissions/provision-users-to-orgs-via-api.md)\
-[Update Member Roles via API](../user-and-group-management/managing-users-and-permissions/update-member-roles-via-api.md)
+[Provision users to Orgs via API](../snyk-admin/managing-users-and-permissions/provision-users-to-orgs-via-api.md)\
+[Update Member Roles via API](../snyk-admin/managing-users-and-permissions/update-member-roles-via-api.md)
 
 ## API v1 Webhooks
 
