@@ -12,7 +12,7 @@ A good security process secures each of these components where they are built an
 
 <figure><img src="../.gitbook/assets/image (70).png" alt="Developer Security Platform"><figcaption><p>Developer Security Platform: Products and Developer experience</p></figcaption></figure>
 
-## Snyk products: Use Snyk in your workflow:
+## Snyk products: use Snyk in your workflow
 
 * **Secure your code**: use [Snyk Open Source](../products/snyk-open-source/) to fix vulnerabilities in your open source dependencies, and [Snyk Code](../products/snyk-code/) to fix vulnerabilities in your source code.
 * **Secure your containers**: use [Snyk Container](../products/snyk-container/) to fix vulnerabilities in container images and Kubernetes applications
