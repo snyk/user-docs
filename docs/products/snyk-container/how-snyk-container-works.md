@@ -15,24 +15,25 @@ When Snyk Container scans an image, using any of the available integrations, we 
 
 * dpkg, rpm and apk operating systems packages.
 * Popular unmanaged software, ie. installed outside a package manager.
-* Application packages based on the presence of a manifest file.
+* Application packages are i.e.based on the presence of a manifest file.
 
-**Note:** the container does not need to be run as Snyk reads the info from the file system; therefore, no container or foreign code needs to be run in order to successfully scan.
+**Note:** the container does not need to be run as Snyk reads the info from the file system; therefore, no container or foreign code needs to be run to scan successfully.
 
 After we have the list of installed software, we look that up against our vulnerability database, which combines public sources with proprietary research.
 
 ## Supported operating systems
 
-We detect vulnerabilities in images based on:
+We detect vulnerabilities in images based on the following:
 
-* Alpine
-* Debian
-* Ubuntu
-* CentOS
-* Red Hat Enterprise Linux (RHEL), including Universal Base Image (UBI)
+* Alpine Linux
 * Amazon Linux
+* CentOS Linux & CentOS Stream
+* Debian
 * Oracle Linux
-* SUSE Linux Enterprise Server
+* Red Hat Enterprise Linux (RHEL), including Universal Base Image (UBI)
+* Rocky Linux
+* SUSE Linux Enterprise Server (SLES)
+* Ubuntu
 
 Check out the [Operating Systems Support](https://docs.snyk.io/snyk-container/snyk-container-security-basics/supported-operating-system-distributions) page for specific version support and our [updates](https://updates.snyk.io) page for all the latest updates.
 
