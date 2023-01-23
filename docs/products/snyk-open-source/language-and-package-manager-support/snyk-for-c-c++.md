@@ -301,7 +301,7 @@ Importing a project with unmanaged dependencies creates a new project:
 
 **Scanning on Windows**
 
-Many open source projects in Git use Unix line endings. By default, Git on Windows converts Unix line endings to Windows line endings and only converts them back for the actual commits. The Snyk database contains source code signatures with the original line endings as defined in the individual Projects, so when you scan on Windows, the signatures generated for the files with Windows line endings are different from the signatures in the Snyk database. In thiG case, it is very likely no dependencies will be found.
+Many open source projects in Git use Unix line endings. By default, Git on Windows converts Unix line endings to Windows line endings and only converts them back for the actual commits. The Snyk database contains source code signatures with the original line endings as defined in the individual Projects, so when you scan on Windows, the signatures generated for the files with Windows line endings are different from the signatures in the Snyk database. In this case, it is very likely no dependencies will be found.
 
 To scan a project with Unix line endings on Windows, disable git line endings conversion. To configure this globally, run:
 

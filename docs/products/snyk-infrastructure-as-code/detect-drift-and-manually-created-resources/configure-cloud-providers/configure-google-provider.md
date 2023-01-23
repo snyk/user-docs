@@ -16,7 +16,7 @@ GOOGLE_APPLICATION_CREDENTIALS=your-creds.json \
 
 You can use any `env var` from the [GoogleCloud sdk environment variables](https://cloud.google.com/sdk/docs/properties#setting\_properties\_via\_environment\_variables).
 
-## Least privilege policy​ <a href="#least-privileged-policy" id="least-privileged-policy"></a>
+## Least privileged policy​ <a href="#least-privileged-policy" id="least-privileged-policy"></a>
 
 The `iac describe` command uses the [Google Asset API](https://console.cloud.google.com/apis/api/cloudasset.googleapis.com/overview) to enumerate resources on your account and the [Cloud Resource Manager API](https://console.cloud.google.com/marketplace/product/google/cloudresourcemanager.googleapis.com) to enumerate project IAM resources. Be sure to enable these APIs for the GCP project you are using as shown in the following screenshot.
 
@@ -26,7 +26,7 @@ To enumerate resources, you need at least the role [Cloud Asset Viewer](https://
 
 ## **Required roles​**
 
-To use `iac describe` with deep mode, you need access to retrieve the details of a resource, and the **Cloud Asset Viewer role is not enough**. To be able to get the details, set up the basic role of [**Viewer**](https://cloud.google.com/iam/docs/understanding-roles#basic-definitions) on your project. To read your IAM policies you also need the role [iam.securityReviewer](https://cloud.google.com/iam/docs/understanding-roles#iam-roles) on your project.
+To use `iac describe` with deep mode, you need access to retrieve the details of a resource and the **Cloud Asset Viewer role is not enough**. To be able to get the details, set up the basic role of [**Viewer**](https://cloud.google.com/iam/docs/understanding-roles#basic-definitions) on your project. To read your IAM policies you also need the role [iam.securityReviewer](https://cloud.google.com/iam/docs/understanding-roles#iam-roles) on your project.
 
 ```
 # Mandatory role to allow describe to enumerate resources
