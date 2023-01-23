@@ -2,9 +2,9 @@
 
 ## Authentication
 
-To use `iac describe`, set up credentials to make authenticated requests to GitHub. Snyk retrieves configuration information from [environment variables](https://registry.terraform.io/providers/integrations/github/latest/docs#argument-reference).&#x20;
+To use `iac describe`, set up credentials to make authenticated requests to GitHub. Snyk retrieves configuration information from [environment variables](https://registry.terraform.io/providers/integrations/github/latest/docs#argument-reference).
 
-GitHub tokens can be created from [this GitHub page](https://github.com/settings/tokens/).&#x20;
+GitHub tokens can be created from [this GitHub page](https://github.com/settings/tokens/).
 
 ```
 $ GITHUB_TOKEN=14758f1afd44c09b7992073ccf00b43d \
@@ -12,9 +12,9 @@ $ GITHUB_TOKEN=14758f1afd44c09b7992073ccf00b43d \
   snyk iac describe --to="github+tf"
 ```
 
-## Least privileged policy​ <a href="#least-privileged-policy" id="least-privileged-policy"></a>
+## Least privilege policy​ <a href="#least-privileged-policy" id="least-privileged-policy"></a>
 
-The following GitHub token scopes are the minimum required for `iac describe` to  scan every GitHub-supported resource.
+The following GitHub token scopes are the minimum required for `iac describe` to scan every GitHub-supported resource.
 
 ```
 # Required to enumerate private repos

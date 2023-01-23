@@ -184,7 +184,7 @@ Deploy this CloudFormation template to create the limited permission role that y
 
 [![Launch Stack](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://console.aws.amazon.com/cloudformation/home?#/stacks/quickcreate?stackName=driftctl-stack\&templateURL=https://driftctl-cfn-templates.s3.eu-west-3.amazonaws.com/driftctl-role.yml)
 
-Once the stack is deployed, attach the following policy to your IAM User. This allows the user to assume only the role specified. For more information about granting a user access to assume a role, see the [AWS Identity and Access Management User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_roles\_use\_permissions-to-switch.html).
+Once the stack is deployed, attach the following policy to your IAM user. This allows the user to assume only the role specified. For more information about granting a user access to assume a role, see the [AWS Identity and Access Management User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_roles\_use\_permissions-to-switch.html).
 
 ```
 {
@@ -205,7 +205,7 @@ There is **no automatic way to update the CloudFormation template** from the Sny
 
 * In the [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation), from the list of stacks, select the **snyk stack**.
 * In the stack details pane, choose **Update**.
-* Select **Replace current template** and specify the Snyk **Amazon S3 URL** `https://driftctl-cfn-templates.s3.eu-west-3.amazonaws.com/driftctl-role.yml`; click **Next**
+* Select **Replace current template** and specify the Snyk **Amazon S3 URL** `https://driftctl-cfn-templates.s3.eu-west-3.amazonaws.com/driftctl-role.yml`; click **Next.**
 * On the **Specify stack details** and the **Configure stack options** pages, click **Next**.
 * In the **Change set preview** section, check that AWS CloudFormation will make the changes.
 * Because the Snyk template contains one IAM resource, select **I acknowledge that this template may create IAM resources**.
@@ -219,7 +219,7 @@ Use the following command:
 $ aws cloudformation update-stack --stack-name SNYK_STACK_NAME --template-url https://driftctl-cfn-templates.s3.eu-west-3.amazonaws.com/snyk-role.yml --capabilities CAPABILITY_NAMED_IAM
 ```
 
-## Least privileged policy​ <a href="#least-privileged-policy" id="least-privileged-policy"></a>
+## Least privilege policy​ <a href="#least-privileged-policy" id="least-privileged-policy"></a>
 
 The `iac describe` command needs access to your cloud provider account so that it can list resources on your behalf.
 
