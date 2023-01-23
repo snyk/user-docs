@@ -67,4 +67,4 @@ With the Container Registry Agent, Snyk Broker also connects to all [Snyk suppor
 * How often is Snyk Broker checked for vulnerabilities?\
   The Snyk Broker application and images are being tested on a daily basis for vulnerabilities.
 * What is the SLA to fix vulnerabilities?\
-  There is a 14 day SLA for fixing high vulnerabilities and five5 days SLA for fixing critical vulnerabilities in public images.
+  There is a 14 day SLA for fixing high vulnerabilities and five day SLA for fixing critical vulnerabilities in public images.
