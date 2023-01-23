@@ -134,6 +134,7 @@
     * [Nucleus Security](integrations/vulnerability-management-tools/nucleus-security.md)
     * [OpsLevel](integrations/vulnerability-management-tools/opslevel.md)
     * [RiskSense](integrations/vulnerability-management-tools/risksense.md)
+    * [ServiceNow (AVR)](integrations/vulnerability-management-tools/servicenow-avr.md)
     * [Vulcan-Cyber](integrations/vulnerability-management-tools/vulcan-cyber.md)
   * [Private registry gatekeeper plugins](integrations/private-registry-gatekeeper-plugins/README.md)
     * [Artifactory Gatekeeper plugin](integrations/private-registry-gatekeeper-plugins/artifactory-gatekeeper-plugin-overview.md)
