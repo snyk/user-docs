@@ -22,10 +22,10 @@ $ AZURE_SUBSCRIPTION_ID=00000000-0000-0000-0000-000000000000\
   snyk iac describe --to=azure+tf
 ```
 
-## Least privileged policy​ <a href="#least-privileged-policy" id="least-privileged-policy"></a>
+## Least privilege policy​ <a href="#least-privileged-policy" id="least-privileged-policy"></a>
 
 The `iac describe` command needs to have read-only access to your account. If you want to scan your whole Azure account, set up the **Reader** role on your subscription as shown in the following screenshot.
 
-![Set up Reader role for the Azure provider](https://docs.driftctl.com/assets/images/auth-d38df6fe7a4318ec9ebf82d0e5f9edae.png)
+<figure><img src="https://docs.driftctl.com/assets/images/auth-d38df6fe7a4318ec9ebf82d0e5f9edae.png" alt="Set up Reader role for the Azure provider"><figcaption><p>Set up Reader role for the Azure provider</p></figcaption></figure>
 
-You may want to scan only a resource group; you can assign the **Reader** role only on some restricted resources groups.
+You may want to scan only a resource group; you can assign the **Reader** role only on some restricted resource groups.
