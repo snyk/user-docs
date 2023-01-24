@@ -83,7 +83,7 @@ Use **Group by none** (ungrouped) for better Project visibility and to apply [fi
 The Targetfile is the specific item to scan in a Target, such as a `pom.xml` file in a GitHub repo.
 
 {% hint style="info" %}
-[Snyk Code](../../products/snyk-code/) scans do not use Targetfiles.
+[Snyk Code](../../scan-application-code/snyk-code/) scans do not use Targetfiles.
 {% endhint %}
 
 ## Type
