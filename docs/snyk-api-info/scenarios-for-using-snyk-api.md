@@ -35,7 +35,7 @@ REST API [Get targets by org ID (use latest version)](https://apidocs.snyk.io/?v
 
 API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects/import-targets)
 
-### More users of API v1 Import projects
+### More uses of API v1 Import projects
 
 SEE also:\
 API v1 Projects: [Import fresh Container images](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#import-fresh-container-images)
