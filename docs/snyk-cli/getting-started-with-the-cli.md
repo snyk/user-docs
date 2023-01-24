@@ -16,7 +16,7 @@ If you are using the Snyk CLI to scan for issues in Snyk Code, Container, or Inf
 
 * [Using Snyk Code via the CLI](../products/snyk-code/cli-for-snyk-code/)
 * [Snyk CLI for container security](../scan-containers/snyk-cli-for-container-security/)
-* [Snyk CLI for Infrastructure as Code](../scan-cloud-deployments/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/)
+* [Snyk CLI for Infrastructure as Code](../scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/)
 
 ## Scan your project
 

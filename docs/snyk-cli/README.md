@@ -10,6 +10,6 @@ Snyk CLI also supports:
 
 * [Snyk Code scanning](../products/snyk-code/cli-for-snyk-code/)
 * [Snyk Container scanning](../scan-containers/snyk-cli-for-container-security/) including Docker scanning
-* [Snyk Infrastructure as Code scanning](../scan-cloud-deployments/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/) including Terraform and Kubernetes (K8s) projects
+* [Snyk Infrastructure as Code scanning](../scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/) including Terraform and Kubernetes (K8s) projects
 
 For additional information see the [summary of supported languages](https://docs.snyk.io/getting-started/introducing-snyk#how-can-snyk-work-in-my-environment).
