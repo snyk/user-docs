@@ -320,11 +320,11 @@ A Snyk platform tool. Snyk CLI enables developers to find and fix known vulnerab
 
 ### Snyk Cloud
 
-A Snyk product. Enables developers to find and fix cloud infrastructure misconfigurations. See [Snyk Cloud documentation](../scan-cloud-deployment/snyk-cloud/).
+A Snyk product. Enables developers to find and fix cloud infrastructure misconfigurations. See [Snyk Cloud documentation](../products/snyk-cloud/).
 
 ### Snyk Cloud Environment
 
-An organizing concept that equates to an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project. See [Snyk Cloud concepts](../scan-cloud-deployment/snyk-cloud/snyk-cloud-concepts.md).
+An organizing concept that equates to an Amazon Web Services (AWS) account, Azure subscription, or Google Cloud project. See [Snyk Cloud concepts](../products/snyk-cloud/snyk-cloud-concepts.md).
 
 ### Snyk Code
 

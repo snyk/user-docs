@@ -28,7 +28,7 @@ If you select **GitHub**, then fill in the details as prompted.
 
 Finally, you can [Import a Project](import-a-project.md) to scan:
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Add your first project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Add your first project</p></figcaption></figure>
 
 ### Manual process (any time)
 

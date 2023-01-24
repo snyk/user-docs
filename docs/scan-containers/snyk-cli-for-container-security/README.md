@@ -33,7 +33,7 @@ snyk container test <repository>:<tag> --file=Dockerfile
 
 Specifying a Dockerfile provides more context, and allows Snyk to provide clear recommendations on how to fix discovered vulnerabilities.
 
-In order to [detect application vulnerabilities](https://docs.snyk.io/products/snyk-container/getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images#using-cli-to-detect-vulnerabilities) in your image, use the `--app-vulns` flag.
+Beginning January 24th, 2023, Snyk will [detect application vulnerabilities](https://docs.snyk.io/products/snyk-container/getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images#using-cli-to-detect-vulnerabilities) in your image by default.
 
 ## Monitoring an image
 

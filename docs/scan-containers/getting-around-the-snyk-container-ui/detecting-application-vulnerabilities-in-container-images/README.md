@@ -41,7 +41,9 @@ When scanning an image using a container registry, Kubernetes integration, or th
 
 #### App Vulns Flag
 
-Use the `--app-vulns` flag to detect vulnerabilities in your application dependencies from container images.
+Beginning January 24th, 2023, Snyk will scan for application dependencies in your image by deafult, without the need to specify the `--app-vulns` flag.
+
+If you wish to opt out of application vulnerability scanning, you can do so by specifying the `--exclude-app-vulns` flag — which will omit the application vulnerabilities section from the results, mimicking the previous behavior. The `--exclude-app-vulns` flag is available in CLI version 1.1021.0 and above.
 
 #### Nested Jars Depth Flag
 
