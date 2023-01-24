@@ -8,7 +8,7 @@ Snyk Project information appears in the **Projects** listing, which you can disp
 After filters have been applied to the Project listing page, you can bookmark the URL and share it with other users in the Organization. This allows all users to see the same view of the page.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 15.25.01.png" alt="Snyk Projects listing grouped by Target"><figcaption><p>Snyk Projects listing grouped by Target</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-01-24 at 09.09.25.png" alt="Snyk Projects listing grouped by Target"><figcaption><p>Snyk Projects listing grouped by Target</p></figcaption></figure>
 
 Snyk Projects concepts include **Target**, **Origin**, **Project, Targetfile**, and **Type**.
 
@@ -16,9 +16,9 @@ Snyk Projects concepts include **Target**, **Origin**, **Project, Targetfile**, 
 
 Projects are held in a Target. A Target represents an external resource Snyk has scanned: a code repository, a Kubernetes workload, or other scannable resource external to Snyk.&#x20;
 
-When you select **Group by target** Snyk Targets appear in the **Projects** listing. You can also find Targets using the Snyk REST API endpoint [Get targets by org ID](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/targets).
+When you select **Group by target**, Snyk Targets appear in the **Projects** listing. You can also find Targets using the Snyk REST API endpoint [Get targets by org ID](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/targets).
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 15.26.59.png" alt="Snyk Target and Projects in that Target"><figcaption><p>Snyk Target and Projects in that Target</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-01-24 at 08.59.20.png" alt="Snyk Target and Projects in that Target"><figcaption><p>Snyk Target and Projects in that Target</p></figcaption></figure>
 
 Each Snyk Project is associated with a parent Target. One Target may include many Projects. The structure of the Target depends on the Origin.
 
@@ -28,13 +28,13 @@ Snyk provides both pagination to improve the page loading time for Projects page
 
 Use **Sort by** (pull down on the far right) to sort the **Projects** listing by severity, by how recently the Projects were imported, or in alphabetical order.
 
-<figure><img src="../../.gitbook/assets/projects_group-sort_20sept2022.png" alt="Sorting attributes available when grouping by Target"><figcaption><p>Sorting attributes available when grouping by Target</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt="Sorting attributes available when grouping by Target"><figcaption><p>Sorting attributes available when grouping by Target</p></figcaption></figure>
 
 ## Origin
 
 The Origin defines the Target ecosystem, such as CLI, GitHub, or Kubernetes. Origins are a property of Targets (see preceding section) and appear in the **Projects** listing as an icon next to the Target name.
 
-<figure><img src="../../.gitbook/assets/targets-origin_20sept2022.png" alt="Origin icon next to the Target name"><figcaption><p>Origin icon next to the Target name</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-01-24 at 08.59.07.png" alt="Origin icon next to the Target name"><figcaption><p>Origin icon next to the Target name</p></figcaption></figure>
 
 Possible Origin values are:
 
@@ -76,7 +76,7 @@ Projects appear in the **Projects** listing. You can also find Projects using th
 
 Use **Group by none** (ungrouped) for better Project visibility and to apply [filtering attributes at the Project level](project-attributes.md).
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 18.07.46 (2).png" alt="Filtering attributes applied at the Project level"><figcaption><p>Filtering attributes applied at the Project level</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 18.07.46 (1).png" alt="Filtering attributes applied at the Project level"><figcaption><p>Filtering attributes applied at the Project level</p></figcaption></figure>
 
 ## Targetfile
 
