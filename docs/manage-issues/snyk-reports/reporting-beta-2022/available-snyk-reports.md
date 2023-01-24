@@ -37,13 +37,13 @@ For customers who opted into the reporting beta, the Dependencies and Licenses v
 ## Cloud Compliance Issues Report
 
 {% hint style="info" %}
-All users with access to the reporting beta will see the Cloud Compliance Issues report. If [Snyk Cloud](../../../products/snyk-cloud/) and/or [Snyk Integrated IaC](../../../products/snyk-infrastructure-as-code/integrated-infrastructure-as-code/) are not enabled, or if they are enabled but no [environments](../../../products/snyk-cloud/snyk-cloud-concepts.md#environments) have issues, you will see the following message: “Snyk doesn’t detect any issues in your Organization that map to supported compliance standards. This is a capability for Snyk Cloud and Snyk IaC (integrated) customers. Please reach out to your account team if you are interested.”
+All users with access to the reporting beta will see the Cloud Compliance Issues report. If [Snyk Cloud](../../../scan-cloud-deployment/snyk-cloud/) and/or [Snyk Integrated IaC](../../../scan-cloud-deployment/snyk-infrastructure-as-code/integrated-infrastructure-as-code/) are not enabled, or if they are enabled but no [environments](../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-concepts.md#environments) have issues, you will see the following message: “Snyk doesn’t detect any issues in your Organization that map to supported compliance standards. This is a capability for Snyk Cloud and Snyk IaC (integrated) customers. Please reach out to your account team if you are interested.”
 {% endhint %}
 
-The Cloud Compliance Issues report shows[ cloud and integrated IaC issues](../../../products/snyk-cloud/snyk-cloud-concepts.md#issues) for an entire Organization, organized by [compliance standard](../../../products/snyk-cloud/snyk-cloud-concepts.md#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e).
+The Cloud Compliance Issues report shows[ cloud and integrated IaC issues](../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-concepts.md#issues) for an entire Organization, organized by [compliance standard](../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-concepts.md#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e).
 
 You can view a report for a single version of a compliance standard at a time (for example, CIS AWS Foundations Benchmark v1.4.0) by selecting the desired standard from the drop-down menu. Each report includes a list of compliance controls organized by control category, with corresponding issue counts.
 
-Selecting an issue count lets you view the list of issues associated with that control in the [Cloud Issues UI](../../../products/snyk-cloud/snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md), where you can view each issue in detail.
+Selecting an issue count lets you view the list of issues associated with that control in the [Cloud Issues UI](../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md), where you can view each issue in detail.
 
 Use the information in the Cloud Compliance Issues report to investigate, triage, and fix cloud compliance issues.

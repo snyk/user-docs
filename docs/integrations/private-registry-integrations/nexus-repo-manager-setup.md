@@ -12,7 +12,7 @@ Connecting Nexus Repository Manager enables Snyk to resolve all direct and trans
 {% hint style="info" %}
 **Supported projects**
 
-* The integration currently supports [Node.js](../../scan-application-code/snyk-open-source/language-and-package-manager-support/snyk-for-javascript/) (npm and Yarn) and [Maven](../../scan-application-code/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md) projects.
+* The integration currently supports [Node.js](../../products/snyk-open-source/language-and-package-manager-support/snyk-for-javascript/) (npm and Yarn) and [Maven](../../products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md) projects.
 * Gradle projects are not currently supported.
 {% endhint %}
 

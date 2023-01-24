@@ -8,7 +8,7 @@ To connect Snyk Code to your self-hosted Git server via the Snyk Broker, you mus
 
 For more information on the Snyk Broker deployment method, see [Snyk Broker](../).
 
-The [Automatic PR Checks feature](../../../scan-application-code/snyk-code/pr-checks-for-snyk-code/) is currently not supported in the Snyk Broker - Code Agent deployment method.
+The [Automatic PR Checks feature](../../../products/snyk-code/pr-checks-for-snyk-code/) is currently not supported in the Snyk Broker - Code Agent deployment method.
 
 ## Snyk Code - deployment components for accessing a self-hosted Git provider
 

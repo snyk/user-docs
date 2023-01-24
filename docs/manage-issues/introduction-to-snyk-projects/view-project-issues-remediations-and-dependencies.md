@@ -26,7 +26,7 @@ You can also select **Fix this vulnerability** for a specific issue:
 
 <figure><img src="../../.gitbook/assets/image26.png" alt="Fix this vulnerability for an issue"><figcaption><p>Fix this vulnerability for an issue</p></figcaption></figure>
 
-See [Fix vulnerabilities with Snyk Open Source](../../scan-application-code/snyk-open-source/open-source-basics/) for an overview.\
+See [Fix vulnerabilities with Snyk Open Source](../../products/snyk-open-source/open-source-basics/) for an overview.\
 See [Manage issues](../) for more details.
 
 ## View issue details
