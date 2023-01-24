@@ -2,7 +2,7 @@
 
 ## Which Git repositories can I integrate with Snyk?
 
-Snyk can integrate with the following Source Control Managers (SCMs) to help you track, monitor, and fix the issues and vulnerabilities in your code:&#x20;
+Snyk can integrate with the following Source Control Managers (SCMs) to help you track, monitor, and fix the issues and vulnerabilities in your code:
 
 * [GitHub integration](github-integration.md)
 * [GitHub Enterprise Integration](github-enterprise-integration.md)
@@ -20,6 +20,6 @@ Check out our [deployment recommendations](https://docs.snyk.io/integrations/git
 ## How can I use Snyk Pull Requests (PRs) for my Git repositories?
 
 * [Opening fix and upgrade PRs from a fixed GitHub account](opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)
-* [Test your PRs for vulnerabilities before merging](test-your-prs-for-vulnerabilities-before-merging.md)
-* [Snyk checks on PRs](snyk-checks-on-pull-requests.md)
+* [Test your PRs for vulnerabilities before merging](../../scan-application-code/run-pr-checks/pr-checks-for-snyk-open-source/test-your-prs-for-vulnerabilities-before-merging.md)
+* [Snyk checks on PRs](../../scan-application-code/run-pr-checks/pr-checks-for-snyk-open-source/snyk-checks-on-pull-requests.md)
 * [View and understand Snyk upgrade PRs](view-and-understand-snyk-upgrade-pull-requests.md)

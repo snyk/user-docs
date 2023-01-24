@@ -1,4 +1,4 @@
-# Introduction to PR Checks
+# Run PR Checks
 
 Use the **Snyk PR Checks** feature to prevent new security issues from entering your codebase, by automatically scanning code changes in real-time, as soon as a developer submits a PR (Pull Request).
 
@@ -10,7 +10,7 @@ PRs are the points in the development process where code reviews happen. So PR C
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-09-20 at 11.27.44.png" alt=""><figcaption></figcaption></figure>
 
-The PR Checks feature is available for [Snyk Open Source](pr-checks-for-snyk-open-source/) and [Snyk Code](../snyk-code/pr-checks-for-snyk-code/).
+The PR Checks feature is available for [Snyk Open Source](pr-checks-for-snyk-open-source/) and [Snyk Code](pr-checks-for-snyk-code/).
 
 #### Test the change
 
@@ -43,4 +43,4 @@ If security vulnerabilities are found, Snyk PR Checks automatically fails the sc
 ### More details
 
 * Scan PRs for security and license issue: [PR Checks for Snyk Open Source](pr-checks-for-snyk-open-source/).
-* Scan your application code PRs: [PR Checks for Snyk Code](../snyk-code/pr-checks-for-snyk-code/).
+* Scan your application code PRs: [PR Checks for Snyk Code](pr-checks-for-snyk-code/).

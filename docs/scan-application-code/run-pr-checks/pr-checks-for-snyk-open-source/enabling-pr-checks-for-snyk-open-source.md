@@ -1,7 +1,7 @@
 # Enabling PR Checks for Snyk Open Source
 
 {% hint style="success" %}
-Look familiar? [Snyk Code](../../snyk-code/pr-checks-for-snyk-code/enabling-pr-checks-for-snyk-code.md) and Snyk Open Source enable PR Checks in the same way with the same configurations.
+Look familiar? [Snyk Code](../pr-checks-for-snyk-code/enabling-pr-checks-for-snyk-code.md) and Snyk Open Source enable PR Checks in the same way with the same configurations.
 {% endhint %}
 
 The Snyk project must be active (see [Getting Started](../../../getting-started/)) in order to run checks against its repo.

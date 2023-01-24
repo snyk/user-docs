@@ -35,7 +35,7 @@ Snyk Code supports a wide range of languages - see [Snyk Code - Supported langua
 
 ### PR checks
 
-Snyk Code analysis can be applied to every Pull Request you are creating in your SCM, before merging it into the target branch. For more information, see [Using Automatic PR Checks for securing your source code](../../pr-checks-for-snyk-code/).
+Snyk Code analysis can be applied to every Pull Request you are creating in your SCM, before merging it into the target branch. For more information, see [Using Automatic PR Checks for securing your source code](../../../../scan-application-code/run-pr-checks/pr-checks-for-snyk-code/).
 
 ## CLI and CI/CD integrations
 
