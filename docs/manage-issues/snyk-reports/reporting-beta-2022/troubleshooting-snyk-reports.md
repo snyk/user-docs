@@ -1,8 +1,8 @@
 # Troubleshooting Snyk Reports
 
-## Access
+## Access to reporting
 
-If reporting is not loading in the Snyk UI, the following troubleshooting steps may help resolve the issue.
+If reporting is not loading in the Snyk UI, follow these troubleshooting steps that may help resolve the issue.
 
 **Note:** Whitelisting may be necessary due to some firewall settings. If whitelisting snyk.io was required for the initial implementation, additional whitelisting may be needed for new reporting access. Contact your account team for more information.
 
@@ -12,7 +12,7 @@ If you still have issues accessing the new reporting after using these troublesh
 
 Resolved issues are issues detected in the previous scan snapshot that no longer appear in the current snapshot.\
 \
-Changes in the Snyk code **resolved** column between snapshots may be caused by any of the following reasons:
+Changes in the Snyk code **resolved** column between snapshots may be caused for any of the following reasons:
 
 * The issue was fixed between the two scans and is therefore marked as resolved.
 * The engine rules were improved, which may change the scan results.\
@@ -21,12 +21,16 @@ Changes in the Snyk code **resolved** column between snapshots may be caused by 
   In this situation, the original issue ID is marked as **resolved** and a new issue ID is created.
 
 {% hint style="info" %}
-Historical data for Snyk Code issue reports officially entered General Availability (GA) in November 2022.
+Historical data for Snyk Code issue reports entered General Availability (GA) in November 2022.
 {% endhint %}
 
 ## Data freshness
 
 Data is available in reporting approximately one hour after a scan occurs.
+
+## Ignores in reporting
+
+Issues that are ignored are reflected in reporting, and in the rest of the Snyk platform including APIs, after a project rescan.
 
 ## Known limitations
 
