@@ -41,7 +41,7 @@ In **Settings**, optionally choose to:
 
 A progress bar appears during import. Select **View last import log** to see log results.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-07-26 at 10.23.09.png" alt="View log"><figcaption><p>View log</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 13.23.59.png" alt="Import Projects progress and option to view import log"><figcaption><p>Import Projects progress and option to view import log</p></figcaption></figure>
 
 During the import, Snyk starts scanning the selected repos for relevant files (such as  **package.json** files listing dependencies) in the entire directory tree, and imports these files as Snyk Projects.
 
@@ -49,7 +49,7 @@ During the import, Snyk starts scanning the selected repos for relevant files (s
 
 Project import completes, with a status message:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-06-13 at 11.38.00.png" alt="Project import success message"><figcaption><p>Project import success message</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 13.24.35.png" alt="Project import success message"><figcaption><p>Project import success message</p></figcaption></figure>
 
 You have now successfully imported and scanned the selected Project.
 
