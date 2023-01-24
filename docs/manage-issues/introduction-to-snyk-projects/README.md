@@ -8,7 +8,7 @@ Snyk Project information appears in the **Projects** listing, which you can disp
 After filters have been applied to the Project listing page, you can bookmark the URL and share it with other users in the Organization. This allows all users to see the same view of the page.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/projects-breadcrumbs_02oct2022.png" alt="Snyk Projects listing grouped by Target"><figcaption><p>Snyk Projects listing grouped by Target</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 15.25.01.png" alt="Snyk Projects listing grouped by Target"><figcaption><p>Snyk Projects listing grouped by Target</p></figcaption></figure>
 
 Snyk Projects concepts include **Target**, **Origin**, **Project, Targetfile**, and **Type**.
 
@@ -18,7 +18,7 @@ Projects are held in a Target. A Target represents an external resource Snyk has
 
 When you select **Group by target** Snyk Targets appear in the **Projects** listing. You can also find Targets using the Snyk REST API endpoint [Get targets by org ID](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/targets).
 
-<figure><img src="../../.gitbook/assets/targets-projects_20sept2022 (1).png" alt="Snyk Target and Projects in that Target"><figcaption><p>Snyk Target and Projects in that Target</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 15.26.59.png" alt="Snyk Target and Projects in that Target"><figcaption><p>Snyk Target and Projects in that Target</p></figcaption></figure>
 
 Each Snyk Project is associated with a parent Target. One Target may include many Projects. The structure of the Target depends on the Origin.
 
