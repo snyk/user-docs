@@ -10,7 +10,7 @@ This example shows how a security team can:
 * Use GitHub Actions to add different development-time steps to their pipelines
 * Configure a different GitHub repository to run a GitHub Action pipeline that uses the custom rules to gate changes.
 
-We use the [snyk/custom-rules-example](https://github.com/snyk/custom-rules-example) repository for the example; this repo contains all the custom rules written while [getting started with the SDK](../custom-rules/getting-started-with-the-sdk/).
+We use the [snyk/custom-rules-example](https://github.com/snyk/custom-rules-example) repository for the example; this repo contains all the custom rules written while [getting started with the SDK](getting-started-with-the-sdk/).
 
 #### Aims
 
@@ -25,7 +25,7 @@ We want to configure our pipeline to:
 
 An example of a PR check can be seen in [https://github.com/snyk/custom-rules-example/pull/5](https://github.com/snyk/custom-rules-example/pull/5) where we attempt to add a new rule called `my_rule`
 
-(**note**: this is the same rule we showed when [learning how to write a rule](../custom-rules/getting-started-with-the-sdk/writing-a-rule.md))
+(**note**: this is the same rule we showed when [learning how to write a rule](getting-started-with-the-sdk/writing-a-rule.md))
 
 To verify that this rule works as expected, we have implemented unit tests. To run the unit tests as part of PR checks, we previously configured a GitHub Action under `.github/workflows` called `test.yml`:
 
@@ -60,7 +60,7 @@ jobs:
 A few things to note about this workflow:
 
 * We configured it to run on all non-`main` branches, so that it runs when PRs are open.
-* We added steps to setup a Node.js environment, so that we can then install the `snyk-iac-rules` SDK using [npm](../custom-rules/install-the-sdk.md#install-the-sdk-with-npm).
+* We added steps to setup a Node.js environment, so that we can then install the `snyk-iac-rules` SDK using [npm](install-the-sdk.md#install-the-sdk-with-npm).
 * We added a step to run `snyk-iac-rules test`, which will cause the PR check to fail if any of the tests fail.
 
 {% hint style="info" %}
@@ -150,7 +150,7 @@ jobs:
 It looks similar to the previous workflow, but there are a few things to note about this one:
 
 * We configured it to run only on `main` branches, so that it runs when PRs are merged.
-* We added a step to authenticate with Docker Hub, our chosen OCI registry. For a list of supported registries read about [pushing bundles](../custom-rules/getting-started-with-the-sdk/pushing-a-bundle.md). Use the [docker/login-action](https://github.com/docker/login-action) GitHub Action to do that and make sure to configure the GitHub secrets under `Settings` -> `Secrets`.
+* We added a step to authenticate with Docker Hub, our chosen OCI registry. For a list of supported registries read about [pushing bundles](getting-started-with-the-sdk/pushing-a-bundle.md). Use the [docker/login-action](https://github.com/docker/login-action) GitHub Action to do that and make sure to configure the GitHub secrets under `Settings` -> `Secrets`.
 * We added a step to run `snyk-iac-rules build` followed by `snyk-iac-rules push`, which will publish our generated custom rules bundle to an OCI registry.
 
 #### Versioning rules

@@ -20,7 +20,7 @@ $ snyk iac describe --from="tfstate://state.tfstate"
 
 ## **S3 read-only access IAM policy**
 
-The `snyk iac describe` command needs read-only access. The following policy ensures  minimal access to your state file.
+The `snyk iac describe` command needs read-only access. The following policy ensures minimal access to your state file.
 
 ```
 {

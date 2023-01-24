@@ -2,7 +2,7 @@
 
 Snyk IaC drift scanning supports the following resources for AWS:
 
-| ****                                      | **Deep mode available** |
+| \*\*\*\*                                  | **Deep mode available** |
 | ----------------------------------------- | ----------------------- |
 | aws\_s3\_bucket                           | ✅                       |
 | aws\_s3\_bucket\_analytics\_configuration | ✅                       |
@@ -104,4 +104,3 @@ Snyk IaC drift scanning supports the following resources for AWS:
 | aws\_alb                                  | ❌                       |
 | aws\_elb                                  | ❌                       |
 | aws\_elasticache\_cluster                 | ❌                       |
-

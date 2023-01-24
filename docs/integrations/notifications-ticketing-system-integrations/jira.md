@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Feature availability**\
 \- This feature is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.\
-\- For the availability of this feature for Snyk Infrastructure as Code, see [Jira Integration for IaC](../../scan-cloud-deployment/snyk-infrastructure-as-code/jira-integration.md).
+\- For the availability of this feature for Snyk Infrastructure as Code, see [Jira Integration for IaC](../../products/snyk-infrastructure-as-code/jira-integration.md).
 {% endhint %}
 
 ## **Set up your Jira integration**

@@ -56,17 +56,17 @@ The mandatory name of the rule you want to define. This will generate a `rules/`
 
 The scaffolded folder structure looks like so:
 
-`rules` \
-`└── RULE`    \
-&#x20;       `├── fixtures` \
-&#x20;               `├── allowed.<extension>`\
-&#x20;               `└── denied.<extension>`\
-&#x20;       `├── main.rego` \
-&#x20;       `└── main_test.rego`\
-`lib`    \
-`└── testing` \
-&#x20;       `└── main.rego`\
-&#x20;       `└── tfplan.rego`\
+`rules`\
+`└── RULE`\
+`├── fixtures`\
+`├── allowed.<extension>`\
+`└── denied.<extension>`\
+`├── main.rego`\
+`└── main_test.rego`\
+`lib`\
+`└── testing`\
+`└── main.rego`\
+`└── tfplan.rego`\
 `└── main.rego`
 
 Note: the rule name cannot contain any whitespace or start with `SNYK-`.
@@ -113,7 +113,7 @@ Default: 5000000 (5 seconds).
 
 `--ignore`
 
-Accepts a regular expression that can be used to ignore files and folders from being loaded for testing.&#x20;
+Accepts a regular expression that can be used to ignore files and folders from being loaded for testing.
 
 Default: ".\*" (hidden files), "fixtures"
 
@@ -137,7 +137,7 @@ Default: "rules/deny"
 
 `--ignore`
 
-Accepts a regular expression that can be used to ignore files and folders from being loaded for bundling.&#x20;
+Accepts a regular expression that can be used to ignore files and folders from being loaded for bundling.
 
 Default: ".\*”"(hidden files), "fixtures", "testing", "\*\_test.rego"
 

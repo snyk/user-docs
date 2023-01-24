@@ -45,11 +45,11 @@ The results include a list of issues sorted by severity, where each issue consis
 
 * **Heading** - the issue that was detected, and the severity level of that issue.
 * **Info** - a short description of the detected issue.
-* **Rule** - a link to the rule documentation.&#x20;
+* **Rule** - a link to the rule documentation.
 * **Path** - the property path within the configuration file, where the issue was identified. See the example below for more details.
 
-For example**:**\
-****The path of the issue is specified as:
+For example\*\*:\*\*\
+\*\*\*\*The path of the issue is specified as:
 
 ```
 resource > aws_api_gateway_stage[denied] > access_log_settingsresource > aws_api_gateway_stage[denied] > access_log_settings

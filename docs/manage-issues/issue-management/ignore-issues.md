@@ -142,7 +142,7 @@ When scanning your IaC configuration files using the Snyk CLI with `snyk iac tes
 
 Snyk recommends storing and versioning the .snyk file in root of your working directory for where you store your IaC configuration files.
 
-For more information, see [IaC ignores using the .snyk policy file](../../scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md).
+For more information, see [IaC ignores using the .snyk policy file](../../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md).
 
 ## Configure ignore settings
 
