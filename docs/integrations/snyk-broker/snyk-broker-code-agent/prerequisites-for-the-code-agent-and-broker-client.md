@@ -5,7 +5,7 @@
 To use the Broker Client – Code Agent deployment method, the Broker Client and Code Agent components must be enabled by Snyk. To enable the Broker Client and Code Agent components, contact one of the following:
 
 * Your Implementation Consultant (IC)
-* Your Technical Success Manager (TCM)
+* Your Technical Success Manager (TSM)
 * Snyk Support
 
 The maximum file size you can import via the Snyk Broker – Code Agent deployment method is the same as via the CLI - 1MB. For more information , see the [File size limit for Snyk Code analysis](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#file-size-limit-for-snyk-code-analysis).
