@@ -30,7 +30,7 @@ The Broker Client maintains an approved data list for inbound and outbound data 
 
 The default approved list limits requests as follows:
 
-* **Inbound:** Snyk.io is allowed to fetch and view dependency only manifest files and the Snyk policy file. No other source code is viewed, extracted, or modified. Additional files (`.snyk files`) may be checked in to support the Snyk patch mechanism and for any ignore instructions included in your vulnerability policy.
+* **Inbound:** For Snyk Open Source, Snyk.io is allowed to fetch and view only dependency manifest files and the `.snyk` policy file. No other source code is viewed, extracted, or modified. Additional `.snyk` files may be checked in to support the Snyk patch mechanism and for any ignore instructions included in your vulnerability policy. Snyk Code and Snyk IaC need access to the entire repository. For more information see [How Snyk handles your data](../../snyk-processes/how-snyk-handles-your-data.md).
 * **Outbound:** Git repo webhooks are set when you configure your Broker Client setup, to enable automatic Snyk scans triggered when new pull requests or merge events are submitted by your developers. Webhook notifications are delivered to Snyk via the Broker Client only for events relevant to Snyk actions--push to branch, pull request opened, and only when the event data also includes a dependency manifest file or a .`snyk` policy file.
 
 Because of the limitations of the default approved list, if you are interested in scanning Infrastructure as Code files with the Snyk Broker, you must [add and configure an `accept.json`](snyk-broker-infrastructure-as-code-detection/) file in your Broker deployment.
