@@ -1,16 +1,16 @@
-# Install and configure the Snyk Broker client
+# Install and configure the Snyk Broker Client
 
 {% hint style="info" %}
-Snyk recommends and supports using Docker as the method of running the Snyk Broker client.
+Snyk recommends and supports using Docker as the method of running the Snyk Broker Client.
 {% endhint %}
 
-To install and configure your Snyk Broker client:
+To install and configure your Snyk Broker Client:
 
-1. Visit [the broker repository](https://github.com/snyk/broker) and follow the instructions for the relevant integration to run one of the images provided by Snyk, or derive your own.\
-   There are some examples available at [Snyk Broker integration setups](../snyk-broker-set-up-examples/).
-2. For the environment variables required to run the Broker client, you must:
-   1. Retrieve your [unique broker client token](prepare-snyk-broker-for-deployment.md).
-   2. Ensure that you have the necessary permissions granted to your API credentials for the integration you are using by following [one of the Snyk integration guides.](https://docs.snyk.io/integrations)
+1. Visit [the broker repository](https://github.com/snyk/broker) on GitHub and follow the instructions for the relevant integration to run one of the images provided by Snyk, or derive your own.\
+   There are some examples at [Snyk Broker integration setups](../snyk-broker-set-up-examples/).
+2. For the environment variables required to run the Broker Client, you must:
+   1. Retrieve your [unique Broker Client token](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/prepare-snyk-broker-for-deployment#generate-credentials-in-the-target-application-for-snyk-broker).
+   2. Ensure that you have the necessary permissions granted to your API credentials for the integration you are using by following one of the [Snyk integration guides](../../).
 3. Once Broker is running, **identifying Broker server** appears toward the end of the log results, showing that a connection to Snyk has been established
 4. Visit the settings for your brokered integration in [the Snyk Web UI](https://app.snyk.io) to see a message like the following:
 
@@ -24,7 +24,7 @@ The base setup for SCMs enables use of Snyk Open Source and scanning Dockerfiles
 
 ## Snyk Broker Helm Chart
 
-Alternatively, if you are using Kubernetes and would like to deploy Broker through a Helm chart, use the provided [Snyk Broker Helm Chart](https://github.com/snyk/snyk-broker-helm)
+Alternatively, if you are using Kubernetes and would like to deploy Broker through a Helm chart, use the [Snyk Broker Helm Chart](https://github.com/snyk/snyk-broker-helm) provided on GitHub.
 
 ## Advanced configuration for Snyk Broker
 
@@ -51,7 +51,7 @@ Note that `BROKER_CLIENT_URL` now has the HTTPS scheme.
 
 ### **Git with an internal certificate**
 
-By default, the Broker client establishes HTTPS connections to the Git. If your Git is serving an internal certificate (signed by your own CA), you can provide the CA certificate to the Broker client.
+By default, the Broker Client establishes HTTPS connections to the Git. If your Git is serving an internal certificate (signed by your own CA), you can provide the CA certificate to the Broker Client.
 
 For example, if your CA certificate is at `./private/ca.cert.pem`, provide it to the Docker container by mounting the folder and using the `CA_CERT` environment variable:
 
@@ -79,7 +79,7 @@ For proxy configuration see [Configure Docker to use a proxy server](https://doc
  -e NO_PROXY=*.test.example.com,.example2.com,127.0.0.0/8
 ```
 
-If your proxy requires username and password authentication, provide the following additonal environment variable:
+If your proxy requires username and password authentication, provide the following additional environment variable:
 
 ```
 -e PROXY_AUTH=userID:userPass
@@ -132,10 +132,10 @@ For example, to only allow the SHA Media Type accept header for requests to the 
 }
 ```
 
-For an example of custom approved-listing filters for each SCM see [Snyk Broker integration setups](../snyk-broker-set-up-examples/) and the more generic list in [https://github.com/snyk/broker/tree/master/client-templates](https://github.com/snyk/broker/tree/master/client-templates)
+For an example of custom approved-listing filters for each SCM see [Snyk Broker integration setups](../snyk-broker-set-up-examples/) and the more generic list on [Snyk Broker GitHub](https://github.com/snyk/broker/tree/master/client-templates).
 
-## Upgrade your Snyk Broker client
+## Upgrade your Snyk Broker Client
 
-Snyk regularly updates the Broker client in order to provide new features, bug fixes, and more. The full list of versions and their release notes is available from GitHub as part of [the Broker project](https://github.com/snyk/broker/releases). Snyk encourages you to [subscribe to the RSS feed](https://github.com/snyk/broker/releases.atom) for that page to receive information about versions as they are released.
+Snyk regularly updates the Broker Client in order to provide new features, bug fixes, and more. The full list of versions and their release notes is available on [Snyk Broker GitHub](https://github.com/snyk/broker/releases). Snyk encourages you to [subscribe to the RSS feed](https://github.com/snyk/broker/releases.atom) for that page to receive information about versions as they are released.
 
 When you upgrade your Broker there may be some new rules added that Snyk requires to function correctly. Therefore, you will need to re-initialize your API allow-list. If you added or removed any rules to [customize your allow-list](https://github.com/snyk/broker#custom-approved-listing-filter) (for example, to support files greater in size than 1Mb), you must  re-apply these changes to the new allow-list.

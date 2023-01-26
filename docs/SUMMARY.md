@@ -172,7 +172,7 @@
     * [Snyk Broker introduction](integrations/snyk-broker/broker-introduction.md)
     * [Set up Snyk Broker](integrations/snyk-broker/set-up-snyk-broker/README.md)
       * [Prepare Snyk Broker for deployment](integrations/snyk-broker/set-up-snyk-broker/prepare-snyk-broker-for-deployment.md)
-      * [Install and configure the Snyk Broker client](integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md)
+      * [Install and configure the Snyk Broker Client](integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md)
     * [Snyk Broker - Code Agent](integrations/snyk-broker/snyk-broker-code-agent/README.md)
       * [Prerequisites for the Code Agent and Broker Client](integrations/snyk-broker/snyk-broker-code-agent/prerequisites-for-the-code-agent-and-broker-client.md)
       * [Setting up the Code Agent – Broker Client deployment](integrations/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/README.md)
