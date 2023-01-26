@@ -16,6 +16,8 @@ Snyk Broker is available with Enterprise plans. See [pricing plans](https://snyk
 {% endhint %}
 
 {% hint style="warning" %}
-**Multi-tenant settings**\
-When you have set up Broker, Code Agent, or both for use in Multi-tenant environments, additional variables are required. See [Regional hosting and data residency](../../snyk-processes/data-residency-at-snyk.md) for details.
+**Multi-tenant settings for EU and AU**\
+When you have up Broker, Code Agent, or both for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
+Example:  `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
+For the URLs, see [EU and AU account datacenter creation](https://docs.snyk.io/snyk-processes/data-residency-at-snyk#eu-and-au-datacenter-account-creation).
 {% endhint %}
