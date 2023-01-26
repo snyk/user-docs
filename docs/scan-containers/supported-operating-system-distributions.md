@@ -72,6 +72,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 
 ### Rocky Linux
 
+* Rocky Linux 9
 * Rocky Linux 8
 
 ### SUSE Linux Enterprise Server (SLES)
