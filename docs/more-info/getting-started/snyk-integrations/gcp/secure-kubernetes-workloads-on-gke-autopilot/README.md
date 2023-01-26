@@ -12,9 +12,4 @@ In this tutorial, you will learn how to quickly deploy and scan Kubernetes workl
 
 * A [GCP free trial](https://console.cloud.google.com/freetrial) account.
 * [Cloud SDK](https://cloud.google.com/sdk/docs/install) installed.
-* A [Snyk](https://snyk.co/udrgA) Business or Enterprise plan.
-
-{% hint style="danger" %}
-This feature is available with all paid plans. See [Pricing plans](https://snyk.io/plans/) for more details.
-{% endhint %}
-
+* A [Snyk](https://snyk.co/udrgA) Enterprise plan.

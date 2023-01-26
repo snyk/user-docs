@@ -13,7 +13,7 @@ This tool provides the means to get the delta between two Snyk snapshots. This i
 
 ## Prerequisites
 
-* Snyk Business or Enterprise Account (requires API)
+* Snyk Enterprise plan (requires API)
 * Your project to be monitored
 
 ## Installation

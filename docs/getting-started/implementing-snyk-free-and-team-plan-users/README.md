@@ -1,11 +1,9 @@
 # Implementing Snyk: Free and Team plan users
 
-{% hint style="success" %}
 Just signed up to Snyk? Get results and start fixing issues in minutes!
-{% endhint %}
 
 {% hint style="info" %}
-See [Implementing Snyk: Business and Enterprise plan users](../implementing-snyk-enterprise-plan-users.md) for details of using Snyk with those [pricing plans](https://snyk.io/plans/).
+See [Implementing Snyk: Enterprise plan users](../implementing-snyk-enterprise-plan-users.md) for details of using Snyk with that [pricing plan](https://snyk.io/plans/).
 {% endhint %}
 
 Snyk is here to support you on your way to secure code.

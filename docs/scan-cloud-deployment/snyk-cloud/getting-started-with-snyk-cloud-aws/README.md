@@ -11,7 +11,7 @@ You can can onboard an AWS account to Snyk using the following methods:
 
 To start using Snyk Cloud, you need the following:
 
-* A Snyk Business or Enterprise [plan](https://snyk.io/plans/)
+* A Snyk Enterprise [plan](https://snyk.io/plans/)
 * A new organization, with appropriate feature flags assigned by your Snyk contact
 * A Snyk Group Administrator or Organization Administrator [role](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/managing-permissions)
 * An organization-level [service account](https://docs.snyk.io/features/user-and-group-management/structure-account-for-high-application-performance/service-accounts#set-up-a-service-account) with an Org Admin role

@@ -6,7 +6,6 @@ Depending on the type of plan you have with Snyk you have a different limit on t
 | ---------- | ------------------ |
 | Free       | 10,000             |
 | Team       | 25,000             |
-| Business   | 25,000             |
 | Enterprise | 25,000             |
 
 **How will you know when you have reached the limit?**

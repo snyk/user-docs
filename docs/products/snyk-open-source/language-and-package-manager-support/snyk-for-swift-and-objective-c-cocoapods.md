@@ -1,6 +1,6 @@
 # Snyk for Swift and Objective-C
 
-Snyk offers security scanning to test your Projects for vulnerabilities, both from the [Snyk CLI](../../../snyk-cli/) and the [Snyk Web UI](../../../getting-started/snyk-web-ui.md) using different [Snyk Integrations](../../../integrations/).
+Snyk offers security scanning to test your Projects for vulnerabilities, both from the [Snyk CLI](../../../snyk-cli/) and the [Snyk Web UI](../../../getting-started/quickstart/create-a-snyk-account/snyk-web-ui.md) using different [Snyk Integrations](../../../integrations/).
 
 ## Features of Snyk for Swift and Objective-C
 

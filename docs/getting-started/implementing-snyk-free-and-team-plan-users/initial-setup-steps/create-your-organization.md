@@ -14,7 +14,7 @@ If you are creating an account to share and collaborate to use your team or comp
 If you choose to rename the display name, the URL may still reflect the original name.
 
 * Free users can create a new Organization, and delete their old Organization.
-* Existing customers on a paid Team/Business/Enterprise plan can request support to update their URL if they purchased their plan with the personalized default Organization.
+* Existing customers on a paid plan can request support to update their URL if they purchased their plan with the personalized default Organization.
 
 ### Create an Organization
 

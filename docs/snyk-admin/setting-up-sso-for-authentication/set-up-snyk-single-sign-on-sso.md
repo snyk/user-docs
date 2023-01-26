@@ -9,7 +9,7 @@ Ensure you have at least one Group and Organization to indicate where new users 
 {% hint style="info" %}
 Once you have gathered the needed information identified in the following sections, create a support ticket to request SSO set up.
 
-For Business plan using SAML, Group Admins can configure Snyk Single Sign-On. See [Self Serve Single Sign-On (SSO)](self-serve-single-sign-on-sso/) for the steps.
+Alternatively, Group Admins can also configure Snyk Single Sign-On. See [Self Serve Single Sign-On (SSO)](self-serve-single-sign-on-sso/) for the steps.
 {% endhint %}
 
 ## Overview
@@ -170,10 +170,10 @@ To complete your log in:
 
 These worksheets include the information to enter in your Identity provider and the information you need to collect before submitting a ticket to Snyk Support to request single sign-on.
 
-{% file src="../../.gitbook/assets/SSO Azure Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (2).pdf" %}
+{% file src="../../.gitbook/assets/SSO Azure Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).pdf" %}
 
-{% file src="../../.gitbook/assets/SSO SAML Worksheet.pdf" %}
+{% file src="../../.gitbook/assets/SSO SAML Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
 
-{% file src="../../.gitbook/assets/SSO ADFS Worksheet.pdf" %}
+{% file src="../../.gitbook/assets/SSO ADFS Worksheet (1).pdf" %}
 
-{% file src="../../.gitbook/assets/SSO OIDC Worksheet.pdf" %}
+{% file src="../../.gitbook/assets/SSO OIDC Worksheet (1) (1) (1) (1) (1) (1).pdf" %}

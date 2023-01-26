@@ -11,14 +11,12 @@ Administrators can configure the following settings for each license:
 
 {% hint style="info" %}
 **Feature availability**\
-For customers with a Business plan: if no group is available, org administrators can make license policy changes; if a group is available, group administrators can make license policy changes.
-
 For customers with an Enterprise plan, group administrators can create or modify a policy. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 ## Access license policies
 
-If your \_\_ company's account has one or more groups, to access the License policy settings:
+If your company's account has one or more groups, to access the License policy settings:
 
 1.  Use the **Switch group** selector and choose a Group to open its overview.\
 

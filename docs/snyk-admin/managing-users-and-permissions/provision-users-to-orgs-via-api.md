@@ -54,8 +54,6 @@ Provision user to specified org with a role. When a user first logs into Snyk, t
 `}`
 
 {% hint style="info" %}
-For Business plan users, the role must be one of `ADMIN`, `COLLABORATOR`, or `RESTRICTED_COLLABORATOR`.
-
 Enterprise plan users can define their own customized [member role](member-roles.md) and can use `rolePublicId` for assignment.\
 \
 You can use either `role` or `rolePublicId` but not both in the same call.

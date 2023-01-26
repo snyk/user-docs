@@ -11,7 +11,7 @@ This feature is available with all paid plans. See [Pricing plans](https://snyk.
 ## Prerequisites:
 
 1. An existing Dynatrace environment or a [free trial](https://www.dynatrace.com/trial/).
-2. A Snyk **Business or Enterprise** Plan. See our [pricing page](https://snyk.io/plans/) for details.
+2. A Snyk **** Enterprise Plan. See our [pricing page](https://snyk.io/plans/) for details.
 3. A running Kubernetes cluster.
 4. Snyk's Goof [sample application](https://github.com/snyk-partners/k8s-goof).
 

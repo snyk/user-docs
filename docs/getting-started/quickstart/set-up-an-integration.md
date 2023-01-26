@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Recap**\
-You have [created a Snyk account](create-a-snyk-account.md). You now need to tell Snyk where to scan.
+You have [created a Snyk account](create-a-snyk-account/). You now need to tell Snyk where to scan.
 {% endhint %}
 
 You must give Snyk access to your environment, to allow Snyk to scan that environment. The type of integration you need depends on what systems you use, and what you want to scan. See [Integrate with Snyk](../../integrations/) for a full list of integrations available.
@@ -14,7 +14,7 @@ You can set up this integration:
 
 ### Guided process (after signup)
 
-Immediately after you [Create a Snyk account](create-a-snyk-account.md), you will see some optional getting started walkthrough prompts. You can choose to provide some information to help Snyk guide your experience, and then follow the prompts to integrate your code repository for a seamless experience.
+Immediately after you [Create a Snyk account](create-a-snyk-account/), you will see some optional getting started walkthrough prompts. You can choose to provide some information to help Snyk guide your experience, and then follow the prompts to integrate your code repository for a seamless experience.
 
 For example:
 
@@ -22,13 +22,13 @@ For example:
 
 If you select **GitHub**, then fill in the details as prompted.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Set access permissions</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Set access permissions</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Configure automation settings &#x26; authenticate</p></figcaption></figure>
 
 Finally, you can [Import a Project](import-a-project.md) to scan:
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Add your first project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Add your first project</p></figcaption></figure>
 
 ### Manual process (any time)
 
