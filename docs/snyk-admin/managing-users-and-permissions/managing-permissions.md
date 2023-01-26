@@ -45,7 +45,7 @@ The **Group Member** role does not directly provide the user any rights. A Group
 | View organization reporting                                                                        | x           | x            | x         | x                |
 | View organizations                                                                                 | x           | x            | x         | x                |
 | Create an organization                                                                             | x           |              |           |                  |
-| View organisation integrations                                                                     | x           | x            | x         | x                |
+| View organization integrations                                                                     | x           | x            | x         | x                |
 | Edit organization integrations                                                                     | x           |              | x         |                  |
 | Create group level Service accounts\*                                                              | x           |              |           |                  |
 | Set a License policy\*                                                                             | x           |              |           |                  |
