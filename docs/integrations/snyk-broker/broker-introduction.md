@@ -17,7 +17,7 @@ Snyk Broker has a Server and a Client, components that are the same across all b
 
 <figure><img src="../../.gitbook/assets/Snyk Broker diagram.png" alt="Snyk Broker WebSocket initiated by Client over HTTPS"><figcaption><p>Snyk Broker WebSocket initiated by Client over HTTPS</p></figcaption></figure>
 
-All data, both in transit and at rest, is encrypted. Communication between the Client and the Server takes place over a secure WebSocket connection. It does not require opening incoming ports since the communication is initiated outbound, following which it establishes a two-way communication path over WebSocket.
+All data, both in transit and at rest, is encrypted. Communication between the Client and the Server takes place over a secure WebSocket connection. There is no need to open incoming ports since the communication is initiated outbound. Once the connection is initiated, the WebSocket connection is bi-directional.
 
 ## Using inbound and outbound connections with Snyk Broker
 
