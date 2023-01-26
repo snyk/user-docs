@@ -43,15 +43,7 @@ An example follows of setting up an Azure AD Enterprise Application and connecti
 13. Open the downloaded certificate in your preferred text editor, copy the text and paste it into the Snyk **X509 signing certificate** field, and add the relevant domains that are supported by this SSO connection. Finally, click **Create Auth0 connection** if you are creating a completely new connection or **Save changes** if you are editing an existing connection.
 
     <figure><img src="../../../.gitbook/assets/14.png" alt="Enter certificate and domains supported, set connection"><figcaption><p>Enter certificate and domains supported, set connection</p></figcaption></figure>
-14. Refer to [step 3](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/self-serve-single-sign-on-sso#step-3.-snyk-sso-settings) of the Snyk self serve SSO guide for how new users should be treated when signing in and choose the option you would like to use: **Group member, Org collaborator**, or **Org admin**.
-15. Return to Azure AD and click **Edit** under **Attributes and Claims**.
-
-    <figure><img src="../../../.gitbook/assets/15 (1).png" alt="Edit Azure AD attributes and claims"><figcaption><p>Edit Azure AD attributes and claims</p></figcaption></figure>
-16. Copy the claim names from Azure to Snyk as follows and **Save changes** in Snyk to finish the configuration.
-
-    <figure><img src="../../../.gitbook/assets/16 (1).png" alt="Copy from Azure portal"><figcaption><p>Copy from Azure portal</p></figcaption></figure>
-
-    <figure><img src="../../../.gitbook/assets/17 (1).png" alt="dd claim name in Snyk portal"><figcaption><p>Add claim name in Snyk portal</p></figcaption></figure>
+14. Refer to [step 3](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/self-serve-single-sign-on-sso#step-3.-snyk-sso-settings) of the Snyk self serve SSO guide for how new users should be treated when signing in and choose the option you would like to use: **Group member, Org collaborator**, or **Org admin**. Finally, modify the **profile attributes** if your settings in Azure deviates from the default, then click **Save changes** and verify you can log in, either with the direct URL at the top of step 3 or by going to the [generic SSO login](https://app.snyk.io/login/sso).
 
 If you wish to add signature verification of the incoming Snyk request:
 
