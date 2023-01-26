@@ -1,4 +1,4 @@
-# Snyk for C / C++
+# Snyk for C/C++
 
 You can use Snyk to scan C/C++ projects through the [CLI](../../../snyk-cli/).
 
@@ -276,7 +276,7 @@ The following `snyk` command line options are supported with the `snyk test --un
 
 `--severity-threshold=<low|medium|high|critical>`
 
-For more information about command line options see the Snyk help docs: [snyk test --unmanaged](https://docs.snyk.io/snyk-cli/commands/test#options) or [snyk monitor --unmanaged](https://docs.snyk.io/snyk-cli/commands/monitor#options)
+For more information about command line options see the Snyk help docs: [Options for scanning with `snyk test --unmanaged`](https://docs.snyk.io/snyk-cli/commands/test#options-for-scanning-using-unmanaged) or [`snyk monitor --unmanaged`](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-scanning-using-unmanaged).
 
 ### Import scan results in the Snyk Web UI
 

@@ -255,7 +255,7 @@
     * [Open Source - Supported languages and package managers](products/snyk-open-source/language-and-package-manager-support/README.md)
       * [Snyk for .NET](products/snyk-open-source/language-and-package-manager-support/snyk-for-.net.md)
       * [Snyk for Bazel](products/snyk-open-source/language-and-package-manager-support/snyk-for-bazel.md)
-      * [Snyk for C / C++](products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++.md)
+      * [Snyk for C/C++](products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++.md)
       * [Snyk for Elixir](products/snyk-open-source/language-and-package-manager-support/snyk-for-elixir.md)
       * [Snyk for Go](products/snyk-open-source/language-and-package-manager-support/snyk-for-golang.md)
       * [Snyk for Java and Kotlin](products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md)
