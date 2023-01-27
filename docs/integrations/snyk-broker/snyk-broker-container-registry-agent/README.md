@@ -11,10 +11,10 @@ Snyk can integrate with private container registries you host, and help you to b
 For this feature to work, you must have two separate containers deployed in your infrastructure, creating two separate services.
 {% endhint %}
 
-To enable and configure your hosted container registry, contact our support team at [support@snyk.io](mailto:support@snyk.io).
+To enable and configure your hosted container registry, contact Snyk support at [support@snyk.io](mailto:support@snyk.io).
 
 {% hint style="info" %}
-The integration pattern using the Broker with open source container registries from the list described on this page is designed for users who require images to be scanned in their own environment, instead of inside the Snyk service.\
+The integration pattern using the Broker with open-source container registries from the list described on this page is designed for users who require images to be scanned in their own environment, instead of inside the Snyk service.\
 If you do have this requirement, you do not need the architecture described here, and you can integrate in the standard way from the Integrations page on the Web UI.
 {% endhint %}
 
