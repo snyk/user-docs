@@ -15,4 +15,4 @@ Snyk Open Source supports the following programming languages, build tools, and 
 | [Python](snyk-for-python.md)                                         | pip, Poetry, pipenv                                                                                          |
 | [Ruby](snyk-for-ruby.md)                                             | Bundler                                                                                                      |
 | [Scala](snyk-for-scala.md)                                           | sbt                                                                                                          |
-| [Swift and Objective-C](snyk-for-swift-and-objective-c-cocoapods.md) | CocoaPods                                                                                                    |
+| [Swift and Objective-C](snyk-for-swift-and-objective-c-cocoapods.md) | CocoaPods, Swift Package Manager                                                                             |
