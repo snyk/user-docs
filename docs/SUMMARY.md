@@ -612,7 +612,7 @@
     * [Choose a provisioning option](snyk-admin/setting-up-sso-for-authentication/choose-a-provisioning-option.md)
     * [Set up Snyk Single Sign-On (SSO)](snyk-admin/setting-up-sso-for-authentication/set-up-snyk-single-sign-on-sso.md)
     * [Self Serve Single Sign-On (SSO)](snyk-admin/setting-up-sso-for-authentication/self-serve-single-sign-on-sso/README.md)
-      * [Example: Okta SAML Application](snyk-admin/setting-up-sso-for-authentication/self-serve-single-sign-on-sso/self-serve-single-sign-on-sso.md)
+      * [Example: Okta SAML Application](user-and-group-management/setting-up-sso-for-authentication/self-serve-single-sign-on-sso/example-okta.md)
       * [Example: Azure AD Enterprise Application](snyk-admin/setting-up-sso-for-authentication/self-serve-single-sign-on-sso/example-azure-ad-enterprise-application.md)
       * [Example: Google Workspace](snyk-admin/setting-up-sso-for-authentication/self-serve-single-sign-on-sso/example-google-workspace.md)
     * [Custom Mapping Option](snyk-admin/setting-up-sso-for-authentication/custom-mapping-option/README.md)
