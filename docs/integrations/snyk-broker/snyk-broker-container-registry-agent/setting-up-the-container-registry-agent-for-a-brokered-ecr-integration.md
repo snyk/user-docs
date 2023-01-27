@@ -2,9 +2,9 @@
 
 ## Terminology for brokered ECR integration
 
-**Container Registry Agent IAM Role / IAM User:** an IAM Role / IAM User the Container Registry Agent uses to assume a role with access to ECR.
+**Container Registry Agent IAM Role or IAM User:** an IAM Role or IAM User is used by the Container Registry Agent to assume a role with access to ECR.
 
-**Snyk ECR Service Role:** an IAM Role with access to ECR and assumed by the Container Registry Agent "IAM Role" / "IAM User" to gain read-only access to ECR.
+**Snyk ECR Service Role:** an IAM Role with access to ECR and assumed by the Container Registry Agent IAM Role or IAM User to gain read-only access to ECR.
 
 ## **Summary of steps for brokered ECR integration**
 
@@ -203,7 +203,7 @@ This step hardens the usability of the Snyk ECR Service Role so that it could be
     ```
 
     * In **Statement.Principal.AWS** enter the IAM Role / IAM User created in the Step 1 (for example, arn:aws:iam::\<aws-account>:user/SnykCraEc2Role or arn:aws:iam::\<aws-account>:role/SnykCraUser, respectively)
-    * In **Condition.StringEquals.sts:ExternalId** you may use an external ID of your choice, which will be used when the credentials object tis provided o the Broker Client.
+    * In **Condition.StringEquals.sts:ExternalId** you may use an external ID of your choice, which will be used when the credentials object is provided to the Broker Client.
     * To support multiple external IDs, enter a list of IDs in a square brackets. For example: _\*\*_`"sts:ExternalId": [ "11111111-1111-1111-1111-111111111111", "22222222-2222-2222-2222-222222222222" ]`
 5. Update the trust policy.
 
