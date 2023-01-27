@@ -220,7 +220,7 @@ This step hardens the usability of the IAM Role or IAM User used by the Containe
       1. In the **SnykCraAssumeRolePolicy** choose to edit the JSON
       2. Add the role ARN of[ SnykEcrServiceRole](https://console.aws.amazon.com/iam/home?#/roles/SnykEcrServiceRole) as the resource: `"Resource": "<Role ARN of SnykEcrServiceRole>"`
 
-If the Container Registry Agent needs to access multiple ECR registries found in different accounts, a separate item will need to be added to the Statement list, so that each ECR account has a separate statement, for example:
+If the Container Registry Agent needs to access multiple ECR registries found in different accounts, you must add a separate item to the Statement list, so that each ECR account has a separate statement, for example:
 
 ```
 {
