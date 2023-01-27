@@ -6,9 +6,9 @@ This document describes the additional configuration required for Infrastructure
 
 ## Writing the configuration
 
-You must grant the broker access to particular files in the repository. This requires specific API permissions. These API permissions are slightly different depending on which source control system you are using. The configuration that follows is for the file extensions “.yaml”, “.yml”, and “.json”, which allows the Broker to access potential Kubernetes and CloudFormation files, but adapt it as necessary. For example, you may wish to add configurations for “.tf” files in order to scan Terraform HCL files.
+You must grant the Broker access to particular files in the repository. This requires specific API permissions. These API permissions are slightly different depending on which source control system you are using. The configuration that follows is for the file extensions `.yaml`,  `.yml`, and `.json`. This allows the Broker to access potential Kubernetes and CloudFormation files, but you may adapt the configuration as necessary. For example, you may wish to add configurations for `.tf` files in order to scan Terraform HCL files.
 
-1. Find the appropriate accept.json sample file for your source control system and download it [from the Broker repository](https://github.com/snyk/broker/tree/master/client-templates).
+1. Find the appropriate `accept.json` sample file for your source control system and download it [from the Broker repository](https://github.com/snyk/broker/tree/master/client-templates).
 2. Rename the file to `accept.json` and to the **private** array in the JSON file, add the following rules as appropriate to your SCM.
 3. Follow the instructions for [Configuring Broker](detecting-kubernetes-configuration-files-using-a-broker.md#configuring-broker).
 
