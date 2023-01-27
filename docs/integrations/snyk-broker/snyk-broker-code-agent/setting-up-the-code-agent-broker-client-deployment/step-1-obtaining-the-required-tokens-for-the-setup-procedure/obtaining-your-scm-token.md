@@ -20,7 +20,7 @@ See Gitlab documentation - [_Personal access tokens_](https://docs.gitlab.com/ee
 
 **Azure Repos**:
 
-**`AZURE_REPOS_TOKEN=`** - an Azure Repos personal access token. Scopes: **`Custom defined`**, \*\* `Code:` \*\* **`Read & write`**_._
+**`AZURE_REPOS_TOKEN=`** - an Azure Repos personal access token. Scopes: **`Custom defined`, \*\* `Code:` \*\* `Read & write`**_._
 
 See Azure Repos documentation - [_Use personal access tokens_](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops\&tabs=Windows)__
 
@@ -28,4 +28,4 @@ See Azure Repos documentation - [_Use personal access tokens_](https://docs.micr
 
 **`BITBUCKET_USERNAME=`**, **`BITBUCKET_PASSWORD=`** – the Bitbucket Server username and password or a Bitbucket Server personal access token. Scope: **`Repository admin`**.
 
-See Bitbucket Server documentation - _Personal access tokens_\
+See Bitbucket Server documentation - [_Personal access tokens_](https://confluence.atlassian.com/bitbucketserver/http-access-tokens-939515499.html)\
