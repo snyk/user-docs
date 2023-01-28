@@ -189,7 +189,7 @@ You can use the `/systemcheck` endpoint to verify connectivity between the Broke
 In order to use the endpoint, provide the following environment variable to the Broker Client:\
 `BROKER_CLIENT_VALIDATION_URL=<agent-url>/systemcheck`
 
-When you call the `/systemcheck` endpoint of the Broker Client, it uses the `BROKER_CLIENT_VALIDATION_URL` to make a request to the `/systemcheck` endpoint Container Registry Agent's, with the credentials provided to the Broker Client. The Container Registry Agent then makes a request to the container registry to validate connectivity.
+When you call the `/systemcheck` endpoint of the Broker Client, it uses the `BROKER_CLIENT_VALIDATION_URL` to make a request to the `/systemcheck` endpoint Container Registry Agent, with the credentials provided to the Broker Client. The Container Registry Agent then makes a request to the container registry to validate connectivity.
 
 {% hint style="info" %}
 The `/systemcheck` endpoint is **not mandatory** for the brokered integration to function. For  more information see [Systemcheck](https://github.com/snyk/broker#systemcheck) in the Snyk Broker docs on GitHub.
