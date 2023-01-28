@@ -1,7 +1,7 @@
 # Setting up the Code Agent – Broker Client deployment
 
 {% hint style="info" %}
-For the first deployment of the Broker Client – Code Agent, collaborating with your Integration Consultant/Technical Success Manager or the Snyk Support is required.
+For the first deployment of the Broker Client – Code Agent, collaborating with your Integration Consultant/Technical Success Manager or [Snyk Support](https://support.snyk.io/hc/en-us) is required.
 {% endhint %}
 
 The workflow for setting up the Code Agent – Broker Client components for a full deployment is as follows:
