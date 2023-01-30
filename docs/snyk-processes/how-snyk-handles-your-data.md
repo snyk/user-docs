@@ -40,9 +40,9 @@ Snyk knows how important it is for you to protect your data. Snyk products only 
 
 ![Snyk Open Source](../.gitbook/assets/SnykOSS.svg)
 
-* Snyk accesses manifest and build configuration files in order to identify your open source dependencies.
-* For tests using the `--unmanaged` option, Snyk  accesses your source code files to convert them to file signatures (hashes) and store the file signatures and file names. Other Snyk Open Source scans do not access your source code.
-* For SCA Scans Snyk does not access your source code
+* Snyk accesses manifest files, lock files, and related configuration files in order to identify your open-source dependencies.
+* By default, Snyk does not access your source code with this exception: for CLI scans using the `--unmanaged` option, Snyk  accesses your source code files to convert them to file signatures (hashes) and store the file signatures and file names.
+* For SCA Scans Snyk does not access your source code.
 * Snyk accesses and stores the names and version numbers of your dependencies.
 * Snyk stores the names of associated licenses, including copyright and attribution information.
 * Snyk accesses and stores repository-specific information.
