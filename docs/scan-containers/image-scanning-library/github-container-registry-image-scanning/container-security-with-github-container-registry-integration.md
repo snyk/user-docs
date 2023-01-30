@@ -11,7 +11,7 @@ To set up GitHub container registry integration in Snyk and start managing image
 **Prerequisites**
 
 * You must be an administrator for the organization you're configuring in Snyk.
-* Snyk needs user credentials to integrate with the GitHub container registry, and Snyk does not support integrating if the user uses GitHub SSO to access the GitHub container registry. Alternatively, a Personal Access Token (PAT) with SSO is possible.
+* Snyk needs user credentials to integrate with GitHub Container Registry and does not support GitHub Container Registry when configured for single sign-on (SSO). However, you can use a Personal Access Token (PAT) with SSO when the token is authorized with the`read:packages`scope.
 
 **Configure integration**
 
