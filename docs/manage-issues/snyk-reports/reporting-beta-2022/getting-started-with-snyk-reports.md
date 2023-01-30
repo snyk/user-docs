@@ -16,9 +16,9 @@ Every time a filter value is applied, the app.snyk.io URL is updated to persist 
 
 ### Snyk reporting filter logic
 
-Within a given filter, all values selected are separated by an OR operator. For example, if you select the values `Critical` and `High` for the `Issue Severity` filter, Snyk displays issues that have a severity of either `critical` or `high`.\\
+Within a given filter, all values selected are separated by an OR operator. For example, if you select the values `Critical` and `High` for the `Issue Severity` filter, Snyk displays issues that have a severity of either `critical` or `high`.
 
-<figure><img src="https://lh5.googleusercontent.com/OztJ-7tKSZpq2KPKXa6Sjr2vH2GHABcMKOdDNlw6MVShpcpnk7GZHZWz6mE3EeQBGB8SjHVUrVkeMC4IqA1YUhFSa41aNS8z_ZRsHeBxgRnMrp-YPwadg0u9hxuAtStePCrBWp9QV0GswTVozsLR7w7432etIbB6ij6t1t_Dkj5-udb9ofzTfiQw4UqtYuw7FjMEUg" alt="Issue severity values selected"><figcaption><p>Issue severity values selected</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/issue-severity-reporting-beta.png" alt="Issue severity selected"><figcaption><p>Issue severity selected</p></figcaption></figure>
 
 Filters are separated by an AND operator. For example, if you select the `Critical` value for the `Issue Severity` filter and the `Resolved` value for the `Issue Status` filter, Snyk displays issues that are both `critical` severity and `resolved`.
 
@@ -32,11 +32,11 @@ Use the **Export to PDF** button at the top right to download a PDF of not only 
 
 Exporting a PDF allows sharing a report with a user who will not or should not authenticate into the Snyk app, such as an executive or external auditor. **Export to PDF** offers point-in-time attestation with the necessary context.
 
-The following shows an example of a PDF export.
+The following is an example of a PDF export.
 
-<figure><img src="https://lh3.googleusercontent.com/e_QTKFb7mnnuRr6ljPTIOYb3zUPRosEZ2SgSRjGWiIViVD0uTIzyIhb3Cu6rIxgIn85zkvrdQ4AE1uKj_H3hL77kyhpYcIW8j-JxPYcNscluE9_O2BbbTRpIQuHBo8pFNQ_cLpuiTJAtKHfOP37lsRbWsbhmi_uyhNJZf5gZo66yWuspaApOFyVq3w" alt="Example of PDF export of Snyk report"><figcaption><p>Example of PDF export of Snyk Report</p></figcaption></figure>
+{% file src="../../../.gitbook/assets/issues-level_01_26_2023.pdf" %}
 
-For tabular data on reports, only the first 50 results are shown in the PDF export. Links are provided  in the PDF export to view the report in the browser.
+In tabular data on reports, only the first 50 results are shown in the PDF export. Links are provided  in the PDF export to view the report in the browser.
 
 ### Download Snyk Report to CSV file
 
