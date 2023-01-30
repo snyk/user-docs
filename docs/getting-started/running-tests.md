@@ -1,5 +1,7 @@
 # Running tests
 
+## Introduction
+
 You can use Snyk to test your code in different ways:
 
 * [Run tests manually](running-tests.md#run-tests-manually): using the Snyk CLI, the Snyk Web UI, and the Snyk API.
@@ -9,7 +11,7 @@ You can use Snyk to test your code in different ways:
 Tests may be limited on your account; see [What counts as a test?](https://support.snyk.io/hc/en-us/articles/360000925418-What-counts-as-a-test-) for more information.
 {% endhint %}
 
-## Run tests manually
+### Run tests manually
 
 #### Run tests with the CLI
 
@@ -41,16 +43,16 @@ See [API documentation](https://snyk.docs.apiary.io) for details.
 After you [import a Project](quickstart/import-a-project.md), Snyk automatically runs periodic scans on that Project, to see if your code is affected by newly disclosed vulnerabilities.
 
 {% hint style="info" %}
-Test frequency is set to daily by default. To change frequency, go to either the **Usage** page (see [Usage page details](https://docs.snyk.io/user-and-group-management/managing-settings/usage-page-details)) or the project **Settings** page (see [View project settings](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-settings)).
+Test frequency is set to daily by default. To change frequency, go to either the **Usage** page (see [Usage page details](../snyk-admin/managing-settings/usage-page-details.md)) or the project **Settings** page (see [View project settings](../manage-issues/introduction-to-snyk-projects/view-project-settings.md)).
 {% endhint %}
 
-#### Snyk monitor
+#### Use Snyk monitor
 
 Use the `snyk monitor` CLI command to create a snapshot of a project on the Snyk website that will be continuously monitored for new vulnerabilities.
 
 See [Monitor your projects at regular intervals](../snyk-cli/test-for-vulnerabilities/monitor-your-projects-at-regular-intervals.md) for details.
 
-#### PR Checks
+#### Use PR Checks
 
 Snyk can scan every new Pull Request (PR) submitted on your monitored repositories, to help prevent new vulnerabilities from being added to your codebase.
 
