@@ -36,7 +36,7 @@ The following shows an example of a PDF export.
 
 <figure><img src="https://lh3.googleusercontent.com/e_QTKFb7mnnuRr6ljPTIOYb3zUPRosEZ2SgSRjGWiIViVD0uTIzyIhb3Cu6rIxgIn85zkvrdQ4AE1uKj_H3hL77kyhpYcIW8j-JxPYcNscluE9_O2BbbTRpIQuHBo8pFNQ_cLpuiTJAtKHfOP37lsRbWsbhmi_uyhNJZf5gZo66yWuspaApOFyVq3w" alt="Example of PDF export of Snyk report"><figcaption><p>Example of PDF export of Snyk Report</p></figcaption></figure>
 
-For tabular data on reports, only ten results are shown in the PDF export. Snyk plans to extend the row count and enable links to the report for full details.
+For tabular data on reports, only the first 50 results are shown in the PDF export. Links are provided  in the PDF export to view the report in the browser.
 
 ### Download Snyk Report to CSV file
 
