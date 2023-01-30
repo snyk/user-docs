@@ -27,7 +27,7 @@ When the Code Agent setup is completed successfully, the following message appea
 
 `{ ..., "msg":"Application started", ... }`
 
-<figure><img src="../../../../../.gitbook/assets/Code Agent - Exmaple - success.png" alt="Docker run command"><figcaption><p>Docker run command</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Code Agent - Exmaple - success.png" alt="Success message when Code Agent setup is completed"><figcaption><p>Success message when Code Agent setup is completed</p></figcaption></figure>
 
 ## Verifying the setup and details of the Code Agent container
 
