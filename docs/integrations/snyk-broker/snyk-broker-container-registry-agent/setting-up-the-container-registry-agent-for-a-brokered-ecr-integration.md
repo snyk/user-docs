@@ -59,13 +59,13 @@ You can also provide a dedicated role in Amazon ECS tasks. For more information 
 
     ```
     {
-      "Version": "2012-10-17",
-      "Statement": [
+      Version: 2012-10-17,
+      Statement: [
         {
-          "Sid": "SnykCraAssumeRolePolicy",
-          "Effect": "Allow",
-          "Action": "sts:AssumeRole",
-          "Resource": "*"
+          Sid: SnykCraAssumeRolePolicy,
+          Effect: Allow,
+          Action: sts:AssumeRole,
+          Resource: *
         }
       ]
     }
@@ -107,13 +107,13 @@ When you are running the Container Registry Agent image on the EC2 machine, the 
 
     ```
     {
-      "Version": "2012-10-17",
-      "Statement": [
+      Version: 2012-10-17,
+      Statement: [
         {
-          "Sid": "SnykCraAssumeRolePolicy",
-          "Effect": "Allow",
-          "Action": "sts:AssumeRole",
-          "Resource": "*"
+          Sid: SnykCraAssumeRolePolicy,
+          Effect: Allow,
+          Action: sts:AssumeRole,
+          Resource: *
         }
       ]
     }
@@ -141,25 +141,25 @@ In this step, you will create a Role in the account in which your ECR repositori
 
     ```
     {
-      "Version":"2012-10-17",
-      "Statement": [
+      Version:2012-10-17,
+      Statement: [
         {
-          "Sid":"SnykAllowPull",
-          "Effect":"Allow",
-          "Action": [
-            "ecr:GetLifecyclePolicyPreview",
-            "ecr:GetDownloadUrlForLayer",
-            "ecr:BatchGetImage",
-            "ecr:DescribeImages",
-            "ecr:GetAuthorizationToken",
-            "ecr:DescribeRepositories",
-            "ecr:ListTagsForResource",
-            "ecr:ListImages",
-            "ecr:BatchCheckLayerAvailability",
-            "ecr:GetRepositoryPolicy",
-            "ecr:GetLifecyclePolicy"
+          Sid:SnykAllowPull,
+          Effect:Allow,
+          Action: [
+            ecr:GetLifecyclePolicyPreview,
+            ecr:GetDownloadUrlForLayer,
+            ecr:BatchGetImage,
+            ecr:DescribeImages,
+            ecr:GetAuthorizationToken,
+            ecr:DescribeRepositories,
+            ecr:ListTagsForResource,
+            ecr:ListImages,
+            ecr:BatchCheckLayerAvailability,
+            ecr:GetRepositoryPolicy,
+            ecr:GetLifecyclePolicy
           ],
-          "Resource":"*"
+          Resource:*
         }
       ]
     }
@@ -191,17 +191,17 @@ This step hardens the usability of the Snyk ECR Service Role so that it could be
 
     ```
     {
-      "Version":"2012-10-17",
-      "Statement": [
+      Version:2012-10-17,
+      Statement: [
         {
-          "Effect":"Allow",
-          "Principal":{
-            "AWS":"ARN of Container Registry Agent IAM User" or "IAM Role"
+          Effect:Allow,
+          Principal:{
+            AWS:ARN of Container Registry Agent IAM User or IAM Role
           },
-          "Action":"sts:AssumeRole",
-          "Condition":{
-            "StringEquals": {
-              "sts:ExternalId":"optional external ID"
+          Action:sts:AssumeRole,
+          Condition:{
+            StringEquals: {
+              sts:ExternalId:optional external ID
             }
           }
         }
@@ -214,7 +214,7 @@ This step hardens the usability of the Snyk ECR Service Role so that it could be
       OR `arn:aws:iam::aws-account:role` or `SnykCraUser`, respectively
     * In **Condition.StringEquals.sts:ExternalId** you may use an external ID of your choice, which will be used when the credentials object is provided to the Broker Client.
     * To support multiple external IDs, enter a list of IDs in a square brackets. \
-      Example: `"sts:ExternalId": [ "11111111-1111-1111-1111-111111111111", "22222222-2222-2222-2222-222222222222" ]`
+      Example: `sts:ExternalId: [ 11111111-1111-1111-1111-111111111111, 22222222-2222-2222-2222-222222222222 ]`
 5. Update the trust policy.
 
 ## Step 3: Harden the usability scope of the IAM Role or IAM User used by the Container Registry Agent
@@ -226,29 +226,29 @@ This step hardens the usability of the IAM Role or IAM User used by the Containe
    1. If an IAM Role was created, go to **Roles** and choose the **SnykCraEc2Role** role.
       1. In the **SnykCraAssumeRolePolicy** choose to edit the JSON.
       2. Add the role ARN of[ SnykEcrServiceRole](https://console.aws.amazon.com/iam/home?#/roles/SnykEcrServiceRole) as the resource:\
-         `"Resource": "Role ARN of SnykEcrServiceRole"`
+         `Resource: Role ARN of SnykEcrServiceRole`
    2. IF an IAM User was created, go to **Users** and choose the SnykCraUser user.
       1. In the **SnykCraAssumeRolePolicy** choose to edit the JSON
       2. Add the role ARN of[ SnykEcrServiceRole](https://console.aws.amazon.com/iam/home?#/roles/SnykEcrServiceRole) as the resource: \
-         `"Resource": "Role ARN of SnykEcrServiceRole"`
+         `Resource: Role ARN of SnykEcrServiceRol`
 
 If the Container Registry Agent needs to access multiple ECR registries found in different accounts, you must add a separate item to the Statement list, so that each ECR account has a separate statement, for example:
 
 ```
 {
-  "Version": "2012-10-17",
-  "Statement": [
+  Version: 2012-10-17,
+  Statement: [
     {
-      "Sid": "SnykCraAssumeRolePolicyAccountA",
-      "Effect": "Allow",
-      "Action": "sts:AssumeRole",
-      "Resource": "role ARN of SnykEcrServiceRole of account A"
+      Sid: SnykCraAssumeRolePolicyAccountA,
+      Effect: Allow,
+      Action: sts:AssumeRole,
+      Resource: role ARN of SnykEcrServiceRole of account A
     },
     {
-      "Sid": "SnykCraAssumeRolePolicyAccountB",
-      "Effect": "Allow",
-      "Action": "sts:AssumeRole",
-      "Resource": "Role ARN of SnykEcrServiceRole of account B"
+      Sid: SnykCraAssumeRolePolicyAccountB,
+      Effect: Allow,
+      Action: sts:AssumeRole,
+      Resource: Role ARN of SnykEcrServiceRole of account B
     },
   ]
 }
