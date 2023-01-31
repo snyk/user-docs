@@ -15,12 +15,6 @@ The following steps allow a single Container Registry Agent instance to access E
 3. Restrict the Container Registry Agent IAM Role or IAM User to be allowed only to assume your Snyk ECR Service Role(s).&#x20;
 4. Provide the Broker Client with the Role ARN of the Snyk ECR Service Role. The Broker Client passes this Role ARN to the Container Registry Agent, and the Container Registry Agent assumes it to access your ECR.
 
-## Architecture for brokered ECR integration
-
-The following image describes the architecture of the brokered ECR solution:
-
-<figure><img src="../../../.gitbook/assets/ecr-arch.png" alt="Brokered ECR Architecture"><figcaption><p>Brokered ECR Architecture</p></figcaption></figure>
-
 ## **Step 1: Run the Container Registry Agent with a IAM User or  IAM Role**
 
 In this step, create an IAM Role or an IAM User for use by the Container Registry Agent. The IAM Role or IAM User could be provided to the Container Registry Agent via the methods described in the [AWS docs](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html).
