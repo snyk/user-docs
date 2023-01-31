@@ -1,10 +1,12 @@
 # Create your Organization
 
+## Introduction
+
 Free and Team plan users are entitled to a single [organization](https://docs.snyk.io/user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization) in Snyk.
 
 ### Rename your Organization
 
-When you signed up, Snyk created an organization based on your signup name. This is referred to as your "default" or "personal" organization.
+When you [signed up](../../quickstart/create-a-snyk-account/), Snyk created an organization based on your signup name. This is referred to as your "default" or "personal" organization.
 
 {% hint style="info" %}
 **Tip**\

@@ -1,25 +1,23 @@
 # Addressing the backlog
 
-## Introduction
-
-In the [Visibility](visibility.md) step, you started to identify and prioritize your worst issues, and in the [Prevention](prevention.md) step, you worked on ensuring no new vulnerabilities were introduced.&#x20;
-
-The next stage is to address the rest of the issues; your backlog.
+In the [Visibility](visibility.md) step you started to prioritize your worst issues, and in the [Prevention](prevention.md) step you worked on ensuring no new vulnerabilities were introduced. But what about the rest?&#x20;
 
 ### Different strategies for different stages
 
-If you are actively working on an application, then you can address issues in that application as part of the development cycle, just as if it was fresh new code.
+If you are actively working on an application, then the good news is that through new development older issues can be addressed early, just as if it was fresh new code.&#x20;
 
-However, if no active development is being done on an application, there are a few strategies at hand to address your backlog.
+However if no new work is going on with that application, there are a few strategies at hand.
 
-#### Fix the highest-priority issues
+#### Fix the highest priority issues
 
-One approach is to prioritize and then assign dev work to fix issues that have significance in your application. See [Prioritizing and managing issues](../../../manage-issues/issue-management/) for details.
+One approach is to prioritize and then assign dev work to fix issues that have significance in this application code.
 
-#### Auto-create PRs
+#### Auto-create PRs&#x20;
 
-Another approach is to use Snyk’s proactive approach to create PRs for older open-source vulnerabilities that have fixes. See [Fix vulnerabilities with Snyk Open Source](../../../products/snyk-open-source/open-source-basics/) for details.
+Another approach is to use Snyk’s proactive approach where it can periodically position PRs for older open source vulnerabilities that have fixes. To enable this backlog setting in your Source Control integration settings, you will find a setting labeled “Known vulnerabilities (backlog)”.
+
+<figure><img src="../../../.gitbook/assets/automaticpullrequests.png" alt=""><figcaption></figcaption></figure>
 
 #### Manage work through Jira
 
-Team plan users may also use the Jira integration to manage the backlog work. See [Assign fix work](../../walkthrough-code-repository-projects/assign-fix-work.md) for details.
+Team plan users may also use the Jira integration to manage the backlog work. See [Assign fix work](../../walkthrough-code-repository-projects/assign-fix-work.md) for more information
