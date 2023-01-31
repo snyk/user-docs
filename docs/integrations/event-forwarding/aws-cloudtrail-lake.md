@@ -1,8 +1,8 @@
-# AWS CloudTrail Lake integration overview
+# AWS CloudTrail Lake
 
 {% hint style="info" %}
 **Feature availability**\
-****This feature is available with Snyk Enterprise plans. See [Pricing plans](../../snyk-processes/plans.md) for details.
+****The AWS CloudTrail Lake integration feature is available with Snyk Enterprise plans. See [Pricing plans](../../snyk-processes/plans.md) for details.
 
 This feature is currently available in the Snyk MT-US environment. The feature will be rolled out to other Snyk Multi-tenant environments soon. If you are a Single-tenant customer, please contact your Snyk representative to enable the feature.
 {% endhint %}
