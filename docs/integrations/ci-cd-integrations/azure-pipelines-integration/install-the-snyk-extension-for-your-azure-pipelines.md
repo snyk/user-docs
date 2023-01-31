@@ -2,7 +2,7 @@
 
 To start using the Snyk task as part of your pipeline build, first install the extension into your Azure DevOps instance for your organization, from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Snyk.snyk-security-scan).
 
-## &#x20;**Prerequisites for installing Snyk extension for Azure pipelines**
+## **Prerequisites for installing Snyk extension for Azure pipelines**
 
 * Create a Snyk account at [https://snyk.io/](https://snyk.io)
 * Ensure you are an owner of or an administrator for this account.
@@ -16,9 +16,9 @@ To start using the Snyk task as part of your pipeline build, first install the e
 5. Search for the **Snyk Security Scan** extension, click **Get it free**.
 6. Create a new **Service Connection** in your project via **Project Settings** —> **Pipelines** —> **Service Connections**
 7. Select the **Snyk Authentication** service connection:
-8. In the Snyk Authentication service connection form, enter the **Server URL** and the **Snyk API Token** along with a **Service connection name,** for example**,** [`https://api.snyk.io/api/v1/`](https://api.snyk.io/api/v1/) or [`https://app.eu.snyk.io/api`](https://app.eu.snyk.io/api)
+8. In the Snyk Authentication service connection form, enter the **Server URL** and the **Snyk API Token** along with a **Service connection name,** for example, [`https://api.snyk.io/api/v1/`](https://api.snyk.io/api/v1/) or [`https://app.eu.snyk.io/api`](https://app.eu.snyk.io/api)
 9. Click **Save**, ensuring the new service connection appears in your list of service connections.
 
-![Create your first service connection](../../../.gitbook/assets/ap\_-\_search.jpg)
+<figure><img src="../../../.gitbook/assets/ap_-_search.jpg" alt="Create your first service connection"><figcaption><p>Create your first service connection</p></figcaption></figure>
 
-![New Snyk authentication service connection](../../../.gitbook/assets/ap\_-\_config.jpg)
+<figure><img src="../../../.gitbook/assets/ap_-_config.jpg" alt="New Snyk authentication service connection"><figcaption><p>New Snyk authentication service connection</p></figcaption></figure>
