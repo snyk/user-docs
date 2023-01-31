@@ -6,11 +6,11 @@ Snyk recommends and supports using Docker as the method of running the Snyk Brok
 
 To install and configure your Snyk Broker Client:
 
-1. Visit [the broker repository](https://github.com/snyk/broker) on GitHub and follow the instructions for the relevant integration to run one of the images provided by Snyk, or derive your own.\
+1. Visit the [Snyk Broker GitHub repository](https://github.com/snyk/broker) and follow the instructions for the relevant integration to run one of the images provided by Snyk, or derive your own.\
    There are some examples at [Snyk Broker integration setups](../snyk-broker-set-up-examples/).
 2. For the environment variables required to run the Broker Client, you must:
    1. Retrieve your [unique Broker Client token](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/prepare-snyk-broker-for-deployment#generate-credentials-in-the-target-application-for-snyk-broker).
-   2. Ensure that you have the necessary permissions granted to your API credentials for the integration you are using by following one of the [Snyk integration guides](../../).
+   2. Ensure that you have the necessary permissions granted to your API credentials for the integration you are using by following the associated [Snyk integration instructions](../../).
 3. Once Broker is running, **identifying Broker server** appears toward the end of the log results, showing that a connection to Snyk has been established
 4. Visit the settings for your brokered integration in [the Snyk Web UI](https://app.snyk.io) to see a message like the following:
 
@@ -18,9 +18,9 @@ To install and configure your Snyk Broker Client:
 
 The base setup for SCMs enables use of Snyk Open Source and scanning Dockerfiles. To get the full platform set up through Broker, follow these instructions:
 
-* [Infrastructure as Code detection](../snyk-broker-infrastructure-as-code-detection/)
-* [Container registry integration](../snyk-broker-container-registry-agent/)
-* [Snyk Code analysis](../snyk-broker-code-agent/)
+* [Snyk Broker - Infrastructure as Code detection](../snyk-broker-infrastructure-as-code-detection/)
+* [Snyk Broker - Container Registry Agent](../snyk-broker-container-registry-agent/)
+* [Snyk Broker - Code Agent](../snyk-broker-code-agent/)
 
 ## Snyk Broker Helm Chart
 
@@ -109,14 +109,14 @@ docker run --restart=always \
        snyk/broker:github-com
 ```
 
-**To filter by header**, add a validation block with the following key/values:
+**To filter by header**, add a validation block with the following key and values:
 
 | Key    | Value                                                                                                                                                     | Value Type     | Example                             |
 | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------- |
 | header | The name of the header you wish to filter on. If this is defined then the named header must explicitly exist on the request; otherwise it will be blocked | String         | `accept`                            |
 | values | The header value must match one of the defined strings                                                                                                    | Array\<String> | `["application/vnd.github.v4.sha"]` |
 
-For example, to only allow the SHA Media Type accept header for requests to the GitHub Commits API you would add the following:
+For example, to only allow the SHA Media Type accept header for requests to the GitHub Commits API, you would add the following:
 
 ```
 {
@@ -136,6 +136,6 @@ For an example of custom approved-listing filters for each SCM see [Snyk Broker 
 
 ## Upgrade your Snyk Broker Client
 
-Snyk regularly updates the Broker Client in order to provide new features, bug fixes, and more. The full list of versions and their release notes is available on [Snyk Broker GitHub](https://github.com/snyk/broker/releases). Snyk encourages you to [subscribe to the RSS feed](https://github.com/snyk/broker/releases.atom) for that page to receive information about versions as they are released.
+Snyk regularly updates the Broker Client in order to provide new features, bug fixes, and more. The full list of versions with release notes is available on [Snyk Broker GitHub](https://github.com/snyk/broker/releases). Snyk encourages you to [subscribe to the RSS feed](https://github.com/snyk/broker/releases.atom) for that page to receive information about versions as they are released.
 
 When you upgrade your Broker there may be some new rules added that Snyk requires to function correctly. Therefore, you will need to re-initialize your API allow-list. If you added or removed any rules to [customize your allow-list](https://github.com/snyk/broker#custom-approved-listing-filter) (for example, to support files greater in size than 1Mb), you must  re-apply these changes to the new allow-list.
