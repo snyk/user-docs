@@ -32,11 +32,12 @@ See [Addressing the backlog](addressing-the-backlog.md) for more details.
 
 #### Other tips
 
-* Invite the rest of the teams after the initial piloting team has identified what works best.
+* Don't get swamped: Snyk's initial scan results may expose thousands of vulnerabilities in your code base. It is important not to get overwhelmed by this initial volume of results. Successful implementation involves long-term planning and phased rollouts.
+* Invite the rest of the teams after the initial piloting team identifies what works best.
 * Start turning on the controls (for example, [PR Checks](../../../scan-application-code/run-pr-checks/)) after an agreed period of time.
 * Allocate Snyk admin roles: Have a clear stakeholder or set of stakeholders who can force merge PRs, mark PR checks as successful in Snyk, and adjust build settings as needed. See [Snyk admin](../../../user-and-group-management/) for details.
 * Define who can [Ignore issues](../../../manage-issues/issue-management/ignore-issues.md), if this function is limited to Snyk Admins.
 
 ### What's next?
 
-Let's start with gaining [Visibility](visibility.md).
+Let's start with gaining [Visibility](visibility.md): get your team aware of Snyk functions and results.
