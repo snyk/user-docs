@@ -104,3 +104,7 @@ Snyk Code automatically excludes the following files from analysis:
 * On the Web UI - files that are larger than 1MB.
 * On the CLI and IDE - files that are larger than 1MB.
 * Minified JS files with 3 or less lines.
+
+### Filename length limitation
+
+The analysis is available only for files with names shorter or equal to 255 characters. You receive an error if the filename exceeds this limit. To make sure that all files are being analyzed, consider shortening long filenames.
