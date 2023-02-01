@@ -35,11 +35,15 @@ We detect vulnerabilities in images based on the following:
 * SUSE Linux Enterprise Server (SLES)
 * Ubuntu
 
-Check out the [Operating Systems Support](https://docs.snyk.io/snyk-container/snyk-container-security-basics/supported-operating-system-distributions) page for specific version support and our [updates](https://updates.snyk.io) page for all the latest updates.
-
 {% hint style="info" %}
 **Note:** Snyk also supports images using packages from those distributions but without the associated package manager, such as Distroless images.
 {% endhint %}
+
+Check out the [Operating Systems Support](https://docs.snyk.io/snyk-container/snyk-container-security-basics/supported-operating-system-distributions) page for specific version support and our [updates](https://updates.snyk.io) page for all the latest updates.
+
+## Official advisory sources
+
+Snyk works directly with the security teams of the supported Linux distributions to provide the most accurate and reliable information on the affected packages (including fix availability). The specific package versions listed are those distributed by the official container source and may differ from the upstream package versions.
 
 ## Unmanaged software
 
