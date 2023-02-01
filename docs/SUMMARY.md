@@ -18,7 +18,7 @@
       * [Addressing the backlog](getting-started/implementing-snyk-free-and-team-plan-users/strategies-to-succeed/addressing-the-backlog.md)
     * [Initial setup steps](getting-started/implementing-snyk-free-and-team-plan-users/initial-setup-steps/README.md)
       * [Create your Organization](getting-started/implementing-snyk-free-and-team-plan-users/initial-setup-steps/create-your-organization.md)
-      * [Set General Settings](getting-started/implementing-snyk-free-and-team-plan-users/initial-setup-steps/set-general-settings.md)
+      * [General Settings tips](getting-started/implementing-snyk-free-and-team-plan-users/initial-setup-steps/general-settings-tips.md)
       * [Enable Snyk Code](getting-started/implementing-snyk-free-and-team-plan-users/initial-setup-steps/enable-snyk-code.md)
       * [Configure integrations](getting-started/implementing-snyk-free-and-team-plan-users/initial-setup-steps/configure-integrations.md)
     * [Dialing down the noise](getting-started/implementing-snyk-free-and-team-plan-users/dialing-down-the-noise.md)
