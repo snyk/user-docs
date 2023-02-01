@@ -132,7 +132,7 @@ For example, to only allow the SHA Media Type accept header for requests to the 
 }
 ```
 
-For an example of custom approved-listing filters for each SCM see [Snyk Broker integration setups](../snyk-broker-set-up-examples/) and the more generic list on [Snyk Broker GitHub](https://github.com/snyk/broker/tree/master/client-templates).
+For examples of custom approved-listing filters for each SCM see [Snyk Broker integration setups](../snyk-broker-set-up-examples/) and the more generic list of [Broker Client templates](https://github.com/snyk/broker/tree/master/client-templates) on GitHub.
 
 ## Upgrade your Snyk Broker Client
 
