@@ -21,7 +21,7 @@
       * [General Settings tips](getting-started/implementing-snyk-free-and-team-plan-users/initial-setup-steps/general-settings-tips.md)
       * [Enable Snyk Code](getting-started/implementing-snyk-free-and-team-plan-users/initial-setup-steps/enable-snyk-code.md)
       * [Configure integrations](getting-started/implementing-snyk-free-and-team-plan-users/initial-setup-steps/configure-integrations.md)
-    * [Dialing down the noise](getting-started/implementing-snyk-free-and-team-plan-users/dialing-down-the-noise.md)
+    * [Reduce the noise](getting-started/implementing-snyk-free-and-team-plan-users/dialing-down-the-noise.md)
     * [Invite team members](getting-started/implementing-snyk-free-and-team-plan-users/invite-team-members.md)
   * [Implementing Snyk: Enterprise plan users](getting-started/implementing-snyk-enterprise-plan-users.md)
   * [Walkthrough: Code Repository Projects](getting-started/walkthrough-code-repository-projects/README.md)
