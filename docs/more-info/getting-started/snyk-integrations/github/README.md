@@ -14,7 +14,7 @@ We're also listed on the [GitHub Marketplace](https://github.com/marketplace/sny
 
 ### Snyk's GitHub Integration
 
-‌Snyk's GitHub integration allows developers to easily onboard their GitHub repositories to scan and continuously monitor them for open source security and license risks. This integration also enables Snyk's Automated Fix Pull Requests and adds Snyk checks on every Pull Request. For more information on [GitHub Integration](../../../../integrations/git-repository-scm-integrations/github-integration.md).
+‌Snyk's GitHub integration allows developers to easily onboard their GitHub repositories to scan and continuously monitor them for open source security and license risks. This integration also enables Snyk's Automated Fix Pull Requests and adds Snyk checks on every Pull Request. For more information on [GitHub Integration](../../../../integrations/git-repository-scm-integrations/github-integration/).
 
 ### Snyk's GitHub Actions
 
