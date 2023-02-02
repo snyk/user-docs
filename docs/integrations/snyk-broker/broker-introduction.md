@@ -51,7 +51,7 @@ To use other Snyk products with Snyk Broker, you need to add an additional compo
 
 Snyk Broker currently integrates with these Git repository systems:
 
-* [GitHub](../git-repository-scm-integrations/github-integration/) and [GitHub Enterprise](../git-repository-scm-integrations/github-enterprise-integration.md) (Cloud and On-prem)
+* [GitHub](../git-repository-scm-integrations/github-integration.md) and [GitHub Enterprise](../git-repository-scm-integrations/github-enterprise-integration.md) (Cloud and On-prem)
 * GitLab (Cloud and On-prem)
 * [Bitbucket Server / Data Center](../git-repository-scm-integrations/bitbucket-data-center-server-integration.md) (On-prem)
 * [Azure Repos](../git-repository-scm-integrations/azure-repos-integration.md) (Cloud and On-prem)

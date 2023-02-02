@@ -10,4 +10,4 @@ When you choose to disconnect, your credentials are removed from Snyk and any in
 
 If you choose to re-enable this integration at any time, you must re-enter your credentials and activate your projects.
 
-**Note**, these instructions do **NOT** apply to a GitHub integration. For disconnecting GitHub, see the [GitHub Integration page](../git-repository-scm-integrations/github-integration/#disconnecting-the-github-integration).
+**Note**, these instructions do **NOT** apply to a GitHub integration. For disconnecting GitHub, see the [GitHub Integration page](../git-repository-scm-integrations/github-integration.md#disconnecting-the-github-integration).

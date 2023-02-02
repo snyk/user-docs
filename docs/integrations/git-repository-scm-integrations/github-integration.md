@@ -20,7 +20,7 @@ When you import a Snyk Project via your GitHub integration with the Snyk PR func
 {% hint style="warning" %}
 You cannot use a GitHub integration to import public and private Projects via the Snyk API with a Snyk Service Account. This functionality is not available because the GitHub integration is associated with _your_ _user account_ and _**not**_ with the Snyk Organization.\
 \
-To import public and private Projects via the API with a Snyk Service Account, use the [GitHub Enterprise integration](../github-enterprise-integration.md).
+To import public and private Projects via the API with a Snyk Service Account, use the [GitHub Enterprise integration](github-enterprise-integration.md).
 {% endhint %}
 
 ## Setting up a GitHub Integration
@@ -37,16 +37,16 @@ After you add them, Snyk scans the selected repositories for dependency files in
 
 The imported projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../../.gitbook/assets/github_integration-fix_15dec2022 (1) (7).jpeg" alt="Imported GitHub projects in your Projects page"><figcaption><p>Imported GitHub projects in your <strong>Projects</strong> page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (7).jpeg" alt="Imported GitHub projects in your Projects page"><figcaption><p>Imported GitHub projects in your <strong>Projects</strong> page</p></figcaption></figure>
 
 ## GitHub integration features
 
 Once the integration is in place, you'll be able to use capabilities such as:
 
-* [Project level security reports](./#project-level-security-reports)
-* [Project monitoring and automatic fix pull requests](./#project-monitoring-and-automatic-fix-pull-requests)
-* [Commit signing](./#commit-signing)
-* [Pull request testing](./#pull-request-testing)
+* [Project level security reports](github-integration.md#project-level-security-reports)
+* [Project monitoring and automatic fix pull requests](github-integration.md#project-monitoring-and-automatic-fix-pull-requests)
+* [Commit signing](github-integration.md#commit-signing)
+* [Pull request testing](github-integration.md#pull-request-testing)
 
 ### **Project level security reports**
 
@@ -59,7 +59,7 @@ Reports are available with Enterprise plans. See the [plans and pricing](https:/
 
 The example below presents a project-level security report.
 
-![](../../../.gitbook/assets/project\_lvl\_security\_rpt-18july2022.png)
+![](../../.gitbook/assets/project\_lvl\_security\_rpt-18july2022.png)
 
 ### **Project monitoring and automatic fix Pull Requests**
 
@@ -67,11 +67,11 @@ Snyk scans your projects on either a daily or a weekly basis. When new vulnerabi
 
 The example below presents a fix Pull Request opened by Snyk.
 
-![](<../../../.gitbook/assets/github\_fix\_pr\_cropped-14july2022 (1).png>)
+![](<../../.gitbook/assets/github\_fix\_pr\_cropped-14july2022 (1).png>)
 
-To review and adjust the automatic fix Pull Request settings in the Snyk GitHub Integration settings page, go to <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> (Organization Settings) **>** **Integrations > Source control > GitHub**.
+To review and adjust the automatic fix Pull Request settings in the Snyk GitHub Integration settings page, go to <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> (Organization Settings) **>** **Integrations > Source control > GitHub**.
 
-![](../../../.gitbook/assets/github-autofixprs\_3july2022.png)
+![](../../.gitbook/assets/github-autofixprs\_3july2022.png)
 
 ### Commit Signing
 
@@ -89,15 +89,15 @@ Snyk tests any newly created pull request in your repositories for security vuln
 
 The example below presents how Snyk pull request checks appear on the GitHub Pull Request page.
 
-![](../../../.gitbook/assets/pr\_testing-14july2022.png)
+![](../../.gitbook/assets/pr\_testing-14july2022.png)
 
-You can review and adjust the pull request tests settings via the Snyk GitHub Integration settings page in <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> (Organization Settings) **>** **Integrations > Source control > GitHub**.
+You can review and adjust the pull request tests settings via the Snyk GitHub Integration settings page in <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> (Organization Settings) **>** **Integrations > Source control > GitHub**.
 
-![](<../../../.gitbook/assets/image (143).png>)
+![](<../../.gitbook/assets/image (143).png>)
 
 ## Required permissions scope for the GitHub integration
 
-If you're on a Snyk Enterprise plan, you can use the [open source Snyk Broker tool](https://github.com/snyk/broker/blob/master/README.md) to act as a proxy between Snyk and your Source Code Management (SCM) system on-premise platforms, including [Snyk Code Support](../../../features/integrations/snyk-broker/broken-reference/), or your publicly-accessible Git-based repositories.
+If you're on a Snyk Enterprise plan, you can use the [open source Snyk Broker tool](https://github.com/snyk/broker/blob/master/README.md) to act as a proxy between Snyk and your Source Code Management (SCM) system on-premise platforms, including [Snyk Code Support](../../features/integrations/snyk-broker/broken-reference/), or your publicly-accessible Git-based repositories.
 
 Snyk Broker lets you view and control Snyk activity in those repositories for increased data security.
 
@@ -118,12 +118,12 @@ The table below presents a summary of the required access scopes for the configu
 
 ### Non-Brokered GitHub Integrations
 
-1. Operations that are triggered via the Snyk Web UI (for example, opening a Fix PR or retesting a project) are performed on behalf of the acting user. Therefore, a user who wants to perform this operation on GitHub via the Snyk UI must connect their GitHub account to Snyk, and have the required permissions scope for the repositories they want to perform these operations for. See the [Required permissions scope for repositories](./#h\_01eefvj14p8b3depeffvyvdwzj) section for more details.
+1. Operations that are triggered via the Snyk Web UI (for example, opening a Fix PR or retesting a project) are performed on behalf of the acting user. Therefore, a user who wants to perform this operation on GitHub via the Snyk UI must connect their GitHub account to Snyk, and have the required permissions scope for the repositories they want to perform these operations for. See the [Required permissions scope for repositories](github-integration.md#h\_01eefvj14p8b3depeffvyvdwzj) section for more details.
 2. Operations that are not triggered via the Snyk Web UI, such as daily / weekly tests and automatic PRs (fix and upgrade), are performed on behalf of random Snyk organization members who have connected their GitHub accounts to Snyk and have the required permission scope for the repository.
 3. For public repositories that are non-brokered, some operations (such as creating the PR) may occasionally be performed by [snyk-bot@snyk.io](mailto:snyk-bot@snyk.io).
 
 {% hint style="info" %}
-A Snyk organization administrator can [designate a specific GitHub account to use for opening fix and upgrade PRs](../opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md).
+A Snyk organization administrator can [designate a specific GitHub account to use for opening fix and upgrade PRs](opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md).
 
 Note that Snyk will continue to use a random Snyk organization member’s GitHub account to perform all the other operations, therefore using this feature does not eliminate the need to connect users' GitHub accounts to Snyk.
 {% endhint %}
@@ -147,17 +147,17 @@ Note that the configured account is only used for _opening_ PRs. All the other o
 
 To use this feature, follow the steps below:
 
-1. Go to the GitHub Integrations settings page in the Snyk Web UI, via <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> (Organization Settings) **>** **Integrations > Source control > GitHub.**
+1. Go to the GitHub Integrations settings page in the Snyk Web UI, via <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> (Organization Settings) **>** **Integrations > Source control > GitHub.**
 2. In the **Set an account to open Snyk PRs** section, set the toggle to **Enabled**.
 3. In the right side of the section, follow the instructions to **Create a personal access token in GitHub**.
 4. In the **Personal access token** field, paste the newly generated token to Snyk so it can be used to perform operations on GitHub (that is, opening Fix PRs, and so on).
 
-![](../../../.gitbook/assets/set\_account\_for\_snyk\_prs.png)
+![](../../.gitbook/assets/set\_account\_for\_snyk\_prs.png)
 
 {% hint style="info" %}
 Make sure that the GitHub account that you designate to open Snyk PRs has at least **write** level permissions (or higher) for the repos you want to monitor with Snyk.
 
-See [repository permission levels on GitHub](./#required-permissions-scope-for-the-github-integration) for more information.
+See [repository permission levels on GitHub](github-integration.md#required-permissions-scope-for-the-github-integration) for more information.
 {% endhint %}
 
 ### **2. Assigning pull requests to users** <a href="#pr-assignment" id="pr-assignment"></a>
@@ -176,21 +176,21 @@ Users can either be manually specified (and all will be assigned) or automatical
 
 #### **Enable Auto-assign for all projects in the GitHub integration**
 
-To configure the Auto-assign settings for all the projects from an imported private repository\*\*,\*\* go to the Github integration settings via <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> (Organization Settings) **>** **Integrations > Source control > GitHub**, and configure the following options:
+To configure the Auto-assign settings for all the projects from an imported private repository\*\*,\*\* go to the Github integration settings via <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> (Organization Settings) **>** **Integrations > Source control > GitHub**, and configure the following options:
 
-![](../../../.gitbook/assets/pr\_assignees\_privaterepo-3july2022.png)
+![](../../.gitbook/assets/pr\_assignees\_privaterepo-3july2022.png)
 
 #### **Enable Auto-assign for a single project in the Github integration**
 
 To configure the Auto-assign settings for a specific project from an imported private repository\*\*:\*\*
 
 1. In the **Projects** tab for your organization, select and expand the relevant private repository, select a target, and click the **Settings** cog.\
-   <img src="../../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (14).png" alt="" data-size="original">\
+   <img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (14).png" alt="" data-size="original">\
    The project page opens.
 2. In the project page, to apply unique settings for that specific project, select the **Settings** tab in the upper right, and the **Github integration** \_\_ option in the left sidebar.
 3. Go to the **Pull request assignees for private repos** section at the bottom of the page and select, customize, and confirm the relevant options in the sections:
 
-![](../../../.gitbook/assets/code-assigness-project.png)
+![](../../.gitbook/assets/code-assigness-project.png)
 
 ## Disconnecting the GitHub integration
 
@@ -202,7 +202,7 @@ Snyk’s GitHub SCM integration leverages the oAuth app integration. If you inte
    You can also reach the [Authorized OAuth Apps tab directly](https://github.com/settings/applications).
 4. Find the **Snyk** entry, click the 3 dots on the right, and select **Revoke**.
 
-![](../../../.gitbook/assets/disconnect\_github\_3-july-2022.png)
+![](../../.gitbook/assets/disconnect\_github\_3-july-2022.png)
 
 Revoking this access effectively disconnects Snyk’s access to that GitHub account. Existing imported snapshots will persist in Snyk and continue to rescan based on the existing snapshots until deleted. Snyk will no longer be able to import new projects from the GitHub integration and will no longer re-scan on new code merges.
 
@@ -238,16 +238,16 @@ For example, to show a badge for the 4.x branch of the express repo, you would u
 
 #### Badge results
 
-* A green badge indicates that there are no vulnerabilities. <img src="../../../.gitbook/assets/image (142) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">
-* A red badge indicates how many vulnerabilities were found. <img src="../../../.gitbook/assets/image (175) (1) (1) (1) (2).png" alt="" data-size="line">
-* A grey badge indicates that the repository has not been scanned. <img src="../../../.gitbook/assets/image (209) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="line">
+* A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (142) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">
+* A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (175) (1) (1) (1) (2).png" alt="" data-size="line">
+* A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (209) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="line">
 
 #### **Badge styles**
 
 To change the style of the badge, you can add the following query parameters after `badge.svg`:
 
-* Flat rectangle with squared edges: `?style=flat-square` <img src="../../../.gitbook/assets/image (1) (5) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">
-* "Plastic" rectangle with rounded edges and shading `?style=plastic` <img src="../../../.gitbook/assets/image (142) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">
+* Flat rectangle with squared edges: `?style=flat-square` <img src="../../.gitbook/assets/image (1) (5) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">
+* "Plastic" rectangle with rounded edges and shading `?style=plastic` <img src="../../.gitbook/assets/image (142) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">
 
 ### **npm badges**
 
@@ -275,7 +275,7 @@ Badges currently only work for public npm packages and GitHub repositories, and 
 
 ### **Badges for custom manifest file locations**
 
-By default, the badge will test against the first [valid manifest file](../../../products/snyk-open-source/language-and-package-manager-support/) it detects in the root of your project.
+By default, the badge will test against the first [valid manifest file](../../products/snyk-open-source/language-and-package-manager-support/) it detects in the root of your project.
 
 If your manifest file is in different location than the root of the repository, or if you have multiple manifest files that you would like to show a badge for, you can pass a targetFile query string parameter to direct the badge to test against another supported manifest file.
 
