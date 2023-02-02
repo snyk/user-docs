@@ -59,9 +59,7 @@ While there are two approaches for dependencies managed by **packages.config**, 
 
 First, install the dependencies into the **packages** folder by running `nuget install -OutputDirectory packages` and make sure the **packages** dir has been created by the previous command. Then run `snyk test`.
 
-Examples of supported project files that resolve into **packages** include:
-
-* packages.config
+Examples of supported project files that resolve into **packages** include: **packages.config**
 
 {% hint style="info" %}
 While you should also be able to run `snyk test` without previously installing dependencies this will result in less accurate vulnerability results.
@@ -105,7 +103,7 @@ In order to build the dependency tree, Snyk analyzes the **paket.dependencies** 
 
 When your Projects have been imported, Snyk analyzes your Projects based on their supported manifest files and then builds the dependency tree and displays it in the Snyk Web UI, similar to the following:
 
-![](../../../.gitbook/assets/uuid-c995621c-85c8-c79f-accd-f014e2293921-en.png)
+<figure><img src="../../../.gitbook/assets/uuid-c995621c-85c8-c79f-accd-f014e2293921-en.png" alt="Dependency tree in Snyk Web UI"><figcaption><p>Dependency tree in Snyk Web UI</p></figcaption></figure>
 
 ### **Nuget**
 
@@ -120,7 +118,7 @@ Examples of supported project files include:
 * \*.vbproj
 * \*.fsproj
 
-A .NET project can target multiple target frameworks. Snyk creates a separate dependency tree for each target framework, displaying each as a separate Snyk Project from the interface. In this way, it’s easier to understand why a dependency is being used and also to assess the fix strategy.
+A .NET project can target multiple target frameworks. Snyk creates a separate dependency tree for each target framework, displaying each as a separate Snyk Project from the interface. This makes it easier to understand why a dependency is being used and also to assess the fix strategy.
 
 ### **Paket**
 
@@ -133,11 +131,11 @@ From the Snyk Web UI, you can configure Snyk to scan your entire Project, includ
 You can also **update your language preferences.**
 
 1. Log in to your account and navigate to the relevant Group and Organization that you want to manage.
-2. Go to **Settings** and select settings for **.NET**. To scan all development dependencies, be sure Scan build dependencies is checked.
+2. Go to **Settings** and select settings for **.NET**. To scan all development dependencies, be sure **Scan build dependencies** is checked.
 
 ## Fixing vulnerabilities for .NET
 
-For a general understanding of how Snyk helps you fix Open Source vulnerabilities within your projects, see [Fix your vulnerabilities](../../../manage-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md).
+For a general understanding of how Snyk helps you fix Open Source vulnerabilities within your Projects, see [Fix your vulnerabilities](../../../manage-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md).
 
 {% hint style="info" %}
 **Feature availability**\
@@ -158,12 +156,12 @@ Snyk resolves dependencies differently in the Snyk CLI and the Source Code Manag
   **Note**: Runtime dependencies (provided by the runtime environment also known as "meta-packages") are resolved more accurately in the CLI if the host machine uses a similar runtime SDK to the server running the app.
 * In the SCM integration, scanning uses a different process, as the generated files mentioned above are not available. To overcome this Snyk follows the NuGet dependency [resolution algorithm](https://docs.microsoft.com/en-us/nuget/concepts/dependency-resolution) to construct a dependency tree.
 
-For further informaiton on .NET automated fixes, see the Snyk [blog](https://snyk.io/blog/automated-vulnerability-fixes-dot-net-dependencies).
+For further information on .NET automated fixes, see the Snyk [blog](https://snyk.io/blog/automated-vulnerability-fixes-dot-net-dependencies).
 
-### Build-time vs Runtime dependencies
+### Build-time vs runtime dependencies
 
-* **Build-time dependency**: Snyk understands build time dependency to be resolved during build time and not susceptible to change at runtime.
-* **Runtime dependency**: Snyk understands runtime dependency to be resolved against the installed runtime. For example, packages coming from the .NET framework (<=4) / .NET [runtime](https://docs.microsoft.com/en-us/dotnet/core/versions/selection?WT.mc\_id=DOP-MVP-5001511&) (for Core and .NET 5+) such as [`System.Net.Http`](https://www.nuget.org/packages/System.Net.Http) . Snyk sometimes refers to runtime dependencies as meta-packages.
+* **Build-time dependency**: Snyk understands build-time dependency to be resolved during build time and not susceptible to change at runtime.
+* **Runtime dependency**: Snyk understands runtime dependency to be resolved against the installed runtime, for example, packages coming from the .NET framework (<=4) / .NET [runtime](https://docs.microsoft.com/en-us/dotnet/core/versions/selection?WT.mc\_id=DOP-MVP-5001511&) (for Core and .NET 5+) such as [`System.Net.Http`](https://www.nuget.org/packages/System.Net.Http) . Snyk sometimes refers to runtime dependencies as meta-packages.
 
 ### Tackling vulnerabilities from runtime dependencies
 
@@ -175,7 +173,7 @@ If you believe you have found false positives because the application runs on a 
 
 #### **Vulnerabilities from runtime dependencies in CLI**
 
-If you believe you have found false positives because when the application runs in production you always pull the latest/explicit patches from Microsoft, which may mean the vulnerability is no longer relevant to your Project, you may do the following or simply [ignore](../../../manage-issues/issue-management/ignore-issues.md) them:
+If you believe you have found false positives because when the application runs in production you always pull the latest/explicit patches from Microsoft, which may mean the vulnerability is no longer relevant to your Project, you may [ignore](../../../manage-issues/issue-management/ignore-issues.md) them or do the following:
 
 * If in production your application always runs on the latest SDK patch version, you can set `TargetLatestRuntimePatch` to `true` in the Project file. Make sure to upgrade your environments (for example, dev, prod) to the latest runtime version.
 
@@ -191,7 +189,7 @@ If you believe you have found false positives because when the application runs 
 </PropertyGroup>
 ```
 
-## Unsupported, Snyk for .NET
+## Unsupported by Snyk for .NET
 
 * [`Directory.Build.props`](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets) and [`Directory.Build.targets`](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets) are not currently supported.
 * `<ProjectReference>`elements are not currently supported.
