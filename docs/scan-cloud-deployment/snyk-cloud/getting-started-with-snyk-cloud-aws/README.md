@@ -2,7 +2,7 @@
 
 Snyk Cloud scans the infrastructure configuration in your [Amazon Web Services (AWS)](https://aws.amazon.com/) provider account and detects misconfigurations that can lead to vulnerabilities.
 
-You can can onboard an AWS account to Snyk using the following methods:
+You can onboard an AWS account to Snyk using the following methods:
 
 * [Snyk Web UI](snyk-cloud-for-aws-web-ui/)
 * [Snyk API](snyk-cloud-for-aws-api/)
