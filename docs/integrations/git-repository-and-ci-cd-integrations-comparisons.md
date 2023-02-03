@@ -1,8 +1,8 @@
 # Git repository and CI/CD integrations: comparisons
 
-The most popular integrations for Snyk implementation are [Git Repository](../../integrations/git-repository-scm-integrations/) and [CI/CD pipeline](../../integrations/ci-cd-integrations/).
+The most popular integrations for Snyk implementation are [Git Repository](git-repository-scm-integrations/) and [CI/CD pipeline](ci-cd-integrations/).
 
-![Snyk Integrations](../../.gitbook/assets/scm-ci-cid.png)
+![Snyk Integrations](../.gitbook/assets/scm-ci-cid.png)
 
 * **Git repository**: Improve application security in your Git repository, preventing vulnerable code from entering your codebase, and getting quick visibility of your vulnerabilities.
 * **CI/CD**: Keep your applications secure by preventing deployment of vulnerable applications or components (registries), adding Snyk in the build as a step of the pipeline.
@@ -28,7 +28,7 @@ Use Git repository integrations to Improve security of your code and deployed ap
 * More friendly experience for developers.
 * Does not take resources from your CI/CD pipeline.
 
-For more details, see [Snyk Git repository integration: deployment recommendations](../../integrations/git-repository-scm-integrations/snyk-scm-integration-good-practices.md).
+For more details, see [Snyk Git repository integration: deployment recommendations](git-repository-scm-integrations/snyk-scm-integration-good-practices.md).
 
 ### CI/CD
 
@@ -41,4 +41,4 @@ Use CI/CD integrations to keep your code and deployed applications secure, and g
 * Strong gatekeeper.
 * Best practice for container and Infrastructure as Code scans (for IaC, get more accurate results by scanning a Terraform plan file, rather than the untemplated IaC declarations).
 
-For more details, see [Snyk CI/CD Integration deployment and strategies](../../integrations/ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/).
+For more details, see [Snyk CI/CD Integration deployment and strategies](ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/).
