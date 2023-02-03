@@ -1,6 +1,6 @@
 # Snyk for C/C++
 
-You can use Snyk to scan C/C++ projects through the [CLI](../../../snyk-cli/).
+You can use Snyk to scan C/C++ projects through the [CLI](../../../snyk-cli/). For more information see [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli.md).
 
 ## Features of Snyk for C/C++
 
@@ -15,13 +15,13 @@ Some features may not be available, depending on your plan. See [pricing plans](
 
 ## How Snyk for C/C++ works
 
-Scans are powered by an open source database, periodically updated with the latest source code from online sources.
+Scans are powered by an open-source database, periodically updated with the latest source code from online sources.
 
 {% hint style="info" %}
 To navigate through the vulnerabilities for C/C++, use the [Snyk Vuln DB](https://security.snyk.io).
 {% endhint %}
 
-When you run the `snyk test --unmanaged` command, Snyk:
+When you run the `snyk test --unmanaged` command, Snyk does the following:
 
 1. Converts all files from your current folder into a list of hashes.
 2. Sends the hashes to Snyk scan server.
@@ -30,7 +30,7 @@ When you run the `snyk test --unmanaged` command, Snyk:
 5. Displays the results.
 
 {% hint style="info" %}
-To scan the project, the dependencies must be available as source code in the scanned directory. If the dependencies are in a different location, that location must be scanned.
+In order for you to scan the project, the dependencies must be available as source code in the scanned directory. If the dependencies are in a different location, that location must be scanned.
 {% endhint %}
 
 ### Scanning archives
@@ -151,7 +151,7 @@ Dependencies:
 
 ### Understanding the confidence level
 
-You may need to change the source code of the dependencies that you use in your software. As Snyk uses file signatures to find the closest possible match to an open source library, your changes may decrease the accuracy of the identification of the actual library.
+You may need to change the source code of the dependencies that you use in your software. As Snyk uses file signatures to find the closest possible match to an open-source library, your changes may decrease the accuracy of the identification of the actual library.
 
 To learn how confident Snyk is about the identified dependency and its version, use the `--print-deps` or `--print-dep-paths` command line option:
 
@@ -160,7 +160,7 @@ curl|https://github.com/curl/curl/releases/download/curl-7_58_0/curl-7.58.0.tar.
 confidence: 0.993
 ```
 
-This confidence level shows how confident Snyk is about the actual identification of the dependency. The number can be between 0 and 1 and the higher it is, the more accurate the identification is. So a confidence of **1** means that all the files in the source tree fully matched all the expected files in our database.
+This confidence level shows how confident Snyk is about the actual identification of the dependency. The number can be between 0 and 1 and the higher it is, the more accurate the identification is. So a confidence of **1** means that all the files in the source tree fully matched all the expected files in the Snyk database.
 
 ### JSON output
 
@@ -301,9 +301,9 @@ Importing a project with unmanaged dependencies creates a new project:
 
 **Scanning on Windows**
 
-Many open source projects in Git use Unix line endings. By default, Git on Windows converts Unix line endings to Windows line endings and only converts them back for the actual commits. The Snyk database contains source code signatures with the original line endings as defined in the individual Projects, so when you scan on Windows, the signatures generated for the files with Windows line endings are different from the signatures in the Snyk database. In this case, it is very likely no dependencies will be found.
+Many open-source projects in Git use Unix line endings. By default, Git on Windows converts Unix line endings to Windows line endings and only converts them back for the actual commits. The Snyk database contains source code signatures with the original line endings as defined in the individual Projects, so when you scan on Windows, the signatures generated for the files with Windows line endings are different from the signatures in the Snyk database. In this case, it is very likely no dependencies will be found.
 
-To scan a project with Unix line endings on Windows, disable git line endings conversion. To configure this globally, run:
+To scan a Project with Unix line endings on Windows, disable git line endings conversion. To configure this globally, run:
 
 ```shell
 git config --global core.autocrlf false
@@ -317,12 +317,12 @@ No. The files are converted to a list of hashes before they are sent for scannin
 
 ### **Why did Snyk not find any dependencies?**
 
-Snyk stores the official releases of many of open source components in the Snyk database but it is possible that the source code you scanned is not there or is not found. If your scan does not find any dependencies [submit a request to support](https://snyk.zendesk.com/agent/dashboard).
+Snyk stores the official releases of many of open-source components in the Snyk database but it is possible that the source code you scanned is not there or is not found. If your scan does not find any dependencies [submit a request to support](https://snyk.zendesk.com/agent/dashboard).
 
 Here are a few things that you can check on your own:
 
 * The source code of the dependencies you scanned is available as source code (unpacked) in the folder that you scanned. If you use a package manager, such as Conan, the source code is likely to be in the Conan cache, along with the source code of other dependencies of your other projects. To scan dependencies managed by a package manager, Snyk recommends that you do that in a clean environment (for example during a build).
-* The source code of the dependencies is not from an official release of the OSS component, and Snyk does not have it in the database
+* The source code of the dependencies is not from an official release of the open-source software (OSS) component, and Snyk does not have it in the database
 * The source code of the OSS has been modified too much, so Snyk cannot detect it. If there are too few files and you modify most of them, Snyk cannot match them to a component from the Snyk database. Examples of common modifications are whitespace formatting and adding license or copyright headers.
 * You are on Windows, and Git converted line endings to Windows line endings. Currently Snyk can recognize files that have retained their original line endings.
 * The source code of the OSS components is too new. The Snyk database is refreshed monthly but it takes time for the latest releases to get processed.
