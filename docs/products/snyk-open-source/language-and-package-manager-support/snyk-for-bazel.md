@@ -17,9 +17,9 @@ The Dep Graph API requires additional permissions. [Contact Snyk Support](https:
 
 The following describes how to use Snyk to test your Bazel projects.
 
-## Bazel Overview
+## Bazel overview
 
-Bazel is defined by [bazel.build](https://docs.bazel.build/versions/master/bazel-overview.html) as follows:
+Bazel is defined on [bazel.build](https://docs.bazel.build/versions/master/bazel-overview.html) as follows:
 
 > _Bazel is an open-source build and test tool similar to Make, Maven, and Gradle. It uses a human-readable, high-level build language. Bazel supports projects in multiple languages and builds outputs for multiple platforms. Bazel supports large codebases across multiple repositories, and large numbers of users._
 
@@ -31,7 +31,7 @@ However, in many cases users must manually specify their dependency information 
 
 Because Bazel dependencies are specified as code in BUILD files using Starlark, Snyk cannot easily discover which dependencies a project has.
 
-The recommended approach is to test your dependencies using the [Snyk Dep Graph](https://snyk.docs.apiary.io/#reference/test/dep-graph) API (more information: [Snyk Dep Graph Test API](https://github.com/snyk/dep-graph)).
+The recommended approach is to test your dependencies using the [Snyk Dep Graph](https://snyk.docs.apiary.io/#reference/test/dep-graph) API. For more information see [Snyk Dep Graph Test API](https://github.com/snyk/dep-graph).
 
 ## How Snyk for Bazel works
 
@@ -44,17 +44,17 @@ The recommended approach is to test your dependencies using the [Snyk Dep Graph]
       -H 'Content-Type: application/json; charset=utf-8' \
       -d @dep-graph.json
     ```
-3. Check the [API response](snyk-for-bazel.md#snyk-dep-graph-test-api-response) for pass/fail status and any resulting vulnerabilities.
+3. Check the API response for pass/fail status and any resulting vulnerabilities. See the next section of this doc.
 
 ### Snyk Dep Graph Test API
 
 The Snyk Dep Graph Test API takes a generic dependency graph and returns a report containing any relevant vulnerabilities for those dependencies.
 
-The set of supported package managers/repository ecosystems are listed in the [API documentation](https://snyk.docs.apiary.io/#reference/test/dep-graph/test-dep-graph) (at time of writing these are `deb`, `gomodules`, `gradle`, `maven`, `npm`, `nuget`, `paket`, `pip`, `rpm`, `rubygems`, and `cocoapods`).
+The supported package managers and repository ecosystems are listed in the [API documentation](https://snyk.docs.apiary.io/#reference/test/dep-graph) (at time of writing these are `deb`, `gomodules`, `gradle`, `maven`, `npm`, `nuget`, `paket`, `pip`, `rpm`, `rubygems`, and `cocoapods`).
 
 Any of your Bazel dependencies that are available in these ecosystems can be tested using the Snyk API.
 
-### Snyk Dep Graph JSON Syntax
+### Snyk Dep Graph JSON syntax
 
 The Dep Graph Test API takes a [Snyk Dep Graph](https://github.com/snyk/dep-graph) JSON object describing the root application and the graph of direct and transitive dependencies.
 
@@ -110,7 +110,7 @@ Further notes on specific components in the dep graph object follow:
 * `graph.nodes` - array of objects describing the relationships between entries in `pkgs`. In Bazel. This is typically the project node with all other packages defined as a flat array of direct dependencies in `deps.`
 * `graph.rootNodeId` - specifies the `id` of the entry in `graph.nodes` to use as the root node of the graph. Set this to the `nodeId` of the project node.
 
-### Snyk Dep Graph Test API Response
+### Snyk Dep Graph Test API response
 
 The Dep Graph Test API returns a JSON object describing any issues (vulnerabilities and licenses) found in the dep graph dependencies.
 
@@ -205,14 +205,14 @@ An example response with a single vulnerability. follows:
 
 Further notes on specific components in the response object follow:
 
-* `ok` - boolean value summarizing whether Snyk found any vulnerabilities in the supplied dependencies. You can use this for a quick pass/fail test
-* `issuesData` - a hash of each unique vulnerability found. Each vulnerability contains many useful properties, such as `title`, `description`, `identifiers`, `publicationTime`, `severity` and so on.
+* `ok` - Boolean value summarizing whether Snyk found any vulnerabilities in the supplied dependencies. You can use this for a quick pass/fail test
+* `issuesData` - a hash of each unique vulnerability found. Each vulnerability contains many useful properties, such as `title`, `description`, `identifiers`, `publicationTime`, `severity`, and so on.
 * `issues` - an simple array of mappings from vulnerabilities in `issuesData` to package. As a vulnerability may be relevant to multiple packages, this mapping is used to keep the response length as short as possible
 
 ## Examples for Snyk for Bazel
 
 {% hint style="info" %}
-See [https://github.com/snyk/bazel-simple-app](https://github.com/snyk/bazel-simple-app) for a full example Bazel Java project, and corresponding Snyk Dep Graph object.
+See [https://github.com/snyk/bazel-simple-app](https://github.com/snyk/bazel-simple-app) for a full example Bazel Java project and corresponding Snyk Dep Graph object.
 {% endhint %}
 
 For a simple Bazel project with a single dependency on a Maven package, you may specify the dependency like this:
