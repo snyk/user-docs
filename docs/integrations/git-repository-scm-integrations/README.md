@@ -6,18 +6,20 @@ Snyk can integrate with the following Source Control Managers (SCMs) to help you
 
 * [GitHub integration](github-integration.md)
 * [GitHub Enterprise Integration](github-enterprise-integration.md)
-* [GitHub Read-Only Projects](github-read-only-projects.md)
-* [Bitbucket Cloud Personal Access Token (Legacy) integration](https://docs.snyk.io/integrations/git-repository-scm-integrations/bitbucket-cloud-integration)
-* [Bitbucket Cloud App integration](https://docs.snyk.io/integrations/git-repository-scm-integrations/bitbucket-cloud-app-integration)
+* [GitHub Read-only Projects](github-read-only-projects.md)
+* [Bitbucket Cloud Personal Access Token (Legacy) integration](bitbucket-cloud-integration.md)
+* [Bitbucket Cloud App integration](bitbucket-cloud-app-integration.md)
 * [Bitbucket Data Center/Server integration](bitbucket-data-center-server-integration.md)
 * [GitLab integration](gitlab-integration.md)
 * [Azure Repos integration](azure-repos-integration.md)
 
 ## Are there any tips for integrating my Git repo with Snyk?
 
-Check out our [deployment recommendations](https://docs.snyk.io/integrations/git-repository-scm-integrations/snyk-scm-integration-good-practices) for integrating your SCM with Snyk.
+See the [Snyk deployment recommendations](snyk-scm-integration-good-practices.md) for integrating your SCM with Snyk and [Using GitHub or GitHub Enterprise integration](using-github-or-github-enterprise-integration.md).
 
 ## How can I use Snyk Pull Requests (PRs) for my Git repositories?
+
+For details see the following pages:
 
 * [Opening fix and upgrade PRs from a fixed GitHub account](opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)
 * [Test your PRs for vulnerabilities before merging](../../scan-application-code/run-pr-checks/pr-checks-for-snyk-open-source/test-your-prs-for-vulnerabilities-before-merging.md)
