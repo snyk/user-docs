@@ -1,3 +1,7 @@
+---
+description: 'Last updated: June, 2022'
+---
+
 # Security Rules used by Snyk Code
 
 {% hint style="info" %}
