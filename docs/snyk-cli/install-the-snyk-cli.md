@@ -76,7 +76,7 @@ scoop install snyk
 
 ## Snyk CLI in a Docker image
 
-Snyk CLI can also be run from a Docker image. Snyk offers multiple Docker images under [snyk/snyk-cli](https://hub.docker.com/r/snyk/snyk-cli) and [snyk/snyk](https://hub.docker.com/r/snyk/snyk) (see [snyk/snyk-images on GitHub](https://github.com/snyk/snyk-images) for more details).
+Snyk CLI can also be run from a Docker image. Snyk offers multiple Docker images under [snyk/snyk](https://hub.docker.com/r/snyk/snyk) (see [snyk/snyk-images on GitHub](https://github.com/snyk/snyk-images) for more details).
 
 These images wrap the Snyk CLI and depending on the Tag come with relevant tooling for different projects. An example follows for scanning a Gradle project with `snyk/snyk-cli`:
 
