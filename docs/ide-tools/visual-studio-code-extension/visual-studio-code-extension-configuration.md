@@ -31,8 +31,8 @@ After the extension is installed, you can set the following configurations for t
 * **Crash Report**: send error reports to Snyk.
 * **Telemetry**: send usage statistics to Snyk.
 * **Advanced**
-  * **Advanced mode**: toggle a panel to allow the user to manually control when the analysis should be run.
   * **Auto Scan Open Source Security**: run Snyk Open Source analysis in automatic mode.
+  * **Scanning Mode**: run Snyk Code scans in the background, or only when running the `Snyk: Rescan` command.
   * **Additional Parameters**: set additional snyk test [CLI options](https://docs.snyk.io/snyk-cli/cli-reference#options-for-multiple-commands) for the Open Source scanning. For **unmanaged** [**C/C++ scanning**](../../products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++.md), use the CLI option `--unmanaged` to find vulnerabilities in open source packages. This option works only for unmanaged C/C++ scanning; do not use this option for other languages. Additional parameters do not apply to Snyk Code or IaC.
   * **Organization**: specify an organization slug name to run tests for that organization. The value of organization setting `snyk.advanced.organization` must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`. If not specified, the preferred organization as defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
   * **Custom endpoint**: specify the custom Snyk API endpoint for your organization. Use this field for the custom endpoint for Single Tenant setups as well instead of https://app.snyk.io.
