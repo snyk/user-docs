@@ -1,7 +1,7 @@
 # GitHub Enterprise integration
 
 {% hint style="info" %}
-**Feature avaiilabilty**\
+**Feature availability**\
 Scanning of self-managed source code, like GitHub Enterprise, is available with the Enterprise plan. See[ the Snyk plans and pricing page](https://snyk.io/plans) for more information.
 {% endhint %}
 
@@ -101,7 +101,7 @@ To review and adjust the pull request tests settings:
 
 ## Required permissions scope for the GitHub integration
 
-All the operations, triggered manually or automatically, are performed for a GitHub service account that has its token configured in the integrations settings. This shows the required access scopes for the configured token:
+All the operations, triggered manually or automatically, are performed for a GitHub service account that has its token configured in the integrations settings page. This shows the required access scopes for the configured token:
 
 | **Action**                                              | **Purpose**                                                                                                                                                                                                                                                   | **Required permissions in GitHub** |
 | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
