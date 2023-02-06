@@ -8,7 +8,7 @@ If you need guidance setting up the initial Enterprise application, refer the Az
 
 ## Configure custom claims
 
-The following characterize his configuration:
+The following characterize this configuration:
 
 * Azure AD Security groups are mapped to Snyk organizations.
 * Azure AD Security is mapped to Snyk Organization membership roles.
