@@ -126,3 +126,16 @@ Implementation Service is provided by a named contact (i.e. Implementation Consu
 * Onsite: Where requested, the Snyk team will provide implementation services onsite at the customer’s location (Travel expenses passed through at cost) &#x20;
 
 The customer will engage Snyk for a kickoff call within 30 days of the contract start date, at a time that is mutually agreed upon by the parties. The Snyk implementation services must be used within 120 days of the contract start date for all implementation services.
+
+### Snyk Assist - implementation services (up to 30 days)
+
+Snyk Assist implementation service is provided by a named contact (an Implementation Consultant) that works with the customer team, on an as-needed basis and at the request of the customer, to provide specific services related to optimizing the use of Snyk. &#x20;
+
+Snyk Assist may include one of the following services:
+
+* SSO Custom-mapping: Technical guidance for setting up, configuring, and testing the SSO custom-mapping fields
+* Broker Set-up and Workshop: Hands on guidance and education for configuration and troubleshooting of Snyk Broker
+* Developer Training and Bug Bash Support: A tailored Developer training session based on the customer’s technical stack, followed by a bug bash to help Developers put learnings into practice
+* Optimization Session: Discovery configuration session accompanied by a health report including recommendations and best practices for optimal Snyk configuration in customer’s environment to help meet their specific security and compliance goals
+
+The customer will engage Snyk for a kickoff call within 30 days of the purchase date, at a time that is mutually agreed upon by the parties. Any Snyk Assist services must be used within 60 days of the purchase date, regardless of when or if the customer engages Snyk for the kickoff call.
