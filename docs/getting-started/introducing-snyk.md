@@ -41,7 +41,7 @@ Snyk products support multiple languages and formats:
 * **Snyk Code**: see [Snyk Code - Supported languages and frameworks](../products/snyk-code/snyk-code-language-and-framework-support.md).
 * **Snyk Container**: see [Supported operating system distributions.](../scan-containers/supported-operating-system-distributions.md)
 * **Snyk Infrastructure as Code**: [Snyk IaC ](../scan-cloud-deployment/snyk-infrastructure-as-code/)supports configuration files for HashiCorp Terraform, AWS CloudFormation, Kubernetes, and Azure Resource Manager (ARM).
-* **Snyk Cloud:** [Snyk Cloud](../scan-cloud-deployment/snyk-cloud/) supports scanning [Amazon Web Services resources](../scan-cloud-deployment/snyk-cloud/supported-aws-resources-for-snyk-cloud.md) and [Google Cloud resources](../scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-google/).
+* **Snyk Cloud:** [Snyk Cloud](../scan-cloud-deployment/snyk-cloud/) supports scanning [Amazon Web Services resources](../scan-cloud-deployment/snyk-cloud/supported-resources-for-snyk-cloud/supported-aws-resources-for-snyk-cloud.md) and [Google Cloud resources](../scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-google/).
 
 ## What can Snyk integrate with?
 

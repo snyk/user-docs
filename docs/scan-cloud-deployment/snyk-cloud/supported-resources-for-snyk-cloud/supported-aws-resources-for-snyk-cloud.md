@@ -1,7 +1,7 @@
 # Supported AWS resources for Snyk Cloud
 
 {% hint style="info" %}
-For information about billable resources, see [Billable resources for Snyk Cloud](billable-resources-for-snyk-cloud.md).
+For information about billable resources, see [Billable resources for Snyk Cloud](../billable-resources-for-snyk-cloud.md).
 {% endhint %}
 
 Snyk Cloud scans the following Amazon Web Services resource types:

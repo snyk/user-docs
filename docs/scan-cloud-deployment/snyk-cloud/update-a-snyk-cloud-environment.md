@@ -4,6 +4,7 @@ You can update the following attributes for a [Snyk Cloud Environment](snyk-clou
 
 * **AWS:** Environment name and IAM role ARN (Amazon Resource Name). The new role ARN must have the same AWS account ID as the old role ARN. See [Find the role ARN](getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment.md#find-the-role-arn).
 * **Google:** Environment name and service account email address. The new service account email must be associated with the same project ID as the old one.
+* **Azure:** Environment name and application ID. The new application ID must be associated with the same subscription and tenant as the old one.
 
 For example, you would need to update the Snyk IAM role ARN if you change the role's name in the Terraform or CloudFormation template and deploy the changes.
 
@@ -100,6 +101,29 @@ curl -X PATCH \
     "attributes": {
       "options": {
         "service_account_email": "YOUR-NEW-SERVICE-ACCOUNT-EMAIL"
+      }
+    },
+    "type": "resource"
+  }
+}'
+```
+
+#### Azure
+
+`data.attributes.options.tenant_id` and `data.attributes.options.subscription_id` are required and cannot be different from the current values.
+
+```
+curl -X PATCH \
+'https://api.snyk.io/rest/orgs/YOUR-ORGANIZATION-ID/cloud/environments/YOUR-ENVIRONMENT-ID?version=2022-12-21~beta' \
+-H 'Authorization: token YOUR-API-TOKEN' \
+-H 'Content-Type:application/vnd.api+json' -d '{
+  "data": {
+    "attributes": {
+      "name": "YOUR-NEW-ENVIRONMENT-NAME",
+      "options": {
+        "application_id": "YOUR-NEW-APPLICATION-ID",
+        "tenant_id": "00000000-0000-0000-1234-12345678abcd",
+        "subscription_id": "abcd1234-abcd-1234-0000-000000000000"
       }
     },
     "type": "resource"

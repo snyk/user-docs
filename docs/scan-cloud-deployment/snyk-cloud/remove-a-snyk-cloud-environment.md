@@ -28,3 +28,10 @@ Removing an environment does not remove the Snyk Identity & Access Management (I
 ## Remove the Google service account
 
 Removing an environment does not remove the Google service account. To fully remove Snyk's access to your Google project, delete the Google service account using the [Google Cloud console](https://cloud.google.com/iam/docs/creating-managing-service-accounts#iam-service-accounts-delete-console) or [CLI](https://cloud.google.com/iam/docs/creating-managing-service-accounts#iam-service-accounts-delete-gcloud).
+
+## Remove the Azure app registration, federated identity credential, and service principal
+
+Removing an environment does not remove the Azure app registration, federated identity credential, or service principal. To fully remove Snyk's access to your Azure subscription, delete the infrastructure according to the method you used to create it:
+
+* **Terraform:** use the [terraform destroy](https://www.terraform.io/cli/commands/destroy) command.
+* **Azure CLI Bash script:** delete the Azure app registration (and as a result, its associated federated identity credential and service principal) using the [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/ad/app?view=azure-cli-latest#az-ad-app-delete) or [Azure Portal](https://learn.microsoft.com/en-us/azure/active-directory/develop/howto-remove-app#remove-an-application-authored-by-you-or-your-organization).

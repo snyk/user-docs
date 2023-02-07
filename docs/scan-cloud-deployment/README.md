@@ -20,4 +20,5 @@ Snyk IaC supports the following configurations:
 Snyk Cloud supports the following providers:
 
 * [Amazon Web Services](snyk-cloud/getting-started-with-snyk-cloud-aws/)
+* [Azure](snyk-cloud/getting-started-with-snyk-cloud-azure/)
 * [Google](snyk-cloud/getting-started-with-snyk-cloud-google/)

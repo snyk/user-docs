@@ -40,7 +40,7 @@ By default, when you expand a rule by selecting its **Expand row** (`>`) symbol,
 * Resource name
 * Environment kind (provider)
 * Environment name
-* Environment native ID (Amazon Web Services account ID, Google project ID, etc.)
+* Environment native ID (Amazon Web Services account ID, Google project ID, Azure subscription, etc.)
 * Resource tags
 * Age of issue
 
@@ -91,14 +91,14 @@ The cloud issue summary panel displays the **Overview** by default, which contai
   * Native ID (Amazon Resource Name); AWS only
   * Name
   * Type
-  * Location (AWS region, Google project, Terraform file, etc.)
+  * Location (AWS region, Google project, Azure subscription, Terraform file, etc.)
   * Input type (`cloud_scan`, `tf_hcl`, etc.)
-  * Platform (`aws`, `google`, etc.)
+  * Platform (`aws`, `google`, `azure`, etc.)
   * ID
 * Environment details:
   * Name
-  * Native ID (AWS account ID, Google project, `:cli`, etc.)
-  * Kind (AWS, Google, CLI, etc.)
+  * Native ID (AWS account ID, Google project, Azure subscription, `:cli`, etc.)
+  * Kind (AWS, Google, Azure, CLI, etc.)
   * ID
 * Rule details:
   * Title

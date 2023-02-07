@@ -15,6 +15,7 @@ Use the [`/cloud/environments`](https://apidocs.snyk.io/?version=2022-12-21%7Ebe
 Currently supported providers:
 
 * [Amazon Web Services](https://aws.amazon.com/)
+* [Microsoft Azure](https://azure.microsoft.com/en-us/)
 * [Google Cloud](https://cloud.google.com/)
 
 ## Resources
@@ -27,8 +28,9 @@ You can use the [`/cloud/resources`](https://apidocs.snyk.io/?version=2022-12-21
 
 For a list of supported resource types, see the following:
 
-* [Supported AWS resources](supported-aws-resources-for-snyk-cloud.md)
-* [Supported Google resources](supported-google-resources-for-snyk-cloud.md)
+* [Supported AWS resources](supported-resources-for-snyk-cloud/supported-aws-resources-for-snyk-cloud.md)
+* [Supported Azure resources](supported-resources-for-snyk-cloud/supported-azure-resources-for-snyk-cloud.md)
+* [Supported Google resources](supported-resources-for-snyk-cloud/supported-google-resources-for-snyk-cloud.md)
 
 ## Rules
 
@@ -46,13 +48,13 @@ You can view your Organization's issues in the Snyk Web UI. See [View cloud issu
 
 ## Compliance standard <a href="#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e" id="docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e"></a>
 
-A compliance standard is a framework that establishes guidelines and controls for organizations to secure their IT systems and infrastructure. Compliance standards are “versioned,” with versions being released at various cadences. Examples: NIST 800-53 (vRev5), CIS AWS Foundations Benchmark (v1.4.0). Snyk provides a [Cloud Compliance Issues report](../../manage-issues/snyk-reports/reporting-beta-2022/available-snyk-reports.md#cloud-compliance-issues-report).
+A **compliance standard** is a framework that establishes guidelines and controls for organizations to secure their IT systems and infrastructure. Compliance standards are “versioned,” with versions being released at various cadences. Examples: NIST 800-53 (vRev5), CIS AWS Foundations Benchmark (v1.4.0). Snyk provides a [Cloud Compliance Issues report](../../manage-issues/snyk-reports/reporting-beta-2022/available-snyk-reports.md#cloud-compliance-issues-report).
 
 See [supported compliance standards](cloud-compliance.md#supported-compliance-standards).
 
 ## Compliance control <a href="#docs-internal-guid-11e1473c-7fff-ea66-c8f4-16a826a82e6b" id="docs-internal-guid-11e1473c-7fff-ea66-c8f4-16a826a82e6b"></a>
 
-A compliance control is a specific recommendation or guideline from a compliance standard that prescribes how an organization should secure systems or infrastructure. Example: control 2.1.5 of CIS AWS Foundations Benchmark (v1.4.0) is “Ensure that S3 Buckets are configured with ‘Block public access (bucket settings)’”. To be compliant with this control, an organization would enable the “block public access” settings for all of their S3 buckets.
+A c**ompliance control** is a specific recommendation or guideline from a compliance standard that prescribes how an organization should secure systems or infrastructure. Example: control 2.1.5 of CIS AWS Foundations Benchmark (v1.4.0) is “Ensure that S3 Buckets are configured with ‘Block public access (bucket settings)’”. To be compliant with this control, an organization would enable the “block public access” settings for all of their S3 buckets.
 
 ## Compliance mapping
 
