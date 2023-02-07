@@ -246,7 +246,9 @@ Use for projects that contain a Gradle initialization script.
 
 ### `--assets-project-name`
 
-When monitoring a .NET project using NuGet `PackageReference` use the project name in `project.assets.json`, if found.
+
+
+When you are monitoring a .NET project using NuGet `PackageReference` uses the project name in `project.assets.json` if found.
 
 ### `--packages-folder`
 

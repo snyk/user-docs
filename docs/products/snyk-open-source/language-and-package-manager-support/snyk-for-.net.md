@@ -55,7 +55,7 @@ Project files can be combined with [lock files](https://docs.microsoft.com/en-us
 
 #### Dependencies managed by packages.config
 
-While there are two approaches for dependencies managed by **packages.config**, the following is the recommended approach as this will yield the most accurate results:
+While there are two approaches for dependencies managed by **packages.config**., the following is the recommended approach because it will yield the most accurate results:
 
 First, install the dependencies into the **packages** folder by running `nuget install -OutputDirectory packages` and make sure the **packages** dir has been created by the previous command. Then run `snyk test`.
 
@@ -65,29 +65,9 @@ Examples of supported project files that resolve into **packages** include: **pa
 While you should also be able to run `snyk test` without previously installing dependencies this will result in less accurate vulnerability results.
 {% endhint %}
 
-#### **CLI options**
+#### **CLI options for use with Nuget**
 
-This section describes the unique CLI options available when working with NuGet managed projects.
-
-`--file=.sln`
-
-Test all .NET projects included in the given `.sln` file. For example `snyk test --file=myApp.sln`
-
-`--file=packages.config`
-
-Test an individual .NET project.
-
-`--packages-folder`
-
-This is the folder in which your dependencies are installed, provided you are using `packages.config`. If you’ve assigned a unique name to this folder, then Snyk can only find it if you enter a custom path.
-
-Use the absolute or relative path, including the name of the folder where your dependencies reside.
-
-For example: `snyk test --packages-folder=../location/to/packages` for Unix OS `snyk test --packages-folder=..\location\to\packages` for Windows.
-
-`--assets-project-name`
-
-When monitoring a .NET project using NuGet, the `PackageReference` key uses the project name that is indicated in the project.assets.json.
+For information about the `snyk test` options available for use with Nuget, see [Options for Nuget projects in the Test help](https://docs.snyk.io/snyk-cli/commands/test#options-for-nuget-projects). For the available `snyk monitor` options, see [Options for Nuget projects in the Monitor help](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-nuget-projects).
 
 ### Paket: Dependencies managed by Paket
 

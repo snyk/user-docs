@@ -253,11 +253,31 @@ Use for projects that contain a Gradle initialization script.
 
 ### `--assets-project-name`
 
-When monitoring a .NET project using NuGet `PackageReference` use the project name in `project.assets.json` if found.
+When you are monitoring a .NET project using NuGet `PackageReference` uses the project name in `project.assets.json` if found.
+
+### `--file=.sln`
+
+Test all .NET projects included in the given `.sln` file.&#x20;
+
+Example: `snyk test --file=myApp.sln`
+
+### `--file=packages.config`
+
+Test an individual .NET project.
 
 ### `--packages-folder`
 
 Specify a custom path to the packages folder.
+
+This is the folder in which your dependencies are installed, provided you are using `packages.config`. If you have assigned a unique name to this folder, then Snyk can find it only if you enter a custom path.
+
+Use the absolute or relative path, including the name of the folder where your dependencies reside.
+
+Examples:&#x20;
+
+`snyk test --packages-folder=../location/to/packages` for Unix OS
+
+`snyk test --packages-folder=..\location\to\packages` for Windows.
 
 ### `--project-name-prefix=<PREFIX_STRING>`
 
