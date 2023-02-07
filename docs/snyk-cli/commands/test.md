@@ -201,7 +201,7 @@ To fail on any vulnerability (the default behavior), do not use the `--fail-on` 
 
 ## Options for Maven projects
 
-For more information about Maven CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven)
+For more information see [CLI help for Maven Projects: Aggregate projects](https://docs.snyk.io/scan-application-code/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven#cli-help-for-maven-projects-aggregate-projects)
 
 ### `--maven-aggregate-project`
 
@@ -221,9 +221,9 @@ Auto-detect maven jars, aars, and wars in given directory. To test individually 
 
 ## Options for Gradle projects
 
-For more information about Gradle CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven)
-
 **Note:** If you see the invalid string length error, refer to [Invalid string length error when scanning projects](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/invalid-string-length-error-when-scanning-projects)
+
+For more information see [CLI help for Gradle projects](https://docs.snyk.io/scan-application-code/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven#cli-help-for-gradle-projects)
 
 ### `--sub-project=<NAME>`, `--gradle-sub-project=<NAME>`
 
@@ -233,15 +233,25 @@ For Gradle "multi project" configurations, test a specific sub-project.
 
 For "multi project" configurations, test all sub-projects.
 
+### `--all-projects`
+
+See also the `--all-projects` option information in the Options section of this help.
+
+Use for monorepos. This detects all supported manifests.
+
+For Gradle monorepos Snyk looks only for root level **build.gradle / build.gradle.kts** files and applies the same logic as `--all-sub-projects` behind the scenes.
+
+This option is designed to be run in the root of your monorepo.
+
 ### `--configuration-matching=<CONFIGURATION_REGEX>`
 
-Resolve dependencies using only configuration(s) that match the specified Java regular expression
+Resolve dependencies using only configuration(s) that match the specified Java regular expression.
 
 Example: `^releaseRuntimeClasspath$`
 
 ### `--configuration-attributes=<ATTRIBUTE>[,<ATTRIBUTE>]...`
 
-Select certain values of configuration attributes to install dependencies and perform dependency resolution.
+Select certain values of configuration attributes to install and resolve dependencies.
 
 Example: `buildtype:release,usage:java-runtime`
 
@@ -371,7 +381,7 @@ For more information on uses of CLI options for C/C++ projects see [Snyk for C /
 
 ### `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
-Use a double dash (`--`) after the complete Snyk command to pass options (arguments, flags) that follow directly to the build tool, for example Gradle or Maven.
+Use a double dash (`--`) after the complete Snyk command to pass additional options (arguments, flags) that follow directly to the build tool, for example Gradle or Maven.
 
 The format is `snyk <command> -- [<context-specific_options>]`
 
@@ -379,7 +389,11 @@ Example: `snyk test -- --build-cache`
 
 **Note:** Do not use double quotes in any `-- [<context-specific_options>]`.
 
-Example: Use `snyk test --org=myorg -- -s settings.xml` NOT `snyk test --org=myorg -- "-s settings.xml"`
+Example: Use `snyk test --org=myorg -- -s settings.xml`
+
+NOT `snyk test --org=myorg -- "-s settings.xml"`
+
+See also [Examples of how you can use Maven arguments with the Snyk CLI](https://docs.snyk.io/scan-application-code/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven#examples-of-how-you-can-use-maven-arguments-with-the-snyk-cli)
 
 ## Examples for the snyk test command
 

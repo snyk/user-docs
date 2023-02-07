@@ -52,7 +52,7 @@ However, for the most accurate results, Snyk recommends using the [Snyk CLI](../
 
 ## Snyk CLI for Java and Kotlin projects (CI/CD)
 
-The way Snyk analyzes and builds the dependencies varies depending on the language and package manager of the project.
+The way Snyk analyzes and builds the dependencies varies depending on the language and package manager of the Project.
 
 The Snyk CLI tests Maven and Gradle Projects as follows:
 
@@ -69,41 +69,16 @@ This section describes the unique CLI commands available when working with Java-
 * Include the relevant manifest files supported by Snyk before testing.
 * Install and authenticate the Snyk CLI to start analyzing Projects from your local environment. See [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli.md).
 
-### Snyk CLI options
+### Snyk CLI options for Maven and Gradle
 
-When working with Gradle projects from our CLI, you can add any of the following options to further refine the way the scan works:
+For information about the `snyk test` and `snyk monitor` options available for use with Maven and Gradle, see the following pages:
 
-`--sub-project=`
-
-For Gradle "multi-project" configurations, test a specific sub-project.
-
-`--all-sub-projects`
-
-For "multi-project" configurations, test all sub-projects.
-
-`--configuration-matching=`
-
-Resolve dependencies using only configuration(s) that match the provided Java regular expression. For example: `'^releaseRuntimeClasspath$'`
-
-`--configuration-attributes=`
-
-Select certain values of configuration attributes to resolve the dependencies. For example: `'buildtype:release,usage:java-runtime'`
-
-`--all-projects`
-
-Use for monorepos. This will detect all supported manifests. For Gradle monorepos Snyk will only look for root level **build.gradle / build.gradle.kts** files and apply the same logic as `--all-sub-projects` behind the scenes. This command is designed to be run in the root of your monorepo.
-
-`--maven-aggregate-project`
-
-Use this argument instead of `--all-projects` when scanning Maven aggregate projects.
-
-### Pass extra arguments directly to Gradle or Maven via Snyk CLI
-
-You can pass any extra Gradle or Maven arguments directly to **gradle** or **mvn** by providing them after a Snyk command like this:
-
-```
-snyk test -- --build-cache
-```
+* [Options for Maven projects](https://docs.snyk.io/snyk-cli/commands/test#options-for-maven-projects) in the Test help
+* [Options for Gradle projects ](https://docs.snyk.io/snyk-cli/commands/test#options-for-gradle-projects)in the Test help
+* [Options for Maven projects](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-maven-projects) in the Monitor help
+* [Options for Gradle projects](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-gradle-projects) in the Monitor help
+* [Options for build tools](https://docs.snyk.io/snyk-cli/commands/test#options-for-build-tools) in the Test help
+* [Options for build tools](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-build-tools) in the Monitor help
 
 ### **Examples of how you can use Maven arguments with the Snyk CLI**
 
@@ -115,7 +90,7 @@ snyk test -- -prod
 
 Add a system property from your pom.xml file.
 
-For example:
+Example:
 
 The package version appears in your pom.xml
 
@@ -148,7 +123,7 @@ When scanning these types of projects Snyk performs a compile to ensure all modu
 
 The same options can be used with `snyk monitor`.
 
-Make sure to execute this in the same directory as the root pom.xml file.
+Make sure to execute the options in the same directory as the root pom.xml file.
 
 {% hint style="info" %}
 Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.
