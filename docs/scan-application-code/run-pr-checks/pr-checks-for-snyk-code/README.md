@@ -15,7 +15,7 @@ Snyk Open Source also provides PR checks - [see PR Checks for Snyk Open Source](
 The PR Checks feature is applicable to all supported SCMs.
 {% endhint %}
 
-The \*\*\*\* PR Checks feature enables you to apply Snyk Code test to every Pull Request you are creating in your integrated SCM, before merging it into the target branch. By using the PR Checks feature, you can detect security issues at an early stage in your development process, seeing the test results shortly after you write new code, and identifying and fixing issues as they emerge in your native workflow.
+The **PR Checks** feature enables you to apply Snyk Code test to every Pull Request you are creating in your integrated SCM, before merging it into the target branch. By using the PR Checks feature, you can detect security issues at an early stage in your development process, seeing the test results shortly after you write new code, and identifying and fixing issues as they emerge in your native workflow.
 
 When the PR Checks feature is enabled, Snyk Code automatically scans your source code PRs once they are created, in search of security vulnerabilities. Every additional commit that will be made to the open PRs, will be scanned automatically as well. When the scan is completed, Snyk Code displays its findings in the SCM – either passed or failed. If security vulnerabilities are found, Snyk Code automatically fails the scanned PRs, thus preventing new security issues from entering into your code:
 
