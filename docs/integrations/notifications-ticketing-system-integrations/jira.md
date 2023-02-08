@@ -1,5 +1,7 @@
 # Jira
 
+A new integration, Snyk Security for Jira Software, is coming soon. If you are interested in early access, you can [request it](https://earlyaccessprogram.atlassian.net/servicedesk/customer/). This page covers the integration available in Snyk.
+
 {% hint style="info" %}
 **Feature availability**\
 \- This feature is available with all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.\
