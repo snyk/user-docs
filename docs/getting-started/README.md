@@ -1,16 +1,20 @@
 # Getting started
 
-Learn how to start scanning code, dependencies, containers, and deployed applications with Snyk.
+Start securing code, dependencies, containers, and deployed applications with Snyk.
 
-{% hint style="info" %}
-**See** [**Quickstart**](quickstart/)**.**
+{% hint style="success" %}
+**See** [**Quickstart**](quickstart/) **to get started in minutes!**
 {% endhint %}
 
-The following additional resources are available:
+## In this section
 
-* See [Running tests](running-tests.md) for a general overview of how to use Snyk functions to run tests.
-* See [Walkthrough: Code Repository Projects](walkthrough-code-repository-projects/) to read a full walkthrough of scanning and fixing vulnerabilities from content stored in a Git repository.
-* See [Implementing Snyk in your teams](implementing-snyk-enterprise-plan-users.md) for details of rolling Snyk out in your teams.
+| About Snyk                                                            | Using Snyk                        | Tutorials                                                                                  |
+| --------------------------------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------ |
+| [Introducing Snyk](introducing-snyk.md)                               | [Quickstart](quickstart/)         | [Implementing Snyk: Free and Team plan users](implementing-snyk-free-and-team-plan-users/) |
+| [Snyk Web UI](../snyk-web-ui/getting-started-with-the-snyk-web-ui.md) | [Running tests](running-tests.md) | [Implementing Snyk: Enterprise plan users](implementing-snyk-enterprise-plan-users.md)     |
+|                                                                       |                                   | [Walkthrough: Code Repository Projects](walkthrough-code-repository-projects/)             |
+
+### Other information
 
 {% hint style="info" %}
 Visit [Snyk Training ](https://training.snyk.io/)for related introductory training:
