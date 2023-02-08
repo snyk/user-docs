@@ -8,7 +8,7 @@ Snyk Broker is an open source tool that can act as a proxy between Snyk and spec
 * Network-restricted [container registries](snyk-broker-container-registry-agent/)
 * [Infrastructure as code (IaC) configuration](snyk-broker-infrastructure-as-code-detection/) files using Snyk IaC located on private Git-based repositories
 
-Snyk Broker is an open-source project, hosted at [GitHub](https://github.com/snyk/broker) and published as a set of Docker images for specific integrations. See the [Github broker documentation](https://github.com/snyk/broker/blob/master/README.md).
+Snyk Broker is an open-source project, hosted at [GitHub](https://github.com/snyk/broker) and published as a set of Docker images for specific integrations. For additional information see the [Broker documentation on GitHub](https://github.com/snyk/broker/blob/master/README.md).
 
 {% hint style="info" %}
 **Feature availability**\
