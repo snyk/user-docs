@@ -89,35 +89,7 @@ The way Snyk analyzes and builds the tree varies depending on the language and p
 
 ### Snyk CLI options for Python
 
-When scanning your Python project for vulnerabilities, use these options to modify commands:
-
-`--command=`
-
-Snyk uses Python in order to scan and find your dependencies. Snyk needs the Python version to start scanning, and defaults to "python"
-
-If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.
-
-For example: `snyk test --command=python3`
-
-See [Using different Python versions](snyk-for-python.md) for more details.
-
-`--skip-unresolved=`
-
-Skip packages when they can’t be found in the environment (for example, private packages that can’t be accessed from the machine running the scan).
-
-`--file=`
-
-Specify a specific file to test. By default, Snyk scans the requirements.txt file at the top level of the project.
-
-If explicitly specified with this option, Snyk can recognize any manifest files based on `--file=`_`req`_`.txt`. Each (\*) is a wildcard and `req` can appear anywhere in the file name.
-
-For example, Snyk recognizes your manifest file when you have renamed it to requirements-dev.txt.
-
-**Note**: `--package-manager=pip` should be added to your cmd if the file name is not requirements.txt
-
-`--package-manager=pip`
-
-This option is mandatory if you specify a value for the --file parameter that is not to a requirements.txt file. The test fails without this parameter. Specify this parameter with the value pip.
+For information about the `snyk test` options available for use with Python, see [Options for Python projects](https://docs.snyk.io/snyk-cli/commands/test#options-for-python-projects) in the `test` help. For the available `snyk monitor` options, see [Options for Python projects](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-python-projects) in the `monitor` help.
 
 ## Git services for Python projects
 
@@ -127,9 +99,9 @@ To test your Python Projects that use pip as a package manager, Snyk analyzes yo
 
 If you have renamed your `requirements.txt` files, for example, if you have renamed a file to `requirements-dev.txt`, Snyk tries to import every file that follows the `**/*req*.txt` convention as a Python project.
 
-If you have placed your files in a requirements folder, for example, if you have placed your file under `requirements/requirements.txt,` Snyk tries to import every file that follows the `**/requirements/*.txt`convention as a Python project.
+If you have placed your files in a requirements folder, for example, if you have placed your file under `requirements/requirements.txt,` Snyk tries to import every file that follows the `**/requirements/*.txt` convention as a Python project.
 
-If you are using a package manager that creates different manifest file formats from`requirements.txt`, then either convert or import, depending on the package manager/supported files, the manifest file to the `requirements.txt` format.
+If you are using a package manager that creates different manifest file formats from `requirements.txt`, then either convert or import, depending on the package manager/supported files, the manifest file to the `requirements.txt` format.
 
 Example:
 
