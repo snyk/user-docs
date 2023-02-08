@@ -46,11 +46,9 @@ There are a some limitations to using the Snyk CLI with Swift Package Manager pr
 
 ### **CLI help for CocoaPods Projects**
 
-When working with Swift and Objective-C projects from the Snyk CLI, you can prevent testing any lock files that are out-of-sync using the following option:
+When working with Swift and Objective-C projects from the Snyk CLI, you can prevent testing any lock files that are out-of-sync using the following option: `--strict-out-of-sync=true|false`
 
-`--strict-out-of-sync=`\
-``Prevent testing out-of-sync lockfiles.\
-Defaults to **true**.
+For details see [Option for CocoaPods projects](https://docs.snyk.io/snyk-cli/commands/test#option-for-cocoapods-projects) in the `snyk test` help.
 
 ## Git services for Swift and Objective-C projects
 
