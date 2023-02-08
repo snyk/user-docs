@@ -112,11 +112,15 @@ Specify a package file.
 
 When testing locally or monitoring a project, you can specify the file that Snyk should inspect for package information. When the file is not specified, Snyk tries to detect the appropriate file for your project.
 
+See also the section on [Options for Python projects](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-python-projects)
+
 ### `--package-manager=<PACKAGE_MANAGER_NAME>`
 
 Specify the name of the package manager when the filename specified with the `--file=<FILE>` option is not standard. This allows Snyk to find the file.
 
 Example: `$ snyk monitor --file=req.txt --package-manager=pip`
+
+For more information see [Options for Python projects](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-python-projects)
 
 ### `--unmanaged`
 
@@ -246,8 +250,6 @@ Use for projects that contain a Gradle initialization script.
 
 ### `--assets-project-name`
 
-
-
 When you are monitoring a .NET project using NuGet `PackageReference` uses the project name in `project.assets.json` if found.
 
 ### `--packages-folder`
@@ -300,7 +302,25 @@ Default: `python` Example: `--command=python3`
 
 ### `--skip-unresolved=true|false`
 
-Allow skipping packages that are not found in the environment.
+Skip packages that cannot be found in the environment, for example, private packages that cannot be accessed from the machine running the scan.
+
+### `--file=` for Python
+
+For a Python project, specify a particular file to monitor.
+
+By default, Snyk scans the requirements.txt file at the top level of the project.
+
+Snyk can recognize any manifest files specified with this option based on `--file=req.txt`. Each (\*) is a wildcard and `req` can appear anywhere in the file name.
+
+For example, Snyk recognizes your manifest file when you have renamed it to r`equirements-dev.txt`.
+
+### `--package-manager=` for Python
+
+Add`--package-manager=pip` to your command if the file name is not `requirements.txt`.
+
+This option is mandatory if you specify a value for the `--file` parameter that is not to a `requirements.txt` file. The test fails without this parameter. Specify this parameter with the value `pip`.
+
+For complete information about the command see [`--package-manager=<PACKAGE_MANAGER_NAME>`](https://docs.snyk.io/snyk-cli/commands/monitor#package-manager-less-than-package\_manager\_name-greater-than)``
 
 ## Options for scanning using `--unmanaged`
 
