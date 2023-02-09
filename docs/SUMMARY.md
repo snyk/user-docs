@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Snyk User Documentation](README.md)
+* [User Docs](README.md)
 * [Getting started](getting-started/README.md)
   * [Introducing Snyk](getting-started/introducing-snyk.md)
   * [Quickstart](getting-started/quickstart/README.md)
@@ -156,7 +156,7 @@
     * [Connect Snyk to Heroku](integrations/platform-as-a-service-integrations/connect-snyk-to-heroku.md)
     * [Pivotal integration overview](integrations/platform-as-a-service-integrations/pivotal-integration-overview.md)
   * [Event Forwarding](integrations/event-forwarding/README.md)
-    * [AWS CloudTrail Lake integration ](integrations/event-forwarding/aws-cloudtrail-lake.md)
+    * [AWS CloudTrail Lake integration](integrations/event-forwarding/aws-cloudtrail-lake.md)
   * [Snyk Apps](integrations/snyk-apps/README.md)
     * [Getting started with Snyk Apps](integrations/snyk-apps/getting-started-with-snyk-apps/README.md)
       * [Create an App](integrations/snyk-apps/getting-started-with-snyk-apps/create-an-app-via-the-api.md)
