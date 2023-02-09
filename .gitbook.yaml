@@ -29,3 +29,4 @@ redirects:
   integrations/github-application: integrations/git-repository-scm-integrations/github-application.md
   integrations/bitbucket-cloud-app: integrations/git-repository-scm-integrations/bitbucket-cloud-app-integration.md
   integrations/migrate-bitbucket-cloud-legacy-integration: integrations/git-repository-scm-integrations/migrate-a-bitbucket-cloud-legacy-integration.md
+  integrations/event-forwarding/aws-cloudtrail-lake-integration-overview: integrations/event-forwarding/aws-cloudtrail-lake.md
