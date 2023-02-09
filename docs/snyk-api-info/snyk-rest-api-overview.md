@@ -14,7 +14,7 @@ For more information about Snyk APIs and using an API versus Snyk CLI or an inte
 
 ## API URL (HTTPS only)
 
-The base URL for all Snyk REST API endpoints is [https://api.snyk.io/rest/](https://api.snyk.io/rest/) or depending on your Snyk datacenter deployment, [https://api.eu.snyk.io/rest/](https://api.eu.snyk.io/rest/) or [https://api.au.snyk.io/rest/](https://api.au.snyk.io/rest/).&#x20;
+The base URL for all Snyk REST API endpoints is [https://api.snyk.io/rest/](https://api.snyk.io/rest/) or depending on your Snyk datacenter deployment, [https://api.eu.snyk.io/rest/](https://api.eu.snyk.io/rest/) or [https://api.au.snyk.io/rest/](https://api.au.snyk.io/rest/).
 
 This API is only available over HTTPS. Accessing over HTTP will yield a 404 for all requests.
 
@@ -153,6 +153,6 @@ Errors conform to the JSON:API specification and include path-based information 
 
 ## Rate Limiting
 
-There is a limit of 540 requests per minute, per API key. All requests above the limit will get a response with status code `429` - `Too many requests` until requests stop for the duration of the rate-limiting interval (currently one minute).
+There is a limit of 1620 requests per minute, per API key. All requests above the limit will get a response with status code `429` - `Too many requests` until requests stop for the duration of the rate-limiting interval (currently one minute).
 
 From time to time, Snyk may introduce new rate limits to maintain overall system health. This is not considered a breaking change. All clients are expected to handle the `429` responses correctly and such requests can be retried later safely.
