@@ -1,5 +1,7 @@
 # View Project history
 
+## Project History
+
 Select the **History** tab on the Project details page to view the Project history, showing results of previous scans:
 
 <figure><img src="../../.gitbook/assets/image5-2-.png" alt="Project details page History tab"><figcaption><p>Project details page History tab</p></figcaption></figure>
