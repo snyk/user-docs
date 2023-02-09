@@ -1,31 +1,22 @@
----
-description: Introduction to what you can do in the Snyk Web UI
----
-
 # Exploring the Snyk Web UI
 
-No matter how you use Snyk, you can use the Snyk Web UI to connect your source code management (SCM) repositories, container registries, and applications. If you haven't already, go to the [Snyk Web UI](https://app.snyk.io/login) and [create an account](../getting-started/quickstart/create-a-snyk-account/).
-
-After you connect, you can import your repositories and projects for Snyk to scan, monitor, and fix vulnerabilities in your source code.
-
-## Set up the Snyk Web UI
-
-When you log in to an existing account, the Web UI opens to the [Dashboard](getting-started-with-the-snyk-web-ui.md#dashboard). Initially a wizard can guide you through setup steps:
-
-1. Identifying where the code you want to monitor in Snyk is located.
-2. Defining which projects within your code you want Snyk to scan.
-3. Connecting Snyk to the relevant projects to scan them.
-4. Reviewing the results of your Snyk scan.
-
-{% hint style="info" %}
-If you are signing in to a paid account, you must also select the relevant [Organization](../snyk-admin/managing-groups-and-organizations/whats-a-snyk-organization.md) after you log in to Snyk.
+{% hint style="success" %}
+If you have not done so already, you should [create an account](../getting-started/quickstart/create-a-snyk-account/).
 {% endhint %}
 
-In the following example, the Snyk dashboard for an Enterprise account shows pending tasks, vulnerable projects, and current security and license issues.
+## Introduction
 
-<figure><img src="../.gitbook/assets/web_ui-landing_02oct2022.png" alt="Snyk dashboard for an Enterprise account"><figcaption><p>Snyk dashboard for an Enterprise account</p></figcaption></figure>
+You can use the Snyk Web UI to run a full set of Snyk functions from your browser.
 
-## What can I do on the Web UI pages?
+<figure><img src="../.gitbook/assets/Dashboard-intro.png" alt="Introducing the Snyk Web UI"><figcaption><p>Introducing the Snyk Web UI</p></figcaption></figure>
+
+{% hint style="info" %}
+You can also access Snyk functions from the [Snyk CLI](../snyk-cli/), from [within your IDE](../ide-tools/), and using the [Snyk API](../snyk-api-info/).&#x20;
+{% endhint %}
+
+You can connect your code repositories, then use Snyk to scan and secure your application code, open-source libraries, container registries, and configuration files.
+
+### Web UI functions
 
 * [Explore the dashboard](getting-started-with-the-snyk-web-ui.md#dashboard)
 * [Investigate reports](getting-started-with-the-snyk-web-ui.md#reports)
@@ -36,9 +27,15 @@ In the following example, the Snyk dashboard for an Enterprise account shows pen
 * [Get help](getting-started-with-the-snyk-web-ui.md#view-helpful-resources)
 * [Manage my user account](getting-started-with-the-snyk-web-ui.md#manage-account-preferences-and-settings)
 
-## Dashboard
+### Explore the Dashboard
 
-On the Dashboard, you can view your pending tasks and vulnerable projects, invite team members, and add new Projects. You can also use the Add Project link to add a new Project.
+When you log in to an existing account, the Web UI opens to the Dashboard, allowing you to view your pending tasks and vulnerable projects, invite team members, and add new Projects.
+
+<figure><img src="../.gitbook/assets/web_ui-landing_02oct2022.png" alt="Snyk dashboard for an Enterprise account"><figcaption><p>Snyk dashboard for an Enterprise account</p></figcaption></figure>
+
+In the above example, the Snyk dashboard for an Enterprise account shows pending tasks, vulnerable projects, and current security and license issues.
+
+#### Pending tasks
 
 The **Pending tasks** section shows the next chores to be handled for the Projects in a Snyk Organization. This information includes:
 
@@ -49,7 +46,9 @@ Currently, Snyk tracks and flags PRs in GitHub, GitHub Enterprise, and Bitbucket
 
 <figure><img src="../.gitbook/assets/image (109).png" alt="Pending tasks and Vulnerable Projects listed on the Dashboard"><figcaption><p>Pending tasks and Vulnerable Projects listed on the Dashboard</p></figcaption></figure>
 
-You can use the **Add project** link on the dashboard to add a Project. Select the way you want to add the Project from the dropdown.
+#### Add project
+
+Use the **Add project** link on the dashboard to add [Snyk Projects](../manage-issues/introduction-to-snyk-projects/). Select how to add the Project from the dropdown.
 
 Use the links for Projects on the dashboard to explore and manage the metadata, retest, and fix options for the Targetfiles in your Projects. Each link opens a Project details page where you can view the Project **Overview**, or switch to the **History** and **Settings** tabs.
 
@@ -58,18 +57,18 @@ Use the links for Projects on the dashboard to explore and manage the metadata, 
 
 <figure><img src="../.gitbook/assets/dockerfile_fix_vulnerabilities (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).gif" alt="Demo, add project and Project details tabs"><figcaption><p>Demo, add project and Project details tabs</p></figcaption></figure>
 
-## **Reports**
+### **View reports**
 
 You can view [reports](../features/snyk-reports/) to gain visibility and insights into the state of all your Projects, vulnerabilities, and license issues.
 
 {% hint style="info" %}
 **Feature availability**\
-The **Reports** tab is fully enabled for Enterprise plans.
+This feature is available for Enterprise plans.
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/reports.gif" alt="Demo of viewing reports, filters, and summary filters"><figcaption><p>Demo of viewing reports, filters, and summary filters</p></figcaption></figure>
 
-## **Manage your** **Projects**
+### **Manage your** **Projects**
 
 Select the **Projects** link in the navigation on the dashboard to open the **Projects** listing page where you can:
 
@@ -83,7 +82,7 @@ Select the **Projects** link in the navigation on the dashboard to open the **Pr
 
 <figure><img src="../.gitbook/assets/Project listing add projects.gif" alt="Options on the Projets listing page"><figcaption><p>Options on the Projets listing page</p></figcaption></figure>
 
-## **Manage your** **Integrations**
+### **Manage your** **Integrations**
 
 Select **Integrations** from the navigation on the dashboard to open the [Integrations](../integrations/) page where you can do the following:
 
@@ -93,7 +92,7 @@ Select **Integrations** from the navigation on the dashboard to open the [Integr
 
 <figure><img src="../.gitbook/assets/image (157) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Integrations page"><figcaption><p>Integrations page</p></figcaption></figure>
 
-## Manage Organization or Group members
+### Manage Organization or Group members
 
 Select **Members** from the navigation on the dashboard to view and manage users, roles, and how users authenticate in your Snyk [Organization](../snyk-admin/managing-users-and-permissions/manage-users-in-your-organizations.md) or [Group](../user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations-1.md).
 
@@ -101,23 +100,23 @@ Select **Members** from the navigation on the dashboard to view and manage users
 You must be assigned the [required Admin roles and permissions](../snyk-admin/managing-users-and-permissions/managing-permissions.md) to make changes in the **Members** tab.
 {% endhint %}
 
-## Snyk Organization or Group Settings
+### Snyk Organization or Group Settings
 
-Use the <img src="../.gitbook/assets/cog_icon.png" alt="" data-size="line"> menus to view and manage your Organization (team) or Group (company-wide) settings.
+Use the **Settings** option to view and manage your Organization (team) or Group (company-wide) settings.
 
-<figure><img src="../.gitbook/assets/image (145) (1) (1) (1) (1) (1) (1) (1).png" alt="Group and Organization settings"><figcaption><p>Group and Organization settings</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Manage-settings-intro.png" alt="Group and Organization settings"><figcaption><p>Group and Organization settings</p></figcaption></figure>
 
 See [Managing settings](../snyk-admin/managing-settings/) for more details.
 
-## View product updates
+### View product updates
 
 Select **Help** in the navigation on the dashboard and then select **Product updates** to visit [snyk.io updates](https://updates.snyk.io/).
 
-## View helpful resources
+### View helpful resources
 
 Select **Help** in the navigation on the dashboard and then select an option to view resources with information about Snyk.
 
-## Manage account preferences and settings
+### Manage account preferences and settings
 
 Select your **name** in the navigation on the dashboard and then **Account settings** to open your [account settings](https://app.snyk.io/account) page where you can view and configure your user account settings and your notification and sharing preferences.
 
