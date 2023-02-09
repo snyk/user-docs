@@ -5,15 +5,30 @@
 Project tags are available for Enterprise plans. See [pricing plans](https://snyk.io/plans/) for details.
 {% endhint %}
 
-A tag is a key and value combination that lets you add additional custom metadata to Projects.
+## Introducing tags
 
-You can create tags, add them to Projects, and remove tags on the Project details page in the Snyk Web UI. You can also filter Projects using tags on the Projects listing page,
+A project tag allows you to add additional custom metadata to Snyk Projects.
 
-The Group and Organization admins can perform all actions, while Collaborators can perform the actions if they are in an Org which is part of the Group.
+#### Using tags in the Web UI
 
-You can use the [Snyk API v1 Project tags endpoints](https://snyk.docs.apiary.io/#reference/projects/project-tags/add-a-tag-to-a-project) to add and remove tags.
+In the Snyk Web UI, you can:
 
-You can also add and remove tags using the Snyk CLI option  `--project-tags`. See the [CLI commands and options summary](../../snyk-cli/cli-reference.md). for the commands that support this option.
+* [Create tags](project-tags.md#create-tags)
+* [Apply and remove tags from Projects](project-tags.md#apply-and-remove-tags)
+* [Filter Projects using tags](project-tags.md#filter-projects-listing-by-tags)
+
+{% hint style="info" %}
+Group and Organization admins can perform all these actions. Collaborators can perform the actions if they are in an Organization which is part of the Group.
+{% endhint %}
+
+#### Other ways of using tags
+
+You can also add and remove tags using:
+
+* &#x20;[Snyk API Project tags endpoints](https://snyk.docs.apiary.io/#reference/projects/project-tags/add-a-tag-to-a-project)&#x20;
+* The Snyk CLI option  `--project-tags`. See the [CLI commands and options summary](../../snyk-cli/cli-reference.md). for the commands that support this option.
+
+#### Tag conditions
 
 The following conditions apply to Project tags:
 
@@ -23,7 +38,7 @@ The following conditions apply to Project tags:
 * You can create 1000 unique key and value combinations per group, and apply 10 unique tags per Project.
 * Reusing a key and value combination does not add to the count.
 
-## **Create tags**
+### **Create tags**
 
 To create a new tag for a Snyk Project:
 
@@ -43,7 +58,7 @@ You can apply multiple Project tag values to the same Project tag key.
 
 <figure><img src="../../.gitbook/assets/screenshot_2020-09-29_at_18.04.30.png" alt="Multiple Project tag values applied to the same key"><figcaption><p>Multiple Project tag values applied to the same key</p></figcaption></figure>
 
-## **Apply and remove tags**
+### **Apply and remove tags**
 
 If a tag exists in your Group, you can apply it to any Snyk Project.
 
@@ -55,7 +70,7 @@ If a tag exists in your Group, you can apply it to any Snyk Project.
 
 <figure><img src="../../.gitbook/assets/screenshot_2020-09-29_at_18.14.44.png" alt="Select a key value for a tag"><figcaption><p>Select a key value for a tag</p></figcaption></figure>
 
-## Filter Projects listing by tags
+### Filter Projects listing by tags
 
 When  **Group by none** (ungrouped) is applied to the Projects listing page, you can filter the list by tags using the option in the menu.
 
