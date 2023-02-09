@@ -10,17 +10,9 @@ After filters have been applied to the Project listing page, you can bookmark th
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-01-24 at 09.09.25.png" alt="Snyk Projects listing grouped by Target"><figcaption><p>Snyk Projects listing grouped by Target</p></figcaption></figure>
 
-### Concepts
+Snyk Projects concepts include **Target**, **Origin**, **Project, Targetfile**, and **Type**.
 
-Snyk Projects concepts include:
-
-* [Target](./#target)
-* [Origin](./#origin)
-* [Project](./#project)
-* [Targetfile](./#targetfile)
-* [Type](./#type)
-
-### Target
+## Target
 
 Projects are held in a Target. A Target represents an external resource Snyk has scanned: a code repository, a Kubernetes workload, or other scannable resource external to Snyk.&#x20;
 
@@ -38,7 +30,7 @@ Use **Sort by** (pull down on the far right) to sort the **Projects** listing by
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt="Sorting attributes available when grouping by Target"><figcaption><p>Sorting attributes available when grouping by Target</p></figcaption></figure>
 
-### Origin
+## Origin
 
 The Origin defines the Target ecosystem, such as CLI, GitHub, or Kubernetes. Origins are a property of Targets (see preceding section) and appear in the **Projects** listing as an icon next to the Target name.
 
@@ -76,7 +68,7 @@ Possible Origin values are:
 * quay-cr
 * terraform-cloud
 
-### Project
+## Project
 
 A Snyk Project defines the items, such as manifest files, that Snyk scans for a given Target, with configuration information defining how to run that scan.
 
@@ -86,7 +78,7 @@ Use **Group by none** (ungrouped) for better Project visibility and to apply [fi
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 18.07.46 (1).png" alt="Filtering attributes applied at the Project level"><figcaption><p>Filtering attributes applied at the Project level</p></figcaption></figure>
 
-### Targetfile
+## Targetfile
 
 The Targetfile is the specific item to scan in a Target, such as a `pom.xml` file in a GitHub repo.
 
@@ -94,7 +86,7 @@ The Targetfile is the specific item to scan in a Target, such as a `pom.xml` fil
 [Snyk Code](../../products/snyk-code/) scans do not use Targetfiles.
 {% endhint %}
 
-### Type
+## Type
 
 The Type is the scanning method to use for a particular Project, such as Static Application Security Testing ([SAST](https://snyk.io/learn/application-security/sast-vs-dast/)) for scanning using Snyk Code, or Maven for a Maven project using Snyk Open Source. This is part of the configuration for scanning.
 

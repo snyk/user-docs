@@ -12,14 +12,14 @@ Click on the Project to view detailed information:
 
 The following information is available:
 
-* **Header**: shows project summary information. See the **Project summary information** section that follows.
+* **Header**: shows [project summary information](view-project-information.md#project-summary-information).
 * **Issue cards**: show summaries of issues found. See [Issue card information](issue-card-information.md).
 * **Views** (links at top right):
   * **Overview**: shows [Project issues, fixes, and dependencies](view-project-issues-remediations-and-dependencies.md).
   * **History**: shows historical snapshots of recent tests. See [View Project history](view-project-history.md).
   * **Settings**: shows [Project settings](view-project-settings.md).
 
-## Project summary information
+### Project summary information
 
 <figure><img src="../../.gitbook/assets/proj-summ.png" alt="Header showing Project summary information"><figcaption><p>Header showing Project summary information</p></figcaption></figure>
 
