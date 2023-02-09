@@ -1,14 +1,12 @@
 # View Project issues, fixes, and dependencies
 
-## Introduction
-
 The following Project information is available on the Snyk Web UI:
 
-* [Issues](view-project-issues-remediations-and-dependencies.md#view-issues): the number of vulnerabilities and license issues
-* [Fixes](view-project-issues-remediations-and-dependencies.md#view-fixes): fix advice
-* [Dependencies](view-project-issues-remediations-and-dependencies.md#view-dependencies): the total number of direct and transitive (nested) dependencies
+* **Issues:** the number of vulnerabilities and license issues
+* **Fixes**: fix advice
+* **Dependencies**: the total number of direct and transitive (nested) dependencies
 
-### View issues
+## View issues
 
 The Project details page displays Issue cards on the Issues tab. The information provided includes vulnerabilities and, for Open Source Project, license issues.
 
@@ -18,7 +16,7 @@ Use the filters in the panel to the left to narrow the search for issues. Select
 
 Issue details are shown on Issue cards in the main area, sorted by priority score. For details see [Issue card information](issue-card-information.md).
 
-#### Fix issues (Fix PR)
+## Fix issues (Fix PR)
 
 Snyk provides powerful features to fix issues identified during scanning. Use the Fix option on the Issues or Fixes tab.
 
@@ -31,19 +29,17 @@ You can also select **Fix this vulnerability** for a specific issue:
 See [Fix vulnerabilities with Snyk Open Source](../../products/snyk-open-source/open-source-basics/) for an overview.\
 See [Manage issues](../) for more details.
 
-### View issue details
+## View issue details
 
 For each issue, details about the vulnerability are displayed including its [priority score](../issue-management/priority-score.md).
 
-<figure><img src="../../.gitbook/assets/image12.png" alt="View issue details"><figcaption><p>View issue details</p></figcaption></figure>
-
-#### More information - Snyk Vulnerability Database
+![](../../.gitbook/assets/image12.png)
 
 Click **More about this issue** to view detailed information about the vulnerability from [Snyk's vulnerability database](https://snyk.io/product/vulnerability-database/), which provides a deeper insight into the issue, including its CVSS score:
 
 <figure><img src="../../.gitbook/assets/image15 (1).png" alt="More information from Snyk Vulnerability database"><figcaption><p>More information from Snyk Vulnerability database</p></figcaption></figure>
 
-### View fixes
+## View fixes
 
 Snyk's knowledge of the transitive dependencies in your Project make it possible for Snyk to offer fix advice, in the **Fixes** tab:
 
@@ -51,7 +47,7 @@ Snyk's knowledge of the transitive dependencies in your Project make it possible
 
 See [Fix your vulnerabilities](../starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) for details.
 
-### View dependencies
+## View dependencies
 
 Snyk uses the package manager for your application to build the dependency tree and display it in the **Dependencies** tab of the Project issues detail page. This tab shows which components introduce a vulnerability, which indicates how the dependency was introduced to the application.
 
