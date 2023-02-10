@@ -123,4 +123,4 @@ When you look at a user's Application assignment it should look similar to the i
 4.  Select **Attribute Statements** and set **roles** as the **Name** field with **Name format** **Unspecified** and the **Value** in the following expression:
 
     `Arrays.flatten(appuser.snyk_orgs)`
-5. Reach out to your Snyk point of contact so they can complete the configuration. This process may take four to five days.
+5. Reach out to your Snyk point of contact so they can complete the configuration.
