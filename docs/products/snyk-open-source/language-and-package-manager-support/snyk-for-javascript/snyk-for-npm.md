@@ -16,7 +16,7 @@ Features might not be available, depending on your plan. See [pricing plans](htt
 
 ## npm version and how it affects Snyk support
 
-Snyk uses the npm lockfile (`package-lock.json`) when it is present to generate representation of a Project's dependencies. zuntil npm v7, this lockfile was always the same format. zin npm v7 a new lockfile format, lockfile v2, was introduced.
+Snyk uses the npm lockfile (`package-lock.json`) when it is present to generate representation of a Project's dependencies. Until npm v7, this lockfile was always the same format. In npm v7 a new lockfile format, lockfile v2, was introduced.
 
 With changes to the files Snyk relies on to scan changing on version upgrades, Snyk lists only versions verified internally as supported. If you are using a newer version of npm than is listed on this page, you may find Snyk performs as expected and this newer version of npm has not been evaluated and added to this page.
 
