@@ -255,7 +255,7 @@
   * [Language Server](ide-tools/language-server.md)
 * [Scan application code](scan-application-code/README.md)
   * [Snyk Open Source](products/snyk-open-source/README.md)
-    * [Open Source - Supported languages and package managers](products/snyk-open-source/language-and-package-manager-support/README.md)
+    * [Supported languages and package managers](products/snyk-open-source/language-and-package-manager-support/README.md)
       * [Snyk for .NET](products/snyk-open-source/language-and-package-manager-support/snyk-for-.net.md)
       * [Snyk for Bazel](products/snyk-open-source/language-and-package-manager-support/snyk-for-bazel.md)
       * [Snyk for C/C++](products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++.md)
