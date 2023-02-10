@@ -24,7 +24,7 @@ For Snyk Code, you can use the following Filter criteria:
 
 * **SHOW**:
   * **With issues** and **Without issues** - Projects with or without issues that were discovered by Snyk.
-  * **Active and Inactive** - \*\*\*\* Projects that are either in an **Active** or **Inactive** status in Snyk. Inactive Projects are Projects that were deactivated on the Web UI.\
+  * **Active and Inactive** - Projects that are either in an **Active** or **Inactive** status in Snyk. Inactive Projects are Projects that were deactivated on the Web UI.\
     **Note**: For more information, see [Deactivating and deleting the Snyk Code Project](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/removing-imported-repositories-from-the-snyk-code-test).
 * **INTEGRATIONS**: the integrated SCMs that store repositories that were imported to Snyk.
 

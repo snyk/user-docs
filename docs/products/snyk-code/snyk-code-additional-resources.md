@@ -9,7 +9,7 @@ To learn more about Snyk Code, you can also use the following resources:
 
 ### Web page
 
-[https://snyk.io/product/snyk-code/](https://snyk.io/product/snyk-code/)\*\*\*\*
+[https://snyk.io/product/snyk-code/](https://snyk.io/product/snyk-code/)
 
 ### **Webinars**
 
