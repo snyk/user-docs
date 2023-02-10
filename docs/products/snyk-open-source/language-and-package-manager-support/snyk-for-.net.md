@@ -67,7 +67,7 @@ While you should also be able to run `snyk test` without previously installing d
 
 #### **CLI options for use with Nuget**
 
-For information about the `snyk test` options available for use with Nuget, see [Options for Nuget projects in the Test help](https://docs.snyk.io/snyk-cli/commands/test#options-for-nuget-projects). For the available `snyk monitor` options, see [Options for Nuget projects in the Monitor help](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-nuget-projects).
+For information about the `snyk test` options available for use with Nuget, see [Options for Nuget projects in the Test help](../../../snyk-cli/commands/test.md#options-for-nuget-projects). For the available `snyk monitor` options, see [Options for Nuget projects in the Monitor help](../../../snyk-cli/commands/monitor.md#options-for-nuget-projects).
 
 ### Paket: Dependencies managed by Paket
 
@@ -132,13 +132,17 @@ In the .NET ecosystem, there are multiple levels of dependencies, some of which 
 
 Snyk resolves dependencies differently in the Snyk CLI and the Source Code Management (SCM) systems such as GitHub:
 
-* In the CLI, if you manage your Project dependencies using `PackageReference`, Snyk scans your `obj/project.assets.json`. if you manage your dependencies using `packages.config`, Snyk scans the `packages` directory. This approach allows Snyk to be very accurate.\
-  **Note**: Runtime dependencies (provided by the runtime environment also known as "meta-packages") are resolved more accurately in the CLI if the host machine uses a similar runtime SDK to the server running the app.
+* In the CLI, if you manage your Project dependencies using `PackageReference`, Snyk scans your `obj/project.assets.json`. if you manage your dependencies using `packages.config`, Snyk scans the `packages` directory. This approach allows Snyk to be very accurate.
+
+{% hint style="info" %}
+Runtime dependencies (provided by the runtime environment also known as "meta-packages") are resolved more accurately in the CLI if the host machine uses a similar runtime SDK to the server running the app.
+{% endhint %}
+
 * In the SCM integration, scanning uses a different process, as the generated files mentioned above are not available. To overcome this Snyk follows the NuGet dependency [resolution algorithm](https://docs.microsoft.com/en-us/nuget/concepts/dependency-resolution) to construct a dependency tree.
 
-For further information on .NET automated fixes, see the Snyk [blog](https://snyk.io/blog/automated-vulnerability-fixes-dot-net-dependencies).
+For further information on .NET automated fixes, see the [Snyk blog](https://snyk.io/blog/automated-vulnerability-fixes-dot-net-dependencies).
 
-### Build-time vs runtime dependencies
+### Build-time and runtime dependencies
 
 * **Build-time dependency**: Snyk understands build-time dependency to be resolved during build time and not susceptible to change at runtime.
 * **Runtime dependency**: Snyk understands runtime dependency to be resolved against the installed runtime, for example, packages coming from the .NET framework (<=4) / .NET [runtime](https://docs.microsoft.com/en-us/dotnet/core/versions/selection?WT.mc\_id=DOP-MVP-5001511&) (for Core and .NET 5+) such as [`System.Net.Http`](https://www.nuget.org/packages/System.Net.Http) . Snyk sometimes refers to runtime dependencies as meta-packages.
@@ -169,7 +173,7 @@ If you believe you have found false positives because when the application runs 
 </PropertyGroup>
 ```
 
-## Unsupported by Snyk for .NET
+## Not supported in Snyk for .NET
 
 * [`Directory.Build.props`](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets) and [`Directory.Build.targets`](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets) are not currently supported.
 * `<ProjectReference>`elements are not currently supported.
