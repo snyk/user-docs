@@ -27,7 +27,7 @@ Bazel does not have dependency manifest files or lock files that package manager
 
 Bazel has limited native integration with package registries such as npmjs.org or Maven Central. There are some Bazel rules that can be added to help with installing dependencies from external registries, for example, [from Maven](https://docs.bazel.build/versions/master/external.html#maven-artifacts-and-repositories).
 
-However, in many cases, users must manually specify their dependency information (package name, location. and version), including all transitives. These can then be fetched by Bazel during builds.
+However, in many cases users must manually specify their dependency information (package name, location. and version), including all transitives. These can then be fetched by Bazel during builds.
 
 Because Bazel dependencies are specified as code in BUILD files using Starlark, Snyk cannot easily discover which dependencies a project has.
 
@@ -50,7 +50,7 @@ The recommended approach is to test your dependencies using the [Snyk Dep Graph]
 
 The Snyk Dep Graph Test API takes a generic dependency graph and returns a report containing any relevant vulnerabilities for those dependencies.
 
-The supported package managers and repository ecosystems are listed in the [API documentation](https://snyk.docs.apiary.io/#reference/test/dep-graph) (at the time of writing these are `deb`, `gomodules`, `gradle`, `maven`, `npm`, `nuget`, `paket`, `pip`, `rpm`, `rubygems`, and `cocoapods`).
+The supported package managers and repository ecosystems are listed in the [API documentation](https://snyk.docs.apiary.io/#reference/test/dep-graph) (at time of writing these are `deb`, `gomodules`, `gradle`, `maven`, `npm`, `nuget`, `paket`, `pip`, `rpm`, `rubygems`, and `cocoapods`).
 
 Any of your Bazel dependencies that are available in these ecosystems can be tested using the Snyk API.
 
@@ -212,7 +212,7 @@ Further notes on specific components in the response object follow:
 ## Examples for Snyk for Bazel
 
 {% hint style="info" %}
-See Manually creating a [Dep Graph from Bazel Java project](https://github.com/snyk/bazel-simple-app) for a full example Bazel Java project and corresponding Snyk Dep Graph object.
+See [https://github.com/snyk/bazel-simple-app](https://github.com/snyk/bazel-simple-app) for a full example Bazel Java project and corresponding Snyk Dep Graph object.
 {% endhint %}
 
 For a simple Bazel project with a single dependency on a Maven package, you may specify the dependency like this:

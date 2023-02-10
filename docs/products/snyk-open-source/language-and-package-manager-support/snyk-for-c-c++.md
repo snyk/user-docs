@@ -30,7 +30,7 @@ When you run the `snyk test --unmanaged` command, Snyk does the following:
 5. Displays the results.
 
 {% hint style="info" %}
-In order for you to scan the project, the dependencies must be available as source code in the scanned directory. If the dependencies are in a different location, that location must be scanned.
+To scan the project, the dependencies must be available as source code in the scanned directory. If the dependencies are in a different location, that location must be scanned.
 {% endhint %}
 
 ### Scanning archives
@@ -42,7 +42,7 @@ To enable archive extraction, specify the depth of the extraction using the `--m
 The supported archive formats are:
 
 * zip-like archives
-* tar
+* tar archives
 * tar with gzip compression algorithm
 
 ### Constraints and limitations
@@ -51,7 +51,7 @@ The supported archive formats are:
 The following constraints and limitations are by design. While Snyk may work on improvements in the future, they are not considered an issue. Issues that are planned to be addressed are in the [Known issues](snyk-for-c-c++.md#known-issues-with-snyk-for-c-c++) section.
 {% endhint %}
 
-### **Dependencies source code needs to be available**
+### **Source code dependencies need to be available in the scanned folder**
 
 For Snyk CLI to be able to find dependencies in your source code, enough of the full dependencies source code needs to be present in the scanned folder.
 
@@ -160,7 +160,7 @@ curl|https://github.com/curl/curl/releases/download/curl-7_58_0/curl-7.58.0.tar.
 confidence: 0.993
 ```
 
-This confidence level shows how confident Snyk is about the actual identification of the dependency. The number can be between 0 and 1 and the higher it is, the more accurate the identification is. So a confidence of **1** means that all the files in the source tree fully matched all the expected files in the Snyk database.
+This confidence level shows how confident Snyk is about the actual identification of the dependency. The number can be between **0** and **1** and the higher it is, the more accurate the identification is. So a confidence of **1** means that all the files in the source tree fully matched all the expected files in the Snyk database.
 
 ### JSON output
 
@@ -260,21 +260,23 @@ $ snyk test --unmanaged --json
 
 The following `snyk` command line options are supported with the `snyk test --unmanaged` and `snyk monitor --unmanaged` commands:
 
-`--org=<ORG_ID>`
+```cpp
+--org=<ORG_ID>
 
-`--json`
+--json
 
-`--json-file-output=<OUTPUT_FILE_PATH>`
+--json-file-output=<OUTPUT_FILE_PATH>
 
-`--max-depth=1`
+--max-depth=1
 
-`--project-name=c-project`
+--project-name=c-project
 
-`--remote-repo-url=<URL>`
+--remote-repo-url=<URL>
 
-`--target-reference=<TARGET_REFERENCE>`
+--target-reference=<TARGET_REFERENCE>
 
-`--severity-threshold=<low|medium|high|critical>`
+--severity-threshold=<low|medium|high|critical>
+```
 
 For more information about command line options see the Snyk help docs: [Options for scanning with `snyk test --unmanaged`](https://docs.snyk.io/snyk-cli/commands/test#options-for-scanning-using-unmanaged) or [`snyk monitor --unmanaged`](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-scanning-using-unmanaged).
 
@@ -301,7 +303,7 @@ Importing a project with unmanaged dependencies creates a new project:
 
 **Scanning on Windows**
 
-Many open-source projects in Git use Unix line endings. By default, Git on Windows converts Unix line endings to Windows line endings and only converts them back for the actual commits. The Snyk database contains source code signatures with the original line endings as defined in the individual Projects, so when you scan on Windows, the signatures generated for the files with Windows line endings are different from the signatures in the Snyk database. In this case, it is very likely no dependencies will be found.
+Many open-source projects in Git use Unix line endings. By default, Git on Windows converts Unix line endings to Windows line endings and only converts them back for the actual commits. The Snyk database contains source code signatures with the original line endings as defined in the individual Projects, so when you scan on Windows, the signatures generated for the files with Windows line endings are different from the signatures in the Snyk database. In this case, no dependencies will likely be found.
 
 To scan a Project with Unix line endings on Windows, disable git line endings conversion. To configure this globally, run:
 
@@ -317,7 +319,7 @@ No. The files are converted to a list of hashes before they are sent for scannin
 
 ### **Why did Snyk not find any dependencies?**
 
-Snyk stores the official releases of many of open-source components in the Snyk database but it is possible that the source code you scanned is not there or is not found. If your scan does not find any dependencies [submit a request to support](https://snyk.zendesk.com/agent/dashboard).
+Snyk stores the official releases of many of open-source components in the Snyk database but it is possible that the source code you scanned is not there or is not found. If your scan does not find any dependencies [submit a request to support](https://support.snyk.io/hc/en-us/requests/new).
 
 Here are a few things that you can check on your own:
 
