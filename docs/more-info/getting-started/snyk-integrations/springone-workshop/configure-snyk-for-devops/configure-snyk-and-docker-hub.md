@@ -8,7 +8,7 @@ Enable integration between Docker Hub and Snyk, and start managing your vulnerab
 2. From the Integrations page click the Docker Hub box (image 1)
 3. From the **Settings** page in the Integrations area, enter your Docker Hub username and Access Token and then click **Save** (image 2)
 
-![](<../../../../../.gitbook/assets/dockerhub1 (1).png>) ![](<../../../../../.gitbook/assets/dockerhub2 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (6).png>)
+![](../../../../../.gitbook/assets/dockerhub1.png) ![](<../../../../../.gitbook/assets/dockerhub2 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (3).png>)
 
 _As the access token, you can either use your DockerHub password or an access token_ [_created_](https://docs.docker.com/docker-hub/access-tokens/) _in DockerHub. In case 2FA is activated on your account, access token **only** is applicable._
 

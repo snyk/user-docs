@@ -30,7 +30,7 @@ When you run the `snyk test --unmanaged` command, Snyk does the following:
 5. Displays the results.
 
 {% hint style="info" %}
-To scan the project, the dependencies must be available as source code in the scanned directory. If the dependencies are in a different location, that location must be scanned.
+For Snyk to scan the project, the dependencies must be available as source code in the scanned directory. If the dependencies are in a different location, that location must be scanned.
 {% endhint %}
 
 ### Scanning archives
@@ -160,7 +160,7 @@ curl|https://github.com/curl/curl/releases/download/curl-7_58_0/curl-7.58.0.tar.
 confidence: 0.993
 ```
 
-This confidence level shows how confident Snyk is about the actual identification of the dependency. The number can be between **0** and **1** and the higher it is, the more accurate the identification is. So a confidence of **1** means that all the files in the source tree fully matched all the expected files in the Snyk database.
+This confidence level shows how confident Snyk is about the actual identification of the dependency. The number can be between **0** and **1** and the higher it is, the more accurate the identification is. Thus a confidence of **1** means that all the files in the source tree fully matched all the expected files in the Snyk database.
 
 ### JSON output
 
