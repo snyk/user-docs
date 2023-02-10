@@ -2,13 +2,13 @@
 
 ## View application vulnerabilities
 
-To view your application vulnerabilities and licensing issues, go to [your Projects listing](https://app.snyk.io/projects) and select the Project entry. An example follows.
+To view your application vulnerabilities and licensing issues, go to [your Projects listing](https://app.snyk.io/projects), and open the Target application to list Projects:
 
-<figure><img src="../../.gitbook/assets/application-vuln.png" alt="Example: the package.json entry in the example application goof"><figcaption><p>Example: the <strong>package.json</strong> entry in the example application <strong>goof</strong></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Project-list.png" alt="Projects listed in the Target application snyk-goof"><figcaption><p>Projects listed in the Target application <strong>snyk-goof</strong></p></figcaption></figure>
 
-Click on the Project to view detailed information:
+Click on the Project entry to view detailed information for that Project:
 
-<figure><img src="../../.gitbook/assets/project-page.png" alt="Detailed Project information"><figcaption><p>Detailed Project information</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/project-header (1).png" alt="Detailed information for the Package.json Project"><figcaption><p>Detailed information for the <strong>Package.json</strong> Project</p></figcaption></figure>
 
 The following information is available:
 
@@ -21,7 +21,7 @@ The following information is available:
 
 ### Project summary information
 
-<figure><img src="../../.gitbook/assets/proj-summ.png" alt="Header showing Project summary information"><figcaption><p>Header showing Project summary information</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Project-header-new.png" alt="Header information for package.json project"><figcaption><p>Header information for <strong>package.json</strong> project</p></figcaption></figure>
 
 The summary information shows:
 
@@ -31,4 +31,7 @@ The summary information shows:
   * A direct link to the Project file in the SCM
   * The time when the Project was first imported to Snyk
   * The time when an up-to-date snapshot of the file was fetched from the SCM and tested
-* Predefined [Project attributes](../policies/assign-a-policy-to-project-attributes.md) and any additional [Project tag](../../snyk-web-ui/introduction-to-snyk-projects/project-tags.md) metadata.
+* Project import information:
+  * **Imported by**: The user who imported the project.
+  * **Project owner**: Click **Add a project owner** to add an owner for this project, from a list of everyone who has access to that project (everyone who is a member of that Organization). This information can also be viewed in the [Projects endpoint](https://snyk.docs.apiary.io/#reference/projects), in the API.
+* Predefined [Project attributes](project-attributes.md) and any additional [Project tag](../../snyk-web-ui/introduction-to-snyk-projects/project-tags.md) metadata.
