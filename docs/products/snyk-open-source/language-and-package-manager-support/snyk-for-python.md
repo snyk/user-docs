@@ -123,6 +123,8 @@ Add the following option to `snyk test` or `snyk monitor` with the value of the 
 --command=python3
 ```
 
+For details see the [Test command help](https://docs.snyk.io/snyk-cli/commands/test#options-for-python-projects) and the [Monitor command help](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-python-projects).
+
 ### Setting the Python version in Git Projects
 
 {% hint style="info" %}

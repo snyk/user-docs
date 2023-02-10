@@ -296,9 +296,13 @@ Default: false
 
 ### `--command=<COMMAND>`
 
-Indicate which specific Python commands to use based on Python version. The default is `python` which executes your default python version. Run 'python -V' to find out what version it is. If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.
+Indicate which specific Python commands to use based on the Python version.
 
-Default: `python` Example: `--command=python3`
+Snyk uses Python in order to scan and find your dependencies. If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.
+
+Default: `python` This executes your default python version. Run `python -V` to find out what your default version is.
+
+Example: `snyk monitor --command=python3`
 
 ### `--skip-unresolved=true|false`
 
