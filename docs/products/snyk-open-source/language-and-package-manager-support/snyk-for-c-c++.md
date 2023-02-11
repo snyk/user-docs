@@ -260,23 +260,14 @@ $ snyk test --unmanaged --json
 
 The following `snyk` command line options are supported with the `snyk test --unmanaged` and `snyk monitor --unmanaged` commands:
 
-```cpp
---org=<ORG_ID>
-
---json
-
---json-file-output=<OUTPUT_FILE_PATH>
-
---max-depth=1
-
---project-name=c-project
-
---remote-repo-url=<URL>
-
---target-reference=<TARGET_REFERENCE>
-
---severity-threshold=<low|medium|high|critical>
-```
+`--org=<ORG_ID>`\
+`--json`\
+``-`-json-file-output=<OUTPUT_FILE_PATH>`\
+`--max-depth=1`\
+`--project-name=c-project`\
+`--remote-repo-url=`\
+`--target-reference=<TARGET_REFERENCE>`\
+`--severity-threshold=<low|medium|high|critical>`
 
 For more information about command line options see the Snyk help docs: [Options for scanning with `snyk test --unmanaged`](https://docs.snyk.io/snyk-cli/commands/test#options-for-scanning-using-unmanaged) or [`snyk monitor --unmanaged`](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-scanning-using-unmanaged).
 
