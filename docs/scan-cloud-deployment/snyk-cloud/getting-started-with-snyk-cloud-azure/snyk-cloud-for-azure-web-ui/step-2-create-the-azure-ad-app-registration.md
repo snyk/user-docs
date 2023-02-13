@@ -59,13 +59,13 @@ If you use the [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-a
 2. Make the Bash script executable using the `chmod` command:
 
 ```
-chmod 755 snyk_azure_permissions.sh
+chmod 755 snyk-permissions-azure.sh
 ```
 
 3. Run the script:
 
 ```
-./snyk_azure_permissions.sh
+./snyk-permissions-azure.sh
 ```
 
 The Azure CLI then creates the AD app registration, federated identity credential, and service principal. When it is finished, you will see JSON output with information about the created infrastructure.
