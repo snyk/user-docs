@@ -64,10 +64,13 @@ Snyk Cloud scans the following Azure resource types:
 * azurerm\_lb\_probe
 * azurerm\_lb\_rule
 * azurerm\_linux\_function\_app
+* azurerm\_linux\_function\_app\_slot
 * azurerm\_linux\_virtual\_machine
 * azurerm\_linux\_virtual\_machine\_scale\_set
 * azurerm\_linux\_web\_app
+* azurerm\_linux\_web\_app\_slot
 * azurerm\_local\_network\_gateway
+* azurerm\_log\_analytics\_solution
 * azurerm\_log\_analytics\_workspace
 * azurerm\_logic\_app\_workflow
 * azurerm\_managed\_disk
@@ -158,6 +161,8 @@ Snyk Cloud scans the following Azure resource types:
 * azurerm\_virtual\_network\_gateway
 * azurerm\_virtual\_network\_gateway\_connection
 * azurerm\_windows\_function\_app
+* azurerm\_windows\_function\_app\_slot
 * azurerm\_windows\_virtual\_machine
 * azurerm\_windows\_virtual\_machine\_scale\_set
 * azurerm\_windows\_web\_app
+* azurerm\_windows\_web\_app\_slot
