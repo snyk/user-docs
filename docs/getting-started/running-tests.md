@@ -43,7 +43,7 @@ See [API documentation](https://snyk.docs.apiary.io) for details.
 After you [import a Project](quickstart/import-a-project.md), Snyk automatically runs periodic scans on that Project, to see if your code is affected by newly disclosed vulnerabilities.
 
 {% hint style="info" %}
-Test frequency is set to daily by default. To change frequency, go to either the **Usage** page (see [Usage page details](../snyk-admin/managing-settings/usage-page-details.md)) or the project **Settings** page (see [View project settings](../manage-issues/introduction-to-snyk-projects/view-project-settings.md)).
+Test frequency is set to daily by default. To change frequency, go to the **Usage** page (see [Usage page details](../snyk-admin/managing-settings/usage-page-details.md)), the project **Settings** page (see [View project settings](../manage-issues/introduction-to-snyk-projects/view-project-settings.md)) or use the V3 Projects API (see [API Docs](https://apidocs.snyk.io/experimental?version=2022-12-21%7Eexperimental#patch-/orgs/-org\_id-/projects/-project\_id-))
 {% endhint %}
 
 #### Use Snyk monitor
