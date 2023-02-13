@@ -1,6 +1,8 @@
 # Snyk Pricing Plans
 
-Snyk functionality is available with several [pricing plans](https://snyk.io/plans/), from free to Enterprise-level:
+## Pricing plans available
+
+Snyk functionality is available with several [pricing plans](https://snyk.io/plans/):
 
 * **Free**: For individual developers and small teams looking to secure while they build. Limited tests.
 * **Team**: For dev teams looking to build security into their development process with shared visibility into projects. Unlimited tests.
@@ -20,7 +22,7 @@ If a feature is only available on some plans, this is shown in the feature's doc
 This feature is only available for Enterprise plans.
 {% endhint %}
 
-#### Business Plan (legacy) trial limitations
+### Business Plan (legacy) trial limitations
 
 During the 14-day Business Plan (legacy) trial period, you will have limited or no access to the following features:
 

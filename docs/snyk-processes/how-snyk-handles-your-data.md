@@ -1,12 +1,10 @@
 # How Snyk handles your data
 
-## Introduction&#x20;
-
 Snyk is a developer security platform and thus Snyk places the utmost importance on data security. **Fully understanding your privacy and security needs, Snyk provides this document with the goal of providing you with transparency as to how and what data is accessed, transferred, and stored by Snyk.**
 
 The data handled by Snyk varies depending on the product you are using, how you are integrating with Snyk, and your Snyk deployment. Because Snyk is subject to fast moving changes, the types of data accessed and stored might change with the introduction of a new capability or changes to an existing capability.
 
-### &#x20;Flexible deployment options
+## &#x20;Flexible deployment options
 
 Snyk leverages the latest software development practices and technologies to provide customers with the flexibility to use Snyk’s developer security platform in the manner that best suits the needs of their business.
 
@@ -18,11 +16,11 @@ Snyk’s cloud-first deployment options offer ease of use and scalability while 
 
 **Be sure to reach out to your Snyk contact for more details on how these different options can be leveraged to meet your needs.**
 
-### Customer data flows across Snyk
+## Customer data flows across Snyk
 
 Snyk provides a wide range of development tools and integration points, requiring different types of data, and involving different data interactions. The sections that follow provide an overview of both the common types of data Snyk accesses and stores and product and integration-specific types. The information is reviewed at a minimum of twice per year or when a significant change occurs within the product operations.
 
-### Common data types
+## Common data types
 
 * **Vulnerability data** - Snyk stores information on the vulnerabilities identified in customer applications and related fix context.
 * **Vulnerability source** - Snyk stores information on where the vulnerability was identified. Examples: source code repository or registry, file name and location, dependency tree, vulnerability path.
@@ -32,7 +30,7 @@ Snyk provides a wide range of development tools and integration points, requirin
 * **Billing data** - Snyk stores information required for billing your Snyk account.
 * **User behavior analytics** - Snyk stores various types of information pertaining to usage patterns. Examples: platform navigation, executed CLI commands.
 
-### Product-specific data types
+## Product-specific data types
 
 Snyk knows how important it is for you to protect your data. Snyk products only access and store the information needed to provide you with Snyk services and to ensure accurate analysis.
 
@@ -108,7 +106,7 @@ Snyk knows how important it is for you to protect your data. Snyk products only 
 {% endtab %}
 {% endtabs %}
 
-### Snyk certifications
+## Snyk certifications
 
 <figure><img src="../.gitbook/assets/Soc2.png" alt="Soc 2 Type 2 AICPA Soc"><figcaption><p>Soc 2 Type 2 AICPA Soc</p></figcaption></figure>
 
@@ -116,7 +114,7 @@ Snyk is certified to ISO 27001:2013 with the additional objective controls of IS
 
 <figure><img src="../.gitbook/assets/Coalfire.png" alt="Coalfire ISO 27001 certified ISO"><figcaption><p>Coalfire ISO 27001 certified ISO</p></figcaption></figure>
 
-### Snyk policies
+## Snyk policies
 
 For additional information, see the following pages on the Snyk website:
 
