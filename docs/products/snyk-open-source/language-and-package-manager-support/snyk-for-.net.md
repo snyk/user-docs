@@ -71,7 +71,7 @@ For information about the `snyk test` options available for use with Nuget, see 
 
 ### Paket: Dependencies managed by Paket
 
-To use Paket a **paket.lock** file be sure is present in combination with a **paket.dependencies** file. Then run `snyk test`
+To use Paket, be sure a **paket.lock** file is present in combination with a **paket.dependencies** file. Then run `snyk test`
 
 Other support includes **project.json** (no longer recommended, refer to [Microsoft documentation](https://docs.microsoft.com/en-us/nuget/archive/project-json)).
 
@@ -94,9 +94,9 @@ Once you select a Project for import, Snyk builds the dependency tree based on t
 
 Examples of supported project files include:
 
-* \*.csproj
-* \*.vbproj
-* \*.fsproj
+* **\*.csproj**
+* \***.vbproj**
+* **\*.fsproj**
 
 A .NET project can target multiple target frameworks. Snyk creates a separate dependency tree for each target framework, displaying each as a separate Snyk Project from the interface. This makes it easier to understand why a dependency is being used and also to assess the fix strategy.
 
@@ -111,7 +111,7 @@ From the Snyk Web UI, you can configure Snyk to scan your entire Project, includ
 You can also **update your language preferences.**
 
 1. Log in to your account and navigate to the relevant Group and Organization that you want to manage.
-2. Go to **Settings** and select settings for **.NET**. To scan all development dependencies, be sure **Scan build dependencies** is checked.
+2. Go to **Settings** and select settings for **.NET**. To scan all development dependencies, be sure that **Scan build dependencies** is checked.
 
 ## Fixing vulnerabilities for .NET
 
