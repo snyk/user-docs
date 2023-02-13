@@ -41,13 +41,13 @@ The way Snyk analyzes and builds the tree varies depending on the language and p
 
 #### Dependencies managed by PackageReference
 
-First, restore dependencies in the .NET project by running `dotnet restore` and make sure **obj/project.assets.json** has been created by the previous command. Then run `snyk test`. For more information see [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli.md).
+First, restore dependencies in the .NET project by running `dotnet restore` and make sure that **obj/project.assets.json** has been created by the previous command. Then run `snyk test`. For more information see [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli.md).
 
 Examples of supported Project files that resolve into **project.assets.json** include:
 
-* \*.csproj
-* \*.vbproj
-* \*.fsproj
+* **\*.csproj**
+* **\*.vbproj**
+* **\*.fsproj**
 
 {% hint style="info" %}
 Project files can be combined with [lock files](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files#locking-dependencies) for a more deterministic **project.assets.json** resolution.
@@ -57,7 +57,7 @@ Project files can be combined with [lock files](https://docs.microsoft.com/en-us
 
 While there are two approaches for dependencies managed by **packages.config**., the following is the recommended approach because it will yield the most accurate results:
 
-First, install the dependencies into the **packages** folder by running `nuget install -OutputDirectory packages` and make sure the **packages** dir has been created by the previous command. Then run `snyk test`.
+First, install the dependencies into the **packages** folder by running `nuget install -OutputDirectory packages` and make sure the **packages** directory has been created by the previous command. Then run `snyk test`.
 
 Examples of supported project files that resolve into **packages** include: **packages.config**
 
