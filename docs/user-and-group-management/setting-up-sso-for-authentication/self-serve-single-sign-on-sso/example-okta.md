@@ -4,7 +4,7 @@ An example follows of setting up an Okta SAML application and connecting this to
 
 1.  From the drop down at the top left select **GROUP OVERVIEW** and then the cog wheel (top right corner) to get to your group settings.
 
-    <figure><img src="../../../.gitbook/assets/1 (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Select group overview"><figcaption><p>Select group overview</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/1 (1) (1) (1) (1) (1) (1) (2).png" alt="Select group overview"><figcaption><p>Select group overview</p></figcaption></figure>
 2.  Click on **SSO** and copy the values under **Entity ID** and **ACS URL** or leave the browser tab open for easy access.
 
     <figure><img src="../../../.gitbook/assets/2 (1) (1).png" alt="Group Settings: SSO"><figcaption><p>Group Settings: SSO</p></figcaption></figure>
