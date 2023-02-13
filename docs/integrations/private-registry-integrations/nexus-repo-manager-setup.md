@@ -19,7 +19,7 @@ Connecting Nexus Repository Manager enables Snyk to resolve all direct and trans
 You can configure these types of Nexus Repository Manager:
 
 * Publicly accessible instances protected by basic authentication
-* Instances on a private network accessed via a [Snyk Broker](../snyk-broker/broker-introduction.md) (with or without basic authentication).
+* Instances on a private network accessed via a [Snyk Broker](broken-reference) (with or without basic authentication).
 
 {% hint style="info" %}
 **Versions supported**

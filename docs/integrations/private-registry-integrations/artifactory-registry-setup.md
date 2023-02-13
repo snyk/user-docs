@@ -16,7 +16,7 @@ Connecting a custom Artifactory Package Repository enables Snyk to resolve all d
 You can configure two types of Artifactory Package Repository:
 
 1. Publicly accessible instances protected by basic authentication
-2. Instances on a private network accessed via a [Snyk Broker](../snyk-broker/broker-introduction.md) (with or without basic authentication)
+2. Instances on a private network accessed via a [Snyk Broker](broken-reference) (with or without basic authentication)
 
 ### Getting started
 

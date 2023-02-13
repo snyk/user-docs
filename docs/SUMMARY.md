@@ -172,7 +172,6 @@
       * [Render content for users](integrations/snyk-apps/tutorial-create-a-snyk-app/render-content-for-users.md)
     * [Create a Snyk App using the Snyk CLI](integrations/snyk-apps/create-a-snyk-app-using-the-snyk-cli.md)
   * [Snyk Broker](integrations/snyk-broker/README.md)
-    * [Snyk Broker introduction](integrations/snyk-broker/broker-introduction.md)
     * [Set up Snyk Broker](integrations/snyk-broker/set-up-snyk-broker/README.md)
       * [Prepare Snyk Broker for deployment](integrations/snyk-broker/set-up-snyk-broker/prepare-snyk-broker-for-deployment.md)
       * [Install and configure the Snyk Broker Client](integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md)
