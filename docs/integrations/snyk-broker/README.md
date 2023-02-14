@@ -31,13 +31,15 @@ The Snyk Broker project is hosted at [GitHub](https://github.com/snyk/broker) an
 
 ## Components of Snyk Broker
 
-Snyk Broker has a Server and a Client, components that are the same across all integrations:
+Snyk Broker has a Server and a Client, basic components that are the same across all integrations:
 
 * **Broker Server** - running on the Snyk SaaS backend\
   The Broker Server is provided by Snyk, and no installation is required on your part.
 * **Broker Client** - a [Docker image](https://hub.docker.com/r/snyk/broker/) deployed in your infrastructure
 
-The diagram that follows illustrates how the components operate.
+For information about components that are required for using Snyk Code Agent, Snyk Container Registry Agent, and Snyk Broker for Infrastructure as Code, see [Define your Broker deployment components](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/prepare-snyk-broker-for-deployment#define-your-broker-deployment-components).
+
+The diagram that follows illustrates how the basic components operate.
 
 * All data, both in transit and at rest, is encrypted.
 * Communication between the Client and the Server takes place over a secure WebSocket connection.
