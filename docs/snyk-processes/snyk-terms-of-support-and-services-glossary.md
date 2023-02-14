@@ -15,14 +15,14 @@
 
 {% hint style="info" %}
 **Notes**\
-1/ SLAs outlined in table below based on software plan purchased.
+1/ SLAs (see [SLA response and severity definitions](snyk-terms-of-support-and-services-glossary.md#sla-response-and-severity-definitions)) are based on the Snyk Pricing plan purchased.
 
 2/ Existing Business plan customers.
 
 3/ Paid Implementation services (Snyk Accelerate) are available as a la carte packages for Standard Support customers.
 {% endhint %}
 
-### SLA Response and Severity Definitions
+### SLA response and severity definitions
 
 Severity levels are defined as follows:
 

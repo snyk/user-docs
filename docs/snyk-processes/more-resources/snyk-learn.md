@@ -1,7 +1,5 @@
 # Snyk Learn
 
-## Introduction
-
 [Snyk Learn](https://learn.snyk.io) is dedicated to developer education, specifically looking at vulnerabilities in detail including the why and how:
 
 * **Why** is it vulnerable?
@@ -11,11 +9,11 @@ Snyk Learn teaches developers how to stay secure, with interactive lessons explo
 
 Many graduate developers may have completed their whole degree program without ever taking a course dedicated to computer security. Snyk Learn helps to educate these developers with knowledge and expertise, both theory and practical.
 
-### Lessons for developers
+## Lessons for developers
 
 Our lessons are targeted toward developers who want to learn more about specific vulnerabilities and how to mitigate them. Snyk Learn is also helpful for developers, team leads, and managers who want to enhance the general security knowledge of their team.
 
-### Lesson structure
+## Lesson structure
 
 Lessons are structured as follows:
 
@@ -25,15 +23,15 @@ Lessons are structured as follows:
 * The third section of the lesson is _under the hood_ where we take a look at why the vulnerability worked and the code behind it.
 * Finally, it’s the _mitigation_ section. This is where developers will learn how to fix the vulnerability using code examples.
 
-### Language coverage
+## Language coverage
 
 There are many lessons covering many different languages. The languages being covered currently are JavaScript, Java, C#, Python, PHP, and Go. We also have a couple of lessons for Kubernetes. More languages will be covered in the future.
 
-### Learning paths
+## Learning paths
 
 We offer learning paths as a way for learners to take a predefined set of lessons. Right now, we offer the OWASP Top 10 learning path which includes ten modules and twelve lessons.
 
-#### OWASP Top 10
+### OWASP Top 10
 
 This learning path covers the [OWASP](https://owasp.org/) top 10. Each OWASP category is a module on Learn. Within each module is one to two lessons. Completing all ten modules will result in the successful completion of this OWASP learning path. The modules are:
 
@@ -48,7 +46,7 @@ This learning path covers the [OWASP](https://owasp.org/) top 10. Each OWASP cat
 * Security Logging and Monitoring Failures
 * Server-Side Request Forgery
 
-### Reporting on Snyk Learn adoption
+## Reporting on Snyk Learn adoption
 
 Snyk Learn administrators can view insights about the adoption of Snyk Learn within their organization, including seeing which lessons your colleagues have viewed, and what security issues those lessons cover.
 
