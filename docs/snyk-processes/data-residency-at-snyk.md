@@ -1,5 +1,7 @@
 # Regional hosting and data residency
 
+## Introduction
+
 {% hint style="info" %}
 **Feature availability**\
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
@@ -11,13 +13,13 @@ Snyk can host your data in a number of regions. During your system's initial onb
 By default, customers are hosted in the US region.
 {% endhint %}
 
-## **What is data residency?**
+### **What is data residency?**
 
-Data residency allows you to control what region Snyk hosts a selected subset of your data in. For more information. see [Regional and global data](data-residency-at-snyk.md#regional-and-global-data) on this page.
+Data residency allows you to control what region Snyk hosts a selected subset of your data in. For more information. see [Regional and global data](data-residency-at-snyk.md#regional-and-global-data).
 
 Data residency is available for [Snyk Open Source](../products/snyk-open-source/), [Snyk Code](../products/snyk-code/), [Snyk Container](../scan-containers/), and [Snyk Infrastructure as Code (IaC)](../scan-cloud-deployment/snyk-infrastructure-as-code/).
 
-## **How does data residency work?**
+### **How does data residency work?**
 
 During your system onboarding, you can work with your account team to select a hosting region.
 
@@ -25,7 +27,7 @@ During your system onboarding, you can work with your account team to select a h
 After you select a region, the data in that region cannot be migrated to another region. Moving to a new region requires a complete re-onboarding.
 {% endhint %}
 
-## **What regions are available?**
+### **What regions are available?**
 
 Snyk offers data residency for the following regions:
 
@@ -35,11 +37,11 @@ Snyk offers data residency for the following regions:
 | EU (Germany, Frankfurt) | https://app.eu.snyk.io |
 |     AUS (Australia)     | https://app.au.snyk.io |
 
-## Regional and global data
+### Regional and global data
 
 Snyk leverages a number of sub-processors to provide you with a high quality service. Thus not all data types can be stored within your region of choice. The list of sub-processors is available [on the Snyk website](https://snyk.io/policies/sub-processors/).
 
-See [How Snyk handles your data](https://docs.snyk.io/more-info/how-snyk-handles-your-data) for product-specific examples on how this data is handled.
+See [How Snyk handles your data](how-snyk-handles-your-data.md) for product-specific examples on how this data is handled.
 
 {% tabs %}
 {% tab title="Product" %}
@@ -67,7 +69,7 @@ See [How Snyk handles your data](https://docs.snyk.io/more-info/how-snyk-handles
 {% endtab %}
 {% endtabs %}
 
-## EU and AU region hosting notes
+### EU and AU region hosting notes
 
 Snyk offers almost all the same features, support, and performance in the EU region as in the US region.
 
@@ -77,11 +79,11 @@ The following **features are not yet available**:
 * C/C++ language support in Snyk Open Source
 * Snyk Cloud
 
-## EU and AU datacenter account creation
+#### EU and AU datacenter account creation
 
 EU and AU datacenter Snyk accounts are available only with the purchase of an [Enterprise plan](https://snyk.io/plans/). The resources and URLs are as follows.
 
-### Login and Web UI URLs
+#### Login and Web UI URLs
 
 **EU**
 
@@ -91,7 +93,9 @@ EU and AU datacenter Snyk accounts are available only with the purchase of an [E
 
 [https://app.au.snyk.io/](https://app.au.snyk.io/)
 
-**Note:** using Snyk.io or app.snyk.io will not redirect you.
+{% hint style="warning" %}
+Using Snyk.io or app.snyk.io will not redirect you to these URLs.
+{% endhint %}
 
 ### API URLs
 
@@ -99,13 +103,13 @@ Follow the docs as usual, but base URLs are:
 
 **EU**
 
-v1: https://api.eu.snyk.io/v1/\
-v3: https://api.eu.snyk.io/rest/
+API v1: https://api.eu.snyk.io/v1/\
+REST API: https://api.eu.snyk.io/rest/
 
 **AU**
 
-v1: https://api.au.snyk.io/v1/\
-v3: https://api.au.snyk.io/rest/
+API v1: https://api.au.snyk.io/v1/\
+REST API: https://api.au.snyk.io/rest/
 
 ### CLI and CI pipelines URLs
 
@@ -193,7 +197,7 @@ For Broker with Code Agent deployed by Helm chart, follow the [https://github.co
 
 `--set upstreamUrlCodeAgent=https://deeproxy.au.snyk.io`
 
-## **How Snyk maintains GDPR compliance**
+### **How Snyk maintains GDPR compliance**
 
 Snyk takes privacy seriously, and operates a global privacy program to meet the requirements of the GDPR, CCPA, and other applicable privacy laws. Snyk treats all user data the same way and uses industry-standard technical and organizational measures to secure the information Snyk stores. Snyk's Privacy Program is tailored to meet both legal requirements and your needs.
 
