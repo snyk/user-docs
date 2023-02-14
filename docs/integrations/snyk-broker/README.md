@@ -1,5 +1,7 @@
 # Snyk Broker
 
+ba
+
 {% hint style="info" %}
 **Feature availability**\
 Snyk Broker is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
@@ -31,7 +33,7 @@ The Snyk Broker project is hosted at [GitHub](https://github.com/snyk/broker) an
 
 ## Components of Snyk Broker
 
-Snyk Broker has a Server and a Client, components that are the same across all base integrations:
+Snyk Broker has a Server and a Client, components that are the same across all integrations:
 
 * **Broker Server** - running on the Snyk SaaS backend\
   The Broker Server is provided by Snyk, and no installation is required on your part.
