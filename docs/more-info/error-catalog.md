@@ -211,6 +211,98 @@
 
   
 ---
+# SbomExport
+### [SNYK-OS-9000](#snyk-os-9000-internal-server-error) - Internal Server Error
+  Apologies, unfortunately an unexpected error has occurred. Please try again shortly. If the error persists please contact the Snyk support team.
+
+  **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9001](#snyk-os-9001-error-while-getting-dependency-graph) - Error while getting dependency graph
+  Apologies, unfortunately an unexpected error has occurred. Please try again shortly. If the error persists please contact the Snyk support team.
+
+  **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9002](#snyk-os-9002-error-parsing-dependency-graph) - Error parsing dependency graph
+  Apologies, unfortunately an unexpected error has occurred. Please try again shortly. If the error persists please contact the Snyk support team.
+
+  **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9003](#snyk-os-9003-snyk-iac-or-sast-project) - Snyk IaC or SAST project
+  This is either a Snyk Code or Snyk Infrastructure as Code project. We don’t currently provide an SBOM for these project types.
+
+  **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9004](#snyk-os-9004-we-do-not-currently-provide-an-sbom-document-for-this-project-type) - We do not currently provide an SBOM document for this project type
+  Unsupported Snyk project type.
+
+  **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9005](#snyk-os-9005-unsuccessful-request) - Unsuccessful request
+  Unsuccessful dep-graph request.
+
+  **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9006](#snyk-os-9006-unauthorized) - Unauthorized
+  Missing API token.
+
+  **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9007](#snyk-os-9007-the-body-of-the-request-can-not-be-empty) - The body of the request can not be empty
+  The body of the request is empty.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-9008](#snyk-os-9008-the-provided-depgraph-in-the-body-is-invalid) - The provided depgraph in the body is invalid
+  The provided dephgraph in the body is invalid.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+---
 # Workspaces
 ### [SNYK-OS-9101](#snyk-os-9101-unauthorized-credentials) - Unauthorized Credentials
   The credentials that have been provided could not be authorized with the upstream service.
@@ -613,4 +705,4 @@
   
 ---
 
-Genererated at 2023-01-26T08:57:07.555Z
+Genererated at 2023-02-14T14:12:00.524Z
