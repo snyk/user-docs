@@ -50,6 +50,8 @@ The diagram that follows illustrates how the basic components operate.
 
 ## Using inbound and outbound connections with Snyk Broker
 
+The Broker client runs within your internal network, keeping sensitive data such as Git tokens within the network perimeter.
+
 ### Inbound connection from Snyk to the Broker Client
 
 There is no direct inbound connection from Snyk to the Broker Client.
