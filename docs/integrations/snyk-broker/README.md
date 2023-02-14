@@ -70,11 +70,15 @@ Thus you do not need to allow inbound connections to the Broker Client from Snyk
 
 ## **Approved data list for Snyk Broker**
 
-The Broker Client maintains an approved data list for inbound and outbound data requests. Only data on this approved list may be requested.
+The Broker Client maintains an approved data list for inbound and outbound data requests. Only data on this approved list may be requested. This narrows the access permissions to the absolute minimum required for Snyk to actively monitor a repository.
 
 ### Inbound requests allowed
 
-For Snyk Open Source, Snyk.io is allowed to fetch and view only dependency manifest files and the `.snyk` policy file. No other source code is viewed, extracted, or modified. You may check in additional `.snyk` files to support the Snyk patch mechanism and for any ignore instructions included in your vulnerability policy.
+For Snyk Open Source:
+
+* Snyk.io is allowed to fetch and view only dependency manifest files and the `.snyk` policy file.
+* No other source code is viewed, extracted, or modified.
+* You may check in additional `.snyk` files to support the Snyk patch mechanism and for any ignore instructions included in your vulnerability policy.
 
 Snyk Code and Snyk IaC need access to the entire repository.
 
