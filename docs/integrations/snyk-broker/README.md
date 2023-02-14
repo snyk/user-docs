@@ -1,7 +1,5 @@
 # Snyk Broker
 
-ba
-
 {% hint style="info" %}
 **Feature availability**\
 Snyk Broker is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
