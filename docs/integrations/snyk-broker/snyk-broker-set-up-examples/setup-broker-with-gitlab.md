@@ -29,7 +29,7 @@ docker run --restart=always \
            -e GITLAB=<your.gitlab.domain.com (no http/s)> \
            -e PORT=8000 \
            -e BROKER_CLIENT_URL=<http://broker.url.example:8000 (dns/IP:port)> \
-           -e ACCEPT_IAC=true \
+           -e ACCEPT_IAC=tf,yaml,yml,json,tpl \
            -e ACCEPT_CODE=true \
        snyk/broker:gitlab
 ```

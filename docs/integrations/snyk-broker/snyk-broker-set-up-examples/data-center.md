@@ -33,7 +33,7 @@ docker run --restart=always \
            -e BITBUCKET_API=<your.bitbucket-server.domain.com/rest/api/1.0 (no http/s)> \
            -e PORT=8000 \
            -e BROKER_CLIENT_URL=<http://broker.url.example:8000 (dns/IP:port)> \
-           -e ACCEPT_IAC=true \
+           -e ACCEPT_IAC=tf,yaml,yml,json,tpl \
            -e ACCEPT_CODE=true \
        snyk/broker:bitbucket-server
 ```

@@ -33,7 +33,7 @@ docker run --restart=always \
            -e GITHUB_GRAPHQL=<your.ghe.domain.com/api (no http/s)> \
            -e PORT=8000 \
            -e BROKER_CLIENT_URL=<http://broker.url.example:8000 (dns/IP:port)> \
-           -e ACCEPT_IAC=true \
+           -e ACCEPT_IAC=tf,yaml,yml,json,tpl \
            -e ACCEPT_CODE=true \
        snyk/broker:github-enterprise
 ```
@@ -43,7 +43,7 @@ docker run --restart=always \
   For example, if the GitHub Enterprise instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration.\
   A fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for GitHub Enterprise is attached. You **cannot run** the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument.
 
-{% file src="../../../.gitbook/assets/accept.json" %}
+{% file src="../../../.gitbook/assets/accept (5).json" %}
 
 * Paste the Broker Client configuration to start the broker client container.
 * Once the container is up, the GitHub Enterprise Integrations page shows the connection to GitHub Enterprise and you can `Add Projects.`

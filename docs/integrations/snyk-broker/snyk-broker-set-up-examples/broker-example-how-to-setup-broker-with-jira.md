@@ -30,7 +30,7 @@ docker run --restart=always \
            -e GITHUB_TOKEN=<secret-github-token> \
            -e PORT=8000 \
            -e BROKER_CLIENT_URL=<http://broker.url.example:8000 (dns/IP:port)> \
-           -e ACCEPT_IAC=true \
+           -e ACCEPT_IAC=tf,yaml,yml,json,tpl \
            -e ACCEPT_CODE=true \
        snyk/broker:github-com
 ```
@@ -40,7 +40,7 @@ docker run --restart=always \
   For example, if the GitHub instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration.\
   A fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for GitHub is attached. You **cannot run** the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument.
 
-{% file src="../../../.gitbook/assets/accept (1) (1).json" %}
+{% file src="../../../.gitbook/assets/accept (1) (1) (1) (1).json" %}
 
 * Paste the Broker Client configuration to start the broker client container.
 * Once the container is up, the GitHub Integrations page should show the connection to GitHub and you should be able to `Add Projects`.
