@@ -1,6 +1,8 @@
 # Snyk Training
 
-Snyk Training provides videos and self-paced courses for learning:
+## Introduction
+
+[Snyk Training](https://training.snyk.io/) provides videos and self-paced courses for learning how to use Snyk, including:
 
 * How to implement Snyk
 * How to configure and manage Snyk organizations
@@ -22,7 +24,7 @@ Learn how to use Snyk to find and fix issues in different ways. These [short cou
 
 ### Video library catalog
 
-In addition to the courses available for enrollment, the [video library ](https://training.snyk.io/pages/video-library)offers individual videos that provide quick demonstrations or refreshers on key Snyk tasks. Each video includes links to related courses.
+In addition to the courses available for enrolment, the [video library ](https://training.snyk.io/pages/video-library)offers individual videos that provide quick demonstrations or refreshers on key Snyk tasks. Each video includes links to related courses.
 
 ### Additional resources
 
@@ -33,5 +35,6 @@ The [Digital Success program](https://snyk.io/digital-customer-success/) offers 
 * Office hours: Informal sessions to discuss a Snyk topic
 * Kickoff sessions: Guided learning for roll out best practices
 
+{% hint style="info" %}
 Also see [Snyk Learn](snyk-learn.md) for developer education for general security across a variety of languages and ecosystems.
-
+{% endhint %}

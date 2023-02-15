@@ -1,6 +1,6 @@
 # Scan all unmanaged JAR files
 
-The Snyk CLI can scan unmanaged JAR files in [Java applications](../../products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md) to identify which open source package they contain.
+The Snyk CLI can scan unmanaged JAR files in [Java applications](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-gradle-maven.md) to identify which open source package they contain.
 
 The CLI identifies the package name, version, and vulnerabilities only if the package is available in Maven Central, and the JAR file hash matches the hash in Maven Central.
 
@@ -14,7 +14,7 @@ Testing each JAR file individually shows the name of the JAR file that was scann
 
 **WAR file support**: You can scan individual WAR files that are published in Maven Central. To scan open-source dependency JARs directly, you must extract (unzip) all other WAR files or JAR files containing other JARs.
 
-**Prerequisite:** You must install a [supported version](../../products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md#supported-versions) of Maven to scan unmanaged JAR files.
+**Prerequisite:** You must install a [supported version](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-gradle-maven.md#supported-versions) of Maven to scan unmanaged JAR files.
 
 ## Recursively scanning all subfolders
 
@@ -103,4 +103,4 @@ for /R %WORKSPACE% %%f in (*.jar) do cmd /c snyk monitor --scan-unmanaged --remo
 
 Here is example in the Snyk UI of using these scripts with `REMOTE_REPO_URL` set to "econnect".
 
-<figure><img src="../../.gitbook/assets/untitled (1) (1).png" alt="Result of scanning unmanaged JAR files"><figcaption><p>Result of scanning unmanaged JAR files</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/untitled (2).png" alt="Result of scanning unmanaged JAR files"><figcaption><p>Result of scanning unmanaged JAR files</p></figcaption></figure>

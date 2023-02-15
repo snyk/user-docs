@@ -6,4 +6,4 @@ After the initial configuration is done, you can invite members of an initial st
 
 After you then determine what practices and processes work best for the team, you can set up the rest of the applications, and invite the wider team or company to join using Snyk.
 
-See [Manage users in your organizations](../../snyk-admin/managing-users-and-permissions/manage-users-in-your-organizations.md) for more details.
+See [Manage users in your organizations](../../user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations.md) for more details.

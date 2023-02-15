@@ -23,7 +23,7 @@ When the PR Checks feature is enabled, Snyk Code automatically scans your source
 
 When SAST issues are found in your PR, Snyk Code provides you with additional details on each detected issue, and offers you fix examples to assist you in developing secure code. By clicking the discovered issues or the link next to them in your SCM, you can open the Snyk Web UI, and view the full details of each discovered vulnerability in your PR:
 
-<figure><img src="../../../.gitbook/assets/image (428).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (507).png" alt=""><figcaption></figcaption></figure>
 
 If you want to pass PRs that were automatically failed due to vulnerabilities that were found in them, Snyk Code also enables you to [mark failed PRs as successful](viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md#\_ref105582006) via the Snyk Web UI. Once you click the **Mark as successful in SCM** button on the Web UI, your failed PRs are considered as successful in the SCM, and can be merged into the target branch:
 
@@ -39,8 +39,8 @@ Every PR check is considered as a “test” in the test count of the related Or
 
 The workflow of using the PR Checks feature is as follows:
 
-1. [Integrating your required SCM with Snyk.](../../../products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-2-integrating-your-source-control-system-with-snyk-code.md)
-2. [Importing from the integrated SCM to Snyk the repositories whose PRs you want Snyk Code to check.](../../../products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/)
+1. [Integrating your required SCM with Snyk.](../../snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-2-integrating-your-source-control-system-with-snyk-code.md)
+2. [Importing from the integrated SCM to Snyk the repositories whose PRs you want Snyk Code to check.](../../snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/)
 3. [Enabling the Automatic PR Checks feature for Snyk Code in your Snyk-SCM integration on the level of an Organization or a specific Project.](enabling-pr-checks-for-snyk-code.md)
 4. [Viewing the results of the PR check in your SCM after the creation of a new PR.](viewing-the-pr-checks-in-your-scm.md)
 5. [Viewing additional details and fix examples for the issues that were discovered in the PR on the Snyk Web UI.](viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md)

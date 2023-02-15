@@ -8,7 +8,7 @@ To view your application vulnerabilities and licensing issues, go to [your Proje
 
 Click on the Project entry to view detailed information for that Project:
 
-<figure><img src="../../.gitbook/assets/project-header (1).png" alt="Detailed information for the Package.json Project"><figcaption><p>Detailed information for the <strong>Package.json</strong> Project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/project-header.png" alt="Detailed information for the Package.json Project"><figcaption><p>Detailed information for the <strong>Package.json</strong> Project</p></figcaption></figure>
 
 The following information is available:
 
@@ -34,4 +34,4 @@ The summary information shows:
 * Project import information:
   * **Imported by**: The user who imported the project.
   * **Project owner**: Click **Add a project owner** to add an owner for this project, from a list of everyone who has access to that project (everyone who is a member of that Organization). This information can also be viewed in the [Projects endpoint](https://snyk.docs.apiary.io/#reference/projects), in the API.
-* Predefined [Project attributes](project-attributes.md) and any additional [Project tag](../../snyk-web-ui/introduction-to-snyk-projects/project-tags.md) metadata.
+* Predefined [Project attributes](project-attributes.md) and any additional [Project tag](project-tags.md) metadata.

@@ -28,7 +28,7 @@ See [Getting started with the CLI](../snyk-cli/getting-started-with-the-cli.md) 
 
 A test is run when you import a Snyk Project (see [Import a Project](quickstart/import-a-project.md)), or click the **Retest now** button on a Project in the Overview tab.
 
-See [Exploring the Snyk Web UI](../snyk-web-ui/getting-started-with-the-snyk-web-ui.md) for details.
+See [Exploring the Snyk Web UI](getting-started-with-the-snyk-web-ui.md) for details.
 
 #### Run tests with the API
 
@@ -43,7 +43,7 @@ See [API documentation](https://snyk.docs.apiary.io) for details.
 After you [import a Project](quickstart/import-a-project.md), Snyk automatically runs periodic scans on that Project, to see if your code is affected by newly disclosed vulnerabilities.
 
 {% hint style="info" %}
-Test frequency is set to daily by default. To change frequency, go to the **Usage** page (see [Usage page details](../snyk-admin/managing-settings/usage-page-details.md)), the project **Settings** page (see [View project settings](../manage-issues/introduction-to-snyk-projects/view-project-settings.md)) or use the V3 Projects API (see [API Docs](https://apidocs.snyk.io/experimental?version=2022-12-21%7Eexperimental#patch-/orgs/-org\_id-/projects/-project\_id-))
+Test frequency is set to daily by default. To change frequency, go to the **Usage** page (see [Usage page details](../user-and-group-management/managing-settings/usage-page-details.md)), the project **Settings** page (see [View project settings](../manage-issues/introduction-to-snyk-projects/view-project-settings.md)) or use the V3 Projects API (see [API Docs](https://apidocs.snyk.io/experimental?version=2022-12-21%7Eexperimental#patch-/orgs/-org\_id-/projects/-project\_id-))
 {% endhint %}
 
 #### Use Snyk monitor

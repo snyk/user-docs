@@ -8,5 +8,5 @@ To configure and start using the Automatic PR Checks feature, you need the follo
   \- For more information on integrating your SCM with your Snyk Account, see [Snyk Code Integrations](https://docs.snyk.io/products/snyk-code/key-features/integrations).\
   \- The Automatic PR Checks feature in Snyk Code is currently NOT supported when using the Snyk Broker – Code Agent deployment method.
 * Repositories with code in a supported language and platform.\
-  **Note**: For more information, see [Snyk Code - Supported languages and frameworks](../../../products/snyk-code/snyk-code-language-and-framework-support.md).
+  **Note**: For more information, see [Snyk Code - Supported languages and frameworks](../../snyk-code/snyk-code-language-and-framework-support.md).
 * Be the owner or administrator of the specific organization for which you want to enable the PR Checks feature.

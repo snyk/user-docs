@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Free and Team plan users are entitled to a single Organization in Snyk (see [What’s a Snyk Organization?](../../../snyk-admin/managing-groups-and-organizations/whats-a-snyk-organization.md) for details)
+Free and Team plan users are entitled to a single Organization in Snyk (see [What’s a Snyk Organization?](../../../user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization.md) for details)
 
 ### Rename your Organization
 
@@ -19,8 +19,8 @@ If you rename the display name, the access URL may still reflect the original na
 
 To create a new Organization, select the Organizations menu option (in this example, **Organization Name**), and click the **Create  new Organization** option:
 
-<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Create an Organization</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption><p>Create an Organization</p></figcaption></figure>
 
 ### More details
 
-See [Managing groups & organizations](../../../snyk-admin/managing-groups-and-organizations/).
+See [Managing groups & organizations](../../../user-and-group-management/managing-groups-and-organizations/).

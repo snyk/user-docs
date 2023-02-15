@@ -14,7 +14,7 @@ This section describes Snyk functions that can help you reduce noise, and help e
 
 ### Manage notifications
 
-You can manage notifications both for your Organization and for your personal account, to avoid being overwhelmed by too many email notifications. See [Managing Notifications](../../snyk-admin/notifications.md) for more details.
+You can manage notifications both for your Organization and for your personal account, to avoid being overwhelmed by too many email notifications. See [Managing Notifications](../../user-and-group-management/notifications.md) for more details.
 
 * **Organization Notification Settings**\
   In your settings for the organization and its members, you can determine if alerts are only for High and Critical, this is very useful to focus on the worst issues. This does not impact reporting, only alerts.
@@ -40,4 +40,4 @@ See [Snyk test and snyk monitor in CI/CD integration](../../integrations/ci-cd-i
 
 If you have a large number of projects, initially we recommend you turn both of these off, for all but the important projects. As your teams become more accustomed to this type of capability, you can then slowly turn it on across your repositories.
 
-See [Upgrading dependencies with automatic PRs](../../products/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs.md) and [Run PR Checks](../../scan-application-code/run-pr-checks/) for details.
+See [Upgrading dependencies with automatic PRs](../../scan-application-code/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs.md) and [Run PR Checks](../../scan-application-code/run-pr-checks/) for details.

@@ -28,7 +28,7 @@ You can also select **Fix this vulnerability** for a specific issue:
 
 <figure><img src="../../.gitbook/assets/image26.png" alt="Fix this vulnerability for an issue"><figcaption><p>Fix this vulnerability for an issue</p></figcaption></figure>
 
-See [Fix vulnerabilities with Snyk Open Source](../../products/snyk-open-source/open-source-basics/) for an overview.\
+See [Fix vulnerabilities with Snyk Open Source](../../scan-application-code/snyk-open-source/open-source-basics/) for an overview.\
 See [Manage issues](../) for more details.
 
 ### View issue details
@@ -57,4 +57,4 @@ Snyk uses the package manager for your application to build the dependency tree 
 
 The example that follows shows a vulnerability based on the transitive dependency **qs@2.2.4**, brought in from the direct dependency **body-parser@ 1.9.0**.
 
-<figure><img src="../../.gitbook/assets/image23 (1).png" alt="Issues detail page dependencies tab"><figcaption><p>Issues detail page dependencies tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image23.png" alt="Issues detail page dependencies tab"><figcaption><p>Issues detail page dependencies tab</p></figcaption></figure>

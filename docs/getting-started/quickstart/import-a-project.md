@@ -23,10 +23,10 @@ The steps to import a Project are as follows:
 
 * Select the repositories to use, then choose **Add selected repositories** to import the selected repositories into your project:
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Add selected repositories</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (259).png" alt=""><figcaption><p>Add selected repositories</p></figcaption></figure>
 
 {% hint style="info" %}
-Projects you select to import are shown with a ![Check mark](<../../.gitbook/assets/image (7).png>).\
+Projects you select to import are shown with a ![Check mark](<../../.gitbook/assets/image (467).png>).\
 Projects previously imported are marked by a ✔.
 {% endhint %}
 
@@ -61,7 +61,7 @@ If you see any errors during import, see [Project import errors](https://support
 
 Importing a Project also does the following:
 
-* Sets Snyk to run a regular scan on that Project for issues ([daily by default](../../snyk-admin/managing-settings/usage-page-details.md#projects)).
+* Sets Snyk to run a regular scan on that Project for issues ([daily by default](../../user-and-group-management/managing-settings/usage-page-details.md#projects)).
 * Initiates some automations, especially default Snyk tests on pull and merge requests, which help prevent vulnerabilities from being added to the Project. This automation fails builds according to your conditions and can be disabled or customized in your [integration settings](../../integrations/git-repository-scm-integrations/).
 
 {% hint style="info" %}

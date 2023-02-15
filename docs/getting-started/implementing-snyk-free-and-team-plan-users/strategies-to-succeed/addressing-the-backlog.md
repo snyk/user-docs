@@ -18,7 +18,7 @@ One approach is to prioritize and then assign dev work to fix issues that have s
 
 #### Auto-create PRs
 
-Another approach is to use Snyk’s proactive approach to create PRs for older open-source vulnerabilities that have fixes. See [Fix vulnerabilities with Snyk Open Source](../../../products/snyk-open-source/open-source-basics/) for details.
+Another approach is to use Snyk’s proactive approach to create PRs for older open-source vulnerabilities that have fixes. See [Fix vulnerabilities with Snyk Open Source](../../../scan-application-code/snyk-open-source/open-source-basics/) for details.
 
 #### Manage work through Jira
 

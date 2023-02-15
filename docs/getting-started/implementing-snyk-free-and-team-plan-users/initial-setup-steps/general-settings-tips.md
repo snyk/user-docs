@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Here are some tips for General settings (See [Managing settings](../../../snyk-admin/managing-settings/) for more details).
+Here are some tips for General settings (See [Managing settings](../../../user-and-group-management/managing-settings/) for more details).
 
 Select **Settings** > **General** to view settings.
 
@@ -27,4 +27,4 @@ See [Ignore issues](../../../manage-issues/issue-management/ignore-issues.md) fo
 
 ### License policies
 
-For Team Plan Users, you can also configure [License policies](../../../products/snyk-open-source/license-policies/), found under **Settings**.
+For Team Plan Users, you can also configure [License policies](../../../scan-application-code/snyk-open-source/license-policies/), found under **Settings**.

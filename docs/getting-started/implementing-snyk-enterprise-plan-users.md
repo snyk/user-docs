@@ -27,7 +27,7 @@ As you prepare for your teams to start adopting Snyk as part of a secure develop
 
 More information:
 
-* Docs: [Integrations](../products/snyk-code/introducing-snyk-code/key-features/integrations.md)
+* Docs: [Integrations](../scan-application-code/snyk-code/introducing-snyk-code/key-features/integrations.md)
 * Snyk Training: [Ways to integrate Snyk at your company](https://training.snyk.io/courses/ways-to-use-snyk)
 
 #### How to structure your account
@@ -90,7 +90,7 @@ Snyk sends teams different types of alerts based on settings defined for the gro
 
 More information:
 
-* Docs: [Managing notifications](../snyk-admin/notifications.md)
+* Docs: [Managing notifications](../user-and-group-management/notifications.md)
 * Training: [Notifications](https://training.snyk.io/courses/notifications)
 
 #### Set ignore permissions
