@@ -88,6 +88,8 @@ Set or override the remote URL for the repository that you would like to monitor
 
 Include development-only dependencies. Applicable only for some package managers, for example, `devDependencies` in npm or `:development` dependencies in Gemfile.
 
+**Note**: This option can be used with Maven projects.
+
 Default: scan only production dependencies.
 
 ### `--org=<ORG_ID>`
@@ -201,6 +203,8 @@ This is an alias for `--project-tags`
 ## Options for Maven projects
 
 For more information about Maven CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven)
+
+**Note**: The `--dev` option can be used with Maven projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/monitor#dev)
 
 ### `--maven-aggregate-project`
 
