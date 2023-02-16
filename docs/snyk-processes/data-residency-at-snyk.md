@@ -75,7 +75,6 @@ Snyk offers almost all the same features, support, and performance in the EU reg
 
 The following **features are not yet available**:
 
-* Summary and Issues tabs in Reporting
 * C/C++ language support in Snyk Open Source
 * Snyk Cloud
 
