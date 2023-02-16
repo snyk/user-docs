@@ -1,5 +1,9 @@
 # Snyk Container - Supported operating system distributions
 
+{% hint style="info" %}
+For environments supported with other Snyk products, see: [Snyk Open Source - supported languages and package managers](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/), [Snyk Code - Supported languages and frameworks](../scan-application-code/snyk-code/snyk-code-language-and-framework-support.md), [Snyk IaC - Supported environments](../scan-cloud-deployment/snyk-infrastructure-as-code/snyk-iac-supported-environments.md), and [Snyk Cloud - Supported providers](../scan-cloud-deployment/snyk-cloud/snyk-cloud-supported-providers.md)
+{% endhint %}
+
 Snyk Container supports the following operating system distributions.
 
 If you use an unsupported distribution, such as one that has reached its End-of-life (EOL) and is no longer being maintained, Snyk provides a message to tell you this is unsupported.
@@ -8,9 +12,9 @@ If you use an unsupported distribution, such as one that has reached its End-of-
 For unsupported distributions, you may not receive any notifications of vulnerabilities due to a lack of security updates: this does not mean that your image is secure.
 {% endhint %}
 
-## Supported Linux distributions
+### Supported Linux distributions
 
-### Alpine Linux
+#### Alpine Linux
 
 * Alpine Linux 3.17
 * Alpine Linux 3.16
@@ -29,24 +33,24 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * Alpine Linux 3.3
 * Alpine Linux 3.2
 
-### Amazon Linux
+#### Amazon Linux
 
 * Amazon Linux 2022
 * Amazon Linux 2
 * Amazon AMI 2018.03
 
-### CentOS Stream
+#### CentOS Stream
 
 * CentOS Stream 9
 * CentOS Stream 8
 
-### CentOS Linux
+#### CentOS Linux
 
 * CentOS Linux 8
 * CentOS Linux 7
 * CentOS Linux 6
 
-### Debian
+#### Debian
 
 * Unstable
 * Debian 12
@@ -55,7 +59,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * Debian 9
 * Debian 8
 
-### Oracle Linux
+#### Oracle Linux
 
 * Oracle Linux 9
 * Oracle Linux 8
@@ -63,25 +67,25 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * Oracle Linux 6
 * Oracle Linux 5
 
-### Red Hat Enterprise Linux (RHEL)
+#### Red Hat Enterprise Linux (RHEL)
 
 * Red Hat Enterprise Linux 9
 * Red Hat Enterprise Linux 8
 * Red Hat Enterprise Linux 7
 * Red Hat Enterprise Linux 6
 
-### Rocky Linux
+#### Rocky Linux
 
 * Rocky Linux 9
 * Rocky Linux 8
 
-### SUSE Linux Enterprise Server (SLES)
+#### SUSE Linux Enterprise Server (SLES)
 
 * SUSE Linux Enterprise Server 15.2
 * SUSE Linux Enterprise Server 15.1
 * SUSE Linux Enterprise Server 15.0
 
-### Ubuntu
+#### Ubuntu
 
 * Ubuntu 22.10
 * Ubuntu 22.04
