@@ -42,7 +42,7 @@ Files that Snyk uses to autodetect the project type include, but are not limited
 
 The way in which Snyk analyzes the file and builds the tree varies depends on:
 
-* The [language and package manager](../language-and-package-manager-support/) you use (as determined by the manifest file type)
+* The [language and package manager](../../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/) you use (as determined by the manifest file type)
 * The the method of scanning (using the [Snyk CLI](../../../snyk-cli/), or by importing from a Snyk [Git repository integration](../../../integrations/git-repository-scm-integrations/)).
 
 ### Scan multiple manifest files
@@ -67,4 +67,4 @@ Many package managers allow calling out separately dependencies which are to be 
 
 `$ snyk test --dev`
 
-See [Open Source language and package manager support](../language-and-package-manager-support/) for more information concerning supported languages.
+See [Open Source language and package manager support](../../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/) for more information concerning supported languages.

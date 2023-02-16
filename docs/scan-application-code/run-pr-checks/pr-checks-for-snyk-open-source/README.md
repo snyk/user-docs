@@ -23,7 +23,7 @@ There are two main troubleshooting situations to diagnose for Snyk's PR checks.
 1. Passed when it should have failed: submit [Vulnerability Disclosure](https://snyk.io/vulnerability-disclosure/).
 2.  Failed when it should have passed: Check security check output.
 
-    <figure><img src="../../../.gitbook/assets/security-check (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/security-check (1).png" alt=""><figcaption></figcaption></figure>
 
 > **Hot tip**: Mimic a PR check like this (changes only, not state of project)[ Snyk CLI](../../../snyk-cli/test-for-vulnerabilities/advanced-failing-of-builds-in-snyk-cli.md#fail-current-build-only-if-new-vulnerabilities-are-being-introduced).
 
@@ -41,8 +41,8 @@ Every PR check is considered as a “test” in the test count of the related Or
 
 The workflow of using the PR Checks feature is the same as it is for Snyk Code:
 
-1. [Integrating your required SCM with Snyk.](../../snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-2-integrating-your-source-control-system-with-snyk-code.md)
-2. [Importing from the integrated SCM to Snyk the repositories whose PRs you want Snyk Code to check.](../../snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/)
+1. [Integrating your required SCM with Snyk.](../../../products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-2-integrating-your-source-control-system-with-snyk-code.md)
+2. [Importing from the integrated SCM to Snyk the repositories whose PRs you want Snyk Code to check.](../../../products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/)
 3. [Enabling the Automatic PR Checks feature for Snyk Code in your Snyk-SCM integration on the level of an Organization or a specific Project.](../pr-checks-for-snyk-code/enabling-pr-checks-for-snyk-code.md)
 4. [Viewing the results of the PR check in your SCM after the creation of a new PR.](../pr-checks-for-snyk-code/viewing-the-pr-checks-in-your-scm.md)
 5. [Viewing additional details and fix examples for the issues that were discovered in the PR on the Snyk Web UI.](../pr-checks-for-snyk-code/viewing-and-working-with-the-pr-check-results-on-the-snyk-web-ui.md)

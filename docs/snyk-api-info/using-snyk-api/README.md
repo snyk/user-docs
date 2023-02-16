@@ -27,4 +27,4 @@ For more articles on using Snyk API, see the following:
 
 * [API support articles](https://support.snyk.io/hc/en-us/sections/360001344097-API)
 * [Audit logs](../../user-and-group-management/managing-users-and-permissions/audit-logs.md)
-* [Snyk for Bazel](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-bazel.md)
+* [Snyk for Bazel](../../products/snyk-open-source/language-and-package-manager-support/snyk-for-bazel.md)

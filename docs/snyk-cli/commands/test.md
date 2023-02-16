@@ -317,13 +317,37 @@ Default: true
 
 ### `--strict-out-of-sync=true|false`
 
-Control testing out-of-sync lockfiles.
+Prevent testing out-of-sync lockfiles.
+
+If there are out-of-sync lockfiles in the project, the `test` command fails when `--strict-out-of-sync=true`.&#x20;
 
 Default: true
 
 ### `--yarn-workspaces`
 
-Detect and scan Yarn workspaces. You can specify how many sub-directories to search using `--detection-depth` and exclude directories and files using `--exclude`. Alternatively scan Yarn workspaces with other projects using `--all-projects`
+Detect and scan Yarn Workspaces only when a lockfile is in the root.
+
+You can specify how many sub-directories to search using `--detection-depth.`
+
+You can exclude directories and files using `--exclude`.
+
+By default, `--all-projects` automatically detects and scans Yarn Workspaces.with other projects.&#x20;
+
+### `--fail-on` all / upgradable / patchable
+
+Configure to fail when there are vulnerabilities as follows:
+
+All: fail for all projects containing vulnerabilities.
+
+Upgradable: fail only for projects with vulnerabilities that can be fixed with package upgrades.
+
+Patchable: fail for projects with vulnerabilities that can be fixed with either upgrades or patches.
+
+### `--prune-repeated-subdependencies true / false`
+
+Use this option if any big projects fail to be tested.
+
+Default: false
 
 ## Option for CocoaPods projects
 

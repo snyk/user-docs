@@ -19,7 +19,7 @@ If you rename the display name, the access URL may still reflect the original na
 
 To create a new Organization, select the Organizations menu option (in this example, **Organization Name**), and click the **Create  new Organization** option:
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption><p>Create an Organization</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Create an Organization</p></figcaption></figure>
 
 ### More details
 

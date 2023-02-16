@@ -8,7 +8,7 @@ Snyk CLI scanning for Open Source supports many languages and tools, including J
 
 Snyk CLI also supports:
 
-* [Snyk Code scanning](../scan-application-code/snyk-code/cli-for-snyk-code/)
+* [Snyk Code scanning](../products/snyk-code/cli-for-snyk-code/)
 * [Snyk Container scanning](../scan-containers/snyk-cli-for-container-security/) including Docker scanning
 * [Snyk Infrastructure as Code scanning](../scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/) including Terraform and Kubernetes (K8s) projects
 

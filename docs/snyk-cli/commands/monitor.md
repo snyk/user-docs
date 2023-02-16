@@ -286,7 +286,25 @@ Default: true
 
 ### `--yarn-workspaces`
 
-Detect and scan Yarn workspaces. You can specify how many sub-directories to search using `--detection-depth` and exclude directories and files using `--exclude`. Alternatively scan Yarn workspaces with other projects using `--all-projects`
+Detect and scan Yarn Workspaces only when a lockfile is in the root.
+
+You can specify how many sub-directories to search using `--detection-depth`.
+
+You can exclude directories and files using `--exclude`.
+
+By default, `--all-projects` automatically detects and scans Yarn Workspaces.with other projects.&#x20;
+
+### `--prune-repeated-subdependencies true / false`
+
+Use this option if any big projects fail to be tested.
+
+Default: false
+
+### `--dev` true / false
+
+Set to true if Snyk should scan dev dependencies.
+
+DefaultL false
 
 ## Option for CocoaPods projects
 

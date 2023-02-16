@@ -1,6 +1,6 @@
 # Getting started with Snyk Open Source
 
-Use Snyk Open Source to scan and fix vulnerabilities in your application's Open Source libraries, for a [supported language and package manager](language-and-package-manager-support/), such as Java.
+Use Snyk Open Source to scan and fix vulnerabilities in your application's Open Source libraries, for a [supported language and package manager](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/), such as Java.
 
 {% hint style="info" %}
 This process describes getting started using the [Snyk Web UI](../../getting-started/quickstart/create-a-snyk-account/snyk-web-ui.md) with a Git-based source repository.

@@ -28,7 +28,7 @@ You can also select **Fix this vulnerability** for a specific issue:
 
 <figure><img src="../../.gitbook/assets/image26.png" alt="Fix this vulnerability for an issue"><figcaption><p>Fix this vulnerability for an issue</p></figcaption></figure>
 
-See [Fix vulnerabilities with Snyk Open Source](../../scan-application-code/snyk-open-source/open-source-basics/) for an overview.\
+See [Fix vulnerabilities with Snyk Open Source](../../products/snyk-open-source/open-source-basics/) for an overview.\
 See [Manage issues](../) for more details.
 
 ### View issue details
@@ -41,7 +41,7 @@ For each issue, details about the vulnerability are displayed including its [pri
 
 Click **More about this issue** to view detailed information about the vulnerability from [Snyk's vulnerability database](https://snyk.io/product/vulnerability-database/), which provides a deeper insight into the issue, including its CVSS score:
 
-<figure><img src="../../.gitbook/assets/image15.png" alt="More information from Snyk Vulnerability database"><figcaption><p>More information from Snyk Vulnerability database</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image15 (1).png" alt="More information from Snyk Vulnerability database"><figcaption><p>More information from Snyk Vulnerability database</p></figcaption></figure>
 
 ### View fixes
 
