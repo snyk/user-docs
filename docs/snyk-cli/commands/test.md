@@ -87,7 +87,7 @@ Include development-only dependencies. Applicable only for some package managers
 
 **Note**: This option can be used with Maven projects.
 
-Default: scan only production dependencies.
+Default: false, scan only production dependencies.
 
 ### `--org=<ORG_ID>`
 
@@ -305,15 +305,39 @@ Example: `snyk monitor --file=my-project.sln --project-name-prefix=my-group/`
 
 This is useful when you have multiple projects with the same name in other `.sln` files.
 
-## Option for npm projects
+## Options for npm projects
+
+**Note**: The `--dev` option can be used with npm projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/test#dev)
+
+**Note**: You can use the `--all-projects` option to scan and detect npm projects and all other projects in the directory. See the `--all-projects` option information in the Options section of this help.
 
 ### `--strict-out-of-sync=true|false`
 
-Control testing out-of-sync lockfiles.
+Prevent testing out-of-sync lockfiles.
+
+If there are out-of-sync lockfiles in the project, the `test` command fails when `--strict-out-of-sync=true`.&#x20;
 
 Default: true
 
+### `--fail-on=<all|upgradable|patchable>`
+
+Configure to fail when there are vulnerabilities as follows:
+
+All: fail for all projects containing vulnerabilities.
+
+Upgradable: fail only for projects with vulnerabilities that can be fixed with package upgrades.
+
+Patchable: fail for projects with vulnerabilities that can be fixed with either upgrades or patches.
+
+### --prune-repeated-subdependencies, -p
+
+Use this option if any big projects fail to be tested.
+
+Default: false
+
 ## Options for Yarn projects
+
+**Note**: The `--dev` option can be used with Yarn projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/test#dev)
 
 ### `--strict-out-of-sync=true|false`
 
@@ -333,7 +357,7 @@ You can exclude directories and files using `--exclude`.
 
 By default, `--all-projects` automatically detects and scans Yarn Workspaces.with other projects.&#x20;
 
-### `--fail-on` all / upgradable / patchable
+### `--fail-on=<all|upgradable|patchable>`
 
 Configure to fail when there are vulnerabilities as follows:
 
@@ -343,7 +367,7 @@ Upgradable: fail only for projects with vulnerabilities that can be fixed with p
 
 Patchable: fail for projects with vulnerabilities that can be fixed with either upgrades or patches.
 
-### `--prune-repeated-subdependencies true / false`
+### --prune-repeated-subdependencies, -p
 
 Use this option if any big projects fail to be tested.
 
