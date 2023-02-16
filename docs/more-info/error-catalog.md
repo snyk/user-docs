@@ -242,7 +242,7 @@
   **Help Links:**
 
   
-### [SNYK-OS-9003](#snyk-os-9003-snyk-iac-or-sast-project) - Snyk IaC or SAST project
+### [SNYK-OS-9003](#snyk-os-9003-not-found) - Not Found
   This is either a Snyk Code or Snyk Infrastructure as Code project. We don’t currently provide an SBOM for these project types.
 
   **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
@@ -705,4 +705,4 @@
   
 ---
 
-Genererated at 2023-02-14T14:46:05.607Z
+Genererated at 2023-02-16T13:56:50.974Z
