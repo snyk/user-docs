@@ -3,7 +3,7 @@
 Snyk Open Source supports the following programming languages, build tools, and package managers.
 
 {% hint style="info" %}
-For environments supported with other Snyk products, see: [Snyk Code - Supported languages and frameworks](../../snyk-code/snyk-code-language-and-framework-support.md), [Snyk Container - Supported operating system distributions](../../../scan-containers/supported-operating-system-distributions.md), [Snyk Infrastructure as Code](../../../scan-cloud-deployment/snyk-infrastructure-as-code/), and [Snyk Cloud concepts](../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-concepts.md).&#x20;
+For environments supported with other Snyk products, see: [Snyk Code - Supported languages and frameworks](../../snyk-code/snyk-code-language-and-framework-support.md), [Snyk Container - Supported operating system distributions](../../../scan-containers/supported-operating-system-distributions.md), [Snyk IaC - Supported environments](../../../scan-cloud-deployment/snyk-infrastructure-as-code/snyk-iac-supported-environments.md), and [Snyk Cloud - Supported providers](../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-supported-providers.md).&#x20;
 {% endhint %}
 
 | **Language**                                                         | **Package manager/build tool**                                                                      |

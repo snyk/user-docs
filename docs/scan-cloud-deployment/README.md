@@ -10,15 +10,7 @@ With Snyk, you can secure cloud infrastructure before and after it is deployed. 
 * [Filter issues](snyk-cloud/snyk-cloud-issues/) to target the most mission-critical resources.
 * Review a [report of issues](../manage-issues/snyk-reports/reporting-beta-2022/available-snyk-reports.md#cloud-compliance-issues-report) for an entire organization, organized by compliance standard.
 
-Snyk IaC supports the following environments:
+For a list of supported environments and cloud providers, see the following:
 
-* [HashiCorp Terraform](snyk-infrastructure-as-code/scan-terraform-files/)
-* [AWS CloudFormation](snyk-infrastructure-as-code/scan-cloudformation-files/)
-* [Kubernetes](snyk-infrastructure-as-code/scan-kubernetes-configuration-files/)
-* [Azure Resource Manager](snyk-infrastructure-as-code/scan-arm-configuration-files.md)
-
-Snyk Cloud supports the following providers:
-
-* [Amazon Web Services](snyk-cloud/getting-started-with-snyk-cloud-aws/)
-* [Azure](snyk-cloud/getting-started-with-snyk-cloud-azure/)
-* [Google](snyk-cloud/getting-started-with-snyk-cloud-google/)
+* [Snyk IaC - Supported environments](snyk-infrastructure-as-code/snyk-iac-supported-environments.md)
+* [Snyk Cloud - Supported providers](snyk-cloud/snyk-cloud-supported-providers.md)
