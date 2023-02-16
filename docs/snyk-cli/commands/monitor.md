@@ -88,7 +88,7 @@ Set or override the remote URL for the repository that you would like to monitor
 
 Include development-only dependencies. Applicable only for some package managers, for example, `devDependencies` in npm or `:development` dependencies in Gemfile.
 
-**Note**: This option can be used with Maven projects.
+**Note**: This option can be used with Maven, npm, and Yarn projects.
 
 Default: scan only production dependencies.
 
@@ -270,13 +270,25 @@ This is useful when you have multiple projects with the same name in other `.sln
 
 ## Option for npm projects
 
+**Note**: The `--dev` option can be used with npm projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/monitor#dev)
+
+**Note**: You can use the `--all-projects` option to scan and detect npm projects and all other projects in the directory. See the `--all-projects` option information in the Options section of this help.
+
 ### `--strict-out-of-sync=true|false`
 
 Control monitoring out-of-sync lockfiles.
 
 Default: true
 
+### `--prune-repeated-subdependencies`, `-p`
+
+Use this option if any big projects fail to be tested.
+
+Default: false
+
 ## Options for Yarn projects
+
+**Note**: The `--dev` option can be used with Yarn projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/monitor#dev)
 
 ### `--strict-out-of-sync=true|false`
 
@@ -294,17 +306,11 @@ You can exclude directories and files using `--exclude`.
 
 By default, `--all-projects` automatically detects and scans Yarn Workspaces.with other projects.&#x20;
 
-### `--prune-repeated-subdependencies true / false`
+### `--prune-repeated-subdependencies`, `-p`
 
 Use this option if any big projects fail to be tested.
 
 Default: false
-
-### `--dev` true / false
-
-Set to true if Snyk should scan dev dependencies.
-
-DefaultL false
 
 ## Option for CocoaPods projects
 
