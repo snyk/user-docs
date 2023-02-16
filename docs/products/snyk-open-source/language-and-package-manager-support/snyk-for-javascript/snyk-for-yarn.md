@@ -17,7 +17,7 @@ Features may not be available, depending on your plan. See [pricing plans](https
 
 ## Yarn version and how it affects Snyk support
 
-Snyk uses the Yarn lockfile, `yarn.lock`, to generate representation of project dependencies.&#x20;
+Snyk uses the Yarn lockfile (`yarn.lock`) to generate representation of Project dependencies.&#x20;
 
 The files Snyk relies on to scan a Project may change on version upgrades of the package manager.Therefore Snyk lists only versions verified internally as supported.&#x20;
 
@@ -33,7 +33,7 @@ To scan your dependencies, ensure you install the relevant package manager, and 
 
 The way Snyk analyzes and builds the graph varies depending on the language and package manager of the Project, as well as the location of your Project.
 
-See [Snyk CLI for Yarn projects](snyk-for-yarn.md#snyk-cli-for-yarn-projects) and [Git services for Yarn projects](snyk-for-yarn.md#git-services-for-yarn-projects).
+For the ways you can scan Projects with Snyk, see [Snyk CLI for Yarn projects](snyk-for-yarn.md#snyk-cli-for-yarn-projects) and [Git services for Yarn projects](snyk-for-yarn.md#git-services-for-yarn-projects).
 
 ## Snyk CLI for Yarn projects
 
@@ -42,7 +42,7 @@ Snyk analyzes your `package.json` and `yarn.lock` files to build a fully structu
 To get started using the CLI for Yarn projects:
 
 * Make sure Yarn is installed.
-* Make sure you are in a directory with a Yarn Project files, that is, `package.json` and `yarn.lock`.
+* Make sure you are in a directory with Yarn Project files, that is, `package.json` and `yarn.lock`.
 * Run `yarn`.
 * [Install](../../../../snyk-cli/install-the-snyk-cli.md) and authenticate the Snyk CLI.
 
@@ -77,7 +77,7 @@ You may use a common `.snyk` policy file if you maintain ignores and patches in 
 
 ## Git services for Yarn projects
 
-Yarn projects can be imported from any of the Git services Snyk supports. After import, Snyk analyzes your projects based on their supported manifest files.
+Yarn Projects can be imported from any of the Git services Snyk supports. After import, Snyk analyzes your Projects based on their supported manifest files.
 
 Snyk scans based on these files being present:
 
@@ -98,13 +98,13 @@ From the Snyk UI, use these parameters to customize your language preferences fo
 
 #### Preferences for Snyk for Yarn
 
-| Preference                                                         | Description                                                                                                                                                                                                                                                                                      |
-| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Scan and fix devDependencies                                       | If this is selected, Snyk reads the "devDependencies" property on the `package.json` and reports and fixes any vulnerabilities accordingly.                                                                                                                                                      |
-| Require package.json and yarn.lock to be in sync                   | When this is selected, if the `package.json` and `yarn.lock` files are out of sync, Snyk fails the import.                                                                                                                                                                                       |
-| Exclude yarn.lock from being generated when fixing vulnerabilities | If you are using private mirrors or registries, a Snyk-generated lock file might not be appropriate for you because Snyk uses the npm registry to update the lock file. This setting allows you to opt out of getting lock files generated for you in Snyk fix pull requests and merge requests. |
+| Preference                                                         | Description                                                                                                                                                                                                                                                                                    |
+| ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Scan and fix devDependencies                                       | If this is selected, Snyk reads the "devDependencies" property on the `package.json` and reports and fixes any vulnerabilities accordingly.                                                                                                                                                    |
+| Require package.json and yarn.lock to be in sync                   | When this is selected, if the `package.json` and `yarn.lock` files are out of sync, Snyk fails the import.                                                                                                                                                                                     |
+| Exclude yarn.lock from being generated when fixing vulnerabilities | If you are using private mirrors or registries, a Snyk-generated lock file might not be appropriate for you because Snyk uses the npm registry to update the lockfile. This setting allows you to opt out of getting lockfiles generated for you in Snyk fix pull requests and merge requests. |
 
-### Update language preferences for Snyk for Yarn
+## Update language preferences for Snyk for Yarn
 
 1. Log in to your account and navigate to the relevant Group and Organization that you want to manage.
 2. Select **Settings** > **Languages**
