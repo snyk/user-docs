@@ -1,7 +1,7 @@
 # Getting started with Snyk Cloud: Azure
 
 {% hint style="info" %}
-Azure support is currently in Closed Beta. If you are interested in using Snyk Cloud to scan your Azure subscription, please contact your Snyk account team. See [Snyk feature release process](../../../snyk-processes/snyk-feature-release-process.md) for more details.
+Azure support is currently in Closed Beta. If you are interested in using Snyk Cloud to scan your Azure subscription, please contact your Snyk account team. See [Snyk feature release process](../../../more-info/snyk-feature-release-process.md) for more details.
 {% endhint %}
 
 Snyk Cloud scans the infrastructure configuration in your [Microsoft Azure](https://azure.microsoft.com/en-us/) subscription and detects misconfigurations that can lead to vulnerabilities.

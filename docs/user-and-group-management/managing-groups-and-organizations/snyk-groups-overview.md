@@ -16,4 +16,4 @@ From the group overview, the vulnerability status of all of a group’s organiza
 
 Organization filters can be created, saved, and selected quickly via the **Organization Filters** dropdown.
 
-![](<../../.gitbook/assets/image (382) (1).png>)
+![](<../../.gitbook/assets/image (206) (1) (1) (1) (1) (1) (1) (1) (1).png>)

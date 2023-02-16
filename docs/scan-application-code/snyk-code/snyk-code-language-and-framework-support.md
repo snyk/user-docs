@@ -1,5 +1,9 @@
 # Snyk Code - Supported languages and frameworks
 
+{% hint style="info" %}
+For environments supported with other Snyk products, see: [Snyk Open Source - supported languages and package managers](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/), [Snyk Container - Supported operating system distributions](../../scan-containers/supported-operating-system-distributions.md), [Snyk IaC - Supported environments](../../scan-cloud-deployment/snyk-infrastructure-as-code/snyk-iac-supported-environments.md), and [Snyk Cloud - Supported providers](../../scan-cloud-deployment/snyk-cloud/snyk-cloud-supported-providers.md)
+{% endhint %}
+
 ## Language support with Snyk Code AI Engine
 
 Snyk Code is based on a deep-code, semantic-code Analysis Engine, which uses AI to continuously learn from billions of lines of code, and 100s of millions of code fixes, in the global development community. The Snyk Code AI Engine continuously evolves the human-guided reinforced learning cycle lead by Snyk's security researchers and engineers. See [this blog article ](https://snyk.io/blog/advanced-technologies-behind-snyk-code/)for more details.

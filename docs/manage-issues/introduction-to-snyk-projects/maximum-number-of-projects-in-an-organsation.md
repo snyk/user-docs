@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The number of Projects you can have in a single Organization depends on the type of [Snyk Pricing Plan](../../snyk-processes/plans.md) you are using:
+The number of Projects you can have in a single Organization depends on the type of [Snyk Pricing Plan](../../more-info/plans.md) you are using:
 
 | Plan       | Number of Projects |
 | ---------- | ------------------ |

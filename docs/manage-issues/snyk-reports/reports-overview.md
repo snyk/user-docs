@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is available with Enterprise plans. See [Snyk Pricing Plans](../../snyk-processes/plans.md) for details.\
+This feature is available with Enterprise plans. See [Snyk Pricing Plans](../../more-info/plans.md) for details.\
 To get access to the **Reporting Beta** tab, a Snyk admin can activate the reporting in [Snyk Preview](https://docs.snyk.io/features/user-and-group-management/managing-settings/snyk-preview). Note that Reporting Beta is not available for customers on Multi-Tenant EU or with Snyk Private Cloud.
 {% endhint %}
 

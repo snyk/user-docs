@@ -6,7 +6,7 @@ For more comprehensive troubleshooting information, see [Broker Troubleshooting 
 
 {% hint style="warning" %}
 **Multi-tenant settings**\
-When you are setting up Broker and/or Code Agent for use in Multi-tenant environments, additional variables are required. See [Regional hosting and data residency](../../snyk-processes/data-residency-at-snyk.md) for details.
+When you are setting up Broker and/or Code Agent for use in Multi-tenant environments, additional variables are required. See [Regional hosting and data residency](../../more-info/data-residency-at-snyk.md) for details.
 {% endhint %}
 
 ## Basic Broker Troubleshooting

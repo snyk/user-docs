@@ -10,7 +10,7 @@ Developers now assemble applications with a combination of proprietary and open 
 
 A good security process secures each of these components where they are built and maintained. Snyk integrates into DevOps processes to work the with developers using the methods each prefers, while following and supporting industry best practices. Snyk integrates directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit.
 
-<figure><img src="../.gitbook/assets/image (70) (1).png" alt="Developer Security Platform"><figcaption><p>Developer Security Platform: Products and Developer experience</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (162) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Developer Security Platform"><figcaption><p>Developer Security Platform: Products and Developer experience</p></figcaption></figure>
 
 ## Snyk products: use Snyk in your workflow
 
@@ -53,8 +53,8 @@ See [Snyk integrations](../integrations/) and [Snyk for IDEs](../ide-tools/) for
 
 Snyk has several [pricing plans](https://snyk.io/plans/) available, from free to Enterprise.
 
-See [Snyk Pricing Plans](../snyk-processes/plans.md) for more details.
+See [Snyk Pricing Plans](../more-info/plans.md) for more details.
 
 ## What happens to my data?
 
-See [How Snyk handles your data](../snyk-processes/how-snyk-handles-your-data.md) for details of Snyk data handling.
+See [How Snyk handles your data](../more-info/how-snyk-handles-your-data.md) for details of Snyk data handling.

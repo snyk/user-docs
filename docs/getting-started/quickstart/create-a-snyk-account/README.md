@@ -19,7 +19,7 @@ To create a Snyk account:
 <figure><img src="../../../.gitbook/assets/new_acct_created-10nov2022.png" alt="Get started options for a new Snyk account"><figcaption><p>Get started options for a new Snyk account</p></figcaption></figure>
 
 {% hint style="info" %}
-Different pricing plans are available, see [Plans](../../../snyk-processes/plans.md) for details.
+Different pricing plans are available, see [Plans](../../../more-info/plans.md) for details.
 {% endhint %}
 
 ### **What's next?**

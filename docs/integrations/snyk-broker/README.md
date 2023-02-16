@@ -82,7 +82,7 @@ For Snyk Open Source:
 
 Snyk Code and Snyk IaC need access to the entire repository.
 
-See [How Snyk handles your data](../../snyk-processes/how-snyk-handles-your-data.md) for more details. For information about using Snyk Broker with Snyk Container and requirements for open source, code analysis, and IaC, see [Using Snyk Broker to scan your code](./#using-snyk-broker-to-scan-your-code).
+See [How Snyk handles your data](../../more-info/how-snyk-handles-your-data.md) for more details. For information about using Snyk Broker with Snyk Container and requirements for open source, code analysis, and IaC, see [Using Snyk Broker to scan your code](./#using-snyk-broker-to-scan-your-code).
 
 ### Outbound requests allowed
 
