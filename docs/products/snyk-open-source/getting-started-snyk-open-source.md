@@ -25,25 +25,21 @@ You can view vulnerability results for imported Projects. The **Projects** tab a
 
 You can expand a Target to see vulnerability information for Projects, including the number of issues found, grouped by severity level:
 
-<figure><img src="../../.gitbook/assets/Getting started with open source.png" alt="Screenshot of a Snyk Project listing"><figcaption><p>.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Getting started with open source.png" alt="List of projects in Snyk Web UI."><figcaption><p>Projects overview</p></figcaption></figure>
 
 Click an entry to open the issues view for that entry, including the module where it was introduced, how to fix it, plus more details about the vulnerability itself.
 
-![](../../.gitbook/assets/project-details.png)
+<figure><img src="../../.gitbook/assets/project-details.png" alt="Open source project overview in Snyk Web UI."><figcaption><p>Open source project overview</p></figcaption></figure>
 
-See [view-project-information.md](../../manage-issues/introduction-to-snyk-projects/view-project-information.md "mention") for more details.
+See [View Project information](../../manage-issues/introduction-to-snyk-projects/view-project-information.md) for more details.
 
 ### Fix vulnerabilities
 
-For some languages, Snyk can fix vulnerabilities using fix pull/merge requests.
-
-{% hint style="info" %}
-See [what-languages-do-we-support-fix-pull-requests-or-merge-requests.md](../../manage-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md "mention")
-{% endhint %}
+For some languages, Snyk can fix vulnerabilities using fix pull/merge requests (see [What languages do we support Fix Pull Request or Merge Requests](../../manage-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md)).
 
 Navigate to the **Issues** view for a project:
 
-![](../../.gitbook/assets/Issues-view.png)
+<figure><img src="../../.gitbook/assets/Issues-view.png" alt="The Issues tab in an open source project in Snyk Web UI."><figcaption><p>Issues tab in open source project</p></figcaption></figure>
 
 To fix vulnerabilities:
 
@@ -54,6 +50,6 @@ To fix vulnerabilities:
 5. Snyk acts on the PR and displays a results screen.
 6. Optionally, select the **Files changed** tab to see details of the changes made.
 
-![](../../.gitbook/assets/screenshot\_2021-04-09\_at\_17.46.22.png)
+<figure><img src="../../.gitbook/assets/screenshot_2021-04-09_at_17.46.22.png" alt="The files changed tab in GitHub after triggering Fix PR for an open source project."><figcaption><p>Files changed tab in GitHub after triggering Fix PR for an open source project</p></figcaption></figure>
 
-See [fix-your-vulnerabilities.md](../../manage-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md "mention") for more details.
+See [Fix your vulnerabilities](../../manage-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) for more details.
