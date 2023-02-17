@@ -76,6 +76,10 @@ Prune dependency trees, removing duplicate sub-dependencies.
 
 Continues to find all vulnerabilities, but may not find all of the vulnerable paths.
 
+Use this option if any big projects fail to be tested.
+
+Default: false
+
 ### `--print-deps`
 
 Print the dependency tree before sending it for analysis.
@@ -270,9 +274,13 @@ This is useful when you have multiple projects with the same name in other `.sln
 
 ## Options for npm projects
 
-**Note**: The `--dev` option can be used with npm projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/monitor#dev)
+**Note**: You can use the following options with npm projects:
 
-**Note**: You can use the `--all-projects` option to scan and detect npm projects and all other projects in the directory. See the [`--all-projects` option help](https://docs.snyk.io/snyk-cli/commands/monitor#all-projects)
+`--dev`. See the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/monitor#dev)
+
+`--all-projects` to scan and detect npm projects and all other projects in the directory. See the [`--all-projects` option help](https://docs.snyk.io/snyk-cli/commands/monitor#all-projects)
+
+`--prune-repeated-subdependencies, -p`.  See the [--prune-repeated subdependencies option help](https://docs.snyk.io/snyk-cli/commands/monitor#prune-repeated-subdependencies-p)
 
 ### `--strict-out-of-sync=true|false`
 
@@ -280,15 +288,13 @@ Control monitoring out-of-sync lockfiles.
 
 Default: true
 
-### `--prune-repeated-subdependencies`, `-p`
-
-Use this option if any big projects fail to be tested.
-
-Default: false
-
 ## Options for Yarn projects
 
-**Note**: The `--dev` option can be used with Yarn projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/monitor#dev)
+**Note**: You can use the following options with Yarn projects:
+
+`--dev.` See the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/monitor#dev)
+
+`--prune-repeated-subdependencies, -p.` See the [--prune-repeated subdependencies option help](https://docs.snyk.io/snyk-cli/commands/monitor#prune-repeated-subdependencies-p)
 
 ### `--strict-out-of-sync=true|false`
 
@@ -304,7 +310,7 @@ You can specify how many sub-directories to search using `--detection-depth`.
 
 You can exclude directories and files using `--exclude`.
 
-By default, `--all-projects` automatically detects and scans Yarn Workspaces.with other projects.&#x20;
+Default:`--all-projects` automatically detects and scans Yarn Workspaces.with other projects.&#x20;
 
 ### `--prune-repeated-subdependencies`, `-p`
 

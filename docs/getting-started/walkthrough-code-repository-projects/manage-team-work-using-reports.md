@@ -44,7 +44,7 @@ If you simply see more vulnerabilities in your codebase over time, this may not 
 
 For example, the total number of vulnerabilities is likely to rise when you add more Projects. The graph may display that linkage - when you see jumps in the total numbers of vulnerabilities, you may see corresponding jumps in the total numbers of Projects:
 
-<figure><img src="../../.gitbook/assets/image (116) (1) (2).png" alt="More Projects, more issues"><figcaption><p>More Projects, more issues</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (116) (1).png" alt="More Projects, more issues"><figcaption><p>More Projects, more issues</p></figcaption></figure>
 
 #### Security metric: ratio of vulnerabilities to Projects
 
@@ -56,7 +56,7 @@ For example, if you double the number of Projects you scan, but only add 10% to 
 
 You can hover over a date to see the summary of “to this date” information at that point:
 
-<figure><img src="../../.gitbook/assets/image (150) (1) (1) (1) (1) (1) (1) (3).png" alt="View a snapshot summary"><figcaption><p>View a snapshot summary</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (150) (1) (1) (1) (1) (1) (1) (2).png" alt="View a snapshot summary"><figcaption><p>View a snapshot summary</p></figcaption></figure>
 
 This is especially useful when you see sudden changes in issue numbers on a specific day.
 
@@ -108,7 +108,7 @@ To see a report across all your Organizations, navigate to the Snyk Group level 
 
 Click the **Issues** tab to see a full list of all issues for your Organization:
 
-<figure><img src="../../.gitbook/assets/image (108) (1) (1).png" alt="Reports Issues tab"><figcaption><p>Reports Issues tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (108) (1) (1) (1).png" alt="Reports Issues tab"><figcaption><p>Reports Issues tab</p></figcaption></figure>
 
 Issues are ranked by their Snyk Priority Score; you can also filter based on columns. For example, you may want to look at the highest scores with the most maturity (which are likely to have more exploits). You can also track the list of issues that got fixed.
 

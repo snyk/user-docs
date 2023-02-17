@@ -22,7 +22,7 @@ This means that a vulnerability can be both fixable and have a fixed in option. 
 
 The easiest way to tell if a vulnerability is fixable in the Snyk app is to look for the "fix this vulnerability" call to action button on the vulnerability card.
 
-![](<../../.gitbook/assets/fix-desc-3 (1) (1) (1).png>)
+![](<../../.gitbook/assets/fix-desc-3 (1) (1).png>)
 
 ### Fixed in showing when issue is not fixable
 

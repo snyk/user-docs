@@ -41,7 +41,7 @@ Once you have set up Groups and users, follow these steps:
 7.  Specify the scoped groups; in the example choose **Select groups**, search for SSO, and **Select** the groups found.\
     These are the security groups to which you are assigning one or more combinations of Org membership and user role.
 
-    <figure><img src="../../../.gitbook/assets/scoped-groups (1) (1) (1) (1).png" alt="Select the groups found"><figcaption><p>Select the groups found</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/scoped-groups (1) (1) (1) (1) (1).png" alt="Select the groups found"><figcaption><p>Select the groups found</p></figcaption></figure>
 8.  In the **Claim conditions**, select **Attribute** as the **Source** and set the **Value** to the Snyk Org and user role slugs in the following format: `snyk-orgslug-role`\
     \`\`For more than one, separate by comma.\
     Do not include spaces or capital letter(s) in the Org and user role slugs.\
@@ -73,7 +73,7 @@ The following are the prerequisites for this configuration type:
     <figure><img src="../../../.gitbook/assets/image (2) (2).png" alt="Create app role with details"><figcaption><p>Create app role with details</p></figcaption></figure>
 4.  In Azure AD, select your Enterprise Application.
 
-    <figure><img src="../../../.gitbook/assets/image (3) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Select Enterprise Application in Azure AD"><figcaption><p>Select Enterprise Application in Azure AD</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3) (2) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Select Enterprise Application in Azure AD"><figcaption><p>Select Enterprise Application in Azure AD</p></figcaption></figure>
 5.  Select **Users and groups**; then **Add user/group**.\
     Search and select the users and groups to add.
 
