@@ -52,7 +52,7 @@ The exit code is 2 and the scan ends. No vulnerability information is reported f
 
 To perform the scan, resolve the error and scan again.
 
-Note: If you do not use `--fail-fast`, Snyk scans all the projects but does not report any vulnerabilities for projects it could not scan due to misconfiguration or another error.
+**Note**: If you do not use `--fail-fast`, Snyk scans all the projects but does not report any vulnerabilities for projects it could not scan due to misconfiguration or another error.
 
 ### `--detection-depth=<DEPTH>`
 
@@ -164,7 +164,7 @@ Manually pass a path to a `.snyk` policy file.
 
 Print results on the console as a JSON data structure.
 
-Note: If you use an option that sets project attributes and your role lacks permission to edit project attributes the `monitor` command fails. For instructions on how to proceed see [Editing project attributes from the Snyk CLI](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/managing-permissions#editing-project-attributes-from-the-snyk-cli)
+**Note**: If you use an option that sets project attributes and your role lacks permission to edit project attributes the `monitor` command fails. For instructions on how to proceed see [Editing project attributes from the Snyk CLI](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/managing-permissions#editing-project-attributes-from-the-snyk-cli)
 
 ### `--project-environment=<ENVIRONMENT>[,<ENVIRONMENT>]...>`
 
@@ -311,12 +311,6 @@ You can specify how many sub-directories to search using `--detection-depth`.
 You can exclude directories and files using `--exclude`.
 
 Default:`--all-projects` automatically detects and scans Yarn Workspaces.with other projects.&#x20;
-
-### `--prune-repeated-subdependencies`, `-p`
-
-Use this option if any big projects fail to be tested.
-
-Default: false
 
 ## Option for CocoaPods projects
 

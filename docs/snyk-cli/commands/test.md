@@ -49,7 +49,7 @@ The exit code is 2 and the scan ends. No vulnerability information is reported f
 
 To perform the scan, resolve the error and scan again.
 
-Note: If you do not use `--fail-fast`, Snyk scans all the projects but does not report any vulnerabilities for projects it could not scan due to misconfiguration or another error.
+**Note**: If you do not use `--fail-fast`, Snyk scans all the projects but does not report any vulnerabilities for projects it could not scan due to misconfiguration or another error.
 
 ### `--detection-depth=<DEPTH>`
 
@@ -72,6 +72,10 @@ This will exclude any directories and files named `dir1` and `file2` when scanni
 Prune dependency trees, removing duplicate sub-dependencies.
 
 Continues to find all vulnerabilities, but may not find all of the vulnerable paths.
+
+Use this option if any big projects fail to be tested.
+
+Default: false
 
 ### `--print-deps`
 
@@ -101,7 +105,7 @@ Set a default to ensure all newly tested projects are tested under your default 
 
 Default: `<ORG_ID>` that is the current preferred organization in your [Account settings](https://app.snyk.io/account)
 
-Note that you can also use `--org=<orgslugname>.` The `ORG_ID` works in both the CLI and the API. The organization slug name works in the CLI, but not in the API.
+**Note:** You can also use `--org=<orgslugname>.` The `ORG_ID` works in both the CLI and the API. The organization slug name works in the CLI, but not in the API.
 
 For more information see the article [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI)
 
@@ -307,9 +311,13 @@ This is useful when you have multiple projects with the same name in other `.sln
 
 ## Options for npm projects
 
-**Note**: The `--dev` option can be used with npm projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/test#dev)
+**Note**: You can use the following options with npm projects:
 
-**Note**: You can use the `--all-projects` option to scan and detect npm projects and all other projects in the directory. See the [`--all-projects` option help](https://docs.snyk.io/snyk-cli/commands/test#all-projects)
+`--dev`. See the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/test#dev)
+
+`--all-projects` to scan and detect npm projects and all other projects in the directory. See the [`--all-projects` option help](https://docs.snyk.io/snyk-cli/commands/test#all-projects)
+
+`--prune-repeated-subdependencies, -p`.  See the [`--prune-repeated subdependencies` option help](https://docs.snyk.io/snyk-cli/commands/test#prune-repeated-subdependencies-p)
 
 ### `--strict-out-of-sync=true|false`
 
@@ -329,15 +337,13 @@ Upgradable: fail only for projects with vulnerabilities that can be fixed with p
 
 Patchable: fail for projects with vulnerabilities that can be fixed with either upgrades or patches.
 
-### --prune-repeated-subdependencies, -p
-
-Use this option if any big projects fail to be tested.
-
-Default: false
-
 ## Options for Yarn projects
 
-**Note**: The `--dev` option can be used with Yarn projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/test#dev)
+**Note**: You can use the following options with Yarn projects:
+
+`--dev`. See the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/test#dev)
+
+`--prune-repeated-subdependencies, -p`.  See the [`--prune-repeated subdependencies` option help](https://docs.snyk.io/snyk-cli/commands/test#prune-repeated-subdependencies-p)
 
 ### `--strict-out-of-sync=true|false`
 
@@ -355,7 +361,7 @@ You can specify how many sub-directories to search using `--detection-depth.`
 
 You can exclude directories and files using `--exclude`.
 
-By default, `--all-projects` automatically detects and scans Yarn Workspaces.with other projects.&#x20;
+Default: `--all-projects` automatically detects and scans Yarn Workspaces.with other projects.&#x20;
 
 ### `--fail-on=<all|upgradable|patchable>`
 
@@ -366,12 +372,6 @@ All: fail for all projects containing vulnerabilities.
 Upgradable: fail only for projects with vulnerabilities that can be fixed with package upgrades.
 
 Patchable: fail for projects with vulnerabilities that can be fixed with either upgrades or patches.
-
-### --prune-repeated-subdependencies, -p
-
-Use this option if any big projects fail to be tested.
-
-Default: false
 
 ## Option for CocoaPods projects
 
@@ -401,7 +401,7 @@ Skip packages that cannot be found in the environment, for example, private pack
 
 For a Python project, specify a particular file to test.
 
-By default, Snyk scans the requirements.txt file at the top level of the project.
+Default: Snyk scans the requirements.txt file at the top level of the project.
 
 Snyk can recognize any manifest files specified with this option based on `--file=req.txt`. Each (\*) is a wildcard and `req` can appear anywhere in the file name.
 
