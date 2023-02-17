@@ -2,13 +2,13 @@
 
 After you run the `snyk test` command in the CLI, the results of the Snyk Open Source test are presented in the terminal in one block that includes three sections, summary of the test findings, list of vulnerability issues detected, and descriptive information about the Snyk Project tested.
 
-![Snyk Open Source CLI test results](<../../../.gitbook/assets/image (107) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+<figure><img src="../../../.gitbook/assets/image (107) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk Open Source CLI test results."><figcaption><p>Snyk Open Source CLI test results</p></figcaption></figure>
 
 ## Summary of test findings
 
 The summary of the test findings at the top shows the following:
 
-![Snyk Open Source CLI dependencies tested, issues and vulnerabilities found](<../../../.gitbook/assets/image (195).png>)
+<figure><img src="../../../.gitbook/assets/image (195).png" alt="Snyk Open Source CLI dependencies tested, issues and vulnerabilities found."><figcaption><p>Snyk Open Source CLI dependencies tested, issues and vulnerabilities found</p></figcaption></figure>
 
 * The number of direct and transitive dependencies scanned
 * Total number of issues found across one or more paths
@@ -24,7 +24,7 @@ These are issues which can be fixed by upgrading a direct dependencies version. 
 
 * Which dependency to upgrade in order to resolve the issue
 * The issue type
-* The [severity rating](https://docs.snyk.io/introducing-snyk/snyks-core-concepts/severity-levels) for the issue
+* The [severity rating](../../../manage-issues/issue-management/severity-levels.md) for the issue
 * A link to the related issue in the [Snyk Vulnerability Database](https://security.snyk.io/)
 * Which dependency this vulnerability is introduced through and its path
 
@@ -34,7 +34,7 @@ These are issues that cannot be resolved by upgrading a direct dependency. They 
 
 ### License Issues
 
-These are license issues which are determined by your organization’s [license policy](https://docs.snyk.io/products/snyk-open-source/license-policies). They contain the following information:
+These are license issues which are determined by your organization’s [license policy](../license-policies/). They contain the following information:
 
 * Type of license
 * License severity as determined by your organization's license policy
@@ -45,11 +45,11 @@ These are license issues which are determined by your organization’s [license 
 
 The general information section about the test results includes the following details:\\
 
-* **Organization:** The Snyk ID or internal name of the organization under which the test ran. For more information, see the [CLI test command help](https://docs.snyk.io/snyk-cli/commands/test#org-less-than-org\_id-greater-than).
+* **Organization:** The Snyk ID or internal name of the organization under which the test ran. For more information, see the [CLI test command help](../../../snyk-cli/commands/test.md).
 * **Package manager:** The package manager associated with this open source scan
 * **Target File:** The target file which was scanned for open source vulnerabilities
 * **Project Name:** The name of the directory in which this project is located
-* **Open Source:** Information about whether or not this scan was performed on an open source project. For more information, see [Test public repositories before use](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/test-public-repositories-before-use).
+* **Open Source:** Information about whether or not this scan was performed on an open source project. For more information, see [Test public repositories before use](../../../snyk-cli/test-for-vulnerabilities/test-public-repositories-before-use.md).
 * **Project Path:** The path through which the target file is introduced
-* **Local Snyk Policy: I**nformation as to whether or not this scan was performed on an open source project. For more information, see [The .snyk file](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/the-.snyk-file).
+* **Local Snyk Policy: I**nformation as to whether or not this scan was performed on an open source project. For more information, see [The .snyk file](../../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md).
 * **Licenses:** Information about whether or not this project was scanned for license issues
