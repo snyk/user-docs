@@ -1,7 +1,7 @@
 # Fix vulnerabilities with Snyk Open Source
 
 {% hint style="info" %}
-See [fix-your-vulnerabilities.md](../../../manage-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md "mention") for more details of general fix functions.
+See [Fix your vulnerabilities](../../../manage-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) for more details of general fix functions.
 {% endhint %}
 
 Snyk provides actionable fix advice for vulnerabilities in your open source libraries, using:
@@ -9,17 +9,17 @@ Snyk provides actionable fix advice for vulnerabilities in your open source libr
 * [Automatic pull / merge requests (PRs / MRs)](./#automatic-pull-merge-requests).
 * [Manual pull / merge requests](./#manual-pull-merge-requests-for-a-project-code).
 
-{% content-ref url="../../../manage-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md" %}
-[what-languages-do-we-support-fix-pull-requests-or-merge-requests.md](../../../manage-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md)
-{% endcontent-ref %}
+{% hint style="info" %}
+See[ Language support for Fix Pull Request and Merge Requests](../../../manage-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md).
+{% endhint %}
 
 ### **Automatic pull / merge requests**
 
 For projects imported via an SCM (Source Code Manager), Snyk offers the following types of automated pull / merge requests:
 
-* [Fix pull requests for new vulnerabilities](https://docs.snyk.io/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities)
+* [Fix pull requests for new vulnerabilities](fix-pull-requests-for-new-vulnerabilities.md)
 * [Fix pull requests to clear the backlog of vulnerabilities in priority order](fix-pull-requests-for-known-vulnerabilities-backlog.md)
-* [Dependency upgrade pull requests](https://docs.snyk.io/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs)
+* [Dependency upgrade pull requests](../dependency-management/upgrading-dependencies-with-automatic-prs.md)
 
 ### Manual pull / merge requests for a project code
 
@@ -31,7 +31,7 @@ To generate a PR / MR directly from your project, using the Snyk UI:
 4. A preview screen appears, showing you what fixes will be applied
 5. Click **Open a Fix PR** on this screen to generate the pull request
 
-![](../../../.gitbook/assets/image18.png)
+<figure><img src="../../../.gitbook/assets/image18.png" alt="Open Fix PR to fix open source project vulnerabilities."><figcaption><p>Open Fix PR to fix open source project vulnerabilities</p></figcaption></figure>
 
 ### Snyk SCM webhooks
 
