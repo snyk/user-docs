@@ -272,7 +272,7 @@ This is useful when you have multiple projects with the same name in other `.sln
 
 **Note**: The `--dev` option can be used with npm projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/monitor#dev)
 
-**Note**: You can use the `--all-projects` option to scan and detect npm projects and all other projects in the directory. See the `--all-projects` option information in the Options section of this help.
+**Note**: You can use the `--all-projects` option to scan and detect npm projects and all other projects in the directory. See the [`--all-projects` option help](https://docs.snyk.io/snyk-cli/commands/monitor#all-projects)
 
 ### `--strict-out-of-sync=true|false`
 
