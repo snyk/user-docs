@@ -23,7 +23,7 @@ There are two main troubleshooting situations to diagnose for Snyk's PR checks.
 1. Passed when it should have failed: submit [Vulnerability Disclosure](https://snyk.io/vulnerability-disclosure/).
 2.  Failed when it should have passed: Check security check output.
 
-    <figure><img src="../../../.gitbook/assets/security-check (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/security-check (2).png" alt=""><figcaption></figcaption></figure>
 
 > **Hot tip**: Mimic a PR check like this (changes only, not state of project)[ Snyk CLI](../../../snyk-cli/test-for-vulnerabilities/advanced-failing-of-builds-in-snyk-cli.md#fail-current-build-only-if-new-vulnerabilities-are-being-introduced).
 

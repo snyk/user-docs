@@ -90,7 +90,7 @@ Include development-only dependencies. Applicable only for some package managers
 
 **Note**: This option can be used with Maven, npm, and Yarn projects.
 
-Default: scan only production dependencies.
+Default: false, scan only production dependencies.
 
 ### `--org=<ORG_ID>`
 

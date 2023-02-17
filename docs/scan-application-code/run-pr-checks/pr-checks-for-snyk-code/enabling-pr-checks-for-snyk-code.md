@@ -18,7 +18,7 @@ When enabling the Automatic PR Checks feature for an entire Organization, all th
 
 **To enable the automatic PR Checks for an entire Organization:**
 
-1\. On the Snyk Web UI, in your Organization, select <img src="../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (9).png" alt="" data-size="line"> **Settings** > **Integrations**.
+1\. On the Snyk Web UI, in your Organization, select <img src="../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="line"> **Settings** > **Integrations**.
 
 2\. Locate your configured and required SCM, and click the **Edit settings** option at the end of its row:
 
@@ -56,11 +56,11 @@ By default, the Settings on the Project level override the Settings on the Organ
 
 2\. Locate the **Code analysis** Project for which you want to enable the Automatic PR Checks. Then, click the **Settings** button on the right side of its row:
 
-<figure><img src="../../../.gitbook/assets/enabling_auto_pr-checks_15dec2022 (1) (1) (1) (1) (2).png" alt="Locate the Code analysis project for automatic PR checks"><figcaption><p>Locate the Code analysis project for automatic PR checks</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/enabling_auto_pr-checks_15dec2022 (1) (1) (1) (1) (1) (1) (1).png" alt="Locate the Code analysis project for automatic PR checks"><figcaption><p>Locate the Code analysis project for automatic PR checks</p></figcaption></figure>
 
 3\. On the Project **Settings** page, click the relevant **integration** tab on left menu:
 
-<figure><img src="../../../.gitbook/assets/image (100).png" alt="Click the associated integration tab in the left menu"><figcaption><p>Click the associated integration tab in the left menu</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (100) (1) (1) (1).png" alt="Click the associated integration tab in the left menu"><figcaption><p>Click the associated integration tab in the left menu</p></figcaption></figure>
 
 4\. On the **integration** page > **Snyk Code for pull requests** section, select one of the following:
 
