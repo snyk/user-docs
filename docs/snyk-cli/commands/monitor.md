@@ -268,7 +268,7 @@ Example: `snyk monitor --file=my-project.sln --project-name-prefix=my-group/`
 
 This is useful when you have multiple projects with the same name in other `.sln` files.
 
-## Option for npm projects
+## Options for npm projects
 
 **Note**: The `--dev` option can be used with npm projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/monitor#dev)
 

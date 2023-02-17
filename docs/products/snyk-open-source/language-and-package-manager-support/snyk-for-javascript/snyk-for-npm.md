@@ -6,7 +6,7 @@ You can use Snyk to scan your JavaScript project managed by npm.
 
 {% hint style="info" %}
 **Feature availability**\
-Features may not be available, depending on your plan. See [pricing plans](https://snyk.io/plans/) for  details.
+Features may not be available, depending on your plan. See [pricing plans](https://snyk.io/plans/) for details.
 {% endhint %}
 
 | npm Version / Feature | CLI Support | Git Support | License Scanning | Fix Prs |
@@ -53,7 +53,7 @@ To get started using the CLI for npm projects:
 
 You can now test and monitor your project using `snyk test` or `snyk monitor`.
 
-You can use options with Snyk CLI commands to refine your scan. For information about the `snyk test` options available for use with Yarn, see [Option for npm projects](https://docs.snyk.io/snyk-cli/commands/test#option-for-npm-projects) in the Test help. For the available `snyk monitor` options, see [Option for npm projects in the Monitor help](https://docs.snyk.io/snyk-cli/commands/monitor#option-for-npm-projects).
+You can use options with Snyk CLI commands to refine your scan. For information about the `snyk test` options available for use with Yarn, see [Options for npm projects](https://docs.snyk.io/snyk-cli/commands/test#options-for-npm-projects) in the Test help. For the available `snyk monitor` options, see [Options for npm projects in the Monitor help](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-npm-projects).
 
 ## Git services for npm projects
 
