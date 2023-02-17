@@ -7,13 +7,13 @@ Snyk supports both npm and Yarn. See [Snyk for npm](snyk-for-npm.md) and [Snyk f
 The following are the **limitations and workarounds** for Snyk support for JavaScript.
 
 {% hint style="info" %}
-Snyk currently does not support **Lerna**. However, if your Project is set up using Yarn Workspaces, you can scan the Project in the same way you scan any Yarn Workspaces Project. If your Lerna Project is set up using Yarn Workspaces, you can run `snyk test` and `snyk monitor` using the commands that follow.
+Snyk currently does not support **Lerna**. However, if your Project is set up using Yarn Workspaces, you can scan the Project in the same way you scan any Yarn Workspaces Project.
 {% endhint %}
 
-For each example-package you can use the following:
+If your Lerna Project is set up using Yarn Workspaces, you can run `snyk test` and `snyk monitor` as follows:
 
+For each example-package you can use\
 `snyk monitor --file=packages/example-package/package.json`
 
-Alternatively, you can specify a script to automate scanning nested `package.json` files:
-
+Alternatively, you can specify a script to automate scanning nested `package.json` files:\
 `ls packages | xargs -I PKG_NAME snyk monitor --file=packages/PKG_NAME/package.json`
