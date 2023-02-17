@@ -12,7 +12,7 @@ The calculation of the Priority Score is based on the following factors:
 
 * **Severity Level**: the higher the severity level, the higher is the security risk of the issue. Therefore, each severity level adds a different Score to the issue. The Score can be at the most 500 points.\
   **Note**: Snyk Code currently does not use the **Critical** severity level.
-* **Availability of a Fix Example for the issue**: when an issue **** has **** a Fix Example, it is easier to fix, and therefore it has a higher Priority Score. The Score can be at the most 200 points.\
+* **Availability of a Fix Example for the issue**: when an issue has a Fix Example, it is easier to fix, and therefore it has a higher Priority Score. The Score can be at the most 200 points.\
   **Note**: When a Fix Example is available, it is displayed in the **Full Details** pane of the issue > **Fix analysis** tab.
 * **Issue occurrence in a Project**: the number of times a specific issue appears in the **Code Analysis** Project. The higher the number of the issue occurrences in the Project, the higher is the risk, and therefore the Score. The Score can be at the most 100 points.
 * **Issue occurrence in a File:** the number of times an issue appears in a specific file. The higher the number of the issue occurrences in a file, the higher is the risk and the Score. The Score can be at the most 100 points.
@@ -21,8 +21,6 @@ The calculation of the Priority Score is based on the following factors:
   * Test - the issue was found in a test file.
   * Beta - the vulnerability type of the issue is in Beta status.\
     **Note**: These internal tags are automatically assigned by Snyk Code analysis, and they are not visible on the Web UI.
-
-&#x20;
 
 ### **Filtering discovered issues according to their Priority Score**
 
@@ -35,5 +33,3 @@ You can filter the discovered issues according to their Priority Score, thus dis
 ![](<../../../.gitbook/assets/Snyk Code - Results - Priority Score - Filtering.png>)
 
 The issue display changes automatically according to your selection, and only issues that have a Priority Score in the selected range are displayed.
-
-&#x20;

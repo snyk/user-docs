@@ -1,6 +1,6 @@
 # Nexus Repository Manager setup
 
-### **Overview**
+## **Overview of Nexus Repository Manager**
 
 {% hint style="info" %}
 **Feature availability**\
@@ -12,14 +12,14 @@ Connecting Nexus Repository Manager enables Snyk to resolve all direct and trans
 {% hint style="info" %}
 **Supported projects**
 
-* The integration currently supports [Node.js](../../products/snyk-open-source/language-and-package-manager-support/snyk-for-javascript/) (npm and Yarn) and [Maven](../../products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md) projects.&#x20;
+* The integration currently supports [Node.js](../../products/snyk-open-source/language-and-package-manager-support/snyk-for-javascript/) (npm and Yarn) and [Maven](../../products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md) projects.
 * Gradle projects are not currently supported.
 {% endhint %}
 
 You can configure these types of Nexus Repository Manager:
 
 * Publicly accessible instances protected by basic authentication
-* Instances on a private network accessed via a [Snyk Broker](../../features/snyk-broker/broker-introduction.md) (with or without basic authentication).
+* Instances on a private network accessed via a [Snyk Broker](broken-reference) (with or without basic authentication).
 
 {% hint style="info" %}
 **Versions supported**
@@ -28,23 +28,23 @@ You can configure these types of Nexus Repository Manager:
 * Nexus Repository Manager version 2.15+ is in Beta
 {% endhint %}
 
-### Getting started
+## Getting started
 
-1. Go to settings <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Integrations > Package Repositories > Nexus**
-2. You should see this screen:
+1. Go to settings <img src="../../.gitbook/assets/cog_icon.png" alt="Settings icon" data-size="line"> > **Integrations > Package Repositories > Nexus**
+2. Verify that you see the screen to configure Nexus.
 
-![](<../../.gitbook/assets/Screenshot 2022-07-15 at 15.15.11.png>)
+<figure><img src="../../.gitbook/assets/Screenshot 2022-07-15 at 15.15.11.png" alt="Configure Nexus"><figcaption><p>Configure Nexus</p></figcaption></figure>
 
 {% hint style="info" %}
 If you do not see the **Snyk Broker** switch, you do not have the necessary permissions and can only add a publicly accessible instance.\
-[Contact our Support team](https://support.snyk.io/hc/en-us/requests/new) if you want to add a private registry.
+[Contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) if you want to add a private registry.
 {% endhint %}
 
-### Set up publicly accessible instances
+## Set up publicly accessible instances
 
 {% tabs %}
 {% tab title="Nexus 3" %}
-* Enter the URL of your Nexus instance, this **must** end with `/repository`
+* Enter the URL of your Nexus instance;  this **must** end with `/repository`
 * Enter Username
 * Enter Password
 * Click **Save**
@@ -58,19 +58,27 @@ If you do not see the **Snyk Broker** switch, you do not have the necessary perm
 {% endtab %}
 {% endtabs %}
 
+## Nexus behind reverse proxy
+
+If your Nexus server is running behind a reverse proxy, for example, Nginx, the URL might not end with the default `/repository` for Nexus 3 or `/nexus/content` for Nexus 2, depending on what routes have been configured in the reverse proxy. If this is the case, make sure to use the URL configured in the reverse proxy.
+
+Example: for Nexus 3: if `http://nexus.company.io/repository` is mapped to `http://nexus.company.io/my-company/my-repository`,  use `http://nexus.company.io/my-company/my-repository`.
+
+Example: for Nexus 2: if `http://nexus.company.io/nexus/content` is mapped to `http://nexus.company.io/my-nexus-content`, use `http://nexus.company.io/my-nexus-content`.
+
 {% hint style="success" %}
-You should see a green success message if we can contact your repository.
+A green success message appears if Snyk can contact your repository.
 
 If you see a yellow warning message, check your URL and credentials and try again.
 {% endhint %}
 
-### Set up brokered instances
+## Set up brokered instances
 
-![](<../../.gitbook/assets/Screenshot 2022-07-15 at 15.22.58.png>)
+<figure><img src="../../.gitbook/assets/Screenshot 2022-07-15 at 15.22.58.png" alt="Set up Nexus with Snyk Broker"><figcaption><p>Set up Nexus with Snyk Broker</p></figcaption></figure>
 
-1. Toggle **Snyk Broker on/off** switch, you should now see a form for generating an Snyk Broker token
-2. Click on **Generate and Save** button
-3. Copy the token that was generated for you, it will be needed to set up a new Broker Client
+1. Toggle **Snyk Broker on/off** switch to open a form for generating a.. Snyk Broker token.
+2. Click on **Generate and Save** button.
+3. Copy the token that was generated for you; it is needed to set up a new Broker Client.
 4. Set up a new Broker Client in your prod environment:
 
 {% tabs %}
@@ -80,7 +88,7 @@ If you see a yellow warning message, check your URL and credentials and try agai
     ```
     docker pull snyk/broker:nexus
     ```
-*   Run docker image and provide [broker variables](nexus-repo-manager-setup.md#broker-variables)
+*   Run docker image and provide [broker variables](nexus-repo-manager-setup.md#broker-variables):
 
     ```
     docker run --restart=always \
@@ -112,49 +120,49 @@ If you see a yellow warning message, check your URL and credentials and try agai
 {% endtab %}
 {% endtabs %}
 
-#### Checking connection
+### Checking connection with Broker
 
 Check connection status by making a request to your Nexus broker client `/systemcheck` endpoint.
 
-For example, `curl http://172.17.0.2:7341/systemcheck`&#x20;
+Example: `curl http://172.17.0.2:7341/systemcheck`
 
-You will then see success output in the form:&#x20;
+You see success output in the following form:
 
-`{"brokerClientValidationUrl":"https://acme.com/service/rest/v1/status","brokerClientValidationMethod":"GET","brokerClientValidationTimeoutMs":5000,"brokerClientValidationUrlStatusCode":200,"ok":true}`&#x20;
+`{"brokerClientValidationUrl":"https://acme.com/service/rest/v1/status","brokerClientValidationMethod":"GET","brokerClientValidationTimeoutMs":5000,"brokerClientValidationUrlStatusCode":200,"ok":true}`
 
-Or failure output in the form:&#x20;
+Or failure output in the following form:
 
 `{"brokerClientValidationUrl":"https://acme.com/service/rest/v1/status","brokerClientValidationMethod":"GET","brokerClientValidationTimeoutMs":5000,"ok":false,"error":"ETIMEDOUT"}`
 
-#### Broker variables
+### Broker variables
 
 {% tabs %}
 {% tab title="Nexus 3" %}
-| Variable                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `BROKER_TOKEN`                 | The token generated in settings <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line">**> Integrations > Nexus**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| `BASE_NEXUS_URL`               | <p>The URL to your Nexus instance in the format:<br><code>BASE_NEXUS_URL=https://[username_or_token:password_or_token]@acme.com</code></p><p><strong></strong></p><p>Must not end with a forward slash.</p><p></p><p><strong>Optional fields</strong></p><ol><li><em>Auth</em>: Omit if no auth required. <br>Can either be plain text or a two-part token (Nexus Pro)<br>URL encode both username, password and tokens to avoid errors that may prevent authentication.</li></ol><p><strong>Minimal example</strong><br><code>acme.com</code></p><p><br><strong>Complex example</strong><br><code>https://alice:mypassword@acme.com</code></p> |
-| `RES_BODY_URL_SUB`             | <p>The URL of the Nexus instance, including <code>https://</code> and <code>/repository</code> and <em></em> without basic auth credentials.</p><p></p><p><mark style="color:red;">Required for npm/Yarn integrations only.</mark></p><p><mark style="color:red;"></mark></p><p>Must not end with a forward slash.</p><p><br><strong>Example</strong><br><code>https://acme.com/repository</code></p>                                                                                                                                                                                                                                           |
-| `BROKER_CLIENT_VALIDATION_URL` | <p>Will either be one of:</p><ul><li><code>$BASE_NEXUS_URL/service/rest/v1/status/check</code> (if your Nexus user requires authentication)</li><li><code>$BASE_NEXUS_URL/service/rest/v1/status</code> (if your Nexus user requires NO authentication)</li></ul><p><strong>Example</strong></p><ul><li><code>https://username:password@acme.com/service/rest/v1/status/check</code></li><li><code>https://acme.com/service/rest/v1/status</code></li></ul>                                                                                                                                                                                     |
+| Variable                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `BROKER_TOKEN`                 | The token generated in settings <img src="../../.gitbook/assets/cog_icon.png" alt="Settings icon" data-size="line">**> Integrations > Nexus**                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `BASE_NEXUS_URL`               | <p>The URL to your Nexus instance in the format:<br><code>BASE_NEXUS_URL=https://[username_or_token:password_or_token]@acme.com</code></p><p>Must not end with a forward slash.</p><p><strong>Optional field</strong></p><p><em>Auth</em>: Omit if no auth required.<br>Can either be plain text or a two-part token (Nexus Pro)<br>URL encode both username, password and tokens to avoid errors that may prevent authentication.</p><p><strong>Minimal example</strong><br><code>acme.com</code></p><p><br><strong>Complex example</strong><br><code>https://alice:mypassword@acme.com</code></p> |
+| `RES_BODY_URL_SUB`             | <p>The URL of the Nexus instance, including <code>https://</code> and <code>/repository</code> and without basic auth credentials.</p><p><strong>Required for npm/Yarn integrations only.</strong></p><p>Must not end with a forward slash.</p><p><br><strong>Example:</strong><br><code>https://acme.com/repository</code></p>                                                                                                                                                                                                                                                                     |
+| `BROKER_CLIENT_VALIDATION_URL` | <p>Either be one of:</p><ul><li><code>$BASE_NEXUS_URL/service/rest/v1/status/check</code> (if your Nexus user requires authentication)</li><li><code>$BASE_NEXUS_URL/service/rest/v1/status</code> (if your Nexus user requires NO authentication)</li></ul><p><strong>Example:</strong></p><ul><li><code>https://username:password@acme.com/service/rest/v1/status/check</code></li><li><code>https://acme.com/service/rest/v1/status</code></li></ul>                                                                                                                                             |
 {% endtab %}
 
 {% tab title="Nexus 2" %}
-| Variable           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `BROKER_TOKEN`     | The token generated in settings <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line">**> Integrations > Nexus**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| `BASE_NEXUS_URL`   | <p>format:<br><code>BASE_NEXUS_URL=https://[username_or_token:password_or_token]@acme.com</code></p><p><strong></strong></p><p><em>Must not end with a forward slash.</em></p><p><em></em></p><p><strong>Optional fields</strong></p><ol><li><em>Auth</em>: Omit if no auth required. <br>Can either be plain text or a two-part token (Nexus Pro)<br>URL encode both username, password and tokens to avoid errors that may prevent authentication.</li></ol><p><strong>Minimal example</strong><br><code>https://acme.com</code></p><p><br><strong>Complex example</strong><br><code>https://alice:mypassword@acme.com</code></p> |
-| `RES_BODY_URL_SUB` | <p>The URL of the Nexus instance, including <code>https://</code> and <code>/nexus/content</code> and <em></em> without basic auth credentials.</p><p></p><p><mark style="color:red;">Required for npm/Yarn integrations only</mark>.</p><p></p><p>Must not end with a forward slash.<br><br><strong>Example</strong><br><code>https://acme.com/nexus/content/groups</code><br><code></code> <br><code>https://acme.com/nexus/content/repositories</code></p>                                                                                                                                                                       |
+| Variable           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `BROKER_TOKEN`     | The token generated in settings <img src="../../.gitbook/assets/cog_icon.png" alt="Settings icon" data-size="line">**> Integrations > Nexus**                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| `BASE_NEXUS_URL`   | <p>format:<br><code>BASE_NEXUS_URL=https://[username_or_token:password_or_token]@acme.com</code></p><p><em>Must not end with a forward slash.</em></p><p><strong>Optional field</strong></p><p><em>Auth</em>: Omit if no auth required.<br>Can either be plain text or a two-part token (Nexus Pro)<br>URL encode both username, password and tokens to avoid errors that may prevent authentication.</p><p><strong>Minimal example:</strong><br><code>https://acme.com</code></p><p><br><strong>Complex example:</strong><br><code>https://alice:mypassword@acme.com:</code></p> |
+| `RES_BODY_URL_SUB` | <p>The URL of the Nexus instance, including <code>https://</code> and <code>/nexus/content</code> and without basic auth credentials.</p><p><strong>Required for npm/Yarn integrations only.</strong></p><p>Must not end with a forward slash.<br><br><strong>Example:</strong><br><code>https://acme.com/nexus/content/groups</code><br><br><code>https://acme.com/nexus/content/repositories</code></p>                                                                                                                                                                         |
 {% endtab %}
 {% endtabs %}
 
-### Nexus user permissions
+## Nexus user permissions
 
-The Nexus user needs the following privileges (either as part of Role or added individually)
+The Nexus user needs the following privileges, either as part of Role or added individually:
 
 {% tabs %}
 {% tab title="Nexus 3" %}
 * `nx-metrics-all` (for the [system status check endpoint](https://support.sonatype.com/hc/en-us/articles/226254487-System-Status-and-Metrics-REST-API))
-* `nx-repository-view-[*-* | <ecosystem-repo-name>]-read`&#x20;
+* `nx-repository-view-[*-* | <ecosystem-repo-name>]-read`
 * `nx-repository-view-[*-* | <ecosystem-repo-name>]-browse`
 {% endtab %}
 
@@ -164,4 +172,3 @@ The Nexus user needs the following privileges (either as part of Role or added i
 * `[All Repositories | <repoName>] - (view)`
 {% endtab %}
 {% endtabs %}
-

@@ -88,6 +88,8 @@ Set or override the remote URL for the repository that you would like to monitor
 
 Include development-only dependencies. Applicable only for some package managers, for example, `devDependencies` in npm or `:development` dependencies in Gemfile.
 
+**Note**: This option can be used with Maven, npm, and Yarn projects.
+
 Default: scan only production dependencies.
 
 ### `--org=<ORG_ID>`
@@ -112,11 +114,15 @@ Specify a package file.
 
 When testing locally or monitoring a project, you can specify the file that Snyk should inspect for package information. When the file is not specified, Snyk tries to detect the appropriate file for your project.
 
+See also the section on [Options for Python projects](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-python-projects)
+
 ### `--package-manager=<PACKAGE_MANAGER_NAME>`
 
 Specify the name of the package manager when the filename specified with the `--file=<FILE>` option is not standard. This allows Snyk to find the file.
 
 Example: `$ snyk monitor --file=req.txt --package-manager=pip`
+
+For more information see [Options for Python projects](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-python-projects)
 
 ### `--unmanaged`
 
@@ -198,6 +204,8 @@ This is an alias for `--project-tags`
 
 For more information about Maven CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven)
 
+**Note**: The `--dev` option can be used with Maven projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/monitor#dev)
+
 ### `--maven-aggregate-project`
 
 Use `--maven-aggregate-project` instead of `--all-projects` when scanning Maven aggregate projects, that is, ones that use modules and inheritance.
@@ -246,7 +254,7 @@ Use for projects that contain a Gradle initialization script.
 
 ### `--assets-project-name`
 
-When monitoring a .NET project using NuGet `PackageReference` use the project name in `project.assets.json`, if found.
+When you are monitoring a .NET project using NuGet `PackageReference` uses the project name in `project.assets.json` if found.
 
 ### `--packages-folder`
 
@@ -260,7 +268,11 @@ Example: `snyk monitor --file=my-project.sln --project-name-prefix=my-group/`
 
 This is useful when you have multiple projects with the same name in other `.sln` files.
 
-## Option for npm projects
+## Options for npm projects
+
+**Note**: The `--dev` option can be used with npm projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/monitor#dev)
+
+**Note**: You can use the `--all-projects` option to scan and detect npm projects and all other projects in the directory. See the [`--all-projects` option help](https://docs.snyk.io/snyk-cli/commands/monitor#all-projects)
 
 ### `--strict-out-of-sync=true|false`
 
@@ -268,7 +280,15 @@ Control monitoring out-of-sync lockfiles.
 
 Default: true
 
+### `--prune-repeated-subdependencies`, `-p`
+
+Use this option if any big projects fail to be tested.
+
+Default: false
+
 ## Options for Yarn projects
+
+**Note**: The `--dev` option can be used with Yarn projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/monitor#dev)
 
 ### `--strict-out-of-sync=true|false`
 
@@ -278,7 +298,19 @@ Default: true
 
 ### `--yarn-workspaces`
 
-Detect and scan Yarn workspaces. You can specify how many sub-directories to search using `--detection-depth` and exclude directories and files using `--exclude`. Alternatively scan Yarn workspaces with other projects using `--all-projects`
+Detect and scan Yarn Workspaces only when a lockfile is in the root.
+
+You can specify how many sub-directories to search using `--detection-depth`.
+
+You can exclude directories and files using `--exclude`.
+
+By default, `--all-projects` automatically detects and scans Yarn Workspaces.with other projects.&#x20;
+
+### `--prune-repeated-subdependencies`, `-p`
+
+Use this option if any big projects fail to be tested.
+
+Default: false
 
 ## Option for CocoaPods projects
 
@@ -292,13 +324,35 @@ Default: false
 
 ### `--command=<COMMAND>`
 
-Indicate which specific Python commands to use based on Python version. The default is `python` which executes your default python version. Run 'python -V' to find out what version it is. If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.
+Indicate which specific Python commands to use based on the Python version.
 
-Default: `python` Example: `--command=python3`
+Snyk uses Python in order to scan and find your dependencies. If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.
+
+Default: `python` This executes your default python version. Run `python -V` to find out what your default version is.
+
+Example: `snyk monitor --command=python3`
 
 ### `--skip-unresolved=true|false`
 
-Allow skipping packages that are not found in the environment.
+Skip packages that cannot be found in the environment, for example, private packages that cannot be accessed from the machine running the scan.
+
+### `--file=` for Python
+
+For a Python project, specify a particular file to monitor.
+
+By default, Snyk scans the requirements.txt file at the top level of the project.
+
+Snyk can recognize any manifest files specified with this option based on `--file=req.txt`. Each (\*) is a wildcard and `req` can appear anywhere in the file name.
+
+For example, Snyk recognizes your manifest file when you have renamed it to r`equirements-dev.txt`.
+
+### `--package-manager=` for Python
+
+Add`--package-manager=pip` to your command if the file name is not `requirements.txt`.
+
+This option is mandatory if you specify a value for the `--file` parameter that is not to a `requirements.txt` file. The test fails without this parameter. Specify this parameter with the value `pip`.
+
+For complete information about the command see [`--package-manager=<PACKAGE_MANAGER_NAME>`](https://docs.snyk.io/snyk-cli/commands/monitor#package-manager-less-than-package\_manager\_name-greater-than)``
 
 ## Options for scanning using `--unmanaged`
 

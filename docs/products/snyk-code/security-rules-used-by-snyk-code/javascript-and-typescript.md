@@ -1,7 +1,5 @@
 # JavaScript & TypeScript
 
-
-
 | No. & Rule Name                                                         | CWE(s)                                                                                           | OWASP Top 10/SANS 25                                                              |
 | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
 | **(1) Use of Hardcoded Credentials**                                    | (798) Use of Hard-coded Credentials                                                              | OWASP Top Ten 2021 Category A07:2021 - Identification and Authentication Failures |

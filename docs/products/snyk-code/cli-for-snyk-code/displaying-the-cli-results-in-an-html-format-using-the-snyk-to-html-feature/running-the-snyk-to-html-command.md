@@ -2,7 +2,7 @@
 
 You can run the Snyk-to-HTML feature in one command (below), or you can first [test and export the results to a JSON/SARIF file, and then pass the JSON/SARIF file to the Snyk-to-HTML feature](running-the-snyk-to-html-command.md#running-the-snyk-to-html-feature-in-several-steps). When running the snyk-to-html command, you can customize it using its [command options](running-the-snyk-to-html-command.md#snyk-to-html-command-options). After you generated the results in an HTML file, open it in a browser to [view the discovered vulnerabilities with their Data Flow and Fix Analysis information](viewing-the-html-results.md).
 
-**Notes**:&#x20;
+**Notes**:
 
 * To display the Help information for the Snyk-to-HTML feature in your terminal, use either the `-h` or `--help` options with the `snyk-to-html` command:
 

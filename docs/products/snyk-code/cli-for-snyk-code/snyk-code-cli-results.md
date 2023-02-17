@@ -31,7 +31,7 @@ The general info about the test results includes the following details:
 * Test success: Whether the test was completed or not.
 * **Organization:** The Snyk ID or internal name of the organization under which the test run. For more information, see [Before you start – Set the organization for the CLI tests](before-you-start-set-the-organization-for-the-cli-tests/).
 * **Test type:** The type of test command that generated the results. For Snyk Code, it is always “**Static code analysis**”.
-* **Project path:** The path of the tested repository.&#x20;
+* **Project path:** The path of the tested repository.
 
 ### Summary of the test findings
 
@@ -41,8 +41,6 @@ The summary of the test findings includes the following details:
 
 * The number of vulnerability issues that were discovered by Snyk Code in the tested repository.
 * The number of discovered issues per severity level.
-
-&#x20;
 
 ### The Exit Codes of the test results
 
@@ -58,8 +56,6 @@ The `snyk code test` command ends with one of the following exit codes:
 
 **Note**: for more information on supported files, see [Snyk Code - Supported languages and frameworks.](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support)
 
-&#x20;
-
 **To display in the terminal the exit code of a Snyk Code test:**
 
 * Enter:
@@ -67,4 +63,3 @@ The `snyk code test` command ends with one of the following exit codes:
 ```
 snyk code test -d
 ```
-

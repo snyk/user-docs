@@ -8,8 +8,6 @@ Snyk Code integrates with the following IDEs:
 * [Visual Studio Code IDE extension](https://docs.snyk.io/ide-tools/visual-studio-code-extension-for-snyk-code)
 * [Visual Studio IDE extension](https://docs.snyk.io/ide-tools/visual-studio-extension)
 
-
-
 ## SCM integrations
 
 ### Repository monitoring
@@ -22,12 +20,12 @@ This integration allows you to:
 
 ### Supported SCMs
 
-Snyk Code integrates with the following SCMs:&#x20;
+Snyk Code integrates with the following SCMs:
 
 * [GitHub](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-integration)
-* [GitHub Enterprise](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-enterprise-integration)&#x20;
-* [Bitbucket Data Center/Server](https://docs.snyk.io/integrations/git-repository-scm-integrations/bitbucket-data-center-server-integration)&#x20;
-* [Bitbucket Cloud](https://docs.snyk.io/integrations/git-repository-scm-integrations/bitbucket-cloud-integration)&#x20;
+* [GitHub Enterprise](https://docs.snyk.io/integrations/git-repository-scm-integrations/github-enterprise-integration)
+* [Bitbucket Data Center/Server](https://docs.snyk.io/integrations/git-repository-scm-integrations/bitbucket-data-center-server-integration)
+* [Bitbucket Cloud](https://docs.snyk.io/integrations/git-repository-scm-integrations/bitbucket-cloud-integration)
 * [Azure Repos](https://docs.snyk.io/integrations/git-repository-scm-integrations/azure-repos-integration)
 * [GitLab](https://docs.snyk.io/integrations/git-repository-scm-integrations/gitlab-integration)
 
@@ -37,7 +35,7 @@ Snyk Code supports a wide range of languages - see [Snyk Code - Supported langua
 
 ### PR checks
 
-Snyk Code analysis can be applied to every Pull Request you are creating in your SCM, before merging it into the target branch. For more information, see [Using Automatic PR Checks for securing your source code](../../pr-checks-for-snyk-code/).
+Snyk Code analysis can be applied to every Pull Request you are creating in your SCM, before merging it into the target branch. For more information, see [Using Automatic PR Checks for securing your source code](../../../../scan-application-code/run-pr-checks/pr-checks-for-snyk-code/).
 
 ## CLI and CI/CD integrations
 

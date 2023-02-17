@@ -8,7 +8,7 @@ After you enabled Snyk Code in your Snyk Org Settings, you need to integrate you
 
 **Notes**:
 
-* Snyk Code temporarily clones your repositories for the code analysis. This requires appropriate permissions and HTTPS access to your SCM. For more information on how data is stored in Snyk, see [How Snyk handles your data](../../../../Snyk-processes/how-snyk-handles-your-data.md).
+* Snyk Code temporarily clones your repositories for the code analysis. This requires appropriate permissions and HTTPS access to your SCM. For more information on how data is stored in Snyk, see [How Snyk handles your data](../../../../more-info/how-snyk-handles-your-data.md).
 * For more details about integrations, see [Snyk Integrations](https://docs.snyk.io/integrations).
 
 **To integrate your SCM with Snyk Code:**
@@ -22,7 +22,7 @@ After you enabled Snyk Code in your Snyk Org Settings, you need to integrate you
 * The **Source control** page only displays SCMs that are supported by Snyk Code.
 * If you already have an integrated SCM, it will be indicated as “**Configured**”. If you want to use this SCM, you can skip the rest of this section and move to [Step 3: Importing repositories to Snyk for the Snyk Code testing](step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/).
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (351).png" alt=""><figcaption></figcaption></figure>
 
 The **Account credentials** page of your selected Source Control system appears.
 

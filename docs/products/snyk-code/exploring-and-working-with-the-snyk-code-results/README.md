@@ -8,9 +8,9 @@ During the import process, Snyk creates a Target folder for each imported reposi
 
 **Note**: The name of the Target folder includes the name of the imported repository, together with the account name of the integrated SCM, the SCM icon, and the number of Snyk Projects that were created for the repository.
 
-<figure><img src="../../../.gitbook/assets/Snyk code - 1.png" alt="Screenshot with callouts pointing to various UI elements in a Snyk Project listing"><figcaption><p> </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Snyk code - 1.png" alt="Screenshot with callouts pointing to various UI elements in a Snyk Project listing"><figcaption></figcaption></figure>
 
-**Note**: Unlike other Snyk products, which create a separate Snyk Project for each imported file, Snyk Code creates one Snyk Project for all the imported files of one repository. This way, all the vulnerabilities that were detected in the repository code are aggregated in one Project, and the Snyk Code results can present the data flow of a vulnerability issue across multiple files.&#x20;
+**Note**: Unlike other Snyk products, which create a separate Snyk Project for each imported file, Snyk Code creates one Snyk Project for all the imported files of one repository. This way, all the vulnerabilities that were detected in the repository code are aggregated in one Project, and the Snyk Code results can present the data flow of a vulnerability issue across multiple files.
 
 ### Filtering Existing Projects
 
@@ -24,11 +24,11 @@ For Snyk Code, you can use the following Filter criteria:
 
 * **SHOW**:
   * **With issues** and **Without issues** - Projects with or without issues that were discovered by Snyk.
-  * **Active and Inactive** - **** Projects that are either in an **Active** or **Inactive** status in Snyk. Inactive Projects are Projects that were deactivated on the Web UI.\
+  * **Active and Inactive** - Projects that are either in an **Active** or **Inactive** status in Snyk. Inactive Projects are Projects that were deactivated on the Web UI.\
     **Note**: For more information, see [Deactivating and deleting the Snyk Code Project](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/removing-imported-repositories-from-the-snyk-code-test).
 * **INTEGRATIONS**: the integrated SCMs that store repositories that were imported to Snyk.
 
-**Note**: The other options in the Filter pane are currently not applicable to Snyk Code. &#x20;
+**Note**: The other options in the Filter pane are currently not applicable to Snyk Code.
 
 ### Viewing the discovered vulnerability issues in a repository
 
@@ -40,6 +40,4 @@ For Snyk Code, you can use the following Filter criteria:
 
 The **Code Analysis** page appears, displaying the list and details of the vulnerability issues that were discovered in the selected repository. This issue list is organized by the severity level of the discovered issues, by default from the highest to the lowest:
 
-<figure><img src="../../../.gitbook/assets/Snyk code - 4.png" alt="Screenshot of a Code Analysis project in Snyk"><figcaption><p> </p></figcaption></figure>
-
-&#x20;
+<figure><img src="../../../.gitbook/assets/Snyk code - 4.png" alt="Screenshot of a Code Analysis project in Snyk"><figcaption></figcaption></figure>

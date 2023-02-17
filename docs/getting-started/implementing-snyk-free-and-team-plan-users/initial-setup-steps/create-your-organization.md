@@ -1,29 +1,26 @@
 # Create your Organization
 
-Free and Team plan users are entitled to a single [organization](https://docs.snyk.io/user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization) in Snyk.
+## Introduction
+
+Free and Team plan users are entitled to a single Organization in Snyk (see [What’s a Snyk Organization?](../../../user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization.md) for details)
 
 ### Rename your Organization
 
-When you signed up, Snyk created an organization based on your signup name. This is referred to as your "default" or "personal" organization.&#x20;
+When you [signed up](../../quickstart/create-a-snyk-account/), Snyk created an Organization with the name of your account. This is referred to as your "default" or "personal" Organization. If you are using Snyk across a team or company, we recommend you rename this Organization, using your team or company name.
 
-{% hint style="info" %}
-**Tip**\
-****If you are creating an account to share and collaborate to use  your team or company name for the organization name. If it’s for personal use, the default organization that was created when you signed up makes sense to use
-{% endhint %}
+#### Organization URL
 
-If you choose to rename the display name, the URL may still reflect the original name.&#x20;
+If you rename the display name, the access URL may still reflect the original name.
 
-* Free users can create a new Organization, and delete their old Organization.&#x20;
-* Existing customers on a paid Team/Business/Enterprise plan can request support to update their URL if they purchased their plan with the personalized default Organization.
+* Free users can create a new Organization, and delete their old Organization.
+* Existing customers on a paid plan can request support to update their URL if they purchased their plan with the personalized default Organization.
 
 ### Create an Organization
 
-To create a new Organization:&#x20;
+To create a new Organization, select the Organizations menu option (in this example, **Organization Name**), and click the **Create  new Organization** option:
 
-* Click the drop down on the main menu&#x20;
-* Click **Create New Organization**&#x20;
-* Provide the desired name&#x20;
+<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Create an Organization</p></figcaption></figure>
 
 ### More details
 
-See [Managing groups & organizations](../../../features/user-and-group-management/managing-groups-and-organizations/).
+See [Managing groups & organizations](../../../user-and-group-management/managing-groups-and-organizations/).

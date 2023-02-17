@@ -10,13 +10,13 @@ Alternatively, you can perform a **quick test** on a public npm package, for exa
 
 Look at the `test` command **report** in your terminal. The report shows the vulnerabilities Snyk found in the package. For each issue found, Snyk reports the severity of the issue, provides a link to a detailed description, reports the path through which the vulnerable module got into your system, and provides guidance on how to fix the problem.
 
-Before using the Snyk CLI to test your project for vulnerabilities you must **build your project**, with limited exceptions (for details see [Which projects must be built before testing with CLI?](https://support.snyk.io/hc/en-us/articles/360015552617-Which-projects-must-be-built-before-testing-with-CLI-)). Depending on the language of your project, you may need to **set up your language environment** before using the Snyk CLI. For details refer to [Open Source language and package manager support](../products/snyk-open-source/language-and-package-manager-support/).
+Before using the Snyk CLI to test your project for vulnerabilities you must **build your project**, with limited exceptions (for details see [Which projects must be built before testing with CLI?](https://support.snyk.io/hc/en-us/articles/360015552617-Which-projects-must-be-built-before-testing-with-CLI-)). Depending on the language of your project, you may need to **set up your language environment** before using the Snyk CLI. For details refer to [Open Source language and package manager support](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/).
 
 If you are using the Snyk CLI to scan for issues in Snyk Code, Container, or Infrastructure as Code projects, refer to the instructions for using the CLI that are specific to each product:
 
 * [Using Snyk Code via the CLI](../products/snyk-code/cli-for-snyk-code/)
-* [Snyk CLI for container security](../products/snyk-container/snyk-cli-for-container-security/)
-* [Snyk CLI for Infrastructure as Code](../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/)
+* [Snyk CLI for container security](../scan-containers/snyk-cli-for-container-security/)
+* [Snyk CLI for Infrastructure as Code](../scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/)
 
 ## Scan your project
 

@@ -65,3 +65,4 @@ redirects:
   products/snyk-container/kubernetes-workload-and-image-scanning/kubernetes-integration-overview: containers/kubernetes-workload-and-image-scanning/kubernetes-integration-overview.md
   ide-tools/visual-studio-extension: integrations/ide-tools/visual-studio-extension.md
   ide-tools/visual-studio-code-extension-for-snyk-code: integrations/ide-tools/visual-studio-code-extension-for-snyk-code.md
+  integrations/event-forwarding/aws-cloudtrail-lake-integration-overview: integrations/event-forwarding/aws-cloudtrail-lake.md

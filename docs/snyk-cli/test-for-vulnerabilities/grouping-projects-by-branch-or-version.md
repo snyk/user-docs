@@ -1,4 +1,4 @@
-# Separating projects by branch or version
+# Group projects for monitoring
 
 {% hint style="warning" %}
 This feature is currently in Open Beta. There are areas where it is not fully supported. Currently [Snyk Open Source](../../products/snyk-open-source/) is supported.

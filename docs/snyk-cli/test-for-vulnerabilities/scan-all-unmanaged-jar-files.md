@@ -4,6 +4,8 @@ The Snyk CLI can scan unmanaged JAR files in [Java applications](../../products/
 
 The CLI identifies the package name, version, and vulnerabilities only if the package is available in Maven Central, and the JAR file hash matches the hash in Maven Central.
 
+## Scanning all JAR files in a single folder and scanning each JAR file individually
+
 Use the `snyk test --scan-all-unmanaged` CLI command to scan all JAR files in a single folder.
 
 You can also scan each JAR file individually using the `snyk test --scan-unmanaged --file=/path/to/file` command.
@@ -96,9 +98,9 @@ REM Usage:
 REM For example: scanjar.bat "C:\workspace\app" "myapp" 
 SET WORKSPACE=%1 
 SET REMOTE_REPO_URL=%2 
-for /R %WORKSPACE% %%f in (*.jar) do cmd /c snyk monitor --scan-unmanaged --remote-repo-url=%REMOTE_REPO_URL% --file=%%f
+for /R %WORKSPACE% %%f in (*.jar) do cmd /c snyk monitor --scan-unmanaged --remote-repo-url=%REMOTE_REPO_URL% --file=%%f --project-name=%%f
 ```
 
 Here is example in the Snyk UI of using these scripts with `REMOTE_REPO_URL` set to "econnect".
 
-<figure><img src="../../.gitbook/assets/untitled.png" alt="Result of scanning unmanaged JAR files"><figcaption><p>Result of scanning unmanaged JAR files</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/untitled (1) (1).png" alt="Result of scanning unmanaged JAR files"><figcaption><p>Result of scanning unmanaged JAR files</p></figcaption></figure>

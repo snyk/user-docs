@@ -1,6 +1,8 @@
 # CLI commands and options summary
 
-**Note:** This page **only summarizes** the CLI commands and the options for each command. Be sure to **use the links in this summary to look at the help** for the command you are using **for details**. (The help in the docs is the same as the help in the CLI.)
+{% hint style="info" %}
+This page **only summarizes** the CLI commands and the options for each command. **For details, use the links in this summary to open the help** docs page for the command you are using. The help docs pages are the same as the help in the CLI.
+{% endhint %}
 
 ## Usage
 
@@ -275,6 +277,10 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 `--init-script=<FILE`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 ## Options for .Net and NuGet projects
+
+`--file=.sln`: [test](https://docs.snyk.io/snyk-cli/commands/test)
+
+\-`-file=packages.config`: [test](https://docs.snyk.io/snyk-cli/commands/test)
 
 `--assets-project-name`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 

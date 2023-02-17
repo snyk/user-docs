@@ -26,7 +26,7 @@ Snyk Code currently supports the following programming languages:
 * **Apex**
 
 {% hint style="info" %}
-Beta support exists for Kotlin and Scala. Contact Snyk for more details or with your further needs.
+Beta support exists for Kotlin, Scala and Swift. Contact Snyk for more details or with your further needs.
 {% endhint %}
 
 ## Language type and framework support
@@ -105,3 +105,6 @@ Snyk Code automatically excludes the following files from analysis:
 * On the CLI and IDE - files that are larger than 1MB.
 * Minified JS files with 3 or less lines.
 
+### Filename length limitation
+
+The analysis is available only for files with names shorter or equal to 255 characters. You receive an error if the filename exceeds this limit. To make sure that all files are being analyzed, consider shortening long filenames.

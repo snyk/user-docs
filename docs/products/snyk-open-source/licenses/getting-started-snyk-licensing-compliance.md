@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Basic license policy configuration on a single default license policy is available with Business plans. Full policy creation and management is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
 Get started with Snyk license compliance management, to check compliance for the [open source licenses](https://snyk.io/learn/open-source-licenses/) in your code, as part of your [Snyk Open Source](https://docs.snyk.io/snyk-open-source/open-source-basics) solution.
@@ -41,7 +41,7 @@ To define your group license policy, complete the following steps:
 1. Select **Snyk Default License Policy**.
 2. Enter a **Description** for the policy to summarize what it does and the reason it was added.
 3. For each license listed on the right, choose a **Severity** from the menu list to define which license issues you want to identify when Snyk tests run.
-4. If you select a severity other than **None**, and you want to include additional instructions that will display when that license issue is identified, select the icon to the right of the Severity dropdown and enter the text for the license instruction.&#x20;
+4. If you select a severity other than **None**, and you want to include additional instructions that will display when that license issue is identified, select the icon to the right of the Severity dropdown and enter the text for the license instruction.
 5. Click **Add** or **Update** to confirm your changes.
 
 ![](../../../.gitbook/assets/license-policy.png)

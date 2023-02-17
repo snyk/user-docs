@@ -12,5 +12,5 @@ For more information see:\
 [Snyk CLI](../)\
 [Getting started with the CLI](../getting-started-with-the-cli.md)\
 [Snyk Code CLI results](../../products/snyk-code/cli-for-snyk-code/snyk-code-cli-results.md)\
-[Understanding Snyk Container CLI test results](../../products/snyk-container/snyk-cli-for-container-security/understanding-snyk-container-cli-results.md)\
-[Understanding the IaC CLI test output](../../products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-the-cli-test-output/)
+[Understanding Snyk Container CLI test results](../../scan-containers/snyk-cli-for-container-security/understanding-snyk-container-cli-results.md)\
+[Understanding the IaC CLI test output](../../scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-the-cli-test-output/)

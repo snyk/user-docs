@@ -1,23 +1,24 @@
 # Implementing Snyk: Free and Team plan users
 
-{% hint style="success" %}
-Just signed up to Snyk? Get results and start fixing issues in minutes!&#x20;
-{% endhint %}
+## Introduction&#x20;
+
+If you have just signed up to Snyk using the Free or Team [pricing plan](https://snyk.io/plans/), use this guide to get results and start fixing issues quickly.
 
 {% hint style="info" %}
-See [Implementing Snyk: Business and Enterprise plan users](../implementing-snyk-business-and-enterprise-plan-users.md) for details of using Snyk with those [pricing plans](https://snyk.io/plans/).
+See [Implementing Snyk: Enterprise plan users](../implementing-snyk-enterprise-plan-users.md) for details of using Snyk with that plan.
 {% endhint %}
 
-Snyk is here to support you on your way to secure code.&#x20;
+### Guide overview
 
-Use this article to guide you through both the initial setup, and the longer term process of securing your code, in the following key areas:&#x20;
+Use this guide to help you through both the initial setup, and the longer-term process of securing your code, in the following key areas:
 
-* [Strategies to succeed](strategies-to-succeed/)&#x20;
+* [Strategies to succeed](strategies-to-succeed/)
 * [Initial setup steps](initial-setup-steps/)
-* [Dialing down the noise](dialing-down-the-noise.md)&#x20;
+* [Dialing down the noise](dialing-down-the-noise.md)
 * [Invite team members](invite-team-members.md)
 
-#### Tip: keep it flexible
+### Overall principle: keep it flexible
 
-The strategies and settings mentioned in this section are meant to be flexible, so that you can choose what best works for your company. Pilot Snyk on a few key projects, then roll it out to the wider team. Helping your teams be aware of Snyk capabilities allows you to stay nimble, and use Snyk in ways that work best for each team.
+The strategies and settings mentioned in this section are flexible, allowing you to choose what best works for your company.&#x20;
 
+You should start with Snyk on a few key projects, and then roll it out to the wider team. Helping your teams be aware of Snyk's capabilities allows you to stay nimble, and use Snyk in ways that work best for each team.

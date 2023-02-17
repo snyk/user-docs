@@ -2,66 +2,55 @@
 
 You can use Snyk to scan your JavaScript projects managed by Yarn.
 
-### Feature support
+## Features of Snyk for Yarn
 
 {% hint style="info" %}
-**NOTE**\
-Features might not be available, depending on your subscription plan.
+**Feature availability**\
+Features may not be available, depending on your plan. See [pricing plans](https://snyk.io/plans/) for details.
 {% endhint %}
 
 | Yarn Version / Feature | CLI Support | Git Support | License Scanning | Fix Prs |
 | ---------------------- | ----------- | ----------- | ---------------- | ------- |
-| Yarn 1                 |  ✔︎         |  ✔︎         |  ✔︎              |  ✔︎     |
-| Yarn 2                 |  ✔︎         | ✖️          |  ✔︎              | ✖️      |
+| Yarn 1                 | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
+| Yarn 2                 | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
+| Yarn 3                 | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
 
-### Yarn version and how it affects Snyk support
+## Yarn version and how it affects Snyk support
 
-Snyk uses the Yarn lockfile (`yarn.lock`) to generate representation of project dependencies. With the release of Yarn 2 a new format for this lockfile was released; hence the disparity in feature support shown in the preceding table.
+Snyk uses the Yarn lockfile (`yarn.lock`) to generate representation of Project dependencies.&#x20;
 
-With changes to the files Snyk relies on to scan changing on version upgrades, Snyk lists only versions verified internally as supported. If you are using a newer version of Yarn than is listed on this page, you may find Snyk performs as expected because Yarn is using an already supported lockfile version. That version of Yarn has likely not been evaluated and thus not been added to this page.&#x20;
+The files Snyk relies on to scan a Project may change on version upgrades of the package manager.Therefore Snyk lists only versions verified internally as supported.&#x20;
 
-To see if you are using the new lockfile format, look for the string `__metadata` in the `yarn.lock` file itself.
+If you are using a newer version of Yarn than is listed on this page, you may find Snyk performs as expected because Yarn is using a lockfile version that is already supported. That version of Yarn has likely not been evaluated and thus not been added to this page.
 
-### How Snyk for Yarn works
+## How Snyk for Yarn works
 
 Snyk builds a dependency graph and then uses the [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in that tree.
 
 {% hint style="info" %}
-To scan your dependencies, ensure you install the relevant package manager, and that your project contains the supported manifest files.
+To scan your dependencies, ensure you install the relevant package manager, and that your Project contains the supported manifest files.
 {% endhint %}
 
-The way Snyk analyzes and builds the graph varies depending on the language and package manager of the project, as well as the location of your project.
+The way Snyk analyzes and builds the graph varies depending on the language and package manager of the Project, as well as the location of your Project.
 
-See the following:
-
-* [Snyk CLI for Yarn projects](snyk-for-yarn.md#snyk-cli-tool-for-yarn-projects)
-* [Git services for Yarn projects](snyk-for-yarn.md#git-services-for-npm-projects)
+For the ways you can scan Projects with Snyk, see [Snyk CLI for Yarn projects](snyk-for-yarn.md#snyk-cli-for-yarn-projects) and [Git services for Yarn projects](snyk-for-yarn.md#git-services-for-yarn-projects).
 
 ## Snyk CLI for Yarn projects
 
-Snyk analyzes your `package.json` and `yarn.lock` files, to build a fully structured dependency tree. If the `yarn.lock` is missing, Snyk analyzes your `node_modules` folder.
+Snyk analyzes your `package.json` and `yarn.lock` files to build a fully structured dependency tree. If the `yarn.lock` is missing, Snyk analyzes your `node_modules` folder.
 
 To get started using the CLI for Yarn projects:
 
 * Make sure Yarn is installed.
-* Make sure you are in a directory with a yarn project files, that is,`package.json` and `yarn.lock`.&#x20;
+* Make sure you are in a directory with Yarn Project files, that is, `package.json` and `yarn.lock`.
 * Run `yarn`.
-* Install and authenticate [Snyk CLI](https://docs.snyk.io/snyk-cli/install-the-snyk-cli).
+* [Install](../../../../snyk-cli/install-the-snyk-cli.md) and authenticate the Snyk CLI.
 
-You can now test and monitor your project using `snyk test` or `snyk monitor` .
+You can now test and monitor your Project using `snyk test` or `snyk monitor` .
 
-### CLI Options
+### CLI options for Snyk for Yarn
 
-There are options you can use with the CLI commands to refine your scan:
-
-| Option                             | Values (default in bold)         | Description                                                                                                                                                                                                                                                                                                                                                               |
-| ---------------------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `--strict-out-of-sync`             | **true** / false                 | Prevent testing out-of-sync lockfiles (test fails when set to true if there are out-of-sync lockfiles in the project).                                                                                                                                                                                                                                                    |
-| `--fail-on`                        | **all** / upgradable / patchable | <p>Configure when a test should fail if there are vulnerabilities as follows:</p><ul><li>All-fail for all projects containing vulnerabilities</li><li>Upgradable-fail only for projects with vulnerabilities that can be fixed with package upgrades</li><li>Patchable-fail for projects with vulnerabilities that can be fixed with either upgrades or patches</li></ul> |
-| `--prune-repeated-subdependencies` | true / **false**                 | Use this option if any big projects fail to be tested.                                                                                                                                                                                                                                                                                                                    |
-| `--dev`                            | true / **false**                 | Set to true if Snyk should scan dev dependencies.                                                                                                                                                                                                                                                                                                                         |
-| `--all-projects`                   | N/A                              | Use this option to detect and scan all Yarn and other projects in this directory.                                                                                                                                                                                                                                                                                         |
-| `--yarn-workspaces`                | N/A                              | Use this option only to scan a Yarn Workspace project where lockfile is in the root. By default `--all-projects` automatically detects and scans Yarn Workspace projects.                                                                                                                                                                                                 |
+For information about the `snyk test` options available for use with Yarn, see [Options for Yarn projects in the Test help](https://docs.snyk.io/snyk-cli/commands/test#options-for-yarn-projects). For the available `snyk monitor` options, see [Options for Yarn projects in the Monitor help](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-yarn-projects).
 
 ### Differences due to Yarn versions
 
@@ -75,12 +64,12 @@ Because different versions of Yarn have different feature sets, there are differ
 `nohoist` is **not** supported for Yarn Workspaces.
 {% endhint %}
 
-For Yarn Workspaces use the `--all-projects` flag to test and monitor your packages alongside other projects or `--yarn-workspaces` to specifically scan Yarn Workspaces projects only. The root lock file is referenced when scanning all the packages. Use the `--detection-depth` option to find sub-folders that are not auto-discovered by default.
+For Yarn Workspaces use the `--all-projects` flag to test and monitor your packages with other Projects or `--yarn-workspaces` to specifically scan Yarn Workspaces Projects only. The root lock file is referenced when scanning all the packages. Use the `--detection-depth` option to find sub-folders that are not auto-discovered by default.
 
 Example usage:\
-`snyk test --all-projects --strict-out-of-sync=false --detection-depth=6` scans the packages that belong to any discovered workspaces in this directory and 5 sub-directories deep, as well as any other projects detected.
+`snyk test --all-projects --strict-out-of-sync=false --detection-depth=6` scans the packages that belong to any discovered workspaces in this directory and five sub-directories deep, as well as any other Projects detected.
 
-`snyk test --yarn-workspaces --strict-out-of-sync=false --detection-depth=6` scans only the Yarn Workspace packages that belong to any discovered workspaces in this directory and 5 sub-directories deep.
+`snyk test --yarn-workspaces --strict-out-of-sync=false --detection-depth=6` scans only the Yarn Workspace packages that belong to any discovered workspaces in this directory and five sub-directories deep.
 
 You may use a common `.snyk` policy file if you maintain ignores and patches in one place to be applied for all detected workspaces by using the policy path:
 
@@ -88,27 +77,35 @@ You may use a common `.snyk` policy file if you maintain ignores and patches in 
 
 ## Git services for Yarn projects
 
-Yarn projects can be imported from any of the Git services Snyk supports. After import, Snyk analyzes your projects based on their supported manifest files.
+Yarn Projects can be imported from any of the Git services Snyk supports. After import, Snyk analyzes your Projects based on their supported manifest files.
 
 Snyk scans based on these files being present:
 
 * `package.json`
 * `yarn.lock`
 
+### Fix PRs for [zero-installs](https://yarnpkg.com/features/zero-installs) users
+
+In Yarn V2 the [zero-installs](https://yarnpkg.com/features/zero-installs) feature was released, which allowed Yarn developers to work on a project without having to run `yarn` to install dependencies on their machine. It achieved this by installing all the dependencies of a project inside of the `.yarn/cache` directory and asking users to commit this to their version control system - allowing the next developer to pull any new dependencies directly from the repo.&#x20;
+
+{% hint style="warning" %}
+If you are using the **zero-installs** feature, any Snyk fix PRs do not update the **.yarn/cache** directory. You must run `yarn` to update this directory.
+{% endhint %}
+
 ### Git settings for Yarn
 
 From the Snyk UI, use these parameters to customize your language preferences for JavaScript-based projects:
 
-#### Preferences
+#### Preferences for Snyk for Yarn
 
-| Preference                                                         | Description                                                                                                                                                                                                                                                                                   |
-| ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Scan and fix devDependencies                                       | If this is selected, Snyk reads the "devDependencies" property on the `package.json` and reports and fixes any vulnerabilities accordingly.                                                                                                                                                   |
-| Require package.json and yarn.lock to be in sync                   | When this is selected, if the `package.json` and `yarn.lock` files are out of sync, Snyk fails the import.                                                                                                                                                                                    |
-| Exclude yarn.lock from being generated when fixing vulnerabilities | If you are using private mirrors or registries, a Snyk-generated lockfile might not be appropriate for you because Snyk uses the npm registry to update the lockfile. This setting allows you to opt out of getting lockfiles generated for you in Snyk fix pull requests and merge requests. |
+| Preference                                                         | Description                                                                                                                                                                                                                                                                                    |
+| ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Scan and fix devDependencies                                       | If this is selected, Snyk reads the "devDependencies" property on the `package.json` and reports and fixes any vulnerabilities accordingly.                                                                                                                                                    |
+| Require package.json and yarn.lock to be in sync                   | When this is selected, if the `package.json` and `yarn.lock` files are out of sync, Snyk fails the import.                                                                                                                                                                                     |
+| Exclude yarn.lock from being generated when fixing vulnerabilities | If you are using private mirrors or registries, a Snyk-generated lock file might not be appropriate for you because Snyk uses the npm registry to update the lockfile. This setting allows you to opt out of getting lockfiles generated for you in Snyk fix pull requests and merge requests. |
 
-#### Update language preferences
+## Update language preferences for Snyk for Yarn
 
 1. Log in to your account and navigate to the relevant Group and Organization that you want to manage.
-2. Click on settings <img src="../../../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line">  > **Languages**
-3. Click **Edit settings** for JavaScript to configure preferences for your JavaScript (npm and Yarn) projects in this Organization.
+2. Select **Settings** > **Languages**
+3. Select **Edit settings** for JavaScript to configure preferences for your JavaScript (npm and Yarn) projects in this Organization.

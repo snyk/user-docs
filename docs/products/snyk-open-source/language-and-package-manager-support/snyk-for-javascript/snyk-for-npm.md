@@ -2,11 +2,11 @@
 
 You can use Snyk to scan your JavaScript project managed by npm.
 
-### Feature support
+## Features of Snyk for npm
 
 {% hint style="info" %}
-**NOTE**\
-Features might not be available, depending on your subscription plan.
+**Feature availability**\
+Features may not be available, depending on your plan. See [pricing plans](https://snyk.io/plans/) for details.
 {% endhint %}
 
 | npm Version / Feature | CLI Support | Git Support | License Scanning | Fix Prs |
@@ -14,11 +14,11 @@ Features might not be available, depending on your subscription plan.
 | V6 and Below          | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
 | V7                    | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
 
-### npm version and how it affects Snyk support
+## npm version and how it affects Snyk support
 
-Snyk uses the npm lockfile (`package-lock.json`) when it is present to generate representation of a project's dependencies. Up until npm v7, this lockfile was always the same format but in npm v7 a new lockfile format, lockfile v2, was introduced.&#x20;
+Snyk uses the npm lockfile (`package-lock.json`) when it is present to generate representation of Project dependencies. Until npm v7, this lockfile was always the same format. In npm v7 a new lockfile format, lockfile v2, was introduced.
 
-With changes to the files Snyk relies on to scan changing on version upgrades, Snyk lists only versions verified internally as supported. If you are using a newer version of npm than is listed on this page, you may find Snyk performs as expected and this version of npm has just not been evaluated and added to this page.&#x20;
+With changes to the files Snyk relies on to scan changing on version upgrades, Snyk lists only versions verified internally as supported. If you are using a newer version of npm than is listed on this page, you may find Snyk performs as expected. The newer version of npm has likely not been evaluated and added to this page.
 
 To see if you are using the new lockfile format, look in in the `package-lock.json` itself:
 
@@ -30,19 +30,16 @@ To see if you are using the new lockfile format, look in in the `package-lock.js
 }
 ```
 
-### How Snyk for npm works
+## How Snyk for npm works
 
 Snyk builds a dependency graph and then uses the [vulnerability database](https://snyk.io/vuln) to find vulnerabilities in any of the packages anywhere in that tree.
 
-The way Snyk analyzes and builds the graph varies depending on the language and package manager of the project, as well as the location of your project. For the two ways snyk can be run see the following:
+The way Snyk analyzes and builds the graph varies depending on the language and package manager of the Project, as well as the location of your project. For the ways you can scan Projects with Snyk see [Snyk CLI for npm projects](snyk-for-npm.md#snyk-cli-for-npm-projects) and [Git services for npm projects](snyk-for-npm.md#git-services-for-npm-projects).
 
-* [Snyk CLI for npm projects](snyk-for-npm.md#snyk-cli-for-npm-projects)
-* [Git services for npm projects](snyk-for-npm.md#git-services-for-npm-projects)
-
-### Snyk CLI for npm projects
+## Snyk CLI for npm projects
 
 {% hint style="info" %}
-To scan your dependencies, ensure you install the relevant package manager, and that your project contains the supported manifest files.
+To scan your dependencies, ensure you install the relevant package manager and that your Project contains the supported manifest files.
 {% endhint %}
 
 Snyk analyzes your `package.json` and `package-lock.json` files to build a fully structured dependency tree. If the `package-lock.json` is missing, Snyk analyzes your `node_modules` folder.
@@ -50,34 +47,26 @@ Snyk analyzes your `package.json` and `package-lock.json` files to build a fully
 To get started using the CLI for npm projects:
 
 * Make sure npm is installed.
-* Make sure you are in a directory with npm project files, that is, `package.json` and `package-lock.json`.
+* Make sure you are in a directory with npm Project files, that is, `package.json` and `package-lock.json`.
 * Run `npm install`.
-* Install and authenticate [Snyk CLI](https://docs.snyk.io/snyk-cli/install-the-snyk-cli).
+* Install and authenticate Snyk CLI.
 
 You can now test and monitor your project using `snyk test` or `snyk monitor`.
 
-There are **CLI options** you can use with the CLI commands to refine your scan:
+You can use options with Snyk CLI commands to refine your scan. For information about the `snyk test` options available for use with Yarn, see [Options for npm projects](https://docs.snyk.io/snyk-cli/commands/test#options-for-npm-projects) in the Test help. For the available `snyk monitor` options, see [Options for npm projects in the Monitor help](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-npm-projects).
 
-| Option                             | Values (default in bold)         | Description                                                                                                                                                                                                                                                                                                                                                                    |
-| ---------------------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `--strict-out-of-sync`             | **true** / false                 | Prevent testing out-of-sync lockfiles (test fails when set to true if there are out-of-sync lockfiles in the project).                                                                                                                                                                                                                                                         |
-| `--fail-on`                        | **all** / upgradable / patchable | <p>Configure when a test should be failed if there are vulnerabilities as follows:</p><ul><li>All-fail for all projects containing vulnerabilities</li><li>Upgradable-fail only for projects with vulnerabilities that can be fixed with package upgrades</li><li>Patchable-fail for projects with vulnerabilities that can be fixed with either upgrades or patches</li></ul> |
-| `--prune-repeated-subdependencies` | true / **false**                 | Use this option if any big projects fail to be tested.                                                                                                                                                                                                                                                                                                                         |
-| `--dev`                            | true / **false**                 | Set to true if Snyk should scan dev dependencies.                                                                                                                                                                                                                                                                                                                              |
-| `--all-projects`                   | N/A                              | Use this option to detect and scan all npm and other projects in this directory.                                                                                                                                                                                                                                                                                               |
+## Git services for npm projects
 
-### Git services for npm projects
+JavaScript Projects can be imported from any of the Git services that Snyk supports. After import, Snyk analyzes your Projects based on their supported manifest files.
 
-JavaScript projects can be imported from any of the Git services (GitHub, GitLab, BitBucket, and so on) Snyk supports. After import, Snyk analyzes your projects based on their supported manifest files.
-
-Snyk scans your projects based on these files being present:
+Snyk scans your Projects based on these files being present:
 
 * `package.json`
 * `package-lock.json`
 
-### Git settings for npm
+## Git settings for npm
 
-#### Preferences
+### Preferences for JavaScript-based Projects
 
 From the Snyk UI, use these parameters to customize your language preferences for JavaScript-based projects:
 
@@ -87,17 +76,19 @@ From the Snyk UI, use these parameters to customize your language preferences fo
 | Require package.json and package-lock.json to be in sync                   | When this is selected, if the `package.json` and `package-lock.json` files are out-of-sync, Snyk fails the import.                                                                                                                                                                            |
 | Exclude package-lock.json from being generated when fixing vulnerabilities | If you are using private mirrors or registries, a Snyk-generated lockfile might not be appropriate for you because Snyk uses the npm registry to update the lockfile. This setting allows you to opt out of getting lockfiles generated for you in Snyk fix pull requests and merge requests. |
 
-#### Update language preferences
+### Update language preferences for Snyk for npm
 
 1. Log in to your account and navigate to the relevant Group and Organization that you want to manage.
-2. Click on settings <img src="../../../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line">  > **Languages**
-3. Click **Edit settings** for JavaScript to configure preferences for your JavaScript (npm and Yarn) projects in this Organization.
+2. Select **Settings** > **Languages.**
+3. Select **Edit settings** for JavaScript to configure preferences for your JavaScript (npm and Yarn) projects in this Organization.
 
-### Differences due to npm versions
+## Differences due to npm versions
 
-Due to different versions of npm having different feature sets there are differences in our support to best match how the package manager works.
+Due to different versions of npm having different feature sets there are differences in Snyk support to best match how the package manager works.
 
-In npm v7 and above the behavior of **peer dependencies** changed if they are are installed by default. To match this in npm v7+ projects, Snyk assumes peer dependencies are installed and scans them by default. The only case an npm v7+ project will ignore these is if they are explicitly marked as optional in the `peerDependenciesMeta` object in the `package.json` as shown here for `cache-manager` :
+In npm v7 and above, the behavior of **peer dependencies** changed if they are are installed by default. To match this in npm v7+ projects, Snyk assumes peer dependencies are installed and scans them by default.
+
+The only case in which an npm v7+ Project ignores peer dependencies is if they are explicitly marked as optional in the `peerDependenciesMeta` object in the `package.json` as shown here for `cache-manager`:
 
 ```json
 {
@@ -111,10 +102,8 @@ In npm v7 and above the behavior of **peer dependencies** changed if they are ar
 }
 ```
 
-In npm v6 and below peer dependencies are not scanned by default, as the package manager does not install them by default. If you wish to scan peer dependencies, make sure they have been installed and then run the CLI with the `--peer-dependencies` option
+In npm v6 and below, peer dependencies are not scanned by default, as the package manager does not install them by default. If you wish to scan peer dependencies, make sure they have been installed and then run the CLI with the `--peer-dependencies` option.
 
-### Limitations
-
-#### Npm Workspaces
+## Limitations of Snyk for npm
 
 npm v7 introduced the concept of **workspaces**. These are not yet supported by Snyk

@@ -1,26 +1,43 @@
 # Strategies to succeed
 
-### Before you start
+## Introduction
 
-Snyk has a lot of capabilities and is very flexible; this matters because companies tend to roll out Snyk in phases.
-
-While you may start using the [Git repository integration](../../walkthrough-code-repository-projects/) or [CI/CD integrations](../../../integrations/ci-cd-integrations/) immediately, how you use it will change in the early stages of using Snyk.&#x20;
-
-Similarly, after scan results start getting generated, you’ll want to deal with issues in a phased approach, especially if you have a large collection of applications which have not been tested.
+Snyk products have a wide range of flexible functions. This matters because companies tend to roll out Snyk in phases, and the way Snyk functions are used can change over time. For example, you may start using the [Git repository integration](../../walkthrough-code-repository-projects/) or [CI/CD integrations](../../../integrations/ci-cd-integrations/) immediately, but how you use these functions may change during your Snyk rollout.
 
 ### Successful approaches
 
-We have found the most successful customers:&#x20;
+After scan results start getting generated, you’ll want to deal with issues in a phased approach, especially if you have a large collection of applications which have not been tested.
 
-* Pilot Snyk on an initial set of important projects to get [**visibility**](visibility.md) right away on the problems you need to be aware of
-  * Start fixing the worst issues right away (using priority score or filters to help focus where to start).
-  * If you find a lot of issues, you will use a phased approach to addressing them:
-    * ****[**Prevention**](prevention.md): Adopt tools and enable features to make sure the problem does not get any worse.
-    * ****[**Addressing the backlog**](addressing-the-backlog.md): Address lower priority issues over time or through new development work.
-* Invite the rest of the team after the initial piloting team has identified what works best.
-* Start turning on the controls (Pull Request Checks/Break builds) after an agreed period of time.&#x20;
-* Have a clear stakeholder or set of stakeholders who can force merge PRs, mark pull request checks as successful in Snyk (Snyk Admins), and adjust build settings as needed. Additionally, determine who can use the Ignore option, if this is limited to admins.
+We have found that successful customers take approaches based on Visibility, Prevention, and Addressing the Backlog.
+
+#### Stage 1: Visibility
+
+Roll out Snyk on an initial set of important projects, to get immediate awareness about the problems you need to be aware of. This allows you to fix the worst issues right away, using priority scores or filters to help focus on where to start.
+
+See [Visibility](visibility.md) for more details.
+
+#### Stage 2: Prevention
+
+You will need to use a phased approach to addressing issues found during the Visibility stage.
+
+Prevention is the process of adopting tools and enabling features to make sure the problem does not get any worse.
+
+See [Prevention](prevention.md) for more details.
+
+#### Stage 3: Addressing the backlog
+
+After Visibility and Prevention, you can now address your backlog, by examining and managing lower-priority issues over time or through new development work.
+
+See [Addressing the backlog](addressing-the-backlog.md) for more details.
+
+#### Other tips
+
+* Don't get swamped: Snyk's initial scan results may expose thousands of vulnerabilities in your code base. It is important not to get overwhelmed by this initial volume of results. Successful implementation involves long-term planning and phased rollouts.
+* Invite the rest of the teams after the initial piloting team identifies what works best.
+* Start turning on the controls (for example, [PR Checks](../../../scan-application-code/run-pr-checks/)) after an agreed period of time.
+* Allocate Snyk admin roles: Have a clear stakeholder or set of stakeholders who can force merge PRs, mark PR checks as successful in Snyk, and adjust build settings as needed. See [Snyk admin](../../../user-and-group-management/) for details.
+* Define who can [Ignore issues](../../../manage-issues/issue-management/ignore-issues.md), if this function is limited to Snyk Admins.
 
 ### What's next?
 
-To address vulnerabilities, we will discuss the phased approaches of **visibility**, **prevention** and **addressing the backlog**, in addition to the relevant settings, in the following sections.
+Let's start with gaining [Visibility](visibility.md): get your team aware of Snyk functions and results.

@@ -14,16 +14,16 @@ You can set the following configurations for the plugin, using **Preferences →
     If not specified, the preferred organization as defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
 *   **Additional parameters**: set additional `snyk test` [CLI options](https://docs.snyk.io/snyk-cli/cli-reference#options-for-multiple-commands) for Open Source scanning.
 
-    For **unmanaged** [**C/C++ scanning**](../../products/snyk-open-source/language-and-package-manager-support/snyk-for-c-c++.md), use the CLI option `--unmanaged` to find vulnerabilities in open source packages. This option works only for unmanaged C/C++ scanning; do not use this option for other languages. Additional parameters do not apply to Snyk Code or IaC.
+    For **unmanaged** [**C/C++ scanning**](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-c-c++.md), use the CLI option `--unmanaged` to find vulnerabilities in open source packages. This option works only for unmanaged C/C++ scanning; do not use this option for other languages. Additional parameters do not apply to Snyk Code or IaC.
 * **Snyk Open Source vulnerabilities**: use to analyze the project for open source vulnerabilities through the CLI using Snyk Open Source; enabled by default.
 * **Snyk Infrastructure as Code issues**: use to analyze the project for insecure configurations in Terraform and Kubernetes code; enabled by default.
 * **Snyk Container vulnerabilities**: use to analyze the project for container vulnerabilities in container images and Kubernetes applications; enabled by default.
 * **Snyk Code Security issues**: use to analyze the project for security vulnerabilities in your application code using Snyk Code; enabled by default
 * **Snyk Code Quality issues**: use to analyze the project for quality issues in your application code using Snyk Code; disabled by default.
 * **Snyk Advisor issues**: health status (maintenance, community, popularity, and security) of your open source packages. Advisor scores are shown only for packages with an advisor score of less than 70.
-* **Automatically manage needed binaries** and **** and **Cli Path**: Opt out of downloading the CLI through the plugin and thus use your own installation of the CLI.&#x20;
+* **Automatically manage needed binaries** and \*\*\*\* and **Cli Path**: Opt out of downloading the CLI through the plugin and thus use your own installation of the CLI.
   * When **Automatically manage needed binaries** is checked, the plugin will automatically download and keep the CLI updated.
-  * When **Automatically manage needed binaries** __ is checked __ and **Cli Path** contains a path, the plugin will use the provided CLI path. Use this option if downloading the CLI is not possible due to your network configuration (for example, due to firewall rules) and you need to obtain the CLI through other means.
+  * When **Automatically manage needed binaries** \_\_ is checked \_\_ and **Cli Path** contains a path, the plugin will use the provided CLI path. Use this option if downloading the CLI is not possible due to your network configuration (for example, due to firewall rules) and you need to obtain the CLI through other means.
 
 <figure><img src="../../.gitbook/assets/JetBrains-CLI-config.png" alt=""><figcaption></figcaption></figure>
 

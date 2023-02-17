@@ -2,7 +2,8 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Snyk reporting is available to all customers on Business or Enterprise plans. To get access to the **Reporting Beta** tab, a Snyk admin can activate the reporting in [Snyk Preview](https://docs.snyk.io/features/user-and-group-management/managing-settings/snyk-preview). Note that Reporting Beta is not available for customers on Multi-Tenant EU or with Snyk Private Cloud.
+This feature is available with Enterprise plans. See [Snyk Pricing Plans](../../snyk-processes/plans.md) for details.\
+To get access to the **Reporting Beta** tab, a Snyk admin can activate the reporting in [Snyk Preview](https://docs.snyk.io/features/user-and-group-management/managing-settings/snyk-preview). Note that Reporting Beta is not available for customers on Multi-Tenant EU or with Snyk Private Cloud.
 {% endhint %}
 
 The **Reports** area offers data and analytics across all of your projects, displaying historical and aggregated data about projects, issues, dependencies, and licenses. Data in each of the four tabs (seen below) is displayed based on the organization in which you are working, and you can filter this data with different parameters depending on the tab you're viewing.
@@ -13,9 +14,9 @@ From the **Group** level, you can filter to view data for multiple organizations
 
 ![](../../.gitbook/assets/mceclip0-28-.png)
 
-You can also use the **Organization Filters** to save and store pre-filtered reports for selected groups of organizations. For more information about this, see our [Snyk groups overview](../user-and-group-management/managing-groups-and-organizations/snyk-groups-overview.md).
+You can also use the **Organization Filters** to save and store pre-filtered reports for selected groups of organizations. For more information about this, see our [Snyk groups overview](../../snyk-admin/managing-groups-and-organizations/snyk-groups-overview.md).
 
-Additionally, at the Organization level see [General actions](general-actions.md) to filter for:
+Additionally, at the Organization level see [General actions](../../manage-issues/snyk-reports/general-actions.md) to filter for:
 
 * project names
 * project types
@@ -24,10 +25,10 @@ Additionally, at the Organization level see [General actions](general-actions.md
 
 The Reports area comprises these tabs:
 
-* [Summary](summary-tab.md)—the main dashboard displays a birds-eye view of all of your issues (vulnerabilities and licenses), across all of your projects.
-* [Issues](issues-tab.md)—all issues (vulnerabilities and licenses) across all of your projects, including their severity, any available fixes, and more.
-* [Dependencies](dependencies-tab.md)—the package dependencies in your project and their health status.
-* [Licenses](licenses-tab.md)—the licenses in all of your projects and their status.
+* [Summary](../../manage-issues/snyk-reports/summary-tab.md)—the main dashboard displays a birds-eye view of all of your issues (vulnerabilities and licenses), across all of your projects.
+* [Issues](../../manage-issues/snyk-reports/issues-tab.md)—all issues (vulnerabilities and licenses) across all of your projects, including their severity, any available fixes, and more.
+* [Dependencies](../../manage-issues/snyk-reports/dependencies-tab.md)—the package dependencies in your project and their health status.
+* [Licenses](../../manage-issues/snyk-reports/licenses-tab.md)—the licenses in all of your projects and their status.
 
 Report data can also be generated and retrieved with our APIs. For more information about this, see our [API documentation](https://snyk.docs.apiary.io/#introduction).
 

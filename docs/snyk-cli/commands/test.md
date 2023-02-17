@@ -85,7 +85,9 @@ Set or override the remote URL for the repository that you would like to monitor
 
 Include development-only dependencies. Applicable only for some package managers, for example, `devDependencies` in npm or `:development` dependencies in Gemfile.
 
-Default: scan only production dependencies.
+**Note**: This option can be used with Maven, npm, and Yarn projects.
+
+Default: false, scan only production dependencies.
 
 ### `--org=<ORG_ID>`
 
@@ -109,11 +111,15 @@ Specify a package file.
 
 When testing locally or monitoring a project, you can specify the file that Snyk should inspect for package information. When the file is not specified, Snyk tries to detect the appropriate file for your project.
 
+See also the section on [Options for Python projects](https://docs.snyk.io/snyk-cli/commands/test#options-for-python-projects)
+
 ### `--package-manager=<PACKAGE_MANAGER_NAME>`
 
 Specify the name of the package manager when the filename specified with the `--file=<FILE>` option is not standard. This allows Snyk to find the file.
 
 Example: `$ snyk test --file=req.txt --package-manager=pip`
+
+For more information see [Options for Python projects](https://docs.snyk.io/snyk-cli/commands/test#options-for-python-projects)
 
 ### `--unmanaged`
 
@@ -201,7 +207,9 @@ To fail on any vulnerability (the default behavior), do not use the `--fail-on` 
 
 ## Options for Maven projects
 
-For more information about Maven CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven)
+For more information see [CLI help for Maven Projects: Aggregate projects](https://docs.snyk.io/scan-application-code/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven#cli-help-for-maven-projects-aggregate-projects)
+
+**Note**: The `--dev` option can be used with Maven projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/test#dev)
 
 ### `--maven-aggregate-project`
 
@@ -221,9 +229,9 @@ Auto-detect maven jars, aars, and wars in given directory. To test individually 
 
 ## Options for Gradle projects
 
-For more information about Gradle CLI options see [Snyk for Java and Kotlin](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven)
-
 **Note:** If you see the invalid string length error, refer to [Invalid string length error when scanning projects](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/invalid-string-length-error-when-scanning-projects)
+
+For more information see [CLI help for Gradle projects](https://docs.snyk.io/scan-application-code/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven#cli-help-for-gradle-projects)
 
 ### `--sub-project=<NAME>`, `--gradle-sub-project=<NAME>`
 
@@ -233,15 +241,25 @@ For Gradle "multi project" configurations, test a specific sub-project.
 
 For "multi project" configurations, test all sub-projects.
 
+### `--all-projects`
+
+See also the `--all-projects` option information in the Options section of this help.
+
+Use for monorepos. This detects all supported manifests.
+
+For Gradle monorepos Snyk looks only for root level **build.gradle / build.gradle.kts** files and applies the same logic as `--all-sub-projects` behind the scenes.
+
+This option is designed to be run in the root of your monorepo.
+
 ### `--configuration-matching=<CONFIGURATION_REGEX>`
 
-Resolve dependencies using only configuration(s) that match the specified Java regular expression
+Resolve dependencies using only configuration(s) that match the specified Java regular expression.
 
 Example: `^releaseRuntimeClasspath$`
 
 ### `--configuration-attributes=<ATTRIBUTE>[,<ATTRIBUTE>]...`
 
-Select certain values of configuration attributes to install dependencies and perform dependency resolution.
+Select certain values of configuration attributes to install and resolve dependencies.
 
 Example: `buildtype:release,usage:java-runtime`
 
@@ -253,11 +271,31 @@ Use for projects that contain a Gradle initialization script.
 
 ### `--assets-project-name`
 
-When monitoring a .NET project using NuGet `PackageReference` use the project name in `project.assets.json` if found.
+When you are monitoring a .NET project using NuGet `PackageReference` uses the project name in `project.assets.json` if found.
+
+### `--file=.sln`
+
+Test all .NET projects included in the given `.sln` file.&#x20;
+
+Example: `snyk test --file=myApp.sln`
+
+### `--file=packages.config`
+
+Test an individual .NET project.
 
 ### `--packages-folder`
 
 Specify a custom path to the packages folder.
+
+This is the folder in which your dependencies are installed, provided you are using `packages.config`. If you have assigned a unique name to this folder, then Snyk can find it only if you enter a custom path.
+
+Use the absolute or relative path, including the name of the folder where your dependencies reside.
+
+Examples:&#x20;
+
+`snyk test --packages-folder=../location/to/packages` for Unix OS
+
+`snyk test --packages-folder=..\location\to\packages` for Windows.
 
 ### `--project-name-prefix=<PREFIX_STRING>`
 
@@ -267,25 +305,73 @@ Example: `snyk monitor --file=my-project.sln --project-name-prefix=my-group/`
 
 This is useful when you have multiple projects with the same name in other `.sln` files.
 
-## Option for npm projects
+## Options for npm projects
+
+**Note**: The `--dev` option can be used with npm projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/test#dev)
+
+**Note**: You can use the `--all-projects` option to scan and detect npm projects and all other projects in the directory. See the [`--all-projects` option help](https://docs.snyk.io/snyk-cli/commands/test#all-projects)
 
 ### `--strict-out-of-sync=true|false`
 
-Control testing out-of-sync lockfiles.
+Prevent testing out-of-sync lockfiles.
+
+If there are out-of-sync lockfiles in the project, the `test` command fails when `--strict-out-of-sync=true`.&#x20;
 
 Default: true
 
+### `--fail-on=<all|upgradable|patchable>`
+
+Configure to fail when there are vulnerabilities as follows:
+
+All: fail for all projects containing vulnerabilities.
+
+Upgradable: fail only for projects with vulnerabilities that can be fixed with package upgrades.
+
+Patchable: fail for projects with vulnerabilities that can be fixed with either upgrades or patches.
+
+### --prune-repeated-subdependencies, -p
+
+Use this option if any big projects fail to be tested.
+
+Default: false
+
 ## Options for Yarn projects
+
+**Note**: The `--dev` option can be used with Yarn projects. See also the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/test#dev)
 
 ### `--strict-out-of-sync=true|false`
 
-Control testing out-of-sync lockfiles.
+Prevent testing out-of-sync lockfiles.
+
+If there are out-of-sync lockfiles in the project, the `test` command fails when `--strict-out-of-sync=true`.&#x20;
 
 Default: true
 
 ### `--yarn-workspaces`
 
-Detect and scan Yarn workspaces. You can specify how many sub-directories to search using `--detection-depth` and exclude directories and files using `--exclude`. Alternatively scan Yarn workspaces with other projects using `--all-projects`
+Detect and scan Yarn Workspaces only when a lockfile is in the root.
+
+You can specify how many sub-directories to search using `--detection-depth.`
+
+You can exclude directories and files using `--exclude`.
+
+By default, `--all-projects` automatically detects and scans Yarn Workspaces.with other projects.&#x20;
+
+### `--fail-on=<all|upgradable|patchable>`
+
+Configure to fail when there are vulnerabilities as follows:
+
+All: fail for all projects containing vulnerabilities.
+
+Upgradable: fail only for projects with vulnerabilities that can be fixed with package upgrades.
+
+Patchable: fail for projects with vulnerabilities that can be fixed with either upgrades or patches.
+
+### --prune-repeated-subdependencies, -p
+
+Use this option if any big projects fail to be tested.
+
+Default: false
 
 ## Option for CocoaPods projects
 
@@ -299,13 +385,35 @@ Default: false
 
 ### `--command=<COMMAND>`
 
-Indicate which specific Python commands to use based on Python version. The default is `python` which executes your default python version. Run 'python -V' to find out what version it is. If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.
+Indicate which specific Python commands to use based on the Python version.
 
-Default: `python` Example: `--command=python3`
+Snyk uses Python in order to scan and find your dependencies. If you are using multiple Python versions, use this parameter to specify the correct Python command for execution.
+
+Default: `python` This executes your default python version. Run `python -V` to find out what your default version is.
+
+Example: `snyk test--command=python3`
 
 ### `--skip-unresolved=true|false`
 
-Allow skipping packages that are not found in the environment.
+Skip packages that cannot be found in the environment, for example, private packages that cannot be accessed from the machine running the scan.
+
+### `--file=` for Python
+
+For a Python project, specify a particular file to test.
+
+By default, Snyk scans the requirements.txt file at the top level of the project.
+
+Snyk can recognize any manifest files specified with this option based on `--file=req.txt`. Each (\*) is a wildcard and `req` can appear anywhere in the file name.
+
+For example, Snyk recognizes your manifest file when you have renamed it to r`equirements-dev.txt`.
+
+### `--package-manager=` for Python
+
+Add`--package-manager=pip` to your command if the file name is not `requirements.txt`.
+
+This option is mandatory if you specify a value for the `--file` parameter that is not to a `requirements.txt` file. The test fails without this parameter. Specify this parameter with the value `pip`.
+
+For complete information about the command see [`--package-manager=<PACKAGE_MANAGER_NAME>`](https://docs.snyk.io/snyk-cli/commands/test#package-manager-less-than-package\_manager\_name-greater-than)``
 
 ## Options for Go projects
 
@@ -351,7 +459,7 @@ For more information on uses of CLI options for C/C++ projects see [Snyk for C /
 
 ### `-- [<CONTEXT-SPECIFIC_OPTIONS>]`
 
-Use a double dash (`--`) after the complete Snyk command to pass options (arguments, flags) that follow directly to the build tool, for example Gradle or Maven.
+Use a double dash (`--`) after the complete Snyk command to pass additional options (arguments, flags) that follow directly to the build tool, for example Gradle or Maven.
 
 The format is `snyk <command> -- [<context-specific_options>]`
 
@@ -359,7 +467,11 @@ Example: `snyk test -- --build-cache`
 
 **Note:** Do not use double quotes in any `-- [<context-specific_options>]`.
 
-Example: Use `snyk test --org=myorg -- -s settings.xml` NOT `snyk test --org=myorg -- "-s settings.xml"`
+Example: Use `snyk test --org=myorg -- -s settings.xml`
+
+NOT `snyk test --org=myorg -- "-s settings.xml"`
+
+See also [Examples of how you can use Maven arguments with the Snyk CLI](https://docs.snyk.io/scan-application-code/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven#examples-of-how-you-can-use-maven-arguments-with-the-snyk-cli)
 
 ## Examples for the snyk test command
 

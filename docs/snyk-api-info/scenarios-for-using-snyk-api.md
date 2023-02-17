@@ -13,7 +13,7 @@ If you have issues when using these procedures, contact your Technical Success M
 Scenario: [Retrieve-project-snapshots](https://github.com/snyk-playground/cx-tools/blob/main/scripts/retrieve-projects-snapshots.md) (complete procedure)
 
 **Endpoints used:**\
-****API v1 [List all organizations in a group](https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group)
+API v1 [List all organizations in a group](https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group)
 
 API v1 (Reporting API) [Get list of latest issues](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues)
 
@@ -31,11 +31,11 @@ SEE also:
 Scenario: [Identify-and-import-new-repos](https://github.com/snyk-playground/cx-tools/blob/main/scripts/Identify-and-import-new-repos.md) (complete procedure)
 
 **Endpoints used:**\
-****REST API [Get targets by org ID (use latest version)](https://apidocs.snyk.io/?version=2022-08-12%7Ebeta#tag--Targets)
+REST API [Get targets by org ID (use latest version)](https://apidocs.snyk.io/?version=2022-08-12%7Ebeta#tag--Targets)
 
 API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects/import-targets)
 
-### More users of API v1 Import projects
+### More uses of API v1 Import projects
 
 SEE also:\
 API v1 Projects: [Import fresh Container images](https://docs.snyk.io/snyk-api-info/scenarios-for-using-snyk-api#import-fresh-container-images)
@@ -51,7 +51,7 @@ API v1 REST API Targets (beta): [Detect new projects (files) in repositories and
 Scenario: [Broker-token-rotation](https://github.com/snyk-playground/cx-tools/blob/main/scripts/broker-token-rotation.md) (complete procedure)
 
 **Endpoints used:**\
-****API v1 [List all the organizations a user belongs to](https://snyk.docs.apiary.io/#reference/organizations/the-snyk-organization-for-a-request/list-all-the-organizations-a-user-belongs-to) (group admin only)
+API v1 [List all the organizations a user belongs to](https://snyk.docs.apiary.io/#reference/organizations/the-snyk-organization-for-a-request/list-all-the-organizations-a-user-belongs-to) (group admin only)
 
 API v1 [Add new integration](https://snyk.docs.apiary.io/#reference/integrations/integrations/add-new-integration)
 
@@ -62,14 +62,14 @@ API v1 [Update existing integration](https://snyk.docs.apiary.io/#reference/inte
 Scenario: [disable-all-interaction-from-snyk](https://github.com/snyk-playground/cx-tools/blob/main/scripts/disable-all-interaction-from-snyk.md) (complete procedure)
 
 **Endpoints used alternative 1: Get integrations from different organizations and then update the settings for each integration**\
-****API v1 (Integrations) [List](https://snyk.docs.apiary.io/#reference/integrations/integrations/list)
+API v1 (Integrations) [List](https://snyk.docs.apiary.io/#reference/integrations/integrations/list)
 
 API v1 (Integration settings) [Update](https://snyk.docs.apiary.io/#reference/integrations/update)
 
 API v1 [Update existing integration](https://snyk.docs.apiary.io/#reference/integrations/integration/update-existing-integration)
 
 **Endpoints used alternative 2:** **Webhooks approach: remove the Snyk webhook by getting the Webhook Id and using it to delete the webhook**\
-****API v1 [List webhooks](https://snyk.docs.apiary.io/#reference/webhooks/webhook-collection/list-webhooks)
+API v1 [List webhooks](https://snyk.docs.apiary.io/#reference/webhooks/webhook-collection/list-webhooks)
 
 API v1 [Delete a webhook](https://snyk.docs.apiary.io/#reference/webhooks/webhook/delete-a-webhook)
 
@@ -88,8 +88,7 @@ API v1 Projects: [Detect and import new projects in a repository into a target](
 
 Scenario: [find-all-projects-affected-by-a-vuln.md](https://github.com/snyk-playground/cx-tools/blob/main/scripts/find-all-projects-affected-by-a-vuln.md) (complete procedure)
 
-**Endpoints used:**\
-****API v1 Issues (Reporting API) [Get list of issues](https://snyk.docs.apiary.io/#reference/reporting-api/issues/get-list-of-issues)
+**Endpoints used:**API v1 Issues (Reporting API) [Get list of issues](https://snyk.docs.apiary.io/#reference/reporting-api/issues/get-list-of-issues)
 
 API v1 Issues (Reporting API) [List all organizations in a group](https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group)
 
@@ -100,7 +99,7 @@ API v1 Projects [List all projects](https://snyk.docs.apiary.io/#reference/proje
 Scenario: [bulk-ignore-issues](https://github.com/snyk-playground/cx-tools/blob/main/scripts/bulk-ignore-issues.md) (complete procedure)
 
 **Endpoints used:**\
-****REST API beta [Get projects by org ID](https://apidocs.snyk.io/?version=2022-08-12%7Ebeta#get-/orgs/-org\_id-/projects)
+REST API beta [Get projects by org ID](https://apidocs.snyk.io/?version=2022-08-12%7Ebeta#get-/orgs/-org\_id-/projects)
 
 API v1 [Get list of latest issues](https://snyk.docs.apiary.io/#reference/reporting-api/latest-issues/get-list-of-latest-issues) (To get all issues but Code)
 
@@ -125,7 +124,7 @@ API v1 Groups: [Retrieve a project snapshot for every project in a given group](
 Scenario: [create-multiple-orgs-and-copy-settings](https://github.com/snyk-playground/cx-tools/blob/main/scripts/create-multiple-orgs-and-copy-settings.md) (complete procedure)
 
 **Endpoints used:**\
-****API v1 [Create a new organization](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization)
+API v1 [Create a new organization](https://snyk.docs.apiary.io/#reference/organizations/create-organization/create-a-new-organization)
 
 API v1 [View organization settings](https://snyk.docs.apiary.io/#reference/organizations/organization-settings/view-organization-settings)
 
@@ -138,13 +137,13 @@ API v1 [Clone an integration with settings and credentials](https://snyk.docs.ap
 Scenario: [assign-users-to-all-orgs](https://github.com/snyk-playground/cx-tools/blob/main/scripts/assign-users-to-all-orgs.md) (complete procedure)
 
 **Endpoints used:**\
-****API v1 [List all members in a group](https://snyk.docs.apiary.io/#reference/users/user-project-notification-settings/list-all-members-in-a-group)
+API v1 [List all members in a group](https://snyk.docs.apiary.io/#reference/users/user-project-notification-settings/list-all-members-in-a-group)
 
 API v1 [Invite users](https://snyk.docs.apiary.io/#reference/groups/list-all-roles-in-a-group/invite-users)
 
 ### Add users to organizations at scale ahead of the first login
 
-Scenario: [Provision users to Orgs via API](../features/user-and-group-management/managing-users-and-permissions/provision-users-to-orgs-via-api.md)
+Scenario: [Provision users to Orgs via API](../user-and-group-management/managing-users-and-permissions/provision-users-to-orgs-via-api.md)
 
 **Endpoint used:**\
 API v1 [Provision a user to the organization](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization)
@@ -161,7 +160,7 @@ API v1 Integrations: [Rotate or change your broker token for any reason](https:/
 Scenario: [list-all-issues-for-a-snyk-org](https://github.com/snyk-playground/cx-tools/blob/main/scripts/list-all-issues-for-a-snyk-org.md) (complete procedure)
 
 **Endpoints used:**\
-****API v1 Projects [List all projects](https://snyk.docs.apiary.io/reference/projects/all-projects)
+API v1 Projects [List all projects](https://snyk.docs.apiary.io/reference/projects/all-projects)
 
 API v1 Projects [List all aggregated issues](https://snyk.docs.apiary.io/reference/projects/aggregated-project-issues/list-all-aggregated-issues) (no Code)
 
@@ -176,14 +175,14 @@ API v1 Projects (Ignored issues) [Retrieve ignore](https://snyk.docs.apiary.io/r
 Scenario: [Tag projects in Snyk](https://github.com/snyk-playground/cx-tools/blob/main/scripts/tag-snyk-projects.md) (complete procedure)
 
 **Endpoints used:**\
-****API v1 [List all projects](https://snyk.docs.apiary.io/#reference/projects/all-projects/list-all-projects)
+API v1 [List all projects](https://snyk.docs.apiary.io/#reference/projects/all-projects/list-all-projects)
 
 ### Import fresh Container images
 
 Scenario: [import-new-container-images](https://github.com/snyk-playground/cx-tools/blob/main/scripts/import-new-container-images.md) (complete procedure)
 
 **Endpoints used:**\
-****API v1 [List all projects](https://snyk.docs.apiary.io/#reference/projects/all-projects/list-all-projects)
+API v1 [List all projects](https://snyk.docs.apiary.io/#reference/projects/all-projects/list-all-projects)
 
 API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets)
 
@@ -196,7 +195,7 @@ API v1 [Delete a project](https://snyk.docs.apiary.io/#reference/projects/indivi
 Scenario: [detect-and-import-new-projects](https://github.com/snyk-playground/cx-tools/blob/main/scripts/detect-and-import-new-projects.md) (complete procedure)
 
 **Endpoints used:**\
-****API v1 [List all projects](https://snyk.docs.apiary.io/#reference/projects/all-projects/list-all-projects)
+API v1 [List all projects](https://snyk.docs.apiary.io/#reference/projects/all-projects/list-all-projects)
 
 API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects)
 
@@ -216,15 +215,15 @@ API v1 Issues (Reporting API): [Bulk ignore issues](https://docs.snyk.io/snyk-ap
 Scenario: [Identify-and-import-new-repos](https://github.com/snyk-playground/cx-tools/blob/main/scripts/Identify-and-import-new-repos.md) (complete procedure)
 
 **Endpoint used:**\
-****REST API [Get targets by org ID](https://apidocs.snyk.io/?version=2022-07-08%7Ebeta#get-/orgs/-org\_id-/targets)
+REST API [Get targets by org ID](https://apidocs.snyk.io/?version=2022-07-08%7Ebeta#get-/orgs/-org\_id-/targets)
 
 API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects)
 
 ## API v1 Users and Roles
 
 SEE:\
-[Provision users to Orgs via API](../features/user-and-group-management/managing-users-and-permissions/provision-users-to-orgs-via-api.md)\
-[Update Member Roles via API](../features/user-and-group-management/managing-users-and-permissions/update-member-roles-via-api.md)
+[Provision users to Orgs via API](../user-and-group-management/managing-users-and-permissions/provision-users-to-orgs-via-api.md)\
+[Update Member Roles via API](../user-and-group-management/managing-users-and-permissions/update-member-roles-via-api.md)
 
 ## API v1 Webhooks
 

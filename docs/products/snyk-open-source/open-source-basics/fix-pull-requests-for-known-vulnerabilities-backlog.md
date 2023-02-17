@@ -1,7 +1,5 @@
 # Automated pull requests for known vulnerabilities (backlog)
 
-
-
 {% hint style="info" %}
 This feature is supported in GitHub and GitHub Enterprise integrations only.
 
