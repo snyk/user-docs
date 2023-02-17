@@ -43,7 +43,7 @@ Files that Snyk uses to autodetect the project type include, but are not limited
 The way in which Snyk analyzes the file and builds the tree varies depends on:
 
 * The [language and package manager](../../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/) you use (as determined by the manifest file type)
-* The the method of scanning (using the [Snyk CLI](../../../snyk-cli/), or by importing from a Snyk [Git repository integration](../../../integrations/git-repository-scm-integrations/)).
+* The method of scanning (using the [Snyk CLI](../../../snyk-cli/), or by importing from a Snyk [Git repository integration](../../../integrations/git-repository-scm-integrations/)).
 
 ### Scan multiple manifest files
 
