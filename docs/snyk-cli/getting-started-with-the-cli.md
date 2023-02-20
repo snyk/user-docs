@@ -14,7 +14,7 @@ Before using the Snyk CLI to test your project for vulnerabilities you must **bu
 
 If you are using the Snyk CLI to scan for issues in Snyk Code, Container, or Infrastructure as Code projects, refer to the instructions for using the CLI that are specific to each product:
 
-* [Using Snyk Code via the CLI](../scan-application-code/snyk-code/cli-for-snyk-code/)
+* [Using Snyk Code via the CLI](../products/snyk-code/cli-for-snyk-code/)
 * [Snyk CLI for container security](../scan-containers/snyk-cli-for-container-security/)
 * [Snyk CLI for Infrastructure as Code](../scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/)
 
@@ -43,7 +43,7 @@ Notifications about newly disclosed issues related to these dependencies will be
 
 You can log in to the Snyk Web UI, and navigate to the [Projects page](https://app.snyk.io/projects) to see the latest snapshot and scan results:
 
-<figure><img src="../.gitbook/assets/monitor.png" alt="Snyk monitor snapshot and scan results"><figcaption><p>Snyk monitor snapshot and scan results</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/monitor (1).png" alt="Snyk monitor snapshot and scan results"><figcaption><p>Snyk monitor snapshot and scan results</p></figcaption></figure>
 
 For more information see [Monitor your projects at regular intervals](test-for-vulnerabilities/monitor-your-projects-at-regular-intervals.md).
 

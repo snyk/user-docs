@@ -7,7 +7,7 @@ To fix a vulnerability with Snyk:
 * Click **Fix this vulnerability** on a specific [issue card](../introduction-to-snyk-projects/issue-card-information.md) on the relevant project page.
 * If you are using a [Source code integration](../../integrations/git-repository-scm-integrations/):
   * Click **Open a fix PR** on the project page.
-  * Use [automated pull requests](../../scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md) when new fixes become available that help you to fix a vulnerability.
+  * Use [automated pull requests](../../products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md) when new fixes become available that help you to fix a vulnerability.
 
 ### How it works
 
@@ -45,7 +45,7 @@ The Fix Advice area appears in the project details page near the top, similar to
 
 ![Upgrade issues tabs](<../../.gitbook/assets/Screenshot 2021-10-12 at 14.08.13.png>)
 
-![Patchable issues tabs](<../../.gitbook/assets/Screenshot 2021-10-12 at 14.10.00.png>)
+![Patchable issues tabs](<../../.gitbook/assets/Screenshot 2021-10-12 at 14.10.00 (1).png>)
 
 You can also find additional advice and details further down on the Project details page:
 
@@ -69,4 +69,4 @@ Patch recommendations with some and with all paths:
 
 ![](../../.gitbook/assets/uuid-1afca091-a9a5-d42c-40b6-f48aa0e72584-en.png)
 
-![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)

@@ -38,7 +38,7 @@ snyk code test
 
 Snyk Code tests the **snyk-goof** repository, and displays the vulnerability issue that were discovered in the terminal:
 
-![](<../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - 1 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - 1 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
 
 ### **Testing a repository from a different location**
 
@@ -62,7 +62,7 @@ To test the **snyk-goof** repository from another directory, we enter:
 snyk code test /Users/username/Documents/Repositories/snyk-goof
 ```
 
-![](<../../../.gitbook/assets/snyk Code - CLI - snyk code test - Any folder - 2.png>)
+![](<../../../.gitbook/assets/snyk Code - CLI - snyk code test - Any folder - 2 (1).png>)
 
 * To explore the test results, see [Understanding the Snyk Code CLI results](https://docs.snyk.io/products/snyk-code/cli-for-snyk-code/snyk-code-cli-results).
 * To work with the test results, see:

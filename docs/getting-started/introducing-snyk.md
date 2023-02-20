@@ -10,11 +10,11 @@ Developers now assemble applications with a combination of proprietary and open 
 
 A good security process secures each of these components where they are built and maintained. Snyk integrates into DevOps processes to work the with developers using the methods each prefers, while following and supporting industry best practices. Snyk integrates directly into your IDEs, workflows, and automation pipelines to add security expertise to your toolkit.
 
-<figure><img src="../.gitbook/assets/image (162) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Developer Security Platform"><figcaption><p>Developer Security Platform: Products and Developer experience</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (162) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Developer Security Platform"><figcaption><p>Developer Security Platform: Products and Developer experience</p></figcaption></figure>
 
 ## Snyk products: use Snyk in your workflow
 
-* **Secure your code**: use [Snyk Open Source](../scan-application-code/snyk-open-source/) to fix vulnerabilities in your open source dependencies, and [Snyk Code](../scan-application-code/snyk-code/) to fix vulnerabilities in your source code.
+* **Secure your code**: use [Snyk Open Source](../products/snyk-open-source/) to fix vulnerabilities in your open source dependencies, and [Snyk Code](../products/snyk-code/) to fix vulnerabilities in your source code.
 * **Secure your containers**: use [Snyk Container](../scan-containers/) to fix vulnerabilities in container images and Kubernetes applications
 * **Secure your deployment**: and [Snyk Infrastructure as Code (IaC)](../scan-cloud-deployment/snyk-infrastructure-as-code/) to fix misconfigurations in Terraform, CloudFormation, Kubernetes, and Azure templates. Use [Snyk Cloud](../scan-cloud-deployment/snyk-cloud/) to fix misconfigurations in Amazon Web Services accounts, Microsoft Azure subscriptions, and Google Cloud projects.
 
@@ -22,7 +22,7 @@ A good security process secures each of these components where they are built an
 
 You can run Snyk in the following ways:
 
-* ****[**Web**](getting-started-with-the-snyk-web-ui.md): the Snyk Web UI ([app.snyk.io](https://app.snyk.io)) provides a browser-based experience, along with functions such as configuration settings, filtering and fixing discovered issues, and reports.
+* ****[**Web**](../snyk-web-ui/getting-started-with-the-snyk-web-ui.md): the Snyk Web UI ([app.snyk.io](https://app.snyk.io)) provides a browser-based experience, along with functions such as configuration settings, filtering and fixing discovered issues, and reports.
 * ****[**CLI**](../snyk-cli/): the Snyk Command Line Interface enables you to run vulnerability scans on your local machine and integrate Snyk into your pipeline.
 * [**IDEs**](../ide-tools/): the Snyk IDE integrations enable you to embed Snyk in your development environment.
 * ****[**API**](../snyk-api-info/): the Snyk API enables you to programmatically integrate with Snyk, tuning Snyk’s security automation to your specific workflows.

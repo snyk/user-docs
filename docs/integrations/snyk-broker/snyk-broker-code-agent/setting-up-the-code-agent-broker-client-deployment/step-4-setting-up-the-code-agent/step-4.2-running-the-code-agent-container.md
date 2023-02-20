@@ -64,4 +64,17 @@ where:
 * `--network` is the name of the Docker bridge network, used for the communication with the Client Broker, `mySnykBrokerNetwork`.
 * `snyk/code-agent` is the Docker image of the Code Agent container.
 
-***
+## **Connecting to a Git with an internal certificate**
+
+By default, the Code Agent establishes HTTPS connections to the Git. If your Git is serving an internal certificate (signed by your own CA), you can provide the CA certificate to the Code Agent.
+
+For example, if your CA certificate is at `./private/ca.cert.pem`, provide it to the Docker container by mounting the folder and using the `CA_CERT` environment variable:
+
+```
+docker run --name code-agent \
+-p 3000:3000 \
+-e PORT=3000 -e SNYK_TOKEN=fa7fxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --network mySnykBrokerNetwork \
+-e CA_CERT=/private/ca.cert.pem \
+-v /local/path/to/private:/private \
+snyk/code-agent
+```

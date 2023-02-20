@@ -48,7 +48,7 @@ PR Checks works in a similar way on all supported Git repositories, but the resu
 
 The results of the PR Checks appear on GitHub and GitHub Enterprise integrations as follows:
 
-<figure><img src="../../../.gitbook/assets/some-checks-failed.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/some-checks-failed (1).png" alt=""><figcaption></figcaption></figure>
 
 **To open the Snyk Web UI to view additional details on the PR Check results:**
 

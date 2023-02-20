@@ -69,7 +69,7 @@ Snyk offers API tokens to enable authentication to service accounts or third par
 
 SSO makes authentication and provisioning simple; see [setting-up-sso-for-authentication](setting-up-sso-for-authentication/ "mention").
 
-![](<../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (2).png>)
 
 #### Manage users and permissions
 
