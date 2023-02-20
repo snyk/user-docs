@@ -1,6 +1,6 @@
 # Assign a policy to project attributes
 
-After applying [project attributes ](https://docs.snyk.io/manage-issues/introduction-to-snyk-projects/project-attributes)to your projects, you can create policies that apply to those attributes. Projects and policies are linked based on the attributes assigned to the policy.
+After applying [project attributes](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/assign-a-policy-to-project-attributes) to your projects, you can create policies that apply to those attributes. Projects and policies are linked based on the attributes assigned to the policy.
 
 {% hint style="info" %}
 Policies assigned to attributes always take precedence over policies assigned to organizations.

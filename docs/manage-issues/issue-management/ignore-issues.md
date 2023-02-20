@@ -109,10 +109,6 @@ ignore:
 
 For more information, see [The .snyk file](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md).
 
-{% hint style="info" %}
-Please see information about [.snyk files in monorepos](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../snyk-cli/test-for-vulnerabilities/using-a-.snyk-file-in-a-separate-directory-than-the-manifest-file.md).&#x20;
-{% endhint %}
-
 ### Ignoring issues with policy actions
 
 You can set [Security policies](../security-policies/) actions to ignore all vulnerabilities that match the conditions specified in a policy rule.

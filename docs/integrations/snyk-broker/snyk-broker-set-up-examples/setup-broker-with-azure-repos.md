@@ -21,6 +21,8 @@ You will need Docker or a way to run Docker containers.
   * `AZURE_REPOS_HOST` - the hostname of your Azure Repos Server deployment, such as `your.azure-server.domain.com`.
   * `PORT` - the local port at which the Broker client accepts connections. Default is 8000.
   * `BROKER_CLIENT_URL` - the full URL of the Broker client as it will be accessible to your Azure Repos' webhooks, such as `http://broker.url.example:8000`
+  * `ACCEPT_IAC` - by default, some file types used by Infrastructure-as-Code (IaC) are not enabled. To grant the Broker access to IaC files in your repository, for example, Terraform, you can add an environment variable, `ACCEPT_IAC`, with any combination of `tf,yaml,yml,json,tpl`
+  * `ACCEPT_CODE` - by default, when using the Snyk Broker - Code Agent, Snyk Code will not load code snippets. To enable code snippets you can add an environment variable, `ACCEPT_CODE=true`
 * This is a sample set up:
 
 ```bash
@@ -42,7 +44,7 @@ docker run --restart=always \
   For example, if the Azure Repos instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration.\
   A fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for Azure Repos is attached. You **cannot run** the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument.
 
-{% file src="../../../.gitbook/assets/accept (1) (1) (1).json" %}
+{% file src="../../../.gitbook/assets/accept (1) (1) (1) (3) (2).json" %}
 
 * Paste the Broker Client configuration to start the broker client container.
 * Once the container is up, the Azure Repos Integrations page should show the connection to Azure Repos and you should be able to `Add Projects.`
