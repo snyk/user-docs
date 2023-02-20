@@ -1,6 +1,25 @@
-# Detecting Terraform configuration files using a Broker
+# Detecting Terraform configuration files using Snyk Broker (Custom)
 
-If you are using a privately hosted Git repository, you can use the Snyk Broker to connect Snyk to the repository. See the [Snyk Broker documentation for setup](../set-up-snyk-broker/). The following explains additional configuration required for the Terraform files.
+## **Terraform in Snyk Broker**
+
+By default, some file types used by Infrastructure-as-Code (IaC) are not enabled. To grant the Broker access to IaC files in your repository, for example, Terraform, you can add an environment variable, `ACCEPT_IAC`, with any combination of `tf,yaml,yml,json,tpl.`
+
+Example:
+
+```
+docker run --restart=always \
+           -p 8000:8000 \
+           -e BROKER_TOKEN=secret-broker-token \
+           -e GITHUB_TOKEN=secret-github-token \
+           -e PORT=8000 \
+           -e BROKER_CLIENT_URL=http://my.broker.client:8000 \
+           -e ACCEPT_IAC=tf,yaml,yml,json,tpl
+       snyk/broker:github-com
+```
+
+Otherwise, you can edit your `accept.json`, add the relevant IaC specific rules, and load the customized accept file into the container. Note that if a custom accept file (from a separate folder) is used (using `ACCEPT` environment variable), the `ACCEPT_IAC` mechanism cannot be used.
+
+These are the instructions if you require a custom allow-list and want to add Terraform files into the files Snyk can scan for.
 
 ## Writing the configuration
 
