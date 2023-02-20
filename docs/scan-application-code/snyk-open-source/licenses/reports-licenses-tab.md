@@ -2,7 +2,7 @@
 
 The **Licenses** area displays all licenses that are currently used in your project, as well as a summary of all dependencies in your projects and a summary of all of your projects using the license.
 
-![](<../../../.gitbook/assets/image (3) (1) (2) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (205).png>)
 
 **Licenses tab elements**
 

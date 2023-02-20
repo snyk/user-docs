@@ -57,7 +57,7 @@ If groups are being used in the organization, only a Group Admin can delete the 
 
 4\. On the Confirmation dialog box, enter the name of the organization you want to delete to confirm its deletion. Then, click **OK**:
 
-![](<../../.gitbook/assets/Org Settings - Delete organization - Confirmation.png>)
+![](<../../.gitbook/assets/Org Settings - Delete organization - Confirmation (1).png>)
 
 The selected organization is deleted from your Snyk Account.
 
@@ -82,7 +82,7 @@ You can change the Preferred Organization in your Snyk Account via your Account 
 
 **Note**: The Organization drop-down list displays your existing organizations.
 
-![](<../../.gitbook/assets/image (20) (1) (2).png>)
+![](<../../.gitbook/assets/image (20) (1).png>)
 
 3\. Click the **Update Preferred Org** button to save your new setting.
 

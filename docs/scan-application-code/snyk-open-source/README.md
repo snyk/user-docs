@@ -8,13 +8,13 @@ Sometimes these issues are rooted deep in the code. Open source packages often r
 
 Snyk Open Source allows you to find and fix vulnerabilities in the open source libraries used by your applications. It also allows you to find and address licensing issues in (or caused by) these open source libraries.
 
-Snyk Open Source is available in many common languages and platforms. See [Supported languages and package managers](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/).
+Snyk Open Source is available in many common languages and platforms. See [Supported languages and package managers](snyk-open-source-supported-languages-and-package-managers/).
 
-You can use Snyk Open Source in the Snyk Web UI, with the Snyk CLI, in your IDE, or with an API. See [Getting started with Snyk Open Source](getting-started-snyk-open-source.md)
+You can use Snyk Open Source in the Snyk Web UI, with the Snyk CLI, in your IDE, or with an API. See [Getting started with Snyk Open Source](../../products/snyk-open-source/getting-started-snyk-open-source.md)
 
 ## Find and fix vulnerabilities
 
-Use Snyk Open Source to find and fix vulnerabilities in your application's Open Source libraries. Snyk provides actionable fix advice for vulnerabilities, and supports workflows to fix vulnerabilities using Pull Requests (see [Fix vulnerabilities with Snyk Open Source](open-source-basics/)).
+Use Snyk Open Source to find and fix vulnerabilities in your application's Open Source libraries. Snyk provides actionable fix advice for vulnerabilities, and supports workflows to fix vulnerabilities using Pull Requests (see [Fix vulnerabilities with Snyk Open Source](../../products/snyk-open-source/open-source-basics/)).
 
 Snyk Open Source also helps prioritize and report on the vulnerabilities discovered (see [Manage issues](../../manage-issues/)).
 

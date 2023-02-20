@@ -41,13 +41,13 @@ Snyk Code can work with a variety of relevant language types:
 * Optionally strong typed languages such as TypeScript.
 * Strong typed languages such as Java.
 
-For a full list of Vulnerability Types/Security Rules that are applied to each supported language by Snyk Code, see [Security Rules used by Snyk Code](../../products/snyk-code/security-rules-used-by-snyk-code/).
+For a full list of Vulnerability Types/Security Rules that are applied to each supported language by Snyk Code, see [Security Rules used by Snyk Code](security-rules-used-by-snyk-code/).
 
 ### Supported Extensions
 
 The following are the supported extensions:
 
-* ejs, es, es6, htm, html, js, jsx, ts, tsx, vue, java, erb, haml, rb, rhtml, slim, py, go, ASPX, Aspx, CS, Cs, aspx, cs, php, xml.
+* ejs, es, es6, htm, html, js, jsx, ts, tsx, mjs, cjs, vue, java, erb, haml, rb, rhtml, slim, py, go, ASPX, CS, php, xml, jsp, jspx, cls.
 
 ### Framework support
 
@@ -77,6 +77,7 @@ These are some of the explicitly supported frameworks for Java; those are in add
 * **Spring MVC**: The Spring Web model-view-controller (MVC) framework.
 * **Spring JDBC**: The Spring JDBC data access layer, a simple ORM.
 * **Jakarta XML Services**: Framework to implement XML-based Web Services.
+* **Dropwizard**: Used for the development of RESTful web services.
 
 ### Python frameworks
 
@@ -96,6 +97,23 @@ These are some of the explicitly supported frameworks for C#; those are in addit
 * **.NET framework**: .NET is an open source developer platform, created by Microsoft and used to build a variety of application types. While .NET supports different languages, Snyk Code supports .NET using the C# interface. **Note:** .NET 6 is not yet supported.
 * **ASP.NET (version 4.x)**: ASP.NET is a free and open source framework to build web apps and services using .NET. Snyk Code supports version 4.x.
 * **.NET Core**: Microsoft created .NET Core to make the .NET framework cross-platform and enable a number of scenarios. The .NET framework and .NET Core share many components and code can be exchanged. (Microsoft [provides guidance](https://docs.microsoft.com/en-us/dotnet/standard/choosing-core-framework-server) when to choose which)
+
+### Ruby frameworks
+
+{% hint style="info" %}
+These are some of the explicitly supported frameworks for Ruby; those are in addition to the general support for many frameworks.
+{% endhint %}
+
+* **Ruby On Rails**: Server side web application framework.
+
+### PHP frameworks
+
+{% hint style="info" %}
+These are some of the explicitly supported frameworks for PHP; those are in addition to the general support for many frameworks.
+{% endhint %}
+
+* **Symfony**: Backend framework used to build complex applications.
+* **Laravel**: Backend framework used to build modern web applications.
 
 {% hint style="info" %}
 The framework support is always determined by the file extensions known to the engine. For example, the engine does not scan **`*.cshtml`** files, but scans the associated **`*.cshtml.cs`** files.

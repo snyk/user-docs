@@ -82,6 +82,10 @@ Note that if you do not use the `.snyk` policy file, you avoid needing to specif
 
 The ignore rules can be overridden if admin users only is enabled for the relevant organization (click on **Settings** > **General** > **Ignores**).
 
+{% hint style="info" %}
+For projects imported via SCM integration as opposed to via snyk monitor command, the --policy-path option is not available. The .snyk file will only apply to projects found in the same path as the .snyk file.&#x20;
+{% endhint %}
+
 ## Examples
 
 ### Creating a .snyk file
