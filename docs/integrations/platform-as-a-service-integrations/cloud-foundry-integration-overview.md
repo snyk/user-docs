@@ -1,5 +1,9 @@
 # Cloud Foundry integration overview
 
+{% hint style="danger" %}
+This integration will be deprecated on March 20th, 2023. [View our announcement for more information](https://updates.snyk.io/deprecation-of-serverless-and-platform-as-a-service-integrations-257143).
+{% endhint %}
+
 ## Cloud Foundry integration overview
 
 Snyk’s Cloud Foundry integration lets you monitor the deployed code of your Java, Node.js, PHP and Ruby Cloud Foundry applications for any known vulnerabilities found in the application’s dependencies, testing at a frequency you control.

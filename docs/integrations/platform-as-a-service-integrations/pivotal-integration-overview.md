@@ -1,5 +1,9 @@
 # Pivotal integration overview
 
+{% hint style="danger" %}
+This integration will be deprecated on March 20th, 2023. [View our announcement for more information](https://updates.snyk.io/deprecation-of-serverless-and-platform-as-a-service-integrations-257143).
+{% endhint %}
+
 Snyk’s Pivotal Web Services integration lets you monitor the deployed code of your Java, Node.js and Ruby Pivotal Web Services applications for any known vulnerabilities found in the application’s dependencies, testing at a frequency you control.
 
 For each test, Snyk will communicate directly with Pivotal Web Services to determine exactly what code is currently deployed and what dependencies are being used. Each dependency will in turn be tested against Snyk’s vulnerability database to see if it contains any known vulnerabilities.
