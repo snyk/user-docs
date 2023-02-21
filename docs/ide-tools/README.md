@@ -8,7 +8,7 @@ The following Snyk plugins and extensions are available.
 * [JetBrains plugins](jetbrains-plugins/)
 * [Visual Studio extension](visual-studio-extension/)
 * [Visual Studio Code extension](visual-studio-code-extension/)
-* [Language Server (beta)](language-server.md)
+* [Language Server](language-server.md)
 
 These [plugins and extensions](https://snyk.io/ide-plugins/) are referred to as Snyk Security and as Snyk for IDEs.
 
