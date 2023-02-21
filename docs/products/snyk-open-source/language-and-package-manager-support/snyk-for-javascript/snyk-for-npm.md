@@ -16,7 +16,7 @@ Features may not be available, depending on your plan. See [pricing plans](https
 
 ## npm version and how it affects Snyk support
 
-Snyk uses the npm lockfile (`package-lock.json`) when it is present to generate representation of Project dependencies. Until npm v7, this lockfile was always the same format. In npm v7 a new lockfile format, lockfile v2, was introduced.
+Snyk uses the npm lockfile (`package-lock.json`) when it is present to generate representation of Project dependencies. Until npm v7, this lockfile was always the same format. In npm v7, two new lockfile formats, lockfile v2, and lockfile v3, were introduced (see [here](https://docs.npmjs.com/cli/v9/configuring-npm/package-lock-json#lockfileversion)).
 
 With changes to the files Snyk relies on to scan changing on version upgrades, Snyk lists only versions verified internally as supported. If you are using a newer version of npm than is listed on this page, you may find Snyk performs as expected. The newer version of npm has likely not been evaluated and added to this page.
 
@@ -29,6 +29,14 @@ To see if you are using the new lockfile format, look in in the `package-lock.js
     ...
 }
 ```
+
+{% hint style="info" %}
+Snyk currently does not support v3 lockfiles. If your lockfile is version 3, you may get an error message when scanning saying that your lockfile may be out of sync.&#x20;
+
+If this happens, you can check the version of your lockfile following the preceding instructions, and can force npm to create a supported version wth this command:&#x20;
+
+`npm install --lockfile-version=2`
+{% endhint %}
 
 ## How Snyk for npm works
 
