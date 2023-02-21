@@ -1,7 +1,7 @@
 # Exploring the Snyk Web UI
 
 {% hint style="success" %}
-If you have not done so already, you should [create an account](../getting-started/quickstart/create-a-snyk-account/).
+If you have not done so already, you should [create an account](quickstart/create-a-snyk-account/).
 {% endhint %}
 
 ## Introduction

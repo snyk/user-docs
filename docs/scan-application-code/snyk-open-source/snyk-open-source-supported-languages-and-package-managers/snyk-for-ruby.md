@@ -57,6 +57,14 @@ You must take additional steps to configure private Gem sources for projects imp
 
 * '2.7.2', '2.7.3', '2.7.4', '2.7.5', '2.7.6'
 
+#### `3.0.X`
+
+* '3.0.0'
+
 #### `3.1.X`
 
 * '3.1.0'
+
+#### `3.2.X`
+
+* '3.2.0'
