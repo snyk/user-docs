@@ -212,10 +212,7 @@ To avoid such conflicts:
 
 ### Daemon
 
-By default, Snyk passes `gradle build --no-daemon` in the background when running `snyk test` and `snyk monitor`. If for any reason, you run into trouble, try this:
-
-1. Start the Gradle daemon.
-2. Add `--daemon` to your `snyk test` or `snyk monitor`.
+By default, Snyk passes `gradle build --no-daemon` in the background when running `snyk test` and `snyk monitor` on Windows. If for some reason you see `snyk test` or `snyk monitor` fail on other operating systems because of daemon-related issues, try adding the `--no-daemon` flag to the Snyk command or set `GRADLE_OPTS: '-Dorg.gradle.daemon=false'`. See the [Gradle documentation](https://docs.gradle.org/current/userguide/gradle\_daemon.html#sec:disabling\_the\_daemon) for tips on disabling the daemon.
 
 ### Lockfiles
 
@@ -223,7 +220,7 @@ If your Gradle project makes use of a single **gradle.lockfile** or multiple **\
 
 **Gradle Error (short): > Could not resolve all dependencies for configuration ':compileOnly'. > Locking strict mode: Configuration ':compileOnly' is locked but does not have lock state.**
 
-Bear in mind that **compileOnly configuration** **has been deprecated** and even if your Project successfully generates a lockfile, it will not contain the \`compileOnly\` state because this configuration cannot be resolved. Only resolvable configurations compute a dependency graph. In order to solve this issue. Snyk suggests you **update your build.gradle containing dependencyLocking logic with the following instruction:**
+Note that that **compileOnly configuration** **has been deprecated** and even if your Project successfully generates a lockfile, it will not contain the \`compileOnly\` state because this configuration cannot be resolved. Only resolvable configurations compute a dependency graph. In order to solve this issue, Snyk suggests you **update your build.gradle containing dependencyLocking logic with the following instruction:**
 
 ```
 compileOnly {resolutionStrategy.deactivateDependencyLocking() }
@@ -250,7 +247,7 @@ After you select a project for import, Snyk builds the dependency tree based on 
 After you select a project for import, Snyk builds the dependency tree based on the `build.gradle` file and (optional) `gradle.lockfile`.
 
 {% hint style="info" %}
-Only dependencies in the following configurations are included - `api`, `compile`, `classpath`, `implementation`, `runtime`, `runtimeOnly` .
+Only dependencies in the following configurations are included - `api`, `compile`, `classpath`, `implementation`, `runtime`, `runtimeOnly`.
 {% endhint %}
 
 If a lockfile is present, Snyk uses it to accurately resolve the final version of dependencies used in the Project.

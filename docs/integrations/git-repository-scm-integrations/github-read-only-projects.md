@@ -12,7 +12,7 @@ Unlike Projects imported through the Snyk GitHub integration, Projects that are 
 
 * Use automatic retesting when a pull request is merged
 * Commit tests on any PR raised, to detect (and optionally block) new vulnerabilities from being introduced
-* Use [automated fix PRs](../../scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md) to recommend minimal changes to fix vulnerabilities
+* Use [automated fix PRs](../../products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md) to recommend minimal changes to fix vulnerabilities
 * Use [automated dependency upgrade PRs](https://docs.snyk.io/products/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs), to keep dependencies up to date and help avoid new vulnerabilities and simplify fixing those that are found.
 * Use manual Fix PRs generated through Snyk to address specific issues chosen by the user
 

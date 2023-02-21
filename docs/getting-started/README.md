@@ -8,11 +8,11 @@ Start securing code, dependencies, containers, and deployed applications with Sn
 
 ## In this section
 
-| About Snyk                                             | Using Snyk                        | Tutorials                                                                                  |
-| ------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------------------------------------ |
-| [Introducing Snyk](introducing-snyk.md)                | [Quickstart](quickstart/)         | [Implementing Snyk: Free and Team plan users](implementing-snyk-free-and-team-plan-users/) |
-| [Snyk Web UI](getting-started-with-the-snyk-web-ui.md) | [Running tests](running-tests.md) | [Implementing Snyk: Enterprise plan users](implementing-snyk-enterprise-plan-users.md)     |
-|                                                        |                                   | [Walkthrough: Code Repository Projects](walkthrough-code-repository-projects/)             |
+| About Snyk                                                            | Using Snyk                        | Tutorials                                                                                  |
+| --------------------------------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------ |
+| [Introducing Snyk](introducing-snyk.md)                               | [Quickstart](quickstart/)         | [Implementing Snyk: Free and Team plan users](implementing-snyk-free-and-team-plan-users/) |
+| [Snyk Web UI](../snyk-web-ui/getting-started-with-the-snyk-web-ui.md) | [Running tests](running-tests.md) | [Implementing Snyk: Enterprise plan users](implementing-snyk-enterprise-plan-users.md)     |
+|                                                                       |                                   | [Walkthrough: Code Repository Projects](walkthrough-code-repository-projects/)             |
 
 ### Other information
 

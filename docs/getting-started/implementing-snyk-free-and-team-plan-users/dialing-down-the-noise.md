@@ -40,4 +40,4 @@ See [Snyk test and snyk monitor in CI/CD integration](../../integrations/ci-cd-i
 
 If you have a large number of projects, initially we recommend you turn both of these off, for all but the important projects. As your teams become more accustomed to this type of capability, you can then slowly turn it on across your repositories.
 
-See [Upgrading dependencies with automatic PRs](../../scan-application-code/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs.md) and [Run PR Checks](../../scan-application-code/run-pr-checks/) for details.
+See [Upgrading dependencies with automatic PRs](../../products/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs.md) and [Run PR Checks](../../scan-application-code/run-pr-checks/) for details.

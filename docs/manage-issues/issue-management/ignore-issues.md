@@ -141,7 +141,7 @@ var generalLogFileName = req.query.file || 'standard_log.log';
 var handleLogFile = filesystem.readFile(generalLogFileName, "utf8", function(err, data) {...
 ```
 
-For more information, see [Exploring the vulnerability issues discovered by Snyk Code](../../scan-application-code/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-vulnerability-issues-discovered-by-snyk-code/).
+For more information, see [Exploring the vulnerability issues discovered by Snyk Code](../../products/snyk-code/exploring-and-working-with-the-snyk-code-results/exploring-the-vulnerability-issues-discovered-by-snyk-code/).
 
 ## Snyk IaC: ignoring issues
 
