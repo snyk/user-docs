@@ -32,7 +32,7 @@ Click the **Create role** button. You will see basic details about the role in t
 
 The bottom section lists all the permissions available at the organization level that you use to define the role.
 
-![Organization level permissions](<../../.gitbook/assets/Screenshot 2022-05-17 at 05.56.02.png>)
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 17.07.18.png" alt=""><figcaption><p>Organization level permissions</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-08-30 at 17.03.22.png" alt=""><figcaption><p>Organization level permissions</p></figcaption></figure>
 
@@ -170,6 +170,7 @@ Permissions:
 * `View Organization Reports`
 * `View Preview Features`
 * `View Project`
+* `View Project History`
 * `View Project Ignores`
 * `View Targets`
 * `View Users`
@@ -183,6 +184,7 @@ Permissions:
 * `View Organization`
 * `View Organization Reports`
 * `View Project`
+* `View Project History`
 
 For additional operations on the Dashboard add:
 
@@ -209,6 +211,7 @@ Permissions:
 
 * `View Organization`
 * `View Project`
+* `View Project History`
 * `Test Packages`
 * `Add Project`
 * `Test Project`
@@ -218,6 +221,6 @@ Permissions:
 
 * Permissions granted to users via Roles enable the same capabilities across all Snyk environments: Web UI, API, CLI, and IDE.
 * `View Organization` permission is needed by default for all organization level member roles.
-* If the Role is expected to view project-related data of an organization along with other operations - `View Organization , View Project` `and View Targets` permissions should be added to the role at a minimum.
+* If the Role is expected to view project-related data of an organization along with other operations - `View Organization , View Project, and View Project History` permissions should be added to the role at a minimum.
 * Snyk prevents role privileges from escalating so that users cannot assign a higher privileged role to others or cannot create service accounts with a higher privileged role.
 * It is advisable to use the Duplicate Role functionality and create a copy of a standard role and then amend the permissions instead of building a role from scratch if you are unsure about the permissions.
