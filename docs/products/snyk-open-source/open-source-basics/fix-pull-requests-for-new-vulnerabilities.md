@@ -4,7 +4,7 @@ The following rules are applied to automatic PR creation for vulnerabilities:
 
 * Pull requests are created based on the **Test & Automated Pull Request Frequency** (see screenshot below) setting
 * If a scan is manually run (you clicked **Retest now** for the project), the 24-hour window is marked as having been run and no automatic PR is created until the next automated scan runs
-* One pull request is created per project (priority score of 700 and above only)
+* One pull request is created per project
 * If **either** the vulnerability itself is new and has a fix available **or** if the fix is new and is not ignored
 * For known vulnerabilities see [fix-pull-requests-for-known-vulnerabilities-backlog.md](fix-pull-requests-for-known-vulnerabilities-backlog.md "mention")
 
