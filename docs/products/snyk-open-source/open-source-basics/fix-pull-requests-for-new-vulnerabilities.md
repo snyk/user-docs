@@ -6,7 +6,7 @@ The following rules are applied to automatic PR creation for vulnerabilities:
 * If a scan is manually run (you clicked **Retest now** for the project), the 24-hour window is marked as having been run and no automatic PR is created until the next automated scan runs
 * One pull request is created per project
 * If **either** the vulnerability itself is new and has a fix available **or** if the fix is new and is not ignored
-* For known vulnerabilities see [fix-pull-requests-for-known-vulnerabilities-backlog.md](fix-pull-requests-for-known-vulnerabilities-backlog.md "mention")
+* For known vulnerabilities see [Automated pull request for known vulnerabilities (backlog)](fix-pull-requests-for-known-vulnerabilities-backlog.md)&#x20;
 
 ![](../../../.gitbook/assets/os1.png)
 
@@ -28,17 +28,17 @@ Enable at the global integration level:
 
 **Apply changes to all overridden projects** will update all of the individual project settings for "Automatic fix pull requests". If a project previously had its own settings for this, clicking on this button will override it with the global setting.
 
-![](../../../.gitbook/assets/global-pr-setting.png)
+<figure><img src="../../../.gitbook/assets/global-pr-setting.png" alt="Automatic fix pull requests settings in Snyk Web UI."><figcaption><p>Automatic fix pull requests settings in Snyk Web UI</p></figcaption></figure>
 
 ## Enable or disable pull requests for a single project
 
 Enabling/disabling at a project level will override this single project rather than inheriting it from the global integration setting.
 
-1. Under **Projects** select a project and select **Settings** (top right-hand corner)
-2. Select **GitHub integration**
+1. Under **Projects** select a project and select **Settings** (top right-hand corner).
+2. Select **GitHub integration**.
 3. Under the **Automatic fix pull requests** section:
    * Select **Customize for only this project**
    * Enable **New vulnerabilities**
    * Select **Save changes**
 
-![](../../../.gitbook/assets/os3.png)
+<figure><img src="../../../.gitbook/assets/os3.png" alt="Automatic fix pull requests settings at the project level."><figcaption><p>Automatic fix pull requests settings at the project level</p></figcaption></figure>
