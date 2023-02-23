@@ -1,13 +1,13 @@
 # Kubernetes integration overview
 
-Snyk integrates with Kubernetes, enabling you to import and test your running workloads and identify vulnerabilities in their associated images and configurations that might make those workloads less secure. Once imported, Snyk continues to monitor those workloads, identifying additional security issues as new images are deployed and the workload configuration changes.
+Snyk integrates with Kubernetes, enabling you to import and test your running workloads and identify vulnerabilities in their associated images and configurations that might make those workloads less secure. Once workloads are imported, Snyk continues to monitor those workloads, identifying additional security issues as new images are deployed and the workload configuration changes.
 
 {% hint style="info" %}
 **Feature availability**\
 This feature is available in Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-**How it works**
+## **How Kubernets integration works**
 
 1. Your administrator installs a controller on your cluster, authenticating the integration with a unique ID generated from the Snyk account. Install the controller with either of these options:
    * [Install the Snyk controller with Helm (Azure and Google Cloud Platform)](../installation-page/install-the-snyk-controller-with-helm.md)
@@ -20,10 +20,12 @@ This feature is available in Enterprise plans. See [pricing plans](https://snyk.
 6. Based on your configurations, if vulnerabilities are found, Snyk notifies you via email or Slack so that you can take immediate action.
 
 {% hint style="warning" %}
-In order to maintain the health of the database, any information that relates to a workload that hasn't been **changed or updated for 8 days** would be removed. This could lead to failure on **retesting** the workload.
+In order to maintain the health of the database, any information that relates to a workload that has not been **changed or updated for eight (8) days** would be removed. This could lead to failure on **retesting** the workload.
+
+If an image and its corresponding project is removed, and a reimport of the same workload is initiated during the eight (8) days when the metadata still resides in the database, the project may be created again.&#x20;
 {% endhint %}
 
-**Terms and conditions**
+## **Terms and conditions**
 
 _The Snyk Container Kubernetes integration uses Red Hat UBI (Universal Base Image)._
 
