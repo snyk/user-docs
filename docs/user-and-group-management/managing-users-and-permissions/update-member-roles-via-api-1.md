@@ -1,8 +1,8 @@
 # Remove members from Groups and Orgs via API
 
-To remove members from Groups and Organizations programmatically, you can use the Snyk API v1 as explained in the steps that follow.
+To remove members from Groups and Organizations programmatically, you can use the Snyk API v1 and the Snyk REST API as explained in the steps that follow.
 
-**Note:** The following API calls cannot be issued to remove Service Accounts and this API is for human user accounts only.
+**Note:** The following API calls cannot be issued to remove Service Accounts and the API calls are  for human user accounts only.
 
 ## Remove Organization memberships
 
@@ -27,7 +27,7 @@ For a successful request the response is `200 OK`.
 Your can verify the removal of membership on the Org members page.
 
 {% hint style="info" %}
-When a member is removed from an Organization, if the Organization is a part of a Group, the user continues to exist in the Group as a Group Member. To completely remove the user, follow the steps in the next section.
+When a member is removed from an Organization, if the Organization is a part of a Group, the user continues to exist in the Group as a Group Member. To completely remove the user from the Group, follow the steps in the next section.
 {% endhint %}
 
 ## Remove Group memberships

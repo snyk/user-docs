@@ -642,7 +642,7 @@
     * [Managing permissions](user-and-group-management/managing-users-and-permissions/managing-permissions.md)
     * [Member Roles](user-and-group-management/managing-users-and-permissions/member-roles.md)
     * [Update Member Roles via API](user-and-group-management/managing-users-and-permissions/update-member-roles-via-api.md)
-    * [Remove members from Groups and Orgs via API](user-and-group-management/managing-users-and-permissions/remove-members-via-api.md)
+    * [Remove members from Groups and Orgs via API](user-and-group-management/managing-users-and-permissions/update-member-roles-via-api-1.md)
     * [Organization access requests](user-and-group-management/managing-users-and-permissions/organization-access-requests.md)
     * [Provision users to Orgs via API](user-and-group-management/managing-users-and-permissions/provision-users-to-orgs-via-api.md)
     * [Audit logs](user-and-group-management/managing-users-and-permissions/audit-logs.md)
