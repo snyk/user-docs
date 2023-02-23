@@ -20,7 +20,7 @@ This feature is available in Enterprise plans. See [pricing plans](https://snyk.
 6. Based on your configurations, if vulnerabilities are found, Snyk notifies you via email or Slack so that you can take immediate action.
 
 {% hint style="warning" %}
-In order to maintain the health of the database, any information that relates to a workload that has not been **changed or updated for eight (8) days** would be removed. This could lead to failure on **retesting** the workload.
+In order to maintain the health of the database, any information that relates to a workload that has not been **changed or updated for eight (8) days** will be removed. This can lead to failure on **retesting** the workload.
 
 If an image and its corresponding project is removed, and a reimport of the same workload is initiated during the eight (8) days when the metadata still resides in the database, the project may be created again.&#x20;
 {% endhint %}
