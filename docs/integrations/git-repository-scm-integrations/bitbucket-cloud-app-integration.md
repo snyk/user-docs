@@ -171,9 +171,15 @@ To disable this integration, in <img src="../../.gitbook/assets/cog_icon.png" al
 
     ![](../../.gitbook/assets/disconnect-bbc-app\_06oct2022.png)
 
+{% hint style="info" %}
+Disconnecting the integration from the Snyk side does not uninstall the app from your workspace in Bitbucket Cloud. To uninstall the Bitbucket app, go to your workspace settings in Bitbucket.org --> Installed Apps and remove the _Snyk Security for Bitbucket Cloud_ app.&#x20;
+{% endhint %}
+
+
+
 {% hint style="warning" %}
 **WARNING**\
-\*\*\*\*When you disconnect Snyk from your repository projects, your credentials are removed from Snyk and any integration-specific projects that Snyk is monitoring are deactivated in Snyk.
+When you disconnect Snyk from your repository projects, your credentials are removed from Snyk and any integration-specific projects that Snyk is monitoring are deactivated in Snyk.
 
 If you choose to re-enable this integration later, you'll need to re-enter your credentials and activate your projects.
 {% endhint %}
