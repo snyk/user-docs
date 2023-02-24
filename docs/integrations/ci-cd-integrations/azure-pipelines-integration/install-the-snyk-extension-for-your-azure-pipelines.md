@@ -10,15 +10,17 @@ To start using the Snyk task as part of your pipeline build, first install the e
 ## **Step for installing Snyk extension for Azure pipelines**
 
 1. Access your Snyk account.
-2. For free plans, go to your **General Account Settings** and find, copy, and save your personal API authentication token on the side.
-3. For paid plans, navigate to the organization where you want to integrate; then go to **Settings** to create a new service account token. Copy and save it on the side.
-4. Access your Azure DevOps account and navigate to **Extensions -> Browse marketplace.**
-5. Search for the **Snyk Security Scan** extension, click **Get it free**.
-6. Create a new **Service Connection** in your project via **Project Settings** —> **Pipelines** —> **Service Connections**
-7. Select the **Snyk Authentication** service connection:
-8. In the Snyk Authentication service connection form, enter the **Server URL** and the **Snyk API Token** along with a **Service connection name,** for example, [`https://api.snyk.io/api/v1/`](https://api.snyk.io/api/v1/) or [`https://app.eu.snyk.io/api`](https://app.eu.snyk.io/api)
-9. Click **Save**, ensuring the new service connection appears in your list of service connections.
+2. Token:
+   1. For **free plans**, go to your **General Account Settings** and find, copy, and save your personal API authentication token on the side.
+   2. For **paid plans**, navigate to the organization where you want to integrate; then go to **Settings** to create a new service account token. Copy and save it on the side.
+3. Access your Azure DevOps account and navigate to **Extensions -> Browse marketplace.**
+4. Search for the **Snyk Security Scan** extension, click **Get it free**.
+5. Create a new **Service Connection** in your project via **Project Settings** —> **Pipelines** —> **Service Connections**
+6. Select the **Snyk Authentication** service connection:
+   1. In the Snyk Authentication service connection form, enter the **Server URL** and the **Snyk API Token** along with a **Service connection name,** for example, [`https://api.snyk.io/api/v1/`](https://api.snyk.io/api/v1/)&#x20;
+   2. Click **Save**, ensuring the new service connection appears in your list of service connections.
 
 <figure><img src="../../../.gitbook/assets/ap_-_search.jpg" alt="Create your first service connection"><figcaption><p>Create your first service connection</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/ap_-_config.jpg" alt="New Snyk authentication service connection"><figcaption><p>New Snyk authentication service connection</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk-auth-serv-conn.jpg" alt="New Snyk authentication service connection"><figcaption><p>New Snyk authentication service connection</p></figcaption></figure>
+
