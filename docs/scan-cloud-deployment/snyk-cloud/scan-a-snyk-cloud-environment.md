@@ -12,6 +12,7 @@ To manually trigger a scan, send a request to the [`/cloud/scans`](https://apido
 ```
 SNYK_ORG_ID="YOUR-ORGANIZATION-ID" && \
 SNYK_API_TOKEN="YOUR-API-TOKEN" && \
+
 SNYK_ENV_ID=$(curl -s -X GET \
   "https://api.snyk.io/rest/orgs/${SNYK_ORG_ID}/cloud/environments?version=2022-12-21~beta" \
   -H "Authorization: token ${SNYK_API_TOKEN}" | jq -r '.data[0].id') && \
