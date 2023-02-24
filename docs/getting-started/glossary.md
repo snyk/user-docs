@@ -353,7 +353,7 @@ Incorporates **Snyk Intel Vulnerability DB**: Snyk’s database of vulnerabiliti
 
 ### Snyk Web UI
 
-The environment allowing users to access Snyk functions on the web. See [Snyk Web UI](quickstart/create-a-snyk-account/snyk-web-ui.md).
+The environment allowing users to access Snyk functions on the web. See [Snyk Web UI](quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md).
 
 ### Social Trends
 
