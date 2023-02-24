@@ -347,7 +347,7 @@
       * [Snyk Code Local Engine](products/snyk-code/deployment-options/snyk-code-local-engine/README.md)
         * [Introduction to Snyk Code Local Engine](products/snyk-code/deployment-options/snyk-code-local-engine/introduction.md)
         * [Configure and deploy the Local Engine](products/snyk-code/deployment-options/snyk-code-local-engine/configure-and-deploy-local-engine.md)
-        * [CLI and IDE](products/snyk-code/deployment-options/snyk-code-local-engine/cli-and-ide.md)
+        * [CLI and Snyk Code Local Engine](scan-application-code/snyk-code/deployment-options/snyk-code-local-engine/cli-and-snyk-code-local-engine.md)
     * [Snyk Code - Additional resources](products/snyk-code/snyk-code-additional-resources.md)
   * [Run PR Checks](scan-application-code/run-pr-checks/README.md)
     * [PR Checks for Snyk Open Source](scan-application-code/run-pr-checks/pr-checks-for-snyk-open-source/README.md)
