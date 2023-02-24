@@ -2,7 +2,40 @@
 
 Snyk automatically runs a scan when a [Snyk Cloud Environment](snyk-cloud-concepts.md#environments) is created. After that, you can manually trigger a new scan by using the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/scans).
 
-## Find the environment ID
+
+## Using `jq`
+
+### Trigger the scan
+
+To manually trigger a scan, send a request to the [`/cloud/scans`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/scans) endpoint in the below format:
+
+```
+SNYK_ORG_ID="YOUR-ORGANIZATION-ID" && \
+SNYK_API_TOKEN="YOUR-API-TOKEN" && \
+SNYK_ENV_ID=$(curl -s -X GET \
+  "https://api.snyk.io/rest/orgs/${SNYK_ORG_ID}/cloud/environments?version=2022-12-21~beta" \
+  -H "Authorization: token ${SNYK_API_TOKEN}" | jq -r '.data[0].id') && \
+curl -X POST \
+"https://api.snyk.io/rest/orgs/${SNYK_ORG_ID}/cloud/scans?version=2022-12-21~beta" \
+-H "Authorization: token ${SNYK_API_TOKEN}" \
+-H "Content-Type:application/vnd.api+json"  -d "{
+  \"data\": {
+    \"relationships\": {
+      \"environment\": {
+        \"data\": {
+          \"id\": \"${SNYK_ENV_ID}\",
+          \"type\": \"environment\"
+        }
+      }
+    },
+    \"type\": \"resource\"
+  }
+}"
+```
+
+## Without `jq`
+
+### Find the environment ID
 
 First, find the ID of the Snyk Cloud Environment you want to scan. Send a request to the [`/cloud/environments`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/cloud/environments) endpoint in the below format:
 
@@ -26,7 +59,7 @@ In the output, look for the `data.id` property. In the shortened example below, 
 }
 ```
 
-## Trigger the scan
+### Trigger the scan
 
 To manually trigger a scan, send a request to the [`/cloud/scans`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/scans) endpoint in the below format:
 
