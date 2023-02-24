@@ -6,8 +6,8 @@ See [Snyk user hub](https://snyk.io/user-hub/) to access all Snyk knowledge reso
 
 #### Get started with Snyk
 
-| ​[Getting started](getting-started/): Start running Snyk to secure your code |
-| ---------------------------------------------------------------------------- |
+| <p>​<a href="getting-started/">Getting started</a><br>Start running Snyk to secure your code</p> | <p><a href="guides/">Guides</a><br>Read step-by-step rollout guidance</p> |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- |
 
 #### Connect with Snyk <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 
@@ -21,8 +21,8 @@ See [Snyk user hub](https://snyk.io/user-hub/) to access all Snyk knowledge reso
 
 #### Manage your Snyk system
 
-| <p><a href="manage-issues/">Manage issues</a><br>Prioritize and report on Snyk scan result</p> | <p><a href="user-and-group-management/">Snyk Admin</a><br>Configure and manage your Snyk system</p> | <p><a href="snyk-api-info/">Snyk API</a><br>Customize Snyk functions with the Snyk API</p> |
-| ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| <p><a href="manage-issues/">Manage issues</a><br>Prioritize and report on Snyk scan results</p> | <p><a href="user-and-group-management/">Snyk Admin</a><br>Configure and manage your Snyk system</p> | <p><a href="snyk-api-info/">Snyk API</a><br>Customize Snyk functions with the Snyk API</p> |
+| ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
 
 #### More learning resources <a href="#use-other-resources" id="use-other-resources"></a>
 
