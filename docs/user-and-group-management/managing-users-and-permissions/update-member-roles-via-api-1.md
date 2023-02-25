@@ -42,7 +42,7 @@ This call returns an array of all members of the Group. Save the `id` of each us
 
 ### Step 2: Remove a member from a Group
 
-**Request**: `PATCH https://api.snyk.io/rest/groups/{group_id}/users/{id}?version=2023-01-30~beta`
+**Request**: PATCH https://api.snyk.io/rest/groups/{group\_id}/users/{id}?version=2023-01-30\~beta
 
 **Body:**
 

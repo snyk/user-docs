@@ -23,7 +23,7 @@ This group of pages provides detailed information about aspects of using the Sny
 * [**Solutions** for specific use cases](solutions-for-specific-use-cases.md)
 * [Find the differences between **versions** in the Snyk REST API](find-the-differences-between-versions-in-the-snyk-rest-api.md)
 
-For more articles on using Snyk API, see the following:
+For more articles on using the Snyk API, see the following:
 
 * [API support articles](https://support.snyk.io/hc/en-us/sections/360001344097-API)
 * [Audit logs](../../user-and-group-management/managing-users-and-permissions/audit-logs.md)
