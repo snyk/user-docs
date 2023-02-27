@@ -2,12 +2,9 @@
 
 Snyk automatically runs a scan when a [Snyk Cloud Environment](snyk-cloud-concepts.md#environments) is created. After that, you can manually trigger a new scan by using the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/scans).
 
-
 ## Using `jq`
 
-### Trigger the scan
-
-To manually trigger a scan, send a request to the [`/cloud/scans`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/scans) endpoint in the below format:
+If you have [jq](https://stedolan.github.io/jq/download/) installed, you can execute a single command to retrieve the first environment ID from the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21\~beta#get-/orgs/-org\_id-/cloud/environments) and then manually scan the environment:
 
 ```
 SNYK_ORG_ID="YOUR-ORGANIZATION-ID" && \
@@ -33,7 +30,11 @@ curl -X POST \
 }"
 ```
 
+Because `jq -r '.data[0].id` returns the ID of the **first** environment shown in the Snyk API ["list environments"](https://apidocs.snyk.io/?version=2022-12-21\~beta#get-/orgs/-org\_id-/cloud/environments) output, this technique is especially useful if your Organization has a single environment. You can also change the `0` to another number to scan a different environment; for example, `jq -r '.data[1].id` will return the ID of the **second** environment in the output.
+
 ## Without `jq`
+
+If you don't have [jq](https://stedolan.github.io/jq/download/) installed, you can send a request to the Snyk API to return all your environment IDs, look for the ID of the environment you want to scan, and send another request to manually trigger the scan.
 
 ### Find the environment ID
 
