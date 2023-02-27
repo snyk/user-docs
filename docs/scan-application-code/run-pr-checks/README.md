@@ -34,7 +34,7 @@ If security vulnerabilities are found, Snyk PR Checks automatically fails the sc
 
 #### Example: Snyk Code
 
-<figure><img src="../../.gitbook/assets/image2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image2 (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Example: Snyk Open Source
 
