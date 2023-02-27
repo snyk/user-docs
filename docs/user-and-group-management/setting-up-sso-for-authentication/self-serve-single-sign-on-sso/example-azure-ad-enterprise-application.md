@@ -45,7 +45,7 @@ An example follows of setting up an Azure AD Enterprise Application and connecti
     <figure><img src="../../../.gitbook/assets/14.png" alt="Enter certificate and domains supported, set connection"><figcaption><p>Enter certificate and domains supported, set connection</p></figcaption></figure>
 14. Refer to [step 3](https://docs.snyk.io/user-and-group-management/setting-up-sso-for-authentication/choose-a-provisioning-option) of the Snyk self serve SSO guide for how new users should be treated when signing in and choose the option you would like to use: **Group member**, **Org collaborator**, or **Org admin**. Finally, modify the **profile attributes** if your settings in Azure deviate from the default; then click **Save changes** and verify you can log in, either with the direct URL at the top of step 3 or by going to the [generic SSO login](https://app.snyk.io/login/sso).\
     \
-    If you are not receiving profile values as expected, you may need to add email, name, and username as **additional claims** within **Azure SSO settings** and then map those accordingly in the Snyk SSO **Profile Attributes** section.
+    If you are not receiving profile values as expected, you may need to add email, name, and username as **additional claims** within **Azure SSO settings** and then map those accordingly in the Snyk SSO **Profile attributes** section.
 
     <figure><img src="../../../.gitbook/assets/claim1.png" alt="Azure claim settings"><figcaption><p>Azure claim settings</p></figcaption></figure>
 
