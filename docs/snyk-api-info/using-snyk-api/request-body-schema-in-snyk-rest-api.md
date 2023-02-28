@@ -11,4 +11,4 @@ The Snyk REST API endpoint [Invite a user to an organization](https://apidocs.sn
 
 `email` is the invitee email address. `role` is the role public ID that will be granted to an invitee on acceptance.
 
-The variable type for both `email` and  `role` is a `string`. The role is a `string` with the format of `uuid`. The Snyk REST API uses these formats; thus the role is defined with the string format.
+The variable type for both `email` and `role` is a `string`. The role is a `string` with the format of `uuid`. The Snyk REST API uses these formats; thus the role is defined with the string format.

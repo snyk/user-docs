@@ -63,8 +63,8 @@ You must take additional steps to configure private Gem sources for projects imp
 
 #### `3.1.X`
 
-* '3.1.0'
+* '3.1.0', '3.1.1', '3.1.2', '3.1.3'
 
 #### `3.2.X`
 
-* '3.2.0'
+* '3.2.0', '3.2.1'

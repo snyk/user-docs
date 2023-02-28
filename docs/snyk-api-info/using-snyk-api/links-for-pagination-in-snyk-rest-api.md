@@ -6,7 +6,7 @@ When a call is made to an endpoint and there are more items in the response than
 
 The following example was generated using a demonstration project with many vulnerabilities, allowing for showing pagination.
 
-The first step was to invoke the REST API endpoint with a “normal” configuration, to see the code results  displayed on “page 1" (that is, the first 10 code-related vulnerabilities):
+The first step was to invoke the REST API endpoint with a “normal” configuration, to see the code results displayed on “page 1" (that is, the first 10 code-related vulnerabilities):
 
 ```
 curl -X GET "https://api.snyk.io/rest/orgs/6391f850-81f8-48fc-
@@ -424,4 +424,3 @@ The pointer to go to page 3 is `v1.eyJwcmlvcml0eVNjb3JlIjo4MDEsImlkIjoiNzAzOTI2N
   }
   
 ```
-

@@ -5,9 +5,9 @@ The Snyk Project type is returned from [Snyk API v1 Projects endpoints](https://
 
 The following is a list of the package managers supported by Snyk. This is all of the possible `type` values that may be returned:
 
-`apk` \
-`armconfig` \
-`cloudformationconfig` \
+`apk`\
+`armconfig`\
+`cloudformationconfig`\
 `cocoapods`\
 `composer`\
 `cpp`\

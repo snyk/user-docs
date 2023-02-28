@@ -1,7 +1,5 @@
 # How to use Postman for Snyk REST API
 
-
-
 You can use Postman to see the various endpoints in the Snyk REST API to learn how the API works. Follow these steps to set up Postman for use with the Snyk REST API.
 
 1. Download Postman: [https://www.postman.com/downloads/](https://www.postman.com/downloads/)
