@@ -7,9 +7,9 @@ Snyk integrates with Kubernetes, enabling you to import and test your running wo
 This feature is available in Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-## **How Kubernets integration works**
+## **How Kubernetes integration works**
 
-1. Your administrator installs a controller on your cluster, authenticating the integration with a unique ID generated from the Snyk account. Install the controller with either of these options:
+1. Your administrator installs a controller on your cluster, authenticating the integration with a unique integration ID and a service account token generated from the Snyk account. Install the controller with either of these options:
    * [Install the Snyk controller with Helm (Azure and Google Cloud Platform)](../installation-page/install-the-snyk-controller-with-helm.md)
    * [Install the Snyk controller with OpenShift and OperatorHub](../installation-page/install-the-snyk-controller-with-openshift-4-and-operatorhub.md)
    * [Install the Snyk controller on Amazon Elastic Kubernetes Service (Amazon EKS)](../installation-page/install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md)
