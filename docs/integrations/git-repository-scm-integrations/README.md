@@ -22,6 +22,6 @@ See the [Snyk deployment recommendations](snyk-scm-integration-good-practices.md
 For details see the following pages:
 
 * [Opening fix and upgrade PRs from a fixed GitHub account](opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)
-* [Test your PRs for vulnerabilities before merging](../../scan-application-code/run-pr-checks/pr-checks-for-snyk-open-source/test-your-prs-for-vulnerabilities-before-merging.md)
-* [Snyk checks on PRs](../../scan-application-code/run-pr-checks/pr-checks-for-snyk-open-source/snyk-checks-on-pull-requests.md)
+* [Test your PRs for vulnerabilities before merging](broken-reference)
+* [Snyk checks on PRs](broken-reference)
 * [View and understand Snyk upgrade PRs](view-and-understand-snyk-upgrade-pull-requests.md)
