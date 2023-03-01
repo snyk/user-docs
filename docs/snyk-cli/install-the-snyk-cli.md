@@ -19,7 +19,7 @@ Then follow these **steps to install with npm or Yarn**:
 
 If you are using Yarn, **install** by running `yarn global add snyk`.
 
-For additional informaiton see [Installing Snyk CLI as a binary via npm](../snyk-api-info/installing-snyk-cli-as-a-binary-via-npm/).
+For additional informaiton see [Installing Snyk CLI as a binary via npm](../snyk-api-info/installing-snyk-cli-as-a-binary-via-npm.md).
 
 ## Install with standalone executables
 

@@ -16,12 +16,12 @@ This group of pages provides detailed information about aspects of using the Sny
 * [Set **project attributes** using the Snyk API](set-project-attributes-using-the-snyk-api.md)
 * [Snyk API responses: **Project type**](snyk-api-responses-project-type.md)
 * [**Python** code to extract issues from Snyk API](python-code-to-extract-issues-from-snyk-api.md)
-* [Snyk API **rate limits**](../installing-snyk-cli-as-a-binary-via-npm/snyk-api-rate-limits.md)
-* [**Relationships** in Snyk REST API](../installing-snyk-cli-as-a-binary-via-npm/relationships-in-snyk-rest-api.md)
-* [Request body **schema** in Snyk REST API](../installing-snyk-cli-as-a-binary-via-npm/request-body-schema-in-snyk-rest-api.md)
-* [Choosing a **service account type** to use with Snyk APIs](../installing-snyk-cli-as-a-binary-via-npm/choosing-a-service-account-type-to-use-with-snyk-apis.md)
-* [**Solutions** for specific use cases](../installing-snyk-cli-as-a-binary-via-npm/solutions-for-specific-use-cases.md)
-* [Find the differences between **versions** in the Snyk REST API](../installing-snyk-cli-as-a-binary-via-npm/find-the-differences-between-versions-in-the-snyk-rest-api.md)
+* [Snyk API **rate limits**](snyk-api-rate-limits.md)
+* [**Relationships** in Snyk REST API](relationships-in-snyk-rest-api.md)
+* [Request body **schema** in Snyk REST API](request-body-schema-in-snyk-rest-api.md)
+* [Choosing a **service account type** to use with Snyk APIs](choosing-a-service-account-type-to-use-with-snyk-apis.md)
+* [**Solutions** for specific use cases](solutions-for-specific-use-cases.md)
+* [Find the differences between **versions** in the Snyk REST API](find-the-differences-between-versions-in-the-snyk-rest-api.md)
 
 For more articles on using the Snyk API, see the following:
 
