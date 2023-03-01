@@ -250,7 +250,7 @@ After you select a project for import, Snyk builds the dependency tree based on 
 Only dependencies in the following configurations are included - `api`, `compile`, `classpath`, `implementation`, `runtime`, `runtimeOnly`.
 {% endhint %}
 
-If a lockfile is present, Snyk uses it to accurately resolve the final version of dependencies used in the Project.
+If a lockfile is present, Snyk uses the lockfile to more accurately resolve the final version of dependencies used in the Project.
 
 Gradle lockfiles are an opt-in feature that, among other benefits, enable reproducible builds. For more information see the [Gradle docs on dependency locking](https://docs.gradle.org/current/userguide/dependency\_locking.html).
 
