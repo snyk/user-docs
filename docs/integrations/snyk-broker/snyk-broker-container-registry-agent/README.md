@@ -135,7 +135,7 @@ To set up the Broker Client for these container registries, all the preceding in
 
 If you are using **Repository path** as your Docker access method, the container registry hostname in `CR_BASE` variable should be set in this structure: `<your artifactory host>/artifactory/api/docker/<artifactory-repo-name>`
 
-Catalog endpoint `https://<artifactory-host>/artifactory/api/docker/<artifactory-repository>/v2/_catalog` is not required for importing a project in Artifactory; this is used for listing the image repositories.
+**Note:** Catalog endpoint `/artifactory/api/docker/<artifactory-repository>/v2/_catalog` is not required for importing a project in Artifactory; this is used for listing the image repositories.
 
 #### **ECR**
 
