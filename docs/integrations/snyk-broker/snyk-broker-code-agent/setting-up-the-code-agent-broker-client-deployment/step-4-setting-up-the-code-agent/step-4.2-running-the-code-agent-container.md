@@ -1,6 +1,10 @@
 # Step 4.2: Running the Code Agent container
 
-Once the Code Agent image is stored on your machine, yuse the `docker run` command to run the image and launch a Code Agent container that is based on it.
+Once the Code Agent image is stored on your machine, use the `docker run` command to run the image and launch a Code Agent container that is based on it.
+
+{% hint style="info" %}
+Environment variables (provided with -e) are case sensitive. Ensure that they are provided as defined on this page.
+{% endhint %}
 
 ## Running the Code Agent container
 

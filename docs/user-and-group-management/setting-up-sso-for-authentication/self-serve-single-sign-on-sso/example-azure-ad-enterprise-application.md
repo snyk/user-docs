@@ -49,7 +49,7 @@ An example follows of setting up an Azure AD Enterprise Application and connecti
 
     <figure><img src="../../../.gitbook/assets/claim1.png" alt="Azure claim settings"><figcaption><p>Azure claim settings</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image2.png" alt="Profile attributes section"><figcaption><p>Profile attributes section</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image2 (1).png" alt="Profile attributes section"><figcaption><p>Profile attributes section</p></figcaption></figure>
 
 If you wish to add signature verification of the incoming Snyk request:
 

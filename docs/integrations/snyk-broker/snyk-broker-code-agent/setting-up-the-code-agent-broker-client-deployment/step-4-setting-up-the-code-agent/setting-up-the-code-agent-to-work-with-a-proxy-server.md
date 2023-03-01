@@ -1,5 +1,9 @@
 # Setting up the Code Agent to work with a Proxy Server
 
+{% hint style="info" %}
+Environment variables (provided with -e) are case sensitive. Ensure that they are provided as defined on this page.
+{% endhint %}
+
 To use the Code Agent - Broker Client deployment in an infrastructure that uses a proxy, add the following environment variables to the `docker run` command of the Code Agent:
 
 ```
