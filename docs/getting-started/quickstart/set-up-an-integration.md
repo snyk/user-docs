@@ -24,7 +24,7 @@ If you select **GitHub**, then fill in the details as prompted.
 
 <figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Set access permissions</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Configure automation settings &#x26; authenticate</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (529).png" alt=""><figcaption><p>Configure automation settings &#x26; authenticate</p></figcaption></figure>
 
 Finally, you can [Import a Project](import-a-project.md) to scan:
 

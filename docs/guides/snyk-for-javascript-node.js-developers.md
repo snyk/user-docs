@@ -19,7 +19,7 @@ This guide focuses on scanning your application code, which are package manager 
 Before we get started, let's introduce Snyk, as some features mentioned in this document may not be available depending on your Snyk plan or product. Each Snyk product provides key capabilities for the ecosystems you are working in. Snyk [Pricing plans](https://snyk.io/plans) determine what features are available.
 
 {% hint style="info" %}
-Paid plans have an unlimited number of tests for purchased products, however there is a monthly limit to the number of tests performed for products not purchased. You can find the limits outlined [here](https://snyk.io/plans/).
+Note that there is a monthly limit to the number of tests performed if a particular product is not purchased. You can find the limits outlined [here](https://snyk.io/plans/) in the first square.
 {% endhint %}
 
 #### Snyk products
@@ -55,6 +55,8 @@ The following public resources are available for all users:
 #### Coding
 
 The following capabilities are available for all Snyk users.
+
+These capabilities focus on enablement, not enforcement. Use Snyk tools to test while working on a project, rather than testing after you commit the code and then discovering issues requiring code rework. Add a package and test it, before writing the code that interfaces with it. Similarly, after writing major sections of code, test the change before you continue.
 
 * [IDE Plugins](../ide-tools/): for VS Code, IntelliJ, and others: Test your open source packages and first party code as you develop. Additionally test infrastructure as code (IaC) Kubernetes deployment files you create.
 * [Snyk CLI](../snyk-cli/):  A powerful terminal program that allows you to test locally on your machine. Very useful in testing containers and more complex IaC files that are templated with variables (such as Terraform plan files), as well as scanning open source and your own code.
