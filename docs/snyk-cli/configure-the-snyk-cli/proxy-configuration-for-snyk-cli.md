@@ -8,13 +8,13 @@ Proxy authentication for Snyk CLI is currently available on Windows only. Suppor
 
 When you use the Snyk CLI behind a proxy, you must provide the proxy configuration by using the following environment variables:
 
-```bash
-HTTP_PROXY or http_proxy
-HTTPS_PROXY or https_proxy
-NO_PROXY or no_proxy
-```
+`HTTP_PROXY` or `http_proxy`
 
-The `https` in the `HTTPS_PROXY` means that requests using __ `https` __ protocol use this proxy. The proxy itself does not need to use `https`.
+`HTTPS_PROXY` or `https_proxy`
+
+`NO_PROXY` or `no_proxy`
+
+The `https` in the `HTTPS_PROXY` means that requests using `https` protocol use this proxy. The proxy itself does not need to use `https`.
 
 For more information, see [Configure the Snyk CLI to connect to the Snyk API](configure-snyk-cli-to-connect-to-snyk-api.md) and [How can I use Snyk behind a proxy?](https://support.snyk.io/hc/en-us/articles/360000925358-How-can-I-use-Snyk-behind-a-proxy-)
 
