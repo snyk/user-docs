@@ -16,10 +16,11 @@ You can also deactivate or delete a Project.
 
 Deactivating a Project will:
 
-* Remove the webhook from the GitHub repository.
+* Remove the webhook from the SCM repository.
 * Disable pull request tests for new vulnerabilities.
 * Disable a Fix pull request from being opened for newly disclosed vulnerabilities.
 * Disable recurring tests; email alerts about newly disclosed vulnerabilities will be turned off.
+* Remove any vulnerabilities in the project from reporting and dashboard views
 
 ### Delete a Project
 

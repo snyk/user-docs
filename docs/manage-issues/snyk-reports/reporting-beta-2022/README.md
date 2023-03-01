@@ -14,3 +14,7 @@ Security professionals can easily access, analyze, and share Snyk's security dat
 Snyk Reports offer analytics across all of your projects, displaying detailed and aggregated data about projects and issues. Data displayed in each report is scoped to the Snyk Organization or Group in which you are working.
 
 Snyk Reports are highly flexible, enabling you to display specifically selected data in the appropriate view in order to answer key security questions.
+
+{% hint style="danger" %}
+Deactivated projects and their respective results will not appear in the Reports area.
+{% endhint %}

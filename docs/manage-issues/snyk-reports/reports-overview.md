@@ -39,3 +39,7 @@ There may be a delay from the time a project is tested and until that data appea
 {% hint style="danger" %}
 Read-only projects and their respective results will not appear in the Reports area.
 {% endhint %}
+
+{% hint style="danger" %}
+Deactivated projects and their respective results will not appear in the Reports area.
+{% endhint %}
