@@ -20,6 +20,14 @@ After you have installed and configured the Language Server, every time you run 
 
 This page explains supported environments, support, and giving feedback and provides installation instructions.
 
+## Supported operating systems and architecture
+
+You can use the Language Server in the following environments:
+
+* Linux: AMD64 and ARM64
+* Windows: 386 and AMD64
+* MacOS: AMD64 and ARM64
+
 ## Where you can download the Language Server
 
 Currently, Snyk Language Server is automatically downloaded only when you use the Visual Studio Code (VS Code) and Eclipse plugins. Language Server can also be downloaded manually; the following shell script shows how to do that.

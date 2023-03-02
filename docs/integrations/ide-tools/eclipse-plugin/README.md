@@ -66,6 +66,14 @@ The plugin runs on
 * For Snyk Code, the Eclipse plugin supports all the [languages and frameworks supported by Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#language-support-with-snyk-code-ai-engine).
 * For Snyk IaC, the Eclipse plugin supports the following IaC templates: Terraform, Kubernetes, CloudFormation, and Azure Resource Manager.
 
+## Supported operating systems and architecture
+
+You can use the Eclipse plugin in the following environments:
+
+* Linux: AMD64 and ARM64
+* Windows: 386 and AMD64
+* MacOS: AMD64 and ARM64
+
 ## How to install the Snyk Eclipse plugin
 
 Navigate to the Marketplace from your running Eclipse instance. Search for Snyk and click **Install**.

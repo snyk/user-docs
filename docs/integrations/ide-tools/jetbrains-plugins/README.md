@@ -44,6 +44,14 @@ After you complete the installation steps on this page and the [configuration](h
 * For Snyk Container: the JetBrains plugin supports all the [operating system distributions supported by Snyk Container](https://docs.snyk.io/products/snyk-container/snyk-container-security-basics/supported-operating-system-distributions).
 * For Snyk IaC, the Eclipse plugin supports the following IaC templates: Terraform, Kubernetes, CloudFormation, and Azure Resource Manager.
 
+## Supported operating systems and architecture
+
+You can use the Snyk JetBrains plugin in the following environments:
+
+* Linux: AMD64 and ARM64
+* Windows: 386 and AMD64
+* MacOS: AMD64 and ARM64
+
 ## **Install the JetBrains plugin**
 
 The Snyk JetBrains plugin is available for installation on the [JetBrains marketplace](https://plugins.jetbrains.com/plugin/10972-snyk-vulnerability-scanner).

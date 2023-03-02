@@ -42,6 +42,14 @@ Supported languages and frameworks include C#, JavaScript, TypeScript, Java, Go 
 * Operating system - Windows
 * Supported versions of Visual Studio: 2015, 2017, 2019, 2022 (version 17.0.5 and above). The extension is compatible with Community, Professional, and Enterprise plans.
 
+## Supported operating systems and architecture
+
+You can use the Snyk Visual Studio extension in the following environments:
+
+* Linux: AMD64 and ARM64
+* Windows: 386 and AMD64
+* MacOS: AMD64 and ARM64
+
 ## Install the extension
 
 You can install the Snyk extension directly from the IDE; open **Extensions > Manage Extensions**.
