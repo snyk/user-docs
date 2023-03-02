@@ -14,13 +14,14 @@ For the URLs, see [EU and AU account datacenter creation](https://docs.snyk.io/s
 
 ## Introduction to Snyk Broker
 
-Snyk Broker is an open-source tool that can act as a proxy between Snyk and special integrations including:
+Snyk Broker is an open-source tool that acts as a proxy between Snyk and special integrations, to allow [snyk.io](http://snyk.io/) access to your code for scanning and returning results to you. Supported integrations include the following:
 
 * Your Source Code Management (SCM) system on-premise platforms
 * Your publicly-accessible Git-based repositories, allowing you to view and control Snyk activity in those repositories for increased data security
-* Your on-premise Jira installation or JFrog Artifactory installation
 * Network-restricted [container registries](snyk-broker-container-registry-agent/)
 * [Infrastructure as code (IaC) configuration](snyk-broker-infrastructure-as-code-detection/) files using Snyk IaC located on private Git-based repositories
+
+You can also use Snyk Broker to enable a secure connection with your on-premise Jira installation or JFrog Artifactory installation.
 
 Snyk Broker is designed to connect Snyk products to self-hosted integrations that are not publicly accessible from the internet. Snyk Broker also allows you to do the following:
 
