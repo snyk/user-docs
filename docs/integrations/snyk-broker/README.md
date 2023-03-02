@@ -99,7 +99,7 @@ To learn more about the approved data list and the `accept.json` file, see [Inst
 
 ## **Using Snyk Broker to scan your code**
 
-To use **Snyk Open Source** with Snyk Broker, you need only the Broker Server and the Broker Client components.
+To use **Snyk Open Source** with Snyk Broker, you need only the Broker Server and the Broker Client components. The Broker Client is published as a set of Docker images, each configured for a specific Git service. Configure each type of integration using environment variables as explained in the [Snyk Broker  - Client integration setups](snyk-broker-set-up-examples/).
 
 To scan other types of code with Snyk Broker, you must add a component or configurations and add parameters to the Broker Client setup:
 
