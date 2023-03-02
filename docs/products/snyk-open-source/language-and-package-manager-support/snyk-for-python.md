@@ -128,14 +128,14 @@ For details see the [Test command help](https://docs.snyk.io/snyk-cli/commands/t
 ### Setting the Python version in Git Projects
 
 {% hint style="info" %}
-When testing Projects imported from Git, Snyk uses a recent version of either Python 2 or Python 3, for example 2.7.4 or 3.7.4.
+When testing Projects imported from Git, Snyk uses Python 2 or Python 3. For Python 2, the version is 2.7.4; for Python 3 the version is 3.7.4.
 {% endhint %}
 
 By default Snyk tests using Python 2.
 
 To define which Python major version Snyk uses to test your Git imported Projects, use either Organization settings or a `.snyk` [policy file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file).
 
-To define the Python version for all projects in an Organization:
+To define the Python version for all Projects in an Organization:
 
 1. Log in to your account and navigate to the relevant Group and Organization to manage.
 2. Select **Settings** > **Languages**.
