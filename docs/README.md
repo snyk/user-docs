@@ -11,8 +11,8 @@ See [Snyk user hub](https://snyk.io/user-hub/) to access all Snyk knowledge reso
 
 #### Connect with Snyk <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 
-| <p><a href="integrations/git-repository-scm-integrations/">Git repositories</a><br>Connect your code repo to Snyk</p> | <p><a href="ide-tools/">IDEs</a><br>Integrate Snyk fully into your dev environment</p> | <p><a href="integrations/ci-cd-integrations/">CI/CD</a><br>Add Snyk to your CI/CD build pipeline</p> |
-| --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| <p><a href="integrations/git-repository-scm-integrations/">Git repositories</a><br>Connect your code repo to Snyk</p> | <p><a href="integrations/ide-tools/">IDEs</a><br>Integrate Snyk fully into your dev environment</p> | <p><a href="integrations/ci-cd-integrations/">CI/CD</a><br>Add Snyk to your CI/CD build pipeline</p> |
+| --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 
 #### Scan code with Snyk <a href="#explore-snyk-products" id="explore-snyk-products"></a>
 

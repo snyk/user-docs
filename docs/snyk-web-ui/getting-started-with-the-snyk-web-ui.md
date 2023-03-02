@@ -11,7 +11,7 @@ You can use the Snyk Web UI to run a full set of Snyk functions from your browse
 <figure><img src="../.gitbook/assets/Dashboard-intro.png" alt="Introducing the Snyk Web UI"><figcaption><p>Introducing the Snyk Web UI</p></figcaption></figure>
 
 {% hint style="info" %}
-You can also access Snyk functions from the [Snyk CLI](../snyk-cli/), from [within your IDE](../ide-tools/), and using the [Snyk API](../snyk-api-info/).&#x20;
+You can also access Snyk functions from the [Snyk CLI](../snyk-cli/), from [within your IDE](../integrations/ide-tools/), and using the [Snyk API](../snyk-api-info/).&#x20;
 {% endhint %}
 
 You can connect your code repositories, then use Snyk to scan and secure your application code, open-source libraries, container registries, and configuration files.

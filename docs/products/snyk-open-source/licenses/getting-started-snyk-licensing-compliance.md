@@ -9,7 +9,7 @@ The Snyk Default License Policy defines how Snyk identifies potential license is
 
 {% hint style="info" %}
 This process describes how to use the Snyk Web UI and a [supported source code management](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) system.\
-You can also use an [IDE tool](../../../ide-tools/) or a [CI/CD integration](../../../integrations/ci-cd-integrations/), or use the [Snyk CLI tool](../../../snyk-cli/) to get started using the command line.
+You can also use an [IDE tool](../../../integrations/ide-tools/) or a [CI/CD integration](../../../integrations/ci-cd-integrations/), or use the [Snyk CLI tool](../../../snyk-cli/) to get started using the command line.
 {% endhint %}
 
 ## **Prerequisites**

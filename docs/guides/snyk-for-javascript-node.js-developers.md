@@ -58,7 +58,7 @@ The following capabilities are available for all Snyk users.
 
 These capabilities focus on enablement, not enforcement. Use Snyk tools to test while working on a project, rather than testing after you commit the code and then discovering issues requiring code rework. Add a package and test it, before writing the code that interfaces with it. Similarly, after writing major sections of code, test the change before you continue.
 
-* [IDE Plugins](../ide-tools/): for VS Code, IntelliJ, and others: Test your open source packages and first party code as you develop. Additionally test infrastructure as code (IaC) Kubernetes deployment files you create.
+* [IDE Plugins](../integrations/ide-tools/): for VS Code, IntelliJ, and others: Test your open source packages and first party code as you develop. Additionally test infrastructure as code (IaC) Kubernetes deployment files you create.
 * [Snyk CLI](../snyk-cli/):  A powerful terminal program that allows you to test locally on your machine. Very useful in testing containers and more complex IaC files that are templated with variables (such as Terraform plan files), as well as scanning open source and your own code.
 
 #### Validating, Monitoring, Alerting and Gating

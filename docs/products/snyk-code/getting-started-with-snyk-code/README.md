@@ -5,7 +5,7 @@ This section describes how to get started with Snyk Code using the Snyk Web UI E
 You can work with Snyk Code using the following Snyk Environments:
 
 * [Snyk Web UI ](../../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md)(including [PR Checks](broken-reference))
-* [Snyk for IDEs](../../../ide-tools/)
+* [Snyk for IDEs](../../../integrations/ide-tools/)
 * [Snyk CLI](../../../snyk-cli/)
 * [Snyk API](../../../snyk-api-info/)
 
