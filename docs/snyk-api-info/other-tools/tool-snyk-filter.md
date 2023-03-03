@@ -4,7 +4,7 @@ The `snyk-filter` tool provides **custom filtering for Snyk CLI output**. `snyk-
 
 ## Clone and install snyk-filter
 
-First, clone the repo. Then run:
+First, clone the [repo](https://github.com/snyk-labs/snyk-filter). Then run:
 
 `npm install -g`
 
