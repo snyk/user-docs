@@ -11,7 +11,11 @@ You can output the CLI Code test results to a [JSON](outputting-the-test-results
   * Medium = **warning**
   * Low = **note/info**
 
-For example:
+{% hint style="info" %}
+The designation Critical is not used in Snyk Code.
+{% endhint %}
+
+An example for the medium level, warning, follows:
 
 ![](<../../../../.gitbook/assets/snyk Code - CLI - JSON and SARIF - Severity Level Results - in the Terminal.png>)
 
