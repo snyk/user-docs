@@ -4,7 +4,7 @@
 The information on this page is also available in the [Snyk REST API reference docs](https://apidocs.snyk.io/).
 {% endhint %}
 
-Snyk REST API is based on the [JSON:API standard](https://jsonapi.org/), defined in [OpenAPI 3](https://spec.openapis.org/oas/v3.0.3.html), and represents an evolutionary approach to API development, with each endpoint versioned (see [Versioning](snyk-rest-api-overview.md#versioning)).
+Snyk REST API is based on the [JSON:API standard](https://jsonapi.org/), defined in [OpenAPI 3](https://spec.openapis.org/oas/v3.0.3.html), and represents an evolutionary approach to API development, with each endpoint versioned (see the Versioning section on this page).
 
 ## When to use Snyk REST API
 
