@@ -24,7 +24,15 @@ See the Snyk [OAuth2 API documentation](https://snykoauth2.docs.apiary.io) for d
 
 ## How do Apps connect?
 
-When a user authorizes a Snyk App, the user selects how to connect, to either an Organization (Org) or a Group (with access to either all or one of the Group's Orgs). The resulting connection is no longer tied to that specific user, so it is not bound by the user’s access or lifecycle but is linked to the Org’s lifecycle. You can read more about Orgs in [What’s a Snyk organization](https://docs.snyk.io/user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization) and Groups in [What's a Snyk group](https://docs.snyk.io/features/user-and-group-management/managing-groups-and-organizations/whats-a-snyk-group).
+A Snyk App is set up to use a specific 'context' when creating the Snyk App, either 'tenant' or 'user'. This can be set with the `context` field if creating a Snyk App with the API or the `--context` flag if using the CLI. If not specified a Snyk App will default to using the 'tenant' context, which should be prefered unless your Snyk App specifically needs to perform operations as an individual user.
+
+### User Context
+
+Authorizing a Snyk App that uses the 'user' context will grant the Snyk App access to perform actions on behalf of the user. The Snyk App will have access to the same set of Organizations and Groups as the installing user, as well as access to any new Organizations and Groups the user is added to. If at any point the installing user deactivates their account, any installed apps using the 'user' context that user has installed will not be able to request new access tokens.
+
+### Tenant Context
+
+When a user authorizes a Snyk App that uses the 'tenant' context, the user selects how to connect, to either an Organization (Org) or a Group (with access to either all or one of the Group's Orgs). The resulting connection is no longer tied to that specific user, so it is not bound by the user’s access or lifecycle but is linked to the Org’s lifecycle. For more information about Orgs see [What’s a Snyk organization](https://docs.snyk.io/user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization) and for Groups, see [What's a Snyk group](https://docs.snyk.io/features/user-and-group-management/managing-groups-and-organizations/whats-a-snyk-group).
 
 The `scopes` of an App determine which actions an App can perform while connected to a Snyk account. Currently, `scopes` are related to actions performed through Snyk Orgs, which determine the API endpoints that can be used in an App. Endpoints authorized through a Snyk Group are not yet supported. You can read more about `scopes` in [Requesting scopes](https://docs.snyk.io/snyk-apps/getting-started-with-snyk-apps/create-an-app-via-the-api#requesting-scopes).
 

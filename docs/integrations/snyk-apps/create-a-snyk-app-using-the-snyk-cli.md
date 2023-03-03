@@ -36,6 +36,10 @@ A comma-separated list of redirect URIs. This forms a list of allowed redirect U
 
 A comma-separated list of scopes required by your Snyk App. This forms a list of scopes that your app is allowed to request during authorization. Required for the `create` command.
 
+`--context=<CONTEXT>`
+
+The context your Snyk App will install using. Can be either 'tenant' or 'user', will default to 'tenant' if not specified. A Snyk App using the 'tenant' context will act as a bot user so it is not tied to any particular user and hence will persist even if the installing user leaves an organisation. In contrast a Snyk App under the 'user' context will perform actions as the installing user, this should only be used if your Snyk App is performing operations that are specific to individual users. If in doubt use 'tenant'.
+
 ## Examples
 
 Create a Snyk App
