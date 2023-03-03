@@ -1,7 +1,7 @@
 # Automated pull requests for known vulnerabilities (backlog)
 
 {% hint style="info" %}
-This feature is supported in GitHub and GitHub Enterprise integrations only.
+This feature is supported in GitHub , GitHub Enterprise, and Bitbucket Cloud integrations.
 
 The Autofix PR settings may vary depending on the integration.
 {% endhint %}
