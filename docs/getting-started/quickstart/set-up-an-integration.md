@@ -18,7 +18,7 @@ Immediately after you [Create a Snyk account](create-a-snyk-account/), you will 
 
 For example:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption><p>Choose integration method</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (496).png" alt=""><figcaption><p>Choose integration method</p></figcaption></figure>
 
 If you select **GitHub**, then fill in the details as prompted.
 

@@ -14,7 +14,7 @@ To install and configure your Snyk Broker Client:
 3. Once Broker is running, **identifying Broker server** appears toward the end of the log results, showing that a connection to Snyk has been established
 4. Visit the settings for your brokered integration in [the Snyk Web UI](https://app.snyk.io) to see a message like the following:
 
-<figure><img src="../../../.gitbook/assets/image (60) (1).png" alt="Brokered integration settings showing connected status"><figcaption><p>Brokered integration settings showing connected status</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (60) (2).png" alt="Brokered integration settings showing connected status"><figcaption><p>Brokered integration settings showing connected status</p></figcaption></figure>
 
 The base setup for SCMs enables use of Snyk Open Source and scanning Dockerfiles. To get the full platform set up through Broker, follow these instructions:
 

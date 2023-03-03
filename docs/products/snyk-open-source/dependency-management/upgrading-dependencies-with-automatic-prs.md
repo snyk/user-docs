@@ -84,10 +84,10 @@ The Settings on the Project level override the Settings on the organization leve
 2. In **Projects**, locate and expand the Project for which you want to enable automatic upgrade PRs.
 3.  Click the **Project settings** (<img src="../../../.gitbook/assets/gear.png" alt="" data-size="line"> gear icon) at the end of the project row.
 
-    <figure><img src="../../../.gitbook/assets/image (134) (1) (1) (1).png" alt="Editing Project settings."><figcaption><p>Editing Project settings</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (134) (1) (1).png" alt="Editing Project settings."><figcaption><p>Editing Project settings</p></figcaption></figure>
 4.  In the **Project** **Settings** page, choose the relevant integration tab from the left submenu.
 
-    <figure><img src="../../../.gitbook/assets/image (10) (1) (2) (1).png" alt="Project settings overview."><figcaption><p>Project settings overview</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (10) (1) (2) (1) (1).png" alt="Project settings overview."><figcaption><p>Project settings overview</p></figcaption></figure>
 5. In the **Integration** page, scroll to the **Automatic dependency upgrade pull requests** section and choose one of the following:
    * **Inherit from Integration settings** – apply the Integration Settings of the Organization to the selected Project.
 
