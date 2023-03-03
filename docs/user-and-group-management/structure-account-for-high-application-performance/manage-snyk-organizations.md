@@ -82,7 +82,7 @@ You can change the Preferred Organization in your Snyk Account via your Account 
 
 **Note**: The Organization drop-down list displays your existing organizations.
 
-![](<../../.gitbook/assets/image (20) (1) (2).png>)
+![](<../../.gitbook/assets/image (20) (1) (1) (1).png>)
 
 3\. Click the **Update Preferred Org** button to save your new setting.
 
