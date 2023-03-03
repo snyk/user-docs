@@ -4,10 +4,12 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Some functions (such as Groups) are only available on certain plans. See [pricing plans](https://snyk.io/plans/) for more details.
+Some functions (such as Groups) are only available on certain [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 
-Snyk has a hierarchy that allows you to control access to features such as reports. This hierarchy is as follows:
+### Groups, Organizations, and Projects
+
+Snyk has a hierarchy that allows you to control access to features and scans:
 
 * **Group:** the highest level; for example, the entire company.
 * **Organization:** the second level of grouping; for example, your team.
@@ -15,33 +17,27 @@ Snyk has a hierarchy that allows you to control access to features such as repor
 
 #### Snyk Groups
 
-Typically, a Snyk group represents the entire company or business division.
+A [Snyk Group](managing-groups-and-organizations/whats-a-snyk-group.md) represents your entire base of Snyk users.
 
-Groups can contain multiple organizations, allowing you to collaborate with multiple teams.
-
-See [What’s a Snyk group?](managing-groups-and-organizations/whats-a-snyk-group.md)
+Groups can contain multiple Snyk Organizations, allowing you to collaborate with multiple teams.
 
 #### Snyk Organizations
 
-Organizations are contained in Groups. Based on your company's requirements, you can define Organizations to represent business areas such as teams, products or environments.
+[Organizations](managing-groups-and-organizations/whats-a-snyk-organization.md) represent business areas such as teams, products or environments.&#x20;
 
-Organizations can contain multiple Projects. For example, if an Organization represents an engineering team, this allows each team to see the applications they are working on.
+Organizations can contain multiple Snyk Projects, allowing your team to see scan details for the applications they are working on.
 
 {% hint style="info" %}
-When you sign up to Snyk using a social login, you have a default organization. Any projects you add appear in this organization by default.
+When you sign up to Snyk using a social login, you have a default Organization. Any projects you add appear in this Organization by default.
 {% endhint %}
-
-See [What’s a Snyk organization?](managing-groups-and-organizations/whats-a-snyk-organization.md)
 
 #### Snyk Projects
 
-Snyk Projects are contained in Organizations.
+[Snyk Projects](./#snyk-projects) are contained in Organizations.
 
-{% hint style="info" %}
-[Projects](../features/user-and-group-management/broken-reference/) are contained in Organizations.
-{% endhint %}
+A Snyk Project defines the items that Snyk scans for issues (such as manifest files), along with configuration information defining how to run that scan.
 
-### Snyk users: member types
+### Snyk user types
 
 Snyk provides four different types of members or users:
 
@@ -50,7 +46,7 @@ Snyk provides four different types of members or users:
 * Group member
 * Group administrator
 
-For definitions of the associated permissions, see this [information on permissions per role](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/managing-permissions#permissions-per-role).
+For definitions of the associated permissions per role, see [Managing permissions](managing-users-and-permissions/managing-permissions.md#permissions-per-role).
 
 {% hint style="info" %}
 **Feature availability**\
@@ -63,32 +59,30 @@ Snyk offers a wide range of tools to manage Groups, Organizations, and users.
 
 #### Enable authentication
 
-Snyk offers API tokens to enable authentication to service accounts or third party tools; see [authentication](authentication/ "mention").
+Snyk offers API tokens to enable authentication to service accounts or third party tools; see [Managing authentication](authentication/).
 
 #### Set up Single Sign-On (SSO)
 
-SSO makes authentication and provisioning simple; see [setting-up-sso-for-authentication](setting-up-sso-for-authentication/ "mention").
+SSO makes authentication and provisioning simple; see [Setting up Single Sign-On (SSO) for authentication](setting-up-sso-for-authentication/).
 
-![](<../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+<figure><img src="../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Single Sign-On"><figcaption><p>Single Sign-On</p></figcaption></figure>
 
 #### Manage users and permissions
 
-You can manage users and permissions in your groups; See [managing-users-and-permissions](managing-users-and-permissions/ "mention").
+You can manage users and permissions in your groups; See [Managing users & permissions](managing-users-and-permissions/).
 
-![](<../.gitbook/assets/image (401).png>)
+<figure><img src="../.gitbook/assets/image (245) (1).png" alt="Manage users and permissions"><figcaption><p>Manage users and permissions</p></figcaption></figure>
 
 #### Manage Groups and Organizations
 
-Learn how Snyk groups and organizations help keep cross-team collaboration seamless; see [managing-groups-and-organizations](managing-groups-and-organizations/ "mention")
+Learn how Snyk groups and organizations help keep cross-team collaboration seamless; see [Managing groups & organizations](managing-groups-and-organizations/).
 
 #### Define notifications
 
-You can manage email notifications, for yourself and your organization. See [notifications.md](notifications.md "mention").
+You can manage email notifications, for yourself and your organization. See [Managing notifications](notifications.md).
 
-![](<../.gitbook/assets/image (200) (1) (1) (1) (2).png>)
+<figure><img src="../.gitbook/assets/image (1).png" alt="Manage email notifications"><figcaption><p>Manage email notifications</p></figcaption></figure>
 
 #### Manage settings
 
-Customize your Snyk account for your needs. See [managing-settings](managing-settings/ "mention").
-
-![](<../.gitbook/assets/image (118) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+Customize your Snyk account for your needs. See [Managing settings](managing-settings/).
