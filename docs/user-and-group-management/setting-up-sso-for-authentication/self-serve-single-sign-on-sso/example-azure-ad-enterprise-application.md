@@ -10,10 +10,10 @@ An example follows of setting up an Azure AD Enterprise Application and connecti
     <figure><img src="../../../.gitbook/assets/2 (1) (1) (1) (1).png" alt="Group Settings: SSO"><figcaption><p>Group Settings: SSO</p></figcaption></figure>
 3.  Navigate to Azure and open Azure AD.
 
-    <figure><img src="../../../.gitbook/assets/3 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Azure AD Default Directory"><figcaption><p>Azure AD Default Directory</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/3 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Azure AD Default Directory"><figcaption><p>Azure AD Default Directory</p></figcaption></figure>
 4.  Click **Add** then **Enterprise application**.
 
-    <figure><img src="../../../.gitbook/assets/4 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Add Enterprise application"><figcaption><p>Add Enterprise application</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/4 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Add Enterprise application"><figcaption><p>Add Enterprise application</p></figcaption></figure>
 5.  Choose **Create your own application**.
 
     <figure><img src="../../../.gitbook/assets/5.png" alt="Create your own application"><figcaption><p>Create your own application</p></figcaption></figure>
@@ -22,7 +22,7 @@ An example follows of setting up an Azure AD Enterprise Application and connecti
     <figure><img src="../../../.gitbook/assets/6 (1) (1) (1) (1).png" alt="Application name and integration"><figcaption><p>Application name and integration</p></figcaption></figure>
 7.  For the new app, select **Set up single sign on** and **Get started**.
 
-    <figure><img src="../../../.gitbook/assets/7 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Set up single sign-on, Get started"><figcaption><p>Set up single sign-on, Get started</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/7 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Set up single sign-on, Get started"><figcaption><p>Set up single sign-on, Get started</p></figcaption></figure>
 8.  Select **SAML** as the SSO method.
 
     <figure><img src="../../../.gitbook/assets/8 (1).png" alt="Select SAML"><figcaption><p>Select SAML</p></figcaption></figure>
