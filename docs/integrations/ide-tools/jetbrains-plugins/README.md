@@ -65,7 +65,7 @@ Install using the IDE plugins library:
 5. Click on the **Install** button.
 6. When the installation is complete, restart the IDE.
 
-![Select the Snyk vulnerability scanning plugin](<../../../.gitbook/assets/Screen Shot 2022-03-09 at 5.06.13 PM (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1 (6).png>)
+![Select the Snyk vulnerability scanning plugin](<../../../.gitbook/assets/Screen Shot 2022-03-09 at 5.06.13 PM (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1 (3).png>)
 
 Continue with the steps on the JetBrains [configuration](https://docs.snyk.io/ide-tools/jetbrains-plugins/configuration-environment-variables-and-proxy-for-the-jetbrains-plugins) page.
 

@@ -1,22 +1,14 @@
----
-description: Use this documentation to get started with the Eclipse plugin.
----
-
 # Eclipse plugin
 
-Snyk offers IDE integrations that allow you to use the functionality of Snyk in your Integrated Development Environment. This page describes the Snyk Eclipse plugin. For information about all of the IDE plugins and their use, see [Snyk for IDEs](https://docs.snyk.io/ide-tools) in the docs.
-
 The Snyk Eclipse plugin provides analysis of your code, containers, and Infrastructure as Code configurations.
-
-Snyk scans for vulnerabilities, open source license issues, code quality, and infrastructure misconfigurations and returns results with security issues categorized by issue type and severity.
-
-For open source, you receive automated, algorithm-based fix suggestions for both direct and transitive dependencies. This single plugin provides a Java vulnerability scanner or an open-source security scanner.
 
 Snyk scans for the following types of issues:
 
 * [**Open Source Security**](https://snyk.io/product/open-source-security-management/) - security vulnerabilities and license issues in both the direct and in-direct (transitive) open-source dependencies pulled into the Snyk Project. See also the [`Open Source docs`](https://docs.snyk.io/products/snyk-open-source).
 * [**Code Security**](https://snyk.io/product/snyk-code/) and [**Code Quality**](https://snyk.io/product/snyk-code/) - security vulnerabilities and quality issues in your code. See also the [Snyk Code docs](https://docs.snyk.io/products/snyk-code).
 * [**Infrastructure as Code (IaC) Security**](https://snyk.io/product/infrastructure-as-code-security/) - configuration issues in your IaC templates: Terraform, Kubernetes, CloudFormation, and Azure Resource Manager. See also the [Snyk Infrastructure as Code docs](https://docs.snyk.io/products/snyk-infrastructure-as-code).
+
+Automated, algorithm-based fix suggestions for both direct and transitive dependencies. This single plugin provides a Java vulnerability scanner and an open-source security scanner.
 
 After you have installed and configured the Eclipse plugin, every time you run it, open a file, or autosave, Snyk scans the manifest files, proprietary code, and configuration files in your project. Snyk delivers actionable vulnerability, license, code quality, or misconfiguration issue details and displays the results natively within the Eclipse UI.
 
@@ -43,7 +35,7 @@ This page explains supported environments, support, and giving feedback and prov
 
 If you want to verify the correct provenance of your download, please verify the signing details from the Eclipse dialog with this data.
 
-![The signing key details to verify the integrity and origin of the download plugin](<../../../.gitbook/assets/image (134) (2) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![The signing key details to verify the integrity and origin of the download plugin](<../../../.gitbook/assets/image (134) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 The plugin runs on
 
@@ -92,7 +84,7 @@ Once Eclipse is restarted, the Snyk Wizard should run; this will setup your Snyk
 
 Once the Snyk configuration wizard runs; follow the instructions to set up your Snyk API:
 
-<figure><img src="../../../.gitbook/assets/eclipseSnykWizard.png" alt="Snyk configuration wizard"><figcaption><p>Snyk configuration wizard</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/eclipseSnykWizard (1).png" alt="Snyk configuration wizard"><figcaption><p>Snyk configuration wizard</p></figcaption></figure>
 
 Once the Snyk is configured, navigate to **Eclipse Preferences** to ensure that **Snyk** now appears in the list:
 
