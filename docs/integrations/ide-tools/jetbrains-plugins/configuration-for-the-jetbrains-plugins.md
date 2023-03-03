@@ -9,7 +9,7 @@ You can set the following configurations for the plugin, using **Preferences →
 * **Token**: set the token that should be used for authentication with Snyk (can be generated through the Account Settings in the Snyk Web UI).
 * **Custom endpoint**: set the custom endpoint for the Snyk Web UI, if needed. Use this field for single tenant setups as well instead of https://app.snyk.io.
 * **Ignore unknown CA**: ignore the SSL cert, if needed
-*   **Organization**: set the org to run `snyk test` against (similar to the `--org=` option in the CLI). This setting allows you to specify an organization slug name to run tests for that organization. The value must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.
+*   **Organization**: set the org to run `snyk test` against (similar to the `--org=` option in the CLI). Snyk recommends using the `ORG_ID`. If you specify an organization slug name, the value must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.
 
     If not specified, the preferred organization as defined in your [web account settings](https://app.snyk.io/account) is used to run tests.
 *   **Additional parameters**: set additional `snyk test` [CLI options](https://docs.snyk.io/snyk-cli/cli-reference#options-for-multiple-commands) for Open Source scanning.

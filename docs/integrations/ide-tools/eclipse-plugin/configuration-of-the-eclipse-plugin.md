@@ -11,7 +11,7 @@ You can set the following configuration options in the Snyk preferences.
 * `Snyk Open Source enabled`: Enable/Disable Snyk Open Source Dependency Scans via Language Server. Default: `Enabled` during beta
 * `Snyk Code enabled`: Enable/Disable Snyk Code Scans via Language Server. Default: `Disabled` during beta.
 * `Snyk Infrastructure-as-Code enabled` : Enable/Disable Snyk IaC Scans via Language Server. Default: `Enabled` during beta.
-* `Organization`: Specify the Snyk Organization to use for scanning.
+* `Organization`: Specify the Snyk Organization to use for scanning. Snyk recommends using the `ORG_ID`. If you specify an organization slug name, the value must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.
 * `Additional Parameters`: Specify additional parameters to pass to the CLI (for example, `--all-projects` or `-d.`
 * `Additional Environment`: Add environment variables to Language Server, multiple can be separated by `;`. Example: `JAVA_HOME=/usr/local/bin;GOPATH=/usr/local/bin`
 * `Update and install Snyk binaries automatically`: If `disabled`, no updates are downloaded and updates must be performed manually. Snyk recommends recommends always using the most recent version of the CLI. Please make sure that the locations for Language Server and CLI point to an existent, current binary.
