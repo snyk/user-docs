@@ -49,7 +49,7 @@ Snyk [Jira integration](../../integrations/notifications-ticketing-system-integr
 
 Navigate to the issue you have decided to fix, then click **Create a Jira issue**:
 
-<figure><img src="../../.gitbook/assets/image (158) (1) (1) (1) (1).png" alt="Create a Jira issue"><figcaption><p>Create a Jira issue</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (158) (1) (1).png" alt="Create a Jira issue"><figcaption><p>Create a Jira issue</p></figcaption></figure>
 
 You can then define the Jira task details for this fix:
 
