@@ -28,7 +28,7 @@ Snyk Broker is designed to connect Snyk products to self-hosted integrations tha
 * Control Snyk access to your network, by limiting the files to which Snyk has access and the actions that Snyk can perform.
 * Manage a fixed private IP for your integration, targeting the Broker.
 
-The Snyk Broker project is hosted at [GitHub](https://github.com/snyk/broker) and published as a set of Docker images for specific integrations.
+The Snyk Broker project is hosted at [GitHub](https://github.com/snyk/broker) and published as a set of Docker images for specific integrations. For more information see [Integrations with Snyk Broker](./#integrations-with-snyk-broker) on this page.
 
 ## Components of Snyk Broker
 
@@ -109,7 +109,7 @@ To scan other types of code with Snyk Broker, you must add a component or config
 
 ## **Integrations with Snyk Broker**
 
-Snyk Broker currently integrates with the following Git repository systems:
+The Broker Client is [published](https://github.com/snyk/broker) as a set of Docker images, each configured for a specific Git service. Configure each type of integration using environment variables as explained in the Snyk Broker [integration setups](snyk-broker-set-up-examples/). Snyk Broker currently integrates with the following Git repository systems:
 
 * [GitHub](../git-repository-scm-integrations/github-integration.md) and [GitHub Enterprise](../git-repository-scm-integrations/github-enterprise-integration.md) (Cloud and On-prem)
 * [GitLab](../git-repository-scm-integrations/gitlab-integration.md) (Cloud and On-prem)
