@@ -7,13 +7,13 @@ Audit logs are available with Enterprise plans. See [pricing plans](https://snyk
 
 ## Introduction
 
-Snyk has [Audit logs endpoints](https://snyk.docs.apiary.io/#reference/audit-logs) that enable you to retrieve information from your audit logs using the [Snyk API v1](../../snyk-api-info/).
+Snyk has [Audit logs endpoints in the Snyk API v1](https://snyk.docs.apiary.io/#reference/audit-logs) that enable you to retrieve your audit logs of user-initiated activity that took place in the past 90 days.
 
-For example, you can help retroactively triage any unexpected activity, find out when a new user is added, or monitor changes in a user's role to get early warning of any unusual behavior.
+You may want to retrieve audit logs for purposes such as helping to retroactively triage any unexpected activity, finding out when a new user is added, or monitoring changes in a user's role to get early warning of any unusual behavior.
 
-Use the Group level audit logs endpoint to get information about your Snyk Group, and the Organization level audit logs to get information about your Snyk Organization.
+Use the [Group level audit logs](https://snyk.docs.apiary.io/#reference/audit-logs/group-level-audit-logs) endpoint to get information about your Snyk Group, and the [Organization level audit logs](https://snyk.docs.apiary.io/#reference/audit-logs/organization-level-audit-logs) endpoint to get information about your Snyk Organization.
 
-## Examples
+## Examples of events returned in audit logs
 
 Examples of events returned include:
 
@@ -27,7 +27,3 @@ For a list of the events returned, refer to the request body JSON schema for the
 {% hint style="info" %}
 Logon and logout events for users are not returned, because the endpoints return information for the Group or Organization specified in the request.
 {% endhint %}
-
-## Limitations of audit logs
-
-If you need audit log information for an earlier time, or information such as login and logoff events for a user, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new). The support team can retrieve information from storage on your behalf.
