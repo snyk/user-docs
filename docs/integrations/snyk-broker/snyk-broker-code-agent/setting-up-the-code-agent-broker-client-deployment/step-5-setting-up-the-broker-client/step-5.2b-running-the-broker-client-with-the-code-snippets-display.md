@@ -30,7 +30,7 @@ To display the code snippets of the Snyk Code results on the Web UI, first downl
 
 On each Integration Setup page, locate the pre-defined `accept.json` file for this integration, and download it.
 
-* [GitHub](../../../snyk-broker-set-up-examples/broker-example-how-to-setup-broker-with-jira.md)
+* [GitHub](../../../snyk-broker-set-up-examples/broker-example-set-up-snyk-broker-with-github.md)
 * [GitHub Enterprise](../../../snyk-broker-set-up-examples/setup-broker-with-github-enterprise.md)
 * [Gitlab](../../../snyk-broker-set-up-examples/setup-broker-with-gitlab.md)
 * [Bitbucket Server/Data Center](../../../snyk-broker-set-up-examples/data-center.md)
