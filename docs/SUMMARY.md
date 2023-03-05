@@ -205,7 +205,7 @@
       * [Install and configure the Snyk Broker Client](integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md)
     * [Snyk Broker - Client integration setups](integrations/snyk-broker/snyk-broker-set-up-examples/README.md)
       * [Set up Snyk Broker with Azure Repos](integrations/snyk-broker/snyk-broker-set-up-examples/setup-broker-with-azure-repos.md)
-      * [Set up Broker with Bitbucket Server/Data Center](integrations/snyk-broker/snyk-broker-set-up-examples/data-center.md)
+      * [Set up Snyk Broker with Bitbucket Server/Data Center](integrations/snyk-broker/snyk-broker-set-up-examples/data-center.md)
       * [Set up Snyk Broker with GitHub](integrations/snyk-broker/snyk-broker-set-up-examples/broker-example-set-up-snyk-broker-with-github.md)
       * [Set up Broker with GitHub Enterprise](integrations/snyk-broker/snyk-broker-set-up-examples/setup-broker-with-github-enterprise.md)
       * [Set up Broker with GitLab](integrations/snyk-broker/snyk-broker-set-up-examples/setup-broker-with-gitlab.md)

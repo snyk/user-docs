@@ -9,7 +9,7 @@ Ask your Snyk account team to provide you with a Broker token.
 {% endhint %}
 
 {% hint style="info" %}
-You will need Docker or a way to run Docker containers.
+You need Docker or a way to run Docker containers.
 {% endhint %}
 
 {% hint style="info" %}
@@ -31,7 +31,7 @@ To use the Broker client with [Azure](https://azure.microsoft.com/en-us/services
 * `ACCEPT_IAC` - by default, some file types used by Infrastructure-as-Code (IaC) are not enabled. To grant the Broker access to IaC files in your repository, for example, Terraform, you can add an environment variable, `ACCEPT_IAC`, with any combination of `tf,yaml,yml,json,tpl`
 * `ACCEPT_CODE` - by default, when using the Snyk Broker - Code Agent, Snyk Code will not load code snippets. To enable code snippets you can add an environment variable, `ACCEPT_CODE=true`
 
-**Use the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container and Code files.
+**Use the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files.
 
 ```bash
 docker run --restart=always \
@@ -61,6 +61,6 @@ Once the container is up, the Azure Repos Integrations page shows the connection
 
 ## Basic troubleshooting for Broker with Azure Repos
 
-* Run `docker logs <container id>` where `container id` is the Azure Repos Broker container ID to look for any errors.
+* Run `docker logs <container id>` to look for any errors, where `container id` is the Azure Repos Broker container ID.
 * Ensure relevant ports are exposed to Azure Repos.
 * Make sure that file permissions for the local path to as well as the `accept.json` file itself are correct and accessible.

@@ -14,7 +14,7 @@ You need Docker or a way to run Docker containers
 
 The following explains how to configure Snyk Broker to be used for GItHub.
 
-**Run** `docker pull snyk/broker:github-com`. The following environment variables are mandatory to configure the Broker client:
+**Run** `docker pull snyk/broker:github-com`. The following environment variables are required to configure the Broker client:
 
 * `BROKER_TOKEN` - the Snyk Broker token, obtained from your Snyk Org settings view (app.snyk.io).
 * `GITHUB_TOKEN` - a personal access token with full `repo`, `read:org` and `admin:repo_hook` scopes.
@@ -23,7 +23,7 @@ The following explains how to configure Snyk Broker to be used for GItHub.
 * `ACCEPT_IAC` - by default, some file types used by Infrastructure-as-Code (IaC) are not enabled. To grant the Broker access to IaC files in your repository, such as Terraform for example, you can simply add an environment variable `ACCEPT_IAC` with any combination of `tf,yaml,yml,json,tpl`
 * `ACCEPT_CODE` - by default, when using the Snyk Broker - Code Agent, Snyk Code will not load code snippets. To enable code snippets you can simply add an environment variable `ACCEPT_CODE=true`
 
-**Use the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container and Code files.
+**Use the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files.
 
 ```bash
 docker run --restart=always \
@@ -72,5 +72,5 @@ To ensure the maximum possible security, Snyk does not enable this rule by defau
 
 ### **Additional troubleshooting for Broker with GitHub**
 
-* Run `docker logs <container id>` where `container id` is the GitHub Broker container ID to look for any errors.
+* Run `docker logs <container id>` to look for any errors, where `container id` is the GitHub Broker container ID.
 * Ensure relevant ports are exposed to GitHub.
