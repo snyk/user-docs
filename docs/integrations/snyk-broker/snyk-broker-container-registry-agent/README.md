@@ -67,7 +67,7 @@ The Broker Client provides the Container Registry Agent with the connection deta
 {% hint style="info" %}
 **Scaling to adjust scan capacity**
 
-With the listed configuration of 1 vCPU and 2GB RAM, scanning capacity would be approximately 160 images of \~350MB in one run. You can scale this up based on your image sizes, and if you have a specific use case that does not allow scaling and does not fit the limitations, contact [Snyk support](https://support.snyk.io/hc/en-us/).
+With the listed configuration of 1 vCPU and 2GB RAM, scanning capacity would be approximately 160 images of \~350MB each in one run. You can scale this up based on your image sizes, and if you have a specific use case that does not allow scaling and does not fit the limitations, contact [Snyk support](https://support.snyk.io/hc/en-us/).
 {% endhint %}
 
 ## **Set up the remote connection**
