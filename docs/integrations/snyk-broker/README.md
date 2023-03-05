@@ -38,7 +38,7 @@ Snyk Broker has a Server and a Client, basic components that are the same across
   The Broker Server is provided by Snyk, and no installation is required on your part.
 * **Broker Client** - a [Docker image](https://hub.docker.com/r/snyk/broker/) deployed in your infrastructure
 
-The Broker Client and Server together act as a tunnel to your code, sending requests by proxy from [snyk.io](http://snyk.io/) to a Git repository and fetching manifest files from monitored repositories, and fetching results using webhooks posted by the Git service.&#x20;
+The Broker Client and Server together act as a tunnel to your code, sending requests by proxy from [snyk.io](http://snyk.io/) to a Git repository and fetching manifest files from monitored repositories, and fetching results using webhooks posted by the Git service. The tunnel allows for scanning using only requests on an approved data list. This narrows the access permissions to the absolute minimum required for Snyk to actively monitor a repository. For details see [Approved data list for Snyk Broker](./#approved-data-list-for-snyk-broker) on this page.
 
 For information about components that are required for using Snyk Code Agent, Snyk Container Registry Agent, and Snyk Broker for Infrastructure as Code, see [Define your Broker deployment components](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/prepare-snyk-broker-for-deployment#define-your-broker-deployment-components).
 
