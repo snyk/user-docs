@@ -67,7 +67,7 @@ One reason that open Fix/Upgrade PRs or PR/recurring tests fail may be fetching 
 ```
 
 {% hint style="info" %}
-To ensure the maximum possible security, Snyk does not enable this rule by default, as usage of this endpoint means that the Snyk platform can theoretically access all files in this repository, because the path does not include specific allowed file names.
+To ensure the maximum possible security, Snyk does not enable this rule by default, as use of this endpoint means that the Snyk platform can theoretically access all files in this repository, because the path does not include specific allowed file names.
 {% endhint %}
 
 ### **Additional troubleshooting for Broker with GitHub**
