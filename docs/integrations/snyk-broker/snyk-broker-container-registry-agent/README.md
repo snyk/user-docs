@@ -139,7 +139,7 @@ If you are using **Repository path** as your Docker access method, the container
 
 #### **ECR**
 
-<figure><img src="../../../.gitbook/assets/untitled (1) (1) (1) (1) (1).png" alt="High-level architecture of the brokered ECR integration"><figcaption><p>High-level architecture of the brokered ECR integration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/untitled (1) (1) (1) (1) (1) (1).png" alt="High-level architecture of the brokered ECR integration"><figcaption><p>High-level architecture of the brokered ECR integration</p></figcaption></figure>
 
 #### **Required AWS Resource with ECR**
 

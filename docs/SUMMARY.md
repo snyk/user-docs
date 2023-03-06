@@ -797,4 +797,5 @@
   * [Preparing for implementation: Free / Team plan](guides/preparing-for-implementation-free-team-plan.md)
   * [Getting started with Snyk: Enterprise plan](guides/getting-started-with-snyk-enterprise-plan.md)
   * [Preparing for implementation: Enterprise plan](guides/preparing-for-implementation-enterprise-plan.md)
+  * [Snyk for Java developers](guides/snyk-for-java-developers.md)
   * [Snyk for JavaScript / Node.js developers](guides/snyk-for-javascript-node.js-developers.md)

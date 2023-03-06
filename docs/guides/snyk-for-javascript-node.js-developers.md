@@ -213,7 +213,7 @@ With large organizations, using hundreds of applications, a slower approach is r
 Use the **--help** option in the CLI or [docs](https://docs.snyk.io/snyk-cli/cli-reference) for details of Snyk CLI commands.
 
 * Open Source libraries:\
-  The “snyk test” command tests the fist manifest it can find and performs a test on that singular entry point. To have Snyk analyze all manifests\* , use:&#x20;
+  The “snyk test” command tests the first manifest it can find and performs a test on that singular entry point. To have Snyk analyze all manifests\* , use:&#x20;
   * **--all-projects**: Use this option to detect and scan all Yarn and other projects in this directory.
   * **--yarn-workspaces**: For Yarn Workspaces use the **--all-projects** flag to test and monitor your packages with other package managers or Yarn workspaces or use **--yarn-workspaces** to specifically scan Yarn Workspaces Projects only.\
     \
