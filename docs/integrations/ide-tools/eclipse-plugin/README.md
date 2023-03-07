@@ -1,6 +1,6 @@
 # Eclipse plugin
 
-The Snyk Eclipse plugin provides analysis of your code, containers, and Infrastructure as Code configurations.
+The Snyk Eclipse plugin provides analysis of your code, containers, and infrastructure as code configurations.
 
 Snyk scans for the following types of issues:
 
@@ -8,7 +8,7 @@ Snyk scans for the following types of issues:
 * [**Code Security**](https://snyk.io/product/snyk-code/) and [**Code Quality**](https://snyk.io/product/snyk-code/) - security vulnerabilities and quality issues in your code. See also the [Snyk Code docs](https://docs.snyk.io/products/snyk-code).
 * [**Infrastructure as Code (IaC) Security**](https://snyk.io/product/infrastructure-as-code-security/) - configuration issues in your IaC templates: Terraform, Kubernetes, CloudFormation, and Azure Resource Manager. See also the [Snyk Infrastructure as Code docs](https://docs.snyk.io/products/snyk-infrastructure-as-code).
 
-Automated, algorithm-based fix suggestions for both direct and transitive dependencies. This single plugin provides a Java vulnerability scanner and an open-source security scanner.
+The Eclipse plugin provides automated, algorithm-based fix suggestions for both direct and transitive dependencies. This single plugin provides a Java vulnerability scanner and an open-source security scanner.
 
 After you have installed and configured the Eclipse plugin, every time you run it, open a file, or autosave, Snyk scans the manifest files, proprietary code, and configuration files in your project. Snyk delivers actionable vulnerability, license, code quality, or misconfiguration issue details and displays the results natively within the Eclipse UI.
 
@@ -27,15 +27,15 @@ This page explains supported environments, support, and giving feedback and prov
 ## Where you can download the Eclipse plugin
 
 * **Eclipse Marketplace (recommended)**: [https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations](https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations)
-* Preview update site (CI/CD, on commit): [https://storage.googleapis.com/snyk-eclipse-plugin-test/preview/repository/](https://storage.googleapis.com/snyk-eclipse-plugin-test/preview/repository/)
-* Update site (weekly): [https://storage.googleapis.com/snyk-eclipse-plugin/weekly/repository/](https://storage.googleapis.com/snyk-eclipse-plugin/weekly/repository/)
+* Preview update site (CI/CD, on commit): [https://storage.googleapis.com/snyk-eclipse-plugin-test/preview-2.1/repository/](https://storage.googleapis.com/snyk-eclipse-plugin-test/preview-2.1/repository/)
+* Update site (weekly): [https://storage.googleapis.com/snyk-eclipse-plugin/weekly-2.1/repository/](https://storage.googleapis.com/snyk-eclipse-plugin-test/weekly-2.1/repository/)
 * Manual downloads: [https://github.com/snyk/snyk-eclipse-plugin/releases](https://github.com/snyk/snyk-eclipse-plugin/releases)
 
 **Signing Information for Jars**
 
-If you want to verify the correct provenance of your download, please verify the signing details from the Eclipse dialog with this data.
+If you want to verify the correct provenance of your download, verify the signing details from the Eclipse dialog with this data.
 
-![The signing key details to verify the integrity and origin of the download plugin](<../../../.gitbook/assets/image (134) (2) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+<figure><img src="../../../.gitbook/assets/image (134) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="The signing key details to verify the integrity and origin of the download plugin"><figcaption><p>The signing key details to verify the integrity and origin of the download plugin</p></figcaption></figure>
 
 The plugin runs on
 
@@ -45,6 +45,9 @@ The plugin runs on
 
 ## Supported Eclipse Versions
 
+* 2023-03
+* 2022-12
+* 2022-09
 * 2022-06
 * 2022-03
 * 2021-12
@@ -70,25 +73,23 @@ You can use the Eclipse plugin in the following environments:
 
 Navigate to the Marketplace from your running Eclipse instance. Search for Snyk and click **Install**.
 
-![Eclipse Marketplace search showing Snyk plugin and Install button](<../../../.gitbook/assets/Screenshot 2022-05-17 at 16.29.29.png>)
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-05-17 at 16.29.29.png" alt="Eclipse Marketplace search showing Snyk plugin and Install button"><figcaption><p>Eclipse Marketplace search showing Snyk plugin and Install button</p></figcaption></figure>
 
-When prompted accept the license agreement add the **Snyk Security** certificate to complete the installation (this happens only once).
-
-![Add Snyk Security certificate](../../../.gitbook/assets/Screenshot%202022-05-13%20at%2009.08.52)
+When you are prompted, accept the license agreement and add the **Snyk Security** certificate to complete the installation (this happens only once).
 
 Restart the Eclipse instance:
 
-![Restart Eclipse](<../../../.gitbook/assets/Screenshot 2022-05-13 at 09.16.37.png>)
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-05-13 at 09.16.37.png" alt="Restart Eclipse"><figcaption><p>Restart Eclipse</p></figcaption></figure>
 
-Once Eclipse is restarted, the Snyk Wizard should run; this will setup your Snyk API endpoint and authentication token:
+Once Eclipse is restarted, the Snyk Wizard should run; this will set up your Snyk API endpoint and authentication token.
 
 Once the Snyk configuration wizard runs; follow the instructions to set up your Snyk API:
 
-<figure><img src="../../../.gitbook/assets/eclipseSnykWizard (1).png" alt="Snyk configuration wizard"><figcaption><p>Snyk configuration wizard</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/eclipseSnykWizard.png" alt="Snyk configuration wizard"><figcaption><p>Snyk configuration wizard</p></figcaption></figure>
 
 Once the Snyk is configured, navigate to **Eclipse Preferences** to ensure that **Snyk** now appears in the list:
 
-![Eclipse preferences showing Snyk.](<../../../.gitbook/assets/Screenshot 2022-05-17 at 16.36.07.png>)
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-05-17 at 16.36.07.png" alt="Eclipse preferences showing Snyk."><figcaption><p>Eclipse preferences showing Snyk.</p></figcaption></figure>
 
 When you open the preferences you can opt out of downloading the CLI through the plugin and thus use your own installation of the CLI.
 
