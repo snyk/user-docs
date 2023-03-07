@@ -8,17 +8,17 @@ Snyk takes a developer-first approach to securing your application. This approac
 
 So we recommend you use Snyk to focus on earlier enablement, not later enforcement. Do not wait until you commit the code to find an issue requiring changes. Snyk provides tools that allow you to test while working on a project to minimize rework. Add a package: test it before writing the code that interfaces with it. Similarly after writing major sections of code, test it before moving on.
 
-## Focus of this guide
+### Focus of this guide
 
 This guide focuses on scanning your application code, which are package manager and language specific, [Snyk Container](https://docs.snyk.io/scan-containers) and [Snyk Infrastructure as Code (IaC)](https://docs.snyk.io/scan-cloud-deployment/snyk-infrastructure-as-code) also support your container and infrastructure as code needs.
 
 
 
-## Snyk overview
+### Snyk overview
 
 Before we get started, let's introduce Snyk, as some features mentioned in this document may not be available depending on your Snyk plan or product. Each Snyk product provides key capabilities for the ecosystems you are working in. Snyk [Pricing plans](https://snyk.io/plans) determine what features are available.
 
-### Snyk Plans and Products
+#### Snyk Plans and Products
 
 Snyk has many integrations, designed to satisfy key workflow needs and provide visibility at various stages of development. Additionally each Snyk product provides key capabilities for the ecosystems you are working in.&#x20;
 
@@ -69,9 +69,9 @@ As you start planning and your code progresses through the pipeline, Snyk can pr
 
 The following public resources are available for all users:
 
-* [Snyk Advisor](https://snyk.io/advisor): Helps you pick healthy open source packages or base images to start developing with.
 * [Snyk Learn](https://learn.snyk.io/): Assists you in learning to code securely.
 * [Snyk Training](https://training.snyk.io/): Provides training on how to use Snyk.
+* [Snyk Advisor](https://snyk.io/advisor): Helps you pick healthy base images to start developing with.
 
 #### Coding&#x20;
 
@@ -82,7 +82,7 @@ These capabilities focus on enablement, not enforcement. Use Snyk tools to test 
 * [Snyk CLI](../snyk-cli/):  A powerful terminal program that allows you to test locally on your machine. Very useful in testing containers and more complex IaC files that are templated with variables (such as Terraform plan files), as well as scanning open source and your own code.
 * [IDE Plugins](../integrations/ide-tools/): for IntelliJ, Eclipse, VS Code, and others: Test your open source packages and first party code as you develop. Additionally test infrastructure as code (IaC) Kubernetes deployment files you create.
 * Additionally the Snyk team has built plugins to make it easy to integrate Snyk into your workflows:
-  * ****[**Gradle Plugin**](https://snyk.io/blog/gradle-plugin-by-snyk-gradle-dependencies-scanning/) ****&#x20;
+  * ****[**Gradle Plugin**](https://snyk.io/blog/gradle-plugin-by-snyk-gradle-dependencies-scanning/) **(Community project)**
   * ****[**Maven Plugin**](https://snyk.io/blog/snyk-maven-plugin-integrated-security-vulnerability-scanning-for-developers/)****
 
 #### Validating, Monitoring, Alerting and Gating
@@ -112,10 +112,10 @@ Snyk can passively monitor, and/or provide a QA gate by failing build checks dur
 
 Snyk provides flexible capabilities, including:
 
-* [Gradle Plugins](https://snyk.io/blog/gradle-plugin-by-snyk-gradle-dependencies-scanning/)&#x20;
+* [Gradle Plugins](https://snyk.io/blog/gradle-plugin-by-snyk-gradle-dependencies-scanning/) **(Community project)**
 * [Maven Plugins](https://snyk.io/blog/snyk-maven-plugin-integrated-security-vulnerability-scanning-for-developers/)
 * Dedicated plugins for Jenkins, Circle CI, and others (see relevant marketplaces)
-* Using Github Actions
+* Using [Github Actions](https://snyk.io/blog/building-a-secure-pipeline-with-github-actions/)
 * The Snyk CLI can be used in most CI/CD systems (see [examples](https://github.com/snyk-labs/snyk-cicd-integration-examples))
   * Fail the build based on criteria using options or the [snyk-filter](../snyk-api-info/other-tools/tool-snyk-filter.md) tool
   * There are [containerized](https://hub.docker.com/r/snyk/snyk) versions available
@@ -305,6 +305,8 @@ Snyk offers capabilities in this ecosystem to help address issues, both reactive
 {% hint style="info" %}
 We suggest enabling automated PRs on a key project to start before enabling globally, to familiarize development on how to interact with Snyk and security issues.
 {% endhint %}
+
+Additional information: [Helpful guidance on fixing vulnerabilities on Maven projects](https://snyk.io/blog/fixing-vulnerabilities-in-maven-projects/)&#x20;
 
 ### Additional security topics for Java developers
 
