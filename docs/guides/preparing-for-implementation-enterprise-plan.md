@@ -140,7 +140,7 @@ See the[ Source Code Manager Configurations](https://training.snyk.io/courses/so
 
 Also see [Snyk Integrations](https://docs.snyk.io/integrations) for more details.
 
-If you are using an on-premise source control manager, you must also configure and deploy the [Snyk Broker](../integrations/snyk-broker/).&#x20;
+If you are using an on-premise source control manager, you must also configure and deploy the [Snyk Broker](../user-and-group-management/snyk-broker/).&#x20;
 
 #### Set up Jira integration
 

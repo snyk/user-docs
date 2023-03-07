@@ -42,7 +42,7 @@ The imported Projects appear on your **Projects** page and are continuously chec
 
 ## GitHub Enterprise Broker startup script
 
-Use the script that follows to start up [Snyk Broker](../snyk-broker/).
+Use the script that follows to start up [Snyk Broker](../../user-and-group-management/snyk-broker/).
 
 ```
 docker run --restart=always \

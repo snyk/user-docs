@@ -113,12 +113,12 @@ To scan other types of code with Snyk Broker, you must add a component or config
 
 The Broker Client is [published](https://github.com/snyk/broker) as a set of Docker images, each configured for a specific Git service. Configure each type of integration using environment variables as explained in the Snyk Broker [integration setups](snyk-broker-set-up-examples/). Snyk Broker currently integrates with the following Git repository systems:
 
-* [GitHub](../git-repository-scm-integrations/github-integration.md) and [GitHub Enterprise](../git-repository-scm-integrations/github-enterprise-integration.md) (Cloud and On-prem)
-* [GitLab](../git-repository-scm-integrations/gitlab-integration.md) (Cloud and On-prem)
-* [Bitbucket Server / Data Center](../git-repository-scm-integrations/bitbucket-data-center-server-integration.md) (On-prem)
-* [Azure Repos](../git-repository-scm-integrations/azure-repos-integration.md) (Cloud and On-prem)
+* [GitHub](../../integrations/git-repository-scm-integrations/github-integration.md) and [GitHub Enterprise](../../integrations/git-repository-scm-integrations/github-enterprise-integration.md) (Cloud and On-prem)
+* [GitLab](../../integrations/git-repository-scm-integrations/gitlab-integration.md) (Cloud and On-prem)
+* [Bitbucket Server / Data Center](../../integrations/git-repository-scm-integrations/bitbucket-data-center-server-integration.md) (On-prem)
+* [Azure Repos](../../integrations/git-repository-scm-integrations/azure-repos-integration.md) (Cloud and On-prem)
 
-In addition, Snyk Broker integrates with [Jira Server/Jira Data Center](../notifications-ticketing-system-integrations/jira.md), [JFrog Artifactory](../private-registry-integrations/artifactory-registry-setup.md), and [Nexus Repository Manager](../private-registry-integrations/nexus-repo-manager-setup.md).
+In addition, Snyk Broker integrates with [Jira Server/Jira Data Center](../../integrations/notifications-ticketing-system-integrations/jira.md), [JFrog Artifactory](../../integrations/private-registry-integrations/artifactory-registry-setup.md), and [Nexus Repository Manager](../../integrations/private-registry-integrations/nexus-repo-manager-setup.md).
 
 With the Container Registry Agent, Snyk Broker also connects to all [Snyk-supported container registries](snyk-broker-container-registry-agent/).
 
