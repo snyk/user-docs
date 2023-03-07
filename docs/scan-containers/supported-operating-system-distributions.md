@@ -35,6 +35,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 
 #### Amazon Linux
 
+* Amazon Linux 2023
 * Amazon Linux 2022
 * Amazon Linux 2
 * Amazon AMI 2018.03
