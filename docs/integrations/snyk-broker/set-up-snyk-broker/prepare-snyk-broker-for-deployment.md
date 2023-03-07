@@ -36,10 +36,10 @@ Consider the following to understand what the required components are for your d
 * What are you connecting Broker to?
   * GitHub, Jira, Bitbucket, Harbor...
 * Are you planning to detect Infrastructure as Code files?
-  * You will need to add an `accept.json` file to your deployment.
+  * You will need to add an environment variable `-e ACCEPT_IAC` or a custom allowlist `accept.json` file to your deployment.
   * See [Snyk Broker - Infrastructure as Code detection](../snyk-broker-infrastructure-as-code-detection/).
 * Are you planning to detect Snyk Code vulnerabilities?
-  * You will need to deploy an additional agent with Broker, the Snyk Broker Code Agent, and add an `accept.json` file if you want to view code snippets.
+  * You will need to deploy an additional agent with Broker, the Snyk Broker Code Agent, and add an environment variable `-e ACCEPT_CODE` or a custom allowlist `accept.json` file if you want to view code snippets.
   * See [Snyk Broker Code Agent](../snyk-broker-code-agent/).
 * Are you planning to connect to a Container Registry?
   * You will need to deploy an additional agent with Broker, the Snyk Broker Container Registry Agent.
@@ -47,7 +47,7 @@ Consider the following to understand what the required components are for your d
 
 Every integration has a specific Broker token assigned to it. This means if you want to analyze Snyk Code vulnerabilities and connect to a Container Registry your integration will be:
 
-* One Broker for the SCM with the additional `accept.json` and one Broker Code Agent
+* One Broker for the SCM with the additional environment variable `-e ACCEPT_CODE` or the custom allowlist `accept.json` and one Broker Code Agent
 * One Broker for the Container Registry and one Broker Container Registry agent
 
 ## Generate credentials in the target application for Snyk Broker

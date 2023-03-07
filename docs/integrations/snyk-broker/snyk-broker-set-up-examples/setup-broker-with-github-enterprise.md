@@ -26,7 +26,7 @@ To use the Broker client with a GitHub Enterprise deployment, **run** `docker pu
 * `ACCEPT_IAC` - by default, some file types used by Infrastructure-as-Code (IaC) are not enabled. To grant the Broker access to IaC files in your repository, such as Terraform for example, you can simply add an environment variable `ACCEPT_IAC` with any combination of `tf,yaml,yml,json,tpl`
 * `ACCEPT_CODE` - by default, when using the Snyk Broker - Code Agent, Snyk Code will not load code snippets. To enable code snippets you can simply add an environment variable `ACCEPT_CODE=true`
 
-**Use the following command** to set up up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files.
+**Use the following command** to set up up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files (with the Code Agent).
 
 ```bash
 docker run --restart=always \
@@ -43,13 +43,11 @@ docker run --restart=always \
        snyk/broker:github-enterprise
 ```
 
-If necessary, **go to the Advanced Configuration section** of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and **make any configuration changes needed**.\
+**If necessary,** go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and **make any configuration changes** needed. For example, if the GitHub Enterprise instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration or if you need to setup [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support).
 
+### Custom allowlist through ACCEPT parameter
 
-For example, if the GitHub Enterprise instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration.\
-
-
-A fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for GitHub Enterprise is attached. You **cannot run** the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument.
+In addition, a fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for GitHub Enterprise is attached in case you want to configure a custom allowlist. You cannot run the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument:
 
 {% file src="../../../.gitbook/assets/accept (2).json" %}
 

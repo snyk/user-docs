@@ -1,32 +1,51 @@
 # Install and configure the Snyk Broker Client
 
-
-
 {% hint style="info" %}
-Snyk recommends and supports using Docker as the method of running the Snyk Broker Client.
+Snyk recommends using Helm as the simplest way to deploy of the broker, alternatively Snyk also supports using Docker as the method of running the Snyk Broker Client.
 {% endhint %}
-
-To install and configure your Snyk Broker Client:
-
-1. Visit the [Snyk Broker GitHub repository](https://github.com/snyk/broker) and follow the instructions for the relevant integration to run one of the images provided by Snyk, or derive your own.\
-   There are some examples at [Snyk Broker integration setups](../snyk-broker-set-up-examples/).
-2. For the environment variables required to run the Broker Client, you must:
-   1. Retrieve your [unique Broker Client token](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/prepare-snyk-broker-for-deployment#generate-credentials-in-the-target-application-for-snyk-broker).
-   2. Ensure that you have the necessary permissions granted to your API credentials for the integration you are using by following the associated [Snyk integration instructions](../../).
-3. Once Broker is running, **identifying Broker server** appears toward the end of the log results, showing that a connection to Snyk has been established
-4. Visit the settings for your brokered integration in [the Snyk Web UI](https://app.snyk.io) to see a message like the following:
-
-<figure><img src="../../../.gitbook/assets/image (60) (1).png" alt="Brokered integration settings showing connected status"><figcaption><p>Brokered integration settings showing connected status</p></figcaption></figure>
-
-The base setup for SCMs enables use of Snyk Open Source and scanning Dockerfiles. To get the full platform set up through Broker, follow these instructions:
-
-* [Snyk Broker - Infrastructure as Code detection](../snyk-broker-infrastructure-as-code-detection/)
-* [Snyk Broker - Container Registry Agent](../snyk-broker-container-registry-agent/)
-* [Snyk Broker - Code Agent](../snyk-broker-code-agent/)
 
 ## Snyk Broker Helm Chart
 
-Alternatively, if you are using Kubernetes and would like to deploy Broker through a Helm chart, use the [Snyk Broker Helm Chart](https://github.com/snyk/snyk-broker-helm) provided on GitHub.
+Installing the Snyk Broker with the [Broker Helm Chart](https://github.com/snyk/snyk-broker-helm) is the easiest way to deploy the Snyk Broker if you are using Kubernetes.&#x20;
+
+{% hint style="info" %}
+The Helm chart does not manage connectivity and thus you will be responsible of managing ingress in the Kubernetes cluster
+{% endhint %}
+
+To use this chart you need to add first the repo:&#x20;
+
+* `helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`
+
+And then follow the commands as per the [README](https://github.com/snyk/snyk-broker-helm):
+
+* [GitHub ](https://github.com/snyk/snyk-broker-helm#githubcom)
+* [GitHub Enterprise](https://github.com/snyk/snyk-broker-helm#github-enterprise)
+* [Bitbucket Server/Data Centre](https://github.com/snyk/snyk-broker-helm#bitbucket)
+* [Gitlab](https://github.com/snyk/snyk-broker-helm#gitlab)
+* [Azure Repos](https://github.com/snyk/snyk-broker-helm#azure-repos)
+* [JFrog Artifactory](https://github.com/snyk/snyk-broker-helm#artifactory)
+* [Jira](https://github.com/snyk/snyk-broker-helm#jira)
+* [Snyk Broker - Container Registry Agent](https://github.com/snyk/snyk-broker-helm#container-registry-agent) (needed to connect to Container Registries)
+* [Snyk Broker Code Agent](https://github.com/snyk/snyk-broker-helm#snyk-code-agent) (needed to enable SAST analysis)
+
+## Snyk Broker Docker Installation
+
+Installing the Snyk Broker through Docker commands is also straightforward. Follow the instructions for the different integrations:
+
+* [GitHub](../snyk-broker-set-up-examples/broker-example-set-up-snyk-broker-with-github.md)
+* [GitHub Enterprise](../snyk-broker-set-up-examples/setup-broker-with-github-enterprise.md)
+* [Bitbucket Server/Data Centre](../snyk-broker-set-up-examples/data-center.md)
+* [Gitlab](../snyk-broker-set-up-examples/setup-broker-with-gitlab.md)
+* [Azure Repos](../snyk-broker-set-up-examples/setup-broker-with-azure-repos.md)
+* [JFrog Artifactory](https://github.com/snyk/broker#artifactory)&#x20;
+* [Nexus](https://github.com/snyk/broker#nexus-3)
+* [Jira](../snyk-broker-set-up-examples/setup-broker-with-jira.md)
+* [Snyk Broker - Container Registry Agent](../snyk-broker-container-registry-agent/) (needed to connect to Container Registries)
+* [Snyk Broker - Code Agent](../snyk-broker-code-agent/) (needed to enable SAST analysis)
+
+Once the Broker is running, visit the settings for your brokered integration in [the Snyk Web UI](https://app.snyk.io) to see a message like the following and start importing projects:
+
+<figure><img src="../../../.gitbook/assets/image (60) (2).png" alt="Brokered integration settings showing connected status"><figcaption><p>Brokered integration settings showing connected status</p></figcaption></figure>
 
 ## Advanced configuration for Snyk Broker
 

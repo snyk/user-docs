@@ -1,6 +1,6 @@
 # Set up Snyk Broker with Azure Repos
 
-Follow the instructions on this page to set up Snyk Azure Repos with Snyk Broker. This integration  is useful to ensure a secure connection with your on-premise or cloud Azure Repos deployment.
+Follow the instructions on this page to set up Snyk Azure Repos with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise or cloud Azure Repos deployment.
 
 ## Configure Broker to be used for Azure Repos
 
@@ -27,11 +27,11 @@ To use the Broker client with [Azure](https://azure.microsoft.com/en-us/services
 * `AZURE_REPOS_ORG` - organization name, which can be found in your Organization Overview page in Azure. For Azure Repos on-prem, the typical organization name is `tfs/Main`
 * `AZURE_REPOS_HOST` - the hostname of your Azure Repos Server deployment, such as `your.azure-server.domain.com`.
 * `PORT` - the local port at which the Broker client accepts connections. Default is 8000.
-* `BROKER_CLIENT_URL` - the full URL of the Broker client as it will be accessible to your Azure Repos' webhooks, such as `http://broker.url.example:8000`
+* `BROKER_CLIENT_URL` - the full URL of the Broker client as it will be accessible to your Azure Repos' webhooks, such as `http://broker.url.example:8000.`This URL is required to access features such as PR Fixes or PR Checks.
 * `ACCEPT_IAC` - by default, some file types used by Infrastructure-as-Code (IaC) are not enabled. To grant the Broker access to IaC files in your repository, for example, Terraform, you can add an environment variable, `ACCEPT_IAC`, with any combination of `tf,yaml,yml,json,tpl`
 * `ACCEPT_CODE` - by default, when using the Snyk Broker - Code Agent, Snyk Code will not load code snippets. To enable code snippets you can add an environment variable, `ACCEPT_CODE=true`
 
-**Use the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files.
+**Use the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files (with the Code Agent).
 
 ```bash
 docker run --restart=always \
@@ -47,11 +47,11 @@ docker run --restart=always \
        snyk/broker:azure-repos
 ```
 
-**If necessary, go to the Advanced Configuration section** of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and **make any configuration changes** needed.
+**If necessary,** go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and **make any configuration changes** needed. For example, if the Azure Repos instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration or if you need to setup [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support).
 
-For example, if the Azure Repos instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration.
+### Custom allowlist through ACCEPT parameter
 
-A fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for Azure Repos is attached. You **cannot run** the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument.
+In addition, a fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for Azure Repos is attached in case you want to configure a custom allowlist. You cannot run the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument:
 
 {% file src="../../../.gitbook/assets/accept (1) (1) (1) (3) (2).json" %}
 
