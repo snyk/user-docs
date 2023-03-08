@@ -6,7 +6,7 @@ Integrated IaC is currently in Limited Availability with plans of General Availa
 
 ## **What is Integrated IaC?**
 
-Integrated IaC is an evolution of our [Current IaC](../) product which now utilizes the same unified policy engine and data model as [Snyk Cloud](../../snyk-cloud/).
+Integrated IaC is an evolution of our [Current IaC](../) product, and it uses the same unified policy engine and data model as [Snyk Cloud](../../snyk-cloud/).
 
 Integrated Infrastructure as Code (IaC) continues to help developers to write secure application configurations. Integrated IaC provides improved accuracy of issue detection with line numbers in the CLI and UI with detailed remediation advice, so you can make changes directly to your code, before applications reach production.
 
