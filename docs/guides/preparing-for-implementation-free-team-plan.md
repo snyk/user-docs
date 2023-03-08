@@ -33,7 +33,7 @@ See the [Ways to integrate Snyk at your company](https://training.snyk.io/course
 For Free and Team plan accounts, the hierarchy for your Snyk account includes a single Organization and Projects within that Organization. Your team members can access all Projects in your Organization.
 
 {% hint style="info" %}
-If you do not wish to keep the default Organization name, which is based on your signup name, you can rename the Organization. See [Managing groups & organizations](../snyk-admin/managing-groups-and-organizations/) for details.
+If you do not wish to keep the default Organization name, which is based on your signup name, you can rename the Organization. See [Managing groups & organizations](../user-and-group-management/managing-groups-and-organizations/) for details.
 {% endhint %}
 
 ### How you and your team log in to Snyk

@@ -1,0 +1,10 @@
+# Snyk Broker - Client integration setups
+
+The following pages explain how to set up the Snyk Broker Client integrations:
+
+* [Set up Broker with Azure Repos](setup-broker-with-azure-repos.md)
+* [Set up Broker with Bitbucket Server/Data Center](data-center.md)
+* [Set up Broker with GitHub](broker-example-set-up-snyk-broker-with-github.md)
+* [Set up Broker with GitHub Enterprise](setup-broker-with-github-enterprise.md)
+* [Set up Broker with GitLab](setup-broker-with-gitlab.md)
+* [Set up Broker with Jira](../../../integrations/snyk-broker/snyk-broker-set-up-examples/setup-broker-with-jira.md)

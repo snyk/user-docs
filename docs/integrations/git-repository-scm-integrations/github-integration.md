@@ -101,7 +101,7 @@ You can review and adjust the pull request test settings via the Snyk GitHub Int
 
 ## Required permissions scope for the GitHub integration
 
-If you are on a Snyk Enterprise plan, you can use [Snyk Broker](../../snyk-admin/snyk-broker/) as a proxy between Snyk and your Source Code Management (SCM) system on-premise platforms, including Snyk Code Support, or your publicly-accessible Git-based repositories.
+If you are on a Snyk Enterprise plan, you can use [Snyk Broker](../../user-and-group-management/snyk-broker/) as a proxy between Snyk and your Source Code Management (SCM) system on-premise platforms, including Snyk Code Support, or your publicly-accessible Git-based repositories.
 
 Snyk Broker lets you view and control Snyk activity in those repositories for increased data security.
 
