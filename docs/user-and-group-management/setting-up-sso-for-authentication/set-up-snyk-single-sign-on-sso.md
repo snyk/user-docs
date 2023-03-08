@@ -1,20 +1,22 @@
 # Set up Snyk Single Sign-On (SSO)
 
-Set up single sign-on to allow your developers and teams easy access to Snyk through your existing SSO provider.
+## Introduction
+
+Set up Single Sign-On (SSO) to allow your developers and teams easy access to Snyk through your existing SSO provider.
 
 The information you need to establish trust between Snyk and the identity provider depends on which type of SSO you are using.
 
-Ensure you have at least one Group and Organization to indicate where new users will be assigned. See [Groups, organizations, and users](../../features/user-and-group-management/setting-up-sso-for-authentication/broken-reference/).
+Ensure you have at least one Group and Organization to indicate where new users will be assigned. See [Managing groups & organizations](../managing-groups-and-organizations/).
 
 {% hint style="info" %}
-Once you have gathered the needed information identified in the following sections, create a support ticket to request SSO set up.
+After you gather the needed information identified in the following sections, create a support ticket to request SSO setup.
 
 Alternatively, Group Admins can also configure Snyk Single Sign-On. See [Self Serve Single Sign-On (SSO)](self-serve-single-sign-on-sso/) for the steps.
 {% endhint %}
 
-## Overview
+### Overview
 
-The process of establishing trust between your identity provider (IdP) and Snyk requires a few separate steps, coordinated between your SSO administrator and Snyk Support.
+The process of establishing trust between your identity provider (IdP) and Snyk requires a few separate steps coordinated between your SSO administrator and Snyk Support.
 
 * In your identity provider platform, enter details about the Snyk environment and user attributes.
 * Provide Snyk with details from your IdP.
@@ -27,7 +29,7 @@ After SSO is configured both from Snyk and your company's network, a trust relat
 
 Each type of SSO connection requires different details for establishing the trust between your identity provider and Snyk. The following sections explain those details. The details are also included in the worksheets in the Resources section at the end of this article.
 
-## Use SAML for SSO
+### Use SAML for SSO
 
 To establish trust with Snyk, add an Entity ID, an Assertion Consumer Service (ACS) URL, and a Signing certificate in your identity provider.
 
@@ -63,7 +65,7 @@ To map information from your Identity provider to Snyk, name your user attribute
 
 If your user attributes do not match, note that the Snyk configuration for your SSO will take more time.
 
-## SAML information to provide to Snyk
+### SAML information to provide to Snyk
 
 Obtain the following information from your identity provider. Provide this information to Snyk to establish trust on the service-provider side.
 
@@ -77,7 +79,7 @@ Obtain the following information from your identity provider. Provide this infor
 | IdP initiated flow supported? | Idp-initiated flows carry a security risk and are therefore not recommended. Make sure you understand the risks before enabling                                                                                                                                                                                                                                                                                                                           |
 | Email domains and subdomains  | The email domains and subdomains that need access to the SSO                                                                                                                                                                                                                                                                                                                                                                                              |
 
-## Use OpenID Connect (OIDC) for SSO
+### Use OpenID Connect (OIDC) for SSO
 
 When using OIDC for the connection between your Identity provider and Snyk, add the Callback/Redirect URIs and OAuth Grant Type in your identity provider to establish trust with Snyk.
 
@@ -88,7 +90,7 @@ When using OIDC for the connection between your Identity provider and Snyk, add 
 | Callback/Redirect URIs (Snyk AU Tenant Customers) | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback](https://snyk-mt-au-prod-1.au.auth0.com/login/callback) |
 | OAuth Grant Type                                  | Implicit (or Authorization Code)                                                                               |
 
-## OIDC information to provide to Snyk
+### OIDC information to provide to Snyk
 
 Obtain the following information from your identity provider. Provide this information to Snyk to establish trust on the service-provider side.
 
@@ -99,7 +101,7 @@ Obtain the following information from your identity provider. Provide this infor
 | Client Secret                | Only needed if the IdP does not allow the Implicit grant type                             |
 | Email domains and subdomains | The email domains and subdomains that need access to the SSO                              |
 
-## Use Azure AD as SSO (via App Registration/OIDC)
+### Use Azure AD as SSO (via App Registration/OIDC)
 
 When using Azure AD for the connection between your Identity provider and Snyk, you must add the Redirect URIs in your Identity provider to establish trust with Snyk.
 
@@ -113,7 +115,7 @@ Use your Azure AD name when authenticating rather than the SCM user account name
 | Redirect URIs (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback](https://snyk-mt-eu-prod-1.eu.auth0.com/login/callback) |
 | Redirect URIs (Snyk AU Tenant Customers) | [https://snyk-mt-au-prod-1.au.auth0.com/login/callback](https://snyk-mt-au-prod-1.au.auth0.com/login/callback) |
 
-## Azure AD information to provide to Snyk
+### Azure AD information to provide to Snyk
 
 Obtain the following information from your identity provider. Provide this information to Snyk to establish trust on the service-provider side.
 
@@ -123,7 +125,7 @@ Obtain the following information from your identity provider. Provide this infor
 | Client Secret             | The secret for your authorization that grants tokens to authorized requestors                                               |
 | Microsoft Azure AD Domain | The numbers and letters shown in the Directory (tenant) ID, which can be found from the Snyk app you created under Overview |
 
-## Use ADFS as SSO
+### Use ADFS as SSO
 
 When using Active Directory Federation Service (ADFS) for the connection between your Identity provider and Snyk, add the Realm Identifier, a Callback URL, and a Signing certificate in your Identity provider to establish trust with Snyk. For more information see [Connecting Auth0 to an ADFS server (video)](https://www.youtube.com/watch?v=ICW6sGP9ht8).
 
@@ -137,23 +139,25 @@ When using Active Directory Federation Service (ADFS) for the connection between
 | Signing cert (Snyk EU Tenant Customers) | [https://snyk-mt-eu-prod-1.eu.auth0.com/pem?cert=connection](https://snyk-mt-eu-prod-1.eu.auth0.com/pem?cert=connection) (add as a signature and not encryption) |
 | Signing cert (Snyk AU Tenant Customers) | [https://snyk-mt-eu-prod-1.au.auth0.com/pem?cert=connection](https://snyk-mt-eu-prod-1.au.auth0.com/pem?cert=connection) (add as a signature and not encryption) |
 
-## ADFS information to provide to Snyk
+### ADFS information to provide to Snyk
 
 Obtain the following information from your Identity provider. Provide this information to Snyk in order to establish trust on the service-provider side.
 
 * ADFS URL or Federation Metadata XML file
 
-## Map Enterprise users
+### Map Enterprise users
 
 For Enterprise plans, Snyk can map new users to a specific organization and role when they first sign in using SSO. This option requires additional configuration, including specific naming conventions for organizations.
 
 Work with your Snyk account team to prepare for implementing this SSO option.
 
-## Complete SSO connection
+### Complete SSO connection
 
 After you set up the connection with your Identity provider and provide the necessary details to Snyk Support, Snyk sends you a link to generate a payload.
 
+{% hint style="info" %}
 Ignore any error message you see after clicking this link the first time, as Snyk uses the generated payload to complete the configuration.
+{% endhint %}
 
 When Snyk finishes the configuration, the support agent asks you to navigate to the log in page in incognito mode to prevent cookies from interfering with the log in process.
 
@@ -166,14 +170,14 @@ To complete your log in:
 3. Log in with your identity provider as you would for other applications.
 4. Let Snyk Support know which user to promote as the Group administrator.
 
-## Resources
+### Resources
 
 These worksheets include the information to enter in your Identity provider and the information you need to collect before submitting a ticket to Snyk Support to request single sign-on.
 
-{% file src="../../.gitbook/assets/SSO Azure Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
+{% file src="../../.gitbook/assets/SSO Azure Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
 
-{% file src="../../.gitbook/assets/SSO SAML Worksheet (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
+{% file src="../../.gitbook/assets/SSO SAML Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
 
-{% file src="../../.gitbook/assets/SSO ADFS Worksheet (2).pdf" %}
+{% file src="../../.gitbook/assets/SSO ADFS Worksheet (1).pdf" %}
 
-{% file src="../../.gitbook/assets/SSO OIDC Worksheet (1) (1) (1) (1) (1) (1) (1).pdf" %}
+{% file src="../../.gitbook/assets/SSO OIDC Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
