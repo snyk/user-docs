@@ -1,6 +1,8 @@
 # Self Serve Single Sign-On (SSO)
 
-Group Admins of an Enterprise plan who use SAML for SSO can configure Snyk Single Sign-on by themselves. Ensure you have at least one Group and Organization to indicate where new users will be assigned. See [Groups, Organizations, and Users](../../../features/user-and-group-management/setting-up-sso-for-authentication/self-serve-single-sign-on-sso/broken-reference/).
+## Introduction
+
+Group Admins of an Enterprise plan who use SAML for SSO can configure Snyk Single Sign-on by themselves. Ensure you have at least one Group and Organization to indicate where new users will be assigned. See [Managing groups & organizations](../../managing-groups-and-organizations/).
 
 {% hint style="warning" %}
 To enable the self serve SSO option, contact your Snyk account team or [Snyk support](https://support.snyk.io/hc/en-us). \
@@ -12,7 +14,7 @@ The following video demonstrates the process and steps for setting up single sig
 
 {% embed url="https://thoughtindustries-1.wistia.com/medias/dyg9opxlv8" %}
 
-## Use SAML for SSO: process overview
+### Use SAML for SSO: process overview
 
 The process of establishing trust between your identity provider (IdP) and Snyk requires that the Group Admin do the following:
 
@@ -27,6 +29,6 @@ After SSO is configured both from Snyk and your company's network, a trust relat
 Although not all the examples following this page cover verifying the Snyk signature, it is recommended that you improve the trust relationship and ensure integrity even further. Follow your respective IdP's documentation to add SP signature verification where possible.
 {% endhint %}
 
-## **User login**
+### **User login**
 
 Users are provisioned to Snyk when they log in (see [Choose a provisioning option](../choose-a-provisioning-option.md)). If the new user role selected is Group Member, the new user sees only a list of your Organizations until the admin adds them to the appropriate Organizations.
