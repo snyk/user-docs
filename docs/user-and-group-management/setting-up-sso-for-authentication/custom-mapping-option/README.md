@@ -1,26 +1,34 @@
 # Custom Mapping Option
 
-This option allows you to dynamically assign users to your Snyk Group(s) and Organizations based on data provided by your Identity Provider (IdP) to implement a scaled user provisioning and access model. To understand more about roles and permissions within Snyk, refer to [Managing permissions](../../managing-users-and-permissions/managing-permissions.md). Work with your Snyk account team to implement this option.
+## Introduction
+
+Custom mappings allows you to dynamically assign users to your Snyk Groups and Organizations based on data provided by your Identity Provider (IdP) to implement a scaled user provisioning and access model.&#x20;
+
+{% hint style="info" %}
+&#x20;Work with your Snyk account team to implement this option.
+{% endhint %}
+
+To understand more about roles and permissions within Snyk, see [Managing permissions](../../managing-users-and-permissions/managing-permissions.md).&#x20;
 
 See also [Member Roles](../../managing-users-and-permissions/member-roles.md) and [Roles in Custom SSO](../../managing-users-and-permissions/member-roles.md#roles-in-custom-sso).
 
-## Requirements
+### Requirements
 
-* Completion of the SSO information worksheet for appropriate IdP (identity provider) found in the Resources section of [Set up Snyk Single Sign-On (SSO)](../set-up-snyk-single-sign-on-sso.md)
-* A proper configuration of the custom attributes within your IdP to populate the `roles` array mapping ([Example roles array mapping](./#example-roles-array-mapping))
+* Complete the SSO information worksheet for appropriate IdP (identity provider) found in the Resources section of [Set up Snyk Single Sign-On (SSO)](../set-up-snyk-single-sign-on-sso.md)
+* Properly configure the custom attributes in your IdP to populate the `roles` array mapping ([Example roles array mapping](./#example-roles-array-mapping))
 
-## Understanding roles array mapping
+### Understanding roles array mapping
 
-Within the IdP, you must first pass a custom mapping called `roles` as a string array. Refer to [Example: Setting up custom mapping for Okta](example-setting-up-custom-mapping-for-okta.md). Refer to your IdP documentation on how to configure custom mappings for additional IdP providers.
+In the IdP, you must first pass a custom mapping called `roles` as a string array. Refer to [Example: Setting up custom mapping for Okta](example-setting-up-custom-mapping-for-okta.md). Refer to your IdP documentation on how to configure custom mappings for additional IdP providers.
 
-### How Snyk handles roles array mapping
+#### How Snyk handles roles array mapping
 
 To configure this option, send the `roles` array within the SAML attributes or OIDC claims to adhere to one of the following patterns:
 
 **Prefix** is present on every role mapping. It is an identifier that allows Snyk to identify which `roles` array values to process.
 
 {% hint style="warning" %}
-Prefix must always be **snyk** and fully in lowercase.
+The prefix must always be **snyk** and fully in lowercase.
 {% endhint %}
 
 1\. {prefix}-groupadmin
@@ -60,7 +68,7 @@ To assign users with Group Admin role use the following format:
 }
 ```
 
-To assign users with Group Viewer role use the following format:
+To assign users with Group Viewer roles, use the following format:
 
 ```
 {
@@ -70,7 +78,7 @@ To assign users with Group Viewer role use the following format:
 }
 ```
 
-To assign users with Org Collaborator roles use the following format:
+To assign users with Org Collaborator roles, use the following format:
 
 ```
 {
@@ -104,7 +112,7 @@ To assign users a custom role use the following format for the roles array. You 
 ```
 
 {% hint style="warning" %}
-System also supports comma separated list for roles instead of an array.
+The system also supports comma-separated lists of roles instead of an array.
 
 ```
 {
