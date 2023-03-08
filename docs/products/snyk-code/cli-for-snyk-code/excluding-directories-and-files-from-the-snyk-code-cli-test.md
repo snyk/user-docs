@@ -1,19 +1,14 @@
 # Excluding directories and files from the Snyk Code CLI test
 
+When you test a repository via the CLI, you can exclude certain directories and files from the Snyk Code test by using the `snyk ignore --file-path` command. When running this command, the `.snyk` file is created automatically in your repository, containing the directory's name or file you specified for exclusion.
+
 {% hint style="info" %}
-This Exclusion command is applicable to Snyk Code only.
-{% endhint %}
-
-When you test a repository via the CLI, you can exclude certain directories and files from the Snyk Code test by using the `snyk ignore --file-path` command. When running this command, the `.snyk` file is created automatically in your repository, containing the name of the directory or file you specified for exclusion.
-
-**Notes**:
-
 * You can also manually create the `.snyk` file in your repository, and use it to exclude directories and files from the CLI test. For more information about the manual creation of the `.snyk` file, see [Excluding directories and files from the import process.](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/excluding-directories-and-files-from-the-import-process)
 * The `snyk ignore --file-path` command does NOT ignore specific vulnerability issues. It ONLY excludes directories and files from the Snyk Code test.
+* Consider excluding directories and files only if you do not publish or compile them into production. If a trace goes through an excluded file or directory with existing vulnerabilities, Snyk might miss potential issues.
+{% endhint %}
 
-***
-
-**To exclude directories and files from the Snyk Code test:**
+## **To exclude directories and files from the Snyk Code test:**
 
 1\. In the terminal, change the directory to the folder you want to test.
 
@@ -41,9 +36,9 @@ snyk ignore --file-path=<directory1_or_file1> && snyk ignore --file-path=<direct
 
 From now on, when you will run the `snyk code test` command from the selected folder, the specified directories or files will be excluded from the test.
 
-**Note**: To re-include in the test directories/files that were excluded from it, manually edit or delete the `.snyk` file.
+## Re-include excluded files in test dir\\
 
-For example:
+To re-include in the test directories/files that were excluded from it, manually edit or delete the `.snyk` file.
 
 1\. In the **snyk-goof-master** folder, 12 issues were found in 3 different files: **app.js**, **db.js**, and **routes/index.js**:
 
