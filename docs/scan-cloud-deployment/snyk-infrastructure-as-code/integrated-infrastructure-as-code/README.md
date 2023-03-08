@@ -10,7 +10,7 @@ Integrated IaC is an evolution of our [Current IaC](../) product which now utili
 
 Integrated Infrastructure as Code (IaC) continues to help developers to write secure application configurations. Integrated IaC provides improved accuracy of issue detection with line numbers in the CLI and UI with detailed remediation advice, so you can make changes directly to your code, before applications reach production.
 
-Integrated IaC helps developers write secure configurations for HashiCorp Terraform (variables and module support), AWS CloudFormation, Kubernetes, and Azure Resource Manager (ARM).
+Integrated IaC helps developers write secure configurations for HashiCorp Terraform (variables and module support) and AWS CloudFormation, with support for Kubernetes and Azure Resource Manager (ARM) coming soon.
 
 ## Unified Policy Engine/Ruleset
 

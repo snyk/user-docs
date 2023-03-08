@@ -13,8 +13,8 @@ To access the latest Integrated IaC functionalities, you should use Snyk CLI v1.
 | **Terraform (plan)**        | Yes                     | Yes                        |
 | **CloudFormation**          | Yes                     | Yes                        |
 | **AWS CDK**                 | Yes                     | Yes                        |
-| **Kubernetes**              | Yes                     | Yes                        |
-| **ARM**                     | Yes                     | Yes                        |
+| **Kubernetes**              | Yes                     | Coming soon                |
+| **ARM**                     | Yes                     | Coming soon                |
 
 {% hint style="warning" %}
 Although Integrated IaC provides better support for Terraform than Current IaC, line number information is not provided in the scan results.

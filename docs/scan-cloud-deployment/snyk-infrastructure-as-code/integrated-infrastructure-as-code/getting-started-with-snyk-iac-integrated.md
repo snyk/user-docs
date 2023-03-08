@@ -1,13 +1,13 @@
 # Getting started with Snyk IaC (Integrated)
 
-Use [Snyk Integrated Infrastructure as Code](./) to inspect, find, and fix issues in configuration files for Terraform, Cloudformation, ARM, and Kubernetes.
+Use [Snyk Integrated Infrastructure as Code](./) to inspect, find, and fix issues in configuration files for Terraform and AWS CloudFormation, with support for Azure Resource Manager (ARM) and Kubernetes coming soon.
 
 ## Prerequisites
 
 To start using Integrated IaC, you need the following:
 
 * A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [Create a Snyk account](https://docs.snyk.io/getting-started/getting-started-snyk-products) for details).
-* An existing Kubernetes or Terraform environment to work in.
+* An existing Terraform or CloudFormation environment to work in.
 * To use the Integrated IaC with the CLI, you must first [install](../../../snyk-cli/install-the-snyk-cli.md) version v1.1022.0 or later and then [authenticate](../../../snyk-cli/commands/auth.md).
 
 ## Stage 1: Test IaC files
