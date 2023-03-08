@@ -48,7 +48,7 @@ By default, Snyk emails every Org user when a new issue or fix in a Project’s 
 
 To customize the emails your Org users receive, go to **Settings** <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> > **Notifications > Notification Setting**. The changes you make here will affect all of your Organization’s members, although Org users can override these default settings in their user-level account settings.
 
-To disable notifications for all the users in an Org ahead of your import, deselect the appropriate notification boxes. See [Notification management](../../user-and-group-management/notifications.md) for more details.
+To disable notifications for all the users in an Org ahead of your import, deselect the appropriate notification boxes. See [Notification management](../../snyk-admin/notifications.md) for more details.
 
 ## Stage 2: Import Projects
 

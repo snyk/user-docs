@@ -9,7 +9,7 @@ This feature is available with Enterprise plans. See [pricing plans](https://sny
 
 You can set up a **service account**, to be used for continuous integration (CI) and other automation purposes without using a Snyk user’s token.
 
-Service accounts are a special type of system user that has only an API token associated with it, substituting for standard user credentials. Use this token to provide credentials for accessing your Snyk account when setting up integration with your development tools and when working with the Snyk [CLI](../../snyk-cli/) and [API](../../snyk-api-info/).
+Service accounts are a special type of system user that has only an API token associated with it, substituting for standard user credentials. Use this token to provide credentials for accessing your Snyk account when setting up integration with your development tools and when working with the Snyk [CLI](../../snyk-cli/) and [API](../../snyk-api/).
 
 You can generate single or multiple tokens on the Organization or Group levels to manage your integrations. Use **Group-level tokens** to access group API endpoints, organization API endpoints, and the CLI **for all organizations in the Group**.
 
@@ -68,7 +68,7 @@ From the **Role** dropdown list, select an appropriate role.\\
 
 For **Group service accounts**, choose from the following list of roles to configure the scope of the token; Snyk recommends selecting Viewer or Admin.
 
-* Group Viewer enables read-only access. Note that to set an API token to be read-only and unable to write to the platform, you must use a service account and set it to Group Viewer. See [Snyk API token permissions users can control](../../snyk-api-info/using-snyk-api/api-token-permissions-users-can-control.md).
+* Group Viewer enables read-only access. Note that to set an API token to be read-only and unable to write to the platform, you must use a service account and set it to Group Viewer. See [Snyk API token permissions users can control](../../snyk-api/using-snyk-api/api-token-permissions-users-can-control.md).
 * Group Admin enables full administrator access.
 * Group Member associates a service account to a group but does not grant any specific access.
 

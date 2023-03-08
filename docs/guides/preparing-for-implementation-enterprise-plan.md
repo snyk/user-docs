@@ -140,7 +140,7 @@ See the[ Source Code Manager Configurations](https://training.snyk.io/courses/so
 
 Also see [Snyk Integrations](https://docs.snyk.io/integrations) for more details.
 
-If you are using an on-premise source control manager, you must also configure and deploy the [Snyk Broker](../user-and-group-management/snyk-broker/).&#x20;
+If you are using an on-premise source control manager, you must also configure and deploy the [Snyk Broker](../snyk-admin/snyk-broker/).&#x20;
 
 #### Set up Jira integration
 
@@ -216,7 +216,7 @@ After you configure your first Organization, you can use it as a template for cr
 
 To create a new Organization, open the Organization switcher in the navigation panel and select **Create new Organization**.
 
-Provide the name for the new Organization. See [Manage Snyk organizations](../user-and-group-management/structure-account-for-high-application-performance/manage-snyk-organizations.md) for more details.
+Provide the name for the new Organization. See [Manage Snyk organizations](../snyk-admin/structure-account-for-high-application-performance/manage-snyk-organizations.md) for more details.
 
 #### Using an existing Organization as a template
 

@@ -2,7 +2,7 @@
 
 Snyk supports testing projects that have their dependencies managed by Bazel.
 
-Support is available through the [Snyk API](../../../snyk-api-info/).
+Support is available through the [Snyk API](../../../snyk-api/).
 
 ## Features of Snyk for Bazel
 
@@ -36,7 +36,7 @@ The recommended approach is to test your dependencies using the [Snyk Dep Graph]
 ## How Snyk for Bazel works
 
 1. For each type of dependency (for example, Maven, Cocoapods), create a [Dep Graph JSON object](https://github.com/snyk/dep-graph) listing all the dependency packages and versions (see the following).
-2.  As part of a Bazel test rule, send this object as a POST request to the [Dep Graph Test API](https://snyk.docs.apiary.io/#reference/test/dep-graph), (along with your [auth token](../../../snyk-api-info/authentication-for-api.md)). An example curl request follows:
+2.  As part of a Bazel test rule, send this object as a POST request to the [Dep Graph Test API](https://snyk.docs.apiary.io/#reference/test/dep-graph), (along with your [auth token](../../../snyk-api/authentication-for-api.md)). An example curl request follows:
 
     ```
     curl -X POST 'https://snyk.io/api/v1/test/dep-graph' \

@@ -11,7 +11,7 @@ You can use the Snyk Web UI to run a full set of Snyk functions from your browse
 <figure><img src="../.gitbook/assets/Dashboard-intro.png" alt="Introducing the Snyk Web UI"><figcaption><p>Introducing the Snyk Web UI</p></figcaption></figure>
 
 {% hint style="info" %}
-You can also access Snyk functions from the [Snyk CLI](../snyk-cli/), from [within your IDE](../integrations/ide-tools/), and using the [Snyk API](../snyk-api-info/).&#x20;
+You can also access Snyk functions from the [Snyk CLI](../snyk-cli/), from [within your IDE](../integrations/ide-tools/), and using the [Snyk API](../snyk-api/).&#x20;
 {% endhint %}
 
 You can connect your code repositories, then use Snyk to scan and secure your application code, open-source libraries, container registries, and configuration files.
@@ -94,10 +94,10 @@ Select **Integrations** from the navigation on the dashboard to open the [Integr
 
 ### Manage Organization or Group members
 
-Select **Members** from the navigation on the dashboard to view and manage users, roles, and how users authenticate in your Snyk [Organization](../user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations.md) or [Group](../user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations-1.md).
+Select **Members** from the navigation on the dashboard to view and manage users, roles, and how users authenticate in your Snyk [Organization](../snyk-admin/managing-users-and-permissions/manage-users-in-your-organizations.md) or [Group](../snyk-admin/managing-users-and-permissions/manage-users-in-your-organizations-1.md).
 
 {% hint style="info" %}
-You must be assigned the [required Admin roles and permissions](../user-and-group-management/managing-users-and-permissions/managing-permissions.md) to make changes in the **Members** tab.
+You must be assigned the [required Admin roles and permissions](../snyk-admin/managing-users-and-permissions/managing-permissions.md) to make changes in the **Members** tab.
 {% endhint %}
 
 ### Snyk Organization or Group Settings
@@ -106,7 +106,7 @@ Use the **Settings** option to view and manage your Organization (team) or Group
 
 <figure><img src="../.gitbook/assets/Manage-settings-intro.png" alt="Group and Organization settings"><figcaption><p>Group and Organization settings</p></figcaption></figure>
 
-See [Managing settings](../user-and-group-management/managing-settings/) for more details.
+See [Managing settings](../snyk-admin/managing-settings/) for more details.
 
 ### View product updates
 

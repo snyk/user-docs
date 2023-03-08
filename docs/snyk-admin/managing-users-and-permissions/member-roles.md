@@ -32,7 +32,7 @@ Click the **Create role** button. You will see basic details about the role in t
 
 The bottom section lists all the permissions available at the organization level that you use to define the role.
 
-![Organization level permissions](<../../.gitbook/assets/Screenshot 2022-05-17 at 05.56.02.png>)
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 17.07.18.png" alt=""><figcaption><p>Organization level permissions</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-08-30 at 17.03.22.png" alt=""><figcaption><p>Organization level permissions</p></figcaption></figure>
 
@@ -64,11 +64,11 @@ You can use the Duplicate button next to each role in the Member Roles list page
 
 ![Member Roles List page with Duplicate Role buttons](<../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.09.png>)
 
-![Role details page with Duplicate button](<../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.40.png>)
+![Role details page with Duplicate button](<../../.gitbook/assets/Screenshot 2022-05-23 at 09.38.40 (1).png>)
 
 Enter a unique name and description and click the **Duplicate Role** button. Group Admin can then edit this role to assign new permissions to it or rescind any permissions already assigned.
 
-![](<../../.gitbook/assets/image (394) (1) (1).png>)
+![](<../../.gitbook/assets/image (394) (1) (1) (1) (1) (1).png>)
 
 ### Delete a Role
 
@@ -92,13 +92,13 @@ In the UI, select an **Org** > **Members**.
 
 For any member (Name) except a Group Admin, the user can select the dropdown next to the current role and choose any role to assign that role to the member.
 
-![](<../../.gitbook/assets/image (104) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (104) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 Click the **Add members** button > **Invite new members**.\
 \
 You can invite new members to the org by assigning them a specified role.
 
-![](<../../.gitbook/assets/image (178) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (178) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 Choose **Add members** button > **Add existing members** to promote current Group Members to an org-specific role.
 
@@ -106,7 +106,7 @@ Choose **Add members** button > **Add existing members** to promote current Grou
 Snyk prevents users from assigning roles to others that have more privileges than what they already have. You would encounter the following error while trying to update the role of a member, invite a new member, or add an existing member with a role that has more privileges than the logged in user.
 {% endhint %}
 
-![User cannot assign more privileged role to another user](<../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05.png>)
+![User cannot assign more privileged role to another user](<../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05 (1).png>)
 
 ### Assigning roles to Service Accounts
 
@@ -170,6 +170,7 @@ Permissions:
 * `View Organization Reports`
 * `View Preview Features`
 * `View Project`
+* `View Project History`
 * `View Project Ignores`
 * `View Targets`
 * `View Users`
@@ -183,6 +184,7 @@ Permissions:
 * `View Organization`
 * `View Organization Reports`
 * `View Project`
+* `View Project History`
 
 For additional operations on the Dashboard add:
 
@@ -209,6 +211,7 @@ Permissions:
 
 * `View Organization`
 * `View Project`
+* `View Project History`
 * `Test Packages`
 * `Add Project`
 * `Test Project`
@@ -218,6 +221,6 @@ Permissions:
 
 * Permissions granted to users via Roles enable the same capabilities across all Snyk environments: Web UI, API, CLI, and IDE.
 * `View Organization` permission is needed by default for all organization level member roles.
-* If the Role is expected to view project-related data of an organization along with other operations - `View Organization , View Project` `and View Targets` permissions should be added to the role at a minimum.
+* If the Role is expected to view project-related data of an organization along with other operations - `View Organization , View Project, and View Project History` permissions should be added to the role at a minimum.
 * Snyk prevents role privileges from escalating so that users cannot assign a higher privileged role to others or cannot create service accounts with a higher privileged role.
 * It is advisable to use the Duplicate Role functionality and create a copy of a standard role and then amend the permissions instead of building a role from scratch if you are unsure about the permissions.
