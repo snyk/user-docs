@@ -1,6 +1,6 @@
 # Set up Snyk Broker with GitHub
 
-Follow the instructions on this page to set up Snyk Broker to be used for GitHub.
+Follow the instructions on this page to set up GitHub with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise or cloud GitHub deployment.
 
 ## Configure Broker integration with GitHub
 
@@ -37,17 +37,21 @@ docker run --restart=always \
        snyk/broker:github-com
 ```
 
-**If necessary,** go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and **make any configuration changes** needed. For example, if the GitHub instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration or if you need to setup [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support).
+### Advanced configuration of Snyk Broker Client
+
+If necessary, go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and make any configuration changes needed such as providing the CA (Certificate Authority) to the Broker Client configuration if the GitHub instance is using a private certificate, and setting up [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support).
 
 ### Custom allowlist through ACCEPT parameter
 
-In addition, a fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for GitHub is attached in case you want to configure a custom allowlist. You cannot run the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument:
+A fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for GitHub is attached to use if you want to configure a custom allowlist. You cannot run the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument:
 
 {% file src="../../../.gitbook/assets/accept (1) (1) (1) (1) (1).json" %}
 
-**Paste the Broker Client configuration** to start the Broker Client container.
+### Start the Broker Client container
 
-Once the container is up, the GitHub Integrations page shows the connection to GitHub and can `Add Projects`.
+Paste the Broker Client configuration to start the Broker Client container.
+
+Once the container is up, the GitHub Integrations page shows the connection to GitHub and you can `Add Projects`.
 
 ## Basic troubleshooting for Broker with GitHub
 

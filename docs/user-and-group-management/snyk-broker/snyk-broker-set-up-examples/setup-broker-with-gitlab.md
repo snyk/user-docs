@@ -1,8 +1,6 @@
 # Set up Snyk Broker with GitLab
 
-Configuring GitLab with broker is useful to ensure a secure connection with your on-premise or cloud GitLab deployment.
-
-Follow the instructions on this page to set up  GitLabs with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise or cloud Azure Repos deployment.
+Follow the instructions on this page to set up  GitLabs with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise or cloud GitLab deployment.
 
 ## Configure Broker to be used for GitLab
 
