@@ -1,6 +1,10 @@
 # Example: Azure AD Enterprise Application
 
-An example follows of setting up an Azure AD Enterprise Application and connecting this to Snyk to facilitate SSO. To configure your Azure Enterprise Application to use SSO with Snyk you first need an entity ID and a reply url (Assertion Consumer Service URL) from Snyk.
+## Introduction
+
+This example shows setting up an Azure AD Enterprise Application and connecting this to Snyk to facilitate SSO. To configure your Azure Enterprise Application to use SSO with Snyk, you first need an entity ID and a reply URL (Assertion Consumer Service URL) from Snyk.
+
+### Process
 
 1.  From the drop down at the top left select **GROUP OVERVIEW** and then the cog wheel (top right corner) to get to your group settings.
 
@@ -43,7 +47,7 @@ An example follows of setting up an Azure AD Enterprise Application and connecti
 13. Open the downloaded certificate in your preferred text editor, copy the text and paste it into the Snyk **X509 signing certificate** field, and add the relevant domains that are supported by this SSO connection. Finally, click **Create Auth0 connection** if you are creating a completely new connection or **Save changes** if you are editing an existing connection.
 
     <figure><img src="../../../.gitbook/assets/14.png" alt="Enter certificate and domains supported, set connection"><figcaption><p>Enter certificate and domains supported, set connection</p></figcaption></figure>
-14. Refer to [step 3](https://docs.snyk.io/user-and-group-management/setting-up-sso-for-authentication/choose-a-provisioning-option) of the Snyk self serve SSO guide for how new users should be treated when signing in and choose the option you would like to use: **Group member**, **Org collaborator**, or **Org admin**. Finally, modify the **profile attributes** if your settings in Azure deviate from the default; then click **Save changes** and verify you can log in, either with the direct URL at the top of step 3 or by going to the [generic SSO login](https://app.snyk.io/login/sso).\
+14. Decide how new users should be treated when signing in and choose the option you would like to use: **Group member**, **Org collaborator**, or **Org admin**. Finally, modify the **profile attributes** if your settings in Azure deviate from the default; then click **Save changes** and verify you can log in, either with the direct URL at the top of step 3 or by going to the [generic SSO login](https://app.snyk.io/login/sso).\
     \
     If you are not receiving profile values as expected, you may need to add email, name, and username as **additional claims** within **Azure SSO settings** and then map those accordingly in the Snyk SSO **Profile attributes** section.
 

@@ -1,10 +1,16 @@
 # Example: Google Workspace
 
-An example follows of setting up an Google Workspace SAML application and connecting it to Snyk to facilitate SSO.
+## Introduction
+
+This example shows setting up an Google Workspace SAML application and connecting it to Snyk to facilitate SSO.
+
+### Process
+
+{% hint style="info" %}
+For details in addition to the information provided on this page, see the [Google documentation](https://support.google.com/a/answer/6087519).
+{% endhint %}
 
 Start by logging into the Google Workspace [admin area](https://admin.google.com).
-
-For details in addition to the information provided on this page, see the [Google documentation](https://support.google.com/a/answer/6087519).
 
 1.  Go to **Apps** and then click **Web and mobile apps**.
 
@@ -32,13 +38,13 @@ For details in addition to the information provided on this page, see the [Googl
 8.  Go back to the Google admin portal , click **Continue,** and paste those two values into their respective fields. Then tick **Signed response**.
 
     <figure><img src="../../../.gitbook/assets/8.png" alt="Enter details from Snyk in Google"><figcaption><p>Enter details from Snyk in Google</p></figcaption></figure>
-9.  Click **Continue**, \*\*\*\* add an app attribute named **email** tied to the **Primary Email**, and save the configuration.
+9.  Click **Continue**, add an app attribute named **email** tied to the **Primary Email**, and save the configuration.
 
     <figure><img src="../../../.gitbook/assets/9 (3).png" alt="Add email attribute"><figcaption><p>Add email attribute</p></figcaption></figure>
-10. Enable access to your app for your users by clicking **User Access**, tick **On for everyone**, \*\*\*\* and **Save**. Modify organizational access as needed.
+10. Enable access to your app for your users by clicking **User Access**, tick **On for everyone**, and **Save**. Modify organizational access as needed.
 
     <figure><img src="../../../.gitbook/assets/10 (1).png" alt="Enable SSO app for the organization"><figcaption><p>Enable SSO app for the organization</p></figcaption></figure>
-11. Finalize the setup by going back to the Snyk portal; scroll to the very last step and refer to [step 3](https://docs.snyk.io/features/user-and-group-management/setting-up-sso-for-authentication/self-serve-single-sign-on-sso#step-3.-snyk-sso-settings) of the Snyk self serve SSO guide for how new users should be processed when signing in. Choose the option you would like to use: **Group member**, **Org collaborator**, or **Org admin**.
+11. Finalize the setup by going back to the Snyk portal and decide how new users should be processed when signing in. Choose the option you would like to use: **Group member**, **Org collaborator**, or **Org admin**.
 12. Then add the previously created **email** app attribute to both **Email** and **Username** and save the configuration. If you wish to populate the full name you may configure a custom attribute in Google Workspace.
 
     <figure><img src="../../../.gitbook/assets/11.png" alt="Tie together attributes from Google to Snyk"><figcaption><p>Tie together attributes from Google to Snyk</p></figcaption></figure>
