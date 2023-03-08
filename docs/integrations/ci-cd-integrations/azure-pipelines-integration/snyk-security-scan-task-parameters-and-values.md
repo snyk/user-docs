@@ -1,18 +1,117 @@
 # Snyk Security Scan task parameters and values
 
-The following describes the Snyk task parameters for Azure Pipelines integration, their parallel configuration fields from the configuration panel in Azure Pipelines, and their valid values.
+The following describes the Snyk task configuration fields from the configuration panel in Azure Pipelines, the associated parameters for Azure Pipelines integration, and the valid values.
 
-| <p><strong>Configuration field</strong><br>(Parameter)</p>                                               | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | **Required** | **Default**   | **Type**                                                                          |
-| -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ------------- | --------------------------------------------------------------------------------- |
-| <p><strong>Snyk API token</strong><br><strong>service</strong><br>(serviceConnectionEndpoint)<br></p>    | <p>The Azure DevOps service connection endpoint where your Snyk API token is defined. Your admin defines this within your Azure DevOps project settings, assigning it with a unique string in order to differentiate between different connections.</p><p>The configuration panel displays all available Snyk service connections from a dropdown list like the following: <img src="../../../.gitbook/assets/uuid-9c6a12b4-2c03-2248-ad0e-c7437a35e142-en.png" alt="image3.png"></p><p>If multiple Snyk service connections are available from the dropdown list, ask your administrator which to use for the pipeline you’re working with.</p> | Yes          | none          | String / Azure Service Connection Endpoint of type SnykAuth / Snyk Authentication |
-| <p><strong>What do you want to test</strong> (testType)<br></p>                                          | Determines which dynamic fields to display as described in the rest of this table.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Yes          | "application" | string: "app" or "container"                                                      |
-| **Container Image Name** (dockerImageName)                                                               | <p>The name of the container image to test.</p><p>This dynamic field appears when <strong>What do you want to test</strong> is set to <strong>Container Imager</strong></p><p>Set to <strong>Yes</strong> if container image test.</p>                                                                                                                                                                                                                                                                                                                                                                                                           | Yes          | none          | string                                                                            |
-| **Path to Dockerfile** (dockerfilePath)                                                                  | <p>The path to the Dockerfile corresponding to the <code>dockerImageName</code></p><p>This dynamic field appears when <strong>What do you want to test</strong> is set to <strong>Container Imager</strong><br></p><p>Set to <strong>Yes</strong> if container image test.</p>                                                                                                                                                                                                                                                                                                                                                                   | Yes          | none          | string                                                                            |
-| **Custom path to manifest file to test** (targetFile)                                                    | <p>Applicable to application type tests only. The path to the manifest file to be used by Snyk. Should only be provided if non-standard.</p><p>This dynamic field appears when <strong>What do you want to test</strong> is set to <strong>Application</strong></p>                                                                                                                                                                                                                                                                                                                                                                              | No           | none          | string                                                                            |
-| **Testing severity threshold** (severityThreshold)                                                       | <p>The severity-threshold to use when testing. By default, issues of all severity types are found.</p><p><strong>Note</strong>: if not configured, the default severity is set to <strong>Low</strong>.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                      | No           | "Low"         | string: "low" or "medium" or "high"                                               |
-| **When to run Snyk Monitor** (monitorWhen)                                                               | When to run **snyk monitor** to capture the dependency tree of the application or container image and monitor it within Snyk.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Yes          | "always"      | string: "always", "onIssuesFound", or "never"                                     |
-| **Fail build if Snyk finds issues** (failOnIssues)                                                       | This specifies if pipeline jobs should be failed or continued based on issues found by Snyk.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Yes          | true          | boolean                                                                           |
-| **Project name in Snyk** (projectName)                                                                   | A custom name for the Snyk project to be created on snyk.io                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | No           | none          | string                                                                            |
-| **Organization name (or ID) in Snyk** (organization)                                                     | Name of the Snyk organization under which this project should be tested and monitored                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | No           | none          | string                                                                            |
-| **Test (Working) Directory** (testDirectory)                                                             | Alternate working directory. For example, if you want to test a manifest file in a directory other than the root of your repo, you would put in a relative path to that directory.                                                                                                                                                                                                                                                                                                                                                                                                                                                               | No           | none          | string                                                                            |
-| <p><strong>Additional command-line args for Snyk CLI (advanced)</strong></p><p>(additionalArguments)</p> | <p>Additional Snyk CLI arguments to be passed in. See <a href="https://docs.snyk.io/snyk-cli/guides-for-our-cli/cli-reference">CLI reference</a> for details.</p><p><strong>Tip</strong>: add <strong>--all-projects</strong> as good practice (for example, for .NET), if no project has been found.</p>                                                                                                                                                                                                                                                                                                                                        | No           | none          | string                                                                            |
+## **Field: Snyk API token service**
+
+**Parameter:** serviceConnectionEndpoint\
+**Required:** Yes\
+**Default:** none\
+**Type:** String / Azure Service Connection Endpoint of type SnykAuth / Snyk Authentication
+
+**Description:**  The Azure DevOps service connection endpoint where your Snyk API token is defined. Your admin defines this within your Azure DevOps project settings, assigning it with a unique string in order to differentiate between different connections.
+
+The configuration panel displays all available Snyk service connections from a dropdown list like the following:&#x20;
+
+![Snyk service connections](<../../../.gitbook/assets/image (5).png>)
+
+If multiple Snyk service connections are available from the dropdown list, ask your administrator which to use for the pipeline you are working with.
+
+## **Field: What do you want to test**
+
+**Parameter:** testType\
+**Required:** Yes\
+**Default:** "application"\
+**Type:** string: "app" or "container"
+
+**Description:** Determines which dynamic fields to display as described on the rest of this page.
+
+## **Field:** Container Image Name
+
+**Parameter:**  dockerImageName\
+**Required:** Yes\
+**Default:** none\
+**Type:** String
+
+**Description:** The name of the container image to test. This dynamic field appears when **What do you want to test** is set to **Container Image**. Set to **Yes** if container image test.
+
+## **Field:** Path to Dockerfile&#x20;
+
+**Parameter:** dockerfilePath\
+**Required:** Yes\
+**Default:** none\
+**Type:** string
+
+**Description:** The path to the Dockerfile corresponding to the `dockerImageName`. This dynamic field appears when **What do you want to test** is set to **Container Image**. Set to **Yes** if container image test.
+
+## **Field:** Custom path to manifest file to test&#x20;
+
+**Parameter:** target file\
+**Required:** No\
+**Default:** none\
+**Type:** string
+
+**Description:** Applicable to application-type tests only. The path to the manifest file to be used by Snyk. Should be provided only if non-standard. This dynamic field appears when **What do you want to test** is set to **Application**.
+
+## **Field: Testing severity threshold**&#x20;
+
+**Parameter:** severityThreshold\
+**Required:** No\
+**Default:** "low"\
+**Type:** string: "low" or "medium" or "high"
+
+**Description:** The severity threshold to use when testing. By default, issues of all severity types are found. If not configured, the default severity is set to **low**.
+
+## **Field: When to run Snyk Monitor**&#x20;
+
+**Parameter:** monitorWhen\
+**Required:** Yes\
+**Default:** "always"\
+**Type:** string: string: "always", "onIssuesFound", or "never"
+
+**Description:** When to run **snyk monitor** to capture the dependency tree of the application or container image and monitor it within Snyk.
+
+## **Field:** Fail build if Snyk finds issues&#x20;
+
+**Parameter:** failOnIssues\
+**Required:** Yes\
+**Default:** true\
+**Type:** Boolean
+
+**Description:** Specifies whether pipeline jobs should be failed or continued based on issues found by Snyk.
+
+## **Field:** Project name in Snyk&#x20;
+
+**Parameter:** projectName\
+**Required:** No\
+**Default:** none\
+**Type:** string
+
+**Description:** A custom name for the Snyk project to be created on snyk.io.
+
+## **Field:** Organization name (or ID) in Snyk&#x20;
+
+**Parameter:** organization\
+**Required:** No\
+**Default:** none\
+**Type:** string
+
+**Description:** Name of the Snyk organization under which this project should be tested and monitored.
+
+## **Field:** Test (Working) Directory&#x20;
+
+**Parameter:** testDirectory\
+**Required:** No\
+**Default:** none\
+**Type:** string
+
+**Description:** Alternate working directory. For example, if you want to test a manifest file in a directory other than the root of your repo, you would put in a relative path to that directory.
+
+## **Field:** Additional command-line args for Snyk CLI (advanced)
+
+**Parameter:** additionalArguments\
+**Required:** No\
+**Default:** none\
+**Type:** string
+
+**Description:** Additional Snyk CLI arguments to be passed in. See [CLI commands and options summary](https://docs.snyk.io/snyk-cli/guides-for-our-cli/cli-reference) for details. Add `--all-projects` as good practice (for example, for .NET), if no project has been found.
