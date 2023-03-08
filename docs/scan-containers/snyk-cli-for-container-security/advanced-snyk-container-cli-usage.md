@@ -51,7 +51,7 @@ Some useful CLI options include the following:
 | `--sarif`                    | Return results in [SARIF](https://www.oasis-open.org/committees/tc\_home.php?wg\_abbrev=sarif) format, useful for integrating with other tools. Note this requires the test to be run with `--file` as well. |
 | `--exclude-base-image-vulns` | Do not show vulnerabilities introduced only by the base image. Available when using `snyk container test` only.                                                                                              |
 | `--severity-threshold`       | Report only vulnerabilities at the specified level or higher.                                                                                                                                                |
-| `--app-vulns`                | Snyk allows detection of vulnerabilities in your application dependencies from container images, as well as from the operating system, all in one single scan.                                               |
+| `--exclude-app-vulns`        | Allow disabling scans for app vulnerabilities in advance of `app-vulns` being enabled by default. Cannot be used with`--app-vulns`.                                                                          |
 | `--nested-jars-depth`        | When using `--app-vulns` use the `--nested-jars-depth=n` option to set how many levels of nested jars Snyk is to unpack.                                                                                     |
 | `--fail-on`                  | Fail only when there are vulnerabilities that can be fixed.                                                                                                                                                  |
 
