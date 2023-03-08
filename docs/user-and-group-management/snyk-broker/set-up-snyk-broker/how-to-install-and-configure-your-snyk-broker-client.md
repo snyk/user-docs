@@ -39,7 +39,7 @@ Installing the Snyk Broker through Docker commands is also straightforward. Foll
 * [Azure Repos](../snyk-broker-set-up-examples/setup-broker-with-azure-repos.md)
 * [JFrog Artifactory](https://github.com/snyk/broker#artifactory)&#x20;
 * [Nexus](https://github.com/snyk/broker#nexus-3)
-* [Jira](../snyk-broker-set-up-examples/setup-broker-with-jira.md)
+* [Jira](../../../integrations/snyk-broker/snyk-broker-set-up-examples/setup-broker-with-jira.md)
 * [Snyk Broker - Container Registry Agent](../snyk-broker-container-registry-agent/) (needed to connect to Container Registries)
 * [Snyk Broker - Code Agent](../snyk-broker-code-agent/) (needed to enable SAST analysis)
 

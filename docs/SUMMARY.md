@@ -573,7 +573,7 @@
       * [Set up Snyk Broker with GitHub](user-and-group-management/snyk-broker/snyk-broker-set-up-examples/broker-example-set-up-snyk-broker-with-github.md)
       * [Set up Snyk Broker with GitHub Enterprise](user-and-group-management/snyk-broker/snyk-broker-set-up-examples/setup-broker-with-github-enterprise.md)
       * [Set up Snyk Broker with GitLab](user-and-group-management/snyk-broker/snyk-broker-set-up-examples/setup-broker-with-gitlab.md)
-      * [Set up Broker with Jira](user-and-group-management/snyk-broker/snyk-broker-set-up-examples/setup-broker-with-jira.md)
+      * [Set up Snyk Broker with Jira](integrations/snyk-broker/snyk-broker-set-up-examples/setup-broker-with-jira.md)
     * [Snyk Broker - Code Agent](user-and-group-management/snyk-broker/snyk-broker-code-agent/README.md)
       * [Prerequisites for the Code Agent and Broker Client](user-and-group-management/snyk-broker/snyk-broker-code-agent/prerequisites-for-the-code-agent-and-broker-client.md)
       * [Setting up the Code Agent – Broker Client deployment](user-and-group-management/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/README.md)
