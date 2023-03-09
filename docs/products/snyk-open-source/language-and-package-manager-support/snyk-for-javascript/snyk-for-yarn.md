@@ -84,6 +84,10 @@ Snyk scans based on these files being present:
 * `package.json`
 * `yarn.lock`
 
+{% hint style="info" %}
+For Yarn Workspaces, only the `package.json` file is updated for Snyk fix PRs. The `yarn.lock` file is not updated.
+{% endhint %}
+
 ### Fix PRs for [zero-installs](https://yarnpkg.com/features/zero-installs) users
 
 In Yarn V2 the [zero-installs](https://yarnpkg.com/features/zero-installs) feature was released, which allowed Yarn developers to work on a project without having to run `yarn` to install dependencies on their machine. It achieved this by installing all the dependencies of a project inside of the `.yarn/cache` directory and asking users to commit this to their version control system - allowing the next developer to pull any new dependencies directly from the repo.&#x20;
