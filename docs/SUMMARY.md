@@ -123,7 +123,7 @@
       * [Snyk Setup Action](integrations/ci-cd-integrations/github-actions-integration/snyk-setup-action.md)
     * [Jenkins](integrations/ci-cd-integrations/jenkins-integration-overview.md)
     * [Maven](integrations/ci-cd-integrations/maven-plugin-integration.md)
-    * [TeamCity](integrations/ci-cd-integrations/teamcity-integration-overview/README.md)
+    * [TeamCity (JetBrains)](integrations/ci-cd-integrations/teamcity-integration-overview/README.md)
       * [TeamCity integration: install the Snyk plugin](integrations/ci-cd-integrations/teamcity-integration-overview/teamcity-integration-install-the-snyk-plugin.md)
       * [TeamCity configuration parameters](integrations/ci-cd-integrations/teamcity-integration-overview/teamcity-configuration-parameters.md)
       * [Language support for TeamCity integration](integrations/ci-cd-integrations/teamcity-integration-overview/language-support-for-teamcity-integration.md)
