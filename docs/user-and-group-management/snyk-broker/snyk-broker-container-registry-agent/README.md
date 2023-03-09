@@ -10,15 +10,16 @@ Snyk can integrate with private container registries you host, and help you to b
 * Keep sensitive data such as your access tokens inside your private network, never sharing that information with Snyk.
 * Provide controlled access to the network for Snyk, limiting Snyk access and the actions that Snyk can perform.
 
+## Prerequisites for Container Registry Agent
+
+This page explains a method of integration through the Broker with supported open-source container registries as [listed](./#supported-container-registries) on this page. This method is designed for users who require images to be scanned in their own environment, instead of inside the Snyk service.
+
+If you **do not require that images be scanned in your own environment**, you do not need the method described on this page. You can **integrate with the supported container registries from the integrations page in your account**.
+
+To enable and configure your hosted container registry, contact [Snyk Support](https://support.snyk.io/hc/en-us) to obtain your Broker token.
+
 {% hint style="warning" %}
-For this feature to work, you must have two separate containers deployed in your infrastructure, creating two separate services.
-{% endhint %}
-
-To enable and configure your hosted container registry, contact [Snyk Support](https://support.snyk.io/hc/en-us).
-
-{% hint style="info" %}
-The integration pattern using the Broker with open-source container registries from the list described on this page is designed for users who require images to be scanned in their own environment, instead of inside the Snyk service.\
-If you do not have this requirement, you do not need the architecture described here, and you can integrate in the standard way from the Integrations page on the Web UI.
+For the Container Registry Agent to work, you must have two separate containers deployed in your infrastructure, creating two separate services.
 {% endhint %}
 
 ## **Self-hosted container registries solution components**
