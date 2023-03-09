@@ -48,8 +48,9 @@ After you complete the installation steps on this page and the [configuration](h
 
 You can use the Snyk JetBrains plugin in the following environments:
 
-* Linux: AMD64 and ARM64
-* Windows: 386 and AMD64
+* Linux: 386, AMD64, and ARM64
+* Linux Alpine: 386 and AMD64
+* Windows: 386, AMD64, and ARM64
 * MacOS: AMD64 and ARM64
 
 ## **Install the JetBrains plugin**

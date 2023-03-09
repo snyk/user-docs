@@ -25,7 +25,8 @@ This page explains supported environments, support, and giving feedback and prov
 You can use the Language Server in the following environments:
 
 * Linux: AMD64 and ARM64
-* Windows: 386 and AMD64
+* Linux Alpine: 386 and AMD64
+* Windows: 386, AMD64, ARM via 386 compatibility
 * MacOS: AMD64 and ARM64
 
 ## Where you can download the Language Server
@@ -59,7 +60,7 @@ The PROTOCOL\_VERSION currently is 3, but may increase with ongoing development.
 
 ## Configuration of Snyk Language Server
 
-### Snyk LSP Command Line Flags
+### Snyk LSP command line flags
 
 `-c <FILE>` allows specifying a config file to load before all others
 
@@ -71,7 +72,7 @@ The PROTOCOL\_VERSION currently is 3, but may increase with ongoing development.
 
 `-licenses` displays the [licenses](https://github.com/snyk/snyk-ls/tree/main/licenses) used by Language Server
 
-### **LSP Initialization Options**
+### **LSP initialization options**
 
 As part of the [Initialize message](https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#initialize) within `initializationOptions?: LSPAny;` Snyk supports the following settings:
 
@@ -109,7 +110,7 @@ Snyk Language Server and Snyk CLI support and need certain environment variables
 2. `JAVA_HOME` to analyze Java JVM-based projects via Snyk CLI
 3. `PATH` to find `maven` when analyzing Maven projects, to find `python` and so on
 
-## **Auto-Configuration of environment variables for Snyk Language Server**
+## **Auto-configuration of environment variables for Snyk Language Server**
 
 To automatically add these variables to the environment, Snyk Language Server searches for the following files, with the order determining precedence. If the executable is not called from an already configured environment (for example, via `zsh -i -c 'snyk-ls'`), you can also specify the config file with the `-c` command line flag for setting the required variables. Snyk Language Server reads the following files in the given precedence and order, not overwriting the already loaded variables.
 
@@ -163,7 +164,7 @@ Trust dialogs can be disabled by setting `enableTrustedFoldersFeature` to `false
 
 An initial set of trusted folders can be provided by setting `trustedFolders` to an array of paths in the `initializationOptions`. These folders will be trusted on startup and will not prompt the user to trust them.
 
-## Example Configuration for Sublime Text
+## Example configuration for Sublime Text
 
 ```
 // Settings in here override those in "LSP/LSP.sublime-settings"
@@ -200,7 +201,7 @@ After opening a supported file, the Language Server should be started by Sublime
 
 ![Snyk Code findings displayed in Sublime Text](<../../.gitbook/assets/image (466).png>)
 
-## Example Configuration for Neovim
+## Example configuration for Neovim
 
 The setup is as follows:
 
@@ -314,6 +315,6 @@ end
 
 ![Snyk Code findings displayed in Neovim](<../../.gitbook/assets/image (219) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
 
-## Support
+## Support for Snyk Language Server
 
 If you need help, submit a [request](https://support.snyk.io/hc/en-us/requests/new) to Snyk Support.

@@ -46,9 +46,8 @@ Supported languages and frameworks include C#, JavaScript, TypeScript, Java, Go 
 
 You can use the Snyk Visual Studio extension in the following environments:
 
-* Linux: AMD64 and ARM64
-* Windows: 386 and AMD64
-* MacOS: AMD64 and ARM64
+* Windows: 386, AMD64, and ARM64
+* MacOS: Visual Studio Windows plugin in a Windows virtual machine inside a Mac with an ARM64 processor
 
 ## Install the extension
 
