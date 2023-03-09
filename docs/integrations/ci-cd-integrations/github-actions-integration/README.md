@@ -59,7 +59,7 @@ For the properties associated with the other Snyk GitHub Actions, see the pages 
 
 ## Examples of using a Snyk GitHub Action
 
-Examples follow of using  a Snyk GitHub Action to test and monitor an Open Source project. For information on using `snyk test` versus `snyk monitor` see [What are the differences among snyk test, monitor, and protect?](https://support.snyk.io/hc/en-us/articles/360000920818-What-is-the-difference-between-snyk-test-protect-and-monitor-)
+Examples follow of using a Snyk GitHub Action to test and monitor an Open Source project. For information on using `snyk test` versus `snyk monitor` see [What are the differences among snyk test, monitor, and protect?](https://support.snyk.io/hc/en-us/articles/360000920818-What-is-the-difference-between-snyk-test-protect-and-monitor-)
 
 You can find examples specific to each language, package manager, and process on the pages listed in [GitHub Actions for Open Source languages and package managers](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#github-actions-for-open-source-languages-and-package-managers) and [GitHub Actions for Snyk Container and Snyk Infrastructure as Code](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#github-actions-for-snyk-container-and-snyk-infrastructure-as-code).
 
@@ -129,7 +129,11 @@ Snyk GitHub Actions support integration with GitHub Code Scanning to show vulner
 
 Using `--sarif-file-output` [Snyk CLI option](https://docs.snyk.io/snyk-cli/cli-reference) and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to the GitHub Code Scanning as shown in the example that follows.
 
-The Snyk Action fails when vulnerabilities are found. This would prevent the SARIF upload action from running. Thus you must use a [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob\_idstepscontinue-on-error) option as shown in this example:
+The Snyk Action fails when vulnerabilities are found. This would prevent the SARIF upload action from running. Thus you must use a [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob\_idstepscontinue-on-error) option as shown in the example that follows.
+
+{% hint style="info" %}
+To use this option for private repos you must have GitHub Advanced Security.
+{% endhint %}
 
 ```yaml
 name: Example workflow using Snyk
@@ -191,6 +195,5 @@ env:
 
 Every Snyk account has this token. Once you [create an account](https://docs.snyk.io/getting-started/create-a-snyk-account) you can find the API token in one of two ways:
 
-1. In the UI, go to your Snyk account [settings page](https://app.snyk.io/account) and retrieve the API token, as explained in  [Revoking and regenerating Snyk API tokens](https://docs.snyk.io/snyk-api-info/revoking-and-regenerating-snyk-api-tokens).
+1. In the UI, go to your Snyk account [settings page](https://app.snyk.io/account) and retrieve the API token, as explained in [Revoking and regenerating Snyk API tokens](https://docs.snyk.io/snyk-api-info/revoking-and-regenerating-snyk-api-tokens).
 2. If you're using the [Snyk CLI](https://docs.snyk.io/snyk-cli/getting-started-with-the-cli) locally you can retrieve the API token by running `snyk config get api`.
-
