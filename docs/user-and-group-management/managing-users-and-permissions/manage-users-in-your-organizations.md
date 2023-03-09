@@ -1,36 +1,38 @@
 # Manage users in your organizations
 
-Select the **Members** top-level menu option to manage your organization's members, you can:
+Select the **Members** top-level menu option to manage your organization's members:
 
 * [Add members](manage-users-in-your-organizations.md#add-members)
 * [Revoke pending invites](manage-users-in-your-organizations.md#revoke-pending-invites)
 * [Change member roles](manage-users-in-your-organizations.md#change-member-roles)
 * [Delete members](manage-users-in-your-organizations.md#delete-members)
-* [Filter and sort views](manage-users-in-your-organizations.md#filter-and-search-views)
+* [Filter and sort views](manage-users-in-your-organizations.md#filter-and-sort-views)
 
 {% hint style="info" %}
-Relevant permissions are required to perform all these tasks; see [managing-permissions.md](managing-permissions.md "mention").
+Relevant permissions are required to perform all these tasks; see [Managing permissions](managing-permissions.md).
 {% endhint %}
 
 ### Add members
 
 To add new users to your organization, click **Add members**:
 
-![](<../../.gitbook/assets/Screen Shot 2022-02-24 at 12.51.45 PM.png>)
+<figure><img src="../../.gitbook/assets/Screen Shot 2022-02-24 at 12.51.45 PM.png" alt="Add members to your Organization"><figcaption><p>Add members to your Organization</p></figcaption></figure>
 
 From here:
 
 * Select **Invite new members** to send an email invitation to a new user. Enter the email addresses of users to invite (separated by commas), then click **Send invite**.
-* Select **Add existing members** to add existing members of your group to this organization. Select the members when prompted then click **Invite members.**
-* (For Free plan users only) Select **Invite by link** to send a link; click **Copy link** then send the link yourself.
+* Select **Add existing members** to add existing members of your group to this organization. Select the members when prompted, then click **Invite members.**
+* (For Free plan users only) Select **Invite by link** to send a link; click **Copy link,** then send the link yourself.
 
-Use the **New members join as** drop-down to define the default joining role for the new member (such as **Org admin**). See [managing-permissions.md](managing-permissions.md "mention").
+Use the **New members join as** drop-down to define the default joining role for the new member (such as **Org admin**). see [Managing permissions](managing-permissions.md).
 
 #### Video tutorial
 
 To see a demonstration of adding members, play this 2-minute video:
 
 {% embed url="https://thoughtindustries-1.wistia.com/medias/qqmkcaequj" %}
+Inviting members to an Organization
+{% endembed %}
 
 ### Revoke pending invites
 
@@ -64,14 +66,14 @@ To delete a member from the organization:
 
 #### Filter views
 
-Click the filter icon (![](<../../.gitbook/assets/Screenshot 2022-03-11 at 08.47.59.png>)) to expand the filter sidebar, to filter members displayed, by role or authentication method:
+Click the filter icon (<img src="../../.gitbook/assets/Screenshot 2022-03-11 at 08.47.59.png" alt="" data-size="line">) to expand the filter sidebar, then filter members displayed by role or authentication method:
 
-![](<../../.gitbook/assets/Screenshot 2022-03-11 at 08.51.43.png>)
+<figure><img src="../../.gitbook/assets/Screenshot 2022-03-11 at 08.51.43.png" alt="Filter members by role or by authentication method"><figcaption><p>Filter members by role or by authentication method</p></figcaption></figure>
 
 #### Sort views
 
 You can sort user views by clicking on the column heading:
 
-![](<../../.gitbook/assets/Screenshot 2022-03-11 at 09.01.07.png>)
+<figure><img src="../../.gitbook/assets/Screenshot 2022-03-11 at 09.01.07.png" alt="Sort user views"><figcaption><p>Sort user views</p></figcaption></figure>
 
-You can sort by Name, Authentication method, Role, and Date joined
+You can sort by Name, Authentication method, Role, and Date Joined.
