@@ -1,10 +1,16 @@
 # Example: Setting up custom mapping for Azure AD
 
-The following information shows how to configure custom mapping of roles for Azure AD using the [Custom Mapping Option](./).
+The following information shows how to configure the custom mapping of roles for Azure AD using the [Custom Mapping Option](./).
 
-There are two ways of implementing custom mapping with Azure AD, either using [Custom claims](example-setting-up-custom-mapping-for-azure-ad.md#configuration) or [App roles](example-setting-up-custom-mapping-for-azure-ad.md#configuration-app-roles). Choose the one that suits your situation best.
+{% hint style="info" %}
+See the [Azure AD Enterprise Application example](../self-serve-single-sign-on-sso/example-azure-ad-enterprise-application.md) for guidance setting up the initial Enterprise application.
+{% endhint %}
 
-If you need guidance setting up the initial Enterprise application, refer the Azure AD Enterprise Application [example](../self-serve-single-sign-on-sso/example-azure-ad-enterprise-application.md). **Note**: any step on the Snyk side in setting up the Enterprise application must be performed by your Snyk contact as self-serve SSO does not accommodate custom mapping.
+To implement custom mapping with Azure AD, either [configure custom claims](example-setting-up-custom-mapping-for-azure-ad.md#configure-custom-claims) or [configure app roles](example-setting-up-custom-mapping-for-azure-ad.md#configure-app-roles), depending on your requirements.
+
+{% hint style="warning" %}
+Any step on the Snyk side in setting up the Enterprise application must be performed by your Snyk contact, as self-serve SSO does not accommodate custom mapping
+{% endhint %}
 
 ## Configure custom claims
 
@@ -14,7 +20,7 @@ The following characterize this configuration:
 * Azure AD Security is mapped to Snyk Organization membership roles.
 * The user role in Snyk is pre-set in each Azure AD Security Group for all members of that group.
 
-Once you have set up Groups and users, follow these steps:
+After you have set up Groups and users, follow these steps:
 
 1.  In your Snyk App in Azure AD, navigate to Single Sign On.\
     **Dashboard -> Enterprise Applications -> Snyk** and select **Single Sign On.**
@@ -49,7 +55,9 @@ Once you have set up Groups and users, follow these steps:
 
     <figure><img src="../../../.gitbook/assets/attribute-as-source (1).png" alt="Set Attribute as the Source"><figcaption><p>Set Attribute as the Source</p></figcaption></figure>
 
-**Note:** Repeat the steps for each Claim condition.
+{% hint style="info" %}
+Repeat the steps for each Claim condition.
+{% endhint %}
 
 ## Configure App roles
 
