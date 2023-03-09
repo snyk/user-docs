@@ -5,7 +5,10 @@
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-Snyk can integrate with private container registries you host, and help you to better secure container images in those registries.
+Snyk can integrate with private container registries you host, and help you to better secure container images in those registries. Integration with private container registries allows you to:
+
+* Keep sensitive data such as your access tokens inside your private network, never sharing that information with Snyk.
+* Provide controlled access to the network for Snyk, limiting Snyk access and the actions that Snyk can perform.
 
 {% hint style="warning" %}
 For this feature to work, you must have two separate containers deployed in your infrastructure, creating two separate services.
@@ -18,14 +21,7 @@ The integration pattern using the Broker with open-source container registries f
 If you do not have this requirement, you do not need the architecture described here, and you can integrate in the standard way from the Integrations page on the Web UI.
 {% endhint %}
 
-## **Introduction to Container Registry Agent**
-
-Integration with private container registries allows you to:
-
-* Keep sensitive data such as your access tokens inside your private network, never sharing that information with Snyk.
-* Provide controlled access to the network for Snyk, limiting Snyk access and the actions that Snyk can perform.
-
-### **Self-hosted container registries solution components**
+## **Self-hosted container registries solution components**
 
 The following components are needed with self-hosted container registries:
 
@@ -36,7 +32,7 @@ The Broker Client provides the Container Registry Agent with the connection deta
 
 <figure><img src="../../../.gitbook/assets/mceclip0-8-.png" alt="Flow for Snyk Broker Container Registry Agent"><figcaption><p>Flow for Snyk Broker Container Registry Agent</p></figcaption></figure>
 
-### **Supported container registries**
+## **Supported container registries**
 
 * Artifactory (type: artifactory-cr)
 * Harbor (type: harbor-cr)
@@ -51,7 +47,11 @@ The Broker Client provides the Container Registry Agent with the connection deta
 * DigitalOcean (type: digitalocean-cr)
 * GitLab (type: gitlab-cr)
 
-### **Settings prerequisites for Container Registry Agent**
+{% hint style="info" %}
+GitHub Container Registry and GitLab Container Registry do not follow docker v2 API; they do not have the /v2/\_catalog endpoint. Thus it is not possible to list images in repos and you must manually specify the images you wish to scan.
+{% endhint %}
+
+## **Settings prerequisites for Container Registry Agent**
 
 * Broker Client machine system requirements: 1 CPU, 256MB of RAM
 * Container registry agent machine system requirements should be (given MAX\_ACTIVE\_OPERATIONS=1):
