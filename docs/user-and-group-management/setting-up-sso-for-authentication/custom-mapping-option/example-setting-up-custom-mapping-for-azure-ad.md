@@ -6,67 +6,19 @@ The following information shows how to configure the custom mapping of roles for
 See the [Azure AD Enterprise Application example](../self-serve-single-sign-on-sso/example-azure-ad-enterprise-application.md) for guidance setting up the initial Enterprise application.
 {% endhint %}
 
-To implement custom mapping with Azure AD, either [configure custom claims](example-setting-up-custom-mapping-for-azure-ad.md#configure-custom-claims) or [configure app roles](example-setting-up-custom-mapping-for-azure-ad.md#configure-app-roles), depending on your requirements.
-
 {% hint style="warning" %}
-Any step on the Snyk side in setting up the Enterprise application must be performed by your Snyk contact, as self-serve SSO does not accommodate custom mapping
-{% endhint %}
-
-## Configure custom claims
-
-The following characterize this configuration:
-
-* Azure AD Security groups are mapped to Snyk organizations.
-* Azure AD Security is mapped to Snyk Organization membership roles.
-* The user role in Snyk is pre-set in each Azure AD Security Group for all members of that group.
-
-After you have set up Groups and users, follow these steps:
-
-1.  In your Snyk App in Azure AD, navigate to Single Sign On.\
-    **Dashboard -> Enterprise Applications -> Snyk** and select **Single Sign On.**
-
-    <figure><img src="../../../.gitbook/assets/Screen Shot 2022-06-08 at 8.22.43 AM.png" alt="Azure AD Snyk app Single sign-on"><figcaption><p>Azure AD Snyk app Single sign-on</p></figcaption></figure>
-2.  In the single sign-on options, for **Attributes & Claims** click the **Edit** icon.
-
-    <figure><img src="../../../.gitbook/assets/Screen Shot 2022-06-08 at 8.26.20 AM.png" alt="Edit Attributes &#x26; Claims"><figcaption><p>Edit Attributes &#x26; Claims</p></figcaption></figure>
-3.  Select **Add new claim**.
-
-    <figure><img src="../../../.gitbook/assets/Screen Shot 2022-06-08 at 8.28.37 AM.png" alt="Add new claim"><figcaption><p>Add new claim</p></figcaption></figure>
-4. Configure Attribute: enter the **Name:** roles.
-5.  Configure Attribute: expand the **Claim conditions**.\
-    For each unique value, that is, unique combinations of security groups, _create a new condition_.\
-    Each security group reflects a unique combination of organization membership and user role.\
-    _**Order is important**._\
-    If you have more than one condition with the same group(s) included in **scoped groups** the conditions are evaluated top to bottom and the last value that includes the group(s) is used.\
-    For this reason, the recommendation is to enter the conditions in increasing order of scoped groups.
-
-    <figure><img src="../../../.gitbook/assets/Name-Claim-conditions-section (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Enter the Name and expand Claim conditions"><figcaption><p>Enter the Name and expand Claim conditions</p></figcaption></figure>
-6.  In the **Claim conditions**, set **User type** to **Members**.
-
-    <figure><img src="../../../.gitbook/assets/User-type-to-members (1).png" alt="Set User type to Members"><figcaption><p>Set User type to Members</p></figcaption></figure>
-7.  Specify the scoped groups; in the example choose **Select groups**, search for SSO, and **Select** the groups found.\
-    These are the security groups to which you are assigning one or more combinations of Org membership and user role.
-
-    <figure><img src="../../../.gitbook/assets/scoped-groups (1) (1) (1) (1) (1).png" alt="Select the groups found"><figcaption><p>Select the groups found</p></figcaption></figure>
-8.  In the **Claim conditions**, select **Attribute** as the **Source** and set the **Value** to the Snyk Org and user role slugs in the following format: `snyk-orgslug-role`\
-    \`\`For more than one, separate by comma.\
-    Do not include spaces or capital letter(s) in the Org and user role slugs.\
-    Do not include double quotes as Azure AD automatically adds them.\\
-
-    <figure><img src="../../../.gitbook/assets/attribute-as-source (1).png" alt="Set Attribute as the Source"><figcaption><p>Set Attribute as the Source</p></figcaption></figure>
-
-{% hint style="info" %}
-Repeat the steps for each Claim condition.
+Any step on the Snyk side in setting up the Enterprise application must be performed by your Snyk contact, as self-serve SSO does not accommodate custom mapping.
 {% endhint %}
 
 ## Configure App roles
 
-The following are the prerequisites for this configuration type:
+The following are the **prerequisites** for configuring App roles:
 
-* Snyk support must configure your Snyk SSO as Microsoft Azure AD (WAAD, not SAML)
-* You must have an existing Azure Enterprise application and app registration connected to that SSO configuration
+* Snyk support must configure your Snyk SSO as Microsoft Azure AD (WAAD or SAML).
+* If you select SAML, there is a requirement to add a custom claim; the step to do that is in these instructions.
+* You must have an existing Azure Enterprise application and app registration connected to that SSO configuration.
 
-1.  In your app registration menu, select the name of your Enterprise Application.
+1.  In your App registration menu, select the name of your Enterprise Application.
 
     <figure><img src="../../../.gitbook/assets/image (113).png" alt="App registration, select name of Enterprise Application"><figcaption><p>App registration, select name of Enterprise Application</p></figcaption></figure>
 2.  Select **App roles**, then **Create app role**.
@@ -92,3 +44,15 @@ The following are the prerequisites for this configuration type:
 7.  Repeat for all required groups and roles that should be assigned. Then verify that the list looks similar to this.
 
     <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (2) (1) (1) (1) (1) (1) (2).png" alt="Users and group list"><figcaption><p>Users and group list</p></figcaption></figure>
+8. If you have configured a SAML connection, add a custom claim to pass the roles array in the SAML payload to Snyk. Select **Single sign-on** in the left hand menu.
+9.  Select **Edit** next to **Attributes and Claims.**
+
+    <figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 3.19.31 PM.png" alt="Edit attributes and claims"><figcaption><p>Edit attributes and claims</p></figcaption></figure>
+10. Select **Add new claim**, **** add the following details, and **Save.**\
+    **Name**: roles\
+    **Source**: Attribute\
+    **Source attribute**: user.assignedroles\
+
+
+    <figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 2.55.05 PM.png" alt="Custom claim"><figcaption><p>Custom claim</p></figcaption></figure>
+
