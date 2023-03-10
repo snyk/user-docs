@@ -5,16 +5,20 @@
 This feature is available for Enterprise customers. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-### Introduction
+Snyk pre-defined roles (such as Group Admin) cannot be changed. Member Roles provides Role-Based Access Control (RBAC) for Snyk, allowing you to create and enforce advanced access by assigning a set of permissions to a role that will be granted to users.&#x20;
 
-Access Management is an integral part of the security strategy of an enterprise. While Snyk offers out-of-the-box roles like Group Admin, Group Member, Org Admin, and Org Collaborator, these roles are pre-defined and respective accesses cannot be modified. With **Member Roles**, we are introducing role-based access control (RBAC) at Snyk that allows you to create and enforce advanced access by assigning a set of permissions to a role that will be granted to users.
+You can [manage roles](member-roles.md#manage-roles), [assign roles](member-roles.md#assign-roles) to users or to service accounts, and [use roles with SSO](member-roles.md#use-roles-in-custom-sso).
 
-This is a self-serve capability for Group admins to grant members the permissions they need to do their jobs across the Snyk platform - and only those permissions - by creating customized roles and assigning specific permissions to them. This ensures the right people have the right access to the right resources at the right time, while maximizing transparency and reducing organizational risk.
+## Manage roles
 
-{% hint style="info" %}
-This version allows you to create custom roles for organizations in your group, and assign those roles to organization members and service accounts.\
-Future versions will add group-level access (for example, policies, group member management, group reporting, and so on).
-{% endhint %}
+Member roles allows Group Admins to:
+
+* [Create a Role](member-roles.md#create-a-role)
+* [Edit a Role](member-roles.md#edit-a-role)
+* [Duplicate a Role](member-roles.md#duplicate-a-role)
+* [Delete a Role](member-roles.md#delete-a-role)
+
+This allows you to manage custom roles, granting your users the precise permissions they need to do their jobs across the Snyk platform. So you can ensure the right people have the right access to the right resources at the right time, while maximizing transparency and reducing organizational risk.
 
 ### Create a Role
 
@@ -42,19 +46,19 @@ Choose the required permissions and click **Update Role Permissions**.
 
 When creating the role is complete, you will see the confirmation message at the top.
 
-![](<../../.gitbook/assets/Screenshot 2022-06-23 at 15.32.32.png>)
+<figure><img src="../../.gitbook/assets/image (1).png" alt="Role creation confirmation message"><figcaption><p>Role creation confirmation message</p></figcaption></figure>
 
 ### Edit a Role
 
 **Group Admins** can select a role (except for the default roles that are marked as locked) from the Member Roles list page and update the name, description and permissions at any time . You can view how the default roles are set up and duplicate those roles, but you cannot edit them.
 
-![](<../../.gitbook/assets/Screenshot 2022-06-23 at 15.37.06.png>)
+<figure><img src="../../.gitbook/assets/Screenshot 2022-06-23 at 15.37.06.png" alt="Edit role details"><figcaption><p>Edit role details</p></figcaption></figure>
 
 ![Update Role Permissions](<../../.gitbook/assets/Screenshot 2022-05-17 at 06.10.00.png>)
 
 When updating the role is complete, you will see the confirmation message at the top.
 
-![](<../../.gitbook/assets/Screenshot 2022-06-23 at 15.38.52.png>)
+<figure><img src="../../.gitbook/assets/image (9).png" alt="Role change confirmation message"><figcaption><p>Role change confirmation message</p></figcaption></figure>
 
 ### Duplicate a Role
 
@@ -68,7 +72,7 @@ You can use the Duplicate button next to each role in the Member Roles list page
 
 Enter a unique name and description and click the **Duplicate Role** button. Group Admin can then edit this role to assign new permissions to it or rescind any permissions already assigned.
 
-![](<../../.gitbook/assets/image (394) (1) (1) (1) (1) (1).png>)
+<figure><img src="../../.gitbook/assets/image (394) (1) (1) (1) (1) (1).png" alt="Enter new role details"><figcaption><p>Enter new role details</p></figcaption></figure>
 
 ### Delete a Role
 
@@ -82,23 +86,25 @@ When the current role is deleted, all its existing members including Service Acc
 
 ![Prompt to reassign members and delete a role](<../../.gitbook/assets/Screenshot 2022-05-17 at 09.59.27.png>)
 
-### Assigning roles to users
+## Assign roles
 
-Users who hold the permissions to manage members can assign the roles to members across all organizations in the Group.
+### Assign roles to users
+
+Users who hold the permissions to manage members can assign the roles to members across all Organizations in the Group.
 
 Using [this API call](https://snyk.docs.apiary.io/#reference/organizations/organization-settings/update-a-member's-role-in-the-organization) users can update the role of the members in their organizations.
 
-In the UI, select an **Org** > **Members**.
+In the Web UI, select an **Org** > **Members**.
 
 For any member (Name) except a Group Admin, the user can select the dropdown next to the current role and choose any role to assign that role to the member.
 
-![](<../../.gitbook/assets/image (104) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+<figure><img src="../../.gitbook/assets/image (104) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Select member role"><figcaption><p>Select member role</p></figcaption></figure>
 
 Click the **Add members** button > **Invite new members**.\
 \
 You can invite new members to the org by assigning them a specified role.
 
-![](<../../.gitbook/assets/image (178) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+<figure><img src="../../.gitbook/assets/image (8).png" alt="Invite new members"><figcaption><p>Invite new members</p></figcaption></figure>
 
 Choose **Add members** button > **Add existing members** to promote current Group Members to an org-specific role.
 
@@ -108,7 +114,7 @@ Snyk prevents users from assigning roles to others that have more privileges tha
 
 ![User cannot assign more privileged role to another user](<../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05 (1).png>)
 
-### Assigning roles to Service Accounts
+### Assign roles to Service Accounts
 
 Users who have permission (Create Service Account) can set up new service accounts for their organization by choosing a role.
 
@@ -127,7 +133,7 @@ Snyk prevents users from creating organization service accounts with a role that
 
 ![](<../../.gitbook/assets/Screenshot 2022-08-01 at 15.59.52.png>)
 
-### Roles in Custom SSO
+## Use Roles in Custom SSO
 
 Member roles are supported as part of a Customized SSO authentication flow. All new and existing customers who have customized SSO will be able to use new roles they create in their IDP SAML assertions to provision users in their orgs with those roles.
 
@@ -143,7 +149,7 @@ New member role SAML assertions follow Snyk's existing pattern for declaring org
 
 ![](<../../.gitbook/assets/Screenshot 2022-06-23 at 16.31.11.png>)
 
-### Sample Roles
+## Sample Roles
 
 #### Org Collaborator who cannot ignore issues
 
@@ -217,7 +223,7 @@ Permissions:
 * `Test Project`
 * `View Preview Features`
 
-### Things to remember
+## Things to remember
 
 * Permissions granted to users via Roles enable the same capabilities across all Snyk environments: Web UI, API, CLI, and IDE.
 * `View Organization` permission is needed by default for all organization level member roles.
