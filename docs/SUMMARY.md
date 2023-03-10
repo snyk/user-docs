@@ -369,7 +369,7 @@
       * [Scan container images from Harbor in Snyk](scan-containers/image-scanning-library/harbor-image-scanning/scan-container-images-from-harbor-in-snyk.md)
     * [JFrog Artifactory image scanning](scan-containers/image-scanning-library/jfrog-artifactory-image-scanning/README.md)
       * [Container security with JFrog Artifactory](scan-containers/image-scanning-library/jfrog-artifactory-image-scanning/container-security-with-jfrog-artifactory.md)
-      * [Configuring your JFrog Artifactory container registry integration](scan-containers/image-scanning-library/jfrog-artifactory-image-scanning/configuring-your-jfrog-artifactory-container-registry-integration.md)
+      * [Configuring your JFrog Artifactory Container Registry integration](scan-containers/image-scanning-library/jfrog-artifactory-image-scanning/configuring-your-jfrog-artifactory-container-registry-integration.md)
       * [Add Artifactory images to Snyk](scan-containers/image-scanning-library/jfrog-artifactory-image-scanning/add-artifactory-images-to-snyk.md)
     * [Nexus image scanning](scan-containers/image-scanning-library/nexus-image-scanning/README.md)
       * [Container security with Nexus integration](scan-containers/image-scanning-library/nexus-image-scanning/container-security-with-nexus-integration.md)
