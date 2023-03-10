@@ -94,7 +94,7 @@ These are some of the explicitly supported frameworks for Python; those are in a
 These are some of the explicitly supported frameworks for C#; those are in addition to the general support for many frameworks.
 {% endhint %}
 
-* **.NET framework**: .NET is an open source developer platform, created by Microsoft and used to build a variety of application types. Snyk Code supports .NET 5 using the C# interface.&#x20;
+* **.NET framework**: .NET is an open source developer platform, created by Microsoft and used to build a variety of application types. Snyk Code supports .NET 5.&#x20;
 * **ASP.NET (version 4.x)**: ASP.NET is a free and open source framework to build web apps and services using .NET. Snyk Code supports version 4.x.
 * **.NET Core**: Microsoft created .NET Core to make the .NET framework cross-platform and enable a number of scenarios. The .NET framework and .NET Core share many components and code can be exchanged. (Microsoft [provides guidance](https://docs.microsoft.com/en-us/dotnet/standard/choosing-core-framework-server) when to choose which)
 
