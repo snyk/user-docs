@@ -2,7 +2,7 @@
 description: Use this documentation to get started with the Language Server
 ---
 
-# Language Server
+# Snyk Language Server
 
 Snyk offers IDE integrations that allow you to use the functionality of Snyk in your Integrated Development Environment or Editor. This page describes the Snyk Language Server that can provide diagnostics for any IDE or Editor that supports the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/). For information about all of the IDE plugins and their use, see [Snyk for IDEs](https://docs.snyk.io/ide-tools) in the docs.
 
@@ -197,7 +197,7 @@ An initial set of trusted folders can be provided by setting `trustedFolders` to
 
 After opening a supported file, the Language Server should be started by Sublime Text and findings will be highlighted.
 
-![Snyk Open Source findings displayed in Sublime Text](<../../.gitbook/assets/image (166) (1) (2).png>)
+![Snyk Open Source findings displayed in Sublime Text](<../../.gitbook/assets/image (166) (1) (1) (1) (1) (1).png>)
 
 ![Snyk Code findings displayed in Sublime Text](<../../.gitbook/assets/image (466).png>)
 
@@ -313,7 +313,7 @@ else
 end
 ```
 
-![Snyk Code findings displayed in Neovim](<../../.gitbook/assets/image (219) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+![Snyk Code findings displayed in Neovim](<../../.gitbook/assets/image (219) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Support for Snyk Language Server
 
