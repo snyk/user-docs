@@ -43,7 +43,7 @@ Log in to the [Snyk Web UI](../../getting-started/quickstart/create-a-snyk-accou
 
 You can also open the project itself and see the usual individual project view:
 
-![individual project view](<../../.gitbook/assets/image (106) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![individual project view](<../../.gitbook/assets/image (106) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ### **Ignores**
 

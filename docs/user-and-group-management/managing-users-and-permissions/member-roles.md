@@ -92,13 +92,13 @@ In the UI, select an **Org** > **Members**.
 
 For any member (Name) except a Group Admin, the user can select the dropdown next to the current role and choose any role to assign that role to the member.
 
-![](<../../.gitbook/assets/image (104) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (104) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 Click the **Add members** button > **Invite new members**.\
 \
 You can invite new members to the org by assigning them a specified role.
 
-![](<../../.gitbook/assets/image (178) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+![](<../../.gitbook/assets/image (178) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 Choose **Add members** button > **Add existing members** to promote current Group Members to an org-specific role.
 
