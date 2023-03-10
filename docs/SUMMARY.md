@@ -606,7 +606,7 @@
   * [Managing users & permissions](user-and-group-management/managing-users-and-permissions/README.md)
     * [Manage users in your organizations](user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations.md)
     * [Manage users in your Group](user-and-group-management/managing-users-and-permissions/manage-users-in-your-organizations-1.md)
-    * [Managing permissions](user-and-group-management/managing-users-and-permissions/managing-permissions.md)
+    * [Manage permissions](user-and-group-management/managing-users-and-permissions/managing-permissions.md)
     * [Member Roles](user-and-group-management/managing-users-and-permissions/member-roles.md)
     * [Update Member Roles via API](user-and-group-management/managing-users-and-permissions/update-member-roles-via-api.md)
     * [Remove members from Groups and Orgs via API](user-and-group-management/managing-users-and-permissions/update-member-roles-via-api-1.md)
