@@ -1,10 +1,14 @@
 # Setting up the Container Registry Agent for a brokered ECR integration
 
-## Terminology for brokered ECR integration
+## Terminology and diagram for brokered ECR integration
 
 **Container Registry Agent IAM Role or IAM User:** an IAM Role or IAM User used by the Container Registry Agent to assume a role with access to ECR
 
 **Snyk ECR Service Role:** an IAM Role with access to ECR and assumed by the Container Registry Agent IAM Role or IAM User to gain read-only access to ECR
+
+The following illustrates the architecture for a brokered ECR integration.
+
+<figure><img src="https://lh5.googleusercontent.com/4DU0uB8JbZot6cxsvnygN8v9n7jyiGlOXgNAa_N9KHQnO2ouCpUUpvznQbn7PxQhu-KXLV9zAvIJoK8_5O1BulXjEki3ep1ZRjzM4t88rK9xgy7bADKAUNNge6iUJsK0e1wmrWxFg58Mr4wI8ziMmA" alt="Architecture of the brokered ECR integration"><figcaption><p>Architecture of the brokered ECR integration</p></figcaption></figure>
 
 ## **Summary of steps for brokered ECR integration**
 

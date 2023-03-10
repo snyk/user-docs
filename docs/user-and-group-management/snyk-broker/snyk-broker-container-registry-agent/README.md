@@ -142,9 +142,9 @@ If you are using **Repository path** as your Docker access method, the container
 
 ### **ECR**
 
-<figure><img src="../../../.gitbook/assets/untitled (1) (1) (1) (1) (1).png" alt="High-level architecture of the brokered ECR integration"><figcaption><p>High-level architecture of the brokered ECR integration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt="High-level architecture of the brokered ECR integration"><figcaption><p>High-level architecture of the brokered ECR integration</p></figcaption></figure>
 
-### **Required AWS Resource with ECR**
+#### **Required AWS Resource with ECR**
 
 ECR setup requires the following kinds of IAM resources to be created:
 
@@ -168,7 +168,7 @@ ECR setup requires the following kinds of IAM resources to be created:
     ]
     ```
 
-### **Setup steps for ECR**
+#### **Setup steps for ECR**
 
 The listed resources can be used as follows, so that a single Container Registry Agent instance can access ECR repositories located in different accounts:
 
