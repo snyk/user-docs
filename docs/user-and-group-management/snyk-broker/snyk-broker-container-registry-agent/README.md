@@ -63,7 +63,7 @@ The system and software requirements to set up and run the Snyk Broker Container
   * CPU: 1 vcpu
   * Memory: 2Gb (should be reflected in node memory setting)
   * Storage: 5Gb
-* An account with list images and pull access to the container registry
+* Container registry credentials that have list and pull images permissions
 * Connection between Broker and Agent
 * HTTPS connection between the Agent and the registry. For HTTP-only registries, deploy a reverse proxy between the Agent and the container registry.
 * [Download for the Broker Client image on Docker](https://hub.docker.com/r/snyk/broker/tags?page=1\&ordering=last\_updated\&name=container-registry-agent)
