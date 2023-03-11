@@ -14,7 +14,7 @@ ENV BROKER_HEALTHCHECK_PATH /path/to/healthcheck
 
 ## **Systemcheck**
 
-The Broker client exposes an endpoint at `/systemcheck`, which can be used to validate the brokered service (Git or the like) connectivity and credentials. This endpoint causes the Broker client to make a request to a preconfigured URL, and report on the success of the request. The supported configuration is:
+The Broker client exposes an endpoint at `/systemcheck`, which can be used to validate the connectivity and credentials of the brokered container registry. This endpoint causes the Broker client to make a request to a preconfigured URL, and report on the success of the request. The supported configuration is:
 
 * `BROKER_CLIENT_VALIDATION_URL` - the URL to which the request will be made.
 * `BROKER_CLIENT_VALIDATION_AUTHORIZATION_HEADER` - \[optional] the `Authorization` header value of the request. Mutually exclusive with `BROKER_CLIENT_VALIDATION_BASIC_AUTH`.
