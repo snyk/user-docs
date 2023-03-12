@@ -27,14 +27,15 @@ If you use a proxy server, ensure you configure it, and any firewalls, to allow 
 * Outbound from the Broker Client (running in your environment) to [broker.snyk.io](https://broker.snyk.io) (or [https://broker.eu.snyk.io](https://broker.eu.snyk.io) / [https://broker.au.snyk.io](https://broker.au.snyk.io)) on port 443
 * Inbound to the Broker Client at the BROKER\_CLIENT\_URL on the port you have configured (typically 8000)
 
-Traffic initiated from the Snyk server side always uses the latest available Broker connection. All activity from the Snyk side (such as traffic driven by recurring tests) appears on only one of your replicas at a time. The amount of Snyk activity is proportional to the activity in the repositories or Jira items. That activity generates webhooks, which are distributed across all replicas.
+Traffic initiated from the Snyk Broker Server side always uses the latest available Broker connection. All activity from the Snyk side (such as traffic driven by recurring tests) appears on only one of your replicas at a time. The amount of Snyk activity is proportional to the activity in the repositories or Jira items. That activity generates webhooks, which are distributed across all replicas.
 
 ## **Define your Broker deployment components**
 
 Consider the following to understand what the required components are for your deployment:
 
-* What are you connecting Broker to?
-  * GitHub, Jira, Bitbucket, Harbor...
+* What service are you connecting Broker to?
+  * GitHub, Jira, Bitbucket, Harbor, other service
+  * See [Snyk Broker - Client integration setups](../snyk-broker-set-up-examples/).
 * Are you planning to detect Infrastructure as Code files?
   * You will need to add an environment variable `-e ACCEPT_IAC` or a custom allowlist `accept.json` file to your deployment.
   * See [Snyk Broker - Infrastructure as Code detection](../snyk-broker-infrastructure-as-code-detection/).
@@ -67,7 +68,7 @@ For code repository (SCM) integrations, a Broker token can be generated via API 
 1. Go to the Snyk API v1 documentation and follow the example under "Set up a broker for an existing integration" within the [Integrations API](https://snyk.docs.apiary.io/#reference/integrations/integration/update-existing-integration) or contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
 2. Verify the Broker token is generated in the Snyk Web UI under the specified SCM integration. by selecting **Settings** > **Integrations** for that specific integration update to see the Broker token.
 
-For [Artifactory](../../../integrations/private-registry-integrations/artifactory-registry-for-npm.md) or [Jira](../../../integrations/notifications-ticketing-system-integrations/jira.md) integrations, a Broker token can be generated within the Snyk UI or by contacting [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
+For [Artifactory Registry](../../../integrations/private-registry-integrations/artifactory-registry-setup.md) (Set up brokered instances) or [Jira](../../../integrations/snyk-broker/snyk-broker-set-up-examples/setup-broker-with-jira.md) integrations, you can generate a Broker token in the Snyk UI or contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
 
 1. Select **Settings** > **Integrations** for that specific integration to generate the Broker token.
 2. Once the Broker token is generated, under the integration, the notification from this screen correctly displays “Could not connect to…”, as you have not yet installed and configured the client.
@@ -75,8 +76,8 @@ For [Artifactory](../../../integrations/private-registry-integrations/artifactor
 
 ## Enabling Broker across multiple organizations
 
-You can use the same Git across multiple Organizations in Snyk with the same Broker token. To do this, create the token for an Organization and then create a new Organization based on the original. This clones the token and you can now enable the Broker for it.
+You can use the same Git service across multiple Organizations in Snyk with the same Broker token. To do this, create the token for an Organization and then create a new Organization based on the original. This clones the token and you can now enable the Broker for it.
 
 To do this retroactively for existing Organizations, you can use the API v1 endpoint [Clone an integration (with settings and credentials)](https://snyk.docs.apiary.io/#reference/integrations/integration-cloning) to clone a specific integration, including the Broker token.&#x20;
 
-If this is not done you will need a new Broker token for the Organization, as each integration and Organization have their own unique Broker token.
+Unless you do this, you must generate a new Broker token for the Organization, as each integration and Organization have their own unique Broker token.
