@@ -51,4 +51,4 @@ You can also see which Jira issues have been created in the **Issues** view in y
 
 ### See also:
 
-[Set up Broker with Jira](../snyk-broker/snyk-broker-set-up-examples/setup-broker-with-jira.md)
+[Set up Snyk Broker with Jira](../snyk-broker/snyk-broker-set-up-examples/setup-broker-with-jira.md)
