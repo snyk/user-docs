@@ -19,8 +19,8 @@ To use the Broker client with GitLab.com or an on-prem GitLab deployment, **run*
 * `BROKER_TOKEN` - the Snyk Broker token, obtained from your GitLab integration settings view (app.snyk.io).
 * `GITLAB_TOKEN` - a GitLab personal access token with `api` scope
 * `GITLAB` - the hostname of your GitLab deployment, such as `your.gitlab.domain.com` or `GitLab.com`.
-* `PORT` - the local port at which the Broker client accepts connections. Default is 8000.
-* `BROKER_CLIENT_URL` - the full URL of the Broker client as needed to be reachable by either GitLab.com or on-prem GitLab deployment in order to establish webhook connectivity. This must be a full URL like `http://broker.url.example:8000`
+* `PORT` - the local port at which the Broker Client accepts connections. Default is 8000.
+* `BROKER_CLIENT_URL` - the full URL of the Broker Client as needed to be reachable by either GitLab.com or on-prem GitLab deployment in order to establish webhook connectivity. This must be a full URL like `http://broker.url.example:8000`
 * `ACCEPT_IAC` - by default, some file types used by Infrastructure-as-Code (IaC) are not enabled. To grant the Broker access to IaC files in your repository, such as Terraform for example, you can simply add an environment variable `ACCEPT_IAC` with any combination of `tf,yaml,yml,json,tpl`
 * `ACCEPT_CODE` - by default, when using the Snyk Broker - Code Agent, Snyk Code will not load code snippets. To enable code snippets you can simply add an environment variable `ACCEPT_CODE=true`
 

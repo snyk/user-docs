@@ -93,7 +93,7 @@ ENV PORT                8000
 
 ## Derived Docker image for Artifactory Broker integration setup
 
-As an alternative to using the Docker run command shown on the setup page, you can build your own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](set-up-snyk-broker-with-artifactory.md), you can build your own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:artifactory
@@ -104,7 +104,7 @@ ENV ARTIFACTORY_URL   <yourdomain>.artifactory.com
 
 ## Derived Docker image for Nexus 3 Broker integration setup
 
-As an alternative to using the Docker run command shown on the setup page, you can build your own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](set-up-snyk-broker-with-nexus3.md), you can build your own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:nexus
