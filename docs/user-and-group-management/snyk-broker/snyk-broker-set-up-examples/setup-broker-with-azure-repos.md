@@ -16,11 +16,9 @@ You need Docker or a way to run Docker containers.
 Snyk supports only Azure DevOps/TFS 2020 or above.
 {% endhint %}
 
-The following explains how to configure Snyk Broker to be used with Snyk Azure Repos.
+The following explains how to configure Snyk Broker to be used with Azure Repos.
 
-**Obtain** your Azure Repos Broker token from Snyk.
-
-To use the Broker client with [Azure](https://azure.microsoft.com/en-us/services/devops/), **run** `docker pull snyk/broker:azure-repos` tag. The following environment variables are required to configure the Broker client:
+To use the Broker Client with [Azure](https://azure.microsoft.com/en-us/services/devops/), **run** `docker pull snyk/broker:azure-repos` tag. The following environment variables are required to configure the Broker client:
 
 * `BROKER_TOKEN` - the Snyk Broker token, obtained from your Azure Repos integration settings view (app.snyk.io).
 * `AZURE_REPOS_TOKEN` - an Azure Repos personal access token. Refer to this [Guide](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops\&tabs=preview-page) for how to get or create the token. Required scopes: ensure Custom defined is selected and under Code select _Read & write._
@@ -47,7 +45,7 @@ docker run --restart=always \
        snyk/broker:azure-repos
 ```
 
-**If necessary,** go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and **make any configuration changes** needed. For example, if the Azure Repos instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration or if you need to setup [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support).
+**If necessary,** go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and **make any configuration changes** needed, such as providing the CA (Certificate Authority) to the Broker Client configuration if the Azure Repos instance is using a private certificate, and setting up [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support).
 
 As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Azure Repos integration.
 
@@ -57,7 +55,9 @@ In addition, a fully configured `accept.json` for Snyk IaC, Code, Open Source an
 
 {% file src="../../../.gitbook/assets/accept (1) (1) (1) (3) (2).json" %}
 
-**Paste the Broker Client configuration** to start the broker client container.
+## Start the Broker Client container
+
+Paste the Broker Client configuration to start the broker client container.
 
 Once the container is up, the Azure Repos Integrations page shows the connection to Azure Repos and you can `Add Projects.`
 

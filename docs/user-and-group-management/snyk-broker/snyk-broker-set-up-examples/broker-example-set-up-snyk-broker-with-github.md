@@ -12,9 +12,7 @@ Ask your Snyk account team to provide you with a Broker token.
 You need Docker or a way to run Docker containers
 {% endhint %}
 
-The following explains how to configure Snyk Broker to be used for GItHub.
-
-**Run** `docker pull snyk/broker:github-com`. The following environment variables are required to configure the Broker client:
+To use the Snyk Broker Client with GitHub, **run** `docker pull snyk/broker:github-com`. The following environment variables are required to configure the Broker client:
 
 * `BROKER_TOKEN` - the Snyk Broker token, obtained from your Snyk Org settings view (app.snyk.io).
 * `GITHUB_TOKEN` - a personal access token with full `repo`, `read:org` and `admin:repo_hook` scopes.
