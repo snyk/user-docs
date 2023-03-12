@@ -6,7 +6,7 @@
 
 **Snyk ECR Service Role:** an IAM Role with access to ECR and assumed by the Container Registry Agent IAM Role or IAM User to gain read-only access to ECR
 
-The following illustrates the architecture for a brokered ECR integration.
+The following illustrates the architecture for a brokered ECR integration. For information on how the ECR integration works, see the ECR section on the [Container Registry Agent](./) page. For information on the components shown in the diagram, see the steps that follow.
 
 <figure><img src="https://lh5.googleusercontent.com/4DU0uB8JbZot6cxsvnygN8v9n7jyiGlOXgNAa_N9KHQnO2ouCpUUpvznQbn7PxQhu-KXLV9zAvIJoK8_5O1BulXjEki3ep1ZRjzM4t88rK9xgy7bADKAUNNge6iUJsK0e1wmrWxFg58Mr4wI8ziMmA" alt="Architecture of the brokered ECR integration"><figcaption><p>Architecture of the brokered ECR integration</p></figcaption></figure>
 
@@ -47,7 +47,7 @@ You can also provide a dedicated role in Amazon ECS tasks. For more information 
 
     Example: `arn:aws:iam::aws-account:role` or `SnykCraEc2Role`
 
-#### Stage 2: Create a policy to allow EC2 role to assume another role
+#### Stage 2: Create a policy to allow the EC2 role to assume another role
 
 1. In the newly created role page, in the **Permissions** tab, create an **Inline policy**.
 2. In **Service** choose **STS**.
