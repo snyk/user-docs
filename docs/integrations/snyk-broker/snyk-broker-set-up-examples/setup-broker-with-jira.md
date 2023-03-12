@@ -37,6 +37,10 @@ Follow these steps to configure Snyk Broker for connection to Jira.
 6. Paste the Broker Client configuration to start the Broker Client container.
 7. Once the container is up, and the Jira Integrations page shows the connection to Jira, under Projects, create Jira tickets
 
+{% hint style="info" %}
+As an alternative to the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Jira integration.
+{% endhint %}
+
 ## **Basic troubleshooting for Broker with Jira**
 
 * Run `docker logs <container id>` to look for any errors, where container id is the Jira Broker container ID.
