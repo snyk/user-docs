@@ -1,6 +1,6 @@
 # Set up Snyk Broker with GitLab
 
-Follow the instructions on this page to set up  GitLabs with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise or cloud GitLab deployment.
+Follow the instructions on this page to set up  GitLab with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise or cloud GitLab deployment.
 
 ## Configure Broker to be used for GitLab
 
@@ -12,8 +12,6 @@ Ask your Snyk account team to provide you with a Broker token.
 You need Docker or a way to run Docker containers
 {% endhint %}
 
-**Obtain** your GitLab Broker token from Snyk.
-
 To use the Broker client with GitLab.com or an on-prem GitLab deployment, **run** `docker pull snyk/broker:gitlab` tag. The following environment variables are required to configure the Broker client:
 
 * `BROKER_TOKEN` - the Snyk Broker token, obtained from your GitLab integration settings view (app.snyk.io).
@@ -24,7 +22,7 @@ To use the Broker client with GitLab.com or an on-prem GitLab deployment, **run*
 * `ACCEPT_IAC` - by default, some file types used by Infrastructure-as-Code (IaC) are not enabled. To grant the Broker access to IaC files in your repository, such as Terraform for example, you can simply add an environment variable `ACCEPT_IAC` with any combination of `tf,yaml,yml,json,tpl`
 * `ACCEPT_CODE` - by default, when using the Snyk Broker - Code Agent, Snyk Code will not load code snippets. To enable code snippets you can simply add an environment variable `ACCEPT_CODE=true`
 
-Use the following command to set up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files (with the Code Agent).
+**Use the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files (with the Code Agent).
 
 ```bash
 docker run --restart=always \
@@ -39,17 +37,19 @@ docker run --restart=always \
        snyk/broker:gitlab
 ```
 
-**If necessary,** go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and **make any configuration changes** needed. For example, if the GitlLab instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration or if you need to setup [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support).
+**If necessary,** go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and **make any configuration changes** needed, such as providing the CA (Certificate Authority to the Broker Client configuration if the GitlLab instance is using a private certificate,  or setting up [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support).
 
 As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the GitLab integration.
 
 ### Custom allowlist through ACCEPT parameter
 
-In addition, a fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for GitLab is attached in case you want to configure a custom allowlist. You cannot run the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument:
+In addition, a fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for GitLab is attached to use if you want to configure a custom allowlist. You cannot run the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument:
 
 {% file src="../../../.gitbook/assets/accept.json" %}
 
-**Paste** the Broker Client configuration to start the broker client container.
+### Start the Broker Client container
+
+Paste the Broker Client configuration to start the Broker Client container.
 
 Once the container is up, the GitLab Integrations page shows the connection to GitLab and you can `Add Projects`.
 
