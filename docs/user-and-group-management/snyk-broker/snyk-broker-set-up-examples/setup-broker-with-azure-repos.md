@@ -55,7 +55,7 @@ In addition, a fully configured `accept.json` for Snyk IaC, Code, Open Source an
 
 {% file src="../../../.gitbook/assets/accept (1) (1) (1) (3) (2).json" %}
 
-## Start the Broker Client container
+### Start the Broker Client container
 
 Paste the Broker Client configuration to start the Broker Client container.
 

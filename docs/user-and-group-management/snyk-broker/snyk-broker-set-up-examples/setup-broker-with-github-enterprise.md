@@ -12,9 +12,7 @@ Ask your Snyk account team to provide you with a Broker token.
 You need Docker or a way to run Docker containers
 {% endhint %}
 
-**Obtain** your GitHub Enterprise Broker token from Snyk.
-
-To use the Broker client with a GitHub Enterprise deployment, **run** `docker pull snyk/broker:github-enterprise` tag. The following environment variables are required to configure the Broker client:
+To use the Snyk Broker client with a GitHub Enterprise deployment, **run** `docker pull snyk/broker:github-enterprise` tag. The following environment variables are required to configure the Broker client:
 
 * `BROKER_TOKEN` - the Snyk Broker token, obtained from your Snyk Org settings view (app.snyk.io).
 * `GITHUB_TOKEN` - a personal access token with full `repo`, `read:org` and `admin:repo_hook` scopes.
@@ -43,7 +41,7 @@ docker run --restart=always \
        snyk/broker:github-enterprise
 ```
 
-**If necessary,** go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and **make any configuration changes** needed. For example, if the GitHub Enterprise instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration or if you need to setup [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support).
+**If necessary,** go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and **make any configuration changes** needed, such as providing the CA (Certificate Authority) to the Broker Client configuration if the GitHub Enterprise instance is using a private certificate, and setting up [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support).
 
 As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the GitHub Enterprise integration.
 
@@ -53,7 +51,9 @@ In addition, a fully configured `accept.json` for Snyk IaC, Code, Open Source an
 
 {% file src="../../../.gitbook/assets/accept (2).json" %}
 
-**Paste** the Broker Client configuration to start the broker client container.
+### Start the Broker Client container
+
+Paste the Broker Client configuration to start the broker client container.
 
 Once the container is up, the GitHub Enterprise Integrations page shows the connection to GitHub Enterprise and you can `Add Projects.`
 
