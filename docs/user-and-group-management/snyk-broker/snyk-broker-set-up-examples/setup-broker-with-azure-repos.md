@@ -2,7 +2,7 @@
 
 Follow the instructions on this page to set up Snyk Azure Repos with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise or cloud Azure Repos deployment.
 
-## Configure Broker to be used for Azure Repos
+## Configure Broker to be used with Azure Repos
 
 {% hint style="info" %}
 Ask your Snyk account team to provide you with a Broker token.
@@ -57,7 +57,7 @@ In addition, a fully configured `accept.json` for Snyk IaC, Code, Open Source an
 
 ## Start the Broker Client container
 
-Paste the Broker Client configuration to start the broker client container.
+Paste the Broker Client configuration to start the Broker Client container.
 
 Once the container is up, the Azure Repos Integrations page shows the connection to Azure Repos and you can `Add Projects.`
 

@@ -2,7 +2,7 @@
 
 Follow the instructions on this page to set up Bitbucket Server/Data Center with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise Bitbucket deployment.
 
-## Configure Broker to be used for Bitbucket
+## Configure Broker to be used with Bitbucket
 
 {% hint style="info" %}
 Ask your Snyk account team to provide you with a Broker token.
@@ -14,9 +14,7 @@ You need Docker or a way to run Docker containers.
 
 The following explains how to configure Snyk Broker to use the Broker Client with a Bitbucket Server deployment.
 
-**Obtain** your Bitbucket Broker token from Snyk.
-
-**Run** `docker pull snyk/broker:bitbucket-server` tag. The following environment variables are required to configure the Broker client:
+To use the Snyk Broker Client with BitBucket, **run** `docker pull snyk/broker:bitbucket-server` tag. The following environment variables are required to configure the Broker client:
 
 * `BROKER_TOKEN` - the Snyk Broker token, obtained from your Bitbucket Server integration settings view (app.snyk.io).
 * `BITBUCKET_USERNAME` - the Bitbucket Server username.
@@ -45,7 +43,7 @@ docker run --restart=always \
        snyk/broker:bitbucket-server
 ```
 
-**If necessary,** go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and **make any configuration changes** needed. For example, if the Bitbucket instance is using a private certificate, provide the CA (Certificate Authority) to the Broker Client configuration or if you need to setup [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support).
+**If necessary,** go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and **make any configuration changes** needed, such as providing the CA (Certificate Authority) to the Broker Client configuration if the Bitbucket instance is using a private certificate, and setting up [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support).
 
 As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the BitBucket Server/Data Center integration.
 
@@ -55,7 +53,9 @@ In addition, a fully configured `accept.json` for Snyk IaC, Code, Open Source an
 
 {% file src="../../../.gitbook/assets/accept (3).json" %}
 
-**Paste the Broker Client configuration** to start the broker client container.
+## Start the Broker Client container
+
+Paste the Broker Client configuration to start the broker Client container.
 
 Once the container is up, the Bitbucket Integrations page shows the connection to Bitbucket and you can `Add Projects`
 
