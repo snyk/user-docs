@@ -2,8 +2,13 @@
 
 **On the Snyk Web UI**
 
-1. Choose the Organization you want using **Switch org** <img src="../../.gitbook/assets/compare_arrows (1).png" alt="" data-size="line"> in the left navigation menu.
-2. If you add Projects through GitHub integration, these Projects are added to the currently chosen Organization.
+Choose the Organization you want using **Switch org** <img src="../../.gitbook/assets/compare_arrows (1).png" alt="" data-size="line"> in the left navigation menu.
+
+![Switch Organizations](<../../.gitbook/assets/Screenshot 2023-03-13 at 10.31.14.png>)
+
+{% hint style="info" %}
+If you add Projects through GitHub integration, these Projects are added to the currently chosen Organization.
+{% endhint %}
 
 **In the Snyk CLI**
 
@@ -13,4 +18,4 @@
 
 The default `<ORG_ID>` is the currently preferred Organization in your [Account settings](https://app.snyk.io/account).
 
-For more information see [How to select the organization to use in the CLI.](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/how-to-select-the-organization-to-use-in-the-cli)
+See [How to select the organization to use in the CLI](../../snyk-cli/test-for-vulnerabilities/how-to-select-the-organization-to-use-in-the-cli.md) for more details.
