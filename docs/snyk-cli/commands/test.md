@@ -205,7 +205,7 @@ Fail only when there are vulnerabilities that can be fixed.
 
 * `all`: fail when there is at least one vulnerability that can be either upgraded or patched.
 * `upgradable`: fail when there is at least one vulnerability that can be upgraded.
-* `patchable`: fail when there is at least one vulnerability that can be patched.
+* `patchable`: fail when there is at least one vulnerability that can be patched or vulnerabilities that can be either patched or upgraded.
 
 To fail on any vulnerability (the default behavior), do not use the `--fail-on` option. If vulnerabilities do not have a fix and this option is being used, tests pass.
 
@@ -317,6 +317,8 @@ This is useful when you have multiple projects with the same name in other `.sln
 
 `--all-projects` to scan and detect npm projects and all other projects in the directory. See the [`--all-projects` option help](https://docs.snyk.io/snyk-cli/commands/test#all-projects)
 
+`--fail-on`. See the [--fail-on option help](https://docs.snyk.io/snyk-cli/commands/test#fail-on-less-than-all-or-upgradable-or-patchable-greater-than)
+
 `--prune-repeated-subdependencies, -p`.  See the [`--prune-repeated subdependencies` option help](https://docs.snyk.io/snyk-cli/commands/test#prune-repeated-subdependencies-p)
 
 ### `--strict-out-of-sync=true|false`
@@ -327,21 +329,13 @@ If there are out-of-sync lockfiles in the project, the `test` command fails when
 
 Default: true
 
-### `--fail-on=<all|upgradable|patchable>`
-
-Configure to fail when there are vulnerabilities as follows:
-
-All: fail for all projects containing vulnerabilities.
-
-Upgradable: fail only for projects with vulnerabilities that can be fixed with package upgrades.
-
-Patchable: fail for projects with vulnerabilities that can be fixed with either upgrades or patches.
-
 ## Options for Yarn projects
 
 **Note**: You can use the following options with Yarn projects:
 
 `--dev`. See the [`--dev` option help](https://docs.snyk.io/snyk-cli/commands/test#dev)
+
+`--fail-on`. See the [--fail-on option help](https://docs.snyk.io/snyk-cli/commands/test#fail-on-less-than-all-or-upgradable-or-patchable-greater-than)
 
 `--prune-repeated-subdependencies, -p`.  See the [`--prune-repeated subdependencies` option help](https://docs.snyk.io/snyk-cli/commands/test#prune-repeated-subdependencies-p)
 
@@ -361,17 +355,7 @@ You can specify how many sub-directories to search using `--detection-depth.`
 
 You can exclude directories and files using `--exclude`.
 
-Default: `--all-projects` automatically detects and scans Yarn Workspaces.with other projects.&#x20;
-
-### `--fail-on=<all|upgradable|patchable>`
-
-Configure to fail when there are vulnerabilities as follows:
-
-All: fail for all projects containing vulnerabilities.
-
-Upgradable: fail only for projects with vulnerabilities that can be fixed with package upgrades.
-
-Patchable: fail for projects with vulnerabilities that can be fixed with either upgrades or patches.
+Default: `--all-projects` automatically detects and scans Yarn Workspaces.with other projects.
 
 ## Option for CocoaPods projects
 
