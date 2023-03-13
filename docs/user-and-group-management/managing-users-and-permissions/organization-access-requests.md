@@ -24,7 +24,7 @@ Only a valid URL for a project or status check allows a user to request access. 
 
 A user can only request access once per Organization in 48 hours.
 
-After a user requests access, all administrators of the org are notified by email, and can opt to send an invitation to the user by email.
+After a user requests access, all administrators of the Organization are notified by email, and can opt to send an invitation to the user by email.
 
 After the requester accepts the invitation, they have access to the Organization.
 
@@ -32,4 +32,4 @@ After the requester accepts the invitation, they have access to the Organization
 
 To access settings, select the **Settings** > **General** option, then navigate to the **Requesting Access** section and select to enable or disable request access:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-09-27 at 09.44.52.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-27 at 09.44.52.png" alt="Enable / disable request access"><figcaption><p>Enable / disable request access</p></figcaption></figure>

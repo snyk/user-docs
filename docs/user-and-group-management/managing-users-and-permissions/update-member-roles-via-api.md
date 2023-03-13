@@ -1,6 +1,6 @@
 # Update Member Roles via API
 
-To migrate members of existing organizations to new roles you must use the Snyk API.
+To migrate members of existing organizations to new roles you must use the [Snyk API](../../snyk-api-info/).
 
 Follow the steps in each section of this document. Snyk recommends running these updates with bounded concurrency in batches so as not to trip any of the rate limiters. Optimally, perform the updates in batches of **10** concurrent requests at a time.
 
@@ -20,9 +20,9 @@ This call returns an array of objects each describing custom and non-custom (for
 
 This call returns an array of all non-admin members of the Organization. Save the `id` of each user who should have a new role.
 
-**Note:** Service accounts are not returned by the list members in an organization endpoint. You must get the **public IDs** of service accounts from the Service Account Settings page.
+Listing public IDs
 
-To get the public ID of a service account from the service account settings:
+Service accounts are not returned by the list members in an organization endpoint. You must get the **public IDs** of service accounts from the Service Account Settings page:
 
 * In your **Service Accounts Settings**, select the **name of the service account** for which you want to get the public id.
 * When the **Edit account name** window opens, copy the string at the end of the URL; this is the **public ID** of the service account.
@@ -39,4 +39,4 @@ You pass a `rolePublicId` in the JSON-formatted body of the request. This is the
 
 For a successful request the response is `200 OK`.
 
-Your can verify the change on the Org members page (for humans) or the Service Account Settings page (for robots).
+You can verify the change on the Org members page (for humans) or the Service Account Settings page (for robots).
