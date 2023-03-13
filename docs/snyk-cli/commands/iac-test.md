@@ -10,7 +10,7 @@ The `snyk iac test` command tests for any known security issue.
 
 For a list of related commands see the [snyk iac](iac.md) help; `iac --help`
 
-For more information see [Snyk CLI for Infrastructure as Code](https://docs.snyk.io/products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code)
+For more information see [Snyk CLI for Infrastructure as Code](https://docs.snyk.io/scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code)
 
 ## Exit codes
 
@@ -53,7 +53,7 @@ Default: `<ORG_ID>` that is the current preferred organization in your [Account 
 
 Note that you can also use `--org=<orgslugname>`. The `ORG_ID` works in both the CLI and the API. The organization slug name works in the CLI, but not in the API.
 
-For more information see the article [How to select the organization to use in the CLI](https://support.snyk.io/hc/en-us/articles/360000920738-How-to-select-the-organization-to-use-in-the-CLI)
+For more information see the article [How to select the organization to use in the CLI](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/how-to-select-the-organization-to-use-in-the-cli)
 
 ### `--ignore-policy`
 
@@ -97,7 +97,7 @@ Set the project business criticality project attribute to one or more values (co
 
 Allowed values: `critical, high, medium, low`
 
-For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes)
+For more information see Project attributes
 
 This option is not supported for Integrated IaC (Limited Availability).
 
@@ -109,7 +109,7 @@ Set the project environment project attribute to one or more values (comma-separ
 
 Allowed values: `frontend`, `backend`, `internal`, `external`, `mobile`, `saas`, `onprem`, `hosted`, `distributed`
 
-For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes)
+For more information see [Project attributes](https://docs.snyk.io/manage-issues/introduction-to-snyk-projects/project-attributes)
 
 This option is not supported for Integrated IaC (Limited Availability).
 
@@ -121,7 +121,7 @@ Set the project lifecycle project attribute to one or more values (comma-separat
 
 Allowed values: `production`, `development`, `sandbox`
 
-For more information see [Project attributes](https://docs.snyk.io/getting-started/introduction-to-snyk-projects/view-project-information/project-attributes)
+For more information see [Project attributes](https://docs.snyk.io/manage-issues/introduction-to-snyk-projects/project-attributes)
 
 This option is not supported for Integrated IaC (Limited Availability).
 
@@ -137,7 +137,7 @@ To clear the project tags set `--project-tags=`
 
 This option is not supported for Integrated IaC (Limited Availability).
 
-For more information including allowable characters see [Project tags](https://docs.snyk.io/snyk-web-ui/introduction-to-snyk-projects/project-tags)
+For more information including allowable characters see [Project tags](https://docs.snyk.io/manage-issues/introduction-to-snyk-projects/project-tags)
 
 ### `--remote-repo-url=<URL>`
 
@@ -212,7 +212,7 @@ Example:
 
 ### `--snyk-cloud-environment=<ENVIRONMENT_ID>`
 
-Use the last scan from your Snyk Cloud Environment to suppress issues. For more information, see [Adding cloud context to your IaC test](https://docs.snyk.io/products/snyk-infrastructure-as-code/integrated-infrastructure-as-code/adding-cloud-context-to-your-iac-test)
+Use the last scan from your Snyk Cloud Environment to suppress issues. For more information, see [Adding cloud context to your IaC test](https://docs.snyk.io/scan-cloud-deployment/snyk-infrastructure-as-code/integrated-infrastructure-as-code/adding-cloud-context-to-your-iac-test)
 
 This option is only supported for Integrated IaC (Limited Availability).
 
@@ -222,7 +222,7 @@ Example:
 
 ### `--cloud-context=<ENVIRONMENT>`
 
-Scan your cloud environment and use the result to suppress issues. For information on how to authenticate with your cloud provider, see [Adding cloud context to your IaC test](https://docs.snyk.io/products/snyk-infrastructure-as-code/integrated-infrastructure-as-code/adding-cloud-context-to-your-iac-test)
+Scan your cloud environment and use the result to suppress issues. For information on how to authenticate with your cloud provider, see [Adding cloud context to your IaC test](https://docs.snyk.io/scan-cloud-deployment/snyk-infrastructure-as-code/integrated-infrastructure-as-code/adding-cloud-context-to-your-iac-test)
 
 This option is only supported for Integrated IaC (Limited Availability).
 
@@ -232,7 +232,7 @@ Example:
 
 ## Examples for snyk iac test command
 
-For more information see [Snyk CLI for Infrastructure as Code](https://docs.snyk.io/products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code)
+For more information see [Snyk CLI for Infrastructure as Code](https://docs.snyk.io/scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code)
 
 ### Test a CloudFormation file
 
