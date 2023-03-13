@@ -4,11 +4,13 @@
 Please read the [Getting started with Snyk: Enterprise plan](getting-started-with-snyk-enterprise-plan.md) guide before you read this guide.
 {% endhint %}
 
-## Introduction
-
 In this guide, we’ll look at a few planning steps and walk through some initial configuration options that you should complete before inviting more teams and scanning additional applications.&#x20;
 
-#### Topics to consider
+{% hint style="info" %}
+If you have been using Snyk on the Free/Team Plan and are looking for guidance on upgrading to the Enterprise plan, read the [Upgrading to Enterprise Plan](upgrading-to-enterprise-plan.md) guide.
+{% endhint %}
+
+### Topics to consider
 
 There are several topics that you should consider before you launch Snyk to other teams in your organization. Here are some areas to consider:
 

@@ -4,6 +4,10 @@
 
 In this guide, we’ll look at how you can get several team members involved in trying Snyk to get feedback and buy-in.
 
+{% hint style="info" %}
+If you have been using Snyk on the Free/Team Plan and are looking for guidance on upgrading to the Enterprise plan, read the [Upgrading to Enterprise Plan](upgrading-to-enterprise-plan.md) guide.
+{% endhint %}
+
 Snyk has a number of tools and processes that help secure your entire software development lifecycle. With Snyk, you can scan while you’re coding. You can also monitor code when you’re not working on it. Snyk also provides visibility into issues across your projects with a git repository integration. And Snyk can integrate into CI/CD through integrations, the CLI, or curated containers.
 
 For users evaluating Snyk or planning an enterprise deployment, for most programming languages, we recommend integrating with a Git repository to get started.&#x20;

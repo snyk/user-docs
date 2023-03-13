@@ -9,7 +9,7 @@ This feature is available with Enterprise plans. See [pricing plans](https://sny
 
 You can set up a **service account**, to be used for continuous integration (CI) and other automation purposes without using a Snyk user’s token.
 
-Service accounts are a special type of system user that has only an API token associated with it, substituting for standard user credentials. Use this token to provide credentials for accessing your Snyk account when setting up integration with your development tools and when working with the Snyk [CLI](../../snyk-cli/) and [API](../../snyk-api/).
+Service accounts are a special type of system user that has only an API token associated with it, substituting for standard user credentials. Use this token to provide credentials for accessing your Snyk account when setting up integration with your development tools and when working with the Snyk [CLI](../../snyk-cli/) and [API](../../snyk-api-info/).
 
 You can generate single or multiple tokens on the Organization or Group levels to manage your integrations. Use **Group-level tokens** to access group API endpoints, organization API endpoints, and the CLI **for all organizations in the Group**.
 
@@ -86,7 +86,7 @@ Make sure you copy this token as you won’t see it again. You can click **Close
 
 The new token is also added to your **Existing service accounts** list, like the list in this example:
 
-<figure><img src="../../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en (1) (1) (1) (1) (1) (1) (1) (1) (19).png" alt="Existing service accounts for a Group"><figcaption><p>Existing service accounts for a Group</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (17).png" alt="Existing service accounts for a Group"><figcaption><p>Existing service accounts for a Group</p></figcaption></figure>
 
 In addition, if you created the token for the entire Group with a **Group Admin** role, the token also appears in the **Existing service accounts** list for each of its Organizations, though it can only be edited at the **Group** level.
 
@@ -125,7 +125,7 @@ Deleting a service account is the same as revoking the API token.
 * Click on settings <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Service accounts**.
 * Scroll to find the list of existing service accounts:
 
-<figure><img src="../../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en (1) (1) (1) (1) (1) (1) (1) (1) (19).png" alt="Existing service accounts for a Group"><figcaption><p>Existing service accounts for a Group</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/uuid-799b88fc-d1d7-72c9-5ceb-30fb2a8d572e-en (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (17).png" alt="Existing service accounts for a Group"><figcaption><p>Existing service accounts for a Group</p></figcaption></figure>
 
 * From the list of existing tokens:
   * Click the token name to navigate to **change the token name** and click **Save**.

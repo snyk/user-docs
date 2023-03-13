@@ -2,7 +2,7 @@
 
 ## Snyk Error Codes
 
-The error codes in the table below describe the codes that you may encounter while working with the [Snyk API](../snyk-api/) or [CLI](../snyk-cli/). When errors are encountered using the API, they will also have an appropriate [HTTP status code](https://en.wikipedia.org/wiki/List\_of\_HTTP\_status\_codes). If you encounter errors without an error code, use the HTTP status code to determine the appropriate action.
+The error codes in the table below describe the codes that you may encounter while working with the [Snyk API](../snyk-api-info/) or [CLI](../snyk-cli/). When errors are encountered using the API, they will also have an appropriate [HTTP status code](https://en.wikipedia.org/wiki/List\_of\_HTTP\_status\_codes). If you encounter errors without an error code, use the HTTP status code to determine the appropriate action.
 
 ***
 

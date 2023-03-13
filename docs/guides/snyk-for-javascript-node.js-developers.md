@@ -239,7 +239,7 @@ Use the **--help** option in the CLI or [docs](https://docs.snyk.io/snyk-cli/cli
 For Snyk Open Source, the **snyk \[product] monitor** command is used to push results from the CLI back to Snyk for reporting in the Snyk UI. Don’t forget to use **--org=** to indicate what organization to place the monitored results in or retrieve test settings from during the test.&#x20;
 
 {% hint style="info" %}
-Snyk Enterprise plan customers can access the [Snyk API](../snyk-api/) for reporting and extracting data.
+Snyk Enterprise plan customers can access the [Snyk API](../snyk-api-info/) for reporting and extracting data.
 {% endhint %}
 
 #### Proxies
