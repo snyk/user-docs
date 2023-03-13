@@ -69,7 +69,7 @@ If you have several Organizations, one of these organizations is set by default 
 
 **To change your Preferred Organization:**
 
-1\. On the Snyk Web UI, click your Account icon on the top right corner of the screen. Then, select the **Account settings** option:
+1\. On the Snyk Web UI, click your Account icon on the bottom left corner of the screen. Then, select the **Account settings** option:
 
 <figure><img src="../../.gitbook/assets/snyk-account-settings.png" alt="Account settings"><figcaption><p>Account settingd</p></figcaption></figure>
 
