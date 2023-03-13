@@ -8,7 +8,7 @@ When you sign up to Snyk, you’ll see you have a default Organization named lik
 
 You can create an Organization, or join an Organization by invitation. If you have more than one Organization, you can switch between Organizations using the Snyk Web UI or the CLI.
 
-See [Manage Snyk Organizations](../structure-account-for-high-application-performance/manage-snyk-organizations.md) for details.
+See [Manage Snyk Organizations](../../snyk-admin/managing-groups-and-organizations/manage-snyk-organizations.md) for details.
 
 ### Notifications
 

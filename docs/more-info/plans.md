@@ -28,7 +28,7 @@ During the 14-day Business Plan (legacy) trial period, you will have limited or 
 
 * [**Single Sign-On (SSO)**](../user-and-group-management/setting-up-sso-for-authentication/)**:** Not available.
 * [**Custom Project Tags**](../manage-issues/introduction-to-snyk-projects/project-tags.md)**:** Not available.
-* [**Service Accounts**](../user-and-group-management/structure-account-for-high-application-performance/service-accounts.md)**:** Not available.
+* [**Service Accounts**](../snyk-admin/service-accounts.md)**:** Not available.
 * [**Group / Multiple Orgs**](../user-and-group-management/managing-groups-and-organizations/)**:** Limited to one group and one org.
 
 {% hint style="info" %}

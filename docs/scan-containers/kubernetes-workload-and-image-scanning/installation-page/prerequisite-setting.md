@@ -18,7 +18,7 @@ limits: cpu: "1" memory: "2Gi"
 
 * Your Kubernetes cluster must be able to communicate with Snyk outbound over HTTPS.
 * [Enable the Kubernetes Integration ](../kubernetes-integration-overview/viewing-your-kubernetes-integration-settings.md)to get your **Integration ID.**
-* Create a **Group** or **Org** **Service Account Token** as described in the [Snyk Service Account documentation](../../../user-and-group-management/structure-account-for-high-application-performance/service-accounts.md). There are three (3) different roles that allow the integration to publish data:&#x20;
+* Create a **Group** or **Org** **Service Account Token** as described in the [Snyk Service Account documentation](../../../snyk-admin/service-accounts.md). There are three (3) different roles that allow the integration to publish data:&#x20;
   * Group Admin
   * Org Admin
   * Org custom role with the permission: “Publish Kubernetes Resources”

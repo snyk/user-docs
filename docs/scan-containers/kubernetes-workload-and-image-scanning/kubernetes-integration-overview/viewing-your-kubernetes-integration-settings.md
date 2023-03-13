@@ -18,7 +18,7 @@ This feature is available in Enterprise plans. See [pricing plans](https://snyk.
 
 ![](<../../../.gitbook/assets/image (111) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
-5\. Create a [**Group** or **Org Service Account Token**](../../../user-and-group-management/structure-account-for-high-application-performance/service-accounts.md). This **Service Account Token** is needed during the Snyk Controller installation
+5\. Create a [**Group** or **Org Service Account Token**](../../../snyk-admin/service-accounts.md). This **Service Account Token** is needed during the Snyk Controller installation
 
 ## Viewing In the relevant organization:
 

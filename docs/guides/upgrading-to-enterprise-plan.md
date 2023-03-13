@@ -13,7 +13,7 @@ Snyk Enterprise features include:
 
 * [Snyk Group with multiple orgs](../user-and-group-management/managing-groups-and-organizations/whats-a-snyk-group.md)
 * [Single Sign-On](../user-and-group-management/setting-up-sso-for-authentication/)
-* [Service accounts](../user-and-group-management/structure-account-for-high-application-performance/service-accounts.md)
+* [Service accounts](../snyk-admin/service-accounts.md)
 * [Rich API](../snyk-api-info/)
 * [Reports](../manage-issues/snyk-reports/)
 * [Security policy management](../manage-issues/security-policies/)
@@ -63,7 +63,7 @@ See the [Snyk account structure](https://training.snyk.io/courses/snyk-account-s
 
 ### Create additional Organizations&#x20;
 
-To create a new Organization, open the Organization switcher in the navigation panel and select **Create new Organization**. See [Manage Snyk organizations](../user-and-group-management/structure-account-for-high-application-performance/manage-snyk-organizations.md) for more details.
+To create a new Organization, open the Organization switcher in the navigation panel and select **Create new Organization**. See [Manage Snyk organizations](../snyk-admin/managing-groups-and-organizations/manage-snyk-organizations.md) for more details.
 
 #### Using an existing Organization as a template
 
@@ -124,7 +124,7 @@ See the [SSO, authentication and user provisions](https://training.snyk.io/cours
 
 ### Using Service accounts
 
-[Service accounts](../user-and-group-management/structure-account-for-high-application-performance/service-accounts.md) allow you to better scale and automate.
+[Service accounts](../snyk-admin/service-accounts.md) allow you to better scale and automate.
 
 * If you use CI/CD (using a [CI/CD integration](../integrations/ci-cd-integrations/) or the [Snyk CLI](../snyk-cli/)), we recommend you use a service account.
 * If you use an IDE plugin or the CLI to test in your local environment, we recommend you use personal access tokens.&#x20;
