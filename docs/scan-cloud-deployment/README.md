@@ -10,7 +10,4 @@ With Snyk, you can secure cloud infrastructure before and after it is deployed. 
 * [Filter issues](snyk-cloud/snyk-cloud-issues/) to target the most mission-critical resources.
 * Review a [report of issues](../manage-issues/snyk-reports/reporting-beta-2022/available-snyk-reports.md#cloud-compliance-issues-report) for an entire organization, organized by compliance standard.
 
-For a list of supported environments and cloud providers, see the following:
-
-* [Snyk IaC - Supported environments](snyk-infrastructure-as-code/snyk-iac-supported-environments.md)
-* [Snyk Cloud - Supported providers](snyk-cloud/snyk-cloud-supported-providers.md)
+For a list of supported environments and cloud providers, see [Supported providers - IaC and Cloud](supported-providers-iac-and-cloud.md).
