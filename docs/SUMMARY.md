@@ -184,7 +184,7 @@
     * [Connect Snyk to Heroku](integrations/platform-as-a-service-integrations/connect-snyk-to-heroku.md)
     * [Pivotal overview](integrations/platform-as-a-service-integrations/pivotal-integration-overview.md)
   * [Event Forwarding](integrations/event-forwarding/README.md)
-    * [AWS CloudTrail Lake integration](integrations/event-forwarding/aws-cloudtrail-lake-integration.md)
+    * [AWS CloudTrail Lake](integrations/event-forwarding/aws-cloudtrail-lake.md)
 * [Scan application code](scan-application-code/README.md)
   * [Snyk Open Source](products/snyk-open-source/README.md)
     * [Snyk Open Source - supported languages and package managers](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/README.md)
