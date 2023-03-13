@@ -45,7 +45,7 @@ Snyk CLI can be configured to:
 
 ## Configure your continuous integration
 
-To continuously avoid known vulnerabilities in your dependencies, integrate Snyk into your continuous integration (build) system. In addition to this documentation, see the [integration configuration examples](https://github.com/snyk/actions#snyk-github-actions) in the Snyk actions GitHub repository.
+To continuously avoid known vulnerabilities in your dependencies, integrate Snyk into your continuous integration (build) system. In addition to this documentation, see the [integration configuration examples](https://github.com/snyk-labs/snyk-cicd-integration-examples) in the Snyk Labs GitHub repository.
 
 ### Set up automatic monitoring
 
