@@ -619,7 +619,7 @@
     * [Session length](user-and-group-management/managing-users-and-permissions/session-length.md)
     * [Switch between Snyk Organizations](user-and-group-management/managing-users-and-permissions/switch-between-snyk-organization.md)
   * [Managing groups & organizations](user-and-group-management/managing-groups-and-organizations/README.md)
-    * [What’s a Snyk group?](user-and-group-management/managing-groups-and-organizations/whats-a-snyk-group.md)
+    * [What’s a Snyk Group?](user-and-group-management/managing-groups-and-organizations/whats-a-snyk-group.md)
     * [Snyk groups overview](user-and-group-management/managing-groups-and-organizations/snyk-groups-overview.md)
     * [Create a new Snyk group](user-and-group-management/managing-groups-and-organizations/create-a-new-snyk-group.md)
     * [What’s a Snyk Organization?](user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization.md)
