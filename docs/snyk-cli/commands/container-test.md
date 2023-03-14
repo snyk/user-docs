@@ -120,7 +120,7 @@ For more information see [Detecting application vulnerabilities in container ima
 
 ### `--nested-jars-depth`
 
-When using `--app-vulns` use the `--nested-jars-depth` option to set how many levels of nested jars Snyk is to unpack. Depth must be a number.
+When `app-vulns` is enabled, use the `--nested-jars-depth` option to set how many levels of nested jars Snyk is to unpack. Depth must be a number.
 
 ### `--exclude-base-image-vulns`
 
