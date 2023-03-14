@@ -4,11 +4,13 @@
 
 In Elastic Container Registries the brokered communication is the same as in other container registries. However, ECR has a special authentication mechanism that requires setting up an Identify and Access Management (IAM) Role or User in the Agent.
 
-The **Container Registry Agent IAM Role or IAM User** is an IAM Role or IAM User used by the Container Registry Agent to assume a role with access to ECR.
+The **Container Registry Agent IAM Role or IAM User** is an IAM Role or IAM User is used by the Container Registry Agent to assume a role with access to ECR.
 
-The **Snyk ECR Service Role is an I**AM Role with access to ECR and assumed by the Container Registry Agent IAM Role or IAM User to gain read-only access to ECR.
+The **Snyk ECR Service Role is an IAM Role** with access to ECR and assumed by the Container Registry Agent IAM Role or IAM User to gain read-only access to ECR. The Snyk Service ECR Role ARN is provided to the Broker Client together with the region the ECR runs in, and is passed to the Container Registry Agent that will assume it.
 
-The following illustrates the architecture for a brokered ECR integration. Refer to the steps that follow for information about the components on the diagram.
+If there are multiple ECRs in multiple accounts that need to communicate with the Container Registry Agent, you must set up a Broker Client for each ECR.
+
+The following illustrates the architecture for a brokered ECR integration. Refer to the steps that follow for information about setting up the components on the diagram.
 
 <figure><img src="https://lh5.googleusercontent.com/4DU0uB8JbZot6cxsvnygN8v9n7jyiGlOXgNAa_N9KHQnO2ouCpUUpvznQbn7PxQhu-KXLV9zAvIJoK8_5O1BulXjEki3ep1ZRjzM4t88rK9xgy7bADKAUNNge6iUJsK0e1wmrWxFg58Mr4wI8ziMmA" alt="Architecture of the brokered ECR integration"><figcaption><p>Architecture of the brokered ECR integration</p></figcaption></figure>
 
