@@ -41,13 +41,13 @@ When scanning an image using a container registry, Kubernetes integration, or th
 
 #### App Vulns Flag
 
-Beginning January 24th, 2023, Snyk will scan for application dependencies in your image by default, without the need to specify the `--app-vulns` flag.
+In CLI versions 1.1090.0 (2023-01-24) and higher, Snyk scans for application dependencies in your image by default; you do not need to specify the `--app-vulns` flag.
 
 If you wish to opt out of application vulnerability scanning, you can do so by specifying the `--exclude-app-vulns` flag — which will omit the application vulnerabilities section from the results, mimicking the previous behavior. The `--exclude-app-vulns` flag is available in CLI version 1.1021.0 and above.
 
 #### Nested Jars Depth Flag
 
-For Java applications, when using `--app-vulns`, you can also use the `--nested-jars-depth=n` flag to set how many levels of nested jars Snyk will unpack. The implicit default is 1. When you specify 2, it means that Snyk unzips jars in jars; 3 means Snyk unzips jars in jars in jars, and so on.
+For Java applications, when `--app-vulns` is enabled, you can also use the `--nested-jars-depth=n` flag to set how many levels of nested jars Snyk will unpack. The implicit default is 1. When you specify 2, it means that Snyk unzips jars in jars; 3 means Snyk unzips jars in jars in jars, and so on.
 
 Users can use `--nested-jar-depth=0` to opt out of any scans they feel are unnecessary.
 
