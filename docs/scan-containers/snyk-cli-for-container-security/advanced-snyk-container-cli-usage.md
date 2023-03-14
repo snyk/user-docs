@@ -45,15 +45,15 @@ Note that the options take precedence over the environment variables in the case
 
 Some useful CLI options include the following:
 
-| Option                       | Description                                                                                                                                                                                                  |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `--json`                     | Print results in JSON format, useful for integrating with other tools                                                                                                                                        |
-| `--sarif`                    | Return results in [SARIF](https://www.oasis-open.org/committees/tc\_home.php?wg\_abbrev=sarif) format, useful for integrating with other tools. Note this requires the test to be run with `--file` as well. |
-| `--exclude-base-image-vulns` | Do not show vulnerabilities introduced only by the base image. Available when using `snyk container test` only.                                                                                              |
-| `--severity-threshold`       | Report only vulnerabilities at the specified level or higher.                                                                                                                                                |
-| `--exclude-app-vulns`        | Allow disabling scans for app vulnerabilities in advance of `app-vulns` being enabled by default. Cannot be used with`--app-vulns`.                                                                          |
-| `--nested-jars-depth`        | When using `--app-vulns` use the `--nested-jars-depth=n` option to set how many levels of nested jars Snyk is to unpack.                                                                                     |
-| `--fail-on`                  | Fail only when there are vulnerabilities that can be fixed.                                                                                                                                                  |
+| Option                       | Description                                                                                                                                                                                                                     |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `--json`                     | Print results in JSON format, useful for integrating with other tools                                                                                                                                                           |
+| `--sarif`                    | Return results in [SARIF](https://www.oasis-open.org/committees/tc\_home.php?wg\_abbrev=sarif) format, useful for integrating with other tools. Note this requires the test to be run with `--file` as well.                    |
+| `--exclude-base-image-vulns` | Do not show vulnerabilities introduced only by the base image. Available when using `snyk container test` only.                                                                                                                 |
+| `--severity-threshold`       | Report only vulnerabilities at the specified level or higher.                                                                                                                                                                   |
+| `--exclude-app-vulns`        | <p>Allow disabling scans for app vulnerabilities; in CLI versions 1.1090.0 (2023-01-24) and higher,  <code>app-vulns</code> is enabled by default.</p><p>In earlier releases, cannot be used with <code>--app-vulns</code>.</p> |
+| `--nested-jars-depth`        | When`--app-vulns` is enabled, use the `--nested-jars-depth=n` option to set how many levels of nested jars Snyk is to unpack.                                                                                                   |
+| `--fail-on`                  | Fail only when there are vulnerabilities that can be fixed.                                                                                                                                                                     |
 
 For more options, see the [Snyk CLI container help](../../snyk-cli/commands/#snyk-container) or display the help by running:
 
