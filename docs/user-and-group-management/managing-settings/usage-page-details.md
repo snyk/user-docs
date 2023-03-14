@@ -1,16 +1,16 @@
 # Usage page details
 
-Click on settings ![](../../.gitbook/assets/cog\_icon.png) > **Usage** to view Snyk usage details including:
+Click on **Settings** > **Usage** to view Snyk usage details, including:
 
-* The numbers of tests used.
-* The number of developers contributing to projects.
-* Project test usage settings.
+* [Test usage](usage-page-details.md#test-usage): the number of tests used.
+* [Contributing developers](usage-page-details.md#contributing-developers): the number of developers contributing to Projects.
+* [Projects](usage-page-details.md#projects): Project test usage settings.
 
 ### Test usage
 
 The **Test Usage** section shows how many tests you are using over the current billing period:
 
-![](../../.gitbook/assets/test-usage.png)
+<figure><img src="../../.gitbook/assets/test-usage.png" alt="Test usage data"><figcaption><p>Test usage data</p></figcaption></figure>
 
 {% hint style="info" %}
 Test limits vary for Snyk products and plans. See the [plans page](https://snyk.io/plans/) for details.
@@ -36,11 +36,10 @@ We do not count contributions to public (open source) repos currently as our pri
 
 For example:
 
-![](../../.gitbook/assets/image\_\_10\_.png)
+<figure><img src="../../.gitbook/assets/image__10_.png" alt="Contributing developers results"><figcaption><p>Contributing developers results</p></figcaption></figure>
 
-The **total unique contributors across all integrations** count shows the number of contributors across all the integrations in your Snyk account. Contributing developers are only counted once, even if they have contributed to multiple integrations or multiple repositories.
-
-The **Breakdown by integration** section shows the number of contributors, orgs, and repos in that integration.
+* **Total unique contributors across all integrations:** the number of contributors across all the integrations in your Snyk account. Contributing developers are only counted once, even if they have contributed to multiple integrations or multiple repositories.
+* **Breakdown by integration**: the number of contributors, Organizations, and repos in that integration.
 
 #### Contributor emails
 
@@ -48,20 +47,20 @@ Each contributor is counted by the **author** email field, which is set within t
 
 ### Projects
 
-The **Projects** section shows test usage settings for your projects:
+The **Projects** section shows test usage settings for your Projects:
 
 #### Bulk actions
 
-For **Bulk actions**, select relevant projects, then select to **Delete**, **Activate** or **Deactivate** the selected projects:
+For **Bulk actions**, select relevant Projects, then select to **Delete**, **Activate** or **Deactivate** the selected projects:
 
-![](../../.gitbook/assets/usage-projects-bulk-actions.png)
+<figure><img src="../../.gitbook/assets/usage-projects-bulk-actions.png" alt="Bulk actions on Projects"><figcaption><p>Bulk actions on Projects</p></figcaption></figure>
 
 #### Set test frequency
 
-You can set the frequency of testing for each project.
+You can set the frequency of testing for each Project.
 
-For each entry, you can select the frequency of testing for that project (never, daily, or weekly)
+For each entry, you can select the frequency of testing for that Project (never, daily, or weekly)
 
-![](../../.gitbook/assets/usage-projects-single.png)
+<figure><img src="../../.gitbook/assets/usage-projects-single.png" alt="Select test frequency"><figcaption><p>Select test frequency</p></figcaption></figure>
 
-Click **Deactivate** to never test, and also remove webhooks and stop showing the project’s results in reporting.
+Click **Deactivate** to never test, and also remove webhooks and stop showing the Project’s results in reporting.
