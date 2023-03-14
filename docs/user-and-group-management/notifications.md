@@ -26,27 +26,27 @@ Snyk offers notifications for:
 
 Snyk includes a range of controls to manage your own notifications.
 
-Administrators can also manage the notification defaults for others in the [group](notifications.md#define-group-notification-defaults) or [organization](notifications.md#define-organization-notification-defaults).
+Administrators can also manage the notification defaults for others in the [Group](notifications.md#define-group-notification-defaults) or [Organization](notifications.md#define-organization-notification-defaults).
 
 You can also send notifications for an organization to a designated [Slack channel](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration).
 
-![](<../.gitbook/assets/image (48) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+<figure><img src="../.gitbook/assets/image (48) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Notification example"><figcaption><p>Notification example</p></figcaption></figure>
 
-### Define group notification defaults
+### Define Group notification defaults
 
-Define the notification settings at the [group](https://docs.snyk.io/features/user-and-group-management/managing-groups-and-organizations/whats-a-snyk-group) level to define the template for how Snyk sends issue alert emails, weekly report emails, usage alert emails, and report status emails for organizations created in that group. You can also access the default settings for existing individual organizations at the group level.
+Define the notification settings at the [Group](managing-groups-and-organizations/whats-a-snyk-group.md) level to define the template for how Snyk sends issue alert emails, weekly report emails, usage alert emails, and report status emails for Organizations created in that Group. You can also access the default settings for existing individual Organizations at the Group level.
 
 {% hint style="info" %}
-When you change the group default settings, it does not change the settings for existing organizations or projects. Individual users can override the default notification settings.
+When you change the Group default settings, it does not change the settings for existing Organizations or Projects. Individual users can override the default notification settings.
 {% endhint %}
 
-To navigate to the group level notification settings:
+To navigate to the Group level notification settings:
 
 1. Navigate to the Group overview for the group you want to change.
 2. Select the Settings icon.
 3. Select **Notifications**.
 
-![](<../.gitbook/assets/image (155) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+<figure><img src="../.gitbook/assets/image (155) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Set Group-level notifications"><figcaption><p>Set Group-level notifications</p></figcaption></figure>
 
 #### Issue alert emails
 
@@ -63,7 +63,7 @@ To set the defaults for issue alert emails:
 
 Weekly report emails are notifications Snyk sends to provide a summary of the vulnerability status across all projects and organizations to which a user belongs. For an organization with zero vulnerabilities across its projects, the notification lists the number of active projects, number of known vulnerabilities, and total dependencies.
 
-![](../.gitbook/assets/2022-06-27\_13-45-21.png)
+<figure><img src="../.gitbook/assets/2022-06-27_13-45-21.png" alt="Weekly report emails"><figcaption><p>Weekly report emails</p></figcaption></figure>
 
 To set the defaults for weekly report emails:
 
@@ -74,7 +74,7 @@ To set the defaults for weekly report emails:
 
 Usage alert emails are notifications Snyk sends to warn when you are approaching usage limits.
 
-![](../.gitbook/assets/2022-06-27\_13-47-51.png)
+<figure><img src="../.gitbook/assets/2022-06-27_13-47-51.png" alt="Usage alerts"><figcaption><p>Usage alerts</p></figcaption></figure>
 
 To set the defaults for usage alerts:
 
@@ -104,7 +104,7 @@ To navigate to the organization level notification settings:
 2. Select the Settings icon.
 3. Select **Notifications**.
 
-![](../.gitbook/assets/2022-06-27\_13-56-10.png)
+<figure><img src="../.gitbook/assets/2022-06-27_13-56-10.png" alt="Organization-level notifications"><figcaption><p>Organization-level notifications</p></figcaption></figure>
 
 #### Issue alert emails
 
@@ -181,6 +181,6 @@ To receive usage alerts for an organization, check the box next to that organiza
 
 #### Report status emails
 
-Report status emails are notifications Snyk sends to let you know when serverless project tests complete.
+Report status emails are notifications Snyk sends to let you know when serverless project tests are complete.
 
-To redeive report status emails for an organization, check the box next to that organization.
+To receive report status emails for an organization, check the box next to that organization.
