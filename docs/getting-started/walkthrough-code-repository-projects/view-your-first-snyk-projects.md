@@ -23,9 +23,9 @@ When [setting up your GitHub integration](../../integrations/git-repository-scm-
 
 <figure><img src="../../.gitbook/assets/image (405).png" alt="Set whether Snyk can access private repos"><figcaption><p>Set whether Snyk can access private repos</p></figcaption></figure>
 
-When you then import a Project, private repositories are identified with a “lock” symbol (<img src="../../.gitbook/assets/image (101) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">) in the imported scan details:
+When you then import a Project, private repositories are identified with a “lock” symbol (<img src="../../.gitbook/assets/image (101) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">) in the imported scan details:
 
-<figure><img src="../../.gitbook/assets/image (125) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Private repos with lock symbol"><figcaption><p>Private repos with lock symbol</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (125) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Private repos with lock symbol"><figcaption><p>Private repos with lock symbol</p></figcaption></figure>
 
 For customers on free plans, private repository scans count towards your test count limit.
 
@@ -44,7 +44,7 @@ A Snyk Project is an item scanned by Snyk; for example, a manifest file listing 
 
 For example:
 
-<figure><img src="../../.gitbook/assets/image (180) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="List of scanned Projects"><figcaption><p>List of scanned Projects</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (180) (1) (1) (1) (1) (1) (1).png" alt="List of scanned Projects"><figcaption><p>List of scanned Projects</p></figcaption></figure>
 
 ### Understand Project information
 
@@ -71,9 +71,9 @@ Other files and types can be displayed; see [View project information](https://d
 
 Snyk treats each item in this list as a separate **Project**.
 
-This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (266).png>)) to define how that Project is scanned:
+This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (27) (1) (1).png>)) to define how that Project is scanned:
 
-<figure><img src="../../.gitbook/assets/image (208) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Click cog icon to edit settings"><figcaption><p>Click cog icon to edit Project settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (208) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Click cog icon to edit settings"><figcaption><p>Click cog icon to edit Project settings</p></figcaption></figure>
 
 For example, you can change scan frequency, setting how often scans are run by default. See [View Project Settings](https://docs.snyk.io/introducing-snyk/introduction-to-snyk-projects/view-project-settings) for more information.
 
@@ -81,7 +81,7 @@ For example, you can change scan frequency, setting how often scans are run by d
 
 Let’s go back to the results for your scan:
 
-<figure><img src="../../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Project scan results"><figcaption><p>Project scan results</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="Project scan results"><figcaption><p>Project scan results</p></figcaption></figure>
 
 The scan shows you all vulnerabilities in all aspects of an application. Of course, it's unlikely that you are responsible for every entry in this list, but it's important to be aware of the full picture.
 

@@ -12,7 +12,7 @@ This shows the version of the package that no longer has the vulnerability.
 
 Compare the fixed in vulnerability card above to one where no fix is available.
 
-![](<../../.gitbook/assets/fix-desc-2 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+![](<../../.gitbook/assets/fix-desc-2 (1) (1) (1) (1) (1) (1) (1) (2).png>)
 
 ### Fixable
 

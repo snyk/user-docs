@@ -73,10 +73,7 @@ See [How Snyk handles your data](how-snyk-handles-your-data.md) for product-spec
 
 Snyk offers almost all the same features, support, and performance in the EU region as in the US region.
 
-The following **features are not yet available**:
-
-* C/C++ language support in Snyk Open Source
-* Snyk Cloud
+Snyk Cloud is not yet available.
 
 #### EU and AU datacenter account creation
 
