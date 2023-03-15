@@ -504,7 +504,7 @@
     * [Upgrading package versions to fix vulnerabilities](manage-issues/starting-to-fix-vulnerabilities/upgrading-package-versions-fix-vulnerabilities.md)
     * [Snyk patches to fix vulnerabilities](manage-issues/starting-to-fix-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
     * [Snyk Vulnerability Database](manage-issues/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md)
-    * [Fixed in version vs. fixable attribute in vulnerabilities](manage-issues/starting-to-fix-vulnerabilities/fixed-in-version-vs.-fixable-attribute-in-vulnerabilities.md)
+    * [Vulnerability fix types](manage-issues/starting-to-fix-vulnerabilities/vulnerability-fix-types.md)
     * [Why can't I open a Pull Request/Merge Request for issues found by Snyk?](manage-issues/starting-to-fix-vulnerabilities/why-cant-i-open-a-pull-request-merge-request-for-issues-found-by-snyk.md)
     * [What languages do we support Fix Pull Requests or Merge Requests?](manage-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md)
   * [Snyk Projects](manage-issues/introduction-to-snyk-projects/README.md)
