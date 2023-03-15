@@ -8,6 +8,10 @@ Snyk offers IDE integrations that allow you to use the functionality of Snyk in 
 
 Snyk supports JetBrains plugins from version 2020.2 for [IntelliJ IDEA](https://snyk.io/lp/intellij-ide-plugin/) and [WebStorm](https://snyk.io/lp/webstorm-ide-plugin/) as well as Android Studio, AppCode, GoLand, PhpStorm, PyCharm, Rider, and RubyMine.
 
+{% hint style="info" %}
+Snyk uses Python in order to scan and find your dependencies. If you are using multiple Python versions, use the -`-command` option to specify the correct Python command for execution. The plugin does not detect the Python version associated with the project.
+{% endhint %}
+
 The Snyk JetBrains plugins provide analysis of your code, containers, and Infrastructure as Code configurations. The plugin is based on the Snyk CLI and also uses Snyk APIs. The plugin supports product features in the CLI for Snyk Open Source and Snyk Container as well as for Snyk Code and Snyk IaC with some limitations.
 
 Snyk scans for vulnerabilities and misconfigurations and returns results with security issues categorized by issue type and severity.
