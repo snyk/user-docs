@@ -1,25 +1,29 @@
 # Fix your vulnerabilities
 
-Snyk helps you to fix vulnerabilities, by upgrading the direct dependencies to a vulnerability-free version, or by patching the vulnerability. To apply these fixes, you can use different methods, ranging from manually applying using the Snyk UI, to automatic pull requests opened by Snyk.
+Snyk helps you to fix vulnerabilities, by upgrading the direct dependencies to a vulnerability-free version, or by patching the vulnerability. After Snyk scans your Projects, scan results allow you to resolve those issues in your code, with the help of clear suggestions and explanations.
 
-To fix a vulnerability with Snyk:
+You can:
 
-* Click **Fix this vulnerability** on a specific [issue card](../introduction-to-snyk-projects/issue-card-information.md) on the relevant project page.
-* If you are using a [Source code integration](../../integrations/git-repository-scm-integrations/):
-  * Click **Open a fix PR** on the project page.
-  * Use [automated pull requests](../../products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md) when new fixes become available that help you to fix a vulnerability.
+* [View scan results on the Snyk Web UI](fix-your-vulnerabilities.md#view-scan-results-on-the-snyk-web-ui)
+* [View scan results using Snyk CLI](fix-your-vulnerabilities.md#view-scan-results-using-snyk-cli)
+* [Apply fixes](fix-your-vulnerabilities.md#apply-fixes)
 
-### How it works
+## View scan results on the Snyk Web UI
 
-When a new fixable vulnerability is found, Snyk attempts to open a new pull request on your behalf (in a repository for which we support automatic fix pull requests), or suggests you open one manually based on your settings.
+From our app, for each tab (upgrade and patch) in the fix advice area of your project details, results are displayed as follows:
 
-When Snyk automates the fix, we check if there are an existing branch and pull request for the exact fix; if there is, we reopen the existing, already closed pull request on that branch.
+* the total number of packages that can be fixed is displayed on the tab title
+* in groups of vulnerabilities by package, entitled by the upgrade or fix that’s recommended
+* packages can be expanded in order to view the full list of vulnerabilities affecting the package
+* All the vulnerabilities found in your dependencies are displayed further below, together with contextual information that can help you prioritize the issues and start fixing them if required.
 
-When there’s no existing branch and pull request for the issue a new branch and pull request are created.
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-15 at 12.14.06.png" alt="Scan results on Web UI"><figcaption><p>Scan results on Web UI</p></figcaption></figure>
 
-### Fix advice
 
-Once Snyk tests your manifest files, we then provide a summary and detailed advice for vulnerabilities that have fixes available, enabling you to resolve those vulnerabilities in your code with the help of clear suggestions and explanations.
+
+### View Fix Advice
+
+The Fix Advice area appears in the project details page:
 
 Snyk offers you one of these solutions:
 
@@ -32,17 +36,6 @@ The summary area groups advice per package, and is displayed based on the best a
 * All vulnerability names and severity details affecting that package
 * The recommended fix - a link to the recommended fix for this package and its listed vulnerabilities: either the specific version to which to upgrade or the name of the patch
 
-### Actionable advice from our app
-
-From our app, for each tab (upgrade and patch) in the fix advice area of your project details, results are displayed as follows:
-
-* the total number of packages that can be fixed is displayed on the tab title
-* in groups of vulnerabilities by package, entitled by the upgrade or fix that’s recommended
-* packages can be expanded in order to view the full list of vulnerabilities affecting the package
-* All the vulnerabilities found in your dependencies are displayed further below, together with contextual information that can help you prioritize the issues and start fixing them if required.
-
-The Fix Advice area appears in the project details page near the top, similar to the following examples:
-
 ![Upgrade issues tabs](<../../.gitbook/assets/Screenshot 2021-10-12 at 14.08.13.png>)
 
 ![Patchable issues tabs](<../../.gitbook/assets/Screenshot 2021-10-12 at 14.10.00 (1).png>)
@@ -52,7 +45,7 @@ You can also find additional advice and details further down on the Project deta
 * from the **Issues**, tab, a full description per vulnerability
 * from the **Dependencies** tab, the entire tree of your project dependencies, enabling you to clearly visualize affected paths
 
-### Actionable advice from our CLI tool
+## View scan results using Snyk CLI
 
 From the CLI, for each list (upgrade and patch), results are displayed in groups based on the packages we recommend that you fix, and including:
 
@@ -61,12 +54,25 @@ From the CLI, for each list (upgrade and patch), results are displayed in groups
 
 Upgrade and patch results appear similar to the following:
 
-![](<../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+<figure><img src="../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Upgrade results in the CLI"><figcaption><p>Upgrade results in the CLI</p></figcaption></figure>
 
-![](<../../.gitbook/assets/image (49) (1).png>)
+Patch recommendations:
 
-Patch recommendations with some and with all paths:
+<figure><img src="../../.gitbook/assets/uuid-1afca091-a9a5-d42c-40b6-f48aa0e72584-en.png" alt="Patch results in the CLI"><figcaption><p>Patch results in the CLI</p></figcaption></figure>
 
-![](../../.gitbook/assets/uuid-1afca091-a9a5-d42c-40b6-f48aa0e72584-en.png)
+## Apply fixes
 
-![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+To apply fixes, you can:
+
+* Click **Fix this vulnerability** on a specific [issue card](../introduction-to-snyk-projects/issue-card-information.md) on the relevant project page.
+* If you are using a [Source code integration](../../integrations/git-repository-scm-integrations/):
+  * Click **Open a fix PR** on the project page.
+  * Use [automated pull requests](../../products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md) when new fixes become available that help you to fix a vulnerability.
+
+{% hint style="info" %}
+**Automatic Fix PRs**\
+When a new fixable vulnerability is found, Snyk can attempt to open a new pull request automatically. See [Automated pull request creation for new fixes](../../products/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md) for details.
+
+
+{% endhint %}
+
