@@ -2,11 +2,11 @@
 
 When integrations are created within Snyk where the user has read and write permissions from respective integrations, Snyk can provide Fix PRs or MRs for dependencies that may have a patch or an upgrade which would fix a vulnerability.
 
-Snyk currently supports the ability to create Fix Pull Requests (Fix PRs) or Merge Requests (MRs) via [Integration](https://docs.snyk.io/integrations) for:
+Snyk supports creation of Fix Pull Requests (Fix PRs) or Merge Requests (MRs)  for:
 
-* [Maven](https://support.snyk.io/hc/en-us/articles/360003817357-Snyk-for-Java-Gradle-Maven-)
+* [Maven](../../products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md)
 * [.Net](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-.net.md)
-* [NPM](https://docs.snyk.io/snyk-open-source/language-and-package-manager-support/snyk-for-javascript)
-* [Python](https://docs.snyk.io/snyk-open-source/language-and-package-manager-support/snyk-for-python)
-* [Ruby](https://docs.snyk.io/snyk-open-source/language-and-package-manager-support/snyk-for-ruby)
-* [Yarn](https://docs.snyk.io/snyk-open-source/language-and-package-manager-support/snyk-for-javascript)
+* [NPM](../../products/snyk-open-source/language-and-package-manager-support/snyk-for-javascript/snyk-for-npm.md)
+* [Python](../../products/snyk-open-source/language-and-package-manager-support/snyk-for-python.md)
+* [Ruby](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-ruby.md)
+* [Yarn](../../products/snyk-open-source/language-and-package-manager-support/snyk-for-javascript/snyk-for-yarn.md)
