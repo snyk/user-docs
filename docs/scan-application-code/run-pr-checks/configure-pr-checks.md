@@ -6,31 +6,31 @@ A PR Check is counted as a test within your Organization's test count, including
 
 ## Prerequisites
 
-To check for open source and licensing issues, and code security, make sure that you meet the following conditions:
+To check for open source and licensing issues and code security, make sure that you meet the following conditions:
 
 * Group Admin role to get access to all integration settings (see [Member roles](../../user-and-group-management/managing-users-and-permissions/member-roles.md)).
 * [Set up a Git repository integration](../../integrations/git-repository-scm-integrations/).
 * [Import a Project](../../getting-started/quickstart/import-a-project.md) to have a working Git repository.
-* For code security (Snyk Code), meet all of the above conditions and then contact your Snyk representative to enable the feature for you. The PR Checks feature is only available in [Closed Beta](../../more-info/snyk-feature-release-process.md) for Snyk Code and is exclusively offered to for Enterprise plans.&#x20;
+* For code security (Snyk Code), meet all of the above conditions and then contact your Snyk representative to enable the feature for you. The PR Checks feature is only available in [Closed Beta](../../more-info/snyk-feature-release-process.md) for Snyk Code and exclusively offered for Enterprise plans.&#x20;
 
 ## Programming language support
 
-All programming languages supported by the Snyk Code and Open Source engines are also supported by PR Checks (see programming language support for [Snyk Code](../snyk-code/snyk-code-language-and-framework-support.md) and [Open Source](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)).
+PR Checks also support all programming languages supported by the Snyk Code and Open Source engines (see programming language support for [Snyk Code](../snyk-code/snyk-code-language-and-framework-support.md) and [Open Source](../snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)).
 
 ## How the configuration works
 
-You can configure PR Checks either [at the Integration level](configure-pr-checks.md#configure-pr-checks-at-the-integration-level) for your Snyk Organization, or [for specific Snyk Projects](configure-pr-checks.md#configure-pr-checks-at-the-project-level) in an Organization.&#x20;
+You can configure PR Checks either [at the Integration level](configure-pr-checks.md#configure-pr-checks-at-the-integration-level) for your Snyk Organization or [for specific Snyk Projects](configure-pr-checks.md#configure-pr-checks-at-the-project-level) in an Organization.&#x20;
 
 * In your Organization, you can have multiple repository integrations, but the feature works only for those integrations that have been configured.
 * At the Project level, the settings are inherited from the integration by default, but you can configure custom settings.&#x20;
 
 ## Configure PR Checks at the integration level
 
-Configure PR Checks on a specific Git repository that you have already integrated with Snyk, such as GitHub.&#x20;
+Configure PR Checks on a specific Git repository you have already integrated with Snyk, such as GitHub.&#x20;
 
-The configuration settings apply to all Projects in that Organization. You can also  extend the configuration to Projects with custom settings.&#x20;
+The configuration settings apply to all Projects in that Organization. You can also extend the configuration to Projects with custom settings.&#x20;
 
-1. Open Snyk Web UI, go to **Settings >** **Integrations** section, **** and then **** select your connected source code manager to open settings configuration.&#x20;
+1. Open Snyk Web UI, go to **Settings >** **Integrations** section **** and then **** select your connected source code manager to open settings configuration.&#x20;
 2. To check for code issues, configure and save the following changes:
 
 * [ ] **Code Analysis**: **** Enable this option **** to fail the PR when the security issues found in the proposed changes exceed your specified severity threshold. In other words, if the severity is higher than your threshold, the PR is not merged into the main branch.
@@ -53,7 +53,7 @@ If you cannot see the **Code Analysis** section, make sure that your user has th
 
 <figure><img src="../../.gitbook/assets/pr_checks_configuration_open_source.png" alt="Pull request check settings to analyze opena source and licensing issues."><figcaption><p>PR check settings to analyze open source and licensing issues</p></figcaption></figure>
 
-4. (Optional) Select **Apply changes to all overridden projects** to extend the current configuration to Projects with custom settings (see [Configure PR Checks at the project level](configure-pr-checks.md#configure-pr-checks-at-the-project-level)). Use this option if you want to apply the same configuration to all Projects.
+4. (Optional) Select **Apply changes to all overridden projects** to extend the current configuration to Projects with custom settings (see [Configure PR Checks at the project level](configure-pr-checks.md#configure-pr-checks-at-the-project-level)). Use this option to apply the same configuration to all Projects.
 
 ## Configure PR Checks at the Project level
 

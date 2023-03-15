@@ -8,7 +8,7 @@ You can change the default severity threshold either at the [Integration level](
 
 ## Result status
 
-Check the status of the PR Checks results in the integrated SCM, to identify security issues that need to be addressed before merging a pull request.
+Check the status of the PR Checks results in the integrated SCM to identify security issues that need to be addressed before merging a pull request.
 
 The following statuses can appear on your Snyk PR checks in the integrated SCM:
 
@@ -26,7 +26,7 @@ For false positive or false negative results, see [Troubleshooting](troubleshoot
 
 ## **Example: fix dependency issues with PR Checks**
 
-Consider the following end-to-end scenario including specific actions such as triggering a Fix PR and marking a **Failed** result as **Passed**. You can take these actions in relation to the info provided by the PR Checks information. The steps of this scenario are taken using a [GitHub integration](../../integrations/git-repository-scm-integrations/github-integration.md) and outlined as follows:
+Consider the following end-to-end scenario, including specific actions such as triggering a Fix PR and marking a **Failed** result as **Passed**. You can take these actions in relation to the info provided by the PR Checks information. The steps of this scenario are taken using a [GitHub integration](../../integrations/git-repository-scm-integrations/github-integration.md) and outlined as follows:
 
 1. [Trigger a fix for an individual dependency issue](pr-checks-results.md#trigger-a-fix-for-an-individual-dependency-issue) to find and address vulnerabilities.
 2. [Open a Fix PR](pr-checks-results.md#open-a-fix-pr) to open a pull request in GitHub.

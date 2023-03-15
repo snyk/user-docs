@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Use Snyk PR Checks to prevent new security issues from entering your codebase, by automatically scanning code changes in real-time, as soon as you submit a pull request (PR) in your source code manager (SCM).
+Use Snyk PR Checks to prevent new security issues from entering your codebase by automatically scanning code changes in real-time as soon as you submit a pull request (PR) in your source code manager (SCM).
 
 ## Why use PR Checks
 
