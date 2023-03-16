@@ -41,7 +41,7 @@ After you add them, Snyk scans the selected repositories for dependency files in
 
 The imported Projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (2).jpeg" alt="Add selected repositories"><figcaption><p>Add selected repositories</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/which_repos (3) (5) (9) (7) (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (31).jpg" alt="Add selected repositories"><figcaption><p>Add selected repositories</p></figcaption></figure>
 
 ## GitHub integration features
 
@@ -71,7 +71,7 @@ Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabi
 
 The example that follows shows a fix pull request opened by Snyk.
 
-<figure><img src="../../.gitbook/assets/github_fix_pr_cropped-14july2022.png" alt="Fix pull request opened by Snyk"><figcaption><p>Fix pull request opened by Snyk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github_fix_pr_cropped-14july2022 (1).png" alt="Fix pull request opened by Snyk"><figcaption><p>Fix pull request opened by Snyk</p></figcaption></figure>
 
 To review and adjust the automatic fix pull request settings in the Snyk GitHub Integration settings page, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings** **>** **Integrations > Source control > GitHub**.
 
@@ -101,7 +101,7 @@ You can review and adjust the pull request test settings via the Snyk GitHub Int
 
 ## Required permissions scope for the GitHub integration
 
-If you are on a Snyk Enterprise plan, you can use [Snyk Broker](../../user-and-group-management/snyk-broker/) as a proxy between Snyk and your Source Code Management (SCM) system on-premise platforms, including Snyk Code Support, or your publicly-accessible Git-based repositories.
+If you are on a Snyk Enterprise plan, you can use [Snyk Broker](../../snyk-admin/snyk-broker/) as a proxy between Snyk and your Source Code Management (SCM) system on-premise platforms, including Snyk Code Support, or your publicly-accessible Git-based repositories.
 
 Snyk Broker lets you view and control Snyk activity in those repositories for increased data security.
 
@@ -189,7 +189,7 @@ To configure the Auto-assign settings for all the Projects from an imported priv
 To configure the Auto-assign settings for a specific project from an imported private repository.
 
 1. In the **Projects** tab for your Organization, select and expand the relevant private repository, select a Target, and click the **Settings** cog.\
-   <img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10).png" alt="Settings cog" data-size="original">\
+   <img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (2).png" alt="Settings cog" data-size="original">\
    The Project page opens.
 2. On the Project page, to apply unique settings for that specific Project, select the **Settings** tab in the upper right, and the **Github integration** \_\_ option in the left sidebar.
 3. Go to the **Pull request assignees for private repos** section at the bottom of the page and choose to **Inherit from integration settings** or **Customize only for this project**. Ensure **Auto-assign PRs for this private project** is enabled. Choose to assign PRs to the last user to change the manifest file or named contributors.
@@ -242,16 +242,16 @@ For example, to show a badge for the 4.x branch of the express repo, you would u
 
 #### Badge results
 
-* A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (142) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="No vulnerabilities" data-size="line">
-* A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (143) (1).png" alt="Number of vulnerabilities" data-size="line">
-* A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (11) (1).png" alt="Unknown vulnerabilities" data-size="line">
+* A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (206) (1).png" alt="No vulnerabilities" data-size="line">
+* A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (93) (2).png" alt="Number of vulnerabilities" data-size="line">
+* A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (82) (1).png" alt="Unknown vulnerabilities" data-size="line">
 
 #### **Badge styles**
 
 To change the style of the badge, you can add the following query parameters after `badge.svg`:
 
-* Flat rectangle with squared edges: `?style=flat-square` <img src="../../.gitbook/assets/image (1) (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Flat rectangle badge" data-size="line">
-* "Plastic" rectangle with rounded edges and shading `?style=plastic` <img src="../../.gitbook/assets/image (142) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="&#x22;Plastic&#x22; rectangle badge" data-size="line">
+* Flat rectangle with squared edges: `?style=flat-square` <img src="../../.gitbook/assets/image (97) (1).png" alt="Flat rectangle badge" data-size="line">
+* "Plastic" rectangle with rounded edges and shading `?style=plastic` <img src="../../.gitbook/assets/image (206) (1).png" alt="&#x22;Plastic&#x22; rectangle badge" data-size="line">
 
 ### **npm badges**
 

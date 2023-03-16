@@ -2,14 +2,14 @@
 
 ## Introduction
 
-There are multiple ways to [prioritize vulnerabilities](view-exploits.md), one of which is to look for **reachable vulnerabilities**.
-
 A reachable vulnerability has a path from your code to the vulnerable function in a dependency.
 
-By analyzing how your code uses open source dependencies, and also how the open source dependencies interact with each other, Snyk can provide powerful insight into which vulnerabilities are reachable:
+Scanning for reachable vulnerabilities is a way to prioritize vulnerabilities. By analyzing how your code uses open source dependencies, and also how the open source dependencies interact with each other, Snyk can provide powerful insight into which vulnerabilities are reachable:
 
 * Directly from your own code, _and also_
 * Indirectly via transitive dependencies
+
+You can use reachability as one signal in a broader strategy for prioritizing issues.
 
 ## How finding reachable vulnerabilities works
 
@@ -19,17 +19,16 @@ Next Snyk builds a call graph that is the union of the calls within the applicat
 
 Each vulnerability then receives a reachability status:
 
-**Reachable** - A direct or indirect path from your code to vulnerable functions was found OR
+* **Reachable** - A direct or indirect path from your code to vulnerable functions was found OR
+* **No path found** - No path found from your code to vulnerable functions
 
-**No path found** - No path found from your code to vulnerable functions
-
-Note that when a "no path found" status is given, it should _not_ be inferred that the vulnerability is definitely unreachable.
+{% hint style="warning" %}
+If a "no path found" status is given, do not assume that the vulnerability is totally unreachable.
+{% endhint %}
 
 Producing a precise call graph may require that the analysis sometimes under-approximates the set of reachable functions.
 
 For example, although the Snyk solution does support it, it is not always possible to give a precise answer if reflection is used. In such a case, there is a tradeoff between returning a large set of false positives, or possibly returning that no path was found even if a call path is theoretically possible.
-
-Therefore, Snyk recommends that you use reachability as one signal in a broader strategy for [prioritizing](./) issues. You may want to give reachable vulnerabilities higher priority as there is more evidence it is exploitable, but do not ignore the rest.
 
 ## Supported languages and integrations
 
@@ -64,12 +63,12 @@ After import or testing of a project via Snyk UI, the project is monitored by Sn
 3. **Call path** - Allows you to see the path from your code to the vulnerable function to validate the result.
 4. **Priority Score** - Snyk will increase the Priority Score for reachable vulnerabilities, to allow you to see these issues first.
 
-<figure><img src="../../.gitbook/assets/image (124) (1) (1) (1) (2) (1) (1) (1).png" alt="Reachability Call Path"><figcaption><p>Reachability Call Path</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (91) (1) (2).png" alt="Reachability Call Path"><figcaption><p>Reachability Call Path</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (126) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Priority Score"><figcaption><p>Priority Score</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (126) (1).png" alt="Priority Score"><figcaption><p>Priority Score</p></figcaption></figure>
 
 ## Reports
 
 You can filter by reachability status to quickly show the reachable issues.
 
-<figure><img src="../../.gitbook/assets/image (137) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Issue Filters"><figcaption><p>Issue Filters</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (137) (2).png" alt="Issue Filters"><figcaption><p>Issue Filters</p></figcaption></figure>

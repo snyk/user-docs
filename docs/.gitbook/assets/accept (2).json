@@ -92,14 +92,6 @@
         },
         {
           "path": "commits.*.added.*",
-          "value": "Directory.Build.targets"
-        },
-        {
-          "path": "commits.*.modified.*",
-          "value": "Directory.Build.targets"
-        },
-        {
-          "path": "commits.*.added.*",
           "value": "Packages.props"
         },
         {
@@ -113,6 +105,14 @@
         {
           "path": "commits.*.modified.*",
           "value": "Directory.Build.props"
+        },
+        {
+          "path": "commits.*.added.*",
+          "value": "Directory.Build.targets"
+        },
+        {
+          "path": "commits.*.modified.*",
+          "value": "Directory.Build.targets"
         },
         {
           "path": "commits.*.added.*",
@@ -390,6 +390,18 @@
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
+      "path": "/:name/:repo/:path*/package.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2Fpackage.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*/package-lock.json",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -398,6 +410,18 @@
       "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*%2Fpackage-lock.json",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*/package-lock.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2Fpackage-lock.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to determine the full dependency tree",
@@ -414,6 +438,18 @@
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
+      "path": "/:name/:repo/:path*/Gemfile.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2FGemfile.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*/Gemfile",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -422,6 +458,18 @@
       "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*%2FGemfile",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*/Gemfile",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2FGemfile",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to determine the full dependency tree",
@@ -438,6 +486,18 @@
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
+      "path": "/:name/:repo/:path*/pom.xml",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2Fpom.xml",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*/*req*.txt",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -446,6 +506,18 @@
       "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*%2F*req*.txt",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*/*req*.txt",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2F*req*.txt",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to determine the full dependency tree",
@@ -462,6 +534,18 @@
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
+      "path": "/:name/:repo/:path*/requirements/*.txt",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2Frequirements%2F*.txt",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*/yarn.lock",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -470,6 +554,18 @@
       "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*%2Fyarn.lock",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*/yarn.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2Fyarn.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to determine the full dependency tree",
@@ -486,6 +582,18 @@
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
+      "path": "/:name/:repo/:path*/build.gradle",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2Fbuild.gradle",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*/gradle.lockfile",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -494,6 +602,18 @@
       "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*%2Fgradle.lockfile",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*/gradle.lockfile",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2Fgradle.lockfile",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to determine the full dependency tree",
@@ -510,6 +630,18 @@
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
+      "path": "/:name/:repo/:path*/gradle.properties",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2Fgradle.properties",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*/Packages.props",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -518,6 +650,18 @@
       "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*%2FPackages.props",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*/Packages.props",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2FPackages.props",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to determine the full dependency tree",
@@ -534,6 +678,18 @@
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
+      "path": "/:name/:repo/:path*/Directory.Build.props",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2FDirectory.Build.props",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*/Directory.Build.targets",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -542,6 +698,18 @@
       "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*%2FDirectory.Build.targets",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*/Directory.Build.targets",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2FDirectory.Build.targets",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to determine the full dependency tree",
@@ -558,6 +726,18 @@
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
+      "path": "/:name/:repo/:path*/build.sbt",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2Fbuild.sbt",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*/packages.config",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -566,6 +746,18 @@
       "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*%2Fpackages.config",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*/packages.config",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2Fpackages.config",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to determine the full dependency tree",
@@ -582,6 +774,18 @@
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
+      "path": "/:name/:repo/:path*/*.csproj",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2F*.csproj",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*/*.fsproj",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -590,6 +794,18 @@
       "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*%2F*.fsproj",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*/*.fsproj",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2F*.fsproj",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to determine the full dependency tree",
@@ -606,6 +822,18 @@
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
+      "path": "/:name/:repo/:path*/*.vbproj",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2F*.vbproj",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*/project.json",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -614,6 +842,18 @@
       "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*%2Fproject.json",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*/project.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2Fproject.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to determine the full dependency tree",
@@ -630,6 +870,18 @@
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
+      "path": "/:name/:repo/:path*/Gopkg.toml",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2FGopkg.toml",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*/Gopkg.lock",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -638,6 +890,18 @@
       "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*%2FGopkg.lock",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*/Gopkg.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2FGopkg.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to determine the full dependency tree",
@@ -654,6 +918,18 @@
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
+      "path": "/:name/:repo/:path*/vendor.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2Fvendor.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*/composer.lock",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -662,6 +938,18 @@
       "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*%2Fcomposer.lock",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*/composer.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2Fcomposer.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to determine the full dependency tree",
@@ -678,6 +966,18 @@
     {
       "//": "used to determine the full dependency tree",
       "method": "GET",
+      "path": "/:name/:repo/:path*/composer.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2Fcomposer.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*/project.assets.json",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -686,6 +986,18 @@
       "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*%2Fproject.assets.json",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*/project.assets.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2Fproject.assets.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to determine the full dependency tree",
@@ -710,6 +1022,30 @@
       "method": "GET",
       "path": "/repos/:name/:repo/contents/:path*%2FPodfile.lock",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*/Podfile",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2FPodfile",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*/Podfile.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2FPodfile.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to determine the full dependency tree",
@@ -856,6 +1192,31 @@
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
+      "//": "used to check if there's any ignore rules or existing patches",
+      "method": "GET",
+      "path": "/repos/:name/:repo/contents/:path*/.snyk",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to check if there's any ignore rules or existing patches",
+      "method": "GET",
+      "path": "/repos/:name/:repo/contents/:path*%2F.snyk",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*/.snyk",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to determine the full dependency tree",
+      "method": "GET",
+      "path": "/:name/:repo/:path*%2F.snyk",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+
+    {
       "//": "used to update manifest or lock",
       "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*/package.json",
@@ -866,6 +1227,18 @@
       "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*%2Fpackage.json",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*/package.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2Fpackage.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to update manifest or lock",
@@ -882,6 +1255,18 @@
     {
       "//": "used to update manifest or lock",
       "method": "PUT",
+      "path": "/:name/:repo/:path*/package-lock.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2Fpackage-lock.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*/Gemfile.lock",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -890,6 +1275,18 @@
       "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*%2FGemfile.lock",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*/Gemfile.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2FGemfile.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to update manifest or lock",
@@ -906,6 +1303,18 @@
     {
       "//": "used to update manifest or lock",
       "method": "PUT",
+      "path": "/:name/:repo/:path*/Gemfile",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2FGemfile",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*/pom.xml",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -914,6 +1323,18 @@
       "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*%2Fpom.xml",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*/pom.xml",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2Fpom.xml",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to update manifest or lock",
@@ -930,6 +1351,18 @@
     {
       "//": "used to update manifest or lock",
       "method": "PUT",
+      "path": "/:name/:repo/:path*/*req*.txt",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2F*req*.txt",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*/yarn.lock",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -938,6 +1371,18 @@
       "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*%2Fyarn.lock",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*/yarn.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2Fyarn.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to update manifest or lock",
@@ -954,6 +1399,18 @@
     {
       "//": "used to update manifest or lock",
       "method": "PUT",
+      "path": "/:name/:repo/:path*/build.gradle",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2Fbuild.gradle",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*/gradle.lockfile",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -962,6 +1419,18 @@
       "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*%2Fgradle.lockfile",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*/gradle.lockfile",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2Fgradle.lockfile",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to update manifest or lock",
@@ -978,6 +1447,18 @@
     {
       "//": "used to update manifest or lock",
       "method": "PUT",
+      "path": "/:name/:repo/:path*/gradle.properties",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2Fgradle.properties",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*/Packages.props",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -986,6 +1467,18 @@
       "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*%2FPackages.props",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*/Packages.props",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2FPackages.props",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to update manifest or lock",
@@ -1002,6 +1495,18 @@
     {
       "//": "used to update manifest or lock",
       "method": "PUT",
+      "path": "/:name/:repo/:path*/Directory.Build.props",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2FDirectory.Build.props",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*/Directory.Build.targets",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -1010,6 +1515,18 @@
       "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*%2FDirectory.Build.targets",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*/Directory.Build.targets",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2FDirectory.Build.targets",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to update manifest or lock",
@@ -1026,6 +1543,18 @@
     {
       "//": "used to update manifest or lock",
       "method": "PUT",
+      "path": "/:name/:repo/:path*/build.sbt",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2Fbuild.sbt",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*/packages.config",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -1034,6 +1563,18 @@
       "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*%2Fpackages.config",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*/packages.config",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2Fpackages.config",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to update manifest or lock",
@@ -1050,6 +1591,18 @@
     {
       "//": "used to update manifest or lock",
       "method": "PUT",
+      "path": "/:name/:repo/:path*/*.csproj",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2F*.csproj",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*/*.fsproj",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -1058,6 +1611,18 @@
       "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*%2F*.fsproj",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*/*.fsproj",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2F*.fsproj",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to update manifest or lock",
@@ -1074,6 +1639,18 @@
     {
       "//": "used to update manifest or lock",
       "method": "PUT",
+      "path": "/:name/:repo/:path*/*.vbproj",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2F*.vbproj",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*/project.json",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -1082,6 +1659,18 @@
       "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*%2Fproject.json",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*/project.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2Fproject.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to update manifest or lock",
@@ -1098,6 +1687,18 @@
     {
       "//": "used to update manifest or lock",
       "method": "PUT",
+      "path": "/:name/:repo/:path*/Gopkg.toml",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2FGopkg.toml",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*/Gopkg.lock",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -1106,6 +1707,18 @@
       "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*%2FGopkg.lock",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*/Gopkg.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2FGopkg.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to update manifest or lock",
@@ -1122,6 +1735,18 @@
     {
       "//": "used to update manifest or lock",
       "method": "PUT",
+      "path": "/:name/:repo/:path*/vendor.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2Fvendor.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*/composer.lock",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -1130,6 +1755,18 @@
       "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*%2Fcomposer.lock",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*/composer.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2Fcomposer.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to update manifest or lock",
@@ -1146,6 +1783,18 @@
     {
       "//": "used to update manifest or lock",
       "method": "PUT",
+      "path": "/:name/:repo/:path*/composer.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2Fcomposer.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*/project.assets.json",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
@@ -1154,6 +1803,18 @@
       "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*%2Fproject.assets.json",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*/project.assets.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2Fproject.assets.json",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to update manifest or lock",
@@ -1178,6 +1839,30 @@
       "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*%2FPodfile.lock",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*/Podfile",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2FPodfile",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*/Podfile.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
+    },
+    {
+      "//": "used to update manifest or lock",
+      "method": "PUT",
+      "path": "/:name/:repo/:path*%2FPodfile.lock",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
       "//": "used to update manifest or lock",
@@ -1228,18 +1913,6 @@
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
-      "//": "used to write or update ignore rules or existing patches",
-      "method": "PUT",
-      "path": "/repos/:name/:repo/contents/:path*/.snyk",
-      "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
-    },
-    {
-      "//": "used to write or update ignore rules or existing patches",
-      "method": "PUT",
-      "path": "/repos/:name/:repo/contents/:path*%2F.snyk",
-      "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
-    },
-    {
       "//": "used to update Dockerfile",
       "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*/Dockerfile*",
@@ -1264,17 +1937,18 @@
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_RAW}"
     },
     {
-      "//": "used to check if there's any ignore rules or existing patches",
-      "method": "GET",
+      "//": "used to write or update ignore rules or existing patches",
+      "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*/.snyk",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
     {
-      "//": "used to check if there's any ignore rules or existing patches",
-      "method": "GET",
+      "//": "used to write or update ignore rules or existing patches",
+      "method": "PUT",
       "path": "/repos/:name/:repo/contents/:path*%2F.snyk",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
+
     {
       "//": "get details of the repo",
       "method": "GET",
@@ -1289,9 +1963,7 @@
       "valid": [
         {
           "header": "accept",
-          "values": [
-            "application/vnd.github.v4.sha"
-          ]
+          "values": ["application/vnd.github.v4.sha"]
         }
       ]
     },
@@ -1326,7 +1998,7 @@
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
     },
     {
-      "//": "add commit data for new PR",
+      "//": "create branches for new commits",
       "method": "POST",
       "path": "/repos/:name/:repo/git/refs",
       "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"

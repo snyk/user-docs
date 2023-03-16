@@ -1,4 +1,4 @@
-# Migrate a Bitbucket Cloud Personal Access Token integration
+# Migrate a Bitbucket Cloud Personal Access Token
 
 {% hint style="info" %}
 Snyk recommends using the Bitbucket Cloud App integration for smoother integration.&#x20;
@@ -60,7 +60,7 @@ Delete all the existing projects in Snyk that were previously imported from the 
 
 To disconnect the Bitbucket Cloud (Legacy) integration, go to the settings page of Bitbucket Cloud (Legacy) integration, scroll to the relevant section and click **Disconnect.**
 
-<figure><img src="../../.gitbook/assets/image (524).png" alt=""><figcaption><p>Disconnect the Bitbucket Cloud PAT (Legacy) integration</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (461).png" alt=""><figcaption><p>Disconnect the Bitbucket Cloud PAT (Legacy) integration</p></figcaption></figure>
 
 #### 3.  Remove the Snyk tab for the Legacy integration in Bitbucket Cloud (optional)&#x20;
 

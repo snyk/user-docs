@@ -13,7 +13,7 @@ The instructions on this page explain how to enable integration between one Arti
 1. Log in to [your Snyk account](https://app.snyk.io).
 2.  Navigate to **Integrations**; select the **Artifactory** option:
 
-    <img src="../../../.gitbook/assets/image (57) (2).png" alt="Artifactory integration" data-size="original">
+    <img src="../../../.gitbook/assets/image (57).png" alt="Artifactory integration" data-size="original">
 3. The configuration page in the **Settings** area loads.
 4. Enter credentials as follows:
    * **Username and Password**—use your Artifactory login credentials.

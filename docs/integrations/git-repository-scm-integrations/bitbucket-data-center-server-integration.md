@@ -1,4 +1,4 @@
-# Bitbucket Data Center/Server integration
+# Bitbucket Data Center/Server
 
 Snyk's Bitbucket Data Center / Server integration allows you to continuously perform security scanning across all the integrated repositories, detect vulnerabilities in your open source components, and use automated fixing. This integration supports Bitbucket Data Center / Server versions 4.0 and above.
 
@@ -18,7 +18,7 @@ _Need a little help from your friends?_ Check out the [Snyk and Bitbucket best p
 4. **Save** your changes.\
    Snyk connects to your Bitbucket DC/Server instance. When the connection succeeds, the following indications appear:
 
-![](<../../.gitbook/assets/bitbucket\_server-18july2022 (2).png>)
+![](../../.gitbook/assets/bitbucket\_server-18july2022.png)
 
 To select the repositories for Snyk to monitor:
 

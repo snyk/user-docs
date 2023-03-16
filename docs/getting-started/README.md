@@ -8,10 +8,10 @@ Start securing code, dependencies, containers, and deployed applications with Sn
 
 ## In this section
 
-| About Snyk                                                            | Using Snyk                        | Tutorials                                                                      |
-| --------------------------------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------ |
-| [Introducing Snyk](introducing-snyk.md)                               | [Quickstart](quickstart/)         | [Walkthrough: Code Repository Projects](walkthrough-code-repository-projects/) |
-| [Snyk Web UI](../snyk-web-ui/getting-started-with-the-snyk-web-ui.md) | [Running tests](running-tests.md) |                                                                                |
+| About Snyk                                             | Using Snyk                        | Tutorials                                                                      |
+| ------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------------------------ |
+| [Introducing Snyk](introducing-snyk.md)                | [Quickstart](quickstart/)         | [Walkthrough: Code Repository Projects](walkthrough-code-repository-projects/) |
+| [Snyk Web UI](getting-started-with-the-snyk-web-ui.md) | [Running tests](running-tests.md) |                                                                                |
 
 ### Other information
 
