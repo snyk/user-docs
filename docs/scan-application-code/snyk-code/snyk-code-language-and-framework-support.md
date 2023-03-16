@@ -30,7 +30,7 @@ Snyk Code currently supports the following programming languages:
 * **Apex**
 
 {% hint style="info" %}
-Beta support exists for Kotlin, Scala and Swift. Contact Snyk for more details or with your further needs.
+Beta support exists for Kotlin, Scala, Swift, and C#. Contact Snyk for more details or with your further needs.
 {% endhint %}
 
 ## Language type and framework support
@@ -91,6 +91,8 @@ These are some of the explicitly supported frameworks for Python; those are in a
 ### C# frameworks
 
 {% hint style="info" %}
+Currently in [Open Beta](../../more-info/snyk-feature-release-process.md#open-beta).
+
 These are some of the explicitly supported frameworks for C#; those are in addition to the general support for many frameworks.
 {% endhint %}
 
