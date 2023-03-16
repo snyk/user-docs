@@ -11,7 +11,6 @@ redirects:
   languages: more-info/product-language-support-list.md
   snyk-infrastructure-as-code/detecting-infrastructure-as-code-files-using-a-broker: features/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-kubernetes-configuration-files-using-a-broker.md
   features/integrations/ci-cd-integrations/snyk-cicd-integration-good-practices: features/integrations/ci-cd-integrations/README.md
-  products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code: products/snyk-open-source/language-and-package-manager-support/README.md
   getting-started/snyk-cicd-integration-good-practices: features/integrations/ci-cd-integrations/README.md
   features/integrations/snyk-broker: features/integrations/snyk-broker/README.md
   products/snyk-infrastructure-as-code/jira-integration/understanding-configuration-scan-issues: products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-configuration-scan-issues.md
