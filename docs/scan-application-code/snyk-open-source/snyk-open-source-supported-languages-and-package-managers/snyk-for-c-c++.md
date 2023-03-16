@@ -262,10 +262,10 @@ The following `snyk` command line options are supported with the `snyk test --un
 
 `--org=<ORG_ID>`\
 `--json`\
-``-`-json-file-output=<OUTPUT_FILE_PATH>`\
+`--json-file-output=<OUTPUT_FILE_PATH>`\
 `--max-depth=1`\
 `--project-name=c-project`\
-`--remote-repo-url=`\
+`--remote-repo-url=<URL>`\
 `--target-reference=<TARGET_REFERENCE>`\
 `--severity-threshold=<low|medium|high|critical>`
 
