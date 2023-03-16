@@ -35,7 +35,7 @@ Card details include [Header section](issue-card-information.md#header-section) 
 
 * **Introduced through**: The path through which the vulnerability or license was introduced
 * **Fixed in:** The file the vulnerability is fixed in
-* [Exploit maturity](../issue-management/evaluating-and-prioritizing-vulnerabilities.md): for example, **Mature** or **Proof Of Concept**
+* [Exploit maturity](../issue-management/view-exploits.md): for example, **Mature** or **Proof Of Concept**
 * Reachability: for example, **Reachable**. For information and an example, see [Reachable vulnerabilities](../issue-management/reachable-vulnerabilities.md)
 * **Social Trends**: Snyk shows a [Trending](../issue-management/prioritize-by-social-trends.md) banner for issues that are being actively discussed on Twitter.
 

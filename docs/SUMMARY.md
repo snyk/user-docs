@@ -520,7 +520,7 @@
     * [Severity levels](manage-issues/issue-management/severity-levels.md)
     * [Priority Score](manage-issues/issue-management/priority-score.md)
     * [Ignore issues](manage-issues/issue-management/ignore-issues.md)
-    * [Evaluating and prioritizing vulnerabilities](manage-issues/issue-management/evaluating-and-prioritizing-vulnerabilities.md)
+    * [View exploits](manage-issues/issue-management/view-exploits.md)
     * [Triaging issues](manage-issues/issue-management/triaging-issues.md)
     * [Reachable vulnerabilities](manage-issues/issue-management/reachable-vulnerabilities.md)
     * [Vulnerabilities with Social Trends](manage-issues/issue-management/prioritize-by-social-trends.md)

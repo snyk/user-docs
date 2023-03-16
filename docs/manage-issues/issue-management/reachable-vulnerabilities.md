@@ -2,7 +2,7 @@
 
 ## Introduction
 
-There are multiple ways to [prioritize vulnerabilities](evaluating-and-prioritizing-vulnerabilities.md), one of which is to look for **reachable vulnerabilities**.
+There are multiple ways to [prioritize vulnerabilities](view-exploits.md), one of which is to look for **reachable vulnerabilities**.
 
 A reachable vulnerability has a path from your code to the vulnerable function in a dependency.
 
