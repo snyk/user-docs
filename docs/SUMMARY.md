@@ -652,6 +652,7 @@
     * [Test public npm packages before use](snyk-cli/test-for-vulnerabilities/test-public-npm-packages-before-use.md)
     * [Test public repositories before use](snyk-cli/test-for-vulnerabilities/test-public-repositories-before-use.md)
     * [CLI test results](snyk-cli/test-for-vulnerabilities/view-cli-test-results.md)
+    * [Fix vulnerabilities using the Snyk CLI](snyk-cli/test-for-vulnerabilities/fix-vulnerabilities-using-the-snyk-cli.md)
     * [Differences in vulnerability counts across environments](snyk-cli/test-for-vulnerabilities/differences-in-vulnerability-counts-across-environments.md)
   * [CLI commands and options summary](snyk-cli/cli-reference.md)
   * [CLI help](snyk-cli/commands/README.md)

@@ -28,3 +28,4 @@ This group of pages provides detailed "how-to" information for the Snyk CLI. The
 * [Automatic **fixing** with Snyk Fix](automatic-remediation-with-snyk-fix.md)
 * [**Log4shell** command use](how-to-use-the-log4shell-command.md)
 * [@**snyk/protect** package](protect-your-code-with-patches.md)
+* [Fix **vulnerabilities** using the Snyk CLI](fix-vulnerabilities-using-the-snyk-cli.md)

@@ -45,20 +45,9 @@ You can also find additional advice and details further down on the Project deta
 * from the **Issues**, tab, a full description per vulnerability
 * from the **Dependencies** tab, the entire tree of your project dependencies, enabling you to clearly visualize affected paths
 
-## View scan results using Snyk CLI
+## Fixing vulnerabilities based on scan results using Snyk CLI
 
-From the CLI, for each list (upgrade and patch), results are displayed in groups based on the packages we recommend that you fix, and including:
-
-* details for all vulnerabilities introduced per package; to view all dependency paths affected, use `--show-vulnerable-paths=all` when running `snyk test` or `snyk monitor`
-* links to full descriptions of each vulnerability
-
-Upgrade and patch results appear similar to the following:
-
-<figure><img src="../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Upgrade results in the CLI"><figcaption><p>Upgrade results in the CLI</p></figcaption></figure>
-
-Patch recommendations:
-
-<figure><img src="../../.gitbook/assets/uuid-1afca091-a9a5-d42c-40b6-f48aa0e72584-en.png" alt="Patch results in the CLI"><figcaption><p>Patch results in the CLI</p></figcaption></figure>
+For information about using the CLI in fixing vulnerabilities, see [Fix vulnerabilities using the Snyk CLI](../../snyk-cli/test-for-vulnerabilities/fix-vulnerabilities-using-the-snyk-cli.md).
 
 ## Apply fixes
 

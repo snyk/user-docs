@@ -1,6 +1,6 @@
 # Snyk patches to fix vulnerabilities
 
-### Introduction to patches
+## Introduction to patches
 
 Sometimes there is no direct upgrade that can address the vulnerability, or an upgrade is not possible due to functional reasons (for example, it’s a major breaking change).
 
@@ -44,7 +44,7 @@ For unmaintained packages, we will create a patch and open a pull request to the
 
 ## How do patches work when using the Snyk CLI?
 
-The `protect` command has been replaced by `@snyk/protect`: https://github.com/snyk/snyk/tree/master/packages/snyk-protect; [npm package for `snyk-protect` command](https://www.npmjs.com/package/@snyk/protect). This page has instructions for using the package and migrating from `snyk protect`.
+For information about patching using the CLI see [Fix vulnerabilities using the Snyk CLI](../../snyk-cli/test-for-vulnerabilities/fix-vulnerabilities-using-the-snyk-cli.md).
 
 ## How do patches work when using the source code integrations?
 
