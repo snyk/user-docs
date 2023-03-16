@@ -51,7 +51,7 @@ To view all the security vulnerabilities that Snyk Code detected in your importe
 If your Snyk Account is already integrated with your SCM, and it already contains imported repositories, Snyk Code may be already active and running in your Org Settings. In this case, you can check if your existing repositories are already being tested by Snyk Code, by searching for the **Code analysis** Project in your Target folders. If a **Code analysis** Project exists in your imported repositories, you can skip this _Getting Started_ section and move to the [Exploring and working with the Snyk Code results](../exploring-and-working-with-the-snyk-code-results/) section. However, you may want to learn more about the following topics:
 
 * [Importing additional repositories to Snyk](activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/importing-additional-repositories-to-snyk.md).
-* [Excluding directories and files from the import process](activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/excluding-directories-and-files-from-the-import-process.md).
+* [Excluding directories and files from the import process](../../../scan-application-code/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/excluding-directories-and-files-from-the-import-process.md).
 * [Removing imported repositories from the Snyk Code test](activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/removing-imported-repositories-from-the-snyk-code-test.md).
 
 ##

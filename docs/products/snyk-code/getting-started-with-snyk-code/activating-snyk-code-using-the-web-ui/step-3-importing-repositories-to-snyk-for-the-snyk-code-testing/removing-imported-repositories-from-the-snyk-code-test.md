@@ -25,7 +25,7 @@ To select the right method for you for removing repositories from the Snyk Code 
   * Remove the webhook from the SCM repository.\
     **Note**: Deleting a Snyk Project or an imported repository will not have any effect on your source code.
 
-**Note**: If you want to remove specific directories or files from the Snyk Code test, use [the Exclude option in .snyk file](excluding-directories-and-files-from-the-import-process.md).
+**Note**: If you want to remove specific directories or files from the Snyk Code test, use [the Exclude option in .snyk file](../../../../../scan-application-code/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/excluding-directories-and-files-from-the-import-process.md).
 
 ### **Deactivating and Deleting Imported Repositories**
 

@@ -17,13 +17,13 @@ Snyk has a hierarchy that allows you to control access to features and scans:
 
 #### Snyk Groups
 
-A [Snyk Group](managing-groups-and-organizations/whats-a-snyk-group.md) represents your entire base of Snyk users.
+A [Snyk Group](../user-and-group-management/managing-groups-and-organizations/whats-a-snyk-group.md) represents your entire base of Snyk users.
 
 Groups can contain multiple Snyk Organizations, allowing you to collaborate with multiple teams.
 
 #### Snyk Organizations
 
-[Organizations](managing-groups-and-organizations/whats-a-snyk-organization.md) represent business areas such as teams, products or environments.&#x20;
+[Organizations](../user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization.md) represent business areas such as teams, products or environments.&#x20;
 
 Organizations can contain multiple Snyk Projects, allowing your team to see scan details for the applications they are working on.
 
@@ -46,7 +46,7 @@ Snyk provides four different types of members or users:
 * Group member
 * Group administrator
 
-For definitions of the associated permissions per role, see [Managing permissions](managing-users-and-permissions/managing-permissions.md#permissions-per-role).
+For definitions of the associated permissions per role, see [Managing permissions](../user-and-group-management/managing-users-and-permissions/managing-permissions.md#permissions-per-role).
 
 {% hint style="info" %}
 **Feature availability**\
@@ -59,30 +59,30 @@ Snyk offers a wide range of tools to manage Groups, Organizations, and users.
 
 #### Enable authentication
 
-Snyk offers API tokens to enable authentication to service accounts or third party tools; see [Managing authentication](authentication/).
+Snyk offers API tokens to enable authentication to service accounts or third party tools; see [Managing authentication](../user-and-group-management/authentication/).
 
 #### Set up Single Sign-On (SSO)
 
-SSO makes authentication and provisioning simple; see [Setting up Single Sign-On (SSO) for authentication](setting-up-sso-for-authentication/).
+SSO makes authentication and provisioning simple; see [Setting up Single Sign-On (SSO) for authentication](../user-and-group-management/setting-up-sso-for-authentication/).
 
-<figure><img src="../.gitbook/assets/image (65) (1) (1).png" alt="Single Sign-On"><figcaption><p>Single Sign-On</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Single Sign-On"><figcaption><p>Single Sign-On</p></figcaption></figure>
 
 #### Manage users and permissions
 
-You can manage users and permissions in your groups; See [Managing users & permissions](managing-users-and-permissions/).
+You can manage users and permissions in your groups; See [Managing users & permissions](../user-and-group-management/managing-users-and-permissions/).
 
-<figure><img src="../.gitbook/assets/image (181).png" alt="Manage users and permissions"><figcaption><p>Manage users and permissions</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (245) (1).png" alt="Manage users and permissions"><figcaption><p>Manage users and permissions</p></figcaption></figure>
 
 #### Manage Groups and Organizations
 
-Learn how Snyk groups and organizations help keep cross-team collaboration seamless; see [Managing groups & organizations](managing-groups-and-organizations/).
+Learn how Snyk groups and organizations help keep cross-team collaboration seamless; see [Managing groups & organizations](../user-and-group-management/managing-groups-and-organizations/).
 
 #### Define notifications
 
-You can manage email notifications, for yourself and your organization. See [Managing notifications](notifications.md).
+You can manage email notifications, for yourself and your organization. See [Managing notifications](../user-and-group-management/notifications.md).
 
-<figure><img src="../.gitbook/assets/image (510).png" alt="Manage email notifications"><figcaption><p>Manage email notifications</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt="Manage email notifications"><figcaption><p>Manage email notifications</p></figcaption></figure>
 
 #### Manage settings
 
-Customize your Snyk account for your needs. See [Managing settings](managing-settings/).
+Customize your Snyk account for your needs. See [Managing settings](../user-and-group-management/managing-settings/).

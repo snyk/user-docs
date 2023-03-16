@@ -14,13 +14,13 @@ Severity levels indicate the assessed level of risk, as one of **C**ritical / **
 
 | Icon                                                                              | Level        | Description                                                                                                                                |
 | --------------------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| <img src="../../.gitbook/assets/image (145) (1).png" alt="" data-size="line">     | **Critical** | This may allow attackers to access sensitive data and run code on your application                                                         |
-| <img src="../../.gitbook/assets/image (168) (1).png" alt="" data-size="original"> | **High**     | This may allow attackers to access sensitive data in your application                                                                      |
-| ![](<../../.gitbook/assets/image (84) (1).png>)                                   | **Medium**   | Under some conditions, this may allow attackers to access sensitive data on your application                                               |
-| ![](<../../.gitbook/assets/image (86) (2).png>)                                   | **Low**      | Application may expose some data that allows vulnerability mapping, which can be used with other vulnerabilities to attack the application |
+| <img src="../../.gitbook/assets/image (131) (1) (1).png" alt="" data-size="line"> | **Critical** | This may allow attackers to access sensitive data and run code on your application                                                         |
+| <img src="../../.gitbook/assets/image (103) (1).png" alt="" data-size="original"> | **High**     | This may allow attackers to access sensitive data in your application                                                                      |
+| ![](<../../.gitbook/assets/image (133).png>)                                      | **Medium**   | Under some conditions, this may allow attackers to access sensitive data on your application                                               |
+| ![](<../../.gitbook/assets/image (303).png>)                                      | **Low**      | Application may expose some data that allows vulnerability mapping, which can be used with other vulnerabilities to attack the application |
 
 {% hint style="info" %}
-Severity levels also apply to license issues. See [Licenses](../../scan-application-code/snyk-open-source/licenses/).
+Severity levels also apply to license issues. See [Licenses](../../products/snyk-open-source/licenses/).
 {% endhint %}
 
 ### Severity levels and Priority Scores
@@ -35,11 +35,11 @@ Severity levels are displayed throughout Snyk, to show this information at all t
 
 For example, in the **Pending tasks** section of the Dashboard:
 
-<img src="../../.gitbook/assets/image (476).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (158) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
 
 Associated with your [Snyk Projects](../introduction-to-snyk-projects/):
 
-<figure><img src="../../.gitbook/assets/image (43) (2).png" alt="Severity levels in Projects"><figcaption><p>Severity levels in Projects</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (43) (1).png" alt="Severity levels in Projects"><figcaption><p>Severity levels in Projects</p></figcaption></figure>
 
 And for each vulnerability in a project:
 

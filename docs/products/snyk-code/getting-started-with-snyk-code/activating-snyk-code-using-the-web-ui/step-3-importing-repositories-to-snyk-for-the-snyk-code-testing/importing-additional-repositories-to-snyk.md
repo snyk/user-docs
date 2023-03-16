@@ -22,7 +22,7 @@ The **Personal and Organization repositories** page appears, displaying the repo
 
 * The repositories you previously imported are indicated with a check mark ![](<../../../../../.gitbook/assets/Snyk Code - Add Repositories dialog box - Check Mark.png>).
 * To import all the repositories of a specific SCM account, select the account checkbox.
-* The **Settings** options on this page are NOT applicable to Snyk Code, and you can only import entire repositories. However, you can [exclude directories and files from the import process using the .snyk file](excluding-directories-and-files-from-the-import-process.md).
+* The **Settings** options on this page are NOT applicable to Snyk Code, and you can only import entire repositories. However, you can [exclude directories and files from the import process using the .snyk file](../../../../../scan-application-code/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/excluding-directories-and-files-from-the-import-process.md).
 
 ![](<../../../../../.gitbook/assets/Snyk Code - Add Repositories dialog box - Entire Repositories.png>)
 

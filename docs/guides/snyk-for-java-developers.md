@@ -221,8 +221,8 @@ Use the **--help** option in the CLI or [docs](https://docs.snyk.io/snyk-cli/cli
     * To scan all projects at once (recommended), use the **--all-sub-projects** option:\
       (that is, **snyk test --all-sub-projects**). Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.
     * To scan a specific project (for example, myapp), use **--sub-project=** (that is, **snyk test --sub-project=myapp**)
-  * To test specific configurations, see detailed examples here [Snyk for Java and Kotlin](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-gradle-maven.md#configurations-for-gradle-project)
-  * Android Build variants, see  [Snyk for Java and Kotlin](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-gradle-maven.md#configurations-for-gradle-project)
+  * To test specific configurations, see detailed examples here [Snyk for Java and Kotlin](../products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md#configurations-for-gradle-project)
+  * Android Build variants, see  [Snyk for Java and Kotlin](../products/snyk-open-source/language-and-package-manager-support/snyk-for-java-gradle-maven.md#configurations-for-gradle-project)
   * Unmanaged Jars - see [Scan all unmanaged JAR files](../snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files.md).
     * Use **--scan-all-unmanaged --all-projects** to recursively find all jars under the present working directory.
 

@@ -60,13 +60,13 @@ You need to [install the Snyk CLI](../snyk-cli/install-the-snyk-cli.md). Once in
 Authenticate CLI video
 {% endembed %}
 
-A scan with [**Snyk test**](../scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/) surfaces information about open source package issues, including fix advice, demonstrated in this video.&#x20;
+A scan with [**Snyk test**](../products/snyk-open-source/use-snyk-open-source-from-the-cli/) surfaces information about open source package issues, including fix advice, demonstrated in this video.&#x20;
 
 {% embed url="https://thoughtindustries-1.wistia.com/medias/b8vrvtmnbu" %}
 Snyk test video
 {% endembed %}
 
-A scan with [**Snyk code test** ](../scan-application-code/snyk-code/cli-for-snyk-code/)runs a Static Code Analysis test on the code in that project, and returns the list of detected vulnerability issues, general information about the test, and a summary of the test findings.
+A scan with [**Snyk code test** ](../products/snyk-code/cli-for-snyk-code/)runs a Static Code Analysis test on the code in that project, and returns the list of detected vulnerability issues, general information about the test, and a summary of the test findings.
 
 A scan with [**Snyk container test**](../scan-containers/snyk-cli-for-container-security/) returns a list of vulnerabilities in the container image, along with recommendations for upgrading the base image for one that is more secure. &#x20;
 

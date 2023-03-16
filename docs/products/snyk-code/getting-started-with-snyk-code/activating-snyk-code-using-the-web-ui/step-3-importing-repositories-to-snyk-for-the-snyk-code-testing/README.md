@@ -13,4 +13,4 @@ Depending on your existing Snyk Account state and your needs, perform one of the
 * If you already have repositories in your Snyk Account, and you want to import other repositories for the Snyk Code testing – [**import additional repositories to Snyk**](importing-additional-repositories-to-snyk.md).
 * If you already have repositories in your Snyk Account, and you want to test them with Snyk Code – [**re-import the existing repositories**](re-importing-existing-repositories-for-the-snyk-code-test.md).
 
-Before you import or re-import a repository to be tested by Snyk Code, you can [exclude certain directories and files from the import by using the .snyk file](excluding-directories-and-files-from-the-import-process.md).
+Before you import or re-import a repository to be tested by Snyk Code, you can [exclude certain directories and files from the import by using the .snyk file](../../../../../scan-application-code/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/excluding-directories-and-files-from-the-import-process.md).
