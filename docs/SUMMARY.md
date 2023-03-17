@@ -534,7 +534,7 @@
     * [Create a security policy and rules](manage-issues/security-policies/how-to-create-a-security-policy-and-set-rules.md)
     * [Security policy conditions](manage-issues/security-policies/security-policies-conditions.md)
     * [Security policy actions](manage-issues/security-policies/security-policy-actions.md)
-    * [Security policies: What collaborators see](manage-issues/security-policies/security-policies-what-collaborators-see.md)
+    * [Security policy results](manage-issues/security-policies/security-policy-results.md)
   * [Snyk reports](manage-issues/snyk-reports/README.md)
     * [Reports overview](manage-issues/snyk-reports/reports-overview.md)
     * [General actions](manage-issues/snyk-reports/general-actions.md)
