@@ -1,7 +1,7 @@
 # Install and configure the Snyk Broker Client
 
 {% hint style="info" %}
-Snyk recommends using Helm as the simplest way to deploy Snyk Broker. You can also use Docker to run the Snyk Broker Client.
+Snyk recommends using Helm as the simplest way to deploy Snyk Broker. You can also use Docker to run the Snyk Broker Client or run npm `install snyk-broker`. This documentation provides detailed instructions for using Helm and Docker.
 {% endhint %}
 
 ## Snyk Broker Helm Chart
