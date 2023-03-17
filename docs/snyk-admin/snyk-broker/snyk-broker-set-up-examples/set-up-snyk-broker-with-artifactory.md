@@ -1,6 +1,6 @@
 # Set up Snyk Broker with Artifactory
 
-To use the Broker client with an Artifactory deployment, **run** `docker pull snyk/broker:artifactory` tag. The following environment variables are needed to customize the Broker client:
+To use the Broker client with an Artifactory deployment, **run** `docker pull snyk/broker:artifactory`. The following environment variables are needed to customize the Broker client:
 
 * `BROKER_TOKEN` - the Snyk Broker token, obtained from your Artifactory integration settings view.
 * `ARTIFACTORY_URL` - the URL of your Artifactory deployment, such as `<yourdomain>.artifactory.com/artifactory`.

@@ -14,7 +14,7 @@ You need Docker or a way to run Docker Linux containers.
 Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 {% endhint %}
 
-To use the Broker client with GitLab.com or an on-prem GitLab deployment, **run** `docker pull snyk/broker:gitlab` tag. The following environment variables are required to configure the Broker client:
+To use the Broker client with GitLab.com or an on-prem GitLab deployment, **run** `docker pull snyk/broker:gitlab`. The following environment variables are required to configure the Broker client:
 
 * `BROKER_TOKEN` - the Snyk Broker token, obtained from your GitLab integration settings view (app.snyk.io).
 * `GITLAB_TOKEN` - a GitLab personal access token with `api` scope

@@ -20,7 +20,7 @@ Snyk supports only Azure DevOps/TFS 2020 or above.
 
 The following explains how to configure Snyk Broker to be used with Azure Repos.
 
-To use the Broker Client with [Azure](https://azure.microsoft.com/en-us/services/devops/), **run** `docker pull snyk/broker:azure-repos` tag. The following environment variables are required to configure the Broker client:
+To use the Broker Client with [Azure](https://azure.microsoft.com/en-us/services/devops/), **run** `docker pull snyk/broker:azure-repos.` The following environment variables are required to configure the Broker client:
 
 * `BROKER_TOKEN` - the Snyk Broker token, obtained from your Azure Repos integration settings view (app.snyk.io).
 * `AZURE_REPOS_TOKEN` - an Azure Repos personal access token. Refer to this [Guide](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops\&tabs=preview-page) for how to get or create the token. Required scopes: ensure Custom defined is selected and under Code select _Read & write._

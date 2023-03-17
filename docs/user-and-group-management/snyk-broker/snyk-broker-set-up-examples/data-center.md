@@ -16,7 +16,7 @@ Some Docker deployments for Windows run only Windows containers. Ensure that you
 
 The following explains how to configure Snyk Broker to use the Broker Client with a Bitbucket Server deployment.
 
-To use the Snyk Broker Client with BitBucket, **run** `docker pull snyk/broker:bitbucket-server` tag. The following environment variables are required to configure the Broker client:
+To use the Snyk Broker Client with BitBucket, **run** `docker pull snyk/broker:bitbucket-server.`The following environment variables are required to configure the Broker client:
 
 * `BROKER_TOKEN` - the Snyk Broker token, obtained from your Bitbucket Server integration settings view (app.snyk.io).
 * `BITBUCKET_USERNAME` - the Bitbucket Server username.
