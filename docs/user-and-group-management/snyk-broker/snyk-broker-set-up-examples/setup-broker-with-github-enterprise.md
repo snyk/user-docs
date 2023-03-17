@@ -9,7 +9,9 @@ Ask your Snyk account team to provide you with a Broker token.
 {% endhint %}
 
 {% hint style="info" %}
-You need Docker or a way to run Docker containers
+You need Docker or a way to run Docker Linux containers.
+
+Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 {% endhint %}
 
 To use the Snyk Broker client with a GitHub Enterprise deployment, **run** `docker pull snyk/broker:github-enterprise` tag. The following environment variables are required to configure the Broker client:

@@ -9,7 +9,9 @@ Ask your Snyk account team to provide you with a Broker token.
 {% endhint %}
 
 {% hint style="info" %}
-You need Docker or a way to run Docker containers.
+You need Docker or a way to run Docker Linux containers.
+
+Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 {% endhint %}
 
 {% hint style="info" %}
