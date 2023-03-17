@@ -8,7 +8,7 @@ Security policy rules follow an “if, then” framework, with one or more condi
 
 If you create a new security policy, the first blank rule is automatically created.
 
-Select the conditions and action to complete a rule. See [Security policies: Conditions](security-policies-conditions.md) and [Security policies: Actions](security-policies-actions.md) for more details.
+Select the conditions and action to complete a rule. See [Security policies: Conditions](security-policy-conditions.md) and [Security policies: Actions](security-policies-actions.md) for more details.
 
 To add a new blank rule, click on **+** below the previous rule, as seen in the screenshot above.
 

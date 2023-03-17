@@ -7,7 +7,7 @@
    **Note**: Policies within the same category cannot have the same name. Policies **cannot** be saved without a policy name applied
 3. Select whether you’d like to apply your policy to organizations or project attributes
 4. Select the desired [Organizations](assign-a-policy-to-organizations.md) or [attributes](assign-a-policy-to-project-attributes.md)
-5. Add rules to the policy. [Click here for information on adding license rules](../../scan-application-code/snyk-open-source/license-policies/setting-a-license-policy.md) or [click here for information on adding security rules](../security-policies/create-a-security-policy-and-rules.md)
+5. Add rules to the policy. [Click here for information on adding license rules](../../scan-application-code/snyk-open-source/license-policies/setting-a-license-policy.md) or [click here for information on adding security rules](../security-policies/how-to-create-a-security-policy-and-set-rules.md)
 6. Click **Submit** in the top right-hand corner.drop-down
 
 <figure><img src="../../.gitbook/assets/screenshot_2020-05-26_at_9.47.26_am.png" alt="Submit a policy"><figcaption><p>Submit a policy</p></figcaption></figure>
