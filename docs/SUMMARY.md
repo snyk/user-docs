@@ -530,7 +530,7 @@
     * [Assign a policy to project attributes](manage-issues/policies/assign-a-policy-to-project-attributes.md)
     * [Assign a policy to Organizations](manage-issues/policies/assign-a-policy-to-organizations.md)
   * [Security policies](manage-issues/security-policies/README.md)
-    * [Getting started with security policies](manage-issues/security-policies/getting-started-with-security-policies.md)
+    * [Introduction to security policies](manage-issues/security-policies/getting-started-with-security-policies.md)
     * [How to create a security policy and set rules](manage-issues/security-policies/how-to-create-a-security-policy-and-set-rules.md)
     * [Security policies: Conditions](manage-issues/security-policies/security-policies-conditions.md)
     * [Security policies: Actions](manage-issues/security-policies/security-policies-actions.md)
