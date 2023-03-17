@@ -16,7 +16,7 @@ You can configure two types of Artifactory Package Repository:
 1. Publicly accessible instances protected by basic authentication
 2. Instances on a private network accessed through Snyk Broker (with or without basic authentication).
 
-These instructions apply to configuring publicly accessible instances. For instructions on configuring a brokered instance see [Set up Snyk Broker with Artifactory](../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/set-up-snyk-broker-with-artifactory.md).
+These instructions apply to configuring publicly accessible instances. For instructions on configuring a brokered instance see [Set up Snyk Broker with Artifactory](../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/set-up-snyk-broker-with-artifactory-registry.md).
 
 1. Go to settings <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Integrations > Package Repositories > Artifactory**.
 2. Enter the URL of your Artifactory instance, this **must** end with **/artifactory**.
@@ -31,4 +31,4 @@ If you do not see the **Snyk Broker** on/off switch, you do not have the necessa
 Submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new) if you want to add a private registry.
 {% endhint %}
 
-When you have permissions to add a private registry, continue with the instructions on [Set up Snyk Broker with Artifactory](../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/set-up-snyk-broker-with-artifactory.md).
+When you have permissions to add a private registry, continue with the instructions on [Set up Snyk Broker with Artifactory](../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/set-up-snyk-broker-with-artifactory-registry.md).

@@ -72,7 +72,7 @@ You can use the Duplicate button next to each role in the Member Roles list page
 
 Enter a unique name and description and click the **Duplicate Role** button. Group Admin can then edit this role to assign new permissions to it or rescind any permissions already assigned.
 
-<figure><img src="../../.gitbook/assets/image (396).png" alt="Enter new role details"><figcaption><p>Enter new role details</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (394) (1) (1) (1) (1) (1).png" alt="Enter new role details"><figcaption><p>Enter new role details</p></figcaption></figure>
 
 ### Delete a Role
 
@@ -98,7 +98,7 @@ In the Web UI, select an **Org** > **Members**.
 
 For any member (Name) except a Group Admin, the user can select the dropdown next to the current role and choose any role to assign that role to the member.
 
-<figure><img src="../../.gitbook/assets/image (27) (4).png" alt="Select member role"><figcaption><p>Select member role</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (104) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (2).png" alt="Select member role"><figcaption><p>Select member role</p></figcaption></figure>
 
 Click the **Add members** button > **Invite new members**.\
 \
