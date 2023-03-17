@@ -65,3 +65,4 @@ redirects:
   ide-tools/visual-studio-extension: integrations/ide-tools/visual-studio-extension.md
   ide-tools/visual-studio-code-extension-for-snyk-code: integrations/ide-tools/visual-studio-code-extension-for-snyk-code.md
   integrations/event-forwarding/aws-cloudtrail-lake-integration-overview: integrations/event-forwarding/aws-cloudtrail-lake.md
+  products/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code: scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/README.md
