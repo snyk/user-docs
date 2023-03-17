@@ -14,7 +14,7 @@ To check for open source and licensing issues and code security, make sure that 
 * For code security (Snyk Code), meet all of the above conditions and then contact your Snyk representative to enable the feature for you.&#x20;
 
 {% hint style="info" %}
-The PR Checks feature is only available in [Closed Beta](../../more-info/snyk-feature-release-process.md) for Snyk Code and exclusively offered for Enterprise plans.&#x20;
+PR Checks for Snyk Code is in Closed Beta and only available for Enterprise plans.
 {% endhint %}
 
 ## Programming language support
