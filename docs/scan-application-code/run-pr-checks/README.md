@@ -15,7 +15,7 @@ Use Snyk PR Checks to prevent new security issues from entering your codebase by
 
 ## What to test for&#x20;
 
-You can analyze PR Checks results in your SCM to test for dependency and licensing issues using [Snyk Open Source](../../products/snyk-open-source/), and code security using [Snyk Code](../../products/snyk-code/).
+You can analyze PR Checks results in your SCM to test for dependency and licensing issues using [Snyk Open Source](../snyk-open-source/), and code security using [Snyk Code](../snyk-code/).
 
 ## How it works
 

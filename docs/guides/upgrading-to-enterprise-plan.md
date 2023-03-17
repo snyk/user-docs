@@ -11,13 +11,13 @@ For full information about how to implement Snyk on the Enterprise plan, read:
 
 Snyk Enterprise features include:
 
-* [Snyk Group with multiple orgs](../user-and-group-management/managing-groups-and-organizations/whats-a-snyk-group.md)
-* [Single Sign-On](../user-and-group-management/setting-up-sso-for-authentication/)
+* [Snyk Group with multiple orgs](../snyk-admin/managing-groups-and-organizations/whats-a-snyk-group.md)
+* [Single Sign-On](../snyk-admin/setting-up-sso-for-authentication/)
 * [Service accounts](../snyk-admin/service-accounts.md)
 * [Rich API](../snyk-api-info/)
 * [Reports](../manage-issues/snyk-reports/)
 * [Security policy management](../manage-issues/security-policies/)
-* [Snyk Broker](../user-and-group-management/snyk-broker/)
+* [Snyk Broker](../snyk-admin/snyk-broker/)
 * [GitHub Enterprise integration](../integrations/git-repository-scm-integrations/github-enterprise-integration.md)
 
 ### Upgrade to Enterprise checklist
@@ -36,17 +36,17 @@ As you work through the rest of this guide, use the following checklist to ensur
 
 ### Set up your Snyk environment
 
-A notable difference between the Free/Team plan and the Enterprise plan is having a [Snyk Group](../user-and-group-management/managing-groups-and-organizations/whats-a-snyk-group.md) and the ability to create multiple [Snyk Organizations](../user-and-group-management/managing-groups-and-organizations/whats-a-snyk-organization.md).
+A notable difference between the Free/Team plan and the Enterprise plan is having a [Snyk Group](../snyk-admin/managing-groups-and-organizations/whats-a-snyk-group.md) and the ability to create multiple [Snyk Organizations](../snyk-admin/managing-groups-and-organizations/whats-a-snyk-organization.md).
 
 #### Set your Snyk Group settings
 
 {% hint style="warning" %}
-Only [Group Administrators](../user-and-group-management/managing-users-and-permissions/managing-permissions.md) can edit Snyk Group settings
+Only [Group Administrators](../snyk-admin/managing-users-and-permissions/managing-permissions.md) can edit Snyk Group settings
 {% endhint %}
 
 Confirm your Snyk Group name. It should reflect your company name. If it needs to be updated go to **Group Settings > General**.&#x20;
 
-Set [session expiration](../user-and-group-management/managing-users-and-permissions/session-length.md) within the Group. This will be the default for all Snyk Organizations within the Group.&#x20;
+Set [session expiration](../snyk-admin/managing-users-and-permissions/session-length.md) within the Group. This will be the default for all Snyk Organizations within the Group.&#x20;
 
 #### Structure your account with multiple Snyk organizations
 
@@ -118,7 +118,7 @@ Users can authenticate into their Snyk accounts in several ways, such as with a 
 If using SSO, after you set it up, you'll need to remove any duplicate users from social login accounts (users who have logged in with other methods than SSO).
 {% endhint %}
 
-See [Setting up Single Sign-On (SSO) for authentication](../user-and-group-management/setting-up-sso-for-authentication/) for more details on steps for using your identity provider to authenticate and provision Snyk to your teams.
+See [Setting up Single Sign-On (SSO) for authentication](../snyk-admin/setting-up-sso-for-authentication/) for more details on steps for using your identity provider to authenticate and provision Snyk to your teams.
 
 See the [SSO, authentication and user provisions](https://training.snyk.io/courses/sso) training course for more details.
 
@@ -155,7 +155,7 @@ See [Getting started with security policies](../manage-issues/security-policies/
 
 ### Remote code repositories
 
-If you have onprem repositories, you can scan them with Snyk using [Snyk Broker](../user-and-group-management/snyk-broker/).
+If you have onprem repositories, you can scan them with Snyk using [Snyk Broker](../snyk-admin/snyk-broker/).
 
 ### GitHub Enterprise integration
 

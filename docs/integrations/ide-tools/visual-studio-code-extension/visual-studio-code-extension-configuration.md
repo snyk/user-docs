@@ -40,4 +40,4 @@ After the extension is installed, you can set the following configurations for t
     * When **Automatic Dependency Management** is checked, the plugin will automatically download and keep the CLI updated.
     *   When **Automatic Dependency Management** \_\_ is checked \_\_ and **Cli Path** contains a path, the plugin uses the provided CLI path. Use this option if downloading the CLI is not possible due to your network configuration (for example, due to firewall rules) and you need to obtain the CLI through other means.
 
-        <figure><img src="../../../.gitbook/assets/Screenshot 2022-08-23 at 14.08.05.png" alt="Automatic Dependency Management and CLI Path"><figcaption><p>Automatic Dependency Management and CLI Path</p></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/Screenshot 2022-08-23 at 14.08.05 (1).png" alt="Automatic Dependency Management and CLI Path"><figcaption><p>Automatic Dependency Management and CLI Path</p></figcaption></figure>

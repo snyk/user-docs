@@ -8,7 +8,7 @@ When you import a repository to be tested by Snyk Code, you can exclude certain 
 * In certain situations, your excluded files may not be excluded if there is an invalid`.snyk` file. In these situations, the scan continues without the`.snyk` file.
 {% endhint %}
 
-You can also use the instructions in this section to exclude directories and files from the [Snyk Code CLI test](../../../../../products/snyk-code/cli-for-snyk-code/testing-your-source-code-via-the-cli.md), by creating the `.snyk` file in your tested repository.
+You can also use the instructions in this section to exclude directories and files from the [Snyk Code CLI test](../../../cli-for-snyk-code/testing-your-source-code-via-the-cli.md), by creating the `.snyk` file in your tested repository.
 
 ### **The Exclusion Syntax of the .snyk File**
 
@@ -65,9 +65,9 @@ exclude:
 * If the repository was already imported to Snyk – retest the repository as follows:
   * On the **Projects** page, click the **Code analysis** Project of the repository. Then, on the **Code Analysis** page, click the **Retest now** option below the header:
 
-<figure><img src="../../../../../.gitbook/assets/image (459).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
 
-* If the repository was not imported yet to Snyk – [import the repository](../../../../../products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/importing-additional-repositories-to-snyk.md).
+* If the repository was not imported yet to Snyk – [import the repository](importing-additional-repositories-to-snyk.md).
 
 Your repository is imported to Snyk, without the directories and/or files you selected to exclude.
 
@@ -91,4 +91,4 @@ Now we want to exclude the **app.js** and **db.js** files from the Snyk Code ana
 
 The **app.js** and **db.js** files are excluded from the retest, and therefore are not tested by Snyk Code. For this reason, they do not appear in the Code Analysis results, and now only 5 vulnerability issues are detected:
 
-<figure><img src="../../../../../.gitbook/assets/image (545).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (273).png" alt=""><figcaption></figcaption></figure>

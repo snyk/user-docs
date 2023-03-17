@@ -10,7 +10,7 @@ Each rule links to detailed fix advice on the [Cloud Security Rules](https://sny
 
 A rule has a **Cloud** tag if it applies to Snyk Cloud and an **IaC** tag if it applies to Snyk IaC. Most rules apply to both products. Exceptions include Cloud-only rules that check for missing resources, such as [SNYK-CC-00168](https://snyk.io/security-rules/cloud/SNYK-CC-00168/cloudwatch-log-metric-filter-and-alarm-should-be-set-for-config-configuration-changes/), "CloudWatch log metric filter and alarm should be set for Config configuration changes."
 
-<figure><img src="../../.gitbook/assets/snyk-cloud-and-iac-settings-page (1).png" alt=""><figcaption><p>The Snyk Cloud &#x26; IaC settings page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-cloud-and-iac-settings-page.png" alt=""><figcaption><p>The Snyk Cloud &#x26; IaC settings page</p></figcaption></figure>
 
 ## Set custom severity level
 
@@ -20,7 +20,7 @@ To set a custom severity level for a rule:
 2. In the **Severity settings** section, select the tab for the desired cloud provider.
 3. Find the rule you want to update and select the new severity level from the drop-down menu:
 
-<figure><img src="../../.gitbook/assets/snyk-cloud-and-iac-set-custom-severity-ui.png" alt=""><figcaption><p>Select the new rule severity level from the drop-down menu</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-cloud-and-iac-set-custom-severity-ui (1).png" alt=""><figcaption><p>Select the new rule severity level from the drop-down menu</p></figcaption></figure>
 
 Changes take effect for an environment after its next scan.
 
