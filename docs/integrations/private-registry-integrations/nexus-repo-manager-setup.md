@@ -24,7 +24,7 @@ You can configure these types of Nexus Repository Manager:
 * Nexus Repository Manager version 2.15+ is in Beta
 {% endhint %}
 
-These instructions apply to configuring publicly accessible instances. For instructions on configuring a brokered instance see [Set up Snyk Broker with Nexus Repository Manager](../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/set-up-snyk-broker-with-nexus-repository-manager.md).
+These instructions apply to configuring publicly accessible instances. For instructions on configuring a brokered instance see [Set up Snyk Broker with Nexus Repository Manager](../../snyk-admin/snyk-broker/set-up-snyk-broker/snyk-broker-set-up-examples/set-up-snyk-broker-with-nexus-repository-manager.md).
 
 ## Obtain Broker token for Nexus integration
 
@@ -39,7 +39,7 @@ If you do not see the **Snyk Broker** switch, you do not have the necessary perm
 Submit a request  to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new) if you want to add a private registry.
 {% endhint %}
 
-When you have permissions to add a private registry, continue with the instructions on [Set up Snyk Broker with Nexus Repository Manager](../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/set-up-snyk-broker-with-nexus-repository-manager.md).
+When you have permissions to add a private registry, continue with the instructions on [Set up Snyk Broker with Nexus Repository Manager](../../snyk-admin/snyk-broker/set-up-snyk-broker/snyk-broker-set-up-examples/set-up-snyk-broker-with-nexus-repository-manager.md).
 
 ## Set up publicly accessible instances
 

@@ -1,4 +1,4 @@
-# Jira
+# Jira notifications setup
 
 A new integration, Snyk Security for Jira Software, is coming soon. If you are interested in early access, you can [request it](https://earlyaccessprogram.atlassian.net/servicedesk/customer/portal/12/group/13/create/56). This page covers the integration available in Snyk.
 
@@ -13,7 +13,7 @@ A new integration, Snyk Security for Jira Software, is coming soon. If you are i
 Snyk Jira integration allows you to manually raise Jira issues in the Snyk UI for vulnerabilities or license issues. The Jira integration also includes APIs ([see Snyk API docs](https://snyk.docs.apiary.io/#reference/projects/project-jira-issues)).
 
 {% hint style="info" %}
-If your Jira instance is private, you will need to use it via [the Snyk Broker deployment method](../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/setup-broker-with-jira.md).
+If your Jira instance is private, you will need to use it via [the Snyk Broker deployment method](../../snyk-admin/snyk-broker/set-up-snyk-broker/snyk-broker-set-up-examples/setup-broker-with-jira.md).
 {% endhint %}
 
 ## **Prerequisites**
@@ -51,4 +51,4 @@ You can also see which Jira issues have been created in the **Issues** view in y
 
 ### See also:
 
-[Set up Snyk Broker with Jira](../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/setup-broker-with-jira.md)
+[Set up Snyk Broker with Jira](../../snyk-admin/snyk-broker/set-up-snyk-broker/snyk-broker-set-up-examples/setup-broker-with-jira.md)

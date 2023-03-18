@@ -16,6 +16,6 @@ For the URLs, see [EU and AU account datacenter creation](https://docs.snyk.io/s
 To install, configure, and roll out your Broker Client and repository integrations:
 
 1. [Prepare Snyk Broker for Deployment](prepare-snyk-broker-for-deployment.md)
-2. [Install and configure Snyk Broker Client](how-to-install-and-configure-your-snyk-broker-client/)
+2. [Install and configure Snyk Broker Client](how-to-install-and-configure-your-snyk-broker-client.md)
 
 For more information see [Troubleshooting Snyk Broker](../troubleshooting-broker.md).
