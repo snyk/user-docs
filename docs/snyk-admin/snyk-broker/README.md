@@ -14,7 +14,7 @@ For the URLs, see [EU and AU account datacenter creation](https://docs.snyk.io/s
 
 ## Introduction to Snyk Broker
 
-Snyk Broker is an open-source tool that acts as a proxy between Snyk and special integrations, to allow [snyk.io](http://snyk.io/) access to your code for scanning and returning results to you. SCM integrations support Snyk Open Source, Snyk Code, Snyk Container (Dockerfile), and Snyk IaC. Supported integrations include the following:
+Snyk Broker is an open-source tool that acts as a proxy between Snyk and special integrations, to allow [snyk.io](http://snyk.io/) access to your code for scanning and returning results to you. SCM integrations with Broker support Snyk Open Source, Snyk Code, Snyk Container (Dockerfile), and Snyk IaC. Supported integrations with Broker include the following:
 
 * Your Source Code Management (SCM) that is not internet reachable
 * Your publicly-accessible SCM, allowing you to view and control Snyk activity for increased data security
@@ -97,7 +97,7 @@ Webhook notifications are delivered to Snyk via the Broker Client only for event
 
 Because of the limitations of the default approved data list, if you want to scan Infrastructure as Code files with Snyk Broker, you must [add and configure an `accept.json`](snyk-broker-infrastructure-as-code-detection/) file in your Broker deployment.
 
-To learn more about the approved data list and the `accept.json` file, see [Install and configure the Snyk Broker Client](set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md), _Custom approved-listing filter_ section.
+To learn more about the approved data list and the `accept.json` file, see [Install and configure the Snyk Broker Client](set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client/), _Custom approved-listing filter_ section.
 
 ## **Using Snyk Broker to scan your code**
 
@@ -111,7 +111,7 @@ To scan other types of code with Snyk Broker, you must add a component or config
 
 ## **Integrations with Snyk Broker**
 
-The Broker Client is [published](https://github.com/snyk/broker) as a set of Docker images, each configured for a specific Git service. Configure each type of integration using environment variables as explained in the Snyk Broker [integration setups](snyk-broker-set-up-examples/). Snyk Broker currently integrates with the following Git repository systems:
+The Broker Client is [published](https://github.com/snyk/broker) as a set of Docker images, each configured for a specific Git service. Configure each type of integration using environment variables as explained in the Snyk Broker [Client integration setups](snyk-broker-set-up-examples/). Snyk Broker currently integrates with the following Git repository systems:
 
 * [GitHub](../../integrations/git-repository-scm-integrations/github-integration.md) and [GitHub Enterprise](../../integrations/git-repository-scm-integrations/github-enterprise-integration.md) (Cloud and On-prem)
 * [GitLab](../../integrations/git-repository-scm-integrations/gitlab-integration.md) (Cloud and On-prem)

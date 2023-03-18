@@ -45,15 +45,15 @@ docker run --restart=always \
        snyk/broker:bitbucket-server
 ```
 
-**If necessary,** go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md) and **make any configuration changes** needed, such as providing the CA (Certificate Authority) to the Broker Client configuration if the Bitbucket instance is using a private certificate, and setting up [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support).
+**If necessary,** go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client/) and **make any configuration changes** needed, such as providing the CA (Certificate Authority) to the Broker Client configuration if the Bitbucket instance is using a private certificate, and setting up [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support).
 
-As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](../../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the BitBucket Server/Data Center integration.
+As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the BitBucket Server/Data Center integration.
 
 ### Custom allowlist through ACCEPT parameter
 
 In addition, a fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for Bitbucket is attached to use if you want to configure a custom allowlist. You cannot run the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument:
 
-{% file src="../../../.gitbook/assets/accept (3).json" %}
+{% file src="../../../.gitbook/assets/accept (1).json" %}
 
 ### Start the Broker Client container
 
