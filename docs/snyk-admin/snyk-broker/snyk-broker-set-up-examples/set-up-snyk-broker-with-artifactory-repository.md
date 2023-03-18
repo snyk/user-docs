@@ -23,15 +23,19 @@ For information about non-brokered integration with Artifactory Repository see [
 
 1. In the Artifactory integration settings, move the **Snyk Broker on/off** switch to **on** to display a form for generating a Broker token.
 2. Select **Generate and Save.**
-3. Copy the token that was generated for use in setting up the Broker Client.
+3. Copy the token that was generated to use when you set up the Broker Client.
 
 ## Configure Broker to be used for Artifactory Registry
 
-To use the Broker client with an Artifactory Registry deployment, **run** `docker pull snyk/broker:artifactory`. The following environment variables are needed to customize the Broker client:
+To use the Broker client with an Artifactory Registry deployment, **run** `docker pull snyk/broker:artifactory`.
 
-`BROKER_TOKEN` - the Snyk Broker token, obtained from your Artifactory integration settings view (**Integrations > Artifactory**).
+The following environment variables are needed to customize the Broker client:
 
-`ARTIFACTORY_URL` - the URL of your Artifactory deployment, such as `<yourdomain>.artifactory.com/artifactory`. The following fields are optional:
+`BROKER_TOKEN` - the Snyk Broker token, obtained from your Artifactory integration settings (**Integrations > Artifactory**).
+
+`ARTIFACTORY_URL` - the URL of your Artifactory deployment, such as `<yourdomain>.artifactory.com/artifactory`.
+
+The following fields are optional:
 
 * _Port_: Omit if no port number is needed
 * _Basic auth_: Omit if no basic auth required.\
