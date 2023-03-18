@@ -133,7 +133,7 @@ Artifactory and Nexus Package Registry integrations are available to Snyk Enterp
 
 * Snyk Open Source uses Artifactory or Nexus to resolve transitive dependencies through private packages.&#x20;
 * Snyk can be connected to a publicly available instance using username and password or a private server on your network using the Snyk Broker..
-* Snyk Open Source provides integrations with Artifactory and Nexus both as local gatekeeper, and interacting with the registry for security testing. See [Nexus Repository Manager setup](../integrations/private-registry-integrations/nexus-repo-manager-setup.md) and [Artifactory Registry setup](../integrations/private-registry-integrations/artifactory-registry-setup.md)
+* Snyk Open Source provides integrations with Artifactory and Nexus both as local gatekeeper, and interacting with the registry for security testing. See [Nexus Repository Manager setup](../integrations/private-registry-integrations/nexus-repo-manager-setup.md) and [Artifactory Registry setup](../integrations/private-registry-integrations/artifactory-repository-setup.md)
 
 {% hint style="info" %}
 If you are not a Snyk Enterprise user and you use Artifactory or Nexus, analysis is best performed via CLI as the build system will retrieve the dependencies and be present locally.
@@ -141,7 +141,7 @@ If you are not a Snyk Enterprise user and you use Artifactory or Nexus, analysis
 
 #### For more information
 
-* Package registry integrations: [Nexus Repository Manager setup](../integrations/private-registry-integrations/nexus-repo-manager-setup.md) and [Artifactory Registry setup](../integrations/private-registry-integrations/artifactory-registry-setup.md)&#x20;
+* Package registry integrations: [Nexus Repository Manager setup](../integrations/private-registry-integrations/nexus-repo-manager-setup.md) and [Artifactory Registry setup](../integrations/private-registry-integrations/artifactory-repository-setup.md)&#x20;
 * [Artifactory Registry for Maven](../integrations/private-registry-integrations/artifactory-registry-for-maven.md)&#x20;
 * [Nexus Registry for Maven](../integrations/private-registry-integrations/artifactory-registry-for-maven-1.md)&#x20;
 * Nexus Container Registry: [Container security with Nexus integration](../scan-containers/image-scanning-library/nexus-image-scanning/container-security-with-nexus-integration.md)

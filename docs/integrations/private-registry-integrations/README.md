@@ -1,8 +1,8 @@
-# Private registry integrations
+# Private registry
 
 ### Artifactory
 
-* [artifactory-registry-setup.md](artifactory-registry-setup.md "mention")
+* [artifactory-repository-setup.md](artifactory-repository-setup.md "mention")
 * [artifactory-registry-for-maven.md](artifactory-registry-for-maven.md "mention")
 * [artifactory-registry-for-npm.md](artifactory-registry-for-npm.md "mention")
 

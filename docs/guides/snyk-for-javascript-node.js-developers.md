@@ -111,7 +111,7 @@ If your projects reference private dependencies in Artifactory or Nexus but you 
 
 For more information, see
 
-* Package registry integrations: [Artifactory Registry setup](../integrations/private-registry-integrations/artifactory-registry-setup.md) and [Nexus Repository Manager setup](../integrations/private-registry-integrations/nexus-repo-manager-setup.md).
+* Package registry integrations: [Artifactory Registry setup](../integrations/private-registry-integrations/artifactory-repository-setup.md) and [Nexus Repository Manager setup](../integrations/private-registry-integrations/nexus-repo-manager-setup.md).
 * &#x20;Gatekeeper plugins: [Artifactory Gatekeeper plugin](../integrations/private-registry-gatekeeper-plugins/artifactory-gatekeeper-plugin-overview.md) and [Nexus Repository Manager Gatekeeper plugin](../integrations/private-registry-gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
 
 For additional package registry integration capabilities see additional tools and security articles.

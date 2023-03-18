@@ -1,4 +1,4 @@
-# Artifactory Registry setup
+# Artifactory Repository setup
 
 {% hint style="info" %}
 **Feature availability**\
@@ -6,17 +6,20 @@ This feature is available with Enterprise plans. See [pricing plans](https://sny
 {% endhint %}
 
 {% hint style="info" %}
+**Supported Projects**\
 The Artifactory Package Repository integration currently supports [Node.js](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-javascript/) (npm and Yarn) and [Maven](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-gradle-maven.md) projects. Gradle projects are not currently supported.
 {% endhint %}
 
 Connecting a custom Artifactory Package Repository enables Snyk to resolve all direct and transitive dependencies of packages hosted on the custom registry and calculate a more complete, accurate dependency graph and related vulnerabilities.
 
-You can configure two types of Artifactory Package Repository:
+You can configure these types of Artifactory Package Repository:
 
-1. Publicly accessible instances protected by basic authentication
-2. Instances on a private network accessed through Snyk Broker (with or without basic authentication).
+* Publicly accessible instances protected by basic authentication
+* Instances on a private network accessed through Snyk Broker (with or without basic authentication).
 
-These instructions apply to configuring publicly accessible instances. For instructions on configuring a brokered instance see [Set up Snyk Broker with Artifactory](../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/set-up-snyk-broker-with-artifactory-registry.md).
+These instructions apply to configuring publicly accessible instances. For instructions on configuring a brokered instance see [Set up Snyk Broker with Artifactory Repository](../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/set-up-snyk-broker-with-artifactory-repository.md).
+
+## Obtain Broker token for Artifactory Respository setup
 
 1. Go to settings <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Integrations > Package Repositories > Artifactory**.
 2. Enter the URL of your Artifactory instance, this **must** end with **/artifactory**.
@@ -31,4 +34,4 @@ If you do not see the **Snyk Broker** on/off switch, you do not have the necessa
 Submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new) if you want to add a private registry.
 {% endhint %}
 
-When you have permissions to add a private registry, continue with the instructions on [Set up Snyk Broker with Artifactory](../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/set-up-snyk-broker-with-artifactory-registry.md).
+When you have permissions to add a private registry, continue with the instructions on [Set up Snyk Broker with Artifactory Repository](../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/set-up-snyk-broker-with-artifactory-repository.md).

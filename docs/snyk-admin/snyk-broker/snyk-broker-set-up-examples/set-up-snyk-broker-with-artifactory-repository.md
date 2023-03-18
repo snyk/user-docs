@@ -1,4 +1,9 @@
-# Set up Snyk Broker with Artifactory
+# Set up Snyk Broker with Artifactory Repository
+
+{% hint style="info" %}
+**Feature availability**\
+Integration with Artifactory Repository is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
 {% hint style="info" %}
 Ask your Snyk account team to provide you with a Broker token or generate it from the Snyk Web UI.
@@ -8,6 +13,10 @@ Ask your Snyk account team to provide you with a Broker token or generate it fro
 You need Docker or a way to run Docker Linux containers.
 
 Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
+{% endhint %}
+
+{% hint style="info" %}
+For information about non-brokered integration with Artifactory Repository see [Artifactory Repository setup](../../../integrations/private-registry-integrations/artifactory-repository-setup.md).
 {% endhint %}
 
 ## Generate a Broker token from the Web UI
