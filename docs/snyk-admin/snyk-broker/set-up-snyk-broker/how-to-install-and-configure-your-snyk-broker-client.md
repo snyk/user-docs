@@ -57,7 +57,7 @@ To use this chart you must first add the chart by adding the repo:&#x20;
 
 `helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`
 
-Then run the [commands for each SCM ](install-broker-for-scms-using-helm.md)or the Snyk Broker - Code Agent or Snyk Broker - Container Registry Agent.
+Then run the [commands for each SCM ](../install-broker-for-scms-using-helm.md)or the Snyk Broker - Code Agent or Snyk Broker - Container Registry Agent.
 
 * GitHub&#x20;
 * GitHub Enterprise
@@ -73,14 +73,14 @@ Then run the [commands for each SCM ](install-broker-for-scms-using-helm.md)or t
 
 Installing the Snyk Broker through Docker commands is also straightforward. Follow the instructions for the different integrations:
 
-* [GitHub](snyk-broker-set-up-examples/broker-example-set-up-snyk-broker-with-github.md)
-* [GitHub Enterprise](snyk-broker-set-up-examples/setup-broker-with-github-enterprise.md)
-* [Bitbucket Server/Data Centre](snyk-broker-set-up-examples/data-center.md)
-* [Gitlab](snyk-broker-set-up-examples/setup-broker-with-gitlab.md)
-* [Azure Repos](snyk-broker-set-up-examples/setup-broker-with-azure-repos.md)
+* [GitHub](../snyk-broker-set-up-examples/broker-example-set-up-snyk-broker-with-github.md)
+* [GitHub Enterprise](../snyk-broker-set-up-examples/setup-broker-with-github-enterprise.md)
+* [Bitbucket Server/Data Centre](../snyk-broker-set-up-examples/data-center.md)
+* [Gitlab](../snyk-broker-set-up-examples/setup-broker-with-gitlab.md)
+* [Azure Repos](../snyk-broker-set-up-examples/setup-broker-with-azure-repos.md)
 * [JFrog Artifactory](https://github.com/snyk/broker#artifactory)&#x20;
 * [Nexus](https://github.com/snyk/broker#nexus-3)
-* [Jira](snyk-broker-set-up-examples/setup-broker-with-jira.md)
+* [Jira](../snyk-broker-set-up-examples/setup-broker-with-jira.md)
 * [Snyk Broker - Container Registry Agent](../snyk-broker-container-registry-agent/) (needed to connect to Container Registries)
 * [Snyk Broker - Code Agent](../snyk-broker-code-agent/) (needed to enable SAST analysis)
 

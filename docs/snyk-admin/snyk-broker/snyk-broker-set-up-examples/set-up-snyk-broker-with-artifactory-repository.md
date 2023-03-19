@@ -16,7 +16,7 @@ Some Docker deployments for Windows run only Windows containers. Ensure that you
 {% endhint %}
 
 {% hint style="info" %}
-For information about non-brokered integration with Artifactory Repository see [Artifactory Repository setup](../../../../integrations/private-registry-integrations/artifactory-repository-setup.md).
+For information about non-brokered integration with Artifactory Repository see [Artifactory Repository setup](../../../integrations/private-registry-integrations/artifactory-repository-setup.md).
 {% endhint %}
 
 ## Generate a Broker token from the Web UI

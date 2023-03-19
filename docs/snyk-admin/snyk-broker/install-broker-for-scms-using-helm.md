@@ -1,6 +1,6 @@
 # Install Broker for SCMs using Helm
 
-After you add the [Snyk Broker Helm Char](how-to-install-and-configure-your-snyk-broker-client.md)t, run the following commands based on the repository type.
+After you add the [Snyk Broker Helm Char](set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md)t, run the following commands based on the repository type.
 
 The following are the allowed values for `scmType`:
 
