@@ -36,7 +36,7 @@ Use the `-d` option to output the debug logs.
 
 Specify while the `snyk sbom` command is in beta.
 
-### `[--file]`&#x20;
+### `[file]`&#x20;
 
 Optional. Select the package manager manifest file to use as the basis for the SBOM to be produced.
 
