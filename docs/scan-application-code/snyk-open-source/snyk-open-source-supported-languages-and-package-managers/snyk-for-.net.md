@@ -115,7 +115,7 @@ You can also **update your language preferences.**
 
 ## Fixing vulnerabilities for .NET
 
-For a general understanding of how Snyk helps you fix Open Source vulnerabilities within your Projects, see [Fix your vulnerabilities](../starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md).
+For a general understanding of how Snyk helps you fix Open Source vulnerabilities within your Projects, see [Fix your vulnerabilities](../../../manage-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md).
 
 {% hint style="info" %}
 **Feature availability**\
