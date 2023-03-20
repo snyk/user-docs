@@ -45,9 +45,3 @@ The summary of the test findings includes the following details:
 {% hint style="info" %}
 The `snyk code test` command has exit codes. See the help doc for [definitions of these codes](https://docs.snyk.io/snyk-cli/commands/code-test#exit-codes). To see the exit code, run `snyk code test -d`.
 {% endhint %}
-
-*
-
-```
-snyk code test -d
-```
