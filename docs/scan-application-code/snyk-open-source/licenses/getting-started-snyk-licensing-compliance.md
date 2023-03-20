@@ -3,7 +3,7 @@
 **Feature availability**\
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 
-Get started with Snyk license compliance management, to check compliance for the [open source licenses](https://snyk.io/learn/open-source-licenses/) in your code, as part of your [Snyk Open Source](../open-source-basics/) solution.
+Get started with Snyk license compliance management, to check compliance for the [open source licenses](https://snyk.io/learn/open-source-licenses/) in your code, as part of your [Snyk Open Source](../automatic-and-manual-prs-with-snyk-open-source/) solution.
 
 The Snyk Default License Policy defines how Snyk identifies potential license issues in the open source packages your projects are using. The default policy applies to all organizations created within your group.
 
