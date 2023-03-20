@@ -11,6 +11,8 @@ If you come across false positive or false negative results, you can take action
 
 ## Code analysis
 
+The following table lists code analysis errors and how to address them.
+
 | Error                                              | Description                                                                                                                                                                                                     | Action                                                                                                                                                                             |
 | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Failed to start code analysis                      | <p>Error causes:</p><ul><li>The PR Checks cannot be created in the database.</li><li>The commit status cannot be sent.</li><li>The registry service worker is unavailable to handle the PR Checks.</li></ul>    | Wait a few minutes, then try again.                                                                                                                                                |
