@@ -97,7 +97,7 @@ Webhook notifications are delivered to Snyk via the Broker Client only for event
 
 Because of the limitations of the default approved data list, if you want to scan Infrastructure as Code files with Snyk Broker, you must [add and configure an `accept.json`](snyk-broker-infrastructure-as-code-detection/) file in your Broker deployment.
 
-To learn more about the approved data list and the `accept.json` file, see [Install and configure the Snyk Broker Client](set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md), _Custom approved-listing filter_ section.
+To learn more about the approved data list and the `accept.json` file, see [Install and configure the Snyk Broker Client](set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client/), _Custom approved-listing filter_ section.
 
 ## **Using Snyk Broker to scan your code**
 
