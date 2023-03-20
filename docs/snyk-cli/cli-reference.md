@@ -112,6 +112,24 @@ You can use environment variables to configure the Snyk CLI and also set variabl
 
 Use `-d` option to output the debug logs for any command.
 
+## Exit codes for CLI commands
+
+Exit codes for the `test` commands are all the same. See the exit codes in the following help docs:
+
+* ``[`snyk test` exit codes](https://docs.snyk.io/snyk-cli/commands/test#exit-codes)
+* ``[`snyk container test` exit codes](https://docs.snyk.io/snyk-cli/commands/container-test#exit-codes)
+* ``[`snyk iac test` exit codes](https://docs.snyk.io/snyk-cli/commands/iac-test#exit-codes)
+* ``[`snyk code test` exit codes](https://docs.snyk.io/snyk-cli/commands/code-test#exit-codes)
+
+Additional CLI commands have exit codes as listed in the following help docs:
+
+* ``[`snyk monitor` exit codes](https://docs.snyk.io/snyk-cli/commands/container-monitor#exit-codes)
+* ``[`snyk container` monitor exit codes](https://docs.snyk.io/snyk-cli/commands/container-monitor#exit-codes)
+* ``[`snyk iac describe` exit codes](https://docs.snyk.io/snyk-cli/commands/iac-describe#exit-codes)
+* ``[`snyk iac` update-exclude-policy exit codes](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy#exit-codes)
+* ``[`snyk log4shell` exit codes](https://docs.snyk.io/snyk-cli/commands/log4shell#exit-codes)
+* ``[`snyk sbom` exit codes](https://docs.snyk.io/snyk-cli/commands/sbom#exit-codes)
+
 ## Options for multiple commands
 
 Lists of the options for Snyk CLI commands follow. Each option is followed by the command(s) to which the option applies. The commands are linked to their help docs. For details concerning each option, see the [help docs](https://docs.snyk.io/snyk-cli/commands).
