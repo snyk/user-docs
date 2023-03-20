@@ -16,7 +16,7 @@ Container Registry Agent: `container-registry-agent`\
 
 The following examples create a namespace called `snyk-broker`. To deploy into an existing namespace, adjust the `-n` parameter and delete the `--create-namespace` parameter.
 
-## Github.com helm install
+## Github.com Helm install
 
 ```
 helm install snyk-broker-chart snyk-broker/snyk-broker \
@@ -27,7 +27,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              -n snyk-broker --create-namespace
 ```
 
-## Github Enterprise helm install
+## Github Enterprise Helm install
 
 Note: for `github`, `githubApi` and `githubGraphQl` values do not include `https://`
 
@@ -43,7 +43,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              -n snyk-broker --create-namespace
 ```
 
-## Bitbucket helm install
+## Bitbucket Helm install
 
 Note: for `bitbucket` and `bitbucketApi` values do not include `https://`
 
@@ -59,7 +59,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              -n snyk-broker --create-namespace
 ```
 
-## Gitlab helm install
+## Gitlab Helm install
 
 Note: for `gitlab` value do not include `https://`
 
@@ -73,7 +73,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              -n snyk-broker --create-namespace
 ```
 
-## Azure Repos helm install
+## Azure Repos Helm install
 
 Note: for `azureReposHost` value do not include `https://`
 
@@ -88,7 +88,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              -n snyk-broker --create-namespace
 ```
 
-## Artifactory Respository helm install
+## Artifactory Respository Helm install
 
 Note: for `artifactoryUrl` value do not include `https://`
 
@@ -100,7 +100,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              -n snyk-broker --create-namespace
 ```
 
-## Jira notifications helm install
+## Jira notifications Helm install
 
 Note: for `jiraHostname` value do not include `https://`
 
