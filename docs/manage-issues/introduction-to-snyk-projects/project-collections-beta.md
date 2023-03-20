@@ -39,7 +39,7 @@ Your new view is created and is automatically selected. You can click the icon n
 
 4. In the **FILTERS** drop-down, select the criteria that you would like to use to organize your view.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (3).png" alt="Select the filters that will be applied in your Project view"><figcaption><p>Select the filters that will be applied in your Project view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (3) (1).png" alt="Select the filters that will be applied in your Project view"><figcaption><p>Select the filters that will be applied in your Project view</p></figcaption></figure>
 
 5. After you have applied all of the filters that you want, click **Save changes** next to the drop-down. Your Project view will be updated.&#x20;
 6. If you want to configure a Project view, you can select different filters and click **Save changes** again. You can also discard any changes to a Project view before you save them to return it to its most recent saved state.
@@ -63,11 +63,11 @@ The name of the view will not appear in the Project views drop-down, and other u
 1. From the Project views drop-down, select the Project view for which you would like to view the report.
 2. Next to the **FILTERS** drop-down, click the **See report for these projects** button.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt="Generate a report for your Project view by clicking the See report for these projects button "><figcaption><p>Generate a report for your Project view by clicking the See report for these projects button </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt="Generate a report for your Project view by clicking the See report for these projects button "><figcaption><p>Generate a report for your Project view by clicking the See report for these projects button </p></figcaption></figure>
 
 The **Reports** page loads and shows a report of the Projects in your Project view.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt="A report is generated automatically with the filters selected in your Project view"><figcaption><p>A report is generated automatically with the filters selected in your Project view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt="A report is generated automatically with the filters selected in your Project view"><figcaption><p>A report is generated automatically with the filters selected in your Project view</p></figcaption></figure>
 
 {% hint style="info" %}
 The scan results you see in the Project listing page will be reflected in the reporting page roughly one (1) hour after the scan is complete.

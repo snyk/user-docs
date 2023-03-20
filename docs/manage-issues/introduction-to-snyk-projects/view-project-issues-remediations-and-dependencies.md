@@ -49,7 +49,7 @@ Snyk's knowledge of the transitive dependencies in your Project make it possible
 
 <figure><img src="../../.gitbook/assets/Screenshot 2021-10-19 at 11.57.07.png" alt="Issue details Fixes tab"><figcaption><p>Issue details Fixes tab</p></figcaption></figure>
 
-See [Fix your vulnerabilities](../starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) for details.
+See [Fix your vulnerabilities](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) for details.
 
 ### View dependencies
 

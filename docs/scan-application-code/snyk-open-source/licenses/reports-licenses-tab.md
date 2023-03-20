@@ -2,7 +2,7 @@
 
 The **Licenses** area displays all licenses that are currently used in your Project, as well as a summary of all dependencies in your Projects and a summary of all of your Projects using the license.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (2) (1) (1) (1).png" alt="Licenses overview in a dependency project."><figcaption><p>Licenses overview in a dependency project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (2) (1) (1).png" alt="Licenses overview in a dependency project."><figcaption><p>Licenses overview in a dependency project</p></figcaption></figure>
 
 **Licenses tab elements**
 
