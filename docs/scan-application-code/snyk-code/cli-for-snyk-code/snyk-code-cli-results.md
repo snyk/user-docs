@@ -6,7 +6,7 @@ After you run the `snyk code test` command in the CLI, the results of the Snyk C
 
 **Note**: The **Ignore** issue option is not applicable to the CLI test results. If you ignored issues on the Snyk Web UI, these issues would still appear in the CLI results.
 
-### The list of vulnerability issues detected by Snyk Code
+## The list of vulnerability issues detected by Snyk Code
 
 The list of issues discovered in the Snyk Code test is organized by the severity level of the issues, from low to high.
 
@@ -22,7 +22,7 @@ For each detected issue, the following information is provided:
 
 ![](<../../../.gitbook/assets/Snyk Code - CLI - snyk code test - Results - Issue summary - In the UI - 2.png>)
 
-### General info about the test
+## General info about the test
 
 The general info about the test results includes the following details:
 
@@ -33,7 +33,7 @@ The general info about the test results includes the following details:
 * **Test type:** The type of test command that generated the results. For Snyk Code, it is always “**Static code analysis**”.
 * **Project path:** The path of the tested repository.
 
-### Summary of the test findings
+## Summary of the test findings
 
 The summary of the test findings includes the following details:
 
@@ -42,23 +42,11 @@ The summary of the test findings includes the following details:
 * The number of vulnerability issues that were discovered by Snyk Code in the tested repository.
 * The number of discovered issues per severity level.
 
-### The Exit Codes of the test results
+{% hint style="info" %}
+The `snyk code test` command has exit codes. See the help doc for [definitions of these codes](https://docs.snyk.io/snyk-cli/commands/code-test#exit-codes). To see the exit code, run `snyk code test -d`.
+{% endhint %}
 
-The `snyk code test` command ends with one of the following exit codes:
-
-**0**: No errors, and no action is needed - the `snyk code test` was completed successfully, and no vulnerability issues were found in the tested folder.
-
-**1**: No errors, but action is needed - the `snyk code test` was completed successfully, and vulnerability issues were found in the tested folder.
-
-**2**: Failure - the `snyk code test` failed. Try to re-run the command.
-
-**3**: Failure - the `snyk code test` failed, since no supported files were found.
-
-**Note**: for more information on supported files, see [Snyk Code - Supported languages and frameworks.](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support)
-
-**To display in the terminal the exit code of a Snyk Code test:**
-
-* Enter:
+*
 
 ```
 snyk code test -d
