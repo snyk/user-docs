@@ -6,11 +6,10 @@ The main dashboard of the **Reports** area displays a birds-eye view of all of t
 * License issues
 * Your overall project activity—a summary of all of your projects, tests and issues
 
-![](<../../.gitbook/assets/Screenshot 2022-08-11 at 09.42.46.png>)
+<figure><img src="../../.gitbook/assets/Screenshot 2022-08-11 at 09.42.46.png" alt="Report Summary tab"><figcaption><p>Report Summary tab</p></figcaption></figure>
 
 {% hint style="info" %}
-**Note**\
-Data in each of the four tabs is displayed based on the filters you've applied from the top of the Reports area, as well as the group or organization that you're viewing from.
+Data in each tab appears based on the filters you've applied from the top of the Reports area, as well as the Group or Organization that you're viewing from.
 {% endhint %}
 
 To quickly view additional data for a specific period in time, hover over the relevant graph and check out the pop-up.
@@ -28,7 +27,7 @@ The following table describes the different parts of the **Summary** area:
 
 ### Activity
 
-![](<../../.gitbook/assets/image (173) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+<figure><img src="../../.gitbook/assets/image (173) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Activity section"><figcaption><p>Activity section</p></figcaption></figure>
 
 For the **Activity** area, the following are the parameters and their descriptions:
 
@@ -45,6 +44,6 @@ For the **Activity** area, the following are the parameters and their descriptio
 
 If you have lots of Projects files to manage and organise in your Organization, you can use filters to focus on specific Projects, or specific types of vulnerability:
 
-![](<../../.gitbook/assets/image (223) (1) (1) (1) (1).png>)
+<figure><img src="../../.gitbook/assets/image (223) (1) (1) (1) (1).png" alt="Filter results"><figcaption><p>Filter results</p></figcaption></figure>
 
 For example, if your Organization represents your development team, and you want to focus on (say) front-end work in the next Sprint, click the **Projects** dropdown and select a subset of the front-end Projects to scan, allowing you to focus on fixing vulnerabilities in that area.
