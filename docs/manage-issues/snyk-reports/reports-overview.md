@@ -1,18 +1,12 @@
 # Reports overview
 
-{% hint style="info" %}
-**Feature availability**\
-This feature is available with Enterprise plans. See [Snyk Pricing Plans](../../more-info/plans.md) for details.\
-To get access to the **Reporting Beta** tab, a Snyk admin can activate the reporting in [Snyk Preview](https://docs.snyk.io/features/user-and-group-management/managing-settings/snyk-preview). Note that Reporting Beta is not available for customers on Multi-Tenant EU or with Snyk Private Cloud.
-{% endhint %}
+The **Reports** area offers data and analytics about Projects, issues, dependencies, and licenses. Report information appears based on the Organization in which you are working, and you can filter this data with different parameters.
 
-The **Reports** area offers data and analytics across all of your projects, displaying historical and aggregated data about projects, issues, dependencies, and licenses. Data in each of the four tabs (seen below) is displayed based on the organization in which you are working, and you can filter this data with different parameters depending on the tab you're viewing.
+Additionally, if your account is managed with Groups, aggregated data for all of your organizations is displayed when you navigate to **Reports** from the **Group** level.
 
-Additionally, if your account is managed with groups, aggregated data for all of your organizations is displayed when you navigate to **Reports** from the **Group** level.
+From the **Group** level, you can filter to view data for multiple Organizations, similar to this example:
 
-From the **Group** level, you can filter to view data for multiple organizations, similar to this example:
-
-![](../../.gitbook/assets/mceclip0-28-.png)
+<figure><img src="../../.gitbook/assets/mceclip0-28-.png" alt="Group-level reporting"><figcaption><p>Group-level reporting</p></figcaption></figure>
 
 You can also use the **Organization Filters** to save and store pre-filtered reports for selected groups of organizations. For more information about this, see our [Snyk groups overview](../../snyk-admin/managing-groups-and-organizations/snyk-groups-overview.md).
 
@@ -22,6 +16,8 @@ Additionally, at the Organization level see [General actions](general-actions.md
 * project types
 * vulnerability severity
 * a specific period of time
+
+### Reports tabs
 
 The Reports area comprises these tabs:
 
@@ -37,9 +33,5 @@ There may be a delay from the time a project is tested and until that data appea
 {% endhint %}
 
 {% hint style="danger" %}
-Read-only projects and their respective results will not appear in the Reports area.
-{% endhint %}
-
-{% hint style="danger" %}
-Deactivated projects and their respective results will not appear in the Reports area.
+Read-only and deactivated Projects and results do not appear in the Reports area.
 {% endhint %}

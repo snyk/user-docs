@@ -1,28 +1,28 @@
 # General actions
 
-This section describes the actions you can perform regardless of the tab you’ve selected.
+This section describes the actions you can perform on all Reports tabs.
 
 ### Filters
 
-At the organization level, from the top of the Reports area, you can search for and filter specific Snyk Projects, and you can filter projects by severity and type. Once you've filtered, the settings are retained as you navigate between tabs.
+At the Organization level, from the top of the Reports area, you can search for and filter specific Snyk Projects, and you can filter Projects by severity and type. After you've filtered, the settings are retained as you navigate between tabs.
 
 {% hint style="danger" %}
-Currently, the max support for filtering is 1,000 Projects.
+The maximum support for filtering is 1,000 Projects.
 {% endhint %}
 
-![](../../.gitbook/assets/uuid-8769c471-9788-dfdf-e3a7-2ffd28ea1011-en.png)
+<figure><img src="../../.gitbook/assets/uuid-8769c471-9788-dfdf-e3a7-2ffd28ea1011-en.png" alt="Report filters"><figcaption><p>Report filters</p></figcaption></figure>
 
 To search for and filter specific Projects, open the dropdown from the **Projects** search field; additionally or alternatively, start typing any part of the project names:
 
-![](../../.gitbook/assets/uuid-d8df9018-387d-26f4-c735-b50a312b9eb0-en.png)
+<figure><img src="../../.gitbook/assets/uuid-d8df9018-387d-26f4-c735-b50a312b9eb0-en.png" alt="Report filters - Projects"><figcaption><p>Report filters - Projects</p></figcaption></figure>
 
 To filter by vulnerability severities and by Project types, open the **Filters** dropdown:
 
-![](../../.gitbook/assets/mceclip0-29-.png)
+<figure><img src="../../.gitbook/assets/mceclip0-29-.png" alt="Report filters - by vulnerabilities and Project type"><figcaption><p>Report filters - by vulnerabilities and Project type</p></figcaption></figure>
 
-### How to navigate and view data for groups and organizations
+### Navigate and view data for Groups and Organizations
 
-To view data for a single organization you need to be an administrator for the organization.
+To view data for a single Organization you need to be an administrator for that Organization.
 
 **Steps:**
 
@@ -30,22 +30,17 @@ To view data for a single organization you need to be an administrator for the o
 2. Navigate to **Reports**.
 3. Data appears only for the organization you selected.
 
-### View data for multiple organizations
+### View data for multiple Organizations
 
-{% hint style="info" %}
-**Feature availability**\
-This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
-{% endhint %}
-
-Group administrators can view report data for one, some or all of the organizations in a single group, together.
+Group administrators can view report data for multiple Organizations in a single Group.
 
 **Steps:**
 
-1. Select the group from the dropdown list in the top panel.
+1. Select the Group from the dropdown list in the top panel.
 2. Navigate to **Reports**.
-3. Data appears for all organizations in the group and a dynamic dropdown of organizations is available.
-4. Check or uncheck the organizations you wish to view.
-5. To save the selected organizations as a quick filter, assign a unique name and then click **Save**.
+3. Data appears for all Organizations in the Group and a dynamic dropdown of Organizations is available.
+4. Check or uncheck the Organizations you wish to view.
+5. To save the selected Organizations as a quick filter, assign a unique name and then click **Save**.
 
 ### Sorting
 
