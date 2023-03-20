@@ -10,9 +10,7 @@ So we recommend you use Snyk to focus on earlier enablement, not later enforceme
 
 ### Focus of this guide
 
-This guide focuses on scanning your application code, which are package manager and language specific, [Snyk Container](https://docs.snyk.io/scan-containers) and [Snyk Infrastructure as Code (IaC)](https://docs.snyk.io/scan-cloud-deployment/snyk-infrastructure-as-code) also support your container and infrastructure as code needs.
-
-
+This guide focuses on scanning your application code, which are package manager and language specific. [Snyk Container](https://docs.snyk.io/scan-containers) and [Snyk Infrastructure as Code (IaC)](https://docs.snyk.io/scan-cloud-deployment/snyk-infrastructure-as-code) also support your container and infrastructure as code needs.
 
 ### Snyk overview
 
