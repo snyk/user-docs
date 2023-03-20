@@ -40,4 +40,4 @@ Prioritize or de-prioritize specific vulnerabilities automatically with our cust
 
 ## Fix the issues
 
-After you decide issue priority, your team can start [fixing the vulnerabilities](starting-to-fix-vulnerabilities/).
+After you decide issue priority, your team can start [fixing the vulnerabilities](../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/).

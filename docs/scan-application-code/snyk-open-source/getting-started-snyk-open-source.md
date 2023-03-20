@@ -35,7 +35,7 @@ See [View Project information](../../manage-issues/introduction-to-snyk-projects
 
 ### Fix vulnerabilities
 
-For some languages, Snyk can fix vulnerabilities using fix pull/merge requests (see [What languages do we support Fix Pull Request or Merge Requests](../../manage-issues/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md)).
+For some languages, Snyk can fix vulnerabilities using fix pull/merge requests (see [What languages do we support Fix Pull Request or Merge Requests](starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md)).
 
 Navigate to the **Issues** view for a project:
 
@@ -52,4 +52,4 @@ To fix vulnerabilities:
 
 <figure><img src="../../.gitbook/assets/screenshot_2021-04-09_at_17.46.22.png" alt="The files changed tab in GitHub after triggering Fix PR for an open source project."><figcaption><p>Files changed tab in GitHub after triggering Fix PR for an open source project</p></figcaption></figure>
 
-See [Fix your vulnerabilities](../../manage-issues/starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) for more details.
+See [Fix your vulnerabilities](starting-to-fix-vulnerabilities/fix-your-vulnerabilities.md) for more details.
