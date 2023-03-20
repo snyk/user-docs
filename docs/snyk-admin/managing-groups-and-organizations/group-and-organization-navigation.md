@@ -10,4 +10,4 @@ To change which Organization you're viewing, click the navigation switcher:
 
 <figure><img src="../../.gitbook/assets/snyk-org-switcher.png" alt="Switch Organization"><figcaption><p>Switch Organization</p></figcaption></figure>
 
-Click the avatar at the bottom of the switcher to display the Organizations in your personal Group. (Depending on your enterprise's setup, this may not be visible to you.)
+Click the avatar at the bottom of the switcher to display your Personal Orgs. (Depending on your enterprise's setup, this may not be visible to you.)

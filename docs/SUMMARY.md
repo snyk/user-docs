@@ -634,7 +634,7 @@
     * [Create a new Snyk group](snyk-admin/managing-groups-and-organizations/create-a-new-snyk-group.md)
     * [What’s a Snyk Organization?](snyk-admin/managing-groups-and-organizations/whats-a-snyk-organization.md)
     * [Manage Snyk Organizations](snyk-admin/managing-groups-and-organizations/manage-snyk-organizations.md)
-    * [Group and Organization navigation](snyk-admin/managing-groups-and-organizations/snyk-groups-switch-between-groups-and-orgs.md)
+    * [Group and Organization navigation](snyk-admin/managing-groups-and-organizations/group-and-organization-navigation.md)
   * [Service accounts](snyk-admin/service-accounts.md)
   * [Structure account for high application performance](snyk-admin/structure-account-for-high-application-performance.md)
   * [Managing notifications](snyk-admin/notifications.md)
