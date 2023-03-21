@@ -33,7 +33,7 @@ In addition, you will have more filter options available when the “Group by no
 
 3. Enter a name for your Project view in the available field, then click **Create view.**&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="Enter a name for your Project view"><figcaption><p>Enter a name for your Project view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (2).png" alt="Enter a name for your Project view"><figcaption><p>Enter a name for your Project view</p></figcaption></figure>
 
 Your new view is created and is automatically selected. You can click the icon next to your Project view to duplicate, rename, or delete it.&#x20;
 
@@ -48,9 +48,9 @@ Your new view is created and is automatically selected. You can click the icon n
 
 1. From the Project views drop-down, select the Project view that you would like to share with another member of your Organization.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt="Select the Project view that you want to share"><figcaption><p>Select the Project view that you want to share</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (5).png" alt="Select the Project view that you want to share"><figcaption><p>Select the Project view that you want to share</p></figcaption></figure>
 
-1. Once the Project view has loaded on the screen, copy the URL of the page. This URL can be shared with anyone in your Organization.&#x20;
+2. Once the Project view has loaded on the screen, copy the URL of the page. This URL can be shared with anyone in your Organization.&#x20;
 
 When you open the link for the view, the Project listing page is organized by the filters applied through the Project view with that URL.&#x20;
 
@@ -63,11 +63,11 @@ The name of the view will not appear in the Project views drop-down, and other u
 1. From the Project views drop-down, select the Project view for which you would like to view the report.
 2. Next to the **FILTERS** drop-down, click the **See report for these projects** button.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (3).png" alt="Generate a report for your Project view by clicking the See report for these projects button "><figcaption><p>Generate a report for your Project view by clicking the See report for these projects button </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt="Generate a report for your Project view by clicking the See report for these projects button "><figcaption><p>Generate a report for your Project view by clicking the See report for these projects button </p></figcaption></figure>
 
 The **Reports** page loads and shows a report of the Projects in your Project view.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt="A report is generated automatically with the filters selected in your Project view"><figcaption><p>A report is generated automatically with the filters selected in your Project view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt="A report is generated automatically with the filters selected in your Project view"><figcaption><p>A report is generated automatically with the filters selected in your Project view</p></figcaption></figure>
 
 {% hint style="info" %}
 The scan results you see in the Project listing page will be reflected in the reporting page roughly one (1) hour after the scan is complete.
