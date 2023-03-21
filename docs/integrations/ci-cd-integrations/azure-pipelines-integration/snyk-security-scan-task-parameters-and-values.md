@@ -13,7 +13,7 @@ The following describes the Snyk task configuration fields from the configuratio
 
 The configuration panel displays all available Snyk service connections from a dropdown list like the following:&#x20;
 
-![Snyk service connections](<../../../.gitbook/assets/image (5) (1) (3).png>)
+![Snyk service connections](<../../../.gitbook/assets/image (5) (1).png>)
 
 If multiple Snyk service connections are available from the dropdown list, ask your administrator which to use for the pipeline you are working with.
 

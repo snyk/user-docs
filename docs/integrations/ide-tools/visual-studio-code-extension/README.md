@@ -58,4 +58,4 @@ Follow these steps to install:
 
 ## Support
 
-If you need help, submit a [request](https://support.snyk.io/hc/en-us/requests/new) to Snyk Support.
+If you need help, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).

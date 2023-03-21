@@ -53,22 +53,22 @@ You can use the Snyk Visual Studio extension in the following environments:
 
 You can install the Snyk extension directly from the IDE; open **Extensions > Manage Extensions**.
 
-![Manage extensions menu](../../../.gitbook/assets/readme\_image\_2\_1\_1.png)
+<figure><img src="../../../.gitbook/assets/readme_image_2_1_1.png" alt="Manage extensions menu"><figcaption><p>Manage extensions menu</p></figcaption></figure>
 
 Search for _Snyk_ and select **Download** to download the Snyk Security - Code and Open Source Dependencies extension.
 
-Once installed, use Snyk through the **Extensions > Snyk** menu (on Visual Studio versions older than 2019, Snyk is part of the top menu bar).
+After you install, use Snyk through the **Extensions > Snyk** menu. (On Visual Studio versions older than 2019, Snyk is part of the top menu bar).
 
-![](<../../../.gitbook/assets/image (351) (1) (1) (1) (1) (1) (1) (1).png>)
+<figure><img src="../../../.gitbook/assets/image (351) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk extensions menu"><figcaption><p>Snyk extensions menu</p></figcaption></figure>
 
 You can also open the Snyk tool window using **View > Other Windows > Snyk**_._
 
 Once the tool window opens, wait while the Snyk extension downloads the latest Snyk CLI version.
 
-![Snyk tool window, CLI downloading](../../../.gitbook/assets/readme\_image\_2\_3.png)
+<figure><img src="../../../.gitbook/assets/readme_image_2_3.png" alt="Snyk tool window, CLI downloading"><figcaption><p>Snyk tool window, CLI downloading</p></figcaption></figure>
 
 After you install the extension and the CLI you must authenticate. You can use the **Connect Visual Studio to Snyk** link. For more information and additional ways to authenticate see [Visual Studio extension authentication](https://docs.snyk.io/ide-tools/visual-studio-extension/visual-studio-extension-authentication).
 
 ## Support
 
-If you need help, submit a [request](https://support.snyk.io/hc/en-us/requests/new) to Snyk Support.
+If you need help, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
