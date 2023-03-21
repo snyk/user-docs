@@ -366,7 +366,7 @@ The following `snyk monitor` options can be used with `--unmanaged` as documente
 
 `--target-reference=<TARGET_REFERENCE>`
 
-`--project-name=<PROJECT_NAME>`
+`--project-name=<c-project>`
 
 There are also special options.
 
