@@ -264,11 +264,11 @@ The following `snyk` command line options are supported with the `snyk test --un
 `--json`\
 `--json-file-output=<OUTPUT_FILE_PATH>` (`snyk test` only)\
 `--remote-repo-url=<URL>`\
-`--severity-threshold=<low|medium|high|critical>` (snyk test only)\
+`--severity-threshold=<low|medium|high|critical>` (`snyk test` only)\
 `--max-depth`\
 `--print-dep-paths`\
-`--target-reference=<TARGET_REFERENCE>`\
-`--project-name=c-project`\
+`--target-reference=<TARGET_REFERENCE>` (`snyk monitor` only)\
+`--project-name=<c-project>` (`snyk monitor` only)\
 ``
 
 For more information about command line options see the Snyk help docs: [Options for scanning with `snyk test --unmanaged`](https://docs.snyk.io/snyk-cli/commands/test#options-for-scanning-using-unmanaged) or [`snyk monitor --unmanaged`](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-scanning-using-unmanaged).
