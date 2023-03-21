@@ -33,7 +33,7 @@ To see if you are using the new lockfile format, look in in the `package-lock.js
 {% hint style="info" %}
 Snyk currently does not support v3 lockfiles. If your lockfile is version 3, you may get an error message when scanning saying that your lockfile may be out of sync.&#x20;
 
-If this happens, you can check the version of your lockfile following the preceding instructions, and can force npm to create a supported version wth this command:&#x20;
+If this happens, you can check the version of your lockfile following the preceding instructions, and can force npm to create a supported version with this command:&#x20;
 
 `npm install --lockfile-version=2`
 {% endhint %}
