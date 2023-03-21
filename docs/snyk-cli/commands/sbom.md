@@ -1,18 +1,10 @@
 # SBOM (beta)
 
-## Install the CLI to use the SBOM command
-
-In order to try out the SBOM generation feature, you must use a minimum of CLI version 1.1071.0 and install the CLI from one of these direct links:
-
-* macOS: https://static.snyk.io/cli/latest/snyk-macos
-* Windows: https://static.snyk.io/cli/latest/snyk-win.exe
-* Linux: https://static.snyk.io/cli/latest/snyk-linux
-
-Installation via npm will be available.
-
 ## Usage
 
-`snyk sbom --experimental [file] --format=<cyclonedx1.4+json|spdx2.3+json|cyclonedx1.4+xml> [--unmanaged] [targetDirectory]`
+**Note:** In order to try out the SBOM generation feature, you must use a minimum of CLI version 1.1071.0.
+
+`snyk sbom --experimental [==file=<file>] --format=<cyclonedx1.4+json|spdx2.3+json|cyclonedx1.4+xml> [--unmanaged] [--targetDirectory=<targetDirecoty>]`
 
 ## Description
 
@@ -36,7 +28,7 @@ Use the `-d` option to output the debug logs.
 
 Specify while the `snyk sbom` command is in beta.
 
-### `[file]`&#x20;
+### `[--file=<file>]`&#x20;
 
 Optional. Select the package manager manifest file to use as the basis for the SBOM to be produced.
 
@@ -50,7 +42,7 @@ The supported formats are CycloneDX 1.4 JSON or XML and SPDX 2.3 JSON.
 
 Optional. Instruct the CLI to build an SBOM based on the unmanaged C/C++ source libraries that are locally available.
 
-### `[targetDirectory]`
+### `[--targetDirectory=<targetDirectory]`
 
 Optional. Instruct the CLI to autodetect the package manager manifest file to use within the specified directory.
 

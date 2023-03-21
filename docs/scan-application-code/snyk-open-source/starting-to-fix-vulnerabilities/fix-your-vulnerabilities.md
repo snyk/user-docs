@@ -38,7 +38,7 @@ The summary area groups advice per package, and is displayed based on the best a
 
 ![Upgrade issues tabs](<../../../.gitbook/assets/Screenshot 2021-10-12 at 14.08.13.png>)
 
-![Patchable issues tabs](<../../../.gitbook/assets/Screenshot 2021-10-12 at 14.10.00 (1).png>)
+![Patchable issues tabs](<../../../.gitbook/assets/Screenshot 2021-10-12 at 14.10.00.png>)
 
 You can also find additional advice and details further down on the Project details page:
 
