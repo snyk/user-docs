@@ -95,7 +95,7 @@ For information about the `snyk test` options available for use with Python, see
 
 Python projects can be imported from any of the Git repositories Snyk supports.
 
-To test your Python Projects that use pip as a package manager, Snyk analyzes your `requirements.txt` file. Yyou must have this file in your repository before importing.
+To test your Python Projects that use pip as a package manager, Snyk analyzes your `requirements.txt` file. You must have this file in your repository before importing.
 
 If you have renamed your `requirements.txt` files, for example, if you have renamed a file to `requirements-dev.txt`, Snyk tries to import every file that follows the `**/*req*.txt` convention as a Python project.
 
