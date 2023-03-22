@@ -64,6 +64,4 @@ The `snyk sbom` command is offered in beta in order to gather feedback, so your 
 
 Snyk wants to hear what works or does not work with the current options, and what else you would like to see in the future in this area.
 
-If you have a shared Slack channel with Snyk, an account team, or contact with the product team, you are welcome to provide feedback directly. Otherwise you may submit feedback through a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
-
-\\
+If you have a shared Slack channel with Snyk, an account team, or contact with the product team, you are welcome to provide feedback directly. Otherwise you may submit feedback through a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new)
