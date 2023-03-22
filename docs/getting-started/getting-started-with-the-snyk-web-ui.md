@@ -11,7 +11,7 @@ You can use the Snyk Web UI to run a full set of Snyk functions from your browse
 <figure><img src="../.gitbook/assets/Dashboard-intro.png" alt="Introducing the Snyk Web UI"><figcaption><p>Introducing the Snyk Web UI</p></figcaption></figure>
 
 {% hint style="info" %}
-You can also access Snyk functions from the [Snyk CLI](../snyk-cli/), from [within your IDE](../integrations/ide-tools/), and using the [Snyk API](../snyk-api-info/).&#x20;
+You can also access Snyk functions from the [Snyk CLI](../snyk-cli/), from [within your IDE](../integrations/ide-tools/), and using the [Snyk API](../snyk-api-info/).
 {% endhint %}
 
 You can connect your code repositories, then use Snyk to scan and secure your application code, open-source libraries, container registries, and configuration files.
@@ -90,7 +90,7 @@ Select **Integrations** from the navigation on the dashboard to open the [Integr
 * Manage [Slack](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration) and [Jira](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira) integrations.
 * Learn about the [Vulnerability management tools](https://docs.snyk.io/integrations/vulnerability-management-tools).
 
-<figure><img src="../.gitbook/assets/image (123) (1) (1) (1) (1) (1) (1) (1).png" alt="Integrations page"><figcaption><p>Integrations page</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (46).png" alt="Integrations page"><figcaption><p>Integrations page</p></figcaption></figure>
 
 ### Manage Organization or Group members
 

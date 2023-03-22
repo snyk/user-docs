@@ -17,16 +17,16 @@ Video demonstration of importing projects via the Snyk Web UI
 
 The steps to import a Project are as follows:
 
-* Select **Projects** > **Add Project,** and select where to import the Project from, for example, select  GitHub to import from your GitHub repository, or select **CLI** to use the [Snyk CLI](../../snyk-cli/) locally:
+* Select **Projects** > **Add Project,** and select where to import the Project from, for example, select GitHub to import from your GitHub repository, or select **CLI** to use the [Snyk CLI](../../snyk-cli/) locally:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-07-26 at 10.06.54.png" alt="Add Project choices"><figcaption><p>Add Project choices</p></figcaption></figure>
 
 * Select the repositories to use, then choose **Add selected repositories** to import the selected repositories into your project:
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Add selected repositories</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Add selected repositories</p></figcaption></figure>
 
 {% hint style="info" %}
-Projects you select to import are shown with a ![Check mark](<../../.gitbook/assets/image (7).png>).\
+Projects you select to import are shown with a ![Check mark](<../../.gitbook/assets/image (7) (2).png>).\
 Projects previously imported are marked by a ✔.
 {% endhint %}
 
@@ -43,7 +43,7 @@ A progress bar appears during import. Select **View last import log** to see log
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-01-23 at 13.23.59.png" alt="Import Projects progress and option to view import log"><figcaption><p>Import Projects progress and option to view import log</p></figcaption></figure>
 
-During the import, Snyk starts scanning the selected repos for relevant files (such as  **package.json** files listing dependencies) in the entire directory tree, and imports these files as Snyk Projects.
+During the import, Snyk starts scanning the selected repos for relevant files (such as **package.json** files listing dependencies) in the entire directory tree, and imports these files as Snyk Projects.
 
 ## Import results
 

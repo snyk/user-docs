@@ -29,7 +29,7 @@ Follow the steps in each section of this document to use the Snyk Jenkins plugin
 
 The plugin can download the latest version of Snyk's binaries and keep them up-to-date for you.
 
-<figure><img src="../../.gitbook/assets/snyk_config_auto-update_v2 (1).png" alt="Snyk Jenkins plugin automatic installation"><figcaption><p>Snyk Jenkins plugin automatic installation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk_config_auto-update_v2.png" alt="Snyk Jenkins plugin automatic installation"><figcaption><p>Snyk Jenkins plugin automatic installation</p></figcaption></figure>
 
 ### Manual installations
 
@@ -119,9 +119,9 @@ You can pass the following parameters to your`snykSecurity` step.
 
 Snyk Installation Name, as configured in step 2. Configure a Snyk tnstallation.
 
-**`snykTokenId` (optional, default: **_**none**_**)**
+**`snykTokenId` (optional, default: \_none**\_**)**
 
-Snyk API Token Credential ID., as configured in  step 3. Configure a Snyk API token credential.
+Snyk API Token Credential ID., as configured in step 3. Configure a Snyk API token credential.
 
 If you prefer to provide the Snyk API token another way, such using alternative credential bindings, you must provide a `SNYK_TOKEN` build environment variable.
 
@@ -133,23 +133,23 @@ Whether the step should fail if issues and vulnerabilities are found.
 
 Whether the step should fail if Snyk fails to scan the project due to an error. Errors include scenarios like: failing to download Snyk's binaries, improper Jenkins setup, bad configuration, and server errors.
 
-**`organization` (optional, default: **_**automatic**_**)**
+**`organization` (optional, default: \_automatic**\_**)**
 
-The Snyk Organization in which this project should be tested and monitored. See `--org` in the  [Snyk CLI commands and options summary](https://docs.snyk.io/snyk-cli/cli-reference) for default behavior.
+The Snyk Organization in which this project should be tested and monitored. See `--org` in the [Snyk CLI commands and options summary](https://docs.snyk.io/snyk-cli/cli-reference) for default behavior.
 
-**`projectName` (optional, default: **_**automatic**_**)**
+**`projectName` (optional, default: \_automatic**\_**)**
 
 A custom name for the Snyk project created for this Jenkins project on every build. See `--project-name` in the [CLI commands and options summary](https://docs.snyk.io/snyk-cli/cli-reference) for default behavior.
 
-**`targetFile` (optional, default: **_**automatic**_**)**
+**`targetFile` (optional, default: \_automatic**\_**)**
 
 The path to the manifest file to be used by Snyk. See `--file` in the [CLI commands and options summary](https://docs.snyk.io/snyk-cli/cli-reference) for default behavior
 
-**`severity` (optional, default: **_**automatic**_**)**
+**`severity` (optional, default: \_automatic**\_**)**
 
 The minimum severity to detect. Can be one of the following: `low`, `medium`, `high` , `critical`. See `--severity-threshold` in the [CLI commands and options summary](https://docs.snyk.io/snyk-cli/cli-reference) for default behavior.
 
-**`additionalArguments` (optional, default: **_**none**_**)**
+**`additionalArguments` (optional, default: \_none**\_**)**
 
 See the [CLI commands and options summary](https://docs.snyk.io/snyk-cli/cli-reference) for information on additional CLI options.
 

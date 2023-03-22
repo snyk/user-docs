@@ -90,14 +90,14 @@ Snyk tests any newly created pull requests in your repositories for security vul
 
 The example that follows shows how Snyk pull request checks appear on the GitHub Enterprise Pull Request page.
 
-<figure><img src="../../.gitbook/assets/pr_testing-14july2022 (1).png" alt="Pull request checks shown in GitHub Enterprise"><figcaption><p>Pull request checks shown in GitHub Enterprise</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/pr_testing-14july2022.png" alt="Pull request checks shown in GitHub Enterprise"><figcaption><p>Pull request checks shown in GitHub Enterprise</p></figcaption></figure>
 
 To review and adjust the pull request tests settings:
 
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings** > **Integrations > Source control > GitHub Enterprise**, and select **Edit Settings**.
 2. Scroll to **Default Snyk test for pull requests**.
 
-<figure><img src="../../.gitbook/assets/image (143).png" alt="Default Snyk test for pull requests setting enabled"><figcaption><p>Default Snyk test for pull requests setting enabled</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/default_snyk_test-3july2022.png" alt="Default Snyk test for pull requests setting enabled"><figcaption><p>Default Snyk test for pull requests setting enabled</p></figcaption></figure>
 
 ## Required permissions scope for the GitHub integration
 

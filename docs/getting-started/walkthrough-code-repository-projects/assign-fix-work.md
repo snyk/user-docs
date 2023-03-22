@@ -14,7 +14,7 @@ This section describes how this fix process works throughout your team for your 
 
 ### Decide what to fix first
 
-Your fix priority depends on your workflows and business processes. Different teams approach fixes in different ways, depending on the tools they use, their own workflow maturity, and competing work priorities.&#x20;
+Your fix priority depends on your workflows and business processes. Different teams approach fixes in different ways, depending on the tools they use, their own workflow maturity, and competing work priorities.
 
 Typically, smaller teams have less process, and Enterprise-level teams are more formal. For example, individual developers in your teams may decide which issues to fix on a case-by-case basis, or it may be a more controlled process, with team leads assigning fix work as part of a Sprint planning process
 
@@ -49,11 +49,11 @@ Snyk [Jira integration](../../integrations/notifications-ticketing-system-integr
 
 Navigate to the issue you have decided to fix, then click **Create a Jira issue**:
 
-<figure><img src="../../.gitbook/assets/image (158) (1) (1) (1) (1) (1) (1) (1).png" alt="Create a Jira issue"><figcaption><p>Create a Jira issue</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (158) (1) (2).png" alt="Create a Jira issue"><figcaption><p>Create a Jira issue</p></figcaption></figure>
 
 You can then define the Jira task details for this fix:
 
-<figure><img src="../../.gitbook/assets/image (483).png" alt="Create a Jira issue details"><figcaption><p>Create a Jira issue details</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (58).png" alt="Create a Jira issue details"><figcaption><p>Create a Jira issue details</p></figcaption></figure>
 
 You can assign this task to a developer in the team, following your team’s normal Sprint processes.
 

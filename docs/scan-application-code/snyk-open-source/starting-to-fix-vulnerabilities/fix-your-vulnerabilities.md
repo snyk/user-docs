@@ -19,8 +19,6 @@ From our app, for each tab (upgrade and patch) in the fix advice area of your pr
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-03-15 at 12.14.06.png" alt="Scan results on Web UI"><figcaption><p>Scan results on Web UI</p></figcaption></figure>
 
-
-
 ### View Fix Advice
 
 The Fix Advice area appears in the project details page:
@@ -38,7 +36,7 @@ The summary area groups advice per package, and is displayed based on the best a
 
 ![Upgrade issues tabs](<../../../.gitbook/assets/Screenshot 2021-10-12 at 14.08.13.png>)
 
-![Patchable issues tabs](<../../../.gitbook/assets/Screenshot 2021-10-12 at 14.10.00 (1).png>)
+![Patchable issues tabs](<../../../.gitbook/assets/Screenshot 2021-10-12 at 14.10.00.png>)
 
 You can also find additional advice and details further down on the Project details page:
 
@@ -61,7 +59,4 @@ To apply fixes, you can:
 {% hint style="info" %}
 **Automatic Fix PRs**\
 When a new fixable vulnerability is found, Snyk can attempt to open a new pull request automatically. See [Automated pull request creation for new fixes](../open-source-basics/fix-pull-requests-for-new-vulnerabilities.md) for details.
-
-
 {% endhint %}
-

@@ -9,7 +9,7 @@ Installing the Snyk Broker through Docker commands is also straightforward. Foll
 * [Bitbucket Server/Data Centre](../../../snyk-broker-set-up-examples/data-center.md)
 * [Gitlab](../../../snyk-broker-set-up-examples/setup-broker-with-gitlab.md)
 * [Azure Repos](../../../snyk-broker-set-up-examples/setup-broker-with-azure-repos.md)
-* [JFrog Artifactory](https://github.com/snyk/broker#artifactory)&#x20;
+* [JFrog Artifactory](https://github.com/snyk/broker#artifactory)
 * [Nexus](https://github.com/snyk/broker#nexus-3)
 * [Jira](../../../snyk-broker-set-up-examples/setup-broker-with-jira.md)
 * [Snyk Broker - Container Registry Agent](../../../snyk-broker-container-registry-agent/) (needed to connect to Container Registries)
@@ -17,4 +17,4 @@ Installing the Snyk Broker through Docker commands is also straightforward. Foll
 
 Once the Broker is running, visit the settings for your brokered integration in [the Snyk Web UI](https://app.snyk.io) to see a message like the following and start importing projects:
 
-<figure><img src="../../../../../.gitbook/assets/image (60) (2).png" alt="Brokered integration settings showing connected status"><figcaption><p>Brokered integration settings showing connected status</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (60) (1).png" alt="Brokered integration settings showing connected status"><figcaption><p>Brokered integration settings showing connected status</p></figcaption></figure>

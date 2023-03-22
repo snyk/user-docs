@@ -18,8 +18,7 @@ For customers with an Enterprise plan, group administrators can create or modify
 
 If your company's account has one or more groups, to access the License policy settings:
 
-1.  Use the **Switch group** selector and choose a Group to open its overview.\
-
+1.  Use the **Switch group** selector and choose a Group to open its overview.\\
 
     <figure><img src="../../../.gitbook/assets/license_choose-group_19oct2022.png" alt="Defining policy."><figcaption><p>Defining policy</p></figcaption></figure>
 2.  Go to **Policies > Policy manager > License policies > Organization** and choose the policy you want to update.
@@ -42,7 +41,7 @@ You can edit the license severities and instructions.
     Once added, the **Add instructions** link changes to **Edit instructions.**
 5. Click **Submit** to save your policy.
 
-<figure><img src="../../../.gitbook/assets/policy-severity-instructions-x_06oct2022.png" alt="Updating policy instructions."><figcaption><p>Updating policy instructions</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/policy-severity-instructions-x_06oct2022 (1).png" alt="Updating policy instructions."><figcaption><p>Updating policy instructions</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/policy-severity-instructions-2_06oct2022.png" alt="Submitting policy instructions"><figcaption><p>Submitting policy instructions</p></figcaption></figure>
 

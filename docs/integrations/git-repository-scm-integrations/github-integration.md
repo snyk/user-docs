@@ -93,11 +93,11 @@ Snyk tests any newly-created pull request in your repositories for security vuln
 
 The example that follows shows how Snyk pull request checks appear on the GitHub pull request page.
 
-<figure><img src="../../.gitbook/assets/pr_testing-14july2022 (1).png" alt="Snyk pull request checks on GitHub pull request page"><figcaption><p>Snyk pull request checks on GitHub pull request page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/pr_testing-14july2022.png" alt="Snyk pull request checks on GitHub pull request page"><figcaption><p>Snyk pull request checks on GitHub pull request page</p></figcaption></figure>
 
 You can review and adjust the pull request test settings via the Snyk GitHub Integration settings page in <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings** **>** **Integrations > Source control > GitHub**.
 
-<figure><img src="../../.gitbook/assets/default_snyk_test-3july2022.png" alt="Pull request test settings"><figcaption><p>Pull request test settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (79).png" alt="Pull request test settings"><figcaption><p>Pull request test settings</p></figcaption></figure>
 
 ## Required permissions scope for the GitHub integration
 
@@ -242,16 +242,16 @@ For example, to show a badge for the 4.x branch of the express repo, you would u
 
 #### Badge results
 
-* A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (109) (1).png" alt="No vulnerabilities" data-size="line">
+* A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (78).png" alt="No vulnerabilities" data-size="line">
 * A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (143) (1) (1) (1) (1) (1) (1) (2).png" alt="Number of vulnerabilities" data-size="line">
-* A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (11) (1) (1) (1) (2) (1) (1) (1) (1).png" alt="Unknown vulnerabilities" data-size="line">
+* A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (47).png" alt="Unknown vulnerabilities" data-size="line">
 
 #### **Badge styles**
 
 To change the style of the badge, you can add the following query parameters after `badge.svg`:
 
 * Flat rectangle with squared edges: `?style=flat-square` <img src="../../.gitbook/assets/image (1) (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Flat rectangle badge" data-size="line">
-* "Plastic" rectangle with rounded edges and shading `?style=plastic` <img src="../../.gitbook/assets/image (109) (1).png" alt="&#x22;Plastic&#x22; rectangle badge" data-size="line">
+* "Plastic" rectangle with rounded edges and shading `?style=plastic` <img src="../../.gitbook/assets/image (78).png" alt="&#x22;Plastic&#x22; rectangle badge" data-size="line">
 
 ### **npm badges**
 
