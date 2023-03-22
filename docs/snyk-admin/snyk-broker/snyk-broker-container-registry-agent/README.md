@@ -5,7 +5,7 @@
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-The Snyk Broker Container Registry Agent enables you to establish connection with network-restricted container registries so you can scan these registries using the Snyk service.&#x20;
+The Snyk Broker Container Registry Agent enables you to establish connection with network-restricted container registries so you can scan these registries using the Snyk service.
 
 When you use the Container Registry Agent, Snyk can integrate with private container registries that you host, and help you to better secure container images in those registries. Integration with private container registries allows you to:
 
@@ -150,7 +150,7 @@ See [Configuring your JFrog Artifactory container registry integration](../../..
 
 In Elastic Container Registries and other container registries the communication is the same. The Agent makes synchronous calls to the container registries to list and pull the image. Then the Agent scans the images and send the sends the results to the Broker Client using callbacks. ECR has a special authentication mechanism that requires setting up an IAM Role or User in the Agent.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (2).png" alt="High-level architecture of the brokered ECR integration"><figcaption><p>High-level architecture of the brokered ECR integration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="High-level architecture of the brokered ECR integration"><figcaption><p>High-level architecture of the brokered ECR integration</p></figcaption></figure>
 
 #### **Required AWS Resource with ECR**
 
@@ -201,7 +201,7 @@ In order to use the endpoint, provide the following environment variable to the 
 When you call the `/systemcheck` endpoint of the Broker Client, it uses the `BROKER_CLIENT_VALIDATION_URL` to make a request to the `/systemcheck` endpoint Container Registry Agent, with the credentials provided to the Broker Client. The Container Registry Agent then makes a request to the container registry to validate connectivity.
 
 {% hint style="info" %}
-The `/systemcheck` endpoint is **not mandatory** for the brokered integration to function. For  more information see Systemcheck on the [Monitoring](monitoring-the-container-registry-agent.md) page.
+The `/systemcheck` endpoint is **not mandatory** for the brokered integration to function. For more information see Systemcheck on the [Monitoring](monitoring-the-container-registry-agent.md) page.
 {% endhint %}
 
 ## **Debugging methods for Container Registry Agent**

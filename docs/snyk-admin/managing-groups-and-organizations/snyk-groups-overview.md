@@ -12,7 +12,7 @@ From the group overview, the vulnerability status of all of a Group’s Organiza
 
 Select which organizations you wish to compare using the filter dropdown. This will set the context for all the tabs within the reports, where you can continue to filter other values such as type, status and package manager.
 
-<figure><img src="../../.gitbook/assets/image (60).png" alt="Select Organizations to filter"><figcaption><p>Select Organizations to filter</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (391).png" alt="Select Organizations to filter"><figcaption><p>Select Organizations to filter</p></figcaption></figure>
 
 ## Organization filters
 

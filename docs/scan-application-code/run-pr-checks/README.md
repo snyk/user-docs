@@ -13,7 +13,7 @@ Use Snyk PR Checks to prevent new security issues from entering your codebase by
 | Code change testing for security issues       | Test changes to your codebase for any security issues, ensuring that your code stays secure over time.                                                                     |
 | Branch testing                                | Test branches before and after implementing changes to fail only if the new branch has introduced issues. Prevention of merging pull requests with failed security issues. |
 
-## What to test for&#x20;
+## What to test for
 
 You can analyze PR Checks results in your SCM to test for dependency and licensing issues using [Snyk Open Source](../snyk-open-source/), and code security using [Snyk Code](../snyk-code/).
 
@@ -21,7 +21,7 @@ You can analyze PR Checks results in your SCM to test for dependency and licensi
 
 The following diagram explains how Snyk Checks PRs in your development workflow.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-09-20 at 11.27.44.png" alt="Diagram showing where Snyk checks for pull requests in the development workflow."><figcaption><p>Pull request checks in the development workflow</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-20 at 11.27.44 (1).png" alt="Diagram showing where Snyk checks for pull requests in the development workflow."><figcaption><p>Pull request checks in the development workflow</p></figcaption></figure>
 
 #### Step-by-step process
 
@@ -29,7 +29,7 @@ The following diagram explains how Snyk Checks PRs in your development workflow.
 2. Snyk automatically scans the code changes in the PR for issues.
 3. Snyk leaves security reviews and notes on the PR.
 4. The developer can view the PR Checks results and fix identified issues before merging the code.
-5. The PR Checks results appear as **Passed** or **Failed** directly in the SCM, preventing PRs from being merged with security issues.&#x20;
+5. The PR Checks results appear as **Passed** or **Failed** directly in the SCM, preventing PRs from being merged with security issues.
 
 ## What's next?
 

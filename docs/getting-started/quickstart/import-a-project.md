@@ -23,7 +23,7 @@ The steps to import a Project are as follows:
 
 * Select the repositories to use, then choose **Add selected repositories** to import the selected repositories into your project:
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Add selected repositories</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Add selected repositories</p></figcaption></figure>
 
 {% hint style="info" %}
 Projects you select to import are shown with a ![Check mark](<../../.gitbook/assets/image (7) (2).png>).\

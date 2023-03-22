@@ -66,7 +66,7 @@ In the **Service Account** name field, enter a unique name for this token. Remem
 
 From the **Role** dropdown list, select an appropriate role.
 
-![](<../.gitbook/assets/image (1) (4).png>)
+![](<../.gitbook/assets/image (1) (4) (2).png>)
 
 For Group service accounts, choose from the following list of roles to configure the scope of the token; Snyk recommends selecting Viewer or Admin.
 

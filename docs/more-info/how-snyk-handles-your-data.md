@@ -1,12 +1,12 @@
 # How Snyk handles your data
 
-## Introduction&#x20;
+## Introduction
 
 Snyk is a developer security platform and thus Snyk places the utmost importance on data security. **Fully understanding your privacy and security needs, Snyk provides this document with the goal of providing you with transparency as to how and what data is accessed, transferred, and stored by Snyk.**
 
 The data handled by Snyk varies depending on the product you are using, how you are integrating with Snyk, and your Snyk deployment. Because Snyk is subject to fast moving changes, the types of data accessed and stored might change with the introduction of a new capability or changes to an existing capability.
 
-### &#x20;Flexible deployment options
+### Flexible deployment options
 
 Snyk leverages the latest software development practices and technologies to provide customers with the flexibility to use Snyk’s developer security platform in the manner that best suits the needs of their business.
 
@@ -43,7 +43,7 @@ Snyk knows how important it is for you to protect your data. Snyk products only 
 ![Snyk Open Source](../.gitbook/assets/SnykOSS.svg)
 
 * Snyk accesses manifest files, lock files, and related configuration files in order to identify your open-source dependencies.
-* By default, Snyk does not access your source code with this exception: for CLI scans using the `--unmanaged` option, Snyk  accesses your source code files to convert them to file signatures (hashes) and store the file signatures and file names.
+* By default, Snyk does not access your source code with this exception: for CLI scans using the `--unmanaged` option, Snyk accesses your source code files to convert them to file signatures (hashes) and store the file signatures and file names.
 * For SCA Scans Snyk does not access your source code.
 * Snyk accesses and stores the names and version numbers of your dependencies.
 * Snyk stores the names of associated licenses, including copyright and attribution information.
@@ -73,12 +73,12 @@ Snyk knows how important it is for you to protect your data. Snyk products only 
 {% tab title="Snyk Container" %}
 **Snyk Container**
 
-![Snyk Container](<../.gitbook/assets/image (201).png>)
+![Snyk Container](<../.gitbook/assets/image (201) (2).png>)
 
 * Snyk accesses and stores package versions, executable hashes and versions, operating system, container image metadata (for example, rootfs hashes, history), image ID.
 * Snyk accesses and stores information pertaining to the parent image - name, version, tag.
 * Snyk accesses and stores RUN instructions from Dockerfile.
-* Kubernetes configurations - Snyk accesses workload security settings (for example,  ‘run as root’). This is only accessed if you use Snyk’s Kubernetes integration.
+* Kubernetes configurations - Snyk accesses workload security settings (for example, ‘run as root’). This is only accessed if you use Snyk’s Kubernetes integration.
 * Container registry integrations - Snyk accesses and then stores a short term copy of the container image (unless a broker is used). This copy is removed from the Snyk network after analysis.
 {% endtab %}
 
