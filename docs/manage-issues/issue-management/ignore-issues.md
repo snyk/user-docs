@@ -74,7 +74,7 @@ Ignores between a CLI or CI/CD run and the Snyk UI are synchronized as follows:
 2. You see the results of the scan and choose to ignore an issue.
 3. The issue is ignored when running `snyk test` or `snyk monitor` in the CI/CD or CLI.
 
-Refer to the following example. Issues are identified as CI/CLI, imeaning the Project was imported from `snyk monitor`. The issue is `npmconf`. It is **Not vulnerable** and the user is selecting **Ignore**, using the button.
+Refer to the following example. Issues are identified as CI/CLI, meaning the Project was imported from `snyk monitor`. The issue is `npmconf`. It is **Not vulnerable** and the user is selecting **Ignore**, using the button.
 
 <figure><img src="../../.gitbook/assets/ignore-vulnerability-snyk-monitor-updated.png" alt="Project imported from snyk monitor, ignore set in the Web UI"><figcaption><p>Project imported from snyk monitor, ignore set in the Web UI</p></figcaption></figure>
 
