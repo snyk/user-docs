@@ -35,7 +35,7 @@ To generate a PR / MR directly from your project, using the Snyk UI:
 
 ### Snyk SCM webhooks
 
-Snyk adds Source Control Manager (SCM) webhooks to your imported repositories for the relevant [GitHub and Bitbucket](../../../integrations/git-repository-scm-integrations/) integrations.
+To track pull request events, Snyk adds webhooks to your imported repositories (see [GitHub and Git repository integrations](../../../integrations/git-repository-scm-integrations/)).
 
 Snyk uses these webhooks to:
 
