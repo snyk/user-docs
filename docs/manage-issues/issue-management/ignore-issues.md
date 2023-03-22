@@ -37,7 +37,7 @@ If you select **Ignore temporarily,** then you can check the **Until fix is avai
 
 <figure><img src="../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Ignore temporarily"><figcaption><p>Ignore temporarily</p></figcaption></figure>
 
-This is checked by default if there is currently no fix available for this issue. The vulnerability resurfaces as soon as Snyk has a fix for it, and optionally you can give additional details on why you are ignoring the issue.&#x20;
+This is checked by default if there is currently no fix available for this issue. The vulnerability resurfaces as soon as Snyk has a fix for it, and optionally you can give additional details on why you are ignoring the issue.
 
 {% hint style="info" %}
 An issue is ignored until ANY of the conditions happen: the ignore period expires or the vulnerability becomes fixable.
@@ -45,7 +45,7 @@ An issue is ignored until ANY of the conditions happen: the ignore period expire
 
 When you ignore an issue in the Snyk Web UI, the issue shows who ignored it and allow you to edit or unignore it.
 
-<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Ignore set in the Snyk Web UI"><figcaption><p>Ignore set in the Snyk Web UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Ignore set in the Snyk Web UI"><figcaption><p>Ignore set in the Snyk Web UI</p></figcaption></figure>
 
 For more information see the training: [Ignoring issues](https://training.snyk.io/courses/ignore-strategies).
 
@@ -80,7 +80,7 @@ Refer to the following example. Issues are identified as CI/CLI, imeaning the Pr
 
 The following shows `snyk test` results before ignoring in the Web UI:
 
-<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk test results before ignoring in the Web UI"><figcaption><p>Snyk test results before ignoring in the Web UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk test results before ignoring in the Web UI"><figcaption><p>Snyk test results before ignoring in the Web UI</p></figcaption></figure>
 
 The following shows `snyk test` results after ignoring in the Web UI:
 
@@ -110,7 +110,7 @@ ignore:
 For more information, see [The .snyk file](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md).
 
 {% hint style="info" %}
-Please see information about [.snyk files in monorepos](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../snyk-cli/test-for-vulnerabilities/using-a-.snyk-file-in-a-separate-directory-than-the-manifest-file.md).&#x20;
+Please see information about [.snyk files in monorepos](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../snyk-cli/test-for-vulnerabilities/using-a-.snyk-file-in-a-separate-directory-than-the-manifest-file.md).
 {% endhint %}
 
 ### Ignoring issues with policy actions

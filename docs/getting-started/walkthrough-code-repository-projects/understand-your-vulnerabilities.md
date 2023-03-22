@@ -17,7 +17,7 @@ Next, select a Project in that list, to see details of the vulnerabilities found
 
 For example, for a **Code analysis** project scanned by Snyk Code:
 
-<figure><img src="../../.gitbook/assets/image (149) (1) (1) (1) (2) (1) (1) (1) (1).png" alt="Vulnerability example - Code analysis"><figcaption><p>Vulnerability example - Code analysis</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (149) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt="Vulnerability example - Code analysis"><figcaption><p>Vulnerability example - Code analysis</p></figcaption></figure>
 
 See [View project information](../../manage-issues/introduction-to-snyk-projects/view-project-information.md) for more details.
 
@@ -35,8 +35,8 @@ For details, see [Issue card information](https://docs.snyk.io/introducing-snyk/
 
 Snyk provides detailed resources for more information about vulnerabilities, accessible directly from the card:
 
-* ****[**Snyk Vulnerability Database**](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md): access details on a specific vulnerability.
-* ****[**Snyk Learn**](../../more-info/more-resources/snyk-learn.md): access general information about that type of vulnerability.
+* \*\*\*\*[**Snyk Vulnerability Database**](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md): access details on a specific vulnerability.
+* \*\*\*\*[**Snyk Learn**](../../more-info/more-resources/snyk-learn.md): access general information about that type of vulnerability.
 
 #### Access Snyk Vulnerability Database
 
@@ -86,7 +86,7 @@ See [Fix your first vulnerability](fix-your-first-vulnerability.md) for more det
 
 Snyk uses the package manager of your application to build the dependency tree and display it in the **Dependencies** tab of the project view:
 
-<figure><img src="../../.gitbook/assets/image (119) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Dependencies for Open Source vulnerabilities"><figcaption><p>Dependencies for Open Source vulnerabilities</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (119) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Dependencies for Open Source vulnerabilities"><figcaption><p>Dependencies for Open Source vulnerabilities</p></figcaption></figure>
 
 Click the file tree icon (![](<../../.gitbook/assets/image (201) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
 

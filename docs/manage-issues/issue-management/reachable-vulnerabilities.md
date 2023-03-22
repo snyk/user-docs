@@ -65,10 +65,10 @@ After import or testing of a project via Snyk UI, the project is monitored by Sn
 
 <figure><img src="../../.gitbook/assets/image (12) (1).png" alt="Reachability Call Path"><figcaption><p>Reachability Call Path</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (126) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Priority Score"><figcaption><p>Priority Score</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (126) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Priority Score"><figcaption><p>Priority Score</p></figcaption></figure>
 
 ## Reports
 
 You can filter by reachability status to quickly show the reachable issues.
 
-<figure><img src="../../.gitbook/assets/image (137) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Issue Filters"><figcaption><p>Issue Filters</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (137) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Issue Filters"><figcaption><p>Issue Filters</p></figcaption></figure>

@@ -5,7 +5,7 @@
 This feature is available for Enterprise customers. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-Snyk pre-defined roles (such as Group Admin) cannot be changed. Member Roles provides Role-Based Access Control (RBAC) for Snyk, allowing you to create and enforce advanced access by assigning a set of permissions to a role that will be granted to users.&#x20;
+Snyk pre-defined roles (such as Group Admin) cannot be changed. Member Roles provides Role-Based Access Control (RBAC) for Snyk, allowing you to create and enforce advanced access by assigning a set of permissions to a role that will be granted to users.
 
 You can [manage roles](member-roles.md#manage-roles), [assign roles](member-roles.md#assign-roles) to users or to service accounts, and [use roles with SSO](member-roles.md#use-roles-in-custom-sso).
 
@@ -98,7 +98,7 @@ In the Web UI, select an **Org** > **Members**.
 
 For any member (Name) except a Group Admin, the user can select the dropdown next to the current role and choose any role to assign that role to the member.
 
-<figure><img src="../../.gitbook/assets/image (104) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Select member role"><figcaption><p>Select member role</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (104) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Select member role"><figcaption><p>Select member role</p></figcaption></figure>
 
 Click the **Add members** button > **Invite new members**.\
 \

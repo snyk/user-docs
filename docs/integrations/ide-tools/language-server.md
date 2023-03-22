@@ -313,7 +313,7 @@ else
 end
 ```
 
-![Snyk Code findings displayed in Neovim](<../../.gitbook/assets/image (219) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Snyk Code findings displayed in Neovim](<../../.gitbook/assets/image (219) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Support for Snyk Language Server
 

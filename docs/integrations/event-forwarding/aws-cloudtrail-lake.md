@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-****The AWS CloudTrail Lake integration feature is available with Snyk Enterprise plans. See [Pricing plans](../../more-info/plans.md) for details.
+\*\*\*\*The AWS CloudTrail Lake integration feature is available with Snyk Enterprise plans. See [Pricing plans](../../more-info/plans.md) for details.
 
 This feature is currently available in the Snyk MT-US environment. The feature will be rolled out to other Snyk Multi-tenant environments soon. If you are a Single-tenant customer, please contact your Snyk representative to enable the feature.
 {% endhint %}
@@ -22,9 +22,9 @@ This integration sends logs beginning at the time you enable it. Logs generated 
 
 Follow the setup [instructions](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-integration.html) in the AWS CloudTrail Lake documentation, choosing Snyk as the integration type.
 
-<figure><img src="../../.gitbook/assets/aws-ctl-1 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Choose Snyk Add integration for Snyk"><figcaption><p>Choose Snyk Add integration for Snyk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aws-ctl-1 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Choose Snyk Add integration for Snyk"><figcaption><p>Choose Snyk Add integration for Snyk</p></figcaption></figure>
 
-During the setup, supply an **External ID** for the integration. Set this field to your Snyk **Organization ID**, which you can find by going to the Snyk [settings page](https://app.snyk.io/manage/settings).&#x20;
+During the setup, supply an **External ID** for the integration. Set this field to your Snyk **Organization ID**, which you can find by going to the Snyk [settings page](https://app.snyk.io/manage/settings).
 
 <figure><img src="../../.gitbook/assets/aws-ctl-2 (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Organization ID on Snyk settings page"><figcaption><p>Organization ID on Snyk settings page</p></figcaption></figure>
 
@@ -61,8 +61,7 @@ This action removes Snyk’s configuration for this integration, which will **pr
 
 ## Query Snyk audit logs in AWS CloudTrail Lake
 
-Once your Snyk audit logs are being forwarded to AWS CloudTrail Lake, you can access them with the AWS CloudTrail Lake **Query** functionality. You can use this example query to get started:\
-
+Once your Snyk audit logs are being forwarded to AWS CloudTrail Lake, you can access them with the AWS CloudTrail Lake **Query** functionality. You can use this example query to get started:\\
 
 ```sql
 select 

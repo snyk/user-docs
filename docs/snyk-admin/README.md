@@ -23,7 +23,7 @@ Groups can contain multiple Snyk Organizations, allowing you to collaborate with
 
 #### Snyk Organizations
 
-[Organizations](managing-groups-and-organizations/whats-a-snyk-organization.md) represent business areas such as teams, products or environments.&#x20;
+[Organizations](managing-groups-and-organizations/whats-a-snyk-organization.md) represent business areas such as teams, products or environments.
 
 Organizations can contain multiple Snyk Projects, allowing your team to see scan details for the applications they are working on.
 
@@ -65,7 +65,7 @@ Snyk offers API tokens to enable authentication to service accounts or third par
 
 SSO makes authentication and provisioning simple; see [Setting up Single Sign-On (SSO) for authentication](setting-up-sso-for-authentication/).
 
-<figure><img src="../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Single Sign-On"><figcaption><p>Single Sign-On</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Single Sign-On"><figcaption><p>Single Sign-On</p></figcaption></figure>
 
 #### Manage users and permissions
 

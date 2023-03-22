@@ -33,7 +33,7 @@ The following are the **prerequisites** for configuring App roles:
     <figure><img src="../../../.gitbook/assets/image (2) (2).png" alt="Create app role with details"><figcaption><p>Create app role with details</p></figcaption></figure>
 4.  In Azure AD, select your Enterprise Application.
 
-    <figure><img src="../../../.gitbook/assets/image (3) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Select Enterprise Application in Azure AD"><figcaption><p>Select Enterprise Application in Azure AD</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Select Enterprise Application in Azure AD"><figcaption><p>Select Enterprise Application in Azure AD</p></figcaption></figure>
 5.  Select **Users and groups**; then **Add user/group**.\
     Search and select the users and groups to add.
 
@@ -48,11 +48,9 @@ The following are the **prerequisites** for configuring App roles:
 9.  Select **Edit** next to **Attributes and Claims.**
 
     <figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 3.19.31 PM.png" alt="Edit attributes and claims"><figcaption><p>Edit attributes and claims</p></figcaption></figure>
-10. Select **Add new claim**, **** add the following details, and **Save.**\
+10. Select **Add new claim**, \*\*\*\* add the following details, and **Save.**\
     **Name**: roles\
     **Source**: Attribute\
-    **Source attribute**: user.assignedroles\
-
+    **Source attribute**: user.assignedroles\\
 
     <figure><img src="../../../.gitbook/assets/Screenshot 2023-03-10 at 2.55.05 PM.png" alt="Custom claim"><figcaption><p>Custom claim</p></figcaption></figure>
-
