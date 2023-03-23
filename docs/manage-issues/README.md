@@ -34,7 +34,7 @@ Snyk’s [reachable vulnerability](issue-management/reachable-vulnerabilities.md
 
 ## Set security policies
 
-Prioritize or de-prioritize specific vulnerabilities automatically with our customizable [security policies](policies/security-policies/).
+Prioritize or de-prioritize specific vulnerabilities automatically with our customizable [security policies](security-policies/).
 
 <figure><img src="../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (2).png" alt="Security policies"><figcaption><p>Security policies</p></figcaption></figure>
 

@@ -1,6 +1,6 @@
 # Security policy conditions
 
-A condition is a variable to set a rule on.&#x20;
+A condition is a variable to set a rule on.
 
 After you select a condition category, you are prompted to select **Includes** or **Does not include** and the desired condition (for example Mature, CWE-1234).
 
