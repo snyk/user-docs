@@ -46,7 +46,7 @@ To define your group license policy, complete the following steps:
 
 The additional instructions show in the Snyk Web UI and the CLI when the selected licenses are identified.
 
-See [Licenses overview](./) and [Setting a license policy](../license-policies/setting-a-license-policy.md).
+See [Licenses overview](./) and [Setting a license policy](../../../manage-issues/policies/license-policies/setting-a-license-policy.md).
 
 ## Stage 2: View issues
 

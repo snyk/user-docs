@@ -115,7 +115,7 @@ Please see information about [.snyk files in monorepos](../../snyk-cli/test-for-
 
 ### Ignoring issues with policy actions
 
-You can set [Security policies](../security-policies/) actions to ignore all vulnerabilities that match the conditions specified in a policy rule.
+You can set [Security policies](../policies/security-policies/) actions to ignore all vulnerabilities that match the conditions specified in a policy rule.
 
 For more information, see [Security policies: Actions](https://docs.snyk.io/fixing-and-prioritizing-issues/security-policies/security-policies-actions).
 

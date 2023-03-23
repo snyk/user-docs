@@ -16,7 +16,7 @@ Snyk Enterprise features include:
 * [Service accounts](../snyk-admin/service-accounts.md)
 * [Rich API](../snyk-api-info/)
 * [Reports](../manage-issues/snyk-reports/)
-* [Security policy management](../manage-issues/security-policies/)
+* [Security policy management](../manage-issues/policies/security-policies/)
 * [Snyk Broker](../snyk-admin/snyk-broker/)
 * [GitHub Enterprise integration](../integrations/git-repository-scm-integrations/github-enterprise-integration.md)
 
@@ -25,13 +25,13 @@ Snyk Enterprise features include:
 As you work through the rest of this guide, use the following checklist to ensure you have completed the steps to upgrade to the Enterprise plan.
 
 * [ ] Set up your Snyk environment
-  * [ ] Set your Snyk Group settings&#x20;
-  * [ ] Structure your account with multiple Snyk organizations (if applicable)&#x20;
+  * [ ] Set your Snyk Group settings
+  * [ ] Structure your account with multiple Snyk organizations (if applicable)
 * [ ] Define project structure
 * [ ] Set up SSO (if applicable).
   * [ ] Delete social logins
-* [ ] Consider setting up security policies&#x20;
-* [ ] Consider using Github Enterprise integration&#x20;
+* [ ] Consider setting up security policies
+* [ ] Consider using Github Enterprise integration
 * [ ] Consider setting up Snyk Broker for onprem or private cloud code repositories, container registries, and Jira instances
 
 ### Set up your Snyk environment
@@ -44,9 +44,9 @@ A notable difference between the Free/Team plan and the Enterprise plan is havin
 Only [Group Administrators](../snyk-admin/managing-users-and-permissions/managing-permissions.md) can edit Snyk Group settings
 {% endhint %}
 
-Confirm your Snyk Group name. It should reflect your company name. If it needs to be updated go to **Group Settings > General**.&#x20;
+Confirm your Snyk Group name. It should reflect your company name. If it needs to be updated go to **Group Settings > General**.
 
-Set [session expiration](../snyk-admin/managing-users-and-permissions/session-length.md) within the Group. This will be the default for all Snyk Organizations within the Group.&#x20;
+Set [session expiration](../snyk-admin/managing-users-and-permissions/session-length.md) within the Group. This will be the default for all Snyk Organizations within the Group.
 
 #### Structure your account with multiple Snyk organizations
 
@@ -61,13 +61,13 @@ When you plan to use multiple Organizations in Snyk, decide how to structure you
 See the [Snyk account structure](https://training.snyk.io/courses/snyk-account-structure) training course for more help with structuring your account.
 {% endhint %}
 
-### Create additional Organizations&#x20;
+### Create additional Organizations
 
 To create a new Organization, open the Organization switcher in the navigation panel and select **Create new Organization**. See [Manage Snyk organizations](../snyk-admin/managing-groups-and-organizations/manage-snyk-organizations.md) for more details.
 
 #### Using an existing Organization as a template
 
-After you configure your first Organization, you can use it as a template for creating additional Organizations. Make sure you have completed the configurations for the Organization before copying it.&#x20;
+After you configure your first Organization, you can use it as a template for creating additional Organizations. Make sure you have completed the configurations for the Organization before copying it.
 
 Select the Organization from the list. The following settings will be copied from the selected Organization:
 
@@ -98,15 +98,15 @@ When you create a new Organization, Snyk Code (SAST) scanning is disabled by def
 1. Select the **Settings > Snyk Code** option.
 2. Click the toggle to enable Snyk Code, then click **Save changes**
 
-#### Define Project structure&#x20;
+#### Define Project structure
 
-You may want to house different Projects in different Organizations.&#x20;
+You may want to house different Projects in different Organizations.
 
 {% hint style="warning" %}
 You cannot move Projects between Organizations directly.
 {% endhint %}
 
-To re-house Projects, you must re-import your Projects into your new Organizations.&#x20;
+To re-house Projects, you must re-import your Projects into your new Organizations.
 
 If you are working with a large number of Projects, you should use the API to re-import. See **importing Projects at scale** below for more detail.
 
@@ -127,7 +127,7 @@ See the [SSO, authentication and user provisions](https://training.snyk.io/cours
 [Service accounts](../snyk-admin/service-accounts.md) allow you to better scale and automate.
 
 * If you use CI/CD (using a [CI/CD integration](../integrations/ci-cd-integrations/) or the [Snyk CLI](../snyk-cli/)), we recommend you use a service account.
-* If you use an IDE plugin or the CLI to test in your local environment, we recommend you use personal access tokens.&#x20;
+* If you use an IDE plugin or the CLI to test in your local environment, we recommend you use personal access tokens.
 
 ### Rich API
 
@@ -143,7 +143,7 @@ Use the [Snyk API import tool](../snyk-api-info/other-tools/tool-snyk-api-import
 
 ### Reports
 
-Snyk reports offer data and analytics across all of your projects, displaying historical and aggregated data about projects, issues, dependencies, and licenses.&#x20;
+Snyk reports offer data and analytics across all of your projects, displaying historical and aggregated data about projects, issues, dependencies, and licenses.
 
 See [Getting started with Snyk Reports](../manage-issues/snyk-reports/reporting-beta-2022/getting-started-with-snyk-reports.md).
 
@@ -151,7 +151,7 @@ See [Getting started with Snyk Reports](../manage-issues/snyk-reports/reporting-
 
 Security policies allow you to customize the prioritization of specific issues from the default and create rules. This is particularly helpful for changing the severities of issues that are not relevant to a specific project or environment.
 
-See [Getting started with security policies](../manage-issues/security-policies/getting-started-with-security-policies.md).
+See [Getting started with security policies](../manage-issues/policies/security-policies/getting-started-with-security-policies.md).
 
 ### Remote code repositories
 
@@ -159,7 +159,7 @@ If you have onprem repositories, you can scan them with Snyk using [Snyk Broker]
 
 ### GitHub Enterprise integration
 
-If you use GitHub as your SCM, with the Enterprise plan, you now have access to Github Enterprise integration.  The GitHub Enterprise integration allows the use of a single personal access token across a Snyk Organization rather than a personal access token tied to an individual user account. Because of this, we recommend making the switch.
+If you use GitHub as your SCM, with the Enterprise plan, you now have access to Github Enterprise integration. The GitHub Enterprise integration allows the use of a single personal access token across a Snyk Organization rather than a personal access token tied to an individual user account. Because of this, we recommend making the switch.
 
 {% hint style="info" %}
 You do not need a GitHub Enterprise license or subscription to use the GitHub Enterprise integration within Snyk.

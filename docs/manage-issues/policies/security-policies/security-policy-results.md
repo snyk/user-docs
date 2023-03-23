@@ -11,22 +11,20 @@ A newly assigned policy, or changes to a policy, apply when the Project is re-sc
 
 For an issue in a project page that’s been ignored by a security policy:
 
-<figure><img src="../../.gitbook/assets/screenshot_2021-07-28_at_12.50.46.png" alt="Issue ignored by security policy"><figcaption><p>Issue ignored by security policy</p></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/screenshot_2021-07-28_at_12.50.46.png" alt="Issue ignored by security policy"><figcaption><p>Issue ignored by security policy</p></figcaption></figure>
 
 **Custom and original severity in the CLI**
 
-<figure><img src="../../.gitbook/assets/unnamed.png" alt="Custom and original severity in the CLI"><figcaption><p>Custom and original severity in the CLI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unnamed.png" alt="Custom and original severity in the CLI"><figcaption><p>Custom and original severity in the CLI</p></figcaption></figure>
 
 **Custom and original severity in Project Page UI**
 
-<figure><img src="../../.gitbook/assets/unnamed-1.png" alt="Custom and original severity in the Project Page UI"><figcaption><p>Custom and original severity in the Project Page UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unnamed-1.png" alt="Custom and original severity in the Project Page UI"><figcaption><p>Custom and original severity in the Project Page UI</p></figcaption></figure>
 
 **Custom and original severity in Open Fix PR UI**
 
-<figure><img src="../../.gitbook/assets/unnamed-2.png" alt="Custom and original severity in Open Fix PR UI"><figcaption><p>Custom and original severity in Open Fix PR UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unnamed-2.png" alt="Custom and original severity in Open Fix PR UI"><figcaption><p>Custom and original severity in Open Fix PR UI</p></figcaption></figure>
 
 **Custom and original severity in Reports**
 
-<figure><img src="../../.gitbook/assets/screenshot_2020-10-21_at_9.30.03_am.png" alt="Custom and original severity in Reports"><figcaption><p>Custom and original severity in Reports</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/screenshot_2020-10-21_at_9.30.03_am.png" alt="Custom and original severity in Reports"><figcaption><p>Custom and original severity in Reports</p></figcaption></figure>
