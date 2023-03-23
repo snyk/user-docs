@@ -57,7 +57,11 @@ For **Bulk actions**, select relevant Projects, then select to **Delete**, **Act
 
 #### Set test frequency
 
-You can set the frequency of testing for each Project.
+You can set the frequency of testing for each Project.&#x20;
+
+{% hint style="info" %}
+For Code analysis projects, you can only set weekly tests. To test your code daily, contact [Support](https://support.snyk.io/hc/en-us/requests/new).
+{% endhint %}
 
 For each entry, you can select the frequency of testing for that Project (never, daily, or weekly)
 
