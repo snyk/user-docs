@@ -36,7 +36,7 @@ Import [Projects](../../manage-issues/introduction-to-snyk-projects/#project) to
 6. Project import completes.
 
 {% hint style="info" %}
-Currently Snyk Infrastructure as Code Projects have a recurring test default interval of **1 week**. The default interval is changed on the **Settings** tab of the Project's page.
+Snyk Infrastructure as Code Projects have a recurring test interval of 1 week. Recurring tests can be disabled on the **Settings** tab of the Project's page by setting **Test & Automated Pull Request Frequency** to **Test never**.
 {% endhint %}
 
 ## Stage 2: View configuration file issues
