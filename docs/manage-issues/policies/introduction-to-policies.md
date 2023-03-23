@@ -1,4 +1,4 @@
-# Shared Policies Overview
+# Introduction to policies
 
 **Prerequisites**
 
@@ -13,7 +13,7 @@ This feature is available to Enterprise customers. See [pricing plans](https://s
 
 1. Log in to Snyk
 2. Navigate to your group
-3. Click on the Policies tab in the navigation bar to see all the policies that exist within your group, broken out by category. This list will include the [default policy](shared-policies-overview.md#default-policies), which is automatically created for new groups for each policy category and cannot be removed.
+3. Click on the Policies tab in the navigation bar to see all the policies that exist within your group, broken out by category. This list will include the [default policy](introduction-to-policies.md#default-policies), which is automatically created for new groups for each policy category and cannot be removed.
 
 <figure><img src="../../.gitbook/assets/snyk-policy-manager.png" alt="Policy manager screen"><figcaption><p>Policy manager screen</p></figcaption></figure>
 

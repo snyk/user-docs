@@ -516,7 +516,7 @@
     * [Reachable vulnerabilities](manage-issues/issue-management/reachable-vulnerabilities.md)
     * [Vulnerabilities with Social Trends](manage-issues/issue-management/prioritize-by-social-trends.md)
   * [Policies](manage-issues/policies/README.md)
-    * [Shared Policies Overview](manage-issues/policies/shared-policies-overview.md)
+    * [Introduction to policies](manage-issues/policies/introduction-to-policies.md)
     * [Creating and editing policies](manage-issues/policies/creating-and-editing-policies.md)
     * [Assign a policy to project attributes](manage-issues/policies/assign-a-policy-to-project-attributes.md)
     * [Assign a policy to Organizations](manage-issues/policies/assign-a-policy-to-organizations.md)
