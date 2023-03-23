@@ -218,7 +218,6 @@
     * [License policies](scan-application-code/snyk-open-source/license-policies/README.md)
       * [Setting a license policy](scan-application-code/snyk-open-source/license-policies/setting-a-license-policy.md)
       * [License policies: What collaborators see](scan-application-code/snyk-open-source/license-policies/license-policies-what-collaborators-see.md)
-  * [Page 1](scan-application-code/page-1.md)
   * [Snyk Code](scan-application-code/snyk-code/README.md)
     * [Introducing Snyk Code](scan-application-code/snyk-code/introducing-snyk-code/README.md)
       * [Snyk Code - Benefits and Capabilities](scan-application-code/snyk-code/introducing-snyk-code/use-cases.md)
