@@ -6,7 +6,7 @@
 2. Set a policy name and a description to help you quickly identify a policy\
    **Note**: Policies within the same category cannot have the same name. Policies **cannot** be saved without a policy name applied
 3. Select whether you’d like to apply your policy to organizations or project attributes
-4. Select the desired [Organizations](assign-a-policy-to-organizations.md) or [attributes](assign-a-policy-to-project-attributes.md)
+4. Select the desired [Organizations](assign-a-policy-to-organizations.md) or [attributes](assign-a-policy-to-projects.md)
 5. Add rules to the policy. [Click here for information on adding license rules](license-policies/setting-a-license-policy.md) or [click here for information on adding security rules](security-policies/how-to-create-a-security-policy-and-set-rules.md)
 6. Click **Submit** in the top right-hand corner.drop-down
 
@@ -15,7 +15,7 @@
 ## Edit a policy
 
 1. Click on the policy name of an existing policy in the Policy Manager tab to open the modal and then make your changes
-2. Adjust [Organizations](assign-a-policy-to-organizations.md), [attributes](assign-a-policy-to-project-attributes.md) and rules as desired
+2. Adjust [Organizations](assign-a-policy-to-organizations.md), [attributes](assign-a-policy-to-projects.md) and rules as desired
 3. Click **Submit** to save your changes
 
 ## **Other Actions:**
