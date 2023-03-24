@@ -11,7 +11,7 @@ To check for open source and licensing issues and code security, make sure that 
 * Group Admin role to get access to all integration settings (see [Member roles](../../snyk-admin/managing-users-and-permissions/member-roles.md)).
 * [Set up a Git repository integration](../../integrations/git-repository-scm-integrations/) (see the Snyk Training course: [Source code manager configuration](https://training.snyk.io/learn/course/source-code-manager-configurations)).
 * [Import a Project](../../getting-started/quickstart/import-a-project.md) to have a working Git repository.
-* For code security (Snyk Code), meet all of the above conditions and then contact your Snyk representative to enable the feature for you. The PR Checks feature is only available in [Closed Beta](../../more-info/snyk-feature-release-process.md) for Snyk Code and exclusively offered for Enterprise plans.&#x20;
+* For code security (Snyk Code), meet all of the above conditions and then contact your Snyk representative to enable the feature for you.&#x20;
 
 {% hint style="info" %}
 PR Checks for Snyk Code is in Closed Beta and only available for Enterprise plans.
@@ -23,21 +23,21 @@ PR Checks also support all programming languages supported by the Snyk Code and 
 
 ## How the configuration works
 
-You can configure PR Checks either [at the Integration level](configure-pr-checks.md#configure-pr-checks-at-the-integration-level) for your Snyk Organization or [for specific Snyk Projects](configure-pr-checks.md#configure-pr-checks-at-the-project-level) in an Organization.&#x20;
+You can configure PR Checks either [at the Integration level](configure-pr-checks.md#configure-pr-checks-at-the-integration-level) for your Snyk Organization or [for specific Snyk Projects](configure-pr-checks.md#configure-pr-checks-at-the-project-level) in an Organization.
 
 * In your Organization, you can have multiple repository integrations, but the feature works only for those integrations that have been configured.
-* At the Project level, the settings are inherited from the integration by default, but you can configure custom settings.&#x20;
+* At the Project level, the settings are inherited from the integration by default, but you can configure custom settings.
 
 ## Configure PR Checks at the integration level
 
-Configure PR Checks on a specific Git repository you have already integrated with Snyk, such as GitHub.&#x20;
+Configure PR Checks on a specific Git repository you have already integrated with Snyk, such as GitHub.
 
-The configuration settings apply to all Projects in that Organization. You can also extend the configuration to Projects with custom settings.&#x20;
+The configuration settings apply to all Projects in that Organization. You can also extend the configuration to Projects with custom settings.
 
-1. Open Snyk Web UI, go to **Settings >** **Integrations** section **** and then **** select your connected source code manager to open settings configuration.&#x20;
+1. Open Snyk Web UI, go to **Settings >** **Integrations** section \*\*\*\* and then \*\*\*\* select your connected source code manager to open settings configuration.
 2. To check for code issues, configure and save the following changes:
 
-* [ ] **Code Analysis**: **** Enable this option **** to fail the PR when the security issues found in the proposed changes exceed your specified severity threshold. In other words, if the severity is higher than your threshold, the PR is not merged into the main branch.
+* [ ] **Code Analysis**: \*\*\*\* Enable this option \*\*\*\* to fail the PR when the security issues found in the proposed changes exceed your specified severity threshold. In other words, if the severity is higher than your threshold, the PR is not merged into the main branch.
   * [ ] **Minimal severity to fail PR check**: Select the severity threshold at which the PR fails. For example, if you select **Medium**, the PR fails on issues found at this level or above, while it is merged for **Low** severity issues.
 
 <figure><img src="../../.gitbook/assets/pr_checks_configuration_code_analysis.png" alt="Pull request check settings to analyze code issues."><figcaption><p>PR check settings to analyze code issues</p></figcaption></figure>
@@ -61,7 +61,7 @@ If you cannot see the **Code Analysis** section, make sure that your user has th
 
 ## Configure PR Checks at the Project level
 
-You can configure PR Checks to work only for specific Projects:&#x20;
+You can configure PR Checks to work only for specific Projects:
 
 1. Go to **Projects**, then expand the [target](../../manage-issues/introduction-to-snyk-projects/#target) containing your project.
 2. Click a project name to open it. Based on the project type, you can choose the following:
@@ -72,15 +72,15 @@ You can configure PR Checks to work only for specific Projects:&#x20;
 <figure><img src="../../.gitbook/assets/configure_pr_checks_project_level.png" alt="Project level overview."><figcaption><p>Project level overview</p></figcaption></figure>
 
 6. Go to **Settings.**
-7. On the left side, select your integration. For this example, GitHub has been integrated with Snyk.&#x20;
+7. On the left side, select your integration. For this example, GitHub has been integrated with Snyk.
 8. Configure Project settings based on your Project type:
 
 <details>
 
 <summary>Configure for open source and licensing issues (click to expand)</summary>
 
-1. In **Snyk test for pull request** select **Custom** to **** configure the settings.
-2. Enable the option to fail the PR when open source and licensing issues found in the proposed changes exceed your specified severity threshold.&#x20;
+1. In **Snyk test for pull request** select **Custom** to \*\*\*\* configure the settings.
+2. Enable the option to fail the PR when open source and licensing issues found in the proposed changes exceed your specified severity threshold.
 3. Configure the following settings:
 
 * [ ] **Fail conditions**: Select one of the following PR failure conditions based on the security issues distribution.
@@ -97,8 +97,8 @@ You can configure PR Checks to work only for specific Projects:&#x20;
 
 <summary>Configure for code analysis (click to expand)</summary>
 
-1. In **Snyk Code for pull request** select **Custom** to **** configure the settings.
-2. Enable this option **** to fail the PR when the security issues found in the proposed changes exceed your specified severity threshold.
+1. In **Snyk Code for pull request** select **Custom** to \*\*\*\* configure the settings.
+2. Enable this option \*\*\*\* to fail the PR when the security issues found in the proposed changes exceed your specified severity threshold.
 3. Configure the following settings:
 
 * [ ] **Minimal severity to fail PR check**: Select the severity threshold at which the PR fails. For example, if you select **Medium**, the PR fails on issues found at this level or above, while it is merged for **Low** severity issues.
@@ -106,7 +106,5 @@ You can configure PR Checks to work only for specific Projects:&#x20;
 4. **Update Snyk pull request settings** to save changes.
 
 </details>
-
-
 
 ###

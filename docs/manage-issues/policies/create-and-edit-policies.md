@@ -1,8 +1,8 @@
-# Creating and editing policies
+# Create and edit policies
 
 ## **Create a policy**
 
-1. Click **Add new policy** from the Policy Manager, and a modal will appear where you can create your policy
+1. Click **Add new policy** from the Policy Manager screen, and a modal will appear where you can create your policy
 2. Set a policy name and a description to help you quickly identify a policy\
    **Note**: Policies within the same category cannot have the same name. Policies **cannot** be saved without a policy name applied
 3. Select whether you’d like to apply your policy to organizations or project attributes
