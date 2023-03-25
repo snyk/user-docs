@@ -155,11 +155,11 @@ Specify a custom Snyk project name.
 
 ### `--target-reference=<TARGET_REFERENCE>`
 
-Specify a reference which differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference. Only supported for Snyk Open Source.
+Specify a reference which differentiates this project, for example, a branch name or version. Projects having the same reference can be grouped based on that reference. Supported for Snyk Open Source.
 
 For more information see [Separating projects by branch or version](https://docs.snyk.io/snyk-cli/secure-your-projects-in-the-long-term/grouping-projects-by-branch-or-version)
 
-You can use `--target-reference=<TARGET_REFERENCE>` when running tests to apply the same  ignores and policies as for a monitored target.
+You can use `--target-reference=<TARGET_REFERENCE>` when running tests to apply the same ignores and policies as for a monitored target.
 
 For more information see [Ignore issues](https://docs.snyk.io/features/fixing-and-prioritizing-issues/issue-management/ignore-issues)
 
@@ -279,7 +279,7 @@ When you are monitoring a .NET project using NuGet `PackageReference` uses the p
 
 ### `--file=.sln`
 
-Test all .NET projects included in the given `.sln` file.&#x20;
+Test all .NET projects included in the given `.sln` file.
 
 Example: `snyk test --file=myApp.sln`
 
@@ -295,7 +295,7 @@ This is the folder in which your dependencies are installed, provided you are us
 
 Use the absolute or relative path, including the name of the folder where your dependencies reside.
 
-Examples:&#x20;
+Examples:
 
 `snyk test --packages-folder=../location/to/packages` for Unix OS
 
@@ -319,13 +319,13 @@ This is useful when you have multiple projects with the same name in other `.sln
 
 `--fail-on`. See the [--fail-on option help](https://docs.snyk.io/snyk-cli/commands/test#fail-on-less-than-all-or-upgradable-or-patchable-greater-than)
 
-`--prune-repeated-subdependencies, -p`.  See the [`--prune-repeated subdependencies` option help](https://docs.snyk.io/snyk-cli/commands/test#prune-repeated-subdependencies-p)
+`--prune-repeated-subdependencies, -p`. See the [`--prune-repeated subdependencies` option help](https://docs.snyk.io/snyk-cli/commands/test#prune-repeated-subdependencies-p)
 
 ### `--strict-out-of-sync=true|false`
 
 Prevent testing out-of-sync lockfiles.
 
-If there are out-of-sync lockfiles in the project, the `test` command fails when `--strict-out-of-sync=true`.&#x20;
+If there are out-of-sync lockfiles in the project, the `test` command fails when `--strict-out-of-sync=true`.
 
 Default: true
 
@@ -337,13 +337,13 @@ Default: true
 
 `--fail-on`. See the [--fail-on option help](https://docs.snyk.io/snyk-cli/commands/test#fail-on-less-than-all-or-upgradable-or-patchable-greater-than)
 
-`--prune-repeated-subdependencies, -p`.  See the [`--prune-repeated subdependencies` option help](https://docs.snyk.io/snyk-cli/commands/test#prune-repeated-subdependencies-p)
+`--prune-repeated-subdependencies, -p`. See the [`--prune-repeated subdependencies` option help](https://docs.snyk.io/snyk-cli/commands/test#prune-repeated-subdependencies-p)
 
 ### `--strict-out-of-sync=true|false`
 
 Prevent testing out-of-sync lockfiles.
 
-If there are out-of-sync lockfiles in the project, the `test` command fails when `--strict-out-of-sync=true`.&#x20;
+If there are out-of-sync lockfiles in the project, the `test` command fails when `--strict-out-of-sync=true`.
 
 Default: true
 
@@ -397,7 +397,7 @@ Add`--package-manager=pip` to your command if the file name is not `requirements
 
 This option is mandatory if you specify a value for the `--file` parameter that is not to a `requirements.txt` file. The test fails without this parameter. Specify this parameter with the value `pip`.
 
-For complete information about the command see [`--package-manager=<PACKAGE_MANAGER_NAME>`](https://docs.snyk.io/snyk-cli/commands/test#package-manager-less-than-package\_manager\_name-greater-than)``
+For complete information about the command see [`--package-manager=<PACKAGE_MANAGER_NAME>`](https://docs.snyk.io/snyk-cli/commands/test#package-manager-less-than-package\_manager\_name-greater-than)\`\`
 
 ## Options for Go projects
 
