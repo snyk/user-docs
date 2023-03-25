@@ -99,12 +99,12 @@ For all Projects, you can ignore the vulnerability by creating a `.snyk` YAML fi
 For example, if you want to ignore the vulnerability with SNYK ID [SNYK-RUBY-FASTREADER-20085](https://snyk.io/vuln/SNYK-RUBY-FASTREADER-20085) in `fastreader`, with the reason “No fix available” until 01 Jan 2024, you would write the following:
 
 ```
-version v1.5.0
+version: v1.5.0
 ignore:
     'SNYK-RUBY-FASTREADER-20085':
      - '* > fastreader':
-      reason: 'No fix available'
-      expires '2024-01-01T00:00:00.000Z'
+        reason: 'No fix available'
+        expires: '2024-01-01T00:00:00.000Z'
 ```
 
 For more information, see [The .snyk file](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md).
