@@ -16,15 +16,21 @@ The examples use [HTTPie](https://httpie.io/), but you can use any HTTP client t
 
 To call the API endpoint, **use the following HTTP request**:
 
-`http "https://api.snyk.io/rest/orgs/{org_id}/packages/{purl}/issues"`\
-`version==<snyk-api-version>` \
-`"Authorization: token $API_TOKEN"`
+```bash
+$ http \
+  "https://api.snyk.io/rest/orgs/{org_id}/packages/{purl}/issues" \
+  "Authorization: token $API_TOKEN" \
+  version==<snyk-api-version>
+```
 
 An example using a valid url-encoded purl follows:
 
-`http "https://api.snyk.io/rest/orgs/{org_id}/packages/pkg%3Amaven%2fcom.fasterxml.woodstox%2fwoodstox-core%405.0.0/issues"`\
-`version==2022-04-04~experimental`\
-`"Authorization: token $API_TOKEN"`
+```bash
+$ http \
+  "https://api.snyk.io/rest/orgs/{org_id}/packages/pkg%3Amaven%2fcom.fasterxml.woodstox%2fwoodstox-core%405.0.0/issues" \
+  "Authorization: token $API_TOKEN" \
+  version==2022-04-04~experimental
+```
 
 The purl must be **URL-encoded.**
 
@@ -32,11 +38,14 @@ The Snyk REST API supports pagination. This has a default page limit of **1000**
 
 An example paginated request follows:
 
-`http "https://api.snyk.io/rest/orgs/{org_id}/packages/pkg%3Amaven%2fcom.fasterxml.woodstox%2fwoodstox-core%405.0.0/issues"`\
-`version==2022-04-04~experimental`\
-`limit==100`\
-`offset==0`\
-`"Authorization: token $API_TOKEN"`
+```bash
+$ http \
+  "https://api.snyk.io/rest/orgs/{org_id}/packages/pkg%3Amaven%2fcom.fasterxml.woodstox%2fwoodstox-core%405.0.0/issues" \
+  "Authorization: token $API_TOKEN" \
+  version==2022-04-04~experimental \
+  limit==100 \
+  offset==0
+```
 
 ## Response for List issues for a package endpoint
 
@@ -87,11 +96,11 @@ The response is continuous, divided here to allow for explanations.
 
     ```json
     "problems": [
-                    {
-                        "id": "CWE-611",
-                        "source": "CWE"
-                    }
-                ],
+        {
+            "id": "CWE-611",
+            "source": "CWE"
+        }
+    ],
     ```
 *   The severity or severities of the vulnerability \
 
@@ -137,15 +146,13 @@ The response is continuous, divided here to allow for explanations.
 
 ```json
 "references": [
-                {
-                        "url": "https://github.com/FasterXML/woodstox/issues/61",
-                            "title": "GitHub Issue"
-                },
-                ...
+    {
+            "url": "https://github.com/FasterXML/woodstox/issues/61",
+                "title": "GitHub Issue"
+    },
+    ...
  
 ```
-
-
 
 **Package metadata** is returned, including the following:
 
@@ -155,17 +162,15 @@ The response is continuous, divided here to allow for explanations.
 * Package version
 
 ```json
-    "meta": {
-        "package": {
-            "name": "woodstox-core",
-            "type": "maven",
-            "url": "pkg:maven/com.fasterxml.woodstox/woodstox-core@5.0.0",
-            "version": "5.0.0"
-        }
+"meta": {
+    "package": {
+        "name": "woodstox-core",
+        "type": "maven",
+        "url": "pkg:maven/com.fasterxml.woodstox/woodstox-core@5.0.0",
+        "version": "5.0.0"
     }
+}
 ```
-
-
 
 Where applicable, **pagination links for the results** are included as follows:
 
@@ -174,10 +179,10 @@ Where applicable, **pagination links for the results** are included as follows:
 * Current path
 
 ```json
-    "links": {
-        "prev": "/orgs/29157d45-0d1d-48a3-b394-814d5b601e05/packages/pkg%3Amaven%2Fcom.fasterxml.woodstox%2Fwoodstox-core%405.0.0/issues?version=2023-03-08%7Eexperimental&limit=1000&offset=0",
-        "self": "/orgs/29157d45-0d1d-48a3-b394-814d5b601e05/packages/pkg%3Amaven%2Fcom.fasterxml.woodstox%2Fwoodstox-core%405.0.0/issues?version=2023-03-08%7Eexperimental&limit=1000&offset=1"
-    },
+"links": {
+    "prev": "/orgs/29157d45-0d1d-48a3-b394-814d5b601e05/packages/pkg%3Amaven%2Fcom.fasterxml.woodstox%2Fwoodstox-core%405.0.0/issues?version=2023-03-08%7Eexperimental&limit=1000&offset=0",
+    "self": "/orgs/29157d45-0d1d-48a3-b394-814d5b601e05/packages/pkg%3Amaven%2Fcom.fasterxml.woodstox%2Fwoodstox-core%405.0.0/issues?version=2023-03-08%7Eexperimental&limit=1000&offset=1"
+},
 ```
 
 ## Troubleshooting for List issues for a package endpoint
