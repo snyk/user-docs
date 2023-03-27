@@ -29,7 +29,7 @@ You can run Snyk in the following ways:
 
 This video shows using the CLI to scan for vulnerabilities.
 
-{% embed url="https://snyk.io/wp-content/uploads/Homepage-IDE-animation-Log4Shell-FINAL.mp4" %}
+{% embed url="https://thoughtindustries-1.wistia.com/medias/b8vrvtmnbu" %}
 Running Snyk from the command line.
 {% endembed %}
 
