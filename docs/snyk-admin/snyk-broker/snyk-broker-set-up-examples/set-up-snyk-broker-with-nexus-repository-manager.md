@@ -41,7 +41,8 @@ The Snyk Broker token, obtained from your Nexus integration settings (**Integrat
 `BASE_NEXUS_URL`\
 ``The URL of your Nexus 3 deployment.\
 Example:\
-`https://[<user>:<pass>@]<your.nexus.hostname>` Must not end with a forward slash.\
+`BASE_NEXUS_URL=https://[<username_or_token><password_or_token>]@<your.nexus.hostname>`\
+Must not end with a forward slash.\
 The following field is optional:\
 `Auth`: Omit if no auth required.\
 Can either be plain text or a two-part token (`Nexus Pro`).\
