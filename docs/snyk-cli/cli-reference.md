@@ -38,11 +38,11 @@ Print a list of the `snyk container` commands, `snyk container monitor` and `sny
 
 Capture the container image layers and dependencies and monitor for vulnerabilities on [snyk.io](https://snyk.io)
 
-### ``[`snyk container test`](https://docs.snyk.io/snyk-cli/commands/container-test)``
+### [snyk container test](https://docs.snyk.io/snyk-cli/commands/container-test)
 
 Test container images for any known vulnerabilities.
 
-### ``[`snyk iac`](https://docs.snyk.io/snyk-cli/commands/iac)``
+### [snyk iac](https://docs.snyk.io/snyk-cli/commands/iac)
 
 Print a list of the `snyk iac` commands: `snyk iac describe`, `snyk iac update-exclude-policy`, and `snyk iac test`.
 
@@ -62,7 +62,7 @@ Test for any known security issue.
 
 `Print the name of the snyk code` command `with its help option: snyk code test`
 
-### ``[`snyk code test`](https://docs.snyk.io/snyk-cli/commands/code-test)``
+### [snyk code test](https://docs.snyk.io/snyk-cli/commands/code-test)
 
 Test for any known security issues using Static Code Analysis.
 
@@ -116,19 +116,19 @@ Use `-d` option to output the debug logs for any command.
 
 Exit codes for the `test` commands are all the same. See the exit codes in the following help docs:
 
-* ``[`snyk test` exit codes](https://docs.snyk.io/snyk-cli/commands/test#exit-codes)
-* ``[`snyk container test` exit codes](https://docs.snyk.io/snyk-cli/commands/container-test#exit-codes)
-* ``[`snyk iac test` exit codes](https://docs.snyk.io/snyk-cli/commands/iac-test#exit-codes)
-* ``[`snyk code test` exit codes](https://docs.snyk.io/snyk-cli/commands/code-test#exit-codes)
+* [`snyk test` exit codes](https://docs.snyk.io/snyk-cli/commands/test#exit-codes)
+* [`snyk container test` exit codes](https://docs.snyk.io/snyk-cli/commands/container-test#exit-codes)
+* [`snyk iac test` exit codes](https://docs.snyk.io/snyk-cli/commands/iac-test#exit-codes)
+* [`snyk code test` exit codes](https://docs.snyk.io/snyk-cli/commands/code-test#exit-codes)
 
 Additional CLI commands have exit codes as listed in the following help docs:
 
-* ``[`snyk monitor` exit codes](https://docs.snyk.io/snyk-cli/commands/container-monitor#exit-codes)
-* ``[`snyk container` monitor exit codes](https://docs.snyk.io/snyk-cli/commands/container-monitor#exit-codes)
-* ``[`snyk iac describe` exit codes](https://docs.snyk.io/snyk-cli/commands/iac-describe#exit-codes)
-* ``[`snyk iac` update-exclude-policy exit codes](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy#exit-codes)
-* ``[`snyk log4shell` exit codes](https://docs.snyk.io/snyk-cli/commands/log4shell#exit-codes)
-* ``[`snyk sbom` exit codes](https://docs.snyk.io/snyk-cli/commands/sbom#exit-codes)
+* [`snyk monitor` exit codes](https://docs.snyk.io/snyk-cli/commands/container-monitor#exit-codes)
+* [`snyk container` monitor exit codes](https://docs.snyk.io/snyk-cli/commands/container-monitor#exit-codes)
+* [`snyk iac describe` exit codes](https://docs.snyk.io/snyk-cli/commands/iac-describe#exit-codes)
+* [`snyk iac` update-exclude-policy exit codes](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy#exit-codes)
+* [`snyk log4shell` exit codes](https://docs.snyk.io/snyk-cli/commands/log4shell#exit-codes)
+* [`snyk sbom` exit codes](https://docs.snyk.io/snyk-cli/commands/sbom#exit-codes)
 
 ## Options for multiple commands
 
