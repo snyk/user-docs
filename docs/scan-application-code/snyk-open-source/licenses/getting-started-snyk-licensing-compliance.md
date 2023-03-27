@@ -82,7 +82,3 @@ You can view and share detailed lists of licenses being used, and see a report t
 You can now take action to resolve the license issues identified during the scan, to help you build and deploy your application without outstanding licensing issues.
 
 The actions you take depend on the license conditions and on your policies. For example, if a license violation is surfaced, this issue can be mitigated by either approaching your legal team or by replacing the dependency which added the violation.
-
-## More information
-
-See [Licenses](./).

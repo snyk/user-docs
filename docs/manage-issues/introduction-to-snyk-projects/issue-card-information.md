@@ -15,7 +15,7 @@ You can:
 
 Issue cards show details for a specific vulnerability or license issue, and actions you can take for:
 
-<figure><img src="../../.gitbook/assets/image (289).png" alt="Issue card for the npmconf vulnerability"><figcaption><p>Issue card for the npmconf vulnerability</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="Issue card for the npmconf vulnerability"><figcaption><p>Issue card for the npmconf vulnerability</p></figcaption></figure>
 
 Card details include [Header section](issue-card-information.md#header-section) and [Body section](issue-card-information.md#body-section) information.
 
@@ -67,5 +67,5 @@ The issue cards in a Project can be sorted based on their priority score or seve
 You can perform the following actions on the issue card:
 
 * [**Ignore the issue**](../issue-management/ignore-issues.md): if you do not need to take action on an issue, or it does not need to appear on your reports, you can ignore it.
-* ****[**Create a Jira ticket**](../../integrations/notifications-ticketing-system-integrations/jira.md): if you have the Jira integration, you can link your issue boards to Snyk and create Jira tickets directly from the project details page to fix vulnerabilities.
+* \*\*\*\*[**Create a Jira ticket**](../../integrations/notifications-ticketing-system-integrations/jira.md): if you have the Jira integration, you can link your issue boards to Snyk and create Jira tickets directly from the project details page to fix vulnerabilities.
 * [**Fix the vulnerability**](https://docs.snyk.io/snyk-open-source/open-source-basics/fixing-vulnerabilities): if a fix is available, you can fix individual vulnerabilities.

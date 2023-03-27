@@ -9,11 +9,11 @@ The following describes the Snyk task configuration fields from the configuratio
 **Default:** none\
 **Type:** String / Azure Service Connection Endpoint of type SnykAuth / Snyk Authentication
 
-**Description:**  The Azure DevOps service connection endpoint where your Snyk API token is defined. Your admin defines this within your Azure DevOps project settings, assigning it with a unique string in order to differentiate between different connections.
+**Description:** The Azure DevOps service connection endpoint where your Snyk API token is defined. Your admin defines this within your Azure DevOps project settings, assigning it with a unique string in order to differentiate between different connections.
 
-The configuration panel displays all available Snyk service connections from a dropdown list like the following:&#x20;
+The configuration panel displays all available Snyk service connections from a dropdown list like the following:
 
-![Snyk service connections](<../../../.gitbook/assets/image (1) (1) (3) (1) (4).png>)
+![Snyk service connections](<../../../.gitbook/assets/image (1) (1) (3) (1) (1) (1) (1).png>)
 
 If multiple Snyk service connections are available from the dropdown list, ask your administrator which to use for the pipeline you are working with.
 
@@ -28,14 +28,14 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 
 ## **Field:** Container Image Name
 
-**Parameter:**  dockerImageName\
+**Parameter:** dockerImageName\
 **Required:** Yes\
 **Default:** none\
 **Type:** String
 
 **Description:** The name of the container image to test. This dynamic field appears when **What do you want to test** is set to **Container Image**. Set to **Yes** if container image test.
 
-## **Field:** Path to Dockerfile&#x20;
+## **Field:** Path to Dockerfile
 
 **Parameter:** dockerfilePath\
 **Required:** Yes\
@@ -44,7 +44,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 
 **Description:** The path to the Dockerfile corresponding to the `dockerImageName`. This dynamic field appears when **What do you want to test** is set to **Container Image**. Set to **Yes** if container image test.
 
-## **Field:** Custom path to manifest file to test&#x20;
+## **Field:** Custom path to manifest file to test
 
 **Parameter:** target file\
 **Required:** No\
@@ -53,7 +53,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 
 **Description:** Applicable to application-type tests only. The path to the manifest file to be used by Snyk. Should be provided only if non-standard. This dynamic field appears when **What do you want to test** is set to **Application**.
 
-## **Field: Testing severity threshold**&#x20;
+## **Field: Testing severity threshold**
 
 **Parameter:** severityThreshold\
 **Required:** No\
@@ -62,7 +62,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 
 **Description:** The severity threshold to use when testing. By default, issues of all severity types are found. If not configured, the default severity is set to **low**.
 
-## **Field: When to run Snyk Monitor**&#x20;
+## **Field: When to run Snyk Monitor**
 
 **Parameter:** monitorWhen\
 **Required:** Yes\
@@ -71,7 +71,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 
 **Description:** When to run **snyk monitor** to capture the dependency tree of the application or container image and monitor it within Snyk.
 
-## **Field:** Fail build if Snyk finds issues&#x20;
+## **Field:** Fail build if Snyk finds issues
 
 **Parameter:** failOnIssues\
 **Required:** Yes\
@@ -80,7 +80,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 
 **Description:** Specifies whether pipeline jobs should be failed or continued based on issues found by Snyk.
 
-## **Field:** Project name in Snyk&#x20;
+## **Field:** Project name in Snyk
 
 **Parameter:** projectName\
 **Required:** No\
@@ -89,7 +89,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 
 **Description:** A custom name for the Snyk project to be created on snyk.io.
 
-## **Field:** Organization name (or ID) in Snyk&#x20;
+## **Field:** Organization name (or ID) in Snyk
 
 **Parameter:** organization\
 **Required:** No\
@@ -98,7 +98,7 @@ If multiple Snyk service connections are available from the dropdown list, ask y
 
 **Description:** Name of the Snyk organization under which this project should be tested and monitored.
 
-## **Field:** Test (Working) Directory&#x20;
+## **Field:** Test (Working) Directory
 
 **Parameter:** testDirectory\
 **Required:** No\
