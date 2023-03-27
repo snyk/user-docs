@@ -121,14 +121,16 @@ Snyk Code can analyze your C# code using IDE, CLI, and Git integration.&#x20;
     * \*.csproj, \*.fsproj, \*.vbproj, packages.config
   * Fix Pull Requests
     * If you currently manage your Project dependencies with NuGet and leverage [`PackageReference`](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files) or [`packages.config`](https://docs.microsoft.com/en-us/nuget/reference/packages-config) Snyk can automatically update the dependency version in your manifest file, provided there is an actual fix for it. You can then review and merge your fixes.
-* **CLI Analysis**
-  * The CLI supports
+*   **CLI Analysis**
+
+    The CLI supports the following:
+
     * **projects.assets.json**
-      * run "**dotnet restore"** to generate the necessary projects.assets.json prior to running the "**snyk test**" command
-      * The solution file contains pointers to the necessary files. You can point the Snyk CLI to the necessary files by using --file=\[filename].sln
-      * Where multiple target frameworks are used in the same project, the CLI scan will return results for the first target framework that is declared in the project
+      * Run "**dotnet restore"** to generate the necessary `projects.assets.json` prior to running the "**snyk test**" command.
+      * The solution file contains pointers to the necessary files. Note that the projects themselves must have `projects.assets.json` files to be able to be scanned. You can point the Snyk CLI to the solution file by using `--file=<filename>.sln`.
+      * Where multiple target frameworks are used in the same project, the CLI scan returns results for the first target framework that is declared in the project.
     * packages.config
-      * run "**nuget install -OutputDirectory packages**" prior to running the "**snyk test**" command
+      * run "**nuget install -OutputDirectory packages**" prior to running the **snyk test** command
 
 {% hint style="info" %}
 Runtime dependencies (provided by the runtime environment also known as "meta-packages") are resolved more accurately in the CLI if the host machine uses a similar runtime SDK to the server running the app.

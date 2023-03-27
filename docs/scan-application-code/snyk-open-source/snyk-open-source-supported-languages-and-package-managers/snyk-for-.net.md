@@ -49,6 +49,8 @@ Examples of supported Project files that resolve into **project.assets.json** in
 * **\*.vbproj**
 * **\*.fsproj**
 
+The **project.assets.json** file is required for scanning
+
 {% hint style="info" %}
 Project files can be combined with [lock files](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files#locking-dependencies) for a more deterministic **project.assets.json** resolution.
 {% endhint %}

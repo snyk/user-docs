@@ -18,4 +18,4 @@ Select which organizations you wish to compare using the filter dropdown. This w
 
 Organization filters can be created, saved, and selected quickly via the **Organization Filters** dropdown.
 
-<figure><img src="../../.gitbook/assets/image (206) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Organization filters dropdown"><figcaption><p>Organization filters dropdown</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (206) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Organization filters dropdown"><figcaption><p>Organization filters dropdown</p></figcaption></figure>

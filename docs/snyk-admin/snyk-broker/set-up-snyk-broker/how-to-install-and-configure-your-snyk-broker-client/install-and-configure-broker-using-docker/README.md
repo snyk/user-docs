@@ -17,4 +17,4 @@ Installing the Snyk Broker through Docker commands is also straightforward. Foll
 
 Once the Broker is running, visit the settings for your brokered integration in [the Snyk Web UI](https://app.snyk.io) to see a message like the following and start importing projects:
 
-<figure><img src="../../../../../.gitbook/assets/image (60) (1).png" alt="Brokered integration settings showing connected status"><figcaption><p>Brokered integration settings showing connected status</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (60) (2).png" alt="Brokered integration settings showing connected status"><figcaption><p>Brokered integration settings showing connected status</p></figcaption></figure>
