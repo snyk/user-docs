@@ -228,5 +228,6 @@ Permissions:
 * Permissions granted to users via Roles enable the same capabilities across all Snyk environments: Web UI, API, CLI, and IDE.
 * `View Organization` permission is needed by default for all organization level member roles.
 * If the Role is expected to view project-related data of an organization along with other operations - `View Organization , View Project, and View Project History` permissions should be added to the role at a minimum.
+* `View Preview Features` permission is required to run a Snyk Container test and Snyk IaC test.
 * Snyk prevents role privileges from escalating so that users cannot assign a higher privileged role to others or cannot create service accounts with a higher privileged role.
 * It is advisable to use the Duplicate Role functionality and create a copy of a standard role and then amend the permissions instead of building a role from scratch if you are unsure about the permissions.
