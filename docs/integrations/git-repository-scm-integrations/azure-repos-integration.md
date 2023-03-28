@@ -33,7 +33,7 @@ To add a default project:
 4. Click **Add selected repositories**.\
    Snyk scans the entire file tree for dependency files and imports them to Snyk as Projects.
 
-![](<../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en (1).png>)
+<figure><img src="../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en (1).png" alt="Import Projects"><figcaption><p>Import Projects</p></figcaption></figure>
 
 ## Adding custom file locations and excluding folders
 
@@ -49,7 +49,7 @@ Use this procedure to add an Azure Repository dependency from a non-default path
 The relative path field is case-sensitive.
 {% endhint %}
 
-![](<../../.gitbook/assets/azure\_custom\_repo-11aug2022 (1).png>)
+<figure><img src="../../.gitbook/assets/azure_custom_repo-11aug2022 (1).png" alt="Select Azure repos"><figcaption><p>Select Azure repos</p></figcaption></figure>
 
 ### Exclude folders from import
 
@@ -63,7 +63,7 @@ The optional **Exclude folders** field is case-sensitive. The pattern you enter 
 
 Once repositories are imported, a confirmation appears in green at the top of the screen. The selected files are indicated with a unique icon, they are named by organization/repo, and you can now also filter to view only those projects, as seen in the example below:
 
-![](<../../.gitbook/assets/image (493).png>)
+<figure><img src="../../.gitbook/assets/image (493).png" alt="View import results"><figcaption><p>View import results</p></figcaption></figure>
 
 The Azure Repository integration works similar to the other Snyk Git integrations. To continue to monitor, fix, and manage your projects, see the related pages in the Snyk User Docs.
 
@@ -85,7 +85,7 @@ Snyk only supports Git: Snyk does _**not**_ currently support integration with T
 To enable integration between Azure Repository and Snyk, and start managing your vulnerabilities, make sure that:
 
 * You've set up your Azure Repos account and your Snyk account: you must have an Azure project. If you don't have a project yet, create one in [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops) or set one up in an [on-premises Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops).
-* You have the necessary group membership and permissions to create a personal access token (PAT). To create a PAT, you must be a member of the [**Project Administrators** Group](https://docs.microsoft.com/en-us/azure/devops/organizations/security/change-project-level-permissions?view=azure-devops) or have your **Manage permissions** set to **Allow** for Git repositories. For more information, see the [Azure DevOps documentation](https://docs.microsoft.com/en-us/azure/devops/repos/git/set-git-repository-permissions).
+* &#x20;Create a PAT. You must be a member of the [**Project Administrators** Group](https://docs.microsoft.com/en-us/azure/devops/organizations/security/change-project-level-permissions?view=azure-devops) so that the PAT has _**edit**_**  **_**subscriptions**  **permissions**_** ** required for enabling webhooks.
 
 {% hint style="info" %}
 Have a Snyk admin user configure the integration within the UI.\
@@ -98,7 +98,7 @@ Collaborator users cannot complete this task.
 2. When you're prompted in Azure, enable the following permissions for Snyk access:
    * **Expiry**: to avoid breaking the integration, we recommend that you choose a token expiration date that is far in the future
    * **Scopes**: _Custom defined_
-   * **Code**: _Read & write_ (enable Project Administrators group permissions if the user creating the personal access token is not an admin of the Repositories).
+   * **Code**: _Read & write_.
 
 ### In the Snyk Web UI
 
@@ -111,7 +111,7 @@ Collaborator users cannot complete this task.
 4. Click **Save**.\
    Snyk tests the connection values and the page reloads, displaying the Azure Repos integration information. A message to confirm that the details were updated is displayed at the top of the screen.
 
-![](../../.gitbook/assets/azure-updated\_14aug2022.png)
+<figure><img src="../../.gitbook/assets/azure-updated_14aug2022.png" alt="Azure repos integration information"><figcaption><p>Azure repos integration information</p></figcaption></figure>
 
 If the connection to Azure fails, a notification is displayed under the **Azure Repos** card title.\
 <img src="../../.gitbook/assets/azure-no-connect_31july2022.png" alt="" data-size="original">
