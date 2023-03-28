@@ -48,7 +48,7 @@ Your new view is created and is automatically selected. You can click the icon n
 
 1. From the Project views drop-down, select the Project view that you would like to share with another member of your Organization.
 
-<figure><img src="../../.gitbook/assets/image (3) (5).png" alt="Select the Project view that you want to share"><figcaption><p>Select the Project view that you want to share</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (5) (1).png" alt="Select the Project view that you want to share"><figcaption><p>Select the Project view that you want to share</p></figcaption></figure>
 
 2. Once the Project view has loaded on the screen, copy the URL of the page. This URL can be shared with anyone in your Organization.
 

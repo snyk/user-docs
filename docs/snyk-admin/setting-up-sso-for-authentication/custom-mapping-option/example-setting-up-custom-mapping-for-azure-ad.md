@@ -23,7 +23,7 @@ The following are the **prerequisites** for configuring App roles:
     <figure><img src="../../../.gitbook/assets/image (113).png" alt="App registration, select name of Enterprise Application"><figcaption><p>App registration, select name of Enterprise Application</p></figcaption></figure>
 2.  Select **App roles**, then **Create app role**.
 
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (2) (1).png" alt="Select App roles, Create app role"><figcaption><p>Select App roles, Create app role</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1) (2) (1) (1).png" alt="Select App roles, Create app role"><figcaption><p>Select App roles, Create app role</p></figcaption></figure>
 3.  Create an app role with details as needed.\
     Select the **Allowed member types**: **Users/Groups**, **Applications**, or **Both**.\
     Enter the **Value** and **Description** for the selected type.\
@@ -40,7 +40,7 @@ The following are the **prerequisites** for configuring App roles:
     <figure><img src="../../../.gitbook/assets/image (4) (5).png" alt="Select Users and groups, Add user/group"><figcaption><p>Select Users and groups, Add user/group</p></figcaption></figure>
 6.  Select **Users and groups**; from the dropdown, select a role; and select **Assign**.
 
-    <figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>
 7.  Repeat for all required groups and roles that should be assigned. Then verify that the list looks similar to this.
 
     <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (2) (1).png" alt="Users and group list"><figcaption><p>Users and group list</p></figcaption></figure>

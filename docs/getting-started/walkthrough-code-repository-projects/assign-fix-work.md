@@ -22,7 +22,7 @@ Typically, smaller teams have less process, and Enterprise-level teams are more 
 
 For example, your team could follow a triage-based process for each issue, driven largely by the severity of the issue:
 
-<figure><img src="../../.gitbook/assets/image (23) (1).png" alt="Using a triage process for issues"><figcaption><p>Using a triage process for issues</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23) (3).png" alt="Using a triage process for issues"><figcaption><p>Using a triage process for issues</p></figcaption></figure>
 
 ### Example workflow: team-lead driven, using Jira
 

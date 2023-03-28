@@ -88,7 +88,7 @@ Snyk uses the package manager of your application to build the dependency tree a
 
 <figure><img src="../../.gitbook/assets/image (269) (1) (1) (1) (1).png" alt="Dependencies for Open Source vulnerabilities"><figcaption><p>Dependencies for Open Source vulnerabilities</p></figcaption></figure>
 
-Click the file tree icon (![](<../../.gitbook/assets/image (201) (2).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
+Click the file tree icon (![](<../../.gitbook/assets/image (201).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
 
 <figure><img src="../../.gitbook/assets/image23.png" alt="Dependency tree details"><figcaption><p>Dependency tree details</p></figcaption></figure>
 

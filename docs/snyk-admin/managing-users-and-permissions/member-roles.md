@@ -46,7 +46,7 @@ Choose the required permissions and click **Update Role Permissions**.
 
 When creating the role is complete, you will see the confirmation message at the top.
 
-<figure><img src="../../.gitbook/assets/image (175).png" alt="Role creation confirmation message"><figcaption><p>Role creation confirmation message</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14).png" alt="Role creation confirmation message"><figcaption><p>Role creation confirmation message</p></figcaption></figure>
 
 ### Edit a Role
 
@@ -58,7 +58,7 @@ When creating the role is complete, you will see the confirmation message at the
 
 When updating the role is complete, you will see the confirmation message at the top.
 
-<figure><img src="../../.gitbook/assets/image (144).png" alt="Role change confirmation message"><figcaption><p>Role change confirmation message</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt="Role change confirmation message"><figcaption><p>Role change confirmation message</p></figcaption></figure>
 
 ### Duplicate a Role
 
@@ -104,7 +104,7 @@ Click the **Add members** button > **Invite new members**.\
 \
 You can invite new members to the org by assigning them a specified role.
 
-<figure><img src="../../.gitbook/assets/image (391).png" alt="Invite new members"><figcaption><p>Invite new members</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt="Invite new members"><figcaption><p>Invite new members</p></figcaption></figure>
 
 Choose **Add members** button > **Add existing members** to promote current Group Members to an org-specific role.
 
