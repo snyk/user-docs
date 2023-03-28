@@ -30,7 +30,7 @@ Snyk scans for the following types of issues:
 
 The JetBrains plugins also provide the [**Open Source Advisor**](https://snyk.io/advisor/) to help you find the best package for your next project. Information is provided on the package health of the direct dependencies you are using including popularity, maintenance, risk, and community insights.
 
-After you complete the installation steps on this page and the [configuration](https://docs.snyk.io/ide-tools/jetbrains-plugins/configuration-environment-variables-and-proxy-for-the-jetbrains-plugins) and [authentication](https://docs.snyk.io/ide-tools/jetbrains-plugins/authentication-for-the-jetbrains-plugins) steps on the next two pages\*\*,\*\* you will continue by following the instructions in the other JetBrains plugins docs:
+After you complete the installation steps on this page and the [configuration](https://docs.snyk.io/ide-tools/jetbrains-plugins/configuration-environment-variables-and-proxy-for-the-jetbrains-plugins) and [authentication](https://docs.snyk.io/ide-tools/jetbrains-plugins/authentication-for-the-jetbrains-plugins) steps on the next two pages, continue by following the instructions in the other JetBrains plugins docs:
 
 * [Run an analysis with the JetBrains plugins](https://docs.snyk.io/ide-tools/jetbrains-plugins/run-an-analysis-with-the-jetbrains-plugins)
 * [JetBrains analysis results: Open Source](https://docs.snyk.io/ide-tools/jetbrains-plugins/jetbrains-analysis-results-snyk-open-source)
@@ -70,7 +70,7 @@ Install using the IDE plugins library:
 5. Click on the **Install** button.
 6. When the installation is complete, restart the IDE.
 
-![Select the Snyk vulnerability scanning plugin](<../../../.gitbook/assets/Screen Shot 2022-03-09 at 5.06.13 PM (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1 (6).png>)
+<figure><img src="../../../.gitbook/assets/Screen Shot 2022-03-09 at 5.06.13 PM (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1 (6).png" alt="Select the Snyk vulnerability scanning plugin"><figcaption><p>Select the Snyk vulnerability scanning plugin</p></figcaption></figure>
 
 Continue with the steps on the JetBrains [configuration](https://docs.snyk.io/ide-tools/jetbrains-plugins/configuration-environment-variables-and-proxy-for-the-jetbrains-plugins) page.
 
