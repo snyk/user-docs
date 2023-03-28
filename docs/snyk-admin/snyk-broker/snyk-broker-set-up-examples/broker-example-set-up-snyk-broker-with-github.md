@@ -2,17 +2,14 @@
 
 Follow the instructions on this page to set up GitHub with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise or cloud GitHub deployment.
 
+{% hint style="info" %}
+**Prerequisites**\
+****Ask your Snyk account team to provide you with a Broker token.
+
+You need Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
+{% endhint %}
+
 ## Configure Broker integration with GitHub
-
-{% hint style="info" %}
-Ask your Snyk account team to provide you with a Broker token.
-{% endhint %}
-
-{% hint style="info" %}
-You need Docker or a way to run Docker Linux containers.
-
-Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
-{% endhint %}
 
 To use the Snyk Broker Client with GitHub, **run** `docker pull snyk/broker:github-com`. The following environment variables are required to configure the Broker client:
 
@@ -45,7 +42,7 @@ As an alternative using to the Docker run command, you can use a derived Docker 
 
 A fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for GitHub is attached to use if you want to configure a custom allowlist. You cannot run the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument:
 
-{% file src="../../../.gitbook/assets/accept (1) (1) (1) (1) (1).json" %}
+{% file src="../../../.gitbook/assets/accept (3) (1).json" %}
 
 ### Start the Broker Client container
 

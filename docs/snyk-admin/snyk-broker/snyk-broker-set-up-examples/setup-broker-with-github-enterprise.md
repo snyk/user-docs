@@ -1,18 +1,15 @@
 # Set up Snyk Broker with GitHub Enterprise
 
-Follow the instructions on this page to set up GitHub Enterprise with Snyk Broker. This integration  is useful to ensure a secure connection with your on-premise or cloud GitHub Enterprise deployment.
+Follow the instructions on this page to set up GitHub Enterprise with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise or cloud GitHub Enterprise deployment.
+
+{% hint style="info" %}
+**Prerequisites**\
+****Ask your Snyk account team to provide you with a Broker token.
+
+You need Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
+{% endhint %}
 
 ## Configure Broker to be used for GitHub Enterprise
-
-{% hint style="info" %}
-Ask your Snyk account team to provide you with a Broker token.
-{% endhint %}
-
-{% hint style="info" %}
-You need Docker or a way to run Docker Linux containers.
-
-Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
-{% endhint %}
 
 To use the Snyk Broker client with a GitHub Enterprise deployment, **run** `docker pull snyk/broker:github-enterprise`. The following environment variables are required to configure the Broker client:
 
@@ -63,7 +60,7 @@ Once the container is up, the GitHub Enterprise Integrations page shows the conn
 
 ### **Support of big manifest files (> 1Mb) for GitHub Enterprise**
 
-One reason that open Fix/Upgrade PRs or PR/recurring tests fail may be fetching big manifest files (> 1Mb). To address this issue, whitelist an additional Blob API endpoint  in `accept.json`. This should be in a private array.
+One reason that open Fix/Upgrade PRs or PR/recurring tests fail may be fetching big manifest files (> 1Mb). To address this issue, whitelist an additional Blob API endpoint in `accept.json`. This should be in a private array.
 
 ```
 {

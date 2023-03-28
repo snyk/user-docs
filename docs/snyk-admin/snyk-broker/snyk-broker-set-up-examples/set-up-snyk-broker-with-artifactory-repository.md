@@ -6,10 +6,9 @@ Integration with Artifactory Repository is available with Enterprise plans. See 
 {% endhint %}
 
 {% hint style="info" %}
-Ask your Snyk account team to provide you with a Broker token or generate it from the Snyk Web UI.
-{% endhint %}
+**Prerequisites**\
+****Ask your Snyk account team to provide you with a Broker token or generate it from the Snyk Web UI.
 
-{% hint style="info" %}
 You need Docker or a way to run Docker Linux containers.
 
 Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
@@ -45,7 +44,7 @@ The following fields are optional:
 
 `ARTIFACTORY_URL` format with optional fields:\
 `[http://][username:password@]hostname[:port]/artifactory`\
-``Example:\
+\`\`Example:\
 `http://alice:mypassword@acme.com:8080/artifactory`
 
 **Use the following command** to set up a fully configured Broker Client to use with Artifactory Registry. You can run the Docker container by providing the relevant configuration:

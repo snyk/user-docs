@@ -1,18 +1,16 @@
 # Set up Snyk Broker with GitLab
 
-Follow the instructions on this page to set up  GitLab with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise or cloud GitLab deployment.
+Follow the instructions on this page to set up GitLab with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise or cloud GitLab deployment.
+
+{% hint style="info" %}
+**Prereqisites**
+
+Ask your Snyk account team to provide you with a Broker token.
+
+You need Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
+{% endhint %}
 
 ## Configure Broker to be used for GitLab
-
-{% hint style="info" %}
-Ask your Snyk account team to provide you with a Broker token.
-{% endhint %}
-
-{% hint style="info" %}
-You need Docker or a way to run Docker Linux containers.
-
-Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
-{% endhint %}
 
 To use the Broker client with GitLab.com or an on-prem GitLab deployment, **run** `docker pull snyk/broker:gitlab`. The following environment variables are required to configure the Broker client:
 
@@ -39,7 +37,7 @@ docker run --restart=always \
        snyk/broker:gitlab
 ```
 
-**If necessary,** go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client/) and **make any configuration changes** needed, such as providing the CA (Certificate Authority to the Broker Client configuration if the GitlLab instance is using a private certificate,  or setting up [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support).
+**If necessary,** go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client/) and **make any configuration changes** needed, such as providing the CA (Certificate Authority to the Broker Client configuration if the GitlLab instance is using a private certificate, or setting up [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support).
 
 As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the GitLab integration.
 

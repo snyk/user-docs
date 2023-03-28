@@ -2,17 +2,14 @@
 
 Follow the instructions on this page to set up Bitbucket Server/Data Center with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise Bitbucket deployment.
 
+{% hint style="info" %}
+**Prerequisites**\
+****Ask your Snyk account team to provide you with a Broker token.
+
+You need Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
+{% endhint %}
+
 ## Configure Broker to be used with Bitbucket
-
-{% hint style="info" %}
-Ask your Snyk account team to provide you with a Broker token.
-{% endhint %}
-
-{% hint style="info" %}
-You need Docker or a way to run Docker Linux containers.
-
-Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
-{% endhint %}
 
 The following explains how to configure Snyk Broker to use the Broker Client with a Bitbucket Server deployment.
 
@@ -28,7 +25,7 @@ To use the Snyk Broker Client with BitBucket, **run** `docker pull snyk/broker:b
 * `ACCEPT_IAC` - by default, some file types used by Infrastructure-as-Code (IaC) are not enabled. To grant the Broker access to IaC files in your repository, such as Terraform for example, you can simply add an environment variable `ACCEPT_IAC` with any combination of `tf,yaml,yml,json,tpl`
 * `ACCEPT_CODE` - by default, when using the Snyk Broker - Code Agent, Snyk Code will not load code snippets. To enable code snippets you can simply add an environment variable `ACCEPT_CODE=true`
 
-**Use the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files  (with the Code Agent).
+**Use the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files (with the Code Agent).
 
 ```bash
 docker run --restart=always \
@@ -53,7 +50,7 @@ As an alternative to using the Docker run command, you can use a derived Docker 
 
 In addition, a fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for Bitbucket is attached to use if you want to configure a custom allowlist. You cannot run the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument:
 
-{% file src="../../../.gitbook/assets/accept (1).json" %}
+{% file src="../../../.gitbook/assets/accept (3).json" %}
 
 ### Start the Broker Client container
 
