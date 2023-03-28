@@ -8,6 +8,6 @@ Snyk shows your [preferred Organization](https://docs.snyk.io/features/user-and-
 
 To change which Organization you're viewing, click the navigation switcher:
 
-<figure><img src="../../.gitbook/assets/snyk-org-switcher (1).png" alt="Switch Organization"><figcaption><p>Switch Organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-org-switcher.png" alt="Switch Organization"><figcaption><p>Switch Organization</p></figcaption></figure>
 
 Click the avatar at the bottom of the switcher to display your Personal Orgs. (Depending on your enterprise's setup, this may not be visible to you.)

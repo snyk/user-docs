@@ -45,7 +45,7 @@ An issue is ignored until ANY of the conditions happen: the ignore period expire
 
 When you ignore an issue in the Snyk Web UI, the issue shows who ignored it and allow you to edit or unignore it.
 
-<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Ignore set in the Snyk Web UI"><figcaption><p>Ignore set in the Snyk Web UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (2).png" alt="Ignore set in the Snyk Web UI"><figcaption><p>Ignore set in the Snyk Web UI</p></figcaption></figure>
 
 For more information see the training: [Ignoring issues](https://training.snyk.io/courses/ignore-strategies).
 
@@ -80,7 +80,7 @@ Refer to the following example. Issues are identified as CI/CLI, meaning the Pro
 
 The following shows `snyk test` results before ignoring in the Web UI:
 
-<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk test results before ignoring in the Web UI"><figcaption><p>Snyk test results before ignoring in the Web UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1) (2).png" alt="Snyk test results before ignoring in the Web UI"><figcaption><p>Snyk test results before ignoring in the Web UI</p></figcaption></figure>
 
 The following shows `snyk test` results after ignoring in the Web UI:
 
@@ -115,7 +115,7 @@ Please see information about [.snyk files in monorepos](../../snyk-cli/test-for-
 
 ### Ignoring issues with policy actions
 
-You can set [Security policies](../security-policies/) actions to ignore all vulnerabilities that match the conditions specified in a policy rule.
+You can set [Security policies](../policies/security-policies/) actions to ignore all vulnerabilities that match the conditions specified in a policy rule.
 
 For more information, see [Security policies: Actions](https://docs.snyk.io/fixing-and-prioritizing-issues/security-policies/security-policies-actions).
 
