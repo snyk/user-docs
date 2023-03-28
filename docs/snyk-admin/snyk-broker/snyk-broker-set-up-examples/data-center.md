@@ -25,6 +25,10 @@ To use the Snyk Broker Client with BitBucket, **run** `docker pull snyk/broker:b
 * `ACCEPT_IAC` - by default, some file types used by Infrastructure-as-Code (IaC) are not enabled. To grant the Broker access to IaC files in your repository, such as Terraform for example, you can simply add an environment variable `ACCEPT_IAC` with any combination of `tf,yaml,yml,json,tpl`
 * `ACCEPT_CODE` - by default, when using the Snyk Broker - Code Agent, Snyk Code will not load code snippets. To enable code snippets you can simply add an environment variable `ACCEPT_CODE=true`
 
+**If necessary,** go to the [Advanced Configuration page](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client/advanced-configuration-for-snyk-broker-docker-installation.md) and **make any configuration changes** needed, such as providing the CA (Certificate Authority) to the Broker Client configuration if the Bitbucket instance is using a private certificate, and setting up [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support).
+
+## Docker run command to set up a Broker Client for Bitbucket
+
 **Use the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files (with the Code Agent).
 
 ```bash
@@ -42,21 +46,19 @@ docker run --restart=always \
        snyk/broker:bitbucket-server
 ```
 
-**If necessary,** go to the [Advanced Configuration page](../set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client/advanced-configuration-for-snyk-broker-docker-installation.md) and **make any configuration changes** needed, such as providing the CA (Certificate Authority) to the Broker Client configuration if the Bitbucket instance is using a private certificate, and setting up [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support).
-
 As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the BitBucket Server/Data Center integration.
 
-### Custom allowlist through ACCEPT parameter
-
-In addition, a fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for Bitbucket is attached to use if you want to configure a custom allowlist. You cannot run the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument:
-
-{% file src="../../../.gitbook/assets/accept (2).json" %}
-
-### Start the Broker Client container
+## Start the Broker Client container and verify the connection with Bitbucket
 
 Paste the Broker Client configuration to start the broker Client container.
 
 Once the container is up, the Bitbucket Integrations page shows the connection to Bitbucket and you can `Add Projects`
+
+## Custom allowlist through ACCEPT parameter for Bitbucket
+
+In addition, a fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for Bitbucket is attached to use if you want to configure a custom allowlist. You cannot run the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument:
+
+{% file src="../../../.gitbook/assets/accept (2).json" %}
 
 ## Basic troubleshooting for Broker with BitBucket
 

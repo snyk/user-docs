@@ -51,13 +51,13 @@ docker run --restart=always \
 
 As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Azure Repos integration.
 
-## Start the Broker Client container and verify the connection
+## Start the Broker Client container and verify the connection with Azure Repos
 
 Paste the Broker Client configuration to start the Broker Client container.
 
 Once the container is up, the Azure Repos Integrations page shows the connection to Azure Repos and you can `Add Projects.`
 
-## Custom allowlist through ACCEPT parameter
+## Custom allowlist through ACCEPT parameter for Azure Repos
 
 A fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for Azure Repos is attached to use if you want to configure a custom allowlist. You cannot run the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument.
 
