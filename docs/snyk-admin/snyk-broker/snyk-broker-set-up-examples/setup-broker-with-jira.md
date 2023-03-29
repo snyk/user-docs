@@ -19,8 +19,7 @@ Follow these steps to configure Snyk Broker for connection to Jira.
    * `JIRA_HOSTNAME` - the hostname of your Jira deployment, such as `your.jira.domain.com`.
    * `BROKER_CLIENT_URL` - the full URL of the Broker client as it will be accessible by your Jira for webhooks, such as `http://my.broker.client:8000`
    * `PORT` - the local port at which the Broker client accepts connections. Default is 8000.
-4.  Copy the following command line arguments:\
-
+4.  Copy the following command line arguments:
 
     ```
     docker run --restart=always \
