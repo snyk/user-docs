@@ -46,7 +46,7 @@ Paste the Broker Client configuration to start the Broker Client container.
 
 Once the container is up, the GitHub Integrations page shows the connection to GitHub and you can `Add Projects`.
 
-## Custom allowlist through ACCEPT parameter
+## Custom allowlist through ACCEPT parameter for GitHub
 
 A fully configured `accept.json` for Snyk IaC, Code, Open Source and Container for GitHub is attached to use if you want to configure a custom allowlist. You cannot run the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as the `ACCEPT` argument:
 
