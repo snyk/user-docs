@@ -1,5 +1,7 @@
 # Set up Snyk Broker with Nexus Repository Manager
 
+Follow the instructions on this page to set up Nexus Repository Manager with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise Nexus Respository Manager deployment.
+
 {% hint style="info" %}
 **Feature availability**\
 Integration with Nexus Repository Manager is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
@@ -115,7 +117,7 @@ docker run --restart=always \
 
 As an **alternative to using the Docker run command**, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Nexus3 integration.
 
-## Check the connection with Snyk Broker
+## Check the connection with Nexus Repository Manager
 
 Check connection status by making a request to the Broker Client `/systemcheck` endpoint.
 
