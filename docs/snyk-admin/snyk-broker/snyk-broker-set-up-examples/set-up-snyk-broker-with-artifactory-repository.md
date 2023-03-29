@@ -1,5 +1,7 @@
 # Set up Snyk Broker with Artifactory Repository
 
+Follow the instructions on this page to set up Artifactory Repository with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise Artifactory Repository  deployment.
+
 {% hint style="info" %}
 **Feature availability**\
 Integration with Artifactory Repository is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
@@ -44,8 +46,14 @@ The following fields are optional:
 
 `ARTIFACTORY_URL` format with optional fields:\
 `[http://][username:password@]hostname[:port]/artifactory`\
-\`\`Example:\
+Example:\
 `http://alice:mypassword@acme.com:8080/artifactory`
+
+Optional. `RES_BODY_URL_SUB` - The URL of the Artifactory instance, including http:// and without basic auth credentials. **Required for npm/Yarn integrations only**.\
+Example:\
+`http://acme.com/artifactory`
+
+## Docker run commands to set up a Broker Client for Artifactory Repository
 
 **Use the following command** to set up a fully configured Broker Client to use with Artifactory Registry. You can run the Docker container by providing the relevant configuration:
 
@@ -56,12 +64,6 @@ docker run --restart=always \
            -e ARTIFACTORY_URL=<yourdomain>.artifactory.com/artifactory \
        snyk/broker:artifactory
 ```
-
-An additional environment variable is required for npm and Yarn integrations.
-
-`RES_BODY_URL_SUB` - The URL of the Artifactory instance, including http:// and without basic auth credentials. Required for npm/Yarn integrations only.\
-Example:\
-`http://acme.com/artifactory`
 
 For an **npm or Yarn integration**, use the following **command**.
 
@@ -74,6 +76,8 @@ docker run --restart=always \
   snyk/broker:artifactory
 ```
 
-You can check the status of the connection by refreshing the Artifactory Integration Settings page. When the connection is set up correctly, there is no connection error.
-
 As an **alternative to using the Docker run command**, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Artifactory integration.
+
+## Check the connection with Artifactory Repository
+
+You can check the status of the connection by refreshing the Artifactory Integration Settings page. When the connection is set up correctly, there is no connection error.
