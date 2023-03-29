@@ -24,3 +24,7 @@ Follow the instructions on this page to add images from Harbor to Snyk.
 Harbor imports are indicated with a unique icon. You can also filter to view only the Harbor projects:
 
 <figure><img src="../../../.gitbook/assets/mceclip1-9-.png" alt="Projects listing showing container images"><figcaption><p>Projects listing showing container images</p></figcaption></figure>
+
+{% hint style="info" %}
+For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images/)for more information.
+{% endhint %}

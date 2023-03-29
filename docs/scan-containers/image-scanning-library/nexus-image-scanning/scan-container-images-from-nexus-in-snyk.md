@@ -24,3 +24,7 @@ To add images from Nexus to Snyk:
 Nexus imports are indicated with a unique icon , and you can also filter to view only the Nexus projects:
 
 ![](../../../.gitbook/assets/mceclip0-18-.png)
+
+{% hint style="info" %}
+For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images/)for more information.
+{% endhint %}

@@ -35,3 +35,7 @@ Images are indicated with a unique icon ![](../../../.gitbook/assets/uuid-d083d5
 ![](../../../.gitbook/assets/uuid-5c95894c-97d8-a6a9-0969-7c5fee541211-en.png)
 
 Artifactory integration works similarly to our other integrations. To continue to monitor, fix and manage your projects, see the relevant pages in our docs.
+
+{% hint style="info" %}
+For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images/)for more information.
+{% endhint %}

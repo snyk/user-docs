@@ -24,3 +24,7 @@ To add images from GitLab container registry to Snyk:
 GitLab container registry imports are indicated with a unique icon, and you can also filter the integration in the **projects** view to see GitLab container registry projects only:
 
 ![](../../../.gitbook/assets/mceclip0-14-.png)
+
+{% hint style="info" %}
+For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images/)for more information.
+{% endhint %}

@@ -31,3 +31,7 @@ You can now also filter to view only those projects:
 Once repositories and images are imported, a confirmation appears in green at the top of the screen. Docker Hub files are indicated with a unique icon ![](../../../.gitbook/assets/docker-hub-logo.png) .
 
 Docker Hub integration works similar to our other integrations. To continue to monitor, fix and manage your projects, see the relevant pages in our docs.
+
+{% hint style="info" %}
+For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images/)for more information.
+{% endhint %}
