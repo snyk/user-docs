@@ -6,7 +6,7 @@ Set up Single Sign-On (SSO) to allow your developers and teams easy access to Sn
 
 The information you need to establish trust between Snyk and the identity provider depends on which type of SSO you are using.
 
-Ensure you have at least one Group and Organization to indicate where new users will be assigned. See [Managing groups & organizations](../managing-groups-and-organizations/).
+Ensure you have at least one Group and Organization to indicate where new users will be assigned. See [Managing groups & organizations](../manage-groups-and-organizations/).
 
 {% hint style="info" %}
 After you gather the needed information identified in the following sections, create a support ticket to request SSO setup.
@@ -176,8 +176,8 @@ These worksheets include the information to enter in your Identity provider and 
 
 {% file src="../../.gitbook/assets/SSO Azure Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
 
-{% file src="../../.gitbook/assets/SSO SAML Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
+{% file src="../../.gitbook/assets/SSO SAML Worksheet (1).pdf" %}
 
 {% file src="../../.gitbook/assets/SSO ADFS Worksheet (1).pdf" %}
 
-{% file src="../../.gitbook/assets/SSO OIDC Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
+{% file src="../../.gitbook/assets/SSO OIDC Worksheet.pdf" %}

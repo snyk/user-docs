@@ -1,4 +1,4 @@
-# Managing settings
+# Manage settings
 
 Go to <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> **Settings** to view and access Snyk settings for your Organization:
 
@@ -14,5 +14,5 @@ Settings include:
 * [Usage](https://docs.snyk.io/user-and-group-management/managing-settings/usage-page-details)
 * Your plan and billing
 * Plans and pricing
-* [Notifications](../notifications.md)
+* [Notifications](../manage-notifications.md)
 * [Snyk Preview](snyk-preview.md)

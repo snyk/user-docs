@@ -88,7 +88,7 @@ API v1 Projects: [Detect and import new projects in a repository into a target](
 
 Scenario: [find-all-projects-affected-by-a-vuln.md](https://github.com/snyk-playground/cx-tools/blob/main/scripts/find-all-projects-affected-by-a-vuln.md) (complete procedure)
 
-**Endpoints used:**API v1 Issues (Reporting API) [Get list of issues](https://snyk.docs.apiary.io/#reference/reporting-api/issues/get-list-of-issues)
+\*\*Endpoints used:\*\*API v1 Issues (Reporting API) [Get list of issues](https://snyk.docs.apiary.io/#reference/reporting-api/issues/get-list-of-issues)
 
 API v1 Issues (Reporting API) [List all organizations in a group](https://snyk.docs.apiary.io/#reference/groups/list-all-organizations-in-a-group/list-all-organizations-in-a-group)
 
@@ -143,7 +143,7 @@ API v1 [Invite users](https://snyk.docs.apiary.io/#reference/groups/list-all-rol
 
 ### Add users to organizations at scale ahead of the first login
 
-Scenario: [Provision users to Orgs via API](../snyk-admin/managing-users-and-permissions/provision-users-to-orgs-via-api.md)
+Scenario: [Provision users to Orgs via API](../snyk-admin/manage-users-and-permissions/provision-users-to-orgs-via-api.md)
 
 **Endpoint used:**\
 API v1 [Provision a user to the organization](https://snyk.docs.apiary.io/#reference/organizations/provision-user/provision-a-user-to-the-organization)
@@ -222,9 +222,9 @@ API v1 [Import targets](https://snyk.docs.apiary.io/#reference/import-projects)
 ## API v1 Users and Roles
 
 SEE:\
-[Provision users to Orgs via API](../snyk-admin/managing-users-and-permissions/provision-users-to-orgs-via-api.md)\
-[Remove members from Groups and Orgs via API](../snyk-admin/managing-users-and-permissions/update-member-roles-via-api-1.md)\
-[Update Member Roles via API](../snyk-admin/managing-users-and-permissions/update-member-roles-via-api.md) (also Snyk REST API Users endpoint `PATCH https://api.snyk.io/rest/groups/{group_id}/users/{id}?version=2023-01-30~beta)`
+[Provision users to Orgs via API](../snyk-admin/manage-users-and-permissions/provision-users-to-orgs-via-api.md)\
+[Remove members from Groups and Orgs via API](../snyk-admin/manage-users-and-permissions/update-member-roles-via-api-1.md)\
+[Update Member Roles via API](../snyk-admin/manage-users-and-permissions/update-member-roles-via-api.md) (also Snyk REST API Users endpoint `PATCH https://api.snyk.io/rest/groups/{group_id}/users/{id}?version=2023-01-30~beta)`
 
 ## API v1 Webhooks
 

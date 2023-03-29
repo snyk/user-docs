@@ -1,4 +1,4 @@
-# Managing authentication
+# Manage authentication
 
 ## Introduction
 
@@ -8,7 +8,7 @@ Snyk offers API tokens to enable integrations with third-party developer tools f
 For authentication purposes, the identity providers **do not require access to your repositories**, only your email address.
 {% endhint %}
 
-### Supported identity providers&#x20;
+### Supported identity providers
 
 With Snyk, you can use one of the following identity providers for authentication:
 
@@ -17,7 +17,7 @@ With Snyk, you can use one of the following identity providers for authenticatio
 * Google
 * Azure AD
 * Docker ID
-* Single Sign-On (SSO) - see [Setting up Single Sign-On (SSO) for authentication](../setting-up-sso-for-authentication/)
+* Single Sign-On (SSO) - see [Setting up Single Sign-On (SSO) for authentication](../set-up-single-sign-on-sso-for-authentication/)
 
 {% hint style="info" %}
 **Feature availability**\

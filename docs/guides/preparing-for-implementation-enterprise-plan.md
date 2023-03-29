@@ -4,7 +4,7 @@
 Please read the [Getting started with Snyk: Enterprise plan](getting-started-with-snyk-enterprise-plan.md) guide before you read this guide.
 {% endhint %}
 
-In this guide, we’ll look at a few planning steps and walk through some initial configuration options that you should complete before inviting more teams and scanning additional applications.&#x20;
+In this guide, we’ll look at a few planning steps and walk through some initial configuration options that you should complete before inviting more teams and scanning additional applications.
 
 {% hint style="info" %}
 If you have been using Snyk on the Free/Team Plan and are looking for guidance on upgrading to the Enterprise plan, read the [Upgrading to Enterprise Plan](upgrading-to-enterprise-plan.md) guide.
@@ -45,7 +45,7 @@ You will also want to roll Snyk out in phases depending on how far you and your 
 
 ### How to structure your Snyk account
 
-For Enterprise plans, the hierarchy for your Snyk account includes a Group at the highest level, Organizations within that Group, and Projects within those Organizations.&#x20;
+For Enterprise plans, the hierarchy for your Snyk account includes a Group at the highest level, Organizations within that Group, and Projects within those Organizations.
 
 <figure><img src="https://lh6.googleusercontent.com/yt7XP5scEUM8_rRMTZOYUvuUPOP23QPoFw551WLspjaU1tUtCvo8kOhPHJ-Z2tYIIoijMmcYraKqnLtDlQIzgeX5ZaeclHJWrGA9pcaprWK6hG898FV6BJ2Pzx4PUsRkewXv_F5M58ruiyVJu9pTnw" alt="Snyk account hierarchy"><figcaption><p>Snyk account hierarchy</p></figcaption></figure>
 
@@ -65,7 +65,7 @@ For more help addressing these questions, see the free, self-paced Training cour
 
 ### How your teams log in to Snyk
 
-There are a few different ways that users can authenticate into their Snyk accounts, such as with a GitHub or Google account.&#x20;
+There are a few different ways that users can authenticate into their Snyk accounts, such as with a GitHub or Google account.
 
 <figure><img src="https://lh5.googleusercontent.com/EYz6tsF_VfAbsLnz4dZyPa_BH40wJw2tX4sfKhyCD7EakbIahU3KtajVtkoxcpzLrM3m--x-EXFUz--qLlIDj5dFBvSmGM6qSmteM3K-7r6vWPBndJT-blCz_EQq6KU-zaMk_KHKZzBXjpDw5260wg" alt="Logging in to Snyk"><figcaption><p>Logging in to Snyk</p></figcaption></figure>
 
@@ -79,13 +79,13 @@ See [Setting up Single Sign-on (SSO) for authentication](https://docs.snyk.io/us
 
 ### Define policies
 
-The Policy manager allows you to define license and security policies at the Group level.&#x20;
+The Policy manager allows you to define license and security policies at the Group level.
 
-License policies define how your Organizations identify license compliance issues in your Open Source packages and change the severity of issues associated with use of those licenses.&#x20;
+License policies define how your Organizations identify license compliance issues in your Open Source packages and change the severity of issues associated with use of those licenses.
 
 See [Getting Started with Snyk License Compliance Management](https://docs.snyk.io/products/snyk-open-source/licenses/getting-started-snyk-licensing-compliance) for more details.
 
-Security policies define the way your Organizations handle specific issues or exploit maturity levels. A policy can programmatically increase an issue’s severity rating, decrease the severity rating, or ignore the issue.&#x20;
+Security policies define the way your Organizations handle specific issues or exploit maturity levels. A policy can programmatically increase an issue’s severity rating, decrease the severity rating, or ignore the issue.
 
 See [Getting started with security policies](https://docs.snyk.io/manage-issues/security-policies/getting-started-with-security-policies) for more details.
 
@@ -95,9 +95,9 @@ Snyk Projects are the components Snyk tests, along with the related configuratio
 
 See [Introduction to Snyk Projects](https://docs.snyk.io/manage-issues/introduction-to-snyk-projects) for more details.
 
-There are different ways to add Projects in Snyk, including via an integration, the Snyk CLI, or Snyk API.&#x20;
+There are different ways to add Projects in Snyk, including via an integration, the Snyk CLI, or Snyk API.
 
-Before you start importing Projects, make sure your Organizations in Snyk are configured appropriately. You’ll want to determine how you want to configure your first Organization and complete all of the settings first. Then you can use that Organization as a template for configuring other Organizations. Then you can begin scanning applications.&#x20;
+Before you start importing Projects, make sure your Organizations in Snyk are configured appropriately. You’ll want to determine how you want to configure your first Organization and complete all of the settings first. Then you can use that Organization as a template for configuring other Organizations. Then you can begin scanning applications.
 
 ### Configure your first Organization
 
@@ -111,7 +111,7 @@ Follow these steps to ensure you have completed the configuration.
 
 Snyk allows you to ignore issues in a few different ways. An ignored issue is not deleted. It is only removed from the filtered list of open issues.
 
-Before inviting additional team members to Snyk, determine who can ignore the vulnerabilities and license issues that Snyk identifies.&#x20;
+Before inviting additional team members to Snyk, determine who can ignore the vulnerabilities and license issues that Snyk identifies.
 
 Go to **Settings > General** to specify the ignore permissions.
 
@@ -123,7 +123,7 @@ Snyk recommends that only Snyk Admins are allowed to ignore issues, and that all
 
 Snyk includes a number of automated processes for Snyk Open Source when integrated with a source code manager (SCM) on a Git repository. These automated processes are a great way to mature your developer security program. However, the automated processes can introduce frustration for developers if introduced too early in your journey. Make sure your settings align with your phase of adoption.
 
-You may decide to disable Snyk test for pull requests and other automated processes until your teams are ready.&#x20;
+You may decide to disable Snyk test for pull requests and other automated processes until your teams are ready.
 
 Use the following steps to disable these automated processes for the Organization until you are ready to implement them. Note that all of these settings may not be displayed, depending on the specific Integration you are configuring.
 
@@ -134,7 +134,7 @@ Use the following steps to disable these automated processes for the Organizatio
    1. **Open Source Security & Licenses**
    2. **Code Analysis**
    3. **Automatic fix pull requests**, both **New vulnerabilities** and **Known vulnerabilities (backlog)**
-   4. &#x20;**Automatically Update Dockerfile base images**
+   4. **Automatically Update Dockerfile base images**
    5. **Automatic dependency upgrade pull requests**
    6. **Pull request assignees for private repos**
 
@@ -142,11 +142,11 @@ See the[ Source Code Manager Configurations](https://training.snyk.io/courses/so
 
 Also see [Snyk Integrations](https://docs.snyk.io/integrations) for more details.
 
-If you are using an on-premise source control manager, you must also configure and deploy the [Snyk Broker](../snyk-admin/snyk-broker/).&#x20;
+If you are using an on-premise source control manager, you must also configure and deploy the [Snyk Broker](../snyk-admin/snyk-broker/).
 
 #### Set up Jira integration
 
-Integrate your organization with Jira to assist with logging tickets and addressing backlogged security issues.&#x20;
+Integrate your organization with Jira to assist with logging tickets and addressing backlogged security issues.
 
 Also see [Jira integration](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira).
 
@@ -190,7 +190,7 @@ Also see [Snyk Infrastructure as Code ](https://docs.snyk.io/scan-cloud-deployme
 
 #### Configure notifications
 
-Snyk sends teams different types of alerts based on settings defined for the Group and for the Organization. It's highly recommended to define the default settings for the Group and the first Organization with most notifications disabled by default, before you create additional Organizations and start scanning applications.&#x20;
+Snyk sends teams different types of alerts based on settings defined for the Group and for the Organization. It's highly recommended to define the default settings for the Group and the first Organization with most notifications disabled by default, before you create additional Organizations and start scanning applications.
 
 If you want alerts to be sent by default for projects imported into the Organization, you can have Snyk send notifications for either vulnerabilities and/or license issues. You can also limit the notifications to only High and Critical severity issues.
 
@@ -214,15 +214,15 @@ Invite members video
 
 ### Create additional Organizations
 
-After you configure your first Organization, you can use it as a template for creating additional Organizations.&#x20;
+After you configure your first Organization, you can use it as a template for creating additional Organizations.
 
 To create a new Organization, open the Organization switcher in the navigation panel and select **Create new Organization**.
 
-Provide the name for the new Organization. See [Manage Snyk organizations](../snyk-admin/managing-groups-and-organizations/manage-snyk-organizations.md) for more details.
+Provide the name for the new Organization. See [Manage Snyk organizations](../snyk-admin/manage-groups-and-organizations/manage-snyk-organizations.md) for more details.
 
 #### Using an existing Organization as a template
 
-You can use an existing Organization as a template. Make sure you have completed the configurations for the Organization before copying it.&#x20;
+You can use an existing Organization as a template. Make sure you have completed the configurations for the Organization before copying it.
 
 Select the Organization from the list. The following settings will be copied from the selected Organization:
 

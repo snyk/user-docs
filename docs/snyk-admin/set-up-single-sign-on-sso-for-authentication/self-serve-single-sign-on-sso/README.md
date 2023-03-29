@@ -2,10 +2,10 @@
 
 ## Introduction
 
-Group Admins of an Enterprise plan who use SAML for SSO can configure Snyk Single Sign-on by themselves. Ensure you have at least one Group and Organization to indicate where new users will be assigned. See [Managing groups & organizations](../../managing-groups-and-organizations/).
+Group Admins of an Enterprise plan who use SAML for SSO can configure Snyk Single Sign-on by themselves. Ensure you have at least one Group and Organization to indicate where new users will be assigned. See [Managing groups & organizations](../../manage-groups-and-organizations/).
 
 {% hint style="warning" %}
-To enable the self serve SSO option, contact your Snyk account team or [Snyk support](https://support.snyk.io/hc/en-us). \
+To enable the self serve SSO option, contact your Snyk account team or [Snyk support](https://support.snyk.io/hc/en-us).\
 \
 Note that this option does not accommodate [custom role mapping](../custom-mapping-option/). To set up custom role mapping with SSO for your Snyk Group, contact your Snyk account team.
 {% endhint %}

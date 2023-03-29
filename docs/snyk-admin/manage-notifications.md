@@ -1,4 +1,4 @@
-# Managing notifications
+# Manage notifications
 
 ### Introduction
 
@@ -26,7 +26,7 @@ Snyk offers notifications for:
 
 Snyk includes a range of controls to manage your own notifications.
 
-Administrators can also manage the notification defaults for others in the [Group](notifications.md#define-group-notification-defaults) or [Organization](notifications.md#define-organization-notification-defaults).
+Administrators can also manage the notification defaults for others in the [Group](manage-notifications.md#define-group-notification-defaults) or [Organization](manage-notifications.md#define-organization-notification-defaults).
 
 You can also send notifications for an organization to a designated [Slack channel](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration).
 
@@ -34,7 +34,7 @@ You can also send notifications for an organization to a designated [Slack chann
 
 ### Define Group notification defaults
 
-Define the notification settings at the [Group](managing-groups-and-organizations/whats-a-snyk-group.md) level to define the template for how Snyk sends issue alert emails, weekly report emails, usage alert emails, and report status emails for Organizations created in that Group. You can also access the default settings for existing individual Organizations at the Group level.
+Define the notification settings at the [Group](manage-groups-and-organizations/whats-a-snyk-group.md) level to define the template for how Snyk sends issue alert emails, weekly report emails, usage alert emails, and report status emails for Organizations created in that Group. You can also access the default settings for existing individual Organizations at the Group level.
 
 {% hint style="info" %}
 When you change the Group default settings, it does not change the settings for existing Organizations or Projects. Individual users can override the default notification settings.
