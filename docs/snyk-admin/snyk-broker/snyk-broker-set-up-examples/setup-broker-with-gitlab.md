@@ -26,7 +26,7 @@ To use the Broker client with GitLab.com or an on-prem GitLab deployment, **run*
 
 ## Docker run command to set up a Broker Client for GitLab
 
-**Use the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files (with the Code Agent).
+**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files (with the Code Agent).
 
 ```bash
 docker run --restart=always \
@@ -43,7 +43,7 @@ docker run --restart=always \
 
 As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the GitLab integration.
 
-## Start the Broker Client container
+## Start the Broker Client container and verify the connection with GitLab
 
 Paste the Broker Client configuration to start the Broker Client container.
 

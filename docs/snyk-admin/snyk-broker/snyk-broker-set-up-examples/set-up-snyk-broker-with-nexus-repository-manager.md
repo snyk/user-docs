@@ -92,7 +92,7 @@ Examples:\
 
 ### Docker run commands to set up Broker Client for Nexus 3 and Nexus 2 integrations
 
-**Use the following command** to set up a fully configured Broker Client to use with Nexus 3. You can run the Docker container by providing the relevant configuration:
+**Copy the following command** to set up a fully configured Broker Client to use with Nexus 3. You can run the Docker container by providing the relevant configuration:
 
 ```console
 docker run --restart=always \
@@ -104,7 +104,7 @@ docker run --restart=always \
        snyk/broker:nexus
 ```
 
-**Use the following command** to set up a fully configured Broker Client to use with Nexus 2. You can run the Docker container by providing the relevant configuration:
+**Copy the following command** to set up a fully configured Broker Client to use with Nexus 2. You can run the Docker container by providing the relevant configuration:
 
 ```
 docker run --restart=always \
@@ -117,7 +117,9 @@ docker run --restart=always \
 
 As an **alternative to using the Docker run command**, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Nexus3 integration.
 
-## Check the connection with Nexus Repository Manager
+## Start the Broker Client container and verify the connection with Nexus Repository Manager
+
+Paste the Broker Client configuration to start the Broker Client container.
 
 Check connection status by making a request to the Broker Client `/systemcheck` endpoint.
 

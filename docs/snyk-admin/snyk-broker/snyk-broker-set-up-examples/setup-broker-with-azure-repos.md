@@ -33,7 +33,7 @@ To use the Broker Client with [Azure](https://azure.microsoft.com/en-us/services
 
 ## Docker run command to set up a Broker Client for Azure Repos
 
-**Use the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files (with the Code Agent).
+**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files (with the Code Agent).
 
 ```bash
 docker run --restart=always \

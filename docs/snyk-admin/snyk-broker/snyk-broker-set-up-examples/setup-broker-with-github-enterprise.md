@@ -27,7 +27,7 @@ To use the Snyk Broker client with a GitHub Enterprise deployment, **run** `dock
 
 ## Docker run command to set up a Broker Client for GitHub Enterprise
 
-**Use the following command** to set up up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files (with the Code Agent).
+**Copy the following command** to set up up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files (with the Code Agent).
 
 ```bash
 docker run --restart=always \
@@ -46,9 +46,9 @@ docker run --restart=always \
 
 As an alternative to using the Docker run command, you can use a derived Docker image to set up the Broker Client integration. See [Derived Docker images](derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the GitHub Enterprise integration.
 
-## Start the Broker Client container and test the connection with GitHub Enterprise
+## Start the Broker Client container and verify the connection with GitHub Enterprise
 
-Paste the Broker Client configuration to start the broker client container.
+Paste the Broker Client configuration to start the Broker Client container.
 
 Once the container is up, the GitHub Enterprise Integrations page shows the connection to GitHub Enterprise and you can `Add Projects.`
 

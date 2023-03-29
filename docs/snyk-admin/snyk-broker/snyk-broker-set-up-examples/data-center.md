@@ -29,7 +29,7 @@ To use the Snyk Broker Client with BitBucket, **run** `docker pull snyk/broker:b
 
 ## Docker run command to set up a Broker Client for Bitbucket
 
-**Use the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files (with the Code Agent).
+**Copy the following command** to set up a fully configured Broker Client to analyze Open Source, IaC, Container, and Code files (with the Code Agent).
 
 ```bash
 docker run --restart=always \
@@ -50,7 +50,7 @@ As an alternative to using the Docker run command, you can use a derived Docker 
 
 ## Start the Broker Client container and verify the connection with Bitbucket
 
-Paste the Broker Client configuration to start the broker Client container.
+Paste the Broker Client configuration to start the Broker Client container.
 
 Once the container is up, the Bitbucket Integrations page shows the connection to Bitbucket and you can `Add Projects`
 
