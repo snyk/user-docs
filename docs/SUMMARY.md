@@ -563,6 +563,7 @@
       * [Install, configure, and upgrade the Snyk Broker Client](snyk-admin/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client/README.md)
         * [Install and configure Broker using Docker](snyk-admin/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client/install-and-configure-broker-using-docker.md)
         * [Advanced configuration for Snyk Broker Docker installation](snyk-admin/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client/advanced-configuration-for-snyk-broker-docker-installation.md)
+        * [Adding custom accept.json for Docker installation](snyk-admin/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client/adding-custom-accept.json-for-docker-installation.md)
         * [Install and configure Broker using Helm](snyk-admin/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client/install-and-configure-broker-using-helm.md)
         * [Advanced setup for Helm Chart installation](snyk-admin/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client/advanced-setup-for-helm-chart-installation.md)
         * [Ingress options with Snyk Broker Helm installation](snyk-admin/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client/ingress-options-with-snyk-broker-helm-installation.md)
