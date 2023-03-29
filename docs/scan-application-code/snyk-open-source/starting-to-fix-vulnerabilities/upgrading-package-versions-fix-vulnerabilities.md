@@ -5,5 +5,3 @@ Snyk will always recommend the smallest upgrade of a dependency to resolve the v
 Some fixes may require a major upgrade of a dependency. In this situation, we indicate on the Fix PR screen if we suspect a major change causing breakage.
 
 See [Upgrading dependencies with automatic PRs](../open-source-basics/upgrading-dependencies-with-automatic-prs.md) for more details.
-
-\\

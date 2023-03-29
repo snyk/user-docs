@@ -10,38 +10,38 @@ You can:
 
 ## View scan results on the Snyk Web UI
 
-From our app, for each tab (upgrade and patch) in the fix advice area of your project details, results are displayed as follows:
+From our app, for each tab (upgrade and patch) in the fix advice area of your Project details, results are displayed as follows:
 
-* the total number of packages that can be fixed is displayed on the tab title
-* in groups of vulnerabilities by package, entitled by the upgrade or fix that’s recommended
-* packages can be expanded in order to view the full list of vulnerabilities affecting the package
+* The total number of packages that can be fixed is displayed on the tab title.
+* In groups of vulnerabilities by package, entitled by the upgrade or fix that’s recommended.
+* Packages can be expanded in order to view the full list of vulnerabilities affecting the package.
 * All the vulnerabilities found in your dependencies are displayed further below, together with contextual information that can help you prioritize the issues and start fixing them if required.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-03-15 at 12.14.06.png" alt="Scan results on Web UI"><figcaption><p>Scan results on Web UI</p></figcaption></figure>
 
 ### View Fix Advice
 
-The Fix Advice area appears in the project details page:
+The Fix Advice area appears on the Project details page:
 
 Snyk offers you one of these solutions:
 
-* an **upgrade** - an upgrade to the original package
+* An **upgrade** - an upgrade to the original package
 * **Pinning** a package - installing a package as a top-level dependency; that is, a specific version of an indirect dependency. This avoids a direct dependency pulling in a vulnerable version
-* a Snyk precision **patch** - if an upgrade to fix any of the vulnerabilities in the package is not currently available, Snyk offers patches to fix the issues
+* A Snyk precision **patch** - if an upgrade to fix any of the vulnerabilities in the package is not currently available, Snyk offers patches to fix the issues
 
 The summary area groups advice per package, and is displayed based on the best available fix. Advice in these summary lists includes these details per package:
 
 * All vulnerability names and severity details affecting that package
 * The recommended fix - a link to the recommended fix for this package and its listed vulnerabilities: either the specific version to which to upgrade or the name of the patch
 
-![Upgrade issues tabs](<../../../.gitbook/assets/Screenshot 2021-10-12 at 14.08.13.png>)
+<figure><img src="../../../.gitbook/assets/Screenshot 2021-10-12 at 14.08.13.png" alt="Upgrade issues tabs"><figcaption><p>Upgrade issues tabs</p></figcaption></figure>
 
-![Patchable issues tabs](<../../../.gitbook/assets/Screenshot 2021-10-12 at 14.10.00 (1).png>)
+<figure><img src="../../../.gitbook/assets/Screenshot 2021-10-12 at 14.10.00 (1).png" alt="Patchable issues tabs"><figcaption><p>Patchable issues tabs</p></figcaption></figure>
 
 You can also find additional advice and details further down on the Project details page:
 
-* from the **Issues**, tab, a full description per vulnerability
-* from the **Dependencies** tab, the entire tree of your project dependencies, enabling you to clearly visualize affected paths
+* From the **Issues**, tab, a full description per vulnerability
+* From the **Dependencies** tab, the entire tree of your project dependencies, enabling you to clearly visualize affected paths
 
 ## Fixing vulnerabilities based on scan results using Snyk CLI
 

@@ -4,10 +4,10 @@
 
 Sometimes there is no direct upgrade that can address the vulnerability, or an upgrade is not possible due to functional reasons (for example, it’s a major breaking change).
 
-For such cases Snyk can help you [protect your code with patches](../../../snyk-cli/test-for-vulnerabilities/protect-your-code-with-patches.md). This option will make the minimal modifications to your locally installed`node_modules` files to fix the vulnerability. It will also update the policy to patch this issue when you use [@snyk/protect](https://github.com/snyk/cli/tree/master/packages/snyk-protect).
+For such cases, Snyk can help you [protect your code with patches](../../../snyk-cli/test-for-vulnerabilities/protect-your-code-with-patches.md). This option will make minimal modifications to your locally installed`node_modules` files to fix the vulnerability. It will also update the policy to patch this issue when you use [@snyk/protect](https://github.com/snyk/cli/tree/master/packages/snyk-protect).
 
 {% hint style="warning" %}
-Patching is currently supported for **Node.js** projects only.
+Patching is currently supported for **Node.js** Projects only.
 {% endhint %}
 
 Patches are applicable in the following scenarios:
@@ -34,21 +34,21 @@ The Snyk Security team creates the patch usually by backporting a fix that has b
 
 Once the patch is created by a Snyk Security Engineer it is reviewed by 2 other members of the team. The patch is also tested in the following ways
 
-1. The package is built and tested using the packages automated tests
+1. The package is built and tested using the package's automated tests
 2. Packages or applications that use that patched package are tested using their automated tests.
 3. Custom tests are created and run by the Snyk Security team
 
 All patches are available for download and review by the community and we welcome any feedback.
 
-For unmaintained packages, we will create a patch and open a pull request to the project for it to be merged.
+For unmaintained packages, we will create a patch and open a pull request to the Project for it to be merged.
 
 ## How do patches work when using the Snyk CLI?
 
 For information about patching using the CLI see [Fix vulnerabilities using the Snyk CLI](../../../snyk-cli/test-for-vulnerabilities/fix-vulnerabilities-using-the-snyk-cli.md).
 
-## How do patches work when using the source code integrations?
+## How do patches work when using source code integrations?
 
-When you choose to use a patch to fix a vulnerability, `snyk` is added as a dependency and a `.snyk` file is created which contains the list of patches to apply.
+When you choose to use a patch to fix a vulnerability, `snyk` is added as a dependency and the `.snyk` file is created which contains the list of patches to apply.
 
 The `.snyk` file contains the details of the patch per individual path to the dependency as it may appear in multiple locations in the `node_modules`, for example:
 
