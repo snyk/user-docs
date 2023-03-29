@@ -16,7 +16,7 @@ This integration allows you to:
 
 * Manage Code Projects using your existing native import flow and tools.
 * View and prioritize security issues found in the source code.
-* Run a retest of a Project, and see the history snapshots of a Project.
+* Run a retest of a Project, and see the historical snapshots of a Project.
 
 ### Supported SCMs
 
@@ -35,7 +35,7 @@ Snyk Code supports a wide range of languages - see [Snyk Code - Supported langua
 
 ### PR checks
 
-Snyk Code analysis can be applied to every Pull Request you are creating in your SCM, before merging it into the target branch. For more information, see [Using Automatic PR Checks for securing your source code](broken-reference).
+Snyk Code analysis can be applied to every Pull Request you are creating in your SCM, before merging it into the target branch. For more information, see [PR Checks](../../../run-pr-checks/).&#x20;
 
 ## CLI and CI/CD integrations
 
@@ -53,4 +53,4 @@ You can query Code Projects and issues from our [v3 APIs](https://apidocs.snyk.i
 
 ### Jira integration
 
-You can connect Snyk Code with your [Jira instance](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira), to allow developers to easily export issue data to Jira issues.
+You can connect Snyk Code with your [Jira instance](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira), allowing developers to easily export data to Jira issues.
