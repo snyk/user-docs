@@ -1,6 +1,6 @@
 # View policies
 
-Select the **Policies** menu option to see the policies in your Group, arranged by category ([Security policies](security-policies/) and [License policies](license-policies/)).
+Select the **Policies** menu option to see the policies in your Group, arranged by category ([Security policies](../security-policies/) and [License policies](../../scan-application-code/snyk-open-source/license-policies/)).
 
 <figure><img src="../../.gitbook/assets/Policies-menu.png" alt="View policies"><figcaption><p>View policies</p></figcaption></figure>
 

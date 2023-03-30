@@ -11,12 +11,12 @@ For full information about how to implement Snyk on the Enterprise plan, read:
 
 Snyk Enterprise features include:
 
-* [Snyk Group with multiple orgs](../snyk-admin/manage-groups-and-organizations/whats-a-snyk-group.md)
+* [Snyk Group with multiple orgs](../snyk-admin/managing-groups-and-organizations/whats-a-snyk-group.md)
 * [Single Sign-On](../snyk-admin/set-up-single-sign-on-sso-for-authentication/)
 * [Service accounts](../snyk-admin/service-accounts.md)
 * [Rich API](../snyk-api-info/)
 * [Reports](../manage-issues/snyk-reports/)
-* [Security policy management](../manage-issues/policies/security-policies/)
+* [Security policy management](../manage-issues/security-policies/)
 * [Snyk Broker](../snyk-admin/snyk-broker/)
 * [GitHub Enterprise integration](../integrations/git-repository-scm-integrations/github-enterprise-integration.md)
 
@@ -36,17 +36,17 @@ As you work through the rest of this guide, use the following checklist to ensur
 
 ### Set up your Snyk environment
 
-A notable difference between the Free/Team plan and the Enterprise plan is having a [Snyk Group](../snyk-admin/manage-groups-and-organizations/whats-a-snyk-group.md) and the ability to create multiple [Snyk Organizations](../snyk-admin/manage-groups-and-organizations/whats-a-snyk-organization.md).
+A notable difference between the Free/Team plan and the Enterprise plan is having a [Snyk Group](../snyk-admin/managing-groups-and-organizations/whats-a-snyk-group.md) and the ability to create multiple [Snyk Organizations](../snyk-admin/managing-groups-and-organizations/whats-a-snyk-organization.md).
 
 #### Set your Snyk Group settings
 
 {% hint style="warning" %}
-Only [Group Administrators](../snyk-admin/manage-users-and-permissions/managing-permissions.md) can edit Snyk Group settings
+Only [Group Administrators](../snyk-admin/managing-users-and-permissions/managing-permissions.md) can edit Snyk Group settings
 {% endhint %}
 
 Confirm your Snyk Group name. It should reflect your company name. If it needs to be updated go to **Group Settings > General**.
 
-Set [session expiration](../snyk-admin/manage-users-and-permissions/session-length.md) within the Group. This will be the default for all Snyk Organizations within the Group.
+Set [session expiration](../snyk-admin/managing-users-and-permissions/session-length.md) within the Group. This will be the default for all Snyk Organizations within the Group.
 
 #### Structure your account with multiple Snyk organizations
 
@@ -63,7 +63,7 @@ See the [Snyk account structure](https://training.snyk.io/courses/snyk-account-s
 
 ### Create additional Organizations
 
-To create a new Organization, open the Organization switcher in the navigation panel and select **Create new Organization**. See [Manage Snyk organizations](../snyk-admin/manage-groups-and-organizations/manage-snyk-organizations.md) for more details.
+To create a new Organization, open the Organization switcher in the navigation panel and select **Create new Organization**. See [Manage Snyk organizations](../snyk-admin/managing-groups-and-organizations/manage-snyk-organizations.md) for more details.
 
 #### Using an existing Organization as a template
 
@@ -151,7 +151,7 @@ See [Getting started with Snyk Reports](../manage-issues/snyk-reports/reporting-
 
 Security policies allow you to customize the prioritization of specific issues from the default and create rules. This is particularly helpful for changing the severities of issues that are not relevant to a specific project or environment.
 
-See [Getting started with security policies](../manage-issues/policies/security-policies/getting-started-with-security-policies.md).
+See [Getting started with security policies](../manage-issues/security-policies/getting-started-with-security-policies.md).
 
 ### Remote code repositories
 
