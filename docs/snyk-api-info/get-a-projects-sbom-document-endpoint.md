@@ -1,5 +1,10 @@
 # REST API endpoint: Get a project’s SBOM document
 
+{% hint style="info" %}
+**Feature availability**\
+****This feature is available to customers on Snyk Enterprise plans.
+{% endhint %}
+
 Snyk offers an endpoint to generate SBOM documents for projects that are continuously being monitored for issues.
 
 The SBOM document represents the latest state of a project’s dependencies and their relationships.

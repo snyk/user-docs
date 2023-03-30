@@ -2,6 +2,8 @@
 
 ## Usage
 
+**Feature availability:** This feature is available to customers on Snyk Enterprise plans.
+
 **Note:** In order to try out the SBOM generation feature, you must use a minimum of CLI version 1.1071.0.
 
 `snyk sbom --experimental [--file=<file>] --format=<cyclonedx1.4+json|spdx2.3+json|cyclonedx1.4+xml> [--unmanaged] [--targetDirectory=<targetDirectory>]`
