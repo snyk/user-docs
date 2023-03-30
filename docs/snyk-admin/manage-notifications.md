@@ -1,7 +1,5 @@
 # Manage notifications
 
-### Introduction
-
 Snyk automatically notifies you when new issues are found in the projects you are monitoring. These notifications can help make you aware of new risks in these projects.
 
 Notifications can be sent:
@@ -11,8 +9,6 @@ Notifications can be sent:
 * By Slack, if you have set up [Slack integration](https://docs.snyk.io/integrations/untitled-3/slack-integration).
 
 Snyk also sends you a weekly update summarizing your security status across all of your organizations.
-
-#### Notification types
 
 Snyk offers notifications for:
 
@@ -81,15 +77,6 @@ To set the defaults for usage alerts:
 * Check the Enabled by default box when members of new organizations in this group should receive usage alert emails.
 * To change the defaults for individual organizations, clear or check the box next to the organization name. The defaults will apply for new organizations created in this group.
 
-#### Report status emails
-
-Report status emails are notifications Snyk sends to let you know when serverless project tests complete.
-
-To set the defaults for usage alerts:
-
-* Check the Enabled by default box when members of new organizations in this group should receive report status emails.
-* To change the defaults for individual organizations, clear or check the box next to the organization name. The defaults will apply for new organizations created in this group.
-
 ### Define organization notification defaults
 
 Define the notification settings for the organization to determine how Snyk sends emails to all individuals in the organization who have not updated their own personal notification preferences.
@@ -133,14 +120,6 @@ To set the defaults for usage alerts:
 
 * Check the **Approaching test limit** box when members of this organization should receive usage alert emails by default.
 
-#### Report status emails
-
-Report status emails are notifications Snyk sends to let you know when serverless project tests complete.
-
-To set the defaults for report status emails:
-
-* Check the Report ready to view box when members of this organization should receive report status emails by default.
-
 ### Change personal notification preferences
 
 Organizations to which you belong have default settings for how Snyk sends emails.
@@ -178,9 +157,3 @@ To include organizations in your weekly report emails, check the box next to tha
 Usage alert emails are notifications Snyk sends to warn when you are approaching usage limits.
 
 To receive usage alerts for an organization, check the box next to that organization.
-
-#### Report status emails
-
-Report status emails are notifications Snyk sends to let you know when serverless project tests are complete.
-
-To receive report status emails for an organization, check the box next to that organization.
