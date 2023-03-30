@@ -5,22 +5,22 @@
 Scanning of self-managed source code, like GitHub Enterprise, is available with the Enterprise plan. See[ the Snyk plans and pricing page](https://snyk.io/plans) for more information.
 {% endhint %}
 
-Snyk's GitHub Enterprise integration lets you:
+Snyk GitHub Enterprise integration lets you:
 
 * Continuously perform security scanning across all the integrated repositories
 * Detect vulnerabilities in your open source components
 * Provide automated fixes and upgrades
 
 {% hint style="info" %}
-Snyk recommends GitHub Enterprise integration for most customers with access to the feature, because this integration allows use of a single Personal Access Token (PAT) across an Organization, rather than a PAT tied to an individual user account. If you have access and have used GItHub integration, you can migrate to GitHub Enterprise integration. See [Using GItHub or GItHub Enterprise integration](using-github-or-github-enterprise-integration.md) for details.
+Snyk recommends GitHub Enterprise integration for most customers with access to the feature, because this integration allows use of a single Personal Access Token (PAT) across an Organization, rather than a PAT tied to an individual user account. If you have access and have used GItHub integration, you can migrate to GitHub Enterprise integration. See  [Using GItHub or GItHub Enterprise integration](using-github-or-github-enterprise-integration.md) for details.
 {% endhint %}
 
 ## Setting up a GitHub Enterprise integration
 
-The process to connect Snyk with your GitHub Enterprise repositories includes the following steps:
+The process to connect Snyk with your GitHub Enterprise repositories includes the following steps. Note that using a service account is recommended but not required.
 
 1. Create a dedicated service account in GitHub Enterprise, with _**write**_ level or higher permissions for the repos you want to monitor with Snyk permissions.\
-   See [Required permissions scope for the GitHub integration](github-enterprise-integration.md#required-permissions-scope-for-the-github-integration) for details.
+   See [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts) and [Required permissions scope for the GitHub integration](github-enterprise-integration.md#required-permissions-scope-for-the-github-integration) for details.
 2. Generate a personal access token for that account, with **repo (all)**, **admin:read:org**, and **admin:repo\_hooks (read & write)** permissions scope.\
    See [GitHub Enterprise documentation](https://docs.github.com/en/enterprise-server@2.22/github/authenticating-to-github/creating-a-personal-access-token) for details.
 3. **Authorize** your personal access token and Enable SSO:
