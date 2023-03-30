@@ -25,6 +25,10 @@ Use the `-d` option to output the debug logs.
 
 ## Options
 
+### `--experimental`
+
+Specify while the snyk sbom command is in beta.
+
 ### `--format=<cyclonedx1.4+json|cyclonedx1.4+xml|spdx2.3+json>`
 
 Specify the output format for the SBOM to be produced.
