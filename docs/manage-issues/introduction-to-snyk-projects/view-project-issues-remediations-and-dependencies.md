@@ -41,7 +41,7 @@ For each issue, details about the vulnerability are displayed including its [pri
 
 Click **More about this issue** to view detailed information about the vulnerability from [Snyk's vulnerability database](https://snyk.io/product/vulnerability-database/), which provides a deeper insight into the issue, including its CVSS score:
 
-<figure><img src="../../.gitbook/assets/image15.png" alt="More information from Snyk Vulnerability database"><figcaption><p>More information from Snyk Vulnerability database</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image15 (1).png" alt="More information from Snyk Vulnerability database"><figcaption><p>More information from Snyk Vulnerability database</p></figcaption></figure>
 
 ### View fixes
 
@@ -57,4 +57,4 @@ Snyk uses the package manager for your application to build the dependency tree 
 
 The example that follows shows a vulnerability based on the transitive dependency **qs@2.2.4**, brought in from the direct dependency **body-parser@ 1.9.0**.
 
-<figure><img src="../../.gitbook/assets/image23 (1).png" alt="Issues detail page dependencies tab"><figcaption><p>Issues detail page dependencies tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image23.png" alt="Issues detail page dependencies tab"><figcaption><p>Issues detail page dependencies tab</p></figcaption></figure>
