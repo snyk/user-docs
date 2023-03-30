@@ -30,20 +30,20 @@ The following are the **prerequisites** for configuring App roles:
     Enable the app role.\
     When you are finished, select **Apply**.
 
-    <figure><img src="../../../.gitbook/assets/image (2) (4).png" alt="Create app role with details"><figcaption><p>Create app role with details</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (2).png" alt="Create app role with details"><figcaption><p>Create app role with details</p></figcaption></figure>
 4.  In Azure AD, select your Enterprise Application.
 
-    <figure><img src="../../../.gitbook/assets/image (3) (3) (2).png" alt="Select Enterprise Application in Azure AD"><figcaption><p>Select Enterprise Application in Azure AD</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Select Enterprise Application in Azure AD"><figcaption><p>Select Enterprise Application in Azure AD</p></figcaption></figure>
 5.  Select **Users and groups**; then **Add user/group**.\
     Search and select the users and groups to add.
 
-    <figure><img src="../../../.gitbook/assets/image (4) (6).png" alt="Select Users and groups, Add user/group"><figcaption><p>Select Users and groups, Add user/group</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4) (3).png" alt="Select Users and groups, Add user/group"><figcaption><p>Select Users and groups, Add user/group</p></figcaption></figure>
 6.  Select **Users and groups**; from the dropdown, select a role; and select **Assign**.
 
-    <figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (5) (1) (2).png" alt="Add assignment"><figcaption><p>Add assignment</p></figcaption></figure>
 7.  Repeat for all required groups and roles that should be assigned. Then verify that the list looks similar to this.
 
-    <figure><img src="../../../.gitbook/assets/image (6) (1).png" alt="Users and group list"><figcaption><p>Users and group list</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Users and group list"><figcaption><p>Users and group list</p></figcaption></figure>
 8. If you have configured a SAML connection, add a custom claim to pass the roles array in the SAML payload to Snyk. Select **Single sign-on** in the left hand menu.
 9.  Select **Edit** next to **Attributes and Claims.**
 

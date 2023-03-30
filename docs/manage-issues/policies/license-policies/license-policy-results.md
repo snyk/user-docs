@@ -1,4 +1,4 @@
-# License policies: What collaborators see
+# License policy results
 
 A newly assigned policy, or modifications to a policy, will apply, once the next scheduled test runs. This is what happens for all of the licenses in the Organization:
 

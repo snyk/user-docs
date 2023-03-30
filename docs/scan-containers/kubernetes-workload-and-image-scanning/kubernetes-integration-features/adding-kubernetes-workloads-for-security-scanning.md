@@ -46,4 +46,4 @@ Each item is named according to its Kubernetes metadata as follows: **\<namespac
 
 You can filter for Kubernetes projects only:
 
-![](<../../../.gitbook/assets/image (5) (1).png>)
+![](<../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png>)

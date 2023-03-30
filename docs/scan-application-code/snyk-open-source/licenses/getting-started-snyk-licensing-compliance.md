@@ -46,13 +46,13 @@ To define your group license policy, complete the following steps:
 
 The additional instructions show in the Snyk Web UI and the CLI when the selected licenses are identified.
 
-See [Licenses overview](./) and [Setting a license policy](../../../manage-issues/policies/license-policies/setting-a-license-policy.md).
+See [Licenses overview](./) and [Setting a license policy](../../../manage-issues/policies/license-policies/create-a-license-policy-and-rules.md).
 
 ## Stage 2: View issues
 
 Snyk’s [Git-based integrations ](../../../integrations/git-repository-scm-integrations/)support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab:
 
-<figure><img src="../../../.gitbook/assets/image3 (1).png" alt="Issues overview within a dependency project."><figcaption><p>Issues overview within a dependency project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image3 (1) (1).png" alt="Issues overview within a dependency project."><figcaption><p>Issues overview within a dependency project</p></figcaption></figure>
 
 This example shows a high-severity issue for a GPL-2.0 license, with accompanying instructions as defined in the policies for that license.
 

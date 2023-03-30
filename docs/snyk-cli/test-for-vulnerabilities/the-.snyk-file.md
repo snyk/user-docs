@@ -1,6 +1,6 @@
 # The .snyk file
 
-The `.snyk` file is a policy file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins.
+The `.snyk` file is a [policy](../../manage-issues/policies/) file that Snyk uses to define certain analysis behaviors and to specify patches for the CLI and CI/CD plugins.
 
 The file can be generated in a number of ways and can be used in a number of different scenarios. The `.snyk` file is generally located at the root of your project.
 
@@ -83,7 +83,7 @@ Note that if you do not use the `.snyk` policy file, you avoid needing to specif
 The ignore rules can be overridden if admin users only is enabled for the relevant organization (click on **Settings** > **General** > **Ignores**).
 
 {% hint style="info" %}
-For projects imported via SCM integration as opposed to via the s`nyk monitor` command, the `--policy-path` option is not available. The `.snyk` file will only apply to projects found in the same path as the `.snyk` file.&#x20;
+For projects imported via SCM integration as opposed to via the s`nyk monitor` command, the `--policy-path` option is not available. The `.snyk` file will only apply to projects found in the same path as the `.snyk` file.
 {% endhint %}
 
 ## Examples

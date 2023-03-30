@@ -2,28 +2,34 @@
 
 ## **Create a policy**
 
-1. Click **Add new policy** from the Policy Manager screen, and a modal will appear where you can create your policy
+1. Click **Add new policy** from the Policy Manager screen, and a enter details when prompted.
 2. Set a policy name and a description to help you quickly identify a policy\
-   **Note**: Policies within the same category cannot have the same name. Policies **cannot** be saved without a policy name applied
-3. Select whether you’d like to apply your policy to organizations or project attributes
-4. Select the desired [Organizations](assign-a-policy-to-organizations.md) or [attributes](assign-a-policy-to-projects.md)
-5. Add rules to the policy. [Click here for information on adding license rules](license-policies/setting-a-license-policy.md) or [click here for information on adding security rules](security-policies/how-to-create-a-security-policy-and-set-rules.md)
-6. Click **Submit** in the top right-hand corner.drop-down
+   **Note**: Policies in the same category cannot have the same name. Policies **cannot** be saved without a policy name applied.
+3. Select whether you’d like to apply your policy to organizations or to Project attributes.
+4. Select the desired [Organizations](apply-a-policy-to-organizations.md) or [attributes](apply-a-policy-to-projects.md)
+5. Add rules to the policy. [Click here for information on adding license rules](license-policies/create-a-license-policy-and-rules.md) or [click here for information on adding security rules](../security-policies/how-to-create-a-security-policy-and-set-rules.md)
+6. Click **Submit** to create and save that policy.
 
 <figure><img src="../../.gitbook/assets/screenshot_2020-05-26_at_9.47.26_am.png" alt="Submit a policy"><figcaption><p>Submit a policy</p></figcaption></figure>
 
 ## Edit a policy
 
-1. Click on the policy name of an existing policy in the Policy Manager tab to open the modal and then make your changes
-2. Adjust [Organizations](assign-a-policy-to-organizations.md), [attributes](assign-a-policy-to-projects.md) and rules as desired
-3. Click **Submit** to save your changes
+1. Click the name of an existing policy in the Policy Manager tab to make any changes.
+2. Adjust [Organizations](apply-a-policy-to-organizations.md), [attributes](apply-a-policy-to-projects.md), and rules as desired.
+3. Click **Submit** to save your changes.
 
-## **Other Actions:**
+## **Duplicate or delete a policy**&#x20;
 
-Clicking on the **...** on the right-hand side of the policies table will provide a drop down that allows you to delete a policy.
+Click the **...** on the right-hand side to duplicate or delete a policy:
 
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-28 at 16.42.45.png" alt="Other policy actions"><figcaption><p>Other policy actions</p></figcaption></figure>
+
+#### Delete a policy
+
+{% hint style="warning" %}
 Deleting a policy cannot be undone. If you delete a policy that has Organizations assigned to it, those organizations will return to the default policy.
+{% endhint %}
 
-Duplicating a policy will copy over the rules of a policy, but not the assigned organizations or attributes. The new policy will automatically be called ‘Copy of (Policy Name)…” and can be edited.
+#### Duplicate a policy
 
-<figure><img src="../../.gitbook/assets/screen_shot_2021-08-11_at_2.11.06_pm.png" alt="Copy a policy"><figcaption><p>Copy a policy</p></figcaption></figure>
+Duplicating a policy will copy over the rules of a policy, but not the assigned Organizations or attributes. The new policy will automatically be called ‘Copy of (Policy Name)…” and can be edited as normal.
