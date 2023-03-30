@@ -176,7 +176,7 @@
     * [Nexus Repository Manager for Maven](integrations/private-registry-integrations/artifactory-registry-for-maven-1.md)
     * [Nexus Repository Manager for npm](integrations/private-registry-integrations/artifactory-registry-for-npm-1.md)
     * [npm Teams & npm Enterprise](integrations/private-registry-integrations/npm-teams-and-npm-enterprise-for-npms.md)
-    * [Private Gem Sources for Ruby](integrations/private-registry-integrations/private-gem-sources-for-ruby.md)
+    * [Private gem sources for Ruby](integrations/private-registry-integrations/private-gem-sources-for-ruby.md)
   * [Event Forwarding](integrations/event-forwarding/README.md)
     * [AWS CloudTrail Lake](integrations/event-forwarding/aws-cloudtrail-lake.md)
 * [Scan application code](scan-application-code/README.md)

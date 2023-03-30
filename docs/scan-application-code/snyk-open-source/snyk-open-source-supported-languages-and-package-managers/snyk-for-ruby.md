@@ -33,7 +33,9 @@ In future releases, Snyk plans to provide suggestions to make this easier.
 
 If you use private Gem sources this should work as normal when you are testing using the Snyk CLI.
 
-You must take additional steps to configure private Gem sources for projects imported from Git.
+When creating Fix PRs for Ruby projects using private Gem sources, Snyk may need access to the service hosting the Gems in order to correctly update the `Gemfile.lock` file.
+
+See [here](../../../integrations/private-registry-integrations/private-gem-sources-for-ruby.md) for more details.
 
 ## Supported Ruby version
 
