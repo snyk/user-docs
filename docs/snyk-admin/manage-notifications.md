@@ -26,11 +26,11 @@ Administrators can also manage the notification defaults for others in the [Grou
 
 You can also send notifications for an organization to a designated [Slack channel](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration).
 
-<figure><img src="../.gitbook/assets/image (48) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Notification example"><figcaption><p>Notification example</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (48) (2).png" alt="Notification example"><figcaption><p>Notification example</p></figcaption></figure>
 
 ### Define Group notification defaults
 
-Define the notification settings at the [Group](managing-groups-and-organizations/whats-a-snyk-group.md) level to define the template for how Snyk sends issue alert emails, weekly report emails, usage alert emails, and report status emails for Organizations created in that Group. You can also access the default settings for existing individual Organizations at the Group level.
+Define the notification settings at the [Group](manage-groups-and-organizations/whats-a-snyk-group.md) level to define the template for how Snyk sends issue alert emails, weekly report emails, usage alert emails, and report status emails for Organizations created in that Group. You can also access the default settings for existing individual Organizations at the Group level.
 
 {% hint style="info" %}
 When you change the Group default settings, it does not change the settings for existing Organizations or Projects. Individual users can override the default notification settings.
@@ -42,7 +42,7 @@ To navigate to the Group level notification settings:
 2. Select the Settings icon.
 3. Select **Notifications**.
 
-<figure><img src="../.gitbook/assets/image (155) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Set Group-level notifications"><figcaption><p>Set Group-level notifications</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (349) (1).png" alt="Set Group-level notifications"><figcaption><p>Set Group-level notifications</p></figcaption></figure>
 
 #### Issue alert emails
 

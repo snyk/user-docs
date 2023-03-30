@@ -4,7 +4,7 @@
 You must be a Group administrator to access policies for that Group.
 {% endhint %}
 
-Select the **Policies** menu option to see the policies in your Group, arranged by category ([License policies](../../scan-application-code/snyk-open-source/license-policies/) and [Security policies](../security-policies/)).
+Select the **Policies** menu option to see the policies in your Group, arranged by category ([License policies](license-policies/) and [Security policies](security-policies/)).
 
 <figure><img src="../../.gitbook/assets/Policies-menu.png" alt="View policies"><figcaption><p>View policies</p></figcaption></figure>
 

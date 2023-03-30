@@ -16,8 +16,8 @@ Policies help prioritize which issues to address, and can ensure vulnerable or n
 
 Snyk policies include:
 
-* [Security policies](../security-policies/): defines Snyk behavior for treating vulnerabilities. For example, to change severity levels or ignore issues.
-* [License policies](../../scan-application-code/snyk-open-source/license-policies/)**:** defines Snyk behavior for treating license issues. For example, to allow or disallow packages with certain license types, to avoid using packages containing incompatible licenses.
+* [Security policies](security-policies/): defines Snyk behavior for treating vulnerabilities. For example, to change severity levels or ignore issues.
+* [License policies](license-policies/)**:** defines Snyk behavior for treating license issues. For example, to allow or disallow packages with certain license types, to avoid using packages containing incompatible licenses.
 
 ### Apply **policies to  Projects or Organizations**
 
