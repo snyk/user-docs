@@ -8,7 +8,7 @@ After you run the `snyk test` command in the CLI, the results of the Snyk Open S
 
 The summary of the test findings at the top shows the following:
 
-<figure><img src="../../../.gitbook/assets/image (195).png" alt="Snyk Open Source CLI dependencies tested, issues and vulnerabilities found."><figcaption><p>Snyk Open Source CLI dependencies tested, issues and vulnerabilities found</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21).png" alt="Snyk Open Source CLI dependencies tested, issues and vulnerabilities found."><figcaption><p>Snyk Open Source CLI dependencies tested, issues and vulnerabilities found</p></figcaption></figure>
 
 * The number of direct and transitive dependencies scanned
 * Total number of issues found across one or more paths
@@ -34,7 +34,7 @@ These are issues that cannot be resolved by upgrading a direct dependency. They 
 
 ### License Issues
 
-These are license issues which are determined by your organization’s [license policy](../license-policies/). They contain the following information:
+These are license issues which are determined by your organization’s [license policy](../../../manage-issues/policies/license-policies/). They contain the following information:
 
 * Type of license
 * License severity as determined by your organization's license policy

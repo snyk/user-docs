@@ -52,7 +52,7 @@ Note that while creating a **Group service account**, you can choose a Group lev
 
 <figure><img src="../.gitbook/assets/Screenshot 2022-07-06 at 12.01.28.png" alt="Group settings"><figcaption><p>Group settings</p></figcaption></figure>
 
-In contrast, while creating an **Organization service account** you can choose Org level roles, including custom [member roles](manage-users-and-permissions/member-roles.md) that you have set up for your Organizations.
+In contrast, while creating an **Organization service account** you can choose Org level roles, including custom [member roles](managing-users-and-permissions/member-roles.md) that you have set up for your Organizations.
 
 <figure><img src="../.gitbook/assets/Screenshot 2022-07-06 at 12.06.35.png" alt="Organization settings"><figcaption><p>Organization settings</p></figcaption></figure>
 
@@ -66,7 +66,7 @@ In the **Service Account** name field, enter a unique name for this token. Remem
 
 From the **Role** dropdown list, select an appropriate role.
 
-![](<../.gitbook/assets/image (1) (4) (2).png>)
+![](<../.gitbook/assets/image (1) (4) (1).png>)
 
 For Group service accounts, choose from the following list of roles to configure the scope of the token; Snyk recommends selecting Viewer or Admin.
 

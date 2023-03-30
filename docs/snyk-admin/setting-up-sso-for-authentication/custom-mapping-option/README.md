@@ -10,7 +10,7 @@ Work with your Snyk account team to implement this option.
 
 To understand more about roles and permissions within Snyk, see [Managing permissions](../../managing-users-and-permissions/managing-permissions.md).
 
-See also [Member Roles](../../manage-users-and-permissions/member-roles.md) and [Roles in Custom SSO](../../manage-users-and-permissions/member-roles.md#roles-in-custom-sso).
+See also [Member Roles](../../managing-users-and-permissions/member-roles.md) and [Roles in Custom SSO](../../managing-users-and-permissions/member-roles.md#roles-in-custom-sso).
 
 ### Requirements
 
@@ -54,7 +54,7 @@ The prefix must always be **snyk** and fully in lowercase.
   * Note: **orgslug** can be a value of up to 60 characters and must be fully lowercase.
 * **role**:
   * If using standard roles, **{role}** should be either **collaborator** or **admin.**
-  * Custom Role can also be used for **{role}** and should use the normalized name. See [Roles in SSO](../../manage-users-and-permissions/member-roles.md#roles-in-custom-sso) for more details.
+  * Custom Role can also be used for **{role}** and should use the normalized name. See [Roles in SSO](../../managing-users-and-permissions/member-roles.md#roles-in-custom-sso) for more details.
 
 ### Roles array mapping format
 

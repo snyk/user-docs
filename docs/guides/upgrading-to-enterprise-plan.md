@@ -16,7 +16,7 @@ Snyk Enterprise features include:
 * [Service accounts](../snyk-admin/service-accounts.md)
 * [Rich API](../snyk-api-info/)
 * [Reports](../manage-issues/snyk-reports/)
-* [Security policy management](../manage-issues/security-policies/)
+* [Security policy management](../manage-issues/policies/security-policies/)
 * [Snyk Broker](../snyk-admin/snyk-broker/)
 * [GitHub Enterprise integration](../integrations/git-repository-scm-integrations/github-enterprise-integration.md)
 
@@ -151,7 +151,7 @@ See [Getting started with Snyk Reports](../manage-issues/snyk-reports/reporting-
 
 Security policies allow you to customize the prioritization of specific issues from the default and create rules. This is particularly helpful for changing the severities of issues that are not relevant to a specific project or environment.
 
-See [Getting started with security policies](../manage-issues/security-policies/getting-started-with-security-policies.md).
+See [Getting started with security policies](../manage-issues/policies/security-policies/getting-started-with-security-policies.md).
 
 ### Remote code repositories
 

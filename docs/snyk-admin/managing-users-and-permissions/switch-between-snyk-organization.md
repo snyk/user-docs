@@ -2,7 +2,7 @@
 
 **On the Snyk Web UI**
 
-Choose the Organization you want using **Switch org** <img src="../../.gitbook/assets/compare_arrows (1).png" alt="" data-size="line"> in the left navigation menu.
+Choose the Organization you want using **Switch org** <img src="../../.gitbook/assets/compare_arrows.png" alt="" data-size="line"> in the left navigation menu.
 
 ![Switch Organizations](<../../.gitbook/assets/Screenshot 2023-03-13 at 10.31.14.png>)
 

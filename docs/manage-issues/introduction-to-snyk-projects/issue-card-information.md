@@ -15,7 +15,7 @@ You can:
 
 Issue cards show details for a specific vulnerability or license issue, and actions you can take for:
 
-<figure><img src="../../.gitbook/assets/image (289).png" alt="Issue card for the npmconf vulnerability"><figcaption><p>Issue card for the npmconf vulnerability</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (289) (1).png" alt="Issue card for the npmconf vulnerability"><figcaption><p>Issue card for the npmconf vulnerability</p></figcaption></figure>
 
 Card details include [Header section](issue-card-information.md#header-section) and [Body section](issue-card-information.md#body-section) information.
 

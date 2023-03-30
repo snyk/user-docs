@@ -12,7 +12,7 @@
 {% hint style="warning" %}
 **Multi-tenant settings for EU and AU**\
 When you set up Broker, Code Agent, or both for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
-Example:  `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
+Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
 For the URLs, see [EU and AU account datacenter creation](https://docs.snyk.io/snyk-processes/data-residency-at-snyk#eu-and-au-datacenter-account-creation).
 {% endhint %}
 
@@ -24,8 +24,8 @@ Snyk recommends configuring at least two separate instances of the Broker Client
 
 If you use a proxy server, ensure you configure it, and any firewalls, to allow the Broker Client inbound and outbound access:
 
-* Outbound from the Broker Client (running in your environment) to [broker.snyk.io](https://broker.snyk.io) (or [https://broker.eu.snyk.io](https://broker.eu.snyk.io) / [https://broker.au.snyk.io](https://broker.au.snyk.io)) on port 443
-* Inbound to the Broker Client at the BROKER\_CLIENT\_URL on the port you have configured (typically 8000)
+* Outbound connection from the Broker Client (running in your environment) to [broker.snyk.io](https://broker.snyk.io) (or [https://broker.eu.snyk.io](https://broker.eu.snyk.io) / [https://broker.au.snyk.io](https://broker.au.snyk.io)) on port 443
+* Internal connection that allows inbound access from the integration (SCM, CR) to the Broker Client at the BROKER\_CLIENT\_URL on the port you have configured (typically 8000). This is not inbound from the internet.
 
 Traffic initiated from the Snyk Broker Server side always uses the latest available Broker connection. All activity from the Snyk side (such as traffic driven by recurring tests) appears on only one of your replicas at a time. The amount of Snyk activity is proportional to the activity in the repositories or Jira items. That activity generates webhooks, which are distributed across all replicas.
 
@@ -78,6 +78,6 @@ For [Artifactory Repository](../../../integrations/private-registry-integrations
 
 You can use the same Git service across multiple Organizations in Snyk with the same Broker token. To do this, create the token for an Organization and then create a new Organization based on the original. This clones the token and you can now enable the Broker for it.
 
-To do this retroactively for existing Organizations, you can use the API v1 endpoint [Clone an integration (with settings and credentials)](https://snyk.docs.apiary.io/#reference/integrations/integration-cloning) to clone a specific integration, including the Broker token.&#x20;
+To do this retroactively for existing Organizations, you can use the API v1 endpoint [Clone an integration (with settings and credentials)](https://snyk.docs.apiary.io/#reference/integrations/integration-cloning) to clone a specific integration, including the Broker token.
 
 Unless you do this, you must generate a new Broker token for the Organization, as each integration and Organization have their own unique Broker token.
