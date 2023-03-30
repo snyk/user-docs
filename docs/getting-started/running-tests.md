@@ -50,6 +50,10 @@ The default test frequency and available test frequencies vary depending on the 
 
 Use the `snyk monitor` CLI command to create a snapshot of a project on the Snyk website that will be continuously monitored for new vulnerabilities.
 
+{% hint style="info" %}
+Projects are tested at the test frequency you select in your settings; the default is daily. Once you use `snyk monitor` you will have recurring tests.  Recurring tests are scheduled retests that run on monitored projects.
+{% endhint %}
+
 See [Monitor your projects at regular intervals](../snyk-cli/test-for-vulnerabilities/monitor-your-projects-at-regular-intervals.md) for details.
 
 ### Run tests automatically using PR Checks
