@@ -52,3 +52,11 @@ Snyk does not support package versions which include a git commit hash.
 * Go
 * Composer
 * Cocoapods
+
+## **Supported unmanaged Ecosystems**
+
+{% hint style="warning" %}
+Snyk does not support package versions which include a git commit hash.
+{% endhint %}
+
+* C/C++
