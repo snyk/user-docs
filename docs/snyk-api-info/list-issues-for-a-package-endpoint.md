@@ -254,7 +254,3 @@ An example of this error response follows:
     "status": "400"
 }]
 ```
-
-## Package vuln fetcher service
-
-This service exposes endpoints to query vulnerabilities for packages using the Snyk REST API. Requests are proxied to vulndb-next to return relevant vulnerability data. For more information see the [GitHub repository](https://github.com/snyk/package-vuln-fetcher).
