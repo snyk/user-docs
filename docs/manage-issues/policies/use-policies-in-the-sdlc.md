@@ -68,4 +68,4 @@ Policies take effect in CI/CD, ensuring builds comply with security and complian
 
 This example shows a GitHub Actions build workflow failing because of a high-severity vulnerability identified in Snyk’s testing:
 
-<figure><img src="../../.gitbook/assets/image (451).png" alt="CI/CD check fail on security policy breach"><figcaption><p>CI/CD check fail on security policy breach</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (451) (1).png" alt="CI/CD check fail on security policy breach"><figcaption><p>CI/CD check fail on security policy breach</p></figcaption></figure>

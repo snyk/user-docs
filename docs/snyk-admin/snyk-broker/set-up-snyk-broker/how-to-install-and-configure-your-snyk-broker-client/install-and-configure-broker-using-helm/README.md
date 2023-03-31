@@ -51,7 +51,7 @@ To use this chart you must first add the chart by adding the repo:
 
 `helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`
 
-Then run the [commands for each SCM ](../../install-broker-for-scms-using-helm.md)or the Snyk Broker - Code Agent or Snyk Broker - Container Registry Agent.
+Then run the [commands for each SCM ](../../../install-broker-for-scms-using-helm.md)or the Snyk Broker - Code Agent or Snyk Broker - Container Registry Agent.
 
 * [GitHub](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#github.com-helm-install)
 * [GitHub Enterprise](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#github-enterprise-helm-install)
@@ -60,5 +60,5 @@ Then run the [commands for each SCM ](../../install-broker-for-scms-using-helm.m
 * [Azure Repos](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#azure-repos-helm-install)
 * [JFrog Artifactory](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#artifactory-respository-helm-install)
 * [Jira](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#jira-notifications-helm-install)
-* [Snyk Broker - Container Registry Agent (needed to connect to Container Registries)](../../install-broker-for-container-registry-agent-using-helm.md)
-* [Snyk Broker Code Agent (needed to enable SAST analysis)](../../install-broker-for-code-agent-using-helm.md)
+* [Snyk Broker - Container Registry Agent (needed to connect to Container Registries)](../../../install-broker-for-container-registry-agent-using-helm.md)
+* [Snyk Broker Code Agent (needed to enable SAST analysis)](../../../install-broker-for-code-agent-using-helm.md)

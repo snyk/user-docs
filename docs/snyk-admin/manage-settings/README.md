@@ -15,4 +15,4 @@ Settings include:
 * Your plan and billing
 * Plans and pricing
 * [Notifications](../manage-notifications.md)
-* [Snyk Preview](snyk-preview.md)
+* [Snyk Preview](../managing-settings/snyk-preview.md)
