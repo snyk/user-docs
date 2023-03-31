@@ -85,7 +85,7 @@ GitHub has received your changes on your **add\_vulns** branch.
 
 Snyk can auto-scan your pull request (PR) for vulnerabilities and license issues in the merge process:
 
-<figure><img src="../../../.gitbook/assets/snyk_vuln_lic_check.png" alt="Snyk pull request checks in GitHub."><figcaption><p>Snyk pull request checks in GitHub</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk_vuln_lic_check (1).png" alt="Snyk pull request checks in GitHub."><figcaption><p>Snyk pull request checks in GitHub</p></figcaption></figure>
 
 As the PR workflow is completed, Snyk validated the vulnerability and license policy set for the project. Based on the policy, the checks either passed or failed; this is shown in GitHub.
 

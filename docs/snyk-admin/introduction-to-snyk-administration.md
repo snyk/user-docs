@@ -13,17 +13,17 @@ Snyk has a hierarchy that allows you to control access to features and scans:
 * **Organization:** the second level of grouping; for example, your team.
 * **Projects:** the lowest level for individual projects; for example, a container image.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (4).png" alt="Groups, Organizations and Projects"><figcaption><p>Groups, Organizations and Projects</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="Groups, Organizations and Projects"><figcaption><p>Groups, Organizations and Projects</p></figcaption></figure>
 
 #### Snyk Groups
 
-A [Snyk Group](managing-groups-and-organizations/whats-a-snyk-group.md) represents your entire base of Snyk users.
+A [Snyk Group](manage-groups-and-organizations/whats-a-snyk-group.md) represents your entire base of Snyk users.
 
 Groups can contain multiple Snyk Organizations, allowing you to collaborate with multiple teams.
 
 #### Snyk Organizations
 
-[Organizations](managing-groups-and-organizations/whats-a-snyk-organization.md) represent business areas such as teams, products or environments.
+[Organizations](manage-groups-and-organizations/whats-a-snyk-organization.md) represent business areas such as teams, products or environments.
 
 Organizations can contain multiple Snyk Projects, allowing your team to see scan details for the applications they are working on.
 
@@ -46,7 +46,7 @@ Snyk provides four different types of members or users:
 * Group member
 * Group administrator
 
-For definitions of the associated permissions per role, see [Managing permissions](managing-users-and-permissions/managing-permissions.md#permissions-per-role).
+For definitions of the associated permissions per role, see [Managing permissions](manage-users-and-permissions/managing-permissions.md#permissions-per-role).
 
 {% hint style="info" %}
 **Feature availability**\
@@ -65,13 +65,13 @@ Snyk offers API tokens to enable authentication to service accounts or third par
 
 SSO makes authentication and provisioning simple; see [Setting up Single Sign-On (SSO) for authentication](set-up-single-sign-on-sso-for-authentication/).
 
-<figure><img src="../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1).png" alt="Single Sign-On"><figcaption><p>Single Sign-On</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Single Sign-On"><figcaption><p>Single Sign-On</p></figcaption></figure>
 
 #### Manage users and permissions
 
 You can manage users and permissions in your groups; See [Managing users & permissions](manage-users-and-permissions/).
 
-<figure><img src="../.gitbook/assets/image (213).png" alt="Manage users and permissions"><figcaption><p>Manage users and permissions</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (245) (1) (1).png" alt="Manage users and permissions"><figcaption><p>Manage users and permissions</p></figcaption></figure>
 
 #### Manage Groups and Organizations
 
@@ -81,7 +81,7 @@ Learn how Snyk groups and organizations help keep cross-team collaboration seaml
 
 You can manage email notifications, for yourself and your organization. See [Managing notifications](manage-notifications.md).
 
-<figure><img src="../.gitbook/assets/image (8).png" alt="Manage email notifications"><figcaption><p>Manage email notifications</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (131).png" alt="Manage email notifications"><figcaption><p>Manage email notifications</p></figcaption></figure>
 
 #### Manage settings
 
