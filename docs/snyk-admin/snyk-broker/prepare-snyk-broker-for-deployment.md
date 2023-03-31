@@ -35,16 +35,16 @@ Consider the following to understand what the required components are for your d
 
 * What service are you connecting Broker to?
   * GitHub, Jira, Bitbucket, Harbor, other service
-  * See [Snyk Broker - Client integration setups](../snyk-broker-set-up-examples/).
+  * See [Snyk Broker - Client integration setups](snyk-broker-set-up-examples/).
 * Are you planning to detect Infrastructure as Code files?
   * You will need to add an environment variable `-e ACCEPT_IAC` or a custom allowlist `accept.json` file to your deployment.
-  * See [Snyk Broker - Infrastructure as Code detection](../snyk-broker-infrastructure-as-code-detection/).
+  * See [Snyk Broker - Infrastructure as Code detection](snyk-broker-infrastructure-as-code-detection/).
 * Are you planning to detect Snyk Code vulnerabilities?
   * You will need to deploy an additional agent with Broker, the Snyk Broker Code Agent, and add an environment variable `-e ACCEPT_CODE` or a custom allowlist `accept.json` file if you want to view code snippets.
-  * See [Snyk Broker Code Agent](../snyk-broker-code-agent/).
+  * See [Snyk Broker Code Agent](snyk-broker-code-agent/).
 * Are you planning to connect to a Container Registry?
   * You will need to deploy an additional agent with Broker, the Snyk Broker Container Registry Agent.
-  * See [Snyk Broker Container Registry agent](../snyk-broker-container-registry-agent/).
+  * See [Snyk Broker Container Registry agent](snyk-broker-container-registry-agent/).
 
 Every integration has a specific Broker token assigned to it. This means if you want to analyze Snyk Code vulnerabilities and connect to a Container Registry your integration will be:
 
@@ -68,7 +68,7 @@ For code repository (SCM) integrations, a Broker token can be generated via API 
 1. Go to the Snyk API v1 documentation and follow the example under "Set up a broker for an existing integration" within the [Integrations API](https://snyk.docs.apiary.io/#reference/integrations/integration/update-existing-integration) or contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
 2. Verify the Broker token is generated in the Snyk Web UI under the specified SCM integration. by selecting **Settings** > **Integrations** for that specific integration update to see the Broker token.
 
-For [Artifactory Repository](../../../integrations/private-registry-integrations/artifactory-repository-setup.md) and [Nexus Repository Manager](../../../integrations/private-registry-integrations/nexus-repo-manager-setup.md) brokered instances or [Jira](../snyk-broker-set-up-examples/setup-broker-with-jira.md) integration, you can generate a Broker token in the Snyk UI or contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
+For [Artifactory Repository](../../integrations/private-registry-integrations/artifactory-repository-setup.md) and [Nexus Repository Manager](../../integrations/private-registry-integrations/nexus-repo-manager-setup.md) brokered instances or [Jira](snyk-broker-set-up-examples/setup-broker-with-jira.md) integration, you can generate a Broker token in the Snyk UI or contact [Snyk support](https://support.snyk.io/hc/en-us/requests/new).
 
 1. Select **Settings** > **Integrations** for that specific integration to generate the Broker token.
 2. Once the Broker token is generated, under the integration, the notification from this screen correctly displays “Could not connect to…”, as you have not yet installed and configured the client.

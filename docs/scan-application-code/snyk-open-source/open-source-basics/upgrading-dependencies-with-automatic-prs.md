@@ -12,7 +12,7 @@ You can also use this feature with the Snyk Broker. To use this feature, Snyk Br
 
 ## Automatic dependency (upgrade) PRs
 
-1. The **Automatic dependency upgrade pull requests** option is enabled (in [the Integration Settings at the Organization level](upgrading-dependencies-with-automatic-prs.md#enabling-the-automatic-dependency-upgrade-prs-option-for-an-entire-organization) or in [the Project Settings](../../../snyk-admin/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client/#upgrade-your-snyk-broker-client)).
+1. The **Automatic dependency upgrade pull requests** option is enabled (in [the Integration Settings at the Organization level](upgrading-dependencies-with-automatic-prs.md#enabling-the-automatic-dependency-upgrade-prs-option-for-an-entire-organization) or in [the Project Settings](../../../snyk-admin/snyk-broker/how-to-install-and-configure-your-snyk-broker-client/#upgrade-your-snyk-broker-client)).
 2. When you import repos to Snyk, Snyk scans the repos and provides you with the scan results. Snyk then continues to monitor your Open Source Projects, scanning them on a regular basis.
 3. Per scan, when new versions for your dependencies are identified, Snyk does the following:
    * Snyk creates automatic upgrade PRs.

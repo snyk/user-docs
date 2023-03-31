@@ -8,7 +8,7 @@ Snyk Broker is available with Enterprise plans. See [pricing plans](https://snyk
 {% hint style="warning" %}
 **Multi-tenant settings for EU and AU**\
 When you set up Broker, Code Agent, or both for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
-Example:  `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
+Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
 For the URLs, see [EU and AU account datacenter creation](https://docs.snyk.io/snyk-processes/data-residency-at-snyk#eu-and-au-datacenter-account-creation).
 {% endhint %}
 
@@ -89,7 +89,7 @@ See [How Snyk handles your data](../../more-info/how-snyk-handles-your-data.md) 
 
 ### Outbound requests allowed
 
-When you configure your Broker Client setup, Git repository webhooks are set to enable automatic Snyk scans that are triggered when your developers submit new pull requests or merge events.&#x20;
+When you configure your Broker Client setup, Git repository webhooks are set to enable automatic Snyk scans that are triggered when your developers submit new pull requests or merge events.
 
 Webhook notifications are delivered to Snyk via the Broker Client only for events relevant to Snyk actions: push to branch and open pull request _**and only when**_ the event data also includes a dependency manifest file or a .`snyk` policy file.
 
@@ -97,11 +97,11 @@ Webhook notifications are delivered to Snyk via the Broker Client only for event
 
 Because of the limitations of the default approved data list, if you want to scan Infrastructure as Code files with Snyk Broker, you must [add and configure an `accept.json`](snyk-broker-infrastructure-as-code-detection/) file in your Broker deployment.
 
-To learn more about the approved data list and the `accept.json` file, see [Install and configure the Snyk Broker Client](set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client/), _Custom approved-listing filter_ section.
+To learn more about the approved data list and the `accept.json` file, see [Install and configure the Snyk Broker Client](how-to-install-and-configure-your-snyk-broker-client/), _Custom approved-listing filter_ section.
 
 ## **Using Snyk Broker to scan your code**
 
-To use **Snyk Open Source** with Snyk Broker, you need only the Broker Server and the Broker Client components. The Broker Client is published as a set of Docker images, each configured for a specific Git service. Configure each type of integration using environment variables as explained in the [Snyk Broker  - Client integration setups](snyk-broker-set-up-examples/).
+To use **Snyk Open Source** with Snyk Broker, you need only the Broker Server and the Broker Client components. The Broker Client is published as a set of Docker images, each configured for a specific Git service. Configure each type of integration using environment variables as explained in the [Snyk Broker - Client integration setups](snyk-broker-set-up-examples/).
 
 To scan other types of code with Snyk Broker, you must add a component or configurations and add parameters to the Broker Client setup:
 
@@ -132,4 +132,3 @@ The Snyk Broker application and images are being tested on a daily basis for vul
 
 **What is the SLA to fix vulnerabilities?**\
 There is a 14-day SLA for fixing high vulnerabilities and five-day SLA for fixing critical vulnerabilities in public images.
-
