@@ -3,7 +3,7 @@
 Installing the Snyk Broker with the [Broker Helm Chart](https://github.com/snyk/snyk-broker-helm) is the easiest way to deploy Snyk Broker if you are using Kubernetes.
 
 {% hint style="info" %}
-The Helm chart does not manage connectivity and thus you will be responsible for managing ingress in the Kubernetes cluster.
+The Helm chart does not manage connectivity and thus you will be responsible for managing [ingress](ingress-options-with-snyk-broker-helm-installation.md) in the Kubernetes cluster.
 {% endhint %}
 
 ## Kubernetes secrets and Helm Chart installation
