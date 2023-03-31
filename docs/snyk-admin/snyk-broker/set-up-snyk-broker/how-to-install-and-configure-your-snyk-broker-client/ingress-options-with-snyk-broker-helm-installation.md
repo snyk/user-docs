@@ -1,5 +1,11 @@
 # Ingress options with Snyk Broker Helm installation
 
+When you are setting up the Broker using Helm, you may need to configure the `brokerClientUrl` parameter. This parameter enables PR Checks if you are connecting to an SCM and enables connecting to Container Registries.
+
+For this connection to happen there must be inbound connectivity from the SCM or Container Registry to the Broker. Kubernetes manages this inbound connectivity through ingress.
+
+Ingress is a way to route incoming network traffic to specific services in a Kubernetes cluster. For more information on how to set up ingress see the [Kubernetes guide to ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/).
+
 There are two options available for ingress traffic. By default, the pods are not accessible from outside the cluster.
 
 To enable a **load balancer**, add the `--set service.<service-type>=LoadBalancer`. Allowed values are `brokertype`, `crType`, and `caType`
