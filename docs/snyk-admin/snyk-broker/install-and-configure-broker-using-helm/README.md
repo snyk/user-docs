@@ -58,7 +58,7 @@ To use this chart you must first add the chart by adding the repo:
 
 `helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`
 
-Then run the [commands for each SCM ](../install-broker-for-scms-using-helm.md)or the Snyk Broker - Code Agent or Snyk Broker - Container Registry Agent.
+Then run the [commands for each SCM ](../snyk-broker-client-integration-setups-with-helm.md)or the Snyk Broker - Code Agent or Snyk Broker - Container Registry Agent.
 
 * [GitHub](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#github.com-helm-install)
 * [GitHub Enterprise](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#github-enterprise-helm-install)
