@@ -33,6 +33,10 @@ This endpoint responds with status code `200 OK` when the internal request is su
 
 This status can be tested by connecting to the Broker and running [http://localhost:8000/systemcheck](http://localhost:8000/systemcheck) with the default settings.
 
+Example that enables the `/systemcheck` capability to verify connectivity between broker and Nexus:\
+`-e BROKER_CLIENT_VALIDATION_URL=https://[username:password]@acme.com/service/rest/v1/status[/check] /` \
+&#x20;  `snyk/broker:nexus`
+
 ## Advanced Broker Troubleshooting
 
 ### Standalone Broker
