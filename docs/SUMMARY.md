@@ -497,6 +497,7 @@
     * [Managing Snyk Cloud rules](scan-cloud-deployment/snyk-cloud/managing-snyk-cloud-rules.md)
     * [Billable resources for Snyk Cloud](scan-cloud-deployment/snyk-cloud/billable-resources-for-snyk-cloud.md)
 * [Manage issues](manage-issues/README.md)
+  * [Introduction to managing issues](manage-issues/introduction-to-managing-issues.md)
   * [Snyk Projects](manage-issues/introduction-to-snyk-projects/README.md)
     * [View Project information](manage-issues/introduction-to-snyk-projects/view-project-information.md)
     * [Project attributes](manage-issues/introduction-to-snyk-projects/project-attributes.md)
