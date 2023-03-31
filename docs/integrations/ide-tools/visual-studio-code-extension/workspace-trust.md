@@ -4,7 +4,7 @@ As part of examining the codebase for vulnerabilities, Snyk may automatically ex
 
 In addition to the built-in [Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust) feature of Visual Studio Code, our extension will ask for folder trust before allowing to run any scans against your code. When in doubt, do not proceed with a scan.
 
-<figure><img src="../../../.gitbook/assets/vscode-trust (1).png" alt=""><figcaption><p>Request to trust folders</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vscode-trust.png" alt=""><figcaption><p>Request to trust folders</p></figcaption></figure>
 
 Once a single project trust is granted, Snyk will not ask for trust on the opened folder and its subfolders any more. If you didn’t grant trust the first time, the plugin will ask next time again when you restart your Visual Studio Code instance.
 
