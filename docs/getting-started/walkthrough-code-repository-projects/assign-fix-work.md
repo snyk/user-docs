@@ -22,7 +22,7 @@ Typically, smaller teams have less process, and Enterprise-level teams are more 
 
 For example, your team could follow a triage-based process for each issue, driven largely by the severity of the issue:
 
-<figure><img src="../../.gitbook/assets/image (345).png" alt="Using a triage process for issues"><figcaption><p>Using a triage process for issues</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23).png" alt="Using a triage process for issues"><figcaption><p>Using a triage process for issues</p></figcaption></figure>
 
 ### Example workflow: team-lead driven, using Jira
 
@@ -49,11 +49,11 @@ Snyk [Jira integration](../../integrations/notifications-ticketing-system-integr
 
 Navigate to the issue you have decided to fix, then click **Create a Jira issue**:
 
-<figure><img src="../../.gitbook/assets/image (158) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Create a Jira issue"><figcaption><p>Create a Jira issue</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (158) (1) (2).png" alt="Create a Jira issue"><figcaption><p>Create a Jira issue</p></figcaption></figure>
 
 You can then define the Jira task details for this fix:
 
-<figure><img src="../../.gitbook/assets/image (108).png" alt="Create a Jira issue details"><figcaption><p>Create a Jira issue details</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (483).png" alt="Create a Jira issue details"><figcaption><p>Create a Jira issue details</p></figcaption></figure>
 
 You can assign this task to a developer in the team, following your team’s normal Sprint processes.
 
@@ -63,7 +63,7 @@ You may want to create a Jira issue even if Snyk knows how to fix the change, an
 
 #### More information
 
-* See [Jira issues](https://training.snyk.io/learn/course/introduction-to-the-snyk-ui/issue-fix-options/open-source-fix-advice?page=2) training for more details.
+* See [Jira issues](https://training.snyk.io/learn/video/jira-issue) training for more details.
 * See [Manage issues](../../manage-issues/) docs for more general details.
 
 ### What's next?

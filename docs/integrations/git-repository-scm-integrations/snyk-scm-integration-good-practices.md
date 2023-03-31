@@ -21,7 +21,7 @@ If you try to implement all the SCM integration features at the same time, you r
 | <p><a href="snyk-scm-integration-good-practices.md#stage-3-enable-snyk-test-on-prs"><strong>Stage 3</strong></a></p><p>Developer and Security teams use Snyk prioritization reporting capabilities to build a fix plan.</p> | Watch this [video ](https://www.youtube.com/watch?v=\_kAY94JwQHY)to learn more about Snyk prioritization reporting.                                                                                                            | Alignment between Developers and Security on what should be fixed and when streamlines the fix process. |
 | <p><a href="snyk-scm-integration-good-practices.md#stage-4-enable-blocking-prs"><strong>Stage 4</strong></a></p><p>Alert developers to issues in real-time, and educate them on available fixes.</p>                        | <p>• Enable Snyk PR checks and fail PRs if they contain high severity issues with available fixes</p><p>• Enable Auto-fix PRs</p>                                                                                              | Improve your organization’s mean-time-to-fix (MTTF).                                                    |
 | <p><a href="snyk-scm-integration-good-practices.md#stage-5-automatic-fix-prs"><strong>Stage 5</strong></a></p><p>Prevent developers from introducing any new vulnerabilities</p>                                            | • Enable Failing PR checks, for ANY High severity issues (fix or no fix)                                                                                                                                                       | ‘Secure by Design’ methodology achieved.                                                                |
-| <p><a href="snyk-scm-integration-good-practices.md#stage-6-dependency-upgrade-prs"><strong>Stage 6</strong></a></p><p>Reduce technical security debt</p>                                                                    | • Enable [Automatic dependency upgrades](../../scan-application-code/snyk-open-source/open-source-basics/upgrading-dependencies-with-automatic-prs.md)                                                                         | Reduce future design headaches and hot fixes, which can be time-consuming to research and address.      |
+| <p><a href="snyk-scm-integration-good-practices.md#stage-6-dependency-upgrade-prs"><strong>Stage 6</strong></a></p><p>Reduce technical security debt</p>                                                                    | • Enable [Automatic dependency upgrades](../../scan-application-code/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs.md)                                                                      | Reduce future design headaches and hot fixes, which can be time-consuming to research and address.      |
 
 ## Stage 1: Set up your Git integration
 
@@ -54,7 +54,7 @@ To disable notifications for all the users in an Org ahead of your import, desel
 
 Go to the **Projects** page in the Snyk UI, select **Add projects**, select the repos to import to Snyk, and click **Add selected repositories**.
 
-<figure><img src="../../.gitbook/assets/image (2) (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Add projects to Snyk"><figcaption><p>Add projects to Snyk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (4) (1) (1) (1) (1) (1) (1) (1).png" alt="Add projects to Snyk"><figcaption><p>Add projects to Snyk</p></figcaption></figure>
 
 * Snyk starts scanning the selected repos for dependency files (for example, **package.json**) in the entire directory tree and imports these files as Projects.
 * Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.
@@ -63,7 +63,7 @@ Go to the **Projects** page in the Snyk UI, select **Add projects**, select the 
   After a Project is imported, it is continuously checked for vulnerabilities.
 
 {% hint style="info" %}
-To confirm that a Project was imported, go to the **Add project** import page for the integration. Imported projects are indicated by a ✔ next to the repository name: <img src="../../.gitbook/assets/image (161).png" alt="Check next to name of repo" data-size="line">
+To confirm that a Project was imported, go to the **Add project** import page for the integration. Imported projects are indicated by a ✔ next to the repository name: <img src="../../.gitbook/assets/image (223) (2).png" alt="Check next to name of repo" data-size="line">
 {% endhint %}
 
 See [Import a Project](../../getting-started/quickstart/import-a-project.md) for more details.
@@ -153,11 +153,11 @@ Snyk recommends that you exclude patches from the auto fix PRs, if your develope
 
 Ask your developers to consider the merge advice label that appears on the auto fix PRs:
 
-<figure><img src="../../.gitbook/assets/merge-advice-review-recommended (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (14).png" alt="Merge advice label"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/merge-advice-review-recommended (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (33).png" alt="Merge advice label"><figcaption></figcaption></figure>
 
-![](<../../.gitbook/assets/advice-green (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
+![](<../../.gitbook/assets/advice-green (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (28).png>)
 
-![Merge advice label](<../../.gitbook/assets/merge-advice (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (13).png>)
+![Merge advice label](<../../.gitbook/assets/merge-advice (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (30).png>)
 
 {% hint style="info" %}
 Snyk auto fix PRs are generated only for new issues.
@@ -195,13 +195,13 @@ To set PR Settings on the Project level and override the PR settings configured 
 1. Open the Organization for which you would like to enable automatic upgrade PRs and go to the **Projects** tab.
 2.  Select and expand the relevant Project, select the relevant Target, and using the cog icon, open the **Settings**:
 
-    <img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (6).png" alt="Cog icon for Project settings" data-size="original">
+    <img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (13).png" alt="Cog icon for Project settings" data-size="original">
 3. In the Settings area, in the left panel menu, click the Integration settings to apply unique settings for that specific Project.
 4. In settings that load, scroll to the **Automatic dependency upgrade pull requests** and click **Disabled**.
 5. In the options that appear:
    1. Snyk creates PRs up to a maximum of 10 open simultaneously per repo.\
       To limit this number further, select the maximum number of PRs from the dropdown list.\
-      For more information, see [Upgrading dependencies with automatic PRs](../../scan-application-code/snyk-open-source/open-source-basics/upgrading-dependencies-with-automatic-prs.md).
+      For more information, see [Upgrading dependencies with automatic PRs](../../scan-application-code/snyk-open-source/dependency-management/upgrading-dependencies-with-automatic-prs.md).
    2. In the **Dependencies to ignore** field, enter the exact name of any dependencies that should _not_ be handled as part of the automatic functionality.\
       This field accepts only lower case letters.
    3. After you click **Upgrade dependency settings**, each time Snyk scans this Project, Snyk automatically submits upgrade PRs based on the scan results.\
