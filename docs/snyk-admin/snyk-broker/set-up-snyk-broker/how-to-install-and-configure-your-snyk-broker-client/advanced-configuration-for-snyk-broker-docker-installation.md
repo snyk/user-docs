@@ -1,8 +1,8 @@
 # Advanced configuration for Snyk Broker Docker installation
 
-## **HTTPS for Broker client**
+## **HTTPS for Broker Client**
 
-The Broker client runs an HTTP server by default. It can be configured to run an HTTPS server for local connections. This requires an SSL certificate and a private key to be provided to the Docker container at runtime.
+The Broker Client runs an HTTP server by default. It can be configured to run an HTTPS server for local connections. This requires an SSL certificate and a private key to be provided to the Docker container at runtime.
 
 For example, if your certificate files are found locally at `./private/broker.crt` and `./private/broker.key`, provide these files to the Docker container by mounting the folder and using the `HTTPS_CERT` and `HTTPS_KEY` environment variables:
 
@@ -21,9 +21,9 @@ docker run --restart=always \
 
 Note that `BROKER_CLIENT_URL` now has the HTTPS scheme.
 
-### **Git with an internal certificate**
+## **Git with an internal certificate**
 
-By default, the Broker Client establishes HTTPS connections to the Git. If your Git is serving an internal certificate (signed by your own CA), you can provide the CA certificate to the Broker Client.
+By default, the Broker Client establishes HTTPS connections to the Git repository. If your Git instance is serving an internal certificate (signed by your own certificate authority (CA)), you can provide the CA certificate to the Broker Client.
 
 For example, if your CA certificate is at `./private/ca.cert.pem`, provide it to the Docker container by mounting the folder and using the `CA_CERT` environment variable:
 
@@ -43,7 +43,7 @@ docker run --restart=always \
 
 ## Proxy support
 
-For proxy configuration see [Configure Docker to use a proxy server](https://docs.docker.com/network/proxy/)
+For proxy configuration see [Configure Docker to use a proxy server](https://docs.docker.com/network/proxy/).
 
 ```
  -e HTTP_PROXY=http://my.proxy.address:8080
@@ -67,7 +67,7 @@ To disable certificate verification, for example, in the case of self-signed cer
 
 ## Custom approved-listing filter
 
-The default approved-listing filter supports the bare minimum to operate on all repositories supported by Snyk. In order to customize the approved-listing filter, create the default one locally by installing `snyk-broker` and running `broker init [Git type]`. The created `accept.json` is the default filter for the chosen Git. Place the file in a separate folder such as `./private/accept.json`, and provide it to the Docker container by mounting the folder and using the `ACCEPT` environment variable:
+The default approved-listing filter supports the bare minimum to operate on all repositories supported by Snyk. In order to customize the approved-listing filter, create the default filter locally by installing `snyk-broker` and running `broker init [Git type]`. The created `accept.json` is the default filter for the chosen Git type. Place the file in a separate folder such as `./private/accept.json`, and provide it to the Docker container by mounting the folder and using the `ACCEPT` environment variable:
 
 ```
 docker run --restart=always \
@@ -88,7 +88,8 @@ docker run --restart=always \
 | header | The name of the header you wish to filter on. If this is defined then the named header must explicitly exist on the request; otherwise it will be blocked | String         | `accept`                            |
 | values | The header value must match one of the defined strings                                                                                                    | Array\<String> | `["application/vnd.github.v4.sha"]` |
 
-For example, to only allow the SHA Media Type accept header for requests to the GitHub Commits API, you would add the following:
+Example:\
+To only allow the SHA Media Type accept header for requests to the GitHub Commits API, you would add the following:
 
 ```
 {
@@ -104,4 +105,4 @@ For example, to only allow the SHA Media Type accept header for requests to the 
 }
 ```
 
-For examples of custom approved-listing filters for each SCM see [Snyk Broker integration setups](../../snyk-broker-set-up-examples/) and the more generic list of [Broker Client templates](https://github.com/snyk/broker/tree/master/client-templates) on GitHub.
+For examples of custom approved-listing filters for each SCM see [Snyk Broker integration setups](../../snyk-broker-set-up-examples/) and the generic list of [Broker Client templates](https://github.com/snyk/broker/tree/master/client-templates) on GitHub.
