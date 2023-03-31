@@ -12,6 +12,12 @@ Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
 For the URLs, see [EU and AU account datacenter creation](https://docs.snyk.io/snyk-processes/data-residency-at-snyk#eu-and-au-datacenter-account-creation).
 {% endhint %}
 
+{% hint style="info" %}
+Snyk recommends using Helm as the simplest way to deploy Snyk Broker. You can also use Docker to run the Snyk Broker Client or run npm `install snyk-broker`.
+
+This documentation provides detailed instructions for using [Helm](install-and-configure-broker-using-helm/) and [Docker](install-and-configure-broker-using-docker/).
+{% endhint %}
+
 ## Introduction to Snyk Broker
 
 Snyk Broker is an open-source tool that acts as a proxy between Snyk and special integrations, to allow [snyk.io](http://snyk.io/) access to your code for scanning and returning results to you. SCM integrations with Broker support Snyk Open Source, Snyk Code, Snyk Container (Dockerfile), and Snyk IaC. Supported integrations with Broker include the following:
@@ -97,7 +103,7 @@ Webhook notifications are delivered to Snyk via the Broker Client only for event
 
 Because of the limitations of the default approved data list, if you want to scan Infrastructure as Code files with Snyk Broker, you must [add and configure an `accept.json`](snyk-broker-infrastructure-as-code-detection/) file in your Broker deployment.
 
-To learn more about the approved data list and the `accept.json` file, see [Install and configure the Snyk Broker Client](how-to-install-and-configure-your-snyk-broker-client/), _Custom approved-listing filter_ section.
+To learn more about the approved data list and the `accept.json` file, see [Install and configure the Snyk Broker Client](how-to-install-and-configure-your-snyk-broker-client.md), _Custom approved-listing filter_ section.
 
 ## **Using Snyk Broker to scan your code**
 
