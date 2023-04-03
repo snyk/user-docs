@@ -17,4 +17,4 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
             -n snyk-broker --create-namespace
 ```
 
-Note: The `brokerClientUrl` is going to be the address of the Broker Container. The default port for the broker container is `8000`. See the values file for more information. Also, the accept.json must be in the same directory as the Helm Chart.\
+Note: The `brokerClientUrl` is going to be the address of the Broker Container. The default port for the broker container is `8000`. See the values file for more information. Also, the accept.json must be in the same directory as the Helm Chart.\\

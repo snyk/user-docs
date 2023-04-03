@@ -10,11 +10,11 @@ You cannot run the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as 
 
 ## Custom allowlist through ACCEPT parameter for Bitbucket
 
-{% file src="../../../../.gitbook/assets/accept (2).json" %}
+{% file src="../../../../.gitbook/assets/accept (3).json" %}
 
 ## Custom allowlist through ACCEPT parameter for GitHub
 
-{% file src="../../../../.gitbook/assets/accept (1).json" %}
+{% file src="../../../../.gitbook/assets/accept (1) (1) (1) (1) (1) (1).json" %}
 
 ## Custom allowlist through ACCEPT parameter for GitHub Enterprise
 
@@ -22,6 +22,6 @@ You cannot run the `ACCEPT_IAC` and `ACCEPT_CODE` arguments at the same time as 
 
 ## Custom allowlist through ACCEPT parameter for GitLab
 
-{% file src="../../../../.gitbook/assets/gitlab-accept.json" %}
+{% file src="../../../../.gitbook/assets/accept.json" %}
 
 ##

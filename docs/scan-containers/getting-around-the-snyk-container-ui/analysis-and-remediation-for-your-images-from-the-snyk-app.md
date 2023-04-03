@@ -14,7 +14,7 @@ You can filter for all container projects, similar to the following example:
 
 When you open any container project, the resulting analysis and fix advice appears in the Snyk Web UI:
 
-![](<../../.gitbook/assets/image (315).png>)
+![](<../../.gitbook/assets/image (315) (1).png>)
 
 The following information is displayed:
 
