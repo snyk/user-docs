@@ -67,5 +67,5 @@ Then run the [commands for each SCM ](../snyk-broker-client-integration-setups-w
 * [Azure Repos](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#azure-repos-helm-install)
 * [JFrog Artifactory](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#artifactory-respository-helm-install)
 * [Jira](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#jira-notifications-helm-install)
-* [Snyk Broker - Container Registry Agent (needed to connect to Container Registries)](../install-broker-for-container-registry-agent-using-helm.md)
-* [Snyk Broker Code Agent (needed to enable SAST analysis)](../install-broker-for-code-agent-using-helm.md)
+* [Snyk Broker - Container Registry Agent (needed to connect to Container Registries)](../snyk-broker-container-registry-agent/install-broker-for-container-registry-agent-using-helm.md)
+* [Snyk Broker Code Agent (needed to enable SAST analysis)](../snyk-broker-code-agent/install-broker-for-code-agent-using-helm.md)

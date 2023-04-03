@@ -54,7 +54,7 @@ Organization Admins can delete Organizations so long as there are no Groups invo
 
 4\. On the Confirmation dialog box, enter the name of the organization you want to delete to confirm its deletion. Then, click **OK**:
 
-<figure><img src="../../.gitbook/assets/Org Settings - Delete organization - Confirmation.png" alt="Confirm delete Organization"><figcaption><p>Confirm delete Organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Org Settings - Delete organization - Confirmation (1).png" alt="Confirm delete Organization"><figcaption><p>Confirm delete Organization</p></figcaption></figure>
 
 The selected organization is deleted from your Snyk Account.
 
@@ -77,7 +77,7 @@ If you have several Organizations, one of these organizations is set by default 
 
 **Note**: The Organization drop-down list displays your existing organizations.
 
-<figure><img src="../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Change preferred Organization"><figcaption><p>Change preferred Organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (313).png" alt="Change preferred Organization"><figcaption><p>Change preferred Organization</p></figcaption></figure>
 
 3\. Click the **Update Preferred Org** button to save your new setting.
 
