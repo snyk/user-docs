@@ -8,18 +8,18 @@ Snyk Cloud helps users find, prioritize, and fix cloud misconfigurations by scan
 
 ## Features
 
-### Unified policy engine
+### Developer-first cloud security
 
-With Snyk’s unified policy engine, you can apply the same security rules to both infrastructure as code (IaC) files, and runtime cloud resources. In combination with the other [Snyk products](../../products/snyk-cloud/broken-reference/), this enables you to find and fix issues throughout the entire software development lifecycle (SDLC).
+With Snyk Cloud, Snyk extends its focus on developer security to securing your cloud environments - by enabling developers to build and deploy more secure cloud configurations from IaC in the IDE through to production. Snyk IaC and Snyk Cloud are tightly integrated, with consistent interfaces across the UI and API for resources, issues, and more.
+
+### Code to cloud with unified policy engine
+
+With Snyk’s unified policy engine, you can apply the same security rules to both infrastructure as code (IaC) files, and runtime cloud resources. In combination with the other Snyk products, this enables you to find and fix issues throughout the entire software development lifecycle (SDLC).
+
+### Connect Cloud back to IaC for faster fixes
+
+Fix Cloud issues directly in the IaC source code that was used to deploy the misconfigured Cloud resources, by viewing the underlying SCM source code link for a given Cloud issue. With Snyk, you can view resource configurations alongside IaC-specific remediation guidance.
 
 ### Security and compliance posture for security teams
 
-Snyk Cloud’s Web UI and API provide visibility into an Organization’s entire cloud footprint, allowing security teams to easily identify and investigate issues. Users can view all of their cloud accounts in a single, centralized interface.
-
-### Resource configuration snapshots
-
-Snyk Cloud records the configuration attributes of every cloud resource it scans, producing an inventory of cloud infrastructure. This lets you review a resource’s configuration at a given moment in time, and see the attributes that caused a specific issue.
-
-### Powerful filters for triaging issues
-
-You can filter issues based on parameters including severity, cloud provider account ID, and cloud resource type, allowing you to target the most mission-critical resources. You can also group issues by rule or by resource, to more easily view relevant misconfigurations.
+Snyk Cloud provides visibility into an Organization’s entire cloud footprint, allowing security teams to easily identify and investigate issues. Users view reports and focus on issues that impact compliance - with support for more than 10+ compliance standards including CIS Benchmarks, PCI-DSS, SOC 2, and more.

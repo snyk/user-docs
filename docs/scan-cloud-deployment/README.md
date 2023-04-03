@@ -3,6 +3,7 @@
 With Snyk, you can secure cloud infrastructure before and after it is deployed. [Snyk Infrastructure as Code (IaC)](snyk-infrastructure-as-code/) enables you to develop secure cloud infrastructure, and [Snyk Cloud](snyk-cloud/) helps you keep your cloud environment secure.
 
 * Scan [IaC](snyk-infrastructure-as-code/) and [cloud](snyk-cloud/) resources for misconfigurations using a comprehensive set of security rules.
+* [Fix Cloud issues](snyk-cloud/snyk-cloud-issues/fix-cloud-issues-in-iac.md) directly in the IaC source code that was used to deploy the misconfigured Cloud resources, by linking a Cloud issue to the underlying IaC template via a SCM source code link.
 * Receive [fix advice](snyk-infrastructure-as-code/getting-started-snyk-iac.md) so you can make changes directly to code, before applications reach production.
 * Suppress false positives in IaC tests by applying [context from deployed infrastructure](snyk-infrastructure-as-code/integrated-infrastructure-as-code/adding-cloud-context-to-your-iac-test.md).
 * [Detect drift](snyk-infrastructure-as-code/detect-drift-and-manually-created-resources/) and manually created resources in your cloud.

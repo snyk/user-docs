@@ -28,6 +28,10 @@ You can filter issues based on parameters including rule severity and resource t
 
 Integrated IaC records the configuration attributes of every resource it scans for a user's configuration file compared to the Current IaC Projects view. This lets users review a resource’s configuration at a given moment in time and see the attributes that have caused a specific issue.
 
+## Connect Cloud back to IaC
+
+Snyk Cloud and integrated IaC enable you to fix Cloud issues \[link to new feature page] directly in the IaC source code that was used to deploy the misconfigured Cloud resources, by linking a Cloud issue to the underlying IaC template via a SCM source code link.
+
 ## Coming soon
 
 Snyk Integrated IaC is in Limited Availability, and our product and engineering teams are working hard to add additional features. Please reach out to your Snyk account team if you have questions on our near-term roadmap.

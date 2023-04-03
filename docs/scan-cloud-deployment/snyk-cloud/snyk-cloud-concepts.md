@@ -61,3 +61,7 @@ A c**ompliance control** is a specific recommendation or guideline from a compli
 Snyk “maps” security [rules](snyk-cloud-concepts.md#rules) to compliance controls, which means each rule is associated with one or more controls, and each control is associated with one or more rules.
 
 For example, control 2.1.5 of CIS AWS Foundations Benchmark (v1.4.0) is “Ensure that S3 Buckets are configured with ‘Block public access (bucket settings)’” and it maps to the security rule[ SNYK-CC-00195](https://snyk.io/security-rules/cloud/SNYK-CC-00195/s3-bucket-does-not-have-all-block-public-access-options-enabled/), which is “S3 bucket does not have all block public access options enabled.”
+
+## Resource mapping
+
+A resource mapping represents a connection from a Cloud resource to an IaC resource. Snyk determines these connections with mapping artifacts that are generated from Terraform state files when the [snyk iac capture](https://docs.snyk.io/snyk-cli/commands/iac-capture) command is executed locally or in a CI pipeline. Mapping artifacts include details, such as resource IDs, that Snyk utilizes to derive resource mappings. Snyk triggers mapping runs when mapping artifacts are created/updated, or when Cloud environments are created/updated, which in turn creates/updates/deletes resource mappings for a Snyk Organization. See [Fix Cloud issues in IaC](snyk-cloud-issues/fix-cloud-issues-in-iac.md).
