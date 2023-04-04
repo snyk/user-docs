@@ -668,6 +668,28 @@
   **Help Links:**
 
   
+### [SNYK-OSSI-2044](#snyk-ossi-2044)
+#### Expected distro to be present
+  The given Package URL does not have a required distro qualifier.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OSSI-2045](#snyk-ossi-2045)
+#### Unsupported Debian distro
+  This Debian distro is not currently supported.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
 ---
 # OpenSourceProjectIssues
 ### [SNYK-OSSI-OSPI-1001](#snyk-ossi-ospi-1001)
@@ -784,4 +806,4 @@
   
 ---
 
-Genererated at 2023-03-28T13:59:00.185Z
+Genererated at 2023-04-04T07:13:00.922Z
