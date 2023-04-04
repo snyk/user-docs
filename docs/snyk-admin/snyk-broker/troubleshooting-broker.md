@@ -9,9 +9,24 @@ For more comprehensive troubleshooting information, see [Broker Troubleshooting 
 When you are setting up Broker and/or Code Agent for use in Multi-tenant environments, additional variables are required. See [Regional hosting and data residency](../../more-info/data-residency-at-snyk.md) for details.
 {% endhint %}
 
-## Basic Broker Troubleshooting
+This page has information and instructions for the following:
 
-### Monitoring: Healthcheck
+* [Logging with the Broker Client](troubleshooting-broker.md#logging-with-the-broker-client)
+* Basic troubleshooting with the monitoring features, [Healthcheck](troubleshooting-broker.md#monitoring-healthcheck) and [Systemcheck](troubleshooting-broker.md#monitoring-systemcheck)
+* [Troubleshooting Standalone Broker](troubleshooting-broker.md#troubleshooting-standalone-broker)
+* [Troubleshooting Broker with Code Agent](troubleshooting-broker.md#troubleshooting-broker-with-code-agent)
+* [Ensuring your containers stay online when you log out of the host](troubleshooting-broker.md#containers-go-down-when-you-log-out-of-the-host)
+
+## Logging with the Broker Client
+
+By default the log level of the Broker is set to INFO. All SCM responses regardless of HTTP status code re logged by the Broker Client. Set the following environment variables to alter the logging behavior:
+
+| Key               | Default | Notes                                                          |
+| ----------------- | ------- | -------------------------------------------------------------- |
+| LOG\_LEVEL        | info    | Set to "debug" for all logs.                                   |
+| LOG\_ENABLE\_BODY | false   | Set to "true" to include the response body in the Client logs. |
+
+## Monitoring: Healthcheck
 
 Broker exposes an endpoint at `/healthcheck`, which can be used to monitor the health of the running application. This endpoint responds with status code `200 OK` when the internal request is successful and returns `{ ok: true }` in the response body.
 
@@ -19,9 +34,15 @@ In the case of the Broker Client, this endpoint also reports on the status of th
 
 This status can be tested by connecting to the Broker and running [http://localhost:8000/healthcheck](http://localhost:8000/healthcheck) with the default settings.
 
-### **Monitoring: Systemcheck**
+To change the location of the healthcheck endpoint, you can specify an alternative path in an environment variable:
 
-The Broker Client exposes an endpoint at `/systemcheck`, which can be used to validate the brokered service (Git or another SCM) connectivity and credentials. This endpoint causes the Broker Client to make a request to a preconfigured URL and report on the success of the request. The supported configuration is:
+```dockerfile
+ENV BROKER_HEALTHCHECK_PATH /path/to/healthcheck
+```
+
+## **Monitoring: Systemcheck**
+
+The Broker Client exposes an endpoint at `/systemcheck`, which can be used to validate the connectivity and credentials of the brokered service, Git or another SCM, or the brokered container registry . This endpoint causes the Broker Client to make a request to a preconfigured URL and report on the success of the request. The supported configuration is:
 
 * `BROKER_CLIENT_VALIDATION_URL` - the URL to which the request will be made.
 * `BROKER_CLIENT_VALIDATION_AUTHORIZATION_HEADER` - \[optional] the `Authorization` header value of the request. Mutually exclusive with `BROKER_CLIENT_VALIDATION_BASIC_AUTH`.
@@ -37,9 +58,13 @@ Example that enables the `/systemcheck` capability to verify connectivity betwee
 `-e BROKER_CLIENT_VALIDATION_URL=https://[username:password]@acme.com/service/rest/v1/status[/check] /` \
 &#x20;  `snyk/broker:nexus`
 
-## Advanced Broker Troubleshooting
+To change the location of the systemcheck endpoint, you can specify an alternative path in an environment variable:
 
-### Standalone Broker
+```dockerfile
+ENV BROKER_SYSTEMCHECK_PATH /path/to/systemcheck
+```
+
+## Troubleshooting Standalone Broker
 
 If after running the Broker there is still an error connecting to the on-premise Git, use the following troubleshooting steps.
 
@@ -47,7 +72,7 @@ If after running the Broker there is still an error connecting to the on-premise
 2. Review the logs of the container. This can be done on Docker by running `docker logs <container id>`
 3. Review the logs to see where the problem is occurring.
 
-#### Common problems with Standalone Broker
+### Common problems with Standalone Broker
 
 * If there is no log after performing the preceding steps, ensure that the customer has the correct Broker token. If so, ensure that the websocket has been established. Some firewalls will block this
 * Review the HTTP code in the request to the on-premise Git.
@@ -55,7 +80,7 @@ If after running the Broker there is still an error connecting to the on-premise
   * **401/403** - Check credentials.
   * If there is any reference to SSL, this can be caused by a self-signed certificate. Ensure you have either mounted the correct certificate, or use the flag `-e NODE_TLS_REJECT_UNAUTHORIZED=0.`
 
-#### Testing connectivity for Standalone Broker
+### Testing connectivity for Standalone Broker
 
 The Broker and the agents do not have `curl` in their image. To test connectivity to an agent or an endpoint like a Container registry or SCM, you can use the following commands:
 
@@ -72,7 +97,7 @@ https = require("https")
 https.get('<URL_HERE>', res => {console.log(`statusCode: ${res.statusCode}`)})
 ```
 
-### Broker with Code Agent
+## Troubleshooting Broker with Code Agent
 
 <figure><img src="https://lh3.googleusercontent.com/r_qtONpOOEW35gdyoBcWDAiC6j04M76q8mh922SHor4bdNZdt83sj2kP7d5hbzYcWVXp4Q2hZEiCeAVOmcj4Bu1yFPdnyp3rK7kKeBK8DZEd9S133Xn3YdjddclVf5maEbP23Jor" alt="Snyk Code Analysis workflow with Broker"><figcaption><p>Snyk Code Analysis workflow with Broker</p></figcaption></figure>
 
@@ -80,7 +105,7 @@ The best way to troubleshoot the Broker with the Code Agent is to understand the
 
 The vast majority of problems with the Code aAgent are due to traffic being interrupted at one of these points.
 
-#### Troubleshooting the Code Agent
+### Troubleshooting the Code Agent
 
 As for Standalone Broker, in order to troubleshoot the code agent, you must generate logs. Do this by attempting to import a repository.
 
@@ -90,12 +115,12 @@ As for Standalone Broker, in order to troubleshoot the code agent, you must gene
 4. Look for the string `snykgit` . This is the API call from the Broker container to the Code Agent container. If you get anything other than a 200 code, there is some problem with the communication between the Broker and the Code Agent. Ensure you have the proper flags set in the docker run command. Also ensure you have set up the docker network
 5. Review the logs of the Code Agent by running `docker logs <container id>`
 
-#### Common problems with the Code Agent
+### Common problems with the Code Agent
 
 * Communication with the on-premise Git is not functioning. There will be a 404 error on the attempt to clone the code If there is any reference to SSL This can be caused by a self-signed certificate. Ensure you have mounted the correct certificate or use the flag `-e NODE_TLS_REJECT_UNAUTHORIZED=0`
 * If you see the message: `“Uploaded Repo”`, the Code Agent and Broker are configured correctly. If there are still errors on the import log, contact [Snyk Support](https://support.snyk.io/hc/en-us).
 
-### Containers go down when you log out of host
+## Containers go down when you log out of the host
 
 If your containers go down, along with the Broker ecosystem, when you detach from their host, run the following to ensure the containers stay online when you log out:
 
