@@ -63,7 +63,7 @@ Automatic dependency upgrade PRs are only available for the following SCM integr
 5. To save and apply your changes, click one of the following:
 
 * **Apply changes to all overridden projects** option – your changes are saved and will be applied to all the Projects in the Organization. Projects that have Custom Settings will inherit these organization Settings, and their Custom Settings will be overridden. When you click this option, you're asked to confirm the override.\
-  ![Confirmation dialog.](<../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png>)
+  ![Confirmation dialog.](<../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (9).png>)
 * **Save changes** button – your changes are saved and will be applied to all the Projects in the organization that are configured to inherit these Settings from the Organization. Projects that have Custom Settings will not be influenced by this change.
 
 From now on, every time Snyk scans any Project in the organization, it automatically submits Upgrade PRs if the scan discovers that an upgrade is available.
@@ -80,14 +80,14 @@ The Settings on the Project level override the Settings on the organization leve
 
 1.  From the Snyk Web UI, open the Organization that includes the required Project.
 
-    <figure><img src="../../../.gitbook/assets/autoPR_switch_org-13nov2022 (1).png" alt="Switching the Organization"><figcaption><p>Switching the Organization</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/autoPR_switch_org-13nov2022.png" alt="Switching the Organization"><figcaption><p>Switching the Organization</p></figcaption></figure>
 2. In **Projects**, locate and expand the Project for which you want to enable automatic upgrade PRs.
 3.  Click the **Project settings** (<img src="../../../.gitbook/assets/gear.png" alt="" data-size="line"> gear icon) at the end of the project row.
 
-    <figure><img src="../../../.gitbook/assets/image (134) (1) (1) (1) (1) (1).png" alt="Editing Project settings."><figcaption><p>Editing Project settings</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (134) (1) (1) (1).png" alt="Editing Project settings."><figcaption><p>Editing Project settings</p></figcaption></figure>
 4.  In the **Project** **Settings** page, choose the relevant integration tab from the left submenu.
 
-    <figure><img src="../../../.gitbook/assets/image (10) (1) (2) (1) (1) (1) (1) (1).png" alt="Project settings overview."><figcaption><p>Project settings overview</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (10) (1) (2) (1).png" alt="Project settings overview."><figcaption><p>Project settings overview</p></figcaption></figure>
 5. In the **Integration** page, scroll to the **Automatic dependency upgrade pull requests** section and choose one of the following:
    * **Inherit from Integration settings** – apply the Integration Settings of the Organization to the selected Project.
 

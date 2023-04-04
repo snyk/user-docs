@@ -20,6 +20,7 @@ This technology allows Snyk Code to:
 Snyk Code currently supports the following programming languages:
 
 * **C#**
+* **C/C++ (Beta)**
 * **Go**
 * **Java**
 * **JavaScript**
@@ -47,7 +48,7 @@ For a full list of Vulnerability Types/Security Rules that are applied to each s
 
 The following are the supported extensions:
 
-* ejs, es, es6, htm, html, js, jsx, ts, tsx, mjs, cjs, vue, java, erb, haml, rb, rhtml, slim, py, go, ASPX, CS, php, xml, jsp, jspx, cls.
+* ejs, es, es6, htm, html, js, jsx, ts, tsx, mjs, cjs, vue, java, erb, haml, rb, rhtml, slim, py, go, ASPX, CS, php, xml, jsp, jspx, cls, c, cc, cpp, cxx, h, hpp, hxx
 
 ### Framework support
 
@@ -87,6 +88,16 @@ These are some of the explicitly supported frameworks for Python; those are in a
 
 * [Django](https://www.djangoproject.com): a framework for full-stack web application development and server development.
 * [Flask](https://palletsprojects.com/p/flask/) a lightweight [WSGI](https://wsgi.readthedocs.io) web application framework
+
+### C and C++ frameworks
+
+{% hint style="info" %}
+These are some of the explicitly supported frameworks for C/C++; those are in addition to the general support for many frameworks.
+{% endhint %}
+
+* C++ Standard Library - a collection of classes and functions from the C++ core language.
+* POSIX - a C library for standard POSIX systems.&#x20;
+* [Win32](https://win32-framework.sourceforge.net/) - a C++ library used to build windows applications.
 
 ### C# frameworks
 
