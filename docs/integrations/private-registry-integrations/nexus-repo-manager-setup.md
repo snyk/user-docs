@@ -7,7 +7,7 @@ This feature is available with Enterprise plans. See [pricing plans](https://sny
 
 {% hint style="info" %}
 **Supported Projects**\
-****The Nexus Repository Manager integration currently supports [Node.js](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-javascript/) (npm and Yarn) and [Maven](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-gradle-maven.md) projects. Gradle projects are not currently supported.
+The Nexus Repository Manager integration currently supports [Node.js](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-javascript/) (npm and Yarn) and [Maven](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-gradle-maven.md) projects. Gradle projects are not currently supported.
 {% endhint %}
 
 Connecting Nexus Repository Manager enables Snyk to resolve all direct and transitive dependencies of packages hosted on the Nexus registry and calculate a more complete, accurate dependency graph and related vulnerabilities.
@@ -36,7 +36,7 @@ These instructions apply to configuring publicly accessible instances. For instr
 {% hint style="info" %}
 If you do not see the **Snyk Broker** switch, you do not have the necessary permissions and can only add a publicly accessible instance.
 
-Submit a request  to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new) if you want to add a private registry.
+Submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new) if you want to add a private registry.
 {% endhint %}
 
 When you have permissions to add a private registry, continue with the instructions on [Set up Snyk Broker with Nexus Repository Manager](../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/set-up-snyk-broker-with-nexus-repository-manager.md).
@@ -47,7 +47,7 @@ On the page to configure Nexus, enter the information for the version you are us
 
 {% tabs %}
 {% tab title="Nexus 3" %}
-* Enter the URL of your Nexus instance;  this **must** end with `/repository`
+* Enter the URL of your Nexus instance; this **must** end with `/repository`
 * Enter Username
 * Enter Password
 * Click **Save**
@@ -65,7 +65,7 @@ On the page to configure Nexus, enter the information for the version you are us
 
 If your Nexus server is running behind a reverse proxy, for example, Nginx, the URL might not end with the default `/repository` for Nexus 3 or `/nexus/content` for Nexus 2, depending on what routes have been configured in the reverse proxy. If this is the case, make sure to use the URL configured in the reverse proxy.
 
-Example: for Nexus 3: if `http://nexus.company.io/repository` is mapped to `http://nexus.company.io/my-company/my-repository`,  use `http://nexus.company.io/my-company/my-repository`.
+Example: for Nexus 3: if `http://nexus.company.io/repository` is mapped to `http://nexus.company.io/my-company/my-repository`, use `http://nexus.company.io/my-company/my-repository`.
 
 Example: for Nexus 2: if `http://nexus.company.io/nexus/content` is mapped to `http://nexus.company.io/my-nexus-content`, use `http://nexus.company.io/my-nexus-content`.
 
