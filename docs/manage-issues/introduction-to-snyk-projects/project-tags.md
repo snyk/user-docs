@@ -25,15 +25,15 @@ Group and Organization admins can perform all these actions. Collaborators can p
 
 You can also add and remove tags using:
 
-* &#x20;[Snyk API Project tags endpoints](https://snyk.docs.apiary.io/#reference/projects/project-tags/add-a-tag-to-a-project)&#x20;
-* The Snyk CLI option  `--project-tags`. See the [CLI commands and options summary](../../snyk-cli/cli-reference.md). for the commands that support this option.
+* [Snyk API Project tags endpoints](https://snyk.docs.apiary.io/#reference/projects/project-tags/add-a-tag-to-a-project)
+* The Snyk CLI option `--project-tags`. See the [CLI commands and options summary](../../snyk-cli/cli-reference.md). for the commands that support this option.
 
 #### Tag conditions
 
 The following conditions apply to Project tags:
 
 * Keys are limited to 30 characters
-* Values are limited to 50 characters.
+* Values are limited to 256 characters.
 * Both keys and values allow only alphanumerics and the following characters **`-`**, **`_`**
 * You can create 1000 unique key and value combinations per group, and apply 10 unique tags per Project.
 * Reusing a key and value combination does not add to the count.
@@ -72,7 +72,7 @@ If a tag exists in your Group, you can apply it to any Snyk Project.
 
 ### Filter Projects listing by tags
 
-When  **Group by none** (ungrouped) is applied to the Projects listing page, you can filter the list by tags using the option in the menu.
+When **Group by none** (ungrouped) is applied to the Projects listing page, you can filter the list by tags using the option in the menu.
 
 There is a filter by tag autocomplete. This is intentionally limited to a small number of results. If your tag is not displayed, enter more characters for the tag until it rises to the top of the results.
 

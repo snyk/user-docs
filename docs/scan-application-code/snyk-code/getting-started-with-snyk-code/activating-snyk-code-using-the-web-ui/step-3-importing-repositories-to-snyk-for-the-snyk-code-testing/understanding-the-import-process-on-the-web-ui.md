@@ -14,7 +14,7 @@ When the import is completed, a confirmation message appears on the **Projects**
 
 During the import process, Snyk Code analyzes the directories and files in the selected repositories. Then, Snyk Code creates one Snyk Project, called **Code** **analysis**, for each imported repository, to contain the test results. The Snyk Code testing is already performed during the import process, and once the import is completed, the Snyk Code results are displayed in the **Code** **analysis** Project without any additional action on your part:
 
-<figure><img src="../../../../../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (146) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In addition, when the import is completed, you receive an email informing you on the import completion. This confirmation email also contains links to the results of the import:
 
