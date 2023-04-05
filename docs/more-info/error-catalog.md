@@ -690,6 +690,28 @@
   **Help Links:**
 
   
+### [SNYK-OSSI-2046](#snyk-ossi-2046)
+#### Expected namespace to be present
+  The given Package URL does not have a required namespace.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OSSI-2047](#snyk-ossi-2047)
+#### Vendor not supported
+  The given Package URL does not contain a supported vendor.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
 ---
 # OpenSourceProjectIssues
 ### [SNYK-OSSI-OSPI-1001](#snyk-ossi-ospi-1001)
@@ -806,4 +828,4 @@
   
 ---
 
-Genererated at 2023-04-04T07:13:00.922Z
+Genererated at 2023-04-05T08:08:43.159Z
