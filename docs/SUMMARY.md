@@ -816,3 +816,4 @@
   * [Snyk for Java developers](guides/snyk-for-java-developers.md)
   * [Snyk for JavaScript / Node.js developers](guides/snyk-for-javascript-node.js-developers.md)
   * [Snyk for .NET developers](guides/snyk-for-.net-developers.md)
+  * [Snyk for C/C++ Developers](guides/snyk-for-c-c++-developers.md)
