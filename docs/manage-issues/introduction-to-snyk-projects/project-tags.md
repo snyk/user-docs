@@ -34,7 +34,8 @@ The following conditions apply to Project tags:
 
 * Keys are limited to 30 characters
 * Values are limited to 256 characters.
-* Both keys and values allow only alphanumerics and the following characters **`-`**, **`_`**
+* Keys allow only alphanumerics and the following characters **`-`**, **`_`**
+* Values allow these characters plus **`/`**, **`:`**, **`?`**, **`#`**, **`@`**, **`&`**, **`+`**, **`=`**, **`%`**, **`~`**
 * You can create 1000 unique key and value combinations per group, and apply 10 unique tags per Project.
 * Reusing a key and value combination does not add to the count.
 
