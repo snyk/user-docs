@@ -268,8 +268,7 @@ The following `snyk` command line options are supported with the `snyk test --un
 `--max-depth`\
 `--print-dep-paths`\
 `--target-reference=<TARGET_REFERENCE>` (`snyk monitor` only)\
-`--project-name=<c-project>` (`snyk monitor` only)\
-``
+`--project-name=<c-project>` (`snyk monitor` only)
 
 For more information about command line options see the Snyk help docs: [Options for scanning with `snyk test --unmanaged`](https://docs.snyk.io/snyk-cli/commands/test#options-for-scanning-using-unmanaged) or [`snyk monitor --unmanaged`](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-scanning-using-unmanaged).
 
@@ -291,18 +290,6 @@ This creates a snapshot of dependencies and vulnerabilities and imports them int
 Importing a project with unmanaged dependencies creates a new project:
 
 <figure><img src="../../../.gitbook/assets/kuva.png" alt="Project with unmanaged dependencies"><figcaption><p>Project with unmanaged dependencies</p></figcaption></figure>
-
-## Known issues with Snyk for C/C++
-
-**Scanning on Windows**
-
-Many open-source projects in Git use Unix line endings. By default, Git on Windows converts Unix line endings to Windows line endings and only converts them back for the actual commits. The Snyk database contains source code signatures with the original line endings as defined in the individual Projects, so when you scan on Windows, the signatures generated for the files with Windows line endings are different from the signatures in the Snyk database. In this case, no dependencies will likely be found.
-
-To scan a Project with Unix line endings on Windows, disable git line endings conversion. To configure this globally, run:
-
-```shell
-git config --global core.autocrlf false
-```
 
 ## Frequently asked questions, Snyk for C/C++
 
