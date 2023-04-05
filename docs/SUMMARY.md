@@ -711,6 +711,7 @@
     * [Snyk API rate limits](snyk-api-info/using-snyk-api/snyk-api-rate-limits.md)
     * [Relationships in Snyk REST API](snyk-api-info/using-snyk-api/relationships-in-snyk-rest-api.md)
     * [Request body schema in Snyk REST API](snyk-api-info/using-snyk-api/request-body-schema-in-snyk-rest-api.md)
+    * [Find who created a service account](snyk-api-info/using-snyk-api/find-who-created-a-service-account.md)
     * [Choosing a service account type to use with Snyk APIs](snyk-api-info/using-snyk-api/choosing-a-service-account-type-to-use-with-snyk-apis.md)
     * [Solutions for specific use cases](snyk-api-info/using-snyk-api/solutions-for-specific-use-cases.md)
     * [Find the differences between versions in the Snyk REST API](snyk-api-info/using-snyk-api/find-the-differences-between-versions-in-the-snyk-rest-api.md)

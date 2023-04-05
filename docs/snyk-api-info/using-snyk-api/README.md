@@ -19,6 +19,7 @@ This group of pages provides detailed information about aspects of using the Sny
 * [Snyk API **rate limits**](snyk-api-rate-limits.md)
 * [**Relationships** in Snyk REST API](relationships-in-snyk-rest-api.md)
 * [Request body **schema** in Snyk REST API](request-body-schema-in-snyk-rest-api.md)
+* [Find who created a **service account**](find-who-created-a-service-account.md)
 * [Choosing a **service account type** to use with Snyk APIs](choosing-a-service-account-type-to-use-with-snyk-apis.md)
 * [**Solutions** for specific use cases](solutions-for-specific-use-cases.md)
 * [Find the differences between **versions** in the Snyk REST API](find-the-differences-between-versions-in-the-snyk-rest-api.md)
