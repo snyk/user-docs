@@ -17,9 +17,8 @@ You can add a single Dockerfile to each image that you've imported.
 2. From the **Project** settings page, click **Configure Dockerfile** and then select the relevant Git repository.
 3. When the **Add Projects** view appears, examine the list of all repositories from the Git account with which you integrated, grouped by Organization and personal account.
 4. Checkmark the relevant repo from which to import the Dockerfile.
-5. Step 2 loads.
-6. Enter the relative path in the Path to your Dockerfile field in the following format: /path/dockerfile.
-7. Click **Save**.
+5. Enter the relative path in the Path to your Dockerfile field in the following format: /path/dockerfile.
+6. Click **Save**.
 
 <figure><img src="../../.gitbook/assets/image (45) (1).png" alt="Configure Dockerfile view"><figcaption><p>Configure Dockerfile view</p></figcaption></figure>
 
