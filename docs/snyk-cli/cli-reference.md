@@ -34,7 +34,7 @@ Snapshot and continuously monitor a project for open source vulnerabilities and 
 
 Print a list of the `snyk container` commands, `snyk container monitor` and `snyk container test`.
 
-### ``[`snyk container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)``
+### [`snyk container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)
 
 Capture the container image layers and dependencies and monitor for vulnerabilities on [snyk.io](https://snyk.io)
 

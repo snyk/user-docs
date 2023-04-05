@@ -9,7 +9,7 @@ Integration with Artifactory Repository is available with Enterprise plans. See 
 
 {% hint style="info" %}
 **Prerequisites**\
-****Ask your Snyk account team to provide you with a Broker token or generate it from the Snyk Web UI.
+Ask your Snyk account team to provide you with a Broker token or generate it from the Snyk Web UI.
 
 You need Docker or a way to run Docker Linux containers.
 

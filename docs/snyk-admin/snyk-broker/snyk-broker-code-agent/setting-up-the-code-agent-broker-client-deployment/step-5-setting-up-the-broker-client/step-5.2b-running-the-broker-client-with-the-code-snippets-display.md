@@ -8,7 +8,7 @@ When such additional parameters are required, they are indicated in this section
 
 The following explains how to set up the Broker Client in a way that displays code snippets of the Snyk Code results on the Web UI:
 
-<figure><img src="../../../../../.gitbook/assets/Broker - Results - with code snippets (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Broker Client run with display of code snippets"><figcaption><p>Broker Client run with display of code snippets</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Broker - Results - with code snippets (1).png" alt="Broker Client run with display of code snippets"><figcaption><p>Broker Client run with display of code snippets</p></figcaption></figure>
 
 To set up the Broker Client without the code snippets, see [Step 5.2a – Running the Broker Client without the code snippet display](step-5.2a-running-the-broker-client-without-the-code-snippet-display.md).
 
@@ -97,7 +97,7 @@ Once the Broker Client setup is completed successfully, the following message ap
 
 `{ ..., "msg":"successfully established a websocket connection to the broker server", ... }`
 
-<figure><img src="../../../../../.gitbook/assets/Broker Client - Setup success message (1).png" alt="Confirmation message for Broker Client setup"><figcaption><p>Confirmation message for Broker Client setup</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Broker Client - Setup success message.png" alt="Confirmation message for Broker Client setup"><figcaption><p>Confirmation message for Broker Client setup</p></figcaption></figure>
 
 **To verify the setup and details of the Broker Client container**, \*\*\*\* run:
 

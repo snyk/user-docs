@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-****This feature is available to customers on Snyk Enterprise plans.
+This feature is available to customers on Snyk Enterprise plans.
 {% endhint %}
 
 Snyk offers an endpoint to generate SBOM documents for projects that are continuously being monitored for issues.

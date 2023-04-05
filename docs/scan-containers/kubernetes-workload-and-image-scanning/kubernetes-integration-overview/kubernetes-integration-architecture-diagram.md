@@ -1,6 +1,6 @@
 # Kubernetes integration architecture diagram
 
-![](<../../../.gitbook/assets/System Diagram-Kubernetes integration (1).jpg>)
+![](<../../../.gitbook/assets/System Diagram-Kubernetes integration.jpg>)
 
 1. Customer's Snyk Org is enabled for the Kubernetes integration.
 2. Customer can install Snyk Controller into their Kubernetes cluster.

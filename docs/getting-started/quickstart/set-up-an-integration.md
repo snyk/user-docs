@@ -18,17 +18,17 @@ Immediately after you [Create a Snyk account](create-a-snyk-account/), you will 
 
 For example:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption><p>Choose integration method</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (496).png" alt=""><figcaption><p>Choose integration method</p></figcaption></figure>
 
 If you select **GitHub**, then fill in the details as prompted.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (2) (1).png" alt=""><figcaption><p>Set access permissions</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Set access permissions</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (529).png" alt=""><figcaption><p>Configure automation settings &#x26; authenticate</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (367).png" alt=""><figcaption><p>Configure automation settings &#x26; authenticate</p></figcaption></figure>
 
 Finally, you can [Import a Project](import-a-project.md) to scan:
 
-<figure><img src="../../.gitbook/assets/image (160) (1).png" alt=""><figcaption><p>Add your first project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (248) (1).png" alt=""><figcaption><p>Add your first project</p></figcaption></figure>
 
 ### Manual process (any time)
 

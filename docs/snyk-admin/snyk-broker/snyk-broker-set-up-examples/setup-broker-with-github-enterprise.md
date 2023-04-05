@@ -4,7 +4,7 @@ Follow the instructions on this page to set up GitHub Enterprise with Snyk Broke
 
 {% hint style="info" %}
 **Prerequisites**\
-****Ask your Snyk account team to provide you with a Broker token.
+Ask your Snyk account team to provide you with a Broker token.
 
 You need Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 {% endhint %}

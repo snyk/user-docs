@@ -62,9 +62,9 @@ The response provides a list of the vulnerabilities found for the package identi
 `Upgrade com.fasterxml.woodstox:woodstox-core to version 5.3.0 or higher.`&#x20;
 
 **`References:`**\
-``[`GitHub Commit`](https://github.com/FasterXML/woodstox/commit/7937f97c638ef8afd385ebf4a675a9b096ccdd57)``\
-``[`GitHub Issue`](https://github.com/FasterXML/woodstox/issues/50)``\
-``[`GitHub Issue`](https://github.com/FasterXML/woodstox/issues/61)``
+[`GitHub Commit`](https://github.com/FasterXML/woodstox/commit/7937f97c638ef8afd385ebf4a675a9b096ccdd57)\
+[`GitHub Issue`](https://github.com/FasterXML/woodstox/issues/50)\
+[`GitHub Issue`](https://github.com/FasterXML/woodstox/issues/61)
 
 {% hint style="info" %}
 The response is continuous, divided here to allow for explanations.
@@ -188,7 +188,7 @@ Where applicable, **pagination links for the results** are included as follows:
 The following are **error states** which you may receive when using the API. If you experience issues not covered here or are having trouble resolving these, contact your Solution Engineer or Technical Success Manager, or submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
 
 **Invalid PURL**\
-****400\
+400\
 Make sure that the purl specification you provided is a valid purl. For more information see the [Package URL specification](https://github.com/package-url/purl-spec).
 
 **Unsupported Ecosystem**\
@@ -204,7 +204,7 @@ Ensure you specify a namespace in the package URL and then try again. For more i
 Remove the component which is not supported and try to make the request again. The endpoint only accepts particular components. For more information see the [Package URL specification](https://github.com/package-url/purl-spec).
 
 **Your organization is not authorized to perform this action.**\
-****403\
+403\
 To get access contact your Solution Engineer or Technical Success Manager, or the administrator for your team.
 
 **Package not found**\
@@ -225,19 +225,19 @@ The limit and offset supplied query parameters must be as follows:
 The default parameters for this request are limit = 1000, and offset >= 0.
 
 **Authorization request failure**\
-****500\
+500\
 This issue is unexpected, and the service should recover quickly. If it does not, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
 
 **Internal server error**\
-****500\
+500\
 This issue is unexpected, and the service should recover quickly. If it does not, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
 
 **Vulnerability service unavailable**\
-****503\
+503\
 This issue is unexpected, and the service should recover quickly. If it does not, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
 
 **Vulnerability service error**\
-****500\
+500\
 This issue is unexpected, and the service should recover quickly. If it does not, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
 
 An example of this error response follows:

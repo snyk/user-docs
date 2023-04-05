@@ -4,12 +4,12 @@ Follow the instructions on this page to set up Snyk Azure Repos with Snyk Broker
 
 {% hint style="info" %}
 **Feature availability**\
-****Snyk supports only Azure DevOps/TFS 2020 or above.
+Snyk supports only Azure DevOps/TFS 2020 or above.
 {% endhint %}
 
 {% hint style="info" %}
 **Prerequisites**\
-****Ask your Snyk account team to provide you with a Broker token.
+Ask your Snyk account team to provide you with a Broker token.
 
 You need Docker or a way to run Docker Linux containers. Some Docker deployments for Windows run only Windows containers. Ensure that your deployment is capable of running Linux containers.
 {% endhint %}
