@@ -125,9 +125,10 @@ Snyk Code can analyze your C# code using IDE, CLI, and Git integration.&#x20;
 
     The CLI supports the following:
 
-    * **projects.assets.json**
-      * Run "**dotnet restore"** to generate the necessary `projects.assets.json` prior to running the "**snyk test**" command.
-      * The solution file contains pointers to the necessary files. Note that the projects themselves must have `projects.assets.json` files to be able to be scanned. You can point the Snyk CLI to the solution file by using `--file=<filename>.sln`.
+    * **project.assets.json**
+      * Snyk can scan project.assets.json to determine dependencies, but the file must be generated. Similarly if you point to the solution file (.sln) you must generate the file first
+        * Run "**dotnet restore"** to generate the necessary `project.assets.json` prior to running the "**snyk test**" command.
+        * The solution file contains pointers to the  files necessary to perform the analysis. Note that the projects themselves must have `project.assets.json` files to be able to be scanned. If you want Snyk to the solution file as an entry point for scanning, you can point the Snyk CLI to the solution file by using `--file=<filename>.sln`.
       * Where multiple target frameworks are used in the same project, the CLI scan returns results for the first target framework that is declared in the project.
     * packages.config
       * run "**nuget install -OutputDirectory packages**" prior to running the **snyk test** command
