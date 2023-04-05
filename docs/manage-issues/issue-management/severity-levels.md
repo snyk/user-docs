@@ -12,12 +12,12 @@ Use severity levels to help you with [vulnerability assessment](https://snyk.io/
 
 Severity levels indicate the assessed level of risk, as one of **C**ritical / **H**igh / **M**edium / **L**ow:
 
-| Icon                                                                                                                  | Level        | Description                                                                                                                                |
-| --------------------------------------------------------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| <img src="../../.gitbook/assets/image (131) (1) (1) (1).png" alt="" data-size="line">                                 | **Critical** | This may allow attackers to access sensitive data and run code on your application                                                         |
-| <img src="../../.gitbook/assets/image (103) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original"> | **High**     | This may allow attackers to access sensitive data in your application                                                                      |
-| ![](<../../.gitbook/assets/image (133) (1).png>)                                                                      | **Medium**   | Under some conditions, this may allow attackers to access sensitive data on your application                                               |
-| ![](<../../.gitbook/assets/image (259) (1) (1).png>)                                                                  | **Low**      | Application may expose some data that allows vulnerability mapping, which can be used with other vulnerabilities to attack the application |
+| Icon                                                                                                                              | Level        | Description                                                                                                                                |
+| --------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| <img src="../../.gitbook/assets/image (131) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">                                 | **Critical** | This may allow attackers to access sensitive data and run code on your application                                                         |
+| <img src="../../.gitbook/assets/image (103) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="" data-size="original"> | **High**     | This may allow attackers to access sensitive data in your application                                                                      |
+| ![](<../../.gitbook/assets/image (133) (1) (1) (1) (1).png>)                                                                      | **Medium**   | Under some conditions, this may allow attackers to access sensitive data on your application                                               |
+| ![](<../../.gitbook/assets/image (259) (1) (1) (1).png>)                                                                          | **Low**      | Application may expose some data that allows vulnerability mapping, which can be used with other vulnerabilities to attack the application |
 
 {% hint style="info" %}
 Severity levels also apply to license issues. See [Licenses](../../scan-application-code/snyk-open-source/licenses/).
@@ -35,7 +35,7 @@ Severity levels are displayed throughout Snyk, to show this information at all t
 
 For example, in the **Pending tasks** section of the Dashboard:
 
-<img src="../../.gitbook/assets/image (158) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (150) (1) (1).png" alt="" data-size="original">
 
 Associated with your [Snyk Projects](../introduction-to-snyk-projects/):
 

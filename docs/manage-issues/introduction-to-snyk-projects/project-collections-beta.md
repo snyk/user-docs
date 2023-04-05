@@ -29,11 +29,11 @@ In addition, you will have more filter options available when the “Group by no
 1. On the right-hand side of the Project listing page beneath the **View Import Log** button, select **Group by none** from the drop-down list.
 2. Click the drop-down next to the **FILTERS** drop-down, and click **Create new view**. If you already have filters selected, you can click **Save Changes** next to the drop-down and follow the next step.
 
-<figure><img src="../../.gitbook/assets/image (2) (3).png" alt="Create a new project view"><figcaption><p>Create a new Project view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (3) (2).png" alt="Create a new project view"><figcaption><p>Create a new Project view</p></figcaption></figure>
 
 3. Enter a name for your Project view in the available field, then click **Create view.**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (2).png" alt="Enter a name for your Project view"><figcaption><p>Enter a name for your Project view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (7).png" alt="Enter a name for your Project view"><figcaption><p>Enter a name for your Project view</p></figcaption></figure>
 
 Your new view is created and is automatically selected. You can click the icon next to your Project view to duplicate, rename, or delete it.
 

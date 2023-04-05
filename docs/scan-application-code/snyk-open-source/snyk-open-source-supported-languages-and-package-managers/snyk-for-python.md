@@ -55,9 +55,11 @@ They are removed before resolving the dependencies in the files.
 
 ### Poetry
 
-To build the dependency tree for a Poetry application, Snyk uses `pyproject.toml` and `poetry.lock` files.&#x20;
+To build the dependency tree for a Poetry application, Snyk uses `pyproject.toml` and `poetry.lock` files. Both these files must be present for Snyk to scan Poetry dependencies and identify issues.
 
-Note both these files must be present for Snyk to scan Poetry dependencies and identify issues.
+{% hint style="info" %}
+[PEP 621](https://peps.python.org/pep-0621/) is a standard for defining direct dependencies in `pyproject.toml` files, which is different to how Poetry does this. PEP 621 is not currently supported by Snyk.
+{% endhint %}
 
 ### Pipenv
 
