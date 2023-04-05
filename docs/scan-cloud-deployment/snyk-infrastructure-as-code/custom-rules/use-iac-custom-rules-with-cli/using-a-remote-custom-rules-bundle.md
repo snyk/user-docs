@@ -60,7 +60,7 @@ Similarly, configuring them on the group level can be done by navigating to `Set
 
 * Configure the OCI registry URL and tag for your remote bundle of custom rules, and click **Save changes** to save.
 
-![](<../../../../.gitbook/assets/image (184) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (141).png>)
 
 Your remote bundle of custom rules is now configured and will be used when testing IaC files.
 
@@ -74,11 +74,11 @@ In order to override the group's configurations, go to the organization's `Rules
 
 * Initially, the section is populated with the configurations inherited from the organization's group.
 
-![](<../../../../.gitbook/assets/image (165) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (191).png>)
 
 * Update the configurations to those customized for your organization, and click **Save changes**.
 
-![](<../../../../.gitbook/assets/image (196).png>)
+![](<../../../../.gitbook/assets/image (263).png>)
 
 * Now, configurations on the group level will not override these customized settings for your organization.
 

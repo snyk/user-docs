@@ -58,7 +58,7 @@ See [PR Checks](../../scan-application-code/run-pr-checks/) for details of Snykâ
 
 This example shows a pull request to add the `fullpage.js` package to a JavaScript application. Although this change passes the security policy check (the latest version of the package has no known vulnerability), it fails the license policy check (because of the GPLv3 license included which violates the companyâ€™s license policy).
 
-<figure><img src="../../.gitbook/assets/image (424) (2).png" alt="PR Check fail on license compliance"><figcaption><p>PR Check fail on license compliance</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (424).png" alt="PR Check fail on license compliance"><figcaption><p>PR Check fail on license compliance</p></figcaption></figure>
 
 ## Apply policies in CI/CD
 

@@ -46,7 +46,7 @@ Choose the required permissions and click **Update Role Permissions**.
 
 When creating the role is complete, you will see the confirmation message at the top.
 
-<figure><img src="../../.gitbook/assets/image (1) (2).png" alt="Role creation confirmation message"><figcaption><p>Role creation confirmation message</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13).png" alt="Role creation confirmation message"><figcaption><p>Role creation confirmation message</p></figcaption></figure>
 
 ### Edit a Role
 
@@ -58,7 +58,7 @@ When creating the role is complete, you will see the confirmation message at the
 
 When updating the role is complete, you will see the confirmation message at the top.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt="Role change confirmation message"><figcaption><p>Role change confirmation message</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (490).png" alt="Role change confirmation message"><figcaption><p>Role change confirmation message</p></figcaption></figure>
 
 ### Duplicate a Role
 
@@ -72,7 +72,7 @@ You can use the Duplicate button next to each role in the Member Roles list page
 
 Enter a unique name and description and click the **Duplicate Role** button. Group Admin can then edit this role to assign new permissions to it or rescind any permissions already assigned.
 
-<figure><img src="../../.gitbook/assets/image (394) (1) (1) (1) (1).png" alt="Enter new role details"><figcaption><p>Enter new role details</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (408).png" alt="Enter new role details"><figcaption><p>Enter new role details</p></figcaption></figure>
 
 ### Delete a Role
 
@@ -98,13 +98,13 @@ In the Web UI, select an **Org** > **Members**.
 
 For any member (Name) except a Group Admin, the user can select the dropdown next to the current role and choose any role to assign that role to the member.
 
-<figure><img src="../../.gitbook/assets/image (104) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Select member role"><figcaption><p>Select member role</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (388).png" alt="Select member role"><figcaption><p>Select member role</p></figcaption></figure>
 
 Click the **Add members** button > **Invite new members**.\
 \
 You can invite new members to the org by assigning them a specified role.
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt="Invite new members"><figcaption><p>Invite new members</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (76).png" alt="Invite new members"><figcaption><p>Invite new members</p></figcaption></figure>
 
 Choose **Add members** button > **Add existing members** to promote current Group Members to an org-specific role.
 
@@ -112,7 +112,7 @@ Choose **Add members** button > **Add existing members** to promote current Grou
 Snyk prevents users from assigning roles to others that have more privileges than what they already have. You would encounter the following error while trying to update the role of a member, invite a new member, or add an existing member with a role that has more privileges than the logged in user.
 {% endhint %}
 
-![User cannot assign more privileged role to another user](<../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05.png>)
+![User cannot assign more privileged role to another user](<../../.gitbook/assets/Screenshot 2022-08-01 at 15.51.05 (1).png>)
 
 ### Assign roles to Service Accounts
 

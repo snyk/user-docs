@@ -11,9 +11,9 @@ This page describes how to use Snyk to scan Python projects.
 | Package managers / Features                   | CLI support | Git support | License scanning | Fix PRs |
 | --------------------------------------------- | ----------- | ----------- | ---------------- | ------- |
 | [Pip and PyPI](https://pypi.org/project/pip/) | ✔︎          | ✔︎          | ✔︎               | ✔︎      |
+| [Poetry](https://python-poetry.org)           | ✔︎          | ✔︎          | ✔︎               |         |
 | [pipenv](https://pipenv.pypa.io/en/latest/)   | ✔︎          |             | ✔︎               |         |
 | setup.py                                      | ✔︎          |             | ✔︎               |         |
-| [Poetry](https://python-poetry.org)           | ✔︎          |             | ✔︎               |         |
 
 {% hint style="info" %}
 **Feature availability**\
@@ -48,9 +48,20 @@ Install the missing packages by invoking pip install, for example:
 python3 -m pip install -r requirements.txt
 ```
 
+{% hint style="warning" %}
+URLs in `requirements.txt` files are not supported, as this introduces a security risk.\
+They are removed before resolving the dependencies in the files.
+{% endhint %}
+
+### Poetry
+
+To build the dependency tree for a Poetry application, Snyk uses `pyproject.toml` and `poetry.lock` files.&#x20;
+
+Note both these files must be present for Snyk to scan Poetry dependencies and identify issues.
+
 ### Pipenv
 
-To build the dependency tree, run `pipenv install` as Snyk needs this to create the `pipenv graph` which is then used for the dependency scan to fulfill itself.
+To build the dependency tree, run `pipenv install` as Snyk needs this to create the `pipenv graph` which is then used to generate the dependency tree.
 
 Snyk uses the built dependency tree to analyze the `Pipfile`.
 
@@ -66,17 +77,6 @@ snyk test --file=setup.py
 
 You can convert `setup.py` to `requirements.txt` by installing the packages into a virtual environment and then running `pip freeze`.
 
-### Poetry
-
-To find issues in a Python Poetry application Snyk uses `pyproject.toml` and `poetry.lock` files. Note both these files must be present for Snyk to identify Poetry dependencies and test for issues.
-
-### Additional support details for Snyk for Python
-
-URLs in `requirements.txt` files are not supported, as this introduces a security risk.\
-They are removed before resolving the dependencies in the files.
-
-Refer also to the [snyk-python-plugin repository](https://github.com/snyk/snyk-python-plugin/blob/master/lib/types.ts).
-
 ## Snyk CLI for Python Projects
 
 The way Snyk analyzes and builds the tree varies depending on the language and package manager of the Project.
@@ -89,15 +89,15 @@ The way Snyk analyzes and builds the tree varies depending on the language and p
 
 ### Snyk CLI options for Python
 
-For information about the `snyk test` options available for use with Python, see [Options for Python projects](https://docs.snyk.io/snyk-cli/commands/test#options-for-python-projects) in the `test` help. For the available `snyk monitor` options, see [Options for Python projects](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-python-projects) in the `monitor` help.
+For information about the `snyk test` options available for use with Python, see [Options for Python projects](https://docs.snyk.io/snyk-cli/commands/test#options-for-python-projects) in the `test` help.&#x20;
 
-## Git services for Python projects
+For the available `snyk monitor` options, see [Options for Python projects](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-python-projects) in the `monitor` help.
 
-Python projects can be imported from any of the Git repositories Snyk supports.
+## Git services for pip projects
 
-To test your Python Projects that use pip as a package manager, Snyk analyzes your `requirements.txt` file. You must have this file in your repository before importing.
+To test Python projects that use pip as a package manager, Snyk analyzes your `requirements.txt` file. You must have this file in your repository before importing.
 
-If you have renamed your `requirements.txt` files, for example, if you have renamed a file to `requirements-dev.txt`, Snyk tries to import every file that follows the `**/*req*.txt` convention as a Python project.
+If you have renamed your `requirements.txt` files, for example if you have renamed a file to `requirements-dev.txt`, Snyk tries to import every file that follows the `**/*req*.txt` convention as a Python project.
 
 If you have placed your files in a requirements folder, for example, if you have placed your file under `requirements/requirements.txt,` Snyk tries to import every file that follows the `**/requirements/*.txt` convention as a Python project.
 
@@ -109,9 +109,26 @@ Example:
 dephell deps convert --from=conda --to=requirements.txt
 ```
 
+## Git services for Poetry projects
+
+To test Python projects that use the Poetry package manager, Snyk analyzes your `pyproject.toml` and `poetry.lock` files. You must have these files in your repository before importing.
+
+You can choose whether Snyk should include [dev dependencies](https://python-poetry.org/docs/managing-dependencies/) when scanning your Poetry projects.
+
+Snyk regards non-dev dependencies to be those declared in `tool.poetry.dependencies` (the implicit `main` group). All others are classed as dev dependencies.
+
+By default Poetry dev dependencies are not included in scans. To change this adjust your settings as follows:
+
+* Log in to your account and navigate to the relevant Group and Organization to manage.
+* Select **Settings** > **Languages**.
+* Select **Edit settings** for **Python**.
+* Toggle dev dependency scanning on or off under **Poetry dev dependencies**.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-03 at 16.00.22.png" alt=""><figcaption><p>Poetry dev dependency settings</p></figcaption></figure>
+
 ## Using different Python versions
 
-Some Python projects may have dependencies that are only valid using Python 3. By default, Snyk scans with Python 2.
+Some Python projects may have dependencies that are only valid using Python 3. By default, Snyk scans with Python 3.
 
 You can adjust the version of Python that Snyk uses to scan dependencies in both the CLI and Git integration.
 
@@ -131,7 +148,7 @@ For details see the [Test command help](https://docs.snyk.io/snyk-cli/commands/t
 When testing Projects imported from Git, Snyk uses Python 2 or Python 3. Currently, for Python 2 the version is 2.7.16, and for Python 3 the version is 3.7.4.
 {% endhint %}
 
-By default Snyk tests using Python 2.
+By default Snyk tests using Python 3.
 
 To define which Python major version Snyk uses to test your Git imported Projects, use either Organization settings or a `.snyk` [policy file](https://docs.snyk.io/fixing-and-prioritizing-issues/policies/the-.snyk-file).
 
@@ -142,7 +159,7 @@ To define the Python version for all Projects in an Organization:
 3. Select **Edit settings** for **Python**.
 4. Select **Python 2** or **Python 3** to use when testing projects for this organization.
 
-<figure><img src="../../../.gitbook/assets/mceclip1-18-.png" alt="Selecting the Python version"><figcaption><p>Selecting the Python version</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-03 at 15.32.06.png" alt=""><figcaption><p>Python version settings</p></figcaption></figure>
 
 Snyk recommends you create different Organizations to work with different Python versions.
 
