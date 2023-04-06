@@ -73,7 +73,7 @@ Snyk knows how important it is for you to protect your data. Snyk products only 
 {% tab title="Snyk Container" %}
 **Snyk Container**
 
-![Snyk Container](<../.gitbook/assets/image (201) (1).png>)
+![Snyk Container](<../.gitbook/assets/image (201) (1) (1) (1) (1).png>)
 
 * Snyk accesses and stores package versions, executable hashes and versions, operating system, container image metadata (for example, rootfs hashes, history), image ID.
 * Snyk accesses and stores information pertaining to the parent image - name, version, tag.

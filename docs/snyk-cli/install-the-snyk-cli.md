@@ -6,21 +6,6 @@ After you install the Snyk CLI, you must [authenticate](commands/auth.md). Then 
 
 **Note**: Snyk recommends always keeping your CLI installation updated to the latest version. You can check which version of the Snyk CLI you have installed by running `snyk --version`.
 
-## Install the Snyk CLI with npm or Yarn
-
-Before installing the Snyk CLI using npm, be sure you have installed the **prerequisites**:
-
-* Install the latest version of npm in your local environment, using Node version 12 or later. See [What version of Node is required for Snyk?](https://support.snyk.io/hc/en-us/articles/360004183317-What-version-of-Node-is-required-for-Snyk-) for the steps to update Node.
-* To run Snyk on Alpine Linux, first install libstdc++. See [How can I use CLI on an Alpine operating system?](https://support.snyk.io/hc/en-us/articles/360001929038) for more information.
-
-Then follow these **steps to install with npm or Yarn**:
-
-[Snyk CLI is available as an npm package](https://www.npmjs.com/package/snyk). If you have Node.js installed locally, you can **install** the npm package by running `npm install snyk -g`.
-
-If you are using Yarn, **install** by running `yarn global add snyk`.
-
-For additional information see [Installing Snyk CLI as a binary via npm](installing-snyk-cli-as-a-binary-via-npm.md).
-
 ## Install with standalone executables
 
 Use [GitHub Releases](https://github.com/snyk/snyk/releases) to download a standalone executable (macOS, Linux, Windows) of Snyk CLI for your platform.
@@ -75,6 +60,21 @@ Install Snyk CLI from [Snyk's bucket](https://github.com/snyk/scoop-snyk) with [
 scoop bucket add snyk https://github.com/snyk/scoop-snyk
 scoop install snyk
 ```
+
+## Install the Snyk CLI with npm or Yarn
+
+Before installing the Snyk CLI using npm, be sure you have installed the **prerequisites**:
+
+* Install the latest version of npm in your local environment, using Node version 12 or later. See [What version of Node is required for Snyk?](https://support.snyk.io/hc/en-us/articles/360004183317-What-version-of-Node-is-required-for-Snyk-) for the steps to update Node.
+* To run Snyk on Alpine Linux, first install libstdc++. See [How can I use CLI on an Alpine operating system?](https://support.snyk.io/hc/en-us/articles/360001929038) for more information.
+
+Then follow these **steps to install with npm or Yarn**:
+
+[Snyk CLI is available as an npm package](https://www.npmjs.com/package/snyk). If you have Node.js installed locally, you can **install** the npm package by running `npm install snyk -g`.
+
+If you are using Yarn, **install** by running `yarn global add snyk`.
+
+For additional information see [Installing Snyk CLI as a binary via npm](installing-snyk-cli-as-a-binary-via-npm.md).
 
 ## Snyk CLI in a Docker image
 
