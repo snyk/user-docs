@@ -32,7 +32,7 @@ You can also use these direct links to download the executables:
 * **Alpine**: [https://static.snyk.io/cli/latest/snyk-alpine](https://static.snyk.io/cli/latest/snyk-alpine)
 
 {% hint style="warning" %}
-For Apple M1 (darwin/arm64), see: [How do I run Snyk CLI on an Apple M1 machine?](https://support.snyk.io/hc/en-us/articles/5022278090397)
+To use the CLI on an Apple M1 machine, (darwin/arm64), see [Prerequisite for CLI on an Apple M1 machine](prerequisite-for-cli-on-an-apple-m1-machine.md).
 {% endhint %}
 
 {% hint style="warning" %}
