@@ -10,7 +10,7 @@ The `snyk sbom` feature requires an internet connection.
 
 ## Usage
 
-`$ snyk sbom --format=<cyclonedx1.4+json|cyclonedx1.4+xml>|spdx2.3+json [--file=<file>] [--unmanaged] [--org=<ORG_ID>] [<TARGET_DIRECTORY>]`
+`$ snyk sbom --format=<cyclonedx1.4+json|cyclonedx1.4+xml>|spdx2.3+json> [--file=<file>] [--unmanaged] [--org=<ORG_ID>] [<TARGET_DIRECTORY>]`
 
 ## Description
 
@@ -35,9 +35,9 @@ Use the `-d` option to output the debug logs.
 
 ### `--format=<cyclonedx1.4+json|cyclonedx1.4+xml|spdx2.3+json>`
 
-Required.Specify the output format for the SBOM to be produced.
+Required. Specify the output format for the SBOM to be produced.
 
-Set the desired SBOM output format.Available options are `cyclonedx1.4+json`, `cyclonedx1.4+xml`, and `spdx2.3+json`
+Set the desired SBOM output format. Available options are `cyclonedx1.4+json`, `cyclonedx1.4+xml`, and `spdx2.3+json`
 
 ### `[--org=<ORG_ID>]`
 
