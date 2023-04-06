@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Recap**\
-****You have downloaded the Terraform template declaring the [Azure Active Directory (AD) application registration](https://learn.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#application-registration), [federated identity credential](https://learn.microsoft.com/en-us/azure/active-directory/develop/workload-identity-federation), and [service principal](https://learn.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) for Snyk. Now you need to provision the infrastructure.
+You have downloaded the Terraform template declaring the [Azure Active Directory (AD) application registration](https://learn.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#application-registration), [federated identity credential](https://learn.microsoft.com/en-us/azure/active-directory/develop/workload-identity-federation), and [service principal](https://learn.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) for Snyk. Now you need to provision the infrastructure.
 {% endhint %}
 
 To scan an Azure subscription, Snyk Cloud takes the permissions of a service principal with a [Reader](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#reader) role that allows Snyk to scan the configuration of your subscription resources.

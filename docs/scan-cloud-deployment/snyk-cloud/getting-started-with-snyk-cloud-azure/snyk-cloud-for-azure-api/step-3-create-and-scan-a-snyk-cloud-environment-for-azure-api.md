@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Recap**\
-****You have created the Azure app registration, federated identity credential, and service principal for Snyk Cloud. Now you can create and scan a Snyk Cloud Environment.
+You have created the Azure app registration, federated identity credential, and service principal for Snyk Cloud. Now you can create and scan a Snyk Cloud Environment.
 {% endhint %}
 
 To send a request to the Snyk API to create and scan an Azure Snyk Cloud Environment, you must provide the subscription ID, tenant ID, and application ID in the API request body.
