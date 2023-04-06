@@ -1,15 +1,10 @@
 # Snyk CLI
 
-Snyk CLI brings [functionality of Snyk](https://docs.snyk.io/introducing-snyk#snyk-products) into your development workflow. You can run the CLI locally, or in your CI/CD pipeline to scan your projects for security issues, including security vulnerabilities and license issues. The following shows an example of Snyk CLI test command output.
+This documentation provides guidance and information for using the Snyk CLI to bring the [functionality of Snyk](../getting-started/introducing-snyk.md) into your development workflow. Here you will find:
 
-<figure><img src="../.gitbook/assets/snyk-cli-screenshot.png" alt="Snyk CLI test command output example"><figcaption><p>Snyk CLI test command output</p></figcaption></figure>
-
-Snyk CLI scanning for Open Source supports many languages and tools, including Java, JavaScript, Python, PHP, Ruby, Scala, .NET, Golang, and C/C++. For more information see [Open source language and package manager support](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/).
-
-Snyk CLI also supports:
-
-* [Snyk Code scanning](../scan-application-code/snyk-code/cli-for-snyk-code/)
-* [Snyk Container scanning](../scan-containers/snyk-cli-for-container-security/) including Docker scanning
-* [Snyk Infrastructure as Code scanning](../scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/) including Terraform and Kubernetes (K8s) projects
-
-For additional information see the [summary of supported languages](https://docs.snyk.io/getting-started/introducing-snyk#how-can-snyk-work-in-my-environment).
+* Guidance for [getting stared with the CLI](getting-started-with-the-cli.md)
+* An [important code execution warning for the Snyk CLI](code-execution-warning-for-snyk-cli.md)
+* Instructions for [installing or updating the Snyk CLI](install-the-snyk-cli.md), [authenticating the CLI with your account](authenticate-the-cli-with-your-account.md), and [configuring the CLI](configure-the-snyk-cli/)
+* The full text of the [CLI help](commands/) for all of the commands and their options, just as the help appears in your terminal
+* A comprehensive summary of all of the [CLI commands and options](cli-reference.md)
+* Articles with in-depth information about [scanning and maintaining projects using the CLI](test-for-vulnerabilities/)
