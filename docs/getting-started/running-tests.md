@@ -4,8 +4,8 @@
 
 You can use Snyk to test your code in different ways:
 
-* [Run tests manually](running-tests.md#run-tests-manually): using the Snyk CLI, the Snyk Web UI, and the Snyk API
-* [Run tests automatically](running-tests.md#run-tests-automatically): after Project import, using the `snyk monitor` CLI command, or using PR Checks to scan new PRs
+* [Run tests manually](running-tests.md#run-tests-manually): by using the Snyk CLI, the Snyk Web UI, and the Snyk API
+* [Run tests automatically](running-tests.md#run-tests-automatically): after Project import, or by using the `snyk monitor` CLI command, or by using PR Checks to scan new PRs
 
 {% hint style="info" %}
 Tests may be limited on your account; see [What counts as a test?](https://support.snyk.io/hc/en-us/articles/360000925418-What-counts-as-a-test-) for more information.
@@ -43,7 +43,7 @@ See the [API documentation](https://snyk.docs.apiary.io/#reference/test) for det
 After you [import a Project](quickstart/import-a-project.md), Snyk automatically runs periodic scans on that Project, to see if your code is affected by newly disclosed vulnerabilities.
 
 {% hint style="info" %}
-The default test frequency and available test frequencies vary depending on the type of Project: Open Source, Code analysis, Container, or IaC. For more information see [Usage page details](../snyk-admin/manage-settings/usage-page-details.md) (Set test frequency). You can also set test frequency in the Project **Settings**; see [View project settings](../manage-issues/introduction-to-snyk-projects/view-project-settings.md) or use theSnyk REST API: [Updates project by project ID](https://apidocs.snyk.io/?version=2023-02-15#patch-/orgs/-org\_id-/projects/-project\_id-).
+The default test frequency and available test frequencies vary depending on the type of Project: Open Source, Code analysis, Container, or IaC. For more information see [Usage page details](../snyk-admin/manage-settings/usage-page-details.md) (Set test frequency). You can also set test frequency in the Project **Settings** (see [View project settings](../manage-issues/introduction-to-snyk-projects/view-project-settings.md)) or use theSnyk REST API: [Updates project by project ID](https://apidocs.snyk.io/?version=2023-02-15#patch-/orgs/-org\_id-/projects/-project\_id-).
 {% endhint %}
 
 ### Run tests automatically with snyk monitor

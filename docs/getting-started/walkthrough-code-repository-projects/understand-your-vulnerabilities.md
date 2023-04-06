@@ -17,7 +17,7 @@ Next, select a Project in that list, to see details of the vulnerabilities found
 
 For example, for a **Code analysis** project scanned by Snyk Code:
 
-<figure><img src="../../.gitbook/assets/image (149) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Vulnerability example - Code analysis"><figcaption><p>Vulnerability example - Code analysis</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (149) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Vulnerability example - Code analysis"><figcaption><p>Vulnerability example - Code analysis</p></figcaption></figure>
 
 See [View project information](../../manage-issues/introduction-to-snyk-projects/view-project-information.md) for more details.
 
@@ -42,11 +42,11 @@ Snyk provides detailed resources for more information about vulnerabilities, acc
 
 For Open Source and Container vulnerabilities, click on the Snyk vulnerability Identifier (on the right of the Severity Level) to access detailed [Snyk Vulnerability Database](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/using-the-snyk-vulnerability-database.md) information for that vulnerability, as defined by Snyk. For example:
 
-<figure><img src="../../.gitbook/assets/image (174) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Access Snyk Vulnerability Database"><figcaption><p>Access Snyk Vulnerability Database</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (174) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Access Snyk Vulnerability Database"><figcaption><p>Access Snyk Vulnerability Database</p></figcaption></figure>
 
 For this example, click on the Snyk vulnerability Identifier to see how Hibernate core and its libraries are vulnerable to SQL injection:
 
-<figure><img src="../../.gitbook/assets/image (149) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk Vulnerability Database example entry"><figcaption><p>Snyk Vulnerability Database example entry</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (149) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Snyk Vulnerability Database example entry"><figcaption><p>Snyk Vulnerability Database example entry</p></figcaption></figure>
 
 {% hint style="info" %}
 [Snyk Code](../../scan-application-code/snyk-code/) and [Snyk IaC](../../scan-cloud-deployment/snyk-infrastructure-as-code/) issue cards have separate information sets for these areas.
@@ -86,7 +86,7 @@ See [Fix your first vulnerability](fix-your-first-vulnerability.md) for more det
 
 Snyk uses the package manager of your application to build the dependency tree and display it in the **Dependencies** tab of the project view:
 
-<figure><img src="../../.gitbook/assets/image (119) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Dependencies for Open Source vulnerabilities"><figcaption><p>Dependencies for Open Source vulnerabilities</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (119) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Dependencies for Open Source vulnerabilities"><figcaption><p>Dependencies for Open Source vulnerabilities</p></figcaption></figure>
 
 Click the file tree icon (![](<../../.gitbook/assets/image (179) (1) (1) (1).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
 

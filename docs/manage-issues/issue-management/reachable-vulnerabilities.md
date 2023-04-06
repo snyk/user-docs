@@ -71,4 +71,4 @@ After import or testing of a project via Snyk UI, the project is monitored by Sn
 
 You can filter by reachability status to quickly show the reachable issues.
 
-<figure><img src="../../.gitbook/assets/image (137) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Issue Filters"><figcaption><p>Issue Filters</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (137) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Issue Filters"><figcaption><p>Issue Filters</p></figcaption></figure>

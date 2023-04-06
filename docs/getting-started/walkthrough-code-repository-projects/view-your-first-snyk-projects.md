@@ -23,9 +23,9 @@ When [setting up your GitHub integration](../../integrations/git-repository-scm-
 
 <figure><img src="../../.gitbook/assets/image (265).png" alt="Set whether Snyk can access private repos"><figcaption><p>Set whether Snyk can access private repos</p></figcaption></figure>
 
-When you then import a Project, private repositories are identified with a “lock” symbol (<img src="../../.gitbook/assets/image (101) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">) in the imported scan details:
+When you then import a Project, private repositories are identified with a “lock” symbol (<img src="../../.gitbook/assets/image (101) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">) in the imported scan details:
 
-<figure><img src="../../.gitbook/assets/image (110) (1) (1) (1) (2).png" alt="Private repos with lock symbol"><figcaption><p>Private repos with lock symbol</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (110) (1) (1) (1).png" alt="Private repos with lock symbol"><figcaption><p>Private repos with lock symbol</p></figcaption></figure>
 
 For customers on free plans, private repository scans count towards your test count limit.
 
@@ -44,7 +44,7 @@ A Snyk Project is an item scanned by Snyk; for example, a manifest file listing 
 
 For example:
 
-<figure><img src="../../.gitbook/assets/image (128).png" alt="List of scanned Projects"><figcaption><p>List of scanned Projects</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (128) (1).png" alt="List of scanned Projects"><figcaption><p>List of scanned Projects</p></figcaption></figure>
 
 ### Understand Project information
 
@@ -71,7 +71,7 @@ Other files and types can be displayed; see [View project information](https://d
 
 Snyk treats each item in this list as a separate **Project**.
 
-This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (144) (1) (1) (1) (1).png>)) to define how that Project is scanned:
+This allows you to control settings for that Project, by clicking on the cog icon (![](<../../.gitbook/assets/image (144) (1) (1) (1) (1) (1).png>)) to define how that Project is scanned:
 
 <figure><img src="../../.gitbook/assets/image (208) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Click cog icon to edit settings"><figcaption><p>Click cog icon to edit Project settings</p></figcaption></figure>
 

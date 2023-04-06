@@ -155,9 +155,9 @@ Ask your developers to consider the merge advice label that appears on the auto 
 
 <figure><img src="../../.gitbook/assets/merge-advice-review-recommended (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png" alt="Merge advice label"><figcaption></figcaption></figure>
 
-![](<../../.gitbook/assets/advice-green (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/advice-green (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png>)
 
-![Merge advice label](<../../.gitbook/assets/merge-advice (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (26).png>)
+![Merge advice label](<../../.gitbook/assets/merge-advice (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (24).png>)
 
 {% hint style="info" %}
 Snyk auto fix PRs are generated only for new issues.
@@ -195,7 +195,7 @@ To set PR Settings on the Project level and override the PR settings configured 
 1. Open the Organization for which you would like to enable automatic upgrade PRs and go to the **Projects** tab.
 2.  Select and expand the relevant Project, select the relevant Target, and using the cog icon, open the **Settings**:
 
-    <img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (7).png" alt="Cog icon for Project settings" data-size="original">
+    <img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (13).png" alt="Cog icon for Project settings" data-size="original">
 3. In the Settings area, in the left panel menu, click the Integration settings to apply unique settings for that specific Project.
 4. In settings that load, scroll to the **Automatic dependency upgrade pull requests** and click **Disabled**.
 5. In the options that appear:

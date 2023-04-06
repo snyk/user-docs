@@ -12,7 +12,7 @@ If the **Snyk Code** feature was previously disabled, and you want to apply the 
 
 2\. On the **Dashboard** or **Projects** page, click the **Add project** button. Then, select from the pop-up list the SCM that contains the repositories you want to import:
 
-![](<../../../../../.gitbook/assets/image (363) (1) (1) (1) (1) (1).png>)
+![](<../../../../../.gitbook/assets/image (363) (1) (1) (1) (1).png>)
 
 The **Personal and Organization repositories** page appears, displaying the repositories available to you in the selected SCM.
 

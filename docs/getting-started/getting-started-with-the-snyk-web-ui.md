@@ -55,7 +55,7 @@ Use the links for Projects on the dashboard to explore and manage the metadata, 
 * For Projects with the **Fix vulnerabilities** link, use the link to view Project details with an option to **Open a Fix PR.** Use this option to open a fix PR to implement the upgrades and patches in GitHub that address the issues.
 * For Projects with a **View PR** link, use the link to open and view the Snyk-generated PR fixes in GitHub.
 
-<figure><img src="../.gitbook/assets/demo-project-details-options (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).gif" alt="Demo, add project and Project details tabs"><figcaption><p>Demo, add project and Project details tabs</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/demo-project-details-options (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).gif" alt="Demo, add project and Project details tabs"><figcaption><p>Demo, add project and Project details tabs</p></figcaption></figure>
 
 ### **View reports**
 

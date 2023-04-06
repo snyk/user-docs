@@ -197,7 +197,7 @@ An initial set of trusted folders can be provided by setting `trustedFolders` to
 
 After opening a supported file, the Language Server should be started by Sublime Text and findings will be highlighted.
 
-![Snyk Open Source findings displayed in Sublime Text](<../../.gitbook/assets/image (159) (1).png>)
+![Snyk Open Source findings displayed in Sublime Text](<../../.gitbook/assets/image (159).png>)
 
 ![Snyk Code findings displayed in Sublime Text](<../../.gitbook/assets/image (466) (1) (1).png>)
 
