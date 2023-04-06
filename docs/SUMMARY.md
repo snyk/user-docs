@@ -685,6 +685,7 @@
   * [Install or update the Snyk CLI](snyk-cli/install-the-snyk-cli/README.md)
     * [Prerequisites for CLI and Jenkins plugin on Alpine Linux operating system](snyk-cli/install-the-snyk-cli/prerequisites-for-cli-and-jenkins-plugin-on-alpine-linux-operating-system.md)
     * [Installing Snyk CLI as a binary via npm](snyk-cli/install-the-snyk-cli/installing-snyk-cli-as-a-binary-via-npm.md)
+    * [Prerequisite for CLI on an Apple M1 machine](snyk-cli/install-the-snyk-cli/prerequisite-for-cli-on-an-apple-m1-machine.md)
   * [Authenticate the CLI with your account](snyk-cli/authenticate-the-cli-with-your-account.md)
   * [Configure the Snyk CLI](snyk-cli/configure-the-snyk-cli/README.md)
     * [Environment variables for Snyk CLI](snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli.md)
