@@ -8,7 +8,7 @@ To start using Integrated IaC, you need the following:
 
 * A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [Create a Snyk account](https://docs.snyk.io/getting-started/getting-started-snyk-products) for details).
 * An existing Terraform or CloudFormation environment to work in.
-* To use the Integrated IaC with the CLI, you must first [install](../../../snyk-cli/install-the-snyk-cli.md) version v1.1022.0 or later and then [authenticate](../../../snyk-cli/commands/auth.md).
+* To use the Integrated IaC with the CLI, you must first [install](../../../snyk-cli/install-the-snyk-cli/) version v1.1022.0 or later and then [authenticate](../../../snyk-cli/commands/auth.md).
 
 ## Stage 1: Test IaC files
 

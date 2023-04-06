@@ -10,7 +10,7 @@ If you have been using Snyk on the Free/Team Plan and are looking for guidance o
 
 Snyk has a number of tools and processes that help secure your entire software development lifecycle. With Snyk, you can scan while you’re coding. You can also monitor code when you’re not working on it. Snyk also provides visibility into issues across your projects with a git repository integration. And Snyk can integrate into CI/CD through integrations, the CLI, or curated containers.
 
-For users evaluating Snyk or planning an enterprise deployment, for most programming languages, we recommend integrating with a Git repository to get started.&#x20;
+For users evaluating Snyk or planning an enterprise deployment, for most programming languages, we recommend integrating with a Git repository to get started.
 
 {% hint style="info" %}
 The tool that best serves your tech stack, environment, and workflow will depend on your individual circumstances. Visit the guide specific to your language for more details.
@@ -57,8 +57,8 @@ The settings for each Snyk Project are inherited from the Organization integrati
 2. Select the settings ‘cog’ icon for your Git repository integration.
 3. In the **Default Snyk test for pull requests** section, ensure the following are disabled:
    1. **Open Source Security & Licenses** (default checks when PRs are opened)
-   2. **Automatic fix pull requests**: both **New vulnerabilities** and **Known vulnerabilities (backlog)**&#x20;
-   3. **Automatically update Dockerfile base images**&#x20;
+   2. **Automatic fix pull requests**: both **New vulnerabilities** and **Known vulnerabilities (backlog)**
+   3. **Automatically update Dockerfile base images**
    4. **Automatic dependency upgrade pull requests**
 
 {% hint style="info" %}
@@ -95,13 +95,13 @@ Reviewing configuration issues video
 
 Some package managers rely on context from the local environment, so scanning in the local environment or as part of the CI/CD pipeline gives the most accurate results.
 
-You need to [install the Snyk CLI](../snyk-cli/install-the-snyk-cli.md). Once installed, you need to authenticate it to your Snyk account, demonstrated in this video.
+You need to [install the Snyk CLI](../snyk-cli/install-the-snyk-cli/). Once installed, you need to authenticate it to your Snyk account, demonstrated in this video.
 
 {% embed url="https://thoughtindustries-1.wistia.com/medias/ava7rrg7al" %}
 Authenticate CLI video
 {% endembed %}
 
-A scan with [**Snyk test**](../scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/) surfaces information about open source package issues, including fix advice, demonstrated in this video.&#x20;
+A scan with [**Snyk test**](../scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli/) surfaces information about open source package issues, including fix advice, demonstrated in this video.
 
 {% embed url="https://thoughtindustries-1.wistia.com/medias/b8vrvtmnbu" %}
 Snyk test video
@@ -109,7 +109,7 @@ Snyk test video
 
 A scan with [**Snyk code test** ](../scan-application-code/snyk-code/cli-for-snyk-code/)runs a Static Code Analysis test on the code in that Project, and returns the list of detected vulnerability issues, general information about the test, and a summary of the test findings.
 
-A scan with [**Snyk container test**](../scan-containers/snyk-cli-for-container-security/) returns a list of vulnerabilities in the container image, along with recommendations for upgrading the base image for one that is more secure. &#x20;
+A scan with [**Snyk container test**](../scan-containers/snyk-cli-for-container-security/) returns a list of vulnerabilities in the container image, along with recommendations for upgrading the base image for one that is more secure.
 
 A scan with [**Snyk iac test**](../scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/) returns advice on how to resolve discovered issues in your Infrastructure as Code files.
 
@@ -117,6 +117,5 @@ A scan with [**Snyk iac test**](../scan-cloud-deployment/snyk-infrastructure-as-
 
 * If you want developers to try Snyk in their local environment using the IDE or CLI, review the [Getting started guide for individuals and small teams](getting-started-with-snyk-free-team-plan.md).
 * To get specific recommendations for your tech stack, visit the guide specific to your language.
-* When you are ready to plan a Snyk rollout to more teams, review the [Preparing for implementation guide: Enterprise plan](preparing-for-implementation-enterprise-plan.md).&#x20;
+* When you are ready to plan a Snyk rollout to more teams, review the [Preparing for implementation guide: Enterprise plan](preparing-for-implementation-enterprise-plan.md).
 * See the [Launch Snyk to your teams](https://training.snyk.io/courses/launch-snyk-to-your-teams) training course for additional strategies, communication templates, and checklists for rolling Snyk out to a wider audience.
-

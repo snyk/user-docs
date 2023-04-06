@@ -5,7 +5,7 @@ Snyk offers security scanning to test your Projects for vulnerabilities, both fr
 ## Features of Snyk for Swift and Objective-C
 
 {% hint style="warning" %}
-Swift Package Manager CLI support  is in beta
+Swift Package Manager CLI support is in beta
 {% endhint %}
 
 {% hint style="info" %}
@@ -30,7 +30,7 @@ Once Snyk has built the tree, Snyk uses the vulnerability database to find vulne
 
 * Ensure you have installed the relevant package manager before you begin using the Snyk CLI.
 * Ensure you have included the relevant manifest files supported by Snyk before testing.
-* [Install](../../../snyk-cli/install-the-snyk-cli.md) and authenticate the Snyk CLI to start analyzing projects from your local environment. For more information about Snyk CLI see [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli.md).
+* [Install](../../../snyk-cli/install-the-snyk-cli/) and authenticate the Snyk CLI to start analyzing projects from your local environment. For more information about Snyk CLI see [Getting started with the CLI](../../../snyk-cli/getting-started-with-the-cli.md).
 
 ### CLI help for Swift Package Manager projects
 
@@ -41,7 +41,7 @@ Swift Package Manager CLI support is in beta
 There are a some limitations to using the Snyk CLI with Swift Package Manager projects.
 
 * The `snyk monitor` CLI command is not currently supported.
-* Projects must use Swift 3.0 or higher.&#x20;
+* Projects must use Swift 3.0 or higher.
 * Swift Package Manager supports pre- or post-processing. In the case of post-processing, custom commands can add extra dependencies. Detecting such dependencies is not supported.
 
 ### **CLI help for CocoaPods Projects**
@@ -56,6 +56,6 @@ Testing Swift Package Manager projects via Git import is not currently supported
 
 Snyk supports testing CocoaPods projects imported from Git repositories.
 
-Projects managed by CocoaPods can be imported from any of the Git repositories that Snyk  supports.&#x20;
+Projects managed by CocoaPods can be imported from any of the Git repositories that Snyk supports.
 
 In order to test your projects, Snyk analyzes the `Podfile` and `Podfile.lock` files.

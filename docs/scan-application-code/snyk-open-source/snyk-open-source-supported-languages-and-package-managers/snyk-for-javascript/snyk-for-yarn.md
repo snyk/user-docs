@@ -17,9 +17,9 @@ Features may not be available, depending on your plan. See [pricing plans](https
 
 ## Yarn version and how it affects Snyk support
 
-Snyk uses the Yarn lockfile (`yarn.lock`) to generate representation of Project dependencies.&#x20;
+Snyk uses the Yarn lockfile (`yarn.lock`) to generate representation of Project dependencies.
 
-The files Snyk relies on to scan a Project may change on version upgrades of the package manager.Therefore Snyk lists only versions verified internally as supported.&#x20;
+The files Snyk relies on to scan a Project may change on version upgrades of the package manager.Therefore Snyk lists only versions verified internally as supported.
 
 If you are using a newer version of Yarn than is listed on this page, you may find Snyk performs as expected because Yarn is using a lockfile version that is already supported. That version of Yarn has likely not been evaluated and thus not been added to this page.
 
@@ -44,7 +44,7 @@ To get started using the CLI for Yarn projects:
 * Make sure Yarn is installed.
 * Make sure you are in a directory with Yarn Project files, that is, `package.json` and `yarn.lock`.
 * Run `yarn`.
-* [Install](../../../../snyk-cli/install-the-snyk-cli.md) and authenticate the Snyk CLI.
+* [Install](../../../../snyk-cli/install-the-snyk-cli/) and authenticate the Snyk CLI.
 
 You can now test and monitor your Project using `snyk test` or `snyk monitor` .
 
@@ -90,7 +90,7 @@ For Yarn Workspaces, only the `package.json` file is updated for Snyk fix PRs. T
 
 ### Fix PRs for [zero-installs](https://yarnpkg.com/features/zero-installs) users
 
-In Yarn V2 the [zero-installs](https://yarnpkg.com/features/zero-installs) feature was released, which allowed Yarn developers to work on a project without having to run `yarn` to install dependencies on their machine. It achieved this by installing all the dependencies of a project inside of the `.yarn/cache` directory and asking users to commit this to their version control system - allowing the next developer to pull any new dependencies directly from the repo.&#x20;
+In Yarn V2 the [zero-installs](https://yarnpkg.com/features/zero-installs) feature was released, which allowed Yarn developers to work on a project without having to run `yarn` to install dependencies on their machine. It achieved this by installing all the dependencies of a project inside of the `.yarn/cache` directory and asking users to commit this to their version control system - allowing the next developer to pull any new dependencies directly from the repo.
 
 {% hint style="warning" %}
 If you are using the **zero-installs** feature, any Snyk fix PRs do not update the **.yarn/cache** directory. You must run `yarn` to update this directory.

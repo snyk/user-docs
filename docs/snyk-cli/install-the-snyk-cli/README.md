@@ -1,8 +1,8 @@
 # Install or update the Snyk CLI
 
-You can install or update the [Snyk CLI](./) using the methods explained on this page.
+You can install or update the [Snyk CLI](../) using the methods explained on this page.
 
-After you install the Snyk CLI, you must [authenticate](commands/auth.md). Then you can [get started](getting-started-with-the-cli.md) testing and fixing your vulnerabilities, beginning with testing your installation.
+After you install the Snyk CLI, you must [authenticate](../commands/auth.md). Then you can [get started](../getting-started-with-the-cli.md) testing and fixing your vulnerabilities, beginning with testing your installation.
 
 **Note**: Snyk recommends always keeping your CLI installation updated to the latest version. You can check which version of the Snyk CLI you have installed by running `snyk --version`.
 
@@ -66,7 +66,8 @@ scoop install snyk
 Before installing the Snyk CLI using npm, be sure you have installed the **prerequisites**:
 
 * Install the latest version of npm in your local environment, using Node version 12 or later. See [What version of Node is required for Snyk?](https://support.snyk.io/hc/en-us/articles/360004183317-What-version-of-Node-is-required-for-Snyk-) for the steps to update Node.
-* To run Snyk on Alpine Linux, first install libstdc++. See [How can I use CLI on an Alpine operating system?](https://support.snyk.io/hc/en-us/articles/360001929038) for more information.
+* To run Snyk on Alpine Linux, first install libstdc++.\
+  For more information see [Prerequisites for CLI and Jenkins plugin on Alpine Linux operating system](prerequisites-for-cli-and-jenkins-plugin-on-alpine-linux-operating-system.md).
 
 Then follow these **steps to install with npm or Yarn**:
 
@@ -104,7 +105,7 @@ snyk/snyk:maven snyk monitor \
 
 ## Install as a part of a Snyk integration
 
-Snyk also offers many [integrations](../integrations/) into developer tooling. These integrations install and manage the Snyk CLI for you. Integrations include the following:
+Snyk also offers many [integrations](../../integrations/) into developer tooling. These integrations install and manage the Snyk CLI for you. Integrations include the following:
 
 * [Snyk Jenkins plugin](https://github.com/jenkinsci/snyk-security-scanner-plugin)
 * [CircleCI Orb](https://github.com/snyk/snyk-orb)
@@ -115,4 +116,4 @@ Snyk also offers many [integrations](../integrations/) into developer tooling. T
 * [Eclipse IDE Extension](https://github.com/snyk/snyk-eclipse-plugin)
 * [Maven plugin](https://github.com/snyk/snyk-maven-plugin)
 
-See the [integrations](../integrations/) docs for more details.
+See the [integrations](../../integrations/) docs for more details.

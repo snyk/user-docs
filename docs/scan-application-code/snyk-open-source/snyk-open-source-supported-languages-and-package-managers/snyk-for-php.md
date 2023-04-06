@@ -31,7 +31,7 @@ In order to build the dependency tree Snyk analyzes the `composer.json` and `com
 
 * Ensure you have installed the relevant package manager before you begin using the Snyk CLI.
 * Ensure you have included the relevant manifest files supported by Snyk before testing.
-* [Install](../../../snyk-cli/install-the-snyk-cli.md) and authenticate the Snyk CLI to start analyzing Projects from your local environment.
+* [Install](../../../snyk-cli/install-the-snyk-cli/) and authenticate the Snyk CLI to start analyzing Projects from your local environment.
 
 ### **CLI options for use with PHP**
 
@@ -41,14 +41,14 @@ For more information about Snyk CLI see [Getting started with the CLI](../../../
 
 ## Git services for PHP Projects
 
-PHP Projects can be imported from any of the Git services Snyk supports. Once Projects have  been imported, Snyk analyzes your Projects based on their supported manifest files.
+PHP Projects can be imported from any of the Git services Snyk supports. Once Projects have been imported, Snyk analyzes your Projects based on their supported manifest files.
 
 Once you select a Project for import, Snyk builds the dependency tree based on these manifest files. Both of the following files are required:
 
 * composer.json
 * composer.lock
 
-If the composer.lock file is not present in the repository, the import will not process the composer.json manifest.&#x20;
+If the composer.lock file is not present in the repository, the import will not process the composer.json manifest.
 
 ## **Git settings for PHP**
 
