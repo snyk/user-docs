@@ -10,7 +10,7 @@ After you install the Snyk CLI, you must [authenticate](../commands/auth.md). Th
 
 Use [GitHub Releases](https://github.com/snyk/snyk/releases) to download a standalone executable (macOS, Linux, Windows) of Snyk CLI for your platform.
 
-Snyk also provides these standalone executables on the Snyk Content Delivery Network (CDN). See [https://static.snyk.io/cli/latest/release.json](https://static.snyk.io/cli/latest/release.json) for the download links. Examples for a specific version or platform follow:
+Snyk also provides these standalone executables on the Snyk Content Delivery Network (CDN). See the latest `release.json` [file](https://static.snyk.io/cli/latest/release.json) for the download links. Examples for a specific version or platform follow:
 
 * [https://static.snyk.io/cli/v1.666.0/release.json](https://static.snyk.io/cli/v1.666.0/release.json)
 * [https://static.snyk.io/cli/latest/snyk-macos](https://static.snyk.io/cli/latest/snyk-macos)
@@ -26,12 +26,13 @@ mv ./snyk /usr/local/bin/
 You can also use these direct links to download the executables:
 
 * **macOS**: [https://static.snyk.io/cli/latest/snyk-macos](https://static.snyk.io/cli/latest/snyk-macos)
-* **Windows**: [https://static.snyk.io/cli/latest/snyk-win.exe](https://static.snyk.io/cli/latest/snyk-win.exe) (You can rename the file to snyk.exe so you can run snyk commands as documented, for example, `snyk test`.)
+* **Windows**: [https://static.snyk.io/cli/latest/snyk-win.exe](https://static.snyk.io/cli/latest/snyk-win.exe)\
+  You can rename the file to snyk.exe so you can run snyk commands as documented, for example, `snyk test`.
 * **Linux**: [https://static.snyk.io/cli/latest/snyk-linux](https://static.snyk.io/cli/latest/snyk-linux)
 * **Linux/arm64**: [https://static.snyk.io/cli/latest/snyk-linux-arm64](https://static.snyk.io/cli/latest/snyk-linux-arm64)
 * **Alpine**: [https://static.snyk.io/cli/latest/snyk-alpine](https://static.snyk.io/cli/latest/snyk-alpine)
 
-{% hint style="warning" %}
+{% hint style="info" %}
 To use the CLI on an Apple M1 machine, (darwin/arm64), see [Prerequisite for CLI on an Apple M1 machine](prerequisite-for-cli-on-an-apple-m1-machine.md).
 {% endhint %}
 
@@ -65,7 +66,7 @@ scoop install snyk
 
 Before installing the Snyk CLI using npm, be sure you have installed the **prerequisites**:
 
-* Install the latest version of npm in your local environment, using Node version 12 or later. See [What version of Node is required for Snyk?](https://support.snyk.io/hc/en-us/articles/360004183317-What-version-of-Node-is-required-for-Snyk-) for the steps to update Node.
+* Install the latest version of npm in your local environment, using Node version 12 or later. For information on how to update Node see [Install or upgrade to version of Node required for Snyk CLI](install-or-upgrade-to-version-of-node-required-for-snyk-cli.md).
 * To run Snyk on Alpine Linux, first install libstdc++.\
   For more information see [Prerequisites for CLI and Jenkins plugin on Alpine Linux operating system](prerequisites-for-cli-and-jenkins-plugin-on-alpine-linux-operating-system.md).
 

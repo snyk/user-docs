@@ -10,7 +10,7 @@ Snyk Cloud helps users find, prioritize, and fix cloud misconfigurations by scan
 
 ### Developer-first cloud security
 
-With Snyk Cloud, Snyk extends its focus on developer security to securing your cloud environments - by enabling developers to build and deploy more secure cloud configurations from IaC in the IDE through to production. Snyk IaC and Snyk Cloud are tightly integrated, with consistent interfaces across the UI and API for resources, issues, and more.
+With Snyk Cloud, Snyk extends its focus on developer security to securing your cloud environments by enabling developers to build and deploy more secure cloud configurations from IaC in the IDE through to production. Snyk IaC and Snyk Cloud are tightly integrated, with consistent interfaces across the UI and API for resources, issues, and more.
 
 ### Code to cloud with unified policy engine
 

@@ -2,14 +2,12 @@
 
 {% hint style="info" %}
 **Feature availability**\
-The Snyk API is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+The Snyk API is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for details.
 {% endhint %}
 
-## Introduction to Snyk APIs
+Snyk’s [extensibility and API](https://snyk.io/blog/extensibility-and-the-snyk-api/) enable developers to tune Snyk security automation to their specific workflows, ensuring consistency in both developer experience and platform governance. [Snyk API v1](./#snyk-api-v1) and the [Snyk REST API](./#snyk-rest-api) are available for you to use when you decide to [use an API rather than the CLI or an integration](./#when-to-use-the-api-versus-the-cli-or-an-integration).
 
-Snyk’s [extensibility and API](https://snyk.io/blog/extensibility-and-the-snyk-api/) enable developers to tune Snyk’s security automation to their specific workflows, ensuring consistency in both developer experience and platform governance. [Snyk API v1](./#snyk-api-v1) and the [Snyk REST API](./#snyk-rest-api) are available for you to use when you [decide whether to use an API, the CLI, or an integration](./#when-to-use-the-api-versus-the-cli-or-an-integration).
-
-### Snyk API v1
+## Snyk API v1
 
 The [**Snyk API v1**](https://snyk.docs.apiary.io/https://snyk.docs.apiary.io/) has the ability to test a package for issues as they are defined by Snyk, and to provide Snyk security automation according to your own workflows, unconstrained by security processes in Snyk products. Customers and partners can perform functions including:
 
@@ -18,7 +16,7 @@ The [**Snyk API v1**](https://snyk.docs.apiary.io/https://snyk.docs.apiary.io/) 
 * Receiving remediation advice
 * Viewing user data to build custom security solutions
 
-### Snyk REST API
+## Snyk REST API
 
 {% hint style="info" %}
 The Snyk REST API was formerly known as Snyk API v3.
