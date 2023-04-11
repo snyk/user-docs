@@ -34,6 +34,10 @@ You can also use these direct links to download the executables:
 
 {% hint style="info" %}
 To use the CLI on an Apple M1 machine, (darwin/arm64), see [Prerequisite for CLI on an Apple M1 machine](prerequisite-for-cli-on-an-apple-m1-machine.md).
+
+To use the CLI with Alpine Linux, see [Prerequisites for CLI and Jenkins plugin on Alpine Linux operating system](prerequisites-for-cli-and-jenkins-plugin-on-alpine-linux-operating-system.md).
+
+For more information see [verify CLI standalone binaries](verifying-cli-standalone-binaries.md).
 {% endhint %}
 
 {% hint style="warning" %}
