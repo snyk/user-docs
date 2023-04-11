@@ -28,35 +28,43 @@ To use the CLI you must install it and authenticate. See [Install the Snyk CLI](
 
 **Note:** Before you can use the CLI for Open Source scanning, you must install your package manager. The needed third-party tools such as Gradle or Maven must be in the PATH.
 
+You can use the CLI in your IDE or CI/CD environment. For details see [Install as part of a Snyk integration](https://docs.snyk.io/snyk-cli/install-the-snyk-cli#install-as-a-part-of-a-snyk-integration).
+
+You can authorize Snyk CLI in your CI/CD programatically:
+
+* Using a SNYK\_TOKEN envvar (preferred)\
+  `SNYK_TOKEN=<SNYK_API_TOKEN> snyk test`
+* Or using a Snyk `auth` command\
+  `snyk auth <SNYK_API_TOKEN>`\
+  `snyk test`
+
 ## Test your installation
 
 After authenticating you can **test your installation**. For a quick test, run snyk --help.
-
-For a test Open Source scan, change directory into a folder containing a supported package manifest file such as package.json, pom.xml, or composer.lock) (`cd /my/project/`) and run `snyk test`.
 
 Alternatively, you can perform a **quick test** on a public npm package, for example, `snyk test ionic`.
 
 Look at the `test` command **report** in your terminal. The report shows the vulnerabilities Snyk found in the package. For each issue found, Snyk reports the severity of the issue, provides a link to a detailed description, reports the path through which the vulnerable module got into your system, and provides guidance on how to fix the problem.
 
-{% hint style="info" %}
-Before using the Snyk CLI to test your Open Source Project for vulnerabilities you must **build your project**, with limited exceptions (for details see [Which projects must be built before testing with CLI?](https://support.snyk.io/hc/en-us/articles/360015552617-Which-projects-must-be-built-before-testing-with-CLI-)). Depending on the language of your project, you may need to **set up your language environment** before using the Snyk CLI. For details refer to [Open Source language and package manager support](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/).
-{% endhint %}
-
 ## Scan your development project
 
-Once you have installed and authenticated, change directory into a folder containing a supported package manifest file (for example, `package.json`, `pom.xml`, `composer.lock`) using `cd /my/project/`. Then run `snyk test`. All vulnerabilities identified are listed, including their path and fix guidance.
+{% hint style="info" %}
+Before using the Snyk CLI to test your Open Source Project for vulnerabilities you must **build your project**, with limited exceptions (for details see [Which projects must be built before testing with CLI?](https://support.snyk.io/hc/en-us/articles/360015552617-Which-projects-must-be-built-before-testing-with-CLI-)). Depending on the language of your Open Source Project, you may need to **set up your language environment** before using the Snyk CLI. For details refer to [Open Source language and package manager support](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/).
+{% endhint %}
 
-You can also scan a Docker image by its tag with [Snyk Container](https://snyk.io/product/container-vulnerability-management/) by running, for example: `snyk container test ubuntu:18.04`.
+Once you have installed and authenticated, to **scan an open source Project**, change directory into a folder containing a supported package manifest file such as `package.json`, `pom.xml`, or `composer.lock` using `cd /my/project/`. Then run `snyk test`. All vulnerabilities identified are listed, including their path and fix guidance.
 
-To test a Kubernetes (K8s) file run `snyk iac test /path/to/kubernetes_file.yaml`.
+You can also **scan a Docker image** by its tag with [Snyk Container](https://snyk.io/product/container-vulnerability-management/) by running, for example: `snyk container test ubuntu:18.04`.
 
-If you are using the Snyk CLI to scan for issues in Snyk Code, Container, or Infrastructure as Code projects, refer to the instructions for using the CLI that are specific to each product:
+To test a **Kubernetes (K8s) file** run `snyk iac test /path/to/kubernetes_file.yaml`.
+
+If you are using the Snyk CLI to scan for issues in Snyk Code, Container, or Infrastructure as Code Projects, refer to the instructions for using the CLI that are specific to each area:
 
 * [Using Snyk Code via the CLI](../scan-application-code/snyk-code/cli-for-snyk-code/)
 * [Snyk CLI for container security](../scan-containers/snyk-cli-for-container-security/)
 * [Snyk CLI for Infrastructure as Code](../scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/)
 
-## Monitor your open source or container project
+## Monitor your open source or container Project
 
 Snyk can monitor your project periodically and alert you to new vulnerabilities. To set up your project to be monitored run `snyk monitor` or `snyk container monitor`.
 
@@ -66,9 +74,12 @@ This creates a snapshot of your current dependencies so Snyk can regularly scan 
 > snyk monitor
 Monitoring /project (project-name)...
 
-Explore this snapshot at https://app.snyk.io/org/my-org/project/29361c2c-9005-4692-8df4-88f1c040fa7c/history/e1c994b3-de5d-482b-9281-eab4236c851e
+Explore this snapshot at 
+https://app.snyk.io/org/my-org/project/29361c2c-9005-4692
+-8df4-88f1c040fa7c/history/e1c994b3-de5d-482b-9281-eab4236c851e
 
-Notifications about newly disclosed issues related to these dependencies will be emailed to you.
+Notifications about newly disclosed issues related to these 
+dependencies will be emailed to you.
 ```
 
 You can log in to the Snyk Web UI, and navigate to the [Projects page](https://app.snyk.io/projects) to see the latest snapshot and scan results:
@@ -79,10 +90,10 @@ For more information see [Monitor your projects at regular intervals](test-for-v
 
 ## Running out of tests
 
-If you run out of tests on an open source project follow these steps:
+If you run out of tests on an open source Project follow these steps:
 
 * Run `snyk monitor`.
-* Open the Snyk UI and go to the **settings** of the project.
+* Open the Snyk UI and go to the **settings** of the Project.
 * Enter the URL of your open source repo in **Git remote URI**.
 
 ## Additional information about the Snyk CLI
@@ -106,18 +117,17 @@ For detailed information about the CLI, see the CLI docs. For information about 
 * [Snyk CLI for container security](https://docs.snyk.io/scan-containers/snyk-cli-for-container-security)
 * [Snyk CLI for Infrastructure as Code](https://docs.snyk.io/scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code)
 
-## Getting support
+## Getting support for the Snyk CLI
 
 [Submit a ticket](https://support.snyk.io/hc/en-us/requests/new) to Snyk support whenever you need help with the Snyk CLI or Snyk in general. Note that Snyk support does not actively monitor GitHub Issues on any [Snyk project](https://github.com/snyk).
 
-## Contributing
+## Contributing to the Snyk CLI
 
 The Snyk CLI project is open source, but Snyk does not encourage outside contributors.
 
 You may look into [design decisions for the Snyk CLI](https://github.com/snyk/snyk/blob/master/help/\_about-this-project/README.md).
 
-The Snyk CLI repository is a monorepo that also covers other projects and tools at this time:\
-[@snyk/protect](https://github.com/snyk/snyk/tree/master/packages/snyk-protect); [npm package for snyk-protect command](https://www.npmjs.com/package/@snyk/protect)
+The Snyk CLI repository is a monorepo that also covers other projects and tools such as [@snyk/protect](https://github.com/snyk/snyk/tree/master/packages/snyk-protect); [npm package for snyk-protect command](https://www.npmjs.com/package/@snyk/protect)
 
 ## Security
 

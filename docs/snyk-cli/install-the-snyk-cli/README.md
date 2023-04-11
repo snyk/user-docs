@@ -121,4 +121,4 @@ Snyk also offers many [integrations](../../integrations/) into developer tooling
 * [Eclipse IDE Extension](https://github.com/snyk/snyk-eclipse-plugin)
 * [Maven plugin](https://github.com/snyk/snyk-maven-plugin)
 
-See the [integrations](../../integrations/) docs for more details.
+See the [integrations](../../integrations/) docs for detailed information about the integrations and how to install.\
