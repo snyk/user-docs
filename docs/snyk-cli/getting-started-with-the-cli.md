@@ -1,52 +1,45 @@
 # Getting started with the CLI
 
-## Introduction to the Snyk CLI
+## Introduction to Snyk and the Snyk CLI
 
-[Snyk](https://snyk.io/) scans and monitors your software development projects for security vulnerabilities.
+[Snyk](https://snyk.io/) is a developer-first cloud-native security tool to scan and monitor your software development projects for security vulnerabilities. Snyk covers multiple areas of application security:
 
-The Snyk CLI brings the functionality of Snyk into your development workflow. You can run the CLI locally, or in your CI/CD pipeline. The following shows an example of Snyk CLI test command output.
+* [**Snyk Open Source**](https://snyk.io/product/open-source-security-management/): Find and automatically fix open source vulnerabilities
+* [**Snyk Code**](https://snyk.io/product/snyk-code/): Find and fix vulnerabilities in your application code in real time
+* [**Snyk Container**](https://snyk.io/product/container-vulnerability-management/): Find and fix vulnerabilities in container images and Kubernetes applications
+* [**Snyk Infrastructure as Code**](https://snyk.io/product/infrastructure-as-code-security/): Find and fix insecure configurations in Terraform and Kubernetes code
+
+[Learn more about what Snyk can do and sign up for a free account](https://snyk.io/).
+
+The **Snyk CLI brings the functionality of Snyk into your development workflow**. You can run the CLI locally or in your CI/CD pipeline. The following shows an example of Snyk CLI test command output.
 
 <figure><img src="../.gitbook/assets/snyk-cli-screenshot.png" alt="Snyk CLI test command output example"><figcaption><p>Snyk CLI test command output</p></figcaption></figure>
 
-## About [Snyk](https://snyk.io/)
+Snyk CLI scanning **supports many languages and tools.** For details see the following pages For detailed information see the [summary of supported environments](https://docs.snyk.io/getting-started/introducing-snyk#how-can-snyk-work-in-my-environment). For details about how Snyk scans in each area see the following:
 
-[Snyk](https://snyk.io/) is a developer-first cloud-native security tool. It covers multiple areas of application security:
-
-1. [**Snyk Open Source**](https://snyk.io/product/open-source-security-management/): Find and automatically fix open source vulnerabilities
-2. [**Snyk Code**](https://snyk.io/product/snyk-code/): Find and fix vulnerabilities in your application code in real time
-3. [**Snyk Container**](https://snyk.io/product/container-vulnerability-management/): Find and fix vulnerabilities in container images and Kubernetes applications
-4. [**Snyk Infrastructure as Code**](https://snyk.io/product/infrastructure-as-code-security/): Find and fix insecure configurations in Terraform and Kubernetes code
-
-[Learn more about what Snyk can do and sign up for a free account »](https://snyk.io/)
-
-## Supported languages and tools
-
-Snyk CLI scanning for Open Source supports many languages and tools, including Java, JavaScript, Python, PHP, Ruby, Scala, .NET, Golang, and C/C++. For more information see [Open source language and package manager support](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/).
-
-Snyk CLI also supports:
-
-* [Snyk Code scanning](../scan-application-code/snyk-code/cli-for-snyk-code/)
-* [Snyk Container scanning](../scan-containers/snyk-cli-for-container-security/) including Docker scanning
-* [Snyk Infrastructure as Code scanning](../scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/) including Terraform and Kubernetes (K8s) projects
-
-For additional information see the [summary of supported languages](https://docs.snyk.io/getting-started/introducing-snyk#how-can-snyk-work-in-my-environment).
+* [Snyk Open Source scanning](https://docs.snyk.io/scan-application-code/snyk-open-source)
+* [Snyk Code scanning](https://docs.snyk.io/scan-application-code/snyk-code)
+* [Snyk Container scanning](https://docs.snyk.io/scan-containers) including Docker scanning
+* [Snyk Infrastructure as Code](https://docs.snyk.io/scan-cloud-deployment/snyk-infrastructure-as-code) scanning including Terraform and Kubernetes (K8s) projects
 
 ## Install the Snyk CLI and authenticate
 
 To use the CLI you must install it and authenticate. See [Install the Snyk CLI](install-the-snyk-cli/) and the [Auth](commands/auth.md) command help. You can refer to the [release notes](https://github.com/snyk/cli/releases) for a summary of changes in each release. Before scanning your code, review the [Code execution warning for Snyk CLI](code-execution-warning-for-snyk-cli.md).
 
-**Note:** Before you can use the CLI you must install your package manager. The needed third-party tools such as Gradle or Maven must be in the PATH.
+**Note:** Before you can use the CLI for Open Source scanning, you must install your package manager. The needed third-party tools such as Gradle or Maven must be in the PATH.
 
 ## Test your installation
 
-After authenticating you can **test your installation**. Change directory into a folder containing a supported package manifest file such as package.json, pom.xml, or composer.lock) (`cd /my/project/`) and run `snyk test`.
+After authenticating you can **test your installation**. For a quick test, run snyk --help.
+
+For a test Open Source scan, change directory into a folder containing a supported package manifest file such as package.json, pom.xml, or composer.lock) (`cd /my/project/`) and run `snyk test`.
 
 Alternatively, you can perform a **quick test** on a public npm package, for example, `snyk test ionic`.
 
 Look at the `test` command **report** in your terminal. The report shows the vulnerabilities Snyk found in the package. For each issue found, Snyk reports the severity of the issue, provides a link to a detailed description, reports the path through which the vulnerable module got into your system, and provides guidance on how to fix the problem.
 
 {% hint style="info" %}
-Before using the Snyk CLI to test your project for vulnerabilities you must **build your project**, with limited exceptions (for details see [Which projects must be built before testing with CLI?](https://support.snyk.io/hc/en-us/articles/360015552617-Which-projects-must-be-built-before-testing-with-CLI-)). Depending on the language of your project, you may need to **set up your language environment** before using the Snyk CLI. For details refer to [Open Source language and package manager support](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/).
+Before using the Snyk CLI to test your Open Source Project for vulnerabilities you must **build your project**, with limited exceptions (for details see [Which projects must be built before testing with CLI?](https://support.snyk.io/hc/en-us/articles/360015552617-Which-projects-must-be-built-before-testing-with-CLI-)). Depending on the language of your project, you may need to **set up your language environment** before using the Snyk CLI. For details refer to [Open Source language and package manager support](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/).
 {% endhint %}
 
 ## Scan your development project
@@ -92,11 +85,11 @@ If you run out of tests on an open source project follow these steps:
 * Open the Snyk UI and go to the **settings** of the project.
 * Enter the URL of your open source repo in **Git remote URI**.
 
-## Additional information
+## Additional information about the Snyk CLI
 
 Run `snyk help` or see the [CLI commands and options summary](cli-reference.md).
 
-See [Introduction to the Snyk CLI](https://training.snyk.io/courses/intro-cli) for a quick video training session.
+See  the course [Introduction to the Snyk CLI](https://training.snyk.io/courses/intro-cli) for a quick video training session.
 
 Snyk also provides a [cheat sheet](https://snyk.io/wp-content/uploads/cheat-sheet-snyk-cli-v3.pdf) ([blog post](https://snyk.io/blog/snyk-cli-cheat-sheet/)) and a [video tutorial](https://www.youtube.com/watch?v=xp\_LtchEkT8).
 
@@ -105,6 +98,13 @@ In particular see the information about the following options that you may find 
 * `--severity-threshold=low|medium|high|critical`: Report only vulnerabilities of the specified level or higher
 * `--json`: Print results in JSON format
 * `--all-projects`: Auto-detect all projects in the working directory
+
+For detailed information about the CLI, see the CLI docs. For information about scanning in each area, see the following pages:
+
+* [Use Snyk Open Source from the CLI](https://docs.snyk.io/scan-application-code/snyk-open-source/use-snyk-open-source-from-the-cli)
+* [Using Snyk Code via the CLI](https://docs.snyk.io/scan-application-code/snyk-code/cli-for-snyk-code)
+* [Snyk CLI for container security](https://docs.snyk.io/scan-containers/snyk-cli-for-container-security)
+* [Snyk CLI for Infrastructure as Code](https://docs.snyk.io/scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code)
 
 ## Getting support
 
