@@ -35,7 +35,7 @@ In addition, you will have more filter options available when the “Group by no
 
 3. Enter a name for your Project view in the available field, then click **Create view.**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (2).png" alt="Enter a name for your Project view"><figcaption><p>Enter a name for your Project view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (7).png" alt="Enter a name for your Project view"><figcaption><p>Enter a name for your Project view</p></figcaption></figure>
 
 Your new view is created and is automatically selected. You can click the icon next to your Project view to duplicate, rename, or delete it.
 

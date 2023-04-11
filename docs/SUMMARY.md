@@ -683,7 +683,7 @@
     * [SBOM](snyk-cli/commands/sbom.md)
     * [Test](snyk-cli/commands/test.md)
   * [Install or update the Snyk CLI](snyk-cli/install-the-snyk-cli/README.md)
-    * [Installing Snyk CLI as a binary via npm](snyk-cli/install-the-snyk-cli/installing-snyk-cli-as-a-binary-via-npm.md)
+    * [Installing Snyk CLI as a binary via npm](snyk-cli/installing-snyk-cli-as-a-binary-via-npm.md)
     * [Install or upgrade to version of Node required for Snyk CLI](snyk-cli/install-the-snyk-cli/install-or-upgrade-to-version-of-node-required-for-snyk-cli.md)
     * [Prerequisites for CLI and Jenkins plugin on Alpine Linux operating system](snyk-cli/install-the-snyk-cli/prerequisites-for-cli-and-jenkins-plugin-on-alpine-linux-operating-system.md)
     * [Prerequisite for CLI on an Apple M1 machine](snyk-cli/install-the-snyk-cli/prerequisite-for-cli-on-an-apple-m1-machine.md)
