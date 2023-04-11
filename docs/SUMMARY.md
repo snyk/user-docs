@@ -324,7 +324,7 @@
       * [Install the Snyk controller with OpenShift 4 and OperatorHub](scan-containers/kubernetes-workload-and-image-scanning/installation-page/install-the-snyk-controller-with-openshift-4-and-operatorhub.md)
       * [Optional installation steps for Snyk Controller with Helm](scan-containers/kubernetes-workload-and-image-scanning/installation-page/optional-installation-steps-for-snyk-controller-with-helm.md)
     * [Kubernetes integration features](scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-features/README.md)
-      * [Manually import of Kubernetes workload project](scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-features/adding-kubernetes-workloads-for-security-scanning.md)
+      * [Manually import Kubernetes workload project](scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-features/adding-kubernetes-workloads-for-security-scanning.md)
       * [Automatic import/deletion of Kubernetes workloads projects](scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-features/automatic-import-deletion-of-kubernetes-workloads-projects/README.md)
         * [Advanced use of automatic import/deletion](scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-features/automatic-import-deletion-of-kubernetes-workloads-projects/advanced-use-of-automatic-import-deletion.md)
       * [Annotated import](scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-features/annotated-import.md)
