@@ -26,5 +26,5 @@ If the problems persist please check http://support.snyk.io/.
 
 If you continue to experience issues and they are not resolved by following any of the suggestions, you have the following options
 
-* Install the Snyk CLI from any of the other deployment channels suggested on the [installation page](install-the-snyk-cli/).
+* Install the Snyk CLI from any of the other deployment channels suggested on the [installation page](./).
 * If you experience an error that is not automatically handled, or you suspect that the Extensible CLI behaves incorrectly, you can use `--legacy-cli` to force use of the legacy Typescript CLI instead of the Extensible CLI.

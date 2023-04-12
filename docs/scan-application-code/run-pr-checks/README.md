@@ -19,7 +19,7 @@ You can analyze PR Checks results in your SCM to test for dependency and licensi
 
 The following diagram explains how Snyk Checks PRs in your development workflow.
 
-<figure><img src="../../.gitbook/assets/PR checks diagram (development workflow) (1) (1) (1).png" alt="Diagram showing where Snyk checks for pull requests in the development workflow."><figcaption><p>Pull request checks in the development workflow</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/PR checks diagram (development workflow) (1) (1) (1) (1) (1).png" alt="Diagram showing where Snyk checks for pull requests in the development workflow."><figcaption><p>Pull request checks in the development workflow</p></figcaption></figure>
 
 #### Step-by-step process
 

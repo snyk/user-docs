@@ -46,6 +46,10 @@ Test container images for any known vulnerabilities.
 
 Print a list of the `snyk iac` commands: `snyk iac describe`, `snyk iac update-exclude-policy`, and `snyk iac test`.
 
+### [snyk iac capture](https://docs.snyk.io/snyk-cli/commands/iac-capture)
+
+Generate a mapping artifact that contains the minimum amount of information needed to generate, from Terraform state files, resource mappings from code to Cloud, such as resource IDs and names, and send the mapping artifact to Snyk.
+
 ### [`snyk iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
 Detect, track, and alert on infrastructure drift and unmanaged resources.
@@ -76,11 +80,15 @@ Manage Snyk CLI configuration.
 
 ### [`snyk policy`](https://docs.snyk.io/snyk-cli/commands/policy)
 
-Display the `.snyk` policy for a package.
+generates a mapping artifact that contains the minimum amount of information needed to generate, from Terraform state files, resource mappings from code to Cloud, such as resource IDs and names, and sends the mapping artifact to Snyk.Display the `.snyk` policy for a package.
 
 ### [`snyk ignore`](https://docs.snyk.io/snyk-cli/commands/ignore)
 
 Modify the `.snyk` policy to ignore stated issues.
+
+### [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
+
+Generate an SBOM for a local software project in an ecosystem supported by Snyk.
 
 ## New CLI commands
 
