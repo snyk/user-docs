@@ -22,13 +22,13 @@ For example:
 
 If you select **GitHub**, then fill in the details as prompted.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Set access permissions</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (298).png" alt=""><figcaption><p>Set access permissions</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (171).png" alt=""><figcaption><p>Configure automation settings &#x26; authenticate</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (367).png" alt=""><figcaption><p>Configure automation settings &#x26; authenticate</p></figcaption></figure>
 
 Finally, you can [Import a Project](import-a-project.md) to scan:
 
-<figure><img src="../../.gitbook/assets/image (160) (1) (1) (1).png" alt=""><figcaption><p>Add your first project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (160) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Add your first project</p></figcaption></figure>
 
 ### Manual process (any time)
 
