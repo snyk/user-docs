@@ -15,13 +15,13 @@ Use Snyk PR Checks to prevent new security issues from entering your codebase by
 
 You can analyze PR Checks results in your SCM to test for dependency and licensing issues using [Snyk Open Source](../snyk-open-source/), and code security using [Snyk Code](../snyk-code/).
 
-## How it works
+## How PR checks work
 
 The following diagram explains how Snyk Checks PRs in your development workflow.
 
 <figure><img src="../../.gitbook/assets/PR checks diagram (development workflow) (1) (1) (1) (1) (1).png" alt="Diagram showing where Snyk checks for pull requests in the development workflow."><figcaption><p>Pull request checks in the development workflow</p></figcaption></figure>
 
-#### Step-by-step process
+**Step-by-step process**
 
 1. A developer creates a pull request (PR) in an SCM integrated with Snyk.
 2. Snyk automatically scans the code changes in the PR for issues.

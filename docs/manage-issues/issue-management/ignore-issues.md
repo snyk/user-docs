@@ -41,6 +41,8 @@ This is checked by default if there is currently no fix available for this issue
 
 {% hint style="info" %}
 An issue is ignored until ANY of the conditions happen: the ignore period expires or the vulnerability becomes fixable.
+
+An issue ignored within an open source Project in the Snyk web UI will be reflected and not flagged in any consecutive [PR check](https://docs.snyk.io/scan-application-code/run-pr-checks) across all branches of said Project.
 {% endhint %}
 
 When you ignore an issue in the Snyk Web UI, the issue shows who ignored it and allow you to edit or unignore it.
