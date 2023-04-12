@@ -46,7 +46,7 @@ Choose the required permissions and click **Update Role Permissions**.
 
 When creating the role is complete, you will see the confirmation message at the top.
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt="Role creation confirmation message"><figcaption><p>Role creation confirmation message</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13).png" alt="Role creation confirmation message"><figcaption><p>Role creation confirmation message</p></figcaption></figure>
 
 ### Edit a Role
 
@@ -58,7 +58,7 @@ When creating the role is complete, you will see the confirmation message at the
 
 When updating the role is complete, you will see the confirmation message at the top.
 
-<figure><img src="../../.gitbook/assets/image (361).png" alt="Role change confirmation message"><figcaption><p>Role change confirmation message</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (272).png" alt="Role change confirmation message"><figcaption><p>Role change confirmation message</p></figcaption></figure>
 
 ### Duplicate a Role
 
@@ -98,13 +98,13 @@ In the Web UI, select an **Org** > **Members**.
 
 For any member (Name) except a Group Admin, the user can select the dropdown next to the current role and choose any role to assign that role to the member.
 
-<figure><img src="../../.gitbook/assets/image (104) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Select member role"><figcaption><p>Select member role</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (104) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Select member role"><figcaption><p>Select member role</p></figcaption></figure>
 
 Click the **Add members** button > **Invite new members**.\
 \
 You can invite new members to the org by assigning them a specified role.
 
-<figure><img src="../../.gitbook/assets/image (531).png" alt="Invite new members"><figcaption><p>Invite new members</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (76).png" alt="Invite new members"><figcaption><p>Invite new members</p></figcaption></figure>
 
 Choose **Add members** button > **Add existing members** to promote current Group Members to an org-specific role.
 

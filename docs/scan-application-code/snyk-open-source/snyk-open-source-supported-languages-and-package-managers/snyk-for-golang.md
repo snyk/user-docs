@@ -40,12 +40,14 @@ How Snyk analyzes and builds the tree varies depending on the language and packa
 
 ### **Go Modules and Snyk CLI**
 
-To build the dependency tree, Snyk uses the `go list -json -deps` command.
-
 {% hint style="info" %}
 Snyk scans Go Modules projects in the CLI at the _package_ level rather than on the _module_ level, as Snyk has full access to your Project source code.\
 This is beneficial since you might use a vulnerable module but not the vulnerable package.
 {% endhint %}
+
+To build the dependency tree, Snyk uses the `go list -json -deps` command.
+
+Packages from the Go standard library are excluded from the dependency tree.
 
 When you test Go Modules projects using the CLI, Snyk does not require that dependencies be installed, but you must have a `go.mod` file at the root of your Project; `go list` uses this and your project source code to build a complete dependency tree.
 

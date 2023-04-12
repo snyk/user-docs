@@ -26,21 +26,21 @@ Custom mapping for an OIDC application in Okta is easily managed through custom 
 1. In Okta, select your newly created OIDC application user profile under **Directory -> Profile editor.**
 2.  Select **+Add Attribute.**
 
-    <figure><img src="../../../.gitbook/assets/3 (1).png" alt="Okta profile editor"><figcaption><p>Okta profile editor</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/3.png" alt="Okta profile editor"><figcaption><p>Okta profile editor</p></figcaption></figure>
 3.  In the corresponding fields, add the following details for this Attribute and click **Save**:\
     **Data type**: string array\
     **Display name**: Snyk roles\
     **Variable name:** roles\
     **Group Priority**: Combine values across groups
 
-    <figure><img src="../../../.gitbook/assets/4 (4).png" alt="Attribute details"><figcaption><p>Attribute details</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/4 (3).png" alt="Attribute details"><figcaption><p>Attribute details</p></figcaption></figure>
 
 ### Assign the attribute to the relevant Okta groups
 
 1. On the main page of Okta select **Directory -> Groups**.
 2.  Select a **Group**, navigate to the **Applications** tab, click **Assign** **application** if not already assigned, and choose your Snyk OIDC app,. Then click on the **pencil** next to the displayed Snyk OIDC app.
 
-    <figure><img src="../../../.gitbook/assets/5 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Group selected for modicification"><figcaption><p>Group selected for modicification</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/5 (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Group selected for modicification"><figcaption><p>Group selected for modicification</p></figcaption></figure>
 3.  In the **Edit App Assignment** dialog, add the Snyk org name + role associated with your Okta group (no spaces or capital letter(s)), following the syntax explained in [Example roles array mapping](./#example-roles-array-mapping). Example, `snyk-org-role`.
 
     <figure><img src="../../../.gitbook/assets/6 (1) (1).png" alt="Adding Snyk roles"><figcaption><p>Adding Snyk roles</p></figcaption></figure>

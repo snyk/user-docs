@@ -41,7 +41,7 @@ To remove pending invites:
 1. On the **Members** page, below the search bar, click **Revoke pending invites** (see image below). Note: Link appears when there is at least one pending invite.
 2. In the **Pending invites in \_your organization's name**\_ modal that appears, click the ![](<../../.gitbook/assets/Screenshot 2022-03-11 at 08.05.56.png>) icon next to a user's name to cancel their invite.
 
-![Revoke pending invites](../../.gitbook/assets/revoke-pending-invites-example.png)
+![Revoke pending invites](<../../.gitbook/assets/revoke-pending-invites-example (1).png>)
 
 ### Change member roles
 
