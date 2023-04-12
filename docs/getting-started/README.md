@@ -2,18 +2,18 @@
 
 Start securing code, dependencies, containers, and deployed applications with Snyk.
 
-{% hint style="success" %}
-**See** [**Quickstart**](quickstart/) **to get started in minutes!**
-{% endhint %}
+### About Snyk
 
-## In this section
+* [Introducing Snyk](introducing-snyk.md)
+* [Snyk Web UI](getting-started-with-the-snyk-web-ui.md)
 
-| About Snyk                                             | Using Snyk                        | Tutorials                                                                      |
-| ------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------------------------ |
-| [Introducing Snyk](introducing-snyk.md)                | [Quickstart](quickstart/)         | [Walkthrough: Code Repository Projects](walkthrough-code-repository-projects/) |
-| [Snyk Web UI](getting-started-with-the-snyk-web-ui.md) | [Running tests](running-tests.md) |                                                                                |
+### Using Snyk
 
-### Other information
+* [Quickstart](quickstart/)
+* [Running tests](running-tests.md)
 
-* See [Guides](../guides/) for step-by-step implementation instructions.
-* Visit [Snyk Training ](https://training.snyk.io/)for related introductory training.
+### Tutorials
+
+* [Walkthrough: Code Repository Projects](walkthrough-code-repository-projects/)
+* [Guides](../guides/): step-by-step implementation instructions
+* [Snyk Training](https://training.snyk.io/):  introductory training.
