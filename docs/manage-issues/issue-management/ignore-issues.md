@@ -40,16 +40,16 @@ If you select **Ignore temporarily,** then you can check the **Until fix is avai
 This is checked by default if there is currently no fix available for this issue. The vulnerability resurfaces as soon as Snyk has a fix for it, and optionally you can give additional details on why you are ignoring the issue.
 
 {% hint style="info" %}
-An issue is ignored until ANY of the conditions happen: the ignore period expires or the vulnerability becomes fixable.
+An issue is ignored until either of the conditions occurs: the ignore period expires, or the vulnerability becomes fixable.
 
-An issue ignored within an open source Project in the Snyk web UI will be reflected and not flagged in any consecutive [PR check](https://docs.snyk.io/scan-application-code/run-pr-checks) across all branches of said Project.
+An issue ignored within an Open Source or Code Project in the Snyk web UI will be reflected and not flagged in any consecutive [PR check](https://docs.snyk.io/scan-application-code/run-pr-checks) across all branches of that Project.
 {% endhint %}
 
 When you ignore an issue in the Snyk Web UI, the issue shows who ignored it and allow you to edit or unignore it.
 
 <figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Ignore set in the Snyk Web UI"><figcaption><p>Ignore set in the Snyk Web UI</p></figcaption></figure>
 
-For more information see the training: [Ignoring issues](https://training.snyk.io/courses/ignore-strategies).
+For more information, see the training: [Ignoring issues](https://training.snyk.io/courses/ignore-strategies).
 
 ### Ignoring issues in the CLI
 
@@ -57,9 +57,9 @@ You can suppress issues through the CLI by using the `snyk ignore` command, for 
 
 `snyk ignore --id='npm:braces:20180219' --expiry='2018-04-01' --reason='testing'`
 
-For more information see the [`ignore`](../../snyk-cli/commands/ignore.md) command help and [Ignore vulnerabilities using Snyk CLI](../../snyk-cli/test-for-vulnerabilities/ignore-vulnerabilities-using-snyk-cli.md).
+For more information, see the [`ignore`](../../snyk-cli/commands/ignore.md) command help and [Ignore vulnerabilities using Snyk CLI](../../snyk-cli/test-for-vulnerabilities/ignore-vulnerabilities-using-snyk-cli.md).
 
-When you use `snyk ignore`**,** the `.snyk` policy file is updated with the path and reason given, if one was provided. For example:
+When you use `snyk ignore`**,** the `.snyk` policy file is updated with the path and reason given if one was provided. For example:
 
 ```
 'npm:moment:20170905':
@@ -76,7 +76,7 @@ Ignores between a CLI or CI/CD run and the Snyk UI are synchronized as follows:
 2. You see the results of the scan and choose to ignore an issue.
 3. The issue is ignored when running `snyk test` or `snyk monitor` in the CI/CD or CLI.
 
-Refer to the following example. Issues are identified as CI/CLI, meaning the Project was imported from `snyk monitor`. The issue is `npmconf`. It is **Not vulnerable** and the user is selecting **Ignore**, using the button.
+Refer to the following example. Issues are identified as CI/CLI, meaning the Project was imported from `snyk monitor`. The issue is `npmconf`. It is **Not vulnerable,** and the user can select **Ignore**.
 
 <figure><img src="../../.gitbook/assets/ignore-vulnerability-snyk-monitor-updated.png" alt="Project imported from snyk monitor, ignore set in the Web UI"><figcaption><p>Project imported from snyk monitor, ignore set in the Web UI</p></figcaption></figure>
 
@@ -90,7 +90,7 @@ The following shows `snyk test` results after ignoring in the Web UI:
 
 This example shows what happens if you ignore the Project imported by `snyk monitor` from the CLI or CI/CD.
 
-The same repository imported from the SCM is considered to be a different Project, and any ignore on an SCM Project does not impact the results of a `snyk test` from the CLI or a CI/CD. SCM and CI Projects behave as two stand alone Projects.
+The same repository imported from the SCM is considered to be a different Project, and any ignore on an SCM Project does not impact the results of `snyk test` from the CLI or a CI/CD. SCM and CI Projects behave as two standalone Projects.
 
 ### Ignoring issues with the .snyk file
 
@@ -112,7 +112,7 @@ ignore:
 For more information, see [The .snyk file](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md).
 
 {% hint style="info" %}
-Please see information about [.snyk files in monorepos](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../snyk-cli/test-for-vulnerabilities/using-a-.snyk-file-in-a-separate-directory-than-the-manifest-file.md).
+Sree information about [.snyk files in monorepos](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../snyk-cli/test-for-vulnerabilities/using-a-.snyk-file-in-a-separate-directory-than-the-manifest-file.md).
 {% endhint %}
 
 ### Ignoring issues with policy actions
@@ -123,7 +123,7 @@ For more information, see [Security policies: Actions](https://docs.snyk.io/fixi
 
 ## Snyk Code: ignoring issues
 
-For [Snyk Code](https://docs.snyk.io/snyk-code), ignore functionality may capture a wider range of issues than other products.
+For [Snyk Code](https://docs.snyk.io/snyk-code), the ignore functionality may capture a wider range of issues than other products.
 
 Snyk Code's static code analysis transforms the input code into an **intermediate representation**, which captures the flow of code but abstracts away some details. Snyk Code uses this representation to recognize the same issue even when you refactor your code or rename a variable.
 
@@ -147,9 +147,9 @@ For more information, see [Exploring the vulnerability issues discovered by Snyk
 
 ## Snyk IaC: ignoring issues
 
-When scanning your IaC configuration files using the Snyk CLI with `snyk iac test` you can ignore issues that are not relevant to you by using [The .snyk file](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md).
+When scanning your IaC configuration files using `snyk iac test` you can ignore issues that are not relevant to you by using [The .snyk file](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md).
 
-Snyk recommends storing and versioning the `.snyk` file in root of your working directory, where you store your IaC configuration files.
+Snyk recommends storing and versioning the `.snyk` file in the root of your working directory, where you store your IaC configuration files.
 
 For more information, see [IaC ignores using the .snyk policy file](../../scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md).
 
