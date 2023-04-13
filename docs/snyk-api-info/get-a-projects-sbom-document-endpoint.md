@@ -9,7 +9,7 @@ Snyk offers an endpoint to generate SBOM documents for projects that are continu
 
 The SBOM document represents the latest state of a project’s dependencies and their relationships.
 
-SBOM documents can be generated in [CycloneDX](https://cyclonedx.org/) (JSON, XML) and [SPDX](https://spdx.dev/) (v2.3 JSON) formats.
+SBOM documents can be generated in [CycloneDX](https://cyclonedx.org/) v1.4 (JSON, XML) and [SPDX](https://spdx.dev/) v2.3 (JSON) formats.
 
 ## How to generate the SBOM for a project
 
