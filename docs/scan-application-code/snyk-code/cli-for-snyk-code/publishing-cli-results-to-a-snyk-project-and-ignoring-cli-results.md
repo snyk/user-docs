@@ -5,9 +5,9 @@
 This feature is currently in Closed Beta. To obtain access, contact your Snyk account representative.
 {% endhint %}
 
-Snyk Code CLI supports publishing the results to a Snyk Project in the web UI and respecting issues that were ignored in a Snyk Project in the web UI so you can filter them from the analysis results.
+Snyk Code CLI supports publishing the results to a Snyk Project in the Web UI and respecting issues that were ignored in a Snyk Project in the Web UI so you can filter them from the analysis results.
 
-This enables Code to be used as a blocking CI/CD gate to test and block builds at the main branch level and then have developers review the results in the web UI, fix any newly introduced vulnerabilities, or ignore irrelevant ones.
+This enables Code to be used as a blocking CI/CD gate to test and block builds at the main branch level and then have developers review the results in the Web UI, fix any newly introduced vulnerabilities, or ignore irrelevant ones.
 
 ## **Publishing CLI results to a Snyk Project**
 
@@ -29,7 +29,7 @@ If a CLI-based Snyk Code Project does not yet exist for the value provided in th
 
 ## **Ignoring CLI results**
 
-You can ignore issues from CLI results in the Web UYu by using the ignore button:
+You can ignore issues from CLI results in the Web UI by using the ignore button:
 
 <figure><img src="../../../.gitbook/assets/image (1).png" alt="Ignoring issues in the Web UI"><figcaption><p>Ignoring issues in the Web UI</p></figcaption></figure>
 
