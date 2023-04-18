@@ -97,6 +97,25 @@ https = require("https")
 https.get('<URL_HERE>', res => {console.log(`statusCode: ${res.statusCode}`)})
 ```
 
+## **Support of big manifest files (> 1Mb) for GitHub and GitHub Enterprise**
+
+Open Fix/Upgrade PRs or PR/recurring tests may fail because of fetching big manifest files (> 1Mb) failure. To address this issue, whitelist an additional Blob API endpoint in `accept.json`:
+
+This should be in the `private` array.
+
+```
+{
+    "//": "used to get given manifest file",
+    "method": "GET",
+    "path": "/repos/:owner/:repo/git/blobs/:sha",
+    "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+}
+```
+
+{% hint style="info" %}
+To ensure the maximum possible security, Snyk does not enable this rule by default, as use of this endpoint theortically gives the Snyk platform access to all files in this repository because the path does not include specific allowed file names.
+{% endhint %}
+
 ## Troubleshooting Broker with Code Agent
 
 <figure><img src="https://lh3.googleusercontent.com/r_qtONpOOEW35gdyoBcWDAiC6j04M76q8mh922SHor4bdNZdt83sj2kP7d5hbzYcWVXp4Q2hZEiCeAVOmcj4Bu1yFPdnyp3rK7kKeBK8DZEd9S133Xn3YdjddclVf5maEbP23Jor" alt="Snyk Code Analysis workflow with Broker"><figcaption><p>Snyk Code Analysis workflow with Broker</p></figcaption></figure>
