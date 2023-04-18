@@ -2,7 +2,7 @@
 
 The Snyk REST API endpoint [List issues for a package](https://apidocs.snyk.io/?version=2023-03-08#get-/orgs/-org\_id-/packages/-purl-/issues) can fetch all direct vulnerabilities for a package. Direct (non-transitive) vulnerabilities for a package are requested by passing the package's `purl`, a reliable identifier and locator of software packages defined in the [purl (Package URL) specification](https://github.com/package-url/purl-spec). Snyk returns a list of vulnerabilities from the Snyk Vulnerabilities Database (Vuln DB).​
 
-The current release supports the following packages: `maven`, `npm`, `cocoapods`, `composer`, `gem`, `nuget`, `pypi`, `hex`, `swift` and `cargo`. If you are interested in support for additional ecosystems, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
+The current release supports the following Package URL types: `maven`, `npm`, `cocoapods`, `composer`, `gem`, `nuget`, `pypi`, `hex`, `swift`, `cargo`, `docker`,`apk`, `deb` and `rpm.` If you are interested in support for additional ecosystems, submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new).
 
 The API is useful when you have a list of packages and want to retrieve a list of vulnerabilities for a package version.
 
@@ -21,6 +21,8 @@ $ http \
   version==<snyk-api-version>
 ```
 
+The purl must be **URL-encoded.**
+
 An example using a valid url-encoded purl follows:
 
 ```bash
@@ -30,7 +32,16 @@ $ http \
   version==2022-04-04~experimental
 ```
 
-The purl must be **URL-encoded.**
+For operating system packages, a vendor must be specified in the namespace portion and a `distro` qualifier must be specified. Supported vendors include: `debian`, `alpine`, `rhel`, `ubuntu`, `amzn`, `centos`, `oracle`, `rocky`, `sles`.&#x20;
+
+An example using a valid url-encoded operating system purl follows:
+
+```bash
+$ http \
+  "https://api.snyk.io/rest/orgs/{org_id}/packages/pkg%3Adeb%2Fdebian%2Fcurl%3Fdistro%3Dbullseye/issues" \
+  "Authorization: token $API_TOKEN" \
+  version==2022-04-04~experimental
+```
 
 The Snyk REST API supports pagination. This has a default page limit of **1000**, with a default offset of **0.** Current, next, and previous pages are returned as links in the response. The following  parameters can be supplied as query parameters: `offset`, `limit`.
 
@@ -193,7 +204,7 @@ Make sure that the purl specification you provided is a valid purl. For more inf
 
 **Unsupported Ecosystem**\
 400\
-Ensure that the package type is one of the following: npm, Maven, Cocoapods, Composer, Gem, Nuget, Pypi, Hex, Cargo
+Ensure that the package type is one of the following: npm, Maven, Cocoapods, Composer, Gem, Nuget, Pypi, Hex, Cargo, apk, deb, rpm
 
 **Package requested without namespace**\
 400\
