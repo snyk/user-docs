@@ -84,3 +84,7 @@ helm install snyk-broker-chart . \
              --set env[1].value=myOtherEnvVarValue \
              -n snyk-broker --create-namespace
 ```
+
+## Credential pooling and Helm Chart installation
+
+See [Credential pooling](../install-and-configure-broker-using-docker/credential-pooling.md).

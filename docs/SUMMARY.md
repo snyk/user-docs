@@ -576,6 +576,7 @@
     * [Install and configure Broker using Docker](snyk-admin/snyk-broker/install-and-configure-broker-using-docker/README.md)
       * [Advanced configuration for Snyk Broker Docker installation](snyk-admin/snyk-broker/install-and-configure-broker-using-docker/advanced-configuration-for-snyk-broker-docker-installation.md)
       * [Adding custom accept.json for Docker installation](snyk-admin/snyk-broker/install-and-configure-broker-using-docker/adding-custom-accept.json-for-docker-installation.md)
+      * [Credential pooling](snyk-admin/snyk-broker/install-and-configure-broker-using-docker/credential-pooling.md)
     * [Upgrade the Snyk Broker Client](snyk-admin/snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md)
     * [Snyk Broker - Client integration setups with Helm](snyk-admin/snyk-broker/snyk-broker-client-integration-setups-with-helm.md)
     * [Snyk Broker - Client integration setups with Docker](snyk-admin/snyk-broker/snyk-broker-set-up-examples/README.md)
