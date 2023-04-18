@@ -21,9 +21,9 @@ docker run --restart=always \
 
 Note that `BROKER_CLIENT_URL` now has the HTTPS scheme.
 
-## **Git with an internal certificate**
+## **Backend requests with an internal certificate**
 
-By default, the Broker Client establishes HTTPS connections to the Git repository. If your Git instance is serving an internal certificate (signed by your own certificate authority (CA)), you can provide the CA certificate to the Broker Client.
+By default, the Broker Client establishes HTTPS connections to the backend system, GitHub, BitBucket, Jira, or other. If your backend system is serving an internal certificate (signed by your own certificate authority (CA)), you can provide the CA certificate to the Broker Client.
 
 For example, if your CA certificate is at `./private/ca.cert.pem`, provide it to the Docker container by mounting the folder and using the `CA_CERT` environment variable:
 
@@ -39,6 +39,28 @@ docker run --restart=always \
            -e CA_CERT=/private/ca.cert.pem \
            -v /local/path/to/private:/private \
        snyk/broker:bitbucket-server
+```
+
+Note that this completely replaces the default CA Certificate List for any requests made to your backend system, so this must be the complete chain required by the certificate used by the backend system.
+
+It must be `PEM`-formatted; `DER` is not supported. Supported certificate types are:
+
+* `TRUSTED CERTIFICATE`
+* `X509 CERTIFICATE`
+* `CERTIFICATE`
+
+An example follows.
+
+```
+-----BEGIN CERTIFICATE-----
+<base64-encoded certificate>
+-----END CERTIFICATE----
+-----BEGIN CERTIFICATE-----
+<base64-encoded certificate>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<base64-encoded certificate>
+-----END CERTIFICATE-----
 ```
 
 ## Proxy support
