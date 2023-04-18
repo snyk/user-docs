@@ -11,11 +11,25 @@ When you are setting up Broker and/or Code Agent for use in Multi-tenant environ
 
 This page has information and instructions for the following:
 
+* [Preflight checks](troubleshooting-broker.md#preflight-checks)
 * [Logging with the Broker Client](troubleshooting-broker.md#logging-with-the-broker-client)
 * Basic troubleshooting with the monitoring features, [Healthcheck](troubleshooting-broker.md#monitoring-healthcheck) and [Systemcheck](troubleshooting-broker.md#monitoring-systemcheck)
 * [Troubleshooting Standalone Broker](troubleshooting-broker.md#troubleshooting-standalone-broker)
 * [Troubleshooting Broker with Code Agent](troubleshooting-broker.md#troubleshooting-broker-with-code-agent)
 * [Ensuring your containers stay online when you log out of the host](troubleshooting-broker.md#containers-go-down-when-you-log-out-of-the-host)
+
+## Preflight checks
+
+The main objective of preflight checks is to catch errors and misconfigurations early, on Broker Client startup, rather than later during use. Whether or not the checks are successful, the Broker Client starts. The following checks are available:
+
+| Check ID               | Description                                                                                                                                                                                                                                                 | Configuration Defaults                                                                     |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| `broker-server-status` | **Broker Server Healthcheck** validates the connectivity to the Broker Server. It performs a GET request to `{BROKER_SERVER_URL}/healthcheck`                                                                                                               | If not specified, `BROKER_SERVER_URL` is [https://broker.snyk.io](https://broker.snyk.io/) |
+| `rest-api-status`      | **REST API Healthcheck** validates the connectivity to the [Snyk REST API](https://apidocs.snyk.io/). It performs a GET request to `{API_BASE_URL}/rest/openapi`. This check is conditional and will be executed only if high availability mode is enabled. | If not specified, `API_BASE_URL` is [https://api.snyk.io](https://api.snyk.io/)            |
+
+{% hint style="info" %}
+You can use the environment variable `PREFLIGHT_CHECKS_ENABLED=false` to disable Preflight Checks feature, so no checks will be executed when the Broker Client starts.
+{% endhint %}
 
 ## Logging with the Broker Client
 
