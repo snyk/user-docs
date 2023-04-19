@@ -5,7 +5,7 @@
 This feature is available to customers on Snyk Enterprise plans.
 {% endhint %}
 
-Snyk offers an endpoint to generate SBOM documents for projects that are continuously being monitored for issues.
+Snyk offers an endpoint to generate SBOM documents for Open Source and Container Projects that are continuously being monitored for issues.&#x20;
 
 The SBOM document represents the latest state of a project’s dependencies and their relationships.
 
