@@ -95,7 +95,7 @@ Navigate to **Windows -> Show View -> Other...**
 
 Search for Snyk in the **Show View** dialog window.
 
-![Show View dialog window](<../../../.gitbook/assets/Screenshot 2022-05-13 at 12.02.06 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (6).png>)
+![Show View dialog window](<../../../.gitbook/assets/Screenshot 2022-05-13 at 12.02.06 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (2).png>)
 
 You should now be able to see the Snyk Results panel:
 

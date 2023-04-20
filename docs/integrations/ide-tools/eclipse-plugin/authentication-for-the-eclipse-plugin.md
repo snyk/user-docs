@@ -32,7 +32,7 @@ To verify that the Eclipse plugin is ready to start scanning, be sure the Snyk p
 
 You can provide the API token by copying it from your [account settings](https://app.snyk.io/account) and paste it into the Eclipse preferences Snyk API Token field. Click **Apply and Close** once the token has been set.
 
-![Configure token](<../../../.gitbook/assets/image (170) (1) (1).png>)
+![Configure token](<../../../.gitbook/assets/image (170) (1).png>)
 
 ## Next steps
 

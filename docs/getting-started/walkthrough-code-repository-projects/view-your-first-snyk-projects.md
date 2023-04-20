@@ -81,7 +81,7 @@ For example, you can change scan frequency, setting how often scans are run by d
 
 Let’s go back to the results for your scan:
 
-<figure><img src="../../.gitbook/assets/image (104) (1) (1) (1) (2).png" alt="Project scan results"><figcaption><p>Project scan results</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (104) (1) (1) (1) (2) (1).png" alt="Project scan results"><figcaption><p>Project scan results</p></figcaption></figure>
 
 The scan shows you all vulnerabilities in all aspects of an application. Of course, it's unlikely that you are responsible for every entry in this list, but it's important to be aware of the full picture.
 
