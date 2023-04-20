@@ -20,10 +20,10 @@ Follow these instructions to set up Harbor integration in Snyk and start managin
 
 1. In your Snyk account, navigate to **Integrations** from the menu bar at the top. Under the **Container Registries** section, select the Harbor option.
 2. In the **Account credentials** section, enter your Harbor username and password login credentials.
-3. In the **Container registry name** fill in the full URL to the registry you want to integrate with.&#x20;
+3. In the **Container registry name** fill in the full URL to the registry you want to integrate with.
 4. To finish, select **Save**.
 
-If you are using a self-hosted Harbor registry, contact Snyk to provide you with a token. For more information about setting up private registry integration see [Snyk Container for self-hosted container registries (with broker)](../../integrate-self-hosted-container-registries.md).
+If you are using a self-hosted Harbor registry, contact Snyk to provide you with a token. For more information about setting up private registry integration see [Snyk Container for self-hosted container registries (with broker)](../../kubernetes-workload-and-image-scanning/integrate-self-hosted-container-registries.md).
 
 <figure><img src="../../../.gitbook/assets/mceclip2-1-.png" alt="Harbor Account credentials and Container registry name"><figcaption><p>Harbor Account credentials and Container registry name</p></figcaption></figure>
 

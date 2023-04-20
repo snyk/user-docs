@@ -20,7 +20,7 @@ To set up GitHub container registry integration in Snyk and start managing image
 
 ![mceclip1.png](../../../.gitbook/assets/mceclip1-4-.png)
 
-If you are using a self-hosted GitHub container registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information about setting up private registry integration, see [Snyk Container for self-hosted container registries (with broker)](../../integrate-self-hosted-container-registries.md).
+If you are using a self-hosted GitHub container registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information about setting up private registry integration, see [Snyk Container for self-hosted container registries (with broker)](../../kubernetes-workload-and-image-scanning/integrate-self-hosted-container-registries.md).
 
 Snyk tests the connection values, and the page reloads, now displaying GitHub container registry integration information, and the **Add your GitHub container registry images to Snyk** button becomes available.
 
