@@ -19,7 +19,7 @@ Follow the instructions on this page to add images from Harbor to Snyk.
 6. When the import ends:
    1. You can view the newly imported image in the **Projects** page (marked with a **NEW** tag). Images are grouped by repository and are each linked individually to a detailed **Project** page.
    2. An **import log** becomes available, reachable from the top of the projects list.
-   3. To enrich the data and get recommendations regarding your base image, nuder **Settings** you can connect your Dockerfile to the image project. For more info, see [Adding your Dockerfile and test your base image](../../scan-your-dockerfile/adding-your-dockerfile-and-test-your-base-image.md).
+   3. To enrich the data and get recommendations regarding your base image, nuder **Settings** you can connect your Dockerfile to the image project. For more info, see [Adding your Dockerfile and test your base image](../../scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
 
 Harbor imports are indicated with a unique icon. You can also filter to view only the Harbor projects:
 

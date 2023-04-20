@@ -41,7 +41,7 @@ After you add them, Snyk scans the selected repositories for dependency files in
 
 The imported Projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (40).jpeg" alt="Add selected repositories"><figcaption><p>Add selected repositories</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (33).jpeg" alt="Add selected repositories"><figcaption><p>Add selected repositories</p></figcaption></figure>
 
 ## GitHub integration features
 
@@ -243,14 +243,14 @@ For example, to show a badge for the 4.x branch of the express repo, you would u
 #### Badge results
 
 * A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (109) (1) (1) (1) (1) (2) (1) (2).png" alt="No vulnerabilities" data-size="line">
-* A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (112) (2) (1).png" alt="Number of vulnerabilities" data-size="line">
+* A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (112).png" alt="Number of vulnerabilities" data-size="line">
 * A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (11) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (2) (1) (2).png" alt="Unknown vulnerabilities" data-size="line">
 
 #### **Badge styles**
 
 To change the style of the badge, you can add the following query parameters after `badge.svg`:
 
-* Flat rectangle with squared edges: `?style=flat-square` <img src="../../.gitbook/assets/image (1) (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (2).png" alt="Flat rectangle badge" data-size="line">
+* Flat rectangle with squared edges: `?style=flat-square` <img src="../../.gitbook/assets/image (1) (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Flat rectangle badge" data-size="line">
 * "Plastic" rectangle with rounded edges and shading `?style=plastic` <img src="../../.gitbook/assets/image (109) (1) (1) (1) (1) (2) (1) (2).png" alt="&#x22;Plastic&#x22; rectangle badge" data-size="line">
 
 ### **npm badges**

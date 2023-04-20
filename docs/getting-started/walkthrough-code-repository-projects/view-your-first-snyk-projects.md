@@ -25,7 +25,7 @@ When [setting up your GitHub integration](../../integrations/git-repository-scm-
 
 When you then import a Project, private repositories are identified with a “lock” symbol (<img src="../../.gitbook/assets/image (101) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">) in the imported scan details:
 
-<figure><img src="../../.gitbook/assets/image (110) (1) (1) (1) (2) (1).png" alt="Private repos with lock symbol"><figcaption><p>Private repos with lock symbol</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (110) (1) (1) (1) (2).png" alt="Private repos with lock symbol"><figcaption><p>Private repos with lock symbol</p></figcaption></figure>
 
 For customers on free plans, private repository scans count towards your test count limit.
 
@@ -60,7 +60,7 @@ Snyk scans different parts of this lifecycle, with different icons and entries s
 | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="../../.gitbook/assets/image (210).png" alt="" data-size="line">                         | Your own code analysis results, scanned by[ Snyk Code](../../scan-application-code/snyk-code/).                                                                                                                              |
 | <img src="../../.gitbook/assets/Screenshot 2022-07-20 at 11.14.02.png" alt="" data-size="line">   | Your open source libraries, scanned by [Snyk Open Source](../../scan-application-code/snyk-open-source/), displaying each detected manifest, such as **pom.xml**, **package.json**, and other manifests for these libraries. |
-| <img src="../../.gitbook/assets/image (33).png" alt="" data-size="line">                          | Container results, scanned by [Snyk Container](../../scan-containers/), for items built into a container, such as a Docker file.                                                                                             |
+| <img src="../../.gitbook/assets/image (332) (2).png" alt="" data-size="line">                     | Container results, scanned by [Snyk Container](../../scan-containers/), for items built into a container, such as a Docker file.                                                                                             |
 | <img src="../../.gitbook/assets/image (206) (1) (1) (1) (1) (1).png" alt="" data-size="original"> | Kubernetes deployment files, terraform and other IaC files, scanned by [Snyk Infrastructure as Code (IaC)](../../scan-cloud-deployment/snyk-infrastructure-as-code/).                                                        |
 
 {% hint style="info" %}
@@ -81,7 +81,7 @@ For example, you can change scan frequency, setting how often scans are run by d
 
 Let’s go back to the results for your scan:
 
-<figure><img src="../../.gitbook/assets/image (104) (1) (1) (1) (2) (1).png" alt="Project scan results"><figcaption><p>Project scan results</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (104) (1) (1) (1) (2).png" alt="Project scan results"><figcaption><p>Project scan results</p></figcaption></figure>
 
 The scan shows you all vulnerabilities in all aspects of an application. Of course, it's unlikely that you are responsible for every entry in this list, but it's important to be aware of the full picture.
 
