@@ -109,6 +109,10 @@ These are some of the explicitly supported frameworks for C#; those are in addit
 * **ASP.NET (version 6.x)**: ASP.NET is a free and open source framework to build web apps and services using .NET. Snyk Code supports version 6.x.
 * **.NET Core**: Microsoft created .NET Core to make the .NET framework cross-platform and enable a number of scenarios. The .NET framework and .NET Core share many components and code can be exchanged. (Microsoft [provides guidance](https://docs.microsoft.com/en-us/dotnet/standard/choosing-core-framework-server) when to choose which)
 
+{% hint style="info" %}
+The framework support is always determined by the file extensions known to the engine. For example, the engine does not scan **`*.cshtml`** files, but scans the associated **`*.cshtml.cs`** files.
+{% endhint %}
+
 ### Ruby frameworks
 
 {% hint style="info" %}
@@ -125,10 +129,6 @@ These are some of the explicitly supported frameworks for PHP; those are in addi
 
 * **Symfony**: Backend framework used to build complex applications.
 * **Laravel**: Backend framework used to build modern web applications.
-
-{% hint style="info" %}
-The framework support is always determined by the file extensions known to the engine. For example, the engine does not scan **`*.cshtml`** files, but scans the associated **`*.cshtml.cs`** files.
-{% endhint %}
 
 ### File size limit for Snyk Code analysis
 
