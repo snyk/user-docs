@@ -105,7 +105,7 @@ Collaborator users cannot complete this task.
 1. Log in to [your Snyk account](https://app.snyk.io) and go to **Integrations**.
 2. In the **Azure Repos** tile, click <img src="../../.gitbook/assets/integration_settings_tile_cog-11aug2022.png" alt="" data-size="line"> to open **Organization Settings > Integrations >Azure Repos> Account credentials**.\
    <img src="../../.gitbook/assets/integrations -azure_repo_tile-11aug2022.png" alt="" data-size="original">\\
-3.  Set the Azure DevOps organization that you want to integrate with by entering the slug for your organization (![](<../../.gitbook/assets/image (163) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)) and the personal access token that you generated.
+3.  Set the Azure DevOps organization that you want to integrate with by entering the slug for your organization (![](<../../.gitbook/assets/image (163) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png>)) and the personal access token that you generated.
 
     Enterprise customers can also provide a custom URL for an Azure Repos Server private instance that is publicly reachable.
 4. Click **Save**.\
