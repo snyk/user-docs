@@ -93,6 +93,21 @@ where:
 To use the Broker Client with a proxy server, see [Setting up the Broker Client to work with a Proxy server](setting-up-the-broker-client-to-work-with-a-proxy-server.md).
 {% endhint %}
 
+## **If you already have an accept.json file**
+
+If you already have an `accept.json` file configured, you will need to add the following JSON block to the existing file in order to enable code snippets:
+
+```
+...
+    {
+      "//": "needed to load code snippets",
+      "method": "GET",
+      "path": "/repos/:name/:repo/contents/:path",
+      "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
+    },
+...
+```
+
 Once the Broker Client setup is completed successfully, the following message appears in the terminal:
 
 `{ ..., "msg":"successfully established a websocket connection to the broker server", ... }`
