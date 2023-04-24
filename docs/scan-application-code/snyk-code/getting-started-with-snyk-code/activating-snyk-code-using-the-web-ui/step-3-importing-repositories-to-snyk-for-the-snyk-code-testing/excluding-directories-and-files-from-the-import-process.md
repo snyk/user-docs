@@ -10,19 +10,36 @@ When you import a repository to be tested by Snyk Code, you can exclude certain 
 
 You can also use the instructions in this section to exclude directories and files from the [Snyk Code CLI test](../../../cli-for-snyk-code/testing-your-source-code-via-the-cli.md), by creating the `.snyk` file in your tested repository.
 
-### **The Exclusion Syntax of the .snyk File**
+## **The Exclusion Syntax of the .snyk File**
 
-**Use the following syntax to exclude files and directories via the `.snyk` file:**
+### **Use the following syntax to exclude files and directories via the `.snyk` file:**
 
-| <p><mark style="color:green;"><code># Snyk (https://snyk.io) policy file</code></mark><br></p><p><code>exclude:</code><br><mark style="color:green;"># Use either “global” or “code”. “global” currently applies only to the Snyk Code product, and it will exclude the specified directories and files from these tests; “code” applies only to the Snyk Code analysis.</mark><br></p><p><code>global:</code></p><p><mark style="color:green;"># Exclude a single file. For example, - test.spec.js</mark></p><p><code>- file_name.ext</code></p><p><mark style="color:green;"># Exclude a single directory. For example, - src/lib</mark></p><p><code>- source/directory_name</code></p><p><mark style="color:green;"># Exclude any file with a specific extension in the specific directory. For example, - tests/</mark><em><mark style="color:green;">.js</mark></em></p><p><em><code>- directory_name/</code></em><code>.ext</code></p><p><mark style="color:green;"># Exclude files with a specific ending in any directory. For example, - “<strong>/</strong></mark><em><mark style="color:green;"><strong>.spec.js”</strong></mark></em></p><p><em><strong><code>- "</code></strong><code>/.ending.ext"</code></em></p><p><em><mark style="color:green;"># Exclude files in directories that have the same name with a different ending, like “test” and “tests”. The last character before the question mark is optional. For example, - tests?/</mark></em></p><p><em><code>- directory_name?/</code></em></p><p><em><mark style="color:green;"># Exclude all files and directories in a specific directory. For example, - tests/</mark></em></p><p><code>- directory_name/**</code></p> |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+<pre class="language-yaml"><code class="lang-yaml"># Snyk (https://snyk.io) policy file
 
-**Notes**:
+exclude:
+# Use either “global” or “code”. “global” currently applies only to the Snyk Code product, and it will exclude the specified directories and files from these tests; “code” applies only to the Snyk Code analysis.
+
+    global:
+<strong>        # Exclude a single file. For example, - test.spec.js
+</strong>            - file_name.ext
+<strong>        # Exclude a single directory. For example, - src/lib
+</strong>            - source/directory_name
+        # Exclude any file with a specific extension in the specific directory. For example, - tests/.js
+<strong>            - directory_name/.ext
+</strong>        # Exclude files with a specific ending in any directory. For example, - “/.spec.js”
+            - "/.ending.ext"
+        # Exclude files in directories that have the same name with a different ending, like “test” and “tests”. The last character before the question mark is optional. For example, - tests?/
+            - directory_name?/
+        # Exclude all files and directories in a specific directory. For example, - tests/
+<strong>            - directory_name/**
+</strong></code></pre>
+
+#### **Considerations**
 
 * The path in the rule should be relative to the `.snyk` file location.
 * All rules must have a preceding dash to be valid: - \<Exclusion\_rule>
 * Any rule beginning with an asterisk must be wrapped in quotes. For example:\
-  \- ”\*/src”
+  `- ”*/src”`
 * Indentations –
   * When using the syntax in the `.snyk` YAML file, pay careful attention to new lines and their indentation. Using the wrong indentation will prevent the execution of your excluding specification.
   * Do NOT use tabs for indentation. Use only spaces for indentation.
@@ -31,9 +48,9 @@ You can also use the instructions in this section to exclude directories and fil
   * GNU Org - [Shell Pattern Matching](https://www.gnu.org/software/findutils/manual/html\_node/find\_html/Shell-Pattern-Matching.html)
   * Docstore - [Pattern Matching Quick Reference with Examples](https://docstore.mik.ua/orelly/unix/upt/ch26\_10.htm)
 
-### **Using the .snyk File to exclude directories and files from import**
+## **Using the .snyk File to exclude directories and files from import**
 
-**To exclude directories and files from the import process using the .snyk file:**
+### **To exclude directories and files from the import process using the .snyk file:**
 
 1\. On the repository you want to import, create a YAML file called “.**snyk**”.
 
@@ -60,7 +77,7 @@ exclude:
    - todolist-goof/** 
 ```
 
-3\. From the Snyk Web UI, import your repository by one of the following ways:
+3\. From the Snyk Web UI, import your repository in one of the following ways:
 
 * If the repository was already imported to Snyk – retest the repository as follows:
   * On the **Projects** page, click the **Code analysis** Project of the repository. Then, on the **Code Analysis** page, click the **Retest now** option below the header:
@@ -71,7 +88,7 @@ exclude:
 
 Your repository is imported to Snyk, without the directories and/or files you selected to exclude.
 
-### **Example**: **Excluding 2 files from the Snyk Code analysis**
+#### **Example**: **Excluding 2 files from the Snyk Code analysis**
 
 We have a repository called “**snyk-goof**”, which we want to test for vulnerabilities using Snyk Code. After we imported this repository to Snyk, we get a list of 10 detected vulnerability issues, which were found in 3 files:
 
