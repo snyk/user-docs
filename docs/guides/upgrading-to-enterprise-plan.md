@@ -63,7 +63,7 @@ See the [Snyk account structure](https://training.snyk.io/courses/snyk-account-s
 
 ### Create additional Organizations
 
-To create a new Organization, open the Organization switcher in the navigation panel and select **Create new Organization**. See [Manage Snyk organizations](../snyk-admin/manage-groups-and-organizations/manage-snyk-organizations.md) for more details.
+To create a new Organization, open the Organization switcher in the navigation panel and select **Create new Organization**. See [Manage Snyk organizations](../snyk-admin/manage-groups-and-organizations/manage-organizations.md) for more details.
 
 #### Using an existing Organization as a template
 

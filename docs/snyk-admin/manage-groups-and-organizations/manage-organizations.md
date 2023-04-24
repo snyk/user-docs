@@ -1,10 +1,10 @@
-# Manage Snyk Organizations
+# Manage Organizations
 
 You can:
 
-* [Create an Organization](manage-snyk-organizations.md#create-an-organization)
-* [Delete an Organization](manage-snyk-organizations.md#delete-an-organization)
-* [Set your preferred Organization](manage-snyk-organizations.md#set-your-preferred-organization)
+* [Create an Organization](manage-organizations.md#create-an-organization)
+* [Delete an Organization](manage-organizations.md#delete-an-organization)
+* [Set your preferred Organization](manage-organizations.md#set-your-preferred-organization)
 
 ### Create an Organization
 

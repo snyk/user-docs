@@ -1,4 +1,4 @@
-# What’s a Snyk Organization?
+# Introduction to Organizations
 
 An Organization contains [Snyk Projects](../../manage-issues/introduction-to-snyk-projects/), and has team members who can access these Projects.
 
@@ -8,7 +8,7 @@ When you sign up to Snyk, you’ll see you have a default Organization named lik
 
 You can create an Organization, or join an Organization by invitation. If you have more than one Organization, you can switch between Organizations using the Snyk Web UI or the CLI.
 
-See [Manage Snyk Organizations](manage-snyk-organizations.md) for details.
+See [Manage Snyk Organizations](manage-organizations.md) for details.
 
 ### Notifications
 

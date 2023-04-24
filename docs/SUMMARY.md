@@ -637,7 +637,7 @@
     * [Introduction to Groups](snyk-admin/manage-groups-and-organizations/whats-a-snyk-group.md)
     * [Manage Groups](snyk-admin/manage-groups-and-organizations/manage-groups.md)
     * [Introduction to Organizations](snyk-admin/manage-groups-and-organizations/introduction-to-organizations.md)
-    * [Manage Snyk Organizations](snyk-admin/manage-groups-and-organizations/manage-snyk-organizations.md)
+    * [Manage Organizations](snyk-admin/manage-groups-and-organizations/manage-organizations.md)
     * [Group and Organization navigation](snyk-admin/manage-groups-and-organizations/group-and-organization-navigation.md)
     * [Structure account for high application performance](snyk-admin/manage-groups-and-organizations/structure-account-for-high-application-performance.md)
   * [Service accounts](snyk-admin/service-accounts.md)
