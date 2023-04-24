@@ -18,4 +18,4 @@ The main integrations are:
 * Container registries: useful to test a large number of images, or if you cannot modify lots of CI pipelines.
 * [Kubernetes](https://support.snyk.io/hc/en-us/articles/360003916138-Kubernetes-integration-overview): similar to container registries, but with more context about the running workload Snyk can use to prioritize vulnerabilities or group projects.
 
-See [image-scanning-library](image-scanning-library/ "mention") for more details.
+See [Broken link](broken-reference "mention") for more details.

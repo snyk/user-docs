@@ -5,7 +5,7 @@ Detecting vulnerable base images allows you to identify the source of your vulne
 After you configure a [container integration](https://docs.snyk.io/snyk-container) (such as the CLI or a container registry integration), you can detect your base image.
 
 {% hint style="info" %}
-For a list of supported container registries, consult our [image scanning library.](../snyk-container-integrations/image-scanning-library/)
+For a list of supported container registries, consult our [image scanning library.](broken-reference)
 {% endhint %}
 
 ## Identification methods

@@ -19,4 +19,4 @@ Snyk Container provides a range of integrations for importing Projects into Snyk
 
 See [snyk-container-integrations](snyk-container-integrations/ "mention") for more details on available integrations.
 
-See [image-scanning-library](snyk-container-integrations/image-scanning-library/ "mention") for details of each container registry integration.
+See [Broken link](broken-reference "mention") for details of each container registry integration.
