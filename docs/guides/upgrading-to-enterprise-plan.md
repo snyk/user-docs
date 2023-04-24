@@ -11,7 +11,7 @@ For full information about how to implement Snyk on the Enterprise plan, read:
 
 Snyk Enterprise features include:
 
-* [Snyk Group with multiple orgs](../snyk-admin/manage-groups-and-organizations/introduction-to-groups.md)
+* [Snyk Group with multiple orgs](../snyk-admin/manage-groups-and-organizations/whats-a-snyk-group.md)
 * [Single Sign-On](../snyk-admin/set-up-single-sign-on-sso-for-authentication/)
 * [Service accounts](../snyk-admin/service-accounts.md)
 * [Rich API](../snyk-api-info/)
@@ -36,7 +36,7 @@ As you work through the rest of this guide, use the following checklist to ensur
 
 ### Set up your Snyk environment
 
-A notable difference between the Free/Team plan and the Enterprise plan is having a [Snyk Group](../snyk-admin/manage-groups-and-organizations/introduction-to-groups.md) and the ability to create multiple [Snyk Organizations](../snyk-admin/manage-groups-and-organizations/whats-a-snyk-organization.md).
+A notable difference between the Free/Team plan and the Enterprise plan is having a [Snyk Group](../snyk-admin/manage-groups-and-organizations/whats-a-snyk-group.md) and the ability to create multiple [Snyk Organizations](../snyk-admin/manage-groups-and-organizations/whats-a-snyk-organization.md).
 
 #### Set your Snyk Group settings
 

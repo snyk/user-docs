@@ -17,7 +17,7 @@ Snyk has a hierarchy that allows you to control access to features and scans:
 
 #### Snyk Groups
 
-A [Snyk Group](manage-groups-and-organizations/introduction-to-groups.md) represents your entire base of Snyk users.
+A [Snyk Group](manage-groups-and-organizations/whats-a-snyk-group.md) represents your entire base of Snyk users.
 
 Groups can contain multiple Snyk Organizations, allowing you to collaborate with multiple teams.
 

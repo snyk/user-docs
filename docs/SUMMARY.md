@@ -634,7 +634,7 @@
     * [Session length](snyk-admin/manage-users-and-permissions/session-length.md)
     * [Switch between Snyk Organizations](snyk-admin/manage-users-and-permissions/switch-between-snyk-organization.md)
   * [Manage Groups and Organizations](snyk-admin/manage-groups-and-organizations/README.md)
-    * [Introduction to Groups](snyk-admin/manage-groups-and-organizations/introduction-to-groups.md)
+    * [Introduction to Groups](snyk-admin/manage-groups-and-organizations/whats-a-snyk-group.md)
     * [Create a new Snyk group](snyk-admin/manage-groups-and-organizations/create-a-new-snyk-group.md)
     * [What’s a Snyk Organization?](snyk-admin/manage-groups-and-organizations/whats-a-snyk-organization.md)
     * [Manage Snyk Organizations](snyk-admin/manage-groups-and-organizations/manage-snyk-organizations.md)
