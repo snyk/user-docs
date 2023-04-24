@@ -1,2 +1,0 @@
-# Image scanning information library
-
