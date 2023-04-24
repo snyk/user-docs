@@ -11,7 +11,7 @@ This process uses the Snyk Web UI. For details of Snyk Container using the Snyk 
 Ensure you have:
 
 * [Created a Snyk account](../getting-started/quickstart/create-a-snyk-account/).
-* [Set up integration](../getting-started/quickstart/set-up-an-integration.md) for your container registry, for example Docker Hub. Snyk supports multiple registries; see [Broken link](broken-reference "mention") for details.
+* [Set up integration](../getting-started/quickstart/set-up-an-integration.md) for your container registry, for example Docker Hub. Snyk supports multiple registries; see [Snyk Container - integrations](snyk-container-integrations/) for details.
 * [Imported a Snyk Project for scanning](../getting-started/quickstart/import-a-project.md) (your container registry)
 
 See the [Getting started](../getting-started/) section for more details.

@@ -12,7 +12,7 @@ You can set up this integration:
 * [Following a guided process](set-up-an-integration.md#guided-process-after-signup), immediately after creating a Snyk account.
 * [Manually](set-up-an-integration.md#manual-process-any-time), at any point.
 
-### Guided process (after signup)
+## Guided process (after signup)
 
 Immediately after you [Create a Snyk account](create-a-snyk-account/), you will see some optional getting started walkthrough prompts. You can choose to provide some information to help Snyk guide your experience, and then follow the prompts to integrate your code repository for a seamless experience.
 
@@ -30,11 +30,11 @@ Finally, you can [Import a Project](import-a-project.md) to scan:
 
 <figure><img src="../../.gitbook/assets/image (248) (1).png" alt=""><figcaption><p>Add your first project</p></figcaption></figure>
 
-### Manual process (any time)
+## Manual process (any time)
 
 You can add an integration to Snyk manually at any point (See [Integrate with Snyk](../../integrations/) for more details).
 
-#### Example: Git repository integration
+**Example: Git repository integration**
 
 To scan code from a Git-based source code repository, you must integrate Snyk to a [Git repository integration](../../integrations/git-repository-scm-integrations/). Snyk has pre-built integrations for GitHub, GitHub Enterprise, Bitbucket Cloud, and other repositories.
 
@@ -52,6 +52,6 @@ Finally, to grant Snyk access permissions to the integrated source control syste
 
 See [Git repository integrations (SCMs)](../../integrations/git-repository-scm-integrations/) for more information.
 
-### What's next?
+## What's next?
 
 You can now [import a Snyk Project](import-a-project.md), to tell Snyk what to scan for issues.
