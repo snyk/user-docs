@@ -9,7 +9,7 @@ This feature is available with Enterprise Plans. See [pricing plans](https://sny
 
 Snyk Groups make it easier for you to work in teams. Groups can hold many Organizations, and each Organization can contain many collaborators and Projects.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt="Groups, Organizations and Projects"><figcaption><p>Groups, Organizations, and Projects</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (2).png" alt="Groups, Organizations and Projects"><figcaption><p>Groups, Organizations, and Projects</p></figcaption></figure>
 
 {% hint style="info" %}
 As well as creating Organizations in your enterprise Groups, you can create them in your own personal space (called Personal Orgs). This allows you to monitor your own personal Projects outside of your enterprise’s Group or if you want a sandbox space.
@@ -31,7 +31,7 @@ The vulnerability status of all of a Group’s Organizations is visible in one p
 
 Organization filters can be created, saved, and selected quickly using the **Organization Filters** dropdown. This will set the context for all the tabs within the reports, where you can continue to filter other values such as type, status and package manager.
 
-<figure><img src="../../.gitbook/assets/image (206) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="Organization filters dropdown"><figcaption><p>Organization filters dropdown</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (206) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Organization filters dropdown"><figcaption><p>Organization filters dropdown</p></figcaption></figure>
 
 ### Group members
 

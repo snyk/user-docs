@@ -36,7 +36,7 @@ As you work through the rest of this guide, use the following checklist to ensur
 
 ### Set up your Snyk environment
 
-A notable difference between the Free/Team plan and the Enterprise plan is having a [Snyk Group](../snyk-admin/manage-groups-and-organizations/whats-a-snyk-group.md) and the ability to create multiple [Snyk Organizations](../snyk-admin/manage-groups-and-organizations/introduction-to-organizations.md).
+A notable difference between the Free/Team plan and the Enterprise plan is having a [Snyk Group](../snyk-admin/manage-groups-and-organizations/whats-a-snyk-group.md) and the ability to create multiple [Snyk Organizations](../snyk-admin/manage-groups-and-organizations/whats-a-snyk-organization.md).
 
 #### Set your Snyk Group settings
 

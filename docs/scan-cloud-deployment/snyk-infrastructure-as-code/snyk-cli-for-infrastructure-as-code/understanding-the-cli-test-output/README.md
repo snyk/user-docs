@@ -32,7 +32,7 @@ In addition, to use this IaC CLI offering, you need to enable this option in the
 
 2\. Once the required organization is open, click the **Org Settings** button on the top menu:
 
-![](<../../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org Settings button (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1  (5).png>)
+![](<../../../../.gitbook/assets/OS - Automatic Dependency Upgrade - Org Settings button (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1 (11).png>)
 
 3\. On the Org **Settings** page, select **Snyk Preview** on the left menu, and move to the section – **Additional CLI result information for Infrastructure as Code**:
 

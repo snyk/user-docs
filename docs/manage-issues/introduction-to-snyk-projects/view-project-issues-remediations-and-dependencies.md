@@ -57,4 +57,4 @@ Snyk uses the package manager for your application to build the dependency tree 
 
 The example that follows shows a vulnerability based on the transitive dependency **qs@2.2.4**, brought in from the direct dependency **body-parser@ 1.9.0**.
 
-<figure><img src="../../.gitbook/assets/image23 (1).png" alt="Issues detail page dependencies tab"><figcaption><p>Issues detail page dependencies tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image23.png" alt="Issues detail page dependencies tab"><figcaption><p>Issues detail page dependencies tab</p></figcaption></figure>
