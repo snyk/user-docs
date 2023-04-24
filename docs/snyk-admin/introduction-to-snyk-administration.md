@@ -23,7 +23,7 @@ Groups can contain multiple Snyk Organizations, allowing you to collaborate with
 
 #### Snyk Organizations
 
-[Organizations](manage-groups-and-organizations/whats-a-snyk-organization.md) represent business areas such as teams, products or environments.
+[Organizations](manage-groups-and-organizations/introduction-to-organizations.md) represent business areas such as teams, products or environments.
 
 Organizations can contain multiple Snyk Projects, allowing your team to see scan details for the applications they are working on.
 
