@@ -217,6 +217,28 @@
   **Help Links:**
 
   - [https://support.snyk.io/hc/en-us/articles/360001373178-Could-not-determine-version-for-dependencies](https://support.snyk.io/hc/en-us/articles/360001373178-Could-not-determine-version-for-dependencies)
+### [SNYK-OS-0006](#snyk-os-0006)
+#### Missing required elements in payload
+  Elements required to serve this request was not found in the payload. See error details for specifics.
+
+  **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-0007](#snyk-os-0007)
+#### Unprocessable file
+  Found files that are not supported by this dependency service.
+
+  **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
 ---
 # Builds
 ### [SNYK-OS-8001](#snyk-os-8001)
@@ -470,6 +492,30 @@
   The upstream service is unavailable.
 
   **HTTP Status:** [502](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+---
+# [Open Source Languages & Package Managers](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support)
+### [SNYK-OS-GO-0001](#snyk-os-go-0001)
+#### Failed to access private module
+  Your go.mod file contained private modules that Snyk was unable to access.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-GO-0002](#snyk-os-go-0002)
+#### No go mod file found
+  A go.mod file was not found in current directory or any parent directory.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
   **Exit Code:** N/A
 
@@ -828,4 +874,4 @@
   
 ---
 
-Genererated at 2023-04-21T12:55:44.299Z
+Genererated at 2023-04-25T20:18:34.848Z
