@@ -1,8 +1,14 @@
 # Introduction to Organizations
 
-An Organization contains [Snyk Projects](../../manage-issues/introduction-to-snyk-projects/), and has team members who can access these Projects.
+[Organizations](whats-a-snyk-organization.md) represent business areas such as teams, products, or environments. An Organization contains [Snyk Projects](../../manage-issues/introduction-to-snyk-projects/). Organization team members can access these Projects to scan the applications they work on.
 
-When you sign up to Snyk, you’ll see you have a default Organization named like your GitHub username. Any Projects you add via the CLI or GitHub integration appear in this Organization by default.
+#### Default Organization
+
+When you sign up to Snyk, you have a default Organization named like your GitHub username. Any Projects you add via the CLI or GitHub integration appear in this Organization by default.
+
+#### Personal Organization
+
+As well as creating Organizations in your enterprise Groups, you can create them in your own personal space (called Personal Orgs). This allows you to monitor your own personal Projects outside of your enterprise’s Group or if you want a sandbox space.
 
 ### Manage Organizations
 

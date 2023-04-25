@@ -9,15 +9,9 @@ This feature is available with Enterprise Plans. See [pricing plans](https://sny
 
 Snyk Groups make it easier for you to work in teams. Groups can hold many Organizations, and each Organization can contain many collaborators and Projects.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (2).png" alt="Groups, Organizations and Projects"><figcaption><p>Groups, Organizations, and Projects</p></figcaption></figure>
+## Group options
 
-{% hint style="info" %}
-As well as creating Organizations in your enterprise Groups, you can create them in your own personal space (called Personal Orgs). This allows you to monitor your own personal Projects outside of your enterprise’s Group or if you want a sandbox space.
-{% endhint %}
-
-## Group overview
-
-The **Group overview** area allows you to view reports across all of your Group’s Organizations, configure your Group settings, and view all of a Group’s members:
+You can view reports across all of your Group’s Organizations, configure your Group settings, and view all of a Group’s members:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-24 at 15.34.14.png" alt="Group overview options"><figcaption><p>Group overview options</p></figcaption></figure>
 
