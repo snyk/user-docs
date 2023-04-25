@@ -19,12 +19,12 @@ Follow the instructions on this page to add images from Harbor to Snyk.
 6. When the import ends:
    1. You can view the newly imported image in the **Projects** page (marked with a **NEW** tag). Images are grouped by repository and are each linked individually to a detailed **Project** page.
    2. An **import log** becomes available, reachable from the top of the projects list.
-   3. To enrich the data and get recommendations regarding your base image, nuder **Settings** you can connect your Dockerfile to the image project. For more info, see [Adding your Dockerfile and test your base image](../../scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
+   3. To enrich the data and get recommendations regarding your base image, nuder **Settings** you can connect your Dockerfile to the image project. For more info, see [Adding your Dockerfile and test your base image](../../../scan-containers/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
 
 Harbor imports are indicated with a unique icon. You can also filter to view only the Harbor projects:
 
 <figure><img src="../../../.gitbook/assets/mceclip1-9-.png" alt="Projects listing showing container images"><figcaption><p>Projects listing showing container images</p></figcaption></figure>
 
 {% hint style="info" %}
-For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images/)for more information.
+For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../../scan-containers/getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images/)for more information.
 {% endhint %}

@@ -5,7 +5,7 @@ Snyk integrates with Google Container Registry (GCR) so you can import your proj
 {% hint style="info" %}
 **NOTE**
 
-For more details about how Snyk scans, see [How Snyk container security works](../../how-snyk-container-works.md).
+For more details about how Snyk scans, see [How Snyk container security works](../../../scan-containers/how-snyk-container-works.md).
 {% endhint %}
 
 **To set up integration with GCR, follow these steps:**

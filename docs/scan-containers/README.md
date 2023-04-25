@@ -17,4 +17,4 @@ Snyk Container:
 
 Snyk Container provides a range of integrations for importing Projects into Snyk. These integrations support a range of different workflows.
 
-See [Snyk Container - integrations](snyk-container-integrations/) for details on available integrations.
+See [Snyk Container - integrations](../integrations/snyk-container-integrations/) for details on available integrations.
