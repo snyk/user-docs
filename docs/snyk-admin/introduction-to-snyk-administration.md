@@ -11,35 +11,13 @@ Snyk has a hierarchy that allows you to control access to features and scans:
 
 * **Group:** the highest level; for example, the entire company.
 * **Organization:** the second level of grouping; for example, your team.
-* **Projects:** the lowest level for individual projects; for example, a container image.
+* **Projects:** the lowest level for individual projects; for example, a container image.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt="Groups, Organizations and Projects"><figcaption><p>Groups, Organizations and Projects</p></figcaption></figure>
+See [Manage Groups and Organizations](manage-groups-and-organizations/) for details.
 
-#### Snyk Groups
+## Member (user) types
 
-A [Snyk Group](manage-groups-and-organizations/whats-a-snyk-group.md) represents your entire base of Snyk users.
-
-Groups can contain multiple Snyk Organizations, allowing you to collaborate with multiple teams.
-
-#### Snyk Organizations
-
-[Organizations](manage-groups-and-organizations/whats-a-snyk-organization.md) represent business areas such as teams, products or environments.
-
-Organizations can contain multiple Snyk Projects, allowing your team to see scan details for the applications they are working on.
-
-{% hint style="info" %}
-When you sign up to Snyk using a social login, you have a default Organization. Any projects you add appear in this Organization by default.
-{% endhint %}
-
-#### Snyk Projects
-
-[Snyk Projects](introduction-to-snyk-administration.md#snyk-projects) are contained in Organizations.
-
-A Snyk Project defines the items that Snyk scans for issues (such as manifest files), along with configuration information defining how to run that scan.
-
-## Snyk user types
-
-Snyk provides four different types of members or users:
+Snyk provides four different types of members (users):
 
 * Collaborator
 * Organization administrator
