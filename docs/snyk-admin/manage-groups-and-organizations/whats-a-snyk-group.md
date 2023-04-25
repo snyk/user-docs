@@ -25,7 +25,7 @@ The vulnerability status of all of a Group’s Organizations is visible in one p
 
 Organization filters can be created, saved, and selected quickly using the **Organization Filters** dropdown. This will set the context for all the tabs within the reports, where you can continue to filter other values such as type, status and package manager.
 
-<figure><img src="../../.gitbook/assets/image (206) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Organization filters dropdown"><figcaption><p>Organization filters dropdown</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (206) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Organization filters dropdown"><figcaption><p>Organization filters dropdown</p></figcaption></figure>
 
 ### Group members
 
