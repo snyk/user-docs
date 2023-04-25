@@ -63,7 +63,7 @@ Automatic dependency upgrade PRs are only available for the following SCM integr
 5. To save and apply your changes, click one of the following:
 
 * **Apply changes to all overridden projects** option – your changes are saved and will be applied to all the Projects in the Organization. Projects that have Custom Settings will inherit these organization Settings, and their Custom Settings will be overridden. When you click this option, you're asked to confirm the override.\
-  ![Confirmation dialog.](<../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+  ![Confirmation dialog.](<../../../.gitbook/assets/Snyk Code - PR Checks - Integration Settings - Automatic Upgrade section - Override message (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5).png>)
 * **Save changes** button – your changes are saved and will be applied to all the Projects in the organization that are configured to inherit these Settings from the Organization. Projects that have Custom Settings will not be influenced by this change.
 
 From now on, every time Snyk scans any Project in the organization, it automatically submits Upgrade PRs if the scan discovers that an upgrade is available.

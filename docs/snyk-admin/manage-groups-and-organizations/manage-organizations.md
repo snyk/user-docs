@@ -77,7 +77,7 @@ If you have several Organizations, one of these organizations is set by default 
 
 **Note**: The Organization drop-down list displays your existing organizations.
 
-<figure><img src="../../.gitbook/assets/image (148) (1) (1).png" alt="Change preferred Organization"><figcaption><p>Change preferred Organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (148) (1).png" alt="Change preferred Organization"><figcaption><p>Change preferred Organization</p></figcaption></figure>
 
 3\. Click the **Update Preferred Org** button to save your new setting.
 
