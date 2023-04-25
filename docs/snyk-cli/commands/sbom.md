@@ -96,9 +96,3 @@ $ snyk sbom --unmanaged --format=spdx2.3+json
 ```
 $ snyk sbom --file=pom.xml --format=cyclonedx1.4+xml
 ```
-
-### **Create a CycloneDX JSON document and scan using bomber and Snyk**
-
-<pre class="language-bash"><code class="lang-bash"><strong>$ snyk sbom --format=cyclonedx1.4+json --file=go.mod > /tmp/sbom.cdx.json &#x26;&#x26; \
-</strong><strong>  bomber scan --provider snyk --token $SNYK_API_TOKEN /tmp/sbom.cdx.json
-</strong></code></pre>
