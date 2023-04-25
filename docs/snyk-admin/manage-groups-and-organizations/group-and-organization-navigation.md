@@ -18,4 +18,4 @@ To view your personal Organizations, select **Ungrouped**.
 
 To change which Organization you're viewing, click the Organization navigation switcher:
 
-<figure><img src="../../.gitbook/assets/snyk-org-switcher.png" alt="Switch Organization"><figcaption><p>Switch Organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-org-switcher (1).png" alt="Switch Organization"><figcaption><p>Switch Organization</p></figcaption></figure>
