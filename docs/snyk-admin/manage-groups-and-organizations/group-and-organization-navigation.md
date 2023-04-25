@@ -10,6 +10,10 @@ If your company uses multiple Groups, then to change which Organization you're v
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-25 at 10.06.46.png" alt="Switch Group"><figcaption><p>Switch Group</p></figcaption></figure>
 
+{% hint style="info" %}
+To view your personal Organizations, select **Ungrouped**.
+{% endhint %}
+
 ### Switch Organization
 
 To change which Organization you're viewing, click the Organization navigation switcher:
