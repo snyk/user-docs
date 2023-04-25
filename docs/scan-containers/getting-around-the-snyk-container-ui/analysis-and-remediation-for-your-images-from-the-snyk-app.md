@@ -25,7 +25,7 @@ The following information is displayed:
   * Total dependencies with known vulnerabilities and the total number of vulnerabilities
 * Fix advice: If you included your Dockerfile for monitoring, a,navailable actionable fix advice is displayed. To view all advice, click the **Show more upgrade types** link. The advice offered depends on available fixes, as illustrated in the following image:
 
-<figure><img src="../../.gitbook/assets/image (115) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (115) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (2).png" alt="Recommendations for upgrading the base image"><figcaption><p>Recommendations for upgrading the base image</p></figcaption></figure>
 
 * Upgrade suggestions can include the following:
   * Minor upgrades: the safest and best minor upgrade available
