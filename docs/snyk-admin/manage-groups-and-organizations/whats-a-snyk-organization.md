@@ -2,6 +2,8 @@
 
 [Organizations](whats-a-snyk-organization.md) represent business areas such as teams, products, or environments. An Organization contains [Snyk Projects](../../manage-issues/introduction-to-snyk-projects/). Organization team members can access these Projects to scan the applications they work on.
 
+The settings and policies of an Organization also influence scan results, depending on which Organization is used when adding a Project.
+
 #### Default Organization
 
 When you sign up to Snyk, you have a default Organization named like your GitHub username. Any Projects you add via the CLI or GitHub integration appear in this Organization by default.
