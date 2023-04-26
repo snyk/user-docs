@@ -6,4 +6,4 @@ To onboard a Google account to Snyk Cloud via the Web UI:
 2. [Create a Google service account:](step-2-create-the-google-service-account-api.md) using the template you downloaded.
 3. [Create and scan a Snyk Cloud Environment.](step-3-create-and-scan-a-snyk-cloud-environment-for-google-web-ui.md)
 
-You can then view the issues Snyk finds. See [Snyk Cloud issues](../../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-issues/).
+You can then view the issues Snyk finds. See [Snyk Cloud issues](../../snyk-cloud-issues/).

@@ -11,7 +11,7 @@ Click the **GitHub integration** section to edit SCM-specific settings (applicab
 You can edit the **Project Notification Settings** and **Test & Automated Pull Request Frequency**. You can also retrieve the **Project ID** for use in Snyk API calls.
 
 {% hint style="info" %}
-The default test frequency and available test frequencies vary depending on the type of Project: Open Source, Code analysis, Container, or IaC. For more information see [Usage page details](../../snyk-admin/manage-settings/usage-page-details.md) (Set test frequency). You can also set test frequency by using the Snyk REST API: [Updates project by project ID](https://apidocs.snyk.io/?version=2023-02-15#patch-/orgs/-org\_id-/projects/-project\_id-).
+The default test frequency and available test frequencies vary depending on the type of Project: Open Source, Code analysis, Container, or IaC. For more information see [Usage page details](../../snyk-admin/manage-settings/usage-settings.md) (Set test frequency). You can also set test frequency by using the Snyk REST API: [Updates project by project ID](https://apidocs.snyk.io/?version=2023-02-15#patch-/orgs/-org\_id-/projects/-project\_id-).
 {% endhint %}
 
 You can also deactivate or delete a Project.

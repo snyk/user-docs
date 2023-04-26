@@ -14,8 +14,8 @@ At the Group level, select **Settings** to view admin settings:
 * [Service Accounts](../service-accounts.md)
 * [Notifications](../manage-notifications.md)
 * [Usage](https://docs.snyk.io/user-and-group-management/managing-settings/usage-page-details)
-* Your Plan and Billing
-* Plans and Pricing
+* [Your Plan and Billing](your-plan-and-billing.md)
+* [Plans and Pricing](plans-and-pricing.md)
 * [Snyk Preview](snyk-preview.md)
 * [Infrastructure as Code](../../scan-cloud-deployment/snyk-infrastructure-as-code/)
 

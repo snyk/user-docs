@@ -1,10 +1,10 @@
-# Usage page details
+# Usage settings
 
 Select **Settings** > **Usage** to view Snyk usage details in your Group or Organization, including:
 
-* [Test usage](usage-page-details.md#test-usage): the number of tests used
-* [Contributing developers](usage-page-details.md#contributing-developers): the number of developers contributing to Projects
-* [Projects](usage-page-details.md#projects): Project test usage settings (can be viewed and modified)
+* [Test usage](usage-settings.md#test-usage): the number of tests used
+* [Contributing developers](usage-settings.md#contributing-developers): the number of developers contributing to Projects
+* [Projects](usage-settings.md#projects): Project test usage settings (can be viewed and modified)
 
 ## Test usage
 

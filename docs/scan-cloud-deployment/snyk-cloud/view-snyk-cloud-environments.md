@@ -13,15 +13,15 @@ The cloud environments table displays the following information for each environ
 
 ## Add an environment
 
-To add an environment, select the **Add environment** drop-down and select the cloud provider. Follow the steps in [Snyk Cloud for AWS: Web UI](../../integrations/cloud-platforms/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-web-ui/), [Snyk Cloud for Google: Web UI](../../integrations/cloud-platforms/getting-started-with-snyk-cloud-google/snyk-cloud-for-google-web-ui/), or [Snyk Cloud for Azure: Web UI](../../integrations/cloud-platforms/getting-started-with-snyk-cloud-azure/snyk-cloud-for-azure-web-ui/) to create the environment.
+To add an environment, select the **Add environment** drop-down and select the cloud provider. Follow the steps in [Snyk Cloud for AWS: Web UI](getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-web-ui/), [Snyk Cloud for Google: Web UI](getting-started-with-snyk-cloud-google/snyk-cloud-for-google-web-ui/), or [Snyk Cloud for Azure: Web UI](getting-started-with-snyk-cloud-azure/snyk-cloud-for-azure-web-ui/) to create the environment.
 
 <figure><img src="../../.gitbook/assets/snyk-cloud-environments-page-add-env.png" alt="Add an environment in the Snyk Web UI"><figcaption><p>Add an environment in the Snyk Web UI</p></figcaption></figure>
 
 You can also add an environment using the Snyk API:
 
-* [Snyk Cloud for AWS: API](../../integrations/cloud-platforms/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/)
-* [Snyk Cloud for Google: API](../../integrations/cloud-platforms/getting-started-with-snyk-cloud-google/snyk-cloud-for-google-api/)
-* [Snyk Cloud for Azure: API](../../integrations/cloud-platforms/getting-started-with-snyk-cloud-azure/snyk-cloud-for-azure-api/)
+* [Snyk Cloud for AWS: API](getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/)
+* [Snyk Cloud for Google: API](getting-started-with-snyk-cloud-google/snyk-cloud-for-google-api/)
+* [Snyk Cloud for Azure: API](getting-started-with-snyk-cloud-azure/snyk-cloud-for-azure-api/)
 
 ## Remove an environment
 
