@@ -11,11 +11,11 @@ Select the Group and **Members** top-level menu option to manage your group memb
 
 As a Group Admin (see [Managing permissions](managing-permissions.md)), you can:
 
-* [View group and org members](manage-users-in-your-organizations-1.md#view-group-and-org-members)
-* [View individual members](manage-users-in-your-organizations-1.md#view-individual-members)
-* [Filter and sort views](manage-users-in-your-organizations-1.md#filter-and-sort-views)
-* [Delete members](manage-users-in-your-organizations-1.md#delete-members)
-* [Promote group member to a group admin](manage-users-in-your-organizations-1.md#promote-group-member-to-a-group-admin)
+* [View group and org members](manage-users-in-your-group.md#view-group-and-org-members)
+* [View individual members](manage-users-in-your-group.md#view-individual-members)
+* [Filter and sort views](manage-users-in-your-group.md#filter-and-sort-views)
+* [Delete members](manage-users-in-your-group.md#delete-members)
+* [Promote group member to a group admin](manage-users-in-your-group.md#promote-group-member-to-a-group-admin)
 
 {% hint style="warning" %}
 You cannot add external users directly to Groups; you must first add them to an Organization, then to a Group. See [Manage users in your Organizations](manage-users-in-your-organizations.md) for details.
