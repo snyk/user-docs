@@ -17,5 +17,5 @@ You can choose the template format: either [Terraform HCL](https://www.terraform
 You can now proceed to [Step 2: Create the Snyk IAM role (Web UI)](step-2-create-the-snyk-iam-role.md).
 
 {% hint style="info" %}
-You can also add a cloud environment from **Organization Settings (cog icon) > Cloud environments**. See [View Snyk Cloud Environments](../../view-snyk-cloud-environments.md#add-an-environment).
+You can also add a cloud environment from **Organization Settings (cog icon) > Cloud environments**. See [View Snyk Cloud Environments](../../../../scan-cloud-deployment/snyk-cloud/view-snyk-cloud-environments.md#add-an-environment).
 {% endhint %}

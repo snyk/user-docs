@@ -15,4 +15,4 @@ You have created the Azure app registration, federated identity credential, and 
 
 ### What's next?
 
-You can now view misconfiguration issues in the API or Snyk Web UI. See [Snyk Cloud issues](../../snyk-cloud-issues/) for more information.
+You can now view misconfiguration issues in the API or Snyk Web UI. See [Snyk Cloud issues](../../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-issues/) for more information.

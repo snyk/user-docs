@@ -86,8 +86,8 @@ Note: the `data.attributes.status` field in the JSON output is set to `in_progre
 
 To check if your scan is finished, see [Check if the scan is finished](https://docs.snyk.io/products/snyk-cloud/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment#check-if-the-scan-is-finished).
 
-To manually re-scan an environment, see [Scan a Snyk Cloud Environment](../../scan-a-snyk-cloud-environment.md).
+To manually re-scan an environment, see [Scan a Snyk Cloud Environment](../../../../scan-cloud-deployment/snyk-cloud/scan-a-snyk-cloud-environment.md).
 
 ## What's next?
 
-You can now view misconfiguration issues in the API or Snyk Web UI. See [Snyk Cloud issues](../../snyk-cloud-issues/) for more information.
+You can now view misconfiguration issues in the API or Snyk Web UI. See [Snyk Cloud issues](../../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-issues/) for more information.

@@ -8,4 +8,4 @@ To onboard an AWS account to Snyk Cloud via the Web UI:
 2. [Create an AWS IAM role](step-2-create-the-snyk-iam-role.md): using the template you downloaded.
 3. [Create and scan a Snyk Cloud Environment.](step-3-create-and-scan-a-snyk-cloud-environment-web-ui.md)
 
-You can now view the issues Snyk finds. See [Snyk Cloud issues](../../snyk-cloud-issues/).
+You can now view the issues Snyk finds. See [Snyk Cloud issues](../../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-issues/).

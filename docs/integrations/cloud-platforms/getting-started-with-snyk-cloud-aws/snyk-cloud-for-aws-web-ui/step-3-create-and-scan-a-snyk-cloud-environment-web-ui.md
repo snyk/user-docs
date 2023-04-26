@@ -59,4 +59,4 @@ arn:aws:iam::123412341234:role/snyk-cloud-role
 
 ### What's next?
 
-You can now view misconfiguration issues in the Snyk Web UI. See [Snyk Cloud issues](../../snyk-cloud-issues/) for more information.
+You can now view misconfiguration issues in the Snyk Web UI. See [Snyk Cloud issues](../../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-issues/) for more information.
