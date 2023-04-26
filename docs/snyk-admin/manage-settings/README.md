@@ -1,18 +1,35 @@
 # Manage settings
 
-Go to <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> **Settings** to view and access Snyk settings for your Organization:
+You can view and define admin settings for Groups and for Organizations.
 
-![Organization settings](../../.gitbook/assets/manage-settings\_2oct2022.png)
+## Group settings
 
-Settings include:
+At the Group level, select **Settings** to view admin settings:
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-04-26 at 12.57.49.png" alt="Group settings"><figcaption><p>Group settings</p></figcaption></figure>
 
 * General
+* [SSO](../set-up-single-sign-on-sso-for-authentication/)
+* [Member Roles](../manage-users-and-permissions/member-roles.md)
+* [Service Accounts](../service-accounts.md)
+* [Notifications](../manage-notifications.md)
+* [Usage](https://docs.snyk.io/user-and-group-management/managing-settings/usage-page-details)
+* Your Plan and Billing
+* Plans and Pricing
+* [Snyk Preview](snyk-preview.md)
+* [Infrastructure as Code](../../scan-cloud-deployment/snyk-infrastructure-as-code/)
+
+## Organization settings
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-04-26 at 12.59.45.png" alt="Organization settings"><figcaption><p>Organization settings</p></figcaption></figure>
+
+* General
+* [Service Accounts](../service-accounts.md)
 * [Integrations](https://docs.snyk.io/integrations)
 * [Languages](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)
 * [Snyk Code](https://docs.snyk.io/snyk-code)
 * [Infrastructure as Code](https://docs.snyk.io/snyk-infrastructure-as-code)
+* [Snyk Cloud](../../scan-cloud-deployment/snyk-cloud/)
 * [Usage](https://docs.snyk.io/user-and-group-management/managing-settings/usage-page-details)
-* Your plan and billing
-* Plans and pricing
 * [Notifications](../manage-notifications.md)
 * [Snyk Preview](snyk-preview.md)
