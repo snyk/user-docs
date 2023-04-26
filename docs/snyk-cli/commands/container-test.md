@@ -112,11 +112,11 @@ For more information see [Detecting application vulnerabilities in container ima
 
 ### `--exclude-app-vulns`
 
-Allow disabling scans for app vulnerabilities; in CLI versions 1.1090.0 (2023-01-24) and higher,  `app-vulns` is enabled by default.
+Allow disabling scans for app vulnerabilities; in CLI versions 1.1090.0 (2023-01-24) and higher, `app-vulns` is enabled by default.
 
 In earlier releases, cannot be used with `--app-vulns`.
 
-For more information see [Detecting application vulnerabilities in container images](https://docs.snyk.io/products/snyk-container/getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images)
+For more information, see [Detecting application vulnerabilities in container images](https://docs.snyk.io/products/snyk-container/getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images)
 
 ### `--nested-jars-depth`
 
@@ -146,6 +146,8 @@ Specify a password to use when connecting to a container registry. This is ignor
 
 `$ snyk container test <image>`
 
+which currently has`snyk container test app:latest --file=Dockerfile`but could also include the example
+
 ### Option to get more information including base image remediation
 
 `--file=path/to/Dockerfile`
@@ -156,4 +158,8 @@ Specify a password to use when connecting to a container registry. This is ignor
 
 `$ snyk container test app:latest --file=Dockerfile --policy-path=path/to/.snyk`
 
-For more information and examples see [Advanced Snyk Container CLI usage](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)
+### Scan a Docker image using the Dockerfile by referring to its image tag or its digest
+
+`$ snyk container test app@sha256:17cb37098f0efb819c075eea4ff2a495be909a396e86ece317a6e3a8968e025c --file=Dockerfile`
+
+For more information and examples, see [Advanced Snyk Container CLI usage](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)
