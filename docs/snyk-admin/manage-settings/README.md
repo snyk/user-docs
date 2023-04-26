@@ -1,6 +1,6 @@
 # Manage settings
 
-You can view and define admin settings for Groups and for Organizations.
+You can view and define administration settings for Groups and for Organizations.
 
 ## Group settings
 
@@ -20,6 +20,8 @@ At the Group level, select **Settings** to view admin settings:
 * [Infrastructure as Code](../../scan-cloud-deployment/snyk-infrastructure-as-code/)
 
 ## Organization settings
+
+At the Organization level, select **Settings** to manage settings:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-26 at 12.59.45.png" alt="Organization settings"><figcaption><p>Organization settings</p></figcaption></figure>
 
