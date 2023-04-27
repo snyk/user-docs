@@ -50,7 +50,7 @@ If you specify Move project permissions for the role, you must include Add proje
 
 When the process of creating a role completes, a confirmation message appears.
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt="Role creation confirmation message"><figcaption><p>Role creation confirmation message</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18).png" alt="Role creation confirmation message"><figcaption><p>Role creation confirmation message</p></figcaption></figure>
 
 ### Edit a Role
 
@@ -64,7 +64,7 @@ Select the permissions from the list at the bottom and click **Update Role Permi
 
 When the process of updating a role completes, a confirmation message appears.
 
-<figure><img src="../../.gitbook/assets/image (272).png" alt="Role update confirmation message"><figcaption><p>Role update confirmation message</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (361).png" alt="Role update confirmation message"><figcaption><p>Role update confirmation message</p></figcaption></figure>
 
 ### Duplicate a Role
 
@@ -104,7 +104,7 @@ In the Web UI, select an **Org** > **Members**.
 
 For any member (Name) except a Group Admin, you can select the dropdown next to the current role and choose any role to assign that role to the member.
 
-<figure><img src="../../.gitbook/assets/image (104) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Select member role"><figcaption><p>Select member role</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (104) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Select member role"><figcaption><p>Select member role</p></figcaption></figure>
 
 \
 You can invite new members to the Organization by assigning them a specified role.

@@ -14,7 +14,7 @@ There are no settings related to the Priority Score; they are read-only, and can
 
 ### Overview
 
-Snyk's security group calculates scores based on a number of factors, including CVSS score,  trending vulnerabilities, reachability, availability of exploits and other factors. These factors gives scores with a high degree of granularity. This granularity avoids having many issues with the same score, allowing you to determine issue importance quickly and accurately.
+Snyk's security group calculates scores based on a number of factors, including CVSS score, trending vulnerabilities, reachability, availability of exploits and other factors. These factors gives scores with a high degree of granularity. This granularity avoids having many issues with the same score, allowing you to determine issue importance quickly and accurately.
 
 {% hint style="info" %}
 Snyk does not use the CVSS score alone to determine priority: other factors are also incorporated.
@@ -52,12 +52,12 @@ Read more about the relevant API calls:
 
 For each issue, Snyk processes and weighs several factors in a proprietary algorithm, to produce the score for that issue. These factors include:
 
-* ****[**Severity levels**](severity-levels.md): calculated using CVSS framework v3.1 scores for that issue.
+* \*\*\*\*[**Severity levels**](severity-levels.md): calculated using CVSS framework v3.1 scores for that issue.
 * [**Exploit Maturity**](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/): determined by Snyk’s industry-leading security team using manual and automated methods to track which vulnerabilities are exploitable, and to what extent.
-* ****[**Reachability**](reachable-vulnerabilities.md): by looking at the code paths called within a project, Snyk identifies which vulnerabilities are reachable from the code.
-* ****[**Fixability**](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/vulnerability-fix-types.md) (availability of a fix): without a safer version to upgrade to, or a Snyk patch available, developers must either fix the code themselves or use an alternative package. So vulnerabilities with fixes are given higher priorities.
+* \*\*\*\*[**Reachability**](reachable-vulnerabilities.md): by looking at the code paths called within a project, Snyk identifies which vulnerabilities are reachable from the code.
+* \*\*\*\*[**Fixability**](../../scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/vulnerability-fix-types.md) (availability of a fix): without a safer version to upgrade to, or a Snyk patch available, developers must either fix the code themselves or use an alternative package. So vulnerabilities with fixes are given higher priorities.
 * **Time**: new vulnerabilities are likely to be an increased risk, so increasing priority score.
-* ****[**Social Trends**](prioritize-by-social-trends.md): Snyk monitors mentions of known vulnerabilities in Twitter, calculating the trend of tweets and reactions.
+* \*\*\*\*[**Social Trends**](prioritize-by-social-trends.md): Snyk monitors mentions of known vulnerabilities in Twitter, calculating the trend of tweets and reactions.
 * **Malicious Packages**: Snyk will prioritize vulnerabilities originating from malicious packages.
 
 {% hint style="info" %}
@@ -66,9 +66,9 @@ Snyk continually refines our prioritization algorithm to include new factors, an
 
 ### Priority calculation for Kubernetes
 
-Kubernetes container images imported from the Kubernetes integration have a number of additional contributing factors for priority score calculation.&#x20;
+Kubernetes container images imported from the Kubernetes integration have a number of additional contributing factors for priority score calculation.
 
-See [Snyk Priority Score and Kubernetes](../../scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-ui-explained/snyk-priority-score-and-kubernetes.md) for more details.
+See [Snyk Priority Score and Kubernetes](../../scan-containers/kubernetes-integration/kubernetes-integration-ui-explained/snyk-priority-score-and-kubernetes.md) for more details.
 
 ### Priority calculation for Snyk Code
 
