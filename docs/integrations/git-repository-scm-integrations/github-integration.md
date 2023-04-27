@@ -1,4 +1,4 @@
-# GitHub source control
+# GitHub integration
 
 Snyk's GitHub integration lets you:
 
@@ -7,7 +7,7 @@ Snyk's GitHub integration lets you:
 * Provide automated fixes and upgrades
 
 {% hint style="info" %}
-Before using GitHub integration, Snyk recommends Enterprise plan customers consider whether to use GitHub integration or GitHub Enterprise integration. For details, see [Using GitHub or GitHub Enterprise integration](using-github-or-github-enterprise-integration.md) and the information that follows about Snyk integration settings for GitHub.
+Before using GitHub integration, Snyk recommends Enterprise plan customers consider whether to use GitHub integration or GitHub Enterprise integration. For details, see [Using GitHub or GitHub Enterprise integration](introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration.md) and the information that follows about Snyk integration settings for GitHub.
 {% endhint %}
 
 ## About Snyk integration settings for GitHub

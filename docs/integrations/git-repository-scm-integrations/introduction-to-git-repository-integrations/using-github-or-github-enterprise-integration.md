@@ -1,7 +1,7 @@
-# Using GitHub or GitHub Enterprise integration
+# Using GitHub or GitHub Enterprise
 
 {% hint style="info" %}
-GitHub Enterprise integration is available to Enterprise customers. If you have a Legacy Business plan, contact [Snyk support](https://support.snyk.io/hc/en-us) for access. See [Pricing plans](https://snyk.io/plans/) for details.&#x20;
+GitHub Enterprise integration is available to Enterprise customers. If you have a Legacy Business plan, contact [Snyk support](https://support.snyk.io/hc/en-us) for access. See [Pricing plans](https://snyk.io/plans/) for details.
 {% endhint %}
 
 Snyk has integrations for both GitHub and GitHub Enterprise.
@@ -16,7 +16,7 @@ You do not need a GitHub Enterprise license or subscription to use the GitHub En
 
 ## Migrating from GitHub integration to GitHub Enterprise integration
 
-The [GitHub integration](github-integration.md) with Snyk is a simple way of connecting a Snyk user account with a GitHub account, using a GitHub personal access token, so you can import projects into Snyk.
+The [GitHub integration](../github-integration.md) with Snyk is a simple way of connecting a Snyk user account with a GitHub account, using a GitHub personal access token, so you can import projects into Snyk.
 
 This is a common starting point for new users to Snyk. However, there are some downsides to having individual users import Projects using their own tokens.
 
@@ -43,7 +43,7 @@ If you have already created multiple Organizations and GitHub Projects have been
 If you already have multiple Organizations with Projects imported using the GitHub integration, follow these steps to migrate from GitHub to GitHub Enterprise integration.
 
 1. Create a new Organization that will be used as the template for all others. You can copy integration settings from an existing Organization if required.
-2. In this new template Organization, set up the GitHub Enterprise integration using the steps at the top of the page [GitHub Enterprise integration](github-enterprise-integration.md). The dedicated service account in those steps is a separate user account in GitHub that you will use as the connection between Snyk and GitHub.
+2. In this new template Organization, set up the GitHub Enterprise integration using the steps at the top of the page [GitHub Enterprise integration](../github-enterprise-integration.md). The dedicated service account in those steps is a separate user account in GitHub that you will use as the connection between Snyk and GitHub.
 3. When the GitHub Enterprise integration is configured, you can import a Project to your template Organization to test that the integration is working as expected.
 4. You can now create new Organizations that will replace the existing Organizations that were configured using the GitHub integration. As you create each new Organisation, ensure that you copy the integration settings from this template Organisation so that the GitHub Enterprise integration is available.
 5. Now that your new Organizations are created, you can import your projects, choosing the GitHub Enterprise integration when you select the source.

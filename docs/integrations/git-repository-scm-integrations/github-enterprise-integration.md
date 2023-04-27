@@ -1,4 +1,4 @@
-# GitHub Enterprise source control
+# GitHub Enterprise integration
 
 {% hint style="info" %}
 **Feature availability**\
@@ -12,7 +12,7 @@ Snyk GitHub Enterprise integration lets you:
 * Provide automated fixes and upgrades
 
 {% hint style="info" %}
-Snyk recommends GitHub Enterprise integration for most customers with access to the feature, because this integration allows use of a single Personal Access Token (PAT) across an Organization, rather than a PAT tied to an individual user account. If you have access and have used GItHub integration, you can migrate to GitHub Enterprise integration. See  [Using GItHub or GItHub Enterprise integration](using-github-or-github-enterprise-integration.md) for details.
+Snyk recommends GitHub Enterprise integration for most customers with access to the feature, because this integration allows use of a single Personal Access Token (PAT) across an Organization, rather than a PAT tied to an individual user account. If you have access and have used GItHub integration, you can migrate to GitHub Enterprise integration. See  [Using GItHub or GItHub Enterprise integration](introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration.md) for details.
 {% endhint %}
 
 ## Setting up a GitHub Enterprise integration

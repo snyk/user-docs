@@ -1,4 +1,4 @@
-# Git repository and CI/CD integrations: comparisons
+# Git repositories and CI/CD comparisons
 
 The most popular integrations for Snyk implementation are [Git Repository](git-repository-scm-integrations/) and [CI/CD pipeline](ci-cd-integrations/).
 
@@ -28,7 +28,7 @@ Use Git repository integrations to Improve security of your code and deployed ap
 * More friendly experience for developers.
 * Does not take resources from your CI/CD pipeline.
 
-For more details, see [Snyk Git repository integration: deployment recommendations](git-repository-scm-integrations/snyk-scm-integration-good-practices.md).
+For more details, see [Snyk Git repository integration: deployment recommendations](git-repository-scm-integrations/introduction-to-git-repository-integrations/snyk-scm-integration-good-practices.md).
 
 ### CI/CD
 
