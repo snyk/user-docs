@@ -138,3 +138,11 @@ The Snyk Broker application and images are being tested daily for vulnerabilitie
 
 **What is the SLA to fix vulnerabilities?**\
 There is a 14-day SLA for fixing high vulnerabilities and a five-day SLA for fixing critical vulnerabilities in public images.
+
+## Additional information for users
+
+You can view the [License: Apache License, Version 2.0](https://github.com/snyk/broker/blob/master/LICENSE)
+
+To submit pull requests, see [Contributing](https://github.com/snyk/broker/blob/master/.github/CONTRIBUTING.md)
+
+See [Security](https://github.com/snyk/broker/blob/master/SECURITY.md) for specific information about Broker.
