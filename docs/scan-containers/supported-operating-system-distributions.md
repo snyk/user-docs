@@ -88,6 +88,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 
 #### Ubuntu
 
+* Ubuntu 23.04
 * Ubuntu 22.10
 * Ubuntu 22.04
 * Ubuntu 21.10
