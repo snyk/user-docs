@@ -9,11 +9,11 @@ You can use Snyk to scan your JavaScript project managed by npm.
 Features may not be available, depending on your plan. See [pricing plans](https://snyk.io/plans/) for details.
 {% endhint %}
 
-| Lockfile version / Feature | CLI Support | Git Support                               | License Scanning | Fix Prs |
-| -------------------------- | ----------- | ----------------------------------------- | ---------------- | ------- |
-| Lockfile v1                | ✔︎          | ✔︎                                        | ✔︎               | ✔︎      |
-| Lockfile v2                | ✔︎          | ✔︎                                        | ✔︎               | ✔︎      |
-| Lockfile v3                | ✔︎          | [Beta](snyk-for-npm.md#lockfile-versions) | ✔︎               |         |
+| Lockfile version / Feature | CLI Support | Git Support               | License Scanning | Fix Prs |
+| -------------------------- | ----------- | ------------------------- | ---------------- | ------- |
+| Lockfile v1                | ✔︎          | ✔︎                          | ✔︎               | ✔︎      |
+| Lockfile v2                | ✔︎          | ✔︎                          | ✔︎               | ✔︎      |
+| Lockfile v3                | ✔︎          | [Beta](#lockfile-versions) | ✔︎               |         |
 
 ## How Snyk for npm works
 
@@ -25,7 +25,7 @@ Snyk builds a dependency graph and then uses the [vulnerability database](https:
 
 The way Snyk analyzes and builds the graph varies depending on the language and package manager of the Project, as well as the location of your project.&#x20;
 
-For the ways you can scan Projects with Snyk see [Snyk CLI for npm projects](snyk-for-npm.md#snyk-cli-for-npm-projects) and [Git services for npm projects](snyk-for-npm.md#git-services-for-npm-projects).
+For the ways you can scan Projects with Snyk see [Snyk CLI for npm projects](#snyk-cli-for-npm-projects) and [Git services for npm projects](snyk-for-npm.md#git-services-for-npm-projects).
 
 ## Snyk CLI for npm projects
 
