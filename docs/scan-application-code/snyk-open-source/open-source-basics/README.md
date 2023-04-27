@@ -13,7 +13,7 @@ Snyk provides actionable fix advice for vulnerabilities in your open source libr
 See[ Language support for Fix Pull Request and Merge Requests](../starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md).
 {% endhint %}
 
-### **Automatic pull / merge requests**
+## **Automatic pull / merge requests**
 
 For projects imported via an SCM (Source Code Manager), Snyk offers the following types of automated pull / merge requests:
 
@@ -21,7 +21,7 @@ For projects imported via an SCM (Source Code Manager), Snyk offers the followin
 * [Fix pull requests to clear the backlog of vulnerabilities in priority order](fix-pull-requests-for-known-vulnerabilities-backlog.md)
 * [Dependency upgrade pull requests](upgrading-dependencies-with-automatic-prs.md)
 
-### Manual pull / merge requests for a project code
+## Manual pull / merge requests for a project code
 
 To generate a PR / MR directly from your project, using the Snyk UI:
 
@@ -31,9 +31,9 @@ To generate a PR / MR directly from your project, using the Snyk UI:
 4. A preview screen appears, showing you what fixes will be applied
 5. Click **Open a Fix PR** on this screen to generate the pull request
 
-<figure><img src="../../../.gitbook/assets/image18.png" alt="Open Fix PR to fix open source project vulnerabilities."><figcaption><p>Open Fix PR to fix open source project vulnerabilities</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image18.png" alt="Open Fix PR to fix open source project vulnerabilities"><figcaption><p>Open Fix PR to fix open source project vulnerabilities</p></figcaption></figure>
 
-### Snyk SCM webhooks
+## Snyk SCM webhooks
 
 To track pull request events, Snyk adds webhooks to your imported repositories (see [GitHub and Git repository integrations](../../../integrations/git-repository-scm-integrations/)).
 

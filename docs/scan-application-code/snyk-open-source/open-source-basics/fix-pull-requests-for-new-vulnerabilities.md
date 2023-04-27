@@ -6,7 +6,7 @@ The following rules are applied to automatic PR creation for vulnerabilities:
 * If a scan is manually run (you clicked **Retest now** for the project), the 24-hour window is marked as having been run and no automatic PR is created until the next automated scan runs
 * One pull request is created per project
 * If **either** the vulnerability itself is new and has a fix available **or** if the fix is new and is not ignored
-* For known vulnerabilities see [Automated pull request for known vulnerabilities (backlog)](fix-pull-requests-for-known-vulnerabilities-backlog.md)&#x20;
+* For known vulnerabilities see [Automated pull request for known vulnerabilities (backlog)](fix-pull-requests-for-known-vulnerabilities-backlog.md)
 
 ![](../../../.gitbook/assets/os1.png)
 
@@ -28,7 +28,7 @@ Enable at the global integration level:
 
 **Apply changes to all overridden projects** will update all of the individual project settings for "Automatic fix pull requests". If a project previously had its own settings for this, clicking on this button will override it with the global setting.
 
-<figure><img src="../../../.gitbook/assets/global-pr-setting.png" alt="Automatic fix pull requests settings in Snyk Web UI."><figcaption><p>Automatic fix pull requests settings in Snyk Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/global-pr-setting.png" alt="Automatic fix pull requests settings in Snyk Web UI"><figcaption><p>Automatic fix pull requests settings in Snyk Web UI</p></figcaption></figure>
 
 ## Enable or disable pull requests for a single project
 
@@ -41,4 +41,4 @@ Enabling/disabling at a project level will override this single project rather t
    * Enable **New vulnerabilities**
    * Select **Save changes**
 
-<figure><img src="../../../.gitbook/assets/os3.png" alt="Automatic fix pull requests settings at the project level."><figcaption><p>Automatic fix pull requests settings at the project level</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/os3.png" alt="Automatic fix pull requests settings at the project level"><figcaption><p>Automatic fix pull requests settings at the project level</p></figcaption></figure>

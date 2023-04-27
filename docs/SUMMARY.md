@@ -286,7 +286,7 @@
       * [What languages do we support Fix Pull Requests or Merge Requests?](scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md)
     * [Automatic and manual PRs with Snyk Open Source](scan-application-code/snyk-open-source/open-source-basics/README.md)
       * [Automated pull request creation for new fixes](scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md)
-      * [Automated pull requests for known vulnerabilities (backlog)](scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-known-vulnerabilities-backlog.md)
+      * [Configure Automatic fix PRs](scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-known-vulnerabilities-backlog.md)
       * [Upgrading dependencies with automatic PRs](scan-application-code/snyk-open-source/open-source-basics/upgrading-dependencies-with-automatic-prs.md)
     * [Licenses](scan-application-code/snyk-open-source/licenses/README.md)
       * [Getting Started with Snyk License Compliance Management](scan-application-code/snyk-open-source/licenses/getting-started-snyk-licensing-compliance.md)
