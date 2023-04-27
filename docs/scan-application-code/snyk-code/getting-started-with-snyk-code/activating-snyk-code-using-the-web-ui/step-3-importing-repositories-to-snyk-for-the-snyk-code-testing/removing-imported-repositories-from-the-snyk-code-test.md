@@ -35,9 +35,9 @@ To deactivate or delete an imported repository, you need to select all the Proje
 
 **To deactivate or delete multiple Snyk Projects:**
 
-1\. On the Snyk Web UI, select <img src="../../../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10).png" alt="" data-size="line"> **Settings** > **Usage**:
+1\. On the Snyk Web UI, select <img src="../../../../../.gitbook/assets/Org Settings button - Icon (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (7).png" alt="" data-size="line"> **Settings** > **Usage**:
 
-<figure><img src="../../../../../.gitbook/assets/image (295) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (175).png" alt=""><figcaption></figcaption></figure>
 
 3\. Scroll down the **Usage** page until you reach the **Projects** section, where all your Snyk Projects are listed:
 
@@ -62,7 +62,7 @@ Depending on your selected action, one of the following occurs:
 
 7\. To remove from Snyk the Target folder of the repository whose Projects you deleted, return to the **Projects** page. Then, open the Target folder, and click the **Delete** button on the right corner:
 
-<figure><img src="../../../../../.gitbook/assets/image (107) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (107) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The entire repository is now deleted from your Snyk Account.
 
@@ -78,7 +78,7 @@ To stop Snyk Code from testing an imported repository, you can either deactivate
 
 2\. On the **Settings** page of the **Code analysis** Project, click either the **Deactivate project** or **Delete project** button according to your needs:
 
-<figure><img src="../../../../../.gitbook/assets/image (354) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
 
 The **Code analysis** Project you selected is either deactivated or deleted according to the action you selected, and its repository will no longer be tested by Snyk Code.
 

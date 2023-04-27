@@ -492,6 +492,7 @@
     * [Snyk Cloud issues](scan-cloud-deployment/snyk-cloud/snyk-cloud-issues/README.md)
       * [View cloud issues in the Snyk Web UI](scan-cloud-deployment/snyk-cloud/snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md)
       * [Fix Cloud issues in IaC](scan-cloud-deployment/snyk-cloud/snyk-cloud-issues/fix-cloud-issues-in-iac.md)
+      * [Ignoring Cloud issues](scan-cloud-deployment/snyk-cloud/snyk-cloud-issues/ignoring-cloud-issues.md)
     * [Cloud compliance](scan-cloud-deployment/snyk-cloud/cloud-compliance.md)
     * [View Snyk Cloud Environments](scan-cloud-deployment/snyk-cloud/view-snyk-cloud-environments.md)
     * [Scan a Snyk Cloud Environment](scan-cloud-deployment/snyk-cloud/scan-a-snyk-cloud-environment.md)
