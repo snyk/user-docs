@@ -56,7 +56,7 @@ For example, if you double the number of Projects you scan, but only add 10% to 
 
 You can hover over a date to see the summary of “to this date” information at that point:
 
-<figure><img src="../../.gitbook/assets/image (150) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="View a snapshot summary"><figcaption><p>View a snapshot summary</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (150) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="View a snapshot summary"><figcaption><p>View a snapshot summary</p></figcaption></figure>
 
 This is especially useful when you see sudden changes in issue numbers on a specific day.
 

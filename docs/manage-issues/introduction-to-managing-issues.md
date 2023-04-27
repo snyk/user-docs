@@ -38,7 +38,7 @@ Snyk’s [reachable vulnerability](issue-management/reachable-vulnerabilities.md
 
 Define actions for specific types of issues encountered, using our customizable [Snyk policies](policies/).
 
-<figure><img src="../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Security policies"><figcaption><p>Security policies</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Security policies"><figcaption><p>Security policies</p></figcaption></figure>
 
 ## Fix the issues
 
