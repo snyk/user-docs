@@ -239,6 +239,28 @@
   **Help Links:**
 
   
+### [SNYK-OS-GO-0001](#snyk-os-go-0001)
+#### Failed to access private module
+  Your go.mod file contained private modules that Snyk was unable to access.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
+### [SNYK-OS-GO-0002](#snyk-os-go-0002)
+#### No go mod file found
+  A go.mod file was not found in current directory or any parent directory.
+
+  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+
+  **Exit Code:** N/A
+
+  **Help Links:**
+
+  
 ---
 # Builds
 ### [SNYK-OS-8001](#snyk-os-8001)
@@ -492,30 +514,6 @@
   The upstream service is unavailable.
 
   **HTTP Status:** [502](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502)
-
-  **Exit Code:** N/A
-
-  **Help Links:**
-
-  
----
-# [Open Source Languages & Package Managers](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support)
-### [SNYK-OS-GO-0001](#snyk-os-go-0001)
-#### Failed to access private module
-  Your go.mod file contained private modules that Snyk was unable to access.
-
-  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-  **Exit Code:** N/A
-
-  **Help Links:**
-
-  
-### [SNYK-OS-GO-0002](#snyk-os-go-0002)
-#### No go mod file found
-  A go.mod file was not found in current directory or any parent directory.
-
-  **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
   **Exit Code:** N/A
 
@@ -874,4 +872,4 @@
   
 ---
 
-Genererated at 2023-04-25T20:18:34.848Z
+Generated at 2023-04-27T08:16:47.695Z
