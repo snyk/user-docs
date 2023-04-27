@@ -1,6 +1,6 @@
 # Getting started with Snyk Reports
 
-Reports are available during Open Beta on the **Reports** tab in the Snyk navigation. To get access to the **Reporting Beta,** a Snyk admin can activate the reporting in [Snyk Preview](https://docs.snyk.io/features/user-and-group-management/managing-settings/snyk-preview).
+Reports are available on the **Reports** tab in the Snyk navigation. To get access to **Next Gen Reporting,** a Snyk admin can activate the reporting in [Snyk Preview](https://docs.snyk.io/features/user-and-group-management/managing-settings/snyk-preview).
 
 You can navigate to different reports from the dropdown in the upper left. The report currently selected is displayed.
 
@@ -36,9 +36,9 @@ The following is an example of a PDF export.
 
 {% file src="../../../.gitbook/assets/issues-level_01_26_2023.pdf" %}
 
-In tabular data on reports, only the first 50 results are shown in the PDF export. Links are provided  in the PDF export to view the report in the browser.
+In tabular data on reports, only the first 50 results are shown in the PDF export. Links are provided in the PDF export to view the report in the browser.
 
-### Download Snyk Report to CSV file
+### Download Snyk Report to a CSV file
 
 You can use the **Download CSV** button at the right in the report to download data presented in tables to CSV. This information can be used, for example, for prioritization purposes or a one-time analysis of data in Excel or a similar tool.
 
@@ -48,7 +48,7 @@ There is no row limit, but there is a 5GB file size limit.
 
 ## Column sorting
 
-Sort columns within tables by clicking the arrows next to the column header. Click once to sort in ascending order, twice to sort in descending order, and a third time to remove sort from that column. Multi-column sorting is supported.
+Sort columns within tables by clicking the arrows next to the column header. Click once to sort in ascending order, twice to sort in descending order and a third time to remove sort from that column. Multi-column sorting is supported.
 
 When columns are sorted, the app.snyk.io URL is updated to persist the state of the page, allowing for bookmarking, copying, and sharing.
 

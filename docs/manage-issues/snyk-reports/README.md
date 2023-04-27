@@ -1,11 +1,11 @@
 # Snyk reports
 
-## Introduction
+## Introduction to reporting
 
 {% hint style="info" %}
 **Feature availability**\
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.\
-To access the [Reporting Beta](reporting-beta-2022/) features, a Snyk admin can activate the reporting in [Snyk Preview](https://docs.snyk.io/features/user-and-group-management/managing-settings/snyk-preview).
+To access the [Next Gen Reporting](next-gen-reporting/) features, a Snyk admin can activate the reporting in [Snyk Preview](https://docs.snyk.io/features/user-and-group-management/managing-settings/snyk-preview).
 {% endhint %}
 
 Snyk reports show the status of all of your projects, issues, dependencies, and licenses, for your Organization or Group.
@@ -18,7 +18,7 @@ See the [Reports Overview](reports-overview.md) page for more information on org
 Reports do not support Snyk Code projects.
 {% endhint %}
 
-### Accessing reports
+## Accessing reports
 
 Select the **Reports** menu option to view reports:
 

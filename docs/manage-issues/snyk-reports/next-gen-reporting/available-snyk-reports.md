@@ -32,12 +32,12 @@ The Vulnerabilities Detail report is similar to the Issues Detail report, but sh
 
 ## Dependencies and Licenses tabs relocated
 
-For customers who opted into the reporting beta, the Dependencies and Licenses views remain available but in a new location in the Snyk App, in the Snyk navigation menu under **Dependencies**.
+For customers who opted into Next Gen Reporting, the Dependencies and Licenses views remain available but in a new location in the Snyk App, in the Snyk navigation menu under **Dependencies**.
 
 ## Cloud Compliance Issues Report
 
 {% hint style="info" %}
-All users with access to the reporting beta will see the Cloud Compliance Issues report. If [Snyk Cloud](../../../scan-cloud-deployment/snyk-cloud/) and/or [Snyk Integrated IaC](../../../scan-cloud-deployment/snyk-infrastructure-as-code/integrated-infrastructure-as-code/) are not enabled, or if they are enabled but no [environments](../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-concepts.md#environments) have issues, you will see the following message: “Snyk doesn’t detect any issues in your Organization that map to supported compliance standards. This is a capability for Snyk Cloud and Snyk IaC (integrated) customers. Please reach out to your account team if you are interested.”
+All users with access to Next Gen Reporting will see the Cloud Compliance Issues report. If [Snyk Cloud](../../../scan-cloud-deployment/snyk-cloud/) or [Snyk Integrated IaC](../../../scan-cloud-deployment/snyk-infrastructure-as-code/integrated-infrastructure-as-code/) or both are not enabled, or if they are enabled but no [environments](../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-concepts.md#environments) have issues, you will see the following message: “Snyk doesn’t detect any issues in your Organization that map to supported compliance standards. This is a capability for Snyk Cloud and Snyk IaC (integrated) customers. Please reach out to your account team if you are interested.”
 {% endhint %}
 
 The Cloud Compliance Issues report shows[ cloud and integrated IaC issues](../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-concepts.md#issues) for an entire Organization, organized by [compliance standard](../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-concepts.md#docs-internal-guid-e2e38027-7fff-9271-f2c0-e23677542f6e).

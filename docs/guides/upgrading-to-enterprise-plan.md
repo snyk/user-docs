@@ -145,7 +145,7 @@ Use the [Snyk API import tool](../snyk-api-info/other-tools/tool-snyk-api-import
 
 Snyk reports offer data and analytics across all of your projects, displaying historical and aggregated data about projects, issues, dependencies, and licenses.
 
-See [Getting started with Snyk Reports](../manage-issues/snyk-reports/reporting-beta-2022/getting-started-with-snyk-reports.md).
+See [Getting started with Snyk Reports](../manage-issues/snyk-reports/next-gen-reporting/getting-started-with-snyk-reports.md).
 
 ### Security policy management
 
