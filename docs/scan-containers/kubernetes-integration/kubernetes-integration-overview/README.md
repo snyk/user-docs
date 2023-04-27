@@ -10,9 +10,9 @@ This feature is available in Enterprise plans. See [pricing plans](https://snyk.
 ## **How Kubernetes integration works**
 
 1. Your administrator installs a controller on your cluster, authenticating the integration with a unique integration ID and a service account token generated from the Snyk account. Install the controller with either of these options:
-   * [Install the Snyk controller with Helm (Azure and Google Cloud Platform)](../installation-page/install-the-snyk-controller-with-helm.md)
-   * [Install the Snyk controller with OpenShift and OperatorHub](../installation-page/install-the-snyk-controller-with-openshift-4-and-operatorhub.md)
-   * [Install the Snyk controller on Amazon Elastic Kubernetes Service (Amazon EKS)](../installation-page/install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md)
+   * [Install the Snyk controller with Helm (Azure and Google Cloud Platform)](../snyk-controller-installation/install-the-snyk-controller-with-helm.md)
+   * [Install the Snyk controller with OpenShift and OperatorHub](../snyk-controller-installation/install-the-snyk-controller-with-openshift-4-and-operatorhub.md)
+   * [Install the Snyk controller on Amazon Elastic Kubernetes Service (Amazon EKS)](../snyk-controller-installation/install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md)
 2. The controller communicates with the Kubernetes API to determine which workloads (for instance the Deployment, ReplicationController, CronJob, etc.) are running on the cluster, find their associated images, and scan them directly on the cluster for vulnerabilities.
 3. From Snyk, collaborators select which workloads to import, or workloads can be imported automatically using annotations. These options are as described in [Adding Kubernetes workloads for security scanning](../kubernetes-integration-features/adding-kubernetes-workloads-for-security-scanning.md).
 4. For each workload that your collaborators import, Snyk displays the vulnerabilities found in each image as well as a summary of configuration issues identified with the workload.
@@ -22,7 +22,7 @@ This feature is available in Enterprise plans. See [pricing plans](https://snyk.
 {% hint style="warning" %}
 In order to maintain the health of the database, any information that relates to a workload that has not been **changed or updated for eight (8) days** will be removed. This can lead to failure on **retesting** the workload.
 
-If an image and its corresponding project is removed, and a reimport of the same workload is initiated during the eight (8) days when the metadata still resides in the database, the project may be created again.&#x20;
+If an image and its corresponding project is removed, and a reimport of the same workload is initiated during the eight (8) days when the metadata still resides in the database, the project may be created again.
 {% endhint %}
 
 ## **Terms and conditions**
