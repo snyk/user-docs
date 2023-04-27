@@ -21,8 +21,21 @@ The process to connect Snyk with your GitHub Enterprise repositories includes th
 
 1. Create a dedicated service account in GitHub Enterprise, with _**write**_ level or higher permissions for the repos you want to monitor with Snyk permissions.\
    See [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts) and [Required permissions scope for the GitHub integration](github-enterprise-integration.md#required-permissions-scope-for-the-github-integration) for details.
-2. Generate a personal access token for that account, with **repo (all)**, **admin:read:org**, and **admin:repo\_hooks (read & write)** permissions scope.\
-   See [GitHub Enterprise documentation](https://docs.github.com/en/enterprise-server@2.22/github/authenticating-to-github/creating-a-personal-access-token) for details.
+2. Generate a personal access token for that account with the following permissions:\
+   \- repo (all)\
+   \- admin:read:org\
+   \- admin:repo\_hooks (read & write)\
+   \
+   If you are using fine-grained personal access tokens, the following scope is required:\
+   \- Account permissions: None\
+   \- Admin: Read-only \
+   \- Commit Status: Read and write \
+   \- Contents: Read and write \
+   \- Metadata: Read-only \
+   \- Pull requests: Read and write \
+   \- Webhooks: Read and write \
+   \
+   See the [GitHub Enterprise documentation](https://docs.github.com/en/enterprise-server@2.22/github/authenticating-to-github/creating-a-personal-access-token) for details.
 3. **Authorize** your personal access token and Enable SSO:
    1. In Snyk, go to the **Integrations** page and click the **GitHub Enterprise** card.
    2. Enter your Github Enterprise URL, the personal access token (PAT) for the service account you created, and **Save** your changes.\
@@ -38,7 +51,7 @@ Snyk starts scanning the selected repositories for dependency files (such as pac
 
 The imported Projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (8).jpeg" alt="Add selected repositories"><figcaption><p>Add selected repositories</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (1) (30).jpeg" alt="Add selected repositories"><figcaption><p>Add selected repositories</p></figcaption></figure>
 
 ## GitHub Enterprise Broker startup script
 

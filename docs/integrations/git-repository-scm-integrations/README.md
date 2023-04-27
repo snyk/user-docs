@@ -11,11 +11,11 @@ Snyk can integrate with the following Source Control Managers (SCMs) to help you
 * [GitLab](gitlab-integration.md)
 * [Azure Repos](azure-repos-integration.md)
 
-### Are there any tips for integrating my Git repo with Snyk?
+## Are there any tips for integrating my Git repo with Snyk?
 
 See the [Snyk deployment recommendations](introduction-to-git-repository-integrations/snyk-scm-integration-good-practices.md) for integrating your SCM with Snyk and [Using GitHub or GitHub Enterprise integration](introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration.md).
 
-### How can I use Snyk Pull Requests (PRs) for my Git repositories?
+## How can I use Snyk Pull Requests (PRs) for my Git repositories?
 
 For details see the following pages:
 
