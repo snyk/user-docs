@@ -146,8 +146,6 @@ Specify a password to use when connecting to a container registry. This is ignor
 
 `$ snyk container test <image>`
 
-which currently has`snyk container test app:latest --file=Dockerfile`but could also include the example
-
 ### Option to get more information including base image remediation
 
 `--file=path/to/Dockerfile`
@@ -158,7 +156,7 @@ which currently has`snyk container test app:latest --file=Dockerfile`but could a
 
 `$ snyk container test app:latest --file=Dockerfile --policy-path=path/to/.snyk`
 
-### Scan a Docker image using the Dockerfile by referring to its image tag or its digest
+### Refer to a container image by its digest
 
 `$ snyk container test app@sha256:17cb37098f0efb819c075eea4ff2a495be909a396e86ece317a6e3a8968e025c --file=Dockerfile`
 
