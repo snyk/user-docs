@@ -5,8 +5,14 @@
 This feature is in Open Beta.\
 Project collections are available for Enterprise plans. See [pricing plans](https://snyk.io/plans/) for details.
 
-You must also have the Beta Reporting enabled to use the Project collections beta.
+You can enable the beta by going to group **Settings**, selecting **Snyk Preview**, and toggling the preview for **Project Collections**.
+
+You must also have [Next Gen Reporting](../snyk-reports/next-gen-reporting/) enabled to use the Project collections beta.
+
+
 {% endhint %}
+
+<figure><img src="../../.gitbook/assets/project-collection-toggle (1).png" alt="Enabling Project Collection beta "><figcaption><p>Enabling Project Collection beta </p></figcaption></figure>
 
 **Project collections** help you collect and organize your Projects so you can easily view and perform actions on them. A Project collection can consist of multiple Project types from different Targets.
 
@@ -15,15 +21,15 @@ You must also have the Beta Reporting enabled to use the Project collections bet
 In the Snyk Web UI, you can:
 
 * Create and configure a dynamic Project view that is based on filters
-* Share a Project view with another member of your organization
+* Share a Project view with another member of your Organization
 * View reports on your Project views
 
 {% hint style="info" %}
-Any Oganization-level role can create and share Project views.
+Any Organization-level role can create and share Project views.
 
-**Note:** You can only create and configure a Project collection when you apply the "Group by none" grouping in the Project listing page.
+**Note:** You can create and configure a Project collection only when you apply the **Group by none** grouping in the Project listing page.
 
-In addition, you will have more filter options available when the “Group by none” grouping is applied.
+In addition, more filter options are available when you apply **Group by none**.
 {% endhint %}
 
 ## Create and configure a Project view
@@ -35,11 +41,11 @@ In addition, you will have more filter options available when the “Group by no
 
 3. Enter a name for your Project view in the available field, then click **Create view.**
 
-<figure><img src="../../.gitbook/assets/image (1) (7).png" alt="Enter a name for your Project view"><figcaption><p>Enter a name for your Project view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (2).png" alt="Enter a name for your Project view"><figcaption><p>Enter a name for your Project view</p></figcaption></figure>
 
 Your new view is created and is automatically selected. You can click the icon next to your Project view to duplicate, rename, or delete it.
 
-4. In the **FILTERS** drop-down, select the criteria that you would like to use to organize your view.
+4. In the **FILTERS** drop-down, select the criteria to use to organize your view.
 
 <figure><img src="../../.gitbook/assets/image (2) (3) (1).png" alt="Select the filters that will be applied in your Project view"><figcaption><p>Select the filters that will be applied in your Project view</p></figcaption></figure>
 
@@ -72,5 +78,5 @@ The **Reports** page loads and shows a report of the Projects in your Project vi
 <figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt="A report is generated automatically with the filters selected in your Project view"><figcaption><p>A report is generated automatically with the filters selected in your Project view</p></figcaption></figure>
 
 {% hint style="info" %}
-The scan results you see in the Project listing page will be reflected in the reporting page roughly one (1) hour after the scan is complete.
+The scan results you see on the Project listing page will be reflected in the reporting page roughly one (1) hour after the scan is complete.
 {% endhint %}
