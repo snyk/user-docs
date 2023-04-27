@@ -582,6 +582,7 @@
       * [Adding custom accept.json for Docker installation](snyk-admin/snyk-broker/install-and-configure-broker-using-docker/adding-custom-accept.json-for-docker-installation.md)
       * [Snyk Code - Clone capability with Broker](snyk-admin/snyk-broker/install-and-configure-broker-using-docker/snyk-code-clone-capability-with-broker.md)
       * [Credential pooling](snyk-admin/snyk-broker/install-and-configure-broker-using-docker/credential-pooling.md)
+      * [Changing the auth method](snyk-admin/snyk-broker/install-and-configure-broker-using-docker/changing-the-auth-method.md)
     * [Snyk Broker - Client integration setups with Docker](snyk-admin/snyk-broker/snyk-broker-set-up-examples/README.md)
       * [Set up Snyk Broker with GitHub](snyk-admin/snyk-broker/snyk-broker-set-up-examples/broker-example-set-up-snyk-broker-with-github.md)
       * [Set up Snyk Broker with GitHub Enterprise](snyk-admin/snyk-broker/snyk-broker-set-up-examples/setup-broker-with-github-enterprise.md)
