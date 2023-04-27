@@ -6,7 +6,7 @@ Snyk's priority scoring, reporting, and policy features help you prioritize and 
 
 The [Snyk Priority Score](issue-management/priority-score.md) prioritizes issues based on a number of industry-standard criteria:
 
-<figure><img src="../.gitbook/assets/image (121) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Snyk Priority Score"><figcaption><p>Snyk Priority Score</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (121) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk Priority Score"><figcaption><p>Snyk Priority Score</p></figcaption></figure>
 
 ### Apply Project attributes <a href="#h.r3thgse7qt7n" id="h.r3thgse7qt7n"></a>
 
@@ -38,7 +38,7 @@ Snyk’s [reachable vulnerability](issue-management/reachable-vulnerabilities.md
 
 Define actions for specific types of issues encountered, using our customizable [Snyk policies](policies/).
 
-<figure><img src="../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Security policies"><figcaption><p>Security policies</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Security policies"><figcaption><p>Security policies</p></figcaption></figure>
 
 ## Fix the issues
 

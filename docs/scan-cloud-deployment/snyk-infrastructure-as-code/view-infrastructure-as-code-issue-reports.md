@@ -31,7 +31,7 @@ This shows the title of each issue and type, and the severity.
 
 You can also view the issues ungrouped; this shows more information about the project file that the issue is found in, and details on when it was first introduced:
 
-![](<../../.gitbook/assets/image2-3 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (1) (5).png>)
+![](<../../.gitbook/assets/image2-3 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (7).png>)
 
 For more details on the issues tab, see [Issues tab](https://docs.snyk.io/reports-1/reports/issues-tab) documentation.
 
