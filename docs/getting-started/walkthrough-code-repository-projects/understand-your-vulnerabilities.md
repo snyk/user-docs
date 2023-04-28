@@ -17,7 +17,7 @@ Next, select a Project in that list, to see details of the vulnerabilities found
 
 For example, for a **Code analysis** project scanned by Snyk Code:
 
-<figure><img src="../../.gitbook/assets/image (149) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="Vulnerability example - Code analysis"><figcaption><p>Vulnerability example - Code analysis</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (149) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Vulnerability example - Code analysis"><figcaption><p>Vulnerability example - Code analysis</p></figcaption></figure>
 
 See [View project information](../../manage-issues/introduction-to-snyk-projects/view-project-information.md) for more details.
 
@@ -25,7 +25,7 @@ See [View project information](../../manage-issues/introduction-to-snyk-projects
 
 Now, look at the vulnerability information for each Snyk Project, provided in Issue Cards:
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1).png" alt="Vulnerability details Issue Card"><figcaption><p>Vulnerability details Issue Card</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt="Vulnerability details Issue Card"><figcaption><p>Vulnerability details Issue Card</p></figcaption></figure>
 
 Again, there's a lot of information for you to understand, so take the time to understand how all of this information relates to your vulnerability, to help you decide on what fix actions to take.
 

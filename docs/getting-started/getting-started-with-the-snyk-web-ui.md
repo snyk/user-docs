@@ -44,7 +44,7 @@ The **Pending tasks** section shows the next chores to be handled for the Projec
 
 Currently, Snyk tracks and flags PRs in GitHub, GitHub Enterprise, and Bitbucket Cloud only, and only for the top-most vulnerable projects. If you use another SCM, **Pending tasks** shows only PRs that can be raised, and not PRs that have already been raised.
 
-<figure><img src="../.gitbook/assets/image (109) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (2) (1).png" alt="Pending tasks and Vulnerable Projects listed on the Dashboard"><figcaption><p>Pending tasks and Vulnerable Projects listed on the Dashboard</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (109) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (2).png" alt="Pending tasks and Vulnerable Projects listed on the Dashboard"><figcaption><p>Pending tasks and Vulnerable Projects listed on the Dashboard</p></figcaption></figure>
 
 #### Add project
 
@@ -90,7 +90,7 @@ Select **Integrations** from the navigation on the dashboard to open the [Integr
 * Manage [Slack](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration) and [Jira](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/jira) integrations.
 * Learn about the [Vulnerability management tools](https://docs.snyk.io/integrations/vulnerability-management-tools).
 
-<figure><img src="../.gitbook/assets/image (123) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="Integrations page"><figcaption><p>Integrations page</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (123) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Integrations page"><figcaption><p>Integrations page</p></figcaption></figure>
 
 ### Manage Organization or Group members
 

@@ -8,11 +8,11 @@ Scanning of self-managed source code, like GitHub Enterprise, is available with 
 Snyk GitHub Enterprise integration lets you:
 
 * Continuously perform security scanning across all the integrated repositories
-* Detect vulnerabilities in your open source components
+* Detect vulnerabilities in your open-source components
 * Provide automated fixes and upgrades
 
 {% hint style="info" %}
-Snyk recommends GitHub Enterprise integration for most customers with access to the feature, because this integration allows use of a single Personal Access Token (PAT) across an Organization, rather than a PAT tied to an individual user account. If you have access and have used GItHub integration, you can migrate to GitHub Enterprise integration. See  [Using GItHub or GItHub Enterprise integration](introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration.md) for details.
+Snyk recommends GitHub Enterprise integration for Enterprise customers, as it allows the use of a single Organization-wide Personal Access Token (PAT), rather than a user account-based PAT. See [Using GItHub or GItHub Enterprise integration](introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration.md) for details.
 {% endhint %}
 
 ## Setting up a GitHub Enterprise integration
@@ -51,7 +51,7 @@ Snyk starts scanning the selected repositories for dependency files (such as pac
 
 The imported Projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (1) (30).jpeg" alt="Add selected repositories"><figcaption><p>Add selected repositories</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (20).jpeg" alt="Add selected repositories"><figcaption><p>Add selected repositories</p></figcaption></figure>
 
 ## GitHub Enterprise Broker startup script
 
@@ -93,13 +93,13 @@ The example that follows shows a fix pull request opened by Snyk:
 To review and update the automatic fix pull request settings:
 
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> **Settings >** **Integrations > Source control > GitHub Enterprise**, and select **Edit Settings**.
-2. Scroll to the **Automatic fix pull requests** section, **Enable automatic fix pull requests for all projects in this organization**, choose **Include patches to vulnerable dependencies** if you wish, and **Update settings.**
+2. Scroll to the **Automatic fix pull requests** section, then select options as required:
 
-<figure><img src="../../.gitbook/assets/mceclip4 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Automatic pull requests settings"><figcaption><p>Automatic pull requests settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-04-28 at 15.41.56.png" alt="Automatic pull requests settings"><figcaption><p>Automatic pull requests settings</p></figcaption></figure>
 
 ### **Pull request testing**
 
-Snyk tests any newly created pull requests in your repositories for security vulnerabilities and sends a status check to GitHub Enterprise. This allows you to see, directly from GitHub Enterprise, whether the pull request introduces new security issues.
+The [PR Checks](../../scan-application-code/run-pr-checks/) feature enables Snyk to test any newly created pull requests in your repositories for security vulnerabilities and sends a status check to GitHub Enterprise. This allows you to see, directly from GitHub Enterprise, whether the pull request introduces new security issues.
 
 The example that follows shows how Snyk pull request checks appear on the GitHub Enterprise Pull Request page.
 
@@ -108,9 +108,9 @@ The example that follows shows how Snyk pull request checks appear on the GitHub
 To review and adjust the pull request tests settings:
 
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings** > **Integrations > Source control > GitHub Enterprise**, and select **Edit Settings**.
-2. Scroll to **Default Snyk test for pull requests**.
+2. Scroll to **Snyk PR status checks** - see [Configure PR Checks](../../scan-application-code/run-pr-checks/configure-pr-checks.md) for details.
 
-<figure><img src="../../.gitbook/assets/image (202).png" alt="Default Snyk test for pull requests setting enabled"><figcaption><p>Default Snyk test for pull requests setting enabled</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-04-28 at 15.43.34.png" alt="Default Snyk test for pull requests setting enabled"><figcaption><p>Default Snyk test for pull requests setting enabled</p></figcaption></figure>
 
 ## Required permissions scope for the GitHub integration
 

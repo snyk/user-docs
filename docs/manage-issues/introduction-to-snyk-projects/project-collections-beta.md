@@ -12,7 +12,7 @@ You must also have [Next Gen Reporting](../snyk-reports/next-gen-reporting/) ena
 
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/project-collection-toggle (1).png" alt="Enabling Project Collection beta "><figcaption><p>Enabling Project Collection beta </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/project-collection-toggle.png" alt="Enabling Project Collection beta "><figcaption><p>Enabling Project Collection beta </p></figcaption></figure>
 
 **Project collections** help you collect and organize your Projects so you can easily view and perform actions on them. A Project collection can consist of multiple Project types from different Targets.
 
