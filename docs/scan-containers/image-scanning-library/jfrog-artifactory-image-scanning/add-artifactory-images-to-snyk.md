@@ -18,7 +18,7 @@ Snyk tests and monitors your Artifactory container images by evaluating its tags
 
 * **The Which images do you want to test?** view appears, displaying all of the available images for the registry to which you connected, grouped by each of your repositories, similar to the following:
 
-![](<../../../.gitbook/assets/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en (1) (1) (2) (4) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (  (5).png>)
+![](<../../../.gitbook/assets/uuid-bd9cf629-f5fb-b28b-1fc1-40df2367a7f9-en (1) (1) (2) (4) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (10).png>)
 
 * Select single or multiple images with any or all of the following methods:
   * Type the name of a single image for import in the Image Name field (#1 in the image above),
@@ -37,5 +37,5 @@ Images are indicated with a unique icon ![](../../../.gitbook/assets/uuid-d083d5
 Artifactory integration works similarly to our other integrations. To continue to monitor, fix and manage your projects, see the relevant pages in our docs.
 
 {% hint style="info" %}
-For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images/)for more information.
+For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images.md)for more information.
 {% endhint %}

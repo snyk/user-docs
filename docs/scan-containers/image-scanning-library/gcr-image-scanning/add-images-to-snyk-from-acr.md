@@ -39,4 +39,4 @@ GCR files are indicated with a unique icon . You can now filter to view only tho
 
 GCR integration works similarly to other Snyk integrations. To continue to monitor, fix, and manage your Projects, see the relevant pages in the Snyk docs.
 
-For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. You must re-import the image. See [Detecting application vulnerabilities in container images ](../../getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images/)for more information.
+For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. You must re-import the image. See [Detecting application vulnerabilities in container images ](../../getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images.md)for more information.
