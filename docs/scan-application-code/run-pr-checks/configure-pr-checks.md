@@ -38,9 +38,9 @@ The configuration settings apply to all Projects in that Organization. You can a
 2. To check for code issues, configure and save the following changes:
 
 * [ ] **Code Analysis**: Enable this option to fail the PR when the security issues found in the proposed changes exceed your specified severity threshold. In other words, if the severity is higher than your threshold, the PR is not merged into the main branch.
-  * [ ] **Minimal severity to fail PR check**: Select the severity threshold at which the PR fails. For example, if you select **Medium**, the PR fails on issues found at this level or above, while it is merged for **Low** severity issues.
+  * [ ] **Fail conditions**: Select the severity threshold at which the PR fails. For example, if you select **Medium**, the PR fails on issues found at this level or above, while it is merged for **Low** severity issues.
 
-<figure><img src="../../.gitbook/assets/pr_checks_configuration_code_analysis.png" alt="Pull request check settings to analyze code issues."><figcaption><p>PR check settings to analyze code issues</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-04-28 at 12.07.23.png" alt="Pull request check settings to analyze code issues." width="563"><figcaption><p>PR check settings to analyze code issues</p></figcaption></figure>
 
 {% hint style="info" %}
 If you cannot see the **Code Analysis** section, make sure that your user has the Group Admin role assigned and that the feature is enabled for Snyk Code (see [Prerequisites](configure-pr-checks.md#prerequisites)).
@@ -55,9 +55,9 @@ If you cannot see the **Code Analysis** section, make sure that your user has th
   * [ ] **Only fail for high or critical severity issues**: Select additional failure conditions based on the severity threshold.
   * [ ] **Only fail when the issues found have a fix available**: Set this condition when the issue can be fixed automatically.
 
-<figure><img src="../../.gitbook/assets/pr_checks_configuration_open_source.png" alt="Pull request check settings to analyze opena source and licensing issues."><figcaption><p>PR check settings to analyze open source and licensing issues</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-04-28 at 12.06.13.png" alt="Pull request check settings to analyze opena source and licensing issues." width="563"><figcaption><p>PR check settings to analyze open source and licensing issues</p></figcaption></figure>
 
-4. (Optional) Select **Apply changes to all overridden projects** to extend the current configuration to Projects with custom settings (see [Configure PR Checks at the project level](configure-pr-checks.md#configure-pr-checks-at-the-project-level)). Use this option to apply the same configuration to all Projects.
+4. Either click **Save** to save the changes, or select the Save dropdown and click **Apply changes to all overridden Projects** to extend the current configuration to Projects with custom settings (see [Configure PR Checks at the project level](configure-pr-checks.md#configure-pr-checks-at-the-project-level)).
 
 ## Configure PR Checks at the Project level
 
