@@ -1,6 +1,6 @@
 # Scan your Dockerfile
 
-This section provides information about getting started with Dockerfile analysis and scanning base images from Dockerfile:
+This section provides information about Dockerfile analysis and scanning base images from Dockerfile:
 
 * [Prerequisites for Dockerfile analysis](prerequisites-for-dockerfile-analysis.md)
 * [Supported repos for Dockerfile analysis](supported-repos-for-dockerfile-analysis.md)

@@ -4,26 +4,26 @@ Snyk allows you to link manually or automatically from a Dockerfile to all conta
 
 ## Viewing linked images
 
-This linked images are identified in the **LINKED IMAGES** section of the details for a Project, as shown in the following image.
+These linked images are identified in the **LINKED IMAGES** section of the details for a Project, as shown in the following image.
 
-<figure><img src="../../.gitbook/assets/mceclip3.png" alt="Dockerfile Project showing linked images"><figcaption><p>Dockerfile Project showing linked images</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mceclip3.png" alt="Project showing linked images"><figcaption><p>Project showing linked images</p></figcaption></figure>
 
 Using container registry integration, you can get automatic links between imported images to existing Dockerfile Projects. To do this, check whether the OCI label in the image matches the path of a Dockerfits in the Organization in Snyk.
 
 ## How linked images work
 
-At the point of import or retest, the image is analyzed and scanned for vulnerabilities. Image labels are also retrieved from the image manifest. Snyk then checks whether:
+At the point of import or re-test, the image is analyzed and scanned for vulnerabilities. Image labels are also retrieved from the image manifest. Snyk then checks whether:
 
 * Image labels defining the Dockerfile location exist:
   * `org.opencontainers.image.source` - URL to the Project repo (mandatory)
   * `io.snyk.containers.image.dockerfile` - path to the Dockerfile, for example,  "/Dockerfile-prod" (optional)
-* The Dockerfile Project exists in the same Organization, with a matching repo (and path or /Dockerfile) from the image labels
+* The Dockerfile Project exists in the same Organization, with a matching repo (and path or /Dockerfile) from the image labels.
 
 If these conditions apply, Snyk automatically creates a link between the image and Dockerfile Projects.
 
 ## Automatic update and removal of links
 
-Links are automatically updated if the Dockerfile labels are updated and are targeting a new location. This can happen at the time of retest or when a recurring test runs.
+Links are automatically updated if the Dockerfile labels are updated and are targeting a new location. This can happen at the time of re-test or when a recurring test runs.
 
 Links are removed if either the image Project or Dockerfile Project is deleted.
 
