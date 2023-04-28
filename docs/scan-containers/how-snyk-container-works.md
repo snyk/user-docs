@@ -1,6 +1,6 @@
 # How Snyk Container works
 
-## Snyk scans container images
+## Container images
 
 Container images comprise a layered file system and associated metadata, as defined by the [Open Container Initiative](https://opencontainers.org) (OCI) specifications.
 
