@@ -33,5 +33,5 @@ Once repositories and images are imported, a confirmation appears in green at th
 Docker Hub integration works similar to our other integrations. To continue to monitor, fix and manage your projects, see the relevant pages in our docs.
 
 {% hint style="info" %}
-For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../getting-around-the-snyk-container-ui/detecting-application-vulnerabilities-in-container-images.md)for more information.
+For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../using-snyk-container/detecting-application-vulnerabilities-in-container-images.md)for more information.
 {% endhint %}

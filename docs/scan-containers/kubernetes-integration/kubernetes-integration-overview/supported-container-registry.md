@@ -40,4 +40,4 @@ Snyk Controller supports the following languages.
 
 ## Supported operating systems
 
-You can find an up-to-date list of supported operating systems in [Snyk Container: Supported operating system distributions](../../supported-operating-system-distributions.md).
+You can find an up-to-date list of supported operating systems in [Snyk Container: Supported operating system distributions](../../how-snyk-container-works/supported-operating-system-distributions.md).

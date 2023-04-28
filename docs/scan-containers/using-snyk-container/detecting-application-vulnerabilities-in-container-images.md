@@ -1,28 +1,30 @@
 # Detecting application vulnerabilities in container images
 
 {% hint style="info" %}
-For the Container Registry integration, the feature is supported for Node, Ruby, PHP, Python, Go binaries, and Java. For the CLI and Kubernetes, the feature is supported for Node, Go binaries, PHP, Python, and Java.
+For Container Registry integration, the feature is supported for Node, Ruby, PHP, Python, Go binaries, and Java.
+
+For the CLI and Kubernetes, the feature is supported for Node, PHP, Python, Go binaries, and Java.
 {% endhint %}
 
 {% hint style="warning" %}
-For applications projects created from images imported from **Container Registry integrations**, the applications will not be re-imported during recurring tests or manual re-test.
+For application Projects created from images imported from **Container Registry integrations**, the applications will not be re-imported during recurring tests or manual re-test.
 
-Instead, the applications dependencies that were found during the initial image import will be tested for new vulnerabilities.
+Instead, the application dependencies that were found during the initial image import will be tested for new vulnerabilities.
 
 This means that if new dependencies were introduced in an application within an image, they will not be detected by the recurring tests or manual re-test.
 
-In order to detect **new or updated** applications within images from container registries, the image will need to be re-imported to snyk.
+To detect **new or updated** applications within images from container registries, you must re-import the image to Snyk.
 
 For applications found in images imported from **the Kubernetes integration**, existing applications will be re-imported, but new apps added to the image will not be imported during recurring tests.
 
-In order to detect **new** applications within images from Kubernetes, the image will need to be re-imported to snyk.
+To detect **new** applications within images from Kubernetes, you must re-import the image to Snyk.
 {% endhint %}
 
-Snyk allows detection of vulnerabilities in your application dependencies from container images, as well as from the operating system, all in one single scan.
+Snyk allows detection of vulnerabilities in your application dependencies from container images, as well as from the operating system, all in one scan.
 
 After you integrate with a container registry and import your projects, Snyk scans your image and test for vulnerabilities.
 
-### Enable application vulnerabilities scan from container registries
+## Enable application vulnerabilities scan from container registries
 
 1. Navigate to your container registry integration settings
 2. Enable the _**Detect application vulnerabilities**_ capability and save the changes:
@@ -31,27 +33,27 @@ After you integrate with a container registry and import your projects, Snyk sca
 
 When you are scanning an image using a container registry or Kubernetes integration, the scan also uses the `--app-vulns` flag by default. You can opt out of the flag in the container registry only. Do so by disabling the ‘_detect application vulnerabilities_’ toggle in the integration settings.
 
-### Notes
+{% hint style="info" %}
+* For Java, when you use the flag, Snyk scans one level of nested jars by default.
+* For Python, Snyk supports Poetry and Pip (in all integration points).
+* For Go binaries, Snyk supports any kind of a Go binary built with Go module support.
+{% endhint %}
 
-1. For Java, when you use the flag, Snyk scans one level of nested jars by default.
-2. For Python, Snyk supports Poetry and Pip (in all integration points).
-3. For Go binaries, Snyk supports any kind of a Go binary built with Go module support.
+## Using Snyk Container CLI to detect vulnerabilities
 
-### Using CLI to detect vulnerabilities
-
-#### App Vulns Flag
+### App Vulns option
 
 In CLI versions 1.1090.0 (2023-01-24) and higher, Snyk scans for application dependencies in your image by default; you do not need to specify the `--app-vulns` flag.
 
 If you wish to opt out of application vulnerability scanning, you can do so by specifying the `--exclude-app-vulns` flag — which will omit the application vulnerabilities section from the results, mimicking the previous behavior. The `--exclude-app-vulns` flag is available in CLI version 1.1021.0 and above.
 
-#### Nested Jars Depth Flag
+### Nested Jars Depth option
 
 For Java applications, when `--app-vulns` is enabled, you can also use the `--nested-jars-depth=n` flag to set how many levels of nested jars Snyk will unpack. The implicit default is 1. When you specify 2, it means that Snyk unzips jars in jars; 3 means Snyk unzips jars in jars in jars, and so on.
 
 Users can use `--nested-jar-depth=0` to opt out of any scans they feel are unnecessary.
 
-### View vulnerabilities and licensing issues
+## View vulnerabilities and licensing issues
 
 After the feature is enabled, you can see:
 
@@ -64,7 +66,7 @@ With this feature enabled, you can also see nested manifest files detected in th
 
 ![](<../../.gitbook/assets/mceclip2 (1) (1) (1) (3) (3) (4) (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (  (2).png>)
 
-### Automated scanning
+## Automated scanning
 
 Snyk scans the image regularly based on your project’s settings, and updates you via email or Slack - based on your configuration - when any new vulnerabilities are identified in both the operating system and application dependencies.
 
@@ -72,7 +74,7 @@ For each project, you can choose the test frequency under its settings (the defa
 
 ![](<../../.gitbook/assets/mceclip3 (1).png>)
 
-**Supported container registries**
+### **Supported container registries**
 
 This is supported across the following container registries:
 
@@ -88,7 +90,7 @@ This is supported across the following container registries:
 * [Nexus](https://docs.snyk.io/products/snyk-container/image-scanning-library/nexus-image-scanningexsd)
 * [Quay](https://docs.snyk.io/products/snyk-container/image-scanning-library/quay-image-scanning)
 
-**Supported Integrations**
+### **Supported Integrations**
 
 The supported languages work on the following integrations:
 
