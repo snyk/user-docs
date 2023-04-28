@@ -366,7 +366,7 @@
   * [How Snyk Container works](scan-containers/how-snyk-container-works.md)
   * [Snyk Container - Supported operating system distributions](scan-containers/supported-operating-system-distributions.md)
   * [Getting started with Snyk Container](scan-containers/getting-started-snyk-container.md)
-  * [Understanding the Severity Levels of detected Linux vulnerabilities](scan-containers/getting-started-snyk-container/understanding-linux-vulnerability-severity.md)
+  * [Understanding the severity levels of detected Linux vulnerabilities](scan-containers/getting-started-snyk-container/understanding-linux-vulnerability-severity.md)
   * [Snyk CLI for container security](scan-containers/snyk-cli-for-container-security/README.md)
     * [Understanding Snyk Container CLI results](scan-containers/snyk-cli-for-container-security/understanding-snyk-container-cli-results.md)
     * [Advanced Snyk Container CLI usage](scan-containers/snyk-cli-for-container-security/advanced-snyk-container-cli-usage.md)

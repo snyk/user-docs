@@ -23,7 +23,7 @@ Severity levels indicate the assessed level of risk, as one of **C**ritical / **
 Severity levels also apply to license issues. See [Licenses](../../scan-application-code/snyk-open-source/licenses/).
 {% endhint %}
 
-### Severity levels and Priority Scores
+## Severity levels and Priority Scores
 
 Severity levels are one factor feeding into Snyk's Priority Score for each vulnerability, along with factors such as [Snyk’s Exploit Maturity](https://snyk.io/blog/whats-so-wild-about-exploits-in-the-wild-and-how-can-we-prioritize-accordingly/) and [Reachable Vulnerabilities](https://snyk.io/blog/optimizing-prioritization-with-deep-application-level-context/) information.
 
