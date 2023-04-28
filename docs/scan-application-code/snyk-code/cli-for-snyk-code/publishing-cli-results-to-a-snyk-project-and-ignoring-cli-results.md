@@ -23,7 +23,7 @@ snyk code test --report --project-name="PROJECT_NAME"
 
 Running the `snyk code test` command with the `--report` option as shown returns the results to the terminal window, along with a URL to the Snyk Code Project where the results have been published. Refer to the following screenshot.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt="Snyk code test results with --report option"><figcaption><p>Snyk code test results with --report option</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt="Snyk code test results with --report option"><figcaption><p>Snyk code test results with --report option</p></figcaption></figure>
 
 If a CLI-based Snyk Code Project does not yet exist for the value provided in the `--project-name` option, Snyk creates a new CLI-based project. If a CLI-based Project already exists, a new snapshot is created under the same Project
 
@@ -31,7 +31,7 @@ If a CLI-based Snyk Code Project does not yet exist for the value provided in th
 
 You can ignore issues from CLI results in the Web UI by using the ignore button:
 
-<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt="Ignoring issues in the Web UI"><figcaption><p>Ignoring issues in the Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="Ignoring issues in the Web UI"><figcaption><p>Ignoring issues in the Web UI</p></figcaption></figure>
 
 Issues that are ignored in the Web UI are ignored in CLI tests when you use the following command:
 

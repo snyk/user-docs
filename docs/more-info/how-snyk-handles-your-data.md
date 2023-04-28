@@ -50,7 +50,10 @@ Snyk knows how important it is for you to protect your data. Snyk products only 
 
 **Optional ADD-ONS (opt-in)**
 
-* For Reachable Vulnerabilities computation - Snyk stores your source code to facilitate the building of a call graph. Once the analysis completes, your code is removed from the Snyk system. Only the call graph and function names are maintained.
+Your account is subject to contract terms which might restrict your ability to enable these features. By enabling these features, you agree on behalf of your company to changes to your contract terms to allow these features, and you will be responsible for the use of these features based on your own circumstances.
+
+* For Go Modules full source code analysis feature - Snyk will access and store the contents of your git repository to facilitate the building of an accurate dependency graph. After our analysis is complete, your code is deleted from the Snyk system.
+* For Reachable Vulnerabilities feature - Snyk will access and store the contents of your git repository to facilitate the building of a call graph. Once the analysis completes, your code is deleted from the Snyk system. Only the call graph and function names are maintained.
 * For Lambda integration only - Snyk pulls a short term copy then destroys it as part of analysis.
 {% endtab %}
 
@@ -71,7 +74,7 @@ Snyk knows how important it is for you to protect your data. Snyk products only 
 {% tab title="Snyk Container" %}
 **Snyk Container**
 
-![Snyk Container](<../.gitbook/assets/image (201) (1) (1) (1).png>)
+![Snyk Container](<../.gitbook/assets/image (201) (1) (1) (1) (1).png>)
 
 * Snyk accesses and stores package versions, executable hashes and versions, operating system, container image metadata (for example, rootfs hashes, history), image ID.
 * Snyk accesses and stores information pertaining to the parent image - name, version, tag.
