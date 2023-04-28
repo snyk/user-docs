@@ -29,7 +29,7 @@ You can use environment variables to configure the Snyk CLI and set variables fo
 
 Use the `-d` option to output the debug logs.
 
-## Options for the code test subcommand
+## Options
 
 ### `--org=<ORG_ID>`
 
