@@ -1,9 +1,13 @@
-# Getting around the Snyk Container UI
+# Using Snyk Container
 
-The following pages help with understanding the user interface for Snyk Container.
+The following pages help with using Snyk Container.
 
-* [Container project grouping in Project tab](container-project-grouping-in-project-tab.md)
-* [Detecting application vulnerabilities in container images](detecting-application-vulnerabilities-in-container-images.md)
-* [Analysis and fixes for your images from the Snyk Web UI](analysis-and-remediation-for-your-images-from-the-snyk-app.md)
 * [Base image detection](base-image-detection.md)
 * [Image layer information](image-layer-information.md)
+* [Detecting application vulnerabilities in container images](detecting-application-vulnerabilities-in-container-images.md)
+* [Analysis and fixes for your images from the Snyk Web UI](analysis-and-remediation-for-your-images-from-the-snyk-app.md)
+* [Custom Base Image Recommendations](custom-base-image-recommendations.md)
+* [Custom Versioning Schema for Custom Base Images](custom-versioning-schema-for-custom-base-images.md)
+* [Container Project grouping in Project tab](container-project-grouping-in-project-tab.md)
+
+For additional information and details, see [How Snyk Container works](../how-snyk-container-works/).
