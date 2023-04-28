@@ -1,6 +1,6 @@
 # How Snyk Container works
 
-## Container images
+## Snyk tests container images
 
 Container images comprise a layered file system and associated metadata, as defined by the [Open Container Initiative](https://opencontainers.org) (OCI) specifications.
 
@@ -11,7 +11,7 @@ Container images often include several layers containing third-party software fr
 
 ## What Snyk Container detects
 
-When Snyk Container scans an image using any of the available integrations, Snyk first finds the software installed in the image, including:
+When Snyk Container tests an image using any of the available integrations, Snyk first finds the software installed in the image, including:
 
 * dpkg, rpm, and apk operating systems packages
 * Popular unmanaged software, that is, installed outside a package manager

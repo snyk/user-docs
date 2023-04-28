@@ -8,10 +8,9 @@ Learn more about [container security](https://snyk.io/learn/container-security/)
 
 ## Snyk Container functions
 
-Snyk Container:
+Snyk Container provides tools and integrations for quickly finding and fixing these vulnerabilities.
 
-* Provides tools and integrations for quickly finding and fixing these vulnerabilities.
-* Allows you to create images with security built-in from the start.
+This allows you to create images with security built-in from the start.
 
 ## Snyk Container integrations
 

@@ -1,8 +1,8 @@
 # Advanced Snyk Container CLI usage
 
-## Testing archives
+## Scanning archives
 
-In addition to testing images from a local Docker daemon or remote registry, Snyk can directly test or monitor a Docker or OCI archive.
+In addition to testing images from a local Docker daemon or remote registry, Snyk can directly scan or monitor a Docker or OCI archive.
 
 ```
 snyk container test docker-archive:archive.tar
@@ -11,13 +11,13 @@ snyk container test oci-archive:archive.tar
 
 ## Testing multi-platform images
 
-Some repositories represent multi-manifests, pointing to several different images depending on the operating system and architecture required. The Snyk CLI `container` command can be used to explicitly test an image for a specific platform:
+Some repositories represent multi-manifests, pointing to several different images depending on the operating system and architecture required. The Snyk CLI `container test` command can be used to explicitly test an image for a specific platform:
 
 ```
 snyk container test --platform=linux/arm64 debian
 ```
 
-The `--platform` flag should contain one of:
+The `--platform` option should contain one of the following:
 
 * linux/amd64
 * linux/arm64
@@ -30,7 +30,7 @@ The `--platform` flag should contain one of:
 
 ## Authenticating to a remote container registry
 
-When Docker is installed, the Snyk CLI `container` command uses any pre-configured registry authentication. If you are not using Docker you can pass the credentials on the command line:
+When Docker is installed, the Snyk CLI `container` commands use any pre-configured registry authentication. If you are not using Docker, you can pass the credentials on the command line:
 
 * Either use the following environment variables: `SNYK_REGISTRY_USERNAME` and `SNYK_REGISTRY_PASSWORD`
 * Or pass the username and password as follows:
@@ -39,29 +39,27 @@ When Docker is installed, the Snyk CLI `container` command uses any pre-configur
 snyk container test <repository>:<tag> --username= --password=
 ```
 
-Note that the options take precedence over the environment variables in the case both are passed.
+Note that the options take precedence over the environment variables when both are passed.
 
-## Common additional options
+## Additional commonly used CLI options
 
-Some useful CLI options include the following:
+CLI options that are used frequently include the following:
 
-| Option                       | Description                                                                                                                                                                                                                     |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `--json`                     | Print results in JSON format, useful for integrating with other tools                                                                                                                                                           |
-| `--sarif`                    | Return results in [SARIF](https://www.oasis-open.org/committees/tc\_home.php?wg\_abbrev=sarif) format, useful for integrating with other tools. Note this requires the test to be run with `--file` as well.                    |
-| `--exclude-base-image-vulns` | Do not show vulnerabilities introduced only by the base image. Available when using `snyk container test` only.                                                                                                                 |
-| `--severity-threshold`       | Report only vulnerabilities at the specified level or higher.                                                                                                                                                                   |
-| `--exclude-app-vulns`        | <p>Allow disabling scans for app vulnerabilities; in CLI versions 1.1090.0 (2023-01-24) and higher,  <code>app-vulns</code> is enabled by default.</p><p>In earlier releases, cannot be used with <code>--app-vulns</code>.</p> |
-| `--nested-jars-depth`        | When`--app-vulns` is enabled, use the `--nested-jars-depth=n` option to set how many levels of nested jars Snyk is to unpack.                                                                                                   |
-| `--fail-on`                  | Fail only when there are vulnerabilities that can be fixed.                                                                                                                                                                     |
+* `--json` (Useful for integrating with other tools)
+* `--sarif` (See [OASIS Static Analysis Results Interchange Format (SARIF)](https://www.oasis-open.org/committees/tc\_home.php?wg\_abbrev=sarif); useful for integrating with other tools; available with `container tes`t only)
+* `--exclude-base-image-vulns` (Available with `container test` only)
+* `--severity-threshold` (Available with `container test` only)
+* `--exclude-app-vulns`
+* `--nested-jars-depth`
+* `--fail-on` (Available with container test only)
 
-For more options, see the [Snyk CLI container help](../../snyk-cli/commands/#snyk-container) or display the help by running:
+For details and more options, see the [Snyk CLI containe](../../snyk-cli/commands/container.md)r help or display the help by running:
 
 ```
 snyk container --help
 ```
 
-## More information
+## More information about Snyk Container CLI
 
-* [Test images with the Snyk Container CLI](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security)
-* [Understand Snyk Container CLI results](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security/understanding-snyk-container-cli-results)
+* [Snyk CLI for container security](./)
+* [Understanding Snyk Container CLI results](understanding-snyk-container-cli-results.md)

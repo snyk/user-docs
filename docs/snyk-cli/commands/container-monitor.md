@@ -116,7 +116,7 @@ For more information see [Detecting application vulnerabilities in container ima
 
 ### `--exclude-app-vulns`
 
-Allow disabling scans for app vulnerabilities; in CLI versions 1.1090.0 (2023-01-24) and higher,  `app-vulns` is enabled by default.
+Allow disabling scans for app vulnerabilities; in CLI versions 1.1090.0 (2023-01-24) and higher, `app-vulns` is enabled by default.
 
 In earlier releases, cannot be used with `--app-vulns`.
 
@@ -124,7 +124,7 @@ For more information see [Detecting application vulnerabilities in container ima
 
 ### `--nested-jars-depth`
 
-When `app-vulns` is enabled, use the `--nested-jars-depth` option to set how many levels of nested jars Snyk is to unpack. Depth must be a number.
+When `app-vulns` is enabled, use the `--nested-jars-depth=n` option to set how many levels of nested jars Snyk is to unpack. Depth must be a number.
 
 ### `--exclude-base-image-vulns`
 
