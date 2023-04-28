@@ -410,7 +410,7 @@
       * [Viewing project details and test results](scan-containers/kubernetes-integration/kubernetes-integration-ui-explained/viewing-project-details-and-test-results.md)
       * [Snyk Priority Score and Kubernetes](scan-containers/kubernetes-integration/kubernetes-integration-ui-explained/snyk-priority-score-and-kubernetes.md)
     * [Kubernetes integration FAQ](scan-containers/kubernetes-integration/kubernetes-integration-faq.md)
-  * [Snyk Container for self-hosted container registries (with broker)](scan-containers/integrate-self-hosted-container-registries.md)
+  * [Snyk Container for self-hosted container registries (with Broker)](scan-containers/integrate-self-hosted-container-registries.md)
 * [Scan cloud deployments](scan-cloud-deployment/README.md)
   * [Supported providers - IaC and Cloud](scan-cloud-deployment/supported-providers-iac-and-cloud.md)
   * [Snyk Infrastructure as Code](scan-cloud-deployment/snyk-infrastructure-as-code/README.md)
