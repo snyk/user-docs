@@ -284,6 +284,43 @@ A go.mod file was not found in current directory or any parent directory.
 **Help Links:**
 
 
+### [SNYK-OS-GO-0003](#snyk-os-go-0003)
+#### OAuth re-authorization required
+
+As Snyk needs a temporary clone of your code to analyze its dependencies, your code is cloned on an isolated environment using Git.
+
+Your organization has enabled or enforced SAML SSO after you authorized Snyk to access your code, and a re-authentication is therefore required.
+
+The error you're seeing is usually reproducible by attempting to do a `git clone` of your repository with incorrectly configured credentials.
+In this case, please verify your authentication configuration with your Git cloud provider and try again.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Exit Code:** 
+
+**Help Links:**
+- [https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on#about-oauth-apps-github-apps-and-saml-sso](https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on#about-oauth-apps-github-apps-and-saml-sso)
+
+### [SNYK-OS-GO-0004](#snyk-os-go-0004)
+#### Your project repository is missing required files
+
+A part of generating the dependency graph requires Snyk to run `go list -deps -json` inside the project. If that operation for some reason fails, we're unable to continue, if we're to create a full dependency graph. 
+
+This error usually means that you either are missing some cleanup (e.g. `go mod tidy`) or that your project deployment process contains a code generation step (e.g. `protobuf` or the like) that Snyk does not know about.
+
+A way to quickly verify if this is the case, try and clone your project in a clean environment and run `go list -deps -json` and verify whether the operation fails or not.
+
+In case Snyk is not able to process your code successfully and we suggest instead inserting the Snyk CLI as a part of your deployment pipeline.
+
+**HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
+
+**Exit Code:** 
+
+**Help Links:**
+- [https://docs.snyk.io/snyk-cli](https://docs.snyk.io/snyk-cli)
+- [https://github.com/snyk/snyk-go-plugin](https://github.com/snyk/snyk-go-plugin)
+- [https://github.com/golang/go/blob/master/src/cmd/go/internal/list/list.go](https://github.com/golang/go/blob/master/src/cmd/go/internal/list/list.go)
+
 ---
 # Builds
 ### [SNYK-OS-8001](#snyk-os-8001)
@@ -948,4 +985,4 @@ This issue is unexpected, and the service should recover quickly. If not, please
 
 
 ---
-Generated at 2023-04-28T07:10:27.450Z
+Generated at 2023-05-01T10:32:00.859Z
