@@ -132,9 +132,9 @@ Exit codes for the `test` commands are all the same. See the exit codes in the f
 Additional CLI commands have exit codes as listed in the following help docs:
 
 * [`snyk monitor` exit codes](https://docs.snyk.io/snyk-cli/commands/container-monitor#exit-codes)
-* [`snyk container` monitor exit codes](https://docs.snyk.io/snyk-cli/commands/container-monitor#exit-codes)
+* [`snyk container monitor` exit codes](https://docs.snyk.io/snyk-cli/commands/container-monitor#exit-codes)
 * [`snyk iac describe` exit codes](https://docs.snyk.io/snyk-cli/commands/iac-describe#exit-codes)
-* [`snyk iac` update-exclude-policy exit codes](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy#exit-codes)
+* [`snyk iac update-exclude-policy` exit codes](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy#exit-codes)
 * [`snyk log4shell` exit codes](https://docs.snyk.io/snyk-cli/commands/log4shell#exit-codes)
 * [`snyk sbom` exit codes](https://docs.snyk.io/snyk-cli/commands/sbom#exit-codes)
 
@@ -200,6 +200,10 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--tags=<TAG>[,<TAG>]...>`: [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)
 
+## `snyk code test` and `snyk iac test` command option
+
+`--report`: [`code test`](https://docs.snyk.io/snyk-cli/commands/code-test),  [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
+
 ## `snyk container` command options
 
 `--file=<FILE_PATH>`: [container test](https://docs.snyk.io/snyk-cli/commands/container-test), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)
@@ -219,8 +223,6 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 `--password=<CONTAINER_REGISTRY_PASSWORD>`: [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [`container monitor`](https://docs.snyk.io/snyk-cli/commands/container-monitor)
 
 ## `snyk iac test` command options
-
-`--report`: [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
 `--scan=<TERRAFORM_PLAN_SCAN_MODE>`: [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
