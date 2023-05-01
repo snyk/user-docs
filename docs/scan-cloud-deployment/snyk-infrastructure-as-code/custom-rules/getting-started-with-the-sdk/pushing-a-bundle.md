@@ -10,7 +10,7 @@ snyk-iac-rules push -r docker.io/example/test bundle.tar.gz
 Make sure to log into your container registry first. For example, using Docker run `docker login` before running the `snyk-iac-rules push` command
 {% endhint %}
 
-We use the OCI registries that support the [OCI artifact specification](https://github.com/opencontainers/artifacts) and leverage [ORAS](https://github.com/deislabs/oras) to achieve that. Amongst our currently supported registries we have:
+We use the OCI registries that support the [OCI artifact specification](https://github.com/opencontainers/artifacts) and leverage [ORAS](https://github.com/deislabs/oras) to achieve that. Currently supported registries include
 
 * [Google Container Registry](https://cloud.google.com/container-registry)
 * [DockerHub](https://hub.docker.com)
@@ -21,12 +21,10 @@ We use the OCI registries that support the [OCI artifact specification](https://
 * [GitHub Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
 
 {% hint style="warning" %}
-We do not support insecure registries. The only protocol we support is HTTPS.
+Snyk does not support insecure registries. The only protocol we support is HTTPS.
 {% endhint %}
 
-And more to come.
-
-Once you have run the command, your custom rules bundle will be pushed to your OCI registry using the `latest` tag.
+After you have run the command, your custom rules bundle will be pushed to your OCI registry using the `latest` tag.
 
 You can also provide your own tag if you want to version the bundle:
 

@@ -4,23 +4,23 @@
 Where the examples show `bundle.tar.gz` you can replace this with your bundle name. For example,`bundle-v1.0.0.tar.gz` or `./bundles/team-bundle.tar.gz`
 {% endhint %}
 
-In your project’s folder, run the following command:
+In your Project folder, run the following command:
 
 ```
 snyk iac test --rules=bundle.tar.gz
 ```
 
-The configuration scan results now include issues from both the default Snyk rules, and your custom rules. Also see [Understanding configuration issues](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-configuration-scan-issues).
+The configuration scan results now include issues from both the default Snyk rules, and your custom rules. See al [Understanding configuration issues](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-configuration-scan-issues).
 
-### Troubleshooting
+**Troubleshooting a local custom rules bundle**
 
-Enable debug logs by running the command with a **-d** flag:
+Enable debug logs by running the command with a `-d` flag:
 
 ```
 snyk iac test --rules=bundle.tar.gz -d
 ```
 
-Some possible problems:
+Some possible problems include:
 
 * Providing an incorrect path to the bundle or a path to a non-existent bundle. Make sure the path passed to the `--rules` flag can be accessed from the current location.
 
@@ -34,4 +34,4 @@ We were unable to extract the rules provided at: ./invalid/location/bundle.tar.g
 We were unable run the test. Please run the command again with the `-d` flag and contact support@snyk.io with the contents of the output.
 ```
 
-If you have found a discrepancy that you cannot explain, [contact our Support team](https://support.snyk.io/hc/en-us/requests/new).
+If you have found a discrepancy that you cannot explain, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new).

@@ -1,6 +1,6 @@
 # Examples of custom rules
 
-### Example of a simple boolean rule
+## Example of a simple boolean rule
 
 {% hint style="info" %}
 You can find a full example of this guide in [this OPA Playground](https://play.openpolicyagent.org/p/SCYndBjWxh) and the [snyk/custom-rules-example](https://github.com/snyk/custom-rules-example) repository.
@@ -85,7 +85,7 @@ test_CUSTOM_RULE_1 {
 ```
 {% endcode %}
 
-### Example with logical AND
+## Example with logical AND
 
 Let’s try and extend the example above and update the rule to allow all cases that suffice two conditions:
 
@@ -172,7 +172,7 @@ test_CUSTOM_RULE_2 {
 ```
 {% endcode %}
 
-### Example with logical OR
+## Example with logical OR
 
 We can also rewrite the rule above by combining the `NOT` operator with the OR functionality.
 
@@ -275,7 +275,7 @@ test_CUSTOM_RULE_3 {
 ```
 {% endcode %}
 
-### Example with strings
+## Example with strings
 
 Let’s extend this further and add a third condition. Deny all resources that are missing either:
 
@@ -322,7 +322,7 @@ We recommend always validating that your rule is correct by [updating and runnin
 
 The test for this rule will look very similar to the ones from previous example and will also require its own fixture file.
 
-### Example with XOR
+## Example with XOR
 
 Now let’s say that we want to add more complexity and check the following:
 
@@ -432,7 +432,7 @@ We recommend always validating that your rule is correct by[ updating and runnin
 
 The test for this rule will look very similar to the ones from previous example and will also require its own fixture file.
 
-### Examples with grouped resources
+## Examples with grouped resources
 
 We can also iterate over many resources by adding them to an array of resources.
 
