@@ -1,11 +1,11 @@
 # Writing a rule
 
-### Rules in Rego
+## Rules in Rego
 
 Rules are written in Rego. When you are writing Rego, you do two things:
 
 1. Write **rules** that make policy decisions. A rule is a conditional assignment.
-2. organize rules into **policies**. A policy is a set of rules with a hierarchical name
+2. Organize rules into **policies**. A policy is a set of rules with a hierarchical name
 
 To learn more about the Policy Language, visit the official [OPA Policy Language Documentation Page](https://www.openpolicyagent.org/docs/latest/policy-language/).
 
@@ -13,7 +13,7 @@ To learn more about the Policy Language, visit the official [OPA Policy Language
 You can also use the [OPA Playground](https://play.openpolicyagent.org) to try out Rego, or run examples of this guide.
 {% endhint %}
 
-### How to generate a new rule
+## How to generate a new rule
 
 There are two options to get started:
 
@@ -34,7 +34,7 @@ There are two options to get started:
 You will have to write your own Rego testing framework if you don't use the `template`command.
 {% endhint %}
 
-### Structure of the rule
+## Structure of the rule
 
 In Rego, you can write statements that allow or deny a request, such as:\
 `allow { input.name == "alice" }` or `deny { input.name == "alice" }`
@@ -112,7 +112,7 @@ test_NEW_RULE {
 }
 ```
 
-### Example of a rule
+## Example of a rule
 
 {% hint style="info" %}
 For more examples, see[ Custom Rules Examples](examples.md).
@@ -142,7 +142,7 @@ deny[msg] {
 ```
 {% endcode %}
 
-### Limitations/Notes
+## Limitations and notes
 
 * As we compile Rego policies into Wasm modules, you can only use built-in functions that support Wasm. There is a table at the bottom of the [Policy Reference Documentation](https://www.openpolicyagent.org/docs/latest/policy-reference/) that can help you identify those.
 * A rule may be defined multiple times with the same name, either in a file, or in separate files under the same package, e.g:

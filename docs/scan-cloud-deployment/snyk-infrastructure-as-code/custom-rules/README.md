@@ -9,7 +9,7 @@ Snyk IaC includes a comprehensive list of security rules, covering AWS, Azure, G
 
 These rules aim to meet the majority of your needs on your first scan, but you may need to enforce additional security rules for your system, such as tagging standards.
 
-#### Creating additional Snyk IaC Custom Rules
+## Creating additional Snyk IaC Custom Rules
 
 The IaC SDK helps security teams define their own rules, to be run by the [Snyk CLI](../snyk-cli-for-infrastructure-as-code/) giving feedback to developers.
 
@@ -23,9 +23,9 @@ Initial instructions to get you started with the Snyk Infrastructure as Code (Ia
 * [How to integrate custom rules within a pipeline](integrating-iac-custom-rules-within-a-pipeline.md)
 * [SDK reference](sdk-reference.md)
 
-![End to end flow of writing your own custom rules to distributing and using them to scan files with the Snyk CLI](<../../../.gitbook/assets/image (14) (1) (1) (1).png>)
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1).png" alt="End to end flow of writing your own custom rules to distributing and using them to scan files with the Snyk CLI"><figcaption><p>End to end flow of writing your own custom rules to distributing and using them to scan files with the Snyk CLI</p></figcaption></figure>
 
-#### Snyk platform policies and Snyk IaC custom rules
+## Snyk platform policies and Snyk IaC custom rules
 
 {% hint style="info" %}
 Summary:
