@@ -87,12 +87,8 @@ Optional. Instruct the CLI to autodetect a package manager manifest file to use 
 
 ### Create an SPDX 2.3 JSON document for an unmanaged software project
 
-```bash
-$ snyk sbom --unmanaged --format=spdx2.3+json
-```
+`$ snyk sbom --unmanaged --format=spdx2.3+json`
 
 ### Create a CycloneDX XML document for a Maven project
 
-```
-$ snyk sbom --file=pom.xml --format=cyclonedx1.4+xml
-```
+`$ snyk sbom --file=pom.xml --format=cyclonedx1.4+xml`
