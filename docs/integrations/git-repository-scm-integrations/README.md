@@ -5,11 +5,11 @@ Snyk can integrate with the following Source Control Managers (SCMs) to help you
 * [GitHub](github-integration.md)
 * [GitHub Enterprise](github-enterprise-integration.md)
 * [GitHub Read-only Projects](github-read-only-projects.md)
-* [Bitbucket Cloud Personal Access Token (Legacy)](bitbucket-cloud-integration.md)
+* [Bitbucket Cloud Personal Access Token (Legacy)](bitbucket-cloud-legacy-integration.md)
 * [Bitbucket Cloud App](bitbucket-cloud-app-integration.md)
 * [Bitbucket Data Center/Server](bitbucket-data-center-server-integration.md)
 * [GitLab](gitlab-integration.md)
-* [Azure Repos](azure-repos-integration.md)
+* [Azure Repos](azure-repositories-integration.md)
 
 ## Are there any tips for integrating my Git repo with Snyk?
 

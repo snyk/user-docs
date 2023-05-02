@@ -33,7 +33,7 @@ The following are the **prerequisites** for configuring App roles:
     <figure><img src="../../../.gitbook/assets/image (2) (1) (2).png" alt="Create app role with details"><figcaption><p>Create app role with details</p></figcaption></figure>
 4.  In Azure AD, select your Enterprise Application.
 
-    <figure><img src="../../../.gitbook/assets/image (3) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Select Enterprise Application in Azure AD"><figcaption><p>Select Enterprise Application in Azure AD</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="Select Enterprise Application in Azure AD"><figcaption><p>Select Enterprise Application in Azure AD</p></figcaption></figure>
 5.  Select **Users and groups**; then **Add user/group**.\
     Search and select the users and groups to add.
 

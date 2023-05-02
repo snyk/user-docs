@@ -17,7 +17,7 @@ Next, select a Project in that list, to see details of the vulnerabilities found
 
 For example, for a **Code analysis** project scanned by Snyk Code:
 
-<figure><img src="../../.gitbook/assets/image (149) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Vulnerability example - Code analysis"><figcaption><p>Vulnerability example - Code analysis</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (149) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="Vulnerability example - Code analysis"><figcaption><p>Vulnerability example - Code analysis</p></figcaption></figure>
 
 See [View project information](../../manage-issues/introduction-to-snyk-projects/view-project-information.md) for more details.
 
@@ -88,7 +88,7 @@ Snyk uses the package manager of your application to build the dependency tree a
 
 <figure><img src="../../.gitbook/assets/image (119) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Dependencies for Open Source vulnerabilities"><figcaption><p>Dependencies for Open Source vulnerabilities</p></figcaption></figure>
 
-Click the file tree icon (![](<../../.gitbook/assets/image (11) (1) (1) (1) (2).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
+Click the file tree icon (![](<../../.gitbook/assets/image (11) (1) (1) (1) (2) (1) (1).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
 
 <figure><img src="../../.gitbook/assets/image23.png" alt="Dependency tree details"><figcaption><p>Dependency tree details</p></figcaption></figure>
 

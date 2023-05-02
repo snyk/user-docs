@@ -122,7 +122,7 @@ The Broker Client is [published](https://github.com/snyk/broker) as a set of Doc
 * [GitHub](../../integrations/git-repository-scm-integrations/github-integration.md) and [GitHub Enterprise](../../integrations/git-repository-scm-integrations/github-enterprise-integration.md) (Cloud and On-prem)
 * [GitLab](../../integrations/git-repository-scm-integrations/gitlab-integration.md) (Cloud and On-prem)
 * [Bitbucket Server / Data Center](../../integrations/git-repository-scm-integrations/bitbucket-data-center-server-integration.md) (On-prem)
-* [Azure Repos](../../integrations/git-repository-scm-integrations/azure-repos-integration.md) (Cloud and On-prem)
+* [Azure Repos](../../integrations/git-repository-scm-integrations/azure-repositories-integration.md) (Cloud and On-prem)
 
 In addition, Snyk Broker integrates with [Jira Server/Jira Data Center](../../integrations/notifications-ticketing-system-integrations/jira.md), [JFrog Artifactory](../../integrations/private-registry-integrations/artifactory-repository-setup.md), and [Nexus Repository Manager](../../integrations/private-registry-integrations/nexus-repo-manager-setup.md).
 

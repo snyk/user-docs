@@ -52,7 +52,7 @@ You can configure remote custom rules bundles on the Organizational level by nav
 You can configure remote cusotm rules bundles on the Group level by navigating to `Settings` > `Infrastructure as Code.`
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (161) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Enable remote custom rules bundles"><figcaption><p>Enable remote custom rules bundles</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (161) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="Enable remote custom rules bundles"><figcaption><p>Enable remote custom rules bundles</p></figcaption></figure>
 
 * Enable remote bundles configuration using the **Enable rules** toggle. Doing so loads the form to specify the Registry URL and tag as shown in this example:
 
