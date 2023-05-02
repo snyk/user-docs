@@ -14,7 +14,7 @@ When you use the Container Registry Agent, Snyk can integrate with private conta
 
 This page explains how to use the Container Registry Agent to integrate through Broker with supported open-source container registries as [listed](./#supported-container-registries) on this page. This method of integration is designed for users who require images to be scanned in their own environment, instead of inside the Snyk service.
 
-If you **do not require that images be scanned in your own environment**, you do not need to use the Container Registry Agent. You can **integrate with the supported container registries from the integrations page in your account**.
+If you **do not require that images be scanned in your own environment**, you do not need to use the Container Registry Agent. You can **integrate with the supported container registries from the integrations page in your account**. For details, see [Snyk Container - Integrations](../../../scan-containers/snyk-container-integrations/).
 
 ## **Components of the network-restricted container registries solution**
 
@@ -45,7 +45,7 @@ Using the Snyk Broker Container Registry Agent you can integrate Snyk with the f
 * GitLab Container Registry (type: gitlab-cr)
 
 {% hint style="info" %}
-GitHub Container registry and GitLab Container Registry do not follow docker v2 API; they do not have the /v2/\_catalog endpoint. Thus it is not possible to list images in repos and you must manually specify the images you wish to scan.
+GitHub Container registry and GitLab Container Registry do not follow Docker v2 API; they do not have the /v2/\_catalog endpoint. Thus it is not possible to list images in repos, and you must manually specify the images you wish to scan.
 {% endhint %}
 
 ## **Prerequisites for Container Registry Agent**
@@ -72,19 +72,19 @@ The system and software requirements to set up and run the Snyk Broker Container
 {% hint style="info" %}
 **Scaling to adjust scan capacity**
 
-With the listed configuration of 1 vCPU and 2GB RAM, scanning capacity would be approximately 160 images of \~350MB each in one run. You can scale this up based on your image sizes, and if you have a specific use case that does not allow scaling and does not fit the limitations, contact [Snyk Support](https://support.snyk.io/hc/en-us/).
+With the listed configuration of 1 vCPU and 2GB RAM, scanning capacity would be approximately 160 images of \~350MB each in one run. You can scale this up based on your image sizes. If you have a specific use case that does not allow scaling and does not fit the limitations, contact [Snyk Support](https://support.snyk.io/hc/en-us/).
 {% endhint %}
 
-## **Set up the remote connection**
+## **Set up the remote connection for Container Registry Agent**
 
-### **Configuring and running the Broker Client**
+### **Configuring and running the Broker Client for Container Registry Agent**
 
-You can pull the Broker Client image from Docker Hub using the link listed in the [prerequisites](./#prerequisites-for-container-registry-agent).
+To use the Broker Client with a Container Registry Agent deployment, run d`ocker pull snyk/broker:container-registry-agent` if you have not already done so as a [prerequisite](./#prerequisites-for-container-registry-agent).
 
-There are environment variables required to configure the Broker Client.
+There following environment variables are required to configure the Broker Client.
 
 {% hint style="info" %}
-For **DigitalOcean Container Registry**, **Google Cloud Container Registry**, **Google Artifact Registry**, and **Artifactory**, there are a few values to note. For **Elastic Container Registry**, additional setup is required. [Specifications](./#container-registry-specific-configurations) are provided.
+For **DigitalOcean Container Registry**, **Google Cloud Container Registry**, **Google Artifact Registry**, and **Artifactory**, there are a few values to note. For **Elastic Container Registry**, additional setup is required. [Specific configurations](./#container-registry-specific-configurations) are provided.
 {% endhint %}
 
 * `BROKER_TOKEN` - The Snyk Broker token, obtained from your Container registry integration provided by Snyk support.
