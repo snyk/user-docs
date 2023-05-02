@@ -23,7 +23,7 @@ Start by logging into the Google Workspace [admin area](https://admin.google.com
     <figure><img src="../../../.gitbook/assets/3 (2).png" alt="Name the SAML app"><figcaption><p>Name the SAML app</p></figcaption></figure>
 4.  Download the certificate and open it in your preferred text editor.
 
-    <figure><img src="../../../.gitbook/assets/4 (1) (1) (1).png" alt="Download signing certificate"><figcaption><p>Download signing certificate</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/4 (1) (1) (1) (1).png" alt="Download signing certificate"><figcaption><p>Download signing certificate</p></figcaption></figure>
 5.  Navigate to the Snyk portal, login and from the drop down at the top left select **GROUP OVERVIEW** and then the cog wheel (top right corner) to get to your group settings.
 
     <figure><img src="../../../.gitbook/assets/1 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Open group view in Snyk"><figcaption><p>Open group view in Snyk</p></figcaption></figure>

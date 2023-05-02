@@ -34,7 +34,7 @@ The **Security Issues** section shows the number of vulnerabilities, their type,
 
 The **Issues over time** graph shows the history of vulnerabilities in your Organization:
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (2) (1).png" alt="View issues over time"><figcaption><p>View issues over time</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (2).png" alt="View issues over time"><figcaption><p>View issues over time</p></figcaption></figure>
 
 This shows the number of overall vulnerabilities, and the number of Projects being scanned (the dotted line in the graph).
 
@@ -44,7 +44,7 @@ If you simply see more vulnerabilities in your codebase over time, this may not 
 
 For example, the total number of vulnerabilities is likely to rise when you add more Projects. The graph may display that linkage - when you see jumps in the total numbers of vulnerabilities, you may see corresponding jumps in the total numbers of Projects:
 
-<figure><img src="../../.gitbook/assets/image (116) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="More Projects, more issues"><figcaption><p>More Projects, more issues</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (116) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="More Projects, more issues"><figcaption><p>More Projects, more issues</p></figcaption></figure>
 
 #### Security metric: ratio of vulnerabilities to Projects
 
@@ -56,7 +56,7 @@ For example, if you double the number of Projects you scan, but only add 10% to 
 
 You can hover over a date to see the summary of “to this date” information at that point:
 
-<figure><img src="../../.gitbook/assets/image (150) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="View a snapshot summary"><figcaption><p>View a snapshot summary</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (150) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png" alt="View a snapshot summary"><figcaption><p>View a snapshot summary</p></figcaption></figure>
 
 This is especially useful when you see sudden changes in issue numbers on a specific day.
 

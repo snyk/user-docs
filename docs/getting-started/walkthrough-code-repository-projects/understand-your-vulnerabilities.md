@@ -86,9 +86,9 @@ See [Fix your first vulnerability](fix-your-first-vulnerability.md) for more det
 
 Snyk uses the package manager of your application to build the dependency tree and display it in the **Dependencies** tab of the project view:
 
-<figure><img src="../../.gitbook/assets/image (119) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Dependencies for Open Source vulnerabilities"><figcaption><p>Dependencies for Open Source vulnerabilities</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (119) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Dependencies for Open Source vulnerabilities"><figcaption><p>Dependencies for Open Source vulnerabilities</p></figcaption></figure>
 
-Click the file tree icon (![](<../../.gitbook/assets/image (11) (1) (1) (1).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
+Click the file tree icon (![](<../../.gitbook/assets/image (11) (1) (1) (1) (2).png>)) to build the dependency tree, showing which components introduce a vulnerability. This helps you understand how the dependency was introduced to the application:
 
 <figure><img src="../../.gitbook/assets/image23.png" alt="Dependency tree details"><figcaption><p>Dependency tree details</p></figcaption></figure>
 

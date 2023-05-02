@@ -4,12 +4,14 @@
 
 In this guide, we’ll look at how you can try a few scans to see the results.
 
-Snyk has a number of tools and processes that help secure your entire software development lifecycle. With Snyk, you can scan while you’re coding. You can also monitor code when you’re not working on it. Snyk also provides visibility into issues across your projects with a git repository integration. And Snyk can integrate into CI/CD through integrations, the CLI, or curated containers.
+Snyk has a number of tools and processes that help secure your entire software development lifecycle. With Snyk, you can validate your code while you are coding. You can also monitor code when you’re not working on it. Snyk also provides visibility into issues across your projects with a git repository integration. And Snyk can integrate into CI/CD through integrations, the CLI, or curated containers. It's quite common to have Snyk integrated into several points of your development process for enabling your developers, for visibility and for gating of your applications.
 
-For individuals and small teams, we recommend scanning in the local environment to get started.
+If this is your first time performing testing, or you are interested in the results for a single application while you're working on it, scanning in your local environment is a great place to start, and that will be covered in this guide.&#x20;
+
+If you have a set of applications you're responsible for, as an individual or a team, we recommend configuring the Git repository integration to start getting visibility of the issues on your repositories in a few clicks, this will be covered in the following Implementation and Getting Started guides for each plan.
 
 {% hint style="info" %}
-The tool that best serves your tech stack, environment, and workflow will depend on your individual circumstances. See the tech stack implementation guides for more details.
+The tool(s) that best serves your tech stack, environment, and workflow will depend on your individual circumstances. See the tech stack implementation guides for more details.
 {% endhint %}
 
 To learn more about choosing the integration points within the software development lifecycle that work best for you and your current level of security maturity, see [Ways to integrate Snyk at your company](https://training.snyk.io/courses/ways-to-use-snyk) course in Snyk Training.

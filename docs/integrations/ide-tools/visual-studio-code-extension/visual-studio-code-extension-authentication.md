@@ -11,7 +11,7 @@ To authenticate follow these steps:
     <img src="../../../.gitbook/assets/image (130) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 2.  Click **Connect VS Code with Snyk**. The extension relies on the Snyk authentication API and asks you to authenticate your machine against the Snyk web application:
 
-    <img src="../../../.gitbook/assets/image (105) (1) (1) (1) (1).png" alt="" data-size="original">
+    <img src="../../../.gitbook/assets/image (105) (1) (1) (1) (5).png" alt="" data-size="original">
 3. Click **Authenticate**.
 4.  After successful authentication, view the confirmation message.
 
@@ -29,7 +29,7 @@ To re-authenticate with a different account, follow these steps:
 
 Or you run `Snyk: Set Token` command and set your token in the text field manually.
 
-![Set token manually](<../../../.gitbook/assets/image (224) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Set token manually](<../../../.gitbook/assets/image (224) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
 
 ## Requirements for Linux and Unix
 
