@@ -158,13 +158,13 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--dev`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--org=<ORG_ID>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`code test`](https://docs.snyk.io/snyk-cli/commands/code-test), [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [container monitor](https://docs.snyk.io/snyk-cli/commands/container-monitor), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac/iac-test), [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac/iac-describe)
+`--org=<ORG_ID>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`code test`](https://docs.snyk.io/snyk-cli/commands/code-test), [`container test`](https://docs.snyk.io/snyk-cli/commands/container-test), [container monitor](https://docs.snyk.io/snyk-cli/commands/container-monitor), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac/iac-test), [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe), [`iac capture`](https://docs.snyk.io/snyk-cli/commands/iac-capture), [`sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
 `--file=<FILE>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
 `--package-manager=<PACKAGE_MANAGER_NAME>`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor)
 
-`--unmanaged:` [test](commands/test.md)`,` [monitor](commands/monitor.md). See also [Options for scanning using `--unmanaged`](https://docs.snyk.io/snyk-cli/cli-reference#options-for-scanning-using-unmanaged).
+`--unmanaged:` [test](commands/test.md)`,` [monitor](commands/monitor.md). See also [Options for scanning using `--unmanaged`](https://docs.snyk.io/snyk-cli/cli-reference#options-for-scanning-using-unmanaged) and the [`sbom`](https://docs.snyk.io/snyk-cli/commands/sbom) command help for another use of this option.
 
 `--ignore-policy`: [`test`](https://docs.snyk.io/snyk-cli/commands/test), [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor), [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test), [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
@@ -232,6 +232,12 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 `--var-file=<PATH_TO_VARIABLE_FILE>`: [`iac test`](https://docs.snyk.io/snyk-cli/commands/iac-test)
 
+## `snyk iac capture` command options
+
+`--stdin`: [`iac capture`](https://docs.snyk.io/snyk-cli/commands/iac-capture)
+
+`PATH`: [`iac capture`](https://docs.snyk.io/snyk-cli/commands/iac-capture)
+
 ## `snyk iac describe` command options
 
 `--from=<STATE>[,<STATE>...]`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
@@ -287,6 +293,14 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 `--reason=<REASON>`: [`ignore`](https://docs.snyk.io/snyk-cli/commands/ignore)
 
 `--path=<PATH_TO_RESOURCE>`: [`ignore`](https://docs.snyk.io/snyk-cli/commands/ignore)
+
+## `snyk sbom` command options
+
+`--format=<cyclonedx1.4+json|cyclonedx1.4+xml|spdx2.3+json>`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
+
+`[--file=] or [--f=]`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
+
+`[<TARGET_DIRECTORY>]`: [`snyk sbom`](https://docs.snyk.io/snyk-cli/commands/sbom)
 
 ## Option for Maven projects
 
