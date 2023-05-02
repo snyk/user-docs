@@ -220,7 +220,7 @@ This error usually means that you either are missing some cleanup (e.g. `go mod 
 
 A way to quickly verify if this is the case, try and clone your project in a clean environment and run `go list -deps -json` and verify whether the operation fails or not.
 
-In case Snyk is not able to process your code successfully and we suggest instead inserting the Snyk CLI as a part of your deployment pipeline.
+In this case Snyk is not able to process your code successfully and we suggest instead inserting the Snyk CLI as a part of your deployment pipeline.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -687,4 +687,4 @@ This issue is unexpected, and the service should recover quickly. If not, please
 
 
 ---
-Generated at 2023-05-02T16:18:38.638Z
+Generated at 2023-05-02T23:43:03.873Z
