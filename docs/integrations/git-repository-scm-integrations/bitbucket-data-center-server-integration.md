@@ -1,4 +1,4 @@
-# Bitbucket Data Center/Server
+# Bitbucket Data Center/Server integration
 
 Snyk's Bitbucket Data Center / Server integration allows you to continuously perform security scanning across all the integrated repositories, detect vulnerabilities in your open source components, and use automated fixing. This integration supports Bitbucket Data Center / Server versions 4.0 and above.
 
@@ -16,9 +16,9 @@ _Need a little help from your friends?_ Check out the [Snyk and Bitbucket best p
 2. In Snyk, go to the **Integrations** page and click on **Bitbucket Server** card.
 3. Enter your Bitbucket DC/Server URL, and the username and password for the service account you created. Alternatively, you can create a [personal access token](https://confluence.atlassian.com/bitbucketserver075/personal-access-tokens-1018784848.html) and use it instead of a password.
 4. **Save** your changes.\
-   Snyk connects to your Bitbucket DC/Server instance. When the connection succeeds, the following indications appear:
+   Snyk connects to your Bitbucket DC/Server instance. When the connection succeeds, a confirmation message appears on your integrations screen.
 
-![](<../../.gitbook/assets/bitbucket\_server-18july2022 (2).png>)
+### Importing Projects
 
 To select the repositories for Snyk to monitor:
 
@@ -58,9 +58,9 @@ The example below presents a fix Pull Request opened by Snyk.
 To review and adjust the automatic fix pull request settings:
 
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Server**, and click **Edit Settings**.
-2. Scroll to the **Automatic fix pull requests** section and configure the relevant options.
+2. Scroll to the **Automatic fix PRs** section and configure the relevant options.
 
-![](../../.gitbook/assets/bitbucket\_server-autofixprs\_18july2022.png)
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-02 at 11.19.09.png" alt=""><figcaption><p>Automatic fix PR settings </p></figcaption></figure>
 
 {% hint style="info" %}
 Snyk pull requests are automatically assigned to the default reviewer set in your Bitbucket Server/Data Center account.
@@ -72,9 +72,9 @@ Click for more info on [Snyk automated pull requests](https://docs.snyk.io/produ
 
 ### **Pull request tests**
 
-Snyk tests any newly created pull request in your repositories for security vulnerabilities, and sends a build check to Bitbucket DC/Server. You can to see whether the pull request introduces new security issues, directly from Bitbucket DC/Server.
+Snyk tests any newly created pull request in your repositories for security vulnerabilities, and sends a build check to Bitbucket DC/Server. You can see whether the pull request introduces new security issues, directly from Bitbucket DC/Server.
 
-The example below presents a Snyk pull request build check on the Bitbucket DC/Server **Pull Request** page\*\*.\*\*
+The example below presents a Snyk pull request build check on the Bitbucket DC/Server **Pull Request** page.
 
 ![](../../.gitbook/assets/888.png)
 
@@ -83,7 +83,7 @@ To review and adjust the pull request tests settings:
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Server** , and click **Edit Settings**.
 2. Scroll to **Default Snyk test for pull requests > Open Source Security & Licenses**, and configure the relevant options.
 
-![](../../.gitbook/assets/bbs\_default-pr-test\_18july2022.png)
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-02 at 11.21.53.png" alt="Configure PR Checks for your integration"><figcaption><p>Configure PR Checks for your integration</p></figcaption></figure>
 
 ## Required permissions scope for the Bitbucket DC/Server integration
 
@@ -105,12 +105,12 @@ To disable this integration, in <img src="../../.gitbook/assets/cog_icon.png" al
 1. In your list of integrations, select the Bitbucket integration you want deactivate and click **Edit settings** to open a page with the current status of your integration.\
    \
    The page includes sections that are specific to each integration, where you can manage your credentials, API key, Service Principal, or connection details.
-2. Scroll to the relevant section and click **Disconnect.**
+2. Scroll to the relevant section and click **Remove Bitbucket Server.**
 
-![](../../.gitbook/assets/101010.png)
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-02 at 11.23.45.png" alt="Disconnect your integration" width="563"><figcaption><p>Disconnect your integration</p></figcaption></figure>
 
 {% hint style="warning" %}
 **WARNING**\
-\*\*\*\*When you disconnect Snyk from your repository projects, your credentials are removed from Snyk and any integration-specific projects that Snyk is monitoring are deactivated in Snyk.\
+When you disconnect Snyk from your repository projects, your credentials are removed from Snyk and any integration-specific projects that Snyk is monitoring are deactivated in Snyk.\
 If you choose to re-enable this integration later, you'll need to re-enter your credentials and activate your projects.
 {% endhint %}
