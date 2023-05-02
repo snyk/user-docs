@@ -16,7 +16,7 @@ To start working with Snyk Code either via the Web UI, CLI, IDE, or API, the **S
 
 3\. In the **Enable Snyk Code** section, change the setting to **Enabled**:
 
-<figure><img src="../../../../.gitbook/assets/image (240).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (358).png" alt=""><figcaption></figcaption></figure>
 
 4\. Click **Save changes**.\
 \
