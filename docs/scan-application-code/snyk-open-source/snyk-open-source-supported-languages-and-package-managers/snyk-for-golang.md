@@ -77,7 +77,7 @@ Full source code analysis for Go Modules is currently in [Beta](../../../more-in
 
 To build the most accurate dependency tree for Go Modules Projects imported from Git, Snyk needs to access all the files in your repository.
 
-This enables Snyk to see the `require` statements in your `.go` source files, and determine which specific packages are used in your application. Without this access, Snyk will include all packages from the modules listed in your `go.mod` file.
+This enables Snyk to see the `import` statements in your `.go` source files, and determine which specific packages are used in your application. Without this access, Snyk will include all packages from the modules listed in your `go.mod` file.
 
 To enable full source code analysis, adjust your settings as follows:
 

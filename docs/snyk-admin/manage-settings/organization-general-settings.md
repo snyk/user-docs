@@ -36,7 +36,7 @@ This ID uniquely identifies this Organization; required if you use the [Snyk API
 
 Use these functions to define Organization-wide ignore settings.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt="Configure ignore settings for an Organization"><figcaption><p>Configure ignore settings for an Organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt="Configure ignore settings for an Organization"><figcaption><p>Configure ignore settings for an Organization</p></figcaption></figure>
 
 See **Configure Ignore settings** in the [Ignore issues](../../manage-issues/issue-management/ignore-issues.md#configure-ignore-settings) documentation for more details.
 

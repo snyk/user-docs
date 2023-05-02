@@ -16,7 +16,7 @@ This feature is available in Enterprise plans. See [pricing plans](https://snyk.
 
 4\. The **Integration ID** is created for the Kubernetes integration. This **Integration ID** is needed during the Snyk Controller installation
 
-![](<../../../.gitbook/assets/image (111) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png>)
+![](<../../../.gitbook/assets/image (111) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 5\. Create a [**Group** or **Org Service Account Token**](../../../snyk-admin/service-accounts.md). This **Service Account Token** is needed during the Snyk Controller installation
 
