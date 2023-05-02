@@ -11,10 +11,6 @@ The service has received too many requests and will be throttled.
 
 **HTTP Status:** [429](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-0002](#snyk-0002)
 #### Not implemented
@@ -22,10 +18,6 @@ The service has received too many requests and will be throttled.
 The server either does not recognize the request method, or it lacks the ability to fulfil the request.
 
 **HTTP Status:** [501](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/501)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-0003](#snyk-0003)
@@ -35,10 +27,6 @@ The server cannot or will not process the request due to an apparent client erro
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-004](#snyk-004)
 #### Timeout error
@@ -46,10 +34,6 @@ The server cannot or will not process the request due to an apparent client erro
 The server did not receive a timely response from the upstream server.
 
 **HTTP Status:** [504](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/504)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-005](#snyk-005)
@@ -59,10 +43,6 @@ Authentication failed or has not been provided.
 
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-9999](#snyk-9999)
 #### Server error
@@ -70,10 +50,6 @@ Authentication failed or has not been provided.
 An unexpected server error was encountered.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ---
@@ -85,10 +61,6 @@ The request sent to the server is invalid or corrupt.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OPENAPI-002](#snyk-openapi-002)
 #### Forbidden
@@ -96,10 +68,6 @@ The request sent to the server is invalid or corrupt.
 Access to the requested resource is forbidden.
 
 **HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OPENAPI-003](#snyk-openapi-003)
@@ -109,10 +77,6 @@ The server cannot provide a response which matches the provided accept headers.
 
 **HTTP Status:** [406](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OPENAPI-004](#snyk-openapi-004)
 #### Not found
@@ -120,10 +84,6 @@ The server cannot provide a response which matches the provided accept headers.
 The server cannot find the requested resource.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OPENAPI-005](#snyk-openapi-005)
@@ -133,10 +93,6 @@ The endpoint does not support the request method.
 
 **HTTP Status:** [405](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OPENAPI-006](#snyk-openapi-006)
 #### Request entity too large
@@ -144,10 +100,6 @@ The endpoint does not support the request method.
 The request entity exceeds server limitations.
 
 **HTTP Status:** [413](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/413)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OPENAPI-007](#snyk-openapi-007)
@@ -157,10 +109,6 @@ The request lacks authentication credentials for the requested resource.
 
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OPENAPI-008](#snyk-openapi-008)
 #### Unsupported media type
@@ -168,10 +116,6 @@ The request lacks authentication credentials for the requested resource.
 The media format of the request is not supported.
 
 **HTTP Status:** [415](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/415)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ---
@@ -183,10 +127,8 @@ The language or package manager is not supported.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** 
-
 **Help Links:**
-- [https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support)
+  - [https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support)
 
 ### [SNYK-OS-0002](#snyk-os-0002)
 #### Unable to parse manifest file
@@ -194,10 +136,6 @@ The language or package manager is not supported.
 The provided manifest file could not be parsed as it has invalid syntax or does not match the expected schema.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OS-0003](#snyk-os-0003)
@@ -207,10 +145,6 @@ Some of the dependencies that are expected to be in the lock file are missing - 
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OS-0004](#snyk-os-0004)
 #### Unable to parse lock file
@@ -218,10 +152,6 @@ Some of the dependencies that are expected to be in the lock file are missing - 
 The provided lock file could not be parsed as it has invalid syntax or does not match the expected schema.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OS-0005](#snyk-os-0005)
@@ -231,10 +161,8 @@ Dependency version could not be resolved.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
-**Exit Code:** 
-
 **Help Links:**
-- [https://support.snyk.io/hc/en-us/articles/360001373178-Could-not-determine-version-for-dependencies](https://support.snyk.io/hc/en-us/articles/360001373178-Could-not-determine-version-for-dependencies)
+  - [https://support.snyk.io/hc/en-us/articles/360001373178-Could-not-determine-version-for-dependencies](https://support.snyk.io/hc/en-us/articles/360001373178-Could-not-determine-version-for-dependencies)
 
 ### [SNYK-OS-0006](#snyk-os-0006)
 #### Missing required elements in payload
@@ -242,10 +170,6 @@ Dependency version could not be resolved.
 Elements required to serve this request was not found in the payload. See error details for specifics.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OS-0007](#snyk-os-0007)
@@ -255,10 +179,6 @@ Found files that are not supported by this dependency service.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OS-GO-0001](#snyk-os-go-0001)
 #### Failed to access private module
@@ -267,10 +187,6 @@ Your go.mod file contained private modules that Snyk was unable to access.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OS-GO-0002](#snyk-os-go-0002)
 #### No go mod file found
@@ -278,10 +194,6 @@ Your go.mod file contained private modules that Snyk was unable to access.
 A go.mod file was not found in current directory or any parent directory.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OS-GO-0003](#snyk-os-go-0003)
@@ -296,10 +208,8 @@ In this case, please verify your authentication configuration with your Git clou
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
-**Exit Code:** 
-
 **Help Links:**
-- [https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on#about-oauth-apps-github-apps-and-saml-sso](https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on#about-oauth-apps-github-apps-and-saml-sso)
+  - [https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on#about-oauth-apps-github-apps-and-saml-sso](https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/about-authentication-with-saml-single-sign-on#about-oauth-apps-github-apps-and-saml-sso)
 
 ### [SNYK-OS-GO-0004](#snyk-os-go-0004)
 #### Your project repository is missing required files
@@ -314,12 +224,10 @@ In case Snyk is not able to process your code successfully and we suggest instea
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
-**Exit Code:** 
-
 **Help Links:**
-- [https://docs.snyk.io/snyk-cli](https://docs.snyk.io/snyk-cli)
-- [https://github.com/snyk/snyk-go-plugin](https://github.com/snyk/snyk-go-plugin)
-- [https://github.com/golang/go/blob/master/src/cmd/go/internal/list/list.go](https://github.com/golang/go/blob/master/src/cmd/go/internal/list/list.go)
+  - [https://docs.snyk.io/snyk-cli](https://docs.snyk.io/snyk-cli)
+  - [https://github.com/snyk/snyk-go-plugin](https://github.com/snyk/snyk-go-plugin)
+  - [https://github.com/golang/go/blob/master/src/cmd/go/internal/list/list.go](https://github.com/golang/go/blob/master/src/cmd/go/internal/list/list.go)
 
 ---
 # Builds
@@ -330,10 +238,8 @@ The provided request payload is not valid for the selected ecosystem. Please rev
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** 
-
 **Help Links:**
-- [https://apidocs.snyk.io/](https://apidocs.snyk.io/)
+  - [https://apidocs.snyk.io/](https://apidocs.snyk.io/)
 
 ### [SNYK-OS-8002](#snyk-os-8002)
 #### Build environment not found
@@ -341,10 +247,6 @@ The provided request payload is not valid for the selected ecosystem. Please rev
 The build environment for the provided context could not be found. Please ensure you have created the build environment first.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ---
@@ -356,10 +258,6 @@ Apologies, unfortunately an unexpected error has occurred. Please try again shor
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OS-9001](#snyk-os-9001)
 #### Error while getting dependency graph
@@ -367,10 +265,6 @@ Apologies, unfortunately an unexpected error has occurred. Please try again shor
 Apologies, unfortunately an unexpected error has occurred. Please try again shortly. If the error persists please contact the Snyk support team.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OS-9002](#snyk-os-9002)
@@ -380,10 +274,6 @@ Apologies, unfortunately an unexpected error has occurred. Please try again shor
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OS-9003](#snyk-os-9003)
 #### Not Found
@@ -391,10 +281,6 @@ Apologies, unfortunately an unexpected error has occurred. Please try again shor
 This is either a Snyk Code or Snyk Infrastructure as Code project. We don’t currently provide an SBOM for these project types.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OS-9004](#snyk-os-9004)
@@ -404,10 +290,6 @@ Unsupported Snyk project type.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OS-9005](#snyk-os-9005)
 #### Unsuccessful request
@@ -415,10 +297,6 @@ Unsupported Snyk project type.
 Unsuccessful dep-graph request.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OS-9006](#snyk-os-9006)
@@ -428,10 +306,6 @@ Missing API token.
 
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OS-9007](#snyk-os-9007)
 #### The body of the request can not be empty
@@ -440,10 +314,6 @@ The body of the request is empty.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OS-9008](#snyk-os-9008)
 #### The provided depgraph in the body is invalid
@@ -451,10 +321,6 @@ The body of the request is empty.
 The provided dephgraph in the body is invalid.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ---
@@ -466,10 +332,6 @@ The credentials that have been provided could not be authorized with the upstrea
 
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OS-9102](#snyk-os-9102)
 #### Insufficient Privileges
@@ -477,10 +339,6 @@ The credentials that have been provided could not be authorized with the upstrea
 The access token that has been provided has insufficient privileges to complete the requested operation with the upstream service.
 
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OS-9103](#snyk-os-9103)
@@ -490,10 +348,6 @@ The credentials provided do to match the expected format.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OS-9104](#snyk-os-9104)
 #### Invalid Token
@@ -501,10 +355,6 @@ The credentials provided do to match the expected format.
 The workspace token provided is invalid.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OS-9105](#snyk-os-9105)
@@ -514,10 +364,6 @@ The request is missing the access token.
 
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OS-9106](#snyk-os-9106)
 #### Unauthorized Request
@@ -525,10 +371,6 @@ The request is missing the access token.
 The provided token could not be authorized.
 
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OS-9201](#snyk-os-9201)
@@ -538,10 +380,6 @@ The requested target could not be found. Please ensure the target details are co
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OS-9202](#snyk-os-9202)
 #### Invalid Target
@@ -549,10 +387,6 @@ The requested target could not be found. Please ensure the target details are co
 The target information that has been provided is in an invalid format.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OS-9301](#snyk-os-9301)
@@ -562,10 +396,6 @@ The requested file is too large to be transferred.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OS-9302](#snyk-os-9302)
 #### File Not Found
@@ -573,10 +403,6 @@ The requested file is too large to be transferred.
 The requested file could not be found. Please ensure the file path exists in the provided target.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OS-9901](#snyk-os-9901)
@@ -586,10 +412,6 @@ The upstream service has received too many requests and will be throttled.
 
 **HTTP Status:** [429](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OS-9902](#snyk-os-9902)
 #### Service Unavailable
@@ -597,10 +419,6 @@ The upstream service has received too many requests and will be throttled.
 The upstream service is unavailable.
 
 **HTTP Status:** [502](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ---
@@ -612,11 +430,9 @@ The upstream Maven search service is not available.
 
 **HTTP Status:** [503](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)
 
-**Exit Code:** 
-
 **Help Links:**
-- [https://search.maven.org](https://search.maven.org)
-- [https://status.maven.org](https://status.maven.org)
+  - [https://search.maven.org](https://search.maven.org)
+  - [https://status.maven.org](https://status.maven.org)
 
 ### [SNYK-OSJVM-002](#snyk-osjvm-002)
 #### SHA1 Not Found
@@ -625,10 +441,8 @@ Unable to find the coordinates for the provided SHA1.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
-**Exit Code:** 
-
 **Help Links:**
-- [https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files)
+  - [https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files](https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files)
 
 ---
 # [PURL Vulnerabilities](https://docs.snyk.io/introducing-snyk/getting-started-snyk-intel-vuln-db-access#about-the-snyk-vulnerability-database)
@@ -639,10 +453,6 @@ You likely don’t have access to the Beta. To get access, you can request acces
 
 **HTTP Status:** [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OSSI-1050](#snyk-ossi-1050)
 #### Authorization request failure
@@ -650,10 +460,6 @@ You likely don’t have access to the Beta. To get access, you can request acces
 Unexpected error when authenticating. Please try again, and if you continue to experience issues please contact support.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OSSI-2010](#snyk-ossi-2010)
@@ -663,10 +469,8 @@ Please make sure that the purl you’ve provided is valid. Please see the Packag
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** 
-
 **Help Links:**
-- [https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst](https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst)
+  - [https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst](https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst)
 
 ### [SNYK-OSSI-2011](#snyk-ossi-2011)
 #### Ensure you specify a namespace in the purl and then try again
@@ -675,10 +479,8 @@ You have requested a package type which requires a namespace (eg. maven group id
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** 
-
 **Help Links:**
-- [https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst](https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst)
+  - [https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst](https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst)
 
 ### [SNYK-OSSI-2020](#snyk-ossi-2020)
 #### Ecosystem is not supported
@@ -686,10 +488,6 @@ You have requested a package type which requires a namespace (eg. maven group id
 Ensure that the package type is a supported type.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OSSI-2021](#snyk-ossi-2021)
@@ -699,10 +497,6 @@ Currently we require a list of components of the package url specification. The 
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OSSI-2022](#snyk-ossi-2022)
 #### You have submitted a purl with components which are not supported
@@ -710,10 +504,6 @@ Currently we require a list of components of the package url specification. The 
 Please remove the component which is not supported, and try to make the request again. The endpoint only accepts particular components.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OSSI-2030](#snyk-ossi-2030)
@@ -723,10 +513,6 @@ The package you’ve specified in the purl can not be found in our vulnerability
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OSSI-2031](#snyk-ossi-2031)
 #### Vulnerability service is currently not available
@@ -734,10 +520,6 @@ The package you’ve specified in the purl can not be found in our vulnerability
 This issue is unexpected, and the service should recover quickly. If not, please contact support.
 
 **HTTP Status:** [503](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OSSI-2032](#snyk-ossi-2032)
@@ -747,10 +529,6 @@ An unexpected error occurred. Please try again, and if you continue to experienc
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OSSI-2033](#snyk-ossi-2033)
 #### This issue is unexpected and the service should recover quickly if not please contact support
@@ -758,10 +536,6 @@ An unexpected error occurred. Please try again, and if you continue to experienc
 An unexpected error occurred with the vulnerability service. Please try again, and if you continue to experience issues please contact support.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OSSI-2040](#snyk-ossi-2040)
@@ -771,10 +545,6 @@ This issue is unexpected, and the service should recover quickly. If not, please
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OSSI-2041](#snyk-ossi-2041)
 #### Invalid pagination parameters
@@ -782,10 +552,6 @@ This issue is unexpected, and the service should recover quickly. If not, please
 Please ensure the supplied pagination limit is > 1 and <= 1000, and that the offset is >= 0.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OSSI-2042](#snyk-ossi-2042)
@@ -795,10 +561,6 @@ The number of purls sent in the request exceeds the limit set by the service.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OSSI-2043](#snyk-ossi-2043)
 #### Number of issues exceeds limit
@@ -806,10 +568,6 @@ The number of purls sent in the request exceeds the limit set by the service.
 The number of issues found for the provided purls exceeds the limit defined by the API. You may attempt to resolve this by reducing the number of purls you send in a single request.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OSSI-2044](#snyk-ossi-2044)
@@ -819,10 +577,6 @@ The given Package URL does not have a required distro qualifier.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OSSI-2045](#snyk-ossi-2045)
 #### Unsupported Debian distro
@@ -830,10 +584,6 @@ The given Package URL does not have a required distro qualifier.
 This Debian distro is not currently supported.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OSSI-2046](#snyk-ossi-2046)
@@ -843,10 +593,6 @@ The given Package URL does not have a required namespace.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OSSI-2047](#snyk-ossi-2047)
 #### Vendor not supported
@@ -854,10 +600,6 @@ The given Package URL does not have a required namespace.
 The given Package URL does not contain a supported vendor.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ---
@@ -869,10 +611,6 @@ Please check the body of your request and try again.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OSSI-OSPI-1002](#snyk-ossi-ospi-1002)
 #### Unable to return valid API response
@@ -880,10 +618,6 @@ Please check the body of your request and try again.
 This should resolve, however please contact support if you continue to experience issues.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OSSI-OSPI-2001](#snyk-ossi-ospi-2001)
@@ -893,10 +627,6 @@ This should resolve, however please contact support if you continue to experienc
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OSSI-OSPI-3001](#snyk-ossi-ospi-3001)
 #### Failed to store issue data
@@ -905,10 +635,6 @@ Please check your inputs and try again. If you continue to experience issues ple
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OSSI-OSPI-4001](#snyk-ossi-ospi-4001)
 #### Internal server error
@@ -916,10 +642,6 @@ Please check your inputs and try again. If you continue to experience issues ple
 This issue is unexpected, and the service should recover quickly. If not, please contact support.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ---
@@ -931,10 +653,6 @@ Please check the body of your request and try again.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OSSI-OSPSS-1002](#snyk-ossi-ospss-1002)
 #### Unable to return valid API response
@@ -942,10 +660,6 @@ Please check the body of your request and try again.
 This should resolve, however please contact support if you continue to experience issues.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OSSI-OSPSS-2001](#snyk-ossi-ospss-2001)
@@ -955,10 +669,6 @@ This should resolve, however please contact support if you continue to experienc
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ### [SNYK-OSSI-OSPSS-3001](#snyk-ossi-ospss-3001)
 #### Failed to store snapshot data
@@ -966,10 +676,6 @@ This should resolve, however please contact support if you continue to experienc
 Please check your inputs and try again. If you continue to experience issues please contact support.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-
-**Exit Code:** 
-
-**Help Links:**
 
 
 ### [SNYK-OSSI-OSPSS-4001](#snyk-ossi-ospss-4001)
@@ -979,10 +685,6 @@ This issue is unexpected, and the service should recover quickly. If not, please
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
-**Exit Code:** 
-
-**Help Links:**
-
 
 ---
-Generated at 2023-05-02T06:12:29.356Z
+Generated at 2023-05-02T08:20:28.458Z
