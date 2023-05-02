@@ -117,7 +117,24 @@ ENV RES_BODY_URL_SUB                 https://<your.nexus.hostname>/repository
 ```
 
 {% hint style="info" %}
-By default for Nexus 3, the X-Forwarded-For headers are stripped off by the broker client so Nexus returns the npm tarball uri to the Nexus registry instead of the broker server. Include the environment variable `REMOVE_X_FORWARDED_HEADERS=false` to disable this behavior.
+By default for Nexus 3, the X-Forwarded-For headers are stripped off by the Broker Client so Nexus returns the npm tarball uri to the Nexus Registry instead of the Broker Server. Include the environment variable `REMOVE_X_FORWARDED_HEADERS=false` to disable this behavior.
+{% endhint %}
+
+## Derived Docker image for Nexus 2 Broker integration setup
+
+As an alternative to using the Docker run command shown on the [setup page](set-up-snyk-broker-with-nexus-repository-manager.md), you can build your own Docker image and override relevant environment variables:
+
+```dockerfile
+FROM snyk/broker:nexus2
+
+ENV BROKER_TOKEN                     secret-broker-token
+ENV BASE_NEXUS_URL                   https://[<user>:<pass>@]<your.nexus.hostname>
+ENV BROKER_CLIENT_VALIDATION_URL     https://<your.nexus.hostname>:<port>/systemcheck 
+ENV RES_BODY_URL_SUB                 https://<your.nexus.hostname>/nexus/content/(groups|repositories)
+```
+
+{% hint style="info" %}
+By default for Nexus 2, the X-Forwarded-For headers are stripped off by the Broker Client so Nexus returns the npm tarball uri to the Nexus Registry instead of the Broker Server. Include the environment variable REMOVE\_X\_FORWARDED\_HEADERS=false to disable this behavior.
 {% endhint %}
 
 ## Derived Docker image for Container Registry Agent Setup

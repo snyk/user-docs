@@ -8,7 +8,7 @@ This example shows setting up an Azure AD Enterprise Application and connecting 
 
 1.  From the drop down at the top left select **GROUP OVERVIEW** and then the cog wheel (top right corner) to get to your group settings.
 
-    <figure><img src="../../../.gitbook/assets/1 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Select group overview"><figcaption><p>Select group overview</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/1 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Select group overview"><figcaption><p>Select group overview</p></figcaption></figure>
 2.  Click on **SSO** and copy the values under **Entity ID** and **ACS URL** or leave the browser tab open for easy access.
 
     <figure><img src="../../../.gitbook/assets/2 (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Group Settings: SSO"><figcaption><p>Group Settings: SSO</p></figcaption></figure>
@@ -17,7 +17,7 @@ This example shows setting up an Azure AD Enterprise Application and connecting 
     <figure><img src="../../../.gitbook/assets/3 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Azure AD Default Directory"><figcaption><p>Azure AD Default Directory</p></figcaption></figure>
 4.  Click **Add** then **Enterprise application**.
 
-    <figure><img src="../../../.gitbook/assets/4 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="Add Enterprise application"><figcaption><p>Add Enterprise application</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/4 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Add Enterprise application"><figcaption><p>Add Enterprise application</p></figcaption></figure>
 5.  Choose **Create your own application**.
 
     <figure><img src="../../../.gitbook/assets/5 (1) (1) (1) (1).png" alt="Create your own application"><figcaption><p>Create your own application</p></figcaption></figure>
@@ -40,7 +40,7 @@ This example shows setting up an Azure AD Enterprise Application and connecting 
 
     <figure><img src="../../../.gitbook/assets/11 (2).png" alt="Login URL"><figcaption><p>Login URL</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/1 (1) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="Sign in URL in Snyk portal"><figcaption><p>Sign in URL in Snyk portal</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/1 (1) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Sign in URL in Snyk portal"><figcaption><p>Sign in URL in Snyk portal</p></figcaption></figure>
 12. Return to Azure AD and click **Download** next to **Certificate (Base64)**.
 
     <figure><img src="../../../.gitbook/assets/13.png" alt="Download SAML Certificate (Base 64)"><figcaption><p>Download SAML Certificate (Base 64)</p></figcaption></figure>

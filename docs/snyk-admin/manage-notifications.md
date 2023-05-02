@@ -26,7 +26,7 @@ Administrators can also manage the notification defaults for others in the [Grou
 
 You can also send notifications for an organization to a designated [Slack channel](https://docs.snyk.io/integrations/notifications-ticketing-system-integrations/slack-integration).
 
-<figure><img src="../.gitbook/assets/image (48) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Notification example"><figcaption><p>Notification example</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (48) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Notification example"><figcaption><p>Notification example</p></figcaption></figure>
 
 ### Define Group notification defaults
 

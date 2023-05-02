@@ -7,7 +7,7 @@ Use Snyk IaC with the [Snyk Web UI](../../getting-started/quickstart/create-a-sn
 1. In your **Projects** area, select the project to open
 2. Snyk IaC displays information and issue cards for that project:
 
-![](<../../.gitbook/assets/image (165) (1) (1) (1) (3) (1) (1).png>)
+![](<../../.gitbook/assets/image (165) (1) (1) (1) (2).png>)
 
 Information available shows standard Snyk Project information (see [introduction-to-snyk-projects](../../manage-issues/introduction-to-snyk-projects/ "mention")), including:
 
@@ -43,7 +43,7 @@ Click **Ignore** to ignore this vulnerability (see [Ignore Issues](../../manage-
 * Terraform Cloud and Helm will not show a code snippet, but just the card details. They will also not have a **Full details** button to show the preview of the full code.\
   Examples:
 
-![](<../../.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (2).png>)
 
 ![Terraform Cloud](<../../.gitbook/assets/image (100) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 

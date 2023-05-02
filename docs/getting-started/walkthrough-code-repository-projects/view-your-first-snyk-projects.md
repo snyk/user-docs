@@ -25,7 +25,7 @@ When [setting up your GitHub integration](../../integrations/git-repository-scm-
 
 When you then import a Project, private repositories are identified with a “lock” symbol (<img src="../../.gitbook/assets/image (101) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="line">) in the imported scan details:
 
-<figure><img src="../../.gitbook/assets/image (110) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="Private repos with lock symbol"><figcaption><p>Private repos with lock symbol</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (110) (1) (1) (1) (1) (1) (1) (1).png" alt="Private repos with lock symbol"><figcaption><p>Private repos with lock symbol</p></figcaption></figure>
 
 For customers on free plans, private repository scans count towards your test count limit.
 
