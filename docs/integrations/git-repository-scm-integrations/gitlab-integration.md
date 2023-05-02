@@ -27,9 +27,9 @@ This integration only works with GitLab instances that are publicly reachable (n
 
 1. Generate a Personal Access Token in your GitLab. You’ll find this option in your user account settings area, in the **Access Tokens** section. Alternatively, a [Group Access Token](https://docs.gitlab.com/ee/user/group/settings/group\_access\_tokens.html) can be used to grant access to all projects within a GitLab group or subgroup, without contributing to GitLab's licensed user count.
 2. Go to Snyk’s [integrations](https://app.snyk.io/integrations) page and click “Connect to GitLab”.
-3. Add your account credentials and the token you just generated to the GitLab integration settings area in Snyk.
+3. In your GitLab integrations settings, in **General** > **Account settings**, enter your account credentials and the token you generated.
 
-![](../../.gitbook/assets/uuid-aa58b5a9-dd17-3219-6067-4ee6e3f4b384-en.png)
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-02 at 11.06.01.png" alt="GitLab account settings" width="563"><figcaption><p>GitLab account settings</p></figcaption></figure>
 
 ## Required permissions and roles
 
