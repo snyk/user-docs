@@ -34,7 +34,7 @@ The **Security Issues** section shows the number of vulnerabilities, their type,
 
 The **Issues over time** graph shows the history of vulnerabilities in your Organization:
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (2).png" alt="View issues over time"><figcaption><p>View issues over time</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (2) (2) (1).png" alt="View issues over time"><figcaption><p>View issues over time</p></figcaption></figure>
 
 This shows the number of overall vulnerabilities, and the number of Projects being scanned (the dotted line in the graph).
 
@@ -56,7 +56,7 @@ For example, if you double the number of Projects you scan, but only add 10% to 
 
 You can hover over a date to see the summary of “to this date” information at that point:
 
-<figure><img src="../../.gitbook/assets/image (150) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png" alt="View a snapshot summary"><figcaption><p>View a snapshot summary</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (150) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (3).png" alt="View a snapshot summary"><figcaption><p>View a snapshot summary</p></figcaption></figure>
 
 This is especially useful when you see sudden changes in issue numbers on a specific day.
 
@@ -96,7 +96,7 @@ Filtering results in Reports means that your Dashboard view may show different n
 
 For example, by default, Snyk does not scan the Dockerfile in the filter, it scans the docker images themselves:
 
-<figure><img src="../../.gitbook/assets/image (111) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Dockerfile not scanned by default"><figcaption><p>Dockerfile not scanned by default</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (111) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Dockerfile not scanned by default"><figcaption><p>Dockerfile not scanned by default</p></figcaption></figure>
 
 This is because, when Snyk scans the Dockerfile, there will be vulnerabilities in the base OS in the container that you are building. Because these vulnerabilities cannot generally be fixed by your development team, this filtering lets your team focus on the issues that they can fix.
 

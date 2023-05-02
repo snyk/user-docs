@@ -54,7 +54,6 @@ Your account is subject to contract terms which might restrict your ability to e
 
 * For Go Modules full source code analysis feature - Snyk will access and store the contents of your git repository to facilitate the building of an accurate dependency graph. After our analysis is complete, your code is deleted from the Snyk system.
 * For Reachable Vulnerabilities feature - Snyk will access and store the contents of your git repository to facilitate the building of a call graph. Once the analysis completes, your code is deleted from the Snyk system. Only the call graph and function names are maintained.
-* For Lambda integration only - Snyk pulls a short term copy then destroys it as part of analysis.
 {% endtab %}
 
 {% tab title="Snyk Code" %}

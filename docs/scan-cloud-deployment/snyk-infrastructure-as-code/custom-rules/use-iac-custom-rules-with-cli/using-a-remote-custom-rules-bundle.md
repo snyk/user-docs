@@ -52,7 +52,7 @@ You can configure remote custom rules bundles on the Organizational level by nav
 You can configure remote cusotm rules bundles on the Group level by navigating to `Settings` > `Infrastructure as Code.`
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (161) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Enable remote custom rules bundles"><figcaption><p>Enable remote custom rules bundles</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (161) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Enable remote custom rules bundles"><figcaption><p>Enable remote custom rules bundles</p></figcaption></figure>
 
 * Enable remote bundles configuration using the **Enable rules** toggle. Doing so loads the form to specify the Registry URL and tag as shown in this example:
 
@@ -60,7 +60,7 @@ You can configure remote cusotm rules bundles on the Group level by navigating t
 
 * Configure the OCI registry URL and tag for your remote bundle of custom rules, and click **Save changes** to save.
 
-<figure><img src="../../../../.gitbook/assets/image (131) (1) (1) (3) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Registry URL and tag configured"><figcaption><p>Registry URL and tag configured</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (131) (1) (1) (3) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Registry URL and tag configured"><figcaption><p>Registry URL and tag configured</p></figcaption></figure>
 
 Your remote bundle of custom rules is now configured and will be used when testing IaC files.
 

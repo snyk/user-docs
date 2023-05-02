@@ -6,7 +6,7 @@ Snyk's priority scoring, reporting, and policy features help you prioritize and 
 
 The [Snyk Priority Score](issue-management/priority-score.md) prioritizes issues based on a number of industry-standard criteria:
 
-<figure><img src="../.gitbook/assets/image (121) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Snyk Priority Score"><figcaption><p>Snyk Priority Score</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (121) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Snyk Priority Score"><figcaption><p>Snyk Priority Score</p></figcaption></figure>
 
 ### Apply Project attributes <a href="#h.r3thgse7qt7n" id="h.r3thgse7qt7n"></a>
 
