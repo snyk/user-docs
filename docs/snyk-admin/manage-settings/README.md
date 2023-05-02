@@ -25,7 +25,7 @@ At the Organization level, select **Settings** to manage settings:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-26 at 12.59.45.png" alt="Organization settings"><figcaption><p>Organization settings</p></figcaption></figure>
 
-* General
+* [General](organization-general-settings.md)
 * [Service Accounts](../service-accounts.md)
 * [Integrations](https://docs.snyk.io/integrations)
 * [Languages](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)

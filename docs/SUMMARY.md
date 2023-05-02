@@ -646,6 +646,7 @@
   * [Service accounts](snyk-admin/service-accounts.md)
   * [Manage notifications](snyk-admin/manage-notifications.md)
   * [Manage settings](snyk-admin/manage-settings/README.md)
+    * [Organization general settings](snyk-admin/manage-settings/organization-general-settings.md)
     * [Usage settings](snyk-admin/manage-settings/usage-settings.md)
     * [Your Plan and Billing](snyk-admin/manage-settings/your-plan-and-billing.md)
     * [Plans and Pricing](snyk-admin/manage-settings/plans-and-pricing.md)
