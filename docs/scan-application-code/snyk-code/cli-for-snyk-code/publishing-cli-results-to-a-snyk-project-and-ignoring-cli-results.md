@@ -23,7 +23,7 @@ snyk code test --report --project-name="PROJECT_NAME"
 
 Running the `snyk code test` command with the `--report` option as shown returns the results to the terminal window, along with a URL to the Snyk Code Project where the results have been published. Refer to the following screenshot.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt="Snyk code test results with --report option"><figcaption><p>Snyk code test results with --report option</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt="Snyk code test results with --report option"><figcaption><p>Snyk code test results with --report option</p></figcaption></figure>
 
 If a CLI-based Snyk Code Project does not yet exist for the value provided in the `--project-name` option, Snyk creates a new CLI-based project. If a CLI-based Project already exists, a new snapshot is created under the same Project
 

@@ -36,7 +36,7 @@ This ID uniquely identifies this Organization; required if you use the [Snyk API
 
 Use these functions to define Organization-wide ignore settings.
 
-<figure><img src="../../.gitbook/assets/image (1) (2).png" alt="Configure ignore settings for an Organization"><figcaption><p>Configure ignore settings for an Organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt="Configure ignore settings for an Organization"><figcaption><p>Configure ignore settings for an Organization</p></figcaption></figure>
 
 See **Configure Ignore settings** in the [Ignore issues](../../manage-issues/issue-management/ignore-issues.md#configure-ignore-settings) documentation for more details.
 
@@ -44,7 +44,7 @@ See **Configure Ignore settings** in the [Ignore issues](../../manage-issues/iss
 
 If enabled, users without access to this Snyk Organization can request access.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt="Enable / disable request access"><figcaption><p>Enable / disable request access</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt="Enable / disable request access"><figcaption><p>Enable / disable request access</p></figcaption></figure>
 
 See **Settings** in the [Organization access requests](../manage-users-and-permissions/organization-access-requests.md#settings) documentation for more details_._
 

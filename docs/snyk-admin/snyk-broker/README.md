@@ -5,12 +5,6 @@
 Snyk Broker is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-{% hint style="info" %}
-Snyk recommends using Helm as the simplest way to deploy Snyk Broker. You can also use Docker to run the Snyk Broker Client or run npm `install snyk-broker`.
-
-This documentation provides detailed instructions for using [Helm](install-and-configure-broker-using-helm/) and [Docker](install-and-configure-broker-using-docker/).
-{% endhint %}
-
 Snyk Broker is an open-source tool that acts as a proxy between Snyk and special integrations, allowing [snyk.io](http://snyk.io/) access to your code for scanning and returning results to you. SCM integrations with Broker support Snyk Open Source, Snyk Code, Snyk Container (Dockerfile), and Snyk IaC. Supported integrations with Broker include the following:
 
 * Your Source Code Management (SCM) that is not internet reachable
@@ -25,40 +19,15 @@ Snyk Broker is designed to connect Snyk products to self-hosted integrations tha
 * Control Snyk's access to your network by limiting the files to which Snyk has access and the actions that Snyk can perform.
 * Manage a fixed private IP for your integration, targeting the Broker.
 
-The Snyk Broker project is hosted on [GitHub](https://github.com/snyk/broker) and published as a set of Docker images for specific integrations. For more information, see [Integrations with Snyk Broker](./#integrations-with-snyk-broker) on this page.
+Snyk Broker includes a Server and a Client, basic components that are the same across all integrations. The Broker Server runs on the Snyk SaaS backend and is provided by Snyk; no installation is required. The Broker Client is a [Docker image](https://hub.docker.com/r/snyk/broker/) deployed in your infrastructure. For more information, see Components of Snyk Broker.
 
-## Components of Snyk Broker
+The Snyk Broker project is hosted on [GitHub](https://github.com/snyk/broker) and published as a set of Docker images for specific integrations. Snyk provides a [Helm Chart](https://github.com/snyk/snyk-broker-helm) to deploy the Snyk Broker.&#x20;
 
-Snyk Broker has a Server and a Client, basic components that are the same across all integrations:
+{% hint style="info" %}
+Snyk recommends using Helm as the simplest way to deploy Snyk Broker. You can also use Docker to run the Snyk Broker Client or run npm `install snyk-broker`.
 
-* **Broker Server** - running on the Snyk SaaS backend\
-  The Broker Server is provided by Snyk; no installation is required.
-* **Broker Client** - a [Docker image](https://hub.docker.com/r/snyk/broker/) deployed in your infrastructure
-
-The Broker Client and Server act together as a tunnel to your code, sending requests by proxy from [snyk.io](http://snyk.io/) to a Git repository, fetching manifest files from monitored repositories, and fetching results using webhooks posted by the Git service. The Broker client runs within your internal network, keeping sensitive data such as Git tokens within the network perimeter. The tunnel allows for scanning using only requests on an approved data list. This narrows the access permissions to the absolute minimum required for Snyk to monitor a repository. For more information, see [Approved data list for Snyk Broker](./#approved-data-list-for-snyk-broker) on this page.
-
-For information about components required for using Snyk Code Agent, Snyk Container Registry Agent, and Snyk Broker for Infrastructure as Code, see [Define your Broker deployment components](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/prepare-snyk-broker-for-deployment#define-your-broker-deployment-components).
-
-The diagram that follows illustrates how the basic components operate.
-
-* All data, both in transit and at rest, is encrypted.
-* Communication between the Client and the Server is over a secure WebSocket connection.
-* There is no need to open incoming ports since the communication is initiated outbound.
-* After the connection is initiated, the WebSocket connection is bi-directional.
-
-<figure><img src="../../.gitbook/assets/Snyk Broker diagram.png" alt="Snyk Broker WebSocket initiated by Client over HTTPS"><figcaption><p>Snyk Broker WebSocket initiated by Client over HTTPS</p></figcaption></figure>
-
-For details about the connections between Snyk and the Broker Client and allowed requests, see [Connections with Snyk Broker](connections-with-snyk-broker.md).
-
-## **Using Snyk Broker to scan your code**
-
-To use **Snyk Open Source** with Snyk Broker, you need only the Broker Server and  Broker Client components. The Broker Client is published as a set of Docker images, each configured for a specific Git service. Configure each type of integration using environment variables as explained in the [Snyk Broker-Client integration setups](snyk-broker-set-up-examples/).
-
-To scan other types of code with Snyk Broker, you must add a component or configurations and add parameters to the Broker Client setup:
-
-* **Snyk Code** – add the [**Code Agent** ](snyk-broker-code-agent/)component to enable Snyk Code analysis of repositories in SCMs that are integrated through Snyk Broker.
-* **Snyk Container** – add the [**Container Registry Agent**](snyk-broker-container-registry-agent/) to enable the connection to network-restricted container registries and the analysis of container images.
-* **Snyk Infrastructure as Code** – configure the [**`accept.json`** file with additional parameters](snyk-broker-infrastructure-as-code-detection/) to detect and analyze Terraform, CloudFormation, and Kubernetes configuration files through Snyk Broker.
+This documentation provides detailed instructions for using [Helm](install-and-configure-broker-using-helm/) and [Docker](install-and-configure-broker-using-docker/).
+{% endhint %}
 
 ## **Integrations with Snyk Broker**
 
@@ -72,6 +41,16 @@ The Broker Client is [published](https://github.com/snyk/broker) as a set of Doc
 In addition, Snyk Broker integrates with [Jira Server/Jira Data Center](../../integrations/notifications-ticketing-system-integrations/jira.md), [JFrog Artifactory](../../integrations/private-registry-integrations/artifactory-repository-setup.md), and [Nexus Repository Manager](../../integrations/private-registry-integrations/nexus-repo-manager-setup.md).
 
 With the Container Registry Agent, Snyk Broker also connects to all [Snyk-supported container registries](snyk-broker-container-registry-agent/).
+
+## **Using Snyk Broker to scan your code**
+
+To use **Snyk Open Source** with Snyk Broker, you need only the Broker Server and  Broker Client components. The Broker Client is published as a set of Docker images, each configured for a specific Git service. Configure each type of integration using environment variables as explained in the [Snyk Broker-Client integration setups](snyk-broker-set-up-examples/).
+
+To scan other types of code with Snyk Broker, you must add a component or configurations and add parameters to the Broker Client setup:
+
+* **Snyk Code** – add the [**Code Agent** ](snyk-broker-code-agent/)component to enable Snyk Code analysis of repositories in SCMs that are integrated through Snyk Broker.
+* **Snyk Container** – add the [**Container Registry Agent**](snyk-broker-container-registry-agent/) to enable the connection to network-restricted container registries and the analysis of container images.
+* **Snyk Infrastructure as Code** – configure the [**`accept.json`** file with additional parameters](snyk-broker-infrastructure-as-code-detection/) to detect and analyze Terraform, CloudFormation, and Kubernetes configuration files through Snyk Broker.
 
 ## Common questions about Snyk Broker
 

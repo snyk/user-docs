@@ -570,6 +570,7 @@
       * [Example: Setting up custom mapping for an Okta OIDC app](snyk-admin/set-up-single-sign-on-sso-for-authentication/custom-mapping-option/example-setting-up-oidc-okta-app-with-custom-claims.md)
     * [Identity Provider (IdP) migration](snyk-admin/set-up-single-sign-on-sso-for-authentication/identity-provider-idp-migration.md)
   * [Snyk Broker](snyk-admin/snyk-broker/README.md)
+    * [Components of Snyk Broker](snyk-admin/snyk-broker/components-of-snyk-broker.md)
     * [Connections with Snyk Broker](snyk-admin/snyk-broker/connections-with-snyk-broker.md)
     * [Prepare Snyk Broker for deployment](snyk-admin/snyk-broker/prepare-snyk-broker-for-deployment.md)
     * [Install and configure Broker using Helm](snyk-admin/snyk-broker/install-and-configure-broker-using-helm/README.md)
