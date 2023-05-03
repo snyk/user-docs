@@ -3,7 +3,7 @@
 Installing the Snyk Broker with the [Broker Helm Chart](https://github.com/snyk/snyk-broker-helm) is the easiest way to deploy Snyk Broker if you are using Kubernetes.
 
 {% hint style="info" %}
-The Helm chart does not manage connectivity and thus you will be responsible for managing [ingress](ingress-options-with-snyk-broker-helm-installation.md) in the Kubernetes cluster.
+The Helm chart does not manage connectivity and thus you will be responsible for managing [ingress](advanced-setup-for-helm-chart-installation/ingress-options-with-snyk-broker-helm-installation.md) in the Kubernetes cluster.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -58,7 +58,7 @@ To use this chart you must first add the chart by adding the repo:
 
 `helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`
 
-Then run the [commands for each SCM ](../snyk-broker-client-integration-setups-with-helm.md)or the Snyk Broker - Code Agent or Snyk Broker - Container Registry Agent.
+Then run the [commands for each SCM ](snyk-broker-client-integration-setups-with-helm.md)or the Snyk Broker - Code Agent or Snyk Broker - Container Registry Agent.
 
 * [GitHub](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#github.com-helm-install)
 * [GitHub Enterprise](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#github-enterprise-helm-install)
