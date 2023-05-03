@@ -17,7 +17,7 @@ You can configure these types of Artifactory Package Repository:
 * Publicly accessible instances protected by basic authentication
 * Instances on a private network accessed through Snyk Broker (with or without basic authentication).
 
-These instructions apply to configuring publicly accessible instances. For instructions on configuring a brokered instance see [Set up Snyk Broker with Artifactory Repository](../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/set-up-snyk-broker-with-artifactory-repository.md).
+These instructions apply to configuring publicly accessible instances. For instructions on configuring a brokered instance see [Set up Snyk Broker with Artifactory Repository](../../snyk-admin/snyk-broker/install-and-configure-broker-using-docker/snyk-broker-set-up-examples/set-up-snyk-broker-with-artifactory-repository.md).
 
 ## Obtain Broker token for Artifactory Respository setup
 
@@ -34,4 +34,4 @@ If you do not see the **Snyk Broker** on/off switch, you do not have the necessa
 Submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new) if you want to add a private registry.
 {% endhint %}
 
-When you have permissions to add a private registry, continue with the instructions on [Set up Snyk Broker with Artifactory Repository](../../snyk-admin/snyk-broker/snyk-broker-set-up-examples/set-up-snyk-broker-with-artifactory-repository.md).
+When you have permissions to add a private registry, continue with the instructions on [Set up Snyk Broker with Artifactory Repository](../../snyk-admin/snyk-broker/install-and-configure-broker-using-docker/snyk-broker-set-up-examples/set-up-snyk-broker-with-artifactory-repository.md).

@@ -87,4 +87,4 @@ helm install snyk-broker-chart . \
 
 ## Credential pooling and Helm Chart installation
 
-See [Credential pooling](../install-and-configure-broker-using-docker/credential-pooling.md).
+See [Credential pooling](../install-and-configure-broker-using-docker/advanced-configuration-for-snyk-broker-docker-installation/credential-pooling.md).

@@ -57,11 +57,11 @@ In addition, Snyk Broker integrates with [Jira Server/Jira Data Center](../../in
 
 With the [Container Registry Agent](snyk-broker-container-registry-agent/), Snyk Broker also connects to all [Snyk-supported container registries](snyk-broker-container-registry-agent/).
 
-You can also use [derived Docker images](snyk-broker-set-up-examples/derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for each integration and the Container Registry Agent.
+You can also use [derived Docker images](install-and-configure-broker-using-docker/snyk-broker-set-up-examples/derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for each integration and the Container Registry Agent.
 
 ## **Using Snyk Broker to scan your code**
 
-To use **Snyk Open Source** with Snyk Broker, you need only the Broker Server and  Broker Client components. The Broker Client is published as a set of Docker images, each configured for a specific Git service. Configure each type of integration using environment variables as explained in the [Snyk Broker-Client integration setups](snyk-broker-set-up-examples/).
+To use **Snyk Open Source** with Snyk Broker, you need only the Broker Server and  Broker Client components. The Broker Client is published as a set of Docker images, each configured for a specific Git service. Configure each type of integration using environment variables as explained in the [Snyk Broker-Client integration setups](install-and-configure-broker-using-docker/snyk-broker-set-up-examples/).
 
 To scan other types of code with Snyk Broker, you must add a component or configurations and add parameters to the Broker Client setup:
 

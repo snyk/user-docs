@@ -17,7 +17,7 @@ The following examples create a namespace called `snyk-broker`. To deploy into a
 
 ## Github.com Helm install
 
-For more details including definitions of the environment variables see [Set up Snyk Broker with GitHub](snyk-broker-set-up-examples/broker-example-set-up-snyk-broker-with-github.md).
+For more details including definitions of the environment variables see [Set up Snyk Broker with GitHub](install-and-configure-broker-using-docker/snyk-broker-set-up-examples/broker-example-set-up-snyk-broker-with-github.md).
 
 ```
 helm install snyk-broker-chart snyk-broker/snyk-broker \
@@ -30,7 +30,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
 
 ## Github Enterprise Helm install
 
-For more details including definitions of the environment variables see [Set up Snyk Broker with GitHub Enterprise](snyk-broker-set-up-examples/setup-broker-with-github-enterprise.md).
+For more details including definitions of the environment variables see [Set up Snyk Broker with GitHub Enterprise](install-and-configure-broker-using-docker/snyk-broker-set-up-examples/setup-broker-with-github-enterprise.md).
 
 Note: for `github`, `githubApi` and `githubGraphQl` values do not include `https://`
 
@@ -48,7 +48,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
 
 ## Bitbucket Helm install
 
-For more details including definitions of the environment variables see [Set up Snyk Broker with Bitbucket Server/Data Center](snyk-broker-set-up-examples/data-center.md).
+For more details including definitions of the environment variables see [Set up Snyk Broker with Bitbucket Server/Data Center](install-and-configure-broker-using-docker/snyk-broker-set-up-examples/data-center.md).
 
 &#x20;in the Docker setup instructions.
 
@@ -68,7 +68,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
 
 ## Gitlab Helm install
 
-For more details including definitions of the environment variables see [Set up Snyk Broker with GitLab](snyk-broker-set-up-examples/setup-broker-with-gitlab.md).
+For more details including definitions of the environment variables see [Set up Snyk Broker with GitLab](install-and-configure-broker-using-docker/snyk-broker-set-up-examples/setup-broker-with-gitlab.md).
 
 Note: for `gitlab` value do not include `https://`
 
@@ -84,7 +84,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
 
 ## Azure Repos Helm install
 
-For more details including definitions of the environment variables see [Set up Snyk Broker with Azure Repos](snyk-broker-set-up-examples/setup-broker-with-azure-repos.md).
+For more details including definitions of the environment variables see [Set up Snyk Broker with Azure Repos](install-and-configure-broker-using-docker/snyk-broker-set-up-examples/setup-broker-with-azure-repos.md).
 
 Note: for `azureReposHost` value do not include `https://`
 
@@ -101,7 +101,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
 
 ## Artifactory Repository Helm install
 
-For more details including definitions of the environment variables see [Set up Snyk Broker with Artifactory Repository](snyk-broker-set-up-examples/set-up-snyk-broker-with-artifactory-repository.md).
+For more details including definitions of the environment variables see [Set up Snyk Broker with Artifactory Repository](install-and-configure-broker-using-docker/snyk-broker-set-up-examples/set-up-snyk-broker-with-artifactory-repository.md).
 
 Note: for `artifactoryUrl` value do not include `https://`
 
@@ -115,7 +115,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
 
 ## Jira notifications Helm install
 
-For more details including definitions of the environment variables see [Set up Snyk Broker with Jira](snyk-broker-set-up-examples/setup-broker-with-jira.md).
+For more details including definitions of the environment variables see [Set up Snyk Broker with Jira](install-and-configure-broker-using-docker/snyk-broker-set-up-examples/setup-broker-with-jira.md).
 
 Note: for `jiraHostname` value do not include `https://`
 
