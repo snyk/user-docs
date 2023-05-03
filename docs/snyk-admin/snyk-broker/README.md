@@ -55,7 +55,7 @@ Configuration information for the environment variables is found on the pages wi
 
 In addition, Snyk Broker integrates with [Jira Server/Jira Data Center](../../integrations/notifications-ticketing-system-integrations/jira.md), [JFrog Artifactory](../../integrations/private-registry-integrations/artifactory-repository-setup.md), and [Nexus Repository Manager](../../integrations/private-registry-integrations/nexus-repo-manager-setup.md).
 
-With the Container Registry Agent, Snyk Broker also connects to all [Snyk-supported container registries](snyk-broker-container-registry-agent/).
+With the [Container Registry Agent](snyk-broker-container-registry-agent/), Snyk Broker also connects to all [Snyk-supported container registries](snyk-broker-container-registry-agent/).
 
 You can also use [derived Docker images](snyk-broker-set-up-examples/derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for each integration and the Container Registry Agent.
 
