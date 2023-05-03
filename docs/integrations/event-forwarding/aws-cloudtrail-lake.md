@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-\*\*\*\*The AWS CloudTrail Lake integration feature is available with Snyk Enterprise plans. See [Pricing plans](../../more-info/plans.md) for details.
+The AWS CloudTrail Lake integration feature is available with Snyk Enterprise plans. See [Pricing plans](../../more-info/plans.md) for details.
 
 This feature is currently available in the Snyk MT-US environment. The feature will be rolled out to other Snyk Multi-tenant environments soon. If you are a Single-tenant customer, please contact your Snyk representative to enable the feature.
 {% endhint %}
@@ -38,11 +38,11 @@ After creating the integration in **AWS CloudTrail Lake**, configure the integra
 
 To do this, go to [the Snyk integrations page](https://app.snyk.io/integrations), navigate to **Cloud events**, and click the **AWS CloudTrail Lake** tile:
 
-<figure><img src="../../.gitbook/assets/aws-ctl-3 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="CloudTrail Lake tile on Snyk integrations page"><figcaption><p>CloudTrail Lake tile on Snyk integrations page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aws-ctl-3 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="CloudTrail Lake tile on Snyk integrations page" width="563"><figcaption><p>CloudTrail Lake tile on Snyk integrations page</p></figcaption></figure>
 
 Enter a **name** for this integration, your **AWS Account ID**, and the **Channel ARN** from the previous step.
 
-<figure><img src="../../.gitbook/assets/aws-ctl-4 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="Integration name, AWS Account ID, Channel ARN"><figcaption><p>Integration name, AWS Account ID, Channel ARN</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aws-ctl-4 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="Integration name, AWS Account ID, Channel ARN" width="563"><figcaption><p>Integration name, AWS Account ID, Channel ARN</p></figcaption></figure>
 
 Once this step is complete, Snyk will begin forwarding audit logs to AWS CloudTrail Lake immediately. You can click View settings or go to the [AWS CloudTrail Lake settings](https://app.snyk.io/manage/integrations/aws-cloudtrail) page to view and manage the integration.
 
