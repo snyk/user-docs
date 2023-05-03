@@ -8,7 +8,7 @@ At the Group level, select **Settings** to view admin settings:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-26 at 12.57.49.png" alt="Group settings"><figcaption><p>Group settings</p></figcaption></figure>
 
-* General
+* [General](group-general-settings.md)
 * [SSO](../set-up-single-sign-on-sso-for-authentication/)
 * [Member Roles](../manage-users-and-permissions/member-roles.md)
 * [Service Accounts](../service-accounts.md)
