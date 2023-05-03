@@ -14,6 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+      - name: Setup .NET
+        uses: actions/setup-dotnet@3.0.3
+      - name: Restore dependencies
+        run: dotnet restore ./path/to/your.sln
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/dotnet@master
         env:
@@ -31,12 +35,20 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
+      - name: Setup .NET
+        uses: actions/setup-dotnet@3.0.3
+      - name: Restore dependencies
+        run: dotnet restore ./path/to/your.sln
         uses: snyk/actions/dotnet@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           args: --severity-threshold=high
 ```
+
+{% hint style="info" %}
+It is required to restore the dependencies using `dotnet restore` or `nuget restore` before running the Snyk action
+{% endhint %}
 
 ## Using the Snyk dotNET Action to run snyk monitor
 
@@ -56,6 +68,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+      - name: Setup .NET
+        uses: actions/setup-dotnet@3.0.3
+      - name: Restore dependencies
+        run: dotnet restore ./path/to/your.sln
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/dotnet@master
         continue-on-error: true # To make sure that SARIF upload gets called
