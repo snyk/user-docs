@@ -82,9 +82,9 @@ The example below presents a fix Pull Request opened by Snyk.
 To review and adjust the automatic fix pull request settings:
 
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Cloud**, and click **Edit Settings**.
-2. Scroll to the **Automatic fix pull requests** section and configure the relevant options.
+2. Scroll to the **Automatic fix PRs** section and configure the relevant options.
 
-<figure><img src="../../.gitbook/assets/bitbucket_cloud-auto_fix_prs_30june2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Modify the automatic fix pull requests"><figcaption><p>Modify the automatic fix pull requests</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-03 at 14.49.59.png" alt="Configure Automatic fix PRs"><figcaption><p>Configure Automatic fix PRs</p></figcaption></figure>
 
 {% hint style="info" %}
 Unlike manual pull requests opened from the Bitbucket interface, Snyk pull requests are _not_ automatically assigned to the default reviewer set in your Bitbucket Cloud account.

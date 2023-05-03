@@ -28,7 +28,7 @@ Enable at the global integration level:
 
 **Apply changes to all overridden projects** will update all of the individual project settings for "Automatic fix pull requests". If a project previously had its own settings for this, clicking on this button will override it with the global setting.
 
-<figure><img src="../../../.gitbook/assets/global-pr-setting.png" alt="Automatic fix pull requests settings in Snyk Web UI"><figcaption><p>Automatic fix pull requests settings in Snyk Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-03 at 14.49.59.png" alt="Configure Automatic fix PRs"><figcaption><p>Configure Automatic fix PRs</p></figcaption></figure>
 
 ## Enable or disable pull requests for a single project
 
