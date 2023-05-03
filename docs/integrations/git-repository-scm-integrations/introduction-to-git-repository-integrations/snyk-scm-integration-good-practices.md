@@ -90,26 +90,11 @@ Click the **Details** link to display the status of the Snyk check. The status o
 
 <figure><img src="../../../.gitbook/assets/security-check (1).png" alt="Snyk security check failure"><figcaption><p>Snyk security check failure</p></figcaption></figure>
 
-### **Manage PR test settings**
+### **Manage PR Check settings**
 
-An administrator can manage settings for Snyk PR tests for each SCM integration at the Organization level and apply these settings to all the projects for that integration, or select specific projects to apply the PR tests. You can configure whether this feature is on (enabled by default) and set fail conditions to define when Snyk should fail your PR checks.
+An administrator can manage Snyk [PR Checks](../../../scan-application-code/run-pr-checks/) settings for each SCM integration at the Organization level; then apply these settings, either to all the Projects for that integration, or to selected specific Projects. You can configure whether this feature is on (enabled by default) and set fail conditions to define when Snyk should fail your PR checks.
 
-To configure the PR test settings for your Organization:
-
-1. For the relevant organization, go to Organization **Settings** <img src="../../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> **>** **Integrations**, select the relevant integration, and click **Edit Settings**.
-2. Set the the toggle to **Enabled** and use the dropdown to set the **Fail conditions** as needed.
-3. Click **Update settings**.
-
-<figure><img src="../../../.gitbook/assets/image13.png" alt="Enable test for PRs and set fail conditions"><figcaption><p>Enable test for PRs and set fail conditions</p></figcaption></figure>
-
-To manage the PR test settings per Project:
-
-1. To configure the pull request test settings for a specific project, go to **Projects** > **Projects Settings > Edit Settings.**\
-   The Project page opens.
-2. In the Project page, select the **Settings** tab in the upper right, and the SCM integration option in the left sidebar.
-3. Select and confirm the relevant options in each of the sections.
-
-<figure><img src="../../../.gitbook/assets/main.png" alt="elect test settings for Project"><figcaption><p>Select test settings for Project</p></figcaption></figure>
+See [Configure PR Checks at the Integration level](../../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-integration-level) and [Configure PR Checks at the Project level](../../../scan-application-code/run-pr-checks/configure-pr-checks.md#configure-pr-checks-at-the-project-level) for details of this process.&#x20;
 
 {% hint style="info" %}
 Use Snyk [License policies](https://docs.snyk.io/products/snyk-open-source/license-policies) to ensure that your Snyk PRs are free of licensing issues.\
@@ -121,9 +106,9 @@ See [Licenses](https://docs.snyk.io/products/snyk-open-source/licenses) for more
 When you first roll out your SCM integration, Snyk recommends that you start with Snyk set up to test your PRs _without_ failing them, so that your developers can get used to seeing the Snyk commit check.
 
 1. Decide to apply PR testing for your integrations at the Organization level, or for specific Projects.
-2. Set the Fail conditions as described in the preceding section [Manage PR test settings](snyk-scm-integration-good-practices.md#manage-pr-test-settings):
-   * **Fail only** for **Only fail when the PR is adding a dependency with issues**.
-   * Check both **Only Fail for high severity issues** and Only **fail when the issues found have a fix available**.
+2. Set the Fail conditions as described in the section [Manage PR Check settings](snyk-scm-integration-good-practices.md#manage-pr-check-settings):
+   * Select the fail condition **Only fail when the PR is adding a dependency with issues**.
+   * Check both **Only Fail for high or critical severity issues** and Only **fail when the issues found have a fix available**.
 
 ## Stage 4: Enable Blocking PRs
 
@@ -147,17 +132,17 @@ The example that follows shows a fix pull request opened by Snyk:
 
 To configure the PR test settings for specific Projects, select the relevant Organization and go to Organization **Settings** <img src="../../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> > **Integrations > Edit Settings.**
 
-<figure><img src="../../../.gitbook/assets/automatic.png" alt="PR test settings"><figcaption><p>PR test settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt="Automatic fix pull request settings" width="563"><figcaption><p>Automatic fix pull request settings</p></figcaption></figure>
 
 Snyk recommends that you exclude patches from the auto fix PRs, if your developers are not familiar with how to use and execute them.
 
 Ask your developers to consider the merge advice label that appears on the auto fix PRs:
 
-<figure><img src="../../../.gitbook/assets/merge-advice-review-recommended (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (18).png" alt="Merge advice label"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/merge-advice-review-recommended (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (18).png" alt="Merge advice label - review recommended" width="324"><figcaption><p>Merge advice label - review recommended</p></figcaption></figure>
 
-![](<../../../.gitbook/assets/advice-green (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (19).png>)
+<figure><img src="../../../.gitbook/assets/advice-green (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (19).png" alt="Merge advice label - high chance of success" width="333"><figcaption><p>Merge advice label - high chance of success</p></figcaption></figure>
 
-![Merge advice label](<../../../.gitbook/assets/merge-advice (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (30).png>)
+<figure><img src="../../../.gitbook/assets/merge-advice (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (30).png" alt="Merge advice label - not enough data yet" width="312"><figcaption><p>Merge advice label - not enough data yet</p></figcaption></figure>
 
 {% hint style="info" %}
 Snyk auto fix PRs are generated only for new issues.
@@ -186,9 +171,9 @@ When your Group is ready to start tackling security technical debt, you can conf
 
 ### **Supported languages and repos**
 
-Snyk currently supports automatic upgrade PRs for npm, Yarn, and Maven-Central projects through GitHub, GitHub Enterprise Server, and BitBucket Cloud, including use of the Snyk Broker. For use with the Broker, ask your admin first to upgrade to v4.55.0 or later.
+Snyk currently supports automatic upgrade PRs for npm, Yarn, and Maven-Central Projects through GitHub, GitHub Enterprise Server, and BitBucket Cloud, including use of the Snyk Broker. For use with the Broker, ask your admin first to upgrade to v4.55.0 or later.
 
-### **Enable automatic dependency upgrade PRs for a specific project**
+### **Enable automatic dependency upgrade PRs for a specific Project**
 
 To set PR Settings on the Project level and override the PR settings configured at the Organization level:
 
