@@ -109,10 +109,8 @@ ignore:
         expires: '2024-01-01T00:00:00.000Z'
 ```
 
-For more information, see [The .snyk file](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md).
-
 {% hint style="info" %}
-Sree information about [.snyk files in monorepos](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../snyk-cli/test-for-vulnerabilities/using-a-.snyk-file-in-a-separate-directory-than-the-manifest-file.md).
+For more information, see [The .snyk file](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md) including the section about [.snyk files in monorepos](../../snyk-cli/test-for-vulnerabilities/the-.snyk-file.md#monorepos-and-complex-project-considerations) and .[snyk files in different directories from manifest files](../../snyk-cli/test-for-vulnerabilities/using-a-.snyk-file-in-a-separate-directory-than-the-manifest-file.md).
 {% endhint %}
 
 ### Ignoring issues with policy actions
