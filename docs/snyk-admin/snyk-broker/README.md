@@ -27,7 +27,7 @@ Snyk Broker includes a Server and a Client, basic components that are the same a
 
 ### How to download and install Snyk Broker
 
-The Snyk Broker project is hosted on [GitHub](https://github.com/snyk/broker) and published as a set of Docker images for specific integrations. Snyk provides a [Helm Chart](https://github.com/snyk/snyk-broker-helm) to deploy the Snyk Broker.&#x20;
+The Snyk Broker project is hosted on [GitHub](https://github.com/snyk/broker) and published as a set of Docker images for specific integrations. Snyk provides a [Helm Chart](https://github.com/snyk/snyk-broker-helm) to deploy the Snyk Broker. To deploy Broker, you must install and configure an integration.
 
 {% hint style="info" %}
 Snyk recommends using Helm as the simplest way to deploy Snyk Broker. You can also use Docker to run the Snyk Broker Client or run npm `install snyk-broker`.
@@ -37,7 +37,16 @@ This documentation provides detailed instructions for using [Helm](install-and-c
 
 ## **Integrations with Snyk Broker**
 
-The Broker Client is [published](https://github.com/snyk/broker) as a set of Docker images, each configured for a specific Git service. Configure each type of integration using environment variables as explained in the Snyk Broker [Client integration setups](snyk-broker-set-up-examples/). Snyk Broker currently integrates with the following Git repository systems:
+Install each type of integration and configure using environment variables as explained in these pages:
+
+* [Install and configure Broker using Helm](install-and-configure-broker-using-helm/)
+* [Install and configure Broker using Docker](install-and-configure-broker-using-docker/)
+
+Snyk Broker currently integrates with the Git repository systems listed here, with links to the Docker instructions. Installing with Helm is explained for each repository on one page, [Install and configure Broker using Helm](install-and-configure-broker-using-helm/).
+
+{% hint style="info" %}
+Configuration information for the environment variables is found on the pages with Docker instructions.
+{% endhint %}
 
 * [GitHub](../../integrations/git-repository-scm-integrations/github-integration.md) and [GitHub Enterprise](../../integrations/git-repository-scm-integrations/github-enterprise-integration.md) (Cloud and On-prem)
 * [GitLab](../../integrations/git-repository-scm-integrations/gitlab-integration.md) (Cloud and On-prem)
@@ -47,6 +56,8 @@ The Broker Client is [published](https://github.com/snyk/broker) as a set of Doc
 In addition, Snyk Broker integrates with [Jira Server/Jira Data Center](../../integrations/notifications-ticketing-system-integrations/jira.md), [JFrog Artifactory](../../integrations/private-registry-integrations/artifactory-repository-setup.md), and [Nexus Repository Manager](../../integrations/private-registry-integrations/nexus-repo-manager-setup.md).
 
 With the Container Registry Agent, Snyk Broker also connects to all [Snyk-supported container registries](snyk-broker-container-registry-agent/).
+
+You can also use [derived Docker images](snyk-broker-set-up-examples/derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for each integration and the Container Registry Agent.
 
 ## **Using Snyk Broker to scan your code**
 
