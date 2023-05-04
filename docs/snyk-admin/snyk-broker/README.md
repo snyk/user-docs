@@ -25,6 +25,8 @@ Snyk Broker is designed to connect Snyk products to self-hosted integrations tha
 
 Snyk Broker includes a Server and a Client, basic components that are the same across all integrations. The Broker Server runs on the Snyk SaaS backend and is provided by Snyk; no installation is required. The Broker Client is a [Docker image](https://hub.docker.com/r/snyk/broker/) deployed in your infrastructure. For more information, see [Components of Snyk Broker](components-of-snyk-broker.md) and [Connections with Snyk Broker](connections-with-snyk-broker.md).
 
+See [Prepare Snyk Broker for deployment](prepare-snyk-broker-for-deployment.md) for information about prerequisites, choosing components, network configuration, and credentials.
+
 ### How to download and install Snyk Broker
 
 The Snyk Broker project is hosted on [GitHub](https://github.com/snyk/broker) and published as a set of Docker images for specific integrations. Snyk provides a [Helm Chart](https://github.com/snyk/snyk-broker-helm) to deploy the Snyk Broker. To deploy Broker, you must install and configure an integration.
