@@ -2,7 +2,9 @@
 
 ## Scanning archives
 
-In addition to testing images from a local Docker daemon or remote registry, Snyk can directly scan or monitor a Docker or OCI archive.
+In addition to testing images from a local Docker daemon or remote registry, Snyk can directly scan or monitor a Docker or OCI archive by running, `snyk container test docker-archive:<filename>.tar` or `snyk container test oci-archive:<filename>.tar.`&#x20;
+
+Examples:
 
 ```
 snyk container test docker-archive:archive.tar
@@ -11,7 +13,9 @@ snyk container test oci-archive:archive.tar
 
 ## Testing multi-platform images
 
-Some repositories represent multi-manifests, pointing to several different images depending on the operating system and architecture required. The Snyk CLI `container test` command can be used to explicitly test an image for a specific platform:
+Some repositories represent multi-manifests, pointing to several different images depending on the operating system and architecture required. The Snyk CLI `container test` command can be used to explicitly test an image for a specific platform.
+
+Example:
 
 ```
 snyk container test --platform=linux/arm64 debian
