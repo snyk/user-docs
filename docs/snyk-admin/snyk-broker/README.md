@@ -47,7 +47,7 @@ Install each type of integration and configure using environment variables as ex
 {% hint style="info" %}
 Configuration information for the environment variables is found on the pages with Docker instructions.
 
-Installing with Helm is explained for each repository on one page, [Install and configure Broker using Helm](install-and-configure-broker-using-helm/).
+Installing with Helm is explained for each repository on the page [Install and configure Broker using Helm](install-and-configure-broker-using-helm/).
 {% endhint %}
 
 Snyk Broker currently integrates with the Git repository systems listed here, with links to the Docker instructions where you will find the environment variables defined:
@@ -71,13 +71,13 @@ For information about advanced configuration as needed for your installation, se
 
 ## **Using Snyk Broker to scan your code**
 
-To use **Snyk Open Source** with Snyk Broker, you need only the Broker Server and  Broker Client components. The Broker Client is published as a set of Docker images, each configured for a specific Git service. Configure each type of integration using environment variables as explained in the [Snyk Broker-Client integration setups](snyk-broker-set-up-examples/).
+To use **Snyk Open Source** with Snyk Broker, you need only the Broker Server and  Broker Client components. The Broker Client is published as a set of Docker images, each configured for a specific Git service. Configure each type of integration using environment variables as explained in the [Snyk Broker-Client integration setups](snyk-broker-set-up-examples/). The environment variable definitions are the same for an [installation using Helm](install-and-configure-broker-using-helm/).
 
 To scan other types of code with Snyk Broker, you must add a component or configurations and add parameters to the Broker Client setup:
 
-* **Snyk Code** – add the [**Code Agent** ](snyk-broker-code-agent/)component to enable Snyk Code analysis of repositories in SCMs that are integrated through Snyk Broker.
-* **Snyk Container** – add the [**Container Registry Agent**](snyk-broker-container-registry-agent/) to enable the connection to network-restricted container registries and the analysis of container images.
-* **Snyk Infrastructure as Code** – configure the [**`accept.json`** file with additional parameters](snyk-broker-infrastructure-as-code-detection/) to detect and analyze Terraform, CloudFormation, and Kubernetes configuration files through Snyk Broker.
+* **Snyk Code** – add the [Code Agent ](snyk-broker-code-agent/)component to enable Snyk Code analysis of repositories in SCMs that are integrated through Snyk Broker. You can also [grant Broker access to perform a Git clone of your repository](install-and-configure-broker-using-docker/advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md) by adding an environment variable: `ACCEPT_CODE=true.`
+* **Snyk Container** – add the [Container Registry Agent](snyk-broker-container-registry-agent/) to enable the connection to network-restricted container registries and the analysis of container images.
+* **Snyk Infrastructure as Code** – configure the [`accept.json` file with additional parameters](snyk-broker-infrastructure-as-code-detection/) to detect and analyze Terraform, CloudFormation, and Kubernetes configuration files through Snyk Broker.
 
 ## Common questions about Snyk Broker
 
@@ -85,15 +85,19 @@ To scan other types of code with Snyk Broker, you must add a component or config
 Snyk Broker is updated each time new features become available and when there are fixes.
 
 **How often is Snyk Broker checked for vulnerabilities?**\
-The Snyk Broker application and images are being tested daily for vulnerabilities.
+The Snyk Broker application and images are tested daily for vulnerabilities.
 
 **What is the SLA to fix vulnerabilities?**\
 There is a 14-day SLA for fixing high vulnerabilities and a five-day SLA for fixing critical vulnerabilities in public images.
 
 ## Additional information for users
 
-You can view the [License: Apache License, Version 2.0](https://github.com/snyk/broker/blob/master/LICENSE)
+If you need to upgrade, see [Upgrade the Snyk Broker Client](how-to-install-and-configure-your-snyk-broker-client.md).
 
-To submit pull requests, see [Contributing](https://github.com/snyk/broker/blob/master/.github/CONTRIBUTING.md)
+Troubleshooting information is provided on the [Troubleshooting Broker](troubleshooting-broker.md) page.
+
+You can view the [license, Apache License, Version 2.0](https://github.com/snyk/broker/blob/master/LICENSE).
+
+To submit pull requests, see [Contributing](https://github.com/snyk/broker/blob/master/.github/CONTRIBUTING.md).
 
 See [Security](https://github.com/snyk/broker/blob/master/SECURITY.md) for specific information about Broker.
