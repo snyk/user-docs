@@ -635,7 +635,7 @@
       * [Detecting Terraform configuration files using Snyk Broker (Custom)](snyk-admin/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-terraform-configuration-files-using-a-broker.md)
       * [Detecting CloudFormation configuration files using Snyk Broker (Custom)](snyk-admin/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-cloudformation-configuration-files-using-a-broker.md)
       * [Detecting Kubernetes configuration files using Snyk Broker (Custom)](snyk-admin/snyk-broker/snyk-broker-infrastructure-as-code-detection/detecting-kubernetes-configuration-files-using-a-broker.md)
-    * [Upgrade the Snyk Broker Client](snyk-admin/snyk-broker/how-to-install-and-configure-your-snyk-broker-client.md)
+    * [Upgrade the Snyk Broker Client](snyk-admin/snyk-broker/upgrade-the-snyk-broker-client.md)
     * [Troubleshooting Broker](snyk-admin/snyk-broker/troubleshooting-broker.md)
   * [Manage users and permissions](snyk-admin/manage-users-and-permissions/README.md)
     * [Manage users in your organizations](snyk-admin/manage-users-and-permissions/manage-users-in-your-organizations.md)

@@ -92,7 +92,7 @@ There is a 14-day SLA for fixing high vulnerabilities and a five-day SLA for fix
 
 ## Additional information for users
 
-If you need to upgrade, see [Upgrade the Snyk Broker Client](how-to-install-and-configure-your-snyk-broker-client.md).
+If you need to upgrade, see [Upgrade the Snyk Broker Client](upgrade-the-snyk-broker-client.md).
 
 Troubleshooting information is provided on the [Troubleshooting Broker](troubleshooting-broker.md) page.
 

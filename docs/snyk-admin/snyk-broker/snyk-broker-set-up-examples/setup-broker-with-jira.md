@@ -32,7 +32,7 @@ Follow these steps to configure Snyk Broker for connection to Jira.
                -e PORT=8000 \
            snyk/broker:jira
     ```
-5. If necessary, go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../how-to-install-and-configure-your-snyk-broker-client.md) and make any configuration changes needed, for example, providing the CA (Certificate Authority) to the Broker Client configuration when the Jira instance is using a private certificate.
+5. If necessary, go to the Advanced Configuration section of [Install and configure the Snyk Broker client](../upgrade-the-snyk-broker-client.md) and make any configuration changes needed, for example, providing the CA (Certificate Authority) to the Broker Client configuration when the Jira instance is using a private certificate.
 6. Paste the Broker Client configuration to start the Broker Client container.
 7. Once the container is up, and the Jira Integrations page shows the connection to Jira, under Projects, create Jira tickets
 
