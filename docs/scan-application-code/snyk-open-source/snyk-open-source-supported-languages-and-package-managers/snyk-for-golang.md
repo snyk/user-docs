@@ -64,7 +64,7 @@ By default, dependencies for Go Modules Projects imported via Git are resolved a
 
 This means you may see more dependencies and issues reported, including potential false positives, than for Projects tested in the CLI.
 
-To avoid this issue and achieve more accurate scans, enable [full source code analysis](snyk-for-golang.md#full-source-code-analysis).
+To avoid this issue and achieve more accurate scans, enable [full source code analysis](snyk-for-golang.md#enable-full-source-code-analysis).
 {% endhint %}
 
 If full source code analysis is enabled, Snyk uses the `go list -json -deps ./...` command to build the dependency tree. Otherwise, it uses `go mod graph` .
