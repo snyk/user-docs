@@ -138,7 +138,7 @@ Snyk recommends that you exclude patches from the auto fix PRs, if your develope
 
 Ask your developers to consider the merge advice label that appears on the auto fix PRs:
 
-<figure><img src="../../../.gitbook/assets/merge-advice-review-recommended (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (35).png" alt="Merge advice label - review recommended" width="324"><figcaption><p>Merge advice label - review recommended</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/merge-advice-review-recommended (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (31).png" alt="Merge advice label - review recommended" width="324"><figcaption><p>Merge advice label - review recommended</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/advice-green (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10).png" alt="Merge advice label - high chance of success" width="333"><figcaption><p>Merge advice label - high chance of success</p></figcaption></figure>
 
