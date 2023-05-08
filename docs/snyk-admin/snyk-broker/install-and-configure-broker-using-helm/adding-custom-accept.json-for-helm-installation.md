@@ -1,10 +1,10 @@
 # Adding custom accept.json for Helm installation
 
-To add a custom `accept.json` file, include it in `values.yaml`
+To add a custom `accept.json` file, include it in `values.yaml`.
 
-See example `accept.json` files [HERE](https://github.com/snyk/broker/tree/master/client-templates)
+See the example `accept.json` files in the [client templates on the Snyk Broker Helm repository](https://github.com/snyk/broker/tree/master/client-templates).
 
-The `values.yaml` file should be structured like this:
+Structure the `values.yaml` file like this:
 
 ```
 scmType: github-com
