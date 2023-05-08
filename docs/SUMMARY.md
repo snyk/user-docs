@@ -582,6 +582,7 @@
         * [Multi-tenant settings for Helm chart installation](snyk-admin/snyk-broker/install-and-configure-broker-using-helm/advanced-setup-for-helm-chart-installation/multi-tenant-settings-for-helm-chart-installation.md)
         * [Deploying multiple Brokers in the same namespace](snyk-admin/snyk-broker/install-and-configure-broker-using-helm/deploying-multiple-brokers-in-the-same-namespace.md)
         * [Custom additional options for Broker Helm Chart installation](snyk-admin/snyk-broker/install-and-configure-broker-using-helm/advanced-setup-for-helm-chart-installation/custom-additional-options-for-broker-helm-chart-installation.md)
+        * [Broker rules for Snyk Code](snyk-admin/snyk-broker/install-and-configure-broker-using-helm/advanced-setup-for-helm-chart-installation/broker-rules-for-snyk-code.md)
     * [Install and configure Broker using Docker](snyk-admin/snyk-broker/install-and-configure-broker-using-docker/README.md)
       * [Snyk Broker - Client integration setups with Docker](snyk-admin/snyk-broker/snyk-broker-set-up-examples/README.md)
         * [Set up Snyk Broker with GitHub](snyk-admin/snyk-broker/snyk-broker-set-up-examples/broker-example-set-up-snyk-broker-with-github.md)
