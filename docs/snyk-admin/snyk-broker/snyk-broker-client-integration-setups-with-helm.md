@@ -113,6 +113,38 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              -n snyk-broker --create-namespace
 ```
 
+## Nexus 3 Helm install
+
+For more details including definitions of the environment variables, see [Set up Snyk Broker with Nexus Repository Manager](snyk-broker-set-up-examples/set-up-snyk-broker-with-nexus-repository-manager.md).
+
+Note: for `baseNexusUrl` and `nexusUrl` values include `https://`
+
+```
+helm install snyk-broker-chart snyk-broker/snyk-broker \
+             --set scmType=nexus \
+             --set brokerToken=<ENTER_BROKER_TOKEN> \
+             --set baseNexusUrl=<ENTER_BASE_NEXUS_URL> \
+             --set nexusUrl=<ENTER_NEXUS_URL>
+             --set brokerClientValidationUrl=<ENTER_BROKER_CLIENT_VALIDATION_URL> \
+             -n snyk-broker --create-namespace
+```
+
+## Nexus 2 Helm install
+
+For more details including definitions of the environment variables, see [Set up Snyk Broker with Nexus Repository Manager](snyk-broker-set-up-examples/set-up-snyk-broker-with-nexus-repository-manager.md).
+
+Note: for `baseNexusUrl` and `nexusUrl` values include `https://`
+
+```
+helm install snyk-broker-chart snyk-broker/snyk-broker \
+             --set scmType=nexus2 \
+             --set brokerToken=<ENTER_BROKER_TOKEN> \
+             --set baseNexusUrl=<ENTER_BASE_NEXUS_URL> \
+             --set nexusUrl=<ENTER_NEXUS_URL>
+             --set brokerClientValidationUrl=<ENTER_BROKER_CLIENT_VALIDATION_URL> \
+             -n snyk-broker --create-namespace
+```
+
 ## Jira notifications Helm install
 
 For more details including definitions of the environment variables see [Set up Snyk Broker with Jira](snyk-broker-set-up-examples/setup-broker-with-jira.md).
