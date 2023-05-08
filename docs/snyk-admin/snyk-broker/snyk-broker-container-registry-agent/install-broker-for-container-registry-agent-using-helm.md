@@ -1,8 +1,8 @@
 # Install Broker for Container Registry Agent using Helm
 
-While the documentation for the [Snyk Broker](https://github.com/snyk/broker) requires the parameter `CR_AGENT_URL`, it is not required in this case.
+Installing the [Broker Container Registry Agent using Docker](./) requires the parameter `CR_AGENT_URL`, but it is not required to install using Helm.
 
-Finally, you must include an `accept.json` file for this deployment. You must copy the new accept.json to the /snyk-broker folder
+You must include an `accept.json` file for this deployment. Copy the new accept.json to the /snyk-broker folder
 
 ```
 helm install snyk-broker-chart snyk-broker/snyk-broker \
@@ -30,7 +30,7 @@ Allowed values for `crType`:
 `ecr`\
 `digitalocean-cr`
 
-The following **Container Registry types (crType) require specific parameters**.
+Elastic Container Registry and Digital Ocean Container Registry require specific parameters as explained in the sections that follow.
 
 ## **Elastic Container Registry (ecr)**
 
