@@ -87,7 +87,7 @@ Snyk scans your Projects on either a daily or a weekly basis. When new vulnerabi
 
 The example that follows shows a fix pull request opened by Snyk.
 
-<figure><img src="../../.gitbook/assets/github_fix_pr_cropped-14july2022.png" alt="Fix pull request opened by Snyk"><figcaption><p>Fix pull request opened by Snyk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github_fix_pr_cropped-14july2022 (1).png" alt="Fix pull request opened by Snyk"><figcaption><p>Fix pull request opened by Snyk</p></figcaption></figure>
 
 To review and adjust the automatic fix pull request settings in the Snyk GitHub Integration settings page, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings** **>** **Integrations > Source control > GitHub**.
 
@@ -111,7 +111,7 @@ The Snyk [PR Checks](../../scan-application-code/run-pr-checks/) feature allows 
 
 This example shows how Snyk PR checks appear on the GitHub pull request page.
 
-<figure><img src="../../.gitbook/assets/pr_testing-14july2022.png" alt="Snyk pull request checks on GitHub pull request page"><figcaption><p>Snyk pull request checks on GitHub pull request page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/pr_testing-14july2022 (1).png" alt="Snyk pull request checks on GitHub pull request page"><figcaption><p>Snyk pull request checks on GitHub pull request page</p></figcaption></figure>
 
 You can review and adjust the pull request test settings via the Snyk GitHub Integration settings page in <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings** **>** **Integrations > Source control > GitHub**.
 
@@ -261,16 +261,16 @@ For example, to show a badge for the 4.x branch of the express repo, you would u
 
 #### Badge results
 
-* A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (109) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="No vulnerabilities" data-size="line">
-* A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1).png" alt="Number of vulnerabilities" data-size="line">
-* A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (11) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt="Unknown vulnerabilities" data-size="line">
+* A green badge indicates that there are no vulnerabilities. <img src="../../.gitbook/assets/image (109) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="No vulnerabilities" data-size="line">
+* A red badge indicates how many vulnerabilities were found. <img src="../../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Number of vulnerabilities" data-size="line">
+* A grey badge indicates that the repository has not been scanned. <img src="../../.gitbook/assets/image (11) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Unknown vulnerabilities" data-size="line">
 
 #### **Badge styles**
 
 To change the style of the badge, you can add the following query parameters after `badge.svg`:
 
-* Flat rectangle with squared edges: `?style=flat-square` <img src="../../.gitbook/assets/image (1) (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Flat rectangle badge" data-size="line">
-* "Plastic" rectangle with rounded edges and shading `?style=plastic` <img src="../../.gitbook/assets/image (109) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="&#x22;Plastic&#x22; rectangle badge" data-size="line">
+* Flat rectangle with squared edges: `?style=flat-square` <img src="../../.gitbook/assets/image (1) (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Flat rectangle badge" data-size="line">
+* "Plastic" rectangle with rounded edges and shading `?style=plastic` <img src="../../.gitbook/assets/image (109) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="&#x22;Plastic&#x22; rectangle badge" data-size="line">
 
 ### **npm badges**
 

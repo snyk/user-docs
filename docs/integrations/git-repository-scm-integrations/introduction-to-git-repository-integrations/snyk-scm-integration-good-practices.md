@@ -54,7 +54,7 @@ To disable notifications for all the users in an Org ahead of your import, desel
 
 Go to the **Projects** page in the Snyk UI, select **Add projects**, select the repos to import to Snyk, and click **Add selected repositories**.
 
-<figure><img src="../../../.gitbook/assets/image (110).png" alt="Add projects to Snyk"><figcaption><p>Add projects to Snyk</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Add projects to Snyk"><figcaption><p>Add projects to Snyk</p></figcaption></figure>
 
 * Snyk starts scanning the selected repos for dependency files (for example, **package.json**) in the entire directory tree and imports these files as Projects.
 * Snyk evaluates root folders and any custom file locations defined. If no manifest or configuration files are found, Snyk alerts you that no files can be imported.
@@ -63,7 +63,7 @@ Go to the **Projects** page in the Snyk UI, select **Add projects**, select the 
   After a Project is imported, it is continuously checked for vulnerabilities.
 
 {% hint style="info" %}
-To confirm that a Project was imported, go to the **Add project** import page for the integration. Imported projects are indicated by a ✔ next to the repository name: <img src="../../../.gitbook/assets/image (103) (1) (1) (1) (1) (1).png" alt="Check next to name of repo" data-size="line">
+To confirm that a Project was imported, go to the **Add project** import page for the integration. Imported projects are indicated by a ✔ next to the repository name: <img src="../../../.gitbook/assets/image (103) (1) (1) (1) (1) (1) (1) (1).png" alt="Check next to name of repo" data-size="line">
 {% endhint %}
 
 See [Import a Project](../../../getting-started/quickstart/import-a-project.md) for more details.
@@ -138,11 +138,11 @@ Snyk recommends that you exclude patches from the auto fix PRs, if your develope
 
 Ask your developers to consider the merge advice label that appears on the auto fix PRs:
 
-<figure><img src="../../../.gitbook/assets/merge-advice-review-recommended (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5).png" alt="Merge advice label - review recommended" width="324"><figcaption><p>Merge advice label - review recommended</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/merge-advice-review-recommended (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (35).png" alt="Merge advice label - review recommended" width="324"><figcaption><p>Merge advice label - review recommended</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/advice-green (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (14).png" alt="Merge advice label - high chance of success" width="333"><figcaption><p>Merge advice label - high chance of success</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/advice-green (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10).png" alt="Merge advice label - high chance of success" width="333"><figcaption><p>Merge advice label - high chance of success</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/merge-advice (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (24).png" alt="Merge advice label - not enough data yet" width="312"><figcaption><p>Merge advice label - not enough data yet</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/merge-advice (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="Merge advice label - not enough data yet" width="312"><figcaption><p>Merge advice label - not enough data yet</p></figcaption></figure>
 
 {% hint style="info" %}
 Snyk auto fix PRs are generated only for new issues.

@@ -4,7 +4,7 @@ Snyk shows your [preferred Organization](https://docs.snyk.io/features/user-and-
 
 ## Switch Group
 
-If your company uses multiple Groups, then to change which Organization you're viewing, click the Group navigation switcher (![](<../../.gitbook/assets/image (4) (3).png>) icon):
+If your company uses multiple Groups, then to change which Organization you're viewing, click the Group navigation switcher (![](<../../.gitbook/assets/image (4).png>) icon):
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-25 at 10.06.46.png" alt="Switch Group"><figcaption><p>Switch Group</p></figcaption></figure>
 
