@@ -7,7 +7,7 @@ Use Snyk IaC with the [Snyk Web UI](../../getting-started/quickstart/create-a-sn
 1. In your **Projects** area, select the project to open
 2. Snyk IaC displays information and issue cards for that project:
 
-![](<../../.gitbook/assets/image (165) (1) (1) (1) (2) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (165) (1) (1) (1) (2) (1) (1) (1) (1).png>)
 
 Information available shows standard Snyk Project information (see [introduction-to-snyk-projects](../../manage-issues/introduction-to-snyk-projects/ "mention")), including:
 
