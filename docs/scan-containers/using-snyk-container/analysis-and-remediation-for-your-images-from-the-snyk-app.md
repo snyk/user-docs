@@ -40,7 +40,7 @@ The following information is displayed:
   * A specific binary or OS packages for binaries and packages containing issues
   * Dockerfile instructions: If you attach your Dockerfile, then you can filter to view issues associated only with the base image, or o view Dockerfile-related advice (user instruction), or both
 
-<figure><img src="../../.gitbook/assets/image (165) (1) (3) (1) (1) (1) (1) (1).png" alt="Filters for binaries and images"><figcaption><p>Filters for binaries and images</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (165) (1) (3) (1) (1) (1) (1) (1) (3).png" alt="Filters for binaries and images"><figcaption><p>Filters for binaries and images</p></figcaption></figure>
 
 {% hint style="info" %}
 If there is only one category of issues in your container, for example, Node binary vulnerabilities or OS packages, this filter does not appear.\

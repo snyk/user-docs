@@ -39,9 +39,13 @@ To scan your dependencies in the CLI, ensure you have installed the relevant pac
 Snyk scans Go Modules Projects in the CLI at the _package_ level rather than the _module_ level, as Snyk has full access to your local source code.
 {% endhint %}
 
-To build the dependency tree, Snyk uses the `go list -json -deps ./...` command.
+{% hint style="info" %}
+Packages from the [Go standard library](https://pkg.go.dev/std) are not supported or included in the dependency tree.&#x20;
 
-Packages from the Go standard library are excluded from the dependency tree.
+Packages under `golang.org/x/` which are [part of the Go Project](https://pkg.go.dev/golang.org/x) but outside the main Go tree _are_ supported.
+{% endhint %}
+
+To build the dependency tree, Snyk uses the `go list -json -deps ./...` command.
 
 When you test Go Modules Projects using the CLI, Snyk does not require their dependencies to be installed, but you must have a `go.mod` file at the root of your Project. `go list` uses this and your Project source code to build a complete dependency tree.
 

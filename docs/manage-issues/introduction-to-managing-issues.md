@@ -28,7 +28,7 @@ These attributes can then be linked to Snyk [policies](policies/), to assign a p
 
 [Snyk ignore functions](issue-management/ignore-issues.md) allow you to declutter results that are not important:
 
-<figure><img src="../.gitbook/assets/image (103) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Ignore an issue"><figcaption><p>Ignore an issue</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (103) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Ignore an issue"><figcaption><p>Ignore an issue</p></figcaption></figure>
 
 ### Assess reachability <a href="#h.ts3kx23p4m7p" id="h.ts3kx23p4m7p"></a>
 

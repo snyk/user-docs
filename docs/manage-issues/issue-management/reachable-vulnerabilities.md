@@ -65,7 +65,7 @@ After import or testing of a project via Snyk UI, the project is monitored by Sn
 
 <figure><img src="../../.gitbook/assets/image (12) (1) (1) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Reachability Call Path"><figcaption><p>Reachability Call Path</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (126) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Priority Score"><figcaption><p>Priority Score</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (126) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Priority Score"><figcaption><p>Priority Score</p></figcaption></figure>
 
 ## Reports
 
