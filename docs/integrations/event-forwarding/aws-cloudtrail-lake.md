@@ -38,7 +38,7 @@ After creating the integration in **AWS CloudTrail Lake**, configure the integra
 
 To do this, go to [the Snyk integrations page](https://app.snyk.io/integrations), navigate to **Cloud events**, and click the **AWS CloudTrail Lake** tile:
 
-<figure><img src="../../.gitbook/assets/aws-ctl-3 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="CloudTrail Lake tile on Snyk integrations page" width="563"><figcaption><p>CloudTrail Lake tile on Snyk integrations page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aws-ctl-3 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="CloudTrail Lake tile on Snyk integrations page" width="563"><figcaption><p>CloudTrail Lake tile on Snyk integrations page</p></figcaption></figure>
 
 Enter a **name** for this integration, your **AWS Account ID**, and the **Channel ARN** from the previous step.
 
@@ -55,7 +55,7 @@ Go to the [AWS CloudTrail Lake settings](https://app.snyk.io/manage/integrations
 
 Select **Remove integration** and confirm that you want to remove the integration.
 
-<figure><img src="../../.gitbook/assets/aws-ctl-6 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Remove integration button"><figcaption><p>Remove integration button</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aws-ctl-6 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Remove integration button"><figcaption><p>Remove integration button</p></figcaption></figure>
 
 This action removes Snyk’s configuration for this integration, which will **prevent any further audit logs from being sent to AWS CloudTrail Lake**. This does not remove the Snyk integration in AWS CloudTrail Lake. To do this, go to AWS CloudTrail Lake and delete the Snyk integration from the **Integration** list.
 

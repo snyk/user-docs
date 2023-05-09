@@ -63,7 +63,7 @@ Go to the **Projects** page in the Snyk UI, select **Add projects**, select the 
   After a Project is imported, it is continuously checked for vulnerabilities.
 
 {% hint style="info" %}
-To confirm that a Project was imported, go to the **Add project** import page for the integration. Imported projects are indicated by a ✔ next to the repository name: <img src="../../../.gitbook/assets/image (103) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Check next to name of repo" data-size="line">
+To confirm that a Project was imported, go to the **Add project** import page for the integration. Imported projects are indicated by a ✔ next to the repository name: <img src="../../../.gitbook/assets/image (103) (1) (1) (1) (1) (1) (1) (1).png" alt="Check next to name of repo" data-size="line">
 {% endhint %}
 
 See [Import a Project](../../../getting-started/quickstart/import-a-project.md) for more details.
@@ -138,11 +138,11 @@ Snyk recommends that you exclude patches from the auto fix PRs, if your develope
 
 Ask your developers to consider the merge advice label that appears on the auto fix PRs:
 
-<figure><img src="../../../.gitbook/assets/merge-advice-review-recommended (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10).png" alt="Merge advice label - review recommended" width="324"><figcaption><p>Merge advice label - review recommended</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/merge-advice-review-recommended (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (35).png" alt="Merge advice label - review recommended" width="324"><figcaption><p>Merge advice label - review recommended</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/advice-green (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (16).png" alt="Merge advice label - high chance of success" width="333"><figcaption><p>Merge advice label - high chance of success</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/advice-green (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10).png" alt="Merge advice label - high chance of success" width="333"><figcaption><p>Merge advice label - high chance of success</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/merge-advice (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (9).png" alt="Merge advice label - not enough data yet" width="312"><figcaption><p>Merge advice label - not enough data yet</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/merge-advice (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="Merge advice label - not enough data yet" width="312"><figcaption><p>Merge advice label - not enough data yet</p></figcaption></figure>
 
 {% hint style="info" %}
 Snyk auto fix PRs are generated only for new issues.
@@ -180,7 +180,7 @@ To set PR Settings on the Project level and override the PR settings configured 
 1. Open the Organization for which you would like to enable automatic upgrade PRs and go to the **Projects** tab.
 2.  Select and expand the relevant Project, select the relevant Target, and using the cog icon, open the **Settings**:
 
-    <img src="../../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (8).png" alt="Cog icon for Project settings" data-size="original">
+    <img src="../../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10).png" alt="Cog icon for Project settings" data-size="original">
 3. In the Settings area, in the left panel menu, click the Integration settings to apply unique settings for that specific Project.
 4. In settings that load, scroll to the **Automatic dependency upgrade pull requests** and click **Disabled**.
 5. In the options that appear:

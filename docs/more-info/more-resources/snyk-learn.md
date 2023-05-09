@@ -9,11 +9,13 @@
 
 Snyk Learn teaches developers how to stay secure, with interactive lessons exploring vulnerabilities across a variety of languages and ecosystems.
 
-Many graduate developers may have completed their whole degree program without ever taking a course dedicated to computer security. Snyk Learn helps to educate these developers with knowledge and expertise, both theory and practical.
+Many graduate developers may have completed their whole degree program without ever taking a course dedicated to computer security. Snyk Learn helps to educate these developers (and all developers) with knowledge and expertise, both theory and practical.
 
 ### Lessons for developers
 
 Our lessons are targeted toward developers who want to learn more about specific vulnerabilities and how to mitigate them. Snyk Learn is also helpful for developers, team leads, and managers who want to enhance the general security knowledge of their team.
+
+The lessons at Snyk Learn are aligned with the [NIST NICE Framework](https://www.nist.gov/itl/applied-cybersecurity/nice) Work Role Categories and Competency Areas.
 
 ### Lesson structure
 
@@ -27,15 +29,15 @@ Lessons are structured as follows:
 
 ### Language coverage
 
-There are many lessons covering many different languages. The languages being covered currently are JavaScript, Java, C#, Python, PHP, and Go. We also have a couple of lessons for Kubernetes. More languages will be covered in the future.
+There are many lessons covering many different languages. The languages being covered currently are JavaScript, Java, C#, Python, PHP, Go, and C++. We also have a couple of lessons for Kubernetes. More languages will be covered in the future.
 
 ### Learning paths
 
-We offer learning paths as a way for learners to take a predefined set of lessons. Right now, we offer the OWASP Top 10 learning path which includes ten modules and twelve lessons.
+We offer [learning paths](https://learn.snyk.io/learning-paths/) as a way for learners to take a predefined set of lessons. We offer multiple learning paths including OWASP Top 10 and Snyk Top 10.
 
 #### OWASP Top 10
 
-This learning path covers the [OWASP](https://owasp.org/) top 10. Each OWASP category is a module on Learn. Within each module is one to two lessons. Completing all ten modules will result in the successful completion of this OWASP learning path. The modules are:
+This learning path covers the [OWASP](https://owasp.org/) top 10. Each OWASP category is a module on Learn. Each module contains at least one lesson. Completing all ten modules will result in the successful completion of this OWASP learning path. The modules are:
 
 * Broken Access Control
 * Cryptographic Failures
@@ -47,6 +49,21 @@ This learning path covers the [OWASP](https://owasp.org/) top 10. Each OWASP cat
 * Software and Data Integrity Failures
 * Security Logging and Monitoring Failures
 * Server-Side Request Forgery
+
+#### Snyk Top 10
+
+This learning path covers the Snyk top 10. This covers the top 10 Open Source vulnerabilities in the previous year found by Snyk. The modules are:
+
+* Denial of Service (DoS)
+* Remote Code Execution (RCE)
+* Deserialization of Untrusted Data
+* SQL Injection
+* Prototype Pollution
+* Insecure Temporary File
+* Directory/Path Traversal
+* Privilege Escalation
+* Regular Expression of Denial of Service (ReDoS)
+* Null Pointer Dereference
 
 ### Reporting on Snyk Learn adoption
 
