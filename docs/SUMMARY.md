@@ -350,6 +350,7 @@
         * [Running the snyk-to-html command](scan-application-code/snyk-code/cli-for-snyk-code/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/running-the-snyk-to-html-command.md)
         * [Viewing the HTML results](scan-application-code/snyk-code/cli-for-snyk-code/displaying-the-cli-results-in-an-html-format-using-the-snyk-to-html-feature/viewing-the-html-results.md)
     * [Using Snyk Code via the IDE](scan-application-code/snyk-code/using-snyk-code-via-ide.md)
+    * [Fix code issues automatically with Snyk IDE plugin (beta)](scan-application-code/snyk-code/fix-code-issues-automatically-with-snyk-ide-plugin-beta.md)
     * [Deployment options for Snyk Code](scan-application-code/snyk-code/deployment-options/README.md)
       * [Snyk Code Local Engine](scan-application-code/snyk-code/deployment-options/snyk-code-local-engine/README.md)
         * [Introduction to Snyk Code Local Engine](scan-application-code/snyk-code/deployment-options/snyk-code-local-engine/introduction.md)

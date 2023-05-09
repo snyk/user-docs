@@ -10,13 +10,13 @@ This feature is available in Enterprise plans. See [pricing plans](https://snyk.
 1. Click on **Integrations** tabs
 2. Select **Container orchestrators**
 
-![](<../../../.gitbook/assets/image (107) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+![](<../../../.gitbook/assets/image (243) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 3\. Click **Connect**
 
 4\. The **Integration ID** is created for the Kubernetes integration. This **Integration ID** is needed during the Snyk Controller installation
 
-![](<../../../.gitbook/assets/image (111) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
+![](<../../../.gitbook/assets/image (111) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
 
 5\. Create a [**Group** or **Org Service Account Token**](../../../snyk-admin/service-accounts.md). This **Service Account Token** is needed during the Snyk Controller installation
 
