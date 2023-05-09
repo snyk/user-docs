@@ -2,16 +2,13 @@
 
 Installing the Snyk Broker with the [Broker Helm Chart](https://github.com/snyk/snyk-broker-helm) is the easiest way to deploy Snyk Broker if you are using Kubernetes.
 
-{% hint style="info" %}
-The Helm chart does not manage connectivity, and thus you will be responsible for managing [ingress](ingress-options-with-snyk-broker-helm-installation.md) in the Kubernetes cluster.
-{% endhint %}
+**NOTE**\
+The Helm chart does not manage connectivity, and thus you will be responsible for managing [ingress](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/advanced-setup-for-helm-chart-installation/ingress-options-with-snyk-broker-helm-installation) in the Kubernetes cluster.
 
-{% hint style="warning" %}
 **Multi-tenant settings for EU and AU**\
 When you set up Broker, Code Agent, or both for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
 Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
 For the URLs, see [EU and AU account datacenter creation](https://docs.snyk.io/snyk-processes/data-residency-at-snyk#eu-and-au-datacenter-account-creation).
-{% endhint %}
 
 ## Considerations in using the Helm Chart to install Broker
 
@@ -68,7 +65,7 @@ To use this chart, you must first add the chart by adding the repo:
 
 `helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`
 
-Then run the commands for[ each SCM, registry, or Jira](../snyk-broker-client-integration-setups-with-helm.md).
+Then run the commands for [each SCM, registry, or Jira](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/snyk-broker-client-integration-setups-with-helm).
 
 * [GitHub](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#github.com-helm-install)
 * [GitHub Enterprise](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#github-enterprise-helm-install)
@@ -77,24 +74,24 @@ Then run the commands for[ each SCM, registry, or Jira](../snyk-broker-client-in
 * [Azure Repos](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#azure-repos-helm-install)
 * [JFrog Artifactory](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#artifactory-respository-helm-install)
 * [Jira](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#jira-notifications-helm-install)
-* Nexus 3
-* Nexus 2
+* [Nexus 3](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/snyk-broker-client-integration-setups-with-helm#nexus-3-helm-install)
+* [Nexus 2](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/snyk-broker-client-integration-setups-with-helm#nexus-2-helm-install)
 
 Additional commands are available to Install the Snyk Broker Code Agent and Container Registry Agent.
 
-* [Snyk Broker Code Agent (needed to enable SAST analysis)](../snyk-broker-code-agent/install-broker-for-code-agent-using-helm.md)
-* [Snyk Broker - Container Registry Agent (needed to connect to Container Registries)](../snyk-broker-container-registry-agent/install-broker-for-container-registry-agent-using-helm.md)
+* [Snyk Broker Code Agent](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-code-agent/install-broker-for-code-agent-using-helm) (needed to enable SAST analysis)
+* [Snyk Broker - Container Registry Agent](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-container-registry-agent/install-broker-for-container-registry-agent-using-helm) (needed to connect to Container Registries)
 
 ## Set advanced parameters for Snyk Broker using the Helm Chart
 
 When you set up Snyk Broker using Helm, you can set advanced parameters as explained on these pages:
 
-* [Parameters for troubleshooting and providing your own certificate with Helm](advanced-setup-for-helm-chart-installation/parameters-for-troubleshooting-and-providing-your-own-certificate-with-helm.md)
-* [Proxy settings for Broker Helm chart installation](advanced-setup-for-helm-chart-installation/proxy-settings-for-broker-helm-chart-installation.md)
-* [Credential pooling with Docker and Helm](../install-and-configure-broker-using-docker/advanced-configuration-for-snyk-broker-docker-installation/credential-pooling-with-docker-and-helm.md)
-* [Adding custom accept.json for Helm installation](adding-custom-accept.json-for-helm-installation.md)
-* [Ingress options with Snyk Broker Helm installation](ingress-options-with-snyk-broker-helm-installation.md)
-* [Multi-tenant settings for Helm chart installation](advanced-setup-for-helm-chart-installation/multi-tenant-settings-for-helm-chart-installation.md)
-* [Deploying multiple Brokers in the same namespace](deploying-multiple-brokers-in-the-same-namespace.md)
-* [Custom additional options for Broker Helm Chart installation](advanced-setup-for-helm-chart-installation/custom-additional-options-for-broker-helm-chart-installation.md)
-* [Broker rules for Snyk Code](advanced-setup-for-helm-chart-installation/broker-rules-for-snyk-code.md)
+* [Parameters for troubleshooting and providing your own certificate with Helm](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/advanced-setup-for-helm-chart-installation/parameters-for-troubleshooting-and-providing-your-own-certificate-with-helm)
+* [Proxy settings for Broker Helm chart installation](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/advanced-setup-for-helm-chart-installation/proxy-settings-for-broker-helm-chart-installation)
+* [Credential pooling with Docker and Helm](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-docker/advanced-configuration-for-snyk-broker-docker-installation/credential-pooling-with-docker-and-helm)
+* [Adding custom accept.json for Helm installation](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/advanced-setup-for-helm-chart-installation/adding-custom-accept.json-for-helm-installation)
+* [Ingress options with Snyk Broker Helm installation](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/advanced-setup-for-helm-chart-installation/ingress-options-with-snyk-broker-helm-installation)
+* [Multi-tenant settings for Helm chart installation](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/advanced-setup-for-helm-chart-installation/multi-tenant-settings-for-helm-chart-installation)
+* [Deploying multiple Brokers in the same namespace](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/advanced-setup-for-helm-chart-installation/deploying-multiple-brokers-in-the-same-namespace)
+* [Custom additional options for Broker Helm Chart installation](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/advanced-setup-for-helm-chart-installation/custom-additional-options-for-broker-helm-chart-installation)
+* [Broker rules for Snyk Code](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/advanced-setup-for-helm-chart-installation/broker-rules-for-snyk-code)
