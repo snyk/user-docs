@@ -1,12 +1,17 @@
-# Snyk Cloud issues
+# Cloud and Integrated IaC Issues
 
 {% hint style="info" %}
-The [“Fix Cloud issues in IaC”](fix-cloud-issues-in-iac.md) feature is now in open beta for users who use Terraform and AWS.
+**Feature availability**\
+Integrated Infrastructure as Code (IaC) is a new version of Snyk IaC that - together with Snyk Cloud - secures cloud configurations across the entire SDLC, from code to deployed cloud environments. Integrated IaC is currently in **closed beta**. Please reach out to your account team if you would like access.
 {% endhint %}
 
-When Snyk Cloud scans an environment, it tests infrastructure configurations in the associated cloud provider against a comprehensive set of security rules. These rules identify misconfigurations that can lead to security problems. For example, Snyk can scan the configuration of an Amazon Web Services (AWS) S3 bucket to see if it is publicly readable, and so vulnerable to a data breach.
+{% hint style="info" %}
+The [“Fix Cloud issues in IaC”](../integrated-infrastructure-as-code/fix-cloud-issues-in-iac.md) feature is now available for users who use Terraform and AWS.
+{% endhint %}
 
-Any cloud misconfiguration Snyk finds is reported as an issue. The [cloud issues page](view-cloud-issues-in-the-snyk-web-ui.md) in the Snyk Web UI provides details about each issue, including status, severity, impact, associated resources, and other information.
+When Snyk scans an integrated IaC or Cloud environment, it tests infrastructure configurations in the associated cloud provider against a comprehensive set of security rules. These rules identify misconfigurations that can lead to security problems. For example, Snyk can scan the configuration of an Amazon Web Services (AWS) S3 bucket to see if it is publicly readable, and so vulnerable to a data breach.
+
+Any IaC or cloud misconfiguration Snyk finds is reported as an issue. The [cloud issues page](view-cloud-issues-in-the-snyk-web-ui.md) in the Snyk Web UI provides details about each issue, including status, severity, impact, associated resources, and other information.
 
 <figure><img src="../../../.gitbook/assets/snyk-cloud-issues-page-3.png" alt="Snyk Cloud issues page in the Web UI"><figcaption><p>Snyk Cloud issues page in the Web UI</p></figcaption></figure>
 

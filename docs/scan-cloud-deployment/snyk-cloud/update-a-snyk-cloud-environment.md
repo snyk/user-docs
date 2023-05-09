@@ -1,6 +1,6 @@
-# Update a Snyk Cloud Environment
+# Update a Cloud environment
 
-You can update the following attributes for a [Snyk Cloud Environment](snyk-cloud-concepts.md#environments):
+You can update the following attributes for a [Cloud environment](snyk-cloud-concepts.md#environments):
 
 * **AWS:** Environment name and IAM role ARN (Amazon Resource Name). The new role ARN must have the same AWS account ID as the old role ARN. See [Find the role ARN](getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment.md#find-the-role-arn).
 * **Google:** Environment name and service account email address. The new service account email must be associated with the same project ID as the old one.
@@ -44,7 +44,7 @@ To update an environment using the Snyk API:
 
 ### Find the environment ID
 
-First, find the ID of the Snyk Cloud Environment you want to update. Send a request to the `/cloud/environments` endpoint in the below format:
+First, find the ID of the Cloud environment you want to update. Send a request to the `/cloud/environments` endpoint in the below format:
 
 ```
 curl -X GET \

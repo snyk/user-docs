@@ -1,6 +1,6 @@
-# View cloud issues in the Snyk Web UI
+# View Cloud and Integrated IaC issues in the Snyk Web UI
 
-You can view cloud issues for an Organization through the Snyk Web UI.
+You can view Cloud and Integrated IaC issues for an Organization through the Snyk Web UI.
 
 To view your Organization's cloud issues in the Snyk Web UI, navigate to the Organization and select **Cloud** in the left menu:
 
@@ -8,7 +8,7 @@ To view your Organization's cloud issues in the Snyk Web UI, navigate to the Org
 
 By default, Snyk displays open issues across all Snyk Cloud Environments in an Organization. The issues are initially [grouped by the security rule they failed](view-cloud-issues-in-the-snyk-web-ui.md#group-cloud-issues-by-rule), but you can choose to [group them by resource](view-cloud-issues-in-the-snyk-web-ui.md#group-cloud-issues-by-resource).
 
-## Group cloud issues by rule
+## Group issues by rule
 
 Issues are grouped by rule by default.
 
@@ -44,7 +44,7 @@ By default, when you expand a rule by selecting its **Expand row** (`>`) symbol,
 * Resource tags
 * Age of issue
 
-## Group cloud issues by resource
+## Group issues by resource
 
 If issues are currently grouped by rule, you can group them by resource instead by selecting the **Group by Rule** drop-down menu next to the search bar and selecting **Resource**:
 
@@ -77,7 +77,7 @@ By default, when you expand a resource by selecting its **Expand row** (`>`) sym
 * Rule ID
 * Age of issue
 
-## View cloud issue details
+## View issue details
 
 To view an issue, select the **Expand row** (`>`) symbol on the left side of a row, then select a corresponding resource or rule. Snyk displays a panel with the cloud issue details.
 
@@ -113,7 +113,7 @@ Select the **Resource** tab to view the scanned resource's attributes:
 
 <figure><img src="../../../.gitbook/assets/snyk-cloud-issue-panel-resource-2.png" alt="The Snyk Cloud issue summary panel, Resource tab"><figcaption><p>The Snyk Cloud issue summary panel, Resource tab</p></figcaption></figure>
 
-## Filter cloud issues
+## Filter issues
 
 To filter which cloud issues are shown:
 
@@ -127,7 +127,7 @@ You can also filter issues by compliance control, resource type, environment nam
 
 <figure><img src="../../../.gitbook/assets/snyk-cloud-issue-filters-4.png" alt="Filters in the Snyk Cloud issues page"><figcaption><p>Filters in the Snyk Cloud issues page</p></figcaption></figure>
 
-## Search cloud issues
+## Search issues
 
 As you select filters from the **Filters** drop-down menu, the search bar populates with key-value pairs.
 

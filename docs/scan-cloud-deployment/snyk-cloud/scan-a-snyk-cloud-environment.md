@@ -1,6 +1,6 @@
-# Scan a Snyk Cloud Environment
+# Scan a Cloud environment
 
-Snyk automatically runs a scan when a [Snyk Cloud Environment](snyk-cloud-concepts.md#environments) is created. After that, Snyk scans the environment once every 24 hours. You can also manually trigger a new scan at any time by using the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/scans).
+Snyk automatically runs a scan when a [Cloud environment](snyk-cloud-concepts.md#environments) is created. After that, Snyk scans the environment once every 24 hours. You can also manually trigger a new scan at any time by using the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/scans).
 
 ## Using `jq`
 
@@ -38,7 +38,7 @@ If you don't have [jq](https://stedolan.github.io/jq/download/) installed, you c
 
 ### Find the environment ID
 
-First, find the ID of the Snyk Cloud Environment you want to scan. Send a request to the [`/cloud/environments`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/cloud/environments) endpoint in the below format:
+First, find the ID of the Cloud environment you want to scan. Send a request to the [`/cloud/environments`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/cloud/environments) endpoint in the below format:
 
 ```
 curl -X GET \

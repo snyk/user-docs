@@ -3,7 +3,11 @@
 Get started with Snyk IaC to inspect, find, and fix issues in configuration files for [Terraform](scan-terraform-files/), [AWS CloudFormation](scan-cloudformation-files/), [Kubernetes](scan-kubernetes-configuration-files/) (including Helm), or [Azure Resource Manager (ARM)](scan-arm-configuration-files.md) environments.
 
 {% hint style="info" %}
-This article describes a process using the Snyk Web UI. For details of using IaC with the Snyk CLI, see [snyk-cli-for-infrastructure-as-code](snyk-cli-for-infrastructure-as-code/ "mention"). Note that [ARM configuration files](scan-arm-configuration-files.md) can only be scanned via the CLI.
+This article includes specific documentation for [**Integrated IaC**](../snyk-cloud/integrated-infrastructure-as-code/) - a new version of Snyk IaC that is currently in closed beta - at the **bottom of the page**. Please reach out to your account team if you have questions.
+{% endhint %}
+
+{% hint style="info" %}
+This article describes a process using the Snyk Web UI. For details of using IaC with the Snyk CLI, see [Snyk CLI for Infrastructure as Code](snyk-cli-for-infrastructure-as-code/).
 {% endhint %}
 
 ## **Prerequisites**

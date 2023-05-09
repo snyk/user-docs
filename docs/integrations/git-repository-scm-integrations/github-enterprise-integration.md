@@ -51,7 +51,7 @@ Snyk starts scanning the selected repositories for dependency files (such as pac
 
 The imported Projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (16).jpeg" alt="Add selected repositories"><figcaption><p>Add selected repositories</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (20).jpeg" alt="Add selected repositories"><figcaption><p>Add selected repositories</p></figcaption></figure>
 
 ## GitHub Enterprise Broker startup script
 
@@ -103,7 +103,7 @@ The [PR Checks](../../scan-application-code/run-pr-checks/) feature enables Snyk
 
 The example that follows shows how Snyk pull request checks appear on the GitHub Enterprise Pull Request page.
 
-<figure><img src="../../.gitbook/assets/pr_testing-14july2022.png" alt="Pull request checks shown in GitHub Enterprise"><figcaption><p>Pull request checks shown in GitHub Enterprise</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/pr_testing-14july2022 (1).png" alt="Pull request checks shown in GitHub Enterprise"><figcaption><p>Pull request checks shown in GitHub Enterprise</p></figcaption></figure>
 
 To review and adjust the pull request tests settings:
 

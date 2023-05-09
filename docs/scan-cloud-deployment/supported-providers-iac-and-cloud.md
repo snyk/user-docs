@@ -1,4 +1,4 @@
-# Supported providers - IaC and Cloud
+# Supported IaC and Cloud providers
 
 {% hint style="info" %}
 For environments supported with other Snyk products, see: [Snyk Open Source - supported languages and package managers](../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/), [Snyk Code - Supported languages and frameworks](../scan-application-code/snyk-code/snyk-code-language-and-framework-support.md), and [Snyk Container - Supported operating system distributions](../scan-containers/how-snyk-container-works/supported-operating-system-distributions.md).
@@ -15,4 +15,4 @@ Snyk Cloud supports the following providers:
 
 * [Amazon Web Services](snyk-cloud/getting-started-with-snyk-cloud-aws/)
 * [Azure](snyk-cloud/getting-started-with-snyk-cloud-azure/)
-* [Google](snyk-cloud/getting-started-with-snyk-cloud-google/)
+* [Google Cloud](https://docs.snyk.io/integrations/cloud-platforms/getting-started-with-snyk-cloud-google)

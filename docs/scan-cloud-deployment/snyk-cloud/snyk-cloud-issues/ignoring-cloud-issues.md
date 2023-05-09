@@ -1,7 +1,8 @@
-# Ignoring Cloud issues
+# Ignoring Cloud and Integrated IaC issues
 
 {% hint style="info" %}
-The Cloud ignores feature is currently in **Closed Beta**. Contact your Snyk account team if you are interested in participating. See [Snyk feature release process](../../../more-info/snyk-feature-release-process.md) for more details.
+**Feature availability**\
+The ignores feature is currently in **closed beta**. Contact your Snyk account team if you are interested in participating. See [Snyk feature release process](../../../more-info/snyk-feature-release-process.md) for more details.
 {% endhint %}
 
 You can ignore a Cloud or Integrated IaC [issue](./) from the Snyk Web UI.

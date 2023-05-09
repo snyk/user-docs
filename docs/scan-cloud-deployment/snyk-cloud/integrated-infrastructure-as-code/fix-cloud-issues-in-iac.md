@@ -1,7 +1,7 @@
-# Fix Cloud issues in IaC
+# Fix Cloud issues in IaC (integrated IaC)
 
 {% hint style="info" %}
-The “Fix Cloud issues in IaC” feature is now in open beta for users who use Terraform and AWS.
+The Fix Cloud issues in IaC feature is available for [Integrated IaC](./) only, and supports AWS.
 {% endhint %}
 
 The "Fix Cloud issues in IaC" feature enables users to fix Cloud issues directly in the IaC source code that was used to deploy the misconfigured Cloud resources, by linking a Cloud issue to the underlying IaC template via a SCM source code link.
@@ -25,7 +25,7 @@ Snyk generates [resource mappings](../snyk-cloud-concepts.md#resource-mapping) f
 You should have the following:
 
 * Access to a Snyk [service account](https://docs.snyk.io/user-and-group-management/structure-account-for-high-application-performance/service-accounts) and API token
-* Access to a Snyk Organization with Snyk Cloud and [integrated IaC](../../snyk-infrastructure-as-code/integrated-infrastructure-as-code/)
+* Access to a Snyk Organization with Snyk Cloud and [integrated IaC](./)
 * Deploy cloud resources to AWS with Terraform via CI/CD
 * Use Terraform version 0.11 or later
 

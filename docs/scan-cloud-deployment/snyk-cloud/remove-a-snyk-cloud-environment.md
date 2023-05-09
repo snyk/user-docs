@@ -1,10 +1,10 @@
-# Remove a Snyk Cloud Environment
+# Remove an environment
 
-When you remove a Snyk Cloud Environment, Snyk removes all associated scans, issues, and records of resources. Your actual resources in the cloud provider are not affected.
+When you remove an environment, Snyk removes all associated scans, issues, and records of resources. For Cloud environments, your actual resources in the cloud provider are not affected.
 
 ## Web UI
 
-In the Snyk Web UI, you can remove a cloud environment by navigating to your Organization's **Settings (cog icon) > Cloud environments**. See [View Snyk Cloud Environments](view-snyk-cloud-environments.md#remove-an-environment).
+In the Snyk Web UI, you can remove an environment by navigating to your Organization's **Settings (cog icon) > Cloud environments**. See [View Snyk Cloud Environments](view-snyk-cloud-environments.md#remove-an-environment).
 
 ## API
 

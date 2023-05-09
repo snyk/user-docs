@@ -1,6 +1,6 @@
-# View Snyk Cloud Environments
+# View environments
 
-To view all [Snyk Cloud](./) and [Snyk Integrated IaC](../snyk-infrastructure-as-code/integrated-infrastructure-as-code/) Environments in an Organization, navigate to your Organization's **Settings (cog icon) > Cloud environments**.
+To view all [Snyk Cloud](./) and [Snyk Integrated IaC](integrated-infrastructure-as-code/) Environments in an Organization, navigate to your Organization's **Settings (cog icon) > Cloud environments**.
 
 The cloud environments table displays the following information for each environment:
 
@@ -11,9 +11,9 @@ The cloud environments table displays the following information for each environ
 
 <figure><img src="../../.gitbook/assets/snyk-cloud-environments-page.png" alt="The Snyk Cloud Environments page in the Snyk Web UI"><figcaption><p>The Snyk Cloud Environments page in the Snyk Web UI</p></figcaption></figure>
 
-## Add an environment
+## Add a Cloud environment
 
-To add an environment, select the **Add environment** drop-down and select the cloud provider. Follow the steps in [Snyk Cloud for AWS: Web UI](getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-web-ui/), [Snyk Cloud for Google: Web UI](getting-started-with-snyk-cloud-google/snyk-cloud-for-google-web-ui/), or [Snyk Cloud for Azure: Web UI](getting-started-with-snyk-cloud-azure/snyk-cloud-for-azure-web-ui/) to create the environment.
+To add a Cloud environment, select the **Add environment** drop-down and select the cloud provider. Follow the steps in [Snyk Cloud for AWS: Web UI](getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-web-ui/), [Snyk Cloud for Google: Web UI](getting-started-with-snyk-cloud-google/snyk-cloud-for-google-web-ui/), or [Snyk Cloud for Azure: Web UI](getting-started-with-snyk-cloud-azure/snyk-cloud-for-azure-web-ui/) to create the environment. This is not supported for Integrated IaC environment kinds.
 
 <figure><img src="../../.gitbook/assets/snyk-cloud-environments-page-add-env.png" alt="Add an environment in the Snyk Web UI"><figcaption><p>Add an environment in the Snyk Web UI</p></figcaption></figure>
 
@@ -23,9 +23,9 @@ You can also add an environment using the Snyk API:
 * [Snyk Cloud for Google: API](getting-started-with-snyk-cloud-google/snyk-cloud-for-google-api/)
 * [Snyk Cloud for Azure: API](getting-started-with-snyk-cloud-azure/snyk-cloud-for-azure-api/)
 
-## Remove an environment
+## Remove an Integrated IaC or Cloud environment
 
-To remove an environment:
+To remove an Integrated IaC or Cloud environment:
 
 1. In the **Actions** column, select the `...` icon for the environment you want to remove.
 2. Select **Remove**.

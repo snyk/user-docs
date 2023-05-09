@@ -1,6 +1,6 @@
-# Snyk Cloud for Google: Web UI
+# Snyk Cloud for Google Cloud: Web UI
 
-To onboard a Google account to Snyk Cloud via the Web UI:
+To onboard a Google Cloud project to Snyk Cloud via the Web UI:
 
 1. [Download an infrastructure as code (IaC) template:](step-1-download-service-account-iac-template-web-ui.md) to give Snyk Cloud permissions to scan your project.
 2. [Create a Google service account:](step-2-create-the-google-service-account-api.md) using the template you downloaded.

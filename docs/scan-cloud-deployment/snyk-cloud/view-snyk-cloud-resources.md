@@ -1,10 +1,10 @@
-# View Snyk Cloud resources
+# View resources
 
-Snyk Cloud allows you to view attributes for cloud resources in an Organization. You can use this information to inventory all of your resources across cloud provider accounts, or see the recorded state of any resource during the most recent scan.
+You view all attributes for Integrated IaC and Cloud resources in an Organization to inventory all of your resources across cloud provider accounts, or see the recorded state of any resource during the most recent scan.
 
-## View all cloud resources
+## View all resources
 
-To list all cloud resources in an organization, send a request to the [`/cloud/resources`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/cloud/resources) endpoint in the below format:
+To list all resources in an organization, send a request to the [`/cloud/resources`](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#get-/orgs/-org\_id-/cloud/resources) endpoint in the below format:
 
 ```
 curl -X GET \
@@ -14,7 +14,7 @@ curl -X GET \
 
 ## Understand the API response
 
-Snyk returns a JSON document containing information about all cloud resources in the Organization. For example:
+Snyk returns a JSON document containing information about all resources in the Organization. For example:
 
 ```json
 {

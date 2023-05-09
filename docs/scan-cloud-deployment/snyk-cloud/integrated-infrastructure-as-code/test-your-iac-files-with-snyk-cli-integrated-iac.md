@@ -1,14 +1,24 @@
-# Getting started with Snyk IaC (Integrated)
+# Test your IaC files with Snyk CLI (Integrated IaC)
 
-Use [Snyk Integrated Infrastructure as Code](./) to inspect, find, and fix issues in configuration files for Terraform and AWS CloudFormation, with support for Azure Resource Manager (ARM) and Kubernetes coming soon.
+{% hint style="info" %}
+To access the latest Integrated IaC, you should use Snyk CLI v1.1022.0 or later.
+{% endhint %}
 
-## Prerequisites
+You can test your IaC files with [Integrated IaC](./) by leveraging the functionalities of the Snyk CLI, much like you would with [Current IaC](../../snyk-infrastructure-as-code/). There are some differences between Integrated and Current IaC, which are summarized in the following table.
 
-To start using Integrated IaC, you need the following:
+|                             | **Current IaC support** | **Integrated IaC support** |
+| --------------------------- | ----------------------- | -------------------------- |
+| **Terraform (single file)** | Yes                     | Yes                        |
+| **Terraform (modules)**     | No                      | Yes                        |
+| **Terraform (plan)**        | Yes                     | Yes                        |
+| **CloudFormation**          | Yes                     | Yes                        |
+| **AWS CDK**                 | Yes                     | Yes                        |
+| **Azure Resource Manager**  | Yes                     | Yes                        |
+| **Kubernetes**              | Yes                     | Coming soon                |
 
-* A Snyk account (go to [https://snyk.io/](https://snyk.io) and sign up - see [Create a Snyk account](https://docs.snyk.io/getting-started/getting-started-snyk-products) for details).
-* An existing Terraform or CloudFormation environment to work in.
-* To use the Integrated IaC with the CLI, you must first [install](../../../snyk-cli/install-the-snyk-cli/) version v1.1022.0 or later and then [authenticate](../../../snyk-cli/commands/auth.md).
+{% hint style="warning" %}
+Although Integrated IaC provides better support for Terraform than Current IaC, line number information is not provided in the scan results.
+{% endhint %}
 
 ## Stage 1: Test IaC files
 
@@ -78,7 +88,7 @@ Tested arm-file.tf for known issues, found 1 issues
 Your test results are available at: https://snyk.io/org/my.org/cloud/issues?environment_name=my.org
 ```
 
-If you click on the link in the CLI output, you will be shown your issues in the Snyk Web UI. To learn more about the Cloud Issues view, see [View cloud issues in the Snyk Web UI](../../snyk-cloud/snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md).
+If you click on the link in the CLI output, you will be shown your issues in the Snyk Web UI. To learn more about the Cloud Issues view, see [View cloud issues in the Snyk Web UI](../snyk-cloud-issues/view-cloud-issues-in-the-snyk-web-ui.md).
 
 ## Stage 3: Fix IaC Issues
 
@@ -87,7 +97,7 @@ Act on the recommendations produced by Snyk IaC.
 1. After you have run a test scan, you will find all the relevant details about where that issue exists as well as advice on how to remediate that issue.
 2. Fix the issue based on the recommended advice.
 3. Run another test scan to see if the issue has been resolved.
-4. (Optional) View a list of all Integrated IaC and Snyk Cloud rules and adjust rule severity as needed. See [Managing Snyk Cloud rules](../../snyk-cloud/managing-snyk-cloud-rules.md).
+4. (Optional) View a list of all Integrated IaC and Snyk Cloud rules and adjust rule severity as needed. See [Managing Snyk Cloud rules](../managing-snyk-cloud-rules.md).
 
 ## Get help
 
@@ -96,3 +106,4 @@ To get help, run `snyk iac test --help` or visit the [online documentation](../.
 ## Get started with Terraform Cloud
 
 To use Integrated IaC with Terraform Cloud, see [Terraform Cloud integration for IaC](https://docs.snyk.io/integrations/ci-cd-integrations/integrating-snyk-with-terraform-cloud).
+
