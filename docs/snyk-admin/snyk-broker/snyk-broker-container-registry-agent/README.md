@@ -89,7 +89,7 @@ For **DigitalOcean Container Registry**, **Google Cloud Container Registry**, **
 
 * `BROKER_TOKEN` - The Snyk Broker token, obtained from your Container registry integration provided by Snyk support.
 * `BROKER_CLIENT_URL` - The URL of your Broker Client, including scheme and port, which is used by the container registry agent to call back to Snyk through the brokered connection, for example: "[http://my.broker.client:8000](http://my.broker.client:8000)".
-* `CR_AGENT_URL` - The URL of your Container Registry Agent, to which the Broker Client will route the requests, for example: "[http://my.container-registry-agent](http://my.container-registry-agent)".
+* `CR_AGENT_URL` - The URL of your Container Registry Agent, including scheme and port, to which the Broker Client will route the requests, for example: "[http://my.container-registry-agent](http://my.container-registry-agent)".
 * `CR_TYPE` - The container registry type as listed in supported registries, for example, "docker-hub", "gcr", "artifactory-cr".
 * `CR_BASE` - The hostname of the container registry api to connect to, for example: "cr.host.com".
 * `CR_USERNAME` - The username for authenticating to the container registry api.
