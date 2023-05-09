@@ -84,7 +84,7 @@ To use the Broker Client with a Container Registry Agent deployment, run d`ocker
 There following environment variables are required to configure the Broker Client.
 
 {% hint style="info" %}
-For **DigitalOcean Container Registry**, **Google Cloud Container Registry**, **Google Artifact Registry**, and **Artifactory**, there are a few values to note. For **Elastic Container Registry**, additional setup is required. [Specific configurations](./#container-registry-specific-configurations) are provided.
+For **DigitalOcean Container Registry**, **Google Cloud Container Registry**, **Google Artifact Registry**, and **Artifactory**, there are a few values to note; see [Container registry-specific configurations](./#container-registry-specific-configurations). For **Elastic Container Registry**, additional setup is required. [Specific configurations](./#container-registry-specific-configurations) are provided.
 {% endhint %}
 
 * `BROKER_TOKEN` - The Snyk Broker token, obtained from your Container registry integration provided by Snyk support.
