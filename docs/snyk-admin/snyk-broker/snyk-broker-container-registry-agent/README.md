@@ -45,6 +45,10 @@ Using the Snyk Broker Container Registry Agent you can integrate Snyk with the f
 * GitLab Container Registry (type: gitlab-cr)
 
 {% hint style="info" %}
+Artifactory and Nexus are also available as private package repositories with Broker options. The Brokers required for the Container Registry must be the ones as specified in [Prerequisites for Container Registry Agent](./#prerequisites-for-container-registry-agent), not the Brokers for snyk/broker:artifactory or snyk/broker:nexus.
+{% endhint %}
+
+{% hint style="info" %}
 GitHub Container registry and GitLab Container Registry do not follow Docker v2 API; they do not have the /v2/\_catalog endpoint. Thus it is not possible to list images in repos, and you must manually specify the images you wish to scan.
 {% endhint %}
 
@@ -53,7 +57,7 @@ GitHub Container registry and GitLab Container Registry do not follow Docker v2 
 To set up the Snyk Broker and the Container Registry Agent, you must have a Broker token. Contact [Snyk Support](https://support.snyk.io/hc/en-us) to obtain your Broker token.
 
 {% hint style="warning" %}
-For the Container Registry Agent to work, you must have two separate containers deployed in your infrastructure, creating two separate services. For details see the [section](./#components-of-the-network-restricted-container-registries-solution) on components.
+For the Container Registry Agent to work, you must have two separate containers deployed in your infrastructure, creating two separate services. For details, see [Components of the network-restricted container registries solution ](./#components-of-the-network-restricted-container-registries-solution)on this page.
 {% endhint %}
 
 The system and software requirements to set up and run the Snyk Broker Container Registry Agent are as follows;
@@ -66,8 +70,8 @@ The system and software requirements to set up and run the Snyk Broker Container
 * Container registry credentials that have list and pull images permissions
 * Connection between Broker and Agent
 * HTTPS connection between the Agent and the registry. For HTTP-only registries, deploy a reverse proxy between the Agent and the container registry.
-* [Download for the Broker Client image on Docker](https://hub.docker.com/r/snyk/broker/tags?page=1\&ordering=last\_updated\&name=container-registry-agent)
-* [Download for the Container Registry Agent image on Docker](https://hub.docker.com/r/snyk/container-registry-agent/tags?page=1\&ordering=last\_updated)
+* [Download for the Broker Client image on Docker](https://hub.docker.com/r/snyk/broker/tags?page=1\&ordering=last\_updated\&name=container-registry-agent) : snyk/broker:container-registry-agent (if using Docker)
+* [Download for the Container Registry Agent image on Docker](https://hub.docker.com/r/snyk/container-registry-agent/tags?page=1\&ordering=last\_updated) :  snyk/container-registry-agent:latest If using Docker)
 
 {% hint style="info" %}
 **Scaling to adjust scan capacity**
@@ -75,29 +79,32 @@ The system and software requirements to set up and run the Snyk Broker Container
 With the listed configuration of 1 vCPU and 2GB RAM, scanning capacity would be approximately 160 images of \~350MB each in one run. You can scale this up based on your image sizes. If you have a specific use case that does not allow scaling and does not fit the limitations, contact [Snyk Support](https://support.snyk.io/hc/en-us/).
 {% endhint %}
 
-## **Set up the remote connection for Container Registry Agent**
+## **Set up the remote connection for Container Registry Agent using Docker**
 
 ### **Configuring and running the Broker Client for Container Registry Agent**
 
-To use the Broker Client with a Container Registry Agent deployment, run d`ocker pull snyk/broker:container-registry-agent` if you have not already done so as a [prerequisite](./#prerequisites-for-container-registry-agent).
+To use the Broker Client with a Container Registry Agent deployment, run `docker pull snyk/broker:container-registry-agent` if you have not already done so as a [prerequisite](./#prerequisites-for-container-registry-agent).
 
-There following environment variables are required to configure the Broker Client.
+The following environment variables are required to configure the Broker Client.
 
 {% hint style="info" %}
-For **DigitalOcean Container Registry**, **Google Cloud Container Registry**, **Google Artifact Registry**, and **Artifactory**, there are a few values to note; see [Container registry-specific configurations](./#container-registry-specific-configurations). For **Elastic Container Registry**, additional setup is required. [Specific configurations](./#container-registry-specific-configurations) are provided.
+For **DigitalOcean Container Registry**, **Google Cloud Container Registry**, **Google Artifact Registry**, and **Artifactory**, there are a few values to note; see [Container registry-specific configurations](./#container-registry-specific-configurations). For **Elastic Container Registry**, additional setup is required. [Specific configurations](./#container-registry-specific-configurations) are also provided.
 {% endhint %}
 
 * `BROKER_TOKEN` - The Snyk Broker token, obtained from your Container registry integration provided by Snyk support.
-* `BROKER_CLIENT_URL` - The URL of your Broker Client, including scheme and port, which is used by the container registry agent to call back to Snyk through the brokered connection, for example: "[http://my.broker.client:8000](http://my.broker.client:8000)".
+* `BROKER_CLIENT_URL` - The URL of your Broker Client, including scheme and port, which is used by the container registry agent to call back to Snyk through the brokered connection, for example: "[http://my.broker.client:8000](http://my.broker.client:8000)". &#x20;
+  * This must have http:// and the port number.&#x20;
+  * To configure the client with HTTPS, [additional settings are required](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-docker/advanced-configuration-for-snyk-broker-docker-installation/https-for-broker-client-with-docker).
 * `CR_AGENT_URL` - The URL of your Container Registry Agent, including scheme and port, to which the Broker Client will route the requests, for example: "[http://my.container-registry-agent](http://my.container-registry-agent)".
-* `CR_TYPE` - The container registry type as listed in supported registries, for example, "docker-hub", "gcr", "artifactory-cr".
+* `CR_TYPE` - The container registry type as listed in [Supported container registries](./#supported-container-registries) on this page, for example, "docker-hub", "gcr", "artifactory-cr".
 * `CR_BASE` - The hostname of the container registry api to connect to, for example: "cr.host.com".
 * `CR_USERNAME` - The username for authenticating to the container registry api.
 * `CR_PASSWORD` - The password for authenticating to the container registry api.
 * `CR_TOKEN` - Authentication token for DigitalOcean container registry.
 * `PORT` - The local port at which the Broker client accepts connections. Default is 7341.
+* Optional - `BROKER_CLIENT_VALIDATION_URL` -Used to configure /systemcheck for the container registry agent. For details, see [Configuring and using systemcheck](./#configuring-and-using-systemcheck) on this page.
 
-Run the Broker Client container with relevant configuration:
+Run the Broker Client container with the relevant configuration:
 
 ```
 docker run --restart=always \
@@ -148,9 +155,9 @@ See [Configuring your JFrog Artifactory container registry integration](../../..
 
 ### **Elastic Container Registry (ECR)**
 
-In Elastic Container Registries and other container registries the communication is the same. The Agent makes synchronous calls to the container registries to list and pull the image. Then the Agent scans the images and send the sends the results to the Broker Client using callbacks. ECR has a special authentication mechanism that requires setting up an IAM Role or User in the Agent.
+In Elastic Container Registries and other container registries the communication is the same. The Agent makes synchronous calls to the container registries to list and pull the image. Then the Agent scans the images and sends the results to the Broker Client using callbacks. ECR has a special authentication mechanism that requires setting up an IAM Role or User in the Agent.
 
-<figure><img src="../../../.gitbook/assets/image (277).png" alt="High-level architecture of the brokered ECR integration"><figcaption><p>High-level architecture of the brokered ECR integration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (2) (1).png" alt="High-level architecture of the brokered ECR integration"><figcaption><p>High-level architecture of the brokered ECR integration</p></figcaption></figure>
 
 #### **Required AWS Resource with ECR**
 

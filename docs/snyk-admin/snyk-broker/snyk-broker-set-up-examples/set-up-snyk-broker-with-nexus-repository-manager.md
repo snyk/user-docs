@@ -19,6 +19,10 @@ Some Docker deployments for Windows run only Windows containers. Ensure that you
 For information about non-brokered integration with Nexus Repository Manager including supported environments and versions and user permissions, see [Nexus Repository Manager setup](../../../integrations/private-registry-integrations/nexus-repo-manager-setup.md).
 {% endhint %}
 
+{% hint style="info" %}
+For information about brokered integration with Nexus Container Registry see [Snyk Broker -Container Registry Agent](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-container-registry-agent).
+{% endhint %}
+
 ## Generate a Broker token from the Web UI
 
 1. In the Nexus integration settings, move the **Snyk Broker on/off** switch to **on** to display a form for generating a Broker token.

@@ -10,10 +10,16 @@ Bitbucket: `bitbucket-server`\
 Gitlab: `gitlab`\
 Azure Repos: `azure-repos`\
 Artifactory: `artifactory`\
+Nexus: `nexus`\
+Nexus2: `nexus2`\
 Jira: `jira`\
 Container Registry Agent: `container-registry-agent`\\
 
 The following examples create a namespace called `snyk-broker`. To deploy into an existing namespace, adjust the `-n` parameter and delete the `--create-namespace` parameter. See alao [Deploying multiple Brokers in the same namespace](install-and-configure-broker-using-helm/deploying-multiple-brokers-in-the-same-namespace.md).
+
+{% hint style="info" %}
+For information about brokered integration with Artifactory or Nexus Container Registry see [Snyk Broker -Container Registry Agent](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-container-registry-agent).
+{% endhint %}
 
 ## Github.com Helm install
 

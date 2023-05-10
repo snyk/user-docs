@@ -12,7 +12,7 @@ Snyk GitHub Enterprise integration lets you:
 * Provide automated fixes and upgrades
 
 {% hint style="info" %}
-Snyk recommends GitHub Enterprise integration for Enterprise customers, as it allows the use of a single Organization-wide Personal Access Token (PAT), rather than a user account-based PAT. See [Using GItHub or GItHub Enterprise integration](using-github-or-github-enterprise-integration.md) for details.
+Snyk recommends GitHub Enterprise integration for Enterprise customers, as it allows the use of a single Organization-wide Personal Access Token (PAT), rather than a user account-based PAT. See [Using GItHub or GItHub Enterprise integration](introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration.md) for details.
 {% endhint %}
 
 ## Setting up a GitHub Enterprise integration
@@ -51,7 +51,7 @@ Snyk starts scanning the selected repositories for dependency files (such as pac
 
 The imported Projects appear on your **Projects** page and are continuously checked for vulnerabilities.
 
-<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (7).jpeg" alt="Add selected repositories"><figcaption><p>Add selected repositories</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10) (20).jpeg" alt="Add selected repositories"><figcaption><p>Add selected repositories</p></figcaption></figure>
 
 ## GitHub Enterprise Broker startup script
 
