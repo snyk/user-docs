@@ -37,7 +37,7 @@ This integration works only with GitLab instances that are publicly reachable no
 
 ## Required permissions and roles
 
-The following explains the permissions needed for direct integration (when Broker is not implemented).
+The following explains the permissions needed for integration with GitLab.
 
 To integrate with GitLab as a Snyk admin user or as a member of the Organization:
 
