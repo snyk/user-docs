@@ -73,7 +73,7 @@ The data collection process is thorough and includes the following:
 
 The training data is ensured to be of the highest quality to optimize the performance of the LLM.
 
-:link:See [How Snyk handles your data](../../scan-containers/how-snyk-container-works/).
+:link:See [How Snyk handles your data](../../more-info/how-snyk-handles-your-data.md).
 
 
 
