@@ -10,7 +10,7 @@ Select **Settings** > **Usage** to view Snyk usage details in your Group or Orga
 
 The **Test Usage** section shows how many tests you are using over the current billing period:
 
-<figure><img src="../../.gitbook/assets/test-usage.png" alt="Test usage data"><figcaption><p>Test usage data</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/test-usage.png" alt="Test usage data" width="563"><figcaption><p>Test usage data</p></figcaption></figure>
 
 {% hint style="info" %}
 Test limits vary for Snyk products and plans. See the [plans page](https://snyk.io/plans/) for details.
@@ -51,7 +51,7 @@ The **Projects** section shows test usage settings for your Projects:
 
 For **Bulk actions**, select relevant Projects, then for the selected Projects, select **Delete**, **Activate** or **Deactivate**:
 
-<figure><img src="../../.gitbook/assets/usage-projects-bulk-actions.png" alt="Bulk actions on Projects"><figcaption><p>Bulk actions on Projects</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/usage-projects-bulk-actions.png" alt="Bulk actions on Projects" width="563"><figcaption><p>Bulk actions on Projects</p></figcaption></figure>
 
 ### Set test frequency
 
@@ -65,9 +65,9 @@ For each entry, you can select the frequency of testing for that Project (never,
 The default test frequency and limitations are as follows:
 
 * Open Source: The default is daily.
-* Code analysis Projects: You can set only weekly tests. To test your code daily, submit a request to [Snyk Support.](https://support.snyk.io/hc/en-us/requests)
+* Code analysis Projects: The default is weekly; daily is not available. To test your code daily, submit a request to [Snyk Support.](https://support.snyk.io/hc/en-us/requests)
 * Container: The default is daily.
-* IaC: The default is daily and the other option is never.
+* IaC: The default is weekly.
 {% endhint %}
 
 Click **Deactivate** to never test, and also remove webhooks and stop showing the Project’s results in reporting.
