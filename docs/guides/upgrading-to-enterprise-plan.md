@@ -165,4 +165,4 @@ If you use GitHub as your SCM, with the Enterprise plan, you now have access to 
 You do not need a GitHub Enterprise license or subscription to use the GitHub Enterprise integration within Snyk.
 {% endhint %}
 
-See [Using Github or Github Enterprise integration](../integrations/git-repository-scm-integrations/introduction-to-git-repository-integrations/using-github-or-github-enterprise-integration.md) for steps on migrating from Github to Github Enterprise integration.
+See [Using Github or Github Enterprise integration](../integrations/git-repository-scm-integrations/using-github-or-github-enterprise-integration.md) for steps on migrating from Github to Github Enterprise integration.

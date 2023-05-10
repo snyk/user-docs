@@ -2,17 +2,19 @@
 
 ## Introduction
 
-New Snyk features can be provided to users in the following types of release.
+New Snyk features can be provided to users in the following types of releases.
 
 {% hint style="warning" %}
 Not all features will follow all these stages as part of their release process.
+
+There is no definitive timeline for moving from one stage to another; this varies depending on the feature.
 {% endhint %}
 
 ### Closed Beta
 
-| Description                                     | Available to                               | Access                 | Docs                           |
-| ----------------------------------------------- | ------------------------------------------ | ---------------------- | ------------------------------ |
-| The first customer-facing rollout of a feature. | A closed, preselected group of users only. | On invitation by Snyk. | Provided but may not be public |
+| Description                                     | Available to                               | Access                 | Docs                            |
+| ----------------------------------------------- | ------------------------------------------ | ---------------------- | ------------------------------- |
+| The first customer-facing rollout of a feature. | A closed, preselected group of users only. | On invitation by Snyk. | Provided but may not be public. |
 
 ### Open Beta
 
