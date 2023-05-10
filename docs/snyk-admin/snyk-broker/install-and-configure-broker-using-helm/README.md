@@ -70,7 +70,7 @@ Then run the commands for [each SCM, registry, or Jira](https://docs.snyk.io/sny
 * [GitHub](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#github.com-helm-install)
 * [GitHub Enterprise](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#github-enterprise-helm-install)
 * [Bitbucket Server/Data Centre](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#bitbucket-helm-install)
-* [Gitlab](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#gitlab-helm-install)
+* [GitLab](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#gitlab-helm-install)
 * [Azure Repos](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#azure-repos-helm-install)
 * [JFrog Artifactory](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#artifactory-respository-helm-install)
 * [Jira](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#jira-notifications-helm-install)

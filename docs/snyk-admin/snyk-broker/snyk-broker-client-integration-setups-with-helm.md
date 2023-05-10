@@ -34,7 +34,7 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              -n snyk-broker --create-namespace
 ```
 
-## Github Enterprise Helm install
+## GitHub Enterprise Helm install
 
 For more details including definitions of the environment variables see [Set up Snyk Broker with GitHub Enterprise](snyk-broker-set-up-examples/setup-broker-with-github-enterprise.md).
 
@@ -72,9 +72,9 @@ helm install snyk-broker-chart snyk-broker/snyk-broker \
              -n snyk-broker --create-namespace
 ```
 
-## Gitlab Helm install
+## GitLab Helm install
 
-For more details including definitions of the environment variables see [Set up Snyk Broker with GitLab](snyk-broker-set-up-examples/setup-broker-with-gitlab.md).
+For more details including permissions and definitions of the environment variables see [Set up Snyk Broker with GitLab](snyk-broker-set-up-examples/setup-broker-with-gitlab.md).
 
 Note: for `gitlab` value do not include `https://`
 
