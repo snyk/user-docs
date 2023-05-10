@@ -2,7 +2,7 @@
 
 ### Introduction
 
-You can use the [CLI](../../../snyk-cli/) `snyk iac test` command to address known configuration issues.
+You can use the [CLI](../../snyk-cli/) `snyk iac test` command to address known configuration issues.
 
 To see these issues displayed in the Snyk Web UI, run the following CLI command:
 
@@ -37,17 +37,17 @@ This sends a snapshot of your current configuration issues to your Snyk dashboar
 
 ### Viewing snapshots in the Snyk Web UI
 
-Log in to the [Snyk Web UI](../../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md) and go to your organization's project page, to see the specific snapshot of your scanned project.
+Log in to the [Snyk Web UI](../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md) and go to your organization's project page, to see the specific snapshot of your scanned project.
 
-![Newly scanned project in the projects page](<../../../.gitbook/assets/image (349) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Newly scanned project in the projects page](<../../.gitbook/assets/image (349) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 You can also open the project itself and see the usual individual project view:
 
-![individual project view](<../../../.gitbook/assets/image (106) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![individual project view](<../../.gitbook/assets/image (106) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ### **Ignores**
 
-You can ignore issues using the Snyk Web UI, or by creating a `.snyk` policy file along with your project when scanning. For more information, see [Iac Ignores using the .snyk policy file](iac-ignores-using-the-.snyk-policy-file.md).
+You can ignore issues using the Snyk Web UI, or by creating a `.snyk` policy file along with your project when scanning. For more information, see [Iac Ignores using the .snyk policy file](snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md).
 
 {% hint style="info" %}
 Issues that are ignored by using the `.snyk` policy file can not be unignored in the Snyk web UI.
@@ -94,6 +94,6 @@ snyk iac test myproject --report \
 
 ### **Notes**
 
-Using [Custom rules](../custom-rules/) and the Share Results functionality together is not currently supported.
+Using [Custom rules](custom-rules/) and the Share Results functionality together is not currently supported.
 
 Snyk does not share any file contents over the network, only the required metadata for the configuration issues that were just scanned.
