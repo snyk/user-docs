@@ -24,6 +24,23 @@ For information about non-brokered integration with Artifactory Repository see [
 For information about brokered integration with Artifactory Container Registry see [Snyk Broker -Container Registry Agent](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-container-registry-agent).
 {% endhint %}
 
+## Obtain Broker token for Artifactory Repository setup
+
+1. Go to settings <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Integrations > Package Repositories > Artifactory**.
+2. Enter the URL of your Artifactory instance, this **must** end with **/artifactory**.
+3. Enter your username and password.
+4. Select **Save**.
+
+<figure><img src="../../../.gitbook/assets/screenshot_2020-04-17_at_14.38.12.png" alt="Artifactory integration setup"><figcaption><p>Artifactoryrepository setup</p></figcaption></figure>
+
+{% hint style="info" %}
+If you do not see the **Snyk Broker** on/off switch, you do not have the necessary permissions and can only add a publicly accessible instance.
+
+Submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new) if you want to add a private registry.
+{% endhint %}
+
+When you have permissions to add a private registry, continue with the instructions to [generate a Broker token from the Web UI](set-up-snyk-broker-with-artifactory-repository.md#generate-a-broker-token-from-the-web-ui).
+
 ## Generate a Broker token from the Web UI
 
 1. In the Artifactory integration settings, move the **Snyk Broker on/off** switch to **on** to display a form for generating a Broker token.
