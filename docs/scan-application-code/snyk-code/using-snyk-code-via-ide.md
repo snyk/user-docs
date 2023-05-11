@@ -14,6 +14,6 @@ For more details, see [JetBrains IDE Plugins](https://docs.snyk.io/integrations/
 
 Snyk Code supports a Visual Studio Code plugin to support issue finding and fixing, directly from the IDE:
 
-![](<../../.gitbook/assets/image3-2 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (10).png>)
+![](<../../.gitbook/assets/image3-2 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
 
 For more details, see the [Visual Studio Code extension for Snyk Code](../../integrations/ide-tools/visual-studio-code-extension/).
