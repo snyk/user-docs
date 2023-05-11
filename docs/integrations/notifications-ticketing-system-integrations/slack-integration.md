@@ -1,25 +1,23 @@
-# Slack
+# Slack integration
 
-## Slack integration
+You can set up Slack to receive Snyk’s alerts about new vulnerabilities that affect your Projects and new upgrades or patches that have become available.
 
-Don’t like email? You can set up Slack to receive Snyk’s alerts about new vulnerabilities that affect your projects, and about new upgrades or patches that have become available.
+You will get the following alerts in Slack.
 
-You’ll get two alerts in Slack:
+A newly disclosed vulnerability affects you:
 
-**1:** A newly disclosed vulnerability affects you
+<figure><img src="../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1).png" alt="Newly disclosed vulnerability notification"><figcaption><p>Newly disclosed vulnerability notification</p></figcaption></figure>
 
-![](<../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1).png>)
+A new upgrade or patch is available for a vulnerability that you previously ignored or patched:
 
-**2:** A new upgrade or patch is available for a vulnerability that you previously ignored or patched
+<figure><img src="../../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1).png" alt="New upgrade available"><figcaption><p>New upgrade available</p></figcaption></figure>
 
-![](<../../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1).png>)
+To set the integration up, you must generate a Slack webhook. You can do this either via the [Incoming WebHooks app](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) or by [creating your own Slack app](https://api.slack.com/incoming-webhooks).
 
-To set it up, you will need to generate a Slack webhook. You can either do this via the [Incoming WebHooks app](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) or by [creating your own Slack app](https://api.slack.com/incoming-webhooks).
+Once you have generated your Slack Webhook URL, go to your **Manage Organization** settings and enter the URL.
 
-Once you have generated your Slack Webhook URL, go to your 'Manage organization’ settings, and enter the URL.
-
-![](<../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+<figure><img src="../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Enter URL of the Slack webhook"><figcaption><p>Enter URL of the Slack webhook</p></figcaption></figure>
 
 {% hint style="danger" %}
-Please note currently only webhooks created with Slack Apps are supported; webhooks created with Slack Workflows are not currently supported.
+Currently, only webhooks created with Slack Apps are supported; webhooks created with Slack Workflows are not currently supported.
 {% endhint %}

@@ -243,7 +243,7 @@
     * [AWS CloudTrail Lake](integrations/event-forwarding/aws-cloudtrail-lake.md)
   * [Notification and ticketing systems](integrations/notifications-ticketing-system-integrations/README.md)
     * [Slack App](integrations/notifications-ticketing-system-integrations/slack-app.md)
-    * [Slack](integrations/notifications-ticketing-system-integrations/slack-integration.md)
+    * [Slack integration](integrations/notifications-ticketing-system-integrations/slack-integration.md)
     * [Jira notifications setup](integrations/notifications-ticketing-system-integrations/jira.md)
   * [Vulnerability management tools](integrations/vulnerability-management-tools/README.md)
     * [Code Dx Enterprise](integrations/vulnerability-management-tools/code-dx-enterprise.md)
