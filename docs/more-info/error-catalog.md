@@ -252,17 +252,17 @@ The build environment for the provided context could not be found. Please ensure
 ---
 # SbomExport
 ### [SNYK-OS-9000](#snyk-os-9000)
-#### Internal Server Error
+#### SBOM generation export server error
 
-Apologies, unfortunately an unexpected error has occurred. Please try again shortly. If the error persists please contact the Snyk support team.
+An unexpected error occurred during the SBOM generation. Review the request, then try again. If the error persists, contact Snyk Support.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
 ### [SNYK-OS-9001](#snyk-os-9001)
-#### Error while getting dependency graph
+#### Dependency graph error
 
-Apologies, unfortunately an unexpected error has occurred. Please try again shortly. If the error persists please contact the Snyk support team.
+An unexpected dependency graph error occurred. Review the request, then try again. If the error persists, contact Snyk Support.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
@@ -270,55 +270,57 @@ Apologies, unfortunately an unexpected error has occurred. Please try again shor
 ### [SNYK-OS-9002](#snyk-os-9002)
 #### Error parsing dependency graph
 
-Apologies, unfortunately an unexpected error has occurred. Please try again shortly. If the error persists please contact the Snyk support team.
+The dependency graph cannot be parsed due to an unexpected error. Review the request, then try again. If the error persists, contact Snyk Support.
 
 **HTTP Status:** [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
 
 
 ### [SNYK-OS-9003](#snyk-os-9003)
-#### Not Found
+#### SBOM not supported due to project type
 
-This is either a Snyk Code or Snyk Infrastructure as Code project. We don’t currently provide an SBOM for these project types.
+Only SBOMs for Snyk Open Source or Snyk Container projects are supported.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 
 ### [SNYK-OS-9004](#snyk-os-9004)
-#### We do not currently provide an SBOM document for this project type
+#### SBOM not supported
 
-Unsupported Snyk project type.
+Only SBOMs for open source projects are supported (Snyk Open Source).
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 
 ### [SNYK-OS-9005](#snyk-os-9005)
-#### Unsuccessful request
+#### Dependency graph request cannot be processed
 
-Unsuccessful dep-graph request.
+The server cannot process the request due to incomplete data. Review the request, then try again.
 
 **HTTP Status:** [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
 
 ### [SNYK-OS-9006](#snyk-os-9006)
-#### Unauthorized
+#### Authorization failed due to missing API token
 
-Missing API token.
+The API token is misconfigured or expired. Configure or generate the API token, then try again.
 
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
+**Help Links:**
+  - [https://docs.snyk.io/snyk-api-info/revoking-and-regenerating-snyk-api-tokens](https://docs.snyk.io/snyk-api-info/revoking-and-regenerating-snyk-api-tokens)
 
 ### [SNYK-OS-9007](#snyk-os-9007)
-#### The body of the request can not be empty
+#### Client request cannot be processed
 
-The body of the request is empty.
+The body of the request is empty. Review the request, then try again.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
 
 ### [SNYK-OS-9008](#snyk-os-9008)
-#### The provided depgraph in the body is invalid
+#### Invalid dependency graph
 
-The provided dephgraph in the body is invalid.
+The request cannot be processed due to an internal error. Review the request, then try again.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -687,4 +689,4 @@ This issue is unexpected, and the service should recover quickly. If not, please
 
 
 ---
-Generated at 2023-05-10T22:31:38.767Z
+Generated at 2023-05-11T11:34:36.654Z
