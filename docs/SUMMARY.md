@@ -244,7 +244,7 @@
   * [Notification and ticketing systems](integrations/notifications-ticketing-system-integrations/README.md)
     * [Slack App](integrations/notifications-ticketing-system-integrations/slack-app.md)
     * [Slack integration](integrations/notifications-ticketing-system-integrations/slack-integration.md)
-    * [Jira notifications setup](integrations/notifications-ticketing-system-integrations/jira.md)
+    * [Jira integration](integrations/notifications-ticketing-system-integrations/jira.md)
   * [Vulnerability management tools](integrations/vulnerability-management-tools/README.md)
     * [Code Dx Enterprise](integrations/vulnerability-management-tools/code-dx-enterprise.md)
     * [Brinqa](integrations/vulnerability-management-tools/brinqa.md)
