@@ -42,7 +42,7 @@ The following environment variables are needed to customize the Broker client:
 
 The following fields are optional:
 
-* _Port_: Omit if no port number is needed
+* _Port_: Omit if no port number is needed.
 * _Basic auth_: Omit if no basic auth required.\
   URL encode both username and password info to avoid errors that may prevent authentication.
 * _Protocol_: Defaults to `https://`\
