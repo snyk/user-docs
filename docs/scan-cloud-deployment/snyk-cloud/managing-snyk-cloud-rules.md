@@ -20,7 +20,7 @@ To set a custom severity level for a rule:
 2. In the **Severity settings** section, select the tab for the desired cloud provider.
 3. Find the rule you want to update and select the new severity level from the drop-down menu:
 
-<figure><img src="../../.gitbook/assets/snyk-cloud-and-iac-set-custom-severity-ui.png" alt=""><figcaption><p>Select the new rule severity level from the drop-down menu</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/snyk-cloud-and-iac-set-custom-severity-ui (1).png" alt=""><figcaption><p>Select the new rule severity level from the drop-down menu</p></figcaption></figure>
 
 Changes take effect for an environment after its next scan.
 

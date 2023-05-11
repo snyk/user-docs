@@ -14,4 +14,4 @@ Security issues encountered by Snyk scans can include vulnerabilities, license p
 * [Prioritize and manage issues](issue-management/)
 * [Set Project information](introduction-to-snyk-projects/)
 * [Define policies](policies/)
-* [View reports](snyk-reports/)
+* [View reports](reports/)
