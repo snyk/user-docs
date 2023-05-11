@@ -522,6 +522,7 @@
   * [Prioritizing and managing issues](manage-issues/issue-management/README.md)
     * [Severity levels](manage-issues/issue-management/severity-levels.md)
     * [Priority Score](manage-issues/issue-management/priority-score.md)
+    * [Risk Score](manage-issues/issue-management/risk-score.md)
     * [Ignore issues](manage-issues/issue-management/ignore-issues.md)
     * [View exploits](manage-issues/issue-management/view-exploits.md)
     * [Triaging issues](manage-issues/issue-management/triaging-issues.md)
