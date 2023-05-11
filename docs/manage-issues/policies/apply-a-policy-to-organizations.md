@@ -12,21 +12,37 @@ Click on the associated check box from the Organization selector panel.
 
 If this Organization is already assigned to another policy, you will be able to see which policy it is applied to from this selector and the pill next to the organization name will be grey
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/mceclip3-2-.png" alt="Grey pill - Organization already assigned to another policy"><figcaption><p>Grey pill - Organization already assigned to another policy</p></figcaption></figure>
+
+</div>
 
 If an Organization is assigned to the policy you are currently viewing, that policy name will appear in a yellow pill next to the Organization name
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/mceclip2-6-.png" alt="Yellow pill - Organization already assigned to this policy"><figcaption><p>Yellow pill - Organization already assigned to this policy</p></figcaption></figure>
+
+</div>
 
 If you are moving an Organization from one policy to another, 2 pills will appear to show which policy is currently applied (yellow) and which policy you will be applying (grey)
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/mceclip1-16-.png" alt="Grey and Yellow pill - Organization already assigned and will move policy"><figcaption><p>Grey and Yellow pill - Organization already assigned and will move policy</p></figcaption></figure>
+
+</div>
 
 ## To remove an Organization from a policy
 
 Uncheck the desired Organization check box from the organization selector panel.
 
-![Remove an Organization from a policy](../../.gitbook/assets/untitled-2-.png)
+<div align="left">
+
+<img src="../../.gitbook/assets/untitled-2-.png" alt="Remove an Organization from a policy">
+
+</div>
 
 The unchecked Organization will now revert back to the default policy.
 

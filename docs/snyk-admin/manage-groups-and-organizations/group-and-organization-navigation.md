@@ -6,7 +6,11 @@ Snyk shows your [preferred Organization](https://docs.snyk.io/features/user-and-
 
 If your company uses multiple Groups, then to change which Organization you're viewing, click the Group navigation switcher (![](<../../.gitbook/assets/image (4) (3).png>) icon):
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/Screenshot 2023-04-25 at 10.06.46.png" alt="Switch Group"><figcaption><p>Switch Group</p></figcaption></figure>
+
+</div>
 
 {% hint style="info" %}
 To view your personal Organizations, select **Ungrouped**.
@@ -16,7 +20,11 @@ To view your personal Organizations, select **Ungrouped**.
 
 To change which Organization you're viewing, click the Organization navigation switcher:
 
-![Switch Organizations](<../../.gitbook/assets/Screenshot 2023-03-13 at 10.31.14.png>)
+<div align="left">
+
+<img src="../../.gitbook/assets/Screenshot 2023-03-13 at 10.31.14.png" alt="Switch Organizations">
+
+</div>
 
 {% hint style="info" %}
 If you add Projects through GitHub integration, these Projects are added to the currently chosen Organization.

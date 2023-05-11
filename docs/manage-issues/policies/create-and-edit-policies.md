@@ -10,7 +10,11 @@
 5. Add rules to the policy. [Click here for information on adding license rules](license-policies/create-a-license-policy-and-rules.md) or [click here for information on adding security rules](security-policies/how-to-create-a-security-policy-and-set-rules.md)
 6. Click **Submit** to create and save that policy.
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/screenshot_2020-05-26_at_9.47.26_am.png" alt="Submit a policy"><figcaption><p>Submit a policy</p></figcaption></figure>
+
+</div>
 
 ## Edit a policy
 
@@ -22,7 +26,11 @@
 
 Click the **...** on the right-hand side to duplicate or delete a policy:
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/Screenshot 2023-03-28 at 16.42.45.png" alt="Other policy actions"><figcaption><p>Other policy actions</p></figcaption></figure>
+
+</div>
 
 #### Delete a policy
 

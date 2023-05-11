@@ -15,16 +15,32 @@ For an issue in a project page that’s been ignored by a security policy:
 
 **Custom and original severity in the CLI**
 
+<div align="left">
+
 <figure><img src="../../../.gitbook/assets/unnamed.png" alt="Custom and original severity in the CLI"><figcaption><p>Custom and original severity in the CLI</p></figcaption></figure>
+
+</div>
 
 **Custom and original severity in Project Page UI**
 
+<div align="left">
+
 <figure><img src="../../../.gitbook/assets/unnamed-1.png" alt="Custom and original severity in the Project Page UI"><figcaption><p>Custom and original severity in the Project Page UI</p></figcaption></figure>
+
+</div>
 
 **Custom and original severity in Open Fix PR UI**
 
+<div align="left">
+
 <figure><img src="../../../.gitbook/assets/unnamed-2.png" alt="Custom and original severity in Open Fix PR UI"><figcaption><p>Custom and original severity in Open Fix PR UI</p></figcaption></figure>
+
+</div>
 
 **Custom and original severity in Reports**
 
+<div align="left">
+
 <figure><img src="../../../.gitbook/assets/screenshot_2020-10-21_at_9.30.03_am.png" alt="Custom and original severity in Reports"><figcaption><p>Custom and original severity in Reports</p></figcaption></figure>
+
+</div>

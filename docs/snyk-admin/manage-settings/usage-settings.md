@@ -10,7 +10,11 @@ Select **Settings** > **Usage** to view Snyk usage details in your Group or Orga
 
 The **Test Usage** section shows how many tests you are using over the current billing period:
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/test-usage.png" alt="Test usage data" width="563"><figcaption><p>Test usage data</p></figcaption></figure>
+
+</div>
 
 {% hint style="info" %}
 Test limits vary for Snyk products and plans. See the [plans page](https://snyk.io/plans/) for details.
@@ -51,7 +55,11 @@ The **Projects** section shows test usage settings for your Projects:
 
 For **Bulk actions**, select relevant Projects, then for the selected Projects, select **Delete**, **Activate** or **Deactivate**:
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/usage-projects-bulk-actions.png" alt="Bulk actions on Projects" width="563"><figcaption><p>Bulk actions on Projects</p></figcaption></figure>
+
+</div>
 
 ### Set test frequency
 
@@ -59,7 +67,11 @@ You can set the frequency of testing for each Project.&#x20;
 
 For each entry, you can select the frequency of testing for that Project (never, daily, or weekly) as applicable to the type of Project, Open Source, Code analysis, Container, or IaC:
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/usage-projects-single.png" alt="Select test frequency"><figcaption><p>Select test frequency</p></figcaption></figure>
+
+</div>
 
 {% hint style="info" %}
 The default test frequency and limitations are as follows:

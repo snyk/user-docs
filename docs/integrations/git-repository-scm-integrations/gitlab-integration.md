@@ -33,7 +33,11 @@ This integration works only with GitLab instances that are publicly reachable no
 2. Go to the Snyk [integrations](https://app.snyk.io/integrations) page and click **Connect to GitLab**.
 3. In your GitLab integrations settings, in **General** > **Account settings**, enter your account credentials and the token you generated.
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-02 at 11.06.01.png" alt="GitLab account settings, enter Personal Access Token" width="563"><figcaption><p>GitLab account settings, enter Personal Access Token</p></figcaption></figure>
+
+</div>
 
 ## Required permissions and roles
 

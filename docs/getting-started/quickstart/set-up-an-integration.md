@@ -18,7 +18,7 @@ Immediately after you [Create a Snyk account](create-a-snyk-account/), you will 
 
 For example:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1) (1) (1).png" alt=""><figcaption><p>Choose integration method</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (3) (1).png" alt=""><figcaption><p>Choose integration method</p></figcaption></figure>
 
 If you select **GitHub**, then fill in the details as prompted.
 
@@ -28,7 +28,7 @@ If you select **GitHub**, then fill in the details as prompted.
 
 Finally, you can [Import a Project](import-a-project.md) to scan:
 
-<figure><img src="../../.gitbook/assets/image (160) (1) (1) (1) (1).png" alt=""><figcaption><p>Add your first project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (160) (1) (1).png" alt=""><figcaption><p>Add your first project</p></figcaption></figure>
 
 ## Manual process (any time)
 
@@ -40,7 +40,11 @@ To scan code from a Git-based source code repository, you must integrate Snyk to
 
 First, log in to the Snyk Web UI ([app.snyk.io](https://app.snyk.io)), and select **Integrations > Source control**.
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/Screenshot 2022-07-26 at 13.26.22.png" alt="Select Source control integrations"><figcaption><p>Select Source control integrations</p></figcaption></figure>
+
+</div>
 
 {% hint style="info" %}
 If an integration is already configured for your Organization, it is marked as **Configured**.

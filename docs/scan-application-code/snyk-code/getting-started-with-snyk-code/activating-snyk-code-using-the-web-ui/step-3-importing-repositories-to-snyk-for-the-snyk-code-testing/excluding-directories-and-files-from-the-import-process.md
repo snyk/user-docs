@@ -82,7 +82,7 @@ exclude:
 * If the repository was already imported to Snyk – retest the repository as follows:
   * On the **Projects** page, click the **Code analysis** Project of the repository. Then, on the **Code Analysis** page, click the **Retest now** option below the header:
 
-<figure><img src="../../../../../.gitbook/assets/image (459).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
 * If the repository was not imported yet to Snyk – [import the repository](importing-additional-repositories-to-snyk.md).
 

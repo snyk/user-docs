@@ -133,7 +133,11 @@ No additional options required. The Snyk plugin has views within the IDE for dis
 
 Under **Additional Parameters** in the IDE settings, enter the **--unmanaged** option to scan for C/C++ open source dependencies.
 
+<div align="left">
+
 <figure><img src="https://lh6.googleusercontent.com/1j-2sJjuVejBJ6nARpaAx2uhdhqT7G3XyNCGZqFxBXJV9ujqRHBYiwInr_mFT7SH-fnhG6iUysKxzYKluPG1f3xUKyb2q-JycA_0QevtaS3hdm4I7-QT7M5benqzWkIe5N-7L3czV-F84_xUR5yl7k0" alt="Scan for dependencies"><figcaption><p>Scan for dependencies</p></figcaption></figure>
+
+</div>
 
 ### CLI Tips and Tricks
 
@@ -199,7 +203,11 @@ For the Beta, while the issues are displayed, the license policy text associated
 
 Below, you can see the license policy text example at the bottom of the screen giving the developer direction on what to do if the license is found.
 
+<div align="left">
+
 <figure><img src="https://lh4.googleusercontent.com/lIn5JFEyaZaTNMVenBoeGIgTpC6YHxpmAjK947z5ISPlHV1rlOvPNCLyzXxsGNj65AAlGn6ff9dF4lHVsVFYMaKXWC939tasD91k98xcDv_Ske6Dz7goMXl5lByyqg6ptvvqaK0UEqLSdzUU9GKrW4U" alt=""><figcaption><p>License policy text example</p></figcaption></figure>
+
+</div>
 
 **Alternate Testing Options**
 

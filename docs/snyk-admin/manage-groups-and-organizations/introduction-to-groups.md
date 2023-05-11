@@ -11,7 +11,11 @@ Snyk Groups make it easier for you to work in teams. Groups can hold many Organi
 
 You can use Group options to view reports across all of your Group’s Organizations, configure your Group settings, and view all of a Group’s members:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-24 at 15.34.14 (1).png" alt="Group overview options"><figcaption><p>Group overview options</p></figcaption></figure>
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-04-24 at 15.34.14.png" alt="Group overview options"><figcaption><p>Group overview options</p></figcaption></figure>
+
+</div>
 
 See [Manage Groups](manage-groups.md) for more details.
 

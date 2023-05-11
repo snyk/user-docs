@@ -2,7 +2,11 @@
 
 To view and manage general settings for your Organization: in your Organization, navigate to **Settings > ORGANIZATION SETTINGS > General:**
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-02 at 15.39.28.png" alt="View Organization general settings"><figcaption><p>View Organization general settings</p></figcaption></figure>
+
+</div>
 
 * [Organization name](organization-general-settings.md#organization-name): set the display name for your Organization.
 * [Organization API key](organization-general-settings.md#organization-api-key): used for Service accounts.
@@ -36,7 +40,11 @@ This ID uniquely identifies this Organization; required if you use the [Snyk API
 
 Use these functions to define Organization-wide ignore settings.
 
-<figure><img src="../../.gitbook/assets/image (1) (2).png" alt="Configure ignore settings for an Organization"><figcaption><p>Configure ignore settings for an Organization</p></figcaption></figure>
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/image (12).png" alt="Configure ignore settings for an Organization"><figcaption><p>Configure ignore settings for an Organization</p></figcaption></figure>
+
+</div>
 
 See **Configure Ignore settings** in the [Ignore issues](../../manage-issues/issue-management/ignore-issues.md#configure-ignore-settings) documentation for more details.
 
@@ -44,7 +52,11 @@ See **Configure Ignore settings** in the [Ignore issues](../../manage-issues/iss
 
 If enabled, users without access to this Snyk Organization can request access.
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt="Enable / disable request access"><figcaption><p>Enable / disable request access</p></figcaption></figure>
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt="Enable / disable request access"><figcaption><p>Enable / disable request access</p></figcaption></figure>
+
+</div>
 
 See **Settings** in the [Organization access requests](../manage-users-and-permissions/organization-access-requests.md#settings) documentation for more details_._
 
@@ -52,7 +64,11 @@ See **Settings** in the [Organization access requests](../manage-users-and-permi
 
 Click **Leave Organization** to leave an Organization, losing access to the Projects and notifications for that Organization.
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-02 at 16.55.50.png" alt="Leave Organization"><figcaption><p>Leave Organization</p></figcaption></figure>
+
+</div>
 
 ### Delete Organization
 

@@ -60,7 +60,11 @@ To review and adjust the automatic fix pull request settings:
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Server**, and click **Edit Settings**.
 2. Scroll to the **Automatic fix PRs** section and configure the relevant options.
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-02 at 11.19.09.png" alt=""><figcaption><p>Automatic fix PR settings </p></figcaption></figure>
+
+</div>
 
 {% hint style="info" %}
 Snyk pull requests are automatically assigned to the default reviewer set in your Bitbucket Server/Data Center account.
@@ -83,7 +87,11 @@ To review and adjust the pull request tests settings:
 1. In Snyk, go to <img src="../../.gitbook/assets/cog_icon.png" alt="cog_icon.png" data-size="line"> (Organization settings) > **Integrations > Source control > Bitbucket Server** , and click **Edit Settings**.
 2. Scroll to **Default Snyk test for pull requests > Open Source Security & Licenses**, and configure the relevant options.
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-02 at 11.21.53.png" alt="Configure PR Checks for your integration"><figcaption><p>Configure PR Checks for your integration</p></figcaption></figure>
+
+</div>
 
 ## Required permissions scope for the Bitbucket DC/Server integration
 
@@ -107,7 +115,11 @@ To disable this integration, in <img src="../../.gitbook/assets/cog_icon.png" al
    The page includes sections that are specific to each integration, where you can manage your credentials, API key, Service Principal, or connection details.
 2. Scroll to the relevant section and click **Remove Bitbucket Server.**
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-02 at 11.23.45.png" alt="Disconnect your integration" width="563"><figcaption><p>Disconnect your integration</p></figcaption></figure>
+
+</div>
 
 {% hint style="warning" %}
 **WARNING**\

@@ -18,7 +18,11 @@ To add an attribute, click on the desired attribute checkbox(es) from the attrib
 
 To remove an attribute from a policy, uncheck the desired attribute checkbox(es) from the attribute selector panel.
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/screenshot_2021-03-11_at_1.20.42_pm.png" alt="Add a policy attribute"><figcaption><p>Add a policy attribute</p></figcaption></figure>
+
+</div>
 
 {% hint style="info" %}
 You can create and save a policy where no attributes are selected, for example, if you have not yet decided which attributes should be associated with that policy. This policy does not apply to projects where all attributes are left blank.
@@ -32,15 +36,27 @@ For example, if you have a policy assigned to `Critical`, `External`, and `Front
 
 Here is our sample policy:
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/screenshot_2021-03-11_at_11.54.33_am.png" alt="Example policy"><figcaption><p>Example policy</p></figcaption></figure>
+
+</div>
 
 Here is a Project that will inherit the policy:
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/screenshot_2021-03-11_at_12.26.02_pm.png" alt="Project inheriting a policy"><figcaption><p>Project inheriting a policy</p></figcaption></figure>
+
+</div>
 
 Here is a project that will not inherit the policy:
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/screenshot_2021-03-11_at_12.29.03_pm.png" alt="Project not inheriting a policy"><figcaption><p>Project not inheriting a policy</p></figcaption></figure>
+
+</div>
 
 ## Applying multiple policies to a Project
 
@@ -48,4 +64,8 @@ Multiple policies can apply to a Project. For example, if you have a policy assi
 
 If multiple policies can be applied to a project, the order of the policies on the policy manager page determines precedence. The policy closest to the top of the list takes precedence over other applicable policies below it. To change the order of policies, either drag and drop the policies into the right order, or use the **...** button on the right hand side to move the policy up or down in the list.
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/screenshot_2021-03-11_at_12.51.25_pm.png" alt="Change policy order"><figcaption><p>Change policy order</p></figcaption></figure>
+
+</div>

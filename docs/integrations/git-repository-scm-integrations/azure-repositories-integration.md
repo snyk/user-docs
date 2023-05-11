@@ -33,7 +33,11 @@ To add a default Project:
 4. Click **Add selected repositories**.\
    Snyk scans the entire file tree for dependency files and imports them to Snyk as Projects.
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en (1).png" alt="Import Projects"><figcaption><p>Import Projects</p></figcaption></figure>
+
+</div>
 
 ## Adding custom file locations and excluding folders
 
@@ -49,7 +53,11 @@ Use this procedure to add an Azure Repository dependency from a non-default path
 The relative path field is case-sensitive.
 {% endhint %}
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/azure_custom_repo-11aug2022.png" alt="Select Azure repos" width="563"><figcaption><p>Select Azure repos</p></figcaption></figure>
+
+</div>
 
 ### Exclude folders from import
 
@@ -63,7 +71,11 @@ The optional **Exclude folders** field is case-sensitive. The pattern you enter 
 
 Once repositories are imported, a confirmation appears in green at the top of the screen. The selected files are indicated with a unique icon, they are named by organization/repo, and you can now also filter to view only those projects, as seen in the example below:
 
-<figure><img src="../../.gitbook/assets/image (22) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="View import results"><figcaption><p>View import results</p></figcaption></figure>
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/image (22) (2) (1) (1) (1) (1) (1) (1).png" alt="View import results"><figcaption><p>View import results</p></figcaption></figure>
+
+</div>
 
 The Azure Repository integration works similarly to the other Snyk [Git integrations](./).
 

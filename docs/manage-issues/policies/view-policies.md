@@ -6,7 +6,11 @@ You must be a Group administrator to access policies for that Group.
 
 Select the **Policies** menu option to see the policies in your Group, arranged by category ([License policies](license-policies/) and [Security policies](security-policies/)).
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/Policies-menu.png" alt="View policies"><figcaption><p>View policies</p></figcaption></figure>
+
+</div>
 
 Expand a category to see policies in that category:
 

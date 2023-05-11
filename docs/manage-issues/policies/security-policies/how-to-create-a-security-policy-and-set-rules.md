@@ -12,7 +12,11 @@ Select **Snyk Default Security Policy** to change the conditions or actions for 
 
 Security policy rules follow an “if, then” framework, with one or more conditions, and an action. For example:
 
+<div align="left">
+
 <figure><img src="../../../.gitbook/assets/screenshot_2020-07-06_at_11.38.07.png" alt="Security policy rules"><figcaption><p>Security policy rules</p></figcaption></figure>
+
+</div>
 
 {% hint style="info" %}
 If you create a new security policy, the first blank rule is automatically created.

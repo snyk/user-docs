@@ -37,4 +37,8 @@ When the PR is opened and ready, you can safely merge it and instantly reduce th
 
 The feature is available for all Snyk users. It is on by default for all users with free accounts and off by default for existing integrations of Snyk customers. You can opt-in from the integration or Project settings (in the **Dockerfiles** section).
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/image (9).png" alt="Enable auto-update PRs for base images" width="563"><figcaption><p>Enable auto-update PRs for base images</p></figcaption></figure>
+
+</div>

@@ -33,7 +33,11 @@ Continue by following these steps:
 
 GCR files are indicated with a unique icon . You can now filter to view only those Projects:
 
+<div align="left">
+
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-03-31 at 18.10.17.png" alt="GCR added to integrations filters"><figcaption><p>GCR added to integrations filters</p></figcaption></figure>
+
+</div>
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-03-31 at 18.06.20.png" alt="Projects listing with two filters applied"><figcaption><p>Projects listing with two filters applied</p></figcaption></figure>
 
