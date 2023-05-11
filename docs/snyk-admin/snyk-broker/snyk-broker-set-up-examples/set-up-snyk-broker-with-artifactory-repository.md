@@ -17,7 +17,7 @@ Some Docker deployments for Windows run only Windows containers. Ensure that you
 {% endhint %}
 
 {% hint style="info" %}
-For information about non-brokered integration with Artifactory Repository see [Artifactory Repository setup](../../../integrations/private-registry-integrations/artifactory-repository-setup.md).
+For information about non-brokered integration with Artifactory Repository see [Artifactory Repository setup](../../../integrations/private-registry-integrations/artifactory-repository-setup/).
 {% endhint %}
 
 {% hint style="info" %}

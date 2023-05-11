@@ -15,13 +15,13 @@ Maven projects can be configured to mirror all requests through a custom package
 
 If authentication is required to access your custom registry you will need to first configure the Artifactory package repository integration, see [Artifactory Registry Setup.](https://docs.snyk.io/integrations/private-registry-integrations/artifactory-registry-setup)
 
-Once the integration is set up you can configure Maven settings by navigating to settings ![](../../.gitbook/assets/cog\_icon.png) **> Languages > Java**.
+Once the integration is set up you can configure Maven settings by navigating to settings ![](../../../.gitbook/assets/cog\_icon.png) **> Languages > Java**.
 
 You can choose whether to use Artifactory as a mirror or as an additional repository where your artifacts will reside. These settings will be very similar to what you have in `~/.m2/settings.xml`.
 
 ### **Mirrors**
 
-![](../../.gitbook/assets/uuid-fd027725-33b3-7f12-a921-d7fba9cedad8-en.png)
+![](../../../.gitbook/assets/uuid-fd027725-33b3-7f12-a921-d7fba9cedad8-en.png)
 
 Choose a value for the Type, either **Direct** or if using authentication **Integration**
 

@@ -47,7 +47,7 @@ However, for the most accurate results, Snyk recommends using the [Snyk CLI](../
 
 ### Gradle versions supported
 
-* CLI - Gradle `4.*`, `5.*`, `6.*`, `7.*`  For more information see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
+* CLI - Gradle `4.*`, `5.*`, `6.*`, `7.*` For more information see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
 * Git - Gradle `4.*`, `5.*`, `6.*`
 
 ## Snyk CLI for Java and Kotlin projects (CI/CD)
@@ -260,7 +260,7 @@ Gradle lockfiles are an opt-in feature that, among other benefits, enable reprod
 
 ## Git settings for Java
 
-From the Snyk UI you can specify mirrors or repositories from which you’d like to resolve packages in Artifactory for Maven. For more information see [Artifactory Registry for Maven](../../../integrations/private-registry-integrations/artifactory-registry-for-maven.md).
+From the Snyk UI you can specify mirrors or repositories from which you’d like to resolve packages in Artifactory for Maven. For more information see [Artifactory Registry for Maven](../../../integrations/private-registry-integrations/artifactory-repository-setup/artifactory-registry-for-maven.md).
 
 ## Additional Snyk support for Java
 

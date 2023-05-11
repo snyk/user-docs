@@ -2,9 +2,9 @@
 
 ### Artifactory
 
-* [artifactory-repository-setup.md](artifactory-repository-setup.md "mention")
-* [artifactory-registry-for-maven.md](artifactory-registry-for-maven.md "mention")
-* [artifactory-registry-for-npm.md](artifactory-registry-for-npm.md "mention")
+* [artifactory-repository-setup](artifactory-repository-setup/ "mention")
+* [artifactory-registry-for-maven.md](artifactory-repository-setup/artifactory-registry-for-maven.md "mention")
+* [artifactory-registry-for-npm.md](artifactory-repository-setup/artifactory-registry-for-npm.md "mention")
 
 ### Nexus Repository Manager
 
