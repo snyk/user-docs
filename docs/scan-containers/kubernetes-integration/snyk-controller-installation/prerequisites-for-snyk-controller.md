@@ -26,10 +26,10 @@ limits: cpu: "1" memory: "2Gi"
 
 Snyk Controller defaults to using the US data center. If you are using Snyk deployed in [an alternative data center](../../../more-info/data-residency-at-snyk.md), you must change the upstream endpoint `integrationApi` URL through an environment variable as follows for your specific deployment.
 
-* AU: [https://api.au.snyk.io/v1/kubernetes-upstream](https://api.au.snyk.io/v1/kubernetes-upstream)
-* EU: [https://api.eu.snyk.io/v1/kubernetes-upstream](https://api.eu.snyk.io/v1/kubernetes-upstream)
+* AU: [https://api.au.snyk.io/v2/kubernetes-upstream](https://api.au.snyk.io/v1/kubernetes-upstream)
+* EU: [https://api.eu.snyk.io/v2/kubernetes-upstream](https://api.eu.snyk.io/v1/kubernetes-upstream)
 * Helm example:
 
 ```
---set integrationApi=https://api.au.snyk.io/v1/kubernetes-upstream
+--set integrationApi=https://api.au.snyk.io/v2/kubernetes-upstream
 ```
