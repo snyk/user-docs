@@ -35,7 +35,7 @@ To add a default Project:
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en.png" alt="Import Projects"><figcaption><p>Import Projects</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/uuid-cae3b5b8-6971-406c-3c00-91c9d1a570a2-en (1).png" alt="Import Projects"><figcaption><p>Import Projects</p></figcaption></figure>
 
 </div>
 
@@ -55,7 +55,7 @@ The relative path field is case-sensitive.
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/azure_custom_repo-11aug2022 (1).png" alt="Select Azure repos" width="563"><figcaption><p>Select Azure repos</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/azure_custom_repo-11aug2022.png" alt="Select Azure repos" width="563"><figcaption><p>Select Azure repos</p></figcaption></figure>
 
 </div>
 
@@ -73,7 +73,7 @@ Once repositories are imported, a confirmation appears in green at the top of th
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (22) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="View import results"><figcaption><p>View import results</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="View import results"><figcaption><p>View import results</p></figcaption></figure>
 
 </div>
 
@@ -117,7 +117,7 @@ To enable integration between Azure Repository and Snyk:
 1. Log in to [your Snyk account](https://app.snyk.io) and go to **Integrations**.
 2. In the **Azure Repos** tile, click <img src="../../.gitbook/assets/integration_settings_tile_cog-11aug2022.png" alt="" data-size="line"> to open **Organization Settings > Integrations >Azure Repos> Account credentials**.\
    <img src="../../.gitbook/assets/integrations -azure_repo_tile-11aug2022.png" alt="" data-size="original">
-3.  Set the Azure DevOps Organization that you want to integrate with by entering the slug for your Organization (![](<../../.gitbook/assets/image (163) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png>)) and the PAT that you generated.
+3.  Set the Azure DevOps Organization that you want to integrate with by entering the slug for your Organization (![](<../../.gitbook/assets/image (127) (1) (1) (1).png>)) and the PAT that you generated.
 
     Enterprise customers can also provide a custom URL for an Azure Repos Server private instance that is publicly reachable.
 4. Click **Save**.\
