@@ -8,9 +8,9 @@
 
 ### Nexus Repository Manager
 
-* [nexus-repo-manager-setup.md](nexus-repo-manager-setup.md "mention")
-* [artifactory-registry-for-maven-1.md](artifactory-registry-for-maven-1.md "mention")
-* [artifactory-registry-for-npm-1.md](artifactory-registry-for-npm-1.md "mention")
+* [nexus-repo-manager-setup](nexus-repo-manager-setup/ "mention")
+* [artifactory-registry-for-maven-1.md](nexus-repo-manager-setup/artifactory-registry-for-maven-1.md "mention")
+* [artifactory-registry-for-npm-1.md](nexus-repo-manager-setup/artifactory-registry-for-npm-1.md "mention")
 
 ### npm Teams & Enterprise
 

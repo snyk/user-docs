@@ -5,17 +5,17 @@
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-Snyk can use Nexus Repository Manager with Maven projects.
+Snyk can use Nexus Repository Manager with Maven Projects.
 
 This enables Snyk to resolve all direct and transitive dependencies of packages hosted on the custom registry and calculate a more complete, accurate dependency graph and related vulnerabilities.
 
-Maven projects can be configured to mirror all requests through a custom package repository, or you can specify additional repositories to use alongside Maven Central.
+Maven Projects can be configured to mirror all requests through a custom package repository, or you can specify additional repositories to use alongside Maven Central.
 
 ## **Setup custom Maven package registries**
 
-If authentication is required to access your Nexus registry you must first configure the Nexus Repository Manager integration. See [Nexus Repository Manager setup](nexus-repo-manager-setup.md).
+If authentication is required to access your Nexus registry, you must first configure the Nexus Repository Manager integration. See [Nexus Repository Manager setup](./).
 
-Once the integration is set up you can configure Maven settings by navigating to settings ![Settings icon](../../.gitbook/assets/cog\_icon.png) **> Languages > Java**.
+Once the integration is set up, you can configure Maven settings by navigating to settings ![Settings icon](../../../.gitbook/assets/cog\_icon.png) **> Languages > Java**.
 
 You can choose whether to use Nexus as a mirror or as an additional repository where your artifacts will reside.
 
@@ -23,13 +23,13 @@ These settings are very similar to what you have in `~/.m2/settings.xml`.
 
 ### **Mirrors**
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-07-15 at 15.10.52.png" alt="Set up for MIrrors"><figcaption><p>Set up for MIrrors</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-07-15 at 15.10.52.png" alt="Set up for Mirrors"><figcaption><p>Set up for Mirrors</p></figcaption></figure>
 
-Choose a value for the Type, either **Direct** or if using authentication **Integration**.
+Choose a value for the Type, either **Direct** or, if you are using using authentication, **Integration**.
 
-If using **Direct** you must complete the **URL**, **Repository Name** and what it is a **Mirror Of**.
+If you are using **Direct,** you must complete the **URL**, **Repository Name** and what it is a **Mirror Of**.
 
-The **Mirror Of** value can either be a `*` to mirror everything or you can type in a value, for example ,`central`.
+The **Mirror Of** value can either be a `*` to mirror everything, or you can type in a value, for example,`central`.
 
 If you are using Type **Integration**, you must choose the Nexus integration type and provide the **Repository Name** and **Mirror Of** details.
 
@@ -37,17 +37,17 @@ Set **Repository Name** according to your version of Nexus.
 
 {% tabs %}
 {% tab title="Nexus 3" %}
-**Repository Name** should be set as whatever comes after `repository/` in the internal repository URL.
+Set **Repository Name** as whatever comes after `repository/` in the internal repository URL.
 
 For example, if the URL is `http://nexus.company.io/repository/libs-release` , Repository Name should be set as `libs-release`.
 {% endtab %}
 
 {% tab title="Nexus 2" %}
-**Repository Name** should be set as whatever come after: `nexus/content/` in the internal repository URL.
+Set **Repository Name** as whatever comes after `nexus/content/` in the internal repository URL.
 
 For example, if the URL is `http://nexus.company.io/nexus/content/groups/public`, Repository Name should be set as `groups/public`.
 
-Or if the URL is `http://nexus.company.io/nexus/content/repositories/releases`, Repository Name should be set as `repositories/releases`.
+If the URL is `http://nexus.company.io/nexus/content/repositories/releases`, Repository Name should be set as `repositories/releases`.
 {% endtab %}
 {% endtabs %}
 

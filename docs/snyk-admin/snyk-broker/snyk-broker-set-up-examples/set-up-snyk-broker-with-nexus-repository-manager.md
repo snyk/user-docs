@@ -16,12 +16,27 @@ Some Docker deployments for Windows run only Windows containers. Ensure that you
 {% endhint %}
 
 {% hint style="info" %}
-For information about non-brokered integration with Nexus Repository Manager including supported environments and versions and user permissions, see [Nexus Repository Manager setup](../../../integrations/private-registry-integrations/nexus-repo-manager-setup.md).
+For information about non-brokered integration with Nexus Repository Manager including supported environments and versions and user permissions, see [Nexus Repository Manager setup](../../../integrations/private-registry-integrations/nexus-repo-manager-setup/).
 {% endhint %}
 
 {% hint style="info" %}
 For information about brokered integration with Nexus Container Registry see [Snyk Broker -Container Registry Agent](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-container-registry-agent).
 {% endhint %}
+
+## Obtain Broker token for Nexus integration
+
+1. Go to settings <img src="../../../.gitbook/assets/cog_icon.png" alt="Settings icon" data-size="line"> > **Integrations > Package Repositories > Nexus**
+2. Verify that you see the screen to configure Nexus.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-07-15 at 15.15.11.png" alt="Configure Nexus"><figcaption><p>Configure Nexus</p></figcaption></figure>
+
+{% hint style="info" %}
+If you do not see the **Snyk Broker** switch, you do not have the necessary permissions and can only add a publicly accessible instance.
+
+Submit a request to [Snyk Support](https://support.snyk.io/hc/en-us/requests/new) if you want to add a private registry.
+{% endhint %}
+
+When you have permissions to add a private registry, continue with the instructions to [generate a Broker token from the Web UI](set-up-snyk-broker-with-nexus-repository-manager.md#generate-a-broker-token-from-the-web-ui).
 
 ## Generate a Broker token from the Web UI
 

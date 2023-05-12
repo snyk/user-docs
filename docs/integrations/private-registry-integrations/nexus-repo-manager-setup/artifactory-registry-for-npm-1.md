@@ -21,11 +21,11 @@ This guide is relevant for Snyk Web UI integrations only, the Snyk CLI already s
 
 ## JavaScript Language Settings
 
-Go to settings <img src="../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> **> Languages > JavaScript** and either the npm or yarn settings depending on your project types.
+Go to settings <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> **> Languages > JavaScript** and either the npm or yarn settings depending on your project types.
 
-If you have not previously connected to Nexus Repository Manager you will be asked to configure an integration first, see [nexus-repo-manager-setup.md](nexus-repo-manager-setup.md "mention")
+If you have not previously connected to Nexus Repository Manager you will be asked to configure an integration first, see [.](./ "mention")
 
-![](<../../.gitbook/assets/Screenshot 2022-07-15 at 14.18.43.png>)
+![](<../../../.gitbook/assets/Screenshot 2022-07-15 at 14.18.43.png>)
 
 Now follow the steps below, according to your version of Nexus.
 
@@ -36,20 +36,18 @@ Now follow the steps below, according to your version of Nexus.
 3. If you want to configure this registry as **default registry url**, then leave scope blank.
 4. If you want to configure **only scoped packages** to use this registry then add a scope.
 5. If you want to add a mix of **default registry url** and **scoped packages**, add multiple configurations - one for the default and one per scope.
-6. The **Repository** section should be set as whatever comes after `repository/` in the internal repository URL. \
-   For example if the URL is `http://nexus.company.io/repository/npm-group`, Repository should be set as `npm-group`&#x20;
+6. The **Repository** section should be set as whatever comes after `repository/` in the internal repository URL.\
+   For example if the URL is `http://nexus.company.io/repository/npm-group`, Repository should be set as `npm-group`
 7. When you have added all the registries and scopes you want, click **Update settings**.
 {% endtab %}
 
 {% tab title="Nexus 2" %}
-
-
 1. Select “Add registry configuration”
 2. Select "Nexus" as the Package source
 3. If you want to configure this registry as **default registry url**, then leave scope blank.
 4. If you want to configure **only scoped packages** to use this registry then add a scope.
 5. If you want to add a mix of **default registry url** and **scoped packages**, add multiple configurations - one for the default and one per scope.
-6. The **Repository** section should be set as whatever comes after `nexus/content/` in the internal repository URL. \
+6. The **Repository** section should be set as whatever comes after `nexus/content/` in the internal repository URL.\
    For example if the URL is `http://nexus.company.io/nexus/content/groups/npm-group`, Repository should be set as `groups/npm-group` .\
    Or `http://nexus.company.io/nexus/content/repositories/npm-hosted`, Repository should be set as `repositories/npm-hosted`
 7. When you have added all the registries and scopes you want, click **Update settings**.
@@ -60,4 +58,4 @@ Now follow the steps below, according to your version of Nexus.
 
 Open a Pull/Merge Request on a project that contains private dependencies that are hosted in Nexus to see **a lockfile updated and included in the Snyk Fix Pull Request with the correct URL to your repository.**
 
-![](<../../.gitbook/assets/Screenshot 2022-07-15 at 14.22.59.png>)
+![](<../../../.gitbook/assets/Screenshot 2022-07-15 at 14.22.59.png>)
