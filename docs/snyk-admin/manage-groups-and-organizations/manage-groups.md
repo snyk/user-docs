@@ -4,7 +4,7 @@ You can use Group-level options to view reports across all of your Group’s Org
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-24 at 15.34.14 (1).png" alt="Group overview options"><figcaption><p>Group overview options</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-04-24 at 15.34.14.png" alt="Group overview options"><figcaption><p>Group overview options</p></figcaption></figure>
 
 </div>
 
@@ -26,6 +26,8 @@ Select reports to view the vulnerability status of all of a Group’s Organizati
 
 </div>
 
+See [Reports](../../manage-issues/snyk-reports/) for more details.
+
 ## Dependencies
 
 Select **Dependencies** to view your Group's dependencies and license issues:
@@ -36,11 +38,7 @@ Select **Dependencies** to view your Group's dependencies and license issues:
 
 </div>
 
-#### Organization filters
-
-Organization filters can be created, saved, and selected quickly using the **Organization Filters** dropdown. This will set the context for all the tabs within the reports, where you can continue to filter other values such as type, status and package manager.
-
-<figure><img src="../../.gitbook/assets/image (206) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="Organization filters dropdown"><figcaption><p>Organization filters dropdown</p></figcaption></figure>
+See [Dependencies and licenses](../../manage-issues/dependencies-and-licenses/) for more details.
 
 ## Policies
 
@@ -62,10 +60,10 @@ Select **Members** to view members (users) in that Group.
 Group members are not members of your Organizations (who are managed within the Organization’s settings area), but are members who can access all Organizations in that Group.
 {% endhint %}
 
-See [Manage users in your Group](../manage-users-and-permissions/manage-users-in-your-group.md) for more details.
+See [Manage users in your Group](../manage-users-and-permissions/manage-users-in-your-group.md) for details.
 
 ### Settings
 
 Select **Settings** to view and manage Group settings.&#x20;
 
-See [Manage settings](../manage-settings/) for more details.
+See [Manage settings](../manage-settings/) for details.

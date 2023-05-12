@@ -57,7 +57,7 @@ Consider the following scenario where an insecure WebSocket protocol is fixed us
 
 You can follow through the entire sequence in this short (13-second) video.
 
-<figure><img src="../../.gitbook/assets/fix_suggestions (3).gif" alt=""><figcaption><p>Fixing WebSocket protocol vulnerability using Snyk Code Fix </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/fix_suggestions (1).gif" alt=""><figcaption><p>Fixing WebSocket protocol vulnerability using Snyk Code Fix </p></figcaption></figure>
 
 ## What data does Snyk Code Fix Suggestions collect
 

@@ -1,14 +1,16 @@
 # Getting Started with Snyk License Compliance Management
 
+{% hint style="info" %}
 **Feature availability**\
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+{% endhint %}
 
-Get started with Snyk license compliance management, to check compliance for the [open source licenses](https://snyk.io/learn/open-source-licenses/) in your code, as part of your [Snyk Open Source](../open-source-basics/) solution.
+Get started with Snyk license compliance management, to check compliance for the [open source licenses](https://snyk.io/learn/open-source-licenses/) in your code, as part of your Snyk Open Source solution.
 
-The Snyk Default License Policy defines how Snyk identifies potential license issues in the open source packages your projects are using. The default policy applies to all organizations created within your group.
+The Snyk Default License Policy defines how Snyk identifies potential license issues in the open-source packages your Projects are using. This policy applies to all Organizations created in your Group.
 
 {% hint style="info" %}
-This process describes how to use the Snyk Web UI and a [supported source code management](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations) system.\
+This process describes how to use the [Snyk Web UI](../../../getting-started/getting-started-with-the-snyk-web-ui.md)Projects and a supported [Git repository](../../../integrations/git-repository-scm-integrations/).\
 You can also use an [IDE tool](../../../integrations/ide-tools/) or a [CI/CD integration](../../../integrations/ci-cd-integrations/), or use the [Snyk CLI tool](../../../snyk-cli/) to get started using the command line.
 {% endhint %}
 
@@ -17,11 +19,11 @@ You can also use an [IDE tool](../../../integrations/ide-tools/) or a [CI/CD int
 Ensure you have:
 
 * A Snyk [paid plan](https://snyk.io/plans/).
-* Integrated and installed your projects, as described for [Snyk Open Source](../getting-started-snyk-open-source.md).
+* Integrated and importedOrganization your Projects, as described for [Snyk Open Source](../getting-started-snyk-open-source.md).
 
 ## **Stage 1: Define policies**
 
-To take effective action based on license issues, you need to define policies defining these actions, based on license types. Policies provide a way to capture different requirements within an organization, based on factors such as line of business. Work with your legal team to create policies that are specific to your company.
+To take effective action based on license issues, you need to define policies defining these actions, based on license types. Policies provide a way to capture different requirements within an Organization, based on factors such as line of business. Work with your legal team to create policies that are specific to your company.
 
 To open your Snyk Group default license policy, complete the following steps:
 
@@ -71,11 +73,11 @@ This example includes two high severity license policy violations, caused by:
 * a direct dependency on an npm package called **wicket@1.3.5**
 * a transitive dependency on a package called **flickity@2.2.1** introduced by **web-project-starter@0.0.3**
 
-**View lists and copyrights**
+### **View all license information**
 
-You can view and share detailed lists of licenses being used, and see a report that lists all the Open Source components and licenses along with copyright information.
+You can view and share detailed lists of licenses being used by all Projects in your Organization, and see a report that lists all the Open Source components and licenses along with copyright information.
 
-<figure><img src="../../../.gitbook/assets/copyright.png" alt="Dependencies overview with focus on licensing and copyright information."><figcaption><p>Dependencies overview with focus on licensing and copyright information</p></figcaption></figure>
+See [Dependencies and licenses](../../../manage-issues/dependencies-and-licenses/) for more details.
 
 ## **Stage 3: Process issues**
 

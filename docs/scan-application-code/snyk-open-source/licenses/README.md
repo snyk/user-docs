@@ -7,7 +7,7 @@
 Licenses are available to all paid plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-Every time you test your repositories either with the CLI or from the Snyk Web UI, your repositories are scanned not only for vulnerabilities but also for license compliance. This includes all of your direct and indirect dependencies. Snyk scans your manifest files, and then checks for license issues against Snyk’s known licenses.
+Every time you test your code in the [Snyk Web UI](../../../getting-started/getting-started-with-the-snyk-web-ui.md), the [Snyk CLI](../../../snyk-cli/), or using [PR Checks](../../run-pr-checks/), your repositories are scanned not only for vulnerabilities but also for license compliance. This includes all of your direct and indirect dependencies. Snyk scans your manifest files, and then checks for license issues against Snyk’s known licenses.
 
 ### Default license policy
 
@@ -30,13 +30,17 @@ If you notice a license with the wrong license assigned to it, you can reach out
 
 ### Using licenses
 
-To facilitate onboarding of your developers, we recommend that your teams check these defaults, update severities, and add instructions per license type based on the policies outlined specifically by your Legal teams. Once updated, when Snyk detects a license violation, it displays the violation for all users in the organization on the Snyk Web UI or on the CLI Snyk test results, in the same way as a security vulnerability, and including the severity and instructions you configured.
+To facilitate the onboarding of your developers, we recommend that your teams check these defaults, update severities, and add instructions per license type based on the policies outlined specifically by your Legal teams.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="License card overview."><figcaption><p>License card overview</p></figcaption></figure>
+After being updated, when Snyk detects a license violation, it displays the violation for all users in the Organization on the test results, on the [Snyk Web UI](../../../getting-started/getting-started-with-the-snyk-web-ui.md), the [Snyk CLI](../../../snyk-cli/), or using [PR Checks](../../run-pr-checks/). in the same way as a security vulnerability, and including the severity and instructions you configured.
+
+For example:
+
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="License card overview."><figcaption><p>License card overview</p></figcaption></figure>
 
 ## **An inventory of your licenses**
 
-Within the **Reports** area you can view an inventory of all of your licenses across all your projects. Snyk also lists packages that have dual licenses and multiple licenses. See [Reports: Licenses tab](reports-licenses-tab.md) for more information.
+You can view an inventory of all of your licenses across all your Projects. Snyk also lists packages that have dual licenses and multiple licenses. See [View licenses](../../../manage-issues/dependencies-and-licenses/view-licenses.md) for more information.
 
 ## **Supported package managers**
 
