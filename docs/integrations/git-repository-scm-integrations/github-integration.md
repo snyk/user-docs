@@ -215,11 +215,13 @@ Users can either be manually specified, and all will be assigned, or automatical
 
 #### **Enable Auto-assign for all Projects in the GitHub integration**
 
-To configure the Auto-assign settings for all the Projects from an imported private repository, go to the Github integration settings via <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings** **>** **Integrations > Source control > GitHub**, enable **Auto-assign PRs in private repos**, and choose to assign PRs to the last user to change the manifest file or specified contributors.
+To configure the Auto-assign settings for all the Projects from an imported private repository, go to the Github integration settings via <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings** **>** **Integrations > Source control > GitHub**, and select **Enable pull request assignees**.&#x20;
+
+You can then choose to assign PRs to the last user to change the manifest file or specified contributors.
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/Github-integrations-PR-assignees.png" alt="Auto-assign PRs in private repos" width="563"><figcaption><p>Auto-assign PRs in private repos</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt="Auto-assign PRs in private repos"><figcaption><p>Auto-assign PRs in private repos</p></figcaption></figure>
 
 </div>
 
