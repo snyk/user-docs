@@ -23,8 +23,8 @@ The Reports area comprises these tabs:
 
 * [Summary](summary-tab.md)—the main dashboard displays a birds-eye view of all of your issues (vulnerabilities and licenses), across all of your projects.
 * [Issues](issues-tab.md)—all issues (vulnerabilities and licenses) across all of your projects, including their severity, any available fixes, and more.
-* [Dependencies](dependencies-tab.md)—the package dependencies in your project and their health status.
-* [Licenses](licenses-tab.md)—the licenses in all of your projects and their status.
+* [Dependencies](../reports/dependencies-tab.md)—the package dependencies in your project and their health status.
+* [Licenses](../reports/licenses-tab.md)—the licenses in all of your projects and their status.
 
 Report data can also be generated and retrieved with our APIs. For more information about this, see our [API documentation](https://snyk.docs.apiary.io/#introduction).
 
