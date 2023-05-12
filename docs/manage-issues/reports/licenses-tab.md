@@ -1,30 +1,12 @@
 # Licenses tab
 
-The **Licenses** area displays all licenses that are currently used in your project, as well as a summary of all dependencies in your projects, and a summary of all of your projects using the license. This allows you to understand which projects and dependencies use a license.
+The **Licenses** area displays all licenses currently used in your Project, a summary of all dependencies in your Projects, and a summary of all of your Projects using the license. This allows you to understand which Projects and dependencies use a license.
 
-For example:
+License information is available from the **Dependencies** menu option - see [View licenses](../dependencies-and-licenses/view-licenses.md) for more details.
 
-<figure><img src="../../.gitbook/assets/licenses-tab.png" alt="Licenses tab"><figcaption><p>Licenses tab</p></figcaption></figure>
+{% hint style="info" %}
+For systems using legacy reporting, this information is available from the **Reports** menu option.
+{% endhint %}
 
-## **Licenses tab elements**
+##
 
-The following table describes the different parts of the **Licenses** area:
-
-| **Element**  | **Description**                                                                                                                                                                                         |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| License      | The full official name of the license, linked to additional details and information on the [SPDX](https://spdx.org) site.                                                                               |
-| Dependencies | The total number of dependent packages with this license in your projects, linked to a side panel that displays the full list of affected dependencies in the same layout as the **Dependencies** area. |
-| Projects     | The total number of your projects using this license, linked to a side panel that displays the full list of your affected projects, with the same layout as the **Dependencies** tab.                   |
-
-## **Licenses tab actions**
-
-These controls appear at the top of the window:
-
-<figure><img src="../../.gitbook/assets/license-tab-controls.png" alt="Licenses tab actions"><figcaption><p>Licenses tab actions</p></figcaption></figure>
-
-* **Search for Licenses**—the dynamic search field enables you to enter free text and begins searching with the first character you type; alternatively, select multiple packages from the dropdown list that opens when you click in the field. In addition, click the Select All or Deselect All links that dynamically appear in the upper right-hand corner of the dropdown list.
-* **License filters**—mark the packages to be displayed by selecting specific project types. Only issues matching all selected criteria are displayed.
-
-<figure><img src="../../.gitbook/assets/uuid-53b0da21-ca9b-a04c-354a-97219ae7c05b-en.png" alt="License filters"><figcaption><p>License filters</p></figcaption></figure>
-
-* **Export as CSV**—export issue data in CSV file format.
