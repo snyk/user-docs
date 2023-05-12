@@ -1,2 +1,0 @@
-# Nexus image scanning
-
