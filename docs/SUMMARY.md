@@ -162,7 +162,7 @@
     * [Nexus Repository Manager setup](integrations/private-registry-integrations/nexus-repo-manager-setup.md)
       * [Nexus Repository Manager for Maven](integrations/private-registry-integrations/artifactory-registry-for-maven-1.md)
       * [Nexus Repository Manager for npm](integrations/private-registry-integrations/artifactory-registry-for-npm-1.md)
-    * [npm Teams & npm Enterprise](integrations/private-registry-integrations/npm-teams-and-npm-enterprise-for-npms.md)
+    * [npm Teams and npm Enterprise integration](integrations/private-registry-integrations/npm-teams-and-npm-enterprise-integration.md)
     * [Private gem sources for Ruby](integrations/private-registry-integrations/private-gem-sources-for-ruby.md)
   * [Snyk Container - Integrations](scan-containers/snyk-container-integrations/README.md)
     * [Container security with Docker Hub integration](integrations/snyk-container-integrations/container-security-with-docker-hub-integration/README.md)
