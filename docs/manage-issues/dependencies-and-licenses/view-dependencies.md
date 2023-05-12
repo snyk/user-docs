@@ -4,7 +4,11 @@ The **Dependencies** tab acts as a Bill Of Materials (BOM) for all the direct de
 
 Dependency reports show details about the packages included in your Projects, such as their full names, the version of the package currently used in your Projects, and the Projects in which they are used, as well as a summary of the issues they contain:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-05-11 at 12.49.37.png" alt="Reports dependencies tab"><figcaption><p>Dependencies tab</p></figcaption></figure>
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt="Dependencies tab"><figcaption><p>Dependencies tab</p></figcaption></figure>
+
+</div>
 
 This assists in determining dependency health—or in other words, the health of your packages, by displaying important details per package.
 
