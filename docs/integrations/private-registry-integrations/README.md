@@ -1,21 +1,8 @@
-# Private registry
+# Private registry integrations
 
-### Artifactory
+This section provides documentation for the following integrations:
 
-* [artifactory-repository-setup](artifactory-repository-setup/ "mention")
-* [artifactory-registry-for-maven.md](artifactory-repository-setup/artifactory-registry-for-maven.md "mention")
-* [artifactory-registry-for-npm.md](artifactory-repository-setup/artifactory-registry-for-npm.md "mention")
-
-### Nexus Repository Manager
-
-* [nexus-repo-manager-setup](nexus-repo-manager-setup/ "mention")
-* [artifactory-registry-for-maven-1.md](nexus-repo-manager-setup/artifactory-registry-for-maven-1.md "mention")
-* [artifactory-registry-for-npm-1.md](nexus-repo-manager-setup/artifactory-registry-for-npm-1.md "mention")
-
-### npm Teams & Enterprise
-
-* [npm-teams-and-npm-enterprise-for-npms.md](npm-teams-and-npm-enterprise-for-npms.md "mention")
-
-### Ruby
-
-* [private-gem-sources-for-ruby.md](private-gem-sources-for-ruby.md "mention")
+* [Artifactory Registry setup](artifactory-repository-setup/)
+* [Nexus Repository Manager setup](nexus-repo-manager-setup.md)
+* [npm Teams and npm Enterprise integration](npm-teams-and-npm-enterprise-for-npms.md)
+* [Private gem sources for Ruby](private-gem-sources-for-ruby.md)
