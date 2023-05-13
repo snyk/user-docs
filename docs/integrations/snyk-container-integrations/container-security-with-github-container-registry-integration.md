@@ -42,7 +42,7 @@ Follow these steps to add images from the GitHub container registry to Snyk.
 ## **Prerequisites for scanning GitHub Container registry images**
 
 * A Snyk account with access to the relevant Organization authorized by an administrator
-* GitHub container registry integration configured; see [Container security with GitHub container registry integration](container-security-with-github-container-registry-integration.md).
+* GitHub container registry integration configured; see [Integrate with GitHub Container registry](container-security-with-github-container-registry-integration.md#integrate-with-github-container-registry).
 
 ## **Steps in scanning GitHub Container registry images**
 

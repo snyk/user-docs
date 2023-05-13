@@ -1,4 +1,4 @@
-# Container security with Quay integration
+# Container security with Quay Container Registry integration
 
 Snyk integrates with Quay Container Registry to enable you to import your container images and monitor them for vulnerabilities.
 
@@ -39,7 +39,7 @@ To add images from Quay to Snyk:
 ### **Prerequisites** for Quay image scanning
 
 * You must have a Snyk account with access to the relevant Organization given by an administrator.
-* Quay integration must be configured. For details, see [Configure Quay integration](container-security-with-quay-integration.md#configure-quay-integration).
+* Quay integration must be configured. For details, see [Integrate with Quay Container Registry](container-security-with-quay-integration.md#integrate-with-quay-container-registry).
 
 ### **Steps in scanning Quay images**
 

@@ -188,7 +188,7 @@
     * [Container security with Harbor Container Registry integration](integrations/snyk-container-integrations/container-security-with-harbor-integration.md)
     * [Container security with Quay Container Registry integration](integrations/snyk-container-integrations/container-security-with-quay-integration.md)
     * [Container security with GitHub Container registry integration](integrations/snyk-container-integrations/container-security-with-github-container-registry-integration.md)
-    * [Container security with Nexus integration](scan-containers/image-scanning-library/nexus-image-scanning/container-security-with-nexus-integration.md)
+    * [Container security with Nexus Container Registry integration](scan-containers/image-scanning-library/nexus-image-scanning/container-security-with-nexus-integration.md)
     * [Container security with DigitalOcean integration](integrations/snyk-container-integrations/container-security-with-digitalocean-integration.md)
     * [Container security with GitLab Container Registry integration](integrations/snyk-container-integrations/container-security-with-gitlab-container-registry-integration.md)
     * [Container security with GAR integration](integrations/snyk-container-integrations/container-security-with-gar.md)
