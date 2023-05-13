@@ -1,4 +1,4 @@
-# Container security with Harbor integration
+# Container security with Harbor Container Registry integration
 
 {% hint style="info" %}
 **Feature availability**\
@@ -38,7 +38,7 @@ If you are using a self-hosted Harbor registry, contact Snyk to provide you with
 Snyk tests the connection values, and the page reloads, now displaying Harbor integration information. The **Add your Harbor images to Snyk** button becomes available. If the connection to Harbor fails, a notification appears under the **Connected to Harbor** section.\
 
 
-Now you can use Snyk to scan your images from Harbor.
+When the connection is successful, you can use Snyk to scan your images from Harbor.
 
 ## Scan container images from Harbor in Snyk
 
