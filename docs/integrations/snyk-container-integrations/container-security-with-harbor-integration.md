@@ -46,9 +46,9 @@ Snyk tests and monitors your Harbor container images by evaluating the image tag
 
 Follow these instructions to add images from Harbor to Snyk.
 
-### **Prerequisites for Harbor container image scanning**
+### **Prerequisites for Harbor image scanning**
 
-* A Snyk account with access to the relevant Organization given by an administrator.
+* A Snyk account with access to the relevant Organization authorized by an administrator.
 * Harbor integration configured; see [Configure Harbor integration](container-security-with-harbor-integration.md#configure-harbor-integration).
 
 ### **Steps in scanning Harbor images**

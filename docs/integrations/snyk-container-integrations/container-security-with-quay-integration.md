@@ -6,12 +6,14 @@ Snyk tests the images you have imported (Projects) for any known security vulner
 
 Integration with Quay is available for all Snyk users.
 
-## Prerequisites for Quay integration
+## Integrate with Quay Container Registry
+
+### Prerequisites for Quay integration
 
 * You must be an administrator for the Organization you are configuring in Snyk.
 * Snyk needs user credentials to integrate with Quay and does not support Quay when it is configured for single sign-on (SSO).
 
-## **Configure Quay integration**
+### **Configure Quay integration**
 
 1. In your Snyk account, navigate to **Integrations.** Under the **Container Registries** section, find the **Quay** option and click it.
 2. In the **Account credentials** section, enter your Quay username and password login credentials. In the **container registry name**, enter the full URL to the registry you want to integrate with. This can be a cloud-based Quay or a private host. To finish, click **Save**.
@@ -32,12 +34,14 @@ Snyk tests and monitors your Quay container images by evaluating the tags in you
 
 To add images from Quay to Snyk:
 
-## **Prerequisites** for scanning container images from Quay in Snyk
+## Scan container images from Quay in Snyk
+
+### **Prerequisites** for Quay image scanning
 
 * You must have a Snyk account with access to the relevant Organization given by an administrator.
 * Quay integration must be configured. For details, see [Configure Quay integration](container-security-with-quay-integration.md#configure-quay-integration).
 
-## **Steps in scanning container images from Quay in Snyk**
+### **Steps in scanning Quay images**
 
 1. Log in to your account and navigate to the relevant group and Organization that you want to manage.
 2. Under the **Projects** tab, click **Add project**.\
