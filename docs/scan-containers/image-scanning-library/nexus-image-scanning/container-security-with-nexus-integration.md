@@ -21,9 +21,9 @@ To set up Nexus integration in Snyk and start managing image vulnerabilities:
 * In your Snyk account, navigate to **Integrations** from the menu bar at the top. **\*\*Under the** Container Registries **section, find the** Nexus\*\* option and click it.
 * In the **Account credentials** section, enter your Nexus username and password login credentials. In the **container registry name** fill in the full URL to the registry you want to integrate with. To finish, click **Save**.
 
-![](../../.gitbook/assets/mceclip0-9-.png)
+![](../../../.gitbook/assets/mceclip0-9-.png)
 
-![](../../.gitbook/assets/mceclip1-20-.png)
+![](../../../.gitbook/assets/mceclip1-20-.png)
 
 If you are using a self-hosted Nexus registry, [contact our Support team](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. You can read more about setting up private registry integration [here](https://docs.snyk.io/snyk-container/integrate-self-hosted-container-registries/snyk-integration-to-self-hosted-container-registries).
 
@@ -54,8 +54,8 @@ To add images from Nexus to Snyk:
 
 Nexus imports are indicated with a unique icon , and you can also filter to view only the Nexus projects:
 
-![](../../.gitbook/assets/mceclip0-18-.png)
+![](../../../.gitbook/assets/mceclip0-18-.png)
 
 {% hint style="info" %}
-For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../scan-containers/using-snyk-container/detecting-application-vulnerabilities-in-container-images.md)for more information.
+For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../using-snyk-container/detecting-application-vulnerabilities-in-container-images.md)for more information.
 {% endhint %}
