@@ -20,6 +20,6 @@ To set up GitLab container registry integration in Snyk and start managing image
 
 ![](../../../.gitbook/assets/mceclip1-6-.png)
 
-If you are using a self-hosted GitLab container registry registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information about setting up private registry integration see [Snyk Container for self-hosted container registries (with broker)](../../../scan-containers/integrate-self-hosted-container-registries.md).
+If you are using a self-hosted GitLab container registry registry, [contact Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information about setting up private registry integration see [Snyk Container for self-hosted container registries (with broker)](../../integrate-self-hosted-container-registries.md).
 
 Snyk tests the connection values and the page reloads, now displaying GitLab container registry integration information, and the **Add your GitLab container registry images to Snyk** button becomes available. If the connection to GitLab container registry fails, notification appears under the **Connected to GitLab container registry** section. Now you can use Snyk to scan your images from GitLab container registry.

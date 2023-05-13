@@ -19,12 +19,12 @@ To add images from DigitalOcean to Snyk:
 6. When the import ends:
    1. You can view the newly imported image in the **Projects** page (marked with a **NEW** tag). Images are grouped by repository and are each linked individually to a detailed **Project** page.
    2. An **import log** becomes available and can be reached at the top of the projects list.
-   3. To enrich the data and get recommendations regarding your base image, you can connect your Dockerfile to the image project, under **Settings**. For more info, see [Adding your Dockerfile and test your base image](../../../scan-containers/scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
+   3. To enrich the data and get recommendations regarding your base image, you can connect your Dockerfile to the image project, under **Settings**. For more info, see [Adding your Dockerfile and test your base image](../../scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
 
 DigitalOcean imports are indicated with a unique icon, and you can also filter the integration in the **projects** view to see DigitalOcean projects only:
 
 ![](../../../.gitbook/assets/mceclip0-11-.png)
 
 {% hint style="info" %}
-For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../../scan-containers/using-snyk-container/detecting-application-vulnerabilities-in-container-images.md)for more information.
+For **application** vulnerabilities within container images, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. See [Detecting application vulnerabilities in container images ](../../using-snyk-container/detecting-application-vulnerabilities-in-container-images.md)for more information.
 {% endhint %}
