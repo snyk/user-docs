@@ -61,7 +61,7 @@ Follow these steps to add images from Nexus to Snyk.
    2. An **import log** becomes available; you can reach it at the top of the Projects list.
    3. To enrich the data and get recommendations regarding your base image, under **Settings,** you can connect your Dockerfile to the image Project. For more information, see [Adding your Dockerfile and testing your base image](../../scan-your-dockerfile/adding-your-dockerfile-and-testing-your-base-image.md).
 
-Nexus imports are indicated with a unique icon, and you can also filter to view only thProjectsprojects:
+Nexus imports are indicated with a unique icon, and you can also filter to view only Nexus Projects:
 
 <figure><img src="../../../.gitbook/assets/mceclip0-18-.png" alt="Projects list with container projects"><figcaption><p>Projects list with container projects</p></figcaption></figure>
 
