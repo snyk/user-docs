@@ -23,7 +23,7 @@ This page explains how to set up DigitalOcean integration in Snyk and start mana
 
 <figure><img src="../../.gitbook/assets/mceclip0-10-.png" alt="DigitalOcean account credentials"><figcaption><p>DigitalOcean account credentials</p></figcaption></figure>
 
-If you are using self-hosted DigitalOcean, contact Snyk Support to provide you with a token. For more information about setting up private registry integration, see [Snyk Container for self-hosted container registries (with Broker)](../../scan-containers/integrate-self-hosted-container-registries.md).
+If you are using self-hosted DigitalOcean, contact [Snyk Support](https://support.snyk.io/hc/en-us/requests/new) to provide you with a token. For more information, see [Snyk Container for self-hosted container registries (with Broker)](../../scan-containers/integrate-self-hosted-container-registries.md).
 
 {% hint style="info" %}
 **Note:** For the connection to succeed, make sure you have a repository in DigitalOcean.
@@ -52,7 +52,7 @@ The steps follow to add images from DigitalOcean to Snyk.
 3. Select the **DigitalOcean** option or **Other** if **DigitalOcean** doesn’t appear.\
    The view **Which images do you want to test?** opens, displaying the available images for your connected registry, grouped by each of your repositories
 4. Select single or multiple images to be imported to Snyk.\
-   You can select by choosing a specific image or by selecting an entire repository. You can search by image name to find specific images to import.
+   You can select by choosing a specific image or by selecting an entire repository. You can also search by image name to find specific images to import.
 5. To finish, click **Add selected repositories** on the top right.\
    A status bar appears at the top of the page as the images are imported; you can continue working in the meantime.
 6. When the import ends:
