@@ -63,7 +63,7 @@ Follow these steps to add images from the GitHub container registry to Snyk.
 
 GitHub container registry imports are designated with a unique icon. You can filter the integration in the **Projects** view to see GitHub container registry Projects only:
 
-<figure><img src="../../.gitbook/assets/mceclip1-5-.png" alt="Projects list showing container projects"><figcaption><p>Projects list showing container projects</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mceclip1-5-.png" alt="GitHub Project in Projects listing"><figcaption><p>GitHub Project in Projects listing</p></figcaption></figure>
 
 {% hint style="info" %}
 For **application vulnerabilities within container images**, any changes to the application will not be reflected with a manual or recurring retest. A re-import of the image is required. For more information, see [Detecting application vulnerabilities in container images](../../scan-containers/using-snyk-container/detecting-application-vulnerabilities-in-container-images.md).
