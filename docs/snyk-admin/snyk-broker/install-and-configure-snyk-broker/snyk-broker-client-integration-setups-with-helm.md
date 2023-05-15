@@ -1,6 +1,6 @@
 # Snyk Broker - Client integration setups with Helm
 
-After you add the [Snyk Broker Helm Char](upgrade-the-snyk-broker-client.md)t, run the following commands based on the repository type.
+After you add the [Snyk Broker Helm Char](../upgrade-the-snyk-broker-client.md)t, run the following commands based on the repository type.
 
 The following are the allowed values for `scmType`:
 
@@ -15,7 +15,7 @@ Nexus2: `nexus2`\
 Jira: `jira`\
 Container Registry Agent: `container-registry-agent`\\
 
-The following examples create a namespace called `snyk-broker`. To deploy into an existing namespace, adjust the `-n` parameter and delete the `--create-namespace` parameter. See alao [Deploying multiple Brokers in the same namespace](install-and-configure-broker-using-helm/deploying-multiple-brokers-in-the-same-namespace.md).
+The following examples create a namespace called `snyk-broker`. To deploy into an existing namespace, adjust the `-n` parameter and delete the `--create-namespace` parameter. See alao [Deploying multiple Brokers in the same namespace](advanced-setup-for-helm-chart-installation/deploying-multiple-brokers-in-the-same-namespace.md).
 
 {% hint style="info" %}
 For information about brokered integration with Artifactory or Nexus Container Registry see [Snyk Broker -Container Registry Agent](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-container-registry-agent).

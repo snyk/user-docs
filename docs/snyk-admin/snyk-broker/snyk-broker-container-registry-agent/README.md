@@ -120,7 +120,7 @@ docker run --restart=always \
        snyk/broker:container-registry-agent
 ```
 
-As an alternative to this command, you can use a derived Docker image to set up the Container Registry Agent. See [Derived Docker images](../install-and-configure-broker-using-docker/derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Container Registry Agent.
+As an alternative to this command, you can use a derived Docker image to set up the Container Registry Agent. See [Derived Docker images](../install-and-configure-snyk-broker/install-and-configure-broker-using-docker/derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md) for the environment variables to override for the Container Registry Agent.
 
 ### Run**ning the Container Registry Agent**
 

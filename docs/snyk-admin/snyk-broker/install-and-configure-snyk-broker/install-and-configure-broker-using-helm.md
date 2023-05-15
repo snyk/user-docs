@@ -10,55 +10,6 @@ When you set up Broker, Code Agent, or both for use in EU or AU Multi-tenant env
 Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
 For the URLs, see [EU and AU account datacenter creation](https://docs.snyk.io/snyk-processes/data-residency-at-snyk#eu-and-au-datacenter-account-creation).
 
-## Considerations in using the Helm Chart to install Broker
-
-### Kubernetes secrets and Helm Chart installation
-
-API tokens and passwords use Kubernetes Secrets. You can use existing secrets that are created in the following formats.
-
-#### Broker tokens for Helm Chart installation
-
-```
-apiVersion: v1
-kind: Secret
-metadata:
-  name: <ENTER_SCM_TYPE>-broker-token
-  labels:
-    app: <ENTER_SCM_TYPE>-broker-token
-type: Opaque
-data:
-  <ENTER_SCM_TYPE>-broker-token-key: <BASE64_ENCODED_SECRET>
-```
-
-#### SCM token for Helm Chart installation
-
-```
-apiVersion: v1
-kind: Secret
-metadata:
-  name: <ENTER_SCM_TYPE>-token
-type: Opaque
-data:
-  <ENTER_SCM_TYPE>-token-key: <BASE64_ENCODED_SECRET>
-```
-
-### Image repository, tag, and Image Pull Secret
-
-You can choose to use your own container registry and tag instead of the public images by customizing the `values.yaml` file to specify your container registry uri and tag.
-
-If your container registry requires an image pull secret, you can specify an image secret.
-
-Note that the Image Pull Secret is NOT created by the chart; rather, the image Pull Secret is expected to be present on your cluster.
-
-### Service accounts for Helm Chart installation
-
-To use an existing service account, add the following parameters to the install command:
-
-```
---set serviceAccount.create=false \
---set serviceAccount.name=<ENTER_EXISTING_SERVICE_ACCOUNT> \
-```
-
 ## Installation using the Snyk Broker Helm Chart
 
 To use this chart, you must first add the chart by adding the repo:
@@ -95,3 +46,6 @@ When you set up Snyk Broker using Helm, you can set advanced parameters as expla
 * [Deploying multiple Brokers in the same namespace](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/advanced-setup-for-helm-chart-installation/deploying-multiple-brokers-in-the-same-namespace)
 * [Custom additional options for Broker Helm Chart installation](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/advanced-setup-for-helm-chart-installation/custom-additional-options-for-broker-helm-chart-installation)
 * [Broker rules for Snyk Code](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/advanced-setup-for-helm-chart-installation/broker-rules-for-snyk-code)
+* Kubernetes secrets and Helm Chart installation
+* Image repository, tab, and Image Pull Secret
+* Service accounts for Helm Chart installation

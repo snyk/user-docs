@@ -15,7 +15,7 @@ For the availability of this feature for Snyk Infrastructure as Code, see [Jira 
 Snyk Jira integration allows you to manually raise Jira issues in the Snyk UI for vulnerabilities or license issues. The Jira integration also includes APIs ([see Snyk API docs](https://snyk.docs.apiary.io/#reference/projects/project-jira-issues)).
 
 {% hint style="info" %}
-If your Jira instance is private, use [the Snyk Broker deployment method](../../snyk-admin/snyk-broker/install-and-configure-broker-using-docker/setup-broker-with-jira.md).
+If your Jira instance is private, use [the Snyk Broker deployment method](../../snyk-admin/snyk-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-docker/setup-broker-with-jira.md).
 {% endhint %}
 
 ## **Prerequisites for Jira integration with Snyk**
@@ -53,4 +53,4 @@ You can also see which Jira issues have been created in the **Issues** view in y
 
 ## Integrate with Jira using Snyk Broker
 
-See [Set up Snyk Broker with Jira](../../snyk-admin/snyk-broker/install-and-configure-broker-using-docker/setup-broker-with-jira.md).
+See [Set up Snyk Broker with Jira](../../snyk-admin/snyk-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-docker/setup-broker-with-jira.md).
