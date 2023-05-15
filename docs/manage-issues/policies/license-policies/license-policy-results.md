@@ -8,7 +8,7 @@ For example, in the Snyk Web UI, **Dashboard** statistics update based on severi
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-12 at 10.08.15.png" alt="License issues on the Dashboard"><figcaption><p>License issues on the Dashboard</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screen Shot 2023-05-12 at 2.00.26 PM.png" alt="License issues on the Dashboard"><figcaption><p>License issues on the Dashboard</p></figcaption></figure>
 
 </div>
 
