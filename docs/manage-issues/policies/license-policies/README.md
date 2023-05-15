@@ -2,9 +2,7 @@
 
 Group administrators can set license policies to define Snyk behavior for treating license issues. For example, you can allow or disallow packages with certain license types, to avoid using packages containing incompatible licenses.
 
-You can [create a license policy and rules](create-a-license-policy-and-rules.md) by clicking **Policies** in the Group Overview page.
-
-<figure><img src="../../../.gitbook/assets/group-view_policies_06oct2022.png" alt="Policies overview."><figcaption><p>Policies overview</p></figcaption></figure>
+You can [create a license policy and rules](create-a-license-policy-and-rules.md) for your Group.
 
 ### Initial default policy
 
