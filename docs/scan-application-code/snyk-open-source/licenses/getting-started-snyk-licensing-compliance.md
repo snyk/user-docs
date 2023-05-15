@@ -38,7 +38,11 @@ You can create and edit multiple license policies for Organizations. See [Create
 
 Snyk’s [Git-based integrations ](../../../integrations/git-repository-scm-integrations/)support license scanning as part of the regular workflow. During scanning, license issues appear as a filterable list in the **Issues** tab:
 
-<figure><img src="../../../.gitbook/assets/image3 (1) (2).png" alt="Issues overview within a dependency project."><figcaption><p>Issues overview within a dependency project</p></figcaption></figure>
+<div align="left">
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-15 at 13.12.16.png" alt="Issues overview within a dependency project."><figcaption><p>Issues overview within a dependency project</p></figcaption></figure>
+
+</div>
 
 This example shows a high-severity issue for a GPL-2.0 license, with accompanying instructions as defined in the policies for that license.
 
@@ -48,14 +52,17 @@ You can also view license issues using the Snyk CLI tool, after running **snyk t
 
 **View dependencies**
 
-Snyk shows license issues in both your direct and transitive dependencies, in a full dependency tree to show what dependency introduced the license issue.
+Snyk shows license issues in both your direct and transitive dependencies, in the **Dependencies** tab:
 
-![Dependencies overview within a dependency project](<../../../.gitbook/assets/image4 (1).png>)
+![Dependencies overview within a dependency project](<../../../.gitbook/assets/Screenshot 2023-05-15 at 13.14.32.png>)
 
-This example includes two high severity license policy violations, caused by:
+Click the tree icon (![](<../../../.gitbook/assets/image (1).png>)) to view a full dependency tree. This shows the dependency that introduced the license issue:
 
-* a direct dependency on an npm package called **wicket@1.3.5**
-* a transitive dependency on a package called **flickity@2.2.1** introduced by **web-project-starter@0.0.3**
+<div align="left">
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-15 at 13.18.51.png" alt="Dependencies overview - tree view"><figcaption><p>Dependencies overview - tree view</p></figcaption></figure>
+
+</div>
 
 ### **View all license information**
 
