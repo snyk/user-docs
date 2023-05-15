@@ -38,7 +38,7 @@ For example:
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-15 at 12.28.08.png" alt="License card overview."><figcaption><p>License card overview</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image5 (2).png" alt="License card overview."><figcaption><p>License card overview</p></figcaption></figure>
 
 </div>
 
