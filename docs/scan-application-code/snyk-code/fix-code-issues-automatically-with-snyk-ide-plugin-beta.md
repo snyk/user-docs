@@ -26,7 +26,7 @@ A representation of information flow involved in fixing one issue is presented i
 
 ## Requirements
 
-* Snyk IDE Plugin (see [available Snyk plugins and extensions](../../integrations/ide-tools/)). Available for IDE plugins that use Language Server, such as VS Code and Eclipse.
+* **(Preview) Snyk Security - Code, Open Source Dependencies, IaC Configurations** IDE Plugin. Available for IDE plugins that use Language Server, such as [VS Code](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner-preview) and [Eclipse](https://marketplace.eclipse.org/content/snyk-security-code%E2%80%8B-open-source%E2%80%8B-iac-configurations).
 * Available in the USA Multi-Tenant region (see [available regions](../../more-info/data-residency-at-snyk.md#what-regions-are-available)).
 
 ## Language support
@@ -61,9 +61,7 @@ You can follow through the entire sequence in this short (13-second) video.
 
 ## What data does Snyk Code Fix Suggestions collect
 
-The Large Language Model (LLM) is trained exclusively on public repositories with permissive licenses. If a repository's license changes after the initial scrape, it is immediately excluded from the training data.&#x20;
-
-During the inference, Snyk Code Fix Suggestions does not collect the the client data, neither it sends it to third parties.
+The Large Language Model (LLM) is trained exclusively on public repositories with permissive licenses. If a repository's license changes after the initial scrape, it is immediately excluded from the training data. During the inference, Snyk Code Fix Suggestions does not collect the client data or send it to third parties.
 
 The data collection process is thorough and includes the following:
 
