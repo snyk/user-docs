@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Important!** The setup commands for running the Broker Client described in this section include the common commands used for all SCMs. However, some SCMs require additional parameters for the Broker Client setup.
 
-When such additional parameters are required, they are indicated in this section, but when you are setting up a Broker Client for a specific SCM, use also the section that is specific to that SCM. For more information, see [Snyk Broker integration setups](../../../snyk-broker-set-up-examples/).
+When such additional parameters are required, they are indicated in this section, but when you are setting up a Broker Client for a specific SCM, use also the section that is specific to that SCM. For more information, see [Snyk Broker integration setups](broken-reference).
 {% endhint %}
 
 The following explains how to set up the Broker Client in a way that displays code snippets of the Snyk Code results on the Web UI:
@@ -30,11 +30,11 @@ To display the code snippets of the Snyk Code results on the Web UI, first downl
 
 On each Integration Setup page, locate the pre-defined `accept.json` file for this integration, and download it.
 
-* [GitHub](../../../snyk-broker-set-up-examples/broker-example-set-up-snyk-broker-with-github.md)
-* [GitHub Enterprise](../../../snyk-broker-set-up-examples/setup-broker-with-github-enterprise.md)
-* [Gitlab](../../../snyk-broker-set-up-examples/setup-broker-with-gitlab.md)
-* [Bitbucket Server/Data Center](../../../snyk-broker-set-up-examples/data-center.md)
-* [Azure Repos](../../../snyk-broker-set-up-examples/setup-broker-with-azure-repos.md)
+* [GitHub](../../../install-and-configure-broker-using-docker/broker-example-set-up-snyk-broker-with-github.md)
+* [GitHub Enterprise](../../../install-and-configure-broker-using-docker/setup-broker-with-github-enterprise.md)
+* [Gitlab](../../../install-and-configure-broker-using-docker/setup-broker-with-gitlab.md)
+* [Bitbucket Server/Data Center](../../../install-and-configure-broker-using-docker/data-center.md)
+* [Azure Repos](../../../install-and-configure-broker-using-docker/setup-broker-with-azure-repos.md)
 
 2\. Verify that the downloaded file is called **`accept.json`**. If during the download process the file name has changed, rename the file to its original name.
 
@@ -70,14 +70,14 @@ where:
 * `-e <SCM_domain>=` is your SCM domain name without http/https, for example, `snyk.git.com`. For each SCM,. Use the following parameter:
   * **GitHub** - the `-e <SCM_domain>` parameter is NOT required.
   * **GitHub Enterprise**: `-e GITHUB`\
-    For [GitHub Enterprise](../../../snyk-broker-set-up-examples/setup-broker-with-github-enterprise.md) also add the following parameters: also\
+    For [GitHub Enterprise](../../../install-and-configure-broker-using-docker/setup-broker-with-github-enterprise.md) also add the following parameters: also\
     `-e GITHUB_API=<your.ghe.domain.com/api/v3_(without_http/s)> \`\
     `-e GITHUB_GRAPHQL=<your.ghe.domain.com/api_(without_http/s)> \`
   * **Azure Repos**: `-e AZURE_REPOS_HOST`\
-    For [Azure Repos](../../../snyk-broker-set-up-examples/setup-broker-with-azure-repos.md) add the following paramete alsor:\
+    For [Azure Repos](../../../install-and-configure-broker-using-docker/setup-broker-with-azure-repos.md) add the following paramete alsor:\
     `-e AZURE_REPOS_ORG=<azure_repo_org_name> \`
   * **Bitbucket Server/Data Center**: `-e BITBUCKET`\
-    For [Bitbucket Server/Data Center](../../../snyk-broker-set-up-examples/data-center.md) add the following parameter also:\
+    For [Bitbucket Server/Data Center](../../../install-and-configure-broker-using-docker/data-center.md) add the following parameter also:\
     `-e BITBUCKET_API=<your.bitbucket-server.domain.com/rest/api/1.0_(without http/s)> \`
   * **GitLab**: `-e GITLAB`
 * \[Optional] `-e BROKER_CLIENT_URL=` is the URL to the host machine of the Broker Client. The URL can include an IP address or a DNS with the port number of the host machine, for example, `http://localhost:8001`.\
