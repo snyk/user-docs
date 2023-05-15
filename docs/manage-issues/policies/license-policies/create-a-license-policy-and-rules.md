@@ -34,12 +34,10 @@ You can edit the license severities and instructions.
 ## Assign rules and severities for a license policy
 
 1. In **Policy manager > License policies > Organization**, choose a policy link to open the **License policy** screen.
-2. To set the severity for specific licenses, click the **Severity** selector in the **License policy** screen.
-3. To enter an explanation and recommendations for fixes, click the **Instructions** icon (to the right of the **Severity** selector) and enter your text.
-4.  Click **Add** to save your changes to the instructions
-
-    Once added, the **Add instructions** link changes to **Edit instructions.**
-5. Click **Submit** to save your policy.
+2. To set the severity for specific licenses, click the **Severity** selector in the **License policy** screen, and choose a **Severity** level to define which license issues you want to identify when Snyk tests run.\
+   If you select a severity other than **None**, and you want additional instructions / fix recommendations to appear when that license issue is identified, then select the instructions icon to the right of the **Severity** dropdown and enter the text for the license instruction.
+3. Click **Add** or **Update** to confirm your changes.
+4. Click **Submit** to save your policy.
 
 <figure><img src="../../../.gitbook/assets/policy-severity-instructions-x_06oct2022 (1).png" alt="Updating policy instructions."><figcaption><p>Updating policy instructions</p></figcaption></figure>
 

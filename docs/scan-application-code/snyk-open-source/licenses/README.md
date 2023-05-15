@@ -36,7 +36,11 @@ After being updated, when Snyk detects a license violation, it displays the viol
 
 For example:
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="License card overview."><figcaption><p>License card overview</p></figcaption></figure>
+<div align="left">
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-15 at 12.28.08.png" alt="License card overview."><figcaption><p>License card overview</p></figcaption></figure>
+
+</div>
 
 ## **An inventory of your licenses**
 

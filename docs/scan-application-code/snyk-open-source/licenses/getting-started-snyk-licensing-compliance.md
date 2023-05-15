@@ -5,50 +5,34 @@
 This feature is available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
 {% endhint %}
 
-Get started with Snyk license compliance management, to check compliance for the [open source licenses](https://snyk.io/learn/open-source-licenses/) in your code, as part of your Snyk Open Source solution.
+Get started with Snyk license compliance management, to check compliance for the [open source licenses](https://snyk.io/learn/open-source-licenses/) in your code.
 
 The Snyk Default License Policy defines how Snyk identifies potential license issues in the open-source packages your Projects are using. This policy applies to all Organizations created in your Group.
-
-{% hint style="info" %}
-This process describes how to use the [Snyk Web UI](../../../getting-started/getting-started-with-the-snyk-web-ui.md)Projects and a supported [Git repository](../../../integrations/git-repository-scm-integrations/).\
-You can also use an [IDE tool](../../../integrations/ide-tools/) or a [CI/CD integration](../../../integrations/ci-cd-integrations/), or use the [Snyk CLI tool](../../../snyk-cli/) to get started using the command line.
-{% endhint %}
 
 ## **Prerequisites**
 
 Ensure you have:
 
 * A Snyk [paid plan](https://snyk.io/plans/).
-* Integrated and importedOrganization your Projects, as described for [Snyk Open Source](../getting-started-snyk-open-source.md).
+* Integrated and imported your Projects, as described for [Snyk Open Source](../getting-started-snyk-open-source.md).
 
 ## **Stage 1: Define policies**
 
 To take effective action based on license issues, you need to define policies defining these actions, based on license types. Policies provide a way to capture different requirements within an Organization, based on factors such as line of business. Work with your legal team to create policies that are specific to your company.
 
-To open your Snyk Group default license policy, complete the following steps:
+To open your Snyk Group default license policy, select the **Policies** menu option in your Group:
 
-1. From your Snyk Organization, **Switch group** and select the relevant Group Overview.
-2. Select the **Policies** tab.
+<div align="left">
 
-<figure><img src="../../../.gitbook/assets/polices4license_mgmt-03oct2022.png" alt="Defining policy."><figcaption><p>Defining policy</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-15 at 12.34.36.png" alt="Access Group policies"><figcaption><p>Access Group policies</p></figcaption></figure>
+
+</div>
 
 ### Create policy rules
 
 Each policy contains rules, detailing which licenses are acceptable and which are forbidden for use, together with a severity level that indicates how severe the license violation is. For example, severity levels for internal-only license issues may be less severe than for those released externally.
 
-To define your group license policy, complete the following steps:
-
-1. Select **Snyk Default License Policy**.
-2. Enter a **Description** for the policy to summarize what it does and the reason it was added.
-3. For each license listed on the right, choose a **Severity** from the menu list to define which license issues you want to identify when Snyk tests run.
-4. If you select a severity other than **None**, and you want to include additional instructions that will display when that license issue is identified, select the icon to the right of the Severity dropdown and enter the text for the license instruction.
-5. Click **Add** or **Update** to confirm your changes.
-
-<figure><img src="../../../.gitbook/assets/license-policy.png" alt="Policy configuration."><figcaption><p>Policy configuration</p></figcaption></figure>
-
-The additional instructions show in the Snyk Web UI and the CLI when the selected licenses are identified.
-
-See [Licenses overview](./) and [Setting a license policy](../../../manage-issues/policies/license-policies/create-a-license-policy-and-rules.md).
+You can create and edit multiple license policies for Organizations. See [Create a license policy and rules](../../../manage-issues/policies/license-policies/create-a-license-policy-and-rules.md) for details.
 
 ## Stage 2: View issues
 
