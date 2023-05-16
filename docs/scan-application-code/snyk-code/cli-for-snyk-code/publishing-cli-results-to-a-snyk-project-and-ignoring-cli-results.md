@@ -1,8 +1,10 @@
-# Publishing CLI results to a Snyk Project and ignoring CLI results
+# Publishing CLI results to a Snyk Project and ignoring CLI results (beta)
 
 {% hint style="info" %}
 **Feature availability**\
-This feature is currently in Closed Beta. To obtain access, contact your Snyk account representative. Minimum supported CLI version: v1.1138.0
+Publishing and ignoring CLI results is in [Closed Beta](../../../more-info/snyk-feature-release-process.md#closed-beta) and only available by invitation from Snyk.\
+\
+Minimum supported CLI version: v1.1138.0
 {% endhint %}
 
 Snyk Code CLI supports publishing the results to a Snyk Project in the Web UI and respecting issues that were ignored in a Snyk Project in the Web UI so you can filter them from the analysis results.
