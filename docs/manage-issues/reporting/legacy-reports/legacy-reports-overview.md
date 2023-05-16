@@ -1,12 +1,12 @@
-# Reports overview
+# Legacy reports overview
 
-The **Reports** area offers data and analytics about Projects, issues, dependencies, and licenses. Report information appears based on the Organization in which you are working, and you can filter this data with different parameters.
+The legacy **Reports** area offers data and analytics about Projects, issues, dependencies, and licenses. Report information appears based on the Organization in which you are working, and you can filter this data with different parameters.
 
 Additionally, if your account is managed with Groups, aggregated data for all of your organizations is displayed when you navigate to **Reports** from the **Group** level.
 
 From the **Group** level, you can filter to view data for multiple Organizations, similar to this example:
 
-<figure><img src="../../.gitbook/assets/mceclip0-28-.png" alt="Group-level reporting"><figcaption><p>Group-level reporting</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mceclip0-28-.png" alt="Group-level reporting"><figcaption><p>Group-level reporting</p></figcaption></figure>
 
 You can also use the **Organization Filters** to save and store pre-filtered reports for selected groups of organizations. For more information about this, see our [Snyk groups overview](broken-reference).
 
@@ -17,9 +17,7 @@ Additionally, at the Organization level see [General actions](general-actions.md
 * vulnerability severity
 * a specific period of time
 
-### Reports tabs
-
-The Reports area comprises these tabs:
+The legacy **Reports tabs** are as follows:
 
 * [Summary](summary-tab.md)—the main dashboard displays a birds-eye view of all of your issues (vulnerabilities and licenses), across all of your projects.
 * [Issues](issues-tab.md)—all issues (vulnerabilities and licenses) across all of your projects, including their severity, any available fixes, and more.

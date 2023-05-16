@@ -15,7 +15,7 @@ Snyk Enterprise features include:
 * [Single Sign-On](../snyk-admin/set-up-single-sign-on-sso-for-authentication/)
 * [Service accounts](../snyk-admin/service-accounts.md)
 * [Rich API](../snyk-api-info/)
-* [Reports](../manage-issues/snyk-reports/)
+* [Reports](../manage-issues/reporting/legacy-reports/)
 * [Security policy management](../manage-issues/policies/security-policies/)
 * [Snyk Broker](../snyk-admin/snyk-broker/)
 * [GitHub Enterprise integration](../integrations/git-repository-scm-integrations/github-enterprise-integration.md)
@@ -145,7 +145,7 @@ Use the [Snyk API import tool](../snyk-api-info/other-tools/tool-snyk-api-import
 
 Snyk reports offer data and analytics across all of your projects, displaying historical and aggregated data about projects, issues, dependencies, and licenses.
 
-See [Getting started with Snyk Reports](../manage-issues/reports/next-gen-reporting/getting-started-with-snyk-reports.md).
+See [Getting started with Snyk Reports](../manage-issues/reporting/getting-started-with-snyk-reports.md).
 
 ### Security policy management
 

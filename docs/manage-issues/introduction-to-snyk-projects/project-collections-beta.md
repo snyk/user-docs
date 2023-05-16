@@ -7,7 +7,7 @@ Project collections are available for Enterprise plans. See [pricing plans](http
 
 You can enable the beta by going to group **Settings**, selecting **Snyk Preview**, and toggling the preview for **Project Collections**.
 
-You must also have [Next Gen Reporting](../reports/next-gen-reporting/) enabled to use the Project collections beta.
+You must also have [Next Gen Reporting](../reporting/) enabled to use the Project collections beta.
 
 
 {% endhint %}

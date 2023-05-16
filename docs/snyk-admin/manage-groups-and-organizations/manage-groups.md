@@ -26,7 +26,7 @@ Select reports to view the vulnerability status of all of a Group’s Organizati
 
 </div>
 
-See [Reports](../../manage-issues/snyk-reports/) for more details.
+See [Reports](../../manage-issues/reporting/legacy-reports/) for more details.
 
 ## Dependencies
 

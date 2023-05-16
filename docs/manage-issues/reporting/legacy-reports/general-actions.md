@@ -1,8 +1,8 @@
-# General actions
+# Legacy reports general actions
 
 This section describes the actions you can perform on all Reports tabs.
 
-### Filters
+## Filters
 
 At the Organization level, from the top of the Reports area, you can search for and filter specific Snyk Projects, and you can filter Projects by severity and type. After you've filtered, the settings are retained as you navigate between tabs.
 
@@ -10,17 +10,17 @@ At the Organization level, from the top of the Reports area, you can search for 
 The maximum support for filtering is 1,000 Projects.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/uuid-8769c471-9788-dfdf-e3a7-2ffd28ea1011-en.png" alt="Report filters"><figcaption><p>Report filters</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uuid-8769c471-9788-dfdf-e3a7-2ffd28ea1011-en.png" alt="Report filters"><figcaption><p>Report filters</p></figcaption></figure>
 
 To search for and filter specific Projects, open the dropdown from the **Projects** search field; additionally or alternatively, start typing any part of the project names:
 
-<figure><img src="../../.gitbook/assets/uuid-d8df9018-387d-26f4-c735-b50a312b9eb0-en.png" alt="Report filters - Projects"><figcaption><p>Report filters - Projects</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/uuid-d8df9018-387d-26f4-c735-b50a312b9eb0-en.png" alt="Report filters - Projects"><figcaption><p>Report filters - Projects</p></figcaption></figure>
 
 To filter by vulnerability severities and by Project types, open the **Filters** dropdown:
 
-<figure><img src="../../.gitbook/assets/mceclip0-29-.png" alt="Report filters - by vulnerabilities and Project type"><figcaption><p>Report filters - by vulnerabilities and Project type</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mceclip0-29-.png" alt="Report filters - by vulnerabilities and Project type"><figcaption><p>Report filters - by vulnerabilities and Project type</p></figcaption></figure>
 
-### Navigate and view data for Groups and Organizations
+## Navigate and view data for Groups and Organizations
 
 To view data for a single Organization you need to be an administrator for that Organization.
 
@@ -30,7 +30,7 @@ To view data for a single Organization you need to be an administrator for that 
 2. Navigate to **Reports**.
 3. Data appears only for the organization you selected.
 
-### View data for multiple Organizations
+## View data for multiple Organizations
 
 Group administrators can view report data for multiple Organizations in a single Group.
 
@@ -42,6 +42,6 @@ Group administrators can view report data for multiple Organizations in a single
 4. Check or uncheck the Organizations you wish to view.
 5. To save the selected Organizations as a quick filter, assign a unique name and then click **Save**.
 
-### Sorting
+## Sorting
 
 Columns that allow the data to be sorted have arrows next to their headings. Click the arrows to sort the data in descending order by the relevant category. Click again to switch the order to ascending.

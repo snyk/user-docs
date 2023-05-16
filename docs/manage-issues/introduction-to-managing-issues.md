@@ -26,7 +26,7 @@ These attributes can then be linked to Snyk [policies](policies/), to assign a p
 
 ### Use reports
 
-[Snyk Reports](snyk-reports/) keeps you up to date on the status of the issues, dependencies, and licenses.
+[Snyk Reports](reporting/legacy-reports/) keeps you up to date on the status of the issues, dependencies, and licenses.
 
 ### Use ignores
 

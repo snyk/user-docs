@@ -1,4 +1,4 @@
-# Summary tab
+# Legacy Reports Summary tab
 
 The main dashboard of the **Reports** area displays a birds-eye view of all of the issues (vulnerabilities and licenses) found across all of your projects, presenting data for these specific areas:
 
@@ -6,7 +6,7 @@ The main dashboard of the **Reports** area displays a birds-eye view of all of t
 * License issues
 * Your overall project activity—a summary of all of your projects, tests and issues
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-08-11 at 09.42.46.png" alt="Report Summary tab"><figcaption><p>Report Summary tab</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-08-11 at 09.42.46.png" alt="Report Summary tab"><figcaption><p>Report Summary tab</p></figcaption></figure>
 
 {% hint style="info" %}
 Data in each tab appears based on the filters you've applied from the top of the Reports area, as well as the Group or Organization that you're viewing from.
@@ -25,9 +25,9 @@ The following table describes the different parts of the **Summary** area:
 | Issues over time | <p>Shows the history of vulnerabilities in your Organization.</p><p><br>This shows the number of overall vulnerabilities, and the number of projects being scanned (the dotted line in the graph).</p>                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Exposure window  | The elapsed time from when an issue was identified and until it was resolved.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
-### Activity
+## Activity
 
-<figure><img src="../../.gitbook/assets/image (173) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Activity section"><figcaption><p>Activity section</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (173) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Activity section"><figcaption><p>Activity section</p></figcaption></figure>
 
 For the **Activity** area, the following are the parameters and their descriptions:
 
@@ -44,6 +44,6 @@ For the **Activity** area, the following are the parameters and their descriptio
 
 If you have lots of Projects files to manage and organise in your Organization, you can use filters to focus on specific Projects, or specific types of vulnerability:
 
-<figure><img src="../../.gitbook/assets/image (223) (1) (1) (1) (1) (1) (1) (1).png" alt="Filter results"><figcaption><p>Filter results</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (223) (1) (1) (1) (1) (1) (1) (1).png" alt="Filter results"><figcaption><p>Filter results</p></figcaption></figure>
 
 For example, if your Organization represents your development team, and you want to focus on (say) front-end work in the next Sprint, click the **Projects** dropdown and select a subset of the front-end Projects to scan, allowing you to focus on fixing vulnerabilities in that area.

@@ -166,4 +166,4 @@ Suppressing vulnerabilities carries a level of risk, so you can make this functi
 
 If you have access to the Snyk Reports feature, you can also see an overview of how many issues in your Organization’s Projects are ignored, along with an option to filter these so you can drill down into each one. If the issue was ignored in the Snyk Web UI, Snyk includes a credit so you can see who initiated it.
 
-For more information, see [Reports](../snyk-reports/).
+For more information, see [Reports](../reporting/legacy-reports/).
