@@ -1,3 +1,5 @@
 # Install and configure Snyk Broker
 
-This page branches to Docker and Helm installation and configuration and Docker and Helm instructions and environment variables for each SCM.
+If you are using Kubernetes, Snyk recommends that you install Snyk Broker with the [Broker Helm Chart](https://github.com/snyk/snyk-broker-helm). For details, see [Install and configure Broker using Helm](install-and-configure-broker-using-helm.md).
+
+For all other environments, you can install Snyk Broker using the [Docker images](https://github.com/snyk/broker) provided by Snyk. For details, see [Install and configure Broker using Docker](install-and-configure-broker-using-docker/).

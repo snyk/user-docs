@@ -10,23 +10,38 @@ When you set up Broker, Code Agent, or both for use in EU or AU Multi-tenant env
 Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
 For the URLs, see [EU and AU account datacenter creation](https://docs.snyk.io/snyk-processes/data-residency-at-snyk#eu-and-au-datacenter-account-creation).
 
+The following are the allowed values for `scmType`:
+
+Github.com: `github-com`\
+Github Enterprise: `github-enterprise`\
+Bitbucket: `bitbucket-server`\
+Gitlab: `gitlab`\
+Azure Repos: `azure-repos`\
+Artifactory: `artifactory`\
+Nexus: `nexus`\
+Nexus2: `nexus2`\
+Jira: `jira`\
+Container Registry Agent: `container-registry-agent`\\
+
 ## Installation using the Snyk Broker Helm Chart
 
-To use this chart, you must first add the chart by adding the repo:
+To use this chart, you must first add the Snyk Broker Helm Chart by adding the repo:
 
 `helm repo add snyk-broker https://snyk.github.io/snyk-broker-helm/`
 
-Then run the commands for [each SCM, registry, or Jira](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/snyk-broker-client-integration-setups-with-helm).
+Then run the commands for each SCM, registry, or Jira.
 
-* [GitHub](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#github.com-helm-install)
-* [GitHub Enterprise](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#github-enterprise-helm-install)
-* [Bitbucket Server/Data Centre](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#bitbucket-helm-install)
-* [GitLab](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#gitlab-helm-install)
-* [Azure Repos](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#azure-repos-helm-install)
-* [JFrog Artifactory](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#artifactory-respository-helm-install)
-* [Jira](https://docs.snyk.io/snyk-admin/snyk-broker/install-broker-for-scms-using-helm#jira-notifications-helm-install)
-* [Nexus 3](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/snyk-broker-client-integration-setups-with-helm#nexus-3-helm-install)
-* [Nexus 2](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-helm/snyk-broker-client-integration-setups-with-helm#nexus-2-helm-install)
+* GitHub
+* GitHub Enterprise
+* Bitbucket Server/Data Centre
+* GitLab
+* Azure Repos
+* JFrog Artifactory
+* Nexus 3
+* Nexus 2
+* Jira
+
+Running the commands for each SCM, registry, or Jira creates a namespace called `snyk-broker`. To deploy into an existing namespace, adjust the `-n` parameter and delete the `--create-namespace` parameter. See also [Deploying multiple Brokers in the same namespace](advanced-setup-for-helm-chart-installation/deploying-multiple-brokers-in-the-same-namespace.md).
 
 Additional commands are available to Install the Snyk Broker Code Agent and Container Registry Agent.
 
