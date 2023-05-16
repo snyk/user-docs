@@ -17,7 +17,7 @@ Some Docker deployments for Windows run only Windows containers. Ensure that you
 {% endhint %}
 
 {% hint style="info" %}
-For information about non-brokered integration with Artifactory Repository see [Artifactory Repository setup](../../../../integrations/private-registry-integrations/artifactory-repository-setup/).
+For information about non-brokered integration with Artifactory Repository see [Artifactory Repository setup](../../../integrations/private-registry-integrations/artifactory-repository-setup/).
 {% endhint %}
 
 {% hint style="info" %}
@@ -26,12 +26,12 @@ For information about brokered integration with Artifactory Container Registry s
 
 ## Obtain Broker token for Artifactory Repository setup
 
-1. Go to settings <img src="../../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Integrations > Package Repositories > Artifactory**.
+1. Go to settings <img src="../../../.gitbook/assets/cog_icon.png" alt="" data-size="line"> > **Integrations > Package Repositories > Artifactory**.
 2. Enter the URL of your Artifactory instance, this **must** end with **/artifactory**.
 3. Enter your username and password.
 4. Select **Save**.
 
-<figure><img src="../../../../.gitbook/assets/screenshot_2020-04-17_at_14.38.12.png" alt="Artifactory integration setup"><figcaption><p>Artifactoryrepository setup</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/screenshot_2020-04-17_at_14.38.12.png" alt="Artifactory integration setup"><figcaption><p>Artifactoryrepository setup</p></figcaption></figure>
 
 {% hint style="info" %}
 If you do not see the **Snyk Broker** on/off switch, you do not have the necessary permissions and can only add a publicly accessible instance.

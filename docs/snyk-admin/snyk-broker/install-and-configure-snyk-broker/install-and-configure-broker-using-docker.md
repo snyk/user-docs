@@ -17,8 +17,8 @@ The following pages explain how to set up the Snyk Broker Client integrations us
 * [JFrog Artifactory Repository](set-up-snyk-broker-with-artifactory-repository.md)
 * [Nexus Repository Manager](set-up-snyk-broker-with-nexus-repository-manager.md)
 * [Jira](setup-broker-with-jira.md)
-* [Snyk Broker - Container Registry Agent](../../snyk-broker-container-registry-agent/) (needed to connect to Container Registries)
-* [Snyk Broker - Code Agent](../../snyk-broker-code-agent/) (needed to enable SAST analysis)
+* [Snyk Broker - Container Registry Agent](../snyk-broker-container-registry-agent/) (needed to connect to Container Registries)
+* [Snyk Broker - Code Agent](../snyk-broker-code-agent/) (needed to enable SAST analysis)
 * [Derived Docker images for Broker Client integrations and Container Registry Agent](derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md)
 
 {% hint style="info" %}
@@ -27,4 +27,4 @@ You can customize the configuration using the environment variables in the Docke
 
 Once the Broker is running, visit the settings for your brokered integration in [the Snyk Web UI](https://app.snyk.io) to see a message like the following and start importing Projects:
 
-<figure><img src="../../../../.gitbook/assets/image (60) (1).png" alt="Brokered integration settings showing connected status"><figcaption><p>Brokered integration settings showing connected status</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (60) (1).png" alt="Brokered integration settings showing connected status"><figcaption><p>Brokered integration settings showing connected status</p></figcaption></figure>

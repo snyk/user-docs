@@ -1,4 +1,4 @@
-# Set up Snyk Broker with Azure Repos
+# Azure Repos - install and configure using Docker
 
 Follow the instructions on this page to set up Snyk Azure Repos with Snyk Broker. This integration is useful to ensure a secure connection with your on-premise or cloud Azure Repos deployment.
 
@@ -31,7 +31,7 @@ To use the Broker Client with [Azure](https://azure.microsoft.com/en-us/services
 * `ACCEPT_IAC` - by default, some file types used by Infrastructure-as-Code (IaC) are not enabled. To grant the Broker access to IaC files in your repository, for example, Terraform, you can add an environment variable, `ACCEPT_IAC`, with any combination of `tf,yaml,yml,json,tpl`
 * `ACCEPT_CODE` - by default, when using the Snyk Broker - Code Agent, Snyk Code will not load code snippets. To enable code snippets you can add an environment variable, `ACCEPT_CODE=true`
 
-**If necessary,** go to the [Advanced configuration page](../install-and-configure-broker-using-docker/advanced-configuration-for-snyk-broker-docker-installation/) and **make any configuration changes** needed, such as providing the CA (Certificate Authority) to the Broker Client configuration if the Azure Repos instance is using a private certificate, and setting up [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support). See also [Adding custom accept.json for Docker installation](../install-and-configure-broker-using-docker/advanced-configuration-for-snyk-broker-docker-installation/adding-custom-allowlist-for-docker-installation.md).
+**If necessary,** go to the [Advanced configuration page](advanced-configuration-for-snyk-broker-docker-installation/) and **make any configuration changes** needed, such as providing the CA (Certificate Authority) to the Broker Client configuration if the Azure Repos instance is using a private certificate, and setting up [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support). See also [Adding custom accept.json for Docker installation](advanced-configuration-for-snyk-broker-docker-installation/adding-custom-allowlist-for-docker-installation.md).
 
 ## Docker run command to set up a Broker Client for Azure Repos
 
