@@ -85,7 +85,7 @@ In order to build the dependency tree, Snyk analyzes the **paket.dependencies** 
 
 When your Projects have been imported, Snyk analyzes your Projects based on their supported manifest files and then builds the dependency tree and displays it in the Snyk Web UI, similar to the following:
 
-<figure><img src="../../../.gitbook/assets/uuid-c995621c-85c8-c79f-accd-f014e2293921-en.png" alt="Dependency tree in Snyk Web UI"><figcaption><p>Dependency tree in Snyk Web UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dotNet Project.png" alt=".NET dependency tree in Snyk Web UI"><figcaption><p>.NET dependency tree in Snyk Web UI</p></figcaption></figure>
 
 ### **Nuget**
 
