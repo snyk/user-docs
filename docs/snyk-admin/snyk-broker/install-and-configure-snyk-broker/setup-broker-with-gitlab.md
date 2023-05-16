@@ -14,17 +14,7 @@ You need Docker or a way to run Docker Linux containers. Some Docker deployments
 
 ## Configure Broker to be used for GitLab
 
-To use the Broker client with GitLab.com or an on-prem GitLab deployment, **run** `docker pull snyk/broker:gitlab`. The following environment variables are required to configure the Broker client:
-
-* `BROKER_TOKEN` - the Snyk Broker token, obtained from your GitLab integration settings view (app.snyk.io).
-* `GITLAB_TOKEN` - a GitLab personal access token with `api` scope
-* `GITLAB` - the hostname of your GitLab deployment, such as `your.gitlab.domain.com` or `GitLab.com`.
-* `PORT` - the local port at which the Broker Client accepts connections. Default is 8000.
-* `BROKER_CLIENT_URL` - the full URL of the Broker Client as needed to be reachable by either GitLab.com or on-prem GitLab deployment in order to establish webhook connectivity. This must be a full URL like `http://broker.url.example:8000`
-  * This must have http:// and the port number.&#x20;
-  * To configure the client with HTTPS, [additional settings are required](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-docker/advanced-configuration-for-snyk-broker-docker-installation/https-for-broker-client-with-docker).
-* `ACCEPT_IAC` - by default, some file types used by Infrastructure-as-Code (IaC) are not enabled. To grant the Broker access to IaC files in your repository, such as Terraform for example, you can simply add an environment variable `ACCEPT_IAC` with any combination of `tf,yaml,yml,json,tpl`
-* `ACCEPT_CODE` - by default, when using the Snyk Broker - Code Agent, Snyk Code will not load code snippets. To enable code snippets you can simply add an environment variable `ACCEPT_CODE=true`
+To use the Broker client with GitLab.com or an on-prem GitLab deployment, **run** `docker pull snyk/broker:gitlab`. Refer to [GitLab - environment variables for Snyk Broker](gitlab-environment-variables-for-snyk-broker.md) for definitions of the environment variables.
 
 **If necessary,** go to the  [Advanced configuration page](advanced-configuration-for-snyk-broker-docker-installation/) and **make any configuration changes** needed, such as providing the CA (Certificate Authority to the Broker Client configuration if the GitlLab instance is using a private certificate, or setting up [proxy support](https://docs.snyk.io/integrations/snyk-broker/set-up-snyk-broker/how-to-install-and-configure-your-snyk-broker-client#proxy-support). See also [Adding custom accept.json for Docker installation](advanced-configuration-for-snyk-broker-docker-installation/adding-custom-allowlist-for-docker-installation.md).
 
