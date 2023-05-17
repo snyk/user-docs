@@ -32,18 +32,19 @@ Data is available in reporting approximately one hour after a scan occurs.
 
 ## Ignores in reporting
 
-After a Project rescan, issues that are ignored are reflected in reporting, and in the rest of the Snyk platform, including APIs.
+After a Project rescan, issues that are ignored are reflected in reporting and the rest of the Snyk platform, including APIs. &#x20;
+
+Likewise, Projects for which issues have been unignored are reflected in reporting after a rescan of the Project. For information about Project test frequency, see [Project Settings](../introduction-to-snyk-projects/view-project-settings.md).
 
 ## Known limitations
 
 Tables in PDF exports are limited to 50 results. A link is available at the bottom of the table in the PDF export to view the report in the browser.
 
-Session data is shared between browser tabs. Snyk recommends you have reporting tabs for one Group or one Org open in the browser at any one time, because having tabs open for different Groups or Orgs can result in unexpected behavior.
+Session data is shared between browser tabs. Snyk recommends you have reporting tabs for one Group or one Organization open in the browser at any one time because having tabs open for different Groups or Organizations can result in unexpected behavior.
 
 ## Filtered views
 
-The way filtered views are managed in the URL may change over time.\
-
+The way filtered views are managed in the URL may change over time.&#x20;
 
 If the view changes, you can generate a new filtered URL in the Snyk Web UI and save it as a bookmark or share it with others.
 
