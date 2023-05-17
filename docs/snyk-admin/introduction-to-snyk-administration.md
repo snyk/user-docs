@@ -2,16 +2,16 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Some functions (such as Groups) are only available on certain [pricing plans](https://snyk.io/plans/).
+Some functions (such as Groups) are only available on some [pricing plans](https://snyk.io/plans/).
 {% endhint %}
 
 ## Groups, Organizations, and Projects
 
-Snyk has a hierarchy that allows you to control access to features and scans:
+Snyk has a hierarchy that allows you to control access to features such as scans:
 
 * **Group:** the highest level; for example, the entire company.
 * **Organization:** the second level of grouping; for example, your team.
-* **Projects:** the lowest level for individual projects; for example, a container image.&#x20;
+* **Projects:** the lowest level for individual Projects; for example, a container image.&#x20;
 
 See [Manage Groups and Organizations](manage-groups-and-organizations/) for details.
 
