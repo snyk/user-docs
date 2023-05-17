@@ -1,13 +1,15 @@
 # Install and configure Broker using Docker
 
-{% hint style="warning" %}
+Snyk Broker is an open-source tool that acts as a proxy between Snyk and special integrations, providing for access to your code by [snyk.io](http://snyk.io/) to scan it and return results to you. SCM integrations with Broker support Snyk Open Source, Snyk Code, Snyk Container (Dockerfile), and Snyk IaC. For details about Snyk Broker, including how it works, how to deploy it, commit signing, upgrading, and troubleshooting, see the [Snyk Broker user documentation](https://docs.snyk.io/snyk-admin/snyk-broker).
+
+**If you are using Kubernetes**, Snyk recommends that you **install Snyk Broker with the** [**Broker Helm Chart**](https://github.com/snyk/snyk-broker-helm). For details, see [Install and configure Broker using Helm](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-helm).
+
+For **all other environments**, you can install Snyk Broker using the [Docker images](https://github.com/snyk/broker) provided by Snyk. The pages listed here explain how to set up the Snyk Broker Client integrations using Docker.
+
 **Multi-tenant settings for EU and AU**\
 When you set up Broker, Code Agent, or both for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
 Example: `-e BROKER_SERVER_URL=https://broker.eu.snyk.io`\
 For the URLs, see [EU and AU account datacenter creation](https://docs.snyk.io/snyk-processes/data-residency-at-snyk#eu-and-au-datacenter-account-creation).
-{% endhint %}
-
-The following pages explain how to set up the Snyk Broker Client integrations using Docker:
 
 * [GitHub](broker-example-set-up-snyk-broker-with-github.md)
 * [GitHub Enterprise](setup-broker-with-github-enterprise.md)
