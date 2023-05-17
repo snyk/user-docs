@@ -39,6 +39,8 @@ Additional commands are available to Install the Snyk Broker Code Agent and Cont
 * [Snyk Broker Code Agent](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-code-agent/install-broker-for-code-agent-using-helm) (needed to enable SAST analysis)
 * [Snyk Broker - Container Registry Agent](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-container-registry-agent/install-broker-for-container-registry-agent-using-helm) (needed to connect to Container Registries; `scmType`: `container-registry-agent`\\)
 
+You can verify that the Broker is running by looking at the settings for your brokered integration in [the Snyk Web UI](https://app.snyk.io) to see a confirmation message that you are connected. You can start importing Projects once you are connected.
+
 ## Set advanced parameters for Snyk Broker using the Helm Chart
 
 When you set up Snyk Broker using Helm, you can set advanced parameters as explained in the following documentation:

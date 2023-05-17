@@ -1,10 +1,12 @@
 # Install and configure Broker using Docker
 
-Snyk Broker is an open-source tool that acts as a proxy between Snyk and special integrations, providing for access to your code by [snyk.io](http://snyk.io/) to scan it and return results to you. SCM integrations with Broker support Snyk Open Source, Snyk Code, Snyk Container (Dockerfile), and Snyk IaC. For details about Snyk Broker, including how it works, how to deploy it, commit signing, upgrading, and troubleshooting, see the [Snyk Broker user documentation](https://docs.snyk.io/snyk-admin/snyk-broker).
+Snyk Broker is an open-source tool that acts as a proxy between Snyk and special integrations, providing for access by [snyk.io](http://snyk.io/) to your code to scan it and return results to you. SCM integrations with Broker support Snyk Open Source, Snyk Code, Snyk Container (Dockerfile), and Snyk IaC. For details about Snyk Broker, including how it works, how to deploy it, commit signing, upgrading, and troubleshooting, see the [Snyk Broker user documentation](https://docs.snyk.io/snyk-admin/snyk-broker).
 
 **If you are using Kubernetes**, Snyk recommends that you **install Snyk Broker with the** [**Broker Helm Chart**](https://github.com/snyk/snyk-broker-helm). For details, see [Install and configure Broker using Helm](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-snyk-broker/install-and-configure-broker-using-helm).
 
 For **all other environments**, you can install Snyk Broker using the [Docker images](https://github.com/snyk/broker) provided by Snyk. The pages listed here explain how to set up the Snyk Broker Client integrations using Docker.
+
+## Installation using Docker
 
 **Multi-tenant settings for EU and AU**\
 When you set up Broker, Code Agent, or both for use in EU or AU Multi-tenant environments, additional environment variables with the specific URLs are required.\
@@ -27,6 +29,22 @@ For the URLs, see [EU and AU account datacenter creation](https://docs.snyk.io/s
 You can customize the configuration using the environment variables in the Docker images. For this reason, install separate, multiple instances of the Broker Client for different integration types to ensure proper configuration as well as redundancy.
 {% endhint %}
 
-Once the Broker is running, visit the settings for your brokered integration in [the Snyk Web UI](https://app.snyk.io) to see a message like the following and start importing Projects:
+You can verify that the Broker is running by looking at the settings for your brokered integration in [the Snyk Web UI](https://app.snyk.io) to see a confirmation message that you are connected. You can start importing Projects once you are connected.
 
-<figure><img src="../../../.gitbook/assets/image (60) (1).png" alt="Brokered integration settings showing connected status"><figcaption><p>Brokered integration settings showing connected status</p></figcaption></figure>
+## Advanced configuration using Docker
+
+When you install using Docker, follow these instructions to configure Broker as needed:
+
+* [Changing the auth method with Docker](advanced-configuration-for-snyk-broker-docker-installation/changing-the-auth-method-with-docker.md)
+* [Credential pooling with Docker](advanced-configuration-for-snyk-broker-docker-installation/credential-pooling-with-docker-and-helm.md)
+* [HTTPS for Broker Client with Docker](advanced-configuration-for-snyk-broker-docker-installation/https-for-broker-client-with-docker.md)
+* [Backend requests with an internal certificate for Docker](advanced-configuration-for-snyk-broker-docker-installation/backend-requests-with-an-internal-certificate-for-docker.md)
+* [Proxy support with Docker](advanced-configuration-for-snyk-broker-docker-installation/proxy-support-with-docker.md)
+* [Disable certificate verification with Docker](advanced-configuration-for-snyk-broker-docker-installation/disable-certificate-verification-with-docker.md)
+* [Adding custom allowlist for Docker installation](advanced-configuration-for-snyk-broker-docker-installation/adding-custom-allowlist-for-docker-installation.md)
+* [Custom approved-listing filter with Docker](advanced-configuration-for-snyk-broker-docker-installation/custom-approved-listing-filter-with-docker.md)
+* [Mounting secrets with Docker](advanced-configuration-for-snyk-broker-docker-installation/mounting-secrets-with-docker.md)
+* [Snyk Code - Clone capability with Broker for Docker](advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)
+
+
+
