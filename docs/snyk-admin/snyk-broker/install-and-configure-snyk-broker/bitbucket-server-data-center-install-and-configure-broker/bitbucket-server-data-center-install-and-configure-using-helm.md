@@ -1,6 +1,6 @@
 # Bitbucket Server/Data Center - install and configure using Helm
 
-For instructions on using the Snyk Broker Helm Chart, see [Install and configure Broker using Helm](install-and-configure-broker-using-helm.md). For more details including definitions of the environment variables see [Set up Snyk Broker with Bitbucket Server/Data Center](data-center.md).
+For instructions on using the Snyk Broker Helm Chart, see [Install and configure Broker using Helm](../install-and-configure-broker-using-helm.md). For more details including definitions of the environment variables see [Set up Snyk Broker with Bitbucket Server/Data Center](data-center.md).
 
 &#x20;in the Docker setup instructions.
 
