@@ -52,7 +52,7 @@ To use the Broker client with a Nexus 3 deployment, **run** `docker pull snyk/br
 
 To use the Broker client with a Nexus 2 deployment, **run** `docker pull snyk/broker:nexus2`.
 
-For definitions of the environment variable, see [Nexus Repository - environment variables for Snyk Broker](nexus-repository-environment-variables-for-snyk-broker.md).
+For definitions of the environment variables, see [Nexus Repository - environment variables for Snyk Broker](nexus-repository-environment-variables-for-snyk-broker.md).
 
 ### Docker run commands to set up Broker Client for Nexus 3 and Nexus 2 integrations
 

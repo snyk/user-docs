@@ -1,6 +1,6 @@
 # Jira - install and configure using Helm
 
-For instructions on using the Snyk Broker Helm Chart, see [Install and configure Broker using Helm](../install-and-configure-broker-using-helm.md). For more details including definitions of the environment variables see [Set up Snyk Broker with Jira](setup-broker-with-jira.md).
+For instructions on using the Snyk Broker Helm Chart, see [Install and configure Broker using Helm](../install-and-configure-broker-using-helm.md). The command to use follows. For definitions of the environment variables, see [Jira - environment variables for Snyk Broker](jira-environment-variables-for-snyk-broker.md).
 
 Note: for `jiraHostname` value do not include `https://`
 

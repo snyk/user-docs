@@ -1,6 +1,6 @@
 # GitLab - install and configure using Helm
 
-For instructions on using the Snyk Broker Helm Chart, see [Install and configure Broker using Helm](../install-and-configure-broker-using-helm.md). For more details including permissions and definitions of the environment variables see [Set up Snyk Broker with GitLab](setup-broker-with-gitlab.md).
+For instructions on using the Snyk Broker Helm Chart, see [Install and configure Broker using Helm](../install-and-configure-broker-using-helm.md). The command to use follows. Refer to [GitLab - environment variables for Snyk Broker](gitlab-environment-variables-for-snyk-broker.md) for definitions of the environment variables.
 
 Note: for `gitlab` value do not include `https://`
 
