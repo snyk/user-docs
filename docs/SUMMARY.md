@@ -225,7 +225,7 @@
   * [Notification and ticketing systems](integrations/notifications-ticketing-system-integrations/README.md)
     * [Jira integration](integrations/notifications-ticketing-system-integrations/jira.md)
     * [Snyk Security in Jira Cloud (beta)](integrations/notifications-ticketing-system-integrations/snyk-security-in-jira-cloud-beta.md)
-    * [Slack App (beta)](integrations/notifications-ticketing-system-integrations/slack-app-beta.md)
+    * [Snyk app for Slack (beta)](integrations/notifications-ticketing-system-integrations/snyk-app-for-slack-beta.md)
     * [Slack integration](integrations/notifications-ticketing-system-integrations/slack-integration.md)
   * [Vulnerability management tools](integrations/vulnerability-management-tools/README.md)
     * [Code Dx Enterprise](integrations/vulnerability-management-tools/code-dx-enterprise.md)
