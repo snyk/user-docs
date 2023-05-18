@@ -1,6 +1,6 @@
 # Snyk PHP Action
 
-This page provides examples of using the Snyk GitHub Action for [PHP](https://github.com/snyk/actions/tree/master/php).  For instructions on using the action and further information see [GitHub Actions integration](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration).
+This page provides examples of using the Snyk GitHub Action for [PHP](https://github.com/snyk/actions/tree/master/php). For instructions on using the action and further information see [GitHub Actions integration](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration).
 
 ## Using the Snyk PHP Action to check for vulnerabilities
 
@@ -68,3 +68,9 @@ jobs:
         with:
           sarif_file: snyk.sarif
 ```
+
+{% hint style="info" %}
+To use the upload-sarif option for private repos you must have GitHub Advanced Security. &#x20;
+
+If you see the error `Advanced Security must be enabled for this repository to use code scanning`, check that GitHub Advanced Security is enabled. For more information, see "[Managing security and analysis settings for your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)."
+{% endhint %}

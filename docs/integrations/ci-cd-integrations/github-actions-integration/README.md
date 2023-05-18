@@ -1,4 +1,4 @@
-# GitHub Actions integration
+# GitHub Actions
 
 {% hint style="info" %}
 As of December 15, 2022, the GitHub Actions integration pages are being moved from the repository to the Snyk docs site. During this process the explanations will provide the same basic information but vary in presentation. If you need help contact [Snyk support](https://support.snyk.io/hc/en-us).
@@ -132,7 +132,9 @@ Using `--sarif-file-output` [Snyk CLI option](https://docs.snyk.io/snyk-cli/cli-
 The Snyk Action fails when vulnerabilities are found. This would prevent the SARIF upload action from running. Thus you must use a [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob\_idstepscontinue-on-error) option as shown in the example that follows.
 
 {% hint style="info" %}
-To use this option for private repos you must have GitHub Advanced Security.
+To use this option for private repos you must have GitHub Advanced Security. &#x20;
+
+If you see the error `Advanced Security must be enabled for this repository to use code scanning`, check that GitHub Advanced Security is enabled. For more information, see "[Managing security and analysis settings for your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)."
 {% endhint %}
 
 ```yaml

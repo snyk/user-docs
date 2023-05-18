@@ -42,7 +42,7 @@ jobs:
 
 For an example of running `snyk monitor`, see [Snyk monitor example](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#snyk-monitor-example) on the GitHub Actions integration page.
 
-## Uploading Snyk scan results to GitHub Code Scanning using the Snyk Gradle Action&#x20;
+## Uploading Snyk scan results to GitHub Code Scanning using the Snyk Gradle Action
 
 Using `--sarif-file-output` [Snyk CLI option](https://docs.snyk.io/snyk-cli/cli-reference) and the [GitHub SARIF upload action](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github), you can upload Snyk scan results to GitHub Code Scanning.
 
@@ -68,3 +68,9 @@ jobs:
         with:
           sarif_file: snyk.sarif
 ```
+
+{% hint style="info" %}
+To use the upload-sarif option for private repos you must have GitHub Advanced Security. &#x20;
+
+If you see the error `Advanced Security must be enabled for this repository to use code scanning`, check that GitHub Advanced Security is enabled. For more information, see "[Managing security and analysis settings for your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)."
+{% endhint %}
