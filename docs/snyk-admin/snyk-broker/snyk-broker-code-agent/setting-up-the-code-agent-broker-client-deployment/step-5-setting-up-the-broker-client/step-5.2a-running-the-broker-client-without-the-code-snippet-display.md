@@ -10,7 +10,7 @@ Once the Broker Client image is stored on your machine, use the docker run comma
 
 The following explains how to set up the Broker Client in a way that does NOT display the code snippets of the Snyk Code results on the Web UI:
 
-<figure><img src="../../../../../.gitbook/assets/Broker - Results - without code snippets (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Broker Client run with no display of code snippets"><figcaption><p>Broker Client run with no display of code snippets</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Broker - Results - without code snippets (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png" alt="Broker Client run with no display of code snippets"><figcaption><p>Broker Client run with no display of code snippets</p></figcaption></figure>
 
 To display the code snippets, see [Running the Broker Client with the code snippets display](step-5.2b-running-the-broker-client-with-the-code-snippets-display.md).
 
@@ -39,14 +39,14 @@ where:
 * `-e <SCM_domain>=` is your SCM domain name, without http/https, for example, `snyk.git.com`. For each SCM. Use the parameter for your SCM:
   * **GitHub** - the `-e <SCM_domain>` parameter is NOT required.
   * **GitHub Enterprise**: `-e GITHUB`\
-    For [GitHub Enterprise](../../../install-and-configure-snyk-broker/github-enterprise-install-and-configure-broker/setup-broker-with-github-enterprise.md) add the following parameters also:\
+    For [GitHub Enterprise](../../../install-and-configure-snyk-broker/setup-broker-with-github-enterprise.md) add the following parameters also:\
     `-e GITHUB_API=<your.ghe.domain.com/api/v3_(without_http/s)> \`\
     `-e GITHUB_GRAPHQL=<your.ghe.domain.com/api_(without_http/s)> \`
   * **Azure Repos**: `-e AZURE_REPOS_HOST`\
     For [Azure Repos](../../../install-and-configure-snyk-broker/azure-repos-install-and-configure-broker/setup-broker-with-azure-repos.md) add the following parameter also:\
     `-e AZURE_REPOS_ORG=<azure_repo_org_name> \`
   * **Bitbucket Server/Data Center**: `-e BITBUCKET`\
-    For [Bitbucket Server/Data Center](../../../install-and-configure-snyk-broker/bitbucket-server-data-center-install-and-configure-broker/data-center.md) add the following parameter also:\
+    For [Bitbucket Server/Data Center](../../../install-and-configure-snyk-broker/data-center.md) add the following parameter also:\
     `-e BITBUCKET_API=<your.bitbucket-server.domain.com/rest/api/1.0_(without http/s)> \`
   * **GitLab**: `-e GITLAB`
 * \[Optional] `-e BROKER_CLIENT_URL=` is the URL to the host machine of the Broker Client. The URL can include an IP address or a DNS with the port number of the host machine, for example, `http://localhost:8000`.\
@@ -60,7 +60,7 @@ When the Broker Client setup is completed successfully, the following message ap
 
 `{ ..., "msg":"successfully established a websocket connection to the broker server", ... }`
 
-<figure><img src="../../../../../.gitbook/assets/Broker Client - Setup success message (1).png" alt="Confirmation message for Broker Client setup"><figcaption><p>Confirmation message for Broker Client setup</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Broker Client - Setup success message.png" alt="Confirmation message for Broker Client setup"><figcaption><p>Confirmation message for Broker Client setup</p></figcaption></figure>
 
 **To verify the setup and details of the Broker Client container**, run:
 

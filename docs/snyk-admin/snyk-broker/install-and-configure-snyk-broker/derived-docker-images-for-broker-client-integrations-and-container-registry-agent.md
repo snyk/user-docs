@@ -21,7 +21,7 @@ ENV PORT                8000
 
 ## Derived Docker image for Bitbucket Server/Data Center Broker integration setup
 
-As an alternative to using the Docker run command shown on the [setup page](bitbucket-server-data-center-install-and-configure-broker/data-center.md), you can build your own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](data-center.md), you can build your own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:bitbucket-server
@@ -36,7 +36,7 @@ ENV PORT                8000
 
 ## Derived Docker image for GitHub Broker integration setup
 
-As an alternative to using the Docker run command shown on the [setup page](github-install-and-configure-broker/broker-example-set-up-snyk-broker-with-github.md), you can build your own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](broker-example-set-up-snyk-broker-with-github.md), you can build your own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:github-com
@@ -49,7 +49,7 @@ ENV BROKER_CLIENT_URL http://my.broker.client:8000
 
 ## Derived Docker image for GitHub Enterprise Broker integration setup
 
-As an alternative to using the Docker run command shown on the [setup page](github-enterprise-install-and-configure-broker/setup-broker-with-github-enterprise.md), you can build you own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](setup-broker-with-github-enterprise.md), you can build you own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:github-enterprise
@@ -65,7 +65,7 @@ ENV BROKER_CLIENT_URL http://my.broker.client:8000
 
 ## Derived Docker image for GitLab Broker integration setup
 
-As an alternative to using the Docker run command shown on the [setup page](gitlab-install-and-configure-broker/setup-broker-with-gitlab.md), you can build your own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](setup-broker-with-gitlab.md), you can build your own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:gitlab
@@ -79,7 +79,7 @@ ENV PORT                8000
 
 ## Derived Docker image for Jira Broker integration setup
 
-As an alternative to using the Docker run command shown on the [setup page](jira-install-and-configure-broker/setup-broker-with-jira.md), you can build your own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](setup-broker-with-jira.md), you can build your own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:jira
@@ -93,7 +93,7 @@ ENV PORT                8000
 
 ## Derived Docker image for Artifactory Broker integration setup
 
-As an alternative to using the Docker run command shown on the [setup page](artifactory-repository-install-and-configure-broker/set-up-snyk-broker-with-artifactory-repository.md), you can build your own Docker image and override relevant environment variables:
+As an alternative to using the Docker run command shown on the [setup page](set-up-snyk-broker-with-artifactory-repository.md), you can build your own Docker image and override relevant environment variables:
 
 ```dockerfile
 FROM snyk/broker:artifactory

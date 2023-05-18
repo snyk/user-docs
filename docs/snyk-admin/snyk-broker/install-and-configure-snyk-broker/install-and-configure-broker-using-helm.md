@@ -27,7 +27,7 @@ Then run the commands for each SCM, registry, or Jira as explained in the user d
 * [Bitbucket Server/Data Center](bitbucket-server-data-center-install-and-configure-broker/bitbucket-server-data-center-install-and-configure-using-helm.md) `scmType`: `bitbucket-server`
 * [GitLab](gitlab-install-and-configure-broker/gitlab-install-and-configure-using-helm.md) `scmType`: `gitlab`
 * [Azure Repos](azure-repos-install-and-configure-broker/azure-repos-install-and-configure-and-configure-using-helm.md) `scmType`: `azure-repos`
-* [JFrog Artifactory](artifactory-repository-install-and-configure-broker/artifactory-repository-install-and-configure-using-helm.md) `scmType`: `artifactory`
+* [JFrog Artifactory](artifactory-repository-install-and-configure-using-helm.md) `scmType`: `artifactory`
 * [Nexus 3](nexus-repository-install-and-configure-broker/nexus-repository-install-and-configure-using-helm.md) `scmType`: `nexus`
 * [Nexus 2](nexus-repository-install-and-configure-broker/nexus-repository-install-and-configure-using-helm.md) `scmType`: `nexus2`
 * [Jira](jira-install-and-configure-broker/jira-install-and-configure-using-helm.md) `scmType`: `jira`
