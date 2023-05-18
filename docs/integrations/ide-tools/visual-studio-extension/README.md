@@ -1,6 +1,9 @@
 # Visual Studio extension
 
-The Snyk Visual Studio extension provides analysis of your code and open source dependencies. Download the plugin at any time free of charge and use it with any Snyk account. Scan your code early in the development lifecycle to help you pass security reviews and avoid costly fixes later in the development cycle.
+The Snyk Visual Studio extension provides analysis of your code and open-source dependencies. Download the plugin at any time free of charge and use it with any Snyk account. Scan your code early in the development lifecycle to help you pass security reviews and avoid costly fixes later in the development cycle.
+
+**Feature availability**\
+The extension is compatible with Community, Professional, and Enterprise plans.
 
 Snyk scans for vulnerabilities and returns results with security issues categorized by issue type and severity.
 
@@ -30,17 +33,18 @@ The following are also available:
 * [Bug tracker](https://github.com/snyk/snyk-visual-studio-plugin/issues)
 * [Github repository](https://github.com/snyk/snyk-visual-studio-plugin)
 
+The plugin runs on Windows.
+
+## Supported Visual Studio versions
+
+Supported versions of Visual Studio are 2015, 2017, 2019, and 2022 (version 17.0.5 and above).
+
 ## Supported languages, package managers, and frameworks
 
 Supported languages and frameworks include C#, JavaScript, TypeScript, Java, Go , Ruby, Python, PHP, Scala, Swift, Objective-C, unmanaged C/C++ and .NET.
 
 * For Snyk Open Source: the Visual Studio extension supports all the languages and package managers supported by Snyk Open Source and the CLI. See the full list [in the docs](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support).
 * For Snyk Code: the Visual Studio extension supports all the [languages and frameworks supported by Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#language-support-with-snyk-code-ai-engine).
-
-## Software requirements
-
-* Operating system - Windows
-* Supported versions of Visual Studio: 2015, 2017, 2019, 2022 (version 17.0.5 and above). The extension is compatible with Community, Professional, and Enterprise plans.
 
 ## Supported operating systems and architecture
 
