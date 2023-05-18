@@ -46,5 +46,26 @@ When you install using Docker, follow these instructions to configure Broker as 
 * [Mounting secrets with Docker](advanced-configuration-for-snyk-broker-docker-installation/mounting-secrets-with-docker.md)
 * [Snyk Code - Clone capability with Broker for Docker](advanced-configuration-for-snyk-broker-docker-installation/snyk-code-clone-capability-with-broker-for-docker.md)
 
+## Common questions about Snyk Broker
 
+**How often is Snyk Broker updated?**\
+Snyk Broker is updated each time new features become available and when there are fixes.
+
+**How often is Snyk Broker checked for vulnerabilities?**\
+The Snyk Broker application and images are tested daily for vulnerabilities.
+
+**What is the SLA to fix vulnerabilities?**\
+There is a 14-day SLA for fixing high vulnerabilities and a five-day SLA for fixing critical vulnerabilities in public images.
+
+## Additional information for developers
+
+If you need to upgrade, see [Upgrade the Snyk Broker Client](https://docs.snyk.io/snyk-admin/snyk-broker/upgrade-the-snyk-broker-client).
+
+Troubleshooting information is provided on the [Troubleshooting Broker](https://docs.snyk.io/snyk-admin/snyk-broker/troubleshooting-broker) page.
+
+You can view the [license, Apache License, Version 2.0](https://github.com/snyk/broker/blob/master/LICENSE).
+
+To submit pull requests, see [Contributing](https://github.com/snyk/broker/blob/master/.github/CONTRIBUTING.md).
+
+See [Security](https://github.com/snyk/broker/blob/master/SECURITY.md) for specific information about Broker.
 

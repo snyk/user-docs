@@ -1,6 +1,6 @@
 # Install Broker for Container Registry Agent using Helm
 
-Installing the [Broker Container Registry Agent using Docker](./) requires the parameter `CR_AGENT_URL`, but it is not required to install using Helm.
+Installing the [Broker Container Registry Agent using Docker](./) requires the parameter `CR_AGENT_URL`, but it is not required to install using Helm. The environment variables are defined for [installing with Docker](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-container-registry-agent#configuring-and-running-the-broker-client-for-container-registry-agent) and apply also to installing with Helm.
 
 You must include an `accept.json` file for this deployment. Copy the new accept.json to the /snyk-broker folder
 

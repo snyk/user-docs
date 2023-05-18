@@ -28,3 +28,7 @@ helm install snyk-broker-chart . \
              --set env[1].value=myOtherEnvVarValue \
              -n snyk-broker --create-namespace
 ```
+
+**Extra resources**\
+Additional Kubernetes resources can be added to the chart by adding them to the values file. Be careful to use the right syntax and validate the rendered `yaml` using `helm template` command.\
+Thanks to https://github.com/apat292 for the contribution.
