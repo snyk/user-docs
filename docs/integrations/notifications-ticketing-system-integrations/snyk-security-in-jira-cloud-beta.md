@@ -2,14 +2,14 @@
 description: Enabling developers to see and triage security issues from Jira
 ---
 
-# Snyk Security in Jira Cloud
+# Snyk Security in Jira Cloud (beta)
 
 Snyk Security in Jira Cloud helps developers identify, prioritize and triage security vulnerabilities related to their code repositories directly from the Jira interface.
 
 {% hint style="info" %}
 **Feature availability**
 
-Currently, only Snyk Open Source Projects are supported within this integration.&#x20;
+Snyk Security in Jira is in [Closed Beta](../../more-info/snyk-feature-release-process.md#closed-beta) and is only available by invitation from Snyk. Currently, only Snyk Open Source Projects are supported within this integration.&#x20;
 {% endhint %}
 
 ## Available plans and compatibility
@@ -26,9 +26,9 @@ Snyk Security in Jira is available for Jira Cloud only. Jira Server and Jira Dat
 
 To install [**Snyk Security in Jira Cloud**](https://marketplace.atlassian.com/apps/1230482/snyk-security-in-jira-cloud) from the Atlassian Marketplace and start triaging security issues in Jira, you need to take the following actions:
 
-1. [Install Snyk Security in Jira Cloud](snyk-security-in-jira-cloud.md#install-snyk-security).
-2. [Configure the Snyk Security app](snyk-security-in-jira-cloud.md#configure-snyk-security).
-3. [Link code repositories to Jira projects](snyk-security-in-jira-cloud.md#link-code-repositories-to-jira-projects).
+1. [Install Snyk Security in Jira Cloud](snyk-security-in-jira-cloud-beta.md#install-snyk-security).
+2. [Configure the Snyk Security app](snyk-security-in-jira-cloud-beta.md#configure-snyk-security).
+3. [Link code repositories to Jira projects](snyk-security-in-jira-cloud-beta.md#link-code-repositories-to-jira-projects).
 
 ### Requirements
 
@@ -71,7 +71,7 @@ R\&D engineering managers who own Jira projects and know their team's code repos
 2. Select the Add connection button :heavy\_plus\_sign: for Snyk.
 3. Choose the container (code repository) from the list and select **Add container**.
 
-Developers can now use the security feature to view recent vulnerabilities found in the linked code repositories and start [creating Jira issues](snyk-security-in-jira-cloud.md#create-a-jira-issue-out-of-a-vulnerability) from them or [linking them to existing Jira issues](snyk-security-in-jira-cloud.md#link-an-existing-jira-issue-to-a-vulnerability).
+Developers can now use the security feature to view recent vulnerabilities found in the linked code repositories and start [creating Jira issues](snyk-security-in-jira-cloud-beta.md#create-a-jira-issue-out-of-a-vulnerability) from them or [linking them to existing Jira issues](snyk-security-in-jira-cloud-beta.md#link-an-existing-jira-issue-to-a-vulnerability).
 
 ## Manage security vulnerabilities in Jira
 
