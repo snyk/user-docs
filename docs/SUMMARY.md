@@ -228,7 +228,7 @@
     * [Snyk app for Slack (beta)](integrations/notifications-ticketing-system-integrations/snyk-app-for-slack-beta.md)
     * [Slack integration](integrations/notifications-ticketing-system-integrations/slack-integration.md)
   * [Vulnerability management tools](integrations/vulnerability-management-tools/README.md)
-    * [Code Dx Enterprise](integrations/vulnerability-management-tools/code-dx-enterprise.md)
+    * [Code Dx Enterprise integration](integrations/vulnerability-management-tools/code-dx-enterprise.md)
     * [Brinqa](integrations/vulnerability-management-tools/brinqa.md)
     * [Fortify SSC](integrations/vulnerability-management-tools/fortify-ssc-integration.md)
     * [Kenna Security](integrations/vulnerability-management-tools/kenna-security.md)
