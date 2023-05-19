@@ -236,7 +236,7 @@
     * [OpsLevel](integrations/vulnerability-management-tools/opslevel.md)
     * [RiskSense](integrations/vulnerability-management-tools/risksense.md)
     * [ServiceNow (AVR)](integrations/vulnerability-management-tools/servicenow-avr.md)
-    * [Vulcan-Cyber](integrations/vulnerability-management-tools/vulcan-cyber.md)
+    * [Vulcan-Cyber integration](integrations/vulnerability-management-tools/vulcan-cyber.md)
 * [Scan application code](scan-application-code/README.md)
   * [Snyk Open Source](scan-application-code/snyk-open-source/README.md)
     * [Snyk Open Source - supported languages and package managers](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/README.md)
