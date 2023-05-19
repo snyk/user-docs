@@ -47,10 +47,6 @@ After you create a Jira issue, the Jira key with a link is displayed on the issu
 
 <figure><img src="../../.gitbook/assets/Jira - Button with a link.png" alt="Jira key on issue card"><figcaption><p>Jira key on issue card</p></figcaption></figure>
 
-You can also see which Jira issues have been created in the **Issues** view in your Reports.
-
-<figure><img src="../../.gitbook/assets/Jira - Isuues in Report.png" alt="Jira issues create shown in Reports"><figcaption><p>Jira issues create shown in Reports</p></figcaption></figure>
-
 ## Integrate with Jira using Snyk Broker
 
 See [Set up Snyk Broker with Jira](../../snyk-admin/snyk-broker/install-and-configure-snyk-broker/setup-broker-with-jira.md).
