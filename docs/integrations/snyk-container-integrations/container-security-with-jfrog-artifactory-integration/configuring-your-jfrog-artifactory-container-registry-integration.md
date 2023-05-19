@@ -1,14 +1,14 @@
 # Configuring your JFrog Artifactory Container Registry integration
 
-The instructions on this page explain how to enable integration between one Artifactory instance as a container registry and a Snyk Organization, to start managing your image security.
+The instructions on this page explain how to enable integration between one Artifactory instance as a container registry and a Snyk Organization to start managing your image security.
 
-## Prerequisites
+## Prerequisites for Artifactory Container Registry integration
 
 * You must be an administrator for the Organization you are configuring in Snyk.
 * Snyk needs user credentials to integrate with Artifactory and does not support Artifactory when configured for single sign-on (SSO).
 * If you are using a self-hosted Artifactory instance, refer to [Snyk Broker - Container Registry Agent](../../../snyk-admin/snyk-broker/snyk-broker-container-registry-agent/).
 
-## Configure integration
+## Configure integration of Artifactory Container Registry
 
 1. Log in to [your Snyk account](https://app.snyk.io).
 2.  Navigate to **Integrations**; select the **Artifactory** option:
@@ -17,7 +17,7 @@ The instructions on this page explain how to enable integration between one Arti
     The configuration page in the **Settings** area loads.
 3. Enter credentials as follows:
    * **Username and Password**—use your Artifactory login credentials.
-   * **Container registry name -** the _full registry URL_ in format: `<org>.jfrog.io/artifactory/api/docker/<repo-name>`.
+   * **Container registry name -** the _full registry URL_ in the format: `<org>.jfrog.io/artifactory/api/docker/<repo-name>`.
 4. Click **Save Changes** and verify that the confirmation appears.
 
 {% hint style="info" %}
