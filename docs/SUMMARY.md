@@ -229,7 +229,7 @@
     * [Slack integration](integrations/notifications-ticketing-system-integrations/slack-integration.md)
   * [Vulnerability management tools](integrations/vulnerability-management-tools/README.md)
     * [Code Dx Enterprise integration](integrations/vulnerability-management-tools/code-dx-enterprise.md)
-    * [Brinqa](integrations/vulnerability-management-tools/brinqa.md)
+    * [Brinqa integration](integrations/vulnerability-management-tools/brinqa.md)
     * [Fortify SSC](integrations/vulnerability-management-tools/fortify-ssc-integration.md)
     * [Kenna Security](integrations/vulnerability-management-tools/kenna-security.md)
     * [Nucleus Security](integrations/vulnerability-management-tools/nucleus-security.md)
