@@ -266,6 +266,7 @@
       * [Vulnerability fix types](scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/vulnerability-fix-types.md)
       * [Why can't I open a Pull Request/Merge Request for issues found by Snyk?](scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/why-cant-i-open-a-pull-request-merge-request-for-issues-found-by-snyk.md)
       * [What languages do we support Fix Pull Requests or Merge Requests?](scan-application-code/snyk-open-source/starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md)
+      * [Differences in Open Source vulnerability counts across environments](snyk-cli/test-for-vulnerabilities/differences-in-vulnerability-counts-across-environments.md)
     * [Automatic and manual PRs with Snyk Open Source](scan-application-code/snyk-open-source/open-source-basics/README.md)
       * [Automated pull request creation for new fixes](scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-new-vulnerabilities.md)
       * [Configure Automatic fix PRs](scan-application-code/snyk-open-source/open-source-basics/fix-pull-requests-for-known-vulnerabilities-backlog.md)
