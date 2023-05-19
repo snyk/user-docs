@@ -1,9 +1,9 @@
-# Container security with GCR
+# Container security with GCR integration
 
 Snyk integrates with Google Container Registry (GCR) so you can import your Projects, monitor your containers for vulnerabilities, and fix vulnerabilities as you work. Snyk tests the Projects you have imported for any known security vulnerabilities at a frequency you control.
 
 {% hint style="info" %}
-For more details about how Snyk scans, see [How Snyk container security works](../../how-snyk-container-works/).
+For more details about how Snyk scans, see [How Snyk container security works](../../../scan-containers/how-snyk-container-works/).
 {% endhint %}
 
 Refer to the following pages for instructions on enabling access to GCR, configuring the integration, and adding images from GCR:
