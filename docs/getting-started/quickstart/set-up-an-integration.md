@@ -16,27 +16,31 @@ You can set up this integration:
 
 Immediately after you [Create a Snyk account](create-a-snyk-account/), you will see some optional getting started walkthrough prompts. You can choose to provide some information to help Snyk guide your experience, and then follow the prompts to integrate your code repository for a seamless experience.
 
-For example:
+An **example** follows.
 
-<figure><img src="../../.gitbook/assets/image (496).png" alt=""><figcaption><p>Choose integration method</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 9.36.53 AM.png" alt="Choose integration method"><figcaption><p>Choose integration method</p></figcaption></figure>
 
-If you select **GitHub**, then fill in the details as prompted.
+If you select **GitHub**, fill in the details as prompted.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Set access permissions</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 9.37.34 AM.png" alt="Set access permissions"><figcaption><p>Set access permissions</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (529).png" alt=""><figcaption><p>Configure automation settings &#x26; authenticate</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 9.39.45 AM.png" alt="Configure automation settings &#x26; authenticate"><figcaption><p>Configure automation settings &#x26; authenticate</p></figcaption></figure>
 
 Finally, you can [Import a Project](import-a-project.md) to scan:
 
-<figure><img src="../../.gitbook/assets/image (248) (1).png" alt=""><figcaption><p>Add your first project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (160) (1) (1) (1) (1).png" alt="Add your first project"><figcaption><p>Add your first project</p></figcaption></figure>
+
+Alternatively, if you want to scan your code without authenticating to your source code repository, you can select the CLI integration. This allows you to run scans from your local machine and upload results to your Organization in Snyk.
+
+Though GitHub, Bitbucket Cloud, and CLI are shown with dedicated tiles, many other integrations are available through the **View all integrations** link.
 
 ## Manual process (any time)
 
-You can add an integration to Snyk manually at any point (See [Integrate with Snyk](../../integrations/) for more details).
+You can add an integration to Snyk manually at any point. For more information, see [Integrate with Snyk](../../integrations/).
 
-### **Example: Git repository integration**
+**Example: Git repository integration**
 
-To scan code from a Git-based source code repository, you must integrate Snyk to a [Git repository integration](../../integrations/git-repository-scm-integrations/). Snyk has pre-built integrations for GitHub, GitHub Enterprise, Bitbucket Cloud, and other repositories.
+To scan code from a Git-based source code repository, you must integrate Snyk with a [Git repository integration](../../integrations/git-repository-scm-integrations/). Snyk has pre-built integrations for GitHub, GitHub Enterprise, Bitbucket Cloud, and other repositories.
 
 First, log in to the Snyk Web UI ([app.snyk.io](https://app.snyk.io)), and select **Integrations > Source control**.
 

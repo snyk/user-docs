@@ -18,7 +18,7 @@ IDE example:
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (13) (2).png" alt="License issues in an IDE"><figcaption><p>License issues in an IDE</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt="License issues in an IDE"><figcaption><p>License issues in an IDE</p></figcaption></figure>
 
 </div>
 
@@ -26,6 +26,6 @@ PR Checks example:
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (4) (4).png" alt="License issues in PR Checks"><figcaption><p>License issues in PR Checks</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt="License issues in PR Checks"><figcaption><p>License issues in PR Checks</p></figcaption></figure>
 
 </div>
