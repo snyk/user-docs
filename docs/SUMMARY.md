@@ -234,7 +234,7 @@
     * [Kenna Security](integrations/vulnerability-management-tools/kenna-security.md)
     * [Nucleus Security](integrations/vulnerability-management-tools/nucleus-security.md)
     * [OpsLevel](integrations/vulnerability-management-tools/opslevel.md)
-    * [RiskSense](integrations/vulnerability-management-tools/risksense.md)
+    * [RiskSense integration](integrations/vulnerability-management-tools/risksense.md)
     * [ServiceNow AVR integration](integrations/vulnerability-management-tools/servicenow-avr.md)
     * [Vulcan-Cyber integration](integrations/vulnerability-management-tools/vulcan-cyber.md)
 * [Scan application code](scan-application-code/README.md)
