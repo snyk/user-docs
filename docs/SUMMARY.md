@@ -232,7 +232,7 @@
     * [Brinqa integration](integrations/vulnerability-management-tools/brinqa.md)
     * [Fortify SSC integration](integrations/vulnerability-management-tools/fortify-ssc-integration.md)
     * [Kenna Security integration](integrations/vulnerability-management-tools/kenna-security.md)
-    * [Nucleus Security](integrations/vulnerability-management-tools/nucleus-security.md)
+    * [Nucleus Security integration](integrations/vulnerability-management-tools/nucleus-security.md)
     * [OpsLevel](integrations/vulnerability-management-tools/opslevel.md)
     * [RiskSense integration](integrations/vulnerability-management-tools/risksense.md)
     * [ServiceNow AVR integration](integrations/vulnerability-management-tools/servicenow-avr.md)
