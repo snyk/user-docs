@@ -231,7 +231,7 @@
     * [Code Dx Enterprise integration](integrations/vulnerability-management-tools/code-dx-enterprise.md)
     * [Brinqa integration](integrations/vulnerability-management-tools/brinqa.md)
     * [Fortify SSC integration](integrations/vulnerability-management-tools/fortify-ssc-integration.md)
-    * [Kenna Security](integrations/vulnerability-management-tools/kenna-security.md)
+    * [Kenna Security integration](integrations/vulnerability-management-tools/kenna-security.md)
     * [Nucleus Security](integrations/vulnerability-management-tools/nucleus-security.md)
     * [OpsLevel](integrations/vulnerability-management-tools/opslevel.md)
     * [RiskSense integration](integrations/vulnerability-management-tools/risksense.md)
