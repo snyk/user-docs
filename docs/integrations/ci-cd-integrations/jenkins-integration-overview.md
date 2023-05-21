@@ -149,6 +149,10 @@ The path to the manifest file to be used by Snyk. See `--file` in the [CLI comma
 
 The minimum severity to detect. Can be one of the following: `low`, `medium`, `high` , `critical`. See `--severity-threshold` in the [CLI commands and options summary](https://docs.snyk.io/snyk-cli/cli-reference) for default behavior.
 
+**`monitorProjectOnBuild` (optional, default: `true`)**
+
+Whether to create/update a project in your Snyk account to be continuously monitored for issues. After running a build, log in to the Snyk website and view your projects to see the monitor. For more information on Monitoring, see [CLI Monitor command](https://docs.snyk.io/snyk-cli/commands/monitor).
+
 **`additionalArguments` (optional, default: \_none**\_**)**
 
 See the [CLI commands and options summary](https://docs.snyk.io/snyk-cli/cli-reference) for information on additional CLI options.
