@@ -6,7 +6,7 @@ After the plugin is installed, you can opt out of downloading the CLI through th
 
 You can set the following configurations for the plugin, using **Preferences → Tools → Snyk**:
 
-* **Token**: set the token that should be used for authentication with Snyk (can be generated through the Account Settings in the Snyk Web UI).
+* **Token**: set the token that should be used for authentication with Snyk (see [Authentication for the JetBrains plugins](authentication-for-the-jetbrains-plugins.md)).
 * **Custom endpoint**: set the custom endpoint for the Snyk Web UI, if needed. Use this field for single tenant setups as well instead of https://app.snyk.io.
 * **Ignore unknown CA**: ignore the SSL cert, if needed
 *   **Organization**: set the org to run `snyk test` against (similar to the `--org=` option in the CLI). Snyk recommends using the `ORG_ID`. If you specify an organization slug name, the value must match the URL slug as displayed in the URL of your org in the Snyk UI: `https://app.snyk.io/org/[orgslugname]`.
@@ -21,9 +21,9 @@ You can set the following configurations for the plugin, using **Preferences →
 * **Snyk Code Security issues**: use to analyze the project for security vulnerabilities in your application code using Snyk Code; enabled by default
 * **Snyk Code Quality issues**: use to analyze the project for quality issues in your application code using Snyk Code; disabled by default.
 * **Snyk Advisor issues**: health status (maintenance, community, popularity, and security) of your open source packages. Advisor scores are shown only for packages with an advisor score of less than 70.
-* **Automatically manage needed binaries** and \*\*\*\* and **Cli Path**: Opt out of downloading the CLI through the plugin and thus use your own installation of the CLI.
+* **Automatically manage needed binaries** and **Cli Path**: Opt out of downloading the CLI through the plugin and thus use your own installation of the CLI.
   * When **Automatically manage needed binaries** is checked, the plugin will automatically download and keep the CLI updated.
-  * When **Automatically manage needed binaries** \_\_ is checked \_\_ and **Cli Path** contains a path, the plugin will use the provided CLI path. Use this option if downloading the CLI is not possible due to your network configuration (for example, due to firewall rules) and you need to obtain the CLI through other means.
+  * When **Automatically manage needed binaries** is not checked, and **Cli Path** contains a path, the plugin will use the provided CLI path. Use this option if downloading the CLI is not possible due to your network configuration (for example, due to firewall rules), and you need to obtain the CLI through other means.
 
 <figure><img src="../../../.gitbook/assets/JetBrains-CLI-config.png" alt=""><figcaption></figcaption></figure>
 
