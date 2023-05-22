@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Recap**\
-You have downloaded the Terraform or Amazon Web Services (AWS) CloudFormation template declaring the Identity & Access Management (IAM) role for Snyk Cloud. Now you need to provision the infrastructure.
+You have downloaded the Terraform or Amazon Web Services (AWS) CloudFormation template declaring the Identity & Access Management (IAM) role for Snyk. Now you need to provision the infrastructure.
 {% endhint %}
 
 The process to create the Snyk IAM role is the same whether you're using the [Snyk Web UI](step-1-download-iam-role-iac-template-web-ui.md) or [Snyk API](../snyk-cloud-for-aws-api/step-1-download-iam-role-iac-template.md) to onboard your AWS account.
@@ -110,4 +110,4 @@ If the **Status** column says `CREATE_COMPLETE`, AWS has finished creating the I
 
 ## What's next?
 
-The next step is to create and scan the Snyk Cloud Environment. See [Step 3: create and scan a Snyk Cloud Environment (Web UI)](step-3-create-and-scan-a-snyk-cloud-environment-web-ui.md).
+The next step is to create and scan the Cloud Environment. See [Step 3: create and scan a Cloud Environment (Web UI)](step-3-create-and-scan-a-snyk-cloud-environment-web-ui.md).

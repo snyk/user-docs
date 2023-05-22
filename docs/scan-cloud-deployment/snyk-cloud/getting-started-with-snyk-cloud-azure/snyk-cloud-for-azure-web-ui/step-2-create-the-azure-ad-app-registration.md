@@ -5,9 +5,9 @@
 You have downloaded the Terraform template declaring the [Azure Active Directory (AD) application registration](https://learn.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#application-registration), [federated identity credential](https://learn.microsoft.com/en-us/azure/active-directory/develop/workload-identity-federation), and [service principal](https://learn.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) for Snyk. Now you need to provision the infrastructure.
 {% endhint %}
 
-To scan an Azure subscription, Snyk Cloud takes the permissions of a service principal with a [Reader](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#reader) role that allows Snyk to scan the configuration of your subscription resources.
+To scan an Azure subscription, Snyk takes the permissions of a service principal with a [Reader](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#reader) role that allows Snyk to scan the configuration of your subscription resources.
 
-Additionally, Snyk Cloud has a security feature that locks the federated credential for a subscription and tenant to the Organization that onboards it. This ensures that nobody can guess the credential's name and onboard it into a separate Organization to see those resources.
+Additionally, Snyk has a security feature that locks the federated credential for a subscription and tenant to the Organization that onboards it. This ensures that nobody can guess the credential's name and onboard it into a separate Organization to see those resources.
 
 ## Create the infrastructure with Terraform or the Azure CLI
 
@@ -84,4 +84,4 @@ Copy this application ID for use in the next step.
 
 ## What's next?
 
-The next step is to create and scan the Snyk Cloud Environment. See [Step 3: Create and scan a Snyk Cloud Environment for Azure (Web UI)](step-3-create-and-scan-a-snyk-cloud-environment-for-azure-web-ui.md).
+The next step is to create and scan the Cloud Environment. See [Step 3: Create and scan a Cloud Environment for Azure (Web UI)](step-3-create-and-scan-a-snyk-cloud-environment-for-azure-web-ui.md).

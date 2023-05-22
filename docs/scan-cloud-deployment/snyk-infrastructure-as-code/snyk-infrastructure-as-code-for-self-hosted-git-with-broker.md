@@ -8,4 +8,4 @@ To learn how to configure Snyk Broker see the [Broker documentation](broken-refe
 
 You must grant Broker access to particular files in the repository. This requires specific API permissions. These API permissions are slightly different depending on which source control system you are using.
 
-To learn what to configure and how, see [Snyk Broker Infrastructure as Code detection](../../enterprise-setup/snyk-broker/snyk-broker-infrastructure-as-code-detection/) documentation.
+To learn what to configure and how, see [Snyk Broker Infrastructure as Code detection](../../snyk-admin/snyk-broker/snyk-broker-infrastructure-as-code-detection/) documentation.

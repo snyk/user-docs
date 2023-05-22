@@ -7,7 +7,7 @@ You have downloaded the Terraform template declaring the [Google service account
 
 The process to create the Google service account is the same whether you're using the [Snyk Web UI](./) or [Snyk API](../snyk-cloud-for-google-api/) to onboard your Google project.
 
-To scan a Google Cloud project, Snyk Cloud takes the permissions of a tightly-scoped Google service account that allows Snyk to scan the configuration of your project resources.
+To scan a Google Cloud project, Snyk takes the permissions of a tightly-scoped Google service account that allows Snyk to scan the configuration of your project resources.
 
 The service account you create is granted the following read-only Identity & Access Management (IAM) roles:
 
@@ -16,11 +16,11 @@ The service account you create is granted the following read-only Identity & Acc
 
 Snyk Cloud's service account is granted the [Service Account Token Creator](https://cloud.google.com/iam/docs/understanding-roles#iam.serviceAccountTokenCreator) IAM role to enable it to generate short-lived credentials for your service account.
 
-Additionally, Snyk Cloud has a mechanism in place to lock a service account to the Organization that onboards it. This is a security feature to ensure that nobody can guess a service account name and onboard it into a separate Organization to see those resources.
+Additionally, Snyk  has a mechanism in place to lock a service account to the Organization that onboards it. This is a security feature to ensure that nobody can guess a service account name and onboard it into a separate Organization to see those resources.
 
 ## Set Google Cloud project ID
 
-Snyk Cloud scans the Google Cloud project specified by the `project_id` [variable](https://www.terraform.io/language/values/variables) in the Terraform template. You must set the variable's value using one of the following methods:
+Snyk scans the Google Cloud project specified by the `project_id` [variable](https://www.terraform.io/language/values/variables) in the Terraform template. You must set the variable's value using one of the following methods:
 
 * **Set the `project_id` variable directly in the Terraform template.** On line 4 of the template, change the default value of the `project_id` variable to your project ID:
 
@@ -73,4 +73,4 @@ Copy the service account email for use in the next step.
 
 ## What's next?
 
-The next step is to create and scan the Snyk Cloud Environment. See [Step 3: Create and scan a Snyk Cloud Environment for Google (Web UI)](step-3-create-and-scan-a-snyk-cloud-environment-for-google-web-ui.md).
+The next step is to create and scan the Cloud Environment. See [Step 3: Create and scan a Cloud Environment for Google (Web UI)](step-3-create-and-scan-a-snyk-cloud-environment-for-google-web-ui.md).

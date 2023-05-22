@@ -1,8 +1,8 @@
-# Step 3: Create and scan a Snyk Cloud Environment for Azure (Web UI)
+# Step 3: Create and scan a Cloud Environment for Azure (Web UI)
 
 {% hint style="info" %}
 **Recap**\
-You have created the Azure app registration, federated identity credential, and service principal for Snyk Cloud. Now you can create and scan a Snyk Cloud Environment.
+You have created the Azure app registration, federated identity credential, and service principal for Snyk. Now you can create and scan a Cloud Environment.
 {% endhint %}
 
 ## Process overview
@@ -15,4 +15,7 @@ You have created the Azure app registration, federated identity credential, and 
 
 ### What's next?
 
-You can now view misconfiguration issues in the API or Snyk Web UI. See [Snyk Cloud issues](../../snyk-cloud-issues/) for more information.
+You can now:
+
+* View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../snyk-cloud-issues/).
+* Prioritize your vulnerabilities with cloud context.

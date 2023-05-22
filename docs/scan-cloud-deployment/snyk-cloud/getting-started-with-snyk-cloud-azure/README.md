@@ -1,10 +1,10 @@
-# Getting started with Snyk Cloud: Azure
+# Azure Integration
 
 {% hint style="info" %}
-Azure support is currently in Open Beta. If you want to use Snyk Cloud to scan your Azure subscription, please contact your Snyk account team. See [Snyk feature release process](../../../more-info/snyk-feature-release-process.md) for more details.
+Azure support is currently in Open Beta. If you want to use Snyk to scan your Azure subscription, please contact your Snyk account team. See [Snyk feature release process](../../../more-info/snyk-feature-release-process.md) for more details.
 {% endhint %}
 
-Snyk Cloud scans the infrastructure configuration in your [Microsoft Azure](https://azure.microsoft.com/en-us/) subscription and detects misconfigurations that can lead to vulnerabilities.
+Snyk integrates with your [Microsoft Azure](https://azure.microsoft.com/en-us/) subscription to find issues in your cloud configurations, and to generate cloud context to help you prioritize your vulnerabilities.
 
 You can onboard an Azure subscription to Snyk using the following methods:
 
@@ -13,7 +13,7 @@ You can onboard an Azure subscription to Snyk using the following methods:
 
 ## Prerequisites
 
-To start using Snyk Cloud, you need the following:
+To add an Azure integration, you need the following:
 
 * A Snyk Business or Enterprise [plan](https://snyk.io/plans/)
 * A new Snyk Organization, with appropriate feature flags assigned by your Snyk contact

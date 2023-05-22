@@ -1,11 +1,11 @@
-# Step 3: Create and scan a Snyk Cloud Environment for Google (Web UI)
+# Step 3: Create and scan a Cloud Environment for Google (Web UI)
 
 {% hint style="info" %}
 **Recap**\
-You have created the Google service account for Snyk Cloud. Now you can create and scan a Snyk Cloud Environment.
+You have created the Google service account for Snyk. Now you can create and scan a Cloud Environment.
 {% endhint %}
 
-To create and scan a Snyk Cloud Environment for Google, you must provide the **Google service account's email address** and your **project ID**.
+To create and scan a Cloud Environment for Google, you must provide the **Google service account's email address** and your **project ID**.
 
 1. In the Snyk Web UI **Add Google Cloud Environment** modal where you downloaded the service account template, enter your service account email in the **Service account email** field.
 2. Optionally, enter an environment name. If one is not provided, Snyk will use your Google project name.
@@ -20,4 +20,7 @@ It can take Google 60 seconds or more to create your service account. If you try
 
 ## What's next?
 
-You can now view misconfiguration issues in the Snyk Web UI. See [Snyk Cloud issues](../../snyk-cloud-issues/) for more information.
+You can now:
+
+* View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../snyk-cloud-issues/).
+* Prioritize your vulnerabilities with cloud context.

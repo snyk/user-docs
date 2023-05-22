@@ -30,7 +30,7 @@ Changing this Organization display name does not change the URL displayed in the
 
 ### Organization API key
 
-[Service accounts](../../enterprise-setup/service-accounts.md) require an API key (token) to substitute for standard user credentials. Click **Manage Service accounts** to set up details for these accounts.
+[Service accounts](../service-accounts.md) require an API key (token) to substitute for standard user credentials. Click **Manage Service accounts** to set up details for these accounts.
 
 ### Organization ID
 

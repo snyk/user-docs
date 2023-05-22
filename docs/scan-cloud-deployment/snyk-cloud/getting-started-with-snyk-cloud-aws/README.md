@@ -1,6 +1,6 @@
-# Getting started with Snyk Cloud: AWS
+# AWS Integration
 
-Snyk Cloud scans the infrastructure configuration in your [Amazon Web Services (AWS)](https://aws.amazon.com/) provider account and detects misconfigurations that can lead to vulnerabilities.
+Snyk integrates with your [Amazon Web Services (AWS)](https://aws.amazon.com/) account to find issues in your cloud configurations, and to generate cloud context to help you prioritize your vulnerabilities.
 
 You can onboard an AWS account to Snyk using the following methods:
 
@@ -9,7 +9,7 @@ You can onboard an AWS account to Snyk using the following methods:
 
 ## Prerequisites
 
-To start using Snyk Cloud, you need the following:
+To setup an AWS integration, you need the following:
 
 * A Snyk Enterprise [plan](https://snyk.io/plans/)
 * A new Snyk Organization, with appropriate feature flags assigned by your Snyk contact

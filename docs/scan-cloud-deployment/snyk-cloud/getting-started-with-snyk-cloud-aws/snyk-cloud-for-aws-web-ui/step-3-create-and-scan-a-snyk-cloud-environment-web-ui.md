@@ -1,11 +1,11 @@
-# Step 3: Create and scan a Snyk Cloud Environment (Web UI)
+# Step 3: Create and scan a Cloud Environment (Web UI)
 
 {% hint style="info" %}
 **Recap**\
-You have created the Snyk Cloud IAM role. Now you can create and scan a Snyk Cloud Environment.
+You have created the Snyk IAM role. Now you can create and scan a Cloud Environment.
 {% endhint %}
 
-To create and scan a Snyk Cloud Environment, you must provide the role’s Amazon Resource Name (ARN). Then you can finish onboarding the environment.
+To create and scan a Cloud Environment, you must provide the role’s Amazon Resource Name (ARN). Then you can finish onboarding the environment.
 
 ## Find the role ARN
 
@@ -59,4 +59,7 @@ arn:aws:iam::123412341234:role/snyk-cloud-role
 
 ### What's next?
 
-You can now view misconfiguration issues in the Snyk Web UI. See [Snyk Cloud issues](../../snyk-cloud-issues/) for more information.
+You can now:
+
+* View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../snyk-cloud-issues/).
+* Prioritize your vulnerabilities with cloud context.

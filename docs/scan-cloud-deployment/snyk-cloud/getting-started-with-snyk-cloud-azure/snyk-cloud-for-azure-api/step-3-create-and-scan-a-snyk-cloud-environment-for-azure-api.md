@@ -1,15 +1,15 @@
-# Step 3: Create and scan a Snyk Cloud Environment for Azure (API)
+# Step 3: Create and scan a Cloud Environment for Azure (API)
 
 {% hint style="info" %}
 **Recap**\
-You have created the Azure app registration, federated identity credential, and service principal for Snyk Cloud. Now you can create and scan a Snyk Cloud Environment.
+You have created the Azure app registration, federated identity credential, and service principal for Snyk. Now you can create and scan a Cloud Environment.
 {% endhint %}
 
-To send a request to the Snyk API to create and scan an Azure Snyk Cloud Environment, you must provide the subscription ID, tenant ID, and application ID in the API request body.
+To send a request to the Snyk API to create and scan an Azure Cloud Environment, you must provide the subscription ID, tenant ID, and application ID in the API request body.
 
 ## Send the Snyk API request
 
-Send a request to the Snyk API in the format below to create the Snyk Cloud Environment:
+Send a request to the Snyk API in the format below to create the Cloud Environment:
 
 ```
 curl -X POST \
@@ -37,7 +37,7 @@ The example above uses [curl](https://curl.se/), but you can use any API client,
 
 ## Understand the API response
 
-The response is a JSON document containing details about your newly created Snyk Cloud Environment. For example:
+The response is a JSON document containing details about your newly created Cloud Environment. For example:
 
 ```json
 {
@@ -86,8 +86,11 @@ Note: the `data.attributes.status` field in the JSON output is set to `in_progre
 
 To check if your scan is finished, see [Check if the scan is finished](https://docs.snyk.io/products/snyk-cloud/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment#check-if-the-scan-is-finished).
 
-To manually re-scan an environment, see [Scan a Snyk Cloud Environment](../../scan-a-snyk-cloud-environment.md).
+To manually re-scan an environment, see [Scan a Cloud Environment](../../scan-a-snyk-cloud-environment.md).
 
 ## What's next?
 
-You can now view misconfiguration issues in the API or Snyk Web UI. See [Snyk Cloud issues](../../snyk-cloud-issues/) for more information.
+You can now:
+
+* View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../snyk-cloud-issues/).
+* Prioritize your vulnerabilities with cloud context.

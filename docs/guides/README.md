@@ -9,9 +9,9 @@ These guides provide best practices for getting started, implementing, and adopt
 
 ### Snyk rollout: larger teams or businesses
 
-* [Getting started with Snyk: Enterprise plan](../enterprise-setup/getting-started-with-snyk-enterprise-plan.md)
-* [Preparing for implementation: Enterprise plan](../enterprise-setup/preparing-for-implementation-enterprise-plan.md)
-* [Upgrading to Enterprise Plan](../enterprise-setup/upgrading-to-enterprise-plan.md)
+* [Getting started with Snyk: Enterprise plan](getting-started-with-snyk-enterprise-plan.md)
+* [Preparing for implementation: Enterprise plan](preparing-for-implementation-enterprise-plan.md)
+* [Upgrading to Enterprise Plan](upgrading-to-enterprise-plan.md)
 
 ### Snyk on your tech stack
 

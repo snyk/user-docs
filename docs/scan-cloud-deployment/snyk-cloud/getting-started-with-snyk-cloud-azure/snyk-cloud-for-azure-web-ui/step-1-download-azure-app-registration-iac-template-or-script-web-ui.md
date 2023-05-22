@@ -1,6 +1,6 @@
 # Step 1: Download Azure app registration IaC template or script (Web UI)
 
-Before you can create a Snyk Cloud Environment for an Azure subscription, you must **download** a Terraform infrastructure as code (IaC) template or Azure CLI Bash script declaring the following resources:
+Before you can create a Cloud Environment for an Azure subscription, you must **download** a Terraform infrastructure as code (IaC) template or Azure CLI Bash script declaring the following resources:
 
 * [An Active Directory (AD) application registration](https://learn.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#application-registration)
 * [A federated identity credential](https://learn.microsoft.com/en-us/azure/active-directory/develop/workload-identity-federation)
@@ -23,7 +23,7 @@ Both methods create the same infrastructure, so pick the method you are most com
 You can now proceed to [Step 2: Create the Azure AD app registration](step-2-create-the-azure-ad-app-registration.md).
 
 {% hint style="info" %}
-You can also add a cloud environment from **Organization Settings (cog icon) > Cloud environments**. See [View Snyk Cloud Environments](../../view-snyk-cloud-environments.md).
+You can also add a Cloud environment from **Organization Settings (cog icon) > Cloud environments**. See [View Environments](../../view-snyk-cloud-environments.md).
 {% endhint %}
 
 ## What's next?

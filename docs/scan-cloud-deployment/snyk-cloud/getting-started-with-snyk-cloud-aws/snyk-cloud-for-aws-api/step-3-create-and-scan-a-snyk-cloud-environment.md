@@ -1,11 +1,11 @@
-# Step 3: Create and scan a Snyk Cloud Environment (API)
+# Step 3: Create and scan a Cloud Environment (API)
 
 {% hint style="info" %}
 **Recap**\
-You have created the Snyk Cloud IAM role. Now you can create and scan a Snyk Cloud Environment.
+You have created the Snyk Cloud IAM role. Now you can create and scan a Cloud Environment.
 {% endhint %}
 
-To send a request to the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/environments) to create and scan a Snyk Cloud Environment, you must provide the role’s Amazon Resource Name (ARN) in the API request body.
+To send a request to the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/environments) to create and scan a Cloud Environment, you must provide the role’s Amazon Resource Name (ARN) in the API request body.
 
 ## Find the role ARN
 
@@ -13,7 +13,7 @@ Follow the steps in [Find the role ARN](../snyk-cloud-for-aws-web-ui/step-3-crea
 
 ## Send the Snyk API request
 
-After you have the role ARN, send a request to the Snyk API in the format below to create the Snyk Cloud Environment:
+After you have the role ARN, send a request to the Snyk API in the format below to create the Cloud Environment:
 
 ```
 curl -X POST \
@@ -39,7 +39,7 @@ The example above uses [curl](https://curl.se/), but you can use any API client,
 
 ## Understand the API response
 
-The response is a JSON document containing details about your newly created Snyk Cloud Environment; for example:
+The response is a JSON document containing details about your newly created Cloud Environment; for example:
 
 ```json
 {
@@ -96,8 +96,11 @@ curl -X GET \
 
 If the `data.attributes.status` field in the JSON output is set to `success`, Snyk has finished scanning your environment.
 
-To re-scan an environment, see [Scan a Snyk Cloud Environment](../../scan-a-snyk-cloud-environment.md).
+To re-scan an environment, see [Scan a Cloud Environment](../../scan-a-snyk-cloud-environment.md).
 
 ## What's next?
 
-You can now view misconfiguration issues in the Snyk Web UI. See [Snyk Cloud issues](../../snyk-cloud-issues/) for more information.
+You can now:
+
+* View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../snyk-cloud-issues/).
+* Prioritize your vulnerabilities with cloud context.

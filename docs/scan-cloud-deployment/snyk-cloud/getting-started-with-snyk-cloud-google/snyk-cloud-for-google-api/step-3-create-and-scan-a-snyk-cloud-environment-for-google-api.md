@@ -1,15 +1,15 @@
-# Step 3: Create and scan a Snyk Cloud Environment for Google (API)
+# Step 3: Create and scan a Cloud Environment for Google (API)
 
 {% hint style="info" %}
 **Recap**\
-You have created the Google service account for Snyk Cloud. Now you can create and scan a Snyk Cloud Environment.
+You have created the Google service account for Snyk. Now you can create and scan a Cloud Environment.
 {% endhint %}
 
-To send a request to the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/environments) to create and scan a Snyk Cloud Environment, you must provide the **Google service account's email address** and your **project ID** in the API request body.
+To send a request to the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/environments) to create and scan a Cloud Environment, you must provide the **Google service account's email address** and your **project ID** in the API request body.
 
 ## Send the Snyk API request
 
-Send a request to the Snyk API in the format below to create the Snyk Cloud Environment:
+Send a request to the Snyk API in the format below to create the Cloud Environment:
 
 ```
 curl -X POST \
@@ -35,7 +35,7 @@ The example above uses [curl](https://curl.se/), but you can use any API client,
 
 ## Understand the API response
 
-The response is a JSON document containing details about your newly created Snyk Cloud Environment. For example:
+The response is a JSON document containing details about your newly created Cloud Environment. For example:
 
 ```json
 {
@@ -84,7 +84,7 @@ Note: the `data.attributes.status` field in the JSON output is set to `in_progre
 
 To check if your scan is finished, see [Check if the scan is finished](https://docs.snyk.io/products/snyk-cloud/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment#check-if-the-scan-is-finished).
 
-To re-scan an environment, see [Scan a Snyk Cloud Environment](https://docs.snyk.io/products/snyk-cloud/scan-a-snyk-cloud-environment).
+To re-scan an environment, see [Scan a Cloud Environment](https://docs.snyk.io/products/snyk-cloud/scan-a-snyk-cloud-environment).
 
 {% hint style="info" %}
 It can take Google 60 seconds or more to create your service account. If you try to create an environment immediately after you create a service account, and you receive a "could not validate credentials" error, wait at least 60 seconds and try again.
@@ -92,4 +92,7 @@ It can take Google 60 seconds or more to create your service account. If you try
 
 ## What's next?
 
-You can now view misconfiguration issues in the Snyk Web UI. See [Snyk Cloud issues](https://docs.snyk.io/products/snyk-cloud/snyk-cloud-issues) for more information.
+You can now:
+
+* View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../snyk-cloud-issues/).
+* Prioritize your vulnerabilities with cloud context.

@@ -9,4 +9,4 @@ The process to create the Azure Active Directory app registration, federated ide
 
 ### What's next?
 
-You can now proceed to [Step 3: Create and scan a Snyk Cloud Environment for Azure (API)](step-3-create-and-scan-a-snyk-cloud-environment-for-azure-api.md).
+You can now proceed to [Step 3: Create and scan a Cloud Environment for Azure (API)](step-3-create-and-scan-a-snyk-cloud-environment-for-azure-api.md).

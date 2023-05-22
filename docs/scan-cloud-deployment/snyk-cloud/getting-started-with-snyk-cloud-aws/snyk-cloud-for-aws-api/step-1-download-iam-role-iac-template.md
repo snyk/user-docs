@@ -1,6 +1,6 @@
 # Step 1: Download IAM role IaC template (API)
 
-Before you can create a Snyk Cloud Environment, you must download an Infrastructure as Code (IaC) template declaring a read-only **Identity & Access Management** (IAM) role that Snyk can assume to scan the configuration of resources in your Amazon Web Services (AWS) account.
+Before you can create a Cloud Environment, you must download an Infrastructure as Code (IaC) template declaring a read-only **Identity & Access Management** (IAM) role that Snyk can assume to scan the configuration of resources in your Amazon Web Services (AWS) account.
 
 You will use this IaC template to provision the role in [Step 2: Create the Snyk IAM role](../snyk-cloud-for-aws-web-ui/step-2-create-the-snyk-iam-role.md).
 
@@ -117,4 +117,4 @@ In **CloudFormation**, the role name is on line 7:
 
 ## What's next?
 
-The next step is to create the IAM role and policy for Snyk Cloud using the template you downloaded.
+The next step is to create the IAM role and policy for Snyk using the template you downloaded.

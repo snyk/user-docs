@@ -1,6 +1,6 @@
 # Step 1: Download Azure app registration IaC template or script (API)
 
-Before you can create a Snyk Cloud Environment for an Azure subscription, you must **download** a Terraform infrastructure as code (IaC) template or Azure CLI Bash script declaring the following resources:
+Before you can create a Cloud Environment for an Azure subscription, you must **download** a Terraform infrastructure as code (IaC) template or Azure CLI Bash script declaring the following resources:
 
 * [An Active Directory (AD) application registration](https://learn.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#application-registration)
 * [A federated identity credential](https://learn.microsoft.com/en-us/azure/active-directory/develop/workload-identity-federation)
@@ -111,4 +111,4 @@ Before you can use the template to provision the resources, you need to **unesca
 
 ## What's next?
 
-The next step is to create the Azure AD app registration, federated identity credential, and service principal for Snyk Cloud using the template or script you downloaded.
+The next step is to create the Azure AD app registration, federated identity credential, and service principal for Snyk using the template or script you downloaded.

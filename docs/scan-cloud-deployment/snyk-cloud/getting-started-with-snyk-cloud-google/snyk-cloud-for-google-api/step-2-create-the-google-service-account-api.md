@@ -9,4 +9,4 @@ The process to create the Google service account is the same whether you're usin
 
 ## What's next?
 
-You can now proceed to [Step 3: Create and scan a Snyk Cloud Environment for Google (API)](step-3-create-and-scan-a-snyk-cloud-environment-for-google-api.md).
+You can now proceed to [Step 3: Create and scan a Cloud Environment for Google (API)](step-3-create-and-scan-a-snyk-cloud-environment-for-google-api.md).
