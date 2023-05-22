@@ -16,7 +16,7 @@ To enable and configure your hosted container registry, contact our support team
 
 The Broker Client provides the Agent with the connection details. The Agent uses these details to connect to the container registry, scan the images, and send the scan results through the brokered communication using callbacks. The brokered communication happens when a Broker Client connects (using your Broker ID) to a Broker server that runs within the Snyk environment.
 
-See the [Snyk Broker Container Registry Agent](../snyk-admin/snyk-broker/snyk-broker-container-registry-agent/) documentation for more details.
+See the [Snyk Broker Container Registry Agent](../enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/) documentation for more details.
 
 <figure><img src="../.gitbook/assets/mceclip0-8-.png" alt="High-level architecture of the Snyk Broker Container Registry Agent"><figcaption><p>High-level architecture of the Snyk Broker Container Registry Agent</p></figcaption></figure>
 

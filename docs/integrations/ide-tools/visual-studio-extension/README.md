@@ -60,7 +60,7 @@ Search for _Snyk_ and select **Download** to download the Snyk Security - Code a
 
 After you install, use Snyk through the **Extensions > Snyk** menu. (On Visual Studio versions older than 2019, Snyk is part of the top menu bar).
 
-<figure><img src="../../../.gitbook/assets/image (249).png" alt="Snyk extensions menu"><figcaption><p>Snyk extensions menu</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (351) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk extensions menu"><figcaption><p>Snyk extensions menu</p></figcaption></figure>
 
 You can also open the Snyk tool window using **View > Other Windows > Snyk**_._
 
