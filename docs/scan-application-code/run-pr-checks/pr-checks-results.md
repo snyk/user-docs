@@ -82,6 +82,10 @@ The issue is marked as **Passed** and shows up as **Skipped** in the PR Checks c
 
 <figure><img src="../../.gitbook/assets/issue_marked_as_successful_PR_checks.png" alt="PR Checks information in GitHub with issue marked as Skipped."><figcaption><p>PR Checks information in GitHub with issues marked as Skipped</p></figcaption></figure>
 
+### (Optional) Re-run PR Checks results
+
+To re-run PR Checks results, close and re-open the pull request in your connected Git repository (for example, GitHub).
+
 ### What's next?
 
 To learn from an end-to-end example in Bitbucket, see the following Snyk Training course: [Use Snyk to block builds in Bitbucket](https://training.snyk.io/courses/default-snyk-test-bb).
