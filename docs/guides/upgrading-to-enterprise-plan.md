@@ -12,12 +12,12 @@ For full information about how to implement Snyk on the Enterprise plan, read:
 Snyk Enterprise features include:
 
 * [Snyk Group with multiple orgs](../snyk-admin/manage-groups-and-organizations/introduction-to-groups.md)
-* [Single Sign-On](../snyk-admin/set-up-single-sign-on-sso-for-authentication/)
-* [Service accounts](../snyk-admin/service-accounts.md)
+* [Single Sign-On](../enterprise-setup/set-up-single-sign-on-sso-for-authentication/)
+* [Service accounts](../enterprise-setup/service-accounts.md)
 * [Rich API](../snyk-api-info/)
 * [Reports](../manage-issues/reporting/legacy-reports/)
 * [Security policy management](../manage-issues/policies/security-policies/)
-* [Snyk Broker](../snyk-admin/snyk-broker/)
+* [Snyk Broker](../enterprise-setup/snyk-broker/)
 * [GitHub Enterprise integration](../integrations/git-repository-scm-integrations/github-enterprise-integration.md)
 
 ### Upgrade to Enterprise checklist
@@ -118,13 +118,13 @@ Users can authenticate into their Snyk accounts in several ways, such as with a 
 If using SSO, after you set it up, you'll need to remove any duplicate users from social login accounts (users who have logged in with other methods than SSO).
 {% endhint %}
 
-See [Setting up Single Sign-On (SSO) for authentication](../snyk-admin/set-up-single-sign-on-sso-for-authentication/) for more details on steps for using your identity provider to authenticate and provision Snyk to your teams.
+See [Setting up Single Sign-On (SSO) for authentication](../enterprise-setup/set-up-single-sign-on-sso-for-authentication/) for more details on steps for using your identity provider to authenticate and provision Snyk to your teams.
 
 See the [SSO, authentication and user provisions](https://training.snyk.io/courses/sso) training course for more details.
 
 ### Using Service accounts
 
-[Service accounts](../snyk-admin/service-accounts.md) allow you to better scale and automate.
+[Service accounts](../enterprise-setup/service-accounts.md) allow you to better scale and automate.
 
 * If you use CI/CD (using a [CI/CD integration](../integrations/ci-cd-integrations/) or the [Snyk CLI](../snyk-cli/)), we recommend you use a service account.
 * If you use an IDE plugin or the CLI to test in your local environment, we recommend you use personal access tokens.
@@ -145,7 +145,7 @@ Use the [Snyk API import tool](../snyk-api-info/other-tools/tool-snyk-api-import
 
 Snyk reports offer data and analytics across all of your projects, displaying historical and aggregated data about projects, issues, dependencies, and licenses.
 
-See [Getting started with Snyk Reports](../manage-issues/reporting/getting-started-with-snyk-reports.md).
+See [Getting started with Snyk Reports](../manage-issues/reports/next-gen-reporting/getting-started-with-snyk-reports.md).
 
 ### Security policy management
 
@@ -155,7 +155,7 @@ See [Getting started with security policies](broken-reference).
 
 ### Remote code repositories
 
-If you have onprem repositories, you can scan them with Snyk using [Snyk Broker](../snyk-admin/snyk-broker/).
+If you have onprem repositories, you can scan them with Snyk using [Snyk Broker](../enterprise-setup/snyk-broker/).
 
 ### GitHub Enterprise integration
 

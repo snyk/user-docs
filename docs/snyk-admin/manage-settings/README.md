@@ -13,9 +13,9 @@ At the Group level, select **Settings** to view admin settings:
 </div>
 
 * [General](group-general-settings.md)
-* [SSO](../set-up-single-sign-on-sso-for-authentication/)
+* [SSO](../../enterprise-setup/set-up-single-sign-on-sso-for-authentication/)
 * [Member Roles](../manage-users-and-permissions/member-roles.md)
-* [Service Accounts](../service-accounts.md)
+* [Service Accounts](../../enterprise-setup/service-accounts.md)
 * [Notifications](../manage-notifications.md)
 * [Usage](https://docs.snyk.io/user-and-group-management/managing-settings/usage-page-details)
 * [Your Plan and Billing](your-plan-and-billing.md)
@@ -34,7 +34,7 @@ At the Organization level, select **Settings** to manage settings:
 </div>
 
 * [General](organization-general-settings.md)
-* [Service Accounts](../service-accounts.md)
+* [Service Accounts](../../enterprise-setup/service-accounts.md)
 * [Integrations](https://docs.snyk.io/integrations)
 * [Languages](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/)
 * [Snyk Code](https://docs.snyk.io/snyk-code)

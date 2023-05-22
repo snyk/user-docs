@@ -28,28 +28,16 @@ For definitions of the associated permissions per role, see [Managing permission
 
 {% hint style="info" %}
 **Feature availability**\
-Group administrators and collaborators are available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.
+Group administrators and collaborators are available with Enterprise plans. See [pricing plans](https://snyk.io/plans/) for more details.&#x20;
 {% endhint %}
 
-## Management tools
-
-Snyk offers a wide range of tools to manage Groups, Organizations, and users.
-
-#### Enable authentication
-
-Snyk offers API tokens to enable authentication to service accounts or third party tools; see [Managing authentication](manage-authentication/).
-
-#### Set up Single Sign-On (SSO)
-
-SSO makes authentication and provisioning simple; see [Setting up Single Sign-On (SSO) for authentication](set-up-single-sign-on-sso-for-authentication/).
-
-<figure><img src="../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Single Sign-On"><figcaption><p>Single Sign-On</p></figcaption></figure>
+Snyk offers a wide range of tools to manage Groups, Organizations, and user
 
 #### Manage users and permissions
 
 You can manage users and permissions in your groups; See [Managing users & permissions](manage-users-and-permissions/).
 
-<figure><img src="../.gitbook/assets/image (228) (1) (1) (1).png" alt="Manage users and permissions"><figcaption><p>Manage users and permissions</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (245) (1) (1).png" alt="Manage users and permissions"><figcaption><p>Manage users and permissions</p></figcaption></figure>
 
 #### Manage Groups and Organizations
 
@@ -59,7 +47,7 @@ Learn how Snyk groups and organizations help keep cross-team collaboration seaml
 
 You can manage email notifications, for yourself and your organization. See [Managing notifications](manage-notifications.md).
 
-<figure><img src="../.gitbook/assets/image (510) (1).png" alt="Manage email notifications"><figcaption><p>Manage email notifications</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (2).png" alt="Manage email notifications"><figcaption><p>Manage email notifications</p></figcaption></figure>
 
 #### Manage settings
 

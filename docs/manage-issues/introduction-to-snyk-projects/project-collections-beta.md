@@ -37,7 +37,7 @@ In addition, more filter options are available when you apply **Group by none**.
 1. On the right-hand side of the Project listing page beneath the **View Import Log** button, select **Group by none** from the drop-down list.
 2. Click the drop-down next to the **FILTERS** drop-down, and click **Create new view**. If you already have filters selected, you can click **Save Changes** next to the drop-down and follow the next step.
 
-<figure><img src="../../.gitbook/assets/image (393).png" alt="Create a new project view"><figcaption><p>Create a new Project view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (481).png" alt="Create a new project view"><figcaption><p>Create a new Project view</p></figcaption></figure>
 
 3. Enter a name for your Project view in the available field, then click **Create view.**
 
@@ -56,7 +56,7 @@ Your new view is created and is automatically selected. You can click the icon n
 
 1. From the Project views drop-down, select the Project view that you would like to share with another member of your Organization.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt="Select the Project view that you want to share"><figcaption><p>Select the Project view that you want to share</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (6).png" alt="Select the Project view that you want to share"><figcaption><p>Select the Project view that you want to share</p></figcaption></figure>
 
 2. Once the Project view has loaded on the screen, copy the URL of the page. This URL can be shared with anyone in your Organization.
 
@@ -71,7 +71,7 @@ The name of the view will not appear in the Project views drop-down, and other u
 1. From the Project views drop-down, select the Project view for which you would like to view the report.
 2. Next to the **FILTERS** drop-down, click the **See report for these projects** button.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt="Generate a report for your Project view by clicking the See report for these projects button"><figcaption><p>Generate a report for your Project view by clicking the See report for these projects button</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (3) (1).png" alt="Generate a report for your Project view by clicking the See report for these projects button"><figcaption><p>Generate a report for your Project view by clicking the See report for these projects button</p></figcaption></figure>
 
 The **Reports** page loads and shows a report of the Projects in your Project view.
 

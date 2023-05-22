@@ -3,7 +3,7 @@
 Snyk's GitLab integration supports GitLab versions 9.5 and above (API v4).
 
 {% hint style="info" %}
-There are two ways to integrate Snyk with GitLab, using Snyk Broker or directly. Snyk Broker enables customers to integrate from within their private network. For details see the [Snyk Broker](../../snyk-admin/snyk-broker/) docs.
+There are two ways to integrate Snyk with GitLab, using Snyk Broker or directly. Snyk Broker enables customers to integrate from within their private network. For details see the [Snyk Broker](../../enterprise-setup/snyk-broker/) docs.
 {% endhint %}
 
 ## Snyk GitLab integration features
@@ -24,7 +24,7 @@ The GitLab integration allows you to:
 {% hint style="info" %}
 Scanning of self-managed and self-hosted source code on GitLab Enterprise is available with the Snyk Enterprise plan. For details, see[ the Snyk plans and pricing page](https://snyk.io/plans).
 
-This integration works only with GitLab instances that are publicly reachable not on a private network). [Snyk Broker](../../snyk-admin/snyk-broker/) is required for private network instances.
+This integration works only with GitLab instances that are publicly reachable not on a private network). [Snyk Broker](../../enterprise-setup/snyk-broker/) is required for private network instances.
 {% endhint %}
 
 **Steps:**

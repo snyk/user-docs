@@ -26,9 +26,9 @@ This feature is only available for Enterprise plans.
 
 During the 14-day Business Plan (legacy) trial period, you will have limited or no access to the following features:
 
-* [**Single Sign-On (SSO)**](../snyk-admin/set-up-single-sign-on-sso-for-authentication/)**:** Not available.
+* [**Single Sign-On (SSO)**](../enterprise-setup/set-up-single-sign-on-sso-for-authentication/)**:** Not available.
 * [**Custom Project Tags**](../manage-issues/introduction-to-snyk-projects/project-tags.md)**:** Not available.
-* [**Service Accounts**](../snyk-admin/service-accounts.md)**:** Not available.
+* [**Service Accounts**](../enterprise-setup/service-accounts.md)**:** Not available.
 * [**Group / Multiple Orgs**](../snyk-admin/manage-groups-and-organizations/)**:** Limited to one group and one org.
 
 {% hint style="info" %}

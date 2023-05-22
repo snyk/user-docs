@@ -2,11 +2,9 @@
 
 Use these functions for Snyk administration.
 
-### Set up Snyk
-
-* [Manage authentication](manage-authentication/)
-* [Set up Single Sign-On](set-up-single-sign-on-sso-for-authentication/)
-* [Use Snyk Broker](snyk-broker/)
+{% hint style="info" %}
+See [Enterprise setup](../enterprise-setup/) for larger-scale Snyk setup.
+{% endhint %}
 
 ### Manage Snyk system
 
@@ -15,7 +13,6 @@ Use these functions for Snyk administration.
 
 ### Other functions
 
-* [Service accounts](service-accounts.md)
 * [Manage notifications](manage-notifications.md)
 * [Manage settings](manage-settings/)
 
