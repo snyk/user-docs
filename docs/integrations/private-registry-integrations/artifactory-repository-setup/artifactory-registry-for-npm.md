@@ -14,7 +14,7 @@ You can add configuration to tell Snyk where your private Artifactory Node.js pa
 This is the same information you would normally add in your `.yarnrc` or `.npmrc`
 
 {% hint style="info" %}
-Note that this guide is relevant for Snyk UI integrations only. The CLI already supports Ylarn and npm projects with private Artifactory registries.
+Note that this guide is relevant for Snyk UI integrations only. The CLI already supports Yarn and npm projects with private Artifactory registries.
 {% endhint %}
 
 ## JavaScript language settings
