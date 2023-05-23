@@ -14,12 +14,12 @@ Both methods create the same infrastructure, so pick the method you are most com
 
 ## Retrieve the IaC template or script
 
-To retrieve the IaC template from the Snyk API, you need the API token for a Snyk Organization-level [service account](https://docs.snyk.io/features/user-and-group-management/structure-account-for-high-application-performance/service-accounts#set-up-a-service-account) with an Org Admin role.
+To retrieve the IaC template from the Snyk API, you need the API token for a Snyk Organization-level [service account](../../../../enterprise-setup/service-accounts.md) with an Org Admin role.
 
 You also need the subscription and tenant IDs of the Azure subscription you are onboarding. You can find them using the method [described in the Azure documentation](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-tenant-id).
 
 1. In the [Snyk Web UI](https://app.snyk.io/), navigate to **Settings (cog icon) > General > Organization ID** and copy your Organization ID.
-2. Send a request to the Snyk API in the below format, replacing `INPUT-TYPE` with `tf` for Terraform or `bash` for Bash:
+2. Send a request to the Snyk API in the following format, replacing `INPUT-TYPE` with `tf` for Terraform or `bash` for Bash:
 
 ```
 curl -X POST \
@@ -41,14 +41,14 @@ curl -X POST \
 ```
 
 {% hint style="info" %}
-The example above uses [curl](https://curl.se/), but you can use any API client, such as [Postman](https://www.postman.com/) or [HTTPie](https://httpie.io/).
+The preceding example is [curl](https://curl.se/), but you can use any API client, such as [Postman](https://www.postman.com/) or [HTTPie](https://httpie.io/).
 {% endhint %}
 
 If you plan to use the [Azure Cloud Shell](https://portal.azure.com/#cloudshell/) to execute the Bash script instead of running the Azure CLI locally, execute the curl command above in the Cloud Shell.
 
 ## Understand the API response
 
-The response is a JSON document like the ones below (trimmed for length).
+The response is a JSON document like the ones that follow (trimmed for length).
 
 Example response with Terraform configuration:
 
@@ -88,7 +88,7 @@ Example response with Bash script:
 
 ## Unescape the JSON
 
-The `data.attributes.data` field in the output above is an escaped JSON string containing the Terraform template or Bash script with the Azure AD app registration, federated identity credential, and service principal.
+The `data.attributes.data` field in the preceding output is an escaped JSON string containing the Terraform template or Bash script with the Azure AD app registration, federated identity credential, and service principal.
 
 Before you can use the template to provision the resources, you need to **unescape** the JSON. This can be accomplished in the following ways:
 
@@ -98,7 +98,7 @@ Before you can use the template to provision the resources, you need to **unesca
 ### Use `jq`
 
 1. Download and install [jq](https://stedolan.github.io/jq/download/).
-2. When submitting the API request during template retrieval, append the following to the end of the command:\
+2. When you are submitting the API request during template retrieval, append the following to the end of the command:\
    `| jq -r .data.attributes.data > snyk_azure_permissions`\
    This will place the properly-formatted template into the file `snyk_azure_permissions` in your current working directory.
 3. Rename the file with a `.tf` (Terraform) or `.sh` (Bash) extension.

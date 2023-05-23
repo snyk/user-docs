@@ -202,7 +202,7 @@
         * [Step 1: Download IAM role IaC template (API)](scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-1-download-iam-role-iac-template.md)
         * [Step 2: Create the Snyk IAM role (API)](scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-2-create-the-snyk-iam-role-api.md)
         * [Step 3: Create and scan a Cloud Environment (API)](scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment.md)
-    * [Azure Integration](scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-azure/README.md)
+    * [Azure integration for cloud configurations](scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-azure/README.md)
       * [Azure Integration: Web UI](scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-azure/snyk-cloud-for-azure-web-ui/README.md)
         * [Step 1: Download Azure app registration IaC template or script (Web UI)](scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-azure/snyk-cloud-for-azure-web-ui/step-1-download-azure-app-registration-iac-template-or-script-web-ui.md)
         * [Step 2: Create the Azure AD app registration](scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-azure/snyk-cloud-for-azure-web-ui/step-2-create-the-azure-ad-app-registration.md)

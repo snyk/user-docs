@@ -13,17 +13,17 @@ Additionally, Snyk has a security feature that locks the federated credential fo
 
 You can create the app registration, federated identity credential, and service principal using one of the following tools, according to the type of file you downloaded from Snyk:
 
-* [Terraform:](step-2-create-the-azure-ad-app-registration.md#terraform) Terraform CLI
-* [Bash:](step-2-create-the-azure-ad-app-registration.md#azure-cli) Azure CLI, installed locally or accessed via Cloud Shell
+* [Terraform](step-2-create-the-azure-ad-app-registration.md#create-azure-app-registration-infrastructure-using-terraform): Terraform CLI
+* [Bash](step-2-create-the-azure-ad-app-registration.md#create-azure-app-registration-infrastructure-using-the-azure-cli): Azure CLI, installed locally or accessed via Cloud Shell
 
-### Terraform
+### Create Azure app registration infrastructure using Terraform
 
 {% hint style="info" %}
 Before you use the [Terraform CLI](https://www.terraform.io/downloads), ensure you [configure it to use your Azure credentials](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs#authenticating-to-azure-active-directory). Your user must have either the Application Administrator or Global Administrator directory role. This is required to create the [federated identity credential](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/application\_federated\_identity\_credential#api-permissions) and [service principal](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/service\_principal) via Terraform.
 {% endhint %}
 
 1. In your terminal, navigate to the directory containing the Terraform file you downloaded (named `snyk-permissions-azure.tf` if downloaded from the Snyk Web UI).
-2. Using the Terraform CLI, initialize the Terraform project:
+2. Using the Terraform CLI, initialize the Terraform Project:
 
 ```
 terraform init
@@ -37,7 +37,7 @@ terraform apply
 
 4. Enter `yes` when Terraform asks if you want to perform the actions.
 
-Terraform then provisions the infrastructure. When it is finished, you'll see the following output:
+Terraform then provisions the infrastructure. When it is finished, you will see the following output:
 
 ```
 Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
@@ -49,10 +49,10 @@ application_id = 12345678-9012-3456-7890-12345678abcd
 
 Copy the application ID for use in the next step.
 
-### Azure CLI
+### Create Azure app registration infrastructure using the Azure CLI
 
 {% hint style="info" %}
-If you use the [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) locally, ensure you have logged in with [`az login`](https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli) first. This step is not necessary when using the CLI in the [Azure Cloud Shell](https://portal.azure.com/#cloudshell/).
+If you use the [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) locally, ensure you have logged in with [`az login`](https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli) first. This step is not necessary when you are using the CLI in the [Azure Cloud Shell](https://portal.azure.com/#cloudshell/).
 {% endhint %}
 
 1. In your terminal or in the [Cloud Shell](https://portal.azure.com/#cloudshell/), navigate to the directory containing your `.sh` file.
@@ -70,9 +70,7 @@ chmod 755 snyk-permissions-azure.sh
 
 The Azure CLI then creates the AD app registration, federated identity credential, and service principal. When it is finished, you will see JSON output with information about the created infrastructure.
 
-#### Copy application ID
-
-Take note of the last item in the output:
+**Copy the application ID,** the last item in the output:
 
 ```json
 {

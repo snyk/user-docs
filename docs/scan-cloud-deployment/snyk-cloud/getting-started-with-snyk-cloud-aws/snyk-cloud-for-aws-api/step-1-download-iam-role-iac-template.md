@@ -29,7 +29,7 @@ curl -X POST \
 ```
 
 {% hint style="info" %}
-The example above is [curl](https://curl.se/), but you can use any API client, such as [Postman](https://www.postman.com/) or [HTTPie](https://httpie.io/).
+The preceding example is [curl](https://curl.se/), but you can use any API client, such as [Postman](https://www.postman.com/) or [HTTPie](https://httpie.io/).
 {% endhint %}
 
 ## Understand the API response

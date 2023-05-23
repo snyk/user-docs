@@ -9,7 +9,7 @@ To send a request to the Snyk API to create and scan an Azure Cloud Environment,
 
 ## Send the Snyk API request
 
-Send a request to the Snyk API in the format below to create the Cloud Environment:
+Send a request to the Snyk API in the format that follows to create the Cloud Environment:
 
 ```
 curl -X POST \
@@ -32,7 +32,7 @@ curl -X POST \
 ```
 
 {% hint style="info" %}
-The example above uses [curl](https://curl.se/), but you can use any API client, such as [Postman](https://www.postman.com/) or [HTTPie](https://httpie.io/).
+The preceding example is [curl](https://curl.se/), but you can use any API client, such as [Postman](https://www.postman.com/) or [HTTPie](https://httpie.io/).
 {% endhint %}
 
 ## Understand the API response
@@ -82,15 +82,17 @@ The response is a JSON document containing details about your newly created Clou
 
 Snyk automatically triggers a scan when an environment is created.
 
-Note: the `data.attributes.status` field in the JSON output is set to `in_progress.` This means that Snyk has created your environment and has started scanning it.
+{% hint style="info" %}
+The `data.attributes.status` field in the JSON output is set to `in_progress.` This means that Snyk has created your environment and has started scanning it.
+{% endhint %}
 
-To check if your scan is finished, see [Check if the scan is finished](https://docs.snyk.io/products/snyk-cloud/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment#check-if-the-scan-is-finished).
+To check if your scan is finished, see [Check to see if the scan is finished](https://docs.snyk.io/integrations/cloud-platforms/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment#check-to-see-if-the-scan-is-finished).
 
 To manually re-scan an environment, see [Scan a Cloud Environment](../../scan-a-snyk-cloud-environment.md).
 
 ## What's next?
 
-You can now:
+You can now do the following:
 
 * View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../snyk-cloud-issues/).
 * Prioritize your vulnerabilities with cloud context.
