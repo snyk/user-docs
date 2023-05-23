@@ -4,7 +4,7 @@ Snyk integrates with your [Amazon Web Services (AWS)](https://aws.amazon.com/) a
 
 You can onboard an AWS account to Snyk using the following methods:
 
-* [Snyk Web UI](snyk-cloud-for-aws-web-ui/)
+* [Snyk Web UI](aws-integration-web-ui/)
 * [Snyk API](snyk-cloud-for-aws-api/)
 
 The following are **prerequisites to AWS integration**:

@@ -10,5 +10,5 @@ The steps follow to onboard an AWS account via the API:
 
 When you finish, you will be able to do the following:
 
-* View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../snyk-cloud-issues/).
+* View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-issues/).
 * Prioritize your vulnerabilities with cloud context.

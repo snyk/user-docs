@@ -13,6 +13,6 @@ Snyk Infrastructure as Code (IaC) supports the following environments and config
 
 Snyk Cloud supports the following providers:
 
-* [Amazon Web Services](snyk-cloud/getting-started-with-snyk-cloud-aws/)
-* [Azure](snyk-cloud/getting-started-with-snyk-cloud-azure/)
+* [Amazon Web Services](../integrations/cloud-platforms/aws-integration/)
+* [Azure](../integrations/cloud-platforms/azure-integration-for-cloud-configurations/)
 * [Google Cloud](https://docs.snyk.io/integrations/cloud-platforms/getting-started-with-snyk-cloud-google)

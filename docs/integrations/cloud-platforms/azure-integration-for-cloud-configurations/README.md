@@ -8,7 +8,7 @@ Snyk integrates with your [Microsoft Azure](https://azure.microsoft.com/en-us/) 
 
 You can onboard an Azure subscription to Snyk using the following methods:
 
-* [Snyk Web UI](snyk-cloud-for-azure-web-ui/)
+* [Snyk Web UI](azure-integration-web-ui/)
 * [Snyk API](snyk-cloud-for-azure-api/)
 
 ## Prerequisites for Azure integration for cloud configurations

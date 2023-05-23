@@ -9,7 +9,7 @@ To send a request to the [Snyk API endpoint Create New Environment](https://apid
 
 ## Find the role ARN
 
-Follow the steps in [Find the role ARN](../snyk-cloud-for-aws-web-ui/step-3-create-and-scan-a-snyk-cloud-environment-web-ui.md#find-the-role-arn) and then return here to see how to send the Snyk API request.
+Follow the steps in [Find the role ARN](../aws-integration-web-ui/step-3-create-and-scan-a-snyk-cloud-environment-web-ui.md#find-the-role-arn) and then return here to see how to send the Snyk API request.
 
 ## Send the Snyk API request
 
@@ -98,11 +98,11 @@ curl -X GET \
 
 If the `data.attributes.status` field in the JSON output is set to `success`, Snyk has finished scanning your environment.
 
-To re-scan an environment, see [Scan a Cloud Environment](../../scan-a-snyk-cloud-environment.md).
+To re-scan an environment, see [Scan a Cloud Environment](../../../../scan-cloud-deployment/snyk-cloud/scan-a-snyk-cloud-environment.md).
 
 ## What's next?
 
 You can now do the following:
 
-* View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../snyk-cloud-issues/).
+* View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-issues/).
 * Prioritize your vulnerabilities with cloud context.
