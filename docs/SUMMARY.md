@@ -211,7 +211,7 @@
         * [Step 1: Download Azure app registration IaC template or script (API)](integrations/cloud-platforms/azure-integration-for-cloud-configurations/snyk-cloud-for-azure-api/step-1-download-azure-app-registration-iac-template-or-script-api.md)
         * [Step 2: Create the Azure AD app registration (API)](integrations/cloud-platforms/azure-integration-for-cloud-configurations/snyk-cloud-for-azure-api/step-2-create-the-azure-ad-app-registration-api.md)
         * [Step 3: Create and scan a Cloud Environment for Azure (API)](integrations/cloud-platforms/azure-integration-for-cloud-configurations/snyk-cloud-for-azure-api/step-3-create-and-scan-a-snyk-cloud-environment-for-azure-api.md)
-    * [Google Cloud Integration](integrations/cloud-platforms/google-cloud-integration/README.md)
+    * [Google Cloud integration](integrations/cloud-platforms/google-cloud-integration/README.md)
       * [Google Cloud Integration: Web UI](integrations/cloud-platforms/google-cloud-integration/google-cloud-integration-web-ui/README.md)
         * [Step 1: Download service account IaC template (Web UI)](integrations/cloud-platforms/google-cloud-integration/google-cloud-integration-web-ui/step-1-download-service-account-iac-template-web-ui.md)
         * [Step 2: Create the Google service account (Web UI)](integrations/cloud-platforms/google-cloud-integration/google-cloud-integration-web-ui/step-2-create-the-google-service-account-api.md)
@@ -705,7 +705,7 @@
     * [Test public repositories before use](snyk-cli/test-for-vulnerabilities/test-public-repositories-before-use.md)
     * [CLI test results](snyk-cli/test-for-vulnerabilities/view-cli-test-results.md)
     * [Fix vulnerabilities using the Snyk CLI](snyk-cli/test-for-vulnerabilities/fix-vulnerabilities-using-the-snyk-cli.md)
-    * [Differences in Open Source vulnerability counts across environments](snyk-cli/test-for-vulnerabilities/differences-in-vulnerability-counts-across-environments.md)
+    *
   * [CLI commands and options summary](snyk-cli/cli-reference.md)
   * [CLI help](snyk-cli/commands/README.md)
     * [Auth](snyk-cli/commands/auth.md)

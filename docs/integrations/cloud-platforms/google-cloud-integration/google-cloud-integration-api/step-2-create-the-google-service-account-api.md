@@ -2,11 +2,11 @@
 
 {% hint style="info" %}
 **Recap**\
-You have downloaded the Terraform template declaring the [Google service account](https://cloud.google.com/iam/docs/service-accounts) for Snyk. Now you need to provision the infrastructure.
+You have downloaded the Terraform template declaring the [Google service account](https://cloud.google.com/iam/docs/service-accounts) for Snyk. Next, provision the infrastructure.
 {% endhint %}
 
-The process to create the Google service account is the same whether you're using the Snyk Web UI or Snyk API to onboard your Google project. Follow the instructions in [Step 2: Create the Google service account (Web UI)](../google-cloud-integration-web-ui/step-2-create-the-google-service-account-api.md), then return here to continue onboarding your project.
+The process to create the Google service account is the same whether you are using the Snyk Web UI or Snyk API to onboard your Google Project. Follow the instructions in [Step 2: Create the Google service account (Web UI)](../google-cloud-integration-web-ui/step-2-create-the-google-service-account-api.md), and then return here to continue onboarding your Project.
 
-## What's next?
+**What's next?**
 
 You can now proceed to [Step 3: Create and scan a Cloud Environment for Google (API)](step-3-create-and-scan-a-snyk-cloud-environment-for-google-api.md).

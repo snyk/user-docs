@@ -30,12 +30,12 @@ curl -X POST \
 ```
 
 {% hint style="info" %}
-The example above uses [curl](https://curl.se/), but you can use any API client, such as [Postman](https://www.postman.com/) or [HTTPie](https://httpie.io/).
+The preceding example is [curl](https://curl.se/), but you can use any API client, such as [Postman](https://www.postman.com/) or [HTTPie](https://httpie.io/).
 {% endhint %}
 
 ## Understand the API response
 
-The response is a JSON document containing details about your newly created Cloud Environment. For example:
+The response is a JSON document containing details about your newly created Cloud Environment, for example:
 
 ```json
 {
@@ -80,19 +80,21 @@ The response is a JSON document containing details about your newly created Clou
 
 Snyk automatically triggers a scan when an environment is created.
 
-Note: the `data.attributes.status` field in the JSON output is set to `in_progress.` This means that Snyk has created your environment and has started scanning it.
+{% hint style="info" %}
+The `data.attributes.status` field in the JSON output is set to `in_progress.` This means that Snyk has created your environment and has started scanning it.
+{% endhint %}
 
-To check if your scan is finished, see [Check if the scan is finished](https://docs.snyk.io/products/snyk-cloud/getting-started-with-snyk-cloud-aws/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment#check-if-the-scan-is-finished).
+To check to see if your scan is finished, see [Check to see if the scan is finished](https://docs.snyk.io/integrations/cloud-platforms/aws-integration/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment#check-to-see-if-the-scan-is-finished).
 
-To re-scan an environment, see [Scan a Cloud Environment](https://docs.snyk.io/products/snyk-cloud/scan-a-snyk-cloud-environment).
+To re-scan an environment, see [Scan a Cloud environment](../../../../scan-cloud-deployment/snyk-cloud/scan-a-snyk-cloud-environment.md).
 
 {% hint style="info" %}
-It can take Google 60 seconds or more to create your service account. If you try to create an environment immediately after you create a service account, and you receive a "could not validate credentials" error, wait at least 60 seconds and try again.
+It can take Google 60 seconds or more to create your service account. If you try to create an environment immediately after you create a service account and you receive a **could not validate credentials error**, wait at least 60 seconds and try again.
 {% endhint %}
 
 ## What's next?
 
-You can now:
+You can now do the following:
 
 * View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-issues/).
 * Prioritize your vulnerabilities with cloud context.

@@ -8,7 +8,7 @@ The steps follow to onboard an AWS account via the API:
 2. [Create an AWS IAM role](step-2-create-the-snyk-iam-role-api.md): using the template you downloaded.
 3. [Create and scan a Cloud Environment.](step-3-create-and-scan-a-snyk-cloud-environment.md)
 
-When you finish, you will be able to do the following:
+When you have completed the steps, you will be able to do the following:
 
 * View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../../../scan-cloud-deployment/snyk-cloud/snyk-cloud-issues/).
 * Prioritize your vulnerabilities with cloud context.

@@ -5,30 +5,30 @@
 You have downloaded the Terraform template declaring the [Google service account](https://cloud.google.com/iam/docs/service-accounts) for Snyk. Now you need to provision the infrastructure.
 {% endhint %}
 
-The process to create the Google service account is the same whether you're using the [Snyk Web UI](./) or [Snyk API](../google-cloud-integration-api/) to onboard your Google project.
+The process to create the Google service account is the same whether you are using the [Snyk Web UI](./) or [Snyk API](../google-cloud-integration-api/) to onboard your Google Project.
 
-To scan a Google Cloud project, Snyk takes the permissions of a tightly-scoped Google service account that allows Snyk to scan the configuration of your project resources.
+To scan a Google Cloud Project, Snyk takes the permissions of a tightly-scoped Google service account that allows Snyk to scan the configuration of your Project resources.
 
-The service account you create is granted the following read-only Identity & Access Management (IAM) roles:
+The service account you create is granted the following read-only Identity and Access Management (IAM) roles:
 
 * [Security Reviewer](https://cloud.google.com/iam/docs/understanding-roles#iam.securityReviewer)
 * [Viewer](https://cloud.google.com/iam/docs/understanding-roles)
 
 Snyk Cloud's service account is granted the [Service Account Token Creator](https://cloud.google.com/iam/docs/understanding-roles#iam.serviceAccountTokenCreator) IAM role to enable it to generate short-lived credentials for your service account.
 
-Additionally, Snyk  has a mechanism in place to lock a service account to the Organization that onboards it. This is a security feature to ensure that nobody can guess a service account name and onboard it into a separate Organization to see those resources.
+Additionally, Snyk has a mechanism in place to lock a service account to the Organization that onboards it. This is a security feature to ensure that nobody can guess a service account name and onboard it into a separate Organization to see those resources.
 
-## Set Google Cloud project ID
+## Set Google Cloud Project ID
 
-Snyk scans the Google Cloud project specified by the `project_id` [variable](https://www.terraform.io/language/values/variables) in the Terraform template. You must set the variable's value using one of the following methods:
+Snyk scans the Google Cloud Project specified by the `project_id` [variable](https://www.terraform.io/language/values/variables) in the Terraform template. You must set the variable's value using one of the following methods:
 
-* **Set the `project_id` variable directly in the Terraform template.** On line 4 of the template, change the default value of the `project_id` variable to your project ID:
+* **Set the `project_id` variable directly in the Terraform template.** On line 4 of the template, change the default value of the `project_id` variable to your Project ID:
 
 ```
 default = "your-project-id"
 ```
 
-* **Set the `project_id` variable when you apply the Terraform.** Below, in [Apply the Terraform](step-2-create-the-google-service-account-api.md#apply-the-terraform), you will apply the Terraform to create the Google service account. At that time, you can use Terraform's [-var](https://www.terraform.io/language/values/variables#variables-on-the-command-line) option to set the `project_id` variable to your project ID:
+* **Set the `project_id` variable when you apply the Terraform.** In the following section, [Apply  Terraform](step-2-create-the-google-service-account-api.md#apply-terraform), you will apply Terraform to create the Google service account. At that time, you can use Terraform's [-var](https://www.terraform.io/language/values/variables#variables-on-the-command-line) option to set the `project_id` variable to your Project ID:
 
 ```
 terraform apply -var="project_id=your-project-id"
@@ -36,7 +36,7 @@ terraform apply -var="project_id=your-project-id"
 
 * **Use the `GOOGLE_PROJECT` environment variable.** See Terraform's [documentation.](https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider\_reference#full-reference)
 
-## Apply the Terraform
+## Apply Terraform
 
 {% hint style="info" %}
 Before you use the [Terraform CLI](https://www.terraform.io/downloads), ensure you [configure it to use your Google Cloud credentials](https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/getting\_started).
@@ -44,8 +44,8 @@ Before you use the [Terraform CLI](https://www.terraform.io/downloads), ensure y
 
 To provision the Google service account using Terraform:
 
-1. In your terminal, navigate to the directory containing your `.tf` file (named `snyk-permissions-google.tf` if downloaded from the Web UI).
-2. Using the Terraform CLI, initialize the Terraform project:
+1. In your terminal, navigate to the directory containing your `.tf` file (named `snyk-permissions-google.tf` if it has been downloaded from the Web UI).
+2. Using the Terraform CLI, initialize the Terraform Project:
 
 ```
 terraform init
@@ -59,7 +59,7 @@ terraform apply
 
 4\. Enter `yes` when Terraform asks if you want to perform the actions.
 
-Terraform then creates the Google service account. When it is finished, you'll see the following output:
+Terraform then creates the Google service account. When it is finished, you will see the following output:
 
 ```
 Apply complete! Resources: 22 added, 0 changed, 0 destroyed.

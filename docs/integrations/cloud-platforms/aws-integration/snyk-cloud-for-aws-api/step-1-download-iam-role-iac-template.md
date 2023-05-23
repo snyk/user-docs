@@ -84,7 +84,7 @@ Before you can use the template to provision the resources, you need to **unesca
 ### Use `jq`
 
 1. Download and install [jq](https://stedolan.github.io/jq/download/).
-2.  When submitting the API request to retrieve the template, append the following to the end of the command:
+2.  When you are submitting the API request to retrieve the template, append the following to the end of the command:
 
     ```
     | jq -r .data.attributes.data > snyk_iac_template
