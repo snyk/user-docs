@@ -133,7 +133,7 @@ The language or package manager is not supported.
 ### [SNYK-OS-0002](#snyk-os-0002)
 #### Unable to parse manifest file
 
-The provided manifest file could not be parsed as it has invalid syntax or does not match the expected schema.
+The provided manifest file could not be parsed as it has invalid syntax or does not match the expected schema. Review the manifest file, then try again.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -141,7 +141,7 @@ The provided manifest file could not be parsed as it has invalid syntax or does 
 ### [SNYK-OS-0003](#snyk-os-0003)
 #### Lock file out of sync with manifest file
 
-Some of the dependencies that are expected to be in the lock file are missing - this usually indicates that the lock file is out of sync with the provided manifest file. Please re-sync the lock file and try again.
+Some of the dependencies that are expected to be in the lock file are missing, usually indicating that the lock file is out of sync with the provided manifest file. Re-sync the lock file, then try again.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -149,7 +149,7 @@ Some of the dependencies that are expected to be in the lock file are missing - 
 ### [SNYK-OS-0004](#snyk-os-0004)
 #### Unable to parse lock file
 
-The provided lock file could not be parsed as it has invalid syntax or does not match the expected schema.
+The provided lock file could not be parsed as it has invalid syntax or does not match the expected schema. Review the lock file, then try again.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
@@ -165,17 +165,17 @@ Dependency version could not be resolved.
   - [https://support.snyk.io/hc/en-us/articles/360001373178-Could-not-determine-version-for-dependencies](https://support.snyk.io/hc/en-us/articles/360001373178-Could-not-determine-version-for-dependencies)
 
 ### [SNYK-OS-0006](#snyk-os-0006)
-#### Missing required elements in payload
+#### Payload missing required elements
 
-Elements required to serve this request was not found in the payload. See error details for specifics.
+The server could not process the request.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
 
 ### [SNYK-OS-0007](#snyk-os-0007)
-#### Unprocessable file
+#### Files cannot be processed
 
-Found files that are not supported by this dependency service.
+The dependency service could not process the files.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -689,4 +689,4 @@ This issue is unexpected, and the service should recover quickly. If not, please
 
 
 ---
-Generated at 2023-05-11T11:34:36.654Z
+Generated at 2023-05-23T18:05:44.534Z
