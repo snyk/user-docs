@@ -183,28 +183,34 @@ The dependency service could not process the files.
 ### [SNYK-OS-GO-0001](#snyk-os-go-0001)
 #### Failed to access private module
 
-Your go.mod file contained private modules that Snyk was unable to access.
+Snyk could not access the private modules within your go.mod files.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
+**Help Links:**
+  - [https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang#go-modules-and-snyk-cli](https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang#go-modules-and-snyk-cli)
+  - [https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang#go-modules-and-git](https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang#go-modules-and-git)
 
 ### [SNYK-OS-GO-0002](#snyk-os-go-0002)
-#### No go mod file found
+#### Go mod file not found
 
-A go.mod file was not found in current directory or any parent directory.
+A go.mod file was not found in the current directory or any parent directory.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
+**Help Links:**
+  - [https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang#go-modules-and-snyk-cli](https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang#go-modules-and-snyk-cli)
+  - [https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang#go-modules-and-git](https://docs.snyk.io/scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang#go-modules-and-git)
 
 ### [SNYK-OS-GO-0003](#snyk-os-go-0003)
 #### OAuth re-authorization required
 
-As Snyk needs a temporary clone of your code to analyze its dependencies, your code is cloned on an isolated environment using Git.
+Your code is cloned on an isolated environment using Git as it is required by Snyk to analyze its dependencies.
 
-Your organization has enabled or enforced SAML SSO after you authorized Snyk to access your code, and a re-authentication is therefore required.
+Your Organization has enabled or enforced SAML SSO after you authorized Snyk to access your code, and a re-authentication is therefore required.
 
 The error you're seeing is usually reproducible by attempting to do a `git clone` of your repository with incorrectly configured credentials.
-In this case, please verify your authentication configuration with your Git cloud provider and try again.
+Verify your authentication configuration with your Git cloud provider and try again.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -214,13 +220,13 @@ In this case, please verify your authentication configuration with your Git clou
 ### [SNYK-OS-GO-0004](#snyk-os-go-0004)
 #### Your project repository is missing required files
 
-A part of generating the dependency graph requires Snyk to run `go list -deps -json` inside the project. If that operation for some reason fails, we're unable to continue, if we're to create a full dependency graph. 
+Generating the dependency graph requires Snyk to run go list `go list -deps -json` inside the Project. If the operation fails, creating a full dependency graph cannot continue.  
 
-This error usually means that you either are missing some cleanup (e.g. `go mod tidy`) or that your project deployment process contains a code generation step (e.g. `protobuf` or the like) that Snyk does not know about.
+This error usually means that you need some cleanup, such as `go mod tidy`) or your Project deployment process contains a code generation step such as `protobuf` or something similar that Snyk needs to learn about. 
 
-A way to quickly verify if this is the case, try and clone your project in a clean environment and run `go list -deps -json` and verify whether the operation fails or not.
+To verify if this is the case, clone your Project in a clean environment, run go list `go list -deps -json` and verify whether the operation fails. 
 
-In this case Snyk is not able to process your code successfully and we suggest instead inserting the Snyk CLI as a part of your deployment pipeline.
+If Snyk cannot process your code successfully, insert the Snyk CLI as part of your deployment pipeline.
 
 **HTTP Status:** [422](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
@@ -689,4 +695,4 @@ This issue is unexpected, and the service should recover quickly. If not, please
 
 
 ---
-Generated at 2023-05-23T18:05:44.534Z
+Generated at 2023-05-23T18:08:40.868Z
