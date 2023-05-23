@@ -4,4 +4,4 @@ The following pages provide information and instructions for cloud platforms int
 
 * [AWS Integration](aws-integration/)
 * [Azure Integration](azure-integration-for-cloud-configurations/)
-* [Google Cloud Integration](../../scan-cloud-deployment/snyk-cloud/getting-started-with-snyk-cloud-google/)
+* [Google Cloud Integration](google-cloud-integration/)

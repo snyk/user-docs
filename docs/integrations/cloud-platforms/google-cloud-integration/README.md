@@ -4,8 +4,8 @@ Snyk integrations with your [Google Cloud](https://cloud.google.com/) projects t
 
 You can onboard a Google Cloud account to Snyk using the following methods:
 
-* [Snyk Web UI](snyk-cloud-for-google-web-ui/)
-* [Snyk API](snyk-cloud-for-google-api/)
+* [Snyk Web UI](google-cloud-integration-web-ui/)
+* [Snyk API](google-cloud-integration-api/)
 
 ## Prerequisites
 
