@@ -5,15 +5,15 @@
 You have created the Snyk Cloud IAM role. Now you can create and scan a Cloud Environment.
 {% endhint %}
 
-To send a request to the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/environments) to create and scan a Cloud Environment, you must provide the role’s Amazon Resource Name (ARN) in the API request body.
+To send a request to the [Snyk API endpoint Create New Environment](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/environments) to create and scan a Cloud Environment, you must provide the role’s Amazon Resource Name (ARN) in the API request body.
 
 ## Find the role ARN
 
-Follow the steps in [Find the role ARN](../snyk-cloud-for-aws-web-ui/step-3-create-and-scan-a-snyk-cloud-environment-web-ui.md#find-the-role-arn), then return here to learn how to send the Snyk API request.
+Follow the steps in [Find the role ARN](../snyk-cloud-for-aws-web-ui/step-3-create-and-scan-a-snyk-cloud-environment-web-ui.md#find-the-role-arn) and then return here to see how to send the Snyk API request.
 
 ## Send the Snyk API request
 
-After you have the role ARN, send a request to the Snyk API in the format below to create the Cloud Environment:
+After you have the role ARN, send a request to the Snyk API in the format that follows to create the Cloud Environment:
 
 ```
 curl -X POST \
@@ -34,7 +34,7 @@ curl -X POST \
 ```
 
 {% hint style="info" %}
-The example above uses [curl](https://curl.se/), but you can use any API client, such as [Postman](https://www.postman.com/) or [HTTPie](https://httpie.io/).
+The example above is [curl](https://curl.se/), but you can use any API client, such as [Postman](https://www.postman.com/) or [HTTPie](https://httpie.io/).
 {% endhint %}
 
 ## Understand the API response
@@ -82,11 +82,13 @@ The response is a JSON document containing details about your newly created Clou
 
 Snyk automatically triggers a scan when an environment is created.
 
-Note: the `data.attributes.status` field in the JSON output is set to `in_progress`. This means that Snyk has created your environment and has started scanning it.
+{% hint style="info" %}
+The `data.attributes.status` field in the JSON output is set to `in_progress`. This means that Snyk has created your environment and has started scanning it.
+{% endhint %}
 
-## Check if the scan is finished
+## Check to see if the scan is finished
 
-Optionally, see if the scan is finished by sending another API request in the format below to get environment details. You can find the environment ID in the `data.id` field of the JSON output when you created the environment.
+If you wish, see if the scan is finished by sending another API request in the format that follows to get environment details. You can find the environment ID in the `data.id` field of the JSON output when you create the environment.
 
 ```
 curl -X GET \
@@ -100,7 +102,7 @@ To re-scan an environment, see [Scan a Cloud Environment](../../scan-a-snyk-clou
 
 ## What's next?
 
-You can now:
+You can now do the following:
 
 * View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../snyk-cloud-issues/).
 * Prioritize your vulnerabilities with cloud context.

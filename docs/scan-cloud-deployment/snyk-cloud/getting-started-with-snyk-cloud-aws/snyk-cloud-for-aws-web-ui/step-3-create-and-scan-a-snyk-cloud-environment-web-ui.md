@@ -9,15 +9,15 @@ To create and scan a Cloud Environment, you must provide the role’s Amazon Res
 
 ## Find the role ARN
 
-The role ARN should follow this format, unless you [changed the name of the role](../snyk-cloud-for-aws-api/step-1-download-iam-role-iac-template.md#optional-change-iam-role-name) in the Terraform or CloudFormation template:
+The role ARN should follow this format unless you [changed the name of the role](../snyk-cloud-for-aws-api/step-1-download-iam-role-iac-template.md#optional-change-iam-role-name) in the Terraform or CloudFormation template:
 
 ```
 arn:aws:iam::YOUR-ACCOUNT-ID:role/snyk-cloud-role
 ```
 
-If you do not know your Amazon Web Services (AWS) account ID, or if you changed the name of the IAM role in the Terraform or CloudFormation template, you can find the role ARN using the [AWS CLI](step-3-create-and-scan-a-snyk-cloud-environment-web-ui.md#aws-cli) or the [AWS Management Console](step-3-create-and-scan-a-snyk-cloud-environment-web-ui.md#aws-management-console).
+If you do not know your Amazon Web Services (AWS) account ID, or if you changed the name of the IAM role in the Terraform or CloudFormation template, you can find the role ARN using the [AWS CLI](step-3-create-and-scan-a-snyk-cloud-environment-web-ui.md#find-the-role-arn-using-the-aws-cli) or the [AWS Management Console](step-3-create-and-scan-a-snyk-cloud-environment-web-ui.md#find-the-role-arn-using-the-aws-management-console).
 
-### AWS CLI
+### Find the role ARN using the AWS CLI
 
 To find the ARN of the Snyk Cloud IAM role using the AWS CLI, retrieve the role details, replacing `snyk-cloud-role` with the name of your role if you changed it:
 
@@ -27,18 +27,18 @@ aws iam get-role \
   --query 'Role.Arn' --output text
 ```
 
-You'll see output like this:
+The output looks like this:
 
 ```
 arn:aws:iam::123412341234:role/snyk-cloud-role
 ```
 
-### AWS Management Console
+### Find the role ARN using the AWS Management Console
 
 1. Log in to the [AWS Management Console](https://console.aws.amazon.com).
 2. Navigate to [Identity and Access Management](https://console.aws.amazon.com/iamv2/home#/home).
 3. In the left sidebar, select **Roles**.
-4. On the **Roles** page, search for `snyk-cloud-role` (or substitute the name of your role, if you changed it):
+4. On the **Roles** page, search for `snyk-cloud-role` or substitute the name of your role if you changed it:
 
 <figure><img src="../../../../.gitbook/assets/snyk-cloud-console-find-arn.png" alt="Search for the name of your role in the AWS Management Console"><figcaption><p>Search for the name of your role in the AWS Management Console</p></figcaption></figure>
 
@@ -48,18 +48,18 @@ arn:aws:iam::123412341234:role/snyk-cloud-role
 
 <figure><img src="../../../../.gitbook/assets/snyk-cloud-console-copy-arn.png" alt="Copy the role ARN in the AWS Management Console"><figcaption><p>Copy the role ARN in the AWS Management Console</p></figcaption></figure>
 
-## Create and scan environment
+## Create and scan the AWS Environment
 
 1. In the Snyk Web UI **Add AWS Environment** modal where you downloaded the IAM role template, enter your role ARN in the **IAM role ARN** field.
 2. Optionally, enter an environment name. If one is not provided, Snyk will use your AWS account alias.
 3. Select **Approve and begin scan**.
-4. You'll see a confirmation message: "AWS environment successfully added." Select **Add another environment** to return to the **Add AWS Environment** modal and onboard a new account, or select **Go to settings** if you are finished:
+4. You will  see a confirmation message: "AWS environment successfully added." Select **Add another environment** to return to the **Add AWS Environment** modal and onboard a new account, or select **Go to settings** if you are finished:
 
 <figure><img src="../../../../.gitbook/assets/snyk-cloud-onboard-aws-ui-success.png" alt="Success message after adding an AWS environment in the Snyk Web UI"><figcaption><p>Success message after adding an AWS environment in the Snyk Web UI</p></figcaption></figure>
 
-### What's next?
+## What's next?
 
-You can now:
+You can now do the following:
 
 * View the cloud configuration issues Snyk finds. See [Cloud and Integrated IaC issues](../../snyk-cloud-issues/).
 * Prioritize your vulnerabilities with cloud context.

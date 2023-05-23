@@ -2,15 +2,15 @@
 
 {% hint style="info" %}
 **Recap**\
-You have downloaded the Terraform or Amazon Web Services (AWS) CloudFormation template declaring the Identity & Access Management (IAM) role for Snyk. Now you need to provision the infrastructure.
+You have downloaded the Terraform or Amazon Web Services (AWS) CloudFormation template declaring the Identity and Access Management (IAM) role for Snyk. Now you need to provision the infrastructure.
 {% endhint %}
 
-The process to create the Snyk IAM role is the same whether you're using the [Snyk Web UI](step-1-download-iam-role-iac-template-web-ui.md) or [Snyk API](../snyk-cloud-for-aws-api/step-1-download-iam-role-iac-template.md) to onboard your AWS account.
+The process to create the Snyk IAM role is the same whether you are using the [Snyk Web UI](step-1-download-iam-role-iac-template-web-ui.md) or [Snyk API](../snyk-cloud-for-aws-api/step-1-download-iam-role-iac-template.md) to onboard your AWS account.
 
 The IAM role you will provision has the following policies attached to it:
 
 * The AWS-managed [SecurityAudit](https://docs.aws.amazon.com/IAM/latest/UserGuide/access\_policies\_job-functions.html#jf\_security-auditor) read-only policy.
-* A supplemental inline policy, granting required read permissions not covered by SecurityAudit.
+* A supplemental inline policy granting required read permissions not covered by SecurityAudit.
 
 The role also has a trust policy that specifies an [external ID](https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_roles\_create\_for-user\_externalid.html). Snyk generates this unique ID for your organization to prevent other parties from assuming the role without the ID, even if they have your role Amazon Resource Name (ARN).
 
@@ -18,17 +18,17 @@ The role also has a trust policy that specifies an [external ID](https://docs.aw
 
 You can create the IAM role using one of the following tools, according to the type of template you downloaded from Snyk:
 
-* **Terraform:** [Terraform CLI](step-2-create-the-snyk-iam-role.md#terraform)
-* **AWS CloudFormation:** [AWS CLI](step-2-create-the-snyk-iam-role.md#aws-cli) or [AWS Management Console](step-2-create-the-snyk-iam-role.md#aws-management-console)
+* **Terraform:** [Terraform CLI](step-2-create-the-snyk-iam-role.md#create-the-iam-role-with-terraform)
+* **AWS CloudFormation:** [AWS CLI](step-2-create-the-snyk-iam-role.md#create-the-iam-role-with-aws-cli) or [AWS Management Console](step-2-create-the-snyk-iam-role.md#create-the-iam-role-using-the-aws-management-console)
 
-### Terraform
+### Create the IAM role with Terraform
 
 {% hint style="info" %}
 Before you use the [Terraform CLI](https://www.terraform.io/downloads), ensure you [configure it to use your AWS credentials](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication-and-configuration).
 {% endhint %}
 
-1. In your terminal, navigate to the directory containing the Snyk IAM role Terraform file (named `snyk-permissions-aws.tf` if downloaded from the Snyk Web UI).
-2. Using the Terraform CLI, initialize the Terraform project:
+1. In your terminal, navigate to the directory containing the Snyk IAM role Terraform file (named `snyk-permissions-aws.tf` if it has been downloaded from the Snyk Web UI).
+2. Using the Terraform CLI, initialize the Terraform Project:
 
 ```
 terraform init
@@ -42,20 +42,20 @@ terraform apply
 
 4\. Enter `yes` when Terraform asks if you want to perform the actions.
 
-Terraform then creates the IAM role. When it is finished, you'll see the following output:
+Terraform then creates the IAM role. When the role has been created, you will see the following output:
 
 ```
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
 
-### AWS CLI
+### Create the IAM role with AWS CLI
 
 {% hint style="info" %}
 Before you use the [AWS CLI](https://aws.amazon.com/cli/), ensure you [configure it to use your AWS credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html).
 {% endhint %}
 
-1. In your terminal, navigate to the directory containing the Snyk IAM role CloudFormation file (named `snyk-permissions-aws.yml` if downloaded from the Snyk Web UI).
-2. Using the AWS CLI, launch the CloudFormation stack, replacing `snyk-cloud-role` with the name of your IAM role (if you changed it) and `snyk-permissions-aws.yml` with the name of your file:
+1. In your terminal, navigate to the directory containing the Snyk IAM role CloudFormation file (named `snyk-permissions-aws.yml` if it has been downloaded from the Snyk Web UI).
+2. Using the AWS CLI, launch the CloudFormation stack, replacing `snyk-cloud-role` with the name of your IAM role if you changed it and `snyk-permissions-aws.yml` with the name of your file:
 
 ```
 aws cloudformation create-stack \
@@ -74,7 +74,7 @@ aws cloudformation describe-stacks \
 
 If the output says `"CREATE_COMPLETE"`, AWS has finished creating your role.
 
-### AWS Management Console
+### Create the IAM role using the AWS Management Console
 
 1. Log in to the [AWS Management Console](https://console.aws.amazon.com).
 2. Navigate to [CloudFormation](https://console.aws.amazon.com/cloudformation).
@@ -84,7 +84,7 @@ If the output says `"CREATE_COMPLETE"`, AWS has finished creating your role.
 
 4\. Select **With new resources (standard)** from the drop-down menu.
 
-5\. On the **Create stack** page, in the **Specify template** section, select **Upload a template file**.
+5\. On the **Create stack** page, in the **Specify template** section and select **Upload a template file**.
 
 6\. Click the **Choose file** button that appears and select your CloudFormation file containing the Snyk IAM role.
 
@@ -94,7 +94,7 @@ If the output says `"CREATE_COMPLETE"`, AWS has finished creating your role.
 
 9\. Select **Next**.
 
-10\. On the **Configure stack options** page, enter tags if desired, and keep the rest of the defaults.
+10\. On the **Configure stack options** page, enter tags if desired and keep the rest of the defaults.
 
 11\. Select **Next**.
 

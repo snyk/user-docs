@@ -1,17 +1,17 @@
 # Step 1: Download IAM role IaC template (API)
 
-Before you can create a Cloud Environment, you must download an Infrastructure as Code (IaC) template declaring a read-only **Identity & Access Management** (IAM) role that Snyk can assume to scan the configuration of resources in your Amazon Web Services (AWS) account.
+Before you can create a Cloud Environment, you must download an Infrastructure as Code (IaC) template declaring a read-only **Identity and Access Management** (IAM) role that Snyk can assume to scan the configuration of resources in your Amazon Web Services (AWS) account.
 
 You will use this IaC template to provision the role in [Step 2: Create the Snyk IAM role](../snyk-cloud-for-aws-web-ui/step-2-create-the-snyk-iam-role.md).
 
-You can choose the template format: either [Terraform HCL](https://www.terraform.io/language/syntax/configuration) or [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html). The IAM permissions are identical in both, so pick the format you are most comfortable working with.
+You can choose the template format, either [Terraform HCL](https://www.terraform.io/language/syntax/configuration) or [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html). The IAM permissions are identical in both, so pick the format you are most comfortable working with.
 
 ## Retrieve the IaC template
 
-To retrieve the IaC template from the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/permissions), you need the API token for an Organization-level [service account](https://docs.snyk.io/features/user-and-group-management/structure-account-for-high-application-performance/service-accounts#set-up-a-service-account) with an Org Admin role.
+To retrieve the IaC template using  the [Snyk API endpoint Generate Clout Provider PermissionsI](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/permissions), you need the API token for an Organization-level [service accoun](../../../../enterprise-setup/service-accounts.md)t with an Org Admin role.
 
 1. In the [Snyk Web UI](https://app.snyk.io), navigate to **Settings (cog icon) > General > Organization ID** and copy your Organization ID.
-2. Send a request to the Snyk API in the below format, replacing `INPUT-TYPE` with `tf` for Terraform or `cf` for CloudFormation:
+2. Send a request to the Snyk API in the follwoing format, replacing `INPUT-TYPE` with `tf` for Terraform or `cf` for CloudFormation:
 
 ```
 curl -X POST \
@@ -29,7 +29,7 @@ curl -X POST \
 ```
 
 {% hint style="info" %}
-The example above uses [curl](https://curl.se/), but you can use any API client, such as [Postman](https://www.postman.com/) or [HTTPie](https://httpie.io/).
+The example above is [curl](https://curl.se/), but you can use any API client, such as [Postman](https://www.postman.com/) or [HTTPie](https://httpie.io/).
 {% endhint %}
 
 ## Understand the API response
@@ -74,7 +74,7 @@ Example response with CloudFormation template:
 
 ## Unescape the JSON
 
-The `data.attributes.data` field in the output above is an escaped JSON string containing the Terraform or CloudFormation template with the IAM role and policy.
+The `data.attributes.data` field in the preceding output is an escaped JSON string containing the Terraform or CloudFormation template with the IAM role and policy.
 
 Before you can use the template to provision the resources, you need to **unescape** the JSON. This can be accomplished in the following ways:
 
@@ -84,7 +84,7 @@ Before you can use the template to provision the resources, you need to **unesca
 ### Use `jq`
 
 1. Download and install [jq](https://stedolan.github.io/jq/download/).
-2.  When submitting the API request during template retrieval, append the following to the end of the command:
+2.  When submitting the API request to retrieve the template, append the following to the end of the command:
 
     ```
     | jq -r .data.attributes.data > snyk_iac_template
@@ -101,7 +101,7 @@ Before you can use the template to provision the resources, you need to **unesca
 
 ## Optional: Change IAM role name
 
-By default, the name of the Snyk IAM role is `snyk-cloud-role`. You can optionally change this name in the Terraform or CloudFormation template, if your organization has specific role naming requirements.
+By default, the name of the Snyk IAM role is `snyk-cloud-role`. If your Organization has specific role naming requirements, you have the option to change this name in the Terraform or CloudFormation template.
 
 In **Terraform**, the role name is on line 19:
 
@@ -117,4 +117,4 @@ In **CloudFormation**, the role name is on line 7:
 
 ## What's next?
 
-The next step is to create the IAM role and policy for Snyk using the template you downloaded.
+The next step is to [create the IAM role](step-2-create-the-snyk-iam-role-api.md) and policy for Snyk using the template you downloaded.

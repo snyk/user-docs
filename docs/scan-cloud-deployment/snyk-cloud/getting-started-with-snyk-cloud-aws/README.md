@@ -1,21 +1,21 @@
 # AWS Integration
 
-Snyk integrates with your [Amazon Web Services (AWS)](https://aws.amazon.com/) account to find issues in your cloud configurations, and to generate cloud context to help you prioritize your vulnerabilities.
+Snyk integrates with your [Amazon Web Services (AWS)](https://aws.amazon.com/) account to find issues in your cloud configurations and to generate cloud context to help you prioritize your vulnerabilities.
 
 You can onboard an AWS account to Snyk using the following methods:
 
 * [Snyk Web UI](snyk-cloud-for-aws-web-ui/)
 * [Snyk API](snyk-cloud-for-aws-api/)
 
-## Prerequisites
+The following are **prerequisites to AWS integration**:
 
-To setup an AWS integration, you need the following:
+To set up an AWS integration, you need the following:
 
 * A Snyk Enterprise [plan](https://snyk.io/plans/)
 * A new Snyk Organization, with appropriate feature flags assigned by your Snyk contact
-* A Snyk Group Administrator or Organization Administrator [role](https://docs.snyk.io/features/user-and-group-management/managing-users-and-permissions/managing-permissions)
+* A Snyk Group Administrator or Organization Administrator [role](../../../snyk-admin/manage-users-and-permissions/managing-permissions.md)
 * Access to an [AWS](https://aws.amazon.com/) account and associated credentials with permissions to create a read-only IAM role
 * Access to the [Terraform CLI](https://www.terraform.io/downloads), [AWS CLI](https://aws.amazon.com/cli/), or [AWS Management Console](https://console.aws.amazon.com) to create the IAM role for Snyk via Terraform or AWS CloudFormation
-  * If using Terraform or the AWS CLI, ensure you configure it with your AWS credentials. See instructions for [Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication-and-configuration) or the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
-* **API only:** An Organization-level [service account](https://docs.snyk.io/features/user-and-group-management/structure-account-for-high-application-performance/service-accounts#set-up-a-service-account) with an Org Admin role, to use the Snyk API
+* If you are using Terraform or the AWS CLI, ensure you configure it with your AWS credentials. See the instructions for [Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication-and-configuration) or the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
+* **API only:** An Organization-level [service account](https://docs.snyk.io/features/user-and-group-management/structure-account-for-high-application-performance/service-accounts#set-up-a-service-account) with an Org Admin role to use the Snyk API
 * **API only:** An API client such as [curl](https://curl.se/), [HTTPie](https://httpie.io/), or [Postman](https://www.postman.com/)
