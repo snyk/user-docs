@@ -2,10 +2,7 @@
 
 A newly assigned policy, or changes to a policy, apply when the Project is re-scanned. This is what Project collaborators see when an action is applied to a vulnerability:
 
-| **Action**                          | **What Project collaborators see**                                                                           |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Change severity to…                 | The new severity, as well as the originally assigned severity                                                |
-| Ignore current and future instances | An ignored issue will look the same as a manual ignore, but it will be labelled “ignored by security policy” |
+<table data-header-hidden><thead><tr><th width="246"></th><th></th></tr></thead><tbody><tr><td><strong>Action</strong></td><td><strong>What Project collaborators see</strong></td></tr><tr><td>Change severity to…</td><td>The new severity, as well as the originally assigned severity</td></tr><tr><td>Ignore current and future instances</td><td>An ignored issue will look the same as a manual ignore, but it will be labelled “ignored by security policy”</td></tr></tbody></table>
 
 ## **Examples**
 

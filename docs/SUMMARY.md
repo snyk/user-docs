@@ -142,7 +142,7 @@
       * [View and understand Snyk upgrade pull requests](integrations/git-repository-scm-integrations/introduction-to-git-repository-integrations/view-and-understand-snyk-upgrade-pull-requests.md)
       * [Opening fix and upgrade pull requests from a fixed GitHub account](integrations/git-repository-scm-integrations/introduction-to-git-repository-integrations/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)
       * [Clone an integration across your Snyk Organizations](integrations/git-repository-scm-integrations/introduction-to-git-repository-integrations/clone-an-integration-across-your-snyk-organizations.md)
-      * [Disable a git integration](integrations/git-repository-scm-integrations/introduction-to-git-repository-integrations/disable-a-git-integration.md)
+      * [Disable a Git integration](integrations/git-repository-scm-integrations/introduction-to-git-repository-integrations/disable-a-git-integration.md)
     * [GitHub integration](integrations/git-repository-scm-integrations/github-integration.md)
     * [GitHub Enterprise integration](integrations/git-repository-scm-integrations/github-enterprise-integration.md)
     * [GitHub Read-only Projects](integrations/git-repository-scm-integrations/github-read-only-projects.md)
@@ -705,7 +705,6 @@
     * [Test public repositories before use](snyk-cli/test-for-vulnerabilities/test-public-repositories-before-use.md)
     * [CLI test results](snyk-cli/test-for-vulnerabilities/view-cli-test-results.md)
     * [Fix vulnerabilities using the Snyk CLI](snyk-cli/test-for-vulnerabilities/fix-vulnerabilities-using-the-snyk-cli.md)
-    *
   * [CLI commands and options summary](snyk-cli/cli-reference.md)
   * [CLI help](snyk-cli/commands/README.md)
     * [Auth](snyk-cli/commands/auth.md)

@@ -6,15 +6,7 @@ To access the latest Integrated IaC, you should use Snyk CLI v1.1022.0 or later.
 
 You can test your IaC files with [Integrated IaC](./) by leveraging the functionalities of the Snyk CLI, much like you would with [Current IaC](../../snyk-infrastructure-as-code/). There are some differences between Integrated and Current IaC, which are summarized in the following table.
 
-|                             | **Current IaC support** | **Integrated IaC support** |
-| --------------------------- | ----------------------- | -------------------------- |
-| **Terraform (single file)** | Yes                     | Yes                        |
-| **Terraform (modules)**     | No                      | Yes                        |
-| **Terraform (plan)**        | Yes                     | Yes                        |
-| **CloudFormation**          | Yes                     | Yes                        |
-| **AWS CDK**                 | Yes                     | Yes                        |
-| **Azure Resource Manager**  | Yes                     | Yes                        |
-| **Kubernetes**              | Yes                     | Coming soon                |
+<table data-header-hidden><thead><tr><th></th><th width="383.3333333333333"></th><th></th></tr></thead><tbody><tr><td></td><td><strong>Current IaC support</strong></td><td><strong>Integrated IaC support</strong></td></tr><tr><td><strong>Terraform (single file)</strong></td><td>Yes</td><td>Yes</td></tr><tr><td><strong>Terraform (modules)</strong></td><td>No</td><td>Yes</td></tr><tr><td><strong>Terraform (plan)</strong></td><td>Yes</td><td>Yes</td></tr><tr><td><strong>CloudFormation</strong></td><td>Yes</td><td>Yes</td></tr><tr><td><strong>AWS CDK</strong></td><td>Yes</td><td>Yes</td></tr><tr><td><strong>Azure Resource Manager</strong></td><td>Yes</td><td>Yes</td></tr><tr><td><strong>Kubernetes</strong></td><td>Yes</td><td>Coming soon</td></tr></tbody></table>
 
 {% hint style="warning" %}
 Although Integrated IaC provides better support for Terraform than Current IaC, line number information is not provided in the scan results.

@@ -22,7 +22,7 @@ You can address a range of issues detected by the Snyk Code engine, both in term
 
 A representation of information flow involved in fixing one issue is presented in the table below.
 
-<table><thead><tr><th>Stage</th><th data-type="select">Subsystem</th><th>Details</th></tr></thead><tbody><tr><td>Code scan and   discovery of issues</td><td></td><td>Corresponds to a normal flow of scanning the code from IDE.</td></tr><tr><td>Code preprocessing and minimization w.r.t. the data flow of the particular issue <span class="math">\mathcal{I}</span></td><td></td><td>Data flow of <span class="math">\mathcal{I}</span> is analyzed and code is minimized, keeping the relevant context only.</td></tr><tr><td>Generating <span class="math">k</span> candidate fixes for the given issue <span class="math">\mathcal{I}</span></td><td></td><td>Here, <span class="math">k</span> is an implementation parameter.</td></tr><tr><td>Candidate fixes ranking and self-assessment</td><td></td><td>Each of the <span class="math"> k</span> fixes is assessed by the Code Engine, filtering out those rendering invalid code or failing to fix the issue (issue persists).</td></tr><tr><td>Returning the best candidate fix </td><td></td><td>The system has finished.</td></tr></tbody></table>
+<table><thead><tr><th width="211">Stage</th><th data-type="select">Subsystem</th><th>Details</th></tr></thead><tbody><tr><td>Code scan and   discovery of issues</td><td></td><td>Corresponds to a normal flow of scanning the code from IDE.</td></tr><tr><td>Code preprocessing and minimization w.r.t. the data flow of the particular issue <span class="math">\mathcal{I}</span></td><td></td><td>Data flow of <span class="math">\mathcal{I}</span> is analyzed and code is minimized, keeping the relevant context only.</td></tr><tr><td>Generating <span class="math">k</span> candidate fixes for the given issue <span class="math">\mathcal{I}</span></td><td></td><td>Here, <span class="math">k</span> is an implementation parameter.</td></tr><tr><td>Candidate fixes ranking and self-assessment</td><td></td><td>Each of the <span class="math"> k</span> fixes is assessed by the Code Engine, filtering out those rendering invalid code or failing to fix the issue (issue persists).</td></tr><tr><td>Returning the best candidate fix </td><td></td><td>The system has finished.</td></tr></tbody></table>
 
 ## Requirements
 
@@ -57,7 +57,7 @@ Consider the following scenario where an insecure WebSocket protocol is fixed us
 
 You can follow through the entire sequence in this short (13-second) video.
 
-<figure><img src="../../.gitbook/assets/fix_suggestions (3).gif" alt=""><figcaption><p>Fixing WebSocket protocol vulnerability using Snyk Code Fix </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/fix_suggestions (1).gif" alt=""><figcaption><p>Fixing WebSocket protocol vulnerability using Snyk Code Fix </p></figcaption></figure>
 
 ## What data does Snyk Code Fix Suggestions collect
 

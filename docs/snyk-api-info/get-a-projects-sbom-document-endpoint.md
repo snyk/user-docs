@@ -33,10 +33,7 @@ $ curl --get \
 
 A Snyk project’s SBOM document will include some Snyk-specific meta data about the SBOM document. This is included in the `metadata` section of the document when exported as CycloneDX.
 
-| Property Name     | Description                                             |
-| ----------------- | ------------------------------------------------------- |
-| `snyk:org_id`     | The organization ID (UUID) to which the project belongs |
-| `snyk:project_id` | The project’s ID (UUID)                                 |
+<table><thead><tr><th width="225">Property Name</th><th>Description</th></tr></thead><tbody><tr><td><code>snyk:org_id</code></td><td>The organization ID (UUID) to which the project belongs</td></tr><tr><td><code>snyk:project_id</code></td><td>The project’s ID (UUID)</td></tr></tbody></table>
 
 ## Troubleshooting for Get a project's SBOM document endpoint
 

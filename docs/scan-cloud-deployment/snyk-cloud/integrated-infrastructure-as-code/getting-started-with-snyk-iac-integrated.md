@@ -13,15 +13,7 @@ Use [Snyk Integrated Infrastructure as Code](./) to inspect, find, and fix issue
 
 You can test your IaC files in Git repositories found via SCM integrations with [Integrated IaC](./), much like you would with [Current IaC](../../snyk-infrastructure-as-code/). There are some differences, which are summarized in the following table.
 
-|                             | **Current IaC support** | **Integrated IaC support** |
-| --------------------------- | ----------------------- | -------------------------- |
-| **Terraform (single file)** | Yes                     | Yes                        |
-| **Terraform (modules)**     | No                      | Yes                        |
-| **Terraform (variables)**   | No                      | Yes                        |
-| **CloudFormation**          | Yes                     | Yes                        |
-| **Azure Resource Manager**  | Yes                     | Yes                        |
-| **Kubernetes manifests**    | Yes                     | Coming soon                |
-| **Helm charts**             | Yes                     | Coming soon                |
+<table data-header-hidden><thead><tr><th width="271"></th><th width="261.3333333333333"></th><th></th></tr></thead><tbody><tr><td></td><td><strong>Current IaC support</strong></td><td><strong>Integrated IaC support</strong></td></tr><tr><td><strong>Terraform (single file)</strong></td><td>Yes</td><td>Yes</td></tr><tr><td><strong>Terraform (modules)</strong></td><td>No</td><td>Yes</td></tr><tr><td><strong>Terraform (variables)</strong></td><td>No</td><td>Yes</td></tr><tr><td><strong>CloudFormation</strong></td><td>Yes</td><td>Yes</td></tr><tr><td><strong>Azure Resource Manager</strong></td><td>Yes</td><td>Yes</td></tr><tr><td><strong>Kubernetes manifests</strong></td><td>Yes</td><td>Coming soon</td></tr><tr><td><strong>Helm charts</strong></td><td>Yes</td><td>Coming soon</td></tr></tbody></table>
 
 ## Prerequisites
 

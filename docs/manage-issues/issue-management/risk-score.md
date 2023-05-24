@@ -22,7 +22,7 @@ The Priority Score will be replaced with the Risk Score upon retest of Projects.
 
 ## About the Risk Score Model&#x20;
 
-<figure><img src="../../.gitbook/assets/matrix (2).png" alt=""><figcaption><p>The Snyk Risk Score Model</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/matrix (1) (1).png" alt=""><figcaption><p>The Snyk Risk Score Model</p></figcaption></figure>
 
 The model that powers the Risk Score applies automatic risk analysis for each security issue based on the potential impact and likelihood of exploitability.
 
