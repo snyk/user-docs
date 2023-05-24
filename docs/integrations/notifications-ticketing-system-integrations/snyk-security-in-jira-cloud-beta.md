@@ -9,7 +9,7 @@ Snyk Security in Jira Cloud helps developers identify, prioritize and triage sec
 {% hint style="info" %}
 **Feature availability**
 
-Snyk Security in Jira is in [Closed Beta](../../more-info/snyk-feature-release-process.md#closed-beta) and is only available by invitation from Snyk. Currently, only Snyk Open Source Projects are supported within this integration.&#x20;
+Snyk Security in Jira Cloud is in [Closed Beta](../../more-info/snyk-feature-release-process.md#closed-beta) and is available only by invitation from Snyk. Currently, only Snyk Open Source Projects are supported within this integration.&#x20;
 {% endhint %}
 
 ## Available plans and compatibility
@@ -39,11 +39,7 @@ To install [**Snyk Security in Jira Cloud**](https://marketplace.atlassian.com/a
 
 These are the required permission scopes in Jira needed for the integration to operate.
 
-| Required Scope                        | Purpose                                                                            |
-| ------------------------------------- | ---------------------------------------------------------------------------------- |
-| Write data to the host application    | Sync vulnerabilities from Snyk to Jira so they appear in the Security tab in Jira. |
-| Read data from the host application   | Read vulnerabilities from Jira to optimize the issues sync process.                |
-| Delete data from the host application | Remove vulnerabilities from Jira when a Snyk Organization is removed from Jira.    |
+<table><thead><tr><th width="344.5">Required Scope</th><th>Purpose</th></tr></thead><tbody><tr><td>Write data to the host application</td><td>Sync vulnerabilities from Snyk to Jira so they appear in the Security tab in Jira.</td></tr><tr><td>Read data from the host application</td><td>Read vulnerabilities from Jira to optimize the issues sync process.</td></tr><tr><td>Delete data from the host application</td><td>Remove vulnerabilities from Jira when a Snyk Organization is removed from Jira. </td></tr></tbody></table>
 
 ### Install Snyk Security
 
