@@ -57,10 +57,12 @@ An unexpected server error was encountered.
 ### [SNYK-OPENAPI-001](#snyk-openapi-001)
 #### Bad request
 
-The request sent to the server is invalid or corrupt.
+The server cannot process the request due to invalid or corrupt data. Review the request, then try again.
 
 **HTTP Status:** [400](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
+**Help Links:**
+  - [https://docs.snyk.io/snyk-api-info/getting-started-using-snyk-rest-api ](https://docs.snyk.io/snyk-api-info/getting-started-using-snyk-rest-api )
 
 ### [SNYK-OPENAPI-002](#snyk-openapi-002)
 #### Forbidden
@@ -73,7 +75,7 @@ Access to the requested resource is forbidden.
 ### [SNYK-OPENAPI-003](#snyk-openapi-003)
 #### Not acceptable
 
-The server cannot provide a response which matches the provided accept headers.
+The server cannot provide a response that matches the provided accept headers. Review the request, then try again.
 
 **HTTP Status:** [406](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406)
 
@@ -89,7 +91,7 @@ The server cannot find the requested resource.
 ### [SNYK-OPENAPI-005](#snyk-openapi-005)
 #### Method not allowed
 
-The endpoint does not support the request method.
+The target endpoint does not support your request method. Review the request, then try again.
 
 **HTTP Status:** [405](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405)
 
@@ -109,6 +111,8 @@ The request lacks authentication credentials for the requested resource.
 
 **HTTP Status:** [401](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
+**Help Links:**
+  - [https://docs.snyk.io/snyk-api-info/authentication-for-api ](https://docs.snyk.io/snyk-api-info/authentication-for-api )
 
 ### [SNYK-OPENAPI-008](#snyk-openapi-008)
 #### Unsupported media type
@@ -222,7 +226,7 @@ Verify your authentication configuration with your Git cloud provider and try ag
 
 Generating the dependency graph requires Snyk to run go list `go list -deps -json` inside the Project. If the operation fails, creating a full dependency graph cannot continue.  
 
-This error usually means that you need some cleanup, such as `go mod tidy`) or your Project deployment process contains a code generation step such as `protobuf` or something similar that Snyk needs to learn about. 
+This error usually means that you need some cleanup, such as `go mod tidy`) or your Project deployment process contains a code generation step such as `protobuf` or something similar that is not currently supported by Snyk. 
 
 To verify if this is the case, clone your Project in a clean environment, run go list `go list -deps -json` and verify whether the operation fails. 
 
@@ -695,4 +699,4 @@ This issue is unexpected, and the service should recover quickly. If not, please
 
 
 ---
-Generated at 2023-05-23T18:08:40.868Z
+Generated at 2023-05-24T15:04:38.273Z
