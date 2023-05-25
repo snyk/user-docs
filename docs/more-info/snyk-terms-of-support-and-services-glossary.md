@@ -2,27 +2,27 @@
 
 ## Summary of offerings
 
-| Offering                                                                           | Standard Support                                                                                                                                        | Premium Care                            |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| Digital Learning Resources                                                         | ✔                                                                                                                                                       | ✔                                       |
-| Access to an online customer community                                             | ✔                                                                                                                                                       | ✔                                       |
-| Support Term                                                                       | <ul><li><strong>Enterprise Plan</strong>: 24x5</li><li><strong>Free/Team Plan</strong> (see Note 2): Next Business Day (local business hours)</li></ul> | 24x7                                    |
-| Prioritized SLA & Support ticket routing                                           | <p>See SLA Response<br>(see Note 1)</p>                                                                                                                 | <p>See SLA Response<br>(see Note 1)</p> |
-| Guided Implementation and Product training, including SSO & Broker                 | <p><em>add-on</em><br><em>(see Note 3)</em></p>                                                                                                         | ✔                                       |
-| Named Technical Success Manager (TSM)                                              | ❌                                                                                                                                                       | ✔                                       |
-| Dedicated Private Slack Channel                                                    | ❌                                                                                                                                                       | ✔                                       |
-| Ongoing Technical Advisory, Adoption and Developer Education Support (see details) | ❌                                                                                                                                                       | ✔                                       |
+| Offering                                                                           | Standard Support                                                                                                                                        | Premium Care                                                                                                              |
+| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Digital Learning Resources                                                         | ✔                                                                                                                                                       | ✔                                                                                                                         |
+| Access to an online customer community                                             | ✔                                                                                                                                                       | ✔                                                                                                                         |
+| Support Term                                                                       | <ul><li><strong>Enterprise Plan</strong>: 24x5</li><li><strong>Free/Team Plan</strong> (see Note 2): Next Business Day (local business hours)</li></ul> | 24x7                                                                                                                      |
+| Prioritized Initial Response & Support ticket routing                              | <p>See <a href="snyk-terms-of-support-and-services-glossary.md#initial-response-time-details">Initial Response details</a><br>(see Note 1)</p>          | See [Initial Response details](snyk-terms-of-support-and-services-glossary.md#initial-response-time-details) (see Note 1) |
+| Guided Implementation and Product training, including SSO & Broker                 | <p><em>add-on</em><br><em>(see Note 3)</em></p>                                                                                                         | ✔                                                                                                                         |
+| Named Technical Success Manager (TSM)                                              | ❌                                                                                                                                                       | ✔                                                                                                                         |
+| Dedicated Private Slack Channel                                                    | ❌                                                                                                                                                       | ✔                                                                                                                         |
+| Ongoing Technical Advisory, Adoption and Developer Education Support (see details) | ❌                                                                                                                                                       | ✔                                                                                                                         |
 
 {% hint style="info" %}
 **Notes**\
-1/ SLAs (see [SLA response and severity definitions](snyk-terms-of-support-and-services-glossary.md#sla-response-and-severity-definitions)) are based on the Snyk Pricing plan purchased.
+1/ Initial response commitments (see [Initial response and severity definitions](snyk-terms-of-support-and-services-glossary.md#initial-response-and-severity-definitions)) are based on the Snyk Pricing plan purchased.
 
 2/ Existing Business plan customers.
 
 3/ Paid Implementation services (Snyk Accelerate) are available as a la carte packages for Standard Support customers.
 {% endhint %}
 
-### SLA response and severity definitions
+### Initial response and severity definitions
 
 Severity levels are defined as follows:
 
@@ -77,14 +77,14 @@ Self-serve resources designed to help you quickly and successfully derive value 
 
 Premium add-on providing extended, in-depth, and skilled expertise to help you maximize your investment with Snyk.
 
-| Premium Care Offering                                                         | Description                                                                                                                                                                                                                                                                         |
-| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <ul><li>24x7 Support</li></ul>                                                | Snyk support engineers actively respond to tickets 24 hours a day, Monday to Friday. For urgent customer issues outside of 24x5, Snyk provides an SLA and a 24 hour support telephone number. This is served by a telephone answering service which triggers our on-call engineers. |
-| <ul><li>Prioritized Support ticket routing</li></ul>                          | Tickets raised on Premium Care are automatically routed to Snyk support engineers and prioritized ahead of non premium ticket traffic.                                                                                                                                              |
-| <ul><li>Enhanced Support SLAs</li></ul>                                       | Faster first response SLA and ticket updates. See SLA response table for premium support below.                                                                                                                                                                                     |
-| <ul><li>Private slack channel</li></ul>                                       | <p>Direct engagement over Slack with your Technical Account team to encourage collaboration</p><p><br></p>                                                                                                                                                                          |
-| <ul><li>Technical Success Manager</li></ul>                                   | <p>Named Technical resource assigned to your account to support your Snyk implementation as it grows and evolves.</p><p><br><br></p>                                                                                                                                                |
-| See description of additional services included with the Premium Care below\* |                                                                                                                                                                                                                                                                                     |
+| Premium Care Offering                                                         | Description                                                                                                                                                                                                                                                              |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <ul><li>24x7 Support</li></ul>                                                | Snyk support engineers actively respond to tickets 24 hours a day, Monday to Friday. For urgent customer issues outside of 24x5, Snyk provides a 24 hour support telephone number. This is served by a telephone answering service which triggers our on-call engineers. |
+| <ul><li>Prioritized Support ticket routing</li></ul>                          | Tickets raised on Premium Care are automatically routed to Snyk support engineers and prioritized ahead of non premium ticket traffic.                                                                                                                                   |
+| <ul><li>Enhanced Support response time</li></ul>                              | Faster first response and ticket updates. See [initial response and severity definitions](snyk-terms-of-support-and-services-glossary.md#initial-response-and-severity-definitions) table for premium support.                                                           |
+| <ul><li>Private slack channel</li></ul>                                       | <p>Direct engagement over Slack with your Technical Account team to encourage collaboration</p><p><br></p>                                                                                                                                                               |
+| <ul><li>Technical Success Manager</li></ul>                                   | <p>Named Technical resource assigned to your account to support your Snyk implementation as it grows and evolves.</p><p><br><br></p>                                                                                                                                     |
+| See description of additional services included with the Premium Care below\* |                                                                                                                                                                                                                                                                          |
 
 #### **Premium Care Services**
 
@@ -96,16 +96,16 @@ Maximize the value out of Snyk products by leveraging assigned expert and proact
 * Enablement Support: Snyk resources will lead the customer through Admin UI training, and multiple Developer trainings as required throughout the duration of the engagement
 * Regular Business and Deployment Optimization Reviews - Snyk will provide quarterly business reviews back to demonstrate progress achieved against the success criteria established during implementation. In addition, Snyk will provide semi-annual deployment optimization reviews to help ensure the customer is leveraging the latest Snyk functionality and that the deployment has been optimized for any changes in the customer’s tech stack or use case.
 * Weekly Deployment Stand-Up and Project Status Calls - during critical periods of implementation or developer roll-out, Snyk will conduct weekly stand-ups and help provide general project management tracking throughout the Snyk implementation project.
-* Technical Advocacy -.The Snyk TSM will help advocate internally for specific product needs and help connect customers with relevant experts within Snyk to assist with specific challenges. The Snyk TSM will also help the customer champion any open support or product tickets to help provide one voice from SnykSecurity Awareness and Education Training - The Snyk team will offer periodic developer education sessions, including our “Stranger Danger” Live Hacking Session, Intro to Security Champions program, How to Bug Bash with Snyk and others
+* Technical Advocacy - The Snyk TSM will help advocate internally for specific product needs and help connect customers with relevant experts within Snyk to assist with specific challenges. The Snyk TSM will also help the customer champion any open support or product tickets to help provide one voice from SnykSecurity Awareness and Education Training - The Snyk team will offer periodic developer education sessions, including our “Stranger Danger” Live Hacking Session, Intro to Security Champions program, How to Bug Bash with Snyk and others
 * Technical Advisory - Access to advanced technical experts with industry and domain expertise who can help solve complex use cases
 * Content Creation - Support the development of custom content for developer training and enablement, Snyk usage policies, internal wikis
 * Onsite visits (twice per year) - Where requested, the TSM will make up to 2 onsite visits to provide customer workshops, trainings or to conduct business reviews (Travel expenses passed through at cost)
 
-### **Service Level Agreements (SLA) details**
+### **Initial response time details**
 
 * Snyk will prioritize all Support Requests based on its reasonable assessment of the severity level of the problem reported; and use all reasonable endeavors to meet the timescales specified in the table above.
-* SLA times listed are the time frames in which you can expect the first response.
-* SLAs apply to support communications via Snyk's support portal only. Private Slack channels are designed for regular collaboration between Snyk and customer but are not subject to any specific support SLAs and should not be used for support communications.
+* Times listed are the time frames in which you can expect the first response.
+* First response times apply to support communications via Snyk's support portal only. Private Slack channels are designed for regular collaboration between Snyk and customer but are not subject to any specific first response times and should not be used for support communications.
 * For issues outside of typical support scope, those determined to require longer term fix, or part of future development cycles. Snyk will provide regular and meaningful updates on a case by case basis. Including but not limited to - new feature requests, items within Snyk’s long term development roadmap, complex bug fixes.
 *   Technical Success Managers do not provide break/fix support and will refer requests for technical issue resolution to Snyk's technical support team.
 
@@ -113,9 +113,9 @@ Maximize the value out of Snyk products by leveraging assigned expert and proact
 
 ### **Definitions of Snyk Global Support Hours**
 
-* **8x5**: Snyk support engineers actively respond to tickets within local business hours, Monday to Friday.
-* **24x5**: Snyk support engineers actively respond to tickets 24 hours a day, Monday to Friday.
-* **24x7**: Snyk support engineers actively respond to tickets 24 hours a day, Monday to Friday. Plus, for **urgent customer issues** outside of 24x5, Snyk provides an SLA and a 24-hour support telephone number. This is served by a telephone answering service which triggers our on-call engineers.
+* **8x5**: Snyk support engineers actively respond to tickets within customer's local business hours, Monday to Friday.
+* **24x5**: Snyk support engineers actively respond to tickets 24 hours a day, Monday to Friday in customer's local time zone.
+* **24x7**: Snyk support engineers actively respond to tickets 24 hours a day, Monday to Friday. Plus, for **urgent customer issues** outside of 24x5, Snyk provides a 24-hour support telephone number. This is served by a telephone answering service which triggers our on-call engineers.
 
 ### **Snyk Accelerate - Implementation Services (up to 90 days)**
 
@@ -127,7 +127,7 @@ Implementation Service is provided by a named contact (i.e. Implementation Consu
 * Complete DevSecOps Capability assessment: Snyk will facilitate a live workshop to assess the customer’s organization along Snyk’s DevSecOps Capability framework. As part of this assessment, we will establish a baseline maturity state and will help customers set goals for how they can improve both their overall DevSecOps capabilities as well as how they can specifically leverage Snyk to shift left in their own DevSecOps process.
 * Enablement Support: Snyk resources will lead an Admin UI training, and a Developer training at a time that is requested by the customer
 * Ongoing Support: During the duration of the implementation engagement, the Snyk team will engage directly with end users in a private, shared Slack channel to help answer product questions and connect users with training content, FAQs and other support resources
-* Onsite: Where requested, the Snyk team will provide implementation services onsite at the customer’s location (Travel expenses passed through at cost)
+* Onsite: Where requested, and agreed upon in writing, the Snyk team will provide implementation services onsite at the customer’s location (Travel expenses passed through at cost to customer)
 
 The customer will engage Snyk for a kickoff call within 30 days of the contract start date, at a time that is mutually agreed upon by the parties. The Snyk implementation services must be used within 120 days of the contract start date for all implementation services.
 
