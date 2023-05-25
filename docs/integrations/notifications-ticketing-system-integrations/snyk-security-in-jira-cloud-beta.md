@@ -9,7 +9,7 @@ Snyk Security in Jira Cloud helps developers identify, prioritize and triage sec
 {% hint style="info" %}
 **Feature availability**
 
-Snyk Security in Jira Cloud is in [Closed Beta](../../more-info/snyk-feature-release-process.md#closed-beta) and is available only by invitation from Snyk. Currently, only Snyk Open Source Projects are supported within this integration.&#x20;
+Snyk Security in Jira Cloud is in [Beta](../../more-info/snyk-feature-release-process.md#open-beta) and is available only by invitation from Snyk. Currently, only Snyk Open Source Projects are supported within this integration.&#x20;
 {% endhint %}
 
 ## Available plans and compatibility
