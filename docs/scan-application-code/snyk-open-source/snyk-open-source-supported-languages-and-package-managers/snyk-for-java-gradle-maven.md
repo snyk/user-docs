@@ -85,6 +85,14 @@ For information about the `snyk test` and `snyk monitor` options available for u
 * [Options for Gradle projects](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-gradle-projects) in the Monitor help
 * [Options for build tools](https://docs.snyk.io/snyk-cli/commands/test#options-for-build-tools) in the Test help
 * [Options for build tools](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-build-tools) in the Monitor help
+* [Options for unmanaged JAR files](../../../snyk-cli/commands/test.md#scan-all-unmanaged) in the Test help
+* [Options for unmanaged JAR files](../../../snyk-cli/commands/monitor.md#scan-all-unmanaged) in the Monitor help
+
+### Scan unmanaged JAR files&#x20;
+
+If you're not using Maven or Gradle but have JAR files, you can identify the open source packages these relate to using Snyk CLI.&#x20;
+
+:link:[ Scan unmanaged JAR files](snyk-for-java-gradle-maven.md#scan-unmanaged-jar-files)
 
 ### **Examples of how you can use Maven arguments with the Snyk CLI**
 
