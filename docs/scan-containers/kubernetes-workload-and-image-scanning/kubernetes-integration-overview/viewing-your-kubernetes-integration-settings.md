@@ -18,7 +18,7 @@ This feature is available in Enterprise plans. See [pricing plans](https://snyk.
 
 ![](<../../../.gitbook/assets/image (111) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
 
-5\. Create a [**Group** or **Org Service Account Token**](../../../enterprise-setup/service-accounts.md). This **Service Account Token** is needed during the Snyk Controller installation
+5\. Create a [**Group** or **Org Service Account Token**](../../../enterprise-setup/service-accounts.md). This **Service Account Token** is needed during the Snyk Controller installation. For more information including the permissions needed, see the [prerequisites](../../kubernetes-integration/snyk-controller-installation/prerequisites-for-snyk-controller.md).
 
 ## Viewing In the relevant organization:
 

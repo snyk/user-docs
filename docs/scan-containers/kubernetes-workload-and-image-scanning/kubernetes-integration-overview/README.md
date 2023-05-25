@@ -9,15 +9,16 @@ This feature is available in Enterprise plans. See [pricing plans](https://snyk.
 
 ## **How Kubernetes integration works**
 
-1. Your administrator installs a controller on your cluster, authenticating the integration with a unique integration ID and a service account token generated from the Snyk account. Install the controller with either of these options:
+1. Your administrator installs a controller on your cluster, authenticating the integration with a unique integration ID and a service account token with the needed permissions generated from the Snyk account. For more information including the permissions needed, see the [prerequisites](../../kubernetes-integration/snyk-controller-installation/prerequisites-for-snyk-controller.md).
+2. Install the controller with one of these options:
    * [Install the Snyk controller with Helm (Azure and Google Cloud Platform)](../../kubernetes-integration/snyk-controller-installation/install-the-snyk-controller-with-helm.md)
    * [Install the Snyk controller with OpenShift and OperatorHub](../../kubernetes-integration/snyk-controller-installation/install-the-snyk-controller-with-openshift-4-and-operatorhub.md)
    * [Install the Snyk controller on Amazon Elastic Kubernetes Service (Amazon EKS)](../../kubernetes-integration/snyk-controller-installation/install-the-snyk-controller-on-amazon-elastic-kubernetes-service-amazon-eks.md)
-2. The controller communicates with the Kubernetes API to determine which workloads (for instance the Deployment, ReplicationController, CronJob, etc.) are running on the cluster, find their associated images, and scan them directly on the cluster for vulnerabilities.
-3. From Snyk, collaborators select which workloads to import, or workloads can be imported automatically using annotations. These options are as described in [Adding Kubernetes workloads for security scanning](../../kubernetes-integration/kubernetes-integration-features/adding-kubernetes-workloads-for-security-scanning.md).
-4. For each workload that your collaborators import, Snyk displays the vulnerabilities found in each image as well as a summary of configuration issues identified with the workload.
-5. Snyk monitors your imported workloads on an ongoing basis, reporting on new vulnerabilities as they are disclosed whenever they affect your projects.
-6. Based on your configurations, if vulnerabilities are found, Snyk notifies you via email or Slack so that you can take immediate action.
+3. The controller communicates with the Kubernetes API to determine which workloads (for instance the Deployment, ReplicationController, CronJob, etc.) are running on the cluster, find their associated images, and scan them directly on the cluster for vulnerabilities.
+4. From Snyk, collaborators select which workloads to import, or workloads can be imported automatically using annotations. These options are as described in [Adding Kubernetes workloads for security scanning](../../kubernetes-integration/kubernetes-integration-features/adding-kubernetes-workloads-for-security-scanning.md).
+5. For each workload that your collaborators import, Snyk displays the vulnerabilities found in each image as well as a summary of configuration issues identified with the workload.
+6. Snyk monitors your imported workloads on an ongoing basis, reporting on new vulnerabilities as they are disclosed whenever they affect your projects.
+7. Based on your configurations, if vulnerabilities are found, Snyk notifies you via email or Slack so that you can take immediate action.
 
 {% hint style="warning" %}
 In order to maintain the health of the database, any information that relates to a workload that has not been **changed or updated for eight (8) days** will be removed. This can lead to failure on **retesting** the workload.
