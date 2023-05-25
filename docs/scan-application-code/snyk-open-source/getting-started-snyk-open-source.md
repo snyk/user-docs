@@ -35,7 +35,7 @@ See [View Project information](../../manage-issues/introduction-to-snyk-projects
 
 ### Fix vulnerabilities
 
-For some languages, Snyk can fix vulnerabilities using fix pull/merge requests (see [What languages do we support Fix Pull Request or Merge Requests](starting-to-fix-vulnerabilities/what-languages-do-we-support-fix-pull-requests-or-merge-requests.md)).
+For some languages, Snyk can fix vulnerabilities using fix pull/merge requests (see [What languages do we support Fix Pull Request or Merge Requests](broken-reference)).
 
 Navigate to the **Issues** view for a project:
 
