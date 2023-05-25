@@ -18,14 +18,6 @@ Testing each JAR file individually shows the name of the JAR file that was scann
 
 ## Recursively scanning all subfolders
 
-{% hint style="warning" %}
-**Deprecated method**
-
-To scan all subfolders natively, you can use `--scan-all-unmanaged` and add the `--all-projects` option.
-
-:link: [Snyk CLI Test options](../commands/test.md#scan-all-unmanaged)
-{% endhint %}
-
 Java apps often have JAR files in a number of different folders within an application.
 
 Below is a Linux/Mac Bash script that recurses through all subfolders starting with the current folder and tests each JAR file found.

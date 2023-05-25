@@ -241,12 +241,6 @@ Auto-detect maven JAR, WAR, and AAR files in a given folder.&#x20;
 --scan-all-unmanaged 
 ```
 
-To scan all subfolders recursively, add `--all-projects`.
-
-```
---scan-all-unmanaged --all-projects
-```
-
 **Note**: Custom-built JAR files, even with open source dependencies, are not supported.
 
 ## Options for Gradle projects
