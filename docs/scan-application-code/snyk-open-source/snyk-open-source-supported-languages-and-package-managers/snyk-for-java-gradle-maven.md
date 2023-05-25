@@ -47,8 +47,14 @@ However, for the most accurate results, Snyk recommends using the [Snyk CLI](../
 
 ### Gradle versions supported
 
+{% hint style="info" %}
+Gradle 8 is not yet supported in the CLI.&#x20;
+
+However, if your app does not use Gradle 8 specific features, it is generally possible to install Gradle 7 instead before running Snyk CLI scans
+{% endhint %}
+
 * CLI - Gradle `4.*`, `5.*`, `6.*`, `7.*` For more information see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
-* Git - Gradle `4.*`, `5.*`, `6.*`
+* Git - Gradle `4.*`, `5.*`, `6.*`, `7.*`
 
 ## Snyk CLI for Java and Kotlin projects (CI/CD)
 

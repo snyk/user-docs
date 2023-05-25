@@ -25,10 +25,10 @@ The steps to import a Project are as follows:
 
 * Select the repositories to use, then choose **Add selected repositories** to import the selected repositories into your project:
 
-<figure><img src="../../.gitbook/assets/image (184) (1).png" alt=""><figcaption><p>Add selected repositories</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (5) (1).png" alt=""><figcaption><p>Add selected repositories</p></figcaption></figure>
 
 {% hint style="info" %}
-Projects you select to import are shown with a ![Check mark in check box](<../../.gitbook/assets/image (230).png>).\
+Projects you select to import are shown with a ![Check mark in check box](<../../.gitbook/assets/image (7) (2).png>).\
 Projects previously imported are marked by a ✔.\
 Private repositories are marked with a![Padlock](<../../.gitbook/assets/Screenshot 2023-05-11 at 23.05.30.png>).\
 Forked repositories are marked with a ![Fork symbol](<../../.gitbook/assets/Screenshot 2023-05-11 at 23.15.46.png>)
