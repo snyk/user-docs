@@ -62,6 +62,18 @@ Generate exclude policy rules to be used by `snyk iac describe`.
 
 Test for any known security issue.
 
+### [snyk iac rules init](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/4706/snyk-cli/commands/iac-rules-init)
+
+Initialize custom rules project structure, relation, rule, or spec
+
+### [snyk iac rules test](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/4706/snyk-cli/commands/iac-rules-test)
+
+Run tests for all custom rules
+
+### [snyk iac rules push](https://app.gitbook.com/o/-M4tdxG8qotLgGZnLpFR/s/-MdwVZ6HOZriajCf5nXH/\~/changes/4706/snyk-cli/commands/iac-rules-push)
+
+Bundle and upload custom rule bundles to Snyk Cloud API
+
 ### [`snyk code`](https://docs.snyk.io/snyk-cli/commands/code)
 
 `Print the name of the snyk code` command `with its help option: snyk code test`
@@ -276,13 +288,21 @@ Lists of the options for Snyk CLI commands follow. Each option is followed by th
 
 \-`-config-dir`: [`iac describe`](https://docs.snyk.io/snyk-cli/commands/iac-describe)
 
-## `snyk iac update-exclude-policy command options`
+## `snyk iac update-exclude-policy` command options
 
 `--exclude-changed`: [`iac update-exclude-policy`](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy)
 
 `--exclude-missing`: [`iac update-exclude-policy`](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy)
 
 `--exclude-unmanaged`: [`iac update-exclude-policy`](https://docs.snyk.io/snyk-cli/commands/iac-update-exclude-policy)
+
+## `snyk iac rules push` command option
+
+`--delete`: [`iac rules push`](commands/iac-rules-push.md)
+
+## `snyk iac rules test` command option
+
+`--update-expected`: [`iac rules test`](commands/iac-rules-test.md)
 
 ## `snyk ignore` command options
 
