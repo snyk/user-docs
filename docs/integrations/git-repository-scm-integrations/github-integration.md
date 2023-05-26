@@ -126,15 +126,7 @@ You can review and adjust the pull request test settings using the Snyk GitHub I
 
 ## Required permissions scope for the GitHub integration
 
-If you are on a Snyk Enterprise plan, you can use [Snyk Broker](../../enterprise-setup/snyk-broker/) as a proxy between Snyk and your Source Code Management (SCM) system on-premise platforms, including Snyk Code, or your publicly-accessible Git-based repositories.
-
-Snyk Broker lets you view and control Snyk activity in those repositories for increased data security.
-
-### Brokered GitHub integrations
-
-All the operations, both those that are triggered via the Snyk Web UI and the automatic operations, are performed for a GitHub service account that has its token configured with the Broker.
-
-The table that follows provides a summary of the required access scopes for the configured token.
+The table that follows provides a summary of the required access scopes for GitHub integration. For information about the token in a brokered integration, see [GitHub - install and configure using Docker](../../enterprise-setup/snyk-broker/install-and-configure-snyk-broker/github-install-and-configure-broker/broker-example-set-up-snyk-broker-with-github.md). For details about permissions in a non-brokered integration, refer to the information that follows this table.
 
 | **Action**                                              | **Purpose**                                                                                                                                                                                                                                           | **Required permissions in GitHub** |
 | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
@@ -145,13 +137,11 @@ The table that follows provides a summary of the required access scopes for the 
 | Importing new projects to Snyk                          | Used to present a list of all the available repos in the GitHub org in the **Add Projects** screen (import popup).                                                                                                                                    | _admin:read:org, repo (all)_       |
 | Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests when PRs are created, updated triggered, merged, and so on.</li><li>Send push events to trigger PR checks.</li></ul> | _admin:repo\_hooks (read & write)_ |
 
-### Non-brokered GitHub integrations
-
 In non-brokered GitHub integrations, **operations that are triggered via the Snyk Web UI**, for example, opening a Fix PR or re-testing a Project, are performed on behalf of the acting user.&#x20;
 
-Therefore, a user who wants to perform this operation on GitHub via the Snyk UI must connect their GitHub account to Snyk and have the required permissions scope for the repositories where they want to perform these operations. See the [Required permissions scope for repositories](github-integration.md#h\_01eefvj14p8b3depeffvyvdwzj) section for details.
+Therefore, a user who wants to perform this operation on GitHub via the Snyk UI must connect their GitHub account to Snyk with the required permission scope for the repositories where they want to perform these operations. See the [Required permissions scope for repositories](github-integration.md#h\_01eefvj14p8b3depeffvyvdwzj) section for details.
 
-Operations that are **not triggered via the Snyk Web UI**, such as daily / weekly tests and automatic PRs (fix and upgrade), are performed on behalf of random Snyk Organization members who have connected their GitHub accounts to Snyk and have the required permission scope for the repository.
+Operations that are **not triggered via the Snyk Web UI**, such as daily and weekly tests and automatic PRs (fix and upgrade), are performed on behalf of random Snyk Organization members who have connected their GitHub accounts to Snyk and have the required permission scope for the repository.
 
 For public repositories that are non-brokered, some operations, such as creating the PR, may occasionally be performed by `snyk-bot@snyk.io`.
 
