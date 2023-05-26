@@ -1,6 +1,6 @@
 # GitHub integration
 
-Snyk's GitHub integration lets you:
+The Snyk GitHub integration lets you:
 
 * Continuously perform security scanning across all the integrated repositories
 * Detect vulnerabilities in your open-source components
@@ -10,17 +10,13 @@ Snyk's GitHub integration lets you:
 Enterprise plan customers should consider using [GitHub Enterprise integration](github-enterprise-integration.md). See [Using GitHub or GitHub Enterprise integration](using-github-or-github-enterprise-integration.md).
 {% endhint %}
 
-### GitHub integration: per user, not per Organization
+## GitHub integration: per user, not per Organization
 
-GitHub integration is set up for your own user account, not for a Snyk Organization. GitHub integration settings apply to all Organizations associated with your user account, but do not automatically apply to other user accounts in an Organization.
+GitHub integration is set up for your own user account, not for a Snyk Organization. GitHub integration settings apply to all Organizations associated with your user account but do not automatically apply to other user accounts in an Organization.
 
-So when you import a Snyk Project via your GitHub integration with the Snyk PR functionality enabled, Snyk PRs are created for that Project. However, if another user imports Projects with their GitHub integration after disabling the Snyk PR functionality, Snyk PRs are not created for the Projects they import.
+Thus **when you import a Snyk Project using your GitHub integration with the Snyk PR functionality enabled, Snyk PRs are created for that Project.** However, **if another user imports Projects with their GitHub integration after disabling the Snyk PR functionality, Snyk PRs are not created for the Projects they import**.
 
-#### API import limitations
-
-Similarly, you cannot use a GitHub integration to import public and private Projects via the Snyk API with a Snyk [Service Account](../../enterprise-setup/service-accounts.md), as the GitHub integration is associated with _your_ user account, not with the Snyk Organization.\
-\
-To import public and private Projects via the API with a Snyk Service Account, use the [GitHub Enterprise integration](github-enterprise-integration.md).
+You **cannot use a GitHub integration to import public and private Projects via the Snyk API** with a Snyk [Service Account](../../enterprise-setup/service-accounts.md), as the GitHub integration is associated with _your_ user account, not with the Snyk Organization. To import public and private Projects usng the API with a Snyk Service Account, use the [GitHub Enterprise integration](github-enterprise-integration.md).
 
 ## Connect GitHub to Snyk
 
@@ -30,13 +26,13 @@ See [Set up an integration](../../getting-started/quickstart/set-up-an-integrati
 
 ## GitHub integration settings
 
-To see all settings for your GitHub integration, go to the Snyk GitHub Integration settings page, go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings**, then select **GitHub** in the **INTEGRATIONS** section:
+To see all settings for your GitHub integration, go to the Snyk GitHub Integration settings page, then go to <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings**, and then select **GitHub** in the **INTEGRATIONS** section:
 
-<figure><img src="../../.gitbook/assets/Github-integrations-intro.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Github-integrations-intro.png" alt="GitHub integration settings"><figcaption><p>GitHub integration settings</p></figcaption></figure>
 
 You can then scroll down to the section required, and set the options accordingly:
 
-* [General settings](github-integration.md#general-settings)
+* [General settings](github-integration.md#github-integration-general-settings)
 * Pull requests:
   * [Open Snyk automatic PRs from a fixed GitHub account](github-integration.md#setting-an-account-to-open-snyk-prs)
   * [Automatic fix PRs](github-integration.md#project-monitoring-and-automatic-fix-pull-requests)
@@ -50,7 +46,7 @@ You can then scroll down to the section required, and set the options accordingl
   * [Detect Dockerfiles](../../scan-containers/scan-your-dockerfile/detect-vulnerable-bases-images-from-dockerfile.md)
   * [Update Dockerfile base images](../../scan-containers/scan-your-dockerfile/open-pull-requests-to-fix-vulnerable-base-images-in-your-dockerfile.md)
 
-### General settings
+## GitHub integration General settings
 
 Select **General** to view general settings:
 
@@ -106,22 +102,21 @@ Scroll down to the **Automatic fix PRs** section and set the options accordingly
 ### Commit signing
 
 {% hint style="info" %}
-**Feature availability**
-
-This feature is _not_ supported for brokered GitHub integrations.
+**Feature availability**\
+For availability with Snyk Broker, see the [Commit signing](../../enterprise-setup/snyk-broker/snyk-broker-commit-signing.md) page in the Broker docs.
 {% endhint %}
 
 All the commits in Snyk's pull requests are done by `snyk-bot@snyk.io` (a verified user on GitHub), and signed with a PGP key. All Snyk pull requests appear as verified on GitHub, thus providing your developers with the confidence that the fix and upgrade pull requests are generated by a trusted source.
 
 ### **Pull request status checks**
 
-The Snyk [PR Checks](../../scan-application-code/run-pr-checks/) feature allows Snyk to test any new PR in your repositories for security vulnerabilities and sends a status check to GitHub. This lets you see, directly in GitHub, whether the pull request introduces new security issues.
+The Snyk [PR Checks](../../scan-application-code/run-pr-checks/) feature allows Snyk to test any new PR in your repositories for security vulnerabilities and sends a status check to GitHub. This lets you see, directly in GitHub, whether or not the pull request introduces new security issues.
 
 This example shows how Snyk PR checks appear on the GitHub pull request page.
 
 <figure><img src="../../.gitbook/assets/pr_testing-14july2022.png" alt="Snyk pull request checks on GitHub pull request page"><figcaption><p>Snyk pull request checks on GitHub pull request page</p></figcaption></figure>
 
-You can review and adjust the pull request test settings via the Snyk GitHub Integration settings page in <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings** **>** **Integrations > Source control > GitHub**.
+You can review and adjust the pull request test settings using the Snyk GitHub Integration settings page in <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings** **>** **Integrations > Source control > GitHub**.
 
 <div align="left">
 
@@ -131,7 +126,7 @@ You can review and adjust the pull request test settings via the Snyk GitHub Int
 
 ## Required permissions scope for the GitHub integration
 
-If you are on a Snyk Enterprise plan, you can use [Snyk Broker](../../enterprise-setup/snyk-broker/) as a proxy between Snyk and your Source Code Management (SCM) system on-premise platforms, including Snyk Code Support, or your publicly-accessible Git-based repositories.
+If you are on a Snyk Enterprise plan, you can use [Snyk Broker](../../enterprise-setup/snyk-broker/) as a proxy between Snyk and your Source Code Management (SCM) system on-premise platforms, including Snyk Code, or your publicly-accessible Git-based repositories.
 
 Snyk Broker lets you view and control Snyk activity in those repositories for increased data security.
 
@@ -139,41 +134,45 @@ Snyk Broker lets you view and control Snyk activity in those repositories for in
 
 All the operations, both those that are triggered via the Snyk Web UI and the automatic operations, are performed for a GitHub service account that has its token configured with the Broker.
 
-The table below provides a summary of the required access scopes for the configured token.
+The table that follows provides a summary of the required access scopes for the configured token.
 
-| **Action**                                              | **Purpose**                                                                                                                                                                                                                                         | **Required permissions in GitHub** |
-| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| Daily / weekly tests                                    | Used to read manifest files in private repositories                                                                                                                                                                                                 | _repo (all)_                       |
-| Manual fix pull requests (triggered by the user)        | Used to create fix PRs in the monitored repositories                                                                                                                                                                                                | _repo (all)_                       |
-| Automatic fix and upgrade pull requests                 | Used to create fix or upgrade PRs in the monitored repositories                                                                                                                                                                                     | _repo (all)_                       |
-| Snyk tests on pull requests                             | Used to send pull request status checks whenever a new PR is created or an existing PR is updated                                                                                                                                                   | _repo (all)_                       |
-| Importing new projects to Snyk                          | Used to present a list of all the available repos in the GitHub org in the **Add Projects** screen (import popup)                                                                                                                                   | _admin:read:org, repo (all)_       |
-| Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests when PRs are created, updated triggered, merged, and so on</li><li>Send push events to trigger PR checks</li></ul> | _admin:repo\_hooks (read & write)_ |
+| **Action**                                              | **Purpose**                                                                                                                                                                                                                                           | **Required permissions in GitHub** |
+| ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| Daily / weekly tests                                    | Used to read manifest files in private repositories.                                                                                                                                                                                                  | _repo (all)_                       |
+| Manual fix pull requests (triggered by the user)        | Used to create fix PRs in the monitored repositories.                                                                                                                                                                                                 | _repo (all)_                       |
+| Automatic fix and upgrade pull requests                 | Used to create fix or upgrade PRs in the monitored repositories.                                                                                                                                                                                      | _repo (all)_                       |
+| Snyk tests on pull requests                             | Used to send pull request status checks whenever a new PR is created or an existing PR is updated.                                                                                                                                                    | _repo (all)_                       |
+| Importing new projects to Snyk                          | Used to present a list of all the available repos in the GitHub org in the **Add Projects** screen (import popup).                                                                                                                                    | _admin:read:org, repo (all)_       |
+| Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests when PRs are created, updated triggered, merged, and so on.</li><li>Send push events to trigger PR checks.</li></ul> | _admin:repo\_hooks (read & write)_ |
 
 ### Non-brokered GitHub integrations
 
-1. Operations that are triggered via the Snyk Web UI, for example, opening a Fix PR or retesting a project, are performed on behalf of the acting user. Therefore, a user who wants to perform this operation on GitHub via the Snyk UI must connect their GitHub account to Snyk, and have the required permissions scope for the repositories they want to perform these operations for. See the [Required permissions scope for repositories](github-integration.md#h\_01eefvj14p8b3depeffvyvdwzj) section for details.
-2. Operations that are not triggered via the Snyk Web UI, such as daily / weekly tests and automatic PRs (fix and upgrade), are performed on behalf of random Snyk Organization members who have connected their GitHub accounts to Snyk and have the required permission scope for the repository.
-3. For public repositories that are non-brokered, some operations, such as creating the PR, may occasionally be performed by `snyk-bot@snyk.io`.
+In non-brokered GitHub integrations, **operations that are triggered via the Snyk Web UI**, for example, opening a Fix PR or re-testing a Project, are performed on behalf of the acting user.&#x20;
+
+Therefore, a user who wants to perform this operation on GitHub via the Snyk UI must connect their GitHub account to Snyk and have the required permissions scope for the repositories where they want to perform these operations. See the [Required permissions scope for repositories](github-integration.md#h\_01eefvj14p8b3depeffvyvdwzj) section for details.
+
+Operations that are **not triggered via the Snyk Web UI**, such as daily / weekly tests and automatic PRs (fix and upgrade), are performed on behalf of random Snyk Organization members who have connected their GitHub accounts to Snyk and have the required permission scope for the repository.
+
+For public repositories that are non-brokered, some operations, such as creating the PR, may occasionally be performed by `snyk-bot@snyk.io`.
 
 {% hint style="info" %}
 A Snyk Organization administrator can [designate a specific GitHub account to use for opening fix and upgrade PRs](introduction-to-git-repository-integrations/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md).
 
-Note that Snyk will continue to use a random Snyk Organization member’s GitHub account to perform all the other operations. Therefore using this feature does not eliminate the need to connect users' GitHub accounts to Snyk.
+Note that Snyk will continue to use a random Snyk Organization member's GitHub account to perform all the other operations. Therefore using this feature does not eliminate the need to connect users' GitHub accounts to Snyk.
 {% endhint %}
 
 ## Required permission scope for repositories <a href="#h_01eefvj14p8b3depeffvyvdwzj" id="h_01eefvj14p8b3depeffvyvdwzj"></a>
 
 For Snyk to perform the required operation on monitored repositories, that is, reading manifest files on a frequent basis and opening fix or upgrade PRs, the accounts that are connected to Snyk, either directly or via Snyk Broker, must have the following access to the repositories:
 
-| **Action**                                              | **Purpose**                                                                                                                                                                                                                                           | **Required permissions on the repository** |
-| ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| Daily / weekly tests                                    | Used to read manifest files in private repos                                                                                                                                                                                                          | _Read_ or higher                           |
-| Snyk tests on pull requests                             | Used to send pull request status checks whenever a new PR is created or an existing PR is updated                                                                                                                                                     | _Write_ or higher                          |
-| Opening fix and upgrade pull requests                   | Used to create fix and upgrade PRs in the monitored repos                                                                                                                                                                                             | _Write_ or higher                          |
-| Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests (when PRs are created, updated triggered, merged, and so on)</li><li>Send push events to trigger PR checks</li></ul> | _Admin_                                    |
+| **Action**                                              | **Purpose**                                                                                                                                                                                                                                             | **Required permissions on the repository** |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| Daily / weekly tests                                    | Used to read manifest files in private repos.                                                                                                                                                                                                           | _Read_ or higher                           |
+| Snyk tests on pull requests                             | Used to send pull request status checks whenever a new PR is created or an existing PR is updated.                                                                                                                                                      | _Write_ or higher                          |
+| Opening fix and upgrade pull requests                   | Used to create fix and upgrade PRs in the monitored repos.                                                                                                                                                                                              | _Write_ or higher                          |
+| Snyk tests on pull requests - **initial configuration** | <p>Used to add SCM webhooks to the imported repos. Snyk uses these webhooks to:</p><ul><li>Track the state of Snyk pull requests (when PRs are created, updated triggered, merged, and so on).</li><li>Send push events to trigger PR checks.</li></ul> | _Admin_                                    |
 
-### **Setting an account to open Snyk PRs**
+## **Setting an account to open Snyk PRs**
 
 Snyk lets you designate a specific GitHub account to open fix and upgrade pull requests.
 
@@ -181,10 +180,11 @@ Snyk lets you designate a specific GitHub account to open fix and upgrade pull r
 The configured account is only used for opening PRs. All other operations are still performed on behalf of a randomly-selected Snyk Organization member who has connected their GitHub accounts to Snyk.
 {% endhint %}
 
-To use this feature, follow the steps below:
+To use this feature, follow these steps:
 
-1. Go to the GitHub Integrations settings page in the Snyk Web UI, via <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings** **>** **Integrations > Source control > GitHub.**
-2. In the **Open Snyk automatic PRs from a fixed GitHub account** section, enter your GitHub personal access token (you can [generate this from your GitHub account](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token))
+1. Go to the GitHub Integrations settings page in the Snyk Web UI via <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings** **>** **Integrations > Source control > GitHub.**
+2. In the **Open Snyk automatic PRs from a fixed GitHub account** section, enter your GitHub personal access token.\
+   You can [generate this from your GitHub account](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 3. Click **Save** to enable this feature.
 
 <div align="left">
@@ -194,12 +194,12 @@ To use this feature, follow the steps below:
 </div>
 
 {% hint style="info" %}
-Make sure that the GitHub account that you designate to open Snyk PRs has **write** level permissions or higher for the repos you want to monitor with Snyk.
+Ensure that the GitHub account that you designate to open Snyk PRs has **write-level** permissions or higher for the repos you want to monitor with Snyk.
 
 See [repository permission levels on GitHub](github-integration.md#required-permissions-scope-for-the-github-integration) for more information.
 {% endhint %}
 
-### **Assigning pull requests to users** <a href="#pr-assignment" id="pr-assignment"></a>
+## **Assigning pull requests to users** <a href="#pr-assignment" id="pr-assignment"></a>
 
 {% hint style="info" %}
 **Feature availability**
@@ -209,13 +209,13 @@ The Auto-assign PRs feature is supported only for private repositories.
 
 Snyk can automatically assign the pull requests it creates to ensure that they are handled by the right team members.
 
-Auto-assign for PRs can be enabled for the GitHub integration and all projects imported via GitHub, or on a per-project basis.
+Auto-assign for PRs can be enabled for the GitHub integration and all Projects imported via GitHub, or on a per-Project basis.
 
 Users can either be manually specified, and all will be assigned, or automatically selected based on the last commit user account.
 
-#### **Enable Auto-assign for all Projects in the GitHub integration**
+### **Enable Auto-assign for all Projects in the GitHub integration**
 
-To configure the Auto-assign settings for all the Projects from an imported private repository, go to the Github integration settings via <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings** **>** **Integrations > Source control > GitHub**, and select **Enable pull request assignees**.&#x20;
+To configure the Auto-assign settings for all the Projects from an imported private repository, go to the Github integration settings via <img src="../../.gitbook/assets/cog_icon.png" alt="Settings" data-size="line"> Organization **Settings** **>** **Integrations > Source control > GitHub** and select **Enable pull request assignees**.&#x20;
 
 You can then choose to assign PRs to the last user to change the manifest file or specified contributors.
 
@@ -225,15 +225,18 @@ You can then choose to assign PRs to the last user to change the manifest file o
 
 </div>
 
-#### **Enable Auto-assign for a single Project**
+### **Enable Auto-assign for a single Project**
 
-To configure the Auto-assign settings for a specific Project from an imported private repository.
+To configure the Auto-assign settings for a specific Project from an imported private repository, follow these steps:
 
 1. In the **Projects** tab for your Organization, select and expand the relevant private repository, select a Target, and click the **Settings** cog.\
-   <img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (9).png" alt="Settings cog" data-size="original">\
+   <img src="../../.gitbook/assets/image (56) (2) (3) (3) (3) (3) (4) (5) (5) (5) (5) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (9).png" alt="Settings cog for target settings" data-size="original">\
    The Project page opens.
-2. On the Project page, to apply unique settings for that specific Project, select the **Settings** tab in the upper right, and the **Github integration** \_\_ option in the left sidebar.
-3. Go to the **Pull request assignees for private repos** section at the bottom of the page and choose to **Inherit from integration settings** or **Customize only for this project**. Ensure **Auto-assign PRs for this private project** is enabled. Choose to assign PRs to the last user to change the manifest file or named contributors.
+2. On the Project page, apply unique settings for that specific Project.\
+   Select the **Settings** tab in the upper right and the **Github integration** \_\_ option in the left sidebar.
+3. Go to the **Pull request assignees for private repos** section at the bottom of the page and choose to **Inherit from integration settings** or **Customize only for this Project**.
+4. Ensure **Auto-assign PRs for this private Project** is enabled.
+5. Choose to assign PRs to the last user to change the manifest file or named contributors.
 
 <div align="left">
 
@@ -243,7 +246,7 @@ To configure the Auto-assign settings for a specific Project from an imported pr
 
 ## Disconnecting the GitHub integration
 
-Snyk’s GitHub SCM integration leverages the OAuth app integration. If you integrated GitHub without using Snyk Broker, you can disconnect it by following these steps:
+The Snyk GitHub SCM integration leverages the OAuth app integration. If you integrated GitHub without using Snyk Broker, you can disconnect it by following these steps:
 
 1. In GitHub, log in to the GitHub account that you used to create the integration.
 2. Go to your GitHub account settings and select the **Applications** option in the left sidebar.
@@ -253,27 +256,33 @@ Snyk’s GitHub SCM integration leverages the OAuth app integration. If you inte
 
 <figure><img src="../../.gitbook/assets/disconnect_github_3-july-2022.png" alt="Revoke OAuth authorization"><figcaption><p>Revoke OAuth authorization</p></figcaption></figure>
 
-Revoking this access effectively disconnects Snyk’s access to that GitHub account. Existing imported snapshots will persist in Snyk and continue to be re-scanned based on the existing snapshots until deleted. Snyk will no longer be able to import new projects from the GitHub integration and will no longer re-scan on new code merges.
+Revoking this access effectively disconnects Snyk’s access to that GitHub account.
 
-In addition, you must confirm that Snyk is not enabled on any existing **Branch protection rules**: From the main page of your GitHub repository, go to **Settings > Branches > Branch protection rules,** and make sure there are no **Status checks found in the last week for this repository.**
+* Existing imported snapshots will persist in Snyk and continue to be re-scanned based on the existing snapshots until deleted.
+* Snyk will no longer be able to import new Projects from the GitHub integration and will no longer re-scan on new code merges.
+
+In addition, you must confirm that Snyk is not enabled on any existing **Branch protection rules.**
+
+1. From the main page of your GitHub repository, go to **Settings > Branches > Branch protection rules.**
+2. Ensure there are no **Status checks found in the last week for this repository.**
 
 ## GitHub badges
 
-Once you are vulnerability-free, you can put a badge on your README page to let the world know that your package has no known security holes. This shows your users that you care about security, and tells them that they should care too.
+After you are vulnerability-free, you can put a badge on your README page to let the world know that your package has no known security holes. This shows your users that you care about security and tells them that they should care too.
 
 The badge indicates the vulnerability state of the latest commit on the master branch.
 
 ### Repository badges
 
-To show a badge for a specific Node.js, Ruby, or Java GitHub repository, copy the relevant HTML or markdown snippet below and replace `{username}/{repo}` with the GitHub username and repo you want to test.
+To show a badge for a specific Node.js, Ruby, or Java GitHub repository, copy the relevant HTML or markdown snippet that follows and replace `{username}/{repo}` with the GitHub username and repo you want to test.
 
-**HTML**
+#### **HTML for repository badge**
 
 ```
 <a href="https://snyk.io/test/github/{username}/{repo}">
 ```
 
-**Markdown**
+#### **Markdown for repository badge**
 
 ```
 [![Known Vulnerabilities](https://snyk.io/test/github/{username}/{repo}/badge.svg)](https://snyk.io/test/github/{username}/{repo})
@@ -302,39 +311,39 @@ To change the style of the badge, you can add the following query parameters aft
 
 To show a badge for a given npm package, copy the relevant snippet that follows, and replace `{name}` with the name of your package.
 
-**HTML**
+#### **HTML for npm badge**
 
 ```
 <img src="https://snyk.io/test/npm/{name}/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/npm/{name}" style="max-width:100%;"/>
 ```
 
-**Markdown**
+#### **Markdown for npm badge**
 
 ```
 [![Known Vulnerabilities](https://snyk.io/test/npm/{name}/badge.svg)](https://snyk.io/test/npm/{name})
 ```
 
-The badge shows the vulnerability state of the latest version of this package. To show the vulnerability state of a specific package, you can specify the version in the URL.
+The badge shows the vulnerability state of the latest version of this package. To show the vulnerability state of a specific package, specify the version in the URL.
 
-For example, to test version 1.2.3 of package name, you would use the URL: [https://snyk.io/test/npm/name/1.2.3/badge.svg](https://snyk.io/test/npm/name/1.2.3/badge.svg).
+For example, to test version 1.2.3 of `package name`, you would use the URL: [https://snyk.io/test/npm/name/1.2.3/badge.svg](https://snyk.io/test/npm/name/1.2.3/badge.svg).
 
 ### **Badges for private packages and repos**
 
-Badges currently work only for public npm packages and GitHub repositories, and fail if pointed at a private repository. To continuously watch for vulnerabilities in your GitHub repositories, both public and private, consider integrating them with Snyk.
+Badges currently work only for public npm packages and GitHub repositories and fail if pointed at a private repository. To continuously watch for vulnerabilities in your GitHub repositories, both public and private, consider integrating them with Snyk.
 
 ### **Badges for custom manifest file locations**
 
-By default, the badge will test against the first [valid manifest file](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/) it detects in the root of your project.
+By default, the badge will test against the first [valid manifest file](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/) it detects in the root of your Project.
 
-If your manifest file is in different location from the root of the repository, or if you have multiple manifest files for which you would like to show a badge , you can pass a targetFile query string parameter to direct the badge to test against another supported manifest file.
+If your manifest file is in a different location from the root of the repository, or if you have multiple manifest files for which you would like to show a badge, you can pass a target file query string parameter to direct the badge to test against another supported manifest file.
 
-**HTML**
+#### **HTML for custom locations**
 
 ```
 <a href="https://snyk.io/test/github/{username}/{repo}">
 ```
 
-**Markdown**
+#### **Markdown  for  custom locations**
 
 ```
 [![Known Vulnerabilities](https://snyk.io/test/github/{username}/{repo}/badge.svg?targetFile={path-to-target-file})](https://snyk.io/test/github/{username}/{repo})
