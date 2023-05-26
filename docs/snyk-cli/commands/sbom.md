@@ -10,7 +10,7 @@ The `snyk sbom` feature requires an internet connection.
 
 ## Usage
 
-`$ snyk sbom --format=<cyclonedx1.4+json|cyclonedx1.4+xml|spdx2.3+json> [--file=] [--unmanaged] [--org=<ORG_ID>] [--all-projects] [--exclude=<NAME>[,<NAME>...]] [--detection-depth=<DEPTH>] [--prune-repeated-subdependencies|-p] [<TARGET_DIRECTORY>]`
+`$ snyk sbom --format=<cyclonedx1.4+json|cyclonedx1.4+xml|spdx2.3+json> [--file=<FILE>] [--unmanaged] [--org=<ORG_ID>] [--all-projects] [--exclude=<NAME>[,<NAME>...]] [--detection-depth=<DEPTH>] [--prune-repeated-subdependencies|-p] [<TARGET_DIRECTORY>]`
 
 ## Description
 
