@@ -133,6 +133,10 @@ Whether the step should fail if issues and vulnerabilities are found.
 
 Whether the step should fail if Snyk fails to scan the project due to an error. Errors include scenarios like: failing to download Snyk's binaries, improper Jenkins setup, bad configuration, and server errors.
 
+**`monitorProjectOnBuild` (optional, default: \_none\_)**
+
+Whether to monitor the project on every build by taking a snapshot of its current dependencies on Snyk.io. Selecting this option will keep you notified about newly disclosed vulnerabilities and remediation options in the project.
+
 **`organization` (optional, default: \_automatic**\_**)**
 
 The Snyk Organization in which this project should be tested and monitored. See `--org` in the [Snyk CLI commands and options summary](https://docs.snyk.io/snyk-cli/cli-reference) for default behavior.
