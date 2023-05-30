@@ -62,15 +62,15 @@ Generate exclude policy rules to be used by `snyk iac describe`.
 
 Test for any known security issue.
 
-### [snyk iac rules init](commands/iac-rules-init.md)
+### [snyk iac rules init](https://docs.snyk.io/snyk-cli/commands/iac-rules-init)
 
 Initialize custom rules project structure, relation, rule, or spec
 
-### [snyk iac rules test](commands/iac-rules-test.md)
+### [snyk iac rules test](https://docs.snyk.io/snyk-cli/commands/iac-rules-test)
 
 Run tests for all custom rules
 
-### [snyk iac rules push](commands/iac-rules-push.md)
+### [snyk iac rules push](https://docs.snyk.io/snyk-cli/commands/iac-rules-push)
 
 Bundle and upload custom rule bundles to Snyk Cloud API
 
