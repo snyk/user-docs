@@ -36,6 +36,11 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * Alpine Linux 3.3
 * Alpine Linux 3.2
 
+### AlmaLinux
+
+* AlmaLinux 9
+* AlmaLinux 8
+
 ### Amazon Linux
 
 * Amazon Linux 2023
