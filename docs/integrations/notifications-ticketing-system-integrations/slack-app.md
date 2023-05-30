@@ -35,6 +35,13 @@ After this step is complete, you can configure the integration to choose which S
 
 <figure><img src="../../.gitbook/assets/slack-app4.png" alt="Choose Slack channel and severity level for the notifications from the Organization"><figcaption><p>Choose Slack channel and severity level for the notifications from the Organization</p></figcaption></figure>
 
+{% hint style="info" %}
+To add the Snyk for Slack app to a private channel, you must first add the app manually to the channel from within Slack and then select the channel within the Snyk integration.
+
+In the Private channel, select **Channel settings - Integrations**, and then **Add an app**. Search for **Snyk for Slack** and select **add**. \
+After you have done this, the channel is displayed on the Settings page for the integration.
+{% endhint %}
+
 ## Remove the Snyk app for Slack
 
 To remove the Snyk app for Slack, navigate to the settings page, locate **Remove Slack Snyk app** at the bottom of the page, and click the **Disconnect Slack** button:
