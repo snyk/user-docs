@@ -1,6 +1,6 @@
 # Snyk Container - Supported operating system distributions
 
-## About supported operating system distributions
+About supported operating system distributions
 
 {% hint style="info" %}
 For environments supported with other Snyk products, see: [Snyk Open Source - supported languages and package managers](../../scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/), [Snyk Code - Supported languages and frameworks](../../scan-application-code/snyk-code/snyk-code-language-and-framework-support.md), and [Snyk IaC and Cloud - Supported providers](../../scan-cloud-deployment/supported-providers-iac-and-cloud.md).
@@ -15,6 +15,11 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 {% endhint %}
 
 ## Supported Linux distributions
+
+### AlmaLinux
+
+* AlmaLinux 9
+* AlmaLinux 8
 
 ### Alpine Linux
 
@@ -36,11 +41,6 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * Alpine Linux 3.3
 * Alpine Linux 3.2
 
-### AlmaLinux
-
-* AlmaLinux 9
-* AlmaLinux 8
-
 ### Amazon Linux
 
 * Amazon Linux 2023
@@ -48,16 +48,16 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * Amazon Linux 2
 * Amazon AMI 2018.03
 
-### CentOS Stream
-
-* CentOS Stream 9
-* CentOS Stream 8
-
 ### CentOS Linux
 
 * CentOS Linux 8
 * CentOS Linux 7
 * CentOS Linux 6
+
+### CentOS Stream
+
+* CentOS Linux 9
+* CentOS Linux 8
 
 ### Debian
 
