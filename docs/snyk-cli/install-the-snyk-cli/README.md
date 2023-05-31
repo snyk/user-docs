@@ -18,7 +18,7 @@ Snyk also provides these standalone executables on the Snyk Content Delivery Net
 For example, to download and run the latest Snyk CLI on macOS, you could run:
 
 ```bash
-curl https://static.snyk.io/cli/latest/snyk-macos -o snyk
+curl --compressed https://static.snyk.io/cli/latest/snyk-macos -o snyk
 chmod +x ./snyk
 mv ./snyk /usr/local/bin/
 ```
