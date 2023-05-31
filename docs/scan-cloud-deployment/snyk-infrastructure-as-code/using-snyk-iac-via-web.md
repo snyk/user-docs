@@ -1,32 +1,32 @@
 # Using Snyk IaC with the Web UI
 
-## View project vulnerabilities
+You can use Snyk IaC with the [Snyk Web UI](../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md) to find and fix issues in configuration files.
 
-Use Snyk IaC with the [Snyk Web UI](../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md) to find and fix issues in configuration files.
+1. In your **Projects** listing, select the Project to open.
+2. Examine the information and issue cards for that Project:
 
-1. In your **Projects** area, select the project to open
-2. Snyk IaC displays information and issue cards for that project:
+<figure><img src="../../.gitbook/assets/image (2) (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk Project issue card"><figcaption><p>Snyk Project issue card</p></figcaption></figure>
 
-![](<../../.gitbook/assets/image (2) (3) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+The information available shows [Snyk Project ](../../manage-issues/introduction-to-snyk-projects/)information including:
 
-Information available shows standard Snyk Project information (see [introduction-to-snyk-projects](../../manage-issues/introduction-to-snyk-projects/ "mention")), including:
-
-* Snapshot information showing when the project was last tested.
-* **Overview**, **History** and **Settings** information. For example, use the **History** section to view previous snapshots of projects.
-* Filters on the left of the screen.
+* Snapshot information showing when the Project was last tested
+* **Overview**, **History,** and **Settings** information.\
+  You can use the **History** section to view previous snapshots of Project.
+* Filters on the left of the screen
 
 ## Issue card details
 
 Each issue card shows specific details about that issue:
 
-![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.24.14.png>)
+<figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.24.14.png" alt="Issue card details"><figcaption><p>Issue card details</p></figcaption></figure>
 
-Card details include:
+Details on the issue card include:
 
-* The severity level (for example, **H** for high) and the name of the issue (for example, **Non-encrypted S3 Bucket**).
-* The **ID** of the security rule (e.g. **SNYK-CC-TF-4**): click the link to view more information in the [Snyk Security Rules](https://snyk.io/security-rules).
-* A **snippet** of your code showing the exact area that is vulnerable.
-* The exact **path** of the issue.
+* The severity level, for example, **H** for high, and the name of the issue, for example, **Non-encrypted S3 Bucket**
+* The **ID** of the security rule, for example, **SNYK-CC-TF-4**\
+  Click the link to view more information in the [Snyk Security Rules](https://snyk.io/security-rules).
+* A **snippet** of your code showing the exact area that is vulnerable
+* The exact **path** of the issue
 * More details, such as:
   * a short **description** of the issue
   * the **impact** of the issue
@@ -34,22 +34,24 @@ Card details include:
 
 Click **Full details** to see a preview of the full code:
 
-![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.24.20.png>)
+<figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.24.20.png" alt="Preview of the full code"><figcaption><p>Preview of the full code</p></figcaption></figure>
 
-Click **Ignore** to ignore this vulnerability (see [Ignore Issues](../../manage-issues/issue-management/ignore-issues.md))
+Click **Ignore** to ignore this vulnerability. For details, see [Ignore Issues](../../manage-issues/issue-management/ignore-issues.md).
 
-### Notes
+## Examples of results displayed
 
-* Terraform Cloud and Helm will not show a code snippet, but just the card details. They will also not have a **Full details** button to show the preview of the full code.\
-  Examples:
+### Terraform Cloud and Helm examples
 
-![](<../../.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+Terraform Cloud and Helm do not show a code snippet, only the card details. There is no **Full details** button to show the preview of the full code.
 
-![Terraform Cloud](<../../.gitbook/assets/image (100) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png>)
+<figure><img src="../../.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Details for Helm"><figcaption><p>Details for Helm</p></figcaption></figure>
 
-* In some cases that we can not identify the exact line of the vulnerable path in the file, we will not show a code snippet, but an info message and the card details. If able to, we will show the **Full details** button so that a preview of the full code can be seen.\
-  Example:
+<figure><img src="../../.gitbook/assets/image (100) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="Details for Terraform Cloud"><figcaption><p>Details for Terraform Cloud</p></figcaption></figure>
 
-![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.07.png>)
+### Examples without the line with the vulnerable path
 
-![](<../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.17.png>)
+If Snyk can not identify the exact line of the vulnerable path in the file, Snyk does not show a code snippet, only an info message and the card details. If possible, Snyk shows the **Full details** button so you can see a preview of the full code.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.07.png" alt="Card detils with info message"><figcaption><p>Card detils with info message</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.17.png" alt="Full details display"><figcaption><p>Full details display</p></figcaption></figure>
