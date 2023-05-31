@@ -3,7 +3,7 @@
 {% hint style="info" %}
 Using the same integration id, you can import **many** clusters to **one** Snyk Organization by giving clusters a unique cluster name during installation.
 
-You can also import **one** cluster to **multiple** Snyk Organizations in manual import by [cloning an integration across your Snyk orgs](../../../integrations/git-repository-scm-integrations/introduction-to-git-repository-integrations/clone-an-integration-across-your-snyk-organizations.md), so the integrations have the same integration id.
+You can also import **one** cluster to **multiple** Snyk Organizations in manual import by [cloning an integration across your Snyk orgs](../../../enterprise-setup/snyk-broker/clone-an-integration-across-your-snyk-organizations.md), so the integrations have the same integration id.
 
 **One Snyk Organization has a limit of 25,000 projects.** For more information,  consult your SCM.
 {% endhint %}
