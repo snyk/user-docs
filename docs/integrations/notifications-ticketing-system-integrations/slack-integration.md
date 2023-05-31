@@ -2,6 +2,10 @@
 
 You can set up Slack to receive Snyk’s alerts about new vulnerabilities that affect your Projects and new upgrades or patches that have become available.
 
+{% hint style="info" %}
+Vulnerabilities detected on initial import of projects are not sent to Slack immediately.
+{% endhint %}
+
 You will get the following alerts in Slack.
 
 A newly disclosed vulnerability affects you:

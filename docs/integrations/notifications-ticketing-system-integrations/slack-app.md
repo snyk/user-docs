@@ -7,6 +7,10 @@ When the Snyk app for Slack is released, Snyk encourages all customers using the
 * Improved Support for Snyk Products (Open Source, Code, Container, and IaC)
 * Support for filtering on severity levels
 
+{% hint style="info" %}
+Vulnerabilities detected on initial import of projects are not sent to Slack immediately.
+{% endhint %}
+
 ## Overview of the Snyk app for Slack
 
 The Snyk app for Slack lets you receive new issue notifications from your Snyk Projects in your Slack workspace. It is based on [Snyk Apps](../../snyk-api-info/snyk-apps/) that give you the benefit of more granular scopes and more ability to configure notifications at the Organization and Project level.
