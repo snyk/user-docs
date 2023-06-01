@@ -2,7 +2,7 @@
 
 Snyk tests and monitors your Terraform files from your source code repositories, guiding you with advice on how you can better secure your cloud environment--catching misconfigurations before you push to production and helping you to fix them.
 
-## Supported Git repositories and file formats
+## Supported Git repositories and Terraform file formats
 
 Snyk currently scans Terraform (`.tf`) files when they are imported from an integrated Git repository. You can scan a Terraform module repository by importing the repo that holds the module from an SCM or by scanning the directory itself using `snyk iac test` CLI command.
 
@@ -15,7 +15,7 @@ See the Snyk blog post about the ability to interpolate variables: [Snyk IaC pub
 ### **Prerequisites for scanning Terraform files**
 
 * You must be an administrator for the Organization you are configuring in Snyk.
-* Ensure you have already integrated your Git repository. For details, see [Git repository (SCM) integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations).
+* Ensure you have already integrated your Git repository. For details, see [Git repository (SCM) integrations](../../../integrations/git-repository-scm-integrations/).
 
 ### **Configure Snyk to scan Terraform files**
 

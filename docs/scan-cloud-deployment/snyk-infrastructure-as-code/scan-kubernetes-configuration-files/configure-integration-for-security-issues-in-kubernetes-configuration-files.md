@@ -1,32 +1,27 @@
-# Configure integration for security issues in Kubernetes configuration files
+# Configure integration to find security issues in Kubernetes configuration files
 
-Snyk tests and monitors Kubernetes configurations stored in your source code repositories and provides information, tips, and tricks to better [secure a Kubernetes environment](https://snyk.io/learn/kubernetes-security/). This helps to catch misconfigurations before they are pushed to production, as well as providing fixes for vulnerabilities.
+Snyk tests and monitors Kubernetes configurations stored in your source code repositories and provides information, tips, and tricks to better [secure a Kubernetes environment](https://snyk.io/learn/kubernetes-security/). This helps to catch misconfigurations before they are pushed to production, as well as provide fixes for vulnerabilities.
 
-### Supported Git repositories and file formats
+## Supported Git repositories and Kubernetes file formats
 
-Snyk currently scans your Kubernetes configuration files in JSON and YAML format when imported from your integrated Git repository.
+Snyk currently scans your Kubernetes configuration files in JSON and YAML format when they are imported from your integrated Git repository.
 
-### Configure Snyk to scan Kubernetes configuration files
+## Configure Snyk to scan Kubernetes configuration files
 
-#### **Prerequisites**
+### **Prerequisites for scanning Kubernetes configuration files**
 
-* Administrator access for the organization
-* Check Git repository access and authorization--more info at [Git repository (SCM) integrations](https://support.snyk.io/hc/en-us/sections/360001138098-Git-repository-SCM-integrations).
+* Administrator access for the Organization
+* Git repository access and authorization\
+  For details, see [Git repository (SCM) integrations](../../../integrations/git-repository-scm-integrations/).
 
-#### **Configure Snyk**
+### **Configure Snyk to scan Kubernetes configuration files**
 
-Log in to the Snyk Web UI ([app.snyk.io](https://app.snyk.io)), and navigate to the relevant group and organization that you want to manage
+* Log in to the Snyk Web UI ([app.snyk.io](https://app.snyk.io)), and navigate to the relevant Group and Organization that you want to manage.\
+  Integrations are managed per Organization.
+* To enable Snyk to detect Kubernetes configuration files, in the Infrastructure as Code settings, toggle the setting to enable Snyk to detect Infrastructure as code files.
+* If needed, review and adjust the **Infrastructure as code** **Severity settings** on the Kubernetes tab in the example.\
+  Check to select the file types to scan, CloudFormation, Terraform, or both, and from the pulldown selection, choose the severity level for each Deployment.
 
-{% hint style="info" %}
-**Note**\
-Integrations are managed per organization.
-{% endhint %}
+<figure><img src="../../../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Select Severity settings for IaC scans"><figcaption><p>Select Severity settings for IaC scans</p></figcaption></figure>
 
-From here:
-
-1. Enable Snyk to detect Kubernetes configuration files by enabling the flag in the settings ![cog\_icon.png](../../../.gitbook/assets/cog\_icon.png) > **Infrastructure as code** page:
-2. If needed, review and adjust settings in the **Infrastructure as code** settings:
-
-![](<../../../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
-
-The number of tests per product are based on account plans. For information on plans and test limits, [view our plans](https://snyk.io/plans/).
+The number of tests you can run per product is based on your account plan. For details, see the [plans and pricing](https://snyk.io/plans/) page,

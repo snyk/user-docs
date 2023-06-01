@@ -423,7 +423,7 @@
       * [Configure your integration to find security issues in your CloudFormation files](scan-cloud-deployment/snyk-infrastructure-as-code/scan-cloudformation-files/configure-your-integration-to-find-security-issues-in-your-cloudformation-files.md)
       * [Scan and fix security issues in your CloudFormation files](scan-cloud-deployment/snyk-infrastructure-as-code/scan-cloudformation-files/scan-and-fix-security-issues-in-your-cloudformation-files.md)
     * [Scan Kubernetes configuration files](scan-cloud-deployment/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/README.md)
-      * [Configure integration for security issues in Kubernetes configuration files](scan-cloud-deployment/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/configure-integration-for-security-issues-in-kubernetes-configuration-files.md)
+      * [Configure integration to find security issues in Kubernetes configuration files](scan-cloud-deployment/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/configure-integration-for-security-issues-in-kubernetes-configuration-files.md)
       * [Scan and fix security issues in Kubernetes configuration files](scan-cloud-deployment/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/scan-and-fix-security-issues-in-kubernetes-configuration-files.md)
       * [Scan and fix security issues in Helm Charts](scan-cloud-deployment/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/scan-and-fix-security-issues-in-helm-charts.md)
       * [Working with Kubernetes configuration file test results](scan-cloud-deployment/snyk-infrastructure-as-code/scan-kubernetes-configuration-files/working-with-kubernetes-configuration-file-test-results.md)
