@@ -23,7 +23,7 @@ See the Snyk blog post about the ability to interpolate variables: [Snyk IaC pub
   Integrations are managed per Organization.
 * Toggle the setting to enable Snyk to detect Infrastructure as code files as shown:
 
-<figure><img src="../../../.gitbook/assets/snyk-iac-enable.png" alt="Enable detecting infrastructure as code files"><figcaption><p>Enable detecting infrastructure as code files</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk-iac-enable.png" alt="Enable detecting infrastructure as code configuration files"><figcaption><p>Enable detecting infrastructure as code configuration files</p></figcaption></figure>
 
 * If needed, review and adjust the **Infrastructure as code** **Severity settings** on the AWS tab in the example.\
   Check to select the file types to scan, CloudFormation, Terraform, or both, and from the pulldown selection, choose the severity level for each API Gateway.

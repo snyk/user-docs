@@ -1,25 +1,25 @@
 # Scan and fix security issues in your CloudFormation files
 
-Snyk scans CloudFormation code for misconfigurations and security issues. For configuration files, once scanned, Snyk reports on any misconfigurations based on the settings administrators implement and makes recommendations for fixes accordingly.
+Snyk scans CloudFormation code for misconfigurations and security issues. After configuration files are scanned, Snyk reports on any misconfigurations based on the settings that administrators implement and makes recommendations for fixes accordingly.
 
-## **Prerequisites**
+## **Prerequisites for scanning and fixing issues in CloudFormation files**
 
-* An administrator integrates the organization with a preferred Git repository and enables the detection of configuration files as described in [Configure your integration to find security issues in your CloudFormation files](https://docs.snyk.io/snyk-infrastructure-as-code/scan-cloudformation-files/configure-your-integration-to-find-security-issues-in-your-cloudformation-files).
-* The Snyk account and CloudFormation files will be in `JSON` and `YAML` formats.
+* An administrator integrates the Organization with a preferred Git repository and enables the detection of configuration files as described in [Configure your integration to find security issues in your CloudFormation files](configure-your-integration-to-find-security-issues-in-your-cloudformation-files.md).
+* The Snyk account and CloudFormation files are in `JSON` and `YAML` formats.
 
 ## Scan and fix configuration files
 
-* Log in to the account and navigate to the relevant group and organization.
-* Re-import repositories if testing occurred before the infrastructure as code feature was enabled in order to detect the CloudFormation code:
+* Log in to the account and navigate to the relevant Group and Organization.
+* If you  imported your repositories for testing before the infrastructure as code feature was enabled by your administrator, from the Add project screen, re-import that repository in order to detect the CloudFormation code:
 
-![](<../../../.gitbook/assets/screenshot\_2020-07-09\_at\_12.44.03 (1) (1) (3) (3) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (4).png>)
+<figure><img src="../../../.gitbook/assets/screenshot_2020-07-09_at_12.44.03 (1) (1) (3) (3) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (4).png" alt="Add project screen"><figcaption><p>Add project screen</p></figcaption></figure>
 
-* Every time a repository is scanned:
-  * Every CloudFormation file is imported as a separate project, grouped together per repository, similar to this example:
+Every time a repository is scanned, every CloudFormation file is imported as a separate Project, grouped together per repository, similar to the example shown.
 
-![](<../../../.gitbook/assets/image (231).png>)
+If you re-imported the repository in order to import the CloudFormation files, then Snyk imports and re-tests the already imported application manifest files, displaying the test time as "now".
 
-* If the repository was re-imported: in order to then import the CloudFormation files, Snyk imports and re-tests the existing application manifest files--displaying the test time as "now".
-  * Click a project link to view the scan results and to help view details on the CloudFormation code:
+<figure><img src="../../../.gitbook/assets/image (231).png" alt="List of CloudFormation Projects"><figcaption><p>List of CloudFormation Projects</p></figcaption></figure>
 
-![](<../../../.gitbook/assets/image (139) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+* Click a Project link to view the scan results and details for the CloudFormation code:
+
+<figure><img src="../../../.gitbook/assets/image (139) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="CloudFormation Project detail"><figcaption><p>CloudFormation Project detail</p></figcaption></figure>
