@@ -1,25 +1,26 @@
 # Scan and fix security issues in Terraform files
 
-Snyk scans your Terraform code for misconfigurations and security issues as well. For configuration files, once scanned, Snyk reports on any misconfigurations based on the settings your administrator has implemented, and makes recommendations for fixing accordingly.
+Snyk scans your Terraform code for misconfigurations and security issues as well. After scanning configuration files, Snyk reports on any misconfigurations based on the settings your administrator implemented, and makes recommendations for fixing accordingly.
 
-## Prerequisites
+## Prerequisites for scanning and fixing issues in Terraform files
 
-* An administrator should integrate your organization with your preferred Git repository and enable detection of configuration files as described [here](https://docs.snyk.io/snyk-infrastructure-as-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess).
-* You must have a Snyk account and your Terraform files should be in `.tf` format.
-* We currently detect AWS, Azure and GCP related security issues.
+* An administrator should integrate your Organization with your preferred Git repository and enable detection of configuration files as described on [Configure your integration to find security issues in your Terraform files](configure-your-integration-to-find-security-issues-in-your-terraform-filess.md)
+* You must have a Snyk account, and your Terraform files should be in `.tf` format.
+* We currently detect AWS, Azure, and GCP-related security issues.
 
-## Scan and fix your configuration files
+## Scan and fix your Terraform configuration files
 
-* Log in to your account and navigate to the relevant group and organization that you want to manage.
-* If you already imported your repositories for testing before the infrastructure as code feature was enabled by your administrator, then you should re-import that repository in order to detect the Terraform code:
+* Log in to your account and navigate to the relevant Group and Organization that you want to manage.
+* If you already imported your repositories for testing before the infrastructure as code feature was enabled by your administrator, re-import that repository in order to detect the Terraform code from the Add project screen:
 
-![](<../../../.gitbook/assets/screenshot\_2020-07-09\_at\_12.44.03 (1) (1) (3) (3) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (5).png>)
+<figure><img src="../../../.gitbook/assets/screenshot_2020-07-09_at_12.44.03 (1) (1) (3) (3) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (5).png" alt="Add project screen"><figcaption><p>Add project screen</p></figcaption></figure>
 
-* Every time a repository is scanned:
-  * Every Terraform file is imported as a separate project, grouped together per repository, similar to this example: (If you re-imported the repository in order to import the Terraform files, then Snyk imports and re-tests the already imported application manifest files - displaying the test time as "now".)
+Every time a repository is scanned, every Terraform file is imported as a separate Project, grouped together per repository, similar to the example shown.
 
-![](<../../../.gitbook/assets/image (205).png>)
+If you re-imported the repository in order to import the Terraform files, then Snyk imports and re-tests the already imported application manifest files, displaying the test time as "now."
 
-* Click the project link you're interested in, to view the scan results and to help correct your Terraform code:
+<figure><img src="../../../.gitbook/assets/image (205).png" alt="List of Terraform Projects"><figcaption><p>List of Terraform Projects</p></figcaption></figure>
 
-![](<../../../.gitbook/assets/image (340) (1).png>)
+* Click the link for the Project of interest to you to view the scan results and to help correct your Terraform code:
+
+<figure><img src="../../../.gitbook/assets/image (340) (1).png" alt="Terraform project detail"><figcaption><p>Terraform project detail</p></figcaption></figure>

@@ -2,23 +2,21 @@
 description: Support and limitations for the Terraform AWS provider.
 ---
 
-# Terraform AWS Provider Support
+# Terraform AWS Provider support
 
 {% hint style="warning" %}
-Version **4.0.0** of the **AWS Terraform Provider** introduced changes in how S3 services are defined. With v4.0 the definition of S3 services is now spread across several resource blocks within Terraform. If you defined an instance of a S3 bucket across multiple files this update is a breaking change and may have negatively impacted your security results from Snyk IaC.
+Version **4.0.0** of the **AWS Terraform Provider** introduced changes in how S3 services are defined. With v4.0, the definition of S3 services is now spread across several resource blocks within Terraform. If you defined an instance of an S3 bucket across multiple files, this update is a breaking change and may have negatively impacted your security results from Snyk IaC.
 {% endhint %}
-
-## Summary
 
 {% hint style="info" %}
 From the Terraform documentation: _To help distribute the management of S3 bucket settings via independent resources, various arguments and attributes in the_ `aws_s3_bucket` _resource have become read-only. Configurations dependent on these arguments should be updated to use the corresponding_ `aws_s3_bucket_*` _resource._
 {% endhint %}
 
-In order to migrate to Terraform v4.0.0 you will need to refactor and re-import your S3 service definitions. Depending on how you choose to do this, it may limit your coverage of security findings.
+To migrate to Terraform v4.0.0, you must refactor and re-import your S3 service definitions. Depending on how you choose to do this, it may limit your coverage of security findings.
 
-Please see the [Terraform V4 upgrade guide from Hashicorp](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/guides/version-4-upgrade) for more details
+See the [Terraform V4 upgrade guide from Hashicorp](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/guides/version-4-upgrade) for more details
 
-## Example
+## Example of Terraform AWS Provider support
 
 Consider the following example of defining an S3 bucket with an ACL using Terraform **v3.x.x** in a file named `s3.tf`
 
@@ -33,7 +31,7 @@ resource "aws_s3_bucket" "example" {
 
 The definition of the S3 bucket is in one resource block. If you scanned this file using `snyk iac test s3.tf` you would get a security finding for the permissive ACL settings.
 
-With **v4.0.0** of the provider, certain S3 bucket properties are now defined in their own resources. Continuing the example from above, the ACL property has moved to its own resource so the refactored Terraform would look as follows.
+With **v4.0.0** of the Provider, certain S3 bucket properties are now defined in their own resources. Continuing the previous example, the ACL property has moved to its own resource, so the refactored Terraform looks like this.
 
 {% code title="s3.tf" %}
 ```hcl
@@ -48,11 +46,11 @@ resource "aws_s3_bucket_acl" "example" {
 ```
 {% endcode %}
 
-If you scan this file with `snyk iac test s3.tf` you will get the same results as before for the permissive ACL settings.
+If you scan this file using `snyk iac test s3.tf` you will get the same results as before for the permissive ACL settings.
 
-## Limitations
+## Limitations of support for Terraform AWS Provider
 
-You may choose to structure your code differently, for example having the S3 bucket definition and its associated properties in separate Terraform files. e.g.
+You may choose to structure your code differently, for example, by having the S3 bucket definition and its associated properties in separate Terraform files:
 
 {% code title="s3_bucket.tf" %}
 ```hcl
@@ -71,8 +69,8 @@ resource "aws_s3_bucket_acl" "example" {
 ```
 {% endcode %}
 
-If you scanned these files you will either not currently not receive a security issue, or may receive a false positive for the permissive ACL, this is because we cannot currently link the two resources together.
+If you scan these files, you will either not receive a security issue or receive a false positive for the permissive ACL. This is because Snyk cannot currently link the two resources together.
 
-We are currently working on adding support for this additional use-case to the product.
+Snyk is working on adding support for this additional use case to the product.
 
 An interim workaround is to define the resources in a single Terraform file.
