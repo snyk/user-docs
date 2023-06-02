@@ -44,9 +44,9 @@ After you complete the installation steps on this page and the [configuration](h
 ## Supported languages, package managers, and frameworks
 
 * For Snyk Open Source, the JetBrains plugin supports the languages and package managers supported by Snyk Open Source and the CLI. See [Open Source - Supported languages and package managers](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support).
-* For Snyk Code, the Eclipse plugin supports all the [languages and frameworks supported by Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#language-support-with-snyk-code-ai-engine).
+* For Snyk Code, the JetBrains plugin supports all the [languages and frameworks supported by Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support#language-support-with-snyk-code-ai-engine).
 * For Snyk Container: the JetBrains plugin supports all the [operating system distributions supported by Snyk Container](https://docs.snyk.io/products/snyk-container/snyk-container-security-basics/supported-operating-system-distributions).
-* For Snyk IaC, the Eclipse plugin supports the following IaC templates: Terraform, Kubernetes, CloudFormation, and Azure Resource Manager.
+* For Snyk IaC, the JetBrains plugin supports the following IaC templates: Terraform, Kubernetes, CloudFormation, and Azure Resource Manager.
 
 ## Supported operating systems and architecture
 
