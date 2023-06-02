@@ -413,7 +413,7 @@
       * [Understanding the IaC CLI test results](scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-the-cli-test-output/README.md)
         * [Snyk IaC CLI test results (v. 1.939.0 and later)](scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-the-cli-test-output/snyk-iac-cli-test-results-v.-1.939.0-and-later.md)
         * [Snyk IaC CLI test results (v. 1.938.0 and earlier)](scan-cloud-deployment/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/understanding-the-cli-test-output/snyk-iac-cli-test-results-v.-1.938.0-and-earlier.md)
-    * [Snyk Infrastructure as code for self-hosted git (with Broker)](scan-cloud-deployment/snyk-infrastructure-as-code/snyk-infrastructure-as-code-for-self-hosted-git-with-broker.md)
+    * [Snyk Infrastructure as Code with Broker for self-hosted Git](scan-cloud-deployment/snyk-infrastructure-as-code/snyk-infrastructure-as-code-with-broker-for-self-hosted-git.md)
     * [Scan Terraform files](scan-cloud-deployment/snyk-infrastructure-as-code/scan-terraform-files/README.md)
       * [Configure your integration to find security issues in your Terraform files](scan-cloud-deployment/snyk-infrastructure-as-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-filess.md)
       * [Scan and fix security issues in Terraform files](scan-cloud-deployment/snyk-infrastructure-as-code/scan-terraform-files/scan-and-fix-security-issues-in-terraform-files.md)
