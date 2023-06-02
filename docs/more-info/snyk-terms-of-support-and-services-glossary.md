@@ -22,7 +22,7 @@
 3/ Paid Implementation services (Snyk Accelerate) are available as a la carte packages for Standard Support customers.
 {% endhint %}
 
-### Initial response and severity definitions
+## Initial response and severity definitions
 
 Severity levels are defined as follows:
 
@@ -51,9 +51,9 @@ Responses for severity levels are as follows:
 2/ Existing Business plan customers.
 {% endhint %}
 
-### Detailed Definitions
+## Detailed Definitions
 
-#### Standard Support Overview
+### Standard Support Overview
 
 Self-serve resources designed to help you quickly and successfully derive value throughout your security journey with Snyk.
 
@@ -73,7 +73,7 @@ Self-serve resources designed to help you quickly and successfully derive value 
 1/ Existing Business plan customers
 {% endhint %}
 
-#### Premium Care Overview
+### Premium Care Overview
 
 Premium add-on providing extended, in-depth, and skilled expertise to help you maximize your investment with Snyk.
 
@@ -86,13 +86,13 @@ Premium add-on providing extended, in-depth, and skilled expertise to help you m
 | <ul><li>Technical Success Manager</li></ul>                                   | <p>Named Technical resource assigned to your account to support your Snyk implementation as it grows and evolves.</p><p><br><br></p>                                                                                                                                     |
 | See description of additional services included with the Premium Care below\* |                                                                                                                                                                                                                                                                          |
 
-#### **Premium Care Services**
+### **Premium Care Services**
 
 Maximize the value out of Snyk products by leveraging assigned expert and proactive technical resources. The services below will be delivered by your assigned Technical Success Manager (TSM) or other specialty resources as required:
 
-* Success Planning: Snyk will work with customers to understand and document the specific goals they are looking to achieve through their deployment of Snyk throughout their organization. In addition, Snyk will recommend the optimal workflow and points of integration to help the customer best achieve their stated goals.
+* Success Planning: Snyk will work with Customer to understand and document the specific goals they are looking to achieve through their deployment of Snyk throughout their organization. In addition, Snyk will recommend the optimal workflow and points of integration to help the Customer best achieve their stated goals.
 * Onboarding Guidance: Snyk will conduct a guided technical set up for SSO and Broker features, perform a guided implementation of one or multiple Developer workflows and additional guided implementations based on the product package selected for the subscription term.
-* Complete DevSecOps Capability assessment: Snyk will facilitate a live workshop to assess the customer’s organization along Snyk’s DevSecOps Capability framework. As part of this assessment, we will establish a baseline maturity state and will help customers set goals for how they can improve both their overall DevSecOps capabilities as well as how they can specifically leverage Snyk to shift left in their own DevSecOps process.
+* Complete DevSecOps Capability assessment: Snyk will facilitate a live workshop to assess the customer’s organization along Snyk’s DevSecOps Capability framework. As part of this assessment, we will establish a baseline maturity state and will help Customer set goals for how they can improve both their overall DevSecOps capabilities as well as how they can specifically leverage Snyk to shift left in their own DevSecOps process.
 * Enablement Support: Snyk resources will lead the customer through Admin UI training, and multiple Developer trainings as required throughout the duration of the engagement
 * Regular Business and Deployment Optimization Reviews - Snyk will provide quarterly business reviews back to demonstrate progress achieved against the success criteria established during implementation. In addition, Snyk will provide semi-annual deployment optimization reviews to help ensure the customer is leveraging the latest Snyk functionality and that the deployment has been optimized for any changes in the customer’s tech stack or use case.
 * Weekly Deployment Stand-Up and Project Status Calls - during critical periods of implementation or developer roll-out, Snyk will conduct weekly stand-ups and help provide general project management tracking throughout the Snyk implementation project.
@@ -101,7 +101,7 @@ Maximize the value out of Snyk products by leveraging assigned expert and proact
 * Content Creation - Support the development of custom content for developer training and enablement, Snyk usage policies, internal wikis
 * Onsite visits (twice per year) - Where requested, the TSM will make up to 2 onsite visits to provide customer workshops, trainings or to conduct business reviews (Travel expenses passed through at cost)
 
-### **Initial response time details**
+## **Initial response time details**
 
 * Snyk will prioritize all Support Requests based on its reasonable assessment of the severity level of the problem reported; and use all reasonable endeavors to meet the timescales specified in the table above.
 * Times listed are the time frames in which you can expect the first response.
@@ -111,15 +111,19 @@ Maximize the value out of Snyk products by leveraging assigned expert and proact
 
 
 
-### **Definitions of Snyk Global Support Hours**
+## **Definitions of Snyk Global Support Hours**
 
-* **8x5**: Snyk support engineers actively respond to tickets within customer's local business hours, Monday to Friday.
-* **24x5**: Snyk support engineers actively respond to tickets 24 hours a day, Monday to Friday in customer's local time zone.
+* **8x5**: Snyk support engineers actively respond to tickets within Customer's local business hours, Monday to Friday.
+* **24x5**: Snyk support engineers actively respond to tickets 24 hours a day, Monday to Friday in Customer's local time zone.
 * **24x7**: Snyk support engineers actively respond to tickets 24 hours a day, Monday to Friday. Plus, for **urgent customer issues** outside of 24x5, Snyk provides a 24-hour support telephone number. This is served by a telephone answering service which triggers our on-call engineers.
 
-### **Snyk Accelerate - Implementation Services (up to 90 days)**
+## Implementation Support
 
-Implementation Service is provided by a named contact (i.e. Implementation Consultant) that works with the customer team, on an as needed basis and at the request of the customer, to provide accelerated time to value with, planning, onboarding and enablement resources and expertise during implementation.
+Customer acknowledges and agrees that the implementation support options outlined below may be performed either by Snyk personnel, or by Snyk’s certified partners, under the direction and supervision of Snyk.  In either event, Snyk remains fully responsible and liable for the performance of the Snyk Accelerate or Snyk Assist implementation support, and its partner’s compliance with the terms of the underlying Agreement between Snyk and Customer, including obligations of confidentiality and data security.
+
+## **Snyk Accelerate (up to 90 days)**
+
+The Snyk Accelerate implementation support is provided by a named contact (i.e. Implementation Consultant) that works with the customer team, on an as needed basis and at the request of the customer, to provide accelerated time to value with, planning, onboarding and enablement resources and expertise during implementation.
 
 * Planning Support: Snyk Implementation experts will lead customer representatives in pre-planning call to define success criteria and host a project kick-off meeting and coordinate Status Calls to monitor progress. Upon completion of Implementation engagement, customer will participate in a Post Implementation Business Review based on mutually agreed upon exit criteria.
 * Success Planning: Snyk will work with customers to understand and document the specific goals they are looking to achieve through their deployment of Snyk throughout their organization. In addition, Snyk will recommend the optimal workflow and points of integration to help the customer best achieve their stated goals.
@@ -127,19 +131,19 @@ Implementation Service is provided by a named contact (i.e. Implementation Consu
 * Complete DevSecOps Capability assessment: Snyk will facilitate a live workshop to assess the customer’s organization along Snyk’s DevSecOps Capability framework. As part of this assessment, we will establish a baseline maturity state and will help customers set goals for how they can improve both their overall DevSecOps capabilities as well as how they can specifically leverage Snyk to shift left in their own DevSecOps process.
 * Enablement Support: Snyk resources will lead an Admin UI training, and a Developer training at a time that is requested by the customer
 * Ongoing Support: During the duration of the implementation engagement, the Snyk team will engage directly with end users in a private, shared Slack channel to help answer product questions and connect users with training content, FAQs and other support resources
-* Onsite: Where requested, and agreed upon in writing, the Snyk team will provide implementation services onsite at the customer’s location (Travel expenses passed through at cost to customer)
+* Onsite: Where requested, and agreed upon in writing, the Snyk team will provide implementation support onsite at the customer’s location (Travel expenses passed through at cost to customer)
 
-The customer will engage Snyk for a kickoff call within 30 days of the contract start date, at a time that is mutually agreed upon by the parties. The Snyk implementation services must be used within 120 days of the contract start date for all implementation services.
+The customer will engage Snyk for a kickoff call within 30 days of the contract start date, at a time that is mutually agreed upon by the parties. The Snyk Accelerate support must be used within 120 days of execution of the applicable Order Form regardless of when or if the customer engages Snyk for the kickoff call.
 
-### Snyk Assist - implementation services (up to 30 days)
+## Snyk Assist (up to 30 days)
 
-Snyk Assist implementation service is provided by a named contact (an Implementation Consultant) that works with the customer team, on an as-needed basis and at the request of the customer, to provide specific services related to optimizing the use of Snyk.
+Snyk Assist implementation support is provided by a named contact (Implementation Consultant) that works with the Customer team, on an as-needed basis and at the request of the Customer, to provide specific services related to optimizing the use of Snyk.
 
-Snyk Assist may include one of the following services:
+Snyk Assist may include one of the following options:
 
 * SSO Custom-mapping: Technical guidance for setting up, configuring, and testing the SSO custom-mapping fields
 * Broker Set-up and Workshop: Hands on guidance and education for configuration and troubleshooting of Snyk Broker
 * Developer Training and Bug Bash Support: A tailored Developer training session based on the customer’s technical stack, followed by a bug bash to help Developers put learnings into practice
 * Optimization Session: Discovery configuration session accompanied by a health report including recommendations and best practices for optimal Snyk configuration in customer’s environment to help meet their specific security and compliance goals
 
-The customer will engage Snyk for a kickoff call within 30 days of the purchase date, at a time that is mutually agreed upon by the parties. Any Snyk Assist services must be used within 60 days of the purchase date, regardless of when or if the customer engages Snyk for the kickoff call.
+The customer will engage Snyk for a kickoff call within 30 days of the purchase date, at a time that is mutually agreed upon by the parties. Any Snyk Assist support must be used within 60 days execution of the applicable Order Form, regardless of when or if the customer engages Snyk for the kickoff call.
