@@ -1,4 +1,4 @@
-# Adding cloud context to your IaC test
+# Adding cloud context to your IaC tests (Integrated IaC)
 
 {% hint style="info" %}
 The cloud context feature is available for [Integrated IaC](./) only, and supports AWS.
@@ -6,7 +6,7 @@ The cloud context feature is available for [Integrated IaC](./) only, and suppor
 
 ## What is cloud context?
 
-Snyk IaC's cloud context feature uses information from deployed cloud infrastructure, either via [Snyk Cloud](../../snyk-cloud/) or through local enumeration, to suppress certain issues from your IaC tests.
+Snyk IaC's cloud context feature uses information from deployed cloud infrastructure, either via [Snyk Cloud](../) or through local enumeration, to suppress certain issues from your IaC tests.
 
 For example, suppose your Terraform configuration declares an Amazon Web Services (AWS) S3 bucket that does not have a public access block, but you have an account-level public access block. Snyk applies the cloud context from your AWS account to suppress false positive issues stating your bucket is not secured by a public access block.
 
@@ -52,7 +52,7 @@ There are two ways that Snyk IaC can apply cloud context and suppress issues in 
 
 ## Bringing context from Snyk Cloud <a href="#bringing-context-from-a-snyk-cloud-scan" id="bringing-context-from-a-snyk-cloud-scan"></a>
 
-If you have a [Snyk Cloud Environment](../../snyk-cloud/snyk-cloud-concepts.md#environments), you can leverage what Snyk already knows about your cloud provider account to apply cloud context and reduce false positives in your IaC tests.
+If you have a [Snyk Cloud Environment](../snyk-cloud-concepts.md#environments), you can leverage what Snyk already knows about your cloud provider account to apply cloud context and reduce false positives in your IaC tests.
 
 Use the `--snyk-cloud-environment=<ENVIRONMENT_ID>` option with [`snyk iac test`](../../../snyk-cli/commands/iac-test.md) to tell Snyk which cloud environment to use as context for your IaC test.
 
@@ -62,7 +62,7 @@ For example, the following command tests the IaC in the present working director
 snyk iac test --snyk-cloud-environment=93786877-c9f8-0000-1234-abcd1234efgh
 ```
 
-To find your environment ID, see [Find a Snyk Cloud Environment ID](../../snyk-cloud/find-a-snyk-cloud-environment-id.md).
+To find your environment ID, see [Find a Snyk Cloud Environment ID](../find-a-snyk-cloud-environment-id.md).
 
 See the [Snyk Cloud](https://docs.snyk.io/products/snyk-cloud) documentation for information about creating a Snyk Cloud Environment.
 
