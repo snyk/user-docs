@@ -26,7 +26,7 @@ If the user is not already a part of your Group, you must first add that user as
 
 ## Permissions per role
 
-The **Group Member** role does not directly provide the user any rights. A Group Member needs to be granted an organization role or promoted to Group Admin.
+The **Group Member** role allows the member to view team members. For additional permissions, a Group Member must be granted an Organization role or promoted to Group Admin.
 
 | User permissions                                                                                   | Group Admin | Group Viewer | Org Admin | Org Collaborator |
 | -------------------------------------------------------------------------------------------------- | ----------- | ------------ | --------- | ---------------- |
@@ -56,7 +56,7 @@ The **Group Member** role does not directly provide the user any rights. A Group
 (\*) Only in paid accounts\
 (\*\*) Only in Enterprise Plan
 
-## Editing project attributes from the Snyk CLI
+## Editing Project attributes from the Snyk CLI
 
 The Organization Collaborator role lacks permission to edit Project attributes, including using the CLI [`snyk monitor`](../../snyk-cli/commands/monitor.md) command with arguments such as `--project-environment`. Attempting to use these arguments without the proper permission causes the `snyk monitor` command to fail.
 
