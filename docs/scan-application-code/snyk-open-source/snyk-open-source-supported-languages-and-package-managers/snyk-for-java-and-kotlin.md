@@ -1,6 +1,6 @@
 # Snyk for Java and Kotlin
 
-Snyk offers security scanning to test your projects for vulnerabilities, both from the [Snyk CLI ](../../../snyk-cli/)and the [Snyk Web UI](../../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md) using different [Snyk Integrations](../../../integrations/).
+ProjectSnyk offers security scanning to test your Projects for vulnerabilities, both from the [Snyk CLI ](../../../snyk-cli/)and the [Snyk Web UI](../../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md) using different [Snyk Integrations](../../../integrations/).
 
 ## Features of Snyk for Java and Kotlin
 
@@ -11,9 +11,9 @@ Some features might not be available, depending on your pricing plan. See [prici
 {% endhint %}
 
 {% hint style="info" %}
-Gradle projects imported via Git are tested by parsing `build.gradle` files. As the only truly reliable way to resolve Gradle dependencies is to execute the tool itself, this method can sometimes provide incomplete results.
+Gradle Projects imported via Git are tested by parsing `build.gradle` files. As the only truly reliable way to resolve Gradle dependencies is to execute the tool itself, this method can sometimes provide incomplete results.
 
-If possible, enable [lockfiles](snyk-for-java-gradle-maven.md#git-services-for-gradle-projects) in your Gradle project to improve the accuracy for Git imports.
+If possible, enable [lockfiles](snyk-for-java-and-kotlin.md#git-services-for-gradle-projects) in your Gradle Project to improve the accuracy for Git imports.
 
 However, for the most accurate results, Snyk recommends using the [Snyk CLI](../../../snyk-cli/) to test Gradle Projects.
 {% endhint %}
@@ -42,7 +42,7 @@ However, for the most accurate results, Snyk recommends using the [Snyk CLI](../
 
 ### Maven versions supported
 
-* CLI - Maven `3.*` For details see the [Snyk Maven plugin readme](https://github.com/snyk/snyk-mvn-plugin#support).
+* CLI - Maven `3.*` For details, see the [Snyk Maven plugin readme](https://github.com/snyk/snyk-mvn-plugin#support).
 * Git - Maven `3.*`
 
 ### Gradle versions supported
@@ -53,10 +53,10 @@ Gradle 8 is not yet supported in the CLI.&#x20;
 However, if your app does not use Gradle 8 specific features, it is generally possible to install Gradle 7 instead before running Snyk CLI scans
 {% endhint %}
 
-* CLI - Gradle `4.*`, `5.*`, `6.*`, `7.*` For more information see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
+* CLI - Gradle `4.*`, `5.*`, `6.*`, `7.*` For more information, see the [Snyk Gradle plugin readme](https://github.com/snyk/snyk-gradle-plugin#support).
 * Git - Gradle `4.*`, `5.*`, `6.*`, `7.*`
 
-## Snyk CLI for Java and Kotlin projects (CI/CD)
+## Snyk CLI for Java and Kotlin Projects (CI/CD)
 
 The way Snyk analyzes and builds the dependencies varies depending on the language and package manager of the Project.
 
@@ -79,10 +79,10 @@ This section describes the unique CLI commands available when working with Java-
 
 For information about the `snyk test` and `snyk monitor` options available for use with Maven and Gradle, see the following pages:
 
-* [Options for Maven projects](https://docs.snyk.io/snyk-cli/commands/test#options-for-maven-projects) in the Test help
-* [Options for Gradle projects ](https://docs.snyk.io/snyk-cli/commands/test#options-for-gradle-projects)in the Test help
-* [Options for Maven projects](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-maven-projects) in the Monitor help
-* [Options for Gradle projects](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-gradle-projects) in the Monitor help
+* [Options for Maven Projects](https://docs.snyk.io/snyk-cli/commands/test#options-for-maven-projects) in the Test help
+* [Options for Gradle ProjectsProjects ](https://docs.snyk.io/snyk-cli/commands/test#options-for-gradle-projects)in the Test help
+* [Options for Maven Projects](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-maven-projects) in the Monitor help
+* [Options for Gradle Projects](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-gradle-projects) in the Monitor help
 * [Options for build tools](https://docs.snyk.io/snyk-cli/commands/test#options-for-build-tools) in the Test help
 * [Options for build tools](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-build-tools) in the Monitor help
 * [Options for unmanaged JAR files](../../../snyk-cli/commands/test.md#scan-all-unmanaged) in the Test help
@@ -90,9 +90,7 @@ For information about the `snyk test` and `snyk monitor` options available for u
 
 ### Scan unmanaged JAR files&#x20;
 
-If you're not using Maven or Gradle but have JAR files, you can identify the open source packages these relate to using Snyk CLI.&#x20;
-
-:link:[ Scan unmanaged JAR files](snyk-for-java-gradle-maven.md#scan-unmanaged-jar-files)
+If you are not using Maven or Gradle but have JAR files, you can identify the open-source packages these JAR files relate to using Snyk CLI.  For more information, see [Scan all unmanaged JAR files](../../../snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files.md).
 
 ### **Examples of how you can use Maven arguments with the Snyk CLI**
 
@@ -118,18 +116,18 @@ Define the system property like this:
 snyk test -- -Dpkg_version=1.4
 ```
 
-## CLI help for Maven Projects: Aggregate projects
+## CLI help for Maven Projects: Aggregate Projects
 
-A Maven aggregate project is one that uses modules and inheritance.
+A Maven aggregate Project is one that uses modules and inheritance.
 
-When scanning these types of projects Snyk performs a compile to ensure all modules are resolvable by the Maven reactor.
+When scanning these types of Projects, Snyk performs a compile to ensure all modules are resolvable by the Maven reactor.
 
-*   To scan aggregate projects, use the `--maven-aggregate-project` option:
+*   To scan aggregate Projects, use the `--maven-aggregate-project` option:
 
     ```
     snyk test --maven-aggregate-project
     ```
-*   To scan non-aggregate projects use `--all-projects` option:
+*   To scan non-aggregate Projects, use `--all-projects` option:
 
     ```
     snyk test --all-projects
@@ -143,15 +141,15 @@ Make sure to execute the options in the same directory as the root pom.xml file.
 Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.
 {% endhint %}
 
-## CLI help for Gradle projects
+## CLI help for Gradle Projects
 
 ### Sub-projects
 
-Gradle build can consist of several sub-projects, where each sub-project has its own build.gradle, while the root project is the only one that also includes a `settings.gradle` file. Sub-projects depend on the root project, but can be configured otherwise.
+Gradle build can consist of several sub-projects, where each sub-project has its own build.gradle, while the root Project is the only one that also includes a `settings.gradle` file. Sub-projects depend on the root ProjectProjects but can be configured otherwise.
 
-By default, Snyk CLI scans only the current project (the project in the root of the current folder), or the project that is specified by `--file=path/to/build.gradle`).
+By default, Snyk CLI scans only the current Project, the Project in the root of the current folder, or the Project that is specified by `--file=path/to/build.gradle`).
 
-*   To scan all projects at once (recommended), use the `--all-sub-projects` option:
+*   To scan all Projects at once (recommended), use the `--all-sub-projects` option:
 
     ```
     snyk test --all-sub-projects
@@ -161,20 +159,20 @@ By default, Snyk CLI scans only the current project (the project in the root of 
 Each of the individual sub-projects appears as a separate Snyk Project in the Web UI.
 {% endhint %}
 
-*   To scan a specific project (for example, _myapp_):
+*   To scan a specific Project (for example, _myapp_):
 
     ```
     snyk test --sub-project=myapp
     ```
 
-### Configurations for Gradle project
+### Configurations for Gradle Project
 
 Gradle dependencies are declared for a particular scope; each scope is represented by Gradle with the help of [Configurations](https://docs.gradle.org/current/userguide/declaring\_dependencies.html#sec:what-are-dependency-configurations). For example:
 
 * **compileOnly** configuration for development dependencies
 * **compile** configuration that includes compile and runtime dependencies
 
-By default Snyk merges all configurations returned by Gradle to a dependency graph based on the sum total of the dependencies across all configurations in the Project or Projects.
+By default, Snyk merges all configurations returned by Gradle to a dependency graph based on the sum total of the dependencies across all configurations in the Project or Projects.
 
 To test a specific configuration:
 
@@ -183,7 +181,7 @@ To test a specific configuration:
 
 ### **Examples of how you can use the --configuration-matching option**
 
-* `--configuration-matching=compile` will match compile, testCompile, compileOnly and so on.
+* `--configuration-matching=compile` will match compile, testCompile, compileOnly, and so on.
 * `--configuration-matching=^compile$` will match only compile.
 * `--configuration-matching='^(debug|release)compile$'` will match debugCompile and releaseCompile.
 * `--configuration-matching='^(?!.*test).*$'` will match all configurations _except_ those containing the string "test".
@@ -226,15 +224,15 @@ To avoid such conflicts:
 
 ### Daemon
 
-By default, Snyk passes `gradle build --no-daemon` in the background when running `snyk test` and `snyk monitor` on Windows. If for some reason you see `snyk test` or `snyk monitor` fail on other operating systems because of daemon-related issues, try adding the `--no-daemon` flag to the Snyk command or set `GRADLE_OPTS: '-Dorg.gradle.daemon=false'`. See the [Gradle documentation](https://docs.gradle.org/current/userguide/gradle\_daemon.html#sec:disabling\_the\_daemon) for tips on disabling the daemon.
+By default, Snyk passes `gradle build --no-daemon` in the background when running `snyk test` and `snyk monitor` on Windows. If, for some reason, you see `snyk test` or `snyk monitor` fail on other operating systems because of daemon-related issues, try adding the `--no-daemon` flag to the Snyk command or set `GRADLE_OPTS: '-Dorg.gradle.daemon=false'`. See the [Gradle documentation](https://docs.gradle.org/current/userguide/gradle\_daemon.html#sec:disabling\_the\_daemon) for tips on disabling the daemon.
 
 ### Lockfiles
 
-If your Gradle project makes use of a single **gradle.lockfile** or multiple **\*.lockfile** per configuration and you are having the following issue
+If your Gradle Project makes use of a single **gradle.lockfile** or multiple **\*.lockfile** per configuration and you are having the following issue
 
 **Gradle Error (short): > Could not resolve all dependencies for configuration ':compileOnly'. > Locking strict mode: Configuration ':compileOnly' is locked but does not have lock state.**
 
-Note that that **compileOnly configuration** **has been deprecated** and even if your Project successfully generates a lockfile, it will not contain the \`compileOnly\` state because this configuration cannot be resolved. Only resolvable configurations compute a dependency graph. In order to solve this issue, Snyk suggests you **update your build.gradle containing dependencyLocking logic with the following instruction:**
+Note that that **compileOnly configuration** **has been deprecated,** and even if your Project successfully generates a lockfile, it will not contain the \`compileOnly\` state because this configuration cannot be resolved. Only resolvable configurations compute a dependency graph. In order to solve this issue, Snyk suggests you **update your build.gradle containing dependencyLocking logic with the following instruction:**
 
 ```
 compileOnly {resolutionStrategy.deactivateDependencyLocking() }
@@ -244,7 +242,7 @@ This will **ignore compileOnly** and save only the necessary information to anal
 
 ### Support for Gradle with Snyk
 
-If you are having any trouble testing your Gradle projects with Snyk, collect the following details and send them to Snyk at [support@snyk.io](mailto:support@snyk.io):
+If you are having any trouble testing your Gradle Projects with Snyk, collect the following details and send them to Snyk at [support@snyk.io](mailto:support@snyk.io):
 
 * `build.gradle`
 * `settings.gradle` (especially if Snyk did not pick up a version of a package)
@@ -252,13 +250,13 @@ If you are having any trouble testing your Gradle projects with Snyk, collect th
   * `$ snyk test -d`
   * `$ gradle dependencies -q`
 
-## Git services for Maven projects
+## Git services for Maven Projects
 
-After you select a project for import, Snyk builds the dependency tree based on the `pom.xml` file.
+After you select a Project for import, Snyk builds the dependency tree based on the `pom.xml` file.
 
-## Git services for Gradle projects
+## Git services for Gradle Projects
 
-After you select a project for import, Snyk builds the dependency tree based on the `build.gradle` file and (optional) `gradle.lockfile`.
+After you select a Project for import, Snyk builds the dependency tree based on the `build.gradle` file and (optional) `gradle.lockfile`.
 
 {% hint style="info" %}
 Only dependencies in the following configurations are included - `api`, `compile`, `classpath`, `implementation`, `runtime`, `runtimeOnly`.
@@ -266,7 +264,7 @@ Only dependencies in the following configurations are included - `api`, `compile
 
 If a lockfile is present, Snyk uses the lockfile to more accurately resolve the final version of dependencies used in the Project.
 
-Gradle lockfiles are an opt-in feature that, among other benefits, enable reproducible builds. For more information see the [Gradle docs on dependency locking](https://docs.gradle.org/current/userguide/dependency\_locking.html).
+Gradle lockfiles are an opt-in feature that, among other benefits, enable reproducible builds. For more information, see the [Gradle docs on dependency locking](https://docs.gradle.org/current/userguide/dependency\_locking.html).
 
 {% hint style="warning" %}
 **Kotlin**: `build.gradle.kts` files are not currently supported in Git.
@@ -274,7 +272,7 @@ Gradle lockfiles are an opt-in feature that, among other benefits, enable reprod
 
 ## Git settings for Java
 
-From the Snyk UI you can specify mirrors or repositories from which you’d like to resolve packages in Artifactory for Maven. For more information see [Artifactory Registry for Maven](../../../integrations/private-registry-integrations/artifactory-repository-setup/artifactory-registry-for-maven.md).
+From the Snyk UI, you can specify mirrors or repositories from which you’d like to resolve packages in Artifactory for Maven. For more information, see [Artifactory Registry for Maven](../../../integrations/private-registry-integrations/artifactory-repository-setup/artifactory-registry-for-maven.md).
 
 ## Additional Snyk support for Java
 

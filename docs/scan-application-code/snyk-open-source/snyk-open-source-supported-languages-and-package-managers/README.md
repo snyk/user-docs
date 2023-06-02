@@ -13,7 +13,7 @@ For environments supported with other Snyk products, see: [Snyk Code - Supported
 | [C / C++](snyk-for-c-c++.md)                                         | N/A                                                                                                 |
 | [Elixir](snyk-for-elixir.md)                                         | hex                                                                                                 |
 | [Go](snyk-for-golang.md)                                             | Go Modules, dep, govendor                                                                           |
-| [Java and Kotlin](snyk-for-java-gradle-maven.md)                     | Gradle, Maven                                                                                       |
+| [Java and Kotlin](snyk-for-java-and-kotlin.md)                       | Gradle, Maven                                                                                       |
 | [JavaScript](snyk-for-javascript/)                                   | npm, yarn                                                                                           |
 | [PHP](snyk-for-php.md)                                               | Composer                                                                                            |
 | [Python](snyk-for-python.md)                                         | pip, Poetry, pipenv                                                                                 |

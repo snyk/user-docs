@@ -244,7 +244,7 @@
       * [Snyk for C/C++](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-c-c++.md)
       * [Snyk for Elixir](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-elixir.md)
       * [Snyk for Go](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-golang.md)
-      * [Snyk for Java and Kotlin](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-gradle-maven.md)
+      * [Snyk for Java and Kotlin](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-java-and-kotlin.md)
       * [Snyk for JavaScript](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-javascript/README.md)
         * [Snyk for npm](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-javascript/snyk-for-npm.md)
         * [Snyk for Yarn](scan-application-code/snyk-open-source/snyk-open-source-supported-languages-and-package-managers/snyk-for-javascript/snyk-for-yarn.md)
