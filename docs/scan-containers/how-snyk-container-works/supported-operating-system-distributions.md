@@ -16,12 +16,12 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 
 ## Supported Linux distributions
 
-### AlmaLinux
+### [AlmaLinux](https://almalinux.org/)
 
 * AlmaLinux 9
 * AlmaLinux 8
 
-### Alpine Linux
+### [Alpine Linux](https://www.alpinelinux.org/)
 
 * Alpine Linux 3.18
 * Alpine Linux 3.17
@@ -41,25 +41,25 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * Alpine Linux 3.3
 * Alpine Linux 3.2
 
-### Amazon Linux
+### [Amazon Linux](https://aws.amazon.com/linux/)
 
 * Amazon Linux 2023
 * Amazon Linux 2022
 * Amazon Linux 2
 * Amazon AMI 2018.03
 
-### CentOS Linux
+### [CentOS Linux](https://www.centos.org/centos-linux/)
 
 * CentOS Linux 8
 * CentOS Linux 7
 * CentOS Linux 6
 
-### CentOS Stream
+### [CentOS Stream](https://www.centos.org/centos-stream/)
 
 * CentOS Linux 9
 * CentOS Linux 8
 
-### Debian
+### [Debian](https://www.debian.org/)
 
 * Unstable
 * Debian 12
@@ -68,7 +68,7 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * Debian 9
 * Debian 8
 
-### Oracle Linux
+### [Oracle Linux](https://www.oracle.com/linux/)
 
 * Oracle Linux 9
 * Oracle Linux 8
@@ -76,25 +76,25 @@ For unsupported distributions, you may not receive any notifications of vulnerab
 * Oracle Linux 6
 * Oracle Linux 5
 
-### Red Hat Enterprise Linux (RHEL)
+### [Red Hat Enterprise Linux (RHEL)](https://www.redhat.com/technologies/linux-platforms/enterprise-linux)
 
 * Red Hat Enterprise Linux 9
 * Red Hat Enterprise Linux 8
 * Red Hat Enterprise Linux 7
 * Red Hat Enterprise Linux 6
 
-### Rocky Linux
+### [Rocky Linux](https://rockylinux.org/)
 
 * Rocky Linux 9
 * Rocky Linux 8
 
-### SUSE Linux Enterprise Server (SLES)
+### [SUSE Linux Enterprise Server (SLES)](https://www.suse.com/products/server/)
 
 * SUSE Linux Enterprise Server 15.2
 * SUSE Linux Enterprise Server 15.1
 * SUSE Linux Enterprise Server 15.0
 
-### Ubuntu
+### [Ubuntu](https://ubuntu.com/)
 
 * Ubuntu 23.04
 * Ubuntu 22.10
