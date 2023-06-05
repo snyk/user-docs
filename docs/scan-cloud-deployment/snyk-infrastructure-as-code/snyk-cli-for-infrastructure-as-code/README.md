@@ -6,23 +6,23 @@ To use the CLI, you must first [install](../../../snyk-cli/install-the-snyk-cli/
 
 With Snyk Infrastructure as Code, you can test your configuration files directly from the CLI. See the following pages for details:
 
-* [Test your configuration files](test-your-configuration-files/)
+* [Test your configuration files](test-your-iac-files/)
 * [Share CLI results with the Snyk Web UI](../share-cli-results-with-the-snyk-web-ui.md)
 * [IaC ignores using the `.snyk` policy file](iac-ignores-using-the-.snyk-policy-file.md)
 * [Understanding the IaC CLI test results](understanding-the-cli-test-output/) (has information about reports)
 * [IaC exclusions using the command line](iac-exclusions-using-the-command-line.md)
-* [Test your Terraform files with Snyk CLI](test-your-configuration-files/test-your-terraform-files-with-the-cli-tool.md)
-* [Test your CloudFormation files with Snyk CLI](test-your-configuration-files/test-your-cloudformation-files-with-cli-tool.md)
-* [Test your AWS CDK files with Snyk CLI](test-your-configuration-files/test-your-aws-cdk-files-with-our-cli-tool.md)
-* [Test your Kubernetes files with Snyk CLI](test-your-configuration-files/test-your-kubernetes-files-with-our-cli-tool.md)
-* [Test your ARM files with Snyk CLI](test-your-configuration-files/test-your-arm-files-with-the-cli-tool.md)
-* [Test your Serverless files with Snyk CLI](test-your-serverless-files-with-snyk-cli.md)
+* [Test your Terraform files with Snyk CLI](test-your-iac-files/test-your-terraform-files-with-the-cli-tool.md)
+* [Test your CloudFormation files with Snyk CLI](test-your-iac-files/test-your-cloudformation-files-with-cli-tool.md)
+* [Test your AWS CDK files with Snyk CLI](test-your-iac-files/test-your-aws-cdk-files-with-our-cli-tool.md)
+* [Test your Kubernetes files with Snyk CLI](test-your-iac-files/test-your-kubernetes-files-with-our-cli-tool.md)
+* [Test your ARM files with Snyk CLI](test-your-iac-files/test-your-arm-files-with-the-cli-tool.md)
+* [Test your Serverless files with Snyk CLI](test-your-iac-files/test-your-serverless-files-with-snyk-cli.md)
 
 You can also test the following types of files:
 
-* [Kustomize files](test-your-kustomize-files-with-our-cli-tool.md)
-* [Helm charts](test-your-helm-charts-with-our-cli-tool.md)
-* [Serverless files](test-your-serverless-files-with-snyk-cli.md)
+* [Kustomize files](test-your-iac-files/test-your-kustomize-files-with-our-cli-tool.md)
+* [Helm charts](test-your-iac-files/test-your-helm-charts-with-snyk-cli.md)
+* [Serverless files](test-your-iac-files/test-your-serverless-files-with-snyk-cli.md)
 
 ## Regularly testing IaC files
 
