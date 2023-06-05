@@ -1,14 +1,18 @@
 # Share CLI results with the Snyk Web UI
 
-### Introduction
-
 You can use the [CLI](../../snyk-cli/) `snyk iac test` command to address known configuration issues.
 
 To see these issues displayed in the Snyk Web UI, run the following CLI command:
 
 `snyk iac test myproject --report`
 
-### Example
+{% hint style="info" %}
+Using [Custom rules](custom-rules/) and the Share Results functionality together is not currently supported.
+
+Snyk does not share any file contents over the network, only the required metadata for the configuration issues that were just scanned.
+{% endhint %}
+
+## Example of `snyk iac test --report`
 
 ```
 > snyk iac test myproject --report
@@ -33,46 +37,46 @@ Tested arm-file.tf for known issues, found 1 issues
 Your test results are available at: https://app.snyk.io/org/my.org/projects under the name myproject
 ```
 
-This sends a snapshot of your current configuration issues to your Snyk dashboard, to view in the Snyk Web UI.
+This sends a snapshot of your current configuration issues to your Snyk dashboard for viewing in the Snyk Web UI.
 
-### Viewing snapshots in the Snyk Web UI
+## Viewing snapshots in the Snyk Web UI
 
-Log in to the [Snyk Web UI](../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md) and go to your organization's project page, to see the specific snapshot of your scanned project.
+Log in to the [Snyk Web UI](../../getting-started/quickstart/create-a-snyk-account/logging-in-to-an-existing-account.md) and go to your Organization's Project page to see the specific snapshot of your scanned Project.
 
-![Newly scanned project in the projects page](<../../.gitbook/assets/image (349) (1) (1) (1) (1) (1).png>)
+<figure><img src="../../.gitbook/assets/image (349) (1) (1) (1) (1) (1).png" alt="Newly scanned Project listed on the Projects page"><figcaption><p>Newly scanned Project listed on the Projects page</p></figcaption></figure>
 
-You can also open the project itself and see the usual individual project view:
+You can also open the Project itself and see the Project details:
 
-![individual project view](<../../.gitbook/assets/image (106) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+<figure><img src="../../.gitbook/assets/image (106) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="Project details for a Project"><figcaption><p>Project details for a Project</p></figcaption></figure>
 
-### **Ignores**
+## **Ignores**
 
-You can ignore issues using the Snyk Web UI, or by creating a `.snyk` policy file along with your project when scanning. For more information, see [Iac Ignores using the .snyk policy file](snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md).
+You can ignore issues using the Snyk Web UI or by creating a `.snyk` policy file along with your Project when scanning. For more information, see [Iac Ignores using the .snyk policy file](snyk-cli-for-infrastructure-as-code/iac-ignores-using-the-.snyk-policy-file.md).
 
 {% hint style="info" %}
 Issues that are ignored by using the `.snyk` policy file can not be unignored in the Snyk web UI.
 {% endhint %}
 
-### Project tags
+## Project tags
 
-You can attach tags to the scanned projects using the `--project-tags` flag. The flag accepts a comma-separated list of tags, where each tag is a key-value pair. Keys and values are separated by an `=` sign. The `--project-tags` flag is valid only when used with `--report`.
+You can attach tags to the scanned Projects using the `--project-tags` option. This option accepts a comma-separated list of tags, where each tag is a key-value pair. Keys and values are separated by an `=` sign. The `--project-tags` option is valid only when used with `--report`.
 
-The following example attaches the tags `department` and `team` to the scanned projects, with values `platform` and `persistence`, respectively.
+The following example attaches the tags `department` and `team` to the scanned Projects, with values `platform` and `persistence`, respectively.
 
 ```
 > snyk iac test myproject --report \
     --project-tags=department=platform,team=persistence
 ```
 
-### Project attributes
+## Project attributes
 
-You can set attributes for the scanned projects using the `--project-business-criticality`, `--project-environment`, and `--project-lifecycle` tags. These flags are valid only when used with `--report`.
+You can set attributes for the scanned Projects using the `--project-business-criticality`, `--project-environment`, and `--project-lifecycle` options. These options are valid only when used with `--report`.
 
 * `--project-business-criticality` accepts a comma-separated list of the following values: `critical`, `high`, `medium`, `low`.
 * `--project-environment` accepts a comma-separated list of the following values: `frontend`, `backend`, `internal`, `external`, `mobile`, `saas`, `onprem`, `hosted`, `distributed`.
 * `--project-lifecycle` accepts a comma-separated list of the following values: `production`, `development`, `sandbox`.
 
-The following example sets the business criticality to `high`, the environment to the values `frontend` and `internal`, and the lifecycle to `development` for each scanned project.
+The following example sets the business criticality to `high`, the environment to the values `frontend` and `internal`, and the lifecycle to `development` for each scanned Project.
 
 ```
 > snyk iac test myproject --report \
@@ -81,19 +85,13 @@ The following example sets the business criticality to `high`, the environment t
     --project-lifecycle=development
 ```
 
-### Target reference
+## Target reference
 
-You can set the target reference for the scanned projects using the `--target-reference` flag. This flag is valid only only when used with `--report`.
+You can set the target reference for the scanned Projects using the `--target-reference` option. This option is valid only when used with `--report`.
 
-The following example sets the target reference for the scanned projects to the name of the current Git branch.
+The following example sets the target reference for the scanned Projects to the name of the current Git branch.
 
 ```
 snyk iac test myproject --report \
     --target-reference="$(git branch --show-current)"
 ```
-
-### **Notes**
-
-Using [Custom rules](custom-rules/) and the Share Results functionality together is not currently supported.
-
-Snyk does not share any file contents over the network, only the required metadata for the configuration issues that were just scanned.
