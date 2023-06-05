@@ -4,7 +4,7 @@ With Snyk Infrastructure as Code, you can test your configuration files using th
 
 Snyk Infrastructure as Code for Serverless framework supports scanning the packaged output of Serverless files in Cloudformation JSON format files.
 
-You can **test for an issue on specified Serverless files** as explained on this page:
+You can **test for an issue on specified Serverless files** as explained on this page.
 
 Be sure you have the [Serverless CLI installed](https://www.serverless.com/framework/docs/getting-started).
 

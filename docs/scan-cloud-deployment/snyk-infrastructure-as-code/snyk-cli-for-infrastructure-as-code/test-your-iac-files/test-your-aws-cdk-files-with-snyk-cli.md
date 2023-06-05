@@ -12,7 +12,7 @@ Follow these steps to scan a CDK application:
 cdk synth
 ```
 
-This is displayed on your terminal as YAML output and a JSON file is created in the `cdk.out` directory
+This is displayed on your terminal as YAML output, and a JSON file is created in the `cdk.out` directory
 
 **Scan** the JSON file using the following Snyk IaC CLI command, replacing `cdk.out/*.json` with the name of the application that you want to scan.
 

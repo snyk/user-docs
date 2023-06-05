@@ -1,8 +1,8 @@
 # Test your CloudFormation files with Snyk CLI
 
-With Snyk Infrastructure as Code, you can test your CloudFormation files using the CLI. You can test files in both YAML and JSON formats. You can also scan AWS CDK applications. See [Test your AWS CDK files with Snyk CLI](https://docs.snyk.io/snyk-infrastructure-as-code/snyk-cli-for-infrastructure-as-code/test-your-aws-cdk-files-with-our-cli-tool).
+With Snyk Infrastructure as Code, you can test your CloudFormation files using the CLI. You can test files in both YAML and JSON formats. You can also scan AWS CDK applications. See T[est your AWS CDK files with Snyk CLI](test-your-aws-cdk-files-with-snyk-cli.md).
 
-Test for an issue on specified files using the following command:
+Test for an issue in specified files using the following command:
 
 ```
 snyk iac test
