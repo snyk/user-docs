@@ -14,7 +14,7 @@ You can scan the configuration files, for example `main.tf`, using the CLI.
 
 External modules are currently not supported.
 
-For more information about variable processing see [Terraform variables support](../scan-terraform-files/terraform-variables-support.md).
+For more information about variable processing see [Terraform variables support](../../scan-terraform-files/terraform-variables-support.md).
 
 ## Scan configuration files
 
