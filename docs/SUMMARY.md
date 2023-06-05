@@ -395,7 +395,7 @@
     * [Kubernetes integration FAQ](scan-containers/kubernetes-workload-and-image-scanning/kubernetes-integration-faq.md)
   * [Snyk Container for self-hosted container registries (with Broker)](scan-containers/integrate-self-hosted-container-registries.md)
 * [Scan cloud configurations](scan-cloud-deployment/README.md)
-  * [Supported IaC and Cloud providers](scan-cloud-deployment/supported-providers-iac-and-cloud.md)
+  * [Supported IaC and cloud providers](scan-cloud-deployment/supported-iac-and-cloud-providers.md)
   * [Snyk Infrastructure as Code](scan-cloud-deployment/snyk-infrastructure-as-code/README.md)
     * [Getting started with Snyk Infrastructure as Code (IaC)](scan-cloud-deployment/snyk-infrastructure-as-code/getting-started-snyk-iac.md)
     * [Using Snyk IaC with the Web UI](scan-cloud-deployment/snyk-infrastructure-as-code/using-snyk-iac-via-web.md)

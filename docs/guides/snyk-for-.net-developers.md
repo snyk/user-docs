@@ -183,7 +183,7 @@ See [Snyk CLI for container security](../scan-containers/snyk-cli-for-container-
 
 #### Infrastructure as code
 
-See [Supported Providers](../scan-cloud-deployment/supported-providers-iac-and-cloud.md).
+See [Supported Providers](../scan-cloud-deployment/supported-iac-and-cloud-providers.md).
 
 See [Infrastructure as Code security](https://snyk.io/product/infrastructure-as-code-security/) for more details.
 
