@@ -2,12 +2,14 @@
 
 ## Overview
 
-To use the CLI you must first [install](../../../snyk-cli/install-the-snyk-cli/) it and then [authenticate](../../../snyk-cli/commands/auth.md).
+To use the CLI, you must first [install](../../../snyk-cli/install-the-snyk-cli/) it and then [authenticate](../../../snyk-cli/commands/auth.md).
 
 With Snyk Infrastructure as Code, you can test your configuration files directly from the CLI. See the following pages for details:
 
 * [Test your configuration files](test-your-configuration-files.md)
+* [Share CLI results with the Snyk Web UI](../share-cli-results-with-the-snyk-web-ui.md)
 * [IaC ignores using the `.snyk` policy file](iac-ignores-using-the-.snyk-policy-file.md)
+* [IaC exclusions using the command line](iac-exclusions-using-the-command-line.md)
 * [Test your Terraform files with Snyk CLI](test-your-terraform-files-with-the-cli-tool.md)
 * [Test your CloudFormation files with Snyk CLI](test-your-cloudformation-files-with-cli-tool.md)
 * [Test your AWS CDK files with Snyk CLI](test-your-aws-cdk-files-with-our-cli-tool.md)
@@ -19,19 +21,20 @@ You can also test the following types of files:
 
 * [Kustomize files](test-your-kustomize-files-with-our-cli-tool.md)
 * [Helm charts](test-your-helm-charts-with-our-cli-tool.md)
+* [Serverless files](test-your-serverless-files-with-snyk-cli.md)
 
 See [Understanding the CLI output](understanding-the-cli-test-output/) for information about using the reports.
 
 ## Regularly testing IaC files
 
-Currently, there is no equivalent command to `snyk monitor` for Snyk IaC because the CLI does not send IaC source files back to the platform for periodic testing.
+Snyk Infrastructure as Code has no equivalent command to `snyk monitor` because the CLI does not send IaC source files back to the platform for periodic testing.
 
-For IaC CLI results to appear in the Snyk Web UI, you can use the [`snyk iac test --report`](https://docs.snyk.io/products/snyk-infrastructure-as-code/share-cli-results-with-the-snyk-web-ui) command to capture a one-time snapshot. Optionally, run the command on a recurring schedule to regularly test your IaC.
+For IaC CLI results to appear in the Snyk Web UI, use [`snyk iac test --report`](https://docs.snyk.io/products/snyk-infrastructure-as-code/share-cli-results-with-the-snyk-web-ui) to capture a one-time snapshot. Optionally, run the command on a recurring schedule to regularly test your IaC files.
 
-Alternatively, you can add an [SCM integration](https://docs.snyk.io/integrations/git-repository-scm-integrations) and Snyk will monitor and test a given git repository on a recurring basis.
+Alternatively, you can add an [SCM integration](../../../integrations/git-repository-scm-integrations/), and Snyk will monitor and test a given Git repository on a recurring basis.
 
 ## Using Snyk behind a proxy
 
-If you are using a proxy, see [Proxy configuration for Snyk CLI](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli/proxy-configuration-for-snyk-cli).
+If you are using a proxy, see [Proxy configuration for Snyk CLI](../../../snyk-cli/configure-the-snyk-cli/proxy-configuration-for-snyk-cli.md).
 
 For IaC scans specifically, you must also whitelist the \*.snyk.io address, as explained[ ](https://support.snyk.io/hc/en-us/articles/360002153077-How-can-we-whitelist-Snyk-IP-addresses-)on the page [How can we whitelist Snyk IP addresses?](https://support.snyk.io/hc/en-us/articles/360002153077-How-can-we-whitelist-Snyk-IP-addresses-)
