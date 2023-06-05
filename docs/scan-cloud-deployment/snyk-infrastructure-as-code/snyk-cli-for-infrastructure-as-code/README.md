@@ -9,6 +9,7 @@ With Snyk Infrastructure as Code, you can test your configuration files directly
 * [Test your configuration files](test-your-configuration-files.md)
 * [Share CLI results with the Snyk Web UI](../share-cli-results-with-the-snyk-web-ui.md)
 * [IaC ignores using the `.snyk` policy file](iac-ignores-using-the-.snyk-policy-file.md)
+* [Understanding the IaC CLI test results](understanding-the-cli-test-output/) (has information about reports)
 * [IaC exclusions using the command line](iac-exclusions-using-the-command-line.md)
 * [Test your Terraform files with Snyk CLI](test-your-terraform-files-with-the-cli-tool.md)
 * [Test your CloudFormation files with Snyk CLI](test-your-cloudformation-files-with-cli-tool.md)
@@ -22,8 +23,6 @@ You can also test the following types of files:
 * [Kustomize files](test-your-kustomize-files-with-our-cli-tool.md)
 * [Helm charts](test-your-helm-charts-with-our-cli-tool.md)
 * [Serverless files](test-your-serverless-files-with-snyk-cli.md)
-
-See [Understanding the CLI output](understanding-the-cli-test-output/) for information about using the reports.
 
 ## Regularly testing IaC files
 
