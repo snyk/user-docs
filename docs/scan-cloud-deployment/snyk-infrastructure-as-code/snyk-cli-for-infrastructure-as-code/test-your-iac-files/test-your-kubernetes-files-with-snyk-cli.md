@@ -25,4 +25,4 @@ snyk iac test file-1.yaml file-2.yaml
 
 For the steps to scan a Helm chart using the Snyk CLI see [Testing Helm charts with Snyk CLI](test-your-helm-charts-with-snyk-cli.md).
 
-For the steps to scan a Kustomize template using the Snyk CLI see [Test your Kustomize files with Snyk CLI](test-your-kustomize-files-with-our-cli-tool.md).
+For the steps to scan a Kustomize template using the Snyk CLI see [Test your Kustomize files with Snyk CLI](test-your-kustomize-files-with-snyk-cli.md).
