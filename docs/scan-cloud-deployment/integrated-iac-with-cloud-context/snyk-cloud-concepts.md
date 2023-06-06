@@ -1,7 +1,7 @@
 # Key concepts
 
 {% hint style="info" %}
-Integrated Infrastructure as Code (IaC) is a new version of Snyk IaC with cloud context that secures cloud configurations across the entire SDLC, from code to deployed cloud environments. Integrated IaC is currently in **closed beta**. Reach out to your account team if you would like access.
+Integrated Infrastructure as Code (IaC) is a new version of Snyk IaC, with cloud context that secures cloud configurations across the entire SDLC, from code to deployed cloud environments. Integrated IaC is currently in **closed beta**. Reach out to your account team if you would like access.
 {% endhint %}
 
 Snyk Integrated IaC and Cloud have a number of unique concepts, separate from Snyk core concepts such as [Projects](../../manage-issues/introduction-to-snyk-projects/#project) and [Targets](../../manage-issues/introduction-to-snyk-projects/#target).

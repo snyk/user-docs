@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **Feature availability**\
-Integrated Infrastructure as Code (IaC) is a new version of Snyk IaC with cloud context that secures cloud configurations across the entire SDLC, from code to deployed cloud environments. Integrated IaC is currently in **closed beta**. Reach out to your account team if you would like access.
+Integrated Infrastructure as Code (IaC) is a new version of Snyk IaC, with cloud context that secures cloud configurations across the entire SDLC, from code to deployed cloud environments. Integrated IaC is currently in **closed beta**. Reach out to your account team if you would like access.
 {% endhint %}
 
 ## **What is Integrated IaC?**
@@ -17,7 +17,7 @@ Integrated Infrastructure as Code (IaC) helps developers to write secure infrast
 
 ## Unified Policy Engine and Ruleset
 
-Integrated IaC uses the same unified policy engine as cloud context, rather than the IaC policy engine. This means you can apply the same security rules to both IaC files and runtime cloud resources.
+Integrated IaC uses the same unified policy engine as cloud context, rather than the current IaC policy engine. This means you can apply the same security rules to both IaC files and runtime cloud resources.
 
 ## New Issues UI
 
