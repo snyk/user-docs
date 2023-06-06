@@ -6,12 +6,11 @@ Snyk automatically runs a scan when a [Cloud environment](snyk-cloud-concepts.md
 
 If you have [jq](https://stedolan.github.io/jq/download/) installed, you can execute a single command to retrieve the first environment ID from the [Snyk API](https://apidocs.snyk.io/?version=2022-12-21\~beta#get-/orgs/-org\_id-/cloud/environments) and then manually scan the environment:
 
-```
-SNYK_ORG_ID="YOUR-ORGANIZATION-ID" && \
-SNYK_API_TOKEN="YOUR-API-TOKEN" && \
+<pre><code>SNYK_ORG_ID="YOUR-ORGANIZATION-ID" &#x26;&#x26; \
+SNYK_API_TOKEN="YOUR-API-TOKEN" &#x26;&#x26; \
 SNYK_ENV_ID=$(curl -s -X GET \
-  "https://api.snyk.io/rest/orgs/${SNYK_ORG_ID}/cloud/environments?version=2022-12-21~beta" \
-  -H "Authorization: token ${SNYK_API_TOKEN}" | jq -r '.data[0].id') && \
+  "https://api.snyk.io/rest/orgs/${SNYK_ORG_ID}/cloud/environments?version=2022-12-21~beta<a data-footnote-ref href="#user-content-fn-1">&#x26;kind=aws,azure,google</a>" \
+  -H "Authorization: token ${SNYK_API_TOKEN}" | jq -r '.data[0].id') &#x26;&#x26; \
 curl -X POST \
 "https://api.snyk.io/rest/orgs/${SNYK_ORG_ID}/cloud/scans?version=2022-12-21~beta" \
 -H "Authorization: token ${SNYK_API_TOKEN}" \
@@ -28,7 +27,7 @@ curl -X POST \
     \"type\": \"resource\"
   }
 }"
-```
+</code></pre>
 
 Because `jq -r '.data[0].id` returns the ID of the **first** environment shown in the Snyk API ["list environments"](https://apidocs.snyk.io/?version=2022-12-21\~beta#get-/orgs/-org\_id-/cloud/environments) output, this technique is especially useful if your Organization has a single environment. You can also change the `0` to another number to scan a different environment; for example, `jq -r '.data[1].id` will return the ID of the **second** environment in the output.
 
@@ -229,3 +228,5 @@ Snyk returns a JSON document containing details about all scans. For example:
   ]
 }
 ```
+
+[^1]: 
